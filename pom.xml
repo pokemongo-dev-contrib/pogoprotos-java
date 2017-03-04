@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <protobuf.version>3.1.0</protobuf.version>
+	   <github.global.server>github</github.global.server>
     </properties>
     <!-- used to publish to maven see http://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github -->
 	<distributionManagement>
