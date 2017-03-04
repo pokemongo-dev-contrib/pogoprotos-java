@@ -27,6 +27,7 @@ Quick build instructions
 1. Pull latest POGOProtos
   * git fetch POGOProtos master
   * git subtree pull --prefix .vim/bundle/POGOProtos POGOProtos master
+
     Note: if the above does not work, try:
   * git remote add -f POGOProtos https://github.com/AeonLucid/POGOProtos.git
   * git subtree add --prefix POGOProtos POGOProtos master
