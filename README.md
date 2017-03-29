@@ -25,10 +25,10 @@ The latest protos can be imported into any maven project by adding the following
 Quick build instructions
 
 1. Pull latest POGOProtos
-  * git fetch POGOProtos master
-  * git subtree pull --prefix .vim/bundle/POGOProtos POGOProtos master
+  * `git submodule update --init --recursive`
+  * `cd POGOProtos && git pull origin master`
 2. Update the version to the latest version number (will be in the tags)
-  * modify pom.xml     <version>2.7.0</version>
+  * modify pom.xml     <version>2.8.0</version>
 3. Build project (requires maven and java installed and in your PATH environment variable)
-  * mvn install
+  * `mvn install`
 
