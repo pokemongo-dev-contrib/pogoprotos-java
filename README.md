@@ -31,4 +31,6 @@ Quick build instructions
   * modify pom.xml     <version>2.8.0</version>
 3. Build project (requires maven and java installed and in your PATH environment variable)
   * `mvn install`
+4. Release project
+  * `mvn deploy`
 
