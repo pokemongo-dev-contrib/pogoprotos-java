@@ -29,6 +29,11 @@ Quick build instructions
   * `cd POGOProtos && git pull origin master`
 2. Update the version to the latest version number (will be in the tags)
   * modify pom.xml     <version>2.8.0</version>
-3. Build project (requires maven and java installed and in your PATH environment variable)
+3. Build project 
   * `mvn install`
-
+  * ---OR---
+  * `docker run -it --rm --name my-maven-project  -v "C:\Users\celan\.m2":/root/.m2 -v "F:\PokeBattler\pogoprotos-java":/usr/src/mymaven -w /usr/src/mymaven maven:3.2-jdk-7 mvn clean install`
+4. Release project same as above but with deploy
+  * `mvn deploy`
+* ---OR---
+  * `docker run -it --rm --name my-maven-project  -v "C:\Users\celan\.m2":/root/.m2 -v "F:\PokeBattler\pogoprotos-java":/usr/src/mymaven -w /usr/src/mymaven maven:3.2-jdk-7 mvn clean install deploy`
