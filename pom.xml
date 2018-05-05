@@ -3,22 +3,30 @@
 
     <groupId>com.pokebattler</groupId>
     <artifactId>pogoprotos</artifactId>
-    <version>2.23.0</version>
+    <version>2.26.0</version>
     <packaging>jar</packaging>
 
     <name>POGOProtos-java</name>
     <description>Java bindings for Pokemon Go Protocol Buffers</description>
-
+<scm>
+        <developerConnection>scm:git:git@github.com:celandro/pogoprotos-java.git</developerConnection>
+        <connection>scm:git:https://github.com/celandro/pogoprotos-java.git</connection>
+        <url>https://github.com/celandro/pogoprotos-java</url>
+</scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.7</java.version>
-        <protobuf.version>3.3.0</protobuf.version>
+        <java.version>1.8</java.version>
+        <protobuf.version>3.5.1</protobuf.version>
 	   <github.global.server>github</github.global.server>
     </properties>
     <!-- used to publish to maven see http://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github -->
 	<distributionManagement>
-	    <repository>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+   	    <repository>
 	        <id>internal.repo</id>
 	        <name>Temporary Staging Repository</name>
 	        <url>file://${project.build.directory}/mvn-repo</url>
@@ -150,8 +158,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.5.1</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             </plugins>
