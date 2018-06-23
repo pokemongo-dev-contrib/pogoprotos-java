@@ -9,4 +9,4 @@ jdk:
   
 script:
   - mvn install
-  - mvn deploy
+  #- mvn deploy
