@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/pokemongo-dev-contrib/pogoprotos-java.svg?branch=master)](https://travis-ci.org/pokemongo-dev-contrib/pogoprotos-java)
 # pogoprotos-java
 Provides compiled java bindings from https://github.com/AeonLucid/POGOProtos/tree/master
 
