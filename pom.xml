@@ -133,6 +133,7 @@
              <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
+			    <version>3.0.0</version>
                 <executions>
                     <execution>
                         <id>add-source</id>
@@ -156,11 +157,6 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-            </plugin>
-            <plugin>
-			    <groupId>org.codehaus.mojo</groupId>
-			    <artifactId>build-helper-maven-plugin</artifactId>
-			    <version>3.0.0</version>
             </plugin>
             </plugins>
     </build>
