@@ -21,6 +21,7 @@
 	   <github.global.server>github</github.global.server>
     </properties>
     <!-- used to publish to maven see http://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github -->
+    <!-- 
 	<distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
@@ -32,6 +33,19 @@
 	        <url>file://${project.build.directory}/mvn-repo</url>
 	    </repository>
 	</distributionManagement>
+	-->
+	<distributionManagement>
+	  <repository>
+	    <id>packagecloud-myrepo</id>
+	    <url>packagecloud+https://packagecloud.io/pokemongo-dev-contrib/pogoprotos-java</url>
+	  </repository>
+	  <snapshotRepository>
+	    <id>packagecloud-myrepo</id>
+	    <url>packagecloud+https://packagecloud.io/pokemongo-dev-contrib/pogoprotos-java</url>
+	  </snapshotRepository>
+	</distributionManagement>
+	
+	
     <dependencies>
     
         <dependency>
@@ -61,6 +75,11 @@
                 <artifactId>os-maven-plugin</artifactId>
                 <version>1.4.0.Final</version>
             </extension>
+		    <extension>
+		      <groupId>io.packagecloud.maven.wagon</groupId>
+		      <artifactId>maven-packagecloud-wagon</artifactId>
+		      <version>0.0.6</version>
+		    </extension>
         </extensions>
         <plugins>
 		    <plugin>
