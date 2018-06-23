@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-import os
 import argparse
+import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-m", "--message", help="Message to prodecure files for.")
@@ -18,7 +18,7 @@ def underscore_to_camelcase(value):
 
 
 if not args.message:
-    print "Specify a message."
+    print("Specify a message.")
 
 
 def initialize_file(package, message, path):
@@ -29,7 +29,7 @@ def initialize_file(package, message, path):
         opened_file.write('\t// Initialized by assist.py\n')
         opened_file.write('}\n')
 
-    print "Created %s" % path
+    print("Created %s" % path)
 
 
 message = underscore_to_camelcase(args.message)
