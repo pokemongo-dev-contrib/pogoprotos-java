@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/pokemongo-dev-contrib/pogoprotos-java.svg?branch=master)](https://travis-ci.org/pokemongo-dev-contrib/pogoprotos-java)
+[![Build Status](https://travis-ci.org/pokemongo-dev-contrib/pogoprotos-java.svg?branch=master)](https://travis-ci.org/pokemongo-dev-contrib/pogoprotos-java) [![Build status](https://ci.appveyor.com/api/projects/status/q9i6hvfu8w3e28hb/branch/master?svg=true)](https://ci.appveyor.com/project/RocketBot/pogoprotos-java/branch/master)
 # pogoprotos-java
 Provides compiled java bindings from https://github.com/AeonLucid/POGOProtos/tree/master
 
