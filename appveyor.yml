@@ -7,4 +7,4 @@ skip_branch_with_pr: true
 build: off
 
 artifacts:
-  - path: target/*
+  - path: /home/travis/.m2/repository/com/pokebattler/pogoprotos/*/pogoprotos-*.jar
