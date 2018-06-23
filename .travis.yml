@@ -1,0 +1,12 @@
+language: java
+
+jdk:
+  - oraclejdk8
+
+#branches:
+#  only:
+#  - master
+  
+script:
+  - mvn install
+  - mvn deploy
