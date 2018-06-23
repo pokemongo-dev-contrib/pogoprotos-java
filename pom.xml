@@ -3,7 +3,7 @@
 
     <groupId>com.pokebattler</groupId>
     <artifactId>pogoprotos</artifactId>
-    <version>2.28.0</version>
+    <version>2.28.1</version>
     <packaging>jar</packaging>
 
     <name>POGOProtos-java</name>
@@ -21,6 +21,7 @@
 	   <github.global.server>github</github.global.server>
     </properties>
     <!-- used to publish to maven see http://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github -->
+    <!-- 
 	<distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
@@ -32,6 +33,19 @@
 	        <url>file://${project.build.directory}/mvn-repo</url>
 	    </repository>
 	</distributionManagement>
+	-->
+	<distributionManagement>
+	  <repository>
+	    <id>packagecloud-pokemongo-dev-contrib</id>
+	    <url>packagecloud+https://packagecloud.io/pokemongo-dev-contrib/pogoprotos-java</url>
+	  </repository>
+	  <snapshotRepository>
+	    <id>packagecloud-pokemongo-dev-contrib</id>
+	    <url>packagecloud+https://packagecloud.io/pokemongo-dev-contrib/pogoprotos-java</url>
+	  </snapshotRepository>
+	</distributionManagement>
+	
+	
     <dependencies>
     
         <dependency>
@@ -61,39 +75,17 @@
                 <artifactId>os-maven-plugin</artifactId>
                 <version>1.4.0.Final</version>
             </extension>
+		    <extension>
+		      <groupId>io.packagecloud.maven.wagon</groupId>
+		      <artifactId>maven-packagecloud-wagon</artifactId>
+		      <version>0.0.6</version>
+		    </extension>
         </extensions>
         <plugins>
 		    <plugin>
 		        <artifactId>maven-deploy-plugin</artifactId>
 		        <version>2.8.1</version>
-		        <configuration>
-		            <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
-		        </configuration>
 		    </plugin>
-        <plugin>
-            <groupId>com.github.github</groupId>
-            <artifactId>site-maven-plugin</artifactId>
-            <version>0.12</version>
-            <configuration>
-                <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
-                <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-                <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
-                <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
-                <includes><include>**/*</include></includes>
-                <repositoryName>pogoprotos-java</repositoryName>      <!-- github repo name -->
-                <repositoryOwner>pokemongo-dev-contrib</repositoryOwner>    <!-- github username  -->
-            </configuration>
-            <executions>
-              <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
-              <execution>
-                <goals>
-                  <goal>site</goal>
-                </goals>
-                <phase>deploy</phase>
-              </execution>
-            </executions>
-        </plugin>		    
-		    
             <plugin>
                 <groupId>org.xolstice.maven.plugins</groupId>
                 <artifactId>protobuf-maven-plugin</artifactId>
@@ -161,6 +153,11 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+			    <groupId>org.codehaus.mojo</groupId>
+			    <artifactId>build-helper-maven-plugin</artifactId>
+			    <version>3.0.0</version>
             </plugin>
             </plugins>
     </build>
