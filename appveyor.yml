@@ -1,0 +1,10 @@
+branches:
+  except:
+    - mvn-repo
+
+skip_branch_with_pr: true
+
+build: off
+
+artifacts:
+  - path: target/*
