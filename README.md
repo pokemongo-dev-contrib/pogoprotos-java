@@ -8,11 +8,13 @@ The latest protos can be imported into any maven project by adding the following
 ```
 <repositories>
     <repository>
-        <id>pogoprotos-java-mvn-repo</id>
-        <url>https://raw.github.com/celandro/pogoprotos-java/mvn-repo/</url>
+        <id>pokemongo-dev-contrib-pogoprotos-java</id>
+        <url>https://packagecloud.io/pokemongo-dev-contrib/pogoprotos-java/maven2</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
         <snapshots>
             <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
         </snapshots>
     </repository>
 </repositories>
