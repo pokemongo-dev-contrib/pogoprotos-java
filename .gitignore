@@ -7,3 +7,4 @@
 *.gz
 /target-ide/
 src/main/proto/POGOProtos/
+*.iml
