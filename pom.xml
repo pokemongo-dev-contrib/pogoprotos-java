@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.pokebattler</groupId>
@@ -61,8 +62,7 @@
 				</property>
 			</activation>
 			<build>
-				<!-- Put the IDE's build output in a folder other than target, so that 
-					IDE builds don't interact with Maven builds -->
+				<!-- Put the IDE's build output in a folder other than target, so that IDE builds don't interact with Maven builds -->
 				<directory>target-ide</directory>
 			</build>
 		</profile>
@@ -113,6 +113,9 @@
 				<artifactId>protobuf-maven-plugin</artifactId>
 				<version>0.5.1</version>
 				<extensions>true</extensions>
+				<configuration>
+					<protoSourceRoot>POGOProtos/src</protoSourceRoot>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
@@ -122,7 +125,6 @@
 						<configuration>
 							<protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:${os.detected.classifier}</protocArtifact>
 						</configuration>
-
 					</execution>
 				</executions>
 			</plugin>
@@ -249,7 +251,7 @@
 		</plugins>
 		<pluginManagement>
 			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself. -->
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
@@ -259,15 +261,9 @@
 							<pluginExecutions>
 								<pluginExecution>
 									<pluginExecutionFilter>
-										<groupId>
-											org.codehaus.mojo
-										</groupId>
-										<artifactId>
-											exec-maven-plugin
-										</artifactId>
-										<versionRange>
-											[1.6.0,)
-										</versionRange>
+										<groupId>org.codehaus.mojo</groupId>
+										<artifactId>exec-maven-plugin</artifactId>
+										<versionRange>[1.6.0,)</versionRange>
 										<goals>
 											<goal>exec</goal>
 										</goals>
