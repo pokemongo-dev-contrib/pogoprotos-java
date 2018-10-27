@@ -16,9 +16,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>https://github.com/pokemongo-dev-contrib/pokemongo-game-master</url>
-		<connection>scm:git:git@github.com:pokemongo-dev-contrib/pokemongo-game-master.git</connection>
-		<developerConnection>scm:git:git@github.com:pokemongo-dev-contrib/pokemongo-game-master.git</developerConnection>
+		<url>https://github.com/pokemongo-dev-contrib/pogoprotos-java</url>
+		<connection>scm:git:git@github.com:pokemongo-dev-contrib/pogoprotos-java.git</connection>
+		<developerConnection>scm:git:git@github.com:pokemongo-dev-contrib/pogoprotos-java.git</developerConnection>
 	</scm>
 	<distributionManagement>
 		<snapshotRepository>
