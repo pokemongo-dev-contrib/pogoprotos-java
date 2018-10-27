@@ -8,5 +8,5 @@ branches:
   - master
   
 script:
-  - mvn install
+  - mvn install -Dgpg.skip
   #- mvn deploy
