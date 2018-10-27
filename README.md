@@ -45,22 +45,8 @@ Quick build instructions
 5. Release project same as above but with deploy, note requires pgp key and OSS Sonatype setup
   * `mvn -DperformRelease=true release:clean release:prepare release:perform`
 * ---OR---
-  * `docker run -it --rm --name my-maven-project -v "C:\Users\celan\.gnupg":/root/.gnupg  -v "C:\Users\celan\.m2":/root/.m2  -v "C:\Users\celan\.gitconfig":/root/.gitconfig -v "F:\PokeBattler\pogoprotos-java":/usr/src/mymaven -w /usr/src/mymaven maven:3.2-jdk-8 mvn -DperformRelease=true release:clean release:prepare release:perform`
+  * `docker volume create --opt type=cifs --opt device=//192.168.1.2/TestVolume --opt o=username=USER,password=PASS,file_mode=0700,dir_mode=0700 testvolume7` 
+  * `docker run -it --rm --name my-maven-project -v "C:\Users\celan\.gnupg":/root/.gnupg  -v "C:\Users\celan\.m2":/root/.m2  -v "C:\Users\celan\.gitconfig":/root/.gitconfig -v "F:\PokeBattler\pogoprotos-java":/usr/src/mymaven -v testvolume7:/root/.ssh -w /usr/src/mymaven maven:3.2-jdk-8 mvn -DperformRelease=true release:clean release:prepare release:perform`
 
   
   
-Notes:
-F:\PokeBattler\pogoprotos-java>docker run -it --rm --name my-maven-project -v "C:\Users\celan\.gnupg":/root/.gnupg -v "C:\Users\celan\.gitconfig":/root/.gitconfig  -v "C:\Users\celan\.m2":/root/.m2 -v "C:\Users\celan\.ssh:/root/.ssh" -v "F:\PokeBattler\pogoprotos-java":/usr/src/mymaven --mount source=sshvolume,target=/root/.ssh2 -w /usr/src/mymaven maven:3.2-jdk-8 bash
-docker: Error response from daemon: error while mounting volume '': error while mounting volume with options: type='cifs' device='//Server/sshvolume' o='username=celan,password=warlock,file_mode=0700,dir_mode=0700,uid=2000,gid=2000': invalid argument.
-
-F:\PokeBattler\pogoprotos-java>docker volume create --opt type=cifs --opt device=//Someserver/Testvolume --opt o=username=Testuser,password=Testpassword,file_mode=0777,dir_mode=077 myvolume
-myvolume
-
-F:\PokeBattler\pogoprotos-java>docker run -it --rm --name my-maven-project -v "C:\Users\celan\.gnupg":/root/.gnupg -v "C:\Users\celan\.gitconfig":/root/.gitconfig  -v "C:\Users\celan\.m2":/root/.m2 -v "C:\Users\celan\.ssh:/root/.ssh" -v "F:\PokeBattler\pogoprotos-java":/usr/src/mymaven --mount source=myvolume,target=/root/.ssh2 -w /usr/src/mymaven maven:3.2-jdk-8 bash
-docker: Error response from daemon: error while mounting volume '': error while mounting volume with options: type='cifs' device='//Someserver/Testvolume' o='username=Testuser,password=Testpassword,file_mode=0777,dir_mode=077': invalid argument.
-
-F:\PokeBattler\pogoprotos-java>docker volume create --opt type=cifs --opt device=//Someserver/Testvolume --opt o=file_mode=0700,dir_mode=0700 myvolume2
-myvolume2
-
-F:\PokeBattler\pogoprotos-java>docker run -it --rm --name my-maven-project -v "C:\Users\celan\.gnupg":/root/.gnupg -v "C:\Users\celan\.gitconfig":/root/.gitconfig  -v "C:\Users\celan\.m2":/root/.m2 -v "C:\Users\celan\.ssh:/root/.ssh" -v "F:\PokeBattler\pogoprotos-java":/usr/src/mymaven --mount source=myvolume2,target=/root/.ssh2 -w /usr/src/mymaven maven:3.2-jdk-8 bash
-docker: Error response from daemon: error while mounting volume '': error while mounting volume with options: type='cifs' device='//Someserver/Testvolume' o='file_mode=0700,dir_mode=0700': invalid argument.  
