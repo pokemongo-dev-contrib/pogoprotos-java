@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.pokebattler</groupId>
@@ -8,6 +10,7 @@
 
 	<name>POGOProtos-java</name>
 	<description>Java bindings for Pokemon Go Protocol Buffers</description>
+	<url>https://github.com/pokemongo-dev-contrib/pogoprotos-java</url>
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0</name>
@@ -31,6 +34,14 @@
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
+	<developers>
+		<developer>
+			<name>Ryan Barker</name>
+			<email>admin@pokebattler.com</email>
+			<organization>Pokebattler</organization>
+			<organizationUrl>https://www.pokebattler.com</organizationUrl>
+		</developer>
+	</developers>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
