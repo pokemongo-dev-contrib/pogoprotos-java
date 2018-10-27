@@ -3,7 +3,7 @@
 
 	<groupId>com.pokebattler</groupId>
 	<artifactId>pogoprotos</artifactId>
-	<version>2.34.7</version>
+	<version>2.34.8-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>POGOProtos-java</name>
@@ -19,7 +19,6 @@
 		<url>https://github.com/pokemongo-dev-contrib/pogoprotos-java</url>
 		<connection>scm:git:git@github.com:pokemongo-dev-contrib/pogoprotos-java.git</connection>
 		<developerConnection>scm:git:git@github.com:pokemongo-dev-contrib/pogoprotos-java.git</developerConnection>
-    <tag>pogoprotos-2.34.7</tag>
   </scm>
 	<distributionManagement>
 		<snapshotRepository>
