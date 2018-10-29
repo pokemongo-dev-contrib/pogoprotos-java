@@ -2,7 +2,7 @@
 # pogoprotos-java
 Provides compiled java bindings from https://github.com/Furtif/POGOProtos
 
-[Download java lib](https://packagecloud.io/pokemongo-dev-contrib/pogoprotos-java)
+[Download java lib](https://oss.sonatype.org/content/groups/public/com/pokebattler/pogoprotos/)
 
 The latest protos can be imported into any maven project by adding the following to your pom.xml
 ```
