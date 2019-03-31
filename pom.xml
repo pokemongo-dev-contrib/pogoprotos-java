@@ -21,7 +21,7 @@
 		<url>https://github.com/pokemongo-dev-contrib/pogoprotos-java</url>
 		<connection>scm:git:git@github.com:pokemongo-dev-contrib/pogoprotos-java.git</connection>
 		<developerConnection>scm:git:git@github.com:pokemongo-dev-contrib/pogoprotos-java.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>pogoprotos-2.38.9</tag>
 	</scm>
 	<distributionManagement>
 		<snapshotRepository>
@@ -44,7 +44,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<protobuf.version>3.7.0</protobuf.version>
+		<protobuf.version>3.7.1</protobuf.version>
 		<github.global.server>github</github.global.server>
 	</properties>
 	<dependencies>
