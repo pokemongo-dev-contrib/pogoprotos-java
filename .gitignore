@@ -8,3 +8,5 @@
 /target-ide/
 src/main/proto/POGOProtos/
 *.iml
+*.DS_Store
+*.json
