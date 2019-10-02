@@ -8,3 +8,4 @@
 src/main/proto/POGOProtos/
 *.DS_Store
 *.json
+*.protobuf
