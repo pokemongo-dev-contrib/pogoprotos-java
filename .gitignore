@@ -5,7 +5,7 @@
 .idea/
 *.log
 *.gz
-src/main/proto/POGOProtos/
 *.DS_Store
 *.json
 *.protobuf
+/src/main/java/POGOProtos/

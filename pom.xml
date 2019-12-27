@@ -3,16 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.pokebattler</groupId>
-    <artifactId>pogoprotos</artifactId>
+    <artifactId>POGOProtos</artifactId>
     <version>2.49.6</version>
     <packaging>jar</packaging>
-    <name>POGOProtos-java</name>
+    <name>POGOProtos Java</name>
     <description>Java bindings for Pokemon Go Protocol Buffers</description>
-    <url>https://github.com/pokemongo-dev-contrib/pogoprotos-java</url>
+    <url>https://github.com/Furtif/POGOProtos-Java-Private</url>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
-            <url>https://github.com/pokemongo-dev-contrib/pogoprotos-java/blob/master/LICENSE.md</url>
+            <url>https://github.com/Furtif/POGOProtos-Java-Private/blob/master/LICENSE.md</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -53,26 +53,40 @@
         </extensions>
         <plugins>
             <plugin>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <groupId>org.codehaus.mojo</groupId>
+                <executions>
+                    <execution><!-- Run our version calculation script -->
+                        <id>Renaming build artifacts</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>python</executable>
+                            <basedir>POGOProtos</basedir>
+                            <commandlineArgs>compile.py java -o ../src/main/java</commandlineArgs>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+			<plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.1.0</version>
                 <executions>
                     <execution>
                         <id>Deleting all unnecessary files before lint jar</id>
-                        <phase>test</phase>
+                        <phase>clean</phase>
                         <goals>
                             <goal>clean</goal>
                         </goals>
                     </execution>
                 </executions>
                 <configuration>
-                    <excludeDefaultDirectories>true</excludeDefaultDirectories>
                     <filesets>
                         <fileset>
-                            <directory>${project.build.directory}/classes</directory>
-                            <followSymlinks>false</followSymlinks>
-                            <excludes>
-                                <exclude>**/*.class</exclude>
-                            </excludes>
+                            <directory>src/main/java/POGOProtos</directory>
                         </fileset>
                     </filesets>
                     <!--<verbose>true</verbose>-->
@@ -90,28 +104,6 @@
                         <include>**/*Test.java</include>
                     </includes>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.xolstice.maven.plugins</groupId>
-                <artifactId>protobuf-maven-plugin</artifactId>
-                <version>0.5.1</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <protoSourceRoot>POGOProtos/src</protoSourceRoot>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>compile</goal>
-                            <goal>test-compile</goal>
-                        </goals>
-                        <configuration>
-                            <protocArtifact>
-                                com.google.protobuf:protoc:${protobuf.version}:exe:${os.detected.classifier}
-                            </protocArtifact>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
