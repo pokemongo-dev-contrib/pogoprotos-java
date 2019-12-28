@@ -6,5 +6,4 @@
 *.log
 *.gz
 *.DS_Store
-*.iml
 /src/main/java/POGOProtos/
