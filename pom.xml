@@ -66,12 +66,12 @@
                         <configuration>
                             <executable>python</executable>
                             <basedir>POGOProtos</basedir>
-                            <commandlineArgs>compile.py java -o ../src/main/java</commandlineArgs>
+                            <commandlineArgs>compile.py java -o ../src/main/java --java_multiple_files</commandlineArgs>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-			<plugin>
+            <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.1.0</version>
                 <executions>
