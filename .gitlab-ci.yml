@@ -1,8 +1,8 @@
 default:
-  image: python:alpine
+  image: maven:alpine
   before_script:
-    - apk update && apk add --update python3 curl tar bash bash-doc bash-completion wget apache-ant zip
-    - apk add maven --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/community/ --allow-untrusted \&& rm -rf /var/cache/apk/*
+    - apk update && apk add --update python curl tar bash bash-doc bash-completion wget apache-ant zip
+    #- apk add maven --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/community/ --allow-untrusted \&& rm -rf /var/cache/apk/*
   
 job:
   script:
