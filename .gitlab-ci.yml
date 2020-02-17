@@ -1,7 +1,7 @@
 default:
   image: ubuntu
   before_script:
-    - apt-get update && apt-get install python3.6 curl tar bash bash-doc bash-completion wget apache-ant zip maven openjdk-8-jre openjdk-8-jdk
+    - apt-get update && apt-get install python3.6 curl tar bash bash-doc bash-completion wget zip maven openjdk-8-jre openjdk-8-jdk
     #- apk add maven --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/community/ --allow-untrusted \&& rm -rf /var/cache/apk/*
   
 job:
