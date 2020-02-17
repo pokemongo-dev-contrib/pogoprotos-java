@@ -1,8 +1,8 @@
 default:
   image: openjdk
+  before_script:
+    - apt-get update -qq && apt-get install -y -qq python protobuf-compiler
   
 job:
   script:
-    - uname -a
-    - apt-get update -qq && apt-get install -y -qq python protobuf-compiler
     - mvn install -Dgpg.skip
