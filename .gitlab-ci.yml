@@ -1,11 +1,11 @@
 default:
   image: ubuntu
   before_script:
-    - git submodule update --init --recursive
-    - apt-get update && apt-get -y install python2.7 python-pip curl tar bash bash-doc bash-completion wget zip maven openjdk-8-jre openjdk-8-jdk
+    - apt-get update && apt-get -y install python2.7 python-pip curl tar bash bash-doc bash-completion wget zip maven openjdk-8-jre openjdk-8-jdk git
   
 job:
   script:
+    - git submodule update --init --recursive
     - mkdir /protoc
     - wget https://github.com/protocolbuffers/protobuf/releases/download/v3.11.3/protoc-3.11.3-linux-x86_64.zip -P /protoc
     - unzip /protoc/protoc-3.11.3-linux-x86_64.zip -d /protoc
