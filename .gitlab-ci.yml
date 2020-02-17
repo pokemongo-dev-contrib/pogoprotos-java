@@ -1,5 +1,5 @@
 default:
-  image: openjdk
+  image: alpine
   before_script:
     - apk update && apk add --update python3 && apk add --update protobuf-compiler
   
