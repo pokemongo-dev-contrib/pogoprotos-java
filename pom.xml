@@ -64,7 +64,7 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>python3</executable>
+                            <executable>python</executable>
                             <basedir>POGOProtos</basedir>
                             <commandlineArgs>compile.py java -o ../src/main/java --java_multiple_files</commandlineArgs>
                         </configuration>
