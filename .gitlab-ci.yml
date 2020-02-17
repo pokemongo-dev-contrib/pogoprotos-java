@@ -2,9 +2,11 @@ default:
   image: maven:alpine
   before_script:
     - apk update && apk add --update python3 curl tar bash bash-doc bash-completion wget apache-ant zip
+    - apk add maven --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/community/ --allow-untrusted \&& rm -rf /var/cache/apk/*
   
 job:
   script:
+    - export PATH=/usr/share/java/maven-3/bin:$PATH
     - mkdir /protoc
     - wget https://github.com/protocolbuffers/protobuf/releases/download/v3.11.3/protoc-3.11.3-linux-x86_64.zip -P /protoc
     - unzip /protoc/protoc-3.11.3-linux-x86_64.zip -d /protoc
