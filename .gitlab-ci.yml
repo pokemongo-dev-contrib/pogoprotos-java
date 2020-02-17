@@ -1,14 +1,13 @@
 default:
-  image: alpine
+  image: java:alpine
   before_script:
     - apk update && apk add --update python3 curl tar bash bash-doc bash-completion wget apache-ant zip
-    - bash
+  
+job:
+  script:
     - pushd /tmp
     - wget https://github.com/protocolbuffers/protobuf/releases/download/v3.11.3/protoc-3.11.3-linux-x86_64.zip
     - unzip protoc-3.11.3-linux-x86_64.zip
     - popd
     - export PATH=/tmp/bin:$PATH
-  
-job:
-  script:
     - mvn install -Dgpg.skip
