@@ -1,7 +1,7 @@
 default:
   image: openjdk
   before_script:
-    - apt-get update -qq && apt-get install -y -qq python protobuf-compiler
+    - apk update && apk add --update python3 && apk add --update protobuf-compiler
   
 job:
   script:
