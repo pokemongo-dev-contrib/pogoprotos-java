@@ -1,6 +1,7 @@
 default:
   image: ubuntu
   before_script:
+    - git submodule update --init --recursive
     - apt-get update && apt-get -y install python2.7 python-pip curl tar bash bash-doc bash-completion wget zip maven openjdk-8-jre openjdk-8-jdk
   
 job:
