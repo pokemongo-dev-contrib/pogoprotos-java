@@ -1,5 +1,5 @@
 default:
-  image: maven:alpine
+  image: maven:3.7-slim-buster
   before_script:
     - apk update && apk add --update python curl tar bash bash-doc bash-completion wget apache-ant zip
     #- apk add maven --update-cache --repository http://dl-4.alpinelinux.org/alpine/edge/community/ --allow-untrusted \&& rm -rf /var/cache/apk/*
