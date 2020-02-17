@@ -1,5 +1,5 @@
 default:
-  image: java:alpine
+  image: maven:alpine
   before_script:
     - apk update && apk add --update python3 curl tar bash bash-doc bash-completion wget apache-ant zip
   
