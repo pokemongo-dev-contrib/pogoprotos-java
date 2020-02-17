@@ -1,0 +1,5 @@
+job:
+  script:
+    - uname -a
+    - apt-get update -qq && apt-get install -y -qq python protobuf-compiler openjdk-8-jdk openjdk-8-jre
+    - mvn install -Dgpg.skip
