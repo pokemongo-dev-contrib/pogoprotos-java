@@ -1,31 +1,5 @@
-<!--[![Build Status](https://travis-ci.org/pokemongo-dev-contrib/pogoprotos-java.svg?branch=master)](https://travis-ci.org/pokemongo-dev-contrib/pogoprotos-java) -->
 # POGOProtos Java
 Provides compiled java bindings
-
-[Download java lib](https://oss.sonatype.org/content/groups/public/com/pokebattler/pogoprotos/)
-
-The latest protos can be imported into any maven project by adding the following to your pom.xml
-```
-<repositories>
-    <repository>
-        <id>pokemongo-dev-contrib-pogoprotos-java</id>
-        <url>https://packagecloud.io/pokemongo-dev-contrib/pogoprotos-java/maven2</url>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
-    </repository>
-</repositories>
-<dependencies>
-<dependency>
-    	<groupId>com.pokebattler</groupId>
-    	<artifactId>pogoprotos</artifactId>
-    	<version>${gamemaster.version}</version>
-	</dependency>
-</dependencies>
-```
 
 Quick build instructions
 
