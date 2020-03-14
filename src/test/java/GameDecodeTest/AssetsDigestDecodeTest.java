@@ -7,7 +7,7 @@ import org.junit.*;
 import java.io.*;
 
 public class AssetsDigestDecodeTest {
-	@Test
+	//@Test
 	public void TestAssetsDigestDecode() throws Exception {
 		try (InputStream is = getClass().getResourceAsStream("/FIRMWARE_ASSET_DIGEST.protobuf"))
         {

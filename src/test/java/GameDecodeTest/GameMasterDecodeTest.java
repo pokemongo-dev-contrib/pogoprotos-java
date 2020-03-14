@@ -7,7 +7,7 @@ import org.junit.*;
 import java.io.*;
 
 public class GameMasterDecodeTest {
-	@Test
+	//@Test
 	public void TestGameMasterDecode() throws Exception {
 		try (InputStream is = getClass().getResourceAsStream("/FIRMWARE_GAME_MASTER.protobuf"))
         {
