@@ -8,11 +8,11 @@
     <packaging>jar</packaging>
     <name>POGOProtos Java</name>
     <description>Java bindings for Pokemon Go Protocol Buffers</description>
-    <url>https://github.com/Furtif/POGOProtos-Java-Private</url>
+    <url>https://gitlab.com/AllProtos/POGOProtos-Private-Java</url>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
-            <url>https://github.com/Furtif/POGOProtos-Java-Private/blob/master/LICENSE.md</url>
+            <url>https://gitlab.com/AllProtos/POGOProtos-Private-Java/-/blob/master/LICENSE.md</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
