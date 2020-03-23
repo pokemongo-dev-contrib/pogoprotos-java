@@ -1,6 +1,6 @@
 package GameDecodeTest;
 
-import POGOProtos.Networking.Responses.*;
+import POGOProtos.Data.*;
 import com.google.protobuf.util.*;
 import org.junit.*;
 
@@ -11,7 +11,7 @@ public class AssetsDigestDecodeTest {
 	public void TestAssetsDigestDecode() throws Exception {
 		try (InputStream is = getClass().getResourceAsStream("/FIRMWARE_ASSET_DIGEST.protobuf"))
         {
-			GetAssetDigestResponse response = GetAssetDigestResponse.parseFrom(is);
+			AssetDigestDecoder response = AssetDigestDecoder.parseFrom(is);
 			JsonFormat.Printer printer = JsonFormat.printer();
 			try (OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream("target/test-classes/FIRMWARE_ASSET_DIGEST.json")))
             {
