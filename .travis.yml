@@ -1,12 +1,19 @@
 language: java
 
 jdk:
-  - oraclejdk8
+  - oraclejdk15
 
 branches:
   only:
   - master
-  
+
+install:
+  - pushd /tmp
+  - wget https://github.com/protocolbuffers/protobuf/releases/download/v3.11.4/protoc-3.11.4-linux-x86_64.zip
+  - unzip protoc-3.11.4-linux-x86_64.zip
+  - popd
+  - export PATH=/tmp/bin:$PATH
+
 script:
   - mvn install -Dgpg.skip
   #- mvn deploy
