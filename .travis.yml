@@ -9,11 +9,11 @@ branches:
 
 install:
   - pushd /tmp
-  - wget https://github.com/protocolbuffers/protobuf/releases/download/v3.12.2/protoc-3.12.2-linux-x86_64.zip
-  - unzip protoc-3.12.2-linux-x86_64.zip
+  - wget https://github.com/protocolbuffers/protobuf/releases/download/v3.12.0/protoc-3.12.0-linux-x86_64.zip
+  - unzip protoc-3.12.0-linux-x86_64.zip
   - popd
   - export PATH=/tmp/bin:$PATH
-  
+
 script:
   - mvn install -Dgpg.skip
   #- mvn deploy
