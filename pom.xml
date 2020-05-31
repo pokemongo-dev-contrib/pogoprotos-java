@@ -56,19 +56,31 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <groupId>org.codehaus.mojo</groupId>
-                <executions>
-                    <execution><!-- Run our version calculation script -->
-                        <id>Renaming build artifacts</id>
-                        <phase>initialize</phase>
-                        <goals>
-                            <goal>exec</goal>
-                        </goals>
-                        <configuration>
-                            <executable>python</executable>
-                            <basedir>POGOProtos</basedir>
-                            <commandlineArgs>compile.py java -o ../src/main/java --java_multiple_files</commandlineArgs>
-                        </configuration>
-                    </execution>
+               <executions>
+                   <execution><!-- Run our version calculation script -->
+                       <id>Build Base</id>
+                       <phase>initialize</phase>
+                       <goals>
+                           <goal>exec</goal>
+                       </goals>
+                       <configuration>
+                           <executable>python</executable>
+                           <basedir>POGOProtos</basedir>
+                           <commandlineArgs>compile.py java -o ../src/main/java --java_multiple_files</commandlineArgs>
+                       </configuration>
+                   </execution>
+                   <execution>
+                       <id>Build Rpc</id>
+                       <phase>initialize</phase>
+                       <goals>
+                           <goal>exec</goal>
+                       </goals>
+                       <configuration>
+                           <executable>python</executable>
+                           <basedir>POGOProtos</basedir>
+                           <commandlineArgs>compile_single_file.py -i -l java -p pogo -o ../src/main/java --java_multiple_files</commandlineArgs>
+                       </configuration>
+                   </execution>
                 </executions>
             </plugin>
             <plugin>
