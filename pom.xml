@@ -69,6 +69,7 @@
                            <commandlineArgs>compile.py java -o ../src/main/java --java_multiple_files</commandlineArgs>
                        </configuration>
                    </execution>
+                   <!-- Reserved ask needed for rpc refs
                    <execution>
                        <id>Build Rpc</id>
                        <phase>initialize</phase>
@@ -78,9 +79,10 @@
                        <configuration>
                            <executable>python</executable>
                            <basedir>POGOProtos</basedir>
-                           <commandlineArgs>compile_single_file.py -i -l java -p pogo -o ../src/main/java --java_multiple_files</commandlineArgs>
+                           <commandlineArgs>compile_single_file.py -i -l java -p pogo -o ../src/main/java -m</commandlineArgs>
                        </configuration>
                    </execution>
+                   -->
                 </executions>
             </plugin>
             <plugin>
