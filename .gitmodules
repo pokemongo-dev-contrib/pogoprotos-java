@@ -1,4 +1,4 @@
 [submodule "POGOProtos"]
 	path = POGOProtos
-	url = https://github.com/Furtif/POGOProtos.git
+	url = https://github.com/Furtif/POGOProtos-Private.git
 	branch = master
