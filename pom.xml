@@ -57,18 +57,18 @@
                 <version>1.6.0</version>
                 <groupId>org.codehaus.mojo</groupId>
                <executions>
-                   <execution><!-- Run our version calculation script -->
+                   <!--<execution>
                        <id>Build Base</id>
                        <phase>initialize</phase>
                        <goals>
                            <goal>exec</goal>
                        </goals>
-                       <configuration>
+                       <<configuration>
                            <executable>python</executable>
                            <basedir>POGOProtos</basedir>
-                           <commandlineArgs>compile.py java -o ../src/main/java --java_multiple_files</commandlineArgs>
+                           <commandlineArgs>compile.py java -o ../src/main/java -java_multiple_files</commandlineArgs>
                        </configuration>
-                   </execution>
+                   </execution>-->
                 </executions>
             </plugin>
             <plugin>
@@ -83,14 +83,13 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
+                <!--<configuration>
                     <filesets>
                         <fileset>
                             <directory>src/main/java/POGOProtos</directory>
                         </fileset>
                     </filesets>
-                    <!--<verbose>true</verbose>-->
-                </configuration>
+                </configuration>-->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
