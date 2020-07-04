@@ -86,104 +86,104 @@ private static final long serialVersionUID = 0L;
   public enum Result
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    RESULT_UNSET(0),
+    UNSET(0),
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    RESULT_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>RESULT_ERROR_UNKNOWN = 2;</code>
+     * <code>ERROR_UNKNOWN = 2;</code>
      */
-    RESULT_ERROR_UNKNOWN(2),
+    ERROR_UNKNOWN(2),
     /**
-     * <code>RESULT_ERROR_ALREADY_A_FRIEND = 3;</code>
+     * <code>ERROR_ALREADY_A_FRIEND = 3;</code>
      */
-    RESULT_ERROR_ALREADY_A_FRIEND(3),
+    ERROR_ALREADY_A_FRIEND(3),
     /**
-     * <code>RESULT_ERROR_PLAYER_DOES_NOT_EXIST_DELETED = 4;</code>
+     * <code>ERROR_PLAYER_DOES_NOT_EXIST_DELETED = 4;</code>
      */
-    RESULT_ERROR_PLAYER_DOES_NOT_EXIST_DELETED(4),
+    ERROR_PLAYER_DOES_NOT_EXIST_DELETED(4),
     /**
-     * <code>RESULT_ERROR_PLAYER_INBOX_FULL = 5;</code>
+     * <code>ERROR_PLAYER_INBOX_FULL = 5;</code>
      */
-    RESULT_ERROR_PLAYER_INBOX_FULL(5),
+    ERROR_PLAYER_INBOX_FULL(5),
     /**
-     * <code>RESULT_ERROR_PLAYER_OUTBOX_FULL = 6;</code>
+     * <code>ERROR_PLAYER_OUTBOX_FULL = 6;</code>
      */
-    RESULT_ERROR_PLAYER_OUTBOX_FULL(6),
+    ERROR_PLAYER_OUTBOX_FULL(6),
     /**
-     * <code>RESULT_ERROR_SENDER_HAS_MAX_FRIENDS = 7;</code>
+     * <code>ERROR_SENDER_HAS_MAX_FRIENDS = 7;</code>
      */
-    RESULT_ERROR_SENDER_HAS_MAX_FRIENDS(7),
+    ERROR_SENDER_HAS_MAX_FRIENDS(7),
     /**
-     * <code>RESULT_ERROR_INVITE_ALREADY_SENT = 8;</code>
+     * <code>ERROR_INVITE_ALREADY_SENT = 8;</code>
      */
-    RESULT_ERROR_INVITE_ALREADY_SENT(8),
+    ERROR_INVITE_ALREADY_SENT(8),
     /**
-     * <code>RESULT_ERROR_CANNOT_SEND_INVITES_TO_YOURSELF = 9;</code>
+     * <code>ERROR_CANNOT_SEND_INVITES_TO_YOURSELF = 9;</code>
      */
-    RESULT_ERROR_CANNOT_SEND_INVITES_TO_YOURSELF(9),
+    ERROR_CANNOT_SEND_INVITES_TO_YOURSELF(9),
     /**
-     * <code>RESULT_ERROR_INVITE_ALREADY_RECEIVED = 10;</code>
+     * <code>ERROR_INVITE_ALREADY_RECEIVED = 10;</code>
      */
-    RESULT_ERROR_INVITE_ALREADY_RECEIVED(10),
+    ERROR_INVITE_ALREADY_RECEIVED(10),
     /**
-     * <code>RESULT_ERROR_RECEIVER_HAS_MAX_FRIENDS = 11;</code>
+     * <code>ERROR_RECEIVER_HAS_MAX_FRIENDS = 11;</code>
      */
-    RESULT_ERROR_RECEIVER_HAS_MAX_FRIENDS(11),
+    ERROR_RECEIVER_HAS_MAX_FRIENDS(11),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int RESULT_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int RESULT_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>RESULT_ERROR_UNKNOWN = 2;</code>
+     * <code>ERROR_UNKNOWN = 2;</code>
      */
-    public static final int RESULT_ERROR_UNKNOWN_VALUE = 2;
+    public static final int ERROR_UNKNOWN_VALUE = 2;
     /**
-     * <code>RESULT_ERROR_ALREADY_A_FRIEND = 3;</code>
+     * <code>ERROR_ALREADY_A_FRIEND = 3;</code>
      */
-    public static final int RESULT_ERROR_ALREADY_A_FRIEND_VALUE = 3;
+    public static final int ERROR_ALREADY_A_FRIEND_VALUE = 3;
     /**
-     * <code>RESULT_ERROR_PLAYER_DOES_NOT_EXIST_DELETED = 4;</code>
+     * <code>ERROR_PLAYER_DOES_NOT_EXIST_DELETED = 4;</code>
      */
-    public static final int RESULT_ERROR_PLAYER_DOES_NOT_EXIST_DELETED_VALUE = 4;
+    public static final int ERROR_PLAYER_DOES_NOT_EXIST_DELETED_VALUE = 4;
     /**
-     * <code>RESULT_ERROR_PLAYER_INBOX_FULL = 5;</code>
+     * <code>ERROR_PLAYER_INBOX_FULL = 5;</code>
      */
-    public static final int RESULT_ERROR_PLAYER_INBOX_FULL_VALUE = 5;
+    public static final int ERROR_PLAYER_INBOX_FULL_VALUE = 5;
     /**
-     * <code>RESULT_ERROR_PLAYER_OUTBOX_FULL = 6;</code>
+     * <code>ERROR_PLAYER_OUTBOX_FULL = 6;</code>
      */
-    public static final int RESULT_ERROR_PLAYER_OUTBOX_FULL_VALUE = 6;
+    public static final int ERROR_PLAYER_OUTBOX_FULL_VALUE = 6;
     /**
-     * <code>RESULT_ERROR_SENDER_HAS_MAX_FRIENDS = 7;</code>
+     * <code>ERROR_SENDER_HAS_MAX_FRIENDS = 7;</code>
      */
-    public static final int RESULT_ERROR_SENDER_HAS_MAX_FRIENDS_VALUE = 7;
+    public static final int ERROR_SENDER_HAS_MAX_FRIENDS_VALUE = 7;
     /**
-     * <code>RESULT_ERROR_INVITE_ALREADY_SENT = 8;</code>
+     * <code>ERROR_INVITE_ALREADY_SENT = 8;</code>
      */
-    public static final int RESULT_ERROR_INVITE_ALREADY_SENT_VALUE = 8;
+    public static final int ERROR_INVITE_ALREADY_SENT_VALUE = 8;
     /**
-     * <code>RESULT_ERROR_CANNOT_SEND_INVITES_TO_YOURSELF = 9;</code>
+     * <code>ERROR_CANNOT_SEND_INVITES_TO_YOURSELF = 9;</code>
      */
-    public static final int RESULT_ERROR_CANNOT_SEND_INVITES_TO_YOURSELF_VALUE = 9;
+    public static final int ERROR_CANNOT_SEND_INVITES_TO_YOURSELF_VALUE = 9;
     /**
-     * <code>RESULT_ERROR_INVITE_ALREADY_RECEIVED = 10;</code>
+     * <code>ERROR_INVITE_ALREADY_RECEIVED = 10;</code>
      */
-    public static final int RESULT_ERROR_INVITE_ALREADY_RECEIVED_VALUE = 10;
+    public static final int ERROR_INVITE_ALREADY_RECEIVED_VALUE = 10;
     /**
-     * <code>RESULT_ERROR_RECEIVER_HAS_MAX_FRIENDS = 11;</code>
+     * <code>ERROR_RECEIVER_HAS_MAX_FRIENDS = 11;</code>
      */
-    public static final int RESULT_ERROR_RECEIVER_HAS_MAX_FRIENDS_VALUE = 11;
+    public static final int ERROR_RECEIVER_HAS_MAX_FRIENDS_VALUE = 11;
 
 
     public final int getNumber() {
@@ -210,18 +210,18 @@ private static final long serialVersionUID = 0L;
      */
     public static Result forNumber(int value) {
       switch (value) {
-        case 0: return RESULT_UNSET;
-        case 1: return RESULT_SUCCESS;
-        case 2: return RESULT_ERROR_UNKNOWN;
-        case 3: return RESULT_ERROR_ALREADY_A_FRIEND;
-        case 4: return RESULT_ERROR_PLAYER_DOES_NOT_EXIST_DELETED;
-        case 5: return RESULT_ERROR_PLAYER_INBOX_FULL;
-        case 6: return RESULT_ERROR_PLAYER_OUTBOX_FULL;
-        case 7: return RESULT_ERROR_SENDER_HAS_MAX_FRIENDS;
-        case 8: return RESULT_ERROR_INVITE_ALREADY_SENT;
-        case 9: return RESULT_ERROR_CANNOT_SEND_INVITES_TO_YOURSELF;
-        case 10: return RESULT_ERROR_INVITE_ALREADY_RECEIVED;
-        case 11: return RESULT_ERROR_RECEIVER_HAS_MAX_FRIENDS;
+        case 0: return UNSET;
+        case 1: return SUCCESS;
+        case 2: return ERROR_UNKNOWN;
+        case 3: return ERROR_ALREADY_A_FRIEND;
+        case 4: return ERROR_PLAYER_DOES_NOT_EXIST_DELETED;
+        case 5: return ERROR_PLAYER_INBOX_FULL;
+        case 6: return ERROR_PLAYER_OUTBOX_FULL;
+        case 7: return ERROR_SENDER_HAS_MAX_FRIENDS;
+        case 8: return ERROR_INVITE_ALREADY_SENT;
+        case 9: return ERROR_CANNOT_SEND_INVITES_TO_YOURSELF;
+        case 10: return ERROR_INVITE_ALREADY_RECEIVED;
+        case 11: return ERROR_RECEIVER_HAS_MAX_FRIENDS;
         default: return null;
       }
     }

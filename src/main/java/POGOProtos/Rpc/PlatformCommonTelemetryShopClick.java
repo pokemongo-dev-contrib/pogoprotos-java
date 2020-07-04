@@ -195,32 +195,32 @@ private static final long serialVersionUID = 0L;
   public enum AccessType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ACCESSTYPE_UNSPECIFIED = 0;</code>
+     * <code>UNSPECIFIED = 0;</code>
      */
-    ACCESSTYPE_UNSPECIFIED(0),
+    UNSPECIFIED(0),
     /**
-     * <code>ACCESSTYPE_PASSIVE = 1;</code>
+     * <code>PASSIVE = 1;</code>
      */
-    ACCESSTYPE_PASSIVE(1),
+    PASSIVE(1),
     /**
-     * <code>ACCESSTYPE_ACTIVE = 2;</code>
+     * <code>ACTIVE = 2;</code>
      */
-    ACCESSTYPE_ACTIVE(2),
+    ACTIVE(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ACCESSTYPE_UNSPECIFIED = 0;</code>
+     * <code>UNSPECIFIED = 0;</code>
      */
-    public static final int ACCESSTYPE_UNSPECIFIED_VALUE = 0;
+    public static final int UNSPECIFIED_VALUE = 0;
     /**
-     * <code>ACCESSTYPE_PASSIVE = 1;</code>
+     * <code>PASSIVE = 1;</code>
      */
-    public static final int ACCESSTYPE_PASSIVE_VALUE = 1;
+    public static final int PASSIVE_VALUE = 1;
     /**
-     * <code>ACCESSTYPE_ACTIVE = 2;</code>
+     * <code>ACTIVE = 2;</code>
      */
-    public static final int ACCESSTYPE_ACTIVE_VALUE = 2;
+    public static final int ACTIVE_VALUE = 2;
 
 
     public final int getNumber() {
@@ -247,9 +247,9 @@ private static final long serialVersionUID = 0L;
      */
     public static AccessType forNumber(int value) {
       switch (value) {
-        case 0: return ACCESSTYPE_UNSPECIFIED;
-        case 1: return ACCESSTYPE_PASSIVE;
-        case 2: return ACCESSTYPE_ACTIVE;
+        case 0: return UNSPECIFIED;
+        case 1: return PASSIVE;
+        case 2: return ACTIVE;
         default: return null;
       }
     }
@@ -786,7 +786,7 @@ private static final long serialVersionUID = 0L;
     if (!getRootStorePageNameBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 14, rootStorePageName_);
     }
-    if (accessType_ != POGOProtos.Rpc.PlatformCommonTelemetryShopClick.AccessType.ACCESSTYPE_UNSPECIFIED.getNumber()) {
+    if (accessType_ != POGOProtos.Rpc.PlatformCommonTelemetryShopClick.AccessType.UNSPECIFIED.getNumber()) {
       output.writeEnum(15, accessType_);
     }
     if (!getFiatFormattedPriceBytes().isEmpty()) {
@@ -849,7 +849,7 @@ private static final long serialVersionUID = 0L;
     if (!getRootStorePageNameBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, rootStorePageName_);
     }
-    if (accessType_ != POGOProtos.Rpc.PlatformCommonTelemetryShopClick.AccessType.ACCESSTYPE_UNSPECIFIED.getNumber()) {
+    if (accessType_ != POGOProtos.Rpc.PlatformCommonTelemetryShopClick.AccessType.UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(15, accessType_);
     }

@@ -107,32 +107,32 @@ private static final long serialVersionUID = 0L;
   public enum PoiSubmissionPhotoUploadErrorIds
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>POISUBMISSIONPHOTOUPLOADERRORIDS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    POISUBMISSIONPHOTOUPLOADERRORIDS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>POISUBMISSIONPHOTOUPLOADERRORIDS_POI_PHOTO_UPLOAD_ERROR = 1;</code>
+     * <code>POI_PHOTO_UPLOAD_ERROR = 1;</code>
      */
-    POISUBMISSIONPHOTOUPLOADERRORIDS_POI_PHOTO_UPLOAD_ERROR(1),
+    POI_PHOTO_UPLOAD_ERROR(1),
     /**
-     * <code>POISUBMISSIONPHOTOUPLOADERRORIDS_POI_PHOTO_UPLOAD_TIMEOUT = 2;</code>
+     * <code>POI_PHOTO_UPLOAD_TIMEOUT = 2;</code>
      */
-    POISUBMISSIONPHOTOUPLOADERRORIDS_POI_PHOTO_UPLOAD_TIMEOUT(2),
+    POI_PHOTO_UPLOAD_TIMEOUT(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>POISUBMISSIONPHOTOUPLOADERRORIDS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int POISUBMISSIONPHOTOUPLOADERRORIDS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>POISUBMISSIONPHOTOUPLOADERRORIDS_POI_PHOTO_UPLOAD_ERROR = 1;</code>
+     * <code>POI_PHOTO_UPLOAD_ERROR = 1;</code>
      */
-    public static final int POISUBMISSIONPHOTOUPLOADERRORIDS_POI_PHOTO_UPLOAD_ERROR_VALUE = 1;
+    public static final int POI_PHOTO_UPLOAD_ERROR_VALUE = 1;
     /**
-     * <code>POISUBMISSIONPHOTOUPLOADERRORIDS_POI_PHOTO_UPLOAD_TIMEOUT = 2;</code>
+     * <code>POI_PHOTO_UPLOAD_TIMEOUT = 2;</code>
      */
-    public static final int POISUBMISSIONPHOTOUPLOADERRORIDS_POI_PHOTO_UPLOAD_TIMEOUT_VALUE = 2;
+    public static final int POI_PHOTO_UPLOAD_TIMEOUT_VALUE = 2;
 
 
     public final int getNumber() {
@@ -159,9 +159,9 @@ private static final long serialVersionUID = 0L;
      */
     public static PoiSubmissionPhotoUploadErrorIds forNumber(int value) {
       switch (value) {
-        case 0: return POISUBMISSIONPHOTOUPLOADERRORIDS_UNSET;
-        case 1: return POISUBMISSIONPHOTOUPLOADERRORIDS_POI_PHOTO_UPLOAD_ERROR;
-        case 2: return POISUBMISSIONPHOTOUPLOADERRORIDS_POI_PHOTO_UPLOAD_TIMEOUT;
+        case 0: return UNSET;
+        case 1: return POI_PHOTO_UPLOAD_ERROR;
+        case 2: return POI_PHOTO_UPLOAD_TIMEOUT;
         default: return null;
       }
     }
@@ -302,10 +302,10 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (errorId_ != POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.PoiSubmissionPhotoUploadErrorIds.POISUBMISSIONPHOTOUPLOADERRORIDS_UNSET.getNumber()) {
+    if (errorId_ != POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.PoiSubmissionPhotoUploadErrorIds.UNSET.getNumber()) {
       output.writeEnum(1, errorId_);
     }
-    if (imageType_ != POGOProtos.Rpc.PoiImageType.PLATFORM_POIIMAGETYPE_UNSET.getNumber()) {
+    if (imageType_ != POGOProtos.Rpc.PoiImageType.PLATFORM_POI_IMAGE_TYPE_UNSET.getNumber()) {
       output.writeEnum(2, imageType_);
     }
     if (!getErrorMessageBytes().isEmpty()) {
@@ -320,11 +320,11 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (errorId_ != POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.PoiSubmissionPhotoUploadErrorIds.POISUBMISSIONPHOTOUPLOADERRORIDS_UNSET.getNumber()) {
+    if (errorId_ != POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.PoiSubmissionPhotoUploadErrorIds.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, errorId_);
     }
-    if (imageType_ != POGOProtos.Rpc.PoiImageType.PLATFORM_POIIMAGETYPE_UNSET.getNumber()) {
+    if (imageType_ != POGOProtos.Rpc.PoiImageType.PLATFORM_POI_IMAGE_TYPE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, imageType_);
     }

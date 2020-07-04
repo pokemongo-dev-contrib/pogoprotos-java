@@ -99,32 +99,32 @@ private static final long serialVersionUID = 0L;
   public enum AppLinkType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>APPLINKTYPE_NO_LINK = 0;</code>
+     * <code>NO_LINK = 0;</code>
      */
-    APPLINKTYPE_NO_LINK(0),
+    NO_LINK(0),
     /**
-     * <code>APPLINKTYPE_WEB_LINK = 1;</code>
+     * <code>WEB_LINK = 1;</code>
      */
-    APPLINKTYPE_WEB_LINK(1),
+    WEB_LINK(1),
     /**
-     * <code>APPLINKTYPE_APP_STORE_LINK = 2;</code>
+     * <code>APP_STORE_LINK = 2;</code>
      */
-    APPLINKTYPE_APP_STORE_LINK(2),
+    APP_STORE_LINK(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>APPLINKTYPE_NO_LINK = 0;</code>
+     * <code>NO_LINK = 0;</code>
      */
-    public static final int APPLINKTYPE_NO_LINK_VALUE = 0;
+    public static final int NO_LINK_VALUE = 0;
     /**
-     * <code>APPLINKTYPE_WEB_LINK = 1;</code>
+     * <code>WEB_LINK = 1;</code>
      */
-    public static final int APPLINKTYPE_WEB_LINK_VALUE = 1;
+    public static final int WEB_LINK_VALUE = 1;
     /**
-     * <code>APPLINKTYPE_APP_STORE_LINK = 2;</code>
+     * <code>APP_STORE_LINK = 2;</code>
      */
-    public static final int APPLINKTYPE_APP_STORE_LINK_VALUE = 2;
+    public static final int APP_STORE_LINK_VALUE = 2;
 
 
     public final int getNumber() {
@@ -151,9 +151,9 @@ private static final long serialVersionUID = 0L;
      */
     public static AppLinkType forNumber(int value) {
       switch (value) {
-        case 0: return APPLINKTYPE_NO_LINK;
-        case 1: return APPLINKTYPE_WEB_LINK;
-        case 2: return APPLINKTYPE_APP_STORE_LINK;
+        case 0: return NO_LINK;
+        case 1: return WEB_LINK;
+        case 2: return APP_STORE_LINK;
         default: return null;
       }
     }
@@ -212,40 +212,40 @@ private static final long serialVersionUID = 0L;
   public enum FeatureType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>FEATURETYPE_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    FEATURETYPE_UNSET(0),
+    UNSET(0),
     /**
-     * <code>FEATURETYPE_NIANTIC_PROFILE = 1;</code>
+     * <code>NIANTIC_PROFILE = 1;</code>
      */
-    FEATURETYPE_NIANTIC_PROFILE(1),
+    NIANTIC_PROFILE(1),
     /**
-     * <code>FEATURETYPE_ONLINE_STATUS = 2;</code>
+     * <code>ONLINE_STATUS = 2;</code>
      */
-    FEATURETYPE_ONLINE_STATUS(2),
+    ONLINE_STATUS(2),
     /**
-     * <code>FEATURETYPE_FRIEND_LIST = 3;</code>
+     * <code>FRIEND_LIST = 3;</code>
      */
-    FEATURETYPE_FRIEND_LIST(3),
+    FRIEND_LIST(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>FEATURETYPE_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int FEATURETYPE_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>FEATURETYPE_NIANTIC_PROFILE = 1;</code>
+     * <code>NIANTIC_PROFILE = 1;</code>
      */
-    public static final int FEATURETYPE_NIANTIC_PROFILE_VALUE = 1;
+    public static final int NIANTIC_PROFILE_VALUE = 1;
     /**
-     * <code>FEATURETYPE_ONLINE_STATUS = 2;</code>
+     * <code>ONLINE_STATUS = 2;</code>
      */
-    public static final int FEATURETYPE_ONLINE_STATUS_VALUE = 2;
+    public static final int ONLINE_STATUS_VALUE = 2;
     /**
-     * <code>FEATURETYPE_FRIEND_LIST = 3;</code>
+     * <code>FRIEND_LIST = 3;</code>
      */
-    public static final int FEATURETYPE_FRIEND_LIST_VALUE = 3;
+    public static final int FRIEND_LIST_VALUE = 3;
 
 
     public final int getNumber() {
@@ -272,10 +272,10 @@ private static final long serialVersionUID = 0L;
      */
     public static FeatureType forNumber(int value) {
       switch (value) {
-        case 0: return FEATURETYPE_UNSET;
-        case 1: return FEATURETYPE_NIANTIC_PROFILE;
-        case 2: return FEATURETYPE_ONLINE_STATUS;
-        case 3: return FEATURETYPE_FRIEND_LIST;
+        case 0: return UNSET;
+        case 1: return NIANTIC_PROFILE;
+        case 2: return ONLINE_STATUS;
+        case 3: return FRIEND_LIST;
         default: return null;
       }
     }
@@ -490,32 +490,32 @@ private static final long serialVersionUID = 0L;
     public enum AppLinkType
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>APPLINKTYPE_NO_LINK = 0;</code>
+       * <code>NO_LINK = 0;</code>
        */
-      APPLINKTYPE_NO_LINK(0),
+      NO_LINK(0),
       /**
-       * <code>APPLINKTYPE_WEB_LINK = 1;</code>
+       * <code>WEB_LINK = 1;</code>
        */
-      APPLINKTYPE_WEB_LINK(1),
+      WEB_LINK(1),
       /**
-       * <code>APPLINKTYPE_APP_STORE_LINK = 2;</code>
+       * <code>APP_STORE_LINK = 2;</code>
        */
-      APPLINKTYPE_APP_STORE_LINK(2),
+      APP_STORE_LINK(2),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>APPLINKTYPE_NO_LINK = 0;</code>
+       * <code>NO_LINK = 0;</code>
        */
-      public static final int APPLINKTYPE_NO_LINK_VALUE = 0;
+      public static final int NO_LINK_VALUE = 0;
       /**
-       * <code>APPLINKTYPE_WEB_LINK = 1;</code>
+       * <code>WEB_LINK = 1;</code>
        */
-      public static final int APPLINKTYPE_WEB_LINK_VALUE = 1;
+      public static final int WEB_LINK_VALUE = 1;
       /**
-       * <code>APPLINKTYPE_APP_STORE_LINK = 2;</code>
+       * <code>APP_STORE_LINK = 2;</code>
        */
-      public static final int APPLINKTYPE_APP_STORE_LINK_VALUE = 2;
+      public static final int APP_STORE_LINK_VALUE = 2;
 
 
       public final int getNumber() {
@@ -542,9 +542,9 @@ private static final long serialVersionUID = 0L;
        */
       public static AppLinkType forNumber(int value) {
         switch (value) {
-          case 0: return APPLINKTYPE_NO_LINK;
-          case 1: return APPLINKTYPE_WEB_LINK;
-          case 2: return APPLINKTYPE_APP_STORE_LINK;
+          case 0: return NO_LINK;
+          case 1: return WEB_LINK;
+          case 2: return APP_STORE_LINK;
           default: return null;
         }
       }
@@ -603,40 +603,40 @@ private static final long serialVersionUID = 0L;
     public enum FeatureType
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>FEATURETYPE_UNSET = 0;</code>
+       * <code>UNSET = 0;</code>
        */
-      FEATURETYPE_UNSET(0),
+      UNSET(0),
       /**
-       * <code>FEATURETYPE_NIANTIC_PROFILE = 1;</code>
+       * <code>NIANTIC_PROFILE = 1;</code>
        */
-      FEATURETYPE_NIANTIC_PROFILE(1),
+      NIANTIC_PROFILE(1),
       /**
-       * <code>FEATURETYPE_ONLINE_STATUS = 2;</code>
+       * <code>ONLINE_STATUS = 2;</code>
        */
-      FEATURETYPE_ONLINE_STATUS(2),
+      ONLINE_STATUS(2),
       /**
-       * <code>FEATURETYPE_FRIEND_LIST = 3;</code>
+       * <code>FRIEND_LIST = 3;</code>
        */
-      FEATURETYPE_FRIEND_LIST(3),
+      FRIEND_LIST(3),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>FEATURETYPE_UNSET = 0;</code>
+       * <code>UNSET = 0;</code>
        */
-      public static final int FEATURETYPE_UNSET_VALUE = 0;
+      public static final int UNSET_VALUE = 0;
       /**
-       * <code>FEATURETYPE_NIANTIC_PROFILE = 1;</code>
+       * <code>NIANTIC_PROFILE = 1;</code>
        */
-      public static final int FEATURETYPE_NIANTIC_PROFILE_VALUE = 1;
+      public static final int NIANTIC_PROFILE_VALUE = 1;
       /**
-       * <code>FEATURETYPE_ONLINE_STATUS = 2;</code>
+       * <code>ONLINE_STATUS = 2;</code>
        */
-      public static final int FEATURETYPE_ONLINE_STATUS_VALUE = 2;
+      public static final int ONLINE_STATUS_VALUE = 2;
       /**
-       * <code>FEATURETYPE_FRIEND_LIST = 3;</code>
+       * <code>FRIEND_LIST = 3;</code>
        */
-      public static final int FEATURETYPE_FRIEND_LIST_VALUE = 3;
+      public static final int FRIEND_LIST_VALUE = 3;
 
 
       public final int getNumber() {
@@ -663,10 +663,10 @@ private static final long serialVersionUID = 0L;
        */
       public static FeatureType forNumber(int value) {
         switch (value) {
-          case 0: return FEATURETYPE_UNSET;
-          case 1: return FEATURETYPE_NIANTIC_PROFILE;
-          case 2: return FEATURETYPE_ONLINE_STATUS;
-          case 3: return FEATURETYPE_FRIEND_LIST;
+          case 0: return UNSET;
+          case 1: return NIANTIC_PROFILE;
+          case 2: return ONLINE_STATUS;
+          case 3: return FRIEND_LIST;
           default: return null;
         }
       }
@@ -813,7 +813,7 @@ private static final long serialVersionUID = 0L;
       for (int i = 0; i < disabledFeatures_.size(); i++) {
         output.writeEnumNoTag(disabledFeatures_.get(i));
       }
-      if (appLink_ != POGOProtos.Rpc.PlatformSocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType.APPLINKTYPE_NO_LINK.getNumber()) {
+      if (appLink_ != POGOProtos.Rpc.PlatformSocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType.NO_LINK.getNumber()) {
         output.writeEnum(2, appLink_);
       }
       unknownFields.writeTo(output);
@@ -837,7 +837,7 @@ private static final long serialVersionUID = 0L;
             .computeUInt32SizeNoTag(dataSize);
         }disabledFeaturesMemoizedSerializedSize = dataSize;
       }
-      if (appLink_ != POGOProtos.Rpc.PlatformSocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType.APPLINKTYPE_NO_LINK.getNumber()) {
+      if (appLink_ != POGOProtos.Rpc.PlatformSocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType.NO_LINK.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(2, appLink_);
       }

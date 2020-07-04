@@ -100,40 +100,40 @@ private static final long serialVersionUID = 0L;
   public enum Label
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>LABEL_UNSET_LABEL = 0;</code>
+     * <code>UNSET_LABEL = 0;</code>
      */
-    LABEL_UNSET_LABEL(0),
+    UNSET_LABEL(0),
     /**
-     * <code>LABEL_UNREAD = 1;</code>
+     * <code>UNREAD = 1;</code>
      */
-    LABEL_UNREAD(1),
+    UNREAD(1),
     /**
-     * <code>LABEL_NEW = 2;</code>
+     * <code>NEW = 2;</code>
      */
-    LABEL_NEW(2),
+    NEW(2),
     /**
-     * <code>LABEL_IMMEDIATE = 3;</code>
+     * <code>IMMEDIATE = 3;</code>
      */
-    LABEL_IMMEDIATE(3),
+    IMMEDIATE(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>LABEL_UNSET_LABEL = 0;</code>
+     * <code>UNSET_LABEL = 0;</code>
      */
-    public static final int LABEL_UNSET_LABEL_VALUE = 0;
+    public static final int UNSET_LABEL_VALUE = 0;
     /**
-     * <code>LABEL_UNREAD = 1;</code>
+     * <code>UNREAD = 1;</code>
      */
-    public static final int LABEL_UNREAD_VALUE = 1;
+    public static final int UNREAD_VALUE = 1;
     /**
-     * <code>LABEL_NEW = 2;</code>
+     * <code>NEW = 2;</code>
      */
-    public static final int LABEL_NEW_VALUE = 2;
+    public static final int NEW_VALUE = 2;
     /**
-     * <code>LABEL_IMMEDIATE = 3;</code>
+     * <code>IMMEDIATE = 3;</code>
      */
-    public static final int LABEL_IMMEDIATE_VALUE = 3;
+    public static final int IMMEDIATE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -160,10 +160,10 @@ private static final long serialVersionUID = 0L;
      */
     public static Label forNumber(int value) {
       switch (value) {
-        case 0: return LABEL_UNSET_LABEL;
-        case 1: return LABEL_UNREAD;
-        case 2: return LABEL_NEW;
-        case 3: return LABEL_IMMEDIATE;
+        case 0: return UNSET_LABEL;
+        case 1: return UNREAD;
+        case 2: return NEW;
+        case 3: return IMMEDIATE;
         default: return null;
       }
     }

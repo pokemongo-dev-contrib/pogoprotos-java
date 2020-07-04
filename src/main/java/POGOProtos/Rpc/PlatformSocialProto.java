@@ -86,40 +86,40 @@ private static final long serialVersionUID = 0L;
   public enum AppKey
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>APPKEY_INVALID = 0;</code>
+     * <code>INVALID = 0;</code>
      */
-    APPKEY_INVALID(0),
+    INVALID(0),
     /**
-     * <code>APPKEY_INGRESS_DELETED = 1;</code>
+     * <code>INGRESS_DELETED = 1;</code>
      */
-    APPKEY_INGRESS_DELETED(1),
+    INGRESS_DELETED(1),
     /**
-     * <code>APPKEY_HOLOHOLO_DELETED = 2;</code>
+     * <code>HOLOHOLO_DELETED = 2;</code>
      */
-    APPKEY_HOLOHOLO_DELETED(2),
+    HOLOHOLO_DELETED(2),
     /**
-     * <code>APPKEY_LEXICON_DELETED = 3;</code>
+     * <code>LEXICON_DELETED = 3;</code>
      */
-    APPKEY_LEXICON_DELETED(3),
+    LEXICON_DELETED(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>APPKEY_INVALID = 0;</code>
+     * <code>INVALID = 0;</code>
      */
-    public static final int APPKEY_INVALID_VALUE = 0;
+    public static final int INVALID_VALUE = 0;
     /**
-     * <code>APPKEY_INGRESS_DELETED = 1;</code>
+     * <code>INGRESS_DELETED = 1;</code>
      */
-    public static final int APPKEY_INGRESS_DELETED_VALUE = 1;
+    public static final int INGRESS_DELETED_VALUE = 1;
     /**
-     * <code>APPKEY_HOLOHOLO_DELETED = 2;</code>
+     * <code>HOLOHOLO_DELETED = 2;</code>
      */
-    public static final int APPKEY_HOLOHOLO_DELETED_VALUE = 2;
+    public static final int HOLOHOLO_DELETED_VALUE = 2;
     /**
-     * <code>APPKEY_LEXICON_DELETED = 3;</code>
+     * <code>LEXICON_DELETED = 3;</code>
      */
-    public static final int APPKEY_LEXICON_DELETED_VALUE = 3;
+    public static final int LEXICON_DELETED_VALUE = 3;
 
 
     public final int getNumber() {
@@ -146,10 +146,10 @@ private static final long serialVersionUID = 0L;
      */
     public static AppKey forNumber(int value) {
       switch (value) {
-        case 0: return APPKEY_INVALID;
-        case 1: return APPKEY_INGRESS_DELETED;
-        case 2: return APPKEY_HOLOHOLO_DELETED;
-        case 3: return APPKEY_LEXICON_DELETED;
+        case 0: return INVALID;
+        case 1: return INGRESS_DELETED;
+        case 2: return HOLOHOLO_DELETED;
+        case 3: return LEXICON_DELETED;
         default: return null;
       }
     }

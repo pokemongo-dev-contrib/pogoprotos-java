@@ -86,128 +86,128 @@ private static final long serialVersionUID = 0L;
   public enum Result
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    RESULT_UNSET(0),
+    UNSET(0),
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    RESULT_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>RESULT_ERROR_UNKNOWN = 2;</code>
+     * <code>ERROR_UNKNOWN = 2;</code>
      */
-    RESULT_ERROR_UNKNOWN(2),
+    ERROR_UNKNOWN(2),
     /**
-     * <code>RESULT_ERROR_PLAYER_NOT_FOUND = 3;</code>
+     * <code>ERROR_PLAYER_NOT_FOUND = 3;</code>
      */
-    RESULT_ERROR_PLAYER_NOT_FOUND(3),
+    ERROR_PLAYER_NOT_FOUND(3),
     /**
-     * <code>RESULT_ERROR_PLAYER_OUTBOX_FULL = 4;</code>
+     * <code>ERROR_PLAYER_OUTBOX_FULL = 4;</code>
      */
-    RESULT_ERROR_PLAYER_OUTBOX_FULL(4),
+    ERROR_PLAYER_OUTBOX_FULL(4),
     /**
-     * <code>RESULT_ERROR_PLAYER_INBOX_FULL = 5;</code>
+     * <code>ERROR_PLAYER_INBOX_FULL = 5;</code>
      */
-    RESULT_ERROR_PLAYER_INBOX_FULL(5),
+    ERROR_PLAYER_INBOX_FULL(5),
     /**
-     * <code>RESULT_ERROR_SENDER_HAS_MAX_FRIENDS = 6;</code>
+     * <code>ERROR_SENDER_HAS_MAX_FRIENDS = 6;</code>
      */
-    RESULT_ERROR_SENDER_HAS_MAX_FRIENDS(6),
+    ERROR_SENDER_HAS_MAX_FRIENDS(6),
     /**
-     * <code>RESULT_ERROR_RECEIVER_HAS_MAX_FRIENDS = 7;</code>
+     * <code>ERROR_RECEIVER_HAS_MAX_FRIENDS = 7;</code>
      */
-    RESULT_ERROR_RECEIVER_HAS_MAX_FRIENDS(7),
+    ERROR_RECEIVER_HAS_MAX_FRIENDS(7),
     /**
-     * <code>RESULT_ERROR_ALREADY_A_FRIEND = 8;</code>
+     * <code>ERROR_ALREADY_A_FRIEND = 8;</code>
      */
-    RESULT_ERROR_ALREADY_A_FRIEND(8),
+    ERROR_ALREADY_A_FRIEND(8),
     /**
-     * <code>RESULT_ERROR_INVITE_ALREADY_SENT = 9;</code>
+     * <code>ERROR_INVITE_ALREADY_SENT = 9;</code>
      */
-    RESULT_ERROR_INVITE_ALREADY_SENT(9),
+    ERROR_INVITE_ALREADY_SENT(9),
     /**
-     * <code>RESULT_ERROR_INVITE_ALREADY_RECEIVED = 10;</code>
+     * <code>ERROR_INVITE_ALREADY_RECEIVED = 10;</code>
      */
-    RESULT_ERROR_INVITE_ALREADY_RECEIVED(10),
+    ERROR_INVITE_ALREADY_RECEIVED(10),
     /**
-     * <code>RESULT_ERROR_CANNOT_SEND_INVITES_TO_YOURSELF = 11;</code>
+     * <code>ERROR_CANNOT_SEND_INVITES_TO_YOURSELF = 11;</code>
      */
-    RESULT_ERROR_CANNOT_SEND_INVITES_TO_YOURSELF(11),
+    ERROR_CANNOT_SEND_INVITES_TO_YOURSELF(11),
     /**
-     * <code>RESULT_ERROR_FRIEND_CACHE_EXPIRED = 12;</code>
+     * <code>ERROR_FRIEND_CACHE_EXPIRED = 12;</code>
      */
-    RESULT_ERROR_FRIEND_CACHE_EXPIRED(12),
+    ERROR_FRIEND_CACHE_EXPIRED(12),
     /**
-     * <code>RESULT_ERROR_FRIEND_NOT_CACHED = 13;</code>
+     * <code>ERROR_FRIEND_NOT_CACHED = 13;</code>
      */
-    RESULT_ERROR_FRIEND_NOT_CACHED(13),
+    ERROR_FRIEND_NOT_CACHED(13),
     /**
-     * <code>RESULT_ERROR_INVALID_SENDER_FACEBOOK_ID = 14;</code>
+     * <code>ERROR_INVALID_SENDER_FACEBOOK_ID = 14;</code>
      */
-    RESULT_ERROR_INVALID_SENDER_FACEBOOK_ID(14),
+    ERROR_INVALID_SENDER_FACEBOOK_ID(14),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int RESULT_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int RESULT_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>RESULT_ERROR_UNKNOWN = 2;</code>
+     * <code>ERROR_UNKNOWN = 2;</code>
      */
-    public static final int RESULT_ERROR_UNKNOWN_VALUE = 2;
+    public static final int ERROR_UNKNOWN_VALUE = 2;
     /**
-     * <code>RESULT_ERROR_PLAYER_NOT_FOUND = 3;</code>
+     * <code>ERROR_PLAYER_NOT_FOUND = 3;</code>
      */
-    public static final int RESULT_ERROR_PLAYER_NOT_FOUND_VALUE = 3;
+    public static final int ERROR_PLAYER_NOT_FOUND_VALUE = 3;
     /**
-     * <code>RESULT_ERROR_PLAYER_OUTBOX_FULL = 4;</code>
+     * <code>ERROR_PLAYER_OUTBOX_FULL = 4;</code>
      */
-    public static final int RESULT_ERROR_PLAYER_OUTBOX_FULL_VALUE = 4;
+    public static final int ERROR_PLAYER_OUTBOX_FULL_VALUE = 4;
     /**
-     * <code>RESULT_ERROR_PLAYER_INBOX_FULL = 5;</code>
+     * <code>ERROR_PLAYER_INBOX_FULL = 5;</code>
      */
-    public static final int RESULT_ERROR_PLAYER_INBOX_FULL_VALUE = 5;
+    public static final int ERROR_PLAYER_INBOX_FULL_VALUE = 5;
     /**
-     * <code>RESULT_ERROR_SENDER_HAS_MAX_FRIENDS = 6;</code>
+     * <code>ERROR_SENDER_HAS_MAX_FRIENDS = 6;</code>
      */
-    public static final int RESULT_ERROR_SENDER_HAS_MAX_FRIENDS_VALUE = 6;
+    public static final int ERROR_SENDER_HAS_MAX_FRIENDS_VALUE = 6;
     /**
-     * <code>RESULT_ERROR_RECEIVER_HAS_MAX_FRIENDS = 7;</code>
+     * <code>ERROR_RECEIVER_HAS_MAX_FRIENDS = 7;</code>
      */
-    public static final int RESULT_ERROR_RECEIVER_HAS_MAX_FRIENDS_VALUE = 7;
+    public static final int ERROR_RECEIVER_HAS_MAX_FRIENDS_VALUE = 7;
     /**
-     * <code>RESULT_ERROR_ALREADY_A_FRIEND = 8;</code>
+     * <code>ERROR_ALREADY_A_FRIEND = 8;</code>
      */
-    public static final int RESULT_ERROR_ALREADY_A_FRIEND_VALUE = 8;
+    public static final int ERROR_ALREADY_A_FRIEND_VALUE = 8;
     /**
-     * <code>RESULT_ERROR_INVITE_ALREADY_SENT = 9;</code>
+     * <code>ERROR_INVITE_ALREADY_SENT = 9;</code>
      */
-    public static final int RESULT_ERROR_INVITE_ALREADY_SENT_VALUE = 9;
+    public static final int ERROR_INVITE_ALREADY_SENT_VALUE = 9;
     /**
-     * <code>RESULT_ERROR_INVITE_ALREADY_RECEIVED = 10;</code>
+     * <code>ERROR_INVITE_ALREADY_RECEIVED = 10;</code>
      */
-    public static final int RESULT_ERROR_INVITE_ALREADY_RECEIVED_VALUE = 10;
+    public static final int ERROR_INVITE_ALREADY_RECEIVED_VALUE = 10;
     /**
-     * <code>RESULT_ERROR_CANNOT_SEND_INVITES_TO_YOURSELF = 11;</code>
+     * <code>ERROR_CANNOT_SEND_INVITES_TO_YOURSELF = 11;</code>
      */
-    public static final int RESULT_ERROR_CANNOT_SEND_INVITES_TO_YOURSELF_VALUE = 11;
+    public static final int ERROR_CANNOT_SEND_INVITES_TO_YOURSELF_VALUE = 11;
     /**
-     * <code>RESULT_ERROR_FRIEND_CACHE_EXPIRED = 12;</code>
+     * <code>ERROR_FRIEND_CACHE_EXPIRED = 12;</code>
      */
-    public static final int RESULT_ERROR_FRIEND_CACHE_EXPIRED_VALUE = 12;
+    public static final int ERROR_FRIEND_CACHE_EXPIRED_VALUE = 12;
     /**
-     * <code>RESULT_ERROR_FRIEND_NOT_CACHED = 13;</code>
+     * <code>ERROR_FRIEND_NOT_CACHED = 13;</code>
      */
-    public static final int RESULT_ERROR_FRIEND_NOT_CACHED_VALUE = 13;
+    public static final int ERROR_FRIEND_NOT_CACHED_VALUE = 13;
     /**
-     * <code>RESULT_ERROR_INVALID_SENDER_FACEBOOK_ID = 14;</code>
+     * <code>ERROR_INVALID_SENDER_FACEBOOK_ID = 14;</code>
      */
-    public static final int RESULT_ERROR_INVALID_SENDER_FACEBOOK_ID_VALUE = 14;
+    public static final int ERROR_INVALID_SENDER_FACEBOOK_ID_VALUE = 14;
 
 
     public final int getNumber() {
@@ -234,21 +234,21 @@ private static final long serialVersionUID = 0L;
      */
     public static Result forNumber(int value) {
       switch (value) {
-        case 0: return RESULT_UNSET;
-        case 1: return RESULT_SUCCESS;
-        case 2: return RESULT_ERROR_UNKNOWN;
-        case 3: return RESULT_ERROR_PLAYER_NOT_FOUND;
-        case 4: return RESULT_ERROR_PLAYER_OUTBOX_FULL;
-        case 5: return RESULT_ERROR_PLAYER_INBOX_FULL;
-        case 6: return RESULT_ERROR_SENDER_HAS_MAX_FRIENDS;
-        case 7: return RESULT_ERROR_RECEIVER_HAS_MAX_FRIENDS;
-        case 8: return RESULT_ERROR_ALREADY_A_FRIEND;
-        case 9: return RESULT_ERROR_INVITE_ALREADY_SENT;
-        case 10: return RESULT_ERROR_INVITE_ALREADY_RECEIVED;
-        case 11: return RESULT_ERROR_CANNOT_SEND_INVITES_TO_YOURSELF;
-        case 12: return RESULT_ERROR_FRIEND_CACHE_EXPIRED;
-        case 13: return RESULT_ERROR_FRIEND_NOT_CACHED;
-        case 14: return RESULT_ERROR_INVALID_SENDER_FACEBOOK_ID;
+        case 0: return UNSET;
+        case 1: return SUCCESS;
+        case 2: return ERROR_UNKNOWN;
+        case 3: return ERROR_PLAYER_NOT_FOUND;
+        case 4: return ERROR_PLAYER_OUTBOX_FULL;
+        case 5: return ERROR_PLAYER_INBOX_FULL;
+        case 6: return ERROR_SENDER_HAS_MAX_FRIENDS;
+        case 7: return ERROR_RECEIVER_HAS_MAX_FRIENDS;
+        case 8: return ERROR_ALREADY_A_FRIEND;
+        case 9: return ERROR_INVITE_ALREADY_SENT;
+        case 10: return ERROR_INVITE_ALREADY_RECEIVED;
+        case 11: return ERROR_CANNOT_SEND_INVITES_TO_YOURSELF;
+        case 12: return ERROR_FRIEND_CACHE_EXPIRED;
+        case 13: return ERROR_FRIEND_NOT_CACHED;
+        case 14: return ERROR_INVALID_SENDER_FACEBOOK_ID;
         default: return null;
       }
     }

@@ -91,32 +91,32 @@ private static final long serialVersionUID = 0L;
   public enum Severity
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>SEVERITY_NONE = 0;</code>
+     * <code>NONE = 0;</code>
      */
-    SEVERITY_NONE(0),
+    NONE(0),
     /**
-     * <code>SEVERITY_MODERATE = 1;</code>
+     * <code>MODERATE = 1;</code>
      */
-    SEVERITY_MODERATE(1),
+    MODERATE(1),
     /**
-     * <code>SEVERITY_EXTREME = 2;</code>
+     * <code>EXTREME = 2;</code>
      */
-    SEVERITY_EXTREME(2),
+    EXTREME(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>SEVERITY_NONE = 0;</code>
+     * <code>NONE = 0;</code>
      */
-    public static final int SEVERITY_NONE_VALUE = 0;
+    public static final int NONE_VALUE = 0;
     /**
-     * <code>SEVERITY_MODERATE = 1;</code>
+     * <code>MODERATE = 1;</code>
      */
-    public static final int SEVERITY_MODERATE_VALUE = 1;
+    public static final int MODERATE_VALUE = 1;
     /**
-     * <code>SEVERITY_EXTREME = 2;</code>
+     * <code>EXTREME = 2;</code>
      */
-    public static final int SEVERITY_EXTREME_VALUE = 2;
+    public static final int EXTREME_VALUE = 2;
 
 
     public final int getNumber() {
@@ -143,9 +143,9 @@ private static final long serialVersionUID = 0L;
      */
     public static Severity forNumber(int value) {
       switch (value) {
-        case 0: return SEVERITY_NONE;
-        case 1: return SEVERITY_MODERATE;
-        case 2: return SEVERITY_EXTREME;
+        case 0: return NONE;
+        case 1: return MODERATE;
+        case 2: return EXTREME;
         default: return null;
       }
     }

@@ -9,40 +9,40 @@ package POGOProtos.Rpc;
 public enum NotificationType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>NOTIFICATIONTYPE_NO_NOTIFICATIONS = 0;</code>
+   * <code>NOTIFICATION_TYPE_NO_NOTIFICATIONS = 0;</code>
    */
-  NOTIFICATIONTYPE_NO_NOTIFICATIONS(0),
+  NOTIFICATION_TYPE_NO_NOTIFICATIONS(0),
   /**
-   * <code>NOTIFICATIONTYPE_POKEMON_NOTIFICATIONS = 1;</code>
+   * <code>NOTIFICATION_TYPE_POKEMON_NOTIFICATIONS = 1;</code>
    */
-  NOTIFICATIONTYPE_POKEMON_NOTIFICATIONS(1),
+  NOTIFICATION_TYPE_POKEMON_NOTIFICATIONS(1),
   /**
-   * <code>NOTIFICATIONTYPE_POKESTOP_NOTIFICATIONS = 2;</code>
+   * <code>NOTIFICATION_TYPE_POKESTOP_NOTIFICATIONS = 2;</code>
    */
-  NOTIFICATIONTYPE_POKESTOP_NOTIFICATIONS(2),
+  NOTIFICATION_TYPE_POKESTOP_NOTIFICATIONS(2),
   /**
-   * <code>NOTIFICATIONTYPE_ALL_NOTIFICATIONS = 3;</code>
+   * <code>NOTIFICATION_TYPE_ALL_NOTIFICATIONS = 3;</code>
    */
-  NOTIFICATIONTYPE_ALL_NOTIFICATIONS(3),
+  NOTIFICATION_TYPE_ALL_NOTIFICATIONS(3),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>NOTIFICATIONTYPE_NO_NOTIFICATIONS = 0;</code>
+   * <code>NOTIFICATION_TYPE_NO_NOTIFICATIONS = 0;</code>
    */
-  public static final int NOTIFICATIONTYPE_NO_NOTIFICATIONS_VALUE = 0;
+  public static final int NOTIFICATION_TYPE_NO_NOTIFICATIONS_VALUE = 0;
   /**
-   * <code>NOTIFICATIONTYPE_POKEMON_NOTIFICATIONS = 1;</code>
+   * <code>NOTIFICATION_TYPE_POKEMON_NOTIFICATIONS = 1;</code>
    */
-  public static final int NOTIFICATIONTYPE_POKEMON_NOTIFICATIONS_VALUE = 1;
+  public static final int NOTIFICATION_TYPE_POKEMON_NOTIFICATIONS_VALUE = 1;
   /**
-   * <code>NOTIFICATIONTYPE_POKESTOP_NOTIFICATIONS = 2;</code>
+   * <code>NOTIFICATION_TYPE_POKESTOP_NOTIFICATIONS = 2;</code>
    */
-  public static final int NOTIFICATIONTYPE_POKESTOP_NOTIFICATIONS_VALUE = 2;
+  public static final int NOTIFICATION_TYPE_POKESTOP_NOTIFICATIONS_VALUE = 2;
   /**
-   * <code>NOTIFICATIONTYPE_ALL_NOTIFICATIONS = 3;</code>
+   * <code>NOTIFICATION_TYPE_ALL_NOTIFICATIONS = 3;</code>
    */
-  public static final int NOTIFICATIONTYPE_ALL_NOTIFICATIONS_VALUE = 3;
+  public static final int NOTIFICATION_TYPE_ALL_NOTIFICATIONS_VALUE = 3;
 
 
   public final int getNumber() {
@@ -69,10 +69,10 @@ public enum NotificationType
    */
   public static NotificationType forNumber(int value) {
     switch (value) {
-      case 0: return NOTIFICATIONTYPE_NO_NOTIFICATIONS;
-      case 1: return NOTIFICATIONTYPE_POKEMON_NOTIFICATIONS;
-      case 2: return NOTIFICATIONTYPE_POKESTOP_NOTIFICATIONS;
-      case 3: return NOTIFICATIONTYPE_ALL_NOTIFICATIONS;
+      case 0: return NOTIFICATION_TYPE_NO_NOTIFICATIONS;
+      case 1: return NOTIFICATION_TYPE_POKEMON_NOTIFICATIONS;
+      case 2: return NOTIFICATION_TYPE_POKESTOP_NOTIFICATIONS;
+      case 3: return NOTIFICATION_TYPE_ALL_NOTIFICATIONS;
       default: return null;
     }
   }
@@ -99,7 +99,7 @@ public enum NotificationType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(2);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(19);
   }
 
   private static final NotificationType[] VALUES = values();

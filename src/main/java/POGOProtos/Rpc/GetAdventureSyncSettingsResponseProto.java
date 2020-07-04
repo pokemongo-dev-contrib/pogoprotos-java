@@ -99,40 +99,40 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    STATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>STATUS_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    STATUS_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>STATUS_ERROR_UNKNOWN = 2;</code>
+     * <code>ERROR_UNKNOWN = 2;</code>
      */
-    STATUS_ERROR_UNKNOWN(2),
+    ERROR_UNKNOWN(2),
     /**
-     * <code>STATUS_ERROR_PLAYER_NOT_FOUND = 3;</code>
+     * <code>ERROR_PLAYER_NOT_FOUND = 3;</code>
      */
-    STATUS_ERROR_PLAYER_NOT_FOUND(3),
+    ERROR_PLAYER_NOT_FOUND(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int STATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>STATUS_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int STATUS_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>STATUS_ERROR_UNKNOWN = 2;</code>
+     * <code>ERROR_UNKNOWN = 2;</code>
      */
-    public static final int STATUS_ERROR_UNKNOWN_VALUE = 2;
+    public static final int ERROR_UNKNOWN_VALUE = 2;
     /**
-     * <code>STATUS_ERROR_PLAYER_NOT_FOUND = 3;</code>
+     * <code>ERROR_PLAYER_NOT_FOUND = 3;</code>
      */
-    public static final int STATUS_ERROR_PLAYER_NOT_FOUND_VALUE = 3;
+    public static final int ERROR_PLAYER_NOT_FOUND_VALUE = 3;
 
 
     public final int getNumber() {
@@ -159,10 +159,10 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_UNSET;
-        case 1: return STATUS_SUCCESS;
-        case 2: return STATUS_ERROR_UNKNOWN;
-        case 3: return STATUS_ERROR_PLAYER_NOT_FOUND;
+        case 0: return UNSET;
+        case 1: return SUCCESS;
+        case 2: return ERROR_UNKNOWN;
+        case 3: return ERROR_PLAYER_NOT_FOUND;
         default: return null;
       }
     }

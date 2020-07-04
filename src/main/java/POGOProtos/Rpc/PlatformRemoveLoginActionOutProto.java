@@ -112,24 +112,24 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    STATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>STATUS_LOGIN_NOT_REMOVABLE = 1;</code>
+     * <code>LOGIN_NOT_REMOVABLE = 1;</code>
      */
-    STATUS_LOGIN_NOT_REMOVABLE(1),
+    LOGIN_NOT_REMOVABLE(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int STATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>STATUS_LOGIN_NOT_REMOVABLE = 1;</code>
+     * <code>LOGIN_NOT_REMOVABLE = 1;</code>
      */
-    public static final int STATUS_LOGIN_NOT_REMOVABLE_VALUE = 1;
+    public static final int LOGIN_NOT_REMOVABLE_VALUE = 1;
 
 
     public final int getNumber() {
@@ -156,8 +156,8 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_UNSET;
-        case 1: return STATUS_LOGIN_NOT_REMOVABLE;
+        case 0: return UNSET;
+        case 1: return LOGIN_NOT_REMOVABLE;
         default: return null;
       }
     }
@@ -294,7 +294,7 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < loginDetail_.size(); i++) {
       output.writeMessage(2, loginDetail_.get(i));
     }
-    if (status_ != POGOProtos.Rpc.PlatformRemoveLoginActionOutProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.PlatformRemoveLoginActionOutProto.Status.UNSET.getNumber()) {
       output.writeEnum(3, status_);
     }
     unknownFields.writeTo(output);
@@ -314,7 +314,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, loginDetail_.get(i));
     }
-    if (status_ != POGOProtos.Rpc.PlatformRemoveLoginActionOutProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.PlatformRemoveLoginActionOutProto.Status.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, status_);
     }

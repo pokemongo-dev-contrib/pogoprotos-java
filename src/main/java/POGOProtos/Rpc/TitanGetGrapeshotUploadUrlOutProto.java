@@ -119,64 +119,64 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    STATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>STATUS_FAILURE = 1;</code>
+     * <code>FAILURE = 1;</code>
      */
-    STATUS_FAILURE(1),
+    FAILURE(1),
     /**
-     * <code>STATUS_SUCCESS = 2;</code>
+     * <code>SUCCESS = 2;</code>
      */
-    STATUS_SUCCESS(2),
+    SUCCESS(2),
     /**
-     * <code>STATUS_MISSING_FILE_CONTEXTS = 3;</code>
+     * <code>MISSING_FILE_CONTEXTS = 3;</code>
      */
-    STATUS_MISSING_FILE_CONTEXTS(3),
+    MISSING_FILE_CONTEXTS(3),
     /**
-     * <code>STATUS_DUPLICATE_FILE_CONTEXT = 4;</code>
+     * <code>DUPLICATE_FILE_CONTEXT = 4;</code>
      */
-    STATUS_DUPLICATE_FILE_CONTEXT(4),
+    DUPLICATE_FILE_CONTEXT(4),
     /**
-     * <code>STATUS_MISSING_SUBMISSION_TYPE = 5;</code>
+     * <code>MISSING_SUBMISSION_TYPE = 5;</code>
      */
-    STATUS_MISSING_SUBMISSION_TYPE(5),
+    MISSING_SUBMISSION_TYPE(5),
     /**
-     * <code>STATUS_MISSING_SUBMISSION_ID = 6;</code>
+     * <code>MISSING_SUBMISSION_ID = 6;</code>
      */
-    STATUS_MISSING_SUBMISSION_ID(6),
+    MISSING_SUBMISSION_ID(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int STATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>STATUS_FAILURE = 1;</code>
+     * <code>FAILURE = 1;</code>
      */
-    public static final int STATUS_FAILURE_VALUE = 1;
+    public static final int FAILURE_VALUE = 1;
     /**
-     * <code>STATUS_SUCCESS = 2;</code>
+     * <code>SUCCESS = 2;</code>
      */
-    public static final int STATUS_SUCCESS_VALUE = 2;
+    public static final int SUCCESS_VALUE = 2;
     /**
-     * <code>STATUS_MISSING_FILE_CONTEXTS = 3;</code>
+     * <code>MISSING_FILE_CONTEXTS = 3;</code>
      */
-    public static final int STATUS_MISSING_FILE_CONTEXTS_VALUE = 3;
+    public static final int MISSING_FILE_CONTEXTS_VALUE = 3;
     /**
-     * <code>STATUS_DUPLICATE_FILE_CONTEXT = 4;</code>
+     * <code>DUPLICATE_FILE_CONTEXT = 4;</code>
      */
-    public static final int STATUS_DUPLICATE_FILE_CONTEXT_VALUE = 4;
+    public static final int DUPLICATE_FILE_CONTEXT_VALUE = 4;
     /**
-     * <code>STATUS_MISSING_SUBMISSION_TYPE = 5;</code>
+     * <code>MISSING_SUBMISSION_TYPE = 5;</code>
      */
-    public static final int STATUS_MISSING_SUBMISSION_TYPE_VALUE = 5;
+    public static final int MISSING_SUBMISSION_TYPE_VALUE = 5;
     /**
-     * <code>STATUS_MISSING_SUBMISSION_ID = 6;</code>
+     * <code>MISSING_SUBMISSION_ID = 6;</code>
      */
-    public static final int STATUS_MISSING_SUBMISSION_ID_VALUE = 6;
+    public static final int MISSING_SUBMISSION_ID_VALUE = 6;
 
 
     public final int getNumber() {
@@ -203,13 +203,13 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_UNSET;
-        case 1: return STATUS_FAILURE;
-        case 2: return STATUS_SUCCESS;
-        case 3: return STATUS_MISSING_FILE_CONTEXTS;
-        case 4: return STATUS_DUPLICATE_FILE_CONTEXT;
-        case 5: return STATUS_MISSING_SUBMISSION_TYPE;
-        case 6: return STATUS_MISSING_SUBMISSION_ID;
+        case 0: return UNSET;
+        case 1: return FAILURE;
+        case 2: return SUCCESS;
+        case 3: return MISSING_FILE_CONTEXTS;
+        case 4: return DUPLICATE_FILE_CONTEXT;
+        case 5: return MISSING_SUBMISSION_TYPE;
+        case 6: return MISSING_SUBMISSION_ID;
         default: return null;
       }
     }
@@ -371,7 +371,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != POGOProtos.Rpc.TitanGetGrapeshotUploadUrlOutProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.TitanGetGrapeshotUploadUrlOutProto.Status.UNSET.getNumber()) {
       output.writeEnum(1, status_);
     }
     com.google.protobuf.GeneratedMessageV3
@@ -389,7 +389,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != POGOProtos.Rpc.TitanGetGrapeshotUploadUrlOutProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.TitanGetGrapeshotUploadUrlOutProto.Status.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, status_);
     }

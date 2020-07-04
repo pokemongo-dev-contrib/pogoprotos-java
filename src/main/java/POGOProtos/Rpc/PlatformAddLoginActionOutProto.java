@@ -112,32 +112,32 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    STATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>STATUS_AUTH_FAILURE = 1;</code>
+     * <code>AUTH_FAILURE = 1;</code>
      */
-    STATUS_AUTH_FAILURE(1),
+    AUTH_FAILURE(1),
     /**
-     * <code>STATUS_LOGIN_TAKEN = 2;</code>
+     * <code>LOGIN_TAKEN = 2;</code>
      */
-    STATUS_LOGIN_TAKEN(2),
+    LOGIN_TAKEN(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int STATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>STATUS_AUTH_FAILURE = 1;</code>
+     * <code>AUTH_FAILURE = 1;</code>
      */
-    public static final int STATUS_AUTH_FAILURE_VALUE = 1;
+    public static final int AUTH_FAILURE_VALUE = 1;
     /**
-     * <code>STATUS_LOGIN_TAKEN = 2;</code>
+     * <code>LOGIN_TAKEN = 2;</code>
      */
-    public static final int STATUS_LOGIN_TAKEN_VALUE = 2;
+    public static final int LOGIN_TAKEN_VALUE = 2;
 
 
     public final int getNumber() {
@@ -164,9 +164,9 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_UNSET;
-        case 1: return STATUS_AUTH_FAILURE;
-        case 2: return STATUS_LOGIN_TAKEN;
+        case 0: return UNSET;
+        case 1: return AUTH_FAILURE;
+        case 2: return LOGIN_TAKEN;
         default: return null;
       }
     }
@@ -303,7 +303,7 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < loginDetail_.size(); i++) {
       output.writeMessage(2, loginDetail_.get(i));
     }
-    if (status_ != POGOProtos.Rpc.PlatformAddLoginActionOutProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.PlatformAddLoginActionOutProto.Status.UNSET.getNumber()) {
       output.writeEnum(3, status_);
     }
     unknownFields.writeTo(output);
@@ -323,7 +323,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, loginDetail_.get(i));
     }
-    if (status_ != POGOProtos.Rpc.PlatformAddLoginActionOutProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.PlatformAddLoginActionOutProto.Status.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, status_);
     }

@@ -86,32 +86,32 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_INVALID = 0;</code>
+     * <code>INVALID = 0;</code>
      */
-    STATUS_INVALID(0),
+    INVALID(0),
     /**
-     * <code>STATUS_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    STATUS_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>STATUS_ERROR = 2;</code>
+     * <code>ERROR = 2;</code>
      */
-    STATUS_ERROR(2),
+    ERROR(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_INVALID = 0;</code>
+     * <code>INVALID = 0;</code>
      */
-    public static final int STATUS_INVALID_VALUE = 0;
+    public static final int INVALID_VALUE = 0;
     /**
-     * <code>STATUS_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int STATUS_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>STATUS_ERROR = 2;</code>
+     * <code>ERROR = 2;</code>
      */
-    public static final int STATUS_ERROR_VALUE = 2;
+    public static final int ERROR_VALUE = 2;
 
 
     public final int getNumber() {
@@ -138,9 +138,9 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_INVALID;
-        case 1: return STATUS_SUCCESS;
-        case 2: return STATUS_ERROR;
+        case 0: return INVALID;
+        case 1: return SUCCESS;
+        case 2: return ERROR;
         default: return null;
       }
     }

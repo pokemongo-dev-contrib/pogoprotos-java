@@ -119,24 +119,24 @@ private static final long serialVersionUID = 0L;
   public enum CollectionFailedReason
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>COLLECTIONFAILEDREASON_REASON_INVALID = 0;</code>
+     * <code>REASON_INVALID = 0;</code>
      */
-    COLLECTIONFAILEDREASON_REASON_INVALID(0),
+    REASON_INVALID(0),
     /**
-     * <code>COLLECTIONFAILEDREASON_AD_TRACKING_DISABLED = 1;</code>
+     * <code>AD_TRACKING_DISABLED = 1;</code>
      */
-    COLLECTIONFAILEDREASON_AD_TRACKING_DISABLED(1),
+    AD_TRACKING_DISABLED(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>COLLECTIONFAILEDREASON_REASON_INVALID = 0;</code>
+     * <code>REASON_INVALID = 0;</code>
      */
-    public static final int COLLECTIONFAILEDREASON_REASON_INVALID_VALUE = 0;
+    public static final int REASON_INVALID_VALUE = 0;
     /**
-     * <code>COLLECTIONFAILEDREASON_AD_TRACKING_DISABLED = 1;</code>
+     * <code>AD_TRACKING_DISABLED = 1;</code>
      */
-    public static final int COLLECTIONFAILEDREASON_AD_TRACKING_DISABLED_VALUE = 1;
+    public static final int AD_TRACKING_DISABLED_VALUE = 1;
 
 
     public final int getNumber() {
@@ -163,8 +163,8 @@ private static final long serialVersionUID = 0L;
      */
     public static CollectionFailedReason forNumber(int value) {
       switch (value) {
-        case 0: return COLLECTIONFAILEDREASON_REASON_INVALID;
-        case 1: return COLLECTIONFAILEDREASON_AD_TRACKING_DISABLED;
+        case 0: return REASON_INVALID;
+        case 1: return AD_TRACKING_DISABLED;
         default: return null;
       }
     }
@@ -223,32 +223,32 @@ private static final long serialVersionUID = 0L;
   public enum DevicePlatform
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>DEVICEPLATFORM_PLATFORM_INVALID = 0;</code>
+     * <code>PLATFORM_INVALID = 0;</code>
      */
-    DEVICEPLATFORM_PLATFORM_INVALID(0),
+    PLATFORM_INVALID(0),
     /**
-     * <code>DEVICEPLATFORM_ANDROID = 1;</code>
+     * <code>ANDROID = 1;</code>
      */
-    DEVICEPLATFORM_ANDROID(1),
+    ANDROID(1),
     /**
-     * <code>DEVICEPLATFORM_IOS = 2;</code>
+     * <code>IOS = 2;</code>
      */
-    DEVICEPLATFORM_IOS(2),
+    IOS(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>DEVICEPLATFORM_PLATFORM_INVALID = 0;</code>
+     * <code>PLATFORM_INVALID = 0;</code>
      */
-    public static final int DEVICEPLATFORM_PLATFORM_INVALID_VALUE = 0;
+    public static final int PLATFORM_INVALID_VALUE = 0;
     /**
-     * <code>DEVICEPLATFORM_ANDROID = 1;</code>
+     * <code>ANDROID = 1;</code>
      */
-    public static final int DEVICEPLATFORM_ANDROID_VALUE = 1;
+    public static final int ANDROID_VALUE = 1;
     /**
-     * <code>DEVICEPLATFORM_IOS = 2;</code>
+     * <code>IOS = 2;</code>
      */
-    public static final int DEVICEPLATFORM_IOS_VALUE = 2;
+    public static final int IOS_VALUE = 2;
 
 
     public final int getNumber() {
@@ -275,9 +275,9 @@ private static final long serialVersionUID = 0L;
      */
     public static DevicePlatform forNumber(int value) {
       switch (value) {
-        case 0: return DEVICEPLATFORM_PLATFORM_INVALID;
-        case 1: return DEVICEPLATFORM_ANDROID;
-        case 2: return DEVICEPLATFORM_IOS;
+        case 0: return PLATFORM_INVALID;
+        case 1: return ANDROID;
+        case 2: return IOS;
         default: return null;
       }
     }
@@ -470,10 +470,10 @@ private static final long serialVersionUID = 0L;
     if (!getAdIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, adId_);
     }
-    if (devicePlatform_ != POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform.DEVICEPLATFORM_PLATFORM_INVALID.getNumber()) {
+    if (devicePlatform_ != POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform.PLATFORM_INVALID.getNumber()) {
       output.writeEnum(3, devicePlatform_);
     }
-    if (failedReason_ != POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason.COLLECTIONFAILEDREASON_REASON_INVALID.getNumber()) {
+    if (failedReason_ != POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason.REASON_INVALID.getNumber()) {
       output.writeEnum(4, failedReason_);
     }
     if (timestampMs_ != 0L) {
@@ -494,11 +494,11 @@ private static final long serialVersionUID = 0L;
     if (!getAdIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, adId_);
     }
-    if (devicePlatform_ != POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform.DEVICEPLATFORM_PLATFORM_INVALID.getNumber()) {
+    if (devicePlatform_ != POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform.PLATFORM_INVALID.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, devicePlatform_);
     }
-    if (failedReason_ != POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason.COLLECTIONFAILEDREASON_REASON_INVALID.getNumber()) {
+    if (failedReason_ != POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason.REASON_INVALID.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(4, failedReason_);
     }

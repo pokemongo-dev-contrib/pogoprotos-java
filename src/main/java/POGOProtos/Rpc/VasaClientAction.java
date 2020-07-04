@@ -86,24 +86,24 @@ private static final long serialVersionUID = 0L;
   public enum ActionEnum
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ACTIONENUM_INVALID_VASA_CLIENT_ACTION = 0;</code>
+     * <code>INVALID_VASA_CLIENT_ACTION = 0;</code>
      */
-    ACTIONENUM_INVALID_VASA_CLIENT_ACTION(0),
+    INVALID_VASA_CLIENT_ACTION(0),
     /**
-     * <code>ACTIONENUM_COLLECT_ADID = 8000;</code>
+     * <code>COLLECT_ADID = 8000;</code>
      */
-    ACTIONENUM_COLLECT_ADID(8000),
+    COLLECT_ADID(8000),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ACTIONENUM_INVALID_VASA_CLIENT_ACTION = 0;</code>
+     * <code>INVALID_VASA_CLIENT_ACTION = 0;</code>
      */
-    public static final int ACTIONENUM_INVALID_VASA_CLIENT_ACTION_VALUE = 0;
+    public static final int INVALID_VASA_CLIENT_ACTION_VALUE = 0;
     /**
-     * <code>ACTIONENUM_COLLECT_ADID = 8000;</code>
+     * <code>COLLECT_ADID = 8000;</code>
      */
-    public static final int ACTIONENUM_COLLECT_ADID_VALUE = 8000;
+    public static final int COLLECT_ADID_VALUE = 8000;
 
 
     public final int getNumber() {
@@ -130,8 +130,8 @@ private static final long serialVersionUID = 0L;
      */
     public static ActionEnum forNumber(int value) {
       switch (value) {
-        case 0: return ACTIONENUM_INVALID_VASA_CLIENT_ACTION;
-        case 8000: return ACTIONENUM_COLLECT_ADID;
+        case 0: return INVALID_VASA_CLIENT_ACTION;
+        case 8000: return COLLECT_ADID;
         default: return null;
       }
     }

@@ -113,56 +113,56 @@ private static final long serialVersionUID = 0L;
   public enum Result
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    RESULT_UNSET(0),
+    UNSET(0),
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    RESULT_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>RESULT_NOT_AVAILABLE = 2;</code>
+     * <code>NOT_AVAILABLE = 2;</code>
      */
-    RESULT_NOT_AVAILABLE(2),
+    NOT_AVAILABLE(2),
     /**
-     * <code>RESULT_OVER_INVENTORY_LIMIT = 3;</code>
+     * <code>OVER_INVENTORY_LIMIT = 3;</code>
      */
-    RESULT_OVER_INVENTORY_LIMIT(3),
+    OVER_INVENTORY_LIMIT(3),
     /**
-     * <code>RESULT_ALREADY_REDEEMED = 4;</code>
+     * <code>ALREADY_REDEEMED = 4;</code>
      */
-    RESULT_ALREADY_REDEEMED(4),
+    ALREADY_REDEEMED(4),
     /**
-     * <code>RESULT_OVER_PLAYER_REDEMPTION_LIMIT = 5;</code>
+     * <code>OVER_PLAYER_REDEMPTION_LIMIT = 5;</code>
      */
-    RESULT_OVER_PLAYER_REDEMPTION_LIMIT(5),
+    OVER_PLAYER_REDEMPTION_LIMIT(5),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int RESULT_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int RESULT_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>RESULT_NOT_AVAILABLE = 2;</code>
+     * <code>NOT_AVAILABLE = 2;</code>
      */
-    public static final int RESULT_NOT_AVAILABLE_VALUE = 2;
+    public static final int NOT_AVAILABLE_VALUE = 2;
     /**
-     * <code>RESULT_OVER_INVENTORY_LIMIT = 3;</code>
+     * <code>OVER_INVENTORY_LIMIT = 3;</code>
      */
-    public static final int RESULT_OVER_INVENTORY_LIMIT_VALUE = 3;
+    public static final int OVER_INVENTORY_LIMIT_VALUE = 3;
     /**
-     * <code>RESULT_ALREADY_REDEEMED = 4;</code>
+     * <code>ALREADY_REDEEMED = 4;</code>
      */
-    public static final int RESULT_ALREADY_REDEEMED_VALUE = 4;
+    public static final int ALREADY_REDEEMED_VALUE = 4;
     /**
-     * <code>RESULT_OVER_PLAYER_REDEMPTION_LIMIT = 5;</code>
+     * <code>OVER_PLAYER_REDEMPTION_LIMIT = 5;</code>
      */
-    public static final int RESULT_OVER_PLAYER_REDEMPTION_LIMIT_VALUE = 5;
+    public static final int OVER_PLAYER_REDEMPTION_LIMIT_VALUE = 5;
 
 
     public final int getNumber() {
@@ -189,12 +189,12 @@ private static final long serialVersionUID = 0L;
      */
     public static Result forNumber(int value) {
       switch (value) {
-        case 0: return RESULT_UNSET;
-        case 1: return RESULT_SUCCESS;
-        case 2: return RESULT_NOT_AVAILABLE;
-        case 3: return RESULT_OVER_INVENTORY_LIMIT;
-        case 4: return RESULT_ALREADY_REDEEMED;
-        case 5: return RESULT_OVER_PLAYER_REDEMPTION_LIMIT;
+        case 0: return UNSET;
+        case 1: return SUCCESS;
+        case 2: return NOT_AVAILABLE;
+        case 3: return OVER_INVENTORY_LIMIT;
+        case 4: return ALREADY_REDEEMED;
+        case 5: return OVER_PLAYER_REDEMPTION_LIMIT;
         default: return null;
       }
     }

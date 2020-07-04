@@ -116,40 +116,40 @@ private static final long serialVersionUID = 0L;
   public enum OnlineStatus
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ONLINESTATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    ONLINESTATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>ONLINESTATUS_STATUS_UNKNOWN = 1;</code>
+     * <code>STATUS_UNKNOWN = 1;</code>
      */
-    ONLINESTATUS_STATUS_UNKNOWN(1),
+    STATUS_UNKNOWN(1),
     /**
-     * <code>ONLINESTATUS_STATUS_ONLINE = 2;</code>
+     * <code>STATUS_ONLINE = 2;</code>
      */
-    ONLINESTATUS_STATUS_ONLINE(2),
+    STATUS_ONLINE(2),
     /**
-     * <code>ONLINESTATUS_STATUS_OFFLINE = 3;</code>
+     * <code>STATUS_OFFLINE = 3;</code>
      */
-    ONLINESTATUS_STATUS_OFFLINE(3),
+    STATUS_OFFLINE(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ONLINESTATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int ONLINESTATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>ONLINESTATUS_STATUS_UNKNOWN = 1;</code>
+     * <code>STATUS_UNKNOWN = 1;</code>
      */
-    public static final int ONLINESTATUS_STATUS_UNKNOWN_VALUE = 1;
+    public static final int STATUS_UNKNOWN_VALUE = 1;
     /**
-     * <code>ONLINESTATUS_STATUS_ONLINE = 2;</code>
+     * <code>STATUS_ONLINE = 2;</code>
      */
-    public static final int ONLINESTATUS_STATUS_ONLINE_VALUE = 2;
+    public static final int STATUS_ONLINE_VALUE = 2;
     /**
-     * <code>ONLINESTATUS_STATUS_OFFLINE = 3;</code>
+     * <code>STATUS_OFFLINE = 3;</code>
      */
-    public static final int ONLINESTATUS_STATUS_OFFLINE_VALUE = 3;
+    public static final int STATUS_OFFLINE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -176,10 +176,10 @@ private static final long serialVersionUID = 0L;
      */
     public static OnlineStatus forNumber(int value) {
       switch (value) {
-        case 0: return ONLINESTATUS_UNSET;
-        case 1: return ONLINESTATUS_STATUS_UNKNOWN;
-        case 2: return ONLINESTATUS_STATUS_ONLINE;
-        case 3: return ONLINESTATUS_STATUS_OFFLINE;
+        case 0: return UNSET;
+        case 1: return STATUS_UNKNOWN;
+        case 2: return STATUS_ONLINE;
+        case 3: return STATUS_OFFLINE;
         default: return null;
       }
     }

@@ -100,32 +100,32 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    STATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>STATUS_UPLOAD_DONE = 1;</code>
+     * <code>UPLOAD_DONE = 1;</code>
      */
-    STATUS_UPLOAD_DONE(1),
+    UPLOAD_DONE(1),
     /**
-     * <code>STATUS_UPLOAD_FAILED = 2;</code>
+     * <code>UPLOAD_FAILED = 2;</code>
      */
-    STATUS_UPLOAD_FAILED(2),
+    UPLOAD_FAILED(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int STATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>STATUS_UPLOAD_DONE = 1;</code>
+     * <code>UPLOAD_DONE = 1;</code>
      */
-    public static final int STATUS_UPLOAD_DONE_VALUE = 1;
+    public static final int UPLOAD_DONE_VALUE = 1;
     /**
-     * <code>STATUS_UPLOAD_FAILED = 2;</code>
+     * <code>UPLOAD_FAILED = 2;</code>
      */
-    public static final int STATUS_UPLOAD_FAILED_VALUE = 2;
+    public static final int UPLOAD_FAILED_VALUE = 2;
 
 
     public final int getNumber() {
@@ -152,9 +152,9 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_UNSET;
-        case 1: return STATUS_UPLOAD_DONE;
-        case 2: return STATUS_UPLOAD_FAILED;
+        case 0: return UNSET;
+        case 1: return UPLOAD_DONE;
+        case 2: return UPLOAD_FAILED;
         default: return null;
       }
     }
@@ -279,7 +279,7 @@ private static final long serialVersionUID = 0L;
     if (!getSubmissionIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, submissionId_);
     }
-    if (uploadStatus_ != POGOProtos.Rpc.TitanAsyncFileUploadCompleteProto.Status.STATUS_UNSET.getNumber()) {
+    if (uploadStatus_ != POGOProtos.Rpc.TitanAsyncFileUploadCompleteProto.Status.UNSET.getNumber()) {
       output.writeEnum(3, uploadStatus_);
     }
     unknownFields.writeTo(output);
@@ -294,7 +294,7 @@ private static final long serialVersionUID = 0L;
     if (!getSubmissionIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, submissionId_);
     }
-    if (uploadStatus_ != POGOProtos.Rpc.TitanAsyncFileUploadCompleteProto.Status.STATUS_UNSET.getNumber()) {
+    if (uploadStatus_ != POGOProtos.Rpc.TitanAsyncFileUploadCompleteProto.Status.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, uploadStatus_);
     }

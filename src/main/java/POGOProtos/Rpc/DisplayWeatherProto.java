@@ -133,40 +133,40 @@ private static final long serialVersionUID = 0L;
   public enum DisplayLevel
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>DISPLAYLEVEL_LEVEL_0 = 0;</code>
+     * <code>LEVEL_0 = 0;</code>
      */
-    DISPLAYLEVEL_LEVEL_0(0),
+    LEVEL_0(0),
     /**
-     * <code>DISPLAYLEVEL_LEVEL_1 = 1;</code>
+     * <code>LEVEL_1 = 1;</code>
      */
-    DISPLAYLEVEL_LEVEL_1(1),
+    LEVEL_1(1),
     /**
-     * <code>DISPLAYLEVEL_LEVEL_2 = 2;</code>
+     * <code>LEVEL_2 = 2;</code>
      */
-    DISPLAYLEVEL_LEVEL_2(2),
+    LEVEL_2(2),
     /**
-     * <code>DISPLAYLEVEL_LEVEL_3 = 3;</code>
+     * <code>LEVEL_3 = 3;</code>
      */
-    DISPLAYLEVEL_LEVEL_3(3),
+    LEVEL_3(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>DISPLAYLEVEL_LEVEL_0 = 0;</code>
+     * <code>LEVEL_0 = 0;</code>
      */
-    public static final int DISPLAYLEVEL_LEVEL_0_VALUE = 0;
+    public static final int LEVEL_0_VALUE = 0;
     /**
-     * <code>DISPLAYLEVEL_LEVEL_1 = 1;</code>
+     * <code>LEVEL_1 = 1;</code>
      */
-    public static final int DISPLAYLEVEL_LEVEL_1_VALUE = 1;
+    public static final int LEVEL_1_VALUE = 1;
     /**
-     * <code>DISPLAYLEVEL_LEVEL_2 = 2;</code>
+     * <code>LEVEL_2 = 2;</code>
      */
-    public static final int DISPLAYLEVEL_LEVEL_2_VALUE = 2;
+    public static final int LEVEL_2_VALUE = 2;
     /**
-     * <code>DISPLAYLEVEL_LEVEL_3 = 3;</code>
+     * <code>LEVEL_3 = 3;</code>
      */
-    public static final int DISPLAYLEVEL_LEVEL_3_VALUE = 3;
+    public static final int LEVEL_3_VALUE = 3;
 
 
     public final int getNumber() {
@@ -193,10 +193,10 @@ private static final long serialVersionUID = 0L;
      */
     public static DisplayLevel forNumber(int value) {
       switch (value) {
-        case 0: return DISPLAYLEVEL_LEVEL_0;
-        case 1: return DISPLAYLEVEL_LEVEL_1;
-        case 2: return DISPLAYLEVEL_LEVEL_2;
-        case 3: return DISPLAYLEVEL_LEVEL_3;
+        case 0: return LEVEL_0;
+        case 1: return LEVEL_1;
+        case 2: return LEVEL_2;
+        case 3: return LEVEL_3;
         default: return null;
       }
     }
@@ -387,25 +387,25 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (cloudLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (cloudLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       output.writeEnum(1, cloudLevel_);
     }
-    if (rainLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (rainLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       output.writeEnum(2, rainLevel_);
     }
-    if (windLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (windLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       output.writeEnum(3, windLevel_);
     }
-    if (snowLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (snowLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       output.writeEnum(4, snowLevel_);
     }
-    if (fogLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (fogLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       output.writeEnum(5, fogLevel_);
     }
     if (windDirection_ != 0) {
       output.writeInt32(6, windDirection_);
     }
-    if (specialEffectLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (specialEffectLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       output.writeEnum(7, specialEffectLevel_);
     }
     unknownFields.writeTo(output);
@@ -417,23 +417,23 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (cloudLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (cloudLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, cloudLevel_);
     }
-    if (rainLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (rainLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, rainLevel_);
     }
-    if (windLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (windLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, windLevel_);
     }
-    if (snowLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (snowLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(4, snowLevel_);
     }
-    if (fogLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (fogLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(5, fogLevel_);
     }
@@ -441,7 +441,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(6, windDirection_);
     }
-    if (specialEffectLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.DISPLAYLEVEL_LEVEL_0.getNumber()) {
+    if (specialEffectLevel_ != POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.LEVEL_0.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(7, specialEffectLevel_);
     }

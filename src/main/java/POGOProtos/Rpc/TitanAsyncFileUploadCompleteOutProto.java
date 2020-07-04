@@ -107,48 +107,48 @@ private static final long serialVersionUID = 0L;
   public enum ErrorStatus
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>ERRORSTATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    ERRORSTATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>ERRORSTATUS_SERVER_UPDATE_FAILED = 1;</code>
+     * <code>SERVER_UPDATE_FAILED = 1;</code>
      */
-    ERRORSTATUS_SERVER_UPDATE_FAILED(1),
+    SERVER_UPDATE_FAILED(1),
     /**
-     * <code>ERRORSTATUS_MISSING_SUBMISSION_ID = 2;</code>
+     * <code>MISSING_SUBMISSION_ID = 2;</code>
      */
-    ERRORSTATUS_MISSING_SUBMISSION_ID(2),
+    MISSING_SUBMISSION_ID(2),
     /**
-     * <code>ERRORSTATUS_MISSING_SUBMISSION_TYPE = 3;</code>
+     * <code>MISSING_SUBMISSION_TYPE = 3;</code>
      */
-    ERRORSTATUS_MISSING_SUBMISSION_TYPE(3),
+    MISSING_SUBMISSION_TYPE(3),
     /**
-     * <code>ERRORSTATUS_MISSING_UPLOAD_STATUS = 4;</code>
+     * <code>MISSING_UPLOAD_STATUS = 4;</code>
      */
-    ERRORSTATUS_MISSING_UPLOAD_STATUS(4),
+    MISSING_UPLOAD_STATUS(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>ERRORSTATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int ERRORSTATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>ERRORSTATUS_SERVER_UPDATE_FAILED = 1;</code>
+     * <code>SERVER_UPDATE_FAILED = 1;</code>
      */
-    public static final int ERRORSTATUS_SERVER_UPDATE_FAILED_VALUE = 1;
+    public static final int SERVER_UPDATE_FAILED_VALUE = 1;
     /**
-     * <code>ERRORSTATUS_MISSING_SUBMISSION_ID = 2;</code>
+     * <code>MISSING_SUBMISSION_ID = 2;</code>
      */
-    public static final int ERRORSTATUS_MISSING_SUBMISSION_ID_VALUE = 2;
+    public static final int MISSING_SUBMISSION_ID_VALUE = 2;
     /**
-     * <code>ERRORSTATUS_MISSING_SUBMISSION_TYPE = 3;</code>
+     * <code>MISSING_SUBMISSION_TYPE = 3;</code>
      */
-    public static final int ERRORSTATUS_MISSING_SUBMISSION_TYPE_VALUE = 3;
+    public static final int MISSING_SUBMISSION_TYPE_VALUE = 3;
     /**
-     * <code>ERRORSTATUS_MISSING_UPLOAD_STATUS = 4;</code>
+     * <code>MISSING_UPLOAD_STATUS = 4;</code>
      */
-    public static final int ERRORSTATUS_MISSING_UPLOAD_STATUS_VALUE = 4;
+    public static final int MISSING_UPLOAD_STATUS_VALUE = 4;
 
 
     public final int getNumber() {
@@ -175,11 +175,11 @@ private static final long serialVersionUID = 0L;
      */
     public static ErrorStatus forNumber(int value) {
       switch (value) {
-        case 0: return ERRORSTATUS_UNSET;
-        case 1: return ERRORSTATUS_SERVER_UPDATE_FAILED;
-        case 2: return ERRORSTATUS_MISSING_SUBMISSION_ID;
-        case 3: return ERRORSTATUS_MISSING_SUBMISSION_TYPE;
-        case 4: return ERRORSTATUS_MISSING_UPLOAD_STATUS;
+        case 0: return UNSET;
+        case 1: return SERVER_UPDATE_FAILED;
+        case 2: return MISSING_SUBMISSION_ID;
+        case 3: return MISSING_SUBMISSION_TYPE;
+        case 4: return MISSING_UPLOAD_STATUS;
         default: return null;
       }
     }
@@ -320,10 +320,10 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (error_ != POGOProtos.Rpc.TitanAsyncFileUploadCompleteOutProto.ErrorStatus.ERRORSTATUS_UNSET.getNumber()) {
+    if (error_ != POGOProtos.Rpc.TitanAsyncFileUploadCompleteOutProto.ErrorStatus.UNSET.getNumber()) {
       output.writeEnum(1, error_);
     }
-    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLATFORM_PLAYERSUBMISSIONTYPEPROTO_TYPE_UNSPECIFIED.getNumber()) {
+    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLATFORM_PLAYER_SUBMISSION_TYPE_PROTO_TYPE_UNSPECIFIED.getNumber()) {
       output.writeEnum(2, submissionType_);
     }
     if (!getPoiIdBytes().isEmpty()) {
@@ -338,11 +338,11 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (error_ != POGOProtos.Rpc.TitanAsyncFileUploadCompleteOutProto.ErrorStatus.ERRORSTATUS_UNSET.getNumber()) {
+    if (error_ != POGOProtos.Rpc.TitanAsyncFileUploadCompleteOutProto.ErrorStatus.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, error_);
     }
-    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLATFORM_PLAYERSUBMISSIONTYPEPROTO_TYPE_UNSPECIFIED.getNumber()) {
+    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLATFORM_PLAYER_SUBMISSION_TYPE_PROTO_TYPE_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, submissionType_);
     }

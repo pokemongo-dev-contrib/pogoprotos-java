@@ -17,7 +17,6 @@ private static final long serialVersionUID = 0L;
   }
   private PlatformClientGameMasterTemplateProto() {
     templateId_ = "";
-    data_ = com.google.protobuf.ByteString.EMPTY;
   }
 
   @java.lang.Override
@@ -57,8 +56,16 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
+            POGOProtos.Rpc.GameMasterClientTemplateProto.Builder subBuilder = null;
+            if (data_ != null) {
+              subBuilder = data_.toBuilder();
+            }
+            data_ = input.readMessage(POGOProtos.Rpc.GameMasterClientTemplateProto.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(data_);
+              data_ = subBuilder.buildPartial();
+            }
 
-            data_ = input.readBytes();
             break;
           }
           default: {
@@ -130,13 +137,38 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int DATA_FIELD_NUMBER = 2;
-  private com.google.protobuf.ByteString data_;
+  private POGOProtos.Rpc.GameMasterClientTemplateProto data_;
   /**
-   * <code>bytes data = 2;</code>
+   * <pre>
+   *bytes data = 2;
+   * </pre>
+   *
+   * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
+   * @return Whether the data field is set.
+   */
+  public boolean hasData() {
+    return data_ != null;
+  }
+  /**
+   * <pre>
+   *bytes data = 2;
+   * </pre>
+   *
+   * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
    * @return The data.
    */
-  public com.google.protobuf.ByteString getData() {
-    return data_;
+  public POGOProtos.Rpc.GameMasterClientTemplateProto getData() {
+    return data_ == null ? POGOProtos.Rpc.GameMasterClientTemplateProto.getDefaultInstance() : data_;
+  }
+  /**
+   * <pre>
+   *bytes data = 2;
+   * </pre>
+   *
+   * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
+   */
+  public POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder getDataOrBuilder() {
+    return getData();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -156,8 +188,8 @@ private static final long serialVersionUID = 0L;
     if (!getTemplateIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, templateId_);
     }
-    if (!data_.isEmpty()) {
-      output.writeBytes(2, data_);
+    if (data_ != null) {
+      output.writeMessage(2, getData());
     }
     unknownFields.writeTo(output);
   }
@@ -171,9 +203,9 @@ private static final long serialVersionUID = 0L;
     if (!getTemplateIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, templateId_);
     }
-    if (!data_.isEmpty()) {
+    if (data_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(2, data_);
+        .computeMessageSize(2, getData());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -192,8 +224,11 @@ private static final long serialVersionUID = 0L;
 
     if (!getTemplateId()
         .equals(other.getTemplateId())) return false;
-    if (!getData()
-        .equals(other.getData())) return false;
+    if (hasData() != other.hasData()) return false;
+    if (hasData()) {
+      if (!getData()
+          .equals(other.getData())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -207,8 +242,10 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TEMPLATE_ID_FIELD_NUMBER;
     hash = (53 * hash) + getTemplateId().hashCode();
-    hash = (37 * hash) + DATA_FIELD_NUMBER;
-    hash = (53 * hash) + getData().hashCode();
+    if (hasData()) {
+      hash = (37 * hash) + DATA_FIELD_NUMBER;
+      hash = (53 * hash) + getData().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -344,8 +381,12 @@ private static final long serialVersionUID = 0L;
       super.clear();
       templateId_ = "";
 
-      data_ = com.google.protobuf.ByteString.EMPTY;
-
+      if (dataBuilder_ == null) {
+        data_ = null;
+      } else {
+        data_ = null;
+        dataBuilder_ = null;
+      }
       return this;
     }
 
@@ -373,7 +414,11 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.PlatformClientGameMasterTemplateProto buildPartial() {
       POGOProtos.Rpc.PlatformClientGameMasterTemplateProto result = new POGOProtos.Rpc.PlatformClientGameMasterTemplateProto(this);
       result.templateId_ = templateId_;
-      result.data_ = data_;
+      if (dataBuilder_ == null) {
+        result.data_ = data_;
+      } else {
+        result.data_ = dataBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -426,8 +471,8 @@ private static final long serialVersionUID = 0L;
         templateId_ = other.templateId_;
         onChanged();
       }
-      if (other.getData() != com.google.protobuf.ByteString.EMPTY) {
-        setData(other.getData());
+      if (other.hasData()) {
+        mergeData(other.getData());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -534,37 +579,159 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.google.protobuf.ByteString data_ = com.google.protobuf.ByteString.EMPTY;
+    private POGOProtos.Rpc.GameMasterClientTemplateProto data_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.GameMasterClientTemplateProto, POGOProtos.Rpc.GameMasterClientTemplateProto.Builder, POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder> dataBuilder_;
     /**
-     * <code>bytes data = 2;</code>
+     * <pre>
+     *bytes data = 2;
+     * </pre>
+     *
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
+     * @return Whether the data field is set.
+     */
+    public boolean hasData() {
+      return dataBuilder_ != null || data_ != null;
+    }
+    /**
+     * <pre>
+     *bytes data = 2;
+     * </pre>
+     *
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      * @return The data.
      */
-    public com.google.protobuf.ByteString getData() {
-      return data_;
+    public POGOProtos.Rpc.GameMasterClientTemplateProto getData() {
+      if (dataBuilder_ == null) {
+        return data_ == null ? POGOProtos.Rpc.GameMasterClientTemplateProto.getDefaultInstance() : data_;
+      } else {
+        return dataBuilder_.getMessage();
+      }
     }
     /**
-     * <code>bytes data = 2;</code>
-     * @param value The data to set.
-     * @return This builder for chaining.
+     * <pre>
+     *bytes data = 2;
+     * </pre>
+     *
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
-    public Builder setData(com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      data_ = value;
-      onChanged();
+    public Builder setData(POGOProtos.Rpc.GameMasterClientTemplateProto value) {
+      if (dataBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        data_ = value;
+        onChanged();
+      } else {
+        dataBuilder_.setMessage(value);
+      }
+
       return this;
     }
     /**
-     * <code>bytes data = 2;</code>
-     * @return This builder for chaining.
+     * <pre>
+     *bytes data = 2;
+     * </pre>
+     *
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
+     */
+    public Builder setData(
+        POGOProtos.Rpc.GameMasterClientTemplateProto.Builder builderForValue) {
+      if (dataBuilder_ == null) {
+        data_ = builderForValue.build();
+        onChanged();
+      } else {
+        dataBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     *bytes data = 2;
+     * </pre>
+     *
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
+     */
+    public Builder mergeData(POGOProtos.Rpc.GameMasterClientTemplateProto value) {
+      if (dataBuilder_ == null) {
+        if (data_ != null) {
+          data_ =
+            POGOProtos.Rpc.GameMasterClientTemplateProto.newBuilder(data_).mergeFrom(value).buildPartial();
+        } else {
+          data_ = value;
+        }
+        onChanged();
+      } else {
+        dataBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     *bytes data = 2;
+     * </pre>
+     *
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     public Builder clearData() {
-      
-      data_ = getDefaultInstance().getData();
-      onChanged();
+      if (dataBuilder_ == null) {
+        data_ = null;
+        onChanged();
+      } else {
+        data_ = null;
+        dataBuilder_ = null;
+      }
+
       return this;
+    }
+    /**
+     * <pre>
+     *bytes data = 2;
+     * </pre>
+     *
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
+     */
+    public POGOProtos.Rpc.GameMasterClientTemplateProto.Builder getDataBuilder() {
+      
+      onChanged();
+      return getDataFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     *bytes data = 2;
+     * </pre>
+     *
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
+     */
+    public POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder getDataOrBuilder() {
+      if (dataBuilder_ != null) {
+        return dataBuilder_.getMessageOrBuilder();
+      } else {
+        return data_ == null ?
+            POGOProtos.Rpc.GameMasterClientTemplateProto.getDefaultInstance() : data_;
+      }
+    }
+    /**
+     * <pre>
+     *bytes data = 2;
+     * </pre>
+     *
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.GameMasterClientTemplateProto, POGOProtos.Rpc.GameMasterClientTemplateProto.Builder, POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder> 
+        getDataFieldBuilder() {
+      if (dataBuilder_ == null) {
+        dataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.GameMasterClientTemplateProto, POGOProtos.Rpc.GameMasterClientTemplateProto.Builder, POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder>(
+                getData(),
+                getParentForChildren(),
+                isClean());
+        data_ = null;
+      }
+      return dataBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

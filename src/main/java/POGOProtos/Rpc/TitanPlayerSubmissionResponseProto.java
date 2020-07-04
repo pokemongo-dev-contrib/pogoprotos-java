@@ -114,80 +114,80 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_STATUS_UNSPECIFIED = 0;</code>
+     * <code>STATUS_UNSPECIFIED = 0;</code>
      */
-    STATUS_STATUS_UNSPECIFIED(0),
+    STATUS_UNSPECIFIED(0),
     /**
-     * <code>STATUS_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    STATUS_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>STATUS_INTERNAL_ERROR = 2;</code>
+     * <code>INTERNAL_ERROR = 2;</code>
      */
-    STATUS_INTERNAL_ERROR(2),
+    INTERNAL_ERROR(2),
     /**
-     * <code>STATUS_TOO_MANY_RECENT_SUBMISSIONS = 3;</code>
+     * <code>TOO_MANY_RECENT_SUBMISSIONS = 3;</code>
      */
-    STATUS_TOO_MANY_RECENT_SUBMISSIONS(3),
+    TOO_MANY_RECENT_SUBMISSIONS(3),
     /**
-     * <code>STATUS_MINOR = 4;</code>
+     * <code>MINOR = 4;</code>
      */
-    STATUS_MINOR(4),
+    MINOR(4),
     /**
-     * <code>STATUS_NOT_AVAILABLE = 5;</code>
+     * <code>NOT_AVAILABLE = 5;</code>
      */
-    STATUS_NOT_AVAILABLE(5),
+    NOT_AVAILABLE(5),
     /**
-     * <code>STATUS_INVALID_INPUT = 6;</code>
+     * <code>INVALID_INPUT = 6;</code>
      */
-    STATUS_INVALID_INPUT(6),
+    INVALID_INPUT(6),
     /**
-     * <code>STATUS_MISSING_IMAGE = 7;</code>
+     * <code>MISSING_IMAGE = 7;</code>
      */
-    STATUS_MISSING_IMAGE(7),
+    MISSING_IMAGE(7),
     /**
-     * <code>STATUS_DISTANCE_VALIDATION_FAILED = 8;</code>
+     * <code>DISTANCE_VALIDATION_FAILED = 8;</code>
      */
-    STATUS_DISTANCE_VALIDATION_FAILED(8),
+    DISTANCE_VALIDATION_FAILED(8),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_STATUS_UNSPECIFIED = 0;</code>
+     * <code>STATUS_UNSPECIFIED = 0;</code>
      */
-    public static final int STATUS_STATUS_UNSPECIFIED_VALUE = 0;
+    public static final int STATUS_UNSPECIFIED_VALUE = 0;
     /**
-     * <code>STATUS_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int STATUS_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>STATUS_INTERNAL_ERROR = 2;</code>
+     * <code>INTERNAL_ERROR = 2;</code>
      */
-    public static final int STATUS_INTERNAL_ERROR_VALUE = 2;
+    public static final int INTERNAL_ERROR_VALUE = 2;
     /**
-     * <code>STATUS_TOO_MANY_RECENT_SUBMISSIONS = 3;</code>
+     * <code>TOO_MANY_RECENT_SUBMISSIONS = 3;</code>
      */
-    public static final int STATUS_TOO_MANY_RECENT_SUBMISSIONS_VALUE = 3;
+    public static final int TOO_MANY_RECENT_SUBMISSIONS_VALUE = 3;
     /**
-     * <code>STATUS_MINOR = 4;</code>
+     * <code>MINOR = 4;</code>
      */
-    public static final int STATUS_MINOR_VALUE = 4;
+    public static final int MINOR_VALUE = 4;
     /**
-     * <code>STATUS_NOT_AVAILABLE = 5;</code>
+     * <code>NOT_AVAILABLE = 5;</code>
      */
-    public static final int STATUS_NOT_AVAILABLE_VALUE = 5;
+    public static final int NOT_AVAILABLE_VALUE = 5;
     /**
-     * <code>STATUS_INVALID_INPUT = 6;</code>
+     * <code>INVALID_INPUT = 6;</code>
      */
-    public static final int STATUS_INVALID_INPUT_VALUE = 6;
+    public static final int INVALID_INPUT_VALUE = 6;
     /**
-     * <code>STATUS_MISSING_IMAGE = 7;</code>
+     * <code>MISSING_IMAGE = 7;</code>
      */
-    public static final int STATUS_MISSING_IMAGE_VALUE = 7;
+    public static final int MISSING_IMAGE_VALUE = 7;
     /**
-     * <code>STATUS_DISTANCE_VALIDATION_FAILED = 8;</code>
+     * <code>DISTANCE_VALIDATION_FAILED = 8;</code>
      */
-    public static final int STATUS_DISTANCE_VALIDATION_FAILED_VALUE = 8;
+    public static final int DISTANCE_VALIDATION_FAILED_VALUE = 8;
 
 
     public final int getNumber() {
@@ -214,15 +214,15 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_STATUS_UNSPECIFIED;
-        case 1: return STATUS_SUCCESS;
-        case 2: return STATUS_INTERNAL_ERROR;
-        case 3: return STATUS_TOO_MANY_RECENT_SUBMISSIONS;
-        case 4: return STATUS_MINOR;
-        case 5: return STATUS_NOT_AVAILABLE;
-        case 6: return STATUS_INVALID_INPUT;
-        case 7: return STATUS_MISSING_IMAGE;
-        case 8: return STATUS_DISTANCE_VALIDATION_FAILED;
+        case 0: return STATUS_UNSPECIFIED;
+        case 1: return SUCCESS;
+        case 2: return INTERNAL_ERROR;
+        case 3: return TOO_MANY_RECENT_SUBMISSIONS;
+        case 4: return MINOR;
+        case 5: return NOT_AVAILABLE;
+        case 6: return INVALID_INPUT;
+        case 7: return MISSING_IMAGE;
+        case 8: return DISTANCE_VALIDATION_FAILED;
         default: return null;
       }
     }
@@ -379,7 +379,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != POGOProtos.Rpc.TitanPlayerSubmissionResponseProto.Status.STATUS_STATUS_UNSPECIFIED.getNumber()) {
+    if (status_ != POGOProtos.Rpc.TitanPlayerSubmissionResponseProto.Status.STATUS_UNSPECIFIED.getNumber()) {
       output.writeEnum(1, status_);
     }
     if (!getSubmissionIdBytes().isEmpty()) {
@@ -397,7 +397,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != POGOProtos.Rpc.TitanPlayerSubmissionResponseProto.Status.STATUS_STATUS_UNSPECIFIED.getNumber()) {
+    if (status_ != POGOProtos.Rpc.TitanPlayerSubmissionResponseProto.Status.STATUS_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, status_);
     }

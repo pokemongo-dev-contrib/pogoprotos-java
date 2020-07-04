@@ -8,48 +8,59 @@ public interface PlatformDownloadGmTemplatesResponseProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result getResult();
+
+  /**
+   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
    */
   java.util.List<POGOProtos.Rpc.PlatformClientGameMasterTemplateProto> 
       getTemplateList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
    */
   POGOProtos.Rpc.PlatformClientGameMasterTemplateProto getTemplate(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
    */
   int getTemplateCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.PlatformClientGameMasterTemplateProtoOrBuilder> 
       getTemplateOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
    */
   POGOProtos.Rpc.PlatformClientGameMasterTemplateProtoOrBuilder getTemplateOrBuilder(
       int index);
 
   /**
-   * <code>repeated string deleted_template = 2;</code>
+   * <code>repeated string deleted_template = 3;</code>
    * @return A list containing the deletedTemplate.
    */
   java.util.List<java.lang.String>
       getDeletedTemplateList();
   /**
-   * <code>repeated string deleted_template = 2;</code>
+   * <code>repeated string deleted_template = 3;</code>
    * @return The count of deletedTemplate.
    */
   int getDeletedTemplateCount();
   /**
-   * <code>repeated string deleted_template = 2;</code>
+   * <code>repeated string deleted_template = 3;</code>
    * @param index The index of the element to return.
    * @return The deletedTemplate at the given index.
    */
   java.lang.String getDeletedTemplate(int index);
   /**
-   * <code>repeated string deleted_template = 2;</code>
+   * <code>repeated string deleted_template = 3;</code>
    * @param index The index of the value to return.
    * @return The bytes of the deletedTemplate at the given index.
    */
@@ -57,29 +68,29 @@ public interface PlatformDownloadGmTemplatesResponseProtoOrBuilder extends
       getDeletedTemplateBytes(int index);
 
   /**
-   * <code>uint64 batch_id = 3;</code>
+   * <code>uint64 batch_id = 4;</code>
    * @return The batchId.
    */
   long getBatchId();
 
   /**
-   * <code>int32 page_offset = 4;</code>
+   * <code>int32 page_offset = 5;</code>
    * @return The pageOffset.
    */
   int getPageOffset();
 
   /**
-   * <code>repeated int32 experiment_id = 5;</code>
+   * <code>repeated int32 experiment_id = 6;</code>
    * @return A list containing the experimentId.
    */
   java.util.List<java.lang.Integer> getExperimentIdList();
   /**
-   * <code>repeated int32 experiment_id = 5;</code>
+   * <code>repeated int32 experiment_id = 6;</code>
    * @return The count of experimentId.
    */
   int getExperimentIdCount();
   /**
-   * <code>repeated int32 experiment_id = 5;</code>
+   * <code>repeated int32 experiment_id = 6;</code>
    * @param index The index of the element to return.
    * @return The experimentId at the given index.
    */

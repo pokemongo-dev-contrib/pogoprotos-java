@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformDownloadGmTemplatesResponseProto() {
+    result_ = 0;
     template_ = java.util.Collections.emptyList();
     deletedTemplate_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     experimentId_ = emptyIntList();
@@ -52,7 +53,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            result_ = rawValue;
+            break;
+          }
+          case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
               template_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformClientGameMasterTemplateProto>();
               mutable_bitField0_ |= 0x00000001;
@@ -61,7 +68,7 @@ private static final long serialVersionUID = 0L;
                 input.readMessage(POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.parser(), extensionRegistry));
             break;
           }
-          case 18: {
+          case 26: {
             java.lang.String s = input.readStringRequireUtf8();
             if (!((mutable_bitField0_ & 0x00000002) != 0)) {
               deletedTemplate_ = new com.google.protobuf.LazyStringArrayList();
@@ -70,17 +77,17 @@ private static final long serialVersionUID = 0L;
             deletedTemplate_.add(s);
             break;
           }
-          case 24: {
+          case 32: {
 
             batchId_ = input.readUInt64();
             break;
           }
-          case 32: {
+          case 40: {
 
             pageOffset_ = input.readInt32();
             break;
           }
-          case 40: {
+          case 48: {
             if (!((mutable_bitField0_ & 0x00000004) != 0)) {
               experimentId_ = newIntList();
               mutable_bitField0_ |= 0x00000004;
@@ -88,7 +95,7 @@ private static final long serialVersionUID = 0L;
             experimentId_.addInt(input.readInt32());
             break;
           }
-          case 42: {
+          case 50: {
             int length = input.readRawVarint32();
             int limit = input.pushLimit(length);
             if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
@@ -148,56 +155,56 @@ private static final long serialVersionUID = 0L;
   public enum Result
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    RESULT_UNSET(0),
+    UNSET(0),
     /**
-     * <code>RESULT_COMPLETE = 1;</code>
+     * <code>COMPLETE = 1;</code>
      */
-    RESULT_COMPLETE(1),
+    COMPLETE(1),
     /**
-     * <code>RESULT_MORE_RESULTS = 2;</code>
+     * <code>MORE_RESULTS = 2;</code>
      */
-    RESULT_MORE_RESULTS(2),
+    MORE_RESULTS(2),
     /**
-     * <code>RESULT_BATCH_ID_NOT_LIVE = 3;</code>
+     * <code>BATCH_ID_NOT_LIVE = 3;</code>
      */
-    RESULT_BATCH_ID_NOT_LIVE(3),
+    BATCH_ID_NOT_LIVE(3),
     /**
-     * <code>RESULT_INVALID_BASIS_BATCH_ID = 4;</code>
+     * <code>INVALID_BASIS_BATCH_ID = 4;</code>
      */
-    RESULT_INVALID_BASIS_BATCH_ID(4),
+    INVALID_BASIS_BATCH_ID(4),
     /**
-     * <code>RESULT_WRONG_EXPERIMENTS = 5;</code>
+     * <code>WRONG_EXPERIMENTS = 5;</code>
      */
-    RESULT_WRONG_EXPERIMENTS(5),
+    WRONG_EXPERIMENTS(5),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int RESULT_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>RESULT_COMPLETE = 1;</code>
+     * <code>COMPLETE = 1;</code>
      */
-    public static final int RESULT_COMPLETE_VALUE = 1;
+    public static final int COMPLETE_VALUE = 1;
     /**
-     * <code>RESULT_MORE_RESULTS = 2;</code>
+     * <code>MORE_RESULTS = 2;</code>
      */
-    public static final int RESULT_MORE_RESULTS_VALUE = 2;
+    public static final int MORE_RESULTS_VALUE = 2;
     /**
-     * <code>RESULT_BATCH_ID_NOT_LIVE = 3;</code>
+     * <code>BATCH_ID_NOT_LIVE = 3;</code>
      */
-    public static final int RESULT_BATCH_ID_NOT_LIVE_VALUE = 3;
+    public static final int BATCH_ID_NOT_LIVE_VALUE = 3;
     /**
-     * <code>RESULT_INVALID_BASIS_BATCH_ID = 4;</code>
+     * <code>INVALID_BASIS_BATCH_ID = 4;</code>
      */
-    public static final int RESULT_INVALID_BASIS_BATCH_ID_VALUE = 4;
+    public static final int INVALID_BASIS_BATCH_ID_VALUE = 4;
     /**
-     * <code>RESULT_WRONG_EXPERIMENTS = 5;</code>
+     * <code>WRONG_EXPERIMENTS = 5;</code>
      */
-    public static final int RESULT_WRONG_EXPERIMENTS_VALUE = 5;
+    public static final int WRONG_EXPERIMENTS_VALUE = 5;
 
 
     public final int getNumber() {
@@ -224,12 +231,12 @@ private static final long serialVersionUID = 0L;
      */
     public static Result forNumber(int value) {
       switch (value) {
-        case 0: return RESULT_UNSET;
-        case 1: return RESULT_COMPLETE;
-        case 2: return RESULT_MORE_RESULTS;
-        case 3: return RESULT_BATCH_ID_NOT_LIVE;
-        case 4: return RESULT_INVALID_BASIS_BATCH_ID;
-        case 5: return RESULT_WRONG_EXPERIMENTS;
+        case 0: return UNSET;
+        case 1: return COMPLETE;
+        case 2: return MORE_RESULTS;
+        case 3: return BATCH_ID_NOT_LIVE;
+        case 4: return INVALID_BASIS_BATCH_ID;
+        case 5: return WRONG_EXPERIMENTS;
         default: return null;
       }
     }
@@ -282,45 +289,64 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result)
   }
 
-  public static final int TEMPLATE_FIELD_NUMBER = 1;
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  public int getResultValue() {
+    return result_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = 1;</code>
+   * @return The result.
+   */
+  public POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result.UNRECOGNIZED : result;
+  }
+
+  public static final int TEMPLATE_FIELD_NUMBER = 2;
   private java.util.List<POGOProtos.Rpc.PlatformClientGameMasterTemplateProto> template_;
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
    */
   public java.util.List<POGOProtos.Rpc.PlatformClientGameMasterTemplateProto> getTemplateList() {
     return template_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
    */
   public java.util.List<? extends POGOProtos.Rpc.PlatformClientGameMasterTemplateProtoOrBuilder> 
       getTemplateOrBuilderList() {
     return template_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
    */
   public int getTemplateCount() {
     return template_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
    */
   public POGOProtos.Rpc.PlatformClientGameMasterTemplateProto getTemplate(int index) {
     return template_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
    */
   public POGOProtos.Rpc.PlatformClientGameMasterTemplateProtoOrBuilder getTemplateOrBuilder(
       int index) {
     return template_.get(index);
   }
 
-  public static final int DELETED_TEMPLATE_FIELD_NUMBER = 2;
+  public static final int DELETED_TEMPLATE_FIELD_NUMBER = 3;
   private com.google.protobuf.LazyStringList deletedTemplate_;
   /**
-   * <code>repeated string deleted_template = 2;</code>
+   * <code>repeated string deleted_template = 3;</code>
    * @return A list containing the deletedTemplate.
    */
   public com.google.protobuf.ProtocolStringList
@@ -328,14 +354,14 @@ private static final long serialVersionUID = 0L;
     return deletedTemplate_;
   }
   /**
-   * <code>repeated string deleted_template = 2;</code>
+   * <code>repeated string deleted_template = 3;</code>
    * @return The count of deletedTemplate.
    */
   public int getDeletedTemplateCount() {
     return deletedTemplate_.size();
   }
   /**
-   * <code>repeated string deleted_template = 2;</code>
+   * <code>repeated string deleted_template = 3;</code>
    * @param index The index of the element to return.
    * @return The deletedTemplate at the given index.
    */
@@ -343,7 +369,7 @@ private static final long serialVersionUID = 0L;
     return deletedTemplate_.get(index);
   }
   /**
-   * <code>repeated string deleted_template = 2;</code>
+   * <code>repeated string deleted_template = 3;</code>
    * @param index The index of the value to return.
    * @return The bytes of the deletedTemplate at the given index.
    */
@@ -352,30 +378,30 @@ private static final long serialVersionUID = 0L;
     return deletedTemplate_.getByteString(index);
   }
 
-  public static final int BATCH_ID_FIELD_NUMBER = 3;
+  public static final int BATCH_ID_FIELD_NUMBER = 4;
   private long batchId_;
   /**
-   * <code>uint64 batch_id = 3;</code>
+   * <code>uint64 batch_id = 4;</code>
    * @return The batchId.
    */
   public long getBatchId() {
     return batchId_;
   }
 
-  public static final int PAGE_OFFSET_FIELD_NUMBER = 4;
+  public static final int PAGE_OFFSET_FIELD_NUMBER = 5;
   private int pageOffset_;
   /**
-   * <code>int32 page_offset = 4;</code>
+   * <code>int32 page_offset = 5;</code>
    * @return The pageOffset.
    */
   public int getPageOffset() {
     return pageOffset_;
   }
 
-  public static final int EXPERIMENT_ID_FIELD_NUMBER = 5;
+  public static final int EXPERIMENT_ID_FIELD_NUMBER = 6;
   private com.google.protobuf.Internal.IntList experimentId_;
   /**
-   * <code>repeated int32 experiment_id = 5;</code>
+   * <code>repeated int32 experiment_id = 6;</code>
    * @return A list containing the experimentId.
    */
   public java.util.List<java.lang.Integer>
@@ -383,14 +409,14 @@ private static final long serialVersionUID = 0L;
     return experimentId_;
   }
   /**
-   * <code>repeated int32 experiment_id = 5;</code>
+   * <code>repeated int32 experiment_id = 6;</code>
    * @return The count of experimentId.
    */
   public int getExperimentIdCount() {
     return experimentId_.size();
   }
   /**
-   * <code>repeated int32 experiment_id = 5;</code>
+   * <code>repeated int32 experiment_id = 6;</code>
    * @param index The index of the element to return.
    * @return The experimentId at the given index.
    */
@@ -414,20 +440,23 @@ private static final long serialVersionUID = 0L;
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
+    if (result_ != POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
+    }
     for (int i = 0; i < template_.size(); i++) {
-      output.writeMessage(1, template_.get(i));
+      output.writeMessage(2, template_.get(i));
     }
     for (int i = 0; i < deletedTemplate_.size(); i++) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, deletedTemplate_.getRaw(i));
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, deletedTemplate_.getRaw(i));
     }
     if (batchId_ != 0L) {
-      output.writeUInt64(3, batchId_);
+      output.writeUInt64(4, batchId_);
     }
     if (pageOffset_ != 0) {
-      output.writeInt32(4, pageOffset_);
+      output.writeInt32(5, pageOffset_);
     }
     if (getExperimentIdList().size() > 0) {
-      output.writeUInt32NoTag(42);
+      output.writeUInt32NoTag(50);
       output.writeUInt32NoTag(experimentIdMemoizedSerializedSize);
     }
     for (int i = 0; i < experimentId_.size(); i++) {
@@ -442,9 +471,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (result_ != POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, result_);
+    }
     for (int i = 0; i < template_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, template_.get(i));
+        .computeMessageSize(2, template_.get(i));
     }
     {
       int dataSize = 0;
@@ -456,11 +489,11 @@ private static final long serialVersionUID = 0L;
     }
     if (batchId_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt64Size(3, batchId_);
+        .computeUInt64Size(4, batchId_);
     }
     if (pageOffset_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(4, pageOffset_);
+        .computeInt32Size(5, pageOffset_);
     }
     {
       int dataSize = 0;
@@ -491,6 +524,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto other = (POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto) obj;
 
+    if (result_ != other.result_) return false;
     if (!getTemplateList()
         .equals(other.getTemplateList())) return false;
     if (!getDeletedTemplateList()
@@ -512,6 +546,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     if (getTemplateCount() > 0) {
       hash = (37 * hash) + TEMPLATE_FIELD_NUMBER;
       hash = (53 * hash) + getTemplateList().hashCode();
@@ -663,6 +699,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      result_ = 0;
+
       if (templateBuilder_ == null) {
         template_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -704,6 +742,7 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto buildPartial() {
       POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto result = new POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto(this);
       int from_bitField0_ = bitField0_;
+      result.result_ = result_;
       if (templateBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           template_ = java.util.Collections.unmodifiableList(template_);
@@ -773,6 +812,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto other) {
       if (other == POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
+      }
       if (templateBuilder_ == null) {
         if (!other.template_.isEmpty()) {
           if (template_.isEmpty()) {
@@ -855,6 +897,58 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
+    private int result_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = 1;</code>
+     * @param value The result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResult(POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      result_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformDownloadGmTemplatesResponseProto.Result result = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearResult() {
+      
+      result_ = 0;
+      onChanged();
+      return this;
+    }
+
     private java.util.List<POGOProtos.Rpc.PlatformClientGameMasterTemplateProto> template_ =
       java.util.Collections.emptyList();
     private void ensureTemplateIsMutable() {
@@ -868,7 +962,7 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlatformClientGameMasterTemplateProto, POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.Builder, POGOProtos.Rpc.PlatformClientGameMasterTemplateProtoOrBuilder> templateBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public java.util.List<POGOProtos.Rpc.PlatformClientGameMasterTemplateProto> getTemplateList() {
       if (templateBuilder_ == null) {
@@ -878,7 +972,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public int getTemplateCount() {
       if (templateBuilder_ == null) {
@@ -888,7 +982,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public POGOProtos.Rpc.PlatformClientGameMasterTemplateProto getTemplate(int index) {
       if (templateBuilder_ == null) {
@@ -898,7 +992,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public Builder setTemplate(
         int index, POGOProtos.Rpc.PlatformClientGameMasterTemplateProto value) {
@@ -915,7 +1009,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public Builder setTemplate(
         int index, POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.Builder builderForValue) {
@@ -929,7 +1023,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public Builder addTemplate(POGOProtos.Rpc.PlatformClientGameMasterTemplateProto value) {
       if (templateBuilder_ == null) {
@@ -945,7 +1039,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public Builder addTemplate(
         int index, POGOProtos.Rpc.PlatformClientGameMasterTemplateProto value) {
@@ -962,7 +1056,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public Builder addTemplate(
         POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.Builder builderForValue) {
@@ -976,7 +1070,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public Builder addTemplate(
         int index, POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.Builder builderForValue) {
@@ -990,7 +1084,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public Builder addAllTemplate(
         java.lang.Iterable<? extends POGOProtos.Rpc.PlatformClientGameMasterTemplateProto> values) {
@@ -1005,7 +1099,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public Builder clearTemplate() {
       if (templateBuilder_ == null) {
@@ -1018,7 +1112,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public Builder removeTemplate(int index) {
       if (templateBuilder_ == null) {
@@ -1031,14 +1125,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.Builder getTemplateBuilder(
         int index) {
       return getTemplateFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public POGOProtos.Rpc.PlatformClientGameMasterTemplateProtoOrBuilder getTemplateOrBuilder(
         int index) {
@@ -1048,7 +1142,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.PlatformClientGameMasterTemplateProtoOrBuilder> 
          getTemplateOrBuilderList() {
@@ -1059,14 +1153,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.Builder addTemplateBuilder() {
       return getTemplateFieldBuilder().addBuilder(
           POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.Builder addTemplateBuilder(
         int index) {
@@ -1074,7 +1168,7 @@ private static final long serialVersionUID = 0L;
           index, POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformClientGameMasterTemplateProto template = 2;</code>
      */
     public java.util.List<POGOProtos.Rpc.PlatformClientGameMasterTemplateProto.Builder> 
          getTemplateBuilderList() {
@@ -1103,7 +1197,7 @@ private static final long serialVersionUID = 0L;
        }
     }
     /**
-     * <code>repeated string deleted_template = 2;</code>
+     * <code>repeated string deleted_template = 3;</code>
      * @return A list containing the deletedTemplate.
      */
     public com.google.protobuf.ProtocolStringList
@@ -1111,14 +1205,14 @@ private static final long serialVersionUID = 0L;
       return deletedTemplate_.getUnmodifiableView();
     }
     /**
-     * <code>repeated string deleted_template = 2;</code>
+     * <code>repeated string deleted_template = 3;</code>
      * @return The count of deletedTemplate.
      */
     public int getDeletedTemplateCount() {
       return deletedTemplate_.size();
     }
     /**
-     * <code>repeated string deleted_template = 2;</code>
+     * <code>repeated string deleted_template = 3;</code>
      * @param index The index of the element to return.
      * @return The deletedTemplate at the given index.
      */
@@ -1126,7 +1220,7 @@ private static final long serialVersionUID = 0L;
       return deletedTemplate_.get(index);
     }
     /**
-     * <code>repeated string deleted_template = 2;</code>
+     * <code>repeated string deleted_template = 3;</code>
      * @param index The index of the value to return.
      * @return The bytes of the deletedTemplate at the given index.
      */
@@ -1135,7 +1229,7 @@ private static final long serialVersionUID = 0L;
       return deletedTemplate_.getByteString(index);
     }
     /**
-     * <code>repeated string deleted_template = 2;</code>
+     * <code>repeated string deleted_template = 3;</code>
      * @param index The index to set the value at.
      * @param value The deletedTemplate to set.
      * @return This builder for chaining.
@@ -1151,7 +1245,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated string deleted_template = 2;</code>
+     * <code>repeated string deleted_template = 3;</code>
      * @param value The deletedTemplate to add.
      * @return This builder for chaining.
      */
@@ -1166,7 +1260,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated string deleted_template = 2;</code>
+     * <code>repeated string deleted_template = 3;</code>
      * @param values The deletedTemplate to add.
      * @return This builder for chaining.
      */
@@ -1179,7 +1273,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated string deleted_template = 2;</code>
+     * <code>repeated string deleted_template = 3;</code>
      * @return This builder for chaining.
      */
     public Builder clearDeletedTemplate() {
@@ -1189,7 +1283,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated string deleted_template = 2;</code>
+     * <code>repeated string deleted_template = 3;</code>
      * @param value The bytes of the deletedTemplate to add.
      * @return This builder for chaining.
      */
@@ -1207,14 +1301,14 @@ private static final long serialVersionUID = 0L;
 
     private long batchId_ ;
     /**
-     * <code>uint64 batch_id = 3;</code>
+     * <code>uint64 batch_id = 4;</code>
      * @return The batchId.
      */
     public long getBatchId() {
       return batchId_;
     }
     /**
-     * <code>uint64 batch_id = 3;</code>
+     * <code>uint64 batch_id = 4;</code>
      * @param value The batchId to set.
      * @return This builder for chaining.
      */
@@ -1225,7 +1319,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>uint64 batch_id = 3;</code>
+     * <code>uint64 batch_id = 4;</code>
      * @return This builder for chaining.
      */
     public Builder clearBatchId() {
@@ -1237,14 +1331,14 @@ private static final long serialVersionUID = 0L;
 
     private int pageOffset_ ;
     /**
-     * <code>int32 page_offset = 4;</code>
+     * <code>int32 page_offset = 5;</code>
      * @return The pageOffset.
      */
     public int getPageOffset() {
       return pageOffset_;
     }
     /**
-     * <code>int32 page_offset = 4;</code>
+     * <code>int32 page_offset = 5;</code>
      * @param value The pageOffset to set.
      * @return This builder for chaining.
      */
@@ -1255,7 +1349,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>int32 page_offset = 4;</code>
+     * <code>int32 page_offset = 5;</code>
      * @return This builder for chaining.
      */
     public Builder clearPageOffset() {
@@ -1273,7 +1367,7 @@ private static final long serialVersionUID = 0L;
        }
     }
     /**
-     * <code>repeated int32 experiment_id = 5;</code>
+     * <code>repeated int32 experiment_id = 6;</code>
      * @return A list containing the experimentId.
      */
     public java.util.List<java.lang.Integer>
@@ -1282,14 +1376,14 @@ private static final long serialVersionUID = 0L;
                java.util.Collections.unmodifiableList(experimentId_) : experimentId_;
     }
     /**
-     * <code>repeated int32 experiment_id = 5;</code>
+     * <code>repeated int32 experiment_id = 6;</code>
      * @return The count of experimentId.
      */
     public int getExperimentIdCount() {
       return experimentId_.size();
     }
     /**
-     * <code>repeated int32 experiment_id = 5;</code>
+     * <code>repeated int32 experiment_id = 6;</code>
      * @param index The index of the element to return.
      * @return The experimentId at the given index.
      */
@@ -1297,7 +1391,7 @@ private static final long serialVersionUID = 0L;
       return experimentId_.getInt(index);
     }
     /**
-     * <code>repeated int32 experiment_id = 5;</code>
+     * <code>repeated int32 experiment_id = 6;</code>
      * @param index The index to set the value at.
      * @param value The experimentId to set.
      * @return This builder for chaining.
@@ -1310,7 +1404,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated int32 experiment_id = 5;</code>
+     * <code>repeated int32 experiment_id = 6;</code>
      * @param value The experimentId to add.
      * @return This builder for chaining.
      */
@@ -1321,7 +1415,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated int32 experiment_id = 5;</code>
+     * <code>repeated int32 experiment_id = 6;</code>
      * @param values The experimentId to add.
      * @return This builder for chaining.
      */
@@ -1334,7 +1428,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated int32 experiment_id = 5;</code>
+     * <code>repeated int32 experiment_id = 6;</code>
      * @return This builder for chaining.
      */
     public Builder clearExperimentId() {

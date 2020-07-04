@@ -11,7 +11,7 @@ public class AssetsDigestDecodeTest {
 	public void TestAssetsDigestDecode() throws Exception {
 		try (InputStream is = getClass().getResourceAsStream("/ASSET_DIGEST"))
         {
-			AssetDigestDecoderTool response = AssetDigestDecoderTool.parseFrom(is);
+			AssetDigestOutProto response = AssetDigestOutProto.parseFrom(is);
 			JsonFormat.Printer printer = JsonFormat.printer();
 			try (OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream("target/test-classes/ASSET_DIGEST.json")))
             {

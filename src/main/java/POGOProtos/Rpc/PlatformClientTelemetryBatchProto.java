@@ -134,48 +134,48 @@ private static final long serialVersionUID = 0L;
   public enum TelemetryScopeId
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>TELEMETRYSCOPEID_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    TELEMETRYSCOPEID_UNSET(0),
+    UNSET(0),
     /**
-     * <code>TELEMETRYSCOPEID_DITTO = 1;</code>
+     * <code>DITTO = 1;</code>
      */
-    TELEMETRYSCOPEID_DITTO(1),
+    DITTO(1),
     /**
-     * <code>TELEMETRYSCOPEID_GAME = 2;</code>
+     * <code>GAME = 2;</code>
      */
-    TELEMETRYSCOPEID_GAME(2),
+    GAME(2),
     /**
-     * <code>TELEMETRYSCOPEID_TITAN = 3;</code>
+     * <code>TITAN = 3;</code>
      */
-    TELEMETRYSCOPEID_TITAN(3),
+    TITAN(3),
     /**
-     * <code>TELEMETRYSCOPEID_COMMON = 4;</code>
+     * <code>COMMON = 4;</code>
      */
-    TELEMETRYSCOPEID_COMMON(4),
+    COMMON(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>TELEMETRYSCOPEID_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int TELEMETRYSCOPEID_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>TELEMETRYSCOPEID_DITTO = 1;</code>
+     * <code>DITTO = 1;</code>
      */
-    public static final int TELEMETRYSCOPEID_DITTO_VALUE = 1;
+    public static final int DITTO_VALUE = 1;
     /**
-     * <code>TELEMETRYSCOPEID_GAME = 2;</code>
+     * <code>GAME = 2;</code>
      */
-    public static final int TELEMETRYSCOPEID_GAME_VALUE = 2;
+    public static final int GAME_VALUE = 2;
     /**
-     * <code>TELEMETRYSCOPEID_TITAN = 3;</code>
+     * <code>TITAN = 3;</code>
      */
-    public static final int TELEMETRYSCOPEID_TITAN_VALUE = 3;
+    public static final int TITAN_VALUE = 3;
     /**
-     * <code>TELEMETRYSCOPEID_COMMON = 4;</code>
+     * <code>COMMON = 4;</code>
      */
-    public static final int TELEMETRYSCOPEID_COMMON_VALUE = 4;
+    public static final int COMMON_VALUE = 4;
 
 
     public final int getNumber() {
@@ -202,11 +202,11 @@ private static final long serialVersionUID = 0L;
      */
     public static TelemetryScopeId forNumber(int value) {
       switch (value) {
-        case 0: return TELEMETRYSCOPEID_UNSET;
-        case 1: return TELEMETRYSCOPEID_DITTO;
-        case 2: return TELEMETRYSCOPEID_GAME;
-        case 3: return TELEMETRYSCOPEID_TITAN;
-        case 4: return TELEMETRYSCOPEID_COMMON;
+        case 0: return UNSET;
+        case 1: return DITTO;
+        case 2: return GAME;
+        case 3: return TITAN;
+        case 4: return COMMON;
         default: return null;
       }
     }
@@ -434,7 +434,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (telemetryScopeId_ != POGOProtos.Rpc.PlatformClientTelemetryBatchProto.TelemetryScopeId.TELEMETRYSCOPEID_UNSET.getNumber()) {
+    if (telemetryScopeId_ != POGOProtos.Rpc.PlatformClientTelemetryBatchProto.TelemetryScopeId.UNSET.getNumber()) {
       output.writeEnum(1, telemetryScopeId_);
     }
     for (int i = 0; i < events_.size(); i++) {
@@ -458,7 +458,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (telemetryScopeId_ != POGOProtos.Rpc.PlatformClientTelemetryBatchProto.TelemetryScopeId.TELEMETRYSCOPEID_UNSET.getNumber()) {
+    if (telemetryScopeId_ != POGOProtos.Rpc.PlatformClientTelemetryBatchProto.TelemetryScopeId.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, telemetryScopeId_);
     }

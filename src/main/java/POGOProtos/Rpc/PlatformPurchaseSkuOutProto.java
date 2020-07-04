@@ -86,56 +86,56 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    STATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>STATUS_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    STATUS_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>STATUS_FAILURE = 2;</code>
+     * <code>FAILURE = 2;</code>
      */
-    STATUS_FAILURE(2),
+    FAILURE(2),
     /**
-     * <code>STATUS_BALANCE_TOO_LOW = 3;</code>
+     * <code>BALANCE_TOO_LOW = 3;</code>
      */
-    STATUS_BALANCE_TOO_LOW(3),
+    BALANCE_TOO_LOW(3),
     /**
-     * <code>STATUS_SKU_NOT_AVAILABLE = 4;</code>
+     * <code>SKU_NOT_AVAILABLE = 4;</code>
      */
-    STATUS_SKU_NOT_AVAILABLE(4),
+    SKU_NOT_AVAILABLE(4),
     /**
-     * <code>STATUS_OVER_INVENTORY_LIMIT = 5;</code>
+     * <code>OVER_INVENTORY_LIMIT = 5;</code>
      */
-    STATUS_OVER_INVENTORY_LIMIT(5),
+    OVER_INVENTORY_LIMIT(5),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int STATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>STATUS_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int STATUS_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>STATUS_FAILURE = 2;</code>
+     * <code>FAILURE = 2;</code>
      */
-    public static final int STATUS_FAILURE_VALUE = 2;
+    public static final int FAILURE_VALUE = 2;
     /**
-     * <code>STATUS_BALANCE_TOO_LOW = 3;</code>
+     * <code>BALANCE_TOO_LOW = 3;</code>
      */
-    public static final int STATUS_BALANCE_TOO_LOW_VALUE = 3;
+    public static final int BALANCE_TOO_LOW_VALUE = 3;
     /**
-     * <code>STATUS_SKU_NOT_AVAILABLE = 4;</code>
+     * <code>SKU_NOT_AVAILABLE = 4;</code>
      */
-    public static final int STATUS_SKU_NOT_AVAILABLE_VALUE = 4;
+    public static final int SKU_NOT_AVAILABLE_VALUE = 4;
     /**
-     * <code>STATUS_OVER_INVENTORY_LIMIT = 5;</code>
+     * <code>OVER_INVENTORY_LIMIT = 5;</code>
      */
-    public static final int STATUS_OVER_INVENTORY_LIMIT_VALUE = 5;
+    public static final int OVER_INVENTORY_LIMIT_VALUE = 5;
 
 
     public final int getNumber() {
@@ -162,12 +162,12 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_UNSET;
-        case 1: return STATUS_SUCCESS;
-        case 2: return STATUS_FAILURE;
-        case 3: return STATUS_BALANCE_TOO_LOW;
-        case 4: return STATUS_SKU_NOT_AVAILABLE;
-        case 5: return STATUS_OVER_INVENTORY_LIMIT;
+        case 0: return UNSET;
+        case 1: return SUCCESS;
+        case 2: return FAILURE;
+        case 3: return BALANCE_TOO_LOW;
+        case 4: return SKU_NOT_AVAILABLE;
+        case 5: return OVER_INVENTORY_LIMIT;
         default: return null;
       }
     }

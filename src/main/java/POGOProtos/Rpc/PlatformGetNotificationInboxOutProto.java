@@ -99,32 +99,32 @@ private static final long serialVersionUID = 0L;
   public enum Result
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    RESULT_UNSET(0),
+    UNSET(0),
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    RESULT_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>RESULT_FAILURE = 2;</code>
+     * <code>FAILURE = 2;</code>
      */
-    RESULT_FAILURE(2),
+    FAILURE(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int RESULT_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int RESULT_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>RESULT_FAILURE = 2;</code>
+     * <code>FAILURE = 2;</code>
      */
-    public static final int RESULT_FAILURE_VALUE = 2;
+    public static final int FAILURE_VALUE = 2;
 
 
     public final int getNumber() {
@@ -151,9 +151,9 @@ private static final long serialVersionUID = 0L;
      */
     public static Result forNumber(int value) {
       switch (value) {
-        case 0: return RESULT_UNSET;
-        case 1: return RESULT_SUCCESS;
-        case 2: return RESULT_FAILURE;
+        case 0: return UNSET;
+        case 1: return SUCCESS;
+        case 2: return FAILURE;
         default: return null;
       }
     }

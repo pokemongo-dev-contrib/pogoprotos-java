@@ -9,24 +9,24 @@ package POGOProtos.Rpc;
 public enum DeviceKind
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>DEVICEKIND_POKEMON_GO_PLUS = 0;</code>
+   * <code>DEVICE_KIND_POKEMON_GO_PLUS = 0;</code>
    */
-  DEVICEKIND_POKEMON_GO_PLUS(0),
+  DEVICE_KIND_POKEMON_GO_PLUS(0),
   /**
-   * <code>DEVICEKIND_POKE_BALL_PLUS = 1;</code>
+   * <code>DEVICE_KIND_POKE_BALL_PLUS = 1;</code>
    */
-  DEVICEKIND_POKE_BALL_PLUS(1),
+  DEVICE_KIND_POKE_BALL_PLUS(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>DEVICEKIND_POKEMON_GO_PLUS = 0;</code>
+   * <code>DEVICE_KIND_POKEMON_GO_PLUS = 0;</code>
    */
-  public static final int DEVICEKIND_POKEMON_GO_PLUS_VALUE = 0;
+  public static final int DEVICE_KIND_POKEMON_GO_PLUS_VALUE = 0;
   /**
-   * <code>DEVICEKIND_POKE_BALL_PLUS = 1;</code>
+   * <code>DEVICE_KIND_POKE_BALL_PLUS = 1;</code>
    */
-  public static final int DEVICEKIND_POKE_BALL_PLUS_VALUE = 1;
+  public static final int DEVICE_KIND_POKE_BALL_PLUS_VALUE = 1;
 
 
   public final int getNumber() {
@@ -53,8 +53,8 @@ public enum DeviceKind
    */
   public static DeviceKind forNumber(int value) {
     switch (value) {
-      case 0: return DEVICEKIND_POKEMON_GO_PLUS;
-      case 1: return DEVICEKIND_POKE_BALL_PLUS;
+      case 0: return DEVICE_KIND_POKEMON_GO_PLUS;
+      case 1: return DEVICE_KIND_POKE_BALL_PLUS;
       default: return null;
     }
   }
@@ -81,7 +81,7 @@ public enum DeviceKind
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(1);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(18);
   }
 
   private static final DeviceKind[] VALUES = values();

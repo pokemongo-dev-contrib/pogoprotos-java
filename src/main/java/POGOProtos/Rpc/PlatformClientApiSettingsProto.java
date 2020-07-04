@@ -92,24 +92,24 @@ private static final long serialVersionUID = 0L;
   public enum SettingsType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>SETTINGSTYPE_UNDEFINED = 0;</code>
+     * <code>UNDEFINED = 0;</code>
      */
-    SETTINGSTYPE_UNDEFINED(0),
+    UNDEFINED(0),
     /**
-     * <code>SETTINGSTYPE_MAP = 1;</code>
+     * <code>MAP = 1;</code>
      */
-    SETTINGSTYPE_MAP(1),
+    MAP(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>SETTINGSTYPE_UNDEFINED = 0;</code>
+     * <code>UNDEFINED = 0;</code>
      */
-    public static final int SETTINGSTYPE_UNDEFINED_VALUE = 0;
+    public static final int UNDEFINED_VALUE = 0;
     /**
-     * <code>SETTINGSTYPE_MAP = 1;</code>
+     * <code>MAP = 1;</code>
      */
-    public static final int SETTINGSTYPE_MAP_VALUE = 1;
+    public static final int MAP_VALUE = 1;
 
 
     public final int getNumber() {
@@ -136,8 +136,8 @@ private static final long serialVersionUID = 0L;
      */
     public static SettingsType forNumber(int value) {
       switch (value) {
-        case 0: return SETTINGSTYPE_UNDEFINED;
-        case 1: return SETTINGSTYPE_MAP;
+        case 0: return UNDEFINED;
+        case 1: return MAP;
         default: return null;
       }
     }

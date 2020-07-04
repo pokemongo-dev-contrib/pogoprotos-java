@@ -86,72 +86,72 @@ private static final long serialVersionUID = 0L;
   public enum WeatherCondition
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>WEATHERCONDITION_NONE = 0;</code>
+     * <code>NONE = 0;</code>
      */
-    WEATHERCONDITION_NONE(0),
+    NONE(0),
     /**
-     * <code>WEATHERCONDITION_CLEAR = 1;</code>
+     * <code>CLEAR = 1;</code>
      */
-    WEATHERCONDITION_CLEAR(1),
+    CLEAR(1),
     /**
-     * <code>WEATHERCONDITION_RAINY = 2;</code>
+     * <code>RAINY = 2;</code>
      */
-    WEATHERCONDITION_RAINY(2),
+    RAINY(2),
     /**
-     * <code>WEATHERCONDITION_PARTLY_CLOUDY = 3;</code>
+     * <code>PARTLY_CLOUDY = 3;</code>
      */
-    WEATHERCONDITION_PARTLY_CLOUDY(3),
+    PARTLY_CLOUDY(3),
     /**
-     * <code>WEATHERCONDITION_OVERCAST = 4;</code>
+     * <code>OVERCAST = 4;</code>
      */
-    WEATHERCONDITION_OVERCAST(4),
+    OVERCAST(4),
     /**
-     * <code>WEATHERCONDITION_WINDY = 5;</code>
+     * <code>WINDY = 5;</code>
      */
-    WEATHERCONDITION_WINDY(5),
+    WINDY(5),
     /**
-     * <code>WEATHERCONDITION_SNOW = 6;</code>
+     * <code>SNOW = 6;</code>
      */
-    WEATHERCONDITION_SNOW(6),
+    SNOW(6),
     /**
-     * <code>WEATHERCONDITION_FOG = 7;</code>
+     * <code>FOG = 7;</code>
      */
-    WEATHERCONDITION_FOG(7),
+    FOG(7),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>WEATHERCONDITION_NONE = 0;</code>
+     * <code>NONE = 0;</code>
      */
-    public static final int WEATHERCONDITION_NONE_VALUE = 0;
+    public static final int NONE_VALUE = 0;
     /**
-     * <code>WEATHERCONDITION_CLEAR = 1;</code>
+     * <code>CLEAR = 1;</code>
      */
-    public static final int WEATHERCONDITION_CLEAR_VALUE = 1;
+    public static final int CLEAR_VALUE = 1;
     /**
-     * <code>WEATHERCONDITION_RAINY = 2;</code>
+     * <code>RAINY = 2;</code>
      */
-    public static final int WEATHERCONDITION_RAINY_VALUE = 2;
+    public static final int RAINY_VALUE = 2;
     /**
-     * <code>WEATHERCONDITION_PARTLY_CLOUDY = 3;</code>
+     * <code>PARTLY_CLOUDY = 3;</code>
      */
-    public static final int WEATHERCONDITION_PARTLY_CLOUDY_VALUE = 3;
+    public static final int PARTLY_CLOUDY_VALUE = 3;
     /**
-     * <code>WEATHERCONDITION_OVERCAST = 4;</code>
+     * <code>OVERCAST = 4;</code>
      */
-    public static final int WEATHERCONDITION_OVERCAST_VALUE = 4;
+    public static final int OVERCAST_VALUE = 4;
     /**
-     * <code>WEATHERCONDITION_WINDY = 5;</code>
+     * <code>WINDY = 5;</code>
      */
-    public static final int WEATHERCONDITION_WINDY_VALUE = 5;
+    public static final int WINDY_VALUE = 5;
     /**
-     * <code>WEATHERCONDITION_SNOW = 6;</code>
+     * <code>SNOW = 6;</code>
      */
-    public static final int WEATHERCONDITION_SNOW_VALUE = 6;
+    public static final int SNOW_VALUE = 6;
     /**
-     * <code>WEATHERCONDITION_FOG = 7;</code>
+     * <code>FOG = 7;</code>
      */
-    public static final int WEATHERCONDITION_FOG_VALUE = 7;
+    public static final int FOG_VALUE = 7;
 
 
     public final int getNumber() {
@@ -178,14 +178,14 @@ private static final long serialVersionUID = 0L;
      */
     public static WeatherCondition forNumber(int value) {
       switch (value) {
-        case 0: return WEATHERCONDITION_NONE;
-        case 1: return WEATHERCONDITION_CLEAR;
-        case 2: return WEATHERCONDITION_RAINY;
-        case 3: return WEATHERCONDITION_PARTLY_CLOUDY;
-        case 4: return WEATHERCONDITION_OVERCAST;
-        case 5: return WEATHERCONDITION_WINDY;
-        case 6: return WEATHERCONDITION_SNOW;
-        case 7: return WEATHERCONDITION_FOG;
+        case 0: return NONE;
+        case 1: return CLEAR;
+        case 2: return RAINY;
+        case 3: return PARTLY_CLOUDY;
+        case 4: return OVERCAST;
+        case 5: return WINDY;
+        case 6: return SNOW;
+        case 7: return FOG;
         default: return null;
       }
     }

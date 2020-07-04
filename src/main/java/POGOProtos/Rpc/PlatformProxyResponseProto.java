@@ -99,96 +99,96 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    STATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>STATUS_COMPLETED = 1;</code>
+     * <code>COMPLETED = 1;</code>
      */
-    STATUS_COMPLETED(1),
+    COMPLETED(1),
     /**
-     * <code>STATUS_COMPLETED_AND_REASSIGNED = 2;</code>
+     * <code>COMPLETED_AND_REASSIGNED = 2;</code>
      */
-    STATUS_COMPLETED_AND_REASSIGNED(2),
+    COMPLETED_AND_REASSIGNED(2),
     /**
-     * <code>STATUS_ACTION_NOT_FOUND = 3;</code>
+     * <code>ACTION_NOT_FOUND = 3;</code>
      */
-    STATUS_ACTION_NOT_FOUND(3),
+    ACTION_NOT_FOUND(3),
     /**
-     * <code>STATUS_ASSIGNMENT_ERROR = 4;</code>
+     * <code>ASSIGNMENT_ERROR = 4;</code>
      */
-    STATUS_ASSIGNMENT_ERROR(4),
+    ASSIGNMENT_ERROR(4),
     /**
-     * <code>STATUS_PROXY_UNAUTHORIZED_ERROR = 5;</code>
+     * <code>PROXY_UNAUTHORIZED_ERROR = 5;</code>
      */
-    STATUS_PROXY_UNAUTHORIZED_ERROR(5),
+    PROXY_UNAUTHORIZED_ERROR(5),
     /**
-     * <code>STATUS_INTERNAL_ERROR = 6;</code>
+     * <code>INTERNAL_ERROR = 6;</code>
      */
-    STATUS_INTERNAL_ERROR(6),
+    INTERNAL_ERROR(6),
     /**
-     * <code>STATUS_BAD_REQUEST = 7;</code>
+     * <code>BAD_REQUEST = 7;</code>
      */
-    STATUS_BAD_REQUEST(7),
+    BAD_REQUEST(7),
     /**
-     * <code>STATUS_ACCESS_DENIED = 8;</code>
+     * <code>ACCESS_DENIED = 8;</code>
      */
-    STATUS_ACCESS_DENIED(8),
+    ACCESS_DENIED(8),
     /**
-     * <code>STATUS_TIMEOUT_ERROR = 9;</code>
+     * <code>TIMEOUT_ERROR = 9;</code>
      */
-    STATUS_TIMEOUT_ERROR(9),
+    TIMEOUT_ERROR(9),
     /**
-     * <code>STATUS_RATE_LIMITED = 10;</code>
+     * <code>RATE_LIMITED = 10;</code>
      */
-    STATUS_RATE_LIMITED(10),
+    RATE_LIMITED(10),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int STATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>STATUS_COMPLETED = 1;</code>
+     * <code>COMPLETED = 1;</code>
      */
-    public static final int STATUS_COMPLETED_VALUE = 1;
+    public static final int COMPLETED_VALUE = 1;
     /**
-     * <code>STATUS_COMPLETED_AND_REASSIGNED = 2;</code>
+     * <code>COMPLETED_AND_REASSIGNED = 2;</code>
      */
-    public static final int STATUS_COMPLETED_AND_REASSIGNED_VALUE = 2;
+    public static final int COMPLETED_AND_REASSIGNED_VALUE = 2;
     /**
-     * <code>STATUS_ACTION_NOT_FOUND = 3;</code>
+     * <code>ACTION_NOT_FOUND = 3;</code>
      */
-    public static final int STATUS_ACTION_NOT_FOUND_VALUE = 3;
+    public static final int ACTION_NOT_FOUND_VALUE = 3;
     /**
-     * <code>STATUS_ASSIGNMENT_ERROR = 4;</code>
+     * <code>ASSIGNMENT_ERROR = 4;</code>
      */
-    public static final int STATUS_ASSIGNMENT_ERROR_VALUE = 4;
+    public static final int ASSIGNMENT_ERROR_VALUE = 4;
     /**
-     * <code>STATUS_PROXY_UNAUTHORIZED_ERROR = 5;</code>
+     * <code>PROXY_UNAUTHORIZED_ERROR = 5;</code>
      */
-    public static final int STATUS_PROXY_UNAUTHORIZED_ERROR_VALUE = 5;
+    public static final int PROXY_UNAUTHORIZED_ERROR_VALUE = 5;
     /**
-     * <code>STATUS_INTERNAL_ERROR = 6;</code>
+     * <code>INTERNAL_ERROR = 6;</code>
      */
-    public static final int STATUS_INTERNAL_ERROR_VALUE = 6;
+    public static final int INTERNAL_ERROR_VALUE = 6;
     /**
-     * <code>STATUS_BAD_REQUEST = 7;</code>
+     * <code>BAD_REQUEST = 7;</code>
      */
-    public static final int STATUS_BAD_REQUEST_VALUE = 7;
+    public static final int BAD_REQUEST_VALUE = 7;
     /**
-     * <code>STATUS_ACCESS_DENIED = 8;</code>
+     * <code>ACCESS_DENIED = 8;</code>
      */
-    public static final int STATUS_ACCESS_DENIED_VALUE = 8;
+    public static final int ACCESS_DENIED_VALUE = 8;
     /**
-     * <code>STATUS_TIMEOUT_ERROR = 9;</code>
+     * <code>TIMEOUT_ERROR = 9;</code>
      */
-    public static final int STATUS_TIMEOUT_ERROR_VALUE = 9;
+    public static final int TIMEOUT_ERROR_VALUE = 9;
     /**
-     * <code>STATUS_RATE_LIMITED = 10;</code>
+     * <code>RATE_LIMITED = 10;</code>
      */
-    public static final int STATUS_RATE_LIMITED_VALUE = 10;
+    public static final int RATE_LIMITED_VALUE = 10;
 
 
     public final int getNumber() {
@@ -215,17 +215,17 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_UNSET;
-        case 1: return STATUS_COMPLETED;
-        case 2: return STATUS_COMPLETED_AND_REASSIGNED;
-        case 3: return STATUS_ACTION_NOT_FOUND;
-        case 4: return STATUS_ASSIGNMENT_ERROR;
-        case 5: return STATUS_PROXY_UNAUTHORIZED_ERROR;
-        case 6: return STATUS_INTERNAL_ERROR;
-        case 7: return STATUS_BAD_REQUEST;
-        case 8: return STATUS_ACCESS_DENIED;
-        case 9: return STATUS_TIMEOUT_ERROR;
-        case 10: return STATUS_RATE_LIMITED;
+        case 0: return UNSET;
+        case 1: return COMPLETED;
+        case 2: return COMPLETED_AND_REASSIGNED;
+        case 3: return ACTION_NOT_FOUND;
+        case 4: return ASSIGNMENT_ERROR;
+        case 5: return PROXY_UNAUTHORIZED_ERROR;
+        case 6: return INTERNAL_ERROR;
+        case 7: return BAD_REQUEST;
+        case 8: return ACCESS_DENIED;
+        case 9: return TIMEOUT_ERROR;
+        case 10: return RATE_LIMITED;
         default: return null;
       }
     }

@@ -93,56 +93,56 @@ private static final long serialVersionUID = 0L;
   public enum Result
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    RESULT_UNSET(0),
+    UNSET(0),
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    RESULT_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>RESULT_ERROR_PLAYER_NOT_VALID = 2;</code>
+     * <code>ERROR_PLAYER_NOT_VALID = 2;</code>
      */
-    RESULT_ERROR_PLAYER_NOT_VALID(2),
+    ERROR_PLAYER_NOT_VALID(2),
     /**
-     * <code>RESULT_ERROR_RATE_LIMITED = 3;</code>
+     * <code>ERROR_RATE_LIMITED = 3;</code>
      */
-    RESULT_ERROR_RATE_LIMITED(3),
+    ERROR_RATE_LIMITED(3),
     /**
-     * <code>RESULT_ERROR_MISSING_INPUT = 4;</code>
+     * <code>ERROR_MISSING_INPUT = 4;</code>
      */
-    RESULT_ERROR_MISSING_INPUT(4),
+    ERROR_MISSING_INPUT(4),
     /**
-     * <code>RESULT_ERROR_UNKNOWN = 5;</code>
+     * <code>ERROR_UNKNOWN = 5;</code>
      */
-    RESULT_ERROR_UNKNOWN(5),
+    ERROR_UNKNOWN(5),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int RESULT_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int RESULT_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>RESULT_ERROR_PLAYER_NOT_VALID = 2;</code>
+     * <code>ERROR_PLAYER_NOT_VALID = 2;</code>
      */
-    public static final int RESULT_ERROR_PLAYER_NOT_VALID_VALUE = 2;
+    public static final int ERROR_PLAYER_NOT_VALID_VALUE = 2;
     /**
-     * <code>RESULT_ERROR_RATE_LIMITED = 3;</code>
+     * <code>ERROR_RATE_LIMITED = 3;</code>
      */
-    public static final int RESULT_ERROR_RATE_LIMITED_VALUE = 3;
+    public static final int ERROR_RATE_LIMITED_VALUE = 3;
     /**
-     * <code>RESULT_ERROR_MISSING_INPUT = 4;</code>
+     * <code>ERROR_MISSING_INPUT = 4;</code>
      */
-    public static final int RESULT_ERROR_MISSING_INPUT_VALUE = 4;
+    public static final int ERROR_MISSING_INPUT_VALUE = 4;
     /**
-     * <code>RESULT_ERROR_UNKNOWN = 5;</code>
+     * <code>ERROR_UNKNOWN = 5;</code>
      */
-    public static final int RESULT_ERROR_UNKNOWN_VALUE = 5;
+    public static final int ERROR_UNKNOWN_VALUE = 5;
 
 
     public final int getNumber() {
@@ -169,12 +169,12 @@ private static final long serialVersionUID = 0L;
      */
     public static Result forNumber(int value) {
       switch (value) {
-        case 0: return RESULT_UNSET;
-        case 1: return RESULT_SUCCESS;
-        case 2: return RESULT_ERROR_PLAYER_NOT_VALID;
-        case 3: return RESULT_ERROR_RATE_LIMITED;
-        case 4: return RESULT_ERROR_MISSING_INPUT;
-        case 5: return RESULT_ERROR_UNKNOWN;
+        case 0: return UNSET;
+        case 1: return SUCCESS;
+        case 2: return ERROR_PLAYER_NOT_VALID;
+        case 3: return ERROR_RATE_LIMITED;
+        case 4: return ERROR_MISSING_INPUT;
+        case 5: return ERROR_UNKNOWN;
         default: return null;
       }
     }

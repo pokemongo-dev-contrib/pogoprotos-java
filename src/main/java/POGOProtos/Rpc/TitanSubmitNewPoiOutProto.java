@@ -114,72 +114,72 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    STATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>STATUS_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    STATUS_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>STATUS_FAILURE = 2;</code>
+     * <code>FAILURE = 2;</code>
      */
-    STATUS_FAILURE(2),
+    FAILURE(2),
     /**
-     * <code>STATUS_INTERNAL_ERROR = 3;</code>
+     * <code>INTERNAL_ERROR = 3;</code>
      */
-    STATUS_INTERNAL_ERROR(3),
+    INTERNAL_ERROR(3),
     /**
-     * <code>STATUS_TOO_MANY_RECENT_SUBMISSIONS = 4;</code>
+     * <code>TOO_MANY_RECENT_SUBMISSIONS = 4;</code>
      */
-    STATUS_TOO_MANY_RECENT_SUBMISSIONS(4),
+    TOO_MANY_RECENT_SUBMISSIONS(4),
     /**
-     * <code>STATUS_INVALID_INPUT = 5;</code>
+     * <code>INVALID_INPUT = 5;</code>
      */
-    STATUS_INVALID_INPUT(5),
+    INVALID_INPUT(5),
     /**
-     * <code>STATUS_MINOR = 6;</code>
+     * <code>MINOR = 6;</code>
      */
-    STATUS_MINOR(6),
+    MINOR(6),
     /**
-     * <code>STATUS_NOT_AVAILABLE = 7;</code>
+     * <code>NOT_AVAILABLE = 7;</code>
      */
-    STATUS_NOT_AVAILABLE(7),
+    NOT_AVAILABLE(7),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int STATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>STATUS_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int STATUS_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>STATUS_FAILURE = 2;</code>
+     * <code>FAILURE = 2;</code>
      */
-    public static final int STATUS_FAILURE_VALUE = 2;
+    public static final int FAILURE_VALUE = 2;
     /**
-     * <code>STATUS_INTERNAL_ERROR = 3;</code>
+     * <code>INTERNAL_ERROR = 3;</code>
      */
-    public static final int STATUS_INTERNAL_ERROR_VALUE = 3;
+    public static final int INTERNAL_ERROR_VALUE = 3;
     /**
-     * <code>STATUS_TOO_MANY_RECENT_SUBMISSIONS = 4;</code>
+     * <code>TOO_MANY_RECENT_SUBMISSIONS = 4;</code>
      */
-    public static final int STATUS_TOO_MANY_RECENT_SUBMISSIONS_VALUE = 4;
+    public static final int TOO_MANY_RECENT_SUBMISSIONS_VALUE = 4;
     /**
-     * <code>STATUS_INVALID_INPUT = 5;</code>
+     * <code>INVALID_INPUT = 5;</code>
      */
-    public static final int STATUS_INVALID_INPUT_VALUE = 5;
+    public static final int INVALID_INPUT_VALUE = 5;
     /**
-     * <code>STATUS_MINOR = 6;</code>
+     * <code>MINOR = 6;</code>
      */
-    public static final int STATUS_MINOR_VALUE = 6;
+    public static final int MINOR_VALUE = 6;
     /**
-     * <code>STATUS_NOT_AVAILABLE = 7;</code>
+     * <code>NOT_AVAILABLE = 7;</code>
      */
-    public static final int STATUS_NOT_AVAILABLE_VALUE = 7;
+    public static final int NOT_AVAILABLE_VALUE = 7;
 
 
     public final int getNumber() {
@@ -206,14 +206,14 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_UNSET;
-        case 1: return STATUS_SUCCESS;
-        case 2: return STATUS_FAILURE;
-        case 3: return STATUS_INTERNAL_ERROR;
-        case 4: return STATUS_TOO_MANY_RECENT_SUBMISSIONS;
-        case 5: return STATUS_INVALID_INPUT;
-        case 6: return STATUS_MINOR;
-        case 7: return STATUS_NOT_AVAILABLE;
+        case 0: return UNSET;
+        case 1: return SUCCESS;
+        case 2: return FAILURE;
+        case 3: return INTERNAL_ERROR;
+        case 4: return TOO_MANY_RECENT_SUBMISSIONS;
+        case 5: return INVALID_INPUT;
+        case 6: return MINOR;
+        case 7: return NOT_AVAILABLE;
         default: return null;
       }
     }
@@ -370,7 +370,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != POGOProtos.Rpc.TitanSubmitNewPoiOutProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.TitanSubmitNewPoiOutProto.Status.UNSET.getNumber()) {
       output.writeEnum(1, status_);
     }
     if (!getSubmissionIdBytes().isEmpty()) {
@@ -388,7 +388,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != POGOProtos.Rpc.TitanSubmitNewPoiOutProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.TitanSubmitNewPoiOutProto.Status.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, status_);
     }

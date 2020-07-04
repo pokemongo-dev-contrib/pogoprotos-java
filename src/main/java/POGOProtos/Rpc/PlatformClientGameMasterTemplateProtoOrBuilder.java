@@ -20,8 +20,29 @@ public interface PlatformClientGameMasterTemplateProtoOrBuilder extends
       getTemplateIdBytes();
 
   /**
-   * <code>bytes data = 2;</code>
+   * <pre>
+   *bytes data = 2;
+   * </pre>
+   *
+   * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
+   * @return Whether the data field is set.
+   */
+  boolean hasData();
+  /**
+   * <pre>
+   *bytes data = 2;
+   * </pre>
+   *
+   * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
    * @return The data.
    */
-  com.google.protobuf.ByteString getData();
+  POGOProtos.Rpc.GameMasterClientTemplateProto getData();
+  /**
+   * <pre>
+   *bytes data = 2;
+   * </pre>
+   *
+   * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
+   */
+  POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder getDataOrBuilder();
 }

@@ -86,32 +86,32 @@ private static final long serialVersionUID = 0L;
   public enum ConsentStatus
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>CONSENTSTATUS_UNKNOWN = 0;</code>
+     * <code>UNKNOWN = 0;</code>
      */
-    CONSENTSTATUS_UNKNOWN(0),
+    UNKNOWN(0),
     /**
-     * <code>CONSENTSTATUS_OPT_IN = 1;</code>
+     * <code>OPT_IN = 1;</code>
      */
-    CONSENTSTATUS_OPT_IN(1),
+    OPT_IN(1),
     /**
-     * <code>CONSENTSTATUS_OPT_OUT = 2;</code>
+     * <code>OPT_OUT = 2;</code>
      */
-    CONSENTSTATUS_OPT_OUT(2),
+    OPT_OUT(2),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>CONSENTSTATUS_UNKNOWN = 0;</code>
+     * <code>UNKNOWN = 0;</code>
      */
-    public static final int CONSENTSTATUS_UNKNOWN_VALUE = 0;
+    public static final int UNKNOWN_VALUE = 0;
     /**
-     * <code>CONSENTSTATUS_OPT_IN = 1;</code>
+     * <code>OPT_IN = 1;</code>
      */
-    public static final int CONSENTSTATUS_OPT_IN_VALUE = 1;
+    public static final int OPT_IN_VALUE = 1;
     /**
-     * <code>CONSENTSTATUS_OPT_OUT = 2;</code>
+     * <code>OPT_OUT = 2;</code>
      */
-    public static final int CONSENTSTATUS_OPT_OUT_VALUE = 2;
+    public static final int OPT_OUT_VALUE = 2;
 
 
     public final int getNumber() {
@@ -138,9 +138,9 @@ private static final long serialVersionUID = 0L;
      */
     public static ConsentStatus forNumber(int value) {
       switch (value) {
-        case 0: return CONSENTSTATUS_UNKNOWN;
-        case 1: return CONSENTSTATUS_OPT_IN;
-        case 2: return CONSENTSTATUS_OPT_OUT;
+        case 0: return UNKNOWN;
+        case 1: return OPT_IN;
+        case 2: return OPT_OUT;
         default: return null;
       }
     }
@@ -199,48 +199,48 @@ private static final long serialVersionUID = 0L;
   public enum TutorialType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>TUTORIALTYPE_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    TUTORIALTYPE_UNSET(0),
+    UNSET(0),
     /**
-     * <code>TUTORIALTYPE_PROFILE = 1;</code>
+     * <code>PROFILE = 1;</code>
      */
-    TUTORIALTYPE_PROFILE(1),
+    PROFILE(1),
     /**
-     * <code>TUTORIALTYPE_FRIEND_LIST_V2 = 2;</code>
+     * <code>FRIEND_LIST_V2 = 2;</code>
      */
-    TUTORIALTYPE_FRIEND_LIST_V2(2),
+    FRIEND_LIST_V2(2),
     /**
-     * <code>TUTORIALTYPE_ONLINE_STATUS_OVERVIEW = 3;</code>
+     * <code>ONLINE_STATUS_OVERVIEW = 3;</code>
      */
-    TUTORIALTYPE_ONLINE_STATUS_OVERVIEW(3),
+    ONLINE_STATUS_OVERVIEW(3),
     /**
-     * <code>TUTORIALTYPE_ONLINE_STATUS_TOGGLE = 4;</code>
+     * <code>ONLINE_STATUS_TOGGLE = 4;</code>
      */
-    TUTORIALTYPE_ONLINE_STATUS_TOGGLE(4),
+    ONLINE_STATUS_TOGGLE(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>TUTORIALTYPE_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int TUTORIALTYPE_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>TUTORIALTYPE_PROFILE = 1;</code>
+     * <code>PROFILE = 1;</code>
      */
-    public static final int TUTORIALTYPE_PROFILE_VALUE = 1;
+    public static final int PROFILE_VALUE = 1;
     /**
-     * <code>TUTORIALTYPE_FRIEND_LIST_V2 = 2;</code>
+     * <code>FRIEND_LIST_V2 = 2;</code>
      */
-    public static final int TUTORIALTYPE_FRIEND_LIST_V2_VALUE = 2;
+    public static final int FRIEND_LIST_V2_VALUE = 2;
     /**
-     * <code>TUTORIALTYPE_ONLINE_STATUS_OVERVIEW = 3;</code>
+     * <code>ONLINE_STATUS_OVERVIEW = 3;</code>
      */
-    public static final int TUTORIALTYPE_ONLINE_STATUS_OVERVIEW_VALUE = 3;
+    public static final int ONLINE_STATUS_OVERVIEW_VALUE = 3;
     /**
-     * <code>TUTORIALTYPE_ONLINE_STATUS_TOGGLE = 4;</code>
+     * <code>ONLINE_STATUS_TOGGLE = 4;</code>
      */
-    public static final int TUTORIALTYPE_ONLINE_STATUS_TOGGLE_VALUE = 4;
+    public static final int ONLINE_STATUS_TOGGLE_VALUE = 4;
 
 
     public final int getNumber() {
@@ -267,11 +267,11 @@ private static final long serialVersionUID = 0L;
      */
     public static TutorialType forNumber(int value) {
       switch (value) {
-        case 0: return TUTORIALTYPE_UNSET;
-        case 1: return TUTORIALTYPE_PROFILE;
-        case 2: return TUTORIALTYPE_FRIEND_LIST_V2;
-        case 3: return TUTORIALTYPE_ONLINE_STATUS_OVERVIEW;
-        case 4: return TUTORIALTYPE_ONLINE_STATUS_TOGGLE;
+        case 0: return UNSET;
+        case 1: return PROFILE;
+        case 2: return FRIEND_LIST_V2;
+        case 3: return ONLINE_STATUS_OVERVIEW;
+        case 4: return ONLINE_STATUS_TOGGLE;
         default: return null;
       }
     }

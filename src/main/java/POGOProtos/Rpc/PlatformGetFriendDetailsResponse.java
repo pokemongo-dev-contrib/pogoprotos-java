@@ -107,40 +107,40 @@ private static final long serialVersionUID = 0L;
   public enum Result
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    RESULT_UNSET(0),
+    UNSET(0),
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    RESULT_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>RESULT_ERROR_UNKNOWN = 2;</code>
+     * <code>ERROR_UNKNOWN = 2;</code>
      */
-    RESULT_ERROR_UNKNOWN(2),
+    ERROR_UNKNOWN(2),
     /**
-     * <code>RESULT_ERROR_EXCEEDS_MAX_FRIENDS_PER_QUERY = 3;</code>
+     * <code>ERROR_EXCEEDS_MAX_FRIENDS_PER_QUERY = 3;</code>
      */
-    RESULT_ERROR_EXCEEDS_MAX_FRIENDS_PER_QUERY(3),
+    ERROR_EXCEEDS_MAX_FRIENDS_PER_QUERY(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int RESULT_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int RESULT_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>RESULT_ERROR_UNKNOWN = 2;</code>
+     * <code>ERROR_UNKNOWN = 2;</code>
      */
-    public static final int RESULT_ERROR_UNKNOWN_VALUE = 2;
+    public static final int ERROR_UNKNOWN_VALUE = 2;
     /**
-     * <code>RESULT_ERROR_EXCEEDS_MAX_FRIENDS_PER_QUERY = 3;</code>
+     * <code>ERROR_EXCEEDS_MAX_FRIENDS_PER_QUERY = 3;</code>
      */
-    public static final int RESULT_ERROR_EXCEEDS_MAX_FRIENDS_PER_QUERY_VALUE = 3;
+    public static final int ERROR_EXCEEDS_MAX_FRIENDS_PER_QUERY_VALUE = 3;
 
 
     public final int getNumber() {
@@ -167,10 +167,10 @@ private static final long serialVersionUID = 0L;
      */
     public static Result forNumber(int value) {
       switch (value) {
-        case 0: return RESULT_UNSET;
-        case 1: return RESULT_SUCCESS;
-        case 2: return RESULT_ERROR_UNKNOWN;
-        case 3: return RESULT_ERROR_EXCEEDS_MAX_FRIENDS_PER_QUERY;
+        case 0: return UNSET;
+        case 1: return SUCCESS;
+        case 2: return ERROR_UNKNOWN;
+        case 3: return ERROR_EXCEEDS_MAX_FRIENDS_PER_QUERY;
         default: return null;
       }
     }
@@ -1552,48 +1552,48 @@ private static final long serialVersionUID = 0L;
     public enum Result
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>RESULT_UNSET = 0;</code>
+       * <code>UNSET = 0;</code>
        */
-      RESULT_UNSET(0),
+      UNSET(0),
       /**
-       * <code>RESULT_SUCCESS = 1;</code>
+       * <code>SUCCESS = 1;</code>
        */
-      RESULT_SUCCESS(1),
+      SUCCESS(1),
       /**
-       * <code>RESULT_ERROR_UNKNOWN = 2;</code>
+       * <code>ERROR_UNKNOWN = 2;</code>
        */
-      RESULT_ERROR_UNKNOWN(2),
+      ERROR_UNKNOWN(2),
       /**
-       * <code>RESULT_ERROR_STATUS_UNKNOWN = 3;</code>
+       * <code>ERROR_STATUS_UNKNOWN = 3;</code>
        */
-      RESULT_ERROR_STATUS_UNKNOWN(3),
+      ERROR_STATUS_UNKNOWN(3),
       /**
-       * <code>RESULT_ERROR_STALE_DATA = 4;</code>
+       * <code>ERROR_STALE_DATA = 4;</code>
        */
-      RESULT_ERROR_STALE_DATA(4),
+      ERROR_STALE_DATA(4),
       UNRECOGNIZED(-1),
       ;
 
       /**
-       * <code>RESULT_UNSET = 0;</code>
+       * <code>UNSET = 0;</code>
        */
-      public static final int RESULT_UNSET_VALUE = 0;
+      public static final int UNSET_VALUE = 0;
       /**
-       * <code>RESULT_SUCCESS = 1;</code>
+       * <code>SUCCESS = 1;</code>
        */
-      public static final int RESULT_SUCCESS_VALUE = 1;
+      public static final int SUCCESS_VALUE = 1;
       /**
-       * <code>RESULT_ERROR_UNKNOWN = 2;</code>
+       * <code>ERROR_UNKNOWN = 2;</code>
        */
-      public static final int RESULT_ERROR_UNKNOWN_VALUE = 2;
+      public static final int ERROR_UNKNOWN_VALUE = 2;
       /**
-       * <code>RESULT_ERROR_STATUS_UNKNOWN = 3;</code>
+       * <code>ERROR_STATUS_UNKNOWN = 3;</code>
        */
-      public static final int RESULT_ERROR_STATUS_UNKNOWN_VALUE = 3;
+      public static final int ERROR_STATUS_UNKNOWN_VALUE = 3;
       /**
-       * <code>RESULT_ERROR_STALE_DATA = 4;</code>
+       * <code>ERROR_STALE_DATA = 4;</code>
        */
-      public static final int RESULT_ERROR_STALE_DATA_VALUE = 4;
+      public static final int ERROR_STALE_DATA_VALUE = 4;
 
 
       public final int getNumber() {
@@ -1620,11 +1620,11 @@ private static final long serialVersionUID = 0L;
        */
       public static Result forNumber(int value) {
         switch (value) {
-          case 0: return RESULT_UNSET;
-          case 1: return RESULT_SUCCESS;
-          case 2: return RESULT_ERROR_UNKNOWN;
-          case 3: return RESULT_ERROR_STATUS_UNKNOWN;
-          case 4: return RESULT_ERROR_STALE_DATA;
+          case 0: return UNSET;
+          case 1: return SUCCESS;
+          case 2: return ERROR_UNKNOWN;
+          case 3: return ERROR_STATUS_UNKNOWN;
+          case 4: return ERROR_STALE_DATA;
           default: return null;
         }
       }
@@ -1785,7 +1785,7 @@ private static final long serialVersionUID = 0L;
       if (locale_ != null) {
         output.writeMessage(2, getLocale());
       }
-      if (onlineStatus_ != POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus.ONLINESTATUS_STATUS_UNSET.getNumber()) {
+      if (onlineStatus_ != POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus.STATUS_UNSET.getNumber()) {
         output.writeEnum(3, onlineStatus_);
       }
       if (!getLastPlayedAppKeyBytes().isEmpty()) {
@@ -1808,7 +1808,7 @@ private static final long serialVersionUID = 0L;
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getLocale());
       }
-      if (onlineStatus_ != POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus.ONLINESTATUS_STATUS_UNSET.getNumber()) {
+      if (onlineStatus_ != POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus.STATUS_UNSET.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, onlineStatus_);
       }
@@ -2529,7 +2529,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (result_ != POGOProtos.Rpc.PlatformGetFriendDetailsResponse.Result.RESULT_UNSET.getNumber()) {
+    if (result_ != POGOProtos.Rpc.PlatformGetFriendDetailsResponse.Result.UNSET.getNumber()) {
       output.writeEnum(1, result_);
     }
     for (int i = 0; i < friendDetails_.size(); i++) {
@@ -2544,7 +2544,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (result_ != POGOProtos.Rpc.PlatformGetFriendDetailsResponse.Result.RESULT_UNSET.getNumber()) {
+    if (result_ != POGOProtos.Rpc.PlatformGetFriendDetailsResponse.Result.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }

@@ -107,48 +107,48 @@ private static final long serialVersionUID = 0L;
   public enum PoiCameraStepIds
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>POICAMERASTEPIDS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    POICAMERASTEPIDS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>POICAMERASTEPIDS_ENTER = 1;</code>
+     * <code>ENTER = 1;</code>
      */
-    POICAMERASTEPIDS_ENTER(1),
+    ENTER(1),
     /**
-     * <code>POICAMERASTEPIDS_RETAKE = 2;</code>
+     * <code>RETAKE = 2;</code>
      */
-    POICAMERASTEPIDS_RETAKE(2),
+    RETAKE(2),
     /**
-     * <code>POICAMERASTEPIDS_CONFIRM = 3;</code>
+     * <code>CONFIRM = 3;</code>
      */
-    POICAMERASTEPIDS_CONFIRM(3),
+    CONFIRM(3),
     /**
-     * <code>POICAMERASTEPIDS_EXIT = 4;</code>
+     * <code>EXIT = 4;</code>
      */
-    POICAMERASTEPIDS_EXIT(4),
+    EXIT(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>POICAMERASTEPIDS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int POICAMERASTEPIDS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>POICAMERASTEPIDS_ENTER = 1;</code>
+     * <code>ENTER = 1;</code>
      */
-    public static final int POICAMERASTEPIDS_ENTER_VALUE = 1;
+    public static final int ENTER_VALUE = 1;
     /**
-     * <code>POICAMERASTEPIDS_RETAKE = 2;</code>
+     * <code>RETAKE = 2;</code>
      */
-    public static final int POICAMERASTEPIDS_RETAKE_VALUE = 2;
+    public static final int RETAKE_VALUE = 2;
     /**
-     * <code>POICAMERASTEPIDS_CONFIRM = 3;</code>
+     * <code>CONFIRM = 3;</code>
      */
-    public static final int POICAMERASTEPIDS_CONFIRM_VALUE = 3;
+    public static final int CONFIRM_VALUE = 3;
     /**
-     * <code>POICAMERASTEPIDS_EXIT = 4;</code>
+     * <code>EXIT = 4;</code>
      */
-    public static final int POICAMERASTEPIDS_EXIT_VALUE = 4;
+    public static final int EXIT_VALUE = 4;
 
 
     public final int getNumber() {
@@ -175,11 +175,11 @@ private static final long serialVersionUID = 0L;
      */
     public static PoiCameraStepIds forNumber(int value) {
       switch (value) {
-        case 0: return POICAMERASTEPIDS_UNSET;
-        case 1: return POICAMERASTEPIDS_ENTER;
-        case 2: return POICAMERASTEPIDS_RETAKE;
-        case 3: return POICAMERASTEPIDS_CONFIRM;
-        case 4: return POICAMERASTEPIDS_EXIT;
+        case 0: return UNSET;
+        case 1: return ENTER;
+        case 2: return RETAKE;
+        case 3: return CONFIRM;
+        case 4: return EXIT;
         default: return null;
       }
     }
@@ -238,136 +238,136 @@ private static final long serialVersionUID = 0L;
   public enum PoiSubmissionGuiEventId
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>POISUBMISSIONGUIEVENTID_UNKNOWN = 0;</code>
+     * <code>UNKNOWN = 0;</code>
      */
-    POISUBMISSIONGUIEVENTID_UNKNOWN(0),
+    UNKNOWN(0),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_NOMINATION_ENTER = 1;</code>
+     * <code>POI_NOMINATION_ENTER = 1;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_NOMINATION_ENTER(1),
+    POI_NOMINATION_ENTER(1),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_TUTORIAL_COMPLETE = 2;</code>
+     * <code>POI_TUTORIAL_COMPLETE = 2;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_TUTORIAL_COMPLETE(2),
+    POI_TUTORIAL_COMPLETE(2),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_MAP_CHANGEDVIEW_MAP = 3;</code>
+     * <code>POI_MAP_CHANGEDVIEW_MAP = 3;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_MAP_CHANGEDVIEW_MAP(3),
+    POI_MAP_CHANGEDVIEW_MAP(3),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_MAP_CHANGEDVIEW_SATELLITE = 4;</code>
+     * <code>POI_MAP_CHANGEDVIEW_SATELLITE = 4;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_MAP_CHANGEDVIEW_SATELLITE(4),
+    POI_MAP_CHANGEDVIEW_SATELLITE(4),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_MAP_CENTER_LOCATION = 5;</code>
+     * <code>POI_MAP_CENTER_LOCATION = 5;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_MAP_CENTER_LOCATION(5),
+    POI_MAP_CENTER_LOCATION(5),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_LOCATION_SET = 6;</code>
+     * <code>POI_LOCATION_SET = 6;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_LOCATION_SET(6),
+    POI_LOCATION_SET(6),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_PHOTO_CAMERA_ENTER = 7;</code>
+     * <code>POI_PHOTO_CAMERA_ENTER = 7;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_PHOTO_CAMERA_ENTER(7),
+    POI_PHOTO_CAMERA_ENTER(7),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_PHOTO_CAMERA_EXIT = 8;</code>
+     * <code>POI_PHOTO_CAMERA_EXIT = 8;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_PHOTO_CAMERA_EXIT(8),
+    POI_PHOTO_CAMERA_EXIT(8),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_TITLE_ENTERED = 9;</code>
+     * <code>POI_TITLE_ENTERED = 9;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_TITLE_ENTERED(9),
+    POI_TITLE_ENTERED(9),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_DESCRIPTION_ENTER = 10;</code>
+     * <code>POI_DESCRIPTION_ENTER = 10;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_DESCRIPTION_ENTER(10),
+    POI_DESCRIPTION_ENTER(10),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_DETAILS_CONFIRM = 11;</code>
+     * <code>POI_DETAILS_CONFIRM = 11;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_DETAILS_CONFIRM(11),
+    POI_DETAILS_CONFIRM(11),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_SUPPORTINGINFO_ENTER = 12;</code>
+     * <code>POI_SUPPORTINGINFO_ENTER = 12;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_SUPPORTINGINFO_ENTER(12),
+    POI_SUPPORTINGINFO_ENTER(12),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_SUBMIT_BUTTON_HIT = 13;</code>
+     * <code>POI_SUBMIT_BUTTON_HIT = 13;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_SUBMIT_BUTTON_HIT(13),
+    POI_SUBMIT_BUTTON_HIT(13),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_EXIT_BUTTON_HIT = 14;</code>
+     * <code>POI_EXIT_BUTTON_HIT = 14;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_EXIT_BUTTON_HIT(14),
+    POI_EXIT_BUTTON_HIT(14),
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_NOMINATION_GUIDELINES_HIT = 15;</code>
+     * <code>POI_NOMINATION_GUIDELINES_HIT = 15;</code>
      */
-    POISUBMISSIONGUIEVENTID_POI_NOMINATION_GUIDELINES_HIT(15),
+    POI_NOMINATION_GUIDELINES_HIT(15),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>POISUBMISSIONGUIEVENTID_UNKNOWN = 0;</code>
+     * <code>UNKNOWN = 0;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_UNKNOWN_VALUE = 0;
+    public static final int UNKNOWN_VALUE = 0;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_NOMINATION_ENTER = 1;</code>
+     * <code>POI_NOMINATION_ENTER = 1;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_NOMINATION_ENTER_VALUE = 1;
+    public static final int POI_NOMINATION_ENTER_VALUE = 1;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_TUTORIAL_COMPLETE = 2;</code>
+     * <code>POI_TUTORIAL_COMPLETE = 2;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_TUTORIAL_COMPLETE_VALUE = 2;
+    public static final int POI_TUTORIAL_COMPLETE_VALUE = 2;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_MAP_CHANGEDVIEW_MAP = 3;</code>
+     * <code>POI_MAP_CHANGEDVIEW_MAP = 3;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_MAP_CHANGEDVIEW_MAP_VALUE = 3;
+    public static final int POI_MAP_CHANGEDVIEW_MAP_VALUE = 3;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_MAP_CHANGEDVIEW_SATELLITE = 4;</code>
+     * <code>POI_MAP_CHANGEDVIEW_SATELLITE = 4;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_MAP_CHANGEDVIEW_SATELLITE_VALUE = 4;
+    public static final int POI_MAP_CHANGEDVIEW_SATELLITE_VALUE = 4;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_MAP_CENTER_LOCATION = 5;</code>
+     * <code>POI_MAP_CENTER_LOCATION = 5;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_MAP_CENTER_LOCATION_VALUE = 5;
+    public static final int POI_MAP_CENTER_LOCATION_VALUE = 5;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_LOCATION_SET = 6;</code>
+     * <code>POI_LOCATION_SET = 6;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_LOCATION_SET_VALUE = 6;
+    public static final int POI_LOCATION_SET_VALUE = 6;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_PHOTO_CAMERA_ENTER = 7;</code>
+     * <code>POI_PHOTO_CAMERA_ENTER = 7;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_PHOTO_CAMERA_ENTER_VALUE = 7;
+    public static final int POI_PHOTO_CAMERA_ENTER_VALUE = 7;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_PHOTO_CAMERA_EXIT = 8;</code>
+     * <code>POI_PHOTO_CAMERA_EXIT = 8;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_PHOTO_CAMERA_EXIT_VALUE = 8;
+    public static final int POI_PHOTO_CAMERA_EXIT_VALUE = 8;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_TITLE_ENTERED = 9;</code>
+     * <code>POI_TITLE_ENTERED = 9;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_TITLE_ENTERED_VALUE = 9;
+    public static final int POI_TITLE_ENTERED_VALUE = 9;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_DESCRIPTION_ENTER = 10;</code>
+     * <code>POI_DESCRIPTION_ENTER = 10;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_DESCRIPTION_ENTER_VALUE = 10;
+    public static final int POI_DESCRIPTION_ENTER_VALUE = 10;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_DETAILS_CONFIRM = 11;</code>
+     * <code>POI_DETAILS_CONFIRM = 11;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_DETAILS_CONFIRM_VALUE = 11;
+    public static final int POI_DETAILS_CONFIRM_VALUE = 11;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_SUPPORTINGINFO_ENTER = 12;</code>
+     * <code>POI_SUPPORTINGINFO_ENTER = 12;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_SUPPORTINGINFO_ENTER_VALUE = 12;
+    public static final int POI_SUPPORTINGINFO_ENTER_VALUE = 12;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_SUBMIT_BUTTON_HIT = 13;</code>
+     * <code>POI_SUBMIT_BUTTON_HIT = 13;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_SUBMIT_BUTTON_HIT_VALUE = 13;
+    public static final int POI_SUBMIT_BUTTON_HIT_VALUE = 13;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_EXIT_BUTTON_HIT = 14;</code>
+     * <code>POI_EXIT_BUTTON_HIT = 14;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_EXIT_BUTTON_HIT_VALUE = 14;
+    public static final int POI_EXIT_BUTTON_HIT_VALUE = 14;
     /**
-     * <code>POISUBMISSIONGUIEVENTID_POI_NOMINATION_GUIDELINES_HIT = 15;</code>
+     * <code>POI_NOMINATION_GUIDELINES_HIT = 15;</code>
      */
-    public static final int POISUBMISSIONGUIEVENTID_POI_NOMINATION_GUIDELINES_HIT_VALUE = 15;
+    public static final int POI_NOMINATION_GUIDELINES_HIT_VALUE = 15;
 
 
     public final int getNumber() {
@@ -394,22 +394,22 @@ private static final long serialVersionUID = 0L;
      */
     public static PoiSubmissionGuiEventId forNumber(int value) {
       switch (value) {
-        case 0: return POISUBMISSIONGUIEVENTID_UNKNOWN;
-        case 1: return POISUBMISSIONGUIEVENTID_POI_NOMINATION_ENTER;
-        case 2: return POISUBMISSIONGUIEVENTID_POI_TUTORIAL_COMPLETE;
-        case 3: return POISUBMISSIONGUIEVENTID_POI_MAP_CHANGEDVIEW_MAP;
-        case 4: return POISUBMISSIONGUIEVENTID_POI_MAP_CHANGEDVIEW_SATELLITE;
-        case 5: return POISUBMISSIONGUIEVENTID_POI_MAP_CENTER_LOCATION;
-        case 6: return POISUBMISSIONGUIEVENTID_POI_LOCATION_SET;
-        case 7: return POISUBMISSIONGUIEVENTID_POI_PHOTO_CAMERA_ENTER;
-        case 8: return POISUBMISSIONGUIEVENTID_POI_PHOTO_CAMERA_EXIT;
-        case 9: return POISUBMISSIONGUIEVENTID_POI_TITLE_ENTERED;
-        case 10: return POISUBMISSIONGUIEVENTID_POI_DESCRIPTION_ENTER;
-        case 11: return POISUBMISSIONGUIEVENTID_POI_DETAILS_CONFIRM;
-        case 12: return POISUBMISSIONGUIEVENTID_POI_SUPPORTINGINFO_ENTER;
-        case 13: return POISUBMISSIONGUIEVENTID_POI_SUBMIT_BUTTON_HIT;
-        case 14: return POISUBMISSIONGUIEVENTID_POI_EXIT_BUTTON_HIT;
-        case 15: return POISUBMISSIONGUIEVENTID_POI_NOMINATION_GUIDELINES_HIT;
+        case 0: return UNKNOWN;
+        case 1: return POI_NOMINATION_ENTER;
+        case 2: return POI_TUTORIAL_COMPLETE;
+        case 3: return POI_MAP_CHANGEDVIEW_MAP;
+        case 4: return POI_MAP_CHANGEDVIEW_SATELLITE;
+        case 5: return POI_MAP_CENTER_LOCATION;
+        case 6: return POI_LOCATION_SET;
+        case 7: return POI_PHOTO_CAMERA_ENTER;
+        case 8: return POI_PHOTO_CAMERA_EXIT;
+        case 9: return POI_TITLE_ENTERED;
+        case 10: return POI_DESCRIPTION_ENTER;
+        case 11: return POI_DETAILS_CONFIRM;
+        case 12: return POI_SUPPORTINGINFO_ENTER;
+        case 13: return POI_SUBMIT_BUTTON_HIT;
+        case 14: return POI_EXIT_BUTTON_HIT;
+        case 15: return POI_NOMINATION_GUIDELINES_HIT;
         default: return null;
       }
     }
@@ -533,13 +533,13 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (guiEventId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiSubmissionGuiEventId.POISUBMISSIONGUIEVENTID_UNKNOWN.getNumber()) {
+    if (guiEventId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiSubmissionGuiEventId.UNKNOWN.getNumber()) {
       output.writeEnum(1, guiEventId_);
     }
-    if (imageType_ != POGOProtos.Rpc.PoiImageType.PLATFORM_POIIMAGETYPE_UNSET.getNumber()) {
+    if (imageType_ != POGOProtos.Rpc.PoiImageType.PLATFORM_POI_IMAGE_TYPE_UNSET.getNumber()) {
       output.writeEnum(2, imageType_);
     }
-    if (cameraStepId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiCameraStepIds.POICAMERASTEPIDS_UNSET.getNumber()) {
+    if (cameraStepId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiCameraStepIds.UNSET.getNumber()) {
       output.writeEnum(3, cameraStepId_);
     }
     unknownFields.writeTo(output);
@@ -551,15 +551,15 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (guiEventId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiSubmissionGuiEventId.POISUBMISSIONGUIEVENTID_UNKNOWN.getNumber()) {
+    if (guiEventId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiSubmissionGuiEventId.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, guiEventId_);
     }
-    if (imageType_ != POGOProtos.Rpc.PoiImageType.PLATFORM_POIIMAGETYPE_UNSET.getNumber()) {
+    if (imageType_ != POGOProtos.Rpc.PoiImageType.PLATFORM_POI_IMAGE_TYPE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, imageType_);
     }
-    if (cameraStepId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiCameraStepIds.POICAMERASTEPIDS_UNSET.getNumber()) {
+    if (cameraStepId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiCameraStepIds.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, cameraStepId_);
     }

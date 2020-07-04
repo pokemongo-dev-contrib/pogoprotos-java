@@ -112,40 +112,40 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    STATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>STATUS_PENDING = 1;</code>
+     * <code>PENDING = 1;</code>
      */
-    STATUS_PENDING(1),
+    PENDING(1),
     /**
-     * <code>STATUS_DECLINED = 2;</code>
+     * <code>DECLINED = 2;</code>
      */
-    STATUS_DECLINED(2),
+    DECLINED(2),
     /**
-     * <code>STATUS_CANCELLED = 3;</code>
+     * <code>CANCELLED = 3;</code>
      */
-    STATUS_CANCELLED(3),
+    CANCELLED(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int STATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>STATUS_PENDING = 1;</code>
+     * <code>PENDING = 1;</code>
      */
-    public static final int STATUS_PENDING_VALUE = 1;
+    public static final int PENDING_VALUE = 1;
     /**
-     * <code>STATUS_DECLINED = 2;</code>
+     * <code>DECLINED = 2;</code>
      */
-    public static final int STATUS_DECLINED_VALUE = 2;
+    public static final int DECLINED_VALUE = 2;
     /**
-     * <code>STATUS_CANCELLED = 3;</code>
+     * <code>CANCELLED = 3;</code>
      */
-    public static final int STATUS_CANCELLED_VALUE = 3;
+    public static final int CANCELLED_VALUE = 3;
 
 
     public final int getNumber() {
@@ -172,10 +172,10 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_UNSET;
-        case 1: return STATUS_PENDING;
-        case 2: return STATUS_DECLINED;
-        case 3: return STATUS_CANCELLED;
+        case 0: return UNSET;
+        case 1: return PENDING;
+        case 2: return DECLINED;
+        case 3: return CANCELLED;
         default: return null;
       }
     }
@@ -343,7 +343,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != POGOProtos.Rpc.PlatformIncomingFriendInviteProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.PlatformIncomingFriendInviteProto.Status.UNSET.getNumber()) {
       output.writeEnum(1, status_);
     }
     if (!getPlayerIdBytes().isEmpty()) {
@@ -364,7 +364,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != POGOProtos.Rpc.PlatformIncomingFriendInviteProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.PlatformIncomingFriendInviteProto.Status.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, status_);
     }

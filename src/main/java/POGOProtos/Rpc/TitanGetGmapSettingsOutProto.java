@@ -105,48 +105,48 @@ private static final long serialVersionUID = 0L;
   public enum Result
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    RESULT_UNSET(0),
+    UNSET(0),
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    RESULT_SUCCESS(1),
+    SUCCESS(1),
     /**
-     * <code>RESULT_ERROR_UNKNOWN = 2;</code>
+     * <code>ERROR_UNKNOWN = 2;</code>
      */
-    RESULT_ERROR_UNKNOWN(2),
+    ERROR_UNKNOWN(2),
     /**
-     * <code>RESULT_ERROR_MISSING_CONFIG = 3;</code>
+     * <code>ERROR_MISSING_CONFIG = 3;</code>
      */
-    RESULT_ERROR_MISSING_CONFIG(3),
+    ERROR_MISSING_CONFIG(3),
     /**
-     * <code>RESULT_ERROR_NO_UNIQUE_ID = 4;</code>
+     * <code>ERROR_NO_UNIQUE_ID = 4;</code>
      */
-    RESULT_ERROR_NO_UNIQUE_ID(4),
+    ERROR_NO_UNIQUE_ID(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>RESULT_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int RESULT_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>RESULT_SUCCESS = 1;</code>
+     * <code>SUCCESS = 1;</code>
      */
-    public static final int RESULT_SUCCESS_VALUE = 1;
+    public static final int SUCCESS_VALUE = 1;
     /**
-     * <code>RESULT_ERROR_UNKNOWN = 2;</code>
+     * <code>ERROR_UNKNOWN = 2;</code>
      */
-    public static final int RESULT_ERROR_UNKNOWN_VALUE = 2;
+    public static final int ERROR_UNKNOWN_VALUE = 2;
     /**
-     * <code>RESULT_ERROR_MISSING_CONFIG = 3;</code>
+     * <code>ERROR_MISSING_CONFIG = 3;</code>
      */
-    public static final int RESULT_ERROR_MISSING_CONFIG_VALUE = 3;
+    public static final int ERROR_MISSING_CONFIG_VALUE = 3;
     /**
-     * <code>RESULT_ERROR_NO_UNIQUE_ID = 4;</code>
+     * <code>ERROR_NO_UNIQUE_ID = 4;</code>
      */
-    public static final int RESULT_ERROR_NO_UNIQUE_ID_VALUE = 4;
+    public static final int ERROR_NO_UNIQUE_ID_VALUE = 4;
 
 
     public final int getNumber() {
@@ -173,11 +173,11 @@ private static final long serialVersionUID = 0L;
      */
     public static Result forNumber(int value) {
       switch (value) {
-        case 0: return RESULT_UNSET;
-        case 1: return RESULT_SUCCESS;
-        case 2: return RESULT_ERROR_UNKNOWN;
-        case 3: return RESULT_ERROR_MISSING_CONFIG;
-        case 4: return RESULT_ERROR_NO_UNIQUE_ID;
+        case 0: return UNSET;
+        case 1: return SUCCESS;
+        case 2: return ERROR_UNKNOWN;
+        case 3: return ERROR_MISSING_CONFIG;
+        case 4: return ERROR_NO_UNIQUE_ID;
         default: return null;
       }
     }
@@ -309,7 +309,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (result_ != POGOProtos.Rpc.TitanGetGmapSettingsOutProto.Result.RESULT_UNSET.getNumber()) {
+    if (result_ != POGOProtos.Rpc.TitanGetGmapSettingsOutProto.Result.UNSET.getNumber()) {
       output.writeEnum(1, result_);
     }
     if (!getGmapTemplateUrlBytes().isEmpty()) {
@@ -327,7 +327,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (result_ != POGOProtos.Rpc.TitanGetGmapSettingsOutProto.Result.RESULT_UNSET.getNumber()) {
+    if (result_ != POGOProtos.Rpc.TitanGetGmapSettingsOutProto.Result.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }

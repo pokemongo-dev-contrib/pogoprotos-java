@@ -133,48 +133,48 @@ private static final long serialVersionUID = 0L;
   public enum Status
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    STATUS_UNSET(0),
+    UNSET(0),
     /**
-     * <code>STATUS_FAILURES = 1;</code>
+     * <code>FAILURES = 1;</code>
      */
-    STATUS_FAILURES(1),
+    FAILURES(1),
     /**
-     * <code>STATUS_SUCCESS = 2;</code>
+     * <code>SUCCESS = 2;</code>
      */
-    STATUS_SUCCESS(2),
+    SUCCESS(2),
     /**
-     * <code>STATUS_MISSING_IMAGE_CONTEXTS = 3;</code>
+     * <code>MISSING_IMAGE_CONTEXTS = 3;</code>
      */
-    STATUS_MISSING_IMAGE_CONTEXTS(3),
+    MISSING_IMAGE_CONTEXTS(3),
     /**
-     * <code>STATUS_DUPLICATE_IMAGE_CONTEXTS = 4;</code>
+     * <code>DUPLICATE_IMAGE_CONTEXTS = 4;</code>
      */
-    STATUS_DUPLICATE_IMAGE_CONTEXTS(4),
+    DUPLICATE_IMAGE_CONTEXTS(4),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>STATUS_UNSET = 0;</code>
+     * <code>UNSET = 0;</code>
      */
-    public static final int STATUS_UNSET_VALUE = 0;
+    public static final int UNSET_VALUE = 0;
     /**
-     * <code>STATUS_FAILURES = 1;</code>
+     * <code>FAILURES = 1;</code>
      */
-    public static final int STATUS_FAILURES_VALUE = 1;
+    public static final int FAILURES_VALUE = 1;
     /**
-     * <code>STATUS_SUCCESS = 2;</code>
+     * <code>SUCCESS = 2;</code>
      */
-    public static final int STATUS_SUCCESS_VALUE = 2;
+    public static final int SUCCESS_VALUE = 2;
     /**
-     * <code>STATUS_MISSING_IMAGE_CONTEXTS = 3;</code>
+     * <code>MISSING_IMAGE_CONTEXTS = 3;</code>
      */
-    public static final int STATUS_MISSING_IMAGE_CONTEXTS_VALUE = 3;
+    public static final int MISSING_IMAGE_CONTEXTS_VALUE = 3;
     /**
-     * <code>STATUS_DUPLICATE_IMAGE_CONTEXTS = 4;</code>
+     * <code>DUPLICATE_IMAGE_CONTEXTS = 4;</code>
      */
-    public static final int STATUS_DUPLICATE_IMAGE_CONTEXTS_VALUE = 4;
+    public static final int DUPLICATE_IMAGE_CONTEXTS_VALUE = 4;
 
 
     public final int getNumber() {
@@ -201,11 +201,11 @@ private static final long serialVersionUID = 0L;
      */
     public static Status forNumber(int value) {
       switch (value) {
-        case 0: return STATUS_UNSET;
-        case 1: return STATUS_FAILURES;
-        case 2: return STATUS_SUCCESS;
-        case 3: return STATUS_MISSING_IMAGE_CONTEXTS;
-        case 4: return STATUS_DUPLICATE_IMAGE_CONTEXTS;
+        case 0: return UNSET;
+        case 1: return FAILURES;
+        case 2: return SUCCESS;
+        case 3: return MISSING_IMAGE_CONTEXTS;
+        case 4: return DUPLICATE_IMAGE_CONTEXTS;
         default: return null;
       }
     }
@@ -439,7 +439,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != POGOProtos.Rpc.TitanGetUploadUrlOutProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.TitanGetUploadUrlOutProto.Status.UNSET.getNumber()) {
       output.writeEnum(1, status_);
     }
     if (!getSignedUrlBytes().isEmpty()) {
@@ -463,7 +463,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != POGOProtos.Rpc.TitanGetUploadUrlOutProto.Status.STATUS_UNSET.getNumber()) {
+    if (status_ != POGOProtos.Rpc.TitanGetUploadUrlOutProto.Status.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, status_);
     }

@@ -164,10 +164,10 @@ private static final long serialVersionUID = 0L;
     if (optOutSocialGraphImport_ != false) {
       output.writeBool(1, optOutSocialGraphImport_);
     }
-    if (onlineStatusConsent_ != POGOProtos.Rpc.PlatformSocialSettings.ConsentStatus.CONSENTSTATUS_UNKNOWN.getNumber()) {
+    if (onlineStatusConsent_ != POGOProtos.Rpc.PlatformSocialSettings.ConsentStatus.UNKNOWN.getNumber()) {
       output.writeEnum(2, onlineStatusConsent_);
     }
-    if (lastPlayedDateConsent_ != POGOProtos.Rpc.PlatformSocialSettings.ConsentStatus.CONSENTSTATUS_UNKNOWN.getNumber()) {
+    if (lastPlayedDateConsent_ != POGOProtos.Rpc.PlatformSocialSettings.ConsentStatus.UNKNOWN.getNumber()) {
       output.writeEnum(3, lastPlayedDateConsent_);
     }
     unknownFields.writeTo(output);
@@ -183,11 +183,11 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(1, optOutSocialGraphImport_);
     }
-    if (onlineStatusConsent_ != POGOProtos.Rpc.PlatformSocialSettings.ConsentStatus.CONSENTSTATUS_UNKNOWN.getNumber()) {
+    if (onlineStatusConsent_ != POGOProtos.Rpc.PlatformSocialSettings.ConsentStatus.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, onlineStatusConsent_);
     }
-    if (lastPlayedDateConsent_ != POGOProtos.Rpc.PlatformSocialSettings.ConsentStatus.CONSENTSTATUS_UNKNOWN.getNumber()) {
+    if (lastPlayedDateConsent_ != POGOProtos.Rpc.PlatformSocialSettings.ConsentStatus.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, lastPlayedDateConsent_);
     }

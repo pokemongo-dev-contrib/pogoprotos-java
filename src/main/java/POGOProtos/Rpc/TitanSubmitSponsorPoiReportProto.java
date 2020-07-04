@@ -209,7 +209,7 @@ private static final long serialVersionUID = 0L;
     if (!getPoiIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, poiId_);
     }
-    if (invalidReason_ != POGOProtos.Rpc.SponsorPoiInvalidReason.PLATFORM_SPONSORPOIINVALIDREASON_SPONSOR_POI_REASON_UNSPECIFIED.getNumber()) {
+    if (invalidReason_ != POGOProtos.Rpc.SponsorPoiInvalidReason.PLATFORM_SPONSOR_POI_INVALID_REASON_SPONSOR_POI_REASON_UNSPECIFIED.getNumber()) {
       output.writeEnum(2, invalidReason_);
     }
     if (!getAdditionalDetailsBytes().isEmpty()) {
@@ -227,7 +227,7 @@ private static final long serialVersionUID = 0L;
     if (!getPoiIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, poiId_);
     }
-    if (invalidReason_ != POGOProtos.Rpc.SponsorPoiInvalidReason.PLATFORM_SPONSORPOIINVALIDREASON_SPONSOR_POI_REASON_UNSPECIFIED.getNumber()) {
+    if (invalidReason_ != POGOProtos.Rpc.SponsorPoiInvalidReason.PLATFORM_SPONSOR_POI_INVALID_REASON_SPONSOR_POI_REASON_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, invalidReason_);
     }

@@ -9,32 +9,32 @@ package POGOProtos.Rpc;
 public enum PoiImageType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>PLATFORM_POIIMAGETYPE_UNSET = 0;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_UNSET = 0;</code>
    */
-  PLATFORM_POIIMAGETYPE_UNSET(0),
+  PLATFORM_POI_IMAGE_TYPE_UNSET(0),
   /**
-   * <code>PLATFORM_POIIMAGETYPE_MAIN = 1;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_MAIN = 1;</code>
    */
-  PLATFORM_POIIMAGETYPE_MAIN(1),
+  PLATFORM_POI_IMAGE_TYPE_MAIN(1),
   /**
-   * <code>PLATFORM_POIIMAGETYPE_SURROUNDING = 2;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_SURROUNDING = 2;</code>
    */
-  PLATFORM_POIIMAGETYPE_SURROUNDING(2),
+  PLATFORM_POI_IMAGE_TYPE_SURROUNDING(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>PLATFORM_POIIMAGETYPE_UNSET = 0;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_UNSET = 0;</code>
    */
-  public static final int PLATFORM_POIIMAGETYPE_UNSET_VALUE = 0;
+  public static final int PLATFORM_POI_IMAGE_TYPE_UNSET_VALUE = 0;
   /**
-   * <code>PLATFORM_POIIMAGETYPE_MAIN = 1;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_MAIN = 1;</code>
    */
-  public static final int PLATFORM_POIIMAGETYPE_MAIN_VALUE = 1;
+  public static final int PLATFORM_POI_IMAGE_TYPE_MAIN_VALUE = 1;
   /**
-   * <code>PLATFORM_POIIMAGETYPE_SURROUNDING = 2;</code>
+   * <code>PLATFORM_POI_IMAGE_TYPE_SURROUNDING = 2;</code>
    */
-  public static final int PLATFORM_POIIMAGETYPE_SURROUNDING_VALUE = 2;
+  public static final int PLATFORM_POI_IMAGE_TYPE_SURROUNDING_VALUE = 2;
 
 
   public final int getNumber() {
@@ -61,9 +61,9 @@ public enum PoiImageType
    */
   public static PoiImageType forNumber(int value) {
     switch (value) {
-      case 0: return PLATFORM_POIIMAGETYPE_UNSET;
-      case 1: return PLATFORM_POIIMAGETYPE_MAIN;
-      case 2: return PLATFORM_POIIMAGETYPE_SURROUNDING;
+      case 0: return PLATFORM_POI_IMAGE_TYPE_UNSET;
+      case 1: return PLATFORM_POI_IMAGE_TYPE_MAIN;
+      case 2: return PLATFORM_POI_IMAGE_TYPE_SURROUNDING;
       default: return null;
     }
   }
@@ -90,7 +90,7 @@ public enum PoiImageType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(122);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(114);
   }
 
   private static final PoiImageType[] VALUES = values();
