@@ -32,8 +32,17 @@ public interface PlatformDownloadSettingsResponseProtoOrBuilder extends
       getSha1Bytes();
 
   /**
-   * <code>bytes values = 3;</code>
+   * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
+   * @return Whether the values field is set.
+   */
+  boolean hasValues();
+  /**
+   * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
    * @return The values.
    */
-  com.google.protobuf.ByteString getValues();
+  POGOProtos.Rpc.GlobalSettingsProto getValues();
+  /**
+   * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
+   */
+  POGOProtos.Rpc.GlobalSettingsProtoOrBuilder getValuesOrBuilder();
 }

@@ -18,7 +18,6 @@ private static final long serialVersionUID = 0L;
   private PlatformDownloadSettingsResponseProto() {
     error_ = "";
     sha1_ = "";
-    values_ = com.google.protobuf.ByteString.EMPTY;
   }
 
   @java.lang.Override
@@ -64,8 +63,16 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 26: {
+            POGOProtos.Rpc.GlobalSettingsProto.Builder subBuilder = null;
+            if (values_ != null) {
+              subBuilder = values_.toBuilder();
+            }
+            values_ = input.readMessage(POGOProtos.Rpc.GlobalSettingsProto.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(values_);
+              values_ = subBuilder.buildPartial();
+            }
 
-            values_ = input.readBytes();
             break;
           }
           default: {
@@ -173,13 +180,26 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int VALUES_FIELD_NUMBER = 3;
-  private com.google.protobuf.ByteString values_;
+  private POGOProtos.Rpc.GlobalSettingsProto values_;
   /**
-   * <code>bytes values = 3;</code>
+   * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
+   * @return Whether the values field is set.
+   */
+  public boolean hasValues() {
+    return values_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
    * @return The values.
    */
-  public com.google.protobuf.ByteString getValues() {
-    return values_;
+  public POGOProtos.Rpc.GlobalSettingsProto getValues() {
+    return values_ == null ? POGOProtos.Rpc.GlobalSettingsProto.getDefaultInstance() : values_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
+   */
+  public POGOProtos.Rpc.GlobalSettingsProtoOrBuilder getValuesOrBuilder() {
+    return getValues();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -202,8 +222,8 @@ private static final long serialVersionUID = 0L;
     if (!getSha1Bytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, sha1_);
     }
-    if (!values_.isEmpty()) {
-      output.writeBytes(3, values_);
+    if (values_ != null) {
+      output.writeMessage(3, getValues());
     }
     unknownFields.writeTo(output);
   }
@@ -220,9 +240,9 @@ private static final long serialVersionUID = 0L;
     if (!getSha1Bytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, sha1_);
     }
-    if (!values_.isEmpty()) {
+    if (values_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(3, values_);
+        .computeMessageSize(3, getValues());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -243,8 +263,11 @@ private static final long serialVersionUID = 0L;
         .equals(other.getError())) return false;
     if (!getSha1()
         .equals(other.getSha1())) return false;
-    if (!getValues()
-        .equals(other.getValues())) return false;
+    if (hasValues() != other.hasValues()) return false;
+    if (hasValues()) {
+      if (!getValues()
+          .equals(other.getValues())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -260,8 +283,10 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getError().hashCode();
     hash = (37 * hash) + SHA1_FIELD_NUMBER;
     hash = (53 * hash) + getSha1().hashCode();
-    hash = (37 * hash) + VALUES_FIELD_NUMBER;
-    hash = (53 * hash) + getValues().hashCode();
+    if (hasValues()) {
+      hash = (37 * hash) + VALUES_FIELD_NUMBER;
+      hash = (53 * hash) + getValues().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -399,8 +424,12 @@ private static final long serialVersionUID = 0L;
 
       sha1_ = "";
 
-      values_ = com.google.protobuf.ByteString.EMPTY;
-
+      if (valuesBuilder_ == null) {
+        values_ = null;
+      } else {
+        values_ = null;
+        valuesBuilder_ = null;
+      }
       return this;
     }
 
@@ -429,7 +458,11 @@ private static final long serialVersionUID = 0L;
       POGOProtos.Rpc.PlatformDownloadSettingsResponseProto result = new POGOProtos.Rpc.PlatformDownloadSettingsResponseProto(this);
       result.error_ = error_;
       result.sha1_ = sha1_;
-      result.values_ = values_;
+      if (valuesBuilder_ == null) {
+        result.values_ = values_;
+      } else {
+        result.values_ = valuesBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -486,8 +519,8 @@ private static final long serialVersionUID = 0L;
         sha1_ = other.sha1_;
         onChanged();
       }
-      if (other.getValues() != com.google.protobuf.ByteString.EMPTY) {
-        setValues(other.getValues());
+      if (other.hasValues()) {
+        mergeValues(other.getValues());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -670,37 +703,123 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.google.protobuf.ByteString values_ = com.google.protobuf.ByteString.EMPTY;
+    private POGOProtos.Rpc.GlobalSettingsProto values_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.GlobalSettingsProto, POGOProtos.Rpc.GlobalSettingsProto.Builder, POGOProtos.Rpc.GlobalSettingsProtoOrBuilder> valuesBuilder_;
     /**
-     * <code>bytes values = 3;</code>
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
+     * @return Whether the values field is set.
+     */
+    public boolean hasValues() {
+      return valuesBuilder_ != null || values_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      * @return The values.
      */
-    public com.google.protobuf.ByteString getValues() {
-      return values_;
+    public POGOProtos.Rpc.GlobalSettingsProto getValues() {
+      if (valuesBuilder_ == null) {
+        return values_ == null ? POGOProtos.Rpc.GlobalSettingsProto.getDefaultInstance() : values_;
+      } else {
+        return valuesBuilder_.getMessage();
+      }
     }
     /**
-     * <code>bytes values = 3;</code>
-     * @param value The values to set.
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      */
-    public Builder setValues(com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      values_ = value;
-      onChanged();
+    public Builder setValues(POGOProtos.Rpc.GlobalSettingsProto value) {
+      if (valuesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        values_ = value;
+        onChanged();
+      } else {
+        valuesBuilder_.setMessage(value);
+      }
+
       return this;
     }
     /**
-     * <code>bytes values = 3;</code>
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
+     */
+    public Builder setValues(
+        POGOProtos.Rpc.GlobalSettingsProto.Builder builderForValue) {
+      if (valuesBuilder_ == null) {
+        values_ = builderForValue.build();
+        onChanged();
+      } else {
+        valuesBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
+     */
+    public Builder mergeValues(POGOProtos.Rpc.GlobalSettingsProto value) {
+      if (valuesBuilder_ == null) {
+        if (values_ != null) {
+          values_ =
+            POGOProtos.Rpc.GlobalSettingsProto.newBuilder(values_).mergeFrom(value).buildPartial();
+        } else {
+          values_ = value;
+        }
+        onChanged();
+      } else {
+        valuesBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      */
     public Builder clearValues() {
-      
-      values_ = getDefaultInstance().getValues();
-      onChanged();
+      if (valuesBuilder_ == null) {
+        values_ = null;
+        onChanged();
+      } else {
+        values_ = null;
+        valuesBuilder_ = null;
+      }
+
       return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
+     */
+    public POGOProtos.Rpc.GlobalSettingsProto.Builder getValuesBuilder() {
+      
+      onChanged();
+      return getValuesFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
+     */
+    public POGOProtos.Rpc.GlobalSettingsProtoOrBuilder getValuesOrBuilder() {
+      if (valuesBuilder_ != null) {
+        return valuesBuilder_.getMessageOrBuilder();
+      } else {
+        return values_ == null ?
+            POGOProtos.Rpc.GlobalSettingsProto.getDefaultInstance() : values_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.GlobalSettingsProto, POGOProtos.Rpc.GlobalSettingsProto.Builder, POGOProtos.Rpc.GlobalSettingsProtoOrBuilder> 
+        getValuesFieldBuilder() {
+      if (valuesBuilder_ == null) {
+        valuesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.GlobalSettingsProto, POGOProtos.Rpc.GlobalSettingsProto.Builder, POGOProtos.Rpc.GlobalSettingsProtoOrBuilder>(
+                getValues(),
+                getParentForChildren(),
+                isClean());
+        values_ = null;
+      }
+      return valuesBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
