@@ -66,4 +66,45 @@ public interface RaidClientSettingsOrBuilder extends
    * @return The maxRemotePlayersPerLobby.
    */
   int getMaxRemotePlayersPerLobby();
+
+  /**
+   * <code>int64 invite_cooldown_duration_millis = 11;</code>
+   * @return The inviteCooldownDurationMillis.
+   */
+  long getInviteCooldownDurationMillis();
+
+  /**
+   * <code>int32 max_num_friend_invites_per_action = 12;</code>
+   * @return The maxNumFriendInvitesPerAction.
+   */
+  int getMaxNumFriendInvitesPerAction();
+
+  /**
+   * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+   * @return A list containing the unsupportedRaidLevelsForFriendInvites.
+   */
+  java.util.List<POGOProtos.Enums.RaidLevel> getUnsupportedRaidLevelsForFriendInvitesList();
+  /**
+   * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+   * @return The count of unsupportedRaidLevelsForFriendInvites.
+   */
+  int getUnsupportedRaidLevelsForFriendInvitesCount();
+  /**
+   * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+   * @param index The index of the element to return.
+   * @return The unsupportedRaidLevelsForFriendInvites at the given index.
+   */
+  POGOProtos.Enums.RaidLevel getUnsupportedRaidLevelsForFriendInvites(int index);
+  /**
+   * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+   * @return A list containing the enum numeric values on the wire for unsupportedRaidLevelsForFriendInvites.
+   */
+  java.util.List<java.lang.Integer>
+  getUnsupportedRaidLevelsForFriendInvitesValueList();
+  /**
+   * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of unsupportedRaidLevelsForFriendInvites at the given index.
+   */
+  int getUnsupportedRaidLevelsForFriendInvitesValue(int index);
 }

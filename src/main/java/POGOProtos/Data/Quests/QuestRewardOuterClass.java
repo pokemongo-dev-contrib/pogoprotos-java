@@ -20,6 +20,11 @@ public final class QuestRewardOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_POGOProtos_Data_Quests_QuestReward_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_POGOProtos_Data_Quests_QuestReward_StickerReward_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_POGOProtos_Data_Quests_QuestReward_StickerReward_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_POGOProtos_Data_Quests_QuestReward_ItemReward_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -47,7 +52,7 @@ public final class QuestRewardOuterClass {
       "to\022\026POGOProtos.Data.Quests\032$POGOProtos/D" +
       "ata/PokemonDisplay.proto\032 POGOProtos/Enu" +
       "ms/PokemonId.proto\032&POGOProtos/Inventory" +
-      "/Item/ItemId.proto\"\216\010\n\013QuestReward\0226\n\004ty" +
+      "/Item/ItemId.proto\"\363\010\n\013QuestReward\0226\n\004ty" +
       "pe\030\001 \001(\0162(.POGOProtos.Data.Quests.QuestR" +
       "eward.Type\022\r\n\003exp\030\002 \001(\005H\000\022>\n\004item\030\003 \001(\0132" +
       "..POGOProtos.Data.Quests.QuestReward.Ite" +
@@ -57,23 +62,26 @@ public final class QuestRewardOuterClass {
       "e_id\030\006 \001(\tH\000\022\033\n\021quest_template_id\030\007 \001(\tH" +
       "\000\022W\n\021pokemon_encounter\030\010 \001(\0132:.POGOProto" +
       "s.Data.Quests.QuestReward.PokemonEncount" +
-      "erRewardH\000\022\022\n\010pokecoin\030\t \001(\005H\000\022\024\n\nsticke" +
-      "r_id\030\014 \001(\tH\000\032M\n\nItemReward\022/\n\004item\030\001 \001(\016" +
-      "2!.POGOProtos.Inventory.Item.ItemId\022\016\n\006a" +
-      "mount\030\002 \001(\005\032U\n\022PokemonCandyReward\022/\n\npok" +
-      "emon_id\030\001 \001(\0162\033.POGOProtos.Enums.Pokemon" +
-      "Id\022\016\n\006amount\030\002 \001(\005\032\223\002\n\026PokemonEncounterR" +
-      "eward\0221\n\npokemon_id\030\001 \001(\0162\033.POGOProtos.E" +
-      "nums.PokemonIdH\000\0223\n)use_quest_pokemon_en" +
-      "counter_distribuition\030\002 \001(\010H\000\0228\n\017pokemon" +
-      "_display\030\003 \001(\0132\037.POGOProtos.Data.Pokemon" +
-      "Display\022\027\n\017is_hidden_ditto\030\004 \001(\010\0226\n\rditt" +
-      "o_display\030\005 \001(\0132\037.POGOProtos.Data.Pokemo" +
-      "nDisplayB\006\n\004Type\"\226\001\n\004Type\022\t\n\005UNSET\020\000\022\016\n\n" +
-      "EXPERIENCE\020\001\022\010\n\004ITEM\020\002\022\014\n\010STARDUST\020\003\022\t\n\005" +
-      "CANDY\020\004\022\023\n\017AVATAR_CLOTHING\020\005\022\t\n\005QUEST\020\006\022" +
-      "\025\n\021POKEMON_ENCOUNTER\020\007\022\014\n\010POKECOIN\020\010\022\013\n\007" +
-      "STICKER\020\013B\010\n\006RewardB\002P\001b\006proto3"
+      "erRewardH\000\022\022\n\010pokecoin\030\t \001(\005H\000\022D\n\007sticke" +
+      "r\030\014 \001(\01321.POGOProtos.Data.Quests.QuestRe" +
+      "ward.StickerRewardH\000\0323\n\rStickerReward\022\022\n" +
+      "\nsticker_id\030\001 \001(\t\022\016\n\006amount\030\002 \001(\005\032M\n\nIte" +
+      "mReward\022/\n\004item\030\001 \001(\0162!.POGOProtos.Inven" +
+      "tory.Item.ItemId\022\016\n\006amount\030\002 \001(\005\032U\n\022Poke" +
+      "monCandyReward\022/\n\npokemon_id\030\001 \001(\0162\033.POG" +
+      "OProtos.Enums.PokemonId\022\016\n\006amount\030\002 \001(\005\032" +
+      "\223\002\n\026PokemonEncounterReward\0221\n\npokemon_id" +
+      "\030\001 \001(\0162\033.POGOProtos.Enums.PokemonIdH\000\0223\n" +
+      ")use_quest_pokemon_encounter_distribuiti" +
+      "on\030\002 \001(\010H\000\0228\n\017pokemon_display\030\003 \001(\0132\037.PO" +
+      "GOProtos.Data.PokemonDisplay\022\027\n\017is_hidde" +
+      "n_ditto\030\004 \001(\010\0226\n\rditto_display\030\005 \001(\0132\037.P" +
+      "OGOProtos.Data.PokemonDisplayB\006\n\004Type\"\226\001" +
+      "\n\004Type\022\t\n\005UNSET\020\000\022\016\n\nEXPERIENCE\020\001\022\010\n\004ITE" +
+      "M\020\002\022\014\n\010STARDUST\020\003\022\t\n\005CANDY\020\004\022\023\n\017AVATAR_C" +
+      "LOTHING\020\005\022\t\n\005QUEST\020\006\022\025\n\021POKEMON_ENCOUNTE" +
+      "R\020\007\022\014\n\010POKECOIN\020\010\022\013\n\007STICKER\020\013B\010\n\006Reward" +
+      "B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -87,21 +95,27 @@ public final class QuestRewardOuterClass {
     internal_static_POGOProtos_Data_Quests_QuestReward_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Quests_QuestReward_descriptor,
-        new java.lang.String[] { "Type", "Exp", "Item", "Stardust", "Candy", "AvatarTemplateId", "QuestTemplateId", "PokemonEncounter", "Pokecoin", "StickerId", "Reward", });
-    internal_static_POGOProtos_Data_Quests_QuestReward_ItemReward_descriptor =
+        new java.lang.String[] { "Type", "Exp", "Item", "Stardust", "Candy", "AvatarTemplateId", "QuestTemplateId", "PokemonEncounter", "Pokecoin", "Sticker", "Reward", });
+    internal_static_POGOProtos_Data_Quests_QuestReward_StickerReward_descriptor =
       internal_static_POGOProtos_Data_Quests_QuestReward_descriptor.getNestedTypes().get(0);
+    internal_static_POGOProtos_Data_Quests_QuestReward_StickerReward_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_POGOProtos_Data_Quests_QuestReward_StickerReward_descriptor,
+        new java.lang.String[] { "StickerId", "Amount", });
+    internal_static_POGOProtos_Data_Quests_QuestReward_ItemReward_descriptor =
+      internal_static_POGOProtos_Data_Quests_QuestReward_descriptor.getNestedTypes().get(1);
     internal_static_POGOProtos_Data_Quests_QuestReward_ItemReward_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Quests_QuestReward_ItemReward_descriptor,
         new java.lang.String[] { "Item", "Amount", });
     internal_static_POGOProtos_Data_Quests_QuestReward_PokemonCandyReward_descriptor =
-      internal_static_POGOProtos_Data_Quests_QuestReward_descriptor.getNestedTypes().get(1);
+      internal_static_POGOProtos_Data_Quests_QuestReward_descriptor.getNestedTypes().get(2);
     internal_static_POGOProtos_Data_Quests_QuestReward_PokemonCandyReward_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Quests_QuestReward_PokemonCandyReward_descriptor,
         new java.lang.String[] { "PokemonId", "Amount", });
     internal_static_POGOProtos_Data_Quests_QuestReward_PokemonEncounterReward_descriptor =
-      internal_static_POGOProtos_Data_Quests_QuestReward_descriptor.getNestedTypes().get(2);
+      internal_static_POGOProtos_Data_Quests_QuestReward_descriptor.getNestedTypes().get(3);
     internal_static_POGOProtos_Data_Quests_QuestReward_PokemonEncounterReward_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Quests_QuestReward_PokemonEncounterReward_descriptor,

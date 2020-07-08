@@ -31,12 +31,12 @@ public final class VsSeekerStartMatchmakingResponseOuterClass {
       "\nFPOGOProtos/Networking/Responses/VsSeek" +
       "erStartMatchmakingResponse.proto\022\037POGOPr" +
       "otos.Networking.Responses\032,POGOProtos/Da" +
-      "ta/Combat/CombatChallenge.proto\"\305\004\n VsSe" +
+      "ta/Combat/CombatChallenge.proto\"\337\004\n VsSe" +
       "ekerStartMatchmakingResponse\022X\n\006result\030\001" +
       " \001(\0162H.POGOProtos.Networking.Responses.V" +
       "sSeekerStartMatchmakingResponse.Result\022:" +
       "\n\tchallenge\030\002 \001(\0132\'.POGOProtos.Data.Comb" +
-      "at.CombatChallenge\022\020\n\010queue_id\030\003 \001(\t\"\370\002\n" +
+      "at.CombatChallenge\022\020\n\010queue_id\030\003 \001(\t\"\222\003\n" +
       "\006Result\022\t\n\005UNSET\020\000\022\032\n\026SUCCESS_OPPONENT_F" +
       "OUND\020\001\022\022\n\016SUCCESS_QUEUED\020\002\022\037\n\033ERROR_NO_B" +
       "ATTLE_PASSES_LEFT\020\003\022\032\n\026ERROR_ALREADY_IN_" +
@@ -46,7 +46,8 @@ public final class VsSeekerStartMatchmakingResponseOuterClass {
       "_POKEMON_LINEUP_INELIGIBLE_FOR_LEAGUE\020\010\022" +
       "!\n\035ERROR_VS_SEEKER_NOT_ACTIVATED\020\t\022!\n\035ER" +
       "ROR_TEMPORARILY_UNAVAILABLE\020\n\022\030\n\024ERROR_E" +
-      "XCEEDED_LIMIT\020\013B\002P\001b\006proto3"
+      "XCEEDED_LIMIT\020\013\022\030\n\024ERROR_QUEUE_TOO_FULL\020" +
+      "\014B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -29,9 +29,10 @@ public final class SocialOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#POGOProtos/Data/Social/Social.proto\022\026P" +
-      "OGOProtos.Data.Social\"G\n\006Social\"=\n\006AppKe" +
-      "y\022\013\n\007INVALID\020\000\022\013\n\007INGRESS\020\001\022\014\n\010HOLOHOLO\020" +
-      "\002\022\013\n\007LEXICON\020\003B\002P\001b\006proto3"
+      "OGOProtos.Data.Social\"_\n\006Social\"U\n\006AppKe" +
+      "y\022\013\n\007INVALID\020\000\022\023\n\017INGRESS_DELETED\020\001\022\024\n\020H" +
+      "OLOHOLO_DELETED\020\002\022\023\n\017LEXICON_DELETED\020\003B\002" +
+      "P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

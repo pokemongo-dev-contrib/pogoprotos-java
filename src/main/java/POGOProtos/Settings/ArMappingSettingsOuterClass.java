@@ -29,7 +29,7 @@ public final class ArMappingSettingsOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n+POGOProtos/Settings/ArMappingSettings." +
-      "proto\022\023POGOProtos.Settings\"\370\003\n\021ArMapping" +
+      "proto\022\023POGOProtos.Settings\"\232\004\n\021ArMapping" +
       "Settings\022 \n\030min_hours_between_prompt\030\001 \001" +
       "(\005\022\036\n\026max_video_time_seconds\030\002 \001(\005\022\"\n\032pr" +
       "eview_video_bitrate_kbps\030\003 \001(\005\022!\n\031previe" +
@@ -42,7 +42,8 @@ public final class ArMappingSettingsOuterClass {
       "rdk_desired_accuracy_mm\030\013 \001(\005\022\037\n\027ardk_up" +
       "date_distance_mm\030\014 \001(\005\022$\n\034max_pending_up" +
       "load_kilobytes\030\r \001(\005\022\037\n\027enable_sponsor_p" +
-      "oi_scan\030\016 \001(\010B\002P\001b\006proto3"
+      "oi_scan\030\016 \001(\010\022 \n\030min_disk_space_needed_m" +
+      "b\030\017 \001(\005B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -53,7 +54,7 @@ public final class ArMappingSettingsOuterClass {
     internal_static_POGOProtos_Settings_ArMappingSettings_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Settings_ArMappingSettings_descriptor,
-        new java.lang.String[] { "MinHoursBetweenPrompt", "MaxVideoTimeSeconds", "PreviewVideoBitrateKbps", "PreviewVideoDeadlineMs", "ResearchVideoBitrateKbps", "ResearchVideoDeadlineMs", "MinVideoTimeSeconds", "PreviewFrameRateFps", "PreviewFramesToJump", "MaxUploadChunkRejectedCount", "ArdkDesiredAccuracyMm", "ArdkUpdateDistanceMm", "MaxPendingUploadKilobytes", "EnableSponsorPoiScan", });
+        new java.lang.String[] { "MinHoursBetweenPrompt", "MaxVideoTimeSeconds", "PreviewVideoBitrateKbps", "PreviewVideoDeadlineMs", "ResearchVideoBitrateKbps", "ResearchVideoDeadlineMs", "MinVideoTimeSeconds", "PreviewFrameRateFps", "PreviewFramesToJump", "MaxUploadChunkRejectedCount", "ArdkDesiredAccuracyMm", "ArdkUpdateDistanceMm", "MaxPendingUploadKilobytes", "EnableSponsorPoiScan", "MinDiskSpaceNeededMb", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

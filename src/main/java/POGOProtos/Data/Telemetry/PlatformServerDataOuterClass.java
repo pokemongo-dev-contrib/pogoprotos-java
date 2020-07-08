@@ -30,11 +30,10 @@ public final class PlatformServerDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n2POGOProtos/Data/Telemetry/PlatformServ" +
       "erData.proto\022\031POGOProtos.Data.Telemetry\"" +
-      "\236\001\n\022PlatformServerData\022\017\n\007user_id\030\001 \001(\t\022" +
+      "\206\001\n\022PlatformServerData\022\017\n\007user_id\030\001 \001(\t\022" +
       "\024\n\014telemetry_id\030\002 \001(\t\022\022\n\nsession_id\030\003 \001(" +
-      "\t\022\026\n\016experiment_ids\030\004 \003(\005\022\030\n\020event_reque" +
-      "st_id\030\005 \001(\t\022\033\n\023server_timestamp_ms\030\006 \001(\003" +
-      "B\002P\001b\006proto3"
+      "\t\022\030\n\020event_request_id\030\004 \001(\t\022\033\n\023server_ti" +
+      "mestamp_ms\030\005 \001(\003B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -45,7 +44,7 @@ public final class PlatformServerDataOuterClass {
     internal_static_POGOProtos_Data_Telemetry_PlatformServerData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Telemetry_PlatformServerData_descriptor,
-        new java.lang.String[] { "UserId", "TelemetryId", "SessionId", "ExperimentIds", "EventRequestId", "ServerTimestampMs", });
+        new java.lang.String[] { "UserId", "TelemetryId", "SessionId", "EventRequestId", "ServerTimestampMs", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

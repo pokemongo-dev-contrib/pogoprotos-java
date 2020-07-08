@@ -101,6 +101,11 @@ private static final long serialVersionUID = 0L;
             blacklistedDeviceId_.add(s);
             break;
           }
+          case 72: {
+
+            isWhitelistedUser_ = input.readBool();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -278,6 +283,16 @@ private static final long serialVersionUID = 0L;
     return blacklistedDeviceId_.getByteString(index);
   }
 
+  public static final int IS_WHITELISTED_USER_FIELD_NUMBER = 9;
+  private boolean isWhitelistedUser_;
+  /**
+   * <code>bool is_whitelisted_user = 9;</code>
+   * @return The isWhitelistedUser.
+   */
+  public boolean getIsWhitelistedUser() {
+    return isWhitelistedUser_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -315,6 +330,9 @@ private static final long serialVersionUID = 0L;
     }
     for (int i = 0; i < blacklistedDeviceId_.size(); i++) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 8, blacklistedDeviceId_.getRaw(i));
+    }
+    if (isWhitelistedUser_ != false) {
+      output.writeBool(9, isWhitelistedUser_);
     }
     unknownFields.writeTo(output);
   }
@@ -365,6 +383,10 @@ private static final long serialVersionUID = 0L;
       size += dataSize;
       size += 1 * getBlacklistedDeviceIdList().size();
     }
+    if (isWhitelistedUser_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(9, isWhitelistedUser_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -395,6 +417,8 @@ private static final long serialVersionUID = 0L;
         .equals(other.getBlacklistedOsList())) return false;
     if (!getBlacklistedDeviceIdList()
         .equals(other.getBlacklistedDeviceIdList())) return false;
+    if (getIsWhitelistedUser()
+        != other.getIsWhitelistedUser()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -428,6 +452,9 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + BLACKLISTED_DEVICE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getBlacklistedDeviceIdList().hashCode();
     }
+    hash = (37 * hash) + IS_WHITELISTED_USER_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsWhitelistedUser());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -577,6 +604,8 @@ private static final long serialVersionUID = 0L;
       bitField0_ = (bitField0_ & ~0x00000001);
       blacklistedDeviceId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       bitField0_ = (bitField0_ & ~0x00000002);
+      isWhitelistedUser_ = false;
+
       return this;
     }
 
@@ -620,6 +649,7 @@ private static final long serialVersionUID = 0L;
         bitField0_ = (bitField0_ & ~0x00000002);
       }
       result.blacklistedDeviceId_ = blacklistedDeviceId_;
+      result.isWhitelistedUser_ = isWhitelistedUser_;
       onBuilt();
       return result;
     }
@@ -705,6 +735,9 @@ private static final long serialVersionUID = 0L;
           blacklistedDeviceId_.addAll(other.blacklistedDeviceId_);
         }
         onChanged();
+      }
+      if (other.getIsWhitelistedUser() != false) {
+        setIsWhitelistedUser(other.getIsWhitelistedUser());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1154,6 +1187,36 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       ensureBlacklistedDeviceIdIsMutable();
       blacklistedDeviceId_.add(value);
+      onChanged();
+      return this;
+    }
+
+    private boolean isWhitelistedUser_ ;
+    /**
+     * <code>bool is_whitelisted_user = 9;</code>
+     * @return The isWhitelistedUser.
+     */
+    public boolean getIsWhitelistedUser() {
+      return isWhitelistedUser_;
+    }
+    /**
+     * <code>bool is_whitelisted_user = 9;</code>
+     * @param value The isWhitelistedUser to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsWhitelistedUser(boolean value) {
+      
+      isWhitelistedUser_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool is_whitelisted_user = 9;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsWhitelistedUser() {
+      
+      isWhitelistedUser_ = false;
       onChanged();
       return this;
     }

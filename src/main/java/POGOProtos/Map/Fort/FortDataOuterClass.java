@@ -54,7 +54,7 @@ public final class FortDataOuterClass {
       "Protos/Map/Fort/FortSponsor.proto\032+POGOP" +
       "rotos/Map/Fort/FortRenderingType.proto\032\'" +
       "POGOProtos/Map/Pokemon/MapPokemon.proto\032" +
-      "\"POGOProtos/Enums/EnumWrapper.proto\"\272\020\n\010" +
+      "\"POGOProtos/Enums/EnumWrapper.proto\"\317\020\n\010" +
       "FortData\022\n\n\002id\030\001 \001(\t\022\"\n\032last_modified_ti" +
       "mestamp_ms\030\002 \001(\003\022\020\n\010latitude\030\003 \001(\001\022\021\n\tlo" +
       "ngitude\030\004 \001(\001\0222\n\rowned_by_team\030\005 \001(\0162\033.P" +
@@ -85,7 +85,7 @@ public final class FortDataOuterClass {
       ".Map.Fort.FortData.PokestopIncidentDispl" +
       "ay\022P\n\021pokestop_displays\030! \003(\01325.POGOProt" +
       "os.Map.Fort.FortData.PokestopIncidentDis" +
-      "play\032\201\007\n\027PokestopIncidentDisplay\022\023\n\013inci" +
+      "play\032\226\007\n\027PokestopIncidentDisplay\022\023\n\013inci" +
       "dent_id\030\001 \001(\t\022\031\n\021incident_start_ms\030\002 \001(\003" +
       "\022\036\n\026incident_expiration_ms\030\003 \001(\003\022\025\n\rhide" +
       "_incident\030\004 \001(\010\022\032\n\022incident_completed\030\005 " +
@@ -104,10 +104,11 @@ public final class FortDataOuterClass {
       "\n\tcharacter\030\002 \001(\0162/.POGOProtos.Enums.Enu" +
       "mWrapper.InvasionCharacter\032U\n\027InvasionFi" +
       "nishedDisplay\022:\n\005style\030\001 \001(\0162+.POGOProto" +
-      "s.Enums.EnumWrapper.PokestopStyle\"_\n\023Inc" +
+      "s.Enums.EnumWrapper.PokestopStyle\"t\n\023Inc" +
       "identDisplayType\022\010\n\004NONE\020\000\022\022\n\016INVASION_G" +
       "RUNT\020\001\022\023\n\017INVASION_LEADER\020\002\022\025\n\021INVASION_" +
-      "GIOVANNI\020\003B\014\n\nMapDisplayB\002P\001b\006proto3"
+      "GIOVANNI\020\003\022\023\n\017INVASION_GRUNTB\020\004B\014\n\nMapDi" +
+      "splayB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

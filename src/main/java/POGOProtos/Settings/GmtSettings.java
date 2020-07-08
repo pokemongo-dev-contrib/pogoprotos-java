@@ -53,6 +53,11 @@ private static final long serialVersionUID = 0L;
             enableGmtdownloadV2_ = input.readBool();
             break;
           }
+          case 16: {
+
+            downloadPollPeriodMs_ = input.readInt32();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -95,6 +100,16 @@ private static final long serialVersionUID = 0L;
     return enableGmtdownloadV2_;
   }
 
+  public static final int DOWNLOAD_POLL_PERIOD_MS_FIELD_NUMBER = 2;
+  private int downloadPollPeriodMs_;
+  /**
+   * <code>int32 download_poll_period_ms = 2;</code>
+   * @return The downloadPollPeriodMs.
+   */
+  public int getDownloadPollPeriodMs() {
+    return downloadPollPeriodMs_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -112,6 +127,9 @@ private static final long serialVersionUID = 0L;
     if (enableGmtdownloadV2_ != false) {
       output.writeBool(1, enableGmtdownloadV2_);
     }
+    if (downloadPollPeriodMs_ != 0) {
+      output.writeInt32(2, downloadPollPeriodMs_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -124,6 +142,10 @@ private static final long serialVersionUID = 0L;
     if (enableGmtdownloadV2_ != false) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(1, enableGmtdownloadV2_);
+    }
+    if (downloadPollPeriodMs_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(2, downloadPollPeriodMs_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -142,6 +164,8 @@ private static final long serialVersionUID = 0L;
 
     if (getEnableGmtdownloadV2()
         != other.getEnableGmtdownloadV2()) return false;
+    if (getDownloadPollPeriodMs()
+        != other.getDownloadPollPeriodMs()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -156,6 +180,8 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + ENABLE_GMTDOWNLOAD_V2_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getEnableGmtdownloadV2());
+    hash = (37 * hash) + DOWNLOAD_POLL_PERIOD_MS_FIELD_NUMBER;
+    hash = (53 * hash) + getDownloadPollPeriodMs();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -291,6 +317,8 @@ private static final long serialVersionUID = 0L;
       super.clear();
       enableGmtdownloadV2_ = false;
 
+      downloadPollPeriodMs_ = 0;
+
       return this;
     }
 
@@ -318,6 +346,7 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Settings.GmtSettings buildPartial() {
       POGOProtos.Settings.GmtSettings result = new POGOProtos.Settings.GmtSettings(this);
       result.enableGmtdownloadV2_ = enableGmtdownloadV2_;
+      result.downloadPollPeriodMs_ = downloadPollPeriodMs_;
       onBuilt();
       return result;
     }
@@ -368,6 +397,9 @@ private static final long serialVersionUID = 0L;
       if (other == POGOProtos.Settings.GmtSettings.getDefaultInstance()) return this;
       if (other.getEnableGmtdownloadV2() != false) {
         setEnableGmtdownloadV2(other.getEnableGmtdownloadV2());
+      }
+      if (other.getDownloadPollPeriodMs() != 0) {
+        setDownloadPollPeriodMs(other.getDownloadPollPeriodMs());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -424,6 +456,36 @@ private static final long serialVersionUID = 0L;
     public Builder clearEnableGmtdownloadV2() {
       
       enableGmtdownloadV2_ = false;
+      onChanged();
+      return this;
+    }
+
+    private int downloadPollPeriodMs_ ;
+    /**
+     * <code>int32 download_poll_period_ms = 2;</code>
+     * @return The downloadPollPeriodMs.
+     */
+    public int getDownloadPollPeriodMs() {
+      return downloadPollPeriodMs_;
+    }
+    /**
+     * <code>int32 download_poll_period_ms = 2;</code>
+     * @param value The downloadPollPeriodMs to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDownloadPollPeriodMs(int value) {
+      
+      downloadPollPeriodMs_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 download_poll_period_ms = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearDownloadPollPeriodMs() {
+      
+      downloadPollPeriodMs_ = 0;
       onChanged();
       return this;
     }

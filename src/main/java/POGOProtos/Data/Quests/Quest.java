@@ -4254,6 +4254,12 @@ private static final long serialVersionUID = 0L;
      * @return The count.
      */
     int getCount();
+
+    /**
+     * <code>int32 buckets_per_day = 3;</code>
+     * @return The bucketsPerDay.
+     */
+    int getBucketsPerDay();
   }
   /**
    * Protobuf type {@code POGOProtos.Data.Quests.Quest.DailyCounter}
@@ -4310,6 +4316,11 @@ private static final long serialVersionUID = 0L;
               count_ = input.readInt32();
               break;
             }
+            case 24: {
+
+              bucketsPerDay_ = input.readInt32();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -4362,6 +4373,16 @@ private static final long serialVersionUID = 0L;
       return count_;
     }
 
+    public static final int BUCKETS_PER_DAY_FIELD_NUMBER = 3;
+    private int bucketsPerDay_;
+    /**
+     * <code>int32 buckets_per_day = 3;</code>
+     * @return The bucketsPerDay.
+     */
+    public int getBucketsPerDay() {
+      return bucketsPerDay_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -4382,6 +4403,9 @@ private static final long serialVersionUID = 0L;
       if (count_ != 0) {
         output.writeInt32(2, count_);
       }
+      if (bucketsPerDay_ != 0) {
+        output.writeInt32(3, bucketsPerDay_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -4398,6 +4422,10 @@ private static final long serialVersionUID = 0L;
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, count_);
+      }
+      if (bucketsPerDay_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, bucketsPerDay_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -4418,6 +4446,8 @@ private static final long serialVersionUID = 0L;
           != other.getWindow()) return false;
       if (getCount()
           != other.getCount()) return false;
+      if (getBucketsPerDay()
+          != other.getBucketsPerDay()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -4434,6 +4464,8 @@ private static final long serialVersionUID = 0L;
           getWindow());
       hash = (37 * hash) + COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getCount();
+      hash = (37 * hash) + BUCKETS_PER_DAY_FIELD_NUMBER;
+      hash = (53 * hash) + getBucketsPerDay();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -4571,6 +4603,8 @@ private static final long serialVersionUID = 0L;
 
         count_ = 0;
 
+        bucketsPerDay_ = 0;
+
         return this;
       }
 
@@ -4599,6 +4633,7 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Data.Quests.Quest.DailyCounter result = new POGOProtos.Data.Quests.Quest.DailyCounter(this);
         result.window_ = window_;
         result.count_ = count_;
+        result.bucketsPerDay_ = bucketsPerDay_;
         onBuilt();
         return result;
       }
@@ -4652,6 +4687,9 @@ private static final long serialVersionUID = 0L;
         }
         if (other.getCount() != 0) {
           setCount(other.getCount());
+        }
+        if (other.getBucketsPerDay() != 0) {
+          setBucketsPerDay(other.getBucketsPerDay());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -4738,6 +4776,36 @@ private static final long serialVersionUID = 0L;
       public Builder clearCount() {
         
         count_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int bucketsPerDay_ ;
+      /**
+       * <code>int32 buckets_per_day = 3;</code>
+       * @return The bucketsPerDay.
+       */
+      public int getBucketsPerDay() {
+        return bucketsPerDay_;
+      }
+      /**
+       * <code>int32 buckets_per_day = 3;</code>
+       * @param value The bucketsPerDay to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBucketsPerDay(int value) {
+        
+        bucketsPerDay_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 buckets_per_day = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBucketsPerDay() {
+        
+        bucketsPerDay_ = 0;
         onChanged();
         return this;
       }

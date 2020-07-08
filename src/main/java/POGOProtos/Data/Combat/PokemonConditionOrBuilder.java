@@ -93,5 +93,20 @@ public interface PokemonConditionOrBuilder extends
    */
   POGOProtos.Data.Combat.PokemonCondition.PokemonBanlistOrBuilder getPokemonBanlistOrBuilder();
 
+  /**
+   * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+   * @return Whether the pokemonCaughtTimestamp field is set.
+   */
+  boolean hasPokemonCaughtTimestamp();
+  /**
+   * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+   * @return The pokemonCaughtTimestamp.
+   */
+  POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp getPokemonCaughtTimestamp();
+  /**
+   * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+   */
+  POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder();
+
   public POGOProtos.Data.Combat.PokemonCondition.ConditionCase getConditionCase();
 }

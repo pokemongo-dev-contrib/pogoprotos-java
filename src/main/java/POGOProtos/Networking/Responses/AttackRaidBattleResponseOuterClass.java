@@ -31,29 +31,34 @@ public final class AttackRaidBattleResponseOuterClass {
       "\n>POGOProtos/Networking/Responses/Attack" +
       "RaidBattleResponse.proto\022\037POGOProtos.Net" +
       "working.Responses\032)POGOProtos/Data/Battl" +
-      "e/BattleUpdate.proto\"\337\002\n\030AttackRaidBattl" +
-      "eResponse\022P\n\006result\030\001 \001(\0162@.POGOProtos.N" +
-      "etworking.Responses.AttackRaidBattleResp" +
-      "onse.Result\022;\n\rbattle_update\030\002 \001(\0132$.POG" +
-      "OProtos.Data.Battle.BattleUpdate\"\263\001\n\006Res" +
-      "ult\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\027\n\023ERROR_GYM" +
-      "_NOT_FOUND\020\002\022\032\n\026ERROR_BATTLE_NOT_FOUND\020\003" +
-      "\022 \n\034ERROR_INVALID_ATTACK_ACTIONS\020\004\022\034\n\030ER" +
-      "ROR_NOT_PART_OF_BATTLE\020\005\022\034\n\030ERROR_BATTLE" +
-      "_ID_NOT_RAID\020\006B\002P\001b\006proto3"
+      "e/BattleUpdate.proto\032$POGOProtos/Data/Va" +
+      "sa/AdDetails.proto\"\230\003\n\030AttackRaidBattleR" +
+      "esponse\022P\n\006result\030\001 \001(\0162@.POGOProtos.Net" +
+      "working.Responses.AttackRaidBattleRespon" +
+      "se.Result\022;\n\rbattle_update\030\002 \001(\0132$.POGOP" +
+      "rotos.Data.Battle.BattleUpdate\0227\n\016sponso" +
+      "red_gift\030\003 \001(\0132\037.POGOProtos.Data.Vasa.Ad" +
+      "Details\"\263\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS" +
+      "\020\001\022\027\n\023ERROR_GYM_NOT_FOUND\020\002\022\032\n\026ERROR_BAT" +
+      "TLE_NOT_FOUND\020\003\022 \n\034ERROR_INVALID_ATTACK_" +
+      "ACTIONS\020\004\022\034\n\030ERROR_NOT_PART_OF_BATTLE\020\005\022" +
+      "\034\n\030ERROR_BATTLE_ID_NOT_RAID\020\006B\002P\001b\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           POGOProtos.Data.Battle.BattleUpdateOuterClass.getDescriptor(),
+          POGOProtos.Data.Vasa.AdDetailsOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Networking_Responses_AttackRaidBattleResponse_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Networking_Responses_AttackRaidBattleResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_AttackRaidBattleResponse_descriptor,
-        new java.lang.String[] { "Result", "BattleUpdate", });
+        new java.lang.String[] { "Result", "BattleUpdate", "SponsoredGift", });
     POGOProtos.Data.Battle.BattleUpdateOuterClass.getDescriptor();
+    POGOProtos.Data.Vasa.AdDetailsOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

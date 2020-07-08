@@ -32,4 +32,19 @@ public interface AttackRaidBattleResponseOrBuilder extends
    * <code>.POGOProtos.Data.Battle.BattleUpdate battle_update = 2;</code>
    */
   POGOProtos.Data.Battle.BattleUpdateOrBuilder getBattleUpdateOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+   * @return Whether the sponsoredGift field is set.
+   */
+  boolean hasSponsoredGift();
+  /**
+   * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+   * @return The sponsoredGift.
+   */
+  POGOProtos.Data.Vasa.AdDetails getSponsoredGift();
+  /**
+   * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+   */
+  POGOProtos.Data.Vasa.AdDetailsOrBuilder getSponsoredGiftOrBuilder();
 }

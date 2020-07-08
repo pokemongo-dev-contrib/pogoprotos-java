@@ -16,6 +16,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private GetAvailableSubmissionsMessage() {
+    submissionType_ = 0;
+    submissionTypes_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -38,6 +40,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -48,6 +51,35 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
+          case 8: {
+            int rawValue = input.readEnum();
+
+            submissionType_ = rawValue;
+            break;
+          }
+          case 16: {
+            int rawValue = input.readEnum();
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              submissionTypes_ = new java.util.ArrayList<java.lang.Integer>();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            submissionTypes_.add(rawValue);
+            break;
+          }
+          case 18: {
+            int length = input.readRawVarint32();
+            int oldLimit = input.pushLimit(length);
+            while(input.getBytesUntilLimit() > 0) {
+              int rawValue = input.readEnum();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                submissionTypes_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              submissionTypes_.add(rawValue);
+            }
+            input.popLimit(oldLimit);
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -63,6 +95,9 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        submissionTypes_ = java.util.Collections.unmodifiableList(submissionTypes_);
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -80,6 +115,78 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Networking.Requests.Platform.Requests.GetAvailableSubmissionsMessage.class, POGOProtos.Networking.Requests.Platform.Requests.GetAvailableSubmissionsMessage.Builder.class);
   }
 
+  public static final int SUBMISSION_TYPE_FIELD_NUMBER = 1;
+  private int submissionType_;
+  /**
+   * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 1;</code>
+   * @return The enum numeric value on the wire for submissionType.
+   */
+  public int getSubmissionTypeValue() {
+    return submissionType_;
+  }
+  /**
+   * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 1;</code>
+   * @return The submissionType.
+   */
+  public POGOProtos.Enums.PlayerSubmissionType getSubmissionType() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Enums.PlayerSubmissionType result = POGOProtos.Enums.PlayerSubmissionType.valueOf(submissionType_);
+    return result == null ? POGOProtos.Enums.PlayerSubmissionType.UNRECOGNIZED : result;
+  }
+
+  public static final int SUBMISSION_TYPES_FIELD_NUMBER = 2;
+  private java.util.List<java.lang.Integer> submissionTypes_;
+  private static final com.google.protobuf.Internal.ListAdapter.Converter<
+      java.lang.Integer, POGOProtos.Enums.PlayerSubmissionType> submissionTypes_converter_ =
+          new com.google.protobuf.Internal.ListAdapter.Converter<
+              java.lang.Integer, POGOProtos.Enums.PlayerSubmissionType>() {
+            public POGOProtos.Enums.PlayerSubmissionType convert(java.lang.Integer from) {
+              @SuppressWarnings("deprecation")
+              POGOProtos.Enums.PlayerSubmissionType result = POGOProtos.Enums.PlayerSubmissionType.valueOf(from);
+              return result == null ? POGOProtos.Enums.PlayerSubmissionType.UNRECOGNIZED : result;
+            }
+          };
+  /**
+   * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+   * @return A list containing the submissionTypes.
+   */
+  public java.util.List<POGOProtos.Enums.PlayerSubmissionType> getSubmissionTypesList() {
+    return new com.google.protobuf.Internal.ListAdapter<
+        java.lang.Integer, POGOProtos.Enums.PlayerSubmissionType>(submissionTypes_, submissionTypes_converter_);
+  }
+  /**
+   * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+   * @return The count of submissionTypes.
+   */
+  public int getSubmissionTypesCount() {
+    return submissionTypes_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+   * @param index The index of the element to return.
+   * @return The submissionTypes at the given index.
+   */
+  public POGOProtos.Enums.PlayerSubmissionType getSubmissionTypes(int index) {
+    return submissionTypes_converter_.convert(submissionTypes_.get(index));
+  }
+  /**
+   * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+   * @return A list containing the enum numeric values on the wire for submissionTypes.
+   */
+  public java.util.List<java.lang.Integer>
+  getSubmissionTypesValueList() {
+    return submissionTypes_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of submissionTypes at the given index.
+   */
+  public int getSubmissionTypesValue(int index) {
+    return submissionTypes_.get(index);
+  }
+  private int submissionTypesMemoizedSerializedSize;
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -94,6 +201,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    getSerializedSize();
+    if (submissionType_ != POGOProtos.Enums.PlayerSubmissionType.TYPE_UNSPECIFIED.getNumber()) {
+      output.writeEnum(1, submissionType_);
+    }
+    if (getSubmissionTypesList().size() > 0) {
+      output.writeUInt32NoTag(18);
+      output.writeUInt32NoTag(submissionTypesMemoizedSerializedSize);
+    }
+    for (int i = 0; i < submissionTypes_.size(); i++) {
+      output.writeEnumNoTag(submissionTypes_.get(i));
+    }
     unknownFields.writeTo(output);
   }
 
@@ -103,6 +221,22 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (submissionType_ != POGOProtos.Enums.PlayerSubmissionType.TYPE_UNSPECIFIED.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, submissionType_);
+    }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < submissionTypes_.size(); i++) {
+        dataSize += com.google.protobuf.CodedOutputStream
+          .computeEnumSizeNoTag(submissionTypes_.get(i));
+      }
+      size += dataSize;
+      if (!getSubmissionTypesList().isEmpty()) {  size += 1;
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32SizeNoTag(dataSize);
+      }submissionTypesMemoizedSerializedSize = dataSize;
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -118,6 +252,8 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Networking.Requests.Platform.Requests.GetAvailableSubmissionsMessage other = (POGOProtos.Networking.Requests.Platform.Requests.GetAvailableSubmissionsMessage) obj;
 
+    if (submissionType_ != other.submissionType_) return false;
+    if (!submissionTypes_.equals(other.submissionTypes_)) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -129,6 +265,12 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + SUBMISSION_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + submissionType_;
+    if (getSubmissionTypesCount() > 0) {
+      hash = (37 * hash) + SUBMISSION_TYPES_FIELD_NUMBER;
+      hash = (53 * hash) + submissionTypes_.hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -262,6 +404,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      submissionType_ = 0;
+
+      submissionTypes_ = java.util.Collections.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -288,6 +434,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Networking.Requests.Platform.Requests.GetAvailableSubmissionsMessage buildPartial() {
       POGOProtos.Networking.Requests.Platform.Requests.GetAvailableSubmissionsMessage result = new POGOProtos.Networking.Requests.Platform.Requests.GetAvailableSubmissionsMessage(this);
+      int from_bitField0_ = bitField0_;
+      result.submissionType_ = submissionType_;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        submissionTypes_ = java.util.Collections.unmodifiableList(submissionTypes_);
+        bitField0_ = (bitField0_ & ~0x00000001);
+      }
+      result.submissionTypes_ = submissionTypes_;
       onBuilt();
       return result;
     }
@@ -336,6 +489,19 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Networking.Requests.Platform.Requests.GetAvailableSubmissionsMessage other) {
       if (other == POGOProtos.Networking.Requests.Platform.Requests.GetAvailableSubmissionsMessage.getDefaultInstance()) return this;
+      if (other.submissionType_ != 0) {
+        setSubmissionTypeValue(other.getSubmissionTypeValue());
+      }
+      if (!other.submissionTypes_.isEmpty()) {
+        if (submissionTypes_.isEmpty()) {
+          submissionTypes_ = other.submissionTypes_;
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          ensureSubmissionTypesIsMutable();
+          submissionTypes_.addAll(other.submissionTypes_);
+        }
+        onChanged();
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -362,6 +528,199 @@ private static final long serialVersionUID = 0L;
           mergeFrom(parsedMessage);
         }
       }
+      return this;
+    }
+    private int bitField0_;
+
+    private int submissionType_ = 0;
+    /**
+     * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 1;</code>
+     * @return The enum numeric value on the wire for submissionType.
+     */
+    public int getSubmissionTypeValue() {
+      return submissionType_;
+    }
+    /**
+     * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 1;</code>
+     * @param value The enum numeric value on the wire for submissionType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubmissionTypeValue(int value) {
+      submissionType_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 1;</code>
+     * @return The submissionType.
+     */
+    public POGOProtos.Enums.PlayerSubmissionType getSubmissionType() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Enums.PlayerSubmissionType result = POGOProtos.Enums.PlayerSubmissionType.valueOf(submissionType_);
+      return result == null ? POGOProtos.Enums.PlayerSubmissionType.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 1;</code>
+     * @param value The submissionType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubmissionType(POGOProtos.Enums.PlayerSubmissionType value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      submissionType_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSubmissionType() {
+      
+      submissionType_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private java.util.List<java.lang.Integer> submissionTypes_ =
+      java.util.Collections.emptyList();
+    private void ensureSubmissionTypesIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        submissionTypes_ = new java.util.ArrayList<java.lang.Integer>(submissionTypes_);
+        bitField0_ |= 0x00000001;
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @return A list containing the submissionTypes.
+     */
+    public java.util.List<POGOProtos.Enums.PlayerSubmissionType> getSubmissionTypesList() {
+      return new com.google.protobuf.Internal.ListAdapter<
+          java.lang.Integer, POGOProtos.Enums.PlayerSubmissionType>(submissionTypes_, submissionTypes_converter_);
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @return The count of submissionTypes.
+     */
+    public int getSubmissionTypesCount() {
+      return submissionTypes_.size();
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @param index The index of the element to return.
+     * @return The submissionTypes at the given index.
+     */
+    public POGOProtos.Enums.PlayerSubmissionType getSubmissionTypes(int index) {
+      return submissionTypes_converter_.convert(submissionTypes_.get(index));
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @param index The index to set the value at.
+     * @param value The submissionTypes to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubmissionTypes(
+        int index, POGOProtos.Enums.PlayerSubmissionType value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      ensureSubmissionTypesIsMutable();
+      submissionTypes_.set(index, value.getNumber());
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @param value The submissionTypes to add.
+     * @return This builder for chaining.
+     */
+    public Builder addSubmissionTypes(POGOProtos.Enums.PlayerSubmissionType value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      ensureSubmissionTypesIsMutable();
+      submissionTypes_.add(value.getNumber());
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @param values The submissionTypes to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllSubmissionTypes(
+        java.lang.Iterable<? extends POGOProtos.Enums.PlayerSubmissionType> values) {
+      ensureSubmissionTypesIsMutable();
+      for (POGOProtos.Enums.PlayerSubmissionType value : values) {
+        submissionTypes_.add(value.getNumber());
+      }
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSubmissionTypes() {
+      submissionTypes_ = java.util.Collections.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000001);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @return A list containing the enum numeric values on the wire for submissionTypes.
+     */
+    public java.util.List<java.lang.Integer>
+    getSubmissionTypesValueList() {
+      return java.util.Collections.unmodifiableList(submissionTypes_);
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of submissionTypes at the given index.
+     */
+    public int getSubmissionTypesValue(int index) {
+      return submissionTypes_.get(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of submissionTypes at the given index.
+     * @return This builder for chaining.
+     */
+    public Builder setSubmissionTypesValue(
+        int index, int value) {
+      ensureSubmissionTypesIsMutable();
+      submissionTypes_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @param value The enum numeric value on the wire for submissionTypes to add.
+     * @return This builder for chaining.
+     */
+    public Builder addSubmissionTypesValue(int value) {
+      ensureSubmissionTypesIsMutable();
+      submissionTypes_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.PlayerSubmissionType submission_types = 2;</code>
+     * @param values The enum numeric values on the wire for submissionTypes to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllSubmissionTypesValue(
+        java.lang.Iterable<java.lang.Integer> values) {
+      ensureSubmissionTypesIsMutable();
+      for (int value : values) {
+        submissionTypes_.add(value);
+      }
+      onChanged();
       return this;
     }
     @java.lang.Override

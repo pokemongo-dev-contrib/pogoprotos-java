@@ -60,6 +60,10 @@ public enum InvasionTelemetryIds
    * <code>INVASION_GIOVANNI_FOUND = 12;</code>
    */
   INVASION_GIOVANNI_FOUND(12),
+  /**
+   * <code>INVASION_BALLOON_TAP = 13;</code>
+   */
+  INVASION_BALLOON_TAP(13),
   UNRECOGNIZED(-1),
   ;
 
@@ -115,6 +119,10 @@ public enum InvasionTelemetryIds
    * <code>INVASION_GIOVANNI_FOUND = 12;</code>
    */
   public static final int INVASION_GIOVANNI_FOUND_VALUE = 12;
+  /**
+   * <code>INVASION_BALLOON_TAP = 13;</code>
+   */
+  public static final int INVASION_BALLOON_TAP_VALUE = 13;
 
 
   public final int getNumber() {
@@ -154,6 +162,7 @@ public enum InvasionTelemetryIds
       case 10: return INVASION_RADAR_VIEW_EMPTY;
       case 11: return INVASION_DECOY_FOUND;
       case 12: return INVASION_GIOVANNI_FOUND;
+      case 13: return INVASION_BALLOON_TAP;
       default: return null;
     }
   }

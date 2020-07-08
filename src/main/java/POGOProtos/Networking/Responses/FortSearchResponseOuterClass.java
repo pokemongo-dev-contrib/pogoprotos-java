@@ -36,28 +36,31 @@ public final class FortSearchResponseOuterClass {
       "Award.proto\032\037POGOProtos/Inventory/Loot.p" +
       "roto\032+POGOProtos/Data/Badge/AwardedGymBa" +
       "dge.proto\032\"POGOProtos/Data/Gift/GiftBox." +
-      "proto\"\324\006\n\022FortSearchResponse\022J\n\006result\030\001" +
-      " \001(\0162:.POGOProtos.Networking.Responses.F" +
-      "ortSearchResponse.Result\022;\n\ritems_awarde" +
-      "d\030\002 \003(\0132$.POGOProtos.Inventory.Item.Item" +
-      "Award\022\024\n\014gems_awarded\030\003 \001(\005\0226\n\020pokemon_d" +
-      "ata_egg\030\004 \001(\0132\034.POGOProtos.Data.PokemonD" +
-      "ata\022\032\n\022experience_awarded\030\005 \001(\005\022&\n\036coold" +
-      "own_complete_timestamp_ms\030\006 \001(\003\022\"\n\032chain" +
-      "_hack_sequence_number\030\007 \001(\005\022A\n\021awarded_g" +
-      "ym_badge\030\010 \001(\0132&.POGOProtos.Data.Badge.A" +
-      "wardedGymBadge\022(\n\004loot\030\t \001(\0132\032.POGOProto" +
-      "s.Inventory.Loot\022.\n\nbonus_loot\030\n \001(\0132\032.P" +
-      "OGOProtos.Inventory.Loot\022\024\n\014raid_tickets" +
-      "\030\013 \001(\005\0223\n\017team_bonus_loot\030\014 \001(\0132\032.POGOPr" +
-      "otos.Inventory.Loot\022\017\n\007fort_id\030\r \001(\t\022<\n\017" +
-      "challenge_quest\030\016 \001(\0132#.POGOProtos.Data." +
-      "Quests.ClientQuest\022/\n\010gift_box\030\017 \001(\0132\035.P" +
-      "OGOProtos.Data.Gift.GiftBox\"\226\001\n\006Result\022\021" +
-      "\n\rNO_RESULT_SET\020\000\022\013\n\007SUCCESS\020\001\022\020\n\014OUT_OF" +
-      "_RANGE\020\002\022\026\n\022IN_COOLDOWN_PERIOD\020\003\022\022\n\016INVE" +
-      "NTORY_FULL\020\004\022\030\n\024EXCEEDED_DAILY_LIMIT\020\005\022\024" +
-      "\n\020POI_INACCESSIBLE\020\006B\002P\001b\006proto3"
+      "proto\032$POGOProtos/Data/Vasa/AdDetails.pr" +
+      "oto\"\215\007\n\022FortSearchResponse\022J\n\006result\030\001 \001" +
+      "(\0162:.POGOProtos.Networking.Responses.For" +
+      "tSearchResponse.Result\022;\n\ritems_awarded\030" +
+      "\002 \003(\0132$.POGOProtos.Inventory.Item.ItemAw" +
+      "ard\022\024\n\014gems_awarded\030\003 \001(\005\0226\n\020pokemon_dat" +
+      "a_egg\030\004 \001(\0132\034.POGOProtos.Data.PokemonDat" +
+      "a\022\032\n\022experience_awarded\030\005 \001(\005\022&\n\036cooldow" +
+      "n_complete_timestamp_ms\030\006 \001(\003\022\"\n\032chain_h" +
+      "ack_sequence_number\030\007 \001(\005\022A\n\021awarded_gym" +
+      "_badge\030\010 \001(\0132&.POGOProtos.Data.Badge.Awa" +
+      "rdedGymBadge\022(\n\004loot\030\t \001(\0132\032.POGOProtos." +
+      "Inventory.Loot\022.\n\nbonus_loot\030\n \001(\0132\032.POG" +
+      "OProtos.Inventory.Loot\022\024\n\014raid_tickets\030\013" +
+      " \001(\005\0223\n\017team_bonus_loot\030\014 \001(\0132\032.POGOProt" +
+      "os.Inventory.Loot\022\017\n\007fort_id\030\r \001(\t\022<\n\017ch" +
+      "allenge_quest\030\016 \001(\0132#.POGOProtos.Data.Qu" +
+      "ests.ClientQuest\022/\n\010gift_box\030\017 \001(\0132\035.POG" +
+      "OProtos.Data.Gift.GiftBox\0227\n\016sponsored_g" +
+      "ift\030\020 \001(\0132\037.POGOProtos.Data.Vasa.AdDetai" +
+      "ls\"\226\001\n\006Result\022\021\n\rNO_RESULT_SET\020\000\022\013\n\007SUCC" +
+      "ESS\020\001\022\020\n\014OUT_OF_RANGE\020\002\022\026\n\022IN_COOLDOWN_P" +
+      "ERIOD\020\003\022\022\n\016INVENTORY_FULL\020\004\022\030\n\024EXCEEDED_" +
+      "DAILY_LIMIT\020\005\022\024\n\020POI_INACCESSIBLE\020\006B\002P\001b" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -68,19 +71,21 @@ public final class FortSearchResponseOuterClass {
           POGOProtos.Inventory.LootOuterClass.getDescriptor(),
           POGOProtos.Data.Badge.AwardedGymBadgeOuterClass.getDescriptor(),
           POGOProtos.Data.Gift.GiftBoxOuterClass.getDescriptor(),
+          POGOProtos.Data.Vasa.AdDetailsOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Networking_Responses_FortSearchResponse_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Networking_Responses_FortSearchResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_FortSearchResponse_descriptor,
-        new java.lang.String[] { "Result", "ItemsAwarded", "GemsAwarded", "PokemonDataEgg", "ExperienceAwarded", "CooldownCompleteTimestampMs", "ChainHackSequenceNumber", "AwardedGymBadge", "Loot", "BonusLoot", "RaidTickets", "TeamBonusLoot", "FortId", "ChallengeQuest", "GiftBox", });
+        new java.lang.String[] { "Result", "ItemsAwarded", "GemsAwarded", "PokemonDataEgg", "ExperienceAwarded", "CooldownCompleteTimestampMs", "ChainHackSequenceNumber", "AwardedGymBadge", "Loot", "BonusLoot", "RaidTickets", "TeamBonusLoot", "FortId", "ChallengeQuest", "GiftBox", "SponsoredGift", });
     POGOProtos.Data.PokemonDataOuterClass.getDescriptor();
     POGOProtos.Data.Quests.ClientQuestOuterClass.getDescriptor();
     POGOProtos.Inventory.Item.ItemAwardOuterClass.getDescriptor();
     POGOProtos.Inventory.LootOuterClass.getDescriptor();
     POGOProtos.Data.Badge.AwardedGymBadgeOuterClass.getDescriptor();
     POGOProtos.Data.Gift.GiftBoxOuterClass.getDescriptor();
+    POGOProtos.Data.Vasa.AdDetailsOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

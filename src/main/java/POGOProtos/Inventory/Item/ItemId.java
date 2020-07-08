@@ -260,6 +260,10 @@ public enum ItemId
    * <code>ITEM_GLOBAL_EVENT_TICKET = 1600;</code>
    */
   ITEM_GLOBAL_EVENT_TICKET(1600),
+  /**
+   * <code>ITEM_EVENT_TICKET_PINK = 1601;</code>
+   */
+  ITEM_EVENT_TICKET_PINK(1601),
   UNRECOGNIZED(-1),
   ;
 
@@ -515,6 +519,10 @@ public enum ItemId
    * <code>ITEM_GLOBAL_EVENT_TICKET = 1600;</code>
    */
   public static final int ITEM_GLOBAL_EVENT_TICKET_VALUE = 1600;
+  /**
+   * <code>ITEM_EVENT_TICKET_PINK = 1601;</code>
+   */
+  public static final int ITEM_EVENT_TICKET_PINK_VALUE = 1601;
 
 
   public final int getNumber() {
@@ -604,6 +612,7 @@ public enum ItemId
       case 1502: return ITEM_LEADER_MAP;
       case 1503: return ITEM_GIOVANNI_MAP;
       case 1600: return ITEM_GLOBAL_EVENT_TICKET;
+      case 1601: return ITEM_EVENT_TICKET_PINK;
       default: return null;
     }
   }

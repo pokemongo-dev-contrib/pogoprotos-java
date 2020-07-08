@@ -29,20 +29,27 @@ public final class AccountSettingsOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n)POGOProtos/Settings/AccountSettings.pr" +
-      "oto\022\023POGOProtos.Settings\"6\n\017AccountSetti" +
-      "ngs\022#\n\033opt_out_social_graph_import\030\001 \001(\010" +
-      "B\002P\001b\006proto3"
+      "oto\022\023POGOProtos.Settings\032(POGOProtos/Set" +
+      "tings/SocialSettings.proto\"\335\001\n\017AccountSe" +
+      "ttings\022#\n\033opt_out_social_graph_import\030\001 " +
+      "\001(\010\022P\n\025online_status_consent\030\002 \001(\01621.POG" +
+      "OProtos.Settings.SocialSettings.ConsentS" +
+      "tatus\022S\n\030last_played_date_consent\030\003 \001(\0162" +
+      "1.POGOProtos.Settings.SocialSettings.Con" +
+      "sentStatusB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          POGOProtos.Settings.SocialSettingsOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Settings_AccountSettings_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Settings_AccountSettings_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Settings_AccountSettings_descriptor,
-        new java.lang.String[] { "OptOutSocialGraphImport", });
+        new java.lang.String[] { "OptOutSocialGraphImport", "OnlineStatusConsent", "LastPlayedDateConsent", });
+    POGOProtos.Settings.SocialSettingsOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

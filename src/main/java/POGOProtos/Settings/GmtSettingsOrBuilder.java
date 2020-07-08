@@ -12,4 +12,10 @@ public interface GmtSettingsOrBuilder extends
    * @return The enableGmtdownloadV2.
    */
   boolean getEnableGmtdownloadV2();
+
+  /**
+   * <code>int32 download_poll_period_ms = 2;</code>
+   * @return The downloadPollPeriodMs.
+   */
+  int getDownloadPollPeriodMs();
 }

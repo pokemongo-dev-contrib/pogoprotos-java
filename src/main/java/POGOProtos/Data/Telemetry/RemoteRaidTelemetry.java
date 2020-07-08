@@ -371,6 +371,10 @@ private static final long serialVersionUID = 0L;
      * <code>REMOTE_RAID_PUSH_NOTIFICATION = 2;</code>
      */
     REMOTE_RAID_PUSH_NOTIFICATION(2),
+    /**
+     * <code>REMOTE_RAID_NEARBY_WINDOW = 3;</code>
+     */
+    REMOTE_RAID_NEARBY_WINDOW(3),
     UNRECOGNIZED(-1),
     ;
 
@@ -386,6 +390,10 @@ private static final long serialVersionUID = 0L;
      * <code>REMOTE_RAID_PUSH_NOTIFICATION = 2;</code>
      */
     public static final int REMOTE_RAID_PUSH_NOTIFICATION_VALUE = 2;
+    /**
+     * <code>REMOTE_RAID_NEARBY_WINDOW = 3;</code>
+     */
+    public static final int REMOTE_RAID_NEARBY_WINDOW_VALUE = 3;
 
 
     public final int getNumber() {
@@ -415,6 +423,7 @@ private static final long serialVersionUID = 0L;
         case 0: return UNDEFINED_REMOTE_RAID_INVITE_ACCEPT_SOURCE;
         case 1: return REMOTE_RAID_IN_APP;
         case 2: return REMOTE_RAID_PUSH_NOTIFICATION;
+        case 3: return REMOTE_RAID_NEARBY_WINDOW;
         default: return null;
       }
     }

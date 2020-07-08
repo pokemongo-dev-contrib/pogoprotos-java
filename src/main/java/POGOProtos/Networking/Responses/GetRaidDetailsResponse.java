@@ -144,6 +144,16 @@ private static final long serialVersionUID = 0L;
             numFriendInvitesRemaining_ = input.readInt32();
             break;
           }
+          case 120: {
+
+            remoteTicketUsed_ = input.readBool();
+            break;
+          }
+          case 128: {
+
+            isWithinPlfeRange_ = input.readBool();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -513,6 +523,26 @@ private static final long serialVersionUID = 0L;
     return numFriendInvitesRemaining_;
   }
 
+  public static final int REMOTE_TICKET_USED_FIELD_NUMBER = 15;
+  private boolean remoteTicketUsed_;
+  /**
+   * <code>bool remote_ticket_used = 15;</code>
+   * @return The remoteTicketUsed.
+   */
+  public boolean getRemoteTicketUsed() {
+    return remoteTicketUsed_;
+  }
+
+  public static final int IS_WITHIN_PLFE_RANGE_FIELD_NUMBER = 16;
+  private boolean isWithinPlfeRange_;
+  /**
+   * <code>bool is_within_plfe_range = 16;</code>
+   * @return The isWithinPlfeRange.
+   */
+  public boolean getIsWithinPlfeRange() {
+    return isWithinPlfeRange_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -568,6 +598,12 @@ private static final long serialVersionUID = 0L;
     }
     if (numFriendInvitesRemaining_ != 0) {
       output.writeInt32(14, numFriendInvitesRemaining_);
+    }
+    if (remoteTicketUsed_ != false) {
+      output.writeBool(15, remoteTicketUsed_);
+    }
+    if (isWithinPlfeRange_ != false) {
+      output.writeBool(16, isWithinPlfeRange_);
     }
     unknownFields.writeTo(output);
   }
@@ -634,6 +670,14 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(14, numFriendInvitesRemaining_);
     }
+    if (remoteTicketUsed_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(15, remoteTicketUsed_);
+    }
+    if (isWithinPlfeRange_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(16, isWithinPlfeRange_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -685,6 +729,10 @@ private static final long serialVersionUID = 0L;
         != other.getDisplayHighUserWarning()) return false;
     if (getNumFriendInvitesRemaining()
         != other.getNumFriendInvitesRemaining()) return false;
+    if (getRemoteTicketUsed()
+        != other.getRemoteTicketUsed()) return false;
+    if (getIsWithinPlfeRange()
+        != other.getIsWithinPlfeRange()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -736,6 +784,12 @@ private static final long serialVersionUID = 0L;
         getDisplayHighUserWarning());
     hash = (37 * hash) + NUM_FRIEND_INVITES_REMAINING_FIELD_NUMBER;
     hash = (53 * hash) + getNumFriendInvitesRemaining();
+    hash = (37 * hash) + REMOTE_TICKET_USED_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getRemoteTicketUsed());
+    hash = (37 * hash) + IS_WITHIN_PLFE_RANGE_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsWithinPlfeRange());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -909,6 +963,10 @@ private static final long serialVersionUID = 0L;
 
       numFriendInvitesRemaining_ = 0;
 
+      remoteTicketUsed_ = false;
+
+      isWithinPlfeRange_ = false;
+
       return this;
     }
 
@@ -961,6 +1019,8 @@ private static final long serialVersionUID = 0L;
       result.serverInstance_ = serverInstance_;
       result.displayHighUserWarning_ = displayHighUserWarning_;
       result.numFriendInvitesRemaining_ = numFriendInvitesRemaining_;
+      result.remoteTicketUsed_ = remoteTicketUsed_;
+      result.isWithinPlfeRange_ = isWithinPlfeRange_;
       onBuilt();
       return result;
     }
@@ -1050,6 +1110,12 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getNumFriendInvitesRemaining() != 0) {
         setNumFriendInvitesRemaining(other.getNumFriendInvitesRemaining());
+      }
+      if (other.getRemoteTicketUsed() != false) {
+        setRemoteTicketUsed(other.getRemoteTicketUsed());
+      }
+      if (other.getIsWithinPlfeRange() != false) {
+        setIsWithinPlfeRange(other.getIsWithinPlfeRange());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1785,6 +1851,66 @@ private static final long serialVersionUID = 0L;
     public Builder clearNumFriendInvitesRemaining() {
       
       numFriendInvitesRemaining_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private boolean remoteTicketUsed_ ;
+    /**
+     * <code>bool remote_ticket_used = 15;</code>
+     * @return The remoteTicketUsed.
+     */
+    public boolean getRemoteTicketUsed() {
+      return remoteTicketUsed_;
+    }
+    /**
+     * <code>bool remote_ticket_used = 15;</code>
+     * @param value The remoteTicketUsed to set.
+     * @return This builder for chaining.
+     */
+    public Builder setRemoteTicketUsed(boolean value) {
+      
+      remoteTicketUsed_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool remote_ticket_used = 15;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearRemoteTicketUsed() {
+      
+      remoteTicketUsed_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isWithinPlfeRange_ ;
+    /**
+     * <code>bool is_within_plfe_range = 16;</code>
+     * @return The isWithinPlfeRange.
+     */
+    public boolean getIsWithinPlfeRange() {
+      return isWithinPlfeRange_;
+    }
+    /**
+     * <code>bool is_within_plfe_range = 16;</code>
+     * @param value The isWithinPlfeRange to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIsWithinPlfeRange(boolean value) {
+      
+      isWithinPlfeRange_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool is_within_plfe_range = 16;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIsWithinPlfeRange() {
+      
+      isWithinPlfeRange_ = false;
       onChanged();
       return this;
     }

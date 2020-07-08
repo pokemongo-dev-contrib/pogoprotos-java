@@ -188,4 +188,19 @@ public interface FortSearchResponseOrBuilder extends
    * <code>.POGOProtos.Data.Gift.GiftBox gift_box = 15;</code>
    */
   POGOProtos.Data.Gift.GiftBoxOrBuilder getGiftBoxOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 16;</code>
+   * @return Whether the sponsoredGift field is set.
+   */
+  boolean hasSponsoredGift();
+  /**
+   * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 16;</code>
+   * @return The sponsoredGift.
+   */
+  POGOProtos.Data.Vasa.AdDetails getSponsoredGift();
+  /**
+   * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 16;</code>
+   */
+  POGOProtos.Data.Vasa.AdDetailsOrBuilder getSponsoredGiftOrBuilder();
 }

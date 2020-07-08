@@ -56,7 +56,7 @@ private static final long serialVersionUID = 0L;
             identityProvider_ = rawValue;
             break;
           }
-          case 26: {
+          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             authProviderId_ = s;
@@ -113,10 +113,10 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Enums.IdentityProvider.UNRECOGNIZED : result;
   }
 
-  public static final int AUTH_PROVIDER_ID_FIELD_NUMBER = 3;
+  public static final int AUTH_PROVIDER_ID_FIELD_NUMBER = 2;
   private volatile java.lang.Object authProviderId_;
   /**
-   * <code>string auth_provider_id = 3;</code>
+   * <code>string auth_provider_id = 2;</code>
    * @return The authProviderId.
    */
   public java.lang.String getAuthProviderId() {
@@ -132,7 +132,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string auth_provider_id = 3;</code>
+   * <code>string auth_provider_id = 2;</code>
    * @return The bytes for authProviderId.
    */
   public com.google.protobuf.ByteString
@@ -167,7 +167,7 @@ private static final long serialVersionUID = 0L;
       output.writeEnum(1, identityProvider_);
     }
     if (!getAuthProviderIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, authProviderId_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, authProviderId_);
     }
     unknownFields.writeTo(output);
   }
@@ -183,7 +183,7 @@ private static final long serialVersionUID = 0L;
         .computeEnumSize(1, identityProvider_);
     }
     if (!getAuthProviderIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, authProviderId_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, authProviderId_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -521,7 +521,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object authProviderId_ = "";
     /**
-     * <code>string auth_provider_id = 3;</code>
+     * <code>string auth_provider_id = 2;</code>
      * @return The authProviderId.
      */
     public java.lang.String getAuthProviderId() {
@@ -537,7 +537,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string auth_provider_id = 3;</code>
+     * <code>string auth_provider_id = 2;</code>
      * @return The bytes for authProviderId.
      */
     public com.google.protobuf.ByteString
@@ -554,7 +554,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string auth_provider_id = 3;</code>
+     * <code>string auth_provider_id = 2;</code>
      * @param value The authProviderId to set.
      * @return This builder for chaining.
      */
@@ -569,7 +569,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string auth_provider_id = 3;</code>
+     * <code>string auth_provider_id = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearAuthProviderId() {
@@ -579,7 +579,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string auth_provider_id = 3;</code>
+     * <code>string auth_provider_id = 2;</code>
      * @param value The bytes for authProviderId to set.
      * @return This builder for chaining.
      */

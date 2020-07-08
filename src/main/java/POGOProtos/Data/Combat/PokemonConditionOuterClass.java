@@ -20,6 +20,11 @@ public final class PokemonConditionOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_POGOProtos_Data_Combat_PokemonCondition_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonCaughtTimestamp_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonCaughtTimestamp_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonBanlist_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -50,7 +55,7 @@ public final class PokemonConditionOuterClass {
       "s/Form.proto\032/POGOProtos/Data/Combat/Wit" +
       "hPokemonCpLimit.proto\032,POGOProtos/Data/C" +
       "ombat/WithPokemonType.proto\0320POGOProtos/" +
-      "Data/Combat/WithPokemonCategory.proto\"\225\006" +
+      "Data/Combat/WithPokemonCategory.proto\"\307\007" +
       "\n\020PokemonCondition\022-\n\004type\030\001 \001(\0162\037.POGOP" +
       "rotos.Enums.ConditionType\022K\n\025with_pokemo" +
       "n_cp_limit\030\002 \001(\0132*.POGOProtos.Data.Comba" +
@@ -62,16 +67,20 @@ public final class PokemonConditionOuterClass {
       "POGOProtos.Data.Combat.PokemonCondition." +
       "PokemonWhitelistH\000\022R\n\017pokemon_banlist\030\006 " +
       "\001(\01327.POGOProtos.Data.Combat.PokemonCond" +
-      "ition.PokemonBanlistH\000\032i\n\016PokemonBanlist" +
-      "\022\014\n\004name\030\001 \001(\t\022I\n\007pokemon\030\002 \003(\01328.POGOPr" +
-      "otos.Data.Combat.PokemonCondition.Pokemo" +
-      "nWithForm\032k\n\020PokemonWhitelist\022\014\n\004name\030\001 " +
-      "\001(\t\022I\n\007pokemon\030\002 \003(\01328.POGOProtos.Data.C" +
-      "ombat.PokemonCondition.PokemonWithForm\032`" +
-      "\n\017PokemonWithForm\022\'\n\002id\030\001 \001(\0162\033.POGOProt" +
-      "os.Enums.PokemonId\022$\n\004form\030\002 \001(\0162\026.POGOP" +
-      "rotos.Enums.FormB\013\n\tConditionB\002P\001b\006proto" +
-      "3"
+      "ition.PokemonBanlistH\000\022c\n\030pokemon_caught" +
+      "_timestamp\030\007 \001(\0132?.POGOProtos.Data.Comba" +
+      "t.PokemonCondition.PokemonCaughtTimestam" +
+      "pH\000\032K\n\026PokemonCaughtTimestamp\022\027\n\017after_t" +
+      "imestamp\030\001 \001(\003\022\030\n\020before_timestamp\030\002 \001(\003" +
+      "\032i\n\016PokemonBanlist\022\014\n\004name\030\001 \001(\t\022I\n\007poke" +
+      "mon\030\002 \003(\01328.POGOProtos.Data.Combat.Pokem" +
+      "onCondition.PokemonWithForm\032k\n\020PokemonWh" +
+      "itelist\022\014\n\004name\030\001 \001(\t\022I\n\007pokemon\030\002 \003(\01328" +
+      ".POGOProtos.Data.Combat.PokemonCondition" +
+      ".PokemonWithForm\032`\n\017PokemonWithForm\022\'\n\002i" +
+      "d\030\001 \001(\0162\033.POGOProtos.Enums.PokemonId\022$\n\004" +
+      "form\030\002 \001(\0162\026.POGOProtos.Enums.FormB\013\n\tCo" +
+      "nditionB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -88,21 +97,27 @@ public final class PokemonConditionOuterClass {
     internal_static_POGOProtos_Data_Combat_PokemonCondition_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Combat_PokemonCondition_descriptor,
-        new java.lang.String[] { "Type", "WithPokemonCpLimit", "WithPokemonType", "WithPokemonCategory", "PokemonWhitelist", "PokemonBanlist", "Condition", });
-    internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonBanlist_descriptor =
+        new java.lang.String[] { "Type", "WithPokemonCpLimit", "WithPokemonType", "WithPokemonCategory", "PokemonWhitelist", "PokemonBanlist", "PokemonCaughtTimestamp", "Condition", });
+    internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonCaughtTimestamp_descriptor =
       internal_static_POGOProtos_Data_Combat_PokemonCondition_descriptor.getNestedTypes().get(0);
+    internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonCaughtTimestamp_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonCaughtTimestamp_descriptor,
+        new java.lang.String[] { "AfterTimestamp", "BeforeTimestamp", });
+    internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonBanlist_descriptor =
+      internal_static_POGOProtos_Data_Combat_PokemonCondition_descriptor.getNestedTypes().get(1);
     internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonBanlist_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonBanlist_descriptor,
         new java.lang.String[] { "Name", "Pokemon", });
     internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonWhitelist_descriptor =
-      internal_static_POGOProtos_Data_Combat_PokemonCondition_descriptor.getNestedTypes().get(1);
+      internal_static_POGOProtos_Data_Combat_PokemonCondition_descriptor.getNestedTypes().get(2);
     internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonWhitelist_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonWhitelist_descriptor,
         new java.lang.String[] { "Name", "Pokemon", });
     internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonWithForm_descriptor =
-      internal_static_POGOProtos_Data_Combat_PokemonCondition_descriptor.getNestedTypes().get(2);
+      internal_static_POGOProtos_Data_Combat_PokemonCondition_descriptor.getNestedTypes().get(3);
     internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonWithForm_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonWithForm_descriptor,

@@ -113,6 +113,14 @@ private static final long serialVersionUID = 0L;
      * <code>GIOVANNI = 6;</code>
      */
     GIOVANNI(6),
+    /**
+     * <code>GRUNTBF = 7;</code>
+     */
+    GRUNTBF(7),
+    /**
+     * <code>GRUNTBM = 8;</code>
+     */
+    GRUNTBM(8),
     UNRECOGNIZED(-1),
     ;
 
@@ -144,6 +152,14 @@ private static final long serialVersionUID = 0L;
      * <code>GIOVANNI = 6;</code>
      */
     public static final int GIOVANNI_VALUE = 6;
+    /**
+     * <code>GRUNTBF = 7;</code>
+     */
+    public static final int GRUNTBF_VALUE = 7;
+    /**
+     * <code>GRUNTBM = 8;</code>
+     */
+    public static final int GRUNTBM_VALUE = 8;
 
 
     public final int getNumber() {
@@ -177,6 +193,8 @@ private static final long serialVersionUID = 0L;
         case 4: return CLIFF;
         case 5: return SIERRA;
         case 6: return GIOVANNI;
+        case 7: return GRUNTBF;
+        case 8: return GRUNTBM;
         default: return null;
       }
     }
@@ -438,6 +456,22 @@ private static final long serialVersionUID = 0L;
      * <code>CHARACTER_ELECTRIC_GRUNT_MALE = 50;</code>
      */
     CHARACTER_ELECTRIC_GRUNT_MALE(50),
+    /**
+     * <code>CHARACTER_BALLOON_GRUNT_FEMALE = 51;</code>
+     */
+    CHARACTER_BALLOON_GRUNT_FEMALE(51),
+    /**
+     * <code>CHARACTER_BALLOON_GRUNT_MALE = 52;</code>
+     */
+    CHARACTER_BALLOON_GRUNT_MALE(52),
+    /**
+     * <code>CHARACTER_GRUNTB_FEMALE = 53;</code>
+     */
+    CHARACTER_GRUNTB_FEMALE(53),
+    /**
+     * <code>CHARACTER_GRUNTB_MALE = 54;</code>
+     */
+    CHARACTER_GRUNTB_MALE(54),
     UNRECOGNIZED(-1),
     ;
 
@@ -645,6 +679,22 @@ private static final long serialVersionUID = 0L;
      * <code>CHARACTER_ELECTRIC_GRUNT_MALE = 50;</code>
      */
     public static final int CHARACTER_ELECTRIC_GRUNT_MALE_VALUE = 50;
+    /**
+     * <code>CHARACTER_BALLOON_GRUNT_FEMALE = 51;</code>
+     */
+    public static final int CHARACTER_BALLOON_GRUNT_FEMALE_VALUE = 51;
+    /**
+     * <code>CHARACTER_BALLOON_GRUNT_MALE = 52;</code>
+     */
+    public static final int CHARACTER_BALLOON_GRUNT_MALE_VALUE = 52;
+    /**
+     * <code>CHARACTER_GRUNTB_FEMALE = 53;</code>
+     */
+    public static final int CHARACTER_GRUNTB_FEMALE_VALUE = 53;
+    /**
+     * <code>CHARACTER_GRUNTB_MALE = 54;</code>
+     */
+    public static final int CHARACTER_GRUNTB_MALE_VALUE = 54;
 
 
     public final int getNumber() {
@@ -722,6 +772,10 @@ private static final long serialVersionUID = 0L;
         case 48: return CHARACTER_GHOST_GRUNT_MALE;
         case 49: return CHARACTER_ELECTRIC_GRUNT_FEMALE;
         case 50: return CHARACTER_ELECTRIC_GRUNT_MALE;
+        case 51: return CHARACTER_BALLOON_GRUNT_FEMALE;
+        case 52: return CHARACTER_BALLOON_GRUNT_MALE;
+        case 53: return CHARACTER_GRUNTB_FEMALE;
+        case 54: return CHARACTER_GRUNTB_MALE;
         default: return null;
       }
     }
@@ -799,6 +853,22 @@ private static final long serialVersionUID = 0L;
      * <code>PLACEHOLDER_4 = 4;</code>
      */
     PLACEHOLDER_4(4),
+    /**
+     * <code>GREETING = 5;</code>
+     */
+    GREETING(5),
+    /**
+     * <code>CHALLENGE = 6;</code>
+     */
+    CHALLENGE(6),
+    /**
+     * <code>VICTORY = 7;</code>
+     */
+    VICTORY(7),
+    /**
+     * <code>DEFEAT = 8;</code>
+     */
+    DEFEAT(8),
     UNRECOGNIZED(-1),
     ;
 
@@ -822,6 +892,22 @@ private static final long serialVersionUID = 0L;
      * <code>PLACEHOLDER_4 = 4;</code>
      */
     public static final int PLACEHOLDER_4_VALUE = 4;
+    /**
+     * <code>GREETING = 5;</code>
+     */
+    public static final int GREETING_VALUE = 5;
+    /**
+     * <code>CHALLENGE = 6;</code>
+     */
+    public static final int CHALLENGE_VALUE = 6;
+    /**
+     * <code>VICTORY = 7;</code>
+     */
+    public static final int VICTORY_VALUE = 7;
+    /**
+     * <code>DEFEAT = 8;</code>
+     */
+    public static final int DEFEAT_VALUE = 8;
 
 
     public final int getNumber() {
@@ -853,6 +939,10 @@ private static final long serialVersionUID = 0L;
         case 2: return PLACEHOLDER_2;
         case 3: return PLACEHOLDER_3;
         case 4: return PLACEHOLDER_4;
+        case 5: return GREETING;
+        case 6: return CHALLENGE;
+        case 7: return VICTORY;
+        case 8: return DEFEAT;
         default: return null;
       }
     }
@@ -903,6 +993,110 @@ private static final long serialVersionUID = 0L;
     }
 
     // @@protoc_insertion_point(enum_scope:POGOProtos.Enums.EnumWrapper.InvasionCharacterExpression)
+  }
+
+  /**
+   * Protobuf enum {@code POGOProtos.Enums.EnumWrapper.InvasionContext}
+   */
+  public enum InvasionContext
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>POKESTOP_INCIDENT = 0;</code>
+     */
+    POKESTOP_INCIDENT(0),
+    /**
+     * <code>ROCKET_BALLOON = 1;</code>
+     */
+    ROCKET_BALLOON(1),
+    UNRECOGNIZED(-1),
+    ;
+
+    /**
+     * <code>POKESTOP_INCIDENT = 0;</code>
+     */
+    public static final int POKESTOP_INCIDENT_VALUE = 0;
+    /**
+     * <code>ROCKET_BALLOON = 1;</code>
+     */
+    public static final int ROCKET_BALLOON_VALUE = 1;
+
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static InvasionContext valueOf(int value) {
+      return forNumber(value);
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static InvasionContext forNumber(int value) {
+      switch (value) {
+        case 0: return POKESTOP_INCIDENT;
+        case 1: return ROCKET_BALLOON;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<InvasionContext>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        InvasionContext> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<InvasionContext>() {
+            public InvasionContext findValueByNumber(int number) {
+              return InvasionContext.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return POGOProtos.Enums.EnumWrapper.getDescriptor().getEnumTypes().get(3);
+    }
+
+    private static final InvasionContext[] VALUES = values();
+
+    public static InvasionContext valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private InvasionContext(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Enums.EnumWrapper.InvasionContext)
   }
 
   /**
@@ -992,7 +1186,7 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return POGOProtos.Enums.EnumWrapper.getDescriptor().getEnumTypes().get(3);
+      return POGOProtos.Enums.EnumWrapper.getDescriptor().getEnumTypes().get(4);
     }
 
     private static final PokestopStyle[] VALUES = values();

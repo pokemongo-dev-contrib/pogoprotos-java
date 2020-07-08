@@ -16,6 +16,9 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private GetAvailableSubmissionsResponse() {
+    blacklistedOs_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    availabilityResultPerType_ = java.util.Collections.emptyList();
+    blacklistedDeviceId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
   @java.lang.Override
@@ -38,6 +41,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -73,6 +77,38 @@ private static final long serialVersionUID = 0L;
             timeWindowForSubmissionsLimitMs_ = input.readInt64();
             break;
           }
+          case 48: {
+
+            maxPoiDistanceInMeters_ = input.readInt32();
+            break;
+          }
+          case 58: {
+            java.lang.String s = input.readStringRequireUtf8();
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              blacklistedOs_ = new com.google.protobuf.LazyStringArrayList();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            blacklistedOs_.add(s);
+            break;
+          }
+          case 66: {
+            if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              availabilityResultPerType_ = new java.util.ArrayList<POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType>();
+              mutable_bitField0_ |= 0x00000002;
+            }
+            availabilityResultPerType_.add(
+                input.readMessage(POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.parser(), extensionRegistry));
+            break;
+          }
+          case 74: {
+            java.lang.String s = input.readStringRequireUtf8();
+            if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              blacklistedDeviceId_ = new com.google.protobuf.LazyStringArrayList();
+              mutable_bitField0_ |= 0x00000004;
+            }
+            blacklistedDeviceId_.add(s);
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -88,6 +124,15 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        blacklistedOs_ = blacklistedOs_.getUnmodifiableView();
+      }
+      if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        availabilityResultPerType_ = java.util.Collections.unmodifiableList(availabilityResultPerType_);
+      }
+      if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        blacklistedDeviceId_ = blacklistedDeviceId_.getUnmodifiableView();
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -155,6 +200,121 @@ private static final long serialVersionUID = 0L;
     return timeWindowForSubmissionsLimitMs_;
   }
 
+  public static final int MAX_POI_DISTANCE_IN_METERS_FIELD_NUMBER = 6;
+  private int maxPoiDistanceInMeters_;
+  /**
+   * <code>int32 max_poi_distance_in_meters = 6;</code>
+   * @return The maxPoiDistanceInMeters.
+   */
+  public int getMaxPoiDistanceInMeters() {
+    return maxPoiDistanceInMeters_;
+  }
+
+  public static final int BLACKLISTED_OS_FIELD_NUMBER = 7;
+  private com.google.protobuf.LazyStringList blacklistedOs_;
+  /**
+   * <code>repeated string blacklisted_os = 7;</code>
+   * @return A list containing the blacklistedOs.
+   */
+  public com.google.protobuf.ProtocolStringList
+      getBlacklistedOsList() {
+    return blacklistedOs_;
+  }
+  /**
+   * <code>repeated string blacklisted_os = 7;</code>
+   * @return The count of blacklistedOs.
+   */
+  public int getBlacklistedOsCount() {
+    return blacklistedOs_.size();
+  }
+  /**
+   * <code>repeated string blacklisted_os = 7;</code>
+   * @param index The index of the element to return.
+   * @return The blacklistedOs at the given index.
+   */
+  public java.lang.String getBlacklistedOs(int index) {
+    return blacklistedOs_.get(index);
+  }
+  /**
+   * <code>repeated string blacklisted_os = 7;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the blacklistedOs at the given index.
+   */
+  public com.google.protobuf.ByteString
+      getBlacklistedOsBytes(int index) {
+    return blacklistedOs_.getByteString(index);
+  }
+
+  public static final int AVAILABILITY_RESULT_PER_TYPE_FIELD_NUMBER = 8;
+  private java.util.List<POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType> availabilityResultPerType_;
+  /**
+   * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   */
+  public java.util.List<POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType> getAvailabilityResultPerTypeList() {
+    return availabilityResultPerType_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   */
+  public java.util.List<? extends POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOrBuilder> 
+      getAvailabilityResultPerTypeOrBuilderList() {
+    return availabilityResultPerType_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   */
+  public int getAvailabilityResultPerTypeCount() {
+    return availabilityResultPerType_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   */
+  public POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType getAvailabilityResultPerType(int index) {
+    return availabilityResultPerType_.get(index);
+  }
+  /**
+   * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   */
+  public POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOrBuilder getAvailabilityResultPerTypeOrBuilder(
+      int index) {
+    return availabilityResultPerType_.get(index);
+  }
+
+  public static final int BLACKLISTED_DEVICE_ID_FIELD_NUMBER = 9;
+  private com.google.protobuf.LazyStringList blacklistedDeviceId_;
+  /**
+   * <code>repeated string blacklisted_device_id = 9;</code>
+   * @return A list containing the blacklistedDeviceId.
+   */
+  public com.google.protobuf.ProtocolStringList
+      getBlacklistedDeviceIdList() {
+    return blacklistedDeviceId_;
+  }
+  /**
+   * <code>repeated string blacklisted_device_id = 9;</code>
+   * @return The count of blacklistedDeviceId.
+   */
+  public int getBlacklistedDeviceIdCount() {
+    return blacklistedDeviceId_.size();
+  }
+  /**
+   * <code>repeated string blacklisted_device_id = 9;</code>
+   * @param index The index of the element to return.
+   * @return The blacklistedDeviceId at the given index.
+   */
+  public java.lang.String getBlacklistedDeviceId(int index) {
+    return blacklistedDeviceId_.get(index);
+  }
+  /**
+   * <code>repeated string blacklisted_device_id = 9;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the blacklistedDeviceId at the given index.
+   */
+  public com.google.protobuf.ByteString
+      getBlacklistedDeviceIdBytes(int index) {
+    return blacklistedDeviceId_.getByteString(index);
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -183,6 +343,18 @@ private static final long serialVersionUID = 0L;
     }
     if (timeWindowForSubmissionsLimitMs_ != 0L) {
       output.writeInt64(5, timeWindowForSubmissionsLimitMs_);
+    }
+    if (maxPoiDistanceInMeters_ != 0) {
+      output.writeInt32(6, maxPoiDistanceInMeters_);
+    }
+    for (int i = 0; i < blacklistedOs_.size(); i++) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 7, blacklistedOs_.getRaw(i));
+    }
+    for (int i = 0; i < availabilityResultPerType_.size(); i++) {
+      output.writeMessage(8, availabilityResultPerType_.get(i));
+    }
+    for (int i = 0; i < blacklistedDeviceId_.size(); i++) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, blacklistedDeviceId_.getRaw(i));
     }
     unknownFields.writeTo(output);
   }
@@ -213,6 +385,30 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(5, timeWindowForSubmissionsLimitMs_);
     }
+    if (maxPoiDistanceInMeters_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(6, maxPoiDistanceInMeters_);
+    }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < blacklistedOs_.size(); i++) {
+        dataSize += computeStringSizeNoTag(blacklistedOs_.getRaw(i));
+      }
+      size += dataSize;
+      size += 1 * getBlacklistedOsList().size();
+    }
+    for (int i = 0; i < availabilityResultPerType_.size(); i++) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(8, availabilityResultPerType_.get(i));
+    }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < blacklistedDeviceId_.size(); i++) {
+        dataSize += computeStringSizeNoTag(blacklistedDeviceId_.getRaw(i));
+      }
+      size += dataSize;
+      size += 1 * getBlacklistedDeviceIdList().size();
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -238,6 +434,14 @@ private static final long serialVersionUID = 0L;
         != other.getIsFeatureEnabled()) return false;
     if (getTimeWindowForSubmissionsLimitMs()
         != other.getTimeWindowForSubmissionsLimitMs()) return false;
+    if (getMaxPoiDistanceInMeters()
+        != other.getMaxPoiDistanceInMeters()) return false;
+    if (!getBlacklistedOsList()
+        .equals(other.getBlacklistedOsList())) return false;
+    if (!getAvailabilityResultPerTypeList()
+        .equals(other.getAvailabilityResultPerTypeList())) return false;
+    if (!getBlacklistedDeviceIdList()
+        .equals(other.getBlacklistedDeviceIdList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -262,6 +466,20 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + TIME_WINDOW_FOR_SUBMISSIONS_LIMIT_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getTimeWindowForSubmissionsLimitMs());
+    hash = (37 * hash) + MAX_POI_DISTANCE_IN_METERS_FIELD_NUMBER;
+    hash = (53 * hash) + getMaxPoiDistanceInMeters();
+    if (getBlacklistedOsCount() > 0) {
+      hash = (37 * hash) + BLACKLISTED_OS_FIELD_NUMBER;
+      hash = (53 * hash) + getBlacklistedOsList().hashCode();
+    }
+    if (getAvailabilityResultPerTypeCount() > 0) {
+      hash = (37 * hash) + AVAILABILITY_RESULT_PER_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getAvailabilityResultPerTypeList().hashCode();
+    }
+    if (getBlacklistedDeviceIdCount() > 0) {
+      hash = (37 * hash) + BLACKLISTED_DEVICE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getBlacklistedDeviceIdList().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -390,6 +608,7 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
+        getAvailabilityResultPerTypeFieldBuilder();
       }
     }
     @java.lang.Override
@@ -405,6 +624,18 @@ private static final long serialVersionUID = 0L;
 
       timeWindowForSubmissionsLimitMs_ = 0L;
 
+      maxPoiDistanceInMeters_ = 0;
+
+      blacklistedOs_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      if (availabilityResultPerTypeBuilder_ == null) {
+        availabilityResultPerType_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+      } else {
+        availabilityResultPerTypeBuilder_.clear();
+      }
+      blacklistedDeviceId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000004);
       return this;
     }
 
@@ -431,11 +662,32 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetAvailableSubmissionsResponse buildPartial() {
       POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetAvailableSubmissionsResponse result = new POGOProtos.Networking.Responses.Game.GamePoi.Responses.GetAvailableSubmissionsResponse(this);
+      int from_bitField0_ = bitField0_;
       result.submissionsLeft_ = submissionsLeft_;
       result.minPlayerLevel_ = minPlayerLevel_;
       result.hasValidEmail_ = hasValidEmail_;
       result.isFeatureEnabled_ = isFeatureEnabled_;
       result.timeWindowForSubmissionsLimitMs_ = timeWindowForSubmissionsLimitMs_;
+      result.maxPoiDistanceInMeters_ = maxPoiDistanceInMeters_;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        blacklistedOs_ = blacklistedOs_.getUnmodifiableView();
+        bitField0_ = (bitField0_ & ~0x00000001);
+      }
+      result.blacklistedOs_ = blacklistedOs_;
+      if (availabilityResultPerTypeBuilder_ == null) {
+        if (((bitField0_ & 0x00000002) != 0)) {
+          availabilityResultPerType_ = java.util.Collections.unmodifiableList(availabilityResultPerType_);
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.availabilityResultPerType_ = availabilityResultPerType_;
+      } else {
+        result.availabilityResultPerType_ = availabilityResultPerTypeBuilder_.build();
+      }
+      if (((bitField0_ & 0x00000004) != 0)) {
+        blacklistedDeviceId_ = blacklistedDeviceId_.getUnmodifiableView();
+        bitField0_ = (bitField0_ & ~0x00000004);
+      }
+      result.blacklistedDeviceId_ = blacklistedDeviceId_;
       onBuilt();
       return result;
     }
@@ -499,6 +751,55 @@ private static final long serialVersionUID = 0L;
       if (other.getTimeWindowForSubmissionsLimitMs() != 0L) {
         setTimeWindowForSubmissionsLimitMs(other.getTimeWindowForSubmissionsLimitMs());
       }
+      if (other.getMaxPoiDistanceInMeters() != 0) {
+        setMaxPoiDistanceInMeters(other.getMaxPoiDistanceInMeters());
+      }
+      if (!other.blacklistedOs_.isEmpty()) {
+        if (blacklistedOs_.isEmpty()) {
+          blacklistedOs_ = other.blacklistedOs_;
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          ensureBlacklistedOsIsMutable();
+          blacklistedOs_.addAll(other.blacklistedOs_);
+        }
+        onChanged();
+      }
+      if (availabilityResultPerTypeBuilder_ == null) {
+        if (!other.availabilityResultPerType_.isEmpty()) {
+          if (availabilityResultPerType_.isEmpty()) {
+            availabilityResultPerType_ = other.availabilityResultPerType_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureAvailabilityResultPerTypeIsMutable();
+            availabilityResultPerType_.addAll(other.availabilityResultPerType_);
+          }
+          onChanged();
+        }
+      } else {
+        if (!other.availabilityResultPerType_.isEmpty()) {
+          if (availabilityResultPerTypeBuilder_.isEmpty()) {
+            availabilityResultPerTypeBuilder_.dispose();
+            availabilityResultPerTypeBuilder_ = null;
+            availabilityResultPerType_ = other.availabilityResultPerType_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+            availabilityResultPerTypeBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getAvailabilityResultPerTypeFieldBuilder() : null;
+          } else {
+            availabilityResultPerTypeBuilder_.addAllMessages(other.availabilityResultPerType_);
+          }
+        }
+      }
+      if (!other.blacklistedDeviceId_.isEmpty()) {
+        if (blacklistedDeviceId_.isEmpty()) {
+          blacklistedDeviceId_ = other.blacklistedDeviceId_;
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          ensureBlacklistedDeviceIdIsMutable();
+          blacklistedDeviceId_.addAll(other.blacklistedDeviceId_);
+        }
+        onChanged();
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -527,6 +828,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private int submissionsLeft_ ;
     /**
@@ -674,6 +976,496 @@ private static final long serialVersionUID = 0L;
     public Builder clearTimeWindowForSubmissionsLimitMs() {
       
       timeWindowForSubmissionsLimitMs_ = 0L;
+      onChanged();
+      return this;
+    }
+
+    private int maxPoiDistanceInMeters_ ;
+    /**
+     * <code>int32 max_poi_distance_in_meters = 6;</code>
+     * @return The maxPoiDistanceInMeters.
+     */
+    public int getMaxPoiDistanceInMeters() {
+      return maxPoiDistanceInMeters_;
+    }
+    /**
+     * <code>int32 max_poi_distance_in_meters = 6;</code>
+     * @param value The maxPoiDistanceInMeters to set.
+     * @return This builder for chaining.
+     */
+    public Builder setMaxPoiDistanceInMeters(int value) {
+      
+      maxPoiDistanceInMeters_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 max_poi_distance_in_meters = 6;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearMaxPoiDistanceInMeters() {
+      
+      maxPoiDistanceInMeters_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private com.google.protobuf.LazyStringList blacklistedOs_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private void ensureBlacklistedOsIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        blacklistedOs_ = new com.google.protobuf.LazyStringArrayList(blacklistedOs_);
+        bitField0_ |= 0x00000001;
+       }
+    }
+    /**
+     * <code>repeated string blacklisted_os = 7;</code>
+     * @return A list containing the blacklistedOs.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getBlacklistedOsList() {
+      return blacklistedOs_.getUnmodifiableView();
+    }
+    /**
+     * <code>repeated string blacklisted_os = 7;</code>
+     * @return The count of blacklistedOs.
+     */
+    public int getBlacklistedOsCount() {
+      return blacklistedOs_.size();
+    }
+    /**
+     * <code>repeated string blacklisted_os = 7;</code>
+     * @param index The index of the element to return.
+     * @return The blacklistedOs at the given index.
+     */
+    public java.lang.String getBlacklistedOs(int index) {
+      return blacklistedOs_.get(index);
+    }
+    /**
+     * <code>repeated string blacklisted_os = 7;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the blacklistedOs at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getBlacklistedOsBytes(int index) {
+      return blacklistedOs_.getByteString(index);
+    }
+    /**
+     * <code>repeated string blacklisted_os = 7;</code>
+     * @param index The index to set the value at.
+     * @param value The blacklistedOs to set.
+     * @return This builder for chaining.
+     */
+    public Builder setBlacklistedOs(
+        int index, java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureBlacklistedOsIsMutable();
+      blacklistedOs_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string blacklisted_os = 7;</code>
+     * @param value The blacklistedOs to add.
+     * @return This builder for chaining.
+     */
+    public Builder addBlacklistedOs(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureBlacklistedOsIsMutable();
+      blacklistedOs_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string blacklisted_os = 7;</code>
+     * @param values The blacklistedOs to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllBlacklistedOs(
+        java.lang.Iterable<java.lang.String> values) {
+      ensureBlacklistedOsIsMutable();
+      com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          values, blacklistedOs_);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string blacklisted_os = 7;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearBlacklistedOs() {
+      blacklistedOs_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string blacklisted_os = 7;</code>
+     * @param value The bytes of the blacklistedOs to add.
+     * @return This builder for chaining.
+     */
+    public Builder addBlacklistedOsBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      ensureBlacklistedOsIsMutable();
+      blacklistedOs_.add(value);
+      onChanged();
+      return this;
+    }
+
+    private java.util.List<POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType> availabilityResultPerType_ =
+      java.util.Collections.emptyList();
+    private void ensureAvailabilityResultPerTypeIsMutable() {
+      if (!((bitField0_ & 0x00000002) != 0)) {
+        availabilityResultPerType_ = new java.util.ArrayList<POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType>(availabilityResultPerType_);
+        bitField0_ |= 0x00000002;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.Builder, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOrBuilder> availabilityResultPerTypeBuilder_;
+
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public java.util.List<POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType> getAvailabilityResultPerTypeList() {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(availabilityResultPerType_);
+      } else {
+        return availabilityResultPerTypeBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public int getAvailabilityResultPerTypeCount() {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        return availabilityResultPerType_.size();
+      } else {
+        return availabilityResultPerTypeBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType getAvailabilityResultPerType(int index) {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        return availabilityResultPerType_.get(index);
+      } else {
+        return availabilityResultPerTypeBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public Builder setAvailabilityResultPerType(
+        int index, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType value) {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureAvailabilityResultPerTypeIsMutable();
+        availabilityResultPerType_.set(index, value);
+        onChanged();
+      } else {
+        availabilityResultPerTypeBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public Builder setAvailabilityResultPerType(
+        int index, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.Builder builderForValue) {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        ensureAvailabilityResultPerTypeIsMutable();
+        availabilityResultPerType_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        availabilityResultPerTypeBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public Builder addAvailabilityResultPerType(POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType value) {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureAvailabilityResultPerTypeIsMutable();
+        availabilityResultPerType_.add(value);
+        onChanged();
+      } else {
+        availabilityResultPerTypeBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public Builder addAvailabilityResultPerType(
+        int index, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType value) {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureAvailabilityResultPerTypeIsMutable();
+        availabilityResultPerType_.add(index, value);
+        onChanged();
+      } else {
+        availabilityResultPerTypeBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public Builder addAvailabilityResultPerType(
+        POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.Builder builderForValue) {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        ensureAvailabilityResultPerTypeIsMutable();
+        availabilityResultPerType_.add(builderForValue.build());
+        onChanged();
+      } else {
+        availabilityResultPerTypeBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public Builder addAvailabilityResultPerType(
+        int index, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.Builder builderForValue) {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        ensureAvailabilityResultPerTypeIsMutable();
+        availabilityResultPerType_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        availabilityResultPerTypeBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public Builder addAllAvailabilityResultPerType(
+        java.lang.Iterable<? extends POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType> values) {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        ensureAvailabilityResultPerTypeIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, availabilityResultPerType_);
+        onChanged();
+      } else {
+        availabilityResultPerTypeBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public Builder clearAvailabilityResultPerType() {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        availabilityResultPerType_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+      } else {
+        availabilityResultPerTypeBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public Builder removeAvailabilityResultPerType(int index) {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        ensureAvailabilityResultPerTypeIsMutable();
+        availabilityResultPerType_.remove(index);
+        onChanged();
+      } else {
+        availabilityResultPerTypeBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.Builder getAvailabilityResultPerTypeBuilder(
+        int index) {
+      return getAvailabilityResultPerTypeFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOrBuilder getAvailabilityResultPerTypeOrBuilder(
+        int index) {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        return availabilityResultPerType_.get(index);  } else {
+        return availabilityResultPerTypeBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public java.util.List<? extends POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOrBuilder> 
+         getAvailabilityResultPerTypeOrBuilderList() {
+      if (availabilityResultPerTypeBuilder_ != null) {
+        return availabilityResultPerTypeBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(availabilityResultPerType_);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.Builder addAvailabilityResultPerTypeBuilder() {
+      return getAvailabilityResultPerTypeFieldBuilder().addBuilder(
+          POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.Builder addAvailabilityResultPerTypeBuilder(
+        int index) {
+      return getAvailabilityResultPerTypeFieldBuilder().addBuilder(
+          index, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     */
+    public java.util.List<POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.Builder> 
+         getAvailabilityResultPerTypeBuilderList() {
+      return getAvailabilityResultPerTypeFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.Builder, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOrBuilder> 
+        getAvailabilityResultPerTypeFieldBuilder() {
+      if (availabilityResultPerTypeBuilder_ == null) {
+        availabilityResultPerTypeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionType.Builder, POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOrBuilder>(
+                availabilityResultPerType_,
+                ((bitField0_ & 0x00000002) != 0),
+                getParentForChildren(),
+                isClean());
+        availabilityResultPerType_ = null;
+      }
+      return availabilityResultPerTypeBuilder_;
+    }
+
+    private com.google.protobuf.LazyStringList blacklistedDeviceId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private void ensureBlacklistedDeviceIdIsMutable() {
+      if (!((bitField0_ & 0x00000004) != 0)) {
+        blacklistedDeviceId_ = new com.google.protobuf.LazyStringArrayList(blacklistedDeviceId_);
+        bitField0_ |= 0x00000004;
+       }
+    }
+    /**
+     * <code>repeated string blacklisted_device_id = 9;</code>
+     * @return A list containing the blacklistedDeviceId.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getBlacklistedDeviceIdList() {
+      return blacklistedDeviceId_.getUnmodifiableView();
+    }
+    /**
+     * <code>repeated string blacklisted_device_id = 9;</code>
+     * @return The count of blacklistedDeviceId.
+     */
+    public int getBlacklistedDeviceIdCount() {
+      return blacklistedDeviceId_.size();
+    }
+    /**
+     * <code>repeated string blacklisted_device_id = 9;</code>
+     * @param index The index of the element to return.
+     * @return The blacklistedDeviceId at the given index.
+     */
+    public java.lang.String getBlacklistedDeviceId(int index) {
+      return blacklistedDeviceId_.get(index);
+    }
+    /**
+     * <code>repeated string blacklisted_device_id = 9;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the blacklistedDeviceId at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getBlacklistedDeviceIdBytes(int index) {
+      return blacklistedDeviceId_.getByteString(index);
+    }
+    /**
+     * <code>repeated string blacklisted_device_id = 9;</code>
+     * @param index The index to set the value at.
+     * @param value The blacklistedDeviceId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setBlacklistedDeviceId(
+        int index, java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureBlacklistedDeviceIdIsMutable();
+      blacklistedDeviceId_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string blacklisted_device_id = 9;</code>
+     * @param value The blacklistedDeviceId to add.
+     * @return This builder for chaining.
+     */
+    public Builder addBlacklistedDeviceId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureBlacklistedDeviceIdIsMutable();
+      blacklistedDeviceId_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string blacklisted_device_id = 9;</code>
+     * @param values The blacklistedDeviceId to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllBlacklistedDeviceId(
+        java.lang.Iterable<java.lang.String> values) {
+      ensureBlacklistedDeviceIdIsMutable();
+      com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          values, blacklistedDeviceId_);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string blacklisted_device_id = 9;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearBlacklistedDeviceId() {
+      blacklistedDeviceId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000004);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string blacklisted_device_id = 9;</code>
+     * @param value The bytes of the blacklistedDeviceId to add.
+     * @return This builder for chaining.
+     */
+    public Builder addBlacklistedDeviceIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      ensureBlacklistedDeviceIdIsMutable();
+      blacklistedDeviceId_.add(value);
       onChanged();
       return this;
     }

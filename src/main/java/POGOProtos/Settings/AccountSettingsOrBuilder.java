@@ -12,4 +12,26 @@ public interface AccountSettingsOrBuilder extends
    * @return The optOutSocialGraphImport.
    */
   boolean getOptOutSocialGraphImport();
+
+  /**
+   * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus online_status_consent = 2;</code>
+   * @return The enum numeric value on the wire for onlineStatusConsent.
+   */
+  int getOnlineStatusConsentValue();
+  /**
+   * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus online_status_consent = 2;</code>
+   * @return The onlineStatusConsent.
+   */
+  POGOProtos.Settings.SocialSettings.ConsentStatus getOnlineStatusConsent();
+
+  /**
+   * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus last_played_date_consent = 3;</code>
+   * @return The enum numeric value on the wire for lastPlayedDateConsent.
+   */
+  int getLastPlayedDateConsentValue();
+  /**
+   * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus last_played_date_consent = 3;</code>
+   * @return The lastPlayedDateConsent.
+   */
+  POGOProtos.Settings.SocialSettings.ConsentStatus getLastPlayedDateConsent();
 }

@@ -176,6 +176,14 @@ public enum TutorialState
    * <code>DAILY_BONUS_ENCOUNTER_TUTORIAL = 45;</code>
    */
   DAILY_BONUS_ENCOUNTER_TUTORIAL(45),
+  /**
+   * <code>SPONSORED_GIFT_TUTORIAL = 46;</code>
+   */
+  SPONSORED_GIFT_TUTORIAL(46),
+  /**
+   * <code>XGS_ONLINE_CONSENT_NOTE = 47;</code>
+   */
+  XGS_ONLINE_CONSENT_NOTE(47),
   UNRECOGNIZED(-1),
   ;
 
@@ -347,6 +355,14 @@ public enum TutorialState
    * <code>DAILY_BONUS_ENCOUNTER_TUTORIAL = 45;</code>
    */
   public static final int DAILY_BONUS_ENCOUNTER_TUTORIAL_VALUE = 45;
+  /**
+   * <code>SPONSORED_GIFT_TUTORIAL = 46;</code>
+   */
+  public static final int SPONSORED_GIFT_TUTORIAL_VALUE = 46;
+  /**
+   * <code>XGS_ONLINE_CONSENT_NOTE = 47;</code>
+   */
+  public static final int XGS_ONLINE_CONSENT_NOTE_VALUE = 47;
 
 
   public final int getNumber() {
@@ -415,6 +431,8 @@ public enum TutorialState
       case 41: return ARMP_TOS_CONFIRMATION;
       case 42: return BUDDY_REMOTE_GIFT_TUTORIAL;
       case 45: return DAILY_BONUS_ENCOUNTER_TUTORIAL;
+      case 46: return SPONSORED_GIFT_TUTORIAL;
+      case 47: return XGS_ONLINE_CONSENT_NOTE;
       default: return null;
     }
   }

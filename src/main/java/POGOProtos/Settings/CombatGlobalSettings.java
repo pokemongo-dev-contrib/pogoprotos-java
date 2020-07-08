@@ -163,6 +163,11 @@ private static final long serialVersionUID = 0L;
             plannedDowntimeTimestampMs_ = input.readInt64();
             break;
           }
+          case 192: {
+
+            latencyCompensationThresholdMs_ = input.readInt32();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -425,6 +430,16 @@ private static final long serialVersionUID = 0L;
     return plannedDowntimeTimestampMs_;
   }
 
+  public static final int LATENCY_COMPENSATION_THRESHOLD_MS_FIELD_NUMBER = 24;
+  private int latencyCompensationThresholdMs_;
+  /**
+   * <code>int32 latency_compensation_threshold_ms = 24;</code>
+   * @return The latencyCompensationThresholdMs.
+   */
+  public int getLatencyCompensationThresholdMs() {
+    return latencyCompensationThresholdMs_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -507,6 +522,9 @@ private static final long serialVersionUID = 0L;
     }
     if (plannedDowntimeTimestampMs_ != 0L) {
       output.writeInt64(23, plannedDowntimeTimestampMs_);
+    }
+    if (latencyCompensationThresholdMs_ != 0) {
+      output.writeInt32(24, latencyCompensationThresholdMs_);
     }
     unknownFields.writeTo(output);
   }
@@ -609,6 +627,10 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(23, plannedDowntimeTimestampMs_);
     }
+    if (latencyCompensationThresholdMs_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(24, latencyCompensationThresholdMs_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -670,6 +692,8 @@ private static final long serialVersionUID = 0L;
         != other.getMatchmakingTimeoutDurationMs()) return false;
     if (getPlannedDowntimeTimestampMs()
         != other.getPlannedDowntimeTimestampMs()) return false;
+    if (getLatencyCompensationThresholdMs()
+        != other.getLatencyCompensationThresholdMs()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -738,6 +762,8 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + PLANNED_DOWNTIME_TIMESTAMP_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getPlannedDowntimeTimestampMs());
+    hash = (37 * hash) + LATENCY_COMPENSATION_THRESHOLD_MS_FIELD_NUMBER;
+    hash = (53 * hash) + getLatencyCompensationThresholdMs();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -917,6 +943,8 @@ private static final long serialVersionUID = 0L;
 
       plannedDowntimeTimestampMs_ = 0L;
 
+      latencyCompensationThresholdMs_ = 0;
+
       return this;
     }
 
@@ -966,6 +994,7 @@ private static final long serialVersionUID = 0L;
       result.enableBattleHub_ = enableBattleHub_;
       result.matchmakingTimeoutDurationMs_ = matchmakingTimeoutDurationMs_;
       result.plannedDowntimeTimestampMs_ = plannedDowntimeTimestampMs_;
+      result.latencyCompensationThresholdMs_ = latencyCompensationThresholdMs_;
       onBuilt();
       return result;
     }
@@ -1082,6 +1111,9 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getPlannedDowntimeTimestampMs() != 0L) {
         setPlannedDowntimeTimestampMs(other.getPlannedDowntimeTimestampMs());
+      }
+      if (other.getLatencyCompensationThresholdMs() != 0) {
+        setLatencyCompensationThresholdMs(other.getLatencyCompensationThresholdMs());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1798,6 +1830,36 @@ private static final long serialVersionUID = 0L;
     public Builder clearPlannedDowntimeTimestampMs() {
       
       plannedDowntimeTimestampMs_ = 0L;
+      onChanged();
+      return this;
+    }
+
+    private int latencyCompensationThresholdMs_ ;
+    /**
+     * <code>int32 latency_compensation_threshold_ms = 24;</code>
+     * @return The latencyCompensationThresholdMs.
+     */
+    public int getLatencyCompensationThresholdMs() {
+      return latencyCompensationThresholdMs_;
+    }
+    /**
+     * <code>int32 latency_compensation_threshold_ms = 24;</code>
+     * @param value The latencyCompensationThresholdMs to set.
+     * @return This builder for chaining.
+     */
+    public Builder setLatencyCompensationThresholdMs(int value) {
+      
+      latencyCompensationThresholdMs_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 latency_compensation_threshold_ms = 24;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearLatencyCompensationThresholdMs() {
+      
+      latencyCompensationThresholdMs_ = 0;
       onChanged();
       return this;
     }

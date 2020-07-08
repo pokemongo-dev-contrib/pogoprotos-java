@@ -30,17 +30,18 @@ public final class SendRaidInvitationResponseOuterClass {
     java.lang.String[] descriptorData = {
       "\n@POGOProtos/Networking/Responses/SendRa" +
       "idInvitationResponse.proto\022\037POGOProtos.N" +
-      "etworking.Responses\"\366\002\n\032SendRaidInvitati" +
+      "etworking.Responses\"\233\003\n\032SendRaidInvitati" +
       "onResponse\022R\n\006result\030\001 \001(\0162B.POGOProtos." +
       "Networking.Responses.SendRaidInvitationR" +
       "esponse.Result\022$\n\034num_friend_invites_rem" +
-      "aining\030\002 \001(\005\"\335\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SU" +
+      "aining\030\002 \001(\005\"\202\002\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SU" +
       "CCESS\020\001\022\027\n\023ERROR_NO_PERMISSION\020\002\022\027\n\023ERRO" +
       "R_GYM_NOT_FOUND\020\003\022\031\n\025ERROR_LOBBY_NOT_FOU" +
       "ND\020\004\022\033\n\027ERROR_PAST_CUT_OFF_TIME\020\005\022\036\n\032ERR" +
       "OR_NO_INVITES_REMAINING\020\006\022\024\n\020ERROR_LOBBY" +
-      "_FULL\020\007\022\033\n\027ERROR_INVITER_NOT_FOUND\020\010B\002P\001" +
-      "b\006proto3"
+      "_FULL\020\007\022\033\n\027ERROR_INVITER_NOT_FOUND\020\010\022#\n\037" +
+      "ERROR_NO_REMOTE_SLOTS_REMAINING\020\tB\002P\001b\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

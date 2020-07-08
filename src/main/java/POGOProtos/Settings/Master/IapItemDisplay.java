@@ -23,6 +23,8 @@ private static final long serialVersionUID = 0L;
     description_ = "";
     skuEnableTime_ = "";
     skuDisableTime_ = "";
+    subcategories_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    imageUrl_ = "";
   }
 
   @java.lang.Override
@@ -45,6 +47,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -122,6 +125,21 @@ private static final long serialVersionUID = 0L;
             skuDisableTimeUtcMs_ = input.readInt64();
             break;
           }
+          case 122: {
+            java.lang.String s = input.readStringRequireUtf8();
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              subcategories_ = new com.google.protobuf.LazyStringArrayList();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            subcategories_.add(s);
+            break;
+          }
+          case 130: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            imageUrl_ = s;
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -137,6 +155,9 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        subcategories_ = subcategories_.getUnmodifiableView();
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -444,6 +465,77 @@ private static final long serialVersionUID = 0L;
     return skuDisableTimeUtcMs_;
   }
 
+  public static final int SUBCATEGORIES_FIELD_NUMBER = 15;
+  private com.google.protobuf.LazyStringList subcategories_;
+  /**
+   * <code>repeated string subcategories = 15;</code>
+   * @return A list containing the subcategories.
+   */
+  public com.google.protobuf.ProtocolStringList
+      getSubcategoriesList() {
+    return subcategories_;
+  }
+  /**
+   * <code>repeated string subcategories = 15;</code>
+   * @return The count of subcategories.
+   */
+  public int getSubcategoriesCount() {
+    return subcategories_.size();
+  }
+  /**
+   * <code>repeated string subcategories = 15;</code>
+   * @param index The index of the element to return.
+   * @return The subcategories at the given index.
+   */
+  public java.lang.String getSubcategories(int index) {
+    return subcategories_.get(index);
+  }
+  /**
+   * <code>repeated string subcategories = 15;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the subcategories at the given index.
+   */
+  public com.google.protobuf.ByteString
+      getSubcategoriesBytes(int index) {
+    return subcategories_.getByteString(index);
+  }
+
+  public static final int IMAGE_URL_FIELD_NUMBER = 16;
+  private volatile java.lang.Object imageUrl_;
+  /**
+   * <code>string image_url = 16;</code>
+   * @return The imageUrl.
+   */
+  public java.lang.String getImageUrl() {
+    java.lang.Object ref = imageUrl_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      imageUrl_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string image_url = 16;</code>
+   * @return The bytes for imageUrl.
+   */
+  public com.google.protobuf.ByteString
+      getImageUrlBytes() {
+    java.lang.Object ref = imageUrl_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      imageUrl_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -493,6 +585,12 @@ private static final long serialVersionUID = 0L;
     }
     if (skuDisableTimeUtcMs_ != 0L) {
       output.writeInt64(14, skuDisableTimeUtcMs_);
+    }
+    for (int i = 0; i < subcategories_.size(); i++) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 15, subcategories_.getRaw(i));
+    }
+    if (!getImageUrlBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 16, imageUrl_);
     }
     unknownFields.writeTo(output);
   }
@@ -545,6 +643,17 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(14, skuDisableTimeUtcMs_);
     }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < subcategories_.size(); i++) {
+        dataSize += computeStringSizeNoTag(subcategories_.getRaw(i));
+      }
+      size += dataSize;
+      size += 1 * getSubcategoriesList().size();
+    }
+    if (!getImageUrlBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(16, imageUrl_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -583,6 +692,10 @@ private static final long serialVersionUID = 0L;
         != other.getSkuEnableTimeUtcMs()) return false;
     if (getSkuDisableTimeUtcMs()
         != other.getSkuDisableTimeUtcMs()) return false;
+    if (!getSubcategoriesList()
+        .equals(other.getSubcategoriesList())) return false;
+    if (!getImageUrl()
+        .equals(other.getImageUrl())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -622,6 +735,12 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + SKU_DISABLE_TIME_UTC_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getSkuDisableTimeUtcMs());
+    if (getSubcategoriesCount() > 0) {
+      hash = (37 * hash) + SUBCATEGORIES_FIELD_NUMBER;
+      hash = (53 * hash) + getSubcategoriesList().hashCode();
+    }
+    hash = (37 * hash) + IMAGE_URL_FIELD_NUMBER;
+    hash = (53 * hash) + getImageUrl().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -779,6 +898,10 @@ private static final long serialVersionUID = 0L;
 
       skuDisableTimeUtcMs_ = 0L;
 
+      subcategories_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      imageUrl_ = "";
+
       return this;
     }
 
@@ -805,6 +928,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Settings.Master.IapItemDisplay buildPartial() {
       POGOProtos.Settings.Master.IapItemDisplay result = new POGOProtos.Settings.Master.IapItemDisplay(this);
+      int from_bitField0_ = bitField0_;
       result.sku_ = sku_;
       result.category_ = category_;
       result.sortOrder_ = sortOrder_;
@@ -817,6 +941,12 @@ private static final long serialVersionUID = 0L;
       result.skuDisableTime_ = skuDisableTime_;
       result.skuEnableTimeUtcMs_ = skuEnableTimeUtcMs_;
       result.skuDisableTimeUtcMs_ = skuDisableTimeUtcMs_;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        subcategories_ = subcategories_.getUnmodifiableView();
+        bitField0_ = (bitField0_ & ~0x00000001);
+      }
+      result.subcategories_ = subcategories_;
+      result.imageUrl_ = imageUrl_;
       onBuilt();
       return result;
     }
@@ -907,6 +1037,20 @@ private static final long serialVersionUID = 0L;
       if (other.getSkuDisableTimeUtcMs() != 0L) {
         setSkuDisableTimeUtcMs(other.getSkuDisableTimeUtcMs());
       }
+      if (!other.subcategories_.isEmpty()) {
+        if (subcategories_.isEmpty()) {
+          subcategories_ = other.subcategories_;
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          ensureSubcategoriesIsMutable();
+          subcategories_.addAll(other.subcategories_);
+        }
+        onChanged();
+      }
+      if (!other.getImageUrl().isEmpty()) {
+        imageUrl_ = other.imageUrl_;
+        onChanged();
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -935,6 +1079,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private java.lang.Object sku_ = "";
     /**
@@ -1605,6 +1750,192 @@ private static final long serialVersionUID = 0L;
     public Builder clearSkuDisableTimeUtcMs() {
       
       skuDisableTimeUtcMs_ = 0L;
+      onChanged();
+      return this;
+    }
+
+    private com.google.protobuf.LazyStringList subcategories_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private void ensureSubcategoriesIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        subcategories_ = new com.google.protobuf.LazyStringArrayList(subcategories_);
+        bitField0_ |= 0x00000001;
+       }
+    }
+    /**
+     * <code>repeated string subcategories = 15;</code>
+     * @return A list containing the subcategories.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getSubcategoriesList() {
+      return subcategories_.getUnmodifiableView();
+    }
+    /**
+     * <code>repeated string subcategories = 15;</code>
+     * @return The count of subcategories.
+     */
+    public int getSubcategoriesCount() {
+      return subcategories_.size();
+    }
+    /**
+     * <code>repeated string subcategories = 15;</code>
+     * @param index The index of the element to return.
+     * @return The subcategories at the given index.
+     */
+    public java.lang.String getSubcategories(int index) {
+      return subcategories_.get(index);
+    }
+    /**
+     * <code>repeated string subcategories = 15;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the subcategories at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getSubcategoriesBytes(int index) {
+      return subcategories_.getByteString(index);
+    }
+    /**
+     * <code>repeated string subcategories = 15;</code>
+     * @param index The index to set the value at.
+     * @param value The subcategories to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubcategories(
+        int index, java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureSubcategoriesIsMutable();
+      subcategories_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string subcategories = 15;</code>
+     * @param value The subcategories to add.
+     * @return This builder for chaining.
+     */
+    public Builder addSubcategories(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureSubcategoriesIsMutable();
+      subcategories_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string subcategories = 15;</code>
+     * @param values The subcategories to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllSubcategories(
+        java.lang.Iterable<java.lang.String> values) {
+      ensureSubcategoriesIsMutable();
+      com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          values, subcategories_);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string subcategories = 15;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSubcategories() {
+      subcategories_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string subcategories = 15;</code>
+     * @param value The bytes of the subcategories to add.
+     * @return This builder for chaining.
+     */
+    public Builder addSubcategoriesBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      ensureSubcategoriesIsMutable();
+      subcategories_.add(value);
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object imageUrl_ = "";
+    /**
+     * <code>string image_url = 16;</code>
+     * @return The imageUrl.
+     */
+    public java.lang.String getImageUrl() {
+      java.lang.Object ref = imageUrl_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        imageUrl_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string image_url = 16;</code>
+     * @return The bytes for imageUrl.
+     */
+    public com.google.protobuf.ByteString
+        getImageUrlBytes() {
+      java.lang.Object ref = imageUrl_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        imageUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string image_url = 16;</code>
+     * @param value The imageUrl to set.
+     * @return This builder for chaining.
+     */
+    public Builder setImageUrl(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      imageUrl_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string image_url = 16;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearImageUrl() {
+      
+      imageUrl_ = getDefaultInstance().getImageUrl();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string image_url = 16;</code>
+     * @param value The bytes for imageUrl to set.
+     * @return This builder for chaining.
+     */
+    public Builder setImageUrlBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      imageUrl_ = value;
       onChanged();
       return this;
     }

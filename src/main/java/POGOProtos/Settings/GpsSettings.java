@@ -78,6 +78,16 @@ private static final long serialVersionUID = 0L;
             idleThresholdDurationSeconds_ = input.readInt32();
             break;
           }
+          case 61: {
+
+            idleSampleIntervalSeconds_ = input.readFloat();
+            break;
+          }
+          case 64: {
+
+            idleSpeedSampleCount_ = input.readInt32();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -170,6 +180,26 @@ private static final long serialVersionUID = 0L;
     return idleThresholdDurationSeconds_;
   }
 
+  public static final int IDLE_SAMPLE_INTERVAL_SECONDS_FIELD_NUMBER = 7;
+  private float idleSampleIntervalSeconds_;
+  /**
+   * <code>float idle_sample_interval_seconds = 7;</code>
+   * @return The idleSampleIntervalSeconds.
+   */
+  public float getIdleSampleIntervalSeconds() {
+    return idleSampleIntervalSeconds_;
+  }
+
+  public static final int IDLE_SPEED_SAMPLE_COUNT_FIELD_NUMBER = 8;
+  private int idleSpeedSampleCount_;
+  /**
+   * <code>int32 idle_speed_sample_count = 8;</code>
+   * @return The idleSpeedSampleCount.
+   */
+  public int getIdleSpeedSampleCount() {
+    return idleSpeedSampleCount_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -201,6 +231,12 @@ private static final long serialVersionUID = 0L;
     }
     if (idleThresholdDurationSeconds_ != 0) {
       output.writeInt32(6, idleThresholdDurationSeconds_);
+    }
+    if (idleSampleIntervalSeconds_ != 0F) {
+      output.writeFloat(7, idleSampleIntervalSeconds_);
+    }
+    if (idleSpeedSampleCount_ != 0) {
+      output.writeInt32(8, idleSpeedSampleCount_);
     }
     unknownFields.writeTo(output);
   }
@@ -235,6 +271,14 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(6, idleThresholdDurationSeconds_);
     }
+    if (idleSampleIntervalSeconds_ != 0F) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeFloatSize(7, idleSampleIntervalSeconds_);
+    }
+    if (idleSpeedSampleCount_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(8, idleSpeedSampleCount_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -266,6 +310,11 @@ private static final long serialVersionUID = 0L;
             other.getIdleThresholdSpeedMetersPerSecond())) return false;
     if (getIdleThresholdDurationSeconds()
         != other.getIdleThresholdDurationSeconds()) return false;
+    if (java.lang.Float.floatToIntBits(getIdleSampleIntervalSeconds())
+        != java.lang.Float.floatToIntBits(
+            other.getIdleSampleIntervalSeconds())) return false;
+    if (getIdleSpeedSampleCount()
+        != other.getIdleSpeedSampleCount()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -293,6 +342,11 @@ private static final long serialVersionUID = 0L;
         getIdleThresholdSpeedMetersPerSecond());
     hash = (37 * hash) + IDLE_THRESHOLD_DURATION_SECONDS_FIELD_NUMBER;
     hash = (53 * hash) + getIdleThresholdDurationSeconds();
+    hash = (37 * hash) + IDLE_SAMPLE_INTERVAL_SECONDS_FIELD_NUMBER;
+    hash = (53 * hash) + java.lang.Float.floatToIntBits(
+        getIdleSampleIntervalSeconds());
+    hash = (37 * hash) + IDLE_SPEED_SAMPLE_COUNT_FIELD_NUMBER;
+    hash = (53 * hash) + getIdleSpeedSampleCount();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -438,6 +492,10 @@ private static final long serialVersionUID = 0L;
 
       idleThresholdDurationSeconds_ = 0;
 
+      idleSampleIntervalSeconds_ = 0F;
+
+      idleSpeedSampleCount_ = 0;
+
       return this;
     }
 
@@ -470,6 +528,8 @@ private static final long serialVersionUID = 0L;
       result.drivingSpeedSampleCount_ = drivingSpeedSampleCount_;
       result.idleThresholdSpeedMetersPerSecond_ = idleThresholdSpeedMetersPerSecond_;
       result.idleThresholdDurationSeconds_ = idleThresholdDurationSeconds_;
+      result.idleSampleIntervalSeconds_ = idleSampleIntervalSeconds_;
+      result.idleSpeedSampleCount_ = idleSpeedSampleCount_;
       onBuilt();
       return result;
     }
@@ -535,6 +595,12 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getIdleThresholdDurationSeconds() != 0) {
         setIdleThresholdDurationSeconds(other.getIdleThresholdDurationSeconds());
+      }
+      if (other.getIdleSampleIntervalSeconds() != 0F) {
+        setIdleSampleIntervalSeconds(other.getIdleSampleIntervalSeconds());
+      }
+      if (other.getIdleSpeedSampleCount() != 0) {
+        setIdleSpeedSampleCount(other.getIdleSpeedSampleCount());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -741,6 +807,66 @@ private static final long serialVersionUID = 0L;
     public Builder clearIdleThresholdDurationSeconds() {
       
       idleThresholdDurationSeconds_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private float idleSampleIntervalSeconds_ ;
+    /**
+     * <code>float idle_sample_interval_seconds = 7;</code>
+     * @return The idleSampleIntervalSeconds.
+     */
+    public float getIdleSampleIntervalSeconds() {
+      return idleSampleIntervalSeconds_;
+    }
+    /**
+     * <code>float idle_sample_interval_seconds = 7;</code>
+     * @param value The idleSampleIntervalSeconds to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIdleSampleIntervalSeconds(float value) {
+      
+      idleSampleIntervalSeconds_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>float idle_sample_interval_seconds = 7;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIdleSampleIntervalSeconds() {
+      
+      idleSampleIntervalSeconds_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private int idleSpeedSampleCount_ ;
+    /**
+     * <code>int32 idle_speed_sample_count = 8;</code>
+     * @return The idleSpeedSampleCount.
+     */
+    public int getIdleSpeedSampleCount() {
+      return idleSpeedSampleCount_;
+    }
+    /**
+     * <code>int32 idle_speed_sample_count = 8;</code>
+     * @param value The idleSpeedSampleCount to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIdleSpeedSampleCount(int value) {
+      
+      idleSpeedSampleCount_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 idle_speed_sample_count = 8;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIdleSpeedSampleCount() {
+      
+      idleSpeedSampleCount_ = 0;
       onChanged();
       return this;
     }

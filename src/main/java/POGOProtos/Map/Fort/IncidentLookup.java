@@ -18,6 +18,7 @@ private static final long serialVersionUID = 0L;
   private IncidentLookup() {
     incidentId_ = "";
     fortId_ = "";
+    context_ = 0;
   }
 
   @java.lang.Override
@@ -70,6 +71,12 @@ private static final long serialVersionUID = 0L;
           case 33: {
 
             fortLng_ = input.readDouble();
+            break;
+          }
+          case 40: {
+            int rawValue = input.readEnum();
+
+            context_ = rawValue;
             break;
           }
           default: {
@@ -196,6 +203,25 @@ private static final long serialVersionUID = 0L;
     return fortLng_;
   }
 
+  public static final int CONTEXT_FIELD_NUMBER = 5;
+  private int context_;
+  /**
+   * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 5;</code>
+   * @return The enum numeric value on the wire for context.
+   */
+  public int getContextValue() {
+    return context_;
+  }
+  /**
+   * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 5;</code>
+   * @return The context.
+   */
+  public POGOProtos.Enums.EnumWrapper.InvasionContext getContext() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Enums.EnumWrapper.InvasionContext result = POGOProtos.Enums.EnumWrapper.InvasionContext.valueOf(context_);
+    return result == null ? POGOProtos.Enums.EnumWrapper.InvasionContext.UNRECOGNIZED : result;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -222,6 +248,9 @@ private static final long serialVersionUID = 0L;
     if (fortLng_ != 0D) {
       output.writeDouble(4, fortLng_);
     }
+    if (context_ != POGOProtos.Enums.EnumWrapper.InvasionContext.POKESTOP_INCIDENT.getNumber()) {
+      output.writeEnum(5, context_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -244,6 +273,10 @@ private static final long serialVersionUID = 0L;
     if (fortLng_ != 0D) {
       size += com.google.protobuf.CodedOutputStream
         .computeDoubleSize(4, fortLng_);
+    }
+    if (context_ != POGOProtos.Enums.EnumWrapper.InvasionContext.POKESTOP_INCIDENT.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(5, context_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -270,6 +303,7 @@ private static final long serialVersionUID = 0L;
     if (java.lang.Double.doubleToLongBits(getFortLng())
         != java.lang.Double.doubleToLongBits(
             other.getFortLng())) return false;
+    if (context_ != other.context_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -291,6 +325,8 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + FORT_LNG_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         java.lang.Double.doubleToLongBits(getFortLng()));
+    hash = (37 * hash) + CONTEXT_FIELD_NUMBER;
+    hash = (53 * hash) + context_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -432,6 +468,8 @@ private static final long serialVersionUID = 0L;
 
       fortLng_ = 0D;
 
+      context_ = 0;
+
       return this;
     }
 
@@ -462,6 +500,7 @@ private static final long serialVersionUID = 0L;
       result.fortId_ = fortId_;
       result.fortLat_ = fortLat_;
       result.fortLng_ = fortLng_;
+      result.context_ = context_;
       onBuilt();
       return result;
     }
@@ -523,6 +562,9 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getFortLng() != 0D) {
         setFortLng(other.getFortLng());
+      }
+      if (other.context_ != 0) {
+        setContextValue(other.getContextValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -761,6 +803,58 @@ private static final long serialVersionUID = 0L;
     public Builder clearFortLng() {
       
       fortLng_ = 0D;
+      onChanged();
+      return this;
+    }
+
+    private int context_ = 0;
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 5;</code>
+     * @return The enum numeric value on the wire for context.
+     */
+    public int getContextValue() {
+      return context_;
+    }
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 5;</code>
+     * @param value The enum numeric value on the wire for context to set.
+     * @return This builder for chaining.
+     */
+    public Builder setContextValue(int value) {
+      context_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 5;</code>
+     * @return The context.
+     */
+    public POGOProtos.Enums.EnumWrapper.InvasionContext getContext() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Enums.EnumWrapper.InvasionContext result = POGOProtos.Enums.EnumWrapper.InvasionContext.valueOf(context_);
+      return result == null ? POGOProtos.Enums.EnumWrapper.InvasionContext.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 5;</code>
+     * @param value The context to set.
+     * @return This builder for chaining.
+     */
+    public Builder setContext(POGOProtos.Enums.EnumWrapper.InvasionContext value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      context_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearContext() {
+      
+      context_ = 0;
       onChanged();
       return this;
     }

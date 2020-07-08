@@ -160,6 +160,10 @@ private static final long serialVersionUID = 0L;
      * <code>ERROR_EXCEEDED_LIMIT = 11;</code>
      */
     ERROR_EXCEEDED_LIMIT(11),
+    /**
+     * <code>ERROR_QUEUE_TOO_FULL = 12;</code>
+     */
+    ERROR_QUEUE_TOO_FULL(12),
     UNRECOGNIZED(-1),
     ;
 
@@ -211,6 +215,10 @@ private static final long serialVersionUID = 0L;
      * <code>ERROR_EXCEEDED_LIMIT = 11;</code>
      */
     public static final int ERROR_EXCEEDED_LIMIT_VALUE = 11;
+    /**
+     * <code>ERROR_QUEUE_TOO_FULL = 12;</code>
+     */
+    public static final int ERROR_QUEUE_TOO_FULL_VALUE = 12;
 
 
     public final int getNumber() {
@@ -249,6 +257,7 @@ private static final long serialVersionUID = 0L;
         case 9: return ERROR_VS_SEEKER_NOT_ACTIVATED;
         case 10: return ERROR_TEMPORARILY_UNAVAILABLE;
         case 11: return ERROR_EXCEEDED_LIMIT;
+        case 12: return ERROR_QUEUE_TOO_FULL;
         default: return null;
       }
     }

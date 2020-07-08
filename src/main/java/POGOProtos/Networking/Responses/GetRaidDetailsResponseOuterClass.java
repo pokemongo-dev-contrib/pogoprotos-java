@@ -33,7 +33,7 @@ public final class GetRaidDetailsResponseOuterClass {
       "rking.Responses\032 POGOProtos/Data/Raid/Lo" +
       "bby.proto\032#POGOProtos/Data/Battle/Battle" +
       ".proto\032#POGOProtos/Data/Raid/RaidInfo.pr" +
-      "oto\"\311\005\n\026GetRaidDetailsResponse\022*\n\005lobby\030" +
+      "oto\"\203\006\n\026GetRaidDetailsResponse\022*\n\005lobby\030" +
       "\001 \001(\0132\033.POGOProtos.Data.Raid.Lobby\0223\n\013ra" +
       "id_battle\030\002 \001(\0132\036.POGOProtos.Data.Battle" +
       ".Battle\022\035\n\025player_can_join_lobby\030\003 \001(\010\022N" +
@@ -46,12 +46,13 @@ public final class GetRaidDetailsResponseOuterClass {
       "_players_in_lobby\030\n \001(\005\022\021\n\tserver_ms\030\013 \001" +
       "(\003\022\027\n\017server_instance\030\014 \001(\005\022!\n\031display_h" +
       "igh_user_warning\030\r \001(\010\022$\n\034num_friend_inv" +
-      "ites_remaining\030\016 \001(\005\"\260\001\n\006Result\022\t\n\005UNSET" +
-      "\020\000\022\013\n\007SUCCESS\020\001\022\026\n\022ERROR_NOT_IN_RANGE\020\002\022" +
-      "\030\n\024ERROR_RAID_COMPLETED\020\003\022\032\n\026ERROR_RAID_" +
-      "UNAVAILABLE\020\004\022$\n ERROR_PLAYER_BELOW_MINI" +
-      "MUM_LEVEL\020\005\022\032\n\026ERROR_POI_INACCESSIBLE\020\006B" +
-      "\002P\001b\006proto3"
+      "ites_remaining\030\016 \001(\005\022\032\n\022remote_ticket_us" +
+      "ed\030\017 \001(\010\022\034\n\024is_within_plfe_range\030\020 \001(\010\"\260" +
+      "\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\026\n\022ERR" +
+      "OR_NOT_IN_RANGE\020\002\022\030\n\024ERROR_RAID_COMPLETE" +
+      "D\020\003\022\032\n\026ERROR_RAID_UNAVAILABLE\020\004\022$\n ERROR" +
+      "_PLAYER_BELOW_MINIMUM_LEVEL\020\005\022\032\n\026ERROR_P" +
+      "OI_INACCESSIBLE\020\006B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -65,7 +66,7 @@ public final class GetRaidDetailsResponseOuterClass {
     internal_static_POGOProtos_Networking_Responses_GetRaidDetailsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_GetRaidDetailsResponse_descriptor,
-        new java.lang.String[] { "Lobby", "RaidBattle", "PlayerCanJoinLobby", "Result", "RaidInfo", "TicketUsed", "FreeTicketAvailable", "ThrowsRemaining", "ReceivedRewards", "NumPlayersInLobby", "ServerMs", "ServerInstance", "DisplayHighUserWarning", "NumFriendInvitesRemaining", });
+        new java.lang.String[] { "Lobby", "RaidBattle", "PlayerCanJoinLobby", "Result", "RaidInfo", "TicketUsed", "FreeTicketAvailable", "ThrowsRemaining", "ReceivedRewards", "NumPlayersInLobby", "ServerMs", "ServerInstance", "DisplayHighUserWarning", "NumFriendInvitesRemaining", "RemoteTicketUsed", "IsWithinPlfeRange", });
     POGOProtos.Data.Raid.LobbyOuterClass.getDescriptor();
     POGOProtos.Data.Battle.BattleOuterClass.getDescriptor();
     POGOProtos.Data.Raid.RaidInfoOuterClass.getDescriptor();

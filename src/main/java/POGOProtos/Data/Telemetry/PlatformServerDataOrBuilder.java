@@ -44,36 +44,19 @@ public interface PlatformServerDataOrBuilder extends
       getSessionIdBytes();
 
   /**
-   * <code>repeated int32 experiment_ids = 4;</code>
-   * @return A list containing the experimentIds.
-   */
-  java.util.List<java.lang.Integer> getExperimentIdsList();
-  /**
-   * <code>repeated int32 experiment_ids = 4;</code>
-   * @return The count of experimentIds.
-   */
-  int getExperimentIdsCount();
-  /**
-   * <code>repeated int32 experiment_ids = 4;</code>
-   * @param index The index of the element to return.
-   * @return The experimentIds at the given index.
-   */
-  int getExperimentIds(int index);
-
-  /**
-   * <code>string event_request_id = 5;</code>
+   * <code>string event_request_id = 4;</code>
    * @return The eventRequestId.
    */
   java.lang.String getEventRequestId();
   /**
-   * <code>string event_request_id = 5;</code>
+   * <code>string event_request_id = 4;</code>
    * @return The bytes for eventRequestId.
    */
   com.google.protobuf.ByteString
       getEventRequestIdBytes();
 
   /**
-   * <code>int64 server_timestamp_ms = 6;</code>
+   * <code>int64 server_timestamp_ms = 5;</code>
    * @return The serverTimestampMs.
    */
   long getServerTimestampMs();

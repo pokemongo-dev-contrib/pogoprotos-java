@@ -106,16 +106,19 @@ public interface QuestRewardOrBuilder extends
   int getPokecoin();
 
   /**
-   * <code>string sticker_id = 12;</code>
-   * @return The stickerId.
+   * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+   * @return Whether the sticker field is set.
    */
-  java.lang.String getStickerId();
+  boolean hasSticker();
   /**
-   * <code>string sticker_id = 12;</code>
-   * @return The bytes for stickerId.
+   * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+   * @return The sticker.
    */
-  com.google.protobuf.ByteString
-      getStickerIdBytes();
+  POGOProtos.Data.Quests.QuestReward.StickerReward getSticker();
+  /**
+   * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+   */
+  POGOProtos.Data.Quests.QuestReward.StickerRewardOrBuilder getStickerOrBuilder();
 
   public POGOProtos.Data.Quests.QuestReward.RewardCase getRewardCase();
 }

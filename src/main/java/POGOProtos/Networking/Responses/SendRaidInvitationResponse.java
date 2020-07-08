@@ -133,6 +133,10 @@ private static final long serialVersionUID = 0L;
      * <code>ERROR_INVITER_NOT_FOUND = 8;</code>
      */
     ERROR_INVITER_NOT_FOUND(8),
+    /**
+     * <code>ERROR_NO_REMOTE_SLOTS_REMAINING = 9;</code>
+     */
+    ERROR_NO_REMOTE_SLOTS_REMAINING(9),
     UNRECOGNIZED(-1),
     ;
 
@@ -172,6 +176,10 @@ private static final long serialVersionUID = 0L;
      * <code>ERROR_INVITER_NOT_FOUND = 8;</code>
      */
     public static final int ERROR_INVITER_NOT_FOUND_VALUE = 8;
+    /**
+     * <code>ERROR_NO_REMOTE_SLOTS_REMAINING = 9;</code>
+     */
+    public static final int ERROR_NO_REMOTE_SLOTS_REMAINING_VALUE = 9;
 
 
     public final int getNumber() {
@@ -207,6 +215,7 @@ private static final long serialVersionUID = 0L;
         case 6: return ERROR_NO_INVITES_REMAINING;
         case 7: return ERROR_LOBBY_FULL;
         case 8: return ERROR_INVITER_NOT_FOUND;
+        case 9: return ERROR_NO_REMOTE_SLOTS_REMAINING;
         default: return null;
       }
     }

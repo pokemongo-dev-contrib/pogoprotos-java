@@ -342,4 +342,19 @@ public interface PlayerDataOrBuilder extends
    */
   com.google.protobuf.ByteString
       getHelpshiftUserIdBytes();
+
+  /**
+   * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+   * @return Whether the playerPreferences field is set.
+   */
+  boolean hasPlayerPreferences();
+  /**
+   * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+   * @return The playerPreferences.
+   */
+  POGOProtos.Data.Player.PlayerPreferences getPlayerPreferences();
+  /**
+   * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+   */
+  POGOProtos.Data.Player.PlayerPreferencesOrBuilder getPlayerPreferencesOrBuilder();
 }

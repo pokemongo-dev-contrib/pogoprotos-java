@@ -29,20 +29,25 @@ public final class PlayerSettingsOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n(POGOProtos/Settings/PlayerSettings.pro" +
-      "to\022\023POGOProtos.Settings\"/\n\016PlayerSetting" +
-      "s\022\035\n\025opt_out_online_status\030\001 \001(\010B\002P\001b\006pr" +
-      "oto3"
+      "to\022\023POGOProtos.Settings\032(POGOProtos/Sett" +
+      "ings/SocialSettings.proto\"~\n\016PlayerSetti" +
+      "ngs\022\035\n\025opt_out_online_status\030\001 \001(\010\022M\n\023co" +
+      "mpleted_tutorials\030\002 \003(\01620.POGOProtos.Set" +
+      "tings.SocialSettings.TutorialTypeB\002P\001b\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          POGOProtos.Settings.SocialSettingsOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Settings_PlayerSettings_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Settings_PlayerSettings_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Settings_PlayerSettings_descriptor,
-        new java.lang.String[] { "OptOutOnlineStatus", });
+        new java.lang.String[] { "OptOutOnlineStatus", "CompletedTutorials", });
+    POGOProtos.Settings.SocialSettingsOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

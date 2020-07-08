@@ -31,19 +31,25 @@ public final class GetUploadUrlMessageOuterClass {
       "\nGPOGOProtos/Networking/Requests/Titan/R" +
       "equests/GetUploadUrlMessage.proto\022-POGOP" +
       "rotos.Networking.Requests.Titan.Requests" +
-      "\">\n\023GetUploadUrlMessage\022\017\n\007user_id\030\001 \001(\t" +
-      "\022\026\n\016game_unique_id\030\002 \001(\tB\002P\001b\006proto3"
+      "\032+POGOProtos/Enums/PlayerSubmissionType." +
+      "proto\"\256\001\n\023GetUploadUrlMessage\022\017\n\007user_id" +
+      "\030\001 \001(\t\022\026\n\016game_unique_id\030\002 \001(\t\022?\n\017submis" +
+      "sion_type\030\003 \001(\0162&.POGOProtos.Enums.Playe" +
+      "rSubmissionType\022\025\n\rsubmission_id\030\004 \001(\t\022\026" +
+      "\n\016image_contexts\030\005 \003(\tB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          POGOProtos.Enums.PlayerSubmissionTypeOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Networking_Requests_Titan_Requests_GetUploadUrlMessage_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Networking_Requests_Titan_Requests_GetUploadUrlMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Requests_Titan_Requests_GetUploadUrlMessage_descriptor,
-        new java.lang.String[] { "UserId", "GameUniqueId", });
+        new java.lang.String[] { "UserId", "GameUniqueId", "SubmissionType", "SubmissionId", "ImageContexts", });
+    POGOProtos.Enums.PlayerSubmissionTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

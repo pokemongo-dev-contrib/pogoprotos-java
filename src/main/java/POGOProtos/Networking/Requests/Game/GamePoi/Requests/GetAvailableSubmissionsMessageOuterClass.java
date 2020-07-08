@@ -31,19 +31,26 @@ public final class GetAvailableSubmissionsMessageOuterClass {
       "\nYPOGOProtos/Networking/Requests/Game/Ga" +
       "mePoi/Requests/GetAvailableSubmissionsMe" +
       "ssage.proto\0224POGOProtos.Networking.Reque" +
-      "sts.Game.GamePoi.Requests\" \n\036GetAvailabl" +
-      "eSubmissionsMessageB\002P\001b\006proto3"
+      "sts.Game.GamePoi.Requests\032+POGOProtos/En" +
+      "ums/PlayerSubmissionType.proto\"\243\001\n\036GetAv" +
+      "ailableSubmissionsMessage\022?\n\017submission_" +
+      "type\030\001 \001(\0162&.POGOProtos.Enums.PlayerSubm" +
+      "issionType\022@\n\020submission_types\030\002 \003(\0162&.P" +
+      "OGOProtos.Enums.PlayerSubmissionTypeB\002P\001" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          POGOProtos.Enums.PlayerSubmissionTypeOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Networking_Requests_Game_GamePoi_Requests_GetAvailableSubmissionsMessage_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Networking_Requests_Game_GamePoi_Requests_GetAvailableSubmissionsMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Requests_Game_GamePoi_Requests_GetAvailableSubmissionsMessage_descriptor,
-        new java.lang.String[] { });
+        new java.lang.String[] { "SubmissionType", "SubmissionTypes", });
+    POGOProtos.Enums.PlayerSubmissionTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

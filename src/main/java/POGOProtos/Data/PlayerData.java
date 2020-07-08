@@ -313,6 +313,19 @@ private static final long serialVersionUID = 0L;
             helpshiftUserId_ = s;
             break;
           }
+          case 234: {
+            POGOProtos.Data.Player.PlayerPreferences.Builder subBuilder = null;
+            if (playerPreferences_ != null) {
+              subBuilder = playerPreferences_.toBuilder();
+            }
+            playerPreferences_ = input.readMessage(POGOProtos.Data.Player.PlayerPreferences.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(playerPreferences_);
+              playerPreferences_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -945,6 +958,29 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int PLAYER_PREFERENCES_FIELD_NUMBER = 29;
+  private POGOProtos.Data.Player.PlayerPreferences playerPreferences_;
+  /**
+   * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+   * @return Whether the playerPreferences field is set.
+   */
+  public boolean hasPlayerPreferences() {
+    return playerPreferences_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+   * @return The playerPreferences.
+   */
+  public POGOProtos.Data.Player.PlayerPreferences getPlayerPreferences() {
+    return playerPreferences_ == null ? POGOProtos.Data.Player.PlayerPreferences.getDefaultInstance() : playerPreferences_;
+  }
+  /**
+   * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+   */
+  public POGOProtos.Data.Player.PlayerPreferencesOrBuilder getPlayerPreferencesOrBuilder() {
+    return getPlayerPreferences();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -1042,6 +1078,9 @@ private static final long serialVersionUID = 0L;
     }
     if (!getHelpshiftUserIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 28, helpshiftUserId_);
+    }
+    if (playerPreferences_ != null) {
+      output.writeMessage(29, getPlayerPreferences());
     }
     unknownFields.writeTo(output);
   }
@@ -1165,6 +1204,10 @@ private static final long serialVersionUID = 0L;
     if (!getHelpshiftUserIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(28, helpshiftUserId_);
     }
+    if (playerPreferences_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(29, getPlayerPreferences());
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -1260,6 +1303,11 @@ private static final long serialVersionUID = 0L;
     }
     if (!getHelpshiftUserId()
         .equals(other.getHelpshiftUserId())) return false;
+    if (hasPlayerPreferences() != other.hasPlayerPreferences()) return false;
+    if (hasPlayerPreferences()) {
+      if (!getPlayerPreferences()
+          .equals(other.getPlayerPreferences())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -1353,6 +1401,10 @@ private static final long serialVersionUID = 0L;
     }
     hash = (37 * hash) + HELPSHIFT_USER_ID_FIELD_NUMBER;
     hash = (53 * hash) + getHelpshiftUserId().hashCode();
+    if (hasPlayerPreferences()) {
+      hash = (37 * hash) + PLAYER_PREFERENCES_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayerPreferences().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1585,6 +1637,12 @@ private static final long serialVersionUID = 0L;
       }
       helpshiftUserId_ = "";
 
+      if (playerPreferencesBuilder_ == null) {
+        playerPreferences_ = null;
+      } else {
+        playerPreferences_ = null;
+        playerPreferencesBuilder_ = null;
+      }
       return this;
     }
 
@@ -1697,6 +1755,11 @@ private static final long serialVersionUID = 0L;
         result.buddyObservedData_ = buddyObservedDataBuilder_.build();
       }
       result.helpshiftUserId_ = helpshiftUserId_;
+      if (playerPreferencesBuilder_ == null) {
+        result.playerPreferences_ = playerPreferences_;
+      } else {
+        result.playerPreferences_ = playerPreferencesBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -1859,6 +1922,9 @@ private static final long serialVersionUID = 0L;
       if (!other.getHelpshiftUserId().isEmpty()) {
         helpshiftUserId_ = other.helpshiftUserId_;
         onChanged();
+      }
+      if (other.hasPlayerPreferences()) {
+        mergePlayerPreferences(other.getPlayerPreferences());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -4207,6 +4273,125 @@ private static final long serialVersionUID = 0L;
       helpshiftUserId_ = value;
       onChanged();
       return this;
+    }
+
+    private POGOProtos.Data.Player.PlayerPreferences playerPreferences_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Player.PlayerPreferences, POGOProtos.Data.Player.PlayerPreferences.Builder, POGOProtos.Data.Player.PlayerPreferencesOrBuilder> playerPreferencesBuilder_;
+    /**
+     * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+     * @return Whether the playerPreferences field is set.
+     */
+    public boolean hasPlayerPreferences() {
+      return playerPreferencesBuilder_ != null || playerPreferences_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+     * @return The playerPreferences.
+     */
+    public POGOProtos.Data.Player.PlayerPreferences getPlayerPreferences() {
+      if (playerPreferencesBuilder_ == null) {
+        return playerPreferences_ == null ? POGOProtos.Data.Player.PlayerPreferences.getDefaultInstance() : playerPreferences_;
+      } else {
+        return playerPreferencesBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+     */
+    public Builder setPlayerPreferences(POGOProtos.Data.Player.PlayerPreferences value) {
+      if (playerPreferencesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        playerPreferences_ = value;
+        onChanged();
+      } else {
+        playerPreferencesBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+     */
+    public Builder setPlayerPreferences(
+        POGOProtos.Data.Player.PlayerPreferences.Builder builderForValue) {
+      if (playerPreferencesBuilder_ == null) {
+        playerPreferences_ = builderForValue.build();
+        onChanged();
+      } else {
+        playerPreferencesBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+     */
+    public Builder mergePlayerPreferences(POGOProtos.Data.Player.PlayerPreferences value) {
+      if (playerPreferencesBuilder_ == null) {
+        if (playerPreferences_ != null) {
+          playerPreferences_ =
+            POGOProtos.Data.Player.PlayerPreferences.newBuilder(playerPreferences_).mergeFrom(value).buildPartial();
+        } else {
+          playerPreferences_ = value;
+        }
+        onChanged();
+      } else {
+        playerPreferencesBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+     */
+    public Builder clearPlayerPreferences() {
+      if (playerPreferencesBuilder_ == null) {
+        playerPreferences_ = null;
+        onChanged();
+      } else {
+        playerPreferences_ = null;
+        playerPreferencesBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+     */
+    public POGOProtos.Data.Player.PlayerPreferences.Builder getPlayerPreferencesBuilder() {
+      
+      onChanged();
+      return getPlayerPreferencesFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+     */
+    public POGOProtos.Data.Player.PlayerPreferencesOrBuilder getPlayerPreferencesOrBuilder() {
+      if (playerPreferencesBuilder_ != null) {
+        return playerPreferencesBuilder_.getMessageOrBuilder();
+      } else {
+        return playerPreferences_ == null ?
+            POGOProtos.Data.Player.PlayerPreferences.getDefaultInstance() : playerPreferences_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Player.PlayerPreferences player_preferences = 29;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Player.PlayerPreferences, POGOProtos.Data.Player.PlayerPreferences.Builder, POGOProtos.Data.Player.PlayerPreferencesOrBuilder> 
+        getPlayerPreferencesFieldBuilder() {
+      if (playerPreferencesBuilder_ == null) {
+        playerPreferencesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Data.Player.PlayerPreferences, POGOProtos.Data.Player.PlayerPreferences.Builder, POGOProtos.Data.Player.PlayerPreferencesOrBuilder>(
+                getPlayerPreferences(),
+                getParentForChildren(),
+                isClean());
+        playerPreferences_ = null;
+      }
+      return playerPreferencesBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

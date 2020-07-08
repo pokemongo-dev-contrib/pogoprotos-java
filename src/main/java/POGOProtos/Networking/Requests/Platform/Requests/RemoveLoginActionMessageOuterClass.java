@@ -35,7 +35,7 @@ public final class RemoveLoginActionMessageOuterClass {
       "ovider.proto\"s\n\030RemoveLoginActionMessage" +
       "\022=\n\021identity_provider\030\001 \001(\0162\".POGOProtos" +
       ".Enums.IdentityProvider\022\030\n\020auth_provider" +
-      "_id\030\003 \001(\tB\002P\001b\006proto3"
+      "_id\030\002 \001(\tB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

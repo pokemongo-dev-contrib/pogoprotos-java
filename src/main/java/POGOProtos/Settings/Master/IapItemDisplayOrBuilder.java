@@ -124,4 +124,41 @@ public interface IapItemDisplayOrBuilder extends
    * @return The skuDisableTimeUtcMs.
    */
   long getSkuDisableTimeUtcMs();
+
+  /**
+   * <code>repeated string subcategories = 15;</code>
+   * @return A list containing the subcategories.
+   */
+  java.util.List<java.lang.String>
+      getSubcategoriesList();
+  /**
+   * <code>repeated string subcategories = 15;</code>
+   * @return The count of subcategories.
+   */
+  int getSubcategoriesCount();
+  /**
+   * <code>repeated string subcategories = 15;</code>
+   * @param index The index of the element to return.
+   * @return The subcategories at the given index.
+   */
+  java.lang.String getSubcategories(int index);
+  /**
+   * <code>repeated string subcategories = 15;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the subcategories at the given index.
+   */
+  com.google.protobuf.ByteString
+      getSubcategoriesBytes(int index);
+
+  /**
+   * <code>string image_url = 16;</code>
+   * @return The imageUrl.
+   */
+  java.lang.String getImageUrl();
+  /**
+   * <code>string image_url = 16;</code>
+   * @return The bytes for imageUrl.
+   */
+  com.google.protobuf.ByteString
+      getImageUrlBytes();
 }

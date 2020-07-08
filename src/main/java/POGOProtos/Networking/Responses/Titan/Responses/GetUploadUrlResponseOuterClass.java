@@ -19,6 +19,11 @@ public final class GetUploadUrlResponseOuterClass {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetUploadUrlResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetUploadUrlResponse_ContextSignedUrlsEntry_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetUploadUrlResponse_ContextSignedUrlsEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -31,13 +36,18 @@ public final class GetUploadUrlResponseOuterClass {
       "\nJPOGOProtos/Networking/Responses/Titan/" +
       "Responses/GetUploadUrlResponse.proto\022/PO" +
       "GOProtos.Networking.Responses.Titan.Resp" +
-      "onses\"\335\001\n\024GetUploadUrlResponse\022\\\n\006status" +
+      "onses\"\314\003\n\024GetUploadUrlResponse\022\\\n\006status" +
       "\030\001 \001(\0162L.POGOProtos.Networking.Responses" +
       ".Titan.Responses.GetUploadUrlResponse.St" +
       "atus\022\022\n\nsigned_url\030\002 \001(\t\022#\n\033supporting_i" +
-      "mage_signed_url\030\003 \001(\t\".\n\006Status\022\t\n\005UNSET" +
-      "\020\000\022\014\n\010FAILURES\020\001\022\013\n\007SUCCESS\020\002B\002P\001b\006proto" +
-      "3"
+      "mage_signed_url\030\003 \001(\t\022y\n\023context_signed_" +
+      "urls\030\004 \003(\0132\\.POGOProtos.Networking.Respo" +
+      "nses.Titan.Responses.GetUploadUrlRespons" +
+      "e.ContextSignedUrlsEntry\0328\n\026ContextSigne" +
+      "dUrlsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\002" +
+      "8\001\"h\n\006Status\022\t\n\005UNSET\020\000\022\014\n\010FAILURES\020\001\022\013\n" +
+      "\007SUCCESS\020\002\022\032\n\026MISSING_IMAGE_CONTEXTS\020\003\022\034" +
+      "\n\030DUPLICATE_IMAGE_CONTEXTS\020\004B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -48,7 +58,13 @@ public final class GetUploadUrlResponseOuterClass {
     internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetUploadUrlResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetUploadUrlResponse_descriptor,
-        new java.lang.String[] { "Status", "SignedUrl", "SupportingImageSignedUrl", });
+        new java.lang.String[] { "Status", "SignedUrl", "SupportingImageSignedUrl", "ContextSignedUrls", });
+    internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetUploadUrlResponse_ContextSignedUrlsEntry_descriptor =
+      internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetUploadUrlResponse_descriptor.getNestedTypes().get(0);
+    internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetUploadUrlResponse_ContextSignedUrlsEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetUploadUrlResponse_ContextSignedUrlsEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

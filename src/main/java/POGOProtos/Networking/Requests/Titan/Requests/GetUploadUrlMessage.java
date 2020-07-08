@@ -18,6 +18,9 @@ private static final long serialVersionUID = 0L;
   private GetUploadUrlMessage() {
     userId_ = "";
     gameUniqueId_ = "";
+    submissionType_ = 0;
+    submissionId_ = "";
+    imageContexts_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
   @java.lang.Override
@@ -40,6 +43,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -62,6 +66,27 @@ private static final long serialVersionUID = 0L;
             gameUniqueId_ = s;
             break;
           }
+          case 24: {
+            int rawValue = input.readEnum();
+
+            submissionType_ = rawValue;
+            break;
+          }
+          case 34: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            submissionId_ = s;
+            break;
+          }
+          case 42: {
+            java.lang.String s = input.readStringRequireUtf8();
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              imageContexts_ = new com.google.protobuf.LazyStringArrayList();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            imageContexts_.add(s);
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -77,6 +102,9 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        imageContexts_ = imageContexts_.getUnmodifiableView();
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -166,6 +194,96 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int SUBMISSION_TYPE_FIELD_NUMBER = 3;
+  private int submissionType_;
+  /**
+   * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 3;</code>
+   * @return The enum numeric value on the wire for submissionType.
+   */
+  public int getSubmissionTypeValue() {
+    return submissionType_;
+  }
+  /**
+   * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 3;</code>
+   * @return The submissionType.
+   */
+  public POGOProtos.Enums.PlayerSubmissionType getSubmissionType() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Enums.PlayerSubmissionType result = POGOProtos.Enums.PlayerSubmissionType.valueOf(submissionType_);
+    return result == null ? POGOProtos.Enums.PlayerSubmissionType.UNRECOGNIZED : result;
+  }
+
+  public static final int SUBMISSION_ID_FIELD_NUMBER = 4;
+  private volatile java.lang.Object submissionId_;
+  /**
+   * <code>string submission_id = 4;</code>
+   * @return The submissionId.
+   */
+  public java.lang.String getSubmissionId() {
+    java.lang.Object ref = submissionId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      submissionId_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string submission_id = 4;</code>
+   * @return The bytes for submissionId.
+   */
+  public com.google.protobuf.ByteString
+      getSubmissionIdBytes() {
+    java.lang.Object ref = submissionId_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      submissionId_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int IMAGE_CONTEXTS_FIELD_NUMBER = 5;
+  private com.google.protobuf.LazyStringList imageContexts_;
+  /**
+   * <code>repeated string image_contexts = 5;</code>
+   * @return A list containing the imageContexts.
+   */
+  public com.google.protobuf.ProtocolStringList
+      getImageContextsList() {
+    return imageContexts_;
+  }
+  /**
+   * <code>repeated string image_contexts = 5;</code>
+   * @return The count of imageContexts.
+   */
+  public int getImageContextsCount() {
+    return imageContexts_.size();
+  }
+  /**
+   * <code>repeated string image_contexts = 5;</code>
+   * @param index The index of the element to return.
+   * @return The imageContexts at the given index.
+   */
+  public java.lang.String getImageContexts(int index) {
+    return imageContexts_.get(index);
+  }
+  /**
+   * <code>repeated string image_contexts = 5;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the imageContexts at the given index.
+   */
+  public com.google.protobuf.ByteString
+      getImageContextsBytes(int index) {
+    return imageContexts_.getByteString(index);
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -186,6 +304,15 @@ private static final long serialVersionUID = 0L;
     if (!getGameUniqueIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, gameUniqueId_);
     }
+    if (submissionType_ != POGOProtos.Enums.PlayerSubmissionType.TYPE_UNSPECIFIED.getNumber()) {
+      output.writeEnum(3, submissionType_);
+    }
+    if (!getSubmissionIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, submissionId_);
+    }
+    for (int i = 0; i < imageContexts_.size(); i++) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, imageContexts_.getRaw(i));
+    }
     unknownFields.writeTo(output);
   }
 
@@ -200,6 +327,21 @@ private static final long serialVersionUID = 0L;
     }
     if (!getGameUniqueIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, gameUniqueId_);
+    }
+    if (submissionType_ != POGOProtos.Enums.PlayerSubmissionType.TYPE_UNSPECIFIED.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(3, submissionType_);
+    }
+    if (!getSubmissionIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, submissionId_);
+    }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < imageContexts_.size(); i++) {
+        dataSize += computeStringSizeNoTag(imageContexts_.getRaw(i));
+      }
+      size += dataSize;
+      size += 1 * getImageContextsList().size();
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -220,6 +362,11 @@ private static final long serialVersionUID = 0L;
         .equals(other.getUserId())) return false;
     if (!getGameUniqueId()
         .equals(other.getGameUniqueId())) return false;
+    if (submissionType_ != other.submissionType_) return false;
+    if (!getSubmissionId()
+        .equals(other.getSubmissionId())) return false;
+    if (!getImageContextsList()
+        .equals(other.getImageContextsList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -235,6 +382,14 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getUserId().hashCode();
     hash = (37 * hash) + GAME_UNIQUE_ID_FIELD_NUMBER;
     hash = (53 * hash) + getGameUniqueId().hashCode();
+    hash = (37 * hash) + SUBMISSION_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + submissionType_;
+    hash = (37 * hash) + SUBMISSION_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getSubmissionId().hashCode();
+    if (getImageContextsCount() > 0) {
+      hash = (37 * hash) + IMAGE_CONTEXTS_FIELD_NUMBER;
+      hash = (53 * hash) + getImageContextsList().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -372,6 +527,12 @@ private static final long serialVersionUID = 0L;
 
       gameUniqueId_ = "";
 
+      submissionType_ = 0;
+
+      submissionId_ = "";
+
+      imageContexts_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -398,8 +559,16 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Networking.Requests.Titan.Requests.GetUploadUrlMessage buildPartial() {
       POGOProtos.Networking.Requests.Titan.Requests.GetUploadUrlMessage result = new POGOProtos.Networking.Requests.Titan.Requests.GetUploadUrlMessage(this);
+      int from_bitField0_ = bitField0_;
       result.userId_ = userId_;
       result.gameUniqueId_ = gameUniqueId_;
+      result.submissionType_ = submissionType_;
+      result.submissionId_ = submissionId_;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        imageContexts_ = imageContexts_.getUnmodifiableView();
+        bitField0_ = (bitField0_ & ~0x00000001);
+      }
+      result.imageContexts_ = imageContexts_;
       onBuilt();
       return result;
     }
@@ -456,6 +625,23 @@ private static final long serialVersionUID = 0L;
         gameUniqueId_ = other.gameUniqueId_;
         onChanged();
       }
+      if (other.submissionType_ != 0) {
+        setSubmissionTypeValue(other.getSubmissionTypeValue());
+      }
+      if (!other.getSubmissionId().isEmpty()) {
+        submissionId_ = other.submissionId_;
+        onChanged();
+      }
+      if (!other.imageContexts_.isEmpty()) {
+        if (imageContexts_.isEmpty()) {
+          imageContexts_ = other.imageContexts_;
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          ensureImageContextsIsMutable();
+          imageContexts_.addAll(other.imageContexts_);
+        }
+        onChanged();
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -484,6 +670,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private java.lang.Object userId_ = "";
     /**
@@ -633,6 +820,244 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       gameUniqueId_ = value;
+      onChanged();
+      return this;
+    }
+
+    private int submissionType_ = 0;
+    /**
+     * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 3;</code>
+     * @return The enum numeric value on the wire for submissionType.
+     */
+    public int getSubmissionTypeValue() {
+      return submissionType_;
+    }
+    /**
+     * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 3;</code>
+     * @param value The enum numeric value on the wire for submissionType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubmissionTypeValue(int value) {
+      submissionType_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 3;</code>
+     * @return The submissionType.
+     */
+    public POGOProtos.Enums.PlayerSubmissionType getSubmissionType() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Enums.PlayerSubmissionType result = POGOProtos.Enums.PlayerSubmissionType.valueOf(submissionType_);
+      return result == null ? POGOProtos.Enums.PlayerSubmissionType.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 3;</code>
+     * @param value The submissionType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubmissionType(POGOProtos.Enums.PlayerSubmissionType value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      submissionType_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Enums.PlayerSubmissionType submission_type = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSubmissionType() {
+      
+      submissionType_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object submissionId_ = "";
+    /**
+     * <code>string submission_id = 4;</code>
+     * @return The submissionId.
+     */
+    public java.lang.String getSubmissionId() {
+      java.lang.Object ref = submissionId_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        submissionId_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string submission_id = 4;</code>
+     * @return The bytes for submissionId.
+     */
+    public com.google.protobuf.ByteString
+        getSubmissionIdBytes() {
+      java.lang.Object ref = submissionId_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        submissionId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string submission_id = 4;</code>
+     * @param value The submissionId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubmissionId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      submissionId_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string submission_id = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSubmissionId() {
+      
+      submissionId_ = getDefaultInstance().getSubmissionId();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string submission_id = 4;</code>
+     * @param value The bytes for submissionId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubmissionIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      submissionId_ = value;
+      onChanged();
+      return this;
+    }
+
+    private com.google.protobuf.LazyStringList imageContexts_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private void ensureImageContextsIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        imageContexts_ = new com.google.protobuf.LazyStringArrayList(imageContexts_);
+        bitField0_ |= 0x00000001;
+       }
+    }
+    /**
+     * <code>repeated string image_contexts = 5;</code>
+     * @return A list containing the imageContexts.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getImageContextsList() {
+      return imageContexts_.getUnmodifiableView();
+    }
+    /**
+     * <code>repeated string image_contexts = 5;</code>
+     * @return The count of imageContexts.
+     */
+    public int getImageContextsCount() {
+      return imageContexts_.size();
+    }
+    /**
+     * <code>repeated string image_contexts = 5;</code>
+     * @param index The index of the element to return.
+     * @return The imageContexts at the given index.
+     */
+    public java.lang.String getImageContexts(int index) {
+      return imageContexts_.get(index);
+    }
+    /**
+     * <code>repeated string image_contexts = 5;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the imageContexts at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getImageContextsBytes(int index) {
+      return imageContexts_.getByteString(index);
+    }
+    /**
+     * <code>repeated string image_contexts = 5;</code>
+     * @param index The index to set the value at.
+     * @param value The imageContexts to set.
+     * @return This builder for chaining.
+     */
+    public Builder setImageContexts(
+        int index, java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureImageContextsIsMutable();
+      imageContexts_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string image_contexts = 5;</code>
+     * @param value The imageContexts to add.
+     * @return This builder for chaining.
+     */
+    public Builder addImageContexts(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureImageContextsIsMutable();
+      imageContexts_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string image_contexts = 5;</code>
+     * @param values The imageContexts to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllImageContexts(
+        java.lang.Iterable<java.lang.String> values) {
+      ensureImageContextsIsMutable();
+      com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          values, imageContexts_);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string image_contexts = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearImageContexts() {
+      imageContexts_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string image_contexts = 5;</code>
+     * @param value The bytes of the imageContexts to add.
+     * @return This builder for chaining.
+     */
+    public Builder addImageContextsBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      ensureImageContextsIsMutable();
+      imageContexts_.add(value);
       onChanged();
       return this;
     }

@@ -19,12 +19,12 @@ public interface RemoveLoginActionMessageOrBuilder extends
   POGOProtos.Enums.IdentityProvider getIdentityProvider();
 
   /**
-   * <code>string auth_provider_id = 3;</code>
+   * <code>string auth_provider_id = 2;</code>
    * @return The authProviderId.
    */
   java.lang.String getAuthProviderId();
   /**
-   * <code>string auth_provider_id = 3;</code>
+   * <code>string auth_provider_id = 2;</code>
    * @return The bytes for authProviderId.
    */
   com.google.protobuf.ByteString

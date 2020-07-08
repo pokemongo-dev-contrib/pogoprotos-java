@@ -78,4 +78,19 @@ public interface SocialClientSettingsOrBuilder extends
    * @return The enableSticker.
    */
   boolean getEnableSticker();
+
+  /**
+   * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+   * @return Whether the crossGameSocialSettings field is set.
+   */
+  boolean hasCrossGameSocialSettings();
+  /**
+   * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+   * @return The crossGameSocialSettings.
+   */
+  POGOProtos.Settings.CrossGameSocialGlobalSettings getCrossGameSocialSettings();
+  /**
+   * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+   */
+  POGOProtos.Settings.CrossGameSocialGlobalSettingsOrBuilder getCrossGameSocialSettingsOrBuilder();
 }

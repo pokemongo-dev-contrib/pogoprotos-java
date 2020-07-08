@@ -31,23 +31,32 @@ public final class GetAvailableSubmissionsResponseOuterClass {
       "\n\\POGOProtos/Networking/Responses/Game/G" +
       "amePoi/Responses/GetAvailableSubmissions" +
       "Response.proto\0226POGOProtos.Networking.Re" +
-      "sponses.Game.GamePoi.Responses\"\270\001\n\037GetAv" +
-      "ailableSubmissionsResponse\022\030\n\020submission" +
-      "s_left\030\001 \001(\005\022\030\n\020min_player_level\030\002 \001(\005\022\027" +
-      "\n\017has_valid_email\030\003 \001(\010\022\032\n\022is_feature_en" +
-      "abled\030\004 \001(\010\022,\n$time_window_for_submissio" +
-      "ns_limit_ms\030\005 \001(\003B\002P\001b\006proto3"
+      "sponses.Game.GamePoi.Responses\032APOGOProt" +
+      "os/Data/Titan/AvailableSubmissionsPerSub" +
+      "missionType.proto\"\367\002\n\037GetAvailableSubmis" +
+      "sionsResponse\022\030\n\020submissions_left\030\001 \001(\005\022" +
+      "\030\n\020min_player_level\030\002 \001(\005\022\027\n\017has_valid_e" +
+      "mail\030\003 \001(\010\022\032\n\022is_feature_enabled\030\004 \001(\010\022," +
+      "\n$time_window_for_submissions_limit_ms\030\005" +
+      " \001(\003\022\"\n\032max_poi_distance_in_meters\030\006 \001(\005" +
+      "\022\026\n\016blacklisted_os\030\007 \003(\t\022b\n\034availability" +
+      "_result_per_type\030\010 \003(\0132<.POGOProtos.Data" +
+      ".Titan.AvailableSubmissionsPerSubmission" +
+      "Type\022\035\n\025blacklisted_device_id\030\t \003(\tB\002P\001b" +
+      "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetAvailableSubmissionsResponse_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetAvailableSubmissionsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_GetAvailableSubmissionsResponse_descriptor,
-        new java.lang.String[] { "SubmissionsLeft", "MinPlayerLevel", "HasValidEmail", "IsFeatureEnabled", "TimeWindowForSubmissionsLimitMs", });
+        new java.lang.String[] { "SubmissionsLeft", "MinPlayerLevel", "HasValidEmail", "IsFeatureEnabled", "TimeWindowForSubmissionsLimitMs", "MaxPoiDistanceInMeters", "BlacklistedOs", "AvailabilityResultPerType", "BlacklistedDeviceId", });
+    POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

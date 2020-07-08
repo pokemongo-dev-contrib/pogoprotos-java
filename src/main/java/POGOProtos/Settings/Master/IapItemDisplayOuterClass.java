@@ -30,7 +30,7 @@ public final class IapItemDisplayOuterClass {
     java.lang.String[] descriptorData = {
       "\n/POGOProtos/Settings/Master/IapItemDisp" +
       "lay.proto\022\032POGOProtos.Settings.Master\032&P" +
-      "OGOProtos/Enums/IapItemCategory.proto\"\263\002" +
+      "OGOProtos/Enums/IapItemCategory.proto\"\335\002" +
       "\n\016IapItemDisplay\022\013\n\003sku\030\001 \001(\t\0227\n\010categor" +
       "y\030\002 \001(\0162%.POGOProtos.Enums.HoloIapItemCa" +
       "tegory\022\022\n\nsort_order\030\003 \001(\005\022\016\n\006hidden\030\006 \001" +
@@ -38,7 +38,9 @@ public final class IapItemDisplayOuterClass {
       "itle\030\t \001(\t\022\023\n\013description\030\n \001(\t\022\027\n\017sku_e" +
       "nable_time\030\013 \001(\t\022\030\n\020sku_disable_time\030\014 \001" +
       "(\t\022\036\n\026sku_enable_time_utc_ms\030\r \001(\003\022\037\n\027sk" +
-      "u_disable_time_utc_ms\030\016 \001(\003B\002P\001b\006proto3"
+      "u_disable_time_utc_ms\030\016 \001(\003\022\025\n\rsubcatego" +
+      "ries\030\017 \003(\t\022\021\n\timage_url\030\020 \001(\tB\002P\001b\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -50,7 +52,7 @@ public final class IapItemDisplayOuterClass {
     internal_static_POGOProtos_Settings_Master_IapItemDisplay_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Settings_Master_IapItemDisplay_descriptor,
-        new java.lang.String[] { "Sku", "Category", "SortOrder", "Hidden", "Sale", "SpriteId", "Title", "Description", "SkuEnableTime", "SkuDisableTime", "SkuEnableTimeUtcMs", "SkuDisableTimeUtcMs", });
+        new java.lang.String[] { "Sku", "Category", "SortOrder", "Hidden", "Sale", "SpriteId", "Title", "Description", "SkuEnableTime", "SkuDisableTime", "SkuEnableTimeUtcMs", "SkuDisableTimeUtcMs", "Subcategories", "ImageUrl", });
     POGOProtos.Enums.IapItemCategory.getDescriptor();
   }
 

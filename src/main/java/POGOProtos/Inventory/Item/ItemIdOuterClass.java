@@ -24,7 +24,7 @@ public final class ItemIdOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n&POGOProtos/Inventory/Item/ItemId.proto" +
-      "\022\031POGOProtos.Inventory.Item*\344\014\n\006ItemId\022\020" +
+      "\022\031POGOProtos.Inventory.Item*\201\r\n\006ItemId\022\020" +
       "\n\014ITEM_UNKNOWN\020\000\022\022\n\016ITEM_POKE_BALL\020\001\022\023\n\017" +
       "ITEM_GREAT_BALL\020\002\022\023\n\017ITEM_ULTRA_BALL\020\003\022\024" +
       "\n\020ITEM_MASTER_BALL\020\004\022\025\n\021ITEM_PREMIER_BAL" +
@@ -65,7 +65,8 @@ public final class ItemIdOuterClass {
       "HANGE\020\376\n\022\034\n\027ITEM_REMOTE_RAID_TICKET\020\200\013\022\035" +
       "\n\030ITEM_LEADER_MAP_FRAGMENT\020\335\013\022\024\n\017ITEM_LE" +
       "ADER_MAP\020\336\013\022\026\n\021ITEM_GIOVANNI_MAP\020\337\013\022\035\n\030I" +
-      "TEM_GLOBAL_EVENT_TICKET\020\300\014B\002P\001b\006proto3"
+      "TEM_GLOBAL_EVENT_TICKET\020\300\014\022\033\n\026ITEM_EVENT" +
+      "_TICKET_PINK\020\301\014B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

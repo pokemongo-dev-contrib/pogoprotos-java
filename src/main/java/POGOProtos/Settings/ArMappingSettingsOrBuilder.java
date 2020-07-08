@@ -90,4 +90,10 @@ public interface ArMappingSettingsOrBuilder extends
    * @return The enableSponsorPoiScan.
    */
   boolean getEnableSponsorPoiScan();
+
+  /**
+   * <code>int32 min_disk_space_needed_mb = 15;</code>
+   * @return The minDiskSpaceNeededMb.
+   */
+  int getMinDiskSpaceNeededMb();
 }

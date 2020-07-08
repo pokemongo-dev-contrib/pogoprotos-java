@@ -144,4 +144,10 @@ public interface CombatGlobalSettingsOrBuilder extends
    * @return The plannedDowntimeTimestampMs.
    */
   long getPlannedDowntimeTimestampMs();
+
+  /**
+   * <code>int32 latency_compensation_threshold_ms = 24;</code>
+   * @return The latencyCompensationThresholdMs.
+   */
+  int getLatencyCompensationThresholdMs();
 }

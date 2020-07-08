@@ -12,4 +12,33 @@ public interface PlayerSettingsOrBuilder extends
    * @return The optOutOnlineStatus.
    */
   boolean getOptOutOnlineStatus();
+
+  /**
+   * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+   * @return A list containing the completedTutorials.
+   */
+  java.util.List<POGOProtos.Settings.SocialSettings.TutorialType> getCompletedTutorialsList();
+  /**
+   * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+   * @return The count of completedTutorials.
+   */
+  int getCompletedTutorialsCount();
+  /**
+   * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+   * @param index The index of the element to return.
+   * @return The completedTutorials at the given index.
+   */
+  POGOProtos.Settings.SocialSettings.TutorialType getCompletedTutorials(int index);
+  /**
+   * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+   * @return A list containing the enum numeric values on the wire for completedTutorials.
+   */
+  java.util.List<java.lang.Integer>
+  getCompletedTutorialsValueList();
+  /**
+   * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of completedTutorials at the given index.
+   */
+  int getCompletedTutorialsValue(int index);
 }

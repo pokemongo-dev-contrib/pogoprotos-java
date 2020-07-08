@@ -42,4 +42,16 @@ public interface GpsSettingsOrBuilder extends
    * @return The idleThresholdDurationSeconds.
    */
   int getIdleThresholdDurationSeconds();
+
+  /**
+   * <code>float idle_sample_interval_seconds = 7;</code>
+   * @return The idleSampleIntervalSeconds.
+   */
+  float getIdleSampleIntervalSeconds();
+
+  /**
+   * <code>int32 idle_speed_sample_count = 8;</code>
+   * @return The idleSpeedSampleCount.
+   */
+  int getIdleSpeedSampleCount();
 }

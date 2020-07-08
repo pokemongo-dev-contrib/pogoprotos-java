@@ -29,8 +29,9 @@ public final class GmtSettingsOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%POGOProtos/Settings/GmtSettings.proto\022" +
-      "\023POGOProtos.Settings\",\n\013GmtSettings\022\035\n\025e" +
-      "nable_gmtdownload_v2\030\001 \001(\010B\002P\001b\006proto3"
+      "\023POGOProtos.Settings\"M\n\013GmtSettings\022\035\n\025e" +
+      "nable_gmtdownload_v2\030\001 \001(\010\022\037\n\027download_p" +
+      "oll_period_ms\030\002 \001(\005B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -41,7 +42,7 @@ public final class GmtSettingsOuterClass {
     internal_static_POGOProtos_Settings_GmtSettings_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Settings_GmtSettings_descriptor,
-        new java.lang.String[] { "EnableGmtdownloadV2", });
+        new java.lang.String[] { "EnableGmtdownloadV2", "DownloadPollPeriodMs", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

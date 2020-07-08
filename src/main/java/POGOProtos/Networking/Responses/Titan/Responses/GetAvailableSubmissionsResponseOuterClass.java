@@ -31,23 +31,31 @@ public final class GetAvailableSubmissionsResponseOuterClass {
       "\nUPOGOProtos/Networking/Responses/Titan/" +
       "Responses/GetAvailableSubmissionsRespons" +
       "e.proto\022/POGOProtos.Networking.Responses" +
-      ".Titan.Responses\"\270\001\n\037GetAvailableSubmiss" +
-      "ionsResponse\022\030\n\020submissions_left\030\001 \001(\005\022\030" +
-      "\n\020min_player_level\030\002 \001(\005\022\027\n\017has_valid_em" +
-      "ail\030\003 \001(\010\022\032\n\022is_feature_enabled\030\004 \001(\010\022,\n" +
-      "$time_window_for_submissions_limit_ms\030\005 " +
-      "\001(\003B\002P\001b\006proto3"
+      ".Titan.Responses\032APOGOProtos/Data/Titan/" +
+      "AvailableSubmissionsPerSubmissionType.pr" +
+      "oto\"\367\002\n\037GetAvailableSubmissionsResponse\022" +
+      "\030\n\020submissions_left\030\001 \001(\005\022\030\n\020min_player_" +
+      "level\030\002 \001(\005\022\027\n\017has_valid_email\030\003 \001(\010\022\032\n\022" +
+      "is_feature_enabled\030\004 \001(\010\022,\n$time_window_" +
+      "for_submissions_limit_ms\030\005 \001(\003\022\"\n\032max_po" +
+      "i_distance_in_meters\030\006 \001(\005\022\026\n\016blackliste" +
+      "d_os\030\007 \003(\t\022b\n\034availability_result_per_ty" +
+      "pe\030\010 \003(\0132<.POGOProtos.Data.Titan.Availab" +
+      "leSubmissionsPerSubmissionType\022\035\n\025blackl" +
+      "isted_device_id\030\t \003(\tB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetAvailableSubmissionsResponse_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetAvailableSubmissionsResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_Titan_Responses_GetAvailableSubmissionsResponse_descriptor,
-        new java.lang.String[] { "SubmissionsLeft", "MinPlayerLevel", "HasValidEmail", "IsFeatureEnabled", "TimeWindowForSubmissionsLimitMs", });
+        new java.lang.String[] { "SubmissionsLeft", "MinPlayerLevel", "HasValidEmail", "IsFeatureEnabled", "TimeWindowForSubmissionsLimitMs", "MaxPoiDistanceInMeters", "BlacklistedOs", "AvailabilityResultPerType", "BlacklistedDeviceId", });
+    POGOProtos.Data.Titan.AvailableSubmissionsPerSubmissionTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

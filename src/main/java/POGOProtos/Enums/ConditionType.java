@@ -40,6 +40,10 @@ public enum ConditionType
    * <code>POKEMON_BANLIST = 7;</code>
    */
   POKEMON_BANLIST(7),
+  /**
+   * <code>POKEMON_CAUGHT_TIMESTAMP = 8;</code>
+   */
+  POKEMON_CAUGHT_TIMESTAMP(8),
   UNRECOGNIZED(-1),
   ;
 
@@ -75,6 +79,10 @@ public enum ConditionType
    * <code>POKEMON_BANLIST = 7;</code>
    */
   public static final int POKEMON_BANLIST_VALUE = 7;
+  /**
+   * <code>POKEMON_CAUGHT_TIMESTAMP = 8;</code>
+   */
+  public static final int POKEMON_CAUGHT_TIMESTAMP_VALUE = 8;
 
 
   public final int getNumber() {
@@ -109,6 +117,7 @@ public enum ConditionType
       case 5: return WITH_UNIQUE_POKEMON;
       case 6: return POKEMON_WHITELIST;
       case 7: return POKEMON_BANLIST;
+      case 8: return POKEMON_CAUGHT_TIMESTAMP;
       default: return null;
     }
   }

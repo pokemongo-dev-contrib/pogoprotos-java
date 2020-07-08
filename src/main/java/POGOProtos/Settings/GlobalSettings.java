@@ -711,6 +711,32 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
+          case 450: {
+            POGOProtos.Settings.RocketBalloonGlobalSettings.Builder subBuilder = null;
+            if (rocketBalloonSettings_ != null) {
+              subBuilder = rocketBalloonSettings_.toBuilder();
+            }
+            rocketBalloonSettings_ = input.readMessage(POGOProtos.Settings.RocketBalloonGlobalSettings.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(rocketBalloonSettings_);
+              rocketBalloonSettings_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
+          case 474: {
+            POGOProtos.Settings.LobbyClientSettings.Builder subBuilder = null;
+            if (lobbyClientSettings_ != null) {
+              subBuilder = lobbyClientSettings_.toBuilder();
+            }
+            lobbyClientSettings_ = input.readMessage(POGOProtos.Settings.LobbyClientSettings.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(lobbyClientSettings_);
+              lobbyClientSettings_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -1974,6 +2000,52 @@ private static final long serialVersionUID = 0L;
     return getRaidTicketSettings();
   }
 
+  public static final int ROCKET_BALLOON_SETTINGS_FIELD_NUMBER = 56;
+  private POGOProtos.Settings.RocketBalloonGlobalSettings rocketBalloonSettings_;
+  /**
+   * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+   * @return Whether the rocketBalloonSettings field is set.
+   */
+  public boolean hasRocketBalloonSettings() {
+    return rocketBalloonSettings_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+   * @return The rocketBalloonSettings.
+   */
+  public POGOProtos.Settings.RocketBalloonGlobalSettings getRocketBalloonSettings() {
+    return rocketBalloonSettings_ == null ? POGOProtos.Settings.RocketBalloonGlobalSettings.getDefaultInstance() : rocketBalloonSettings_;
+  }
+  /**
+   * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+   */
+  public POGOProtos.Settings.RocketBalloonGlobalSettingsOrBuilder getRocketBalloonSettingsOrBuilder() {
+    return getRocketBalloonSettings();
+  }
+
+  public static final int LOBBY_CLIENT_SETTINGS_FIELD_NUMBER = 59;
+  private POGOProtos.Settings.LobbyClientSettings lobbyClientSettings_;
+  /**
+   * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+   * @return Whether the lobbyClientSettings field is set.
+   */
+  public boolean hasLobbyClientSettings() {
+    return lobbyClientSettings_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+   * @return The lobbyClientSettings.
+   */
+  public POGOProtos.Settings.LobbyClientSettings getLobbyClientSettings() {
+    return lobbyClientSettings_ == null ? POGOProtos.Settings.LobbyClientSettings.getDefaultInstance() : lobbyClientSettings_;
+  }
+  /**
+   * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+   */
+  public POGOProtos.Settings.LobbyClientSettingsOrBuilder getLobbyClientSettingsOrBuilder() {
+    return getLobbyClientSettings();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -2148,6 +2220,12 @@ private static final long serialVersionUID = 0L;
     }
     if (raidTicketSettings_ != null) {
       output.writeMessage(55, getRaidTicketSettings());
+    }
+    if (rocketBalloonSettings_ != null) {
+      output.writeMessage(56, getRocketBalloonSettings());
+    }
+    if (lobbyClientSettings_ != null) {
+      output.writeMessage(59, getLobbyClientSettings());
     }
     unknownFields.writeTo(output);
   }
@@ -2376,6 +2454,14 @@ private static final long serialVersionUID = 0L;
     if (raidTicketSettings_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(55, getRaidTicketSettings());
+    }
+    if (rocketBalloonSettings_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(56, getRocketBalloonSettings());
+    }
+    if (lobbyClientSettings_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(59, getLobbyClientSettings());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -2636,6 +2722,16 @@ private static final long serialVersionUID = 0L;
       if (!getRaidTicketSettings()
           .equals(other.getRaidTicketSettings())) return false;
     }
+    if (hasRocketBalloonSettings() != other.hasRocketBalloonSettings()) return false;
+    if (hasRocketBalloonSettings()) {
+      if (!getRocketBalloonSettings()
+          .equals(other.getRocketBalloonSettings())) return false;
+    }
+    if (hasLobbyClientSettings() != other.hasLobbyClientSettings()) return false;
+    if (hasLobbyClientSettings()) {
+      if (!getLobbyClientSettings()
+          .equals(other.getLobbyClientSettings())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -2849,6 +2945,14 @@ private static final long serialVersionUID = 0L;
     if (hasRaidTicketSettings()) {
       hash = (37 * hash) + RAID_TICKET_SETTINGS_FIELD_NUMBER;
       hash = (53 * hash) + getRaidTicketSettings().hashCode();
+    }
+    if (hasRocketBalloonSettings()) {
+      hash = (37 * hash) + ROCKET_BALLOON_SETTINGS_FIELD_NUMBER;
+      hash = (53 * hash) + getRocketBalloonSettings().hashCode();
+    }
+    if (hasLobbyClientSettings()) {
+      hash = (37 * hash) + LOBBY_CLIENT_SETTINGS_FIELD_NUMBER;
+      hash = (53 * hash) + getLobbyClientSettings().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -3275,6 +3379,18 @@ private static final long serialVersionUID = 0L;
         raidTicketSettings_ = null;
         raidTicketSettingsBuilder_ = null;
       }
+      if (rocketBalloonSettingsBuilder_ == null) {
+        rocketBalloonSettings_ = null;
+      } else {
+        rocketBalloonSettings_ = null;
+        rocketBalloonSettingsBuilder_ = null;
+      }
+      if (lobbyClientSettingsBuilder_ == null) {
+        lobbyClientSettings_ = null;
+      } else {
+        lobbyClientSettings_ = null;
+        lobbyClientSettingsBuilder_ = null;
+      }
       return this;
     }
 
@@ -3550,6 +3666,16 @@ private static final long serialVersionUID = 0L;
       } else {
         result.raidTicketSettings_ = raidTicketSettingsBuilder_.build();
       }
+      if (rocketBalloonSettingsBuilder_ == null) {
+        result.rocketBalloonSettings_ = rocketBalloonSettings_;
+      } else {
+        result.rocketBalloonSettings_ = rocketBalloonSettingsBuilder_.build();
+      }
+      if (lobbyClientSettingsBuilder_ == null) {
+        result.lobbyClientSettings_ = lobbyClientSettings_;
+      } else {
+        result.lobbyClientSettings_ = lobbyClientSettingsBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -3768,6 +3894,12 @@ private static final long serialVersionUID = 0L;
       }
       if (other.hasRaidTicketSettings()) {
         mergeRaidTicketSettings(other.getRaidTicketSettings());
+      }
+      if (other.hasRocketBalloonSettings()) {
+        mergeRocketBalloonSettings(other.getRocketBalloonSettings());
+      }
+      if (other.hasLobbyClientSettings()) {
+        mergeLobbyClientSettings(other.getLobbyClientSettings());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -9776,6 +9908,244 @@ private static final long serialVersionUID = 0L;
         raidTicketSettings_ = null;
       }
       return raidTicketSettingsBuilder_;
+    }
+
+    private POGOProtos.Settings.RocketBalloonGlobalSettings rocketBalloonSettings_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Settings.RocketBalloonGlobalSettings, POGOProtos.Settings.RocketBalloonGlobalSettings.Builder, POGOProtos.Settings.RocketBalloonGlobalSettingsOrBuilder> rocketBalloonSettingsBuilder_;
+    /**
+     * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+     * @return Whether the rocketBalloonSettings field is set.
+     */
+    public boolean hasRocketBalloonSettings() {
+      return rocketBalloonSettingsBuilder_ != null || rocketBalloonSettings_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+     * @return The rocketBalloonSettings.
+     */
+    public POGOProtos.Settings.RocketBalloonGlobalSettings getRocketBalloonSettings() {
+      if (rocketBalloonSettingsBuilder_ == null) {
+        return rocketBalloonSettings_ == null ? POGOProtos.Settings.RocketBalloonGlobalSettings.getDefaultInstance() : rocketBalloonSettings_;
+      } else {
+        return rocketBalloonSettingsBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+     */
+    public Builder setRocketBalloonSettings(POGOProtos.Settings.RocketBalloonGlobalSettings value) {
+      if (rocketBalloonSettingsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        rocketBalloonSettings_ = value;
+        onChanged();
+      } else {
+        rocketBalloonSettingsBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+     */
+    public Builder setRocketBalloonSettings(
+        POGOProtos.Settings.RocketBalloonGlobalSettings.Builder builderForValue) {
+      if (rocketBalloonSettingsBuilder_ == null) {
+        rocketBalloonSettings_ = builderForValue.build();
+        onChanged();
+      } else {
+        rocketBalloonSettingsBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+     */
+    public Builder mergeRocketBalloonSettings(POGOProtos.Settings.RocketBalloonGlobalSettings value) {
+      if (rocketBalloonSettingsBuilder_ == null) {
+        if (rocketBalloonSettings_ != null) {
+          rocketBalloonSettings_ =
+            POGOProtos.Settings.RocketBalloonGlobalSettings.newBuilder(rocketBalloonSettings_).mergeFrom(value).buildPartial();
+        } else {
+          rocketBalloonSettings_ = value;
+        }
+        onChanged();
+      } else {
+        rocketBalloonSettingsBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+     */
+    public Builder clearRocketBalloonSettings() {
+      if (rocketBalloonSettingsBuilder_ == null) {
+        rocketBalloonSettings_ = null;
+        onChanged();
+      } else {
+        rocketBalloonSettings_ = null;
+        rocketBalloonSettingsBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+     */
+    public POGOProtos.Settings.RocketBalloonGlobalSettings.Builder getRocketBalloonSettingsBuilder() {
+      
+      onChanged();
+      return getRocketBalloonSettingsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+     */
+    public POGOProtos.Settings.RocketBalloonGlobalSettingsOrBuilder getRocketBalloonSettingsOrBuilder() {
+      if (rocketBalloonSettingsBuilder_ != null) {
+        return rocketBalloonSettingsBuilder_.getMessageOrBuilder();
+      } else {
+        return rocketBalloonSettings_ == null ?
+            POGOProtos.Settings.RocketBalloonGlobalSettings.getDefaultInstance() : rocketBalloonSettings_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Settings.RocketBalloonGlobalSettings, POGOProtos.Settings.RocketBalloonGlobalSettings.Builder, POGOProtos.Settings.RocketBalloonGlobalSettingsOrBuilder> 
+        getRocketBalloonSettingsFieldBuilder() {
+      if (rocketBalloonSettingsBuilder_ == null) {
+        rocketBalloonSettingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Settings.RocketBalloonGlobalSettings, POGOProtos.Settings.RocketBalloonGlobalSettings.Builder, POGOProtos.Settings.RocketBalloonGlobalSettingsOrBuilder>(
+                getRocketBalloonSettings(),
+                getParentForChildren(),
+                isClean());
+        rocketBalloonSettings_ = null;
+      }
+      return rocketBalloonSettingsBuilder_;
+    }
+
+    private POGOProtos.Settings.LobbyClientSettings lobbyClientSettings_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Settings.LobbyClientSettings, POGOProtos.Settings.LobbyClientSettings.Builder, POGOProtos.Settings.LobbyClientSettingsOrBuilder> lobbyClientSettingsBuilder_;
+    /**
+     * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+     * @return Whether the lobbyClientSettings field is set.
+     */
+    public boolean hasLobbyClientSettings() {
+      return lobbyClientSettingsBuilder_ != null || lobbyClientSettings_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+     * @return The lobbyClientSettings.
+     */
+    public POGOProtos.Settings.LobbyClientSettings getLobbyClientSettings() {
+      if (lobbyClientSettingsBuilder_ == null) {
+        return lobbyClientSettings_ == null ? POGOProtos.Settings.LobbyClientSettings.getDefaultInstance() : lobbyClientSettings_;
+      } else {
+        return lobbyClientSettingsBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+     */
+    public Builder setLobbyClientSettings(POGOProtos.Settings.LobbyClientSettings value) {
+      if (lobbyClientSettingsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        lobbyClientSettings_ = value;
+        onChanged();
+      } else {
+        lobbyClientSettingsBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+     */
+    public Builder setLobbyClientSettings(
+        POGOProtos.Settings.LobbyClientSettings.Builder builderForValue) {
+      if (lobbyClientSettingsBuilder_ == null) {
+        lobbyClientSettings_ = builderForValue.build();
+        onChanged();
+      } else {
+        lobbyClientSettingsBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+     */
+    public Builder mergeLobbyClientSettings(POGOProtos.Settings.LobbyClientSettings value) {
+      if (lobbyClientSettingsBuilder_ == null) {
+        if (lobbyClientSettings_ != null) {
+          lobbyClientSettings_ =
+            POGOProtos.Settings.LobbyClientSettings.newBuilder(lobbyClientSettings_).mergeFrom(value).buildPartial();
+        } else {
+          lobbyClientSettings_ = value;
+        }
+        onChanged();
+      } else {
+        lobbyClientSettingsBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+     */
+    public Builder clearLobbyClientSettings() {
+      if (lobbyClientSettingsBuilder_ == null) {
+        lobbyClientSettings_ = null;
+        onChanged();
+      } else {
+        lobbyClientSettings_ = null;
+        lobbyClientSettingsBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+     */
+    public POGOProtos.Settings.LobbyClientSettings.Builder getLobbyClientSettingsBuilder() {
+      
+      onChanged();
+      return getLobbyClientSettingsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+     */
+    public POGOProtos.Settings.LobbyClientSettingsOrBuilder getLobbyClientSettingsOrBuilder() {
+      if (lobbyClientSettingsBuilder_ != null) {
+        return lobbyClientSettingsBuilder_.getMessageOrBuilder();
+      } else {
+        return lobbyClientSettings_ == null ?
+            POGOProtos.Settings.LobbyClientSettings.getDefaultInstance() : lobbyClientSettings_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Settings.LobbyClientSettings, POGOProtos.Settings.LobbyClientSettings.Builder, POGOProtos.Settings.LobbyClientSettingsOrBuilder> 
+        getLobbyClientSettingsFieldBuilder() {
+      if (lobbyClientSettingsBuilder_ == null) {
+        lobbyClientSettingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Settings.LobbyClientSettings, POGOProtos.Settings.LobbyClientSettings.Builder, POGOProtos.Settings.LobbyClientSettingsOrBuilder>(
+                getLobbyClientSettings(),
+                getParentForChildren(),
+                isClean());
+        lobbyClientSettings_ = null;
+      }
+      return lobbyClientSettingsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

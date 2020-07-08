@@ -79,6 +79,11 @@ private static final long serialVersionUID = 0L;
             supportingStatement_ = s;
             break;
           }
+          case 144: {
+
+            asyncFileUpload_ = input.readBool();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -239,6 +244,16 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int ASYNC_FILE_UPLOAD_FIELD_NUMBER = 18;
+  private boolean asyncFileUpload_;
+  /**
+   * <code>bool async_file_upload = 18;</code>
+   * @return The asyncFileUpload.
+   */
+  public boolean getAsyncFileUpload() {
+    return asyncFileUpload_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -268,6 +283,9 @@ private static final long serialVersionUID = 0L;
     if (!getSupportingStatementBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 14, supportingStatement_);
     }
+    if (asyncFileUpload_ != false) {
+      output.writeBool(18, asyncFileUpload_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -294,6 +312,10 @@ private static final long serialVersionUID = 0L;
     if (!getSupportingStatementBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, supportingStatement_);
     }
+    if (asyncFileUpload_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(18, asyncFileUpload_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -319,6 +341,8 @@ private static final long serialVersionUID = 0L;
         != other.getLngE6()) return false;
     if (!getSupportingStatement()
         .equals(other.getSupportingStatement())) return false;
+    if (getAsyncFileUpload()
+        != other.getAsyncFileUpload()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -340,6 +364,9 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getLngE6();
     hash = (37 * hash) + SUPPORTING_STATEMENT_FIELD_NUMBER;
     hash = (53 * hash) + getSupportingStatement().hashCode();
+    hash = (37 * hash) + ASYNC_FILE_UPLOAD_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getAsyncFileUpload());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -483,6 +510,8 @@ private static final long serialVersionUID = 0L;
 
       supportingStatement_ = "";
 
+      asyncFileUpload_ = false;
+
       return this;
     }
 
@@ -514,6 +543,7 @@ private static final long serialVersionUID = 0L;
       result.latE6_ = latE6_;
       result.lngE6_ = lngE6_;
       result.supportingStatement_ = supportingStatement_;
+      result.asyncFileUpload_ = asyncFileUpload_;
       onBuilt();
       return result;
     }
@@ -579,6 +609,9 @@ private static final long serialVersionUID = 0L;
       if (!other.getSupportingStatement().isEmpty()) {
         supportingStatement_ = other.supportingStatement_;
         onChanged();
+      }
+      if (other.getAsyncFileUpload() != false) {
+        setAsyncFileUpload(other.getAsyncFileUpload());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -893,6 +926,36 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       supportingStatement_ = value;
+      onChanged();
+      return this;
+    }
+
+    private boolean asyncFileUpload_ ;
+    /**
+     * <code>bool async_file_upload = 18;</code>
+     * @return The asyncFileUpload.
+     */
+    public boolean getAsyncFileUpload() {
+      return asyncFileUpload_;
+    }
+    /**
+     * <code>bool async_file_upload = 18;</code>
+     * @param value The asyncFileUpload to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAsyncFileUpload(boolean value) {
+      
+      asyncFileUpload_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool async_file_upload = 18;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAsyncFileUpload() {
+      
+      asyncFileUpload_ = false;
       onChanged();
       return this;
     }

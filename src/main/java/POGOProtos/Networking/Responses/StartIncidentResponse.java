@@ -345,6 +345,17 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Map.Fort.FortData.PokestopIncidentDisplay completion_display = 7;</code>
      */
     POGOProtos.Map.Fort.FortData.PokestopIncidentDisplayOrBuilder getCompletionDisplayOrBuilder();
+
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 8;</code>
+     * @return The enum numeric value on the wire for context.
+     */
+    int getContextValue();
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 8;</code>
+     * @return The context.
+     */
+    POGOProtos.Enums.EnumWrapper.InvasionContext getContext();
   }
   /**
    * Protobuf type {@code POGOProtos.Networking.Responses.StartIncidentResponse.ClientIncident}
@@ -364,6 +375,7 @@ private static final long serialVersionUID = 0L;
       fortName_ = "";
       pokestopImageUri_ = "";
       step_ = java.util.Collections.emptyList();
+      context_ = 0;
     }
 
     @java.lang.Override
@@ -446,6 +458,12 @@ private static final long serialVersionUID = 0L;
                 completionDisplay_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 64: {
+              int rawValue = input.readEnum();
+
+              context_ = rawValue;
               break;
             }
             default: {
@@ -4358,6 +4376,25 @@ private static final long serialVersionUID = 0L;
       return getCompletionDisplay();
     }
 
+    public static final int CONTEXT_FIELD_NUMBER = 8;
+    private int context_;
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 8;</code>
+     * @return The enum numeric value on the wire for context.
+     */
+    public int getContextValue() {
+      return context_;
+    }
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 8;</code>
+     * @return The context.
+     */
+    public POGOProtos.Enums.EnumWrapper.InvasionContext getContext() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Enums.EnumWrapper.InvasionContext result = POGOProtos.Enums.EnumWrapper.InvasionContext.valueOf(context_);
+      return result == null ? POGOProtos.Enums.EnumWrapper.InvasionContext.UNRECOGNIZED : result;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -4393,6 +4430,9 @@ private static final long serialVersionUID = 0L;
       if (completionDisplay_ != null) {
         output.writeMessage(7, getCompletionDisplay());
       }
+      if (context_ != POGOProtos.Enums.EnumWrapper.InvasionContext.POKESTOP_INCIDENT.getNumber()) {
+        output.writeEnum(8, context_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -4426,6 +4466,10 @@ private static final long serialVersionUID = 0L;
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, getCompletionDisplay());
       }
+      if (context_ != POGOProtos.Enums.EnumWrapper.InvasionContext.POKESTOP_INCIDENT.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(8, context_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -4458,6 +4502,7 @@ private static final long serialVersionUID = 0L;
         if (!getCompletionDisplay()
             .equals(other.getCompletionDisplay())) return false;
       }
+      if (context_ != other.context_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -4487,6 +4532,8 @@ private static final long serialVersionUID = 0L;
         hash = (37 * hash) + COMPLETION_DISPLAY_FIELD_NUMBER;
         hash = (53 * hash) + getCompletionDisplay().hashCode();
       }
+      hash = (37 * hash) + CONTEXT_FIELD_NUMBER;
+      hash = (53 * hash) + context_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -4643,6 +4690,8 @@ private static final long serialVersionUID = 0L;
           completionDisplay_ = null;
           completionDisplayBuilder_ = null;
         }
+        context_ = 0;
+
         return this;
       }
 
@@ -4689,6 +4738,7 @@ private static final long serialVersionUID = 0L;
         } else {
           result.completionDisplay_ = completionDisplayBuilder_.build();
         }
+        result.context_ = context_;
         onBuilt();
         return result;
       }
@@ -4784,6 +4834,9 @@ private static final long serialVersionUID = 0L;
         }
         if (other.hasCompletionDisplay()) {
           mergeCompletionDisplay(other.getCompletionDisplay());
+        }
+        if (other.context_ != 0) {
+          setContextValue(other.getContextValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -5506,6 +5559,58 @@ private static final long serialVersionUID = 0L;
           completionDisplay_ = null;
         }
         return completionDisplayBuilder_;
+      }
+
+      private int context_ = 0;
+      /**
+       * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 8;</code>
+       * @return The enum numeric value on the wire for context.
+       */
+      public int getContextValue() {
+        return context_;
+      }
+      /**
+       * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 8;</code>
+       * @param value The enum numeric value on the wire for context to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContextValue(int value) {
+        context_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 8;</code>
+       * @return The context.
+       */
+      public POGOProtos.Enums.EnumWrapper.InvasionContext getContext() {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Enums.EnumWrapper.InvasionContext result = POGOProtos.Enums.EnumWrapper.InvasionContext.valueOf(context_);
+        return result == null ? POGOProtos.Enums.EnumWrapper.InvasionContext.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 8;</code>
+       * @param value The context to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContext(POGOProtos.Enums.EnumWrapper.InvasionContext value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        context_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearContext() {
+        
+        context_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(

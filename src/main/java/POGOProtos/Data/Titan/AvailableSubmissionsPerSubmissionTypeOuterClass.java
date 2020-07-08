@@ -31,7 +31,7 @@ public final class AvailableSubmissionsPerSubmissionTypeOuterClass {
       "\nAPOGOProtos/Data/Titan/AvailableSubmiss" +
       "ionsPerSubmissionType.proto\022\025POGOProtos." +
       "Data.Titan\032+POGOProtos/Enums/PlayerSubmi" +
-      "ssionType.proto\"\310\002\n%AvailableSubmissions" +
+      "ssionType.proto\"\345\002\n%AvailableSubmissions" +
       "PerSubmissionType\022F\n\026player_submission_t" +
       "ype\030\001 \001(\0162&.POGOProtos.Enums.PlayerSubmi" +
       "ssionType\022\030\n\020submissions_left\030\002 \001(\005\022\030\n\020m" +
@@ -39,7 +39,8 @@ public final class AvailableSubmissionsPerSubmissionTypeOuterClass {
       "led\030\004 \001(\010\022,\n$time_window_for_submissions" +
       "_limit_ms\030\005 \001(\003\022\"\n\032max_poi_distance_in_m" +
       "eters\030\006 \001(\005\022\026\n\016blacklisted_os\030\007 \003(\t\022\035\n\025b" +
-      "lacklisted_device_id\030\010 \003(\tB\002P\001b\006proto3"
+      "lacklisted_device_id\030\010 \003(\t\022\033\n\023is_whiteli" +
+      "sted_user\030\t \001(\010B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -51,7 +52,7 @@ public final class AvailableSubmissionsPerSubmissionTypeOuterClass {
     internal_static_POGOProtos_Data_Titan_AvailableSubmissionsPerSubmissionType_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Titan_AvailableSubmissionsPerSubmissionType_descriptor,
-        new java.lang.String[] { "PlayerSubmissionType", "SubmissionsLeft", "MinPlayerLevel", "IsFeatureEnabled", "TimeWindowForSubmissionsLimitMs", "MaxPoiDistanceInMeters", "BlacklistedOs", "BlacklistedDeviceId", });
+        new java.lang.String[] { "PlayerSubmissionType", "SubmissionsLeft", "MinPlayerLevel", "IsFeatureEnabled", "TimeWindowForSubmissionsLimitMs", "MaxPoiDistanceInMeters", "BlacklistedOs", "BlacklistedDeviceId", "IsWhitelistedUser", });
     POGOProtos.Enums.PlayerSubmissionTypeOuterClass.getDescriptor();
   }
 

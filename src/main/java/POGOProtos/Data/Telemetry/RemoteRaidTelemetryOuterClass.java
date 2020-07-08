@@ -30,7 +30,7 @@ public final class RemoteRaidTelemetryOuterClass {
     java.lang.String[] descriptorData = {
       "\n3POGOProtos/Data/Telemetry/RemoteRaidTe" +
       "lemetry.proto\022\031POGOProtos.Data.Telemetry" +
-      "\"\270\006\n\023RemoteRaidTelemetry\022g\n\030remote_raid_" +
+      "\"\327\006\n\023RemoteRaidTelemetry\022g\n\030remote_raid_" +
       "telemetry_id\030\001 \001(\0162E.POGOProtos.Data.Tel" +
       "emetry.RemoteRaidTelemetry.RemoteRaidTel" +
       "emetryIds\022d\n\027remote_raid_join_source\030\002 \001" +
@@ -47,10 +47,11 @@ public final class RemoteRaidTelemetryOuterClass {
       "%\n!UNDEFINED_REMOTE_RAID_JOIN_SOURCE\020\000\022\030" +
       "\n\024REMOTE_RAID_USED_MAP\020\001\022\032\n\026REMOTE_RAID_" +
       "NEARBY_GUI\020\002\022!\n\035REMOTE_RAID_INVITED_BY_F" +
-      "RIEND\020\003\"\211\001\n\034RemoteRaidInviteAcceptSource" +
+      "RIEND\020\003\"\250\001\n\034RemoteRaidInviteAcceptSource" +
       "\022.\n*UNDEFINED_REMOTE_RAID_INVITE_ACCEPT_" +
       "SOURCE\020\000\022\026\n\022REMOTE_RAID_IN_APP\020\001\022!\n\035REMO" +
-      "TE_RAID_PUSH_NOTIFICATION\020\002B\002P\001b\006proto3"
+      "TE_RAID_PUSH_NOTIFICATION\020\002\022\035\n\031REMOTE_RA" +
+      "ID_NEARBY_WINDOW\020\003B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

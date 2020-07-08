@@ -71,7 +71,7 @@ public final class QuestOuterClass {
       "/QuestReward.proto\032&POGOProtos/Data/Ques" +
       "ts/QuestGoal.proto\032+POGOProtos/Data/Ques" +
       "ts/AddFriendQuest.proto\032.POGOProtos/Data" +
-      "/Quests/TradePokemonQuest.proto\"\371\017\n\005Ques" +
+      "/Quests/TradePokemonQuest.proto\"\222\020\n\005Ques" +
       "t\022/\n\nquest_type\030\001 \001(\0162\033.POGOProtos.Enums" +
       ".QuestType\022?\n\013daily_quest\030\002 \001(\0132(.POGOPr" +
       "otos.Data.Quests.Quest.DailyQuestH\000\022B\n\nm" +
@@ -117,13 +117,13 @@ public final class QuestOuterClass {
       "ub_quests\030\001 \003(\0132\035.POGOProtos.Data.Quests" +
       ".Quest\032I\n\nDailyQuest\022\035\n\025current_period_b" +
       "ucket\030\001 \001(\005\022\034\n\024current_streak_count\030\002 \001(" +
-      "\005\032-\n\014DailyCounter\022\016\n\006window\030\001 \001(\003\022\r\n\005cou" +
-      "nt\030\002 \001(\005\"g\n\007Context\022\t\n\005UNSET\020\000\022\017\n\013STORY_" +
-      "QUEST\020\001\022\023\n\017CHALLENGE_QUEST\020\002\022\024\n\020DAILY_CO" +
-      "IN_QUEST\020\003\022\025\n\021TIMED_STORY_QUEST\020\004\"G\n\006Sta" +
-      "tus\022\024\n\020STATUS_UNDEFINED\020\000\022\021\n\rSTATUS_ACTI" +
-      "VE\020\001\022\024\n\020STATUS_COMPLETED\020\002B\007\n\005QuestB\002P\001b" +
-      "\006proto3"
+      "\005\032F\n\014DailyCounter\022\016\n\006window\030\001 \001(\003\022\r\n\005cou" +
+      "nt\030\002 \001(\005\022\027\n\017buckets_per_day\030\003 \001(\005\"g\n\007Con" +
+      "text\022\t\n\005UNSET\020\000\022\017\n\013STORY_QUEST\020\001\022\023\n\017CHAL" +
+      "LENGE_QUEST\020\002\022\024\n\020DAILY_COIN_QUEST\020\003\022\025\n\021T" +
+      "IMED_STORY_QUEST\020\004\"G\n\006Status\022\024\n\020STATUS_U" +
+      "NDEFINED\020\000\022\021\n\rSTATUS_ACTIVE\020\001\022\024\n\020STATUS_" +
+      "COMPLETED\020\002B\007\n\005QuestB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -183,7 +183,7 @@ public final class QuestOuterClass {
     internal_static_POGOProtos_Data_Quests_Quest_DailyCounter_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Quests_Quest_DailyCounter_descriptor,
-        new java.lang.String[] { "Window", "Count", });
+        new java.lang.String[] { "Window", "Count", "BucketsPerDay", });
     POGOProtos.Enums.QuestTypeOuterClass.getDescriptor();
     POGOProtos.Enums.PokemonIdOuterClass.getDescriptor();
     POGOProtos.Data.Quests.CatchPokemonQuestOuterClass.getDescriptor();

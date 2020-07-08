@@ -29,7 +29,7 @@ public final class CombatGlobalSettingsOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n.POGOProtos/Settings/CombatGlobalSettin" +
-      "gs.proto\022\023POGOProtos.Settings\"\331\006\n\024Combat" +
+      "gs.proto\022\023POGOProtos.Settings\"\204\007\n\024Combat" +
       "GlobalSettings\022\025\n\renable_combat\030\001 \001(\010\022&\n" +
       "\036maximum_daily_rewarded_battles\030\002 \001(\005\022!\n" +
       "\031enable_combat_stat_stages\030\003 \001(\010\022\034\n\024mini" +
@@ -51,7 +51,8 @@ public final class CombatGlobalSettingsOuterClass {
       "lyout_animations\030\024 \001(\010\022\031\n\021enable_battle_" +
       "hub\030\025 \001(\010\022\'\n\037matchmaking_timeout_duratio" +
       "n_ms\030\026 \001(\005\022%\n\035planned_downtime_timestamp" +
-      "_ms\030\027 \001(\003B\002P\001b\006proto3"
+      "_ms\030\027 \001(\003\022)\n!latency_compensation_thresh" +
+      "old_ms\030\030 \001(\005B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -62,7 +63,7 @@ public final class CombatGlobalSettingsOuterClass {
     internal_static_POGOProtos_Settings_CombatGlobalSettings_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Settings_CombatGlobalSettings_descriptor,
-        new java.lang.String[] { "EnableCombat", "MaximumDailyRewardedBattles", "EnableCombatStatStages", "MinimumPlayerLevel", "MaximumDailyNpcRewardedBattles", "ActiveCombatUpdateIntervalMs", "WaitingForPlayerUpdateIntervalMs", "ReadyForBattleUpdateIntervalMs", "PreMoveSubmitWindowMs", "PostMoveSubmitWindowMs", "EnableSockets", "EnableSpinMinigame", "EnableQuickSwapV2", "DeprecatedVsSeekerSetting", "VsSeekerWalkingDistPollDurationMs", "VsSeekerPlayerMinLevel", "MatchmakingPollDurationMs", "EnableParticleMinigame", "EnableVsSeekerUpgradeIap", "EnableFlyoutAnimations", "EnableBattleHub", "MatchmakingTimeoutDurationMs", "PlannedDowntimeTimestampMs", });
+        new java.lang.String[] { "EnableCombat", "MaximumDailyRewardedBattles", "EnableCombatStatStages", "MinimumPlayerLevel", "MaximumDailyNpcRewardedBattles", "ActiveCombatUpdateIntervalMs", "WaitingForPlayerUpdateIntervalMs", "ReadyForBattleUpdateIntervalMs", "PreMoveSubmitWindowMs", "PostMoveSubmitWindowMs", "EnableSockets", "EnableSpinMinigame", "EnableQuickSwapV2", "DeprecatedVsSeekerSetting", "VsSeekerWalkingDistPollDurationMs", "VsSeekerPlayerMinLevel", "MatchmakingPollDurationMs", "EnableParticleMinigame", "EnableVsSeekerUpgradeIap", "EnableFlyoutAnimations", "EnableBattleHub", "MatchmakingTimeoutDurationMs", "PlannedDowntimeTimestampMs", "LatencyCompensationThresholdMs", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

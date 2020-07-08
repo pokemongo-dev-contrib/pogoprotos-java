@@ -68,6 +68,19 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
+          case 26: {
+            POGOProtos.Data.Vasa.AdDetails.Builder subBuilder = null;
+            if (sponsoredGift_ != null) {
+              subBuilder = sponsoredGift_.toBuilder();
+            }
+            sponsoredGift_ = input.readMessage(POGOProtos.Data.Vasa.AdDetails.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(sponsoredGift_);
+              sponsoredGift_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -291,6 +304,29 @@ private static final long serialVersionUID = 0L;
     return getBattleUpdate();
   }
 
+  public static final int SPONSORED_GIFT_FIELD_NUMBER = 3;
+  private POGOProtos.Data.Vasa.AdDetails sponsoredGift_;
+  /**
+   * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+   * @return Whether the sponsoredGift field is set.
+   */
+  public boolean hasSponsoredGift() {
+    return sponsoredGift_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+   * @return The sponsoredGift.
+   */
+  public POGOProtos.Data.Vasa.AdDetails getSponsoredGift() {
+    return sponsoredGift_ == null ? POGOProtos.Data.Vasa.AdDetails.getDefaultInstance() : sponsoredGift_;
+  }
+  /**
+   * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+   */
+  public POGOProtos.Data.Vasa.AdDetailsOrBuilder getSponsoredGiftOrBuilder() {
+    return getSponsoredGift();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -311,6 +347,9 @@ private static final long serialVersionUID = 0L;
     if (battleUpdate_ != null) {
       output.writeMessage(2, getBattleUpdate());
     }
+    if (sponsoredGift_ != null) {
+      output.writeMessage(3, getSponsoredGift());
+    }
     unknownFields.writeTo(output);
   }
 
@@ -327,6 +366,10 @@ private static final long serialVersionUID = 0L;
     if (battleUpdate_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getBattleUpdate());
+    }
+    if (sponsoredGift_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(3, getSponsoredGift());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -349,6 +392,11 @@ private static final long serialVersionUID = 0L;
       if (!getBattleUpdate()
           .equals(other.getBattleUpdate())) return false;
     }
+    if (hasSponsoredGift() != other.hasSponsoredGift()) return false;
+    if (hasSponsoredGift()) {
+      if (!getSponsoredGift()
+          .equals(other.getSponsoredGift())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -365,6 +413,10 @@ private static final long serialVersionUID = 0L;
     if (hasBattleUpdate()) {
       hash = (37 * hash) + BATTLE_UPDATE_FIELD_NUMBER;
       hash = (53 * hash) + getBattleUpdate().hashCode();
+    }
+    if (hasSponsoredGift()) {
+      hash = (37 * hash) + SPONSORED_GIFT_FIELD_NUMBER;
+      hash = (53 * hash) + getSponsoredGift().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -507,6 +559,12 @@ private static final long serialVersionUID = 0L;
         battleUpdate_ = null;
         battleUpdateBuilder_ = null;
       }
+      if (sponsoredGiftBuilder_ == null) {
+        sponsoredGift_ = null;
+      } else {
+        sponsoredGift_ = null;
+        sponsoredGiftBuilder_ = null;
+      }
       return this;
     }
 
@@ -538,6 +596,11 @@ private static final long serialVersionUID = 0L;
         result.battleUpdate_ = battleUpdate_;
       } else {
         result.battleUpdate_ = battleUpdateBuilder_.build();
+      }
+      if (sponsoredGiftBuilder_ == null) {
+        result.sponsoredGift_ = sponsoredGift_;
+      } else {
+        result.sponsoredGift_ = sponsoredGiftBuilder_.build();
       }
       onBuilt();
       return result;
@@ -592,6 +655,9 @@ private static final long serialVersionUID = 0L;
       }
       if (other.hasBattleUpdate()) {
         mergeBattleUpdate(other.getBattleUpdate());
+      }
+      if (other.hasSponsoredGift()) {
+        mergeSponsoredGift(other.getSponsoredGift());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -791,6 +857,125 @@ private static final long serialVersionUID = 0L;
         battleUpdate_ = null;
       }
       return battleUpdateBuilder_;
+    }
+
+    private POGOProtos.Data.Vasa.AdDetails sponsoredGift_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Vasa.AdDetails, POGOProtos.Data.Vasa.AdDetails.Builder, POGOProtos.Data.Vasa.AdDetailsOrBuilder> sponsoredGiftBuilder_;
+    /**
+     * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+     * @return Whether the sponsoredGift field is set.
+     */
+    public boolean hasSponsoredGift() {
+      return sponsoredGiftBuilder_ != null || sponsoredGift_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+     * @return The sponsoredGift.
+     */
+    public POGOProtos.Data.Vasa.AdDetails getSponsoredGift() {
+      if (sponsoredGiftBuilder_ == null) {
+        return sponsoredGift_ == null ? POGOProtos.Data.Vasa.AdDetails.getDefaultInstance() : sponsoredGift_;
+      } else {
+        return sponsoredGiftBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+     */
+    public Builder setSponsoredGift(POGOProtos.Data.Vasa.AdDetails value) {
+      if (sponsoredGiftBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        sponsoredGift_ = value;
+        onChanged();
+      } else {
+        sponsoredGiftBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+     */
+    public Builder setSponsoredGift(
+        POGOProtos.Data.Vasa.AdDetails.Builder builderForValue) {
+      if (sponsoredGiftBuilder_ == null) {
+        sponsoredGift_ = builderForValue.build();
+        onChanged();
+      } else {
+        sponsoredGiftBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+     */
+    public Builder mergeSponsoredGift(POGOProtos.Data.Vasa.AdDetails value) {
+      if (sponsoredGiftBuilder_ == null) {
+        if (sponsoredGift_ != null) {
+          sponsoredGift_ =
+            POGOProtos.Data.Vasa.AdDetails.newBuilder(sponsoredGift_).mergeFrom(value).buildPartial();
+        } else {
+          sponsoredGift_ = value;
+        }
+        onChanged();
+      } else {
+        sponsoredGiftBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+     */
+    public Builder clearSponsoredGift() {
+      if (sponsoredGiftBuilder_ == null) {
+        sponsoredGift_ = null;
+        onChanged();
+      } else {
+        sponsoredGift_ = null;
+        sponsoredGiftBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+     */
+    public POGOProtos.Data.Vasa.AdDetails.Builder getSponsoredGiftBuilder() {
+      
+      onChanged();
+      return getSponsoredGiftFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+     */
+    public POGOProtos.Data.Vasa.AdDetailsOrBuilder getSponsoredGiftOrBuilder() {
+      if (sponsoredGiftBuilder_ != null) {
+        return sponsoredGiftBuilder_.getMessageOrBuilder();
+      } else {
+        return sponsoredGift_ == null ?
+            POGOProtos.Data.Vasa.AdDetails.getDefaultInstance() : sponsoredGift_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Vasa.AdDetails sponsored_gift = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Vasa.AdDetails, POGOProtos.Data.Vasa.AdDetails.Builder, POGOProtos.Data.Vasa.AdDetailsOrBuilder> 
+        getSponsoredGiftFieldBuilder() {
+      if (sponsoredGiftBuilder_ == null) {
+        sponsoredGiftBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Data.Vasa.AdDetails, POGOProtos.Data.Vasa.AdDetails.Builder, POGOProtos.Data.Vasa.AdDetailsOrBuilder>(
+                getSponsoredGift(),
+                getParentForChildren(),
+                isClean());
+        sponsoredGift_ = null;
+      }
+      return sponsoredGiftBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

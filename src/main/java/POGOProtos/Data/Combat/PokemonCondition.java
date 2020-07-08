@@ -125,6 +125,20 @@ private static final long serialVersionUID = 0L;
             conditionCase_ = 6;
             break;
           }
+          case 58: {
+            POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.Builder subBuilder = null;
+            if (conditionCase_ == 7) {
+              subBuilder = ((POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) condition_).toBuilder();
+            }
+            condition_ =
+                input.readMessage(POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) condition_);
+              condition_ = subBuilder.buildPartial();
+            }
+            conditionCase_ = 7;
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -155,6 +169,562 @@ private static final long serialVersionUID = 0L;
     return POGOProtos.Data.Combat.PokemonConditionOuterClass.internal_static_POGOProtos_Data_Combat_PokemonCondition_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             POGOProtos.Data.Combat.PokemonCondition.class, POGOProtos.Data.Combat.PokemonCondition.Builder.class);
+  }
+
+  public interface PokemonCaughtTimestampOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int64 after_timestamp = 1;</code>
+     * @return The afterTimestamp.
+     */
+    long getAfterTimestamp();
+
+    /**
+     * <code>int64 before_timestamp = 2;</code>
+     * @return The beforeTimestamp.
+     */
+    long getBeforeTimestamp();
+  }
+  /**
+   * Protobuf type {@code POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp}
+   */
+  public  static final class PokemonCaughtTimestamp extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp)
+      PokemonCaughtTimestampOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use PokemonCaughtTimestamp.newBuilder() to construct.
+    private PokemonCaughtTimestamp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private PokemonCaughtTimestamp() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new PokemonCaughtTimestamp();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private PokemonCaughtTimestamp(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              afterTimestamp_ = input.readInt64();
+              break;
+            }
+            case 16: {
+
+              beforeTimestamp_ = input.readInt64();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return POGOProtos.Data.Combat.PokemonConditionOuterClass.internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonCaughtTimestamp_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return POGOProtos.Data.Combat.PokemonConditionOuterClass.internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonCaughtTimestamp_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.class, POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.Builder.class);
+    }
+
+    public static final int AFTER_TIMESTAMP_FIELD_NUMBER = 1;
+    private long afterTimestamp_;
+    /**
+     * <code>int64 after_timestamp = 1;</code>
+     * @return The afterTimestamp.
+     */
+    public long getAfterTimestamp() {
+      return afterTimestamp_;
+    }
+
+    public static final int BEFORE_TIMESTAMP_FIELD_NUMBER = 2;
+    private long beforeTimestamp_;
+    /**
+     * <code>int64 before_timestamp = 2;</code>
+     * @return The beforeTimestamp.
+     */
+    public long getBeforeTimestamp() {
+      return beforeTimestamp_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (afterTimestamp_ != 0L) {
+        output.writeInt64(1, afterTimestamp_);
+      }
+      if (beforeTimestamp_ != 0L) {
+        output.writeInt64(2, beforeTimestamp_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (afterTimestamp_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, afterTimestamp_);
+      }
+      if (beforeTimestamp_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(2, beforeTimestamp_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp)) {
+        return super.equals(obj);
+      }
+      POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp other = (POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) obj;
+
+      if (getAfterTimestamp()
+          != other.getAfterTimestamp()) return false;
+      if (getBeforeTimestamp()
+          != other.getBeforeTimestamp()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + AFTER_TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getAfterTimestamp());
+      hash = (37 * hash) + BEFORE_TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getBeforeTimestamp());
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp)
+        POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestampOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return POGOProtos.Data.Combat.PokemonConditionOuterClass.internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonCaughtTimestamp_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return POGOProtos.Data.Combat.PokemonConditionOuterClass.internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonCaughtTimestamp_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.class, POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.Builder.class);
+      }
+
+      // Construct using POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        afterTimestamp_ = 0L;
+
+        beforeTimestamp_ = 0L;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return POGOProtos.Data.Combat.PokemonConditionOuterClass.internal_static_POGOProtos_Data_Combat_PokemonCondition_PokemonCaughtTimestamp_descriptor;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp getDefaultInstanceForType() {
+        return POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp build() {
+        POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp buildPartial() {
+        POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp result = new POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp(this);
+        result.afterTimestamp_ = afterTimestamp_;
+        result.beforeTimestamp_ = beforeTimestamp_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) {
+          return mergeFrom((POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp other) {
+        if (other == POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.getDefaultInstance()) return this;
+        if (other.getAfterTimestamp() != 0L) {
+          setAfterTimestamp(other.getAfterTimestamp());
+        }
+        if (other.getBeforeTimestamp() != 0L) {
+          setBeforeTimestamp(other.getBeforeTimestamp());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private long afterTimestamp_ ;
+      /**
+       * <code>int64 after_timestamp = 1;</code>
+       * @return The afterTimestamp.
+       */
+      public long getAfterTimestamp() {
+        return afterTimestamp_;
+      }
+      /**
+       * <code>int64 after_timestamp = 1;</code>
+       * @param value The afterTimestamp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAfterTimestamp(long value) {
+        
+        afterTimestamp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 after_timestamp = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAfterTimestamp() {
+        
+        afterTimestamp_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long beforeTimestamp_ ;
+      /**
+       * <code>int64 before_timestamp = 2;</code>
+       * @return The beforeTimestamp.
+       */
+      public long getBeforeTimestamp() {
+        return beforeTimestamp_;
+      }
+      /**
+       * <code>int64 before_timestamp = 2;</code>
+       * @param value The beforeTimestamp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBeforeTimestamp(long value) {
+        
+        beforeTimestamp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 before_timestamp = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBeforeTimestamp() {
+        
+        beforeTimestamp_ = 0L;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp)
+    }
+
+    // @@protoc_insertion_point(class_scope:POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp)
+    private static final POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp();
+    }
+
+    public static POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<PokemonCaughtTimestamp>
+        PARSER = new com.google.protobuf.AbstractParser<PokemonCaughtTimestamp>() {
+      @java.lang.Override
+      public PokemonCaughtTimestamp parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new PokemonCaughtTimestamp(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<PokemonCaughtTimestamp> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PokemonCaughtTimestamp> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
   }
 
   public interface PokemonBanlistOrBuilder extends
@@ -2667,6 +3237,7 @@ private static final long serialVersionUID = 0L;
     WITH_POKEMON_CATEGORY(4),
     POKEMON_WHITELIST(5),
     POKEMON_BANLIST(6),
+    POKEMON_CAUGHT_TIMESTAMP(7),
     CONDITION_NOT_SET(0);
     private final int value;
     private ConditionCase(int value) {
@@ -2689,6 +3260,7 @@ private static final long serialVersionUID = 0L;
         case 4: return WITH_POKEMON_CATEGORY;
         case 5: return POKEMON_WHITELIST;
         case 6: return POKEMON_BANLIST;
+        case 7: return POKEMON_CAUGHT_TIMESTAMP;
         case 0: return CONDITION_NOT_SET;
         default: return null;
       }
@@ -2863,6 +3435,34 @@ private static final long serialVersionUID = 0L;
     return POGOProtos.Data.Combat.PokemonCondition.PokemonBanlist.getDefaultInstance();
   }
 
+  public static final int POKEMON_CAUGHT_TIMESTAMP_FIELD_NUMBER = 7;
+  /**
+   * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+   * @return Whether the pokemonCaughtTimestamp field is set.
+   */
+  public boolean hasPokemonCaughtTimestamp() {
+    return conditionCase_ == 7;
+  }
+  /**
+   * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+   * @return The pokemonCaughtTimestamp.
+   */
+  public POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp getPokemonCaughtTimestamp() {
+    if (conditionCase_ == 7) {
+       return (POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) condition_;
+    }
+    return POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+   */
+  public POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder() {
+    if (conditionCase_ == 7) {
+       return (POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) condition_;
+    }
+    return POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.getDefaultInstance();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -2894,6 +3494,9 @@ private static final long serialVersionUID = 0L;
     }
     if (conditionCase_ == 6) {
       output.writeMessage(6, (POGOProtos.Data.Combat.PokemonCondition.PokemonBanlist) condition_);
+    }
+    if (conditionCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) condition_);
     }
     unknownFields.writeTo(output);
   }
@@ -2927,6 +3530,10 @@ private static final long serialVersionUID = 0L;
     if (conditionCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(6, (POGOProtos.Data.Combat.PokemonCondition.PokemonBanlist) condition_);
+    }
+    if (conditionCase_ == 7) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(7, (POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) condition_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -2966,6 +3573,10 @@ private static final long serialVersionUID = 0L;
         if (!getPokemonBanlist()
             .equals(other.getPokemonBanlist())) return false;
         break;
+      case 7:
+        if (!getPokemonCaughtTimestamp()
+            .equals(other.getPokemonCaughtTimestamp())) return false;
+        break;
       case 0:
       default:
     }
@@ -3002,6 +3613,10 @@ private static final long serialVersionUID = 0L;
       case 6:
         hash = (37 * hash) + POKEMON_BANLIST_FIELD_NUMBER;
         hash = (53 * hash) + getPokemonBanlist().hashCode();
+        break;
+      case 7:
+        hash = (37 * hash) + POKEMON_CAUGHT_TIMESTAMP_FIELD_NUMBER;
+        hash = (53 * hash) + getPokemonCaughtTimestamp().hashCode();
         break;
       case 0:
       default:
@@ -3205,6 +3820,13 @@ private static final long serialVersionUID = 0L;
           result.condition_ = pokemonBanlistBuilder_.build();
         }
       }
+      if (conditionCase_ == 7) {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = pokemonCaughtTimestampBuilder_.build();
+        }
+      }
       result.conditionCase_ = conditionCase_;
       onBuilt();
       return result;
@@ -3276,6 +3898,10 @@ private static final long serialVersionUID = 0L;
         }
         case POKEMON_BANLIST: {
           mergePokemonBanlist(other.getPokemonBanlist());
+          break;
+        }
+        case POKEMON_CAUGHT_TIMESTAMP: {
+          mergePokemonCaughtTimestamp(other.getPokemonCaughtTimestamp());
           break;
         }
         case CONDITION_NOT_SET: {
@@ -4066,6 +4692,144 @@ private static final long serialVersionUID = 0L;
       conditionCase_ = 6;
       onChanged();;
       return pokemonBanlistBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp, POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.Builder, POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestampOrBuilder> pokemonCaughtTimestampBuilder_;
+    /**
+     * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     * @return Whether the pokemonCaughtTimestamp field is set.
+     */
+    public boolean hasPokemonCaughtTimestamp() {
+      return conditionCase_ == 7;
+    }
+    /**
+     * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     * @return The pokemonCaughtTimestamp.
+     */
+    public POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp getPokemonCaughtTimestamp() {
+      if (pokemonCaughtTimestampBuilder_ == null) {
+        if (conditionCase_ == 7) {
+          return (POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) condition_;
+        }
+        return POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 7) {
+          return pokemonCaughtTimestampBuilder_.getMessage();
+        }
+        return POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     */
+    public Builder setPokemonCaughtTimestamp(POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp value) {
+      if (pokemonCaughtTimestampBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        pokemonCaughtTimestampBuilder_.setMessage(value);
+      }
+      conditionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     */
+    public Builder setPokemonCaughtTimestamp(
+        POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.Builder builderForValue) {
+      if (pokemonCaughtTimestampBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        pokemonCaughtTimestampBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     */
+    public Builder mergePokemonCaughtTimestamp(POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp value) {
+      if (pokemonCaughtTimestampBuilder_ == null) {
+        if (conditionCase_ == 7 &&
+            condition_ != POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.getDefaultInstance()) {
+          condition_ = POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.newBuilder((POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 7) {
+          pokemonCaughtTimestampBuilder_.mergeFrom(value);
+        }
+        pokemonCaughtTimestampBuilder_.setMessage(value);
+      }
+      conditionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     */
+    public Builder clearPokemonCaughtTimestamp() {
+      if (pokemonCaughtTimestampBuilder_ == null) {
+        if (conditionCase_ == 7) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 7) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        pokemonCaughtTimestampBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     */
+    public POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.Builder getPokemonCaughtTimestampBuilder() {
+      return getPokemonCaughtTimestampFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     */
+    public POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder() {
+      if ((conditionCase_ == 7) && (pokemonCaughtTimestampBuilder_ != null)) {
+        return pokemonCaughtTimestampBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 7) {
+          return (POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) condition_;
+        }
+        return POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp, POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.Builder, POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestampOrBuilder> 
+        getPokemonCaughtTimestampFieldBuilder() {
+      if (pokemonCaughtTimestampBuilder_ == null) {
+        if (!(conditionCase_ == 7)) {
+          condition_ = POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.getDefaultInstance();
+        }
+        pokemonCaughtTimestampBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp, POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp.Builder, POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestampOrBuilder>(
+                (POGOProtos.Data.Combat.PokemonCondition.PokemonCaughtTimestamp) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 7;
+      onChanged();;
+      return pokemonCaughtTimestampBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

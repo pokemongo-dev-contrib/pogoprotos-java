@@ -1301,6 +1301,22 @@ public enum RequestType
    * Implemented
    * </pre>
    *
+   * <code>GET_ROCKET_BALLOON = 1206;</code>
+   */
+  GET_ROCKET_BALLOON(1206),
+  /**
+   * <pre>
+   * ???
+   * </pre>
+   *
+   * <code>START_ROCKET_BALLOON_INCIDENT = 1207;</code>
+   */
+  START_ROCKET_BALLOON_INCIDENT(1207),
+  /**
+   * <pre>
+   * Implemented
+   * </pre>
+   *
    * <code>VS_SEEKER_START_MATCHMAKING = 1300;</code>
    */
   VS_SEEKER_START_MATCHMAKING(1300),
@@ -1480,6 +1496,30 @@ public enum RequestType
    * <code>DAILY_ENCOUNTER = 1602;</code>
    */
   DAILY_ENCOUNTER(1602),
+  /**
+   * <pre>
+   * Implemented
+   * </pre>
+   *
+   * <code>OPEN_SPONSORED_GIFT = 1650;</code>
+   */
+  OPEN_SPONSORED_GIFT(1650),
+  /**
+   * <pre>
+   * ???
+   * </pre>
+   *
+   * <code>SPONSORED_GIFT_REPORT_INTERACTION = 1651;</code>
+   */
+  SPONSORED_GIFT_REPORT_INTERACTION(1651),
+  /**
+   * <pre>
+   * Implemented
+   * </pre>
+   *
+   * <code>SAVE_PLAYER_PREFERENCES = 1652;</code>
+   */
+  SAVE_PLAYER_PREFERENCES(1652),
   UNRECOGNIZED(-1),
   ;
 
@@ -2776,6 +2816,22 @@ public enum RequestType
    * Implemented
    * </pre>
    *
+   * <code>GET_ROCKET_BALLOON = 1206;</code>
+   */
+  public static final int GET_ROCKET_BALLOON_VALUE = 1206;
+  /**
+   * <pre>
+   * ???
+   * </pre>
+   *
+   * <code>START_ROCKET_BALLOON_INCIDENT = 1207;</code>
+   */
+  public static final int START_ROCKET_BALLOON_INCIDENT_VALUE = 1207;
+  /**
+   * <pre>
+   * Implemented
+   * </pre>
+   *
    * <code>VS_SEEKER_START_MATCHMAKING = 1300;</code>
    */
   public static final int VS_SEEKER_START_MATCHMAKING_VALUE = 1300;
@@ -2955,6 +3011,30 @@ public enum RequestType
    * <code>DAILY_ENCOUNTER = 1602;</code>
    */
   public static final int DAILY_ENCOUNTER_VALUE = 1602;
+  /**
+   * <pre>
+   * Implemented
+   * </pre>
+   *
+   * <code>OPEN_SPONSORED_GIFT = 1650;</code>
+   */
+  public static final int OPEN_SPONSORED_GIFT_VALUE = 1650;
+  /**
+   * <pre>
+   * ???
+   * </pre>
+   *
+   * <code>SPONSORED_GIFT_REPORT_INTERACTION = 1651;</code>
+   */
+  public static final int SPONSORED_GIFT_REPORT_INTERACTION_VALUE = 1651;
+  /**
+   * <pre>
+   * Implemented
+   * </pre>
+   *
+   * <code>SAVE_PLAYER_PREFERENCES = 1652;</code>
+   */
+  public static final int SAVE_PLAYER_PREFERENCES_VALUE = 1652;
 
 
   public final int getNumber() {
@@ -3142,6 +3222,8 @@ public enum RequestType
       case 1203: return INVASION_BATTLE_UPDATE;
       case 1204: return INVASION_ENCOUNTER;
       case 1205: return PURIFY_POKEMON;
+      case 1206: return GET_ROCKET_BALLOON;
+      case 1207: return START_ROCKET_BALLOON_INCIDENT;
       case 1300: return VS_SEEKER_START_MATCHMAKING;
       case 1301: return CANCEL_MATCHMAKING;
       case 1302: return GET_MATCHMAKING_STATUS;
@@ -3165,6 +3247,9 @@ public enum RequestType
       case 1504: return SEND_RAID_INVITATION;
       case 1601: return GET_DAILY_ENCOUNTER;
       case 1602: return DAILY_ENCOUNTER;
+      case 1650: return OPEN_SPONSORED_GIFT;
+      case 1651: return SPONSORED_GIFT_REPORT_INTERACTION;
+      case 1652: return SAVE_PLAYER_PREFERENCES;
       default: return null;
     }
   }

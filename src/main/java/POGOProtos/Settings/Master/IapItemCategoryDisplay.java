@@ -21,6 +21,7 @@ private static final long serialVersionUID = 0L;
     bannerTitle_ = "";
     imageUrl_ = "";
     description_ = "";
+    subcategory_ = "";
   }
 
   @java.lang.Override
@@ -96,6 +97,17 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             description_ = s;
+            break;
+          }
+          case 72: {
+
+            displayRows_ = input.readInt32();
+            break;
+          }
+          case 82: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            subcategory_ = s;
             break;
           }
           default: {
@@ -323,6 +335,52 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int DISPLAY_ROWS_FIELD_NUMBER = 9;
+  private int displayRows_;
+  /**
+   * <code>int32 display_rows = 9;</code>
+   * @return The displayRows.
+   */
+  public int getDisplayRows() {
+    return displayRows_;
+  }
+
+  public static final int SUBCATEGORY_FIELD_NUMBER = 10;
+  private volatile java.lang.Object subcategory_;
+  /**
+   * <code>string subcategory = 10;</code>
+   * @return The subcategory.
+   */
+  public java.lang.String getSubcategory() {
+    java.lang.Object ref = subcategory_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      subcategory_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string subcategory = 10;</code>
+   * @return The bytes for subcategory.
+   */
+  public com.google.protobuf.ByteString
+      getSubcategoryBytes() {
+    java.lang.Object ref = subcategory_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      subcategory_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -361,6 +419,12 @@ private static final long serialVersionUID = 0L;
     if (!getDescriptionBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 8, description_);
     }
+    if (displayRows_ != 0) {
+      output.writeInt32(9, displayRows_);
+    }
+    if (!getSubcategoryBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 10, subcategory_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -398,6 +462,13 @@ private static final long serialVersionUID = 0L;
     if (!getDescriptionBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, description_);
     }
+    if (displayRows_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(9, displayRows_);
+    }
+    if (!getSubcategoryBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, subcategory_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -428,6 +499,10 @@ private static final long serialVersionUID = 0L;
         .equals(other.getImageUrl())) return false;
     if (!getDescription()
         .equals(other.getDescription())) return false;
+    if (getDisplayRows()
+        != other.getDisplayRows()) return false;
+    if (!getSubcategory()
+        .equals(other.getSubcategory())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -457,6 +532,10 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getImageUrl().hashCode();
     hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
     hash = (53 * hash) + getDescription().hashCode();
+    hash = (37 * hash) + DISPLAY_ROWS_FIELD_NUMBER;
+    hash = (53 * hash) + getDisplayRows();
+    hash = (37 * hash) + SUBCATEGORY_FIELD_NUMBER;
+    hash = (53 * hash) + getSubcategory().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -606,6 +685,10 @@ private static final long serialVersionUID = 0L;
 
       description_ = "";
 
+      displayRows_ = 0;
+
+      subcategory_ = "";
+
       return this;
     }
 
@@ -640,6 +723,8 @@ private static final long serialVersionUID = 0L;
       result.bannerTitle_ = bannerTitle_;
       result.imageUrl_ = imageUrl_;
       result.description_ = description_;
+      result.displayRows_ = displayRows_;
+      result.subcategory_ = subcategory_;
       onBuilt();
       return result;
     }
@@ -714,6 +799,13 @@ private static final long serialVersionUID = 0L;
       }
       if (!other.getDescription().isEmpty()) {
         description_ = other.description_;
+        onChanged();
+      }
+      if (other.getDisplayRows() != 0) {
+        setDisplayRows(other.getDisplayRows());
+      }
+      if (!other.getSubcategory().isEmpty()) {
+        subcategory_ = other.subcategory_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -1187,6 +1279,112 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       description_ = value;
+      onChanged();
+      return this;
+    }
+
+    private int displayRows_ ;
+    /**
+     * <code>int32 display_rows = 9;</code>
+     * @return The displayRows.
+     */
+    public int getDisplayRows() {
+      return displayRows_;
+    }
+    /**
+     * <code>int32 display_rows = 9;</code>
+     * @param value The displayRows to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDisplayRows(int value) {
+      
+      displayRows_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 display_rows = 9;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearDisplayRows() {
+      
+      displayRows_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object subcategory_ = "";
+    /**
+     * <code>string subcategory = 10;</code>
+     * @return The subcategory.
+     */
+    public java.lang.String getSubcategory() {
+      java.lang.Object ref = subcategory_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        subcategory_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string subcategory = 10;</code>
+     * @return The bytes for subcategory.
+     */
+    public com.google.protobuf.ByteString
+        getSubcategoryBytes() {
+      java.lang.Object ref = subcategory_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        subcategory_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string subcategory = 10;</code>
+     * @param value The subcategory to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubcategory(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      subcategory_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string subcategory = 10;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSubcategory() {
+      
+      subcategory_ = getDefaultInstance().getSubcategory();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string subcategory = 10;</code>
+     * @param value The bytes for subcategory to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubcategoryBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      subcategory_ = value;
       onChanged();
       return this;
     }

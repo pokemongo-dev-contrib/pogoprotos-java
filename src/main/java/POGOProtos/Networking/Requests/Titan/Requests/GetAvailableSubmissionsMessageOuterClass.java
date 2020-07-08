@@ -31,19 +31,25 @@ public final class GetAvailableSubmissionsMessageOuterClass {
       "\nRPOGOProtos/Networking/Requests/Titan/R" +
       "equests/GetAvailableSubmissionsMessage.p" +
       "roto\022-POGOProtos.Networking.Requests.Tit" +
-      "an.Requests\" \n\036GetAvailableSubmissionsMe" +
-      "ssageB\002P\001b\006proto3"
+      "an.Requests\032+POGOProtos/Enums/PlayerSubm" +
+      "issionType.proto\"\243\001\n\036GetAvailableSubmiss" +
+      "ionsMessage\022?\n\017submission_type\030\001 \001(\0162&.P" +
+      "OGOProtos.Enums.PlayerSubmissionType\022@\n\020" +
+      "submission_types\030\002 \003(\0162&.POGOProtos.Enum" +
+      "s.PlayerSubmissionTypeB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          POGOProtos.Enums.PlayerSubmissionTypeOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Networking_Requests_Titan_Requests_GetAvailableSubmissionsMessage_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Networking_Requests_Titan_Requests_GetAvailableSubmissionsMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Requests_Titan_Requests_GetAvailableSubmissionsMessage_descriptor,
-        new java.lang.String[] { });
+        new java.lang.String[] { "SubmissionType", "SubmissionTypes", });
+    POGOProtos.Enums.PlayerSubmissionTypeOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

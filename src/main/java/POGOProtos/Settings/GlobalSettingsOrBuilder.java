@@ -789,4 +789,34 @@ public interface GlobalSettingsOrBuilder extends
    * <code>.POGOProtos.Settings.RaidTicketSettings raid_ticket_settings = 55;</code>
    */
   POGOProtos.Settings.RaidTicketSettingsOrBuilder getRaidTicketSettingsOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+   * @return Whether the rocketBalloonSettings field is set.
+   */
+  boolean hasRocketBalloonSettings();
+  /**
+   * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+   * @return The rocketBalloonSettings.
+   */
+  POGOProtos.Settings.RocketBalloonGlobalSettings getRocketBalloonSettings();
+  /**
+   * <code>.POGOProtos.Settings.RocketBalloonGlobalSettings rocket_balloon_settings = 56;</code>
+   */
+  POGOProtos.Settings.RocketBalloonGlobalSettingsOrBuilder getRocketBalloonSettingsOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+   * @return Whether the lobbyClientSettings field is set.
+   */
+  boolean hasLobbyClientSettings();
+  /**
+   * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+   * @return The lobbyClientSettings.
+   */
+  POGOProtos.Settings.LobbyClientSettings getLobbyClientSettings();
+  /**
+   * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
+   */
+  POGOProtos.Settings.LobbyClientSettingsOrBuilder getLobbyClientSettingsOrBuilder();
 }

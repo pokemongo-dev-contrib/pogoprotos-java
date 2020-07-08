@@ -16,6 +16,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AccountSettings() {
+    onlineStatusConsent_ = 0;
+    lastPlayedDateConsent_ = 0;
   }
 
   @java.lang.Override
@@ -51,6 +53,18 @@ private static final long serialVersionUID = 0L;
           case 8: {
 
             optOutSocialGraphImport_ = input.readBool();
+            break;
+          }
+          case 16: {
+            int rawValue = input.readEnum();
+
+            onlineStatusConsent_ = rawValue;
+            break;
+          }
+          case 24: {
+            int rawValue = input.readEnum();
+
+            lastPlayedDateConsent_ = rawValue;
             break;
           }
           default: {
@@ -95,6 +109,44 @@ private static final long serialVersionUID = 0L;
     return optOutSocialGraphImport_;
   }
 
+  public static final int ONLINE_STATUS_CONSENT_FIELD_NUMBER = 2;
+  private int onlineStatusConsent_;
+  /**
+   * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus online_status_consent = 2;</code>
+   * @return The enum numeric value on the wire for onlineStatusConsent.
+   */
+  public int getOnlineStatusConsentValue() {
+    return onlineStatusConsent_;
+  }
+  /**
+   * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus online_status_consent = 2;</code>
+   * @return The onlineStatusConsent.
+   */
+  public POGOProtos.Settings.SocialSettings.ConsentStatus getOnlineStatusConsent() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Settings.SocialSettings.ConsentStatus result = POGOProtos.Settings.SocialSettings.ConsentStatus.valueOf(onlineStatusConsent_);
+    return result == null ? POGOProtos.Settings.SocialSettings.ConsentStatus.UNRECOGNIZED : result;
+  }
+
+  public static final int LAST_PLAYED_DATE_CONSENT_FIELD_NUMBER = 3;
+  private int lastPlayedDateConsent_;
+  /**
+   * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus last_played_date_consent = 3;</code>
+   * @return The enum numeric value on the wire for lastPlayedDateConsent.
+   */
+  public int getLastPlayedDateConsentValue() {
+    return lastPlayedDateConsent_;
+  }
+  /**
+   * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus last_played_date_consent = 3;</code>
+   * @return The lastPlayedDateConsent.
+   */
+  public POGOProtos.Settings.SocialSettings.ConsentStatus getLastPlayedDateConsent() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Settings.SocialSettings.ConsentStatus result = POGOProtos.Settings.SocialSettings.ConsentStatus.valueOf(lastPlayedDateConsent_);
+    return result == null ? POGOProtos.Settings.SocialSettings.ConsentStatus.UNRECOGNIZED : result;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -112,6 +164,12 @@ private static final long serialVersionUID = 0L;
     if (optOutSocialGraphImport_ != false) {
       output.writeBool(1, optOutSocialGraphImport_);
     }
+    if (onlineStatusConsent_ != POGOProtos.Settings.SocialSettings.ConsentStatus.UNKNOWN.getNumber()) {
+      output.writeEnum(2, onlineStatusConsent_);
+    }
+    if (lastPlayedDateConsent_ != POGOProtos.Settings.SocialSettings.ConsentStatus.UNKNOWN.getNumber()) {
+      output.writeEnum(3, lastPlayedDateConsent_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -124,6 +182,14 @@ private static final long serialVersionUID = 0L;
     if (optOutSocialGraphImport_ != false) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(1, optOutSocialGraphImport_);
+    }
+    if (onlineStatusConsent_ != POGOProtos.Settings.SocialSettings.ConsentStatus.UNKNOWN.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(2, onlineStatusConsent_);
+    }
+    if (lastPlayedDateConsent_ != POGOProtos.Settings.SocialSettings.ConsentStatus.UNKNOWN.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(3, lastPlayedDateConsent_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -142,6 +208,8 @@ private static final long serialVersionUID = 0L;
 
     if (getOptOutSocialGraphImport()
         != other.getOptOutSocialGraphImport()) return false;
+    if (onlineStatusConsent_ != other.onlineStatusConsent_) return false;
+    if (lastPlayedDateConsent_ != other.lastPlayedDateConsent_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -156,6 +224,10 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + OPT_OUT_SOCIAL_GRAPH_IMPORT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getOptOutSocialGraphImport());
+    hash = (37 * hash) + ONLINE_STATUS_CONSENT_FIELD_NUMBER;
+    hash = (53 * hash) + onlineStatusConsent_;
+    hash = (37 * hash) + LAST_PLAYED_DATE_CONSENT_FIELD_NUMBER;
+    hash = (53 * hash) + lastPlayedDateConsent_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -291,6 +363,10 @@ private static final long serialVersionUID = 0L;
       super.clear();
       optOutSocialGraphImport_ = false;
 
+      onlineStatusConsent_ = 0;
+
+      lastPlayedDateConsent_ = 0;
+
       return this;
     }
 
@@ -318,6 +394,8 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Settings.AccountSettings buildPartial() {
       POGOProtos.Settings.AccountSettings result = new POGOProtos.Settings.AccountSettings(this);
       result.optOutSocialGraphImport_ = optOutSocialGraphImport_;
+      result.onlineStatusConsent_ = onlineStatusConsent_;
+      result.lastPlayedDateConsent_ = lastPlayedDateConsent_;
       onBuilt();
       return result;
     }
@@ -368,6 +446,12 @@ private static final long serialVersionUID = 0L;
       if (other == POGOProtos.Settings.AccountSettings.getDefaultInstance()) return this;
       if (other.getOptOutSocialGraphImport() != false) {
         setOptOutSocialGraphImport(other.getOptOutSocialGraphImport());
+      }
+      if (other.onlineStatusConsent_ != 0) {
+        setOnlineStatusConsentValue(other.getOnlineStatusConsentValue());
+      }
+      if (other.lastPlayedDateConsent_ != 0) {
+        setLastPlayedDateConsentValue(other.getLastPlayedDateConsentValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -424,6 +508,110 @@ private static final long serialVersionUID = 0L;
     public Builder clearOptOutSocialGraphImport() {
       
       optOutSocialGraphImport_ = false;
+      onChanged();
+      return this;
+    }
+
+    private int onlineStatusConsent_ = 0;
+    /**
+     * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus online_status_consent = 2;</code>
+     * @return The enum numeric value on the wire for onlineStatusConsent.
+     */
+    public int getOnlineStatusConsentValue() {
+      return onlineStatusConsent_;
+    }
+    /**
+     * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus online_status_consent = 2;</code>
+     * @param value The enum numeric value on the wire for onlineStatusConsent to set.
+     * @return This builder for chaining.
+     */
+    public Builder setOnlineStatusConsentValue(int value) {
+      onlineStatusConsent_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus online_status_consent = 2;</code>
+     * @return The onlineStatusConsent.
+     */
+    public POGOProtos.Settings.SocialSettings.ConsentStatus getOnlineStatusConsent() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Settings.SocialSettings.ConsentStatus result = POGOProtos.Settings.SocialSettings.ConsentStatus.valueOf(onlineStatusConsent_);
+      return result == null ? POGOProtos.Settings.SocialSettings.ConsentStatus.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus online_status_consent = 2;</code>
+     * @param value The onlineStatusConsent to set.
+     * @return This builder for chaining.
+     */
+    public Builder setOnlineStatusConsent(POGOProtos.Settings.SocialSettings.ConsentStatus value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      onlineStatusConsent_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus online_status_consent = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearOnlineStatusConsent() {
+      
+      onlineStatusConsent_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int lastPlayedDateConsent_ = 0;
+    /**
+     * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus last_played_date_consent = 3;</code>
+     * @return The enum numeric value on the wire for lastPlayedDateConsent.
+     */
+    public int getLastPlayedDateConsentValue() {
+      return lastPlayedDateConsent_;
+    }
+    /**
+     * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus last_played_date_consent = 3;</code>
+     * @param value The enum numeric value on the wire for lastPlayedDateConsent to set.
+     * @return This builder for chaining.
+     */
+    public Builder setLastPlayedDateConsentValue(int value) {
+      lastPlayedDateConsent_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus last_played_date_consent = 3;</code>
+     * @return The lastPlayedDateConsent.
+     */
+    public POGOProtos.Settings.SocialSettings.ConsentStatus getLastPlayedDateConsent() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Settings.SocialSettings.ConsentStatus result = POGOProtos.Settings.SocialSettings.ConsentStatus.valueOf(lastPlayedDateConsent_);
+      return result == null ? POGOProtos.Settings.SocialSettings.ConsentStatus.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus last_played_date_consent = 3;</code>
+     * @param value The lastPlayedDateConsent to set.
+     * @return This builder for chaining.
+     */
+    public Builder setLastPlayedDateConsent(POGOProtos.Settings.SocialSettings.ConsentStatus value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      lastPlayedDateConsent_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.SocialSettings.ConsentStatus last_played_date_consent = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearLastPlayedDateConsent() {
+      
+      lastPlayedDateConsent_ = 0;
       onChanged();
       return this;
     }

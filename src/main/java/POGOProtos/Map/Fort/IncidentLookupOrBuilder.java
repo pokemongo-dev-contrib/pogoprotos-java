@@ -42,4 +42,15 @@ public interface IncidentLookupOrBuilder extends
    * @return The fortLng.
    */
   double getFortLng();
+
+  /**
+   * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 5;</code>
+   * @return The enum numeric value on the wire for context.
+   */
+  int getContextValue();
+  /**
+   * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext context = 5;</code>
+   * @return The context.
+   */
+  POGOProtos.Enums.EnumWrapper.InvasionContext getContext();
 }

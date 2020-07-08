@@ -82,6 +82,16 @@ private static final long serialVersionUID = 0L;
             fbUserId_ = s;
             break;
           }
+          case 48: {
+
+            level_ = input.readInt32();
+            break;
+          }
+          case 56: {
+
+            experience_ = input.readInt64();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -268,6 +278,26 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int LEVEL_FIELD_NUMBER = 6;
+  private int level_;
+  /**
+   * <code>int32 level = 6;</code>
+   * @return The level.
+   */
+  public int getLevel() {
+    return level_;
+  }
+
+  public static final int EXPERIENCE_FIELD_NUMBER = 7;
+  private long experience_;
+  /**
+   * <code>int64 experience = 7;</code>
+   * @return The experience.
+   */
+  public long getExperience() {
+    return experience_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -297,6 +327,12 @@ private static final long serialVersionUID = 0L;
     if (!getFbUserIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 5, fbUserId_);
     }
+    if (level_ != 0) {
+      output.writeInt32(6, level_);
+    }
+    if (experience_ != 0L) {
+      output.writeInt64(7, experience_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -321,6 +357,14 @@ private static final long serialVersionUID = 0L;
     }
     if (!getFbUserIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, fbUserId_);
+    }
+    if (level_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(6, level_);
+    }
+    if (experience_ != 0L) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt64Size(7, experience_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -347,6 +391,10 @@ private static final long serialVersionUID = 0L;
         .equals(other.getTeam())) return false;
     if (!getFbUserId()
         .equals(other.getFbUserId())) return false;
+    if (getLevel()
+        != other.getLevel()) return false;
+    if (getExperience()
+        != other.getExperience()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -368,6 +416,11 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getTeam().hashCode();
     hash = (37 * hash) + FB_USER_ID_FIELD_NUMBER;
     hash = (53 * hash) + getFbUserId().hashCode();
+    hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+    hash = (53 * hash) + getLevel();
+    hash = (37 * hash) + EXPERIENCE_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        getExperience());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -511,6 +564,10 @@ private static final long serialVersionUID = 0L;
 
       fbUserId_ = "";
 
+      level_ = 0;
+
+      experience_ = 0L;
+
       return this;
     }
 
@@ -542,6 +599,8 @@ private static final long serialVersionUID = 0L;
       result.publicData_ = publicData_;
       result.team_ = team_;
       result.fbUserId_ = fbUserId_;
+      result.level_ = level_;
+      result.experience_ = experience_;
       onBuilt();
       return result;
     }
@@ -608,6 +667,12 @@ private static final long serialVersionUID = 0L;
       if (!other.getFbUserId().isEmpty()) {
         fbUserId_ = other.fbUserId_;
         onChanged();
+      }
+      if (other.getLevel() != 0) {
+        setLevel(other.getLevel());
+      }
+      if (other.getExperience() != 0L) {
+        setExperience(other.getExperience());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -971,6 +1036,66 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       fbUserId_ = value;
+      onChanged();
+      return this;
+    }
+
+    private int level_ ;
+    /**
+     * <code>int32 level = 6;</code>
+     * @return The level.
+     */
+    public int getLevel() {
+      return level_;
+    }
+    /**
+     * <code>int32 level = 6;</code>
+     * @param value The level to set.
+     * @return This builder for chaining.
+     */
+    public Builder setLevel(int value) {
+      
+      level_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 level = 6;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearLevel() {
+      
+      level_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private long experience_ ;
+    /**
+     * <code>int64 experience = 7;</code>
+     * @return The experience.
+     */
+    public long getExperience() {
+      return experience_;
+    }
+    /**
+     * <code>int64 experience = 7;</code>
+     * @param value The experience to set.
+     * @return This builder for chaining.
+     */
+    public Builder setExperience(long value) {
+      
+      experience_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int64 experience = 7;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearExperience() {
+      
+      experience_ = 0L;
       onChanged();
       return this;
     }

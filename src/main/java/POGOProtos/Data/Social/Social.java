@@ -90,17 +90,17 @@ private static final long serialVersionUID = 0L;
      */
     INVALID(0),
     /**
-     * <code>INGRESS = 1;</code>
+     * <code>INGRESS_DELETED = 1;</code>
      */
-    INGRESS(1),
+    INGRESS_DELETED(1),
     /**
-     * <code>HOLOHOLO = 2;</code>
+     * <code>HOLOHOLO_DELETED = 2;</code>
      */
-    HOLOHOLO(2),
+    HOLOHOLO_DELETED(2),
     /**
-     * <code>LEXICON = 3;</code>
+     * <code>LEXICON_DELETED = 3;</code>
      */
-    LEXICON(3),
+    LEXICON_DELETED(3),
     UNRECOGNIZED(-1),
     ;
 
@@ -109,17 +109,17 @@ private static final long serialVersionUID = 0L;
      */
     public static final int INVALID_VALUE = 0;
     /**
-     * <code>INGRESS = 1;</code>
+     * <code>INGRESS_DELETED = 1;</code>
      */
-    public static final int INGRESS_VALUE = 1;
+    public static final int INGRESS_DELETED_VALUE = 1;
     /**
-     * <code>HOLOHOLO = 2;</code>
+     * <code>HOLOHOLO_DELETED = 2;</code>
      */
-    public static final int HOLOHOLO_VALUE = 2;
+    public static final int HOLOHOLO_DELETED_VALUE = 2;
     /**
-     * <code>LEXICON = 3;</code>
+     * <code>LEXICON_DELETED = 3;</code>
      */
-    public static final int LEXICON_VALUE = 3;
+    public static final int LEXICON_DELETED_VALUE = 3;
 
 
     public final int getNumber() {
@@ -147,9 +147,9 @@ private static final long serialVersionUID = 0L;
     public static AppKey forNumber(int value) {
       switch (value) {
         case 0: return INVALID;
-        case 1: return INGRESS;
-        case 2: return HOLOHOLO;
-        case 3: return LEXICON;
+        case 1: return INGRESS_DELETED;
+        case 2: return HOLOHOLO_DELETED;
+        case 3: return LEXICON_DELETED;
         default: return null;
       }
     }

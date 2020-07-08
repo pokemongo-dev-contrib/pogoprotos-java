@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlayerSettings() {
+    completedTutorials_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -38,6 +39,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -51,6 +53,29 @@ private static final long serialVersionUID = 0L;
           case 8: {
 
             optOutOnlineStatus_ = input.readBool();
+            break;
+          }
+          case 16: {
+            int rawValue = input.readEnum();
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              completedTutorials_ = new java.util.ArrayList<java.lang.Integer>();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            completedTutorials_.add(rawValue);
+            break;
+          }
+          case 18: {
+            int length = input.readRawVarint32();
+            int oldLimit = input.pushLimit(length);
+            while(input.getBytesUntilLimit() > 0) {
+              int rawValue = input.readEnum();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                completedTutorials_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              completedTutorials_.add(rawValue);
+            }
+            input.popLimit(oldLimit);
             break;
           }
           default: {
@@ -68,6 +93,9 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        completedTutorials_ = java.util.Collections.unmodifiableList(completedTutorials_);
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -95,6 +123,59 @@ private static final long serialVersionUID = 0L;
     return optOutOnlineStatus_;
   }
 
+  public static final int COMPLETED_TUTORIALS_FIELD_NUMBER = 2;
+  private java.util.List<java.lang.Integer> completedTutorials_;
+  private static final com.google.protobuf.Internal.ListAdapter.Converter<
+      java.lang.Integer, POGOProtos.Settings.SocialSettings.TutorialType> completedTutorials_converter_ =
+          new com.google.protobuf.Internal.ListAdapter.Converter<
+              java.lang.Integer, POGOProtos.Settings.SocialSettings.TutorialType>() {
+            public POGOProtos.Settings.SocialSettings.TutorialType convert(java.lang.Integer from) {
+              @SuppressWarnings("deprecation")
+              POGOProtos.Settings.SocialSettings.TutorialType result = POGOProtos.Settings.SocialSettings.TutorialType.valueOf(from);
+              return result == null ? POGOProtos.Settings.SocialSettings.TutorialType.UNRECOGNIZED : result;
+            }
+          };
+  /**
+   * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+   * @return A list containing the completedTutorials.
+   */
+  public java.util.List<POGOProtos.Settings.SocialSettings.TutorialType> getCompletedTutorialsList() {
+    return new com.google.protobuf.Internal.ListAdapter<
+        java.lang.Integer, POGOProtos.Settings.SocialSettings.TutorialType>(completedTutorials_, completedTutorials_converter_);
+  }
+  /**
+   * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+   * @return The count of completedTutorials.
+   */
+  public int getCompletedTutorialsCount() {
+    return completedTutorials_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+   * @param index The index of the element to return.
+   * @return The completedTutorials at the given index.
+   */
+  public POGOProtos.Settings.SocialSettings.TutorialType getCompletedTutorials(int index) {
+    return completedTutorials_converter_.convert(completedTutorials_.get(index));
+  }
+  /**
+   * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+   * @return A list containing the enum numeric values on the wire for completedTutorials.
+   */
+  public java.util.List<java.lang.Integer>
+  getCompletedTutorialsValueList() {
+    return completedTutorials_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of completedTutorials at the given index.
+   */
+  public int getCompletedTutorialsValue(int index) {
+    return completedTutorials_.get(index);
+  }
+  private int completedTutorialsMemoizedSerializedSize;
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -109,8 +190,16 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    getSerializedSize();
     if (optOutOnlineStatus_ != false) {
       output.writeBool(1, optOutOnlineStatus_);
+    }
+    if (getCompletedTutorialsList().size() > 0) {
+      output.writeUInt32NoTag(18);
+      output.writeUInt32NoTag(completedTutorialsMemoizedSerializedSize);
+    }
+    for (int i = 0; i < completedTutorials_.size(); i++) {
+      output.writeEnumNoTag(completedTutorials_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -124,6 +213,18 @@ private static final long serialVersionUID = 0L;
     if (optOutOnlineStatus_ != false) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(1, optOutOnlineStatus_);
+    }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < completedTutorials_.size(); i++) {
+        dataSize += com.google.protobuf.CodedOutputStream
+          .computeEnumSizeNoTag(completedTutorials_.get(i));
+      }
+      size += dataSize;
+      if (!getCompletedTutorialsList().isEmpty()) {  size += 1;
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32SizeNoTag(dataSize);
+      }completedTutorialsMemoizedSerializedSize = dataSize;
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -142,6 +243,7 @@ private static final long serialVersionUID = 0L;
 
     if (getOptOutOnlineStatus()
         != other.getOptOutOnlineStatus()) return false;
+    if (!completedTutorials_.equals(other.completedTutorials_)) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -156,6 +258,10 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + OPT_OUT_ONLINE_STATUS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getOptOutOnlineStatus());
+    if (getCompletedTutorialsCount() > 0) {
+      hash = (37 * hash) + COMPLETED_TUTORIALS_FIELD_NUMBER;
+      hash = (53 * hash) + completedTutorials_.hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -291,6 +397,8 @@ private static final long serialVersionUID = 0L;
       super.clear();
       optOutOnlineStatus_ = false;
 
+      completedTutorials_ = java.util.Collections.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -317,7 +425,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Settings.PlayerSettings buildPartial() {
       POGOProtos.Settings.PlayerSettings result = new POGOProtos.Settings.PlayerSettings(this);
+      int from_bitField0_ = bitField0_;
       result.optOutOnlineStatus_ = optOutOnlineStatus_;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        completedTutorials_ = java.util.Collections.unmodifiableList(completedTutorials_);
+        bitField0_ = (bitField0_ & ~0x00000001);
+      }
+      result.completedTutorials_ = completedTutorials_;
       onBuilt();
       return result;
     }
@@ -369,6 +483,16 @@ private static final long serialVersionUID = 0L;
       if (other.getOptOutOnlineStatus() != false) {
         setOptOutOnlineStatus(other.getOptOutOnlineStatus());
       }
+      if (!other.completedTutorials_.isEmpty()) {
+        if (completedTutorials_.isEmpty()) {
+          completedTutorials_ = other.completedTutorials_;
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          ensureCompletedTutorialsIsMutable();
+          completedTutorials_.addAll(other.completedTutorials_);
+        }
+        onChanged();
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -397,6 +521,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private boolean optOutOnlineStatus_ ;
     /**
@@ -424,6 +549,146 @@ private static final long serialVersionUID = 0L;
     public Builder clearOptOutOnlineStatus() {
       
       optOutOnlineStatus_ = false;
+      onChanged();
+      return this;
+    }
+
+    private java.util.List<java.lang.Integer> completedTutorials_ =
+      java.util.Collections.emptyList();
+    private void ensureCompletedTutorialsIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        completedTutorials_ = new java.util.ArrayList<java.lang.Integer>(completedTutorials_);
+        bitField0_ |= 0x00000001;
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @return A list containing the completedTutorials.
+     */
+    public java.util.List<POGOProtos.Settings.SocialSettings.TutorialType> getCompletedTutorialsList() {
+      return new com.google.protobuf.Internal.ListAdapter<
+          java.lang.Integer, POGOProtos.Settings.SocialSettings.TutorialType>(completedTutorials_, completedTutorials_converter_);
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @return The count of completedTutorials.
+     */
+    public int getCompletedTutorialsCount() {
+      return completedTutorials_.size();
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @param index The index of the element to return.
+     * @return The completedTutorials at the given index.
+     */
+    public POGOProtos.Settings.SocialSettings.TutorialType getCompletedTutorials(int index) {
+      return completedTutorials_converter_.convert(completedTutorials_.get(index));
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @param index The index to set the value at.
+     * @param value The completedTutorials to set.
+     * @return This builder for chaining.
+     */
+    public Builder setCompletedTutorials(
+        int index, POGOProtos.Settings.SocialSettings.TutorialType value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      ensureCompletedTutorialsIsMutable();
+      completedTutorials_.set(index, value.getNumber());
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @param value The completedTutorials to add.
+     * @return This builder for chaining.
+     */
+    public Builder addCompletedTutorials(POGOProtos.Settings.SocialSettings.TutorialType value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      ensureCompletedTutorialsIsMutable();
+      completedTutorials_.add(value.getNumber());
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @param values The completedTutorials to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllCompletedTutorials(
+        java.lang.Iterable<? extends POGOProtos.Settings.SocialSettings.TutorialType> values) {
+      ensureCompletedTutorialsIsMutable();
+      for (POGOProtos.Settings.SocialSettings.TutorialType value : values) {
+        completedTutorials_.add(value.getNumber());
+      }
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearCompletedTutorials() {
+      completedTutorials_ = java.util.Collections.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000001);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @return A list containing the enum numeric values on the wire for completedTutorials.
+     */
+    public java.util.List<java.lang.Integer>
+    getCompletedTutorialsValueList() {
+      return java.util.Collections.unmodifiableList(completedTutorials_);
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of completedTutorials at the given index.
+     */
+    public int getCompletedTutorialsValue(int index) {
+      return completedTutorials_.get(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of completedTutorials at the given index.
+     * @return This builder for chaining.
+     */
+    public Builder setCompletedTutorialsValue(
+        int index, int value) {
+      ensureCompletedTutorialsIsMutable();
+      completedTutorials_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @param value The enum numeric value on the wire for completedTutorials to add.
+     * @return This builder for chaining.
+     */
+    public Builder addCompletedTutorialsValue(int value) {
+      ensureCompletedTutorialsIsMutable();
+      completedTutorials_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Settings.SocialSettings.TutorialType completed_tutorials = 2;</code>
+     * @param values The enum numeric values on the wire for completedTutorials to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllCompletedTutorialsValue(
+        java.lang.Iterable<java.lang.Integer> values) {
+      ensureCompletedTutorialsIsMutable();
+      for (int value : values) {
+        completedTutorials_.add(value);
+      }
       onChanged();
       return this;
     }

@@ -17,6 +17,8 @@ private static final long serialVersionUID = 0L;
   }
   private SubmitNewPoiResponse() {
     status_ = 0;
+    submissionId_ = "";
+    messages_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
   @java.lang.Override
@@ -39,6 +41,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -53,6 +56,21 @@ private static final long serialVersionUID = 0L;
             int rawValue = input.readEnum();
 
             status_ = rawValue;
+            break;
+          }
+          case 18: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            submissionId_ = s;
+            break;
+          }
+          case 26: {
+            java.lang.String s = input.readStringRequireUtf8();
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              messages_ = new com.google.protobuf.LazyStringArrayList();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            messages_.add(s);
             break;
           }
           default: {
@@ -70,6 +88,9 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        messages_ = messages_.getUnmodifiableView();
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -264,6 +285,77 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Networking.Responses.Titan.Responses.SubmitNewPoiResponse.Status.UNRECOGNIZED : result;
   }
 
+  public static final int SUBMISSION_ID_FIELD_NUMBER = 2;
+  private volatile java.lang.Object submissionId_;
+  /**
+   * <code>string submission_id = 2;</code>
+   * @return The submissionId.
+   */
+  public java.lang.String getSubmissionId() {
+    java.lang.Object ref = submissionId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      submissionId_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string submission_id = 2;</code>
+   * @return The bytes for submissionId.
+   */
+  public com.google.protobuf.ByteString
+      getSubmissionIdBytes() {
+    java.lang.Object ref = submissionId_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      submissionId_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int MESSAGES_FIELD_NUMBER = 3;
+  private com.google.protobuf.LazyStringList messages_;
+  /**
+   * <code>repeated string messages = 3;</code>
+   * @return A list containing the messages.
+   */
+  public com.google.protobuf.ProtocolStringList
+      getMessagesList() {
+    return messages_;
+  }
+  /**
+   * <code>repeated string messages = 3;</code>
+   * @return The count of messages.
+   */
+  public int getMessagesCount() {
+    return messages_.size();
+  }
+  /**
+   * <code>repeated string messages = 3;</code>
+   * @param index The index of the element to return.
+   * @return The messages at the given index.
+   */
+  public java.lang.String getMessages(int index) {
+    return messages_.get(index);
+  }
+  /**
+   * <code>repeated string messages = 3;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the messages at the given index.
+   */
+  public com.google.protobuf.ByteString
+      getMessagesBytes(int index) {
+    return messages_.getByteString(index);
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -281,6 +373,12 @@ private static final long serialVersionUID = 0L;
     if (status_ != POGOProtos.Networking.Responses.Titan.Responses.SubmitNewPoiResponse.Status.UNSET.getNumber()) {
       output.writeEnum(1, status_);
     }
+    if (!getSubmissionIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, submissionId_);
+    }
+    for (int i = 0; i < messages_.size(); i++) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, messages_.getRaw(i));
+    }
     unknownFields.writeTo(output);
   }
 
@@ -293,6 +391,17 @@ private static final long serialVersionUID = 0L;
     if (status_ != POGOProtos.Networking.Responses.Titan.Responses.SubmitNewPoiResponse.Status.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, status_);
+    }
+    if (!getSubmissionIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, submissionId_);
+    }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < messages_.size(); i++) {
+        dataSize += computeStringSizeNoTag(messages_.getRaw(i));
+      }
+      size += dataSize;
+      size += 1 * getMessagesList().size();
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -310,6 +419,10 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Networking.Responses.Titan.Responses.SubmitNewPoiResponse other = (POGOProtos.Networking.Responses.Titan.Responses.SubmitNewPoiResponse) obj;
 
     if (status_ != other.status_) return false;
+    if (!getSubmissionId()
+        .equals(other.getSubmissionId())) return false;
+    if (!getMessagesList()
+        .equals(other.getMessagesList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -323,6 +436,12 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + STATUS_FIELD_NUMBER;
     hash = (53 * hash) + status_;
+    hash = (37 * hash) + SUBMISSION_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getSubmissionId().hashCode();
+    if (getMessagesCount() > 0) {
+      hash = (37 * hash) + MESSAGES_FIELD_NUMBER;
+      hash = (53 * hash) + getMessagesList().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -458,6 +577,10 @@ private static final long serialVersionUID = 0L;
       super.clear();
       status_ = 0;
 
+      submissionId_ = "";
+
+      messages_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -484,7 +607,14 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Networking.Responses.Titan.Responses.SubmitNewPoiResponse buildPartial() {
       POGOProtos.Networking.Responses.Titan.Responses.SubmitNewPoiResponse result = new POGOProtos.Networking.Responses.Titan.Responses.SubmitNewPoiResponse(this);
+      int from_bitField0_ = bitField0_;
       result.status_ = status_;
+      result.submissionId_ = submissionId_;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        messages_ = messages_.getUnmodifiableView();
+        bitField0_ = (bitField0_ & ~0x00000001);
+      }
+      result.messages_ = messages_;
       onBuilt();
       return result;
     }
@@ -536,6 +666,20 @@ private static final long serialVersionUID = 0L;
       if (other.status_ != 0) {
         setStatusValue(other.getStatusValue());
       }
+      if (!other.getSubmissionId().isEmpty()) {
+        submissionId_ = other.submissionId_;
+        onChanged();
+      }
+      if (!other.messages_.isEmpty()) {
+        if (messages_.isEmpty()) {
+          messages_ = other.messages_;
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          ensureMessagesIsMutable();
+          messages_.addAll(other.messages_);
+        }
+        onChanged();
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -564,6 +708,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private int status_ = 0;
     /**
@@ -613,6 +758,192 @@ private static final long serialVersionUID = 0L;
     public Builder clearStatus() {
       
       status_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object submissionId_ = "";
+    /**
+     * <code>string submission_id = 2;</code>
+     * @return The submissionId.
+     */
+    public java.lang.String getSubmissionId() {
+      java.lang.Object ref = submissionId_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        submissionId_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string submission_id = 2;</code>
+     * @return The bytes for submissionId.
+     */
+    public com.google.protobuf.ByteString
+        getSubmissionIdBytes() {
+      java.lang.Object ref = submissionId_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        submissionId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string submission_id = 2;</code>
+     * @param value The submissionId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubmissionId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      submissionId_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string submission_id = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSubmissionId() {
+      
+      submissionId_ = getDefaultInstance().getSubmissionId();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string submission_id = 2;</code>
+     * @param value The bytes for submissionId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSubmissionIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      submissionId_ = value;
+      onChanged();
+      return this;
+    }
+
+    private com.google.protobuf.LazyStringList messages_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private void ensureMessagesIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        messages_ = new com.google.protobuf.LazyStringArrayList(messages_);
+        bitField0_ |= 0x00000001;
+       }
+    }
+    /**
+     * <code>repeated string messages = 3;</code>
+     * @return A list containing the messages.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getMessagesList() {
+      return messages_.getUnmodifiableView();
+    }
+    /**
+     * <code>repeated string messages = 3;</code>
+     * @return The count of messages.
+     */
+    public int getMessagesCount() {
+      return messages_.size();
+    }
+    /**
+     * <code>repeated string messages = 3;</code>
+     * @param index The index of the element to return.
+     * @return The messages at the given index.
+     */
+    public java.lang.String getMessages(int index) {
+      return messages_.get(index);
+    }
+    /**
+     * <code>repeated string messages = 3;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the messages at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getMessagesBytes(int index) {
+      return messages_.getByteString(index);
+    }
+    /**
+     * <code>repeated string messages = 3;</code>
+     * @param index The index to set the value at.
+     * @param value The messages to set.
+     * @return This builder for chaining.
+     */
+    public Builder setMessages(
+        int index, java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureMessagesIsMutable();
+      messages_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string messages = 3;</code>
+     * @param value The messages to add.
+     * @return This builder for chaining.
+     */
+    public Builder addMessages(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureMessagesIsMutable();
+      messages_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string messages = 3;</code>
+     * @param values The messages to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllMessages(
+        java.lang.Iterable<java.lang.String> values) {
+      ensureMessagesIsMutable();
+      com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          values, messages_);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string messages = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearMessages() {
+      messages_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string messages = 3;</code>
+     * @param value The bytes of the messages to add.
+     * @return This builder for chaining.
+     */
+    public Builder addMessagesBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      ensureMessagesIsMutable();
+      messages_.add(value);
       onChanged();
       return this;
     }

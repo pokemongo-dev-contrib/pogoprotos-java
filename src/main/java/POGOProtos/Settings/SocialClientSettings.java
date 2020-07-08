@@ -108,6 +108,19 @@ private static final long serialVersionUID = 0L;
             enableSticker_ = input.readBool();
             break;
           }
+          case 114: {
+            POGOProtos.Settings.CrossGameSocialGlobalSettings.Builder subBuilder = null;
+            if (crossGameSocialSettings_ != null) {
+              subBuilder = crossGameSocialSettings_.toBuilder();
+            }
+            crossGameSocialSettings_ = input.readMessage(POGOProtos.Settings.CrossGameSocialGlobalSettings.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(crossGameSocialSettings_);
+              crossGameSocialSettings_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -260,6 +273,29 @@ private static final long serialVersionUID = 0L;
     return enableSticker_;
   }
 
+  public static final int CROSS_GAME_SOCIAL_SETTINGS_FIELD_NUMBER = 14;
+  private POGOProtos.Settings.CrossGameSocialGlobalSettings crossGameSocialSettings_;
+  /**
+   * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+   * @return Whether the crossGameSocialSettings field is set.
+   */
+  public boolean hasCrossGameSocialSettings() {
+    return crossGameSocialSettings_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+   * @return The crossGameSocialSettings.
+   */
+  public POGOProtos.Settings.CrossGameSocialGlobalSettings getCrossGameSocialSettings() {
+    return crossGameSocialSettings_ == null ? POGOProtos.Settings.CrossGameSocialGlobalSettings.getDefaultInstance() : crossGameSocialSettings_;
+  }
+  /**
+   * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+   */
+  public POGOProtos.Settings.CrossGameSocialGlobalSettingsOrBuilder getCrossGameSocialSettingsOrBuilder() {
+    return getCrossGameSocialSettings();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -309,6 +345,9 @@ private static final long serialVersionUID = 0L;
     }
     if (enableSticker_ != false) {
       output.writeBool(13, enableSticker_);
+    }
+    if (crossGameSocialSettings_ != null) {
+      output.writeMessage(14, getCrossGameSocialSettings());
     }
     unknownFields.writeTo(output);
   }
@@ -367,6 +406,10 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(13, enableSticker_);
     }
+    if (crossGameSocialSettings_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(14, getCrossGameSocialSettings());
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -406,6 +449,11 @@ private static final long serialVersionUID = 0L;
         != other.getEnableRemoteGifting()) return false;
     if (getEnableSticker()
         != other.getEnableSticker()) return false;
+    if (hasCrossGameSocialSettings() != other.hasCrossGameSocialSettings()) return false;
+    if (hasCrossGameSocialSettings()) {
+      if (!getCrossGameSocialSettings()
+          .equals(other.getCrossGameSocialSettings())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -449,6 +497,10 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + ENABLE_STICKER_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getEnableSticker());
+    if (hasCrossGameSocialSettings()) {
+      hash = (37 * hash) + CROSS_GAME_SOCIAL_SETTINGS_FIELD_NUMBER;
+      hash = (53 * hash) + getCrossGameSocialSettings().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -606,6 +658,12 @@ private static final long serialVersionUID = 0L;
 
       enableSticker_ = false;
 
+      if (crossGameSocialSettingsBuilder_ == null) {
+        crossGameSocialSettings_ = null;
+      } else {
+        crossGameSocialSettings_ = null;
+        crossGameSocialSettingsBuilder_ = null;
+      }
       return this;
     }
 
@@ -644,6 +702,11 @@ private static final long serialVersionUID = 0L;
       result.enableGiftabilityV2_ = enableGiftabilityV2_;
       result.enableRemoteGifting_ = enableRemoteGifting_;
       result.enableSticker_ = enableSticker_;
+      if (crossGameSocialSettingsBuilder_ == null) {
+        result.crossGameSocialSettings_ = crossGameSocialSettings_;
+      } else {
+        result.crossGameSocialSettings_ = crossGameSocialSettingsBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -727,6 +790,9 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getEnableSticker() != false) {
         setEnableSticker(other.getEnableSticker());
+      }
+      if (other.hasCrossGameSocialSettings()) {
+        mergeCrossGameSocialSettings(other.getCrossGameSocialSettings());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1115,6 +1181,125 @@ private static final long serialVersionUID = 0L;
       enableSticker_ = false;
       onChanged();
       return this;
+    }
+
+    private POGOProtos.Settings.CrossGameSocialGlobalSettings crossGameSocialSettings_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Settings.CrossGameSocialGlobalSettings, POGOProtos.Settings.CrossGameSocialGlobalSettings.Builder, POGOProtos.Settings.CrossGameSocialGlobalSettingsOrBuilder> crossGameSocialSettingsBuilder_;
+    /**
+     * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+     * @return Whether the crossGameSocialSettings field is set.
+     */
+    public boolean hasCrossGameSocialSettings() {
+      return crossGameSocialSettingsBuilder_ != null || crossGameSocialSettings_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+     * @return The crossGameSocialSettings.
+     */
+    public POGOProtos.Settings.CrossGameSocialGlobalSettings getCrossGameSocialSettings() {
+      if (crossGameSocialSettingsBuilder_ == null) {
+        return crossGameSocialSettings_ == null ? POGOProtos.Settings.CrossGameSocialGlobalSettings.getDefaultInstance() : crossGameSocialSettings_;
+      } else {
+        return crossGameSocialSettingsBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+     */
+    public Builder setCrossGameSocialSettings(POGOProtos.Settings.CrossGameSocialGlobalSettings value) {
+      if (crossGameSocialSettingsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        crossGameSocialSettings_ = value;
+        onChanged();
+      } else {
+        crossGameSocialSettingsBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+     */
+    public Builder setCrossGameSocialSettings(
+        POGOProtos.Settings.CrossGameSocialGlobalSettings.Builder builderForValue) {
+      if (crossGameSocialSettingsBuilder_ == null) {
+        crossGameSocialSettings_ = builderForValue.build();
+        onChanged();
+      } else {
+        crossGameSocialSettingsBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+     */
+    public Builder mergeCrossGameSocialSettings(POGOProtos.Settings.CrossGameSocialGlobalSettings value) {
+      if (crossGameSocialSettingsBuilder_ == null) {
+        if (crossGameSocialSettings_ != null) {
+          crossGameSocialSettings_ =
+            POGOProtos.Settings.CrossGameSocialGlobalSettings.newBuilder(crossGameSocialSettings_).mergeFrom(value).buildPartial();
+        } else {
+          crossGameSocialSettings_ = value;
+        }
+        onChanged();
+      } else {
+        crossGameSocialSettingsBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+     */
+    public Builder clearCrossGameSocialSettings() {
+      if (crossGameSocialSettingsBuilder_ == null) {
+        crossGameSocialSettings_ = null;
+        onChanged();
+      } else {
+        crossGameSocialSettings_ = null;
+        crossGameSocialSettingsBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+     */
+    public POGOProtos.Settings.CrossGameSocialGlobalSettings.Builder getCrossGameSocialSettingsBuilder() {
+      
+      onChanged();
+      return getCrossGameSocialSettingsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+     */
+    public POGOProtos.Settings.CrossGameSocialGlobalSettingsOrBuilder getCrossGameSocialSettingsOrBuilder() {
+      if (crossGameSocialSettingsBuilder_ != null) {
+        return crossGameSocialSettingsBuilder_.getMessageOrBuilder();
+      } else {
+        return crossGameSocialSettings_ == null ?
+            POGOProtos.Settings.CrossGameSocialGlobalSettings.getDefaultInstance() : crossGameSocialSettings_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Settings.CrossGameSocialGlobalSettings cross_game_social_settings = 14;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Settings.CrossGameSocialGlobalSettings, POGOProtos.Settings.CrossGameSocialGlobalSettings.Builder, POGOProtos.Settings.CrossGameSocialGlobalSettingsOrBuilder> 
+        getCrossGameSocialSettingsFieldBuilder() {
+      if (crossGameSocialSettingsBuilder_ == null) {
+        crossGameSocialSettingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Settings.CrossGameSocialGlobalSettings, POGOProtos.Settings.CrossGameSocialGlobalSettings.Builder, POGOProtos.Settings.CrossGameSocialGlobalSettingsOrBuilder>(
+                getCrossGameSocialSettings(),
+                getParentForChildren(),
+                isClean());
+        crossGameSocialSettings_ = null;
+      }
+      return crossGameSocialSettingsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

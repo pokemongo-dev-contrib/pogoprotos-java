@@ -106,4 +106,26 @@ public interface InvasionTelemetryOrBuilder extends
    * @return The distance.
    */
   float getDistance();
+
+  /**
+   * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext invasion_context = 14;</code>
+   * @return The enum numeric value on the wire for invasionContext.
+   */
+  int getInvasionContextValue();
+  /**
+   * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext invasion_context = 14;</code>
+   * @return The invasionContext.
+   */
+  POGOProtos.Enums.EnumWrapper.InvasionContext getInvasionContext();
+
+  /**
+   * <code>.POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType balloon_type = 15;</code>
+   * @return The enum numeric value on the wire for balloonType.
+   */
+  int getBalloonTypeValue();
+  /**
+   * <code>.POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType balloon_type = 15;</code>
+   * @return The balloonType.
+   */
+  POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType getBalloonType();
 }

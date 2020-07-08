@@ -32,16 +32,17 @@ public final class AsyncFileUploadCompleteResponseOuterClass {
       "amePoi/Responses/AsyncFileUploadComplete" +
       "Response.proto\0226POGOProtos.Networking.Re" +
       "sponses.Game.GamePoi.Responses\032+POGOProt" +
-      "os/Enums/PlayerSubmissionType.proto\"\336\002\n\037" +
+      "os/Enums/PlayerSubmissionType.proto\"\356\002\n\037" +
       "AsyncFileUploadCompleteResponse\022r\n\005error" +
       "\030\001 \001(\0162c.POGOProtos.Networking.Responses" +
       ".Game.GamePoi.Responses.AsyncFileUploadC" +
       "ompleteResponse.ErrorStatus\022?\n\017submissio" +
       "n_type\030\002 \001(\0162&.POGOProtos.Enums.PlayerSu" +
-      "bmissionType\"\205\001\n\013ErrorStatus\022\t\n\005UNSET\020\000\022" +
-      "\030\n\024SERVER_UPDATE_FAILED\020\001\022\031\n\025MISSING_SUB" +
-      "MISSION_ID\020\002\022\033\n\027MISSING_SUBMISSION_TYPE\020" +
-      "\003\022\031\n\025MISSING_UPLOAD_STATUS\020\004B\002P\001b\006proto3"
+      "bmissionType\022\016\n\006poi_id\030\003 \001(\t\"\205\001\n\013ErrorSt" +
+      "atus\022\t\n\005UNSET\020\000\022\030\n\024SERVER_UPDATE_FAILED\020" +
+      "\001\022\031\n\025MISSING_SUBMISSION_ID\020\002\022\033\n\027MISSING_" +
+      "SUBMISSION_TYPE\020\003\022\031\n\025MISSING_UPLOAD_STAT" +
+      "US\020\004B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -53,7 +54,7 @@ public final class AsyncFileUploadCompleteResponseOuterClass {
     internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_AsyncFileUploadCompleteResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_Game_GamePoi_Responses_AsyncFileUploadCompleteResponse_descriptor,
-        new java.lang.String[] { "Error", "SubmissionType", });
+        new java.lang.String[] { "Error", "SubmissionType", "PoiId", });
     POGOProtos.Enums.PlayerSubmissionTypeOuterClass.getDescriptor();
   }
 

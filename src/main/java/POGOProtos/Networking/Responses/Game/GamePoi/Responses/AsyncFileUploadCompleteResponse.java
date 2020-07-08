@@ -18,6 +18,7 @@ private static final long serialVersionUID = 0L;
   private AsyncFileUploadCompleteResponse() {
     error_ = 0;
     submissionType_ = 0;
+    poiId_ = "";
   }
 
   @java.lang.Override
@@ -60,6 +61,12 @@ private static final long serialVersionUID = 0L;
             int rawValue = input.readEnum();
 
             submissionType_ = rawValue;
+            break;
+          }
+          case 26: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            poiId_ = s;
             break;
           }
           default: {
@@ -263,6 +270,42 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Enums.PlayerSubmissionType.UNRECOGNIZED : result;
   }
 
+  public static final int POI_ID_FIELD_NUMBER = 3;
+  private volatile java.lang.Object poiId_;
+  /**
+   * <code>string poi_id = 3;</code>
+   * @return The poiId.
+   */
+  public java.lang.String getPoiId() {
+    java.lang.Object ref = poiId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      poiId_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string poi_id = 3;</code>
+   * @return The bytes for poiId.
+   */
+  public com.google.protobuf.ByteString
+      getPoiIdBytes() {
+    java.lang.Object ref = poiId_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      poiId_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -283,6 +326,9 @@ private static final long serialVersionUID = 0L;
     if (submissionType_ != POGOProtos.Enums.PlayerSubmissionType.TYPE_UNSPECIFIED.getNumber()) {
       output.writeEnum(2, submissionType_);
     }
+    if (!getPoiIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, poiId_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -299,6 +345,9 @@ private static final long serialVersionUID = 0L;
     if (submissionType_ != POGOProtos.Enums.PlayerSubmissionType.TYPE_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, submissionType_);
+    }
+    if (!getPoiIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, poiId_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -317,6 +366,8 @@ private static final long serialVersionUID = 0L;
 
     if (error_ != other.error_) return false;
     if (submissionType_ != other.submissionType_) return false;
+    if (!getPoiId()
+        .equals(other.getPoiId())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -332,6 +383,8 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + error_;
     hash = (37 * hash) + SUBMISSION_TYPE_FIELD_NUMBER;
     hash = (53 * hash) + submissionType_;
+    hash = (37 * hash) + POI_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getPoiId().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -469,6 +522,8 @@ private static final long serialVersionUID = 0L;
 
       submissionType_ = 0;
 
+      poiId_ = "";
+
       return this;
     }
 
@@ -497,6 +552,7 @@ private static final long serialVersionUID = 0L;
       POGOProtos.Networking.Responses.Game.GamePoi.Responses.AsyncFileUploadCompleteResponse result = new POGOProtos.Networking.Responses.Game.GamePoi.Responses.AsyncFileUploadCompleteResponse(this);
       result.error_ = error_;
       result.submissionType_ = submissionType_;
+      result.poiId_ = poiId_;
       onBuilt();
       return result;
     }
@@ -550,6 +606,10 @@ private static final long serialVersionUID = 0L;
       }
       if (other.submissionType_ != 0) {
         setSubmissionTypeValue(other.getSubmissionTypeValue());
+      }
+      if (!other.getPoiId().isEmpty()) {
+        poiId_ = other.poiId_;
+        onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -680,6 +740,82 @@ private static final long serialVersionUID = 0L;
     public Builder clearSubmissionType() {
       
       submissionType_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object poiId_ = "";
+    /**
+     * <code>string poi_id = 3;</code>
+     * @return The poiId.
+     */
+    public java.lang.String getPoiId() {
+      java.lang.Object ref = poiId_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        poiId_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string poi_id = 3;</code>
+     * @return The bytes for poiId.
+     */
+    public com.google.protobuf.ByteString
+        getPoiIdBytes() {
+      java.lang.Object ref = poiId_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        poiId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string poi_id = 3;</code>
+     * @param value The poiId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPoiId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      poiId_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string poi_id = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPoiId() {
+      
+      poiId_ = getDefaultInstance().getPoiId();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string poi_id = 3;</code>
+     * @param value The bytes for poiId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPoiIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      poiId_ = value;
       onChanged();
       return this;
     }

@@ -1124,6 +1124,10 @@ public enum PokemonMove
    * <code>TECHNO_BLAST_SHOCK = 340;</code>
    */
   TECHNO_BLAST_SHOCK(340),
+  /**
+   * <code>FLY = 341;</code>
+   */
+  FLY(341),
   UNRECOGNIZED(-1),
   ;
 
@@ -2243,6 +2247,10 @@ public enum PokemonMove
    * <code>TECHNO_BLAST_SHOCK = 340;</code>
    */
   public static final int TECHNO_BLAST_SHOCK_VALUE = 340;
+  /**
+   * <code>FLY = 341;</code>
+   */
+  public static final int FLY_VALUE = 341;
 
 
   public final int getNumber() {
@@ -2548,6 +2556,7 @@ public enum PokemonMove
       case 338: return TECHNO_BLAST_CHILL;
       case 339: return TECHNO_BLAST_WATER;
       case 340: return TECHNO_BLAST_SHOCK;
+      case 341: return FLY;
       default: return null;
     }
   }

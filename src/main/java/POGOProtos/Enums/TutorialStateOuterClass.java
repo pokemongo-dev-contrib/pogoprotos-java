@@ -24,7 +24,7 @@ public final class TutorialStateOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$POGOProtos/Enums/TutorialState.proto\022\020" +
-      "POGOProtos.Enums*\221\t\n\rTutorialState\022\020\n\014LE" +
+      "POGOProtos.Enums*\313\t\n\rTutorialState\022\020\n\014LE" +
       "GAL_SCREEN\020\000\022\024\n\020AVATAR_SELECTION\020\001\022\024\n\020AC" +
       "COUNT_CREATION\020\002\022\023\n\017POKEMON_CAPTURE\020\003\022\022\n" +
       "\016NAME_SELECTION\020\004\022\021\n\rPOKEMON_BERRY\020\005\022\033\n\027" +
@@ -53,7 +53,9 @@ public final class TutorialStateOuterClass {
       "UDDY_ON_MAP_PROMPT\020\'\022\037\n\033BATTLE_LEAGUE_HE" +
       "LP_TUTORIAL\020(\022\031\n\025ARMP_TOS_CONFIRMATION\020)" +
       "\022\036\n\032BUDDY_REMOTE_GIFT_TUTORIAL\020*\022\"\n\036DAIL" +
-      "Y_BONUS_ENCOUNTER_TUTORIAL\020-B\002P\001b\006proto3"
+      "Y_BONUS_ENCOUNTER_TUTORIAL\020-\022\033\n\027SPONSORE" +
+      "D_GIFT_TUTORIAL\020.\022\033\n\027XGS_ONLINE_CONSENT_" +
+      "NOTE\020/B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

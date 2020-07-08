@@ -60,4 +60,16 @@ public interface PlayerSummaryOrBuilder extends
    */
   com.google.protobuf.ByteString
       getFbUserIdBytes();
+
+  /**
+   * <code>int32 level = 6;</code>
+   * @return The level.
+   */
+  int getLevel();
+
+  /**
+   * <code>int64 experience = 7;</code>
+   * @return The experience.
+   */
+  long getExperience();
 }

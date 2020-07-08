@@ -41,4 +41,38 @@ public interface GetUploadUrlResponseOrBuilder extends
    */
   com.google.protobuf.ByteString
       getSupportingImageSignedUrlBytes();
+
+  /**
+   * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
+   */
+  int getContextSignedUrlsCount();
+  /**
+   * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
+   */
+  boolean containsContextSignedUrls(
+      java.lang.String key);
+  /**
+   * Use {@link #getContextSignedUrlsMap()} instead.
+   */
+  @java.lang.Deprecated
+  java.util.Map<java.lang.String, java.lang.String>
+  getContextSignedUrls();
+  /**
+   * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
+   */
+  java.util.Map<java.lang.String, java.lang.String>
+  getContextSignedUrlsMap();
+  /**
+   * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
+   */
+
+  java.lang.String getContextSignedUrlsOrDefault(
+      java.lang.String key,
+      java.lang.String defaultValue);
+  /**
+   * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
+   */
+
+  java.lang.String getContextSignedUrlsOrThrow(
+      java.lang.String key);
 }

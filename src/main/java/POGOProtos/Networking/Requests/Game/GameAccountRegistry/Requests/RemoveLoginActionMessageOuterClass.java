@@ -35,7 +35,7 @@ public final class RemoveLoginActionMessageOuterClass {
       "sts\032\'POGOProtos/Enums/IdentityProvider.p" +
       "roto\"s\n\030RemoveLoginActionMessage\022=\n\021iden" +
       "tity_provider\030\001 \001(\0162\".POGOProtos.Enums.I" +
-      "dentityProvider\022\030\n\020auth_provider_id\030\003 \001(" +
+      "dentityProvider\022\030\n\020auth_provider_id\030\002 \001(" +
       "\tB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

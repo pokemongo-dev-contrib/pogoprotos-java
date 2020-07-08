@@ -62,49 +62,50 @@ public final class StartIncidentResponseOuterClass {
       "ncidentResponse.proto\022\037POGOProtos.Networ" +
       "king.Responses\032\"POGOProtos/Enums/EnumWra" +
       "pper.proto\032\"POGOProtos/Map/Fort/FortData" +
-      ".proto\"\200\r\n\025StartIncidentResponse\022M\n\006stat" +
+      ".proto\"\300\r\n\025StartIncidentResponse\022M\n\006stat" +
       "us\030\001 \001(\0162=.POGOProtos.Networking.Respons" +
       "es.StartIncidentResponse.Status\022W\n\010incid" +
       "ent\030\002 \001(\0132E.POGOProtos.Networking.Respon" +
       "ses.StartIncidentResponse.ClientIncident" +
-      "\032\232\n\n\016ClientIncident\022\023\n\013incident_id\030\001 \001(\t" +
+      "\032\332\n\n\016ClientIncident\022\023\n\013incident_id\030\001 \001(\t" +
       "\022\017\n\007fort_id\030\002 \001(\t\022\021\n\tfort_name\030\003 \001(\t\022\032\n\022" +
       "pokestop_image_uri\030\004 \001(\t\022\024\n\014current_step" +
       "\030\005 \001(\005\022f\n\004step\030\006 \003(\0132X.POGOProtos.Networ" +
       "king.Responses.StartIncidentResponse.Cli" +
       "entIncident.ClientIncidentStep\022Q\n\022comple" +
       "tion_display\030\007 \001(\01325.POGOProtos.Map.Fort" +
-      ".FortData.PokestopIncidentDisplay\032\341\007\n\022Cl" +
-      "ientIncidentStep\022\214\001\n\017invasion_battle\030\001 \001" +
-      "(\0132q.POGOProtos.Networking.Responses.Sta" +
-      "rtIncidentResponse.ClientIncident.Client" +
-      "IncidentStep.ClientInvasionBattleStepH\000\022" +
-      "\222\001\n\022invasion_encounter\030\002 \001(\0132t.POGOProto" +
+      ".FortData.PokestopIncidentDisplay\022>\n\007con" +
+      "text\030\010 \001(\0162-.POGOProtos.Enums.EnumWrappe" +
+      "r.InvasionContext\032\341\007\n\022ClientIncidentStep" +
+      "\022\214\001\n\017invasion_battle\030\001 \001(\0132q.POGOProtos." +
+      "Networking.Responses.StartIncidentRespon" +
+      "se.ClientIncident.ClientIncidentStep.Cli" +
+      "entInvasionBattleStepH\000\022\222\001\n\022invasion_enc" +
+      "ounter\030\002 \001(\0132t.POGOProtos.Networking.Res" +
+      "ponses.StartIncidentResponse.ClientIncid" +
+      "ent.ClientIncidentStep.ClientInvasionEnc" +
+      "ounterStepH\000\022\223\001\n\021pokestop_dialogue\030\003 \001(\013" +
+      "2v.POGOProtos.Networking.Responses.Start" +
+      "IncidentResponse.ClientIncident.ClientIn" +
+      "cidentStep.ClientPokestopNpcDialogueStep" +
+      "H\000\032^\n\030ClientInvasionBattleStep\022B\n\tcharac" +
+      "ter\030\001 \001(\0162/.POGOProtos.Enums.EnumWrapper" +
+      ".InvasionCharacter\032\035\n\033ClientInvasionEnco" +
+      "unterStep\032\373\002\n\035ClientPokestopNpcDialogueS" +
+      "tep\022\241\001\n\rdialogue_line\030\001 \003(\0132\211\001.POGOProto" +
       "s.Networking.Responses.StartIncidentResp" +
       "onse.ClientIncident.ClientIncidentStep.C" +
-      "lientInvasionEncounterStepH\000\022\223\001\n\021pokesto" +
-      "p_dialogue\030\003 \001(\0132v.POGOProtos.Networking" +
-      ".Responses.StartIncidentResponse.ClientI" +
-      "ncident.ClientIncidentStep.ClientPokesto" +
-      "pNpcDialogueStepH\000\032^\n\030ClientInvasionBatt" +
-      "leStep\022B\n\tcharacter\030\001 \001(\0162/.POGOProtos.E" +
-      "nums.EnumWrapper.InvasionCharacter\032\035\n\033Cl" +
-      "ientInvasionEncounterStep\032\373\002\n\035ClientPoke" +
-      "stopNpcDialogueStep\022\241\001\n\rdialogue_line\030\001 " +
-      "\003(\0132\211\001.POGOProtos.Networking.Responses.S" +
-      "tartIncidentResponse.ClientIncident.Clie" +
-      "ntIncidentStep.ClientPokestopNpcDialogue" +
-      "Step.ClientDialogueLine\032\265\001\n\022ClientDialog" +
-      "ueLine\022\014\n\004text\030\001 \001(\t\022B\n\tcharacter\030\002 \001(\0162" +
-      "/.POGOProtos.Enums.EnumWrapper.InvasionC" +
-      "haracter\022M\n\nexpression\030\003 \001(\01629.POGOProto" +
-      "s.Enums.EnumWrapper.InvasionCharacterExp" +
-      "ressionB\024\n\022ClientIncidentStep\"\241\001\n\006Status" +
-      "\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\026\n\022ERROR_NOT_IN" +
-      "_RANGE\020\002\022\034\n\030ERROR_INCIDENT_COMPLETED\020\003\022\034" +
-      "\n\030ERROR_INCIDENT_NOT_FOUND\020\004\022 \n\034ERROR_PL" +
-      "AYER_BELOW_MIN_LEVEL\020\005\022\t\n\005ERROR\020\006B\002P\001b\006p" +
-      "roto3"
+      "lientPokestopNpcDialogueStep.ClientDialo" +
+      "gueLine\032\265\001\n\022ClientDialogueLine\022\014\n\004text\030\001" +
+      " \001(\t\022B\n\tcharacter\030\002 \001(\0162/.POGOProtos.Enu" +
+      "ms.EnumWrapper.InvasionCharacter\022M\n\nexpr" +
+      "ession\030\003 \001(\01629.POGOProtos.Enums.EnumWrap" +
+      "per.InvasionCharacterExpressionB\024\n\022Clien" +
+      "tIncidentStep\"\241\001\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007S" +
+      "UCCESS\020\001\022\026\n\022ERROR_NOT_IN_RANGE\020\002\022\034\n\030ERRO" +
+      "R_INCIDENT_COMPLETED\020\003\022\034\n\030ERROR_INCIDENT" +
+      "_NOT_FOUND\020\004\022 \n\034ERROR_PLAYER_BELOW_MIN_L" +
+      "EVEL\020\005\022\t\n\005ERROR\020\006B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -123,7 +124,7 @@ public final class StartIncidentResponseOuterClass {
     internal_static_POGOProtos_Networking_Responses_StartIncidentResponse_ClientIncident_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_StartIncidentResponse_ClientIncident_descriptor,
-        new java.lang.String[] { "IncidentId", "FortId", "FortName", "PokestopImageUri", "CurrentStep", "Step", "CompletionDisplay", });
+        new java.lang.String[] { "IncidentId", "FortId", "FortName", "PokestopImageUri", "CurrentStep", "Step", "CompletionDisplay", "Context", });
     internal_static_POGOProtos_Networking_Responses_StartIncidentResponse_ClientIncident_ClientIncidentStep_descriptor =
       internal_static_POGOProtos_Networking_Responses_StartIncidentResponse_ClientIncident_descriptor.getNestedTypes().get(0);
     internal_static_POGOProtos_Networking_Responses_StartIncidentResponse_ClientIncident_ClientIncidentStep_fieldAccessorTable = new

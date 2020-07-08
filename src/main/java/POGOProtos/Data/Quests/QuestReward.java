@@ -125,9 +125,17 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 98: {
-            java.lang.String s = input.readStringRequireUtf8();
+            POGOProtos.Data.Quests.QuestReward.StickerReward.Builder subBuilder = null;
+            if (rewardCase_ == 12) {
+              subBuilder = ((POGOProtos.Data.Quests.QuestReward.StickerReward) reward_).toBuilder();
+            }
+            reward_ =
+                input.readMessage(POGOProtos.Data.Quests.QuestReward.StickerReward.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Data.Quests.QuestReward.StickerReward) reward_);
+              reward_ = subBuilder.buildPartial();
+            }
             rewardCase_ = 12;
-            reward_ = s;
             break;
           }
           default: {
@@ -336,6 +344,640 @@ private static final long serialVersionUID = 0L;
     }
 
     // @@protoc_insertion_point(enum_scope:POGOProtos.Data.Quests.QuestReward.Type)
+  }
+
+  public interface StickerRewardOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Data.Quests.QuestReward.StickerReward)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string sticker_id = 1;</code>
+     * @return The stickerId.
+     */
+    java.lang.String getStickerId();
+    /**
+     * <code>string sticker_id = 1;</code>
+     * @return The bytes for stickerId.
+     */
+    com.google.protobuf.ByteString
+        getStickerIdBytes();
+
+    /**
+     * <code>int32 amount = 2;</code>
+     * @return The amount.
+     */
+    int getAmount();
+  }
+  /**
+   * Protobuf type {@code POGOProtos.Data.Quests.QuestReward.StickerReward}
+   */
+  public  static final class StickerReward extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:POGOProtos.Data.Quests.QuestReward.StickerReward)
+      StickerRewardOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use StickerReward.newBuilder() to construct.
+    private StickerReward(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private StickerReward() {
+      stickerId_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new StickerReward();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private StickerReward(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              stickerId_ = s;
+              break;
+            }
+            case 16: {
+
+              amount_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return POGOProtos.Data.Quests.QuestRewardOuterClass.internal_static_POGOProtos_Data_Quests_QuestReward_StickerReward_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return POGOProtos.Data.Quests.QuestRewardOuterClass.internal_static_POGOProtos_Data_Quests_QuestReward_StickerReward_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              POGOProtos.Data.Quests.QuestReward.StickerReward.class, POGOProtos.Data.Quests.QuestReward.StickerReward.Builder.class);
+    }
+
+    public static final int STICKER_ID_FIELD_NUMBER = 1;
+    private volatile java.lang.Object stickerId_;
+    /**
+     * <code>string sticker_id = 1;</code>
+     * @return The stickerId.
+     */
+    public java.lang.String getStickerId() {
+      java.lang.Object ref = stickerId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        stickerId_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string sticker_id = 1;</code>
+     * @return The bytes for stickerId.
+     */
+    public com.google.protobuf.ByteString
+        getStickerIdBytes() {
+      java.lang.Object ref = stickerId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        stickerId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int AMOUNT_FIELD_NUMBER = 2;
+    private int amount_;
+    /**
+     * <code>int32 amount = 2;</code>
+     * @return The amount.
+     */
+    public int getAmount() {
+      return amount_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getStickerIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, stickerId_);
+      }
+      if (amount_ != 0) {
+        output.writeInt32(2, amount_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getStickerIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, stickerId_);
+      }
+      if (amount_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, amount_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof POGOProtos.Data.Quests.QuestReward.StickerReward)) {
+        return super.equals(obj);
+      }
+      POGOProtos.Data.Quests.QuestReward.StickerReward other = (POGOProtos.Data.Quests.QuestReward.StickerReward) obj;
+
+      if (!getStickerId()
+          .equals(other.getStickerId())) return false;
+      if (getAmount()
+          != other.getAmount()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + STICKER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStickerId().hashCode();
+      hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getAmount();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(POGOProtos.Data.Quests.QuestReward.StickerReward prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code POGOProtos.Data.Quests.QuestReward.StickerReward}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Data.Quests.QuestReward.StickerReward)
+        POGOProtos.Data.Quests.QuestReward.StickerRewardOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return POGOProtos.Data.Quests.QuestRewardOuterClass.internal_static_POGOProtos_Data_Quests_QuestReward_StickerReward_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return POGOProtos.Data.Quests.QuestRewardOuterClass.internal_static_POGOProtos_Data_Quests_QuestReward_StickerReward_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                POGOProtos.Data.Quests.QuestReward.StickerReward.class, POGOProtos.Data.Quests.QuestReward.StickerReward.Builder.class);
+      }
+
+      // Construct using POGOProtos.Data.Quests.QuestReward.StickerReward.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        stickerId_ = "";
+
+        amount_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return POGOProtos.Data.Quests.QuestRewardOuterClass.internal_static_POGOProtos_Data_Quests_QuestReward_StickerReward_descriptor;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Data.Quests.QuestReward.StickerReward getDefaultInstanceForType() {
+        return POGOProtos.Data.Quests.QuestReward.StickerReward.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public POGOProtos.Data.Quests.QuestReward.StickerReward build() {
+        POGOProtos.Data.Quests.QuestReward.StickerReward result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Data.Quests.QuestReward.StickerReward buildPartial() {
+        POGOProtos.Data.Quests.QuestReward.StickerReward result = new POGOProtos.Data.Quests.QuestReward.StickerReward(this);
+        result.stickerId_ = stickerId_;
+        result.amount_ = amount_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof POGOProtos.Data.Quests.QuestReward.StickerReward) {
+          return mergeFrom((POGOProtos.Data.Quests.QuestReward.StickerReward)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(POGOProtos.Data.Quests.QuestReward.StickerReward other) {
+        if (other == POGOProtos.Data.Quests.QuestReward.StickerReward.getDefaultInstance()) return this;
+        if (!other.getStickerId().isEmpty()) {
+          stickerId_ = other.stickerId_;
+          onChanged();
+        }
+        if (other.getAmount() != 0) {
+          setAmount(other.getAmount());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        POGOProtos.Data.Quests.QuestReward.StickerReward parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (POGOProtos.Data.Quests.QuestReward.StickerReward) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object stickerId_ = "";
+      /**
+       * <code>string sticker_id = 1;</code>
+       * @return The stickerId.
+       */
+      public java.lang.String getStickerId() {
+        java.lang.Object ref = stickerId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          stickerId_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string sticker_id = 1;</code>
+       * @return The bytes for stickerId.
+       */
+      public com.google.protobuf.ByteString
+          getStickerIdBytes() {
+        java.lang.Object ref = stickerId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          stickerId_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string sticker_id = 1;</code>
+       * @param value The stickerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStickerId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        stickerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string sticker_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStickerId() {
+        
+        stickerId_ = getDefaultInstance().getStickerId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string sticker_id = 1;</code>
+       * @param value The bytes for stickerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStickerIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        stickerId_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int amount_ ;
+      /**
+       * <code>int32 amount = 2;</code>
+       * @return The amount.
+       */
+      public int getAmount() {
+        return amount_;
+      }
+      /**
+       * <code>int32 amount = 2;</code>
+       * @param value The amount to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAmount(int value) {
+        
+        amount_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 amount = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAmount() {
+        
+        amount_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Data.Quests.QuestReward.StickerReward)
+    }
+
+    // @@protoc_insertion_point(class_scope:POGOProtos.Data.Quests.QuestReward.StickerReward)
+    private static final POGOProtos.Data.Quests.QuestReward.StickerReward DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new POGOProtos.Data.Quests.QuestReward.StickerReward();
+    }
+
+    public static POGOProtos.Data.Quests.QuestReward.StickerReward getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<StickerReward>
+        PARSER = new com.google.protobuf.AbstractParser<StickerReward>() {
+      @java.lang.Override
+      public StickerReward parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new StickerReward(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<StickerReward> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<StickerReward> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public POGOProtos.Data.Quests.QuestReward.StickerReward getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
   }
 
   public interface ItemRewardOrBuilder extends
@@ -2702,7 +3344,7 @@ private static final long serialVersionUID = 0L;
     QUEST_TEMPLATE_ID(7),
     POKEMON_ENCOUNTER(8),
     POKECOIN(9),
-    STICKER_ID(12),
+    STICKER(12),
     REWARD_NOT_SET(0);
     private final int value;
     private RewardCase(int value) {
@@ -2728,7 +3370,7 @@ private static final long serialVersionUID = 0L;
         case 7: return QUEST_TEMPLATE_ID;
         case 8: return POKEMON_ENCOUNTER;
         case 9: return POKECOIN;
-        case 12: return STICKER_ID;
+        case 12: return STICKER;
         case 0: return REWARD_NOT_SET;
         default: return null;
       }
@@ -2973,49 +3615,32 @@ private static final long serialVersionUID = 0L;
     return 0;
   }
 
-  public static final int STICKER_ID_FIELD_NUMBER = 12;
+  public static final int STICKER_FIELD_NUMBER = 12;
   /**
-   * <code>string sticker_id = 12;</code>
-   * @return The stickerId.
+   * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+   * @return Whether the sticker field is set.
    */
-  public java.lang.String getStickerId() {
-    java.lang.Object ref = "";
-    if (rewardCase_ == 12) {
-      ref = reward_;
-    }
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      if (rewardCase_ == 12) {
-        reward_ = s;
-      }
-      return s;
-    }
+  public boolean hasSticker() {
+    return rewardCase_ == 12;
   }
   /**
-   * <code>string sticker_id = 12;</code>
-   * @return The bytes for stickerId.
+   * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+   * @return The sticker.
    */
-  public com.google.protobuf.ByteString
-      getStickerIdBytes() {
-    java.lang.Object ref = "";
+  public POGOProtos.Data.Quests.QuestReward.StickerReward getSticker() {
     if (rewardCase_ == 12) {
-      ref = reward_;
+       return (POGOProtos.Data.Quests.QuestReward.StickerReward) reward_;
     }
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      if (rewardCase_ == 12) {
-        reward_ = b;
-      }
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
+    return POGOProtos.Data.Quests.QuestReward.StickerReward.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+   */
+  public POGOProtos.Data.Quests.QuestReward.StickerRewardOrBuilder getStickerOrBuilder() {
+    if (rewardCase_ == 12) {
+       return (POGOProtos.Data.Quests.QuestReward.StickerReward) reward_;
     }
+    return POGOProtos.Data.Quests.QuestReward.StickerReward.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -3063,7 +3688,7 @@ private static final long serialVersionUID = 0L;
           9, (int)((java.lang.Integer) reward_));
     }
     if (rewardCase_ == 12) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 12, reward_);
+      output.writeMessage(12, (POGOProtos.Data.Quests.QuestReward.StickerReward) reward_);
     }
     unknownFields.writeTo(output);
   }
@@ -3112,7 +3737,8 @@ private static final long serialVersionUID = 0L;
             9, (int)((java.lang.Integer) reward_));
     }
     if (rewardCase_ == 12) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, reward_);
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(12, (POGOProtos.Data.Quests.QuestReward.StickerReward) reward_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -3165,8 +3791,8 @@ private static final long serialVersionUID = 0L;
             != other.getPokecoin()) return false;
         break;
       case 12:
-        if (!getStickerId()
-            .equals(other.getStickerId())) return false;
+        if (!getSticker()
+            .equals(other.getSticker())) return false;
         break;
       case 0:
       default:
@@ -3218,8 +3844,8 @@ private static final long serialVersionUID = 0L;
         hash = (53 * hash) + getPokecoin();
         break;
       case 12:
-        hash = (37 * hash) + STICKER_ID_FIELD_NUMBER;
-        hash = (53 * hash) + getStickerId().hashCode();
+        hash = (37 * hash) + STICKER_FIELD_NUMBER;
+        hash = (53 * hash) + getSticker().hashCode();
         break;
       case 0:
       default:
@@ -3425,7 +4051,11 @@ private static final long serialVersionUID = 0L;
         result.reward_ = reward_;
       }
       if (rewardCase_ == 12) {
-        result.reward_ = reward_;
+        if (stickerBuilder_ == null) {
+          result.reward_ = reward_;
+        } else {
+          result.reward_ = stickerBuilder_.build();
+        }
       }
       result.rewardCase_ = rewardCase_;
       onBuilt();
@@ -3516,10 +4146,8 @@ private static final long serialVersionUID = 0L;
           setPokecoin(other.getPokecoin());
           break;
         }
-        case STICKER_ID: {
-          rewardCase_ = 12;
-          reward_ = other.reward_;
-          onChanged();
+        case STICKER: {
+          mergeSticker(other.getSticker());
           break;
         }
         case REWARD_NOT_SET: {
@@ -4312,91 +4940,142 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Quests.QuestReward.StickerReward, POGOProtos.Data.Quests.QuestReward.StickerReward.Builder, POGOProtos.Data.Quests.QuestReward.StickerRewardOrBuilder> stickerBuilder_;
     /**
-     * <code>string sticker_id = 12;</code>
-     * @return The stickerId.
+     * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+     * @return Whether the sticker field is set.
      */
-    public java.lang.String getStickerId() {
-      java.lang.Object ref = "";
-      if (rewardCase_ == 12) {
-        ref = reward_;
-      }
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+    public boolean hasSticker() {
+      return rewardCase_ == 12;
+    }
+    /**
+     * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+     * @return The sticker.
+     */
+    public POGOProtos.Data.Quests.QuestReward.StickerReward getSticker() {
+      if (stickerBuilder_ == null) {
         if (rewardCase_ == 12) {
-          reward_ = s;
+          return (POGOProtos.Data.Quests.QuestReward.StickerReward) reward_;
         }
-        return s;
+        return POGOProtos.Data.Quests.QuestReward.StickerReward.getDefaultInstance();
       } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string sticker_id = 12;</code>
-     * @return The bytes for stickerId.
-     */
-    public com.google.protobuf.ByteString
-        getStickerIdBytes() {
-      java.lang.Object ref = "";
-      if (rewardCase_ == 12) {
-        ref = reward_;
-      }
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
         if (rewardCase_ == 12) {
-          reward_ = b;
+          return stickerBuilder_.getMessage();
         }
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
+        return POGOProtos.Data.Quests.QuestReward.StickerReward.getDefaultInstance();
       }
     }
     /**
-     * <code>string sticker_id = 12;</code>
-     * @param value The stickerId to set.
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
      */
-    public Builder setStickerId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  rewardCase_ = 12;
-      reward_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string sticker_id = 12;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearStickerId() {
-      if (rewardCase_ == 12) {
-        rewardCase_ = 0;
-        reward_ = null;
+    public Builder setSticker(POGOProtos.Data.Quests.QuestReward.StickerReward value) {
+      if (stickerBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        reward_ = value;
         onChanged();
+      } else {
+        stickerBuilder_.setMessage(value);
+      }
+      rewardCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+     */
+    public Builder setSticker(
+        POGOProtos.Data.Quests.QuestReward.StickerReward.Builder builderForValue) {
+      if (stickerBuilder_ == null) {
+        reward_ = builderForValue.build();
+        onChanged();
+      } else {
+        stickerBuilder_.setMessage(builderForValue.build());
+      }
+      rewardCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+     */
+    public Builder mergeSticker(POGOProtos.Data.Quests.QuestReward.StickerReward value) {
+      if (stickerBuilder_ == null) {
+        if (rewardCase_ == 12 &&
+            reward_ != POGOProtos.Data.Quests.QuestReward.StickerReward.getDefaultInstance()) {
+          reward_ = POGOProtos.Data.Quests.QuestReward.StickerReward.newBuilder((POGOProtos.Data.Quests.QuestReward.StickerReward) reward_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          reward_ = value;
+        }
+        onChanged();
+      } else {
+        if (rewardCase_ == 12) {
+          stickerBuilder_.mergeFrom(value);
+        }
+        stickerBuilder_.setMessage(value);
+      }
+      rewardCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+     */
+    public Builder clearSticker() {
+      if (stickerBuilder_ == null) {
+        if (rewardCase_ == 12) {
+          rewardCase_ = 0;
+          reward_ = null;
+          onChanged();
+        }
+      } else {
+        if (rewardCase_ == 12) {
+          rewardCase_ = 0;
+          reward_ = null;
+        }
+        stickerBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>string sticker_id = 12;</code>
-     * @param value The bytes for stickerId to set.
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
      */
-    public Builder setStickerIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
+    public POGOProtos.Data.Quests.QuestReward.StickerReward.Builder getStickerBuilder() {
+      return getStickerFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+     */
+    public POGOProtos.Data.Quests.QuestReward.StickerRewardOrBuilder getStickerOrBuilder() {
+      if ((rewardCase_ == 12) && (stickerBuilder_ != null)) {
+        return stickerBuilder_.getMessageOrBuilder();
+      } else {
+        if (rewardCase_ == 12) {
+          return (POGOProtos.Data.Quests.QuestReward.StickerReward) reward_;
+        }
+        return POGOProtos.Data.Quests.QuestReward.StickerReward.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Quests.QuestReward.StickerReward sticker = 12;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Quests.QuestReward.StickerReward, POGOProtos.Data.Quests.QuestReward.StickerReward.Builder, POGOProtos.Data.Quests.QuestReward.StickerRewardOrBuilder> 
+        getStickerFieldBuilder() {
+      if (stickerBuilder_ == null) {
+        if (!(rewardCase_ == 12)) {
+          reward_ = POGOProtos.Data.Quests.QuestReward.StickerReward.getDefaultInstance();
+        }
+        stickerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Data.Quests.QuestReward.StickerReward, POGOProtos.Data.Quests.QuestReward.StickerReward.Builder, POGOProtos.Data.Quests.QuestReward.StickerRewardOrBuilder>(
+                (POGOProtos.Data.Quests.QuestReward.StickerReward) reward_,
+                getParentForChildren(),
+                isClean());
+        reward_ = null;
+      }
       rewardCase_ = 12;
-      reward_ = value;
-      onChanged();
-      return this;
+      onChanged();;
+      return stickerBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

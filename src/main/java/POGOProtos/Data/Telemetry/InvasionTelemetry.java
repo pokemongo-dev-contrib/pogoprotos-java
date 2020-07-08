@@ -20,6 +20,8 @@ private static final long serialVersionUID = 0L;
     npcId_ = 0;
     invasionId_ = "";
     radar_ = "";
+    invasionContext_ = 0;
+    balloonType_ = 0;
   }
 
   @java.lang.Override
@@ -119,6 +121,18 @@ private static final long serialVersionUID = 0L;
           case 109: {
 
             distance_ = input.readFloat();
+            break;
+          }
+          case 112: {
+            int rawValue = input.readEnum();
+
+            invasionContext_ = rawValue;
+            break;
+          }
+          case 120: {
+            int rawValue = input.readEnum();
+
+            balloonType_ = rawValue;
             break;
           }
           default: {
@@ -353,6 +367,44 @@ private static final long serialVersionUID = 0L;
     return distance_;
   }
 
+  public static final int INVASION_CONTEXT_FIELD_NUMBER = 14;
+  private int invasionContext_;
+  /**
+   * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext invasion_context = 14;</code>
+   * @return The enum numeric value on the wire for invasionContext.
+   */
+  public int getInvasionContextValue() {
+    return invasionContext_;
+  }
+  /**
+   * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext invasion_context = 14;</code>
+   * @return The invasionContext.
+   */
+  public POGOProtos.Enums.EnumWrapper.InvasionContext getInvasionContext() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Enums.EnumWrapper.InvasionContext result = POGOProtos.Enums.EnumWrapper.InvasionContext.valueOf(invasionContext_);
+    return result == null ? POGOProtos.Enums.EnumWrapper.InvasionContext.UNRECOGNIZED : result;
+  }
+
+  public static final int BALLOON_TYPE_FIELD_NUMBER = 15;
+  private int balloonType_;
+  /**
+   * <code>.POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType balloon_type = 15;</code>
+   * @return The enum numeric value on the wire for balloonType.
+   */
+  public int getBalloonTypeValue() {
+    return balloonType_;
+  }
+  /**
+   * <code>.POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType balloon_type = 15;</code>
+   * @return The balloonType.
+   */
+  public POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType getBalloonType() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType result = POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType.valueOf(balloonType_);
+    return result == null ? POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType.UNRECOGNIZED : result;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -405,6 +457,12 @@ private static final long serialVersionUID = 0L;
     }
     if (distance_ != 0F) {
       output.writeFloat(13, distance_);
+    }
+    if (invasionContext_ != POGOProtos.Enums.EnumWrapper.InvasionContext.POKESTOP_INCIDENT.getNumber()) {
+      output.writeEnum(14, invasionContext_);
+    }
+    if (balloonType_ != POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType.ROCKET.getNumber()) {
+      output.writeEnum(15, balloonType_);
     }
     unknownFields.writeTo(output);
   }
@@ -465,6 +523,14 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFloatSize(13, distance_);
     }
+    if (invasionContext_ != POGOProtos.Enums.EnumWrapper.InvasionContext.POKESTOP_INCIDENT.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(14, invasionContext_);
+    }
+    if (balloonType_ != POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType.ROCKET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(15, balloonType_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -506,6 +572,8 @@ private static final long serialVersionUID = 0L;
     if (java.lang.Float.floatToIntBits(getDistance())
         != java.lang.Float.floatToIntBits(
             other.getDistance())) return false;
+    if (invasionContext_ != other.invasionContext_) return false;
+    if (balloonType_ != other.balloonType_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -549,6 +617,10 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + DISTANCE_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
         getDistance());
+    hash = (37 * hash) + INVASION_CONTEXT_FIELD_NUMBER;
+    hash = (53 * hash) + invasionContext_;
+    hash = (37 * hash) + BALLOON_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + balloonType_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -708,6 +780,10 @@ private static final long serialVersionUID = 0L;
 
       distance_ = 0F;
 
+      invasionContext_ = 0;
+
+      balloonType_ = 0;
+
       return this;
     }
 
@@ -747,6 +823,8 @@ private static final long serialVersionUID = 0L;
       result.curfew_ = curfew_;
       result.duration_ = duration_;
       result.distance_ = distance_;
+      result.invasionContext_ = invasionContext_;
+      result.balloonType_ = balloonType_;
       onBuilt();
       return result;
     }
@@ -835,6 +913,12 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getDistance() != 0F) {
         setDistance(other.getDistance());
+      }
+      if (other.invasionContext_ != 0) {
+        setInvasionContextValue(other.getInvasionContextValue());
+      }
+      if (other.balloonType_ != 0) {
+        setBalloonTypeValue(other.getBalloonTypeValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1387,6 +1471,110 @@ private static final long serialVersionUID = 0L;
     public Builder clearDistance() {
       
       distance_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private int invasionContext_ = 0;
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext invasion_context = 14;</code>
+     * @return The enum numeric value on the wire for invasionContext.
+     */
+    public int getInvasionContextValue() {
+      return invasionContext_;
+    }
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext invasion_context = 14;</code>
+     * @param value The enum numeric value on the wire for invasionContext to set.
+     * @return This builder for chaining.
+     */
+    public Builder setInvasionContextValue(int value) {
+      invasionContext_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext invasion_context = 14;</code>
+     * @return The invasionContext.
+     */
+    public POGOProtos.Enums.EnumWrapper.InvasionContext getInvasionContext() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Enums.EnumWrapper.InvasionContext result = POGOProtos.Enums.EnumWrapper.InvasionContext.valueOf(invasionContext_);
+      return result == null ? POGOProtos.Enums.EnumWrapper.InvasionContext.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext invasion_context = 14;</code>
+     * @param value The invasionContext to set.
+     * @return This builder for chaining.
+     */
+    public Builder setInvasionContext(POGOProtos.Enums.EnumWrapper.InvasionContext value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      invasionContext_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Enums.EnumWrapper.InvasionContext invasion_context = 14;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearInvasionContext() {
+      
+      invasionContext_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int balloonType_ = 0;
+    /**
+     * <code>.POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType balloon_type = 15;</code>
+     * @return The enum numeric value on the wire for balloonType.
+     */
+    public int getBalloonTypeValue() {
+      return balloonType_;
+    }
+    /**
+     * <code>.POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType balloon_type = 15;</code>
+     * @param value The enum numeric value on the wire for balloonType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setBalloonTypeValue(int value) {
+      balloonType_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType balloon_type = 15;</code>
+     * @return The balloonType.
+     */
+    public POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType getBalloonType() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType result = POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType.valueOf(balloonType_);
+      return result == null ? POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType balloon_type = 15;</code>
+     * @param value The balloonType to set.
+     * @return This builder for chaining.
+     */
+    public Builder setBalloonType(POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      balloonType_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Rocket.RocketBalloonDisplay.BalloonType balloon_type = 15;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearBalloonType() {
+      
+      balloonType_ = 0;
       onChanged();
       return this;
     }

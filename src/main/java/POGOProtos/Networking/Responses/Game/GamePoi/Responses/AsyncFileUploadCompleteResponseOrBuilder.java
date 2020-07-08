@@ -28,4 +28,16 @@ public interface AsyncFileUploadCompleteResponseOrBuilder extends
    * @return The submissionType.
    */
   POGOProtos.Enums.PlayerSubmissionType getSubmissionType();
+
+  /**
+   * <code>string poi_id = 3;</code>
+   * @return The poiId.
+   */
+  java.lang.String getPoiId();
+  /**
+   * <code>string poi_id = 3;</code>
+   * @return The bytes for poiId.
+   */
+  com.google.protobuf.ByteString
+      getPoiIdBytes();
 }

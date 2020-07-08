@@ -54,4 +54,10 @@ public interface SubmitNewPoiMessageOrBuilder extends
    */
   com.google.protobuf.ByteString
       getSupportingStatementBytes();
+
+  /**
+   * <code>bool async_file_upload = 18;</code>
+   * @return The asyncFileUpload.
+   */
+  boolean getAsyncFileUpload();
 }

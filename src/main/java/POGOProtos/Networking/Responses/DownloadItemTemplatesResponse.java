@@ -1285,6 +1285,21 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Settings.Master.RaidClientSettingsOrBuilder getRaidSettingsProtoOrBuilder();
 
     /**
+     * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+     * @return Whether the sponsoredGeofenceGiftSettings field is set.
+     */
+    boolean hasSponsoredGeofenceGiftSettings();
+    /**
+     * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+     * @return The sponsoredGeofenceGiftSettings.
+     */
+    POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings getSponsoredGeofenceGiftSettings();
+    /**
+     * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+     */
+    POGOProtos.Settings.Master.SponsoredGeofenceGiftSettingsOrBuilder getSponsoredGeofenceGiftSettingsOrBuilder();
+
+    /**
      * <code>.POGOProtos.Data.Sticker.StickerMetadata sticker_metadata = 85;</code>
      * @return Whether the stickerMetadata field is set.
      */
@@ -1298,6 +1313,21 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Data.Sticker.StickerMetadata sticker_metadata = 85;</code>
      */
     POGOProtos.Data.Sticker.StickerMetadataOrBuilder getStickerMetadataOrBuilder();
+
+    /**
+     * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+     * @return Whether the crossGameSocialSettings field is set.
+     */
+    boolean hasCrossGameSocialSettings();
+    /**
+     * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+     * @return The crossGameSocialSettings.
+     */
+    POGOProtos.Settings.Master.CrossGameSocialSettings getCrossGameSocialSettings();
+    /**
+     * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+     */
+    POGOProtos.Settings.Master.CrossGameSocialSettingsOrBuilder getCrossGameSocialSettingsOrBuilder();
   }
   /**
    * Protobuf type {@code POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate}
@@ -2248,6 +2278,19 @@ private static final long serialVersionUID = 0L;
 
               break;
             }
+            case 674: {
+              POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.Builder subBuilder = null;
+              if (sponsoredGeofenceGiftSettings_ != null) {
+                subBuilder = sponsoredGeofenceGiftSettings_.toBuilder();
+              }
+              sponsoredGeofenceGiftSettings_ = input.readMessage(POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(sponsoredGeofenceGiftSettings_);
+                sponsoredGeofenceGiftSettings_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
             case 682: {
               POGOProtos.Data.Sticker.StickerMetadata.Builder subBuilder = null;
               if (stickerMetadata_ != null) {
@@ -2257,6 +2300,19 @@ private static final long serialVersionUID = 0L;
               if (subBuilder != null) {
                 subBuilder.mergeFrom(stickerMetadata_);
                 stickerMetadata_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 690: {
+              POGOProtos.Settings.Master.CrossGameSocialSettings.Builder subBuilder = null;
+              if (crossGameSocialSettings_ != null) {
+                subBuilder = crossGameSocialSettings_.toBuilder();
+              }
+              crossGameSocialSettings_ = input.readMessage(POGOProtos.Settings.Master.CrossGameSocialSettings.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(crossGameSocialSettings_);
+                crossGameSocialSettings_ = subBuilder.buildPartial();
               }
 
               break;
@@ -4403,6 +4459,29 @@ private static final long serialVersionUID = 0L;
       return getRaidSettingsProto();
     }
 
+    public static final int SPONSORED_GEOFENCE_GIFT_SETTINGS_FIELD_NUMBER = 84;
+    private POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsoredGeofenceGiftSettings_;
+    /**
+     * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+     * @return Whether the sponsoredGeofenceGiftSettings field is set.
+     */
+    public boolean hasSponsoredGeofenceGiftSettings() {
+      return sponsoredGeofenceGiftSettings_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+     * @return The sponsoredGeofenceGiftSettings.
+     */
+    public POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings getSponsoredGeofenceGiftSettings() {
+      return sponsoredGeofenceGiftSettings_ == null ? POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.getDefaultInstance() : sponsoredGeofenceGiftSettings_;
+    }
+    /**
+     * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+     */
+    public POGOProtos.Settings.Master.SponsoredGeofenceGiftSettingsOrBuilder getSponsoredGeofenceGiftSettingsOrBuilder() {
+      return getSponsoredGeofenceGiftSettings();
+    }
+
     public static final int STICKER_METADATA_FIELD_NUMBER = 85;
     private POGOProtos.Data.Sticker.StickerMetadata stickerMetadata_;
     /**
@@ -4424,6 +4503,29 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Data.Sticker.StickerMetadataOrBuilder getStickerMetadataOrBuilder() {
       return getStickerMetadata();
+    }
+
+    public static final int CROSS_GAME_SOCIAL_SETTINGS_FIELD_NUMBER = 86;
+    private POGOProtos.Settings.Master.CrossGameSocialSettings crossGameSocialSettings_;
+    /**
+     * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+     * @return Whether the crossGameSocialSettings field is set.
+     */
+    public boolean hasCrossGameSocialSettings() {
+      return crossGameSocialSettings_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+     * @return The crossGameSocialSettings.
+     */
+    public POGOProtos.Settings.Master.CrossGameSocialSettings getCrossGameSocialSettings() {
+      return crossGameSocialSettings_ == null ? POGOProtos.Settings.Master.CrossGameSocialSettings.getDefaultInstance() : crossGameSocialSettings_;
+    }
+    /**
+     * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+     */
+    public POGOProtos.Settings.Master.CrossGameSocialSettingsOrBuilder getCrossGameSocialSettingsOrBuilder() {
+      return getCrossGameSocialSettings();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -4650,8 +4752,14 @@ private static final long serialVersionUID = 0L;
       if (raidSettingsProto_ != null) {
         output.writeMessage(81, getRaidSettingsProto());
       }
+      if (sponsoredGeofenceGiftSettings_ != null) {
+        output.writeMessage(84, getSponsoredGeofenceGiftSettings());
+      }
       if (stickerMetadata_ != null) {
         output.writeMessage(85, getStickerMetadata());
+      }
+      if (crossGameSocialSettings_ != null) {
+        output.writeMessage(86, getCrossGameSocialSettings());
       }
       unknownFields.writeTo(output);
     }
@@ -4941,9 +5049,17 @@ private static final long serialVersionUID = 0L;
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(81, getRaidSettingsProto());
       }
+      if (sponsoredGeofenceGiftSettings_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(84, getSponsoredGeofenceGiftSettings());
+      }
       if (stickerMetadata_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(85, getStickerMetadata());
+      }
+      if (crossGameSocialSettings_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(86, getCrossGameSocialSettings());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -5307,10 +5423,20 @@ private static final long serialVersionUID = 0L;
         if (!getRaidSettingsProto()
             .equals(other.getRaidSettingsProto())) return false;
       }
+      if (hasSponsoredGeofenceGiftSettings() != other.hasSponsoredGeofenceGiftSettings()) return false;
+      if (hasSponsoredGeofenceGiftSettings()) {
+        if (!getSponsoredGeofenceGiftSettings()
+            .equals(other.getSponsoredGeofenceGiftSettings())) return false;
+      }
       if (hasStickerMetadata() != other.hasStickerMetadata()) return false;
       if (hasStickerMetadata()) {
         if (!getStickerMetadata()
             .equals(other.getStickerMetadata())) return false;
+      }
+      if (hasCrossGameSocialSettings() != other.hasCrossGameSocialSettings()) return false;
+      if (hasCrossGameSocialSettings()) {
+        if (!getCrossGameSocialSettings()
+            .equals(other.getCrossGameSocialSettings())) return false;
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -5601,9 +5727,17 @@ private static final long serialVersionUID = 0L;
         hash = (37 * hash) + RAID_SETTINGS_PROTO_FIELD_NUMBER;
         hash = (53 * hash) + getRaidSettingsProto().hashCode();
       }
+      if (hasSponsoredGeofenceGiftSettings()) {
+        hash = (37 * hash) + SPONSORED_GEOFENCE_GIFT_SETTINGS_FIELD_NUMBER;
+        hash = (53 * hash) + getSponsoredGeofenceGiftSettings().hashCode();
+      }
       if (hasStickerMetadata()) {
         hash = (37 * hash) + STICKER_METADATA_FIELD_NUMBER;
         hash = (53 * hash) + getStickerMetadata().hashCode();
+      }
+      if (hasCrossGameSocialSettings()) {
+        hash = (37 * hash) + CROSS_GAME_SOCIAL_SETTINGS_FIELD_NUMBER;
+        hash = (53 * hash) + getCrossGameSocialSettings().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -6154,11 +6288,23 @@ private static final long serialVersionUID = 0L;
           raidSettingsProto_ = null;
           raidSettingsProtoBuilder_ = null;
         }
+        if (sponsoredGeofenceGiftSettingsBuilder_ == null) {
+          sponsoredGeofenceGiftSettings_ = null;
+        } else {
+          sponsoredGeofenceGiftSettings_ = null;
+          sponsoredGeofenceGiftSettingsBuilder_ = null;
+        }
         if (stickerMetadataBuilder_ == null) {
           stickerMetadata_ = null;
         } else {
           stickerMetadata_ = null;
           stickerMetadataBuilder_ = null;
+        }
+        if (crossGameSocialSettingsBuilder_ == null) {
+          crossGameSocialSettings_ = null;
+        } else {
+          crossGameSocialSettings_ = null;
+          crossGameSocialSettingsBuilder_ = null;
         }
         return this;
       }
@@ -6532,10 +6678,20 @@ private static final long serialVersionUID = 0L;
         } else {
           result.raidSettingsProto_ = raidSettingsProtoBuilder_.build();
         }
+        if (sponsoredGeofenceGiftSettingsBuilder_ == null) {
+          result.sponsoredGeofenceGiftSettings_ = sponsoredGeofenceGiftSettings_;
+        } else {
+          result.sponsoredGeofenceGiftSettings_ = sponsoredGeofenceGiftSettingsBuilder_.build();
+        }
         if (stickerMetadataBuilder_ == null) {
           result.stickerMetadata_ = stickerMetadata_;
         } else {
           result.stickerMetadata_ = stickerMetadataBuilder_.build();
+        }
+        if (crossGameSocialSettingsBuilder_ == null) {
+          result.crossGameSocialSettings_ = crossGameSocialSettings_;
+        } else {
+          result.crossGameSocialSettings_ = crossGameSocialSettingsBuilder_.build();
         }
         onBuilt();
         return result;
@@ -6796,8 +6952,14 @@ private static final long serialVersionUID = 0L;
         if (other.hasRaidSettingsProto()) {
           mergeRaidSettingsProto(other.getRaidSettingsProto());
         }
+        if (other.hasSponsoredGeofenceGiftSettings()) {
+          mergeSponsoredGeofenceGiftSettings(other.getSponsoredGeofenceGiftSettings());
+        }
         if (other.hasStickerMetadata()) {
           mergeStickerMetadata(other.getStickerMetadata());
+        }
+        if (other.hasCrossGameSocialSettings()) {
+          mergeCrossGameSocialSettings(other.getCrossGameSocialSettings());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -15115,6 +15277,125 @@ private static final long serialVersionUID = 0L;
         return raidSettingsProtoBuilder_;
       }
 
+      private POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsoredGeofenceGiftSettings_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings, POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.Builder, POGOProtos.Settings.Master.SponsoredGeofenceGiftSettingsOrBuilder> sponsoredGeofenceGiftSettingsBuilder_;
+      /**
+       * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+       * @return Whether the sponsoredGeofenceGiftSettings field is set.
+       */
+      public boolean hasSponsoredGeofenceGiftSettings() {
+        return sponsoredGeofenceGiftSettingsBuilder_ != null || sponsoredGeofenceGiftSettings_ != null;
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+       * @return The sponsoredGeofenceGiftSettings.
+       */
+      public POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings getSponsoredGeofenceGiftSettings() {
+        if (sponsoredGeofenceGiftSettingsBuilder_ == null) {
+          return sponsoredGeofenceGiftSettings_ == null ? POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.getDefaultInstance() : sponsoredGeofenceGiftSettings_;
+        } else {
+          return sponsoredGeofenceGiftSettingsBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+       */
+      public Builder setSponsoredGeofenceGiftSettings(POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings value) {
+        if (sponsoredGeofenceGiftSettingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          sponsoredGeofenceGiftSettings_ = value;
+          onChanged();
+        } else {
+          sponsoredGeofenceGiftSettingsBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+       */
+      public Builder setSponsoredGeofenceGiftSettings(
+          POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.Builder builderForValue) {
+        if (sponsoredGeofenceGiftSettingsBuilder_ == null) {
+          sponsoredGeofenceGiftSettings_ = builderForValue.build();
+          onChanged();
+        } else {
+          sponsoredGeofenceGiftSettingsBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+       */
+      public Builder mergeSponsoredGeofenceGiftSettings(POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings value) {
+        if (sponsoredGeofenceGiftSettingsBuilder_ == null) {
+          if (sponsoredGeofenceGiftSettings_ != null) {
+            sponsoredGeofenceGiftSettings_ =
+              POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.newBuilder(sponsoredGeofenceGiftSettings_).mergeFrom(value).buildPartial();
+          } else {
+            sponsoredGeofenceGiftSettings_ = value;
+          }
+          onChanged();
+        } else {
+          sponsoredGeofenceGiftSettingsBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+       */
+      public Builder clearSponsoredGeofenceGiftSettings() {
+        if (sponsoredGeofenceGiftSettingsBuilder_ == null) {
+          sponsoredGeofenceGiftSettings_ = null;
+          onChanged();
+        } else {
+          sponsoredGeofenceGiftSettings_ = null;
+          sponsoredGeofenceGiftSettingsBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+       */
+      public POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.Builder getSponsoredGeofenceGiftSettingsBuilder() {
+        
+        onChanged();
+        return getSponsoredGeofenceGiftSettingsFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+       */
+      public POGOProtos.Settings.Master.SponsoredGeofenceGiftSettingsOrBuilder getSponsoredGeofenceGiftSettingsOrBuilder() {
+        if (sponsoredGeofenceGiftSettingsBuilder_ != null) {
+          return sponsoredGeofenceGiftSettingsBuilder_.getMessageOrBuilder();
+        } else {
+          return sponsoredGeofenceGiftSettings_ == null ?
+              POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.getDefaultInstance() : sponsoredGeofenceGiftSettings_;
+        }
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings sponsored_geofence_gift_settings = 84;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings, POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.Builder, POGOProtos.Settings.Master.SponsoredGeofenceGiftSettingsOrBuilder> 
+          getSponsoredGeofenceGiftSettingsFieldBuilder() {
+        if (sponsoredGeofenceGiftSettingsBuilder_ == null) {
+          sponsoredGeofenceGiftSettingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings, POGOProtos.Settings.Master.SponsoredGeofenceGiftSettings.Builder, POGOProtos.Settings.Master.SponsoredGeofenceGiftSettingsOrBuilder>(
+                  getSponsoredGeofenceGiftSettings(),
+                  getParentForChildren(),
+                  isClean());
+          sponsoredGeofenceGiftSettings_ = null;
+        }
+        return sponsoredGeofenceGiftSettingsBuilder_;
+      }
+
       private POGOProtos.Data.Sticker.StickerMetadata stickerMetadata_;
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Data.Sticker.StickerMetadata, POGOProtos.Data.Sticker.StickerMetadata.Builder, POGOProtos.Data.Sticker.StickerMetadataOrBuilder> stickerMetadataBuilder_;
@@ -15232,6 +15513,125 @@ private static final long serialVersionUID = 0L;
           stickerMetadata_ = null;
         }
         return stickerMetadataBuilder_;
+      }
+
+      private POGOProtos.Settings.Master.CrossGameSocialSettings crossGameSocialSettings_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Settings.Master.CrossGameSocialSettings, POGOProtos.Settings.Master.CrossGameSocialSettings.Builder, POGOProtos.Settings.Master.CrossGameSocialSettingsOrBuilder> crossGameSocialSettingsBuilder_;
+      /**
+       * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+       * @return Whether the crossGameSocialSettings field is set.
+       */
+      public boolean hasCrossGameSocialSettings() {
+        return crossGameSocialSettingsBuilder_ != null || crossGameSocialSettings_ != null;
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+       * @return The crossGameSocialSettings.
+       */
+      public POGOProtos.Settings.Master.CrossGameSocialSettings getCrossGameSocialSettings() {
+        if (crossGameSocialSettingsBuilder_ == null) {
+          return crossGameSocialSettings_ == null ? POGOProtos.Settings.Master.CrossGameSocialSettings.getDefaultInstance() : crossGameSocialSettings_;
+        } else {
+          return crossGameSocialSettingsBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+       */
+      public Builder setCrossGameSocialSettings(POGOProtos.Settings.Master.CrossGameSocialSettings value) {
+        if (crossGameSocialSettingsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          crossGameSocialSettings_ = value;
+          onChanged();
+        } else {
+          crossGameSocialSettingsBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+       */
+      public Builder setCrossGameSocialSettings(
+          POGOProtos.Settings.Master.CrossGameSocialSettings.Builder builderForValue) {
+        if (crossGameSocialSettingsBuilder_ == null) {
+          crossGameSocialSettings_ = builderForValue.build();
+          onChanged();
+        } else {
+          crossGameSocialSettingsBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+       */
+      public Builder mergeCrossGameSocialSettings(POGOProtos.Settings.Master.CrossGameSocialSettings value) {
+        if (crossGameSocialSettingsBuilder_ == null) {
+          if (crossGameSocialSettings_ != null) {
+            crossGameSocialSettings_ =
+              POGOProtos.Settings.Master.CrossGameSocialSettings.newBuilder(crossGameSocialSettings_).mergeFrom(value).buildPartial();
+          } else {
+            crossGameSocialSettings_ = value;
+          }
+          onChanged();
+        } else {
+          crossGameSocialSettingsBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+       */
+      public Builder clearCrossGameSocialSettings() {
+        if (crossGameSocialSettingsBuilder_ == null) {
+          crossGameSocialSettings_ = null;
+          onChanged();
+        } else {
+          crossGameSocialSettings_ = null;
+          crossGameSocialSettingsBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+       */
+      public POGOProtos.Settings.Master.CrossGameSocialSettings.Builder getCrossGameSocialSettingsBuilder() {
+        
+        onChanged();
+        return getCrossGameSocialSettingsFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+       */
+      public POGOProtos.Settings.Master.CrossGameSocialSettingsOrBuilder getCrossGameSocialSettingsOrBuilder() {
+        if (crossGameSocialSettingsBuilder_ != null) {
+          return crossGameSocialSettingsBuilder_.getMessageOrBuilder();
+        } else {
+          return crossGameSocialSettings_ == null ?
+              POGOProtos.Settings.Master.CrossGameSocialSettings.getDefaultInstance() : crossGameSocialSettings_;
+        }
+      }
+      /**
+       * <code>.POGOProtos.Settings.Master.CrossGameSocialSettings cross_game_social_settings = 86;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Settings.Master.CrossGameSocialSettings, POGOProtos.Settings.Master.CrossGameSocialSettings.Builder, POGOProtos.Settings.Master.CrossGameSocialSettingsOrBuilder> 
+          getCrossGameSocialSettingsFieldBuilder() {
+        if (crossGameSocialSettingsBuilder_ == null) {
+          crossGameSocialSettingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Settings.Master.CrossGameSocialSettings, POGOProtos.Settings.Master.CrossGameSocialSettings.Builder, POGOProtos.Settings.Master.CrossGameSocialSettingsOrBuilder>(
+                  getCrossGameSocialSettings(),
+                  getParentForChildren(),
+                  isClean());
+          crossGameSocialSettings_ = null;
+        }
+        return crossGameSocialSettingsBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(

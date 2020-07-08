@@ -24,7 +24,7 @@ public final class PokemonMoveOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"POGOProtos/Enums/PokemonMove.proto\022\020PO" +
-      "GOProtos.Enums*\241&\n\013PokemonMove\022\016\n\nMOVE_U" +
+      "GOProtos.Enums*\253&\n\013PokemonMove\022\016\n\nMOVE_U" +
       "NSET\020\000\022\021\n\rTHUNDER_SHOCK\020\001\022\020\n\014QUICK_ATTAC" +
       "K\020\002\022\013\n\007SCRATCH\020\003\022\t\n\005EMBER\020\004\022\r\n\tVINE_WHIP" +
       "\020\005\022\n\n\006TACKLE\020\006\022\016\n\nRAZOR_LEAF\020\007\022\r\n\tTAKE_D" +
@@ -146,8 +146,8 @@ public final class PokemonMoveOuterClass {
       "CK_WRECKER\020\316\002\022\016\n\tAEROBLAST\020\317\002\022\030\n\023TECHNO_" +
       "BLAST_NORMAL\020\320\002\022\026\n\021TECHNO_BLAST_BURN\020\321\002\022" +
       "\027\n\022TECHNO_BLAST_CHILL\020\322\002\022\027\n\022TECHNO_BLAST" +
-      "_WATER\020\323\002\022\027\n\022TECHNO_BLAST_SHOCK\020\324\002B\002P\001b\006" +
-      "proto3"
+      "_WATER\020\323\002\022\027\n\022TECHNO_BLAST_SHOCK\020\324\002\022\010\n\003FL" +
+      "Y\020\325\002B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -97,4 +97,10 @@ public interface AvailableSubmissionsPerSubmissionTypeOrBuilder extends
    */
   com.google.protobuf.ByteString
       getBlacklistedDeviceIdBytes(int index);
+
+  /**
+   * <code>bool is_whitelisted_user = 9;</code>
+   * @return The isWhitelistedUser.
+   */
+  boolean getIsWhitelistedUser();
 }

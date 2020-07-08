@@ -122,4 +122,16 @@ public interface GetRaidDetailsResponseOrBuilder extends
    * @return The numFriendInvitesRemaining.
    */
   int getNumFriendInvitesRemaining();
+
+  /**
+   * <code>bool remote_ticket_used = 15;</code>
+   * @return The remoteTicketUsed.
+   */
+  boolean getRemoteTicketUsed();
+
+  /**
+   * <code>bool is_within_plfe_range = 16;</code>
+   * @return The isWithinPlfeRange.
+   */
+  boolean getIsWithinPlfeRange();
 }

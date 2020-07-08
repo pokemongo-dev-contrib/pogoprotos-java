@@ -19,6 +19,11 @@ public final class GetUploadUrlResponseOuterClass {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_POGOProtos_Networking_Responses_GetUploadUrlResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_POGOProtos_Networking_Responses_GetUploadUrlResponse_ContextSignedUrlsEntry_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_POGOProtos_Networking_Responses_GetUploadUrlResponse_ContextSignedUrlsEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -30,12 +35,18 @@ public final class GetUploadUrlResponseOuterClass {
     java.lang.String[] descriptorData = {
       "\n:POGOProtos/Networking/Responses/GetUpl" +
       "oadUrlResponse.proto\022\037POGOProtos.Network" +
-      "ing.Responses\"\315\001\n\024GetUploadUrlResponse\022L" +
+      "ing.Responses\"\254\003\n\024GetUploadUrlResponse\022L" +
       "\n\006status\030\001 \001(\0162<.POGOProtos.Networking.R" +
       "esponses.GetUploadUrlResponse.Status\022\022\n\n" +
       "signed_url\030\002 \001(\t\022#\n\033supporting_image_sig" +
-      "ned_url\030\003 \001(\t\".\n\006Status\022\t\n\005UNSET\020\000\022\014\n\010FA" +
-      "ILURES\020\001\022\013\n\007SUCCESS\020\002B\002P\001b\006proto3"
+      "ned_url\030\003 \001(\t\022i\n\023context_signed_urls\030\004 \003" +
+      "(\0132L.POGOProtos.Networking.Responses.Get" +
+      "UploadUrlResponse.ContextSignedUrlsEntry" +
+      "\0328\n\026ContextSignedUrlsEntry\022\013\n\003key\030\001 \001(\t\022" +
+      "\r\n\005value\030\002 \001(\t:\0028\001\"h\n\006Status\022\t\n\005UNSET\020\000\022" +
+      "\014\n\010FAILURES\020\001\022\013\n\007SUCCESS\020\002\022\032\n\026MISSING_IM" +
+      "AGE_CONTEXTS\020\003\022\034\n\030DUPLICATE_IMAGE_CONTEX" +
+      "TS\020\004B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -46,7 +57,13 @@ public final class GetUploadUrlResponseOuterClass {
     internal_static_POGOProtos_Networking_Responses_GetUploadUrlResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_GetUploadUrlResponse_descriptor,
-        new java.lang.String[] { "Status", "SignedUrl", "SupportingImageSignedUrl", });
+        new java.lang.String[] { "Status", "SignedUrl", "SupportingImageSignedUrl", "ContextSignedUrls", });
+    internal_static_POGOProtos_Networking_Responses_GetUploadUrlResponse_ContextSignedUrlsEntry_descriptor =
+      internal_static_POGOProtos_Networking_Responses_GetUploadUrlResponse_descriptor.getNestedTypes().get(0);
+    internal_static_POGOProtos_Networking_Responses_GetUploadUrlResponse_ContextSignedUrlsEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_POGOProtos_Networking_Responses_GetUploadUrlResponse_ContextSignedUrlsEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

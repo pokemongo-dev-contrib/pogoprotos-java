@@ -31,10 +31,10 @@ public final class JoinLobbyResponseOuterClass {
       "\n7POGOProtos/Networking/Responses/JoinLo" +
       "bbyResponse.proto\022\037POGOProtos.Networking" +
       ".Responses\032 POGOProtos/Data/Raid/Lobby.p" +
-      "roto\"\272\003\n\021JoinLobbyResponse\022I\n\006result\030\001 \001" +
+      "roto\"\216\004\n\021JoinLobbyResponse\022I\n\006result\030\001 \001" +
       "(\01629.POGOProtos.Networking.Responses.Joi" +
       "nLobbyResponse.Result\022*\n\005lobby\030\002 \001(\0132\033.P" +
-      "OGOProtos.Data.Raid.Lobby\"\255\002\n\006Result\022\t\n\005" +
+      "OGOProtos.Data.Raid.Lobby\"\201\003\n\006Result\022\t\n\005" +
       "UNSET\020\000\022\013\n\007SUCCESS\020\001\022\026\n\022ERROR_NOT_IN_RAN" +
       "GE\020\002\022\032\n\026ERROR_RAID_UNAVAILABLE\020\003\022\030\n\024ERRO" +
       "R_RAID_COMPLETED\020\004\022\036\n\032ERROR_NO_AVAILABLE" +
@@ -42,7 +42,9 @@ public final class JoinLobbyResponseOuterClass {
       "_LEVEL\020\006\022\032\n\026ERROR_POI_INACCESSIBLE\020\007\022\025\n\021" +
       "ERROR_GYM_LOCKOUT\020\010\022\023\n\017ERROR_NO_TICKET\020\t" +
       "\022\032\n\026ERROR_NO_REMOTE_TICKET\020\n\022\023\n\017ERROR_NO" +
-      "_INVITE\020\013B\002P\001b\006proto3"
+      "_INVITE\020\013\022#\n\037ERROR_NO_REMOTE_SLOTS_REMAI" +
+      "NING\020\014\022\024\n\020ERROR_LOBBY_FULL\020\r\022\027\n\023ERROR_LO" +
+      "BBY_EXPIRED\020\016B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

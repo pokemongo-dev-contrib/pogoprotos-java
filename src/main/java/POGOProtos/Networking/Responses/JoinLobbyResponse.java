@@ -153,6 +153,18 @@ private static final long serialVersionUID = 0L;
      * <code>ERROR_NO_INVITE = 11;</code>
      */
     ERROR_NO_INVITE(11),
+    /**
+     * <code>ERROR_NO_REMOTE_SLOTS_REMAINING = 12;</code>
+     */
+    ERROR_NO_REMOTE_SLOTS_REMAINING(12),
+    /**
+     * <code>ERROR_LOBBY_FULL = 13;</code>
+     */
+    ERROR_LOBBY_FULL(13),
+    /**
+     * <code>ERROR_LOBBY_EXPIRED = 14;</code>
+     */
+    ERROR_LOBBY_EXPIRED(14),
     UNRECOGNIZED(-1),
     ;
 
@@ -204,6 +216,18 @@ private static final long serialVersionUID = 0L;
      * <code>ERROR_NO_INVITE = 11;</code>
      */
     public static final int ERROR_NO_INVITE_VALUE = 11;
+    /**
+     * <code>ERROR_NO_REMOTE_SLOTS_REMAINING = 12;</code>
+     */
+    public static final int ERROR_NO_REMOTE_SLOTS_REMAINING_VALUE = 12;
+    /**
+     * <code>ERROR_LOBBY_FULL = 13;</code>
+     */
+    public static final int ERROR_LOBBY_FULL_VALUE = 13;
+    /**
+     * <code>ERROR_LOBBY_EXPIRED = 14;</code>
+     */
+    public static final int ERROR_LOBBY_EXPIRED_VALUE = 14;
 
 
     public final int getNumber() {
@@ -242,6 +266,9 @@ private static final long serialVersionUID = 0L;
         case 9: return ERROR_NO_TICKET;
         case 10: return ERROR_NO_REMOTE_TICKET;
         case 11: return ERROR_NO_INVITE;
+        case 12: return ERROR_NO_REMOTE_SLOTS_REMAINING;
+        case 13: return ERROR_LOBBY_FULL;
+        case 14: return ERROR_LOBBY_EXPIRED;
         default: return null;
       }
     }

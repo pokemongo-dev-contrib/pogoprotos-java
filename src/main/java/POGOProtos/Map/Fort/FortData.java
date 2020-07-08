@@ -594,6 +594,10 @@ private static final long serialVersionUID = 0L;
        * <code>INVASION_GIOVANNI = 3;</code>
        */
       INVASION_GIOVANNI(3),
+      /**
+       * <code>INVASION_GRUNTB = 4;</code>
+       */
+      INVASION_GRUNTB(4),
       UNRECOGNIZED(-1),
       ;
 
@@ -613,6 +617,10 @@ private static final long serialVersionUID = 0L;
        * <code>INVASION_GIOVANNI = 3;</code>
        */
       public static final int INVASION_GIOVANNI_VALUE = 3;
+      /**
+       * <code>INVASION_GRUNTB = 4;</code>
+       */
+      public static final int INVASION_GRUNTB_VALUE = 4;
 
 
       public final int getNumber() {
@@ -643,6 +651,7 @@ private static final long serialVersionUID = 0L;
           case 1: return INVASION_GRUNT;
           case 2: return INVASION_LEADER;
           case 3: return INVASION_GIOVANNI;
+          case 4: return INVASION_GRUNTB;
           default: return null;
         }
       }

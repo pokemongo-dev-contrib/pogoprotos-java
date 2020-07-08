@@ -24,12 +24,13 @@ public final class ConditionTypeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n$POGOProtos/Enums/ConditionType.proto\022\020" +
-      "POGOProtos.Enums*\315\001\n\rConditionType\022\023\n\017UN" +
+      "POGOProtos.Enums*\353\001\n\rConditionType\022\023\n\017UN" +
       "SET_CONDITION\020\000\022\031\n\025WITH_POKEMON_CP_LIMIT" +
       "\020\001\022\025\n\021WITH_PLAYER_LEVEL\020\002\022\025\n\021WITH_POKEMO" +
       "N_TYPE\020\003\022\031\n\025WITH_POKEMON_CATEGORY\020\004\022\027\n\023W" +
       "ITH_UNIQUE_POKEMON\020\005\022\025\n\021POKEMON_WHITELIS" +
-      "T\020\006\022\023\n\017POKEMON_BANLIST\020\007B\002P\001b\006proto3"
+      "T\020\006\022\023\n\017POKEMON_BANLIST\020\007\022\034\n\030POKEMON_CAUG" +
+      "HT_TIMESTAMP\020\010B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

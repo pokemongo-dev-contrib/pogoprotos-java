@@ -83,4 +83,22 @@ public interface IapItemCategoryDisplayOrBuilder extends
    */
   com.google.protobuf.ByteString
       getDescriptionBytes();
+
+  /**
+   * <code>int32 display_rows = 9;</code>
+   * @return The displayRows.
+   */
+  int getDisplayRows();
+
+  /**
+   * <code>string subcategory = 10;</code>
+   * @return The subcategory.
+   */
+  java.lang.String getSubcategory();
+  /**
+   * <code>string subcategory = 10;</code>
+   * @return The bytes for subcategory.
+   */
+  com.google.protobuf.ByteString
+      getSubcategoryBytes();
 }

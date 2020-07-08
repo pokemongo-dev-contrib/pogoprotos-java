@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private RaidClientSettings() {
+    unsupportedRaidLevelsForFriendInvites_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -38,6 +39,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -98,6 +100,39 @@ private static final long serialVersionUID = 0L;
             maxRemotePlayersPerLobby_ = input.readInt32();
             break;
           }
+          case 88: {
+
+            inviteCooldownDurationMillis_ = input.readInt64();
+            break;
+          }
+          case 96: {
+
+            maxNumFriendInvitesPerAction_ = input.readInt32();
+            break;
+          }
+          case 104: {
+            int rawValue = input.readEnum();
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              unsupportedRaidLevelsForFriendInvites_ = new java.util.ArrayList<java.lang.Integer>();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            unsupportedRaidLevelsForFriendInvites_.add(rawValue);
+            break;
+          }
+          case 106: {
+            int length = input.readRawVarint32();
+            int oldLimit = input.pushLimit(length);
+            while(input.getBytesUntilLimit() > 0) {
+              int rawValue = input.readEnum();
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                unsupportedRaidLevelsForFriendInvites_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              unsupportedRaidLevelsForFriendInvites_.add(rawValue);
+            }
+            input.popLimit(oldLimit);
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -113,6 +148,9 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        unsupportedRaidLevelsForFriendInvites_ = java.util.Collections.unmodifiableList(unsupportedRaidLevelsForFriendInvites_);
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -230,6 +268,79 @@ private static final long serialVersionUID = 0L;
     return maxRemotePlayersPerLobby_;
   }
 
+  public static final int INVITE_COOLDOWN_DURATION_MILLIS_FIELD_NUMBER = 11;
+  private long inviteCooldownDurationMillis_;
+  /**
+   * <code>int64 invite_cooldown_duration_millis = 11;</code>
+   * @return The inviteCooldownDurationMillis.
+   */
+  public long getInviteCooldownDurationMillis() {
+    return inviteCooldownDurationMillis_;
+  }
+
+  public static final int MAX_NUM_FRIEND_INVITES_PER_ACTION_FIELD_NUMBER = 12;
+  private int maxNumFriendInvitesPerAction_;
+  /**
+   * <code>int32 max_num_friend_invites_per_action = 12;</code>
+   * @return The maxNumFriendInvitesPerAction.
+   */
+  public int getMaxNumFriendInvitesPerAction() {
+    return maxNumFriendInvitesPerAction_;
+  }
+
+  public static final int UNSUPPORTED_RAID_LEVELS_FOR_FRIEND_INVITES_FIELD_NUMBER = 13;
+  private java.util.List<java.lang.Integer> unsupportedRaidLevelsForFriendInvites_;
+  private static final com.google.protobuf.Internal.ListAdapter.Converter<
+      java.lang.Integer, POGOProtos.Enums.RaidLevel> unsupportedRaidLevelsForFriendInvites_converter_ =
+          new com.google.protobuf.Internal.ListAdapter.Converter<
+              java.lang.Integer, POGOProtos.Enums.RaidLevel>() {
+            public POGOProtos.Enums.RaidLevel convert(java.lang.Integer from) {
+              @SuppressWarnings("deprecation")
+              POGOProtos.Enums.RaidLevel result = POGOProtos.Enums.RaidLevel.valueOf(from);
+              return result == null ? POGOProtos.Enums.RaidLevel.UNRECOGNIZED : result;
+            }
+          };
+  /**
+   * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+   * @return A list containing the unsupportedRaidLevelsForFriendInvites.
+   */
+  public java.util.List<POGOProtos.Enums.RaidLevel> getUnsupportedRaidLevelsForFriendInvitesList() {
+    return new com.google.protobuf.Internal.ListAdapter<
+        java.lang.Integer, POGOProtos.Enums.RaidLevel>(unsupportedRaidLevelsForFriendInvites_, unsupportedRaidLevelsForFriendInvites_converter_);
+  }
+  /**
+   * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+   * @return The count of unsupportedRaidLevelsForFriendInvites.
+   */
+  public int getUnsupportedRaidLevelsForFriendInvitesCount() {
+    return unsupportedRaidLevelsForFriendInvites_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+   * @param index The index of the element to return.
+   * @return The unsupportedRaidLevelsForFriendInvites at the given index.
+   */
+  public POGOProtos.Enums.RaidLevel getUnsupportedRaidLevelsForFriendInvites(int index) {
+    return unsupportedRaidLevelsForFriendInvites_converter_.convert(unsupportedRaidLevelsForFriendInvites_.get(index));
+  }
+  /**
+   * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+   * @return A list containing the enum numeric values on the wire for unsupportedRaidLevelsForFriendInvites.
+   */
+  public java.util.List<java.lang.Integer>
+  getUnsupportedRaidLevelsForFriendInvitesValueList() {
+    return unsupportedRaidLevelsForFriendInvites_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of unsupportedRaidLevelsForFriendInvites at the given index.
+   */
+  public int getUnsupportedRaidLevelsForFriendInvitesValue(int index) {
+    return unsupportedRaidLevelsForFriendInvites_.get(index);
+  }
+  private int unsupportedRaidLevelsForFriendInvitesMemoizedSerializedSize;
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -244,6 +355,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    getSerializedSize();
     if (remoteRaidEnabled_ != false) {
       output.writeBool(1, remoteRaidEnabled_);
     }
@@ -273,6 +385,19 @@ private static final long serialVersionUID = 0L;
     }
     if (maxRemotePlayersPerLobby_ != 0) {
       output.writeInt32(10, maxRemotePlayersPerLobby_);
+    }
+    if (inviteCooldownDurationMillis_ != 0L) {
+      output.writeInt64(11, inviteCooldownDurationMillis_);
+    }
+    if (maxNumFriendInvitesPerAction_ != 0) {
+      output.writeInt32(12, maxNumFriendInvitesPerAction_);
+    }
+    if (getUnsupportedRaidLevelsForFriendInvitesList().size() > 0) {
+      output.writeUInt32NoTag(106);
+      output.writeUInt32NoTag(unsupportedRaidLevelsForFriendInvitesMemoizedSerializedSize);
+    }
+    for (int i = 0; i < unsupportedRaidLevelsForFriendInvites_.size(); i++) {
+      output.writeEnumNoTag(unsupportedRaidLevelsForFriendInvites_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -323,6 +448,26 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(10, maxRemotePlayersPerLobby_);
     }
+    if (inviteCooldownDurationMillis_ != 0L) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt64Size(11, inviteCooldownDurationMillis_);
+    }
+    if (maxNumFriendInvitesPerAction_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(12, maxNumFriendInvitesPerAction_);
+    }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < unsupportedRaidLevelsForFriendInvites_.size(); i++) {
+        dataSize += com.google.protobuf.CodedOutputStream
+          .computeEnumSizeNoTag(unsupportedRaidLevelsForFriendInvites_.get(i));
+      }
+      size += dataSize;
+      if (!getUnsupportedRaidLevelsForFriendInvitesList().isEmpty()) {  size += 1;
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32SizeNoTag(dataSize);
+      }unsupportedRaidLevelsForFriendInvitesMemoizedSerializedSize = dataSize;
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -359,6 +504,11 @@ private static final long serialVersionUID = 0L;
         != other.getMaxPlayersPerLobby()) return false;
     if (getMaxRemotePlayersPerLobby()
         != other.getMaxRemotePlayersPerLobby()) return false;
+    if (getInviteCooldownDurationMillis()
+        != other.getInviteCooldownDurationMillis()) return false;
+    if (getMaxNumFriendInvitesPerAction()
+        != other.getMaxNumFriendInvitesPerAction()) return false;
+    if (!unsupportedRaidLevelsForFriendInvites_.equals(other.unsupportedRaidLevelsForFriendInvites_)) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -394,6 +544,15 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getMaxPlayersPerLobby();
     hash = (37 * hash) + MAX_REMOTE_PLAYERS_PER_LOBBY_FIELD_NUMBER;
     hash = (53 * hash) + getMaxRemotePlayersPerLobby();
+    hash = (37 * hash) + INVITE_COOLDOWN_DURATION_MILLIS_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        getInviteCooldownDurationMillis());
+    hash = (37 * hash) + MAX_NUM_FRIEND_INVITES_PER_ACTION_FIELD_NUMBER;
+    hash = (53 * hash) + getMaxNumFriendInvitesPerAction();
+    if (getUnsupportedRaidLevelsForFriendInvitesCount() > 0) {
+      hash = (37 * hash) + UNSUPPORTED_RAID_LEVELS_FOR_FRIEND_INVITES_FIELD_NUMBER;
+      hash = (53 * hash) + unsupportedRaidLevelsForFriendInvites_.hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -547,6 +706,12 @@ private static final long serialVersionUID = 0L;
 
       maxRemotePlayersPerLobby_ = 0;
 
+      inviteCooldownDurationMillis_ = 0L;
+
+      maxNumFriendInvitesPerAction_ = 0;
+
+      unsupportedRaidLevelsForFriendInvites_ = java.util.Collections.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -573,6 +738,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Settings.Master.RaidClientSettings buildPartial() {
       POGOProtos.Settings.Master.RaidClientSettings result = new POGOProtos.Settings.Master.RaidClientSettings(this);
+      int from_bitField0_ = bitField0_;
       result.remoteRaidEnabled_ = remoteRaidEnabled_;
       result.maxRemoteRaidPasses_ = maxRemoteRaidPasses_;
       result.remoteDamageModifier_ = remoteDamageModifier_;
@@ -583,6 +749,13 @@ private static final long serialVersionUID = 0L;
       result.canInviteFriendsRemotely_ = canInviteFriendsRemotely_;
       result.maxPlayersPerLobby_ = maxPlayersPerLobby_;
       result.maxRemotePlayersPerLobby_ = maxRemotePlayersPerLobby_;
+      result.inviteCooldownDurationMillis_ = inviteCooldownDurationMillis_;
+      result.maxNumFriendInvitesPerAction_ = maxNumFriendInvitesPerAction_;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        unsupportedRaidLevelsForFriendInvites_ = java.util.Collections.unmodifiableList(unsupportedRaidLevelsForFriendInvites_);
+        bitField0_ = (bitField0_ & ~0x00000001);
+      }
+      result.unsupportedRaidLevelsForFriendInvites_ = unsupportedRaidLevelsForFriendInvites_;
       onBuilt();
       return result;
     }
@@ -661,6 +834,22 @@ private static final long serialVersionUID = 0L;
       if (other.getMaxRemotePlayersPerLobby() != 0) {
         setMaxRemotePlayersPerLobby(other.getMaxRemotePlayersPerLobby());
       }
+      if (other.getInviteCooldownDurationMillis() != 0L) {
+        setInviteCooldownDurationMillis(other.getInviteCooldownDurationMillis());
+      }
+      if (other.getMaxNumFriendInvitesPerAction() != 0) {
+        setMaxNumFriendInvitesPerAction(other.getMaxNumFriendInvitesPerAction());
+      }
+      if (!other.unsupportedRaidLevelsForFriendInvites_.isEmpty()) {
+        if (unsupportedRaidLevelsForFriendInvites_.isEmpty()) {
+          unsupportedRaidLevelsForFriendInvites_ = other.unsupportedRaidLevelsForFriendInvites_;
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          ensureUnsupportedRaidLevelsForFriendInvitesIsMutable();
+          unsupportedRaidLevelsForFriendInvites_.addAll(other.unsupportedRaidLevelsForFriendInvites_);
+        }
+        onChanged();
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -689,6 +878,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private boolean remoteRaidEnabled_ ;
     /**
@@ -986,6 +1176,206 @@ private static final long serialVersionUID = 0L;
     public Builder clearMaxRemotePlayersPerLobby() {
       
       maxRemotePlayersPerLobby_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private long inviteCooldownDurationMillis_ ;
+    /**
+     * <code>int64 invite_cooldown_duration_millis = 11;</code>
+     * @return The inviteCooldownDurationMillis.
+     */
+    public long getInviteCooldownDurationMillis() {
+      return inviteCooldownDurationMillis_;
+    }
+    /**
+     * <code>int64 invite_cooldown_duration_millis = 11;</code>
+     * @param value The inviteCooldownDurationMillis to set.
+     * @return This builder for chaining.
+     */
+    public Builder setInviteCooldownDurationMillis(long value) {
+      
+      inviteCooldownDurationMillis_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int64 invite_cooldown_duration_millis = 11;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearInviteCooldownDurationMillis() {
+      
+      inviteCooldownDurationMillis_ = 0L;
+      onChanged();
+      return this;
+    }
+
+    private int maxNumFriendInvitesPerAction_ ;
+    /**
+     * <code>int32 max_num_friend_invites_per_action = 12;</code>
+     * @return The maxNumFriendInvitesPerAction.
+     */
+    public int getMaxNumFriendInvitesPerAction() {
+      return maxNumFriendInvitesPerAction_;
+    }
+    /**
+     * <code>int32 max_num_friend_invites_per_action = 12;</code>
+     * @param value The maxNumFriendInvitesPerAction to set.
+     * @return This builder for chaining.
+     */
+    public Builder setMaxNumFriendInvitesPerAction(int value) {
+      
+      maxNumFriendInvitesPerAction_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 max_num_friend_invites_per_action = 12;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearMaxNumFriendInvitesPerAction() {
+      
+      maxNumFriendInvitesPerAction_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private java.util.List<java.lang.Integer> unsupportedRaidLevelsForFriendInvites_ =
+      java.util.Collections.emptyList();
+    private void ensureUnsupportedRaidLevelsForFriendInvitesIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        unsupportedRaidLevelsForFriendInvites_ = new java.util.ArrayList<java.lang.Integer>(unsupportedRaidLevelsForFriendInvites_);
+        bitField0_ |= 0x00000001;
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @return A list containing the unsupportedRaidLevelsForFriendInvites.
+     */
+    public java.util.List<POGOProtos.Enums.RaidLevel> getUnsupportedRaidLevelsForFriendInvitesList() {
+      return new com.google.protobuf.Internal.ListAdapter<
+          java.lang.Integer, POGOProtos.Enums.RaidLevel>(unsupportedRaidLevelsForFriendInvites_, unsupportedRaidLevelsForFriendInvites_converter_);
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @return The count of unsupportedRaidLevelsForFriendInvites.
+     */
+    public int getUnsupportedRaidLevelsForFriendInvitesCount() {
+      return unsupportedRaidLevelsForFriendInvites_.size();
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @param index The index of the element to return.
+     * @return The unsupportedRaidLevelsForFriendInvites at the given index.
+     */
+    public POGOProtos.Enums.RaidLevel getUnsupportedRaidLevelsForFriendInvites(int index) {
+      return unsupportedRaidLevelsForFriendInvites_converter_.convert(unsupportedRaidLevelsForFriendInvites_.get(index));
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @param index The index to set the value at.
+     * @param value The unsupportedRaidLevelsForFriendInvites to set.
+     * @return This builder for chaining.
+     */
+    public Builder setUnsupportedRaidLevelsForFriendInvites(
+        int index, POGOProtos.Enums.RaidLevel value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      ensureUnsupportedRaidLevelsForFriendInvitesIsMutable();
+      unsupportedRaidLevelsForFriendInvites_.set(index, value.getNumber());
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @param value The unsupportedRaidLevelsForFriendInvites to add.
+     * @return This builder for chaining.
+     */
+    public Builder addUnsupportedRaidLevelsForFriendInvites(POGOProtos.Enums.RaidLevel value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      ensureUnsupportedRaidLevelsForFriendInvitesIsMutable();
+      unsupportedRaidLevelsForFriendInvites_.add(value.getNumber());
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @param values The unsupportedRaidLevelsForFriendInvites to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllUnsupportedRaidLevelsForFriendInvites(
+        java.lang.Iterable<? extends POGOProtos.Enums.RaidLevel> values) {
+      ensureUnsupportedRaidLevelsForFriendInvitesIsMutable();
+      for (POGOProtos.Enums.RaidLevel value : values) {
+        unsupportedRaidLevelsForFriendInvites_.add(value.getNumber());
+      }
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearUnsupportedRaidLevelsForFriendInvites() {
+      unsupportedRaidLevelsForFriendInvites_ = java.util.Collections.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000001);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @return A list containing the enum numeric values on the wire for unsupportedRaidLevelsForFriendInvites.
+     */
+    public java.util.List<java.lang.Integer>
+    getUnsupportedRaidLevelsForFriendInvitesValueList() {
+      return java.util.Collections.unmodifiableList(unsupportedRaidLevelsForFriendInvites_);
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of unsupportedRaidLevelsForFriendInvites at the given index.
+     */
+    public int getUnsupportedRaidLevelsForFriendInvitesValue(int index) {
+      return unsupportedRaidLevelsForFriendInvites_.get(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of unsupportedRaidLevelsForFriendInvites at the given index.
+     * @return This builder for chaining.
+     */
+    public Builder setUnsupportedRaidLevelsForFriendInvitesValue(
+        int index, int value) {
+      ensureUnsupportedRaidLevelsForFriendInvitesIsMutable();
+      unsupportedRaidLevelsForFriendInvites_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @param value The enum numeric value on the wire for unsupportedRaidLevelsForFriendInvites to add.
+     * @return This builder for chaining.
+     */
+    public Builder addUnsupportedRaidLevelsForFriendInvitesValue(int value) {
+      ensureUnsupportedRaidLevelsForFriendInvitesIsMutable();
+      unsupportedRaidLevelsForFriendInvites_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Enums.RaidLevel unsupported_raid_levels_for_friend_invites = 13;</code>
+     * @param values The enum numeric values on the wire for unsupportedRaidLevelsForFriendInvites to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllUnsupportedRaidLevelsForFriendInvitesValue(
+        java.lang.Iterable<java.lang.Integer> values) {
+      ensureUnsupportedRaidLevelsForFriendInvitesIsMutable();
+      for (int value : values) {
+        unsupportedRaidLevelsForFriendInvites_.add(value);
+      }
       onChanged();
       return this;
     }

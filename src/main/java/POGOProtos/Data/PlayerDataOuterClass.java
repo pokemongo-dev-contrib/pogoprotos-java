@@ -44,38 +44,41 @@ public final class PlayerDataOuterClass {
       "oto\032 POGOProtos/Enums/PokemonId.proto\032&P" +
       "OGOProtos/Data/Combat/CombatLog.proto\032-P" +
       "OGOProtos/Data/Buddy/BuddyObservedData.p" +
-      "roto\"\334\t\n\nPlayerData\022\035\n\025creation_timestam" +
-      "p_ms\030\001 \001(\003\022\020\n\010username\030\002 \001(\t\022)\n\004team\030\005 \001" +
-      "(\0162\033.POGOProtos.Enums.TeamColor\022;\n\016tutor" +
-      "ial_state\030\007 \003(\0162\037.POGOProtos.Enums.Tutor" +
-      "ialStateB\002\020\001\0224\n\006avatar\030\010 \001(\0132$.POGOProto" +
-      "s.Data.Player.PlayerAvatar\022\033\n\023max_pokemo" +
-      "n_storage\030\t \001(\005\022\030\n\020max_item_storage\030\n \001(" +
-      "\005\0227\n\013daily_bonus\030\013 \001(\0132\".POGOProtos.Data" +
-      ".Player.DailyBonus\022=\n\016equipped_badge\030\014 \001" +
-      "(\0132%.POGOProtos.Data.Player.EquippedBadg" +
-      "e\022>\n\020contact_settings\030\r \001(\0132$.POGOProtos" +
-      ".Settings.ContactSettings\022A\n\020currency_ba" +
-      "lance\030\016 \003(\0132\'.POGOProtos.Data.Store.Curr" +
-      "encyQuantity\022!\n\031remaining_codename_claim" +
-      "s\030\017 \001(\005\0224\n\rbuddy_pokemon\030\020 \001(\0132\035.POGOPro" +
-      "tos.Data.BuddyPokemon\022\035\n\025battle_lockout_" +
-      "end_ms\030\021 \001(\003\022E\n\027secondary_player_avatar\030" +
-      "\022 \001(\0132$.POGOProtos.Data.Player.PlayerAva" +
-      "tar\022\033\n\023name_is_blacklisted\030\023 \001(\010\022I\n\026soci" +
-      "al_player_settings\030\024 \001(\0132).POGOProtos.Se" +
-      "ttings.SocialPlayerSettings\022R\n\031combat_pl" +
-      "ayer_preferences\030\025 \001(\0132/.POGOProtos.Data" +
-      ".Combat.CombatPlayerPreferences\022\031\n\021playe" +
-      "r_support_id\030\026 \001(\t\022@\n\020team_change_info\030\027" +
-      " \001(\0132&.POGOProtos.Data.Player.TeamChange" +
-      "Info\022?\n\032consumed_eevee_easter_eggs\030\030 \003(\016" +
-      "2\033.POGOProtos.Enums.PokemonId\0225\n\ncombat_" +
-      "log\030\031 \001(\0132!.POGOProtos.Data.Combat.Comba" +
-      "tLog\022\033\n\023time_zone_offset_ms\030\032 \001(\003\022E\n\023bud" +
-      "dy_observed_data\030\033 \001(\0132(.POGOProtos.Data" +
-      ".Buddy.BuddyObservedData\022\031\n\021helpshift_us" +
-      "er_id\030\034 \001(\tB\002P\001b\006proto3"
+      "roto\032.POGOProtos/Data/Player/PlayerPrefe" +
+      "rences.proto\"\243\n\n\nPlayerData\022\035\n\025creation_" +
+      "timestamp_ms\030\001 \001(\003\022\020\n\010username\030\002 \001(\t\022)\n\004" +
+      "team\030\005 \001(\0162\033.POGOProtos.Enums.TeamColor\022" +
+      ";\n\016tutorial_state\030\007 \003(\0162\037.POGOProtos.Enu" +
+      "ms.TutorialStateB\002\020\001\0224\n\006avatar\030\010 \001(\0132$.P" +
+      "OGOProtos.Data.Player.PlayerAvatar\022\033\n\023ma" +
+      "x_pokemon_storage\030\t \001(\005\022\030\n\020max_item_stor" +
+      "age\030\n \001(\005\0227\n\013daily_bonus\030\013 \001(\0132\".POGOPro" +
+      "tos.Data.Player.DailyBonus\022=\n\016equipped_b" +
+      "adge\030\014 \001(\0132%.POGOProtos.Data.Player.Equi" +
+      "ppedBadge\022>\n\020contact_settings\030\r \001(\0132$.PO" +
+      "GOProtos.Settings.ContactSettings\022A\n\020cur" +
+      "rency_balance\030\016 \003(\0132\'.POGOProtos.Data.St" +
+      "ore.CurrencyQuantity\022!\n\031remaining_codena" +
+      "me_claims\030\017 \001(\005\0224\n\rbuddy_pokemon\030\020 \001(\0132\035" +
+      ".POGOProtos.Data.BuddyPokemon\022\035\n\025battle_" +
+      "lockout_end_ms\030\021 \001(\003\022E\n\027secondary_player" +
+      "_avatar\030\022 \001(\0132$.POGOProtos.Data.Player.P" +
+      "layerAvatar\022\033\n\023name_is_blacklisted\030\023 \001(\010" +
+      "\022I\n\026social_player_settings\030\024 \001(\0132).POGOP" +
+      "rotos.Settings.SocialPlayerSettings\022R\n\031c" +
+      "ombat_player_preferences\030\025 \001(\0132/.POGOPro" +
+      "tos.Data.Combat.CombatPlayerPreferences\022" +
+      "\031\n\021player_support_id\030\026 \001(\t\022@\n\020team_chang" +
+      "e_info\030\027 \001(\0132&.POGOProtos.Data.Player.Te" +
+      "amChangeInfo\022?\n\032consumed_eevee_easter_eg" +
+      "gs\030\030 \003(\0162\033.POGOProtos.Enums.PokemonId\0225\n" +
+      "\ncombat_log\030\031 \001(\0132!.POGOProtos.Data.Comb" +
+      "at.CombatLog\022\033\n\023time_zone_offset_ms\030\032 \001(" +
+      "\003\022E\n\023buddy_observed_data\030\033 \001(\0132(.POGOPro" +
+      "tos.Data.Buddy.BuddyObservedData\022\031\n\021help" +
+      "shift_user_id\030\034 \001(\t\022E\n\022player_preference" +
+      "s\030\035 \001(\0132).POGOProtos.Data.Player.PlayerP" +
+      "referencesB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -94,13 +97,14 @@ public final class PlayerDataOuterClass {
           POGOProtos.Enums.PokemonIdOuterClass.getDescriptor(),
           POGOProtos.Data.Combat.CombatLogOuterClass.getDescriptor(),
           POGOProtos.Data.Buddy.BuddyObservedDataOuterClass.getDescriptor(),
+          POGOProtos.Data.Player.PlayerPreferencesOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Data_PlayerData_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Data_PlayerData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_PlayerData_descriptor,
-        new java.lang.String[] { "CreationTimestampMs", "Username", "Team", "TutorialState", "Avatar", "MaxPokemonStorage", "MaxItemStorage", "DailyBonus", "EquippedBadge", "ContactSettings", "CurrencyBalance", "RemainingCodenameClaims", "BuddyPokemon", "BattleLockoutEndMs", "SecondaryPlayerAvatar", "NameIsBlacklisted", "SocialPlayerSettings", "CombatPlayerPreferences", "PlayerSupportId", "TeamChangeInfo", "ConsumedEeveeEasterEggs", "CombatLog", "TimeZoneOffsetMs", "BuddyObservedData", "HelpshiftUserId", });
+        new java.lang.String[] { "CreationTimestampMs", "Username", "Team", "TutorialState", "Avatar", "MaxPokemonStorage", "MaxItemStorage", "DailyBonus", "EquippedBadge", "ContactSettings", "CurrencyBalance", "RemainingCodenameClaims", "BuddyPokemon", "BattleLockoutEndMs", "SecondaryPlayerAvatar", "NameIsBlacklisted", "SocialPlayerSettings", "CombatPlayerPreferences", "PlayerSupportId", "TeamChangeInfo", "ConsumedEeveeEasterEggs", "CombatLog", "TimeZoneOffsetMs", "BuddyObservedData", "HelpshiftUserId", "PlayerPreferences", });
     POGOProtos.Enums.TutorialStateOuterClass.getDescriptor();
     POGOProtos.Data.Player.PlayerAvatarOuterClass.getDescriptor();
     POGOProtos.Data.Player.DailyBonusOuterClass.getDescriptor();
@@ -115,6 +119,7 @@ public final class PlayerDataOuterClass {
     POGOProtos.Enums.PokemonIdOuterClass.getDescriptor();
     POGOProtos.Data.Combat.CombatLogOuterClass.getDescriptor();
     POGOProtos.Data.Buddy.BuddyObservedDataOuterClass.getDescriptor();
+    POGOProtos.Data.Player.PlayerPreferencesOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
