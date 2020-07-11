@@ -953,6 +953,21 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
   POGOProtos.Rpc.RemoteRaidTelemetryOrBuilder getRemoteRaidTelemetryOrBuilder();
 
   /**
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * @return Whether the deviceOsTelemetry field is set.
+   */
+  boolean hasDeviceOsTelemetry();
+  /**
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * @return The deviceOsTelemetry.
+   */
+  POGOProtos.Rpc.DeviceOSTelemetry getDeviceOsTelemetry();
+  /**
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   */
+  POGOProtos.Rpc.DeviceOSTelemetryOrBuilder getDeviceOsTelemetryOrBuilder();
+
+  /**
    * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
    * @return Whether the serverData field is set.
    */
@@ -981,4 +996,6 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
    */
   POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder();
+
+  public POGOProtos.Rpc.HoloholoClientTelemetryOmniProto.TelemetryDataCase getTelemetryDataCase();
 }

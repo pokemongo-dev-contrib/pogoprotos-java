@@ -66,4 +66,6 @@ public interface TitanTitanGameClientTelemetryOmniProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
    */
   POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getServerDataOrBuilder();
+
+  public POGOProtos.Rpc.TitanTitanGameClientTelemetryOmniProto.TelemetryDataCase getTelemetryDataCase();
 }

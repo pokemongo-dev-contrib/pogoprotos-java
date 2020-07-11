@@ -23,4 +23,6 @@ public interface WithThrowTypeProtoOrBuilder extends
    * @return The hit.
    */
   boolean getHit();
+
+  public POGOProtos.Rpc.WithThrowTypeProto.ThrowCase getThrowCase();
 }

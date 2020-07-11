@@ -8,17 +8,6 @@ public interface QuestProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
-   * @return The enum numeric value on the wire for questType.
-   */
-  int getQuestTypeValue();
-  /**
-   * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
-   * @return The questType.
-   */
-  POGOProtos.Rpc.QuestType getQuestType();
-
-  /**
    * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
    * @return Whether the dailyQuest field is set.
    */
@@ -137,6 +126,17 @@ public interface QuestProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
    */
   POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder getEvolveIntoPokemonOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+   * @return The enum numeric value on the wire for questType.
+   */
+  int getQuestTypeValue();
+  /**
+   * <code>.POGOProtos.Rpc.QuestType quest_type = 1;</code>
+   * @return The questType.
+   */
+  POGOProtos.Rpc.QuestType getQuestType();
 
   /**
    * <code>.POGOProtos.Rpc.DaysWithARowQuestProto days_in_arow = 99;</code>
@@ -342,4 +342,6 @@ public interface QuestProtoOrBuilder extends
    * @return The endTimestampMs.
    */
   long getEndTimestampMs();
+
+  public POGOProtos.Rpc.QuestProto.QuestCase getQuestCase();
 }

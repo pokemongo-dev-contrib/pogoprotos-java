@@ -24,7 +24,7 @@ public final class NotificationCategoryOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n+POGOProtos/Enums/NotificationCategory." +
-      "proto\022\020POGOProtos.Enums*\242\n\n\024Notification" +
+      "proto\022\020POGOProtos.Enums*\373\n\n\024Notification" +
       "Category\022\037\n\033UNSET_NOTIFICATION_CATEGORY\020" +
       "\000\022\017\n\013GYM_REMOVAL\020\001\022\022\n\016POKEMON_HUNGRY\020\002\022\017" +
       "\n\013POKEMON_WON\020\003\022\031\n\025EXCLUSIVE_RAID_INVITE" +
@@ -57,7 +57,10 @@ public final class NotificationCategoryOuterClass {
       ",\022\030\n\024RETENTION_POWER_WALK\020-\022\036\n\032RETENTION" +
       "_FUN_WITH_FRIENDS\020.\022\025\n\021BUDDY_REMOTE_GIFT" +
       "\020/\022\034\n\030BGMODE_BUDDY_REMOTE_GIFT\0200\022\032\n\026REMO" +
-      "TE_RAID_INVITATION\0201B\002P\001b\006proto3"
+      "TE_RAID_INVITATION\0201\022\020\n\014ITEM_REWARDS\0202\022!" +
+      "\n\035TIMED_GROUP_CHALLENGE_STARTED\0203\022\"\n\036TIM" +
+      "ED_GROUP_CHALLENGE_GOAL_MET\0204B\002P\001b\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

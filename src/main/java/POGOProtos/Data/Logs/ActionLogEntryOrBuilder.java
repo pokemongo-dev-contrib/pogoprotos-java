@@ -334,5 +334,20 @@ public interface ActionLogEntryOrBuilder extends
    */
   POGOProtos.Data.Logs.VsSeekerWinRewardsLogEntryOrBuilder getVsSeekerWinRewardsOrBuilder();
 
+  /**
+   * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   * @return Whether the buddyConsumables field is set.
+   */
+  boolean hasBuddyConsumables();
+  /**
+   * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   * @return The buddyConsumables.
+   */
+  POGOProtos.Data.Logs.BuddyConsumablesLogEntry getBuddyConsumables();
+  /**
+   * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   */
+  POGOProtos.Data.Logs.BuddyConsumablesLogEntryOrBuilder getBuddyConsumablesOrBuilder();
+
   public POGOProtos.Data.Logs.ActionLogEntry.ActionCase getActionCase();
 }

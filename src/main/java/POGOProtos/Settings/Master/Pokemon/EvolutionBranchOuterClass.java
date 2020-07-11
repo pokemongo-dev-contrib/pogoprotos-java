@@ -33,7 +33,7 @@ public final class EvolutionBranchOuterClass {
       "Master.Pokemon\032\033POGOProtos/Enums/Form.pr" +
       "oto\032\035POGOProtos/Enums/Gender.proto\032 POGO" +
       "Protos/Enums/PokemonId.proto\032&POGOProtos" +
-      "/Inventory/Item/ItemId.proto\"\331\003\n\017Evoluti" +
+      "/Inventory/Item/ItemId.proto\"\200\004\n\017Evoluti" +
       "onBranch\022.\n\tevolution\030\001 \001(\0162\033.POGOProtos" +
       ".Enums.PokemonId\022E\n\032evolution_item_requi" +
       "rement\030\002 \001(\0162!.POGOProtos.Inventory.Item" +
@@ -45,7 +45,8 @@ public final class EvolutionBranchOuterClass {
       "os.Inventory.Item.ItemId\022\025\n\rmust_be_budd" +
       "y\030\t \001(\010\022\024\n\014only_daytime\030\n \001(\010\022\026\n\016only_ni" +
       "ghttime\030\013 \001(\010\022\020\n\010priority\030\014 \001(\005\022\037\n\027no_ca" +
-      "ndy_cost_via_trade\030\r \001(\010B\002P\001b\006proto3"
+      "ndy_cost_via_trade\030\r \001(\010\022%\n\035quest_requir" +
+      "ement_template_id\030\021 \003(\tB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -60,7 +61,7 @@ public final class EvolutionBranchOuterClass {
     internal_static_POGOProtos_Settings_Master_Pokemon_EvolutionBranch_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Settings_Master_Pokemon_EvolutionBranch_descriptor,
-        new java.lang.String[] { "Evolution", "EvolutionItemRequirement", "CandyCost", "KmBuddyDistanceRequirement", "Form", "GenderRequirement", "LureItemRequirement", "MustBeBuddy", "OnlyDaytime", "OnlyNighttime", "Priority", "NoCandyCostViaTrade", });
+        new java.lang.String[] { "Evolution", "EvolutionItemRequirement", "CandyCost", "KmBuddyDistanceRequirement", "Form", "GenderRequirement", "LureItemRequirement", "MustBeBuddy", "OnlyDaytime", "OnlyNighttime", "Priority", "NoCandyCostViaTrade", "QuestRequirementTemplateId", });
     POGOProtos.Enums.FormOuterClass.getDescriptor();
     POGOProtos.Enums.GenderOuterClass.getDescriptor();
     POGOProtos.Enums.PokemonIdOuterClass.getDescriptor();

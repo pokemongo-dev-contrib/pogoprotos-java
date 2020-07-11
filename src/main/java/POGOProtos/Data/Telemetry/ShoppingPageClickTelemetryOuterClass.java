@@ -31,29 +31,30 @@ public final class ShoppingPageClickTelemetryOuterClass {
       "\n:POGOProtos/Data/Telemetry/ShoppingPage" +
       "ClickTelemetry.proto\022\031POGOProtos.Data.Te" +
       "lemetry\032#POGOProtos/Enums/TelemetryIds.p" +
-      "roto\"\205\007\n\032ShoppingPageClickTelemetry\022J\n\026s" +
+      "roto\"\244\007\n\032ShoppingPageClickTelemetry\022J\n\026s" +
       "hopping_page_click_id\030\001 \001(\0162*.POGOProtos" +
       ".Enums.ShoppingPageTelemetryIds\022u\n\032shopp" +
       "ing_page_click_source\030\002 \001(\0162Q.POGOProtos" +
       ".Data.Telemetry.ShoppingPageClickTelemet" +
       "ry.ShoppingPageTelemetrySource\022\020\n\010item_s" +
-      "ku\030\003 \001(\t\022\020\n\010has_item\030\004 \001(\010\"\377\004\n\033ShoppingP" +
-      "ageTelemetrySource\022\"\n\036UNDEFINED_SHOPPING" +
-      "_PAGE_SOURCE\020\000\022\024\n\020SOURCE_MAIN_MENU\020\001\022\033\n\027" +
-      "SOURCE_POKEMON_BAG_FULL\020\002\022\035\n\031SOURCE_INCU" +
-      "BATOR_SELECTOR\020\003\022$\n SOURCE_POKESTOP_DISK" +
-      "_INTERACTION\020\004\022\035\n\031SOURCE_OPEN_GIFT_BAG_F" +
-      "ULL\020\005\022(\n$SOURCE_QUICK_SHOP_BAG_FULL_ENCO" +
-      "UNTER\020\006\022#\n\037SOURCE_QUICK_SHOP_BAG_FULL_RA" +
-      "ID\020\007\022\032\n\026SOURCE_QUICK_SHOP_MORE\020\010\022\026\n\022SOUR" +
-      "CE_AVATAR_ITEM\020\t\022\034\n\030SOURCE_POKEMON_ENCOU" +
-      "NTER\020\n\022\036\n\032SOURCE_PLAYER_PROFILE_PAGE\020\013\022\026" +
-      "\n\022SOURCE_STORE_FRONT\020\014\022%\n!SOURCE_AVATAR_" +
-      "CUSTOMIZATION_AWARD\020\r\022\037\n\033SOURCE_FIRST_TI" +
-      "ME_USER_FLOW\020\016\022%\n!SOURCE_BADGE_DETAIL_AV" +
-      "ATAR_REWARD\020\017\022.\n*SOURCE_QUICK_SHOP_BUDDY" +
-      "_INTERACTION_POFFIN\020d\022-\n)SOURCE_QUICK_SH" +
-      "OP_BUDDY_QUICK_FEED_POFFIN\020eB\002P\001b\006proto3"
+      "ku\030\003 \001(\t\022\020\n\010has_item\030\004 \001(\010\022\035\n\025ml_bundle_" +
+      "tracking_id\030\005 \001(\t\"\377\004\n\033ShoppingPageTeleme" +
+      "trySource\022\"\n\036UNDEFINED_SHOPPING_PAGE_SOU" +
+      "RCE\020\000\022\024\n\020SOURCE_MAIN_MENU\020\001\022\033\n\027SOURCE_PO" +
+      "KEMON_BAG_FULL\020\002\022\035\n\031SOURCE_INCUBATOR_SEL" +
+      "ECTOR\020\003\022$\n SOURCE_POKESTOP_DISK_INTERACT" +
+      "ION\020\004\022\035\n\031SOURCE_OPEN_GIFT_BAG_FULL\020\005\022(\n$" +
+      "SOURCE_QUICK_SHOP_BAG_FULL_ENCOUNTER\020\006\022#" +
+      "\n\037SOURCE_QUICK_SHOP_BAG_FULL_RAID\020\007\022\032\n\026S" +
+      "OURCE_QUICK_SHOP_MORE\020\010\022\026\n\022SOURCE_AVATAR" +
+      "_ITEM\020\t\022\034\n\030SOURCE_POKEMON_ENCOUNTER\020\n\022\036\n" +
+      "\032SOURCE_PLAYER_PROFILE_PAGE\020\013\022\026\n\022SOURCE_" +
+      "STORE_FRONT\020\014\022%\n!SOURCE_AVATAR_CUSTOMIZA" +
+      "TION_AWARD\020\r\022\037\n\033SOURCE_FIRST_TIME_USER_F" +
+      "LOW\020\016\022%\n!SOURCE_BADGE_DETAIL_AVATAR_REWA" +
+      "RD\020\017\022.\n*SOURCE_QUICK_SHOP_BUDDY_INTERACT" +
+      "ION_POFFIN\020d\022-\n)SOURCE_QUICK_SHOP_BUDDY_" +
+      "QUICK_FEED_POFFIN\020eB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -65,7 +66,7 @@ public final class ShoppingPageClickTelemetryOuterClass {
     internal_static_POGOProtos_Data_Telemetry_ShoppingPageClickTelemetry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Telemetry_ShoppingPageClickTelemetry_descriptor,
-        new java.lang.String[] { "ShoppingPageClickId", "ShoppingPageClickSource", "ItemSku", "HasItem", });
+        new java.lang.String[] { "ShoppingPageClickId", "ShoppingPageClickSource", "ItemSku", "HasItem", "MlBundleTrackingId", });
     POGOProtos.Enums.TelemetryIds.getDescriptor();
   }
 

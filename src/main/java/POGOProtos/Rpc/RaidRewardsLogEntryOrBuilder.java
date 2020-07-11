@@ -77,4 +77,28 @@ public interface RaidRewardsLogEntryOrBuilder extends
    * @return The stardust.
    */
   int getStardust();
+
+  /**
+   * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 6;</code>
+   */
+  java.util.List<POGOProtos.Rpc.LootItemProto> 
+      getStickersList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 6;</code>
+   */
+  POGOProtos.Rpc.LootItemProto getStickers(int index);
+  /**
+   * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 6;</code>
+   */
+  int getStickersCount();
+  /**
+   * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 6;</code>
+   */
+  java.util.List<? extends POGOProtos.Rpc.LootItemProtoOrBuilder> 
+      getStickersOrBuilderList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 6;</code>
+   */
+  POGOProtos.Rpc.LootItemProtoOrBuilder getStickersOrBuilder(
+      int index);
 }

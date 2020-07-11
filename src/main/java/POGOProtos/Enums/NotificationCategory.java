@@ -196,6 +196,18 @@ public enum NotificationCategory
    * <code>REMOTE_RAID_INVITATION = 49;</code>
    */
   REMOTE_RAID_INVITATION(49),
+  /**
+   * <code>ITEM_REWARDS = 50;</code>
+   */
+  ITEM_REWARDS(50),
+  /**
+   * <code>TIMED_GROUP_CHALLENGE_STARTED = 51;</code>
+   */
+  TIMED_GROUP_CHALLENGE_STARTED(51),
+  /**
+   * <code>TIMED_GROUP_CHALLENGE_GOAL_MET = 52;</code>
+   */
+  TIMED_GROUP_CHALLENGE_GOAL_MET(52),
   UNRECOGNIZED(-1),
   ;
 
@@ -387,6 +399,18 @@ public enum NotificationCategory
    * <code>REMOTE_RAID_INVITATION = 49;</code>
    */
   public static final int REMOTE_RAID_INVITATION_VALUE = 49;
+  /**
+   * <code>ITEM_REWARDS = 50;</code>
+   */
+  public static final int ITEM_REWARDS_VALUE = 50;
+  /**
+   * <code>TIMED_GROUP_CHALLENGE_STARTED = 51;</code>
+   */
+  public static final int TIMED_GROUP_CHALLENGE_STARTED_VALUE = 51;
+  /**
+   * <code>TIMED_GROUP_CHALLENGE_GOAL_MET = 52;</code>
+   */
+  public static final int TIMED_GROUP_CHALLENGE_GOAL_MET_VALUE = 52;
 
 
   public final int getNumber() {
@@ -460,6 +484,9 @@ public enum NotificationCategory
       case 47: return BUDDY_REMOTE_GIFT;
       case 48: return BGMODE_BUDDY_REMOTE_GIFT;
       case 49: return REMOTE_RAID_INVITATION;
+      case 50: return ITEM_REWARDS;
+      case 51: return TIMED_GROUP_CHALLENGE_STARTED;
+      case 52: return TIMED_GROUP_CHALLENGE_GOAL_MET;
       default: return null;
     }
   }

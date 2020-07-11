@@ -21,6 +21,7 @@ private static final long serialVersionUID = 0L;
     form_ = 0;
     genderRequirement_ = 0;
     lureItemRequirement_ = 0;
+    questRequirementTemplateId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
   @java.lang.Override
@@ -43,6 +44,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -118,6 +120,15 @@ private static final long serialVersionUID = 0L;
             noCandyCostViaTrade_ = input.readBool();
             break;
           }
+          case 138: {
+            java.lang.String s = input.readStringRequireUtf8();
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              questRequirementTemplateId_ = new com.google.protobuf.LazyStringArrayList();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            questRequirementTemplateId_.add(s);
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -133,6 +144,9 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        questRequirementTemplateId_ = questRequirementTemplateId_.getUnmodifiableView();
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -315,6 +329,41 @@ private static final long serialVersionUID = 0L;
     return noCandyCostViaTrade_;
   }
 
+  public static final int QUEST_REQUIREMENT_TEMPLATE_ID_FIELD_NUMBER = 17;
+  private com.google.protobuf.LazyStringList questRequirementTemplateId_;
+  /**
+   * <code>repeated string quest_requirement_template_id = 17;</code>
+   * @return A list containing the questRequirementTemplateId.
+   */
+  public com.google.protobuf.ProtocolStringList
+      getQuestRequirementTemplateIdList() {
+    return questRequirementTemplateId_;
+  }
+  /**
+   * <code>repeated string quest_requirement_template_id = 17;</code>
+   * @return The count of questRequirementTemplateId.
+   */
+  public int getQuestRequirementTemplateIdCount() {
+    return questRequirementTemplateId_.size();
+  }
+  /**
+   * <code>repeated string quest_requirement_template_id = 17;</code>
+   * @param index The index of the element to return.
+   * @return The questRequirementTemplateId at the given index.
+   */
+  public java.lang.String getQuestRequirementTemplateId(int index) {
+    return questRequirementTemplateId_.get(index);
+  }
+  /**
+   * <code>repeated string quest_requirement_template_id = 17;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the questRequirementTemplateId at the given index.
+   */
+  public com.google.protobuf.ByteString
+      getQuestRequirementTemplateIdBytes(int index) {
+    return questRequirementTemplateId_.getByteString(index);
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -364,6 +413,9 @@ private static final long serialVersionUID = 0L;
     }
     if (noCandyCostViaTrade_ != false) {
       output.writeBool(13, noCandyCostViaTrade_);
+    }
+    for (int i = 0; i < questRequirementTemplateId_.size(); i++) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 17, questRequirementTemplateId_.getRaw(i));
     }
     unknownFields.writeTo(output);
   }
@@ -422,6 +474,14 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(13, noCandyCostViaTrade_);
     }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < questRequirementTemplateId_.size(); i++) {
+        dataSize += computeStringSizeNoTag(questRequirementTemplateId_.getRaw(i));
+      }
+      size += dataSize;
+      size += 2 * getQuestRequirementTemplateIdList().size();
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -457,6 +517,8 @@ private static final long serialVersionUID = 0L;
         != other.getPriority()) return false;
     if (getNoCandyCostViaTrade()
         != other.getNoCandyCostViaTrade()) return false;
+    if (!getQuestRequirementTemplateIdList()
+        .equals(other.getQuestRequirementTemplateIdList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -497,6 +559,10 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + NO_CANDY_COST_VIA_TRADE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getNoCandyCostViaTrade());
+    if (getQuestRequirementTemplateIdCount() > 0) {
+      hash = (37 * hash) + QUEST_REQUIREMENT_TEMPLATE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getQuestRequirementTemplateIdList().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -654,6 +720,8 @@ private static final long serialVersionUID = 0L;
 
       noCandyCostViaTrade_ = false;
 
+      questRequirementTemplateId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -680,6 +748,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Settings.Master.Pokemon.EvolutionBranch buildPartial() {
       POGOProtos.Settings.Master.Pokemon.EvolutionBranch result = new POGOProtos.Settings.Master.Pokemon.EvolutionBranch(this);
+      int from_bitField0_ = bitField0_;
       result.evolution_ = evolution_;
       result.evolutionItemRequirement_ = evolutionItemRequirement_;
       result.candyCost_ = candyCost_;
@@ -692,6 +761,11 @@ private static final long serialVersionUID = 0L;
       result.onlyNighttime_ = onlyNighttime_;
       result.priority_ = priority_;
       result.noCandyCostViaTrade_ = noCandyCostViaTrade_;
+      if (((bitField0_ & 0x00000001) != 0)) {
+        questRequirementTemplateId_ = questRequirementTemplateId_.getUnmodifiableView();
+        bitField0_ = (bitField0_ & ~0x00000001);
+      }
+      result.questRequirementTemplateId_ = questRequirementTemplateId_;
       onBuilt();
       return result;
     }
@@ -776,6 +850,16 @@ private static final long serialVersionUID = 0L;
       if (other.getNoCandyCostViaTrade() != false) {
         setNoCandyCostViaTrade(other.getNoCandyCostViaTrade());
       }
+      if (!other.questRequirementTemplateId_.isEmpty()) {
+        if (questRequirementTemplateId_.isEmpty()) {
+          questRequirementTemplateId_ = other.questRequirementTemplateId_;
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          ensureQuestRequirementTemplateIdIsMutable();
+          questRequirementTemplateId_.addAll(other.questRequirementTemplateId_);
+        }
+        onChanged();
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -804,6 +888,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private int evolution_ = 0;
     /**
@@ -1271,6 +1356,116 @@ private static final long serialVersionUID = 0L;
     public Builder clearNoCandyCostViaTrade() {
       
       noCandyCostViaTrade_ = false;
+      onChanged();
+      return this;
+    }
+
+    private com.google.protobuf.LazyStringList questRequirementTemplateId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private void ensureQuestRequirementTemplateIdIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        questRequirementTemplateId_ = new com.google.protobuf.LazyStringArrayList(questRequirementTemplateId_);
+        bitField0_ |= 0x00000001;
+       }
+    }
+    /**
+     * <code>repeated string quest_requirement_template_id = 17;</code>
+     * @return A list containing the questRequirementTemplateId.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getQuestRequirementTemplateIdList() {
+      return questRequirementTemplateId_.getUnmodifiableView();
+    }
+    /**
+     * <code>repeated string quest_requirement_template_id = 17;</code>
+     * @return The count of questRequirementTemplateId.
+     */
+    public int getQuestRequirementTemplateIdCount() {
+      return questRequirementTemplateId_.size();
+    }
+    /**
+     * <code>repeated string quest_requirement_template_id = 17;</code>
+     * @param index The index of the element to return.
+     * @return The questRequirementTemplateId at the given index.
+     */
+    public java.lang.String getQuestRequirementTemplateId(int index) {
+      return questRequirementTemplateId_.get(index);
+    }
+    /**
+     * <code>repeated string quest_requirement_template_id = 17;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the questRequirementTemplateId at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getQuestRequirementTemplateIdBytes(int index) {
+      return questRequirementTemplateId_.getByteString(index);
+    }
+    /**
+     * <code>repeated string quest_requirement_template_id = 17;</code>
+     * @param index The index to set the value at.
+     * @param value The questRequirementTemplateId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setQuestRequirementTemplateId(
+        int index, java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureQuestRequirementTemplateIdIsMutable();
+      questRequirementTemplateId_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string quest_requirement_template_id = 17;</code>
+     * @param value The questRequirementTemplateId to add.
+     * @return This builder for chaining.
+     */
+    public Builder addQuestRequirementTemplateId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureQuestRequirementTemplateIdIsMutable();
+      questRequirementTemplateId_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string quest_requirement_template_id = 17;</code>
+     * @param values The questRequirementTemplateId to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllQuestRequirementTemplateId(
+        java.lang.Iterable<java.lang.String> values) {
+      ensureQuestRequirementTemplateIdIsMutable();
+      com.google.protobuf.AbstractMessageLite.Builder.addAll(
+          values, questRequirementTemplateId_);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string quest_requirement_template_id = 17;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearQuestRequirementTemplateId() {
+      questRequirementTemplateId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      bitField0_ = (bitField0_ & ~0x00000001);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated string quest_requirement_template_id = 17;</code>
+     * @param value The bytes of the questRequirementTemplateId to add.
+     * @return This builder for chaining.
+     */
+    public Builder addQuestRequirementTemplateIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      ensureQuestRequirementTemplateIdIsMutable();
+      questRequirementTemplateId_.add(value);
       onChanged();
       return this;
     }

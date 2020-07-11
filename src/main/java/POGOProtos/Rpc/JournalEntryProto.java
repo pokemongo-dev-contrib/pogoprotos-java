@@ -50,41 +50,44 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             POGOProtos.Rpc.JournalAddEntryProto.Builder subBuilder = null;
-            if (addEntry_ != null) {
-              subBuilder = addEntry_.toBuilder();
+            if (subentryCase_ == 1) {
+              subBuilder = ((POGOProtos.Rpc.JournalAddEntryProto) subentry_).toBuilder();
             }
-            addEntry_ = input.readMessage(POGOProtos.Rpc.JournalAddEntryProto.parser(), extensionRegistry);
+            subentry_ =
+                input.readMessage(POGOProtos.Rpc.JournalAddEntryProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(addEntry_);
-              addEntry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.JournalAddEntryProto) subentry_);
+              subentry_ = subBuilder.buildPartial();
             }
-
+            subentryCase_ = 1;
             break;
           }
           case 18: {
             POGOProtos.Rpc.JournalReadEntryProto.Builder subBuilder = null;
-            if (readEntry_ != null) {
-              subBuilder = readEntry_.toBuilder();
+            if (subentryCase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.JournalReadEntryProto) subentry_).toBuilder();
             }
-            readEntry_ = input.readMessage(POGOProtos.Rpc.JournalReadEntryProto.parser(), extensionRegistry);
+            subentry_ =
+                input.readMessage(POGOProtos.Rpc.JournalReadEntryProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(readEntry_);
-              readEntry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.JournalReadEntryProto) subentry_);
+              subentry_ = subBuilder.buildPartial();
             }
-
+            subentryCase_ = 2;
             break;
           }
           case 26: {
             POGOProtos.Rpc.JournalRemoveEntryProto.Builder subBuilder = null;
-            if (removeEntry_ != null) {
-              subBuilder = removeEntry_.toBuilder();
+            if (subentryCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.JournalRemoveEntryProto) subentry_).toBuilder();
             }
-            removeEntry_ = input.readMessage(POGOProtos.Rpc.JournalRemoveEntryProto.parser(), extensionRegistry);
+            subentry_ =
+                input.readMessage(POGOProtos.Rpc.JournalRemoveEntryProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(removeEntry_);
-              removeEntry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.JournalRemoveEntryProto) subentry_);
+              subentry_ = subBuilder.buildPartial();
             }
-
+            subentryCase_ = 3;
             break;
           }
           default: {
@@ -119,73 +122,131 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.JournalEntryProto.class, POGOProtos.Rpc.JournalEntryProto.Builder.class);
   }
 
+  private int subentryCase_ = 0;
+  private java.lang.Object subentry_;
+  public enum SubentryCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    ADD_ENTRY(1),
+    READ_ENTRY(2),
+    REMOVE_ENTRY(3),
+    SUBENTRY_NOT_SET(0);
+    private final int value;
+    private SubentryCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static SubentryCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static SubentryCase forNumber(int value) {
+      switch (value) {
+        case 1: return ADD_ENTRY;
+        case 2: return READ_ENTRY;
+        case 3: return REMOVE_ENTRY;
+        case 0: return SUBENTRY_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public SubentryCase
+  getSubentryCase() {
+    return SubentryCase.forNumber(
+        subentryCase_);
+  }
+
   public static final int ADD_ENTRY_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.JournalAddEntryProto addEntry_;
   /**
    * <code>.POGOProtos.Rpc.JournalAddEntryProto add_entry = 1;</code>
    * @return Whether the addEntry field is set.
    */
   public boolean hasAddEntry() {
-    return addEntry_ != null;
+    return subentryCase_ == 1;
   }
   /**
    * <code>.POGOProtos.Rpc.JournalAddEntryProto add_entry = 1;</code>
    * @return The addEntry.
    */
   public POGOProtos.Rpc.JournalAddEntryProto getAddEntry() {
-    return addEntry_ == null ? POGOProtos.Rpc.JournalAddEntryProto.getDefaultInstance() : addEntry_;
+    if (subentryCase_ == 1) {
+       return (POGOProtos.Rpc.JournalAddEntryProto) subentry_;
+    }
+    return POGOProtos.Rpc.JournalAddEntryProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.JournalAddEntryProto add_entry = 1;</code>
    */
   public POGOProtos.Rpc.JournalAddEntryProtoOrBuilder getAddEntryOrBuilder() {
-    return getAddEntry();
+    if (subentryCase_ == 1) {
+       return (POGOProtos.Rpc.JournalAddEntryProto) subentry_;
+    }
+    return POGOProtos.Rpc.JournalAddEntryProto.getDefaultInstance();
   }
 
   public static final int READ_ENTRY_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.JournalReadEntryProto readEntry_;
   /**
    * <code>.POGOProtos.Rpc.JournalReadEntryProto read_entry = 2;</code>
    * @return Whether the readEntry field is set.
    */
   public boolean hasReadEntry() {
-    return readEntry_ != null;
+    return subentryCase_ == 2;
   }
   /**
    * <code>.POGOProtos.Rpc.JournalReadEntryProto read_entry = 2;</code>
    * @return The readEntry.
    */
   public POGOProtos.Rpc.JournalReadEntryProto getReadEntry() {
-    return readEntry_ == null ? POGOProtos.Rpc.JournalReadEntryProto.getDefaultInstance() : readEntry_;
+    if (subentryCase_ == 2) {
+       return (POGOProtos.Rpc.JournalReadEntryProto) subentry_;
+    }
+    return POGOProtos.Rpc.JournalReadEntryProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.JournalReadEntryProto read_entry = 2;</code>
    */
   public POGOProtos.Rpc.JournalReadEntryProtoOrBuilder getReadEntryOrBuilder() {
-    return getReadEntry();
+    if (subentryCase_ == 2) {
+       return (POGOProtos.Rpc.JournalReadEntryProto) subentry_;
+    }
+    return POGOProtos.Rpc.JournalReadEntryProto.getDefaultInstance();
   }
 
   public static final int REMOVE_ENTRY_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.JournalRemoveEntryProto removeEntry_;
   /**
    * <code>.POGOProtos.Rpc.JournalRemoveEntryProto remove_entry = 3;</code>
    * @return Whether the removeEntry field is set.
    */
   public boolean hasRemoveEntry() {
-    return removeEntry_ != null;
+    return subentryCase_ == 3;
   }
   /**
    * <code>.POGOProtos.Rpc.JournalRemoveEntryProto remove_entry = 3;</code>
    * @return The removeEntry.
    */
   public POGOProtos.Rpc.JournalRemoveEntryProto getRemoveEntry() {
-    return removeEntry_ == null ? POGOProtos.Rpc.JournalRemoveEntryProto.getDefaultInstance() : removeEntry_;
+    if (subentryCase_ == 3) {
+       return (POGOProtos.Rpc.JournalRemoveEntryProto) subentry_;
+    }
+    return POGOProtos.Rpc.JournalRemoveEntryProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.JournalRemoveEntryProto remove_entry = 3;</code>
    */
   public POGOProtos.Rpc.JournalRemoveEntryProtoOrBuilder getRemoveEntryOrBuilder() {
-    return getRemoveEntry();
+    if (subentryCase_ == 3) {
+       return (POGOProtos.Rpc.JournalRemoveEntryProto) subentry_;
+    }
+    return POGOProtos.Rpc.JournalRemoveEntryProto.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -202,14 +263,14 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (addEntry_ != null) {
-      output.writeMessage(1, getAddEntry());
+    if (subentryCase_ == 1) {
+      output.writeMessage(1, (POGOProtos.Rpc.JournalAddEntryProto) subentry_);
     }
-    if (readEntry_ != null) {
-      output.writeMessage(2, getReadEntry());
+    if (subentryCase_ == 2) {
+      output.writeMessage(2, (POGOProtos.Rpc.JournalReadEntryProto) subentry_);
     }
-    if (removeEntry_ != null) {
-      output.writeMessage(3, getRemoveEntry());
+    if (subentryCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.JournalRemoveEntryProto) subentry_);
     }
     unknownFields.writeTo(output);
   }
@@ -220,17 +281,17 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (addEntry_ != null) {
+    if (subentryCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getAddEntry());
+        .computeMessageSize(1, (POGOProtos.Rpc.JournalAddEntryProto) subentry_);
     }
-    if (readEntry_ != null) {
+    if (subentryCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getReadEntry());
+        .computeMessageSize(2, (POGOProtos.Rpc.JournalReadEntryProto) subentry_);
     }
-    if (removeEntry_ != null) {
+    if (subentryCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getRemoveEntry());
+        .computeMessageSize(3, (POGOProtos.Rpc.JournalRemoveEntryProto) subentry_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -247,20 +308,22 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.JournalEntryProto other = (POGOProtos.Rpc.JournalEntryProto) obj;
 
-    if (hasAddEntry() != other.hasAddEntry()) return false;
-    if (hasAddEntry()) {
-      if (!getAddEntry()
-          .equals(other.getAddEntry())) return false;
-    }
-    if (hasReadEntry() != other.hasReadEntry()) return false;
-    if (hasReadEntry()) {
-      if (!getReadEntry()
-          .equals(other.getReadEntry())) return false;
-    }
-    if (hasRemoveEntry() != other.hasRemoveEntry()) return false;
-    if (hasRemoveEntry()) {
-      if (!getRemoveEntry()
-          .equals(other.getRemoveEntry())) return false;
+    if (!getSubentryCase().equals(other.getSubentryCase())) return false;
+    switch (subentryCase_) {
+      case 1:
+        if (!getAddEntry()
+            .equals(other.getAddEntry())) return false;
+        break;
+      case 2:
+        if (!getReadEntry()
+            .equals(other.getReadEntry())) return false;
+        break;
+      case 3:
+        if (!getRemoveEntry()
+            .equals(other.getRemoveEntry())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -273,17 +336,21 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasAddEntry()) {
-      hash = (37 * hash) + ADD_ENTRY_FIELD_NUMBER;
-      hash = (53 * hash) + getAddEntry().hashCode();
-    }
-    if (hasReadEntry()) {
-      hash = (37 * hash) + READ_ENTRY_FIELD_NUMBER;
-      hash = (53 * hash) + getReadEntry().hashCode();
-    }
-    if (hasRemoveEntry()) {
-      hash = (37 * hash) + REMOVE_ENTRY_FIELD_NUMBER;
-      hash = (53 * hash) + getRemoveEntry().hashCode();
+    switch (subentryCase_) {
+      case 1:
+        hash = (37 * hash) + ADD_ENTRY_FIELD_NUMBER;
+        hash = (53 * hash) + getAddEntry().hashCode();
+        break;
+      case 2:
+        hash = (37 * hash) + READ_ENTRY_FIELD_NUMBER;
+        hash = (53 * hash) + getReadEntry().hashCode();
+        break;
+      case 3:
+        hash = (37 * hash) + REMOVE_ENTRY_FIELD_NUMBER;
+        hash = (53 * hash) + getRemoveEntry().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -418,24 +485,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (addEntryBuilder_ == null) {
-        addEntry_ = null;
-      } else {
-        addEntry_ = null;
-        addEntryBuilder_ = null;
-      }
-      if (readEntryBuilder_ == null) {
-        readEntry_ = null;
-      } else {
-        readEntry_ = null;
-        readEntryBuilder_ = null;
-      }
-      if (removeEntryBuilder_ == null) {
-        removeEntry_ = null;
-      } else {
-        removeEntry_ = null;
-        removeEntryBuilder_ = null;
-      }
+      subentryCase_ = 0;
+      subentry_ = null;
       return this;
     }
 
@@ -462,21 +513,28 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.JournalEntryProto buildPartial() {
       POGOProtos.Rpc.JournalEntryProto result = new POGOProtos.Rpc.JournalEntryProto(this);
-      if (addEntryBuilder_ == null) {
-        result.addEntry_ = addEntry_;
-      } else {
-        result.addEntry_ = addEntryBuilder_.build();
+      if (subentryCase_ == 1) {
+        if (addEntryBuilder_ == null) {
+          result.subentry_ = subentry_;
+        } else {
+          result.subentry_ = addEntryBuilder_.build();
+        }
       }
-      if (readEntryBuilder_ == null) {
-        result.readEntry_ = readEntry_;
-      } else {
-        result.readEntry_ = readEntryBuilder_.build();
+      if (subentryCase_ == 2) {
+        if (readEntryBuilder_ == null) {
+          result.subentry_ = subentry_;
+        } else {
+          result.subentry_ = readEntryBuilder_.build();
+        }
       }
-      if (removeEntryBuilder_ == null) {
-        result.removeEntry_ = removeEntry_;
-      } else {
-        result.removeEntry_ = removeEntryBuilder_.build();
+      if (subentryCase_ == 3) {
+        if (removeEntryBuilder_ == null) {
+          result.subentry_ = subentry_;
+        } else {
+          result.subentry_ = removeEntryBuilder_.build();
+        }
       }
+      result.subentryCase_ = subentryCase_;
       onBuilt();
       return result;
     }
@@ -525,14 +583,22 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.JournalEntryProto other) {
       if (other == POGOProtos.Rpc.JournalEntryProto.getDefaultInstance()) return this;
-      if (other.hasAddEntry()) {
-        mergeAddEntry(other.getAddEntry());
-      }
-      if (other.hasReadEntry()) {
-        mergeReadEntry(other.getReadEntry());
-      }
-      if (other.hasRemoveEntry()) {
-        mergeRemoveEntry(other.getRemoveEntry());
+      switch (other.getSubentryCase()) {
+        case ADD_ENTRY: {
+          mergeAddEntry(other.getAddEntry());
+          break;
+        }
+        case READ_ENTRY: {
+          mergeReadEntry(other.getReadEntry());
+          break;
+        }
+        case REMOVE_ENTRY: {
+          mergeRemoveEntry(other.getRemoveEntry());
+          break;
+        }
+        case SUBENTRY_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -562,8 +628,22 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int subentryCase_ = 0;
+    private java.lang.Object subentry_;
+    public SubentryCase
+        getSubentryCase() {
+      return SubentryCase.forNumber(
+          subentryCase_);
+    }
 
-    private POGOProtos.Rpc.JournalAddEntryProto addEntry_;
+    public Builder clearSubentry() {
+      subentryCase_ = 0;
+      subentry_ = null;
+      onChanged();
+      return this;
+    }
+
+
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.JournalAddEntryProto, POGOProtos.Rpc.JournalAddEntryProto.Builder, POGOProtos.Rpc.JournalAddEntryProtoOrBuilder> addEntryBuilder_;
     /**
@@ -571,7 +651,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the addEntry field is set.
      */
     public boolean hasAddEntry() {
-      return addEntryBuilder_ != null || addEntry_ != null;
+      return subentryCase_ == 1;
     }
     /**
      * <code>.POGOProtos.Rpc.JournalAddEntryProto add_entry = 1;</code>
@@ -579,9 +659,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.JournalAddEntryProto getAddEntry() {
       if (addEntryBuilder_ == null) {
-        return addEntry_ == null ? POGOProtos.Rpc.JournalAddEntryProto.getDefaultInstance() : addEntry_;
+        if (subentryCase_ == 1) {
+          return (POGOProtos.Rpc.JournalAddEntryProto) subentry_;
+        }
+        return POGOProtos.Rpc.JournalAddEntryProto.getDefaultInstance();
       } else {
-        return addEntryBuilder_.getMessage();
+        if (subentryCase_ == 1) {
+          return addEntryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.JournalAddEntryProto.getDefaultInstance();
       }
     }
     /**
@@ -592,12 +678,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        addEntry_ = value;
+        subentry_ = value;
         onChanged();
       } else {
         addEntryBuilder_.setMessage(value);
       }
-
+      subentryCase_ = 1;
       return this;
     }
     /**
@@ -606,12 +692,12 @@ private static final long serialVersionUID = 0L;
     public Builder setAddEntry(
         POGOProtos.Rpc.JournalAddEntryProto.Builder builderForValue) {
       if (addEntryBuilder_ == null) {
-        addEntry_ = builderForValue.build();
+        subentry_ = builderForValue.build();
         onChanged();
       } else {
         addEntryBuilder_.setMessage(builderForValue.build());
       }
-
+      subentryCase_ = 1;
       return this;
     }
     /**
@@ -619,17 +705,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeAddEntry(POGOProtos.Rpc.JournalAddEntryProto value) {
       if (addEntryBuilder_ == null) {
-        if (addEntry_ != null) {
-          addEntry_ =
-            POGOProtos.Rpc.JournalAddEntryProto.newBuilder(addEntry_).mergeFrom(value).buildPartial();
+        if (subentryCase_ == 1 &&
+            subentry_ != POGOProtos.Rpc.JournalAddEntryProto.getDefaultInstance()) {
+          subentry_ = POGOProtos.Rpc.JournalAddEntryProto.newBuilder((POGOProtos.Rpc.JournalAddEntryProto) subentry_)
+              .mergeFrom(value).buildPartial();
         } else {
-          addEntry_ = value;
+          subentry_ = value;
         }
         onChanged();
       } else {
-        addEntryBuilder_.mergeFrom(value);
+        if (subentryCase_ == 1) {
+          addEntryBuilder_.mergeFrom(value);
+        }
+        addEntryBuilder_.setMessage(value);
       }
-
+      subentryCase_ = 1;
       return this;
     }
     /**
@@ -637,32 +727,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearAddEntry() {
       if (addEntryBuilder_ == null) {
-        addEntry_ = null;
-        onChanged();
+        if (subentryCase_ == 1) {
+          subentryCase_ = 0;
+          subentry_ = null;
+          onChanged();
+        }
       } else {
-        addEntry_ = null;
-        addEntryBuilder_ = null;
+        if (subentryCase_ == 1) {
+          subentryCase_ = 0;
+          subentry_ = null;
+        }
+        addEntryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.JournalAddEntryProto add_entry = 1;</code>
      */
     public POGOProtos.Rpc.JournalAddEntryProto.Builder getAddEntryBuilder() {
-      
-      onChanged();
       return getAddEntryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.JournalAddEntryProto add_entry = 1;</code>
      */
     public POGOProtos.Rpc.JournalAddEntryProtoOrBuilder getAddEntryOrBuilder() {
-      if (addEntryBuilder_ != null) {
+      if ((subentryCase_ == 1) && (addEntryBuilder_ != null)) {
         return addEntryBuilder_.getMessageOrBuilder();
       } else {
-        return addEntry_ == null ?
-            POGOProtos.Rpc.JournalAddEntryProto.getDefaultInstance() : addEntry_;
+        if (subentryCase_ == 1) {
+          return (POGOProtos.Rpc.JournalAddEntryProto) subentry_;
+        }
+        return POGOProtos.Rpc.JournalAddEntryProto.getDefaultInstance();
       }
     }
     /**
@@ -672,17 +767,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.JournalAddEntryProto, POGOProtos.Rpc.JournalAddEntryProto.Builder, POGOProtos.Rpc.JournalAddEntryProtoOrBuilder> 
         getAddEntryFieldBuilder() {
       if (addEntryBuilder_ == null) {
+        if (!(subentryCase_ == 1)) {
+          subentry_ = POGOProtos.Rpc.JournalAddEntryProto.getDefaultInstance();
+        }
         addEntryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.JournalAddEntryProto, POGOProtos.Rpc.JournalAddEntryProto.Builder, POGOProtos.Rpc.JournalAddEntryProtoOrBuilder>(
-                getAddEntry(),
+                (POGOProtos.Rpc.JournalAddEntryProto) subentry_,
                 getParentForChildren(),
                 isClean());
-        addEntry_ = null;
+        subentry_ = null;
       }
+      subentryCase_ = 1;
+      onChanged();;
       return addEntryBuilder_;
     }
 
-    private POGOProtos.Rpc.JournalReadEntryProto readEntry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.JournalReadEntryProto, POGOProtos.Rpc.JournalReadEntryProto.Builder, POGOProtos.Rpc.JournalReadEntryProtoOrBuilder> readEntryBuilder_;
     /**
@@ -690,7 +789,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the readEntry field is set.
      */
     public boolean hasReadEntry() {
-      return readEntryBuilder_ != null || readEntry_ != null;
+      return subentryCase_ == 2;
     }
     /**
      * <code>.POGOProtos.Rpc.JournalReadEntryProto read_entry = 2;</code>
@@ -698,9 +797,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.JournalReadEntryProto getReadEntry() {
       if (readEntryBuilder_ == null) {
-        return readEntry_ == null ? POGOProtos.Rpc.JournalReadEntryProto.getDefaultInstance() : readEntry_;
+        if (subentryCase_ == 2) {
+          return (POGOProtos.Rpc.JournalReadEntryProto) subentry_;
+        }
+        return POGOProtos.Rpc.JournalReadEntryProto.getDefaultInstance();
       } else {
-        return readEntryBuilder_.getMessage();
+        if (subentryCase_ == 2) {
+          return readEntryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.JournalReadEntryProto.getDefaultInstance();
       }
     }
     /**
@@ -711,12 +816,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        readEntry_ = value;
+        subentry_ = value;
         onChanged();
       } else {
         readEntryBuilder_.setMessage(value);
       }
-
+      subentryCase_ = 2;
       return this;
     }
     /**
@@ -725,12 +830,12 @@ private static final long serialVersionUID = 0L;
     public Builder setReadEntry(
         POGOProtos.Rpc.JournalReadEntryProto.Builder builderForValue) {
       if (readEntryBuilder_ == null) {
-        readEntry_ = builderForValue.build();
+        subentry_ = builderForValue.build();
         onChanged();
       } else {
         readEntryBuilder_.setMessage(builderForValue.build());
       }
-
+      subentryCase_ = 2;
       return this;
     }
     /**
@@ -738,17 +843,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeReadEntry(POGOProtos.Rpc.JournalReadEntryProto value) {
       if (readEntryBuilder_ == null) {
-        if (readEntry_ != null) {
-          readEntry_ =
-            POGOProtos.Rpc.JournalReadEntryProto.newBuilder(readEntry_).mergeFrom(value).buildPartial();
+        if (subentryCase_ == 2 &&
+            subentry_ != POGOProtos.Rpc.JournalReadEntryProto.getDefaultInstance()) {
+          subentry_ = POGOProtos.Rpc.JournalReadEntryProto.newBuilder((POGOProtos.Rpc.JournalReadEntryProto) subentry_)
+              .mergeFrom(value).buildPartial();
         } else {
-          readEntry_ = value;
+          subentry_ = value;
         }
         onChanged();
       } else {
-        readEntryBuilder_.mergeFrom(value);
+        if (subentryCase_ == 2) {
+          readEntryBuilder_.mergeFrom(value);
+        }
+        readEntryBuilder_.setMessage(value);
       }
-
+      subentryCase_ = 2;
       return this;
     }
     /**
@@ -756,32 +865,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearReadEntry() {
       if (readEntryBuilder_ == null) {
-        readEntry_ = null;
-        onChanged();
+        if (subentryCase_ == 2) {
+          subentryCase_ = 0;
+          subentry_ = null;
+          onChanged();
+        }
       } else {
-        readEntry_ = null;
-        readEntryBuilder_ = null;
+        if (subentryCase_ == 2) {
+          subentryCase_ = 0;
+          subentry_ = null;
+        }
+        readEntryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.JournalReadEntryProto read_entry = 2;</code>
      */
     public POGOProtos.Rpc.JournalReadEntryProto.Builder getReadEntryBuilder() {
-      
-      onChanged();
       return getReadEntryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.JournalReadEntryProto read_entry = 2;</code>
      */
     public POGOProtos.Rpc.JournalReadEntryProtoOrBuilder getReadEntryOrBuilder() {
-      if (readEntryBuilder_ != null) {
+      if ((subentryCase_ == 2) && (readEntryBuilder_ != null)) {
         return readEntryBuilder_.getMessageOrBuilder();
       } else {
-        return readEntry_ == null ?
-            POGOProtos.Rpc.JournalReadEntryProto.getDefaultInstance() : readEntry_;
+        if (subentryCase_ == 2) {
+          return (POGOProtos.Rpc.JournalReadEntryProto) subentry_;
+        }
+        return POGOProtos.Rpc.JournalReadEntryProto.getDefaultInstance();
       }
     }
     /**
@@ -791,17 +905,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.JournalReadEntryProto, POGOProtos.Rpc.JournalReadEntryProto.Builder, POGOProtos.Rpc.JournalReadEntryProtoOrBuilder> 
         getReadEntryFieldBuilder() {
       if (readEntryBuilder_ == null) {
+        if (!(subentryCase_ == 2)) {
+          subentry_ = POGOProtos.Rpc.JournalReadEntryProto.getDefaultInstance();
+        }
         readEntryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.JournalReadEntryProto, POGOProtos.Rpc.JournalReadEntryProto.Builder, POGOProtos.Rpc.JournalReadEntryProtoOrBuilder>(
-                getReadEntry(),
+                (POGOProtos.Rpc.JournalReadEntryProto) subentry_,
                 getParentForChildren(),
                 isClean());
-        readEntry_ = null;
+        subentry_ = null;
       }
+      subentryCase_ = 2;
+      onChanged();;
       return readEntryBuilder_;
     }
 
-    private POGOProtos.Rpc.JournalRemoveEntryProto removeEntry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.JournalRemoveEntryProto, POGOProtos.Rpc.JournalRemoveEntryProto.Builder, POGOProtos.Rpc.JournalRemoveEntryProtoOrBuilder> removeEntryBuilder_;
     /**
@@ -809,7 +927,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the removeEntry field is set.
      */
     public boolean hasRemoveEntry() {
-      return removeEntryBuilder_ != null || removeEntry_ != null;
+      return subentryCase_ == 3;
     }
     /**
      * <code>.POGOProtos.Rpc.JournalRemoveEntryProto remove_entry = 3;</code>
@@ -817,9 +935,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.JournalRemoveEntryProto getRemoveEntry() {
       if (removeEntryBuilder_ == null) {
-        return removeEntry_ == null ? POGOProtos.Rpc.JournalRemoveEntryProto.getDefaultInstance() : removeEntry_;
+        if (subentryCase_ == 3) {
+          return (POGOProtos.Rpc.JournalRemoveEntryProto) subentry_;
+        }
+        return POGOProtos.Rpc.JournalRemoveEntryProto.getDefaultInstance();
       } else {
-        return removeEntryBuilder_.getMessage();
+        if (subentryCase_ == 3) {
+          return removeEntryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.JournalRemoveEntryProto.getDefaultInstance();
       }
     }
     /**
@@ -830,12 +954,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        removeEntry_ = value;
+        subentry_ = value;
         onChanged();
       } else {
         removeEntryBuilder_.setMessage(value);
       }
-
+      subentryCase_ = 3;
       return this;
     }
     /**
@@ -844,12 +968,12 @@ private static final long serialVersionUID = 0L;
     public Builder setRemoveEntry(
         POGOProtos.Rpc.JournalRemoveEntryProto.Builder builderForValue) {
       if (removeEntryBuilder_ == null) {
-        removeEntry_ = builderForValue.build();
+        subentry_ = builderForValue.build();
         onChanged();
       } else {
         removeEntryBuilder_.setMessage(builderForValue.build());
       }
-
+      subentryCase_ = 3;
       return this;
     }
     /**
@@ -857,17 +981,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeRemoveEntry(POGOProtos.Rpc.JournalRemoveEntryProto value) {
       if (removeEntryBuilder_ == null) {
-        if (removeEntry_ != null) {
-          removeEntry_ =
-            POGOProtos.Rpc.JournalRemoveEntryProto.newBuilder(removeEntry_).mergeFrom(value).buildPartial();
+        if (subentryCase_ == 3 &&
+            subentry_ != POGOProtos.Rpc.JournalRemoveEntryProto.getDefaultInstance()) {
+          subentry_ = POGOProtos.Rpc.JournalRemoveEntryProto.newBuilder((POGOProtos.Rpc.JournalRemoveEntryProto) subentry_)
+              .mergeFrom(value).buildPartial();
         } else {
-          removeEntry_ = value;
+          subentry_ = value;
         }
         onChanged();
       } else {
-        removeEntryBuilder_.mergeFrom(value);
+        if (subentryCase_ == 3) {
+          removeEntryBuilder_.mergeFrom(value);
+        }
+        removeEntryBuilder_.setMessage(value);
       }
-
+      subentryCase_ = 3;
       return this;
     }
     /**
@@ -875,32 +1003,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearRemoveEntry() {
       if (removeEntryBuilder_ == null) {
-        removeEntry_ = null;
-        onChanged();
+        if (subentryCase_ == 3) {
+          subentryCase_ = 0;
+          subentry_ = null;
+          onChanged();
+        }
       } else {
-        removeEntry_ = null;
-        removeEntryBuilder_ = null;
+        if (subentryCase_ == 3) {
+          subentryCase_ = 0;
+          subentry_ = null;
+        }
+        removeEntryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.JournalRemoveEntryProto remove_entry = 3;</code>
      */
     public POGOProtos.Rpc.JournalRemoveEntryProto.Builder getRemoveEntryBuilder() {
-      
-      onChanged();
       return getRemoveEntryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.JournalRemoveEntryProto remove_entry = 3;</code>
      */
     public POGOProtos.Rpc.JournalRemoveEntryProtoOrBuilder getRemoveEntryOrBuilder() {
-      if (removeEntryBuilder_ != null) {
+      if ((subentryCase_ == 3) && (removeEntryBuilder_ != null)) {
         return removeEntryBuilder_.getMessageOrBuilder();
       } else {
-        return removeEntry_ == null ?
-            POGOProtos.Rpc.JournalRemoveEntryProto.getDefaultInstance() : removeEntry_;
+        if (subentryCase_ == 3) {
+          return (POGOProtos.Rpc.JournalRemoveEntryProto) subentry_;
+        }
+        return POGOProtos.Rpc.JournalRemoveEntryProto.getDefaultInstance();
       }
     }
     /**
@@ -910,13 +1043,18 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.JournalRemoveEntryProto, POGOProtos.Rpc.JournalRemoveEntryProto.Builder, POGOProtos.Rpc.JournalRemoveEntryProtoOrBuilder> 
         getRemoveEntryFieldBuilder() {
       if (removeEntryBuilder_ == null) {
+        if (!(subentryCase_ == 3)) {
+          subentry_ = POGOProtos.Rpc.JournalRemoveEntryProto.getDefaultInstance();
+        }
         removeEntryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.JournalRemoveEntryProto, POGOProtos.Rpc.JournalRemoveEntryProto.Builder, POGOProtos.Rpc.JournalRemoveEntryProtoOrBuilder>(
-                getRemoveEntry(),
+                (POGOProtos.Rpc.JournalRemoveEntryProto) subentry_,
                 getParentForChildren(),
                 isClean());
-        removeEntry_ = null;
+        subentry_ = null;
       }
+      subentryCase_ = 3;
+      onChanged();;
       return removeEntryBuilder_;
     }
     @java.lang.Override

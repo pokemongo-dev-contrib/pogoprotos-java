@@ -51,4 +51,6 @@ public interface ClientIncidentStepProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto pokestop_dialogue = 3;</code>
    */
   POGOProtos.Rpc.ClientPokestopNpcDialogueStepProtoOrBuilder getPokestopDialogueOrBuilder();
+
+  public POGOProtos.Rpc.ClientIncidentStepProto.ClientIncidentStepCase getClientIncidentStepCase();
 }

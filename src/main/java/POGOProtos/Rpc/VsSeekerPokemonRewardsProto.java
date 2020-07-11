@@ -125,6 +125,8 @@ private static final long serialVersionUID = 0L;
      * @return The zero.
      */
     boolean getZero();
+
+    public POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto.OverrideTypeCase getOverrideTypeCase();
   }
   /**
    * Protobuf type {@code POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto}
@@ -173,20 +175,21 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               POGOProtos.Rpc.RangeProto.Builder subBuilder = null;
-              if (range_ != null) {
-                subBuilder = range_.toBuilder();
+              if (overrideTypeCase_ == 1) {
+                subBuilder = ((POGOProtos.Rpc.RangeProto) overrideType_).toBuilder();
               }
-              range_ = input.readMessage(POGOProtos.Rpc.RangeProto.parser(), extensionRegistry);
+              overrideType_ =
+                  input.readMessage(POGOProtos.Rpc.RangeProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(range_);
-                range_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.RangeProto) overrideType_);
+                overrideType_ = subBuilder.buildPartial();
               }
-
+              overrideTypeCase_ = 1;
               break;
             }
             case 16: {
-
-              zero_ = input.readBool();
+              overrideTypeCase_ = 2;
+              overrideType_ = input.readBool();
               break;
             }
             default: {
@@ -221,37 +224,85 @@ private static final long serialVersionUID = 0L;
               POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto.class, POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto.Builder.class);
     }
 
+    private int overrideTypeCase_ = 0;
+    private java.lang.Object overrideType_;
+    public enum OverrideTypeCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      RANGE(1),
+      ZERO(2),
+      OVERRIDETYPE_NOT_SET(0);
+      private final int value;
+      private OverrideTypeCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static OverrideTypeCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static OverrideTypeCase forNumber(int value) {
+        switch (value) {
+          case 1: return RANGE;
+          case 2: return ZERO;
+          case 0: return OVERRIDETYPE_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public OverrideTypeCase
+    getOverrideTypeCase() {
+      return OverrideTypeCase.forNumber(
+          overrideTypeCase_);
+    }
+
     public static final int RANGE_FIELD_NUMBER = 1;
-    private POGOProtos.Rpc.RangeProto range_;
     /**
      * <code>.POGOProtos.Rpc.RangeProto range = 1;</code>
      * @return Whether the range field is set.
      */
     public boolean hasRange() {
-      return range_ != null;
+      return overrideTypeCase_ == 1;
     }
     /**
      * <code>.POGOProtos.Rpc.RangeProto range = 1;</code>
      * @return The range.
      */
     public POGOProtos.Rpc.RangeProto getRange() {
-      return range_ == null ? POGOProtos.Rpc.RangeProto.getDefaultInstance() : range_;
+      if (overrideTypeCase_ == 1) {
+         return (POGOProtos.Rpc.RangeProto) overrideType_;
+      }
+      return POGOProtos.Rpc.RangeProto.getDefaultInstance();
     }
     /**
      * <code>.POGOProtos.Rpc.RangeProto range = 1;</code>
      */
     public POGOProtos.Rpc.RangeProtoOrBuilder getRangeOrBuilder() {
-      return getRange();
+      if (overrideTypeCase_ == 1) {
+         return (POGOProtos.Rpc.RangeProto) overrideType_;
+      }
+      return POGOProtos.Rpc.RangeProto.getDefaultInstance();
     }
 
     public static final int ZERO_FIELD_NUMBER = 2;
-    private boolean zero_;
     /**
      * <code>bool zero = 2;</code>
      * @return The zero.
      */
     public boolean getZero() {
-      return zero_;
+      if (overrideTypeCase_ == 2) {
+        return (java.lang.Boolean) overrideType_;
+      }
+      return false;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -268,11 +319,12 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (range_ != null) {
-        output.writeMessage(1, getRange());
+      if (overrideTypeCase_ == 1) {
+        output.writeMessage(1, (POGOProtos.Rpc.RangeProto) overrideType_);
       }
-      if (zero_ != false) {
-        output.writeBool(2, zero_);
+      if (overrideTypeCase_ == 2) {
+        output.writeBool(
+            2, (boolean)((java.lang.Boolean) overrideType_));
       }
       unknownFields.writeTo(output);
     }
@@ -283,13 +335,14 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (range_ != null) {
+      if (overrideTypeCase_ == 1) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getRange());
+          .computeMessageSize(1, (POGOProtos.Rpc.RangeProto) overrideType_);
       }
-      if (zero_ != false) {
+      if (overrideTypeCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, zero_);
+          .computeBoolSize(
+              2, (boolean)((java.lang.Boolean) overrideType_));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -306,13 +359,19 @@ private static final long serialVersionUID = 0L;
       }
       POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto other = (POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto) obj;
 
-      if (hasRange() != other.hasRange()) return false;
-      if (hasRange()) {
-        if (!getRange()
-            .equals(other.getRange())) return false;
+      if (!getOverrideTypeCase().equals(other.getOverrideTypeCase())) return false;
+      switch (overrideTypeCase_) {
+        case 1:
+          if (!getRange()
+              .equals(other.getRange())) return false;
+          break;
+        case 2:
+          if (getZero()
+              != other.getZero()) return false;
+          break;
+        case 0:
+        default:
       }
-      if (getZero()
-          != other.getZero()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -324,13 +383,19 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasRange()) {
-        hash = (37 * hash) + RANGE_FIELD_NUMBER;
-        hash = (53 * hash) + getRange().hashCode();
+      switch (overrideTypeCase_) {
+        case 1:
+          hash = (37 * hash) + RANGE_FIELD_NUMBER;
+          hash = (53 * hash) + getRange().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + ZERO_FIELD_NUMBER;
+          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+              getZero());
+          break;
+        case 0:
+        default:
       }
-      hash = (37 * hash) + ZERO_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getZero());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -464,14 +529,8 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (rangeBuilder_ == null) {
-          range_ = null;
-        } else {
-          range_ = null;
-          rangeBuilder_ = null;
-        }
-        zero_ = false;
-
+        overrideTypeCase_ = 0;
+        overrideType_ = null;
         return this;
       }
 
@@ -498,12 +557,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto buildPartial() {
         POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto result = new POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto(this);
-        if (rangeBuilder_ == null) {
-          result.range_ = range_;
-        } else {
-          result.range_ = rangeBuilder_.build();
+        if (overrideTypeCase_ == 1) {
+          if (rangeBuilder_ == null) {
+            result.overrideType_ = overrideType_;
+          } else {
+            result.overrideType_ = rangeBuilder_.build();
+          }
         }
-        result.zero_ = zero_;
+        if (overrideTypeCase_ == 2) {
+          result.overrideType_ = overrideType_;
+        }
+        result.overrideTypeCase_ = overrideTypeCase_;
         onBuilt();
         return result;
       }
@@ -552,11 +616,18 @@ private static final long serialVersionUID = 0L;
 
       public Builder mergeFrom(POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto other) {
         if (other == POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto.getDefaultInstance()) return this;
-        if (other.hasRange()) {
-          mergeRange(other.getRange());
-        }
-        if (other.getZero() != false) {
-          setZero(other.getZero());
+        switch (other.getOverrideTypeCase()) {
+          case RANGE: {
+            mergeRange(other.getRange());
+            break;
+          }
+          case ZERO: {
+            setZero(other.getZero());
+            break;
+          }
+          case OVERRIDETYPE_NOT_SET: {
+            break;
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -586,8 +657,22 @@ private static final long serialVersionUID = 0L;
         }
         return this;
       }
+      private int overrideTypeCase_ = 0;
+      private java.lang.Object overrideType_;
+      public OverrideTypeCase
+          getOverrideTypeCase() {
+        return OverrideTypeCase.forNumber(
+            overrideTypeCase_);
+      }
 
-      private POGOProtos.Rpc.RangeProto range_;
+      public Builder clearOverrideType() {
+        overrideTypeCase_ = 0;
+        overrideType_ = null;
+        onChanged();
+        return this;
+      }
+
+
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.RangeProto, POGOProtos.Rpc.RangeProto.Builder, POGOProtos.Rpc.RangeProtoOrBuilder> rangeBuilder_;
       /**
@@ -595,7 +680,7 @@ private static final long serialVersionUID = 0L;
        * @return Whether the range field is set.
        */
       public boolean hasRange() {
-        return rangeBuilder_ != null || range_ != null;
+        return overrideTypeCase_ == 1;
       }
       /**
        * <code>.POGOProtos.Rpc.RangeProto range = 1;</code>
@@ -603,9 +688,15 @@ private static final long serialVersionUID = 0L;
        */
       public POGOProtos.Rpc.RangeProto getRange() {
         if (rangeBuilder_ == null) {
-          return range_ == null ? POGOProtos.Rpc.RangeProto.getDefaultInstance() : range_;
+          if (overrideTypeCase_ == 1) {
+            return (POGOProtos.Rpc.RangeProto) overrideType_;
+          }
+          return POGOProtos.Rpc.RangeProto.getDefaultInstance();
         } else {
-          return rangeBuilder_.getMessage();
+          if (overrideTypeCase_ == 1) {
+            return rangeBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.RangeProto.getDefaultInstance();
         }
       }
       /**
@@ -616,12 +707,12 @@ private static final long serialVersionUID = 0L;
           if (value == null) {
             throw new NullPointerException();
           }
-          range_ = value;
+          overrideType_ = value;
           onChanged();
         } else {
           rangeBuilder_.setMessage(value);
         }
-
+        overrideTypeCase_ = 1;
         return this;
       }
       /**
@@ -630,12 +721,12 @@ private static final long serialVersionUID = 0L;
       public Builder setRange(
           POGOProtos.Rpc.RangeProto.Builder builderForValue) {
         if (rangeBuilder_ == null) {
-          range_ = builderForValue.build();
+          overrideType_ = builderForValue.build();
           onChanged();
         } else {
           rangeBuilder_.setMessage(builderForValue.build());
         }
-
+        overrideTypeCase_ = 1;
         return this;
       }
       /**
@@ -643,17 +734,21 @@ private static final long serialVersionUID = 0L;
        */
       public Builder mergeRange(POGOProtos.Rpc.RangeProto value) {
         if (rangeBuilder_ == null) {
-          if (range_ != null) {
-            range_ =
-              POGOProtos.Rpc.RangeProto.newBuilder(range_).mergeFrom(value).buildPartial();
+          if (overrideTypeCase_ == 1 &&
+              overrideType_ != POGOProtos.Rpc.RangeProto.getDefaultInstance()) {
+            overrideType_ = POGOProtos.Rpc.RangeProto.newBuilder((POGOProtos.Rpc.RangeProto) overrideType_)
+                .mergeFrom(value).buildPartial();
           } else {
-            range_ = value;
+            overrideType_ = value;
           }
           onChanged();
         } else {
-          rangeBuilder_.mergeFrom(value);
+          if (overrideTypeCase_ == 1) {
+            rangeBuilder_.mergeFrom(value);
+          }
+          rangeBuilder_.setMessage(value);
         }
-
+        overrideTypeCase_ = 1;
         return this;
       }
       /**
@@ -661,32 +756,37 @@ private static final long serialVersionUID = 0L;
        */
       public Builder clearRange() {
         if (rangeBuilder_ == null) {
-          range_ = null;
-          onChanged();
+          if (overrideTypeCase_ == 1) {
+            overrideTypeCase_ = 0;
+            overrideType_ = null;
+            onChanged();
+          }
         } else {
-          range_ = null;
-          rangeBuilder_ = null;
+          if (overrideTypeCase_ == 1) {
+            overrideTypeCase_ = 0;
+            overrideType_ = null;
+          }
+          rangeBuilder_.clear();
         }
-
         return this;
       }
       /**
        * <code>.POGOProtos.Rpc.RangeProto range = 1;</code>
        */
       public POGOProtos.Rpc.RangeProto.Builder getRangeBuilder() {
-        
-        onChanged();
         return getRangeFieldBuilder().getBuilder();
       }
       /**
        * <code>.POGOProtos.Rpc.RangeProto range = 1;</code>
        */
       public POGOProtos.Rpc.RangeProtoOrBuilder getRangeOrBuilder() {
-        if (rangeBuilder_ != null) {
+        if ((overrideTypeCase_ == 1) && (rangeBuilder_ != null)) {
           return rangeBuilder_.getMessageOrBuilder();
         } else {
-          return range_ == null ?
-              POGOProtos.Rpc.RangeProto.getDefaultInstance() : range_;
+          if (overrideTypeCase_ == 1) {
+            return (POGOProtos.Rpc.RangeProto) overrideType_;
+          }
+          return POGOProtos.Rpc.RangeProto.getDefaultInstance();
         }
       }
       /**
@@ -696,23 +796,30 @@ private static final long serialVersionUID = 0L;
           POGOProtos.Rpc.RangeProto, POGOProtos.Rpc.RangeProto.Builder, POGOProtos.Rpc.RangeProtoOrBuilder> 
           getRangeFieldBuilder() {
         if (rangeBuilder_ == null) {
+          if (!(overrideTypeCase_ == 1)) {
+            overrideType_ = POGOProtos.Rpc.RangeProto.getDefaultInstance();
+          }
           rangeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.RangeProto, POGOProtos.Rpc.RangeProto.Builder, POGOProtos.Rpc.RangeProtoOrBuilder>(
-                  getRange(),
+                  (POGOProtos.Rpc.RangeProto) overrideType_,
                   getParentForChildren(),
                   isClean());
-          range_ = null;
+          overrideType_ = null;
         }
+        overrideTypeCase_ = 1;
+        onChanged();;
         return rangeBuilder_;
       }
 
-      private boolean zero_ ;
       /**
        * <code>bool zero = 2;</code>
        * @return The zero.
        */
       public boolean getZero() {
-        return zero_;
+        if (overrideTypeCase_ == 2) {
+          return (java.lang.Boolean) overrideType_;
+        }
+        return false;
       }
       /**
        * <code>bool zero = 2;</code>
@@ -720,8 +827,8 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setZero(boolean value) {
-        
-        zero_ = value;
+        overrideTypeCase_ = 2;
+        overrideType_ = value;
         onChanged();
         return this;
       }
@@ -730,9 +837,11 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder clearZero() {
-        
-        zero_ = false;
-        onChanged();
+        if (overrideTypeCase_ == 2) {
+          overrideTypeCase_ = 0;
+          overrideType_ = null;
+          onChanged();
+        }
         return this;
       }
       @java.lang.Override
@@ -893,6 +1002,8 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProto stamina_iv_override = 8;</code>
      */
     POGOProtos.Rpc.VsSeekerPokemonRewardsProto.OverrideIvRangeProtoOrBuilder getStaminaIvOverrideOrBuilder();
+
+    public POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto.RewardTypeCase getRewardTypeCase();
   }
   /**
    * Protobuf type {@code POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto}
@@ -941,41 +1052,44 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               POGOProtos.Rpc.PokemonEncounterRewardProto.Builder subBuilder = null;
-              if (pokemon_ != null) {
-                subBuilder = pokemon_.toBuilder();
+              if (rewardTypeCase_ == 1) {
+                subBuilder = ((POGOProtos.Rpc.PokemonEncounterRewardProto) rewardType_).toBuilder();
               }
-              pokemon_ = input.readMessage(POGOProtos.Rpc.PokemonEncounterRewardProto.parser(), extensionRegistry);
+              rewardType_ =
+                  input.readMessage(POGOProtos.Rpc.PokemonEncounterRewardProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(pokemon_);
-                pokemon_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.PokemonEncounterRewardProto) rewardType_);
+                rewardType_ = subBuilder.buildPartial();
               }
-
+              rewardTypeCase_ = 1;
               break;
             }
             case 18: {
               POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder subBuilder = null;
-              if (limitedPokemonReward_ != null) {
-                subBuilder = limitedPokemonReward_.toBuilder();
+              if (rewardTypeCase_ == 2) {
+                subBuilder = ((POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_).toBuilder();
               }
-              limitedPokemonReward_ = input.readMessage(POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.parser(), extensionRegistry);
+              rewardType_ =
+                  input.readMessage(POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(limitedPokemonReward_);
-                limitedPokemonReward_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_);
+                rewardType_ = subBuilder.buildPartial();
               }
-
+              rewardTypeCase_ = 2;
               break;
             }
             case 26: {
               POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder subBuilder = null;
-              if (guaranteedLimitedPokemonReward_ != null) {
-                subBuilder = guaranteedLimitedPokemonReward_.toBuilder();
+              if (rewardTypeCase_ == 3) {
+                subBuilder = ((POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_).toBuilder();
               }
-              guaranteedLimitedPokemonReward_ = input.readMessage(POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.parser(), extensionRegistry);
+              rewardType_ =
+                  input.readMessage(POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(guaranteedLimitedPokemonReward_);
-                guaranteedLimitedPokemonReward_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_);
+                rewardType_ = subBuilder.buildPartial();
               }
-
+              rewardTypeCase_ = 3;
               break;
             }
             case 32: {
@@ -1059,73 +1173,131 @@ private static final long serialVersionUID = 0L;
               POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto.class, POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto.Builder.class);
     }
 
+    private int rewardTypeCase_ = 0;
+    private java.lang.Object rewardType_;
+    public enum RewardTypeCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      POKEMON(1),
+      LIMITED_POKEMON_REWARD(2),
+      GUARANTEED_LIMITED_POKEMON_REWARD(3),
+      REWARDTYPE_NOT_SET(0);
+      private final int value;
+      private RewardTypeCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static RewardTypeCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static RewardTypeCase forNumber(int value) {
+        switch (value) {
+          case 1: return POKEMON;
+          case 2: return LIMITED_POKEMON_REWARD;
+          case 3: return GUARANTEED_LIMITED_POKEMON_REWARD;
+          case 0: return REWARDTYPE_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public RewardTypeCase
+    getRewardTypeCase() {
+      return RewardTypeCase.forNumber(
+          rewardTypeCase_);
+    }
+
     public static final int POKEMON_FIELD_NUMBER = 1;
-    private POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_;
     /**
      * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon = 1;</code>
      * @return Whether the pokemon field is set.
      */
     public boolean hasPokemon() {
-      return pokemon_ != null;
+      return rewardTypeCase_ == 1;
     }
     /**
      * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon = 1;</code>
      * @return The pokemon.
      */
     public POGOProtos.Rpc.PokemonEncounterRewardProto getPokemon() {
-      return pokemon_ == null ? POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance() : pokemon_;
+      if (rewardTypeCase_ == 1) {
+         return (POGOProtos.Rpc.PokemonEncounterRewardProto) rewardType_;
+      }
+      return POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
     }
     /**
      * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon = 1;</code>
      */
     public POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder getPokemonOrBuilder() {
-      return getPokemon();
+      if (rewardTypeCase_ == 1) {
+         return (POGOProtos.Rpc.PokemonEncounterRewardProto) rewardType_;
+      }
+      return POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
     }
 
     public static final int LIMITED_POKEMON_REWARD_FIELD_NUMBER = 2;
-    private POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto limitedPokemonReward_;
     /**
      * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto limited_pokemon_reward = 2;</code>
      * @return Whether the limitedPokemonReward field is set.
      */
     public boolean hasLimitedPokemonReward() {
-      return limitedPokemonReward_ != null;
+      return rewardTypeCase_ == 2;
     }
     /**
      * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto limited_pokemon_reward = 2;</code>
      * @return The limitedPokemonReward.
      */
     public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto getLimitedPokemonReward() {
-      return limitedPokemonReward_ == null ? POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance() : limitedPokemonReward_;
+      if (rewardTypeCase_ == 2) {
+         return (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_;
+      }
+      return POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
     }
     /**
      * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto limited_pokemon_reward = 2;</code>
      */
     public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProtoOrBuilder getLimitedPokemonRewardOrBuilder() {
-      return getLimitedPokemonReward();
+      if (rewardTypeCase_ == 2) {
+         return (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_;
+      }
+      return POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
     }
 
     public static final int GUARANTEED_LIMITED_POKEMON_REWARD_FIELD_NUMBER = 3;
-    private POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto guaranteedLimitedPokemonReward_;
     /**
      * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto guaranteed_limited_pokemon_reward = 3;</code>
      * @return Whether the guaranteedLimitedPokemonReward field is set.
      */
     public boolean hasGuaranteedLimitedPokemonReward() {
-      return guaranteedLimitedPokemonReward_ != null;
+      return rewardTypeCase_ == 3;
     }
     /**
      * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto guaranteed_limited_pokemon_reward = 3;</code>
      * @return The guaranteedLimitedPokemonReward.
      */
     public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto getGuaranteedLimitedPokemonReward() {
-      return guaranteedLimitedPokemonReward_ == null ? POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance() : guaranteedLimitedPokemonReward_;
+      if (rewardTypeCase_ == 3) {
+         return (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_;
+      }
+      return POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
     }
     /**
      * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto guaranteed_limited_pokemon_reward = 3;</code>
      */
     public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProtoOrBuilder getGuaranteedLimitedPokemonRewardOrBuilder() {
-      return getGuaranteedLimitedPokemonReward();
+      if (rewardTypeCase_ == 3) {
+         return (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_;
+      }
+      return POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
     }
 
     public static final int UNLOCKED_AT_RANK_FIELD_NUMBER = 4;
@@ -1231,14 +1403,14 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pokemon_ != null) {
-        output.writeMessage(1, getPokemon());
+      if (rewardTypeCase_ == 1) {
+        output.writeMessage(1, (POGOProtos.Rpc.PokemonEncounterRewardProto) rewardType_);
       }
-      if (limitedPokemonReward_ != null) {
-        output.writeMessage(2, getLimitedPokemonReward());
+      if (rewardTypeCase_ == 2) {
+        output.writeMessage(2, (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_);
       }
-      if (guaranteedLimitedPokemonReward_ != null) {
-        output.writeMessage(3, getGuaranteedLimitedPokemonReward());
+      if (rewardTypeCase_ == 3) {
+        output.writeMessage(3, (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_);
       }
       if (unlockedAtRank_ != 0) {
         output.writeInt32(4, unlockedAtRank_);
@@ -1264,17 +1436,17 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (pokemon_ != null) {
+      if (rewardTypeCase_ == 1) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getPokemon());
+          .computeMessageSize(1, (POGOProtos.Rpc.PokemonEncounterRewardProto) rewardType_);
       }
-      if (limitedPokemonReward_ != null) {
+      if (rewardTypeCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getLimitedPokemonReward());
+          .computeMessageSize(2, (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_);
       }
-      if (guaranteedLimitedPokemonReward_ != null) {
+      if (rewardTypeCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getGuaranteedLimitedPokemonReward());
+          .computeMessageSize(3, (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_);
       }
       if (unlockedAtRank_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -1311,21 +1483,6 @@ private static final long serialVersionUID = 0L;
       }
       POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto other = (POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto) obj;
 
-      if (hasPokemon() != other.hasPokemon()) return false;
-      if (hasPokemon()) {
-        if (!getPokemon()
-            .equals(other.getPokemon())) return false;
-      }
-      if (hasLimitedPokemonReward() != other.hasLimitedPokemonReward()) return false;
-      if (hasLimitedPokemonReward()) {
-        if (!getLimitedPokemonReward()
-            .equals(other.getLimitedPokemonReward())) return false;
-      }
-      if (hasGuaranteedLimitedPokemonReward() != other.hasGuaranteedLimitedPokemonReward()) return false;
-      if (hasGuaranteedLimitedPokemonReward()) {
-        if (!getGuaranteedLimitedPokemonReward()
-            .equals(other.getGuaranteedLimitedPokemonReward())) return false;
-      }
       if (getUnlockedAtRank()
           != other.getUnlockedAtRank()) return false;
       if (java.lang.Float.floatToIntBits(getWeight())
@@ -1346,6 +1503,23 @@ private static final long serialVersionUID = 0L;
         if (!getStaminaIvOverride()
             .equals(other.getStaminaIvOverride())) return false;
       }
+      if (!getRewardTypeCase().equals(other.getRewardTypeCase())) return false;
+      switch (rewardTypeCase_) {
+        case 1:
+          if (!getPokemon()
+              .equals(other.getPokemon())) return false;
+          break;
+        case 2:
+          if (!getLimitedPokemonReward()
+              .equals(other.getLimitedPokemonReward())) return false;
+          break;
+        case 3:
+          if (!getGuaranteedLimitedPokemonReward()
+              .equals(other.getGuaranteedLimitedPokemonReward())) return false;
+          break;
+        case 0:
+        default:
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1357,18 +1531,6 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasPokemon()) {
-        hash = (37 * hash) + POKEMON_FIELD_NUMBER;
-        hash = (53 * hash) + getPokemon().hashCode();
-      }
-      if (hasLimitedPokemonReward()) {
-        hash = (37 * hash) + LIMITED_POKEMON_REWARD_FIELD_NUMBER;
-        hash = (53 * hash) + getLimitedPokemonReward().hashCode();
-      }
-      if (hasGuaranteedLimitedPokemonReward()) {
-        hash = (37 * hash) + GUARANTEED_LIMITED_POKEMON_REWARD_FIELD_NUMBER;
-        hash = (53 * hash) + getGuaranteedLimitedPokemonReward().hashCode();
-      }
       hash = (37 * hash) + UNLOCKED_AT_RANK_FIELD_NUMBER;
       hash = (53 * hash) + getUnlockedAtRank();
       hash = (37 * hash) + WEIGHT_FIELD_NUMBER;
@@ -1385,6 +1547,22 @@ private static final long serialVersionUID = 0L;
       if (hasStaminaIvOverride()) {
         hash = (37 * hash) + STAMINA_IV_OVERRIDE_FIELD_NUMBER;
         hash = (53 * hash) + getStaminaIvOverride().hashCode();
+      }
+      switch (rewardTypeCase_) {
+        case 1:
+          hash = (37 * hash) + POKEMON_FIELD_NUMBER;
+          hash = (53 * hash) + getPokemon().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + LIMITED_POKEMON_REWARD_FIELD_NUMBER;
+          hash = (53 * hash) + getLimitedPokemonReward().hashCode();
+          break;
+        case 3:
+          hash = (37 * hash) + GUARANTEED_LIMITED_POKEMON_REWARD_FIELD_NUMBER;
+          hash = (53 * hash) + getGuaranteedLimitedPokemonReward().hashCode();
+          break;
+        case 0:
+        default:
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -1519,24 +1697,6 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (pokemonBuilder_ == null) {
-          pokemon_ = null;
-        } else {
-          pokemon_ = null;
-          pokemonBuilder_ = null;
-        }
-        if (limitedPokemonRewardBuilder_ == null) {
-          limitedPokemonReward_ = null;
-        } else {
-          limitedPokemonReward_ = null;
-          limitedPokemonRewardBuilder_ = null;
-        }
-        if (guaranteedLimitedPokemonRewardBuilder_ == null) {
-          guaranteedLimitedPokemonReward_ = null;
-        } else {
-          guaranteedLimitedPokemonReward_ = null;
-          guaranteedLimitedPokemonRewardBuilder_ = null;
-        }
         unlockedAtRank_ = 0;
 
         weight_ = 0F;
@@ -1559,6 +1719,8 @@ private static final long serialVersionUID = 0L;
           staminaIvOverride_ = null;
           staminaIvOverrideBuilder_ = null;
         }
+        rewardTypeCase_ = 0;
+        rewardType_ = null;
         return this;
       }
 
@@ -1585,20 +1747,26 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto buildPartial() {
         POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto result = new POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto(this);
-        if (pokemonBuilder_ == null) {
-          result.pokemon_ = pokemon_;
-        } else {
-          result.pokemon_ = pokemonBuilder_.build();
+        if (rewardTypeCase_ == 1) {
+          if (pokemonBuilder_ == null) {
+            result.rewardType_ = rewardType_;
+          } else {
+            result.rewardType_ = pokemonBuilder_.build();
+          }
         }
-        if (limitedPokemonRewardBuilder_ == null) {
-          result.limitedPokemonReward_ = limitedPokemonReward_;
-        } else {
-          result.limitedPokemonReward_ = limitedPokemonRewardBuilder_.build();
+        if (rewardTypeCase_ == 2) {
+          if (limitedPokemonRewardBuilder_ == null) {
+            result.rewardType_ = rewardType_;
+          } else {
+            result.rewardType_ = limitedPokemonRewardBuilder_.build();
+          }
         }
-        if (guaranteedLimitedPokemonRewardBuilder_ == null) {
-          result.guaranteedLimitedPokemonReward_ = guaranteedLimitedPokemonReward_;
-        } else {
-          result.guaranteedLimitedPokemonReward_ = guaranteedLimitedPokemonRewardBuilder_.build();
+        if (rewardTypeCase_ == 3) {
+          if (guaranteedLimitedPokemonRewardBuilder_ == null) {
+            result.rewardType_ = rewardType_;
+          } else {
+            result.rewardType_ = guaranteedLimitedPokemonRewardBuilder_.build();
+          }
         }
         result.unlockedAtRank_ = unlockedAtRank_;
         result.weight_ = weight_;
@@ -1617,6 +1785,7 @@ private static final long serialVersionUID = 0L;
         } else {
           result.staminaIvOverride_ = staminaIvOverrideBuilder_.build();
         }
+        result.rewardTypeCase_ = rewardTypeCase_;
         onBuilt();
         return result;
       }
@@ -1665,15 +1834,6 @@ private static final long serialVersionUID = 0L;
 
       public Builder mergeFrom(POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto other) {
         if (other == POGOProtos.Rpc.VsSeekerPokemonRewardsProto.PokemonUnlockProto.getDefaultInstance()) return this;
-        if (other.hasPokemon()) {
-          mergePokemon(other.getPokemon());
-        }
-        if (other.hasLimitedPokemonReward()) {
-          mergeLimitedPokemonReward(other.getLimitedPokemonReward());
-        }
-        if (other.hasGuaranteedLimitedPokemonReward()) {
-          mergeGuaranteedLimitedPokemonReward(other.getGuaranteedLimitedPokemonReward());
-        }
         if (other.getUnlockedAtRank() != 0) {
           setUnlockedAtRank(other.getUnlockedAtRank());
         }
@@ -1688,6 +1848,23 @@ private static final long serialVersionUID = 0L;
         }
         if (other.hasStaminaIvOverride()) {
           mergeStaminaIvOverride(other.getStaminaIvOverride());
+        }
+        switch (other.getRewardTypeCase()) {
+          case POKEMON: {
+            mergePokemon(other.getPokemon());
+            break;
+          }
+          case LIMITED_POKEMON_REWARD: {
+            mergeLimitedPokemonReward(other.getLimitedPokemonReward());
+            break;
+          }
+          case GUARANTEED_LIMITED_POKEMON_REWARD: {
+            mergeGuaranteedLimitedPokemonReward(other.getGuaranteedLimitedPokemonReward());
+            break;
+          }
+          case REWARDTYPE_NOT_SET: {
+            break;
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1717,8 +1894,22 @@ private static final long serialVersionUID = 0L;
         }
         return this;
       }
+      private int rewardTypeCase_ = 0;
+      private java.lang.Object rewardType_;
+      public RewardTypeCase
+          getRewardTypeCase() {
+        return RewardTypeCase.forNumber(
+            rewardTypeCase_);
+      }
 
-      private POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_;
+      public Builder clearRewardType() {
+        rewardTypeCase_ = 0;
+        rewardType_ = null;
+        onChanged();
+        return this;
+      }
+
+
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.PokemonEncounterRewardProto, POGOProtos.Rpc.PokemonEncounterRewardProto.Builder, POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder> pokemonBuilder_;
       /**
@@ -1726,7 +1917,7 @@ private static final long serialVersionUID = 0L;
        * @return Whether the pokemon field is set.
        */
       public boolean hasPokemon() {
-        return pokemonBuilder_ != null || pokemon_ != null;
+        return rewardTypeCase_ == 1;
       }
       /**
        * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon = 1;</code>
@@ -1734,9 +1925,15 @@ private static final long serialVersionUID = 0L;
        */
       public POGOProtos.Rpc.PokemonEncounterRewardProto getPokemon() {
         if (pokemonBuilder_ == null) {
-          return pokemon_ == null ? POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance() : pokemon_;
+          if (rewardTypeCase_ == 1) {
+            return (POGOProtos.Rpc.PokemonEncounterRewardProto) rewardType_;
+          }
+          return POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
         } else {
-          return pokemonBuilder_.getMessage();
+          if (rewardTypeCase_ == 1) {
+            return pokemonBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
         }
       }
       /**
@@ -1747,12 +1944,12 @@ private static final long serialVersionUID = 0L;
           if (value == null) {
             throw new NullPointerException();
           }
-          pokemon_ = value;
+          rewardType_ = value;
           onChanged();
         } else {
           pokemonBuilder_.setMessage(value);
         }
-
+        rewardTypeCase_ = 1;
         return this;
       }
       /**
@@ -1761,12 +1958,12 @@ private static final long serialVersionUID = 0L;
       public Builder setPokemon(
           POGOProtos.Rpc.PokemonEncounterRewardProto.Builder builderForValue) {
         if (pokemonBuilder_ == null) {
-          pokemon_ = builderForValue.build();
+          rewardType_ = builderForValue.build();
           onChanged();
         } else {
           pokemonBuilder_.setMessage(builderForValue.build());
         }
-
+        rewardTypeCase_ = 1;
         return this;
       }
       /**
@@ -1774,17 +1971,21 @@ private static final long serialVersionUID = 0L;
        */
       public Builder mergePokemon(POGOProtos.Rpc.PokemonEncounterRewardProto value) {
         if (pokemonBuilder_ == null) {
-          if (pokemon_ != null) {
-            pokemon_ =
-              POGOProtos.Rpc.PokemonEncounterRewardProto.newBuilder(pokemon_).mergeFrom(value).buildPartial();
+          if (rewardTypeCase_ == 1 &&
+              rewardType_ != POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance()) {
+            rewardType_ = POGOProtos.Rpc.PokemonEncounterRewardProto.newBuilder((POGOProtos.Rpc.PokemonEncounterRewardProto) rewardType_)
+                .mergeFrom(value).buildPartial();
           } else {
-            pokemon_ = value;
+            rewardType_ = value;
           }
           onChanged();
         } else {
-          pokemonBuilder_.mergeFrom(value);
+          if (rewardTypeCase_ == 1) {
+            pokemonBuilder_.mergeFrom(value);
+          }
+          pokemonBuilder_.setMessage(value);
         }
-
+        rewardTypeCase_ = 1;
         return this;
       }
       /**
@@ -1792,32 +1993,37 @@ private static final long serialVersionUID = 0L;
        */
       public Builder clearPokemon() {
         if (pokemonBuilder_ == null) {
-          pokemon_ = null;
-          onChanged();
+          if (rewardTypeCase_ == 1) {
+            rewardTypeCase_ = 0;
+            rewardType_ = null;
+            onChanged();
+          }
         } else {
-          pokemon_ = null;
-          pokemonBuilder_ = null;
+          if (rewardTypeCase_ == 1) {
+            rewardTypeCase_ = 0;
+            rewardType_ = null;
+          }
+          pokemonBuilder_.clear();
         }
-
         return this;
       }
       /**
        * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon = 1;</code>
        */
       public POGOProtos.Rpc.PokemonEncounterRewardProto.Builder getPokemonBuilder() {
-        
-        onChanged();
         return getPokemonFieldBuilder().getBuilder();
       }
       /**
        * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon = 1;</code>
        */
       public POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder getPokemonOrBuilder() {
-        if (pokemonBuilder_ != null) {
+        if ((rewardTypeCase_ == 1) && (pokemonBuilder_ != null)) {
           return pokemonBuilder_.getMessageOrBuilder();
         } else {
-          return pokemon_ == null ?
-              POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance() : pokemon_;
+          if (rewardTypeCase_ == 1) {
+            return (POGOProtos.Rpc.PokemonEncounterRewardProto) rewardType_;
+          }
+          return POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
         }
       }
       /**
@@ -1827,17 +2033,21 @@ private static final long serialVersionUID = 0L;
           POGOProtos.Rpc.PokemonEncounterRewardProto, POGOProtos.Rpc.PokemonEncounterRewardProto.Builder, POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder> 
           getPokemonFieldBuilder() {
         if (pokemonBuilder_ == null) {
+          if (!(rewardTypeCase_ == 1)) {
+            rewardType_ = POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
+          }
           pokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.PokemonEncounterRewardProto, POGOProtos.Rpc.PokemonEncounterRewardProto.Builder, POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder>(
-                  getPokemon(),
+                  (POGOProtos.Rpc.PokemonEncounterRewardProto) rewardType_,
                   getParentForChildren(),
                   isClean());
-          pokemon_ = null;
+          rewardType_ = null;
         }
+        rewardTypeCase_ = 1;
+        onChanged();;
         return pokemonBuilder_;
       }
 
-      private POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto limitedPokemonReward_;
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProtoOrBuilder> limitedPokemonRewardBuilder_;
       /**
@@ -1845,7 +2055,7 @@ private static final long serialVersionUID = 0L;
        * @return Whether the limitedPokemonReward field is set.
        */
       public boolean hasLimitedPokemonReward() {
-        return limitedPokemonRewardBuilder_ != null || limitedPokemonReward_ != null;
+        return rewardTypeCase_ == 2;
       }
       /**
        * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto limited_pokemon_reward = 2;</code>
@@ -1853,9 +2063,15 @@ private static final long serialVersionUID = 0L;
        */
       public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto getLimitedPokemonReward() {
         if (limitedPokemonRewardBuilder_ == null) {
-          return limitedPokemonReward_ == null ? POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance() : limitedPokemonReward_;
+          if (rewardTypeCase_ == 2) {
+            return (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_;
+          }
+          return POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
         } else {
-          return limitedPokemonRewardBuilder_.getMessage();
+          if (rewardTypeCase_ == 2) {
+            return limitedPokemonRewardBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
         }
       }
       /**
@@ -1866,12 +2082,12 @@ private static final long serialVersionUID = 0L;
           if (value == null) {
             throw new NullPointerException();
           }
-          limitedPokemonReward_ = value;
+          rewardType_ = value;
           onChanged();
         } else {
           limitedPokemonRewardBuilder_.setMessage(value);
         }
-
+        rewardTypeCase_ = 2;
         return this;
       }
       /**
@@ -1880,12 +2096,12 @@ private static final long serialVersionUID = 0L;
       public Builder setLimitedPokemonReward(
           POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder builderForValue) {
         if (limitedPokemonRewardBuilder_ == null) {
-          limitedPokemonReward_ = builderForValue.build();
+          rewardType_ = builderForValue.build();
           onChanged();
         } else {
           limitedPokemonRewardBuilder_.setMessage(builderForValue.build());
         }
-
+        rewardTypeCase_ = 2;
         return this;
       }
       /**
@@ -1893,17 +2109,21 @@ private static final long serialVersionUID = 0L;
        */
       public Builder mergeLimitedPokemonReward(POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto value) {
         if (limitedPokemonRewardBuilder_ == null) {
-          if (limitedPokemonReward_ != null) {
-            limitedPokemonReward_ =
-              POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.newBuilder(limitedPokemonReward_).mergeFrom(value).buildPartial();
+          if (rewardTypeCase_ == 2 &&
+              rewardType_ != POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance()) {
+            rewardType_ = POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.newBuilder((POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_)
+                .mergeFrom(value).buildPartial();
           } else {
-            limitedPokemonReward_ = value;
+            rewardType_ = value;
           }
           onChanged();
         } else {
-          limitedPokemonRewardBuilder_.mergeFrom(value);
+          if (rewardTypeCase_ == 2) {
+            limitedPokemonRewardBuilder_.mergeFrom(value);
+          }
+          limitedPokemonRewardBuilder_.setMessage(value);
         }
-
+        rewardTypeCase_ = 2;
         return this;
       }
       /**
@@ -1911,32 +2131,37 @@ private static final long serialVersionUID = 0L;
        */
       public Builder clearLimitedPokemonReward() {
         if (limitedPokemonRewardBuilder_ == null) {
-          limitedPokemonReward_ = null;
-          onChanged();
+          if (rewardTypeCase_ == 2) {
+            rewardTypeCase_ = 0;
+            rewardType_ = null;
+            onChanged();
+          }
         } else {
-          limitedPokemonReward_ = null;
-          limitedPokemonRewardBuilder_ = null;
+          if (rewardTypeCase_ == 2) {
+            rewardTypeCase_ = 0;
+            rewardType_ = null;
+          }
+          limitedPokemonRewardBuilder_.clear();
         }
-
         return this;
       }
       /**
        * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto limited_pokemon_reward = 2;</code>
        */
       public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder getLimitedPokemonRewardBuilder() {
-        
-        onChanged();
         return getLimitedPokemonRewardFieldBuilder().getBuilder();
       }
       /**
        * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto limited_pokemon_reward = 2;</code>
        */
       public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProtoOrBuilder getLimitedPokemonRewardOrBuilder() {
-        if (limitedPokemonRewardBuilder_ != null) {
+        if ((rewardTypeCase_ == 2) && (limitedPokemonRewardBuilder_ != null)) {
           return limitedPokemonRewardBuilder_.getMessageOrBuilder();
         } else {
-          return limitedPokemonReward_ == null ?
-              POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance() : limitedPokemonReward_;
+          if (rewardTypeCase_ == 2) {
+            return (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_;
+          }
+          return POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
         }
       }
       /**
@@ -1946,17 +2171,21 @@ private static final long serialVersionUID = 0L;
           POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProtoOrBuilder> 
           getLimitedPokemonRewardFieldBuilder() {
         if (limitedPokemonRewardBuilder_ == null) {
+          if (!(rewardTypeCase_ == 2)) {
+            rewardType_ = POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
+          }
           limitedPokemonRewardBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProtoOrBuilder>(
-                  getLimitedPokemonReward(),
+                  (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_,
                   getParentForChildren(),
                   isClean());
-          limitedPokemonReward_ = null;
+          rewardType_ = null;
         }
+        rewardTypeCase_ = 2;
+        onChanged();;
         return limitedPokemonRewardBuilder_;
       }
 
-      private POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto guaranteedLimitedPokemonReward_;
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProtoOrBuilder> guaranteedLimitedPokemonRewardBuilder_;
       /**
@@ -1964,7 +2193,7 @@ private static final long serialVersionUID = 0L;
        * @return Whether the guaranteedLimitedPokemonReward field is set.
        */
       public boolean hasGuaranteedLimitedPokemonReward() {
-        return guaranteedLimitedPokemonRewardBuilder_ != null || guaranteedLimitedPokemonReward_ != null;
+        return rewardTypeCase_ == 3;
       }
       /**
        * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto guaranteed_limited_pokemon_reward = 3;</code>
@@ -1972,9 +2201,15 @@ private static final long serialVersionUID = 0L;
        */
       public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto getGuaranteedLimitedPokemonReward() {
         if (guaranteedLimitedPokemonRewardBuilder_ == null) {
-          return guaranteedLimitedPokemonReward_ == null ? POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance() : guaranteedLimitedPokemonReward_;
+          if (rewardTypeCase_ == 3) {
+            return (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_;
+          }
+          return POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
         } else {
-          return guaranteedLimitedPokemonRewardBuilder_.getMessage();
+          if (rewardTypeCase_ == 3) {
+            return guaranteedLimitedPokemonRewardBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
         }
       }
       /**
@@ -1985,12 +2220,12 @@ private static final long serialVersionUID = 0L;
           if (value == null) {
             throw new NullPointerException();
           }
-          guaranteedLimitedPokemonReward_ = value;
+          rewardType_ = value;
           onChanged();
         } else {
           guaranteedLimitedPokemonRewardBuilder_.setMessage(value);
         }
-
+        rewardTypeCase_ = 3;
         return this;
       }
       /**
@@ -1999,12 +2234,12 @@ private static final long serialVersionUID = 0L;
       public Builder setGuaranteedLimitedPokemonReward(
           POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder builderForValue) {
         if (guaranteedLimitedPokemonRewardBuilder_ == null) {
-          guaranteedLimitedPokemonReward_ = builderForValue.build();
+          rewardType_ = builderForValue.build();
           onChanged();
         } else {
           guaranteedLimitedPokemonRewardBuilder_.setMessage(builderForValue.build());
         }
-
+        rewardTypeCase_ = 3;
         return this;
       }
       /**
@@ -2012,17 +2247,21 @@ private static final long serialVersionUID = 0L;
        */
       public Builder mergeGuaranteedLimitedPokemonReward(POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto value) {
         if (guaranteedLimitedPokemonRewardBuilder_ == null) {
-          if (guaranteedLimitedPokemonReward_ != null) {
-            guaranteedLimitedPokemonReward_ =
-              POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.newBuilder(guaranteedLimitedPokemonReward_).mergeFrom(value).buildPartial();
+          if (rewardTypeCase_ == 3 &&
+              rewardType_ != POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance()) {
+            rewardType_ = POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.newBuilder((POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_)
+                .mergeFrom(value).buildPartial();
           } else {
-            guaranteedLimitedPokemonReward_ = value;
+            rewardType_ = value;
           }
           onChanged();
         } else {
-          guaranteedLimitedPokemonRewardBuilder_.mergeFrom(value);
+          if (rewardTypeCase_ == 3) {
+            guaranteedLimitedPokemonRewardBuilder_.mergeFrom(value);
+          }
+          guaranteedLimitedPokemonRewardBuilder_.setMessage(value);
         }
-
+        rewardTypeCase_ = 3;
         return this;
       }
       /**
@@ -2030,32 +2269,37 @@ private static final long serialVersionUID = 0L;
        */
       public Builder clearGuaranteedLimitedPokemonReward() {
         if (guaranteedLimitedPokemonRewardBuilder_ == null) {
-          guaranteedLimitedPokemonReward_ = null;
-          onChanged();
+          if (rewardTypeCase_ == 3) {
+            rewardTypeCase_ = 0;
+            rewardType_ = null;
+            onChanged();
+          }
         } else {
-          guaranteedLimitedPokemonReward_ = null;
-          guaranteedLimitedPokemonRewardBuilder_ = null;
+          if (rewardTypeCase_ == 3) {
+            rewardTypeCase_ = 0;
+            rewardType_ = null;
+          }
+          guaranteedLimitedPokemonRewardBuilder_.clear();
         }
-
         return this;
       }
       /**
        * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto guaranteed_limited_pokemon_reward = 3;</code>
        */
       public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder getGuaranteedLimitedPokemonRewardBuilder() {
-        
-        onChanged();
         return getGuaranteedLimitedPokemonRewardFieldBuilder().getBuilder();
       }
       /**
        * <code>.POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto guaranteed_limited_pokemon_reward = 3;</code>
        */
       public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProtoOrBuilder getGuaranteedLimitedPokemonRewardOrBuilder() {
-        if (guaranteedLimitedPokemonRewardBuilder_ != null) {
+        if ((rewardTypeCase_ == 3) && (guaranteedLimitedPokemonRewardBuilder_ != null)) {
           return guaranteedLimitedPokemonRewardBuilder_.getMessageOrBuilder();
         } else {
-          return guaranteedLimitedPokemonReward_ == null ?
-              POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance() : guaranteedLimitedPokemonReward_;
+          if (rewardTypeCase_ == 3) {
+            return (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_;
+          }
+          return POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
         }
       }
       /**
@@ -2065,13 +2309,18 @@ private static final long serialVersionUID = 0L;
           POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProtoOrBuilder> 
           getGuaranteedLimitedPokemonRewardFieldBuilder() {
         if (guaranteedLimitedPokemonRewardBuilder_ == null) {
+          if (!(rewardTypeCase_ == 3)) {
+            rewardType_ = POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.getDefaultInstance();
+          }
           guaranteedLimitedPokemonRewardBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProtoOrBuilder>(
-                  getGuaranteedLimitedPokemonReward(),
+                  (POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto) rewardType_,
                   getParentForChildren(),
                   isClean());
-          guaranteedLimitedPokemonReward_ = null;
+          rewardType_ = null;
         }
+        rewardTypeCase_ = 3;
+        onChanged();;
         return guaranteedLimitedPokemonRewardBuilder_;
       }
 

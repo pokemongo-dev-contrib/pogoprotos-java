@@ -96,4 +96,36 @@ public interface TodayViewSectionProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.TimedQuestSectionProto timed_quest = 6;</code>
    */
   POGOProtos.Rpc.TimedQuestSectionProtoOrBuilder getTimedQuestOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+   * @return Whether the eventBanner field is set.
+   */
+  boolean hasEventBanner();
+  /**
+   * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+   * @return The eventBanner.
+   */
+  POGOProtos.Rpc.EventBannerSectionProto getEventBanner();
+  /**
+   * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+   */
+  POGOProtos.Rpc.EventBannerSectionProtoOrBuilder getEventBannerOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+   * @return Whether the timedGroupChallenge field is set.
+   */
+  boolean hasTimedGroupChallenge();
+  /**
+   * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+   * @return The timedGroupChallenge.
+   */
+  POGOProtos.Rpc.TimedGroupChallengeSectionProto getTimedGroupChallenge();
+  /**
+   * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+   */
+  POGOProtos.Rpc.TimedGroupChallengeSectionProtoOrBuilder getTimedGroupChallengeOrBuilder();
+
+  public POGOProtos.Rpc.TodayViewSectionProto.SectionCase getSectionCase();
 }

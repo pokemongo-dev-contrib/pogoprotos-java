@@ -991,6 +991,32 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
+          case 698: {
+            POGOProtos.Rpc.MapDisplaySettingsProto.Builder subBuilder = null;
+            if (mapDisplaySettings_ != null) {
+              subBuilder = mapDisplaySettings_.toBuilder();
+            }
+            mapDisplaySettings_ = input.readMessage(POGOProtos.Rpc.MapDisplaySettingsProto.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(mapDisplaySettings_);
+              mapDisplaySettings_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
+          case 722: {
+            POGOProtos.Rpc.ArTelemetrySettingsProto.Builder subBuilder = null;
+            if (arTelemetrySettings_ != null) {
+              subBuilder = arTelemetrySettings_.toBuilder();
+            }
+            arTelemetrySettings_ = input.readMessage(POGOProtos.Rpc.ArTelemetrySettingsProto.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(arTelemetrySettings_);
+              arTelemetrySettings_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -2715,6 +2741,52 @@ private static final long serialVersionUID = 0L;
     return getCrossGameSocialSettings();
   }
 
+  public static final int MAP_DISPLAY_SETTINGS_FIELD_NUMBER = 87;
+  private POGOProtos.Rpc.MapDisplaySettingsProto mapDisplaySettings_;
+  /**
+   * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+   * @return Whether the mapDisplaySettings field is set.
+   */
+  public boolean hasMapDisplaySettings() {
+    return mapDisplaySettings_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+   * @return The mapDisplaySettings.
+   */
+  public POGOProtos.Rpc.MapDisplaySettingsProto getMapDisplaySettings() {
+    return mapDisplaySettings_ == null ? POGOProtos.Rpc.MapDisplaySettingsProto.getDefaultInstance() : mapDisplaySettings_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+   */
+  public POGOProtos.Rpc.MapDisplaySettingsProtoOrBuilder getMapDisplaySettingsOrBuilder() {
+    return getMapDisplaySettings();
+  }
+
+  public static final int AR_TELEMETRY_SETTINGS_FIELD_NUMBER = 90;
+  private POGOProtos.Rpc.ArTelemetrySettingsProto arTelemetrySettings_;
+  /**
+   * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+   * @return Whether the arTelemetrySettings field is set.
+   */
+  public boolean hasArTelemetrySettings() {
+    return arTelemetrySettings_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+   * @return The arTelemetrySettings.
+   */
+  public POGOProtos.Rpc.ArTelemetrySettingsProto getArTelemetrySettings() {
+    return arTelemetrySettings_ == null ? POGOProtos.Rpc.ArTelemetrySettingsProto.getDefaultInstance() : arTelemetrySettings_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+   */
+  public POGOProtos.Rpc.ArTelemetrySettingsProtoOrBuilder getArTelemetrySettingsOrBuilder() {
+    return getArTelemetrySettings();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -2947,6 +3019,12 @@ private static final long serialVersionUID = 0L;
     }
     if (crossGameSocialSettings_ != null) {
       output.writeMessage(86, getCrossGameSocialSettings());
+    }
+    if (mapDisplaySettings_ != null) {
+      output.writeMessage(87, getMapDisplaySettings());
+    }
+    if (arTelemetrySettings_ != null) {
+      output.writeMessage(90, getArTelemetrySettings());
     }
     unknownFields.writeTo(output);
   }
@@ -3247,6 +3325,14 @@ private static final long serialVersionUID = 0L;
     if (crossGameSocialSettings_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(86, getCrossGameSocialSettings());
+    }
+    if (mapDisplaySettings_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(87, getMapDisplaySettings());
+    }
+    if (arTelemetrySettings_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(90, getArTelemetrySettings());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -3625,6 +3711,16 @@ private static final long serialVersionUID = 0L;
       if (!getCrossGameSocialSettings()
           .equals(other.getCrossGameSocialSettings())) return false;
     }
+    if (hasMapDisplaySettings() != other.hasMapDisplaySettings()) return false;
+    if (hasMapDisplaySettings()) {
+      if (!getMapDisplaySettings()
+          .equals(other.getMapDisplaySettings())) return false;
+    }
+    if (hasArTelemetrySettings() != other.hasArTelemetrySettings()) return false;
+    if (hasArTelemetrySettings()) {
+      if (!getArTelemetrySettings()
+          .equals(other.getArTelemetrySettings())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -3925,6 +4021,14 @@ private static final long serialVersionUID = 0L;
     if (hasCrossGameSocialSettings()) {
       hash = (37 * hash) + CROSS_GAME_SOCIAL_SETTINGS_FIELD_NUMBER;
       hash = (53 * hash) + getCrossGameSocialSettings().hashCode();
+    }
+    if (hasMapDisplaySettings()) {
+      hash = (37 * hash) + MAP_DISPLAY_SETTINGS_FIELD_NUMBER;
+      hash = (53 * hash) + getMapDisplaySettings().hashCode();
+    }
+    if (hasArTelemetrySettings()) {
+      hash = (37 * hash) + AR_TELEMETRY_SETTINGS_FIELD_NUMBER;
+      hash = (53 * hash) + getArTelemetrySettings().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -4493,6 +4597,18 @@ private static final long serialVersionUID = 0L;
         crossGameSocialSettings_ = null;
         crossGameSocialSettingsBuilder_ = null;
       }
+      if (mapDisplaySettingsBuilder_ == null) {
+        mapDisplaySettings_ = null;
+      } else {
+        mapDisplaySettings_ = null;
+        mapDisplaySettingsBuilder_ = null;
+      }
+      if (arTelemetrySettingsBuilder_ == null) {
+        arTelemetrySettings_ = null;
+      } else {
+        arTelemetrySettings_ = null;
+        arTelemetrySettingsBuilder_ = null;
+      }
       return this;
     }
 
@@ -4880,6 +4996,16 @@ private static final long serialVersionUID = 0L;
       } else {
         result.crossGameSocialSettings_ = crossGameSocialSettingsBuilder_.build();
       }
+      if (mapDisplaySettingsBuilder_ == null) {
+        result.mapDisplaySettings_ = mapDisplaySettings_;
+      } else {
+        result.mapDisplaySettings_ = mapDisplaySettingsBuilder_.build();
+      }
+      if (arTelemetrySettingsBuilder_ == null) {
+        result.arTelemetrySettings_ = arTelemetrySettings_;
+      } else {
+        result.arTelemetrySettings_ = arTelemetrySettingsBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -5147,6 +5273,12 @@ private static final long serialVersionUID = 0L;
       }
       if (other.hasCrossGameSocialSettings()) {
         mergeCrossGameSocialSettings(other.getCrossGameSocialSettings());
+      }
+      if (other.hasMapDisplaySettings()) {
+        mergeMapDisplaySettings(other.getMapDisplaySettings());
+      }
+      if (other.hasArTelemetrySettings()) {
+        mergeArTelemetrySettings(other.getArTelemetrySettings());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -13819,6 +13951,244 @@ private static final long serialVersionUID = 0L;
         crossGameSocialSettings_ = null;
       }
       return crossGameSocialSettingsBuilder_;
+    }
+
+    private POGOProtos.Rpc.MapDisplaySettingsProto mapDisplaySettings_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.MapDisplaySettingsProto, POGOProtos.Rpc.MapDisplaySettingsProto.Builder, POGOProtos.Rpc.MapDisplaySettingsProtoOrBuilder> mapDisplaySettingsBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+     * @return Whether the mapDisplaySettings field is set.
+     */
+    public boolean hasMapDisplaySettings() {
+      return mapDisplaySettingsBuilder_ != null || mapDisplaySettings_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+     * @return The mapDisplaySettings.
+     */
+    public POGOProtos.Rpc.MapDisplaySettingsProto getMapDisplaySettings() {
+      if (mapDisplaySettingsBuilder_ == null) {
+        return mapDisplaySettings_ == null ? POGOProtos.Rpc.MapDisplaySettingsProto.getDefaultInstance() : mapDisplaySettings_;
+      } else {
+        return mapDisplaySettingsBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+     */
+    public Builder setMapDisplaySettings(POGOProtos.Rpc.MapDisplaySettingsProto value) {
+      if (mapDisplaySettingsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        mapDisplaySettings_ = value;
+        onChanged();
+      } else {
+        mapDisplaySettingsBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+     */
+    public Builder setMapDisplaySettings(
+        POGOProtos.Rpc.MapDisplaySettingsProto.Builder builderForValue) {
+      if (mapDisplaySettingsBuilder_ == null) {
+        mapDisplaySettings_ = builderForValue.build();
+        onChanged();
+      } else {
+        mapDisplaySettingsBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+     */
+    public Builder mergeMapDisplaySettings(POGOProtos.Rpc.MapDisplaySettingsProto value) {
+      if (mapDisplaySettingsBuilder_ == null) {
+        if (mapDisplaySettings_ != null) {
+          mapDisplaySettings_ =
+            POGOProtos.Rpc.MapDisplaySettingsProto.newBuilder(mapDisplaySettings_).mergeFrom(value).buildPartial();
+        } else {
+          mapDisplaySettings_ = value;
+        }
+        onChanged();
+      } else {
+        mapDisplaySettingsBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+     */
+    public Builder clearMapDisplaySettings() {
+      if (mapDisplaySettingsBuilder_ == null) {
+        mapDisplaySettings_ = null;
+        onChanged();
+      } else {
+        mapDisplaySettings_ = null;
+        mapDisplaySettingsBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+     */
+    public POGOProtos.Rpc.MapDisplaySettingsProto.Builder getMapDisplaySettingsBuilder() {
+      
+      onChanged();
+      return getMapDisplaySettingsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+     */
+    public POGOProtos.Rpc.MapDisplaySettingsProtoOrBuilder getMapDisplaySettingsOrBuilder() {
+      if (mapDisplaySettingsBuilder_ != null) {
+        return mapDisplaySettingsBuilder_.getMessageOrBuilder();
+      } else {
+        return mapDisplaySettings_ == null ?
+            POGOProtos.Rpc.MapDisplaySettingsProto.getDefaultInstance() : mapDisplaySettings_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.MapDisplaySettingsProto, POGOProtos.Rpc.MapDisplaySettingsProto.Builder, POGOProtos.Rpc.MapDisplaySettingsProtoOrBuilder> 
+        getMapDisplaySettingsFieldBuilder() {
+      if (mapDisplaySettingsBuilder_ == null) {
+        mapDisplaySettingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.MapDisplaySettingsProto, POGOProtos.Rpc.MapDisplaySettingsProto.Builder, POGOProtos.Rpc.MapDisplaySettingsProtoOrBuilder>(
+                getMapDisplaySettings(),
+                getParentForChildren(),
+                isClean());
+        mapDisplaySettings_ = null;
+      }
+      return mapDisplaySettingsBuilder_;
+    }
+
+    private POGOProtos.Rpc.ArTelemetrySettingsProto arTelemetrySettings_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ArTelemetrySettingsProto, POGOProtos.Rpc.ArTelemetrySettingsProto.Builder, POGOProtos.Rpc.ArTelemetrySettingsProtoOrBuilder> arTelemetrySettingsBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+     * @return Whether the arTelemetrySettings field is set.
+     */
+    public boolean hasArTelemetrySettings() {
+      return arTelemetrySettingsBuilder_ != null || arTelemetrySettings_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+     * @return The arTelemetrySettings.
+     */
+    public POGOProtos.Rpc.ArTelemetrySettingsProto getArTelemetrySettings() {
+      if (arTelemetrySettingsBuilder_ == null) {
+        return arTelemetrySettings_ == null ? POGOProtos.Rpc.ArTelemetrySettingsProto.getDefaultInstance() : arTelemetrySettings_;
+      } else {
+        return arTelemetrySettingsBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+     */
+    public Builder setArTelemetrySettings(POGOProtos.Rpc.ArTelemetrySettingsProto value) {
+      if (arTelemetrySettingsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        arTelemetrySettings_ = value;
+        onChanged();
+      } else {
+        arTelemetrySettingsBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+     */
+    public Builder setArTelemetrySettings(
+        POGOProtos.Rpc.ArTelemetrySettingsProto.Builder builderForValue) {
+      if (arTelemetrySettingsBuilder_ == null) {
+        arTelemetrySettings_ = builderForValue.build();
+        onChanged();
+      } else {
+        arTelemetrySettingsBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+     */
+    public Builder mergeArTelemetrySettings(POGOProtos.Rpc.ArTelemetrySettingsProto value) {
+      if (arTelemetrySettingsBuilder_ == null) {
+        if (arTelemetrySettings_ != null) {
+          arTelemetrySettings_ =
+            POGOProtos.Rpc.ArTelemetrySettingsProto.newBuilder(arTelemetrySettings_).mergeFrom(value).buildPartial();
+        } else {
+          arTelemetrySettings_ = value;
+        }
+        onChanged();
+      } else {
+        arTelemetrySettingsBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+     */
+    public Builder clearArTelemetrySettings() {
+      if (arTelemetrySettingsBuilder_ == null) {
+        arTelemetrySettings_ = null;
+        onChanged();
+      } else {
+        arTelemetrySettings_ = null;
+        arTelemetrySettingsBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+     */
+    public POGOProtos.Rpc.ArTelemetrySettingsProto.Builder getArTelemetrySettingsBuilder() {
+      
+      onChanged();
+      return getArTelemetrySettingsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+     */
+    public POGOProtos.Rpc.ArTelemetrySettingsProtoOrBuilder getArTelemetrySettingsOrBuilder() {
+      if (arTelemetrySettingsBuilder_ != null) {
+        return arTelemetrySettingsBuilder_.getMessageOrBuilder();
+      } else {
+        return arTelemetrySettings_ == null ?
+            POGOProtos.Rpc.ArTelemetrySettingsProto.getDefaultInstance() : arTelemetrySettings_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ArTelemetrySettingsProto, POGOProtos.Rpc.ArTelemetrySettingsProto.Builder, POGOProtos.Rpc.ArTelemetrySettingsProtoOrBuilder> 
+        getArTelemetrySettingsFieldBuilder() {
+      if (arTelemetrySettingsBuilder_ == null) {
+        arTelemetrySettingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.ArTelemetrySettingsProto, POGOProtos.Rpc.ArTelemetrySettingsProto.Builder, POGOProtos.Rpc.ArTelemetrySettingsProtoOrBuilder>(
+                getArTelemetrySettings(),
+                getParentForChildren(),
+                isClean());
+        arTelemetrySettings_ = null;
+      }
+      return arTelemetrySettingsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

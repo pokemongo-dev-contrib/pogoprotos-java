@@ -72,6 +72,14 @@ public enum SouvenirTypeId
    * <code>SOUVENIR_PRETTY_LEAF = 15;</code>
    */
   SOUVENIR_PRETTY_LEAF(15),
+  /**
+   * <code>SOUVENIR_CONFETTI = 16;</code>
+   */
+  SOUVENIR_CONFETTI(16),
+  /**
+   * <code>SOUVENIR_PIKACHU_VISOR = 17;</code>
+   */
+  SOUVENIR_PIKACHU_VISOR(17),
   UNRECOGNIZED(-1),
   ;
 
@@ -139,6 +147,14 @@ public enum SouvenirTypeId
    * <code>SOUVENIR_PRETTY_LEAF = 15;</code>
    */
   public static final int SOUVENIR_PRETTY_LEAF_VALUE = 15;
+  /**
+   * <code>SOUVENIR_CONFETTI = 16;</code>
+   */
+  public static final int SOUVENIR_CONFETTI_VALUE = 16;
+  /**
+   * <code>SOUVENIR_PIKACHU_VISOR = 17;</code>
+   */
+  public static final int SOUVENIR_PIKACHU_VISOR_VALUE = 17;
 
 
   public final int getNumber() {
@@ -181,6 +197,8 @@ public enum SouvenirTypeId
       case 13: return SOUVENIR_MARBLE;
       case 14: return SOUVENIR_TORN_TICKET;
       case 15: return SOUVENIR_PRETTY_LEAF;
+      case 16: return SOUVENIR_CONFETTI;
+      case 17: return SOUVENIR_PIKACHU_VISOR;
       default: return null;
     }
   }

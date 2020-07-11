@@ -17,8 +17,6 @@ private static final long serialVersionUID = 0L;
   }
   private QuestRewardProto() {
     type_ = 0;
-    avatarTemplateId_ = "";
-    questTemplateId_ = "";
   }
 
   @java.lang.Override
@@ -58,82 +56,86 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 16: {
-
-            exp_ = input.readInt32();
+            rewardCase_ = 2;
+            reward_ = input.readInt32();
             break;
           }
           case 26: {
             POGOProtos.Rpc.ItemRewardProto.Builder subBuilder = null;
-            if (item_ != null) {
-              subBuilder = item_.toBuilder();
+            if (rewardCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.ItemRewardProto) reward_).toBuilder();
             }
-            item_ = input.readMessage(POGOProtos.Rpc.ItemRewardProto.parser(), extensionRegistry);
+            reward_ =
+                input.readMessage(POGOProtos.Rpc.ItemRewardProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(item_);
-              item_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ItemRewardProto) reward_);
+              reward_ = subBuilder.buildPartial();
             }
-
+            rewardCase_ = 3;
             break;
           }
           case 32: {
-
-            stardust_ = input.readInt32();
+            rewardCase_ = 4;
+            reward_ = input.readInt32();
             break;
           }
           case 42: {
             POGOProtos.Rpc.PokemonCandyRewardProto.Builder subBuilder = null;
-            if (candy_ != null) {
-              subBuilder = candy_.toBuilder();
+            if (rewardCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.PokemonCandyRewardProto) reward_).toBuilder();
             }
-            candy_ = input.readMessage(POGOProtos.Rpc.PokemonCandyRewardProto.parser(), extensionRegistry);
+            reward_ =
+                input.readMessage(POGOProtos.Rpc.PokemonCandyRewardProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(candy_);
-              candy_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PokemonCandyRewardProto) reward_);
+              reward_ = subBuilder.buildPartial();
             }
-
+            rewardCase_ = 5;
             break;
           }
           case 50: {
             java.lang.String s = input.readStringRequireUtf8();
-
-            avatarTemplateId_ = s;
+            rewardCase_ = 6;
+            reward_ = s;
             break;
           }
           case 58: {
             java.lang.String s = input.readStringRequireUtf8();
-
-            questTemplateId_ = s;
+            rewardCase_ = 7;
+            reward_ = s;
             break;
           }
           case 66: {
             POGOProtos.Rpc.PokemonEncounterRewardProto.Builder subBuilder = null;
-            if (pokemonEncounter_ != null) {
-              subBuilder = pokemonEncounter_.toBuilder();
+            if (rewardCase_ == 8) {
+              subBuilder = ((POGOProtos.Rpc.PokemonEncounterRewardProto) reward_).toBuilder();
             }
-            pokemonEncounter_ = input.readMessage(POGOProtos.Rpc.PokemonEncounterRewardProto.parser(), extensionRegistry);
+            reward_ =
+                input.readMessage(POGOProtos.Rpc.PokemonEncounterRewardProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(pokemonEncounter_);
-              pokemonEncounter_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PokemonEncounterRewardProto) reward_);
+              reward_ = subBuilder.buildPartial();
             }
-
+            rewardCase_ = 8;
             break;
           }
           case 72: {
-
-            pokecoin_ = input.readInt32();
+            rewardCase_ = 9;
+            reward_ = input.readInt32();
             break;
           }
           case 98: {
             POGOProtos.Rpc.StickerRewardProto.Builder subBuilder = null;
-            if (sticker_ != null) {
-              subBuilder = sticker_.toBuilder();
+            if (rewardCase_ == 12) {
+              subBuilder = ((POGOProtos.Rpc.StickerRewardProto) reward_).toBuilder();
             }
-            sticker_ = input.readMessage(POGOProtos.Rpc.StickerRewardProto.parser(), extensionRegistry);
+            reward_ =
+                input.readMessage(POGOProtos.Rpc.StickerRewardProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(sticker_);
-              sticker_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.StickerRewardProto) reward_);
+              reward_ = subBuilder.buildPartial();
             }
-
+            rewardCase_ = 12;
             break;
           }
           default: {
@@ -344,6 +346,299 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.QuestRewardProto.Type)
   }
 
+  private int rewardCase_ = 0;
+  private java.lang.Object reward_;
+  public enum RewardCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    EXP(2),
+    ITEM(3),
+    STARDUST(4),
+    CANDY(5),
+    AVATAR_TEMPLATE_ID(6),
+    QUEST_TEMPLATE_ID(7),
+    POKEMON_ENCOUNTER(8),
+    POKECOIN(9),
+    STICKER(12),
+    REWARD_NOT_SET(0);
+    private final int value;
+    private RewardCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static RewardCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static RewardCase forNumber(int value) {
+      switch (value) {
+        case 2: return EXP;
+        case 3: return ITEM;
+        case 4: return STARDUST;
+        case 5: return CANDY;
+        case 6: return AVATAR_TEMPLATE_ID;
+        case 7: return QUEST_TEMPLATE_ID;
+        case 8: return POKEMON_ENCOUNTER;
+        case 9: return POKECOIN;
+        case 12: return STICKER;
+        case 0: return REWARD_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public RewardCase
+  getRewardCase() {
+    return RewardCase.forNumber(
+        rewardCase_);
+  }
+
+  public static final int EXP_FIELD_NUMBER = 2;
+  /**
+   * <code>int32 exp = 2;</code>
+   * @return The exp.
+   */
+  public int getExp() {
+    if (rewardCase_ == 2) {
+      return (java.lang.Integer) reward_;
+    }
+    return 0;
+  }
+
+  public static final int ITEM_FIELD_NUMBER = 3;
+  /**
+   * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+   * @return Whether the item field is set.
+   */
+  public boolean hasItem() {
+    return rewardCase_ == 3;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+   * @return The item.
+   */
+  public POGOProtos.Rpc.ItemRewardProto getItem() {
+    if (rewardCase_ == 3) {
+       return (POGOProtos.Rpc.ItemRewardProto) reward_;
+    }
+    return POGOProtos.Rpc.ItemRewardProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+   */
+  public POGOProtos.Rpc.ItemRewardProtoOrBuilder getItemOrBuilder() {
+    if (rewardCase_ == 3) {
+       return (POGOProtos.Rpc.ItemRewardProto) reward_;
+    }
+    return POGOProtos.Rpc.ItemRewardProto.getDefaultInstance();
+  }
+
+  public static final int STARDUST_FIELD_NUMBER = 4;
+  /**
+   * <code>int32 stardust = 4;</code>
+   * @return The stardust.
+   */
+  public int getStardust() {
+    if (rewardCase_ == 4) {
+      return (java.lang.Integer) reward_;
+    }
+    return 0;
+  }
+
+  public static final int CANDY_FIELD_NUMBER = 5;
+  /**
+   * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+   * @return Whether the candy field is set.
+   */
+  public boolean hasCandy() {
+    return rewardCase_ == 5;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+   * @return The candy.
+   */
+  public POGOProtos.Rpc.PokemonCandyRewardProto getCandy() {
+    if (rewardCase_ == 5) {
+       return (POGOProtos.Rpc.PokemonCandyRewardProto) reward_;
+    }
+    return POGOProtos.Rpc.PokemonCandyRewardProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+   */
+  public POGOProtos.Rpc.PokemonCandyRewardProtoOrBuilder getCandyOrBuilder() {
+    if (rewardCase_ == 5) {
+       return (POGOProtos.Rpc.PokemonCandyRewardProto) reward_;
+    }
+    return POGOProtos.Rpc.PokemonCandyRewardProto.getDefaultInstance();
+  }
+
+  public static final int AVATAR_TEMPLATE_ID_FIELD_NUMBER = 6;
+  /**
+   * <code>string avatar_template_id = 6;</code>
+   * @return The avatarTemplateId.
+   */
+  public java.lang.String getAvatarTemplateId() {
+    java.lang.Object ref = "";
+    if (rewardCase_ == 6) {
+      ref = reward_;
+    }
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      if (rewardCase_ == 6) {
+        reward_ = s;
+      }
+      return s;
+    }
+  }
+  /**
+   * <code>string avatar_template_id = 6;</code>
+   * @return The bytes for avatarTemplateId.
+   */
+  public com.google.protobuf.ByteString
+      getAvatarTemplateIdBytes() {
+    java.lang.Object ref = "";
+    if (rewardCase_ == 6) {
+      ref = reward_;
+    }
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      if (rewardCase_ == 6) {
+        reward_ = b;
+      }
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int QUEST_TEMPLATE_ID_FIELD_NUMBER = 7;
+  /**
+   * <code>string quest_template_id = 7;</code>
+   * @return The questTemplateId.
+   */
+  public java.lang.String getQuestTemplateId() {
+    java.lang.Object ref = "";
+    if (rewardCase_ == 7) {
+      ref = reward_;
+    }
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      if (rewardCase_ == 7) {
+        reward_ = s;
+      }
+      return s;
+    }
+  }
+  /**
+   * <code>string quest_template_id = 7;</code>
+   * @return The bytes for questTemplateId.
+   */
+  public com.google.protobuf.ByteString
+      getQuestTemplateIdBytes() {
+    java.lang.Object ref = "";
+    if (rewardCase_ == 7) {
+      ref = reward_;
+    }
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      if (rewardCase_ == 7) {
+        reward_ = b;
+      }
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int POKEMON_ENCOUNTER_FIELD_NUMBER = 8;
+  /**
+   * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+   * @return Whether the pokemonEncounter field is set.
+   */
+  public boolean hasPokemonEncounter() {
+    return rewardCase_ == 8;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+   * @return The pokemonEncounter.
+   */
+  public POGOProtos.Rpc.PokemonEncounterRewardProto getPokemonEncounter() {
+    if (rewardCase_ == 8) {
+       return (POGOProtos.Rpc.PokemonEncounterRewardProto) reward_;
+    }
+    return POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+   */
+  public POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder getPokemonEncounterOrBuilder() {
+    if (rewardCase_ == 8) {
+       return (POGOProtos.Rpc.PokemonEncounterRewardProto) reward_;
+    }
+    return POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
+  }
+
+  public static final int POKECOIN_FIELD_NUMBER = 9;
+  /**
+   * <code>int32 pokecoin = 9;</code>
+   * @return The pokecoin.
+   */
+  public int getPokecoin() {
+    if (rewardCase_ == 9) {
+      return (java.lang.Integer) reward_;
+    }
+    return 0;
+  }
+
+  public static final int STICKER_FIELD_NUMBER = 12;
+  /**
+   * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+   * @return Whether the sticker field is set.
+   */
+  public boolean hasSticker() {
+    return rewardCase_ == 12;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+   * @return The sticker.
+   */
+  public POGOProtos.Rpc.StickerRewardProto getSticker() {
+    if (rewardCase_ == 12) {
+       return (POGOProtos.Rpc.StickerRewardProto) reward_;
+    }
+    return POGOProtos.Rpc.StickerRewardProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+   */
+  public POGOProtos.Rpc.StickerRewardProtoOrBuilder getStickerOrBuilder() {
+    if (rewardCase_ == 12) {
+       return (POGOProtos.Rpc.StickerRewardProto) reward_;
+    }
+    return POGOProtos.Rpc.StickerRewardProto.getDefaultInstance();
+  }
+
   public static final int TYPE_FIELD_NUMBER = 1;
   private int type_;
   /**
@@ -363,200 +658,6 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.QuestRewardProto.Type.UNRECOGNIZED : result;
   }
 
-  public static final int EXP_FIELD_NUMBER = 2;
-  private int exp_;
-  /**
-   * <code>int32 exp = 2;</code>
-   * @return The exp.
-   */
-  public int getExp() {
-    return exp_;
-  }
-
-  public static final int ITEM_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.ItemRewardProto item_;
-  /**
-   * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-   * @return Whether the item field is set.
-   */
-  public boolean hasItem() {
-    return item_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-   * @return The item.
-   */
-  public POGOProtos.Rpc.ItemRewardProto getItem() {
-    return item_ == null ? POGOProtos.Rpc.ItemRewardProto.getDefaultInstance() : item_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-   */
-  public POGOProtos.Rpc.ItemRewardProtoOrBuilder getItemOrBuilder() {
-    return getItem();
-  }
-
-  public static final int STARDUST_FIELD_NUMBER = 4;
-  private int stardust_;
-  /**
-   * <code>int32 stardust = 4;</code>
-   * @return The stardust.
-   */
-  public int getStardust() {
-    return stardust_;
-  }
-
-  public static final int CANDY_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.PokemonCandyRewardProto candy_;
-  /**
-   * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-   * @return Whether the candy field is set.
-   */
-  public boolean hasCandy() {
-    return candy_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-   * @return The candy.
-   */
-  public POGOProtos.Rpc.PokemonCandyRewardProto getCandy() {
-    return candy_ == null ? POGOProtos.Rpc.PokemonCandyRewardProto.getDefaultInstance() : candy_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-   */
-  public POGOProtos.Rpc.PokemonCandyRewardProtoOrBuilder getCandyOrBuilder() {
-    return getCandy();
-  }
-
-  public static final int AVATAR_TEMPLATE_ID_FIELD_NUMBER = 6;
-  private volatile java.lang.Object avatarTemplateId_;
-  /**
-   * <code>string avatar_template_id = 6;</code>
-   * @return The avatarTemplateId.
-   */
-  public java.lang.String getAvatarTemplateId() {
-    java.lang.Object ref = avatarTemplateId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      avatarTemplateId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string avatar_template_id = 6;</code>
-   * @return The bytes for avatarTemplateId.
-   */
-  public com.google.protobuf.ByteString
-      getAvatarTemplateIdBytes() {
-    java.lang.Object ref = avatarTemplateId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      avatarTemplateId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int QUEST_TEMPLATE_ID_FIELD_NUMBER = 7;
-  private volatile java.lang.Object questTemplateId_;
-  /**
-   * <code>string quest_template_id = 7;</code>
-   * @return The questTemplateId.
-   */
-  public java.lang.String getQuestTemplateId() {
-    java.lang.Object ref = questTemplateId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      questTemplateId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string quest_template_id = 7;</code>
-   * @return The bytes for questTemplateId.
-   */
-  public com.google.protobuf.ByteString
-      getQuestTemplateIdBytes() {
-    java.lang.Object ref = questTemplateId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      questTemplateId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int POKEMON_ENCOUNTER_FIELD_NUMBER = 8;
-  private POGOProtos.Rpc.PokemonEncounterRewardProto pokemonEncounter_;
-  /**
-   * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-   * @return Whether the pokemonEncounter field is set.
-   */
-  public boolean hasPokemonEncounter() {
-    return pokemonEncounter_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-   * @return The pokemonEncounter.
-   */
-  public POGOProtos.Rpc.PokemonEncounterRewardProto getPokemonEncounter() {
-    return pokemonEncounter_ == null ? POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance() : pokemonEncounter_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-   */
-  public POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder getPokemonEncounterOrBuilder() {
-    return getPokemonEncounter();
-  }
-
-  public static final int POKECOIN_FIELD_NUMBER = 9;
-  private int pokecoin_;
-  /**
-   * <code>int32 pokecoin = 9;</code>
-   * @return The pokecoin.
-   */
-  public int getPokecoin() {
-    return pokecoin_;
-  }
-
-  public static final int STICKER_FIELD_NUMBER = 12;
-  private POGOProtos.Rpc.StickerRewardProto sticker_;
-  /**
-   * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-   * @return Whether the sticker field is set.
-   */
-  public boolean hasSticker() {
-    return sticker_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-   * @return The sticker.
-   */
-  public POGOProtos.Rpc.StickerRewardProto getSticker() {
-    return sticker_ == null ? POGOProtos.Rpc.StickerRewardProto.getDefaultInstance() : sticker_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-   */
-  public POGOProtos.Rpc.StickerRewardProtoOrBuilder getStickerOrBuilder() {
-    return getSticker();
-  }
-
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -574,32 +675,35 @@ private static final long serialVersionUID = 0L;
     if (type_ != POGOProtos.Rpc.QuestRewardProto.Type.UNSET.getNumber()) {
       output.writeEnum(1, type_);
     }
-    if (exp_ != 0) {
-      output.writeInt32(2, exp_);
+    if (rewardCase_ == 2) {
+      output.writeInt32(
+          2, (int)((java.lang.Integer) reward_));
     }
-    if (item_ != null) {
-      output.writeMessage(3, getItem());
+    if (rewardCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.ItemRewardProto) reward_);
     }
-    if (stardust_ != 0) {
-      output.writeInt32(4, stardust_);
+    if (rewardCase_ == 4) {
+      output.writeInt32(
+          4, (int)((java.lang.Integer) reward_));
     }
-    if (candy_ != null) {
-      output.writeMessage(5, getCandy());
+    if (rewardCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.PokemonCandyRewardProto) reward_);
     }
-    if (!getAvatarTemplateIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 6, avatarTemplateId_);
+    if (rewardCase_ == 6) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 6, reward_);
     }
-    if (!getQuestTemplateIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 7, questTemplateId_);
+    if (rewardCase_ == 7) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 7, reward_);
     }
-    if (pokemonEncounter_ != null) {
-      output.writeMessage(8, getPokemonEncounter());
+    if (rewardCase_ == 8) {
+      output.writeMessage(8, (POGOProtos.Rpc.PokemonEncounterRewardProto) reward_);
     }
-    if (pokecoin_ != 0) {
-      output.writeInt32(9, pokecoin_);
+    if (rewardCase_ == 9) {
+      output.writeInt32(
+          9, (int)((java.lang.Integer) reward_));
     }
-    if (sticker_ != null) {
-      output.writeMessage(12, getSticker());
+    if (rewardCase_ == 12) {
+      output.writeMessage(12, (POGOProtos.Rpc.StickerRewardProto) reward_);
     }
     unknownFields.writeTo(output);
   }
@@ -614,39 +718,42 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, type_);
     }
-    if (exp_ != 0) {
+    if (rewardCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, exp_);
+        .computeInt32Size(
+            2, (int)((java.lang.Integer) reward_));
     }
-    if (item_ != null) {
+    if (rewardCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getItem());
+        .computeMessageSize(3, (POGOProtos.Rpc.ItemRewardProto) reward_);
     }
-    if (stardust_ != 0) {
+    if (rewardCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(4, stardust_);
+        .computeInt32Size(
+            4, (int)((java.lang.Integer) reward_));
     }
-    if (candy_ != null) {
+    if (rewardCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getCandy());
+        .computeMessageSize(5, (POGOProtos.Rpc.PokemonCandyRewardProto) reward_);
     }
-    if (!getAvatarTemplateIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, avatarTemplateId_);
+    if (rewardCase_ == 6) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, reward_);
     }
-    if (!getQuestTemplateIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, questTemplateId_);
+    if (rewardCase_ == 7) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, reward_);
     }
-    if (pokemonEncounter_ != null) {
+    if (rewardCase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getPokemonEncounter());
+        .computeMessageSize(8, (POGOProtos.Rpc.PokemonEncounterRewardProto) reward_);
     }
-    if (pokecoin_ != 0) {
+    if (rewardCase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(9, pokecoin_);
+        .computeInt32Size(
+            9, (int)((java.lang.Integer) reward_));
     }
-    if (sticker_ != null) {
+    if (rewardCase_ == 12) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, getSticker());
+        .computeMessageSize(12, (POGOProtos.Rpc.StickerRewardProto) reward_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -664,35 +771,46 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.QuestRewardProto other = (POGOProtos.Rpc.QuestRewardProto) obj;
 
     if (type_ != other.type_) return false;
-    if (getExp()
-        != other.getExp()) return false;
-    if (hasItem() != other.hasItem()) return false;
-    if (hasItem()) {
-      if (!getItem()
-          .equals(other.getItem())) return false;
-    }
-    if (getStardust()
-        != other.getStardust()) return false;
-    if (hasCandy() != other.hasCandy()) return false;
-    if (hasCandy()) {
-      if (!getCandy()
-          .equals(other.getCandy())) return false;
-    }
-    if (!getAvatarTemplateId()
-        .equals(other.getAvatarTemplateId())) return false;
-    if (!getQuestTemplateId()
-        .equals(other.getQuestTemplateId())) return false;
-    if (hasPokemonEncounter() != other.hasPokemonEncounter()) return false;
-    if (hasPokemonEncounter()) {
-      if (!getPokemonEncounter()
-          .equals(other.getPokemonEncounter())) return false;
-    }
-    if (getPokecoin()
-        != other.getPokecoin()) return false;
-    if (hasSticker() != other.hasSticker()) return false;
-    if (hasSticker()) {
-      if (!getSticker()
-          .equals(other.getSticker())) return false;
+    if (!getRewardCase().equals(other.getRewardCase())) return false;
+    switch (rewardCase_) {
+      case 2:
+        if (getExp()
+            != other.getExp()) return false;
+        break;
+      case 3:
+        if (!getItem()
+            .equals(other.getItem())) return false;
+        break;
+      case 4:
+        if (getStardust()
+            != other.getStardust()) return false;
+        break;
+      case 5:
+        if (!getCandy()
+            .equals(other.getCandy())) return false;
+        break;
+      case 6:
+        if (!getAvatarTemplateId()
+            .equals(other.getAvatarTemplateId())) return false;
+        break;
+      case 7:
+        if (!getQuestTemplateId()
+            .equals(other.getQuestTemplateId())) return false;
+        break;
+      case 8:
+        if (!getPokemonEncounter()
+            .equals(other.getPokemonEncounter())) return false;
+        break;
+      case 9:
+        if (getPokecoin()
+            != other.getPokecoin()) return false;
+        break;
+      case 12:
+        if (!getSticker()
+            .equals(other.getSticker())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -707,31 +825,45 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TYPE_FIELD_NUMBER;
     hash = (53 * hash) + type_;
-    hash = (37 * hash) + EXP_FIELD_NUMBER;
-    hash = (53 * hash) + getExp();
-    if (hasItem()) {
-      hash = (37 * hash) + ITEM_FIELD_NUMBER;
-      hash = (53 * hash) + getItem().hashCode();
-    }
-    hash = (37 * hash) + STARDUST_FIELD_NUMBER;
-    hash = (53 * hash) + getStardust();
-    if (hasCandy()) {
-      hash = (37 * hash) + CANDY_FIELD_NUMBER;
-      hash = (53 * hash) + getCandy().hashCode();
-    }
-    hash = (37 * hash) + AVATAR_TEMPLATE_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getAvatarTemplateId().hashCode();
-    hash = (37 * hash) + QUEST_TEMPLATE_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getQuestTemplateId().hashCode();
-    if (hasPokemonEncounter()) {
-      hash = (37 * hash) + POKEMON_ENCOUNTER_FIELD_NUMBER;
-      hash = (53 * hash) + getPokemonEncounter().hashCode();
-    }
-    hash = (37 * hash) + POKECOIN_FIELD_NUMBER;
-    hash = (53 * hash) + getPokecoin();
-    if (hasSticker()) {
-      hash = (37 * hash) + STICKER_FIELD_NUMBER;
-      hash = (53 * hash) + getSticker().hashCode();
+    switch (rewardCase_) {
+      case 2:
+        hash = (37 * hash) + EXP_FIELD_NUMBER;
+        hash = (53 * hash) + getExp();
+        break;
+      case 3:
+        hash = (37 * hash) + ITEM_FIELD_NUMBER;
+        hash = (53 * hash) + getItem().hashCode();
+        break;
+      case 4:
+        hash = (37 * hash) + STARDUST_FIELD_NUMBER;
+        hash = (53 * hash) + getStardust();
+        break;
+      case 5:
+        hash = (37 * hash) + CANDY_FIELD_NUMBER;
+        hash = (53 * hash) + getCandy().hashCode();
+        break;
+      case 6:
+        hash = (37 * hash) + AVATAR_TEMPLATE_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getAvatarTemplateId().hashCode();
+        break;
+      case 7:
+        hash = (37 * hash) + QUEST_TEMPLATE_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getQuestTemplateId().hashCode();
+        break;
+      case 8:
+        hash = (37 * hash) + POKEMON_ENCOUNTER_FIELD_NUMBER;
+        hash = (53 * hash) + getPokemonEncounter().hashCode();
+        break;
+      case 9:
+        hash = (37 * hash) + POKECOIN_FIELD_NUMBER;
+        hash = (53 * hash) + getPokecoin();
+        break;
+      case 12:
+        hash = (37 * hash) + STICKER_FIELD_NUMBER;
+        hash = (53 * hash) + getSticker().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -868,40 +1000,8 @@ private static final long serialVersionUID = 0L;
       super.clear();
       type_ = 0;
 
-      exp_ = 0;
-
-      if (itemBuilder_ == null) {
-        item_ = null;
-      } else {
-        item_ = null;
-        itemBuilder_ = null;
-      }
-      stardust_ = 0;
-
-      if (candyBuilder_ == null) {
-        candy_ = null;
-      } else {
-        candy_ = null;
-        candyBuilder_ = null;
-      }
-      avatarTemplateId_ = "";
-
-      questTemplateId_ = "";
-
-      if (pokemonEncounterBuilder_ == null) {
-        pokemonEncounter_ = null;
-      } else {
-        pokemonEncounter_ = null;
-        pokemonEncounterBuilder_ = null;
-      }
-      pokecoin_ = 0;
-
-      if (stickerBuilder_ == null) {
-        sticker_ = null;
-      } else {
-        sticker_ = null;
-        stickerBuilder_ = null;
-      }
+      rewardCase_ = 0;
+      reward_ = null;
       return this;
     }
 
@@ -928,32 +1028,51 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.QuestRewardProto buildPartial() {
       POGOProtos.Rpc.QuestRewardProto result = new POGOProtos.Rpc.QuestRewardProto(this);
+      if (rewardCase_ == 2) {
+        result.reward_ = reward_;
+      }
+      if (rewardCase_ == 3) {
+        if (itemBuilder_ == null) {
+          result.reward_ = reward_;
+        } else {
+          result.reward_ = itemBuilder_.build();
+        }
+      }
+      if (rewardCase_ == 4) {
+        result.reward_ = reward_;
+      }
+      if (rewardCase_ == 5) {
+        if (candyBuilder_ == null) {
+          result.reward_ = reward_;
+        } else {
+          result.reward_ = candyBuilder_.build();
+        }
+      }
+      if (rewardCase_ == 6) {
+        result.reward_ = reward_;
+      }
+      if (rewardCase_ == 7) {
+        result.reward_ = reward_;
+      }
+      if (rewardCase_ == 8) {
+        if (pokemonEncounterBuilder_ == null) {
+          result.reward_ = reward_;
+        } else {
+          result.reward_ = pokemonEncounterBuilder_.build();
+        }
+      }
+      if (rewardCase_ == 9) {
+        result.reward_ = reward_;
+      }
+      if (rewardCase_ == 12) {
+        if (stickerBuilder_ == null) {
+          result.reward_ = reward_;
+        } else {
+          result.reward_ = stickerBuilder_.build();
+        }
+      }
       result.type_ = type_;
-      result.exp_ = exp_;
-      if (itemBuilder_ == null) {
-        result.item_ = item_;
-      } else {
-        result.item_ = itemBuilder_.build();
-      }
-      result.stardust_ = stardust_;
-      if (candyBuilder_ == null) {
-        result.candy_ = candy_;
-      } else {
-        result.candy_ = candyBuilder_.build();
-      }
-      result.avatarTemplateId_ = avatarTemplateId_;
-      result.questTemplateId_ = questTemplateId_;
-      if (pokemonEncounterBuilder_ == null) {
-        result.pokemonEncounter_ = pokemonEncounter_;
-      } else {
-        result.pokemonEncounter_ = pokemonEncounterBuilder_.build();
-      }
-      result.pokecoin_ = pokecoin_;
-      if (stickerBuilder_ == null) {
-        result.sticker_ = sticker_;
-      } else {
-        result.sticker_ = stickerBuilder_.build();
-      }
+      result.rewardCase_ = rewardCase_;
       onBuilt();
       return result;
     }
@@ -1005,34 +1124,50 @@ private static final long serialVersionUID = 0L;
       if (other.type_ != 0) {
         setTypeValue(other.getTypeValue());
       }
-      if (other.getExp() != 0) {
-        setExp(other.getExp());
-      }
-      if (other.hasItem()) {
-        mergeItem(other.getItem());
-      }
-      if (other.getStardust() != 0) {
-        setStardust(other.getStardust());
-      }
-      if (other.hasCandy()) {
-        mergeCandy(other.getCandy());
-      }
-      if (!other.getAvatarTemplateId().isEmpty()) {
-        avatarTemplateId_ = other.avatarTemplateId_;
-        onChanged();
-      }
-      if (!other.getQuestTemplateId().isEmpty()) {
-        questTemplateId_ = other.questTemplateId_;
-        onChanged();
-      }
-      if (other.hasPokemonEncounter()) {
-        mergePokemonEncounter(other.getPokemonEncounter());
-      }
-      if (other.getPokecoin() != 0) {
-        setPokecoin(other.getPokecoin());
-      }
-      if (other.hasSticker()) {
-        mergeSticker(other.getSticker());
+      switch (other.getRewardCase()) {
+        case EXP: {
+          setExp(other.getExp());
+          break;
+        }
+        case ITEM: {
+          mergeItem(other.getItem());
+          break;
+        }
+        case STARDUST: {
+          setStardust(other.getStardust());
+          break;
+        }
+        case CANDY: {
+          mergeCandy(other.getCandy());
+          break;
+        }
+        case AVATAR_TEMPLATE_ID: {
+          rewardCase_ = 6;
+          reward_ = other.reward_;
+          onChanged();
+          break;
+        }
+        case QUEST_TEMPLATE_ID: {
+          rewardCase_ = 7;
+          reward_ = other.reward_;
+          onChanged();
+          break;
+        }
+        case POKEMON_ENCOUNTER: {
+          mergePokemonEncounter(other.getPokemonEncounter());
+          break;
+        }
+        case POKECOIN: {
+          setPokecoin(other.getPokecoin());
+          break;
+        }
+        case STICKER: {
+          mergeSticker(other.getSticker());
+          break;
+        }
+        case REWARD_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1061,6 +1196,849 @@ private static final long serialVersionUID = 0L;
         }
       }
       return this;
+    }
+    private int rewardCase_ = 0;
+    private java.lang.Object reward_;
+    public RewardCase
+        getRewardCase() {
+      return RewardCase.forNumber(
+          rewardCase_);
+    }
+
+    public Builder clearReward() {
+      rewardCase_ = 0;
+      reward_ = null;
+      onChanged();
+      return this;
+    }
+
+
+    /**
+     * <code>int32 exp = 2;</code>
+     * @return The exp.
+     */
+    public int getExp() {
+      if (rewardCase_ == 2) {
+        return (java.lang.Integer) reward_;
+      }
+      return 0;
+    }
+    /**
+     * <code>int32 exp = 2;</code>
+     * @param value The exp to set.
+     * @return This builder for chaining.
+     */
+    public Builder setExp(int value) {
+      rewardCase_ = 2;
+      reward_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 exp = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearExp() {
+      if (rewardCase_ == 2) {
+        rewardCase_ = 0;
+        reward_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ItemRewardProto, POGOProtos.Rpc.ItemRewardProto.Builder, POGOProtos.Rpc.ItemRewardProtoOrBuilder> itemBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+     * @return Whether the item field is set.
+     */
+    public boolean hasItem() {
+      return rewardCase_ == 3;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+     * @return The item.
+     */
+    public POGOProtos.Rpc.ItemRewardProto getItem() {
+      if (itemBuilder_ == null) {
+        if (rewardCase_ == 3) {
+          return (POGOProtos.Rpc.ItemRewardProto) reward_;
+        }
+        return POGOProtos.Rpc.ItemRewardProto.getDefaultInstance();
+      } else {
+        if (rewardCase_ == 3) {
+          return itemBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ItemRewardProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+     */
+    public Builder setItem(POGOProtos.Rpc.ItemRewardProto value) {
+      if (itemBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        reward_ = value;
+        onChanged();
+      } else {
+        itemBuilder_.setMessage(value);
+      }
+      rewardCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+     */
+    public Builder setItem(
+        POGOProtos.Rpc.ItemRewardProto.Builder builderForValue) {
+      if (itemBuilder_ == null) {
+        reward_ = builderForValue.build();
+        onChanged();
+      } else {
+        itemBuilder_.setMessage(builderForValue.build());
+      }
+      rewardCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+     */
+    public Builder mergeItem(POGOProtos.Rpc.ItemRewardProto value) {
+      if (itemBuilder_ == null) {
+        if (rewardCase_ == 3 &&
+            reward_ != POGOProtos.Rpc.ItemRewardProto.getDefaultInstance()) {
+          reward_ = POGOProtos.Rpc.ItemRewardProto.newBuilder((POGOProtos.Rpc.ItemRewardProto) reward_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          reward_ = value;
+        }
+        onChanged();
+      } else {
+        if (rewardCase_ == 3) {
+          itemBuilder_.mergeFrom(value);
+        }
+        itemBuilder_.setMessage(value);
+      }
+      rewardCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+     */
+    public Builder clearItem() {
+      if (itemBuilder_ == null) {
+        if (rewardCase_ == 3) {
+          rewardCase_ = 0;
+          reward_ = null;
+          onChanged();
+        }
+      } else {
+        if (rewardCase_ == 3) {
+          rewardCase_ = 0;
+          reward_ = null;
+        }
+        itemBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+     */
+    public POGOProtos.Rpc.ItemRewardProto.Builder getItemBuilder() {
+      return getItemFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+     */
+    public POGOProtos.Rpc.ItemRewardProtoOrBuilder getItemOrBuilder() {
+      if ((rewardCase_ == 3) && (itemBuilder_ != null)) {
+        return itemBuilder_.getMessageOrBuilder();
+      } else {
+        if (rewardCase_ == 3) {
+          return (POGOProtos.Rpc.ItemRewardProto) reward_;
+        }
+        return POGOProtos.Rpc.ItemRewardProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ItemRewardProto, POGOProtos.Rpc.ItemRewardProto.Builder, POGOProtos.Rpc.ItemRewardProtoOrBuilder> 
+        getItemFieldBuilder() {
+      if (itemBuilder_ == null) {
+        if (!(rewardCase_ == 3)) {
+          reward_ = POGOProtos.Rpc.ItemRewardProto.getDefaultInstance();
+        }
+        itemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.ItemRewardProto, POGOProtos.Rpc.ItemRewardProto.Builder, POGOProtos.Rpc.ItemRewardProtoOrBuilder>(
+                (POGOProtos.Rpc.ItemRewardProto) reward_,
+                getParentForChildren(),
+                isClean());
+        reward_ = null;
+      }
+      rewardCase_ = 3;
+      onChanged();;
+      return itemBuilder_;
+    }
+
+    /**
+     * <code>int32 stardust = 4;</code>
+     * @return The stardust.
+     */
+    public int getStardust() {
+      if (rewardCase_ == 4) {
+        return (java.lang.Integer) reward_;
+      }
+      return 0;
+    }
+    /**
+     * <code>int32 stardust = 4;</code>
+     * @param value The stardust to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStardust(int value) {
+      rewardCase_ = 4;
+      reward_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 stardust = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStardust() {
+      if (rewardCase_ == 4) {
+        rewardCase_ = 0;
+        reward_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PokemonCandyRewardProto, POGOProtos.Rpc.PokemonCandyRewardProto.Builder, POGOProtos.Rpc.PokemonCandyRewardProtoOrBuilder> candyBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+     * @return Whether the candy field is set.
+     */
+    public boolean hasCandy() {
+      return rewardCase_ == 5;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+     * @return The candy.
+     */
+    public POGOProtos.Rpc.PokemonCandyRewardProto getCandy() {
+      if (candyBuilder_ == null) {
+        if (rewardCase_ == 5) {
+          return (POGOProtos.Rpc.PokemonCandyRewardProto) reward_;
+        }
+        return POGOProtos.Rpc.PokemonCandyRewardProto.getDefaultInstance();
+      } else {
+        if (rewardCase_ == 5) {
+          return candyBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PokemonCandyRewardProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+     */
+    public Builder setCandy(POGOProtos.Rpc.PokemonCandyRewardProto value) {
+      if (candyBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        reward_ = value;
+        onChanged();
+      } else {
+        candyBuilder_.setMessage(value);
+      }
+      rewardCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+     */
+    public Builder setCandy(
+        POGOProtos.Rpc.PokemonCandyRewardProto.Builder builderForValue) {
+      if (candyBuilder_ == null) {
+        reward_ = builderForValue.build();
+        onChanged();
+      } else {
+        candyBuilder_.setMessage(builderForValue.build());
+      }
+      rewardCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+     */
+    public Builder mergeCandy(POGOProtos.Rpc.PokemonCandyRewardProto value) {
+      if (candyBuilder_ == null) {
+        if (rewardCase_ == 5 &&
+            reward_ != POGOProtos.Rpc.PokemonCandyRewardProto.getDefaultInstance()) {
+          reward_ = POGOProtos.Rpc.PokemonCandyRewardProto.newBuilder((POGOProtos.Rpc.PokemonCandyRewardProto) reward_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          reward_ = value;
+        }
+        onChanged();
+      } else {
+        if (rewardCase_ == 5) {
+          candyBuilder_.mergeFrom(value);
+        }
+        candyBuilder_.setMessage(value);
+      }
+      rewardCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+     */
+    public Builder clearCandy() {
+      if (candyBuilder_ == null) {
+        if (rewardCase_ == 5) {
+          rewardCase_ = 0;
+          reward_ = null;
+          onChanged();
+        }
+      } else {
+        if (rewardCase_ == 5) {
+          rewardCase_ = 0;
+          reward_ = null;
+        }
+        candyBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+     */
+    public POGOProtos.Rpc.PokemonCandyRewardProto.Builder getCandyBuilder() {
+      return getCandyFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+     */
+    public POGOProtos.Rpc.PokemonCandyRewardProtoOrBuilder getCandyOrBuilder() {
+      if ((rewardCase_ == 5) && (candyBuilder_ != null)) {
+        return candyBuilder_.getMessageOrBuilder();
+      } else {
+        if (rewardCase_ == 5) {
+          return (POGOProtos.Rpc.PokemonCandyRewardProto) reward_;
+        }
+        return POGOProtos.Rpc.PokemonCandyRewardProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PokemonCandyRewardProto, POGOProtos.Rpc.PokemonCandyRewardProto.Builder, POGOProtos.Rpc.PokemonCandyRewardProtoOrBuilder> 
+        getCandyFieldBuilder() {
+      if (candyBuilder_ == null) {
+        if (!(rewardCase_ == 5)) {
+          reward_ = POGOProtos.Rpc.PokemonCandyRewardProto.getDefaultInstance();
+        }
+        candyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.PokemonCandyRewardProto, POGOProtos.Rpc.PokemonCandyRewardProto.Builder, POGOProtos.Rpc.PokemonCandyRewardProtoOrBuilder>(
+                (POGOProtos.Rpc.PokemonCandyRewardProto) reward_,
+                getParentForChildren(),
+                isClean());
+        reward_ = null;
+      }
+      rewardCase_ = 5;
+      onChanged();;
+      return candyBuilder_;
+    }
+
+    /**
+     * <code>string avatar_template_id = 6;</code>
+     * @return The avatarTemplateId.
+     */
+    public java.lang.String getAvatarTemplateId() {
+      java.lang.Object ref = "";
+      if (rewardCase_ == 6) {
+        ref = reward_;
+      }
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (rewardCase_ == 6) {
+          reward_ = s;
+        }
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string avatar_template_id = 6;</code>
+     * @return The bytes for avatarTemplateId.
+     */
+    public com.google.protobuf.ByteString
+        getAvatarTemplateIdBytes() {
+      java.lang.Object ref = "";
+      if (rewardCase_ == 6) {
+        ref = reward_;
+      }
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        if (rewardCase_ == 6) {
+          reward_ = b;
+        }
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string avatar_template_id = 6;</code>
+     * @param value The avatarTemplateId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAvatarTemplateId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  rewardCase_ = 6;
+      reward_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string avatar_template_id = 6;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAvatarTemplateId() {
+      if (rewardCase_ == 6) {
+        rewardCase_ = 0;
+        reward_ = null;
+        onChanged();
+      }
+      return this;
+    }
+    /**
+     * <code>string avatar_template_id = 6;</code>
+     * @param value The bytes for avatarTemplateId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAvatarTemplateIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      rewardCase_ = 6;
+      reward_ = value;
+      onChanged();
+      return this;
+    }
+
+    /**
+     * <code>string quest_template_id = 7;</code>
+     * @return The questTemplateId.
+     */
+    public java.lang.String getQuestTemplateId() {
+      java.lang.Object ref = "";
+      if (rewardCase_ == 7) {
+        ref = reward_;
+      }
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (rewardCase_ == 7) {
+          reward_ = s;
+        }
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string quest_template_id = 7;</code>
+     * @return The bytes for questTemplateId.
+     */
+    public com.google.protobuf.ByteString
+        getQuestTemplateIdBytes() {
+      java.lang.Object ref = "";
+      if (rewardCase_ == 7) {
+        ref = reward_;
+      }
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        if (rewardCase_ == 7) {
+          reward_ = b;
+        }
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string quest_template_id = 7;</code>
+     * @param value The questTemplateId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setQuestTemplateId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  rewardCase_ = 7;
+      reward_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string quest_template_id = 7;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearQuestTemplateId() {
+      if (rewardCase_ == 7) {
+        rewardCase_ = 0;
+        reward_ = null;
+        onChanged();
+      }
+      return this;
+    }
+    /**
+     * <code>string quest_template_id = 7;</code>
+     * @param value The bytes for questTemplateId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setQuestTemplateIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      rewardCase_ = 7;
+      reward_ = value;
+      onChanged();
+      return this;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PokemonEncounterRewardProto, POGOProtos.Rpc.PokemonEncounterRewardProto.Builder, POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder> pokemonEncounterBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+     * @return Whether the pokemonEncounter field is set.
+     */
+    public boolean hasPokemonEncounter() {
+      return rewardCase_ == 8;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+     * @return The pokemonEncounter.
+     */
+    public POGOProtos.Rpc.PokemonEncounterRewardProto getPokemonEncounter() {
+      if (pokemonEncounterBuilder_ == null) {
+        if (rewardCase_ == 8) {
+          return (POGOProtos.Rpc.PokemonEncounterRewardProto) reward_;
+        }
+        return POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
+      } else {
+        if (rewardCase_ == 8) {
+          return pokemonEncounterBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+     */
+    public Builder setPokemonEncounter(POGOProtos.Rpc.PokemonEncounterRewardProto value) {
+      if (pokemonEncounterBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        reward_ = value;
+        onChanged();
+      } else {
+        pokemonEncounterBuilder_.setMessage(value);
+      }
+      rewardCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+     */
+    public Builder setPokemonEncounter(
+        POGOProtos.Rpc.PokemonEncounterRewardProto.Builder builderForValue) {
+      if (pokemonEncounterBuilder_ == null) {
+        reward_ = builderForValue.build();
+        onChanged();
+      } else {
+        pokemonEncounterBuilder_.setMessage(builderForValue.build());
+      }
+      rewardCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+     */
+    public Builder mergePokemonEncounter(POGOProtos.Rpc.PokemonEncounterRewardProto value) {
+      if (pokemonEncounterBuilder_ == null) {
+        if (rewardCase_ == 8 &&
+            reward_ != POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance()) {
+          reward_ = POGOProtos.Rpc.PokemonEncounterRewardProto.newBuilder((POGOProtos.Rpc.PokemonEncounterRewardProto) reward_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          reward_ = value;
+        }
+        onChanged();
+      } else {
+        if (rewardCase_ == 8) {
+          pokemonEncounterBuilder_.mergeFrom(value);
+        }
+        pokemonEncounterBuilder_.setMessage(value);
+      }
+      rewardCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+     */
+    public Builder clearPokemonEncounter() {
+      if (pokemonEncounterBuilder_ == null) {
+        if (rewardCase_ == 8) {
+          rewardCase_ = 0;
+          reward_ = null;
+          onChanged();
+        }
+      } else {
+        if (rewardCase_ == 8) {
+          rewardCase_ = 0;
+          reward_ = null;
+        }
+        pokemonEncounterBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+     */
+    public POGOProtos.Rpc.PokemonEncounterRewardProto.Builder getPokemonEncounterBuilder() {
+      return getPokemonEncounterFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+     */
+    public POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder getPokemonEncounterOrBuilder() {
+      if ((rewardCase_ == 8) && (pokemonEncounterBuilder_ != null)) {
+        return pokemonEncounterBuilder_.getMessageOrBuilder();
+      } else {
+        if (rewardCase_ == 8) {
+          return (POGOProtos.Rpc.PokemonEncounterRewardProto) reward_;
+        }
+        return POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PokemonEncounterRewardProto, POGOProtos.Rpc.PokemonEncounterRewardProto.Builder, POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder> 
+        getPokemonEncounterFieldBuilder() {
+      if (pokemonEncounterBuilder_ == null) {
+        if (!(rewardCase_ == 8)) {
+          reward_ = POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance();
+        }
+        pokemonEncounterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.PokemonEncounterRewardProto, POGOProtos.Rpc.PokemonEncounterRewardProto.Builder, POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder>(
+                (POGOProtos.Rpc.PokemonEncounterRewardProto) reward_,
+                getParentForChildren(),
+                isClean());
+        reward_ = null;
+      }
+      rewardCase_ = 8;
+      onChanged();;
+      return pokemonEncounterBuilder_;
+    }
+
+    /**
+     * <code>int32 pokecoin = 9;</code>
+     * @return The pokecoin.
+     */
+    public int getPokecoin() {
+      if (rewardCase_ == 9) {
+        return (java.lang.Integer) reward_;
+      }
+      return 0;
+    }
+    /**
+     * <code>int32 pokecoin = 9;</code>
+     * @param value The pokecoin to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPokecoin(int value) {
+      rewardCase_ = 9;
+      reward_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 pokecoin = 9;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPokecoin() {
+      if (rewardCase_ == 9) {
+        rewardCase_ = 0;
+        reward_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.StickerRewardProto, POGOProtos.Rpc.StickerRewardProto.Builder, POGOProtos.Rpc.StickerRewardProtoOrBuilder> stickerBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+     * @return Whether the sticker field is set.
+     */
+    public boolean hasSticker() {
+      return rewardCase_ == 12;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+     * @return The sticker.
+     */
+    public POGOProtos.Rpc.StickerRewardProto getSticker() {
+      if (stickerBuilder_ == null) {
+        if (rewardCase_ == 12) {
+          return (POGOProtos.Rpc.StickerRewardProto) reward_;
+        }
+        return POGOProtos.Rpc.StickerRewardProto.getDefaultInstance();
+      } else {
+        if (rewardCase_ == 12) {
+          return stickerBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.StickerRewardProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+     */
+    public Builder setSticker(POGOProtos.Rpc.StickerRewardProto value) {
+      if (stickerBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        reward_ = value;
+        onChanged();
+      } else {
+        stickerBuilder_.setMessage(value);
+      }
+      rewardCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+     */
+    public Builder setSticker(
+        POGOProtos.Rpc.StickerRewardProto.Builder builderForValue) {
+      if (stickerBuilder_ == null) {
+        reward_ = builderForValue.build();
+        onChanged();
+      } else {
+        stickerBuilder_.setMessage(builderForValue.build());
+      }
+      rewardCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+     */
+    public Builder mergeSticker(POGOProtos.Rpc.StickerRewardProto value) {
+      if (stickerBuilder_ == null) {
+        if (rewardCase_ == 12 &&
+            reward_ != POGOProtos.Rpc.StickerRewardProto.getDefaultInstance()) {
+          reward_ = POGOProtos.Rpc.StickerRewardProto.newBuilder((POGOProtos.Rpc.StickerRewardProto) reward_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          reward_ = value;
+        }
+        onChanged();
+      } else {
+        if (rewardCase_ == 12) {
+          stickerBuilder_.mergeFrom(value);
+        }
+        stickerBuilder_.setMessage(value);
+      }
+      rewardCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+     */
+    public Builder clearSticker() {
+      if (stickerBuilder_ == null) {
+        if (rewardCase_ == 12) {
+          rewardCase_ = 0;
+          reward_ = null;
+          onChanged();
+        }
+      } else {
+        if (rewardCase_ == 12) {
+          rewardCase_ = 0;
+          reward_ = null;
+        }
+        stickerBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+     */
+    public POGOProtos.Rpc.StickerRewardProto.Builder getStickerBuilder() {
+      return getStickerFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+     */
+    public POGOProtos.Rpc.StickerRewardProtoOrBuilder getStickerOrBuilder() {
+      if ((rewardCase_ == 12) && (stickerBuilder_ != null)) {
+        return stickerBuilder_.getMessageOrBuilder();
+      } else {
+        if (rewardCase_ == 12) {
+          return (POGOProtos.Rpc.StickerRewardProto) reward_;
+        }
+        return POGOProtos.Rpc.StickerRewardProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.StickerRewardProto, POGOProtos.Rpc.StickerRewardProto.Builder, POGOProtos.Rpc.StickerRewardProtoOrBuilder> 
+        getStickerFieldBuilder() {
+      if (stickerBuilder_ == null) {
+        if (!(rewardCase_ == 12)) {
+          reward_ = POGOProtos.Rpc.StickerRewardProto.getDefaultInstance();
+        }
+        stickerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.StickerRewardProto, POGOProtos.Rpc.StickerRewardProto.Builder, POGOProtos.Rpc.StickerRewardProtoOrBuilder>(
+                (POGOProtos.Rpc.StickerRewardProto) reward_,
+                getParentForChildren(),
+                isClean());
+        reward_ = null;
+      }
+      rewardCase_ = 12;
+      onChanged();;
+      return stickerBuilder_;
     }
 
     private int type_ = 0;
@@ -1113,724 +2091,6 @@ private static final long serialVersionUID = 0L;
       type_ = 0;
       onChanged();
       return this;
-    }
-
-    private int exp_ ;
-    /**
-     * <code>int32 exp = 2;</code>
-     * @return The exp.
-     */
-    public int getExp() {
-      return exp_;
-    }
-    /**
-     * <code>int32 exp = 2;</code>
-     * @param value The exp to set.
-     * @return This builder for chaining.
-     */
-    public Builder setExp(int value) {
-      
-      exp_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 exp = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearExp() {
-      
-      exp_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private POGOProtos.Rpc.ItemRewardProto item_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ItemRewardProto, POGOProtos.Rpc.ItemRewardProto.Builder, POGOProtos.Rpc.ItemRewardProtoOrBuilder> itemBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-     * @return Whether the item field is set.
-     */
-    public boolean hasItem() {
-      return itemBuilder_ != null || item_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-     * @return The item.
-     */
-    public POGOProtos.Rpc.ItemRewardProto getItem() {
-      if (itemBuilder_ == null) {
-        return item_ == null ? POGOProtos.Rpc.ItemRewardProto.getDefaultInstance() : item_;
-      } else {
-        return itemBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-     */
-    public Builder setItem(POGOProtos.Rpc.ItemRewardProto value) {
-      if (itemBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        item_ = value;
-        onChanged();
-      } else {
-        itemBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-     */
-    public Builder setItem(
-        POGOProtos.Rpc.ItemRewardProto.Builder builderForValue) {
-      if (itemBuilder_ == null) {
-        item_ = builderForValue.build();
-        onChanged();
-      } else {
-        itemBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-     */
-    public Builder mergeItem(POGOProtos.Rpc.ItemRewardProto value) {
-      if (itemBuilder_ == null) {
-        if (item_ != null) {
-          item_ =
-            POGOProtos.Rpc.ItemRewardProto.newBuilder(item_).mergeFrom(value).buildPartial();
-        } else {
-          item_ = value;
-        }
-        onChanged();
-      } else {
-        itemBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-     */
-    public Builder clearItem() {
-      if (itemBuilder_ == null) {
-        item_ = null;
-        onChanged();
-      } else {
-        item_ = null;
-        itemBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-     */
-    public POGOProtos.Rpc.ItemRewardProto.Builder getItemBuilder() {
-      
-      onChanged();
-      return getItemFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-     */
-    public POGOProtos.Rpc.ItemRewardProtoOrBuilder getItemOrBuilder() {
-      if (itemBuilder_ != null) {
-        return itemBuilder_.getMessageOrBuilder();
-      } else {
-        return item_ == null ?
-            POGOProtos.Rpc.ItemRewardProto.getDefaultInstance() : item_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ItemRewardProto item = 3;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ItemRewardProto, POGOProtos.Rpc.ItemRewardProto.Builder, POGOProtos.Rpc.ItemRewardProtoOrBuilder> 
-        getItemFieldBuilder() {
-      if (itemBuilder_ == null) {
-        itemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ItemRewardProto, POGOProtos.Rpc.ItemRewardProto.Builder, POGOProtos.Rpc.ItemRewardProtoOrBuilder>(
-                getItem(),
-                getParentForChildren(),
-                isClean());
-        item_ = null;
-      }
-      return itemBuilder_;
-    }
-
-    private int stardust_ ;
-    /**
-     * <code>int32 stardust = 4;</code>
-     * @return The stardust.
-     */
-    public int getStardust() {
-      return stardust_;
-    }
-    /**
-     * <code>int32 stardust = 4;</code>
-     * @param value The stardust to set.
-     * @return This builder for chaining.
-     */
-    public Builder setStardust(int value) {
-      
-      stardust_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 stardust = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearStardust() {
-      
-      stardust_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private POGOProtos.Rpc.PokemonCandyRewardProto candy_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonCandyRewardProto, POGOProtos.Rpc.PokemonCandyRewardProto.Builder, POGOProtos.Rpc.PokemonCandyRewardProtoOrBuilder> candyBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-     * @return Whether the candy field is set.
-     */
-    public boolean hasCandy() {
-      return candyBuilder_ != null || candy_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-     * @return The candy.
-     */
-    public POGOProtos.Rpc.PokemonCandyRewardProto getCandy() {
-      if (candyBuilder_ == null) {
-        return candy_ == null ? POGOProtos.Rpc.PokemonCandyRewardProto.getDefaultInstance() : candy_;
-      } else {
-        return candyBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-     */
-    public Builder setCandy(POGOProtos.Rpc.PokemonCandyRewardProto value) {
-      if (candyBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        candy_ = value;
-        onChanged();
-      } else {
-        candyBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-     */
-    public Builder setCandy(
-        POGOProtos.Rpc.PokemonCandyRewardProto.Builder builderForValue) {
-      if (candyBuilder_ == null) {
-        candy_ = builderForValue.build();
-        onChanged();
-      } else {
-        candyBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-     */
-    public Builder mergeCandy(POGOProtos.Rpc.PokemonCandyRewardProto value) {
-      if (candyBuilder_ == null) {
-        if (candy_ != null) {
-          candy_ =
-            POGOProtos.Rpc.PokemonCandyRewardProto.newBuilder(candy_).mergeFrom(value).buildPartial();
-        } else {
-          candy_ = value;
-        }
-        onChanged();
-      } else {
-        candyBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-     */
-    public Builder clearCandy() {
-      if (candyBuilder_ == null) {
-        candy_ = null;
-        onChanged();
-      } else {
-        candy_ = null;
-        candyBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-     */
-    public POGOProtos.Rpc.PokemonCandyRewardProto.Builder getCandyBuilder() {
-      
-      onChanged();
-      return getCandyFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-     */
-    public POGOProtos.Rpc.PokemonCandyRewardProtoOrBuilder getCandyOrBuilder() {
-      if (candyBuilder_ != null) {
-        return candyBuilder_.getMessageOrBuilder();
-      } else {
-        return candy_ == null ?
-            POGOProtos.Rpc.PokemonCandyRewardProto.getDefaultInstance() : candy_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonCandyRewardProto candy = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonCandyRewardProto, POGOProtos.Rpc.PokemonCandyRewardProto.Builder, POGOProtos.Rpc.PokemonCandyRewardProtoOrBuilder> 
-        getCandyFieldBuilder() {
-      if (candyBuilder_ == null) {
-        candyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PokemonCandyRewardProto, POGOProtos.Rpc.PokemonCandyRewardProto.Builder, POGOProtos.Rpc.PokemonCandyRewardProtoOrBuilder>(
-                getCandy(),
-                getParentForChildren(),
-                isClean());
-        candy_ = null;
-      }
-      return candyBuilder_;
-    }
-
-    private java.lang.Object avatarTemplateId_ = "";
-    /**
-     * <code>string avatar_template_id = 6;</code>
-     * @return The avatarTemplateId.
-     */
-    public java.lang.String getAvatarTemplateId() {
-      java.lang.Object ref = avatarTemplateId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        avatarTemplateId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string avatar_template_id = 6;</code>
-     * @return The bytes for avatarTemplateId.
-     */
-    public com.google.protobuf.ByteString
-        getAvatarTemplateIdBytes() {
-      java.lang.Object ref = avatarTemplateId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        avatarTemplateId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string avatar_template_id = 6;</code>
-     * @param value The avatarTemplateId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setAvatarTemplateId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      avatarTemplateId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string avatar_template_id = 6;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearAvatarTemplateId() {
-      
-      avatarTemplateId_ = getDefaultInstance().getAvatarTemplateId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string avatar_template_id = 6;</code>
-     * @param value The bytes for avatarTemplateId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setAvatarTemplateIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      avatarTemplateId_ = value;
-      onChanged();
-      return this;
-    }
-
-    private java.lang.Object questTemplateId_ = "";
-    /**
-     * <code>string quest_template_id = 7;</code>
-     * @return The questTemplateId.
-     */
-    public java.lang.String getQuestTemplateId() {
-      java.lang.Object ref = questTemplateId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        questTemplateId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string quest_template_id = 7;</code>
-     * @return The bytes for questTemplateId.
-     */
-    public com.google.protobuf.ByteString
-        getQuestTemplateIdBytes() {
-      java.lang.Object ref = questTemplateId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        questTemplateId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string quest_template_id = 7;</code>
-     * @param value The questTemplateId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setQuestTemplateId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      questTemplateId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string quest_template_id = 7;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearQuestTemplateId() {
-      
-      questTemplateId_ = getDefaultInstance().getQuestTemplateId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string quest_template_id = 7;</code>
-     * @param value The bytes for questTemplateId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setQuestTemplateIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      questTemplateId_ = value;
-      onChanged();
-      return this;
-    }
-
-    private POGOProtos.Rpc.PokemonEncounterRewardProto pokemonEncounter_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonEncounterRewardProto, POGOProtos.Rpc.PokemonEncounterRewardProto.Builder, POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder> pokemonEncounterBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-     * @return Whether the pokemonEncounter field is set.
-     */
-    public boolean hasPokemonEncounter() {
-      return pokemonEncounterBuilder_ != null || pokemonEncounter_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-     * @return The pokemonEncounter.
-     */
-    public POGOProtos.Rpc.PokemonEncounterRewardProto getPokemonEncounter() {
-      if (pokemonEncounterBuilder_ == null) {
-        return pokemonEncounter_ == null ? POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance() : pokemonEncounter_;
-      } else {
-        return pokemonEncounterBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-     */
-    public Builder setPokemonEncounter(POGOProtos.Rpc.PokemonEncounterRewardProto value) {
-      if (pokemonEncounterBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        pokemonEncounter_ = value;
-        onChanged();
-      } else {
-        pokemonEncounterBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-     */
-    public Builder setPokemonEncounter(
-        POGOProtos.Rpc.PokemonEncounterRewardProto.Builder builderForValue) {
-      if (pokemonEncounterBuilder_ == null) {
-        pokemonEncounter_ = builderForValue.build();
-        onChanged();
-      } else {
-        pokemonEncounterBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-     */
-    public Builder mergePokemonEncounter(POGOProtos.Rpc.PokemonEncounterRewardProto value) {
-      if (pokemonEncounterBuilder_ == null) {
-        if (pokemonEncounter_ != null) {
-          pokemonEncounter_ =
-            POGOProtos.Rpc.PokemonEncounterRewardProto.newBuilder(pokemonEncounter_).mergeFrom(value).buildPartial();
-        } else {
-          pokemonEncounter_ = value;
-        }
-        onChanged();
-      } else {
-        pokemonEncounterBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-     */
-    public Builder clearPokemonEncounter() {
-      if (pokemonEncounterBuilder_ == null) {
-        pokemonEncounter_ = null;
-        onChanged();
-      } else {
-        pokemonEncounter_ = null;
-        pokemonEncounterBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-     */
-    public POGOProtos.Rpc.PokemonEncounterRewardProto.Builder getPokemonEncounterBuilder() {
-      
-      onChanged();
-      return getPokemonEncounterFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-     */
-    public POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder getPokemonEncounterOrBuilder() {
-      if (pokemonEncounterBuilder_ != null) {
-        return pokemonEncounterBuilder_.getMessageOrBuilder();
-      } else {
-        return pokemonEncounter_ == null ?
-            POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance() : pokemonEncounter_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon_encounter = 8;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonEncounterRewardProto, POGOProtos.Rpc.PokemonEncounterRewardProto.Builder, POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder> 
-        getPokemonEncounterFieldBuilder() {
-      if (pokemonEncounterBuilder_ == null) {
-        pokemonEncounterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PokemonEncounterRewardProto, POGOProtos.Rpc.PokemonEncounterRewardProto.Builder, POGOProtos.Rpc.PokemonEncounterRewardProtoOrBuilder>(
-                getPokemonEncounter(),
-                getParentForChildren(),
-                isClean());
-        pokemonEncounter_ = null;
-      }
-      return pokemonEncounterBuilder_;
-    }
-
-    private int pokecoin_ ;
-    /**
-     * <code>int32 pokecoin = 9;</code>
-     * @return The pokecoin.
-     */
-    public int getPokecoin() {
-      return pokecoin_;
-    }
-    /**
-     * <code>int32 pokecoin = 9;</code>
-     * @param value The pokecoin to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPokecoin(int value) {
-      
-      pokecoin_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 pokecoin = 9;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPokecoin() {
-      
-      pokecoin_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private POGOProtos.Rpc.StickerRewardProto sticker_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.StickerRewardProto, POGOProtos.Rpc.StickerRewardProto.Builder, POGOProtos.Rpc.StickerRewardProtoOrBuilder> stickerBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-     * @return Whether the sticker field is set.
-     */
-    public boolean hasSticker() {
-      return stickerBuilder_ != null || sticker_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-     * @return The sticker.
-     */
-    public POGOProtos.Rpc.StickerRewardProto getSticker() {
-      if (stickerBuilder_ == null) {
-        return sticker_ == null ? POGOProtos.Rpc.StickerRewardProto.getDefaultInstance() : sticker_;
-      } else {
-        return stickerBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-     */
-    public Builder setSticker(POGOProtos.Rpc.StickerRewardProto value) {
-      if (stickerBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        sticker_ = value;
-        onChanged();
-      } else {
-        stickerBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-     */
-    public Builder setSticker(
-        POGOProtos.Rpc.StickerRewardProto.Builder builderForValue) {
-      if (stickerBuilder_ == null) {
-        sticker_ = builderForValue.build();
-        onChanged();
-      } else {
-        stickerBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-     */
-    public Builder mergeSticker(POGOProtos.Rpc.StickerRewardProto value) {
-      if (stickerBuilder_ == null) {
-        if (sticker_ != null) {
-          sticker_ =
-            POGOProtos.Rpc.StickerRewardProto.newBuilder(sticker_).mergeFrom(value).buildPartial();
-        } else {
-          sticker_ = value;
-        }
-        onChanged();
-      } else {
-        stickerBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-     */
-    public Builder clearSticker() {
-      if (stickerBuilder_ == null) {
-        sticker_ = null;
-        onChanged();
-      } else {
-        sticker_ = null;
-        stickerBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-     */
-    public POGOProtos.Rpc.StickerRewardProto.Builder getStickerBuilder() {
-      
-      onChanged();
-      return getStickerFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-     */
-    public POGOProtos.Rpc.StickerRewardProtoOrBuilder getStickerOrBuilder() {
-      if (stickerBuilder_ != null) {
-        return stickerBuilder_.getMessageOrBuilder();
-      } else {
-        return sticker_ == null ?
-            POGOProtos.Rpc.StickerRewardProto.getDefaultInstance() : sticker_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.StickerRewardProto, POGOProtos.Rpc.StickerRewardProto.Builder, POGOProtos.Rpc.StickerRewardProtoOrBuilder> 
-        getStickerFieldBuilder() {
-      if (stickerBuilder_ == null) {
-        stickerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.StickerRewardProto, POGOProtos.Rpc.StickerRewardProto.Builder, POGOProtos.Rpc.StickerRewardProtoOrBuilder>(
-                getSticker(),
-                getParentForChildren(),
-                isClean());
-        sticker_ = null;
-      }
-      return stickerBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

@@ -99,4 +99,124 @@ public interface ArPhotoSessionProtoOrBuilder extends
    */
   com.google.protobuf.ByteString
       getModelUrlBytes();
+
+  /**
+   * <code>string ardk_version = 13;</code>
+   * @return The ardkVersion.
+   */
+  java.lang.String getArdkVersion();
+  /**
+   * <code>string ardk_version = 13;</code>
+   * @return The bytes for ardkVersion.
+   */
+  com.google.protobuf.ByteString
+      getArdkVersionBytes();
+
+  /**
+   * <code>int32 average_framerate = 14;</code>
+   * @return The averageFramerate.
+   */
+  int getAverageFramerate();
+
+  /**
+   * <code>float average_battery_per_min = 15;</code>
+   * @return The averageBatteryPerMin.
+   */
+  float getAverageBatteryPerMin();
+
+  /**
+   * <code>float average_cpu_usage = 16;</code>
+   * @return The averageCpuUsage.
+   */
+  float getAverageCpuUsage();
+
+  /**
+   * <code>float average_gpu_usage = 17;</code>
+   * @return The averageGpuUsage.
+   */
+  float getAverageGpuUsage();
+
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+   */
+  java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample> 
+      getFramerateSamplesList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+   */
+  POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample getFramerateSamples(int index);
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+   */
+  int getFramerateSamplesCount();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+   */
+  java.util.List<? extends POGOProtos.Rpc.ArPhotoSessionProto.FramerateSampleOrBuilder> 
+      getFramerateSamplesOrBuilderList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+   */
+  POGOProtos.Rpc.ArPhotoSessionProto.FramerateSampleOrBuilder getFramerateSamplesOrBuilder(
+      int index);
+
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+   */
+  java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.BatterySample> 
+      getBatterySamplesList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+   */
+  POGOProtos.Rpc.ArPhotoSessionProto.BatterySample getBatterySamples(int index);
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+   */
+  int getBatterySamplesCount();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+   */
+  java.util.List<? extends POGOProtos.Rpc.ArPhotoSessionProto.BatterySampleOrBuilder> 
+      getBatterySamplesOrBuilderList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+   */
+  POGOProtos.Rpc.ArPhotoSessionProto.BatterySampleOrBuilder getBatterySamplesOrBuilder(
+      int index);
+
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+   */
+  java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample> 
+      getProcessorSamplesList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+   */
+  POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample getProcessorSamples(int index);
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+   */
+  int getProcessorSamplesCount();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+   */
+  java.util.List<? extends POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSampleOrBuilder> 
+      getProcessorSamplesOrBuilderList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+   */
+  POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSampleOrBuilder getProcessorSamplesOrBuilder(
+      int index);
+
+  /**
+   * <code>int32 session_start_to_plane_detection_ms = 21;</code>
+   * @return The sessionStartToPlaneDetectionMs.
+   */
+  int getSessionStartToPlaneDetectionMs();
+
+  /**
+   * <code>int32 plane_detection_to_user_interaction_ms = 22;</code>
+   * @return The planeDetectionToUserInteractionMs.
+   */
+  int getPlaneDetectionToUserInteractionMs();
 }

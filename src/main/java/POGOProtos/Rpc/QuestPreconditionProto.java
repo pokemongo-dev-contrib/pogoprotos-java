@@ -17,7 +17,6 @@ private static final long serialVersionUID = 0L;
   }
   private QuestPreconditionProto() {
     type_ = 0;
-    questTemplateId_ = "";
   }
 
   @java.lang.Override
@@ -58,73 +57,78 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             java.lang.String s = input.readStringRequireUtf8();
-
-            questTemplateId_ = s;
+            conditionCase_ = 2;
+            condition_ = s;
             break;
           }
           case 26: {
             POGOProtos.Rpc.QuestPreconditionProto.Level.Builder subBuilder = null;
-            if (level_ != null) {
-              subBuilder = level_.toBuilder();
+            if (conditionCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.QuestPreconditionProto.Level) condition_).toBuilder();
             }
-            level_ = input.readMessage(POGOProtos.Rpc.QuestPreconditionProto.Level.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.QuestPreconditionProto.Level.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(level_);
-              level_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.QuestPreconditionProto.Level) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 3;
             break;
           }
           case 34: {
             POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder subBuilder = null;
-            if (medal_ != null) {
-              subBuilder = medal_.toBuilder();
+            if (conditionCase_ == 4) {
+              subBuilder = ((POGOProtos.Rpc.QuestPreconditionProto.Medal) condition_).toBuilder();
             }
-            medal_ = input.readMessage(POGOProtos.Rpc.QuestPreconditionProto.Medal.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.QuestPreconditionProto.Medal.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(medal_);
-              medal_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.QuestPreconditionProto.Medal) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 4;
             break;
           }
           case 42: {
             POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder subBuilder = null;
-            if (quests_ != null) {
-              subBuilder = quests_.toBuilder();
+            if (conditionCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.QuestPreconditionProto.Quests) condition_).toBuilder();
             }
-            quests_ = input.readMessage(POGOProtos.Rpc.QuestPreconditionProto.Quests.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.QuestPreconditionProto.Quests.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(quests_);
-              quests_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.QuestPreconditionProto.Quests) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 5;
             break;
           }
           case 50: {
             POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder subBuilder = null;
-            if (monthYearBucket_ != null) {
-              subBuilder = monthYearBucket_.toBuilder();
+            if (conditionCase_ == 6) {
+              subBuilder = ((POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket) condition_).toBuilder();
             }
-            monthYearBucket_ = input.readMessage(POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(monthYearBucket_);
-              monthYearBucket_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 6;
             break;
           }
           case 58: {
             POGOProtos.Rpc.QuestPreconditionProto.Group.Builder subBuilder = null;
-            if (group_ != null) {
-              subBuilder = group_.toBuilder();
+            if (conditionCase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.QuestPreconditionProto.Group) condition_).toBuilder();
             }
-            group_ = input.readMessage(POGOProtos.Rpc.QuestPreconditionProto.Group.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.QuestPreconditionProto.Group.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(group_);
-              group_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.QuestPreconditionProto.Group) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 7;
             break;
           }
           default: {
@@ -3667,6 +3671,240 @@ private static final long serialVersionUID = 0L;
 
   }
 
+  private int conditionCase_ = 0;
+  private java.lang.Object condition_;
+  public enum ConditionCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    QUEST_TEMPLATE_ID(2),
+    LEVEL(3),
+    MEDAL(4),
+    QUESTS(5),
+    MONTH_YEAR_BUCKET(6),
+    GROUP(7),
+    CONDITION_NOT_SET(0);
+    private final int value;
+    private ConditionCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static ConditionCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static ConditionCase forNumber(int value) {
+      switch (value) {
+        case 2: return QUEST_TEMPLATE_ID;
+        case 3: return LEVEL;
+        case 4: return MEDAL;
+        case 5: return QUESTS;
+        case 6: return MONTH_YEAR_BUCKET;
+        case 7: return GROUP;
+        case 0: return CONDITION_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public ConditionCase
+  getConditionCase() {
+    return ConditionCase.forNumber(
+        conditionCase_);
+  }
+
+  public static final int QUEST_TEMPLATE_ID_FIELD_NUMBER = 2;
+  /**
+   * <code>string quest_template_id = 2;</code>
+   * @return The questTemplateId.
+   */
+  public java.lang.String getQuestTemplateId() {
+    java.lang.Object ref = "";
+    if (conditionCase_ == 2) {
+      ref = condition_;
+    }
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      if (conditionCase_ == 2) {
+        condition_ = s;
+      }
+      return s;
+    }
+  }
+  /**
+   * <code>string quest_template_id = 2;</code>
+   * @return The bytes for questTemplateId.
+   */
+  public com.google.protobuf.ByteString
+      getQuestTemplateIdBytes() {
+    java.lang.Object ref = "";
+    if (conditionCase_ == 2) {
+      ref = condition_;
+    }
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      if (conditionCase_ == 2) {
+        condition_ = b;
+      }
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int LEVEL_FIELD_NUMBER = 3;
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+   * @return Whether the level field is set.
+   */
+  public boolean hasLevel() {
+    return conditionCase_ == 3;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+   * @return The level.
+   */
+  public POGOProtos.Rpc.QuestPreconditionProto.Level getLevel() {
+    if (conditionCase_ == 3) {
+       return (POGOProtos.Rpc.QuestPreconditionProto.Level) condition_;
+    }
+    return POGOProtos.Rpc.QuestPreconditionProto.Level.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+   */
+  public POGOProtos.Rpc.QuestPreconditionProto.LevelOrBuilder getLevelOrBuilder() {
+    if (conditionCase_ == 3) {
+       return (POGOProtos.Rpc.QuestPreconditionProto.Level) condition_;
+    }
+    return POGOProtos.Rpc.QuestPreconditionProto.Level.getDefaultInstance();
+  }
+
+  public static final int MEDAL_FIELD_NUMBER = 4;
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+   * @return Whether the medal field is set.
+   */
+  public boolean hasMedal() {
+    return conditionCase_ == 4;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+   * @return The medal.
+   */
+  public POGOProtos.Rpc.QuestPreconditionProto.Medal getMedal() {
+    if (conditionCase_ == 4) {
+       return (POGOProtos.Rpc.QuestPreconditionProto.Medal) condition_;
+    }
+    return POGOProtos.Rpc.QuestPreconditionProto.Medal.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+   */
+  public POGOProtos.Rpc.QuestPreconditionProto.MedalOrBuilder getMedalOrBuilder() {
+    if (conditionCase_ == 4) {
+       return (POGOProtos.Rpc.QuestPreconditionProto.Medal) condition_;
+    }
+    return POGOProtos.Rpc.QuestPreconditionProto.Medal.getDefaultInstance();
+  }
+
+  public static final int QUESTS_FIELD_NUMBER = 5;
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+   * @return Whether the quests field is set.
+   */
+  public boolean hasQuests() {
+    return conditionCase_ == 5;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+   * @return The quests.
+   */
+  public POGOProtos.Rpc.QuestPreconditionProto.Quests getQuests() {
+    if (conditionCase_ == 5) {
+       return (POGOProtos.Rpc.QuestPreconditionProto.Quests) condition_;
+    }
+    return POGOProtos.Rpc.QuestPreconditionProto.Quests.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+   */
+  public POGOProtos.Rpc.QuestPreconditionProto.QuestsOrBuilder getQuestsOrBuilder() {
+    if (conditionCase_ == 5) {
+       return (POGOProtos.Rpc.QuestPreconditionProto.Quests) condition_;
+    }
+    return POGOProtos.Rpc.QuestPreconditionProto.Quests.getDefaultInstance();
+  }
+
+  public static final int MONTH_YEAR_BUCKET_FIELD_NUMBER = 6;
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+   * @return Whether the monthYearBucket field is set.
+   */
+  public boolean hasMonthYearBucket() {
+    return conditionCase_ == 6;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+   * @return The monthYearBucket.
+   */
+  public POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket getMonthYearBucket() {
+    if (conditionCase_ == 6) {
+       return (POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket) condition_;
+    }
+    return POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+   */
+  public POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucketOrBuilder getMonthYearBucketOrBuilder() {
+    if (conditionCase_ == 6) {
+       return (POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket) condition_;
+    }
+    return POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.getDefaultInstance();
+  }
+
+  public static final int GROUP_FIELD_NUMBER = 7;
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+   * @return Whether the group field is set.
+   */
+  public boolean hasGroup() {
+    return conditionCase_ == 7;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+   * @return The group.
+   */
+  public POGOProtos.Rpc.QuestPreconditionProto.Group getGroup() {
+    if (conditionCase_ == 7) {
+       return (POGOProtos.Rpc.QuestPreconditionProto.Group) condition_;
+    }
+    return POGOProtos.Rpc.QuestPreconditionProto.Group.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+   */
+  public POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder getGroupOrBuilder() {
+    if (conditionCase_ == 7) {
+       return (POGOProtos.Rpc.QuestPreconditionProto.Group) condition_;
+    }
+    return POGOProtos.Rpc.QuestPreconditionProto.Group.getDefaultInstance();
+  }
+
   public static final int TYPE_FIELD_NUMBER = 1;
   private int type_;
   /**
@@ -3686,157 +3924,6 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.QuestPreconditionProto.QuestPreconditionType.UNRECOGNIZED : result;
   }
 
-  public static final int QUEST_TEMPLATE_ID_FIELD_NUMBER = 2;
-  private volatile java.lang.Object questTemplateId_;
-  /**
-   * <code>string quest_template_id = 2;</code>
-   * @return The questTemplateId.
-   */
-  public java.lang.String getQuestTemplateId() {
-    java.lang.Object ref = questTemplateId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      questTemplateId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string quest_template_id = 2;</code>
-   * @return The bytes for questTemplateId.
-   */
-  public com.google.protobuf.ByteString
-      getQuestTemplateIdBytes() {
-    java.lang.Object ref = questTemplateId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      questTemplateId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int LEVEL_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.QuestPreconditionProto.Level level_;
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-   * @return Whether the level field is set.
-   */
-  public boolean hasLevel() {
-    return level_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-   * @return The level.
-   */
-  public POGOProtos.Rpc.QuestPreconditionProto.Level getLevel() {
-    return level_ == null ? POGOProtos.Rpc.QuestPreconditionProto.Level.getDefaultInstance() : level_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-   */
-  public POGOProtos.Rpc.QuestPreconditionProto.LevelOrBuilder getLevelOrBuilder() {
-    return getLevel();
-  }
-
-  public static final int MEDAL_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.QuestPreconditionProto.Medal medal_;
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-   * @return Whether the medal field is set.
-   */
-  public boolean hasMedal() {
-    return medal_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-   * @return The medal.
-   */
-  public POGOProtos.Rpc.QuestPreconditionProto.Medal getMedal() {
-    return medal_ == null ? POGOProtos.Rpc.QuestPreconditionProto.Medal.getDefaultInstance() : medal_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-   */
-  public POGOProtos.Rpc.QuestPreconditionProto.MedalOrBuilder getMedalOrBuilder() {
-    return getMedal();
-  }
-
-  public static final int QUESTS_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.QuestPreconditionProto.Quests quests_;
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-   * @return Whether the quests field is set.
-   */
-  public boolean hasQuests() {
-    return quests_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-   * @return The quests.
-   */
-  public POGOProtos.Rpc.QuestPreconditionProto.Quests getQuests() {
-    return quests_ == null ? POGOProtos.Rpc.QuestPreconditionProto.Quests.getDefaultInstance() : quests_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-   */
-  public POGOProtos.Rpc.QuestPreconditionProto.QuestsOrBuilder getQuestsOrBuilder() {
-    return getQuests();
-  }
-
-  public static final int MONTH_YEAR_BUCKET_FIELD_NUMBER = 6;
-  private POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket monthYearBucket_;
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-   * @return Whether the monthYearBucket field is set.
-   */
-  public boolean hasMonthYearBucket() {
-    return monthYearBucket_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-   * @return The monthYearBucket.
-   */
-  public POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket getMonthYearBucket() {
-    return monthYearBucket_ == null ? POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.getDefaultInstance() : monthYearBucket_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-   */
-  public POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucketOrBuilder getMonthYearBucketOrBuilder() {
-    return getMonthYearBucket();
-  }
-
-  public static final int GROUP_FIELD_NUMBER = 7;
-  private POGOProtos.Rpc.QuestPreconditionProto.Group group_;
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-   * @return Whether the group field is set.
-   */
-  public boolean hasGroup() {
-    return group_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-   * @return The group.
-   */
-  public POGOProtos.Rpc.QuestPreconditionProto.Group getGroup() {
-    return group_ == null ? POGOProtos.Rpc.QuestPreconditionProto.Group.getDefaultInstance() : group_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-   */
-  public POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder getGroupOrBuilder() {
-    return getGroup();
-  }
-
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -3854,23 +3941,23 @@ private static final long serialVersionUID = 0L;
     if (type_ != POGOProtos.Rpc.QuestPreconditionProto.QuestPreconditionType.QUEST_PRECONDITION_UNSET_QUESTPRECONDITIONTYPE.getNumber()) {
       output.writeEnum(1, type_);
     }
-    if (!getQuestTemplateIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, questTemplateId_);
+    if (conditionCase_ == 2) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, condition_);
     }
-    if (level_ != null) {
-      output.writeMessage(3, getLevel());
+    if (conditionCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.QuestPreconditionProto.Level) condition_);
     }
-    if (medal_ != null) {
-      output.writeMessage(4, getMedal());
+    if (conditionCase_ == 4) {
+      output.writeMessage(4, (POGOProtos.Rpc.QuestPreconditionProto.Medal) condition_);
     }
-    if (quests_ != null) {
-      output.writeMessage(5, getQuests());
+    if (conditionCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.QuestPreconditionProto.Quests) condition_);
     }
-    if (monthYearBucket_ != null) {
-      output.writeMessage(6, getMonthYearBucket());
+    if (conditionCase_ == 6) {
+      output.writeMessage(6, (POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket) condition_);
     }
-    if (group_ != null) {
-      output.writeMessage(7, getGroup());
+    if (conditionCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.QuestPreconditionProto.Group) condition_);
     }
     unknownFields.writeTo(output);
   }
@@ -3885,28 +3972,28 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, type_);
     }
-    if (!getQuestTemplateIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, questTemplateId_);
+    if (conditionCase_ == 2) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, condition_);
     }
-    if (level_ != null) {
+    if (conditionCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getLevel());
+        .computeMessageSize(3, (POGOProtos.Rpc.QuestPreconditionProto.Level) condition_);
     }
-    if (medal_ != null) {
+    if (conditionCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getMedal());
+        .computeMessageSize(4, (POGOProtos.Rpc.QuestPreconditionProto.Medal) condition_);
     }
-    if (quests_ != null) {
+    if (conditionCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getQuests());
+        .computeMessageSize(5, (POGOProtos.Rpc.QuestPreconditionProto.Quests) condition_);
     }
-    if (monthYearBucket_ != null) {
+    if (conditionCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getMonthYearBucket());
+        .computeMessageSize(6, (POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket) condition_);
     }
-    if (group_ != null) {
+    if (conditionCase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getGroup());
+        .computeMessageSize(7, (POGOProtos.Rpc.QuestPreconditionProto.Group) condition_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -3924,32 +4011,34 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.QuestPreconditionProto other = (POGOProtos.Rpc.QuestPreconditionProto) obj;
 
     if (type_ != other.type_) return false;
-    if (!getQuestTemplateId()
-        .equals(other.getQuestTemplateId())) return false;
-    if (hasLevel() != other.hasLevel()) return false;
-    if (hasLevel()) {
-      if (!getLevel()
-          .equals(other.getLevel())) return false;
-    }
-    if (hasMedal() != other.hasMedal()) return false;
-    if (hasMedal()) {
-      if (!getMedal()
-          .equals(other.getMedal())) return false;
-    }
-    if (hasQuests() != other.hasQuests()) return false;
-    if (hasQuests()) {
-      if (!getQuests()
-          .equals(other.getQuests())) return false;
-    }
-    if (hasMonthYearBucket() != other.hasMonthYearBucket()) return false;
-    if (hasMonthYearBucket()) {
-      if (!getMonthYearBucket()
-          .equals(other.getMonthYearBucket())) return false;
-    }
-    if (hasGroup() != other.hasGroup()) return false;
-    if (hasGroup()) {
-      if (!getGroup()
-          .equals(other.getGroup())) return false;
+    if (!getConditionCase().equals(other.getConditionCase())) return false;
+    switch (conditionCase_) {
+      case 2:
+        if (!getQuestTemplateId()
+            .equals(other.getQuestTemplateId())) return false;
+        break;
+      case 3:
+        if (!getLevel()
+            .equals(other.getLevel())) return false;
+        break;
+      case 4:
+        if (!getMedal()
+            .equals(other.getMedal())) return false;
+        break;
+      case 5:
+        if (!getQuests()
+            .equals(other.getQuests())) return false;
+        break;
+      case 6:
+        if (!getMonthYearBucket()
+            .equals(other.getMonthYearBucket())) return false;
+        break;
+      case 7:
+        if (!getGroup()
+            .equals(other.getGroup())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -3964,27 +4053,33 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TYPE_FIELD_NUMBER;
     hash = (53 * hash) + type_;
-    hash = (37 * hash) + QUEST_TEMPLATE_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getQuestTemplateId().hashCode();
-    if (hasLevel()) {
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel().hashCode();
-    }
-    if (hasMedal()) {
-      hash = (37 * hash) + MEDAL_FIELD_NUMBER;
-      hash = (53 * hash) + getMedal().hashCode();
-    }
-    if (hasQuests()) {
-      hash = (37 * hash) + QUESTS_FIELD_NUMBER;
-      hash = (53 * hash) + getQuests().hashCode();
-    }
-    if (hasMonthYearBucket()) {
-      hash = (37 * hash) + MONTH_YEAR_BUCKET_FIELD_NUMBER;
-      hash = (53 * hash) + getMonthYearBucket().hashCode();
-    }
-    if (hasGroup()) {
-      hash = (37 * hash) + GROUP_FIELD_NUMBER;
-      hash = (53 * hash) + getGroup().hashCode();
+    switch (conditionCase_) {
+      case 2:
+        hash = (37 * hash) + QUEST_TEMPLATE_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getQuestTemplateId().hashCode();
+        break;
+      case 3:
+        hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+        hash = (53 * hash) + getLevel().hashCode();
+        break;
+      case 4:
+        hash = (37 * hash) + MEDAL_FIELD_NUMBER;
+        hash = (53 * hash) + getMedal().hashCode();
+        break;
+      case 5:
+        hash = (37 * hash) + QUESTS_FIELD_NUMBER;
+        hash = (53 * hash) + getQuests().hashCode();
+        break;
+      case 6:
+        hash = (37 * hash) + MONTH_YEAR_BUCKET_FIELD_NUMBER;
+        hash = (53 * hash) + getMonthYearBucket().hashCode();
+        break;
+      case 7:
+        hash = (37 * hash) + GROUP_FIELD_NUMBER;
+        hash = (53 * hash) + getGroup().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -4121,38 +4216,8 @@ private static final long serialVersionUID = 0L;
       super.clear();
       type_ = 0;
 
-      questTemplateId_ = "";
-
-      if (levelBuilder_ == null) {
-        level_ = null;
-      } else {
-        level_ = null;
-        levelBuilder_ = null;
-      }
-      if (medalBuilder_ == null) {
-        medal_ = null;
-      } else {
-        medal_ = null;
-        medalBuilder_ = null;
-      }
-      if (questsBuilder_ == null) {
-        quests_ = null;
-      } else {
-        quests_ = null;
-        questsBuilder_ = null;
-      }
-      if (monthYearBucketBuilder_ == null) {
-        monthYearBucket_ = null;
-      } else {
-        monthYearBucket_ = null;
-        monthYearBucketBuilder_ = null;
-      }
-      if (groupBuilder_ == null) {
-        group_ = null;
-      } else {
-        group_ = null;
-        groupBuilder_ = null;
-      }
+      conditionCase_ = 0;
+      condition_ = null;
       return this;
     }
 
@@ -4179,33 +4244,46 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.QuestPreconditionProto buildPartial() {
       POGOProtos.Rpc.QuestPreconditionProto result = new POGOProtos.Rpc.QuestPreconditionProto(this);
+      if (conditionCase_ == 2) {
+        result.condition_ = condition_;
+      }
+      if (conditionCase_ == 3) {
+        if (levelBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = levelBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 4) {
+        if (medalBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = medalBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 5) {
+        if (questsBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = questsBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 6) {
+        if (monthYearBucketBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = monthYearBucketBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 7) {
+        if (groupBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = groupBuilder_.build();
+        }
+      }
       result.type_ = type_;
-      result.questTemplateId_ = questTemplateId_;
-      if (levelBuilder_ == null) {
-        result.level_ = level_;
-      } else {
-        result.level_ = levelBuilder_.build();
-      }
-      if (medalBuilder_ == null) {
-        result.medal_ = medal_;
-      } else {
-        result.medal_ = medalBuilder_.build();
-      }
-      if (questsBuilder_ == null) {
-        result.quests_ = quests_;
-      } else {
-        result.quests_ = questsBuilder_.build();
-      }
-      if (monthYearBucketBuilder_ == null) {
-        result.monthYearBucket_ = monthYearBucket_;
-      } else {
-        result.monthYearBucket_ = monthYearBucketBuilder_.build();
-      }
-      if (groupBuilder_ == null) {
-        result.group_ = group_;
-      } else {
-        result.group_ = groupBuilder_.build();
-      }
+      result.conditionCase_ = conditionCase_;
       onBuilt();
       return result;
     }
@@ -4257,24 +4335,36 @@ private static final long serialVersionUID = 0L;
       if (other.type_ != 0) {
         setTypeValue(other.getTypeValue());
       }
-      if (!other.getQuestTemplateId().isEmpty()) {
-        questTemplateId_ = other.questTemplateId_;
-        onChanged();
-      }
-      if (other.hasLevel()) {
-        mergeLevel(other.getLevel());
-      }
-      if (other.hasMedal()) {
-        mergeMedal(other.getMedal());
-      }
-      if (other.hasQuests()) {
-        mergeQuests(other.getQuests());
-      }
-      if (other.hasMonthYearBucket()) {
-        mergeMonthYearBucket(other.getMonthYearBucket());
-      }
-      if (other.hasGroup()) {
-        mergeGroup(other.getGroup());
+      switch (other.getConditionCase()) {
+        case QUEST_TEMPLATE_ID: {
+          conditionCase_ = 2;
+          condition_ = other.condition_;
+          onChanged();
+          break;
+        }
+        case LEVEL: {
+          mergeLevel(other.getLevel());
+          break;
+        }
+        case MEDAL: {
+          mergeMedal(other.getMedal());
+          break;
+        }
+        case QUESTS: {
+          mergeQuests(other.getQuests());
+          break;
+        }
+        case MONTH_YEAR_BUCKET: {
+          mergeMonthYearBucket(other.getMonthYearBucket());
+          break;
+        }
+        case GROUP: {
+          mergeGroup(other.getGroup());
+          break;
+        }
+        case CONDITION_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -4303,6 +4393,798 @@ private static final long serialVersionUID = 0L;
         }
       }
       return this;
+    }
+    private int conditionCase_ = 0;
+    private java.lang.Object condition_;
+    public ConditionCase
+        getConditionCase() {
+      return ConditionCase.forNumber(
+          conditionCase_);
+    }
+
+    public Builder clearCondition() {
+      conditionCase_ = 0;
+      condition_ = null;
+      onChanged();
+      return this;
+    }
+
+
+    /**
+     * <code>string quest_template_id = 2;</code>
+     * @return The questTemplateId.
+     */
+    public java.lang.String getQuestTemplateId() {
+      java.lang.Object ref = "";
+      if (conditionCase_ == 2) {
+        ref = condition_;
+      }
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (conditionCase_ == 2) {
+          condition_ = s;
+        }
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string quest_template_id = 2;</code>
+     * @return The bytes for questTemplateId.
+     */
+    public com.google.protobuf.ByteString
+        getQuestTemplateIdBytes() {
+      java.lang.Object ref = "";
+      if (conditionCase_ == 2) {
+        ref = condition_;
+      }
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        if (conditionCase_ == 2) {
+          condition_ = b;
+        }
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string quest_template_id = 2;</code>
+     * @param value The questTemplateId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setQuestTemplateId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  conditionCase_ = 2;
+      condition_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string quest_template_id = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearQuestTemplateId() {
+      if (conditionCase_ == 2) {
+        conditionCase_ = 0;
+        condition_ = null;
+        onChanged();
+      }
+      return this;
+    }
+    /**
+     * <code>string quest_template_id = 2;</code>
+     * @param value The bytes for questTemplateId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setQuestTemplateIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      conditionCase_ = 2;
+      condition_ = value;
+      onChanged();
+      return this;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestPreconditionProto.Level, POGOProtos.Rpc.QuestPreconditionProto.Level.Builder, POGOProtos.Rpc.QuestPreconditionProto.LevelOrBuilder> levelBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+     * @return Whether the level field is set.
+     */
+    public boolean hasLevel() {
+      return conditionCase_ == 3;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+     * @return The level.
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.Level getLevel() {
+      if (levelBuilder_ == null) {
+        if (conditionCase_ == 3) {
+          return (POGOProtos.Rpc.QuestPreconditionProto.Level) condition_;
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Level.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 3) {
+          return levelBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Level.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+     */
+    public Builder setLevel(POGOProtos.Rpc.QuestPreconditionProto.Level value) {
+      if (levelBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        levelBuilder_.setMessage(value);
+      }
+      conditionCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+     */
+    public Builder setLevel(
+        POGOProtos.Rpc.QuestPreconditionProto.Level.Builder builderForValue) {
+      if (levelBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        levelBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+     */
+    public Builder mergeLevel(POGOProtos.Rpc.QuestPreconditionProto.Level value) {
+      if (levelBuilder_ == null) {
+        if (conditionCase_ == 3 &&
+            condition_ != POGOProtos.Rpc.QuestPreconditionProto.Level.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.QuestPreconditionProto.Level.newBuilder((POGOProtos.Rpc.QuestPreconditionProto.Level) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 3) {
+          levelBuilder_.mergeFrom(value);
+        }
+        levelBuilder_.setMessage(value);
+      }
+      conditionCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+     */
+    public Builder clearLevel() {
+      if (levelBuilder_ == null) {
+        if (conditionCase_ == 3) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 3) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        levelBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.Level.Builder getLevelBuilder() {
+      return getLevelFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.LevelOrBuilder getLevelOrBuilder() {
+      if ((conditionCase_ == 3) && (levelBuilder_ != null)) {
+        return levelBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 3) {
+          return (POGOProtos.Rpc.QuestPreconditionProto.Level) condition_;
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Level.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestPreconditionProto.Level, POGOProtos.Rpc.QuestPreconditionProto.Level.Builder, POGOProtos.Rpc.QuestPreconditionProto.LevelOrBuilder> 
+        getLevelFieldBuilder() {
+      if (levelBuilder_ == null) {
+        if (!(conditionCase_ == 3)) {
+          condition_ = POGOProtos.Rpc.QuestPreconditionProto.Level.getDefaultInstance();
+        }
+        levelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.QuestPreconditionProto.Level, POGOProtos.Rpc.QuestPreconditionProto.Level.Builder, POGOProtos.Rpc.QuestPreconditionProto.LevelOrBuilder>(
+                (POGOProtos.Rpc.QuestPreconditionProto.Level) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 3;
+      onChanged();;
+      return levelBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestPreconditionProto.Medal, POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder, POGOProtos.Rpc.QuestPreconditionProto.MedalOrBuilder> medalBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+     * @return Whether the medal field is set.
+     */
+    public boolean hasMedal() {
+      return conditionCase_ == 4;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+     * @return The medal.
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.Medal getMedal() {
+      if (medalBuilder_ == null) {
+        if (conditionCase_ == 4) {
+          return (POGOProtos.Rpc.QuestPreconditionProto.Medal) condition_;
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Medal.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 4) {
+          return medalBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Medal.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+     */
+    public Builder setMedal(POGOProtos.Rpc.QuestPreconditionProto.Medal value) {
+      if (medalBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        medalBuilder_.setMessage(value);
+      }
+      conditionCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+     */
+    public Builder setMedal(
+        POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder builderForValue) {
+      if (medalBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        medalBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+     */
+    public Builder mergeMedal(POGOProtos.Rpc.QuestPreconditionProto.Medal value) {
+      if (medalBuilder_ == null) {
+        if (conditionCase_ == 4 &&
+            condition_ != POGOProtos.Rpc.QuestPreconditionProto.Medal.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.QuestPreconditionProto.Medal.newBuilder((POGOProtos.Rpc.QuestPreconditionProto.Medal) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 4) {
+          medalBuilder_.mergeFrom(value);
+        }
+        medalBuilder_.setMessage(value);
+      }
+      conditionCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+     */
+    public Builder clearMedal() {
+      if (medalBuilder_ == null) {
+        if (conditionCase_ == 4) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 4) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        medalBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder getMedalBuilder() {
+      return getMedalFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.MedalOrBuilder getMedalOrBuilder() {
+      if ((conditionCase_ == 4) && (medalBuilder_ != null)) {
+        return medalBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 4) {
+          return (POGOProtos.Rpc.QuestPreconditionProto.Medal) condition_;
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Medal.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestPreconditionProto.Medal, POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder, POGOProtos.Rpc.QuestPreconditionProto.MedalOrBuilder> 
+        getMedalFieldBuilder() {
+      if (medalBuilder_ == null) {
+        if (!(conditionCase_ == 4)) {
+          condition_ = POGOProtos.Rpc.QuestPreconditionProto.Medal.getDefaultInstance();
+        }
+        medalBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.QuestPreconditionProto.Medal, POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder, POGOProtos.Rpc.QuestPreconditionProto.MedalOrBuilder>(
+                (POGOProtos.Rpc.QuestPreconditionProto.Medal) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 4;
+      onChanged();;
+      return medalBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestPreconditionProto.Quests, POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder, POGOProtos.Rpc.QuestPreconditionProto.QuestsOrBuilder> questsBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+     * @return Whether the quests field is set.
+     */
+    public boolean hasQuests() {
+      return conditionCase_ == 5;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+     * @return The quests.
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.Quests getQuests() {
+      if (questsBuilder_ == null) {
+        if (conditionCase_ == 5) {
+          return (POGOProtos.Rpc.QuestPreconditionProto.Quests) condition_;
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Quests.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 5) {
+          return questsBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Quests.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+     */
+    public Builder setQuests(POGOProtos.Rpc.QuestPreconditionProto.Quests value) {
+      if (questsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        questsBuilder_.setMessage(value);
+      }
+      conditionCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+     */
+    public Builder setQuests(
+        POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder builderForValue) {
+      if (questsBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        questsBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+     */
+    public Builder mergeQuests(POGOProtos.Rpc.QuestPreconditionProto.Quests value) {
+      if (questsBuilder_ == null) {
+        if (conditionCase_ == 5 &&
+            condition_ != POGOProtos.Rpc.QuestPreconditionProto.Quests.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.QuestPreconditionProto.Quests.newBuilder((POGOProtos.Rpc.QuestPreconditionProto.Quests) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 5) {
+          questsBuilder_.mergeFrom(value);
+        }
+        questsBuilder_.setMessage(value);
+      }
+      conditionCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+     */
+    public Builder clearQuests() {
+      if (questsBuilder_ == null) {
+        if (conditionCase_ == 5) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 5) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        questsBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder getQuestsBuilder() {
+      return getQuestsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.QuestsOrBuilder getQuestsOrBuilder() {
+      if ((conditionCase_ == 5) && (questsBuilder_ != null)) {
+        return questsBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 5) {
+          return (POGOProtos.Rpc.QuestPreconditionProto.Quests) condition_;
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Quests.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestPreconditionProto.Quests, POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder, POGOProtos.Rpc.QuestPreconditionProto.QuestsOrBuilder> 
+        getQuestsFieldBuilder() {
+      if (questsBuilder_ == null) {
+        if (!(conditionCase_ == 5)) {
+          condition_ = POGOProtos.Rpc.QuestPreconditionProto.Quests.getDefaultInstance();
+        }
+        questsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.QuestPreconditionProto.Quests, POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder, POGOProtos.Rpc.QuestPreconditionProto.QuestsOrBuilder>(
+                (POGOProtos.Rpc.QuestPreconditionProto.Quests) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 5;
+      onChanged();;
+      return questsBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucketOrBuilder> monthYearBucketBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+     * @return Whether the monthYearBucket field is set.
+     */
+    public boolean hasMonthYearBucket() {
+      return conditionCase_ == 6;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+     * @return The monthYearBucket.
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket getMonthYearBucket() {
+      if (monthYearBucketBuilder_ == null) {
+        if (conditionCase_ == 6) {
+          return (POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket) condition_;
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 6) {
+          return monthYearBucketBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+     */
+    public Builder setMonthYearBucket(POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket value) {
+      if (monthYearBucketBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        monthYearBucketBuilder_.setMessage(value);
+      }
+      conditionCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+     */
+    public Builder setMonthYearBucket(
+        POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder builderForValue) {
+      if (monthYearBucketBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        monthYearBucketBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+     */
+    public Builder mergeMonthYearBucket(POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket value) {
+      if (monthYearBucketBuilder_ == null) {
+        if (conditionCase_ == 6 &&
+            condition_ != POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.newBuilder((POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 6) {
+          monthYearBucketBuilder_.mergeFrom(value);
+        }
+        monthYearBucketBuilder_.setMessage(value);
+      }
+      conditionCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+     */
+    public Builder clearMonthYearBucket() {
+      if (monthYearBucketBuilder_ == null) {
+        if (conditionCase_ == 6) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 6) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        monthYearBucketBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder getMonthYearBucketBuilder() {
+      return getMonthYearBucketFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucketOrBuilder getMonthYearBucketOrBuilder() {
+      if ((conditionCase_ == 6) && (monthYearBucketBuilder_ != null)) {
+        return monthYearBucketBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 6) {
+          return (POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket) condition_;
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucketOrBuilder> 
+        getMonthYearBucketFieldBuilder() {
+      if (monthYearBucketBuilder_ == null) {
+        if (!(conditionCase_ == 6)) {
+          condition_ = POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.getDefaultInstance();
+        }
+        monthYearBucketBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucketOrBuilder>(
+                (POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 6;
+      onChanged();;
+      return monthYearBucketBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestPreconditionProto.Group, POGOProtos.Rpc.QuestPreconditionProto.Group.Builder, POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder> groupBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+     * @return Whether the group field is set.
+     */
+    public boolean hasGroup() {
+      return conditionCase_ == 7;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+     * @return The group.
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.Group getGroup() {
+      if (groupBuilder_ == null) {
+        if (conditionCase_ == 7) {
+          return (POGOProtos.Rpc.QuestPreconditionProto.Group) condition_;
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Group.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 7) {
+          return groupBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Group.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+     */
+    public Builder setGroup(POGOProtos.Rpc.QuestPreconditionProto.Group value) {
+      if (groupBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        groupBuilder_.setMessage(value);
+      }
+      conditionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+     */
+    public Builder setGroup(
+        POGOProtos.Rpc.QuestPreconditionProto.Group.Builder builderForValue) {
+      if (groupBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        groupBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+     */
+    public Builder mergeGroup(POGOProtos.Rpc.QuestPreconditionProto.Group value) {
+      if (groupBuilder_ == null) {
+        if (conditionCase_ == 7 &&
+            condition_ != POGOProtos.Rpc.QuestPreconditionProto.Group.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.QuestPreconditionProto.Group.newBuilder((POGOProtos.Rpc.QuestPreconditionProto.Group) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 7) {
+          groupBuilder_.mergeFrom(value);
+        }
+        groupBuilder_.setMessage(value);
+      }
+      conditionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+     */
+    public Builder clearGroup() {
+      if (groupBuilder_ == null) {
+        if (conditionCase_ == 7) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 7) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        groupBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.Group.Builder getGroupBuilder() {
+      return getGroupFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+     */
+    public POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder getGroupOrBuilder() {
+      if ((conditionCase_ == 7) && (groupBuilder_ != null)) {
+        return groupBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 7) {
+          return (POGOProtos.Rpc.QuestPreconditionProto.Group) condition_;
+        }
+        return POGOProtos.Rpc.QuestPreconditionProto.Group.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestPreconditionProto.Group, POGOProtos.Rpc.QuestPreconditionProto.Group.Builder, POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder> 
+        getGroupFieldBuilder() {
+      if (groupBuilder_ == null) {
+        if (!(conditionCase_ == 7)) {
+          condition_ = POGOProtos.Rpc.QuestPreconditionProto.Group.getDefaultInstance();
+        }
+        groupBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.QuestPreconditionProto.Group, POGOProtos.Rpc.QuestPreconditionProto.Group.Builder, POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder>(
+                (POGOProtos.Rpc.QuestPreconditionProto.Group) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 7;
+      onChanged();;
+      return groupBuilder_;
     }
 
     private int type_ = 0;
@@ -4355,677 +5237,6 @@ private static final long serialVersionUID = 0L;
       type_ = 0;
       onChanged();
       return this;
-    }
-
-    private java.lang.Object questTemplateId_ = "";
-    /**
-     * <code>string quest_template_id = 2;</code>
-     * @return The questTemplateId.
-     */
-    public java.lang.String getQuestTemplateId() {
-      java.lang.Object ref = questTemplateId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        questTemplateId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string quest_template_id = 2;</code>
-     * @return The bytes for questTemplateId.
-     */
-    public com.google.protobuf.ByteString
-        getQuestTemplateIdBytes() {
-      java.lang.Object ref = questTemplateId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        questTemplateId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string quest_template_id = 2;</code>
-     * @param value The questTemplateId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setQuestTemplateId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      questTemplateId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string quest_template_id = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearQuestTemplateId() {
-      
-      questTemplateId_ = getDefaultInstance().getQuestTemplateId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string quest_template_id = 2;</code>
-     * @param value The bytes for questTemplateId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setQuestTemplateIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      questTemplateId_ = value;
-      onChanged();
-      return this;
-    }
-
-    private POGOProtos.Rpc.QuestPreconditionProto.Level level_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestPreconditionProto.Level, POGOProtos.Rpc.QuestPreconditionProto.Level.Builder, POGOProtos.Rpc.QuestPreconditionProto.LevelOrBuilder> levelBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-     * @return Whether the level field is set.
-     */
-    public boolean hasLevel() {
-      return levelBuilder_ != null || level_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-     * @return The level.
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.Level getLevel() {
-      if (levelBuilder_ == null) {
-        return level_ == null ? POGOProtos.Rpc.QuestPreconditionProto.Level.getDefaultInstance() : level_;
-      } else {
-        return levelBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-     */
-    public Builder setLevel(POGOProtos.Rpc.QuestPreconditionProto.Level value) {
-      if (levelBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        level_ = value;
-        onChanged();
-      } else {
-        levelBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-     */
-    public Builder setLevel(
-        POGOProtos.Rpc.QuestPreconditionProto.Level.Builder builderForValue) {
-      if (levelBuilder_ == null) {
-        level_ = builderForValue.build();
-        onChanged();
-      } else {
-        levelBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-     */
-    public Builder mergeLevel(POGOProtos.Rpc.QuestPreconditionProto.Level value) {
-      if (levelBuilder_ == null) {
-        if (level_ != null) {
-          level_ =
-            POGOProtos.Rpc.QuestPreconditionProto.Level.newBuilder(level_).mergeFrom(value).buildPartial();
-        } else {
-          level_ = value;
-        }
-        onChanged();
-      } else {
-        levelBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-     */
-    public Builder clearLevel() {
-      if (levelBuilder_ == null) {
-        level_ = null;
-        onChanged();
-      } else {
-        level_ = null;
-        levelBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.Level.Builder getLevelBuilder() {
-      
-      onChanged();
-      return getLevelFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.LevelOrBuilder getLevelOrBuilder() {
-      if (levelBuilder_ != null) {
-        return levelBuilder_.getMessageOrBuilder();
-      } else {
-        return level_ == null ?
-            POGOProtos.Rpc.QuestPreconditionProto.Level.getDefaultInstance() : level_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Level level = 3;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestPreconditionProto.Level, POGOProtos.Rpc.QuestPreconditionProto.Level.Builder, POGOProtos.Rpc.QuestPreconditionProto.LevelOrBuilder> 
-        getLevelFieldBuilder() {
-      if (levelBuilder_ == null) {
-        levelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.QuestPreconditionProto.Level, POGOProtos.Rpc.QuestPreconditionProto.Level.Builder, POGOProtos.Rpc.QuestPreconditionProto.LevelOrBuilder>(
-                getLevel(),
-                getParentForChildren(),
-                isClean());
-        level_ = null;
-      }
-      return levelBuilder_;
-    }
-
-    private POGOProtos.Rpc.QuestPreconditionProto.Medal medal_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestPreconditionProto.Medal, POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder, POGOProtos.Rpc.QuestPreconditionProto.MedalOrBuilder> medalBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-     * @return Whether the medal field is set.
-     */
-    public boolean hasMedal() {
-      return medalBuilder_ != null || medal_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-     * @return The medal.
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.Medal getMedal() {
-      if (medalBuilder_ == null) {
-        return medal_ == null ? POGOProtos.Rpc.QuestPreconditionProto.Medal.getDefaultInstance() : medal_;
-      } else {
-        return medalBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-     */
-    public Builder setMedal(POGOProtos.Rpc.QuestPreconditionProto.Medal value) {
-      if (medalBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        medal_ = value;
-        onChanged();
-      } else {
-        medalBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-     */
-    public Builder setMedal(
-        POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder builderForValue) {
-      if (medalBuilder_ == null) {
-        medal_ = builderForValue.build();
-        onChanged();
-      } else {
-        medalBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-     */
-    public Builder mergeMedal(POGOProtos.Rpc.QuestPreconditionProto.Medal value) {
-      if (medalBuilder_ == null) {
-        if (medal_ != null) {
-          medal_ =
-            POGOProtos.Rpc.QuestPreconditionProto.Medal.newBuilder(medal_).mergeFrom(value).buildPartial();
-        } else {
-          medal_ = value;
-        }
-        onChanged();
-      } else {
-        medalBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-     */
-    public Builder clearMedal() {
-      if (medalBuilder_ == null) {
-        medal_ = null;
-        onChanged();
-      } else {
-        medal_ = null;
-        medalBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder getMedalBuilder() {
-      
-      onChanged();
-      return getMedalFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.MedalOrBuilder getMedalOrBuilder() {
-      if (medalBuilder_ != null) {
-        return medalBuilder_.getMessageOrBuilder();
-      } else {
-        return medal_ == null ?
-            POGOProtos.Rpc.QuestPreconditionProto.Medal.getDefaultInstance() : medal_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Medal medal = 4;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestPreconditionProto.Medal, POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder, POGOProtos.Rpc.QuestPreconditionProto.MedalOrBuilder> 
-        getMedalFieldBuilder() {
-      if (medalBuilder_ == null) {
-        medalBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.QuestPreconditionProto.Medal, POGOProtos.Rpc.QuestPreconditionProto.Medal.Builder, POGOProtos.Rpc.QuestPreconditionProto.MedalOrBuilder>(
-                getMedal(),
-                getParentForChildren(),
-                isClean());
-        medal_ = null;
-      }
-      return medalBuilder_;
-    }
-
-    private POGOProtos.Rpc.QuestPreconditionProto.Quests quests_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestPreconditionProto.Quests, POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder, POGOProtos.Rpc.QuestPreconditionProto.QuestsOrBuilder> questsBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-     * @return Whether the quests field is set.
-     */
-    public boolean hasQuests() {
-      return questsBuilder_ != null || quests_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-     * @return The quests.
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.Quests getQuests() {
-      if (questsBuilder_ == null) {
-        return quests_ == null ? POGOProtos.Rpc.QuestPreconditionProto.Quests.getDefaultInstance() : quests_;
-      } else {
-        return questsBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-     */
-    public Builder setQuests(POGOProtos.Rpc.QuestPreconditionProto.Quests value) {
-      if (questsBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        quests_ = value;
-        onChanged();
-      } else {
-        questsBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-     */
-    public Builder setQuests(
-        POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder builderForValue) {
-      if (questsBuilder_ == null) {
-        quests_ = builderForValue.build();
-        onChanged();
-      } else {
-        questsBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-     */
-    public Builder mergeQuests(POGOProtos.Rpc.QuestPreconditionProto.Quests value) {
-      if (questsBuilder_ == null) {
-        if (quests_ != null) {
-          quests_ =
-            POGOProtos.Rpc.QuestPreconditionProto.Quests.newBuilder(quests_).mergeFrom(value).buildPartial();
-        } else {
-          quests_ = value;
-        }
-        onChanged();
-      } else {
-        questsBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-     */
-    public Builder clearQuests() {
-      if (questsBuilder_ == null) {
-        quests_ = null;
-        onChanged();
-      } else {
-        quests_ = null;
-        questsBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder getQuestsBuilder() {
-      
-      onChanged();
-      return getQuestsFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.QuestsOrBuilder getQuestsOrBuilder() {
-      if (questsBuilder_ != null) {
-        return questsBuilder_.getMessageOrBuilder();
-      } else {
-        return quests_ == null ?
-            POGOProtos.Rpc.QuestPreconditionProto.Quests.getDefaultInstance() : quests_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Quests quests = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestPreconditionProto.Quests, POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder, POGOProtos.Rpc.QuestPreconditionProto.QuestsOrBuilder> 
-        getQuestsFieldBuilder() {
-      if (questsBuilder_ == null) {
-        questsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.QuestPreconditionProto.Quests, POGOProtos.Rpc.QuestPreconditionProto.Quests.Builder, POGOProtos.Rpc.QuestPreconditionProto.QuestsOrBuilder>(
-                getQuests(),
-                getParentForChildren(),
-                isClean());
-        quests_ = null;
-      }
-      return questsBuilder_;
-    }
-
-    private POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket monthYearBucket_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucketOrBuilder> monthYearBucketBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-     * @return Whether the monthYearBucket field is set.
-     */
-    public boolean hasMonthYearBucket() {
-      return monthYearBucketBuilder_ != null || monthYearBucket_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-     * @return The monthYearBucket.
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket getMonthYearBucket() {
-      if (monthYearBucketBuilder_ == null) {
-        return monthYearBucket_ == null ? POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.getDefaultInstance() : monthYearBucket_;
-      } else {
-        return monthYearBucketBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-     */
-    public Builder setMonthYearBucket(POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket value) {
-      if (monthYearBucketBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        monthYearBucket_ = value;
-        onChanged();
-      } else {
-        monthYearBucketBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-     */
-    public Builder setMonthYearBucket(
-        POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder builderForValue) {
-      if (monthYearBucketBuilder_ == null) {
-        monthYearBucket_ = builderForValue.build();
-        onChanged();
-      } else {
-        monthYearBucketBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-     */
-    public Builder mergeMonthYearBucket(POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket value) {
-      if (monthYearBucketBuilder_ == null) {
-        if (monthYearBucket_ != null) {
-          monthYearBucket_ =
-            POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.newBuilder(monthYearBucket_).mergeFrom(value).buildPartial();
-        } else {
-          monthYearBucket_ = value;
-        }
-        onChanged();
-      } else {
-        monthYearBucketBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-     */
-    public Builder clearMonthYearBucket() {
-      if (monthYearBucketBuilder_ == null) {
-        monthYearBucket_ = null;
-        onChanged();
-      } else {
-        monthYearBucket_ = null;
-        monthYearBucketBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder getMonthYearBucketBuilder() {
-      
-      onChanged();
-      return getMonthYearBucketFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucketOrBuilder getMonthYearBucketOrBuilder() {
-      if (monthYearBucketBuilder_ != null) {
-        return monthYearBucketBuilder_.getMessageOrBuilder();
-      } else {
-        return monthYearBucket_ == null ?
-            POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.getDefaultInstance() : monthYearBucket_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket month_year_bucket = 6;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucketOrBuilder> 
-        getMonthYearBucketFieldBuilder() {
-      if (monthYearBucketBuilder_ == null) {
-        monthYearBucketBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucket.Builder, POGOProtos.Rpc.QuestPreconditionProto.MonthYearBucketOrBuilder>(
-                getMonthYearBucket(),
-                getParentForChildren(),
-                isClean());
-        monthYearBucket_ = null;
-      }
-      return monthYearBucketBuilder_;
-    }
-
-    private POGOProtos.Rpc.QuestPreconditionProto.Group group_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestPreconditionProto.Group, POGOProtos.Rpc.QuestPreconditionProto.Group.Builder, POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder> groupBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-     * @return Whether the group field is set.
-     */
-    public boolean hasGroup() {
-      return groupBuilder_ != null || group_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-     * @return The group.
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.Group getGroup() {
-      if (groupBuilder_ == null) {
-        return group_ == null ? POGOProtos.Rpc.QuestPreconditionProto.Group.getDefaultInstance() : group_;
-      } else {
-        return groupBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-     */
-    public Builder setGroup(POGOProtos.Rpc.QuestPreconditionProto.Group value) {
-      if (groupBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        group_ = value;
-        onChanged();
-      } else {
-        groupBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-     */
-    public Builder setGroup(
-        POGOProtos.Rpc.QuestPreconditionProto.Group.Builder builderForValue) {
-      if (groupBuilder_ == null) {
-        group_ = builderForValue.build();
-        onChanged();
-      } else {
-        groupBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-     */
-    public Builder mergeGroup(POGOProtos.Rpc.QuestPreconditionProto.Group value) {
-      if (groupBuilder_ == null) {
-        if (group_ != null) {
-          group_ =
-            POGOProtos.Rpc.QuestPreconditionProto.Group.newBuilder(group_).mergeFrom(value).buildPartial();
-        } else {
-          group_ = value;
-        }
-        onChanged();
-      } else {
-        groupBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-     */
-    public Builder clearGroup() {
-      if (groupBuilder_ == null) {
-        group_ = null;
-        onChanged();
-      } else {
-        group_ = null;
-        groupBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.Group.Builder getGroupBuilder() {
-      
-      onChanged();
-      return getGroupFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-     */
-    public POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder getGroupOrBuilder() {
-      if (groupBuilder_ != null) {
-        return groupBuilder_.getMessageOrBuilder();
-      } else {
-        return group_ == null ?
-            POGOProtos.Rpc.QuestPreconditionProto.Group.getDefaultInstance() : group_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestPreconditionProto.Group, POGOProtos.Rpc.QuestPreconditionProto.Group.Builder, POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder> 
-        getGroupFieldBuilder() {
-      if (groupBuilder_ == null) {
-        groupBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.QuestPreconditionProto.Group, POGOProtos.Rpc.QuestPreconditionProto.Group.Builder, POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder>(
-                getGroup(),
-                getParentForChildren(),
-                isClean());
-        group_ = null;
-      }
-      return groupBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

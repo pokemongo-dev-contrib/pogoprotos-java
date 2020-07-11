@@ -806,6 +806,21 @@ public interface GlobalSettingsOrBuilder extends
   POGOProtos.Settings.RocketBalloonGlobalSettingsOrBuilder getRocketBalloonSettingsOrBuilder();
 
   /**
+   * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+   * @return Whether the timedGroupChallengeSettings field is set.
+   */
+  boolean hasTimedGroupChallengeSettings();
+  /**
+   * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+   * @return The timedGroupChallengeSettings.
+   */
+  POGOProtos.Settings.TimedGroupChallengeSettings getTimedGroupChallengeSettings();
+  /**
+   * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+   */
+  POGOProtos.Settings.TimedGroupChallengeSettingsOrBuilder getTimedGroupChallengeSettingsOrBuilder();
+
+  /**
    * <code>.POGOProtos.Settings.LobbyClientSettings lobby_client_settings = 59;</code>
    * @return Whether the lobbyClientSettings field is set.
    */

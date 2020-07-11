@@ -8,48 +8,6 @@ public interface ReportAdInteractionProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string game_id = 1;</code>
-   * @return The gameId.
-   */
-  java.lang.String getGameId();
-  /**
-   * <code>string game_id = 1;</code>
-   * @return The bytes for gameId.
-   */
-  com.google.protobuf.ByteString
-      getGameIdBytes();
-
-  /**
-   * <code>string user_id = 2;</code>
-   * @return The userId.
-   */
-  java.lang.String getUserId();
-  /**
-   * <code>string user_id = 2;</code>
-   * @return The bytes for userId.
-   */
-  com.google.protobuf.ByteString
-      getUserIdBytes();
-
-  /**
-   * <code>string guid = 3;</code>
-   * @return The guid.
-   */
-  java.lang.String getGuid();
-  /**
-   * <code>string guid = 3;</code>
-   * @return The bytes for guid.
-   */
-  com.google.protobuf.ByteString
-      getGuidBytes();
-
-  /**
-   * <code>bytes encrypted_ad_token = 4;</code>
-   * @return The encryptedAdToken.
-   */
-  com.google.protobuf.ByteString getEncryptedAdToken();
-
-  /**
    * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
    * @return Whether the viewImpression field is set.
    */
@@ -108,4 +66,48 @@ public interface ReportAdInteractionProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
    */
   POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder getCtaClickedOrBuilder();
+
+  /**
+   * <code>string game_id = 1;</code>
+   * @return The gameId.
+   */
+  java.lang.String getGameId();
+  /**
+   * <code>string game_id = 1;</code>
+   * @return The bytes for gameId.
+   */
+  com.google.protobuf.ByteString
+      getGameIdBytes();
+
+  /**
+   * <code>string user_id = 2;</code>
+   * @return The userId.
+   */
+  java.lang.String getUserId();
+  /**
+   * <code>string user_id = 2;</code>
+   * @return The bytes for userId.
+   */
+  com.google.protobuf.ByteString
+      getUserIdBytes();
+
+  /**
+   * <code>string guid = 3;</code>
+   * @return The guid.
+   */
+  java.lang.String getGuid();
+  /**
+   * <code>string guid = 3;</code>
+   * @return The bytes for guid.
+   */
+  com.google.protobuf.ByteString
+      getGuidBytes();
+
+  /**
+   * <code>bytes encrypted_ad_token = 4;</code>
+   * @return The encryptedAdToken.
+   */
+  com.google.protobuf.ByteString getEncryptedAdToken();
+
+  public POGOProtos.Rpc.ReportAdInteractionProto.InteractionTypeCase getInteractionTypeCase();
 }

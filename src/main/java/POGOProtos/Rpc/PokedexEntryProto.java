@@ -22,6 +22,7 @@ private static final long serialVersionUID = 0L;
     encounteredCostumes_ = java.util.Collections.emptyList();
     encounteredForms_ = java.util.Collections.emptyList();
     encounteredGenders_ = java.util.Collections.emptyList();
+    capturedShinyForms_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -238,6 +239,29 @@ private static final long serialVersionUID = 0L;
             timesPurified_ = input.readInt32();
             break;
           }
+          case 136: {
+            int rawValue = input.readEnum();
+            if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+              capturedShinyForms_ = new java.util.ArrayList<java.lang.Integer>();
+              mutable_bitField0_ |= 0x00000040;
+            }
+            capturedShinyForms_.add(rawValue);
+            break;
+          }
+          case 138: {
+            int length = input.readRawVarint32();
+            int oldLimit = input.pushLimit(length);
+            while(input.getBytesUntilLimit() > 0) {
+              int rawValue = input.readEnum();
+              if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+                capturedShinyForms_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000040;
+              }
+              capturedShinyForms_.add(rawValue);
+            }
+            input.popLimit(oldLimit);
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -270,6 +294,9 @@ private static final long serialVersionUID = 0L;
       }
       if (((mutable_bitField0_ & 0x00000020) != 0)) {
         encounteredGenders_ = java.util.Collections.unmodifiableList(encounteredGenders_);
+      }
+      if (((mutable_bitField0_ & 0x00000040) != 0)) {
+        capturedShinyForms_ = java.util.Collections.unmodifiableList(capturedShinyForms_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -696,6 +723,59 @@ private static final long serialVersionUID = 0L;
     return timesPurified_;
   }
 
+  public static final int CAPTURED_SHINY_FORMS_FIELD_NUMBER = 17;
+  private java.util.List<java.lang.Integer> capturedShinyForms_;
+  private static final com.google.protobuf.Internal.ListAdapter.Converter<
+      java.lang.Integer, POGOProtos.Rpc.PokemonDisplayProto.Form> capturedShinyForms_converter_ =
+          new com.google.protobuf.Internal.ListAdapter.Converter<
+              java.lang.Integer, POGOProtos.Rpc.PokemonDisplayProto.Form>() {
+            public POGOProtos.Rpc.PokemonDisplayProto.Form convert(java.lang.Integer from) {
+              @SuppressWarnings("deprecation")
+              POGOProtos.Rpc.PokemonDisplayProto.Form result = POGOProtos.Rpc.PokemonDisplayProto.Form.valueOf(from);
+              return result == null ? POGOProtos.Rpc.PokemonDisplayProto.Form.UNRECOGNIZED : result;
+            }
+          };
+  /**
+   * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+   * @return A list containing the capturedShinyForms.
+   */
+  public java.util.List<POGOProtos.Rpc.PokemonDisplayProto.Form> getCapturedShinyFormsList() {
+    return new com.google.protobuf.Internal.ListAdapter<
+        java.lang.Integer, POGOProtos.Rpc.PokemonDisplayProto.Form>(capturedShinyForms_, capturedShinyForms_converter_);
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+   * @return The count of capturedShinyForms.
+   */
+  public int getCapturedShinyFormsCount() {
+    return capturedShinyForms_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+   * @param index The index of the element to return.
+   * @return The capturedShinyForms at the given index.
+   */
+  public POGOProtos.Rpc.PokemonDisplayProto.Form getCapturedShinyForms(int index) {
+    return capturedShinyForms_converter_.convert(capturedShinyForms_.get(index));
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+   * @return A list containing the enum numeric values on the wire for capturedShinyForms.
+   */
+  public java.util.List<java.lang.Integer>
+  getCapturedShinyFormsValueList() {
+    return capturedShinyForms_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of capturedShinyForms at the given index.
+   */
+  public int getCapturedShinyFormsValue(int index) {
+    return capturedShinyForms_.get(index);
+  }
+  private int capturedShinyFormsMemoizedSerializedSize;
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -779,6 +859,13 @@ private static final long serialVersionUID = 0L;
     }
     if (timesPurified_ != 0) {
       output.writeInt32(15, timesPurified_);
+    }
+    if (getCapturedShinyFormsList().size() > 0) {
+      output.writeUInt32NoTag(138);
+      output.writeUInt32NoTag(capturedShinyFormsMemoizedSerializedSize);
+    }
+    for (int i = 0; i < capturedShinyForms_.size(); i++) {
+      output.writeEnumNoTag(capturedShinyForms_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -897,6 +984,18 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(15, timesPurified_);
     }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < capturedShinyForms_.size(); i++) {
+        dataSize += com.google.protobuf.CodedOutputStream
+          .computeEnumSizeNoTag(capturedShinyForms_.get(i));
+      }
+      size += dataSize;
+      if (!getCapturedShinyFormsList().isEmpty()) {  size += 2;
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32SizeNoTag(dataSize);
+      }capturedShinyFormsMemoizedSerializedSize = dataSize;
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -936,6 +1035,7 @@ private static final long serialVersionUID = 0L;
         != other.getTimesLuckyReceived()) return false;
     if (getTimesPurified()
         != other.getTimesPurified()) return false;
+    if (!capturedShinyForms_.equals(other.capturedShinyForms_)) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -991,6 +1091,10 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getTimesLuckyReceived();
     hash = (37 * hash) + TIMES_PURIFIED_FIELD_NUMBER;
     hash = (53 * hash) + getTimesPurified();
+    if (getCapturedShinyFormsCount() > 0) {
+      hash = (37 * hash) + CAPTURED_SHINY_FORMS_FIELD_NUMBER;
+      hash = (53 * hash) + capturedShinyForms_.hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1154,6 +1258,8 @@ private static final long serialVersionUID = 0L;
 
       timesPurified_ = 0;
 
+      capturedShinyForms_ = java.util.Collections.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000040);
       return this;
     }
 
@@ -1220,6 +1326,11 @@ private static final long serialVersionUID = 0L;
       result.encounteredShiny_ = encounteredShiny_;
       result.timesLuckyReceived_ = timesLuckyReceived_;
       result.timesPurified_ = timesPurified_;
+      if (((bitField0_ & 0x00000040) != 0)) {
+        capturedShinyForms_ = java.util.Collections.unmodifiableList(capturedShinyForms_);
+        bitField0_ = (bitField0_ & ~0x00000040);
+      }
+      result.capturedShinyForms_ = capturedShinyForms_;
       onBuilt();
       return result;
     }
@@ -1354,6 +1465,16 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getTimesPurified() != 0) {
         setTimesPurified(other.getTimesPurified());
+      }
+      if (!other.capturedShinyForms_.isEmpty()) {
+        if (capturedShinyForms_.isEmpty()) {
+          capturedShinyForms_ = other.capturedShinyForms_;
+          bitField0_ = (bitField0_ & ~0x00000040);
+        } else {
+          ensureCapturedShinyFormsIsMutable();
+          capturedShinyForms_.addAll(other.capturedShinyForms_);
+        }
+        onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -2491,6 +2612,146 @@ private static final long serialVersionUID = 0L;
     public Builder clearTimesPurified() {
       
       timesPurified_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private java.util.List<java.lang.Integer> capturedShinyForms_ =
+      java.util.Collections.emptyList();
+    private void ensureCapturedShinyFormsIsMutable() {
+      if (!((bitField0_ & 0x00000040) != 0)) {
+        capturedShinyForms_ = new java.util.ArrayList<java.lang.Integer>(capturedShinyForms_);
+        bitField0_ |= 0x00000040;
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @return A list containing the capturedShinyForms.
+     */
+    public java.util.List<POGOProtos.Rpc.PokemonDisplayProto.Form> getCapturedShinyFormsList() {
+      return new com.google.protobuf.Internal.ListAdapter<
+          java.lang.Integer, POGOProtos.Rpc.PokemonDisplayProto.Form>(capturedShinyForms_, capturedShinyForms_converter_);
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @return The count of capturedShinyForms.
+     */
+    public int getCapturedShinyFormsCount() {
+      return capturedShinyForms_.size();
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @param index The index of the element to return.
+     * @return The capturedShinyForms at the given index.
+     */
+    public POGOProtos.Rpc.PokemonDisplayProto.Form getCapturedShinyForms(int index) {
+      return capturedShinyForms_converter_.convert(capturedShinyForms_.get(index));
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @param index The index to set the value at.
+     * @param value The capturedShinyForms to set.
+     * @return This builder for chaining.
+     */
+    public Builder setCapturedShinyForms(
+        int index, POGOProtos.Rpc.PokemonDisplayProto.Form value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      ensureCapturedShinyFormsIsMutable();
+      capturedShinyForms_.set(index, value.getNumber());
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @param value The capturedShinyForms to add.
+     * @return This builder for chaining.
+     */
+    public Builder addCapturedShinyForms(POGOProtos.Rpc.PokemonDisplayProto.Form value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      ensureCapturedShinyFormsIsMutable();
+      capturedShinyForms_.add(value.getNumber());
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @param values The capturedShinyForms to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllCapturedShinyForms(
+        java.lang.Iterable<? extends POGOProtos.Rpc.PokemonDisplayProto.Form> values) {
+      ensureCapturedShinyFormsIsMutable();
+      for (POGOProtos.Rpc.PokemonDisplayProto.Form value : values) {
+        capturedShinyForms_.add(value.getNumber());
+      }
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearCapturedShinyForms() {
+      capturedShinyForms_ = java.util.Collections.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000040);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @return A list containing the enum numeric values on the wire for capturedShinyForms.
+     */
+    public java.util.List<java.lang.Integer>
+    getCapturedShinyFormsValueList() {
+      return java.util.Collections.unmodifiableList(capturedShinyForms_);
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of capturedShinyForms at the given index.
+     */
+    public int getCapturedShinyFormsValue(int index) {
+      return capturedShinyForms_.get(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of capturedShinyForms at the given index.
+     * @return This builder for chaining.
+     */
+    public Builder setCapturedShinyFormsValue(
+        int index, int value) {
+      ensureCapturedShinyFormsIsMutable();
+      capturedShinyForms_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @param value The enum numeric value on the wire for capturedShinyForms to add.
+     * @return This builder for chaining.
+     */
+    public Builder addCapturedShinyFormsValue(int value) {
+      ensureCapturedShinyFormsIsMutable();
+      capturedShinyForms_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.PokemonDisplayProto.Form captured_shiny_forms = 17;</code>
+     * @param values The enum numeric values on the wire for capturedShinyForms to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllCapturedShinyFormsValue(
+        java.lang.Iterable<java.lang.Integer> values) {
+      ensureCapturedShinyFormsIsMutable();
+      for (int value : values) {
+        capturedShinyForms_.add(value);
+      }
       onChanged();
       return this;
     }

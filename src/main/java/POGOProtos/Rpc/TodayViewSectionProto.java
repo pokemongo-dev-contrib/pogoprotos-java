@@ -50,80 +50,114 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             POGOProtos.Rpc.PokecoinSectionProto.Builder subBuilder = null;
-            if (pokecoin_ != null) {
-              subBuilder = pokecoin_.toBuilder();
+            if (sectionCase_ == 1) {
+              subBuilder = ((POGOProtos.Rpc.PokecoinSectionProto) section_).toBuilder();
             }
-            pokecoin_ = input.readMessage(POGOProtos.Rpc.PokecoinSectionProto.parser(), extensionRegistry);
+            section_ =
+                input.readMessage(POGOProtos.Rpc.PokecoinSectionProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(pokecoin_);
-              pokecoin_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PokecoinSectionProto) section_);
+              section_ = subBuilder.buildPartial();
             }
-
+            sectionCase_ = 1;
             break;
           }
           case 18: {
             POGOProtos.Rpc.GymPokemonSectionProto.Builder subBuilder = null;
-            if (gymPokemon_ != null) {
-              subBuilder = gymPokemon_.toBuilder();
+            if (sectionCase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.GymPokemonSectionProto) section_).toBuilder();
             }
-            gymPokemon_ = input.readMessage(POGOProtos.Rpc.GymPokemonSectionProto.parser(), extensionRegistry);
+            section_ =
+                input.readMessage(POGOProtos.Rpc.GymPokemonSectionProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(gymPokemon_);
-              gymPokemon_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.GymPokemonSectionProto) section_);
+              section_ = subBuilder.buildPartial();
             }
-
+            sectionCase_ = 2;
             break;
           }
           case 26: {
             POGOProtos.Rpc.DailyStreaksProto.Builder subBuilder = null;
-            if (streaks_ != null) {
-              subBuilder = streaks_.toBuilder();
+            if (sectionCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.DailyStreaksProto) section_).toBuilder();
             }
-            streaks_ = input.readMessage(POGOProtos.Rpc.DailyStreaksProto.parser(), extensionRegistry);
+            section_ =
+                input.readMessage(POGOProtos.Rpc.DailyStreaksProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(streaks_);
-              streaks_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.DailyStreaksProto) section_);
+              section_ = subBuilder.buildPartial();
             }
-
+            sectionCase_ = 3;
             break;
           }
           case 34: {
             POGOProtos.Rpc.EventSectionProto.Builder subBuilder = null;
-            if (event_ != null) {
-              subBuilder = event_.toBuilder();
+            if (sectionCase_ == 4) {
+              subBuilder = ((POGOProtos.Rpc.EventSectionProto) section_).toBuilder();
             }
-            event_ = input.readMessage(POGOProtos.Rpc.EventSectionProto.parser(), extensionRegistry);
+            section_ =
+                input.readMessage(POGOProtos.Rpc.EventSectionProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(event_);
-              event_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.EventSectionProto) section_);
+              section_ = subBuilder.buildPartial();
             }
-
+            sectionCase_ = 4;
             break;
           }
           case 42: {
             POGOProtos.Rpc.UpNextSectionProto.Builder subBuilder = null;
-            if (upNext_ != null) {
-              subBuilder = upNext_.toBuilder();
+            if (sectionCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.UpNextSectionProto) section_).toBuilder();
             }
-            upNext_ = input.readMessage(POGOProtos.Rpc.UpNextSectionProto.parser(), extensionRegistry);
+            section_ =
+                input.readMessage(POGOProtos.Rpc.UpNextSectionProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(upNext_);
-              upNext_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.UpNextSectionProto) section_);
+              section_ = subBuilder.buildPartial();
             }
-
+            sectionCase_ = 5;
             break;
           }
           case 50: {
             POGOProtos.Rpc.TimedQuestSectionProto.Builder subBuilder = null;
-            if (timedQuest_ != null) {
-              subBuilder = timedQuest_.toBuilder();
+            if (sectionCase_ == 6) {
+              subBuilder = ((POGOProtos.Rpc.TimedQuestSectionProto) section_).toBuilder();
             }
-            timedQuest_ = input.readMessage(POGOProtos.Rpc.TimedQuestSectionProto.parser(), extensionRegistry);
+            section_ =
+                input.readMessage(POGOProtos.Rpc.TimedQuestSectionProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(timedQuest_);
-              timedQuest_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.TimedQuestSectionProto) section_);
+              section_ = subBuilder.buildPartial();
             }
-
+            sectionCase_ = 6;
+            break;
+          }
+          case 58: {
+            POGOProtos.Rpc.EventBannerSectionProto.Builder subBuilder = null;
+            if (sectionCase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.EventBannerSectionProto) section_).toBuilder();
+            }
+            section_ =
+                input.readMessage(POGOProtos.Rpc.EventBannerSectionProto.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Rpc.EventBannerSectionProto) section_);
+              section_ = subBuilder.buildPartial();
+            }
+            sectionCase_ = 7;
+            break;
+          }
+          case 66: {
+            POGOProtos.Rpc.TimedGroupChallengeSectionProto.Builder subBuilder = null;
+            if (sectionCase_ == 8) {
+              subBuilder = ((POGOProtos.Rpc.TimedGroupChallengeSectionProto) section_).toBuilder();
+            }
+            section_ =
+                input.readMessage(POGOProtos.Rpc.TimedGroupChallengeSectionProto.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Rpc.TimedGroupChallengeSectionProto) section_);
+              section_ = subBuilder.buildPartial();
+            }
+            sectionCase_ = 8;
             break;
           }
           default: {
@@ -158,142 +192,281 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.TodayViewSectionProto.class, POGOProtos.Rpc.TodayViewSectionProto.Builder.class);
   }
 
+  private int sectionCase_ = 0;
+  private java.lang.Object section_;
+  public enum SectionCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    POKECOIN(1),
+    GYM_POKEMON(2),
+    STREAKS(3),
+    EVENT(4),
+    UP_NEXT(5),
+    TIMED_QUEST(6),
+    EVENT_BANNER(7),
+    TIMED_GROUP_CHALLENGE(8),
+    SECTION_NOT_SET(0);
+    private final int value;
+    private SectionCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static SectionCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static SectionCase forNumber(int value) {
+      switch (value) {
+        case 1: return POKECOIN;
+        case 2: return GYM_POKEMON;
+        case 3: return STREAKS;
+        case 4: return EVENT;
+        case 5: return UP_NEXT;
+        case 6: return TIMED_QUEST;
+        case 7: return EVENT_BANNER;
+        case 8: return TIMED_GROUP_CHALLENGE;
+        case 0: return SECTION_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public SectionCase
+  getSectionCase() {
+    return SectionCase.forNumber(
+        sectionCase_);
+  }
+
   public static final int POKECOIN_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.PokecoinSectionProto pokecoin_;
   /**
    * <code>.POGOProtos.Rpc.PokecoinSectionProto pokecoin = 1;</code>
    * @return Whether the pokecoin field is set.
    */
   public boolean hasPokecoin() {
-    return pokecoin_ != null;
+    return sectionCase_ == 1;
   }
   /**
    * <code>.POGOProtos.Rpc.PokecoinSectionProto pokecoin = 1;</code>
    * @return The pokecoin.
    */
   public POGOProtos.Rpc.PokecoinSectionProto getPokecoin() {
-    return pokecoin_ == null ? POGOProtos.Rpc.PokecoinSectionProto.getDefaultInstance() : pokecoin_;
+    if (sectionCase_ == 1) {
+       return (POGOProtos.Rpc.PokecoinSectionProto) section_;
+    }
+    return POGOProtos.Rpc.PokecoinSectionProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PokecoinSectionProto pokecoin = 1;</code>
    */
   public POGOProtos.Rpc.PokecoinSectionProtoOrBuilder getPokecoinOrBuilder() {
-    return getPokecoin();
+    if (sectionCase_ == 1) {
+       return (POGOProtos.Rpc.PokecoinSectionProto) section_;
+    }
+    return POGOProtos.Rpc.PokecoinSectionProto.getDefaultInstance();
   }
 
   public static final int GYM_POKEMON_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.GymPokemonSectionProto gymPokemon_;
   /**
    * <code>.POGOProtos.Rpc.GymPokemonSectionProto gym_pokemon = 2;</code>
    * @return Whether the gymPokemon field is set.
    */
   public boolean hasGymPokemon() {
-    return gymPokemon_ != null;
+    return sectionCase_ == 2;
   }
   /**
    * <code>.POGOProtos.Rpc.GymPokemonSectionProto gym_pokemon = 2;</code>
    * @return The gymPokemon.
    */
   public POGOProtos.Rpc.GymPokemonSectionProto getGymPokemon() {
-    return gymPokemon_ == null ? POGOProtos.Rpc.GymPokemonSectionProto.getDefaultInstance() : gymPokemon_;
+    if (sectionCase_ == 2) {
+       return (POGOProtos.Rpc.GymPokemonSectionProto) section_;
+    }
+    return POGOProtos.Rpc.GymPokemonSectionProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.GymPokemonSectionProto gym_pokemon = 2;</code>
    */
   public POGOProtos.Rpc.GymPokemonSectionProtoOrBuilder getGymPokemonOrBuilder() {
-    return getGymPokemon();
+    if (sectionCase_ == 2) {
+       return (POGOProtos.Rpc.GymPokemonSectionProto) section_;
+    }
+    return POGOProtos.Rpc.GymPokemonSectionProto.getDefaultInstance();
   }
 
   public static final int STREAKS_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.DailyStreaksProto streaks_;
   /**
    * <code>.POGOProtos.Rpc.DailyStreaksProto streaks = 3;</code>
    * @return Whether the streaks field is set.
    */
   public boolean hasStreaks() {
-    return streaks_ != null;
+    return sectionCase_ == 3;
   }
   /**
    * <code>.POGOProtos.Rpc.DailyStreaksProto streaks = 3;</code>
    * @return The streaks.
    */
   public POGOProtos.Rpc.DailyStreaksProto getStreaks() {
-    return streaks_ == null ? POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance() : streaks_;
+    if (sectionCase_ == 3) {
+       return (POGOProtos.Rpc.DailyStreaksProto) section_;
+    }
+    return POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.DailyStreaksProto streaks = 3;</code>
    */
   public POGOProtos.Rpc.DailyStreaksProtoOrBuilder getStreaksOrBuilder() {
-    return getStreaks();
+    if (sectionCase_ == 3) {
+       return (POGOProtos.Rpc.DailyStreaksProto) section_;
+    }
+    return POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance();
   }
 
   public static final int EVENT_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.EventSectionProto event_;
   /**
    * <code>.POGOProtos.Rpc.EventSectionProto event = 4;</code>
    * @return Whether the event field is set.
    */
   public boolean hasEvent() {
-    return event_ != null;
+    return sectionCase_ == 4;
   }
   /**
    * <code>.POGOProtos.Rpc.EventSectionProto event = 4;</code>
    * @return The event.
    */
   public POGOProtos.Rpc.EventSectionProto getEvent() {
-    return event_ == null ? POGOProtos.Rpc.EventSectionProto.getDefaultInstance() : event_;
+    if (sectionCase_ == 4) {
+       return (POGOProtos.Rpc.EventSectionProto) section_;
+    }
+    return POGOProtos.Rpc.EventSectionProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.EventSectionProto event = 4;</code>
    */
   public POGOProtos.Rpc.EventSectionProtoOrBuilder getEventOrBuilder() {
-    return getEvent();
+    if (sectionCase_ == 4) {
+       return (POGOProtos.Rpc.EventSectionProto) section_;
+    }
+    return POGOProtos.Rpc.EventSectionProto.getDefaultInstance();
   }
 
   public static final int UP_NEXT_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.UpNextSectionProto upNext_;
   /**
    * <code>.POGOProtos.Rpc.UpNextSectionProto up_next = 5;</code>
    * @return Whether the upNext field is set.
    */
   public boolean hasUpNext() {
-    return upNext_ != null;
+    return sectionCase_ == 5;
   }
   /**
    * <code>.POGOProtos.Rpc.UpNextSectionProto up_next = 5;</code>
    * @return The upNext.
    */
   public POGOProtos.Rpc.UpNextSectionProto getUpNext() {
-    return upNext_ == null ? POGOProtos.Rpc.UpNextSectionProto.getDefaultInstance() : upNext_;
+    if (sectionCase_ == 5) {
+       return (POGOProtos.Rpc.UpNextSectionProto) section_;
+    }
+    return POGOProtos.Rpc.UpNextSectionProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.UpNextSectionProto up_next = 5;</code>
    */
   public POGOProtos.Rpc.UpNextSectionProtoOrBuilder getUpNextOrBuilder() {
-    return getUpNext();
+    if (sectionCase_ == 5) {
+       return (POGOProtos.Rpc.UpNextSectionProto) section_;
+    }
+    return POGOProtos.Rpc.UpNextSectionProto.getDefaultInstance();
   }
 
   public static final int TIMED_QUEST_FIELD_NUMBER = 6;
-  private POGOProtos.Rpc.TimedQuestSectionProto timedQuest_;
   /**
    * <code>.POGOProtos.Rpc.TimedQuestSectionProto timed_quest = 6;</code>
    * @return Whether the timedQuest field is set.
    */
   public boolean hasTimedQuest() {
-    return timedQuest_ != null;
+    return sectionCase_ == 6;
   }
   /**
    * <code>.POGOProtos.Rpc.TimedQuestSectionProto timed_quest = 6;</code>
    * @return The timedQuest.
    */
   public POGOProtos.Rpc.TimedQuestSectionProto getTimedQuest() {
-    return timedQuest_ == null ? POGOProtos.Rpc.TimedQuestSectionProto.getDefaultInstance() : timedQuest_;
+    if (sectionCase_ == 6) {
+       return (POGOProtos.Rpc.TimedQuestSectionProto) section_;
+    }
+    return POGOProtos.Rpc.TimedQuestSectionProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.TimedQuestSectionProto timed_quest = 6;</code>
    */
   public POGOProtos.Rpc.TimedQuestSectionProtoOrBuilder getTimedQuestOrBuilder() {
-    return getTimedQuest();
+    if (sectionCase_ == 6) {
+       return (POGOProtos.Rpc.TimedQuestSectionProto) section_;
+    }
+    return POGOProtos.Rpc.TimedQuestSectionProto.getDefaultInstance();
+  }
+
+  public static final int EVENT_BANNER_FIELD_NUMBER = 7;
+  /**
+   * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+   * @return Whether the eventBanner field is set.
+   */
+  public boolean hasEventBanner() {
+    return sectionCase_ == 7;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+   * @return The eventBanner.
+   */
+  public POGOProtos.Rpc.EventBannerSectionProto getEventBanner() {
+    if (sectionCase_ == 7) {
+       return (POGOProtos.Rpc.EventBannerSectionProto) section_;
+    }
+    return POGOProtos.Rpc.EventBannerSectionProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+   */
+  public POGOProtos.Rpc.EventBannerSectionProtoOrBuilder getEventBannerOrBuilder() {
+    if (sectionCase_ == 7) {
+       return (POGOProtos.Rpc.EventBannerSectionProto) section_;
+    }
+    return POGOProtos.Rpc.EventBannerSectionProto.getDefaultInstance();
+  }
+
+  public static final int TIMED_GROUP_CHALLENGE_FIELD_NUMBER = 8;
+  /**
+   * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+   * @return Whether the timedGroupChallenge field is set.
+   */
+  public boolean hasTimedGroupChallenge() {
+    return sectionCase_ == 8;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+   * @return The timedGroupChallenge.
+   */
+  public POGOProtos.Rpc.TimedGroupChallengeSectionProto getTimedGroupChallenge() {
+    if (sectionCase_ == 8) {
+       return (POGOProtos.Rpc.TimedGroupChallengeSectionProto) section_;
+    }
+    return POGOProtos.Rpc.TimedGroupChallengeSectionProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+   */
+  public POGOProtos.Rpc.TimedGroupChallengeSectionProtoOrBuilder getTimedGroupChallengeOrBuilder() {
+    if (sectionCase_ == 8) {
+       return (POGOProtos.Rpc.TimedGroupChallengeSectionProto) section_;
+    }
+    return POGOProtos.Rpc.TimedGroupChallengeSectionProto.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -310,23 +483,29 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (pokecoin_ != null) {
-      output.writeMessage(1, getPokecoin());
+    if (sectionCase_ == 1) {
+      output.writeMessage(1, (POGOProtos.Rpc.PokecoinSectionProto) section_);
     }
-    if (gymPokemon_ != null) {
-      output.writeMessage(2, getGymPokemon());
+    if (sectionCase_ == 2) {
+      output.writeMessage(2, (POGOProtos.Rpc.GymPokemonSectionProto) section_);
     }
-    if (streaks_ != null) {
-      output.writeMessage(3, getStreaks());
+    if (sectionCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.DailyStreaksProto) section_);
     }
-    if (event_ != null) {
-      output.writeMessage(4, getEvent());
+    if (sectionCase_ == 4) {
+      output.writeMessage(4, (POGOProtos.Rpc.EventSectionProto) section_);
     }
-    if (upNext_ != null) {
-      output.writeMessage(5, getUpNext());
+    if (sectionCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.UpNextSectionProto) section_);
     }
-    if (timedQuest_ != null) {
-      output.writeMessage(6, getTimedQuest());
+    if (sectionCase_ == 6) {
+      output.writeMessage(6, (POGOProtos.Rpc.TimedQuestSectionProto) section_);
+    }
+    if (sectionCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.EventBannerSectionProto) section_);
+    }
+    if (sectionCase_ == 8) {
+      output.writeMessage(8, (POGOProtos.Rpc.TimedGroupChallengeSectionProto) section_);
     }
     unknownFields.writeTo(output);
   }
@@ -337,29 +516,37 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (pokecoin_ != null) {
+    if (sectionCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getPokecoin());
+        .computeMessageSize(1, (POGOProtos.Rpc.PokecoinSectionProto) section_);
     }
-    if (gymPokemon_ != null) {
+    if (sectionCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getGymPokemon());
+        .computeMessageSize(2, (POGOProtos.Rpc.GymPokemonSectionProto) section_);
     }
-    if (streaks_ != null) {
+    if (sectionCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getStreaks());
+        .computeMessageSize(3, (POGOProtos.Rpc.DailyStreaksProto) section_);
     }
-    if (event_ != null) {
+    if (sectionCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getEvent());
+        .computeMessageSize(4, (POGOProtos.Rpc.EventSectionProto) section_);
     }
-    if (upNext_ != null) {
+    if (sectionCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getUpNext());
+        .computeMessageSize(5, (POGOProtos.Rpc.UpNextSectionProto) section_);
     }
-    if (timedQuest_ != null) {
+    if (sectionCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getTimedQuest());
+        .computeMessageSize(6, (POGOProtos.Rpc.TimedQuestSectionProto) section_);
+    }
+    if (sectionCase_ == 7) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(7, (POGOProtos.Rpc.EventBannerSectionProto) section_);
+    }
+    if (sectionCase_ == 8) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(8, (POGOProtos.Rpc.TimedGroupChallengeSectionProto) section_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -376,35 +563,42 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.TodayViewSectionProto other = (POGOProtos.Rpc.TodayViewSectionProto) obj;
 
-    if (hasPokecoin() != other.hasPokecoin()) return false;
-    if (hasPokecoin()) {
-      if (!getPokecoin()
-          .equals(other.getPokecoin())) return false;
-    }
-    if (hasGymPokemon() != other.hasGymPokemon()) return false;
-    if (hasGymPokemon()) {
-      if (!getGymPokemon()
-          .equals(other.getGymPokemon())) return false;
-    }
-    if (hasStreaks() != other.hasStreaks()) return false;
-    if (hasStreaks()) {
-      if (!getStreaks()
-          .equals(other.getStreaks())) return false;
-    }
-    if (hasEvent() != other.hasEvent()) return false;
-    if (hasEvent()) {
-      if (!getEvent()
-          .equals(other.getEvent())) return false;
-    }
-    if (hasUpNext() != other.hasUpNext()) return false;
-    if (hasUpNext()) {
-      if (!getUpNext()
-          .equals(other.getUpNext())) return false;
-    }
-    if (hasTimedQuest() != other.hasTimedQuest()) return false;
-    if (hasTimedQuest()) {
-      if (!getTimedQuest()
-          .equals(other.getTimedQuest())) return false;
+    if (!getSectionCase().equals(other.getSectionCase())) return false;
+    switch (sectionCase_) {
+      case 1:
+        if (!getPokecoin()
+            .equals(other.getPokecoin())) return false;
+        break;
+      case 2:
+        if (!getGymPokemon()
+            .equals(other.getGymPokemon())) return false;
+        break;
+      case 3:
+        if (!getStreaks()
+            .equals(other.getStreaks())) return false;
+        break;
+      case 4:
+        if (!getEvent()
+            .equals(other.getEvent())) return false;
+        break;
+      case 5:
+        if (!getUpNext()
+            .equals(other.getUpNext())) return false;
+        break;
+      case 6:
+        if (!getTimedQuest()
+            .equals(other.getTimedQuest())) return false;
+        break;
+      case 7:
+        if (!getEventBanner()
+            .equals(other.getEventBanner())) return false;
+        break;
+      case 8:
+        if (!getTimedGroupChallenge()
+            .equals(other.getTimedGroupChallenge())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -417,29 +611,41 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasPokecoin()) {
-      hash = (37 * hash) + POKECOIN_FIELD_NUMBER;
-      hash = (53 * hash) + getPokecoin().hashCode();
-    }
-    if (hasGymPokemon()) {
-      hash = (37 * hash) + GYM_POKEMON_FIELD_NUMBER;
-      hash = (53 * hash) + getGymPokemon().hashCode();
-    }
-    if (hasStreaks()) {
-      hash = (37 * hash) + STREAKS_FIELD_NUMBER;
-      hash = (53 * hash) + getStreaks().hashCode();
-    }
-    if (hasEvent()) {
-      hash = (37 * hash) + EVENT_FIELD_NUMBER;
-      hash = (53 * hash) + getEvent().hashCode();
-    }
-    if (hasUpNext()) {
-      hash = (37 * hash) + UP_NEXT_FIELD_NUMBER;
-      hash = (53 * hash) + getUpNext().hashCode();
-    }
-    if (hasTimedQuest()) {
-      hash = (37 * hash) + TIMED_QUEST_FIELD_NUMBER;
-      hash = (53 * hash) + getTimedQuest().hashCode();
+    switch (sectionCase_) {
+      case 1:
+        hash = (37 * hash) + POKECOIN_FIELD_NUMBER;
+        hash = (53 * hash) + getPokecoin().hashCode();
+        break;
+      case 2:
+        hash = (37 * hash) + GYM_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getGymPokemon().hashCode();
+        break;
+      case 3:
+        hash = (37 * hash) + STREAKS_FIELD_NUMBER;
+        hash = (53 * hash) + getStreaks().hashCode();
+        break;
+      case 4:
+        hash = (37 * hash) + EVENT_FIELD_NUMBER;
+        hash = (53 * hash) + getEvent().hashCode();
+        break;
+      case 5:
+        hash = (37 * hash) + UP_NEXT_FIELD_NUMBER;
+        hash = (53 * hash) + getUpNext().hashCode();
+        break;
+      case 6:
+        hash = (37 * hash) + TIMED_QUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getTimedQuest().hashCode();
+        break;
+      case 7:
+        hash = (37 * hash) + EVENT_BANNER_FIELD_NUMBER;
+        hash = (53 * hash) + getEventBanner().hashCode();
+        break;
+      case 8:
+        hash = (37 * hash) + TIMED_GROUP_CHALLENGE_FIELD_NUMBER;
+        hash = (53 * hash) + getTimedGroupChallenge().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -574,42 +780,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (pokecoinBuilder_ == null) {
-        pokecoin_ = null;
-      } else {
-        pokecoin_ = null;
-        pokecoinBuilder_ = null;
-      }
-      if (gymPokemonBuilder_ == null) {
-        gymPokemon_ = null;
-      } else {
-        gymPokemon_ = null;
-        gymPokemonBuilder_ = null;
-      }
-      if (streaksBuilder_ == null) {
-        streaks_ = null;
-      } else {
-        streaks_ = null;
-        streaksBuilder_ = null;
-      }
-      if (eventBuilder_ == null) {
-        event_ = null;
-      } else {
-        event_ = null;
-        eventBuilder_ = null;
-      }
-      if (upNextBuilder_ == null) {
-        upNext_ = null;
-      } else {
-        upNext_ = null;
-        upNextBuilder_ = null;
-      }
-      if (timedQuestBuilder_ == null) {
-        timedQuest_ = null;
-      } else {
-        timedQuest_ = null;
-        timedQuestBuilder_ = null;
-      }
+      sectionCase_ = 0;
+      section_ = null;
       return this;
     }
 
@@ -636,36 +808,63 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.TodayViewSectionProto buildPartial() {
       POGOProtos.Rpc.TodayViewSectionProto result = new POGOProtos.Rpc.TodayViewSectionProto(this);
-      if (pokecoinBuilder_ == null) {
-        result.pokecoin_ = pokecoin_;
-      } else {
-        result.pokecoin_ = pokecoinBuilder_.build();
+      if (sectionCase_ == 1) {
+        if (pokecoinBuilder_ == null) {
+          result.section_ = section_;
+        } else {
+          result.section_ = pokecoinBuilder_.build();
+        }
       }
-      if (gymPokemonBuilder_ == null) {
-        result.gymPokemon_ = gymPokemon_;
-      } else {
-        result.gymPokemon_ = gymPokemonBuilder_.build();
+      if (sectionCase_ == 2) {
+        if (gymPokemonBuilder_ == null) {
+          result.section_ = section_;
+        } else {
+          result.section_ = gymPokemonBuilder_.build();
+        }
       }
-      if (streaksBuilder_ == null) {
-        result.streaks_ = streaks_;
-      } else {
-        result.streaks_ = streaksBuilder_.build();
+      if (sectionCase_ == 3) {
+        if (streaksBuilder_ == null) {
+          result.section_ = section_;
+        } else {
+          result.section_ = streaksBuilder_.build();
+        }
       }
-      if (eventBuilder_ == null) {
-        result.event_ = event_;
-      } else {
-        result.event_ = eventBuilder_.build();
+      if (sectionCase_ == 4) {
+        if (eventBuilder_ == null) {
+          result.section_ = section_;
+        } else {
+          result.section_ = eventBuilder_.build();
+        }
       }
-      if (upNextBuilder_ == null) {
-        result.upNext_ = upNext_;
-      } else {
-        result.upNext_ = upNextBuilder_.build();
+      if (sectionCase_ == 5) {
+        if (upNextBuilder_ == null) {
+          result.section_ = section_;
+        } else {
+          result.section_ = upNextBuilder_.build();
+        }
       }
-      if (timedQuestBuilder_ == null) {
-        result.timedQuest_ = timedQuest_;
-      } else {
-        result.timedQuest_ = timedQuestBuilder_.build();
+      if (sectionCase_ == 6) {
+        if (timedQuestBuilder_ == null) {
+          result.section_ = section_;
+        } else {
+          result.section_ = timedQuestBuilder_.build();
+        }
       }
+      if (sectionCase_ == 7) {
+        if (eventBannerBuilder_ == null) {
+          result.section_ = section_;
+        } else {
+          result.section_ = eventBannerBuilder_.build();
+        }
+      }
+      if (sectionCase_ == 8) {
+        if (timedGroupChallengeBuilder_ == null) {
+          result.section_ = section_;
+        } else {
+          result.section_ = timedGroupChallengeBuilder_.build();
+        }
+      }
+      result.sectionCase_ = sectionCase_;
       onBuilt();
       return result;
     }
@@ -714,23 +913,42 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.TodayViewSectionProto other) {
       if (other == POGOProtos.Rpc.TodayViewSectionProto.getDefaultInstance()) return this;
-      if (other.hasPokecoin()) {
-        mergePokecoin(other.getPokecoin());
-      }
-      if (other.hasGymPokemon()) {
-        mergeGymPokemon(other.getGymPokemon());
-      }
-      if (other.hasStreaks()) {
-        mergeStreaks(other.getStreaks());
-      }
-      if (other.hasEvent()) {
-        mergeEvent(other.getEvent());
-      }
-      if (other.hasUpNext()) {
-        mergeUpNext(other.getUpNext());
-      }
-      if (other.hasTimedQuest()) {
-        mergeTimedQuest(other.getTimedQuest());
+      switch (other.getSectionCase()) {
+        case POKECOIN: {
+          mergePokecoin(other.getPokecoin());
+          break;
+        }
+        case GYM_POKEMON: {
+          mergeGymPokemon(other.getGymPokemon());
+          break;
+        }
+        case STREAKS: {
+          mergeStreaks(other.getStreaks());
+          break;
+        }
+        case EVENT: {
+          mergeEvent(other.getEvent());
+          break;
+        }
+        case UP_NEXT: {
+          mergeUpNext(other.getUpNext());
+          break;
+        }
+        case TIMED_QUEST: {
+          mergeTimedQuest(other.getTimedQuest());
+          break;
+        }
+        case EVENT_BANNER: {
+          mergeEventBanner(other.getEventBanner());
+          break;
+        }
+        case TIMED_GROUP_CHALLENGE: {
+          mergeTimedGroupChallenge(other.getTimedGroupChallenge());
+          break;
+        }
+        case SECTION_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -760,8 +978,22 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int sectionCase_ = 0;
+    private java.lang.Object section_;
+    public SectionCase
+        getSectionCase() {
+      return SectionCase.forNumber(
+          sectionCase_);
+    }
 
-    private POGOProtos.Rpc.PokecoinSectionProto pokecoin_;
+    public Builder clearSection() {
+      sectionCase_ = 0;
+      section_ = null;
+      onChanged();
+      return this;
+    }
+
+
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PokecoinSectionProto, POGOProtos.Rpc.PokecoinSectionProto.Builder, POGOProtos.Rpc.PokecoinSectionProtoOrBuilder> pokecoinBuilder_;
     /**
@@ -769,7 +1001,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the pokecoin field is set.
      */
     public boolean hasPokecoin() {
-      return pokecoinBuilder_ != null || pokecoin_ != null;
+      return sectionCase_ == 1;
     }
     /**
      * <code>.POGOProtos.Rpc.PokecoinSectionProto pokecoin = 1;</code>
@@ -777,9 +1009,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PokecoinSectionProto getPokecoin() {
       if (pokecoinBuilder_ == null) {
-        return pokecoin_ == null ? POGOProtos.Rpc.PokecoinSectionProto.getDefaultInstance() : pokecoin_;
+        if (sectionCase_ == 1) {
+          return (POGOProtos.Rpc.PokecoinSectionProto) section_;
+        }
+        return POGOProtos.Rpc.PokecoinSectionProto.getDefaultInstance();
       } else {
-        return pokecoinBuilder_.getMessage();
+        if (sectionCase_ == 1) {
+          return pokecoinBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PokecoinSectionProto.getDefaultInstance();
       }
     }
     /**
@@ -790,12 +1028,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        pokecoin_ = value;
+        section_ = value;
         onChanged();
       } else {
         pokecoinBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 1;
       return this;
     }
     /**
@@ -804,12 +1042,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPokecoin(
         POGOProtos.Rpc.PokecoinSectionProto.Builder builderForValue) {
       if (pokecoinBuilder_ == null) {
-        pokecoin_ = builderForValue.build();
+        section_ = builderForValue.build();
         onChanged();
       } else {
         pokecoinBuilder_.setMessage(builderForValue.build());
       }
-
+      sectionCase_ = 1;
       return this;
     }
     /**
@@ -817,17 +1055,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePokecoin(POGOProtos.Rpc.PokecoinSectionProto value) {
       if (pokecoinBuilder_ == null) {
-        if (pokecoin_ != null) {
-          pokecoin_ =
-            POGOProtos.Rpc.PokecoinSectionProto.newBuilder(pokecoin_).mergeFrom(value).buildPartial();
+        if (sectionCase_ == 1 &&
+            section_ != POGOProtos.Rpc.PokecoinSectionProto.getDefaultInstance()) {
+          section_ = POGOProtos.Rpc.PokecoinSectionProto.newBuilder((POGOProtos.Rpc.PokecoinSectionProto) section_)
+              .mergeFrom(value).buildPartial();
         } else {
-          pokecoin_ = value;
+          section_ = value;
         }
         onChanged();
       } else {
-        pokecoinBuilder_.mergeFrom(value);
+        if (sectionCase_ == 1) {
+          pokecoinBuilder_.mergeFrom(value);
+        }
+        pokecoinBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 1;
       return this;
     }
     /**
@@ -835,32 +1077,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPokecoin() {
       if (pokecoinBuilder_ == null) {
-        pokecoin_ = null;
-        onChanged();
+        if (sectionCase_ == 1) {
+          sectionCase_ = 0;
+          section_ = null;
+          onChanged();
+        }
       } else {
-        pokecoin_ = null;
-        pokecoinBuilder_ = null;
+        if (sectionCase_ == 1) {
+          sectionCase_ = 0;
+          section_ = null;
+        }
+        pokecoinBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PokecoinSectionProto pokecoin = 1;</code>
      */
     public POGOProtos.Rpc.PokecoinSectionProto.Builder getPokecoinBuilder() {
-      
-      onChanged();
       return getPokecoinFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PokecoinSectionProto pokecoin = 1;</code>
      */
     public POGOProtos.Rpc.PokecoinSectionProtoOrBuilder getPokecoinOrBuilder() {
-      if (pokecoinBuilder_ != null) {
+      if ((sectionCase_ == 1) && (pokecoinBuilder_ != null)) {
         return pokecoinBuilder_.getMessageOrBuilder();
       } else {
-        return pokecoin_ == null ?
-            POGOProtos.Rpc.PokecoinSectionProto.getDefaultInstance() : pokecoin_;
+        if (sectionCase_ == 1) {
+          return (POGOProtos.Rpc.PokecoinSectionProto) section_;
+        }
+        return POGOProtos.Rpc.PokecoinSectionProto.getDefaultInstance();
       }
     }
     /**
@@ -870,17 +1117,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PokecoinSectionProto, POGOProtos.Rpc.PokecoinSectionProto.Builder, POGOProtos.Rpc.PokecoinSectionProtoOrBuilder> 
         getPokecoinFieldBuilder() {
       if (pokecoinBuilder_ == null) {
+        if (!(sectionCase_ == 1)) {
+          section_ = POGOProtos.Rpc.PokecoinSectionProto.getDefaultInstance();
+        }
         pokecoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PokecoinSectionProto, POGOProtos.Rpc.PokecoinSectionProto.Builder, POGOProtos.Rpc.PokecoinSectionProtoOrBuilder>(
-                getPokecoin(),
+                (POGOProtos.Rpc.PokecoinSectionProto) section_,
                 getParentForChildren(),
                 isClean());
-        pokecoin_ = null;
+        section_ = null;
       }
+      sectionCase_ = 1;
+      onChanged();;
       return pokecoinBuilder_;
     }
 
-    private POGOProtos.Rpc.GymPokemonSectionProto gymPokemon_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.GymPokemonSectionProto, POGOProtos.Rpc.GymPokemonSectionProto.Builder, POGOProtos.Rpc.GymPokemonSectionProtoOrBuilder> gymPokemonBuilder_;
     /**
@@ -888,7 +1139,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the gymPokemon field is set.
      */
     public boolean hasGymPokemon() {
-      return gymPokemonBuilder_ != null || gymPokemon_ != null;
+      return sectionCase_ == 2;
     }
     /**
      * <code>.POGOProtos.Rpc.GymPokemonSectionProto gym_pokemon = 2;</code>
@@ -896,9 +1147,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.GymPokemonSectionProto getGymPokemon() {
       if (gymPokemonBuilder_ == null) {
-        return gymPokemon_ == null ? POGOProtos.Rpc.GymPokemonSectionProto.getDefaultInstance() : gymPokemon_;
+        if (sectionCase_ == 2) {
+          return (POGOProtos.Rpc.GymPokemonSectionProto) section_;
+        }
+        return POGOProtos.Rpc.GymPokemonSectionProto.getDefaultInstance();
       } else {
-        return gymPokemonBuilder_.getMessage();
+        if (sectionCase_ == 2) {
+          return gymPokemonBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.GymPokemonSectionProto.getDefaultInstance();
       }
     }
     /**
@@ -909,12 +1166,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        gymPokemon_ = value;
+        section_ = value;
         onChanged();
       } else {
         gymPokemonBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 2;
       return this;
     }
     /**
@@ -923,12 +1180,12 @@ private static final long serialVersionUID = 0L;
     public Builder setGymPokemon(
         POGOProtos.Rpc.GymPokemonSectionProto.Builder builderForValue) {
       if (gymPokemonBuilder_ == null) {
-        gymPokemon_ = builderForValue.build();
+        section_ = builderForValue.build();
         onChanged();
       } else {
         gymPokemonBuilder_.setMessage(builderForValue.build());
       }
-
+      sectionCase_ = 2;
       return this;
     }
     /**
@@ -936,17 +1193,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeGymPokemon(POGOProtos.Rpc.GymPokemonSectionProto value) {
       if (gymPokemonBuilder_ == null) {
-        if (gymPokemon_ != null) {
-          gymPokemon_ =
-            POGOProtos.Rpc.GymPokemonSectionProto.newBuilder(gymPokemon_).mergeFrom(value).buildPartial();
+        if (sectionCase_ == 2 &&
+            section_ != POGOProtos.Rpc.GymPokemonSectionProto.getDefaultInstance()) {
+          section_ = POGOProtos.Rpc.GymPokemonSectionProto.newBuilder((POGOProtos.Rpc.GymPokemonSectionProto) section_)
+              .mergeFrom(value).buildPartial();
         } else {
-          gymPokemon_ = value;
+          section_ = value;
         }
         onChanged();
       } else {
-        gymPokemonBuilder_.mergeFrom(value);
+        if (sectionCase_ == 2) {
+          gymPokemonBuilder_.mergeFrom(value);
+        }
+        gymPokemonBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 2;
       return this;
     }
     /**
@@ -954,32 +1215,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearGymPokemon() {
       if (gymPokemonBuilder_ == null) {
-        gymPokemon_ = null;
-        onChanged();
+        if (sectionCase_ == 2) {
+          sectionCase_ = 0;
+          section_ = null;
+          onChanged();
+        }
       } else {
-        gymPokemon_ = null;
-        gymPokemonBuilder_ = null;
+        if (sectionCase_ == 2) {
+          sectionCase_ = 0;
+          section_ = null;
+        }
+        gymPokemonBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.GymPokemonSectionProto gym_pokemon = 2;</code>
      */
     public POGOProtos.Rpc.GymPokemonSectionProto.Builder getGymPokemonBuilder() {
-      
-      onChanged();
       return getGymPokemonFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.GymPokemonSectionProto gym_pokemon = 2;</code>
      */
     public POGOProtos.Rpc.GymPokemonSectionProtoOrBuilder getGymPokemonOrBuilder() {
-      if (gymPokemonBuilder_ != null) {
+      if ((sectionCase_ == 2) && (gymPokemonBuilder_ != null)) {
         return gymPokemonBuilder_.getMessageOrBuilder();
       } else {
-        return gymPokemon_ == null ?
-            POGOProtos.Rpc.GymPokemonSectionProto.getDefaultInstance() : gymPokemon_;
+        if (sectionCase_ == 2) {
+          return (POGOProtos.Rpc.GymPokemonSectionProto) section_;
+        }
+        return POGOProtos.Rpc.GymPokemonSectionProto.getDefaultInstance();
       }
     }
     /**
@@ -989,17 +1255,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.GymPokemonSectionProto, POGOProtos.Rpc.GymPokemonSectionProto.Builder, POGOProtos.Rpc.GymPokemonSectionProtoOrBuilder> 
         getGymPokemonFieldBuilder() {
       if (gymPokemonBuilder_ == null) {
+        if (!(sectionCase_ == 2)) {
+          section_ = POGOProtos.Rpc.GymPokemonSectionProto.getDefaultInstance();
+        }
         gymPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.GymPokemonSectionProto, POGOProtos.Rpc.GymPokemonSectionProto.Builder, POGOProtos.Rpc.GymPokemonSectionProtoOrBuilder>(
-                getGymPokemon(),
+                (POGOProtos.Rpc.GymPokemonSectionProto) section_,
                 getParentForChildren(),
                 isClean());
-        gymPokemon_ = null;
+        section_ = null;
       }
+      sectionCase_ = 2;
+      onChanged();;
       return gymPokemonBuilder_;
     }
 
-    private POGOProtos.Rpc.DailyStreaksProto streaks_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.DailyStreaksProto, POGOProtos.Rpc.DailyStreaksProto.Builder, POGOProtos.Rpc.DailyStreaksProtoOrBuilder> streaksBuilder_;
     /**
@@ -1007,7 +1277,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the streaks field is set.
      */
     public boolean hasStreaks() {
-      return streaksBuilder_ != null || streaks_ != null;
+      return sectionCase_ == 3;
     }
     /**
      * <code>.POGOProtos.Rpc.DailyStreaksProto streaks = 3;</code>
@@ -1015,9 +1285,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.DailyStreaksProto getStreaks() {
       if (streaksBuilder_ == null) {
-        return streaks_ == null ? POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance() : streaks_;
+        if (sectionCase_ == 3) {
+          return (POGOProtos.Rpc.DailyStreaksProto) section_;
+        }
+        return POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance();
       } else {
-        return streaksBuilder_.getMessage();
+        if (sectionCase_ == 3) {
+          return streaksBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance();
       }
     }
     /**
@@ -1028,12 +1304,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        streaks_ = value;
+        section_ = value;
         onChanged();
       } else {
         streaksBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 3;
       return this;
     }
     /**
@@ -1042,12 +1318,12 @@ private static final long serialVersionUID = 0L;
     public Builder setStreaks(
         POGOProtos.Rpc.DailyStreaksProto.Builder builderForValue) {
       if (streaksBuilder_ == null) {
-        streaks_ = builderForValue.build();
+        section_ = builderForValue.build();
         onChanged();
       } else {
         streaksBuilder_.setMessage(builderForValue.build());
       }
-
+      sectionCase_ = 3;
       return this;
     }
     /**
@@ -1055,17 +1331,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeStreaks(POGOProtos.Rpc.DailyStreaksProto value) {
       if (streaksBuilder_ == null) {
-        if (streaks_ != null) {
-          streaks_ =
-            POGOProtos.Rpc.DailyStreaksProto.newBuilder(streaks_).mergeFrom(value).buildPartial();
+        if (sectionCase_ == 3 &&
+            section_ != POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance()) {
+          section_ = POGOProtos.Rpc.DailyStreaksProto.newBuilder((POGOProtos.Rpc.DailyStreaksProto) section_)
+              .mergeFrom(value).buildPartial();
         } else {
-          streaks_ = value;
+          section_ = value;
         }
         onChanged();
       } else {
-        streaksBuilder_.mergeFrom(value);
+        if (sectionCase_ == 3) {
+          streaksBuilder_.mergeFrom(value);
+        }
+        streaksBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 3;
       return this;
     }
     /**
@@ -1073,32 +1353,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearStreaks() {
       if (streaksBuilder_ == null) {
-        streaks_ = null;
-        onChanged();
+        if (sectionCase_ == 3) {
+          sectionCase_ = 0;
+          section_ = null;
+          onChanged();
+        }
       } else {
-        streaks_ = null;
-        streaksBuilder_ = null;
+        if (sectionCase_ == 3) {
+          sectionCase_ = 0;
+          section_ = null;
+        }
+        streaksBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.DailyStreaksProto streaks = 3;</code>
      */
     public POGOProtos.Rpc.DailyStreaksProto.Builder getStreaksBuilder() {
-      
-      onChanged();
       return getStreaksFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.DailyStreaksProto streaks = 3;</code>
      */
     public POGOProtos.Rpc.DailyStreaksProtoOrBuilder getStreaksOrBuilder() {
-      if (streaksBuilder_ != null) {
+      if ((sectionCase_ == 3) && (streaksBuilder_ != null)) {
         return streaksBuilder_.getMessageOrBuilder();
       } else {
-        return streaks_ == null ?
-            POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance() : streaks_;
+        if (sectionCase_ == 3) {
+          return (POGOProtos.Rpc.DailyStreaksProto) section_;
+        }
+        return POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance();
       }
     }
     /**
@@ -1108,17 +1393,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.DailyStreaksProto, POGOProtos.Rpc.DailyStreaksProto.Builder, POGOProtos.Rpc.DailyStreaksProtoOrBuilder> 
         getStreaksFieldBuilder() {
       if (streaksBuilder_ == null) {
+        if (!(sectionCase_ == 3)) {
+          section_ = POGOProtos.Rpc.DailyStreaksProto.getDefaultInstance();
+        }
         streaksBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.DailyStreaksProto, POGOProtos.Rpc.DailyStreaksProto.Builder, POGOProtos.Rpc.DailyStreaksProtoOrBuilder>(
-                getStreaks(),
+                (POGOProtos.Rpc.DailyStreaksProto) section_,
                 getParentForChildren(),
                 isClean());
-        streaks_ = null;
+        section_ = null;
       }
+      sectionCase_ = 3;
+      onChanged();;
       return streaksBuilder_;
     }
 
-    private POGOProtos.Rpc.EventSectionProto event_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.EventSectionProto, POGOProtos.Rpc.EventSectionProto.Builder, POGOProtos.Rpc.EventSectionProtoOrBuilder> eventBuilder_;
     /**
@@ -1126,7 +1415,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the event field is set.
      */
     public boolean hasEvent() {
-      return eventBuilder_ != null || event_ != null;
+      return sectionCase_ == 4;
     }
     /**
      * <code>.POGOProtos.Rpc.EventSectionProto event = 4;</code>
@@ -1134,9 +1423,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.EventSectionProto getEvent() {
       if (eventBuilder_ == null) {
-        return event_ == null ? POGOProtos.Rpc.EventSectionProto.getDefaultInstance() : event_;
+        if (sectionCase_ == 4) {
+          return (POGOProtos.Rpc.EventSectionProto) section_;
+        }
+        return POGOProtos.Rpc.EventSectionProto.getDefaultInstance();
       } else {
-        return eventBuilder_.getMessage();
+        if (sectionCase_ == 4) {
+          return eventBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.EventSectionProto.getDefaultInstance();
       }
     }
     /**
@@ -1147,12 +1442,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        event_ = value;
+        section_ = value;
         onChanged();
       } else {
         eventBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 4;
       return this;
     }
     /**
@@ -1161,12 +1456,12 @@ private static final long serialVersionUID = 0L;
     public Builder setEvent(
         POGOProtos.Rpc.EventSectionProto.Builder builderForValue) {
       if (eventBuilder_ == null) {
-        event_ = builderForValue.build();
+        section_ = builderForValue.build();
         onChanged();
       } else {
         eventBuilder_.setMessage(builderForValue.build());
       }
-
+      sectionCase_ = 4;
       return this;
     }
     /**
@@ -1174,17 +1469,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeEvent(POGOProtos.Rpc.EventSectionProto value) {
       if (eventBuilder_ == null) {
-        if (event_ != null) {
-          event_ =
-            POGOProtos.Rpc.EventSectionProto.newBuilder(event_).mergeFrom(value).buildPartial();
+        if (sectionCase_ == 4 &&
+            section_ != POGOProtos.Rpc.EventSectionProto.getDefaultInstance()) {
+          section_ = POGOProtos.Rpc.EventSectionProto.newBuilder((POGOProtos.Rpc.EventSectionProto) section_)
+              .mergeFrom(value).buildPartial();
         } else {
-          event_ = value;
+          section_ = value;
         }
         onChanged();
       } else {
-        eventBuilder_.mergeFrom(value);
+        if (sectionCase_ == 4) {
+          eventBuilder_.mergeFrom(value);
+        }
+        eventBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 4;
       return this;
     }
     /**
@@ -1192,32 +1491,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearEvent() {
       if (eventBuilder_ == null) {
-        event_ = null;
-        onChanged();
+        if (sectionCase_ == 4) {
+          sectionCase_ = 0;
+          section_ = null;
+          onChanged();
+        }
       } else {
-        event_ = null;
-        eventBuilder_ = null;
+        if (sectionCase_ == 4) {
+          sectionCase_ = 0;
+          section_ = null;
+        }
+        eventBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.EventSectionProto event = 4;</code>
      */
     public POGOProtos.Rpc.EventSectionProto.Builder getEventBuilder() {
-      
-      onChanged();
       return getEventFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.EventSectionProto event = 4;</code>
      */
     public POGOProtos.Rpc.EventSectionProtoOrBuilder getEventOrBuilder() {
-      if (eventBuilder_ != null) {
+      if ((sectionCase_ == 4) && (eventBuilder_ != null)) {
         return eventBuilder_.getMessageOrBuilder();
       } else {
-        return event_ == null ?
-            POGOProtos.Rpc.EventSectionProto.getDefaultInstance() : event_;
+        if (sectionCase_ == 4) {
+          return (POGOProtos.Rpc.EventSectionProto) section_;
+        }
+        return POGOProtos.Rpc.EventSectionProto.getDefaultInstance();
       }
     }
     /**
@@ -1227,17 +1531,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.EventSectionProto, POGOProtos.Rpc.EventSectionProto.Builder, POGOProtos.Rpc.EventSectionProtoOrBuilder> 
         getEventFieldBuilder() {
       if (eventBuilder_ == null) {
+        if (!(sectionCase_ == 4)) {
+          section_ = POGOProtos.Rpc.EventSectionProto.getDefaultInstance();
+        }
         eventBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.EventSectionProto, POGOProtos.Rpc.EventSectionProto.Builder, POGOProtos.Rpc.EventSectionProtoOrBuilder>(
-                getEvent(),
+                (POGOProtos.Rpc.EventSectionProto) section_,
                 getParentForChildren(),
                 isClean());
-        event_ = null;
+        section_ = null;
       }
+      sectionCase_ = 4;
+      onChanged();;
       return eventBuilder_;
     }
 
-    private POGOProtos.Rpc.UpNextSectionProto upNext_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.UpNextSectionProto, POGOProtos.Rpc.UpNextSectionProto.Builder, POGOProtos.Rpc.UpNextSectionProtoOrBuilder> upNextBuilder_;
     /**
@@ -1245,7 +1553,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the upNext field is set.
      */
     public boolean hasUpNext() {
-      return upNextBuilder_ != null || upNext_ != null;
+      return sectionCase_ == 5;
     }
     /**
      * <code>.POGOProtos.Rpc.UpNextSectionProto up_next = 5;</code>
@@ -1253,9 +1561,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.UpNextSectionProto getUpNext() {
       if (upNextBuilder_ == null) {
-        return upNext_ == null ? POGOProtos.Rpc.UpNextSectionProto.getDefaultInstance() : upNext_;
+        if (sectionCase_ == 5) {
+          return (POGOProtos.Rpc.UpNextSectionProto) section_;
+        }
+        return POGOProtos.Rpc.UpNextSectionProto.getDefaultInstance();
       } else {
-        return upNextBuilder_.getMessage();
+        if (sectionCase_ == 5) {
+          return upNextBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.UpNextSectionProto.getDefaultInstance();
       }
     }
     /**
@@ -1266,12 +1580,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        upNext_ = value;
+        section_ = value;
         onChanged();
       } else {
         upNextBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 5;
       return this;
     }
     /**
@@ -1280,12 +1594,12 @@ private static final long serialVersionUID = 0L;
     public Builder setUpNext(
         POGOProtos.Rpc.UpNextSectionProto.Builder builderForValue) {
       if (upNextBuilder_ == null) {
-        upNext_ = builderForValue.build();
+        section_ = builderForValue.build();
         onChanged();
       } else {
         upNextBuilder_.setMessage(builderForValue.build());
       }
-
+      sectionCase_ = 5;
       return this;
     }
     /**
@@ -1293,17 +1607,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeUpNext(POGOProtos.Rpc.UpNextSectionProto value) {
       if (upNextBuilder_ == null) {
-        if (upNext_ != null) {
-          upNext_ =
-            POGOProtos.Rpc.UpNextSectionProto.newBuilder(upNext_).mergeFrom(value).buildPartial();
+        if (sectionCase_ == 5 &&
+            section_ != POGOProtos.Rpc.UpNextSectionProto.getDefaultInstance()) {
+          section_ = POGOProtos.Rpc.UpNextSectionProto.newBuilder((POGOProtos.Rpc.UpNextSectionProto) section_)
+              .mergeFrom(value).buildPartial();
         } else {
-          upNext_ = value;
+          section_ = value;
         }
         onChanged();
       } else {
-        upNextBuilder_.mergeFrom(value);
+        if (sectionCase_ == 5) {
+          upNextBuilder_.mergeFrom(value);
+        }
+        upNextBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 5;
       return this;
     }
     /**
@@ -1311,32 +1629,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearUpNext() {
       if (upNextBuilder_ == null) {
-        upNext_ = null;
-        onChanged();
+        if (sectionCase_ == 5) {
+          sectionCase_ = 0;
+          section_ = null;
+          onChanged();
+        }
       } else {
-        upNext_ = null;
-        upNextBuilder_ = null;
+        if (sectionCase_ == 5) {
+          sectionCase_ = 0;
+          section_ = null;
+        }
+        upNextBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.UpNextSectionProto up_next = 5;</code>
      */
     public POGOProtos.Rpc.UpNextSectionProto.Builder getUpNextBuilder() {
-      
-      onChanged();
       return getUpNextFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.UpNextSectionProto up_next = 5;</code>
      */
     public POGOProtos.Rpc.UpNextSectionProtoOrBuilder getUpNextOrBuilder() {
-      if (upNextBuilder_ != null) {
+      if ((sectionCase_ == 5) && (upNextBuilder_ != null)) {
         return upNextBuilder_.getMessageOrBuilder();
       } else {
-        return upNext_ == null ?
-            POGOProtos.Rpc.UpNextSectionProto.getDefaultInstance() : upNext_;
+        if (sectionCase_ == 5) {
+          return (POGOProtos.Rpc.UpNextSectionProto) section_;
+        }
+        return POGOProtos.Rpc.UpNextSectionProto.getDefaultInstance();
       }
     }
     /**
@@ -1346,17 +1669,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.UpNextSectionProto, POGOProtos.Rpc.UpNextSectionProto.Builder, POGOProtos.Rpc.UpNextSectionProtoOrBuilder> 
         getUpNextFieldBuilder() {
       if (upNextBuilder_ == null) {
+        if (!(sectionCase_ == 5)) {
+          section_ = POGOProtos.Rpc.UpNextSectionProto.getDefaultInstance();
+        }
         upNextBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.UpNextSectionProto, POGOProtos.Rpc.UpNextSectionProto.Builder, POGOProtos.Rpc.UpNextSectionProtoOrBuilder>(
-                getUpNext(),
+                (POGOProtos.Rpc.UpNextSectionProto) section_,
                 getParentForChildren(),
                 isClean());
-        upNext_ = null;
+        section_ = null;
       }
+      sectionCase_ = 5;
+      onChanged();;
       return upNextBuilder_;
     }
 
-    private POGOProtos.Rpc.TimedQuestSectionProto timedQuest_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.TimedQuestSectionProto, POGOProtos.Rpc.TimedQuestSectionProto.Builder, POGOProtos.Rpc.TimedQuestSectionProtoOrBuilder> timedQuestBuilder_;
     /**
@@ -1364,7 +1691,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the timedQuest field is set.
      */
     public boolean hasTimedQuest() {
-      return timedQuestBuilder_ != null || timedQuest_ != null;
+      return sectionCase_ == 6;
     }
     /**
      * <code>.POGOProtos.Rpc.TimedQuestSectionProto timed_quest = 6;</code>
@@ -1372,9 +1699,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.TimedQuestSectionProto getTimedQuest() {
       if (timedQuestBuilder_ == null) {
-        return timedQuest_ == null ? POGOProtos.Rpc.TimedQuestSectionProto.getDefaultInstance() : timedQuest_;
+        if (sectionCase_ == 6) {
+          return (POGOProtos.Rpc.TimedQuestSectionProto) section_;
+        }
+        return POGOProtos.Rpc.TimedQuestSectionProto.getDefaultInstance();
       } else {
-        return timedQuestBuilder_.getMessage();
+        if (sectionCase_ == 6) {
+          return timedQuestBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.TimedQuestSectionProto.getDefaultInstance();
       }
     }
     /**
@@ -1385,12 +1718,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        timedQuest_ = value;
+        section_ = value;
         onChanged();
       } else {
         timedQuestBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 6;
       return this;
     }
     /**
@@ -1399,12 +1732,12 @@ private static final long serialVersionUID = 0L;
     public Builder setTimedQuest(
         POGOProtos.Rpc.TimedQuestSectionProto.Builder builderForValue) {
       if (timedQuestBuilder_ == null) {
-        timedQuest_ = builderForValue.build();
+        section_ = builderForValue.build();
         onChanged();
       } else {
         timedQuestBuilder_.setMessage(builderForValue.build());
       }
-
+      sectionCase_ = 6;
       return this;
     }
     /**
@@ -1412,17 +1745,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeTimedQuest(POGOProtos.Rpc.TimedQuestSectionProto value) {
       if (timedQuestBuilder_ == null) {
-        if (timedQuest_ != null) {
-          timedQuest_ =
-            POGOProtos.Rpc.TimedQuestSectionProto.newBuilder(timedQuest_).mergeFrom(value).buildPartial();
+        if (sectionCase_ == 6 &&
+            section_ != POGOProtos.Rpc.TimedQuestSectionProto.getDefaultInstance()) {
+          section_ = POGOProtos.Rpc.TimedQuestSectionProto.newBuilder((POGOProtos.Rpc.TimedQuestSectionProto) section_)
+              .mergeFrom(value).buildPartial();
         } else {
-          timedQuest_ = value;
+          section_ = value;
         }
         onChanged();
       } else {
-        timedQuestBuilder_.mergeFrom(value);
+        if (sectionCase_ == 6) {
+          timedQuestBuilder_.mergeFrom(value);
+        }
+        timedQuestBuilder_.setMessage(value);
       }
-
+      sectionCase_ = 6;
       return this;
     }
     /**
@@ -1430,32 +1767,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearTimedQuest() {
       if (timedQuestBuilder_ == null) {
-        timedQuest_ = null;
-        onChanged();
+        if (sectionCase_ == 6) {
+          sectionCase_ = 0;
+          section_ = null;
+          onChanged();
+        }
       } else {
-        timedQuest_ = null;
-        timedQuestBuilder_ = null;
+        if (sectionCase_ == 6) {
+          sectionCase_ = 0;
+          section_ = null;
+        }
+        timedQuestBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.TimedQuestSectionProto timed_quest = 6;</code>
      */
     public POGOProtos.Rpc.TimedQuestSectionProto.Builder getTimedQuestBuilder() {
-      
-      onChanged();
       return getTimedQuestFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.TimedQuestSectionProto timed_quest = 6;</code>
      */
     public POGOProtos.Rpc.TimedQuestSectionProtoOrBuilder getTimedQuestOrBuilder() {
-      if (timedQuestBuilder_ != null) {
+      if ((sectionCase_ == 6) && (timedQuestBuilder_ != null)) {
         return timedQuestBuilder_.getMessageOrBuilder();
       } else {
-        return timedQuest_ == null ?
-            POGOProtos.Rpc.TimedQuestSectionProto.getDefaultInstance() : timedQuest_;
+        if (sectionCase_ == 6) {
+          return (POGOProtos.Rpc.TimedQuestSectionProto) section_;
+        }
+        return POGOProtos.Rpc.TimedQuestSectionProto.getDefaultInstance();
       }
     }
     /**
@@ -1465,14 +1807,295 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.TimedQuestSectionProto, POGOProtos.Rpc.TimedQuestSectionProto.Builder, POGOProtos.Rpc.TimedQuestSectionProtoOrBuilder> 
         getTimedQuestFieldBuilder() {
       if (timedQuestBuilder_ == null) {
+        if (!(sectionCase_ == 6)) {
+          section_ = POGOProtos.Rpc.TimedQuestSectionProto.getDefaultInstance();
+        }
         timedQuestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.TimedQuestSectionProto, POGOProtos.Rpc.TimedQuestSectionProto.Builder, POGOProtos.Rpc.TimedQuestSectionProtoOrBuilder>(
-                getTimedQuest(),
+                (POGOProtos.Rpc.TimedQuestSectionProto) section_,
                 getParentForChildren(),
                 isClean());
-        timedQuest_ = null;
+        section_ = null;
       }
+      sectionCase_ = 6;
+      onChanged();;
       return timedQuestBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.EventBannerSectionProto, POGOProtos.Rpc.EventBannerSectionProto.Builder, POGOProtos.Rpc.EventBannerSectionProtoOrBuilder> eventBannerBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+     * @return Whether the eventBanner field is set.
+     */
+    public boolean hasEventBanner() {
+      return sectionCase_ == 7;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+     * @return The eventBanner.
+     */
+    public POGOProtos.Rpc.EventBannerSectionProto getEventBanner() {
+      if (eventBannerBuilder_ == null) {
+        if (sectionCase_ == 7) {
+          return (POGOProtos.Rpc.EventBannerSectionProto) section_;
+        }
+        return POGOProtos.Rpc.EventBannerSectionProto.getDefaultInstance();
+      } else {
+        if (sectionCase_ == 7) {
+          return eventBannerBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.EventBannerSectionProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+     */
+    public Builder setEventBanner(POGOProtos.Rpc.EventBannerSectionProto value) {
+      if (eventBannerBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        section_ = value;
+        onChanged();
+      } else {
+        eventBannerBuilder_.setMessage(value);
+      }
+      sectionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+     */
+    public Builder setEventBanner(
+        POGOProtos.Rpc.EventBannerSectionProto.Builder builderForValue) {
+      if (eventBannerBuilder_ == null) {
+        section_ = builderForValue.build();
+        onChanged();
+      } else {
+        eventBannerBuilder_.setMessage(builderForValue.build());
+      }
+      sectionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+     */
+    public Builder mergeEventBanner(POGOProtos.Rpc.EventBannerSectionProto value) {
+      if (eventBannerBuilder_ == null) {
+        if (sectionCase_ == 7 &&
+            section_ != POGOProtos.Rpc.EventBannerSectionProto.getDefaultInstance()) {
+          section_ = POGOProtos.Rpc.EventBannerSectionProto.newBuilder((POGOProtos.Rpc.EventBannerSectionProto) section_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          section_ = value;
+        }
+        onChanged();
+      } else {
+        if (sectionCase_ == 7) {
+          eventBannerBuilder_.mergeFrom(value);
+        }
+        eventBannerBuilder_.setMessage(value);
+      }
+      sectionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+     */
+    public Builder clearEventBanner() {
+      if (eventBannerBuilder_ == null) {
+        if (sectionCase_ == 7) {
+          sectionCase_ = 0;
+          section_ = null;
+          onChanged();
+        }
+      } else {
+        if (sectionCase_ == 7) {
+          sectionCase_ = 0;
+          section_ = null;
+        }
+        eventBannerBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+     */
+    public POGOProtos.Rpc.EventBannerSectionProto.Builder getEventBannerBuilder() {
+      return getEventBannerFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+     */
+    public POGOProtos.Rpc.EventBannerSectionProtoOrBuilder getEventBannerOrBuilder() {
+      if ((sectionCase_ == 7) && (eventBannerBuilder_ != null)) {
+        return eventBannerBuilder_.getMessageOrBuilder();
+      } else {
+        if (sectionCase_ == 7) {
+          return (POGOProtos.Rpc.EventBannerSectionProto) section_;
+        }
+        return POGOProtos.Rpc.EventBannerSectionProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EventBannerSectionProto event_banner = 7;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.EventBannerSectionProto, POGOProtos.Rpc.EventBannerSectionProto.Builder, POGOProtos.Rpc.EventBannerSectionProtoOrBuilder> 
+        getEventBannerFieldBuilder() {
+      if (eventBannerBuilder_ == null) {
+        if (!(sectionCase_ == 7)) {
+          section_ = POGOProtos.Rpc.EventBannerSectionProto.getDefaultInstance();
+        }
+        eventBannerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.EventBannerSectionProto, POGOProtos.Rpc.EventBannerSectionProto.Builder, POGOProtos.Rpc.EventBannerSectionProtoOrBuilder>(
+                (POGOProtos.Rpc.EventBannerSectionProto) section_,
+                getParentForChildren(),
+                isClean());
+        section_ = null;
+      }
+      sectionCase_ = 7;
+      onChanged();;
+      return eventBannerBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.TimedGroupChallengeSectionProto, POGOProtos.Rpc.TimedGroupChallengeSectionProto.Builder, POGOProtos.Rpc.TimedGroupChallengeSectionProtoOrBuilder> timedGroupChallengeBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+     * @return Whether the timedGroupChallenge field is set.
+     */
+    public boolean hasTimedGroupChallenge() {
+      return sectionCase_ == 8;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+     * @return The timedGroupChallenge.
+     */
+    public POGOProtos.Rpc.TimedGroupChallengeSectionProto getTimedGroupChallenge() {
+      if (timedGroupChallengeBuilder_ == null) {
+        if (sectionCase_ == 8) {
+          return (POGOProtos.Rpc.TimedGroupChallengeSectionProto) section_;
+        }
+        return POGOProtos.Rpc.TimedGroupChallengeSectionProto.getDefaultInstance();
+      } else {
+        if (sectionCase_ == 8) {
+          return timedGroupChallengeBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.TimedGroupChallengeSectionProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+     */
+    public Builder setTimedGroupChallenge(POGOProtos.Rpc.TimedGroupChallengeSectionProto value) {
+      if (timedGroupChallengeBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        section_ = value;
+        onChanged();
+      } else {
+        timedGroupChallengeBuilder_.setMessage(value);
+      }
+      sectionCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+     */
+    public Builder setTimedGroupChallenge(
+        POGOProtos.Rpc.TimedGroupChallengeSectionProto.Builder builderForValue) {
+      if (timedGroupChallengeBuilder_ == null) {
+        section_ = builderForValue.build();
+        onChanged();
+      } else {
+        timedGroupChallengeBuilder_.setMessage(builderForValue.build());
+      }
+      sectionCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+     */
+    public Builder mergeTimedGroupChallenge(POGOProtos.Rpc.TimedGroupChallengeSectionProto value) {
+      if (timedGroupChallengeBuilder_ == null) {
+        if (sectionCase_ == 8 &&
+            section_ != POGOProtos.Rpc.TimedGroupChallengeSectionProto.getDefaultInstance()) {
+          section_ = POGOProtos.Rpc.TimedGroupChallengeSectionProto.newBuilder((POGOProtos.Rpc.TimedGroupChallengeSectionProto) section_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          section_ = value;
+        }
+        onChanged();
+      } else {
+        if (sectionCase_ == 8) {
+          timedGroupChallengeBuilder_.mergeFrom(value);
+        }
+        timedGroupChallengeBuilder_.setMessage(value);
+      }
+      sectionCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+     */
+    public Builder clearTimedGroupChallenge() {
+      if (timedGroupChallengeBuilder_ == null) {
+        if (sectionCase_ == 8) {
+          sectionCase_ = 0;
+          section_ = null;
+          onChanged();
+        }
+      } else {
+        if (sectionCase_ == 8) {
+          sectionCase_ = 0;
+          section_ = null;
+        }
+        timedGroupChallengeBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+     */
+    public POGOProtos.Rpc.TimedGroupChallengeSectionProto.Builder getTimedGroupChallengeBuilder() {
+      return getTimedGroupChallengeFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+     */
+    public POGOProtos.Rpc.TimedGroupChallengeSectionProtoOrBuilder getTimedGroupChallengeOrBuilder() {
+      if ((sectionCase_ == 8) && (timedGroupChallengeBuilder_ != null)) {
+        return timedGroupChallengeBuilder_.getMessageOrBuilder();
+      } else {
+        if (sectionCase_ == 8) {
+          return (POGOProtos.Rpc.TimedGroupChallengeSectionProto) section_;
+        }
+        return POGOProtos.Rpc.TimedGroupChallengeSectionProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengeSectionProto timed_group_challenge = 8;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.TimedGroupChallengeSectionProto, POGOProtos.Rpc.TimedGroupChallengeSectionProto.Builder, POGOProtos.Rpc.TimedGroupChallengeSectionProtoOrBuilder> 
+        getTimedGroupChallengeFieldBuilder() {
+      if (timedGroupChallengeBuilder_ == null) {
+        if (!(sectionCase_ == 8)) {
+          section_ = POGOProtos.Rpc.TimedGroupChallengeSectionProto.getDefaultInstance();
+        }
+        timedGroupChallengeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.TimedGroupChallengeSectionProto, POGOProtos.Rpc.TimedGroupChallengeSectionProto.Builder, POGOProtos.Rpc.TimedGroupChallengeSectionProtoOrBuilder>(
+                (POGOProtos.Rpc.TimedGroupChallengeSectionProto) section_,
+                getParentForChildren(),
+                isClean());
+        section_ = null;
+      }
+      sectionCase_ = 8;
+      onChanged();;
+      return timedGroupChallengeBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

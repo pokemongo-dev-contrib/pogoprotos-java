@@ -24,7 +24,7 @@ public final class SouvenirTypeIdOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n%POGOProtos/Enums/SouvenirTypeId.proto\022" +
-      "\020POGOProtos.Enums*\265\003\n\016SouvenirTypeId\022\022\n\016" +
+      "\020POGOProtos.Enums*\350\003\n\016SouvenirTypeId\022\022\n\016" +
       "SOUVENIR_UNSET\020\000\022\031\n\025SOUVENIR_LONE_EARRIN" +
       "G\020\001\022\032\n\026SOUVENIR_SMALL_BOUQUET\020\002\022\033\n\027SOUVE" +
       "NIR_SKIPPING_STONE\020\003\022\030\n\024SOUVENIR_BEACH_G" +
@@ -35,7 +35,8 @@ public final class SouvenirTypeIdOuterClass {
       "UITS\020\n\022\032\n\026SOUVENIR_CACTUS_FLOWER\020\013\022\034\n\030SO" +
       "UVENIR_STRETCHY_SPRING\020\014\022\023\n\017SOUVENIR_MAR" +
       "BLE\020\r\022\030\n\024SOUVENIR_TORN_TICKET\020\016\022\030\n\024SOUVE" +
-      "NIR_PRETTY_LEAF\020\017B\002P\001b\006proto3"
+      "NIR_PRETTY_LEAF\020\017\022\025\n\021SOUVENIR_CONFETTI\020\020" +
+      "\022\032\n\026SOUVENIR_PIKACHU_VISOR\020\021B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

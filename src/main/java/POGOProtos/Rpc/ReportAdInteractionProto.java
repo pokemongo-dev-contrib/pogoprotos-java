@@ -77,54 +77,58 @@ private static final long serialVersionUID = 0L;
           }
           case 42: {
             POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder subBuilder = null;
-            if (viewImpression_ != null) {
-              subBuilder = viewImpression_.toBuilder();
+            if (interactionTypeCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction) interactionType_).toBuilder();
             }
-            viewImpression_ = input.readMessage(POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.parser(), extensionRegistry);
+            interactionType_ =
+                input.readMessage(POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(viewImpression_);
-              viewImpression_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction) interactionType_);
+              interactionType_ = subBuilder.buildPartial();
             }
-
+            interactionTypeCase_ = 5;
             break;
           }
           case 50: {
             POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder subBuilder = null;
-            if (viewFullscreen_ != null) {
-              subBuilder = viewFullscreen_.toBuilder();
+            if (interactionTypeCase_ == 6) {
+              subBuilder = ((POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction) interactionType_).toBuilder();
             }
-            viewFullscreen_ = input.readMessage(POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.parser(), extensionRegistry);
+            interactionType_ =
+                input.readMessage(POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(viewFullscreen_);
-              viewFullscreen_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction) interactionType_);
+              interactionType_ = subBuilder.buildPartial();
             }
-
+            interactionTypeCase_ = 6;
             break;
           }
           case 58: {
             POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder subBuilder = null;
-            if (fullscreenInteraction_ != null) {
-              subBuilder = fullscreenInteraction_.toBuilder();
+            if (interactionTypeCase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction) interactionType_).toBuilder();
             }
-            fullscreenInteraction_ = input.readMessage(POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.parser(), extensionRegistry);
+            interactionType_ =
+                input.readMessage(POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(fullscreenInteraction_);
-              fullscreenInteraction_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction) interactionType_);
+              interactionType_ = subBuilder.buildPartial();
             }
-
+            interactionTypeCase_ = 7;
             break;
           }
           case 66: {
             POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder subBuilder = null;
-            if (ctaClicked_ != null) {
-              subBuilder = ctaClicked_.toBuilder();
+            if (interactionTypeCase_ == 8) {
+              subBuilder = ((POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction) interactionType_).toBuilder();
             }
-            ctaClicked_ = input.readMessage(POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.parser(), extensionRegistry);
+            interactionType_ =
+                input.readMessage(POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(ctaClicked_);
-              ctaClicked_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction) interactionType_);
+              interactionType_ = subBuilder.buildPartial();
             }
-
+            interactionTypeCase_ = 8;
             break;
           }
           default: {
@@ -2699,6 +2703,163 @@ private static final long serialVersionUID = 0L;
 
   }
 
+  private int interactionTypeCase_ = 0;
+  private java.lang.Object interactionType_;
+  public enum InteractionTypeCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    VIEW_IMPRESSION(5),
+    VIEW_FULLSCREEN(6),
+    FULLSCREEN_INTERACTION(7),
+    CTA_CLICKED(8),
+    INTERACTIONTYPE_NOT_SET(0);
+    private final int value;
+    private InteractionTypeCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static InteractionTypeCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static InteractionTypeCase forNumber(int value) {
+      switch (value) {
+        case 5: return VIEW_IMPRESSION;
+        case 6: return VIEW_FULLSCREEN;
+        case 7: return FULLSCREEN_INTERACTION;
+        case 8: return CTA_CLICKED;
+        case 0: return INTERACTIONTYPE_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public InteractionTypeCase
+  getInteractionTypeCase() {
+    return InteractionTypeCase.forNumber(
+        interactionTypeCase_);
+  }
+
+  public static final int VIEW_IMPRESSION_FIELD_NUMBER = 5;
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+   * @return Whether the viewImpression field is set.
+   */
+  public boolean hasViewImpression() {
+    return interactionTypeCase_ == 5;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+   * @return The viewImpression.
+   */
+  public POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction getViewImpression() {
+    if (interactionTypeCase_ == 5) {
+       return (POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction) interactionType_;
+    }
+    return POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+   */
+  public POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteractionOrBuilder getViewImpressionOrBuilder() {
+    if (interactionTypeCase_ == 5) {
+       return (POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction) interactionType_;
+    }
+    return POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.getDefaultInstance();
+  }
+
+  public static final int VIEW_FULLSCREEN_FIELD_NUMBER = 6;
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+   * @return Whether the viewFullscreen field is set.
+   */
+  public boolean hasViewFullscreen() {
+    return interactionTypeCase_ == 6;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+   * @return The viewFullscreen.
+   */
+  public POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction getViewFullscreen() {
+    if (interactionTypeCase_ == 6) {
+       return (POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction) interactionType_;
+    }
+    return POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+   */
+  public POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteractionOrBuilder getViewFullscreenOrBuilder() {
+    if (interactionTypeCase_ == 6) {
+       return (POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction) interactionType_;
+    }
+    return POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.getDefaultInstance();
+  }
+
+  public static final int FULLSCREEN_INTERACTION_FIELD_NUMBER = 7;
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+   * @return Whether the fullscreenInteraction field is set.
+   */
+  public boolean hasFullscreenInteraction() {
+    return interactionTypeCase_ == 7;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+   * @return The fullscreenInteraction.
+   */
+  public POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction getFullscreenInteraction() {
+    if (interactionTypeCase_ == 7) {
+       return (POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction) interactionType_;
+    }
+    return POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+   */
+  public POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteractionOrBuilder getFullscreenInteractionOrBuilder() {
+    if (interactionTypeCase_ == 7) {
+       return (POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction) interactionType_;
+    }
+    return POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.getDefaultInstance();
+  }
+
+  public static final int CTA_CLICKED_FIELD_NUMBER = 8;
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+   * @return Whether the ctaClicked field is set.
+   */
+  public boolean hasCtaClicked() {
+    return interactionTypeCase_ == 8;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+   * @return The ctaClicked.
+   */
+  public POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction getCtaClicked() {
+    if (interactionTypeCase_ == 8) {
+       return (POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction) interactionType_;
+    }
+    return POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+   */
+  public POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder getCtaClickedOrBuilder() {
+    if (interactionTypeCase_ == 8) {
+       return (POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction) interactionType_;
+    }
+    return POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.getDefaultInstance();
+  }
+
   public static final int GAME_ID_FIELD_NUMBER = 1;
   private volatile java.lang.Object gameId_;
   /**
@@ -2817,98 +2978,6 @@ private static final long serialVersionUID = 0L;
     return encryptedAdToken_;
   }
 
-  public static final int VIEW_IMPRESSION_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction viewImpression_;
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-   * @return Whether the viewImpression field is set.
-   */
-  public boolean hasViewImpression() {
-    return viewImpression_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-   * @return The viewImpression.
-   */
-  public POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction getViewImpression() {
-    return viewImpression_ == null ? POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.getDefaultInstance() : viewImpression_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-   */
-  public POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteractionOrBuilder getViewImpressionOrBuilder() {
-    return getViewImpression();
-  }
-
-  public static final int VIEW_FULLSCREEN_FIELD_NUMBER = 6;
-  private POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction viewFullscreen_;
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-   * @return Whether the viewFullscreen field is set.
-   */
-  public boolean hasViewFullscreen() {
-    return viewFullscreen_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-   * @return The viewFullscreen.
-   */
-  public POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction getViewFullscreen() {
-    return viewFullscreen_ == null ? POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.getDefaultInstance() : viewFullscreen_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-   */
-  public POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteractionOrBuilder getViewFullscreenOrBuilder() {
-    return getViewFullscreen();
-  }
-
-  public static final int FULLSCREEN_INTERACTION_FIELD_NUMBER = 7;
-  private POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreenInteraction_;
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-   * @return Whether the fullscreenInteraction field is set.
-   */
-  public boolean hasFullscreenInteraction() {
-    return fullscreenInteraction_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-   * @return The fullscreenInteraction.
-   */
-  public POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction getFullscreenInteraction() {
-    return fullscreenInteraction_ == null ? POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.getDefaultInstance() : fullscreenInteraction_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-   */
-  public POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteractionOrBuilder getFullscreenInteractionOrBuilder() {
-    return getFullscreenInteraction();
-  }
-
-  public static final int CTA_CLICKED_FIELD_NUMBER = 8;
-  private POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction ctaClicked_;
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-   * @return Whether the ctaClicked field is set.
-   */
-  public boolean hasCtaClicked() {
-    return ctaClicked_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-   * @return The ctaClicked.
-   */
-  public POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction getCtaClicked() {
-    return ctaClicked_ == null ? POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.getDefaultInstance() : ctaClicked_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-   */
-  public POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder getCtaClickedOrBuilder() {
-    return getCtaClicked();
-  }
-
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -2935,17 +3004,17 @@ private static final long serialVersionUID = 0L;
     if (!encryptedAdToken_.isEmpty()) {
       output.writeBytes(4, encryptedAdToken_);
     }
-    if (viewImpression_ != null) {
-      output.writeMessage(5, getViewImpression());
+    if (interactionTypeCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction) interactionType_);
     }
-    if (viewFullscreen_ != null) {
-      output.writeMessage(6, getViewFullscreen());
+    if (interactionTypeCase_ == 6) {
+      output.writeMessage(6, (POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction) interactionType_);
     }
-    if (fullscreenInteraction_ != null) {
-      output.writeMessage(7, getFullscreenInteraction());
+    if (interactionTypeCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction) interactionType_);
     }
-    if (ctaClicked_ != null) {
-      output.writeMessage(8, getCtaClicked());
+    if (interactionTypeCase_ == 8) {
+      output.writeMessage(8, (POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction) interactionType_);
     }
     unknownFields.writeTo(output);
   }
@@ -2969,21 +3038,21 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBytesSize(4, encryptedAdToken_);
     }
-    if (viewImpression_ != null) {
+    if (interactionTypeCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getViewImpression());
+        .computeMessageSize(5, (POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction) interactionType_);
     }
-    if (viewFullscreen_ != null) {
+    if (interactionTypeCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getViewFullscreen());
+        .computeMessageSize(6, (POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction) interactionType_);
     }
-    if (fullscreenInteraction_ != null) {
+    if (interactionTypeCase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getFullscreenInteraction());
+        .computeMessageSize(7, (POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction) interactionType_);
     }
-    if (ctaClicked_ != null) {
+    if (interactionTypeCase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getCtaClicked());
+        .computeMessageSize(8, (POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction) interactionType_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -3008,25 +3077,26 @@ private static final long serialVersionUID = 0L;
         .equals(other.getGuid())) return false;
     if (!getEncryptedAdToken()
         .equals(other.getEncryptedAdToken())) return false;
-    if (hasViewImpression() != other.hasViewImpression()) return false;
-    if (hasViewImpression()) {
-      if (!getViewImpression()
-          .equals(other.getViewImpression())) return false;
-    }
-    if (hasViewFullscreen() != other.hasViewFullscreen()) return false;
-    if (hasViewFullscreen()) {
-      if (!getViewFullscreen()
-          .equals(other.getViewFullscreen())) return false;
-    }
-    if (hasFullscreenInteraction() != other.hasFullscreenInteraction()) return false;
-    if (hasFullscreenInteraction()) {
-      if (!getFullscreenInteraction()
-          .equals(other.getFullscreenInteraction())) return false;
-    }
-    if (hasCtaClicked() != other.hasCtaClicked()) return false;
-    if (hasCtaClicked()) {
-      if (!getCtaClicked()
-          .equals(other.getCtaClicked())) return false;
+    if (!getInteractionTypeCase().equals(other.getInteractionTypeCase())) return false;
+    switch (interactionTypeCase_) {
+      case 5:
+        if (!getViewImpression()
+            .equals(other.getViewImpression())) return false;
+        break;
+      case 6:
+        if (!getViewFullscreen()
+            .equals(other.getViewFullscreen())) return false;
+        break;
+      case 7:
+        if (!getFullscreenInteraction()
+            .equals(other.getFullscreenInteraction())) return false;
+        break;
+      case 8:
+        if (!getCtaClicked()
+            .equals(other.getCtaClicked())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -3047,21 +3117,25 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getGuid().hashCode();
     hash = (37 * hash) + ENCRYPTED_AD_TOKEN_FIELD_NUMBER;
     hash = (53 * hash) + getEncryptedAdToken().hashCode();
-    if (hasViewImpression()) {
-      hash = (37 * hash) + VIEW_IMPRESSION_FIELD_NUMBER;
-      hash = (53 * hash) + getViewImpression().hashCode();
-    }
-    if (hasViewFullscreen()) {
-      hash = (37 * hash) + VIEW_FULLSCREEN_FIELD_NUMBER;
-      hash = (53 * hash) + getViewFullscreen().hashCode();
-    }
-    if (hasFullscreenInteraction()) {
-      hash = (37 * hash) + FULLSCREEN_INTERACTION_FIELD_NUMBER;
-      hash = (53 * hash) + getFullscreenInteraction().hashCode();
-    }
-    if (hasCtaClicked()) {
-      hash = (37 * hash) + CTA_CLICKED_FIELD_NUMBER;
-      hash = (53 * hash) + getCtaClicked().hashCode();
+    switch (interactionTypeCase_) {
+      case 5:
+        hash = (37 * hash) + VIEW_IMPRESSION_FIELD_NUMBER;
+        hash = (53 * hash) + getViewImpression().hashCode();
+        break;
+      case 6:
+        hash = (37 * hash) + VIEW_FULLSCREEN_FIELD_NUMBER;
+        hash = (53 * hash) + getViewFullscreen().hashCode();
+        break;
+      case 7:
+        hash = (37 * hash) + FULLSCREEN_INTERACTION_FIELD_NUMBER;
+        hash = (53 * hash) + getFullscreenInteraction().hashCode();
+        break;
+      case 8:
+        hash = (37 * hash) + CTA_CLICKED_FIELD_NUMBER;
+        hash = (53 * hash) + getCtaClicked().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -3204,30 +3278,8 @@ private static final long serialVersionUID = 0L;
 
       encryptedAdToken_ = com.google.protobuf.ByteString.EMPTY;
 
-      if (viewImpressionBuilder_ == null) {
-        viewImpression_ = null;
-      } else {
-        viewImpression_ = null;
-        viewImpressionBuilder_ = null;
-      }
-      if (viewFullscreenBuilder_ == null) {
-        viewFullscreen_ = null;
-      } else {
-        viewFullscreen_ = null;
-        viewFullscreenBuilder_ = null;
-      }
-      if (fullscreenInteractionBuilder_ == null) {
-        fullscreenInteraction_ = null;
-      } else {
-        fullscreenInteraction_ = null;
-        fullscreenInteractionBuilder_ = null;
-      }
-      if (ctaClickedBuilder_ == null) {
-        ctaClicked_ = null;
-      } else {
-        ctaClicked_ = null;
-        ctaClickedBuilder_ = null;
-      }
+      interactionTypeCase_ = 0;
+      interactionType_ = null;
       return this;
     }
 
@@ -3254,30 +3306,39 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.ReportAdInteractionProto buildPartial() {
       POGOProtos.Rpc.ReportAdInteractionProto result = new POGOProtos.Rpc.ReportAdInteractionProto(this);
+      if (interactionTypeCase_ == 5) {
+        if (viewImpressionBuilder_ == null) {
+          result.interactionType_ = interactionType_;
+        } else {
+          result.interactionType_ = viewImpressionBuilder_.build();
+        }
+      }
+      if (interactionTypeCase_ == 6) {
+        if (viewFullscreenBuilder_ == null) {
+          result.interactionType_ = interactionType_;
+        } else {
+          result.interactionType_ = viewFullscreenBuilder_.build();
+        }
+      }
+      if (interactionTypeCase_ == 7) {
+        if (fullscreenInteractionBuilder_ == null) {
+          result.interactionType_ = interactionType_;
+        } else {
+          result.interactionType_ = fullscreenInteractionBuilder_.build();
+        }
+      }
+      if (interactionTypeCase_ == 8) {
+        if (ctaClickedBuilder_ == null) {
+          result.interactionType_ = interactionType_;
+        } else {
+          result.interactionType_ = ctaClickedBuilder_.build();
+        }
+      }
       result.gameId_ = gameId_;
       result.userId_ = userId_;
       result.guid_ = guid_;
       result.encryptedAdToken_ = encryptedAdToken_;
-      if (viewImpressionBuilder_ == null) {
-        result.viewImpression_ = viewImpression_;
-      } else {
-        result.viewImpression_ = viewImpressionBuilder_.build();
-      }
-      if (viewFullscreenBuilder_ == null) {
-        result.viewFullscreen_ = viewFullscreen_;
-      } else {
-        result.viewFullscreen_ = viewFullscreenBuilder_.build();
-      }
-      if (fullscreenInteractionBuilder_ == null) {
-        result.fullscreenInteraction_ = fullscreenInteraction_;
-      } else {
-        result.fullscreenInteraction_ = fullscreenInteractionBuilder_.build();
-      }
-      if (ctaClickedBuilder_ == null) {
-        result.ctaClicked_ = ctaClicked_;
-      } else {
-        result.ctaClicked_ = ctaClickedBuilder_.build();
-      }
+      result.interactionTypeCase_ = interactionTypeCase_;
       onBuilt();
       return result;
     }
@@ -3341,17 +3402,26 @@ private static final long serialVersionUID = 0L;
       if (other.getEncryptedAdToken() != com.google.protobuf.ByteString.EMPTY) {
         setEncryptedAdToken(other.getEncryptedAdToken());
       }
-      if (other.hasViewImpression()) {
-        mergeViewImpression(other.getViewImpression());
-      }
-      if (other.hasViewFullscreen()) {
-        mergeViewFullscreen(other.getViewFullscreen());
-      }
-      if (other.hasFullscreenInteraction()) {
-        mergeFullscreenInteraction(other.getFullscreenInteraction());
-      }
-      if (other.hasCtaClicked()) {
-        mergeCtaClicked(other.getCtaClicked());
+      switch (other.getInteractionTypeCase()) {
+        case VIEW_IMPRESSION: {
+          mergeViewImpression(other.getViewImpression());
+          break;
+        }
+        case VIEW_FULLSCREEN: {
+          mergeViewFullscreen(other.getViewFullscreen());
+          break;
+        }
+        case FULLSCREEN_INTERACTION: {
+          mergeFullscreenInteraction(other.getFullscreenInteraction());
+          break;
+        }
+        case CTA_CLICKED: {
+          mergeCtaClicked(other.getCtaClicked());
+          break;
+        }
+        case INTERACTIONTYPE_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -3380,6 +3450,573 @@ private static final long serialVersionUID = 0L;
         }
       }
       return this;
+    }
+    private int interactionTypeCase_ = 0;
+    private java.lang.Object interactionType_;
+    public InteractionTypeCase
+        getInteractionTypeCase() {
+      return InteractionTypeCase.forNumber(
+          interactionTypeCase_);
+    }
+
+    public Builder clearInteractionType() {
+      interactionTypeCase_ = 0;
+      interactionType_ = null;
+      onChanged();
+      return this;
+    }
+
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteractionOrBuilder> viewImpressionBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+     * @return Whether the viewImpression field is set.
+     */
+    public boolean hasViewImpression() {
+      return interactionTypeCase_ == 5;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+     * @return The viewImpression.
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction getViewImpression() {
+      if (viewImpressionBuilder_ == null) {
+        if (interactionTypeCase_ == 5) {
+          return (POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction) interactionType_;
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.getDefaultInstance();
+      } else {
+        if (interactionTypeCase_ == 5) {
+          return viewImpressionBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+     */
+    public Builder setViewImpression(POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction value) {
+      if (viewImpressionBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        interactionType_ = value;
+        onChanged();
+      } else {
+        viewImpressionBuilder_.setMessage(value);
+      }
+      interactionTypeCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+     */
+    public Builder setViewImpression(
+        POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder builderForValue) {
+      if (viewImpressionBuilder_ == null) {
+        interactionType_ = builderForValue.build();
+        onChanged();
+      } else {
+        viewImpressionBuilder_.setMessage(builderForValue.build());
+      }
+      interactionTypeCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+     */
+    public Builder mergeViewImpression(POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction value) {
+      if (viewImpressionBuilder_ == null) {
+        if (interactionTypeCase_ == 5 &&
+            interactionType_ != POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.getDefaultInstance()) {
+          interactionType_ = POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.newBuilder((POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction) interactionType_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          interactionType_ = value;
+        }
+        onChanged();
+      } else {
+        if (interactionTypeCase_ == 5) {
+          viewImpressionBuilder_.mergeFrom(value);
+        }
+        viewImpressionBuilder_.setMessage(value);
+      }
+      interactionTypeCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+     */
+    public Builder clearViewImpression() {
+      if (viewImpressionBuilder_ == null) {
+        if (interactionTypeCase_ == 5) {
+          interactionTypeCase_ = 0;
+          interactionType_ = null;
+          onChanged();
+        }
+      } else {
+        if (interactionTypeCase_ == 5) {
+          interactionTypeCase_ = 0;
+          interactionType_ = null;
+        }
+        viewImpressionBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder getViewImpressionBuilder() {
+      return getViewImpressionFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteractionOrBuilder getViewImpressionOrBuilder() {
+      if ((interactionTypeCase_ == 5) && (viewImpressionBuilder_ != null)) {
+        return viewImpressionBuilder_.getMessageOrBuilder();
+      } else {
+        if (interactionTypeCase_ == 5) {
+          return (POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction) interactionType_;
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteractionOrBuilder> 
+        getViewImpressionFieldBuilder() {
+      if (viewImpressionBuilder_ == null) {
+        if (!(interactionTypeCase_ == 5)) {
+          interactionType_ = POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.getDefaultInstance();
+        }
+        viewImpressionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteractionOrBuilder>(
+                (POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction) interactionType_,
+                getParentForChildren(),
+                isClean());
+        interactionType_ = null;
+      }
+      interactionTypeCase_ = 5;
+      onChanged();;
+      return viewImpressionBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteractionOrBuilder> viewFullscreenBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+     * @return Whether the viewFullscreen field is set.
+     */
+    public boolean hasViewFullscreen() {
+      return interactionTypeCase_ == 6;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+     * @return The viewFullscreen.
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction getViewFullscreen() {
+      if (viewFullscreenBuilder_ == null) {
+        if (interactionTypeCase_ == 6) {
+          return (POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction) interactionType_;
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.getDefaultInstance();
+      } else {
+        if (interactionTypeCase_ == 6) {
+          return viewFullscreenBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+     */
+    public Builder setViewFullscreen(POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction value) {
+      if (viewFullscreenBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        interactionType_ = value;
+        onChanged();
+      } else {
+        viewFullscreenBuilder_.setMessage(value);
+      }
+      interactionTypeCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+     */
+    public Builder setViewFullscreen(
+        POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder builderForValue) {
+      if (viewFullscreenBuilder_ == null) {
+        interactionType_ = builderForValue.build();
+        onChanged();
+      } else {
+        viewFullscreenBuilder_.setMessage(builderForValue.build());
+      }
+      interactionTypeCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+     */
+    public Builder mergeViewFullscreen(POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction value) {
+      if (viewFullscreenBuilder_ == null) {
+        if (interactionTypeCase_ == 6 &&
+            interactionType_ != POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.getDefaultInstance()) {
+          interactionType_ = POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.newBuilder((POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction) interactionType_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          interactionType_ = value;
+        }
+        onChanged();
+      } else {
+        if (interactionTypeCase_ == 6) {
+          viewFullscreenBuilder_.mergeFrom(value);
+        }
+        viewFullscreenBuilder_.setMessage(value);
+      }
+      interactionTypeCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+     */
+    public Builder clearViewFullscreen() {
+      if (viewFullscreenBuilder_ == null) {
+        if (interactionTypeCase_ == 6) {
+          interactionTypeCase_ = 0;
+          interactionType_ = null;
+          onChanged();
+        }
+      } else {
+        if (interactionTypeCase_ == 6) {
+          interactionTypeCase_ = 0;
+          interactionType_ = null;
+        }
+        viewFullscreenBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder getViewFullscreenBuilder() {
+      return getViewFullscreenFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteractionOrBuilder getViewFullscreenOrBuilder() {
+      if ((interactionTypeCase_ == 6) && (viewFullscreenBuilder_ != null)) {
+        return viewFullscreenBuilder_.getMessageOrBuilder();
+      } else {
+        if (interactionTypeCase_ == 6) {
+          return (POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction) interactionType_;
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteractionOrBuilder> 
+        getViewFullscreenFieldBuilder() {
+      if (viewFullscreenBuilder_ == null) {
+        if (!(interactionTypeCase_ == 6)) {
+          interactionType_ = POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.getDefaultInstance();
+        }
+        viewFullscreenBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteractionOrBuilder>(
+                (POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction) interactionType_,
+                getParentForChildren(),
+                isClean());
+        interactionType_ = null;
+      }
+      interactionTypeCase_ = 6;
+      onChanged();;
+      return viewFullscreenBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteractionOrBuilder> fullscreenInteractionBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+     * @return Whether the fullscreenInteraction field is set.
+     */
+    public boolean hasFullscreenInteraction() {
+      return interactionTypeCase_ == 7;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+     * @return The fullscreenInteraction.
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction getFullscreenInteraction() {
+      if (fullscreenInteractionBuilder_ == null) {
+        if (interactionTypeCase_ == 7) {
+          return (POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction) interactionType_;
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.getDefaultInstance();
+      } else {
+        if (interactionTypeCase_ == 7) {
+          return fullscreenInteractionBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+     */
+    public Builder setFullscreenInteraction(POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction value) {
+      if (fullscreenInteractionBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        interactionType_ = value;
+        onChanged();
+      } else {
+        fullscreenInteractionBuilder_.setMessage(value);
+      }
+      interactionTypeCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+     */
+    public Builder setFullscreenInteraction(
+        POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder builderForValue) {
+      if (fullscreenInteractionBuilder_ == null) {
+        interactionType_ = builderForValue.build();
+        onChanged();
+      } else {
+        fullscreenInteractionBuilder_.setMessage(builderForValue.build());
+      }
+      interactionTypeCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+     */
+    public Builder mergeFullscreenInteraction(POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction value) {
+      if (fullscreenInteractionBuilder_ == null) {
+        if (interactionTypeCase_ == 7 &&
+            interactionType_ != POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.getDefaultInstance()) {
+          interactionType_ = POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.newBuilder((POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction) interactionType_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          interactionType_ = value;
+        }
+        onChanged();
+      } else {
+        if (interactionTypeCase_ == 7) {
+          fullscreenInteractionBuilder_.mergeFrom(value);
+        }
+        fullscreenInteractionBuilder_.setMessage(value);
+      }
+      interactionTypeCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+     */
+    public Builder clearFullscreenInteraction() {
+      if (fullscreenInteractionBuilder_ == null) {
+        if (interactionTypeCase_ == 7) {
+          interactionTypeCase_ = 0;
+          interactionType_ = null;
+          onChanged();
+        }
+      } else {
+        if (interactionTypeCase_ == 7) {
+          interactionTypeCase_ = 0;
+          interactionType_ = null;
+        }
+        fullscreenInteractionBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder getFullscreenInteractionBuilder() {
+      return getFullscreenInteractionFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteractionOrBuilder getFullscreenInteractionOrBuilder() {
+      if ((interactionTypeCase_ == 7) && (fullscreenInteractionBuilder_ != null)) {
+        return fullscreenInteractionBuilder_.getMessageOrBuilder();
+      } else {
+        if (interactionTypeCase_ == 7) {
+          return (POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction) interactionType_;
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteractionOrBuilder> 
+        getFullscreenInteractionFieldBuilder() {
+      if (fullscreenInteractionBuilder_ == null) {
+        if (!(interactionTypeCase_ == 7)) {
+          interactionType_ = POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.getDefaultInstance();
+        }
+        fullscreenInteractionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteractionOrBuilder>(
+                (POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction) interactionType_,
+                getParentForChildren(),
+                isClean());
+        interactionType_ = null;
+      }
+      interactionTypeCase_ = 7;
+      onChanged();;
+      return fullscreenInteractionBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder> ctaClickedBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+     * @return Whether the ctaClicked field is set.
+     */
+    public boolean hasCtaClicked() {
+      return interactionTypeCase_ == 8;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+     * @return The ctaClicked.
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction getCtaClicked() {
+      if (ctaClickedBuilder_ == null) {
+        if (interactionTypeCase_ == 8) {
+          return (POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction) interactionType_;
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.getDefaultInstance();
+      } else {
+        if (interactionTypeCase_ == 8) {
+          return ctaClickedBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+     */
+    public Builder setCtaClicked(POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction value) {
+      if (ctaClickedBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        interactionType_ = value;
+        onChanged();
+      } else {
+        ctaClickedBuilder_.setMessage(value);
+      }
+      interactionTypeCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+     */
+    public Builder setCtaClicked(
+        POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder builderForValue) {
+      if (ctaClickedBuilder_ == null) {
+        interactionType_ = builderForValue.build();
+        onChanged();
+      } else {
+        ctaClickedBuilder_.setMessage(builderForValue.build());
+      }
+      interactionTypeCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+     */
+    public Builder mergeCtaClicked(POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction value) {
+      if (ctaClickedBuilder_ == null) {
+        if (interactionTypeCase_ == 8 &&
+            interactionType_ != POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.getDefaultInstance()) {
+          interactionType_ = POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.newBuilder((POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction) interactionType_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          interactionType_ = value;
+        }
+        onChanged();
+      } else {
+        if (interactionTypeCase_ == 8) {
+          ctaClickedBuilder_.mergeFrom(value);
+        }
+        ctaClickedBuilder_.setMessage(value);
+      }
+      interactionTypeCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+     */
+    public Builder clearCtaClicked() {
+      if (ctaClickedBuilder_ == null) {
+        if (interactionTypeCase_ == 8) {
+          interactionTypeCase_ = 0;
+          interactionType_ = null;
+          onChanged();
+        }
+      } else {
+        if (interactionTypeCase_ == 8) {
+          interactionTypeCase_ = 0;
+          interactionType_ = null;
+        }
+        ctaClickedBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder getCtaClickedBuilder() {
+      return getCtaClickedFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+     */
+    public POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder getCtaClickedOrBuilder() {
+      if ((interactionTypeCase_ == 8) && (ctaClickedBuilder_ != null)) {
+        return ctaClickedBuilder_.getMessageOrBuilder();
+      } else {
+        if (interactionTypeCase_ == 8) {
+          return (POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction) interactionType_;
+        }
+        return POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder> 
+        getCtaClickedFieldBuilder() {
+      if (ctaClickedBuilder_ == null) {
+        if (!(interactionTypeCase_ == 8)) {
+          interactionType_ = POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.getDefaultInstance();
+        }
+        ctaClickedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder>(
+                (POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction) interactionType_,
+                getParentForChildren(),
+                isClean());
+        interactionType_ = null;
+      }
+      interactionTypeCase_ = 8;
+      onChanged();;
+      return ctaClickedBuilder_;
     }
 
     private java.lang.Object gameId_ = "";
@@ -3641,482 +4278,6 @@ private static final long serialVersionUID = 0L;
       encryptedAdToken_ = getDefaultInstance().getEncryptedAdToken();
       onChanged();
       return this;
-    }
-
-    private POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction viewImpression_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteractionOrBuilder> viewImpressionBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-     * @return Whether the viewImpression field is set.
-     */
-    public boolean hasViewImpression() {
-      return viewImpressionBuilder_ != null || viewImpression_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-     * @return The viewImpression.
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction getViewImpression() {
-      if (viewImpressionBuilder_ == null) {
-        return viewImpression_ == null ? POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.getDefaultInstance() : viewImpression_;
-      } else {
-        return viewImpressionBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-     */
-    public Builder setViewImpression(POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction value) {
-      if (viewImpressionBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        viewImpression_ = value;
-        onChanged();
-      } else {
-        viewImpressionBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-     */
-    public Builder setViewImpression(
-        POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder builderForValue) {
-      if (viewImpressionBuilder_ == null) {
-        viewImpression_ = builderForValue.build();
-        onChanged();
-      } else {
-        viewImpressionBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-     */
-    public Builder mergeViewImpression(POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction value) {
-      if (viewImpressionBuilder_ == null) {
-        if (viewImpression_ != null) {
-          viewImpression_ =
-            POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.newBuilder(viewImpression_).mergeFrom(value).buildPartial();
-        } else {
-          viewImpression_ = value;
-        }
-        onChanged();
-      } else {
-        viewImpressionBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-     */
-    public Builder clearViewImpression() {
-      if (viewImpressionBuilder_ == null) {
-        viewImpression_ = null;
-        onChanged();
-      } else {
-        viewImpression_ = null;
-        viewImpressionBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder getViewImpressionBuilder() {
-      
-      onChanged();
-      return getViewImpressionFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteractionOrBuilder getViewImpressionOrBuilder() {
-      if (viewImpressionBuilder_ != null) {
-        return viewImpressionBuilder_.getMessageOrBuilder();
-      } else {
-        return viewImpression_ == null ?
-            POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.getDefaultInstance() : viewImpression_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction view_impression = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteractionOrBuilder> 
-        getViewImpressionFieldBuilder() {
-      if (viewImpressionBuilder_ == null) {
-        viewImpressionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewImpressionInteractionOrBuilder>(
-                getViewImpression(),
-                getParentForChildren(),
-                isClean());
-        viewImpression_ = null;
-      }
-      return viewImpressionBuilder_;
-    }
-
-    private POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction viewFullscreen_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteractionOrBuilder> viewFullscreenBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-     * @return Whether the viewFullscreen field is set.
-     */
-    public boolean hasViewFullscreen() {
-      return viewFullscreenBuilder_ != null || viewFullscreen_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-     * @return The viewFullscreen.
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction getViewFullscreen() {
-      if (viewFullscreenBuilder_ == null) {
-        return viewFullscreen_ == null ? POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.getDefaultInstance() : viewFullscreen_;
-      } else {
-        return viewFullscreenBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-     */
-    public Builder setViewFullscreen(POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction value) {
-      if (viewFullscreenBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        viewFullscreen_ = value;
-        onChanged();
-      } else {
-        viewFullscreenBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-     */
-    public Builder setViewFullscreen(
-        POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder builderForValue) {
-      if (viewFullscreenBuilder_ == null) {
-        viewFullscreen_ = builderForValue.build();
-        onChanged();
-      } else {
-        viewFullscreenBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-     */
-    public Builder mergeViewFullscreen(POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction value) {
-      if (viewFullscreenBuilder_ == null) {
-        if (viewFullscreen_ != null) {
-          viewFullscreen_ =
-            POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.newBuilder(viewFullscreen_).mergeFrom(value).buildPartial();
-        } else {
-          viewFullscreen_ = value;
-        }
-        onChanged();
-      } else {
-        viewFullscreenBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-     */
-    public Builder clearViewFullscreen() {
-      if (viewFullscreenBuilder_ == null) {
-        viewFullscreen_ = null;
-        onChanged();
-      } else {
-        viewFullscreen_ = null;
-        viewFullscreenBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder getViewFullscreenBuilder() {
-      
-      onChanged();
-      return getViewFullscreenFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteractionOrBuilder getViewFullscreenOrBuilder() {
-      if (viewFullscreenBuilder_ != null) {
-        return viewFullscreenBuilder_.getMessageOrBuilder();
-      } else {
-        return viewFullscreen_ == null ?
-            POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.getDefaultInstance() : viewFullscreen_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction view_fullscreen = 6;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteractionOrBuilder> 
-        getViewFullscreenFieldBuilder() {
-      if (viewFullscreenBuilder_ == null) {
-        viewFullscreenBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.ViewFullscreenInteractionOrBuilder>(
-                getViewFullscreen(),
-                getParentForChildren(),
-                isClean());
-        viewFullscreen_ = null;
-      }
-      return viewFullscreenBuilder_;
-    }
-
-    private POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreenInteraction_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteractionOrBuilder> fullscreenInteractionBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-     * @return Whether the fullscreenInteraction field is set.
-     */
-    public boolean hasFullscreenInteraction() {
-      return fullscreenInteractionBuilder_ != null || fullscreenInteraction_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-     * @return The fullscreenInteraction.
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction getFullscreenInteraction() {
-      if (fullscreenInteractionBuilder_ == null) {
-        return fullscreenInteraction_ == null ? POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.getDefaultInstance() : fullscreenInteraction_;
-      } else {
-        return fullscreenInteractionBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-     */
-    public Builder setFullscreenInteraction(POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction value) {
-      if (fullscreenInteractionBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        fullscreenInteraction_ = value;
-        onChanged();
-      } else {
-        fullscreenInteractionBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-     */
-    public Builder setFullscreenInteraction(
-        POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder builderForValue) {
-      if (fullscreenInteractionBuilder_ == null) {
-        fullscreenInteraction_ = builderForValue.build();
-        onChanged();
-      } else {
-        fullscreenInteractionBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-     */
-    public Builder mergeFullscreenInteraction(POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction value) {
-      if (fullscreenInteractionBuilder_ == null) {
-        if (fullscreenInteraction_ != null) {
-          fullscreenInteraction_ =
-            POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.newBuilder(fullscreenInteraction_).mergeFrom(value).buildPartial();
-        } else {
-          fullscreenInteraction_ = value;
-        }
-        onChanged();
-      } else {
-        fullscreenInteractionBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-     */
-    public Builder clearFullscreenInteraction() {
-      if (fullscreenInteractionBuilder_ == null) {
-        fullscreenInteraction_ = null;
-        onChanged();
-      } else {
-        fullscreenInteraction_ = null;
-        fullscreenInteractionBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder getFullscreenInteractionBuilder() {
-      
-      onChanged();
-      return getFullscreenInteractionFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteractionOrBuilder getFullscreenInteractionOrBuilder() {
-      if (fullscreenInteractionBuilder_ != null) {
-        return fullscreenInteractionBuilder_.getMessageOrBuilder();
-      } else {
-        return fullscreenInteraction_ == null ?
-            POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.getDefaultInstance() : fullscreenInteraction_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction fullscreen_interaction = 7;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteractionOrBuilder> 
-        getFullscreenInteractionFieldBuilder() {
-      if (fullscreenInteractionBuilder_ == null) {
-        fullscreenInteractionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.FullScreenInteractionOrBuilder>(
-                getFullscreenInteraction(),
-                getParentForChildren(),
-                isClean());
-        fullscreenInteraction_ = null;
-      }
-      return fullscreenInteractionBuilder_;
-    }
-
-    private POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction ctaClicked_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder> ctaClickedBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-     * @return Whether the ctaClicked field is set.
-     */
-    public boolean hasCtaClicked() {
-      return ctaClickedBuilder_ != null || ctaClicked_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-     * @return The ctaClicked.
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction getCtaClicked() {
-      if (ctaClickedBuilder_ == null) {
-        return ctaClicked_ == null ? POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.getDefaultInstance() : ctaClicked_;
-      } else {
-        return ctaClickedBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-     */
-    public Builder setCtaClicked(POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction value) {
-      if (ctaClickedBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ctaClicked_ = value;
-        onChanged();
-      } else {
-        ctaClickedBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-     */
-    public Builder setCtaClicked(
-        POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder builderForValue) {
-      if (ctaClickedBuilder_ == null) {
-        ctaClicked_ = builderForValue.build();
-        onChanged();
-      } else {
-        ctaClickedBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-     */
-    public Builder mergeCtaClicked(POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction value) {
-      if (ctaClickedBuilder_ == null) {
-        if (ctaClicked_ != null) {
-          ctaClicked_ =
-            POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.newBuilder(ctaClicked_).mergeFrom(value).buildPartial();
-        } else {
-          ctaClicked_ = value;
-        }
-        onChanged();
-      } else {
-        ctaClickedBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-     */
-    public Builder clearCtaClicked() {
-      if (ctaClickedBuilder_ == null) {
-        ctaClicked_ = null;
-        onChanged();
-      } else {
-        ctaClicked_ = null;
-        ctaClickedBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder getCtaClickedBuilder() {
-      
-      onChanged();
-      return getCtaClickedFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-     */
-    public POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder getCtaClickedOrBuilder() {
-      if (ctaClickedBuilder_ != null) {
-        return ctaClickedBuilder_.getMessageOrBuilder();
-      } else {
-        return ctaClicked_ == null ?
-            POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.getDefaultInstance() : ctaClicked_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction cta_clicked = 8;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder> 
-        getCtaClickedFieldBuilder() {
-      if (ctaClickedBuilder_ == null) {
-        ctaClickedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteraction.Builder, POGOProtos.Rpc.ReportAdInteractionProto.CTAClickInteractionOrBuilder>(
-                getCtaClicked(),
-                getParentForChildren(),
-                isClean());
-        ctaClicked_ = null;
-      }
-      return ctaClickedBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

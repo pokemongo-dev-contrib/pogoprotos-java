@@ -16,8 +16,6 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformInventoryItemProto() {
-    deletedItemKey_ = com.google.protobuf.ByteString.EMPTY;
-    item_ = com.google.protobuf.ByteString.EMPTY;
   }
 
   @java.lang.Override
@@ -56,13 +54,13 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-
-            deletedItemKey_ = input.readBytes();
+            inventoryItemCase_ = 2;
+            inventoryItem_ = input.readBytes();
             break;
           }
           case 26: {
-
-            item_ = input.readBytes();
+            inventoryItemCase_ = 3;
+            inventoryItem_ = input.readBytes();
             break;
           }
           default: {
@@ -97,6 +95,71 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.PlatformInventoryItemProto.class, POGOProtos.Rpc.PlatformInventoryItemProto.Builder.class);
   }
 
+  private int inventoryItemCase_ = 0;
+  private java.lang.Object inventoryItem_;
+  public enum InventoryItemCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    DELETED_ITEM_KEY(2),
+    ITEM(3),
+    INVENTORYITEM_NOT_SET(0);
+    private final int value;
+    private InventoryItemCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static InventoryItemCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static InventoryItemCase forNumber(int value) {
+      switch (value) {
+        case 2: return DELETED_ITEM_KEY;
+        case 3: return ITEM;
+        case 0: return INVENTORYITEM_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public InventoryItemCase
+  getInventoryItemCase() {
+    return InventoryItemCase.forNumber(
+        inventoryItemCase_);
+  }
+
+  public static final int DELETED_ITEM_KEY_FIELD_NUMBER = 2;
+  /**
+   * <code>bytes deleted_item_key = 2;</code>
+   * @return The deletedItemKey.
+   */
+  public com.google.protobuf.ByteString getDeletedItemKey() {
+    if (inventoryItemCase_ == 2) {
+      return (com.google.protobuf.ByteString) inventoryItem_;
+    }
+    return com.google.protobuf.ByteString.EMPTY;
+  }
+
+  public static final int ITEM_FIELD_NUMBER = 3;
+  /**
+   * <code>bytes item = 3;</code>
+   * @return The item.
+   */
+  public com.google.protobuf.ByteString getItem() {
+    if (inventoryItemCase_ == 3) {
+      return (com.google.protobuf.ByteString) inventoryItem_;
+    }
+    return com.google.protobuf.ByteString.EMPTY;
+  }
+
   public static final int MODIFIED_TIMESTAMP_FIELD_NUMBER = 1;
   private long modifiedTimestamp_;
   /**
@@ -105,26 +168,6 @@ private static final long serialVersionUID = 0L;
    */
   public long getModifiedTimestamp() {
     return modifiedTimestamp_;
-  }
-
-  public static final int DELETED_ITEM_KEY_FIELD_NUMBER = 2;
-  private com.google.protobuf.ByteString deletedItemKey_;
-  /**
-   * <code>bytes deleted_item_key = 2;</code>
-   * @return The deletedItemKey.
-   */
-  public com.google.protobuf.ByteString getDeletedItemKey() {
-    return deletedItemKey_;
-  }
-
-  public static final int ITEM_FIELD_NUMBER = 3;
-  private com.google.protobuf.ByteString item_;
-  /**
-   * <code>bytes item = 3;</code>
-   * @return The item.
-   */
-  public com.google.protobuf.ByteString getItem() {
-    return item_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -144,11 +187,13 @@ private static final long serialVersionUID = 0L;
     if (modifiedTimestamp_ != 0L) {
       output.writeInt64(1, modifiedTimestamp_);
     }
-    if (!deletedItemKey_.isEmpty()) {
-      output.writeBytes(2, deletedItemKey_);
+    if (inventoryItemCase_ == 2) {
+      output.writeBytes(
+          2, (com.google.protobuf.ByteString) inventoryItem_);
     }
-    if (!item_.isEmpty()) {
-      output.writeBytes(3, item_);
+    if (inventoryItemCase_ == 3) {
+      output.writeBytes(
+          3, (com.google.protobuf.ByteString) inventoryItem_);
     }
     unknownFields.writeTo(output);
   }
@@ -163,13 +208,15 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(1, modifiedTimestamp_);
     }
-    if (!deletedItemKey_.isEmpty()) {
+    if (inventoryItemCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(2, deletedItemKey_);
+        .computeBytesSize(
+            2, (com.google.protobuf.ByteString) inventoryItem_);
     }
-    if (!item_.isEmpty()) {
+    if (inventoryItemCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(3, item_);
+        .computeBytesSize(
+            3, (com.google.protobuf.ByteString) inventoryItem_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -188,10 +235,19 @@ private static final long serialVersionUID = 0L;
 
     if (getModifiedTimestamp()
         != other.getModifiedTimestamp()) return false;
-    if (!getDeletedItemKey()
-        .equals(other.getDeletedItemKey())) return false;
-    if (!getItem()
-        .equals(other.getItem())) return false;
+    if (!getInventoryItemCase().equals(other.getInventoryItemCase())) return false;
+    switch (inventoryItemCase_) {
+      case 2:
+        if (!getDeletedItemKey()
+            .equals(other.getDeletedItemKey())) return false;
+        break;
+      case 3:
+        if (!getItem()
+            .equals(other.getItem())) return false;
+        break;
+      case 0:
+      default:
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -206,10 +262,18 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + MODIFIED_TIMESTAMP_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getModifiedTimestamp());
-    hash = (37 * hash) + DELETED_ITEM_KEY_FIELD_NUMBER;
-    hash = (53 * hash) + getDeletedItemKey().hashCode();
-    hash = (37 * hash) + ITEM_FIELD_NUMBER;
-    hash = (53 * hash) + getItem().hashCode();
+    switch (inventoryItemCase_) {
+      case 2:
+        hash = (37 * hash) + DELETED_ITEM_KEY_FIELD_NUMBER;
+        hash = (53 * hash) + getDeletedItemKey().hashCode();
+        break;
+      case 3:
+        hash = (37 * hash) + ITEM_FIELD_NUMBER;
+        hash = (53 * hash) + getItem().hashCode();
+        break;
+      case 0:
+      default:
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -345,10 +409,8 @@ private static final long serialVersionUID = 0L;
       super.clear();
       modifiedTimestamp_ = 0L;
 
-      deletedItemKey_ = com.google.protobuf.ByteString.EMPTY;
-
-      item_ = com.google.protobuf.ByteString.EMPTY;
-
+      inventoryItemCase_ = 0;
+      inventoryItem_ = null;
       return this;
     }
 
@@ -375,9 +437,14 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PlatformInventoryItemProto buildPartial() {
       POGOProtos.Rpc.PlatformInventoryItemProto result = new POGOProtos.Rpc.PlatformInventoryItemProto(this);
+      if (inventoryItemCase_ == 2) {
+        result.inventoryItem_ = inventoryItem_;
+      }
+      if (inventoryItemCase_ == 3) {
+        result.inventoryItem_ = inventoryItem_;
+      }
       result.modifiedTimestamp_ = modifiedTimestamp_;
-      result.deletedItemKey_ = deletedItemKey_;
-      result.item_ = item_;
+      result.inventoryItemCase_ = inventoryItemCase_;
       onBuilt();
       return result;
     }
@@ -429,11 +496,18 @@ private static final long serialVersionUID = 0L;
       if (other.getModifiedTimestamp() != 0L) {
         setModifiedTimestamp(other.getModifiedTimestamp());
       }
-      if (other.getDeletedItemKey() != com.google.protobuf.ByteString.EMPTY) {
-        setDeletedItemKey(other.getDeletedItemKey());
-      }
-      if (other.getItem() != com.google.protobuf.ByteString.EMPTY) {
-        setItem(other.getItem());
+      switch (other.getInventoryItemCase()) {
+        case DELETED_ITEM_KEY: {
+          setDeletedItemKey(other.getDeletedItemKey());
+          break;
+        }
+        case ITEM: {
+          setItem(other.getItem());
+          break;
+        }
+        case INVENTORYITEM_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -460,6 +534,95 @@ private static final long serialVersionUID = 0L;
         if (parsedMessage != null) {
           mergeFrom(parsedMessage);
         }
+      }
+      return this;
+    }
+    private int inventoryItemCase_ = 0;
+    private java.lang.Object inventoryItem_;
+    public InventoryItemCase
+        getInventoryItemCase() {
+      return InventoryItemCase.forNumber(
+          inventoryItemCase_);
+    }
+
+    public Builder clearInventoryItem() {
+      inventoryItemCase_ = 0;
+      inventoryItem_ = null;
+      onChanged();
+      return this;
+    }
+
+
+    /**
+     * <code>bytes deleted_item_key = 2;</code>
+     * @return The deletedItemKey.
+     */
+    public com.google.protobuf.ByteString getDeletedItemKey() {
+      if (inventoryItemCase_ == 2) {
+        return (com.google.protobuf.ByteString) inventoryItem_;
+      }
+      return com.google.protobuf.ByteString.EMPTY;
+    }
+    /**
+     * <code>bytes deleted_item_key = 2;</code>
+     * @param value The deletedItemKey to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDeletedItemKey(com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  inventoryItemCase_ = 2;
+      inventoryItem_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bytes deleted_item_key = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearDeletedItemKey() {
+      if (inventoryItemCase_ == 2) {
+        inventoryItemCase_ = 0;
+        inventoryItem_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    /**
+     * <code>bytes item = 3;</code>
+     * @return The item.
+     */
+    public com.google.protobuf.ByteString getItem() {
+      if (inventoryItemCase_ == 3) {
+        return (com.google.protobuf.ByteString) inventoryItem_;
+      }
+      return com.google.protobuf.ByteString.EMPTY;
+    }
+    /**
+     * <code>bytes item = 3;</code>
+     * @param value The item to set.
+     * @return This builder for chaining.
+     */
+    public Builder setItem(com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  inventoryItemCase_ = 3;
+      inventoryItem_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bytes item = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearItem() {
+      if (inventoryItemCase_ == 3) {
+        inventoryItemCase_ = 0;
+        inventoryItem_ = null;
+        onChanged();
       }
       return this;
     }
@@ -490,72 +653,6 @@ private static final long serialVersionUID = 0L;
     public Builder clearModifiedTimestamp() {
       
       modifiedTimestamp_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private com.google.protobuf.ByteString deletedItemKey_ = com.google.protobuf.ByteString.EMPTY;
-    /**
-     * <code>bytes deleted_item_key = 2;</code>
-     * @return The deletedItemKey.
-     */
-    public com.google.protobuf.ByteString getDeletedItemKey() {
-      return deletedItemKey_;
-    }
-    /**
-     * <code>bytes deleted_item_key = 2;</code>
-     * @param value The deletedItemKey to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDeletedItemKey(com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      deletedItemKey_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>bytes deleted_item_key = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearDeletedItemKey() {
-      
-      deletedItemKey_ = getDefaultInstance().getDeletedItemKey();
-      onChanged();
-      return this;
-    }
-
-    private com.google.protobuf.ByteString item_ = com.google.protobuf.ByteString.EMPTY;
-    /**
-     * <code>bytes item = 3;</code>
-     * @return The item.
-     */
-    public com.google.protobuf.ByteString getItem() {
-      return item_;
-    }
-    /**
-     * <code>bytes item = 3;</code>
-     * @param value The item to set.
-     * @return This builder for chaining.
-     */
-    public Builder setItem(com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      item_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>bytes item = 3;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearItem() {
-      
-      item_ = getDefaultInstance().getItem();
       onChanged();
       return this;
     }

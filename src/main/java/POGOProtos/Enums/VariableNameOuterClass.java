@@ -24,7 +24,7 @@ public final class VariableNameOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#POGOProtos/Enums/VariableName.proto\022\020P" +
-      "OGOProtos.Enums*\221\t\n\014VariableName\022\027\n\023UNSE" +
+      "OGOProtos.Enums*\267\t\n\014VariableName\022\027\n\023UNSE" +
       "T_VARIABLE_NAME\020\000\022\r\n\tCODE_NAME\020\001\022\010\n\004TEAM" +
       "\020\002\022\t\n\005LEVEL\020\003\022\016\n\nEXPERIENCE\020\004\022\024\n\020POKECOI" +
       "N_BALANCE\020\005\022\024\n\020STARDUST_BALANCE\020\006\022\t\n\005EMA" +
@@ -53,7 +53,8 @@ public final class VariableNameOuterClass {
       "Y_LEVEL\020\214\010\022\032\n\025NUM_VS_SEEKER_CHARGES\020\215\010\022\022" +
       "\n\rSEASON_NUMBER\020\216\010\022%\n POI_PASSCODE_REDEM" +
       "PTION_RESPONSE\020\217\010\022\022\n\rGIFTBOX_COUNT\020\220\010\022\034\n" +
-      "\027RAID_INVITATION_DETAILS\020\221\010B\002P\001b\006proto3"
+      "\027RAID_INVITATION_DETAILS\020\221\010\022\017\n\nLOOT_ITEM" +
+      "S\020\222\010\022\023\n\016EVENT_ICON_URL\020\223\010B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

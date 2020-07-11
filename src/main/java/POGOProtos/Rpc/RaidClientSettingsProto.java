@@ -17,6 +17,7 @@ private static final long serialVersionUID = 0L;
   }
   private RaidClientSettingsProto() {
     unsupportedRaidLevelsForFriendInvites_ = java.util.Collections.emptyList();
+    unsupportedRemoteRaidLevels_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -133,6 +134,29 @@ private static final long serialVersionUID = 0L;
             input.popLimit(oldLimit);
             break;
           }
+          case 112: {
+            int rawValue = input.readEnum();
+            if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              unsupportedRemoteRaidLevels_ = new java.util.ArrayList<java.lang.Integer>();
+              mutable_bitField0_ |= 0x00000002;
+            }
+            unsupportedRemoteRaidLevels_.add(rawValue);
+            break;
+          }
+          case 114: {
+            int length = input.readRawVarint32();
+            int oldLimit = input.pushLimit(length);
+            while(input.getBytesUntilLimit() > 0) {
+              int rawValue = input.readEnum();
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                unsupportedRemoteRaidLevels_ = new java.util.ArrayList<java.lang.Integer>();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              unsupportedRemoteRaidLevels_.add(rawValue);
+            }
+            input.popLimit(oldLimit);
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -150,6 +174,9 @@ private static final long serialVersionUID = 0L;
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
         unsupportedRaidLevelsForFriendInvites_ = java.util.Collections.unmodifiableList(unsupportedRaidLevelsForFriendInvites_);
+      }
+      if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        unsupportedRemoteRaidLevels_ = java.util.Collections.unmodifiableList(unsupportedRemoteRaidLevels_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -341,6 +368,59 @@ private static final long serialVersionUID = 0L;
   }
   private int unsupportedRaidLevelsForFriendInvitesMemoizedSerializedSize;
 
+  public static final int UNSUPPORTED_REMOTE_RAID_LEVELS_FIELD_NUMBER = 14;
+  private java.util.List<java.lang.Integer> unsupportedRemoteRaidLevels_;
+  private static final com.google.protobuf.Internal.ListAdapter.Converter<
+      java.lang.Integer, POGOProtos.Rpc.RaidLevel> unsupportedRemoteRaidLevels_converter_ =
+          new com.google.protobuf.Internal.ListAdapter.Converter<
+              java.lang.Integer, POGOProtos.Rpc.RaidLevel>() {
+            public POGOProtos.Rpc.RaidLevel convert(java.lang.Integer from) {
+              @SuppressWarnings("deprecation")
+              POGOProtos.Rpc.RaidLevel result = POGOProtos.Rpc.RaidLevel.valueOf(from);
+              return result == null ? POGOProtos.Rpc.RaidLevel.UNRECOGNIZED : result;
+            }
+          };
+  /**
+   * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+   * @return A list containing the unsupportedRemoteRaidLevels.
+   */
+  public java.util.List<POGOProtos.Rpc.RaidLevel> getUnsupportedRemoteRaidLevelsList() {
+    return new com.google.protobuf.Internal.ListAdapter<
+        java.lang.Integer, POGOProtos.Rpc.RaidLevel>(unsupportedRemoteRaidLevels_, unsupportedRemoteRaidLevels_converter_);
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+   * @return The count of unsupportedRemoteRaidLevels.
+   */
+  public int getUnsupportedRemoteRaidLevelsCount() {
+    return unsupportedRemoteRaidLevels_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+   * @param index The index of the element to return.
+   * @return The unsupportedRemoteRaidLevels at the given index.
+   */
+  public POGOProtos.Rpc.RaidLevel getUnsupportedRemoteRaidLevels(int index) {
+    return unsupportedRemoteRaidLevels_converter_.convert(unsupportedRemoteRaidLevels_.get(index));
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+   * @return A list containing the enum numeric values on the wire for unsupportedRemoteRaidLevels.
+   */
+  public java.util.List<java.lang.Integer>
+  getUnsupportedRemoteRaidLevelsValueList() {
+    return unsupportedRemoteRaidLevels_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of unsupportedRemoteRaidLevels at the given index.
+   */
+  public int getUnsupportedRemoteRaidLevelsValue(int index) {
+    return unsupportedRemoteRaidLevels_.get(index);
+  }
+  private int unsupportedRemoteRaidLevelsMemoizedSerializedSize;
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -398,6 +478,13 @@ private static final long serialVersionUID = 0L;
     }
     for (int i = 0; i < unsupportedRaidLevelsForFriendInvites_.size(); i++) {
       output.writeEnumNoTag(unsupportedRaidLevelsForFriendInvites_.get(i));
+    }
+    if (getUnsupportedRemoteRaidLevelsList().size() > 0) {
+      output.writeUInt32NoTag(114);
+      output.writeUInt32NoTag(unsupportedRemoteRaidLevelsMemoizedSerializedSize);
+    }
+    for (int i = 0; i < unsupportedRemoteRaidLevels_.size(); i++) {
+      output.writeEnumNoTag(unsupportedRemoteRaidLevels_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -468,6 +555,18 @@ private static final long serialVersionUID = 0L;
           .computeUInt32SizeNoTag(dataSize);
       }unsupportedRaidLevelsForFriendInvitesMemoizedSerializedSize = dataSize;
     }
+    {
+      int dataSize = 0;
+      for (int i = 0; i < unsupportedRemoteRaidLevels_.size(); i++) {
+        dataSize += com.google.protobuf.CodedOutputStream
+          .computeEnumSizeNoTag(unsupportedRemoteRaidLevels_.get(i));
+      }
+      size += dataSize;
+      if (!getUnsupportedRemoteRaidLevelsList().isEmpty()) {  size += 1;
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32SizeNoTag(dataSize);
+      }unsupportedRemoteRaidLevelsMemoizedSerializedSize = dataSize;
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -509,6 +608,7 @@ private static final long serialVersionUID = 0L;
     if (getMaxNumFriendInvitesPerAction()
         != other.getMaxNumFriendInvitesPerAction()) return false;
     if (!unsupportedRaidLevelsForFriendInvites_.equals(other.unsupportedRaidLevelsForFriendInvites_)) return false;
+    if (!unsupportedRemoteRaidLevels_.equals(other.unsupportedRemoteRaidLevels_)) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -552,6 +652,10 @@ private static final long serialVersionUID = 0L;
     if (getUnsupportedRaidLevelsForFriendInvitesCount() > 0) {
       hash = (37 * hash) + UNSUPPORTED_RAID_LEVELS_FOR_FRIEND_INVITES_FIELD_NUMBER;
       hash = (53 * hash) + unsupportedRaidLevelsForFriendInvites_.hashCode();
+    }
+    if (getUnsupportedRemoteRaidLevelsCount() > 0) {
+      hash = (37 * hash) + UNSUPPORTED_REMOTE_RAID_LEVELS_FIELD_NUMBER;
+      hash = (53 * hash) + unsupportedRemoteRaidLevels_.hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -712,6 +816,8 @@ private static final long serialVersionUID = 0L;
 
       unsupportedRaidLevelsForFriendInvites_ = java.util.Collections.emptyList();
       bitField0_ = (bitField0_ & ~0x00000001);
+      unsupportedRemoteRaidLevels_ = java.util.Collections.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000002);
       return this;
     }
 
@@ -756,6 +862,11 @@ private static final long serialVersionUID = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
       }
       result.unsupportedRaidLevelsForFriendInvites_ = unsupportedRaidLevelsForFriendInvites_;
+      if (((bitField0_ & 0x00000002) != 0)) {
+        unsupportedRemoteRaidLevels_ = java.util.Collections.unmodifiableList(unsupportedRemoteRaidLevels_);
+        bitField0_ = (bitField0_ & ~0x00000002);
+      }
+      result.unsupportedRemoteRaidLevels_ = unsupportedRemoteRaidLevels_;
       onBuilt();
       return result;
     }
@@ -847,6 +958,16 @@ private static final long serialVersionUID = 0L;
         } else {
           ensureUnsupportedRaidLevelsForFriendInvitesIsMutable();
           unsupportedRaidLevelsForFriendInvites_.addAll(other.unsupportedRaidLevelsForFriendInvites_);
+        }
+        onChanged();
+      }
+      if (!other.unsupportedRemoteRaidLevels_.isEmpty()) {
+        if (unsupportedRemoteRaidLevels_.isEmpty()) {
+          unsupportedRemoteRaidLevels_ = other.unsupportedRemoteRaidLevels_;
+          bitField0_ = (bitField0_ & ~0x00000002);
+        } else {
+          ensureUnsupportedRemoteRaidLevelsIsMutable();
+          unsupportedRemoteRaidLevels_.addAll(other.unsupportedRemoteRaidLevels_);
         }
         onChanged();
       }
@@ -1375,6 +1496,146 @@ private static final long serialVersionUID = 0L;
       ensureUnsupportedRaidLevelsForFriendInvitesIsMutable();
       for (int value : values) {
         unsupportedRaidLevelsForFriendInvites_.add(value);
+      }
+      onChanged();
+      return this;
+    }
+
+    private java.util.List<java.lang.Integer> unsupportedRemoteRaidLevels_ =
+      java.util.Collections.emptyList();
+    private void ensureUnsupportedRemoteRaidLevelsIsMutable() {
+      if (!((bitField0_ & 0x00000002) != 0)) {
+        unsupportedRemoteRaidLevels_ = new java.util.ArrayList<java.lang.Integer>(unsupportedRemoteRaidLevels_);
+        bitField0_ |= 0x00000002;
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @return A list containing the unsupportedRemoteRaidLevels.
+     */
+    public java.util.List<POGOProtos.Rpc.RaidLevel> getUnsupportedRemoteRaidLevelsList() {
+      return new com.google.protobuf.Internal.ListAdapter<
+          java.lang.Integer, POGOProtos.Rpc.RaidLevel>(unsupportedRemoteRaidLevels_, unsupportedRemoteRaidLevels_converter_);
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @return The count of unsupportedRemoteRaidLevels.
+     */
+    public int getUnsupportedRemoteRaidLevelsCount() {
+      return unsupportedRemoteRaidLevels_.size();
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @param index The index of the element to return.
+     * @return The unsupportedRemoteRaidLevels at the given index.
+     */
+    public POGOProtos.Rpc.RaidLevel getUnsupportedRemoteRaidLevels(int index) {
+      return unsupportedRemoteRaidLevels_converter_.convert(unsupportedRemoteRaidLevels_.get(index));
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @param index The index to set the value at.
+     * @param value The unsupportedRemoteRaidLevels to set.
+     * @return This builder for chaining.
+     */
+    public Builder setUnsupportedRemoteRaidLevels(
+        int index, POGOProtos.Rpc.RaidLevel value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      ensureUnsupportedRemoteRaidLevelsIsMutable();
+      unsupportedRemoteRaidLevels_.set(index, value.getNumber());
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @param value The unsupportedRemoteRaidLevels to add.
+     * @return This builder for chaining.
+     */
+    public Builder addUnsupportedRemoteRaidLevels(POGOProtos.Rpc.RaidLevel value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      ensureUnsupportedRemoteRaidLevelsIsMutable();
+      unsupportedRemoteRaidLevels_.add(value.getNumber());
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @param values The unsupportedRemoteRaidLevels to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllUnsupportedRemoteRaidLevels(
+        java.lang.Iterable<? extends POGOProtos.Rpc.RaidLevel> values) {
+      ensureUnsupportedRemoteRaidLevelsIsMutable();
+      for (POGOProtos.Rpc.RaidLevel value : values) {
+        unsupportedRemoteRaidLevels_.add(value.getNumber());
+      }
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearUnsupportedRemoteRaidLevels() {
+      unsupportedRemoteRaidLevels_ = java.util.Collections.emptyList();
+      bitField0_ = (bitField0_ & ~0x00000002);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @return A list containing the enum numeric values on the wire for unsupportedRemoteRaidLevels.
+     */
+    public java.util.List<java.lang.Integer>
+    getUnsupportedRemoteRaidLevelsValueList() {
+      return java.util.Collections.unmodifiableList(unsupportedRemoteRaidLevels_);
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of unsupportedRemoteRaidLevels at the given index.
+     */
+    public int getUnsupportedRemoteRaidLevelsValue(int index) {
+      return unsupportedRemoteRaidLevels_.get(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @param index The index of the value to return.
+     * @return The enum numeric value on the wire of unsupportedRemoteRaidLevels at the given index.
+     * @return This builder for chaining.
+     */
+    public Builder setUnsupportedRemoteRaidLevelsValue(
+        int index, int value) {
+      ensureUnsupportedRemoteRaidLevelsIsMutable();
+      unsupportedRemoteRaidLevels_.set(index, value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @param value The enum numeric value on the wire for unsupportedRemoteRaidLevels to add.
+     * @return This builder for chaining.
+     */
+    public Builder addUnsupportedRemoteRaidLevelsValue(int value) {
+      ensureUnsupportedRemoteRaidLevelsIsMutable();
+      unsupportedRemoteRaidLevels_.add(value);
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+     * @param values The enum numeric values on the wire for unsupportedRemoteRaidLevels to add.
+     * @return This builder for chaining.
+     */
+    public Builder addAllUnsupportedRemoteRaidLevelsValue(
+        java.lang.Iterable<java.lang.Integer> values) {
+      ensureUnsupportedRemoteRaidLevelsIsMutable();
+      for (int value : values) {
+        unsupportedRemoteRaidLevels_.add(value);
       }
       onChanged();
       return this;

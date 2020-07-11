@@ -276,4 +276,6 @@ public interface HoloInventoryItemProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
    */
   POGOProtos.Rpc.StickerProtoOrBuilder getStickerOrBuilder();
+
+  public POGOProtos.Rpc.HoloInventoryItemProto.TypeCase getTypeCase();
 }

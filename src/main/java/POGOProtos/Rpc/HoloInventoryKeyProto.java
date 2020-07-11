@@ -16,10 +16,6 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private HoloInventoryKeyProto() {
-    item_ = 0;
-    questType_ = 0;
-    avatarTemplateId_ = "";
-    stickerId_ = "";
   }
 
   @java.lang.Override
@@ -53,102 +49,102 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 9: {
-
-            pokemonId_ = input.readFixed64();
+            typeCase_ = 1;
+            type_ = input.readFixed64();
             break;
           }
           case 16: {
             int rawValue = input.readEnum();
-
-            item_ = rawValue;
+            typeCase_ = 2;
+            type_ = rawValue;
             break;
           }
           case 24: {
-
-            pokedexEntryId_ = input.readInt32();
+            typeCase_ = 3;
+            type_ = input.readInt32();
             break;
           }
           case 32: {
-
-            playerStats_ = input.readBool();
+            typeCase_ = 4;
+            type_ = input.readBool();
             break;
           }
           case 40: {
-
-            playerCurrency_ = input.readBool();
+            typeCase_ = 5;
+            type_ = input.readBool();
             break;
           }
           case 48: {
-
-            playerCamera_ = input.readBool();
+            typeCase_ = 6;
+            type_ = input.readBool();
             break;
           }
           case 56: {
-
-            inventoryUpgrades_ = input.readBool();
+            typeCase_ = 7;
+            type_ = input.readBool();
             break;
           }
           case 64: {
-
-            appliedItems_ = input.readBool();
+            typeCase_ = 8;
+            type_ = input.readBool();
             break;
           }
           case 72: {
-
-            eggIncubators_ = input.readBool();
+            typeCase_ = 9;
+            type_ = input.readBool();
             break;
           }
           case 80: {
-
-            pokemonFamilyId_ = input.readInt32();
+            typeCase_ = 10;
+            type_ = input.readInt32();
             break;
           }
           case 88: {
             int rawValue = input.readEnum();
-
-            questType_ = rawValue;
+            typeCase_ = 11;
+            type_ = rawValue;
             break;
           }
           case 98: {
             java.lang.String s = input.readStringRequireUtf8();
-
-            avatarTemplateId_ = s;
+            typeCase_ = 12;
+            type_ = s;
             break;
           }
           case 104: {
-
-            raidTickets_ = input.readBool();
+            typeCase_ = 13;
+            type_ = input.readBool();
             break;
           }
           case 112: {
-
-            quests_ = input.readBool();
+            typeCase_ = 14;
+            type_ = input.readBool();
             break;
           }
           case 120: {
-
-            giftBoxes_ = input.readBool();
+            typeCase_ = 15;
+            type_ = input.readBool();
             break;
           }
           case 128: {
-
-            belugaIncenseBox_ = input.readBool();
+            typeCase_ = 16;
+            type_ = input.readBool();
             break;
           }
           case 136: {
-
-            vsSeekerUpgrades_ = input.readBool();
+            typeCase_ = 17;
+            type_ = input.readBool();
             break;
           }
           case 152: {
-
-            limitedPurchaseSkuRecord_ = input.readBool();
+            typeCase_ = 19;
+            type_ = input.readBool();
             break;
           }
           case 178: {
             java.lang.String s = input.readStringRequireUtf8();
-
-            stickerId_ = s;
+            typeCase_ = 22;
+            type_ = s;
             break;
           }
           default: {
@@ -183,149 +179,258 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.HoloInventoryKeyProto.class, POGOProtos.Rpc.HoloInventoryKeyProto.Builder.class);
   }
 
+  private int typeCase_ = 0;
+  private java.lang.Object type_;
+  public enum TypeCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    POKEMON_ID(1),
+    ITEM(2),
+    POKEDEX_ENTRY_ID(3),
+    PLAYER_STATS(4),
+    PLAYER_CURRENCY(5),
+    PLAYER_CAMERA(6),
+    INVENTORY_UPGRADES(7),
+    APPLIED_ITEMS(8),
+    EGG_INCUBATORS(9),
+    POKEMON_FAMILY_ID(10),
+    QUEST_TYPE(11),
+    AVATAR_TEMPLATE_ID(12),
+    RAID_TICKETS(13),
+    QUESTS(14),
+    GIFT_BOXES(15),
+    BELUGA_INCENSE_BOX(16),
+    VS_SEEKER_UPGRADES(17),
+    LIMITED_PURCHASE_SKU_RECORD(19),
+    STICKER_ID(22),
+    TYPE_NOT_SET(0);
+    private final int value;
+    private TypeCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static TypeCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static TypeCase forNumber(int value) {
+      switch (value) {
+        case 1: return POKEMON_ID;
+        case 2: return ITEM;
+        case 3: return POKEDEX_ENTRY_ID;
+        case 4: return PLAYER_STATS;
+        case 5: return PLAYER_CURRENCY;
+        case 6: return PLAYER_CAMERA;
+        case 7: return INVENTORY_UPGRADES;
+        case 8: return APPLIED_ITEMS;
+        case 9: return EGG_INCUBATORS;
+        case 10: return POKEMON_FAMILY_ID;
+        case 11: return QUEST_TYPE;
+        case 12: return AVATAR_TEMPLATE_ID;
+        case 13: return RAID_TICKETS;
+        case 14: return QUESTS;
+        case 15: return GIFT_BOXES;
+        case 16: return BELUGA_INCENSE_BOX;
+        case 17: return VS_SEEKER_UPGRADES;
+        case 19: return LIMITED_PURCHASE_SKU_RECORD;
+        case 22: return STICKER_ID;
+        case 0: return TYPE_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public TypeCase
+  getTypeCase() {
+    return TypeCase.forNumber(
+        typeCase_);
+  }
+
   public static final int POKEMON_ID_FIELD_NUMBER = 1;
-  private long pokemonId_;
   /**
    * <code>fixed64 pokemon_id = 1;</code>
    * @return The pokemonId.
    */
   public long getPokemonId() {
-    return pokemonId_;
+    if (typeCase_ == 1) {
+      return (java.lang.Long) type_;
+    }
+    return 0L;
   }
 
   public static final int ITEM_FIELD_NUMBER = 2;
-  private int item_;
   /**
    * <code>.POGOProtos.Rpc.Item item = 2;</code>
    * @return The enum numeric value on the wire for item.
    */
   public int getItemValue() {
-    return item_;
+    if (typeCase_ == 2) {
+      return (java.lang.Integer) type_;
+    }
+    return 0;
   }
   /**
    * <code>.POGOProtos.Rpc.Item item = 2;</code>
    * @return The item.
    */
   public POGOProtos.Rpc.Item getItem() {
-    @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(item_);
-    return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+    if (typeCase_ == 2) {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(
+          (java.lang.Integer) type_);
+      return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+    }
+    return POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN;
   }
 
   public static final int POKEDEX_ENTRY_ID_FIELD_NUMBER = 3;
-  private int pokedexEntryId_;
   /**
    * <code>int32 pokedex_entry_id = 3;</code>
    * @return The pokedexEntryId.
    */
   public int getPokedexEntryId() {
-    return pokedexEntryId_;
+    if (typeCase_ == 3) {
+      return (java.lang.Integer) type_;
+    }
+    return 0;
   }
 
   public static final int PLAYER_STATS_FIELD_NUMBER = 4;
-  private boolean playerStats_;
   /**
    * <code>bool player_stats = 4;</code>
    * @return The playerStats.
    */
   public boolean getPlayerStats() {
-    return playerStats_;
+    if (typeCase_ == 4) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int PLAYER_CURRENCY_FIELD_NUMBER = 5;
-  private boolean playerCurrency_;
   /**
    * <code>bool player_currency = 5;</code>
    * @return The playerCurrency.
    */
   public boolean getPlayerCurrency() {
-    return playerCurrency_;
+    if (typeCase_ == 5) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int PLAYER_CAMERA_FIELD_NUMBER = 6;
-  private boolean playerCamera_;
   /**
    * <code>bool player_camera = 6;</code>
    * @return The playerCamera.
    */
   public boolean getPlayerCamera() {
-    return playerCamera_;
+    if (typeCase_ == 6) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int INVENTORY_UPGRADES_FIELD_NUMBER = 7;
-  private boolean inventoryUpgrades_;
   /**
    * <code>bool inventory_upgrades = 7;</code>
    * @return The inventoryUpgrades.
    */
   public boolean getInventoryUpgrades() {
-    return inventoryUpgrades_;
+    if (typeCase_ == 7) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int APPLIED_ITEMS_FIELD_NUMBER = 8;
-  private boolean appliedItems_;
   /**
    * <code>bool applied_items = 8;</code>
    * @return The appliedItems.
    */
   public boolean getAppliedItems() {
-    return appliedItems_;
+    if (typeCase_ == 8) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int EGG_INCUBATORS_FIELD_NUMBER = 9;
-  private boolean eggIncubators_;
   /**
    * <code>bool egg_incubators = 9;</code>
    * @return The eggIncubators.
    */
   public boolean getEggIncubators() {
-    return eggIncubators_;
+    if (typeCase_ == 9) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int POKEMON_FAMILY_ID_FIELD_NUMBER = 10;
-  private int pokemonFamilyId_;
   /**
    * <code>int32 pokemon_family_id = 10;</code>
    * @return The pokemonFamilyId.
    */
   public int getPokemonFamilyId() {
-    return pokemonFamilyId_;
+    if (typeCase_ == 10) {
+      return (java.lang.Integer) type_;
+    }
+    return 0;
   }
 
   public static final int QUEST_TYPE_FIELD_NUMBER = 11;
-  private int questType_;
   /**
    * <code>.POGOProtos.Rpc.QuestType quest_type = 11;</code>
    * @return The enum numeric value on the wire for questType.
    */
   public int getQuestTypeValue() {
-    return questType_;
+    if (typeCase_ == 11) {
+      return (java.lang.Integer) type_;
+    }
+    return 0;
   }
   /**
    * <code>.POGOProtos.Rpc.QuestType quest_type = 11;</code>
    * @return The questType.
    */
   public POGOProtos.Rpc.QuestType getQuestType() {
-    @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(questType_);
-    return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
+    if (typeCase_ == 11) {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(
+          (java.lang.Integer) type_);
+      return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
+    }
+    return POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET;
   }
 
   public static final int AVATAR_TEMPLATE_ID_FIELD_NUMBER = 12;
-  private volatile java.lang.Object avatarTemplateId_;
   /**
    * <code>string avatar_template_id = 12;</code>
    * @return The avatarTemplateId.
    */
   public java.lang.String getAvatarTemplateId() {
-    java.lang.Object ref = avatarTemplateId_;
+    java.lang.Object ref = "";
+    if (typeCase_ == 12) {
+      ref = type_;
+    }
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      avatarTemplateId_ = s;
+      if (typeCase_ == 12) {
+        type_ = s;
+      }
       return s;
     }
   }
@@ -335,12 +440,17 @@ private static final long serialVersionUID = 0L;
    */
   public com.google.protobuf.ByteString
       getAvatarTemplateIdBytes() {
-    java.lang.Object ref = avatarTemplateId_;
+    java.lang.Object ref = "";
+    if (typeCase_ == 12) {
+      ref = type_;
+    }
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      avatarTemplateId_ = b;
+      if (typeCase_ == 12) {
+        type_ = b;
+      }
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -348,80 +458,96 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int RAID_TICKETS_FIELD_NUMBER = 13;
-  private boolean raidTickets_;
   /**
    * <code>bool raid_tickets = 13;</code>
    * @return The raidTickets.
    */
   public boolean getRaidTickets() {
-    return raidTickets_;
+    if (typeCase_ == 13) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int QUESTS_FIELD_NUMBER = 14;
-  private boolean quests_;
   /**
    * <code>bool quests = 14;</code>
    * @return The quests.
    */
   public boolean getQuests() {
-    return quests_;
+    if (typeCase_ == 14) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int GIFT_BOXES_FIELD_NUMBER = 15;
-  private boolean giftBoxes_;
   /**
    * <code>bool gift_boxes = 15;</code>
    * @return The giftBoxes.
    */
   public boolean getGiftBoxes() {
-    return giftBoxes_;
+    if (typeCase_ == 15) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int BELUGA_INCENSE_BOX_FIELD_NUMBER = 16;
-  private boolean belugaIncenseBox_;
   /**
    * <code>bool beluga_incense_box = 16;</code>
    * @return The belugaIncenseBox.
    */
   public boolean getBelugaIncenseBox() {
-    return belugaIncenseBox_;
+    if (typeCase_ == 16) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int VS_SEEKER_UPGRADES_FIELD_NUMBER = 17;
-  private boolean vsSeekerUpgrades_;
   /**
    * <code>bool vs_seeker_upgrades = 17;</code>
    * @return The vsSeekerUpgrades.
    */
   public boolean getVsSeekerUpgrades() {
-    return vsSeekerUpgrades_;
+    if (typeCase_ == 17) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int LIMITED_PURCHASE_SKU_RECORD_FIELD_NUMBER = 19;
-  private boolean limitedPurchaseSkuRecord_;
   /**
    * <code>bool limited_purchase_sku_record = 19;</code>
    * @return The limitedPurchaseSkuRecord.
    */
   public boolean getLimitedPurchaseSkuRecord() {
-    return limitedPurchaseSkuRecord_;
+    if (typeCase_ == 19) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int STICKER_ID_FIELD_NUMBER = 22;
-  private volatile java.lang.Object stickerId_;
   /**
    * <code>string sticker_id = 22;</code>
    * @return The stickerId.
    */
   public java.lang.String getStickerId() {
-    java.lang.Object ref = stickerId_;
+    java.lang.Object ref = "";
+    if (typeCase_ == 22) {
+      ref = type_;
+    }
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      stickerId_ = s;
+      if (typeCase_ == 22) {
+        type_ = s;
+      }
       return s;
     }
   }
@@ -431,12 +557,17 @@ private static final long serialVersionUID = 0L;
    */
   public com.google.protobuf.ByteString
       getStickerIdBytes() {
-    java.lang.Object ref = stickerId_;
+    java.lang.Object ref = "";
+    if (typeCase_ == 22) {
+      ref = type_;
+    }
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      stickerId_ = b;
+      if (typeCase_ == 22) {
+        type_ = b;
+      }
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -457,62 +588,77 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (pokemonId_ != 0L) {
-      output.writeFixed64(1, pokemonId_);
+    if (typeCase_ == 1) {
+      output.writeFixed64(
+          1, (long)((java.lang.Long) type_));
     }
-    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
-      output.writeEnum(2, item_);
+    if (typeCase_ == 2) {
+      output.writeEnum(2, ((java.lang.Integer) type_));
     }
-    if (pokedexEntryId_ != 0) {
-      output.writeInt32(3, pokedexEntryId_);
+    if (typeCase_ == 3) {
+      output.writeInt32(
+          3, (int)((java.lang.Integer) type_));
     }
-    if (playerStats_ != false) {
-      output.writeBool(4, playerStats_);
+    if (typeCase_ == 4) {
+      output.writeBool(
+          4, (boolean)((java.lang.Boolean) type_));
     }
-    if (playerCurrency_ != false) {
-      output.writeBool(5, playerCurrency_);
+    if (typeCase_ == 5) {
+      output.writeBool(
+          5, (boolean)((java.lang.Boolean) type_));
     }
-    if (playerCamera_ != false) {
-      output.writeBool(6, playerCamera_);
+    if (typeCase_ == 6) {
+      output.writeBool(
+          6, (boolean)((java.lang.Boolean) type_));
     }
-    if (inventoryUpgrades_ != false) {
-      output.writeBool(7, inventoryUpgrades_);
+    if (typeCase_ == 7) {
+      output.writeBool(
+          7, (boolean)((java.lang.Boolean) type_));
     }
-    if (appliedItems_ != false) {
-      output.writeBool(8, appliedItems_);
+    if (typeCase_ == 8) {
+      output.writeBool(
+          8, (boolean)((java.lang.Boolean) type_));
     }
-    if (eggIncubators_ != false) {
-      output.writeBool(9, eggIncubators_);
+    if (typeCase_ == 9) {
+      output.writeBool(
+          9, (boolean)((java.lang.Boolean) type_));
     }
-    if (pokemonFamilyId_ != 0) {
-      output.writeInt32(10, pokemonFamilyId_);
+    if (typeCase_ == 10) {
+      output.writeInt32(
+          10, (int)((java.lang.Integer) type_));
     }
-    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
-      output.writeEnum(11, questType_);
+    if (typeCase_ == 11) {
+      output.writeEnum(11, ((java.lang.Integer) type_));
     }
-    if (!getAvatarTemplateIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 12, avatarTemplateId_);
+    if (typeCase_ == 12) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 12, type_);
     }
-    if (raidTickets_ != false) {
-      output.writeBool(13, raidTickets_);
+    if (typeCase_ == 13) {
+      output.writeBool(
+          13, (boolean)((java.lang.Boolean) type_));
     }
-    if (quests_ != false) {
-      output.writeBool(14, quests_);
+    if (typeCase_ == 14) {
+      output.writeBool(
+          14, (boolean)((java.lang.Boolean) type_));
     }
-    if (giftBoxes_ != false) {
-      output.writeBool(15, giftBoxes_);
+    if (typeCase_ == 15) {
+      output.writeBool(
+          15, (boolean)((java.lang.Boolean) type_));
     }
-    if (belugaIncenseBox_ != false) {
-      output.writeBool(16, belugaIncenseBox_);
+    if (typeCase_ == 16) {
+      output.writeBool(
+          16, (boolean)((java.lang.Boolean) type_));
     }
-    if (vsSeekerUpgrades_ != false) {
-      output.writeBool(17, vsSeekerUpgrades_);
+    if (typeCase_ == 17) {
+      output.writeBool(
+          17, (boolean)((java.lang.Boolean) type_));
     }
-    if (limitedPurchaseSkuRecord_ != false) {
-      output.writeBool(19, limitedPurchaseSkuRecord_);
+    if (typeCase_ == 19) {
+      output.writeBool(
+          19, (boolean)((java.lang.Boolean) type_));
     }
-    if (!getStickerIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 22, stickerId_);
+    if (typeCase_ == 22) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 22, type_);
     }
     unknownFields.writeTo(output);
   }
@@ -523,79 +669,94 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (pokemonId_ != 0L) {
+    if (typeCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFixed64Size(1, pokemonId_);
+        .computeFixed64Size(
+            1, (long)((java.lang.Long) type_));
     }
-    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (typeCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, item_);
+        .computeEnumSize(2, ((java.lang.Integer) type_));
     }
-    if (pokedexEntryId_ != 0) {
+    if (typeCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, pokedexEntryId_);
+        .computeInt32Size(
+            3, (int)((java.lang.Integer) type_));
     }
-    if (playerStats_ != false) {
+    if (typeCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(4, playerStats_);
+        .computeBoolSize(
+            4, (boolean)((java.lang.Boolean) type_));
     }
-    if (playerCurrency_ != false) {
+    if (typeCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(5, playerCurrency_);
+        .computeBoolSize(
+            5, (boolean)((java.lang.Boolean) type_));
     }
-    if (playerCamera_ != false) {
+    if (typeCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(6, playerCamera_);
+        .computeBoolSize(
+            6, (boolean)((java.lang.Boolean) type_));
     }
-    if (inventoryUpgrades_ != false) {
+    if (typeCase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(7, inventoryUpgrades_);
+        .computeBoolSize(
+            7, (boolean)((java.lang.Boolean) type_));
     }
-    if (appliedItems_ != false) {
+    if (typeCase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(8, appliedItems_);
+        .computeBoolSize(
+            8, (boolean)((java.lang.Boolean) type_));
     }
-    if (eggIncubators_ != false) {
+    if (typeCase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(9, eggIncubators_);
+        .computeBoolSize(
+            9, (boolean)((java.lang.Boolean) type_));
     }
-    if (pokemonFamilyId_ != 0) {
+    if (typeCase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(10, pokemonFamilyId_);
+        .computeInt32Size(
+            10, (int)((java.lang.Integer) type_));
     }
-    if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
+    if (typeCase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(11, questType_);
+        .computeEnumSize(11, ((java.lang.Integer) type_));
     }
-    if (!getAvatarTemplateIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, avatarTemplateId_);
+    if (typeCase_ == 12) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, type_);
     }
-    if (raidTickets_ != false) {
+    if (typeCase_ == 13) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(13, raidTickets_);
+        .computeBoolSize(
+            13, (boolean)((java.lang.Boolean) type_));
     }
-    if (quests_ != false) {
+    if (typeCase_ == 14) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(14, quests_);
+        .computeBoolSize(
+            14, (boolean)((java.lang.Boolean) type_));
     }
-    if (giftBoxes_ != false) {
+    if (typeCase_ == 15) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(15, giftBoxes_);
+        .computeBoolSize(
+            15, (boolean)((java.lang.Boolean) type_));
     }
-    if (belugaIncenseBox_ != false) {
+    if (typeCase_ == 16) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(16, belugaIncenseBox_);
+        .computeBoolSize(
+            16, (boolean)((java.lang.Boolean) type_));
     }
-    if (vsSeekerUpgrades_ != false) {
+    if (typeCase_ == 17) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(17, vsSeekerUpgrades_);
+        .computeBoolSize(
+            17, (boolean)((java.lang.Boolean) type_));
     }
-    if (limitedPurchaseSkuRecord_ != false) {
+    if (typeCase_ == 19) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(19, limitedPurchaseSkuRecord_);
+        .computeBoolSize(
+            19, (boolean)((java.lang.Boolean) type_));
     }
-    if (!getStickerIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(22, stickerId_);
+    if (typeCase_ == 22) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(22, type_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -612,42 +773,87 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.HoloInventoryKeyProto other = (POGOProtos.Rpc.HoloInventoryKeyProto) obj;
 
-    if (getPokemonId()
-        != other.getPokemonId()) return false;
-    if (item_ != other.item_) return false;
-    if (getPokedexEntryId()
-        != other.getPokedexEntryId()) return false;
-    if (getPlayerStats()
-        != other.getPlayerStats()) return false;
-    if (getPlayerCurrency()
-        != other.getPlayerCurrency()) return false;
-    if (getPlayerCamera()
-        != other.getPlayerCamera()) return false;
-    if (getInventoryUpgrades()
-        != other.getInventoryUpgrades()) return false;
-    if (getAppliedItems()
-        != other.getAppliedItems()) return false;
-    if (getEggIncubators()
-        != other.getEggIncubators()) return false;
-    if (getPokemonFamilyId()
-        != other.getPokemonFamilyId()) return false;
-    if (questType_ != other.questType_) return false;
-    if (!getAvatarTemplateId()
-        .equals(other.getAvatarTemplateId())) return false;
-    if (getRaidTickets()
-        != other.getRaidTickets()) return false;
-    if (getQuests()
-        != other.getQuests()) return false;
-    if (getGiftBoxes()
-        != other.getGiftBoxes()) return false;
-    if (getBelugaIncenseBox()
-        != other.getBelugaIncenseBox()) return false;
-    if (getVsSeekerUpgrades()
-        != other.getVsSeekerUpgrades()) return false;
-    if (getLimitedPurchaseSkuRecord()
-        != other.getLimitedPurchaseSkuRecord()) return false;
-    if (!getStickerId()
-        .equals(other.getStickerId())) return false;
+    if (!getTypeCase().equals(other.getTypeCase())) return false;
+    switch (typeCase_) {
+      case 1:
+        if (getPokemonId()
+            != other.getPokemonId()) return false;
+        break;
+      case 2:
+        if (getItemValue()
+            != other.getItemValue()) return false;
+        break;
+      case 3:
+        if (getPokedexEntryId()
+            != other.getPokedexEntryId()) return false;
+        break;
+      case 4:
+        if (getPlayerStats()
+            != other.getPlayerStats()) return false;
+        break;
+      case 5:
+        if (getPlayerCurrency()
+            != other.getPlayerCurrency()) return false;
+        break;
+      case 6:
+        if (getPlayerCamera()
+            != other.getPlayerCamera()) return false;
+        break;
+      case 7:
+        if (getInventoryUpgrades()
+            != other.getInventoryUpgrades()) return false;
+        break;
+      case 8:
+        if (getAppliedItems()
+            != other.getAppliedItems()) return false;
+        break;
+      case 9:
+        if (getEggIncubators()
+            != other.getEggIncubators()) return false;
+        break;
+      case 10:
+        if (getPokemonFamilyId()
+            != other.getPokemonFamilyId()) return false;
+        break;
+      case 11:
+        if (getQuestTypeValue()
+            != other.getQuestTypeValue()) return false;
+        break;
+      case 12:
+        if (!getAvatarTemplateId()
+            .equals(other.getAvatarTemplateId())) return false;
+        break;
+      case 13:
+        if (getRaidTickets()
+            != other.getRaidTickets()) return false;
+        break;
+      case 14:
+        if (getQuests()
+            != other.getQuests()) return false;
+        break;
+      case 15:
+        if (getGiftBoxes()
+            != other.getGiftBoxes()) return false;
+        break;
+      case 16:
+        if (getBelugaIncenseBox()
+            != other.getBelugaIncenseBox()) return false;
+        break;
+      case 17:
+        if (getVsSeekerUpgrades()
+            != other.getVsSeekerUpgrades()) return false;
+        break;
+      case 19:
+        if (getLimitedPurchaseSkuRecord()
+            != other.getLimitedPurchaseSkuRecord()) return false;
+        break;
+      case 22:
+        if (!getStickerId()
+            .equals(other.getStickerId())) return false;
+        break;
+      case 0:
+      default:
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -659,57 +865,99 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + POKEMON_ID_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getPokemonId());
-    hash = (37 * hash) + ITEM_FIELD_NUMBER;
-    hash = (53 * hash) + item_;
-    hash = (37 * hash) + POKEDEX_ENTRY_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getPokedexEntryId();
-    hash = (37 * hash) + PLAYER_STATS_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getPlayerStats());
-    hash = (37 * hash) + PLAYER_CURRENCY_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getPlayerCurrency());
-    hash = (37 * hash) + PLAYER_CAMERA_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getPlayerCamera());
-    hash = (37 * hash) + INVENTORY_UPGRADES_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getInventoryUpgrades());
-    hash = (37 * hash) + APPLIED_ITEMS_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getAppliedItems());
-    hash = (37 * hash) + EGG_INCUBATORS_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getEggIncubators());
-    hash = (37 * hash) + POKEMON_FAMILY_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getPokemonFamilyId();
-    hash = (37 * hash) + QUEST_TYPE_FIELD_NUMBER;
-    hash = (53 * hash) + questType_;
-    hash = (37 * hash) + AVATAR_TEMPLATE_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getAvatarTemplateId().hashCode();
-    hash = (37 * hash) + RAID_TICKETS_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getRaidTickets());
-    hash = (37 * hash) + QUESTS_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getQuests());
-    hash = (37 * hash) + GIFT_BOXES_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getGiftBoxes());
-    hash = (37 * hash) + BELUGA_INCENSE_BOX_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getBelugaIncenseBox());
-    hash = (37 * hash) + VS_SEEKER_UPGRADES_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getVsSeekerUpgrades());
-    hash = (37 * hash) + LIMITED_PURCHASE_SKU_RECORD_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getLimitedPurchaseSkuRecord());
-    hash = (37 * hash) + STICKER_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getStickerId().hashCode();
+    switch (typeCase_) {
+      case 1:
+        hash = (37 * hash) + POKEMON_ID_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            getPokemonId());
+        break;
+      case 2:
+        hash = (37 * hash) + ITEM_FIELD_NUMBER;
+        hash = (53 * hash) + getItemValue();
+        break;
+      case 3:
+        hash = (37 * hash) + POKEDEX_ENTRY_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getPokedexEntryId();
+        break;
+      case 4:
+        hash = (37 * hash) + PLAYER_STATS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getPlayerStats());
+        break;
+      case 5:
+        hash = (37 * hash) + PLAYER_CURRENCY_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getPlayerCurrency());
+        break;
+      case 6:
+        hash = (37 * hash) + PLAYER_CAMERA_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getPlayerCamera());
+        break;
+      case 7:
+        hash = (37 * hash) + INVENTORY_UPGRADES_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getInventoryUpgrades());
+        break;
+      case 8:
+        hash = (37 * hash) + APPLIED_ITEMS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getAppliedItems());
+        break;
+      case 9:
+        hash = (37 * hash) + EGG_INCUBATORS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getEggIncubators());
+        break;
+      case 10:
+        hash = (37 * hash) + POKEMON_FAMILY_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getPokemonFamilyId();
+        break;
+      case 11:
+        hash = (37 * hash) + QUEST_TYPE_FIELD_NUMBER;
+        hash = (53 * hash) + getQuestTypeValue();
+        break;
+      case 12:
+        hash = (37 * hash) + AVATAR_TEMPLATE_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getAvatarTemplateId().hashCode();
+        break;
+      case 13:
+        hash = (37 * hash) + RAID_TICKETS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getRaidTickets());
+        break;
+      case 14:
+        hash = (37 * hash) + QUESTS_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getQuests());
+        break;
+      case 15:
+        hash = (37 * hash) + GIFT_BOXES_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getGiftBoxes());
+        break;
+      case 16:
+        hash = (37 * hash) + BELUGA_INCENSE_BOX_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getBelugaIncenseBox());
+        break;
+      case 17:
+        hash = (37 * hash) + VS_SEEKER_UPGRADES_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getVsSeekerUpgrades());
+        break;
+      case 19:
+        hash = (37 * hash) + LIMITED_PURCHASE_SKU_RECORD_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getLimitedPurchaseSkuRecord());
+        break;
+      case 22:
+        hash = (37 * hash) + STICKER_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getStickerId().hashCode();
+        break;
+      case 0:
+      default:
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -843,44 +1091,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      pokemonId_ = 0L;
-
-      item_ = 0;
-
-      pokedexEntryId_ = 0;
-
-      playerStats_ = false;
-
-      playerCurrency_ = false;
-
-      playerCamera_ = false;
-
-      inventoryUpgrades_ = false;
-
-      appliedItems_ = false;
-
-      eggIncubators_ = false;
-
-      pokemonFamilyId_ = 0;
-
-      questType_ = 0;
-
-      avatarTemplateId_ = "";
-
-      raidTickets_ = false;
-
-      quests_ = false;
-
-      giftBoxes_ = false;
-
-      belugaIncenseBox_ = false;
-
-      vsSeekerUpgrades_ = false;
-
-      limitedPurchaseSkuRecord_ = false;
-
-      stickerId_ = "";
-
+      typeCase_ = 0;
+      type_ = null;
       return this;
     }
 
@@ -907,25 +1119,64 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.HoloInventoryKeyProto buildPartial() {
       POGOProtos.Rpc.HoloInventoryKeyProto result = new POGOProtos.Rpc.HoloInventoryKeyProto(this);
-      result.pokemonId_ = pokemonId_;
-      result.item_ = item_;
-      result.pokedexEntryId_ = pokedexEntryId_;
-      result.playerStats_ = playerStats_;
-      result.playerCurrency_ = playerCurrency_;
-      result.playerCamera_ = playerCamera_;
-      result.inventoryUpgrades_ = inventoryUpgrades_;
-      result.appliedItems_ = appliedItems_;
-      result.eggIncubators_ = eggIncubators_;
-      result.pokemonFamilyId_ = pokemonFamilyId_;
-      result.questType_ = questType_;
-      result.avatarTemplateId_ = avatarTemplateId_;
-      result.raidTickets_ = raidTickets_;
-      result.quests_ = quests_;
-      result.giftBoxes_ = giftBoxes_;
-      result.belugaIncenseBox_ = belugaIncenseBox_;
-      result.vsSeekerUpgrades_ = vsSeekerUpgrades_;
-      result.limitedPurchaseSkuRecord_ = limitedPurchaseSkuRecord_;
-      result.stickerId_ = stickerId_;
+      if (typeCase_ == 1) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 2) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 3) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 4) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 5) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 6) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 7) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 8) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 9) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 10) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 11) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 12) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 13) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 14) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 15) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 16) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 17) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 19) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 22) {
+        result.type_ = type_;
+      }
+      result.typeCase_ = typeCase_;
       onBuilt();
       return result;
     }
@@ -974,64 +1225,90 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.HoloInventoryKeyProto other) {
       if (other == POGOProtos.Rpc.HoloInventoryKeyProto.getDefaultInstance()) return this;
-      if (other.getPokemonId() != 0L) {
-        setPokemonId(other.getPokemonId());
-      }
-      if (other.item_ != 0) {
-        setItemValue(other.getItemValue());
-      }
-      if (other.getPokedexEntryId() != 0) {
-        setPokedexEntryId(other.getPokedexEntryId());
-      }
-      if (other.getPlayerStats() != false) {
-        setPlayerStats(other.getPlayerStats());
-      }
-      if (other.getPlayerCurrency() != false) {
-        setPlayerCurrency(other.getPlayerCurrency());
-      }
-      if (other.getPlayerCamera() != false) {
-        setPlayerCamera(other.getPlayerCamera());
-      }
-      if (other.getInventoryUpgrades() != false) {
-        setInventoryUpgrades(other.getInventoryUpgrades());
-      }
-      if (other.getAppliedItems() != false) {
-        setAppliedItems(other.getAppliedItems());
-      }
-      if (other.getEggIncubators() != false) {
-        setEggIncubators(other.getEggIncubators());
-      }
-      if (other.getPokemonFamilyId() != 0) {
-        setPokemonFamilyId(other.getPokemonFamilyId());
-      }
-      if (other.questType_ != 0) {
-        setQuestTypeValue(other.getQuestTypeValue());
-      }
-      if (!other.getAvatarTemplateId().isEmpty()) {
-        avatarTemplateId_ = other.avatarTemplateId_;
-        onChanged();
-      }
-      if (other.getRaidTickets() != false) {
-        setRaidTickets(other.getRaidTickets());
-      }
-      if (other.getQuests() != false) {
-        setQuests(other.getQuests());
-      }
-      if (other.getGiftBoxes() != false) {
-        setGiftBoxes(other.getGiftBoxes());
-      }
-      if (other.getBelugaIncenseBox() != false) {
-        setBelugaIncenseBox(other.getBelugaIncenseBox());
-      }
-      if (other.getVsSeekerUpgrades() != false) {
-        setVsSeekerUpgrades(other.getVsSeekerUpgrades());
-      }
-      if (other.getLimitedPurchaseSkuRecord() != false) {
-        setLimitedPurchaseSkuRecord(other.getLimitedPurchaseSkuRecord());
-      }
-      if (!other.getStickerId().isEmpty()) {
-        stickerId_ = other.stickerId_;
-        onChanged();
+      switch (other.getTypeCase()) {
+        case POKEMON_ID: {
+          setPokemonId(other.getPokemonId());
+          break;
+        }
+        case ITEM: {
+          setItemValue(other.getItemValue());
+          break;
+        }
+        case POKEDEX_ENTRY_ID: {
+          setPokedexEntryId(other.getPokedexEntryId());
+          break;
+        }
+        case PLAYER_STATS: {
+          setPlayerStats(other.getPlayerStats());
+          break;
+        }
+        case PLAYER_CURRENCY: {
+          setPlayerCurrency(other.getPlayerCurrency());
+          break;
+        }
+        case PLAYER_CAMERA: {
+          setPlayerCamera(other.getPlayerCamera());
+          break;
+        }
+        case INVENTORY_UPGRADES: {
+          setInventoryUpgrades(other.getInventoryUpgrades());
+          break;
+        }
+        case APPLIED_ITEMS: {
+          setAppliedItems(other.getAppliedItems());
+          break;
+        }
+        case EGG_INCUBATORS: {
+          setEggIncubators(other.getEggIncubators());
+          break;
+        }
+        case POKEMON_FAMILY_ID: {
+          setPokemonFamilyId(other.getPokemonFamilyId());
+          break;
+        }
+        case QUEST_TYPE: {
+          setQuestTypeValue(other.getQuestTypeValue());
+          break;
+        }
+        case AVATAR_TEMPLATE_ID: {
+          typeCase_ = 12;
+          type_ = other.type_;
+          onChanged();
+          break;
+        }
+        case RAID_TICKETS: {
+          setRaidTickets(other.getRaidTickets());
+          break;
+        }
+        case QUESTS: {
+          setQuests(other.getQuests());
+          break;
+        }
+        case GIFT_BOXES: {
+          setGiftBoxes(other.getGiftBoxes());
+          break;
+        }
+        case BELUGA_INCENSE_BOX: {
+          setBelugaIncenseBox(other.getBelugaIncenseBox());
+          break;
+        }
+        case VS_SEEKER_UPGRADES: {
+          setVsSeekerUpgrades(other.getVsSeekerUpgrades());
+          break;
+        }
+        case LIMITED_PURCHASE_SKU_RECORD: {
+          setLimitedPurchaseSkuRecord(other.getLimitedPurchaseSkuRecord());
+          break;
+        }
+        case STICKER_ID: {
+          typeCase_ = 22;
+          type_ = other.type_;
+          onChanged();
+          break;
+        }
+        case TYPE_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1061,14 +1338,31 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int typeCase_ = 0;
+    private java.lang.Object type_;
+    public TypeCase
+        getTypeCase() {
+      return TypeCase.forNumber(
+          typeCase_);
+    }
 
-    private long pokemonId_ ;
+    public Builder clearType() {
+      typeCase_ = 0;
+      type_ = null;
+      onChanged();
+      return this;
+    }
+
+
     /**
      * <code>fixed64 pokemon_id = 1;</code>
      * @return The pokemonId.
      */
     public long getPokemonId() {
-      return pokemonId_;
+      if (typeCase_ == 1) {
+        return (java.lang.Long) type_;
+      }
+      return 0L;
     }
     /**
      * <code>fixed64 pokemon_id = 1;</code>
@@ -1076,8 +1370,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokemonId(long value) {
-      
-      pokemonId_ = value;
+      typeCase_ = 1;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1086,19 +1380,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokemonId() {
-      
-      pokemonId_ = 0L;
-      onChanged();
+      if (typeCase_ == 1) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private int item_ = 0;
     /**
      * <code>.POGOProtos.Rpc.Item item = 2;</code>
      * @return The enum numeric value on the wire for item.
      */
     public int getItemValue() {
-      return item_;
+      if (typeCase_ == 2) {
+        return ((java.lang.Integer) type_).intValue();
+      }
+      return 0;
     }
     /**
      * <code>.POGOProtos.Rpc.Item item = 2;</code>
@@ -1106,7 +1404,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setItemValue(int value) {
-      item_ = value;
+      typeCase_ = 2;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1115,9 +1414,13 @@ private static final long serialVersionUID = 0L;
      * @return The item.
      */
     public POGOProtos.Rpc.Item getItem() {
-      @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(item_);
-      return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+      if (typeCase_ == 2) {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(
+            (java.lang.Integer) type_);
+        return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+      }
+      return POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN;
     }
     /**
      * <code>.POGOProtos.Rpc.Item item = 2;</code>
@@ -1128,8 +1431,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
-      item_ = value.getNumber();
+      typeCase_ = 2;
+      type_ = value.getNumber();
       onChanged();
       return this;
     }
@@ -1138,19 +1441,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearItem() {
-      
-      item_ = 0;
-      onChanged();
+      if (typeCase_ == 2) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private int pokedexEntryId_ ;
     /**
      * <code>int32 pokedex_entry_id = 3;</code>
      * @return The pokedexEntryId.
      */
     public int getPokedexEntryId() {
-      return pokedexEntryId_;
+      if (typeCase_ == 3) {
+        return (java.lang.Integer) type_;
+      }
+      return 0;
     }
     /**
      * <code>int32 pokedex_entry_id = 3;</code>
@@ -1158,8 +1465,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokedexEntryId(int value) {
-      
-      pokedexEntryId_ = value;
+      typeCase_ = 3;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1168,19 +1475,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokedexEntryId() {
-      
-      pokedexEntryId_ = 0;
-      onChanged();
+      if (typeCase_ == 3) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean playerStats_ ;
     /**
      * <code>bool player_stats = 4;</code>
      * @return The playerStats.
      */
     public boolean getPlayerStats() {
-      return playerStats_;
+      if (typeCase_ == 4) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool player_stats = 4;</code>
@@ -1188,8 +1499,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPlayerStats(boolean value) {
-      
-      playerStats_ = value;
+      typeCase_ = 4;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1198,19 +1509,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPlayerStats() {
-      
-      playerStats_ = false;
-      onChanged();
+      if (typeCase_ == 4) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean playerCurrency_ ;
     /**
      * <code>bool player_currency = 5;</code>
      * @return The playerCurrency.
      */
     public boolean getPlayerCurrency() {
-      return playerCurrency_;
+      if (typeCase_ == 5) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool player_currency = 5;</code>
@@ -1218,8 +1533,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPlayerCurrency(boolean value) {
-      
-      playerCurrency_ = value;
+      typeCase_ = 5;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1228,19 +1543,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPlayerCurrency() {
-      
-      playerCurrency_ = false;
-      onChanged();
+      if (typeCase_ == 5) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean playerCamera_ ;
     /**
      * <code>bool player_camera = 6;</code>
      * @return The playerCamera.
      */
     public boolean getPlayerCamera() {
-      return playerCamera_;
+      if (typeCase_ == 6) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool player_camera = 6;</code>
@@ -1248,8 +1567,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPlayerCamera(boolean value) {
-      
-      playerCamera_ = value;
+      typeCase_ = 6;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1258,19 +1577,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPlayerCamera() {
-      
-      playerCamera_ = false;
-      onChanged();
+      if (typeCase_ == 6) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean inventoryUpgrades_ ;
     /**
      * <code>bool inventory_upgrades = 7;</code>
      * @return The inventoryUpgrades.
      */
     public boolean getInventoryUpgrades() {
-      return inventoryUpgrades_;
+      if (typeCase_ == 7) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool inventory_upgrades = 7;</code>
@@ -1278,8 +1601,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setInventoryUpgrades(boolean value) {
-      
-      inventoryUpgrades_ = value;
+      typeCase_ = 7;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1288,19 +1611,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearInventoryUpgrades() {
-      
-      inventoryUpgrades_ = false;
-      onChanged();
+      if (typeCase_ == 7) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean appliedItems_ ;
     /**
      * <code>bool applied_items = 8;</code>
      * @return The appliedItems.
      */
     public boolean getAppliedItems() {
-      return appliedItems_;
+      if (typeCase_ == 8) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool applied_items = 8;</code>
@@ -1308,8 +1635,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setAppliedItems(boolean value) {
-      
-      appliedItems_ = value;
+      typeCase_ = 8;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1318,19 +1645,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearAppliedItems() {
-      
-      appliedItems_ = false;
-      onChanged();
+      if (typeCase_ == 8) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean eggIncubators_ ;
     /**
      * <code>bool egg_incubators = 9;</code>
      * @return The eggIncubators.
      */
     public boolean getEggIncubators() {
-      return eggIncubators_;
+      if (typeCase_ == 9) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool egg_incubators = 9;</code>
@@ -1338,8 +1669,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setEggIncubators(boolean value) {
-      
-      eggIncubators_ = value;
+      typeCase_ = 9;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1348,19 +1679,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearEggIncubators() {
-      
-      eggIncubators_ = false;
-      onChanged();
+      if (typeCase_ == 9) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private int pokemonFamilyId_ ;
     /**
      * <code>int32 pokemon_family_id = 10;</code>
      * @return The pokemonFamilyId.
      */
     public int getPokemonFamilyId() {
-      return pokemonFamilyId_;
+      if (typeCase_ == 10) {
+        return (java.lang.Integer) type_;
+      }
+      return 0;
     }
     /**
      * <code>int32 pokemon_family_id = 10;</code>
@@ -1368,8 +1703,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokemonFamilyId(int value) {
-      
-      pokemonFamilyId_ = value;
+      typeCase_ = 10;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1378,19 +1713,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokemonFamilyId() {
-      
-      pokemonFamilyId_ = 0;
-      onChanged();
+      if (typeCase_ == 10) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private int questType_ = 0;
     /**
      * <code>.POGOProtos.Rpc.QuestType quest_type = 11;</code>
      * @return The enum numeric value on the wire for questType.
      */
     public int getQuestTypeValue() {
-      return questType_;
+      if (typeCase_ == 11) {
+        return ((java.lang.Integer) type_).intValue();
+      }
+      return 0;
     }
     /**
      * <code>.POGOProtos.Rpc.QuestType quest_type = 11;</code>
@@ -1398,7 +1737,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setQuestTypeValue(int value) {
-      questType_ = value;
+      typeCase_ = 11;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1407,9 +1747,13 @@ private static final long serialVersionUID = 0L;
      * @return The questType.
      */
     public POGOProtos.Rpc.QuestType getQuestType() {
-      @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(questType_);
-      return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
+      if (typeCase_ == 11) {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(
+            (java.lang.Integer) type_);
+        return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
+      }
+      return POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET;
     }
     /**
      * <code>.POGOProtos.Rpc.QuestType quest_type = 11;</code>
@@ -1420,8 +1764,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
-      questType_ = value.getNumber();
+      typeCase_ = 11;
+      type_ = value.getNumber();
       onChanged();
       return this;
     }
@@ -1430,24 +1774,30 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearQuestType() {
-      
-      questType_ = 0;
-      onChanged();
+      if (typeCase_ == 11) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private java.lang.Object avatarTemplateId_ = "";
     /**
      * <code>string avatar_template_id = 12;</code>
      * @return The avatarTemplateId.
      */
     public java.lang.String getAvatarTemplateId() {
-      java.lang.Object ref = avatarTemplateId_;
+      java.lang.Object ref = "";
+      if (typeCase_ == 12) {
+        ref = type_;
+      }
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        avatarTemplateId_ = s;
+        if (typeCase_ == 12) {
+          type_ = s;
+        }
         return s;
       } else {
         return (java.lang.String) ref;
@@ -1459,12 +1809,17 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getAvatarTemplateIdBytes() {
-      java.lang.Object ref = avatarTemplateId_;
+      java.lang.Object ref = "";
+      if (typeCase_ == 12) {
+        ref = type_;
+      }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        avatarTemplateId_ = b;
+        if (typeCase_ == 12) {
+          type_ = b;
+        }
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1480,8 +1835,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
     throw new NullPointerException();
   }
-  
-      avatarTemplateId_ = value;
+  typeCase_ = 12;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1490,9 +1845,11 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearAvatarTemplateId() {
-      
-      avatarTemplateId_ = getDefaultInstance().getAvatarTemplateId();
-      onChanged();
+      if (typeCase_ == 12) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
     /**
@@ -1506,19 +1863,21 @@ private static final long serialVersionUID = 0L;
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-      
-      avatarTemplateId_ = value;
+      typeCase_ = 12;
+      type_ = value;
       onChanged();
       return this;
     }
 
-    private boolean raidTickets_ ;
     /**
      * <code>bool raid_tickets = 13;</code>
      * @return The raidTickets.
      */
     public boolean getRaidTickets() {
-      return raidTickets_;
+      if (typeCase_ == 13) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool raid_tickets = 13;</code>
@@ -1526,8 +1885,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setRaidTickets(boolean value) {
-      
-      raidTickets_ = value;
+      typeCase_ = 13;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1536,19 +1895,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearRaidTickets() {
-      
-      raidTickets_ = false;
-      onChanged();
+      if (typeCase_ == 13) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean quests_ ;
     /**
      * <code>bool quests = 14;</code>
      * @return The quests.
      */
     public boolean getQuests() {
-      return quests_;
+      if (typeCase_ == 14) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool quests = 14;</code>
@@ -1556,8 +1919,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setQuests(boolean value) {
-      
-      quests_ = value;
+      typeCase_ = 14;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1566,19 +1929,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearQuests() {
-      
-      quests_ = false;
-      onChanged();
+      if (typeCase_ == 14) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean giftBoxes_ ;
     /**
      * <code>bool gift_boxes = 15;</code>
      * @return The giftBoxes.
      */
     public boolean getGiftBoxes() {
-      return giftBoxes_;
+      if (typeCase_ == 15) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool gift_boxes = 15;</code>
@@ -1586,8 +1953,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setGiftBoxes(boolean value) {
-      
-      giftBoxes_ = value;
+      typeCase_ = 15;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1596,19 +1963,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearGiftBoxes() {
-      
-      giftBoxes_ = false;
-      onChanged();
+      if (typeCase_ == 15) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean belugaIncenseBox_ ;
     /**
      * <code>bool beluga_incense_box = 16;</code>
      * @return The belugaIncenseBox.
      */
     public boolean getBelugaIncenseBox() {
-      return belugaIncenseBox_;
+      if (typeCase_ == 16) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool beluga_incense_box = 16;</code>
@@ -1616,8 +1987,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setBelugaIncenseBox(boolean value) {
-      
-      belugaIncenseBox_ = value;
+      typeCase_ = 16;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1626,19 +1997,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearBelugaIncenseBox() {
-      
-      belugaIncenseBox_ = false;
-      onChanged();
+      if (typeCase_ == 16) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean vsSeekerUpgrades_ ;
     /**
      * <code>bool vs_seeker_upgrades = 17;</code>
      * @return The vsSeekerUpgrades.
      */
     public boolean getVsSeekerUpgrades() {
-      return vsSeekerUpgrades_;
+      if (typeCase_ == 17) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool vs_seeker_upgrades = 17;</code>
@@ -1646,8 +2021,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setVsSeekerUpgrades(boolean value) {
-      
-      vsSeekerUpgrades_ = value;
+      typeCase_ = 17;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1656,19 +2031,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearVsSeekerUpgrades() {
-      
-      vsSeekerUpgrades_ = false;
-      onChanged();
+      if (typeCase_ == 17) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean limitedPurchaseSkuRecord_ ;
     /**
      * <code>bool limited_purchase_sku_record = 19;</code>
      * @return The limitedPurchaseSkuRecord.
      */
     public boolean getLimitedPurchaseSkuRecord() {
-      return limitedPurchaseSkuRecord_;
+      if (typeCase_ == 19) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool limited_purchase_sku_record = 19;</code>
@@ -1676,8 +2055,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setLimitedPurchaseSkuRecord(boolean value) {
-      
-      limitedPurchaseSkuRecord_ = value;
+      typeCase_ = 19;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1686,24 +2065,30 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearLimitedPurchaseSkuRecord() {
-      
-      limitedPurchaseSkuRecord_ = false;
-      onChanged();
+      if (typeCase_ == 19) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private java.lang.Object stickerId_ = "";
     /**
      * <code>string sticker_id = 22;</code>
      * @return The stickerId.
      */
     public java.lang.String getStickerId() {
-      java.lang.Object ref = stickerId_;
+      java.lang.Object ref = "";
+      if (typeCase_ == 22) {
+        ref = type_;
+      }
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        stickerId_ = s;
+        if (typeCase_ == 22) {
+          type_ = s;
+        }
         return s;
       } else {
         return (java.lang.String) ref;
@@ -1715,12 +2100,17 @@ private static final long serialVersionUID = 0L;
      */
     public com.google.protobuf.ByteString
         getStickerIdBytes() {
-      java.lang.Object ref = stickerId_;
+      java.lang.Object ref = "";
+      if (typeCase_ == 22) {
+        ref = type_;
+      }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        stickerId_ = b;
+        if (typeCase_ == 22) {
+          type_ = b;
+        }
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1736,8 +2126,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
     throw new NullPointerException();
   }
-  
-      stickerId_ = value;
+  typeCase_ = 22;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -1746,9 +2136,11 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearStickerId() {
-      
-      stickerId_ = getDefaultInstance().getStickerId();
-      onChanged();
+      if (typeCase_ == 22) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
     /**
@@ -1762,8 +2154,8 @@ private static final long serialVersionUID = 0L;
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-      
-      stickerId_ = value;
+      typeCase_ = 22;
+      type_ = value;
       onChanged();
       return this;
     }

@@ -414,4 +414,28 @@ public interface PokemonProtoOrBuilder extends
    * @return The eggType.
    */
   POGOProtos.Rpc.HoloPokemonEggType getEggType();
+
+  /**
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 62;</code>
+   */
+  java.util.List<POGOProtos.Rpc.ClientQuestProto> 
+      getQuestBuddyEvolutionRequirementList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 62;</code>
+   */
+  POGOProtos.Rpc.ClientQuestProto getQuestBuddyEvolutionRequirement(int index);
+  /**
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 62;</code>
+   */
+  int getQuestBuddyEvolutionRequirementCount();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 62;</code>
+   */
+  java.util.List<? extends POGOProtos.Rpc.ClientQuestProtoOrBuilder> 
+      getQuestBuddyEvolutionRequirementOrBuilderList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 62;</code>
+   */
+  POGOProtos.Rpc.ClientQuestProtoOrBuilder getQuestBuddyEvolutionRequirementOrBuilder(
+      int index);
 }

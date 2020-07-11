@@ -139,10 +139,6 @@ private static final long serialVersionUID = 0L;
   public static final int DATA_FIELD_NUMBER = 2;
   private POGOProtos.Rpc.GameMasterClientTemplateProto data_;
   /**
-   * <pre>
-   *bytes data = 2;
-   * </pre>
-   *
    * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
    * @return Whether the data field is set.
    */
@@ -150,10 +146,6 @@ private static final long serialVersionUID = 0L;
     return data_ != null;
   }
   /**
-   * <pre>
-   *bytes data = 2;
-   * </pre>
-   *
    * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
    * @return The data.
    */
@@ -161,10 +153,6 @@ private static final long serialVersionUID = 0L;
     return data_ == null ? POGOProtos.Rpc.GameMasterClientTemplateProto.getDefaultInstance() : data_;
   }
   /**
-   * <pre>
-   *bytes data = 2;
-   * </pre>
-   *
    * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
    */
   public POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder getDataOrBuilder() {
@@ -583,10 +571,6 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.GameMasterClientTemplateProto, POGOProtos.Rpc.GameMasterClientTemplateProto.Builder, POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder> dataBuilder_;
     /**
-     * <pre>
-     *bytes data = 2;
-     * </pre>
-     *
      * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      * @return Whether the data field is set.
      */
@@ -594,10 +578,6 @@ private static final long serialVersionUID = 0L;
       return dataBuilder_ != null || data_ != null;
     }
     /**
-     * <pre>
-     *bytes data = 2;
-     * </pre>
-     *
      * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      * @return The data.
      */
@@ -609,10 +589,6 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <pre>
-     *bytes data = 2;
-     * </pre>
-     *
      * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     public Builder setData(POGOProtos.Rpc.GameMasterClientTemplateProto value) {
@@ -629,10 +605,6 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <pre>
-     *bytes data = 2;
-     * </pre>
-     *
      * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     public Builder setData(
@@ -647,10 +619,6 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <pre>
-     *bytes data = 2;
-     * </pre>
-     *
      * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     public Builder mergeData(POGOProtos.Rpc.GameMasterClientTemplateProto value) {
@@ -669,10 +637,6 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <pre>
-     *bytes data = 2;
-     * </pre>
-     *
      * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     public Builder clearData() {
@@ -687,10 +651,6 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <pre>
-     *bytes data = 2;
-     * </pre>
-     *
      * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     public POGOProtos.Rpc.GameMasterClientTemplateProto.Builder getDataBuilder() {
@@ -699,10 +659,6 @@ private static final long serialVersionUID = 0L;
       return getDataFieldBuilder().getBuilder();
     }
     /**
-     * <pre>
-     *bytes data = 2;
-     * </pre>
-     *
      * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     public POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder getDataOrBuilder() {
@@ -714,10 +670,6 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <pre>
-     *bytes data = 2;
-     * </pre>
-     *
      * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<

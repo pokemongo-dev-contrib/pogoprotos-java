@@ -724,6 +724,19 @@ private static final long serialVersionUID = 0L;
 
             break;
           }
+          case 458: {
+            POGOProtos.Settings.TimedGroupChallengeSettings.Builder subBuilder = null;
+            if (timedGroupChallengeSettings_ != null) {
+              subBuilder = timedGroupChallengeSettings_.toBuilder();
+            }
+            timedGroupChallengeSettings_ = input.readMessage(POGOProtos.Settings.TimedGroupChallengeSettings.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(timedGroupChallengeSettings_);
+              timedGroupChallengeSettings_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           case 474: {
             POGOProtos.Settings.LobbyClientSettings.Builder subBuilder = null;
             if (lobbyClientSettings_ != null) {
@@ -2023,6 +2036,29 @@ private static final long serialVersionUID = 0L;
     return getRocketBalloonSettings();
   }
 
+  public static final int TIMED_GROUP_CHALLENGE_SETTINGS_FIELD_NUMBER = 57;
+  private POGOProtos.Settings.TimedGroupChallengeSettings timedGroupChallengeSettings_;
+  /**
+   * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+   * @return Whether the timedGroupChallengeSettings field is set.
+   */
+  public boolean hasTimedGroupChallengeSettings() {
+    return timedGroupChallengeSettings_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+   * @return The timedGroupChallengeSettings.
+   */
+  public POGOProtos.Settings.TimedGroupChallengeSettings getTimedGroupChallengeSettings() {
+    return timedGroupChallengeSettings_ == null ? POGOProtos.Settings.TimedGroupChallengeSettings.getDefaultInstance() : timedGroupChallengeSettings_;
+  }
+  /**
+   * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+   */
+  public POGOProtos.Settings.TimedGroupChallengeSettingsOrBuilder getTimedGroupChallengeSettingsOrBuilder() {
+    return getTimedGroupChallengeSettings();
+  }
+
   public static final int LOBBY_CLIENT_SETTINGS_FIELD_NUMBER = 59;
   private POGOProtos.Settings.LobbyClientSettings lobbyClientSettings_;
   /**
@@ -2223,6 +2259,9 @@ private static final long serialVersionUID = 0L;
     }
     if (rocketBalloonSettings_ != null) {
       output.writeMessage(56, getRocketBalloonSettings());
+    }
+    if (timedGroupChallengeSettings_ != null) {
+      output.writeMessage(57, getTimedGroupChallengeSettings());
     }
     if (lobbyClientSettings_ != null) {
       output.writeMessage(59, getLobbyClientSettings());
@@ -2458,6 +2497,10 @@ private static final long serialVersionUID = 0L;
     if (rocketBalloonSettings_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(56, getRocketBalloonSettings());
+    }
+    if (timedGroupChallengeSettings_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(57, getTimedGroupChallengeSettings());
     }
     if (lobbyClientSettings_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -2727,6 +2770,11 @@ private static final long serialVersionUID = 0L;
       if (!getRocketBalloonSettings()
           .equals(other.getRocketBalloonSettings())) return false;
     }
+    if (hasTimedGroupChallengeSettings() != other.hasTimedGroupChallengeSettings()) return false;
+    if (hasTimedGroupChallengeSettings()) {
+      if (!getTimedGroupChallengeSettings()
+          .equals(other.getTimedGroupChallengeSettings())) return false;
+    }
     if (hasLobbyClientSettings() != other.hasLobbyClientSettings()) return false;
     if (hasLobbyClientSettings()) {
       if (!getLobbyClientSettings()
@@ -2949,6 +2997,10 @@ private static final long serialVersionUID = 0L;
     if (hasRocketBalloonSettings()) {
       hash = (37 * hash) + ROCKET_BALLOON_SETTINGS_FIELD_NUMBER;
       hash = (53 * hash) + getRocketBalloonSettings().hashCode();
+    }
+    if (hasTimedGroupChallengeSettings()) {
+      hash = (37 * hash) + TIMED_GROUP_CHALLENGE_SETTINGS_FIELD_NUMBER;
+      hash = (53 * hash) + getTimedGroupChallengeSettings().hashCode();
     }
     if (hasLobbyClientSettings()) {
       hash = (37 * hash) + LOBBY_CLIENT_SETTINGS_FIELD_NUMBER;
@@ -3385,6 +3437,12 @@ private static final long serialVersionUID = 0L;
         rocketBalloonSettings_ = null;
         rocketBalloonSettingsBuilder_ = null;
       }
+      if (timedGroupChallengeSettingsBuilder_ == null) {
+        timedGroupChallengeSettings_ = null;
+      } else {
+        timedGroupChallengeSettings_ = null;
+        timedGroupChallengeSettingsBuilder_ = null;
+      }
       if (lobbyClientSettingsBuilder_ == null) {
         lobbyClientSettings_ = null;
       } else {
@@ -3671,6 +3729,11 @@ private static final long serialVersionUID = 0L;
       } else {
         result.rocketBalloonSettings_ = rocketBalloonSettingsBuilder_.build();
       }
+      if (timedGroupChallengeSettingsBuilder_ == null) {
+        result.timedGroupChallengeSettings_ = timedGroupChallengeSettings_;
+      } else {
+        result.timedGroupChallengeSettings_ = timedGroupChallengeSettingsBuilder_.build();
+      }
       if (lobbyClientSettingsBuilder_ == null) {
         result.lobbyClientSettings_ = lobbyClientSettings_;
       } else {
@@ -3897,6 +3960,9 @@ private static final long serialVersionUID = 0L;
       }
       if (other.hasRocketBalloonSettings()) {
         mergeRocketBalloonSettings(other.getRocketBalloonSettings());
+      }
+      if (other.hasTimedGroupChallengeSettings()) {
+        mergeTimedGroupChallengeSettings(other.getTimedGroupChallengeSettings());
       }
       if (other.hasLobbyClientSettings()) {
         mergeLobbyClientSettings(other.getLobbyClientSettings());
@@ -10027,6 +10093,125 @@ private static final long serialVersionUID = 0L;
         rocketBalloonSettings_ = null;
       }
       return rocketBalloonSettingsBuilder_;
+    }
+
+    private POGOProtos.Settings.TimedGroupChallengeSettings timedGroupChallengeSettings_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Settings.TimedGroupChallengeSettings, POGOProtos.Settings.TimedGroupChallengeSettings.Builder, POGOProtos.Settings.TimedGroupChallengeSettingsOrBuilder> timedGroupChallengeSettingsBuilder_;
+    /**
+     * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+     * @return Whether the timedGroupChallengeSettings field is set.
+     */
+    public boolean hasTimedGroupChallengeSettings() {
+      return timedGroupChallengeSettingsBuilder_ != null || timedGroupChallengeSettings_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+     * @return The timedGroupChallengeSettings.
+     */
+    public POGOProtos.Settings.TimedGroupChallengeSettings getTimedGroupChallengeSettings() {
+      if (timedGroupChallengeSettingsBuilder_ == null) {
+        return timedGroupChallengeSettings_ == null ? POGOProtos.Settings.TimedGroupChallengeSettings.getDefaultInstance() : timedGroupChallengeSettings_;
+      } else {
+        return timedGroupChallengeSettingsBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+     */
+    public Builder setTimedGroupChallengeSettings(POGOProtos.Settings.TimedGroupChallengeSettings value) {
+      if (timedGroupChallengeSettingsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        timedGroupChallengeSettings_ = value;
+        onChanged();
+      } else {
+        timedGroupChallengeSettingsBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+     */
+    public Builder setTimedGroupChallengeSettings(
+        POGOProtos.Settings.TimedGroupChallengeSettings.Builder builderForValue) {
+      if (timedGroupChallengeSettingsBuilder_ == null) {
+        timedGroupChallengeSettings_ = builderForValue.build();
+        onChanged();
+      } else {
+        timedGroupChallengeSettingsBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+     */
+    public Builder mergeTimedGroupChallengeSettings(POGOProtos.Settings.TimedGroupChallengeSettings value) {
+      if (timedGroupChallengeSettingsBuilder_ == null) {
+        if (timedGroupChallengeSettings_ != null) {
+          timedGroupChallengeSettings_ =
+            POGOProtos.Settings.TimedGroupChallengeSettings.newBuilder(timedGroupChallengeSettings_).mergeFrom(value).buildPartial();
+        } else {
+          timedGroupChallengeSettings_ = value;
+        }
+        onChanged();
+      } else {
+        timedGroupChallengeSettingsBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+     */
+    public Builder clearTimedGroupChallengeSettings() {
+      if (timedGroupChallengeSettingsBuilder_ == null) {
+        timedGroupChallengeSettings_ = null;
+        onChanged();
+      } else {
+        timedGroupChallengeSettings_ = null;
+        timedGroupChallengeSettingsBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+     */
+    public POGOProtos.Settings.TimedGroupChallengeSettings.Builder getTimedGroupChallengeSettingsBuilder() {
+      
+      onChanged();
+      return getTimedGroupChallengeSettingsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+     */
+    public POGOProtos.Settings.TimedGroupChallengeSettingsOrBuilder getTimedGroupChallengeSettingsOrBuilder() {
+      if (timedGroupChallengeSettingsBuilder_ != null) {
+        return timedGroupChallengeSettingsBuilder_.getMessageOrBuilder();
+      } else {
+        return timedGroupChallengeSettings_ == null ?
+            POGOProtos.Settings.TimedGroupChallengeSettings.getDefaultInstance() : timedGroupChallengeSettings_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Settings.TimedGroupChallengeSettings timed_group_challenge_settings = 57;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Settings.TimedGroupChallengeSettings, POGOProtos.Settings.TimedGroupChallengeSettings.Builder, POGOProtos.Settings.TimedGroupChallengeSettingsOrBuilder> 
+        getTimedGroupChallengeSettingsFieldBuilder() {
+      if (timedGroupChallengeSettingsBuilder_ == null) {
+        timedGroupChallengeSettingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Settings.TimedGroupChallengeSettings, POGOProtos.Settings.TimedGroupChallengeSettings.Builder, POGOProtos.Settings.TimedGroupChallengeSettingsOrBuilder>(
+                getTimedGroupChallengeSettings(),
+                getParentForChildren(),
+                isClean());
+        timedGroupChallengeSettings_ = null;
+      }
+      return timedGroupChallengeSettingsBuilder_;
     }
 
     private POGOProtos.Settings.LobbyClientSettings lobbyClientSettings_;

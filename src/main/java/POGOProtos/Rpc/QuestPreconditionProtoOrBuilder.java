@@ -8,17 +8,6 @@ public interface QuestPreconditionProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.QuestPreconditionType type = 1;</code>
-   * @return The enum numeric value on the wire for type.
-   */
-  int getTypeValue();
-  /**
-   * <code>.POGOProtos.Rpc.QuestPreconditionProto.QuestPreconditionType type = 1;</code>
-   * @return The type.
-   */
-  POGOProtos.Rpc.QuestPreconditionProto.QuestPreconditionType getType();
-
-  /**
    * <code>string quest_template_id = 2;</code>
    * @return The questTemplateId.
    */
@@ -104,4 +93,17 @@ public interface QuestPreconditionProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.QuestPreconditionProto.Group group = 7;</code>
    */
   POGOProtos.Rpc.QuestPreconditionProto.GroupOrBuilder getGroupOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.QuestPreconditionType type = 1;</code>
+   * @return The enum numeric value on the wire for type.
+   */
+  int getTypeValue();
+  /**
+   * <code>.POGOProtos.Rpc.QuestPreconditionProto.QuestPreconditionType type = 1;</code>
+   * @return The type.
+   */
+  POGOProtos.Rpc.QuestPreconditionProto.QuestPreconditionType getType();
+
+  public POGOProtos.Rpc.QuestPreconditionProto.ConditionCase getConditionCase();
 }

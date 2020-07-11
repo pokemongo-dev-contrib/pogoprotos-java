@@ -1520,6 +1520,14 @@ public enum RequestType
    * <code>SAVE_PLAYER_PREFERENCES = 1652;</code>
    */
   SAVE_PLAYER_PREFERENCES(1652),
+  /**
+   * <pre>
+   * Implemented
+   * </pre>
+   *
+   * <code>GET_TIMED_GROUP_CHALLENGE = 1700;</code>
+   */
+  GET_TIMED_GROUP_CHALLENGE(1700),
   UNRECOGNIZED(-1),
   ;
 
@@ -3035,6 +3043,14 @@ public enum RequestType
    * <code>SAVE_PLAYER_PREFERENCES = 1652;</code>
    */
   public static final int SAVE_PLAYER_PREFERENCES_VALUE = 1652;
+  /**
+   * <pre>
+   * Implemented
+   * </pre>
+   *
+   * <code>GET_TIMED_GROUP_CHALLENGE = 1700;</code>
+   */
+  public static final int GET_TIMED_GROUP_CHALLENGE_VALUE = 1700;
 
 
   public final int getNumber() {
@@ -3250,6 +3266,7 @@ public enum RequestType
       case 1650: return OPEN_SPONSORED_GIFT;
       case 1651: return SPONSORED_GIFT_REPORT_INTERACTION;
       case 1652: return SAVE_PLAYER_PREFERENCES;
+      case 1700: return GET_TIMED_GROUP_CHALLENGE;
       default: return null;
     }
   }

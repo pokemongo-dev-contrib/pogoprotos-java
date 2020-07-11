@@ -69,13 +69,13 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 24: {
-
-            lifetimeMaxCount_ = input.readInt32();
+            limitCase_ = 3;
+            limit_ = input.readInt32();
             break;
           }
           case 32: {
-
-            perCompetitiveCombatSeasonMaxCount_ = input.readInt32();
+            limitCase_ = 4;
+            limit_ = input.readInt32();
             break;
           }
           default: {
@@ -108,6 +108,71 @@ private static final long serialVersionUID = 0L;
     return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_LimitedEditionPokemonEncounterRewardProto_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.class, POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.Builder.class);
+  }
+
+  private int limitCase_ = 0;
+  private java.lang.Object limit_;
+  public enum LimitCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    LIFETIME_MAX_COUNT(3),
+    PER_COMPETITIVE_COMBAT_SEASON_MAX_COUNT(4),
+    LIMIT_NOT_SET(0);
+    private final int value;
+    private LimitCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static LimitCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static LimitCase forNumber(int value) {
+      switch (value) {
+        case 3: return LIFETIME_MAX_COUNT;
+        case 4: return PER_COMPETITIVE_COMBAT_SEASON_MAX_COUNT;
+        case 0: return LIMIT_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public LimitCase
+  getLimitCase() {
+    return LimitCase.forNumber(
+        limitCase_);
+  }
+
+  public static final int LIFETIME_MAX_COUNT_FIELD_NUMBER = 3;
+  /**
+   * <code>int32 lifetime_max_count = 3;</code>
+   * @return The lifetimeMaxCount.
+   */
+  public int getLifetimeMaxCount() {
+    if (limitCase_ == 3) {
+      return (java.lang.Integer) limit_;
+    }
+    return 0;
+  }
+
+  public static final int PER_COMPETITIVE_COMBAT_SEASON_MAX_COUNT_FIELD_NUMBER = 4;
+  /**
+   * <code>int32 per_competitive_combat_season_max_count = 4;</code>
+   * @return The perCompetitiveCombatSeasonMaxCount.
+   */
+  public int getPerCompetitiveCombatSeasonMaxCount() {
+    if (limitCase_ == 4) {
+      return (java.lang.Integer) limit_;
+    }
+    return 0;
   }
 
   public static final int POKEMON_FIELD_NUMBER = 1;
@@ -169,26 +234,6 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int LIFETIME_MAX_COUNT_FIELD_NUMBER = 3;
-  private int lifetimeMaxCount_;
-  /**
-   * <code>int32 lifetime_max_count = 3;</code>
-   * @return The lifetimeMaxCount.
-   */
-  public int getLifetimeMaxCount() {
-    return lifetimeMaxCount_;
-  }
-
-  public static final int PER_COMPETITIVE_COMBAT_SEASON_MAX_COUNT_FIELD_NUMBER = 4;
-  private int perCompetitiveCombatSeasonMaxCount_;
-  /**
-   * <code>int32 per_competitive_combat_season_max_count = 4;</code>
-   * @return The perCompetitiveCombatSeasonMaxCount.
-   */
-  public int getPerCompetitiveCombatSeasonMaxCount() {
-    return perCompetitiveCombatSeasonMaxCount_;
-  }
-
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -209,11 +254,13 @@ private static final long serialVersionUID = 0L;
     if (!getIdentifierBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, identifier_);
     }
-    if (lifetimeMaxCount_ != 0) {
-      output.writeInt32(3, lifetimeMaxCount_);
+    if (limitCase_ == 3) {
+      output.writeInt32(
+          3, (int)((java.lang.Integer) limit_));
     }
-    if (perCompetitiveCombatSeasonMaxCount_ != 0) {
-      output.writeInt32(4, perCompetitiveCombatSeasonMaxCount_);
+    if (limitCase_ == 4) {
+      output.writeInt32(
+          4, (int)((java.lang.Integer) limit_));
     }
     unknownFields.writeTo(output);
   }
@@ -231,13 +278,15 @@ private static final long serialVersionUID = 0L;
     if (!getIdentifierBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, identifier_);
     }
-    if (lifetimeMaxCount_ != 0) {
+    if (limitCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, lifetimeMaxCount_);
+        .computeInt32Size(
+            3, (int)((java.lang.Integer) limit_));
     }
-    if (perCompetitiveCombatSeasonMaxCount_ != 0) {
+    if (limitCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(4, perCompetitiveCombatSeasonMaxCount_);
+        .computeInt32Size(
+            4, (int)((java.lang.Integer) limit_));
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -261,10 +310,19 @@ private static final long serialVersionUID = 0L;
     }
     if (!getIdentifier()
         .equals(other.getIdentifier())) return false;
-    if (getLifetimeMaxCount()
-        != other.getLifetimeMaxCount()) return false;
-    if (getPerCompetitiveCombatSeasonMaxCount()
-        != other.getPerCompetitiveCombatSeasonMaxCount()) return false;
+    if (!getLimitCase().equals(other.getLimitCase())) return false;
+    switch (limitCase_) {
+      case 3:
+        if (getLifetimeMaxCount()
+            != other.getLifetimeMaxCount()) return false;
+        break;
+      case 4:
+        if (getPerCompetitiveCombatSeasonMaxCount()
+            != other.getPerCompetitiveCombatSeasonMaxCount()) return false;
+        break;
+      case 0:
+      default:
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -282,10 +340,18 @@ private static final long serialVersionUID = 0L;
     }
     hash = (37 * hash) + IDENTIFIER_FIELD_NUMBER;
     hash = (53 * hash) + getIdentifier().hashCode();
-    hash = (37 * hash) + LIFETIME_MAX_COUNT_FIELD_NUMBER;
-    hash = (53 * hash) + getLifetimeMaxCount();
-    hash = (37 * hash) + PER_COMPETITIVE_COMBAT_SEASON_MAX_COUNT_FIELD_NUMBER;
-    hash = (53 * hash) + getPerCompetitiveCombatSeasonMaxCount();
+    switch (limitCase_) {
+      case 3:
+        hash = (37 * hash) + LIFETIME_MAX_COUNT_FIELD_NUMBER;
+        hash = (53 * hash) + getLifetimeMaxCount();
+        break;
+      case 4:
+        hash = (37 * hash) + PER_COMPETITIVE_COMBAT_SEASON_MAX_COUNT_FIELD_NUMBER;
+        hash = (53 * hash) + getPerCompetitiveCombatSeasonMaxCount();
+        break;
+      case 0:
+      default:
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -427,10 +493,8 @@ private static final long serialVersionUID = 0L;
       }
       identifier_ = "";
 
-      lifetimeMaxCount_ = 0;
-
-      perCompetitiveCombatSeasonMaxCount_ = 0;
-
+      limitCase_ = 0;
+      limit_ = null;
       return this;
     }
 
@@ -457,14 +521,19 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto buildPartial() {
       POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto result = new POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto(this);
+      if (limitCase_ == 3) {
+        result.limit_ = limit_;
+      }
+      if (limitCase_ == 4) {
+        result.limit_ = limit_;
+      }
       if (pokemonBuilder_ == null) {
         result.pokemon_ = pokemon_;
       } else {
         result.pokemon_ = pokemonBuilder_.build();
       }
       result.identifier_ = identifier_;
-      result.lifetimeMaxCount_ = lifetimeMaxCount_;
-      result.perCompetitiveCombatSeasonMaxCount_ = perCompetitiveCombatSeasonMaxCount_;
+      result.limitCase_ = limitCase_;
       onBuilt();
       return result;
     }
@@ -520,11 +589,18 @@ private static final long serialVersionUID = 0L;
         identifier_ = other.identifier_;
         onChanged();
       }
-      if (other.getLifetimeMaxCount() != 0) {
-        setLifetimeMaxCount(other.getLifetimeMaxCount());
-      }
-      if (other.getPerCompetitiveCombatSeasonMaxCount() != 0) {
-        setPerCompetitiveCombatSeasonMaxCount(other.getPerCompetitiveCombatSeasonMaxCount());
+      switch (other.getLimitCase()) {
+        case LIFETIME_MAX_COUNT: {
+          setLifetimeMaxCount(other.getLifetimeMaxCount());
+          break;
+        }
+        case PER_COMPETITIVE_COMBAT_SEASON_MAX_COUNT: {
+          setPerCompetitiveCombatSeasonMaxCount(other.getPerCompetitiveCombatSeasonMaxCount());
+          break;
+        }
+        case LIMIT_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -551,6 +627,89 @@ private static final long serialVersionUID = 0L;
         if (parsedMessage != null) {
           mergeFrom(parsedMessage);
         }
+      }
+      return this;
+    }
+    private int limitCase_ = 0;
+    private java.lang.Object limit_;
+    public LimitCase
+        getLimitCase() {
+      return LimitCase.forNumber(
+          limitCase_);
+    }
+
+    public Builder clearLimit() {
+      limitCase_ = 0;
+      limit_ = null;
+      onChanged();
+      return this;
+    }
+
+
+    /**
+     * <code>int32 lifetime_max_count = 3;</code>
+     * @return The lifetimeMaxCount.
+     */
+    public int getLifetimeMaxCount() {
+      if (limitCase_ == 3) {
+        return (java.lang.Integer) limit_;
+      }
+      return 0;
+    }
+    /**
+     * <code>int32 lifetime_max_count = 3;</code>
+     * @param value The lifetimeMaxCount to set.
+     * @return This builder for chaining.
+     */
+    public Builder setLifetimeMaxCount(int value) {
+      limitCase_ = 3;
+      limit_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 lifetime_max_count = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearLifetimeMaxCount() {
+      if (limitCase_ == 3) {
+        limitCase_ = 0;
+        limit_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    /**
+     * <code>int32 per_competitive_combat_season_max_count = 4;</code>
+     * @return The perCompetitiveCombatSeasonMaxCount.
+     */
+    public int getPerCompetitiveCombatSeasonMaxCount() {
+      if (limitCase_ == 4) {
+        return (java.lang.Integer) limit_;
+      }
+      return 0;
+    }
+    /**
+     * <code>int32 per_competitive_combat_season_max_count = 4;</code>
+     * @param value The perCompetitiveCombatSeasonMaxCount to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPerCompetitiveCombatSeasonMaxCount(int value) {
+      limitCase_ = 4;
+      limit_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 per_competitive_combat_season_max_count = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPerCompetitiveCombatSeasonMaxCount() {
+      if (limitCase_ == 4) {
+        limitCase_ = 0;
+        limit_ = null;
+        onChanged();
       }
       return this;
     }
@@ -746,66 +905,6 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       identifier_ = value;
-      onChanged();
-      return this;
-    }
-
-    private int lifetimeMaxCount_ ;
-    /**
-     * <code>int32 lifetime_max_count = 3;</code>
-     * @return The lifetimeMaxCount.
-     */
-    public int getLifetimeMaxCount() {
-      return lifetimeMaxCount_;
-    }
-    /**
-     * <code>int32 lifetime_max_count = 3;</code>
-     * @param value The lifetimeMaxCount to set.
-     * @return This builder for chaining.
-     */
-    public Builder setLifetimeMaxCount(int value) {
-      
-      lifetimeMaxCount_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 lifetime_max_count = 3;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearLifetimeMaxCount() {
-      
-      lifetimeMaxCount_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private int perCompetitiveCombatSeasonMaxCount_ ;
-    /**
-     * <code>int32 per_competitive_combat_season_max_count = 4;</code>
-     * @return The perCompetitiveCombatSeasonMaxCount.
-     */
-    public int getPerCompetitiveCombatSeasonMaxCount() {
-      return perCompetitiveCombatSeasonMaxCount_;
-    }
-    /**
-     * <code>int32 per_competitive_combat_season_max_count = 4;</code>
-     * @param value The perCompetitiveCombatSeasonMaxCount to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPerCompetitiveCombatSeasonMaxCount(int value) {
-      
-      perCompetitiveCombatSeasonMaxCount_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 per_competitive_combat_season_max_count = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPerCompetitiveCombatSeasonMaxCount() {
-      
-      perCompetitiveCombatSeasonMaxCount_ = 0;
       onChanged();
       return this;
     }

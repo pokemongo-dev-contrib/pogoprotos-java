@@ -929,6 +929,14 @@ public enum BadgeType
    */
   BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS(5070),
   /**
+   * <code>BADGE_GOFEST_2020_TEST = 5071;</code>
+   */
+  BADGE_GOFEST_2020_TEST(5071),
+  /**
+   * <code>BADGE_GOFEST_2020_GLOBAL = 5072;</code>
+   */
+  BADGE_GOFEST_2020_GLOBAL(5072),
+  /**
    * <code>BADGE_GLOBAL_TICKETED_EVENT = 5100;</code>
    */
   BADGE_GLOBAL_TICKETED_EVENT(5100),
@@ -1896,6 +1904,14 @@ public enum BadgeType
    */
   public static final int BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS_VALUE = 5070;
   /**
+   * <code>BADGE_GOFEST_2020_TEST = 5071;</code>
+   */
+  public static final int BADGE_GOFEST_2020_TEST_VALUE = 5071;
+  /**
+   * <code>BADGE_GOFEST_2020_GLOBAL = 5072;</code>
+   */
+  public static final int BADGE_GOFEST_2020_GLOBAL_VALUE = 5072;
+  /**
    * <code>BADGE_GLOBAL_TICKETED_EVENT = 5100;</code>
    */
   public static final int BADGE_GLOBAL_TICKETED_EVENT_VALUE = 5100;
@@ -2195,6 +2211,8 @@ public enum BadgeType
       case 5068: return BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02_EARLYACCESS;
       case 5069: return BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_GENERAL;
       case 5070: return BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS;
+      case 5071: return BADGE_GOFEST_2020_TEST;
+      case 5072: return BADGE_GOFEST_2020_GLOBAL;
       case 5100: return BADGE_GLOBAL_TICKETED_EVENT;
       case 5201: return BADGE_EVENT_0001;
       case 5202: return BADGE_EVENT_0002;

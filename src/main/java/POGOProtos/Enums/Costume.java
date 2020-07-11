@@ -112,6 +112,10 @@ public enum Costume
    * <code>SINNOH_2020_NOEVOLVE = 25;</code>
    */
   SINNOH_2020_NOEVOLVE(25),
+  /**
+   * <code>HALLOWEEN_2020 = 26;</code>
+   */
+  HALLOWEEN_2020(26),
   UNRECOGNIZED(-1),
   ;
 
@@ -219,6 +223,10 @@ public enum Costume
    * <code>SINNOH_2020_NOEVOLVE = 25;</code>
    */
   public static final int SINNOH_2020_NOEVOLVE_VALUE = 25;
+  /**
+   * <code>HALLOWEEN_2020 = 26;</code>
+   */
+  public static final int HALLOWEEN_2020_VALUE = 26;
 
 
   public final int getNumber() {
@@ -271,6 +279,7 @@ public enum Costume
       case 23: return JOHTO_2020_NOEVOLVE;
       case 24: return HOENN_2020_NOEVOLVE;
       case 25: return SINNOH_2020_NOEVOLVE;
+      case 26: return HALLOWEEN_2020;
       default: return null;
     }
   }

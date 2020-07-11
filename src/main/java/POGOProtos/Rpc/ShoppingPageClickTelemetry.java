@@ -19,6 +19,7 @@ private static final long serialVersionUID = 0L;
     shoppingPageClickId_ = 0;
     shoppingPageClickSource_ = 0;
     itemSku_ = "";
+    mlBundleTrackingId_ = "";
   }
 
   @java.lang.Override
@@ -72,6 +73,12 @@ private static final long serialVersionUID = 0L;
           case 32: {
 
             hasItem_ = input.readBool();
+            break;
+          }
+          case 42: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            mlBundleTrackingId_ = s;
             break;
           }
           default: {
@@ -190,6 +197,42 @@ private static final long serialVersionUID = 0L;
     return hasItem_;
   }
 
+  public static final int ML_BUNDLE_TRACKING_ID_FIELD_NUMBER = 5;
+  private volatile java.lang.Object mlBundleTrackingId_;
+  /**
+   * <code>string ml_bundle_tracking_id = 5;</code>
+   * @return The mlBundleTrackingId.
+   */
+  public java.lang.String getMlBundleTrackingId() {
+    java.lang.Object ref = mlBundleTrackingId_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      mlBundleTrackingId_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string ml_bundle_tracking_id = 5;</code>
+   * @return The bytes for mlBundleTrackingId.
+   */
+  public com.google.protobuf.ByteString
+      getMlBundleTrackingIdBytes() {
+    java.lang.Object ref = mlBundleTrackingId_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      mlBundleTrackingId_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -216,6 +259,9 @@ private static final long serialVersionUID = 0L;
     if (hasItem_ != false) {
       output.writeBool(4, hasItem_);
     }
+    if (!getMlBundleTrackingIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, mlBundleTrackingId_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -240,6 +286,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(4, hasItem_);
     }
+    if (!getMlBundleTrackingIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, mlBundleTrackingId_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -261,6 +310,8 @@ private static final long serialVersionUID = 0L;
         .equals(other.getItemSku())) return false;
     if (getHasItem()
         != other.getHasItem()) return false;
+    if (!getMlBundleTrackingId()
+        .equals(other.getMlBundleTrackingId())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -281,6 +332,8 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + HAS_ITEM_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getHasItem());
+    hash = (37 * hash) + ML_BUNDLE_TRACKING_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getMlBundleTrackingId().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -422,6 +475,8 @@ private static final long serialVersionUID = 0L;
 
       hasItem_ = false;
 
+      mlBundleTrackingId_ = "";
+
       return this;
     }
 
@@ -452,6 +507,7 @@ private static final long serialVersionUID = 0L;
       result.shoppingPageClickSource_ = shoppingPageClickSource_;
       result.itemSku_ = itemSku_;
       result.hasItem_ = hasItem_;
+      result.mlBundleTrackingId_ = mlBundleTrackingId_;
       onBuilt();
       return result;
     }
@@ -512,6 +568,10 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getHasItem() != false) {
         setHasItem(other.getHasItem());
+      }
+      if (!other.getMlBundleTrackingId().isEmpty()) {
+        mlBundleTrackingId_ = other.mlBundleTrackingId_;
+        onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -748,6 +808,82 @@ private static final long serialVersionUID = 0L;
     public Builder clearHasItem() {
       
       hasItem_ = false;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object mlBundleTrackingId_ = "";
+    /**
+     * <code>string ml_bundle_tracking_id = 5;</code>
+     * @return The mlBundleTrackingId.
+     */
+    public java.lang.String getMlBundleTrackingId() {
+      java.lang.Object ref = mlBundleTrackingId_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        mlBundleTrackingId_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string ml_bundle_tracking_id = 5;</code>
+     * @return The bytes for mlBundleTrackingId.
+     */
+    public com.google.protobuf.ByteString
+        getMlBundleTrackingIdBytes() {
+      java.lang.Object ref = mlBundleTrackingId_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        mlBundleTrackingId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string ml_bundle_tracking_id = 5;</code>
+     * @param value The mlBundleTrackingId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setMlBundleTrackingId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      mlBundleTrackingId_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string ml_bundle_tracking_id = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearMlBundleTrackingId() {
+      
+      mlBundleTrackingId_ = getDefaultInstance().getMlBundleTrackingId();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string ml_bundle_tracking_id = 5;</code>
+     * @param value The bytes for mlBundleTrackingId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setMlBundleTrackingIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      mlBundleTrackingId_ = value;
       onChanged();
       return this;
     }

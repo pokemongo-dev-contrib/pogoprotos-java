@@ -24,7 +24,7 @@ public final class CostumeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036POGOProtos/Enums/Costume.proto\022\020POGOPr" +
-      "otos.Enums*\331\004\n\007Costume\022\021\n\rCOSTUME_UNSET\020" +
+      "otos.Enums*\355\004\n\007Costume\022\021\n\rCOSTUME_UNSET\020" +
       "\000\022\020\n\014HOLIDAY_2016\020\001\022\017\n\013ANNIVERSARY\020\002\022\030\n\024" +
       "ONE_YEAR_ANNIVERSARY\020\003\022\022\n\016HALLOWEEN_2017" +
       "\020\004\022\017\n\013SUMMER_2018\020\005\022\r\n\tFALL_2018\020\006\022\021\n\rNO" +
@@ -39,7 +39,8 @@ public final class CostumeOuterClass {
       "A\020\024\022\034\n\030NOT_FOR_RELEASE_NOEVOLVE\020\025\022\027\n\023KAN" +
       "TO_2020_NOEVOLVE\020\026\022\027\n\023JOHTO_2020_NOEVOLV" +
       "E\020\027\022\027\n\023HOENN_2020_NOEVOLVE\020\030\022\030\n\024SINNOH_2" +
-      "020_NOEVOLVE\020\031B\002P\001b\006proto3"
+      "020_NOEVOLVE\020\031\022\022\n\016HALLOWEEN_2020\020\032B\002P\001b\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

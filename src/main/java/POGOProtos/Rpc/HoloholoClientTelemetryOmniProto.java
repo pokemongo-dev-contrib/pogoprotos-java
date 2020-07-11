@@ -50,821 +50,898 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             POGOProtos.Rpc.BootTime.Builder subBuilder = null;
-            if (bootTime_ != null) {
-              subBuilder = bootTime_.toBuilder();
+            if (telemetryDataCase_ == 1) {
+              subBuilder = ((POGOProtos.Rpc.BootTime) telemetryData_).toBuilder();
             }
-            bootTime_ = input.readMessage(POGOProtos.Rpc.BootTime.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.BootTime.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(bootTime_);
-              bootTime_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.BootTime) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 1;
             break;
           }
           case 18: {
             POGOProtos.Rpc.FrameRate.Builder subBuilder = null;
-            if (frameRate_ != null) {
-              subBuilder = frameRate_.toBuilder();
+            if (telemetryDataCase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.FrameRate) telemetryData_).toBuilder();
             }
-            frameRate_ = input.readMessage(POGOProtos.Rpc.FrameRate.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.FrameRate.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(frameRate_);
-              frameRate_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.FrameRate) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 2;
             break;
           }
           case 26: {
             POGOProtos.Rpc.GenericClickTelemetry.Builder subBuilder = null;
-            if (genericClickTelemetry_ != null) {
-              subBuilder = genericClickTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.GenericClickTelemetry) telemetryData_).toBuilder();
             }
-            genericClickTelemetry_ = input.readMessage(POGOProtos.Rpc.GenericClickTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.GenericClickTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(genericClickTelemetry_);
-              genericClickTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.GenericClickTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 3;
             break;
           }
           case 34: {
             POGOProtos.Rpc.MapEventsTelemetry.Builder subBuilder = null;
-            if (mapEventsTelemetry_ != null) {
-              subBuilder = mapEventsTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 4) {
+              subBuilder = ((POGOProtos.Rpc.MapEventsTelemetry) telemetryData_).toBuilder();
             }
-            mapEventsTelemetry_ = input.readMessage(POGOProtos.Rpc.MapEventsTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.MapEventsTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(mapEventsTelemetry_);
-              mapEventsTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.MapEventsTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 4;
             break;
           }
           case 42: {
             POGOProtos.Rpc.SpinPokestopTelemetry.Builder subBuilder = null;
-            if (spinPokestopTelemetry_ != null) {
-              subBuilder = spinPokestopTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.SpinPokestopTelemetry) telemetryData_).toBuilder();
             }
-            spinPokestopTelemetry_ = input.readMessage(POGOProtos.Rpc.SpinPokestopTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.SpinPokestopTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(spinPokestopTelemetry_);
-              spinPokestopTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.SpinPokestopTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 5;
             break;
           }
           case 50: {
             POGOProtos.Rpc.ProfilePageTelemetry.Builder subBuilder = null;
-            if (profilePageTelemetry_ != null) {
-              subBuilder = profilePageTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 6) {
+              subBuilder = ((POGOProtos.Rpc.ProfilePageTelemetry) telemetryData_).toBuilder();
             }
-            profilePageTelemetry_ = input.readMessage(POGOProtos.Rpc.ProfilePageTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ProfilePageTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(profilePageTelemetry_);
-              profilePageTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ProfilePageTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 6;
             break;
           }
           case 58: {
             POGOProtos.Rpc.ShoppingPageTelemetry.Builder subBuilder = null;
-            if (shoppingPageTelemetry_ != null) {
-              subBuilder = shoppingPageTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.ShoppingPageTelemetry) telemetryData_).toBuilder();
             }
-            shoppingPageTelemetry_ = input.readMessage(POGOProtos.Rpc.ShoppingPageTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ShoppingPageTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(shoppingPageTelemetry_);
-              shoppingPageTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ShoppingPageTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 7;
             break;
           }
           case 66: {
             POGOProtos.Rpc.EncounterPokemonTelemetry.Builder subBuilder = null;
-            if (encounterPokemonTelemetry_ != null) {
-              subBuilder = encounterPokemonTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 8) {
+              subBuilder = ((POGOProtos.Rpc.EncounterPokemonTelemetry) telemetryData_).toBuilder();
             }
-            encounterPokemonTelemetry_ = input.readMessage(POGOProtos.Rpc.EncounterPokemonTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.EncounterPokemonTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(encounterPokemonTelemetry_);
-              encounterPokemonTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.EncounterPokemonTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 8;
             break;
           }
           case 74: {
             POGOProtos.Rpc.CatchPokemonTelemetry.Builder subBuilder = null;
-            if (catchPokemonTelemetry_ != null) {
-              subBuilder = catchPokemonTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 9) {
+              subBuilder = ((POGOProtos.Rpc.CatchPokemonTelemetry) telemetryData_).toBuilder();
             }
-            catchPokemonTelemetry_ = input.readMessage(POGOProtos.Rpc.CatchPokemonTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.CatchPokemonTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(catchPokemonTelemetry_);
-              catchPokemonTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CatchPokemonTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 9;
             break;
           }
           case 82: {
             POGOProtos.Rpc.DeployPokemonTelemetry.Builder subBuilder = null;
-            if (deployPokemonTelemetry_ != null) {
-              subBuilder = deployPokemonTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 10) {
+              subBuilder = ((POGOProtos.Rpc.DeployPokemonTelemetry) telemetryData_).toBuilder();
             }
-            deployPokemonTelemetry_ = input.readMessage(POGOProtos.Rpc.DeployPokemonTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.DeployPokemonTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(deployPokemonTelemetry_);
-              deployPokemonTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.DeployPokemonTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 10;
             break;
           }
           case 90: {
             POGOProtos.Rpc.FeedPokemonTelemetry.Builder subBuilder = null;
-            if (feedPokemonTelemetry_ != null) {
-              subBuilder = feedPokemonTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 11) {
+              subBuilder = ((POGOProtos.Rpc.FeedPokemonTelemetry) telemetryData_).toBuilder();
             }
-            feedPokemonTelemetry_ = input.readMessage(POGOProtos.Rpc.FeedPokemonTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.FeedPokemonTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(feedPokemonTelemetry_);
-              feedPokemonTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.FeedPokemonTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 11;
             break;
           }
           case 98: {
             POGOProtos.Rpc.EvolvePokemonTelemetry.Builder subBuilder = null;
-            if (evolvePokemonTelemetry_ != null) {
-              subBuilder = evolvePokemonTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 12) {
+              subBuilder = ((POGOProtos.Rpc.EvolvePokemonTelemetry) telemetryData_).toBuilder();
             }
-            evolvePokemonTelemetry_ = input.readMessage(POGOProtos.Rpc.EvolvePokemonTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.EvolvePokemonTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(evolvePokemonTelemetry_);
-              evolvePokemonTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.EvolvePokemonTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 12;
             break;
           }
           case 106: {
             POGOProtos.Rpc.ReleasePokemonTelemetry.Builder subBuilder = null;
-            if (releasePokemonTelemetry_ != null) {
-              subBuilder = releasePokemonTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 13) {
+              subBuilder = ((POGOProtos.Rpc.ReleasePokemonTelemetry) telemetryData_).toBuilder();
             }
-            releasePokemonTelemetry_ = input.readMessage(POGOProtos.Rpc.ReleasePokemonTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ReleasePokemonTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(releasePokemonTelemetry_);
-              releasePokemonTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ReleasePokemonTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 13;
             break;
           }
           case 114: {
             POGOProtos.Rpc.NicknamePokemonTelemetry.Builder subBuilder = null;
-            if (nicknamePokemonTelemetry_ != null) {
-              subBuilder = nicknamePokemonTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 14) {
+              subBuilder = ((POGOProtos.Rpc.NicknamePokemonTelemetry) telemetryData_).toBuilder();
             }
-            nicknamePokemonTelemetry_ = input.readMessage(POGOProtos.Rpc.NicknamePokemonTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.NicknamePokemonTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(nicknamePokemonTelemetry_);
-              nicknamePokemonTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.NicknamePokemonTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 14;
             break;
           }
           case 122: {
             POGOProtos.Rpc.NewsPageTelemetry.Builder subBuilder = null;
-            if (newsPageTelemetry_ != null) {
-              subBuilder = newsPageTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 15) {
+              subBuilder = ((POGOProtos.Rpc.NewsPageTelemetry) telemetryData_).toBuilder();
             }
-            newsPageTelemetry_ = input.readMessage(POGOProtos.Rpc.NewsPageTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.NewsPageTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(newsPageTelemetry_);
-              newsPageTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.NewsPageTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 15;
             break;
           }
           case 130: {
             POGOProtos.Rpc.ItemTelemetry.Builder subBuilder = null;
-            if (itemTelemetry_ != null) {
-              subBuilder = itemTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 16) {
+              subBuilder = ((POGOProtos.Rpc.ItemTelemetry) telemetryData_).toBuilder();
             }
-            itemTelemetry_ = input.readMessage(POGOProtos.Rpc.ItemTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ItemTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(itemTelemetry_);
-              itemTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ItemTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 16;
             break;
           }
           case 138: {
             POGOProtos.Rpc.BattlePartyTelemetry.Builder subBuilder = null;
-            if (battlePartyTelemetry_ != null) {
-              subBuilder = battlePartyTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 17) {
+              subBuilder = ((POGOProtos.Rpc.BattlePartyTelemetry) telemetryData_).toBuilder();
             }
-            battlePartyTelemetry_ = input.readMessage(POGOProtos.Rpc.BattlePartyTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.BattlePartyTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(battlePartyTelemetry_);
-              battlePartyTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.BattlePartyTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 17;
             break;
           }
           case 146: {
             POGOProtos.Rpc.PasscodeRedeemTelemetry.Builder subBuilder = null;
-            if (passcodeRedeemTelemetry_ != null) {
-              subBuilder = passcodeRedeemTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 18) {
+              subBuilder = ((POGOProtos.Rpc.PasscodeRedeemTelemetry) telemetryData_).toBuilder();
             }
-            passcodeRedeemTelemetry_ = input.readMessage(POGOProtos.Rpc.PasscodeRedeemTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PasscodeRedeemTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(passcodeRedeemTelemetry_);
-              passcodeRedeemTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PasscodeRedeemTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 18;
             break;
           }
           case 154: {
             POGOProtos.Rpc.LinkLoginTelemetry.Builder subBuilder = null;
-            if (linkLoginTelemetry_ != null) {
-              subBuilder = linkLoginTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 19) {
+              subBuilder = ((POGOProtos.Rpc.LinkLoginTelemetry) telemetryData_).toBuilder();
             }
-            linkLoginTelemetry_ = input.readMessage(POGOProtos.Rpc.LinkLoginTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.LinkLoginTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(linkLoginTelemetry_);
-              linkLoginTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.LinkLoginTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 19;
             break;
           }
           case 162: {
             POGOProtos.Rpc.RaidTelemetry.Builder subBuilder = null;
-            if (raidTelemetry_ != null) {
-              subBuilder = raidTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 20) {
+              subBuilder = ((POGOProtos.Rpc.RaidTelemetry) telemetryData_).toBuilder();
             }
-            raidTelemetry_ = input.readMessage(POGOProtos.Rpc.RaidTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.RaidTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(raidTelemetry_);
-              raidTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.RaidTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 20;
             break;
           }
           case 170: {
             POGOProtos.Rpc.PushNotificationTelemetry.Builder subBuilder = null;
-            if (pushNotificationTelemetry_ != null) {
-              subBuilder = pushNotificationTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 21) {
+              subBuilder = ((POGOProtos.Rpc.PushNotificationTelemetry) telemetryData_).toBuilder();
             }
-            pushNotificationTelemetry_ = input.readMessage(POGOProtos.Rpc.PushNotificationTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PushNotificationTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(pushNotificationTelemetry_);
-              pushNotificationTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PushNotificationTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 21;
             break;
           }
           case 178: {
             POGOProtos.Rpc.AvatarCustomizationTelemetry.Builder subBuilder = null;
-            if (avatarCustomizationTelemetry_ != null) {
-              subBuilder = avatarCustomizationTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 22) {
+              subBuilder = ((POGOProtos.Rpc.AvatarCustomizationTelemetry) telemetryData_).toBuilder();
             }
-            avatarCustomizationTelemetry_ = input.readMessage(POGOProtos.Rpc.AvatarCustomizationTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.AvatarCustomizationTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(avatarCustomizationTelemetry_);
-              avatarCustomizationTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.AvatarCustomizationTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 22;
             break;
           }
           case 186: {
             POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.Builder subBuilder = null;
-            if (readPointOfInterestDescriptionTelemetry_ != null) {
-              subBuilder = readPointOfInterestDescriptionTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 23) {
+              subBuilder = ((POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry) telemetryData_).toBuilder();
             }
-            readPointOfInterestDescriptionTelemetry_ = input.readMessage(POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(readPointOfInterestDescriptionTelemetry_);
-              readPointOfInterestDescriptionTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 23;
             break;
           }
           case 194: {
             POGOProtos.Rpc.WebTelemetry.Builder subBuilder = null;
-            if (webTelemetry_ != null) {
-              subBuilder = webTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 24) {
+              subBuilder = ((POGOProtos.Rpc.WebTelemetry) telemetryData_).toBuilder();
             }
-            webTelemetry_ = input.readMessage(POGOProtos.Rpc.WebTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.WebTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(webTelemetry_);
-              webTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WebTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 24;
             break;
           }
           case 202: {
             POGOProtos.Rpc.ChangeArTelemetry.Builder subBuilder = null;
-            if (changeArTelemetry_ != null) {
-              subBuilder = changeArTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 25) {
+              subBuilder = ((POGOProtos.Rpc.ChangeArTelemetry) telemetryData_).toBuilder();
             }
-            changeArTelemetry_ = input.readMessage(POGOProtos.Rpc.ChangeArTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ChangeArTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(changeArTelemetry_);
-              changeArTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ChangeArTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 25;
             break;
           }
           case 210: {
             POGOProtos.Rpc.WeatherDetailClickTelemetry.Builder subBuilder = null;
-            if (weatherDetailClickTelemetry_ != null) {
-              subBuilder = weatherDetailClickTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 26) {
+              subBuilder = ((POGOProtos.Rpc.WeatherDetailClickTelemetry) telemetryData_).toBuilder();
             }
-            weatherDetailClickTelemetry_ = input.readMessage(POGOProtos.Rpc.WeatherDetailClickTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.WeatherDetailClickTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(weatherDetailClickTelemetry_);
-              weatherDetailClickTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WeatherDetailClickTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 26;
             break;
           }
           case 218: {
             POGOProtos.Rpc.UserIssueWeatherReport.Builder subBuilder = null;
-            if (userIssueWeatherReport_ != null) {
-              subBuilder = userIssueWeatherReport_.toBuilder();
+            if (telemetryDataCase_ == 27) {
+              subBuilder = ((POGOProtos.Rpc.UserIssueWeatherReport) telemetryData_).toBuilder();
             }
-            userIssueWeatherReport_ = input.readMessage(POGOProtos.Rpc.UserIssueWeatherReport.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.UserIssueWeatherReport.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(userIssueWeatherReport_);
-              userIssueWeatherReport_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.UserIssueWeatherReport) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 27;
             break;
           }
           case 226: {
             POGOProtos.Rpc.PokemonInventoryTelemetry.Builder subBuilder = null;
-            if (pokemonInventoryTelemetry_ != null) {
-              subBuilder = pokemonInventoryTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 28) {
+              subBuilder = ((POGOProtos.Rpc.PokemonInventoryTelemetry) telemetryData_).toBuilder();
             }
-            pokemonInventoryTelemetry_ = input.readMessage(POGOProtos.Rpc.PokemonInventoryTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PokemonInventoryTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(pokemonInventoryTelemetry_);
-              pokemonInventoryTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PokemonInventoryTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 28;
             break;
           }
           case 234: {
             POGOProtos.Rpc.SocialTelemetry.Builder subBuilder = null;
-            if (socialTelemetry_ != null) {
-              subBuilder = socialTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 29) {
+              subBuilder = ((POGOProtos.Rpc.SocialTelemetry) telemetryData_).toBuilder();
             }
-            socialTelemetry_ = input.readMessage(POGOProtos.Rpc.SocialTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.SocialTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(socialTelemetry_);
-              socialTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.SocialTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 29;
             break;
           }
           case 242: {
             POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.Builder subBuilder = null;
-            if (checkEncounterInfoTelemetry_ != null) {
-              subBuilder = checkEncounterInfoTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 30) {
+              subBuilder = ((POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry) telemetryData_).toBuilder();
             }
-            checkEncounterInfoTelemetry_ = input.readMessage(POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(checkEncounterInfoTelemetry_);
-              checkEncounterInfoTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 30;
             break;
           }
           case 250: {
             POGOProtos.Rpc.PokemonGoPlusTelemetry.Builder subBuilder = null;
-            if (pokemonGoPlusTelemetry_ != null) {
-              subBuilder = pokemonGoPlusTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 31) {
+              subBuilder = ((POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_).toBuilder();
             }
-            pokemonGoPlusTelemetry_ = input.readMessage(POGOProtos.Rpc.PokemonGoPlusTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PokemonGoPlusTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(pokemonGoPlusTelemetry_);
-              pokemonGoPlusTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 31;
             break;
           }
           case 258: {
             POGOProtos.Rpc.RpcResponseTelemetry.Builder subBuilder = null;
-            if (rpcTimingTelemetry_ != null) {
-              subBuilder = rpcTimingTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 32) {
+              subBuilder = ((POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_).toBuilder();
             }
-            rpcTimingTelemetry_ = input.readMessage(POGOProtos.Rpc.RpcResponseTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.RpcResponseTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(rpcTimingTelemetry_);
-              rpcTimingTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 32;
             break;
           }
           case 266: {
             POGOProtos.Rpc.SocialGiftCountTelemetry.Builder subBuilder = null;
-            if (socialGiftCountTelemetry_ != null) {
-              subBuilder = socialGiftCountTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 33) {
+              subBuilder = ((POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_).toBuilder();
             }
-            socialGiftCountTelemetry_ = input.readMessage(POGOProtos.Rpc.SocialGiftCountTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.SocialGiftCountTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(socialGiftCountTelemetry_);
-              socialGiftCountTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 33;
             break;
           }
           case 274: {
             POGOProtos.Rpc.AssetBundleDownloadTelemetry.Builder subBuilder = null;
-            if (assetBundleTelemetry_ != null) {
-              subBuilder = assetBundleTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 34) {
+              subBuilder = ((POGOProtos.Rpc.AssetBundleDownloadTelemetry) telemetryData_).toBuilder();
             }
-            assetBundleTelemetry_ = input.readMessage(POGOProtos.Rpc.AssetBundleDownloadTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.AssetBundleDownloadTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(assetBundleTelemetry_);
-              assetBundleTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.AssetBundleDownloadTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 34;
             break;
           }
           case 282: {
             POGOProtos.Rpc.AssetPoiDownloadTelemetry.Builder subBuilder = null;
-            if (assetPoiDownloadTelemetry_ != null) {
-              subBuilder = assetPoiDownloadTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 35) {
+              subBuilder = ((POGOProtos.Rpc.AssetPoiDownloadTelemetry) telemetryData_).toBuilder();
             }
-            assetPoiDownloadTelemetry_ = input.readMessage(POGOProtos.Rpc.AssetPoiDownloadTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.AssetPoiDownloadTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(assetPoiDownloadTelemetry_);
-              assetPoiDownloadTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.AssetPoiDownloadTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 35;
             break;
           }
           case 290: {
             POGOProtos.Rpc.AssetStreamDownloadTelemetry.Builder subBuilder = null;
-            if (assetStreamDownloadTelemetry_ != null) {
-              subBuilder = assetStreamDownloadTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 36) {
+              subBuilder = ((POGOProtos.Rpc.AssetStreamDownloadTelemetry) telemetryData_).toBuilder();
             }
-            assetStreamDownloadTelemetry_ = input.readMessage(POGOProtos.Rpc.AssetStreamDownloadTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.AssetStreamDownloadTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(assetStreamDownloadTelemetry_);
-              assetStreamDownloadTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.AssetStreamDownloadTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 36;
             break;
           }
           case 298: {
             POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.Builder subBuilder = null;
-            if (assetStreamCacheCulledTelemetry_ != null) {
-              subBuilder = assetStreamCacheCulledTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 37) {
+              subBuilder = ((POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_).toBuilder();
             }
-            assetStreamCacheCulledTelemetry_ = input.readMessage(POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(assetStreamCacheCulledTelemetry_);
-              assetStreamCacheCulledTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 37;
             break;
           }
           case 306: {
             POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder subBuilder = null;
-            if (rpcSocketTimingTelemetry_ != null) {
-              subBuilder = rpcSocketTimingTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 38) {
+              subBuilder = ((POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_).toBuilder();
             }
-            rpcSocketTimingTelemetry_ = input.readMessage(POGOProtos.Rpc.RpcSocketResponseTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.RpcSocketResponseTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(rpcSocketTimingTelemetry_);
-              rpcSocketTimingTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 38;
             break;
           }
           case 314: {
             POGOProtos.Rpc.PermissionsFlowTelemetry.Builder subBuilder = null;
-            if (permissionsFlow_ != null) {
-              subBuilder = permissionsFlow_.toBuilder();
+            if (telemetryDataCase_ == 39) {
+              subBuilder = ((POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_).toBuilder();
             }
-            permissionsFlow_ = input.readMessage(POGOProtos.Rpc.PermissionsFlowTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PermissionsFlowTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(permissionsFlow_);
-              permissionsFlow_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 39;
             break;
           }
           case 322: {
             POGOProtos.Rpc.DeviceServiceToggleTelemetry.Builder subBuilder = null;
-            if (deviceServiceToggle_ != null) {
-              subBuilder = deviceServiceToggle_.toBuilder();
+            if (telemetryDataCase_ == 40) {
+              subBuilder = ((POGOProtos.Rpc.DeviceServiceToggleTelemetry) telemetryData_).toBuilder();
             }
-            deviceServiceToggle_ = input.readMessage(POGOProtos.Rpc.DeviceServiceToggleTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.DeviceServiceToggleTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(deviceServiceToggle_);
-              deviceServiceToggle_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.DeviceServiceToggleTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 40;
             break;
           }
           case 330: {
             POGOProtos.Rpc.BootTelemetry.Builder subBuilder = null;
-            if (bootTelemetry_ != null) {
-              subBuilder = bootTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 41) {
+              subBuilder = ((POGOProtos.Rpc.BootTelemetry) telemetryData_).toBuilder();
             }
-            bootTelemetry_ = input.readMessage(POGOProtos.Rpc.BootTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.BootTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(bootTelemetry_);
-              bootTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.BootTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 41;
             break;
           }
           case 338: {
             POGOProtos.Rpc.UserAttributesProto.Builder subBuilder = null;
-            if (userAttributes_ != null) {
-              subBuilder = userAttributes_.toBuilder();
+            if (telemetryDataCase_ == 42) {
+              subBuilder = ((POGOProtos.Rpc.UserAttributesProto) telemetryData_).toBuilder();
             }
-            userAttributes_ = input.readMessage(POGOProtos.Rpc.UserAttributesProto.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.UserAttributesProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(userAttributes_);
-              userAttributes_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.UserAttributesProto) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 42;
             break;
           }
           case 346: {
             POGOProtos.Rpc.OnboardingTelemetry.Builder subBuilder = null;
-            if (onboardingTelemetry_ != null) {
-              subBuilder = onboardingTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 43) {
+              subBuilder = ((POGOProtos.Rpc.OnboardingTelemetry) telemetryData_).toBuilder();
             }
-            onboardingTelemetry_ = input.readMessage(POGOProtos.Rpc.OnboardingTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.OnboardingTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(onboardingTelemetry_);
-              onboardingTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.OnboardingTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 43;
             break;
           }
           case 354: {
             POGOProtos.Rpc.LoginActionTelemetry.Builder subBuilder = null;
-            if (loginActionTelemetry_ != null) {
-              subBuilder = loginActionTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 44) {
+              subBuilder = ((POGOProtos.Rpc.LoginActionTelemetry) telemetryData_).toBuilder();
             }
-            loginActionTelemetry_ = input.readMessage(POGOProtos.Rpc.LoginActionTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.LoginActionTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(loginActionTelemetry_);
-              loginActionTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.LoginActionTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 44;
             break;
           }
           case 362: {
             POGOProtos.Rpc.ArPhotoSessionProto.Builder subBuilder = null;
-            if (arPhotoSessionTelemetry_ != null) {
-              subBuilder = arPhotoSessionTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 45) {
+              subBuilder = ((POGOProtos.Rpc.ArPhotoSessionProto) telemetryData_).toBuilder();
             }
-            arPhotoSessionTelemetry_ = input.readMessage(POGOProtos.Rpc.ArPhotoSessionProto.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ArPhotoSessionProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(arPhotoSessionTelemetry_);
-              arPhotoSessionTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ArPhotoSessionProto) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 45;
             break;
           }
           case 370: {
             POGOProtos.Rpc.InvasionTelemetry.Builder subBuilder = null;
-            if (invasionTelemetry_ != null) {
-              subBuilder = invasionTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 46) {
+              subBuilder = ((POGOProtos.Rpc.InvasionTelemetry) telemetryData_).toBuilder();
             }
-            invasionTelemetry_ = input.readMessage(POGOProtos.Rpc.InvasionTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.InvasionTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(invasionTelemetry_);
-              invasionTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.InvasionTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 46;
             break;
           }
           case 378: {
             POGOProtos.Rpc.CombatMinigameTelemetry.Builder subBuilder = null;
-            if (combatMinigameTelemetry_ != null) {
-              subBuilder = combatMinigameTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 47) {
+              subBuilder = ((POGOProtos.Rpc.CombatMinigameTelemetry) telemetryData_).toBuilder();
             }
-            combatMinigameTelemetry_ = input.readMessage(POGOProtos.Rpc.CombatMinigameTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.CombatMinigameTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(combatMinigameTelemetry_);
-              combatMinigameTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CombatMinigameTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 47;
             break;
           }
           case 386: {
             POGOProtos.Rpc.LeavePointOfInterestTelemetry.Builder subBuilder = null;
-            if (leavePointOfInterestTelemetry_ != null) {
-              subBuilder = leavePointOfInterestTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 48) {
+              subBuilder = ((POGOProtos.Rpc.LeavePointOfInterestTelemetry) telemetryData_).toBuilder();
             }
-            leavePointOfInterestTelemetry_ = input.readMessage(POGOProtos.Rpc.LeavePointOfInterestTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.LeavePointOfInterestTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(leavePointOfInterestTelemetry_);
-              leavePointOfInterestTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.LeavePointOfInterestTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 48;
             break;
           }
           case 394: {
             POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.Builder subBuilder = null;
-            if (viewPointOfInterestImageTelemetry_ != null) {
-              subBuilder = viewPointOfInterestImageTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 49) {
+              subBuilder = ((POGOProtos.Rpc.ViewPointOfInterestImageTelemetry) telemetryData_).toBuilder();
             }
-            viewPointOfInterestImageTelemetry_ = input.readMessage(POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(viewPointOfInterestImageTelemetry_);
-              viewPointOfInterestImageTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ViewPointOfInterestImageTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 49;
             break;
           }
           case 402: {
             POGOProtos.Rpc.CombatHubEntranceTelemetry.Builder subBuilder = null;
-            if (combatHubEntranceTelemetry_ != null) {
-              subBuilder = combatHubEntranceTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 50) {
+              subBuilder = ((POGOProtos.Rpc.CombatHubEntranceTelemetry) telemetryData_).toBuilder();
             }
-            combatHubEntranceTelemetry_ = input.readMessage(POGOProtos.Rpc.CombatHubEntranceTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.CombatHubEntranceTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(combatHubEntranceTelemetry_);
-              combatHubEntranceTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CombatHubEntranceTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 50;
             break;
           }
           case 410: {
             POGOProtos.Rpc.LeaveInteractionRangeTelemetry.Builder subBuilder = null;
-            if (leaveInteractionRangeTelemetry_ != null) {
-              subBuilder = leaveInteractionRangeTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 51) {
+              subBuilder = ((POGOProtos.Rpc.LeaveInteractionRangeTelemetry) telemetryData_).toBuilder();
             }
-            leaveInteractionRangeTelemetry_ = input.readMessage(POGOProtos.Rpc.LeaveInteractionRangeTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.LeaveInteractionRangeTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(leaveInteractionRangeTelemetry_);
-              leaveInteractionRangeTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.LeaveInteractionRangeTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 51;
             break;
           }
           case 418: {
             POGOProtos.Rpc.ShoppingPageClickTelemetry.Builder subBuilder = null;
-            if (shoppingPageClickTelemetry_ != null) {
-              subBuilder = shoppingPageClickTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 52) {
+              subBuilder = ((POGOProtos.Rpc.ShoppingPageClickTelemetry) telemetryData_).toBuilder();
             }
-            shoppingPageClickTelemetry_ = input.readMessage(POGOProtos.Rpc.ShoppingPageClickTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ShoppingPageClickTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(shoppingPageClickTelemetry_);
-              shoppingPageClickTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ShoppingPageClickTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 52;
             break;
           }
           case 426: {
             POGOProtos.Rpc.ShoppingPageScrollTelemetry.Builder subBuilder = null;
-            if (shoppingPageScrollTelemetry_ != null) {
-              subBuilder = shoppingPageScrollTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 53) {
+              subBuilder = ((POGOProtos.Rpc.ShoppingPageScrollTelemetry) telemetryData_).toBuilder();
             }
-            shoppingPageScrollTelemetry_ = input.readMessage(POGOProtos.Rpc.ShoppingPageScrollTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ShoppingPageScrollTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(shoppingPageScrollTelemetry_);
-              shoppingPageScrollTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ShoppingPageScrollTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 53;
             break;
           }
           case 434: {
             POGOProtos.Rpc.DeviceSpecificationsTelemetry.Builder subBuilder = null;
-            if (deviceSpecificationsTelemetry_ != null) {
-              subBuilder = deviceSpecificationsTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 54) {
+              subBuilder = ((POGOProtos.Rpc.DeviceSpecificationsTelemetry) telemetryData_).toBuilder();
             }
-            deviceSpecificationsTelemetry_ = input.readMessage(POGOProtos.Rpc.DeviceSpecificationsTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.DeviceSpecificationsTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(deviceSpecificationsTelemetry_);
-              deviceSpecificationsTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.DeviceSpecificationsTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 54;
             break;
           }
           case 442: {
             POGOProtos.Rpc.ScreenResolutionTelemetry.Builder subBuilder = null;
-            if (screenResolutionTelemetry_ != null) {
-              subBuilder = screenResolutionTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 55) {
+              subBuilder = ((POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_).toBuilder();
             }
-            screenResolutionTelemetry_ = input.readMessage(POGOProtos.Rpc.ScreenResolutionTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ScreenResolutionTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(screenResolutionTelemetry_);
-              screenResolutionTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 55;
             break;
           }
           case 450: {
             POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder subBuilder = null;
-            if (arBuddyMultiplayerSessionTelemetry_ != null) {
-              subBuilder = arBuddyMultiplayerSessionTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 56) {
+              subBuilder = ((POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_).toBuilder();
             }
-            arBuddyMultiplayerSessionTelemetry_ = input.readMessage(POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(arBuddyMultiplayerSessionTelemetry_);
-              arBuddyMultiplayerSessionTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 56;
             break;
           }
           case 458: {
             POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder subBuilder = null;
-            if (buddyMultiplayerConnectionFailedTelemetry_ != null) {
-              subBuilder = buddyMultiplayerConnectionFailedTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 57) {
+              subBuilder = ((POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_).toBuilder();
             }
-            buddyMultiplayerConnectionFailedTelemetry_ = input.readMessage(POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(buddyMultiplayerConnectionFailedTelemetry_);
-              buddyMultiplayerConnectionFailedTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 57;
             break;
           }
           case 466: {
             POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder subBuilder = null;
-            if (buddyMultiplayerConnectionSucceededTelemetry_ != null) {
-              subBuilder = buddyMultiplayerConnectionSucceededTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 58) {
+              subBuilder = ((POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_).toBuilder();
             }
-            buddyMultiplayerConnectionSucceededTelemetry_ = input.readMessage(POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(buddyMultiplayerConnectionSucceededTelemetry_);
-              buddyMultiplayerConnectionSucceededTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 58;
             break;
           }
           case 474: {
             POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder subBuilder = null;
-            if (buddyMultiplayerTimeToGetSessionTelemetry_ != null) {
-              subBuilder = buddyMultiplayerTimeToGetSessionTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 59) {
+              subBuilder = ((POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_).toBuilder();
             }
-            buddyMultiplayerTimeToGetSessionTelemetry_ = input.readMessage(POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(buddyMultiplayerTimeToGetSessionTelemetry_);
-              buddyMultiplayerTimeToGetSessionTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 59;
             break;
           }
           case 482: {
             POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.Builder subBuilder = null;
-            if (playerHudNotificationClickTelemetry_ != null) {
-              subBuilder = playerHudNotificationClickTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 60) {
+              subBuilder = ((POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_).toBuilder();
             }
-            playerHudNotificationClickTelemetry_ = input.readMessage(POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(playerHudNotificationClickTelemetry_);
-              playerHudNotificationClickTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 60;
             break;
           }
           case 490: {
             POGOProtos.Rpc.MonodepthDownloadTelemetry.Builder subBuilder = null;
-            if (monodepthDownloadTelemetry_ != null) {
-              subBuilder = monodepthDownloadTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 61) {
+              subBuilder = ((POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_).toBuilder();
             }
-            monodepthDownloadTelemetry_ = input.readMessage(POGOProtos.Rpc.MonodepthDownloadTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.MonodepthDownloadTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(monodepthDownloadTelemetry_);
-              monodepthDownloadTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 61;
             break;
           }
           case 498: {
             POGOProtos.Rpc.ArMappingTelemetryProto.Builder subBuilder = null;
-            if (arMappingTelemetry_ != null) {
-              subBuilder = arMappingTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 62) {
+              subBuilder = ((POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_).toBuilder();
             }
-            arMappingTelemetry_ = input.readMessage(POGOProtos.Rpc.ArMappingTelemetryProto.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.ArMappingTelemetryProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(arMappingTelemetry_);
-              arMappingTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 62;
             break;
           }
           case 506: {
             POGOProtos.Rpc.RemoteRaidTelemetry.Builder subBuilder = null;
-            if (remoteRaidTelemetry_ != null) {
-              subBuilder = remoteRaidTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 63) {
+              subBuilder = ((POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_).toBuilder();
             }
-            remoteRaidTelemetry_ = input.readMessage(POGOProtos.Rpc.RemoteRaidTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.RemoteRaidTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(remoteRaidTelemetry_);
-              remoteRaidTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 63;
+            break;
+          }
+          case 514: {
+            POGOProtos.Rpc.DeviceOSTelemetry.Builder subBuilder = null;
+            if (telemetryDataCase_ == 64) {
+              subBuilder = ((POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_).toBuilder();
+            }
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.DeviceOSTelemetry.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
+            }
+            telemetryDataCase_ = 64;
             break;
           }
           case 8010: {
@@ -925,1453 +1002,1961 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.HoloholoClientTelemetryOmniProto.class, POGOProtos.Rpc.HoloholoClientTelemetryOmniProto.Builder.class);
   }
 
+  private int telemetryDataCase_ = 0;
+  private java.lang.Object telemetryData_;
+  public enum TelemetryDataCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    BOOT_TIME(1),
+    FRAME_RATE(2),
+    GENERIC_CLICK_TELEMETRY(3),
+    MAP_EVENTS_TELEMETRY(4),
+    SPIN_POKESTOP_TELEMETRY(5),
+    PROFILE_PAGE_TELEMETRY(6),
+    SHOPPING_PAGE_TELEMETRY(7),
+    ENCOUNTER_POKEMON_TELEMETRY(8),
+    CATCH_POKEMON_TELEMETRY(9),
+    DEPLOY_POKEMON_TELEMETRY(10),
+    FEED_POKEMON_TELEMETRY(11),
+    EVOLVE_POKEMON_TELEMETRY(12),
+    RELEASE_POKEMON_TELEMETRY(13),
+    NICKNAME_POKEMON_TELEMETRY(14),
+    NEWS_PAGE_TELEMETRY(15),
+    ITEM_TELEMETRY(16),
+    BATTLE_PARTY_TELEMETRY(17),
+    PASSCODE_REDEEM_TELEMETRY(18),
+    LINK_LOGIN_TELEMETRY(19),
+    RAID_TELEMETRY(20),
+    PUSH_NOTIFICATION_TELEMETRY(21),
+    AVATAR_CUSTOMIZATION_TELEMETRY(22),
+    READ_POINT_OF_INTEREST_DESCRIPTION_TELEMETRY(23),
+    WEB_TELEMETRY(24),
+    CHANGE_AR_TELEMETRY(25),
+    WEATHER_DETAIL_CLICK_TELEMETRY(26),
+    USER_ISSUE_WEATHER_REPORT(27),
+    POKEMON_INVENTORY_TELEMETRY(28),
+    SOCIAL_TELEMETRY(29),
+    CHECK_ENCOUNTER_INFO_TELEMETRY(30),
+    POKEMON_GO_PLUS_TELEMETRY(31),
+    RPC_TIMING_TELEMETRY(32),
+    SOCIAL_GIFT_COUNT_TELEMETRY(33),
+    ASSET_BUNDLE_TELEMETRY(34),
+    ASSET_POI_DOWNLOAD_TELEMETRY(35),
+    ASSET_STREAM_DOWNLOAD_TELEMETRY(36),
+    ASSET_STREAM_CACHE_CULLED_TELEMETRY(37),
+    RPC_SOCKET_TIMING_TELEMETRY(38),
+    PERMISSIONS_FLOW(39),
+    DEVICE_SERVICE_TOGGLE(40),
+    BOOT_TELEMETRY(41),
+    USER_ATTRIBUTES(42),
+    ONBOARDING_TELEMETRY(43),
+    LOGIN_ACTION_TELEMETRY(44),
+    AR_PHOTO_SESSION_TELEMETRY(45),
+    INVASION_TELEMETRY(46),
+    COMBAT_MINIGAME_TELEMETRY(47),
+    LEAVE_POINT_OF_INTEREST_TELEMETRY(48),
+    VIEW_POINT_OF_INTEREST_IMAGE_TELEMETRY(49),
+    COMBAT_HUB_ENTRANCE_TELEMETRY(50),
+    LEAVE_INTERACTION_RANGE_TELEMETRY(51),
+    SHOPPING_PAGE_CLICK_TELEMETRY(52),
+    SHOPPING_PAGE_SCROLL_TELEMETRY(53),
+    DEVICE_SPECIFICATIONS_TELEMETRY(54),
+    SCREEN_RESOLUTION_TELEMETRY(55),
+    AR_BUDDY_MULTIPLAYER_SESSION_TELEMETRY(56),
+    BUDDY_MULTIPLAYER_CONNECTION_FAILED_TELEMETRY(57),
+    BUDDY_MULTIPLAYER_CONNECTION_SUCCEEDED_TELEMETRY(58),
+    BUDDY_MULTIPLAYER_TIME_TO_GET_SESSION_TELEMETRY(59),
+    PLAYER_HUD_NOTIFICATION_CLICK_TELEMETRY(60),
+    MONODEPTH_DOWNLOAD_TELEMETRY(61),
+    AR_MAPPING_TELEMETRY(62),
+    REMOTE_RAID_TELEMETRY(63),
+    DEVICE_OS_TELEMETRY(64),
+    TELEMETRYDATA_NOT_SET(0);
+    private final int value;
+    private TelemetryDataCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static TelemetryDataCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static TelemetryDataCase forNumber(int value) {
+      switch (value) {
+        case 1: return BOOT_TIME;
+        case 2: return FRAME_RATE;
+        case 3: return GENERIC_CLICK_TELEMETRY;
+        case 4: return MAP_EVENTS_TELEMETRY;
+        case 5: return SPIN_POKESTOP_TELEMETRY;
+        case 6: return PROFILE_PAGE_TELEMETRY;
+        case 7: return SHOPPING_PAGE_TELEMETRY;
+        case 8: return ENCOUNTER_POKEMON_TELEMETRY;
+        case 9: return CATCH_POKEMON_TELEMETRY;
+        case 10: return DEPLOY_POKEMON_TELEMETRY;
+        case 11: return FEED_POKEMON_TELEMETRY;
+        case 12: return EVOLVE_POKEMON_TELEMETRY;
+        case 13: return RELEASE_POKEMON_TELEMETRY;
+        case 14: return NICKNAME_POKEMON_TELEMETRY;
+        case 15: return NEWS_PAGE_TELEMETRY;
+        case 16: return ITEM_TELEMETRY;
+        case 17: return BATTLE_PARTY_TELEMETRY;
+        case 18: return PASSCODE_REDEEM_TELEMETRY;
+        case 19: return LINK_LOGIN_TELEMETRY;
+        case 20: return RAID_TELEMETRY;
+        case 21: return PUSH_NOTIFICATION_TELEMETRY;
+        case 22: return AVATAR_CUSTOMIZATION_TELEMETRY;
+        case 23: return READ_POINT_OF_INTEREST_DESCRIPTION_TELEMETRY;
+        case 24: return WEB_TELEMETRY;
+        case 25: return CHANGE_AR_TELEMETRY;
+        case 26: return WEATHER_DETAIL_CLICK_TELEMETRY;
+        case 27: return USER_ISSUE_WEATHER_REPORT;
+        case 28: return POKEMON_INVENTORY_TELEMETRY;
+        case 29: return SOCIAL_TELEMETRY;
+        case 30: return CHECK_ENCOUNTER_INFO_TELEMETRY;
+        case 31: return POKEMON_GO_PLUS_TELEMETRY;
+        case 32: return RPC_TIMING_TELEMETRY;
+        case 33: return SOCIAL_GIFT_COUNT_TELEMETRY;
+        case 34: return ASSET_BUNDLE_TELEMETRY;
+        case 35: return ASSET_POI_DOWNLOAD_TELEMETRY;
+        case 36: return ASSET_STREAM_DOWNLOAD_TELEMETRY;
+        case 37: return ASSET_STREAM_CACHE_CULLED_TELEMETRY;
+        case 38: return RPC_SOCKET_TIMING_TELEMETRY;
+        case 39: return PERMISSIONS_FLOW;
+        case 40: return DEVICE_SERVICE_TOGGLE;
+        case 41: return BOOT_TELEMETRY;
+        case 42: return USER_ATTRIBUTES;
+        case 43: return ONBOARDING_TELEMETRY;
+        case 44: return LOGIN_ACTION_TELEMETRY;
+        case 45: return AR_PHOTO_SESSION_TELEMETRY;
+        case 46: return INVASION_TELEMETRY;
+        case 47: return COMBAT_MINIGAME_TELEMETRY;
+        case 48: return LEAVE_POINT_OF_INTEREST_TELEMETRY;
+        case 49: return VIEW_POINT_OF_INTEREST_IMAGE_TELEMETRY;
+        case 50: return COMBAT_HUB_ENTRANCE_TELEMETRY;
+        case 51: return LEAVE_INTERACTION_RANGE_TELEMETRY;
+        case 52: return SHOPPING_PAGE_CLICK_TELEMETRY;
+        case 53: return SHOPPING_PAGE_SCROLL_TELEMETRY;
+        case 54: return DEVICE_SPECIFICATIONS_TELEMETRY;
+        case 55: return SCREEN_RESOLUTION_TELEMETRY;
+        case 56: return AR_BUDDY_MULTIPLAYER_SESSION_TELEMETRY;
+        case 57: return BUDDY_MULTIPLAYER_CONNECTION_FAILED_TELEMETRY;
+        case 58: return BUDDY_MULTIPLAYER_CONNECTION_SUCCEEDED_TELEMETRY;
+        case 59: return BUDDY_MULTIPLAYER_TIME_TO_GET_SESSION_TELEMETRY;
+        case 60: return PLAYER_HUD_NOTIFICATION_CLICK_TELEMETRY;
+        case 61: return MONODEPTH_DOWNLOAD_TELEMETRY;
+        case 62: return AR_MAPPING_TELEMETRY;
+        case 63: return REMOTE_RAID_TELEMETRY;
+        case 64: return DEVICE_OS_TELEMETRY;
+        case 0: return TELEMETRYDATA_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public TelemetryDataCase
+  getTelemetryDataCase() {
+    return TelemetryDataCase.forNumber(
+        telemetryDataCase_);
+  }
+
   public static final int BOOT_TIME_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.BootTime bootTime_;
   /**
    * <code>.POGOProtos.Rpc.BootTime boot_time = 1;</code>
    * @return Whether the bootTime field is set.
    */
   public boolean hasBootTime() {
-    return bootTime_ != null;
+    return telemetryDataCase_ == 1;
   }
   /**
    * <code>.POGOProtos.Rpc.BootTime boot_time = 1;</code>
    * @return The bootTime.
    */
   public POGOProtos.Rpc.BootTime getBootTime() {
-    return bootTime_ == null ? POGOProtos.Rpc.BootTime.getDefaultInstance() : bootTime_;
+    if (telemetryDataCase_ == 1) {
+       return (POGOProtos.Rpc.BootTime) telemetryData_;
+    }
+    return POGOProtos.Rpc.BootTime.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.BootTime boot_time = 1;</code>
    */
   public POGOProtos.Rpc.BootTimeOrBuilder getBootTimeOrBuilder() {
-    return getBootTime();
+    if (telemetryDataCase_ == 1) {
+       return (POGOProtos.Rpc.BootTime) telemetryData_;
+    }
+    return POGOProtos.Rpc.BootTime.getDefaultInstance();
   }
 
   public static final int FRAME_RATE_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.FrameRate frameRate_;
   /**
    * <code>.POGOProtos.Rpc.FrameRate frame_rate = 2;</code>
    * @return Whether the frameRate field is set.
    */
   public boolean hasFrameRate() {
-    return frameRate_ != null;
+    return telemetryDataCase_ == 2;
   }
   /**
    * <code>.POGOProtos.Rpc.FrameRate frame_rate = 2;</code>
    * @return The frameRate.
    */
   public POGOProtos.Rpc.FrameRate getFrameRate() {
-    return frameRate_ == null ? POGOProtos.Rpc.FrameRate.getDefaultInstance() : frameRate_;
+    if (telemetryDataCase_ == 2) {
+       return (POGOProtos.Rpc.FrameRate) telemetryData_;
+    }
+    return POGOProtos.Rpc.FrameRate.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.FrameRate frame_rate = 2;</code>
    */
   public POGOProtos.Rpc.FrameRateOrBuilder getFrameRateOrBuilder() {
-    return getFrameRate();
+    if (telemetryDataCase_ == 2) {
+       return (POGOProtos.Rpc.FrameRate) telemetryData_;
+    }
+    return POGOProtos.Rpc.FrameRate.getDefaultInstance();
   }
 
   public static final int GENERIC_CLICK_TELEMETRY_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.GenericClickTelemetry genericClickTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.GenericClickTelemetry generic_click_telemetry = 3;</code>
    * @return Whether the genericClickTelemetry field is set.
    */
   public boolean hasGenericClickTelemetry() {
-    return genericClickTelemetry_ != null;
+    return telemetryDataCase_ == 3;
   }
   /**
    * <code>.POGOProtos.Rpc.GenericClickTelemetry generic_click_telemetry = 3;</code>
    * @return The genericClickTelemetry.
    */
   public POGOProtos.Rpc.GenericClickTelemetry getGenericClickTelemetry() {
-    return genericClickTelemetry_ == null ? POGOProtos.Rpc.GenericClickTelemetry.getDefaultInstance() : genericClickTelemetry_;
+    if (telemetryDataCase_ == 3) {
+       return (POGOProtos.Rpc.GenericClickTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.GenericClickTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.GenericClickTelemetry generic_click_telemetry = 3;</code>
    */
   public POGOProtos.Rpc.GenericClickTelemetryOrBuilder getGenericClickTelemetryOrBuilder() {
-    return getGenericClickTelemetry();
+    if (telemetryDataCase_ == 3) {
+       return (POGOProtos.Rpc.GenericClickTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.GenericClickTelemetry.getDefaultInstance();
   }
 
   public static final int MAP_EVENTS_TELEMETRY_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.MapEventsTelemetry mapEventsTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.MapEventsTelemetry map_events_telemetry = 4;</code>
    * @return Whether the mapEventsTelemetry field is set.
    */
   public boolean hasMapEventsTelemetry() {
-    return mapEventsTelemetry_ != null;
+    return telemetryDataCase_ == 4;
   }
   /**
    * <code>.POGOProtos.Rpc.MapEventsTelemetry map_events_telemetry = 4;</code>
    * @return The mapEventsTelemetry.
    */
   public POGOProtos.Rpc.MapEventsTelemetry getMapEventsTelemetry() {
-    return mapEventsTelemetry_ == null ? POGOProtos.Rpc.MapEventsTelemetry.getDefaultInstance() : mapEventsTelemetry_;
+    if (telemetryDataCase_ == 4) {
+       return (POGOProtos.Rpc.MapEventsTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.MapEventsTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.MapEventsTelemetry map_events_telemetry = 4;</code>
    */
   public POGOProtos.Rpc.MapEventsTelemetryOrBuilder getMapEventsTelemetryOrBuilder() {
-    return getMapEventsTelemetry();
+    if (telemetryDataCase_ == 4) {
+       return (POGOProtos.Rpc.MapEventsTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.MapEventsTelemetry.getDefaultInstance();
   }
 
   public static final int SPIN_POKESTOP_TELEMETRY_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.SpinPokestopTelemetry spinPokestopTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.SpinPokestopTelemetry spin_pokestop_telemetry = 5;</code>
    * @return Whether the spinPokestopTelemetry field is set.
    */
   public boolean hasSpinPokestopTelemetry() {
-    return spinPokestopTelemetry_ != null;
+    return telemetryDataCase_ == 5;
   }
   /**
    * <code>.POGOProtos.Rpc.SpinPokestopTelemetry spin_pokestop_telemetry = 5;</code>
    * @return The spinPokestopTelemetry.
    */
   public POGOProtos.Rpc.SpinPokestopTelemetry getSpinPokestopTelemetry() {
-    return spinPokestopTelemetry_ == null ? POGOProtos.Rpc.SpinPokestopTelemetry.getDefaultInstance() : spinPokestopTelemetry_;
+    if (telemetryDataCase_ == 5) {
+       return (POGOProtos.Rpc.SpinPokestopTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.SpinPokestopTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.SpinPokestopTelemetry spin_pokestop_telemetry = 5;</code>
    */
   public POGOProtos.Rpc.SpinPokestopTelemetryOrBuilder getSpinPokestopTelemetryOrBuilder() {
-    return getSpinPokestopTelemetry();
+    if (telemetryDataCase_ == 5) {
+       return (POGOProtos.Rpc.SpinPokestopTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.SpinPokestopTelemetry.getDefaultInstance();
   }
 
   public static final int PROFILE_PAGE_TELEMETRY_FIELD_NUMBER = 6;
-  private POGOProtos.Rpc.ProfilePageTelemetry profilePageTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ProfilePageTelemetry profile_page_telemetry = 6;</code>
    * @return Whether the profilePageTelemetry field is set.
    */
   public boolean hasProfilePageTelemetry() {
-    return profilePageTelemetry_ != null;
+    return telemetryDataCase_ == 6;
   }
   /**
    * <code>.POGOProtos.Rpc.ProfilePageTelemetry profile_page_telemetry = 6;</code>
    * @return The profilePageTelemetry.
    */
   public POGOProtos.Rpc.ProfilePageTelemetry getProfilePageTelemetry() {
-    return profilePageTelemetry_ == null ? POGOProtos.Rpc.ProfilePageTelemetry.getDefaultInstance() : profilePageTelemetry_;
+    if (telemetryDataCase_ == 6) {
+       return (POGOProtos.Rpc.ProfilePageTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ProfilePageTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ProfilePageTelemetry profile_page_telemetry = 6;</code>
    */
   public POGOProtos.Rpc.ProfilePageTelemetryOrBuilder getProfilePageTelemetryOrBuilder() {
-    return getProfilePageTelemetry();
+    if (telemetryDataCase_ == 6) {
+       return (POGOProtos.Rpc.ProfilePageTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ProfilePageTelemetry.getDefaultInstance();
   }
 
   public static final int SHOPPING_PAGE_TELEMETRY_FIELD_NUMBER = 7;
-  private POGOProtos.Rpc.ShoppingPageTelemetry shoppingPageTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ShoppingPageTelemetry shopping_page_telemetry = 7;</code>
    * @return Whether the shoppingPageTelemetry field is set.
    */
   public boolean hasShoppingPageTelemetry() {
-    return shoppingPageTelemetry_ != null;
+    return telemetryDataCase_ == 7;
   }
   /**
    * <code>.POGOProtos.Rpc.ShoppingPageTelemetry shopping_page_telemetry = 7;</code>
    * @return The shoppingPageTelemetry.
    */
   public POGOProtos.Rpc.ShoppingPageTelemetry getShoppingPageTelemetry() {
-    return shoppingPageTelemetry_ == null ? POGOProtos.Rpc.ShoppingPageTelemetry.getDefaultInstance() : shoppingPageTelemetry_;
+    if (telemetryDataCase_ == 7) {
+       return (POGOProtos.Rpc.ShoppingPageTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ShoppingPageTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ShoppingPageTelemetry shopping_page_telemetry = 7;</code>
    */
   public POGOProtos.Rpc.ShoppingPageTelemetryOrBuilder getShoppingPageTelemetryOrBuilder() {
-    return getShoppingPageTelemetry();
+    if (telemetryDataCase_ == 7) {
+       return (POGOProtos.Rpc.ShoppingPageTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ShoppingPageTelemetry.getDefaultInstance();
   }
 
   public static final int ENCOUNTER_POKEMON_TELEMETRY_FIELD_NUMBER = 8;
-  private POGOProtos.Rpc.EncounterPokemonTelemetry encounterPokemonTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;</code>
    * @return Whether the encounterPokemonTelemetry field is set.
    */
   public boolean hasEncounterPokemonTelemetry() {
-    return encounterPokemonTelemetry_ != null;
+    return telemetryDataCase_ == 8;
   }
   /**
    * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;</code>
    * @return The encounterPokemonTelemetry.
    */
   public POGOProtos.Rpc.EncounterPokemonTelemetry getEncounterPokemonTelemetry() {
-    return encounterPokemonTelemetry_ == null ? POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance() : encounterPokemonTelemetry_;
+    if (telemetryDataCase_ == 8) {
+       return (POGOProtos.Rpc.EncounterPokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;</code>
    */
   public POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder getEncounterPokemonTelemetryOrBuilder() {
-    return getEncounterPokemonTelemetry();
+    if (telemetryDataCase_ == 8) {
+       return (POGOProtos.Rpc.EncounterPokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance();
   }
 
   public static final int CATCH_POKEMON_TELEMETRY_FIELD_NUMBER = 9;
-  private POGOProtos.Rpc.CatchPokemonTelemetry catchPokemonTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.CatchPokemonTelemetry catch_pokemon_telemetry = 9;</code>
    * @return Whether the catchPokemonTelemetry field is set.
    */
   public boolean hasCatchPokemonTelemetry() {
-    return catchPokemonTelemetry_ != null;
+    return telemetryDataCase_ == 9;
   }
   /**
    * <code>.POGOProtos.Rpc.CatchPokemonTelemetry catch_pokemon_telemetry = 9;</code>
    * @return The catchPokemonTelemetry.
    */
   public POGOProtos.Rpc.CatchPokemonTelemetry getCatchPokemonTelemetry() {
-    return catchPokemonTelemetry_ == null ? POGOProtos.Rpc.CatchPokemonTelemetry.getDefaultInstance() : catchPokemonTelemetry_;
+    if (telemetryDataCase_ == 9) {
+       return (POGOProtos.Rpc.CatchPokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.CatchPokemonTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.CatchPokemonTelemetry catch_pokemon_telemetry = 9;</code>
    */
   public POGOProtos.Rpc.CatchPokemonTelemetryOrBuilder getCatchPokemonTelemetryOrBuilder() {
-    return getCatchPokemonTelemetry();
+    if (telemetryDataCase_ == 9) {
+       return (POGOProtos.Rpc.CatchPokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.CatchPokemonTelemetry.getDefaultInstance();
   }
 
   public static final int DEPLOY_POKEMON_TELEMETRY_FIELD_NUMBER = 10;
-  private POGOProtos.Rpc.DeployPokemonTelemetry deployPokemonTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.DeployPokemonTelemetry deploy_pokemon_telemetry = 10;</code>
    * @return Whether the deployPokemonTelemetry field is set.
    */
   public boolean hasDeployPokemonTelemetry() {
-    return deployPokemonTelemetry_ != null;
+    return telemetryDataCase_ == 10;
   }
   /**
    * <code>.POGOProtos.Rpc.DeployPokemonTelemetry deploy_pokemon_telemetry = 10;</code>
    * @return The deployPokemonTelemetry.
    */
   public POGOProtos.Rpc.DeployPokemonTelemetry getDeployPokemonTelemetry() {
-    return deployPokemonTelemetry_ == null ? POGOProtos.Rpc.DeployPokemonTelemetry.getDefaultInstance() : deployPokemonTelemetry_;
+    if (telemetryDataCase_ == 10) {
+       return (POGOProtos.Rpc.DeployPokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.DeployPokemonTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.DeployPokemonTelemetry deploy_pokemon_telemetry = 10;</code>
    */
   public POGOProtos.Rpc.DeployPokemonTelemetryOrBuilder getDeployPokemonTelemetryOrBuilder() {
-    return getDeployPokemonTelemetry();
+    if (telemetryDataCase_ == 10) {
+       return (POGOProtos.Rpc.DeployPokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.DeployPokemonTelemetry.getDefaultInstance();
   }
 
   public static final int FEED_POKEMON_TELEMETRY_FIELD_NUMBER = 11;
-  private POGOProtos.Rpc.FeedPokemonTelemetry feedPokemonTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.FeedPokemonTelemetry feed_pokemon_telemetry = 11;</code>
    * @return Whether the feedPokemonTelemetry field is set.
    */
   public boolean hasFeedPokemonTelemetry() {
-    return feedPokemonTelemetry_ != null;
+    return telemetryDataCase_ == 11;
   }
   /**
    * <code>.POGOProtos.Rpc.FeedPokemonTelemetry feed_pokemon_telemetry = 11;</code>
    * @return The feedPokemonTelemetry.
    */
   public POGOProtos.Rpc.FeedPokemonTelemetry getFeedPokemonTelemetry() {
-    return feedPokemonTelemetry_ == null ? POGOProtos.Rpc.FeedPokemonTelemetry.getDefaultInstance() : feedPokemonTelemetry_;
+    if (telemetryDataCase_ == 11) {
+       return (POGOProtos.Rpc.FeedPokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.FeedPokemonTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.FeedPokemonTelemetry feed_pokemon_telemetry = 11;</code>
    */
   public POGOProtos.Rpc.FeedPokemonTelemetryOrBuilder getFeedPokemonTelemetryOrBuilder() {
-    return getFeedPokemonTelemetry();
+    if (telemetryDataCase_ == 11) {
+       return (POGOProtos.Rpc.FeedPokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.FeedPokemonTelemetry.getDefaultInstance();
   }
 
   public static final int EVOLVE_POKEMON_TELEMETRY_FIELD_NUMBER = 12;
-  private POGOProtos.Rpc.EvolvePokemonTelemetry evolvePokemonTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;</code>
    * @return Whether the evolvePokemonTelemetry field is set.
    */
   public boolean hasEvolvePokemonTelemetry() {
-    return evolvePokemonTelemetry_ != null;
+    return telemetryDataCase_ == 12;
   }
   /**
    * <code>.POGOProtos.Rpc.EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;</code>
    * @return The evolvePokemonTelemetry.
    */
   public POGOProtos.Rpc.EvolvePokemonTelemetry getEvolvePokemonTelemetry() {
-    return evolvePokemonTelemetry_ == null ? POGOProtos.Rpc.EvolvePokemonTelemetry.getDefaultInstance() : evolvePokemonTelemetry_;
+    if (telemetryDataCase_ == 12) {
+       return (POGOProtos.Rpc.EvolvePokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.EvolvePokemonTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;</code>
    */
   public POGOProtos.Rpc.EvolvePokemonTelemetryOrBuilder getEvolvePokemonTelemetryOrBuilder() {
-    return getEvolvePokemonTelemetry();
+    if (telemetryDataCase_ == 12) {
+       return (POGOProtos.Rpc.EvolvePokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.EvolvePokemonTelemetry.getDefaultInstance();
   }
 
   public static final int RELEASE_POKEMON_TELEMETRY_FIELD_NUMBER = 13;
-  private POGOProtos.Rpc.ReleasePokemonTelemetry releasePokemonTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ReleasePokemonTelemetry release_pokemon_telemetry = 13;</code>
    * @return Whether the releasePokemonTelemetry field is set.
    */
   public boolean hasReleasePokemonTelemetry() {
-    return releasePokemonTelemetry_ != null;
+    return telemetryDataCase_ == 13;
   }
   /**
    * <code>.POGOProtos.Rpc.ReleasePokemonTelemetry release_pokemon_telemetry = 13;</code>
    * @return The releasePokemonTelemetry.
    */
   public POGOProtos.Rpc.ReleasePokemonTelemetry getReleasePokemonTelemetry() {
-    return releasePokemonTelemetry_ == null ? POGOProtos.Rpc.ReleasePokemonTelemetry.getDefaultInstance() : releasePokemonTelemetry_;
+    if (telemetryDataCase_ == 13) {
+       return (POGOProtos.Rpc.ReleasePokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ReleasePokemonTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ReleasePokemonTelemetry release_pokemon_telemetry = 13;</code>
    */
   public POGOProtos.Rpc.ReleasePokemonTelemetryOrBuilder getReleasePokemonTelemetryOrBuilder() {
-    return getReleasePokemonTelemetry();
+    if (telemetryDataCase_ == 13) {
+       return (POGOProtos.Rpc.ReleasePokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ReleasePokemonTelemetry.getDefaultInstance();
   }
 
   public static final int NICKNAME_POKEMON_TELEMETRY_FIELD_NUMBER = 14;
-  private POGOProtos.Rpc.NicknamePokemonTelemetry nicknamePokemonTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;</code>
    * @return Whether the nicknamePokemonTelemetry field is set.
    */
   public boolean hasNicknamePokemonTelemetry() {
-    return nicknamePokemonTelemetry_ != null;
+    return telemetryDataCase_ == 14;
   }
   /**
    * <code>.POGOProtos.Rpc.NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;</code>
    * @return The nicknamePokemonTelemetry.
    */
   public POGOProtos.Rpc.NicknamePokemonTelemetry getNicknamePokemonTelemetry() {
-    return nicknamePokemonTelemetry_ == null ? POGOProtos.Rpc.NicknamePokemonTelemetry.getDefaultInstance() : nicknamePokemonTelemetry_;
+    if (telemetryDataCase_ == 14) {
+       return (POGOProtos.Rpc.NicknamePokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.NicknamePokemonTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;</code>
    */
   public POGOProtos.Rpc.NicknamePokemonTelemetryOrBuilder getNicknamePokemonTelemetryOrBuilder() {
-    return getNicknamePokemonTelemetry();
+    if (telemetryDataCase_ == 14) {
+       return (POGOProtos.Rpc.NicknamePokemonTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.NicknamePokemonTelemetry.getDefaultInstance();
   }
 
   public static final int NEWS_PAGE_TELEMETRY_FIELD_NUMBER = 15;
-  private POGOProtos.Rpc.NewsPageTelemetry newsPageTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.NewsPageTelemetry news_page_telemetry = 15;</code>
    * @return Whether the newsPageTelemetry field is set.
    */
   public boolean hasNewsPageTelemetry() {
-    return newsPageTelemetry_ != null;
+    return telemetryDataCase_ == 15;
   }
   /**
    * <code>.POGOProtos.Rpc.NewsPageTelemetry news_page_telemetry = 15;</code>
    * @return The newsPageTelemetry.
    */
   public POGOProtos.Rpc.NewsPageTelemetry getNewsPageTelemetry() {
-    return newsPageTelemetry_ == null ? POGOProtos.Rpc.NewsPageTelemetry.getDefaultInstance() : newsPageTelemetry_;
+    if (telemetryDataCase_ == 15) {
+       return (POGOProtos.Rpc.NewsPageTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.NewsPageTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.NewsPageTelemetry news_page_telemetry = 15;</code>
    */
   public POGOProtos.Rpc.NewsPageTelemetryOrBuilder getNewsPageTelemetryOrBuilder() {
-    return getNewsPageTelemetry();
+    if (telemetryDataCase_ == 15) {
+       return (POGOProtos.Rpc.NewsPageTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.NewsPageTelemetry.getDefaultInstance();
   }
 
   public static final int ITEM_TELEMETRY_FIELD_NUMBER = 16;
-  private POGOProtos.Rpc.ItemTelemetry itemTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ItemTelemetry item_telemetry = 16;</code>
    * @return Whether the itemTelemetry field is set.
    */
   public boolean hasItemTelemetry() {
-    return itemTelemetry_ != null;
+    return telemetryDataCase_ == 16;
   }
   /**
    * <code>.POGOProtos.Rpc.ItemTelemetry item_telemetry = 16;</code>
    * @return The itemTelemetry.
    */
   public POGOProtos.Rpc.ItemTelemetry getItemTelemetry() {
-    return itemTelemetry_ == null ? POGOProtos.Rpc.ItemTelemetry.getDefaultInstance() : itemTelemetry_;
+    if (telemetryDataCase_ == 16) {
+       return (POGOProtos.Rpc.ItemTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ItemTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ItemTelemetry item_telemetry = 16;</code>
    */
   public POGOProtos.Rpc.ItemTelemetryOrBuilder getItemTelemetryOrBuilder() {
-    return getItemTelemetry();
+    if (telemetryDataCase_ == 16) {
+       return (POGOProtos.Rpc.ItemTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ItemTelemetry.getDefaultInstance();
   }
 
   public static final int BATTLE_PARTY_TELEMETRY_FIELD_NUMBER = 17;
-  private POGOProtos.Rpc.BattlePartyTelemetry battlePartyTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.BattlePartyTelemetry battle_party_telemetry = 17;</code>
    * @return Whether the battlePartyTelemetry field is set.
    */
   public boolean hasBattlePartyTelemetry() {
-    return battlePartyTelemetry_ != null;
+    return telemetryDataCase_ == 17;
   }
   /**
    * <code>.POGOProtos.Rpc.BattlePartyTelemetry battle_party_telemetry = 17;</code>
    * @return The battlePartyTelemetry.
    */
   public POGOProtos.Rpc.BattlePartyTelemetry getBattlePartyTelemetry() {
-    return battlePartyTelemetry_ == null ? POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance() : battlePartyTelemetry_;
+    if (telemetryDataCase_ == 17) {
+       return (POGOProtos.Rpc.BattlePartyTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.BattlePartyTelemetry battle_party_telemetry = 17;</code>
    */
   public POGOProtos.Rpc.BattlePartyTelemetryOrBuilder getBattlePartyTelemetryOrBuilder() {
-    return getBattlePartyTelemetry();
+    if (telemetryDataCase_ == 17) {
+       return (POGOProtos.Rpc.BattlePartyTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance();
   }
 
   public static final int PASSCODE_REDEEM_TELEMETRY_FIELD_NUMBER = 18;
-  private POGOProtos.Rpc.PasscodeRedeemTelemetry passcodeRedeemTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;</code>
    * @return Whether the passcodeRedeemTelemetry field is set.
    */
   public boolean hasPasscodeRedeemTelemetry() {
-    return passcodeRedeemTelemetry_ != null;
+    return telemetryDataCase_ == 18;
   }
   /**
    * <code>.POGOProtos.Rpc.PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;</code>
    * @return The passcodeRedeemTelemetry.
    */
   public POGOProtos.Rpc.PasscodeRedeemTelemetry getPasscodeRedeemTelemetry() {
-    return passcodeRedeemTelemetry_ == null ? POGOProtos.Rpc.PasscodeRedeemTelemetry.getDefaultInstance() : passcodeRedeemTelemetry_;
+    if (telemetryDataCase_ == 18) {
+       return (POGOProtos.Rpc.PasscodeRedeemTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PasscodeRedeemTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;</code>
    */
   public POGOProtos.Rpc.PasscodeRedeemTelemetryOrBuilder getPasscodeRedeemTelemetryOrBuilder() {
-    return getPasscodeRedeemTelemetry();
+    if (telemetryDataCase_ == 18) {
+       return (POGOProtos.Rpc.PasscodeRedeemTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PasscodeRedeemTelemetry.getDefaultInstance();
   }
 
   public static final int LINK_LOGIN_TELEMETRY_FIELD_NUMBER = 19;
-  private POGOProtos.Rpc.LinkLoginTelemetry linkLoginTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.LinkLoginTelemetry link_login_telemetry = 19;</code>
    * @return Whether the linkLoginTelemetry field is set.
    */
   public boolean hasLinkLoginTelemetry() {
-    return linkLoginTelemetry_ != null;
+    return telemetryDataCase_ == 19;
   }
   /**
    * <code>.POGOProtos.Rpc.LinkLoginTelemetry link_login_telemetry = 19;</code>
    * @return The linkLoginTelemetry.
    */
   public POGOProtos.Rpc.LinkLoginTelemetry getLinkLoginTelemetry() {
-    return linkLoginTelemetry_ == null ? POGOProtos.Rpc.LinkLoginTelemetry.getDefaultInstance() : linkLoginTelemetry_;
+    if (telemetryDataCase_ == 19) {
+       return (POGOProtos.Rpc.LinkLoginTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.LinkLoginTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.LinkLoginTelemetry link_login_telemetry = 19;</code>
    */
   public POGOProtos.Rpc.LinkLoginTelemetryOrBuilder getLinkLoginTelemetryOrBuilder() {
-    return getLinkLoginTelemetry();
+    if (telemetryDataCase_ == 19) {
+       return (POGOProtos.Rpc.LinkLoginTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.LinkLoginTelemetry.getDefaultInstance();
   }
 
   public static final int RAID_TELEMETRY_FIELD_NUMBER = 20;
-  private POGOProtos.Rpc.RaidTelemetry raidTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.RaidTelemetry raid_telemetry = 20;</code>
    * @return Whether the raidTelemetry field is set.
    */
   public boolean hasRaidTelemetry() {
-    return raidTelemetry_ != null;
+    return telemetryDataCase_ == 20;
   }
   /**
    * <code>.POGOProtos.Rpc.RaidTelemetry raid_telemetry = 20;</code>
    * @return The raidTelemetry.
    */
   public POGOProtos.Rpc.RaidTelemetry getRaidTelemetry() {
-    return raidTelemetry_ == null ? POGOProtos.Rpc.RaidTelemetry.getDefaultInstance() : raidTelemetry_;
+    if (telemetryDataCase_ == 20) {
+       return (POGOProtos.Rpc.RaidTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.RaidTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.RaidTelemetry raid_telemetry = 20;</code>
    */
   public POGOProtos.Rpc.RaidTelemetryOrBuilder getRaidTelemetryOrBuilder() {
-    return getRaidTelemetry();
+    if (telemetryDataCase_ == 20) {
+       return (POGOProtos.Rpc.RaidTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.RaidTelemetry.getDefaultInstance();
   }
 
   public static final int PUSH_NOTIFICATION_TELEMETRY_FIELD_NUMBER = 21;
-  private POGOProtos.Rpc.PushNotificationTelemetry pushNotificationTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.PushNotificationTelemetry push_notification_telemetry = 21;</code>
    * @return Whether the pushNotificationTelemetry field is set.
    */
   public boolean hasPushNotificationTelemetry() {
-    return pushNotificationTelemetry_ != null;
+    return telemetryDataCase_ == 21;
   }
   /**
    * <code>.POGOProtos.Rpc.PushNotificationTelemetry push_notification_telemetry = 21;</code>
    * @return The pushNotificationTelemetry.
    */
   public POGOProtos.Rpc.PushNotificationTelemetry getPushNotificationTelemetry() {
-    return pushNotificationTelemetry_ == null ? POGOProtos.Rpc.PushNotificationTelemetry.getDefaultInstance() : pushNotificationTelemetry_;
+    if (telemetryDataCase_ == 21) {
+       return (POGOProtos.Rpc.PushNotificationTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PushNotificationTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PushNotificationTelemetry push_notification_telemetry = 21;</code>
    */
   public POGOProtos.Rpc.PushNotificationTelemetryOrBuilder getPushNotificationTelemetryOrBuilder() {
-    return getPushNotificationTelemetry();
+    if (telemetryDataCase_ == 21) {
+       return (POGOProtos.Rpc.PushNotificationTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PushNotificationTelemetry.getDefaultInstance();
   }
 
   public static final int AVATAR_CUSTOMIZATION_TELEMETRY_FIELD_NUMBER = 22;
-  private POGOProtos.Rpc.AvatarCustomizationTelemetry avatarCustomizationTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.AvatarCustomizationTelemetry avatar_customization_telemetry = 22;</code>
    * @return Whether the avatarCustomizationTelemetry field is set.
    */
   public boolean hasAvatarCustomizationTelemetry() {
-    return avatarCustomizationTelemetry_ != null;
+    return telemetryDataCase_ == 22;
   }
   /**
    * <code>.POGOProtos.Rpc.AvatarCustomizationTelemetry avatar_customization_telemetry = 22;</code>
    * @return The avatarCustomizationTelemetry.
    */
   public POGOProtos.Rpc.AvatarCustomizationTelemetry getAvatarCustomizationTelemetry() {
-    return avatarCustomizationTelemetry_ == null ? POGOProtos.Rpc.AvatarCustomizationTelemetry.getDefaultInstance() : avatarCustomizationTelemetry_;
+    if (telemetryDataCase_ == 22) {
+       return (POGOProtos.Rpc.AvatarCustomizationTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.AvatarCustomizationTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.AvatarCustomizationTelemetry avatar_customization_telemetry = 22;</code>
    */
   public POGOProtos.Rpc.AvatarCustomizationTelemetryOrBuilder getAvatarCustomizationTelemetryOrBuilder() {
-    return getAvatarCustomizationTelemetry();
+    if (telemetryDataCase_ == 22) {
+       return (POGOProtos.Rpc.AvatarCustomizationTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.AvatarCustomizationTelemetry.getDefaultInstance();
   }
 
   public static final int READ_POINT_OF_INTEREST_DESCRIPTION_TELEMETRY_FIELD_NUMBER = 23;
-  private POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry readPointOfInterestDescriptionTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;</code>
    * @return Whether the readPointOfInterestDescriptionTelemetry field is set.
    */
   public boolean hasReadPointOfInterestDescriptionTelemetry() {
-    return readPointOfInterestDescriptionTelemetry_ != null;
+    return telemetryDataCase_ == 23;
   }
   /**
    * <code>.POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;</code>
    * @return The readPointOfInterestDescriptionTelemetry.
    */
   public POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry getReadPointOfInterestDescriptionTelemetry() {
-    return readPointOfInterestDescriptionTelemetry_ == null ? POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.getDefaultInstance() : readPointOfInterestDescriptionTelemetry_;
+    if (telemetryDataCase_ == 23) {
+       return (POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;</code>
    */
   public POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetryOrBuilder getReadPointOfInterestDescriptionTelemetryOrBuilder() {
-    return getReadPointOfInterestDescriptionTelemetry();
+    if (telemetryDataCase_ == 23) {
+       return (POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.getDefaultInstance();
   }
 
   public static final int WEB_TELEMETRY_FIELD_NUMBER = 24;
-  private POGOProtos.Rpc.WebTelemetry webTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.WebTelemetry web_telemetry = 24;</code>
    * @return Whether the webTelemetry field is set.
    */
   public boolean hasWebTelemetry() {
-    return webTelemetry_ != null;
+    return telemetryDataCase_ == 24;
   }
   /**
    * <code>.POGOProtos.Rpc.WebTelemetry web_telemetry = 24;</code>
    * @return The webTelemetry.
    */
   public POGOProtos.Rpc.WebTelemetry getWebTelemetry() {
-    return webTelemetry_ == null ? POGOProtos.Rpc.WebTelemetry.getDefaultInstance() : webTelemetry_;
+    if (telemetryDataCase_ == 24) {
+       return (POGOProtos.Rpc.WebTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.WebTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.WebTelemetry web_telemetry = 24;</code>
    */
   public POGOProtos.Rpc.WebTelemetryOrBuilder getWebTelemetryOrBuilder() {
-    return getWebTelemetry();
+    if (telemetryDataCase_ == 24) {
+       return (POGOProtos.Rpc.WebTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.WebTelemetry.getDefaultInstance();
   }
 
   public static final int CHANGE_AR_TELEMETRY_FIELD_NUMBER = 25;
-  private POGOProtos.Rpc.ChangeArTelemetry changeArTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ChangeArTelemetry change_ar_telemetry = 25;</code>
    * @return Whether the changeArTelemetry field is set.
    */
   public boolean hasChangeArTelemetry() {
-    return changeArTelemetry_ != null;
+    return telemetryDataCase_ == 25;
   }
   /**
    * <code>.POGOProtos.Rpc.ChangeArTelemetry change_ar_telemetry = 25;</code>
    * @return The changeArTelemetry.
    */
   public POGOProtos.Rpc.ChangeArTelemetry getChangeArTelemetry() {
-    return changeArTelemetry_ == null ? POGOProtos.Rpc.ChangeArTelemetry.getDefaultInstance() : changeArTelemetry_;
+    if (telemetryDataCase_ == 25) {
+       return (POGOProtos.Rpc.ChangeArTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ChangeArTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ChangeArTelemetry change_ar_telemetry = 25;</code>
    */
   public POGOProtos.Rpc.ChangeArTelemetryOrBuilder getChangeArTelemetryOrBuilder() {
-    return getChangeArTelemetry();
+    if (telemetryDataCase_ == 25) {
+       return (POGOProtos.Rpc.ChangeArTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ChangeArTelemetry.getDefaultInstance();
   }
 
   public static final int WEATHER_DETAIL_CLICK_TELEMETRY_FIELD_NUMBER = 26;
-  private POGOProtos.Rpc.WeatherDetailClickTelemetry weatherDetailClickTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;</code>
    * @return Whether the weatherDetailClickTelemetry field is set.
    */
   public boolean hasWeatherDetailClickTelemetry() {
-    return weatherDetailClickTelemetry_ != null;
+    return telemetryDataCase_ == 26;
   }
   /**
    * <code>.POGOProtos.Rpc.WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;</code>
    * @return The weatherDetailClickTelemetry.
    */
   public POGOProtos.Rpc.WeatherDetailClickTelemetry getWeatherDetailClickTelemetry() {
-    return weatherDetailClickTelemetry_ == null ? POGOProtos.Rpc.WeatherDetailClickTelemetry.getDefaultInstance() : weatherDetailClickTelemetry_;
+    if (telemetryDataCase_ == 26) {
+       return (POGOProtos.Rpc.WeatherDetailClickTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.WeatherDetailClickTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;</code>
    */
   public POGOProtos.Rpc.WeatherDetailClickTelemetryOrBuilder getWeatherDetailClickTelemetryOrBuilder() {
-    return getWeatherDetailClickTelemetry();
+    if (telemetryDataCase_ == 26) {
+       return (POGOProtos.Rpc.WeatherDetailClickTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.WeatherDetailClickTelemetry.getDefaultInstance();
   }
 
   public static final int USER_ISSUE_WEATHER_REPORT_FIELD_NUMBER = 27;
-  private POGOProtos.Rpc.UserIssueWeatherReport userIssueWeatherReport_;
   /**
    * <code>.POGOProtos.Rpc.UserIssueWeatherReport user_issue_weather_report = 27;</code>
    * @return Whether the userIssueWeatherReport field is set.
    */
   public boolean hasUserIssueWeatherReport() {
-    return userIssueWeatherReport_ != null;
+    return telemetryDataCase_ == 27;
   }
   /**
    * <code>.POGOProtos.Rpc.UserIssueWeatherReport user_issue_weather_report = 27;</code>
    * @return The userIssueWeatherReport.
    */
   public POGOProtos.Rpc.UserIssueWeatherReport getUserIssueWeatherReport() {
-    return userIssueWeatherReport_ == null ? POGOProtos.Rpc.UserIssueWeatherReport.getDefaultInstance() : userIssueWeatherReport_;
+    if (telemetryDataCase_ == 27) {
+       return (POGOProtos.Rpc.UserIssueWeatherReport) telemetryData_;
+    }
+    return POGOProtos.Rpc.UserIssueWeatherReport.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.UserIssueWeatherReport user_issue_weather_report = 27;</code>
    */
   public POGOProtos.Rpc.UserIssueWeatherReportOrBuilder getUserIssueWeatherReportOrBuilder() {
-    return getUserIssueWeatherReport();
+    if (telemetryDataCase_ == 27) {
+       return (POGOProtos.Rpc.UserIssueWeatherReport) telemetryData_;
+    }
+    return POGOProtos.Rpc.UserIssueWeatherReport.getDefaultInstance();
   }
 
   public static final int POKEMON_INVENTORY_TELEMETRY_FIELD_NUMBER = 28;
-  private POGOProtos.Rpc.PokemonInventoryTelemetry pokemonInventoryTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;</code>
    * @return Whether the pokemonInventoryTelemetry field is set.
    */
   public boolean hasPokemonInventoryTelemetry() {
-    return pokemonInventoryTelemetry_ != null;
+    return telemetryDataCase_ == 28;
   }
   /**
    * <code>.POGOProtos.Rpc.PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;</code>
    * @return The pokemonInventoryTelemetry.
    */
   public POGOProtos.Rpc.PokemonInventoryTelemetry getPokemonInventoryTelemetry() {
-    return pokemonInventoryTelemetry_ == null ? POGOProtos.Rpc.PokemonInventoryTelemetry.getDefaultInstance() : pokemonInventoryTelemetry_;
+    if (telemetryDataCase_ == 28) {
+       return (POGOProtos.Rpc.PokemonInventoryTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PokemonInventoryTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;</code>
    */
   public POGOProtos.Rpc.PokemonInventoryTelemetryOrBuilder getPokemonInventoryTelemetryOrBuilder() {
-    return getPokemonInventoryTelemetry();
+    if (telemetryDataCase_ == 28) {
+       return (POGOProtos.Rpc.PokemonInventoryTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PokemonInventoryTelemetry.getDefaultInstance();
   }
 
   public static final int SOCIAL_TELEMETRY_FIELD_NUMBER = 29;
-  private POGOProtos.Rpc.SocialTelemetry socialTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.SocialTelemetry social_telemetry = 29;</code>
    * @return Whether the socialTelemetry field is set.
    */
   public boolean hasSocialTelemetry() {
-    return socialTelemetry_ != null;
+    return telemetryDataCase_ == 29;
   }
   /**
    * <code>.POGOProtos.Rpc.SocialTelemetry social_telemetry = 29;</code>
    * @return The socialTelemetry.
    */
   public POGOProtos.Rpc.SocialTelemetry getSocialTelemetry() {
-    return socialTelemetry_ == null ? POGOProtos.Rpc.SocialTelemetry.getDefaultInstance() : socialTelemetry_;
+    if (telemetryDataCase_ == 29) {
+       return (POGOProtos.Rpc.SocialTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.SocialTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.SocialTelemetry social_telemetry = 29;</code>
    */
   public POGOProtos.Rpc.SocialTelemetryOrBuilder getSocialTelemetryOrBuilder() {
-    return getSocialTelemetry();
+    if (telemetryDataCase_ == 29) {
+       return (POGOProtos.Rpc.SocialTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.SocialTelemetry.getDefaultInstance();
   }
 
   public static final int CHECK_ENCOUNTER_INFO_TELEMETRY_FIELD_NUMBER = 30;
-  private POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry checkEncounterInfoTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;</code>
    * @return Whether the checkEncounterInfoTelemetry field is set.
    */
   public boolean hasCheckEncounterInfoTelemetry() {
-    return checkEncounterInfoTelemetry_ != null;
+    return telemetryDataCase_ == 30;
   }
   /**
    * <code>.POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;</code>
    * @return The checkEncounterInfoTelemetry.
    */
   public POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry getCheckEncounterInfoTelemetry() {
-    return checkEncounterInfoTelemetry_ == null ? POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.getDefaultInstance() : checkEncounterInfoTelemetry_;
+    if (telemetryDataCase_ == 30) {
+       return (POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;</code>
    */
   public POGOProtos.Rpc.CheckEncounterTrayInfoTelemetryOrBuilder getCheckEncounterInfoTelemetryOrBuilder() {
-    return getCheckEncounterInfoTelemetry();
+    if (telemetryDataCase_ == 30) {
+       return (POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.getDefaultInstance();
   }
 
   public static final int POKEMON_GO_PLUS_TELEMETRY_FIELD_NUMBER = 31;
-  private POGOProtos.Rpc.PokemonGoPlusTelemetry pokemonGoPlusTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;</code>
    * @return Whether the pokemonGoPlusTelemetry field is set.
    */
   public boolean hasPokemonGoPlusTelemetry() {
-    return pokemonGoPlusTelemetry_ != null;
+    return telemetryDataCase_ == 31;
   }
   /**
    * <code>.POGOProtos.Rpc.PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;</code>
    * @return The pokemonGoPlusTelemetry.
    */
   public POGOProtos.Rpc.PokemonGoPlusTelemetry getPokemonGoPlusTelemetry() {
-    return pokemonGoPlusTelemetry_ == null ? POGOProtos.Rpc.PokemonGoPlusTelemetry.getDefaultInstance() : pokemonGoPlusTelemetry_;
+    if (telemetryDataCase_ == 31) {
+       return (POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PokemonGoPlusTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;</code>
    */
   public POGOProtos.Rpc.PokemonGoPlusTelemetryOrBuilder getPokemonGoPlusTelemetryOrBuilder() {
-    return getPokemonGoPlusTelemetry();
+    if (telemetryDataCase_ == 31) {
+       return (POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PokemonGoPlusTelemetry.getDefaultInstance();
   }
 
   public static final int RPC_TIMING_TELEMETRY_FIELD_NUMBER = 32;
-  private POGOProtos.Rpc.RpcResponseTelemetry rpcTimingTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
    * @return Whether the rpcTimingTelemetry field is set.
    */
   public boolean hasRpcTimingTelemetry() {
-    return rpcTimingTelemetry_ != null;
+    return telemetryDataCase_ == 32;
   }
   /**
    * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
    * @return The rpcTimingTelemetry.
    */
   public POGOProtos.Rpc.RpcResponseTelemetry getRpcTimingTelemetry() {
-    return rpcTimingTelemetry_ == null ? POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance() : rpcTimingTelemetry_;
+    if (telemetryDataCase_ == 32) {
+       return (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
    */
   public POGOProtos.Rpc.RpcResponseTelemetryOrBuilder getRpcTimingTelemetryOrBuilder() {
-    return getRpcTimingTelemetry();
+    if (telemetryDataCase_ == 32) {
+       return (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
   }
 
   public static final int SOCIAL_GIFT_COUNT_TELEMETRY_FIELD_NUMBER = 33;
-  private POGOProtos.Rpc.SocialGiftCountTelemetry socialGiftCountTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
    * @return Whether the socialGiftCountTelemetry field is set.
    */
   public boolean hasSocialGiftCountTelemetry() {
-    return socialGiftCountTelemetry_ != null;
+    return telemetryDataCase_ == 33;
   }
   /**
    * <code>.POGOProtos.Rpc.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
    * @return The socialGiftCountTelemetry.
    */
   public POGOProtos.Rpc.SocialGiftCountTelemetry getSocialGiftCountTelemetry() {
-    return socialGiftCountTelemetry_ == null ? POGOProtos.Rpc.SocialGiftCountTelemetry.getDefaultInstance() : socialGiftCountTelemetry_;
+    if (telemetryDataCase_ == 33) {
+       return (POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.SocialGiftCountTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
    */
   public POGOProtos.Rpc.SocialGiftCountTelemetryOrBuilder getSocialGiftCountTelemetryOrBuilder() {
-    return getSocialGiftCountTelemetry();
+    if (telemetryDataCase_ == 33) {
+       return (POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.SocialGiftCountTelemetry.getDefaultInstance();
   }
 
   public static final int ASSET_BUNDLE_TELEMETRY_FIELD_NUMBER = 34;
-  private POGOProtos.Rpc.AssetBundleDownloadTelemetry assetBundleTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;</code>
    * @return Whether the assetBundleTelemetry field is set.
    */
   public boolean hasAssetBundleTelemetry() {
-    return assetBundleTelemetry_ != null;
+    return telemetryDataCase_ == 34;
   }
   /**
    * <code>.POGOProtos.Rpc.AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;</code>
    * @return The assetBundleTelemetry.
    */
   public POGOProtos.Rpc.AssetBundleDownloadTelemetry getAssetBundleTelemetry() {
-    return assetBundleTelemetry_ == null ? POGOProtos.Rpc.AssetBundleDownloadTelemetry.getDefaultInstance() : assetBundleTelemetry_;
+    if (telemetryDataCase_ == 34) {
+       return (POGOProtos.Rpc.AssetBundleDownloadTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.AssetBundleDownloadTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;</code>
    */
   public POGOProtos.Rpc.AssetBundleDownloadTelemetryOrBuilder getAssetBundleTelemetryOrBuilder() {
-    return getAssetBundleTelemetry();
+    if (telemetryDataCase_ == 34) {
+       return (POGOProtos.Rpc.AssetBundleDownloadTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.AssetBundleDownloadTelemetry.getDefaultInstance();
   }
 
   public static final int ASSET_POI_DOWNLOAD_TELEMETRY_FIELD_NUMBER = 35;
-  private POGOProtos.Rpc.AssetPoiDownloadTelemetry assetPoiDownloadTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;</code>
    * @return Whether the assetPoiDownloadTelemetry field is set.
    */
   public boolean hasAssetPoiDownloadTelemetry() {
-    return assetPoiDownloadTelemetry_ != null;
+    return telemetryDataCase_ == 35;
   }
   /**
    * <code>.POGOProtos.Rpc.AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;</code>
    * @return The assetPoiDownloadTelemetry.
    */
   public POGOProtos.Rpc.AssetPoiDownloadTelemetry getAssetPoiDownloadTelemetry() {
-    return assetPoiDownloadTelemetry_ == null ? POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance() : assetPoiDownloadTelemetry_;
+    if (telemetryDataCase_ == 35) {
+       return (POGOProtos.Rpc.AssetPoiDownloadTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;</code>
    */
   public POGOProtos.Rpc.AssetPoiDownloadTelemetryOrBuilder getAssetPoiDownloadTelemetryOrBuilder() {
-    return getAssetPoiDownloadTelemetry();
+    if (telemetryDataCase_ == 35) {
+       return (POGOProtos.Rpc.AssetPoiDownloadTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance();
   }
 
   public static final int ASSET_STREAM_DOWNLOAD_TELEMETRY_FIELD_NUMBER = 36;
-  private POGOProtos.Rpc.AssetStreamDownloadTelemetry assetStreamDownloadTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;</code>
    * @return Whether the assetStreamDownloadTelemetry field is set.
    */
   public boolean hasAssetStreamDownloadTelemetry() {
-    return assetStreamDownloadTelemetry_ != null;
+    return telemetryDataCase_ == 36;
   }
   /**
    * <code>.POGOProtos.Rpc.AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;</code>
    * @return The assetStreamDownloadTelemetry.
    */
   public POGOProtos.Rpc.AssetStreamDownloadTelemetry getAssetStreamDownloadTelemetry() {
-    return assetStreamDownloadTelemetry_ == null ? POGOProtos.Rpc.AssetStreamDownloadTelemetry.getDefaultInstance() : assetStreamDownloadTelemetry_;
+    if (telemetryDataCase_ == 36) {
+       return (POGOProtos.Rpc.AssetStreamDownloadTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.AssetStreamDownloadTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;</code>
    */
   public POGOProtos.Rpc.AssetStreamDownloadTelemetryOrBuilder getAssetStreamDownloadTelemetryOrBuilder() {
-    return getAssetStreamDownloadTelemetry();
+    if (telemetryDataCase_ == 36) {
+       return (POGOProtos.Rpc.AssetStreamDownloadTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.AssetStreamDownloadTelemetry.getDefaultInstance();
   }
 
   public static final int ASSET_STREAM_CACHE_CULLED_TELEMETRY_FIELD_NUMBER = 37;
-  private POGOProtos.Rpc.AssetStreamCacheCulledTelemetry assetStreamCacheCulledTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;</code>
    * @return Whether the assetStreamCacheCulledTelemetry field is set.
    */
   public boolean hasAssetStreamCacheCulledTelemetry() {
-    return assetStreamCacheCulledTelemetry_ != null;
+    return telemetryDataCase_ == 37;
   }
   /**
    * <code>.POGOProtos.Rpc.AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;</code>
    * @return The assetStreamCacheCulledTelemetry.
    */
   public POGOProtos.Rpc.AssetStreamCacheCulledTelemetry getAssetStreamCacheCulledTelemetry() {
-    return assetStreamCacheCulledTelemetry_ == null ? POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance() : assetStreamCacheCulledTelemetry_;
+    if (telemetryDataCase_ == 37) {
+       return (POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;</code>
    */
   public POGOProtos.Rpc.AssetStreamCacheCulledTelemetryOrBuilder getAssetStreamCacheCulledTelemetryOrBuilder() {
-    return getAssetStreamCacheCulledTelemetry();
+    if (telemetryDataCase_ == 37) {
+       return (POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance();
   }
 
   public static final int RPC_SOCKET_TIMING_TELEMETRY_FIELD_NUMBER = 38;
-  private POGOProtos.Rpc.RpcSocketResponseTelemetry rpcSocketTimingTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
    * @return Whether the rpcSocketTimingTelemetry field is set.
    */
   public boolean hasRpcSocketTimingTelemetry() {
-    return rpcSocketTimingTelemetry_ != null;
+    return telemetryDataCase_ == 38;
   }
   /**
    * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
    * @return The rpcSocketTimingTelemetry.
    */
   public POGOProtos.Rpc.RpcSocketResponseTelemetry getRpcSocketTimingTelemetry() {
-    return rpcSocketTimingTelemetry_ == null ? POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance() : rpcSocketTimingTelemetry_;
+    if (telemetryDataCase_ == 38) {
+       return (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
    */
   public POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder getRpcSocketTimingTelemetryOrBuilder() {
-    return getRpcSocketTimingTelemetry();
+    if (telemetryDataCase_ == 38) {
+       return (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
   }
 
   public static final int PERMISSIONS_FLOW_FIELD_NUMBER = 39;
-  private POGOProtos.Rpc.PermissionsFlowTelemetry permissionsFlow_;
   /**
    * <code>.POGOProtos.Rpc.PermissionsFlowTelemetry permissions_flow = 39;</code>
    * @return Whether the permissionsFlow field is set.
    */
   public boolean hasPermissionsFlow() {
-    return permissionsFlow_ != null;
+    return telemetryDataCase_ == 39;
   }
   /**
    * <code>.POGOProtos.Rpc.PermissionsFlowTelemetry permissions_flow = 39;</code>
    * @return The permissionsFlow.
    */
   public POGOProtos.Rpc.PermissionsFlowTelemetry getPermissionsFlow() {
-    return permissionsFlow_ == null ? POGOProtos.Rpc.PermissionsFlowTelemetry.getDefaultInstance() : permissionsFlow_;
+    if (telemetryDataCase_ == 39) {
+       return (POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PermissionsFlowTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PermissionsFlowTelemetry permissions_flow = 39;</code>
    */
   public POGOProtos.Rpc.PermissionsFlowTelemetryOrBuilder getPermissionsFlowOrBuilder() {
-    return getPermissionsFlow();
+    if (telemetryDataCase_ == 39) {
+       return (POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PermissionsFlowTelemetry.getDefaultInstance();
   }
 
   public static final int DEVICE_SERVICE_TOGGLE_FIELD_NUMBER = 40;
-  private POGOProtos.Rpc.DeviceServiceToggleTelemetry deviceServiceToggle_;
   /**
    * <code>.POGOProtos.Rpc.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
    * @return Whether the deviceServiceToggle field is set.
    */
   public boolean hasDeviceServiceToggle() {
-    return deviceServiceToggle_ != null;
+    return telemetryDataCase_ == 40;
   }
   /**
    * <code>.POGOProtos.Rpc.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
    * @return The deviceServiceToggle.
    */
   public POGOProtos.Rpc.DeviceServiceToggleTelemetry getDeviceServiceToggle() {
-    return deviceServiceToggle_ == null ? POGOProtos.Rpc.DeviceServiceToggleTelemetry.getDefaultInstance() : deviceServiceToggle_;
+    if (telemetryDataCase_ == 40) {
+       return (POGOProtos.Rpc.DeviceServiceToggleTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.DeviceServiceToggleTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
    */
   public POGOProtos.Rpc.DeviceServiceToggleTelemetryOrBuilder getDeviceServiceToggleOrBuilder() {
-    return getDeviceServiceToggle();
+    if (telemetryDataCase_ == 40) {
+       return (POGOProtos.Rpc.DeviceServiceToggleTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.DeviceServiceToggleTelemetry.getDefaultInstance();
   }
 
   public static final int BOOT_TELEMETRY_FIELD_NUMBER = 41;
-  private POGOProtos.Rpc.BootTelemetry bootTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.BootTelemetry boot_telemetry = 41;</code>
    * @return Whether the bootTelemetry field is set.
    */
   public boolean hasBootTelemetry() {
-    return bootTelemetry_ != null;
+    return telemetryDataCase_ == 41;
   }
   /**
    * <code>.POGOProtos.Rpc.BootTelemetry boot_telemetry = 41;</code>
    * @return The bootTelemetry.
    */
   public POGOProtos.Rpc.BootTelemetry getBootTelemetry() {
-    return bootTelemetry_ == null ? POGOProtos.Rpc.BootTelemetry.getDefaultInstance() : bootTelemetry_;
+    if (telemetryDataCase_ == 41) {
+       return (POGOProtos.Rpc.BootTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.BootTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.BootTelemetry boot_telemetry = 41;</code>
    */
   public POGOProtos.Rpc.BootTelemetryOrBuilder getBootTelemetryOrBuilder() {
-    return getBootTelemetry();
+    if (telemetryDataCase_ == 41) {
+       return (POGOProtos.Rpc.BootTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.BootTelemetry.getDefaultInstance();
   }
 
   public static final int USER_ATTRIBUTES_FIELD_NUMBER = 42;
-  private POGOProtos.Rpc.UserAttributesProto userAttributes_;
   /**
    * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
    * @return Whether the userAttributes field is set.
    */
   public boolean hasUserAttributes() {
-    return userAttributes_ != null;
+    return telemetryDataCase_ == 42;
   }
   /**
    * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
    * @return The userAttributes.
    */
   public POGOProtos.Rpc.UserAttributesProto getUserAttributes() {
-    return userAttributes_ == null ? POGOProtos.Rpc.UserAttributesProto.getDefaultInstance() : userAttributes_;
+    if (telemetryDataCase_ == 42) {
+       return (POGOProtos.Rpc.UserAttributesProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
    */
   public POGOProtos.Rpc.UserAttributesProtoOrBuilder getUserAttributesOrBuilder() {
-    return getUserAttributes();
+    if (telemetryDataCase_ == 42) {
+       return (POGOProtos.Rpc.UserAttributesProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
   }
 
   public static final int ONBOARDING_TELEMETRY_FIELD_NUMBER = 43;
-  private POGOProtos.Rpc.OnboardingTelemetry onboardingTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.OnboardingTelemetry onboarding_telemetry = 43;</code>
    * @return Whether the onboardingTelemetry field is set.
    */
   public boolean hasOnboardingTelemetry() {
-    return onboardingTelemetry_ != null;
+    return telemetryDataCase_ == 43;
   }
   /**
    * <code>.POGOProtos.Rpc.OnboardingTelemetry onboarding_telemetry = 43;</code>
    * @return The onboardingTelemetry.
    */
   public POGOProtos.Rpc.OnboardingTelemetry getOnboardingTelemetry() {
-    return onboardingTelemetry_ == null ? POGOProtos.Rpc.OnboardingTelemetry.getDefaultInstance() : onboardingTelemetry_;
+    if (telemetryDataCase_ == 43) {
+       return (POGOProtos.Rpc.OnboardingTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.OnboardingTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.OnboardingTelemetry onboarding_telemetry = 43;</code>
    */
   public POGOProtos.Rpc.OnboardingTelemetryOrBuilder getOnboardingTelemetryOrBuilder() {
-    return getOnboardingTelemetry();
+    if (telemetryDataCase_ == 43) {
+       return (POGOProtos.Rpc.OnboardingTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.OnboardingTelemetry.getDefaultInstance();
   }
 
   public static final int LOGIN_ACTION_TELEMETRY_FIELD_NUMBER = 44;
-  private POGOProtos.Rpc.LoginActionTelemetry loginActionTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.LoginActionTelemetry login_action_telemetry = 44;</code>
    * @return Whether the loginActionTelemetry field is set.
    */
   public boolean hasLoginActionTelemetry() {
-    return loginActionTelemetry_ != null;
+    return telemetryDataCase_ == 44;
   }
   /**
    * <code>.POGOProtos.Rpc.LoginActionTelemetry login_action_telemetry = 44;</code>
    * @return The loginActionTelemetry.
    */
   public POGOProtos.Rpc.LoginActionTelemetry getLoginActionTelemetry() {
-    return loginActionTelemetry_ == null ? POGOProtos.Rpc.LoginActionTelemetry.getDefaultInstance() : loginActionTelemetry_;
+    if (telemetryDataCase_ == 44) {
+       return (POGOProtos.Rpc.LoginActionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.LoginActionTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.LoginActionTelemetry login_action_telemetry = 44;</code>
    */
   public POGOProtos.Rpc.LoginActionTelemetryOrBuilder getLoginActionTelemetryOrBuilder() {
-    return getLoginActionTelemetry();
+    if (telemetryDataCase_ == 44) {
+       return (POGOProtos.Rpc.LoginActionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.LoginActionTelemetry.getDefaultInstance();
   }
 
   public static final int AR_PHOTO_SESSION_TELEMETRY_FIELD_NUMBER = 45;
-  private POGOProtos.Rpc.ArPhotoSessionProto arPhotoSessionTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ArPhotoSessionProto ar_photo_session_telemetry = 45;</code>
    * @return Whether the arPhotoSessionTelemetry field is set.
    */
   public boolean hasArPhotoSessionTelemetry() {
-    return arPhotoSessionTelemetry_ != null;
+    return telemetryDataCase_ == 45;
   }
   /**
    * <code>.POGOProtos.Rpc.ArPhotoSessionProto ar_photo_session_telemetry = 45;</code>
    * @return The arPhotoSessionTelemetry.
    */
   public POGOProtos.Rpc.ArPhotoSessionProto getArPhotoSessionTelemetry() {
-    return arPhotoSessionTelemetry_ == null ? POGOProtos.Rpc.ArPhotoSessionProto.getDefaultInstance() : arPhotoSessionTelemetry_;
+    if (telemetryDataCase_ == 45) {
+       return (POGOProtos.Rpc.ArPhotoSessionProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.ArPhotoSessionProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ArPhotoSessionProto ar_photo_session_telemetry = 45;</code>
    */
   public POGOProtos.Rpc.ArPhotoSessionProtoOrBuilder getArPhotoSessionTelemetryOrBuilder() {
-    return getArPhotoSessionTelemetry();
+    if (telemetryDataCase_ == 45) {
+       return (POGOProtos.Rpc.ArPhotoSessionProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.ArPhotoSessionProto.getDefaultInstance();
   }
 
   public static final int INVASION_TELEMETRY_FIELD_NUMBER = 46;
-  private POGOProtos.Rpc.InvasionTelemetry invasionTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.InvasionTelemetry invasion_telemetry = 46;</code>
    * @return Whether the invasionTelemetry field is set.
    */
   public boolean hasInvasionTelemetry() {
-    return invasionTelemetry_ != null;
+    return telemetryDataCase_ == 46;
   }
   /**
    * <code>.POGOProtos.Rpc.InvasionTelemetry invasion_telemetry = 46;</code>
    * @return The invasionTelemetry.
    */
   public POGOProtos.Rpc.InvasionTelemetry getInvasionTelemetry() {
-    return invasionTelemetry_ == null ? POGOProtos.Rpc.InvasionTelemetry.getDefaultInstance() : invasionTelemetry_;
+    if (telemetryDataCase_ == 46) {
+       return (POGOProtos.Rpc.InvasionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.InvasionTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.InvasionTelemetry invasion_telemetry = 46;</code>
    */
   public POGOProtos.Rpc.InvasionTelemetryOrBuilder getInvasionTelemetryOrBuilder() {
-    return getInvasionTelemetry();
+    if (telemetryDataCase_ == 46) {
+       return (POGOProtos.Rpc.InvasionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.InvasionTelemetry.getDefaultInstance();
   }
 
   public static final int COMBAT_MINIGAME_TELEMETRY_FIELD_NUMBER = 47;
-  private POGOProtos.Rpc.CombatMinigameTelemetry combatMinigameTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.CombatMinigameTelemetry combat_minigame_telemetry = 47;</code>
    * @return Whether the combatMinigameTelemetry field is set.
    */
   public boolean hasCombatMinigameTelemetry() {
-    return combatMinigameTelemetry_ != null;
+    return telemetryDataCase_ == 47;
   }
   /**
    * <code>.POGOProtos.Rpc.CombatMinigameTelemetry combat_minigame_telemetry = 47;</code>
    * @return The combatMinigameTelemetry.
    */
   public POGOProtos.Rpc.CombatMinigameTelemetry getCombatMinigameTelemetry() {
-    return combatMinigameTelemetry_ == null ? POGOProtos.Rpc.CombatMinigameTelemetry.getDefaultInstance() : combatMinigameTelemetry_;
+    if (telemetryDataCase_ == 47) {
+       return (POGOProtos.Rpc.CombatMinigameTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.CombatMinigameTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.CombatMinigameTelemetry combat_minigame_telemetry = 47;</code>
    */
   public POGOProtos.Rpc.CombatMinigameTelemetryOrBuilder getCombatMinigameTelemetryOrBuilder() {
-    return getCombatMinigameTelemetry();
+    if (telemetryDataCase_ == 47) {
+       return (POGOProtos.Rpc.CombatMinigameTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.CombatMinigameTelemetry.getDefaultInstance();
   }
 
   public static final int LEAVE_POINT_OF_INTEREST_TELEMETRY_FIELD_NUMBER = 48;
-  private POGOProtos.Rpc.LeavePointOfInterestTelemetry leavePointOfInterestTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;</code>
    * @return Whether the leavePointOfInterestTelemetry field is set.
    */
   public boolean hasLeavePointOfInterestTelemetry() {
-    return leavePointOfInterestTelemetry_ != null;
+    return telemetryDataCase_ == 48;
   }
   /**
    * <code>.POGOProtos.Rpc.LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;</code>
    * @return The leavePointOfInterestTelemetry.
    */
   public POGOProtos.Rpc.LeavePointOfInterestTelemetry getLeavePointOfInterestTelemetry() {
-    return leavePointOfInterestTelemetry_ == null ? POGOProtos.Rpc.LeavePointOfInterestTelemetry.getDefaultInstance() : leavePointOfInterestTelemetry_;
+    if (telemetryDataCase_ == 48) {
+       return (POGOProtos.Rpc.LeavePointOfInterestTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.LeavePointOfInterestTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;</code>
    */
   public POGOProtos.Rpc.LeavePointOfInterestTelemetryOrBuilder getLeavePointOfInterestTelemetryOrBuilder() {
-    return getLeavePointOfInterestTelemetry();
+    if (telemetryDataCase_ == 48) {
+       return (POGOProtos.Rpc.LeavePointOfInterestTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.LeavePointOfInterestTelemetry.getDefaultInstance();
   }
 
   public static final int VIEW_POINT_OF_INTEREST_IMAGE_TELEMETRY_FIELD_NUMBER = 49;
-  private POGOProtos.Rpc.ViewPointOfInterestImageTelemetry viewPointOfInterestImageTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;</code>
    * @return Whether the viewPointOfInterestImageTelemetry field is set.
    */
   public boolean hasViewPointOfInterestImageTelemetry() {
-    return viewPointOfInterestImageTelemetry_ != null;
+    return telemetryDataCase_ == 49;
   }
   /**
    * <code>.POGOProtos.Rpc.ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;</code>
    * @return The viewPointOfInterestImageTelemetry.
    */
   public POGOProtos.Rpc.ViewPointOfInterestImageTelemetry getViewPointOfInterestImageTelemetry() {
-    return viewPointOfInterestImageTelemetry_ == null ? POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.getDefaultInstance() : viewPointOfInterestImageTelemetry_;
+    if (telemetryDataCase_ == 49) {
+       return (POGOProtos.Rpc.ViewPointOfInterestImageTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;</code>
    */
   public POGOProtos.Rpc.ViewPointOfInterestImageTelemetryOrBuilder getViewPointOfInterestImageTelemetryOrBuilder() {
-    return getViewPointOfInterestImageTelemetry();
+    if (telemetryDataCase_ == 49) {
+       return (POGOProtos.Rpc.ViewPointOfInterestImageTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.getDefaultInstance();
   }
 
   public static final int COMBAT_HUB_ENTRANCE_TELEMETRY_FIELD_NUMBER = 50;
-  private POGOProtos.Rpc.CombatHubEntranceTelemetry combatHubEntranceTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;</code>
    * @return Whether the combatHubEntranceTelemetry field is set.
    */
   public boolean hasCombatHubEntranceTelemetry() {
-    return combatHubEntranceTelemetry_ != null;
+    return telemetryDataCase_ == 50;
   }
   /**
    * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;</code>
    * @return The combatHubEntranceTelemetry.
    */
   public POGOProtos.Rpc.CombatHubEntranceTelemetry getCombatHubEntranceTelemetry() {
-    return combatHubEntranceTelemetry_ == null ? POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance() : combatHubEntranceTelemetry_;
+    if (telemetryDataCase_ == 50) {
+       return (POGOProtos.Rpc.CombatHubEntranceTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;</code>
    */
   public POGOProtos.Rpc.CombatHubEntranceTelemetryOrBuilder getCombatHubEntranceTelemetryOrBuilder() {
-    return getCombatHubEntranceTelemetry();
+    if (telemetryDataCase_ == 50) {
+       return (POGOProtos.Rpc.CombatHubEntranceTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance();
   }
 
   public static final int LEAVE_INTERACTION_RANGE_TELEMETRY_FIELD_NUMBER = 51;
-  private POGOProtos.Rpc.LeaveInteractionRangeTelemetry leaveInteractionRangeTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;</code>
    * @return Whether the leaveInteractionRangeTelemetry field is set.
    */
   public boolean hasLeaveInteractionRangeTelemetry() {
-    return leaveInteractionRangeTelemetry_ != null;
+    return telemetryDataCase_ == 51;
   }
   /**
    * <code>.POGOProtos.Rpc.LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;</code>
    * @return The leaveInteractionRangeTelemetry.
    */
   public POGOProtos.Rpc.LeaveInteractionRangeTelemetry getLeaveInteractionRangeTelemetry() {
-    return leaveInteractionRangeTelemetry_ == null ? POGOProtos.Rpc.LeaveInteractionRangeTelemetry.getDefaultInstance() : leaveInteractionRangeTelemetry_;
+    if (telemetryDataCase_ == 51) {
+       return (POGOProtos.Rpc.LeaveInteractionRangeTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.LeaveInteractionRangeTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;</code>
    */
   public POGOProtos.Rpc.LeaveInteractionRangeTelemetryOrBuilder getLeaveInteractionRangeTelemetryOrBuilder() {
-    return getLeaveInteractionRangeTelemetry();
+    if (telemetryDataCase_ == 51) {
+       return (POGOProtos.Rpc.LeaveInteractionRangeTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.LeaveInteractionRangeTelemetry.getDefaultInstance();
   }
 
   public static final int SHOPPING_PAGE_CLICK_TELEMETRY_FIELD_NUMBER = 52;
-  private POGOProtos.Rpc.ShoppingPageClickTelemetry shoppingPageClickTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;</code>
    * @return Whether the shoppingPageClickTelemetry field is set.
    */
   public boolean hasShoppingPageClickTelemetry() {
-    return shoppingPageClickTelemetry_ != null;
+    return telemetryDataCase_ == 52;
   }
   /**
    * <code>.POGOProtos.Rpc.ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;</code>
    * @return The shoppingPageClickTelemetry.
    */
   public POGOProtos.Rpc.ShoppingPageClickTelemetry getShoppingPageClickTelemetry() {
-    return shoppingPageClickTelemetry_ == null ? POGOProtos.Rpc.ShoppingPageClickTelemetry.getDefaultInstance() : shoppingPageClickTelemetry_;
+    if (telemetryDataCase_ == 52) {
+       return (POGOProtos.Rpc.ShoppingPageClickTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ShoppingPageClickTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;</code>
    */
   public POGOProtos.Rpc.ShoppingPageClickTelemetryOrBuilder getShoppingPageClickTelemetryOrBuilder() {
-    return getShoppingPageClickTelemetry();
+    if (telemetryDataCase_ == 52) {
+       return (POGOProtos.Rpc.ShoppingPageClickTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ShoppingPageClickTelemetry.getDefaultInstance();
   }
 
   public static final int SHOPPING_PAGE_SCROLL_TELEMETRY_FIELD_NUMBER = 53;
-  private POGOProtos.Rpc.ShoppingPageScrollTelemetry shoppingPageScrollTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;</code>
    * @return Whether the shoppingPageScrollTelemetry field is set.
    */
   public boolean hasShoppingPageScrollTelemetry() {
-    return shoppingPageScrollTelemetry_ != null;
+    return telemetryDataCase_ == 53;
   }
   /**
    * <code>.POGOProtos.Rpc.ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;</code>
    * @return The shoppingPageScrollTelemetry.
    */
   public POGOProtos.Rpc.ShoppingPageScrollTelemetry getShoppingPageScrollTelemetry() {
-    return shoppingPageScrollTelemetry_ == null ? POGOProtos.Rpc.ShoppingPageScrollTelemetry.getDefaultInstance() : shoppingPageScrollTelemetry_;
+    if (telemetryDataCase_ == 53) {
+       return (POGOProtos.Rpc.ShoppingPageScrollTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ShoppingPageScrollTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;</code>
    */
   public POGOProtos.Rpc.ShoppingPageScrollTelemetryOrBuilder getShoppingPageScrollTelemetryOrBuilder() {
-    return getShoppingPageScrollTelemetry();
+    if (telemetryDataCase_ == 53) {
+       return (POGOProtos.Rpc.ShoppingPageScrollTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ShoppingPageScrollTelemetry.getDefaultInstance();
   }
 
   public static final int DEVICE_SPECIFICATIONS_TELEMETRY_FIELD_NUMBER = 54;
-  private POGOProtos.Rpc.DeviceSpecificationsTelemetry deviceSpecificationsTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.DeviceSpecificationsTelemetry device_specifications_telemetry = 54;</code>
    * @return Whether the deviceSpecificationsTelemetry field is set.
    */
   public boolean hasDeviceSpecificationsTelemetry() {
-    return deviceSpecificationsTelemetry_ != null;
+    return telemetryDataCase_ == 54;
   }
   /**
    * <code>.POGOProtos.Rpc.DeviceSpecificationsTelemetry device_specifications_telemetry = 54;</code>
    * @return The deviceSpecificationsTelemetry.
    */
   public POGOProtos.Rpc.DeviceSpecificationsTelemetry getDeviceSpecificationsTelemetry() {
-    return deviceSpecificationsTelemetry_ == null ? POGOProtos.Rpc.DeviceSpecificationsTelemetry.getDefaultInstance() : deviceSpecificationsTelemetry_;
+    if (telemetryDataCase_ == 54) {
+       return (POGOProtos.Rpc.DeviceSpecificationsTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.DeviceSpecificationsTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.DeviceSpecificationsTelemetry device_specifications_telemetry = 54;</code>
    */
   public POGOProtos.Rpc.DeviceSpecificationsTelemetryOrBuilder getDeviceSpecificationsTelemetryOrBuilder() {
-    return getDeviceSpecificationsTelemetry();
+    if (telemetryDataCase_ == 54) {
+       return (POGOProtos.Rpc.DeviceSpecificationsTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.DeviceSpecificationsTelemetry.getDefaultInstance();
   }
 
   public static final int SCREEN_RESOLUTION_TELEMETRY_FIELD_NUMBER = 55;
-  private POGOProtos.Rpc.ScreenResolutionTelemetry screenResolutionTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ScreenResolutionTelemetry screen_resolution_telemetry = 55;</code>
    * @return Whether the screenResolutionTelemetry field is set.
    */
   public boolean hasScreenResolutionTelemetry() {
-    return screenResolutionTelemetry_ != null;
+    return telemetryDataCase_ == 55;
   }
   /**
    * <code>.POGOProtos.Rpc.ScreenResolutionTelemetry screen_resolution_telemetry = 55;</code>
    * @return The screenResolutionTelemetry.
    */
   public POGOProtos.Rpc.ScreenResolutionTelemetry getScreenResolutionTelemetry() {
-    return screenResolutionTelemetry_ == null ? POGOProtos.Rpc.ScreenResolutionTelemetry.getDefaultInstance() : screenResolutionTelemetry_;
+    if (telemetryDataCase_ == 55) {
+       return (POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ScreenResolutionTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ScreenResolutionTelemetry screen_resolution_telemetry = 55;</code>
    */
   public POGOProtos.Rpc.ScreenResolutionTelemetryOrBuilder getScreenResolutionTelemetryOrBuilder() {
-    return getScreenResolutionTelemetry();
+    if (telemetryDataCase_ == 55) {
+       return (POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ScreenResolutionTelemetry.getDefaultInstance();
   }
 
   public static final int AR_BUDDY_MULTIPLAYER_SESSION_TELEMETRY_FIELD_NUMBER = 56;
-  private POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry arBuddyMultiplayerSessionTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
    * @return Whether the arBuddyMultiplayerSessionTelemetry field is set.
    */
   public boolean hasArBuddyMultiplayerSessionTelemetry() {
-    return arBuddyMultiplayerSessionTelemetry_ != null;
+    return telemetryDataCase_ == 56;
   }
   /**
    * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
    * @return The arBuddyMultiplayerSessionTelemetry.
    */
   public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry getArBuddyMultiplayerSessionTelemetry() {
-    return arBuddyMultiplayerSessionTelemetry_ == null ? POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance() : arBuddyMultiplayerSessionTelemetry_;
+    if (telemetryDataCase_ == 56) {
+       return (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
    */
   public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder() {
-    return getArBuddyMultiplayerSessionTelemetry();
+    if (telemetryDataCase_ == 56) {
+       return (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
   }
 
   public static final int BUDDY_MULTIPLAYER_CONNECTION_FAILED_TELEMETRY_FIELD_NUMBER = 57;
-  private POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddyMultiplayerConnectionFailedTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
    * @return Whether the buddyMultiplayerConnectionFailedTelemetry field is set.
    */
   public boolean hasBuddyMultiplayerConnectionFailedTelemetry() {
-    return buddyMultiplayerConnectionFailedTelemetry_ != null;
+    return telemetryDataCase_ == 57;
   }
   /**
    * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
    * @return The buddyMultiplayerConnectionFailedTelemetry.
    */
   public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto getBuddyMultiplayerConnectionFailedTelemetry() {
-    return buddyMultiplayerConnectionFailedTelemetry_ == null ? POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance() : buddyMultiplayerConnectionFailedTelemetry_;
+    if (telemetryDataCase_ == 57) {
+       return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
    */
   public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder getBuddyMultiplayerConnectionFailedTelemetryOrBuilder() {
-    return getBuddyMultiplayerConnectionFailedTelemetry();
+    if (telemetryDataCase_ == 57) {
+       return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
   }
 
   public static final int BUDDY_MULTIPLAYER_CONNECTION_SUCCEEDED_TELEMETRY_FIELD_NUMBER = 58;
-  private POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddyMultiplayerConnectionSucceededTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    * @return Whether the buddyMultiplayerConnectionSucceededTelemetry field is set.
    */
   public boolean hasBuddyMultiplayerConnectionSucceededTelemetry() {
-    return buddyMultiplayerConnectionSucceededTelemetry_ != null;
+    return telemetryDataCase_ == 58;
   }
   /**
    * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    * @return The buddyMultiplayerConnectionSucceededTelemetry.
    */
   public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto getBuddyMultiplayerConnectionSucceededTelemetry() {
-    return buddyMultiplayerConnectionSucceededTelemetry_ == null ? POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance() : buddyMultiplayerConnectionSucceededTelemetry_;
+    if (telemetryDataCase_ == 58) {
+       return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    */
   public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder getBuddyMultiplayerConnectionSucceededTelemetryOrBuilder() {
-    return getBuddyMultiplayerConnectionSucceededTelemetry();
+    if (telemetryDataCase_ == 58) {
+       return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
   }
 
   public static final int BUDDY_MULTIPLAYER_TIME_TO_GET_SESSION_TELEMETRY_FIELD_NUMBER = 59;
-  private POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddyMultiplayerTimeToGetSessionTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    * @return Whether the buddyMultiplayerTimeToGetSessionTelemetry field is set.
    */
   public boolean hasBuddyMultiplayerTimeToGetSessionTelemetry() {
-    return buddyMultiplayerTimeToGetSessionTelemetry_ != null;
+    return telemetryDataCase_ == 59;
   }
   /**
    * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    * @return The buddyMultiplayerTimeToGetSessionTelemetry.
    */
   public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto getBuddyMultiplayerTimeToGetSessionTelemetry() {
-    return buddyMultiplayerTimeToGetSessionTelemetry_ == null ? POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance() : buddyMultiplayerTimeToGetSessionTelemetry_;
+    if (telemetryDataCase_ == 59) {
+       return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    */
   public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder getBuddyMultiplayerTimeToGetSessionTelemetryOrBuilder() {
-    return getBuddyMultiplayerTimeToGetSessionTelemetry();
+    if (telemetryDataCase_ == 59) {
+       return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
   }
 
   public static final int PLAYER_HUD_NOTIFICATION_CLICK_TELEMETRY_FIELD_NUMBER = 60;
-  private POGOProtos.Rpc.PlayerHudNotificationClickTelemetry playerHudNotificationClickTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;</code>
    * @return Whether the playerHudNotificationClickTelemetry field is set.
    */
   public boolean hasPlayerHudNotificationClickTelemetry() {
-    return playerHudNotificationClickTelemetry_ != null;
+    return telemetryDataCase_ == 60;
   }
   /**
    * <code>.POGOProtos.Rpc.PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;</code>
    * @return The playerHudNotificationClickTelemetry.
    */
   public POGOProtos.Rpc.PlayerHudNotificationClickTelemetry getPlayerHudNotificationClickTelemetry() {
-    return playerHudNotificationClickTelemetry_ == null ? POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.getDefaultInstance() : playerHudNotificationClickTelemetry_;
+    if (telemetryDataCase_ == 60) {
+       return (POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;</code>
    */
   public POGOProtos.Rpc.PlayerHudNotificationClickTelemetryOrBuilder getPlayerHudNotificationClickTelemetryOrBuilder() {
-    return getPlayerHudNotificationClickTelemetry();
+    if (telemetryDataCase_ == 60) {
+       return (POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.getDefaultInstance();
   }
 
   public static final int MONODEPTH_DOWNLOAD_TELEMETRY_FIELD_NUMBER = 61;
-  private POGOProtos.Rpc.MonodepthDownloadTelemetry monodepthDownloadTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.MonodepthDownloadTelemetry monodepth_download_telemetry = 61;</code>
    * @return Whether the monodepthDownloadTelemetry field is set.
    */
   public boolean hasMonodepthDownloadTelemetry() {
-    return monodepthDownloadTelemetry_ != null;
+    return telemetryDataCase_ == 61;
   }
   /**
    * <code>.POGOProtos.Rpc.MonodepthDownloadTelemetry monodepth_download_telemetry = 61;</code>
    * @return The monodepthDownloadTelemetry.
    */
   public POGOProtos.Rpc.MonodepthDownloadTelemetry getMonodepthDownloadTelemetry() {
-    return monodepthDownloadTelemetry_ == null ? POGOProtos.Rpc.MonodepthDownloadTelemetry.getDefaultInstance() : monodepthDownloadTelemetry_;
+    if (telemetryDataCase_ == 61) {
+       return (POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.MonodepthDownloadTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.MonodepthDownloadTelemetry monodepth_download_telemetry = 61;</code>
    */
   public POGOProtos.Rpc.MonodepthDownloadTelemetryOrBuilder getMonodepthDownloadTelemetryOrBuilder() {
-    return getMonodepthDownloadTelemetry();
+    if (telemetryDataCase_ == 61) {
+       return (POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.MonodepthDownloadTelemetry.getDefaultInstance();
   }
 
   public static final int AR_MAPPING_TELEMETRY_FIELD_NUMBER = 62;
-  private POGOProtos.Rpc.ArMappingTelemetryProto arMappingTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
    * @return Whether the arMappingTelemetry field is set.
    */
   public boolean hasArMappingTelemetry() {
-    return arMappingTelemetry_ != null;
+    return telemetryDataCase_ == 62;
   }
   /**
    * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
    * @return The arMappingTelemetry.
    */
   public POGOProtos.Rpc.ArMappingTelemetryProto getArMappingTelemetry() {
-    return arMappingTelemetry_ == null ? POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance() : arMappingTelemetry_;
+    if (telemetryDataCase_ == 62) {
+       return (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
    */
   public POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder getArMappingTelemetryOrBuilder() {
-    return getArMappingTelemetry();
+    if (telemetryDataCase_ == 62) {
+       return (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_;
+    }
+    return POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
   }
 
   public static final int REMOTE_RAID_TELEMETRY_FIELD_NUMBER = 63;
-  private POGOProtos.Rpc.RemoteRaidTelemetry remoteRaidTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.RemoteRaidTelemetry remote_raid_telemetry = 63;</code>
    * @return Whether the remoteRaidTelemetry field is set.
    */
   public boolean hasRemoteRaidTelemetry() {
-    return remoteRaidTelemetry_ != null;
+    return telemetryDataCase_ == 63;
   }
   /**
    * <code>.POGOProtos.Rpc.RemoteRaidTelemetry remote_raid_telemetry = 63;</code>
    * @return The remoteRaidTelemetry.
    */
   public POGOProtos.Rpc.RemoteRaidTelemetry getRemoteRaidTelemetry() {
-    return remoteRaidTelemetry_ == null ? POGOProtos.Rpc.RemoteRaidTelemetry.getDefaultInstance() : remoteRaidTelemetry_;
+    if (telemetryDataCase_ == 63) {
+       return (POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.RemoteRaidTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.RemoteRaidTelemetry remote_raid_telemetry = 63;</code>
    */
   public POGOProtos.Rpc.RemoteRaidTelemetryOrBuilder getRemoteRaidTelemetryOrBuilder() {
-    return getRemoteRaidTelemetry();
+    if (telemetryDataCase_ == 63) {
+       return (POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.RemoteRaidTelemetry.getDefaultInstance();
+  }
+
+  public static final int DEVICE_OS_TELEMETRY_FIELD_NUMBER = 64;
+  /**
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * @return Whether the deviceOsTelemetry field is set.
+   */
+  public boolean hasDeviceOsTelemetry() {
+    return telemetryDataCase_ == 64;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * @return The deviceOsTelemetry.
+   */
+  public POGOProtos.Rpc.DeviceOSTelemetry getDeviceOsTelemetry() {
+    if (telemetryDataCase_ == 64) {
+       return (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   */
+  public POGOProtos.Rpc.DeviceOSTelemetryOrBuilder getDeviceOsTelemetryOrBuilder() {
+    if (telemetryDataCase_ == 64) {
+       return (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
   }
 
   public static final int SERVER_DATA_FIELD_NUMBER = 1001;
@@ -2434,194 +3019,197 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (bootTime_ != null) {
-      output.writeMessage(1, getBootTime());
+    if (telemetryDataCase_ == 1) {
+      output.writeMessage(1, (POGOProtos.Rpc.BootTime) telemetryData_);
     }
-    if (frameRate_ != null) {
-      output.writeMessage(2, getFrameRate());
+    if (telemetryDataCase_ == 2) {
+      output.writeMessage(2, (POGOProtos.Rpc.FrameRate) telemetryData_);
     }
-    if (genericClickTelemetry_ != null) {
-      output.writeMessage(3, getGenericClickTelemetry());
+    if (telemetryDataCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.GenericClickTelemetry) telemetryData_);
     }
-    if (mapEventsTelemetry_ != null) {
-      output.writeMessage(4, getMapEventsTelemetry());
+    if (telemetryDataCase_ == 4) {
+      output.writeMessage(4, (POGOProtos.Rpc.MapEventsTelemetry) telemetryData_);
     }
-    if (spinPokestopTelemetry_ != null) {
-      output.writeMessage(5, getSpinPokestopTelemetry());
+    if (telemetryDataCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.SpinPokestopTelemetry) telemetryData_);
     }
-    if (profilePageTelemetry_ != null) {
-      output.writeMessage(6, getProfilePageTelemetry());
+    if (telemetryDataCase_ == 6) {
+      output.writeMessage(6, (POGOProtos.Rpc.ProfilePageTelemetry) telemetryData_);
     }
-    if (shoppingPageTelemetry_ != null) {
-      output.writeMessage(7, getShoppingPageTelemetry());
+    if (telemetryDataCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.ShoppingPageTelemetry) telemetryData_);
     }
-    if (encounterPokemonTelemetry_ != null) {
-      output.writeMessage(8, getEncounterPokemonTelemetry());
+    if (telemetryDataCase_ == 8) {
+      output.writeMessage(8, (POGOProtos.Rpc.EncounterPokemonTelemetry) telemetryData_);
     }
-    if (catchPokemonTelemetry_ != null) {
-      output.writeMessage(9, getCatchPokemonTelemetry());
+    if (telemetryDataCase_ == 9) {
+      output.writeMessage(9, (POGOProtos.Rpc.CatchPokemonTelemetry) telemetryData_);
     }
-    if (deployPokemonTelemetry_ != null) {
-      output.writeMessage(10, getDeployPokemonTelemetry());
+    if (telemetryDataCase_ == 10) {
+      output.writeMessage(10, (POGOProtos.Rpc.DeployPokemonTelemetry) telemetryData_);
     }
-    if (feedPokemonTelemetry_ != null) {
-      output.writeMessage(11, getFeedPokemonTelemetry());
+    if (telemetryDataCase_ == 11) {
+      output.writeMessage(11, (POGOProtos.Rpc.FeedPokemonTelemetry) telemetryData_);
     }
-    if (evolvePokemonTelemetry_ != null) {
-      output.writeMessage(12, getEvolvePokemonTelemetry());
+    if (telemetryDataCase_ == 12) {
+      output.writeMessage(12, (POGOProtos.Rpc.EvolvePokemonTelemetry) telemetryData_);
     }
-    if (releasePokemonTelemetry_ != null) {
-      output.writeMessage(13, getReleasePokemonTelemetry());
+    if (telemetryDataCase_ == 13) {
+      output.writeMessage(13, (POGOProtos.Rpc.ReleasePokemonTelemetry) telemetryData_);
     }
-    if (nicknamePokemonTelemetry_ != null) {
-      output.writeMessage(14, getNicknamePokemonTelemetry());
+    if (telemetryDataCase_ == 14) {
+      output.writeMessage(14, (POGOProtos.Rpc.NicknamePokemonTelemetry) telemetryData_);
     }
-    if (newsPageTelemetry_ != null) {
-      output.writeMessage(15, getNewsPageTelemetry());
+    if (telemetryDataCase_ == 15) {
+      output.writeMessage(15, (POGOProtos.Rpc.NewsPageTelemetry) telemetryData_);
     }
-    if (itemTelemetry_ != null) {
-      output.writeMessage(16, getItemTelemetry());
+    if (telemetryDataCase_ == 16) {
+      output.writeMessage(16, (POGOProtos.Rpc.ItemTelemetry) telemetryData_);
     }
-    if (battlePartyTelemetry_ != null) {
-      output.writeMessage(17, getBattlePartyTelemetry());
+    if (telemetryDataCase_ == 17) {
+      output.writeMessage(17, (POGOProtos.Rpc.BattlePartyTelemetry) telemetryData_);
     }
-    if (passcodeRedeemTelemetry_ != null) {
-      output.writeMessage(18, getPasscodeRedeemTelemetry());
+    if (telemetryDataCase_ == 18) {
+      output.writeMessage(18, (POGOProtos.Rpc.PasscodeRedeemTelemetry) telemetryData_);
     }
-    if (linkLoginTelemetry_ != null) {
-      output.writeMessage(19, getLinkLoginTelemetry());
+    if (telemetryDataCase_ == 19) {
+      output.writeMessage(19, (POGOProtos.Rpc.LinkLoginTelemetry) telemetryData_);
     }
-    if (raidTelemetry_ != null) {
-      output.writeMessage(20, getRaidTelemetry());
+    if (telemetryDataCase_ == 20) {
+      output.writeMessage(20, (POGOProtos.Rpc.RaidTelemetry) telemetryData_);
     }
-    if (pushNotificationTelemetry_ != null) {
-      output.writeMessage(21, getPushNotificationTelemetry());
+    if (telemetryDataCase_ == 21) {
+      output.writeMessage(21, (POGOProtos.Rpc.PushNotificationTelemetry) telemetryData_);
     }
-    if (avatarCustomizationTelemetry_ != null) {
-      output.writeMessage(22, getAvatarCustomizationTelemetry());
+    if (telemetryDataCase_ == 22) {
+      output.writeMessage(22, (POGOProtos.Rpc.AvatarCustomizationTelemetry) telemetryData_);
     }
-    if (readPointOfInterestDescriptionTelemetry_ != null) {
-      output.writeMessage(23, getReadPointOfInterestDescriptionTelemetry());
+    if (telemetryDataCase_ == 23) {
+      output.writeMessage(23, (POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry) telemetryData_);
     }
-    if (webTelemetry_ != null) {
-      output.writeMessage(24, getWebTelemetry());
+    if (telemetryDataCase_ == 24) {
+      output.writeMessage(24, (POGOProtos.Rpc.WebTelemetry) telemetryData_);
     }
-    if (changeArTelemetry_ != null) {
-      output.writeMessage(25, getChangeArTelemetry());
+    if (telemetryDataCase_ == 25) {
+      output.writeMessage(25, (POGOProtos.Rpc.ChangeArTelemetry) telemetryData_);
     }
-    if (weatherDetailClickTelemetry_ != null) {
-      output.writeMessage(26, getWeatherDetailClickTelemetry());
+    if (telemetryDataCase_ == 26) {
+      output.writeMessage(26, (POGOProtos.Rpc.WeatherDetailClickTelemetry) telemetryData_);
     }
-    if (userIssueWeatherReport_ != null) {
-      output.writeMessage(27, getUserIssueWeatherReport());
+    if (telemetryDataCase_ == 27) {
+      output.writeMessage(27, (POGOProtos.Rpc.UserIssueWeatherReport) telemetryData_);
     }
-    if (pokemonInventoryTelemetry_ != null) {
-      output.writeMessage(28, getPokemonInventoryTelemetry());
+    if (telemetryDataCase_ == 28) {
+      output.writeMessage(28, (POGOProtos.Rpc.PokemonInventoryTelemetry) telemetryData_);
     }
-    if (socialTelemetry_ != null) {
-      output.writeMessage(29, getSocialTelemetry());
+    if (telemetryDataCase_ == 29) {
+      output.writeMessage(29, (POGOProtos.Rpc.SocialTelemetry) telemetryData_);
     }
-    if (checkEncounterInfoTelemetry_ != null) {
-      output.writeMessage(30, getCheckEncounterInfoTelemetry());
+    if (telemetryDataCase_ == 30) {
+      output.writeMessage(30, (POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry) telemetryData_);
     }
-    if (pokemonGoPlusTelemetry_ != null) {
-      output.writeMessage(31, getPokemonGoPlusTelemetry());
+    if (telemetryDataCase_ == 31) {
+      output.writeMessage(31, (POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_);
     }
-    if (rpcTimingTelemetry_ != null) {
-      output.writeMessage(32, getRpcTimingTelemetry());
+    if (telemetryDataCase_ == 32) {
+      output.writeMessage(32, (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_);
     }
-    if (socialGiftCountTelemetry_ != null) {
-      output.writeMessage(33, getSocialGiftCountTelemetry());
+    if (telemetryDataCase_ == 33) {
+      output.writeMessage(33, (POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_);
     }
-    if (assetBundleTelemetry_ != null) {
-      output.writeMessage(34, getAssetBundleTelemetry());
+    if (telemetryDataCase_ == 34) {
+      output.writeMessage(34, (POGOProtos.Rpc.AssetBundleDownloadTelemetry) telemetryData_);
     }
-    if (assetPoiDownloadTelemetry_ != null) {
-      output.writeMessage(35, getAssetPoiDownloadTelemetry());
+    if (telemetryDataCase_ == 35) {
+      output.writeMessage(35, (POGOProtos.Rpc.AssetPoiDownloadTelemetry) telemetryData_);
     }
-    if (assetStreamDownloadTelemetry_ != null) {
-      output.writeMessage(36, getAssetStreamDownloadTelemetry());
+    if (telemetryDataCase_ == 36) {
+      output.writeMessage(36, (POGOProtos.Rpc.AssetStreamDownloadTelemetry) telemetryData_);
     }
-    if (assetStreamCacheCulledTelemetry_ != null) {
-      output.writeMessage(37, getAssetStreamCacheCulledTelemetry());
+    if (telemetryDataCase_ == 37) {
+      output.writeMessage(37, (POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_);
     }
-    if (rpcSocketTimingTelemetry_ != null) {
-      output.writeMessage(38, getRpcSocketTimingTelemetry());
+    if (telemetryDataCase_ == 38) {
+      output.writeMessage(38, (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_);
     }
-    if (permissionsFlow_ != null) {
-      output.writeMessage(39, getPermissionsFlow());
+    if (telemetryDataCase_ == 39) {
+      output.writeMessage(39, (POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_);
     }
-    if (deviceServiceToggle_ != null) {
-      output.writeMessage(40, getDeviceServiceToggle());
+    if (telemetryDataCase_ == 40) {
+      output.writeMessage(40, (POGOProtos.Rpc.DeviceServiceToggleTelemetry) telemetryData_);
     }
-    if (bootTelemetry_ != null) {
-      output.writeMessage(41, getBootTelemetry());
+    if (telemetryDataCase_ == 41) {
+      output.writeMessage(41, (POGOProtos.Rpc.BootTelemetry) telemetryData_);
     }
-    if (userAttributes_ != null) {
-      output.writeMessage(42, getUserAttributes());
+    if (telemetryDataCase_ == 42) {
+      output.writeMessage(42, (POGOProtos.Rpc.UserAttributesProto) telemetryData_);
     }
-    if (onboardingTelemetry_ != null) {
-      output.writeMessage(43, getOnboardingTelemetry());
+    if (telemetryDataCase_ == 43) {
+      output.writeMessage(43, (POGOProtos.Rpc.OnboardingTelemetry) telemetryData_);
     }
-    if (loginActionTelemetry_ != null) {
-      output.writeMessage(44, getLoginActionTelemetry());
+    if (telemetryDataCase_ == 44) {
+      output.writeMessage(44, (POGOProtos.Rpc.LoginActionTelemetry) telemetryData_);
     }
-    if (arPhotoSessionTelemetry_ != null) {
-      output.writeMessage(45, getArPhotoSessionTelemetry());
+    if (telemetryDataCase_ == 45) {
+      output.writeMessage(45, (POGOProtos.Rpc.ArPhotoSessionProto) telemetryData_);
     }
-    if (invasionTelemetry_ != null) {
-      output.writeMessage(46, getInvasionTelemetry());
+    if (telemetryDataCase_ == 46) {
+      output.writeMessage(46, (POGOProtos.Rpc.InvasionTelemetry) telemetryData_);
     }
-    if (combatMinigameTelemetry_ != null) {
-      output.writeMessage(47, getCombatMinigameTelemetry());
+    if (telemetryDataCase_ == 47) {
+      output.writeMessage(47, (POGOProtos.Rpc.CombatMinigameTelemetry) telemetryData_);
     }
-    if (leavePointOfInterestTelemetry_ != null) {
-      output.writeMessage(48, getLeavePointOfInterestTelemetry());
+    if (telemetryDataCase_ == 48) {
+      output.writeMessage(48, (POGOProtos.Rpc.LeavePointOfInterestTelemetry) telemetryData_);
     }
-    if (viewPointOfInterestImageTelemetry_ != null) {
-      output.writeMessage(49, getViewPointOfInterestImageTelemetry());
+    if (telemetryDataCase_ == 49) {
+      output.writeMessage(49, (POGOProtos.Rpc.ViewPointOfInterestImageTelemetry) telemetryData_);
     }
-    if (combatHubEntranceTelemetry_ != null) {
-      output.writeMessage(50, getCombatHubEntranceTelemetry());
+    if (telemetryDataCase_ == 50) {
+      output.writeMessage(50, (POGOProtos.Rpc.CombatHubEntranceTelemetry) telemetryData_);
     }
-    if (leaveInteractionRangeTelemetry_ != null) {
-      output.writeMessage(51, getLeaveInteractionRangeTelemetry());
+    if (telemetryDataCase_ == 51) {
+      output.writeMessage(51, (POGOProtos.Rpc.LeaveInteractionRangeTelemetry) telemetryData_);
     }
-    if (shoppingPageClickTelemetry_ != null) {
-      output.writeMessage(52, getShoppingPageClickTelemetry());
+    if (telemetryDataCase_ == 52) {
+      output.writeMessage(52, (POGOProtos.Rpc.ShoppingPageClickTelemetry) telemetryData_);
     }
-    if (shoppingPageScrollTelemetry_ != null) {
-      output.writeMessage(53, getShoppingPageScrollTelemetry());
+    if (telemetryDataCase_ == 53) {
+      output.writeMessage(53, (POGOProtos.Rpc.ShoppingPageScrollTelemetry) telemetryData_);
     }
-    if (deviceSpecificationsTelemetry_ != null) {
-      output.writeMessage(54, getDeviceSpecificationsTelemetry());
+    if (telemetryDataCase_ == 54) {
+      output.writeMessage(54, (POGOProtos.Rpc.DeviceSpecificationsTelemetry) telemetryData_);
     }
-    if (screenResolutionTelemetry_ != null) {
-      output.writeMessage(55, getScreenResolutionTelemetry());
+    if (telemetryDataCase_ == 55) {
+      output.writeMessage(55, (POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_);
     }
-    if (arBuddyMultiplayerSessionTelemetry_ != null) {
-      output.writeMessage(56, getArBuddyMultiplayerSessionTelemetry());
+    if (telemetryDataCase_ == 56) {
+      output.writeMessage(56, (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_);
     }
-    if (buddyMultiplayerConnectionFailedTelemetry_ != null) {
-      output.writeMessage(57, getBuddyMultiplayerConnectionFailedTelemetry());
+    if (telemetryDataCase_ == 57) {
+      output.writeMessage(57, (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_);
     }
-    if (buddyMultiplayerConnectionSucceededTelemetry_ != null) {
-      output.writeMessage(58, getBuddyMultiplayerConnectionSucceededTelemetry());
+    if (telemetryDataCase_ == 58) {
+      output.writeMessage(58, (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_);
     }
-    if (buddyMultiplayerTimeToGetSessionTelemetry_ != null) {
-      output.writeMessage(59, getBuddyMultiplayerTimeToGetSessionTelemetry());
+    if (telemetryDataCase_ == 59) {
+      output.writeMessage(59, (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_);
     }
-    if (playerHudNotificationClickTelemetry_ != null) {
-      output.writeMessage(60, getPlayerHudNotificationClickTelemetry());
+    if (telemetryDataCase_ == 60) {
+      output.writeMessage(60, (POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_);
     }
-    if (monodepthDownloadTelemetry_ != null) {
-      output.writeMessage(61, getMonodepthDownloadTelemetry());
+    if (telemetryDataCase_ == 61) {
+      output.writeMessage(61, (POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_);
     }
-    if (arMappingTelemetry_ != null) {
-      output.writeMessage(62, getArMappingTelemetry());
+    if (telemetryDataCase_ == 62) {
+      output.writeMessage(62, (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_);
     }
-    if (remoteRaidTelemetry_ != null) {
-      output.writeMessage(63, getRemoteRaidTelemetry());
+    if (telemetryDataCase_ == 63) {
+      output.writeMessage(63, (POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_);
+    }
+    if (telemetryDataCase_ == 64) {
+      output.writeMessage(64, (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_);
     }
     if (serverData_ != null) {
       output.writeMessage(1001, getServerData());
@@ -2638,257 +3226,261 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (bootTime_ != null) {
+    if (telemetryDataCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getBootTime());
+        .computeMessageSize(1, (POGOProtos.Rpc.BootTime) telemetryData_);
     }
-    if (frameRate_ != null) {
+    if (telemetryDataCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getFrameRate());
+        .computeMessageSize(2, (POGOProtos.Rpc.FrameRate) telemetryData_);
     }
-    if (genericClickTelemetry_ != null) {
+    if (telemetryDataCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getGenericClickTelemetry());
+        .computeMessageSize(3, (POGOProtos.Rpc.GenericClickTelemetry) telemetryData_);
     }
-    if (mapEventsTelemetry_ != null) {
+    if (telemetryDataCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getMapEventsTelemetry());
+        .computeMessageSize(4, (POGOProtos.Rpc.MapEventsTelemetry) telemetryData_);
     }
-    if (spinPokestopTelemetry_ != null) {
+    if (telemetryDataCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getSpinPokestopTelemetry());
+        .computeMessageSize(5, (POGOProtos.Rpc.SpinPokestopTelemetry) telemetryData_);
     }
-    if (profilePageTelemetry_ != null) {
+    if (telemetryDataCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getProfilePageTelemetry());
+        .computeMessageSize(6, (POGOProtos.Rpc.ProfilePageTelemetry) telemetryData_);
     }
-    if (shoppingPageTelemetry_ != null) {
+    if (telemetryDataCase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getShoppingPageTelemetry());
+        .computeMessageSize(7, (POGOProtos.Rpc.ShoppingPageTelemetry) telemetryData_);
     }
-    if (encounterPokemonTelemetry_ != null) {
+    if (telemetryDataCase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getEncounterPokemonTelemetry());
+        .computeMessageSize(8, (POGOProtos.Rpc.EncounterPokemonTelemetry) telemetryData_);
     }
-    if (catchPokemonTelemetry_ != null) {
+    if (telemetryDataCase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, getCatchPokemonTelemetry());
+        .computeMessageSize(9, (POGOProtos.Rpc.CatchPokemonTelemetry) telemetryData_);
     }
-    if (deployPokemonTelemetry_ != null) {
+    if (telemetryDataCase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, getDeployPokemonTelemetry());
+        .computeMessageSize(10, (POGOProtos.Rpc.DeployPokemonTelemetry) telemetryData_);
     }
-    if (feedPokemonTelemetry_ != null) {
+    if (telemetryDataCase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(11, getFeedPokemonTelemetry());
+        .computeMessageSize(11, (POGOProtos.Rpc.FeedPokemonTelemetry) telemetryData_);
     }
-    if (evolvePokemonTelemetry_ != null) {
+    if (telemetryDataCase_ == 12) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, getEvolvePokemonTelemetry());
+        .computeMessageSize(12, (POGOProtos.Rpc.EvolvePokemonTelemetry) telemetryData_);
     }
-    if (releasePokemonTelemetry_ != null) {
+    if (telemetryDataCase_ == 13) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(13, getReleasePokemonTelemetry());
+        .computeMessageSize(13, (POGOProtos.Rpc.ReleasePokemonTelemetry) telemetryData_);
     }
-    if (nicknamePokemonTelemetry_ != null) {
+    if (telemetryDataCase_ == 14) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(14, getNicknamePokemonTelemetry());
+        .computeMessageSize(14, (POGOProtos.Rpc.NicknamePokemonTelemetry) telemetryData_);
     }
-    if (newsPageTelemetry_ != null) {
+    if (telemetryDataCase_ == 15) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(15, getNewsPageTelemetry());
+        .computeMessageSize(15, (POGOProtos.Rpc.NewsPageTelemetry) telemetryData_);
     }
-    if (itemTelemetry_ != null) {
+    if (telemetryDataCase_ == 16) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(16, getItemTelemetry());
+        .computeMessageSize(16, (POGOProtos.Rpc.ItemTelemetry) telemetryData_);
     }
-    if (battlePartyTelemetry_ != null) {
+    if (telemetryDataCase_ == 17) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(17, getBattlePartyTelemetry());
+        .computeMessageSize(17, (POGOProtos.Rpc.BattlePartyTelemetry) telemetryData_);
     }
-    if (passcodeRedeemTelemetry_ != null) {
+    if (telemetryDataCase_ == 18) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(18, getPasscodeRedeemTelemetry());
+        .computeMessageSize(18, (POGOProtos.Rpc.PasscodeRedeemTelemetry) telemetryData_);
     }
-    if (linkLoginTelemetry_ != null) {
+    if (telemetryDataCase_ == 19) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(19, getLinkLoginTelemetry());
+        .computeMessageSize(19, (POGOProtos.Rpc.LinkLoginTelemetry) telemetryData_);
     }
-    if (raidTelemetry_ != null) {
+    if (telemetryDataCase_ == 20) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(20, getRaidTelemetry());
+        .computeMessageSize(20, (POGOProtos.Rpc.RaidTelemetry) telemetryData_);
     }
-    if (pushNotificationTelemetry_ != null) {
+    if (telemetryDataCase_ == 21) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(21, getPushNotificationTelemetry());
+        .computeMessageSize(21, (POGOProtos.Rpc.PushNotificationTelemetry) telemetryData_);
     }
-    if (avatarCustomizationTelemetry_ != null) {
+    if (telemetryDataCase_ == 22) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(22, getAvatarCustomizationTelemetry());
+        .computeMessageSize(22, (POGOProtos.Rpc.AvatarCustomizationTelemetry) telemetryData_);
     }
-    if (readPointOfInterestDescriptionTelemetry_ != null) {
+    if (telemetryDataCase_ == 23) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(23, getReadPointOfInterestDescriptionTelemetry());
+        .computeMessageSize(23, (POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry) telemetryData_);
     }
-    if (webTelemetry_ != null) {
+    if (telemetryDataCase_ == 24) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(24, getWebTelemetry());
+        .computeMessageSize(24, (POGOProtos.Rpc.WebTelemetry) telemetryData_);
     }
-    if (changeArTelemetry_ != null) {
+    if (telemetryDataCase_ == 25) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(25, getChangeArTelemetry());
+        .computeMessageSize(25, (POGOProtos.Rpc.ChangeArTelemetry) telemetryData_);
     }
-    if (weatherDetailClickTelemetry_ != null) {
+    if (telemetryDataCase_ == 26) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(26, getWeatherDetailClickTelemetry());
+        .computeMessageSize(26, (POGOProtos.Rpc.WeatherDetailClickTelemetry) telemetryData_);
     }
-    if (userIssueWeatherReport_ != null) {
+    if (telemetryDataCase_ == 27) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(27, getUserIssueWeatherReport());
+        .computeMessageSize(27, (POGOProtos.Rpc.UserIssueWeatherReport) telemetryData_);
     }
-    if (pokemonInventoryTelemetry_ != null) {
+    if (telemetryDataCase_ == 28) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(28, getPokemonInventoryTelemetry());
+        .computeMessageSize(28, (POGOProtos.Rpc.PokemonInventoryTelemetry) telemetryData_);
     }
-    if (socialTelemetry_ != null) {
+    if (telemetryDataCase_ == 29) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(29, getSocialTelemetry());
+        .computeMessageSize(29, (POGOProtos.Rpc.SocialTelemetry) telemetryData_);
     }
-    if (checkEncounterInfoTelemetry_ != null) {
+    if (telemetryDataCase_ == 30) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(30, getCheckEncounterInfoTelemetry());
+        .computeMessageSize(30, (POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry) telemetryData_);
     }
-    if (pokemonGoPlusTelemetry_ != null) {
+    if (telemetryDataCase_ == 31) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(31, getPokemonGoPlusTelemetry());
+        .computeMessageSize(31, (POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_);
     }
-    if (rpcTimingTelemetry_ != null) {
+    if (telemetryDataCase_ == 32) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(32, getRpcTimingTelemetry());
+        .computeMessageSize(32, (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_);
     }
-    if (socialGiftCountTelemetry_ != null) {
+    if (telemetryDataCase_ == 33) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(33, getSocialGiftCountTelemetry());
+        .computeMessageSize(33, (POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_);
     }
-    if (assetBundleTelemetry_ != null) {
+    if (telemetryDataCase_ == 34) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(34, getAssetBundleTelemetry());
+        .computeMessageSize(34, (POGOProtos.Rpc.AssetBundleDownloadTelemetry) telemetryData_);
     }
-    if (assetPoiDownloadTelemetry_ != null) {
+    if (telemetryDataCase_ == 35) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(35, getAssetPoiDownloadTelemetry());
+        .computeMessageSize(35, (POGOProtos.Rpc.AssetPoiDownloadTelemetry) telemetryData_);
     }
-    if (assetStreamDownloadTelemetry_ != null) {
+    if (telemetryDataCase_ == 36) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(36, getAssetStreamDownloadTelemetry());
+        .computeMessageSize(36, (POGOProtos.Rpc.AssetStreamDownloadTelemetry) telemetryData_);
     }
-    if (assetStreamCacheCulledTelemetry_ != null) {
+    if (telemetryDataCase_ == 37) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(37, getAssetStreamCacheCulledTelemetry());
+        .computeMessageSize(37, (POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_);
     }
-    if (rpcSocketTimingTelemetry_ != null) {
+    if (telemetryDataCase_ == 38) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(38, getRpcSocketTimingTelemetry());
+        .computeMessageSize(38, (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_);
     }
-    if (permissionsFlow_ != null) {
+    if (telemetryDataCase_ == 39) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(39, getPermissionsFlow());
+        .computeMessageSize(39, (POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_);
     }
-    if (deviceServiceToggle_ != null) {
+    if (telemetryDataCase_ == 40) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(40, getDeviceServiceToggle());
+        .computeMessageSize(40, (POGOProtos.Rpc.DeviceServiceToggleTelemetry) telemetryData_);
     }
-    if (bootTelemetry_ != null) {
+    if (telemetryDataCase_ == 41) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(41, getBootTelemetry());
+        .computeMessageSize(41, (POGOProtos.Rpc.BootTelemetry) telemetryData_);
     }
-    if (userAttributes_ != null) {
+    if (telemetryDataCase_ == 42) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(42, getUserAttributes());
+        .computeMessageSize(42, (POGOProtos.Rpc.UserAttributesProto) telemetryData_);
     }
-    if (onboardingTelemetry_ != null) {
+    if (telemetryDataCase_ == 43) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(43, getOnboardingTelemetry());
+        .computeMessageSize(43, (POGOProtos.Rpc.OnboardingTelemetry) telemetryData_);
     }
-    if (loginActionTelemetry_ != null) {
+    if (telemetryDataCase_ == 44) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(44, getLoginActionTelemetry());
+        .computeMessageSize(44, (POGOProtos.Rpc.LoginActionTelemetry) telemetryData_);
     }
-    if (arPhotoSessionTelemetry_ != null) {
+    if (telemetryDataCase_ == 45) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(45, getArPhotoSessionTelemetry());
+        .computeMessageSize(45, (POGOProtos.Rpc.ArPhotoSessionProto) telemetryData_);
     }
-    if (invasionTelemetry_ != null) {
+    if (telemetryDataCase_ == 46) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(46, getInvasionTelemetry());
+        .computeMessageSize(46, (POGOProtos.Rpc.InvasionTelemetry) telemetryData_);
     }
-    if (combatMinigameTelemetry_ != null) {
+    if (telemetryDataCase_ == 47) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(47, getCombatMinigameTelemetry());
+        .computeMessageSize(47, (POGOProtos.Rpc.CombatMinigameTelemetry) telemetryData_);
     }
-    if (leavePointOfInterestTelemetry_ != null) {
+    if (telemetryDataCase_ == 48) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(48, getLeavePointOfInterestTelemetry());
+        .computeMessageSize(48, (POGOProtos.Rpc.LeavePointOfInterestTelemetry) telemetryData_);
     }
-    if (viewPointOfInterestImageTelemetry_ != null) {
+    if (telemetryDataCase_ == 49) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(49, getViewPointOfInterestImageTelemetry());
+        .computeMessageSize(49, (POGOProtos.Rpc.ViewPointOfInterestImageTelemetry) telemetryData_);
     }
-    if (combatHubEntranceTelemetry_ != null) {
+    if (telemetryDataCase_ == 50) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(50, getCombatHubEntranceTelemetry());
+        .computeMessageSize(50, (POGOProtos.Rpc.CombatHubEntranceTelemetry) telemetryData_);
     }
-    if (leaveInteractionRangeTelemetry_ != null) {
+    if (telemetryDataCase_ == 51) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(51, getLeaveInteractionRangeTelemetry());
+        .computeMessageSize(51, (POGOProtos.Rpc.LeaveInteractionRangeTelemetry) telemetryData_);
     }
-    if (shoppingPageClickTelemetry_ != null) {
+    if (telemetryDataCase_ == 52) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(52, getShoppingPageClickTelemetry());
+        .computeMessageSize(52, (POGOProtos.Rpc.ShoppingPageClickTelemetry) telemetryData_);
     }
-    if (shoppingPageScrollTelemetry_ != null) {
+    if (telemetryDataCase_ == 53) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(53, getShoppingPageScrollTelemetry());
+        .computeMessageSize(53, (POGOProtos.Rpc.ShoppingPageScrollTelemetry) telemetryData_);
     }
-    if (deviceSpecificationsTelemetry_ != null) {
+    if (telemetryDataCase_ == 54) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(54, getDeviceSpecificationsTelemetry());
+        .computeMessageSize(54, (POGOProtos.Rpc.DeviceSpecificationsTelemetry) telemetryData_);
     }
-    if (screenResolutionTelemetry_ != null) {
+    if (telemetryDataCase_ == 55) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(55, getScreenResolutionTelemetry());
+        .computeMessageSize(55, (POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_);
     }
-    if (arBuddyMultiplayerSessionTelemetry_ != null) {
+    if (telemetryDataCase_ == 56) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(56, getArBuddyMultiplayerSessionTelemetry());
+        .computeMessageSize(56, (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_);
     }
-    if (buddyMultiplayerConnectionFailedTelemetry_ != null) {
+    if (telemetryDataCase_ == 57) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(57, getBuddyMultiplayerConnectionFailedTelemetry());
+        .computeMessageSize(57, (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_);
     }
-    if (buddyMultiplayerConnectionSucceededTelemetry_ != null) {
+    if (telemetryDataCase_ == 58) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(58, getBuddyMultiplayerConnectionSucceededTelemetry());
+        .computeMessageSize(58, (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_);
     }
-    if (buddyMultiplayerTimeToGetSessionTelemetry_ != null) {
+    if (telemetryDataCase_ == 59) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(59, getBuddyMultiplayerTimeToGetSessionTelemetry());
+        .computeMessageSize(59, (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_);
     }
-    if (playerHudNotificationClickTelemetry_ != null) {
+    if (telemetryDataCase_ == 60) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(60, getPlayerHudNotificationClickTelemetry());
+        .computeMessageSize(60, (POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_);
     }
-    if (monodepthDownloadTelemetry_ != null) {
+    if (telemetryDataCase_ == 61) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(61, getMonodepthDownloadTelemetry());
+        .computeMessageSize(61, (POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_);
     }
-    if (arMappingTelemetry_ != null) {
+    if (telemetryDataCase_ == 62) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(62, getArMappingTelemetry());
+        .computeMessageSize(62, (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_);
     }
-    if (remoteRaidTelemetry_ != null) {
+    if (telemetryDataCase_ == 63) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(63, getRemoteRaidTelemetry());
+        .computeMessageSize(63, (POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_);
+    }
+    if (telemetryDataCase_ == 64) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(64, (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_);
     }
     if (serverData_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -2913,321 +3505,6 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.HoloholoClientTelemetryOmniProto other = (POGOProtos.Rpc.HoloholoClientTelemetryOmniProto) obj;
 
-    if (hasBootTime() != other.hasBootTime()) return false;
-    if (hasBootTime()) {
-      if (!getBootTime()
-          .equals(other.getBootTime())) return false;
-    }
-    if (hasFrameRate() != other.hasFrameRate()) return false;
-    if (hasFrameRate()) {
-      if (!getFrameRate()
-          .equals(other.getFrameRate())) return false;
-    }
-    if (hasGenericClickTelemetry() != other.hasGenericClickTelemetry()) return false;
-    if (hasGenericClickTelemetry()) {
-      if (!getGenericClickTelemetry()
-          .equals(other.getGenericClickTelemetry())) return false;
-    }
-    if (hasMapEventsTelemetry() != other.hasMapEventsTelemetry()) return false;
-    if (hasMapEventsTelemetry()) {
-      if (!getMapEventsTelemetry()
-          .equals(other.getMapEventsTelemetry())) return false;
-    }
-    if (hasSpinPokestopTelemetry() != other.hasSpinPokestopTelemetry()) return false;
-    if (hasSpinPokestopTelemetry()) {
-      if (!getSpinPokestopTelemetry()
-          .equals(other.getSpinPokestopTelemetry())) return false;
-    }
-    if (hasProfilePageTelemetry() != other.hasProfilePageTelemetry()) return false;
-    if (hasProfilePageTelemetry()) {
-      if (!getProfilePageTelemetry()
-          .equals(other.getProfilePageTelemetry())) return false;
-    }
-    if (hasShoppingPageTelemetry() != other.hasShoppingPageTelemetry()) return false;
-    if (hasShoppingPageTelemetry()) {
-      if (!getShoppingPageTelemetry()
-          .equals(other.getShoppingPageTelemetry())) return false;
-    }
-    if (hasEncounterPokemonTelemetry() != other.hasEncounterPokemonTelemetry()) return false;
-    if (hasEncounterPokemonTelemetry()) {
-      if (!getEncounterPokemonTelemetry()
-          .equals(other.getEncounterPokemonTelemetry())) return false;
-    }
-    if (hasCatchPokemonTelemetry() != other.hasCatchPokemonTelemetry()) return false;
-    if (hasCatchPokemonTelemetry()) {
-      if (!getCatchPokemonTelemetry()
-          .equals(other.getCatchPokemonTelemetry())) return false;
-    }
-    if (hasDeployPokemonTelemetry() != other.hasDeployPokemonTelemetry()) return false;
-    if (hasDeployPokemonTelemetry()) {
-      if (!getDeployPokemonTelemetry()
-          .equals(other.getDeployPokemonTelemetry())) return false;
-    }
-    if (hasFeedPokemonTelemetry() != other.hasFeedPokemonTelemetry()) return false;
-    if (hasFeedPokemonTelemetry()) {
-      if (!getFeedPokemonTelemetry()
-          .equals(other.getFeedPokemonTelemetry())) return false;
-    }
-    if (hasEvolvePokemonTelemetry() != other.hasEvolvePokemonTelemetry()) return false;
-    if (hasEvolvePokemonTelemetry()) {
-      if (!getEvolvePokemonTelemetry()
-          .equals(other.getEvolvePokemonTelemetry())) return false;
-    }
-    if (hasReleasePokemonTelemetry() != other.hasReleasePokemonTelemetry()) return false;
-    if (hasReleasePokemonTelemetry()) {
-      if (!getReleasePokemonTelemetry()
-          .equals(other.getReleasePokemonTelemetry())) return false;
-    }
-    if (hasNicknamePokemonTelemetry() != other.hasNicknamePokemonTelemetry()) return false;
-    if (hasNicknamePokemonTelemetry()) {
-      if (!getNicknamePokemonTelemetry()
-          .equals(other.getNicknamePokemonTelemetry())) return false;
-    }
-    if (hasNewsPageTelemetry() != other.hasNewsPageTelemetry()) return false;
-    if (hasNewsPageTelemetry()) {
-      if (!getNewsPageTelemetry()
-          .equals(other.getNewsPageTelemetry())) return false;
-    }
-    if (hasItemTelemetry() != other.hasItemTelemetry()) return false;
-    if (hasItemTelemetry()) {
-      if (!getItemTelemetry()
-          .equals(other.getItemTelemetry())) return false;
-    }
-    if (hasBattlePartyTelemetry() != other.hasBattlePartyTelemetry()) return false;
-    if (hasBattlePartyTelemetry()) {
-      if (!getBattlePartyTelemetry()
-          .equals(other.getBattlePartyTelemetry())) return false;
-    }
-    if (hasPasscodeRedeemTelemetry() != other.hasPasscodeRedeemTelemetry()) return false;
-    if (hasPasscodeRedeemTelemetry()) {
-      if (!getPasscodeRedeemTelemetry()
-          .equals(other.getPasscodeRedeemTelemetry())) return false;
-    }
-    if (hasLinkLoginTelemetry() != other.hasLinkLoginTelemetry()) return false;
-    if (hasLinkLoginTelemetry()) {
-      if (!getLinkLoginTelemetry()
-          .equals(other.getLinkLoginTelemetry())) return false;
-    }
-    if (hasRaidTelemetry() != other.hasRaidTelemetry()) return false;
-    if (hasRaidTelemetry()) {
-      if (!getRaidTelemetry()
-          .equals(other.getRaidTelemetry())) return false;
-    }
-    if (hasPushNotificationTelemetry() != other.hasPushNotificationTelemetry()) return false;
-    if (hasPushNotificationTelemetry()) {
-      if (!getPushNotificationTelemetry()
-          .equals(other.getPushNotificationTelemetry())) return false;
-    }
-    if (hasAvatarCustomizationTelemetry() != other.hasAvatarCustomizationTelemetry()) return false;
-    if (hasAvatarCustomizationTelemetry()) {
-      if (!getAvatarCustomizationTelemetry()
-          .equals(other.getAvatarCustomizationTelemetry())) return false;
-    }
-    if (hasReadPointOfInterestDescriptionTelemetry() != other.hasReadPointOfInterestDescriptionTelemetry()) return false;
-    if (hasReadPointOfInterestDescriptionTelemetry()) {
-      if (!getReadPointOfInterestDescriptionTelemetry()
-          .equals(other.getReadPointOfInterestDescriptionTelemetry())) return false;
-    }
-    if (hasWebTelemetry() != other.hasWebTelemetry()) return false;
-    if (hasWebTelemetry()) {
-      if (!getWebTelemetry()
-          .equals(other.getWebTelemetry())) return false;
-    }
-    if (hasChangeArTelemetry() != other.hasChangeArTelemetry()) return false;
-    if (hasChangeArTelemetry()) {
-      if (!getChangeArTelemetry()
-          .equals(other.getChangeArTelemetry())) return false;
-    }
-    if (hasWeatherDetailClickTelemetry() != other.hasWeatherDetailClickTelemetry()) return false;
-    if (hasWeatherDetailClickTelemetry()) {
-      if (!getWeatherDetailClickTelemetry()
-          .equals(other.getWeatherDetailClickTelemetry())) return false;
-    }
-    if (hasUserIssueWeatherReport() != other.hasUserIssueWeatherReport()) return false;
-    if (hasUserIssueWeatherReport()) {
-      if (!getUserIssueWeatherReport()
-          .equals(other.getUserIssueWeatherReport())) return false;
-    }
-    if (hasPokemonInventoryTelemetry() != other.hasPokemonInventoryTelemetry()) return false;
-    if (hasPokemonInventoryTelemetry()) {
-      if (!getPokemonInventoryTelemetry()
-          .equals(other.getPokemonInventoryTelemetry())) return false;
-    }
-    if (hasSocialTelemetry() != other.hasSocialTelemetry()) return false;
-    if (hasSocialTelemetry()) {
-      if (!getSocialTelemetry()
-          .equals(other.getSocialTelemetry())) return false;
-    }
-    if (hasCheckEncounterInfoTelemetry() != other.hasCheckEncounterInfoTelemetry()) return false;
-    if (hasCheckEncounterInfoTelemetry()) {
-      if (!getCheckEncounterInfoTelemetry()
-          .equals(other.getCheckEncounterInfoTelemetry())) return false;
-    }
-    if (hasPokemonGoPlusTelemetry() != other.hasPokemonGoPlusTelemetry()) return false;
-    if (hasPokemonGoPlusTelemetry()) {
-      if (!getPokemonGoPlusTelemetry()
-          .equals(other.getPokemonGoPlusTelemetry())) return false;
-    }
-    if (hasRpcTimingTelemetry() != other.hasRpcTimingTelemetry()) return false;
-    if (hasRpcTimingTelemetry()) {
-      if (!getRpcTimingTelemetry()
-          .equals(other.getRpcTimingTelemetry())) return false;
-    }
-    if (hasSocialGiftCountTelemetry() != other.hasSocialGiftCountTelemetry()) return false;
-    if (hasSocialGiftCountTelemetry()) {
-      if (!getSocialGiftCountTelemetry()
-          .equals(other.getSocialGiftCountTelemetry())) return false;
-    }
-    if (hasAssetBundleTelemetry() != other.hasAssetBundleTelemetry()) return false;
-    if (hasAssetBundleTelemetry()) {
-      if (!getAssetBundleTelemetry()
-          .equals(other.getAssetBundleTelemetry())) return false;
-    }
-    if (hasAssetPoiDownloadTelemetry() != other.hasAssetPoiDownloadTelemetry()) return false;
-    if (hasAssetPoiDownloadTelemetry()) {
-      if (!getAssetPoiDownloadTelemetry()
-          .equals(other.getAssetPoiDownloadTelemetry())) return false;
-    }
-    if (hasAssetStreamDownloadTelemetry() != other.hasAssetStreamDownloadTelemetry()) return false;
-    if (hasAssetStreamDownloadTelemetry()) {
-      if (!getAssetStreamDownloadTelemetry()
-          .equals(other.getAssetStreamDownloadTelemetry())) return false;
-    }
-    if (hasAssetStreamCacheCulledTelemetry() != other.hasAssetStreamCacheCulledTelemetry()) return false;
-    if (hasAssetStreamCacheCulledTelemetry()) {
-      if (!getAssetStreamCacheCulledTelemetry()
-          .equals(other.getAssetStreamCacheCulledTelemetry())) return false;
-    }
-    if (hasRpcSocketTimingTelemetry() != other.hasRpcSocketTimingTelemetry()) return false;
-    if (hasRpcSocketTimingTelemetry()) {
-      if (!getRpcSocketTimingTelemetry()
-          .equals(other.getRpcSocketTimingTelemetry())) return false;
-    }
-    if (hasPermissionsFlow() != other.hasPermissionsFlow()) return false;
-    if (hasPermissionsFlow()) {
-      if (!getPermissionsFlow()
-          .equals(other.getPermissionsFlow())) return false;
-    }
-    if (hasDeviceServiceToggle() != other.hasDeviceServiceToggle()) return false;
-    if (hasDeviceServiceToggle()) {
-      if (!getDeviceServiceToggle()
-          .equals(other.getDeviceServiceToggle())) return false;
-    }
-    if (hasBootTelemetry() != other.hasBootTelemetry()) return false;
-    if (hasBootTelemetry()) {
-      if (!getBootTelemetry()
-          .equals(other.getBootTelemetry())) return false;
-    }
-    if (hasUserAttributes() != other.hasUserAttributes()) return false;
-    if (hasUserAttributes()) {
-      if (!getUserAttributes()
-          .equals(other.getUserAttributes())) return false;
-    }
-    if (hasOnboardingTelemetry() != other.hasOnboardingTelemetry()) return false;
-    if (hasOnboardingTelemetry()) {
-      if (!getOnboardingTelemetry()
-          .equals(other.getOnboardingTelemetry())) return false;
-    }
-    if (hasLoginActionTelemetry() != other.hasLoginActionTelemetry()) return false;
-    if (hasLoginActionTelemetry()) {
-      if (!getLoginActionTelemetry()
-          .equals(other.getLoginActionTelemetry())) return false;
-    }
-    if (hasArPhotoSessionTelemetry() != other.hasArPhotoSessionTelemetry()) return false;
-    if (hasArPhotoSessionTelemetry()) {
-      if (!getArPhotoSessionTelemetry()
-          .equals(other.getArPhotoSessionTelemetry())) return false;
-    }
-    if (hasInvasionTelemetry() != other.hasInvasionTelemetry()) return false;
-    if (hasInvasionTelemetry()) {
-      if (!getInvasionTelemetry()
-          .equals(other.getInvasionTelemetry())) return false;
-    }
-    if (hasCombatMinigameTelemetry() != other.hasCombatMinigameTelemetry()) return false;
-    if (hasCombatMinigameTelemetry()) {
-      if (!getCombatMinigameTelemetry()
-          .equals(other.getCombatMinigameTelemetry())) return false;
-    }
-    if (hasLeavePointOfInterestTelemetry() != other.hasLeavePointOfInterestTelemetry()) return false;
-    if (hasLeavePointOfInterestTelemetry()) {
-      if (!getLeavePointOfInterestTelemetry()
-          .equals(other.getLeavePointOfInterestTelemetry())) return false;
-    }
-    if (hasViewPointOfInterestImageTelemetry() != other.hasViewPointOfInterestImageTelemetry()) return false;
-    if (hasViewPointOfInterestImageTelemetry()) {
-      if (!getViewPointOfInterestImageTelemetry()
-          .equals(other.getViewPointOfInterestImageTelemetry())) return false;
-    }
-    if (hasCombatHubEntranceTelemetry() != other.hasCombatHubEntranceTelemetry()) return false;
-    if (hasCombatHubEntranceTelemetry()) {
-      if (!getCombatHubEntranceTelemetry()
-          .equals(other.getCombatHubEntranceTelemetry())) return false;
-    }
-    if (hasLeaveInteractionRangeTelemetry() != other.hasLeaveInteractionRangeTelemetry()) return false;
-    if (hasLeaveInteractionRangeTelemetry()) {
-      if (!getLeaveInteractionRangeTelemetry()
-          .equals(other.getLeaveInteractionRangeTelemetry())) return false;
-    }
-    if (hasShoppingPageClickTelemetry() != other.hasShoppingPageClickTelemetry()) return false;
-    if (hasShoppingPageClickTelemetry()) {
-      if (!getShoppingPageClickTelemetry()
-          .equals(other.getShoppingPageClickTelemetry())) return false;
-    }
-    if (hasShoppingPageScrollTelemetry() != other.hasShoppingPageScrollTelemetry()) return false;
-    if (hasShoppingPageScrollTelemetry()) {
-      if (!getShoppingPageScrollTelemetry()
-          .equals(other.getShoppingPageScrollTelemetry())) return false;
-    }
-    if (hasDeviceSpecificationsTelemetry() != other.hasDeviceSpecificationsTelemetry()) return false;
-    if (hasDeviceSpecificationsTelemetry()) {
-      if (!getDeviceSpecificationsTelemetry()
-          .equals(other.getDeviceSpecificationsTelemetry())) return false;
-    }
-    if (hasScreenResolutionTelemetry() != other.hasScreenResolutionTelemetry()) return false;
-    if (hasScreenResolutionTelemetry()) {
-      if (!getScreenResolutionTelemetry()
-          .equals(other.getScreenResolutionTelemetry())) return false;
-    }
-    if (hasArBuddyMultiplayerSessionTelemetry() != other.hasArBuddyMultiplayerSessionTelemetry()) return false;
-    if (hasArBuddyMultiplayerSessionTelemetry()) {
-      if (!getArBuddyMultiplayerSessionTelemetry()
-          .equals(other.getArBuddyMultiplayerSessionTelemetry())) return false;
-    }
-    if (hasBuddyMultiplayerConnectionFailedTelemetry() != other.hasBuddyMultiplayerConnectionFailedTelemetry()) return false;
-    if (hasBuddyMultiplayerConnectionFailedTelemetry()) {
-      if (!getBuddyMultiplayerConnectionFailedTelemetry()
-          .equals(other.getBuddyMultiplayerConnectionFailedTelemetry())) return false;
-    }
-    if (hasBuddyMultiplayerConnectionSucceededTelemetry() != other.hasBuddyMultiplayerConnectionSucceededTelemetry()) return false;
-    if (hasBuddyMultiplayerConnectionSucceededTelemetry()) {
-      if (!getBuddyMultiplayerConnectionSucceededTelemetry()
-          .equals(other.getBuddyMultiplayerConnectionSucceededTelemetry())) return false;
-    }
-    if (hasBuddyMultiplayerTimeToGetSessionTelemetry() != other.hasBuddyMultiplayerTimeToGetSessionTelemetry()) return false;
-    if (hasBuddyMultiplayerTimeToGetSessionTelemetry()) {
-      if (!getBuddyMultiplayerTimeToGetSessionTelemetry()
-          .equals(other.getBuddyMultiplayerTimeToGetSessionTelemetry())) return false;
-    }
-    if (hasPlayerHudNotificationClickTelemetry() != other.hasPlayerHudNotificationClickTelemetry()) return false;
-    if (hasPlayerHudNotificationClickTelemetry()) {
-      if (!getPlayerHudNotificationClickTelemetry()
-          .equals(other.getPlayerHudNotificationClickTelemetry())) return false;
-    }
-    if (hasMonodepthDownloadTelemetry() != other.hasMonodepthDownloadTelemetry()) return false;
-    if (hasMonodepthDownloadTelemetry()) {
-      if (!getMonodepthDownloadTelemetry()
-          .equals(other.getMonodepthDownloadTelemetry())) return false;
-    }
-    if (hasArMappingTelemetry() != other.hasArMappingTelemetry()) return false;
-    if (hasArMappingTelemetry()) {
-      if (!getArMappingTelemetry()
-          .equals(other.getArMappingTelemetry())) return false;
-    }
-    if (hasRemoteRaidTelemetry() != other.hasRemoteRaidTelemetry()) return false;
-    if (hasRemoteRaidTelemetry()) {
-      if (!getRemoteRaidTelemetry()
-          .equals(other.getRemoteRaidTelemetry())) return false;
-    }
     if (hasServerData() != other.hasServerData()) return false;
     if (hasServerData()) {
       if (!getServerData()
@@ -3237,6 +3514,267 @@ private static final long serialVersionUID = 0L;
     if (hasCommonFilters()) {
       if (!getCommonFilters()
           .equals(other.getCommonFilters())) return false;
+    }
+    if (!getTelemetryDataCase().equals(other.getTelemetryDataCase())) return false;
+    switch (telemetryDataCase_) {
+      case 1:
+        if (!getBootTime()
+            .equals(other.getBootTime())) return false;
+        break;
+      case 2:
+        if (!getFrameRate()
+            .equals(other.getFrameRate())) return false;
+        break;
+      case 3:
+        if (!getGenericClickTelemetry()
+            .equals(other.getGenericClickTelemetry())) return false;
+        break;
+      case 4:
+        if (!getMapEventsTelemetry()
+            .equals(other.getMapEventsTelemetry())) return false;
+        break;
+      case 5:
+        if (!getSpinPokestopTelemetry()
+            .equals(other.getSpinPokestopTelemetry())) return false;
+        break;
+      case 6:
+        if (!getProfilePageTelemetry()
+            .equals(other.getProfilePageTelemetry())) return false;
+        break;
+      case 7:
+        if (!getShoppingPageTelemetry()
+            .equals(other.getShoppingPageTelemetry())) return false;
+        break;
+      case 8:
+        if (!getEncounterPokemonTelemetry()
+            .equals(other.getEncounterPokemonTelemetry())) return false;
+        break;
+      case 9:
+        if (!getCatchPokemonTelemetry()
+            .equals(other.getCatchPokemonTelemetry())) return false;
+        break;
+      case 10:
+        if (!getDeployPokemonTelemetry()
+            .equals(other.getDeployPokemonTelemetry())) return false;
+        break;
+      case 11:
+        if (!getFeedPokemonTelemetry()
+            .equals(other.getFeedPokemonTelemetry())) return false;
+        break;
+      case 12:
+        if (!getEvolvePokemonTelemetry()
+            .equals(other.getEvolvePokemonTelemetry())) return false;
+        break;
+      case 13:
+        if (!getReleasePokemonTelemetry()
+            .equals(other.getReleasePokemonTelemetry())) return false;
+        break;
+      case 14:
+        if (!getNicknamePokemonTelemetry()
+            .equals(other.getNicknamePokemonTelemetry())) return false;
+        break;
+      case 15:
+        if (!getNewsPageTelemetry()
+            .equals(other.getNewsPageTelemetry())) return false;
+        break;
+      case 16:
+        if (!getItemTelemetry()
+            .equals(other.getItemTelemetry())) return false;
+        break;
+      case 17:
+        if (!getBattlePartyTelemetry()
+            .equals(other.getBattlePartyTelemetry())) return false;
+        break;
+      case 18:
+        if (!getPasscodeRedeemTelemetry()
+            .equals(other.getPasscodeRedeemTelemetry())) return false;
+        break;
+      case 19:
+        if (!getLinkLoginTelemetry()
+            .equals(other.getLinkLoginTelemetry())) return false;
+        break;
+      case 20:
+        if (!getRaidTelemetry()
+            .equals(other.getRaidTelemetry())) return false;
+        break;
+      case 21:
+        if (!getPushNotificationTelemetry()
+            .equals(other.getPushNotificationTelemetry())) return false;
+        break;
+      case 22:
+        if (!getAvatarCustomizationTelemetry()
+            .equals(other.getAvatarCustomizationTelemetry())) return false;
+        break;
+      case 23:
+        if (!getReadPointOfInterestDescriptionTelemetry()
+            .equals(other.getReadPointOfInterestDescriptionTelemetry())) return false;
+        break;
+      case 24:
+        if (!getWebTelemetry()
+            .equals(other.getWebTelemetry())) return false;
+        break;
+      case 25:
+        if (!getChangeArTelemetry()
+            .equals(other.getChangeArTelemetry())) return false;
+        break;
+      case 26:
+        if (!getWeatherDetailClickTelemetry()
+            .equals(other.getWeatherDetailClickTelemetry())) return false;
+        break;
+      case 27:
+        if (!getUserIssueWeatherReport()
+            .equals(other.getUserIssueWeatherReport())) return false;
+        break;
+      case 28:
+        if (!getPokemonInventoryTelemetry()
+            .equals(other.getPokemonInventoryTelemetry())) return false;
+        break;
+      case 29:
+        if (!getSocialTelemetry()
+            .equals(other.getSocialTelemetry())) return false;
+        break;
+      case 30:
+        if (!getCheckEncounterInfoTelemetry()
+            .equals(other.getCheckEncounterInfoTelemetry())) return false;
+        break;
+      case 31:
+        if (!getPokemonGoPlusTelemetry()
+            .equals(other.getPokemonGoPlusTelemetry())) return false;
+        break;
+      case 32:
+        if (!getRpcTimingTelemetry()
+            .equals(other.getRpcTimingTelemetry())) return false;
+        break;
+      case 33:
+        if (!getSocialGiftCountTelemetry()
+            .equals(other.getSocialGiftCountTelemetry())) return false;
+        break;
+      case 34:
+        if (!getAssetBundleTelemetry()
+            .equals(other.getAssetBundleTelemetry())) return false;
+        break;
+      case 35:
+        if (!getAssetPoiDownloadTelemetry()
+            .equals(other.getAssetPoiDownloadTelemetry())) return false;
+        break;
+      case 36:
+        if (!getAssetStreamDownloadTelemetry()
+            .equals(other.getAssetStreamDownloadTelemetry())) return false;
+        break;
+      case 37:
+        if (!getAssetStreamCacheCulledTelemetry()
+            .equals(other.getAssetStreamCacheCulledTelemetry())) return false;
+        break;
+      case 38:
+        if (!getRpcSocketTimingTelemetry()
+            .equals(other.getRpcSocketTimingTelemetry())) return false;
+        break;
+      case 39:
+        if (!getPermissionsFlow()
+            .equals(other.getPermissionsFlow())) return false;
+        break;
+      case 40:
+        if (!getDeviceServiceToggle()
+            .equals(other.getDeviceServiceToggle())) return false;
+        break;
+      case 41:
+        if (!getBootTelemetry()
+            .equals(other.getBootTelemetry())) return false;
+        break;
+      case 42:
+        if (!getUserAttributes()
+            .equals(other.getUserAttributes())) return false;
+        break;
+      case 43:
+        if (!getOnboardingTelemetry()
+            .equals(other.getOnboardingTelemetry())) return false;
+        break;
+      case 44:
+        if (!getLoginActionTelemetry()
+            .equals(other.getLoginActionTelemetry())) return false;
+        break;
+      case 45:
+        if (!getArPhotoSessionTelemetry()
+            .equals(other.getArPhotoSessionTelemetry())) return false;
+        break;
+      case 46:
+        if (!getInvasionTelemetry()
+            .equals(other.getInvasionTelemetry())) return false;
+        break;
+      case 47:
+        if (!getCombatMinigameTelemetry()
+            .equals(other.getCombatMinigameTelemetry())) return false;
+        break;
+      case 48:
+        if (!getLeavePointOfInterestTelemetry()
+            .equals(other.getLeavePointOfInterestTelemetry())) return false;
+        break;
+      case 49:
+        if (!getViewPointOfInterestImageTelemetry()
+            .equals(other.getViewPointOfInterestImageTelemetry())) return false;
+        break;
+      case 50:
+        if (!getCombatHubEntranceTelemetry()
+            .equals(other.getCombatHubEntranceTelemetry())) return false;
+        break;
+      case 51:
+        if (!getLeaveInteractionRangeTelemetry()
+            .equals(other.getLeaveInteractionRangeTelemetry())) return false;
+        break;
+      case 52:
+        if (!getShoppingPageClickTelemetry()
+            .equals(other.getShoppingPageClickTelemetry())) return false;
+        break;
+      case 53:
+        if (!getShoppingPageScrollTelemetry()
+            .equals(other.getShoppingPageScrollTelemetry())) return false;
+        break;
+      case 54:
+        if (!getDeviceSpecificationsTelemetry()
+            .equals(other.getDeviceSpecificationsTelemetry())) return false;
+        break;
+      case 55:
+        if (!getScreenResolutionTelemetry()
+            .equals(other.getScreenResolutionTelemetry())) return false;
+        break;
+      case 56:
+        if (!getArBuddyMultiplayerSessionTelemetry()
+            .equals(other.getArBuddyMultiplayerSessionTelemetry())) return false;
+        break;
+      case 57:
+        if (!getBuddyMultiplayerConnectionFailedTelemetry()
+            .equals(other.getBuddyMultiplayerConnectionFailedTelemetry())) return false;
+        break;
+      case 58:
+        if (!getBuddyMultiplayerConnectionSucceededTelemetry()
+            .equals(other.getBuddyMultiplayerConnectionSucceededTelemetry())) return false;
+        break;
+      case 59:
+        if (!getBuddyMultiplayerTimeToGetSessionTelemetry()
+            .equals(other.getBuddyMultiplayerTimeToGetSessionTelemetry())) return false;
+        break;
+      case 60:
+        if (!getPlayerHudNotificationClickTelemetry()
+            .equals(other.getPlayerHudNotificationClickTelemetry())) return false;
+        break;
+      case 61:
+        if (!getMonodepthDownloadTelemetry()
+            .equals(other.getMonodepthDownloadTelemetry())) return false;
+        break;
+      case 62:
+        if (!getArMappingTelemetry()
+            .equals(other.getArMappingTelemetry())) return false;
+        break;
+      case 63:
+        if (!getRemoteRaidTelemetry()
+            .equals(other.getRemoteRaidTelemetry())) return false;
+        break;
+      case 64:
+        if (!getDeviceOsTelemetry()
+            .equals(other.getDeviceOsTelemetry())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -3249,258 +3787,6 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasBootTime()) {
-      hash = (37 * hash) + BOOT_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBootTime().hashCode();
-    }
-    if (hasFrameRate()) {
-      hash = (37 * hash) + FRAME_RATE_FIELD_NUMBER;
-      hash = (53 * hash) + getFrameRate().hashCode();
-    }
-    if (hasGenericClickTelemetry()) {
-      hash = (37 * hash) + GENERIC_CLICK_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getGenericClickTelemetry().hashCode();
-    }
-    if (hasMapEventsTelemetry()) {
-      hash = (37 * hash) + MAP_EVENTS_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getMapEventsTelemetry().hashCode();
-    }
-    if (hasSpinPokestopTelemetry()) {
-      hash = (37 * hash) + SPIN_POKESTOP_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getSpinPokestopTelemetry().hashCode();
-    }
-    if (hasProfilePageTelemetry()) {
-      hash = (37 * hash) + PROFILE_PAGE_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getProfilePageTelemetry().hashCode();
-    }
-    if (hasShoppingPageTelemetry()) {
-      hash = (37 * hash) + SHOPPING_PAGE_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getShoppingPageTelemetry().hashCode();
-    }
-    if (hasEncounterPokemonTelemetry()) {
-      hash = (37 * hash) + ENCOUNTER_POKEMON_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getEncounterPokemonTelemetry().hashCode();
-    }
-    if (hasCatchPokemonTelemetry()) {
-      hash = (37 * hash) + CATCH_POKEMON_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getCatchPokemonTelemetry().hashCode();
-    }
-    if (hasDeployPokemonTelemetry()) {
-      hash = (37 * hash) + DEPLOY_POKEMON_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getDeployPokemonTelemetry().hashCode();
-    }
-    if (hasFeedPokemonTelemetry()) {
-      hash = (37 * hash) + FEED_POKEMON_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getFeedPokemonTelemetry().hashCode();
-    }
-    if (hasEvolvePokemonTelemetry()) {
-      hash = (37 * hash) + EVOLVE_POKEMON_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getEvolvePokemonTelemetry().hashCode();
-    }
-    if (hasReleasePokemonTelemetry()) {
-      hash = (37 * hash) + RELEASE_POKEMON_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getReleasePokemonTelemetry().hashCode();
-    }
-    if (hasNicknamePokemonTelemetry()) {
-      hash = (37 * hash) + NICKNAME_POKEMON_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getNicknamePokemonTelemetry().hashCode();
-    }
-    if (hasNewsPageTelemetry()) {
-      hash = (37 * hash) + NEWS_PAGE_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getNewsPageTelemetry().hashCode();
-    }
-    if (hasItemTelemetry()) {
-      hash = (37 * hash) + ITEM_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getItemTelemetry().hashCode();
-    }
-    if (hasBattlePartyTelemetry()) {
-      hash = (37 * hash) + BATTLE_PARTY_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getBattlePartyTelemetry().hashCode();
-    }
-    if (hasPasscodeRedeemTelemetry()) {
-      hash = (37 * hash) + PASSCODE_REDEEM_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getPasscodeRedeemTelemetry().hashCode();
-    }
-    if (hasLinkLoginTelemetry()) {
-      hash = (37 * hash) + LINK_LOGIN_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getLinkLoginTelemetry().hashCode();
-    }
-    if (hasRaidTelemetry()) {
-      hash = (37 * hash) + RAID_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getRaidTelemetry().hashCode();
-    }
-    if (hasPushNotificationTelemetry()) {
-      hash = (37 * hash) + PUSH_NOTIFICATION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getPushNotificationTelemetry().hashCode();
-    }
-    if (hasAvatarCustomizationTelemetry()) {
-      hash = (37 * hash) + AVATAR_CUSTOMIZATION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarCustomizationTelemetry().hashCode();
-    }
-    if (hasReadPointOfInterestDescriptionTelemetry()) {
-      hash = (37 * hash) + READ_POINT_OF_INTEREST_DESCRIPTION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getReadPointOfInterestDescriptionTelemetry().hashCode();
-    }
-    if (hasWebTelemetry()) {
-      hash = (37 * hash) + WEB_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getWebTelemetry().hashCode();
-    }
-    if (hasChangeArTelemetry()) {
-      hash = (37 * hash) + CHANGE_AR_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getChangeArTelemetry().hashCode();
-    }
-    if (hasWeatherDetailClickTelemetry()) {
-      hash = (37 * hash) + WEATHER_DETAIL_CLICK_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getWeatherDetailClickTelemetry().hashCode();
-    }
-    if (hasUserIssueWeatherReport()) {
-      hash = (37 * hash) + USER_ISSUE_WEATHER_REPORT_FIELD_NUMBER;
-      hash = (53 * hash) + getUserIssueWeatherReport().hashCode();
-    }
-    if (hasPokemonInventoryTelemetry()) {
-      hash = (37 * hash) + POKEMON_INVENTORY_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getPokemonInventoryTelemetry().hashCode();
-    }
-    if (hasSocialTelemetry()) {
-      hash = (37 * hash) + SOCIAL_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getSocialTelemetry().hashCode();
-    }
-    if (hasCheckEncounterInfoTelemetry()) {
-      hash = (37 * hash) + CHECK_ENCOUNTER_INFO_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getCheckEncounterInfoTelemetry().hashCode();
-    }
-    if (hasPokemonGoPlusTelemetry()) {
-      hash = (37 * hash) + POKEMON_GO_PLUS_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getPokemonGoPlusTelemetry().hashCode();
-    }
-    if (hasRpcTimingTelemetry()) {
-      hash = (37 * hash) + RPC_TIMING_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getRpcTimingTelemetry().hashCode();
-    }
-    if (hasSocialGiftCountTelemetry()) {
-      hash = (37 * hash) + SOCIAL_GIFT_COUNT_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getSocialGiftCountTelemetry().hashCode();
-    }
-    if (hasAssetBundleTelemetry()) {
-      hash = (37 * hash) + ASSET_BUNDLE_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getAssetBundleTelemetry().hashCode();
-    }
-    if (hasAssetPoiDownloadTelemetry()) {
-      hash = (37 * hash) + ASSET_POI_DOWNLOAD_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getAssetPoiDownloadTelemetry().hashCode();
-    }
-    if (hasAssetStreamDownloadTelemetry()) {
-      hash = (37 * hash) + ASSET_STREAM_DOWNLOAD_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getAssetStreamDownloadTelemetry().hashCode();
-    }
-    if (hasAssetStreamCacheCulledTelemetry()) {
-      hash = (37 * hash) + ASSET_STREAM_CACHE_CULLED_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getAssetStreamCacheCulledTelemetry().hashCode();
-    }
-    if (hasRpcSocketTimingTelemetry()) {
-      hash = (37 * hash) + RPC_SOCKET_TIMING_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getRpcSocketTimingTelemetry().hashCode();
-    }
-    if (hasPermissionsFlow()) {
-      hash = (37 * hash) + PERMISSIONS_FLOW_FIELD_NUMBER;
-      hash = (53 * hash) + getPermissionsFlow().hashCode();
-    }
-    if (hasDeviceServiceToggle()) {
-      hash = (37 * hash) + DEVICE_SERVICE_TOGGLE_FIELD_NUMBER;
-      hash = (53 * hash) + getDeviceServiceToggle().hashCode();
-    }
-    if (hasBootTelemetry()) {
-      hash = (37 * hash) + BOOT_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getBootTelemetry().hashCode();
-    }
-    if (hasUserAttributes()) {
-      hash = (37 * hash) + USER_ATTRIBUTES_FIELD_NUMBER;
-      hash = (53 * hash) + getUserAttributes().hashCode();
-    }
-    if (hasOnboardingTelemetry()) {
-      hash = (37 * hash) + ONBOARDING_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getOnboardingTelemetry().hashCode();
-    }
-    if (hasLoginActionTelemetry()) {
-      hash = (37 * hash) + LOGIN_ACTION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getLoginActionTelemetry().hashCode();
-    }
-    if (hasArPhotoSessionTelemetry()) {
-      hash = (37 * hash) + AR_PHOTO_SESSION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getArPhotoSessionTelemetry().hashCode();
-    }
-    if (hasInvasionTelemetry()) {
-      hash = (37 * hash) + INVASION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getInvasionTelemetry().hashCode();
-    }
-    if (hasCombatMinigameTelemetry()) {
-      hash = (37 * hash) + COMBAT_MINIGAME_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getCombatMinigameTelemetry().hashCode();
-    }
-    if (hasLeavePointOfInterestTelemetry()) {
-      hash = (37 * hash) + LEAVE_POINT_OF_INTEREST_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getLeavePointOfInterestTelemetry().hashCode();
-    }
-    if (hasViewPointOfInterestImageTelemetry()) {
-      hash = (37 * hash) + VIEW_POINT_OF_INTEREST_IMAGE_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getViewPointOfInterestImageTelemetry().hashCode();
-    }
-    if (hasCombatHubEntranceTelemetry()) {
-      hash = (37 * hash) + COMBAT_HUB_ENTRANCE_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getCombatHubEntranceTelemetry().hashCode();
-    }
-    if (hasLeaveInteractionRangeTelemetry()) {
-      hash = (37 * hash) + LEAVE_INTERACTION_RANGE_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getLeaveInteractionRangeTelemetry().hashCode();
-    }
-    if (hasShoppingPageClickTelemetry()) {
-      hash = (37 * hash) + SHOPPING_PAGE_CLICK_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getShoppingPageClickTelemetry().hashCode();
-    }
-    if (hasShoppingPageScrollTelemetry()) {
-      hash = (37 * hash) + SHOPPING_PAGE_SCROLL_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getShoppingPageScrollTelemetry().hashCode();
-    }
-    if (hasDeviceSpecificationsTelemetry()) {
-      hash = (37 * hash) + DEVICE_SPECIFICATIONS_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getDeviceSpecificationsTelemetry().hashCode();
-    }
-    if (hasScreenResolutionTelemetry()) {
-      hash = (37 * hash) + SCREEN_RESOLUTION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getScreenResolutionTelemetry().hashCode();
-    }
-    if (hasArBuddyMultiplayerSessionTelemetry()) {
-      hash = (37 * hash) + AR_BUDDY_MULTIPLAYER_SESSION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getArBuddyMultiplayerSessionTelemetry().hashCode();
-    }
-    if (hasBuddyMultiplayerConnectionFailedTelemetry()) {
-      hash = (37 * hash) + BUDDY_MULTIPLAYER_CONNECTION_FAILED_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getBuddyMultiplayerConnectionFailedTelemetry().hashCode();
-    }
-    if (hasBuddyMultiplayerConnectionSucceededTelemetry()) {
-      hash = (37 * hash) + BUDDY_MULTIPLAYER_CONNECTION_SUCCEEDED_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getBuddyMultiplayerConnectionSucceededTelemetry().hashCode();
-    }
-    if (hasBuddyMultiplayerTimeToGetSessionTelemetry()) {
-      hash = (37 * hash) + BUDDY_MULTIPLAYER_TIME_TO_GET_SESSION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getBuddyMultiplayerTimeToGetSessionTelemetry().hashCode();
-    }
-    if (hasPlayerHudNotificationClickTelemetry()) {
-      hash = (37 * hash) + PLAYER_HUD_NOTIFICATION_CLICK_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerHudNotificationClickTelemetry().hashCode();
-    }
-    if (hasMonodepthDownloadTelemetry()) {
-      hash = (37 * hash) + MONODEPTH_DOWNLOAD_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getMonodepthDownloadTelemetry().hashCode();
-    }
-    if (hasArMappingTelemetry()) {
-      hash = (37 * hash) + AR_MAPPING_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getArMappingTelemetry().hashCode();
-    }
-    if (hasRemoteRaidTelemetry()) {
-      hash = (37 * hash) + REMOTE_RAID_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getRemoteRaidTelemetry().hashCode();
-    }
     if (hasServerData()) {
       hash = (37 * hash) + SERVER_DATA_FIELD_NUMBER;
       hash = (53 * hash) + getServerData().hashCode();
@@ -3508,6 +3794,266 @@ private static final long serialVersionUID = 0L;
     if (hasCommonFilters()) {
       hash = (37 * hash) + COMMON_FILTERS_FIELD_NUMBER;
       hash = (53 * hash) + getCommonFilters().hashCode();
+    }
+    switch (telemetryDataCase_) {
+      case 1:
+        hash = (37 * hash) + BOOT_TIME_FIELD_NUMBER;
+        hash = (53 * hash) + getBootTime().hashCode();
+        break;
+      case 2:
+        hash = (37 * hash) + FRAME_RATE_FIELD_NUMBER;
+        hash = (53 * hash) + getFrameRate().hashCode();
+        break;
+      case 3:
+        hash = (37 * hash) + GENERIC_CLICK_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getGenericClickTelemetry().hashCode();
+        break;
+      case 4:
+        hash = (37 * hash) + MAP_EVENTS_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getMapEventsTelemetry().hashCode();
+        break;
+      case 5:
+        hash = (37 * hash) + SPIN_POKESTOP_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getSpinPokestopTelemetry().hashCode();
+        break;
+      case 6:
+        hash = (37 * hash) + PROFILE_PAGE_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getProfilePageTelemetry().hashCode();
+        break;
+      case 7:
+        hash = (37 * hash) + SHOPPING_PAGE_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getShoppingPageTelemetry().hashCode();
+        break;
+      case 8:
+        hash = (37 * hash) + ENCOUNTER_POKEMON_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getEncounterPokemonTelemetry().hashCode();
+        break;
+      case 9:
+        hash = (37 * hash) + CATCH_POKEMON_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getCatchPokemonTelemetry().hashCode();
+        break;
+      case 10:
+        hash = (37 * hash) + DEPLOY_POKEMON_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getDeployPokemonTelemetry().hashCode();
+        break;
+      case 11:
+        hash = (37 * hash) + FEED_POKEMON_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getFeedPokemonTelemetry().hashCode();
+        break;
+      case 12:
+        hash = (37 * hash) + EVOLVE_POKEMON_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getEvolvePokemonTelemetry().hashCode();
+        break;
+      case 13:
+        hash = (37 * hash) + RELEASE_POKEMON_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getReleasePokemonTelemetry().hashCode();
+        break;
+      case 14:
+        hash = (37 * hash) + NICKNAME_POKEMON_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getNicknamePokemonTelemetry().hashCode();
+        break;
+      case 15:
+        hash = (37 * hash) + NEWS_PAGE_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getNewsPageTelemetry().hashCode();
+        break;
+      case 16:
+        hash = (37 * hash) + ITEM_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getItemTelemetry().hashCode();
+        break;
+      case 17:
+        hash = (37 * hash) + BATTLE_PARTY_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getBattlePartyTelemetry().hashCode();
+        break;
+      case 18:
+        hash = (37 * hash) + PASSCODE_REDEEM_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getPasscodeRedeemTelemetry().hashCode();
+        break;
+      case 19:
+        hash = (37 * hash) + LINK_LOGIN_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getLinkLoginTelemetry().hashCode();
+        break;
+      case 20:
+        hash = (37 * hash) + RAID_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getRaidTelemetry().hashCode();
+        break;
+      case 21:
+        hash = (37 * hash) + PUSH_NOTIFICATION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getPushNotificationTelemetry().hashCode();
+        break;
+      case 22:
+        hash = (37 * hash) + AVATAR_CUSTOMIZATION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getAvatarCustomizationTelemetry().hashCode();
+        break;
+      case 23:
+        hash = (37 * hash) + READ_POINT_OF_INTEREST_DESCRIPTION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getReadPointOfInterestDescriptionTelemetry().hashCode();
+        break;
+      case 24:
+        hash = (37 * hash) + WEB_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getWebTelemetry().hashCode();
+        break;
+      case 25:
+        hash = (37 * hash) + CHANGE_AR_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getChangeArTelemetry().hashCode();
+        break;
+      case 26:
+        hash = (37 * hash) + WEATHER_DETAIL_CLICK_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getWeatherDetailClickTelemetry().hashCode();
+        break;
+      case 27:
+        hash = (37 * hash) + USER_ISSUE_WEATHER_REPORT_FIELD_NUMBER;
+        hash = (53 * hash) + getUserIssueWeatherReport().hashCode();
+        break;
+      case 28:
+        hash = (37 * hash) + POKEMON_INVENTORY_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getPokemonInventoryTelemetry().hashCode();
+        break;
+      case 29:
+        hash = (37 * hash) + SOCIAL_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getSocialTelemetry().hashCode();
+        break;
+      case 30:
+        hash = (37 * hash) + CHECK_ENCOUNTER_INFO_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getCheckEncounterInfoTelemetry().hashCode();
+        break;
+      case 31:
+        hash = (37 * hash) + POKEMON_GO_PLUS_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getPokemonGoPlusTelemetry().hashCode();
+        break;
+      case 32:
+        hash = (37 * hash) + RPC_TIMING_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getRpcTimingTelemetry().hashCode();
+        break;
+      case 33:
+        hash = (37 * hash) + SOCIAL_GIFT_COUNT_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getSocialGiftCountTelemetry().hashCode();
+        break;
+      case 34:
+        hash = (37 * hash) + ASSET_BUNDLE_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getAssetBundleTelemetry().hashCode();
+        break;
+      case 35:
+        hash = (37 * hash) + ASSET_POI_DOWNLOAD_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getAssetPoiDownloadTelemetry().hashCode();
+        break;
+      case 36:
+        hash = (37 * hash) + ASSET_STREAM_DOWNLOAD_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getAssetStreamDownloadTelemetry().hashCode();
+        break;
+      case 37:
+        hash = (37 * hash) + ASSET_STREAM_CACHE_CULLED_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getAssetStreamCacheCulledTelemetry().hashCode();
+        break;
+      case 38:
+        hash = (37 * hash) + RPC_SOCKET_TIMING_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getRpcSocketTimingTelemetry().hashCode();
+        break;
+      case 39:
+        hash = (37 * hash) + PERMISSIONS_FLOW_FIELD_NUMBER;
+        hash = (53 * hash) + getPermissionsFlow().hashCode();
+        break;
+      case 40:
+        hash = (37 * hash) + DEVICE_SERVICE_TOGGLE_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceServiceToggle().hashCode();
+        break;
+      case 41:
+        hash = (37 * hash) + BOOT_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getBootTelemetry().hashCode();
+        break;
+      case 42:
+        hash = (37 * hash) + USER_ATTRIBUTES_FIELD_NUMBER;
+        hash = (53 * hash) + getUserAttributes().hashCode();
+        break;
+      case 43:
+        hash = (37 * hash) + ONBOARDING_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getOnboardingTelemetry().hashCode();
+        break;
+      case 44:
+        hash = (37 * hash) + LOGIN_ACTION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getLoginActionTelemetry().hashCode();
+        break;
+      case 45:
+        hash = (37 * hash) + AR_PHOTO_SESSION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getArPhotoSessionTelemetry().hashCode();
+        break;
+      case 46:
+        hash = (37 * hash) + INVASION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getInvasionTelemetry().hashCode();
+        break;
+      case 47:
+        hash = (37 * hash) + COMBAT_MINIGAME_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getCombatMinigameTelemetry().hashCode();
+        break;
+      case 48:
+        hash = (37 * hash) + LEAVE_POINT_OF_INTEREST_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getLeavePointOfInterestTelemetry().hashCode();
+        break;
+      case 49:
+        hash = (37 * hash) + VIEW_POINT_OF_INTEREST_IMAGE_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getViewPointOfInterestImageTelemetry().hashCode();
+        break;
+      case 50:
+        hash = (37 * hash) + COMBAT_HUB_ENTRANCE_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getCombatHubEntranceTelemetry().hashCode();
+        break;
+      case 51:
+        hash = (37 * hash) + LEAVE_INTERACTION_RANGE_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getLeaveInteractionRangeTelemetry().hashCode();
+        break;
+      case 52:
+        hash = (37 * hash) + SHOPPING_PAGE_CLICK_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getShoppingPageClickTelemetry().hashCode();
+        break;
+      case 53:
+        hash = (37 * hash) + SHOPPING_PAGE_SCROLL_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getShoppingPageScrollTelemetry().hashCode();
+        break;
+      case 54:
+        hash = (37 * hash) + DEVICE_SPECIFICATIONS_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceSpecificationsTelemetry().hashCode();
+        break;
+      case 55:
+        hash = (37 * hash) + SCREEN_RESOLUTION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getScreenResolutionTelemetry().hashCode();
+        break;
+      case 56:
+        hash = (37 * hash) + AR_BUDDY_MULTIPLAYER_SESSION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getArBuddyMultiplayerSessionTelemetry().hashCode();
+        break;
+      case 57:
+        hash = (37 * hash) + BUDDY_MULTIPLAYER_CONNECTION_FAILED_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getBuddyMultiplayerConnectionFailedTelemetry().hashCode();
+        break;
+      case 58:
+        hash = (37 * hash) + BUDDY_MULTIPLAYER_CONNECTION_SUCCEEDED_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getBuddyMultiplayerConnectionSucceededTelemetry().hashCode();
+        break;
+      case 59:
+        hash = (37 * hash) + BUDDY_MULTIPLAYER_TIME_TO_GET_SESSION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getBuddyMultiplayerTimeToGetSessionTelemetry().hashCode();
+        break;
+      case 60:
+        hash = (37 * hash) + PLAYER_HUD_NOTIFICATION_CLICK_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getPlayerHudNotificationClickTelemetry().hashCode();
+        break;
+      case 61:
+        hash = (37 * hash) + MONODEPTH_DOWNLOAD_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getMonodepthDownloadTelemetry().hashCode();
+        break;
+      case 62:
+        hash = (37 * hash) + AR_MAPPING_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getArMappingTelemetry().hashCode();
+        break;
+      case 63:
+        hash = (37 * hash) + REMOTE_RAID_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getRemoteRaidTelemetry().hashCode();
+        break;
+      case 64:
+        hash = (37 * hash) + DEVICE_OS_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceOsTelemetry().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -3642,384 +4188,6 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (bootTimeBuilder_ == null) {
-        bootTime_ = null;
-      } else {
-        bootTime_ = null;
-        bootTimeBuilder_ = null;
-      }
-      if (frameRateBuilder_ == null) {
-        frameRate_ = null;
-      } else {
-        frameRate_ = null;
-        frameRateBuilder_ = null;
-      }
-      if (genericClickTelemetryBuilder_ == null) {
-        genericClickTelemetry_ = null;
-      } else {
-        genericClickTelemetry_ = null;
-        genericClickTelemetryBuilder_ = null;
-      }
-      if (mapEventsTelemetryBuilder_ == null) {
-        mapEventsTelemetry_ = null;
-      } else {
-        mapEventsTelemetry_ = null;
-        mapEventsTelemetryBuilder_ = null;
-      }
-      if (spinPokestopTelemetryBuilder_ == null) {
-        spinPokestopTelemetry_ = null;
-      } else {
-        spinPokestopTelemetry_ = null;
-        spinPokestopTelemetryBuilder_ = null;
-      }
-      if (profilePageTelemetryBuilder_ == null) {
-        profilePageTelemetry_ = null;
-      } else {
-        profilePageTelemetry_ = null;
-        profilePageTelemetryBuilder_ = null;
-      }
-      if (shoppingPageTelemetryBuilder_ == null) {
-        shoppingPageTelemetry_ = null;
-      } else {
-        shoppingPageTelemetry_ = null;
-        shoppingPageTelemetryBuilder_ = null;
-      }
-      if (encounterPokemonTelemetryBuilder_ == null) {
-        encounterPokemonTelemetry_ = null;
-      } else {
-        encounterPokemonTelemetry_ = null;
-        encounterPokemonTelemetryBuilder_ = null;
-      }
-      if (catchPokemonTelemetryBuilder_ == null) {
-        catchPokemonTelemetry_ = null;
-      } else {
-        catchPokemonTelemetry_ = null;
-        catchPokemonTelemetryBuilder_ = null;
-      }
-      if (deployPokemonTelemetryBuilder_ == null) {
-        deployPokemonTelemetry_ = null;
-      } else {
-        deployPokemonTelemetry_ = null;
-        deployPokemonTelemetryBuilder_ = null;
-      }
-      if (feedPokemonTelemetryBuilder_ == null) {
-        feedPokemonTelemetry_ = null;
-      } else {
-        feedPokemonTelemetry_ = null;
-        feedPokemonTelemetryBuilder_ = null;
-      }
-      if (evolvePokemonTelemetryBuilder_ == null) {
-        evolvePokemonTelemetry_ = null;
-      } else {
-        evolvePokemonTelemetry_ = null;
-        evolvePokemonTelemetryBuilder_ = null;
-      }
-      if (releasePokemonTelemetryBuilder_ == null) {
-        releasePokemonTelemetry_ = null;
-      } else {
-        releasePokemonTelemetry_ = null;
-        releasePokemonTelemetryBuilder_ = null;
-      }
-      if (nicknamePokemonTelemetryBuilder_ == null) {
-        nicknamePokemonTelemetry_ = null;
-      } else {
-        nicknamePokemonTelemetry_ = null;
-        nicknamePokemonTelemetryBuilder_ = null;
-      }
-      if (newsPageTelemetryBuilder_ == null) {
-        newsPageTelemetry_ = null;
-      } else {
-        newsPageTelemetry_ = null;
-        newsPageTelemetryBuilder_ = null;
-      }
-      if (itemTelemetryBuilder_ == null) {
-        itemTelemetry_ = null;
-      } else {
-        itemTelemetry_ = null;
-        itemTelemetryBuilder_ = null;
-      }
-      if (battlePartyTelemetryBuilder_ == null) {
-        battlePartyTelemetry_ = null;
-      } else {
-        battlePartyTelemetry_ = null;
-        battlePartyTelemetryBuilder_ = null;
-      }
-      if (passcodeRedeemTelemetryBuilder_ == null) {
-        passcodeRedeemTelemetry_ = null;
-      } else {
-        passcodeRedeemTelemetry_ = null;
-        passcodeRedeemTelemetryBuilder_ = null;
-      }
-      if (linkLoginTelemetryBuilder_ == null) {
-        linkLoginTelemetry_ = null;
-      } else {
-        linkLoginTelemetry_ = null;
-        linkLoginTelemetryBuilder_ = null;
-      }
-      if (raidTelemetryBuilder_ == null) {
-        raidTelemetry_ = null;
-      } else {
-        raidTelemetry_ = null;
-        raidTelemetryBuilder_ = null;
-      }
-      if (pushNotificationTelemetryBuilder_ == null) {
-        pushNotificationTelemetry_ = null;
-      } else {
-        pushNotificationTelemetry_ = null;
-        pushNotificationTelemetryBuilder_ = null;
-      }
-      if (avatarCustomizationTelemetryBuilder_ == null) {
-        avatarCustomizationTelemetry_ = null;
-      } else {
-        avatarCustomizationTelemetry_ = null;
-        avatarCustomizationTelemetryBuilder_ = null;
-      }
-      if (readPointOfInterestDescriptionTelemetryBuilder_ == null) {
-        readPointOfInterestDescriptionTelemetry_ = null;
-      } else {
-        readPointOfInterestDescriptionTelemetry_ = null;
-        readPointOfInterestDescriptionTelemetryBuilder_ = null;
-      }
-      if (webTelemetryBuilder_ == null) {
-        webTelemetry_ = null;
-      } else {
-        webTelemetry_ = null;
-        webTelemetryBuilder_ = null;
-      }
-      if (changeArTelemetryBuilder_ == null) {
-        changeArTelemetry_ = null;
-      } else {
-        changeArTelemetry_ = null;
-        changeArTelemetryBuilder_ = null;
-      }
-      if (weatherDetailClickTelemetryBuilder_ == null) {
-        weatherDetailClickTelemetry_ = null;
-      } else {
-        weatherDetailClickTelemetry_ = null;
-        weatherDetailClickTelemetryBuilder_ = null;
-      }
-      if (userIssueWeatherReportBuilder_ == null) {
-        userIssueWeatherReport_ = null;
-      } else {
-        userIssueWeatherReport_ = null;
-        userIssueWeatherReportBuilder_ = null;
-      }
-      if (pokemonInventoryTelemetryBuilder_ == null) {
-        pokemonInventoryTelemetry_ = null;
-      } else {
-        pokemonInventoryTelemetry_ = null;
-        pokemonInventoryTelemetryBuilder_ = null;
-      }
-      if (socialTelemetryBuilder_ == null) {
-        socialTelemetry_ = null;
-      } else {
-        socialTelemetry_ = null;
-        socialTelemetryBuilder_ = null;
-      }
-      if (checkEncounterInfoTelemetryBuilder_ == null) {
-        checkEncounterInfoTelemetry_ = null;
-      } else {
-        checkEncounterInfoTelemetry_ = null;
-        checkEncounterInfoTelemetryBuilder_ = null;
-      }
-      if (pokemonGoPlusTelemetryBuilder_ == null) {
-        pokemonGoPlusTelemetry_ = null;
-      } else {
-        pokemonGoPlusTelemetry_ = null;
-        pokemonGoPlusTelemetryBuilder_ = null;
-      }
-      if (rpcTimingTelemetryBuilder_ == null) {
-        rpcTimingTelemetry_ = null;
-      } else {
-        rpcTimingTelemetry_ = null;
-        rpcTimingTelemetryBuilder_ = null;
-      }
-      if (socialGiftCountTelemetryBuilder_ == null) {
-        socialGiftCountTelemetry_ = null;
-      } else {
-        socialGiftCountTelemetry_ = null;
-        socialGiftCountTelemetryBuilder_ = null;
-      }
-      if (assetBundleTelemetryBuilder_ == null) {
-        assetBundleTelemetry_ = null;
-      } else {
-        assetBundleTelemetry_ = null;
-        assetBundleTelemetryBuilder_ = null;
-      }
-      if (assetPoiDownloadTelemetryBuilder_ == null) {
-        assetPoiDownloadTelemetry_ = null;
-      } else {
-        assetPoiDownloadTelemetry_ = null;
-        assetPoiDownloadTelemetryBuilder_ = null;
-      }
-      if (assetStreamDownloadTelemetryBuilder_ == null) {
-        assetStreamDownloadTelemetry_ = null;
-      } else {
-        assetStreamDownloadTelemetry_ = null;
-        assetStreamDownloadTelemetryBuilder_ = null;
-      }
-      if (assetStreamCacheCulledTelemetryBuilder_ == null) {
-        assetStreamCacheCulledTelemetry_ = null;
-      } else {
-        assetStreamCacheCulledTelemetry_ = null;
-        assetStreamCacheCulledTelemetryBuilder_ = null;
-      }
-      if (rpcSocketTimingTelemetryBuilder_ == null) {
-        rpcSocketTimingTelemetry_ = null;
-      } else {
-        rpcSocketTimingTelemetry_ = null;
-        rpcSocketTimingTelemetryBuilder_ = null;
-      }
-      if (permissionsFlowBuilder_ == null) {
-        permissionsFlow_ = null;
-      } else {
-        permissionsFlow_ = null;
-        permissionsFlowBuilder_ = null;
-      }
-      if (deviceServiceToggleBuilder_ == null) {
-        deviceServiceToggle_ = null;
-      } else {
-        deviceServiceToggle_ = null;
-        deviceServiceToggleBuilder_ = null;
-      }
-      if (bootTelemetryBuilder_ == null) {
-        bootTelemetry_ = null;
-      } else {
-        bootTelemetry_ = null;
-        bootTelemetryBuilder_ = null;
-      }
-      if (userAttributesBuilder_ == null) {
-        userAttributes_ = null;
-      } else {
-        userAttributes_ = null;
-        userAttributesBuilder_ = null;
-      }
-      if (onboardingTelemetryBuilder_ == null) {
-        onboardingTelemetry_ = null;
-      } else {
-        onboardingTelemetry_ = null;
-        onboardingTelemetryBuilder_ = null;
-      }
-      if (loginActionTelemetryBuilder_ == null) {
-        loginActionTelemetry_ = null;
-      } else {
-        loginActionTelemetry_ = null;
-        loginActionTelemetryBuilder_ = null;
-      }
-      if (arPhotoSessionTelemetryBuilder_ == null) {
-        arPhotoSessionTelemetry_ = null;
-      } else {
-        arPhotoSessionTelemetry_ = null;
-        arPhotoSessionTelemetryBuilder_ = null;
-      }
-      if (invasionTelemetryBuilder_ == null) {
-        invasionTelemetry_ = null;
-      } else {
-        invasionTelemetry_ = null;
-        invasionTelemetryBuilder_ = null;
-      }
-      if (combatMinigameTelemetryBuilder_ == null) {
-        combatMinigameTelemetry_ = null;
-      } else {
-        combatMinigameTelemetry_ = null;
-        combatMinigameTelemetryBuilder_ = null;
-      }
-      if (leavePointOfInterestTelemetryBuilder_ == null) {
-        leavePointOfInterestTelemetry_ = null;
-      } else {
-        leavePointOfInterestTelemetry_ = null;
-        leavePointOfInterestTelemetryBuilder_ = null;
-      }
-      if (viewPointOfInterestImageTelemetryBuilder_ == null) {
-        viewPointOfInterestImageTelemetry_ = null;
-      } else {
-        viewPointOfInterestImageTelemetry_ = null;
-        viewPointOfInterestImageTelemetryBuilder_ = null;
-      }
-      if (combatHubEntranceTelemetryBuilder_ == null) {
-        combatHubEntranceTelemetry_ = null;
-      } else {
-        combatHubEntranceTelemetry_ = null;
-        combatHubEntranceTelemetryBuilder_ = null;
-      }
-      if (leaveInteractionRangeTelemetryBuilder_ == null) {
-        leaveInteractionRangeTelemetry_ = null;
-      } else {
-        leaveInteractionRangeTelemetry_ = null;
-        leaveInteractionRangeTelemetryBuilder_ = null;
-      }
-      if (shoppingPageClickTelemetryBuilder_ == null) {
-        shoppingPageClickTelemetry_ = null;
-      } else {
-        shoppingPageClickTelemetry_ = null;
-        shoppingPageClickTelemetryBuilder_ = null;
-      }
-      if (shoppingPageScrollTelemetryBuilder_ == null) {
-        shoppingPageScrollTelemetry_ = null;
-      } else {
-        shoppingPageScrollTelemetry_ = null;
-        shoppingPageScrollTelemetryBuilder_ = null;
-      }
-      if (deviceSpecificationsTelemetryBuilder_ == null) {
-        deviceSpecificationsTelemetry_ = null;
-      } else {
-        deviceSpecificationsTelemetry_ = null;
-        deviceSpecificationsTelemetryBuilder_ = null;
-      }
-      if (screenResolutionTelemetryBuilder_ == null) {
-        screenResolutionTelemetry_ = null;
-      } else {
-        screenResolutionTelemetry_ = null;
-        screenResolutionTelemetryBuilder_ = null;
-      }
-      if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
-        arBuddyMultiplayerSessionTelemetry_ = null;
-      } else {
-        arBuddyMultiplayerSessionTelemetry_ = null;
-        arBuddyMultiplayerSessionTelemetryBuilder_ = null;
-      }
-      if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
-        buddyMultiplayerConnectionFailedTelemetry_ = null;
-      } else {
-        buddyMultiplayerConnectionFailedTelemetry_ = null;
-        buddyMultiplayerConnectionFailedTelemetryBuilder_ = null;
-      }
-      if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
-        buddyMultiplayerConnectionSucceededTelemetry_ = null;
-      } else {
-        buddyMultiplayerConnectionSucceededTelemetry_ = null;
-        buddyMultiplayerConnectionSucceededTelemetryBuilder_ = null;
-      }
-      if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
-        buddyMultiplayerTimeToGetSessionTelemetry_ = null;
-      } else {
-        buddyMultiplayerTimeToGetSessionTelemetry_ = null;
-        buddyMultiplayerTimeToGetSessionTelemetryBuilder_ = null;
-      }
-      if (playerHudNotificationClickTelemetryBuilder_ == null) {
-        playerHudNotificationClickTelemetry_ = null;
-      } else {
-        playerHudNotificationClickTelemetry_ = null;
-        playerHudNotificationClickTelemetryBuilder_ = null;
-      }
-      if (monodepthDownloadTelemetryBuilder_ == null) {
-        monodepthDownloadTelemetry_ = null;
-      } else {
-        monodepthDownloadTelemetry_ = null;
-        monodepthDownloadTelemetryBuilder_ = null;
-      }
-      if (arMappingTelemetryBuilder_ == null) {
-        arMappingTelemetry_ = null;
-      } else {
-        arMappingTelemetry_ = null;
-        arMappingTelemetryBuilder_ = null;
-      }
-      if (remoteRaidTelemetryBuilder_ == null) {
-        remoteRaidTelemetry_ = null;
-      } else {
-        remoteRaidTelemetry_ = null;
-        remoteRaidTelemetryBuilder_ = null;
-      }
       if (serverDataBuilder_ == null) {
         serverData_ = null;
       } else {
@@ -4032,6 +4200,8 @@ private static final long serialVersionUID = 0L;
         commonFilters_ = null;
         commonFiltersBuilder_ = null;
       }
+      telemetryDataCase_ = 0;
+      telemetryData_ = null;
       return this;
     }
 
@@ -4058,320 +4228,453 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.HoloholoClientTelemetryOmniProto buildPartial() {
       POGOProtos.Rpc.HoloholoClientTelemetryOmniProto result = new POGOProtos.Rpc.HoloholoClientTelemetryOmniProto(this);
-      if (bootTimeBuilder_ == null) {
-        result.bootTime_ = bootTime_;
-      } else {
-        result.bootTime_ = bootTimeBuilder_.build();
+      if (telemetryDataCase_ == 1) {
+        if (bootTimeBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = bootTimeBuilder_.build();
+        }
       }
-      if (frameRateBuilder_ == null) {
-        result.frameRate_ = frameRate_;
-      } else {
-        result.frameRate_ = frameRateBuilder_.build();
+      if (telemetryDataCase_ == 2) {
+        if (frameRateBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = frameRateBuilder_.build();
+        }
       }
-      if (genericClickTelemetryBuilder_ == null) {
-        result.genericClickTelemetry_ = genericClickTelemetry_;
-      } else {
-        result.genericClickTelemetry_ = genericClickTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 3) {
+        if (genericClickTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = genericClickTelemetryBuilder_.build();
+        }
       }
-      if (mapEventsTelemetryBuilder_ == null) {
-        result.mapEventsTelemetry_ = mapEventsTelemetry_;
-      } else {
-        result.mapEventsTelemetry_ = mapEventsTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 4) {
+        if (mapEventsTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = mapEventsTelemetryBuilder_.build();
+        }
       }
-      if (spinPokestopTelemetryBuilder_ == null) {
-        result.spinPokestopTelemetry_ = spinPokestopTelemetry_;
-      } else {
-        result.spinPokestopTelemetry_ = spinPokestopTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 5) {
+        if (spinPokestopTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = spinPokestopTelemetryBuilder_.build();
+        }
       }
-      if (profilePageTelemetryBuilder_ == null) {
-        result.profilePageTelemetry_ = profilePageTelemetry_;
-      } else {
-        result.profilePageTelemetry_ = profilePageTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 6) {
+        if (profilePageTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = profilePageTelemetryBuilder_.build();
+        }
       }
-      if (shoppingPageTelemetryBuilder_ == null) {
-        result.shoppingPageTelemetry_ = shoppingPageTelemetry_;
-      } else {
-        result.shoppingPageTelemetry_ = shoppingPageTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 7) {
+        if (shoppingPageTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = shoppingPageTelemetryBuilder_.build();
+        }
       }
-      if (encounterPokemonTelemetryBuilder_ == null) {
-        result.encounterPokemonTelemetry_ = encounterPokemonTelemetry_;
-      } else {
-        result.encounterPokemonTelemetry_ = encounterPokemonTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 8) {
+        if (encounterPokemonTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = encounterPokemonTelemetryBuilder_.build();
+        }
       }
-      if (catchPokemonTelemetryBuilder_ == null) {
-        result.catchPokemonTelemetry_ = catchPokemonTelemetry_;
-      } else {
-        result.catchPokemonTelemetry_ = catchPokemonTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 9) {
+        if (catchPokemonTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = catchPokemonTelemetryBuilder_.build();
+        }
       }
-      if (deployPokemonTelemetryBuilder_ == null) {
-        result.deployPokemonTelemetry_ = deployPokemonTelemetry_;
-      } else {
-        result.deployPokemonTelemetry_ = deployPokemonTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 10) {
+        if (deployPokemonTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = deployPokemonTelemetryBuilder_.build();
+        }
       }
-      if (feedPokemonTelemetryBuilder_ == null) {
-        result.feedPokemonTelemetry_ = feedPokemonTelemetry_;
-      } else {
-        result.feedPokemonTelemetry_ = feedPokemonTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 11) {
+        if (feedPokemonTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = feedPokemonTelemetryBuilder_.build();
+        }
       }
-      if (evolvePokemonTelemetryBuilder_ == null) {
-        result.evolvePokemonTelemetry_ = evolvePokemonTelemetry_;
-      } else {
-        result.evolvePokemonTelemetry_ = evolvePokemonTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 12) {
+        if (evolvePokemonTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = evolvePokemonTelemetryBuilder_.build();
+        }
       }
-      if (releasePokemonTelemetryBuilder_ == null) {
-        result.releasePokemonTelemetry_ = releasePokemonTelemetry_;
-      } else {
-        result.releasePokemonTelemetry_ = releasePokemonTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 13) {
+        if (releasePokemonTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = releasePokemonTelemetryBuilder_.build();
+        }
       }
-      if (nicknamePokemonTelemetryBuilder_ == null) {
-        result.nicknamePokemonTelemetry_ = nicknamePokemonTelemetry_;
-      } else {
-        result.nicknamePokemonTelemetry_ = nicknamePokemonTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 14) {
+        if (nicknamePokemonTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = nicknamePokemonTelemetryBuilder_.build();
+        }
       }
-      if (newsPageTelemetryBuilder_ == null) {
-        result.newsPageTelemetry_ = newsPageTelemetry_;
-      } else {
-        result.newsPageTelemetry_ = newsPageTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 15) {
+        if (newsPageTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = newsPageTelemetryBuilder_.build();
+        }
       }
-      if (itemTelemetryBuilder_ == null) {
-        result.itemTelemetry_ = itemTelemetry_;
-      } else {
-        result.itemTelemetry_ = itemTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 16) {
+        if (itemTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = itemTelemetryBuilder_.build();
+        }
       }
-      if (battlePartyTelemetryBuilder_ == null) {
-        result.battlePartyTelemetry_ = battlePartyTelemetry_;
-      } else {
-        result.battlePartyTelemetry_ = battlePartyTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 17) {
+        if (battlePartyTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = battlePartyTelemetryBuilder_.build();
+        }
       }
-      if (passcodeRedeemTelemetryBuilder_ == null) {
-        result.passcodeRedeemTelemetry_ = passcodeRedeemTelemetry_;
-      } else {
-        result.passcodeRedeemTelemetry_ = passcodeRedeemTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 18) {
+        if (passcodeRedeemTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = passcodeRedeemTelemetryBuilder_.build();
+        }
       }
-      if (linkLoginTelemetryBuilder_ == null) {
-        result.linkLoginTelemetry_ = linkLoginTelemetry_;
-      } else {
-        result.linkLoginTelemetry_ = linkLoginTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 19) {
+        if (linkLoginTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = linkLoginTelemetryBuilder_.build();
+        }
       }
-      if (raidTelemetryBuilder_ == null) {
-        result.raidTelemetry_ = raidTelemetry_;
-      } else {
-        result.raidTelemetry_ = raidTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 20) {
+        if (raidTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = raidTelemetryBuilder_.build();
+        }
       }
-      if (pushNotificationTelemetryBuilder_ == null) {
-        result.pushNotificationTelemetry_ = pushNotificationTelemetry_;
-      } else {
-        result.pushNotificationTelemetry_ = pushNotificationTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 21) {
+        if (pushNotificationTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = pushNotificationTelemetryBuilder_.build();
+        }
       }
-      if (avatarCustomizationTelemetryBuilder_ == null) {
-        result.avatarCustomizationTelemetry_ = avatarCustomizationTelemetry_;
-      } else {
-        result.avatarCustomizationTelemetry_ = avatarCustomizationTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 22) {
+        if (avatarCustomizationTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = avatarCustomizationTelemetryBuilder_.build();
+        }
       }
-      if (readPointOfInterestDescriptionTelemetryBuilder_ == null) {
-        result.readPointOfInterestDescriptionTelemetry_ = readPointOfInterestDescriptionTelemetry_;
-      } else {
-        result.readPointOfInterestDescriptionTelemetry_ = readPointOfInterestDescriptionTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 23) {
+        if (readPointOfInterestDescriptionTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = readPointOfInterestDescriptionTelemetryBuilder_.build();
+        }
       }
-      if (webTelemetryBuilder_ == null) {
-        result.webTelemetry_ = webTelemetry_;
-      } else {
-        result.webTelemetry_ = webTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 24) {
+        if (webTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = webTelemetryBuilder_.build();
+        }
       }
-      if (changeArTelemetryBuilder_ == null) {
-        result.changeArTelemetry_ = changeArTelemetry_;
-      } else {
-        result.changeArTelemetry_ = changeArTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 25) {
+        if (changeArTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = changeArTelemetryBuilder_.build();
+        }
       }
-      if (weatherDetailClickTelemetryBuilder_ == null) {
-        result.weatherDetailClickTelemetry_ = weatherDetailClickTelemetry_;
-      } else {
-        result.weatherDetailClickTelemetry_ = weatherDetailClickTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 26) {
+        if (weatherDetailClickTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = weatherDetailClickTelemetryBuilder_.build();
+        }
       }
-      if (userIssueWeatherReportBuilder_ == null) {
-        result.userIssueWeatherReport_ = userIssueWeatherReport_;
-      } else {
-        result.userIssueWeatherReport_ = userIssueWeatherReportBuilder_.build();
+      if (telemetryDataCase_ == 27) {
+        if (userIssueWeatherReportBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = userIssueWeatherReportBuilder_.build();
+        }
       }
-      if (pokemonInventoryTelemetryBuilder_ == null) {
-        result.pokemonInventoryTelemetry_ = pokemonInventoryTelemetry_;
-      } else {
-        result.pokemonInventoryTelemetry_ = pokemonInventoryTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 28) {
+        if (pokemonInventoryTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = pokemonInventoryTelemetryBuilder_.build();
+        }
       }
-      if (socialTelemetryBuilder_ == null) {
-        result.socialTelemetry_ = socialTelemetry_;
-      } else {
-        result.socialTelemetry_ = socialTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 29) {
+        if (socialTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = socialTelemetryBuilder_.build();
+        }
       }
-      if (checkEncounterInfoTelemetryBuilder_ == null) {
-        result.checkEncounterInfoTelemetry_ = checkEncounterInfoTelemetry_;
-      } else {
-        result.checkEncounterInfoTelemetry_ = checkEncounterInfoTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 30) {
+        if (checkEncounterInfoTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = checkEncounterInfoTelemetryBuilder_.build();
+        }
       }
-      if (pokemonGoPlusTelemetryBuilder_ == null) {
-        result.pokemonGoPlusTelemetry_ = pokemonGoPlusTelemetry_;
-      } else {
-        result.pokemonGoPlusTelemetry_ = pokemonGoPlusTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 31) {
+        if (pokemonGoPlusTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = pokemonGoPlusTelemetryBuilder_.build();
+        }
       }
-      if (rpcTimingTelemetryBuilder_ == null) {
-        result.rpcTimingTelemetry_ = rpcTimingTelemetry_;
-      } else {
-        result.rpcTimingTelemetry_ = rpcTimingTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 32) {
+        if (rpcTimingTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = rpcTimingTelemetryBuilder_.build();
+        }
       }
-      if (socialGiftCountTelemetryBuilder_ == null) {
-        result.socialGiftCountTelemetry_ = socialGiftCountTelemetry_;
-      } else {
-        result.socialGiftCountTelemetry_ = socialGiftCountTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 33) {
+        if (socialGiftCountTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = socialGiftCountTelemetryBuilder_.build();
+        }
       }
-      if (assetBundleTelemetryBuilder_ == null) {
-        result.assetBundleTelemetry_ = assetBundleTelemetry_;
-      } else {
-        result.assetBundleTelemetry_ = assetBundleTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 34) {
+        if (assetBundleTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = assetBundleTelemetryBuilder_.build();
+        }
       }
-      if (assetPoiDownloadTelemetryBuilder_ == null) {
-        result.assetPoiDownloadTelemetry_ = assetPoiDownloadTelemetry_;
-      } else {
-        result.assetPoiDownloadTelemetry_ = assetPoiDownloadTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 35) {
+        if (assetPoiDownloadTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = assetPoiDownloadTelemetryBuilder_.build();
+        }
       }
-      if (assetStreamDownloadTelemetryBuilder_ == null) {
-        result.assetStreamDownloadTelemetry_ = assetStreamDownloadTelemetry_;
-      } else {
-        result.assetStreamDownloadTelemetry_ = assetStreamDownloadTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 36) {
+        if (assetStreamDownloadTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = assetStreamDownloadTelemetryBuilder_.build();
+        }
       }
-      if (assetStreamCacheCulledTelemetryBuilder_ == null) {
-        result.assetStreamCacheCulledTelemetry_ = assetStreamCacheCulledTelemetry_;
-      } else {
-        result.assetStreamCacheCulledTelemetry_ = assetStreamCacheCulledTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 37) {
+        if (assetStreamCacheCulledTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = assetStreamCacheCulledTelemetryBuilder_.build();
+        }
       }
-      if (rpcSocketTimingTelemetryBuilder_ == null) {
-        result.rpcSocketTimingTelemetry_ = rpcSocketTimingTelemetry_;
-      } else {
-        result.rpcSocketTimingTelemetry_ = rpcSocketTimingTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 38) {
+        if (rpcSocketTimingTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = rpcSocketTimingTelemetryBuilder_.build();
+        }
       }
-      if (permissionsFlowBuilder_ == null) {
-        result.permissionsFlow_ = permissionsFlow_;
-      } else {
-        result.permissionsFlow_ = permissionsFlowBuilder_.build();
+      if (telemetryDataCase_ == 39) {
+        if (permissionsFlowBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = permissionsFlowBuilder_.build();
+        }
       }
-      if (deviceServiceToggleBuilder_ == null) {
-        result.deviceServiceToggle_ = deviceServiceToggle_;
-      } else {
-        result.deviceServiceToggle_ = deviceServiceToggleBuilder_.build();
+      if (telemetryDataCase_ == 40) {
+        if (deviceServiceToggleBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = deviceServiceToggleBuilder_.build();
+        }
       }
-      if (bootTelemetryBuilder_ == null) {
-        result.bootTelemetry_ = bootTelemetry_;
-      } else {
-        result.bootTelemetry_ = bootTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 41) {
+        if (bootTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = bootTelemetryBuilder_.build();
+        }
       }
-      if (userAttributesBuilder_ == null) {
-        result.userAttributes_ = userAttributes_;
-      } else {
-        result.userAttributes_ = userAttributesBuilder_.build();
+      if (telemetryDataCase_ == 42) {
+        if (userAttributesBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = userAttributesBuilder_.build();
+        }
       }
-      if (onboardingTelemetryBuilder_ == null) {
-        result.onboardingTelemetry_ = onboardingTelemetry_;
-      } else {
-        result.onboardingTelemetry_ = onboardingTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 43) {
+        if (onboardingTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = onboardingTelemetryBuilder_.build();
+        }
       }
-      if (loginActionTelemetryBuilder_ == null) {
-        result.loginActionTelemetry_ = loginActionTelemetry_;
-      } else {
-        result.loginActionTelemetry_ = loginActionTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 44) {
+        if (loginActionTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = loginActionTelemetryBuilder_.build();
+        }
       }
-      if (arPhotoSessionTelemetryBuilder_ == null) {
-        result.arPhotoSessionTelemetry_ = arPhotoSessionTelemetry_;
-      } else {
-        result.arPhotoSessionTelemetry_ = arPhotoSessionTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 45) {
+        if (arPhotoSessionTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = arPhotoSessionTelemetryBuilder_.build();
+        }
       }
-      if (invasionTelemetryBuilder_ == null) {
-        result.invasionTelemetry_ = invasionTelemetry_;
-      } else {
-        result.invasionTelemetry_ = invasionTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 46) {
+        if (invasionTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = invasionTelemetryBuilder_.build();
+        }
       }
-      if (combatMinigameTelemetryBuilder_ == null) {
-        result.combatMinigameTelemetry_ = combatMinigameTelemetry_;
-      } else {
-        result.combatMinigameTelemetry_ = combatMinigameTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 47) {
+        if (combatMinigameTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = combatMinigameTelemetryBuilder_.build();
+        }
       }
-      if (leavePointOfInterestTelemetryBuilder_ == null) {
-        result.leavePointOfInterestTelemetry_ = leavePointOfInterestTelemetry_;
-      } else {
-        result.leavePointOfInterestTelemetry_ = leavePointOfInterestTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 48) {
+        if (leavePointOfInterestTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = leavePointOfInterestTelemetryBuilder_.build();
+        }
       }
-      if (viewPointOfInterestImageTelemetryBuilder_ == null) {
-        result.viewPointOfInterestImageTelemetry_ = viewPointOfInterestImageTelemetry_;
-      } else {
-        result.viewPointOfInterestImageTelemetry_ = viewPointOfInterestImageTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 49) {
+        if (viewPointOfInterestImageTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = viewPointOfInterestImageTelemetryBuilder_.build();
+        }
       }
-      if (combatHubEntranceTelemetryBuilder_ == null) {
-        result.combatHubEntranceTelemetry_ = combatHubEntranceTelemetry_;
-      } else {
-        result.combatHubEntranceTelemetry_ = combatHubEntranceTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 50) {
+        if (combatHubEntranceTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = combatHubEntranceTelemetryBuilder_.build();
+        }
       }
-      if (leaveInteractionRangeTelemetryBuilder_ == null) {
-        result.leaveInteractionRangeTelemetry_ = leaveInteractionRangeTelemetry_;
-      } else {
-        result.leaveInteractionRangeTelemetry_ = leaveInteractionRangeTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 51) {
+        if (leaveInteractionRangeTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = leaveInteractionRangeTelemetryBuilder_.build();
+        }
       }
-      if (shoppingPageClickTelemetryBuilder_ == null) {
-        result.shoppingPageClickTelemetry_ = shoppingPageClickTelemetry_;
-      } else {
-        result.shoppingPageClickTelemetry_ = shoppingPageClickTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 52) {
+        if (shoppingPageClickTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = shoppingPageClickTelemetryBuilder_.build();
+        }
       }
-      if (shoppingPageScrollTelemetryBuilder_ == null) {
-        result.shoppingPageScrollTelemetry_ = shoppingPageScrollTelemetry_;
-      } else {
-        result.shoppingPageScrollTelemetry_ = shoppingPageScrollTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 53) {
+        if (shoppingPageScrollTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = shoppingPageScrollTelemetryBuilder_.build();
+        }
       }
-      if (deviceSpecificationsTelemetryBuilder_ == null) {
-        result.deviceSpecificationsTelemetry_ = deviceSpecificationsTelemetry_;
-      } else {
-        result.deviceSpecificationsTelemetry_ = deviceSpecificationsTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 54) {
+        if (deviceSpecificationsTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = deviceSpecificationsTelemetryBuilder_.build();
+        }
       }
-      if (screenResolutionTelemetryBuilder_ == null) {
-        result.screenResolutionTelemetry_ = screenResolutionTelemetry_;
-      } else {
-        result.screenResolutionTelemetry_ = screenResolutionTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 55) {
+        if (screenResolutionTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = screenResolutionTelemetryBuilder_.build();
+        }
       }
-      if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
-        result.arBuddyMultiplayerSessionTelemetry_ = arBuddyMultiplayerSessionTelemetry_;
-      } else {
-        result.arBuddyMultiplayerSessionTelemetry_ = arBuddyMultiplayerSessionTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 56) {
+        if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = arBuddyMultiplayerSessionTelemetryBuilder_.build();
+        }
       }
-      if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
-        result.buddyMultiplayerConnectionFailedTelemetry_ = buddyMultiplayerConnectionFailedTelemetry_;
-      } else {
-        result.buddyMultiplayerConnectionFailedTelemetry_ = buddyMultiplayerConnectionFailedTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 57) {
+        if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = buddyMultiplayerConnectionFailedTelemetryBuilder_.build();
+        }
       }
-      if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
-        result.buddyMultiplayerConnectionSucceededTelemetry_ = buddyMultiplayerConnectionSucceededTelemetry_;
-      } else {
-        result.buddyMultiplayerConnectionSucceededTelemetry_ = buddyMultiplayerConnectionSucceededTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 58) {
+        if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = buddyMultiplayerConnectionSucceededTelemetryBuilder_.build();
+        }
       }
-      if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
-        result.buddyMultiplayerTimeToGetSessionTelemetry_ = buddyMultiplayerTimeToGetSessionTelemetry_;
-      } else {
-        result.buddyMultiplayerTimeToGetSessionTelemetry_ = buddyMultiplayerTimeToGetSessionTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 59) {
+        if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = buddyMultiplayerTimeToGetSessionTelemetryBuilder_.build();
+        }
       }
-      if (playerHudNotificationClickTelemetryBuilder_ == null) {
-        result.playerHudNotificationClickTelemetry_ = playerHudNotificationClickTelemetry_;
-      } else {
-        result.playerHudNotificationClickTelemetry_ = playerHudNotificationClickTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 60) {
+        if (playerHudNotificationClickTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = playerHudNotificationClickTelemetryBuilder_.build();
+        }
       }
-      if (monodepthDownloadTelemetryBuilder_ == null) {
-        result.monodepthDownloadTelemetry_ = monodepthDownloadTelemetry_;
-      } else {
-        result.monodepthDownloadTelemetry_ = monodepthDownloadTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 61) {
+        if (monodepthDownloadTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = monodepthDownloadTelemetryBuilder_.build();
+        }
       }
-      if (arMappingTelemetryBuilder_ == null) {
-        result.arMappingTelemetry_ = arMappingTelemetry_;
-      } else {
-        result.arMappingTelemetry_ = arMappingTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 62) {
+        if (arMappingTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = arMappingTelemetryBuilder_.build();
+        }
       }
-      if (remoteRaidTelemetryBuilder_ == null) {
-        result.remoteRaidTelemetry_ = remoteRaidTelemetry_;
-      } else {
-        result.remoteRaidTelemetry_ = remoteRaidTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 63) {
+        if (remoteRaidTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = remoteRaidTelemetryBuilder_.build();
+        }
+      }
+      if (telemetryDataCase_ == 64) {
+        if (deviceOsTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = deviceOsTelemetryBuilder_.build();
+        }
       }
       if (serverDataBuilder_ == null) {
         result.serverData_ = serverData_;
@@ -4383,6 +4686,7 @@ private static final long serialVersionUID = 0L;
       } else {
         result.commonFilters_ = commonFiltersBuilder_.build();
       }
+      result.telemetryDataCase_ = telemetryDataCase_;
       onBuilt();
       return result;
     }
@@ -4431,200 +4735,272 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.HoloholoClientTelemetryOmniProto other) {
       if (other == POGOProtos.Rpc.HoloholoClientTelemetryOmniProto.getDefaultInstance()) return this;
-      if (other.hasBootTime()) {
-        mergeBootTime(other.getBootTime());
-      }
-      if (other.hasFrameRate()) {
-        mergeFrameRate(other.getFrameRate());
-      }
-      if (other.hasGenericClickTelemetry()) {
-        mergeGenericClickTelemetry(other.getGenericClickTelemetry());
-      }
-      if (other.hasMapEventsTelemetry()) {
-        mergeMapEventsTelemetry(other.getMapEventsTelemetry());
-      }
-      if (other.hasSpinPokestopTelemetry()) {
-        mergeSpinPokestopTelemetry(other.getSpinPokestopTelemetry());
-      }
-      if (other.hasProfilePageTelemetry()) {
-        mergeProfilePageTelemetry(other.getProfilePageTelemetry());
-      }
-      if (other.hasShoppingPageTelemetry()) {
-        mergeShoppingPageTelemetry(other.getShoppingPageTelemetry());
-      }
-      if (other.hasEncounterPokemonTelemetry()) {
-        mergeEncounterPokemonTelemetry(other.getEncounterPokemonTelemetry());
-      }
-      if (other.hasCatchPokemonTelemetry()) {
-        mergeCatchPokemonTelemetry(other.getCatchPokemonTelemetry());
-      }
-      if (other.hasDeployPokemonTelemetry()) {
-        mergeDeployPokemonTelemetry(other.getDeployPokemonTelemetry());
-      }
-      if (other.hasFeedPokemonTelemetry()) {
-        mergeFeedPokemonTelemetry(other.getFeedPokemonTelemetry());
-      }
-      if (other.hasEvolvePokemonTelemetry()) {
-        mergeEvolvePokemonTelemetry(other.getEvolvePokemonTelemetry());
-      }
-      if (other.hasReleasePokemonTelemetry()) {
-        mergeReleasePokemonTelemetry(other.getReleasePokemonTelemetry());
-      }
-      if (other.hasNicknamePokemonTelemetry()) {
-        mergeNicknamePokemonTelemetry(other.getNicknamePokemonTelemetry());
-      }
-      if (other.hasNewsPageTelemetry()) {
-        mergeNewsPageTelemetry(other.getNewsPageTelemetry());
-      }
-      if (other.hasItemTelemetry()) {
-        mergeItemTelemetry(other.getItemTelemetry());
-      }
-      if (other.hasBattlePartyTelemetry()) {
-        mergeBattlePartyTelemetry(other.getBattlePartyTelemetry());
-      }
-      if (other.hasPasscodeRedeemTelemetry()) {
-        mergePasscodeRedeemTelemetry(other.getPasscodeRedeemTelemetry());
-      }
-      if (other.hasLinkLoginTelemetry()) {
-        mergeLinkLoginTelemetry(other.getLinkLoginTelemetry());
-      }
-      if (other.hasRaidTelemetry()) {
-        mergeRaidTelemetry(other.getRaidTelemetry());
-      }
-      if (other.hasPushNotificationTelemetry()) {
-        mergePushNotificationTelemetry(other.getPushNotificationTelemetry());
-      }
-      if (other.hasAvatarCustomizationTelemetry()) {
-        mergeAvatarCustomizationTelemetry(other.getAvatarCustomizationTelemetry());
-      }
-      if (other.hasReadPointOfInterestDescriptionTelemetry()) {
-        mergeReadPointOfInterestDescriptionTelemetry(other.getReadPointOfInterestDescriptionTelemetry());
-      }
-      if (other.hasWebTelemetry()) {
-        mergeWebTelemetry(other.getWebTelemetry());
-      }
-      if (other.hasChangeArTelemetry()) {
-        mergeChangeArTelemetry(other.getChangeArTelemetry());
-      }
-      if (other.hasWeatherDetailClickTelemetry()) {
-        mergeWeatherDetailClickTelemetry(other.getWeatherDetailClickTelemetry());
-      }
-      if (other.hasUserIssueWeatherReport()) {
-        mergeUserIssueWeatherReport(other.getUserIssueWeatherReport());
-      }
-      if (other.hasPokemonInventoryTelemetry()) {
-        mergePokemonInventoryTelemetry(other.getPokemonInventoryTelemetry());
-      }
-      if (other.hasSocialTelemetry()) {
-        mergeSocialTelemetry(other.getSocialTelemetry());
-      }
-      if (other.hasCheckEncounterInfoTelemetry()) {
-        mergeCheckEncounterInfoTelemetry(other.getCheckEncounterInfoTelemetry());
-      }
-      if (other.hasPokemonGoPlusTelemetry()) {
-        mergePokemonGoPlusTelemetry(other.getPokemonGoPlusTelemetry());
-      }
-      if (other.hasRpcTimingTelemetry()) {
-        mergeRpcTimingTelemetry(other.getRpcTimingTelemetry());
-      }
-      if (other.hasSocialGiftCountTelemetry()) {
-        mergeSocialGiftCountTelemetry(other.getSocialGiftCountTelemetry());
-      }
-      if (other.hasAssetBundleTelemetry()) {
-        mergeAssetBundleTelemetry(other.getAssetBundleTelemetry());
-      }
-      if (other.hasAssetPoiDownloadTelemetry()) {
-        mergeAssetPoiDownloadTelemetry(other.getAssetPoiDownloadTelemetry());
-      }
-      if (other.hasAssetStreamDownloadTelemetry()) {
-        mergeAssetStreamDownloadTelemetry(other.getAssetStreamDownloadTelemetry());
-      }
-      if (other.hasAssetStreamCacheCulledTelemetry()) {
-        mergeAssetStreamCacheCulledTelemetry(other.getAssetStreamCacheCulledTelemetry());
-      }
-      if (other.hasRpcSocketTimingTelemetry()) {
-        mergeRpcSocketTimingTelemetry(other.getRpcSocketTimingTelemetry());
-      }
-      if (other.hasPermissionsFlow()) {
-        mergePermissionsFlow(other.getPermissionsFlow());
-      }
-      if (other.hasDeviceServiceToggle()) {
-        mergeDeviceServiceToggle(other.getDeviceServiceToggle());
-      }
-      if (other.hasBootTelemetry()) {
-        mergeBootTelemetry(other.getBootTelemetry());
-      }
-      if (other.hasUserAttributes()) {
-        mergeUserAttributes(other.getUserAttributes());
-      }
-      if (other.hasOnboardingTelemetry()) {
-        mergeOnboardingTelemetry(other.getOnboardingTelemetry());
-      }
-      if (other.hasLoginActionTelemetry()) {
-        mergeLoginActionTelemetry(other.getLoginActionTelemetry());
-      }
-      if (other.hasArPhotoSessionTelemetry()) {
-        mergeArPhotoSessionTelemetry(other.getArPhotoSessionTelemetry());
-      }
-      if (other.hasInvasionTelemetry()) {
-        mergeInvasionTelemetry(other.getInvasionTelemetry());
-      }
-      if (other.hasCombatMinigameTelemetry()) {
-        mergeCombatMinigameTelemetry(other.getCombatMinigameTelemetry());
-      }
-      if (other.hasLeavePointOfInterestTelemetry()) {
-        mergeLeavePointOfInterestTelemetry(other.getLeavePointOfInterestTelemetry());
-      }
-      if (other.hasViewPointOfInterestImageTelemetry()) {
-        mergeViewPointOfInterestImageTelemetry(other.getViewPointOfInterestImageTelemetry());
-      }
-      if (other.hasCombatHubEntranceTelemetry()) {
-        mergeCombatHubEntranceTelemetry(other.getCombatHubEntranceTelemetry());
-      }
-      if (other.hasLeaveInteractionRangeTelemetry()) {
-        mergeLeaveInteractionRangeTelemetry(other.getLeaveInteractionRangeTelemetry());
-      }
-      if (other.hasShoppingPageClickTelemetry()) {
-        mergeShoppingPageClickTelemetry(other.getShoppingPageClickTelemetry());
-      }
-      if (other.hasShoppingPageScrollTelemetry()) {
-        mergeShoppingPageScrollTelemetry(other.getShoppingPageScrollTelemetry());
-      }
-      if (other.hasDeviceSpecificationsTelemetry()) {
-        mergeDeviceSpecificationsTelemetry(other.getDeviceSpecificationsTelemetry());
-      }
-      if (other.hasScreenResolutionTelemetry()) {
-        mergeScreenResolutionTelemetry(other.getScreenResolutionTelemetry());
-      }
-      if (other.hasArBuddyMultiplayerSessionTelemetry()) {
-        mergeArBuddyMultiplayerSessionTelemetry(other.getArBuddyMultiplayerSessionTelemetry());
-      }
-      if (other.hasBuddyMultiplayerConnectionFailedTelemetry()) {
-        mergeBuddyMultiplayerConnectionFailedTelemetry(other.getBuddyMultiplayerConnectionFailedTelemetry());
-      }
-      if (other.hasBuddyMultiplayerConnectionSucceededTelemetry()) {
-        mergeBuddyMultiplayerConnectionSucceededTelemetry(other.getBuddyMultiplayerConnectionSucceededTelemetry());
-      }
-      if (other.hasBuddyMultiplayerTimeToGetSessionTelemetry()) {
-        mergeBuddyMultiplayerTimeToGetSessionTelemetry(other.getBuddyMultiplayerTimeToGetSessionTelemetry());
-      }
-      if (other.hasPlayerHudNotificationClickTelemetry()) {
-        mergePlayerHudNotificationClickTelemetry(other.getPlayerHudNotificationClickTelemetry());
-      }
-      if (other.hasMonodepthDownloadTelemetry()) {
-        mergeMonodepthDownloadTelemetry(other.getMonodepthDownloadTelemetry());
-      }
-      if (other.hasArMappingTelemetry()) {
-        mergeArMappingTelemetry(other.getArMappingTelemetry());
-      }
-      if (other.hasRemoteRaidTelemetry()) {
-        mergeRemoteRaidTelemetry(other.getRemoteRaidTelemetry());
-      }
       if (other.hasServerData()) {
         mergeServerData(other.getServerData());
       }
       if (other.hasCommonFilters()) {
         mergeCommonFilters(other.getCommonFilters());
+      }
+      switch (other.getTelemetryDataCase()) {
+        case BOOT_TIME: {
+          mergeBootTime(other.getBootTime());
+          break;
+        }
+        case FRAME_RATE: {
+          mergeFrameRate(other.getFrameRate());
+          break;
+        }
+        case GENERIC_CLICK_TELEMETRY: {
+          mergeGenericClickTelemetry(other.getGenericClickTelemetry());
+          break;
+        }
+        case MAP_EVENTS_TELEMETRY: {
+          mergeMapEventsTelemetry(other.getMapEventsTelemetry());
+          break;
+        }
+        case SPIN_POKESTOP_TELEMETRY: {
+          mergeSpinPokestopTelemetry(other.getSpinPokestopTelemetry());
+          break;
+        }
+        case PROFILE_PAGE_TELEMETRY: {
+          mergeProfilePageTelemetry(other.getProfilePageTelemetry());
+          break;
+        }
+        case SHOPPING_PAGE_TELEMETRY: {
+          mergeShoppingPageTelemetry(other.getShoppingPageTelemetry());
+          break;
+        }
+        case ENCOUNTER_POKEMON_TELEMETRY: {
+          mergeEncounterPokemonTelemetry(other.getEncounterPokemonTelemetry());
+          break;
+        }
+        case CATCH_POKEMON_TELEMETRY: {
+          mergeCatchPokemonTelemetry(other.getCatchPokemonTelemetry());
+          break;
+        }
+        case DEPLOY_POKEMON_TELEMETRY: {
+          mergeDeployPokemonTelemetry(other.getDeployPokemonTelemetry());
+          break;
+        }
+        case FEED_POKEMON_TELEMETRY: {
+          mergeFeedPokemonTelemetry(other.getFeedPokemonTelemetry());
+          break;
+        }
+        case EVOLVE_POKEMON_TELEMETRY: {
+          mergeEvolvePokemonTelemetry(other.getEvolvePokemonTelemetry());
+          break;
+        }
+        case RELEASE_POKEMON_TELEMETRY: {
+          mergeReleasePokemonTelemetry(other.getReleasePokemonTelemetry());
+          break;
+        }
+        case NICKNAME_POKEMON_TELEMETRY: {
+          mergeNicknamePokemonTelemetry(other.getNicknamePokemonTelemetry());
+          break;
+        }
+        case NEWS_PAGE_TELEMETRY: {
+          mergeNewsPageTelemetry(other.getNewsPageTelemetry());
+          break;
+        }
+        case ITEM_TELEMETRY: {
+          mergeItemTelemetry(other.getItemTelemetry());
+          break;
+        }
+        case BATTLE_PARTY_TELEMETRY: {
+          mergeBattlePartyTelemetry(other.getBattlePartyTelemetry());
+          break;
+        }
+        case PASSCODE_REDEEM_TELEMETRY: {
+          mergePasscodeRedeemTelemetry(other.getPasscodeRedeemTelemetry());
+          break;
+        }
+        case LINK_LOGIN_TELEMETRY: {
+          mergeLinkLoginTelemetry(other.getLinkLoginTelemetry());
+          break;
+        }
+        case RAID_TELEMETRY: {
+          mergeRaidTelemetry(other.getRaidTelemetry());
+          break;
+        }
+        case PUSH_NOTIFICATION_TELEMETRY: {
+          mergePushNotificationTelemetry(other.getPushNotificationTelemetry());
+          break;
+        }
+        case AVATAR_CUSTOMIZATION_TELEMETRY: {
+          mergeAvatarCustomizationTelemetry(other.getAvatarCustomizationTelemetry());
+          break;
+        }
+        case READ_POINT_OF_INTEREST_DESCRIPTION_TELEMETRY: {
+          mergeReadPointOfInterestDescriptionTelemetry(other.getReadPointOfInterestDescriptionTelemetry());
+          break;
+        }
+        case WEB_TELEMETRY: {
+          mergeWebTelemetry(other.getWebTelemetry());
+          break;
+        }
+        case CHANGE_AR_TELEMETRY: {
+          mergeChangeArTelemetry(other.getChangeArTelemetry());
+          break;
+        }
+        case WEATHER_DETAIL_CLICK_TELEMETRY: {
+          mergeWeatherDetailClickTelemetry(other.getWeatherDetailClickTelemetry());
+          break;
+        }
+        case USER_ISSUE_WEATHER_REPORT: {
+          mergeUserIssueWeatherReport(other.getUserIssueWeatherReport());
+          break;
+        }
+        case POKEMON_INVENTORY_TELEMETRY: {
+          mergePokemonInventoryTelemetry(other.getPokemonInventoryTelemetry());
+          break;
+        }
+        case SOCIAL_TELEMETRY: {
+          mergeSocialTelemetry(other.getSocialTelemetry());
+          break;
+        }
+        case CHECK_ENCOUNTER_INFO_TELEMETRY: {
+          mergeCheckEncounterInfoTelemetry(other.getCheckEncounterInfoTelemetry());
+          break;
+        }
+        case POKEMON_GO_PLUS_TELEMETRY: {
+          mergePokemonGoPlusTelemetry(other.getPokemonGoPlusTelemetry());
+          break;
+        }
+        case RPC_TIMING_TELEMETRY: {
+          mergeRpcTimingTelemetry(other.getRpcTimingTelemetry());
+          break;
+        }
+        case SOCIAL_GIFT_COUNT_TELEMETRY: {
+          mergeSocialGiftCountTelemetry(other.getSocialGiftCountTelemetry());
+          break;
+        }
+        case ASSET_BUNDLE_TELEMETRY: {
+          mergeAssetBundleTelemetry(other.getAssetBundleTelemetry());
+          break;
+        }
+        case ASSET_POI_DOWNLOAD_TELEMETRY: {
+          mergeAssetPoiDownloadTelemetry(other.getAssetPoiDownloadTelemetry());
+          break;
+        }
+        case ASSET_STREAM_DOWNLOAD_TELEMETRY: {
+          mergeAssetStreamDownloadTelemetry(other.getAssetStreamDownloadTelemetry());
+          break;
+        }
+        case ASSET_STREAM_CACHE_CULLED_TELEMETRY: {
+          mergeAssetStreamCacheCulledTelemetry(other.getAssetStreamCacheCulledTelemetry());
+          break;
+        }
+        case RPC_SOCKET_TIMING_TELEMETRY: {
+          mergeRpcSocketTimingTelemetry(other.getRpcSocketTimingTelemetry());
+          break;
+        }
+        case PERMISSIONS_FLOW: {
+          mergePermissionsFlow(other.getPermissionsFlow());
+          break;
+        }
+        case DEVICE_SERVICE_TOGGLE: {
+          mergeDeviceServiceToggle(other.getDeviceServiceToggle());
+          break;
+        }
+        case BOOT_TELEMETRY: {
+          mergeBootTelemetry(other.getBootTelemetry());
+          break;
+        }
+        case USER_ATTRIBUTES: {
+          mergeUserAttributes(other.getUserAttributes());
+          break;
+        }
+        case ONBOARDING_TELEMETRY: {
+          mergeOnboardingTelemetry(other.getOnboardingTelemetry());
+          break;
+        }
+        case LOGIN_ACTION_TELEMETRY: {
+          mergeLoginActionTelemetry(other.getLoginActionTelemetry());
+          break;
+        }
+        case AR_PHOTO_SESSION_TELEMETRY: {
+          mergeArPhotoSessionTelemetry(other.getArPhotoSessionTelemetry());
+          break;
+        }
+        case INVASION_TELEMETRY: {
+          mergeInvasionTelemetry(other.getInvasionTelemetry());
+          break;
+        }
+        case COMBAT_MINIGAME_TELEMETRY: {
+          mergeCombatMinigameTelemetry(other.getCombatMinigameTelemetry());
+          break;
+        }
+        case LEAVE_POINT_OF_INTEREST_TELEMETRY: {
+          mergeLeavePointOfInterestTelemetry(other.getLeavePointOfInterestTelemetry());
+          break;
+        }
+        case VIEW_POINT_OF_INTEREST_IMAGE_TELEMETRY: {
+          mergeViewPointOfInterestImageTelemetry(other.getViewPointOfInterestImageTelemetry());
+          break;
+        }
+        case COMBAT_HUB_ENTRANCE_TELEMETRY: {
+          mergeCombatHubEntranceTelemetry(other.getCombatHubEntranceTelemetry());
+          break;
+        }
+        case LEAVE_INTERACTION_RANGE_TELEMETRY: {
+          mergeLeaveInteractionRangeTelemetry(other.getLeaveInteractionRangeTelemetry());
+          break;
+        }
+        case SHOPPING_PAGE_CLICK_TELEMETRY: {
+          mergeShoppingPageClickTelemetry(other.getShoppingPageClickTelemetry());
+          break;
+        }
+        case SHOPPING_PAGE_SCROLL_TELEMETRY: {
+          mergeShoppingPageScrollTelemetry(other.getShoppingPageScrollTelemetry());
+          break;
+        }
+        case DEVICE_SPECIFICATIONS_TELEMETRY: {
+          mergeDeviceSpecificationsTelemetry(other.getDeviceSpecificationsTelemetry());
+          break;
+        }
+        case SCREEN_RESOLUTION_TELEMETRY: {
+          mergeScreenResolutionTelemetry(other.getScreenResolutionTelemetry());
+          break;
+        }
+        case AR_BUDDY_MULTIPLAYER_SESSION_TELEMETRY: {
+          mergeArBuddyMultiplayerSessionTelemetry(other.getArBuddyMultiplayerSessionTelemetry());
+          break;
+        }
+        case BUDDY_MULTIPLAYER_CONNECTION_FAILED_TELEMETRY: {
+          mergeBuddyMultiplayerConnectionFailedTelemetry(other.getBuddyMultiplayerConnectionFailedTelemetry());
+          break;
+        }
+        case BUDDY_MULTIPLAYER_CONNECTION_SUCCEEDED_TELEMETRY: {
+          mergeBuddyMultiplayerConnectionSucceededTelemetry(other.getBuddyMultiplayerConnectionSucceededTelemetry());
+          break;
+        }
+        case BUDDY_MULTIPLAYER_TIME_TO_GET_SESSION_TELEMETRY: {
+          mergeBuddyMultiplayerTimeToGetSessionTelemetry(other.getBuddyMultiplayerTimeToGetSessionTelemetry());
+          break;
+        }
+        case PLAYER_HUD_NOTIFICATION_CLICK_TELEMETRY: {
+          mergePlayerHudNotificationClickTelemetry(other.getPlayerHudNotificationClickTelemetry());
+          break;
+        }
+        case MONODEPTH_DOWNLOAD_TELEMETRY: {
+          mergeMonodepthDownloadTelemetry(other.getMonodepthDownloadTelemetry());
+          break;
+        }
+        case AR_MAPPING_TELEMETRY: {
+          mergeArMappingTelemetry(other.getArMappingTelemetry());
+          break;
+        }
+        case REMOTE_RAID_TELEMETRY: {
+          mergeRemoteRaidTelemetry(other.getRemoteRaidTelemetry());
+          break;
+        }
+        case DEVICE_OS_TELEMETRY: {
+          mergeDeviceOsTelemetry(other.getDeviceOsTelemetry());
+          break;
+        }
+        case TELEMETRYDATA_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -4654,8 +5030,22 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int telemetryDataCase_ = 0;
+    private java.lang.Object telemetryData_;
+    public TelemetryDataCase
+        getTelemetryDataCase() {
+      return TelemetryDataCase.forNumber(
+          telemetryDataCase_);
+    }
 
-    private POGOProtos.Rpc.BootTime bootTime_;
+    public Builder clearTelemetryData() {
+      telemetryDataCase_ = 0;
+      telemetryData_ = null;
+      onChanged();
+      return this;
+    }
+
+
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BootTime, POGOProtos.Rpc.BootTime.Builder, POGOProtos.Rpc.BootTimeOrBuilder> bootTimeBuilder_;
     /**
@@ -4663,7 +5053,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the bootTime field is set.
      */
     public boolean hasBootTime() {
-      return bootTimeBuilder_ != null || bootTime_ != null;
+      return telemetryDataCase_ == 1;
     }
     /**
      * <code>.POGOProtos.Rpc.BootTime boot_time = 1;</code>
@@ -4671,9 +5061,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.BootTime getBootTime() {
       if (bootTimeBuilder_ == null) {
-        return bootTime_ == null ? POGOProtos.Rpc.BootTime.getDefaultInstance() : bootTime_;
+        if (telemetryDataCase_ == 1) {
+          return (POGOProtos.Rpc.BootTime) telemetryData_;
+        }
+        return POGOProtos.Rpc.BootTime.getDefaultInstance();
       } else {
-        return bootTimeBuilder_.getMessage();
+        if (telemetryDataCase_ == 1) {
+          return bootTimeBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.BootTime.getDefaultInstance();
       }
     }
     /**
@@ -4684,12 +5080,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        bootTime_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         bootTimeBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 1;
       return this;
     }
     /**
@@ -4698,12 +5094,12 @@ private static final long serialVersionUID = 0L;
     public Builder setBootTime(
         POGOProtos.Rpc.BootTime.Builder builderForValue) {
       if (bootTimeBuilder_ == null) {
-        bootTime_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         bootTimeBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 1;
       return this;
     }
     /**
@@ -4711,17 +5107,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeBootTime(POGOProtos.Rpc.BootTime value) {
       if (bootTimeBuilder_ == null) {
-        if (bootTime_ != null) {
-          bootTime_ =
-            POGOProtos.Rpc.BootTime.newBuilder(bootTime_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 1 &&
+            telemetryData_ != POGOProtos.Rpc.BootTime.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.BootTime.newBuilder((POGOProtos.Rpc.BootTime) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          bootTime_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        bootTimeBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 1) {
+          bootTimeBuilder_.mergeFrom(value);
+        }
+        bootTimeBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 1;
       return this;
     }
     /**
@@ -4729,32 +5129,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearBootTime() {
       if (bootTimeBuilder_ == null) {
-        bootTime_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 1) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        bootTime_ = null;
-        bootTimeBuilder_ = null;
+        if (telemetryDataCase_ == 1) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        bootTimeBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.BootTime boot_time = 1;</code>
      */
     public POGOProtos.Rpc.BootTime.Builder getBootTimeBuilder() {
-      
-      onChanged();
       return getBootTimeFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.BootTime boot_time = 1;</code>
      */
     public POGOProtos.Rpc.BootTimeOrBuilder getBootTimeOrBuilder() {
-      if (bootTimeBuilder_ != null) {
+      if ((telemetryDataCase_ == 1) && (bootTimeBuilder_ != null)) {
         return bootTimeBuilder_.getMessageOrBuilder();
       } else {
-        return bootTime_ == null ?
-            POGOProtos.Rpc.BootTime.getDefaultInstance() : bootTime_;
+        if (telemetryDataCase_ == 1) {
+          return (POGOProtos.Rpc.BootTime) telemetryData_;
+        }
+        return POGOProtos.Rpc.BootTime.getDefaultInstance();
       }
     }
     /**
@@ -4764,17 +5169,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.BootTime, POGOProtos.Rpc.BootTime.Builder, POGOProtos.Rpc.BootTimeOrBuilder> 
         getBootTimeFieldBuilder() {
       if (bootTimeBuilder_ == null) {
+        if (!(telemetryDataCase_ == 1)) {
+          telemetryData_ = POGOProtos.Rpc.BootTime.getDefaultInstance();
+        }
         bootTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BootTime, POGOProtos.Rpc.BootTime.Builder, POGOProtos.Rpc.BootTimeOrBuilder>(
-                getBootTime(),
+                (POGOProtos.Rpc.BootTime) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        bootTime_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 1;
+      onChanged();;
       return bootTimeBuilder_;
     }
 
-    private POGOProtos.Rpc.FrameRate frameRate_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.FrameRate, POGOProtos.Rpc.FrameRate.Builder, POGOProtos.Rpc.FrameRateOrBuilder> frameRateBuilder_;
     /**
@@ -4782,7 +5191,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the frameRate field is set.
      */
     public boolean hasFrameRate() {
-      return frameRateBuilder_ != null || frameRate_ != null;
+      return telemetryDataCase_ == 2;
     }
     /**
      * <code>.POGOProtos.Rpc.FrameRate frame_rate = 2;</code>
@@ -4790,9 +5199,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.FrameRate getFrameRate() {
       if (frameRateBuilder_ == null) {
-        return frameRate_ == null ? POGOProtos.Rpc.FrameRate.getDefaultInstance() : frameRate_;
+        if (telemetryDataCase_ == 2) {
+          return (POGOProtos.Rpc.FrameRate) telemetryData_;
+        }
+        return POGOProtos.Rpc.FrameRate.getDefaultInstance();
       } else {
-        return frameRateBuilder_.getMessage();
+        if (telemetryDataCase_ == 2) {
+          return frameRateBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.FrameRate.getDefaultInstance();
       }
     }
     /**
@@ -4803,12 +5218,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        frameRate_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         frameRateBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 2;
       return this;
     }
     /**
@@ -4817,12 +5232,12 @@ private static final long serialVersionUID = 0L;
     public Builder setFrameRate(
         POGOProtos.Rpc.FrameRate.Builder builderForValue) {
       if (frameRateBuilder_ == null) {
-        frameRate_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         frameRateBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 2;
       return this;
     }
     /**
@@ -4830,17 +5245,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeFrameRate(POGOProtos.Rpc.FrameRate value) {
       if (frameRateBuilder_ == null) {
-        if (frameRate_ != null) {
-          frameRate_ =
-            POGOProtos.Rpc.FrameRate.newBuilder(frameRate_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 2 &&
+            telemetryData_ != POGOProtos.Rpc.FrameRate.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.FrameRate.newBuilder((POGOProtos.Rpc.FrameRate) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          frameRate_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        frameRateBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 2) {
+          frameRateBuilder_.mergeFrom(value);
+        }
+        frameRateBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 2;
       return this;
     }
     /**
@@ -4848,32 +5267,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearFrameRate() {
       if (frameRateBuilder_ == null) {
-        frameRate_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 2) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        frameRate_ = null;
-        frameRateBuilder_ = null;
+        if (telemetryDataCase_ == 2) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        frameRateBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.FrameRate frame_rate = 2;</code>
      */
     public POGOProtos.Rpc.FrameRate.Builder getFrameRateBuilder() {
-      
-      onChanged();
       return getFrameRateFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.FrameRate frame_rate = 2;</code>
      */
     public POGOProtos.Rpc.FrameRateOrBuilder getFrameRateOrBuilder() {
-      if (frameRateBuilder_ != null) {
+      if ((telemetryDataCase_ == 2) && (frameRateBuilder_ != null)) {
         return frameRateBuilder_.getMessageOrBuilder();
       } else {
-        return frameRate_ == null ?
-            POGOProtos.Rpc.FrameRate.getDefaultInstance() : frameRate_;
+        if (telemetryDataCase_ == 2) {
+          return (POGOProtos.Rpc.FrameRate) telemetryData_;
+        }
+        return POGOProtos.Rpc.FrameRate.getDefaultInstance();
       }
     }
     /**
@@ -4883,17 +5307,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.FrameRate, POGOProtos.Rpc.FrameRate.Builder, POGOProtos.Rpc.FrameRateOrBuilder> 
         getFrameRateFieldBuilder() {
       if (frameRateBuilder_ == null) {
+        if (!(telemetryDataCase_ == 2)) {
+          telemetryData_ = POGOProtos.Rpc.FrameRate.getDefaultInstance();
+        }
         frameRateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.FrameRate, POGOProtos.Rpc.FrameRate.Builder, POGOProtos.Rpc.FrameRateOrBuilder>(
-                getFrameRate(),
+                (POGOProtos.Rpc.FrameRate) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        frameRate_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 2;
+      onChanged();;
       return frameRateBuilder_;
     }
 
-    private POGOProtos.Rpc.GenericClickTelemetry genericClickTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.GenericClickTelemetry, POGOProtos.Rpc.GenericClickTelemetry.Builder, POGOProtos.Rpc.GenericClickTelemetryOrBuilder> genericClickTelemetryBuilder_;
     /**
@@ -4901,7 +5329,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the genericClickTelemetry field is set.
      */
     public boolean hasGenericClickTelemetry() {
-      return genericClickTelemetryBuilder_ != null || genericClickTelemetry_ != null;
+      return telemetryDataCase_ == 3;
     }
     /**
      * <code>.POGOProtos.Rpc.GenericClickTelemetry generic_click_telemetry = 3;</code>
@@ -4909,9 +5337,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.GenericClickTelemetry getGenericClickTelemetry() {
       if (genericClickTelemetryBuilder_ == null) {
-        return genericClickTelemetry_ == null ? POGOProtos.Rpc.GenericClickTelemetry.getDefaultInstance() : genericClickTelemetry_;
+        if (telemetryDataCase_ == 3) {
+          return (POGOProtos.Rpc.GenericClickTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.GenericClickTelemetry.getDefaultInstance();
       } else {
-        return genericClickTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 3) {
+          return genericClickTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.GenericClickTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -4922,12 +5356,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        genericClickTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         genericClickTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 3;
       return this;
     }
     /**
@@ -4936,12 +5370,12 @@ private static final long serialVersionUID = 0L;
     public Builder setGenericClickTelemetry(
         POGOProtos.Rpc.GenericClickTelemetry.Builder builderForValue) {
       if (genericClickTelemetryBuilder_ == null) {
-        genericClickTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         genericClickTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 3;
       return this;
     }
     /**
@@ -4949,17 +5383,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeGenericClickTelemetry(POGOProtos.Rpc.GenericClickTelemetry value) {
       if (genericClickTelemetryBuilder_ == null) {
-        if (genericClickTelemetry_ != null) {
-          genericClickTelemetry_ =
-            POGOProtos.Rpc.GenericClickTelemetry.newBuilder(genericClickTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 3 &&
+            telemetryData_ != POGOProtos.Rpc.GenericClickTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.GenericClickTelemetry.newBuilder((POGOProtos.Rpc.GenericClickTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          genericClickTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        genericClickTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 3) {
+          genericClickTelemetryBuilder_.mergeFrom(value);
+        }
+        genericClickTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 3;
       return this;
     }
     /**
@@ -4967,32 +5405,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearGenericClickTelemetry() {
       if (genericClickTelemetryBuilder_ == null) {
-        genericClickTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 3) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        genericClickTelemetry_ = null;
-        genericClickTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 3) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        genericClickTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.GenericClickTelemetry generic_click_telemetry = 3;</code>
      */
     public POGOProtos.Rpc.GenericClickTelemetry.Builder getGenericClickTelemetryBuilder() {
-      
-      onChanged();
       return getGenericClickTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.GenericClickTelemetry generic_click_telemetry = 3;</code>
      */
     public POGOProtos.Rpc.GenericClickTelemetryOrBuilder getGenericClickTelemetryOrBuilder() {
-      if (genericClickTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 3) && (genericClickTelemetryBuilder_ != null)) {
         return genericClickTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return genericClickTelemetry_ == null ?
-            POGOProtos.Rpc.GenericClickTelemetry.getDefaultInstance() : genericClickTelemetry_;
+        if (telemetryDataCase_ == 3) {
+          return (POGOProtos.Rpc.GenericClickTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.GenericClickTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5002,17 +5445,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.GenericClickTelemetry, POGOProtos.Rpc.GenericClickTelemetry.Builder, POGOProtos.Rpc.GenericClickTelemetryOrBuilder> 
         getGenericClickTelemetryFieldBuilder() {
       if (genericClickTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 3)) {
+          telemetryData_ = POGOProtos.Rpc.GenericClickTelemetry.getDefaultInstance();
+        }
         genericClickTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.GenericClickTelemetry, POGOProtos.Rpc.GenericClickTelemetry.Builder, POGOProtos.Rpc.GenericClickTelemetryOrBuilder>(
-                getGenericClickTelemetry(),
+                (POGOProtos.Rpc.GenericClickTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        genericClickTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 3;
+      onChanged();;
       return genericClickTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.MapEventsTelemetry mapEventsTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.MapEventsTelemetry, POGOProtos.Rpc.MapEventsTelemetry.Builder, POGOProtos.Rpc.MapEventsTelemetryOrBuilder> mapEventsTelemetryBuilder_;
     /**
@@ -5020,7 +5467,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the mapEventsTelemetry field is set.
      */
     public boolean hasMapEventsTelemetry() {
-      return mapEventsTelemetryBuilder_ != null || mapEventsTelemetry_ != null;
+      return telemetryDataCase_ == 4;
     }
     /**
      * <code>.POGOProtos.Rpc.MapEventsTelemetry map_events_telemetry = 4;</code>
@@ -5028,9 +5475,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.MapEventsTelemetry getMapEventsTelemetry() {
       if (mapEventsTelemetryBuilder_ == null) {
-        return mapEventsTelemetry_ == null ? POGOProtos.Rpc.MapEventsTelemetry.getDefaultInstance() : mapEventsTelemetry_;
+        if (telemetryDataCase_ == 4) {
+          return (POGOProtos.Rpc.MapEventsTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.MapEventsTelemetry.getDefaultInstance();
       } else {
-        return mapEventsTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 4) {
+          return mapEventsTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.MapEventsTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5041,12 +5494,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        mapEventsTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         mapEventsTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 4;
       return this;
     }
     /**
@@ -5055,12 +5508,12 @@ private static final long serialVersionUID = 0L;
     public Builder setMapEventsTelemetry(
         POGOProtos.Rpc.MapEventsTelemetry.Builder builderForValue) {
       if (mapEventsTelemetryBuilder_ == null) {
-        mapEventsTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         mapEventsTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 4;
       return this;
     }
     /**
@@ -5068,17 +5521,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeMapEventsTelemetry(POGOProtos.Rpc.MapEventsTelemetry value) {
       if (mapEventsTelemetryBuilder_ == null) {
-        if (mapEventsTelemetry_ != null) {
-          mapEventsTelemetry_ =
-            POGOProtos.Rpc.MapEventsTelemetry.newBuilder(mapEventsTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 4 &&
+            telemetryData_ != POGOProtos.Rpc.MapEventsTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.MapEventsTelemetry.newBuilder((POGOProtos.Rpc.MapEventsTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          mapEventsTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        mapEventsTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 4) {
+          mapEventsTelemetryBuilder_.mergeFrom(value);
+        }
+        mapEventsTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 4;
       return this;
     }
     /**
@@ -5086,32 +5543,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearMapEventsTelemetry() {
       if (mapEventsTelemetryBuilder_ == null) {
-        mapEventsTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 4) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        mapEventsTelemetry_ = null;
-        mapEventsTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 4) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        mapEventsTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.MapEventsTelemetry map_events_telemetry = 4;</code>
      */
     public POGOProtos.Rpc.MapEventsTelemetry.Builder getMapEventsTelemetryBuilder() {
-      
-      onChanged();
       return getMapEventsTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.MapEventsTelemetry map_events_telemetry = 4;</code>
      */
     public POGOProtos.Rpc.MapEventsTelemetryOrBuilder getMapEventsTelemetryOrBuilder() {
-      if (mapEventsTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 4) && (mapEventsTelemetryBuilder_ != null)) {
         return mapEventsTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return mapEventsTelemetry_ == null ?
-            POGOProtos.Rpc.MapEventsTelemetry.getDefaultInstance() : mapEventsTelemetry_;
+        if (telemetryDataCase_ == 4) {
+          return (POGOProtos.Rpc.MapEventsTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.MapEventsTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5121,17 +5583,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.MapEventsTelemetry, POGOProtos.Rpc.MapEventsTelemetry.Builder, POGOProtos.Rpc.MapEventsTelemetryOrBuilder> 
         getMapEventsTelemetryFieldBuilder() {
       if (mapEventsTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 4)) {
+          telemetryData_ = POGOProtos.Rpc.MapEventsTelemetry.getDefaultInstance();
+        }
         mapEventsTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.MapEventsTelemetry, POGOProtos.Rpc.MapEventsTelemetry.Builder, POGOProtos.Rpc.MapEventsTelemetryOrBuilder>(
-                getMapEventsTelemetry(),
+                (POGOProtos.Rpc.MapEventsTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        mapEventsTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 4;
+      onChanged();;
       return mapEventsTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.SpinPokestopTelemetry spinPokestopTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.SpinPokestopTelemetry, POGOProtos.Rpc.SpinPokestopTelemetry.Builder, POGOProtos.Rpc.SpinPokestopTelemetryOrBuilder> spinPokestopTelemetryBuilder_;
     /**
@@ -5139,7 +5605,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the spinPokestopTelemetry field is set.
      */
     public boolean hasSpinPokestopTelemetry() {
-      return spinPokestopTelemetryBuilder_ != null || spinPokestopTelemetry_ != null;
+      return telemetryDataCase_ == 5;
     }
     /**
      * <code>.POGOProtos.Rpc.SpinPokestopTelemetry spin_pokestop_telemetry = 5;</code>
@@ -5147,9 +5613,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.SpinPokestopTelemetry getSpinPokestopTelemetry() {
       if (spinPokestopTelemetryBuilder_ == null) {
-        return spinPokestopTelemetry_ == null ? POGOProtos.Rpc.SpinPokestopTelemetry.getDefaultInstance() : spinPokestopTelemetry_;
+        if (telemetryDataCase_ == 5) {
+          return (POGOProtos.Rpc.SpinPokestopTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.SpinPokestopTelemetry.getDefaultInstance();
       } else {
-        return spinPokestopTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 5) {
+          return spinPokestopTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.SpinPokestopTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5160,12 +5632,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        spinPokestopTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         spinPokestopTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 5;
       return this;
     }
     /**
@@ -5174,12 +5646,12 @@ private static final long serialVersionUID = 0L;
     public Builder setSpinPokestopTelemetry(
         POGOProtos.Rpc.SpinPokestopTelemetry.Builder builderForValue) {
       if (spinPokestopTelemetryBuilder_ == null) {
-        spinPokestopTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         spinPokestopTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 5;
       return this;
     }
     /**
@@ -5187,17 +5659,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeSpinPokestopTelemetry(POGOProtos.Rpc.SpinPokestopTelemetry value) {
       if (spinPokestopTelemetryBuilder_ == null) {
-        if (spinPokestopTelemetry_ != null) {
-          spinPokestopTelemetry_ =
-            POGOProtos.Rpc.SpinPokestopTelemetry.newBuilder(spinPokestopTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 5 &&
+            telemetryData_ != POGOProtos.Rpc.SpinPokestopTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.SpinPokestopTelemetry.newBuilder((POGOProtos.Rpc.SpinPokestopTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          spinPokestopTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        spinPokestopTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 5) {
+          spinPokestopTelemetryBuilder_.mergeFrom(value);
+        }
+        spinPokestopTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 5;
       return this;
     }
     /**
@@ -5205,32 +5681,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearSpinPokestopTelemetry() {
       if (spinPokestopTelemetryBuilder_ == null) {
-        spinPokestopTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 5) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        spinPokestopTelemetry_ = null;
-        spinPokestopTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 5) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        spinPokestopTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.SpinPokestopTelemetry spin_pokestop_telemetry = 5;</code>
      */
     public POGOProtos.Rpc.SpinPokestopTelemetry.Builder getSpinPokestopTelemetryBuilder() {
-      
-      onChanged();
       return getSpinPokestopTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.SpinPokestopTelemetry spin_pokestop_telemetry = 5;</code>
      */
     public POGOProtos.Rpc.SpinPokestopTelemetryOrBuilder getSpinPokestopTelemetryOrBuilder() {
-      if (spinPokestopTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 5) && (spinPokestopTelemetryBuilder_ != null)) {
         return spinPokestopTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return spinPokestopTelemetry_ == null ?
-            POGOProtos.Rpc.SpinPokestopTelemetry.getDefaultInstance() : spinPokestopTelemetry_;
+        if (telemetryDataCase_ == 5) {
+          return (POGOProtos.Rpc.SpinPokestopTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.SpinPokestopTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5240,17 +5721,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.SpinPokestopTelemetry, POGOProtos.Rpc.SpinPokestopTelemetry.Builder, POGOProtos.Rpc.SpinPokestopTelemetryOrBuilder> 
         getSpinPokestopTelemetryFieldBuilder() {
       if (spinPokestopTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 5)) {
+          telemetryData_ = POGOProtos.Rpc.SpinPokestopTelemetry.getDefaultInstance();
+        }
         spinPokestopTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.SpinPokestopTelemetry, POGOProtos.Rpc.SpinPokestopTelemetry.Builder, POGOProtos.Rpc.SpinPokestopTelemetryOrBuilder>(
-                getSpinPokestopTelemetry(),
+                (POGOProtos.Rpc.SpinPokestopTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        spinPokestopTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 5;
+      onChanged();;
       return spinPokestopTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ProfilePageTelemetry profilePageTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ProfilePageTelemetry, POGOProtos.Rpc.ProfilePageTelemetry.Builder, POGOProtos.Rpc.ProfilePageTelemetryOrBuilder> profilePageTelemetryBuilder_;
     /**
@@ -5258,7 +5743,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the profilePageTelemetry field is set.
      */
     public boolean hasProfilePageTelemetry() {
-      return profilePageTelemetryBuilder_ != null || profilePageTelemetry_ != null;
+      return telemetryDataCase_ == 6;
     }
     /**
      * <code>.POGOProtos.Rpc.ProfilePageTelemetry profile_page_telemetry = 6;</code>
@@ -5266,9 +5751,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ProfilePageTelemetry getProfilePageTelemetry() {
       if (profilePageTelemetryBuilder_ == null) {
-        return profilePageTelemetry_ == null ? POGOProtos.Rpc.ProfilePageTelemetry.getDefaultInstance() : profilePageTelemetry_;
+        if (telemetryDataCase_ == 6) {
+          return (POGOProtos.Rpc.ProfilePageTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ProfilePageTelemetry.getDefaultInstance();
       } else {
-        return profilePageTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 6) {
+          return profilePageTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ProfilePageTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5279,12 +5770,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        profilePageTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         profilePageTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 6;
       return this;
     }
     /**
@@ -5293,12 +5784,12 @@ private static final long serialVersionUID = 0L;
     public Builder setProfilePageTelemetry(
         POGOProtos.Rpc.ProfilePageTelemetry.Builder builderForValue) {
       if (profilePageTelemetryBuilder_ == null) {
-        profilePageTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         profilePageTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 6;
       return this;
     }
     /**
@@ -5306,17 +5797,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeProfilePageTelemetry(POGOProtos.Rpc.ProfilePageTelemetry value) {
       if (profilePageTelemetryBuilder_ == null) {
-        if (profilePageTelemetry_ != null) {
-          profilePageTelemetry_ =
-            POGOProtos.Rpc.ProfilePageTelemetry.newBuilder(profilePageTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 6 &&
+            telemetryData_ != POGOProtos.Rpc.ProfilePageTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ProfilePageTelemetry.newBuilder((POGOProtos.Rpc.ProfilePageTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          profilePageTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        profilePageTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 6) {
+          profilePageTelemetryBuilder_.mergeFrom(value);
+        }
+        profilePageTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 6;
       return this;
     }
     /**
@@ -5324,32 +5819,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearProfilePageTelemetry() {
       if (profilePageTelemetryBuilder_ == null) {
-        profilePageTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 6) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        profilePageTelemetry_ = null;
-        profilePageTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 6) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        profilePageTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ProfilePageTelemetry profile_page_telemetry = 6;</code>
      */
     public POGOProtos.Rpc.ProfilePageTelemetry.Builder getProfilePageTelemetryBuilder() {
-      
-      onChanged();
       return getProfilePageTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ProfilePageTelemetry profile_page_telemetry = 6;</code>
      */
     public POGOProtos.Rpc.ProfilePageTelemetryOrBuilder getProfilePageTelemetryOrBuilder() {
-      if (profilePageTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 6) && (profilePageTelemetryBuilder_ != null)) {
         return profilePageTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return profilePageTelemetry_ == null ?
-            POGOProtos.Rpc.ProfilePageTelemetry.getDefaultInstance() : profilePageTelemetry_;
+        if (telemetryDataCase_ == 6) {
+          return (POGOProtos.Rpc.ProfilePageTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ProfilePageTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5359,17 +5859,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ProfilePageTelemetry, POGOProtos.Rpc.ProfilePageTelemetry.Builder, POGOProtos.Rpc.ProfilePageTelemetryOrBuilder> 
         getProfilePageTelemetryFieldBuilder() {
       if (profilePageTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 6)) {
+          telemetryData_ = POGOProtos.Rpc.ProfilePageTelemetry.getDefaultInstance();
+        }
         profilePageTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ProfilePageTelemetry, POGOProtos.Rpc.ProfilePageTelemetry.Builder, POGOProtos.Rpc.ProfilePageTelemetryOrBuilder>(
-                getProfilePageTelemetry(),
+                (POGOProtos.Rpc.ProfilePageTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        profilePageTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 6;
+      onChanged();;
       return profilePageTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ShoppingPageTelemetry shoppingPageTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ShoppingPageTelemetry, POGOProtos.Rpc.ShoppingPageTelemetry.Builder, POGOProtos.Rpc.ShoppingPageTelemetryOrBuilder> shoppingPageTelemetryBuilder_;
     /**
@@ -5377,7 +5881,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the shoppingPageTelemetry field is set.
      */
     public boolean hasShoppingPageTelemetry() {
-      return shoppingPageTelemetryBuilder_ != null || shoppingPageTelemetry_ != null;
+      return telemetryDataCase_ == 7;
     }
     /**
      * <code>.POGOProtos.Rpc.ShoppingPageTelemetry shopping_page_telemetry = 7;</code>
@@ -5385,9 +5889,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ShoppingPageTelemetry getShoppingPageTelemetry() {
       if (shoppingPageTelemetryBuilder_ == null) {
-        return shoppingPageTelemetry_ == null ? POGOProtos.Rpc.ShoppingPageTelemetry.getDefaultInstance() : shoppingPageTelemetry_;
+        if (telemetryDataCase_ == 7) {
+          return (POGOProtos.Rpc.ShoppingPageTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ShoppingPageTelemetry.getDefaultInstance();
       } else {
-        return shoppingPageTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 7) {
+          return shoppingPageTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ShoppingPageTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5398,12 +5908,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        shoppingPageTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         shoppingPageTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 7;
       return this;
     }
     /**
@@ -5412,12 +5922,12 @@ private static final long serialVersionUID = 0L;
     public Builder setShoppingPageTelemetry(
         POGOProtos.Rpc.ShoppingPageTelemetry.Builder builderForValue) {
       if (shoppingPageTelemetryBuilder_ == null) {
-        shoppingPageTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         shoppingPageTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 7;
       return this;
     }
     /**
@@ -5425,17 +5935,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeShoppingPageTelemetry(POGOProtos.Rpc.ShoppingPageTelemetry value) {
       if (shoppingPageTelemetryBuilder_ == null) {
-        if (shoppingPageTelemetry_ != null) {
-          shoppingPageTelemetry_ =
-            POGOProtos.Rpc.ShoppingPageTelemetry.newBuilder(shoppingPageTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 7 &&
+            telemetryData_ != POGOProtos.Rpc.ShoppingPageTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ShoppingPageTelemetry.newBuilder((POGOProtos.Rpc.ShoppingPageTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          shoppingPageTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        shoppingPageTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 7) {
+          shoppingPageTelemetryBuilder_.mergeFrom(value);
+        }
+        shoppingPageTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 7;
       return this;
     }
     /**
@@ -5443,32 +5957,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearShoppingPageTelemetry() {
       if (shoppingPageTelemetryBuilder_ == null) {
-        shoppingPageTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 7) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        shoppingPageTelemetry_ = null;
-        shoppingPageTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 7) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        shoppingPageTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ShoppingPageTelemetry shopping_page_telemetry = 7;</code>
      */
     public POGOProtos.Rpc.ShoppingPageTelemetry.Builder getShoppingPageTelemetryBuilder() {
-      
-      onChanged();
       return getShoppingPageTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ShoppingPageTelemetry shopping_page_telemetry = 7;</code>
      */
     public POGOProtos.Rpc.ShoppingPageTelemetryOrBuilder getShoppingPageTelemetryOrBuilder() {
-      if (shoppingPageTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 7) && (shoppingPageTelemetryBuilder_ != null)) {
         return shoppingPageTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return shoppingPageTelemetry_ == null ?
-            POGOProtos.Rpc.ShoppingPageTelemetry.getDefaultInstance() : shoppingPageTelemetry_;
+        if (telemetryDataCase_ == 7) {
+          return (POGOProtos.Rpc.ShoppingPageTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ShoppingPageTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5478,17 +5997,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ShoppingPageTelemetry, POGOProtos.Rpc.ShoppingPageTelemetry.Builder, POGOProtos.Rpc.ShoppingPageTelemetryOrBuilder> 
         getShoppingPageTelemetryFieldBuilder() {
       if (shoppingPageTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 7)) {
+          telemetryData_ = POGOProtos.Rpc.ShoppingPageTelemetry.getDefaultInstance();
+        }
         shoppingPageTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ShoppingPageTelemetry, POGOProtos.Rpc.ShoppingPageTelemetry.Builder, POGOProtos.Rpc.ShoppingPageTelemetryOrBuilder>(
-                getShoppingPageTelemetry(),
+                (POGOProtos.Rpc.ShoppingPageTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        shoppingPageTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 7;
+      onChanged();;
       return shoppingPageTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.EncounterPokemonTelemetry encounterPokemonTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.EncounterPokemonTelemetry, POGOProtos.Rpc.EncounterPokemonTelemetry.Builder, POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder> encounterPokemonTelemetryBuilder_;
     /**
@@ -5496,7 +6019,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the encounterPokemonTelemetry field is set.
      */
     public boolean hasEncounterPokemonTelemetry() {
-      return encounterPokemonTelemetryBuilder_ != null || encounterPokemonTelemetry_ != null;
+      return telemetryDataCase_ == 8;
     }
     /**
      * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;</code>
@@ -5504,9 +6027,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.EncounterPokemonTelemetry getEncounterPokemonTelemetry() {
       if (encounterPokemonTelemetryBuilder_ == null) {
-        return encounterPokemonTelemetry_ == null ? POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance() : encounterPokemonTelemetry_;
+        if (telemetryDataCase_ == 8) {
+          return (POGOProtos.Rpc.EncounterPokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance();
       } else {
-        return encounterPokemonTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 8) {
+          return encounterPokemonTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5517,12 +6046,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        encounterPokemonTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         encounterPokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 8;
       return this;
     }
     /**
@@ -5531,12 +6060,12 @@ private static final long serialVersionUID = 0L;
     public Builder setEncounterPokemonTelemetry(
         POGOProtos.Rpc.EncounterPokemonTelemetry.Builder builderForValue) {
       if (encounterPokemonTelemetryBuilder_ == null) {
-        encounterPokemonTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         encounterPokemonTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 8;
       return this;
     }
     /**
@@ -5544,17 +6073,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeEncounterPokemonTelemetry(POGOProtos.Rpc.EncounterPokemonTelemetry value) {
       if (encounterPokemonTelemetryBuilder_ == null) {
-        if (encounterPokemonTelemetry_ != null) {
-          encounterPokemonTelemetry_ =
-            POGOProtos.Rpc.EncounterPokemonTelemetry.newBuilder(encounterPokemonTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 8 &&
+            telemetryData_ != POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.EncounterPokemonTelemetry.newBuilder((POGOProtos.Rpc.EncounterPokemonTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          encounterPokemonTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        encounterPokemonTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 8) {
+          encounterPokemonTelemetryBuilder_.mergeFrom(value);
+        }
+        encounterPokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 8;
       return this;
     }
     /**
@@ -5562,32 +6095,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearEncounterPokemonTelemetry() {
       if (encounterPokemonTelemetryBuilder_ == null) {
-        encounterPokemonTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 8) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        encounterPokemonTelemetry_ = null;
-        encounterPokemonTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 8) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        encounterPokemonTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;</code>
      */
     public POGOProtos.Rpc.EncounterPokemonTelemetry.Builder getEncounterPokemonTelemetryBuilder() {
-      
-      onChanged();
       return getEncounterPokemonTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;</code>
      */
     public POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder getEncounterPokemonTelemetryOrBuilder() {
-      if (encounterPokemonTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 8) && (encounterPokemonTelemetryBuilder_ != null)) {
         return encounterPokemonTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return encounterPokemonTelemetry_ == null ?
-            POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance() : encounterPokemonTelemetry_;
+        if (telemetryDataCase_ == 8) {
+          return (POGOProtos.Rpc.EncounterPokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5597,17 +6135,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.EncounterPokemonTelemetry, POGOProtos.Rpc.EncounterPokemonTelemetry.Builder, POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder> 
         getEncounterPokemonTelemetryFieldBuilder() {
       if (encounterPokemonTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 8)) {
+          telemetryData_ = POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance();
+        }
         encounterPokemonTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.EncounterPokemonTelemetry, POGOProtos.Rpc.EncounterPokemonTelemetry.Builder, POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder>(
-                getEncounterPokemonTelemetry(),
+                (POGOProtos.Rpc.EncounterPokemonTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        encounterPokemonTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 8;
+      onChanged();;
       return encounterPokemonTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.CatchPokemonTelemetry catchPokemonTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.CatchPokemonTelemetry, POGOProtos.Rpc.CatchPokemonTelemetry.Builder, POGOProtos.Rpc.CatchPokemonTelemetryOrBuilder> catchPokemonTelemetryBuilder_;
     /**
@@ -5615,7 +6157,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the catchPokemonTelemetry field is set.
      */
     public boolean hasCatchPokemonTelemetry() {
-      return catchPokemonTelemetryBuilder_ != null || catchPokemonTelemetry_ != null;
+      return telemetryDataCase_ == 9;
     }
     /**
      * <code>.POGOProtos.Rpc.CatchPokemonTelemetry catch_pokemon_telemetry = 9;</code>
@@ -5623,9 +6165,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.CatchPokemonTelemetry getCatchPokemonTelemetry() {
       if (catchPokemonTelemetryBuilder_ == null) {
-        return catchPokemonTelemetry_ == null ? POGOProtos.Rpc.CatchPokemonTelemetry.getDefaultInstance() : catchPokemonTelemetry_;
+        if (telemetryDataCase_ == 9) {
+          return (POGOProtos.Rpc.CatchPokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.CatchPokemonTelemetry.getDefaultInstance();
       } else {
-        return catchPokemonTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 9) {
+          return catchPokemonTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CatchPokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5636,12 +6184,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        catchPokemonTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         catchPokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 9;
       return this;
     }
     /**
@@ -5650,12 +6198,12 @@ private static final long serialVersionUID = 0L;
     public Builder setCatchPokemonTelemetry(
         POGOProtos.Rpc.CatchPokemonTelemetry.Builder builderForValue) {
       if (catchPokemonTelemetryBuilder_ == null) {
-        catchPokemonTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         catchPokemonTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 9;
       return this;
     }
     /**
@@ -5663,17 +6211,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeCatchPokemonTelemetry(POGOProtos.Rpc.CatchPokemonTelemetry value) {
       if (catchPokemonTelemetryBuilder_ == null) {
-        if (catchPokemonTelemetry_ != null) {
-          catchPokemonTelemetry_ =
-            POGOProtos.Rpc.CatchPokemonTelemetry.newBuilder(catchPokemonTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 9 &&
+            telemetryData_ != POGOProtos.Rpc.CatchPokemonTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.CatchPokemonTelemetry.newBuilder((POGOProtos.Rpc.CatchPokemonTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          catchPokemonTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        catchPokemonTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 9) {
+          catchPokemonTelemetryBuilder_.mergeFrom(value);
+        }
+        catchPokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 9;
       return this;
     }
     /**
@@ -5681,32 +6233,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearCatchPokemonTelemetry() {
       if (catchPokemonTelemetryBuilder_ == null) {
-        catchPokemonTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 9) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        catchPokemonTelemetry_ = null;
-        catchPokemonTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 9) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        catchPokemonTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.CatchPokemonTelemetry catch_pokemon_telemetry = 9;</code>
      */
     public POGOProtos.Rpc.CatchPokemonTelemetry.Builder getCatchPokemonTelemetryBuilder() {
-      
-      onChanged();
       return getCatchPokemonTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.CatchPokemonTelemetry catch_pokemon_telemetry = 9;</code>
      */
     public POGOProtos.Rpc.CatchPokemonTelemetryOrBuilder getCatchPokemonTelemetryOrBuilder() {
-      if (catchPokemonTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 9) && (catchPokemonTelemetryBuilder_ != null)) {
         return catchPokemonTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return catchPokemonTelemetry_ == null ?
-            POGOProtos.Rpc.CatchPokemonTelemetry.getDefaultInstance() : catchPokemonTelemetry_;
+        if (telemetryDataCase_ == 9) {
+          return (POGOProtos.Rpc.CatchPokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.CatchPokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5716,17 +6273,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.CatchPokemonTelemetry, POGOProtos.Rpc.CatchPokemonTelemetry.Builder, POGOProtos.Rpc.CatchPokemonTelemetryOrBuilder> 
         getCatchPokemonTelemetryFieldBuilder() {
       if (catchPokemonTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 9)) {
+          telemetryData_ = POGOProtos.Rpc.CatchPokemonTelemetry.getDefaultInstance();
+        }
         catchPokemonTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.CatchPokemonTelemetry, POGOProtos.Rpc.CatchPokemonTelemetry.Builder, POGOProtos.Rpc.CatchPokemonTelemetryOrBuilder>(
-                getCatchPokemonTelemetry(),
+                (POGOProtos.Rpc.CatchPokemonTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        catchPokemonTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 9;
+      onChanged();;
       return catchPokemonTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.DeployPokemonTelemetry deployPokemonTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.DeployPokemonTelemetry, POGOProtos.Rpc.DeployPokemonTelemetry.Builder, POGOProtos.Rpc.DeployPokemonTelemetryOrBuilder> deployPokemonTelemetryBuilder_;
     /**
@@ -5734,7 +6295,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the deployPokemonTelemetry field is set.
      */
     public boolean hasDeployPokemonTelemetry() {
-      return deployPokemonTelemetryBuilder_ != null || deployPokemonTelemetry_ != null;
+      return telemetryDataCase_ == 10;
     }
     /**
      * <code>.POGOProtos.Rpc.DeployPokemonTelemetry deploy_pokemon_telemetry = 10;</code>
@@ -5742,9 +6303,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.DeployPokemonTelemetry getDeployPokemonTelemetry() {
       if (deployPokemonTelemetryBuilder_ == null) {
-        return deployPokemonTelemetry_ == null ? POGOProtos.Rpc.DeployPokemonTelemetry.getDefaultInstance() : deployPokemonTelemetry_;
+        if (telemetryDataCase_ == 10) {
+          return (POGOProtos.Rpc.DeployPokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.DeployPokemonTelemetry.getDefaultInstance();
       } else {
-        return deployPokemonTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 10) {
+          return deployPokemonTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.DeployPokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5755,12 +6322,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        deployPokemonTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         deployPokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 10;
       return this;
     }
     /**
@@ -5769,12 +6336,12 @@ private static final long serialVersionUID = 0L;
     public Builder setDeployPokemonTelemetry(
         POGOProtos.Rpc.DeployPokemonTelemetry.Builder builderForValue) {
       if (deployPokemonTelemetryBuilder_ == null) {
-        deployPokemonTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         deployPokemonTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 10;
       return this;
     }
     /**
@@ -5782,17 +6349,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeDeployPokemonTelemetry(POGOProtos.Rpc.DeployPokemonTelemetry value) {
       if (deployPokemonTelemetryBuilder_ == null) {
-        if (deployPokemonTelemetry_ != null) {
-          deployPokemonTelemetry_ =
-            POGOProtos.Rpc.DeployPokemonTelemetry.newBuilder(deployPokemonTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 10 &&
+            telemetryData_ != POGOProtos.Rpc.DeployPokemonTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.DeployPokemonTelemetry.newBuilder((POGOProtos.Rpc.DeployPokemonTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          deployPokemonTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        deployPokemonTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 10) {
+          deployPokemonTelemetryBuilder_.mergeFrom(value);
+        }
+        deployPokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 10;
       return this;
     }
     /**
@@ -5800,32 +6371,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearDeployPokemonTelemetry() {
       if (deployPokemonTelemetryBuilder_ == null) {
-        deployPokemonTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 10) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        deployPokemonTelemetry_ = null;
-        deployPokemonTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 10) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        deployPokemonTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.DeployPokemonTelemetry deploy_pokemon_telemetry = 10;</code>
      */
     public POGOProtos.Rpc.DeployPokemonTelemetry.Builder getDeployPokemonTelemetryBuilder() {
-      
-      onChanged();
       return getDeployPokemonTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.DeployPokemonTelemetry deploy_pokemon_telemetry = 10;</code>
      */
     public POGOProtos.Rpc.DeployPokemonTelemetryOrBuilder getDeployPokemonTelemetryOrBuilder() {
-      if (deployPokemonTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 10) && (deployPokemonTelemetryBuilder_ != null)) {
         return deployPokemonTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return deployPokemonTelemetry_ == null ?
-            POGOProtos.Rpc.DeployPokemonTelemetry.getDefaultInstance() : deployPokemonTelemetry_;
+        if (telemetryDataCase_ == 10) {
+          return (POGOProtos.Rpc.DeployPokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.DeployPokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5835,17 +6411,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.DeployPokemonTelemetry, POGOProtos.Rpc.DeployPokemonTelemetry.Builder, POGOProtos.Rpc.DeployPokemonTelemetryOrBuilder> 
         getDeployPokemonTelemetryFieldBuilder() {
       if (deployPokemonTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 10)) {
+          telemetryData_ = POGOProtos.Rpc.DeployPokemonTelemetry.getDefaultInstance();
+        }
         deployPokemonTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.DeployPokemonTelemetry, POGOProtos.Rpc.DeployPokemonTelemetry.Builder, POGOProtos.Rpc.DeployPokemonTelemetryOrBuilder>(
-                getDeployPokemonTelemetry(),
+                (POGOProtos.Rpc.DeployPokemonTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        deployPokemonTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 10;
+      onChanged();;
       return deployPokemonTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.FeedPokemonTelemetry feedPokemonTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.FeedPokemonTelemetry, POGOProtos.Rpc.FeedPokemonTelemetry.Builder, POGOProtos.Rpc.FeedPokemonTelemetryOrBuilder> feedPokemonTelemetryBuilder_;
     /**
@@ -5853,7 +6433,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the feedPokemonTelemetry field is set.
      */
     public boolean hasFeedPokemonTelemetry() {
-      return feedPokemonTelemetryBuilder_ != null || feedPokemonTelemetry_ != null;
+      return telemetryDataCase_ == 11;
     }
     /**
      * <code>.POGOProtos.Rpc.FeedPokemonTelemetry feed_pokemon_telemetry = 11;</code>
@@ -5861,9 +6441,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.FeedPokemonTelemetry getFeedPokemonTelemetry() {
       if (feedPokemonTelemetryBuilder_ == null) {
-        return feedPokemonTelemetry_ == null ? POGOProtos.Rpc.FeedPokemonTelemetry.getDefaultInstance() : feedPokemonTelemetry_;
+        if (telemetryDataCase_ == 11) {
+          return (POGOProtos.Rpc.FeedPokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.FeedPokemonTelemetry.getDefaultInstance();
       } else {
-        return feedPokemonTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 11) {
+          return feedPokemonTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.FeedPokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5874,12 +6460,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        feedPokemonTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         feedPokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 11;
       return this;
     }
     /**
@@ -5888,12 +6474,12 @@ private static final long serialVersionUID = 0L;
     public Builder setFeedPokemonTelemetry(
         POGOProtos.Rpc.FeedPokemonTelemetry.Builder builderForValue) {
       if (feedPokemonTelemetryBuilder_ == null) {
-        feedPokemonTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         feedPokemonTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 11;
       return this;
     }
     /**
@@ -5901,17 +6487,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeFeedPokemonTelemetry(POGOProtos.Rpc.FeedPokemonTelemetry value) {
       if (feedPokemonTelemetryBuilder_ == null) {
-        if (feedPokemonTelemetry_ != null) {
-          feedPokemonTelemetry_ =
-            POGOProtos.Rpc.FeedPokemonTelemetry.newBuilder(feedPokemonTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 11 &&
+            telemetryData_ != POGOProtos.Rpc.FeedPokemonTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.FeedPokemonTelemetry.newBuilder((POGOProtos.Rpc.FeedPokemonTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          feedPokemonTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        feedPokemonTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 11) {
+          feedPokemonTelemetryBuilder_.mergeFrom(value);
+        }
+        feedPokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 11;
       return this;
     }
     /**
@@ -5919,32 +6509,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearFeedPokemonTelemetry() {
       if (feedPokemonTelemetryBuilder_ == null) {
-        feedPokemonTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 11) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        feedPokemonTelemetry_ = null;
-        feedPokemonTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 11) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        feedPokemonTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.FeedPokemonTelemetry feed_pokemon_telemetry = 11;</code>
      */
     public POGOProtos.Rpc.FeedPokemonTelemetry.Builder getFeedPokemonTelemetryBuilder() {
-      
-      onChanged();
       return getFeedPokemonTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.FeedPokemonTelemetry feed_pokemon_telemetry = 11;</code>
      */
     public POGOProtos.Rpc.FeedPokemonTelemetryOrBuilder getFeedPokemonTelemetryOrBuilder() {
-      if (feedPokemonTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 11) && (feedPokemonTelemetryBuilder_ != null)) {
         return feedPokemonTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return feedPokemonTelemetry_ == null ?
-            POGOProtos.Rpc.FeedPokemonTelemetry.getDefaultInstance() : feedPokemonTelemetry_;
+        if (telemetryDataCase_ == 11) {
+          return (POGOProtos.Rpc.FeedPokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.FeedPokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5954,17 +6549,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.FeedPokemonTelemetry, POGOProtos.Rpc.FeedPokemonTelemetry.Builder, POGOProtos.Rpc.FeedPokemonTelemetryOrBuilder> 
         getFeedPokemonTelemetryFieldBuilder() {
       if (feedPokemonTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 11)) {
+          telemetryData_ = POGOProtos.Rpc.FeedPokemonTelemetry.getDefaultInstance();
+        }
         feedPokemonTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.FeedPokemonTelemetry, POGOProtos.Rpc.FeedPokemonTelemetry.Builder, POGOProtos.Rpc.FeedPokemonTelemetryOrBuilder>(
-                getFeedPokemonTelemetry(),
+                (POGOProtos.Rpc.FeedPokemonTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        feedPokemonTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 11;
+      onChanged();;
       return feedPokemonTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.EvolvePokemonTelemetry evolvePokemonTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.EvolvePokemonTelemetry, POGOProtos.Rpc.EvolvePokemonTelemetry.Builder, POGOProtos.Rpc.EvolvePokemonTelemetryOrBuilder> evolvePokemonTelemetryBuilder_;
     /**
@@ -5972,7 +6571,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the evolvePokemonTelemetry field is set.
      */
     public boolean hasEvolvePokemonTelemetry() {
-      return evolvePokemonTelemetryBuilder_ != null || evolvePokemonTelemetry_ != null;
+      return telemetryDataCase_ == 12;
     }
     /**
      * <code>.POGOProtos.Rpc.EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;</code>
@@ -5980,9 +6579,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.EvolvePokemonTelemetry getEvolvePokemonTelemetry() {
       if (evolvePokemonTelemetryBuilder_ == null) {
-        return evolvePokemonTelemetry_ == null ? POGOProtos.Rpc.EvolvePokemonTelemetry.getDefaultInstance() : evolvePokemonTelemetry_;
+        if (telemetryDataCase_ == 12) {
+          return (POGOProtos.Rpc.EvolvePokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.EvolvePokemonTelemetry.getDefaultInstance();
       } else {
-        return evolvePokemonTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 12) {
+          return evolvePokemonTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.EvolvePokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -5993,12 +6598,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        evolvePokemonTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         evolvePokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 12;
       return this;
     }
     /**
@@ -6007,12 +6612,12 @@ private static final long serialVersionUID = 0L;
     public Builder setEvolvePokemonTelemetry(
         POGOProtos.Rpc.EvolvePokemonTelemetry.Builder builderForValue) {
       if (evolvePokemonTelemetryBuilder_ == null) {
-        evolvePokemonTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         evolvePokemonTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 12;
       return this;
     }
     /**
@@ -6020,17 +6625,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeEvolvePokemonTelemetry(POGOProtos.Rpc.EvolvePokemonTelemetry value) {
       if (evolvePokemonTelemetryBuilder_ == null) {
-        if (evolvePokemonTelemetry_ != null) {
-          evolvePokemonTelemetry_ =
-            POGOProtos.Rpc.EvolvePokemonTelemetry.newBuilder(evolvePokemonTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 12 &&
+            telemetryData_ != POGOProtos.Rpc.EvolvePokemonTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.EvolvePokemonTelemetry.newBuilder((POGOProtos.Rpc.EvolvePokemonTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          evolvePokemonTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        evolvePokemonTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 12) {
+          evolvePokemonTelemetryBuilder_.mergeFrom(value);
+        }
+        evolvePokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 12;
       return this;
     }
     /**
@@ -6038,32 +6647,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearEvolvePokemonTelemetry() {
       if (evolvePokemonTelemetryBuilder_ == null) {
-        evolvePokemonTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 12) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        evolvePokemonTelemetry_ = null;
-        evolvePokemonTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 12) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        evolvePokemonTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;</code>
      */
     public POGOProtos.Rpc.EvolvePokemonTelemetry.Builder getEvolvePokemonTelemetryBuilder() {
-      
-      onChanged();
       return getEvolvePokemonTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;</code>
      */
     public POGOProtos.Rpc.EvolvePokemonTelemetryOrBuilder getEvolvePokemonTelemetryOrBuilder() {
-      if (evolvePokemonTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 12) && (evolvePokemonTelemetryBuilder_ != null)) {
         return evolvePokemonTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return evolvePokemonTelemetry_ == null ?
-            POGOProtos.Rpc.EvolvePokemonTelemetry.getDefaultInstance() : evolvePokemonTelemetry_;
+        if (telemetryDataCase_ == 12) {
+          return (POGOProtos.Rpc.EvolvePokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.EvolvePokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6073,17 +6687,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.EvolvePokemonTelemetry, POGOProtos.Rpc.EvolvePokemonTelemetry.Builder, POGOProtos.Rpc.EvolvePokemonTelemetryOrBuilder> 
         getEvolvePokemonTelemetryFieldBuilder() {
       if (evolvePokemonTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 12)) {
+          telemetryData_ = POGOProtos.Rpc.EvolvePokemonTelemetry.getDefaultInstance();
+        }
         evolvePokemonTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.EvolvePokemonTelemetry, POGOProtos.Rpc.EvolvePokemonTelemetry.Builder, POGOProtos.Rpc.EvolvePokemonTelemetryOrBuilder>(
-                getEvolvePokemonTelemetry(),
+                (POGOProtos.Rpc.EvolvePokemonTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        evolvePokemonTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 12;
+      onChanged();;
       return evolvePokemonTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ReleasePokemonTelemetry releasePokemonTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ReleasePokemonTelemetry, POGOProtos.Rpc.ReleasePokemonTelemetry.Builder, POGOProtos.Rpc.ReleasePokemonTelemetryOrBuilder> releasePokemonTelemetryBuilder_;
     /**
@@ -6091,7 +6709,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the releasePokemonTelemetry field is set.
      */
     public boolean hasReleasePokemonTelemetry() {
-      return releasePokemonTelemetryBuilder_ != null || releasePokemonTelemetry_ != null;
+      return telemetryDataCase_ == 13;
     }
     /**
      * <code>.POGOProtos.Rpc.ReleasePokemonTelemetry release_pokemon_telemetry = 13;</code>
@@ -6099,9 +6717,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ReleasePokemonTelemetry getReleasePokemonTelemetry() {
       if (releasePokemonTelemetryBuilder_ == null) {
-        return releasePokemonTelemetry_ == null ? POGOProtos.Rpc.ReleasePokemonTelemetry.getDefaultInstance() : releasePokemonTelemetry_;
+        if (telemetryDataCase_ == 13) {
+          return (POGOProtos.Rpc.ReleasePokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ReleasePokemonTelemetry.getDefaultInstance();
       } else {
-        return releasePokemonTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 13) {
+          return releasePokemonTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ReleasePokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6112,12 +6736,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        releasePokemonTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         releasePokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 13;
       return this;
     }
     /**
@@ -6126,12 +6750,12 @@ private static final long serialVersionUID = 0L;
     public Builder setReleasePokemonTelemetry(
         POGOProtos.Rpc.ReleasePokemonTelemetry.Builder builderForValue) {
       if (releasePokemonTelemetryBuilder_ == null) {
-        releasePokemonTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         releasePokemonTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 13;
       return this;
     }
     /**
@@ -6139,17 +6763,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeReleasePokemonTelemetry(POGOProtos.Rpc.ReleasePokemonTelemetry value) {
       if (releasePokemonTelemetryBuilder_ == null) {
-        if (releasePokemonTelemetry_ != null) {
-          releasePokemonTelemetry_ =
-            POGOProtos.Rpc.ReleasePokemonTelemetry.newBuilder(releasePokemonTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 13 &&
+            telemetryData_ != POGOProtos.Rpc.ReleasePokemonTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ReleasePokemonTelemetry.newBuilder((POGOProtos.Rpc.ReleasePokemonTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          releasePokemonTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        releasePokemonTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 13) {
+          releasePokemonTelemetryBuilder_.mergeFrom(value);
+        }
+        releasePokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 13;
       return this;
     }
     /**
@@ -6157,32 +6785,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearReleasePokemonTelemetry() {
       if (releasePokemonTelemetryBuilder_ == null) {
-        releasePokemonTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 13) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        releasePokemonTelemetry_ = null;
-        releasePokemonTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 13) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        releasePokemonTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ReleasePokemonTelemetry release_pokemon_telemetry = 13;</code>
      */
     public POGOProtos.Rpc.ReleasePokemonTelemetry.Builder getReleasePokemonTelemetryBuilder() {
-      
-      onChanged();
       return getReleasePokemonTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ReleasePokemonTelemetry release_pokemon_telemetry = 13;</code>
      */
     public POGOProtos.Rpc.ReleasePokemonTelemetryOrBuilder getReleasePokemonTelemetryOrBuilder() {
-      if (releasePokemonTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 13) && (releasePokemonTelemetryBuilder_ != null)) {
         return releasePokemonTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return releasePokemonTelemetry_ == null ?
-            POGOProtos.Rpc.ReleasePokemonTelemetry.getDefaultInstance() : releasePokemonTelemetry_;
+        if (telemetryDataCase_ == 13) {
+          return (POGOProtos.Rpc.ReleasePokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ReleasePokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6192,17 +6825,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ReleasePokemonTelemetry, POGOProtos.Rpc.ReleasePokemonTelemetry.Builder, POGOProtos.Rpc.ReleasePokemonTelemetryOrBuilder> 
         getReleasePokemonTelemetryFieldBuilder() {
       if (releasePokemonTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 13)) {
+          telemetryData_ = POGOProtos.Rpc.ReleasePokemonTelemetry.getDefaultInstance();
+        }
         releasePokemonTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ReleasePokemonTelemetry, POGOProtos.Rpc.ReleasePokemonTelemetry.Builder, POGOProtos.Rpc.ReleasePokemonTelemetryOrBuilder>(
-                getReleasePokemonTelemetry(),
+                (POGOProtos.Rpc.ReleasePokemonTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        releasePokemonTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 13;
+      onChanged();;
       return releasePokemonTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.NicknamePokemonTelemetry nicknamePokemonTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.NicknamePokemonTelemetry, POGOProtos.Rpc.NicknamePokemonTelemetry.Builder, POGOProtos.Rpc.NicknamePokemonTelemetryOrBuilder> nicknamePokemonTelemetryBuilder_;
     /**
@@ -6210,7 +6847,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the nicknamePokemonTelemetry field is set.
      */
     public boolean hasNicknamePokemonTelemetry() {
-      return nicknamePokemonTelemetryBuilder_ != null || nicknamePokemonTelemetry_ != null;
+      return telemetryDataCase_ == 14;
     }
     /**
      * <code>.POGOProtos.Rpc.NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;</code>
@@ -6218,9 +6855,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.NicknamePokemonTelemetry getNicknamePokemonTelemetry() {
       if (nicknamePokemonTelemetryBuilder_ == null) {
-        return nicknamePokemonTelemetry_ == null ? POGOProtos.Rpc.NicknamePokemonTelemetry.getDefaultInstance() : nicknamePokemonTelemetry_;
+        if (telemetryDataCase_ == 14) {
+          return (POGOProtos.Rpc.NicknamePokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.NicknamePokemonTelemetry.getDefaultInstance();
       } else {
-        return nicknamePokemonTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 14) {
+          return nicknamePokemonTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.NicknamePokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6231,12 +6874,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        nicknamePokemonTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         nicknamePokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 14;
       return this;
     }
     /**
@@ -6245,12 +6888,12 @@ private static final long serialVersionUID = 0L;
     public Builder setNicknamePokemonTelemetry(
         POGOProtos.Rpc.NicknamePokemonTelemetry.Builder builderForValue) {
       if (nicknamePokemonTelemetryBuilder_ == null) {
-        nicknamePokemonTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         nicknamePokemonTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 14;
       return this;
     }
     /**
@@ -6258,17 +6901,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeNicknamePokemonTelemetry(POGOProtos.Rpc.NicknamePokemonTelemetry value) {
       if (nicknamePokemonTelemetryBuilder_ == null) {
-        if (nicknamePokemonTelemetry_ != null) {
-          nicknamePokemonTelemetry_ =
-            POGOProtos.Rpc.NicknamePokemonTelemetry.newBuilder(nicknamePokemonTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 14 &&
+            telemetryData_ != POGOProtos.Rpc.NicknamePokemonTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.NicknamePokemonTelemetry.newBuilder((POGOProtos.Rpc.NicknamePokemonTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          nicknamePokemonTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        nicknamePokemonTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 14) {
+          nicknamePokemonTelemetryBuilder_.mergeFrom(value);
+        }
+        nicknamePokemonTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 14;
       return this;
     }
     /**
@@ -6276,32 +6923,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearNicknamePokemonTelemetry() {
       if (nicknamePokemonTelemetryBuilder_ == null) {
-        nicknamePokemonTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 14) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        nicknamePokemonTelemetry_ = null;
-        nicknamePokemonTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 14) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        nicknamePokemonTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;</code>
      */
     public POGOProtos.Rpc.NicknamePokemonTelemetry.Builder getNicknamePokemonTelemetryBuilder() {
-      
-      onChanged();
       return getNicknamePokemonTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;</code>
      */
     public POGOProtos.Rpc.NicknamePokemonTelemetryOrBuilder getNicknamePokemonTelemetryOrBuilder() {
-      if (nicknamePokemonTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 14) && (nicknamePokemonTelemetryBuilder_ != null)) {
         return nicknamePokemonTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return nicknamePokemonTelemetry_ == null ?
-            POGOProtos.Rpc.NicknamePokemonTelemetry.getDefaultInstance() : nicknamePokemonTelemetry_;
+        if (telemetryDataCase_ == 14) {
+          return (POGOProtos.Rpc.NicknamePokemonTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.NicknamePokemonTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6311,17 +6963,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.NicknamePokemonTelemetry, POGOProtos.Rpc.NicknamePokemonTelemetry.Builder, POGOProtos.Rpc.NicknamePokemonTelemetryOrBuilder> 
         getNicknamePokemonTelemetryFieldBuilder() {
       if (nicknamePokemonTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 14)) {
+          telemetryData_ = POGOProtos.Rpc.NicknamePokemonTelemetry.getDefaultInstance();
+        }
         nicknamePokemonTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.NicknamePokemonTelemetry, POGOProtos.Rpc.NicknamePokemonTelemetry.Builder, POGOProtos.Rpc.NicknamePokemonTelemetryOrBuilder>(
-                getNicknamePokemonTelemetry(),
+                (POGOProtos.Rpc.NicknamePokemonTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        nicknamePokemonTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 14;
+      onChanged();;
       return nicknamePokemonTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.NewsPageTelemetry newsPageTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.NewsPageTelemetry, POGOProtos.Rpc.NewsPageTelemetry.Builder, POGOProtos.Rpc.NewsPageTelemetryOrBuilder> newsPageTelemetryBuilder_;
     /**
@@ -6329,7 +6985,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the newsPageTelemetry field is set.
      */
     public boolean hasNewsPageTelemetry() {
-      return newsPageTelemetryBuilder_ != null || newsPageTelemetry_ != null;
+      return telemetryDataCase_ == 15;
     }
     /**
      * <code>.POGOProtos.Rpc.NewsPageTelemetry news_page_telemetry = 15;</code>
@@ -6337,9 +6993,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.NewsPageTelemetry getNewsPageTelemetry() {
       if (newsPageTelemetryBuilder_ == null) {
-        return newsPageTelemetry_ == null ? POGOProtos.Rpc.NewsPageTelemetry.getDefaultInstance() : newsPageTelemetry_;
+        if (telemetryDataCase_ == 15) {
+          return (POGOProtos.Rpc.NewsPageTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.NewsPageTelemetry.getDefaultInstance();
       } else {
-        return newsPageTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 15) {
+          return newsPageTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.NewsPageTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6350,12 +7012,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        newsPageTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         newsPageTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 15;
       return this;
     }
     /**
@@ -6364,12 +7026,12 @@ private static final long serialVersionUID = 0L;
     public Builder setNewsPageTelemetry(
         POGOProtos.Rpc.NewsPageTelemetry.Builder builderForValue) {
       if (newsPageTelemetryBuilder_ == null) {
-        newsPageTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         newsPageTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 15;
       return this;
     }
     /**
@@ -6377,17 +7039,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeNewsPageTelemetry(POGOProtos.Rpc.NewsPageTelemetry value) {
       if (newsPageTelemetryBuilder_ == null) {
-        if (newsPageTelemetry_ != null) {
-          newsPageTelemetry_ =
-            POGOProtos.Rpc.NewsPageTelemetry.newBuilder(newsPageTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 15 &&
+            telemetryData_ != POGOProtos.Rpc.NewsPageTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.NewsPageTelemetry.newBuilder((POGOProtos.Rpc.NewsPageTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          newsPageTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        newsPageTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 15) {
+          newsPageTelemetryBuilder_.mergeFrom(value);
+        }
+        newsPageTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 15;
       return this;
     }
     /**
@@ -6395,32 +7061,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearNewsPageTelemetry() {
       if (newsPageTelemetryBuilder_ == null) {
-        newsPageTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 15) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        newsPageTelemetry_ = null;
-        newsPageTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 15) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        newsPageTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.NewsPageTelemetry news_page_telemetry = 15;</code>
      */
     public POGOProtos.Rpc.NewsPageTelemetry.Builder getNewsPageTelemetryBuilder() {
-      
-      onChanged();
       return getNewsPageTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.NewsPageTelemetry news_page_telemetry = 15;</code>
      */
     public POGOProtos.Rpc.NewsPageTelemetryOrBuilder getNewsPageTelemetryOrBuilder() {
-      if (newsPageTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 15) && (newsPageTelemetryBuilder_ != null)) {
         return newsPageTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return newsPageTelemetry_ == null ?
-            POGOProtos.Rpc.NewsPageTelemetry.getDefaultInstance() : newsPageTelemetry_;
+        if (telemetryDataCase_ == 15) {
+          return (POGOProtos.Rpc.NewsPageTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.NewsPageTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6430,17 +7101,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.NewsPageTelemetry, POGOProtos.Rpc.NewsPageTelemetry.Builder, POGOProtos.Rpc.NewsPageTelemetryOrBuilder> 
         getNewsPageTelemetryFieldBuilder() {
       if (newsPageTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 15)) {
+          telemetryData_ = POGOProtos.Rpc.NewsPageTelemetry.getDefaultInstance();
+        }
         newsPageTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.NewsPageTelemetry, POGOProtos.Rpc.NewsPageTelemetry.Builder, POGOProtos.Rpc.NewsPageTelemetryOrBuilder>(
-                getNewsPageTelemetry(),
+                (POGOProtos.Rpc.NewsPageTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        newsPageTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 15;
+      onChanged();;
       return newsPageTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ItemTelemetry itemTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ItemTelemetry, POGOProtos.Rpc.ItemTelemetry.Builder, POGOProtos.Rpc.ItemTelemetryOrBuilder> itemTelemetryBuilder_;
     /**
@@ -6448,7 +7123,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the itemTelemetry field is set.
      */
     public boolean hasItemTelemetry() {
-      return itemTelemetryBuilder_ != null || itemTelemetry_ != null;
+      return telemetryDataCase_ == 16;
     }
     /**
      * <code>.POGOProtos.Rpc.ItemTelemetry item_telemetry = 16;</code>
@@ -6456,9 +7131,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ItemTelemetry getItemTelemetry() {
       if (itemTelemetryBuilder_ == null) {
-        return itemTelemetry_ == null ? POGOProtos.Rpc.ItemTelemetry.getDefaultInstance() : itemTelemetry_;
+        if (telemetryDataCase_ == 16) {
+          return (POGOProtos.Rpc.ItemTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ItemTelemetry.getDefaultInstance();
       } else {
-        return itemTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 16) {
+          return itemTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ItemTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6469,12 +7150,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        itemTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         itemTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 16;
       return this;
     }
     /**
@@ -6483,12 +7164,12 @@ private static final long serialVersionUID = 0L;
     public Builder setItemTelemetry(
         POGOProtos.Rpc.ItemTelemetry.Builder builderForValue) {
       if (itemTelemetryBuilder_ == null) {
-        itemTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         itemTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 16;
       return this;
     }
     /**
@@ -6496,17 +7177,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeItemTelemetry(POGOProtos.Rpc.ItemTelemetry value) {
       if (itemTelemetryBuilder_ == null) {
-        if (itemTelemetry_ != null) {
-          itemTelemetry_ =
-            POGOProtos.Rpc.ItemTelemetry.newBuilder(itemTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 16 &&
+            telemetryData_ != POGOProtos.Rpc.ItemTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ItemTelemetry.newBuilder((POGOProtos.Rpc.ItemTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          itemTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        itemTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 16) {
+          itemTelemetryBuilder_.mergeFrom(value);
+        }
+        itemTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 16;
       return this;
     }
     /**
@@ -6514,32 +7199,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearItemTelemetry() {
       if (itemTelemetryBuilder_ == null) {
-        itemTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 16) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        itemTelemetry_ = null;
-        itemTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 16) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        itemTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ItemTelemetry item_telemetry = 16;</code>
      */
     public POGOProtos.Rpc.ItemTelemetry.Builder getItemTelemetryBuilder() {
-      
-      onChanged();
       return getItemTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ItemTelemetry item_telemetry = 16;</code>
      */
     public POGOProtos.Rpc.ItemTelemetryOrBuilder getItemTelemetryOrBuilder() {
-      if (itemTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 16) && (itemTelemetryBuilder_ != null)) {
         return itemTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return itemTelemetry_ == null ?
-            POGOProtos.Rpc.ItemTelemetry.getDefaultInstance() : itemTelemetry_;
+        if (telemetryDataCase_ == 16) {
+          return (POGOProtos.Rpc.ItemTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ItemTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6549,17 +7239,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ItemTelemetry, POGOProtos.Rpc.ItemTelemetry.Builder, POGOProtos.Rpc.ItemTelemetryOrBuilder> 
         getItemTelemetryFieldBuilder() {
       if (itemTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 16)) {
+          telemetryData_ = POGOProtos.Rpc.ItemTelemetry.getDefaultInstance();
+        }
         itemTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ItemTelemetry, POGOProtos.Rpc.ItemTelemetry.Builder, POGOProtos.Rpc.ItemTelemetryOrBuilder>(
-                getItemTelemetry(),
+                (POGOProtos.Rpc.ItemTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        itemTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 16;
+      onChanged();;
       return itemTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.BattlePartyTelemetry battlePartyTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BattlePartyTelemetry, POGOProtos.Rpc.BattlePartyTelemetry.Builder, POGOProtos.Rpc.BattlePartyTelemetryOrBuilder> battlePartyTelemetryBuilder_;
     /**
@@ -6567,7 +7261,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the battlePartyTelemetry field is set.
      */
     public boolean hasBattlePartyTelemetry() {
-      return battlePartyTelemetryBuilder_ != null || battlePartyTelemetry_ != null;
+      return telemetryDataCase_ == 17;
     }
     /**
      * <code>.POGOProtos.Rpc.BattlePartyTelemetry battle_party_telemetry = 17;</code>
@@ -6575,9 +7269,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.BattlePartyTelemetry getBattlePartyTelemetry() {
       if (battlePartyTelemetryBuilder_ == null) {
-        return battlePartyTelemetry_ == null ? POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance() : battlePartyTelemetry_;
+        if (telemetryDataCase_ == 17) {
+          return (POGOProtos.Rpc.BattlePartyTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance();
       } else {
-        return battlePartyTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 17) {
+          return battlePartyTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6588,12 +7288,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        battlePartyTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         battlePartyTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 17;
       return this;
     }
     /**
@@ -6602,12 +7302,12 @@ private static final long serialVersionUID = 0L;
     public Builder setBattlePartyTelemetry(
         POGOProtos.Rpc.BattlePartyTelemetry.Builder builderForValue) {
       if (battlePartyTelemetryBuilder_ == null) {
-        battlePartyTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         battlePartyTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 17;
       return this;
     }
     /**
@@ -6615,17 +7315,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeBattlePartyTelemetry(POGOProtos.Rpc.BattlePartyTelemetry value) {
       if (battlePartyTelemetryBuilder_ == null) {
-        if (battlePartyTelemetry_ != null) {
-          battlePartyTelemetry_ =
-            POGOProtos.Rpc.BattlePartyTelemetry.newBuilder(battlePartyTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 17 &&
+            telemetryData_ != POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.BattlePartyTelemetry.newBuilder((POGOProtos.Rpc.BattlePartyTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          battlePartyTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        battlePartyTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 17) {
+          battlePartyTelemetryBuilder_.mergeFrom(value);
+        }
+        battlePartyTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 17;
       return this;
     }
     /**
@@ -6633,32 +7337,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearBattlePartyTelemetry() {
       if (battlePartyTelemetryBuilder_ == null) {
-        battlePartyTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 17) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        battlePartyTelemetry_ = null;
-        battlePartyTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 17) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        battlePartyTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.BattlePartyTelemetry battle_party_telemetry = 17;</code>
      */
     public POGOProtos.Rpc.BattlePartyTelemetry.Builder getBattlePartyTelemetryBuilder() {
-      
-      onChanged();
       return getBattlePartyTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.BattlePartyTelemetry battle_party_telemetry = 17;</code>
      */
     public POGOProtos.Rpc.BattlePartyTelemetryOrBuilder getBattlePartyTelemetryOrBuilder() {
-      if (battlePartyTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 17) && (battlePartyTelemetryBuilder_ != null)) {
         return battlePartyTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return battlePartyTelemetry_ == null ?
-            POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance() : battlePartyTelemetry_;
+        if (telemetryDataCase_ == 17) {
+          return (POGOProtos.Rpc.BattlePartyTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6668,17 +7377,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.BattlePartyTelemetry, POGOProtos.Rpc.BattlePartyTelemetry.Builder, POGOProtos.Rpc.BattlePartyTelemetryOrBuilder> 
         getBattlePartyTelemetryFieldBuilder() {
       if (battlePartyTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 17)) {
+          telemetryData_ = POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance();
+        }
         battlePartyTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BattlePartyTelemetry, POGOProtos.Rpc.BattlePartyTelemetry.Builder, POGOProtos.Rpc.BattlePartyTelemetryOrBuilder>(
-                getBattlePartyTelemetry(),
+                (POGOProtos.Rpc.BattlePartyTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        battlePartyTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 17;
+      onChanged();;
       return battlePartyTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.PasscodeRedeemTelemetry passcodeRedeemTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PasscodeRedeemTelemetry, POGOProtos.Rpc.PasscodeRedeemTelemetry.Builder, POGOProtos.Rpc.PasscodeRedeemTelemetryOrBuilder> passcodeRedeemTelemetryBuilder_;
     /**
@@ -6686,7 +7399,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the passcodeRedeemTelemetry field is set.
      */
     public boolean hasPasscodeRedeemTelemetry() {
-      return passcodeRedeemTelemetryBuilder_ != null || passcodeRedeemTelemetry_ != null;
+      return telemetryDataCase_ == 18;
     }
     /**
      * <code>.POGOProtos.Rpc.PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;</code>
@@ -6694,9 +7407,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PasscodeRedeemTelemetry getPasscodeRedeemTelemetry() {
       if (passcodeRedeemTelemetryBuilder_ == null) {
-        return passcodeRedeemTelemetry_ == null ? POGOProtos.Rpc.PasscodeRedeemTelemetry.getDefaultInstance() : passcodeRedeemTelemetry_;
+        if (telemetryDataCase_ == 18) {
+          return (POGOProtos.Rpc.PasscodeRedeemTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PasscodeRedeemTelemetry.getDefaultInstance();
       } else {
-        return passcodeRedeemTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 18) {
+          return passcodeRedeemTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PasscodeRedeemTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6707,12 +7426,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        passcodeRedeemTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         passcodeRedeemTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 18;
       return this;
     }
     /**
@@ -6721,12 +7440,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPasscodeRedeemTelemetry(
         POGOProtos.Rpc.PasscodeRedeemTelemetry.Builder builderForValue) {
       if (passcodeRedeemTelemetryBuilder_ == null) {
-        passcodeRedeemTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         passcodeRedeemTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 18;
       return this;
     }
     /**
@@ -6734,17 +7453,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePasscodeRedeemTelemetry(POGOProtos.Rpc.PasscodeRedeemTelemetry value) {
       if (passcodeRedeemTelemetryBuilder_ == null) {
-        if (passcodeRedeemTelemetry_ != null) {
-          passcodeRedeemTelemetry_ =
-            POGOProtos.Rpc.PasscodeRedeemTelemetry.newBuilder(passcodeRedeemTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 18 &&
+            telemetryData_ != POGOProtos.Rpc.PasscodeRedeemTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PasscodeRedeemTelemetry.newBuilder((POGOProtos.Rpc.PasscodeRedeemTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          passcodeRedeemTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        passcodeRedeemTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 18) {
+          passcodeRedeemTelemetryBuilder_.mergeFrom(value);
+        }
+        passcodeRedeemTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 18;
       return this;
     }
     /**
@@ -6752,32 +7475,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPasscodeRedeemTelemetry() {
       if (passcodeRedeemTelemetryBuilder_ == null) {
-        passcodeRedeemTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 18) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        passcodeRedeemTelemetry_ = null;
-        passcodeRedeemTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 18) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        passcodeRedeemTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;</code>
      */
     public POGOProtos.Rpc.PasscodeRedeemTelemetry.Builder getPasscodeRedeemTelemetryBuilder() {
-      
-      onChanged();
       return getPasscodeRedeemTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;</code>
      */
     public POGOProtos.Rpc.PasscodeRedeemTelemetryOrBuilder getPasscodeRedeemTelemetryOrBuilder() {
-      if (passcodeRedeemTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 18) && (passcodeRedeemTelemetryBuilder_ != null)) {
         return passcodeRedeemTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return passcodeRedeemTelemetry_ == null ?
-            POGOProtos.Rpc.PasscodeRedeemTelemetry.getDefaultInstance() : passcodeRedeemTelemetry_;
+        if (telemetryDataCase_ == 18) {
+          return (POGOProtos.Rpc.PasscodeRedeemTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PasscodeRedeemTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6787,17 +7515,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PasscodeRedeemTelemetry, POGOProtos.Rpc.PasscodeRedeemTelemetry.Builder, POGOProtos.Rpc.PasscodeRedeemTelemetryOrBuilder> 
         getPasscodeRedeemTelemetryFieldBuilder() {
       if (passcodeRedeemTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 18)) {
+          telemetryData_ = POGOProtos.Rpc.PasscodeRedeemTelemetry.getDefaultInstance();
+        }
         passcodeRedeemTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PasscodeRedeemTelemetry, POGOProtos.Rpc.PasscodeRedeemTelemetry.Builder, POGOProtos.Rpc.PasscodeRedeemTelemetryOrBuilder>(
-                getPasscodeRedeemTelemetry(),
+                (POGOProtos.Rpc.PasscodeRedeemTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        passcodeRedeemTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 18;
+      onChanged();;
       return passcodeRedeemTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.LinkLoginTelemetry linkLoginTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.LinkLoginTelemetry, POGOProtos.Rpc.LinkLoginTelemetry.Builder, POGOProtos.Rpc.LinkLoginTelemetryOrBuilder> linkLoginTelemetryBuilder_;
     /**
@@ -6805,7 +7537,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the linkLoginTelemetry field is set.
      */
     public boolean hasLinkLoginTelemetry() {
-      return linkLoginTelemetryBuilder_ != null || linkLoginTelemetry_ != null;
+      return telemetryDataCase_ == 19;
     }
     /**
      * <code>.POGOProtos.Rpc.LinkLoginTelemetry link_login_telemetry = 19;</code>
@@ -6813,9 +7545,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.LinkLoginTelemetry getLinkLoginTelemetry() {
       if (linkLoginTelemetryBuilder_ == null) {
-        return linkLoginTelemetry_ == null ? POGOProtos.Rpc.LinkLoginTelemetry.getDefaultInstance() : linkLoginTelemetry_;
+        if (telemetryDataCase_ == 19) {
+          return (POGOProtos.Rpc.LinkLoginTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.LinkLoginTelemetry.getDefaultInstance();
       } else {
-        return linkLoginTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 19) {
+          return linkLoginTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.LinkLoginTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6826,12 +7564,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        linkLoginTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         linkLoginTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 19;
       return this;
     }
     /**
@@ -6840,12 +7578,12 @@ private static final long serialVersionUID = 0L;
     public Builder setLinkLoginTelemetry(
         POGOProtos.Rpc.LinkLoginTelemetry.Builder builderForValue) {
       if (linkLoginTelemetryBuilder_ == null) {
-        linkLoginTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         linkLoginTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 19;
       return this;
     }
     /**
@@ -6853,17 +7591,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeLinkLoginTelemetry(POGOProtos.Rpc.LinkLoginTelemetry value) {
       if (linkLoginTelemetryBuilder_ == null) {
-        if (linkLoginTelemetry_ != null) {
-          linkLoginTelemetry_ =
-            POGOProtos.Rpc.LinkLoginTelemetry.newBuilder(linkLoginTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 19 &&
+            telemetryData_ != POGOProtos.Rpc.LinkLoginTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.LinkLoginTelemetry.newBuilder((POGOProtos.Rpc.LinkLoginTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          linkLoginTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        linkLoginTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 19) {
+          linkLoginTelemetryBuilder_.mergeFrom(value);
+        }
+        linkLoginTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 19;
       return this;
     }
     /**
@@ -6871,32 +7613,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearLinkLoginTelemetry() {
       if (linkLoginTelemetryBuilder_ == null) {
-        linkLoginTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 19) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        linkLoginTelemetry_ = null;
-        linkLoginTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 19) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        linkLoginTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.LinkLoginTelemetry link_login_telemetry = 19;</code>
      */
     public POGOProtos.Rpc.LinkLoginTelemetry.Builder getLinkLoginTelemetryBuilder() {
-      
-      onChanged();
       return getLinkLoginTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.LinkLoginTelemetry link_login_telemetry = 19;</code>
      */
     public POGOProtos.Rpc.LinkLoginTelemetryOrBuilder getLinkLoginTelemetryOrBuilder() {
-      if (linkLoginTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 19) && (linkLoginTelemetryBuilder_ != null)) {
         return linkLoginTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return linkLoginTelemetry_ == null ?
-            POGOProtos.Rpc.LinkLoginTelemetry.getDefaultInstance() : linkLoginTelemetry_;
+        if (telemetryDataCase_ == 19) {
+          return (POGOProtos.Rpc.LinkLoginTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.LinkLoginTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6906,17 +7653,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.LinkLoginTelemetry, POGOProtos.Rpc.LinkLoginTelemetry.Builder, POGOProtos.Rpc.LinkLoginTelemetryOrBuilder> 
         getLinkLoginTelemetryFieldBuilder() {
       if (linkLoginTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 19)) {
+          telemetryData_ = POGOProtos.Rpc.LinkLoginTelemetry.getDefaultInstance();
+        }
         linkLoginTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.LinkLoginTelemetry, POGOProtos.Rpc.LinkLoginTelemetry.Builder, POGOProtos.Rpc.LinkLoginTelemetryOrBuilder>(
-                getLinkLoginTelemetry(),
+                (POGOProtos.Rpc.LinkLoginTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        linkLoginTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 19;
+      onChanged();;
       return linkLoginTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.RaidTelemetry raidTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.RaidTelemetry, POGOProtos.Rpc.RaidTelemetry.Builder, POGOProtos.Rpc.RaidTelemetryOrBuilder> raidTelemetryBuilder_;
     /**
@@ -6924,7 +7675,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the raidTelemetry field is set.
      */
     public boolean hasRaidTelemetry() {
-      return raidTelemetryBuilder_ != null || raidTelemetry_ != null;
+      return telemetryDataCase_ == 20;
     }
     /**
      * <code>.POGOProtos.Rpc.RaidTelemetry raid_telemetry = 20;</code>
@@ -6932,9 +7683,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.RaidTelemetry getRaidTelemetry() {
       if (raidTelemetryBuilder_ == null) {
-        return raidTelemetry_ == null ? POGOProtos.Rpc.RaidTelemetry.getDefaultInstance() : raidTelemetry_;
+        if (telemetryDataCase_ == 20) {
+          return (POGOProtos.Rpc.RaidTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.RaidTelemetry.getDefaultInstance();
       } else {
-        return raidTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 20) {
+          return raidTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.RaidTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -6945,12 +7702,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        raidTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         raidTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 20;
       return this;
     }
     /**
@@ -6959,12 +7716,12 @@ private static final long serialVersionUID = 0L;
     public Builder setRaidTelemetry(
         POGOProtos.Rpc.RaidTelemetry.Builder builderForValue) {
       if (raidTelemetryBuilder_ == null) {
-        raidTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         raidTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 20;
       return this;
     }
     /**
@@ -6972,17 +7729,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeRaidTelemetry(POGOProtos.Rpc.RaidTelemetry value) {
       if (raidTelemetryBuilder_ == null) {
-        if (raidTelemetry_ != null) {
-          raidTelemetry_ =
-            POGOProtos.Rpc.RaidTelemetry.newBuilder(raidTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 20 &&
+            telemetryData_ != POGOProtos.Rpc.RaidTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.RaidTelemetry.newBuilder((POGOProtos.Rpc.RaidTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          raidTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        raidTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 20) {
+          raidTelemetryBuilder_.mergeFrom(value);
+        }
+        raidTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 20;
       return this;
     }
     /**
@@ -6990,32 +7751,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearRaidTelemetry() {
       if (raidTelemetryBuilder_ == null) {
-        raidTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 20) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        raidTelemetry_ = null;
-        raidTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 20) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        raidTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.RaidTelemetry raid_telemetry = 20;</code>
      */
     public POGOProtos.Rpc.RaidTelemetry.Builder getRaidTelemetryBuilder() {
-      
-      onChanged();
       return getRaidTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.RaidTelemetry raid_telemetry = 20;</code>
      */
     public POGOProtos.Rpc.RaidTelemetryOrBuilder getRaidTelemetryOrBuilder() {
-      if (raidTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 20) && (raidTelemetryBuilder_ != null)) {
         return raidTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return raidTelemetry_ == null ?
-            POGOProtos.Rpc.RaidTelemetry.getDefaultInstance() : raidTelemetry_;
+        if (telemetryDataCase_ == 20) {
+          return (POGOProtos.Rpc.RaidTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.RaidTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7025,17 +7791,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.RaidTelemetry, POGOProtos.Rpc.RaidTelemetry.Builder, POGOProtos.Rpc.RaidTelemetryOrBuilder> 
         getRaidTelemetryFieldBuilder() {
       if (raidTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 20)) {
+          telemetryData_ = POGOProtos.Rpc.RaidTelemetry.getDefaultInstance();
+        }
         raidTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.RaidTelemetry, POGOProtos.Rpc.RaidTelemetry.Builder, POGOProtos.Rpc.RaidTelemetryOrBuilder>(
-                getRaidTelemetry(),
+                (POGOProtos.Rpc.RaidTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        raidTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 20;
+      onChanged();;
       return raidTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.PushNotificationTelemetry pushNotificationTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PushNotificationTelemetry, POGOProtos.Rpc.PushNotificationTelemetry.Builder, POGOProtos.Rpc.PushNotificationTelemetryOrBuilder> pushNotificationTelemetryBuilder_;
     /**
@@ -7043,7 +7813,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the pushNotificationTelemetry field is set.
      */
     public boolean hasPushNotificationTelemetry() {
-      return pushNotificationTelemetryBuilder_ != null || pushNotificationTelemetry_ != null;
+      return telemetryDataCase_ == 21;
     }
     /**
      * <code>.POGOProtos.Rpc.PushNotificationTelemetry push_notification_telemetry = 21;</code>
@@ -7051,9 +7821,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PushNotificationTelemetry getPushNotificationTelemetry() {
       if (pushNotificationTelemetryBuilder_ == null) {
-        return pushNotificationTelemetry_ == null ? POGOProtos.Rpc.PushNotificationTelemetry.getDefaultInstance() : pushNotificationTelemetry_;
+        if (telemetryDataCase_ == 21) {
+          return (POGOProtos.Rpc.PushNotificationTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PushNotificationTelemetry.getDefaultInstance();
       } else {
-        return pushNotificationTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 21) {
+          return pushNotificationTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PushNotificationTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7064,12 +7840,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        pushNotificationTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         pushNotificationTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 21;
       return this;
     }
     /**
@@ -7078,12 +7854,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPushNotificationTelemetry(
         POGOProtos.Rpc.PushNotificationTelemetry.Builder builderForValue) {
       if (pushNotificationTelemetryBuilder_ == null) {
-        pushNotificationTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         pushNotificationTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 21;
       return this;
     }
     /**
@@ -7091,17 +7867,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePushNotificationTelemetry(POGOProtos.Rpc.PushNotificationTelemetry value) {
       if (pushNotificationTelemetryBuilder_ == null) {
-        if (pushNotificationTelemetry_ != null) {
-          pushNotificationTelemetry_ =
-            POGOProtos.Rpc.PushNotificationTelemetry.newBuilder(pushNotificationTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 21 &&
+            telemetryData_ != POGOProtos.Rpc.PushNotificationTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PushNotificationTelemetry.newBuilder((POGOProtos.Rpc.PushNotificationTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          pushNotificationTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        pushNotificationTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 21) {
+          pushNotificationTelemetryBuilder_.mergeFrom(value);
+        }
+        pushNotificationTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 21;
       return this;
     }
     /**
@@ -7109,32 +7889,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPushNotificationTelemetry() {
       if (pushNotificationTelemetryBuilder_ == null) {
-        pushNotificationTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 21) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        pushNotificationTelemetry_ = null;
-        pushNotificationTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 21) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        pushNotificationTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PushNotificationTelemetry push_notification_telemetry = 21;</code>
      */
     public POGOProtos.Rpc.PushNotificationTelemetry.Builder getPushNotificationTelemetryBuilder() {
-      
-      onChanged();
       return getPushNotificationTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PushNotificationTelemetry push_notification_telemetry = 21;</code>
      */
     public POGOProtos.Rpc.PushNotificationTelemetryOrBuilder getPushNotificationTelemetryOrBuilder() {
-      if (pushNotificationTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 21) && (pushNotificationTelemetryBuilder_ != null)) {
         return pushNotificationTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return pushNotificationTelemetry_ == null ?
-            POGOProtos.Rpc.PushNotificationTelemetry.getDefaultInstance() : pushNotificationTelemetry_;
+        if (telemetryDataCase_ == 21) {
+          return (POGOProtos.Rpc.PushNotificationTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PushNotificationTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7144,17 +7929,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PushNotificationTelemetry, POGOProtos.Rpc.PushNotificationTelemetry.Builder, POGOProtos.Rpc.PushNotificationTelemetryOrBuilder> 
         getPushNotificationTelemetryFieldBuilder() {
       if (pushNotificationTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 21)) {
+          telemetryData_ = POGOProtos.Rpc.PushNotificationTelemetry.getDefaultInstance();
+        }
         pushNotificationTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PushNotificationTelemetry, POGOProtos.Rpc.PushNotificationTelemetry.Builder, POGOProtos.Rpc.PushNotificationTelemetryOrBuilder>(
-                getPushNotificationTelemetry(),
+                (POGOProtos.Rpc.PushNotificationTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        pushNotificationTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 21;
+      onChanged();;
       return pushNotificationTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.AvatarCustomizationTelemetry avatarCustomizationTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.AvatarCustomizationTelemetry, POGOProtos.Rpc.AvatarCustomizationTelemetry.Builder, POGOProtos.Rpc.AvatarCustomizationTelemetryOrBuilder> avatarCustomizationTelemetryBuilder_;
     /**
@@ -7162,7 +7951,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the avatarCustomizationTelemetry field is set.
      */
     public boolean hasAvatarCustomizationTelemetry() {
-      return avatarCustomizationTelemetryBuilder_ != null || avatarCustomizationTelemetry_ != null;
+      return telemetryDataCase_ == 22;
     }
     /**
      * <code>.POGOProtos.Rpc.AvatarCustomizationTelemetry avatar_customization_telemetry = 22;</code>
@@ -7170,9 +7959,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.AvatarCustomizationTelemetry getAvatarCustomizationTelemetry() {
       if (avatarCustomizationTelemetryBuilder_ == null) {
-        return avatarCustomizationTelemetry_ == null ? POGOProtos.Rpc.AvatarCustomizationTelemetry.getDefaultInstance() : avatarCustomizationTelemetry_;
+        if (telemetryDataCase_ == 22) {
+          return (POGOProtos.Rpc.AvatarCustomizationTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.AvatarCustomizationTelemetry.getDefaultInstance();
       } else {
-        return avatarCustomizationTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 22) {
+          return avatarCustomizationTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.AvatarCustomizationTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7183,12 +7978,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        avatarCustomizationTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         avatarCustomizationTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 22;
       return this;
     }
     /**
@@ -7197,12 +7992,12 @@ private static final long serialVersionUID = 0L;
     public Builder setAvatarCustomizationTelemetry(
         POGOProtos.Rpc.AvatarCustomizationTelemetry.Builder builderForValue) {
       if (avatarCustomizationTelemetryBuilder_ == null) {
-        avatarCustomizationTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         avatarCustomizationTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 22;
       return this;
     }
     /**
@@ -7210,17 +8005,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeAvatarCustomizationTelemetry(POGOProtos.Rpc.AvatarCustomizationTelemetry value) {
       if (avatarCustomizationTelemetryBuilder_ == null) {
-        if (avatarCustomizationTelemetry_ != null) {
-          avatarCustomizationTelemetry_ =
-            POGOProtos.Rpc.AvatarCustomizationTelemetry.newBuilder(avatarCustomizationTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 22 &&
+            telemetryData_ != POGOProtos.Rpc.AvatarCustomizationTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.AvatarCustomizationTelemetry.newBuilder((POGOProtos.Rpc.AvatarCustomizationTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          avatarCustomizationTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        avatarCustomizationTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 22) {
+          avatarCustomizationTelemetryBuilder_.mergeFrom(value);
+        }
+        avatarCustomizationTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 22;
       return this;
     }
     /**
@@ -7228,32 +8027,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearAvatarCustomizationTelemetry() {
       if (avatarCustomizationTelemetryBuilder_ == null) {
-        avatarCustomizationTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 22) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        avatarCustomizationTelemetry_ = null;
-        avatarCustomizationTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 22) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        avatarCustomizationTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.AvatarCustomizationTelemetry avatar_customization_telemetry = 22;</code>
      */
     public POGOProtos.Rpc.AvatarCustomizationTelemetry.Builder getAvatarCustomizationTelemetryBuilder() {
-      
-      onChanged();
       return getAvatarCustomizationTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.AvatarCustomizationTelemetry avatar_customization_telemetry = 22;</code>
      */
     public POGOProtos.Rpc.AvatarCustomizationTelemetryOrBuilder getAvatarCustomizationTelemetryOrBuilder() {
-      if (avatarCustomizationTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 22) && (avatarCustomizationTelemetryBuilder_ != null)) {
         return avatarCustomizationTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return avatarCustomizationTelemetry_ == null ?
-            POGOProtos.Rpc.AvatarCustomizationTelemetry.getDefaultInstance() : avatarCustomizationTelemetry_;
+        if (telemetryDataCase_ == 22) {
+          return (POGOProtos.Rpc.AvatarCustomizationTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.AvatarCustomizationTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7263,17 +8067,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.AvatarCustomizationTelemetry, POGOProtos.Rpc.AvatarCustomizationTelemetry.Builder, POGOProtos.Rpc.AvatarCustomizationTelemetryOrBuilder> 
         getAvatarCustomizationTelemetryFieldBuilder() {
       if (avatarCustomizationTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 22)) {
+          telemetryData_ = POGOProtos.Rpc.AvatarCustomizationTelemetry.getDefaultInstance();
+        }
         avatarCustomizationTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.AvatarCustomizationTelemetry, POGOProtos.Rpc.AvatarCustomizationTelemetry.Builder, POGOProtos.Rpc.AvatarCustomizationTelemetryOrBuilder>(
-                getAvatarCustomizationTelemetry(),
+                (POGOProtos.Rpc.AvatarCustomizationTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        avatarCustomizationTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 22;
+      onChanged();;
       return avatarCustomizationTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry readPointOfInterestDescriptionTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry, POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.Builder, POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetryOrBuilder> readPointOfInterestDescriptionTelemetryBuilder_;
     /**
@@ -7281,7 +8089,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the readPointOfInterestDescriptionTelemetry field is set.
      */
     public boolean hasReadPointOfInterestDescriptionTelemetry() {
-      return readPointOfInterestDescriptionTelemetryBuilder_ != null || readPointOfInterestDescriptionTelemetry_ != null;
+      return telemetryDataCase_ == 23;
     }
     /**
      * <code>.POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;</code>
@@ -7289,9 +8097,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry getReadPointOfInterestDescriptionTelemetry() {
       if (readPointOfInterestDescriptionTelemetryBuilder_ == null) {
-        return readPointOfInterestDescriptionTelemetry_ == null ? POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.getDefaultInstance() : readPointOfInterestDescriptionTelemetry_;
+        if (telemetryDataCase_ == 23) {
+          return (POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.getDefaultInstance();
       } else {
-        return readPointOfInterestDescriptionTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 23) {
+          return readPointOfInterestDescriptionTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7302,12 +8116,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        readPointOfInterestDescriptionTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         readPointOfInterestDescriptionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 23;
       return this;
     }
     /**
@@ -7316,12 +8130,12 @@ private static final long serialVersionUID = 0L;
     public Builder setReadPointOfInterestDescriptionTelemetry(
         POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.Builder builderForValue) {
       if (readPointOfInterestDescriptionTelemetryBuilder_ == null) {
-        readPointOfInterestDescriptionTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         readPointOfInterestDescriptionTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 23;
       return this;
     }
     /**
@@ -7329,17 +8143,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeReadPointOfInterestDescriptionTelemetry(POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry value) {
       if (readPointOfInterestDescriptionTelemetryBuilder_ == null) {
-        if (readPointOfInterestDescriptionTelemetry_ != null) {
-          readPointOfInterestDescriptionTelemetry_ =
-            POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.newBuilder(readPointOfInterestDescriptionTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 23 &&
+            telemetryData_ != POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.newBuilder((POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          readPointOfInterestDescriptionTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        readPointOfInterestDescriptionTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 23) {
+          readPointOfInterestDescriptionTelemetryBuilder_.mergeFrom(value);
+        }
+        readPointOfInterestDescriptionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 23;
       return this;
     }
     /**
@@ -7347,32 +8165,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearReadPointOfInterestDescriptionTelemetry() {
       if (readPointOfInterestDescriptionTelemetryBuilder_ == null) {
-        readPointOfInterestDescriptionTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 23) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        readPointOfInterestDescriptionTelemetry_ = null;
-        readPointOfInterestDescriptionTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 23) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        readPointOfInterestDescriptionTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;</code>
      */
     public POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.Builder getReadPointOfInterestDescriptionTelemetryBuilder() {
-      
-      onChanged();
       return getReadPointOfInterestDescriptionTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;</code>
      */
     public POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetryOrBuilder getReadPointOfInterestDescriptionTelemetryOrBuilder() {
-      if (readPointOfInterestDescriptionTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 23) && (readPointOfInterestDescriptionTelemetryBuilder_ != null)) {
         return readPointOfInterestDescriptionTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return readPointOfInterestDescriptionTelemetry_ == null ?
-            POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.getDefaultInstance() : readPointOfInterestDescriptionTelemetry_;
+        if (telemetryDataCase_ == 23) {
+          return (POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7382,17 +8205,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry, POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.Builder, POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetryOrBuilder> 
         getReadPointOfInterestDescriptionTelemetryFieldBuilder() {
       if (readPointOfInterestDescriptionTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 23)) {
+          telemetryData_ = POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.getDefaultInstance();
+        }
         readPointOfInterestDescriptionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry, POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry.Builder, POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetryOrBuilder>(
-                getReadPointOfInterestDescriptionTelemetry(),
+                (POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        readPointOfInterestDescriptionTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 23;
+      onChanged();;
       return readPointOfInterestDescriptionTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.WebTelemetry webTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.WebTelemetry, POGOProtos.Rpc.WebTelemetry.Builder, POGOProtos.Rpc.WebTelemetryOrBuilder> webTelemetryBuilder_;
     /**
@@ -7400,7 +8227,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the webTelemetry field is set.
      */
     public boolean hasWebTelemetry() {
-      return webTelemetryBuilder_ != null || webTelemetry_ != null;
+      return telemetryDataCase_ == 24;
     }
     /**
      * <code>.POGOProtos.Rpc.WebTelemetry web_telemetry = 24;</code>
@@ -7408,9 +8235,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.WebTelemetry getWebTelemetry() {
       if (webTelemetryBuilder_ == null) {
-        return webTelemetry_ == null ? POGOProtos.Rpc.WebTelemetry.getDefaultInstance() : webTelemetry_;
+        if (telemetryDataCase_ == 24) {
+          return (POGOProtos.Rpc.WebTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.WebTelemetry.getDefaultInstance();
       } else {
-        return webTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 24) {
+          return webTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WebTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7421,12 +8254,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        webTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         webTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 24;
       return this;
     }
     /**
@@ -7435,12 +8268,12 @@ private static final long serialVersionUID = 0L;
     public Builder setWebTelemetry(
         POGOProtos.Rpc.WebTelemetry.Builder builderForValue) {
       if (webTelemetryBuilder_ == null) {
-        webTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         webTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 24;
       return this;
     }
     /**
@@ -7448,17 +8281,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeWebTelemetry(POGOProtos.Rpc.WebTelemetry value) {
       if (webTelemetryBuilder_ == null) {
-        if (webTelemetry_ != null) {
-          webTelemetry_ =
-            POGOProtos.Rpc.WebTelemetry.newBuilder(webTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 24 &&
+            telemetryData_ != POGOProtos.Rpc.WebTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.WebTelemetry.newBuilder((POGOProtos.Rpc.WebTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          webTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        webTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 24) {
+          webTelemetryBuilder_.mergeFrom(value);
+        }
+        webTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 24;
       return this;
     }
     /**
@@ -7466,32 +8303,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearWebTelemetry() {
       if (webTelemetryBuilder_ == null) {
-        webTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 24) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        webTelemetry_ = null;
-        webTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 24) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        webTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.WebTelemetry web_telemetry = 24;</code>
      */
     public POGOProtos.Rpc.WebTelemetry.Builder getWebTelemetryBuilder() {
-      
-      onChanged();
       return getWebTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.WebTelemetry web_telemetry = 24;</code>
      */
     public POGOProtos.Rpc.WebTelemetryOrBuilder getWebTelemetryOrBuilder() {
-      if (webTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 24) && (webTelemetryBuilder_ != null)) {
         return webTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return webTelemetry_ == null ?
-            POGOProtos.Rpc.WebTelemetry.getDefaultInstance() : webTelemetry_;
+        if (telemetryDataCase_ == 24) {
+          return (POGOProtos.Rpc.WebTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.WebTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7501,17 +8343,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.WebTelemetry, POGOProtos.Rpc.WebTelemetry.Builder, POGOProtos.Rpc.WebTelemetryOrBuilder> 
         getWebTelemetryFieldBuilder() {
       if (webTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 24)) {
+          telemetryData_ = POGOProtos.Rpc.WebTelemetry.getDefaultInstance();
+        }
         webTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.WebTelemetry, POGOProtos.Rpc.WebTelemetry.Builder, POGOProtos.Rpc.WebTelemetryOrBuilder>(
-                getWebTelemetry(),
+                (POGOProtos.Rpc.WebTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        webTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 24;
+      onChanged();;
       return webTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ChangeArTelemetry changeArTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ChangeArTelemetry, POGOProtos.Rpc.ChangeArTelemetry.Builder, POGOProtos.Rpc.ChangeArTelemetryOrBuilder> changeArTelemetryBuilder_;
     /**
@@ -7519,7 +8365,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the changeArTelemetry field is set.
      */
     public boolean hasChangeArTelemetry() {
-      return changeArTelemetryBuilder_ != null || changeArTelemetry_ != null;
+      return telemetryDataCase_ == 25;
     }
     /**
      * <code>.POGOProtos.Rpc.ChangeArTelemetry change_ar_telemetry = 25;</code>
@@ -7527,9 +8373,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ChangeArTelemetry getChangeArTelemetry() {
       if (changeArTelemetryBuilder_ == null) {
-        return changeArTelemetry_ == null ? POGOProtos.Rpc.ChangeArTelemetry.getDefaultInstance() : changeArTelemetry_;
+        if (telemetryDataCase_ == 25) {
+          return (POGOProtos.Rpc.ChangeArTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ChangeArTelemetry.getDefaultInstance();
       } else {
-        return changeArTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 25) {
+          return changeArTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ChangeArTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7540,12 +8392,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        changeArTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         changeArTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 25;
       return this;
     }
     /**
@@ -7554,12 +8406,12 @@ private static final long serialVersionUID = 0L;
     public Builder setChangeArTelemetry(
         POGOProtos.Rpc.ChangeArTelemetry.Builder builderForValue) {
       if (changeArTelemetryBuilder_ == null) {
-        changeArTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         changeArTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 25;
       return this;
     }
     /**
@@ -7567,17 +8419,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeChangeArTelemetry(POGOProtos.Rpc.ChangeArTelemetry value) {
       if (changeArTelemetryBuilder_ == null) {
-        if (changeArTelemetry_ != null) {
-          changeArTelemetry_ =
-            POGOProtos.Rpc.ChangeArTelemetry.newBuilder(changeArTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 25 &&
+            telemetryData_ != POGOProtos.Rpc.ChangeArTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ChangeArTelemetry.newBuilder((POGOProtos.Rpc.ChangeArTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          changeArTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        changeArTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 25) {
+          changeArTelemetryBuilder_.mergeFrom(value);
+        }
+        changeArTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 25;
       return this;
     }
     /**
@@ -7585,32 +8441,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearChangeArTelemetry() {
       if (changeArTelemetryBuilder_ == null) {
-        changeArTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 25) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        changeArTelemetry_ = null;
-        changeArTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 25) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        changeArTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ChangeArTelemetry change_ar_telemetry = 25;</code>
      */
     public POGOProtos.Rpc.ChangeArTelemetry.Builder getChangeArTelemetryBuilder() {
-      
-      onChanged();
       return getChangeArTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ChangeArTelemetry change_ar_telemetry = 25;</code>
      */
     public POGOProtos.Rpc.ChangeArTelemetryOrBuilder getChangeArTelemetryOrBuilder() {
-      if (changeArTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 25) && (changeArTelemetryBuilder_ != null)) {
         return changeArTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return changeArTelemetry_ == null ?
-            POGOProtos.Rpc.ChangeArTelemetry.getDefaultInstance() : changeArTelemetry_;
+        if (telemetryDataCase_ == 25) {
+          return (POGOProtos.Rpc.ChangeArTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ChangeArTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7620,17 +8481,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ChangeArTelemetry, POGOProtos.Rpc.ChangeArTelemetry.Builder, POGOProtos.Rpc.ChangeArTelemetryOrBuilder> 
         getChangeArTelemetryFieldBuilder() {
       if (changeArTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 25)) {
+          telemetryData_ = POGOProtos.Rpc.ChangeArTelemetry.getDefaultInstance();
+        }
         changeArTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ChangeArTelemetry, POGOProtos.Rpc.ChangeArTelemetry.Builder, POGOProtos.Rpc.ChangeArTelemetryOrBuilder>(
-                getChangeArTelemetry(),
+                (POGOProtos.Rpc.ChangeArTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        changeArTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 25;
+      onChanged();;
       return changeArTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.WeatherDetailClickTelemetry weatherDetailClickTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.WeatherDetailClickTelemetry, POGOProtos.Rpc.WeatherDetailClickTelemetry.Builder, POGOProtos.Rpc.WeatherDetailClickTelemetryOrBuilder> weatherDetailClickTelemetryBuilder_;
     /**
@@ -7638,7 +8503,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the weatherDetailClickTelemetry field is set.
      */
     public boolean hasWeatherDetailClickTelemetry() {
-      return weatherDetailClickTelemetryBuilder_ != null || weatherDetailClickTelemetry_ != null;
+      return telemetryDataCase_ == 26;
     }
     /**
      * <code>.POGOProtos.Rpc.WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;</code>
@@ -7646,9 +8511,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.WeatherDetailClickTelemetry getWeatherDetailClickTelemetry() {
       if (weatherDetailClickTelemetryBuilder_ == null) {
-        return weatherDetailClickTelemetry_ == null ? POGOProtos.Rpc.WeatherDetailClickTelemetry.getDefaultInstance() : weatherDetailClickTelemetry_;
+        if (telemetryDataCase_ == 26) {
+          return (POGOProtos.Rpc.WeatherDetailClickTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.WeatherDetailClickTelemetry.getDefaultInstance();
       } else {
-        return weatherDetailClickTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 26) {
+          return weatherDetailClickTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WeatherDetailClickTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7659,12 +8530,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        weatherDetailClickTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         weatherDetailClickTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 26;
       return this;
     }
     /**
@@ -7673,12 +8544,12 @@ private static final long serialVersionUID = 0L;
     public Builder setWeatherDetailClickTelemetry(
         POGOProtos.Rpc.WeatherDetailClickTelemetry.Builder builderForValue) {
       if (weatherDetailClickTelemetryBuilder_ == null) {
-        weatherDetailClickTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         weatherDetailClickTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 26;
       return this;
     }
     /**
@@ -7686,17 +8557,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeWeatherDetailClickTelemetry(POGOProtos.Rpc.WeatherDetailClickTelemetry value) {
       if (weatherDetailClickTelemetryBuilder_ == null) {
-        if (weatherDetailClickTelemetry_ != null) {
-          weatherDetailClickTelemetry_ =
-            POGOProtos.Rpc.WeatherDetailClickTelemetry.newBuilder(weatherDetailClickTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 26 &&
+            telemetryData_ != POGOProtos.Rpc.WeatherDetailClickTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.WeatherDetailClickTelemetry.newBuilder((POGOProtos.Rpc.WeatherDetailClickTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          weatherDetailClickTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        weatherDetailClickTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 26) {
+          weatherDetailClickTelemetryBuilder_.mergeFrom(value);
+        }
+        weatherDetailClickTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 26;
       return this;
     }
     /**
@@ -7704,32 +8579,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearWeatherDetailClickTelemetry() {
       if (weatherDetailClickTelemetryBuilder_ == null) {
-        weatherDetailClickTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 26) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        weatherDetailClickTelemetry_ = null;
-        weatherDetailClickTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 26) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        weatherDetailClickTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;</code>
      */
     public POGOProtos.Rpc.WeatherDetailClickTelemetry.Builder getWeatherDetailClickTelemetryBuilder() {
-      
-      onChanged();
       return getWeatherDetailClickTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;</code>
      */
     public POGOProtos.Rpc.WeatherDetailClickTelemetryOrBuilder getWeatherDetailClickTelemetryOrBuilder() {
-      if (weatherDetailClickTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 26) && (weatherDetailClickTelemetryBuilder_ != null)) {
         return weatherDetailClickTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return weatherDetailClickTelemetry_ == null ?
-            POGOProtos.Rpc.WeatherDetailClickTelemetry.getDefaultInstance() : weatherDetailClickTelemetry_;
+        if (telemetryDataCase_ == 26) {
+          return (POGOProtos.Rpc.WeatherDetailClickTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.WeatherDetailClickTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7739,17 +8619,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.WeatherDetailClickTelemetry, POGOProtos.Rpc.WeatherDetailClickTelemetry.Builder, POGOProtos.Rpc.WeatherDetailClickTelemetryOrBuilder> 
         getWeatherDetailClickTelemetryFieldBuilder() {
       if (weatherDetailClickTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 26)) {
+          telemetryData_ = POGOProtos.Rpc.WeatherDetailClickTelemetry.getDefaultInstance();
+        }
         weatherDetailClickTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.WeatherDetailClickTelemetry, POGOProtos.Rpc.WeatherDetailClickTelemetry.Builder, POGOProtos.Rpc.WeatherDetailClickTelemetryOrBuilder>(
-                getWeatherDetailClickTelemetry(),
+                (POGOProtos.Rpc.WeatherDetailClickTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        weatherDetailClickTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 26;
+      onChanged();;
       return weatherDetailClickTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.UserIssueWeatherReport userIssueWeatherReport_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.UserIssueWeatherReport, POGOProtos.Rpc.UserIssueWeatherReport.Builder, POGOProtos.Rpc.UserIssueWeatherReportOrBuilder> userIssueWeatherReportBuilder_;
     /**
@@ -7757,7 +8641,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the userIssueWeatherReport field is set.
      */
     public boolean hasUserIssueWeatherReport() {
-      return userIssueWeatherReportBuilder_ != null || userIssueWeatherReport_ != null;
+      return telemetryDataCase_ == 27;
     }
     /**
      * <code>.POGOProtos.Rpc.UserIssueWeatherReport user_issue_weather_report = 27;</code>
@@ -7765,9 +8649,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.UserIssueWeatherReport getUserIssueWeatherReport() {
       if (userIssueWeatherReportBuilder_ == null) {
-        return userIssueWeatherReport_ == null ? POGOProtos.Rpc.UserIssueWeatherReport.getDefaultInstance() : userIssueWeatherReport_;
+        if (telemetryDataCase_ == 27) {
+          return (POGOProtos.Rpc.UserIssueWeatherReport) telemetryData_;
+        }
+        return POGOProtos.Rpc.UserIssueWeatherReport.getDefaultInstance();
       } else {
-        return userIssueWeatherReportBuilder_.getMessage();
+        if (telemetryDataCase_ == 27) {
+          return userIssueWeatherReportBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.UserIssueWeatherReport.getDefaultInstance();
       }
     }
     /**
@@ -7778,12 +8668,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        userIssueWeatherReport_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         userIssueWeatherReportBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 27;
       return this;
     }
     /**
@@ -7792,12 +8682,12 @@ private static final long serialVersionUID = 0L;
     public Builder setUserIssueWeatherReport(
         POGOProtos.Rpc.UserIssueWeatherReport.Builder builderForValue) {
       if (userIssueWeatherReportBuilder_ == null) {
-        userIssueWeatherReport_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         userIssueWeatherReportBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 27;
       return this;
     }
     /**
@@ -7805,17 +8695,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeUserIssueWeatherReport(POGOProtos.Rpc.UserIssueWeatherReport value) {
       if (userIssueWeatherReportBuilder_ == null) {
-        if (userIssueWeatherReport_ != null) {
-          userIssueWeatherReport_ =
-            POGOProtos.Rpc.UserIssueWeatherReport.newBuilder(userIssueWeatherReport_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 27 &&
+            telemetryData_ != POGOProtos.Rpc.UserIssueWeatherReport.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.UserIssueWeatherReport.newBuilder((POGOProtos.Rpc.UserIssueWeatherReport) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          userIssueWeatherReport_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        userIssueWeatherReportBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 27) {
+          userIssueWeatherReportBuilder_.mergeFrom(value);
+        }
+        userIssueWeatherReportBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 27;
       return this;
     }
     /**
@@ -7823,32 +8717,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearUserIssueWeatherReport() {
       if (userIssueWeatherReportBuilder_ == null) {
-        userIssueWeatherReport_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 27) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        userIssueWeatherReport_ = null;
-        userIssueWeatherReportBuilder_ = null;
+        if (telemetryDataCase_ == 27) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        userIssueWeatherReportBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.UserIssueWeatherReport user_issue_weather_report = 27;</code>
      */
     public POGOProtos.Rpc.UserIssueWeatherReport.Builder getUserIssueWeatherReportBuilder() {
-      
-      onChanged();
       return getUserIssueWeatherReportFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.UserIssueWeatherReport user_issue_weather_report = 27;</code>
      */
     public POGOProtos.Rpc.UserIssueWeatherReportOrBuilder getUserIssueWeatherReportOrBuilder() {
-      if (userIssueWeatherReportBuilder_ != null) {
+      if ((telemetryDataCase_ == 27) && (userIssueWeatherReportBuilder_ != null)) {
         return userIssueWeatherReportBuilder_.getMessageOrBuilder();
       } else {
-        return userIssueWeatherReport_ == null ?
-            POGOProtos.Rpc.UserIssueWeatherReport.getDefaultInstance() : userIssueWeatherReport_;
+        if (telemetryDataCase_ == 27) {
+          return (POGOProtos.Rpc.UserIssueWeatherReport) telemetryData_;
+        }
+        return POGOProtos.Rpc.UserIssueWeatherReport.getDefaultInstance();
       }
     }
     /**
@@ -7858,17 +8757,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.UserIssueWeatherReport, POGOProtos.Rpc.UserIssueWeatherReport.Builder, POGOProtos.Rpc.UserIssueWeatherReportOrBuilder> 
         getUserIssueWeatherReportFieldBuilder() {
       if (userIssueWeatherReportBuilder_ == null) {
+        if (!(telemetryDataCase_ == 27)) {
+          telemetryData_ = POGOProtos.Rpc.UserIssueWeatherReport.getDefaultInstance();
+        }
         userIssueWeatherReportBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.UserIssueWeatherReport, POGOProtos.Rpc.UserIssueWeatherReport.Builder, POGOProtos.Rpc.UserIssueWeatherReportOrBuilder>(
-                getUserIssueWeatherReport(),
+                (POGOProtos.Rpc.UserIssueWeatherReport) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        userIssueWeatherReport_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 27;
+      onChanged();;
       return userIssueWeatherReportBuilder_;
     }
 
-    private POGOProtos.Rpc.PokemonInventoryTelemetry pokemonInventoryTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PokemonInventoryTelemetry, POGOProtos.Rpc.PokemonInventoryTelemetry.Builder, POGOProtos.Rpc.PokemonInventoryTelemetryOrBuilder> pokemonInventoryTelemetryBuilder_;
     /**
@@ -7876,7 +8779,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the pokemonInventoryTelemetry field is set.
      */
     public boolean hasPokemonInventoryTelemetry() {
-      return pokemonInventoryTelemetryBuilder_ != null || pokemonInventoryTelemetry_ != null;
+      return telemetryDataCase_ == 28;
     }
     /**
      * <code>.POGOProtos.Rpc.PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;</code>
@@ -7884,9 +8787,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PokemonInventoryTelemetry getPokemonInventoryTelemetry() {
       if (pokemonInventoryTelemetryBuilder_ == null) {
-        return pokemonInventoryTelemetry_ == null ? POGOProtos.Rpc.PokemonInventoryTelemetry.getDefaultInstance() : pokemonInventoryTelemetry_;
+        if (telemetryDataCase_ == 28) {
+          return (POGOProtos.Rpc.PokemonInventoryTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PokemonInventoryTelemetry.getDefaultInstance();
       } else {
-        return pokemonInventoryTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 28) {
+          return pokemonInventoryTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PokemonInventoryTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7897,12 +8806,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        pokemonInventoryTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         pokemonInventoryTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 28;
       return this;
     }
     /**
@@ -7911,12 +8820,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPokemonInventoryTelemetry(
         POGOProtos.Rpc.PokemonInventoryTelemetry.Builder builderForValue) {
       if (pokemonInventoryTelemetryBuilder_ == null) {
-        pokemonInventoryTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         pokemonInventoryTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 28;
       return this;
     }
     /**
@@ -7924,17 +8833,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePokemonInventoryTelemetry(POGOProtos.Rpc.PokemonInventoryTelemetry value) {
       if (pokemonInventoryTelemetryBuilder_ == null) {
-        if (pokemonInventoryTelemetry_ != null) {
-          pokemonInventoryTelemetry_ =
-            POGOProtos.Rpc.PokemonInventoryTelemetry.newBuilder(pokemonInventoryTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 28 &&
+            telemetryData_ != POGOProtos.Rpc.PokemonInventoryTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PokemonInventoryTelemetry.newBuilder((POGOProtos.Rpc.PokemonInventoryTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          pokemonInventoryTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        pokemonInventoryTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 28) {
+          pokemonInventoryTelemetryBuilder_.mergeFrom(value);
+        }
+        pokemonInventoryTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 28;
       return this;
     }
     /**
@@ -7942,32 +8855,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPokemonInventoryTelemetry() {
       if (pokemonInventoryTelemetryBuilder_ == null) {
-        pokemonInventoryTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 28) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        pokemonInventoryTelemetry_ = null;
-        pokemonInventoryTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 28) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        pokemonInventoryTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;</code>
      */
     public POGOProtos.Rpc.PokemonInventoryTelemetry.Builder getPokemonInventoryTelemetryBuilder() {
-      
-      onChanged();
       return getPokemonInventoryTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;</code>
      */
     public POGOProtos.Rpc.PokemonInventoryTelemetryOrBuilder getPokemonInventoryTelemetryOrBuilder() {
-      if (pokemonInventoryTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 28) && (pokemonInventoryTelemetryBuilder_ != null)) {
         return pokemonInventoryTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return pokemonInventoryTelemetry_ == null ?
-            POGOProtos.Rpc.PokemonInventoryTelemetry.getDefaultInstance() : pokemonInventoryTelemetry_;
+        if (telemetryDataCase_ == 28) {
+          return (POGOProtos.Rpc.PokemonInventoryTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PokemonInventoryTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -7977,17 +8895,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PokemonInventoryTelemetry, POGOProtos.Rpc.PokemonInventoryTelemetry.Builder, POGOProtos.Rpc.PokemonInventoryTelemetryOrBuilder> 
         getPokemonInventoryTelemetryFieldBuilder() {
       if (pokemonInventoryTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 28)) {
+          telemetryData_ = POGOProtos.Rpc.PokemonInventoryTelemetry.getDefaultInstance();
+        }
         pokemonInventoryTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PokemonInventoryTelemetry, POGOProtos.Rpc.PokemonInventoryTelemetry.Builder, POGOProtos.Rpc.PokemonInventoryTelemetryOrBuilder>(
-                getPokemonInventoryTelemetry(),
+                (POGOProtos.Rpc.PokemonInventoryTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        pokemonInventoryTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 28;
+      onChanged();;
       return pokemonInventoryTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.SocialTelemetry socialTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.SocialTelemetry, POGOProtos.Rpc.SocialTelemetry.Builder, POGOProtos.Rpc.SocialTelemetryOrBuilder> socialTelemetryBuilder_;
     /**
@@ -7995,7 +8917,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the socialTelemetry field is set.
      */
     public boolean hasSocialTelemetry() {
-      return socialTelemetryBuilder_ != null || socialTelemetry_ != null;
+      return telemetryDataCase_ == 29;
     }
     /**
      * <code>.POGOProtos.Rpc.SocialTelemetry social_telemetry = 29;</code>
@@ -8003,9 +8925,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.SocialTelemetry getSocialTelemetry() {
       if (socialTelemetryBuilder_ == null) {
-        return socialTelemetry_ == null ? POGOProtos.Rpc.SocialTelemetry.getDefaultInstance() : socialTelemetry_;
+        if (telemetryDataCase_ == 29) {
+          return (POGOProtos.Rpc.SocialTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.SocialTelemetry.getDefaultInstance();
       } else {
-        return socialTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 29) {
+          return socialTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.SocialTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8016,12 +8944,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        socialTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         socialTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 29;
       return this;
     }
     /**
@@ -8030,12 +8958,12 @@ private static final long serialVersionUID = 0L;
     public Builder setSocialTelemetry(
         POGOProtos.Rpc.SocialTelemetry.Builder builderForValue) {
       if (socialTelemetryBuilder_ == null) {
-        socialTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         socialTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 29;
       return this;
     }
     /**
@@ -8043,17 +8971,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeSocialTelemetry(POGOProtos.Rpc.SocialTelemetry value) {
       if (socialTelemetryBuilder_ == null) {
-        if (socialTelemetry_ != null) {
-          socialTelemetry_ =
-            POGOProtos.Rpc.SocialTelemetry.newBuilder(socialTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 29 &&
+            telemetryData_ != POGOProtos.Rpc.SocialTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.SocialTelemetry.newBuilder((POGOProtos.Rpc.SocialTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          socialTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        socialTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 29) {
+          socialTelemetryBuilder_.mergeFrom(value);
+        }
+        socialTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 29;
       return this;
     }
     /**
@@ -8061,32 +8993,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearSocialTelemetry() {
       if (socialTelemetryBuilder_ == null) {
-        socialTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 29) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        socialTelemetry_ = null;
-        socialTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 29) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        socialTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.SocialTelemetry social_telemetry = 29;</code>
      */
     public POGOProtos.Rpc.SocialTelemetry.Builder getSocialTelemetryBuilder() {
-      
-      onChanged();
       return getSocialTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.SocialTelemetry social_telemetry = 29;</code>
      */
     public POGOProtos.Rpc.SocialTelemetryOrBuilder getSocialTelemetryOrBuilder() {
-      if (socialTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 29) && (socialTelemetryBuilder_ != null)) {
         return socialTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return socialTelemetry_ == null ?
-            POGOProtos.Rpc.SocialTelemetry.getDefaultInstance() : socialTelemetry_;
+        if (telemetryDataCase_ == 29) {
+          return (POGOProtos.Rpc.SocialTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.SocialTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8096,17 +9033,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.SocialTelemetry, POGOProtos.Rpc.SocialTelemetry.Builder, POGOProtos.Rpc.SocialTelemetryOrBuilder> 
         getSocialTelemetryFieldBuilder() {
       if (socialTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 29)) {
+          telemetryData_ = POGOProtos.Rpc.SocialTelemetry.getDefaultInstance();
+        }
         socialTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.SocialTelemetry, POGOProtos.Rpc.SocialTelemetry.Builder, POGOProtos.Rpc.SocialTelemetryOrBuilder>(
-                getSocialTelemetry(),
+                (POGOProtos.Rpc.SocialTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        socialTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 29;
+      onChanged();;
       return socialTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry checkEncounterInfoTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry, POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.Builder, POGOProtos.Rpc.CheckEncounterTrayInfoTelemetryOrBuilder> checkEncounterInfoTelemetryBuilder_;
     /**
@@ -8114,7 +9055,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the checkEncounterInfoTelemetry field is set.
      */
     public boolean hasCheckEncounterInfoTelemetry() {
-      return checkEncounterInfoTelemetryBuilder_ != null || checkEncounterInfoTelemetry_ != null;
+      return telemetryDataCase_ == 30;
     }
     /**
      * <code>.POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;</code>
@@ -8122,9 +9063,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry getCheckEncounterInfoTelemetry() {
       if (checkEncounterInfoTelemetryBuilder_ == null) {
-        return checkEncounterInfoTelemetry_ == null ? POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.getDefaultInstance() : checkEncounterInfoTelemetry_;
+        if (telemetryDataCase_ == 30) {
+          return (POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.getDefaultInstance();
       } else {
-        return checkEncounterInfoTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 30) {
+          return checkEncounterInfoTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8135,12 +9082,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        checkEncounterInfoTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         checkEncounterInfoTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 30;
       return this;
     }
     /**
@@ -8149,12 +9096,12 @@ private static final long serialVersionUID = 0L;
     public Builder setCheckEncounterInfoTelemetry(
         POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.Builder builderForValue) {
       if (checkEncounterInfoTelemetryBuilder_ == null) {
-        checkEncounterInfoTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         checkEncounterInfoTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 30;
       return this;
     }
     /**
@@ -8162,17 +9109,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeCheckEncounterInfoTelemetry(POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry value) {
       if (checkEncounterInfoTelemetryBuilder_ == null) {
-        if (checkEncounterInfoTelemetry_ != null) {
-          checkEncounterInfoTelemetry_ =
-            POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.newBuilder(checkEncounterInfoTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 30 &&
+            telemetryData_ != POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.newBuilder((POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          checkEncounterInfoTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        checkEncounterInfoTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 30) {
+          checkEncounterInfoTelemetryBuilder_.mergeFrom(value);
+        }
+        checkEncounterInfoTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 30;
       return this;
     }
     /**
@@ -8180,32 +9131,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearCheckEncounterInfoTelemetry() {
       if (checkEncounterInfoTelemetryBuilder_ == null) {
-        checkEncounterInfoTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 30) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        checkEncounterInfoTelemetry_ = null;
-        checkEncounterInfoTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 30) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        checkEncounterInfoTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;</code>
      */
     public POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.Builder getCheckEncounterInfoTelemetryBuilder() {
-      
-      onChanged();
       return getCheckEncounterInfoTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;</code>
      */
     public POGOProtos.Rpc.CheckEncounterTrayInfoTelemetryOrBuilder getCheckEncounterInfoTelemetryOrBuilder() {
-      if (checkEncounterInfoTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 30) && (checkEncounterInfoTelemetryBuilder_ != null)) {
         return checkEncounterInfoTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return checkEncounterInfoTelemetry_ == null ?
-            POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.getDefaultInstance() : checkEncounterInfoTelemetry_;
+        if (telemetryDataCase_ == 30) {
+          return (POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8215,17 +9171,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry, POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.Builder, POGOProtos.Rpc.CheckEncounterTrayInfoTelemetryOrBuilder> 
         getCheckEncounterInfoTelemetryFieldBuilder() {
       if (checkEncounterInfoTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 30)) {
+          telemetryData_ = POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.getDefaultInstance();
+        }
         checkEncounterInfoTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry, POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry.Builder, POGOProtos.Rpc.CheckEncounterTrayInfoTelemetryOrBuilder>(
-                getCheckEncounterInfoTelemetry(),
+                (POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        checkEncounterInfoTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 30;
+      onChanged();;
       return checkEncounterInfoTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.PokemonGoPlusTelemetry pokemonGoPlusTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PokemonGoPlusTelemetry, POGOProtos.Rpc.PokemonGoPlusTelemetry.Builder, POGOProtos.Rpc.PokemonGoPlusTelemetryOrBuilder> pokemonGoPlusTelemetryBuilder_;
     /**
@@ -8233,7 +9193,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the pokemonGoPlusTelemetry field is set.
      */
     public boolean hasPokemonGoPlusTelemetry() {
-      return pokemonGoPlusTelemetryBuilder_ != null || pokemonGoPlusTelemetry_ != null;
+      return telemetryDataCase_ == 31;
     }
     /**
      * <code>.POGOProtos.Rpc.PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;</code>
@@ -8241,9 +9201,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PokemonGoPlusTelemetry getPokemonGoPlusTelemetry() {
       if (pokemonGoPlusTelemetryBuilder_ == null) {
-        return pokemonGoPlusTelemetry_ == null ? POGOProtos.Rpc.PokemonGoPlusTelemetry.getDefaultInstance() : pokemonGoPlusTelemetry_;
+        if (telemetryDataCase_ == 31) {
+          return (POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PokemonGoPlusTelemetry.getDefaultInstance();
       } else {
-        return pokemonGoPlusTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 31) {
+          return pokemonGoPlusTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PokemonGoPlusTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8254,12 +9220,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        pokemonGoPlusTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         pokemonGoPlusTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 31;
       return this;
     }
     /**
@@ -8268,12 +9234,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPokemonGoPlusTelemetry(
         POGOProtos.Rpc.PokemonGoPlusTelemetry.Builder builderForValue) {
       if (pokemonGoPlusTelemetryBuilder_ == null) {
-        pokemonGoPlusTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         pokemonGoPlusTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 31;
       return this;
     }
     /**
@@ -8281,17 +9247,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePokemonGoPlusTelemetry(POGOProtos.Rpc.PokemonGoPlusTelemetry value) {
       if (pokemonGoPlusTelemetryBuilder_ == null) {
-        if (pokemonGoPlusTelemetry_ != null) {
-          pokemonGoPlusTelemetry_ =
-            POGOProtos.Rpc.PokemonGoPlusTelemetry.newBuilder(pokemonGoPlusTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 31 &&
+            telemetryData_ != POGOProtos.Rpc.PokemonGoPlusTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PokemonGoPlusTelemetry.newBuilder((POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          pokemonGoPlusTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        pokemonGoPlusTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 31) {
+          pokemonGoPlusTelemetryBuilder_.mergeFrom(value);
+        }
+        pokemonGoPlusTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 31;
       return this;
     }
     /**
@@ -8299,32 +9269,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPokemonGoPlusTelemetry() {
       if (pokemonGoPlusTelemetryBuilder_ == null) {
-        pokemonGoPlusTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 31) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        pokemonGoPlusTelemetry_ = null;
-        pokemonGoPlusTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 31) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        pokemonGoPlusTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;</code>
      */
     public POGOProtos.Rpc.PokemonGoPlusTelemetry.Builder getPokemonGoPlusTelemetryBuilder() {
-      
-      onChanged();
       return getPokemonGoPlusTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;</code>
      */
     public POGOProtos.Rpc.PokemonGoPlusTelemetryOrBuilder getPokemonGoPlusTelemetryOrBuilder() {
-      if (pokemonGoPlusTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 31) && (pokemonGoPlusTelemetryBuilder_ != null)) {
         return pokemonGoPlusTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return pokemonGoPlusTelemetry_ == null ?
-            POGOProtos.Rpc.PokemonGoPlusTelemetry.getDefaultInstance() : pokemonGoPlusTelemetry_;
+        if (telemetryDataCase_ == 31) {
+          return (POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PokemonGoPlusTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8334,17 +9309,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PokemonGoPlusTelemetry, POGOProtos.Rpc.PokemonGoPlusTelemetry.Builder, POGOProtos.Rpc.PokemonGoPlusTelemetryOrBuilder> 
         getPokemonGoPlusTelemetryFieldBuilder() {
       if (pokemonGoPlusTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 31)) {
+          telemetryData_ = POGOProtos.Rpc.PokemonGoPlusTelemetry.getDefaultInstance();
+        }
         pokemonGoPlusTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PokemonGoPlusTelemetry, POGOProtos.Rpc.PokemonGoPlusTelemetry.Builder, POGOProtos.Rpc.PokemonGoPlusTelemetryOrBuilder>(
-                getPokemonGoPlusTelemetry(),
+                (POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        pokemonGoPlusTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 31;
+      onChanged();;
       return pokemonGoPlusTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.RpcResponseTelemetry rpcTimingTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.RpcResponseTelemetry, POGOProtos.Rpc.RpcResponseTelemetry.Builder, POGOProtos.Rpc.RpcResponseTelemetryOrBuilder> rpcTimingTelemetryBuilder_;
     /**
@@ -8352,7 +9331,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the rpcTimingTelemetry field is set.
      */
     public boolean hasRpcTimingTelemetry() {
-      return rpcTimingTelemetryBuilder_ != null || rpcTimingTelemetry_ != null;
+      return telemetryDataCase_ == 32;
     }
     /**
      * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
@@ -8360,9 +9339,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.RpcResponseTelemetry getRpcTimingTelemetry() {
       if (rpcTimingTelemetryBuilder_ == null) {
-        return rpcTimingTelemetry_ == null ? POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance() : rpcTimingTelemetry_;
+        if (telemetryDataCase_ == 32) {
+          return (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
       } else {
-        return rpcTimingTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 32) {
+          return rpcTimingTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8373,12 +9358,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        rpcTimingTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         rpcTimingTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 32;
       return this;
     }
     /**
@@ -8387,12 +9372,12 @@ private static final long serialVersionUID = 0L;
     public Builder setRpcTimingTelemetry(
         POGOProtos.Rpc.RpcResponseTelemetry.Builder builderForValue) {
       if (rpcTimingTelemetryBuilder_ == null) {
-        rpcTimingTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         rpcTimingTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 32;
       return this;
     }
     /**
@@ -8400,17 +9385,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeRpcTimingTelemetry(POGOProtos.Rpc.RpcResponseTelemetry value) {
       if (rpcTimingTelemetryBuilder_ == null) {
-        if (rpcTimingTelemetry_ != null) {
-          rpcTimingTelemetry_ =
-            POGOProtos.Rpc.RpcResponseTelemetry.newBuilder(rpcTimingTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 32 &&
+            telemetryData_ != POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.RpcResponseTelemetry.newBuilder((POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          rpcTimingTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        rpcTimingTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 32) {
+          rpcTimingTelemetryBuilder_.mergeFrom(value);
+        }
+        rpcTimingTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 32;
       return this;
     }
     /**
@@ -8418,32 +9407,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearRpcTimingTelemetry() {
       if (rpcTimingTelemetryBuilder_ == null) {
-        rpcTimingTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 32) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        rpcTimingTelemetry_ = null;
-        rpcTimingTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 32) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        rpcTimingTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      */
     public POGOProtos.Rpc.RpcResponseTelemetry.Builder getRpcTimingTelemetryBuilder() {
-      
-      onChanged();
       return getRpcTimingTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      */
     public POGOProtos.Rpc.RpcResponseTelemetryOrBuilder getRpcTimingTelemetryOrBuilder() {
-      if (rpcTimingTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 32) && (rpcTimingTelemetryBuilder_ != null)) {
         return rpcTimingTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return rpcTimingTelemetry_ == null ?
-            POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance() : rpcTimingTelemetry_;
+        if (telemetryDataCase_ == 32) {
+          return (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8453,17 +9447,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.RpcResponseTelemetry, POGOProtos.Rpc.RpcResponseTelemetry.Builder, POGOProtos.Rpc.RpcResponseTelemetryOrBuilder> 
         getRpcTimingTelemetryFieldBuilder() {
       if (rpcTimingTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 32)) {
+          telemetryData_ = POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
+        }
         rpcTimingTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.RpcResponseTelemetry, POGOProtos.Rpc.RpcResponseTelemetry.Builder, POGOProtos.Rpc.RpcResponseTelemetryOrBuilder>(
-                getRpcTimingTelemetry(),
+                (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        rpcTimingTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 32;
+      onChanged();;
       return rpcTimingTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.SocialGiftCountTelemetry socialGiftCountTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.SocialGiftCountTelemetry, POGOProtos.Rpc.SocialGiftCountTelemetry.Builder, POGOProtos.Rpc.SocialGiftCountTelemetryOrBuilder> socialGiftCountTelemetryBuilder_;
     /**
@@ -8471,7 +9469,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the socialGiftCountTelemetry field is set.
      */
     public boolean hasSocialGiftCountTelemetry() {
-      return socialGiftCountTelemetryBuilder_ != null || socialGiftCountTelemetry_ != null;
+      return telemetryDataCase_ == 33;
     }
     /**
      * <code>.POGOProtos.Rpc.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
@@ -8479,9 +9477,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.SocialGiftCountTelemetry getSocialGiftCountTelemetry() {
       if (socialGiftCountTelemetryBuilder_ == null) {
-        return socialGiftCountTelemetry_ == null ? POGOProtos.Rpc.SocialGiftCountTelemetry.getDefaultInstance() : socialGiftCountTelemetry_;
+        if (telemetryDataCase_ == 33) {
+          return (POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.SocialGiftCountTelemetry.getDefaultInstance();
       } else {
-        return socialGiftCountTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 33) {
+          return socialGiftCountTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.SocialGiftCountTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8492,12 +9496,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        socialGiftCountTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         socialGiftCountTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 33;
       return this;
     }
     /**
@@ -8506,12 +9510,12 @@ private static final long serialVersionUID = 0L;
     public Builder setSocialGiftCountTelemetry(
         POGOProtos.Rpc.SocialGiftCountTelemetry.Builder builderForValue) {
       if (socialGiftCountTelemetryBuilder_ == null) {
-        socialGiftCountTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         socialGiftCountTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 33;
       return this;
     }
     /**
@@ -8519,17 +9523,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeSocialGiftCountTelemetry(POGOProtos.Rpc.SocialGiftCountTelemetry value) {
       if (socialGiftCountTelemetryBuilder_ == null) {
-        if (socialGiftCountTelemetry_ != null) {
-          socialGiftCountTelemetry_ =
-            POGOProtos.Rpc.SocialGiftCountTelemetry.newBuilder(socialGiftCountTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 33 &&
+            telemetryData_ != POGOProtos.Rpc.SocialGiftCountTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.SocialGiftCountTelemetry.newBuilder((POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          socialGiftCountTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        socialGiftCountTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 33) {
+          socialGiftCountTelemetryBuilder_.mergeFrom(value);
+        }
+        socialGiftCountTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 33;
       return this;
     }
     /**
@@ -8537,32 +9545,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearSocialGiftCountTelemetry() {
       if (socialGiftCountTelemetryBuilder_ == null) {
-        socialGiftCountTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 33) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        socialGiftCountTelemetry_ = null;
-        socialGiftCountTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 33) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        socialGiftCountTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
      */
     public POGOProtos.Rpc.SocialGiftCountTelemetry.Builder getSocialGiftCountTelemetryBuilder() {
-      
-      onChanged();
       return getSocialGiftCountTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
      */
     public POGOProtos.Rpc.SocialGiftCountTelemetryOrBuilder getSocialGiftCountTelemetryOrBuilder() {
-      if (socialGiftCountTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 33) && (socialGiftCountTelemetryBuilder_ != null)) {
         return socialGiftCountTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return socialGiftCountTelemetry_ == null ?
-            POGOProtos.Rpc.SocialGiftCountTelemetry.getDefaultInstance() : socialGiftCountTelemetry_;
+        if (telemetryDataCase_ == 33) {
+          return (POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.SocialGiftCountTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8572,17 +9585,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.SocialGiftCountTelemetry, POGOProtos.Rpc.SocialGiftCountTelemetry.Builder, POGOProtos.Rpc.SocialGiftCountTelemetryOrBuilder> 
         getSocialGiftCountTelemetryFieldBuilder() {
       if (socialGiftCountTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 33)) {
+          telemetryData_ = POGOProtos.Rpc.SocialGiftCountTelemetry.getDefaultInstance();
+        }
         socialGiftCountTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.SocialGiftCountTelemetry, POGOProtos.Rpc.SocialGiftCountTelemetry.Builder, POGOProtos.Rpc.SocialGiftCountTelemetryOrBuilder>(
-                getSocialGiftCountTelemetry(),
+                (POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        socialGiftCountTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 33;
+      onChanged();;
       return socialGiftCountTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.AssetBundleDownloadTelemetry assetBundleTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.AssetBundleDownloadTelemetry, POGOProtos.Rpc.AssetBundleDownloadTelemetry.Builder, POGOProtos.Rpc.AssetBundleDownloadTelemetryOrBuilder> assetBundleTelemetryBuilder_;
     /**
@@ -8590,7 +9607,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the assetBundleTelemetry field is set.
      */
     public boolean hasAssetBundleTelemetry() {
-      return assetBundleTelemetryBuilder_ != null || assetBundleTelemetry_ != null;
+      return telemetryDataCase_ == 34;
     }
     /**
      * <code>.POGOProtos.Rpc.AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;</code>
@@ -8598,9 +9615,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.AssetBundleDownloadTelemetry getAssetBundleTelemetry() {
       if (assetBundleTelemetryBuilder_ == null) {
-        return assetBundleTelemetry_ == null ? POGOProtos.Rpc.AssetBundleDownloadTelemetry.getDefaultInstance() : assetBundleTelemetry_;
+        if (telemetryDataCase_ == 34) {
+          return (POGOProtos.Rpc.AssetBundleDownloadTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.AssetBundleDownloadTelemetry.getDefaultInstance();
       } else {
-        return assetBundleTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 34) {
+          return assetBundleTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.AssetBundleDownloadTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8611,12 +9634,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        assetBundleTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         assetBundleTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 34;
       return this;
     }
     /**
@@ -8625,12 +9648,12 @@ private static final long serialVersionUID = 0L;
     public Builder setAssetBundleTelemetry(
         POGOProtos.Rpc.AssetBundleDownloadTelemetry.Builder builderForValue) {
       if (assetBundleTelemetryBuilder_ == null) {
-        assetBundleTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         assetBundleTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 34;
       return this;
     }
     /**
@@ -8638,17 +9661,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeAssetBundleTelemetry(POGOProtos.Rpc.AssetBundleDownloadTelemetry value) {
       if (assetBundleTelemetryBuilder_ == null) {
-        if (assetBundleTelemetry_ != null) {
-          assetBundleTelemetry_ =
-            POGOProtos.Rpc.AssetBundleDownloadTelemetry.newBuilder(assetBundleTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 34 &&
+            telemetryData_ != POGOProtos.Rpc.AssetBundleDownloadTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.AssetBundleDownloadTelemetry.newBuilder((POGOProtos.Rpc.AssetBundleDownloadTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          assetBundleTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        assetBundleTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 34) {
+          assetBundleTelemetryBuilder_.mergeFrom(value);
+        }
+        assetBundleTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 34;
       return this;
     }
     /**
@@ -8656,32 +9683,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearAssetBundleTelemetry() {
       if (assetBundleTelemetryBuilder_ == null) {
-        assetBundleTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 34) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        assetBundleTelemetry_ = null;
-        assetBundleTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 34) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        assetBundleTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;</code>
      */
     public POGOProtos.Rpc.AssetBundleDownloadTelemetry.Builder getAssetBundleTelemetryBuilder() {
-      
-      onChanged();
       return getAssetBundleTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;</code>
      */
     public POGOProtos.Rpc.AssetBundleDownloadTelemetryOrBuilder getAssetBundleTelemetryOrBuilder() {
-      if (assetBundleTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 34) && (assetBundleTelemetryBuilder_ != null)) {
         return assetBundleTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return assetBundleTelemetry_ == null ?
-            POGOProtos.Rpc.AssetBundleDownloadTelemetry.getDefaultInstance() : assetBundleTelemetry_;
+        if (telemetryDataCase_ == 34) {
+          return (POGOProtos.Rpc.AssetBundleDownloadTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.AssetBundleDownloadTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8691,17 +9723,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.AssetBundleDownloadTelemetry, POGOProtos.Rpc.AssetBundleDownloadTelemetry.Builder, POGOProtos.Rpc.AssetBundleDownloadTelemetryOrBuilder> 
         getAssetBundleTelemetryFieldBuilder() {
       if (assetBundleTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 34)) {
+          telemetryData_ = POGOProtos.Rpc.AssetBundleDownloadTelemetry.getDefaultInstance();
+        }
         assetBundleTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.AssetBundleDownloadTelemetry, POGOProtos.Rpc.AssetBundleDownloadTelemetry.Builder, POGOProtos.Rpc.AssetBundleDownloadTelemetryOrBuilder>(
-                getAssetBundleTelemetry(),
+                (POGOProtos.Rpc.AssetBundleDownloadTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        assetBundleTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 34;
+      onChanged();;
       return assetBundleTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.AssetPoiDownloadTelemetry assetPoiDownloadTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.AssetPoiDownloadTelemetry, POGOProtos.Rpc.AssetPoiDownloadTelemetry.Builder, POGOProtos.Rpc.AssetPoiDownloadTelemetryOrBuilder> assetPoiDownloadTelemetryBuilder_;
     /**
@@ -8709,7 +9745,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the assetPoiDownloadTelemetry field is set.
      */
     public boolean hasAssetPoiDownloadTelemetry() {
-      return assetPoiDownloadTelemetryBuilder_ != null || assetPoiDownloadTelemetry_ != null;
+      return telemetryDataCase_ == 35;
     }
     /**
      * <code>.POGOProtos.Rpc.AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;</code>
@@ -8717,9 +9753,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.AssetPoiDownloadTelemetry getAssetPoiDownloadTelemetry() {
       if (assetPoiDownloadTelemetryBuilder_ == null) {
-        return assetPoiDownloadTelemetry_ == null ? POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance() : assetPoiDownloadTelemetry_;
+        if (telemetryDataCase_ == 35) {
+          return (POGOProtos.Rpc.AssetPoiDownloadTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance();
       } else {
-        return assetPoiDownloadTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 35) {
+          return assetPoiDownloadTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8730,12 +9772,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        assetPoiDownloadTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         assetPoiDownloadTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 35;
       return this;
     }
     /**
@@ -8744,12 +9786,12 @@ private static final long serialVersionUID = 0L;
     public Builder setAssetPoiDownloadTelemetry(
         POGOProtos.Rpc.AssetPoiDownloadTelemetry.Builder builderForValue) {
       if (assetPoiDownloadTelemetryBuilder_ == null) {
-        assetPoiDownloadTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         assetPoiDownloadTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 35;
       return this;
     }
     /**
@@ -8757,17 +9799,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeAssetPoiDownloadTelemetry(POGOProtos.Rpc.AssetPoiDownloadTelemetry value) {
       if (assetPoiDownloadTelemetryBuilder_ == null) {
-        if (assetPoiDownloadTelemetry_ != null) {
-          assetPoiDownloadTelemetry_ =
-            POGOProtos.Rpc.AssetPoiDownloadTelemetry.newBuilder(assetPoiDownloadTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 35 &&
+            telemetryData_ != POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.AssetPoiDownloadTelemetry.newBuilder((POGOProtos.Rpc.AssetPoiDownloadTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          assetPoiDownloadTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        assetPoiDownloadTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 35) {
+          assetPoiDownloadTelemetryBuilder_.mergeFrom(value);
+        }
+        assetPoiDownloadTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 35;
       return this;
     }
     /**
@@ -8775,32 +9821,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearAssetPoiDownloadTelemetry() {
       if (assetPoiDownloadTelemetryBuilder_ == null) {
-        assetPoiDownloadTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 35) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        assetPoiDownloadTelemetry_ = null;
-        assetPoiDownloadTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 35) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        assetPoiDownloadTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;</code>
      */
     public POGOProtos.Rpc.AssetPoiDownloadTelemetry.Builder getAssetPoiDownloadTelemetryBuilder() {
-      
-      onChanged();
       return getAssetPoiDownloadTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;</code>
      */
     public POGOProtos.Rpc.AssetPoiDownloadTelemetryOrBuilder getAssetPoiDownloadTelemetryOrBuilder() {
-      if (assetPoiDownloadTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 35) && (assetPoiDownloadTelemetryBuilder_ != null)) {
         return assetPoiDownloadTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return assetPoiDownloadTelemetry_ == null ?
-            POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance() : assetPoiDownloadTelemetry_;
+        if (telemetryDataCase_ == 35) {
+          return (POGOProtos.Rpc.AssetPoiDownloadTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8810,17 +9861,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.AssetPoiDownloadTelemetry, POGOProtos.Rpc.AssetPoiDownloadTelemetry.Builder, POGOProtos.Rpc.AssetPoiDownloadTelemetryOrBuilder> 
         getAssetPoiDownloadTelemetryFieldBuilder() {
       if (assetPoiDownloadTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 35)) {
+          telemetryData_ = POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance();
+        }
         assetPoiDownloadTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.AssetPoiDownloadTelemetry, POGOProtos.Rpc.AssetPoiDownloadTelemetry.Builder, POGOProtos.Rpc.AssetPoiDownloadTelemetryOrBuilder>(
-                getAssetPoiDownloadTelemetry(),
+                (POGOProtos.Rpc.AssetPoiDownloadTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        assetPoiDownloadTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 35;
+      onChanged();;
       return assetPoiDownloadTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.AssetStreamDownloadTelemetry assetStreamDownloadTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.AssetStreamDownloadTelemetry, POGOProtos.Rpc.AssetStreamDownloadTelemetry.Builder, POGOProtos.Rpc.AssetStreamDownloadTelemetryOrBuilder> assetStreamDownloadTelemetryBuilder_;
     /**
@@ -8828,7 +9883,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the assetStreamDownloadTelemetry field is set.
      */
     public boolean hasAssetStreamDownloadTelemetry() {
-      return assetStreamDownloadTelemetryBuilder_ != null || assetStreamDownloadTelemetry_ != null;
+      return telemetryDataCase_ == 36;
     }
     /**
      * <code>.POGOProtos.Rpc.AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;</code>
@@ -8836,9 +9891,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.AssetStreamDownloadTelemetry getAssetStreamDownloadTelemetry() {
       if (assetStreamDownloadTelemetryBuilder_ == null) {
-        return assetStreamDownloadTelemetry_ == null ? POGOProtos.Rpc.AssetStreamDownloadTelemetry.getDefaultInstance() : assetStreamDownloadTelemetry_;
+        if (telemetryDataCase_ == 36) {
+          return (POGOProtos.Rpc.AssetStreamDownloadTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.AssetStreamDownloadTelemetry.getDefaultInstance();
       } else {
-        return assetStreamDownloadTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 36) {
+          return assetStreamDownloadTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.AssetStreamDownloadTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8849,12 +9910,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        assetStreamDownloadTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         assetStreamDownloadTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 36;
       return this;
     }
     /**
@@ -8863,12 +9924,12 @@ private static final long serialVersionUID = 0L;
     public Builder setAssetStreamDownloadTelemetry(
         POGOProtos.Rpc.AssetStreamDownloadTelemetry.Builder builderForValue) {
       if (assetStreamDownloadTelemetryBuilder_ == null) {
-        assetStreamDownloadTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         assetStreamDownloadTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 36;
       return this;
     }
     /**
@@ -8876,17 +9937,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeAssetStreamDownloadTelemetry(POGOProtos.Rpc.AssetStreamDownloadTelemetry value) {
       if (assetStreamDownloadTelemetryBuilder_ == null) {
-        if (assetStreamDownloadTelemetry_ != null) {
-          assetStreamDownloadTelemetry_ =
-            POGOProtos.Rpc.AssetStreamDownloadTelemetry.newBuilder(assetStreamDownloadTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 36 &&
+            telemetryData_ != POGOProtos.Rpc.AssetStreamDownloadTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.AssetStreamDownloadTelemetry.newBuilder((POGOProtos.Rpc.AssetStreamDownloadTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          assetStreamDownloadTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        assetStreamDownloadTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 36) {
+          assetStreamDownloadTelemetryBuilder_.mergeFrom(value);
+        }
+        assetStreamDownloadTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 36;
       return this;
     }
     /**
@@ -8894,32 +9959,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearAssetStreamDownloadTelemetry() {
       if (assetStreamDownloadTelemetryBuilder_ == null) {
-        assetStreamDownloadTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 36) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        assetStreamDownloadTelemetry_ = null;
-        assetStreamDownloadTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 36) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        assetStreamDownloadTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;</code>
      */
     public POGOProtos.Rpc.AssetStreamDownloadTelemetry.Builder getAssetStreamDownloadTelemetryBuilder() {
-      
-      onChanged();
       return getAssetStreamDownloadTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;</code>
      */
     public POGOProtos.Rpc.AssetStreamDownloadTelemetryOrBuilder getAssetStreamDownloadTelemetryOrBuilder() {
-      if (assetStreamDownloadTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 36) && (assetStreamDownloadTelemetryBuilder_ != null)) {
         return assetStreamDownloadTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return assetStreamDownloadTelemetry_ == null ?
-            POGOProtos.Rpc.AssetStreamDownloadTelemetry.getDefaultInstance() : assetStreamDownloadTelemetry_;
+        if (telemetryDataCase_ == 36) {
+          return (POGOProtos.Rpc.AssetStreamDownloadTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.AssetStreamDownloadTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8929,17 +9999,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.AssetStreamDownloadTelemetry, POGOProtos.Rpc.AssetStreamDownloadTelemetry.Builder, POGOProtos.Rpc.AssetStreamDownloadTelemetryOrBuilder> 
         getAssetStreamDownloadTelemetryFieldBuilder() {
       if (assetStreamDownloadTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 36)) {
+          telemetryData_ = POGOProtos.Rpc.AssetStreamDownloadTelemetry.getDefaultInstance();
+        }
         assetStreamDownloadTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.AssetStreamDownloadTelemetry, POGOProtos.Rpc.AssetStreamDownloadTelemetry.Builder, POGOProtos.Rpc.AssetStreamDownloadTelemetryOrBuilder>(
-                getAssetStreamDownloadTelemetry(),
+                (POGOProtos.Rpc.AssetStreamDownloadTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        assetStreamDownloadTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 36;
+      onChanged();;
       return assetStreamDownloadTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.AssetStreamCacheCulledTelemetry assetStreamCacheCulledTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.AssetStreamCacheCulledTelemetry, POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.Builder, POGOProtos.Rpc.AssetStreamCacheCulledTelemetryOrBuilder> assetStreamCacheCulledTelemetryBuilder_;
     /**
@@ -8947,7 +10021,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the assetStreamCacheCulledTelemetry field is set.
      */
     public boolean hasAssetStreamCacheCulledTelemetry() {
-      return assetStreamCacheCulledTelemetryBuilder_ != null || assetStreamCacheCulledTelemetry_ != null;
+      return telemetryDataCase_ == 37;
     }
     /**
      * <code>.POGOProtos.Rpc.AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;</code>
@@ -8955,9 +10029,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.AssetStreamCacheCulledTelemetry getAssetStreamCacheCulledTelemetry() {
       if (assetStreamCacheCulledTelemetryBuilder_ == null) {
-        return assetStreamCacheCulledTelemetry_ == null ? POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance() : assetStreamCacheCulledTelemetry_;
+        if (telemetryDataCase_ == 37) {
+          return (POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance();
       } else {
-        return assetStreamCacheCulledTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 37) {
+          return assetStreamCacheCulledTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -8968,12 +10048,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        assetStreamCacheCulledTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         assetStreamCacheCulledTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 37;
       return this;
     }
     /**
@@ -8982,12 +10062,12 @@ private static final long serialVersionUID = 0L;
     public Builder setAssetStreamCacheCulledTelemetry(
         POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.Builder builderForValue) {
       if (assetStreamCacheCulledTelemetryBuilder_ == null) {
-        assetStreamCacheCulledTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         assetStreamCacheCulledTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 37;
       return this;
     }
     /**
@@ -8995,17 +10075,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeAssetStreamCacheCulledTelemetry(POGOProtos.Rpc.AssetStreamCacheCulledTelemetry value) {
       if (assetStreamCacheCulledTelemetryBuilder_ == null) {
-        if (assetStreamCacheCulledTelemetry_ != null) {
-          assetStreamCacheCulledTelemetry_ =
-            POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.newBuilder(assetStreamCacheCulledTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 37 &&
+            telemetryData_ != POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.newBuilder((POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          assetStreamCacheCulledTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        assetStreamCacheCulledTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 37) {
+          assetStreamCacheCulledTelemetryBuilder_.mergeFrom(value);
+        }
+        assetStreamCacheCulledTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 37;
       return this;
     }
     /**
@@ -9013,32 +10097,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearAssetStreamCacheCulledTelemetry() {
       if (assetStreamCacheCulledTelemetryBuilder_ == null) {
-        assetStreamCacheCulledTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 37) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        assetStreamCacheCulledTelemetry_ = null;
-        assetStreamCacheCulledTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 37) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        assetStreamCacheCulledTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;</code>
      */
     public POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.Builder getAssetStreamCacheCulledTelemetryBuilder() {
-      
-      onChanged();
       return getAssetStreamCacheCulledTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;</code>
      */
     public POGOProtos.Rpc.AssetStreamCacheCulledTelemetryOrBuilder getAssetStreamCacheCulledTelemetryOrBuilder() {
-      if (assetStreamCacheCulledTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 37) && (assetStreamCacheCulledTelemetryBuilder_ != null)) {
         return assetStreamCacheCulledTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return assetStreamCacheCulledTelemetry_ == null ?
-            POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance() : assetStreamCacheCulledTelemetry_;
+        if (telemetryDataCase_ == 37) {
+          return (POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9048,17 +10137,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.AssetStreamCacheCulledTelemetry, POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.Builder, POGOProtos.Rpc.AssetStreamCacheCulledTelemetryOrBuilder> 
         getAssetStreamCacheCulledTelemetryFieldBuilder() {
       if (assetStreamCacheCulledTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 37)) {
+          telemetryData_ = POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance();
+        }
         assetStreamCacheCulledTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.AssetStreamCacheCulledTelemetry, POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.Builder, POGOProtos.Rpc.AssetStreamCacheCulledTelemetryOrBuilder>(
-                getAssetStreamCacheCulledTelemetry(),
+                (POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        assetStreamCacheCulledTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 37;
+      onChanged();;
       return assetStreamCacheCulledTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.RpcSocketResponseTelemetry rpcSocketTimingTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.RpcSocketResponseTelemetry, POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder, POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder> rpcSocketTimingTelemetryBuilder_;
     /**
@@ -9066,7 +10159,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the rpcSocketTimingTelemetry field is set.
      */
     public boolean hasRpcSocketTimingTelemetry() {
-      return rpcSocketTimingTelemetryBuilder_ != null || rpcSocketTimingTelemetry_ != null;
+      return telemetryDataCase_ == 38;
     }
     /**
      * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
@@ -9074,9 +10167,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.RpcSocketResponseTelemetry getRpcSocketTimingTelemetry() {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
-        return rpcSocketTimingTelemetry_ == null ? POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance() : rpcSocketTimingTelemetry_;
+        if (telemetryDataCase_ == 38) {
+          return (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
       } else {
-        return rpcSocketTimingTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 38) {
+          return rpcSocketTimingTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9087,12 +10186,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        rpcSocketTimingTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         rpcSocketTimingTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 38;
       return this;
     }
     /**
@@ -9101,12 +10200,12 @@ private static final long serialVersionUID = 0L;
     public Builder setRpcSocketTimingTelemetry(
         POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder builderForValue) {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
-        rpcSocketTimingTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         rpcSocketTimingTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 38;
       return this;
     }
     /**
@@ -9114,17 +10213,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeRpcSocketTimingTelemetry(POGOProtos.Rpc.RpcSocketResponseTelemetry value) {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
-        if (rpcSocketTimingTelemetry_ != null) {
-          rpcSocketTimingTelemetry_ =
-            POGOProtos.Rpc.RpcSocketResponseTelemetry.newBuilder(rpcSocketTimingTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 38 &&
+            telemetryData_ != POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.RpcSocketResponseTelemetry.newBuilder((POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          rpcSocketTimingTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        rpcSocketTimingTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 38) {
+          rpcSocketTimingTelemetryBuilder_.mergeFrom(value);
+        }
+        rpcSocketTimingTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 38;
       return this;
     }
     /**
@@ -9132,32 +10235,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearRpcSocketTimingTelemetry() {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
-        rpcSocketTimingTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 38) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        rpcSocketTimingTelemetry_ = null;
-        rpcSocketTimingTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 38) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        rpcSocketTimingTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      */
     public POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder getRpcSocketTimingTelemetryBuilder() {
-      
-      onChanged();
       return getRpcSocketTimingTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      */
     public POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder getRpcSocketTimingTelemetryOrBuilder() {
-      if (rpcSocketTimingTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 38) && (rpcSocketTimingTelemetryBuilder_ != null)) {
         return rpcSocketTimingTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return rpcSocketTimingTelemetry_ == null ?
-            POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance() : rpcSocketTimingTelemetry_;
+        if (telemetryDataCase_ == 38) {
+          return (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9167,17 +10275,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.RpcSocketResponseTelemetry, POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder, POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder> 
         getRpcSocketTimingTelemetryFieldBuilder() {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 38)) {
+          telemetryData_ = POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
+        }
         rpcSocketTimingTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.RpcSocketResponseTelemetry, POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder, POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder>(
-                getRpcSocketTimingTelemetry(),
+                (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        rpcSocketTimingTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 38;
+      onChanged();;
       return rpcSocketTimingTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.PermissionsFlowTelemetry permissionsFlow_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PermissionsFlowTelemetry, POGOProtos.Rpc.PermissionsFlowTelemetry.Builder, POGOProtos.Rpc.PermissionsFlowTelemetryOrBuilder> permissionsFlowBuilder_;
     /**
@@ -9185,7 +10297,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the permissionsFlow field is set.
      */
     public boolean hasPermissionsFlow() {
-      return permissionsFlowBuilder_ != null || permissionsFlow_ != null;
+      return telemetryDataCase_ == 39;
     }
     /**
      * <code>.POGOProtos.Rpc.PermissionsFlowTelemetry permissions_flow = 39;</code>
@@ -9193,9 +10305,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PermissionsFlowTelemetry getPermissionsFlow() {
       if (permissionsFlowBuilder_ == null) {
-        return permissionsFlow_ == null ? POGOProtos.Rpc.PermissionsFlowTelemetry.getDefaultInstance() : permissionsFlow_;
+        if (telemetryDataCase_ == 39) {
+          return (POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PermissionsFlowTelemetry.getDefaultInstance();
       } else {
-        return permissionsFlowBuilder_.getMessage();
+        if (telemetryDataCase_ == 39) {
+          return permissionsFlowBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PermissionsFlowTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9206,12 +10324,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        permissionsFlow_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         permissionsFlowBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 39;
       return this;
     }
     /**
@@ -9220,12 +10338,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPermissionsFlow(
         POGOProtos.Rpc.PermissionsFlowTelemetry.Builder builderForValue) {
       if (permissionsFlowBuilder_ == null) {
-        permissionsFlow_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         permissionsFlowBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 39;
       return this;
     }
     /**
@@ -9233,17 +10351,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePermissionsFlow(POGOProtos.Rpc.PermissionsFlowTelemetry value) {
       if (permissionsFlowBuilder_ == null) {
-        if (permissionsFlow_ != null) {
-          permissionsFlow_ =
-            POGOProtos.Rpc.PermissionsFlowTelemetry.newBuilder(permissionsFlow_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 39 &&
+            telemetryData_ != POGOProtos.Rpc.PermissionsFlowTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PermissionsFlowTelemetry.newBuilder((POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          permissionsFlow_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        permissionsFlowBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 39) {
+          permissionsFlowBuilder_.mergeFrom(value);
+        }
+        permissionsFlowBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 39;
       return this;
     }
     /**
@@ -9251,32 +10373,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPermissionsFlow() {
       if (permissionsFlowBuilder_ == null) {
-        permissionsFlow_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 39) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        permissionsFlow_ = null;
-        permissionsFlowBuilder_ = null;
+        if (telemetryDataCase_ == 39) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        permissionsFlowBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PermissionsFlowTelemetry permissions_flow = 39;</code>
      */
     public POGOProtos.Rpc.PermissionsFlowTelemetry.Builder getPermissionsFlowBuilder() {
-      
-      onChanged();
       return getPermissionsFlowFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PermissionsFlowTelemetry permissions_flow = 39;</code>
      */
     public POGOProtos.Rpc.PermissionsFlowTelemetryOrBuilder getPermissionsFlowOrBuilder() {
-      if (permissionsFlowBuilder_ != null) {
+      if ((telemetryDataCase_ == 39) && (permissionsFlowBuilder_ != null)) {
         return permissionsFlowBuilder_.getMessageOrBuilder();
       } else {
-        return permissionsFlow_ == null ?
-            POGOProtos.Rpc.PermissionsFlowTelemetry.getDefaultInstance() : permissionsFlow_;
+        if (telemetryDataCase_ == 39) {
+          return (POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PermissionsFlowTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9286,17 +10413,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PermissionsFlowTelemetry, POGOProtos.Rpc.PermissionsFlowTelemetry.Builder, POGOProtos.Rpc.PermissionsFlowTelemetryOrBuilder> 
         getPermissionsFlowFieldBuilder() {
       if (permissionsFlowBuilder_ == null) {
+        if (!(telemetryDataCase_ == 39)) {
+          telemetryData_ = POGOProtos.Rpc.PermissionsFlowTelemetry.getDefaultInstance();
+        }
         permissionsFlowBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PermissionsFlowTelemetry, POGOProtos.Rpc.PermissionsFlowTelemetry.Builder, POGOProtos.Rpc.PermissionsFlowTelemetryOrBuilder>(
-                getPermissionsFlow(),
+                (POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        permissionsFlow_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 39;
+      onChanged();;
       return permissionsFlowBuilder_;
     }
 
-    private POGOProtos.Rpc.DeviceServiceToggleTelemetry deviceServiceToggle_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.DeviceServiceToggleTelemetry, POGOProtos.Rpc.DeviceServiceToggleTelemetry.Builder, POGOProtos.Rpc.DeviceServiceToggleTelemetryOrBuilder> deviceServiceToggleBuilder_;
     /**
@@ -9304,7 +10435,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the deviceServiceToggle field is set.
      */
     public boolean hasDeviceServiceToggle() {
-      return deviceServiceToggleBuilder_ != null || deviceServiceToggle_ != null;
+      return telemetryDataCase_ == 40;
     }
     /**
      * <code>.POGOProtos.Rpc.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
@@ -9312,9 +10443,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.DeviceServiceToggleTelemetry getDeviceServiceToggle() {
       if (deviceServiceToggleBuilder_ == null) {
-        return deviceServiceToggle_ == null ? POGOProtos.Rpc.DeviceServiceToggleTelemetry.getDefaultInstance() : deviceServiceToggle_;
+        if (telemetryDataCase_ == 40) {
+          return (POGOProtos.Rpc.DeviceServiceToggleTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.DeviceServiceToggleTelemetry.getDefaultInstance();
       } else {
-        return deviceServiceToggleBuilder_.getMessage();
+        if (telemetryDataCase_ == 40) {
+          return deviceServiceToggleBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.DeviceServiceToggleTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9325,12 +10462,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        deviceServiceToggle_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         deviceServiceToggleBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 40;
       return this;
     }
     /**
@@ -9339,12 +10476,12 @@ private static final long serialVersionUID = 0L;
     public Builder setDeviceServiceToggle(
         POGOProtos.Rpc.DeviceServiceToggleTelemetry.Builder builderForValue) {
       if (deviceServiceToggleBuilder_ == null) {
-        deviceServiceToggle_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         deviceServiceToggleBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 40;
       return this;
     }
     /**
@@ -9352,17 +10489,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeDeviceServiceToggle(POGOProtos.Rpc.DeviceServiceToggleTelemetry value) {
       if (deviceServiceToggleBuilder_ == null) {
-        if (deviceServiceToggle_ != null) {
-          deviceServiceToggle_ =
-            POGOProtos.Rpc.DeviceServiceToggleTelemetry.newBuilder(deviceServiceToggle_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 40 &&
+            telemetryData_ != POGOProtos.Rpc.DeviceServiceToggleTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.DeviceServiceToggleTelemetry.newBuilder((POGOProtos.Rpc.DeviceServiceToggleTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          deviceServiceToggle_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        deviceServiceToggleBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 40) {
+          deviceServiceToggleBuilder_.mergeFrom(value);
+        }
+        deviceServiceToggleBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 40;
       return this;
     }
     /**
@@ -9370,32 +10511,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearDeviceServiceToggle() {
       if (deviceServiceToggleBuilder_ == null) {
-        deviceServiceToggle_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 40) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        deviceServiceToggle_ = null;
-        deviceServiceToggleBuilder_ = null;
+        if (telemetryDataCase_ == 40) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        deviceServiceToggleBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
      */
     public POGOProtos.Rpc.DeviceServiceToggleTelemetry.Builder getDeviceServiceToggleBuilder() {
-      
-      onChanged();
       return getDeviceServiceToggleFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
      */
     public POGOProtos.Rpc.DeviceServiceToggleTelemetryOrBuilder getDeviceServiceToggleOrBuilder() {
-      if (deviceServiceToggleBuilder_ != null) {
+      if ((telemetryDataCase_ == 40) && (deviceServiceToggleBuilder_ != null)) {
         return deviceServiceToggleBuilder_.getMessageOrBuilder();
       } else {
-        return deviceServiceToggle_ == null ?
-            POGOProtos.Rpc.DeviceServiceToggleTelemetry.getDefaultInstance() : deviceServiceToggle_;
+        if (telemetryDataCase_ == 40) {
+          return (POGOProtos.Rpc.DeviceServiceToggleTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.DeviceServiceToggleTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9405,17 +10551,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.DeviceServiceToggleTelemetry, POGOProtos.Rpc.DeviceServiceToggleTelemetry.Builder, POGOProtos.Rpc.DeviceServiceToggleTelemetryOrBuilder> 
         getDeviceServiceToggleFieldBuilder() {
       if (deviceServiceToggleBuilder_ == null) {
+        if (!(telemetryDataCase_ == 40)) {
+          telemetryData_ = POGOProtos.Rpc.DeviceServiceToggleTelemetry.getDefaultInstance();
+        }
         deviceServiceToggleBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.DeviceServiceToggleTelemetry, POGOProtos.Rpc.DeviceServiceToggleTelemetry.Builder, POGOProtos.Rpc.DeviceServiceToggleTelemetryOrBuilder>(
-                getDeviceServiceToggle(),
+                (POGOProtos.Rpc.DeviceServiceToggleTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        deviceServiceToggle_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 40;
+      onChanged();;
       return deviceServiceToggleBuilder_;
     }
 
-    private POGOProtos.Rpc.BootTelemetry bootTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BootTelemetry, POGOProtos.Rpc.BootTelemetry.Builder, POGOProtos.Rpc.BootTelemetryOrBuilder> bootTelemetryBuilder_;
     /**
@@ -9423,7 +10573,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the bootTelemetry field is set.
      */
     public boolean hasBootTelemetry() {
-      return bootTelemetryBuilder_ != null || bootTelemetry_ != null;
+      return telemetryDataCase_ == 41;
     }
     /**
      * <code>.POGOProtos.Rpc.BootTelemetry boot_telemetry = 41;</code>
@@ -9431,9 +10581,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.BootTelemetry getBootTelemetry() {
       if (bootTelemetryBuilder_ == null) {
-        return bootTelemetry_ == null ? POGOProtos.Rpc.BootTelemetry.getDefaultInstance() : bootTelemetry_;
+        if (telemetryDataCase_ == 41) {
+          return (POGOProtos.Rpc.BootTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.BootTelemetry.getDefaultInstance();
       } else {
-        return bootTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 41) {
+          return bootTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.BootTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9444,12 +10600,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        bootTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         bootTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 41;
       return this;
     }
     /**
@@ -9458,12 +10614,12 @@ private static final long serialVersionUID = 0L;
     public Builder setBootTelemetry(
         POGOProtos.Rpc.BootTelemetry.Builder builderForValue) {
       if (bootTelemetryBuilder_ == null) {
-        bootTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         bootTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 41;
       return this;
     }
     /**
@@ -9471,17 +10627,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeBootTelemetry(POGOProtos.Rpc.BootTelemetry value) {
       if (bootTelemetryBuilder_ == null) {
-        if (bootTelemetry_ != null) {
-          bootTelemetry_ =
-            POGOProtos.Rpc.BootTelemetry.newBuilder(bootTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 41 &&
+            telemetryData_ != POGOProtos.Rpc.BootTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.BootTelemetry.newBuilder((POGOProtos.Rpc.BootTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          bootTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        bootTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 41) {
+          bootTelemetryBuilder_.mergeFrom(value);
+        }
+        bootTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 41;
       return this;
     }
     /**
@@ -9489,32 +10649,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearBootTelemetry() {
       if (bootTelemetryBuilder_ == null) {
-        bootTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 41) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        bootTelemetry_ = null;
-        bootTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 41) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        bootTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.BootTelemetry boot_telemetry = 41;</code>
      */
     public POGOProtos.Rpc.BootTelemetry.Builder getBootTelemetryBuilder() {
-      
-      onChanged();
       return getBootTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.BootTelemetry boot_telemetry = 41;</code>
      */
     public POGOProtos.Rpc.BootTelemetryOrBuilder getBootTelemetryOrBuilder() {
-      if (bootTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 41) && (bootTelemetryBuilder_ != null)) {
         return bootTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return bootTelemetry_ == null ?
-            POGOProtos.Rpc.BootTelemetry.getDefaultInstance() : bootTelemetry_;
+        if (telemetryDataCase_ == 41) {
+          return (POGOProtos.Rpc.BootTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.BootTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9524,17 +10689,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.BootTelemetry, POGOProtos.Rpc.BootTelemetry.Builder, POGOProtos.Rpc.BootTelemetryOrBuilder> 
         getBootTelemetryFieldBuilder() {
       if (bootTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 41)) {
+          telemetryData_ = POGOProtos.Rpc.BootTelemetry.getDefaultInstance();
+        }
         bootTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BootTelemetry, POGOProtos.Rpc.BootTelemetry.Builder, POGOProtos.Rpc.BootTelemetryOrBuilder>(
-                getBootTelemetry(),
+                (POGOProtos.Rpc.BootTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        bootTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 41;
+      onChanged();;
       return bootTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.UserAttributesProto userAttributes_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.UserAttributesProto, POGOProtos.Rpc.UserAttributesProto.Builder, POGOProtos.Rpc.UserAttributesProtoOrBuilder> userAttributesBuilder_;
     /**
@@ -9542,7 +10711,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the userAttributes field is set.
      */
     public boolean hasUserAttributes() {
-      return userAttributesBuilder_ != null || userAttributes_ != null;
+      return telemetryDataCase_ == 42;
     }
     /**
      * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
@@ -9550,9 +10719,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.UserAttributesProto getUserAttributes() {
       if (userAttributesBuilder_ == null) {
-        return userAttributes_ == null ? POGOProtos.Rpc.UserAttributesProto.getDefaultInstance() : userAttributes_;
+        if (telemetryDataCase_ == 42) {
+          return (POGOProtos.Rpc.UserAttributesProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
       } else {
-        return userAttributesBuilder_.getMessage();
+        if (telemetryDataCase_ == 42) {
+          return userAttributesBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
       }
     }
     /**
@@ -9563,12 +10738,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        userAttributes_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         userAttributesBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 42;
       return this;
     }
     /**
@@ -9577,12 +10752,12 @@ private static final long serialVersionUID = 0L;
     public Builder setUserAttributes(
         POGOProtos.Rpc.UserAttributesProto.Builder builderForValue) {
       if (userAttributesBuilder_ == null) {
-        userAttributes_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         userAttributesBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 42;
       return this;
     }
     /**
@@ -9590,17 +10765,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeUserAttributes(POGOProtos.Rpc.UserAttributesProto value) {
       if (userAttributesBuilder_ == null) {
-        if (userAttributes_ != null) {
-          userAttributes_ =
-            POGOProtos.Rpc.UserAttributesProto.newBuilder(userAttributes_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 42 &&
+            telemetryData_ != POGOProtos.Rpc.UserAttributesProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.UserAttributesProto.newBuilder((POGOProtos.Rpc.UserAttributesProto) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          userAttributes_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        userAttributesBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 42) {
+          userAttributesBuilder_.mergeFrom(value);
+        }
+        userAttributesBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 42;
       return this;
     }
     /**
@@ -9608,32 +10787,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearUserAttributes() {
       if (userAttributesBuilder_ == null) {
-        userAttributes_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 42) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        userAttributes_ = null;
-        userAttributesBuilder_ = null;
+        if (telemetryDataCase_ == 42) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        userAttributesBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      */
     public POGOProtos.Rpc.UserAttributesProto.Builder getUserAttributesBuilder() {
-      
-      onChanged();
       return getUserAttributesFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      */
     public POGOProtos.Rpc.UserAttributesProtoOrBuilder getUserAttributesOrBuilder() {
-      if (userAttributesBuilder_ != null) {
+      if ((telemetryDataCase_ == 42) && (userAttributesBuilder_ != null)) {
         return userAttributesBuilder_.getMessageOrBuilder();
       } else {
-        return userAttributes_ == null ?
-            POGOProtos.Rpc.UserAttributesProto.getDefaultInstance() : userAttributes_;
+        if (telemetryDataCase_ == 42) {
+          return (POGOProtos.Rpc.UserAttributesProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
       }
     }
     /**
@@ -9643,17 +10827,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.UserAttributesProto, POGOProtos.Rpc.UserAttributesProto.Builder, POGOProtos.Rpc.UserAttributesProtoOrBuilder> 
         getUserAttributesFieldBuilder() {
       if (userAttributesBuilder_ == null) {
+        if (!(telemetryDataCase_ == 42)) {
+          telemetryData_ = POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
+        }
         userAttributesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.UserAttributesProto, POGOProtos.Rpc.UserAttributesProto.Builder, POGOProtos.Rpc.UserAttributesProtoOrBuilder>(
-                getUserAttributes(),
+                (POGOProtos.Rpc.UserAttributesProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        userAttributes_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 42;
+      onChanged();;
       return userAttributesBuilder_;
     }
 
-    private POGOProtos.Rpc.OnboardingTelemetry onboardingTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.OnboardingTelemetry, POGOProtos.Rpc.OnboardingTelemetry.Builder, POGOProtos.Rpc.OnboardingTelemetryOrBuilder> onboardingTelemetryBuilder_;
     /**
@@ -9661,7 +10849,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the onboardingTelemetry field is set.
      */
     public boolean hasOnboardingTelemetry() {
-      return onboardingTelemetryBuilder_ != null || onboardingTelemetry_ != null;
+      return telemetryDataCase_ == 43;
     }
     /**
      * <code>.POGOProtos.Rpc.OnboardingTelemetry onboarding_telemetry = 43;</code>
@@ -9669,9 +10857,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.OnboardingTelemetry getOnboardingTelemetry() {
       if (onboardingTelemetryBuilder_ == null) {
-        return onboardingTelemetry_ == null ? POGOProtos.Rpc.OnboardingTelemetry.getDefaultInstance() : onboardingTelemetry_;
+        if (telemetryDataCase_ == 43) {
+          return (POGOProtos.Rpc.OnboardingTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.OnboardingTelemetry.getDefaultInstance();
       } else {
-        return onboardingTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 43) {
+          return onboardingTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.OnboardingTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9682,12 +10876,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        onboardingTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         onboardingTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 43;
       return this;
     }
     /**
@@ -9696,12 +10890,12 @@ private static final long serialVersionUID = 0L;
     public Builder setOnboardingTelemetry(
         POGOProtos.Rpc.OnboardingTelemetry.Builder builderForValue) {
       if (onboardingTelemetryBuilder_ == null) {
-        onboardingTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         onboardingTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 43;
       return this;
     }
     /**
@@ -9709,17 +10903,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeOnboardingTelemetry(POGOProtos.Rpc.OnboardingTelemetry value) {
       if (onboardingTelemetryBuilder_ == null) {
-        if (onboardingTelemetry_ != null) {
-          onboardingTelemetry_ =
-            POGOProtos.Rpc.OnboardingTelemetry.newBuilder(onboardingTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 43 &&
+            telemetryData_ != POGOProtos.Rpc.OnboardingTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.OnboardingTelemetry.newBuilder((POGOProtos.Rpc.OnboardingTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          onboardingTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        onboardingTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 43) {
+          onboardingTelemetryBuilder_.mergeFrom(value);
+        }
+        onboardingTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 43;
       return this;
     }
     /**
@@ -9727,32 +10925,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearOnboardingTelemetry() {
       if (onboardingTelemetryBuilder_ == null) {
-        onboardingTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 43) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        onboardingTelemetry_ = null;
-        onboardingTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 43) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        onboardingTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.OnboardingTelemetry onboarding_telemetry = 43;</code>
      */
     public POGOProtos.Rpc.OnboardingTelemetry.Builder getOnboardingTelemetryBuilder() {
-      
-      onChanged();
       return getOnboardingTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.OnboardingTelemetry onboarding_telemetry = 43;</code>
      */
     public POGOProtos.Rpc.OnboardingTelemetryOrBuilder getOnboardingTelemetryOrBuilder() {
-      if (onboardingTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 43) && (onboardingTelemetryBuilder_ != null)) {
         return onboardingTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return onboardingTelemetry_ == null ?
-            POGOProtos.Rpc.OnboardingTelemetry.getDefaultInstance() : onboardingTelemetry_;
+        if (telemetryDataCase_ == 43) {
+          return (POGOProtos.Rpc.OnboardingTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.OnboardingTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9762,17 +10965,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.OnboardingTelemetry, POGOProtos.Rpc.OnboardingTelemetry.Builder, POGOProtos.Rpc.OnboardingTelemetryOrBuilder> 
         getOnboardingTelemetryFieldBuilder() {
       if (onboardingTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 43)) {
+          telemetryData_ = POGOProtos.Rpc.OnboardingTelemetry.getDefaultInstance();
+        }
         onboardingTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.OnboardingTelemetry, POGOProtos.Rpc.OnboardingTelemetry.Builder, POGOProtos.Rpc.OnboardingTelemetryOrBuilder>(
-                getOnboardingTelemetry(),
+                (POGOProtos.Rpc.OnboardingTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        onboardingTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 43;
+      onChanged();;
       return onboardingTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.LoginActionTelemetry loginActionTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.LoginActionTelemetry, POGOProtos.Rpc.LoginActionTelemetry.Builder, POGOProtos.Rpc.LoginActionTelemetryOrBuilder> loginActionTelemetryBuilder_;
     /**
@@ -9780,7 +10987,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the loginActionTelemetry field is set.
      */
     public boolean hasLoginActionTelemetry() {
-      return loginActionTelemetryBuilder_ != null || loginActionTelemetry_ != null;
+      return telemetryDataCase_ == 44;
     }
     /**
      * <code>.POGOProtos.Rpc.LoginActionTelemetry login_action_telemetry = 44;</code>
@@ -9788,9 +10995,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.LoginActionTelemetry getLoginActionTelemetry() {
       if (loginActionTelemetryBuilder_ == null) {
-        return loginActionTelemetry_ == null ? POGOProtos.Rpc.LoginActionTelemetry.getDefaultInstance() : loginActionTelemetry_;
+        if (telemetryDataCase_ == 44) {
+          return (POGOProtos.Rpc.LoginActionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.LoginActionTelemetry.getDefaultInstance();
       } else {
-        return loginActionTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 44) {
+          return loginActionTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.LoginActionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9801,12 +11014,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        loginActionTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         loginActionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 44;
       return this;
     }
     /**
@@ -9815,12 +11028,12 @@ private static final long serialVersionUID = 0L;
     public Builder setLoginActionTelemetry(
         POGOProtos.Rpc.LoginActionTelemetry.Builder builderForValue) {
       if (loginActionTelemetryBuilder_ == null) {
-        loginActionTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         loginActionTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 44;
       return this;
     }
     /**
@@ -9828,17 +11041,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeLoginActionTelemetry(POGOProtos.Rpc.LoginActionTelemetry value) {
       if (loginActionTelemetryBuilder_ == null) {
-        if (loginActionTelemetry_ != null) {
-          loginActionTelemetry_ =
-            POGOProtos.Rpc.LoginActionTelemetry.newBuilder(loginActionTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 44 &&
+            telemetryData_ != POGOProtos.Rpc.LoginActionTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.LoginActionTelemetry.newBuilder((POGOProtos.Rpc.LoginActionTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          loginActionTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        loginActionTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 44) {
+          loginActionTelemetryBuilder_.mergeFrom(value);
+        }
+        loginActionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 44;
       return this;
     }
     /**
@@ -9846,32 +11063,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearLoginActionTelemetry() {
       if (loginActionTelemetryBuilder_ == null) {
-        loginActionTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 44) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        loginActionTelemetry_ = null;
-        loginActionTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 44) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        loginActionTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.LoginActionTelemetry login_action_telemetry = 44;</code>
      */
     public POGOProtos.Rpc.LoginActionTelemetry.Builder getLoginActionTelemetryBuilder() {
-      
-      onChanged();
       return getLoginActionTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.LoginActionTelemetry login_action_telemetry = 44;</code>
      */
     public POGOProtos.Rpc.LoginActionTelemetryOrBuilder getLoginActionTelemetryOrBuilder() {
-      if (loginActionTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 44) && (loginActionTelemetryBuilder_ != null)) {
         return loginActionTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return loginActionTelemetry_ == null ?
-            POGOProtos.Rpc.LoginActionTelemetry.getDefaultInstance() : loginActionTelemetry_;
+        if (telemetryDataCase_ == 44) {
+          return (POGOProtos.Rpc.LoginActionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.LoginActionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -9881,17 +11103,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.LoginActionTelemetry, POGOProtos.Rpc.LoginActionTelemetry.Builder, POGOProtos.Rpc.LoginActionTelemetryOrBuilder> 
         getLoginActionTelemetryFieldBuilder() {
       if (loginActionTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 44)) {
+          telemetryData_ = POGOProtos.Rpc.LoginActionTelemetry.getDefaultInstance();
+        }
         loginActionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.LoginActionTelemetry, POGOProtos.Rpc.LoginActionTelemetry.Builder, POGOProtos.Rpc.LoginActionTelemetryOrBuilder>(
-                getLoginActionTelemetry(),
+                (POGOProtos.Rpc.LoginActionTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        loginActionTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 44;
+      onChanged();;
       return loginActionTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ArPhotoSessionProto arPhotoSessionTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ArPhotoSessionProto, POGOProtos.Rpc.ArPhotoSessionProto.Builder, POGOProtos.Rpc.ArPhotoSessionProtoOrBuilder> arPhotoSessionTelemetryBuilder_;
     /**
@@ -9899,7 +11125,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the arPhotoSessionTelemetry field is set.
      */
     public boolean hasArPhotoSessionTelemetry() {
-      return arPhotoSessionTelemetryBuilder_ != null || arPhotoSessionTelemetry_ != null;
+      return telemetryDataCase_ == 45;
     }
     /**
      * <code>.POGOProtos.Rpc.ArPhotoSessionProto ar_photo_session_telemetry = 45;</code>
@@ -9907,9 +11133,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ArPhotoSessionProto getArPhotoSessionTelemetry() {
       if (arPhotoSessionTelemetryBuilder_ == null) {
-        return arPhotoSessionTelemetry_ == null ? POGOProtos.Rpc.ArPhotoSessionProto.getDefaultInstance() : arPhotoSessionTelemetry_;
+        if (telemetryDataCase_ == 45) {
+          return (POGOProtos.Rpc.ArPhotoSessionProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.ArPhotoSessionProto.getDefaultInstance();
       } else {
-        return arPhotoSessionTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 45) {
+          return arPhotoSessionTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ArPhotoSessionProto.getDefaultInstance();
       }
     }
     /**
@@ -9920,12 +11152,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        arPhotoSessionTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         arPhotoSessionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 45;
       return this;
     }
     /**
@@ -9934,12 +11166,12 @@ private static final long serialVersionUID = 0L;
     public Builder setArPhotoSessionTelemetry(
         POGOProtos.Rpc.ArPhotoSessionProto.Builder builderForValue) {
       if (arPhotoSessionTelemetryBuilder_ == null) {
-        arPhotoSessionTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         arPhotoSessionTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 45;
       return this;
     }
     /**
@@ -9947,17 +11179,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeArPhotoSessionTelemetry(POGOProtos.Rpc.ArPhotoSessionProto value) {
       if (arPhotoSessionTelemetryBuilder_ == null) {
-        if (arPhotoSessionTelemetry_ != null) {
-          arPhotoSessionTelemetry_ =
-            POGOProtos.Rpc.ArPhotoSessionProto.newBuilder(arPhotoSessionTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 45 &&
+            telemetryData_ != POGOProtos.Rpc.ArPhotoSessionProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ArPhotoSessionProto.newBuilder((POGOProtos.Rpc.ArPhotoSessionProto) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          arPhotoSessionTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        arPhotoSessionTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 45) {
+          arPhotoSessionTelemetryBuilder_.mergeFrom(value);
+        }
+        arPhotoSessionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 45;
       return this;
     }
     /**
@@ -9965,32 +11201,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearArPhotoSessionTelemetry() {
       if (arPhotoSessionTelemetryBuilder_ == null) {
-        arPhotoSessionTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 45) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        arPhotoSessionTelemetry_ = null;
-        arPhotoSessionTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 45) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        arPhotoSessionTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ArPhotoSessionProto ar_photo_session_telemetry = 45;</code>
      */
     public POGOProtos.Rpc.ArPhotoSessionProto.Builder getArPhotoSessionTelemetryBuilder() {
-      
-      onChanged();
       return getArPhotoSessionTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ArPhotoSessionProto ar_photo_session_telemetry = 45;</code>
      */
     public POGOProtos.Rpc.ArPhotoSessionProtoOrBuilder getArPhotoSessionTelemetryOrBuilder() {
-      if (arPhotoSessionTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 45) && (arPhotoSessionTelemetryBuilder_ != null)) {
         return arPhotoSessionTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return arPhotoSessionTelemetry_ == null ?
-            POGOProtos.Rpc.ArPhotoSessionProto.getDefaultInstance() : arPhotoSessionTelemetry_;
+        if (telemetryDataCase_ == 45) {
+          return (POGOProtos.Rpc.ArPhotoSessionProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.ArPhotoSessionProto.getDefaultInstance();
       }
     }
     /**
@@ -10000,17 +11241,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ArPhotoSessionProto, POGOProtos.Rpc.ArPhotoSessionProto.Builder, POGOProtos.Rpc.ArPhotoSessionProtoOrBuilder> 
         getArPhotoSessionTelemetryFieldBuilder() {
       if (arPhotoSessionTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 45)) {
+          telemetryData_ = POGOProtos.Rpc.ArPhotoSessionProto.getDefaultInstance();
+        }
         arPhotoSessionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ArPhotoSessionProto, POGOProtos.Rpc.ArPhotoSessionProto.Builder, POGOProtos.Rpc.ArPhotoSessionProtoOrBuilder>(
-                getArPhotoSessionTelemetry(),
+                (POGOProtos.Rpc.ArPhotoSessionProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        arPhotoSessionTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 45;
+      onChanged();;
       return arPhotoSessionTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.InvasionTelemetry invasionTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.InvasionTelemetry, POGOProtos.Rpc.InvasionTelemetry.Builder, POGOProtos.Rpc.InvasionTelemetryOrBuilder> invasionTelemetryBuilder_;
     /**
@@ -10018,7 +11263,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the invasionTelemetry field is set.
      */
     public boolean hasInvasionTelemetry() {
-      return invasionTelemetryBuilder_ != null || invasionTelemetry_ != null;
+      return telemetryDataCase_ == 46;
     }
     /**
      * <code>.POGOProtos.Rpc.InvasionTelemetry invasion_telemetry = 46;</code>
@@ -10026,9 +11271,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.InvasionTelemetry getInvasionTelemetry() {
       if (invasionTelemetryBuilder_ == null) {
-        return invasionTelemetry_ == null ? POGOProtos.Rpc.InvasionTelemetry.getDefaultInstance() : invasionTelemetry_;
+        if (telemetryDataCase_ == 46) {
+          return (POGOProtos.Rpc.InvasionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.InvasionTelemetry.getDefaultInstance();
       } else {
-        return invasionTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 46) {
+          return invasionTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.InvasionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10039,12 +11290,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        invasionTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         invasionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 46;
       return this;
     }
     /**
@@ -10053,12 +11304,12 @@ private static final long serialVersionUID = 0L;
     public Builder setInvasionTelemetry(
         POGOProtos.Rpc.InvasionTelemetry.Builder builderForValue) {
       if (invasionTelemetryBuilder_ == null) {
-        invasionTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         invasionTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 46;
       return this;
     }
     /**
@@ -10066,17 +11317,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeInvasionTelemetry(POGOProtos.Rpc.InvasionTelemetry value) {
       if (invasionTelemetryBuilder_ == null) {
-        if (invasionTelemetry_ != null) {
-          invasionTelemetry_ =
-            POGOProtos.Rpc.InvasionTelemetry.newBuilder(invasionTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 46 &&
+            telemetryData_ != POGOProtos.Rpc.InvasionTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.InvasionTelemetry.newBuilder((POGOProtos.Rpc.InvasionTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          invasionTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        invasionTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 46) {
+          invasionTelemetryBuilder_.mergeFrom(value);
+        }
+        invasionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 46;
       return this;
     }
     /**
@@ -10084,32 +11339,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearInvasionTelemetry() {
       if (invasionTelemetryBuilder_ == null) {
-        invasionTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 46) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        invasionTelemetry_ = null;
-        invasionTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 46) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        invasionTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.InvasionTelemetry invasion_telemetry = 46;</code>
      */
     public POGOProtos.Rpc.InvasionTelemetry.Builder getInvasionTelemetryBuilder() {
-      
-      onChanged();
       return getInvasionTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.InvasionTelemetry invasion_telemetry = 46;</code>
      */
     public POGOProtos.Rpc.InvasionTelemetryOrBuilder getInvasionTelemetryOrBuilder() {
-      if (invasionTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 46) && (invasionTelemetryBuilder_ != null)) {
         return invasionTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return invasionTelemetry_ == null ?
-            POGOProtos.Rpc.InvasionTelemetry.getDefaultInstance() : invasionTelemetry_;
+        if (telemetryDataCase_ == 46) {
+          return (POGOProtos.Rpc.InvasionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.InvasionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10119,17 +11379,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.InvasionTelemetry, POGOProtos.Rpc.InvasionTelemetry.Builder, POGOProtos.Rpc.InvasionTelemetryOrBuilder> 
         getInvasionTelemetryFieldBuilder() {
       if (invasionTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 46)) {
+          telemetryData_ = POGOProtos.Rpc.InvasionTelemetry.getDefaultInstance();
+        }
         invasionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.InvasionTelemetry, POGOProtos.Rpc.InvasionTelemetry.Builder, POGOProtos.Rpc.InvasionTelemetryOrBuilder>(
-                getInvasionTelemetry(),
+                (POGOProtos.Rpc.InvasionTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        invasionTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 46;
+      onChanged();;
       return invasionTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.CombatMinigameTelemetry combatMinigameTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.CombatMinigameTelemetry, POGOProtos.Rpc.CombatMinigameTelemetry.Builder, POGOProtos.Rpc.CombatMinigameTelemetryOrBuilder> combatMinigameTelemetryBuilder_;
     /**
@@ -10137,7 +11401,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the combatMinigameTelemetry field is set.
      */
     public boolean hasCombatMinigameTelemetry() {
-      return combatMinigameTelemetryBuilder_ != null || combatMinigameTelemetry_ != null;
+      return telemetryDataCase_ == 47;
     }
     /**
      * <code>.POGOProtos.Rpc.CombatMinigameTelemetry combat_minigame_telemetry = 47;</code>
@@ -10145,9 +11409,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.CombatMinigameTelemetry getCombatMinigameTelemetry() {
       if (combatMinigameTelemetryBuilder_ == null) {
-        return combatMinigameTelemetry_ == null ? POGOProtos.Rpc.CombatMinigameTelemetry.getDefaultInstance() : combatMinigameTelemetry_;
+        if (telemetryDataCase_ == 47) {
+          return (POGOProtos.Rpc.CombatMinigameTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.CombatMinigameTelemetry.getDefaultInstance();
       } else {
-        return combatMinigameTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 47) {
+          return combatMinigameTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CombatMinigameTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10158,12 +11428,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        combatMinigameTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         combatMinigameTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 47;
       return this;
     }
     /**
@@ -10172,12 +11442,12 @@ private static final long serialVersionUID = 0L;
     public Builder setCombatMinigameTelemetry(
         POGOProtos.Rpc.CombatMinigameTelemetry.Builder builderForValue) {
       if (combatMinigameTelemetryBuilder_ == null) {
-        combatMinigameTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         combatMinigameTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 47;
       return this;
     }
     /**
@@ -10185,17 +11455,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeCombatMinigameTelemetry(POGOProtos.Rpc.CombatMinigameTelemetry value) {
       if (combatMinigameTelemetryBuilder_ == null) {
-        if (combatMinigameTelemetry_ != null) {
-          combatMinigameTelemetry_ =
-            POGOProtos.Rpc.CombatMinigameTelemetry.newBuilder(combatMinigameTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 47 &&
+            telemetryData_ != POGOProtos.Rpc.CombatMinigameTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.CombatMinigameTelemetry.newBuilder((POGOProtos.Rpc.CombatMinigameTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          combatMinigameTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        combatMinigameTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 47) {
+          combatMinigameTelemetryBuilder_.mergeFrom(value);
+        }
+        combatMinigameTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 47;
       return this;
     }
     /**
@@ -10203,32 +11477,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearCombatMinigameTelemetry() {
       if (combatMinigameTelemetryBuilder_ == null) {
-        combatMinigameTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 47) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        combatMinigameTelemetry_ = null;
-        combatMinigameTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 47) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        combatMinigameTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.CombatMinigameTelemetry combat_minigame_telemetry = 47;</code>
      */
     public POGOProtos.Rpc.CombatMinigameTelemetry.Builder getCombatMinigameTelemetryBuilder() {
-      
-      onChanged();
       return getCombatMinigameTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.CombatMinigameTelemetry combat_minigame_telemetry = 47;</code>
      */
     public POGOProtos.Rpc.CombatMinigameTelemetryOrBuilder getCombatMinigameTelemetryOrBuilder() {
-      if (combatMinigameTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 47) && (combatMinigameTelemetryBuilder_ != null)) {
         return combatMinigameTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return combatMinigameTelemetry_ == null ?
-            POGOProtos.Rpc.CombatMinigameTelemetry.getDefaultInstance() : combatMinigameTelemetry_;
+        if (telemetryDataCase_ == 47) {
+          return (POGOProtos.Rpc.CombatMinigameTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.CombatMinigameTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10238,17 +11517,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.CombatMinigameTelemetry, POGOProtos.Rpc.CombatMinigameTelemetry.Builder, POGOProtos.Rpc.CombatMinigameTelemetryOrBuilder> 
         getCombatMinigameTelemetryFieldBuilder() {
       if (combatMinigameTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 47)) {
+          telemetryData_ = POGOProtos.Rpc.CombatMinigameTelemetry.getDefaultInstance();
+        }
         combatMinigameTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.CombatMinigameTelemetry, POGOProtos.Rpc.CombatMinigameTelemetry.Builder, POGOProtos.Rpc.CombatMinigameTelemetryOrBuilder>(
-                getCombatMinigameTelemetry(),
+                (POGOProtos.Rpc.CombatMinigameTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        combatMinigameTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 47;
+      onChanged();;
       return combatMinigameTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.LeavePointOfInterestTelemetry leavePointOfInterestTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.LeavePointOfInterestTelemetry, POGOProtos.Rpc.LeavePointOfInterestTelemetry.Builder, POGOProtos.Rpc.LeavePointOfInterestTelemetryOrBuilder> leavePointOfInterestTelemetryBuilder_;
     /**
@@ -10256,7 +11539,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the leavePointOfInterestTelemetry field is set.
      */
     public boolean hasLeavePointOfInterestTelemetry() {
-      return leavePointOfInterestTelemetryBuilder_ != null || leavePointOfInterestTelemetry_ != null;
+      return telemetryDataCase_ == 48;
     }
     /**
      * <code>.POGOProtos.Rpc.LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;</code>
@@ -10264,9 +11547,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.LeavePointOfInterestTelemetry getLeavePointOfInterestTelemetry() {
       if (leavePointOfInterestTelemetryBuilder_ == null) {
-        return leavePointOfInterestTelemetry_ == null ? POGOProtos.Rpc.LeavePointOfInterestTelemetry.getDefaultInstance() : leavePointOfInterestTelemetry_;
+        if (telemetryDataCase_ == 48) {
+          return (POGOProtos.Rpc.LeavePointOfInterestTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.LeavePointOfInterestTelemetry.getDefaultInstance();
       } else {
-        return leavePointOfInterestTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 48) {
+          return leavePointOfInterestTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.LeavePointOfInterestTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10277,12 +11566,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        leavePointOfInterestTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         leavePointOfInterestTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 48;
       return this;
     }
     /**
@@ -10291,12 +11580,12 @@ private static final long serialVersionUID = 0L;
     public Builder setLeavePointOfInterestTelemetry(
         POGOProtos.Rpc.LeavePointOfInterestTelemetry.Builder builderForValue) {
       if (leavePointOfInterestTelemetryBuilder_ == null) {
-        leavePointOfInterestTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         leavePointOfInterestTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 48;
       return this;
     }
     /**
@@ -10304,17 +11593,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeLeavePointOfInterestTelemetry(POGOProtos.Rpc.LeavePointOfInterestTelemetry value) {
       if (leavePointOfInterestTelemetryBuilder_ == null) {
-        if (leavePointOfInterestTelemetry_ != null) {
-          leavePointOfInterestTelemetry_ =
-            POGOProtos.Rpc.LeavePointOfInterestTelemetry.newBuilder(leavePointOfInterestTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 48 &&
+            telemetryData_ != POGOProtos.Rpc.LeavePointOfInterestTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.LeavePointOfInterestTelemetry.newBuilder((POGOProtos.Rpc.LeavePointOfInterestTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          leavePointOfInterestTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        leavePointOfInterestTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 48) {
+          leavePointOfInterestTelemetryBuilder_.mergeFrom(value);
+        }
+        leavePointOfInterestTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 48;
       return this;
     }
     /**
@@ -10322,32 +11615,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearLeavePointOfInterestTelemetry() {
       if (leavePointOfInterestTelemetryBuilder_ == null) {
-        leavePointOfInterestTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 48) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        leavePointOfInterestTelemetry_ = null;
-        leavePointOfInterestTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 48) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        leavePointOfInterestTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;</code>
      */
     public POGOProtos.Rpc.LeavePointOfInterestTelemetry.Builder getLeavePointOfInterestTelemetryBuilder() {
-      
-      onChanged();
       return getLeavePointOfInterestTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;</code>
      */
     public POGOProtos.Rpc.LeavePointOfInterestTelemetryOrBuilder getLeavePointOfInterestTelemetryOrBuilder() {
-      if (leavePointOfInterestTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 48) && (leavePointOfInterestTelemetryBuilder_ != null)) {
         return leavePointOfInterestTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return leavePointOfInterestTelemetry_ == null ?
-            POGOProtos.Rpc.LeavePointOfInterestTelemetry.getDefaultInstance() : leavePointOfInterestTelemetry_;
+        if (telemetryDataCase_ == 48) {
+          return (POGOProtos.Rpc.LeavePointOfInterestTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.LeavePointOfInterestTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10357,17 +11655,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.LeavePointOfInterestTelemetry, POGOProtos.Rpc.LeavePointOfInterestTelemetry.Builder, POGOProtos.Rpc.LeavePointOfInterestTelemetryOrBuilder> 
         getLeavePointOfInterestTelemetryFieldBuilder() {
       if (leavePointOfInterestTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 48)) {
+          telemetryData_ = POGOProtos.Rpc.LeavePointOfInterestTelemetry.getDefaultInstance();
+        }
         leavePointOfInterestTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.LeavePointOfInterestTelemetry, POGOProtos.Rpc.LeavePointOfInterestTelemetry.Builder, POGOProtos.Rpc.LeavePointOfInterestTelemetryOrBuilder>(
-                getLeavePointOfInterestTelemetry(),
+                (POGOProtos.Rpc.LeavePointOfInterestTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        leavePointOfInterestTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 48;
+      onChanged();;
       return leavePointOfInterestTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ViewPointOfInterestImageTelemetry viewPointOfInterestImageTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ViewPointOfInterestImageTelemetry, POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.Builder, POGOProtos.Rpc.ViewPointOfInterestImageTelemetryOrBuilder> viewPointOfInterestImageTelemetryBuilder_;
     /**
@@ -10375,7 +11677,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the viewPointOfInterestImageTelemetry field is set.
      */
     public boolean hasViewPointOfInterestImageTelemetry() {
-      return viewPointOfInterestImageTelemetryBuilder_ != null || viewPointOfInterestImageTelemetry_ != null;
+      return telemetryDataCase_ == 49;
     }
     /**
      * <code>.POGOProtos.Rpc.ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;</code>
@@ -10383,9 +11685,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ViewPointOfInterestImageTelemetry getViewPointOfInterestImageTelemetry() {
       if (viewPointOfInterestImageTelemetryBuilder_ == null) {
-        return viewPointOfInterestImageTelemetry_ == null ? POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.getDefaultInstance() : viewPointOfInterestImageTelemetry_;
+        if (telemetryDataCase_ == 49) {
+          return (POGOProtos.Rpc.ViewPointOfInterestImageTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.getDefaultInstance();
       } else {
-        return viewPointOfInterestImageTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 49) {
+          return viewPointOfInterestImageTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10396,12 +11704,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        viewPointOfInterestImageTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         viewPointOfInterestImageTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 49;
       return this;
     }
     /**
@@ -10410,12 +11718,12 @@ private static final long serialVersionUID = 0L;
     public Builder setViewPointOfInterestImageTelemetry(
         POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.Builder builderForValue) {
       if (viewPointOfInterestImageTelemetryBuilder_ == null) {
-        viewPointOfInterestImageTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         viewPointOfInterestImageTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 49;
       return this;
     }
     /**
@@ -10423,17 +11731,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeViewPointOfInterestImageTelemetry(POGOProtos.Rpc.ViewPointOfInterestImageTelemetry value) {
       if (viewPointOfInterestImageTelemetryBuilder_ == null) {
-        if (viewPointOfInterestImageTelemetry_ != null) {
-          viewPointOfInterestImageTelemetry_ =
-            POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.newBuilder(viewPointOfInterestImageTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 49 &&
+            telemetryData_ != POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.newBuilder((POGOProtos.Rpc.ViewPointOfInterestImageTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          viewPointOfInterestImageTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        viewPointOfInterestImageTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 49) {
+          viewPointOfInterestImageTelemetryBuilder_.mergeFrom(value);
+        }
+        viewPointOfInterestImageTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 49;
       return this;
     }
     /**
@@ -10441,32 +11753,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearViewPointOfInterestImageTelemetry() {
       if (viewPointOfInterestImageTelemetryBuilder_ == null) {
-        viewPointOfInterestImageTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 49) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        viewPointOfInterestImageTelemetry_ = null;
-        viewPointOfInterestImageTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 49) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        viewPointOfInterestImageTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;</code>
      */
     public POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.Builder getViewPointOfInterestImageTelemetryBuilder() {
-      
-      onChanged();
       return getViewPointOfInterestImageTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;</code>
      */
     public POGOProtos.Rpc.ViewPointOfInterestImageTelemetryOrBuilder getViewPointOfInterestImageTelemetryOrBuilder() {
-      if (viewPointOfInterestImageTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 49) && (viewPointOfInterestImageTelemetryBuilder_ != null)) {
         return viewPointOfInterestImageTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return viewPointOfInterestImageTelemetry_ == null ?
-            POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.getDefaultInstance() : viewPointOfInterestImageTelemetry_;
+        if (telemetryDataCase_ == 49) {
+          return (POGOProtos.Rpc.ViewPointOfInterestImageTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10476,17 +11793,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ViewPointOfInterestImageTelemetry, POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.Builder, POGOProtos.Rpc.ViewPointOfInterestImageTelemetryOrBuilder> 
         getViewPointOfInterestImageTelemetryFieldBuilder() {
       if (viewPointOfInterestImageTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 49)) {
+          telemetryData_ = POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.getDefaultInstance();
+        }
         viewPointOfInterestImageTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ViewPointOfInterestImageTelemetry, POGOProtos.Rpc.ViewPointOfInterestImageTelemetry.Builder, POGOProtos.Rpc.ViewPointOfInterestImageTelemetryOrBuilder>(
-                getViewPointOfInterestImageTelemetry(),
+                (POGOProtos.Rpc.ViewPointOfInterestImageTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        viewPointOfInterestImageTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 49;
+      onChanged();;
       return viewPointOfInterestImageTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.CombatHubEntranceTelemetry combatHubEntranceTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.CombatHubEntranceTelemetry, POGOProtos.Rpc.CombatHubEntranceTelemetry.Builder, POGOProtos.Rpc.CombatHubEntranceTelemetryOrBuilder> combatHubEntranceTelemetryBuilder_;
     /**
@@ -10494,7 +11815,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the combatHubEntranceTelemetry field is set.
      */
     public boolean hasCombatHubEntranceTelemetry() {
-      return combatHubEntranceTelemetryBuilder_ != null || combatHubEntranceTelemetry_ != null;
+      return telemetryDataCase_ == 50;
     }
     /**
      * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;</code>
@@ -10502,9 +11823,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.CombatHubEntranceTelemetry getCombatHubEntranceTelemetry() {
       if (combatHubEntranceTelemetryBuilder_ == null) {
-        return combatHubEntranceTelemetry_ == null ? POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance() : combatHubEntranceTelemetry_;
+        if (telemetryDataCase_ == 50) {
+          return (POGOProtos.Rpc.CombatHubEntranceTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance();
       } else {
-        return combatHubEntranceTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 50) {
+          return combatHubEntranceTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10515,12 +11842,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        combatHubEntranceTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         combatHubEntranceTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 50;
       return this;
     }
     /**
@@ -10529,12 +11856,12 @@ private static final long serialVersionUID = 0L;
     public Builder setCombatHubEntranceTelemetry(
         POGOProtos.Rpc.CombatHubEntranceTelemetry.Builder builderForValue) {
       if (combatHubEntranceTelemetryBuilder_ == null) {
-        combatHubEntranceTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         combatHubEntranceTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 50;
       return this;
     }
     /**
@@ -10542,17 +11869,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeCombatHubEntranceTelemetry(POGOProtos.Rpc.CombatHubEntranceTelemetry value) {
       if (combatHubEntranceTelemetryBuilder_ == null) {
-        if (combatHubEntranceTelemetry_ != null) {
-          combatHubEntranceTelemetry_ =
-            POGOProtos.Rpc.CombatHubEntranceTelemetry.newBuilder(combatHubEntranceTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 50 &&
+            telemetryData_ != POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.CombatHubEntranceTelemetry.newBuilder((POGOProtos.Rpc.CombatHubEntranceTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          combatHubEntranceTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        combatHubEntranceTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 50) {
+          combatHubEntranceTelemetryBuilder_.mergeFrom(value);
+        }
+        combatHubEntranceTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 50;
       return this;
     }
     /**
@@ -10560,32 +11891,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearCombatHubEntranceTelemetry() {
       if (combatHubEntranceTelemetryBuilder_ == null) {
-        combatHubEntranceTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 50) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        combatHubEntranceTelemetry_ = null;
-        combatHubEntranceTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 50) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        combatHubEntranceTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;</code>
      */
     public POGOProtos.Rpc.CombatHubEntranceTelemetry.Builder getCombatHubEntranceTelemetryBuilder() {
-      
-      onChanged();
       return getCombatHubEntranceTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;</code>
      */
     public POGOProtos.Rpc.CombatHubEntranceTelemetryOrBuilder getCombatHubEntranceTelemetryOrBuilder() {
-      if (combatHubEntranceTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 50) && (combatHubEntranceTelemetryBuilder_ != null)) {
         return combatHubEntranceTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return combatHubEntranceTelemetry_ == null ?
-            POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance() : combatHubEntranceTelemetry_;
+        if (telemetryDataCase_ == 50) {
+          return (POGOProtos.Rpc.CombatHubEntranceTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10595,17 +11931,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.CombatHubEntranceTelemetry, POGOProtos.Rpc.CombatHubEntranceTelemetry.Builder, POGOProtos.Rpc.CombatHubEntranceTelemetryOrBuilder> 
         getCombatHubEntranceTelemetryFieldBuilder() {
       if (combatHubEntranceTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 50)) {
+          telemetryData_ = POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance();
+        }
         combatHubEntranceTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.CombatHubEntranceTelemetry, POGOProtos.Rpc.CombatHubEntranceTelemetry.Builder, POGOProtos.Rpc.CombatHubEntranceTelemetryOrBuilder>(
-                getCombatHubEntranceTelemetry(),
+                (POGOProtos.Rpc.CombatHubEntranceTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        combatHubEntranceTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 50;
+      onChanged();;
       return combatHubEntranceTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.LeaveInteractionRangeTelemetry leaveInteractionRangeTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.LeaveInteractionRangeTelemetry, POGOProtos.Rpc.LeaveInteractionRangeTelemetry.Builder, POGOProtos.Rpc.LeaveInteractionRangeTelemetryOrBuilder> leaveInteractionRangeTelemetryBuilder_;
     /**
@@ -10613,7 +11953,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the leaveInteractionRangeTelemetry field is set.
      */
     public boolean hasLeaveInteractionRangeTelemetry() {
-      return leaveInteractionRangeTelemetryBuilder_ != null || leaveInteractionRangeTelemetry_ != null;
+      return telemetryDataCase_ == 51;
     }
     /**
      * <code>.POGOProtos.Rpc.LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;</code>
@@ -10621,9 +11961,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.LeaveInteractionRangeTelemetry getLeaveInteractionRangeTelemetry() {
       if (leaveInteractionRangeTelemetryBuilder_ == null) {
-        return leaveInteractionRangeTelemetry_ == null ? POGOProtos.Rpc.LeaveInteractionRangeTelemetry.getDefaultInstance() : leaveInteractionRangeTelemetry_;
+        if (telemetryDataCase_ == 51) {
+          return (POGOProtos.Rpc.LeaveInteractionRangeTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.LeaveInteractionRangeTelemetry.getDefaultInstance();
       } else {
-        return leaveInteractionRangeTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 51) {
+          return leaveInteractionRangeTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.LeaveInteractionRangeTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10634,12 +11980,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        leaveInteractionRangeTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         leaveInteractionRangeTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 51;
       return this;
     }
     /**
@@ -10648,12 +11994,12 @@ private static final long serialVersionUID = 0L;
     public Builder setLeaveInteractionRangeTelemetry(
         POGOProtos.Rpc.LeaveInteractionRangeTelemetry.Builder builderForValue) {
       if (leaveInteractionRangeTelemetryBuilder_ == null) {
-        leaveInteractionRangeTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         leaveInteractionRangeTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 51;
       return this;
     }
     /**
@@ -10661,17 +12007,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeLeaveInteractionRangeTelemetry(POGOProtos.Rpc.LeaveInteractionRangeTelemetry value) {
       if (leaveInteractionRangeTelemetryBuilder_ == null) {
-        if (leaveInteractionRangeTelemetry_ != null) {
-          leaveInteractionRangeTelemetry_ =
-            POGOProtos.Rpc.LeaveInteractionRangeTelemetry.newBuilder(leaveInteractionRangeTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 51 &&
+            telemetryData_ != POGOProtos.Rpc.LeaveInteractionRangeTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.LeaveInteractionRangeTelemetry.newBuilder((POGOProtos.Rpc.LeaveInteractionRangeTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          leaveInteractionRangeTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        leaveInteractionRangeTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 51) {
+          leaveInteractionRangeTelemetryBuilder_.mergeFrom(value);
+        }
+        leaveInteractionRangeTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 51;
       return this;
     }
     /**
@@ -10679,32 +12029,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearLeaveInteractionRangeTelemetry() {
       if (leaveInteractionRangeTelemetryBuilder_ == null) {
-        leaveInteractionRangeTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 51) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        leaveInteractionRangeTelemetry_ = null;
-        leaveInteractionRangeTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 51) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        leaveInteractionRangeTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;</code>
      */
     public POGOProtos.Rpc.LeaveInteractionRangeTelemetry.Builder getLeaveInteractionRangeTelemetryBuilder() {
-      
-      onChanged();
       return getLeaveInteractionRangeTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;</code>
      */
     public POGOProtos.Rpc.LeaveInteractionRangeTelemetryOrBuilder getLeaveInteractionRangeTelemetryOrBuilder() {
-      if (leaveInteractionRangeTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 51) && (leaveInteractionRangeTelemetryBuilder_ != null)) {
         return leaveInteractionRangeTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return leaveInteractionRangeTelemetry_ == null ?
-            POGOProtos.Rpc.LeaveInteractionRangeTelemetry.getDefaultInstance() : leaveInteractionRangeTelemetry_;
+        if (telemetryDataCase_ == 51) {
+          return (POGOProtos.Rpc.LeaveInteractionRangeTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.LeaveInteractionRangeTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10714,17 +12069,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.LeaveInteractionRangeTelemetry, POGOProtos.Rpc.LeaveInteractionRangeTelemetry.Builder, POGOProtos.Rpc.LeaveInteractionRangeTelemetryOrBuilder> 
         getLeaveInteractionRangeTelemetryFieldBuilder() {
       if (leaveInteractionRangeTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 51)) {
+          telemetryData_ = POGOProtos.Rpc.LeaveInteractionRangeTelemetry.getDefaultInstance();
+        }
         leaveInteractionRangeTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.LeaveInteractionRangeTelemetry, POGOProtos.Rpc.LeaveInteractionRangeTelemetry.Builder, POGOProtos.Rpc.LeaveInteractionRangeTelemetryOrBuilder>(
-                getLeaveInteractionRangeTelemetry(),
+                (POGOProtos.Rpc.LeaveInteractionRangeTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        leaveInteractionRangeTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 51;
+      onChanged();;
       return leaveInteractionRangeTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ShoppingPageClickTelemetry shoppingPageClickTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ShoppingPageClickTelemetry, POGOProtos.Rpc.ShoppingPageClickTelemetry.Builder, POGOProtos.Rpc.ShoppingPageClickTelemetryOrBuilder> shoppingPageClickTelemetryBuilder_;
     /**
@@ -10732,7 +12091,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the shoppingPageClickTelemetry field is set.
      */
     public boolean hasShoppingPageClickTelemetry() {
-      return shoppingPageClickTelemetryBuilder_ != null || shoppingPageClickTelemetry_ != null;
+      return telemetryDataCase_ == 52;
     }
     /**
      * <code>.POGOProtos.Rpc.ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;</code>
@@ -10740,9 +12099,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ShoppingPageClickTelemetry getShoppingPageClickTelemetry() {
       if (shoppingPageClickTelemetryBuilder_ == null) {
-        return shoppingPageClickTelemetry_ == null ? POGOProtos.Rpc.ShoppingPageClickTelemetry.getDefaultInstance() : shoppingPageClickTelemetry_;
+        if (telemetryDataCase_ == 52) {
+          return (POGOProtos.Rpc.ShoppingPageClickTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ShoppingPageClickTelemetry.getDefaultInstance();
       } else {
-        return shoppingPageClickTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 52) {
+          return shoppingPageClickTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ShoppingPageClickTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10753,12 +12118,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        shoppingPageClickTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         shoppingPageClickTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 52;
       return this;
     }
     /**
@@ -10767,12 +12132,12 @@ private static final long serialVersionUID = 0L;
     public Builder setShoppingPageClickTelemetry(
         POGOProtos.Rpc.ShoppingPageClickTelemetry.Builder builderForValue) {
       if (shoppingPageClickTelemetryBuilder_ == null) {
-        shoppingPageClickTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         shoppingPageClickTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 52;
       return this;
     }
     /**
@@ -10780,17 +12145,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeShoppingPageClickTelemetry(POGOProtos.Rpc.ShoppingPageClickTelemetry value) {
       if (shoppingPageClickTelemetryBuilder_ == null) {
-        if (shoppingPageClickTelemetry_ != null) {
-          shoppingPageClickTelemetry_ =
-            POGOProtos.Rpc.ShoppingPageClickTelemetry.newBuilder(shoppingPageClickTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 52 &&
+            telemetryData_ != POGOProtos.Rpc.ShoppingPageClickTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ShoppingPageClickTelemetry.newBuilder((POGOProtos.Rpc.ShoppingPageClickTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          shoppingPageClickTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        shoppingPageClickTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 52) {
+          shoppingPageClickTelemetryBuilder_.mergeFrom(value);
+        }
+        shoppingPageClickTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 52;
       return this;
     }
     /**
@@ -10798,32 +12167,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearShoppingPageClickTelemetry() {
       if (shoppingPageClickTelemetryBuilder_ == null) {
-        shoppingPageClickTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 52) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        shoppingPageClickTelemetry_ = null;
-        shoppingPageClickTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 52) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        shoppingPageClickTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;</code>
      */
     public POGOProtos.Rpc.ShoppingPageClickTelemetry.Builder getShoppingPageClickTelemetryBuilder() {
-      
-      onChanged();
       return getShoppingPageClickTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;</code>
      */
     public POGOProtos.Rpc.ShoppingPageClickTelemetryOrBuilder getShoppingPageClickTelemetryOrBuilder() {
-      if (shoppingPageClickTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 52) && (shoppingPageClickTelemetryBuilder_ != null)) {
         return shoppingPageClickTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return shoppingPageClickTelemetry_ == null ?
-            POGOProtos.Rpc.ShoppingPageClickTelemetry.getDefaultInstance() : shoppingPageClickTelemetry_;
+        if (telemetryDataCase_ == 52) {
+          return (POGOProtos.Rpc.ShoppingPageClickTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ShoppingPageClickTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10833,17 +12207,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ShoppingPageClickTelemetry, POGOProtos.Rpc.ShoppingPageClickTelemetry.Builder, POGOProtos.Rpc.ShoppingPageClickTelemetryOrBuilder> 
         getShoppingPageClickTelemetryFieldBuilder() {
       if (shoppingPageClickTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 52)) {
+          telemetryData_ = POGOProtos.Rpc.ShoppingPageClickTelemetry.getDefaultInstance();
+        }
         shoppingPageClickTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ShoppingPageClickTelemetry, POGOProtos.Rpc.ShoppingPageClickTelemetry.Builder, POGOProtos.Rpc.ShoppingPageClickTelemetryOrBuilder>(
-                getShoppingPageClickTelemetry(),
+                (POGOProtos.Rpc.ShoppingPageClickTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        shoppingPageClickTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 52;
+      onChanged();;
       return shoppingPageClickTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ShoppingPageScrollTelemetry shoppingPageScrollTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ShoppingPageScrollTelemetry, POGOProtos.Rpc.ShoppingPageScrollTelemetry.Builder, POGOProtos.Rpc.ShoppingPageScrollTelemetryOrBuilder> shoppingPageScrollTelemetryBuilder_;
     /**
@@ -10851,7 +12229,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the shoppingPageScrollTelemetry field is set.
      */
     public boolean hasShoppingPageScrollTelemetry() {
-      return shoppingPageScrollTelemetryBuilder_ != null || shoppingPageScrollTelemetry_ != null;
+      return telemetryDataCase_ == 53;
     }
     /**
      * <code>.POGOProtos.Rpc.ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;</code>
@@ -10859,9 +12237,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ShoppingPageScrollTelemetry getShoppingPageScrollTelemetry() {
       if (shoppingPageScrollTelemetryBuilder_ == null) {
-        return shoppingPageScrollTelemetry_ == null ? POGOProtos.Rpc.ShoppingPageScrollTelemetry.getDefaultInstance() : shoppingPageScrollTelemetry_;
+        if (telemetryDataCase_ == 53) {
+          return (POGOProtos.Rpc.ShoppingPageScrollTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ShoppingPageScrollTelemetry.getDefaultInstance();
       } else {
-        return shoppingPageScrollTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 53) {
+          return shoppingPageScrollTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ShoppingPageScrollTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10872,12 +12256,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        shoppingPageScrollTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         shoppingPageScrollTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 53;
       return this;
     }
     /**
@@ -10886,12 +12270,12 @@ private static final long serialVersionUID = 0L;
     public Builder setShoppingPageScrollTelemetry(
         POGOProtos.Rpc.ShoppingPageScrollTelemetry.Builder builderForValue) {
       if (shoppingPageScrollTelemetryBuilder_ == null) {
-        shoppingPageScrollTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         shoppingPageScrollTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 53;
       return this;
     }
     /**
@@ -10899,17 +12283,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeShoppingPageScrollTelemetry(POGOProtos.Rpc.ShoppingPageScrollTelemetry value) {
       if (shoppingPageScrollTelemetryBuilder_ == null) {
-        if (shoppingPageScrollTelemetry_ != null) {
-          shoppingPageScrollTelemetry_ =
-            POGOProtos.Rpc.ShoppingPageScrollTelemetry.newBuilder(shoppingPageScrollTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 53 &&
+            telemetryData_ != POGOProtos.Rpc.ShoppingPageScrollTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ShoppingPageScrollTelemetry.newBuilder((POGOProtos.Rpc.ShoppingPageScrollTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          shoppingPageScrollTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        shoppingPageScrollTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 53) {
+          shoppingPageScrollTelemetryBuilder_.mergeFrom(value);
+        }
+        shoppingPageScrollTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 53;
       return this;
     }
     /**
@@ -10917,32 +12305,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearShoppingPageScrollTelemetry() {
       if (shoppingPageScrollTelemetryBuilder_ == null) {
-        shoppingPageScrollTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 53) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        shoppingPageScrollTelemetry_ = null;
-        shoppingPageScrollTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 53) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        shoppingPageScrollTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;</code>
      */
     public POGOProtos.Rpc.ShoppingPageScrollTelemetry.Builder getShoppingPageScrollTelemetryBuilder() {
-      
-      onChanged();
       return getShoppingPageScrollTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;</code>
      */
     public POGOProtos.Rpc.ShoppingPageScrollTelemetryOrBuilder getShoppingPageScrollTelemetryOrBuilder() {
-      if (shoppingPageScrollTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 53) && (shoppingPageScrollTelemetryBuilder_ != null)) {
         return shoppingPageScrollTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return shoppingPageScrollTelemetry_ == null ?
-            POGOProtos.Rpc.ShoppingPageScrollTelemetry.getDefaultInstance() : shoppingPageScrollTelemetry_;
+        if (telemetryDataCase_ == 53) {
+          return (POGOProtos.Rpc.ShoppingPageScrollTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ShoppingPageScrollTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10952,17 +12345,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ShoppingPageScrollTelemetry, POGOProtos.Rpc.ShoppingPageScrollTelemetry.Builder, POGOProtos.Rpc.ShoppingPageScrollTelemetryOrBuilder> 
         getShoppingPageScrollTelemetryFieldBuilder() {
       if (shoppingPageScrollTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 53)) {
+          telemetryData_ = POGOProtos.Rpc.ShoppingPageScrollTelemetry.getDefaultInstance();
+        }
         shoppingPageScrollTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ShoppingPageScrollTelemetry, POGOProtos.Rpc.ShoppingPageScrollTelemetry.Builder, POGOProtos.Rpc.ShoppingPageScrollTelemetryOrBuilder>(
-                getShoppingPageScrollTelemetry(),
+                (POGOProtos.Rpc.ShoppingPageScrollTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        shoppingPageScrollTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 53;
+      onChanged();;
       return shoppingPageScrollTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.DeviceSpecificationsTelemetry deviceSpecificationsTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.DeviceSpecificationsTelemetry, POGOProtos.Rpc.DeviceSpecificationsTelemetry.Builder, POGOProtos.Rpc.DeviceSpecificationsTelemetryOrBuilder> deviceSpecificationsTelemetryBuilder_;
     /**
@@ -10970,7 +12367,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the deviceSpecificationsTelemetry field is set.
      */
     public boolean hasDeviceSpecificationsTelemetry() {
-      return deviceSpecificationsTelemetryBuilder_ != null || deviceSpecificationsTelemetry_ != null;
+      return telemetryDataCase_ == 54;
     }
     /**
      * <code>.POGOProtos.Rpc.DeviceSpecificationsTelemetry device_specifications_telemetry = 54;</code>
@@ -10978,9 +12375,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.DeviceSpecificationsTelemetry getDeviceSpecificationsTelemetry() {
       if (deviceSpecificationsTelemetryBuilder_ == null) {
-        return deviceSpecificationsTelemetry_ == null ? POGOProtos.Rpc.DeviceSpecificationsTelemetry.getDefaultInstance() : deviceSpecificationsTelemetry_;
+        if (telemetryDataCase_ == 54) {
+          return (POGOProtos.Rpc.DeviceSpecificationsTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.DeviceSpecificationsTelemetry.getDefaultInstance();
       } else {
-        return deviceSpecificationsTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 54) {
+          return deviceSpecificationsTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.DeviceSpecificationsTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -10991,12 +12394,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        deviceSpecificationsTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         deviceSpecificationsTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 54;
       return this;
     }
     /**
@@ -11005,12 +12408,12 @@ private static final long serialVersionUID = 0L;
     public Builder setDeviceSpecificationsTelemetry(
         POGOProtos.Rpc.DeviceSpecificationsTelemetry.Builder builderForValue) {
       if (deviceSpecificationsTelemetryBuilder_ == null) {
-        deviceSpecificationsTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         deviceSpecificationsTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 54;
       return this;
     }
     /**
@@ -11018,17 +12421,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeDeviceSpecificationsTelemetry(POGOProtos.Rpc.DeviceSpecificationsTelemetry value) {
       if (deviceSpecificationsTelemetryBuilder_ == null) {
-        if (deviceSpecificationsTelemetry_ != null) {
-          deviceSpecificationsTelemetry_ =
-            POGOProtos.Rpc.DeviceSpecificationsTelemetry.newBuilder(deviceSpecificationsTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 54 &&
+            telemetryData_ != POGOProtos.Rpc.DeviceSpecificationsTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.DeviceSpecificationsTelemetry.newBuilder((POGOProtos.Rpc.DeviceSpecificationsTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          deviceSpecificationsTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        deviceSpecificationsTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 54) {
+          deviceSpecificationsTelemetryBuilder_.mergeFrom(value);
+        }
+        deviceSpecificationsTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 54;
       return this;
     }
     /**
@@ -11036,32 +12443,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearDeviceSpecificationsTelemetry() {
       if (deviceSpecificationsTelemetryBuilder_ == null) {
-        deviceSpecificationsTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 54) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        deviceSpecificationsTelemetry_ = null;
-        deviceSpecificationsTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 54) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        deviceSpecificationsTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.DeviceSpecificationsTelemetry device_specifications_telemetry = 54;</code>
      */
     public POGOProtos.Rpc.DeviceSpecificationsTelemetry.Builder getDeviceSpecificationsTelemetryBuilder() {
-      
-      onChanged();
       return getDeviceSpecificationsTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.DeviceSpecificationsTelemetry device_specifications_telemetry = 54;</code>
      */
     public POGOProtos.Rpc.DeviceSpecificationsTelemetryOrBuilder getDeviceSpecificationsTelemetryOrBuilder() {
-      if (deviceSpecificationsTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 54) && (deviceSpecificationsTelemetryBuilder_ != null)) {
         return deviceSpecificationsTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return deviceSpecificationsTelemetry_ == null ?
-            POGOProtos.Rpc.DeviceSpecificationsTelemetry.getDefaultInstance() : deviceSpecificationsTelemetry_;
+        if (telemetryDataCase_ == 54) {
+          return (POGOProtos.Rpc.DeviceSpecificationsTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.DeviceSpecificationsTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -11071,17 +12483,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.DeviceSpecificationsTelemetry, POGOProtos.Rpc.DeviceSpecificationsTelemetry.Builder, POGOProtos.Rpc.DeviceSpecificationsTelemetryOrBuilder> 
         getDeviceSpecificationsTelemetryFieldBuilder() {
       if (deviceSpecificationsTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 54)) {
+          telemetryData_ = POGOProtos.Rpc.DeviceSpecificationsTelemetry.getDefaultInstance();
+        }
         deviceSpecificationsTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.DeviceSpecificationsTelemetry, POGOProtos.Rpc.DeviceSpecificationsTelemetry.Builder, POGOProtos.Rpc.DeviceSpecificationsTelemetryOrBuilder>(
-                getDeviceSpecificationsTelemetry(),
+                (POGOProtos.Rpc.DeviceSpecificationsTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        deviceSpecificationsTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 54;
+      onChanged();;
       return deviceSpecificationsTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ScreenResolutionTelemetry screenResolutionTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ScreenResolutionTelemetry, POGOProtos.Rpc.ScreenResolutionTelemetry.Builder, POGOProtos.Rpc.ScreenResolutionTelemetryOrBuilder> screenResolutionTelemetryBuilder_;
     /**
@@ -11089,7 +12505,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the screenResolutionTelemetry field is set.
      */
     public boolean hasScreenResolutionTelemetry() {
-      return screenResolutionTelemetryBuilder_ != null || screenResolutionTelemetry_ != null;
+      return telemetryDataCase_ == 55;
     }
     /**
      * <code>.POGOProtos.Rpc.ScreenResolutionTelemetry screen_resolution_telemetry = 55;</code>
@@ -11097,9 +12513,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ScreenResolutionTelemetry getScreenResolutionTelemetry() {
       if (screenResolutionTelemetryBuilder_ == null) {
-        return screenResolutionTelemetry_ == null ? POGOProtos.Rpc.ScreenResolutionTelemetry.getDefaultInstance() : screenResolutionTelemetry_;
+        if (telemetryDataCase_ == 55) {
+          return (POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ScreenResolutionTelemetry.getDefaultInstance();
       } else {
-        return screenResolutionTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 55) {
+          return screenResolutionTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ScreenResolutionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -11110,12 +12532,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        screenResolutionTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         screenResolutionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 55;
       return this;
     }
     /**
@@ -11124,12 +12546,12 @@ private static final long serialVersionUID = 0L;
     public Builder setScreenResolutionTelemetry(
         POGOProtos.Rpc.ScreenResolutionTelemetry.Builder builderForValue) {
       if (screenResolutionTelemetryBuilder_ == null) {
-        screenResolutionTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         screenResolutionTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 55;
       return this;
     }
     /**
@@ -11137,17 +12559,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeScreenResolutionTelemetry(POGOProtos.Rpc.ScreenResolutionTelemetry value) {
       if (screenResolutionTelemetryBuilder_ == null) {
-        if (screenResolutionTelemetry_ != null) {
-          screenResolutionTelemetry_ =
-            POGOProtos.Rpc.ScreenResolutionTelemetry.newBuilder(screenResolutionTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 55 &&
+            telemetryData_ != POGOProtos.Rpc.ScreenResolutionTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ScreenResolutionTelemetry.newBuilder((POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          screenResolutionTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        screenResolutionTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 55) {
+          screenResolutionTelemetryBuilder_.mergeFrom(value);
+        }
+        screenResolutionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 55;
       return this;
     }
     /**
@@ -11155,32 +12581,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearScreenResolutionTelemetry() {
       if (screenResolutionTelemetryBuilder_ == null) {
-        screenResolutionTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 55) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        screenResolutionTelemetry_ = null;
-        screenResolutionTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 55) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        screenResolutionTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ScreenResolutionTelemetry screen_resolution_telemetry = 55;</code>
      */
     public POGOProtos.Rpc.ScreenResolutionTelemetry.Builder getScreenResolutionTelemetryBuilder() {
-      
-      onChanged();
       return getScreenResolutionTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ScreenResolutionTelemetry screen_resolution_telemetry = 55;</code>
      */
     public POGOProtos.Rpc.ScreenResolutionTelemetryOrBuilder getScreenResolutionTelemetryOrBuilder() {
-      if (screenResolutionTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 55) && (screenResolutionTelemetryBuilder_ != null)) {
         return screenResolutionTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return screenResolutionTelemetry_ == null ?
-            POGOProtos.Rpc.ScreenResolutionTelemetry.getDefaultInstance() : screenResolutionTelemetry_;
+        if (telemetryDataCase_ == 55) {
+          return (POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ScreenResolutionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -11190,17 +12621,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ScreenResolutionTelemetry, POGOProtos.Rpc.ScreenResolutionTelemetry.Builder, POGOProtos.Rpc.ScreenResolutionTelemetryOrBuilder> 
         getScreenResolutionTelemetryFieldBuilder() {
       if (screenResolutionTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 55)) {
+          telemetryData_ = POGOProtos.Rpc.ScreenResolutionTelemetry.getDefaultInstance();
+        }
         screenResolutionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ScreenResolutionTelemetry, POGOProtos.Rpc.ScreenResolutionTelemetry.Builder, POGOProtos.Rpc.ScreenResolutionTelemetryOrBuilder>(
-                getScreenResolutionTelemetry(),
+                (POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        screenResolutionTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 55;
+      onChanged();;
       return screenResolutionTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry arBuddyMultiplayerSessionTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder> arBuddyMultiplayerSessionTelemetryBuilder_;
     /**
@@ -11208,7 +12643,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the arBuddyMultiplayerSessionTelemetry field is set.
      */
     public boolean hasArBuddyMultiplayerSessionTelemetry() {
-      return arBuddyMultiplayerSessionTelemetryBuilder_ != null || arBuddyMultiplayerSessionTelemetry_ != null;
+      return telemetryDataCase_ == 56;
     }
     /**
      * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
@@ -11216,9 +12651,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry getArBuddyMultiplayerSessionTelemetry() {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
-        return arBuddyMultiplayerSessionTelemetry_ == null ? POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance() : arBuddyMultiplayerSessionTelemetry_;
+        if (telemetryDataCase_ == 56) {
+          return (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
       } else {
-        return arBuddyMultiplayerSessionTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 56) {
+          return arBuddyMultiplayerSessionTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -11229,12 +12670,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        arBuddyMultiplayerSessionTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         arBuddyMultiplayerSessionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 56;
       return this;
     }
     /**
@@ -11243,12 +12684,12 @@ private static final long serialVersionUID = 0L;
     public Builder setArBuddyMultiplayerSessionTelemetry(
         POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder builderForValue) {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
-        arBuddyMultiplayerSessionTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         arBuddyMultiplayerSessionTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 56;
       return this;
     }
     /**
@@ -11256,17 +12697,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeArBuddyMultiplayerSessionTelemetry(POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry value) {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
-        if (arBuddyMultiplayerSessionTelemetry_ != null) {
-          arBuddyMultiplayerSessionTelemetry_ =
-            POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.newBuilder(arBuddyMultiplayerSessionTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 56 &&
+            telemetryData_ != POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.newBuilder((POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          arBuddyMultiplayerSessionTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        arBuddyMultiplayerSessionTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 56) {
+          arBuddyMultiplayerSessionTelemetryBuilder_.mergeFrom(value);
+        }
+        arBuddyMultiplayerSessionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 56;
       return this;
     }
     /**
@@ -11274,32 +12719,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearArBuddyMultiplayerSessionTelemetry() {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
-        arBuddyMultiplayerSessionTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 56) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        arBuddyMultiplayerSessionTelemetry_ = null;
-        arBuddyMultiplayerSessionTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 56) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        arBuddyMultiplayerSessionTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      */
     public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder getArBuddyMultiplayerSessionTelemetryBuilder() {
-      
-      onChanged();
       return getArBuddyMultiplayerSessionTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      */
     public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder() {
-      if (arBuddyMultiplayerSessionTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 56) && (arBuddyMultiplayerSessionTelemetryBuilder_ != null)) {
         return arBuddyMultiplayerSessionTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return arBuddyMultiplayerSessionTelemetry_ == null ?
-            POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance() : arBuddyMultiplayerSessionTelemetry_;
+        if (telemetryDataCase_ == 56) {
+          return (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -11309,17 +12759,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder> 
         getArBuddyMultiplayerSessionTelemetryFieldBuilder() {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 56)) {
+          telemetryData_ = POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
+        }
         arBuddyMultiplayerSessionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder>(
-                getArBuddyMultiplayerSessionTelemetry(),
+                (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        arBuddyMultiplayerSessionTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 56;
+      onChanged();;
       return arBuddyMultiplayerSessionTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddyMultiplayerConnectionFailedTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder> buddyMultiplayerConnectionFailedTelemetryBuilder_;
     /**
@@ -11327,7 +12781,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the buddyMultiplayerConnectionFailedTelemetry field is set.
      */
     public boolean hasBuddyMultiplayerConnectionFailedTelemetry() {
-      return buddyMultiplayerConnectionFailedTelemetryBuilder_ != null || buddyMultiplayerConnectionFailedTelemetry_ != null;
+      return telemetryDataCase_ == 57;
     }
     /**
      * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
@@ -11335,9 +12789,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto getBuddyMultiplayerConnectionFailedTelemetry() {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
-        return buddyMultiplayerConnectionFailedTelemetry_ == null ? POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance() : buddyMultiplayerConnectionFailedTelemetry_;
+        if (telemetryDataCase_ == 57) {
+          return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
       } else {
-        return buddyMultiplayerConnectionFailedTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 57) {
+          return buddyMultiplayerConnectionFailedTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
       }
     }
     /**
@@ -11348,12 +12808,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        buddyMultiplayerConnectionFailedTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         buddyMultiplayerConnectionFailedTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 57;
       return this;
     }
     /**
@@ -11362,12 +12822,12 @@ private static final long serialVersionUID = 0L;
     public Builder setBuddyMultiplayerConnectionFailedTelemetry(
         POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder builderForValue) {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
-        buddyMultiplayerConnectionFailedTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         buddyMultiplayerConnectionFailedTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 57;
       return this;
     }
     /**
@@ -11375,17 +12835,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeBuddyMultiplayerConnectionFailedTelemetry(POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto value) {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
-        if (buddyMultiplayerConnectionFailedTelemetry_ != null) {
-          buddyMultiplayerConnectionFailedTelemetry_ =
-            POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.newBuilder(buddyMultiplayerConnectionFailedTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 57 &&
+            telemetryData_ != POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.newBuilder((POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          buddyMultiplayerConnectionFailedTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        buddyMultiplayerConnectionFailedTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 57) {
+          buddyMultiplayerConnectionFailedTelemetryBuilder_.mergeFrom(value);
+        }
+        buddyMultiplayerConnectionFailedTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 57;
       return this;
     }
     /**
@@ -11393,32 +12857,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearBuddyMultiplayerConnectionFailedTelemetry() {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
-        buddyMultiplayerConnectionFailedTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 57) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        buddyMultiplayerConnectionFailedTelemetry_ = null;
-        buddyMultiplayerConnectionFailedTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 57) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        buddyMultiplayerConnectionFailedTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      */
     public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder getBuddyMultiplayerConnectionFailedTelemetryBuilder() {
-      
-      onChanged();
       return getBuddyMultiplayerConnectionFailedTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      */
     public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder getBuddyMultiplayerConnectionFailedTelemetryOrBuilder() {
-      if (buddyMultiplayerConnectionFailedTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 57) && (buddyMultiplayerConnectionFailedTelemetryBuilder_ != null)) {
         return buddyMultiplayerConnectionFailedTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return buddyMultiplayerConnectionFailedTelemetry_ == null ?
-            POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance() : buddyMultiplayerConnectionFailedTelemetry_;
+        if (telemetryDataCase_ == 57) {
+          return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
       }
     }
     /**
@@ -11428,17 +12897,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder> 
         getBuddyMultiplayerConnectionFailedTelemetryFieldBuilder() {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 57)) {
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
+        }
         buddyMultiplayerConnectionFailedTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder>(
-                getBuddyMultiplayerConnectionFailedTelemetry(),
+                (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        buddyMultiplayerConnectionFailedTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 57;
+      onChanged();;
       return buddyMultiplayerConnectionFailedTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddyMultiplayerConnectionSucceededTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder> buddyMultiplayerConnectionSucceededTelemetryBuilder_;
     /**
@@ -11446,7 +12919,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the buddyMultiplayerConnectionSucceededTelemetry field is set.
      */
     public boolean hasBuddyMultiplayerConnectionSucceededTelemetry() {
-      return buddyMultiplayerConnectionSucceededTelemetryBuilder_ != null || buddyMultiplayerConnectionSucceededTelemetry_ != null;
+      return telemetryDataCase_ == 58;
     }
     /**
      * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
@@ -11454,9 +12927,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto getBuddyMultiplayerConnectionSucceededTelemetry() {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
-        return buddyMultiplayerConnectionSucceededTelemetry_ == null ? POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance() : buddyMultiplayerConnectionSucceededTelemetry_;
+        if (telemetryDataCase_ == 58) {
+          return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
       } else {
-        return buddyMultiplayerConnectionSucceededTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 58) {
+          return buddyMultiplayerConnectionSucceededTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
       }
     }
     /**
@@ -11467,12 +12946,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        buddyMultiplayerConnectionSucceededTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         buddyMultiplayerConnectionSucceededTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 58;
       return this;
     }
     /**
@@ -11481,12 +12960,12 @@ private static final long serialVersionUID = 0L;
     public Builder setBuddyMultiplayerConnectionSucceededTelemetry(
         POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder builderForValue) {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
-        buddyMultiplayerConnectionSucceededTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         buddyMultiplayerConnectionSucceededTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 58;
       return this;
     }
     /**
@@ -11494,17 +12973,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeBuddyMultiplayerConnectionSucceededTelemetry(POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto value) {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
-        if (buddyMultiplayerConnectionSucceededTelemetry_ != null) {
-          buddyMultiplayerConnectionSucceededTelemetry_ =
-            POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.newBuilder(buddyMultiplayerConnectionSucceededTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 58 &&
+            telemetryData_ != POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.newBuilder((POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          buddyMultiplayerConnectionSucceededTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        buddyMultiplayerConnectionSucceededTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 58) {
+          buddyMultiplayerConnectionSucceededTelemetryBuilder_.mergeFrom(value);
+        }
+        buddyMultiplayerConnectionSucceededTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 58;
       return this;
     }
     /**
@@ -11512,32 +12995,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearBuddyMultiplayerConnectionSucceededTelemetry() {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
-        buddyMultiplayerConnectionSucceededTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 58) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        buddyMultiplayerConnectionSucceededTelemetry_ = null;
-        buddyMultiplayerConnectionSucceededTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 58) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        buddyMultiplayerConnectionSucceededTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      */
     public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder getBuddyMultiplayerConnectionSucceededTelemetryBuilder() {
-      
-      onChanged();
       return getBuddyMultiplayerConnectionSucceededTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      */
     public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder getBuddyMultiplayerConnectionSucceededTelemetryOrBuilder() {
-      if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 58) && (buddyMultiplayerConnectionSucceededTelemetryBuilder_ != null)) {
         return buddyMultiplayerConnectionSucceededTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return buddyMultiplayerConnectionSucceededTelemetry_ == null ?
-            POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance() : buddyMultiplayerConnectionSucceededTelemetry_;
+        if (telemetryDataCase_ == 58) {
+          return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
       }
     }
     /**
@@ -11547,17 +13035,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder> 
         getBuddyMultiplayerConnectionSucceededTelemetryFieldBuilder() {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 58)) {
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
+        }
         buddyMultiplayerConnectionSucceededTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder>(
-                getBuddyMultiplayerConnectionSucceededTelemetry(),
+                (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        buddyMultiplayerConnectionSucceededTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 58;
+      onChanged();;
       return buddyMultiplayerConnectionSucceededTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddyMultiplayerTimeToGetSessionTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder> buddyMultiplayerTimeToGetSessionTelemetryBuilder_;
     /**
@@ -11565,7 +13057,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the buddyMultiplayerTimeToGetSessionTelemetry field is set.
      */
     public boolean hasBuddyMultiplayerTimeToGetSessionTelemetry() {
-      return buddyMultiplayerTimeToGetSessionTelemetryBuilder_ != null || buddyMultiplayerTimeToGetSessionTelemetry_ != null;
+      return telemetryDataCase_ == 59;
     }
     /**
      * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
@@ -11573,9 +13065,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto getBuddyMultiplayerTimeToGetSessionTelemetry() {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
-        return buddyMultiplayerTimeToGetSessionTelemetry_ == null ? POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance() : buddyMultiplayerTimeToGetSessionTelemetry_;
+        if (telemetryDataCase_ == 59) {
+          return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
       } else {
-        return buddyMultiplayerTimeToGetSessionTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 59) {
+          return buddyMultiplayerTimeToGetSessionTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
       }
     }
     /**
@@ -11586,12 +13084,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        buddyMultiplayerTimeToGetSessionTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         buddyMultiplayerTimeToGetSessionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 59;
       return this;
     }
     /**
@@ -11600,12 +13098,12 @@ private static final long serialVersionUID = 0L;
     public Builder setBuddyMultiplayerTimeToGetSessionTelemetry(
         POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder builderForValue) {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
-        buddyMultiplayerTimeToGetSessionTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         buddyMultiplayerTimeToGetSessionTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 59;
       return this;
     }
     /**
@@ -11613,17 +13111,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeBuddyMultiplayerTimeToGetSessionTelemetry(POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto value) {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
-        if (buddyMultiplayerTimeToGetSessionTelemetry_ != null) {
-          buddyMultiplayerTimeToGetSessionTelemetry_ =
-            POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.newBuilder(buddyMultiplayerTimeToGetSessionTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 59 &&
+            telemetryData_ != POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.newBuilder((POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          buddyMultiplayerTimeToGetSessionTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        buddyMultiplayerTimeToGetSessionTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 59) {
+          buddyMultiplayerTimeToGetSessionTelemetryBuilder_.mergeFrom(value);
+        }
+        buddyMultiplayerTimeToGetSessionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 59;
       return this;
     }
     /**
@@ -11631,32 +13133,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearBuddyMultiplayerTimeToGetSessionTelemetry() {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
-        buddyMultiplayerTimeToGetSessionTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 59) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        buddyMultiplayerTimeToGetSessionTelemetry_ = null;
-        buddyMultiplayerTimeToGetSessionTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 59) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        buddyMultiplayerTimeToGetSessionTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      */
     public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder getBuddyMultiplayerTimeToGetSessionTelemetryBuilder() {
-      
-      onChanged();
       return getBuddyMultiplayerTimeToGetSessionTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      */
     public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder getBuddyMultiplayerTimeToGetSessionTelemetryOrBuilder() {
-      if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 59) && (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ != null)) {
         return buddyMultiplayerTimeToGetSessionTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return buddyMultiplayerTimeToGetSessionTelemetry_ == null ?
-            POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance() : buddyMultiplayerTimeToGetSessionTelemetry_;
+        if (telemetryDataCase_ == 59) {
+          return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
       }
     }
     /**
@@ -11666,17 +13173,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder> 
         getBuddyMultiplayerTimeToGetSessionTelemetryFieldBuilder() {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 59)) {
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
+        }
         buddyMultiplayerTimeToGetSessionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder>(
-                getBuddyMultiplayerTimeToGetSessionTelemetry(),
+                (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        buddyMultiplayerTimeToGetSessionTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 59;
+      onChanged();;
       return buddyMultiplayerTimeToGetSessionTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.PlayerHudNotificationClickTelemetry playerHudNotificationClickTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlayerHudNotificationClickTelemetry, POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.Builder, POGOProtos.Rpc.PlayerHudNotificationClickTelemetryOrBuilder> playerHudNotificationClickTelemetryBuilder_;
     /**
@@ -11684,7 +13195,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the playerHudNotificationClickTelemetry field is set.
      */
     public boolean hasPlayerHudNotificationClickTelemetry() {
-      return playerHudNotificationClickTelemetryBuilder_ != null || playerHudNotificationClickTelemetry_ != null;
+      return telemetryDataCase_ == 60;
     }
     /**
      * <code>.POGOProtos.Rpc.PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;</code>
@@ -11692,9 +13203,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PlayerHudNotificationClickTelemetry getPlayerHudNotificationClickTelemetry() {
       if (playerHudNotificationClickTelemetryBuilder_ == null) {
-        return playerHudNotificationClickTelemetry_ == null ? POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.getDefaultInstance() : playerHudNotificationClickTelemetry_;
+        if (telemetryDataCase_ == 60) {
+          return (POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.getDefaultInstance();
       } else {
-        return playerHudNotificationClickTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 60) {
+          return playerHudNotificationClickTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -11705,12 +13222,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        playerHudNotificationClickTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         playerHudNotificationClickTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 60;
       return this;
     }
     /**
@@ -11719,12 +13236,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPlayerHudNotificationClickTelemetry(
         POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.Builder builderForValue) {
       if (playerHudNotificationClickTelemetryBuilder_ == null) {
-        playerHudNotificationClickTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         playerHudNotificationClickTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 60;
       return this;
     }
     /**
@@ -11732,17 +13249,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePlayerHudNotificationClickTelemetry(POGOProtos.Rpc.PlayerHudNotificationClickTelemetry value) {
       if (playerHudNotificationClickTelemetryBuilder_ == null) {
-        if (playerHudNotificationClickTelemetry_ != null) {
-          playerHudNotificationClickTelemetry_ =
-            POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.newBuilder(playerHudNotificationClickTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 60 &&
+            telemetryData_ != POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.newBuilder((POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          playerHudNotificationClickTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        playerHudNotificationClickTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 60) {
+          playerHudNotificationClickTelemetryBuilder_.mergeFrom(value);
+        }
+        playerHudNotificationClickTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 60;
       return this;
     }
     /**
@@ -11750,32 +13271,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPlayerHudNotificationClickTelemetry() {
       if (playerHudNotificationClickTelemetryBuilder_ == null) {
-        playerHudNotificationClickTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 60) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        playerHudNotificationClickTelemetry_ = null;
-        playerHudNotificationClickTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 60) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        playerHudNotificationClickTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;</code>
      */
     public POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.Builder getPlayerHudNotificationClickTelemetryBuilder() {
-      
-      onChanged();
       return getPlayerHudNotificationClickTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;</code>
      */
     public POGOProtos.Rpc.PlayerHudNotificationClickTelemetryOrBuilder getPlayerHudNotificationClickTelemetryOrBuilder() {
-      if (playerHudNotificationClickTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 60) && (playerHudNotificationClickTelemetryBuilder_ != null)) {
         return playerHudNotificationClickTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return playerHudNotificationClickTelemetry_ == null ?
-            POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.getDefaultInstance() : playerHudNotificationClickTelemetry_;
+        if (telemetryDataCase_ == 60) {
+          return (POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -11785,17 +13311,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlayerHudNotificationClickTelemetry, POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.Builder, POGOProtos.Rpc.PlayerHudNotificationClickTelemetryOrBuilder> 
         getPlayerHudNotificationClickTelemetryFieldBuilder() {
       if (playerHudNotificationClickTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 60)) {
+          telemetryData_ = POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.getDefaultInstance();
+        }
         playerHudNotificationClickTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PlayerHudNotificationClickTelemetry, POGOProtos.Rpc.PlayerHudNotificationClickTelemetry.Builder, POGOProtos.Rpc.PlayerHudNotificationClickTelemetryOrBuilder>(
-                getPlayerHudNotificationClickTelemetry(),
+                (POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        playerHudNotificationClickTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 60;
+      onChanged();;
       return playerHudNotificationClickTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.MonodepthDownloadTelemetry monodepthDownloadTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.MonodepthDownloadTelemetry, POGOProtos.Rpc.MonodepthDownloadTelemetry.Builder, POGOProtos.Rpc.MonodepthDownloadTelemetryOrBuilder> monodepthDownloadTelemetryBuilder_;
     /**
@@ -11803,7 +13333,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the monodepthDownloadTelemetry field is set.
      */
     public boolean hasMonodepthDownloadTelemetry() {
-      return monodepthDownloadTelemetryBuilder_ != null || monodepthDownloadTelemetry_ != null;
+      return telemetryDataCase_ == 61;
     }
     /**
      * <code>.POGOProtos.Rpc.MonodepthDownloadTelemetry monodepth_download_telemetry = 61;</code>
@@ -11811,9 +13341,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.MonodepthDownloadTelemetry getMonodepthDownloadTelemetry() {
       if (monodepthDownloadTelemetryBuilder_ == null) {
-        return monodepthDownloadTelemetry_ == null ? POGOProtos.Rpc.MonodepthDownloadTelemetry.getDefaultInstance() : monodepthDownloadTelemetry_;
+        if (telemetryDataCase_ == 61) {
+          return (POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.MonodepthDownloadTelemetry.getDefaultInstance();
       } else {
-        return monodepthDownloadTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 61) {
+          return monodepthDownloadTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.MonodepthDownloadTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -11824,12 +13360,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        monodepthDownloadTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         monodepthDownloadTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 61;
       return this;
     }
     /**
@@ -11838,12 +13374,12 @@ private static final long serialVersionUID = 0L;
     public Builder setMonodepthDownloadTelemetry(
         POGOProtos.Rpc.MonodepthDownloadTelemetry.Builder builderForValue) {
       if (monodepthDownloadTelemetryBuilder_ == null) {
-        monodepthDownloadTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         monodepthDownloadTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 61;
       return this;
     }
     /**
@@ -11851,17 +13387,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeMonodepthDownloadTelemetry(POGOProtos.Rpc.MonodepthDownloadTelemetry value) {
       if (monodepthDownloadTelemetryBuilder_ == null) {
-        if (monodepthDownloadTelemetry_ != null) {
-          monodepthDownloadTelemetry_ =
-            POGOProtos.Rpc.MonodepthDownloadTelemetry.newBuilder(monodepthDownloadTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 61 &&
+            telemetryData_ != POGOProtos.Rpc.MonodepthDownloadTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.MonodepthDownloadTelemetry.newBuilder((POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          monodepthDownloadTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        monodepthDownloadTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 61) {
+          monodepthDownloadTelemetryBuilder_.mergeFrom(value);
+        }
+        monodepthDownloadTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 61;
       return this;
     }
     /**
@@ -11869,32 +13409,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearMonodepthDownloadTelemetry() {
       if (monodepthDownloadTelemetryBuilder_ == null) {
-        monodepthDownloadTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 61) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        monodepthDownloadTelemetry_ = null;
-        monodepthDownloadTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 61) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        monodepthDownloadTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.MonodepthDownloadTelemetry monodepth_download_telemetry = 61;</code>
      */
     public POGOProtos.Rpc.MonodepthDownloadTelemetry.Builder getMonodepthDownloadTelemetryBuilder() {
-      
-      onChanged();
       return getMonodepthDownloadTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.MonodepthDownloadTelemetry monodepth_download_telemetry = 61;</code>
      */
     public POGOProtos.Rpc.MonodepthDownloadTelemetryOrBuilder getMonodepthDownloadTelemetryOrBuilder() {
-      if (monodepthDownloadTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 61) && (monodepthDownloadTelemetryBuilder_ != null)) {
         return monodepthDownloadTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return monodepthDownloadTelemetry_ == null ?
-            POGOProtos.Rpc.MonodepthDownloadTelemetry.getDefaultInstance() : monodepthDownloadTelemetry_;
+        if (telemetryDataCase_ == 61) {
+          return (POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.MonodepthDownloadTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -11904,17 +13449,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.MonodepthDownloadTelemetry, POGOProtos.Rpc.MonodepthDownloadTelemetry.Builder, POGOProtos.Rpc.MonodepthDownloadTelemetryOrBuilder> 
         getMonodepthDownloadTelemetryFieldBuilder() {
       if (monodepthDownloadTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 61)) {
+          telemetryData_ = POGOProtos.Rpc.MonodepthDownloadTelemetry.getDefaultInstance();
+        }
         monodepthDownloadTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.MonodepthDownloadTelemetry, POGOProtos.Rpc.MonodepthDownloadTelemetry.Builder, POGOProtos.Rpc.MonodepthDownloadTelemetryOrBuilder>(
-                getMonodepthDownloadTelemetry(),
+                (POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        monodepthDownloadTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 61;
+      onChanged();;
       return monodepthDownloadTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.ArMappingTelemetryProto arMappingTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ArMappingTelemetryProto, POGOProtos.Rpc.ArMappingTelemetryProto.Builder, POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder> arMappingTelemetryBuilder_;
     /**
@@ -11922,7 +13471,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the arMappingTelemetry field is set.
      */
     public boolean hasArMappingTelemetry() {
-      return arMappingTelemetryBuilder_ != null || arMappingTelemetry_ != null;
+      return telemetryDataCase_ == 62;
     }
     /**
      * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
@@ -11930,9 +13479,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ArMappingTelemetryProto getArMappingTelemetry() {
       if (arMappingTelemetryBuilder_ == null) {
-        return arMappingTelemetry_ == null ? POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance() : arMappingTelemetry_;
+        if (telemetryDataCase_ == 62) {
+          return (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
       } else {
-        return arMappingTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 62) {
+          return arMappingTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
       }
     }
     /**
@@ -11943,12 +13498,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        arMappingTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         arMappingTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 62;
       return this;
     }
     /**
@@ -11957,12 +13512,12 @@ private static final long serialVersionUID = 0L;
     public Builder setArMappingTelemetry(
         POGOProtos.Rpc.ArMappingTelemetryProto.Builder builderForValue) {
       if (arMappingTelemetryBuilder_ == null) {
-        arMappingTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         arMappingTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 62;
       return this;
     }
     /**
@@ -11970,17 +13525,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeArMappingTelemetry(POGOProtos.Rpc.ArMappingTelemetryProto value) {
       if (arMappingTelemetryBuilder_ == null) {
-        if (arMappingTelemetry_ != null) {
-          arMappingTelemetry_ =
-            POGOProtos.Rpc.ArMappingTelemetryProto.newBuilder(arMappingTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 62 &&
+            telemetryData_ != POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ArMappingTelemetryProto.newBuilder((POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          arMappingTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        arMappingTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 62) {
+          arMappingTelemetryBuilder_.mergeFrom(value);
+        }
+        arMappingTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 62;
       return this;
     }
     /**
@@ -11988,32 +13547,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearArMappingTelemetry() {
       if (arMappingTelemetryBuilder_ == null) {
-        arMappingTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 62) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        arMappingTelemetry_ = null;
-        arMappingTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 62) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        arMappingTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      */
     public POGOProtos.Rpc.ArMappingTelemetryProto.Builder getArMappingTelemetryBuilder() {
-      
-      onChanged();
       return getArMappingTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      */
     public POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder getArMappingTelemetryOrBuilder() {
-      if (arMappingTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 62) && (arMappingTelemetryBuilder_ != null)) {
         return arMappingTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return arMappingTelemetry_ == null ?
-            POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance() : arMappingTelemetry_;
+        if (telemetryDataCase_ == 62) {
+          return (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_;
+        }
+        return POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
       }
     }
     /**
@@ -12023,17 +13587,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ArMappingTelemetryProto, POGOProtos.Rpc.ArMappingTelemetryProto.Builder, POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder> 
         getArMappingTelemetryFieldBuilder() {
       if (arMappingTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 62)) {
+          telemetryData_ = POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
+        }
         arMappingTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ArMappingTelemetryProto, POGOProtos.Rpc.ArMappingTelemetryProto.Builder, POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder>(
-                getArMappingTelemetry(),
+                (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        arMappingTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 62;
+      onChanged();;
       return arMappingTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.RemoteRaidTelemetry remoteRaidTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.RemoteRaidTelemetry, POGOProtos.Rpc.RemoteRaidTelemetry.Builder, POGOProtos.Rpc.RemoteRaidTelemetryOrBuilder> remoteRaidTelemetryBuilder_;
     /**
@@ -12041,7 +13609,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the remoteRaidTelemetry field is set.
      */
     public boolean hasRemoteRaidTelemetry() {
-      return remoteRaidTelemetryBuilder_ != null || remoteRaidTelemetry_ != null;
+      return telemetryDataCase_ == 63;
     }
     /**
      * <code>.POGOProtos.Rpc.RemoteRaidTelemetry remote_raid_telemetry = 63;</code>
@@ -12049,9 +13617,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.RemoteRaidTelemetry getRemoteRaidTelemetry() {
       if (remoteRaidTelemetryBuilder_ == null) {
-        return remoteRaidTelemetry_ == null ? POGOProtos.Rpc.RemoteRaidTelemetry.getDefaultInstance() : remoteRaidTelemetry_;
+        if (telemetryDataCase_ == 63) {
+          return (POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.RemoteRaidTelemetry.getDefaultInstance();
       } else {
-        return remoteRaidTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 63) {
+          return remoteRaidTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.RemoteRaidTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -12062,12 +13636,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        remoteRaidTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         remoteRaidTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 63;
       return this;
     }
     /**
@@ -12076,12 +13650,12 @@ private static final long serialVersionUID = 0L;
     public Builder setRemoteRaidTelemetry(
         POGOProtos.Rpc.RemoteRaidTelemetry.Builder builderForValue) {
       if (remoteRaidTelemetryBuilder_ == null) {
-        remoteRaidTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         remoteRaidTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 63;
       return this;
     }
     /**
@@ -12089,17 +13663,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeRemoteRaidTelemetry(POGOProtos.Rpc.RemoteRaidTelemetry value) {
       if (remoteRaidTelemetryBuilder_ == null) {
-        if (remoteRaidTelemetry_ != null) {
-          remoteRaidTelemetry_ =
-            POGOProtos.Rpc.RemoteRaidTelemetry.newBuilder(remoteRaidTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 63 &&
+            telemetryData_ != POGOProtos.Rpc.RemoteRaidTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.RemoteRaidTelemetry.newBuilder((POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          remoteRaidTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        remoteRaidTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 63) {
+          remoteRaidTelemetryBuilder_.mergeFrom(value);
+        }
+        remoteRaidTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 63;
       return this;
     }
     /**
@@ -12107,32 +13685,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearRemoteRaidTelemetry() {
       if (remoteRaidTelemetryBuilder_ == null) {
-        remoteRaidTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 63) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        remoteRaidTelemetry_ = null;
-        remoteRaidTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 63) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        remoteRaidTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.RemoteRaidTelemetry remote_raid_telemetry = 63;</code>
      */
     public POGOProtos.Rpc.RemoteRaidTelemetry.Builder getRemoteRaidTelemetryBuilder() {
-      
-      onChanged();
       return getRemoteRaidTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.RemoteRaidTelemetry remote_raid_telemetry = 63;</code>
      */
     public POGOProtos.Rpc.RemoteRaidTelemetryOrBuilder getRemoteRaidTelemetryOrBuilder() {
-      if (remoteRaidTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 63) && (remoteRaidTelemetryBuilder_ != null)) {
         return remoteRaidTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return remoteRaidTelemetry_ == null ?
-            POGOProtos.Rpc.RemoteRaidTelemetry.getDefaultInstance() : remoteRaidTelemetry_;
+        if (telemetryDataCase_ == 63) {
+          return (POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.RemoteRaidTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -12142,14 +13725,157 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.RemoteRaidTelemetry, POGOProtos.Rpc.RemoteRaidTelemetry.Builder, POGOProtos.Rpc.RemoteRaidTelemetryOrBuilder> 
         getRemoteRaidTelemetryFieldBuilder() {
       if (remoteRaidTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 63)) {
+          telemetryData_ = POGOProtos.Rpc.RemoteRaidTelemetry.getDefaultInstance();
+        }
         remoteRaidTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.RemoteRaidTelemetry, POGOProtos.Rpc.RemoteRaidTelemetry.Builder, POGOProtos.Rpc.RemoteRaidTelemetryOrBuilder>(
-                getRemoteRaidTelemetry(),
+                (POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        remoteRaidTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 63;
+      onChanged();;
       return remoteRaidTelemetryBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.DeviceOSTelemetry, POGOProtos.Rpc.DeviceOSTelemetry.Builder, POGOProtos.Rpc.DeviceOSTelemetryOrBuilder> deviceOsTelemetryBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     * @return Whether the deviceOsTelemetry field is set.
+     */
+    public boolean hasDeviceOsTelemetry() {
+      return telemetryDataCase_ == 64;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     * @return The deviceOsTelemetry.
+     */
+    public POGOProtos.Rpc.DeviceOSTelemetry getDeviceOsTelemetry() {
+      if (deviceOsTelemetryBuilder_ == null) {
+        if (telemetryDataCase_ == 64) {
+          return (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
+      } else {
+        if (telemetryDataCase_ == 64) {
+          return deviceOsTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public Builder setDeviceOsTelemetry(POGOProtos.Rpc.DeviceOSTelemetry value) {
+      if (deviceOsTelemetryBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        telemetryData_ = value;
+        onChanged();
+      } else {
+        deviceOsTelemetryBuilder_.setMessage(value);
+      }
+      telemetryDataCase_ = 64;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public Builder setDeviceOsTelemetry(
+        POGOProtos.Rpc.DeviceOSTelemetry.Builder builderForValue) {
+      if (deviceOsTelemetryBuilder_ == null) {
+        telemetryData_ = builderForValue.build();
+        onChanged();
+      } else {
+        deviceOsTelemetryBuilder_.setMessage(builderForValue.build());
+      }
+      telemetryDataCase_ = 64;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public Builder mergeDeviceOsTelemetry(POGOProtos.Rpc.DeviceOSTelemetry value) {
+      if (deviceOsTelemetryBuilder_ == null) {
+        if (telemetryDataCase_ == 64 &&
+            telemetryData_ != POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.DeviceOSTelemetry.newBuilder((POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          telemetryData_ = value;
+        }
+        onChanged();
+      } else {
+        if (telemetryDataCase_ == 64) {
+          deviceOsTelemetryBuilder_.mergeFrom(value);
+        }
+        deviceOsTelemetryBuilder_.setMessage(value);
+      }
+      telemetryDataCase_ = 64;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public Builder clearDeviceOsTelemetry() {
+      if (deviceOsTelemetryBuilder_ == null) {
+        if (telemetryDataCase_ == 64) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
+      } else {
+        if (telemetryDataCase_ == 64) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        deviceOsTelemetryBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public POGOProtos.Rpc.DeviceOSTelemetry.Builder getDeviceOsTelemetryBuilder() {
+      return getDeviceOsTelemetryFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public POGOProtos.Rpc.DeviceOSTelemetryOrBuilder getDeviceOsTelemetryOrBuilder() {
+      if ((telemetryDataCase_ == 64) && (deviceOsTelemetryBuilder_ != null)) {
+        return deviceOsTelemetryBuilder_.getMessageOrBuilder();
+      } else {
+        if (telemetryDataCase_ == 64) {
+          return (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.DeviceOSTelemetry, POGOProtos.Rpc.DeviceOSTelemetry.Builder, POGOProtos.Rpc.DeviceOSTelemetryOrBuilder> 
+        getDeviceOsTelemetryFieldBuilder() {
+      if (deviceOsTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 64)) {
+          telemetryData_ = POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
+        }
+        deviceOsTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.DeviceOSTelemetry, POGOProtos.Rpc.DeviceOSTelemetry.Builder, POGOProtos.Rpc.DeviceOSTelemetryOrBuilder>(
+                (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_,
+                getParentForChildren(),
+                isClean());
+        telemetryData_ = null;
+      }
+      telemetryDataCase_ = 64;
+      onChanged();;
+      return deviceOsTelemetryBuilder_;
     }
 
     private POGOProtos.Rpc.PlatformPlatformServerData serverData_;

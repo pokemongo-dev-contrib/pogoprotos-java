@@ -426,6 +426,36 @@ private static final long serialVersionUID = 0L;
        */
       POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedQuestSectionOrBuilder getTimedQuestOrBuilder();
 
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+       * @return Whether the eventBanner field is set.
+       */
+      boolean hasEventBanner();
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+       * @return The eventBanner.
+       */
+      POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection getEventBanner();
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+       */
+      POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSectionOrBuilder getEventBannerOrBuilder();
+
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+       * @return Whether the timedGroupChallenge field is set.
+       */
+      boolean hasTimedGroupChallenge();
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+       * @return The timedGroupChallenge.
+       */
+      POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection getTimedGroupChallenge();
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+       */
+      POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSectionOrBuilder getTimedGroupChallengeOrBuilder();
+
       public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.SectionCase getSectionCase();
     }
     /**
@@ -557,6 +587,34 @@ private static final long serialVersionUID = 0L;
                 sectionCase_ = 6;
                 break;
               }
+              case 58: {
+                POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.Builder subBuilder = null;
+                if (sectionCase_ == 7) {
+                  subBuilder = ((POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) section_).toBuilder();
+                }
+                section_ =
+                    input.readMessage(POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.parser(), extensionRegistry);
+                if (subBuilder != null) {
+                  subBuilder.mergeFrom((POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) section_);
+                  section_ = subBuilder.buildPartial();
+                }
+                sectionCase_ = 7;
+                break;
+              }
+              case 66: {
+                POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.Builder subBuilder = null;
+                if (sectionCase_ == 8) {
+                  subBuilder = ((POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) section_).toBuilder();
+                }
+                section_ =
+                    input.readMessage(POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.parser(), extensionRegistry);
+                if (subBuilder != null) {
+                  subBuilder.mergeFrom((POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) section_);
+                  section_ = subBuilder.buildPartial();
+                }
+                sectionCase_ = 8;
+                break;
+              }
               default: {
                 if (!parseUnknownField(
                     input, unknownFields, extensionRegistry, tag)) {
@@ -587,6 +645,2322 @@ private static final long serialVersionUID = 0L;
         return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.class, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.Builder.class);
+      }
+
+      public interface TimedGroupChallengeSectionOrBuilder extends
+          // @@protoc_insertion_point(interface_extends:POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection)
+          com.google.protobuf.MessageOrBuilder {
+
+        /**
+         * <code>string challenge_id = 1;</code>
+         * @return The challengeId.
+         */
+        java.lang.String getChallengeId();
+        /**
+         * <code>string challenge_id = 1;</code>
+         * @return The bytes for challengeId.
+         */
+        com.google.protobuf.ByteString
+            getChallengeIdBytes();
+
+        /**
+         * <code>string header_image_url = 2;</code>
+         * @return The headerImageUrl.
+         */
+        java.lang.String getHeaderImageUrl();
+        /**
+         * <code>string header_image_url = 2;</code>
+         * @return The bytes for headerImageUrl.
+         */
+        com.google.protobuf.ByteString
+            getHeaderImageUrlBytes();
+      }
+      /**
+       * Protobuf type {@code POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection}
+       */
+      public  static final class TimedGroupChallengeSection extends
+          com.google.protobuf.GeneratedMessageV3 implements
+          // @@protoc_insertion_point(message_implements:POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection)
+          TimedGroupChallengeSectionOrBuilder {
+      private static final long serialVersionUID = 0L;
+        // Use TimedGroupChallengeSection.newBuilder() to construct.
+        private TimedGroupChallengeSection(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+          super(builder);
+        }
+        private TimedGroupChallengeSection() {
+          challengeId_ = "";
+          headerImageUrl_ = "";
+        }
+
+        @java.lang.Override
+        @SuppressWarnings({"unused"})
+        protected java.lang.Object newInstance(
+            UnusedPrivateParameter unused) {
+          return new TimedGroupChallengeSection();
+        }
+
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+          return this.unknownFields;
+        }
+        private TimedGroupChallengeSection(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          this();
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
+          com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+              com.google.protobuf.UnknownFieldSet.newBuilder();
+          try {
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  java.lang.String s = input.readStringRequireUtf8();
+
+                  challengeId_ = s;
+                  break;
+                }
+                case 18: {
+                  java.lang.String s = input.readStringRequireUtf8();
+
+                  headerImageUrl_ = s;
+                  break;
+                }
+                default: {
+                  if (!parseUnknownField(
+                      input, unknownFields, extensionRegistry, tag)) {
+                    done = true;
+                  }
+                  break;
+                }
+              }
+            }
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(this);
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(
+                e).setUnfinishedMessage(this);
+          } finally {
+            this.unknownFields = unknownFields.build();
+            makeExtensionsImmutable();
+          }
+        }
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedGroupChallengeSection_descriptor;
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedGroupChallengeSection_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.class, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.Builder.class);
+        }
+
+        public static final int CHALLENGE_ID_FIELD_NUMBER = 1;
+        private volatile java.lang.Object challengeId_;
+        /**
+         * <code>string challenge_id = 1;</code>
+         * @return The challengeId.
+         */
+        public java.lang.String getChallengeId() {
+          java.lang.Object ref = challengeId_;
+          if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+          } else {
+            com.google.protobuf.ByteString bs = 
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            challengeId_ = s;
+            return s;
+          }
+        }
+        /**
+         * <code>string challenge_id = 1;</code>
+         * @return The bytes for challengeId.
+         */
+        public com.google.protobuf.ByteString
+            getChallengeIdBytes() {
+          java.lang.Object ref = challengeId_;
+          if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            challengeId_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+
+        public static final int HEADER_IMAGE_URL_FIELD_NUMBER = 2;
+        private volatile java.lang.Object headerImageUrl_;
+        /**
+         * <code>string header_image_url = 2;</code>
+         * @return The headerImageUrl.
+         */
+        public java.lang.String getHeaderImageUrl() {
+          java.lang.Object ref = headerImageUrl_;
+          if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+          } else {
+            com.google.protobuf.ByteString bs = 
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            headerImageUrl_ = s;
+            return s;
+          }
+        }
+        /**
+         * <code>string header_image_url = 2;</code>
+         * @return The bytes for headerImageUrl.
+         */
+        public com.google.protobuf.ByteString
+            getHeaderImageUrlBytes() {
+          java.lang.Object ref = headerImageUrl_;
+          if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            headerImageUrl_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+
+        private byte memoizedIsInitialized = -1;
+        @java.lang.Override
+        public final boolean isInitialized() {
+          byte isInitialized = memoizedIsInitialized;
+          if (isInitialized == 1) return true;
+          if (isInitialized == 0) return false;
+
+          memoizedIsInitialized = 1;
+          return true;
+        }
+
+        @java.lang.Override
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                            throws java.io.IOException {
+          if (!getChallengeIdBytes().isEmpty()) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 1, challengeId_);
+          }
+          if (!getHeaderImageUrlBytes().isEmpty()) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 2, headerImageUrl_);
+          }
+          unknownFields.writeTo(output);
+        }
+
+        @java.lang.Override
+        public int getSerializedSize() {
+          int size = memoizedSize;
+          if (size != -1) return size;
+
+          size = 0;
+          if (!getChallengeIdBytes().isEmpty()) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, challengeId_);
+          }
+          if (!getHeaderImageUrlBytes().isEmpty()) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, headerImageUrl_);
+          }
+          size += unknownFields.getSerializedSize();
+          memoizedSize = size;
+          return size;
+        }
+
+        @java.lang.Override
+        public boolean equals(final java.lang.Object obj) {
+          if (obj == this) {
+           return true;
+          }
+          if (!(obj instanceof POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection)) {
+            return super.equals(obj);
+          }
+          POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection other = (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) obj;
+
+          if (!getChallengeId()
+              .equals(other.getChallengeId())) return false;
+          if (!getHeaderImageUrl()
+              .equals(other.getHeaderImageUrl())) return false;
+          if (!unknownFields.equals(other.unknownFields)) return false;
+          return true;
+        }
+
+        @java.lang.Override
+        public int hashCode() {
+          if (memoizedHashCode != 0) {
+            return memoizedHashCode;
+          }
+          int hash = 41;
+          hash = (19 * hash) + getDescriptor().hashCode();
+          hash = (37 * hash) + CHALLENGE_ID_FIELD_NUMBER;
+          hash = (53 * hash) + getChallengeId().hashCode();
+          hash = (37 * hash) + HEADER_IMAGE_URL_FIELD_NUMBER;
+          hash = (53 * hash) + getHeaderImageUrl().hashCode();
+          hash = (29 * hash) + unknownFields.hashCode();
+          memoizedHashCode = hash;
+          return hash;
+        }
+
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseFrom(
+            java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseFrom(
+            java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseFrom(
+            com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseFrom(
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseFrom(byte[] data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseFrom(
+            byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseFrom(
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input, extensionRegistry);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseDelimitedFrom(java.io.InputStream input)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseDelimitedWithIOException(PARSER, input);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseDelimitedFrom(
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseFrom(
+            com.google.protobuf.CodedInputStream input)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parseFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input, extensionRegistry);
+        }
+
+        @java.lang.Override
+        public Builder newBuilderForType() { return newBuilder(); }
+        public static Builder newBuilder() {
+          return DEFAULT_INSTANCE.toBuilder();
+        }
+        public static Builder newBuilder(POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection prototype) {
+          return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+        }
+        @java.lang.Override
+        public Builder toBuilder() {
+          return this == DEFAULT_INSTANCE
+              ? new Builder() : new Builder().mergeFrom(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          Builder builder = new Builder(parent);
+          return builder;
+        }
+        /**
+         * Protobuf type {@code POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection}
+         */
+        public static final class Builder extends
+            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection)
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSectionOrBuilder {
+          public static final com.google.protobuf.Descriptors.Descriptor
+              getDescriptor() {
+            return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedGroupChallengeSection_descriptor;
+          }
+
+          @java.lang.Override
+          protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+              internalGetFieldAccessorTable() {
+            return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedGroupChallengeSection_fieldAccessorTable
+                .ensureFieldAccessorsInitialized(
+                    POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.class, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.Builder.class);
+          }
+
+          // Construct using POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.newBuilder()
+          private Builder() {
+            maybeForceBuilderInitialization();
+          }
+
+          private Builder(
+              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            super(parent);
+            maybeForceBuilderInitialization();
+          }
+          private void maybeForceBuilderInitialization() {
+            if (com.google.protobuf.GeneratedMessageV3
+                    .alwaysUseFieldBuilders) {
+            }
+          }
+          @java.lang.Override
+          public Builder clear() {
+            super.clear();
+            challengeId_ = "";
+
+            headerImageUrl_ = "";
+
+            return this;
+          }
+
+          @java.lang.Override
+          public com.google.protobuf.Descriptors.Descriptor
+              getDescriptorForType() {
+            return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedGroupChallengeSection_descriptor;
+          }
+
+          @java.lang.Override
+          public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection getDefaultInstanceForType() {
+            return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.getDefaultInstance();
+          }
+
+          @java.lang.Override
+          public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection build() {
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection result = buildPartial();
+            if (!result.isInitialized()) {
+              throw newUninitializedMessageException(result);
+            }
+            return result;
+          }
+
+          @java.lang.Override
+          public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection buildPartial() {
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection result = new POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection(this);
+            result.challengeId_ = challengeId_;
+            result.headerImageUrl_ = headerImageUrl_;
+            onBuilt();
+            return result;
+          }
+
+          @java.lang.Override
+          public Builder clone() {
+            return super.clone();
+          }
+          @java.lang.Override
+          public Builder setField(
+              com.google.protobuf.Descriptors.FieldDescriptor field,
+              java.lang.Object value) {
+            return super.setField(field, value);
+          }
+          @java.lang.Override
+          public Builder clearField(
+              com.google.protobuf.Descriptors.FieldDescriptor field) {
+            return super.clearField(field);
+          }
+          @java.lang.Override
+          public Builder clearOneof(
+              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            return super.clearOneof(oneof);
+          }
+          @java.lang.Override
+          public Builder setRepeatedField(
+              com.google.protobuf.Descriptors.FieldDescriptor field,
+              int index, java.lang.Object value) {
+            return super.setRepeatedField(field, index, value);
+          }
+          @java.lang.Override
+          public Builder addRepeatedField(
+              com.google.protobuf.Descriptors.FieldDescriptor field,
+              java.lang.Object value) {
+            return super.addRepeatedField(field, value);
+          }
+          @java.lang.Override
+          public Builder mergeFrom(com.google.protobuf.Message other) {
+            if (other instanceof POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) {
+              return mergeFrom((POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection)other);
+            } else {
+              super.mergeFrom(other);
+              return this;
+            }
+          }
+
+          public Builder mergeFrom(POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection other) {
+            if (other == POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.getDefaultInstance()) return this;
+            if (!other.getChallengeId().isEmpty()) {
+              challengeId_ = other.challengeId_;
+              onChanged();
+            }
+            if (!other.getHeaderImageUrl().isEmpty()) {
+              headerImageUrl_ = other.headerImageUrl_;
+              onChanged();
+            }
+            this.mergeUnknownFields(other.unknownFields);
+            onChanged();
+            return this;
+          }
+
+          @java.lang.Override
+          public final boolean isInitialized() {
+            return true;
+          }
+
+          @java.lang.Override
+          public Builder mergeFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws java.io.IOException {
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection parsedMessage = null;
+            try {
+              parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+              parsedMessage = (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) e.getUnfinishedMessage();
+              throw e.unwrapIOException();
+            } finally {
+              if (parsedMessage != null) {
+                mergeFrom(parsedMessage);
+              }
+            }
+            return this;
+          }
+
+          private java.lang.Object challengeId_ = "";
+          /**
+           * <code>string challenge_id = 1;</code>
+           * @return The challengeId.
+           */
+          public java.lang.String getChallengeId() {
+            java.lang.Object ref = challengeId_;
+            if (!(ref instanceof java.lang.String)) {
+              com.google.protobuf.ByteString bs =
+                  (com.google.protobuf.ByteString) ref;
+              java.lang.String s = bs.toStringUtf8();
+              challengeId_ = s;
+              return s;
+            } else {
+              return (java.lang.String) ref;
+            }
+          }
+          /**
+           * <code>string challenge_id = 1;</code>
+           * @return The bytes for challengeId.
+           */
+          public com.google.protobuf.ByteString
+              getChallengeIdBytes() {
+            java.lang.Object ref = challengeId_;
+            if (ref instanceof String) {
+              com.google.protobuf.ByteString b = 
+                  com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+              challengeId_ = b;
+              return b;
+            } else {
+              return (com.google.protobuf.ByteString) ref;
+            }
+          }
+          /**
+           * <code>string challenge_id = 1;</code>
+           * @param value The challengeId to set.
+           * @return This builder for chaining.
+           */
+          public Builder setChallengeId(
+              java.lang.String value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  
+            challengeId_ = value;
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string challenge_id = 1;</code>
+           * @return This builder for chaining.
+           */
+          public Builder clearChallengeId() {
+            
+            challengeId_ = getDefaultInstance().getChallengeId();
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string challenge_id = 1;</code>
+           * @param value The bytes for challengeId to set.
+           * @return This builder for chaining.
+           */
+          public Builder setChallengeIdBytes(
+              com.google.protobuf.ByteString value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+            
+            challengeId_ = value;
+            onChanged();
+            return this;
+          }
+
+          private java.lang.Object headerImageUrl_ = "";
+          /**
+           * <code>string header_image_url = 2;</code>
+           * @return The headerImageUrl.
+           */
+          public java.lang.String getHeaderImageUrl() {
+            java.lang.Object ref = headerImageUrl_;
+            if (!(ref instanceof java.lang.String)) {
+              com.google.protobuf.ByteString bs =
+                  (com.google.protobuf.ByteString) ref;
+              java.lang.String s = bs.toStringUtf8();
+              headerImageUrl_ = s;
+              return s;
+            } else {
+              return (java.lang.String) ref;
+            }
+          }
+          /**
+           * <code>string header_image_url = 2;</code>
+           * @return The bytes for headerImageUrl.
+           */
+          public com.google.protobuf.ByteString
+              getHeaderImageUrlBytes() {
+            java.lang.Object ref = headerImageUrl_;
+            if (ref instanceof String) {
+              com.google.protobuf.ByteString b = 
+                  com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+              headerImageUrl_ = b;
+              return b;
+            } else {
+              return (com.google.protobuf.ByteString) ref;
+            }
+          }
+          /**
+           * <code>string header_image_url = 2;</code>
+           * @param value The headerImageUrl to set.
+           * @return This builder for chaining.
+           */
+          public Builder setHeaderImageUrl(
+              java.lang.String value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  
+            headerImageUrl_ = value;
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string header_image_url = 2;</code>
+           * @return This builder for chaining.
+           */
+          public Builder clearHeaderImageUrl() {
+            
+            headerImageUrl_ = getDefaultInstance().getHeaderImageUrl();
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string header_image_url = 2;</code>
+           * @param value The bytes for headerImageUrl to set.
+           * @return This builder for chaining.
+           */
+          public Builder setHeaderImageUrlBytes(
+              com.google.protobuf.ByteString value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+            
+            headerImageUrl_ = value;
+            onChanged();
+            return this;
+          }
+          @java.lang.Override
+          public final Builder setUnknownFields(
+              final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.setUnknownFields(unknownFields);
+          }
+
+          @java.lang.Override
+          public final Builder mergeUnknownFields(
+              final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.mergeUnknownFields(unknownFields);
+          }
+
+
+          // @@protoc_insertion_point(builder_scope:POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection)
+        }
+
+        // @@protoc_insertion_point(class_scope:POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection)
+        private static final POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection DEFAULT_INSTANCE;
+        static {
+          DEFAULT_INSTANCE = new POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection();
+        }
+
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection getDefaultInstance() {
+          return DEFAULT_INSTANCE;
+        }
+
+        private static final com.google.protobuf.Parser<TimedGroupChallengeSection>
+            PARSER = new com.google.protobuf.AbstractParser<TimedGroupChallengeSection>() {
+          @java.lang.Override
+          public TimedGroupChallengeSection parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new TimedGroupChallengeSection(input, extensionRegistry);
+          }
+        };
+
+        public static com.google.protobuf.Parser<TimedGroupChallengeSection> parser() {
+          return PARSER;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<TimedGroupChallengeSection> getParserForType() {
+          return PARSER;
+        }
+
+        @java.lang.Override
+        public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection getDefaultInstanceForType() {
+          return DEFAULT_INSTANCE;
+        }
+
+      }
+
+      public interface EventBannerSectionOrBuilder extends
+          // @@protoc_insertion_point(interface_extends:POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection)
+          com.google.protobuf.MessageOrBuilder {
+
+        /**
+         * <code>string event_icon = 1;</code>
+         * @return The eventIcon.
+         */
+        java.lang.String getEventIcon();
+        /**
+         * <code>string event_icon = 1;</code>
+         * @return The bytes for eventIcon.
+         */
+        com.google.protobuf.ByteString
+            getEventIconBytes();
+
+        /**
+         * <code>string title_text = 2;</code>
+         * @return The titleText.
+         */
+        java.lang.String getTitleText();
+        /**
+         * <code>string title_text = 2;</code>
+         * @return The bytes for titleText.
+         */
+        com.google.protobuf.ByteString
+            getTitleTextBytes();
+
+        /**
+         * <code>string body_text = 3;</code>
+         * @return The bodyText.
+         */
+        java.lang.String getBodyText();
+        /**
+         * <code>string body_text = 3;</code>
+         * @return The bytes for bodyText.
+         */
+        com.google.protobuf.ByteString
+            getBodyTextBytes();
+
+        /**
+         * <code>string image_url = 4;</code>
+         * @return The imageUrl.
+         */
+        java.lang.String getImageUrl();
+        /**
+         * <code>string image_url = 4;</code>
+         * @return The bytes for imageUrl.
+         */
+        com.google.protobuf.ByteString
+            getImageUrlBytes();
+
+        /**
+         * <code>string header_image_url = 5;</code>
+         * @return The headerImageUrl.
+         */
+        java.lang.String getHeaderImageUrl();
+        /**
+         * <code>string header_image_url = 5;</code>
+         * @return The bytes for headerImageUrl.
+         */
+        com.google.protobuf.ByteString
+            getHeaderImageUrlBytes();
+
+        /**
+         * <code>string image_overlay_text = 6;</code>
+         * @return The imageOverlayText.
+         */
+        java.lang.String getImageOverlayText();
+        /**
+         * <code>string image_overlay_text = 6;</code>
+         * @return The bytes for imageOverlayText.
+         */
+        com.google.protobuf.ByteString
+            getImageOverlayTextBytes();
+
+        /**
+         * <code>string link_from_image = 7;</code>
+         * @return The linkFromImage.
+         */
+        java.lang.String getLinkFromImage();
+        /**
+         * <code>string link_from_image = 7;</code>
+         * @return The bytes for linkFromImage.
+         */
+        com.google.protobuf.ByteString
+            getLinkFromImageBytes();
+
+        /**
+         * <code>string image_sub_text = 8;</code>
+         * @return The imageSubText.
+         */
+        java.lang.String getImageSubText();
+        /**
+         * <code>string image_sub_text = 8;</code>
+         * @return The bytes for imageSubText.
+         */
+        com.google.protobuf.ByteString
+            getImageSubTextBytes();
+      }
+      /**
+       * Protobuf type {@code POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection}
+       */
+      public  static final class EventBannerSection extends
+          com.google.protobuf.GeneratedMessageV3 implements
+          // @@protoc_insertion_point(message_implements:POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection)
+          EventBannerSectionOrBuilder {
+      private static final long serialVersionUID = 0L;
+        // Use EventBannerSection.newBuilder() to construct.
+        private EventBannerSection(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+          super(builder);
+        }
+        private EventBannerSection() {
+          eventIcon_ = "";
+          titleText_ = "";
+          bodyText_ = "";
+          imageUrl_ = "";
+          headerImageUrl_ = "";
+          imageOverlayText_ = "";
+          linkFromImage_ = "";
+          imageSubText_ = "";
+        }
+
+        @java.lang.Override
+        @SuppressWarnings({"unused"})
+        protected java.lang.Object newInstance(
+            UnusedPrivateParameter unused) {
+          return new EventBannerSection();
+        }
+
+        @java.lang.Override
+        public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+          return this.unknownFields;
+        }
+        private EventBannerSection(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          this();
+          if (extensionRegistry == null) {
+            throw new java.lang.NullPointerException();
+          }
+          com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+              com.google.protobuf.UnknownFieldSet.newBuilder();
+          try {
+            boolean done = false;
+            while (!done) {
+              int tag = input.readTag();
+              switch (tag) {
+                case 0:
+                  done = true;
+                  break;
+                case 10: {
+                  java.lang.String s = input.readStringRequireUtf8();
+
+                  eventIcon_ = s;
+                  break;
+                }
+                case 18: {
+                  java.lang.String s = input.readStringRequireUtf8();
+
+                  titleText_ = s;
+                  break;
+                }
+                case 26: {
+                  java.lang.String s = input.readStringRequireUtf8();
+
+                  bodyText_ = s;
+                  break;
+                }
+                case 34: {
+                  java.lang.String s = input.readStringRequireUtf8();
+
+                  imageUrl_ = s;
+                  break;
+                }
+                case 42: {
+                  java.lang.String s = input.readStringRequireUtf8();
+
+                  headerImageUrl_ = s;
+                  break;
+                }
+                case 50: {
+                  java.lang.String s = input.readStringRequireUtf8();
+
+                  imageOverlayText_ = s;
+                  break;
+                }
+                case 58: {
+                  java.lang.String s = input.readStringRequireUtf8();
+
+                  linkFromImage_ = s;
+                  break;
+                }
+                case 66: {
+                  java.lang.String s = input.readStringRequireUtf8();
+
+                  imageSubText_ = s;
+                  break;
+                }
+                default: {
+                  if (!parseUnknownField(
+                      input, unknownFields, extensionRegistry, tag)) {
+                    done = true;
+                  }
+                  break;
+                }
+              }
+            }
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            throw e.setUnfinishedMessage(this);
+          } catch (java.io.IOException e) {
+            throw new com.google.protobuf.InvalidProtocolBufferException(
+                e).setUnfinishedMessage(this);
+          } finally {
+            this.unknownFields = unknownFields.build();
+            makeExtensionsImmutable();
+          }
+        }
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventBannerSection_descriptor;
+        }
+
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventBannerSection_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.class, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.Builder.class);
+        }
+
+        public static final int EVENT_ICON_FIELD_NUMBER = 1;
+        private volatile java.lang.Object eventIcon_;
+        /**
+         * <code>string event_icon = 1;</code>
+         * @return The eventIcon.
+         */
+        public java.lang.String getEventIcon() {
+          java.lang.Object ref = eventIcon_;
+          if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+          } else {
+            com.google.protobuf.ByteString bs = 
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            eventIcon_ = s;
+            return s;
+          }
+        }
+        /**
+         * <code>string event_icon = 1;</code>
+         * @return The bytes for eventIcon.
+         */
+        public com.google.protobuf.ByteString
+            getEventIconBytes() {
+          java.lang.Object ref = eventIcon_;
+          if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            eventIcon_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+
+        public static final int TITLE_TEXT_FIELD_NUMBER = 2;
+        private volatile java.lang.Object titleText_;
+        /**
+         * <code>string title_text = 2;</code>
+         * @return The titleText.
+         */
+        public java.lang.String getTitleText() {
+          java.lang.Object ref = titleText_;
+          if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+          } else {
+            com.google.protobuf.ByteString bs = 
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            titleText_ = s;
+            return s;
+          }
+        }
+        /**
+         * <code>string title_text = 2;</code>
+         * @return The bytes for titleText.
+         */
+        public com.google.protobuf.ByteString
+            getTitleTextBytes() {
+          java.lang.Object ref = titleText_;
+          if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            titleText_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+
+        public static final int BODY_TEXT_FIELD_NUMBER = 3;
+        private volatile java.lang.Object bodyText_;
+        /**
+         * <code>string body_text = 3;</code>
+         * @return The bodyText.
+         */
+        public java.lang.String getBodyText() {
+          java.lang.Object ref = bodyText_;
+          if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+          } else {
+            com.google.protobuf.ByteString bs = 
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            bodyText_ = s;
+            return s;
+          }
+        }
+        /**
+         * <code>string body_text = 3;</code>
+         * @return The bytes for bodyText.
+         */
+        public com.google.protobuf.ByteString
+            getBodyTextBytes() {
+          java.lang.Object ref = bodyText_;
+          if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            bodyText_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+
+        public static final int IMAGE_URL_FIELD_NUMBER = 4;
+        private volatile java.lang.Object imageUrl_;
+        /**
+         * <code>string image_url = 4;</code>
+         * @return The imageUrl.
+         */
+        public java.lang.String getImageUrl() {
+          java.lang.Object ref = imageUrl_;
+          if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+          } else {
+            com.google.protobuf.ByteString bs = 
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            imageUrl_ = s;
+            return s;
+          }
+        }
+        /**
+         * <code>string image_url = 4;</code>
+         * @return The bytes for imageUrl.
+         */
+        public com.google.protobuf.ByteString
+            getImageUrlBytes() {
+          java.lang.Object ref = imageUrl_;
+          if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            imageUrl_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+
+        public static final int HEADER_IMAGE_URL_FIELD_NUMBER = 5;
+        private volatile java.lang.Object headerImageUrl_;
+        /**
+         * <code>string header_image_url = 5;</code>
+         * @return The headerImageUrl.
+         */
+        public java.lang.String getHeaderImageUrl() {
+          java.lang.Object ref = headerImageUrl_;
+          if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+          } else {
+            com.google.protobuf.ByteString bs = 
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            headerImageUrl_ = s;
+            return s;
+          }
+        }
+        /**
+         * <code>string header_image_url = 5;</code>
+         * @return The bytes for headerImageUrl.
+         */
+        public com.google.protobuf.ByteString
+            getHeaderImageUrlBytes() {
+          java.lang.Object ref = headerImageUrl_;
+          if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            headerImageUrl_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+
+        public static final int IMAGE_OVERLAY_TEXT_FIELD_NUMBER = 6;
+        private volatile java.lang.Object imageOverlayText_;
+        /**
+         * <code>string image_overlay_text = 6;</code>
+         * @return The imageOverlayText.
+         */
+        public java.lang.String getImageOverlayText() {
+          java.lang.Object ref = imageOverlayText_;
+          if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+          } else {
+            com.google.protobuf.ByteString bs = 
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            imageOverlayText_ = s;
+            return s;
+          }
+        }
+        /**
+         * <code>string image_overlay_text = 6;</code>
+         * @return The bytes for imageOverlayText.
+         */
+        public com.google.protobuf.ByteString
+            getImageOverlayTextBytes() {
+          java.lang.Object ref = imageOverlayText_;
+          if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            imageOverlayText_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+
+        public static final int LINK_FROM_IMAGE_FIELD_NUMBER = 7;
+        private volatile java.lang.Object linkFromImage_;
+        /**
+         * <code>string link_from_image = 7;</code>
+         * @return The linkFromImage.
+         */
+        public java.lang.String getLinkFromImage() {
+          java.lang.Object ref = linkFromImage_;
+          if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+          } else {
+            com.google.protobuf.ByteString bs = 
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            linkFromImage_ = s;
+            return s;
+          }
+        }
+        /**
+         * <code>string link_from_image = 7;</code>
+         * @return The bytes for linkFromImage.
+         */
+        public com.google.protobuf.ByteString
+            getLinkFromImageBytes() {
+          java.lang.Object ref = linkFromImage_;
+          if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            linkFromImage_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+
+        public static final int IMAGE_SUB_TEXT_FIELD_NUMBER = 8;
+        private volatile java.lang.Object imageSubText_;
+        /**
+         * <code>string image_sub_text = 8;</code>
+         * @return The imageSubText.
+         */
+        public java.lang.String getImageSubText() {
+          java.lang.Object ref = imageSubText_;
+          if (ref instanceof java.lang.String) {
+            return (java.lang.String) ref;
+          } else {
+            com.google.protobuf.ByteString bs = 
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            imageSubText_ = s;
+            return s;
+          }
+        }
+        /**
+         * <code>string image_sub_text = 8;</code>
+         * @return The bytes for imageSubText.
+         */
+        public com.google.protobuf.ByteString
+            getImageSubTextBytes() {
+          java.lang.Object ref = imageSubText_;
+          if (ref instanceof java.lang.String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            imageSubText_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+
+        private byte memoizedIsInitialized = -1;
+        @java.lang.Override
+        public final boolean isInitialized() {
+          byte isInitialized = memoizedIsInitialized;
+          if (isInitialized == 1) return true;
+          if (isInitialized == 0) return false;
+
+          memoizedIsInitialized = 1;
+          return true;
+        }
+
+        @java.lang.Override
+        public void writeTo(com.google.protobuf.CodedOutputStream output)
+                            throws java.io.IOException {
+          if (!getEventIconBytes().isEmpty()) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 1, eventIcon_);
+          }
+          if (!getTitleTextBytes().isEmpty()) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 2, titleText_);
+          }
+          if (!getBodyTextBytes().isEmpty()) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 3, bodyText_);
+          }
+          if (!getImageUrlBytes().isEmpty()) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 4, imageUrl_);
+          }
+          if (!getHeaderImageUrlBytes().isEmpty()) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 5, headerImageUrl_);
+          }
+          if (!getImageOverlayTextBytes().isEmpty()) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 6, imageOverlayText_);
+          }
+          if (!getLinkFromImageBytes().isEmpty()) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 7, linkFromImage_);
+          }
+          if (!getImageSubTextBytes().isEmpty()) {
+            com.google.protobuf.GeneratedMessageV3.writeString(output, 8, imageSubText_);
+          }
+          unknownFields.writeTo(output);
+        }
+
+        @java.lang.Override
+        public int getSerializedSize() {
+          int size = memoizedSize;
+          if (size != -1) return size;
+
+          size = 0;
+          if (!getEventIconBytes().isEmpty()) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, eventIcon_);
+          }
+          if (!getTitleTextBytes().isEmpty()) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, titleText_);
+          }
+          if (!getBodyTextBytes().isEmpty()) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, bodyText_);
+          }
+          if (!getImageUrlBytes().isEmpty()) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, imageUrl_);
+          }
+          if (!getHeaderImageUrlBytes().isEmpty()) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, headerImageUrl_);
+          }
+          if (!getImageOverlayTextBytes().isEmpty()) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, imageOverlayText_);
+          }
+          if (!getLinkFromImageBytes().isEmpty()) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, linkFromImage_);
+          }
+          if (!getImageSubTextBytes().isEmpty()) {
+            size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, imageSubText_);
+          }
+          size += unknownFields.getSerializedSize();
+          memoizedSize = size;
+          return size;
+        }
+
+        @java.lang.Override
+        public boolean equals(final java.lang.Object obj) {
+          if (obj == this) {
+           return true;
+          }
+          if (!(obj instanceof POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection)) {
+            return super.equals(obj);
+          }
+          POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection other = (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) obj;
+
+          if (!getEventIcon()
+              .equals(other.getEventIcon())) return false;
+          if (!getTitleText()
+              .equals(other.getTitleText())) return false;
+          if (!getBodyText()
+              .equals(other.getBodyText())) return false;
+          if (!getImageUrl()
+              .equals(other.getImageUrl())) return false;
+          if (!getHeaderImageUrl()
+              .equals(other.getHeaderImageUrl())) return false;
+          if (!getImageOverlayText()
+              .equals(other.getImageOverlayText())) return false;
+          if (!getLinkFromImage()
+              .equals(other.getLinkFromImage())) return false;
+          if (!getImageSubText()
+              .equals(other.getImageSubText())) return false;
+          if (!unknownFields.equals(other.unknownFields)) return false;
+          return true;
+        }
+
+        @java.lang.Override
+        public int hashCode() {
+          if (memoizedHashCode != 0) {
+            return memoizedHashCode;
+          }
+          int hash = 41;
+          hash = (19 * hash) + getDescriptor().hashCode();
+          hash = (37 * hash) + EVENT_ICON_FIELD_NUMBER;
+          hash = (53 * hash) + getEventIcon().hashCode();
+          hash = (37 * hash) + TITLE_TEXT_FIELD_NUMBER;
+          hash = (53 * hash) + getTitleText().hashCode();
+          hash = (37 * hash) + BODY_TEXT_FIELD_NUMBER;
+          hash = (53 * hash) + getBodyText().hashCode();
+          hash = (37 * hash) + IMAGE_URL_FIELD_NUMBER;
+          hash = (53 * hash) + getImageUrl().hashCode();
+          hash = (37 * hash) + HEADER_IMAGE_URL_FIELD_NUMBER;
+          hash = (53 * hash) + getHeaderImageUrl().hashCode();
+          hash = (37 * hash) + IMAGE_OVERLAY_TEXT_FIELD_NUMBER;
+          hash = (53 * hash) + getImageOverlayText().hashCode();
+          hash = (37 * hash) + LINK_FROM_IMAGE_FIELD_NUMBER;
+          hash = (53 * hash) + getLinkFromImage().hashCode();
+          hash = (37 * hash) + IMAGE_SUB_TEXT_FIELD_NUMBER;
+          hash = (53 * hash) + getImageSubText().hashCode();
+          hash = (29 * hash) + unknownFields.hashCode();
+          memoizedHashCode = hash;
+          return hash;
+        }
+
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseFrom(
+            java.nio.ByteBuffer data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseFrom(
+            java.nio.ByteBuffer data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseFrom(
+            com.google.protobuf.ByteString data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseFrom(
+            com.google.protobuf.ByteString data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseFrom(byte[] data)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseFrom(
+            byte[] data,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+          return PARSER.parseFrom(data, extensionRegistry);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseFrom(java.io.InputStream input)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseFrom(
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input, extensionRegistry);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseDelimitedFrom(java.io.InputStream input)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseDelimitedWithIOException(PARSER, input);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseDelimitedFrom(
+            java.io.InputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseFrom(
+            com.google.protobuf.CodedInputStream input)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input);
+        }
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parseFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          return com.google.protobuf.GeneratedMessageV3
+              .parseWithIOException(PARSER, input, extensionRegistry);
+        }
+
+        @java.lang.Override
+        public Builder newBuilderForType() { return newBuilder(); }
+        public static Builder newBuilder() {
+          return DEFAULT_INSTANCE.toBuilder();
+        }
+        public static Builder newBuilder(POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection prototype) {
+          return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+        }
+        @java.lang.Override
+        public Builder toBuilder() {
+          return this == DEFAULT_INSTANCE
+              ? new Builder() : new Builder().mergeFrom(this);
+        }
+
+        @java.lang.Override
+        protected Builder newBuilderForType(
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          Builder builder = new Builder(parent);
+          return builder;
+        }
+        /**
+         * Protobuf type {@code POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection}
+         */
+        public static final class Builder extends
+            com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+            // @@protoc_insertion_point(builder_implements:POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection)
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSectionOrBuilder {
+          public static final com.google.protobuf.Descriptors.Descriptor
+              getDescriptor() {
+            return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventBannerSection_descriptor;
+          }
+
+          @java.lang.Override
+          protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+              internalGetFieldAccessorTable() {
+            return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventBannerSection_fieldAccessorTable
+                .ensureFieldAccessorsInitialized(
+                    POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.class, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.Builder.class);
+          }
+
+          // Construct using POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.newBuilder()
+          private Builder() {
+            maybeForceBuilderInitialization();
+          }
+
+          private Builder(
+              com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+            super(parent);
+            maybeForceBuilderInitialization();
+          }
+          private void maybeForceBuilderInitialization() {
+            if (com.google.protobuf.GeneratedMessageV3
+                    .alwaysUseFieldBuilders) {
+            }
+          }
+          @java.lang.Override
+          public Builder clear() {
+            super.clear();
+            eventIcon_ = "";
+
+            titleText_ = "";
+
+            bodyText_ = "";
+
+            imageUrl_ = "";
+
+            headerImageUrl_ = "";
+
+            imageOverlayText_ = "";
+
+            linkFromImage_ = "";
+
+            imageSubText_ = "";
+
+            return this;
+          }
+
+          @java.lang.Override
+          public com.google.protobuf.Descriptors.Descriptor
+              getDescriptorForType() {
+            return POGOProtos.Networking.Responses.GetTodayViewResponseOuterClass.internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventBannerSection_descriptor;
+          }
+
+          @java.lang.Override
+          public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection getDefaultInstanceForType() {
+            return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.getDefaultInstance();
+          }
+
+          @java.lang.Override
+          public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection build() {
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection result = buildPartial();
+            if (!result.isInitialized()) {
+              throw newUninitializedMessageException(result);
+            }
+            return result;
+          }
+
+          @java.lang.Override
+          public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection buildPartial() {
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection result = new POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection(this);
+            result.eventIcon_ = eventIcon_;
+            result.titleText_ = titleText_;
+            result.bodyText_ = bodyText_;
+            result.imageUrl_ = imageUrl_;
+            result.headerImageUrl_ = headerImageUrl_;
+            result.imageOverlayText_ = imageOverlayText_;
+            result.linkFromImage_ = linkFromImage_;
+            result.imageSubText_ = imageSubText_;
+            onBuilt();
+            return result;
+          }
+
+          @java.lang.Override
+          public Builder clone() {
+            return super.clone();
+          }
+          @java.lang.Override
+          public Builder setField(
+              com.google.protobuf.Descriptors.FieldDescriptor field,
+              java.lang.Object value) {
+            return super.setField(field, value);
+          }
+          @java.lang.Override
+          public Builder clearField(
+              com.google.protobuf.Descriptors.FieldDescriptor field) {
+            return super.clearField(field);
+          }
+          @java.lang.Override
+          public Builder clearOneof(
+              com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+            return super.clearOneof(oneof);
+          }
+          @java.lang.Override
+          public Builder setRepeatedField(
+              com.google.protobuf.Descriptors.FieldDescriptor field,
+              int index, java.lang.Object value) {
+            return super.setRepeatedField(field, index, value);
+          }
+          @java.lang.Override
+          public Builder addRepeatedField(
+              com.google.protobuf.Descriptors.FieldDescriptor field,
+              java.lang.Object value) {
+            return super.addRepeatedField(field, value);
+          }
+          @java.lang.Override
+          public Builder mergeFrom(com.google.protobuf.Message other) {
+            if (other instanceof POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) {
+              return mergeFrom((POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection)other);
+            } else {
+              super.mergeFrom(other);
+              return this;
+            }
+          }
+
+          public Builder mergeFrom(POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection other) {
+            if (other == POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.getDefaultInstance()) return this;
+            if (!other.getEventIcon().isEmpty()) {
+              eventIcon_ = other.eventIcon_;
+              onChanged();
+            }
+            if (!other.getTitleText().isEmpty()) {
+              titleText_ = other.titleText_;
+              onChanged();
+            }
+            if (!other.getBodyText().isEmpty()) {
+              bodyText_ = other.bodyText_;
+              onChanged();
+            }
+            if (!other.getImageUrl().isEmpty()) {
+              imageUrl_ = other.imageUrl_;
+              onChanged();
+            }
+            if (!other.getHeaderImageUrl().isEmpty()) {
+              headerImageUrl_ = other.headerImageUrl_;
+              onChanged();
+            }
+            if (!other.getImageOverlayText().isEmpty()) {
+              imageOverlayText_ = other.imageOverlayText_;
+              onChanged();
+            }
+            if (!other.getLinkFromImage().isEmpty()) {
+              linkFromImage_ = other.linkFromImage_;
+              onChanged();
+            }
+            if (!other.getImageSubText().isEmpty()) {
+              imageSubText_ = other.imageSubText_;
+              onChanged();
+            }
+            this.mergeUnknownFields(other.unknownFields);
+            onChanged();
+            return this;
+          }
+
+          @java.lang.Override
+          public final boolean isInitialized() {
+            return true;
+          }
+
+          @java.lang.Override
+          public Builder mergeFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws java.io.IOException {
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection parsedMessage = null;
+            try {
+              parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+            } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+              parsedMessage = (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) e.getUnfinishedMessage();
+              throw e.unwrapIOException();
+            } finally {
+              if (parsedMessage != null) {
+                mergeFrom(parsedMessage);
+              }
+            }
+            return this;
+          }
+
+          private java.lang.Object eventIcon_ = "";
+          /**
+           * <code>string event_icon = 1;</code>
+           * @return The eventIcon.
+           */
+          public java.lang.String getEventIcon() {
+            java.lang.Object ref = eventIcon_;
+            if (!(ref instanceof java.lang.String)) {
+              com.google.protobuf.ByteString bs =
+                  (com.google.protobuf.ByteString) ref;
+              java.lang.String s = bs.toStringUtf8();
+              eventIcon_ = s;
+              return s;
+            } else {
+              return (java.lang.String) ref;
+            }
+          }
+          /**
+           * <code>string event_icon = 1;</code>
+           * @return The bytes for eventIcon.
+           */
+          public com.google.protobuf.ByteString
+              getEventIconBytes() {
+            java.lang.Object ref = eventIcon_;
+            if (ref instanceof String) {
+              com.google.protobuf.ByteString b = 
+                  com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+              eventIcon_ = b;
+              return b;
+            } else {
+              return (com.google.protobuf.ByteString) ref;
+            }
+          }
+          /**
+           * <code>string event_icon = 1;</code>
+           * @param value The eventIcon to set.
+           * @return This builder for chaining.
+           */
+          public Builder setEventIcon(
+              java.lang.String value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  
+            eventIcon_ = value;
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string event_icon = 1;</code>
+           * @return This builder for chaining.
+           */
+          public Builder clearEventIcon() {
+            
+            eventIcon_ = getDefaultInstance().getEventIcon();
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string event_icon = 1;</code>
+           * @param value The bytes for eventIcon to set.
+           * @return This builder for chaining.
+           */
+          public Builder setEventIconBytes(
+              com.google.protobuf.ByteString value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+            
+            eventIcon_ = value;
+            onChanged();
+            return this;
+          }
+
+          private java.lang.Object titleText_ = "";
+          /**
+           * <code>string title_text = 2;</code>
+           * @return The titleText.
+           */
+          public java.lang.String getTitleText() {
+            java.lang.Object ref = titleText_;
+            if (!(ref instanceof java.lang.String)) {
+              com.google.protobuf.ByteString bs =
+                  (com.google.protobuf.ByteString) ref;
+              java.lang.String s = bs.toStringUtf8();
+              titleText_ = s;
+              return s;
+            } else {
+              return (java.lang.String) ref;
+            }
+          }
+          /**
+           * <code>string title_text = 2;</code>
+           * @return The bytes for titleText.
+           */
+          public com.google.protobuf.ByteString
+              getTitleTextBytes() {
+            java.lang.Object ref = titleText_;
+            if (ref instanceof String) {
+              com.google.protobuf.ByteString b = 
+                  com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+              titleText_ = b;
+              return b;
+            } else {
+              return (com.google.protobuf.ByteString) ref;
+            }
+          }
+          /**
+           * <code>string title_text = 2;</code>
+           * @param value The titleText to set.
+           * @return This builder for chaining.
+           */
+          public Builder setTitleText(
+              java.lang.String value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  
+            titleText_ = value;
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string title_text = 2;</code>
+           * @return This builder for chaining.
+           */
+          public Builder clearTitleText() {
+            
+            titleText_ = getDefaultInstance().getTitleText();
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string title_text = 2;</code>
+           * @param value The bytes for titleText to set.
+           * @return This builder for chaining.
+           */
+          public Builder setTitleTextBytes(
+              com.google.protobuf.ByteString value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+            
+            titleText_ = value;
+            onChanged();
+            return this;
+          }
+
+          private java.lang.Object bodyText_ = "";
+          /**
+           * <code>string body_text = 3;</code>
+           * @return The bodyText.
+           */
+          public java.lang.String getBodyText() {
+            java.lang.Object ref = bodyText_;
+            if (!(ref instanceof java.lang.String)) {
+              com.google.protobuf.ByteString bs =
+                  (com.google.protobuf.ByteString) ref;
+              java.lang.String s = bs.toStringUtf8();
+              bodyText_ = s;
+              return s;
+            } else {
+              return (java.lang.String) ref;
+            }
+          }
+          /**
+           * <code>string body_text = 3;</code>
+           * @return The bytes for bodyText.
+           */
+          public com.google.protobuf.ByteString
+              getBodyTextBytes() {
+            java.lang.Object ref = bodyText_;
+            if (ref instanceof String) {
+              com.google.protobuf.ByteString b = 
+                  com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+              bodyText_ = b;
+              return b;
+            } else {
+              return (com.google.protobuf.ByteString) ref;
+            }
+          }
+          /**
+           * <code>string body_text = 3;</code>
+           * @param value The bodyText to set.
+           * @return This builder for chaining.
+           */
+          public Builder setBodyText(
+              java.lang.String value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  
+            bodyText_ = value;
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string body_text = 3;</code>
+           * @return This builder for chaining.
+           */
+          public Builder clearBodyText() {
+            
+            bodyText_ = getDefaultInstance().getBodyText();
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string body_text = 3;</code>
+           * @param value The bytes for bodyText to set.
+           * @return This builder for chaining.
+           */
+          public Builder setBodyTextBytes(
+              com.google.protobuf.ByteString value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+            
+            bodyText_ = value;
+            onChanged();
+            return this;
+          }
+
+          private java.lang.Object imageUrl_ = "";
+          /**
+           * <code>string image_url = 4;</code>
+           * @return The imageUrl.
+           */
+          public java.lang.String getImageUrl() {
+            java.lang.Object ref = imageUrl_;
+            if (!(ref instanceof java.lang.String)) {
+              com.google.protobuf.ByteString bs =
+                  (com.google.protobuf.ByteString) ref;
+              java.lang.String s = bs.toStringUtf8();
+              imageUrl_ = s;
+              return s;
+            } else {
+              return (java.lang.String) ref;
+            }
+          }
+          /**
+           * <code>string image_url = 4;</code>
+           * @return The bytes for imageUrl.
+           */
+          public com.google.protobuf.ByteString
+              getImageUrlBytes() {
+            java.lang.Object ref = imageUrl_;
+            if (ref instanceof String) {
+              com.google.protobuf.ByteString b = 
+                  com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+              imageUrl_ = b;
+              return b;
+            } else {
+              return (com.google.protobuf.ByteString) ref;
+            }
+          }
+          /**
+           * <code>string image_url = 4;</code>
+           * @param value The imageUrl to set.
+           * @return This builder for chaining.
+           */
+          public Builder setImageUrl(
+              java.lang.String value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  
+            imageUrl_ = value;
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string image_url = 4;</code>
+           * @return This builder for chaining.
+           */
+          public Builder clearImageUrl() {
+            
+            imageUrl_ = getDefaultInstance().getImageUrl();
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string image_url = 4;</code>
+           * @param value The bytes for imageUrl to set.
+           * @return This builder for chaining.
+           */
+          public Builder setImageUrlBytes(
+              com.google.protobuf.ByteString value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+            
+            imageUrl_ = value;
+            onChanged();
+            return this;
+          }
+
+          private java.lang.Object headerImageUrl_ = "";
+          /**
+           * <code>string header_image_url = 5;</code>
+           * @return The headerImageUrl.
+           */
+          public java.lang.String getHeaderImageUrl() {
+            java.lang.Object ref = headerImageUrl_;
+            if (!(ref instanceof java.lang.String)) {
+              com.google.protobuf.ByteString bs =
+                  (com.google.protobuf.ByteString) ref;
+              java.lang.String s = bs.toStringUtf8();
+              headerImageUrl_ = s;
+              return s;
+            } else {
+              return (java.lang.String) ref;
+            }
+          }
+          /**
+           * <code>string header_image_url = 5;</code>
+           * @return The bytes for headerImageUrl.
+           */
+          public com.google.protobuf.ByteString
+              getHeaderImageUrlBytes() {
+            java.lang.Object ref = headerImageUrl_;
+            if (ref instanceof String) {
+              com.google.protobuf.ByteString b = 
+                  com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+              headerImageUrl_ = b;
+              return b;
+            } else {
+              return (com.google.protobuf.ByteString) ref;
+            }
+          }
+          /**
+           * <code>string header_image_url = 5;</code>
+           * @param value The headerImageUrl to set.
+           * @return This builder for chaining.
+           */
+          public Builder setHeaderImageUrl(
+              java.lang.String value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  
+            headerImageUrl_ = value;
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string header_image_url = 5;</code>
+           * @return This builder for chaining.
+           */
+          public Builder clearHeaderImageUrl() {
+            
+            headerImageUrl_ = getDefaultInstance().getHeaderImageUrl();
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string header_image_url = 5;</code>
+           * @param value The bytes for headerImageUrl to set.
+           * @return This builder for chaining.
+           */
+          public Builder setHeaderImageUrlBytes(
+              com.google.protobuf.ByteString value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+            
+            headerImageUrl_ = value;
+            onChanged();
+            return this;
+          }
+
+          private java.lang.Object imageOverlayText_ = "";
+          /**
+           * <code>string image_overlay_text = 6;</code>
+           * @return The imageOverlayText.
+           */
+          public java.lang.String getImageOverlayText() {
+            java.lang.Object ref = imageOverlayText_;
+            if (!(ref instanceof java.lang.String)) {
+              com.google.protobuf.ByteString bs =
+                  (com.google.protobuf.ByteString) ref;
+              java.lang.String s = bs.toStringUtf8();
+              imageOverlayText_ = s;
+              return s;
+            } else {
+              return (java.lang.String) ref;
+            }
+          }
+          /**
+           * <code>string image_overlay_text = 6;</code>
+           * @return The bytes for imageOverlayText.
+           */
+          public com.google.protobuf.ByteString
+              getImageOverlayTextBytes() {
+            java.lang.Object ref = imageOverlayText_;
+            if (ref instanceof String) {
+              com.google.protobuf.ByteString b = 
+                  com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+              imageOverlayText_ = b;
+              return b;
+            } else {
+              return (com.google.protobuf.ByteString) ref;
+            }
+          }
+          /**
+           * <code>string image_overlay_text = 6;</code>
+           * @param value The imageOverlayText to set.
+           * @return This builder for chaining.
+           */
+          public Builder setImageOverlayText(
+              java.lang.String value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  
+            imageOverlayText_ = value;
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string image_overlay_text = 6;</code>
+           * @return This builder for chaining.
+           */
+          public Builder clearImageOverlayText() {
+            
+            imageOverlayText_ = getDefaultInstance().getImageOverlayText();
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string image_overlay_text = 6;</code>
+           * @param value The bytes for imageOverlayText to set.
+           * @return This builder for chaining.
+           */
+          public Builder setImageOverlayTextBytes(
+              com.google.protobuf.ByteString value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+            
+            imageOverlayText_ = value;
+            onChanged();
+            return this;
+          }
+
+          private java.lang.Object linkFromImage_ = "";
+          /**
+           * <code>string link_from_image = 7;</code>
+           * @return The linkFromImage.
+           */
+          public java.lang.String getLinkFromImage() {
+            java.lang.Object ref = linkFromImage_;
+            if (!(ref instanceof java.lang.String)) {
+              com.google.protobuf.ByteString bs =
+                  (com.google.protobuf.ByteString) ref;
+              java.lang.String s = bs.toStringUtf8();
+              linkFromImage_ = s;
+              return s;
+            } else {
+              return (java.lang.String) ref;
+            }
+          }
+          /**
+           * <code>string link_from_image = 7;</code>
+           * @return The bytes for linkFromImage.
+           */
+          public com.google.protobuf.ByteString
+              getLinkFromImageBytes() {
+            java.lang.Object ref = linkFromImage_;
+            if (ref instanceof String) {
+              com.google.protobuf.ByteString b = 
+                  com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+              linkFromImage_ = b;
+              return b;
+            } else {
+              return (com.google.protobuf.ByteString) ref;
+            }
+          }
+          /**
+           * <code>string link_from_image = 7;</code>
+           * @param value The linkFromImage to set.
+           * @return This builder for chaining.
+           */
+          public Builder setLinkFromImage(
+              java.lang.String value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  
+            linkFromImage_ = value;
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string link_from_image = 7;</code>
+           * @return This builder for chaining.
+           */
+          public Builder clearLinkFromImage() {
+            
+            linkFromImage_ = getDefaultInstance().getLinkFromImage();
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string link_from_image = 7;</code>
+           * @param value The bytes for linkFromImage to set.
+           * @return This builder for chaining.
+           */
+          public Builder setLinkFromImageBytes(
+              com.google.protobuf.ByteString value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+            
+            linkFromImage_ = value;
+            onChanged();
+            return this;
+          }
+
+          private java.lang.Object imageSubText_ = "";
+          /**
+           * <code>string image_sub_text = 8;</code>
+           * @return The imageSubText.
+           */
+          public java.lang.String getImageSubText() {
+            java.lang.Object ref = imageSubText_;
+            if (!(ref instanceof java.lang.String)) {
+              com.google.protobuf.ByteString bs =
+                  (com.google.protobuf.ByteString) ref;
+              java.lang.String s = bs.toStringUtf8();
+              imageSubText_ = s;
+              return s;
+            } else {
+              return (java.lang.String) ref;
+            }
+          }
+          /**
+           * <code>string image_sub_text = 8;</code>
+           * @return The bytes for imageSubText.
+           */
+          public com.google.protobuf.ByteString
+              getImageSubTextBytes() {
+            java.lang.Object ref = imageSubText_;
+            if (ref instanceof String) {
+              com.google.protobuf.ByteString b = 
+                  com.google.protobuf.ByteString.copyFromUtf8(
+                      (java.lang.String) ref);
+              imageSubText_ = b;
+              return b;
+            } else {
+              return (com.google.protobuf.ByteString) ref;
+            }
+          }
+          /**
+           * <code>string image_sub_text = 8;</code>
+           * @param value The imageSubText to set.
+           * @return This builder for chaining.
+           */
+          public Builder setImageSubText(
+              java.lang.String value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  
+            imageSubText_ = value;
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string image_sub_text = 8;</code>
+           * @return This builder for chaining.
+           */
+          public Builder clearImageSubText() {
+            
+            imageSubText_ = getDefaultInstance().getImageSubText();
+            onChanged();
+            return this;
+          }
+          /**
+           * <code>string image_sub_text = 8;</code>
+           * @param value The bytes for imageSubText to set.
+           * @return This builder for chaining.
+           */
+          public Builder setImageSubTextBytes(
+              com.google.protobuf.ByteString value) {
+            if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+            
+            imageSubText_ = value;
+            onChanged();
+            return this;
+          }
+          @java.lang.Override
+          public final Builder setUnknownFields(
+              final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.setUnknownFields(unknownFields);
+          }
+
+          @java.lang.Override
+          public final Builder mergeUnknownFields(
+              final com.google.protobuf.UnknownFieldSet unknownFields) {
+            return super.mergeUnknownFields(unknownFields);
+          }
+
+
+          // @@protoc_insertion_point(builder_scope:POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection)
+        }
+
+        // @@protoc_insertion_point(class_scope:POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection)
+        private static final POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection DEFAULT_INSTANCE;
+        static {
+          DEFAULT_INSTANCE = new POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection();
+        }
+
+        public static POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection getDefaultInstance() {
+          return DEFAULT_INSTANCE;
+        }
+
+        private static final com.google.protobuf.Parser<EventBannerSection>
+            PARSER = new com.google.protobuf.AbstractParser<EventBannerSection>() {
+          @java.lang.Override
+          public EventBannerSection parsePartialFrom(
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
+            return new EventBannerSection(input, extensionRegistry);
+          }
+        };
+
+        public static com.google.protobuf.Parser<EventBannerSection> parser() {
+          return PARSER;
+        }
+
+        @java.lang.Override
+        public com.google.protobuf.Parser<EventBannerSection> getParserForType() {
+          return PARSER;
+        }
+
+        @java.lang.Override
+        public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection getDefaultInstanceForType() {
+          return DEFAULT_INSTANCE;
+        }
+
       }
 
       public interface TimedQuestSectionOrBuilder extends
@@ -8154,6 +10528,8 @@ private static final long serialVersionUID = 0L;
         EVENT(4),
         UP_NEXT(5),
         TIMED_QUEST(6),
+        EVENT_BANNER(7),
+        TIMED_GROUP_CHALLENGE(8),
         SECTION_NOT_SET(0);
         private final int value;
         private SectionCase(int value) {
@@ -8177,6 +10553,8 @@ private static final long serialVersionUID = 0L;
             case 4: return EVENT;
             case 5: return UP_NEXT;
             case 6: return TIMED_QUEST;
+            case 7: return EVENT_BANNER;
+            case 8: return TIMED_GROUP_CHALLENGE;
             case 0: return SECTION_NOT_SET;
             default: return null;
           }
@@ -8360,6 +10738,62 @@ private static final long serialVersionUID = 0L;
         return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedQuestSection.getDefaultInstance();
       }
 
+      public static final int EVENT_BANNER_FIELD_NUMBER = 7;
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+       * @return Whether the eventBanner field is set.
+       */
+      public boolean hasEventBanner() {
+        return sectionCase_ == 7;
+      }
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+       * @return The eventBanner.
+       */
+      public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection getEventBanner() {
+        if (sectionCase_ == 7) {
+           return (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) section_;
+        }
+        return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.getDefaultInstance();
+      }
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+       */
+      public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSectionOrBuilder getEventBannerOrBuilder() {
+        if (sectionCase_ == 7) {
+           return (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) section_;
+        }
+        return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.getDefaultInstance();
+      }
+
+      public static final int TIMED_GROUP_CHALLENGE_FIELD_NUMBER = 8;
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+       * @return Whether the timedGroupChallenge field is set.
+       */
+      public boolean hasTimedGroupChallenge() {
+        return sectionCase_ == 8;
+      }
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+       * @return The timedGroupChallenge.
+       */
+      public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection getTimedGroupChallenge() {
+        if (sectionCase_ == 8) {
+           return (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) section_;
+        }
+        return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.getDefaultInstance();
+      }
+      /**
+       * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+       */
+      public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSectionOrBuilder getTimedGroupChallengeOrBuilder() {
+        if (sectionCase_ == 8) {
+           return (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) section_;
+        }
+        return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.getDefaultInstance();
+      }
+
       private byte memoizedIsInitialized = -1;
       @java.lang.Override
       public final boolean isInitialized() {
@@ -8391,6 +10825,12 @@ private static final long serialVersionUID = 0L;
         }
         if (sectionCase_ == 6) {
           output.writeMessage(6, (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedQuestSection) section_);
+        }
+        if (sectionCase_ == 7) {
+          output.writeMessage(7, (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) section_);
+        }
+        if (sectionCase_ == 8) {
+          output.writeMessage(8, (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) section_);
         }
         unknownFields.writeTo(output);
       }
@@ -8424,6 +10864,14 @@ private static final long serialVersionUID = 0L;
         if (sectionCase_ == 6) {
           size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(6, (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedQuestSection) section_);
+        }
+        if (sectionCase_ == 7) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(7, (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) section_);
+        }
+        if (sectionCase_ == 8) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(8, (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) section_);
         }
         size += unknownFields.getSerializedSize();
         memoizedSize = size;
@@ -8466,6 +10914,14 @@ private static final long serialVersionUID = 0L;
             if (!getTimedQuest()
                 .equals(other.getTimedQuest())) return false;
             break;
+          case 7:
+            if (!getEventBanner()
+                .equals(other.getEventBanner())) return false;
+            break;
+          case 8:
+            if (!getTimedGroupChallenge()
+                .equals(other.getTimedGroupChallenge())) return false;
+            break;
           case 0:
           default:
         }
@@ -8504,6 +10960,14 @@ private static final long serialVersionUID = 0L;
           case 6:
             hash = (37 * hash) + TIMED_QUEST_FIELD_NUMBER;
             hash = (53 * hash) + getTimedQuest().hashCode();
+            break;
+          case 7:
+            hash = (37 * hash) + EVENT_BANNER_FIELD_NUMBER;
+            hash = (53 * hash) + getEventBanner().hashCode();
+            break;
+          case 8:
+            hash = (37 * hash) + TIMED_GROUP_CHALLENGE_FIELD_NUMBER;
+            hash = (53 * hash) + getTimedGroupChallenge().hashCode();
             break;
           case 0:
           default:
@@ -8711,6 +11175,20 @@ private static final long serialVersionUID = 0L;
               result.section_ = timedQuestBuilder_.build();
             }
           }
+          if (sectionCase_ == 7) {
+            if (eventBannerBuilder_ == null) {
+              result.section_ = section_;
+            } else {
+              result.section_ = eventBannerBuilder_.build();
+            }
+          }
+          if (sectionCase_ == 8) {
+            if (timedGroupChallengeBuilder_ == null) {
+              result.section_ = section_;
+            } else {
+              result.section_ = timedGroupChallengeBuilder_.build();
+            }
+          }
           result.sectionCase_ = sectionCase_;
           onBuilt();
           return result;
@@ -8783,6 +11261,14 @@ private static final long serialVersionUID = 0L;
             }
             case TIMED_QUEST: {
               mergeTimedQuest(other.getTimedQuest());
+              break;
+            }
+            case EVENT_BANNER: {
+              mergeEventBanner(other.getEventBanner());
+              break;
+            }
+            case TIMED_GROUP_CHALLENGE: {
+              mergeTimedGroupChallenge(other.getTimedGroupChallenge());
               break;
             }
             case SECTION_NOT_SET: {
@@ -9659,6 +12145,282 @@ private static final long serialVersionUID = 0L;
           sectionCase_ = 6;
           onChanged();;
           return timedQuestBuilder_;
+        }
+
+        private com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.Builder, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSectionOrBuilder> eventBannerBuilder_;
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+         * @return Whether the eventBanner field is set.
+         */
+        public boolean hasEventBanner() {
+          return sectionCase_ == 7;
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+         * @return The eventBanner.
+         */
+        public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection getEventBanner() {
+          if (eventBannerBuilder_ == null) {
+            if (sectionCase_ == 7) {
+              return (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) section_;
+            }
+            return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.getDefaultInstance();
+          } else {
+            if (sectionCase_ == 7) {
+              return eventBannerBuilder_.getMessage();
+            }
+            return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.getDefaultInstance();
+          }
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+         */
+        public Builder setEventBanner(POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection value) {
+          if (eventBannerBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            section_ = value;
+            onChanged();
+          } else {
+            eventBannerBuilder_.setMessage(value);
+          }
+          sectionCase_ = 7;
+          return this;
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+         */
+        public Builder setEventBanner(
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.Builder builderForValue) {
+          if (eventBannerBuilder_ == null) {
+            section_ = builderForValue.build();
+            onChanged();
+          } else {
+            eventBannerBuilder_.setMessage(builderForValue.build());
+          }
+          sectionCase_ = 7;
+          return this;
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+         */
+        public Builder mergeEventBanner(POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection value) {
+          if (eventBannerBuilder_ == null) {
+            if (sectionCase_ == 7 &&
+                section_ != POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.getDefaultInstance()) {
+              section_ = POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.newBuilder((POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) section_)
+                  .mergeFrom(value).buildPartial();
+            } else {
+              section_ = value;
+            }
+            onChanged();
+          } else {
+            if (sectionCase_ == 7) {
+              eventBannerBuilder_.mergeFrom(value);
+            }
+            eventBannerBuilder_.setMessage(value);
+          }
+          sectionCase_ = 7;
+          return this;
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+         */
+        public Builder clearEventBanner() {
+          if (eventBannerBuilder_ == null) {
+            if (sectionCase_ == 7) {
+              sectionCase_ = 0;
+              section_ = null;
+              onChanged();
+            }
+          } else {
+            if (sectionCase_ == 7) {
+              sectionCase_ = 0;
+              section_ = null;
+            }
+            eventBannerBuilder_.clear();
+          }
+          return this;
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+         */
+        public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.Builder getEventBannerBuilder() {
+          return getEventBannerFieldBuilder().getBuilder();
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+         */
+        public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSectionOrBuilder getEventBannerOrBuilder() {
+          if ((sectionCase_ == 7) && (eventBannerBuilder_ != null)) {
+            return eventBannerBuilder_.getMessageOrBuilder();
+          } else {
+            if (sectionCase_ == 7) {
+              return (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) section_;
+            }
+            return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.getDefaultInstance();
+          }
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection event_banner = 7;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.Builder, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSectionOrBuilder> 
+            getEventBannerFieldBuilder() {
+          if (eventBannerBuilder_ == null) {
+            if (!(sectionCase_ == 7)) {
+              section_ = POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.getDefaultInstance();
+            }
+            eventBannerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection.Builder, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSectionOrBuilder>(
+                    (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.EventBannerSection) section_,
+                    getParentForChildren(),
+                    isClean());
+            section_ = null;
+          }
+          sectionCase_ = 7;
+          onChanged();;
+          return eventBannerBuilder_;
+        }
+
+        private com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.Builder, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSectionOrBuilder> timedGroupChallengeBuilder_;
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+         * @return Whether the timedGroupChallenge field is set.
+         */
+        public boolean hasTimedGroupChallenge() {
+          return sectionCase_ == 8;
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+         * @return The timedGroupChallenge.
+         */
+        public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection getTimedGroupChallenge() {
+          if (timedGroupChallengeBuilder_ == null) {
+            if (sectionCase_ == 8) {
+              return (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) section_;
+            }
+            return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.getDefaultInstance();
+          } else {
+            if (sectionCase_ == 8) {
+              return timedGroupChallengeBuilder_.getMessage();
+            }
+            return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.getDefaultInstance();
+          }
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+         */
+        public Builder setTimedGroupChallenge(POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection value) {
+          if (timedGroupChallengeBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            section_ = value;
+            onChanged();
+          } else {
+            timedGroupChallengeBuilder_.setMessage(value);
+          }
+          sectionCase_ = 8;
+          return this;
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+         */
+        public Builder setTimedGroupChallenge(
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.Builder builderForValue) {
+          if (timedGroupChallengeBuilder_ == null) {
+            section_ = builderForValue.build();
+            onChanged();
+          } else {
+            timedGroupChallengeBuilder_.setMessage(builderForValue.build());
+          }
+          sectionCase_ = 8;
+          return this;
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+         */
+        public Builder mergeTimedGroupChallenge(POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection value) {
+          if (timedGroupChallengeBuilder_ == null) {
+            if (sectionCase_ == 8 &&
+                section_ != POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.getDefaultInstance()) {
+              section_ = POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.newBuilder((POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) section_)
+                  .mergeFrom(value).buildPartial();
+            } else {
+              section_ = value;
+            }
+            onChanged();
+          } else {
+            if (sectionCase_ == 8) {
+              timedGroupChallengeBuilder_.mergeFrom(value);
+            }
+            timedGroupChallengeBuilder_.setMessage(value);
+          }
+          sectionCase_ = 8;
+          return this;
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+         */
+        public Builder clearTimedGroupChallenge() {
+          if (timedGroupChallengeBuilder_ == null) {
+            if (sectionCase_ == 8) {
+              sectionCase_ = 0;
+              section_ = null;
+              onChanged();
+            }
+          } else {
+            if (sectionCase_ == 8) {
+              sectionCase_ = 0;
+              section_ = null;
+            }
+            timedGroupChallengeBuilder_.clear();
+          }
+          return this;
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+         */
+        public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.Builder getTimedGroupChallengeBuilder() {
+          return getTimedGroupChallengeFieldBuilder().getBuilder();
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+         */
+        public POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSectionOrBuilder getTimedGroupChallengeOrBuilder() {
+          if ((sectionCase_ == 8) && (timedGroupChallengeBuilder_ != null)) {
+            return timedGroupChallengeBuilder_.getMessageOrBuilder();
+          } else {
+            if (sectionCase_ == 8) {
+              return (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) section_;
+            }
+            return POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.getDefaultInstance();
+          }
+        }
+        /**
+         * <code>.POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection timed_group_challenge = 8;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.Builder, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSectionOrBuilder> 
+            getTimedGroupChallengeFieldBuilder() {
+          if (timedGroupChallengeBuilder_ == null) {
+            if (!(sectionCase_ == 8)) {
+              section_ = POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.getDefaultInstance();
+            }
+            timedGroupChallengeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection.Builder, POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSectionOrBuilder>(
+                    (POGOProtos.Networking.Responses.GetTodayViewResponse.TodayView.TodayViewSection.TimedGroupChallengeSection) section_,
+                    getParentForChildren(),
+                    isClean());
+            section_ = null;
+          }
+          sectionCase_ = 8;
+          onChanged();;
+          return timedGroupChallengeBuilder_;
         }
         @java.lang.Override
         public final Builder setUnknownFields(

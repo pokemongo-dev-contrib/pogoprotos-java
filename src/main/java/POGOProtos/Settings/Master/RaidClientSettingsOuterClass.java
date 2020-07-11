@@ -30,7 +30,7 @@ public final class RaidClientSettingsOuterClass {
     java.lang.String[] descriptorData = {
       "\n3POGOProtos/Settings/Master/RaidClientS" +
       "ettings.proto\022\032POGOProtos.Settings.Maste" +
-      "r\032 POGOProtos/Enums/RaidLevel.proto\"\224\004\n\022" +
+      "r\032 POGOProtos/Enums/RaidLevel.proto\"\331\004\n\022" +
       "RaidClientSettings\022\033\n\023remote_raid_enable" +
       "d\030\001 \001(\010\022\036\n\026max_remote_raid_passes\030\002 \001(\005\022" +
       "\036\n\026remote_damage_modifier\030\003 \001(\002\022%\n\035remot" +
@@ -44,7 +44,9 @@ public final class RaidClientSettingsOuterClass {
       "\030\013 \001(\003\022)\n!max_num_friend_invites_per_act" +
       "ion\030\014 \001(\005\022O\n*unsupported_raid_levels_for" +
       "_friend_invites\030\r \003(\0162\033.POGOProtos.Enums" +
-      ".RaidLevelB\002P\001b\006proto3"
+      ".RaidLevel\022C\n\036unsupported_remote_raid_le" +
+      "vels\030\016 \003(\0162\033.POGOProtos.Enums.RaidLevelB" +
+      "\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -56,7 +58,7 @@ public final class RaidClientSettingsOuterClass {
     internal_static_POGOProtos_Settings_Master_RaidClientSettings_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Settings_Master_RaidClientSettings_descriptor,
-        new java.lang.String[] { "RemoteRaidEnabled", "MaxRemoteRaidPasses", "RemoteDamageModifier", "RemoteRaidsMinPlayerLevel", "MaxNumFriendInvites", "FriendInviteCutoffTimeSec", "CanInviteFriendsInPerson", "CanInviteFriendsRemotely", "MaxPlayersPerLobby", "MaxRemotePlayersPerLobby", "InviteCooldownDurationMillis", "MaxNumFriendInvitesPerAction", "UnsupportedRaidLevelsForFriendInvites", });
+        new java.lang.String[] { "RemoteRaidEnabled", "MaxRemoteRaidPasses", "RemoteDamageModifier", "RemoteRaidsMinPlayerLevel", "MaxNumFriendInvites", "FriendInviteCutoffTimeSec", "CanInviteFriendsInPerson", "CanInviteFriendsRemotely", "MaxPlayersPerLobby", "MaxRemotePlayersPerLobby", "InviteCooldownDurationMillis", "MaxNumFriendInvitesPerAction", "UnsupportedRaidLevelsForFriendInvites", "UnsupportedRemoteRaidLevels", });
     POGOProtos.Enums.RaidLevelOuterClass.getDescriptor();
   }
 

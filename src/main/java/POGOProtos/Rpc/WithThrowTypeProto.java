@@ -16,7 +16,6 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private WithThrowTypeProto() {
-    throwType_ = 0;
   }
 
   @java.lang.Override
@@ -51,13 +50,13 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
             int rawValue = input.readEnum();
-
-            throwType_ = rawValue;
+            throwCase_ = 1;
+            throw_ = rawValue;
             break;
           }
           case 16: {
-
-            hit_ = input.readBool();
+            throwCase_ = 2;
+            throw_ = input.readBool();
             break;
           }
           default: {
@@ -92,33 +91,82 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.WithThrowTypeProto.class, POGOProtos.Rpc.WithThrowTypeProto.Builder.class);
   }
 
+  private int throwCase_ = 0;
+  private java.lang.Object throw_;
+  public enum ThrowCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    THROW_TYPE(1),
+    HIT(2),
+    THROW_NOT_SET(0);
+    private final int value;
+    private ThrowCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static ThrowCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static ThrowCase forNumber(int value) {
+      switch (value) {
+        case 1: return THROW_TYPE;
+        case 2: return HIT;
+        case 0: return THROW_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public ThrowCase
+  getThrowCase() {
+    return ThrowCase.forNumber(
+        throwCase_);
+  }
+
   public static final int THROW_TYPE_FIELD_NUMBER = 1;
-  private int throwType_;
   /**
    * <code>.POGOProtos.Rpc.HoloActivityType throw_type = 1;</code>
    * @return The enum numeric value on the wire for throwType.
    */
   public int getThrowTypeValue() {
-    return throwType_;
+    if (throwCase_ == 1) {
+      return (java.lang.Integer) throw_;
+    }
+    return 0;
   }
   /**
    * <code>.POGOProtos.Rpc.HoloActivityType throw_type = 1;</code>
    * @return The throwType.
    */
   public POGOProtos.Rpc.HoloActivityType getThrowType() {
-    @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.HoloActivityType result = POGOProtos.Rpc.HoloActivityType.valueOf(throwType_);
-    return result == null ? POGOProtos.Rpc.HoloActivityType.UNRECOGNIZED : result;
+    if (throwCase_ == 1) {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloActivityType result = POGOProtos.Rpc.HoloActivityType.valueOf(
+          (java.lang.Integer) throw_);
+      return result == null ? POGOProtos.Rpc.HoloActivityType.UNRECOGNIZED : result;
+    }
+    return POGOProtos.Rpc.HoloActivityType.HOLO_ACTIVITY_TYPE_ACTIVITY_UNKNOWN;
   }
 
   public static final int HIT_FIELD_NUMBER = 2;
-  private boolean hit_;
   /**
    * <code>bool hit = 2;</code>
    * @return The hit.
    */
   public boolean getHit() {
-    return hit_;
+    if (throwCase_ == 2) {
+      return (java.lang.Boolean) throw_;
+    }
+    return false;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -135,11 +183,12 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (throwType_ != POGOProtos.Rpc.HoloActivityType.HOLO_ACTIVITY_TYPE_ACTIVITY_UNKNOWN.getNumber()) {
-      output.writeEnum(1, throwType_);
+    if (throwCase_ == 1) {
+      output.writeEnum(1, ((java.lang.Integer) throw_));
     }
-    if (hit_ != false) {
-      output.writeBool(2, hit_);
+    if (throwCase_ == 2) {
+      output.writeBool(
+          2, (boolean)((java.lang.Boolean) throw_));
     }
     unknownFields.writeTo(output);
   }
@@ -150,13 +199,14 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (throwType_ != POGOProtos.Rpc.HoloActivityType.HOLO_ACTIVITY_TYPE_ACTIVITY_UNKNOWN.getNumber()) {
+    if (throwCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, throwType_);
+        .computeEnumSize(1, ((java.lang.Integer) throw_));
     }
-    if (hit_ != false) {
+    if (throwCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(2, hit_);
+        .computeBoolSize(
+            2, (boolean)((java.lang.Boolean) throw_));
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -173,9 +223,19 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.WithThrowTypeProto other = (POGOProtos.Rpc.WithThrowTypeProto) obj;
 
-    if (throwType_ != other.throwType_) return false;
-    if (getHit()
-        != other.getHit()) return false;
+    if (!getThrowCase().equals(other.getThrowCase())) return false;
+    switch (throwCase_) {
+      case 1:
+        if (getThrowTypeValue()
+            != other.getThrowTypeValue()) return false;
+        break;
+      case 2:
+        if (getHit()
+            != other.getHit()) return false;
+        break;
+      case 0:
+      default:
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -187,11 +247,19 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + THROW_TYPE_FIELD_NUMBER;
-    hash = (53 * hash) + throwType_;
-    hash = (37 * hash) + HIT_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getHit());
+    switch (throwCase_) {
+      case 1:
+        hash = (37 * hash) + THROW_TYPE_FIELD_NUMBER;
+        hash = (53 * hash) + getThrowTypeValue();
+        break;
+      case 2:
+        hash = (37 * hash) + HIT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getHit());
+        break;
+      case 0:
+      default:
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -325,10 +393,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      throwType_ = 0;
-
-      hit_ = false;
-
+      throwCase_ = 0;
+      throw_ = null;
       return this;
     }
 
@@ -355,8 +421,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.WithThrowTypeProto buildPartial() {
       POGOProtos.Rpc.WithThrowTypeProto result = new POGOProtos.Rpc.WithThrowTypeProto(this);
-      result.throwType_ = throwType_;
-      result.hit_ = hit_;
+      if (throwCase_ == 1) {
+        result.throw_ = throw_;
+      }
+      if (throwCase_ == 2) {
+        result.throw_ = throw_;
+      }
+      result.throwCase_ = throwCase_;
       onBuilt();
       return result;
     }
@@ -405,11 +476,18 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.WithThrowTypeProto other) {
       if (other == POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance()) return this;
-      if (other.throwType_ != 0) {
-        setThrowTypeValue(other.getThrowTypeValue());
-      }
-      if (other.getHit() != false) {
-        setHit(other.getHit());
+      switch (other.getThrowCase()) {
+        case THROW_TYPE: {
+          setThrowTypeValue(other.getThrowTypeValue());
+          break;
+        }
+        case HIT: {
+          setHit(other.getHit());
+          break;
+        }
+        case THROW_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -439,14 +517,31 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int throwCase_ = 0;
+    private java.lang.Object throw_;
+    public ThrowCase
+        getThrowCase() {
+      return ThrowCase.forNumber(
+          throwCase_);
+    }
 
-    private int throwType_ = 0;
+    public Builder clearThrow() {
+      throwCase_ = 0;
+      throw_ = null;
+      onChanged();
+      return this;
+    }
+
+
     /**
      * <code>.POGOProtos.Rpc.HoloActivityType throw_type = 1;</code>
      * @return The enum numeric value on the wire for throwType.
      */
     public int getThrowTypeValue() {
-      return throwType_;
+      if (throwCase_ == 1) {
+        return ((java.lang.Integer) throw_).intValue();
+      }
+      return 0;
     }
     /**
      * <code>.POGOProtos.Rpc.HoloActivityType throw_type = 1;</code>
@@ -454,7 +549,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setThrowTypeValue(int value) {
-      throwType_ = value;
+      throwCase_ = 1;
+      throw_ = value;
       onChanged();
       return this;
     }
@@ -463,9 +559,13 @@ private static final long serialVersionUID = 0L;
      * @return The throwType.
      */
     public POGOProtos.Rpc.HoloActivityType getThrowType() {
-      @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.HoloActivityType result = POGOProtos.Rpc.HoloActivityType.valueOf(throwType_);
-      return result == null ? POGOProtos.Rpc.HoloActivityType.UNRECOGNIZED : result;
+      if (throwCase_ == 1) {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.HoloActivityType result = POGOProtos.Rpc.HoloActivityType.valueOf(
+            (java.lang.Integer) throw_);
+        return result == null ? POGOProtos.Rpc.HoloActivityType.UNRECOGNIZED : result;
+      }
+      return POGOProtos.Rpc.HoloActivityType.HOLO_ACTIVITY_TYPE_ACTIVITY_UNKNOWN;
     }
     /**
      * <code>.POGOProtos.Rpc.HoloActivityType throw_type = 1;</code>
@@ -476,8 +576,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
-      throwType_ = value.getNumber();
+      throwCase_ = 1;
+      throw_ = value.getNumber();
       onChanged();
       return this;
     }
@@ -486,19 +586,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearThrowType() {
-      
-      throwType_ = 0;
-      onChanged();
+      if (throwCase_ == 1) {
+        throwCase_ = 0;
+        throw_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean hit_ ;
     /**
      * <code>bool hit = 2;</code>
      * @return The hit.
      */
     public boolean getHit() {
-      return hit_;
+      if (throwCase_ == 2) {
+        return (java.lang.Boolean) throw_;
+      }
+      return false;
     }
     /**
      * <code>bool hit = 2;</code>
@@ -506,8 +610,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setHit(boolean value) {
-      
-      hit_ = value;
+      throwCase_ = 2;
+      throw_ = value;
       onChanged();
       return this;
     }
@@ -516,9 +620,11 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearHit() {
-      
-      hit_ = false;
-      onChanged();
+      if (throwCase_ == 2) {
+        throwCase_ = 0;
+        throw_ = null;
+        onChanged();
+      }
       return this;
     }
     @java.lang.Override

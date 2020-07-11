@@ -8273,9 +8273,25 @@ public enum Form
    */
   MEOWTH_GALARIAN(2335),
   /**
+   * <code>PONYTA_GALARIAN = 2336;</code>
+   */
+  PONYTA_GALARIAN(2336),
+  /**
+   * <code>RAPIDASH_GALARIAN = 2337;</code>
+   */
+  RAPIDASH_GALARIAN(2337),
+  /**
    * <code>FARFETCHD_GALARIAN = 2338;</code>
    */
   FARFETCHD_GALARIAN(2338),
+  /**
+   * <code>MR_MIME_GALARIAN = 2339;</code>
+   */
+  MR_MIME_GALARIAN(2339),
+  /**
+   * <code>CORSOLA_GALARIAN = 2340;</code>
+   */
+  CORSOLA_GALARIAN(2340),
   /**
    * <code>DARUMAKA_GALARIAN = 2341;</code>
    */
@@ -8288,6 +8304,10 @@ public enum Form
    * <code>DARMANITAN_GALARIAN_ZEN = 2343;</code>
    */
   DARMANITAN_GALARIAN_ZEN(2343),
+  /**
+   * <code>YAMASK_GALARIAN = 2344;</code>
+   */
+  YAMASK_GALARIAN(2344),
   /**
    * <code>STUNFISK_GALARIAN = 2345;</code>
    */
@@ -8328,6 +8348,22 @@ public enum Form
    * <code>SIRFETCHD_PURIFIED = 2512;</code>
    */
   SIRFETCHD_PURIFIED(2512),
+  /**
+   * <code>SLOWPOKE_GALARIAN = 2582;</code>
+   */
+  SLOWPOKE_GALARIAN(2582),
+  /**
+   * <code>SLOWBRO_GALARIAN = 2583;</code>
+   */
+  SLOWBRO_GALARIAN(2583),
+  /**
+   * <code>LAPRAS_COSTUME_2020 = 2585;</code>
+   */
+  LAPRAS_COSTUME_2020(2585),
+  /**
+   * <code>GENGAR_COSTUME_2020 = 2586;</code>
+   */
+  GENGAR_COSTUME_2020(2586),
   UNRECOGNIZED(-1),
   ;
 
@@ -16596,9 +16632,25 @@ public enum Form
    */
   public static final int MEOWTH_GALARIAN_VALUE = 2335;
   /**
+   * <code>PONYTA_GALARIAN = 2336;</code>
+   */
+  public static final int PONYTA_GALARIAN_VALUE = 2336;
+  /**
+   * <code>RAPIDASH_GALARIAN = 2337;</code>
+   */
+  public static final int RAPIDASH_GALARIAN_VALUE = 2337;
+  /**
    * <code>FARFETCHD_GALARIAN = 2338;</code>
    */
   public static final int FARFETCHD_GALARIAN_VALUE = 2338;
+  /**
+   * <code>MR_MIME_GALARIAN = 2339;</code>
+   */
+  public static final int MR_MIME_GALARIAN_VALUE = 2339;
+  /**
+   * <code>CORSOLA_GALARIAN = 2340;</code>
+   */
+  public static final int CORSOLA_GALARIAN_VALUE = 2340;
   /**
    * <code>DARUMAKA_GALARIAN = 2341;</code>
    */
@@ -16611,6 +16663,10 @@ public enum Form
    * <code>DARMANITAN_GALARIAN_ZEN = 2343;</code>
    */
   public static final int DARMANITAN_GALARIAN_ZEN_VALUE = 2343;
+  /**
+   * <code>YAMASK_GALARIAN = 2344;</code>
+   */
+  public static final int YAMASK_GALARIAN_VALUE = 2344;
   /**
    * <code>STUNFISK_GALARIAN = 2345;</code>
    */
@@ -16651,6 +16707,22 @@ public enum Form
    * <code>SIRFETCHD_PURIFIED = 2512;</code>
    */
   public static final int SIRFETCHD_PURIFIED_VALUE = 2512;
+  /**
+   * <code>SLOWPOKE_GALARIAN = 2582;</code>
+   */
+  public static final int SLOWPOKE_GALARIAN_VALUE = 2582;
+  /**
+   * <code>SLOWBRO_GALARIAN = 2583;</code>
+   */
+  public static final int SLOWBRO_GALARIAN_VALUE = 2583;
+  /**
+   * <code>LAPRAS_COSTUME_2020 = 2585;</code>
+   */
+  public static final int LAPRAS_COSTUME_2020_VALUE = 2585;
+  /**
+   * <code>GENGAR_COSTUME_2020 = 2586;</code>
+   */
+  public static final int GENGAR_COSTUME_2020_VALUE = 2586;
 
 
   public final int getNumber() {
@@ -18743,10 +18815,15 @@ public enum Form
       case 2333: return DRAGONITE_COSTUME_2020;
       case 2334: return ONIX_COSTUME_2020;
       case 2335: return MEOWTH_GALARIAN;
+      case 2336: return PONYTA_GALARIAN;
+      case 2337: return RAPIDASH_GALARIAN;
       case 2338: return FARFETCHD_GALARIAN;
+      case 2339: return MR_MIME_GALARIAN;
+      case 2340: return CORSOLA_GALARIAN;
       case 2341: return DARUMAKA_GALARIAN;
       case 2342: return DARMANITAN_GALARIAN_STANDARD;
       case 2343: return DARMANITAN_GALARIAN_ZEN;
+      case 2344: return YAMASK_GALARIAN;
       case 2345: return STUNFISK_GALARIAN;
       case 2501: return OBSTAGOON_NORMAL;
       case 2502: return OBSTAGOON_SHADOW;
@@ -18757,6 +18834,10 @@ public enum Form
       case 2510: return SIRFETCHD_NORMAL;
       case 2511: return SIRFETCHD_SHADOW;
       case 2512: return SIRFETCHD_PURIFIED;
+      case 2582: return SLOWPOKE_GALARIAN;
+      case 2583: return SLOWBRO_GALARIAN;
+      case 2585: return LAPRAS_COSTUME_2020;
+      case 2586: return GENGAR_COSTUME_2020;
       default: return null;
     }
   }

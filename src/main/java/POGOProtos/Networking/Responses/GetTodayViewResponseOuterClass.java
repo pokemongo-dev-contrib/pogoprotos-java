@@ -30,6 +30,16 @@ public final class GetTodayViewResponseOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedGroupChallengeSection_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedGroupChallengeSection_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventBannerSection_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventBannerSection_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedQuestSection_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -87,15 +97,15 @@ public final class GetTodayViewResponseOuterClass {
       "ayViewResponse.proto\022\037POGOProtos.Network" +
       "ing.Responses\032 POGOProtos/Enums/QuestTyp" +
       "e.proto\032:POGOProtos/Networking/Responses" +
-      "/GetLocalTimeResponse.proto\"\272\025\n\024GetToday" +
+      "/GetLocalTimeResponse.proto\"\340\031\n\024GetToday" +
       "ViewResponse\022L\n\006status\030\001 \001(\0162<.POGOProto" +
       "s.Networking.Responses.GetTodayViewRespo" +
       "nse.Status\022S\n\ntoday_view\030\002 \001(\0132?.POGOPro" +
       "tos.Networking.Responses.GetTodayViewRes" +
-      "ponse.TodayView\032\321\023\n\tTodayView\022b\n\010section" +
+      "ponse.TodayView\032\367\027\n\tTodayView\022b\n\010section" +
       "s\030\001 \003(\0132P.POGOProtos.Networking.Response" +
       "s.GetTodayViewResponse.TodayView.TodayVi" +
-      "ewSection\032\337\022\n\020TodayViewSection\022t\n\010pokeco" +
+      "ewSection\032\205\027\n\020TodayViewSection\022t\n\010pokeco" +
       "in\030\001 \001(\0132`.POGOProtos.Networking.Respons" +
       "es.GetTodayViewResponse.TodayView.TodayV" +
       "iewSection.PokecoinSectionH\000\022y\n\013gym_poke" +
@@ -113,50 +123,64 @@ public final class GetTodayViewResponseOuterClass {
       "extSectionH\000\022y\n\013timed_quest\030\006 \001(\0132b.POGO" +
       "Protos.Networking.Responses.GetTodayView" +
       "Response.TodayView.TodayViewSection.Time" +
-      "dQuestSectionH\000\032%\n\021TimedQuestSection\022\020\n\010" +
-      "quest_id\030\001 \001(\t\032\370\001\n\014DailyStreaks\022u\n\007strea" +
-      "ks\030\001 \003(\0132d.POGOProtos.Networking.Respons" +
+      "dQuestSectionH\000\022{\n\014event_banner\030\007 \001(\0132c." +
+      "POGOProtos.Networking.Responses.GetToday" +
+      "ViewResponse.TodayView.TodayViewSection." +
+      "EventBannerSectionH\000\022\214\001\n\025timed_group_cha" +
+      "llenge\030\010 \001(\0132k.POGOProtos.Networking.Res" +
+      "ponses.GetTodayViewResponse.TodayView.To" +
+      "dayViewSection.TimedGroupChallengeSectio" +
+      "nH\000\032L\n\032TimedGroupChallengeSection\022\024\n\014cha" +
+      "llenge_id\030\001 \001(\t\022\030\n\020header_image_url\030\002 \001(" +
+      "\t\032\311\001\n\022EventBannerSection\022\022\n\nevent_icon\030\001" +
+      " \001(\t\022\022\n\ntitle_text\030\002 \001(\t\022\021\n\tbody_text\030\003 " +
+      "\001(\t\022\021\n\timage_url\030\004 \001(\t\022\030\n\020header_image_u" +
+      "rl\030\005 \001(\t\022\032\n\022image_overlay_text\030\006 \001(\t\022\027\n\017" +
+      "link_from_image\030\007 \001(\t\022\026\n\016image_sub_text\030" +
+      "\010 \001(\t\032%\n\021TimedQuestSection\022\020\n\010quest_id\030\001" +
+      " \001(\t\032\370\001\n\014DailyStreaks\022u\n\007streaks\030\001 \003(\0132d" +
+      ".POGOProtos.Networking.Responses.GetToda" +
+      "yViewResponse.TodayView.TodayViewSection" +
+      ".DailyStreaks.Streak\032q\n\006Streak\022/\n\nquest_" +
+      "type\030\001 \001(\0162\033.POGOProtos.Enums.QuestType\022" +
+      "\r\n\005count\030\002 \001(\005\022\016\n\006target\030\003 \001(\005\022\027\n\017remain" +
+      "ing_today\030\004 \001(\005\032\274\006\n\014EventSection\022\022\n\neven" +
+      "t_name\030\001 \001(\t\022Q\n\010end_time\030\003 \001(\0132?.POGOPro" +
+      "tos.Networking.Responses.GetLocalTimeRes" +
+      "ponse.LocalTime\022\023\n\013ref_news_id\030\004 \001(\t\022{\n\013" +
+      "bonus_boxes\030\005 \003(\0132f.POGOProtos.Networkin" +
+      "g.Responses.GetTodayViewResponse.TodayVi" +
+      "ew.TodayViewSection.EventSection.BonusBo" +
+      "x\032\262\004\n\010BonusBox\022\014\n\004text\030\001 \001(\t\022\202\001\n\ticon_ty" +
+      "pe\030\002 \001(\0162o.POGOProtos.Networking.Respons" +
       "es.GetTodayViewResponse.TodayView.TodayV" +
-      "iewSection.DailyStreaks.Streak\032q\n\006Streak" +
-      "\022/\n\nquest_type\030\001 \001(\0162\033.POGOProtos.Enums." +
-      "QuestType\022\r\n\005count\030\002 \001(\005\022\016\n\006target\030\003 \001(\005" +
-      "\022\027\n\017remaining_today\030\004 \001(\005\032\274\006\n\014EventSecti" +
-      "on\022\022\n\nevent_name\030\001 \001(\t\022Q\n\010end_time\030\003 \001(\013" +
-      "2?.POGOProtos.Networking.Responses.GetLo" +
-      "calTimeResponse.LocalTime\022\023\n\013ref_news_id" +
-      "\030\004 \001(\t\022{\n\013bonus_boxes\030\005 \003(\0132f.POGOProtos" +
-      ".Networking.Responses.GetTodayViewRespon" +
-      "se.TodayView.TodayViewSection.EventSecti" +
-      "on.BonusBox\032\262\004\n\010BonusBox\022\014\n\004text\030\001 \001(\t\022\202" +
-      "\001\n\ticon_type\030\002 \001(\0162o.POGOProtos.Networki" +
-      "ng.Responses.GetTodayViewResponse.TodayV" +
-      "iew.TodayViewSection.EventSection.BonusB" +
-      "ox.IconType\"\222\003\n\010IconType\022\t\n\005UNSET\020\000\022\022\n\016A" +
-      "DVENTURE_SYNC\020\001\022\t\n\005BUDDY\020\002\022\021\n\rCANDY_GENE" +
-      "RAL\020\003\022\007\n\003EGG\020\004\022\021\n\rEGG_INCUBATOR\020\005\022\016\n\nEVE" +
-      "NT_MOVE\020\006\022\r\n\tEVOLUTION\020\007\022\022\n\016FIELD_RESEAR" +
-      "CH\020\010\022\016\n\nFRIENDSHIP\020\t\022\010\n\004GIFT\020\n\022\013\n\007INCENS" +
-      "E\020\013\022\r\n\tLUCKY_EGG\020\014\022\017\n\013LURE_MODULE\020\r\022\r\n\tP" +
-      "HOTOBOMB\020\016\022\014\n\010POKESTOP\020\017\022\010\n\004RAID\020\020\022\r\n\tRA" +
-      "ID_PASS\020\021\022\021\n\rSPAWN_UNKNOWN\020\022\022\016\n\nSTAR_PIE" +
-      "CE\020\023\022\014\n\010STARDUST\020\024\022\017\n\013TEAM_ROCKET\020\025\022\t\n\005T" +
-      "RADE\020\026\022\022\n\016TRANSFER_CANDY\020\027\022\n\n\006BATTLE\020\030\022\006" +
-      "\n\002XP\020\031\022\010\n\004SHOP\020\032\032!\n\rUpNextSection\022\020\n\010eve" +
-      "nt_id\030\001 \003(\t\032`\n\017PokecoinSection\022\032\n\022coins_" +
-      "earned_today\030\001 \001(\005\022\031\n\021max_coins_per_day\030" +
-      "\002 \001(\005\022\026\n\016coins_quest_id\030\003 \001(\t\032\230\003\n\021GymPok" +
-      "emonSection\022\205\001\n\016pokemon_in_gym\030\001 \003(\0132m.P" +
-      "OGOProtos.Networking.Responses.GetTodayV" +
-      "iewResponse.TodayView.TodayViewSection.G" +
-      "ymPokemonSection.GymPokemon\022\215\001\n\026pokemon_" +
-      "returned_today\030\002 \003(\0132m.POGOProtos.Networ" +
-      "king.Responses.GetTodayViewResponse.Toda" +
-      "yView.TodayViewSection.GymPokemonSection" +
-      ".GymPokemon\032k\n\nGymPokemon\022\022\n\npokemon_id\030" +
-      "\001 \001(\003\022\022\n\nmotivation\030\002 \001(\002\022\035\n\025deployed_ti" +
-      "mestamp_ms\030\003 \001(\003\022\026\n\016coins_returned\030\004 \001(\005" +
-      "B\t\n\007Section\"+\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCC" +
-      "ESS\020\001\022\t\n\005ERROR\020\002B\002P\001b\006proto3"
+      "iewSection.EventSection.BonusBox.IconTyp" +
+      "e\"\222\003\n\010IconType\022\t\n\005UNSET\020\000\022\022\n\016ADVENTURE_S" +
+      "YNC\020\001\022\t\n\005BUDDY\020\002\022\021\n\rCANDY_GENERAL\020\003\022\007\n\003E" +
+      "GG\020\004\022\021\n\rEGG_INCUBATOR\020\005\022\016\n\nEVENT_MOVE\020\006\022" +
+      "\r\n\tEVOLUTION\020\007\022\022\n\016FIELD_RESEARCH\020\010\022\016\n\nFR" +
+      "IENDSHIP\020\t\022\010\n\004GIFT\020\n\022\013\n\007INCENSE\020\013\022\r\n\tLUC" +
+      "KY_EGG\020\014\022\017\n\013LURE_MODULE\020\r\022\r\n\tPHOTOBOMB\020\016" +
+      "\022\014\n\010POKESTOP\020\017\022\010\n\004RAID\020\020\022\r\n\tRAID_PASS\020\021\022" +
+      "\021\n\rSPAWN_UNKNOWN\020\022\022\016\n\nSTAR_PIECE\020\023\022\014\n\010ST" +
+      "ARDUST\020\024\022\017\n\013TEAM_ROCKET\020\025\022\t\n\005TRADE\020\026\022\022\n\016" +
+      "TRANSFER_CANDY\020\027\022\n\n\006BATTLE\020\030\022\006\n\002XP\020\031\022\010\n\004" +
+      "SHOP\020\032\032!\n\rUpNextSection\022\020\n\010event_id\030\001 \003(" +
+      "\t\032`\n\017PokecoinSection\022\032\n\022coins_earned_tod" +
+      "ay\030\001 \001(\005\022\031\n\021max_coins_per_day\030\002 \001(\005\022\026\n\016c" +
+      "oins_quest_id\030\003 \001(\t\032\230\003\n\021GymPokemonSectio" +
+      "n\022\205\001\n\016pokemon_in_gym\030\001 \003(\0132m.POGOProtos." +
+      "Networking.Responses.GetTodayViewRespons" +
+      "e.TodayView.TodayViewSection.GymPokemonS" +
+      "ection.GymPokemon\022\215\001\n\026pokemon_returned_t" +
+      "oday\030\002 \003(\0132m.POGOProtos.Networking.Respo" +
+      "nses.GetTodayViewResponse.TodayView.Toda" +
+      "yViewSection.GymPokemonSection.GymPokemo" +
+      "n\032k\n\nGymPokemon\022\022\n\npokemon_id\030\001 \001(\003\022\022\n\nm" +
+      "otivation\030\002 \001(\002\022\035\n\025deployed_timestamp_ms" +
+      "\030\003 \001(\003\022\026\n\016coins_returned\030\004 \001(\005B\t\n\007Sectio" +
+      "n\"+\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\t\n\005E" +
+      "RROR\020\002B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -181,15 +205,27 @@ public final class GetTodayViewResponseOuterClass {
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor,
-        new java.lang.String[] { "Pokecoin", "GymPokemon", "Streaks", "Event", "UpNext", "TimedQuest", "Section", });
-    internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedQuestSection_descriptor =
+        new java.lang.String[] { "Pokecoin", "GymPokemon", "Streaks", "Event", "UpNext", "TimedQuest", "EventBanner", "TimedGroupChallenge", "Section", });
+    internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedGroupChallengeSection_descriptor =
       internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(0);
+    internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedGroupChallengeSection_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedGroupChallengeSection_descriptor,
+        new java.lang.String[] { "ChallengeId", "HeaderImageUrl", });
+    internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventBannerSection_descriptor =
+      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(1);
+    internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventBannerSection_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventBannerSection_descriptor,
+        new java.lang.String[] { "EventIcon", "TitleText", "BodyText", "ImageUrl", "HeaderImageUrl", "ImageOverlayText", "LinkFromImage", "ImageSubText", });
+    internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedQuestSection_descriptor =
+      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(2);
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedQuestSection_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_TimedQuestSection_descriptor,
         new java.lang.String[] { "QuestId", });
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_DailyStreaks_descriptor =
-      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(1);
+      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(3);
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_DailyStreaks_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_DailyStreaks_descriptor,
@@ -201,7 +237,7 @@ public final class GetTodayViewResponseOuterClass {
         internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_DailyStreaks_Streak_descriptor,
         new java.lang.String[] { "QuestType", "Count", "Target", "RemainingToday", });
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventSection_descriptor =
-      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(2);
+      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(4);
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventSection_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventSection_descriptor,
@@ -213,19 +249,19 @@ public final class GetTodayViewResponseOuterClass {
         internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_EventSection_BonusBox_descriptor,
         new java.lang.String[] { "Text", "IconType", });
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_UpNextSection_descriptor =
-      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(3);
+      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(5);
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_UpNextSection_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_UpNextSection_descriptor,
         new java.lang.String[] { "EventId", });
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_PokecoinSection_descriptor =
-      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(4);
+      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(6);
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_PokecoinSection_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_PokecoinSection_descriptor,
         new java.lang.String[] { "CoinsEarnedToday", "MaxCoinsPerDay", "CoinsQuestId", });
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_GymPokemonSection_descriptor =
-      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(5);
+      internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_descriptor.getNestedTypes().get(7);
     internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_GymPokemonSection_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_GetTodayViewResponse_TodayView_TodayViewSection_GymPokemonSection_descriptor,

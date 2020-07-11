@@ -24,6 +24,10 @@ public enum PresentationType
    * <code>PRESENTATION_TYPE_SALE = 3;</code>
    */
   PRESENTATION_TYPE_SALE(3),
+  /**
+   * <code>PRESENTATION_TYPE_ML_BUNDLE_TRACKING_ID = 4;</code>
+   */
+  PRESENTATION_TYPE_ML_BUNDLE_TRACKING_ID(4),
   UNRECOGNIZED(-1),
   ;
 
@@ -43,6 +47,10 @@ public enum PresentationType
    * <code>PRESENTATION_TYPE_SALE = 3;</code>
    */
   public static final int PRESENTATION_TYPE_SALE_VALUE = 3;
+  /**
+   * <code>PRESENTATION_TYPE_ML_BUNDLE_TRACKING_ID = 4;</code>
+   */
+  public static final int PRESENTATION_TYPE_ML_BUNDLE_TRACKING_ID_VALUE = 4;
 
 
   public final int getNumber() {
@@ -73,6 +81,7 @@ public enum PresentationType
       case 1: return PRESENTATION_TYPE_CATEGORY;
       case 2: return PRESENTATION_TYPE_SORT;
       case 3: return PRESENTATION_TYPE_SALE;
+      case 4: return PRESENTATION_TYPE_ML_BUNDLE_TRACKING_ID;
       default: return null;
     }
   }

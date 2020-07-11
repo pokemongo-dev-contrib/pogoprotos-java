@@ -744,6 +744,10 @@ public enum Method
    * <code>METHOD_SAVE_PLAYER_PREFERENCES = 1652;</code>
    */
   METHOD_SAVE_PLAYER_PREFERENCES(1652),
+  /**
+   * <code>METHOD_GET_TIMED_GROUP_CHALLENGE = 1700;</code>
+   */
+  METHOD_GET_TIMED_GROUP_CHALLENGE(1700),
   UNRECOGNIZED(-1),
   ;
 
@@ -1483,6 +1487,10 @@ public enum Method
    * <code>METHOD_SAVE_PLAYER_PREFERENCES = 1652;</code>
    */
   public static final int METHOD_SAVE_PLAYER_PREFERENCES_VALUE = 1652;
+  /**
+   * <code>METHOD_GET_TIMED_GROUP_CHALLENGE = 1700;</code>
+   */
+  public static final int METHOD_GET_TIMED_GROUP_CHALLENGE_VALUE = 1700;
 
 
   public final int getNumber() {
@@ -1693,6 +1701,7 @@ public enum Method
       case 1650: return METHOD_OPEN_SPONSORED_GIFT;
       case 1651: return METHOD_SPONSORED_GIFT_REPORT_INTERACTION;
       case 1652: return METHOD_SAVE_PLAYER_PREFERENCES;
+      case 1700: return METHOD_GET_TIMED_GROUP_CHALLENGE;
       default: return null;
     }
   }

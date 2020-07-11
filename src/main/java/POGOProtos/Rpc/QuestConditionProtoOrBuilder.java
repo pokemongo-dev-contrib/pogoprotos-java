@@ -8,17 +8,6 @@ public interface QuestConditionProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.QuestConditionProto.ConditionType type = 1;</code>
-   * @return The enum numeric value on the wire for type.
-   */
-  int getTypeValue();
-  /**
-   * <code>.POGOProtos.Rpc.QuestConditionProto.ConditionType type = 1;</code>
-   * @return The type.
-   */
-  POGOProtos.Rpc.QuestConditionProto.ConditionType getType();
-
-  /**
    * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
    * @return Whether the withPokemonType field is set.
    */
@@ -392,4 +381,17 @@ public interface QuestConditionProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
    */
   POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder getWithDailyBuddyAffectionOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.QuestConditionProto.ConditionType type = 1;</code>
+   * @return The enum numeric value on the wire for type.
+   */
+  int getTypeValue();
+  /**
+   * <code>.POGOProtos.Rpc.QuestConditionProto.ConditionType type = 1;</code>
+   * @return The type.
+   */
+  POGOProtos.Rpc.QuestConditionProto.ConditionType getType();
+
+  public POGOProtos.Rpc.QuestConditionProto.ConditionCase getConditionCase();
 }

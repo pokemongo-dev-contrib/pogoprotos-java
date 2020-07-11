@@ -25,7 +25,7 @@ public final class RequestTypeOuterClass {
     java.lang.String[] descriptorData = {
       "\n0POGOProtos/Networking/Requests/Request" +
       "Type.proto\022\036POGOProtos.Networking.Reques" +
-      "ts*\216%\n\013RequestType\022\020\n\014METHOD_UNSET\020\000\022\016\n\n" +
+      "ts*\256%\n\013RequestType\022\020\n\014METHOD_UNSET\020\000\022\016\n\n" +
       "GET_PLAYER\020\002\022\026\n\022GET_HOLO_INVENTORY\020\004\022\025\n\021" +
       "DOWNLOAD_SETTINGS\020\005\022\033\n\027DOWNLOAD_ITEM_TEM" +
       "PLATES\020\006\022\"\n\036DOWNLOAD_REMOTE_CONFIG_VERSI" +
@@ -143,8 +143,8 @@ public final class RequestTypeOuterClass {
       "VITATION\020\340\013\022\030\n\023GET_DAILY_ENCOUNTER\020\301\014\022\024\n" +
       "\017DAILY_ENCOUNTER\020\302\014\022\030\n\023OPEN_SPONSORED_GI" +
       "FT\020\362\014\022&\n!SPONSORED_GIFT_REPORT_INTERACTI" +
-      "ON\020\363\014\022\034\n\027SAVE_PLAYER_PREFERENCES\020\364\014B\002P\001b" +
-      "\006proto3"
+      "ON\020\363\014\022\034\n\027SAVE_PLAYER_PREFERENCES\020\364\014\022\036\n\031G" +
+      "ET_TIMED_GROUP_CHALLENGE\020\244\rB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

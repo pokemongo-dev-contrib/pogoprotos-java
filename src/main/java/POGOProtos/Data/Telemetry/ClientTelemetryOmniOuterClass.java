@@ -122,152 +122,155 @@ public final class ClientTelemetryOmniOuterClass {
       "Telemetry.proto\0322POGOProtos/Data/Telemet" +
       "ry/ArMappingTelemetry.proto\0323POGOProtos/" +
       "Data/Telemetry/RemoteRaidTelemetry.proto" +
-      "\"\254-\n\023ClientTelemetryOmni\0228\n\tboot_time\030\001 " +
-      "\001(\0132#.POGOProtos.Data.Telemetry.BootTime" +
-      "H\000\022:\n\nframe_rate\030\002 \001(\0132$.POGOProtos.Data" +
-      ".Telemetry.FrameRateH\000\022S\n\027generic_click_" +
-      "telemetry\030\003 \001(\01320.POGOProtos.Data.Teleme" +
-      "try.GenericClickTelemetryH\000\022M\n\024map_event" +
-      "s_telemetry\030\004 \001(\0132-.POGOProtos.Data.Tele" +
-      "metry.MapEventsTelemetryH\000\022S\n\027spin_pokes" +
-      "top_telemetry\030\005 \001(\01320.POGOProtos.Data.Te" +
-      "lemetry.SpinPokestopTelemetryH\000\022Q\n\026profi" +
-      "le_page_telemetry\030\006 \001(\0132/.POGOProtos.Dat" +
-      "a.Telemetry.ProfilePageTelemetryH\000\022S\n\027sh" +
-      "opping_page_telemetry\030\007 \001(\01320.POGOProtos" +
-      ".Data.Telemetry.ShoppingPageTelemetryH\000\022" +
-      "[\n\033encounter_pokemon_telemetry\030\010 \001(\01324.P" +
-      "OGOProtos.Data.Telemetry.EncounterPokemo" +
-      "nTelemetryH\000\022S\n\027catch_pokemon_telemetry\030" +
-      "\t \001(\01320.POGOProtos.Data.Telemetry.CatchP" +
-      "okemonTelemetryH\000\022U\n\030deploy_pokemon_tele" +
-      "metry\030\n \001(\01321.POGOProtos.Data.Telemetry." +
-      "DeployPokemonTelemetryH\000\022Q\n\026feed_pokemon" +
-      "_telemetry\030\013 \001(\0132/.POGOProtos.Data.Telem" +
-      "etry.FeedPokemonTelemetryH\000\022U\n\030evolve_po" +
-      "kemon_telemetry\030\014 \001(\01321.POGOProtos.Data." +
-      "Telemetry.EvolvePokemonTelemetryH\000\022W\n\031re" +
-      "lease_pokemon_telemetry\030\r \001(\01322.POGOProt" +
-      "os.Data.Telemetry.ReleasePokemonTelemetr" +
-      "yH\000\022Y\n\032nickname_pokemon_telemetry\030\016 \001(\0132" +
-      "3.POGOProtos.Data.Telemetry.NicknamePoke" +
-      "monTelemetryH\000\022K\n\023news_page_telemetry\030\017 " +
-      "\001(\0132,.POGOProtos.Data.Telemetry.NewsPage" +
-      "TelemetryH\000\022B\n\016item_telemetry\030\020 \001(\0132(.PO" +
-      "GOProtos.Data.Telemetry.ItemTelemetryH\000\022" +
-      "Q\n\026battle_party_telemetry\030\021 \001(\0132/.POGOPr" +
-      "otos.Data.Telemetry.BattlePartyTelemetry" +
-      "H\000\022W\n\031passcode_redeem_telemetry\030\022 \001(\01322." +
-      "POGOProtos.Data.Telemetry.PasscodeRedeem" +
-      "TelemetryH\000\022M\n\024link_login_telemetry\030\023 \001(" +
-      "\0132-.POGOProtos.Data.Telemetry.LinkLoginT" +
-      "elemetryH\000\022B\n\016raid_telemetry\030\024 \001(\0132(.POG" +
-      "OProtos.Data.Telemetry.RaidTelemetryH\000\022[" +
-      "\n\033push_notification_telemetry\030\025 \001(\01324.PO" +
-      "GOProtos.Data.Telemetry.PushNotification" +
-      "TelemetryH\000\022a\n\036avatar_customization_tele" +
-      "metry\030\026 \001(\01327.POGOProtos.Data.Telemetry." +
-      "AvatarCustomizationTelemetryH\000\022z\n,read_p" +
-      "oint_of_interest_description_telemetry\030\027" +
-      " \001(\0132B.POGOProtos.Data.Telemetry.ReadPoi" +
-      "ntOfInterestDescriptionTelemetryH\000\022@\n\rwe" +
-      "b_telemetry\030\030 \001(\0132\'.POGOProtos.Data.Tele" +
-      "metry.WebTelemetryH\000\022K\n\023change_ar_teleme" +
-      "try\030\031 \001(\0132,.POGOProtos.Data.Telemetry.Ch" +
-      "angeArTelemetryH\000\022`\n\036weather_detail_clic" +
-      "k_telemetry\030\032 \001(\01326.POGOProtos.Data.Tele" +
-      "metry.WeatherDetailClickTelemetryH\000\022S\n\031u" +
-      "ser_issue_weather_report\030\033 \001(\0132..POGOPro" +
-      "tos.Data.Player.UserIssueWeatherReportH\000" +
-      "\022[\n\033pokemon_inventory_telemetry\030\034 \001(\01324." +
-      "POGOProtos.Data.Telemetry.PokemonInvento" +
-      "ryTelemetryH\000\022F\n\020social_telemetry\030\035 \001(\0132" +
-      "*.POGOProtos.Data.Telemetry.SocialTeleme" +
-      "tryH\000\022d\n\036check_encounter_info_telemetry\030" +
-      "\036 \001(\0132:.POGOProtos.Data.Telemetry.CheckE" +
-      "ncounterTrayInfoTelemetryH\000\022V\n\031pokemon_g" +
-      "o_plus_telemetry\030\037 \001(\01321.POGOProtos.Data" +
-      ".Telemetry.PokemonGoPlusTelemetryH\000\022O\n\024r" +
-      "pc_timing_telemetry\030  \001(\0132/.POGOProtos.D" +
-      "ata.Telemetry.RpcResponseTelemetryH\000\022T\n\033" +
-      "social_gift_count_telemetry\030! \001(\0132-.POGO" +
-      "Protos.Settings.SocialGiftCountTelemetry" +
-      "H\000\022Y\n\026asset_bundle_telemetry\030\" \001(\01327.POG" +
-      "OProtos.Data.Telemetry.AssetBundleDownlo" +
-      "adTelemetryH\000\022\\\n\034asset_poi_download_tele" +
-      "metry\030# \001(\01324.POGOProtos.Data.Telemetry." +
-      "AssetPoiDownloadTelemetryH\000\022b\n\037asset_str" +
-      "eam_download_telemetry\030$ \001(\01327.POGOProto" +
-      "s.Data.Telemetry.AssetStreamDownloadTele" +
-      "metryH\000\022i\n#asset_stream_cache_culled_tel" +
-      "emetry\030% \001(\0132:.POGOProtos.Data.Telemetry" +
-      ".AssetStreamCacheCulledTelemetryH\000\022\\\n\033rp" +
-      "c_socket_timing_telemetry\030& \001(\01325.POGOPr" +
-      "otos.Data.Telemetry.RpcSocketResponseTel" +
-      "emetryH\000\022O\n\020permissions_flow\030\' \001(\01323.POG" +
-      "OProtos.Data.Telemetry.PermissionsFlowTe" +
-      "lemetryH\000\022X\n\025device_service_toggle\030( \001(\013" +
-      "27.POGOProtos.Data.Telemetry.DeviceServi" +
-      "ceToggleTelemetryH\000\022B\n\016boot_telemetry\030) " +
-      "\001(\0132(.POGOProtos.Data.Telemetry.BootTele" +
-      "metryH\000\022J\n\017user_attributes\030* \001(\0132/.POGOP" +
-      "rotos.Settings.Master.Item.UserAttribute" +
-      "sH\000\022N\n\024onboarding_telemetry\030+ \001(\0132..POGO" +
-      "Protos.Data.Telemetry.OnboardingTelemetr" +
-      "yH\000\022Q\n\026login_action_telemetry\030, \001(\0132/.PO" +
-      "GOProtos.Data.Telemetry.LoginActionTelem" +
-      "etryH\000\022O\n\032ar_photo_session_telemetry\030- \001" +
-      "(\0132).POGOProtos.Data.Telemetry.ArPhotoSe" +
-      "ssionH\000\022J\n\022invasion_telemetry\030. \001(\0132,.PO" +
-      "GOProtos.Data.Telemetry.InvasionTelemetr" +
-      "yH\000\022W\n\031combat_minigame_telemetry\030/ \001(\01322" +
-      ".POGOProtos.Data.Telemetry.CombatMinigam" +
-      "eTelemetryH\000\022e\n!leave_point_of_interest_" +
-      "telemetry\0300 \001(\01328.POGOProtos.Data.Teleme" +
-      "try.LeavePointOfInterestTelemetryH\000\022n\n&v" +
-      "iew_point_of_interest_image_telemetry\0301 " +
-      "\001(\0132<.POGOProtos.Data.Telemetry.ViewPoin" +
-      "tOfInterestImageTelemetryH\000\022^\n\035combat_hu" +
-      "b_entrance_telemetry\0302 \001(\01325.POGOProtos." +
-      "Data.Telemetry.CombatHubEntranceTelemetr" +
-      "yH\000\022f\n!leave_interaction_range_telemetry" +
-      "\0303 \001(\01329.POGOProtos.Data.Telemetry.Leave" +
-      "InteractionRangeTelemetryH\000\022^\n\035shopping_" +
-      "page_click_telemetry\0304 \001(\01325.POGOProtos." +
-      "Data.Telemetry.ShoppingPageClickTelemetr" +
-      "yH\000\022`\n\036shopping_page_scroll_telemetry\0305 " +
-      "\001(\01326.POGOProtos.Data.Telemetry.Shopping" +
-      "PageScrollTelemetryH\000\022c\n\037device_specific" +
-      "ations_telemetry\0306 \001(\01328.POGOProtos.Data" +
-      ".Telemetry.DeviceSpecificationsTelemetry" +
-      "H\000\022[\n\033screen_resolution_telemetry\0307 \001(\0132" +
-      "4.POGOProtos.Data.Telemetry.ScreenResolu" +
-      "tionTelemetryH\000\022o\n&ar_buddy_multiplayer_" +
-      "session_telemetry\0308 \001(\0132=.POGOProtos.Dat" +
-      "a.Telemetry.ARBuddyMultiplayerSessionTel" +
-      "emetryH\000\022p\n-buddy_multiplayer_connection" +
-      "_failed_telemetry\0309 \001(\01327.POGOProtos.Dat" +
-      "a.Buddy.BuddyMultiplayerConnectionFailed" +
-      "H\000\022v\n0buddy_multiplayer_connection_succe" +
-      "eded_telemetry\030: \001(\0132:.POGOProtos.Data.B" +
-      "uddy.BuddyMultiplayerConnectionSucceeded" +
-      "H\000\022r\n/buddy_multiplayer_time_to_get_sess" +
-      "ion_telemetry\030; \001(\01327.POGOProtos.Data.Bu" +
-      "ddy.BuddyMultiplayerTimeToGetSessionH\000\022q" +
-      "\n\'player_hud_notification_click_telemetr" +
-      "y\030< \001(\0132>.POGOProtos.Data.Telemetry.Play" +
-      "erHudNotificationClickTelemetryH\000\022]\n\034mon" +
-      "odepth_download_telemetry\030= \001(\01325.POGOPr" +
-      "otos.Data.Telemetry.MonodepthDownloadTel" +
-      "emetryH\000\022M\n\024ar_mapping_telemetry\030> \001(\0132-" +
-      ".POGOProtos.Data.Telemetry.ArMappingTele" +
-      "metryH\000\022O\n\025remote_raid_telemetry\030? \001(\0132." +
-      ".POGOProtos.Data.Telemetry.RemoteRaidTel" +
-      "emetryH\000\022C\n\013server_data\030\351\007 \001(\0132-.POGOPro" +
-      "tos.Data.Telemetry.PlatformServerData\022G\n" +
-      "\016common_filters\030\352\007 \001(\0132..POGOProtos.Data" +
-      ".Platform.PlatformCommonFilterB\017\n\rTeleme" +
-      "tryDataB\002P\001b\006proto3"
+      "\0321POGOProtos/Data/Telemetry/DeviceOSTele" +
+      "metry.proto\"\371-\n\023ClientTelemetryOmni\0228\n\tb" +
+      "oot_time\030\001 \001(\0132#.POGOProtos.Data.Telemet" +
+      "ry.BootTimeH\000\022:\n\nframe_rate\030\002 \001(\0132$.POGO" +
+      "Protos.Data.Telemetry.FrameRateH\000\022S\n\027gen" +
+      "eric_click_telemetry\030\003 \001(\01320.POGOProtos." +
+      "Data.Telemetry.GenericClickTelemetryH\000\022M" +
+      "\n\024map_events_telemetry\030\004 \001(\0132-.POGOProto" +
+      "s.Data.Telemetry.MapEventsTelemetryH\000\022S\n" +
+      "\027spin_pokestop_telemetry\030\005 \001(\01320.POGOPro" +
+      "tos.Data.Telemetry.SpinPokestopTelemetry" +
+      "H\000\022Q\n\026profile_page_telemetry\030\006 \001(\0132/.POG" +
+      "OProtos.Data.Telemetry.ProfilePageTeleme" +
+      "tryH\000\022S\n\027shopping_page_telemetry\030\007 \001(\01320" +
+      ".POGOProtos.Data.Telemetry.ShoppingPageT" +
+      "elemetryH\000\022[\n\033encounter_pokemon_telemetr" +
+      "y\030\010 \001(\01324.POGOProtos.Data.Telemetry.Enco" +
+      "unterPokemonTelemetryH\000\022S\n\027catch_pokemon" +
+      "_telemetry\030\t \001(\01320.POGOProtos.Data.Telem" +
+      "etry.CatchPokemonTelemetryH\000\022U\n\030deploy_p" +
+      "okemon_telemetry\030\n \001(\01321.POGOProtos.Data" +
+      ".Telemetry.DeployPokemonTelemetryH\000\022Q\n\026f" +
+      "eed_pokemon_telemetry\030\013 \001(\0132/.POGOProtos" +
+      ".Data.Telemetry.FeedPokemonTelemetryH\000\022U" +
+      "\n\030evolve_pokemon_telemetry\030\014 \001(\01321.POGOP" +
+      "rotos.Data.Telemetry.EvolvePokemonTeleme" +
+      "tryH\000\022W\n\031release_pokemon_telemetry\030\r \001(\013" +
+      "22.POGOProtos.Data.Telemetry.ReleasePoke" +
+      "monTelemetryH\000\022Y\n\032nickname_pokemon_telem" +
+      "etry\030\016 \001(\01323.POGOProtos.Data.Telemetry.N" +
+      "icknamePokemonTelemetryH\000\022K\n\023news_page_t" +
+      "elemetry\030\017 \001(\0132,.POGOProtos.Data.Telemet" +
+      "ry.NewsPageTelemetryH\000\022B\n\016item_telemetry" +
+      "\030\020 \001(\0132(.POGOProtos.Data.Telemetry.ItemT" +
+      "elemetryH\000\022Q\n\026battle_party_telemetry\030\021 \001" +
+      "(\0132/.POGOProtos.Data.Telemetry.BattlePar" +
+      "tyTelemetryH\000\022W\n\031passcode_redeem_telemet" +
+      "ry\030\022 \001(\01322.POGOProtos.Data.Telemetry.Pas" +
+      "scodeRedeemTelemetryH\000\022M\n\024link_login_tel" +
+      "emetry\030\023 \001(\0132-.POGOProtos.Data.Telemetry" +
+      ".LinkLoginTelemetryH\000\022B\n\016raid_telemetry\030" +
+      "\024 \001(\0132(.POGOProtos.Data.Telemetry.RaidTe" +
+      "lemetryH\000\022[\n\033push_notification_telemetry" +
+      "\030\025 \001(\01324.POGOProtos.Data.Telemetry.PushN" +
+      "otificationTelemetryH\000\022a\n\036avatar_customi" +
+      "zation_telemetry\030\026 \001(\01327.POGOProtos.Data" +
+      ".Telemetry.AvatarCustomizationTelemetryH" +
+      "\000\022z\n,read_point_of_interest_description_" +
+      "telemetry\030\027 \001(\0132B.POGOProtos.Data.Teleme" +
+      "try.ReadPointOfInterestDescriptionTeleme" +
+      "tryH\000\022@\n\rweb_telemetry\030\030 \001(\0132\'.POGOProto" +
+      "s.Data.Telemetry.WebTelemetryH\000\022K\n\023chang" +
+      "e_ar_telemetry\030\031 \001(\0132,.POGOProtos.Data.T" +
+      "elemetry.ChangeArTelemetryH\000\022`\n\036weather_" +
+      "detail_click_telemetry\030\032 \001(\01326.POGOProto" +
+      "s.Data.Telemetry.WeatherDetailClickTelem" +
+      "etryH\000\022S\n\031user_issue_weather_report\030\033 \001(" +
+      "\0132..POGOProtos.Data.Player.UserIssueWeat" +
+      "herReportH\000\022[\n\033pokemon_inventory_telemet" +
+      "ry\030\034 \001(\01324.POGOProtos.Data.Telemetry.Pok" +
+      "emonInventoryTelemetryH\000\022F\n\020social_telem" +
+      "etry\030\035 \001(\0132*.POGOProtos.Data.Telemetry.S" +
+      "ocialTelemetryH\000\022d\n\036check_encounter_info" +
+      "_telemetry\030\036 \001(\0132:.POGOProtos.Data.Telem" +
+      "etry.CheckEncounterTrayInfoTelemetryH\000\022V" +
+      "\n\031pokemon_go_plus_telemetry\030\037 \001(\01321.POGO" +
+      "Protos.Data.Telemetry.PokemonGoPlusTelem" +
+      "etryH\000\022O\n\024rpc_timing_telemetry\030  \001(\0132/.P" +
+      "OGOProtos.Data.Telemetry.RpcResponseTele" +
+      "metryH\000\022T\n\033social_gift_count_telemetry\030!" +
+      " \001(\0132-.POGOProtos.Settings.SocialGiftCou" +
+      "ntTelemetryH\000\022Y\n\026asset_bundle_telemetry\030" +
+      "\" \001(\01327.POGOProtos.Data.Telemetry.AssetB" +
+      "undleDownloadTelemetryH\000\022\\\n\034asset_poi_do" +
+      "wnload_telemetry\030# \001(\01324.POGOProtos.Data" +
+      ".Telemetry.AssetPoiDownloadTelemetryH\000\022b" +
+      "\n\037asset_stream_download_telemetry\030$ \001(\0132" +
+      "7.POGOProtos.Data.Telemetry.AssetStreamD" +
+      "ownloadTelemetryH\000\022i\n#asset_stream_cache" +
+      "_culled_telemetry\030% \001(\0132:.POGOProtos.Dat" +
+      "a.Telemetry.AssetStreamCacheCulledTeleme" +
+      "tryH\000\022\\\n\033rpc_socket_timing_telemetry\030& \001" +
+      "(\01325.POGOProtos.Data.Telemetry.RpcSocket" +
+      "ResponseTelemetryH\000\022O\n\020permissions_flow\030" +
+      "\' \001(\01323.POGOProtos.Data.Telemetry.Permis" +
+      "sionsFlowTelemetryH\000\022X\n\025device_service_t" +
+      "oggle\030( \001(\01327.POGOProtos.Data.Telemetry." +
+      "DeviceServiceToggleTelemetryH\000\022B\n\016boot_t" +
+      "elemetry\030) \001(\0132(.POGOProtos.Data.Telemet" +
+      "ry.BootTelemetryH\000\022J\n\017user_attributes\030* " +
+      "\001(\0132/.POGOProtos.Settings.Master.Item.Us" +
+      "erAttributesH\000\022N\n\024onboarding_telemetry\030+" +
+      " \001(\0132..POGOProtos.Data.Telemetry.Onboard" +
+      "ingTelemetryH\000\022Q\n\026login_action_telemetry" +
+      "\030, \001(\0132/.POGOProtos.Data.Telemetry.Login" +
+      "ActionTelemetryH\000\022O\n\032ar_photo_session_te" +
+      "lemetry\030- \001(\0132).POGOProtos.Data.Telemetr" +
+      "y.ArPhotoSessionH\000\022J\n\022invasion_telemetry" +
+      "\030. \001(\0132,.POGOProtos.Data.Telemetry.Invas" +
+      "ionTelemetryH\000\022W\n\031combat_minigame_teleme" +
+      "try\030/ \001(\01322.POGOProtos.Data.Telemetry.Co" +
+      "mbatMinigameTelemetryH\000\022e\n!leave_point_o" +
+      "f_interest_telemetry\0300 \001(\01328.POGOProtos." +
+      "Data.Telemetry.LeavePointOfInterestTelem" +
+      "etryH\000\022n\n&view_point_of_interest_image_t" +
+      "elemetry\0301 \001(\0132<.POGOProtos.Data.Telemet" +
+      "ry.ViewPointOfInterestImageTelemetryH\000\022^" +
+      "\n\035combat_hub_entrance_telemetry\0302 \001(\01325." +
+      "POGOProtos.Data.Telemetry.CombatHubEntra" +
+      "nceTelemetryH\000\022f\n!leave_interaction_rang" +
+      "e_telemetry\0303 \001(\01329.POGOProtos.Data.Tele" +
+      "metry.LeaveInteractionRangeTelemetryH\000\022^" +
+      "\n\035shopping_page_click_telemetry\0304 \001(\01325." +
+      "POGOProtos.Data.Telemetry.ShoppingPageCl" +
+      "ickTelemetryH\000\022`\n\036shopping_page_scroll_t" +
+      "elemetry\0305 \001(\01326.POGOProtos.Data.Telemet" +
+      "ry.ShoppingPageScrollTelemetryH\000\022c\n\037devi" +
+      "ce_specifications_telemetry\0306 \001(\01328.POGO" +
+      "Protos.Data.Telemetry.DeviceSpecificatio" +
+      "nsTelemetryH\000\022[\n\033screen_resolution_telem" +
+      "etry\0307 \001(\01324.POGOProtos.Data.Telemetry.S" +
+      "creenResolutionTelemetryH\000\022o\n&ar_buddy_m" +
+      "ultiplayer_session_telemetry\0308 \001(\0132=.POG" +
+      "OProtos.Data.Telemetry.ARBuddyMultiplaye" +
+      "rSessionTelemetryH\000\022p\n-buddy_multiplayer" +
+      "_connection_failed_telemetry\0309 \001(\01327.POG" +
+      "OProtos.Data.Buddy.BuddyMultiplayerConne" +
+      "ctionFailedH\000\022v\n0buddy_multiplayer_conne" +
+      "ction_succeeded_telemetry\030: \001(\0132:.POGOPr" +
+      "otos.Data.Buddy.BuddyMultiplayerConnecti" +
+      "onSucceededH\000\022r\n/buddy_multiplayer_time_" +
+      "to_get_session_telemetry\030; \001(\01327.POGOPro" +
+      "tos.Data.Buddy.BuddyMultiplayerTimeToGet" +
+      "SessionH\000\022q\n\'player_hud_notification_cli" +
+      "ck_telemetry\030< \001(\0132>.POGOProtos.Data.Tel" +
+      "emetry.PlayerHudNotificationClickTelemet" +
+      "ryH\000\022]\n\034monodepth_download_telemetry\030= \001" +
+      "(\01325.POGOProtos.Data.Telemetry.Monodepth" +
+      "DownloadTelemetryH\000\022M\n\024ar_mapping_teleme" +
+      "try\030> \001(\0132-.POGOProtos.Data.Telemetry.Ar" +
+      "MappingTelemetryH\000\022O\n\025remote_raid_teleme" +
+      "try\030? \001(\0132..POGOProtos.Data.Telemetry.Re" +
+      "moteRaidTelemetryH\000\022K\n\023device_os_telemet" +
+      "ry\030@ \001(\0132,.POGOProtos.Data.Telemetry.Dev" +
+      "iceOSTelemetryH\000\022C\n\013server_data\030\351\007 \001(\0132-" +
+      ".POGOProtos.Data.Telemetry.PlatformServe" +
+      "rData\022G\n\016common_filters\030\352\007 \001(\0132..POGOPro" +
+      "tos.Data.Platform.PlatformCommonFilterB\017" +
+      "\n\rTelemetryDataB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -337,13 +340,14 @@ public final class ClientTelemetryOmniOuterClass {
           POGOProtos.Data.Telemetry.MonodepthDownloadTelemetryOuterClass.getDescriptor(),
           POGOProtos.Data.Telemetry.ArMappingTelemetryOuterClass.getDescriptor(),
           POGOProtos.Data.Telemetry.RemoteRaidTelemetryOuterClass.getDescriptor(),
+          POGOProtos.Data.Telemetry.DeviceOSTelemetryOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Data_Telemetry_ClientTelemetryOmni_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Data_Telemetry_ClientTelemetryOmni_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Telemetry_ClientTelemetryOmni_descriptor,
-        new java.lang.String[] { "BootTime", "FrameRate", "GenericClickTelemetry", "MapEventsTelemetry", "SpinPokestopTelemetry", "ProfilePageTelemetry", "ShoppingPageTelemetry", "EncounterPokemonTelemetry", "CatchPokemonTelemetry", "DeployPokemonTelemetry", "FeedPokemonTelemetry", "EvolvePokemonTelemetry", "ReleasePokemonTelemetry", "NicknamePokemonTelemetry", "NewsPageTelemetry", "ItemTelemetry", "BattlePartyTelemetry", "PasscodeRedeemTelemetry", "LinkLoginTelemetry", "RaidTelemetry", "PushNotificationTelemetry", "AvatarCustomizationTelemetry", "ReadPointOfInterestDescriptionTelemetry", "WebTelemetry", "ChangeArTelemetry", "WeatherDetailClickTelemetry", "UserIssueWeatherReport", "PokemonInventoryTelemetry", "SocialTelemetry", "CheckEncounterInfoTelemetry", "PokemonGoPlusTelemetry", "RpcTimingTelemetry", "SocialGiftCountTelemetry", "AssetBundleTelemetry", "AssetPoiDownloadTelemetry", "AssetStreamDownloadTelemetry", "AssetStreamCacheCulledTelemetry", "RpcSocketTimingTelemetry", "PermissionsFlow", "DeviceServiceToggle", "BootTelemetry", "UserAttributes", "OnboardingTelemetry", "LoginActionTelemetry", "ArPhotoSessionTelemetry", "InvasionTelemetry", "CombatMinigameTelemetry", "LeavePointOfInterestTelemetry", "ViewPointOfInterestImageTelemetry", "CombatHubEntranceTelemetry", "LeaveInteractionRangeTelemetry", "ShoppingPageClickTelemetry", "ShoppingPageScrollTelemetry", "DeviceSpecificationsTelemetry", "ScreenResolutionTelemetry", "ArBuddyMultiplayerSessionTelemetry", "BuddyMultiplayerConnectionFailedTelemetry", "BuddyMultiplayerConnectionSucceededTelemetry", "BuddyMultiplayerTimeToGetSessionTelemetry", "PlayerHudNotificationClickTelemetry", "MonodepthDownloadTelemetry", "ArMappingTelemetry", "RemoteRaidTelemetry", "ServerData", "CommonFilters", "TelemetryData", });
+        new java.lang.String[] { "BootTime", "FrameRate", "GenericClickTelemetry", "MapEventsTelemetry", "SpinPokestopTelemetry", "ProfilePageTelemetry", "ShoppingPageTelemetry", "EncounterPokemonTelemetry", "CatchPokemonTelemetry", "DeployPokemonTelemetry", "FeedPokemonTelemetry", "EvolvePokemonTelemetry", "ReleasePokemonTelemetry", "NicknamePokemonTelemetry", "NewsPageTelemetry", "ItemTelemetry", "BattlePartyTelemetry", "PasscodeRedeemTelemetry", "LinkLoginTelemetry", "RaidTelemetry", "PushNotificationTelemetry", "AvatarCustomizationTelemetry", "ReadPointOfInterestDescriptionTelemetry", "WebTelemetry", "ChangeArTelemetry", "WeatherDetailClickTelemetry", "UserIssueWeatherReport", "PokemonInventoryTelemetry", "SocialTelemetry", "CheckEncounterInfoTelemetry", "PokemonGoPlusTelemetry", "RpcTimingTelemetry", "SocialGiftCountTelemetry", "AssetBundleTelemetry", "AssetPoiDownloadTelemetry", "AssetStreamDownloadTelemetry", "AssetStreamCacheCulledTelemetry", "RpcSocketTimingTelemetry", "PermissionsFlow", "DeviceServiceToggle", "BootTelemetry", "UserAttributes", "OnboardingTelemetry", "LoginActionTelemetry", "ArPhotoSessionTelemetry", "InvasionTelemetry", "CombatMinigameTelemetry", "LeavePointOfInterestTelemetry", "ViewPointOfInterestImageTelemetry", "CombatHubEntranceTelemetry", "LeaveInteractionRangeTelemetry", "ShoppingPageClickTelemetry", "ShoppingPageScrollTelemetry", "DeviceSpecificationsTelemetry", "ScreenResolutionTelemetry", "ArBuddyMultiplayerSessionTelemetry", "BuddyMultiplayerConnectionFailedTelemetry", "BuddyMultiplayerConnectionSucceededTelemetry", "BuddyMultiplayerTimeToGetSessionTelemetry", "PlayerHudNotificationClickTelemetry", "MonodepthDownloadTelemetry", "ArMappingTelemetry", "RemoteRaidTelemetry", "DeviceOsTelemetry", "ServerData", "CommonFilters", "TelemetryData", });
     POGOProtos.Data.Telemetry.BootTimeOuterClass.getDescriptor();
     POGOProtos.Data.Telemetry.FrameRateOuterClass.getDescriptor();
     POGOProtos.Data.Telemetry.GenericClickTelemetryOuterClass.getDescriptor();
@@ -409,6 +413,7 @@ public final class ClientTelemetryOmniOuterClass {
     POGOProtos.Data.Telemetry.MonodepthDownloadTelemetryOuterClass.getDescriptor();
     POGOProtos.Data.Telemetry.ArMappingTelemetryOuterClass.getDescriptor();
     POGOProtos.Data.Telemetry.RemoteRaidTelemetryOuterClass.getDescriptor();
+    POGOProtos.Data.Telemetry.DeviceOSTelemetryOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -63,31 +63,32 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 16: {
-
-            longValue_ = input.readInt64();
+            datapointValueCase_ = 2;
+            datapointValue_ = input.readInt64();
             break;
           }
           case 25: {
-
-            doubleValue_ = input.readDouble();
+            datapointValueCase_ = 3;
+            datapointValue_ = input.readDouble();
             break;
           }
           case 32: {
-
-            booleanValue_ = input.readBool();
+            datapointValueCase_ = 4;
+            datapointValue_ = input.readBool();
             break;
           }
           case 42: {
             POGOProtos.Rpc.Distribution.Builder subBuilder = null;
-            if (distribution_ != null) {
-              subBuilder = distribution_.toBuilder();
+            if (datapointValueCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.Distribution) datapointValue_).toBuilder();
             }
-            distribution_ = input.readMessage(POGOProtos.Rpc.Distribution.parser(), extensionRegistry);
+            datapointValue_ =
+                input.readMessage(POGOProtos.Rpc.Distribution.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(distribution_);
-              distribution_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.Distribution) datapointValue_);
+              datapointValue_ = subBuilder.buildPartial();
             }
-
+            datapointValueCase_ = 5;
             break;
           }
           case 48: {
@@ -250,6 +251,115 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformMetricData.Kind)
   }
 
+  private int datapointValueCase_ = 0;
+  private java.lang.Object datapointValue_;
+  public enum DatapointValueCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    LONG_VALUE(2),
+    DOUBLE_VALUE(3),
+    BOOLEAN_VALUE(4),
+    DISTRIBUTION(5),
+    DATAPOINTVALUE_NOT_SET(0);
+    private final int value;
+    private DatapointValueCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static DatapointValueCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static DatapointValueCase forNumber(int value) {
+      switch (value) {
+        case 2: return LONG_VALUE;
+        case 3: return DOUBLE_VALUE;
+        case 4: return BOOLEAN_VALUE;
+        case 5: return DISTRIBUTION;
+        case 0: return DATAPOINTVALUE_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public DatapointValueCase
+  getDatapointValueCase() {
+    return DatapointValueCase.forNumber(
+        datapointValueCase_);
+  }
+
+  public static final int LONG_VALUE_FIELD_NUMBER = 2;
+  /**
+   * <code>int64 long_value = 2;</code>
+   * @return The longValue.
+   */
+  public long getLongValue() {
+    if (datapointValueCase_ == 2) {
+      return (java.lang.Long) datapointValue_;
+    }
+    return 0L;
+  }
+
+  public static final int DOUBLE_VALUE_FIELD_NUMBER = 3;
+  /**
+   * <code>double double_value = 3;</code>
+   * @return The doubleValue.
+   */
+  public double getDoubleValue() {
+    if (datapointValueCase_ == 3) {
+      return (java.lang.Double) datapointValue_;
+    }
+    return 0D;
+  }
+
+  public static final int BOOLEAN_VALUE_FIELD_NUMBER = 4;
+  /**
+   * <code>bool boolean_value = 4;</code>
+   * @return The booleanValue.
+   */
+  public boolean getBooleanValue() {
+    if (datapointValueCase_ == 4) {
+      return (java.lang.Boolean) datapointValue_;
+    }
+    return false;
+  }
+
+  public static final int DISTRIBUTION_FIELD_NUMBER = 5;
+  /**
+   * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+   * @return Whether the distribution field is set.
+   */
+  public boolean hasDistribution() {
+    return datapointValueCase_ == 5;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+   * @return The distribution.
+   */
+  public POGOProtos.Rpc.Distribution getDistribution() {
+    if (datapointValueCase_ == 5) {
+       return (POGOProtos.Rpc.Distribution) datapointValue_;
+    }
+    return POGOProtos.Rpc.Distribution.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+   */
+  public POGOProtos.Rpc.DistributionOrBuilder getDistributionOrBuilder() {
+    if (datapointValueCase_ == 5) {
+       return (POGOProtos.Rpc.Distribution) datapointValue_;
+    }
+    return POGOProtos.Rpc.Distribution.getDefaultInstance();
+  }
+
   public static final int COMMON_TELEMETRY_FIELD_NUMBER = 1;
   private POGOProtos.Rpc.TelemetryCommon commonTelemetry_;
   /**
@@ -271,59 +381,6 @@ private static final long serialVersionUID = 0L;
    */
   public POGOProtos.Rpc.TelemetryCommonOrBuilder getCommonTelemetryOrBuilder() {
     return getCommonTelemetry();
-  }
-
-  public static final int LONG_VALUE_FIELD_NUMBER = 2;
-  private long longValue_;
-  /**
-   * <code>int64 long_value = 2;</code>
-   * @return The longValue.
-   */
-  public long getLongValue() {
-    return longValue_;
-  }
-
-  public static final int DOUBLE_VALUE_FIELD_NUMBER = 3;
-  private double doubleValue_;
-  /**
-   * <code>double double_value = 3;</code>
-   * @return The doubleValue.
-   */
-  public double getDoubleValue() {
-    return doubleValue_;
-  }
-
-  public static final int BOOLEAN_VALUE_FIELD_NUMBER = 4;
-  private boolean booleanValue_;
-  /**
-   * <code>bool boolean_value = 4;</code>
-   * @return The booleanValue.
-   */
-  public boolean getBooleanValue() {
-    return booleanValue_;
-  }
-
-  public static final int DISTRIBUTION_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.Distribution distribution_;
-  /**
-   * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-   * @return Whether the distribution field is set.
-   */
-  public boolean hasDistribution() {
-    return distribution_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-   * @return The distribution.
-   */
-  public POGOProtos.Rpc.Distribution getDistribution() {
-    return distribution_ == null ? POGOProtos.Rpc.Distribution.getDefaultInstance() : distribution_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-   */
-  public POGOProtos.Rpc.DistributionOrBuilder getDistributionOrBuilder() {
-    return getDistribution();
   }
 
   public static final int METRIC_KIND_FIELD_NUMBER = 6;
@@ -362,17 +419,20 @@ private static final long serialVersionUID = 0L;
     if (commonTelemetry_ != null) {
       output.writeMessage(1, getCommonTelemetry());
     }
-    if (longValue_ != 0L) {
-      output.writeInt64(2, longValue_);
+    if (datapointValueCase_ == 2) {
+      output.writeInt64(
+          2, (long)((java.lang.Long) datapointValue_));
     }
-    if (doubleValue_ != 0D) {
-      output.writeDouble(3, doubleValue_);
+    if (datapointValueCase_ == 3) {
+      output.writeDouble(
+          3, (double)((java.lang.Double) datapointValue_));
     }
-    if (booleanValue_ != false) {
-      output.writeBool(4, booleanValue_);
+    if (datapointValueCase_ == 4) {
+      output.writeBool(
+          4, (boolean)((java.lang.Boolean) datapointValue_));
     }
-    if (distribution_ != null) {
-      output.writeMessage(5, getDistribution());
+    if (datapointValueCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.Distribution) datapointValue_);
     }
     if (metricKind_ != POGOProtos.Rpc.PlatformMetricData.Kind.UNSPECIFIED.getNumber()) {
       output.writeEnum(6, metricKind_);
@@ -390,21 +450,24 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, getCommonTelemetry());
     }
-    if (longValue_ != 0L) {
+    if (datapointValueCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(2, longValue_);
+        .computeInt64Size(
+            2, (long)((java.lang.Long) datapointValue_));
     }
-    if (doubleValue_ != 0D) {
+    if (datapointValueCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(3, doubleValue_);
+        .computeDoubleSize(
+            3, (double)((java.lang.Double) datapointValue_));
     }
-    if (booleanValue_ != false) {
+    if (datapointValueCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(4, booleanValue_);
+        .computeBoolSize(
+            4, (boolean)((java.lang.Boolean) datapointValue_));
     }
-    if (distribution_ != null) {
+    if (datapointValueCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getDistribution());
+        .computeMessageSize(5, (POGOProtos.Rpc.Distribution) datapointValue_);
     }
     if (metricKind_ != POGOProtos.Rpc.PlatformMetricData.Kind.UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
@@ -430,19 +493,29 @@ private static final long serialVersionUID = 0L;
       if (!getCommonTelemetry()
           .equals(other.getCommonTelemetry())) return false;
     }
-    if (getLongValue()
-        != other.getLongValue()) return false;
-    if (java.lang.Double.doubleToLongBits(getDoubleValue())
-        != java.lang.Double.doubleToLongBits(
-            other.getDoubleValue())) return false;
-    if (getBooleanValue()
-        != other.getBooleanValue()) return false;
-    if (hasDistribution() != other.hasDistribution()) return false;
-    if (hasDistribution()) {
-      if (!getDistribution()
-          .equals(other.getDistribution())) return false;
-    }
     if (metricKind_ != other.metricKind_) return false;
+    if (!getDatapointValueCase().equals(other.getDatapointValueCase())) return false;
+    switch (datapointValueCase_) {
+      case 2:
+        if (getLongValue()
+            != other.getLongValue()) return false;
+        break;
+      case 3:
+        if (java.lang.Double.doubleToLongBits(getDoubleValue())
+            != java.lang.Double.doubleToLongBits(
+                other.getDoubleValue())) return false;
+        break;
+      case 4:
+        if (getBooleanValue()
+            != other.getBooleanValue()) return false;
+        break;
+      case 5:
+        if (!getDistribution()
+            .equals(other.getDistribution())) return false;
+        break;
+      case 0:
+      default:
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -458,21 +531,31 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + COMMON_TELEMETRY_FIELD_NUMBER;
       hash = (53 * hash) + getCommonTelemetry().hashCode();
     }
-    hash = (37 * hash) + LONG_VALUE_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getLongValue());
-    hash = (37 * hash) + DOUBLE_VALUE_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getDoubleValue()));
-    hash = (37 * hash) + BOOLEAN_VALUE_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getBooleanValue());
-    if (hasDistribution()) {
-      hash = (37 * hash) + DISTRIBUTION_FIELD_NUMBER;
-      hash = (53 * hash) + getDistribution().hashCode();
-    }
     hash = (37 * hash) + METRIC_KIND_FIELD_NUMBER;
     hash = (53 * hash) + metricKind_;
+    switch (datapointValueCase_) {
+      case 2:
+        hash = (37 * hash) + LONG_VALUE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            getLongValue());
+        break;
+      case 3:
+        hash = (37 * hash) + DOUBLE_VALUE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            java.lang.Double.doubleToLongBits(getDoubleValue()));
+        break;
+      case 4:
+        hash = (37 * hash) + BOOLEAN_VALUE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getBooleanValue());
+        break;
+      case 5:
+        hash = (37 * hash) + DISTRIBUTION_FIELD_NUMBER;
+        hash = (53 * hash) + getDistribution().hashCode();
+        break;
+      case 0:
+      default:
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -612,20 +695,10 @@ private static final long serialVersionUID = 0L;
         commonTelemetry_ = null;
         commonTelemetryBuilder_ = null;
       }
-      longValue_ = 0L;
-
-      doubleValue_ = 0D;
-
-      booleanValue_ = false;
-
-      if (distributionBuilder_ == null) {
-        distribution_ = null;
-      } else {
-        distribution_ = null;
-        distributionBuilder_ = null;
-      }
       metricKind_ = 0;
 
+      datapointValueCase_ = 0;
+      datapointValue_ = null;
       return this;
     }
 
@@ -652,20 +725,29 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PlatformMetricData buildPartial() {
       POGOProtos.Rpc.PlatformMetricData result = new POGOProtos.Rpc.PlatformMetricData(this);
+      if (datapointValueCase_ == 2) {
+        result.datapointValue_ = datapointValue_;
+      }
+      if (datapointValueCase_ == 3) {
+        result.datapointValue_ = datapointValue_;
+      }
+      if (datapointValueCase_ == 4) {
+        result.datapointValue_ = datapointValue_;
+      }
+      if (datapointValueCase_ == 5) {
+        if (distributionBuilder_ == null) {
+          result.datapointValue_ = datapointValue_;
+        } else {
+          result.datapointValue_ = distributionBuilder_.build();
+        }
+      }
       if (commonTelemetryBuilder_ == null) {
         result.commonTelemetry_ = commonTelemetry_;
       } else {
         result.commonTelemetry_ = commonTelemetryBuilder_.build();
       }
-      result.longValue_ = longValue_;
-      result.doubleValue_ = doubleValue_;
-      result.booleanValue_ = booleanValue_;
-      if (distributionBuilder_ == null) {
-        result.distribution_ = distribution_;
-      } else {
-        result.distribution_ = distributionBuilder_.build();
-      }
       result.metricKind_ = metricKind_;
+      result.datapointValueCase_ = datapointValueCase_;
       onBuilt();
       return result;
     }
@@ -717,20 +799,29 @@ private static final long serialVersionUID = 0L;
       if (other.hasCommonTelemetry()) {
         mergeCommonTelemetry(other.getCommonTelemetry());
       }
-      if (other.getLongValue() != 0L) {
-        setLongValue(other.getLongValue());
-      }
-      if (other.getDoubleValue() != 0D) {
-        setDoubleValue(other.getDoubleValue());
-      }
-      if (other.getBooleanValue() != false) {
-        setBooleanValue(other.getBooleanValue());
-      }
-      if (other.hasDistribution()) {
-        mergeDistribution(other.getDistribution());
-      }
       if (other.metricKind_ != 0) {
         setMetricKindValue(other.getMetricKindValue());
+      }
+      switch (other.getDatapointValueCase()) {
+        case LONG_VALUE: {
+          setLongValue(other.getLongValue());
+          break;
+        }
+        case DOUBLE_VALUE: {
+          setDoubleValue(other.getDoubleValue());
+          break;
+        }
+        case BOOLEAN_VALUE: {
+          setBooleanValue(other.getBooleanValue());
+          break;
+        }
+        case DISTRIBUTION: {
+          mergeDistribution(other.getDistribution());
+          break;
+        }
+        case DATAPOINTVALUE_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -759,6 +850,261 @@ private static final long serialVersionUID = 0L;
         }
       }
       return this;
+    }
+    private int datapointValueCase_ = 0;
+    private java.lang.Object datapointValue_;
+    public DatapointValueCase
+        getDatapointValueCase() {
+      return DatapointValueCase.forNumber(
+          datapointValueCase_);
+    }
+
+    public Builder clearDatapointValue() {
+      datapointValueCase_ = 0;
+      datapointValue_ = null;
+      onChanged();
+      return this;
+    }
+
+
+    /**
+     * <code>int64 long_value = 2;</code>
+     * @return The longValue.
+     */
+    public long getLongValue() {
+      if (datapointValueCase_ == 2) {
+        return (java.lang.Long) datapointValue_;
+      }
+      return 0L;
+    }
+    /**
+     * <code>int64 long_value = 2;</code>
+     * @param value The longValue to set.
+     * @return This builder for chaining.
+     */
+    public Builder setLongValue(long value) {
+      datapointValueCase_ = 2;
+      datapointValue_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int64 long_value = 2;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearLongValue() {
+      if (datapointValueCase_ == 2) {
+        datapointValueCase_ = 0;
+        datapointValue_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    /**
+     * <code>double double_value = 3;</code>
+     * @return The doubleValue.
+     */
+    public double getDoubleValue() {
+      if (datapointValueCase_ == 3) {
+        return (java.lang.Double) datapointValue_;
+      }
+      return 0D;
+    }
+    /**
+     * <code>double double_value = 3;</code>
+     * @param value The doubleValue to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDoubleValue(double value) {
+      datapointValueCase_ = 3;
+      datapointValue_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>double double_value = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearDoubleValue() {
+      if (datapointValueCase_ == 3) {
+        datapointValueCase_ = 0;
+        datapointValue_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    /**
+     * <code>bool boolean_value = 4;</code>
+     * @return The booleanValue.
+     */
+    public boolean getBooleanValue() {
+      if (datapointValueCase_ == 4) {
+        return (java.lang.Boolean) datapointValue_;
+      }
+      return false;
+    }
+    /**
+     * <code>bool boolean_value = 4;</code>
+     * @param value The booleanValue to set.
+     * @return This builder for chaining.
+     */
+    public Builder setBooleanValue(boolean value) {
+      datapointValueCase_ = 4;
+      datapointValue_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool boolean_value = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearBooleanValue() {
+      if (datapointValueCase_ == 4) {
+        datapointValueCase_ = 0;
+        datapointValue_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.Distribution, POGOProtos.Rpc.Distribution.Builder, POGOProtos.Rpc.DistributionOrBuilder> distributionBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+     * @return Whether the distribution field is set.
+     */
+    public boolean hasDistribution() {
+      return datapointValueCase_ == 5;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+     * @return The distribution.
+     */
+    public POGOProtos.Rpc.Distribution getDistribution() {
+      if (distributionBuilder_ == null) {
+        if (datapointValueCase_ == 5) {
+          return (POGOProtos.Rpc.Distribution) datapointValue_;
+        }
+        return POGOProtos.Rpc.Distribution.getDefaultInstance();
+      } else {
+        if (datapointValueCase_ == 5) {
+          return distributionBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.Distribution.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+     */
+    public Builder setDistribution(POGOProtos.Rpc.Distribution value) {
+      if (distributionBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        datapointValue_ = value;
+        onChanged();
+      } else {
+        distributionBuilder_.setMessage(value);
+      }
+      datapointValueCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+     */
+    public Builder setDistribution(
+        POGOProtos.Rpc.Distribution.Builder builderForValue) {
+      if (distributionBuilder_ == null) {
+        datapointValue_ = builderForValue.build();
+        onChanged();
+      } else {
+        distributionBuilder_.setMessage(builderForValue.build());
+      }
+      datapointValueCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+     */
+    public Builder mergeDistribution(POGOProtos.Rpc.Distribution value) {
+      if (distributionBuilder_ == null) {
+        if (datapointValueCase_ == 5 &&
+            datapointValue_ != POGOProtos.Rpc.Distribution.getDefaultInstance()) {
+          datapointValue_ = POGOProtos.Rpc.Distribution.newBuilder((POGOProtos.Rpc.Distribution) datapointValue_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          datapointValue_ = value;
+        }
+        onChanged();
+      } else {
+        if (datapointValueCase_ == 5) {
+          distributionBuilder_.mergeFrom(value);
+        }
+        distributionBuilder_.setMessage(value);
+      }
+      datapointValueCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+     */
+    public Builder clearDistribution() {
+      if (distributionBuilder_ == null) {
+        if (datapointValueCase_ == 5) {
+          datapointValueCase_ = 0;
+          datapointValue_ = null;
+          onChanged();
+        }
+      } else {
+        if (datapointValueCase_ == 5) {
+          datapointValueCase_ = 0;
+          datapointValue_ = null;
+        }
+        distributionBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+     */
+    public POGOProtos.Rpc.Distribution.Builder getDistributionBuilder() {
+      return getDistributionFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+     */
+    public POGOProtos.Rpc.DistributionOrBuilder getDistributionOrBuilder() {
+      if ((datapointValueCase_ == 5) && (distributionBuilder_ != null)) {
+        return distributionBuilder_.getMessageOrBuilder();
+      } else {
+        if (datapointValueCase_ == 5) {
+          return (POGOProtos.Rpc.Distribution) datapointValue_;
+        }
+        return POGOProtos.Rpc.Distribution.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.Distribution, POGOProtos.Rpc.Distribution.Builder, POGOProtos.Rpc.DistributionOrBuilder> 
+        getDistributionFieldBuilder() {
+      if (distributionBuilder_ == null) {
+        if (!(datapointValueCase_ == 5)) {
+          datapointValue_ = POGOProtos.Rpc.Distribution.getDefaultInstance();
+        }
+        distributionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.Distribution, POGOProtos.Rpc.Distribution.Builder, POGOProtos.Rpc.DistributionOrBuilder>(
+                (POGOProtos.Rpc.Distribution) datapointValue_,
+                getParentForChildren(),
+                isClean());
+        datapointValue_ = null;
+      }
+      datapointValueCase_ = 5;
+      onChanged();;
+      return distributionBuilder_;
     }
 
     private POGOProtos.Rpc.TelemetryCommon commonTelemetry_;
@@ -878,215 +1224,6 @@ private static final long serialVersionUID = 0L;
         commonTelemetry_ = null;
       }
       return commonTelemetryBuilder_;
-    }
-
-    private long longValue_ ;
-    /**
-     * <code>int64 long_value = 2;</code>
-     * @return The longValue.
-     */
-    public long getLongValue() {
-      return longValue_;
-    }
-    /**
-     * <code>int64 long_value = 2;</code>
-     * @param value The longValue to set.
-     * @return This builder for chaining.
-     */
-    public Builder setLongValue(long value) {
-      
-      longValue_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 long_value = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearLongValue() {
-      
-      longValue_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private double doubleValue_ ;
-    /**
-     * <code>double double_value = 3;</code>
-     * @return The doubleValue.
-     */
-    public double getDoubleValue() {
-      return doubleValue_;
-    }
-    /**
-     * <code>double double_value = 3;</code>
-     * @param value The doubleValue to set.
-     * @return This builder for chaining.
-     */
-    public Builder setDoubleValue(double value) {
-      
-      doubleValue_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>double double_value = 3;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearDoubleValue() {
-      
-      doubleValue_ = 0D;
-      onChanged();
-      return this;
-    }
-
-    private boolean booleanValue_ ;
-    /**
-     * <code>bool boolean_value = 4;</code>
-     * @return The booleanValue.
-     */
-    public boolean getBooleanValue() {
-      return booleanValue_;
-    }
-    /**
-     * <code>bool boolean_value = 4;</code>
-     * @param value The booleanValue to set.
-     * @return This builder for chaining.
-     */
-    public Builder setBooleanValue(boolean value) {
-      
-      booleanValue_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>bool boolean_value = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearBooleanValue() {
-      
-      booleanValue_ = false;
-      onChanged();
-      return this;
-    }
-
-    private POGOProtos.Rpc.Distribution distribution_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.Distribution, POGOProtos.Rpc.Distribution.Builder, POGOProtos.Rpc.DistributionOrBuilder> distributionBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-     * @return Whether the distribution field is set.
-     */
-    public boolean hasDistribution() {
-      return distributionBuilder_ != null || distribution_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-     * @return The distribution.
-     */
-    public POGOProtos.Rpc.Distribution getDistribution() {
-      if (distributionBuilder_ == null) {
-        return distribution_ == null ? POGOProtos.Rpc.Distribution.getDefaultInstance() : distribution_;
-      } else {
-        return distributionBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-     */
-    public Builder setDistribution(POGOProtos.Rpc.Distribution value) {
-      if (distributionBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        distribution_ = value;
-        onChanged();
-      } else {
-        distributionBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-     */
-    public Builder setDistribution(
-        POGOProtos.Rpc.Distribution.Builder builderForValue) {
-      if (distributionBuilder_ == null) {
-        distribution_ = builderForValue.build();
-        onChanged();
-      } else {
-        distributionBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-     */
-    public Builder mergeDistribution(POGOProtos.Rpc.Distribution value) {
-      if (distributionBuilder_ == null) {
-        if (distribution_ != null) {
-          distribution_ =
-            POGOProtos.Rpc.Distribution.newBuilder(distribution_).mergeFrom(value).buildPartial();
-        } else {
-          distribution_ = value;
-        }
-        onChanged();
-      } else {
-        distributionBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-     */
-    public Builder clearDistribution() {
-      if (distributionBuilder_ == null) {
-        distribution_ = null;
-        onChanged();
-      } else {
-        distribution_ = null;
-        distributionBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-     */
-    public POGOProtos.Rpc.Distribution.Builder getDistributionBuilder() {
-      
-      onChanged();
-      return getDistributionFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-     */
-    public POGOProtos.Rpc.DistributionOrBuilder getDistributionOrBuilder() {
-      if (distributionBuilder_ != null) {
-        return distributionBuilder_.getMessageOrBuilder();
-      } else {
-        return distribution_ == null ?
-            POGOProtos.Rpc.Distribution.getDefaultInstance() : distribution_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.Distribution distribution = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.Distribution, POGOProtos.Rpc.Distribution.Builder, POGOProtos.Rpc.DistributionOrBuilder> 
-        getDistributionFieldBuilder() {
-      if (distributionBuilder_ == null) {
-        distributionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.Distribution, POGOProtos.Rpc.Distribution.Builder, POGOProtos.Rpc.DistributionOrBuilder>(
-                getDistribution(),
-                getParentForChildren(),
-                isClean());
-        distribution_ = null;
-      }
-      return distributionBuilder_;
     }
 
     private int metricKind_ = 0;

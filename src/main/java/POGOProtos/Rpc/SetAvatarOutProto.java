@@ -133,6 +133,10 @@ private static final long serialVersionUID = 0L;
      * <code>INVALID_AVATAR_TYPE = 6;</code>
      */
     INVALID_AVATAR_TYPE(6),
+    /**
+     * <code>AVATAR_RESET = 7;</code>
+     */
+    AVATAR_RESET(7),
     UNRECOGNIZED(-1),
     ;
 
@@ -164,6 +168,10 @@ private static final long serialVersionUID = 0L;
      * <code>INVALID_AVATAR_TYPE = 6;</code>
      */
     public static final int INVALID_AVATAR_TYPE_VALUE = 6;
+    /**
+     * <code>AVATAR_RESET = 7;</code>
+     */
+    public static final int AVATAR_RESET_VALUE = 7;
 
 
     public final int getNumber() {
@@ -197,6 +205,7 @@ private static final long serialVersionUID = 0L;
         case 4: return SLOT_NOT_ALLOWED;
         case 5: return ITEM_NOT_OWNED;
         case 6: return INVALID_AVATAR_TYPE;
+        case 7: return AVATAR_RESET;
         default: return null;
       }
     }

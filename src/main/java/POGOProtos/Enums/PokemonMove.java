@@ -1128,6 +1128,10 @@ public enum PokemonMove
    * <code>FLY = 341;</code>
    */
   FLY(341),
+  /**
+   * <code>V_CREATE = 342;</code>
+   */
+  V_CREATE(342),
   UNRECOGNIZED(-1),
   ;
 
@@ -2251,6 +2255,10 @@ public enum PokemonMove
    * <code>FLY = 341;</code>
    */
   public static final int FLY_VALUE = 341;
+  /**
+   * <code>V_CREATE = 342;</code>
+   */
+  public static final int V_CREATE_VALUE = 342;
 
 
   public final int getNumber() {
@@ -2557,6 +2565,7 @@ public enum PokemonMove
       case 339: return TECHNO_BLAST_WATER;
       case 340: return TECHNO_BLAST_SHOCK;
       case 341: return FLY;
+      case 342: return V_CREATE;
       default: return null;
     }
   }

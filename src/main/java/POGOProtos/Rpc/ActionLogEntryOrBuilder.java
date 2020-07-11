@@ -8,18 +8,6 @@ public interface ActionLogEntryOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int64 timestamp_ms = 1;</code>
-   * @return The timestampMs.
-   */
-  long getTimestampMs();
-
-  /**
-   * <code>bool sfida = 2;</code>
-   * @return The sfida.
-   */
-  boolean getSfida();
-
-  /**
    * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
    * @return Whether the catchPokemon field is set.
    */
@@ -333,4 +321,33 @@ public interface ActionLogEntryOrBuilder extends
    * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
    */
   POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder getVsSeekerWinRewardsOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   * @return Whether the buddyConsumables field is set.
+   */
+  boolean hasBuddyConsumables();
+  /**
+   * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   * @return The buddyConsumables.
+   */
+  POGOProtos.Rpc.BuddyConsumablesLogEntry getBuddyConsumables();
+  /**
+   * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   */
+  POGOProtos.Rpc.BuddyConsumablesLogEntryOrBuilder getBuddyConsumablesOrBuilder();
+
+  /**
+   * <code>int64 timestamp_ms = 1;</code>
+   * @return The timestampMs.
+   */
+  long getTimestampMs();
+
+  /**
+   * <code>bool sfida = 2;</code>
+   * @return The sfida.
+   */
+  boolean getSfida();
+
+  public POGOProtos.Rpc.ActionLogEntry.ActionCase getActionCase();
 }

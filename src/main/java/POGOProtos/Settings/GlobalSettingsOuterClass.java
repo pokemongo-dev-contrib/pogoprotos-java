@@ -87,99 +87,103 @@ public final class GlobalSettingsOuterClass {
       "tings.proto\032,POGOProtos/Settings/RaidTic" +
       "ketSettings.proto\0325POGOProtos/Settings/R" +
       "ocketBalloonGlobalSettings.proto\032-POGOPr" +
-      "otos/Settings/LobbyClientSettings.proto\"" +
-      "\313\034\n\016GlobalSettings\0228\n\rfort_settings\030\002 \001(" +
-      "\0132!.POGOProtos.Settings.FortSettings\0226\n\014" +
-      "map_settings\030\003 \001(\0132 .POGOProtos.Settings" +
-      ".MapSettings\022:\n\016level_settings\030\004 \001(\0132\".P" +
-      "OGOProtos.Settings.LevelSettings\022B\n\022inve" +
-      "ntory_settings\030\005 \001(\0132&.POGOProtos.Settin" +
-      "gs.InventorySettings\022\036\n\026minimum_client_v" +
-      "ersion\030\006 \001(\t\0226\n\014gps_settings\030\007 \001(\0132 .POG" +
-      "OProtos.Settings.GpsSettings\022@\n\021festival" +
-      "_settings\030\010 \001(\0132%.POGOProtos.Settings.Fe" +
-      "stivalSettings\022:\n\016event_settings\030\t \001(\0132\"" +
-      ".POGOProtos.Settings.EventSettings\022\031\n\021ma" +
-      "x_pokemon_types\030\n \001(\005\022:\n\016sfida_settings\030" +
-      "\013 \001(\0132\".POGOProtos.Settings.SfidaSetting" +
-      "s\0228\n\rnews_settings\030\014 \001(\0132!.POGOProtos.Se" +
-      "ttings.NewsSettings\022F\n\024translation_setti" +
-      "ngs\030\r \001(\0132(.POGOProtos.Settings.Translat" +
-      "ionSettings\022@\n\021passcode_settings\030\016 \001(\0132%" +
-      ".POGOProtos.Settings.PasscodeSettings\022H\n" +
-      "\025notification_settings\030\017 \001(\0132).POGOProto" +
-      "s.Settings.NotificationSettings\022\034\n\024clien" +
-      "t_app_blacklist\030\020 \003(\t\022L\n\024client_perf_set" +
-      "tings\030\021 \001(\0132..POGOProtos.Settings.Client" +
-      "PerformanceSettings\022E\n\024news_global_setti" +
-      "ngs\030\022 \001(\0132\'.POGOProtos.Settings.NewsGlob" +
-      "alSettings\022G\n\025quest_global_settings\030\023 \001(" +
-      "\0132(.POGOProtos.Settings.QuestGlobalSetti" +
-      "ngs\022I\n\026beluga_global_settings\030\024 \001(\0132).PO" +
-      "GOProtos.Settings.BelugaGlobalSettings\022O" +
-      "\n\031telemetry_global_settings\030\025 \001(\0132,.POGO" +
-      "Protos.Settings.TelemetryGlobalSettings\022" +
-      ":\n\016login_settings\030\026 \001(\0132\".POGOProtos.Set" +
-      "tings.LoginSettings\022B\n\017social_settings\030\027" +
-      " \001(\0132).POGOProtos.Settings.SocialClientS" +
-      "ettings\022K\n\027trading_global_settings\030\030 \001(\013" +
-      "2*.POGOProtos.Settings.TradingGlobalSett" +
-      "ings\022C\n\036additional_allowed_pokemon_ids\030\031" +
-      " \003(\0162\033.POGOProtos.Enums.PokemonId\022M\n\030ups" +
-      "ight_logging_settings\030\032 \001(\0132+.POGOProtos" +
-      ".Settings.UpsightLoggingSettings\022I\n\026comb" +
-      "at_global_settings\030\033 \001(\0132).POGOProtos.Se" +
-      "ttings.CombatGlobalSettings\022I\n\023third_mov" +
-      "e_settings\030\034 \001(\0132,.POGOProtos.Settings.T" +
-      "hirdMoveGlobalSettings\022\\\n combat_challen" +
-      "ge_global_settings\030\035 \001(\01322.POGOProtos.Se" +
-      "ttings.CombatChallengeGlobalSettings\022Q\n\026" +
-      "bgmode_global_settings\030\036 \001(\01321.POGOProto" +
-      "s.Settings.BackgroundModeGlobalSettings\022" +
-      ":\n\016probe_settings\030\037 \001(\0132\".POGOProtos.Set" +
-      "tings.ProbeSettings\022P\n\022purchased_setting" +
-      "s\030  \001(\01324.POGOProtos.Settings.PokecoinPu" +
-      "rchaseDisplaySettings\022B\n\022helpshift_setti" +
-      "ngs\030! \001(\0132&.POGOProtos.Settings.Helpshif" +
-      "tSettings\022E\n\021ar_photo_settings\030\" \001(\0132*.P" +
-      "OGOProtos.Settings.ArPhotoGlobalSettings" +
-      "\022<\n\014poi_settings\030# \001(\0132&.POGOProtos.Sett" +
-      "ings.PoiGlobalSettings\022D\n\020pokemon_settin" +
-      "gs\030$ \001(\0132*.POGOProtos.Settings.PokemonGl" +
-      "obalSettings\022B\n\017avatar_settings\030% \001(\0132)." +
-      "POGOProtos.Settings.AvatarGlobalSettings" +
-      "\022G\n\025evolution_v2_settings\030& \001(\0132(.POGOPr" +
-      "otos.Settings.EvolutionV2Settings\022F\n\021inc" +
-      "ident_settings\030\' \001(\0132+.POGOProtos.Settin" +
-      "gs.IncidentGlobalSettings\022:\n\016koala_setti" +
-      "ngs\030( \001(\0132\".POGOProtos.Settings.KoalaSet" +
-      "tings\022@\n\021kangaroo_settings\030) \001(\0132%.POGOP" +
-      "rotos.Settings.KangarooSettings\022@\n\016buddy" +
-      "_settings\030+ \001(\0132(.POGOProtos.Settings.Bu" +
-      "ddyGlobalSettings\022:\n\016input_settings\030, \001(" +
-      "\0132\".POGOProtos.Settings.InputSettings\0226\n" +
-      "\014gmt_settings\030- \001(\0132 .POGOProtos.Setting" +
-      "s.GmtSettings\022\035\n\025use_local_time_action\030/" +
-      " \001(\010\022E\n\024ardk_config_settings\0300 \001(\0132\'.POG" +
-      "OProtos.Settings.ArdkConfigSettings\022D\n\017e" +
-      "nabled_pokemon\0301 \001(\0132+.POGOProtos.Settin" +
-      "gs.EnabledPokemonSettings\022V\n\035pokemon_bul" +
-      "k_upgrade_settings\0302 \001(\0132/.POGOProtos.Se" +
-      "ttings.PokemonBulkUpgradeSettings\022O\n\031pla" +
-      "nned_downtime_settings\0303 \001(\0132,.POGOProto" +
-      "s.Settings.PlannedDowntimeSettings\022C\n\023ar" +
-      "_mapping_settings\0304 \001(\0132&.POGOProtos.Set" +
-      "tings.ArMappingSettings\022T\n\034raid_invite_f" +
-      "riends_settings\0305 \001(\0132..POGOProtos.Setti" +
-      "ngs.RaidInviteFriendsSettings\022S\n\030daily_e" +
-      "ncounter_settings\0306 \001(\01321.POGOProtos.Set" +
-      "tings.DailyEncounterGlobalSettings\022E\n\024ra" +
-      "id_ticket_settings\0307 \001(\0132\'.POGOProtos.Se" +
-      "ttings.RaidTicketSettings\022Q\n\027rocket_ball" +
-      "oon_settings\0308 \001(\01320.POGOProtos.Settings" +
-      ".RocketBalloonGlobalSettings\022G\n\025lobby_cl" +
-      "ient_settings\030; \001(\0132(.POGOProtos.Setting" +
-      "s.LobbyClientSettingsB\002P\001b\006proto3"
+      "otos/Settings/LobbyClientSettings.proto\032" +
+      "5POGOProtos/Settings/TimedGroupChallenge" +
+      "Settings.proto\"\245\035\n\016GlobalSettings\0228\n\rfor" +
+      "t_settings\030\002 \001(\0132!.POGOProtos.Settings.F" +
+      "ortSettings\0226\n\014map_settings\030\003 \001(\0132 .POGO" +
+      "Protos.Settings.MapSettings\022:\n\016level_set" +
+      "tings\030\004 \001(\0132\".POGOProtos.Settings.LevelS" +
+      "ettings\022B\n\022inventory_settings\030\005 \001(\0132&.PO" +
+      "GOProtos.Settings.InventorySettings\022\036\n\026m" +
+      "inimum_client_version\030\006 \001(\t\0226\n\014gps_setti" +
+      "ngs\030\007 \001(\0132 .POGOProtos.Settings.GpsSetti" +
+      "ngs\022@\n\021festival_settings\030\010 \001(\0132%.POGOPro" +
+      "tos.Settings.FestivalSettings\022:\n\016event_s" +
+      "ettings\030\t \001(\0132\".POGOProtos.Settings.Even" +
+      "tSettings\022\031\n\021max_pokemon_types\030\n \001(\005\022:\n\016" +
+      "sfida_settings\030\013 \001(\0132\".POGOProtos.Settin" +
+      "gs.SfidaSettings\0228\n\rnews_settings\030\014 \001(\0132" +
+      "!.POGOProtos.Settings.NewsSettings\022F\n\024tr" +
+      "anslation_settings\030\r \001(\0132(.POGOProtos.Se" +
+      "ttings.TranslationSettings\022@\n\021passcode_s" +
+      "ettings\030\016 \001(\0132%.POGOProtos.Settings.Pass" +
+      "codeSettings\022H\n\025notification_settings\030\017 " +
+      "\001(\0132).POGOProtos.Settings.NotificationSe" +
+      "ttings\022\034\n\024client_app_blacklist\030\020 \003(\t\022L\n\024" +
+      "client_perf_settings\030\021 \001(\0132..POGOProtos." +
+      "Settings.ClientPerformanceSettings\022E\n\024ne" +
+      "ws_global_settings\030\022 \001(\0132\'.POGOProtos.Se" +
+      "ttings.NewsGlobalSettings\022G\n\025quest_globa" +
+      "l_settings\030\023 \001(\0132(.POGOProtos.Settings.Q" +
+      "uestGlobalSettings\022I\n\026beluga_global_sett" +
+      "ings\030\024 \001(\0132).POGOProtos.Settings.BelugaG" +
+      "lobalSettings\022O\n\031telemetry_global_settin" +
+      "gs\030\025 \001(\0132,.POGOProtos.Settings.Telemetry" +
+      "GlobalSettings\022:\n\016login_settings\030\026 \001(\0132\"" +
+      ".POGOProtos.Settings.LoginSettings\022B\n\017so" +
+      "cial_settings\030\027 \001(\0132).POGOProtos.Setting" +
+      "s.SocialClientSettings\022K\n\027trading_global" +
+      "_settings\030\030 \001(\0132*.POGOProtos.Settings.Tr" +
+      "adingGlobalSettings\022C\n\036additional_allowe" +
+      "d_pokemon_ids\030\031 \003(\0162\033.POGOProtos.Enums.P" +
+      "okemonId\022M\n\030upsight_logging_settings\030\032 \001" +
+      "(\0132+.POGOProtos.Settings.UpsightLoggingS" +
+      "ettings\022I\n\026combat_global_settings\030\033 \001(\0132" +
+      ").POGOProtos.Settings.CombatGlobalSettin" +
+      "gs\022I\n\023third_move_settings\030\034 \001(\0132,.POGOPr" +
+      "otos.Settings.ThirdMoveGlobalSettings\022\\\n" +
+      " combat_challenge_global_settings\030\035 \001(\0132" +
+      "2.POGOProtos.Settings.CombatChallengeGlo" +
+      "balSettings\022Q\n\026bgmode_global_settings\030\036 " +
+      "\001(\01321.POGOProtos.Settings.BackgroundMode" +
+      "GlobalSettings\022:\n\016probe_settings\030\037 \001(\0132\"" +
+      ".POGOProtos.Settings.ProbeSettings\022P\n\022pu" +
+      "rchased_settings\030  \001(\01324.POGOProtos.Sett" +
+      "ings.PokecoinPurchaseDisplaySettings\022B\n\022" +
+      "helpshift_settings\030! \001(\0132&.POGOProtos.Se" +
+      "ttings.HelpshiftSettings\022E\n\021ar_photo_set" +
+      "tings\030\" \001(\0132*.POGOProtos.Settings.ArPhot" +
+      "oGlobalSettings\022<\n\014poi_settings\030# \001(\0132&." +
+      "POGOProtos.Settings.PoiGlobalSettings\022D\n" +
+      "\020pokemon_settings\030$ \001(\0132*.POGOProtos.Set" +
+      "tings.PokemonGlobalSettings\022B\n\017avatar_se" +
+      "ttings\030% \001(\0132).POGOProtos.Settings.Avata" +
+      "rGlobalSettings\022G\n\025evolution_v2_settings" +
+      "\030& \001(\0132(.POGOProtos.Settings.EvolutionV2" +
+      "Settings\022F\n\021incident_settings\030\' \001(\0132+.PO" +
+      "GOProtos.Settings.IncidentGlobalSettings" +
+      "\022:\n\016koala_settings\030( \001(\0132\".POGOProtos.Se" +
+      "ttings.KoalaSettings\022@\n\021kangaroo_setting" +
+      "s\030) \001(\0132%.POGOProtos.Settings.KangarooSe" +
+      "ttings\022@\n\016buddy_settings\030+ \001(\0132(.POGOPro" +
+      "tos.Settings.BuddyGlobalSettings\022:\n\016inpu" +
+      "t_settings\030, \001(\0132\".POGOProtos.Settings.I" +
+      "nputSettings\0226\n\014gmt_settings\030- \001(\0132 .POG" +
+      "OProtos.Settings.GmtSettings\022\035\n\025use_loca" +
+      "l_time_action\030/ \001(\010\022E\n\024ardk_config_setti" +
+      "ngs\0300 \001(\0132\'.POGOProtos.Settings.ArdkConf" +
+      "igSettings\022D\n\017enabled_pokemon\0301 \001(\0132+.PO" +
+      "GOProtos.Settings.EnabledPokemonSettings" +
+      "\022V\n\035pokemon_bulk_upgrade_settings\0302 \001(\0132" +
+      "/.POGOProtos.Settings.PokemonBulkUpgrade" +
+      "Settings\022O\n\031planned_downtime_settings\0303 " +
+      "\001(\0132,.POGOProtos.Settings.PlannedDowntim" +
+      "eSettings\022C\n\023ar_mapping_settings\0304 \001(\0132&" +
+      ".POGOProtos.Settings.ArMappingSettings\022T" +
+      "\n\034raid_invite_friends_settings\0305 \001(\0132..P" +
+      "OGOProtos.Settings.RaidInviteFriendsSett" +
+      "ings\022S\n\030daily_encounter_settings\0306 \001(\01321" +
+      ".POGOProtos.Settings.DailyEncounterGloba" +
+      "lSettings\022E\n\024raid_ticket_settings\0307 \001(\0132" +
+      "\'.POGOProtos.Settings.RaidTicketSettings" +
+      "\022Q\n\027rocket_balloon_settings\0308 \001(\01320.POGO" +
+      "Protos.Settings.RocketBalloonGlobalSetti" +
+      "ngs\022X\n\036timed_group_challenge_settings\0309 " +
+      "\001(\01320.POGOProtos.Settings.TimedGroupChal" +
+      "lengeSettings\022G\n\025lobby_client_settings\030;" +
+      " \001(\0132(.POGOProtos.Settings.LobbyClientSe" +
+      "ttingsB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -234,13 +238,14 @@ public final class GlobalSettingsOuterClass {
           POGOProtos.Settings.RaidTicketSettingsOuterClass.getDescriptor(),
           POGOProtos.Settings.RocketBalloonGlobalSettingsOuterClass.getDescriptor(),
           POGOProtos.Settings.LobbyClientSettingsOuterClass.getDescriptor(),
+          POGOProtos.Settings.TimedGroupChallengeSettingsOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Settings_GlobalSettings_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Settings_GlobalSettings_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Settings_GlobalSettings_descriptor,
-        new java.lang.String[] { "FortSettings", "MapSettings", "LevelSettings", "InventorySettings", "MinimumClientVersion", "GpsSettings", "FestivalSettings", "EventSettings", "MaxPokemonTypes", "SfidaSettings", "NewsSettings", "TranslationSettings", "PasscodeSettings", "NotificationSettings", "ClientAppBlacklist", "ClientPerfSettings", "NewsGlobalSettings", "QuestGlobalSettings", "BelugaGlobalSettings", "TelemetryGlobalSettings", "LoginSettings", "SocialSettings", "TradingGlobalSettings", "AdditionalAllowedPokemonIds", "UpsightLoggingSettings", "CombatGlobalSettings", "ThirdMoveSettings", "CombatChallengeGlobalSettings", "BgmodeGlobalSettings", "ProbeSettings", "PurchasedSettings", "HelpshiftSettings", "ArPhotoSettings", "PoiSettings", "PokemonSettings", "AvatarSettings", "EvolutionV2Settings", "IncidentSettings", "KoalaSettings", "KangarooSettings", "BuddySettings", "InputSettings", "GmtSettings", "UseLocalTimeAction", "ArdkConfigSettings", "EnabledPokemon", "PokemonBulkUpgradeSettings", "PlannedDowntimeSettings", "ArMappingSettings", "RaidInviteFriendsSettings", "DailyEncounterSettings", "RaidTicketSettings", "RocketBalloonSettings", "LobbyClientSettings", });
+        new java.lang.String[] { "FortSettings", "MapSettings", "LevelSettings", "InventorySettings", "MinimumClientVersion", "GpsSettings", "FestivalSettings", "EventSettings", "MaxPokemonTypes", "SfidaSettings", "NewsSettings", "TranslationSettings", "PasscodeSettings", "NotificationSettings", "ClientAppBlacklist", "ClientPerfSettings", "NewsGlobalSettings", "QuestGlobalSettings", "BelugaGlobalSettings", "TelemetryGlobalSettings", "LoginSettings", "SocialSettings", "TradingGlobalSettings", "AdditionalAllowedPokemonIds", "UpsightLoggingSettings", "CombatGlobalSettings", "ThirdMoveSettings", "CombatChallengeGlobalSettings", "BgmodeGlobalSettings", "ProbeSettings", "PurchasedSettings", "HelpshiftSettings", "ArPhotoSettings", "PoiSettings", "PokemonSettings", "AvatarSettings", "EvolutionV2Settings", "IncidentSettings", "KoalaSettings", "KangarooSettings", "BuddySettings", "InputSettings", "GmtSettings", "UseLocalTimeAction", "ArdkConfigSettings", "EnabledPokemon", "PokemonBulkUpgradeSettings", "PlannedDowntimeSettings", "ArMappingSettings", "RaidInviteFriendsSettings", "DailyEncounterSettings", "RaidTicketSettings", "RocketBalloonSettings", "TimedGroupChallengeSettings", "LobbyClientSettings", });
     POGOProtos.Enums.PokemonIdOuterClass.getDescriptor();
     POGOProtos.Settings.EventSettingsOuterClass.getDescriptor();
     POGOProtos.Settings.FestivalSettingsOuterClass.getDescriptor();
@@ -291,6 +296,7 @@ public final class GlobalSettingsOuterClass {
     POGOProtos.Settings.RaidTicketSettingsOuterClass.getDescriptor();
     POGOProtos.Settings.RocketBalloonGlobalSettingsOuterClass.getDescriptor();
     POGOProtos.Settings.LobbyClientSettingsOuterClass.getDescriptor();
+    POGOProtos.Settings.TimedGroupChallengeSettingsOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

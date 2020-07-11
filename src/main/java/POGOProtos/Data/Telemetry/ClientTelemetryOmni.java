@@ -930,6 +930,20 @@ private static final long serialVersionUID = 0L;
             telemetryDataCase_ = 63;
             break;
           }
+          case 514: {
+            POGOProtos.Data.Telemetry.DeviceOSTelemetry.Builder subBuilder = null;
+            if (telemetryDataCase_ == 64) {
+              subBuilder = ((POGOProtos.Data.Telemetry.DeviceOSTelemetry) telemetryData_).toBuilder();
+            }
+            telemetryData_ =
+                input.readMessage(POGOProtos.Data.Telemetry.DeviceOSTelemetry.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Data.Telemetry.DeviceOSTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
+            }
+            telemetryDataCase_ = 64;
+            break;
+          }
           case 8010: {
             POGOProtos.Data.Telemetry.PlatformServerData.Builder subBuilder = null;
             if (serverData_ != null) {
@@ -1056,6 +1070,7 @@ private static final long serialVersionUID = 0L;
     MONODEPTH_DOWNLOAD_TELEMETRY(61),
     AR_MAPPING_TELEMETRY(62),
     REMOTE_RAID_TELEMETRY(63),
+    DEVICE_OS_TELEMETRY(64),
     TELEMETRYDATA_NOT_SET(0);
     private final int value;
     private TelemetryDataCase(int value) {
@@ -1136,6 +1151,7 @@ private static final long serialVersionUID = 0L;
         case 61: return MONODEPTH_DOWNLOAD_TELEMETRY;
         case 62: return AR_MAPPING_TELEMETRY;
         case 63: return REMOTE_RAID_TELEMETRY;
+        case 64: return DEVICE_OS_TELEMETRY;
         case 0: return TELEMETRYDATA_NOT_SET;
         default: return null;
       }
@@ -2915,6 +2931,34 @@ private static final long serialVersionUID = 0L;
     return POGOProtos.Data.Telemetry.RemoteRaidTelemetry.getDefaultInstance();
   }
 
+  public static final int DEVICE_OS_TELEMETRY_FIELD_NUMBER = 64;
+  /**
+   * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * @return Whether the deviceOsTelemetry field is set.
+   */
+  public boolean hasDeviceOsTelemetry() {
+    return telemetryDataCase_ == 64;
+  }
+  /**
+   * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * @return The deviceOsTelemetry.
+   */
+  public POGOProtos.Data.Telemetry.DeviceOSTelemetry getDeviceOsTelemetry() {
+    if (telemetryDataCase_ == 64) {
+       return (POGOProtos.Data.Telemetry.DeviceOSTelemetry) telemetryData_;
+    }
+    return POGOProtos.Data.Telemetry.DeviceOSTelemetry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   */
+  public POGOProtos.Data.Telemetry.DeviceOSTelemetryOrBuilder getDeviceOsTelemetryOrBuilder() {
+    if (telemetryDataCase_ == 64) {
+       return (POGOProtos.Data.Telemetry.DeviceOSTelemetry) telemetryData_;
+    }
+    return POGOProtos.Data.Telemetry.DeviceOSTelemetry.getDefaultInstance();
+  }
+
   public static final int SERVER_DATA_FIELD_NUMBER = 1001;
   private POGOProtos.Data.Telemetry.PlatformServerData serverData_;
   /**
@@ -3163,6 +3207,9 @@ private static final long serialVersionUID = 0L;
     }
     if (telemetryDataCase_ == 63) {
       output.writeMessage(63, (POGOProtos.Data.Telemetry.RemoteRaidTelemetry) telemetryData_);
+    }
+    if (telemetryDataCase_ == 64) {
+      output.writeMessage(64, (POGOProtos.Data.Telemetry.DeviceOSTelemetry) telemetryData_);
     }
     if (serverData_ != null) {
       output.writeMessage(1001, getServerData());
@@ -3430,6 +3477,10 @@ private static final long serialVersionUID = 0L;
     if (telemetryDataCase_ == 63) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(63, (POGOProtos.Data.Telemetry.RemoteRaidTelemetry) telemetryData_);
+    }
+    if (telemetryDataCase_ == 64) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(64, (POGOProtos.Data.Telemetry.DeviceOSTelemetry) telemetryData_);
     }
     if (serverData_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -3718,6 +3769,10 @@ private static final long serialVersionUID = 0L;
         if (!getRemoteRaidTelemetry()
             .equals(other.getRemoteRaidTelemetry())) return false;
         break;
+      case 64:
+        if (!getDeviceOsTelemetry()
+            .equals(other.getDeviceOsTelemetry())) return false;
+        break;
       case 0:
       default:
     }
@@ -3992,6 +4047,10 @@ private static final long serialVersionUID = 0L;
       case 63:
         hash = (37 * hash) + REMOTE_RAID_TELEMETRY_FIELD_NUMBER;
         hash = (53 * hash) + getRemoteRaidTelemetry().hashCode();
+        break;
+      case 64:
+        hash = (37 * hash) + DEVICE_OS_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getDeviceOsTelemetry().hashCode();
         break;
       case 0:
       default:
@@ -4610,6 +4669,13 @@ private static final long serialVersionUID = 0L;
           result.telemetryData_ = remoteRaidTelemetryBuilder_.build();
         }
       }
+      if (telemetryDataCase_ == 64) {
+        if (deviceOsTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = deviceOsTelemetryBuilder_.build();
+        }
+      }
       if (serverDataBuilder_ == null) {
         result.serverData_ = serverData_;
       } else {
@@ -4926,6 +4992,10 @@ private static final long serialVersionUID = 0L;
         }
         case REMOTE_RAID_TELEMETRY: {
           mergeRemoteRaidTelemetry(other.getRemoteRaidTelemetry());
+          break;
+        }
+        case DEVICE_OS_TELEMETRY: {
+          mergeDeviceOsTelemetry(other.getDeviceOsTelemetry());
           break;
         }
         case TELEMETRYDATA_NOT_SET: {
@@ -13668,6 +13738,144 @@ private static final long serialVersionUID = 0L;
       telemetryDataCase_ = 63;
       onChanged();;
       return remoteRaidTelemetryBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Telemetry.DeviceOSTelemetry, POGOProtos.Data.Telemetry.DeviceOSTelemetry.Builder, POGOProtos.Data.Telemetry.DeviceOSTelemetryOrBuilder> deviceOsTelemetryBuilder_;
+    /**
+     * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     * @return Whether the deviceOsTelemetry field is set.
+     */
+    public boolean hasDeviceOsTelemetry() {
+      return telemetryDataCase_ == 64;
+    }
+    /**
+     * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     * @return The deviceOsTelemetry.
+     */
+    public POGOProtos.Data.Telemetry.DeviceOSTelemetry getDeviceOsTelemetry() {
+      if (deviceOsTelemetryBuilder_ == null) {
+        if (telemetryDataCase_ == 64) {
+          return (POGOProtos.Data.Telemetry.DeviceOSTelemetry) telemetryData_;
+        }
+        return POGOProtos.Data.Telemetry.DeviceOSTelemetry.getDefaultInstance();
+      } else {
+        if (telemetryDataCase_ == 64) {
+          return deviceOsTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Data.Telemetry.DeviceOSTelemetry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public Builder setDeviceOsTelemetry(POGOProtos.Data.Telemetry.DeviceOSTelemetry value) {
+      if (deviceOsTelemetryBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        telemetryData_ = value;
+        onChanged();
+      } else {
+        deviceOsTelemetryBuilder_.setMessage(value);
+      }
+      telemetryDataCase_ = 64;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public Builder setDeviceOsTelemetry(
+        POGOProtos.Data.Telemetry.DeviceOSTelemetry.Builder builderForValue) {
+      if (deviceOsTelemetryBuilder_ == null) {
+        telemetryData_ = builderForValue.build();
+        onChanged();
+      } else {
+        deviceOsTelemetryBuilder_.setMessage(builderForValue.build());
+      }
+      telemetryDataCase_ = 64;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public Builder mergeDeviceOsTelemetry(POGOProtos.Data.Telemetry.DeviceOSTelemetry value) {
+      if (deviceOsTelemetryBuilder_ == null) {
+        if (telemetryDataCase_ == 64 &&
+            telemetryData_ != POGOProtos.Data.Telemetry.DeviceOSTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Data.Telemetry.DeviceOSTelemetry.newBuilder((POGOProtos.Data.Telemetry.DeviceOSTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          telemetryData_ = value;
+        }
+        onChanged();
+      } else {
+        if (telemetryDataCase_ == 64) {
+          deviceOsTelemetryBuilder_.mergeFrom(value);
+        }
+        deviceOsTelemetryBuilder_.setMessage(value);
+      }
+      telemetryDataCase_ = 64;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public Builder clearDeviceOsTelemetry() {
+      if (deviceOsTelemetryBuilder_ == null) {
+        if (telemetryDataCase_ == 64) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
+      } else {
+        if (telemetryDataCase_ == 64) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        deviceOsTelemetryBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public POGOProtos.Data.Telemetry.DeviceOSTelemetry.Builder getDeviceOsTelemetryBuilder() {
+      return getDeviceOsTelemetryFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    public POGOProtos.Data.Telemetry.DeviceOSTelemetryOrBuilder getDeviceOsTelemetryOrBuilder() {
+      if ((telemetryDataCase_ == 64) && (deviceOsTelemetryBuilder_ != null)) {
+        return deviceOsTelemetryBuilder_.getMessageOrBuilder();
+      } else {
+        if (telemetryDataCase_ == 64) {
+          return (POGOProtos.Data.Telemetry.DeviceOSTelemetry) telemetryData_;
+        }
+        return POGOProtos.Data.Telemetry.DeviceOSTelemetry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Telemetry.DeviceOSTelemetry, POGOProtos.Data.Telemetry.DeviceOSTelemetry.Builder, POGOProtos.Data.Telemetry.DeviceOSTelemetryOrBuilder> 
+        getDeviceOsTelemetryFieldBuilder() {
+      if (deviceOsTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 64)) {
+          telemetryData_ = POGOProtos.Data.Telemetry.DeviceOSTelemetry.getDefaultInstance();
+        }
+        deviceOsTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Data.Telemetry.DeviceOSTelemetry, POGOProtos.Data.Telemetry.DeviceOSTelemetry.Builder, POGOProtos.Data.Telemetry.DeviceOSTelemetryOrBuilder>(
+                (POGOProtos.Data.Telemetry.DeviceOSTelemetry) telemetryData_,
+                getParentForChildren(),
+                isClean());
+        telemetryData_ = null;
+      }
+      telemetryDataCase_ = 64;
+      onChanged();;
+      return deviceOsTelemetryBuilder_;
     }
 
     private POGOProtos.Data.Telemetry.PlatformServerData serverData_;

@@ -51,4 +51,6 @@ public interface JournalEntryProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.JournalRemoveEntryProto remove_entry = 3;</code>
    */
   POGOProtos.Rpc.JournalRemoveEntryProtoOrBuilder getRemoveEntryOrBuilder();
+
+  public POGOProtos.Rpc.JournalEntryProto.SubentryCase getSubentryCase();
 }

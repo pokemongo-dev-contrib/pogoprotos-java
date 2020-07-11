@@ -24,9 +24,10 @@ public final class PresentationTypeOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\'POGOProtos/Enums/PresentationType.prot" +
-      "o\022\020POGOProtos.Enums*S\n\020PresentationType\022" +
+      "o\022\020POGOProtos.Enums*n\n\020PresentationType\022" +
       "\035\n\031UNKNOWN_PRESENTATION_TYPE\020\000\022\014\n\010CATEGO" +
-      "RY\020\001\022\010\n\004SORT\020\002\022\010\n\004SALE\020\003B\002P\001b\006proto3"
+      "RY\020\001\022\010\n\004SORT\020\002\022\010\n\004SALE\020\003\022\031\n\025ML_BUNDLE_TR" +
+      "ACKING_ID\020\004B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

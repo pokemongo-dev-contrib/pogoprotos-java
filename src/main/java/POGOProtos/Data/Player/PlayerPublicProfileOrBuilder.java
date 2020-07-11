@@ -127,4 +127,19 @@ public interface PlayerPublicProfileOrBuilder extends
    * @return The combatRating.
    */
   float getCombatRating();
+
+  /**
+   * <code>.POGOProtos.Data.Player.TimedGroupChallengePlayerStats timed_group_challenge_stats = 14;</code>
+   * @return Whether the timedGroupChallengeStats field is set.
+   */
+  boolean hasTimedGroupChallengeStats();
+  /**
+   * <code>.POGOProtos.Data.Player.TimedGroupChallengePlayerStats timed_group_challenge_stats = 14;</code>
+   * @return The timedGroupChallengeStats.
+   */
+  POGOProtos.Data.Player.TimedGroupChallengePlayerStats getTimedGroupChallengeStats();
+  /**
+   * <code>.POGOProtos.Data.Player.TimedGroupChallengePlayerStats timed_group_challenge_stats = 14;</code>
+   */
+  POGOProtos.Data.Player.TimedGroupChallengePlayerStatsOrBuilder getTimedGroupChallengeStatsOrBuilder();
 }

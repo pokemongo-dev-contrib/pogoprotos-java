@@ -99,4 +99,124 @@ public interface ArPhotoSessionOrBuilder extends
    */
   com.google.protobuf.ByteString
       getModelUrlBytes();
+
+  /**
+   * <code>string ardk_version = 13;</code>
+   * @return The ardkVersion.
+   */
+  java.lang.String getArdkVersion();
+  /**
+   * <code>string ardk_version = 13;</code>
+   * @return The bytes for ardkVersion.
+   */
+  com.google.protobuf.ByteString
+      getArdkVersionBytes();
+
+  /**
+   * <code>int32 average_framerate = 14;</code>
+   * @return The averageFramerate.
+   */
+  int getAverageFramerate();
+
+  /**
+   * <code>float average_battery_per_min = 15;</code>
+   * @return The averageBatteryPerMin.
+   */
+  float getAverageBatteryPerMin();
+
+  /**
+   * <code>float average_cpu_usage = 16;</code>
+   * @return The averageCpuUsage.
+   */
+  float getAverageCpuUsage();
+
+  /**
+   * <code>float average_gpu_usage = 17;</code>
+   * @return The averageGpuUsage.
+   */
+  float getAverageGpuUsage();
+
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.FramerateSample framerate_samples = 18;</code>
+   */
+  java.util.List<POGOProtos.Data.Telemetry.ArPhotoSession.FramerateSample> 
+      getFramerateSamplesList();
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.FramerateSample framerate_samples = 18;</code>
+   */
+  POGOProtos.Data.Telemetry.ArPhotoSession.FramerateSample getFramerateSamples(int index);
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.FramerateSample framerate_samples = 18;</code>
+   */
+  int getFramerateSamplesCount();
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.FramerateSample framerate_samples = 18;</code>
+   */
+  java.util.List<? extends POGOProtos.Data.Telemetry.ArPhotoSession.FramerateSampleOrBuilder> 
+      getFramerateSamplesOrBuilderList();
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.FramerateSample framerate_samples = 18;</code>
+   */
+  POGOProtos.Data.Telemetry.ArPhotoSession.FramerateSampleOrBuilder getFramerateSamplesOrBuilder(
+      int index);
+
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.BatterySample battery_samples = 19;</code>
+   */
+  java.util.List<POGOProtos.Data.Telemetry.ArPhotoSession.BatterySample> 
+      getBatterySamplesList();
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.BatterySample battery_samples = 19;</code>
+   */
+  POGOProtos.Data.Telemetry.ArPhotoSession.BatterySample getBatterySamples(int index);
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.BatterySample battery_samples = 19;</code>
+   */
+  int getBatterySamplesCount();
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.BatterySample battery_samples = 19;</code>
+   */
+  java.util.List<? extends POGOProtos.Data.Telemetry.ArPhotoSession.BatterySampleOrBuilder> 
+      getBatterySamplesOrBuilderList();
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.BatterySample battery_samples = 19;</code>
+   */
+  POGOProtos.Data.Telemetry.ArPhotoSession.BatterySampleOrBuilder getBatterySamplesOrBuilder(
+      int index);
+
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.ProcessorSample processor_samples = 20;</code>
+   */
+  java.util.List<POGOProtos.Data.Telemetry.ArPhotoSession.ProcessorSample> 
+      getProcessorSamplesList();
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.ProcessorSample processor_samples = 20;</code>
+   */
+  POGOProtos.Data.Telemetry.ArPhotoSession.ProcessorSample getProcessorSamples(int index);
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.ProcessorSample processor_samples = 20;</code>
+   */
+  int getProcessorSamplesCount();
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.ProcessorSample processor_samples = 20;</code>
+   */
+  java.util.List<? extends POGOProtos.Data.Telemetry.ArPhotoSession.ProcessorSampleOrBuilder> 
+      getProcessorSamplesOrBuilderList();
+  /**
+   * <code>repeated .POGOProtos.Data.Telemetry.ArPhotoSession.ProcessorSample processor_samples = 20;</code>
+   */
+  POGOProtos.Data.Telemetry.ArPhotoSession.ProcessorSampleOrBuilder getProcessorSamplesOrBuilder(
+      int index);
+
+  /**
+   * <code>int32 session_start_to_plane_detection_ms = 21;</code>
+   * @return The sessionStartToPlaneDetectionMs.
+   */
+  int getSessionStartToPlaneDetectionMs();
+
+  /**
+   * <code>int32 plane_detection_to_user_interaction_ms = 22;</code>
+   * @return The planeDetectionToUserInteractionMs.
+   */
+  int getPlaneDetectionToUserInteractionMs();
 }

@@ -8,21 +8,6 @@ public interface PlatformMetricDataOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.TelemetryCommon common_telemetry = 1;</code>
-   * @return Whether the commonTelemetry field is set.
-   */
-  boolean hasCommonTelemetry();
-  /**
-   * <code>.POGOProtos.Rpc.TelemetryCommon common_telemetry = 1;</code>
-   * @return The commonTelemetry.
-   */
-  POGOProtos.Rpc.TelemetryCommon getCommonTelemetry();
-  /**
-   * <code>.POGOProtos.Rpc.TelemetryCommon common_telemetry = 1;</code>
-   */
-  POGOProtos.Rpc.TelemetryCommonOrBuilder getCommonTelemetryOrBuilder();
-
-  /**
    * <code>int64 long_value = 2;</code>
    * @return The longValue.
    */
@@ -56,6 +41,21 @@ public interface PlatformMetricDataOrBuilder extends
   POGOProtos.Rpc.DistributionOrBuilder getDistributionOrBuilder();
 
   /**
+   * <code>.POGOProtos.Rpc.TelemetryCommon common_telemetry = 1;</code>
+   * @return Whether the commonTelemetry field is set.
+   */
+  boolean hasCommonTelemetry();
+  /**
+   * <code>.POGOProtos.Rpc.TelemetryCommon common_telemetry = 1;</code>
+   * @return The commonTelemetry.
+   */
+  POGOProtos.Rpc.TelemetryCommon getCommonTelemetry();
+  /**
+   * <code>.POGOProtos.Rpc.TelemetryCommon common_telemetry = 1;</code>
+   */
+  POGOProtos.Rpc.TelemetryCommonOrBuilder getCommonTelemetryOrBuilder();
+
+  /**
    * <code>.POGOProtos.Rpc.PlatformMetricData.Kind metric_kind = 6;</code>
    * @return The enum numeric value on the wire for metricKind.
    */
@@ -65,4 +65,6 @@ public interface PlatformMetricDataOrBuilder extends
    * @return The metricKind.
    */
   POGOProtos.Rpc.PlatformMetricData.Kind getMetricKind();
+
+  public POGOProtos.Rpc.PlatformMetricData.DatapointValueCase getDatapointValueCase();
 }

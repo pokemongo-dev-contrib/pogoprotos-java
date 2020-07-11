@@ -50,13 +50,13 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 8: {
-
-            dayOffsetFromNow_ = input.readInt32();
+            windowCase_ = 1;
+            window_ = input.readInt32();
             break;
           }
           case 16: {
-
-            weekOffsetFromNow_ = input.readInt32();
+            windowCase_ = 2;
+            window_ = input.readInt32();
             break;
           }
           case 26: {
@@ -109,24 +109,69 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.FitnessReportProto.class, POGOProtos.Rpc.FitnessReportProto.Builder.class);
   }
 
+  private int windowCase_ = 0;
+  private java.lang.Object window_;
+  public enum WindowCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    DAY_OFFSET_FROM_NOW(1),
+    WEEK_OFFSET_FROM_NOW(2),
+    WINDOW_NOT_SET(0);
+    private final int value;
+    private WindowCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static WindowCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static WindowCase forNumber(int value) {
+      switch (value) {
+        case 1: return DAY_OFFSET_FROM_NOW;
+        case 2: return WEEK_OFFSET_FROM_NOW;
+        case 0: return WINDOW_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public WindowCase
+  getWindowCase() {
+    return WindowCase.forNumber(
+        windowCase_);
+  }
+
   public static final int DAY_OFFSET_FROM_NOW_FIELD_NUMBER = 1;
-  private int dayOffsetFromNow_;
   /**
    * <code>int32 day_offset_from_now = 1;</code>
    * @return The dayOffsetFromNow.
    */
   public int getDayOffsetFromNow() {
-    return dayOffsetFromNow_;
+    if (windowCase_ == 1) {
+      return (java.lang.Integer) window_;
+    }
+    return 0;
   }
 
   public static final int WEEK_OFFSET_FROM_NOW_FIELD_NUMBER = 2;
-  private int weekOffsetFromNow_;
   /**
    * <code>int32 week_offset_from_now = 2;</code>
    * @return The weekOffsetFromNow.
    */
   public int getWeekOffsetFromNow() {
-    return weekOffsetFromNow_;
+    if (windowCase_ == 2) {
+      return (java.lang.Integer) window_;
+    }
+    return 0;
   }
 
   public static final int METRICS_FIELD_NUMBER = 3;
@@ -176,11 +221,13 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (dayOffsetFromNow_ != 0) {
-      output.writeInt32(1, dayOffsetFromNow_);
+    if (windowCase_ == 1) {
+      output.writeInt32(
+          1, (int)((java.lang.Integer) window_));
     }
-    if (weekOffsetFromNow_ != 0) {
-      output.writeInt32(2, weekOffsetFromNow_);
+    if (windowCase_ == 2) {
+      output.writeInt32(
+          2, (int)((java.lang.Integer) window_));
     }
     if (metrics_ != null) {
       output.writeMessage(3, getMetrics());
@@ -197,13 +244,15 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (dayOffsetFromNow_ != 0) {
+    if (windowCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(1, dayOffsetFromNow_);
+        .computeInt32Size(
+            1, (int)((java.lang.Integer) window_));
     }
-    if (weekOffsetFromNow_ != 0) {
+    if (windowCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, weekOffsetFromNow_);
+        .computeInt32Size(
+            2, (int)((java.lang.Integer) window_));
     }
     if (metrics_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -228,10 +277,6 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.FitnessReportProto other = (POGOProtos.Rpc.FitnessReportProto) obj;
 
-    if (getDayOffsetFromNow()
-        != other.getDayOffsetFromNow()) return false;
-    if (getWeekOffsetFromNow()
-        != other.getWeekOffsetFromNow()) return false;
     if (hasMetrics() != other.hasMetrics()) return false;
     if (hasMetrics()) {
       if (!getMetrics()
@@ -239,6 +284,19 @@ private static final long serialVersionUID = 0L;
     }
     if (!getGameData()
         .equals(other.getGameData())) return false;
+    if (!getWindowCase().equals(other.getWindowCase())) return false;
+    switch (windowCase_) {
+      case 1:
+        if (getDayOffsetFromNow()
+            != other.getDayOffsetFromNow()) return false;
+        break;
+      case 2:
+        if (getWeekOffsetFromNow()
+            != other.getWeekOffsetFromNow()) return false;
+        break;
+      case 0:
+      default:
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -250,16 +308,24 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + DAY_OFFSET_FROM_NOW_FIELD_NUMBER;
-    hash = (53 * hash) + getDayOffsetFromNow();
-    hash = (37 * hash) + WEEK_OFFSET_FROM_NOW_FIELD_NUMBER;
-    hash = (53 * hash) + getWeekOffsetFromNow();
     if (hasMetrics()) {
       hash = (37 * hash) + METRICS_FIELD_NUMBER;
       hash = (53 * hash) + getMetrics().hashCode();
     }
     hash = (37 * hash) + GAME_DATA_FIELD_NUMBER;
     hash = (53 * hash) + getGameData().hashCode();
+    switch (windowCase_) {
+      case 1:
+        hash = (37 * hash) + DAY_OFFSET_FROM_NOW_FIELD_NUMBER;
+        hash = (53 * hash) + getDayOffsetFromNow();
+        break;
+      case 2:
+        hash = (37 * hash) + WEEK_OFFSET_FROM_NOW_FIELD_NUMBER;
+        hash = (53 * hash) + getWeekOffsetFromNow();
+        break;
+      case 0:
+      default:
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -393,10 +459,6 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      dayOffsetFromNow_ = 0;
-
-      weekOffsetFromNow_ = 0;
-
       if (metricsBuilder_ == null) {
         metrics_ = null;
       } else {
@@ -405,6 +467,8 @@ private static final long serialVersionUID = 0L;
       }
       gameData_ = com.google.protobuf.ByteString.EMPTY;
 
+      windowCase_ = 0;
+      window_ = null;
       return this;
     }
 
@@ -431,14 +495,19 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.FitnessReportProto buildPartial() {
       POGOProtos.Rpc.FitnessReportProto result = new POGOProtos.Rpc.FitnessReportProto(this);
-      result.dayOffsetFromNow_ = dayOffsetFromNow_;
-      result.weekOffsetFromNow_ = weekOffsetFromNow_;
+      if (windowCase_ == 1) {
+        result.window_ = window_;
+      }
+      if (windowCase_ == 2) {
+        result.window_ = window_;
+      }
       if (metricsBuilder_ == null) {
         result.metrics_ = metrics_;
       } else {
         result.metrics_ = metricsBuilder_.build();
       }
       result.gameData_ = gameData_;
+      result.windowCase_ = windowCase_;
       onBuilt();
       return result;
     }
@@ -487,17 +556,24 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.FitnessReportProto other) {
       if (other == POGOProtos.Rpc.FitnessReportProto.getDefaultInstance()) return this;
-      if (other.getDayOffsetFromNow() != 0) {
-        setDayOffsetFromNow(other.getDayOffsetFromNow());
-      }
-      if (other.getWeekOffsetFromNow() != 0) {
-        setWeekOffsetFromNow(other.getWeekOffsetFromNow());
-      }
       if (other.hasMetrics()) {
         mergeMetrics(other.getMetrics());
       }
       if (other.getGameData() != com.google.protobuf.ByteString.EMPTY) {
         setGameData(other.getGameData());
+      }
+      switch (other.getWindowCase()) {
+        case DAY_OFFSET_FROM_NOW: {
+          setDayOffsetFromNow(other.getDayOffsetFromNow());
+          break;
+        }
+        case WEEK_OFFSET_FROM_NOW: {
+          setWeekOffsetFromNow(other.getWeekOffsetFromNow());
+          break;
+        }
+        case WINDOW_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -527,14 +603,31 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int windowCase_ = 0;
+    private java.lang.Object window_;
+    public WindowCase
+        getWindowCase() {
+      return WindowCase.forNumber(
+          windowCase_);
+    }
 
-    private int dayOffsetFromNow_ ;
+    public Builder clearWindow() {
+      windowCase_ = 0;
+      window_ = null;
+      onChanged();
+      return this;
+    }
+
+
     /**
      * <code>int32 day_offset_from_now = 1;</code>
      * @return The dayOffsetFromNow.
      */
     public int getDayOffsetFromNow() {
-      return dayOffsetFromNow_;
+      if (windowCase_ == 1) {
+        return (java.lang.Integer) window_;
+      }
+      return 0;
     }
     /**
      * <code>int32 day_offset_from_now = 1;</code>
@@ -542,8 +635,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDayOffsetFromNow(int value) {
-      
-      dayOffsetFromNow_ = value;
+      windowCase_ = 1;
+      window_ = value;
       onChanged();
       return this;
     }
@@ -552,19 +645,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearDayOffsetFromNow() {
-      
-      dayOffsetFromNow_ = 0;
-      onChanged();
+      if (windowCase_ == 1) {
+        windowCase_ = 0;
+        window_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private int weekOffsetFromNow_ ;
     /**
      * <code>int32 week_offset_from_now = 2;</code>
      * @return The weekOffsetFromNow.
      */
     public int getWeekOffsetFromNow() {
-      return weekOffsetFromNow_;
+      if (windowCase_ == 2) {
+        return (java.lang.Integer) window_;
+      }
+      return 0;
     }
     /**
      * <code>int32 week_offset_from_now = 2;</code>
@@ -572,8 +669,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setWeekOffsetFromNow(int value) {
-      
-      weekOffsetFromNow_ = value;
+      windowCase_ = 2;
+      window_ = value;
       onChanged();
       return this;
     }
@@ -582,9 +679,11 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearWeekOffsetFromNow() {
-      
-      weekOffsetFromNow_ = 0;
-      onChanged();
+      if (windowCase_ == 2) {
+        windowCase_ = 0;
+        window_ = null;
+        onChanged();
+      }
       return this;
     }
 

@@ -133,6 +133,19 @@ private static final long serialVersionUID = 0L;
             combatRating_ = input.readFloat();
             break;
           }
+          case 114: {
+            POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.Builder subBuilder = null;
+            if (timedGroupChallengeStats_ != null) {
+              subBuilder = timedGroupChallengeStats_.toBuilder();
+            }
+            timedGroupChallengeStats_ = input.readMessage(POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(timedGroupChallengeStats_);
+              timedGroupChallengeStats_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -380,6 +393,29 @@ private static final long serialVersionUID = 0L;
     return combatRating_;
   }
 
+  public static final int TIMED_GROUP_CHALLENGE_STATS_FIELD_NUMBER = 14;
+  private POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timedGroupChallengeStats_;
+  /**
+   * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+   * @return Whether the timedGroupChallengeStats field is set.
+   */
+  public boolean hasTimedGroupChallengeStats() {
+    return timedGroupChallengeStats_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+   * @return The timedGroupChallengeStats.
+   */
+  public POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto getTimedGroupChallengeStats() {
+    return timedGroupChallengeStats_ == null ? POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.getDefaultInstance() : timedGroupChallengeStats_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+   */
+  public POGOProtos.Rpc.TimedGroupChallengePlayerStatsProtoOrBuilder getTimedGroupChallengeStatsOrBuilder() {
+    return getTimedGroupChallengeStats();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -432,6 +468,9 @@ private static final long serialVersionUID = 0L;
     }
     if (combatRating_ != 0F) {
       output.writeFloat(13, combatRating_);
+    }
+    if (timedGroupChallengeStats_ != null) {
+      output.writeMessage(14, getTimedGroupChallengeStats());
     }
     unknownFields.writeTo(output);
   }
@@ -493,6 +532,10 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFloatSize(13, combatRating_);
     }
+    if (timedGroupChallengeStats_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(14, getTimedGroupChallengeStats());
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -537,6 +580,11 @@ private static final long serialVersionUID = 0L;
     if (java.lang.Float.floatToIntBits(getCombatRating())
         != java.lang.Float.floatToIntBits(
             other.getCombatRating())) return false;
+    if (hasTimedGroupChallengeStats() != other.hasTimedGroupChallengeStats()) return false;
+    if (hasTimedGroupChallengeStats()) {
+      if (!getTimedGroupChallengeStats()
+          .equals(other.getTimedGroupChallengeStats())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -582,6 +630,10 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + COMBAT_RATING_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
         getCombatRating());
+    if (hasTimedGroupChallengeStats()) {
+      hash = (37 * hash) + TIMED_GROUP_CHALLENGE_STATS_FIELD_NUMBER;
+      hash = (53 * hash) + getTimedGroupChallengeStats().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -750,6 +802,12 @@ private static final long serialVersionUID = 0L;
 
       combatRating_ = 0F;
 
+      if (timedGroupChallengeStatsBuilder_ == null) {
+        timedGroupChallengeStats_ = null;
+      } else {
+        timedGroupChallengeStats_ = null;
+        timedGroupChallengeStatsBuilder_ = null;
+      }
       return this;
     }
 
@@ -802,6 +860,11 @@ private static final long serialVersionUID = 0L;
       result.hasSharedExPass_ = hasSharedExPass_;
       result.combatRank_ = combatRank_;
       result.combatRating_ = combatRating_;
+      if (timedGroupChallengeStatsBuilder_ == null) {
+        result.timedGroupChallengeStats_ = timedGroupChallengeStats_;
+      } else {
+        result.timedGroupChallengeStats_ = timedGroupChallengeStatsBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -912,6 +975,9 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getCombatRating() != 0F) {
         setCombatRating(other.getCombatRating());
+      }
+      if (other.hasTimedGroupChallengeStats()) {
+        mergeTimedGroupChallengeStats(other.getTimedGroupChallengeStats());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1720,6 +1786,125 @@ private static final long serialVersionUID = 0L;
       combatRating_ = 0F;
       onChanged();
       return this;
+    }
+
+    private POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timedGroupChallengeStats_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto, POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.Builder, POGOProtos.Rpc.TimedGroupChallengePlayerStatsProtoOrBuilder> timedGroupChallengeStatsBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+     * @return Whether the timedGroupChallengeStats field is set.
+     */
+    public boolean hasTimedGroupChallengeStats() {
+      return timedGroupChallengeStatsBuilder_ != null || timedGroupChallengeStats_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+     * @return The timedGroupChallengeStats.
+     */
+    public POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto getTimedGroupChallengeStats() {
+      if (timedGroupChallengeStatsBuilder_ == null) {
+        return timedGroupChallengeStats_ == null ? POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.getDefaultInstance() : timedGroupChallengeStats_;
+      } else {
+        return timedGroupChallengeStatsBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+     */
+    public Builder setTimedGroupChallengeStats(POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto value) {
+      if (timedGroupChallengeStatsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        timedGroupChallengeStats_ = value;
+        onChanged();
+      } else {
+        timedGroupChallengeStatsBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+     */
+    public Builder setTimedGroupChallengeStats(
+        POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.Builder builderForValue) {
+      if (timedGroupChallengeStatsBuilder_ == null) {
+        timedGroupChallengeStats_ = builderForValue.build();
+        onChanged();
+      } else {
+        timedGroupChallengeStatsBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+     */
+    public Builder mergeTimedGroupChallengeStats(POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto value) {
+      if (timedGroupChallengeStatsBuilder_ == null) {
+        if (timedGroupChallengeStats_ != null) {
+          timedGroupChallengeStats_ =
+            POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.newBuilder(timedGroupChallengeStats_).mergeFrom(value).buildPartial();
+        } else {
+          timedGroupChallengeStats_ = value;
+        }
+        onChanged();
+      } else {
+        timedGroupChallengeStatsBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+     */
+    public Builder clearTimedGroupChallengeStats() {
+      if (timedGroupChallengeStatsBuilder_ == null) {
+        timedGroupChallengeStats_ = null;
+        onChanged();
+      } else {
+        timedGroupChallengeStats_ = null;
+        timedGroupChallengeStatsBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+     */
+    public POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.Builder getTimedGroupChallengeStatsBuilder() {
+      
+      onChanged();
+      return getTimedGroupChallengeStatsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+     */
+    public POGOProtos.Rpc.TimedGroupChallengePlayerStatsProtoOrBuilder getTimedGroupChallengeStatsOrBuilder() {
+      if (timedGroupChallengeStatsBuilder_ != null) {
+        return timedGroupChallengeStatsBuilder_.getMessageOrBuilder();
+      } else {
+        return timedGroupChallengeStats_ == null ?
+            POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.getDefaultInstance() : timedGroupChallengeStats_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto timed_group_challenge_stats = 14;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto, POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.Builder, POGOProtos.Rpc.TimedGroupChallengePlayerStatsProtoOrBuilder> 
+        getTimedGroupChallengeStatsFieldBuilder() {
+      if (timedGroupChallengeStatsBuilder_ == null) {
+        timedGroupChallengeStatsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto, POGOProtos.Rpc.TimedGroupChallengePlayerStatsProto.Builder, POGOProtos.Rpc.TimedGroupChallengePlayerStatsProtoOrBuilder>(
+                getTimedGroupChallengeStats(),
+                getParentForChildren(),
+                isClean());
+        timedGroupChallengeStats_ = null;
+      }
+      return timedGroupChallengeStatsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

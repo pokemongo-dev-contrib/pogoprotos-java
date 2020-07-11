@@ -200,6 +200,10 @@ public enum ClientTelemetryIds
    * <code>SCREEN_RESOLUTION_TELEMETRY = 47;</code>
    */
   SCREEN_RESOLUTION_TELEMETRY(47),
+  /**
+   * <code>DEVICE_OS_TELEMETRY = 48;</code>
+   */
+  DEVICE_OS_TELEMETRY(48),
   UNRECOGNIZED(-1),
   ;
 
@@ -395,6 +399,10 @@ public enum ClientTelemetryIds
    * <code>SCREEN_RESOLUTION_TELEMETRY = 47;</code>
    */
   public static final int SCREEN_RESOLUTION_TELEMETRY_VALUE = 47;
+  /**
+   * <code>DEVICE_OS_TELEMETRY = 48;</code>
+   */
+  public static final int DEVICE_OS_TELEMETRY_VALUE = 48;
 
 
   public final int getNumber() {
@@ -469,6 +477,7 @@ public enum ClientTelemetryIds
       case 45: return COMBAT_HUB_ENTRANCE_TELEMETRY;
       case 46: return DEVICE_SPECIFICATIONS_TELEMETRY;
       case 47: return SCREEN_RESOLUTION_TELEMETRY;
+      case 48: return DEVICE_OS_TELEMETRY;
       default: return null;
     }
   }

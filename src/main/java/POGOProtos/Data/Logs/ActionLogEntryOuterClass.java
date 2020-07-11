@@ -56,48 +56,51 @@ public final class ActionLogEntryOuterClass {
       "VsSeekerSetLogEntry.proto\0329POGOProtos/Da" +
       "ta/Logs/VsSeekerCompleteSeasonLogEntry.p" +
       "roto\0325POGOProtos/Data/Logs/VsSeekerWinRe" +
-      "wardsLogEntry.proto\"\310\014\n\016ActionLogEntry\022\024" +
-      "\n\014timestamp_ms\030\001 \001(\003\022\r\n\005sfida\030\002 \001(\010\022C\n\rc" +
-      "atch_pokemon\030\003 \001(\0132*.POGOProtos.Data.Log" +
-      "s.CatchPokemonLogEntryH\000\022?\n\013fort_search\030" +
-      "\004 \001(\0132(.POGOProtos.Data.Logs.FortSearchL" +
-      "ogEntryH\000\022C\n\rbuddy_pokemon\030\005 \001(\0132*.POGOP" +
-      "rotos.Data.Logs.BuddyPokemonLogEntryH\000\022A" +
-      "\n\014raid_rewards\030\006 \001(\0132).POGOProtos.Data.L" +
-      "ogs.RaidRewardsLogEntryH\000\022I\n\020passcode_re" +
-      "wards\030\007 \001(\0132-.POGOProtos.Data.Logs.Passc" +
-      "odeRewardsLogEntryH\000\022E\n\016complete_quest\030\010" +
-      " \001(\0132+.POGOProtos.Data.Logs.CompleteQues" +
-      "tLogEntryH\000\022Y\n\031complete_quest_stamp_card" +
-      "\030\t \001(\01324.POGOProtos.Data.Logs.CompleteQu" +
-      "estStampCardLogEntryH\000\022g\n complete_quest" +
-      "_pokemon_encounter\030\n \001(\0132;.POGOProtos.Da" +
-      "ta.Logs.CompleteQuestPokemonEncounterLog" +
-      "EntryH\000\022L\n\017beluga_transfer\030\013 \001(\01321.POGOP" +
-      "rotos.Data.Logs.BelugaDailyTransferLogEn" +
-      "tryH\000\022;\n\topen_gift\030\014 \001(\0132&.POGOProtos.Da" +
-      "ta.Logs.OpenGiftLogEntryH\000\022;\n\tsend_gift\030" +
-      "\r \001(\0132&.POGOProtos.Data.Logs.SendGiftLog" +
-      "EntryH\000\0228\n\007trading\030\016 \001(\0132%.POGOProtos.Da" +
-      "ta.Logs.TradingLogEntryH\000\022K\n\022share_ex_ra" +
-      "id_pass\030\017 \001(\0132-.POGOProtos.Data.Logs.Sha" +
-      "reExRaidPassLogEntryH\000\022O\n\024decline_ex_rai" +
-      "d_pass\030\020 \001(\0132/.POGOProtos.Data.Logs.Decl" +
-      "ineExRaidPassLogEntryH\000\022G\n\017fitness_rewar" +
-      "ds\030\021 \001(\0132,.POGOProtos.Data.Logs.FitnessR" +
-      "ewardsLogEntryH\000\0226\n\006combat\030\022 \001(\0132$.POGOP" +
-      "rotos.Data.Logs.CombatLogEntryH\000\022E\n\016puri" +
-      "fy_pokemon\030\023 \001(\0132+.POGOProtos.Data.Logs." +
-      "PurifyPokemonLogEntryH\000\022I\n\020invasion_vict" +
-      "ory\030\024 \001(\0132-.POGOProtos.Data.Logs.Invasio" +
-      "nVictoryLogEntryH\000\022B\n\rvs_seeker_set\030\025 \001(" +
-      "\0132).POGOProtos.Data.Logs.VsSeekerSetLogE" +
-      "ntryH\000\022Y\n\031vs_seeker_complete_season\030\026 \001(" +
-      "\01324.POGOProtos.Data.Logs.VsSeekerComplet" +
-      "eSeasonLogEntryH\000\022Q\n\025vs_seeker_win_rewar" +
-      "ds\030\027 \001(\01320.POGOProtos.Data.Logs.VsSeeker" +
-      "WinRewardsLogEntryH\000B\010\n\006ActionB\002P\001b\006prot" +
-      "o3"
+      "wardsLogEntry.proto\0323POGOProtos/Data/Log" +
+      "s/BuddyConsumablesLogEntry.proto\"\225\r\n\016Act" +
+      "ionLogEntry\022\024\n\014timestamp_ms\030\001 \001(\003\022\r\n\005sfi" +
+      "da\030\002 \001(\010\022C\n\rcatch_pokemon\030\003 \001(\0132*.POGOPr" +
+      "otos.Data.Logs.CatchPokemonLogEntryH\000\022?\n" +
+      "\013fort_search\030\004 \001(\0132(.POGOProtos.Data.Log" +
+      "s.FortSearchLogEntryH\000\022C\n\rbuddy_pokemon\030" +
+      "\005 \001(\0132*.POGOProtos.Data.Logs.BuddyPokemo" +
+      "nLogEntryH\000\022A\n\014raid_rewards\030\006 \001(\0132).POGO" +
+      "Protos.Data.Logs.RaidRewardsLogEntryH\000\022I" +
+      "\n\020passcode_rewards\030\007 \001(\0132-.POGOProtos.Da" +
+      "ta.Logs.PasscodeRewardsLogEntryH\000\022E\n\016com" +
+      "plete_quest\030\010 \001(\0132+.POGOProtos.Data.Logs" +
+      ".CompleteQuestLogEntryH\000\022Y\n\031complete_que" +
+      "st_stamp_card\030\t \001(\01324.POGOProtos.Data.Lo" +
+      "gs.CompleteQuestStampCardLogEntryH\000\022g\n c" +
+      "omplete_quest_pokemon_encounter\030\n \001(\0132;." +
+      "POGOProtos.Data.Logs.CompleteQuestPokemo" +
+      "nEncounterLogEntryH\000\022L\n\017beluga_transfer\030" +
+      "\013 \001(\01321.POGOProtos.Data.Logs.BelugaDaily" +
+      "TransferLogEntryH\000\022;\n\topen_gift\030\014 \001(\0132&." +
+      "POGOProtos.Data.Logs.OpenGiftLogEntryH\000\022" +
+      ";\n\tsend_gift\030\r \001(\0132&.POGOProtos.Data.Log" +
+      "s.SendGiftLogEntryH\000\0228\n\007trading\030\016 \001(\0132%." +
+      "POGOProtos.Data.Logs.TradingLogEntryH\000\022K" +
+      "\n\022share_ex_raid_pass\030\017 \001(\0132-.POGOProtos." +
+      "Data.Logs.ShareExRaidPassLogEntryH\000\022O\n\024d" +
+      "ecline_ex_raid_pass\030\020 \001(\0132/.POGOProtos.D" +
+      "ata.Logs.DeclineExRaidPassLogEntryH\000\022G\n\017" +
+      "fitness_rewards\030\021 \001(\0132,.POGOProtos.Data." +
+      "Logs.FitnessRewardsLogEntryH\000\0226\n\006combat\030" +
+      "\022 \001(\0132$.POGOProtos.Data.Logs.CombatLogEn" +
+      "tryH\000\022E\n\016purify_pokemon\030\023 \001(\0132+.POGOProt" +
+      "os.Data.Logs.PurifyPokemonLogEntryH\000\022I\n\020" +
+      "invasion_victory\030\024 \001(\0132-.POGOProtos.Data" +
+      ".Logs.InvasionVictoryLogEntryH\000\022B\n\rvs_se" +
+      "eker_set\030\025 \001(\0132).POGOProtos.Data.Logs.Vs" +
+      "SeekerSetLogEntryH\000\022Y\n\031vs_seeker_complet" +
+      "e_season\030\026 \001(\01324.POGOProtos.Data.Logs.Vs" +
+      "SeekerCompleteSeasonLogEntryH\000\022Q\n\025vs_see" +
+      "ker_win_rewards\030\027 \001(\01320.POGOProtos.Data." +
+      "Logs.VsSeekerWinRewardsLogEntryH\000\022K\n\021bud" +
+      "dy_consumables\030\030 \001(\0132..POGOProtos.Data.L" +
+      "ogs.BuddyConsumablesLogEntryH\000B\010\n\006Action" +
+      "B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -123,13 +126,14 @@ public final class ActionLogEntryOuterClass {
           POGOProtos.Data.Logs.VsSeekerSetLogEntryOuterClass.getDescriptor(),
           POGOProtos.Data.Logs.VsSeekerCompleteSeasonLogEntryOuterClass.getDescriptor(),
           POGOProtos.Data.Logs.VsSeekerWinRewardsLogEntryOuterClass.getDescriptor(),
+          POGOProtos.Data.Logs.BuddyConsumablesLogEntryOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Data_Logs_ActionLogEntry_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Data_Logs_ActionLogEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Logs_ActionLogEntry_descriptor,
-        new java.lang.String[] { "TimestampMs", "Sfida", "CatchPokemon", "FortSearch", "BuddyPokemon", "RaidRewards", "PasscodeRewards", "CompleteQuest", "CompleteQuestStampCard", "CompleteQuestPokemonEncounter", "BelugaTransfer", "OpenGift", "SendGift", "Trading", "ShareExRaidPass", "DeclineExRaidPass", "FitnessRewards", "Combat", "PurifyPokemon", "InvasionVictory", "VsSeekerSet", "VsSeekerCompleteSeason", "VsSeekerWinRewards", "Action", });
+        new java.lang.String[] { "TimestampMs", "Sfida", "CatchPokemon", "FortSearch", "BuddyPokemon", "RaidRewards", "PasscodeRewards", "CompleteQuest", "CompleteQuestStampCard", "CompleteQuestPokemonEncounter", "BelugaTransfer", "OpenGift", "SendGift", "Trading", "ShareExRaidPass", "DeclineExRaidPass", "FitnessRewards", "Combat", "PurifyPokemon", "InvasionVictory", "VsSeekerSet", "VsSeekerCompleteSeason", "VsSeekerWinRewards", "BuddyConsumables", "Action", });
     POGOProtos.Data.Logs.CatchPokemonLogEntryOuterClass.getDescriptor();
     POGOProtos.Data.Logs.FortSearchLogEntryOuterClass.getDescriptor();
     POGOProtos.Data.Logs.BuddyPokemonLogEntryOuterClass.getDescriptor();
@@ -151,6 +155,7 @@ public final class ActionLogEntryOuterClass {
     POGOProtos.Data.Logs.VsSeekerSetLogEntryOuterClass.getDescriptor();
     POGOProtos.Data.Logs.VsSeekerCompleteSeasonLogEntryOuterClass.getDescriptor();
     POGOProtos.Data.Logs.VsSeekerWinRewardsLogEntryOuterClass.getDescriptor();
+    POGOProtos.Data.Logs.BuddyConsumablesLogEntryOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

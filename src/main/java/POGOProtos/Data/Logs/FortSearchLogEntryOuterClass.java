@@ -31,29 +31,32 @@ public final class FortSearchLogEntryOuterClass {
       "\n-POGOProtos/Data/Logs/FortSearchLogEntr" +
       "y.proto\022\024POGOProtos.Data.Logs\032!POGOProto" +
       "s/Data/PokemonData.proto\032(POGOProtos/Inv" +
-      "entory/Item/ItemData.proto\032\"POGOProtos/M" +
-      "ap/Fort/FortType.proto\032\"POGOProtos/Data/" +
-      "Gift/GiftBox.proto\"\230\004\n\022FortSearchLogEntr" +
-      "y\022?\n\006result\030\001 \001(\0162/.POGOProtos.Data.Logs" +
-      ".FortSearchLogEntry.Result\022\017\n\007fort_id\030\002 " +
-      "\001(\t\0222\n\005items\030\003 \003(\0132#.POGOProtos.Inventor" +
-      "y.Item.ItemData\022\014\n\004eggs\030\004 \001(\005\0222\n\014pokemon" +
-      "_eggs\030\005 \003(\0132\034.POGOProtos.Data.PokemonDat" +
-      "a\0220\n\tfort_type\030\006 \001(\0162\035.POGOProtos.Map.Fo" +
-      "rt.FortType\022:\n\rawarded_items\030\007 \003(\0132#.POG" +
-      "OProtos.Inventory.Item.ItemData\0228\n\013bonus" +
-      "_items\030\010 \003(\0132#.POGOProtos.Inventory.Item" +
-      ".ItemData\022=\n\020team_bonus_items\030\t \003(\0132#.PO" +
-      "GOProtos.Inventory.Item.ItemData\0221\n\ngift" +
-      "_boxes\030\n \003(\0132\035.POGOProtos.Data.Gift.Gift" +
-      "Box\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001B\002P" +
-      "\001b\006proto3"
+      "entory/Item/ItemData.proto\032#POGOProtos/I" +
+      "nventory/LootItem.proto\032\"POGOProtos/Map/" +
+      "Fort/FortType.proto\032\"POGOProtos/Data/Gif" +
+      "t/GiftBox.proto\"\312\004\n\022FortSearchLogEntry\022?" +
+      "\n\006result\030\001 \001(\0162/.POGOProtos.Data.Logs.Fo" +
+      "rtSearchLogEntry.Result\022\017\n\007fort_id\030\002 \001(\t" +
+      "\0222\n\005items\030\003 \003(\0132#.POGOProtos.Inventory.I" +
+      "tem.ItemData\022\014\n\004eggs\030\004 \001(\005\0222\n\014pokemon_eg" +
+      "gs\030\005 \003(\0132\034.POGOProtos.Data.PokemonData\0220" +
+      "\n\tfort_type\030\006 \001(\0162\035.POGOProtos.Map.Fort." +
+      "FortType\022:\n\rawarded_items\030\007 \003(\0132#.POGOPr" +
+      "otos.Inventory.Item.ItemData\0228\n\013bonus_it" +
+      "ems\030\010 \003(\0132#.POGOProtos.Inventory.Item.It" +
+      "emData\022=\n\020team_bonus_items\030\t \003(\0132#.POGOP" +
+      "rotos.Inventory.Item.ItemData\0221\n\ngift_bo" +
+      "xes\030\n \003(\0132\035.POGOProtos.Data.Gift.GiftBox" +
+      "\0220\n\010stickers\030\013 \003(\0132\036.POGOProtos.Inventor" +
+      "y.LootItem\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCE" +
+      "SS\020\001B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           POGOProtos.Data.PokemonDataOuterClass.getDescriptor(),
           POGOProtos.Inventory.Item.ItemDataOuterClass.getDescriptor(),
+          POGOProtos.Inventory.LootItemOuterClass.getDescriptor(),
           POGOProtos.Map.Fort.FortTypeOuterClass.getDescriptor(),
           POGOProtos.Data.Gift.GiftBoxOuterClass.getDescriptor(),
         });
@@ -62,9 +65,10 @@ public final class FortSearchLogEntryOuterClass {
     internal_static_POGOProtos_Data_Logs_FortSearchLogEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Logs_FortSearchLogEntry_descriptor,
-        new java.lang.String[] { "Result", "FortId", "Items", "Eggs", "PokemonEggs", "FortType", "AwardedItems", "BonusItems", "TeamBonusItems", "GiftBoxes", });
+        new java.lang.String[] { "Result", "FortId", "Items", "Eggs", "PokemonEggs", "FortType", "AwardedItems", "BonusItems", "TeamBonusItems", "GiftBoxes", "Stickers", });
     POGOProtos.Data.PokemonDataOuterClass.getDescriptor();
     POGOProtos.Inventory.Item.ItemDataOuterClass.getDescriptor();
+    POGOProtos.Inventory.LootItemOuterClass.getDescriptor();
     POGOProtos.Map.Fort.FortTypeOuterClass.getDescriptor();
     POGOProtos.Data.Gift.GiftBoxOuterClass.getDescriptor();
   }

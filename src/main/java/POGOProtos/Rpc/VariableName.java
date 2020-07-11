@@ -212,6 +212,14 @@ public enum VariableName
    * <code>VARIABLE_NAME_RAID_INVITATION_DETAILS = 1041;</code>
    */
   VARIABLE_NAME_RAID_INVITATION_DETAILS(1041),
+  /**
+   * <code>VARIABLE_NAME_LOOT_ITEMS = 1042;</code>
+   */
+  VARIABLE_NAME_LOOT_ITEMS(1042),
+  /**
+   * <code>VARIABLE_NAME_EVENT_ICON_URL = 1043;</code>
+   */
+  VARIABLE_NAME_EVENT_ICON_URL(1043),
   UNRECOGNIZED(-1),
   ;
 
@@ -419,6 +427,14 @@ public enum VariableName
    * <code>VARIABLE_NAME_RAID_INVITATION_DETAILS = 1041;</code>
    */
   public static final int VARIABLE_NAME_RAID_INVITATION_DETAILS_VALUE = 1041;
+  /**
+   * <code>VARIABLE_NAME_LOOT_ITEMS = 1042;</code>
+   */
+  public static final int VARIABLE_NAME_LOOT_ITEMS_VALUE = 1042;
+  /**
+   * <code>VARIABLE_NAME_EVENT_ICON_URL = 1043;</code>
+   */
+  public static final int VARIABLE_NAME_EVENT_ICON_URL_VALUE = 1043;
 
 
   public final int getNumber() {
@@ -496,6 +512,8 @@ public enum VariableName
       case 1039: return VARIABLE_NAME_POI_PASSCODE_REDEMPTION_RESPONSE;
       case 1040: return VARIABLE_NAME_GIFTBOX_COUNT;
       case 1041: return VARIABLE_NAME_RAID_INVITATION_DETAILS;
+      case 1042: return VARIABLE_NAME_LOOT_ITEMS;
+      case 1043: return VARIABLE_NAME_EVENT_ICON_URL;
       default: return null;
     }
   }

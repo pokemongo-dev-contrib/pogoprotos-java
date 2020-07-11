@@ -57,327 +57,352 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             POGOProtos.Rpc.WithPokemonTypeProto.Builder subBuilder = null;
-            if (withPokemonType_ != null) {
-              subBuilder = withPokemonType_.toBuilder();
+            if (conditionCase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.WithPokemonTypeProto) condition_).toBuilder();
             }
-            withPokemonType_ = input.readMessage(POGOProtos.Rpc.WithPokemonTypeProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithPokemonTypeProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withPokemonType_);
-              withPokemonType_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithPokemonTypeProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 2;
             break;
           }
           case 26: {
             POGOProtos.Rpc.WithPokemonCategoryProto.Builder subBuilder = null;
-            if (withPokemonCategory_ != null) {
-              subBuilder = withPokemonCategory_.toBuilder();
+            if (conditionCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.WithPokemonCategoryProto) condition_).toBuilder();
             }
-            withPokemonCategory_ = input.readMessage(POGOProtos.Rpc.WithPokemonCategoryProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithPokemonCategoryProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withPokemonCategory_);
-              withPokemonCategory_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithPokemonCategoryProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 3;
             break;
           }
           case 34: {
             POGOProtos.Rpc.WithWeatherBoostProto.Builder subBuilder = null;
-            if (withWeatherBoost_ != null) {
-              subBuilder = withWeatherBoost_.toBuilder();
+            if (conditionCase_ == 4) {
+              subBuilder = ((POGOProtos.Rpc.WithWeatherBoostProto) condition_).toBuilder();
             }
-            withWeatherBoost_ = input.readMessage(POGOProtos.Rpc.WithWeatherBoostProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithWeatherBoostProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withWeatherBoost_);
-              withWeatherBoost_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithWeatherBoostProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 4;
             break;
           }
           case 42: {
             POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder subBuilder = null;
-            if (withDailyCaptureBonus_ != null) {
-              subBuilder = withDailyCaptureBonus_.toBuilder();
+            if (conditionCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.WithDailyCaptureBonusProto) condition_).toBuilder();
             }
-            withDailyCaptureBonus_ = input.readMessage(POGOProtos.Rpc.WithDailyCaptureBonusProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithDailyCaptureBonusProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withDailyCaptureBonus_);
-              withDailyCaptureBonus_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithDailyCaptureBonusProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 5;
             break;
           }
           case 50: {
             POGOProtos.Rpc.WithDailySpinBonusProto.Builder subBuilder = null;
-            if (withDailySpinBonus_ != null) {
-              subBuilder = withDailySpinBonus_.toBuilder();
+            if (conditionCase_ == 6) {
+              subBuilder = ((POGOProtos.Rpc.WithDailySpinBonusProto) condition_).toBuilder();
             }
-            withDailySpinBonus_ = input.readMessage(POGOProtos.Rpc.WithDailySpinBonusProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithDailySpinBonusProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withDailySpinBonus_);
-              withDailySpinBonus_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithDailySpinBonusProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 6;
             break;
           }
           case 58: {
             POGOProtos.Rpc.WithWinRaidStatusProto.Builder subBuilder = null;
-            if (withWinRaidStatus_ != null) {
-              subBuilder = withWinRaidStatus_.toBuilder();
+            if (conditionCase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.WithWinRaidStatusProto) condition_).toBuilder();
             }
-            withWinRaidStatus_ = input.readMessage(POGOProtos.Rpc.WithWinRaidStatusProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithWinRaidStatusProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withWinRaidStatus_);
-              withWinRaidStatus_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithWinRaidStatusProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 7;
             break;
           }
           case 66: {
             POGOProtos.Rpc.WithRaidLevelProto.Builder subBuilder = null;
-            if (withRaidLevel_ != null) {
-              subBuilder = withRaidLevel_.toBuilder();
+            if (conditionCase_ == 8) {
+              subBuilder = ((POGOProtos.Rpc.WithRaidLevelProto) condition_).toBuilder();
             }
-            withRaidLevel_ = input.readMessage(POGOProtos.Rpc.WithRaidLevelProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithRaidLevelProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withRaidLevel_);
-              withRaidLevel_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithRaidLevelProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 8;
             break;
           }
           case 74: {
             POGOProtos.Rpc.WithThrowTypeProto.Builder subBuilder = null;
-            if (withThrowType_ != null) {
-              subBuilder = withThrowType_.toBuilder();
+            if (conditionCase_ == 9) {
+              subBuilder = ((POGOProtos.Rpc.WithThrowTypeProto) condition_).toBuilder();
             }
-            withThrowType_ = input.readMessage(POGOProtos.Rpc.WithThrowTypeProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithThrowTypeProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withThrowType_);
-              withThrowType_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithThrowTypeProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 9;
             break;
           }
           case 82: {
             POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder subBuilder = null;
-            if (withWinGymBattleStatus_ != null) {
-              subBuilder = withWinGymBattleStatus_.toBuilder();
+            if (conditionCase_ == 10) {
+              subBuilder = ((POGOProtos.Rpc.WithWinGymBattleStatusProto) condition_).toBuilder();
             }
-            withWinGymBattleStatus_ = input.readMessage(POGOProtos.Rpc.WithWinGymBattleStatusProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithWinGymBattleStatusProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withWinGymBattleStatus_);
-              withWinGymBattleStatus_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithWinGymBattleStatusProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 10;
             break;
           }
           case 90: {
             POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder subBuilder = null;
-            if (withSuperEffectiveChargeMove_ != null) {
-              subBuilder = withSuperEffectiveChargeMove_.toBuilder();
+            if (conditionCase_ == 11) {
+              subBuilder = ((POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto) condition_).toBuilder();
             }
-            withSuperEffectiveChargeMove_ = input.readMessage(POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withSuperEffectiveChargeMove_);
-              withSuperEffectiveChargeMove_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 11;
             break;
           }
           case 98: {
             POGOProtos.Rpc.WithItemProto.Builder subBuilder = null;
-            if (withItem_ != null) {
-              subBuilder = withItem_.toBuilder();
+            if (conditionCase_ == 12) {
+              subBuilder = ((POGOProtos.Rpc.WithItemProto) condition_).toBuilder();
             }
-            withItem_ = input.readMessage(POGOProtos.Rpc.WithItemProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithItemProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withItem_);
-              withItem_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithItemProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 12;
             break;
           }
           case 106: {
             POGOProtos.Rpc.WithUniquePokestopProto.Builder subBuilder = null;
-            if (withUniquePokestop_ != null) {
-              subBuilder = withUniquePokestop_.toBuilder();
+            if (conditionCase_ == 13) {
+              subBuilder = ((POGOProtos.Rpc.WithUniquePokestopProto) condition_).toBuilder();
             }
-            withUniquePokestop_ = input.readMessage(POGOProtos.Rpc.WithUniquePokestopProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithUniquePokestopProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withUniquePokestop_);
-              withUniquePokestop_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithUniquePokestopProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 13;
             break;
           }
           case 114: {
             POGOProtos.Rpc.WithQuestContextProto.Builder subBuilder = null;
-            if (withQuestContext_ != null) {
-              subBuilder = withQuestContext_.toBuilder();
+            if (conditionCase_ == 14) {
+              subBuilder = ((POGOProtos.Rpc.WithQuestContextProto) condition_).toBuilder();
             }
-            withQuestContext_ = input.readMessage(POGOProtos.Rpc.WithQuestContextProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithQuestContextProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withQuestContext_);
-              withQuestContext_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithQuestContextProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 14;
             break;
           }
           case 122: {
             POGOProtos.Rpc.WithBadgeTypeProto.Builder subBuilder = null;
-            if (withBadgeType_ != null) {
-              subBuilder = withBadgeType_.toBuilder();
+            if (conditionCase_ == 15) {
+              subBuilder = ((POGOProtos.Rpc.WithBadgeTypeProto) condition_).toBuilder();
             }
-            withBadgeType_ = input.readMessage(POGOProtos.Rpc.WithBadgeTypeProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithBadgeTypeProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withBadgeType_);
-              withBadgeType_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithBadgeTypeProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 15;
             break;
           }
           case 130: {
             POGOProtos.Rpc.WithPlayerLevelProto.Builder subBuilder = null;
-            if (withPlayerLevel_ != null) {
-              subBuilder = withPlayerLevel_.toBuilder();
+            if (conditionCase_ == 16) {
+              subBuilder = ((POGOProtos.Rpc.WithPlayerLevelProto) condition_).toBuilder();
             }
-            withPlayerLevel_ = input.readMessage(POGOProtos.Rpc.WithPlayerLevelProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithPlayerLevelProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withPlayerLevel_);
-              withPlayerLevel_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithPlayerLevelProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 16;
             break;
           }
           case 138: {
             POGOProtos.Rpc.WithWinBattleStatusProto.Builder subBuilder = null;
-            if (withWinBattleStatus_ != null) {
-              subBuilder = withWinBattleStatus_.toBuilder();
+            if (conditionCase_ == 17) {
+              subBuilder = ((POGOProtos.Rpc.WithWinBattleStatusProto) condition_).toBuilder();
             }
-            withWinBattleStatus_ = input.readMessage(POGOProtos.Rpc.WithWinBattleStatusProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithWinBattleStatusProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withWinBattleStatus_);
-              withWinBattleStatus_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithWinBattleStatusProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 17;
             break;
           }
           case 146: {
             POGOProtos.Rpc.WithUniquePokemonProto.Builder subBuilder = null;
-            if (withUniquePokemon_ != null) {
-              subBuilder = withUniquePokemon_.toBuilder();
+            if (conditionCase_ == 18) {
+              subBuilder = ((POGOProtos.Rpc.WithUniquePokemonProto) condition_).toBuilder();
             }
-            withUniquePokemon_ = input.readMessage(POGOProtos.Rpc.WithUniquePokemonProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithUniquePokemonProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withUniquePokemon_);
-              withUniquePokemon_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithUniquePokemonProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 18;
             break;
           }
           case 154: {
             POGOProtos.Rpc.WithNpcCombatProto.Builder subBuilder = null;
-            if (withNpcCombat_ != null) {
-              subBuilder = withNpcCombat_.toBuilder();
+            if (conditionCase_ == 19) {
+              subBuilder = ((POGOProtos.Rpc.WithNpcCombatProto) condition_).toBuilder();
             }
-            withNpcCombat_ = input.readMessage(POGOProtos.Rpc.WithNpcCombatProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithNpcCombatProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withNpcCombat_);
-              withNpcCombat_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithNpcCombatProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 19;
             break;
           }
           case 162: {
             POGOProtos.Rpc.WithPvpCombatProto.Builder subBuilder = null;
-            if (withPvpCombat_ != null) {
-              subBuilder = withPvpCombat_.toBuilder();
+            if (conditionCase_ == 20) {
+              subBuilder = ((POGOProtos.Rpc.WithPvpCombatProto) condition_).toBuilder();
             }
-            withPvpCombat_ = input.readMessage(POGOProtos.Rpc.WithPvpCombatProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithPvpCombatProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withPvpCombat_);
-              withPvpCombat_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithPvpCombatProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 20;
             break;
           }
           case 170: {
             POGOProtos.Rpc.WithLocationProto.Builder subBuilder = null;
-            if (withLocation_ != null) {
-              subBuilder = withLocation_.toBuilder();
+            if (conditionCase_ == 21) {
+              subBuilder = ((POGOProtos.Rpc.WithLocationProto) condition_).toBuilder();
             }
-            withLocation_ = input.readMessage(POGOProtos.Rpc.WithLocationProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithLocationProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withLocation_);
-              withLocation_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithLocationProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 21;
             break;
           }
           case 178: {
             POGOProtos.Rpc.WithDistanceProto.Builder subBuilder = null;
-            if (withDistance_ != null) {
-              subBuilder = withDistance_.toBuilder();
+            if (conditionCase_ == 22) {
+              subBuilder = ((POGOProtos.Rpc.WithDistanceProto) condition_).toBuilder();
             }
-            withDistance_ = input.readMessage(POGOProtos.Rpc.WithDistanceProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithDistanceProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withDistance_);
-              withDistance_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithDistanceProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 22;
             break;
           }
           case 186: {
             POGOProtos.Rpc.WithInvasionCharacterProto.Builder subBuilder = null;
-            if (withInvasionCharacter_ != null) {
-              subBuilder = withInvasionCharacter_.toBuilder();
+            if (conditionCase_ == 23) {
+              subBuilder = ((POGOProtos.Rpc.WithInvasionCharacterProto) condition_).toBuilder();
             }
-            withInvasionCharacter_ = input.readMessage(POGOProtos.Rpc.WithInvasionCharacterProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithInvasionCharacterProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withInvasionCharacter_);
-              withInvasionCharacter_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithInvasionCharacterProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 23;
             break;
           }
           case 194: {
             POGOProtos.Rpc.WithPokemonAlignmentProto.Builder subBuilder = null;
-            if (withPokemonAlignment_ != null) {
-              subBuilder = withPokemonAlignment_.toBuilder();
+            if (conditionCase_ == 24) {
+              subBuilder = ((POGOProtos.Rpc.WithPokemonAlignmentProto) condition_).toBuilder();
             }
-            withPokemonAlignment_ = input.readMessage(POGOProtos.Rpc.WithPokemonAlignmentProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithPokemonAlignmentProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withPokemonAlignment_);
-              withPokemonAlignment_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithPokemonAlignmentProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 24;
             break;
           }
           case 202: {
             POGOProtos.Rpc.WithBuddyProto.Builder subBuilder = null;
-            if (withBuddy_ != null) {
-              subBuilder = withBuddy_.toBuilder();
+            if (conditionCase_ == 25) {
+              subBuilder = ((POGOProtos.Rpc.WithBuddyProto) condition_).toBuilder();
             }
-            withBuddy_ = input.readMessage(POGOProtos.Rpc.WithBuddyProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithBuddyProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withBuddy_);
-              withBuddy_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithBuddyProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 25;
             break;
           }
           case 210: {
             POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder subBuilder = null;
-            if (withDailyBuddyAffection_ != null) {
-              subBuilder = withDailyBuddyAffection_.toBuilder();
+            if (conditionCase_ == 26) {
+              subBuilder = ((POGOProtos.Rpc.WithDailyBuddyAffectionProto) condition_).toBuilder();
             }
-            withDailyBuddyAffection_ = input.readMessage(POGOProtos.Rpc.WithDailyBuddyAffectionProto.parser(), extensionRegistry);
+            condition_ =
+                input.readMessage(POGOProtos.Rpc.WithDailyBuddyAffectionProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(withDailyBuddyAffection_);
-              withDailyBuddyAffection_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.WithDailyBuddyAffectionProto) condition_);
+              condition_ = subBuilder.buildPartial();
             }
-
+            conditionCase_ = 26;
             break;
           }
           default: {
@@ -777,6 +802,793 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.QuestConditionProto.ConditionType)
   }
 
+  private int conditionCase_ = 0;
+  private java.lang.Object condition_;
+  public enum ConditionCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    WITH_POKEMON_TYPE(2),
+    WITH_POKEMON_CATEGORY(3),
+    WITH_WEATHER_BOOST(4),
+    WITH_DAILY_CAPTURE_BONUS(5),
+    WITH_DAILY_SPIN_BONUS(6),
+    WITH_WIN_RAID_STATUS(7),
+    WITH_RAID_LEVEL(8),
+    WITH_THROW_TYPE(9),
+    WITH_WIN_GYM_BATTLE_STATUS(10),
+    WITH_SUPER_EFFECTIVE_CHARGE_MOVE(11),
+    WITH_ITEM(12),
+    WITH_UNIQUE_POKESTOP(13),
+    WITH_QUEST_CONTEXT(14),
+    WITH_BADGE_TYPE(15),
+    WITH_PLAYER_LEVEL(16),
+    WITH_WIN_BATTLE_STATUS(17),
+    WITH_UNIQUE_POKEMON(18),
+    WITH_NPC_COMBAT(19),
+    WITH_PVP_COMBAT(20),
+    WITH_LOCATION(21),
+    WITH_DISTANCE(22),
+    WITH_INVASION_CHARACTER(23),
+    WITH_POKEMON_ALIGNMENT(24),
+    WITH_BUDDY(25),
+    WITH_DAILY_BUDDY_AFFECTION(26),
+    CONDITION_NOT_SET(0);
+    private final int value;
+    private ConditionCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static ConditionCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static ConditionCase forNumber(int value) {
+      switch (value) {
+        case 2: return WITH_POKEMON_TYPE;
+        case 3: return WITH_POKEMON_CATEGORY;
+        case 4: return WITH_WEATHER_BOOST;
+        case 5: return WITH_DAILY_CAPTURE_BONUS;
+        case 6: return WITH_DAILY_SPIN_BONUS;
+        case 7: return WITH_WIN_RAID_STATUS;
+        case 8: return WITH_RAID_LEVEL;
+        case 9: return WITH_THROW_TYPE;
+        case 10: return WITH_WIN_GYM_BATTLE_STATUS;
+        case 11: return WITH_SUPER_EFFECTIVE_CHARGE_MOVE;
+        case 12: return WITH_ITEM;
+        case 13: return WITH_UNIQUE_POKESTOP;
+        case 14: return WITH_QUEST_CONTEXT;
+        case 15: return WITH_BADGE_TYPE;
+        case 16: return WITH_PLAYER_LEVEL;
+        case 17: return WITH_WIN_BATTLE_STATUS;
+        case 18: return WITH_UNIQUE_POKEMON;
+        case 19: return WITH_NPC_COMBAT;
+        case 20: return WITH_PVP_COMBAT;
+        case 21: return WITH_LOCATION;
+        case 22: return WITH_DISTANCE;
+        case 23: return WITH_INVASION_CHARACTER;
+        case 24: return WITH_POKEMON_ALIGNMENT;
+        case 25: return WITH_BUDDY;
+        case 26: return WITH_DAILY_BUDDY_AFFECTION;
+        case 0: return CONDITION_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public ConditionCase
+  getConditionCase() {
+    return ConditionCase.forNumber(
+        conditionCase_);
+  }
+
+  public static final int WITH_POKEMON_TYPE_FIELD_NUMBER = 2;
+  /**
+   * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+   * @return Whether the withPokemonType field is set.
+   */
+  public boolean hasWithPokemonType() {
+    return conditionCase_ == 2;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+   * @return The withPokemonType.
+   */
+  public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
+    if (conditionCase_ == 2) {
+       return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+    }
+    return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+   */
+  public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
+    if (conditionCase_ == 2) {
+       return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+    }
+    return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+  }
+
+  public static final int WITH_POKEMON_CATEGORY_FIELD_NUMBER = 3;
+  /**
+   * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+   * @return Whether the withPokemonCategory field is set.
+   */
+  public boolean hasWithPokemonCategory() {
+    return conditionCase_ == 3;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+   * @return The withPokemonCategory.
+   */
+  public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
+    if (conditionCase_ == 3) {
+       return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+    }
+    return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+   */
+  public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
+    if (conditionCase_ == 3) {
+       return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+    }
+    return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+  }
+
+  public static final int WITH_WEATHER_BOOST_FIELD_NUMBER = 4;
+  /**
+   * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+   * @return Whether the withWeatherBoost field is set.
+   */
+  public boolean hasWithWeatherBoost() {
+    return conditionCase_ == 4;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+   * @return The withWeatherBoost.
+   */
+  public POGOProtos.Rpc.WithWeatherBoostProto getWithWeatherBoost() {
+    if (conditionCase_ == 4) {
+       return (POGOProtos.Rpc.WithWeatherBoostProto) condition_;
+    }
+    return POGOProtos.Rpc.WithWeatherBoostProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+   */
+  public POGOProtos.Rpc.WithWeatherBoostProtoOrBuilder getWithWeatherBoostOrBuilder() {
+    if (conditionCase_ == 4) {
+       return (POGOProtos.Rpc.WithWeatherBoostProto) condition_;
+    }
+    return POGOProtos.Rpc.WithWeatherBoostProto.getDefaultInstance();
+  }
+
+  public static final int WITH_DAILY_CAPTURE_BONUS_FIELD_NUMBER = 5;
+  /**
+   * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+   * @return Whether the withDailyCaptureBonus field is set.
+   */
+  public boolean hasWithDailyCaptureBonus() {
+    return conditionCase_ == 5;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+   * @return The withDailyCaptureBonus.
+   */
+  public POGOProtos.Rpc.WithDailyCaptureBonusProto getWithDailyCaptureBonus() {
+    if (conditionCase_ == 5) {
+       return (POGOProtos.Rpc.WithDailyCaptureBonusProto) condition_;
+    }
+    return POGOProtos.Rpc.WithDailyCaptureBonusProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+   */
+  public POGOProtos.Rpc.WithDailyCaptureBonusProtoOrBuilder getWithDailyCaptureBonusOrBuilder() {
+    if (conditionCase_ == 5) {
+       return (POGOProtos.Rpc.WithDailyCaptureBonusProto) condition_;
+    }
+    return POGOProtos.Rpc.WithDailyCaptureBonusProto.getDefaultInstance();
+  }
+
+  public static final int WITH_DAILY_SPIN_BONUS_FIELD_NUMBER = 6;
+  /**
+   * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+   * @return Whether the withDailySpinBonus field is set.
+   */
+  public boolean hasWithDailySpinBonus() {
+    return conditionCase_ == 6;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+   * @return The withDailySpinBonus.
+   */
+  public POGOProtos.Rpc.WithDailySpinBonusProto getWithDailySpinBonus() {
+    if (conditionCase_ == 6) {
+       return (POGOProtos.Rpc.WithDailySpinBonusProto) condition_;
+    }
+    return POGOProtos.Rpc.WithDailySpinBonusProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+   */
+  public POGOProtos.Rpc.WithDailySpinBonusProtoOrBuilder getWithDailySpinBonusOrBuilder() {
+    if (conditionCase_ == 6) {
+       return (POGOProtos.Rpc.WithDailySpinBonusProto) condition_;
+    }
+    return POGOProtos.Rpc.WithDailySpinBonusProto.getDefaultInstance();
+  }
+
+  public static final int WITH_WIN_RAID_STATUS_FIELD_NUMBER = 7;
+  /**
+   * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+   * @return Whether the withWinRaidStatus field is set.
+   */
+  public boolean hasWithWinRaidStatus() {
+    return conditionCase_ == 7;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+   * @return The withWinRaidStatus.
+   */
+  public POGOProtos.Rpc.WithWinRaidStatusProto getWithWinRaidStatus() {
+    if (conditionCase_ == 7) {
+       return (POGOProtos.Rpc.WithWinRaidStatusProto) condition_;
+    }
+    return POGOProtos.Rpc.WithWinRaidStatusProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+   */
+  public POGOProtos.Rpc.WithWinRaidStatusProtoOrBuilder getWithWinRaidStatusOrBuilder() {
+    if (conditionCase_ == 7) {
+       return (POGOProtos.Rpc.WithWinRaidStatusProto) condition_;
+    }
+    return POGOProtos.Rpc.WithWinRaidStatusProto.getDefaultInstance();
+  }
+
+  public static final int WITH_RAID_LEVEL_FIELD_NUMBER = 8;
+  /**
+   * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+   * @return Whether the withRaidLevel field is set.
+   */
+  public boolean hasWithRaidLevel() {
+    return conditionCase_ == 8;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+   * @return The withRaidLevel.
+   */
+  public POGOProtos.Rpc.WithRaidLevelProto getWithRaidLevel() {
+    if (conditionCase_ == 8) {
+       return (POGOProtos.Rpc.WithRaidLevelProto) condition_;
+    }
+    return POGOProtos.Rpc.WithRaidLevelProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+   */
+  public POGOProtos.Rpc.WithRaidLevelProtoOrBuilder getWithRaidLevelOrBuilder() {
+    if (conditionCase_ == 8) {
+       return (POGOProtos.Rpc.WithRaidLevelProto) condition_;
+    }
+    return POGOProtos.Rpc.WithRaidLevelProto.getDefaultInstance();
+  }
+
+  public static final int WITH_THROW_TYPE_FIELD_NUMBER = 9;
+  /**
+   * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+   * @return Whether the withThrowType field is set.
+   */
+  public boolean hasWithThrowType() {
+    return conditionCase_ == 9;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+   * @return The withThrowType.
+   */
+  public POGOProtos.Rpc.WithThrowTypeProto getWithThrowType() {
+    if (conditionCase_ == 9) {
+       return (POGOProtos.Rpc.WithThrowTypeProto) condition_;
+    }
+    return POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+   */
+  public POGOProtos.Rpc.WithThrowTypeProtoOrBuilder getWithThrowTypeOrBuilder() {
+    if (conditionCase_ == 9) {
+       return (POGOProtos.Rpc.WithThrowTypeProto) condition_;
+    }
+    return POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance();
+  }
+
+  public static final int WITH_WIN_GYM_BATTLE_STATUS_FIELD_NUMBER = 10;
+  /**
+   * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+   * @return Whether the withWinGymBattleStatus field is set.
+   */
+  public boolean hasWithWinGymBattleStatus() {
+    return conditionCase_ == 10;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+   * @return The withWinGymBattleStatus.
+   */
+  public POGOProtos.Rpc.WithWinGymBattleStatusProto getWithWinGymBattleStatus() {
+    if (conditionCase_ == 10) {
+       return (POGOProtos.Rpc.WithWinGymBattleStatusProto) condition_;
+    }
+    return POGOProtos.Rpc.WithWinGymBattleStatusProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+   */
+  public POGOProtos.Rpc.WithWinGymBattleStatusProtoOrBuilder getWithWinGymBattleStatusOrBuilder() {
+    if (conditionCase_ == 10) {
+       return (POGOProtos.Rpc.WithWinGymBattleStatusProto) condition_;
+    }
+    return POGOProtos.Rpc.WithWinGymBattleStatusProto.getDefaultInstance();
+  }
+
+  public static final int WITH_SUPER_EFFECTIVE_CHARGE_MOVE_FIELD_NUMBER = 11;
+  /**
+   * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+   * @return Whether the withSuperEffectiveChargeMove field is set.
+   */
+  public boolean hasWithSuperEffectiveChargeMove() {
+    return conditionCase_ == 11;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+   * @return The withSuperEffectiveChargeMove.
+   */
+  public POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto getWithSuperEffectiveChargeMove() {
+    if (conditionCase_ == 11) {
+       return (POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto) condition_;
+    }
+    return POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+   */
+  public POGOProtos.Rpc.WithSuperEffectiveChargeMoveProtoOrBuilder getWithSuperEffectiveChargeMoveOrBuilder() {
+    if (conditionCase_ == 11) {
+       return (POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto) condition_;
+    }
+    return POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.getDefaultInstance();
+  }
+
+  public static final int WITH_ITEM_FIELD_NUMBER = 12;
+  /**
+   * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+   * @return Whether the withItem field is set.
+   */
+  public boolean hasWithItem() {
+    return conditionCase_ == 12;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+   * @return The withItem.
+   */
+  public POGOProtos.Rpc.WithItemProto getWithItem() {
+    if (conditionCase_ == 12) {
+       return (POGOProtos.Rpc.WithItemProto) condition_;
+    }
+    return POGOProtos.Rpc.WithItemProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+   */
+  public POGOProtos.Rpc.WithItemProtoOrBuilder getWithItemOrBuilder() {
+    if (conditionCase_ == 12) {
+       return (POGOProtos.Rpc.WithItemProto) condition_;
+    }
+    return POGOProtos.Rpc.WithItemProto.getDefaultInstance();
+  }
+
+  public static final int WITH_UNIQUE_POKESTOP_FIELD_NUMBER = 13;
+  /**
+   * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+   * @return Whether the withUniquePokestop field is set.
+   */
+  public boolean hasWithUniquePokestop() {
+    return conditionCase_ == 13;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+   * @return The withUniquePokestop.
+   */
+  public POGOProtos.Rpc.WithUniquePokestopProto getWithUniquePokestop() {
+    if (conditionCase_ == 13) {
+       return (POGOProtos.Rpc.WithUniquePokestopProto) condition_;
+    }
+    return POGOProtos.Rpc.WithUniquePokestopProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+   */
+  public POGOProtos.Rpc.WithUniquePokestopProtoOrBuilder getWithUniquePokestopOrBuilder() {
+    if (conditionCase_ == 13) {
+       return (POGOProtos.Rpc.WithUniquePokestopProto) condition_;
+    }
+    return POGOProtos.Rpc.WithUniquePokestopProto.getDefaultInstance();
+  }
+
+  public static final int WITH_QUEST_CONTEXT_FIELD_NUMBER = 14;
+  /**
+   * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+   * @return Whether the withQuestContext field is set.
+   */
+  public boolean hasWithQuestContext() {
+    return conditionCase_ == 14;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+   * @return The withQuestContext.
+   */
+  public POGOProtos.Rpc.WithQuestContextProto getWithQuestContext() {
+    if (conditionCase_ == 14) {
+       return (POGOProtos.Rpc.WithQuestContextProto) condition_;
+    }
+    return POGOProtos.Rpc.WithQuestContextProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+   */
+  public POGOProtos.Rpc.WithQuestContextProtoOrBuilder getWithQuestContextOrBuilder() {
+    if (conditionCase_ == 14) {
+       return (POGOProtos.Rpc.WithQuestContextProto) condition_;
+    }
+    return POGOProtos.Rpc.WithQuestContextProto.getDefaultInstance();
+  }
+
+  public static final int WITH_BADGE_TYPE_FIELD_NUMBER = 15;
+  /**
+   * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+   * @return Whether the withBadgeType field is set.
+   */
+  public boolean hasWithBadgeType() {
+    return conditionCase_ == 15;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+   * @return The withBadgeType.
+   */
+  public POGOProtos.Rpc.WithBadgeTypeProto getWithBadgeType() {
+    if (conditionCase_ == 15) {
+       return (POGOProtos.Rpc.WithBadgeTypeProto) condition_;
+    }
+    return POGOProtos.Rpc.WithBadgeTypeProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+   */
+  public POGOProtos.Rpc.WithBadgeTypeProtoOrBuilder getWithBadgeTypeOrBuilder() {
+    if (conditionCase_ == 15) {
+       return (POGOProtos.Rpc.WithBadgeTypeProto) condition_;
+    }
+    return POGOProtos.Rpc.WithBadgeTypeProto.getDefaultInstance();
+  }
+
+  public static final int WITH_PLAYER_LEVEL_FIELD_NUMBER = 16;
+  /**
+   * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+   * @return Whether the withPlayerLevel field is set.
+   */
+  public boolean hasWithPlayerLevel() {
+    return conditionCase_ == 16;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+   * @return The withPlayerLevel.
+   */
+  public POGOProtos.Rpc.WithPlayerLevelProto getWithPlayerLevel() {
+    if (conditionCase_ == 16) {
+       return (POGOProtos.Rpc.WithPlayerLevelProto) condition_;
+    }
+    return POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+   */
+  public POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder getWithPlayerLevelOrBuilder() {
+    if (conditionCase_ == 16) {
+       return (POGOProtos.Rpc.WithPlayerLevelProto) condition_;
+    }
+    return POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+  }
+
+  public static final int WITH_WIN_BATTLE_STATUS_FIELD_NUMBER = 17;
+  /**
+   * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+   * @return Whether the withWinBattleStatus field is set.
+   */
+  public boolean hasWithWinBattleStatus() {
+    return conditionCase_ == 17;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+   * @return The withWinBattleStatus.
+   */
+  public POGOProtos.Rpc.WithWinBattleStatusProto getWithWinBattleStatus() {
+    if (conditionCase_ == 17) {
+       return (POGOProtos.Rpc.WithWinBattleStatusProto) condition_;
+    }
+    return POGOProtos.Rpc.WithWinBattleStatusProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+   */
+  public POGOProtos.Rpc.WithWinBattleStatusProtoOrBuilder getWithWinBattleStatusOrBuilder() {
+    if (conditionCase_ == 17) {
+       return (POGOProtos.Rpc.WithWinBattleStatusProto) condition_;
+    }
+    return POGOProtos.Rpc.WithWinBattleStatusProto.getDefaultInstance();
+  }
+
+  public static final int WITH_UNIQUE_POKEMON_FIELD_NUMBER = 18;
+  /**
+   * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+   * @return Whether the withUniquePokemon field is set.
+   */
+  public boolean hasWithUniquePokemon() {
+    return conditionCase_ == 18;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+   * @return The withUniquePokemon.
+   */
+  public POGOProtos.Rpc.WithUniquePokemonProto getWithUniquePokemon() {
+    if (conditionCase_ == 18) {
+       return (POGOProtos.Rpc.WithUniquePokemonProto) condition_;
+    }
+    return POGOProtos.Rpc.WithUniquePokemonProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+   */
+  public POGOProtos.Rpc.WithUniquePokemonProtoOrBuilder getWithUniquePokemonOrBuilder() {
+    if (conditionCase_ == 18) {
+       return (POGOProtos.Rpc.WithUniquePokemonProto) condition_;
+    }
+    return POGOProtos.Rpc.WithUniquePokemonProto.getDefaultInstance();
+  }
+
+  public static final int WITH_NPC_COMBAT_FIELD_NUMBER = 19;
+  /**
+   * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+   * @return Whether the withNpcCombat field is set.
+   */
+  public boolean hasWithNpcCombat() {
+    return conditionCase_ == 19;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+   * @return The withNpcCombat.
+   */
+  public POGOProtos.Rpc.WithNpcCombatProto getWithNpcCombat() {
+    if (conditionCase_ == 19) {
+       return (POGOProtos.Rpc.WithNpcCombatProto) condition_;
+    }
+    return POGOProtos.Rpc.WithNpcCombatProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+   */
+  public POGOProtos.Rpc.WithNpcCombatProtoOrBuilder getWithNpcCombatOrBuilder() {
+    if (conditionCase_ == 19) {
+       return (POGOProtos.Rpc.WithNpcCombatProto) condition_;
+    }
+    return POGOProtos.Rpc.WithNpcCombatProto.getDefaultInstance();
+  }
+
+  public static final int WITH_PVP_COMBAT_FIELD_NUMBER = 20;
+  /**
+   * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+   * @return Whether the withPvpCombat field is set.
+   */
+  public boolean hasWithPvpCombat() {
+    return conditionCase_ == 20;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+   * @return The withPvpCombat.
+   */
+  public POGOProtos.Rpc.WithPvpCombatProto getWithPvpCombat() {
+    if (conditionCase_ == 20) {
+       return (POGOProtos.Rpc.WithPvpCombatProto) condition_;
+    }
+    return POGOProtos.Rpc.WithPvpCombatProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+   */
+  public POGOProtos.Rpc.WithPvpCombatProtoOrBuilder getWithPvpCombatOrBuilder() {
+    if (conditionCase_ == 20) {
+       return (POGOProtos.Rpc.WithPvpCombatProto) condition_;
+    }
+    return POGOProtos.Rpc.WithPvpCombatProto.getDefaultInstance();
+  }
+
+  public static final int WITH_LOCATION_FIELD_NUMBER = 21;
+  /**
+   * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+   * @return Whether the withLocation field is set.
+   */
+  public boolean hasWithLocation() {
+    return conditionCase_ == 21;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+   * @return The withLocation.
+   */
+  public POGOProtos.Rpc.WithLocationProto getWithLocation() {
+    if (conditionCase_ == 21) {
+       return (POGOProtos.Rpc.WithLocationProto) condition_;
+    }
+    return POGOProtos.Rpc.WithLocationProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+   */
+  public POGOProtos.Rpc.WithLocationProtoOrBuilder getWithLocationOrBuilder() {
+    if (conditionCase_ == 21) {
+       return (POGOProtos.Rpc.WithLocationProto) condition_;
+    }
+    return POGOProtos.Rpc.WithLocationProto.getDefaultInstance();
+  }
+
+  public static final int WITH_DISTANCE_FIELD_NUMBER = 22;
+  /**
+   * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+   * @return Whether the withDistance field is set.
+   */
+  public boolean hasWithDistance() {
+    return conditionCase_ == 22;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+   * @return The withDistance.
+   */
+  public POGOProtos.Rpc.WithDistanceProto getWithDistance() {
+    if (conditionCase_ == 22) {
+       return (POGOProtos.Rpc.WithDistanceProto) condition_;
+    }
+    return POGOProtos.Rpc.WithDistanceProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+   */
+  public POGOProtos.Rpc.WithDistanceProtoOrBuilder getWithDistanceOrBuilder() {
+    if (conditionCase_ == 22) {
+       return (POGOProtos.Rpc.WithDistanceProto) condition_;
+    }
+    return POGOProtos.Rpc.WithDistanceProto.getDefaultInstance();
+  }
+
+  public static final int WITH_INVASION_CHARACTER_FIELD_NUMBER = 23;
+  /**
+   * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+   * @return Whether the withInvasionCharacter field is set.
+   */
+  public boolean hasWithInvasionCharacter() {
+    return conditionCase_ == 23;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+   * @return The withInvasionCharacter.
+   */
+  public POGOProtos.Rpc.WithInvasionCharacterProto getWithInvasionCharacter() {
+    if (conditionCase_ == 23) {
+       return (POGOProtos.Rpc.WithInvasionCharacterProto) condition_;
+    }
+    return POGOProtos.Rpc.WithInvasionCharacterProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+   */
+  public POGOProtos.Rpc.WithInvasionCharacterProtoOrBuilder getWithInvasionCharacterOrBuilder() {
+    if (conditionCase_ == 23) {
+       return (POGOProtos.Rpc.WithInvasionCharacterProto) condition_;
+    }
+    return POGOProtos.Rpc.WithInvasionCharacterProto.getDefaultInstance();
+  }
+
+  public static final int WITH_POKEMON_ALIGNMENT_FIELD_NUMBER = 24;
+  /**
+   * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+   * @return Whether the withPokemonAlignment field is set.
+   */
+  public boolean hasWithPokemonAlignment() {
+    return conditionCase_ == 24;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+   * @return The withPokemonAlignment.
+   */
+  public POGOProtos.Rpc.WithPokemonAlignmentProto getWithPokemonAlignment() {
+    if (conditionCase_ == 24) {
+       return (POGOProtos.Rpc.WithPokemonAlignmentProto) condition_;
+    }
+    return POGOProtos.Rpc.WithPokemonAlignmentProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+   */
+  public POGOProtos.Rpc.WithPokemonAlignmentProtoOrBuilder getWithPokemonAlignmentOrBuilder() {
+    if (conditionCase_ == 24) {
+       return (POGOProtos.Rpc.WithPokemonAlignmentProto) condition_;
+    }
+    return POGOProtos.Rpc.WithPokemonAlignmentProto.getDefaultInstance();
+  }
+
+  public static final int WITH_BUDDY_FIELD_NUMBER = 25;
+  /**
+   * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+   * @return Whether the withBuddy field is set.
+   */
+  public boolean hasWithBuddy() {
+    return conditionCase_ == 25;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+   * @return The withBuddy.
+   */
+  public POGOProtos.Rpc.WithBuddyProto getWithBuddy() {
+    if (conditionCase_ == 25) {
+       return (POGOProtos.Rpc.WithBuddyProto) condition_;
+    }
+    return POGOProtos.Rpc.WithBuddyProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+   */
+  public POGOProtos.Rpc.WithBuddyProtoOrBuilder getWithBuddyOrBuilder() {
+    if (conditionCase_ == 25) {
+       return (POGOProtos.Rpc.WithBuddyProto) condition_;
+    }
+    return POGOProtos.Rpc.WithBuddyProto.getDefaultInstance();
+  }
+
+  public static final int WITH_DAILY_BUDDY_AFFECTION_FIELD_NUMBER = 26;
+  /**
+   * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+   * @return Whether the withDailyBuddyAffection field is set.
+   */
+  public boolean hasWithDailyBuddyAffection() {
+    return conditionCase_ == 26;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+   * @return The withDailyBuddyAffection.
+   */
+  public POGOProtos.Rpc.WithDailyBuddyAffectionProto getWithDailyBuddyAffection() {
+    if (conditionCase_ == 26) {
+       return (POGOProtos.Rpc.WithDailyBuddyAffectionProto) condition_;
+    }
+    return POGOProtos.Rpc.WithDailyBuddyAffectionProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+   */
+  public POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder getWithDailyBuddyAffectionOrBuilder() {
+    if (conditionCase_ == 26) {
+       return (POGOProtos.Rpc.WithDailyBuddyAffectionProto) condition_;
+    }
+    return POGOProtos.Rpc.WithDailyBuddyAffectionProto.getDefaultInstance();
+  }
+
   public static final int TYPE_FIELD_NUMBER = 1;
   private int type_;
   /**
@@ -796,581 +1608,6 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.QuestConditionProto.ConditionType.UNRECOGNIZED : result;
   }
 
-  public static final int WITH_POKEMON_TYPE_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.WithPokemonTypeProto withPokemonType_;
-  /**
-   * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-   * @return Whether the withPokemonType field is set.
-   */
-  public boolean hasWithPokemonType() {
-    return withPokemonType_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-   * @return The withPokemonType.
-   */
-  public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
-    return withPokemonType_ == null ? POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance() : withPokemonType_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-   */
-  public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
-    return getWithPokemonType();
-  }
-
-  public static final int WITH_POKEMON_CATEGORY_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.WithPokemonCategoryProto withPokemonCategory_;
-  /**
-   * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-   * @return Whether the withPokemonCategory field is set.
-   */
-  public boolean hasWithPokemonCategory() {
-    return withPokemonCategory_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-   * @return The withPokemonCategory.
-   */
-  public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
-    return withPokemonCategory_ == null ? POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance() : withPokemonCategory_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-   */
-  public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
-    return getWithPokemonCategory();
-  }
-
-  public static final int WITH_WEATHER_BOOST_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.WithWeatherBoostProto withWeatherBoost_;
-  /**
-   * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-   * @return Whether the withWeatherBoost field is set.
-   */
-  public boolean hasWithWeatherBoost() {
-    return withWeatherBoost_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-   * @return The withWeatherBoost.
-   */
-  public POGOProtos.Rpc.WithWeatherBoostProto getWithWeatherBoost() {
-    return withWeatherBoost_ == null ? POGOProtos.Rpc.WithWeatherBoostProto.getDefaultInstance() : withWeatherBoost_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-   */
-  public POGOProtos.Rpc.WithWeatherBoostProtoOrBuilder getWithWeatherBoostOrBuilder() {
-    return getWithWeatherBoost();
-  }
-
-  public static final int WITH_DAILY_CAPTURE_BONUS_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.WithDailyCaptureBonusProto withDailyCaptureBonus_;
-  /**
-   * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-   * @return Whether the withDailyCaptureBonus field is set.
-   */
-  public boolean hasWithDailyCaptureBonus() {
-    return withDailyCaptureBonus_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-   * @return The withDailyCaptureBonus.
-   */
-  public POGOProtos.Rpc.WithDailyCaptureBonusProto getWithDailyCaptureBonus() {
-    return withDailyCaptureBonus_ == null ? POGOProtos.Rpc.WithDailyCaptureBonusProto.getDefaultInstance() : withDailyCaptureBonus_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-   */
-  public POGOProtos.Rpc.WithDailyCaptureBonusProtoOrBuilder getWithDailyCaptureBonusOrBuilder() {
-    return getWithDailyCaptureBonus();
-  }
-
-  public static final int WITH_DAILY_SPIN_BONUS_FIELD_NUMBER = 6;
-  private POGOProtos.Rpc.WithDailySpinBonusProto withDailySpinBonus_;
-  /**
-   * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-   * @return Whether the withDailySpinBonus field is set.
-   */
-  public boolean hasWithDailySpinBonus() {
-    return withDailySpinBonus_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-   * @return The withDailySpinBonus.
-   */
-  public POGOProtos.Rpc.WithDailySpinBonusProto getWithDailySpinBonus() {
-    return withDailySpinBonus_ == null ? POGOProtos.Rpc.WithDailySpinBonusProto.getDefaultInstance() : withDailySpinBonus_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-   */
-  public POGOProtos.Rpc.WithDailySpinBonusProtoOrBuilder getWithDailySpinBonusOrBuilder() {
-    return getWithDailySpinBonus();
-  }
-
-  public static final int WITH_WIN_RAID_STATUS_FIELD_NUMBER = 7;
-  private POGOProtos.Rpc.WithWinRaidStatusProto withWinRaidStatus_;
-  /**
-   * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-   * @return Whether the withWinRaidStatus field is set.
-   */
-  public boolean hasWithWinRaidStatus() {
-    return withWinRaidStatus_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-   * @return The withWinRaidStatus.
-   */
-  public POGOProtos.Rpc.WithWinRaidStatusProto getWithWinRaidStatus() {
-    return withWinRaidStatus_ == null ? POGOProtos.Rpc.WithWinRaidStatusProto.getDefaultInstance() : withWinRaidStatus_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-   */
-  public POGOProtos.Rpc.WithWinRaidStatusProtoOrBuilder getWithWinRaidStatusOrBuilder() {
-    return getWithWinRaidStatus();
-  }
-
-  public static final int WITH_RAID_LEVEL_FIELD_NUMBER = 8;
-  private POGOProtos.Rpc.WithRaidLevelProto withRaidLevel_;
-  /**
-   * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-   * @return Whether the withRaidLevel field is set.
-   */
-  public boolean hasWithRaidLevel() {
-    return withRaidLevel_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-   * @return The withRaidLevel.
-   */
-  public POGOProtos.Rpc.WithRaidLevelProto getWithRaidLevel() {
-    return withRaidLevel_ == null ? POGOProtos.Rpc.WithRaidLevelProto.getDefaultInstance() : withRaidLevel_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-   */
-  public POGOProtos.Rpc.WithRaidLevelProtoOrBuilder getWithRaidLevelOrBuilder() {
-    return getWithRaidLevel();
-  }
-
-  public static final int WITH_THROW_TYPE_FIELD_NUMBER = 9;
-  private POGOProtos.Rpc.WithThrowTypeProto withThrowType_;
-  /**
-   * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-   * @return Whether the withThrowType field is set.
-   */
-  public boolean hasWithThrowType() {
-    return withThrowType_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-   * @return The withThrowType.
-   */
-  public POGOProtos.Rpc.WithThrowTypeProto getWithThrowType() {
-    return withThrowType_ == null ? POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance() : withThrowType_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-   */
-  public POGOProtos.Rpc.WithThrowTypeProtoOrBuilder getWithThrowTypeOrBuilder() {
-    return getWithThrowType();
-  }
-
-  public static final int WITH_WIN_GYM_BATTLE_STATUS_FIELD_NUMBER = 10;
-  private POGOProtos.Rpc.WithWinGymBattleStatusProto withWinGymBattleStatus_;
-  /**
-   * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-   * @return Whether the withWinGymBattleStatus field is set.
-   */
-  public boolean hasWithWinGymBattleStatus() {
-    return withWinGymBattleStatus_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-   * @return The withWinGymBattleStatus.
-   */
-  public POGOProtos.Rpc.WithWinGymBattleStatusProto getWithWinGymBattleStatus() {
-    return withWinGymBattleStatus_ == null ? POGOProtos.Rpc.WithWinGymBattleStatusProto.getDefaultInstance() : withWinGymBattleStatus_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-   */
-  public POGOProtos.Rpc.WithWinGymBattleStatusProtoOrBuilder getWithWinGymBattleStatusOrBuilder() {
-    return getWithWinGymBattleStatus();
-  }
-
-  public static final int WITH_SUPER_EFFECTIVE_CHARGE_MOVE_FIELD_NUMBER = 11;
-  private POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto withSuperEffectiveChargeMove_;
-  /**
-   * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-   * @return Whether the withSuperEffectiveChargeMove field is set.
-   */
-  public boolean hasWithSuperEffectiveChargeMove() {
-    return withSuperEffectiveChargeMove_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-   * @return The withSuperEffectiveChargeMove.
-   */
-  public POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto getWithSuperEffectiveChargeMove() {
-    return withSuperEffectiveChargeMove_ == null ? POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.getDefaultInstance() : withSuperEffectiveChargeMove_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-   */
-  public POGOProtos.Rpc.WithSuperEffectiveChargeMoveProtoOrBuilder getWithSuperEffectiveChargeMoveOrBuilder() {
-    return getWithSuperEffectiveChargeMove();
-  }
-
-  public static final int WITH_ITEM_FIELD_NUMBER = 12;
-  private POGOProtos.Rpc.WithItemProto withItem_;
-  /**
-   * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-   * @return Whether the withItem field is set.
-   */
-  public boolean hasWithItem() {
-    return withItem_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-   * @return The withItem.
-   */
-  public POGOProtos.Rpc.WithItemProto getWithItem() {
-    return withItem_ == null ? POGOProtos.Rpc.WithItemProto.getDefaultInstance() : withItem_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-   */
-  public POGOProtos.Rpc.WithItemProtoOrBuilder getWithItemOrBuilder() {
-    return getWithItem();
-  }
-
-  public static final int WITH_UNIQUE_POKESTOP_FIELD_NUMBER = 13;
-  private POGOProtos.Rpc.WithUniquePokestopProto withUniquePokestop_;
-  /**
-   * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-   * @return Whether the withUniquePokestop field is set.
-   */
-  public boolean hasWithUniquePokestop() {
-    return withUniquePokestop_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-   * @return The withUniquePokestop.
-   */
-  public POGOProtos.Rpc.WithUniquePokestopProto getWithUniquePokestop() {
-    return withUniquePokestop_ == null ? POGOProtos.Rpc.WithUniquePokestopProto.getDefaultInstance() : withUniquePokestop_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-   */
-  public POGOProtos.Rpc.WithUniquePokestopProtoOrBuilder getWithUniquePokestopOrBuilder() {
-    return getWithUniquePokestop();
-  }
-
-  public static final int WITH_QUEST_CONTEXT_FIELD_NUMBER = 14;
-  private POGOProtos.Rpc.WithQuestContextProto withQuestContext_;
-  /**
-   * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-   * @return Whether the withQuestContext field is set.
-   */
-  public boolean hasWithQuestContext() {
-    return withQuestContext_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-   * @return The withQuestContext.
-   */
-  public POGOProtos.Rpc.WithQuestContextProto getWithQuestContext() {
-    return withQuestContext_ == null ? POGOProtos.Rpc.WithQuestContextProto.getDefaultInstance() : withQuestContext_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-   */
-  public POGOProtos.Rpc.WithQuestContextProtoOrBuilder getWithQuestContextOrBuilder() {
-    return getWithQuestContext();
-  }
-
-  public static final int WITH_BADGE_TYPE_FIELD_NUMBER = 15;
-  private POGOProtos.Rpc.WithBadgeTypeProto withBadgeType_;
-  /**
-   * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-   * @return Whether the withBadgeType field is set.
-   */
-  public boolean hasWithBadgeType() {
-    return withBadgeType_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-   * @return The withBadgeType.
-   */
-  public POGOProtos.Rpc.WithBadgeTypeProto getWithBadgeType() {
-    return withBadgeType_ == null ? POGOProtos.Rpc.WithBadgeTypeProto.getDefaultInstance() : withBadgeType_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-   */
-  public POGOProtos.Rpc.WithBadgeTypeProtoOrBuilder getWithBadgeTypeOrBuilder() {
-    return getWithBadgeType();
-  }
-
-  public static final int WITH_PLAYER_LEVEL_FIELD_NUMBER = 16;
-  private POGOProtos.Rpc.WithPlayerLevelProto withPlayerLevel_;
-  /**
-   * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-   * @return Whether the withPlayerLevel field is set.
-   */
-  public boolean hasWithPlayerLevel() {
-    return withPlayerLevel_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-   * @return The withPlayerLevel.
-   */
-  public POGOProtos.Rpc.WithPlayerLevelProto getWithPlayerLevel() {
-    return withPlayerLevel_ == null ? POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance() : withPlayerLevel_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-   */
-  public POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder getWithPlayerLevelOrBuilder() {
-    return getWithPlayerLevel();
-  }
-
-  public static final int WITH_WIN_BATTLE_STATUS_FIELD_NUMBER = 17;
-  private POGOProtos.Rpc.WithWinBattleStatusProto withWinBattleStatus_;
-  /**
-   * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-   * @return Whether the withWinBattleStatus field is set.
-   */
-  public boolean hasWithWinBattleStatus() {
-    return withWinBattleStatus_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-   * @return The withWinBattleStatus.
-   */
-  public POGOProtos.Rpc.WithWinBattleStatusProto getWithWinBattleStatus() {
-    return withWinBattleStatus_ == null ? POGOProtos.Rpc.WithWinBattleStatusProto.getDefaultInstance() : withWinBattleStatus_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-   */
-  public POGOProtos.Rpc.WithWinBattleStatusProtoOrBuilder getWithWinBattleStatusOrBuilder() {
-    return getWithWinBattleStatus();
-  }
-
-  public static final int WITH_UNIQUE_POKEMON_FIELD_NUMBER = 18;
-  private POGOProtos.Rpc.WithUniquePokemonProto withUniquePokemon_;
-  /**
-   * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-   * @return Whether the withUniquePokemon field is set.
-   */
-  public boolean hasWithUniquePokemon() {
-    return withUniquePokemon_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-   * @return The withUniquePokemon.
-   */
-  public POGOProtos.Rpc.WithUniquePokemonProto getWithUniquePokemon() {
-    return withUniquePokemon_ == null ? POGOProtos.Rpc.WithUniquePokemonProto.getDefaultInstance() : withUniquePokemon_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-   */
-  public POGOProtos.Rpc.WithUniquePokemonProtoOrBuilder getWithUniquePokemonOrBuilder() {
-    return getWithUniquePokemon();
-  }
-
-  public static final int WITH_NPC_COMBAT_FIELD_NUMBER = 19;
-  private POGOProtos.Rpc.WithNpcCombatProto withNpcCombat_;
-  /**
-   * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-   * @return Whether the withNpcCombat field is set.
-   */
-  public boolean hasWithNpcCombat() {
-    return withNpcCombat_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-   * @return The withNpcCombat.
-   */
-  public POGOProtos.Rpc.WithNpcCombatProto getWithNpcCombat() {
-    return withNpcCombat_ == null ? POGOProtos.Rpc.WithNpcCombatProto.getDefaultInstance() : withNpcCombat_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-   */
-  public POGOProtos.Rpc.WithNpcCombatProtoOrBuilder getWithNpcCombatOrBuilder() {
-    return getWithNpcCombat();
-  }
-
-  public static final int WITH_PVP_COMBAT_FIELD_NUMBER = 20;
-  private POGOProtos.Rpc.WithPvpCombatProto withPvpCombat_;
-  /**
-   * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-   * @return Whether the withPvpCombat field is set.
-   */
-  public boolean hasWithPvpCombat() {
-    return withPvpCombat_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-   * @return The withPvpCombat.
-   */
-  public POGOProtos.Rpc.WithPvpCombatProto getWithPvpCombat() {
-    return withPvpCombat_ == null ? POGOProtos.Rpc.WithPvpCombatProto.getDefaultInstance() : withPvpCombat_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-   */
-  public POGOProtos.Rpc.WithPvpCombatProtoOrBuilder getWithPvpCombatOrBuilder() {
-    return getWithPvpCombat();
-  }
-
-  public static final int WITH_LOCATION_FIELD_NUMBER = 21;
-  private POGOProtos.Rpc.WithLocationProto withLocation_;
-  /**
-   * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-   * @return Whether the withLocation field is set.
-   */
-  public boolean hasWithLocation() {
-    return withLocation_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-   * @return The withLocation.
-   */
-  public POGOProtos.Rpc.WithLocationProto getWithLocation() {
-    return withLocation_ == null ? POGOProtos.Rpc.WithLocationProto.getDefaultInstance() : withLocation_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-   */
-  public POGOProtos.Rpc.WithLocationProtoOrBuilder getWithLocationOrBuilder() {
-    return getWithLocation();
-  }
-
-  public static final int WITH_DISTANCE_FIELD_NUMBER = 22;
-  private POGOProtos.Rpc.WithDistanceProto withDistance_;
-  /**
-   * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-   * @return Whether the withDistance field is set.
-   */
-  public boolean hasWithDistance() {
-    return withDistance_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-   * @return The withDistance.
-   */
-  public POGOProtos.Rpc.WithDistanceProto getWithDistance() {
-    return withDistance_ == null ? POGOProtos.Rpc.WithDistanceProto.getDefaultInstance() : withDistance_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-   */
-  public POGOProtos.Rpc.WithDistanceProtoOrBuilder getWithDistanceOrBuilder() {
-    return getWithDistance();
-  }
-
-  public static final int WITH_INVASION_CHARACTER_FIELD_NUMBER = 23;
-  private POGOProtos.Rpc.WithInvasionCharacterProto withInvasionCharacter_;
-  /**
-   * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-   * @return Whether the withInvasionCharacter field is set.
-   */
-  public boolean hasWithInvasionCharacter() {
-    return withInvasionCharacter_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-   * @return The withInvasionCharacter.
-   */
-  public POGOProtos.Rpc.WithInvasionCharacterProto getWithInvasionCharacter() {
-    return withInvasionCharacter_ == null ? POGOProtos.Rpc.WithInvasionCharacterProto.getDefaultInstance() : withInvasionCharacter_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-   */
-  public POGOProtos.Rpc.WithInvasionCharacterProtoOrBuilder getWithInvasionCharacterOrBuilder() {
-    return getWithInvasionCharacter();
-  }
-
-  public static final int WITH_POKEMON_ALIGNMENT_FIELD_NUMBER = 24;
-  private POGOProtos.Rpc.WithPokemonAlignmentProto withPokemonAlignment_;
-  /**
-   * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-   * @return Whether the withPokemonAlignment field is set.
-   */
-  public boolean hasWithPokemonAlignment() {
-    return withPokemonAlignment_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-   * @return The withPokemonAlignment.
-   */
-  public POGOProtos.Rpc.WithPokemonAlignmentProto getWithPokemonAlignment() {
-    return withPokemonAlignment_ == null ? POGOProtos.Rpc.WithPokemonAlignmentProto.getDefaultInstance() : withPokemonAlignment_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-   */
-  public POGOProtos.Rpc.WithPokemonAlignmentProtoOrBuilder getWithPokemonAlignmentOrBuilder() {
-    return getWithPokemonAlignment();
-  }
-
-  public static final int WITH_BUDDY_FIELD_NUMBER = 25;
-  private POGOProtos.Rpc.WithBuddyProto withBuddy_;
-  /**
-   * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-   * @return Whether the withBuddy field is set.
-   */
-  public boolean hasWithBuddy() {
-    return withBuddy_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-   * @return The withBuddy.
-   */
-  public POGOProtos.Rpc.WithBuddyProto getWithBuddy() {
-    return withBuddy_ == null ? POGOProtos.Rpc.WithBuddyProto.getDefaultInstance() : withBuddy_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-   */
-  public POGOProtos.Rpc.WithBuddyProtoOrBuilder getWithBuddyOrBuilder() {
-    return getWithBuddy();
-  }
-
-  public static final int WITH_DAILY_BUDDY_AFFECTION_FIELD_NUMBER = 26;
-  private POGOProtos.Rpc.WithDailyBuddyAffectionProto withDailyBuddyAffection_;
-  /**
-   * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-   * @return Whether the withDailyBuddyAffection field is set.
-   */
-  public boolean hasWithDailyBuddyAffection() {
-    return withDailyBuddyAffection_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-   * @return The withDailyBuddyAffection.
-   */
-  public POGOProtos.Rpc.WithDailyBuddyAffectionProto getWithDailyBuddyAffection() {
-    return withDailyBuddyAffection_ == null ? POGOProtos.Rpc.WithDailyBuddyAffectionProto.getDefaultInstance() : withDailyBuddyAffection_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-   */
-  public POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder getWithDailyBuddyAffectionOrBuilder() {
-    return getWithDailyBuddyAffection();
-  }
-
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -1388,80 +1625,80 @@ private static final long serialVersionUID = 0L;
     if (type_ != POGOProtos.Rpc.QuestConditionProto.ConditionType.UNSET.getNumber()) {
       output.writeEnum(1, type_);
     }
-    if (withPokemonType_ != null) {
-      output.writeMessage(2, getWithPokemonType());
+    if (conditionCase_ == 2) {
+      output.writeMessage(2, (POGOProtos.Rpc.WithPokemonTypeProto) condition_);
     }
-    if (withPokemonCategory_ != null) {
-      output.writeMessage(3, getWithPokemonCategory());
+    if (conditionCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.WithPokemonCategoryProto) condition_);
     }
-    if (withWeatherBoost_ != null) {
-      output.writeMessage(4, getWithWeatherBoost());
+    if (conditionCase_ == 4) {
+      output.writeMessage(4, (POGOProtos.Rpc.WithWeatherBoostProto) condition_);
     }
-    if (withDailyCaptureBonus_ != null) {
-      output.writeMessage(5, getWithDailyCaptureBonus());
+    if (conditionCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.WithDailyCaptureBonusProto) condition_);
     }
-    if (withDailySpinBonus_ != null) {
-      output.writeMessage(6, getWithDailySpinBonus());
+    if (conditionCase_ == 6) {
+      output.writeMessage(6, (POGOProtos.Rpc.WithDailySpinBonusProto) condition_);
     }
-    if (withWinRaidStatus_ != null) {
-      output.writeMessage(7, getWithWinRaidStatus());
+    if (conditionCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.WithWinRaidStatusProto) condition_);
     }
-    if (withRaidLevel_ != null) {
-      output.writeMessage(8, getWithRaidLevel());
+    if (conditionCase_ == 8) {
+      output.writeMessage(8, (POGOProtos.Rpc.WithRaidLevelProto) condition_);
     }
-    if (withThrowType_ != null) {
-      output.writeMessage(9, getWithThrowType());
+    if (conditionCase_ == 9) {
+      output.writeMessage(9, (POGOProtos.Rpc.WithThrowTypeProto) condition_);
     }
-    if (withWinGymBattleStatus_ != null) {
-      output.writeMessage(10, getWithWinGymBattleStatus());
+    if (conditionCase_ == 10) {
+      output.writeMessage(10, (POGOProtos.Rpc.WithWinGymBattleStatusProto) condition_);
     }
-    if (withSuperEffectiveChargeMove_ != null) {
-      output.writeMessage(11, getWithSuperEffectiveChargeMove());
+    if (conditionCase_ == 11) {
+      output.writeMessage(11, (POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto) condition_);
     }
-    if (withItem_ != null) {
-      output.writeMessage(12, getWithItem());
+    if (conditionCase_ == 12) {
+      output.writeMessage(12, (POGOProtos.Rpc.WithItemProto) condition_);
     }
-    if (withUniquePokestop_ != null) {
-      output.writeMessage(13, getWithUniquePokestop());
+    if (conditionCase_ == 13) {
+      output.writeMessage(13, (POGOProtos.Rpc.WithUniquePokestopProto) condition_);
     }
-    if (withQuestContext_ != null) {
-      output.writeMessage(14, getWithQuestContext());
+    if (conditionCase_ == 14) {
+      output.writeMessage(14, (POGOProtos.Rpc.WithQuestContextProto) condition_);
     }
-    if (withBadgeType_ != null) {
-      output.writeMessage(15, getWithBadgeType());
+    if (conditionCase_ == 15) {
+      output.writeMessage(15, (POGOProtos.Rpc.WithBadgeTypeProto) condition_);
     }
-    if (withPlayerLevel_ != null) {
-      output.writeMessage(16, getWithPlayerLevel());
+    if (conditionCase_ == 16) {
+      output.writeMessage(16, (POGOProtos.Rpc.WithPlayerLevelProto) condition_);
     }
-    if (withWinBattleStatus_ != null) {
-      output.writeMessage(17, getWithWinBattleStatus());
+    if (conditionCase_ == 17) {
+      output.writeMessage(17, (POGOProtos.Rpc.WithWinBattleStatusProto) condition_);
     }
-    if (withUniquePokemon_ != null) {
-      output.writeMessage(18, getWithUniquePokemon());
+    if (conditionCase_ == 18) {
+      output.writeMessage(18, (POGOProtos.Rpc.WithUniquePokemonProto) condition_);
     }
-    if (withNpcCombat_ != null) {
-      output.writeMessage(19, getWithNpcCombat());
+    if (conditionCase_ == 19) {
+      output.writeMessage(19, (POGOProtos.Rpc.WithNpcCombatProto) condition_);
     }
-    if (withPvpCombat_ != null) {
-      output.writeMessage(20, getWithPvpCombat());
+    if (conditionCase_ == 20) {
+      output.writeMessage(20, (POGOProtos.Rpc.WithPvpCombatProto) condition_);
     }
-    if (withLocation_ != null) {
-      output.writeMessage(21, getWithLocation());
+    if (conditionCase_ == 21) {
+      output.writeMessage(21, (POGOProtos.Rpc.WithLocationProto) condition_);
     }
-    if (withDistance_ != null) {
-      output.writeMessage(22, getWithDistance());
+    if (conditionCase_ == 22) {
+      output.writeMessage(22, (POGOProtos.Rpc.WithDistanceProto) condition_);
     }
-    if (withInvasionCharacter_ != null) {
-      output.writeMessage(23, getWithInvasionCharacter());
+    if (conditionCase_ == 23) {
+      output.writeMessage(23, (POGOProtos.Rpc.WithInvasionCharacterProto) condition_);
     }
-    if (withPokemonAlignment_ != null) {
-      output.writeMessage(24, getWithPokemonAlignment());
+    if (conditionCase_ == 24) {
+      output.writeMessage(24, (POGOProtos.Rpc.WithPokemonAlignmentProto) condition_);
     }
-    if (withBuddy_ != null) {
-      output.writeMessage(25, getWithBuddy());
+    if (conditionCase_ == 25) {
+      output.writeMessage(25, (POGOProtos.Rpc.WithBuddyProto) condition_);
     }
-    if (withDailyBuddyAffection_ != null) {
-      output.writeMessage(26, getWithDailyBuddyAffection());
+    if (conditionCase_ == 26) {
+      output.writeMessage(26, (POGOProtos.Rpc.WithDailyBuddyAffectionProto) condition_);
     }
     unknownFields.writeTo(output);
   }
@@ -1476,105 +1713,105 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, type_);
     }
-    if (withPokemonType_ != null) {
+    if (conditionCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getWithPokemonType());
+        .computeMessageSize(2, (POGOProtos.Rpc.WithPokemonTypeProto) condition_);
     }
-    if (withPokemonCategory_ != null) {
+    if (conditionCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getWithPokemonCategory());
+        .computeMessageSize(3, (POGOProtos.Rpc.WithPokemonCategoryProto) condition_);
     }
-    if (withWeatherBoost_ != null) {
+    if (conditionCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getWithWeatherBoost());
+        .computeMessageSize(4, (POGOProtos.Rpc.WithWeatherBoostProto) condition_);
     }
-    if (withDailyCaptureBonus_ != null) {
+    if (conditionCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getWithDailyCaptureBonus());
+        .computeMessageSize(5, (POGOProtos.Rpc.WithDailyCaptureBonusProto) condition_);
     }
-    if (withDailySpinBonus_ != null) {
+    if (conditionCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getWithDailySpinBonus());
+        .computeMessageSize(6, (POGOProtos.Rpc.WithDailySpinBonusProto) condition_);
     }
-    if (withWinRaidStatus_ != null) {
+    if (conditionCase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getWithWinRaidStatus());
+        .computeMessageSize(7, (POGOProtos.Rpc.WithWinRaidStatusProto) condition_);
     }
-    if (withRaidLevel_ != null) {
+    if (conditionCase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getWithRaidLevel());
+        .computeMessageSize(8, (POGOProtos.Rpc.WithRaidLevelProto) condition_);
     }
-    if (withThrowType_ != null) {
+    if (conditionCase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, getWithThrowType());
+        .computeMessageSize(9, (POGOProtos.Rpc.WithThrowTypeProto) condition_);
     }
-    if (withWinGymBattleStatus_ != null) {
+    if (conditionCase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, getWithWinGymBattleStatus());
+        .computeMessageSize(10, (POGOProtos.Rpc.WithWinGymBattleStatusProto) condition_);
     }
-    if (withSuperEffectiveChargeMove_ != null) {
+    if (conditionCase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(11, getWithSuperEffectiveChargeMove());
+        .computeMessageSize(11, (POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto) condition_);
     }
-    if (withItem_ != null) {
+    if (conditionCase_ == 12) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, getWithItem());
+        .computeMessageSize(12, (POGOProtos.Rpc.WithItemProto) condition_);
     }
-    if (withUniquePokestop_ != null) {
+    if (conditionCase_ == 13) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(13, getWithUniquePokestop());
+        .computeMessageSize(13, (POGOProtos.Rpc.WithUniquePokestopProto) condition_);
     }
-    if (withQuestContext_ != null) {
+    if (conditionCase_ == 14) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(14, getWithQuestContext());
+        .computeMessageSize(14, (POGOProtos.Rpc.WithQuestContextProto) condition_);
     }
-    if (withBadgeType_ != null) {
+    if (conditionCase_ == 15) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(15, getWithBadgeType());
+        .computeMessageSize(15, (POGOProtos.Rpc.WithBadgeTypeProto) condition_);
     }
-    if (withPlayerLevel_ != null) {
+    if (conditionCase_ == 16) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(16, getWithPlayerLevel());
+        .computeMessageSize(16, (POGOProtos.Rpc.WithPlayerLevelProto) condition_);
     }
-    if (withWinBattleStatus_ != null) {
+    if (conditionCase_ == 17) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(17, getWithWinBattleStatus());
+        .computeMessageSize(17, (POGOProtos.Rpc.WithWinBattleStatusProto) condition_);
     }
-    if (withUniquePokemon_ != null) {
+    if (conditionCase_ == 18) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(18, getWithUniquePokemon());
+        .computeMessageSize(18, (POGOProtos.Rpc.WithUniquePokemonProto) condition_);
     }
-    if (withNpcCombat_ != null) {
+    if (conditionCase_ == 19) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(19, getWithNpcCombat());
+        .computeMessageSize(19, (POGOProtos.Rpc.WithNpcCombatProto) condition_);
     }
-    if (withPvpCombat_ != null) {
+    if (conditionCase_ == 20) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(20, getWithPvpCombat());
+        .computeMessageSize(20, (POGOProtos.Rpc.WithPvpCombatProto) condition_);
     }
-    if (withLocation_ != null) {
+    if (conditionCase_ == 21) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(21, getWithLocation());
+        .computeMessageSize(21, (POGOProtos.Rpc.WithLocationProto) condition_);
     }
-    if (withDistance_ != null) {
+    if (conditionCase_ == 22) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(22, getWithDistance());
+        .computeMessageSize(22, (POGOProtos.Rpc.WithDistanceProto) condition_);
     }
-    if (withInvasionCharacter_ != null) {
+    if (conditionCase_ == 23) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(23, getWithInvasionCharacter());
+        .computeMessageSize(23, (POGOProtos.Rpc.WithInvasionCharacterProto) condition_);
     }
-    if (withPokemonAlignment_ != null) {
+    if (conditionCase_ == 24) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(24, getWithPokemonAlignment());
+        .computeMessageSize(24, (POGOProtos.Rpc.WithPokemonAlignmentProto) condition_);
     }
-    if (withBuddy_ != null) {
+    if (conditionCase_ == 25) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(25, getWithBuddy());
+        .computeMessageSize(25, (POGOProtos.Rpc.WithBuddyProto) condition_);
     }
-    if (withDailyBuddyAffection_ != null) {
+    if (conditionCase_ == 26) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(26, getWithDailyBuddyAffection());
+        .computeMessageSize(26, (POGOProtos.Rpc.WithDailyBuddyAffectionProto) condition_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1592,130 +1829,110 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.QuestConditionProto other = (POGOProtos.Rpc.QuestConditionProto) obj;
 
     if (type_ != other.type_) return false;
-    if (hasWithPokemonType() != other.hasWithPokemonType()) return false;
-    if (hasWithPokemonType()) {
-      if (!getWithPokemonType()
-          .equals(other.getWithPokemonType())) return false;
-    }
-    if (hasWithPokemonCategory() != other.hasWithPokemonCategory()) return false;
-    if (hasWithPokemonCategory()) {
-      if (!getWithPokemonCategory()
-          .equals(other.getWithPokemonCategory())) return false;
-    }
-    if (hasWithWeatherBoost() != other.hasWithWeatherBoost()) return false;
-    if (hasWithWeatherBoost()) {
-      if (!getWithWeatherBoost()
-          .equals(other.getWithWeatherBoost())) return false;
-    }
-    if (hasWithDailyCaptureBonus() != other.hasWithDailyCaptureBonus()) return false;
-    if (hasWithDailyCaptureBonus()) {
-      if (!getWithDailyCaptureBonus()
-          .equals(other.getWithDailyCaptureBonus())) return false;
-    }
-    if (hasWithDailySpinBonus() != other.hasWithDailySpinBonus()) return false;
-    if (hasWithDailySpinBonus()) {
-      if (!getWithDailySpinBonus()
-          .equals(other.getWithDailySpinBonus())) return false;
-    }
-    if (hasWithWinRaidStatus() != other.hasWithWinRaidStatus()) return false;
-    if (hasWithWinRaidStatus()) {
-      if (!getWithWinRaidStatus()
-          .equals(other.getWithWinRaidStatus())) return false;
-    }
-    if (hasWithRaidLevel() != other.hasWithRaidLevel()) return false;
-    if (hasWithRaidLevel()) {
-      if (!getWithRaidLevel()
-          .equals(other.getWithRaidLevel())) return false;
-    }
-    if (hasWithThrowType() != other.hasWithThrowType()) return false;
-    if (hasWithThrowType()) {
-      if (!getWithThrowType()
-          .equals(other.getWithThrowType())) return false;
-    }
-    if (hasWithWinGymBattleStatus() != other.hasWithWinGymBattleStatus()) return false;
-    if (hasWithWinGymBattleStatus()) {
-      if (!getWithWinGymBattleStatus()
-          .equals(other.getWithWinGymBattleStatus())) return false;
-    }
-    if (hasWithSuperEffectiveChargeMove() != other.hasWithSuperEffectiveChargeMove()) return false;
-    if (hasWithSuperEffectiveChargeMove()) {
-      if (!getWithSuperEffectiveChargeMove()
-          .equals(other.getWithSuperEffectiveChargeMove())) return false;
-    }
-    if (hasWithItem() != other.hasWithItem()) return false;
-    if (hasWithItem()) {
-      if (!getWithItem()
-          .equals(other.getWithItem())) return false;
-    }
-    if (hasWithUniquePokestop() != other.hasWithUniquePokestop()) return false;
-    if (hasWithUniquePokestop()) {
-      if (!getWithUniquePokestop()
-          .equals(other.getWithUniquePokestop())) return false;
-    }
-    if (hasWithQuestContext() != other.hasWithQuestContext()) return false;
-    if (hasWithQuestContext()) {
-      if (!getWithQuestContext()
-          .equals(other.getWithQuestContext())) return false;
-    }
-    if (hasWithBadgeType() != other.hasWithBadgeType()) return false;
-    if (hasWithBadgeType()) {
-      if (!getWithBadgeType()
-          .equals(other.getWithBadgeType())) return false;
-    }
-    if (hasWithPlayerLevel() != other.hasWithPlayerLevel()) return false;
-    if (hasWithPlayerLevel()) {
-      if (!getWithPlayerLevel()
-          .equals(other.getWithPlayerLevel())) return false;
-    }
-    if (hasWithWinBattleStatus() != other.hasWithWinBattleStatus()) return false;
-    if (hasWithWinBattleStatus()) {
-      if (!getWithWinBattleStatus()
-          .equals(other.getWithWinBattleStatus())) return false;
-    }
-    if (hasWithUniquePokemon() != other.hasWithUniquePokemon()) return false;
-    if (hasWithUniquePokemon()) {
-      if (!getWithUniquePokemon()
-          .equals(other.getWithUniquePokemon())) return false;
-    }
-    if (hasWithNpcCombat() != other.hasWithNpcCombat()) return false;
-    if (hasWithNpcCombat()) {
-      if (!getWithNpcCombat()
-          .equals(other.getWithNpcCombat())) return false;
-    }
-    if (hasWithPvpCombat() != other.hasWithPvpCombat()) return false;
-    if (hasWithPvpCombat()) {
-      if (!getWithPvpCombat()
-          .equals(other.getWithPvpCombat())) return false;
-    }
-    if (hasWithLocation() != other.hasWithLocation()) return false;
-    if (hasWithLocation()) {
-      if (!getWithLocation()
-          .equals(other.getWithLocation())) return false;
-    }
-    if (hasWithDistance() != other.hasWithDistance()) return false;
-    if (hasWithDistance()) {
-      if (!getWithDistance()
-          .equals(other.getWithDistance())) return false;
-    }
-    if (hasWithInvasionCharacter() != other.hasWithInvasionCharacter()) return false;
-    if (hasWithInvasionCharacter()) {
-      if (!getWithInvasionCharacter()
-          .equals(other.getWithInvasionCharacter())) return false;
-    }
-    if (hasWithPokemonAlignment() != other.hasWithPokemonAlignment()) return false;
-    if (hasWithPokemonAlignment()) {
-      if (!getWithPokemonAlignment()
-          .equals(other.getWithPokemonAlignment())) return false;
-    }
-    if (hasWithBuddy() != other.hasWithBuddy()) return false;
-    if (hasWithBuddy()) {
-      if (!getWithBuddy()
-          .equals(other.getWithBuddy())) return false;
-    }
-    if (hasWithDailyBuddyAffection() != other.hasWithDailyBuddyAffection()) return false;
-    if (hasWithDailyBuddyAffection()) {
-      if (!getWithDailyBuddyAffection()
-          .equals(other.getWithDailyBuddyAffection())) return false;
+    if (!getConditionCase().equals(other.getConditionCase())) return false;
+    switch (conditionCase_) {
+      case 2:
+        if (!getWithPokemonType()
+            .equals(other.getWithPokemonType())) return false;
+        break;
+      case 3:
+        if (!getWithPokemonCategory()
+            .equals(other.getWithPokemonCategory())) return false;
+        break;
+      case 4:
+        if (!getWithWeatherBoost()
+            .equals(other.getWithWeatherBoost())) return false;
+        break;
+      case 5:
+        if (!getWithDailyCaptureBonus()
+            .equals(other.getWithDailyCaptureBonus())) return false;
+        break;
+      case 6:
+        if (!getWithDailySpinBonus()
+            .equals(other.getWithDailySpinBonus())) return false;
+        break;
+      case 7:
+        if (!getWithWinRaidStatus()
+            .equals(other.getWithWinRaidStatus())) return false;
+        break;
+      case 8:
+        if (!getWithRaidLevel()
+            .equals(other.getWithRaidLevel())) return false;
+        break;
+      case 9:
+        if (!getWithThrowType()
+            .equals(other.getWithThrowType())) return false;
+        break;
+      case 10:
+        if (!getWithWinGymBattleStatus()
+            .equals(other.getWithWinGymBattleStatus())) return false;
+        break;
+      case 11:
+        if (!getWithSuperEffectiveChargeMove()
+            .equals(other.getWithSuperEffectiveChargeMove())) return false;
+        break;
+      case 12:
+        if (!getWithItem()
+            .equals(other.getWithItem())) return false;
+        break;
+      case 13:
+        if (!getWithUniquePokestop()
+            .equals(other.getWithUniquePokestop())) return false;
+        break;
+      case 14:
+        if (!getWithQuestContext()
+            .equals(other.getWithQuestContext())) return false;
+        break;
+      case 15:
+        if (!getWithBadgeType()
+            .equals(other.getWithBadgeType())) return false;
+        break;
+      case 16:
+        if (!getWithPlayerLevel()
+            .equals(other.getWithPlayerLevel())) return false;
+        break;
+      case 17:
+        if (!getWithWinBattleStatus()
+            .equals(other.getWithWinBattleStatus())) return false;
+        break;
+      case 18:
+        if (!getWithUniquePokemon()
+            .equals(other.getWithUniquePokemon())) return false;
+        break;
+      case 19:
+        if (!getWithNpcCombat()
+            .equals(other.getWithNpcCombat())) return false;
+        break;
+      case 20:
+        if (!getWithPvpCombat()
+            .equals(other.getWithPvpCombat())) return false;
+        break;
+      case 21:
+        if (!getWithLocation()
+            .equals(other.getWithLocation())) return false;
+        break;
+      case 22:
+        if (!getWithDistance()
+            .equals(other.getWithDistance())) return false;
+        break;
+      case 23:
+        if (!getWithInvasionCharacter()
+            .equals(other.getWithInvasionCharacter())) return false;
+        break;
+      case 24:
+        if (!getWithPokemonAlignment()
+            .equals(other.getWithPokemonAlignment())) return false;
+        break;
+      case 25:
+        if (!getWithBuddy()
+            .equals(other.getWithBuddy())) return false;
+        break;
+      case 26:
+        if (!getWithDailyBuddyAffection()
+            .equals(other.getWithDailyBuddyAffection())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -1730,105 +1947,109 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TYPE_FIELD_NUMBER;
     hash = (53 * hash) + type_;
-    if (hasWithPokemonType()) {
-      hash = (37 * hash) + WITH_POKEMON_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getWithPokemonType().hashCode();
-    }
-    if (hasWithPokemonCategory()) {
-      hash = (37 * hash) + WITH_POKEMON_CATEGORY_FIELD_NUMBER;
-      hash = (53 * hash) + getWithPokemonCategory().hashCode();
-    }
-    if (hasWithWeatherBoost()) {
-      hash = (37 * hash) + WITH_WEATHER_BOOST_FIELD_NUMBER;
-      hash = (53 * hash) + getWithWeatherBoost().hashCode();
-    }
-    if (hasWithDailyCaptureBonus()) {
-      hash = (37 * hash) + WITH_DAILY_CAPTURE_BONUS_FIELD_NUMBER;
-      hash = (53 * hash) + getWithDailyCaptureBonus().hashCode();
-    }
-    if (hasWithDailySpinBonus()) {
-      hash = (37 * hash) + WITH_DAILY_SPIN_BONUS_FIELD_NUMBER;
-      hash = (53 * hash) + getWithDailySpinBonus().hashCode();
-    }
-    if (hasWithWinRaidStatus()) {
-      hash = (37 * hash) + WITH_WIN_RAID_STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getWithWinRaidStatus().hashCode();
-    }
-    if (hasWithRaidLevel()) {
-      hash = (37 * hash) + WITH_RAID_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getWithRaidLevel().hashCode();
-    }
-    if (hasWithThrowType()) {
-      hash = (37 * hash) + WITH_THROW_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getWithThrowType().hashCode();
-    }
-    if (hasWithWinGymBattleStatus()) {
-      hash = (37 * hash) + WITH_WIN_GYM_BATTLE_STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getWithWinGymBattleStatus().hashCode();
-    }
-    if (hasWithSuperEffectiveChargeMove()) {
-      hash = (37 * hash) + WITH_SUPER_EFFECTIVE_CHARGE_MOVE_FIELD_NUMBER;
-      hash = (53 * hash) + getWithSuperEffectiveChargeMove().hashCode();
-    }
-    if (hasWithItem()) {
-      hash = (37 * hash) + WITH_ITEM_FIELD_NUMBER;
-      hash = (53 * hash) + getWithItem().hashCode();
-    }
-    if (hasWithUniquePokestop()) {
-      hash = (37 * hash) + WITH_UNIQUE_POKESTOP_FIELD_NUMBER;
-      hash = (53 * hash) + getWithUniquePokestop().hashCode();
-    }
-    if (hasWithQuestContext()) {
-      hash = (37 * hash) + WITH_QUEST_CONTEXT_FIELD_NUMBER;
-      hash = (53 * hash) + getWithQuestContext().hashCode();
-    }
-    if (hasWithBadgeType()) {
-      hash = (37 * hash) + WITH_BADGE_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getWithBadgeType().hashCode();
-    }
-    if (hasWithPlayerLevel()) {
-      hash = (37 * hash) + WITH_PLAYER_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getWithPlayerLevel().hashCode();
-    }
-    if (hasWithWinBattleStatus()) {
-      hash = (37 * hash) + WITH_WIN_BATTLE_STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getWithWinBattleStatus().hashCode();
-    }
-    if (hasWithUniquePokemon()) {
-      hash = (37 * hash) + WITH_UNIQUE_POKEMON_FIELD_NUMBER;
-      hash = (53 * hash) + getWithUniquePokemon().hashCode();
-    }
-    if (hasWithNpcCombat()) {
-      hash = (37 * hash) + WITH_NPC_COMBAT_FIELD_NUMBER;
-      hash = (53 * hash) + getWithNpcCombat().hashCode();
-    }
-    if (hasWithPvpCombat()) {
-      hash = (37 * hash) + WITH_PVP_COMBAT_FIELD_NUMBER;
-      hash = (53 * hash) + getWithPvpCombat().hashCode();
-    }
-    if (hasWithLocation()) {
-      hash = (37 * hash) + WITH_LOCATION_FIELD_NUMBER;
-      hash = (53 * hash) + getWithLocation().hashCode();
-    }
-    if (hasWithDistance()) {
-      hash = (37 * hash) + WITH_DISTANCE_FIELD_NUMBER;
-      hash = (53 * hash) + getWithDistance().hashCode();
-    }
-    if (hasWithInvasionCharacter()) {
-      hash = (37 * hash) + WITH_INVASION_CHARACTER_FIELD_NUMBER;
-      hash = (53 * hash) + getWithInvasionCharacter().hashCode();
-    }
-    if (hasWithPokemonAlignment()) {
-      hash = (37 * hash) + WITH_POKEMON_ALIGNMENT_FIELD_NUMBER;
-      hash = (53 * hash) + getWithPokemonAlignment().hashCode();
-    }
-    if (hasWithBuddy()) {
-      hash = (37 * hash) + WITH_BUDDY_FIELD_NUMBER;
-      hash = (53 * hash) + getWithBuddy().hashCode();
-    }
-    if (hasWithDailyBuddyAffection()) {
-      hash = (37 * hash) + WITH_DAILY_BUDDY_AFFECTION_FIELD_NUMBER;
-      hash = (53 * hash) + getWithDailyBuddyAffection().hashCode();
+    switch (conditionCase_) {
+      case 2:
+        hash = (37 * hash) + WITH_POKEMON_TYPE_FIELD_NUMBER;
+        hash = (53 * hash) + getWithPokemonType().hashCode();
+        break;
+      case 3:
+        hash = (37 * hash) + WITH_POKEMON_CATEGORY_FIELD_NUMBER;
+        hash = (53 * hash) + getWithPokemonCategory().hashCode();
+        break;
+      case 4:
+        hash = (37 * hash) + WITH_WEATHER_BOOST_FIELD_NUMBER;
+        hash = (53 * hash) + getWithWeatherBoost().hashCode();
+        break;
+      case 5:
+        hash = (37 * hash) + WITH_DAILY_CAPTURE_BONUS_FIELD_NUMBER;
+        hash = (53 * hash) + getWithDailyCaptureBonus().hashCode();
+        break;
+      case 6:
+        hash = (37 * hash) + WITH_DAILY_SPIN_BONUS_FIELD_NUMBER;
+        hash = (53 * hash) + getWithDailySpinBonus().hashCode();
+        break;
+      case 7:
+        hash = (37 * hash) + WITH_WIN_RAID_STATUS_FIELD_NUMBER;
+        hash = (53 * hash) + getWithWinRaidStatus().hashCode();
+        break;
+      case 8:
+        hash = (37 * hash) + WITH_RAID_LEVEL_FIELD_NUMBER;
+        hash = (53 * hash) + getWithRaidLevel().hashCode();
+        break;
+      case 9:
+        hash = (37 * hash) + WITH_THROW_TYPE_FIELD_NUMBER;
+        hash = (53 * hash) + getWithThrowType().hashCode();
+        break;
+      case 10:
+        hash = (37 * hash) + WITH_WIN_GYM_BATTLE_STATUS_FIELD_NUMBER;
+        hash = (53 * hash) + getWithWinGymBattleStatus().hashCode();
+        break;
+      case 11:
+        hash = (37 * hash) + WITH_SUPER_EFFECTIVE_CHARGE_MOVE_FIELD_NUMBER;
+        hash = (53 * hash) + getWithSuperEffectiveChargeMove().hashCode();
+        break;
+      case 12:
+        hash = (37 * hash) + WITH_ITEM_FIELD_NUMBER;
+        hash = (53 * hash) + getWithItem().hashCode();
+        break;
+      case 13:
+        hash = (37 * hash) + WITH_UNIQUE_POKESTOP_FIELD_NUMBER;
+        hash = (53 * hash) + getWithUniquePokestop().hashCode();
+        break;
+      case 14:
+        hash = (37 * hash) + WITH_QUEST_CONTEXT_FIELD_NUMBER;
+        hash = (53 * hash) + getWithQuestContext().hashCode();
+        break;
+      case 15:
+        hash = (37 * hash) + WITH_BADGE_TYPE_FIELD_NUMBER;
+        hash = (53 * hash) + getWithBadgeType().hashCode();
+        break;
+      case 16:
+        hash = (37 * hash) + WITH_PLAYER_LEVEL_FIELD_NUMBER;
+        hash = (53 * hash) + getWithPlayerLevel().hashCode();
+        break;
+      case 17:
+        hash = (37 * hash) + WITH_WIN_BATTLE_STATUS_FIELD_NUMBER;
+        hash = (53 * hash) + getWithWinBattleStatus().hashCode();
+        break;
+      case 18:
+        hash = (37 * hash) + WITH_UNIQUE_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getWithUniquePokemon().hashCode();
+        break;
+      case 19:
+        hash = (37 * hash) + WITH_NPC_COMBAT_FIELD_NUMBER;
+        hash = (53 * hash) + getWithNpcCombat().hashCode();
+        break;
+      case 20:
+        hash = (37 * hash) + WITH_PVP_COMBAT_FIELD_NUMBER;
+        hash = (53 * hash) + getWithPvpCombat().hashCode();
+        break;
+      case 21:
+        hash = (37 * hash) + WITH_LOCATION_FIELD_NUMBER;
+        hash = (53 * hash) + getWithLocation().hashCode();
+        break;
+      case 22:
+        hash = (37 * hash) + WITH_DISTANCE_FIELD_NUMBER;
+        hash = (53 * hash) + getWithDistance().hashCode();
+        break;
+      case 23:
+        hash = (37 * hash) + WITH_INVASION_CHARACTER_FIELD_NUMBER;
+        hash = (53 * hash) + getWithInvasionCharacter().hashCode();
+        break;
+      case 24:
+        hash = (37 * hash) + WITH_POKEMON_ALIGNMENT_FIELD_NUMBER;
+        hash = (53 * hash) + getWithPokemonAlignment().hashCode();
+        break;
+      case 25:
+        hash = (37 * hash) + WITH_BUDDY_FIELD_NUMBER;
+        hash = (53 * hash) + getWithBuddy().hashCode();
+        break;
+      case 26:
+        hash = (37 * hash) + WITH_DAILY_BUDDY_AFFECTION_FIELD_NUMBER;
+        hash = (53 * hash) + getWithDailyBuddyAffection().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -1965,156 +2186,8 @@ private static final long serialVersionUID = 0L;
       super.clear();
       type_ = 0;
 
-      if (withPokemonTypeBuilder_ == null) {
-        withPokemonType_ = null;
-      } else {
-        withPokemonType_ = null;
-        withPokemonTypeBuilder_ = null;
-      }
-      if (withPokemonCategoryBuilder_ == null) {
-        withPokemonCategory_ = null;
-      } else {
-        withPokemonCategory_ = null;
-        withPokemonCategoryBuilder_ = null;
-      }
-      if (withWeatherBoostBuilder_ == null) {
-        withWeatherBoost_ = null;
-      } else {
-        withWeatherBoost_ = null;
-        withWeatherBoostBuilder_ = null;
-      }
-      if (withDailyCaptureBonusBuilder_ == null) {
-        withDailyCaptureBonus_ = null;
-      } else {
-        withDailyCaptureBonus_ = null;
-        withDailyCaptureBonusBuilder_ = null;
-      }
-      if (withDailySpinBonusBuilder_ == null) {
-        withDailySpinBonus_ = null;
-      } else {
-        withDailySpinBonus_ = null;
-        withDailySpinBonusBuilder_ = null;
-      }
-      if (withWinRaidStatusBuilder_ == null) {
-        withWinRaidStatus_ = null;
-      } else {
-        withWinRaidStatus_ = null;
-        withWinRaidStatusBuilder_ = null;
-      }
-      if (withRaidLevelBuilder_ == null) {
-        withRaidLevel_ = null;
-      } else {
-        withRaidLevel_ = null;
-        withRaidLevelBuilder_ = null;
-      }
-      if (withThrowTypeBuilder_ == null) {
-        withThrowType_ = null;
-      } else {
-        withThrowType_ = null;
-        withThrowTypeBuilder_ = null;
-      }
-      if (withWinGymBattleStatusBuilder_ == null) {
-        withWinGymBattleStatus_ = null;
-      } else {
-        withWinGymBattleStatus_ = null;
-        withWinGymBattleStatusBuilder_ = null;
-      }
-      if (withSuperEffectiveChargeMoveBuilder_ == null) {
-        withSuperEffectiveChargeMove_ = null;
-      } else {
-        withSuperEffectiveChargeMove_ = null;
-        withSuperEffectiveChargeMoveBuilder_ = null;
-      }
-      if (withItemBuilder_ == null) {
-        withItem_ = null;
-      } else {
-        withItem_ = null;
-        withItemBuilder_ = null;
-      }
-      if (withUniquePokestopBuilder_ == null) {
-        withUniquePokestop_ = null;
-      } else {
-        withUniquePokestop_ = null;
-        withUniquePokestopBuilder_ = null;
-      }
-      if (withQuestContextBuilder_ == null) {
-        withQuestContext_ = null;
-      } else {
-        withQuestContext_ = null;
-        withQuestContextBuilder_ = null;
-      }
-      if (withBadgeTypeBuilder_ == null) {
-        withBadgeType_ = null;
-      } else {
-        withBadgeType_ = null;
-        withBadgeTypeBuilder_ = null;
-      }
-      if (withPlayerLevelBuilder_ == null) {
-        withPlayerLevel_ = null;
-      } else {
-        withPlayerLevel_ = null;
-        withPlayerLevelBuilder_ = null;
-      }
-      if (withWinBattleStatusBuilder_ == null) {
-        withWinBattleStatus_ = null;
-      } else {
-        withWinBattleStatus_ = null;
-        withWinBattleStatusBuilder_ = null;
-      }
-      if (withUniquePokemonBuilder_ == null) {
-        withUniquePokemon_ = null;
-      } else {
-        withUniquePokemon_ = null;
-        withUniquePokemonBuilder_ = null;
-      }
-      if (withNpcCombatBuilder_ == null) {
-        withNpcCombat_ = null;
-      } else {
-        withNpcCombat_ = null;
-        withNpcCombatBuilder_ = null;
-      }
-      if (withPvpCombatBuilder_ == null) {
-        withPvpCombat_ = null;
-      } else {
-        withPvpCombat_ = null;
-        withPvpCombatBuilder_ = null;
-      }
-      if (withLocationBuilder_ == null) {
-        withLocation_ = null;
-      } else {
-        withLocation_ = null;
-        withLocationBuilder_ = null;
-      }
-      if (withDistanceBuilder_ == null) {
-        withDistance_ = null;
-      } else {
-        withDistance_ = null;
-        withDistanceBuilder_ = null;
-      }
-      if (withInvasionCharacterBuilder_ == null) {
-        withInvasionCharacter_ = null;
-      } else {
-        withInvasionCharacter_ = null;
-        withInvasionCharacterBuilder_ = null;
-      }
-      if (withPokemonAlignmentBuilder_ == null) {
-        withPokemonAlignment_ = null;
-      } else {
-        withPokemonAlignment_ = null;
-        withPokemonAlignmentBuilder_ = null;
-      }
-      if (withBuddyBuilder_ == null) {
-        withBuddy_ = null;
-      } else {
-        withBuddy_ = null;
-        withBuddyBuilder_ = null;
-      }
-      if (withDailyBuddyAffectionBuilder_ == null) {
-        withDailyBuddyAffection_ = null;
-      } else {
-        withDailyBuddyAffection_ = null;
-        withDailyBuddyAffectionBuilder_ = null;
-      }
+      conditionCase_ = 0;
+      condition_ = null;
       return this;
     }
 
@@ -2141,132 +2214,183 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.QuestConditionProto buildPartial() {
       POGOProtos.Rpc.QuestConditionProto result = new POGOProtos.Rpc.QuestConditionProto(this);
+      if (conditionCase_ == 2) {
+        if (withPokemonTypeBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withPokemonTypeBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 3) {
+        if (withPokemonCategoryBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withPokemonCategoryBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 4) {
+        if (withWeatherBoostBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withWeatherBoostBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 5) {
+        if (withDailyCaptureBonusBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withDailyCaptureBonusBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 6) {
+        if (withDailySpinBonusBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withDailySpinBonusBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 7) {
+        if (withWinRaidStatusBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withWinRaidStatusBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 8) {
+        if (withRaidLevelBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withRaidLevelBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 9) {
+        if (withThrowTypeBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withThrowTypeBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 10) {
+        if (withWinGymBattleStatusBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withWinGymBattleStatusBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 11) {
+        if (withSuperEffectiveChargeMoveBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withSuperEffectiveChargeMoveBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 12) {
+        if (withItemBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withItemBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 13) {
+        if (withUniquePokestopBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withUniquePokestopBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 14) {
+        if (withQuestContextBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withQuestContextBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 15) {
+        if (withBadgeTypeBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withBadgeTypeBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 16) {
+        if (withPlayerLevelBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withPlayerLevelBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 17) {
+        if (withWinBattleStatusBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withWinBattleStatusBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 18) {
+        if (withUniquePokemonBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withUniquePokemonBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 19) {
+        if (withNpcCombatBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withNpcCombatBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 20) {
+        if (withPvpCombatBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withPvpCombatBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 21) {
+        if (withLocationBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withLocationBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 22) {
+        if (withDistanceBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withDistanceBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 23) {
+        if (withInvasionCharacterBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withInvasionCharacterBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 24) {
+        if (withPokemonAlignmentBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withPokemonAlignmentBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 25) {
+        if (withBuddyBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withBuddyBuilder_.build();
+        }
+      }
+      if (conditionCase_ == 26) {
+        if (withDailyBuddyAffectionBuilder_ == null) {
+          result.condition_ = condition_;
+        } else {
+          result.condition_ = withDailyBuddyAffectionBuilder_.build();
+        }
+      }
       result.type_ = type_;
-      if (withPokemonTypeBuilder_ == null) {
-        result.withPokemonType_ = withPokemonType_;
-      } else {
-        result.withPokemonType_ = withPokemonTypeBuilder_.build();
-      }
-      if (withPokemonCategoryBuilder_ == null) {
-        result.withPokemonCategory_ = withPokemonCategory_;
-      } else {
-        result.withPokemonCategory_ = withPokemonCategoryBuilder_.build();
-      }
-      if (withWeatherBoostBuilder_ == null) {
-        result.withWeatherBoost_ = withWeatherBoost_;
-      } else {
-        result.withWeatherBoost_ = withWeatherBoostBuilder_.build();
-      }
-      if (withDailyCaptureBonusBuilder_ == null) {
-        result.withDailyCaptureBonus_ = withDailyCaptureBonus_;
-      } else {
-        result.withDailyCaptureBonus_ = withDailyCaptureBonusBuilder_.build();
-      }
-      if (withDailySpinBonusBuilder_ == null) {
-        result.withDailySpinBonus_ = withDailySpinBonus_;
-      } else {
-        result.withDailySpinBonus_ = withDailySpinBonusBuilder_.build();
-      }
-      if (withWinRaidStatusBuilder_ == null) {
-        result.withWinRaidStatus_ = withWinRaidStatus_;
-      } else {
-        result.withWinRaidStatus_ = withWinRaidStatusBuilder_.build();
-      }
-      if (withRaidLevelBuilder_ == null) {
-        result.withRaidLevel_ = withRaidLevel_;
-      } else {
-        result.withRaidLevel_ = withRaidLevelBuilder_.build();
-      }
-      if (withThrowTypeBuilder_ == null) {
-        result.withThrowType_ = withThrowType_;
-      } else {
-        result.withThrowType_ = withThrowTypeBuilder_.build();
-      }
-      if (withWinGymBattleStatusBuilder_ == null) {
-        result.withWinGymBattleStatus_ = withWinGymBattleStatus_;
-      } else {
-        result.withWinGymBattleStatus_ = withWinGymBattleStatusBuilder_.build();
-      }
-      if (withSuperEffectiveChargeMoveBuilder_ == null) {
-        result.withSuperEffectiveChargeMove_ = withSuperEffectiveChargeMove_;
-      } else {
-        result.withSuperEffectiveChargeMove_ = withSuperEffectiveChargeMoveBuilder_.build();
-      }
-      if (withItemBuilder_ == null) {
-        result.withItem_ = withItem_;
-      } else {
-        result.withItem_ = withItemBuilder_.build();
-      }
-      if (withUniquePokestopBuilder_ == null) {
-        result.withUniquePokestop_ = withUniquePokestop_;
-      } else {
-        result.withUniquePokestop_ = withUniquePokestopBuilder_.build();
-      }
-      if (withQuestContextBuilder_ == null) {
-        result.withQuestContext_ = withQuestContext_;
-      } else {
-        result.withQuestContext_ = withQuestContextBuilder_.build();
-      }
-      if (withBadgeTypeBuilder_ == null) {
-        result.withBadgeType_ = withBadgeType_;
-      } else {
-        result.withBadgeType_ = withBadgeTypeBuilder_.build();
-      }
-      if (withPlayerLevelBuilder_ == null) {
-        result.withPlayerLevel_ = withPlayerLevel_;
-      } else {
-        result.withPlayerLevel_ = withPlayerLevelBuilder_.build();
-      }
-      if (withWinBattleStatusBuilder_ == null) {
-        result.withWinBattleStatus_ = withWinBattleStatus_;
-      } else {
-        result.withWinBattleStatus_ = withWinBattleStatusBuilder_.build();
-      }
-      if (withUniquePokemonBuilder_ == null) {
-        result.withUniquePokemon_ = withUniquePokemon_;
-      } else {
-        result.withUniquePokemon_ = withUniquePokemonBuilder_.build();
-      }
-      if (withNpcCombatBuilder_ == null) {
-        result.withNpcCombat_ = withNpcCombat_;
-      } else {
-        result.withNpcCombat_ = withNpcCombatBuilder_.build();
-      }
-      if (withPvpCombatBuilder_ == null) {
-        result.withPvpCombat_ = withPvpCombat_;
-      } else {
-        result.withPvpCombat_ = withPvpCombatBuilder_.build();
-      }
-      if (withLocationBuilder_ == null) {
-        result.withLocation_ = withLocation_;
-      } else {
-        result.withLocation_ = withLocationBuilder_.build();
-      }
-      if (withDistanceBuilder_ == null) {
-        result.withDistance_ = withDistance_;
-      } else {
-        result.withDistance_ = withDistanceBuilder_.build();
-      }
-      if (withInvasionCharacterBuilder_ == null) {
-        result.withInvasionCharacter_ = withInvasionCharacter_;
-      } else {
-        result.withInvasionCharacter_ = withInvasionCharacterBuilder_.build();
-      }
-      if (withPokemonAlignmentBuilder_ == null) {
-        result.withPokemonAlignment_ = withPokemonAlignment_;
-      } else {
-        result.withPokemonAlignment_ = withPokemonAlignmentBuilder_.build();
-      }
-      if (withBuddyBuilder_ == null) {
-        result.withBuddy_ = withBuddy_;
-      } else {
-        result.withBuddy_ = withBuddyBuilder_.build();
-      }
-      if (withDailyBuddyAffectionBuilder_ == null) {
-        result.withDailyBuddyAffection_ = withDailyBuddyAffection_;
-      } else {
-        result.withDailyBuddyAffection_ = withDailyBuddyAffectionBuilder_.build();
-      }
+      result.conditionCase_ = conditionCase_;
       onBuilt();
       return result;
     }
@@ -2318,80 +2442,110 @@ private static final long serialVersionUID = 0L;
       if (other.type_ != 0) {
         setTypeValue(other.getTypeValue());
       }
-      if (other.hasWithPokemonType()) {
-        mergeWithPokemonType(other.getWithPokemonType());
-      }
-      if (other.hasWithPokemonCategory()) {
-        mergeWithPokemonCategory(other.getWithPokemonCategory());
-      }
-      if (other.hasWithWeatherBoost()) {
-        mergeWithWeatherBoost(other.getWithWeatherBoost());
-      }
-      if (other.hasWithDailyCaptureBonus()) {
-        mergeWithDailyCaptureBonus(other.getWithDailyCaptureBonus());
-      }
-      if (other.hasWithDailySpinBonus()) {
-        mergeWithDailySpinBonus(other.getWithDailySpinBonus());
-      }
-      if (other.hasWithWinRaidStatus()) {
-        mergeWithWinRaidStatus(other.getWithWinRaidStatus());
-      }
-      if (other.hasWithRaidLevel()) {
-        mergeWithRaidLevel(other.getWithRaidLevel());
-      }
-      if (other.hasWithThrowType()) {
-        mergeWithThrowType(other.getWithThrowType());
-      }
-      if (other.hasWithWinGymBattleStatus()) {
-        mergeWithWinGymBattleStatus(other.getWithWinGymBattleStatus());
-      }
-      if (other.hasWithSuperEffectiveChargeMove()) {
-        mergeWithSuperEffectiveChargeMove(other.getWithSuperEffectiveChargeMove());
-      }
-      if (other.hasWithItem()) {
-        mergeWithItem(other.getWithItem());
-      }
-      if (other.hasWithUniquePokestop()) {
-        mergeWithUniquePokestop(other.getWithUniquePokestop());
-      }
-      if (other.hasWithQuestContext()) {
-        mergeWithQuestContext(other.getWithQuestContext());
-      }
-      if (other.hasWithBadgeType()) {
-        mergeWithBadgeType(other.getWithBadgeType());
-      }
-      if (other.hasWithPlayerLevel()) {
-        mergeWithPlayerLevel(other.getWithPlayerLevel());
-      }
-      if (other.hasWithWinBattleStatus()) {
-        mergeWithWinBattleStatus(other.getWithWinBattleStatus());
-      }
-      if (other.hasWithUniquePokemon()) {
-        mergeWithUniquePokemon(other.getWithUniquePokemon());
-      }
-      if (other.hasWithNpcCombat()) {
-        mergeWithNpcCombat(other.getWithNpcCombat());
-      }
-      if (other.hasWithPvpCombat()) {
-        mergeWithPvpCombat(other.getWithPvpCombat());
-      }
-      if (other.hasWithLocation()) {
-        mergeWithLocation(other.getWithLocation());
-      }
-      if (other.hasWithDistance()) {
-        mergeWithDistance(other.getWithDistance());
-      }
-      if (other.hasWithInvasionCharacter()) {
-        mergeWithInvasionCharacter(other.getWithInvasionCharacter());
-      }
-      if (other.hasWithPokemonAlignment()) {
-        mergeWithPokemonAlignment(other.getWithPokemonAlignment());
-      }
-      if (other.hasWithBuddy()) {
-        mergeWithBuddy(other.getWithBuddy());
-      }
-      if (other.hasWithDailyBuddyAffection()) {
-        mergeWithDailyBuddyAffection(other.getWithDailyBuddyAffection());
+      switch (other.getConditionCase()) {
+        case WITH_POKEMON_TYPE: {
+          mergeWithPokemonType(other.getWithPokemonType());
+          break;
+        }
+        case WITH_POKEMON_CATEGORY: {
+          mergeWithPokemonCategory(other.getWithPokemonCategory());
+          break;
+        }
+        case WITH_WEATHER_BOOST: {
+          mergeWithWeatherBoost(other.getWithWeatherBoost());
+          break;
+        }
+        case WITH_DAILY_CAPTURE_BONUS: {
+          mergeWithDailyCaptureBonus(other.getWithDailyCaptureBonus());
+          break;
+        }
+        case WITH_DAILY_SPIN_BONUS: {
+          mergeWithDailySpinBonus(other.getWithDailySpinBonus());
+          break;
+        }
+        case WITH_WIN_RAID_STATUS: {
+          mergeWithWinRaidStatus(other.getWithWinRaidStatus());
+          break;
+        }
+        case WITH_RAID_LEVEL: {
+          mergeWithRaidLevel(other.getWithRaidLevel());
+          break;
+        }
+        case WITH_THROW_TYPE: {
+          mergeWithThrowType(other.getWithThrowType());
+          break;
+        }
+        case WITH_WIN_GYM_BATTLE_STATUS: {
+          mergeWithWinGymBattleStatus(other.getWithWinGymBattleStatus());
+          break;
+        }
+        case WITH_SUPER_EFFECTIVE_CHARGE_MOVE: {
+          mergeWithSuperEffectiveChargeMove(other.getWithSuperEffectiveChargeMove());
+          break;
+        }
+        case WITH_ITEM: {
+          mergeWithItem(other.getWithItem());
+          break;
+        }
+        case WITH_UNIQUE_POKESTOP: {
+          mergeWithUniquePokestop(other.getWithUniquePokestop());
+          break;
+        }
+        case WITH_QUEST_CONTEXT: {
+          mergeWithQuestContext(other.getWithQuestContext());
+          break;
+        }
+        case WITH_BADGE_TYPE: {
+          mergeWithBadgeType(other.getWithBadgeType());
+          break;
+        }
+        case WITH_PLAYER_LEVEL: {
+          mergeWithPlayerLevel(other.getWithPlayerLevel());
+          break;
+        }
+        case WITH_WIN_BATTLE_STATUS: {
+          mergeWithWinBattleStatus(other.getWithWinBattleStatus());
+          break;
+        }
+        case WITH_UNIQUE_POKEMON: {
+          mergeWithUniquePokemon(other.getWithUniquePokemon());
+          break;
+        }
+        case WITH_NPC_COMBAT: {
+          mergeWithNpcCombat(other.getWithNpcCombat());
+          break;
+        }
+        case WITH_PVP_COMBAT: {
+          mergeWithPvpCombat(other.getWithPvpCombat());
+          break;
+        }
+        case WITH_LOCATION: {
+          mergeWithLocation(other.getWithLocation());
+          break;
+        }
+        case WITH_DISTANCE: {
+          mergeWithDistance(other.getWithDistance());
+          break;
+        }
+        case WITH_INVASION_CHARACTER: {
+          mergeWithInvasionCharacter(other.getWithInvasionCharacter());
+          break;
+        }
+        case WITH_POKEMON_ALIGNMENT: {
+          mergeWithPokemonAlignment(other.getWithPokemonAlignment());
+          break;
+        }
+        case WITH_BUDDY: {
+          mergeWithBuddy(other.getWithBuddy());
+          break;
+        }
+        case WITH_DAILY_BUDDY_AFFECTION: {
+          mergeWithDailyBuddyAffection(other.getWithDailyBuddyAffection());
+          break;
+        }
+        case CONDITION_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -2420,6 +2574,3471 @@ private static final long serialVersionUID = 0L;
         }
       }
       return this;
+    }
+    private int conditionCase_ = 0;
+    private java.lang.Object condition_;
+    public ConditionCase
+        getConditionCase() {
+      return ConditionCase.forNumber(
+          conditionCase_);
+    }
+
+    public Builder clearCondition() {
+      conditionCase_ = 0;
+      condition_ = null;
+      onChanged();
+      return this;
+    }
+
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> withPokemonTypeBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+     * @return Whether the withPokemonType field is set.
+     */
+    public boolean hasWithPokemonType() {
+      return conditionCase_ == 2;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+     * @return The withPokemonType.
+     */
+    public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
+      if (withPokemonTypeBuilder_ == null) {
+        if (conditionCase_ == 2) {
+          return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+        }
+        return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 2) {
+          return withPokemonTypeBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+     */
+    public Builder setWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
+      if (withPokemonTypeBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withPokemonTypeBuilder_.setMessage(value);
+      }
+      conditionCase_ = 2;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+     */
+    public Builder setWithPokemonType(
+        POGOProtos.Rpc.WithPokemonTypeProto.Builder builderForValue) {
+      if (withPokemonTypeBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withPokemonTypeBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 2;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+     */
+    public Builder mergeWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
+      if (withPokemonTypeBuilder_ == null) {
+        if (conditionCase_ == 2 &&
+            condition_ != POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithPokemonTypeProto.newBuilder((POGOProtos.Rpc.WithPokemonTypeProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 2) {
+          withPokemonTypeBuilder_.mergeFrom(value);
+        }
+        withPokemonTypeBuilder_.setMessage(value);
+      }
+      conditionCase_ = 2;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+     */
+    public Builder clearWithPokemonType() {
+      if (withPokemonTypeBuilder_ == null) {
+        if (conditionCase_ == 2) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 2) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withPokemonTypeBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonTypeProto.Builder getWithPokemonTypeBuilder() {
+      return getWithPokemonTypeFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
+      if ((conditionCase_ == 2) && (withPokemonTypeBuilder_ != null)) {
+        return withPokemonTypeBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 2) {
+          return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+        }
+        return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> 
+        getWithPokemonTypeFieldBuilder() {
+      if (withPokemonTypeBuilder_ == null) {
+        if (!(conditionCase_ == 2)) {
+          condition_ = POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+        }
+        withPokemonTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder>(
+                (POGOProtos.Rpc.WithPokemonTypeProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 2;
+      onChanged();;
+      return withPokemonTypeBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> withPokemonCategoryBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+     * @return Whether the withPokemonCategory field is set.
+     */
+    public boolean hasWithPokemonCategory() {
+      return conditionCase_ == 3;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+     * @return The withPokemonCategory.
+     */
+    public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
+      if (withPokemonCategoryBuilder_ == null) {
+        if (conditionCase_ == 3) {
+          return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+        }
+        return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 3) {
+          return withPokemonCategoryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+     */
+    public Builder setWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
+      if (withPokemonCategoryBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withPokemonCategoryBuilder_.setMessage(value);
+      }
+      conditionCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+     */
+    public Builder setWithPokemonCategory(
+        POGOProtos.Rpc.WithPokemonCategoryProto.Builder builderForValue) {
+      if (withPokemonCategoryBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withPokemonCategoryBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+     */
+    public Builder mergeWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
+      if (withPokemonCategoryBuilder_ == null) {
+        if (conditionCase_ == 3 &&
+            condition_ != POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithPokemonCategoryProto.newBuilder((POGOProtos.Rpc.WithPokemonCategoryProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 3) {
+          withPokemonCategoryBuilder_.mergeFrom(value);
+        }
+        withPokemonCategoryBuilder_.setMessage(value);
+      }
+      conditionCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+     */
+    public Builder clearWithPokemonCategory() {
+      if (withPokemonCategoryBuilder_ == null) {
+        if (conditionCase_ == 3) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 3) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withPokemonCategoryBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonCategoryProto.Builder getWithPokemonCategoryBuilder() {
+      return getWithPokemonCategoryFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
+      if ((conditionCase_ == 3) && (withPokemonCategoryBuilder_ != null)) {
+        return withPokemonCategoryBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 3) {
+          return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+        }
+        return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> 
+        getWithPokemonCategoryFieldBuilder() {
+      if (withPokemonCategoryBuilder_ == null) {
+        if (!(conditionCase_ == 3)) {
+          condition_ = POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+        }
+        withPokemonCategoryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder>(
+                (POGOProtos.Rpc.WithPokemonCategoryProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 3;
+      onChanged();;
+      return withPokemonCategoryBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithWeatherBoostProto, POGOProtos.Rpc.WithWeatherBoostProto.Builder, POGOProtos.Rpc.WithWeatherBoostProtoOrBuilder> withWeatherBoostBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+     * @return Whether the withWeatherBoost field is set.
+     */
+    public boolean hasWithWeatherBoost() {
+      return conditionCase_ == 4;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+     * @return The withWeatherBoost.
+     */
+    public POGOProtos.Rpc.WithWeatherBoostProto getWithWeatherBoost() {
+      if (withWeatherBoostBuilder_ == null) {
+        if (conditionCase_ == 4) {
+          return (POGOProtos.Rpc.WithWeatherBoostProto) condition_;
+        }
+        return POGOProtos.Rpc.WithWeatherBoostProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 4) {
+          return withWeatherBoostBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithWeatherBoostProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+     */
+    public Builder setWithWeatherBoost(POGOProtos.Rpc.WithWeatherBoostProto value) {
+      if (withWeatherBoostBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withWeatherBoostBuilder_.setMessage(value);
+      }
+      conditionCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+     */
+    public Builder setWithWeatherBoost(
+        POGOProtos.Rpc.WithWeatherBoostProto.Builder builderForValue) {
+      if (withWeatherBoostBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withWeatherBoostBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+     */
+    public Builder mergeWithWeatherBoost(POGOProtos.Rpc.WithWeatherBoostProto value) {
+      if (withWeatherBoostBuilder_ == null) {
+        if (conditionCase_ == 4 &&
+            condition_ != POGOProtos.Rpc.WithWeatherBoostProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithWeatherBoostProto.newBuilder((POGOProtos.Rpc.WithWeatherBoostProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 4) {
+          withWeatherBoostBuilder_.mergeFrom(value);
+        }
+        withWeatherBoostBuilder_.setMessage(value);
+      }
+      conditionCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+     */
+    public Builder clearWithWeatherBoost() {
+      if (withWeatherBoostBuilder_ == null) {
+        if (conditionCase_ == 4) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 4) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withWeatherBoostBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+     */
+    public POGOProtos.Rpc.WithWeatherBoostProto.Builder getWithWeatherBoostBuilder() {
+      return getWithWeatherBoostFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+     */
+    public POGOProtos.Rpc.WithWeatherBoostProtoOrBuilder getWithWeatherBoostOrBuilder() {
+      if ((conditionCase_ == 4) && (withWeatherBoostBuilder_ != null)) {
+        return withWeatherBoostBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 4) {
+          return (POGOProtos.Rpc.WithWeatherBoostProto) condition_;
+        }
+        return POGOProtos.Rpc.WithWeatherBoostProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithWeatherBoostProto, POGOProtos.Rpc.WithWeatherBoostProto.Builder, POGOProtos.Rpc.WithWeatherBoostProtoOrBuilder> 
+        getWithWeatherBoostFieldBuilder() {
+      if (withWeatherBoostBuilder_ == null) {
+        if (!(conditionCase_ == 4)) {
+          condition_ = POGOProtos.Rpc.WithWeatherBoostProto.getDefaultInstance();
+        }
+        withWeatherBoostBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithWeatherBoostProto, POGOProtos.Rpc.WithWeatherBoostProto.Builder, POGOProtos.Rpc.WithWeatherBoostProtoOrBuilder>(
+                (POGOProtos.Rpc.WithWeatherBoostProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 4;
+      onChanged();;
+      return withWeatherBoostBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithDailyCaptureBonusProto, POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder, POGOProtos.Rpc.WithDailyCaptureBonusProtoOrBuilder> withDailyCaptureBonusBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+     * @return Whether the withDailyCaptureBonus field is set.
+     */
+    public boolean hasWithDailyCaptureBonus() {
+      return conditionCase_ == 5;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+     * @return The withDailyCaptureBonus.
+     */
+    public POGOProtos.Rpc.WithDailyCaptureBonusProto getWithDailyCaptureBonus() {
+      if (withDailyCaptureBonusBuilder_ == null) {
+        if (conditionCase_ == 5) {
+          return (POGOProtos.Rpc.WithDailyCaptureBonusProto) condition_;
+        }
+        return POGOProtos.Rpc.WithDailyCaptureBonusProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 5) {
+          return withDailyCaptureBonusBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithDailyCaptureBonusProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+     */
+    public Builder setWithDailyCaptureBonus(POGOProtos.Rpc.WithDailyCaptureBonusProto value) {
+      if (withDailyCaptureBonusBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withDailyCaptureBonusBuilder_.setMessage(value);
+      }
+      conditionCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+     */
+    public Builder setWithDailyCaptureBonus(
+        POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder builderForValue) {
+      if (withDailyCaptureBonusBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withDailyCaptureBonusBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+     */
+    public Builder mergeWithDailyCaptureBonus(POGOProtos.Rpc.WithDailyCaptureBonusProto value) {
+      if (withDailyCaptureBonusBuilder_ == null) {
+        if (conditionCase_ == 5 &&
+            condition_ != POGOProtos.Rpc.WithDailyCaptureBonusProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithDailyCaptureBonusProto.newBuilder((POGOProtos.Rpc.WithDailyCaptureBonusProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 5) {
+          withDailyCaptureBonusBuilder_.mergeFrom(value);
+        }
+        withDailyCaptureBonusBuilder_.setMessage(value);
+      }
+      conditionCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+     */
+    public Builder clearWithDailyCaptureBonus() {
+      if (withDailyCaptureBonusBuilder_ == null) {
+        if (conditionCase_ == 5) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 5) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withDailyCaptureBonusBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+     */
+    public POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder getWithDailyCaptureBonusBuilder() {
+      return getWithDailyCaptureBonusFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+     */
+    public POGOProtos.Rpc.WithDailyCaptureBonusProtoOrBuilder getWithDailyCaptureBonusOrBuilder() {
+      if ((conditionCase_ == 5) && (withDailyCaptureBonusBuilder_ != null)) {
+        return withDailyCaptureBonusBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 5) {
+          return (POGOProtos.Rpc.WithDailyCaptureBonusProto) condition_;
+        }
+        return POGOProtos.Rpc.WithDailyCaptureBonusProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithDailyCaptureBonusProto, POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder, POGOProtos.Rpc.WithDailyCaptureBonusProtoOrBuilder> 
+        getWithDailyCaptureBonusFieldBuilder() {
+      if (withDailyCaptureBonusBuilder_ == null) {
+        if (!(conditionCase_ == 5)) {
+          condition_ = POGOProtos.Rpc.WithDailyCaptureBonusProto.getDefaultInstance();
+        }
+        withDailyCaptureBonusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithDailyCaptureBonusProto, POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder, POGOProtos.Rpc.WithDailyCaptureBonusProtoOrBuilder>(
+                (POGOProtos.Rpc.WithDailyCaptureBonusProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 5;
+      onChanged();;
+      return withDailyCaptureBonusBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithDailySpinBonusProto, POGOProtos.Rpc.WithDailySpinBonusProto.Builder, POGOProtos.Rpc.WithDailySpinBonusProtoOrBuilder> withDailySpinBonusBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+     * @return Whether the withDailySpinBonus field is set.
+     */
+    public boolean hasWithDailySpinBonus() {
+      return conditionCase_ == 6;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+     * @return The withDailySpinBonus.
+     */
+    public POGOProtos.Rpc.WithDailySpinBonusProto getWithDailySpinBonus() {
+      if (withDailySpinBonusBuilder_ == null) {
+        if (conditionCase_ == 6) {
+          return (POGOProtos.Rpc.WithDailySpinBonusProto) condition_;
+        }
+        return POGOProtos.Rpc.WithDailySpinBonusProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 6) {
+          return withDailySpinBonusBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithDailySpinBonusProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+     */
+    public Builder setWithDailySpinBonus(POGOProtos.Rpc.WithDailySpinBonusProto value) {
+      if (withDailySpinBonusBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withDailySpinBonusBuilder_.setMessage(value);
+      }
+      conditionCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+     */
+    public Builder setWithDailySpinBonus(
+        POGOProtos.Rpc.WithDailySpinBonusProto.Builder builderForValue) {
+      if (withDailySpinBonusBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withDailySpinBonusBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+     */
+    public Builder mergeWithDailySpinBonus(POGOProtos.Rpc.WithDailySpinBonusProto value) {
+      if (withDailySpinBonusBuilder_ == null) {
+        if (conditionCase_ == 6 &&
+            condition_ != POGOProtos.Rpc.WithDailySpinBonusProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithDailySpinBonusProto.newBuilder((POGOProtos.Rpc.WithDailySpinBonusProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 6) {
+          withDailySpinBonusBuilder_.mergeFrom(value);
+        }
+        withDailySpinBonusBuilder_.setMessage(value);
+      }
+      conditionCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+     */
+    public Builder clearWithDailySpinBonus() {
+      if (withDailySpinBonusBuilder_ == null) {
+        if (conditionCase_ == 6) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 6) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withDailySpinBonusBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+     */
+    public POGOProtos.Rpc.WithDailySpinBonusProto.Builder getWithDailySpinBonusBuilder() {
+      return getWithDailySpinBonusFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+     */
+    public POGOProtos.Rpc.WithDailySpinBonusProtoOrBuilder getWithDailySpinBonusOrBuilder() {
+      if ((conditionCase_ == 6) && (withDailySpinBonusBuilder_ != null)) {
+        return withDailySpinBonusBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 6) {
+          return (POGOProtos.Rpc.WithDailySpinBonusProto) condition_;
+        }
+        return POGOProtos.Rpc.WithDailySpinBonusProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithDailySpinBonusProto, POGOProtos.Rpc.WithDailySpinBonusProto.Builder, POGOProtos.Rpc.WithDailySpinBonusProtoOrBuilder> 
+        getWithDailySpinBonusFieldBuilder() {
+      if (withDailySpinBonusBuilder_ == null) {
+        if (!(conditionCase_ == 6)) {
+          condition_ = POGOProtos.Rpc.WithDailySpinBonusProto.getDefaultInstance();
+        }
+        withDailySpinBonusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithDailySpinBonusProto, POGOProtos.Rpc.WithDailySpinBonusProto.Builder, POGOProtos.Rpc.WithDailySpinBonusProtoOrBuilder>(
+                (POGOProtos.Rpc.WithDailySpinBonusProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 6;
+      onChanged();;
+      return withDailySpinBonusBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithWinRaidStatusProto, POGOProtos.Rpc.WithWinRaidStatusProto.Builder, POGOProtos.Rpc.WithWinRaidStatusProtoOrBuilder> withWinRaidStatusBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+     * @return Whether the withWinRaidStatus field is set.
+     */
+    public boolean hasWithWinRaidStatus() {
+      return conditionCase_ == 7;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+     * @return The withWinRaidStatus.
+     */
+    public POGOProtos.Rpc.WithWinRaidStatusProto getWithWinRaidStatus() {
+      if (withWinRaidStatusBuilder_ == null) {
+        if (conditionCase_ == 7) {
+          return (POGOProtos.Rpc.WithWinRaidStatusProto) condition_;
+        }
+        return POGOProtos.Rpc.WithWinRaidStatusProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 7) {
+          return withWinRaidStatusBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithWinRaidStatusProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+     */
+    public Builder setWithWinRaidStatus(POGOProtos.Rpc.WithWinRaidStatusProto value) {
+      if (withWinRaidStatusBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withWinRaidStatusBuilder_.setMessage(value);
+      }
+      conditionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+     */
+    public Builder setWithWinRaidStatus(
+        POGOProtos.Rpc.WithWinRaidStatusProto.Builder builderForValue) {
+      if (withWinRaidStatusBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withWinRaidStatusBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+     */
+    public Builder mergeWithWinRaidStatus(POGOProtos.Rpc.WithWinRaidStatusProto value) {
+      if (withWinRaidStatusBuilder_ == null) {
+        if (conditionCase_ == 7 &&
+            condition_ != POGOProtos.Rpc.WithWinRaidStatusProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithWinRaidStatusProto.newBuilder((POGOProtos.Rpc.WithWinRaidStatusProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 7) {
+          withWinRaidStatusBuilder_.mergeFrom(value);
+        }
+        withWinRaidStatusBuilder_.setMessage(value);
+      }
+      conditionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+     */
+    public Builder clearWithWinRaidStatus() {
+      if (withWinRaidStatusBuilder_ == null) {
+        if (conditionCase_ == 7) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 7) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withWinRaidStatusBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+     */
+    public POGOProtos.Rpc.WithWinRaidStatusProto.Builder getWithWinRaidStatusBuilder() {
+      return getWithWinRaidStatusFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+     */
+    public POGOProtos.Rpc.WithWinRaidStatusProtoOrBuilder getWithWinRaidStatusOrBuilder() {
+      if ((conditionCase_ == 7) && (withWinRaidStatusBuilder_ != null)) {
+        return withWinRaidStatusBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 7) {
+          return (POGOProtos.Rpc.WithWinRaidStatusProto) condition_;
+        }
+        return POGOProtos.Rpc.WithWinRaidStatusProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithWinRaidStatusProto, POGOProtos.Rpc.WithWinRaidStatusProto.Builder, POGOProtos.Rpc.WithWinRaidStatusProtoOrBuilder> 
+        getWithWinRaidStatusFieldBuilder() {
+      if (withWinRaidStatusBuilder_ == null) {
+        if (!(conditionCase_ == 7)) {
+          condition_ = POGOProtos.Rpc.WithWinRaidStatusProto.getDefaultInstance();
+        }
+        withWinRaidStatusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithWinRaidStatusProto, POGOProtos.Rpc.WithWinRaidStatusProto.Builder, POGOProtos.Rpc.WithWinRaidStatusProtoOrBuilder>(
+                (POGOProtos.Rpc.WithWinRaidStatusProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 7;
+      onChanged();;
+      return withWinRaidStatusBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithRaidLevelProto, POGOProtos.Rpc.WithRaidLevelProto.Builder, POGOProtos.Rpc.WithRaidLevelProtoOrBuilder> withRaidLevelBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+     * @return Whether the withRaidLevel field is set.
+     */
+    public boolean hasWithRaidLevel() {
+      return conditionCase_ == 8;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+     * @return The withRaidLevel.
+     */
+    public POGOProtos.Rpc.WithRaidLevelProto getWithRaidLevel() {
+      if (withRaidLevelBuilder_ == null) {
+        if (conditionCase_ == 8) {
+          return (POGOProtos.Rpc.WithRaidLevelProto) condition_;
+        }
+        return POGOProtos.Rpc.WithRaidLevelProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 8) {
+          return withRaidLevelBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithRaidLevelProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+     */
+    public Builder setWithRaidLevel(POGOProtos.Rpc.WithRaidLevelProto value) {
+      if (withRaidLevelBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withRaidLevelBuilder_.setMessage(value);
+      }
+      conditionCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+     */
+    public Builder setWithRaidLevel(
+        POGOProtos.Rpc.WithRaidLevelProto.Builder builderForValue) {
+      if (withRaidLevelBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withRaidLevelBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+     */
+    public Builder mergeWithRaidLevel(POGOProtos.Rpc.WithRaidLevelProto value) {
+      if (withRaidLevelBuilder_ == null) {
+        if (conditionCase_ == 8 &&
+            condition_ != POGOProtos.Rpc.WithRaidLevelProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithRaidLevelProto.newBuilder((POGOProtos.Rpc.WithRaidLevelProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 8) {
+          withRaidLevelBuilder_.mergeFrom(value);
+        }
+        withRaidLevelBuilder_.setMessage(value);
+      }
+      conditionCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+     */
+    public Builder clearWithRaidLevel() {
+      if (withRaidLevelBuilder_ == null) {
+        if (conditionCase_ == 8) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 8) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withRaidLevelBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+     */
+    public POGOProtos.Rpc.WithRaidLevelProto.Builder getWithRaidLevelBuilder() {
+      return getWithRaidLevelFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+     */
+    public POGOProtos.Rpc.WithRaidLevelProtoOrBuilder getWithRaidLevelOrBuilder() {
+      if ((conditionCase_ == 8) && (withRaidLevelBuilder_ != null)) {
+        return withRaidLevelBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 8) {
+          return (POGOProtos.Rpc.WithRaidLevelProto) condition_;
+        }
+        return POGOProtos.Rpc.WithRaidLevelProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithRaidLevelProto, POGOProtos.Rpc.WithRaidLevelProto.Builder, POGOProtos.Rpc.WithRaidLevelProtoOrBuilder> 
+        getWithRaidLevelFieldBuilder() {
+      if (withRaidLevelBuilder_ == null) {
+        if (!(conditionCase_ == 8)) {
+          condition_ = POGOProtos.Rpc.WithRaidLevelProto.getDefaultInstance();
+        }
+        withRaidLevelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithRaidLevelProto, POGOProtos.Rpc.WithRaidLevelProto.Builder, POGOProtos.Rpc.WithRaidLevelProtoOrBuilder>(
+                (POGOProtos.Rpc.WithRaidLevelProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 8;
+      onChanged();;
+      return withRaidLevelBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithThrowTypeProto, POGOProtos.Rpc.WithThrowTypeProto.Builder, POGOProtos.Rpc.WithThrowTypeProtoOrBuilder> withThrowTypeBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+     * @return Whether the withThrowType field is set.
+     */
+    public boolean hasWithThrowType() {
+      return conditionCase_ == 9;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+     * @return The withThrowType.
+     */
+    public POGOProtos.Rpc.WithThrowTypeProto getWithThrowType() {
+      if (withThrowTypeBuilder_ == null) {
+        if (conditionCase_ == 9) {
+          return (POGOProtos.Rpc.WithThrowTypeProto) condition_;
+        }
+        return POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 9) {
+          return withThrowTypeBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+     */
+    public Builder setWithThrowType(POGOProtos.Rpc.WithThrowTypeProto value) {
+      if (withThrowTypeBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withThrowTypeBuilder_.setMessage(value);
+      }
+      conditionCase_ = 9;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+     */
+    public Builder setWithThrowType(
+        POGOProtos.Rpc.WithThrowTypeProto.Builder builderForValue) {
+      if (withThrowTypeBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withThrowTypeBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 9;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+     */
+    public Builder mergeWithThrowType(POGOProtos.Rpc.WithThrowTypeProto value) {
+      if (withThrowTypeBuilder_ == null) {
+        if (conditionCase_ == 9 &&
+            condition_ != POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithThrowTypeProto.newBuilder((POGOProtos.Rpc.WithThrowTypeProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 9) {
+          withThrowTypeBuilder_.mergeFrom(value);
+        }
+        withThrowTypeBuilder_.setMessage(value);
+      }
+      conditionCase_ = 9;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+     */
+    public Builder clearWithThrowType() {
+      if (withThrowTypeBuilder_ == null) {
+        if (conditionCase_ == 9) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 9) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withThrowTypeBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+     */
+    public POGOProtos.Rpc.WithThrowTypeProto.Builder getWithThrowTypeBuilder() {
+      return getWithThrowTypeFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+     */
+    public POGOProtos.Rpc.WithThrowTypeProtoOrBuilder getWithThrowTypeOrBuilder() {
+      if ((conditionCase_ == 9) && (withThrowTypeBuilder_ != null)) {
+        return withThrowTypeBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 9) {
+          return (POGOProtos.Rpc.WithThrowTypeProto) condition_;
+        }
+        return POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithThrowTypeProto, POGOProtos.Rpc.WithThrowTypeProto.Builder, POGOProtos.Rpc.WithThrowTypeProtoOrBuilder> 
+        getWithThrowTypeFieldBuilder() {
+      if (withThrowTypeBuilder_ == null) {
+        if (!(conditionCase_ == 9)) {
+          condition_ = POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance();
+        }
+        withThrowTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithThrowTypeProto, POGOProtos.Rpc.WithThrowTypeProto.Builder, POGOProtos.Rpc.WithThrowTypeProtoOrBuilder>(
+                (POGOProtos.Rpc.WithThrowTypeProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 9;
+      onChanged();;
+      return withThrowTypeBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithWinGymBattleStatusProto, POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder, POGOProtos.Rpc.WithWinGymBattleStatusProtoOrBuilder> withWinGymBattleStatusBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+     * @return Whether the withWinGymBattleStatus field is set.
+     */
+    public boolean hasWithWinGymBattleStatus() {
+      return conditionCase_ == 10;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+     * @return The withWinGymBattleStatus.
+     */
+    public POGOProtos.Rpc.WithWinGymBattleStatusProto getWithWinGymBattleStatus() {
+      if (withWinGymBattleStatusBuilder_ == null) {
+        if (conditionCase_ == 10) {
+          return (POGOProtos.Rpc.WithWinGymBattleStatusProto) condition_;
+        }
+        return POGOProtos.Rpc.WithWinGymBattleStatusProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 10) {
+          return withWinGymBattleStatusBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithWinGymBattleStatusProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+     */
+    public Builder setWithWinGymBattleStatus(POGOProtos.Rpc.WithWinGymBattleStatusProto value) {
+      if (withWinGymBattleStatusBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withWinGymBattleStatusBuilder_.setMessage(value);
+      }
+      conditionCase_ = 10;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+     */
+    public Builder setWithWinGymBattleStatus(
+        POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder builderForValue) {
+      if (withWinGymBattleStatusBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withWinGymBattleStatusBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 10;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+     */
+    public Builder mergeWithWinGymBattleStatus(POGOProtos.Rpc.WithWinGymBattleStatusProto value) {
+      if (withWinGymBattleStatusBuilder_ == null) {
+        if (conditionCase_ == 10 &&
+            condition_ != POGOProtos.Rpc.WithWinGymBattleStatusProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithWinGymBattleStatusProto.newBuilder((POGOProtos.Rpc.WithWinGymBattleStatusProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 10) {
+          withWinGymBattleStatusBuilder_.mergeFrom(value);
+        }
+        withWinGymBattleStatusBuilder_.setMessage(value);
+      }
+      conditionCase_ = 10;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+     */
+    public Builder clearWithWinGymBattleStatus() {
+      if (withWinGymBattleStatusBuilder_ == null) {
+        if (conditionCase_ == 10) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 10) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withWinGymBattleStatusBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+     */
+    public POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder getWithWinGymBattleStatusBuilder() {
+      return getWithWinGymBattleStatusFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+     */
+    public POGOProtos.Rpc.WithWinGymBattleStatusProtoOrBuilder getWithWinGymBattleStatusOrBuilder() {
+      if ((conditionCase_ == 10) && (withWinGymBattleStatusBuilder_ != null)) {
+        return withWinGymBattleStatusBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 10) {
+          return (POGOProtos.Rpc.WithWinGymBattleStatusProto) condition_;
+        }
+        return POGOProtos.Rpc.WithWinGymBattleStatusProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithWinGymBattleStatusProto, POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder, POGOProtos.Rpc.WithWinGymBattleStatusProtoOrBuilder> 
+        getWithWinGymBattleStatusFieldBuilder() {
+      if (withWinGymBattleStatusBuilder_ == null) {
+        if (!(conditionCase_ == 10)) {
+          condition_ = POGOProtos.Rpc.WithWinGymBattleStatusProto.getDefaultInstance();
+        }
+        withWinGymBattleStatusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithWinGymBattleStatusProto, POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder, POGOProtos.Rpc.WithWinGymBattleStatusProtoOrBuilder>(
+                (POGOProtos.Rpc.WithWinGymBattleStatusProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 10;
+      onChanged();;
+      return withWinGymBattleStatusBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProtoOrBuilder> withSuperEffectiveChargeMoveBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+     * @return Whether the withSuperEffectiveChargeMove field is set.
+     */
+    public boolean hasWithSuperEffectiveChargeMove() {
+      return conditionCase_ == 11;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+     * @return The withSuperEffectiveChargeMove.
+     */
+    public POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto getWithSuperEffectiveChargeMove() {
+      if (withSuperEffectiveChargeMoveBuilder_ == null) {
+        if (conditionCase_ == 11) {
+          return (POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto) condition_;
+        }
+        return POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 11) {
+          return withSuperEffectiveChargeMoveBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+     */
+    public Builder setWithSuperEffectiveChargeMove(POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto value) {
+      if (withSuperEffectiveChargeMoveBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withSuperEffectiveChargeMoveBuilder_.setMessage(value);
+      }
+      conditionCase_ = 11;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+     */
+    public Builder setWithSuperEffectiveChargeMove(
+        POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder builderForValue) {
+      if (withSuperEffectiveChargeMoveBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withSuperEffectiveChargeMoveBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 11;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+     */
+    public Builder mergeWithSuperEffectiveChargeMove(POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto value) {
+      if (withSuperEffectiveChargeMoveBuilder_ == null) {
+        if (conditionCase_ == 11 &&
+            condition_ != POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.newBuilder((POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 11) {
+          withSuperEffectiveChargeMoveBuilder_.mergeFrom(value);
+        }
+        withSuperEffectiveChargeMoveBuilder_.setMessage(value);
+      }
+      conditionCase_ = 11;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+     */
+    public Builder clearWithSuperEffectiveChargeMove() {
+      if (withSuperEffectiveChargeMoveBuilder_ == null) {
+        if (conditionCase_ == 11) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 11) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withSuperEffectiveChargeMoveBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+     */
+    public POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder getWithSuperEffectiveChargeMoveBuilder() {
+      return getWithSuperEffectiveChargeMoveFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+     */
+    public POGOProtos.Rpc.WithSuperEffectiveChargeMoveProtoOrBuilder getWithSuperEffectiveChargeMoveOrBuilder() {
+      if ((conditionCase_ == 11) && (withSuperEffectiveChargeMoveBuilder_ != null)) {
+        return withSuperEffectiveChargeMoveBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 11) {
+          return (POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto) condition_;
+        }
+        return POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProtoOrBuilder> 
+        getWithSuperEffectiveChargeMoveFieldBuilder() {
+      if (withSuperEffectiveChargeMoveBuilder_ == null) {
+        if (!(conditionCase_ == 11)) {
+          condition_ = POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.getDefaultInstance();
+        }
+        withSuperEffectiveChargeMoveBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProtoOrBuilder>(
+                (POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 11;
+      onChanged();;
+      return withSuperEffectiveChargeMoveBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithItemProto, POGOProtos.Rpc.WithItemProto.Builder, POGOProtos.Rpc.WithItemProtoOrBuilder> withItemBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+     * @return Whether the withItem field is set.
+     */
+    public boolean hasWithItem() {
+      return conditionCase_ == 12;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+     * @return The withItem.
+     */
+    public POGOProtos.Rpc.WithItemProto getWithItem() {
+      if (withItemBuilder_ == null) {
+        if (conditionCase_ == 12) {
+          return (POGOProtos.Rpc.WithItemProto) condition_;
+        }
+        return POGOProtos.Rpc.WithItemProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 12) {
+          return withItemBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithItemProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+     */
+    public Builder setWithItem(POGOProtos.Rpc.WithItemProto value) {
+      if (withItemBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withItemBuilder_.setMessage(value);
+      }
+      conditionCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+     */
+    public Builder setWithItem(
+        POGOProtos.Rpc.WithItemProto.Builder builderForValue) {
+      if (withItemBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withItemBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+     */
+    public Builder mergeWithItem(POGOProtos.Rpc.WithItemProto value) {
+      if (withItemBuilder_ == null) {
+        if (conditionCase_ == 12 &&
+            condition_ != POGOProtos.Rpc.WithItemProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithItemProto.newBuilder((POGOProtos.Rpc.WithItemProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 12) {
+          withItemBuilder_.mergeFrom(value);
+        }
+        withItemBuilder_.setMessage(value);
+      }
+      conditionCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+     */
+    public Builder clearWithItem() {
+      if (withItemBuilder_ == null) {
+        if (conditionCase_ == 12) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 12) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withItemBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+     */
+    public POGOProtos.Rpc.WithItemProto.Builder getWithItemBuilder() {
+      return getWithItemFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+     */
+    public POGOProtos.Rpc.WithItemProtoOrBuilder getWithItemOrBuilder() {
+      if ((conditionCase_ == 12) && (withItemBuilder_ != null)) {
+        return withItemBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 12) {
+          return (POGOProtos.Rpc.WithItemProto) condition_;
+        }
+        return POGOProtos.Rpc.WithItemProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithItemProto, POGOProtos.Rpc.WithItemProto.Builder, POGOProtos.Rpc.WithItemProtoOrBuilder> 
+        getWithItemFieldBuilder() {
+      if (withItemBuilder_ == null) {
+        if (!(conditionCase_ == 12)) {
+          condition_ = POGOProtos.Rpc.WithItemProto.getDefaultInstance();
+        }
+        withItemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithItemProto, POGOProtos.Rpc.WithItemProto.Builder, POGOProtos.Rpc.WithItemProtoOrBuilder>(
+                (POGOProtos.Rpc.WithItemProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 12;
+      onChanged();;
+      return withItemBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithUniquePokestopProto, POGOProtos.Rpc.WithUniquePokestopProto.Builder, POGOProtos.Rpc.WithUniquePokestopProtoOrBuilder> withUniquePokestopBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+     * @return Whether the withUniquePokestop field is set.
+     */
+    public boolean hasWithUniquePokestop() {
+      return conditionCase_ == 13;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+     * @return The withUniquePokestop.
+     */
+    public POGOProtos.Rpc.WithUniquePokestopProto getWithUniquePokestop() {
+      if (withUniquePokestopBuilder_ == null) {
+        if (conditionCase_ == 13) {
+          return (POGOProtos.Rpc.WithUniquePokestopProto) condition_;
+        }
+        return POGOProtos.Rpc.WithUniquePokestopProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 13) {
+          return withUniquePokestopBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithUniquePokestopProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+     */
+    public Builder setWithUniquePokestop(POGOProtos.Rpc.WithUniquePokestopProto value) {
+      if (withUniquePokestopBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withUniquePokestopBuilder_.setMessage(value);
+      }
+      conditionCase_ = 13;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+     */
+    public Builder setWithUniquePokestop(
+        POGOProtos.Rpc.WithUniquePokestopProto.Builder builderForValue) {
+      if (withUniquePokestopBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withUniquePokestopBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 13;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+     */
+    public Builder mergeWithUniquePokestop(POGOProtos.Rpc.WithUniquePokestopProto value) {
+      if (withUniquePokestopBuilder_ == null) {
+        if (conditionCase_ == 13 &&
+            condition_ != POGOProtos.Rpc.WithUniquePokestopProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithUniquePokestopProto.newBuilder((POGOProtos.Rpc.WithUniquePokestopProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 13) {
+          withUniquePokestopBuilder_.mergeFrom(value);
+        }
+        withUniquePokestopBuilder_.setMessage(value);
+      }
+      conditionCase_ = 13;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+     */
+    public Builder clearWithUniquePokestop() {
+      if (withUniquePokestopBuilder_ == null) {
+        if (conditionCase_ == 13) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 13) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withUniquePokestopBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+     */
+    public POGOProtos.Rpc.WithUniquePokestopProto.Builder getWithUniquePokestopBuilder() {
+      return getWithUniquePokestopFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+     */
+    public POGOProtos.Rpc.WithUniquePokestopProtoOrBuilder getWithUniquePokestopOrBuilder() {
+      if ((conditionCase_ == 13) && (withUniquePokestopBuilder_ != null)) {
+        return withUniquePokestopBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 13) {
+          return (POGOProtos.Rpc.WithUniquePokestopProto) condition_;
+        }
+        return POGOProtos.Rpc.WithUniquePokestopProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithUniquePokestopProto, POGOProtos.Rpc.WithUniquePokestopProto.Builder, POGOProtos.Rpc.WithUniquePokestopProtoOrBuilder> 
+        getWithUniquePokestopFieldBuilder() {
+      if (withUniquePokestopBuilder_ == null) {
+        if (!(conditionCase_ == 13)) {
+          condition_ = POGOProtos.Rpc.WithUniquePokestopProto.getDefaultInstance();
+        }
+        withUniquePokestopBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithUniquePokestopProto, POGOProtos.Rpc.WithUniquePokestopProto.Builder, POGOProtos.Rpc.WithUniquePokestopProtoOrBuilder>(
+                (POGOProtos.Rpc.WithUniquePokestopProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 13;
+      onChanged();;
+      return withUniquePokestopBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithQuestContextProto, POGOProtos.Rpc.WithQuestContextProto.Builder, POGOProtos.Rpc.WithQuestContextProtoOrBuilder> withQuestContextBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+     * @return Whether the withQuestContext field is set.
+     */
+    public boolean hasWithQuestContext() {
+      return conditionCase_ == 14;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+     * @return The withQuestContext.
+     */
+    public POGOProtos.Rpc.WithQuestContextProto getWithQuestContext() {
+      if (withQuestContextBuilder_ == null) {
+        if (conditionCase_ == 14) {
+          return (POGOProtos.Rpc.WithQuestContextProto) condition_;
+        }
+        return POGOProtos.Rpc.WithQuestContextProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 14) {
+          return withQuestContextBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithQuestContextProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+     */
+    public Builder setWithQuestContext(POGOProtos.Rpc.WithQuestContextProto value) {
+      if (withQuestContextBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withQuestContextBuilder_.setMessage(value);
+      }
+      conditionCase_ = 14;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+     */
+    public Builder setWithQuestContext(
+        POGOProtos.Rpc.WithQuestContextProto.Builder builderForValue) {
+      if (withQuestContextBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withQuestContextBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 14;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+     */
+    public Builder mergeWithQuestContext(POGOProtos.Rpc.WithQuestContextProto value) {
+      if (withQuestContextBuilder_ == null) {
+        if (conditionCase_ == 14 &&
+            condition_ != POGOProtos.Rpc.WithQuestContextProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithQuestContextProto.newBuilder((POGOProtos.Rpc.WithQuestContextProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 14) {
+          withQuestContextBuilder_.mergeFrom(value);
+        }
+        withQuestContextBuilder_.setMessage(value);
+      }
+      conditionCase_ = 14;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+     */
+    public Builder clearWithQuestContext() {
+      if (withQuestContextBuilder_ == null) {
+        if (conditionCase_ == 14) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 14) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withQuestContextBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+     */
+    public POGOProtos.Rpc.WithQuestContextProto.Builder getWithQuestContextBuilder() {
+      return getWithQuestContextFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+     */
+    public POGOProtos.Rpc.WithQuestContextProtoOrBuilder getWithQuestContextOrBuilder() {
+      if ((conditionCase_ == 14) && (withQuestContextBuilder_ != null)) {
+        return withQuestContextBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 14) {
+          return (POGOProtos.Rpc.WithQuestContextProto) condition_;
+        }
+        return POGOProtos.Rpc.WithQuestContextProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithQuestContextProto, POGOProtos.Rpc.WithQuestContextProto.Builder, POGOProtos.Rpc.WithQuestContextProtoOrBuilder> 
+        getWithQuestContextFieldBuilder() {
+      if (withQuestContextBuilder_ == null) {
+        if (!(conditionCase_ == 14)) {
+          condition_ = POGOProtos.Rpc.WithQuestContextProto.getDefaultInstance();
+        }
+        withQuestContextBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithQuestContextProto, POGOProtos.Rpc.WithQuestContextProto.Builder, POGOProtos.Rpc.WithQuestContextProtoOrBuilder>(
+                (POGOProtos.Rpc.WithQuestContextProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 14;
+      onChanged();;
+      return withQuestContextBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithBadgeTypeProto, POGOProtos.Rpc.WithBadgeTypeProto.Builder, POGOProtos.Rpc.WithBadgeTypeProtoOrBuilder> withBadgeTypeBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+     * @return Whether the withBadgeType field is set.
+     */
+    public boolean hasWithBadgeType() {
+      return conditionCase_ == 15;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+     * @return The withBadgeType.
+     */
+    public POGOProtos.Rpc.WithBadgeTypeProto getWithBadgeType() {
+      if (withBadgeTypeBuilder_ == null) {
+        if (conditionCase_ == 15) {
+          return (POGOProtos.Rpc.WithBadgeTypeProto) condition_;
+        }
+        return POGOProtos.Rpc.WithBadgeTypeProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 15) {
+          return withBadgeTypeBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithBadgeTypeProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+     */
+    public Builder setWithBadgeType(POGOProtos.Rpc.WithBadgeTypeProto value) {
+      if (withBadgeTypeBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withBadgeTypeBuilder_.setMessage(value);
+      }
+      conditionCase_ = 15;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+     */
+    public Builder setWithBadgeType(
+        POGOProtos.Rpc.WithBadgeTypeProto.Builder builderForValue) {
+      if (withBadgeTypeBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withBadgeTypeBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 15;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+     */
+    public Builder mergeWithBadgeType(POGOProtos.Rpc.WithBadgeTypeProto value) {
+      if (withBadgeTypeBuilder_ == null) {
+        if (conditionCase_ == 15 &&
+            condition_ != POGOProtos.Rpc.WithBadgeTypeProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithBadgeTypeProto.newBuilder((POGOProtos.Rpc.WithBadgeTypeProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 15) {
+          withBadgeTypeBuilder_.mergeFrom(value);
+        }
+        withBadgeTypeBuilder_.setMessage(value);
+      }
+      conditionCase_ = 15;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+     */
+    public Builder clearWithBadgeType() {
+      if (withBadgeTypeBuilder_ == null) {
+        if (conditionCase_ == 15) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 15) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withBadgeTypeBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+     */
+    public POGOProtos.Rpc.WithBadgeTypeProto.Builder getWithBadgeTypeBuilder() {
+      return getWithBadgeTypeFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+     */
+    public POGOProtos.Rpc.WithBadgeTypeProtoOrBuilder getWithBadgeTypeOrBuilder() {
+      if ((conditionCase_ == 15) && (withBadgeTypeBuilder_ != null)) {
+        return withBadgeTypeBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 15) {
+          return (POGOProtos.Rpc.WithBadgeTypeProto) condition_;
+        }
+        return POGOProtos.Rpc.WithBadgeTypeProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithBadgeTypeProto, POGOProtos.Rpc.WithBadgeTypeProto.Builder, POGOProtos.Rpc.WithBadgeTypeProtoOrBuilder> 
+        getWithBadgeTypeFieldBuilder() {
+      if (withBadgeTypeBuilder_ == null) {
+        if (!(conditionCase_ == 15)) {
+          condition_ = POGOProtos.Rpc.WithBadgeTypeProto.getDefaultInstance();
+        }
+        withBadgeTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithBadgeTypeProto, POGOProtos.Rpc.WithBadgeTypeProto.Builder, POGOProtos.Rpc.WithBadgeTypeProtoOrBuilder>(
+                (POGOProtos.Rpc.WithBadgeTypeProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 15;
+      onChanged();;
+      return withBadgeTypeBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder> withPlayerLevelBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+     * @return Whether the withPlayerLevel field is set.
+     */
+    public boolean hasWithPlayerLevel() {
+      return conditionCase_ == 16;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+     * @return The withPlayerLevel.
+     */
+    public POGOProtos.Rpc.WithPlayerLevelProto getWithPlayerLevel() {
+      if (withPlayerLevelBuilder_ == null) {
+        if (conditionCase_ == 16) {
+          return (POGOProtos.Rpc.WithPlayerLevelProto) condition_;
+        }
+        return POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 16) {
+          return withPlayerLevelBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+     */
+    public Builder setWithPlayerLevel(POGOProtos.Rpc.WithPlayerLevelProto value) {
+      if (withPlayerLevelBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withPlayerLevelBuilder_.setMessage(value);
+      }
+      conditionCase_ = 16;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+     */
+    public Builder setWithPlayerLevel(
+        POGOProtos.Rpc.WithPlayerLevelProto.Builder builderForValue) {
+      if (withPlayerLevelBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withPlayerLevelBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 16;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+     */
+    public Builder mergeWithPlayerLevel(POGOProtos.Rpc.WithPlayerLevelProto value) {
+      if (withPlayerLevelBuilder_ == null) {
+        if (conditionCase_ == 16 &&
+            condition_ != POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithPlayerLevelProto.newBuilder((POGOProtos.Rpc.WithPlayerLevelProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 16) {
+          withPlayerLevelBuilder_.mergeFrom(value);
+        }
+        withPlayerLevelBuilder_.setMessage(value);
+      }
+      conditionCase_ = 16;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+     */
+    public Builder clearWithPlayerLevel() {
+      if (withPlayerLevelBuilder_ == null) {
+        if (conditionCase_ == 16) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 16) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withPlayerLevelBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+     */
+    public POGOProtos.Rpc.WithPlayerLevelProto.Builder getWithPlayerLevelBuilder() {
+      return getWithPlayerLevelFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+     */
+    public POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder getWithPlayerLevelOrBuilder() {
+      if ((conditionCase_ == 16) && (withPlayerLevelBuilder_ != null)) {
+        return withPlayerLevelBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 16) {
+          return (POGOProtos.Rpc.WithPlayerLevelProto) condition_;
+        }
+        return POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder> 
+        getWithPlayerLevelFieldBuilder() {
+      if (withPlayerLevelBuilder_ == null) {
+        if (!(conditionCase_ == 16)) {
+          condition_ = POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+        }
+        withPlayerLevelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder>(
+                (POGOProtos.Rpc.WithPlayerLevelProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 16;
+      onChanged();;
+      return withPlayerLevelBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithWinBattleStatusProto, POGOProtos.Rpc.WithWinBattleStatusProto.Builder, POGOProtos.Rpc.WithWinBattleStatusProtoOrBuilder> withWinBattleStatusBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+     * @return Whether the withWinBattleStatus field is set.
+     */
+    public boolean hasWithWinBattleStatus() {
+      return conditionCase_ == 17;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+     * @return The withWinBattleStatus.
+     */
+    public POGOProtos.Rpc.WithWinBattleStatusProto getWithWinBattleStatus() {
+      if (withWinBattleStatusBuilder_ == null) {
+        if (conditionCase_ == 17) {
+          return (POGOProtos.Rpc.WithWinBattleStatusProto) condition_;
+        }
+        return POGOProtos.Rpc.WithWinBattleStatusProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 17) {
+          return withWinBattleStatusBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithWinBattleStatusProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+     */
+    public Builder setWithWinBattleStatus(POGOProtos.Rpc.WithWinBattleStatusProto value) {
+      if (withWinBattleStatusBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withWinBattleStatusBuilder_.setMessage(value);
+      }
+      conditionCase_ = 17;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+     */
+    public Builder setWithWinBattleStatus(
+        POGOProtos.Rpc.WithWinBattleStatusProto.Builder builderForValue) {
+      if (withWinBattleStatusBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withWinBattleStatusBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 17;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+     */
+    public Builder mergeWithWinBattleStatus(POGOProtos.Rpc.WithWinBattleStatusProto value) {
+      if (withWinBattleStatusBuilder_ == null) {
+        if (conditionCase_ == 17 &&
+            condition_ != POGOProtos.Rpc.WithWinBattleStatusProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithWinBattleStatusProto.newBuilder((POGOProtos.Rpc.WithWinBattleStatusProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 17) {
+          withWinBattleStatusBuilder_.mergeFrom(value);
+        }
+        withWinBattleStatusBuilder_.setMessage(value);
+      }
+      conditionCase_ = 17;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+     */
+    public Builder clearWithWinBattleStatus() {
+      if (withWinBattleStatusBuilder_ == null) {
+        if (conditionCase_ == 17) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 17) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withWinBattleStatusBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+     */
+    public POGOProtos.Rpc.WithWinBattleStatusProto.Builder getWithWinBattleStatusBuilder() {
+      return getWithWinBattleStatusFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+     */
+    public POGOProtos.Rpc.WithWinBattleStatusProtoOrBuilder getWithWinBattleStatusOrBuilder() {
+      if ((conditionCase_ == 17) && (withWinBattleStatusBuilder_ != null)) {
+        return withWinBattleStatusBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 17) {
+          return (POGOProtos.Rpc.WithWinBattleStatusProto) condition_;
+        }
+        return POGOProtos.Rpc.WithWinBattleStatusProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithWinBattleStatusProto, POGOProtos.Rpc.WithWinBattleStatusProto.Builder, POGOProtos.Rpc.WithWinBattleStatusProtoOrBuilder> 
+        getWithWinBattleStatusFieldBuilder() {
+      if (withWinBattleStatusBuilder_ == null) {
+        if (!(conditionCase_ == 17)) {
+          condition_ = POGOProtos.Rpc.WithWinBattleStatusProto.getDefaultInstance();
+        }
+        withWinBattleStatusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithWinBattleStatusProto, POGOProtos.Rpc.WithWinBattleStatusProto.Builder, POGOProtos.Rpc.WithWinBattleStatusProtoOrBuilder>(
+                (POGOProtos.Rpc.WithWinBattleStatusProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 17;
+      onChanged();;
+      return withWinBattleStatusBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithUniquePokemonProto, POGOProtos.Rpc.WithUniquePokemonProto.Builder, POGOProtos.Rpc.WithUniquePokemonProtoOrBuilder> withUniquePokemonBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+     * @return Whether the withUniquePokemon field is set.
+     */
+    public boolean hasWithUniquePokemon() {
+      return conditionCase_ == 18;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+     * @return The withUniquePokemon.
+     */
+    public POGOProtos.Rpc.WithUniquePokemonProto getWithUniquePokemon() {
+      if (withUniquePokemonBuilder_ == null) {
+        if (conditionCase_ == 18) {
+          return (POGOProtos.Rpc.WithUniquePokemonProto) condition_;
+        }
+        return POGOProtos.Rpc.WithUniquePokemonProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 18) {
+          return withUniquePokemonBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithUniquePokemonProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+     */
+    public Builder setWithUniquePokemon(POGOProtos.Rpc.WithUniquePokemonProto value) {
+      if (withUniquePokemonBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withUniquePokemonBuilder_.setMessage(value);
+      }
+      conditionCase_ = 18;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+     */
+    public Builder setWithUniquePokemon(
+        POGOProtos.Rpc.WithUniquePokemonProto.Builder builderForValue) {
+      if (withUniquePokemonBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withUniquePokemonBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 18;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+     */
+    public Builder mergeWithUniquePokemon(POGOProtos.Rpc.WithUniquePokemonProto value) {
+      if (withUniquePokemonBuilder_ == null) {
+        if (conditionCase_ == 18 &&
+            condition_ != POGOProtos.Rpc.WithUniquePokemonProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithUniquePokemonProto.newBuilder((POGOProtos.Rpc.WithUniquePokemonProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 18) {
+          withUniquePokemonBuilder_.mergeFrom(value);
+        }
+        withUniquePokemonBuilder_.setMessage(value);
+      }
+      conditionCase_ = 18;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+     */
+    public Builder clearWithUniquePokemon() {
+      if (withUniquePokemonBuilder_ == null) {
+        if (conditionCase_ == 18) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 18) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withUniquePokemonBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+     */
+    public POGOProtos.Rpc.WithUniquePokemonProto.Builder getWithUniquePokemonBuilder() {
+      return getWithUniquePokemonFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+     */
+    public POGOProtos.Rpc.WithUniquePokemonProtoOrBuilder getWithUniquePokemonOrBuilder() {
+      if ((conditionCase_ == 18) && (withUniquePokemonBuilder_ != null)) {
+        return withUniquePokemonBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 18) {
+          return (POGOProtos.Rpc.WithUniquePokemonProto) condition_;
+        }
+        return POGOProtos.Rpc.WithUniquePokemonProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithUniquePokemonProto, POGOProtos.Rpc.WithUniquePokemonProto.Builder, POGOProtos.Rpc.WithUniquePokemonProtoOrBuilder> 
+        getWithUniquePokemonFieldBuilder() {
+      if (withUniquePokemonBuilder_ == null) {
+        if (!(conditionCase_ == 18)) {
+          condition_ = POGOProtos.Rpc.WithUniquePokemonProto.getDefaultInstance();
+        }
+        withUniquePokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithUniquePokemonProto, POGOProtos.Rpc.WithUniquePokemonProto.Builder, POGOProtos.Rpc.WithUniquePokemonProtoOrBuilder>(
+                (POGOProtos.Rpc.WithUniquePokemonProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 18;
+      onChanged();;
+      return withUniquePokemonBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithNpcCombatProto, POGOProtos.Rpc.WithNpcCombatProto.Builder, POGOProtos.Rpc.WithNpcCombatProtoOrBuilder> withNpcCombatBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+     * @return Whether the withNpcCombat field is set.
+     */
+    public boolean hasWithNpcCombat() {
+      return conditionCase_ == 19;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+     * @return The withNpcCombat.
+     */
+    public POGOProtos.Rpc.WithNpcCombatProto getWithNpcCombat() {
+      if (withNpcCombatBuilder_ == null) {
+        if (conditionCase_ == 19) {
+          return (POGOProtos.Rpc.WithNpcCombatProto) condition_;
+        }
+        return POGOProtos.Rpc.WithNpcCombatProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 19) {
+          return withNpcCombatBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithNpcCombatProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+     */
+    public Builder setWithNpcCombat(POGOProtos.Rpc.WithNpcCombatProto value) {
+      if (withNpcCombatBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withNpcCombatBuilder_.setMessage(value);
+      }
+      conditionCase_ = 19;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+     */
+    public Builder setWithNpcCombat(
+        POGOProtos.Rpc.WithNpcCombatProto.Builder builderForValue) {
+      if (withNpcCombatBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withNpcCombatBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 19;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+     */
+    public Builder mergeWithNpcCombat(POGOProtos.Rpc.WithNpcCombatProto value) {
+      if (withNpcCombatBuilder_ == null) {
+        if (conditionCase_ == 19 &&
+            condition_ != POGOProtos.Rpc.WithNpcCombatProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithNpcCombatProto.newBuilder((POGOProtos.Rpc.WithNpcCombatProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 19) {
+          withNpcCombatBuilder_.mergeFrom(value);
+        }
+        withNpcCombatBuilder_.setMessage(value);
+      }
+      conditionCase_ = 19;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+     */
+    public Builder clearWithNpcCombat() {
+      if (withNpcCombatBuilder_ == null) {
+        if (conditionCase_ == 19) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 19) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withNpcCombatBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+     */
+    public POGOProtos.Rpc.WithNpcCombatProto.Builder getWithNpcCombatBuilder() {
+      return getWithNpcCombatFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+     */
+    public POGOProtos.Rpc.WithNpcCombatProtoOrBuilder getWithNpcCombatOrBuilder() {
+      if ((conditionCase_ == 19) && (withNpcCombatBuilder_ != null)) {
+        return withNpcCombatBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 19) {
+          return (POGOProtos.Rpc.WithNpcCombatProto) condition_;
+        }
+        return POGOProtos.Rpc.WithNpcCombatProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithNpcCombatProto, POGOProtos.Rpc.WithNpcCombatProto.Builder, POGOProtos.Rpc.WithNpcCombatProtoOrBuilder> 
+        getWithNpcCombatFieldBuilder() {
+      if (withNpcCombatBuilder_ == null) {
+        if (!(conditionCase_ == 19)) {
+          condition_ = POGOProtos.Rpc.WithNpcCombatProto.getDefaultInstance();
+        }
+        withNpcCombatBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithNpcCombatProto, POGOProtos.Rpc.WithNpcCombatProto.Builder, POGOProtos.Rpc.WithNpcCombatProtoOrBuilder>(
+                (POGOProtos.Rpc.WithNpcCombatProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 19;
+      onChanged();;
+      return withNpcCombatBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithPvpCombatProto, POGOProtos.Rpc.WithPvpCombatProto.Builder, POGOProtos.Rpc.WithPvpCombatProtoOrBuilder> withPvpCombatBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+     * @return Whether the withPvpCombat field is set.
+     */
+    public boolean hasWithPvpCombat() {
+      return conditionCase_ == 20;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+     * @return The withPvpCombat.
+     */
+    public POGOProtos.Rpc.WithPvpCombatProto getWithPvpCombat() {
+      if (withPvpCombatBuilder_ == null) {
+        if (conditionCase_ == 20) {
+          return (POGOProtos.Rpc.WithPvpCombatProto) condition_;
+        }
+        return POGOProtos.Rpc.WithPvpCombatProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 20) {
+          return withPvpCombatBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithPvpCombatProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+     */
+    public Builder setWithPvpCombat(POGOProtos.Rpc.WithPvpCombatProto value) {
+      if (withPvpCombatBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withPvpCombatBuilder_.setMessage(value);
+      }
+      conditionCase_ = 20;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+     */
+    public Builder setWithPvpCombat(
+        POGOProtos.Rpc.WithPvpCombatProto.Builder builderForValue) {
+      if (withPvpCombatBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withPvpCombatBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 20;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+     */
+    public Builder mergeWithPvpCombat(POGOProtos.Rpc.WithPvpCombatProto value) {
+      if (withPvpCombatBuilder_ == null) {
+        if (conditionCase_ == 20 &&
+            condition_ != POGOProtos.Rpc.WithPvpCombatProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithPvpCombatProto.newBuilder((POGOProtos.Rpc.WithPvpCombatProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 20) {
+          withPvpCombatBuilder_.mergeFrom(value);
+        }
+        withPvpCombatBuilder_.setMessage(value);
+      }
+      conditionCase_ = 20;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+     */
+    public Builder clearWithPvpCombat() {
+      if (withPvpCombatBuilder_ == null) {
+        if (conditionCase_ == 20) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 20) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withPvpCombatBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+     */
+    public POGOProtos.Rpc.WithPvpCombatProto.Builder getWithPvpCombatBuilder() {
+      return getWithPvpCombatFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+     */
+    public POGOProtos.Rpc.WithPvpCombatProtoOrBuilder getWithPvpCombatOrBuilder() {
+      if ((conditionCase_ == 20) && (withPvpCombatBuilder_ != null)) {
+        return withPvpCombatBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 20) {
+          return (POGOProtos.Rpc.WithPvpCombatProto) condition_;
+        }
+        return POGOProtos.Rpc.WithPvpCombatProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithPvpCombatProto, POGOProtos.Rpc.WithPvpCombatProto.Builder, POGOProtos.Rpc.WithPvpCombatProtoOrBuilder> 
+        getWithPvpCombatFieldBuilder() {
+      if (withPvpCombatBuilder_ == null) {
+        if (!(conditionCase_ == 20)) {
+          condition_ = POGOProtos.Rpc.WithPvpCombatProto.getDefaultInstance();
+        }
+        withPvpCombatBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithPvpCombatProto, POGOProtos.Rpc.WithPvpCombatProto.Builder, POGOProtos.Rpc.WithPvpCombatProtoOrBuilder>(
+                (POGOProtos.Rpc.WithPvpCombatProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 20;
+      onChanged();;
+      return withPvpCombatBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithLocationProto, POGOProtos.Rpc.WithLocationProto.Builder, POGOProtos.Rpc.WithLocationProtoOrBuilder> withLocationBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+     * @return Whether the withLocation field is set.
+     */
+    public boolean hasWithLocation() {
+      return conditionCase_ == 21;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+     * @return The withLocation.
+     */
+    public POGOProtos.Rpc.WithLocationProto getWithLocation() {
+      if (withLocationBuilder_ == null) {
+        if (conditionCase_ == 21) {
+          return (POGOProtos.Rpc.WithLocationProto) condition_;
+        }
+        return POGOProtos.Rpc.WithLocationProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 21) {
+          return withLocationBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithLocationProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+     */
+    public Builder setWithLocation(POGOProtos.Rpc.WithLocationProto value) {
+      if (withLocationBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withLocationBuilder_.setMessage(value);
+      }
+      conditionCase_ = 21;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+     */
+    public Builder setWithLocation(
+        POGOProtos.Rpc.WithLocationProto.Builder builderForValue) {
+      if (withLocationBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withLocationBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 21;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+     */
+    public Builder mergeWithLocation(POGOProtos.Rpc.WithLocationProto value) {
+      if (withLocationBuilder_ == null) {
+        if (conditionCase_ == 21 &&
+            condition_ != POGOProtos.Rpc.WithLocationProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithLocationProto.newBuilder((POGOProtos.Rpc.WithLocationProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 21) {
+          withLocationBuilder_.mergeFrom(value);
+        }
+        withLocationBuilder_.setMessage(value);
+      }
+      conditionCase_ = 21;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+     */
+    public Builder clearWithLocation() {
+      if (withLocationBuilder_ == null) {
+        if (conditionCase_ == 21) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 21) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withLocationBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+     */
+    public POGOProtos.Rpc.WithLocationProto.Builder getWithLocationBuilder() {
+      return getWithLocationFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+     */
+    public POGOProtos.Rpc.WithLocationProtoOrBuilder getWithLocationOrBuilder() {
+      if ((conditionCase_ == 21) && (withLocationBuilder_ != null)) {
+        return withLocationBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 21) {
+          return (POGOProtos.Rpc.WithLocationProto) condition_;
+        }
+        return POGOProtos.Rpc.WithLocationProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithLocationProto, POGOProtos.Rpc.WithLocationProto.Builder, POGOProtos.Rpc.WithLocationProtoOrBuilder> 
+        getWithLocationFieldBuilder() {
+      if (withLocationBuilder_ == null) {
+        if (!(conditionCase_ == 21)) {
+          condition_ = POGOProtos.Rpc.WithLocationProto.getDefaultInstance();
+        }
+        withLocationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithLocationProto, POGOProtos.Rpc.WithLocationProto.Builder, POGOProtos.Rpc.WithLocationProtoOrBuilder>(
+                (POGOProtos.Rpc.WithLocationProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 21;
+      onChanged();;
+      return withLocationBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithDistanceProto, POGOProtos.Rpc.WithDistanceProto.Builder, POGOProtos.Rpc.WithDistanceProtoOrBuilder> withDistanceBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+     * @return Whether the withDistance field is set.
+     */
+    public boolean hasWithDistance() {
+      return conditionCase_ == 22;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+     * @return The withDistance.
+     */
+    public POGOProtos.Rpc.WithDistanceProto getWithDistance() {
+      if (withDistanceBuilder_ == null) {
+        if (conditionCase_ == 22) {
+          return (POGOProtos.Rpc.WithDistanceProto) condition_;
+        }
+        return POGOProtos.Rpc.WithDistanceProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 22) {
+          return withDistanceBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithDistanceProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+     */
+    public Builder setWithDistance(POGOProtos.Rpc.WithDistanceProto value) {
+      if (withDistanceBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withDistanceBuilder_.setMessage(value);
+      }
+      conditionCase_ = 22;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+     */
+    public Builder setWithDistance(
+        POGOProtos.Rpc.WithDistanceProto.Builder builderForValue) {
+      if (withDistanceBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withDistanceBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 22;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+     */
+    public Builder mergeWithDistance(POGOProtos.Rpc.WithDistanceProto value) {
+      if (withDistanceBuilder_ == null) {
+        if (conditionCase_ == 22 &&
+            condition_ != POGOProtos.Rpc.WithDistanceProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithDistanceProto.newBuilder((POGOProtos.Rpc.WithDistanceProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 22) {
+          withDistanceBuilder_.mergeFrom(value);
+        }
+        withDistanceBuilder_.setMessage(value);
+      }
+      conditionCase_ = 22;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+     */
+    public Builder clearWithDistance() {
+      if (withDistanceBuilder_ == null) {
+        if (conditionCase_ == 22) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 22) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withDistanceBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+     */
+    public POGOProtos.Rpc.WithDistanceProto.Builder getWithDistanceBuilder() {
+      return getWithDistanceFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+     */
+    public POGOProtos.Rpc.WithDistanceProtoOrBuilder getWithDistanceOrBuilder() {
+      if ((conditionCase_ == 22) && (withDistanceBuilder_ != null)) {
+        return withDistanceBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 22) {
+          return (POGOProtos.Rpc.WithDistanceProto) condition_;
+        }
+        return POGOProtos.Rpc.WithDistanceProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithDistanceProto, POGOProtos.Rpc.WithDistanceProto.Builder, POGOProtos.Rpc.WithDistanceProtoOrBuilder> 
+        getWithDistanceFieldBuilder() {
+      if (withDistanceBuilder_ == null) {
+        if (!(conditionCase_ == 22)) {
+          condition_ = POGOProtos.Rpc.WithDistanceProto.getDefaultInstance();
+        }
+        withDistanceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithDistanceProto, POGOProtos.Rpc.WithDistanceProto.Builder, POGOProtos.Rpc.WithDistanceProtoOrBuilder>(
+                (POGOProtos.Rpc.WithDistanceProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 22;
+      onChanged();;
+      return withDistanceBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithInvasionCharacterProto, POGOProtos.Rpc.WithInvasionCharacterProto.Builder, POGOProtos.Rpc.WithInvasionCharacterProtoOrBuilder> withInvasionCharacterBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+     * @return Whether the withInvasionCharacter field is set.
+     */
+    public boolean hasWithInvasionCharacter() {
+      return conditionCase_ == 23;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+     * @return The withInvasionCharacter.
+     */
+    public POGOProtos.Rpc.WithInvasionCharacterProto getWithInvasionCharacter() {
+      if (withInvasionCharacterBuilder_ == null) {
+        if (conditionCase_ == 23) {
+          return (POGOProtos.Rpc.WithInvasionCharacterProto) condition_;
+        }
+        return POGOProtos.Rpc.WithInvasionCharacterProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 23) {
+          return withInvasionCharacterBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithInvasionCharacterProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+     */
+    public Builder setWithInvasionCharacter(POGOProtos.Rpc.WithInvasionCharacterProto value) {
+      if (withInvasionCharacterBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withInvasionCharacterBuilder_.setMessage(value);
+      }
+      conditionCase_ = 23;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+     */
+    public Builder setWithInvasionCharacter(
+        POGOProtos.Rpc.WithInvasionCharacterProto.Builder builderForValue) {
+      if (withInvasionCharacterBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withInvasionCharacterBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 23;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+     */
+    public Builder mergeWithInvasionCharacter(POGOProtos.Rpc.WithInvasionCharacterProto value) {
+      if (withInvasionCharacterBuilder_ == null) {
+        if (conditionCase_ == 23 &&
+            condition_ != POGOProtos.Rpc.WithInvasionCharacterProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithInvasionCharacterProto.newBuilder((POGOProtos.Rpc.WithInvasionCharacterProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 23) {
+          withInvasionCharacterBuilder_.mergeFrom(value);
+        }
+        withInvasionCharacterBuilder_.setMessage(value);
+      }
+      conditionCase_ = 23;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+     */
+    public Builder clearWithInvasionCharacter() {
+      if (withInvasionCharacterBuilder_ == null) {
+        if (conditionCase_ == 23) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 23) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withInvasionCharacterBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+     */
+    public POGOProtos.Rpc.WithInvasionCharacterProto.Builder getWithInvasionCharacterBuilder() {
+      return getWithInvasionCharacterFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+     */
+    public POGOProtos.Rpc.WithInvasionCharacterProtoOrBuilder getWithInvasionCharacterOrBuilder() {
+      if ((conditionCase_ == 23) && (withInvasionCharacterBuilder_ != null)) {
+        return withInvasionCharacterBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 23) {
+          return (POGOProtos.Rpc.WithInvasionCharacterProto) condition_;
+        }
+        return POGOProtos.Rpc.WithInvasionCharacterProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithInvasionCharacterProto, POGOProtos.Rpc.WithInvasionCharacterProto.Builder, POGOProtos.Rpc.WithInvasionCharacterProtoOrBuilder> 
+        getWithInvasionCharacterFieldBuilder() {
+      if (withInvasionCharacterBuilder_ == null) {
+        if (!(conditionCase_ == 23)) {
+          condition_ = POGOProtos.Rpc.WithInvasionCharacterProto.getDefaultInstance();
+        }
+        withInvasionCharacterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithInvasionCharacterProto, POGOProtos.Rpc.WithInvasionCharacterProto.Builder, POGOProtos.Rpc.WithInvasionCharacterProtoOrBuilder>(
+                (POGOProtos.Rpc.WithInvasionCharacterProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 23;
+      onChanged();;
+      return withInvasionCharacterBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithPokemonAlignmentProto, POGOProtos.Rpc.WithPokemonAlignmentProto.Builder, POGOProtos.Rpc.WithPokemonAlignmentProtoOrBuilder> withPokemonAlignmentBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+     * @return Whether the withPokemonAlignment field is set.
+     */
+    public boolean hasWithPokemonAlignment() {
+      return conditionCase_ == 24;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+     * @return The withPokemonAlignment.
+     */
+    public POGOProtos.Rpc.WithPokemonAlignmentProto getWithPokemonAlignment() {
+      if (withPokemonAlignmentBuilder_ == null) {
+        if (conditionCase_ == 24) {
+          return (POGOProtos.Rpc.WithPokemonAlignmentProto) condition_;
+        }
+        return POGOProtos.Rpc.WithPokemonAlignmentProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 24) {
+          return withPokemonAlignmentBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithPokemonAlignmentProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+     */
+    public Builder setWithPokemonAlignment(POGOProtos.Rpc.WithPokemonAlignmentProto value) {
+      if (withPokemonAlignmentBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withPokemonAlignmentBuilder_.setMessage(value);
+      }
+      conditionCase_ = 24;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+     */
+    public Builder setWithPokemonAlignment(
+        POGOProtos.Rpc.WithPokemonAlignmentProto.Builder builderForValue) {
+      if (withPokemonAlignmentBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withPokemonAlignmentBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 24;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+     */
+    public Builder mergeWithPokemonAlignment(POGOProtos.Rpc.WithPokemonAlignmentProto value) {
+      if (withPokemonAlignmentBuilder_ == null) {
+        if (conditionCase_ == 24 &&
+            condition_ != POGOProtos.Rpc.WithPokemonAlignmentProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithPokemonAlignmentProto.newBuilder((POGOProtos.Rpc.WithPokemonAlignmentProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 24) {
+          withPokemonAlignmentBuilder_.mergeFrom(value);
+        }
+        withPokemonAlignmentBuilder_.setMessage(value);
+      }
+      conditionCase_ = 24;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+     */
+    public Builder clearWithPokemonAlignment() {
+      if (withPokemonAlignmentBuilder_ == null) {
+        if (conditionCase_ == 24) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 24) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withPokemonAlignmentBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonAlignmentProto.Builder getWithPokemonAlignmentBuilder() {
+      return getWithPokemonAlignmentFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonAlignmentProtoOrBuilder getWithPokemonAlignmentOrBuilder() {
+      if ((conditionCase_ == 24) && (withPokemonAlignmentBuilder_ != null)) {
+        return withPokemonAlignmentBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 24) {
+          return (POGOProtos.Rpc.WithPokemonAlignmentProto) condition_;
+        }
+        return POGOProtos.Rpc.WithPokemonAlignmentProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithPokemonAlignmentProto, POGOProtos.Rpc.WithPokemonAlignmentProto.Builder, POGOProtos.Rpc.WithPokemonAlignmentProtoOrBuilder> 
+        getWithPokemonAlignmentFieldBuilder() {
+      if (withPokemonAlignmentBuilder_ == null) {
+        if (!(conditionCase_ == 24)) {
+          condition_ = POGOProtos.Rpc.WithPokemonAlignmentProto.getDefaultInstance();
+        }
+        withPokemonAlignmentBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithPokemonAlignmentProto, POGOProtos.Rpc.WithPokemonAlignmentProto.Builder, POGOProtos.Rpc.WithPokemonAlignmentProtoOrBuilder>(
+                (POGOProtos.Rpc.WithPokemonAlignmentProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 24;
+      onChanged();;
+      return withPokemonAlignmentBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithBuddyProto, POGOProtos.Rpc.WithBuddyProto.Builder, POGOProtos.Rpc.WithBuddyProtoOrBuilder> withBuddyBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+     * @return Whether the withBuddy field is set.
+     */
+    public boolean hasWithBuddy() {
+      return conditionCase_ == 25;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+     * @return The withBuddy.
+     */
+    public POGOProtos.Rpc.WithBuddyProto getWithBuddy() {
+      if (withBuddyBuilder_ == null) {
+        if (conditionCase_ == 25) {
+          return (POGOProtos.Rpc.WithBuddyProto) condition_;
+        }
+        return POGOProtos.Rpc.WithBuddyProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 25) {
+          return withBuddyBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithBuddyProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+     */
+    public Builder setWithBuddy(POGOProtos.Rpc.WithBuddyProto value) {
+      if (withBuddyBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withBuddyBuilder_.setMessage(value);
+      }
+      conditionCase_ = 25;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+     */
+    public Builder setWithBuddy(
+        POGOProtos.Rpc.WithBuddyProto.Builder builderForValue) {
+      if (withBuddyBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withBuddyBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 25;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+     */
+    public Builder mergeWithBuddy(POGOProtos.Rpc.WithBuddyProto value) {
+      if (withBuddyBuilder_ == null) {
+        if (conditionCase_ == 25 &&
+            condition_ != POGOProtos.Rpc.WithBuddyProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithBuddyProto.newBuilder((POGOProtos.Rpc.WithBuddyProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 25) {
+          withBuddyBuilder_.mergeFrom(value);
+        }
+        withBuddyBuilder_.setMessage(value);
+      }
+      conditionCase_ = 25;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+     */
+    public Builder clearWithBuddy() {
+      if (withBuddyBuilder_ == null) {
+        if (conditionCase_ == 25) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 25) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withBuddyBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+     */
+    public POGOProtos.Rpc.WithBuddyProto.Builder getWithBuddyBuilder() {
+      return getWithBuddyFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+     */
+    public POGOProtos.Rpc.WithBuddyProtoOrBuilder getWithBuddyOrBuilder() {
+      if ((conditionCase_ == 25) && (withBuddyBuilder_ != null)) {
+        return withBuddyBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 25) {
+          return (POGOProtos.Rpc.WithBuddyProto) condition_;
+        }
+        return POGOProtos.Rpc.WithBuddyProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithBuddyProto, POGOProtos.Rpc.WithBuddyProto.Builder, POGOProtos.Rpc.WithBuddyProtoOrBuilder> 
+        getWithBuddyFieldBuilder() {
+      if (withBuddyBuilder_ == null) {
+        if (!(conditionCase_ == 25)) {
+          condition_ = POGOProtos.Rpc.WithBuddyProto.getDefaultInstance();
+        }
+        withBuddyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithBuddyProto, POGOProtos.Rpc.WithBuddyProto.Builder, POGOProtos.Rpc.WithBuddyProtoOrBuilder>(
+                (POGOProtos.Rpc.WithBuddyProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 25;
+      onChanged();;
+      return withBuddyBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithDailyBuddyAffectionProto, POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder, POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder> withDailyBuddyAffectionBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+     * @return Whether the withDailyBuddyAffection field is set.
+     */
+    public boolean hasWithDailyBuddyAffection() {
+      return conditionCase_ == 26;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+     * @return The withDailyBuddyAffection.
+     */
+    public POGOProtos.Rpc.WithDailyBuddyAffectionProto getWithDailyBuddyAffection() {
+      if (withDailyBuddyAffectionBuilder_ == null) {
+        if (conditionCase_ == 26) {
+          return (POGOProtos.Rpc.WithDailyBuddyAffectionProto) condition_;
+        }
+        return POGOProtos.Rpc.WithDailyBuddyAffectionProto.getDefaultInstance();
+      } else {
+        if (conditionCase_ == 26) {
+          return withDailyBuddyAffectionBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.WithDailyBuddyAffectionProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+     */
+    public Builder setWithDailyBuddyAffection(POGOProtos.Rpc.WithDailyBuddyAffectionProto value) {
+      if (withDailyBuddyAffectionBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        condition_ = value;
+        onChanged();
+      } else {
+        withDailyBuddyAffectionBuilder_.setMessage(value);
+      }
+      conditionCase_ = 26;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+     */
+    public Builder setWithDailyBuddyAffection(
+        POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder builderForValue) {
+      if (withDailyBuddyAffectionBuilder_ == null) {
+        condition_ = builderForValue.build();
+        onChanged();
+      } else {
+        withDailyBuddyAffectionBuilder_.setMessage(builderForValue.build());
+      }
+      conditionCase_ = 26;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+     */
+    public Builder mergeWithDailyBuddyAffection(POGOProtos.Rpc.WithDailyBuddyAffectionProto value) {
+      if (withDailyBuddyAffectionBuilder_ == null) {
+        if (conditionCase_ == 26 &&
+            condition_ != POGOProtos.Rpc.WithDailyBuddyAffectionProto.getDefaultInstance()) {
+          condition_ = POGOProtos.Rpc.WithDailyBuddyAffectionProto.newBuilder((POGOProtos.Rpc.WithDailyBuddyAffectionProto) condition_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          condition_ = value;
+        }
+        onChanged();
+      } else {
+        if (conditionCase_ == 26) {
+          withDailyBuddyAffectionBuilder_.mergeFrom(value);
+        }
+        withDailyBuddyAffectionBuilder_.setMessage(value);
+      }
+      conditionCase_ = 26;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+     */
+    public Builder clearWithDailyBuddyAffection() {
+      if (withDailyBuddyAffectionBuilder_ == null) {
+        if (conditionCase_ == 26) {
+          conditionCase_ = 0;
+          condition_ = null;
+          onChanged();
+        }
+      } else {
+        if (conditionCase_ == 26) {
+          conditionCase_ = 0;
+          condition_ = null;
+        }
+        withDailyBuddyAffectionBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+     */
+    public POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder getWithDailyBuddyAffectionBuilder() {
+      return getWithDailyBuddyAffectionFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+     */
+    public POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder getWithDailyBuddyAffectionOrBuilder() {
+      if ((conditionCase_ == 26) && (withDailyBuddyAffectionBuilder_ != null)) {
+        return withDailyBuddyAffectionBuilder_.getMessageOrBuilder();
+      } else {
+        if (conditionCase_ == 26) {
+          return (POGOProtos.Rpc.WithDailyBuddyAffectionProto) condition_;
+        }
+        return POGOProtos.Rpc.WithDailyBuddyAffectionProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.WithDailyBuddyAffectionProto, POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder, POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder> 
+        getWithDailyBuddyAffectionFieldBuilder() {
+      if (withDailyBuddyAffectionBuilder_ == null) {
+        if (!(conditionCase_ == 26)) {
+          condition_ = POGOProtos.Rpc.WithDailyBuddyAffectionProto.getDefaultInstance();
+        }
+        withDailyBuddyAffectionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.WithDailyBuddyAffectionProto, POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder, POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder>(
+                (POGOProtos.Rpc.WithDailyBuddyAffectionProto) condition_,
+                getParentForChildren(),
+                isClean());
+        condition_ = null;
+      }
+      conditionCase_ = 26;
+      onChanged();;
+      return withDailyBuddyAffectionBuilder_;
     }
 
     private int type_ = 0;
@@ -2472,2981 +6091,6 @@ private static final long serialVersionUID = 0L;
       type_ = 0;
       onChanged();
       return this;
-    }
-
-    private POGOProtos.Rpc.WithPokemonTypeProto withPokemonType_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> withPokemonTypeBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-     * @return Whether the withPokemonType field is set.
-     */
-    public boolean hasWithPokemonType() {
-      return withPokemonTypeBuilder_ != null || withPokemonType_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-     * @return The withPokemonType.
-     */
-    public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
-      if (withPokemonTypeBuilder_ == null) {
-        return withPokemonType_ == null ? POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance() : withPokemonType_;
-      } else {
-        return withPokemonTypeBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-     */
-    public Builder setWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
-      if (withPokemonTypeBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withPokemonType_ = value;
-        onChanged();
-      } else {
-        withPokemonTypeBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-     */
-    public Builder setWithPokemonType(
-        POGOProtos.Rpc.WithPokemonTypeProto.Builder builderForValue) {
-      if (withPokemonTypeBuilder_ == null) {
-        withPokemonType_ = builderForValue.build();
-        onChanged();
-      } else {
-        withPokemonTypeBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-     */
-    public Builder mergeWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
-      if (withPokemonTypeBuilder_ == null) {
-        if (withPokemonType_ != null) {
-          withPokemonType_ =
-            POGOProtos.Rpc.WithPokemonTypeProto.newBuilder(withPokemonType_).mergeFrom(value).buildPartial();
-        } else {
-          withPokemonType_ = value;
-        }
-        onChanged();
-      } else {
-        withPokemonTypeBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-     */
-    public Builder clearWithPokemonType() {
-      if (withPokemonTypeBuilder_ == null) {
-        withPokemonType_ = null;
-        onChanged();
-      } else {
-        withPokemonType_ = null;
-        withPokemonTypeBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonTypeProto.Builder getWithPokemonTypeBuilder() {
-      
-      onChanged();
-      return getWithPokemonTypeFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
-      if (withPokemonTypeBuilder_ != null) {
-        return withPokemonTypeBuilder_.getMessageOrBuilder();
-      } else {
-        return withPokemonType_ == null ?
-            POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance() : withPokemonType_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 2;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> 
-        getWithPokemonTypeFieldBuilder() {
-      if (withPokemonTypeBuilder_ == null) {
-        withPokemonTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder>(
-                getWithPokemonType(),
-                getParentForChildren(),
-                isClean());
-        withPokemonType_ = null;
-      }
-      return withPokemonTypeBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithPokemonCategoryProto withPokemonCategory_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> withPokemonCategoryBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-     * @return Whether the withPokemonCategory field is set.
-     */
-    public boolean hasWithPokemonCategory() {
-      return withPokemonCategoryBuilder_ != null || withPokemonCategory_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-     * @return The withPokemonCategory.
-     */
-    public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
-      if (withPokemonCategoryBuilder_ == null) {
-        return withPokemonCategory_ == null ? POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance() : withPokemonCategory_;
-      } else {
-        return withPokemonCategoryBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-     */
-    public Builder setWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
-      if (withPokemonCategoryBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withPokemonCategory_ = value;
-        onChanged();
-      } else {
-        withPokemonCategoryBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-     */
-    public Builder setWithPokemonCategory(
-        POGOProtos.Rpc.WithPokemonCategoryProto.Builder builderForValue) {
-      if (withPokemonCategoryBuilder_ == null) {
-        withPokemonCategory_ = builderForValue.build();
-        onChanged();
-      } else {
-        withPokemonCategoryBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-     */
-    public Builder mergeWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
-      if (withPokemonCategoryBuilder_ == null) {
-        if (withPokemonCategory_ != null) {
-          withPokemonCategory_ =
-            POGOProtos.Rpc.WithPokemonCategoryProto.newBuilder(withPokemonCategory_).mergeFrom(value).buildPartial();
-        } else {
-          withPokemonCategory_ = value;
-        }
-        onChanged();
-      } else {
-        withPokemonCategoryBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-     */
-    public Builder clearWithPokemonCategory() {
-      if (withPokemonCategoryBuilder_ == null) {
-        withPokemonCategory_ = null;
-        onChanged();
-      } else {
-        withPokemonCategory_ = null;
-        withPokemonCategoryBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonCategoryProto.Builder getWithPokemonCategoryBuilder() {
-      
-      onChanged();
-      return getWithPokemonCategoryFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
-      if (withPokemonCategoryBuilder_ != null) {
-        return withPokemonCategoryBuilder_.getMessageOrBuilder();
-      } else {
-        return withPokemonCategory_ == null ?
-            POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance() : withPokemonCategory_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 3;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> 
-        getWithPokemonCategoryFieldBuilder() {
-      if (withPokemonCategoryBuilder_ == null) {
-        withPokemonCategoryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder>(
-                getWithPokemonCategory(),
-                getParentForChildren(),
-                isClean());
-        withPokemonCategory_ = null;
-      }
-      return withPokemonCategoryBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithWeatherBoostProto withWeatherBoost_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithWeatherBoostProto, POGOProtos.Rpc.WithWeatherBoostProto.Builder, POGOProtos.Rpc.WithWeatherBoostProtoOrBuilder> withWeatherBoostBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-     * @return Whether the withWeatherBoost field is set.
-     */
-    public boolean hasWithWeatherBoost() {
-      return withWeatherBoostBuilder_ != null || withWeatherBoost_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-     * @return The withWeatherBoost.
-     */
-    public POGOProtos.Rpc.WithWeatherBoostProto getWithWeatherBoost() {
-      if (withWeatherBoostBuilder_ == null) {
-        return withWeatherBoost_ == null ? POGOProtos.Rpc.WithWeatherBoostProto.getDefaultInstance() : withWeatherBoost_;
-      } else {
-        return withWeatherBoostBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-     */
-    public Builder setWithWeatherBoost(POGOProtos.Rpc.WithWeatherBoostProto value) {
-      if (withWeatherBoostBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withWeatherBoost_ = value;
-        onChanged();
-      } else {
-        withWeatherBoostBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-     */
-    public Builder setWithWeatherBoost(
-        POGOProtos.Rpc.WithWeatherBoostProto.Builder builderForValue) {
-      if (withWeatherBoostBuilder_ == null) {
-        withWeatherBoost_ = builderForValue.build();
-        onChanged();
-      } else {
-        withWeatherBoostBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-     */
-    public Builder mergeWithWeatherBoost(POGOProtos.Rpc.WithWeatherBoostProto value) {
-      if (withWeatherBoostBuilder_ == null) {
-        if (withWeatherBoost_ != null) {
-          withWeatherBoost_ =
-            POGOProtos.Rpc.WithWeatherBoostProto.newBuilder(withWeatherBoost_).mergeFrom(value).buildPartial();
-        } else {
-          withWeatherBoost_ = value;
-        }
-        onChanged();
-      } else {
-        withWeatherBoostBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-     */
-    public Builder clearWithWeatherBoost() {
-      if (withWeatherBoostBuilder_ == null) {
-        withWeatherBoost_ = null;
-        onChanged();
-      } else {
-        withWeatherBoost_ = null;
-        withWeatherBoostBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-     */
-    public POGOProtos.Rpc.WithWeatherBoostProto.Builder getWithWeatherBoostBuilder() {
-      
-      onChanged();
-      return getWithWeatherBoostFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-     */
-    public POGOProtos.Rpc.WithWeatherBoostProtoOrBuilder getWithWeatherBoostOrBuilder() {
-      if (withWeatherBoostBuilder_ != null) {
-        return withWeatherBoostBuilder_.getMessageOrBuilder();
-      } else {
-        return withWeatherBoost_ == null ?
-            POGOProtos.Rpc.WithWeatherBoostProto.getDefaultInstance() : withWeatherBoost_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWeatherBoostProto with_weather_boost = 4;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithWeatherBoostProto, POGOProtos.Rpc.WithWeatherBoostProto.Builder, POGOProtos.Rpc.WithWeatherBoostProtoOrBuilder> 
-        getWithWeatherBoostFieldBuilder() {
-      if (withWeatherBoostBuilder_ == null) {
-        withWeatherBoostBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithWeatherBoostProto, POGOProtos.Rpc.WithWeatherBoostProto.Builder, POGOProtos.Rpc.WithWeatherBoostProtoOrBuilder>(
-                getWithWeatherBoost(),
-                getParentForChildren(),
-                isClean());
-        withWeatherBoost_ = null;
-      }
-      return withWeatherBoostBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithDailyCaptureBonusProto withDailyCaptureBonus_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithDailyCaptureBonusProto, POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder, POGOProtos.Rpc.WithDailyCaptureBonusProtoOrBuilder> withDailyCaptureBonusBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-     * @return Whether the withDailyCaptureBonus field is set.
-     */
-    public boolean hasWithDailyCaptureBonus() {
-      return withDailyCaptureBonusBuilder_ != null || withDailyCaptureBonus_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-     * @return The withDailyCaptureBonus.
-     */
-    public POGOProtos.Rpc.WithDailyCaptureBonusProto getWithDailyCaptureBonus() {
-      if (withDailyCaptureBonusBuilder_ == null) {
-        return withDailyCaptureBonus_ == null ? POGOProtos.Rpc.WithDailyCaptureBonusProto.getDefaultInstance() : withDailyCaptureBonus_;
-      } else {
-        return withDailyCaptureBonusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-     */
-    public Builder setWithDailyCaptureBonus(POGOProtos.Rpc.WithDailyCaptureBonusProto value) {
-      if (withDailyCaptureBonusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withDailyCaptureBonus_ = value;
-        onChanged();
-      } else {
-        withDailyCaptureBonusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-     */
-    public Builder setWithDailyCaptureBonus(
-        POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder builderForValue) {
-      if (withDailyCaptureBonusBuilder_ == null) {
-        withDailyCaptureBonus_ = builderForValue.build();
-        onChanged();
-      } else {
-        withDailyCaptureBonusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-     */
-    public Builder mergeWithDailyCaptureBonus(POGOProtos.Rpc.WithDailyCaptureBonusProto value) {
-      if (withDailyCaptureBonusBuilder_ == null) {
-        if (withDailyCaptureBonus_ != null) {
-          withDailyCaptureBonus_ =
-            POGOProtos.Rpc.WithDailyCaptureBonusProto.newBuilder(withDailyCaptureBonus_).mergeFrom(value).buildPartial();
-        } else {
-          withDailyCaptureBonus_ = value;
-        }
-        onChanged();
-      } else {
-        withDailyCaptureBonusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-     */
-    public Builder clearWithDailyCaptureBonus() {
-      if (withDailyCaptureBonusBuilder_ == null) {
-        withDailyCaptureBonus_ = null;
-        onChanged();
-      } else {
-        withDailyCaptureBonus_ = null;
-        withDailyCaptureBonusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-     */
-    public POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder getWithDailyCaptureBonusBuilder() {
-      
-      onChanged();
-      return getWithDailyCaptureBonusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-     */
-    public POGOProtos.Rpc.WithDailyCaptureBonusProtoOrBuilder getWithDailyCaptureBonusOrBuilder() {
-      if (withDailyCaptureBonusBuilder_ != null) {
-        return withDailyCaptureBonusBuilder_.getMessageOrBuilder();
-      } else {
-        return withDailyCaptureBonus_ == null ?
-            POGOProtos.Rpc.WithDailyCaptureBonusProto.getDefaultInstance() : withDailyCaptureBonus_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyCaptureBonusProto with_daily_capture_bonus = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithDailyCaptureBonusProto, POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder, POGOProtos.Rpc.WithDailyCaptureBonusProtoOrBuilder> 
-        getWithDailyCaptureBonusFieldBuilder() {
-      if (withDailyCaptureBonusBuilder_ == null) {
-        withDailyCaptureBonusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithDailyCaptureBonusProto, POGOProtos.Rpc.WithDailyCaptureBonusProto.Builder, POGOProtos.Rpc.WithDailyCaptureBonusProtoOrBuilder>(
-                getWithDailyCaptureBonus(),
-                getParentForChildren(),
-                isClean());
-        withDailyCaptureBonus_ = null;
-      }
-      return withDailyCaptureBonusBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithDailySpinBonusProto withDailySpinBonus_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithDailySpinBonusProto, POGOProtos.Rpc.WithDailySpinBonusProto.Builder, POGOProtos.Rpc.WithDailySpinBonusProtoOrBuilder> withDailySpinBonusBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-     * @return Whether the withDailySpinBonus field is set.
-     */
-    public boolean hasWithDailySpinBonus() {
-      return withDailySpinBonusBuilder_ != null || withDailySpinBonus_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-     * @return The withDailySpinBonus.
-     */
-    public POGOProtos.Rpc.WithDailySpinBonusProto getWithDailySpinBonus() {
-      if (withDailySpinBonusBuilder_ == null) {
-        return withDailySpinBonus_ == null ? POGOProtos.Rpc.WithDailySpinBonusProto.getDefaultInstance() : withDailySpinBonus_;
-      } else {
-        return withDailySpinBonusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-     */
-    public Builder setWithDailySpinBonus(POGOProtos.Rpc.WithDailySpinBonusProto value) {
-      if (withDailySpinBonusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withDailySpinBonus_ = value;
-        onChanged();
-      } else {
-        withDailySpinBonusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-     */
-    public Builder setWithDailySpinBonus(
-        POGOProtos.Rpc.WithDailySpinBonusProto.Builder builderForValue) {
-      if (withDailySpinBonusBuilder_ == null) {
-        withDailySpinBonus_ = builderForValue.build();
-        onChanged();
-      } else {
-        withDailySpinBonusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-     */
-    public Builder mergeWithDailySpinBonus(POGOProtos.Rpc.WithDailySpinBonusProto value) {
-      if (withDailySpinBonusBuilder_ == null) {
-        if (withDailySpinBonus_ != null) {
-          withDailySpinBonus_ =
-            POGOProtos.Rpc.WithDailySpinBonusProto.newBuilder(withDailySpinBonus_).mergeFrom(value).buildPartial();
-        } else {
-          withDailySpinBonus_ = value;
-        }
-        onChanged();
-      } else {
-        withDailySpinBonusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-     */
-    public Builder clearWithDailySpinBonus() {
-      if (withDailySpinBonusBuilder_ == null) {
-        withDailySpinBonus_ = null;
-        onChanged();
-      } else {
-        withDailySpinBonus_ = null;
-        withDailySpinBonusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-     */
-    public POGOProtos.Rpc.WithDailySpinBonusProto.Builder getWithDailySpinBonusBuilder() {
-      
-      onChanged();
-      return getWithDailySpinBonusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-     */
-    public POGOProtos.Rpc.WithDailySpinBonusProtoOrBuilder getWithDailySpinBonusOrBuilder() {
-      if (withDailySpinBonusBuilder_ != null) {
-        return withDailySpinBonusBuilder_.getMessageOrBuilder();
-      } else {
-        return withDailySpinBonus_ == null ?
-            POGOProtos.Rpc.WithDailySpinBonusProto.getDefaultInstance() : withDailySpinBonus_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailySpinBonusProto with_daily_spin_bonus = 6;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithDailySpinBonusProto, POGOProtos.Rpc.WithDailySpinBonusProto.Builder, POGOProtos.Rpc.WithDailySpinBonusProtoOrBuilder> 
-        getWithDailySpinBonusFieldBuilder() {
-      if (withDailySpinBonusBuilder_ == null) {
-        withDailySpinBonusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithDailySpinBonusProto, POGOProtos.Rpc.WithDailySpinBonusProto.Builder, POGOProtos.Rpc.WithDailySpinBonusProtoOrBuilder>(
-                getWithDailySpinBonus(),
-                getParentForChildren(),
-                isClean());
-        withDailySpinBonus_ = null;
-      }
-      return withDailySpinBonusBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithWinRaidStatusProto withWinRaidStatus_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithWinRaidStatusProto, POGOProtos.Rpc.WithWinRaidStatusProto.Builder, POGOProtos.Rpc.WithWinRaidStatusProtoOrBuilder> withWinRaidStatusBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-     * @return Whether the withWinRaidStatus field is set.
-     */
-    public boolean hasWithWinRaidStatus() {
-      return withWinRaidStatusBuilder_ != null || withWinRaidStatus_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-     * @return The withWinRaidStatus.
-     */
-    public POGOProtos.Rpc.WithWinRaidStatusProto getWithWinRaidStatus() {
-      if (withWinRaidStatusBuilder_ == null) {
-        return withWinRaidStatus_ == null ? POGOProtos.Rpc.WithWinRaidStatusProto.getDefaultInstance() : withWinRaidStatus_;
-      } else {
-        return withWinRaidStatusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-     */
-    public Builder setWithWinRaidStatus(POGOProtos.Rpc.WithWinRaidStatusProto value) {
-      if (withWinRaidStatusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withWinRaidStatus_ = value;
-        onChanged();
-      } else {
-        withWinRaidStatusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-     */
-    public Builder setWithWinRaidStatus(
-        POGOProtos.Rpc.WithWinRaidStatusProto.Builder builderForValue) {
-      if (withWinRaidStatusBuilder_ == null) {
-        withWinRaidStatus_ = builderForValue.build();
-        onChanged();
-      } else {
-        withWinRaidStatusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-     */
-    public Builder mergeWithWinRaidStatus(POGOProtos.Rpc.WithWinRaidStatusProto value) {
-      if (withWinRaidStatusBuilder_ == null) {
-        if (withWinRaidStatus_ != null) {
-          withWinRaidStatus_ =
-            POGOProtos.Rpc.WithWinRaidStatusProto.newBuilder(withWinRaidStatus_).mergeFrom(value).buildPartial();
-        } else {
-          withWinRaidStatus_ = value;
-        }
-        onChanged();
-      } else {
-        withWinRaidStatusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-     */
-    public Builder clearWithWinRaidStatus() {
-      if (withWinRaidStatusBuilder_ == null) {
-        withWinRaidStatus_ = null;
-        onChanged();
-      } else {
-        withWinRaidStatus_ = null;
-        withWinRaidStatusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-     */
-    public POGOProtos.Rpc.WithWinRaidStatusProto.Builder getWithWinRaidStatusBuilder() {
-      
-      onChanged();
-      return getWithWinRaidStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-     */
-    public POGOProtos.Rpc.WithWinRaidStatusProtoOrBuilder getWithWinRaidStatusOrBuilder() {
-      if (withWinRaidStatusBuilder_ != null) {
-        return withWinRaidStatusBuilder_.getMessageOrBuilder();
-      } else {
-        return withWinRaidStatus_ == null ?
-            POGOProtos.Rpc.WithWinRaidStatusProto.getDefaultInstance() : withWinRaidStatus_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinRaidStatusProto with_win_raid_status = 7;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithWinRaidStatusProto, POGOProtos.Rpc.WithWinRaidStatusProto.Builder, POGOProtos.Rpc.WithWinRaidStatusProtoOrBuilder> 
-        getWithWinRaidStatusFieldBuilder() {
-      if (withWinRaidStatusBuilder_ == null) {
-        withWinRaidStatusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithWinRaidStatusProto, POGOProtos.Rpc.WithWinRaidStatusProto.Builder, POGOProtos.Rpc.WithWinRaidStatusProtoOrBuilder>(
-                getWithWinRaidStatus(),
-                getParentForChildren(),
-                isClean());
-        withWinRaidStatus_ = null;
-      }
-      return withWinRaidStatusBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithRaidLevelProto withRaidLevel_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithRaidLevelProto, POGOProtos.Rpc.WithRaidLevelProto.Builder, POGOProtos.Rpc.WithRaidLevelProtoOrBuilder> withRaidLevelBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-     * @return Whether the withRaidLevel field is set.
-     */
-    public boolean hasWithRaidLevel() {
-      return withRaidLevelBuilder_ != null || withRaidLevel_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-     * @return The withRaidLevel.
-     */
-    public POGOProtos.Rpc.WithRaidLevelProto getWithRaidLevel() {
-      if (withRaidLevelBuilder_ == null) {
-        return withRaidLevel_ == null ? POGOProtos.Rpc.WithRaidLevelProto.getDefaultInstance() : withRaidLevel_;
-      } else {
-        return withRaidLevelBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-     */
-    public Builder setWithRaidLevel(POGOProtos.Rpc.WithRaidLevelProto value) {
-      if (withRaidLevelBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withRaidLevel_ = value;
-        onChanged();
-      } else {
-        withRaidLevelBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-     */
-    public Builder setWithRaidLevel(
-        POGOProtos.Rpc.WithRaidLevelProto.Builder builderForValue) {
-      if (withRaidLevelBuilder_ == null) {
-        withRaidLevel_ = builderForValue.build();
-        onChanged();
-      } else {
-        withRaidLevelBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-     */
-    public Builder mergeWithRaidLevel(POGOProtos.Rpc.WithRaidLevelProto value) {
-      if (withRaidLevelBuilder_ == null) {
-        if (withRaidLevel_ != null) {
-          withRaidLevel_ =
-            POGOProtos.Rpc.WithRaidLevelProto.newBuilder(withRaidLevel_).mergeFrom(value).buildPartial();
-        } else {
-          withRaidLevel_ = value;
-        }
-        onChanged();
-      } else {
-        withRaidLevelBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-     */
-    public Builder clearWithRaidLevel() {
-      if (withRaidLevelBuilder_ == null) {
-        withRaidLevel_ = null;
-        onChanged();
-      } else {
-        withRaidLevel_ = null;
-        withRaidLevelBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-     */
-    public POGOProtos.Rpc.WithRaidLevelProto.Builder getWithRaidLevelBuilder() {
-      
-      onChanged();
-      return getWithRaidLevelFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-     */
-    public POGOProtos.Rpc.WithRaidLevelProtoOrBuilder getWithRaidLevelOrBuilder() {
-      if (withRaidLevelBuilder_ != null) {
-        return withRaidLevelBuilder_.getMessageOrBuilder();
-      } else {
-        return withRaidLevel_ == null ?
-            POGOProtos.Rpc.WithRaidLevelProto.getDefaultInstance() : withRaidLevel_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithRaidLevelProto with_raid_level = 8;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithRaidLevelProto, POGOProtos.Rpc.WithRaidLevelProto.Builder, POGOProtos.Rpc.WithRaidLevelProtoOrBuilder> 
-        getWithRaidLevelFieldBuilder() {
-      if (withRaidLevelBuilder_ == null) {
-        withRaidLevelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithRaidLevelProto, POGOProtos.Rpc.WithRaidLevelProto.Builder, POGOProtos.Rpc.WithRaidLevelProtoOrBuilder>(
-                getWithRaidLevel(),
-                getParentForChildren(),
-                isClean());
-        withRaidLevel_ = null;
-      }
-      return withRaidLevelBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithThrowTypeProto withThrowType_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithThrowTypeProto, POGOProtos.Rpc.WithThrowTypeProto.Builder, POGOProtos.Rpc.WithThrowTypeProtoOrBuilder> withThrowTypeBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-     * @return Whether the withThrowType field is set.
-     */
-    public boolean hasWithThrowType() {
-      return withThrowTypeBuilder_ != null || withThrowType_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-     * @return The withThrowType.
-     */
-    public POGOProtos.Rpc.WithThrowTypeProto getWithThrowType() {
-      if (withThrowTypeBuilder_ == null) {
-        return withThrowType_ == null ? POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance() : withThrowType_;
-      } else {
-        return withThrowTypeBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-     */
-    public Builder setWithThrowType(POGOProtos.Rpc.WithThrowTypeProto value) {
-      if (withThrowTypeBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withThrowType_ = value;
-        onChanged();
-      } else {
-        withThrowTypeBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-     */
-    public Builder setWithThrowType(
-        POGOProtos.Rpc.WithThrowTypeProto.Builder builderForValue) {
-      if (withThrowTypeBuilder_ == null) {
-        withThrowType_ = builderForValue.build();
-        onChanged();
-      } else {
-        withThrowTypeBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-     */
-    public Builder mergeWithThrowType(POGOProtos.Rpc.WithThrowTypeProto value) {
-      if (withThrowTypeBuilder_ == null) {
-        if (withThrowType_ != null) {
-          withThrowType_ =
-            POGOProtos.Rpc.WithThrowTypeProto.newBuilder(withThrowType_).mergeFrom(value).buildPartial();
-        } else {
-          withThrowType_ = value;
-        }
-        onChanged();
-      } else {
-        withThrowTypeBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-     */
-    public Builder clearWithThrowType() {
-      if (withThrowTypeBuilder_ == null) {
-        withThrowType_ = null;
-        onChanged();
-      } else {
-        withThrowType_ = null;
-        withThrowTypeBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-     */
-    public POGOProtos.Rpc.WithThrowTypeProto.Builder getWithThrowTypeBuilder() {
-      
-      onChanged();
-      return getWithThrowTypeFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-     */
-    public POGOProtos.Rpc.WithThrowTypeProtoOrBuilder getWithThrowTypeOrBuilder() {
-      if (withThrowTypeBuilder_ != null) {
-        return withThrowTypeBuilder_.getMessageOrBuilder();
-      } else {
-        return withThrowType_ == null ?
-            POGOProtos.Rpc.WithThrowTypeProto.getDefaultInstance() : withThrowType_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithThrowTypeProto with_throw_type = 9;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithThrowTypeProto, POGOProtos.Rpc.WithThrowTypeProto.Builder, POGOProtos.Rpc.WithThrowTypeProtoOrBuilder> 
-        getWithThrowTypeFieldBuilder() {
-      if (withThrowTypeBuilder_ == null) {
-        withThrowTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithThrowTypeProto, POGOProtos.Rpc.WithThrowTypeProto.Builder, POGOProtos.Rpc.WithThrowTypeProtoOrBuilder>(
-                getWithThrowType(),
-                getParentForChildren(),
-                isClean());
-        withThrowType_ = null;
-      }
-      return withThrowTypeBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithWinGymBattleStatusProto withWinGymBattleStatus_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithWinGymBattleStatusProto, POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder, POGOProtos.Rpc.WithWinGymBattleStatusProtoOrBuilder> withWinGymBattleStatusBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-     * @return Whether the withWinGymBattleStatus field is set.
-     */
-    public boolean hasWithWinGymBattleStatus() {
-      return withWinGymBattleStatusBuilder_ != null || withWinGymBattleStatus_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-     * @return The withWinGymBattleStatus.
-     */
-    public POGOProtos.Rpc.WithWinGymBattleStatusProto getWithWinGymBattleStatus() {
-      if (withWinGymBattleStatusBuilder_ == null) {
-        return withWinGymBattleStatus_ == null ? POGOProtos.Rpc.WithWinGymBattleStatusProto.getDefaultInstance() : withWinGymBattleStatus_;
-      } else {
-        return withWinGymBattleStatusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-     */
-    public Builder setWithWinGymBattleStatus(POGOProtos.Rpc.WithWinGymBattleStatusProto value) {
-      if (withWinGymBattleStatusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withWinGymBattleStatus_ = value;
-        onChanged();
-      } else {
-        withWinGymBattleStatusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-     */
-    public Builder setWithWinGymBattleStatus(
-        POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder builderForValue) {
-      if (withWinGymBattleStatusBuilder_ == null) {
-        withWinGymBattleStatus_ = builderForValue.build();
-        onChanged();
-      } else {
-        withWinGymBattleStatusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-     */
-    public Builder mergeWithWinGymBattleStatus(POGOProtos.Rpc.WithWinGymBattleStatusProto value) {
-      if (withWinGymBattleStatusBuilder_ == null) {
-        if (withWinGymBattleStatus_ != null) {
-          withWinGymBattleStatus_ =
-            POGOProtos.Rpc.WithWinGymBattleStatusProto.newBuilder(withWinGymBattleStatus_).mergeFrom(value).buildPartial();
-        } else {
-          withWinGymBattleStatus_ = value;
-        }
-        onChanged();
-      } else {
-        withWinGymBattleStatusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-     */
-    public Builder clearWithWinGymBattleStatus() {
-      if (withWinGymBattleStatusBuilder_ == null) {
-        withWinGymBattleStatus_ = null;
-        onChanged();
-      } else {
-        withWinGymBattleStatus_ = null;
-        withWinGymBattleStatusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-     */
-    public POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder getWithWinGymBattleStatusBuilder() {
-      
-      onChanged();
-      return getWithWinGymBattleStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-     */
-    public POGOProtos.Rpc.WithWinGymBattleStatusProtoOrBuilder getWithWinGymBattleStatusOrBuilder() {
-      if (withWinGymBattleStatusBuilder_ != null) {
-        return withWinGymBattleStatusBuilder_.getMessageOrBuilder();
-      } else {
-        return withWinGymBattleStatus_ == null ?
-            POGOProtos.Rpc.WithWinGymBattleStatusProto.getDefaultInstance() : withWinGymBattleStatus_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinGymBattleStatusProto with_win_gym_battle_status = 10;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithWinGymBattleStatusProto, POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder, POGOProtos.Rpc.WithWinGymBattleStatusProtoOrBuilder> 
-        getWithWinGymBattleStatusFieldBuilder() {
-      if (withWinGymBattleStatusBuilder_ == null) {
-        withWinGymBattleStatusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithWinGymBattleStatusProto, POGOProtos.Rpc.WithWinGymBattleStatusProto.Builder, POGOProtos.Rpc.WithWinGymBattleStatusProtoOrBuilder>(
-                getWithWinGymBattleStatus(),
-                getParentForChildren(),
-                isClean());
-        withWinGymBattleStatus_ = null;
-      }
-      return withWinGymBattleStatusBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto withSuperEffectiveChargeMove_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProtoOrBuilder> withSuperEffectiveChargeMoveBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-     * @return Whether the withSuperEffectiveChargeMove field is set.
-     */
-    public boolean hasWithSuperEffectiveChargeMove() {
-      return withSuperEffectiveChargeMoveBuilder_ != null || withSuperEffectiveChargeMove_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-     * @return The withSuperEffectiveChargeMove.
-     */
-    public POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto getWithSuperEffectiveChargeMove() {
-      if (withSuperEffectiveChargeMoveBuilder_ == null) {
-        return withSuperEffectiveChargeMove_ == null ? POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.getDefaultInstance() : withSuperEffectiveChargeMove_;
-      } else {
-        return withSuperEffectiveChargeMoveBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-     */
-    public Builder setWithSuperEffectiveChargeMove(POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto value) {
-      if (withSuperEffectiveChargeMoveBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withSuperEffectiveChargeMove_ = value;
-        onChanged();
-      } else {
-        withSuperEffectiveChargeMoveBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-     */
-    public Builder setWithSuperEffectiveChargeMove(
-        POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder builderForValue) {
-      if (withSuperEffectiveChargeMoveBuilder_ == null) {
-        withSuperEffectiveChargeMove_ = builderForValue.build();
-        onChanged();
-      } else {
-        withSuperEffectiveChargeMoveBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-     */
-    public Builder mergeWithSuperEffectiveChargeMove(POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto value) {
-      if (withSuperEffectiveChargeMoveBuilder_ == null) {
-        if (withSuperEffectiveChargeMove_ != null) {
-          withSuperEffectiveChargeMove_ =
-            POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.newBuilder(withSuperEffectiveChargeMove_).mergeFrom(value).buildPartial();
-        } else {
-          withSuperEffectiveChargeMove_ = value;
-        }
-        onChanged();
-      } else {
-        withSuperEffectiveChargeMoveBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-     */
-    public Builder clearWithSuperEffectiveChargeMove() {
-      if (withSuperEffectiveChargeMoveBuilder_ == null) {
-        withSuperEffectiveChargeMove_ = null;
-        onChanged();
-      } else {
-        withSuperEffectiveChargeMove_ = null;
-        withSuperEffectiveChargeMoveBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-     */
-    public POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder getWithSuperEffectiveChargeMoveBuilder() {
-      
-      onChanged();
-      return getWithSuperEffectiveChargeMoveFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-     */
-    public POGOProtos.Rpc.WithSuperEffectiveChargeMoveProtoOrBuilder getWithSuperEffectiveChargeMoveOrBuilder() {
-      if (withSuperEffectiveChargeMoveBuilder_ != null) {
-        return withSuperEffectiveChargeMoveBuilder_.getMessageOrBuilder();
-      } else {
-        return withSuperEffectiveChargeMove_ == null ?
-            POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.getDefaultInstance() : withSuperEffectiveChargeMove_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto with_super_effective_charge_move = 11;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProtoOrBuilder> 
-        getWithSuperEffectiveChargeMoveFieldBuilder() {
-      if (withSuperEffectiveChargeMoveBuilder_ == null) {
-        withSuperEffectiveChargeMoveBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProto.Builder, POGOProtos.Rpc.WithSuperEffectiveChargeMoveProtoOrBuilder>(
-                getWithSuperEffectiveChargeMove(),
-                getParentForChildren(),
-                isClean());
-        withSuperEffectiveChargeMove_ = null;
-      }
-      return withSuperEffectiveChargeMoveBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithItemProto withItem_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithItemProto, POGOProtos.Rpc.WithItemProto.Builder, POGOProtos.Rpc.WithItemProtoOrBuilder> withItemBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-     * @return Whether the withItem field is set.
-     */
-    public boolean hasWithItem() {
-      return withItemBuilder_ != null || withItem_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-     * @return The withItem.
-     */
-    public POGOProtos.Rpc.WithItemProto getWithItem() {
-      if (withItemBuilder_ == null) {
-        return withItem_ == null ? POGOProtos.Rpc.WithItemProto.getDefaultInstance() : withItem_;
-      } else {
-        return withItemBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-     */
-    public Builder setWithItem(POGOProtos.Rpc.WithItemProto value) {
-      if (withItemBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withItem_ = value;
-        onChanged();
-      } else {
-        withItemBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-     */
-    public Builder setWithItem(
-        POGOProtos.Rpc.WithItemProto.Builder builderForValue) {
-      if (withItemBuilder_ == null) {
-        withItem_ = builderForValue.build();
-        onChanged();
-      } else {
-        withItemBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-     */
-    public Builder mergeWithItem(POGOProtos.Rpc.WithItemProto value) {
-      if (withItemBuilder_ == null) {
-        if (withItem_ != null) {
-          withItem_ =
-            POGOProtos.Rpc.WithItemProto.newBuilder(withItem_).mergeFrom(value).buildPartial();
-        } else {
-          withItem_ = value;
-        }
-        onChanged();
-      } else {
-        withItemBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-     */
-    public Builder clearWithItem() {
-      if (withItemBuilder_ == null) {
-        withItem_ = null;
-        onChanged();
-      } else {
-        withItem_ = null;
-        withItemBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-     */
-    public POGOProtos.Rpc.WithItemProto.Builder getWithItemBuilder() {
-      
-      onChanged();
-      return getWithItemFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-     */
-    public POGOProtos.Rpc.WithItemProtoOrBuilder getWithItemOrBuilder() {
-      if (withItemBuilder_ != null) {
-        return withItemBuilder_.getMessageOrBuilder();
-      } else {
-        return withItem_ == null ?
-            POGOProtos.Rpc.WithItemProto.getDefaultInstance() : withItem_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithItemProto with_item = 12;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithItemProto, POGOProtos.Rpc.WithItemProto.Builder, POGOProtos.Rpc.WithItemProtoOrBuilder> 
-        getWithItemFieldBuilder() {
-      if (withItemBuilder_ == null) {
-        withItemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithItemProto, POGOProtos.Rpc.WithItemProto.Builder, POGOProtos.Rpc.WithItemProtoOrBuilder>(
-                getWithItem(),
-                getParentForChildren(),
-                isClean());
-        withItem_ = null;
-      }
-      return withItemBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithUniquePokestopProto withUniquePokestop_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithUniquePokestopProto, POGOProtos.Rpc.WithUniquePokestopProto.Builder, POGOProtos.Rpc.WithUniquePokestopProtoOrBuilder> withUniquePokestopBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-     * @return Whether the withUniquePokestop field is set.
-     */
-    public boolean hasWithUniquePokestop() {
-      return withUniquePokestopBuilder_ != null || withUniquePokestop_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-     * @return The withUniquePokestop.
-     */
-    public POGOProtos.Rpc.WithUniquePokestopProto getWithUniquePokestop() {
-      if (withUniquePokestopBuilder_ == null) {
-        return withUniquePokestop_ == null ? POGOProtos.Rpc.WithUniquePokestopProto.getDefaultInstance() : withUniquePokestop_;
-      } else {
-        return withUniquePokestopBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-     */
-    public Builder setWithUniquePokestop(POGOProtos.Rpc.WithUniquePokestopProto value) {
-      if (withUniquePokestopBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withUniquePokestop_ = value;
-        onChanged();
-      } else {
-        withUniquePokestopBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-     */
-    public Builder setWithUniquePokestop(
-        POGOProtos.Rpc.WithUniquePokestopProto.Builder builderForValue) {
-      if (withUniquePokestopBuilder_ == null) {
-        withUniquePokestop_ = builderForValue.build();
-        onChanged();
-      } else {
-        withUniquePokestopBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-     */
-    public Builder mergeWithUniquePokestop(POGOProtos.Rpc.WithUniquePokestopProto value) {
-      if (withUniquePokestopBuilder_ == null) {
-        if (withUniquePokestop_ != null) {
-          withUniquePokestop_ =
-            POGOProtos.Rpc.WithUniquePokestopProto.newBuilder(withUniquePokestop_).mergeFrom(value).buildPartial();
-        } else {
-          withUniquePokestop_ = value;
-        }
-        onChanged();
-      } else {
-        withUniquePokestopBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-     */
-    public Builder clearWithUniquePokestop() {
-      if (withUniquePokestopBuilder_ == null) {
-        withUniquePokestop_ = null;
-        onChanged();
-      } else {
-        withUniquePokestop_ = null;
-        withUniquePokestopBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-     */
-    public POGOProtos.Rpc.WithUniquePokestopProto.Builder getWithUniquePokestopBuilder() {
-      
-      onChanged();
-      return getWithUniquePokestopFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-     */
-    public POGOProtos.Rpc.WithUniquePokestopProtoOrBuilder getWithUniquePokestopOrBuilder() {
-      if (withUniquePokestopBuilder_ != null) {
-        return withUniquePokestopBuilder_.getMessageOrBuilder();
-      } else {
-        return withUniquePokestop_ == null ?
-            POGOProtos.Rpc.WithUniquePokestopProto.getDefaultInstance() : withUniquePokestop_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokestopProto with_unique_pokestop = 13;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithUniquePokestopProto, POGOProtos.Rpc.WithUniquePokestopProto.Builder, POGOProtos.Rpc.WithUniquePokestopProtoOrBuilder> 
-        getWithUniquePokestopFieldBuilder() {
-      if (withUniquePokestopBuilder_ == null) {
-        withUniquePokestopBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithUniquePokestopProto, POGOProtos.Rpc.WithUniquePokestopProto.Builder, POGOProtos.Rpc.WithUniquePokestopProtoOrBuilder>(
-                getWithUniquePokestop(),
-                getParentForChildren(),
-                isClean());
-        withUniquePokestop_ = null;
-      }
-      return withUniquePokestopBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithQuestContextProto withQuestContext_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithQuestContextProto, POGOProtos.Rpc.WithQuestContextProto.Builder, POGOProtos.Rpc.WithQuestContextProtoOrBuilder> withQuestContextBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-     * @return Whether the withQuestContext field is set.
-     */
-    public boolean hasWithQuestContext() {
-      return withQuestContextBuilder_ != null || withQuestContext_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-     * @return The withQuestContext.
-     */
-    public POGOProtos.Rpc.WithQuestContextProto getWithQuestContext() {
-      if (withQuestContextBuilder_ == null) {
-        return withQuestContext_ == null ? POGOProtos.Rpc.WithQuestContextProto.getDefaultInstance() : withQuestContext_;
-      } else {
-        return withQuestContextBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-     */
-    public Builder setWithQuestContext(POGOProtos.Rpc.WithQuestContextProto value) {
-      if (withQuestContextBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withQuestContext_ = value;
-        onChanged();
-      } else {
-        withQuestContextBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-     */
-    public Builder setWithQuestContext(
-        POGOProtos.Rpc.WithQuestContextProto.Builder builderForValue) {
-      if (withQuestContextBuilder_ == null) {
-        withQuestContext_ = builderForValue.build();
-        onChanged();
-      } else {
-        withQuestContextBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-     */
-    public Builder mergeWithQuestContext(POGOProtos.Rpc.WithQuestContextProto value) {
-      if (withQuestContextBuilder_ == null) {
-        if (withQuestContext_ != null) {
-          withQuestContext_ =
-            POGOProtos.Rpc.WithQuestContextProto.newBuilder(withQuestContext_).mergeFrom(value).buildPartial();
-        } else {
-          withQuestContext_ = value;
-        }
-        onChanged();
-      } else {
-        withQuestContextBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-     */
-    public Builder clearWithQuestContext() {
-      if (withQuestContextBuilder_ == null) {
-        withQuestContext_ = null;
-        onChanged();
-      } else {
-        withQuestContext_ = null;
-        withQuestContextBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-     */
-    public POGOProtos.Rpc.WithQuestContextProto.Builder getWithQuestContextBuilder() {
-      
-      onChanged();
-      return getWithQuestContextFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-     */
-    public POGOProtos.Rpc.WithQuestContextProtoOrBuilder getWithQuestContextOrBuilder() {
-      if (withQuestContextBuilder_ != null) {
-        return withQuestContextBuilder_.getMessageOrBuilder();
-      } else {
-        return withQuestContext_ == null ?
-            POGOProtos.Rpc.WithQuestContextProto.getDefaultInstance() : withQuestContext_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithQuestContextProto with_quest_context = 14;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithQuestContextProto, POGOProtos.Rpc.WithQuestContextProto.Builder, POGOProtos.Rpc.WithQuestContextProtoOrBuilder> 
-        getWithQuestContextFieldBuilder() {
-      if (withQuestContextBuilder_ == null) {
-        withQuestContextBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithQuestContextProto, POGOProtos.Rpc.WithQuestContextProto.Builder, POGOProtos.Rpc.WithQuestContextProtoOrBuilder>(
-                getWithQuestContext(),
-                getParentForChildren(),
-                isClean());
-        withQuestContext_ = null;
-      }
-      return withQuestContextBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithBadgeTypeProto withBadgeType_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithBadgeTypeProto, POGOProtos.Rpc.WithBadgeTypeProto.Builder, POGOProtos.Rpc.WithBadgeTypeProtoOrBuilder> withBadgeTypeBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-     * @return Whether the withBadgeType field is set.
-     */
-    public boolean hasWithBadgeType() {
-      return withBadgeTypeBuilder_ != null || withBadgeType_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-     * @return The withBadgeType.
-     */
-    public POGOProtos.Rpc.WithBadgeTypeProto getWithBadgeType() {
-      if (withBadgeTypeBuilder_ == null) {
-        return withBadgeType_ == null ? POGOProtos.Rpc.WithBadgeTypeProto.getDefaultInstance() : withBadgeType_;
-      } else {
-        return withBadgeTypeBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-     */
-    public Builder setWithBadgeType(POGOProtos.Rpc.WithBadgeTypeProto value) {
-      if (withBadgeTypeBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withBadgeType_ = value;
-        onChanged();
-      } else {
-        withBadgeTypeBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-     */
-    public Builder setWithBadgeType(
-        POGOProtos.Rpc.WithBadgeTypeProto.Builder builderForValue) {
-      if (withBadgeTypeBuilder_ == null) {
-        withBadgeType_ = builderForValue.build();
-        onChanged();
-      } else {
-        withBadgeTypeBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-     */
-    public Builder mergeWithBadgeType(POGOProtos.Rpc.WithBadgeTypeProto value) {
-      if (withBadgeTypeBuilder_ == null) {
-        if (withBadgeType_ != null) {
-          withBadgeType_ =
-            POGOProtos.Rpc.WithBadgeTypeProto.newBuilder(withBadgeType_).mergeFrom(value).buildPartial();
-        } else {
-          withBadgeType_ = value;
-        }
-        onChanged();
-      } else {
-        withBadgeTypeBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-     */
-    public Builder clearWithBadgeType() {
-      if (withBadgeTypeBuilder_ == null) {
-        withBadgeType_ = null;
-        onChanged();
-      } else {
-        withBadgeType_ = null;
-        withBadgeTypeBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-     */
-    public POGOProtos.Rpc.WithBadgeTypeProto.Builder getWithBadgeTypeBuilder() {
-      
-      onChanged();
-      return getWithBadgeTypeFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-     */
-    public POGOProtos.Rpc.WithBadgeTypeProtoOrBuilder getWithBadgeTypeOrBuilder() {
-      if (withBadgeTypeBuilder_ != null) {
-        return withBadgeTypeBuilder_.getMessageOrBuilder();
-      } else {
-        return withBadgeType_ == null ?
-            POGOProtos.Rpc.WithBadgeTypeProto.getDefaultInstance() : withBadgeType_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBadgeTypeProto with_badge_type = 15;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithBadgeTypeProto, POGOProtos.Rpc.WithBadgeTypeProto.Builder, POGOProtos.Rpc.WithBadgeTypeProtoOrBuilder> 
-        getWithBadgeTypeFieldBuilder() {
-      if (withBadgeTypeBuilder_ == null) {
-        withBadgeTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithBadgeTypeProto, POGOProtos.Rpc.WithBadgeTypeProto.Builder, POGOProtos.Rpc.WithBadgeTypeProtoOrBuilder>(
-                getWithBadgeType(),
-                getParentForChildren(),
-                isClean());
-        withBadgeType_ = null;
-      }
-      return withBadgeTypeBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithPlayerLevelProto withPlayerLevel_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder> withPlayerLevelBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-     * @return Whether the withPlayerLevel field is set.
-     */
-    public boolean hasWithPlayerLevel() {
-      return withPlayerLevelBuilder_ != null || withPlayerLevel_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-     * @return The withPlayerLevel.
-     */
-    public POGOProtos.Rpc.WithPlayerLevelProto getWithPlayerLevel() {
-      if (withPlayerLevelBuilder_ == null) {
-        return withPlayerLevel_ == null ? POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance() : withPlayerLevel_;
-      } else {
-        return withPlayerLevelBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-     */
-    public Builder setWithPlayerLevel(POGOProtos.Rpc.WithPlayerLevelProto value) {
-      if (withPlayerLevelBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withPlayerLevel_ = value;
-        onChanged();
-      } else {
-        withPlayerLevelBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-     */
-    public Builder setWithPlayerLevel(
-        POGOProtos.Rpc.WithPlayerLevelProto.Builder builderForValue) {
-      if (withPlayerLevelBuilder_ == null) {
-        withPlayerLevel_ = builderForValue.build();
-        onChanged();
-      } else {
-        withPlayerLevelBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-     */
-    public Builder mergeWithPlayerLevel(POGOProtos.Rpc.WithPlayerLevelProto value) {
-      if (withPlayerLevelBuilder_ == null) {
-        if (withPlayerLevel_ != null) {
-          withPlayerLevel_ =
-            POGOProtos.Rpc.WithPlayerLevelProto.newBuilder(withPlayerLevel_).mergeFrom(value).buildPartial();
-        } else {
-          withPlayerLevel_ = value;
-        }
-        onChanged();
-      } else {
-        withPlayerLevelBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-     */
-    public Builder clearWithPlayerLevel() {
-      if (withPlayerLevelBuilder_ == null) {
-        withPlayerLevel_ = null;
-        onChanged();
-      } else {
-        withPlayerLevel_ = null;
-        withPlayerLevelBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-     */
-    public POGOProtos.Rpc.WithPlayerLevelProto.Builder getWithPlayerLevelBuilder() {
-      
-      onChanged();
-      return getWithPlayerLevelFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-     */
-    public POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder getWithPlayerLevelOrBuilder() {
-      if (withPlayerLevelBuilder_ != null) {
-        return withPlayerLevelBuilder_.getMessageOrBuilder();
-      } else {
-        return withPlayerLevel_ == null ?
-            POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance() : withPlayerLevel_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 16;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder> 
-        getWithPlayerLevelFieldBuilder() {
-      if (withPlayerLevelBuilder_ == null) {
-        withPlayerLevelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder>(
-                getWithPlayerLevel(),
-                getParentForChildren(),
-                isClean());
-        withPlayerLevel_ = null;
-      }
-      return withPlayerLevelBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithWinBattleStatusProto withWinBattleStatus_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithWinBattleStatusProto, POGOProtos.Rpc.WithWinBattleStatusProto.Builder, POGOProtos.Rpc.WithWinBattleStatusProtoOrBuilder> withWinBattleStatusBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-     * @return Whether the withWinBattleStatus field is set.
-     */
-    public boolean hasWithWinBattleStatus() {
-      return withWinBattleStatusBuilder_ != null || withWinBattleStatus_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-     * @return The withWinBattleStatus.
-     */
-    public POGOProtos.Rpc.WithWinBattleStatusProto getWithWinBattleStatus() {
-      if (withWinBattleStatusBuilder_ == null) {
-        return withWinBattleStatus_ == null ? POGOProtos.Rpc.WithWinBattleStatusProto.getDefaultInstance() : withWinBattleStatus_;
-      } else {
-        return withWinBattleStatusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-     */
-    public Builder setWithWinBattleStatus(POGOProtos.Rpc.WithWinBattleStatusProto value) {
-      if (withWinBattleStatusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withWinBattleStatus_ = value;
-        onChanged();
-      } else {
-        withWinBattleStatusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-     */
-    public Builder setWithWinBattleStatus(
-        POGOProtos.Rpc.WithWinBattleStatusProto.Builder builderForValue) {
-      if (withWinBattleStatusBuilder_ == null) {
-        withWinBattleStatus_ = builderForValue.build();
-        onChanged();
-      } else {
-        withWinBattleStatusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-     */
-    public Builder mergeWithWinBattleStatus(POGOProtos.Rpc.WithWinBattleStatusProto value) {
-      if (withWinBattleStatusBuilder_ == null) {
-        if (withWinBattleStatus_ != null) {
-          withWinBattleStatus_ =
-            POGOProtos.Rpc.WithWinBattleStatusProto.newBuilder(withWinBattleStatus_).mergeFrom(value).buildPartial();
-        } else {
-          withWinBattleStatus_ = value;
-        }
-        onChanged();
-      } else {
-        withWinBattleStatusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-     */
-    public Builder clearWithWinBattleStatus() {
-      if (withWinBattleStatusBuilder_ == null) {
-        withWinBattleStatus_ = null;
-        onChanged();
-      } else {
-        withWinBattleStatus_ = null;
-        withWinBattleStatusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-     */
-    public POGOProtos.Rpc.WithWinBattleStatusProto.Builder getWithWinBattleStatusBuilder() {
-      
-      onChanged();
-      return getWithWinBattleStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-     */
-    public POGOProtos.Rpc.WithWinBattleStatusProtoOrBuilder getWithWinBattleStatusOrBuilder() {
-      if (withWinBattleStatusBuilder_ != null) {
-        return withWinBattleStatusBuilder_.getMessageOrBuilder();
-      } else {
-        return withWinBattleStatus_ == null ?
-            POGOProtos.Rpc.WithWinBattleStatusProto.getDefaultInstance() : withWinBattleStatus_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithWinBattleStatusProto with_win_battle_status = 17;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithWinBattleStatusProto, POGOProtos.Rpc.WithWinBattleStatusProto.Builder, POGOProtos.Rpc.WithWinBattleStatusProtoOrBuilder> 
-        getWithWinBattleStatusFieldBuilder() {
-      if (withWinBattleStatusBuilder_ == null) {
-        withWinBattleStatusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithWinBattleStatusProto, POGOProtos.Rpc.WithWinBattleStatusProto.Builder, POGOProtos.Rpc.WithWinBattleStatusProtoOrBuilder>(
-                getWithWinBattleStatus(),
-                getParentForChildren(),
-                isClean());
-        withWinBattleStatus_ = null;
-      }
-      return withWinBattleStatusBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithUniquePokemonProto withUniquePokemon_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithUniquePokemonProto, POGOProtos.Rpc.WithUniquePokemonProto.Builder, POGOProtos.Rpc.WithUniquePokemonProtoOrBuilder> withUniquePokemonBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-     * @return Whether the withUniquePokemon field is set.
-     */
-    public boolean hasWithUniquePokemon() {
-      return withUniquePokemonBuilder_ != null || withUniquePokemon_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-     * @return The withUniquePokemon.
-     */
-    public POGOProtos.Rpc.WithUniquePokemonProto getWithUniquePokemon() {
-      if (withUniquePokemonBuilder_ == null) {
-        return withUniquePokemon_ == null ? POGOProtos.Rpc.WithUniquePokemonProto.getDefaultInstance() : withUniquePokemon_;
-      } else {
-        return withUniquePokemonBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-     */
-    public Builder setWithUniquePokemon(POGOProtos.Rpc.WithUniquePokemonProto value) {
-      if (withUniquePokemonBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withUniquePokemon_ = value;
-        onChanged();
-      } else {
-        withUniquePokemonBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-     */
-    public Builder setWithUniquePokemon(
-        POGOProtos.Rpc.WithUniquePokemonProto.Builder builderForValue) {
-      if (withUniquePokemonBuilder_ == null) {
-        withUniquePokemon_ = builderForValue.build();
-        onChanged();
-      } else {
-        withUniquePokemonBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-     */
-    public Builder mergeWithUniquePokemon(POGOProtos.Rpc.WithUniquePokemonProto value) {
-      if (withUniquePokemonBuilder_ == null) {
-        if (withUniquePokemon_ != null) {
-          withUniquePokemon_ =
-            POGOProtos.Rpc.WithUniquePokemonProto.newBuilder(withUniquePokemon_).mergeFrom(value).buildPartial();
-        } else {
-          withUniquePokemon_ = value;
-        }
-        onChanged();
-      } else {
-        withUniquePokemonBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-     */
-    public Builder clearWithUniquePokemon() {
-      if (withUniquePokemonBuilder_ == null) {
-        withUniquePokemon_ = null;
-        onChanged();
-      } else {
-        withUniquePokemon_ = null;
-        withUniquePokemonBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-     */
-    public POGOProtos.Rpc.WithUniquePokemonProto.Builder getWithUniquePokemonBuilder() {
-      
-      onChanged();
-      return getWithUniquePokemonFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-     */
-    public POGOProtos.Rpc.WithUniquePokemonProtoOrBuilder getWithUniquePokemonOrBuilder() {
-      if (withUniquePokemonBuilder_ != null) {
-        return withUniquePokemonBuilder_.getMessageOrBuilder();
-      } else {
-        return withUniquePokemon_ == null ?
-            POGOProtos.Rpc.WithUniquePokemonProto.getDefaultInstance() : withUniquePokemon_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithUniquePokemonProto with_unique_pokemon = 18;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithUniquePokemonProto, POGOProtos.Rpc.WithUniquePokemonProto.Builder, POGOProtos.Rpc.WithUniquePokemonProtoOrBuilder> 
-        getWithUniquePokemonFieldBuilder() {
-      if (withUniquePokemonBuilder_ == null) {
-        withUniquePokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithUniquePokemonProto, POGOProtos.Rpc.WithUniquePokemonProto.Builder, POGOProtos.Rpc.WithUniquePokemonProtoOrBuilder>(
-                getWithUniquePokemon(),
-                getParentForChildren(),
-                isClean());
-        withUniquePokemon_ = null;
-      }
-      return withUniquePokemonBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithNpcCombatProto withNpcCombat_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithNpcCombatProto, POGOProtos.Rpc.WithNpcCombatProto.Builder, POGOProtos.Rpc.WithNpcCombatProtoOrBuilder> withNpcCombatBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-     * @return Whether the withNpcCombat field is set.
-     */
-    public boolean hasWithNpcCombat() {
-      return withNpcCombatBuilder_ != null || withNpcCombat_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-     * @return The withNpcCombat.
-     */
-    public POGOProtos.Rpc.WithNpcCombatProto getWithNpcCombat() {
-      if (withNpcCombatBuilder_ == null) {
-        return withNpcCombat_ == null ? POGOProtos.Rpc.WithNpcCombatProto.getDefaultInstance() : withNpcCombat_;
-      } else {
-        return withNpcCombatBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-     */
-    public Builder setWithNpcCombat(POGOProtos.Rpc.WithNpcCombatProto value) {
-      if (withNpcCombatBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withNpcCombat_ = value;
-        onChanged();
-      } else {
-        withNpcCombatBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-     */
-    public Builder setWithNpcCombat(
-        POGOProtos.Rpc.WithNpcCombatProto.Builder builderForValue) {
-      if (withNpcCombatBuilder_ == null) {
-        withNpcCombat_ = builderForValue.build();
-        onChanged();
-      } else {
-        withNpcCombatBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-     */
-    public Builder mergeWithNpcCombat(POGOProtos.Rpc.WithNpcCombatProto value) {
-      if (withNpcCombatBuilder_ == null) {
-        if (withNpcCombat_ != null) {
-          withNpcCombat_ =
-            POGOProtos.Rpc.WithNpcCombatProto.newBuilder(withNpcCombat_).mergeFrom(value).buildPartial();
-        } else {
-          withNpcCombat_ = value;
-        }
-        onChanged();
-      } else {
-        withNpcCombatBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-     */
-    public Builder clearWithNpcCombat() {
-      if (withNpcCombatBuilder_ == null) {
-        withNpcCombat_ = null;
-        onChanged();
-      } else {
-        withNpcCombat_ = null;
-        withNpcCombatBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-     */
-    public POGOProtos.Rpc.WithNpcCombatProto.Builder getWithNpcCombatBuilder() {
-      
-      onChanged();
-      return getWithNpcCombatFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-     */
-    public POGOProtos.Rpc.WithNpcCombatProtoOrBuilder getWithNpcCombatOrBuilder() {
-      if (withNpcCombatBuilder_ != null) {
-        return withNpcCombatBuilder_.getMessageOrBuilder();
-      } else {
-        return withNpcCombat_ == null ?
-            POGOProtos.Rpc.WithNpcCombatProto.getDefaultInstance() : withNpcCombat_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithNpcCombatProto with_npc_combat = 19;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithNpcCombatProto, POGOProtos.Rpc.WithNpcCombatProto.Builder, POGOProtos.Rpc.WithNpcCombatProtoOrBuilder> 
-        getWithNpcCombatFieldBuilder() {
-      if (withNpcCombatBuilder_ == null) {
-        withNpcCombatBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithNpcCombatProto, POGOProtos.Rpc.WithNpcCombatProto.Builder, POGOProtos.Rpc.WithNpcCombatProtoOrBuilder>(
-                getWithNpcCombat(),
-                getParentForChildren(),
-                isClean());
-        withNpcCombat_ = null;
-      }
-      return withNpcCombatBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithPvpCombatProto withPvpCombat_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithPvpCombatProto, POGOProtos.Rpc.WithPvpCombatProto.Builder, POGOProtos.Rpc.WithPvpCombatProtoOrBuilder> withPvpCombatBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-     * @return Whether the withPvpCombat field is set.
-     */
-    public boolean hasWithPvpCombat() {
-      return withPvpCombatBuilder_ != null || withPvpCombat_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-     * @return The withPvpCombat.
-     */
-    public POGOProtos.Rpc.WithPvpCombatProto getWithPvpCombat() {
-      if (withPvpCombatBuilder_ == null) {
-        return withPvpCombat_ == null ? POGOProtos.Rpc.WithPvpCombatProto.getDefaultInstance() : withPvpCombat_;
-      } else {
-        return withPvpCombatBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-     */
-    public Builder setWithPvpCombat(POGOProtos.Rpc.WithPvpCombatProto value) {
-      if (withPvpCombatBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withPvpCombat_ = value;
-        onChanged();
-      } else {
-        withPvpCombatBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-     */
-    public Builder setWithPvpCombat(
-        POGOProtos.Rpc.WithPvpCombatProto.Builder builderForValue) {
-      if (withPvpCombatBuilder_ == null) {
-        withPvpCombat_ = builderForValue.build();
-        onChanged();
-      } else {
-        withPvpCombatBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-     */
-    public Builder mergeWithPvpCombat(POGOProtos.Rpc.WithPvpCombatProto value) {
-      if (withPvpCombatBuilder_ == null) {
-        if (withPvpCombat_ != null) {
-          withPvpCombat_ =
-            POGOProtos.Rpc.WithPvpCombatProto.newBuilder(withPvpCombat_).mergeFrom(value).buildPartial();
-        } else {
-          withPvpCombat_ = value;
-        }
-        onChanged();
-      } else {
-        withPvpCombatBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-     */
-    public Builder clearWithPvpCombat() {
-      if (withPvpCombatBuilder_ == null) {
-        withPvpCombat_ = null;
-        onChanged();
-      } else {
-        withPvpCombat_ = null;
-        withPvpCombatBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-     */
-    public POGOProtos.Rpc.WithPvpCombatProto.Builder getWithPvpCombatBuilder() {
-      
-      onChanged();
-      return getWithPvpCombatFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-     */
-    public POGOProtos.Rpc.WithPvpCombatProtoOrBuilder getWithPvpCombatOrBuilder() {
-      if (withPvpCombatBuilder_ != null) {
-        return withPvpCombatBuilder_.getMessageOrBuilder();
-      } else {
-        return withPvpCombat_ == null ?
-            POGOProtos.Rpc.WithPvpCombatProto.getDefaultInstance() : withPvpCombat_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPvpCombatProto with_pvp_combat = 20;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithPvpCombatProto, POGOProtos.Rpc.WithPvpCombatProto.Builder, POGOProtos.Rpc.WithPvpCombatProtoOrBuilder> 
-        getWithPvpCombatFieldBuilder() {
-      if (withPvpCombatBuilder_ == null) {
-        withPvpCombatBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithPvpCombatProto, POGOProtos.Rpc.WithPvpCombatProto.Builder, POGOProtos.Rpc.WithPvpCombatProtoOrBuilder>(
-                getWithPvpCombat(),
-                getParentForChildren(),
-                isClean());
-        withPvpCombat_ = null;
-      }
-      return withPvpCombatBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithLocationProto withLocation_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithLocationProto, POGOProtos.Rpc.WithLocationProto.Builder, POGOProtos.Rpc.WithLocationProtoOrBuilder> withLocationBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-     * @return Whether the withLocation field is set.
-     */
-    public boolean hasWithLocation() {
-      return withLocationBuilder_ != null || withLocation_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-     * @return The withLocation.
-     */
-    public POGOProtos.Rpc.WithLocationProto getWithLocation() {
-      if (withLocationBuilder_ == null) {
-        return withLocation_ == null ? POGOProtos.Rpc.WithLocationProto.getDefaultInstance() : withLocation_;
-      } else {
-        return withLocationBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-     */
-    public Builder setWithLocation(POGOProtos.Rpc.WithLocationProto value) {
-      if (withLocationBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withLocation_ = value;
-        onChanged();
-      } else {
-        withLocationBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-     */
-    public Builder setWithLocation(
-        POGOProtos.Rpc.WithLocationProto.Builder builderForValue) {
-      if (withLocationBuilder_ == null) {
-        withLocation_ = builderForValue.build();
-        onChanged();
-      } else {
-        withLocationBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-     */
-    public Builder mergeWithLocation(POGOProtos.Rpc.WithLocationProto value) {
-      if (withLocationBuilder_ == null) {
-        if (withLocation_ != null) {
-          withLocation_ =
-            POGOProtos.Rpc.WithLocationProto.newBuilder(withLocation_).mergeFrom(value).buildPartial();
-        } else {
-          withLocation_ = value;
-        }
-        onChanged();
-      } else {
-        withLocationBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-     */
-    public Builder clearWithLocation() {
-      if (withLocationBuilder_ == null) {
-        withLocation_ = null;
-        onChanged();
-      } else {
-        withLocation_ = null;
-        withLocationBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-     */
-    public POGOProtos.Rpc.WithLocationProto.Builder getWithLocationBuilder() {
-      
-      onChanged();
-      return getWithLocationFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-     */
-    public POGOProtos.Rpc.WithLocationProtoOrBuilder getWithLocationOrBuilder() {
-      if (withLocationBuilder_ != null) {
-        return withLocationBuilder_.getMessageOrBuilder();
-      } else {
-        return withLocation_ == null ?
-            POGOProtos.Rpc.WithLocationProto.getDefaultInstance() : withLocation_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithLocationProto with_location = 21;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithLocationProto, POGOProtos.Rpc.WithLocationProto.Builder, POGOProtos.Rpc.WithLocationProtoOrBuilder> 
-        getWithLocationFieldBuilder() {
-      if (withLocationBuilder_ == null) {
-        withLocationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithLocationProto, POGOProtos.Rpc.WithLocationProto.Builder, POGOProtos.Rpc.WithLocationProtoOrBuilder>(
-                getWithLocation(),
-                getParentForChildren(),
-                isClean());
-        withLocation_ = null;
-      }
-      return withLocationBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithDistanceProto withDistance_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithDistanceProto, POGOProtos.Rpc.WithDistanceProto.Builder, POGOProtos.Rpc.WithDistanceProtoOrBuilder> withDistanceBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-     * @return Whether the withDistance field is set.
-     */
-    public boolean hasWithDistance() {
-      return withDistanceBuilder_ != null || withDistance_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-     * @return The withDistance.
-     */
-    public POGOProtos.Rpc.WithDistanceProto getWithDistance() {
-      if (withDistanceBuilder_ == null) {
-        return withDistance_ == null ? POGOProtos.Rpc.WithDistanceProto.getDefaultInstance() : withDistance_;
-      } else {
-        return withDistanceBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-     */
-    public Builder setWithDistance(POGOProtos.Rpc.WithDistanceProto value) {
-      if (withDistanceBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withDistance_ = value;
-        onChanged();
-      } else {
-        withDistanceBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-     */
-    public Builder setWithDistance(
-        POGOProtos.Rpc.WithDistanceProto.Builder builderForValue) {
-      if (withDistanceBuilder_ == null) {
-        withDistance_ = builderForValue.build();
-        onChanged();
-      } else {
-        withDistanceBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-     */
-    public Builder mergeWithDistance(POGOProtos.Rpc.WithDistanceProto value) {
-      if (withDistanceBuilder_ == null) {
-        if (withDistance_ != null) {
-          withDistance_ =
-            POGOProtos.Rpc.WithDistanceProto.newBuilder(withDistance_).mergeFrom(value).buildPartial();
-        } else {
-          withDistance_ = value;
-        }
-        onChanged();
-      } else {
-        withDistanceBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-     */
-    public Builder clearWithDistance() {
-      if (withDistanceBuilder_ == null) {
-        withDistance_ = null;
-        onChanged();
-      } else {
-        withDistance_ = null;
-        withDistanceBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-     */
-    public POGOProtos.Rpc.WithDistanceProto.Builder getWithDistanceBuilder() {
-      
-      onChanged();
-      return getWithDistanceFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-     */
-    public POGOProtos.Rpc.WithDistanceProtoOrBuilder getWithDistanceOrBuilder() {
-      if (withDistanceBuilder_ != null) {
-        return withDistanceBuilder_.getMessageOrBuilder();
-      } else {
-        return withDistance_ == null ?
-            POGOProtos.Rpc.WithDistanceProto.getDefaultInstance() : withDistance_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDistanceProto with_distance = 22;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithDistanceProto, POGOProtos.Rpc.WithDistanceProto.Builder, POGOProtos.Rpc.WithDistanceProtoOrBuilder> 
-        getWithDistanceFieldBuilder() {
-      if (withDistanceBuilder_ == null) {
-        withDistanceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithDistanceProto, POGOProtos.Rpc.WithDistanceProto.Builder, POGOProtos.Rpc.WithDistanceProtoOrBuilder>(
-                getWithDistance(),
-                getParentForChildren(),
-                isClean());
-        withDistance_ = null;
-      }
-      return withDistanceBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithInvasionCharacterProto withInvasionCharacter_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithInvasionCharacterProto, POGOProtos.Rpc.WithInvasionCharacterProto.Builder, POGOProtos.Rpc.WithInvasionCharacterProtoOrBuilder> withInvasionCharacterBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-     * @return Whether the withInvasionCharacter field is set.
-     */
-    public boolean hasWithInvasionCharacter() {
-      return withInvasionCharacterBuilder_ != null || withInvasionCharacter_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-     * @return The withInvasionCharacter.
-     */
-    public POGOProtos.Rpc.WithInvasionCharacterProto getWithInvasionCharacter() {
-      if (withInvasionCharacterBuilder_ == null) {
-        return withInvasionCharacter_ == null ? POGOProtos.Rpc.WithInvasionCharacterProto.getDefaultInstance() : withInvasionCharacter_;
-      } else {
-        return withInvasionCharacterBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-     */
-    public Builder setWithInvasionCharacter(POGOProtos.Rpc.WithInvasionCharacterProto value) {
-      if (withInvasionCharacterBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withInvasionCharacter_ = value;
-        onChanged();
-      } else {
-        withInvasionCharacterBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-     */
-    public Builder setWithInvasionCharacter(
-        POGOProtos.Rpc.WithInvasionCharacterProto.Builder builderForValue) {
-      if (withInvasionCharacterBuilder_ == null) {
-        withInvasionCharacter_ = builderForValue.build();
-        onChanged();
-      } else {
-        withInvasionCharacterBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-     */
-    public Builder mergeWithInvasionCharacter(POGOProtos.Rpc.WithInvasionCharacterProto value) {
-      if (withInvasionCharacterBuilder_ == null) {
-        if (withInvasionCharacter_ != null) {
-          withInvasionCharacter_ =
-            POGOProtos.Rpc.WithInvasionCharacterProto.newBuilder(withInvasionCharacter_).mergeFrom(value).buildPartial();
-        } else {
-          withInvasionCharacter_ = value;
-        }
-        onChanged();
-      } else {
-        withInvasionCharacterBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-     */
-    public Builder clearWithInvasionCharacter() {
-      if (withInvasionCharacterBuilder_ == null) {
-        withInvasionCharacter_ = null;
-        onChanged();
-      } else {
-        withInvasionCharacter_ = null;
-        withInvasionCharacterBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-     */
-    public POGOProtos.Rpc.WithInvasionCharacterProto.Builder getWithInvasionCharacterBuilder() {
-      
-      onChanged();
-      return getWithInvasionCharacterFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-     */
-    public POGOProtos.Rpc.WithInvasionCharacterProtoOrBuilder getWithInvasionCharacterOrBuilder() {
-      if (withInvasionCharacterBuilder_ != null) {
-        return withInvasionCharacterBuilder_.getMessageOrBuilder();
-      } else {
-        return withInvasionCharacter_ == null ?
-            POGOProtos.Rpc.WithInvasionCharacterProto.getDefaultInstance() : withInvasionCharacter_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithInvasionCharacterProto with_invasion_character = 23;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithInvasionCharacterProto, POGOProtos.Rpc.WithInvasionCharacterProto.Builder, POGOProtos.Rpc.WithInvasionCharacterProtoOrBuilder> 
-        getWithInvasionCharacterFieldBuilder() {
-      if (withInvasionCharacterBuilder_ == null) {
-        withInvasionCharacterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithInvasionCharacterProto, POGOProtos.Rpc.WithInvasionCharacterProto.Builder, POGOProtos.Rpc.WithInvasionCharacterProtoOrBuilder>(
-                getWithInvasionCharacter(),
-                getParentForChildren(),
-                isClean());
-        withInvasionCharacter_ = null;
-      }
-      return withInvasionCharacterBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithPokemonAlignmentProto withPokemonAlignment_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithPokemonAlignmentProto, POGOProtos.Rpc.WithPokemonAlignmentProto.Builder, POGOProtos.Rpc.WithPokemonAlignmentProtoOrBuilder> withPokemonAlignmentBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-     * @return Whether the withPokemonAlignment field is set.
-     */
-    public boolean hasWithPokemonAlignment() {
-      return withPokemonAlignmentBuilder_ != null || withPokemonAlignment_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-     * @return The withPokemonAlignment.
-     */
-    public POGOProtos.Rpc.WithPokemonAlignmentProto getWithPokemonAlignment() {
-      if (withPokemonAlignmentBuilder_ == null) {
-        return withPokemonAlignment_ == null ? POGOProtos.Rpc.WithPokemonAlignmentProto.getDefaultInstance() : withPokemonAlignment_;
-      } else {
-        return withPokemonAlignmentBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-     */
-    public Builder setWithPokemonAlignment(POGOProtos.Rpc.WithPokemonAlignmentProto value) {
-      if (withPokemonAlignmentBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withPokemonAlignment_ = value;
-        onChanged();
-      } else {
-        withPokemonAlignmentBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-     */
-    public Builder setWithPokemonAlignment(
-        POGOProtos.Rpc.WithPokemonAlignmentProto.Builder builderForValue) {
-      if (withPokemonAlignmentBuilder_ == null) {
-        withPokemonAlignment_ = builderForValue.build();
-        onChanged();
-      } else {
-        withPokemonAlignmentBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-     */
-    public Builder mergeWithPokemonAlignment(POGOProtos.Rpc.WithPokemonAlignmentProto value) {
-      if (withPokemonAlignmentBuilder_ == null) {
-        if (withPokemonAlignment_ != null) {
-          withPokemonAlignment_ =
-            POGOProtos.Rpc.WithPokemonAlignmentProto.newBuilder(withPokemonAlignment_).mergeFrom(value).buildPartial();
-        } else {
-          withPokemonAlignment_ = value;
-        }
-        onChanged();
-      } else {
-        withPokemonAlignmentBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-     */
-    public Builder clearWithPokemonAlignment() {
-      if (withPokemonAlignmentBuilder_ == null) {
-        withPokemonAlignment_ = null;
-        onChanged();
-      } else {
-        withPokemonAlignment_ = null;
-        withPokemonAlignmentBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonAlignmentProto.Builder getWithPokemonAlignmentBuilder() {
-      
-      onChanged();
-      return getWithPokemonAlignmentFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonAlignmentProtoOrBuilder getWithPokemonAlignmentOrBuilder() {
-      if (withPokemonAlignmentBuilder_ != null) {
-        return withPokemonAlignmentBuilder_.getMessageOrBuilder();
-      } else {
-        return withPokemonAlignment_ == null ?
-            POGOProtos.Rpc.WithPokemonAlignmentProto.getDefaultInstance() : withPokemonAlignment_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonAlignmentProto with_pokemon_alignment = 24;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithPokemonAlignmentProto, POGOProtos.Rpc.WithPokemonAlignmentProto.Builder, POGOProtos.Rpc.WithPokemonAlignmentProtoOrBuilder> 
-        getWithPokemonAlignmentFieldBuilder() {
-      if (withPokemonAlignmentBuilder_ == null) {
-        withPokemonAlignmentBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithPokemonAlignmentProto, POGOProtos.Rpc.WithPokemonAlignmentProto.Builder, POGOProtos.Rpc.WithPokemonAlignmentProtoOrBuilder>(
-                getWithPokemonAlignment(),
-                getParentForChildren(),
-                isClean());
-        withPokemonAlignment_ = null;
-      }
-      return withPokemonAlignmentBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithBuddyProto withBuddy_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithBuddyProto, POGOProtos.Rpc.WithBuddyProto.Builder, POGOProtos.Rpc.WithBuddyProtoOrBuilder> withBuddyBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-     * @return Whether the withBuddy field is set.
-     */
-    public boolean hasWithBuddy() {
-      return withBuddyBuilder_ != null || withBuddy_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-     * @return The withBuddy.
-     */
-    public POGOProtos.Rpc.WithBuddyProto getWithBuddy() {
-      if (withBuddyBuilder_ == null) {
-        return withBuddy_ == null ? POGOProtos.Rpc.WithBuddyProto.getDefaultInstance() : withBuddy_;
-      } else {
-        return withBuddyBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-     */
-    public Builder setWithBuddy(POGOProtos.Rpc.WithBuddyProto value) {
-      if (withBuddyBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withBuddy_ = value;
-        onChanged();
-      } else {
-        withBuddyBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-     */
-    public Builder setWithBuddy(
-        POGOProtos.Rpc.WithBuddyProto.Builder builderForValue) {
-      if (withBuddyBuilder_ == null) {
-        withBuddy_ = builderForValue.build();
-        onChanged();
-      } else {
-        withBuddyBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-     */
-    public Builder mergeWithBuddy(POGOProtos.Rpc.WithBuddyProto value) {
-      if (withBuddyBuilder_ == null) {
-        if (withBuddy_ != null) {
-          withBuddy_ =
-            POGOProtos.Rpc.WithBuddyProto.newBuilder(withBuddy_).mergeFrom(value).buildPartial();
-        } else {
-          withBuddy_ = value;
-        }
-        onChanged();
-      } else {
-        withBuddyBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-     */
-    public Builder clearWithBuddy() {
-      if (withBuddyBuilder_ == null) {
-        withBuddy_ = null;
-        onChanged();
-      } else {
-        withBuddy_ = null;
-        withBuddyBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-     */
-    public POGOProtos.Rpc.WithBuddyProto.Builder getWithBuddyBuilder() {
-      
-      onChanged();
-      return getWithBuddyFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-     */
-    public POGOProtos.Rpc.WithBuddyProtoOrBuilder getWithBuddyOrBuilder() {
-      if (withBuddyBuilder_ != null) {
-        return withBuddyBuilder_.getMessageOrBuilder();
-      } else {
-        return withBuddy_ == null ?
-            POGOProtos.Rpc.WithBuddyProto.getDefaultInstance() : withBuddy_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithBuddyProto with_buddy = 25;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithBuddyProto, POGOProtos.Rpc.WithBuddyProto.Builder, POGOProtos.Rpc.WithBuddyProtoOrBuilder> 
-        getWithBuddyFieldBuilder() {
-      if (withBuddyBuilder_ == null) {
-        withBuddyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithBuddyProto, POGOProtos.Rpc.WithBuddyProto.Builder, POGOProtos.Rpc.WithBuddyProtoOrBuilder>(
-                getWithBuddy(),
-                getParentForChildren(),
-                isClean());
-        withBuddy_ = null;
-      }
-      return withBuddyBuilder_;
-    }
-
-    private POGOProtos.Rpc.WithDailyBuddyAffectionProto withDailyBuddyAffection_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithDailyBuddyAffectionProto, POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder, POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder> withDailyBuddyAffectionBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-     * @return Whether the withDailyBuddyAffection field is set.
-     */
-    public boolean hasWithDailyBuddyAffection() {
-      return withDailyBuddyAffectionBuilder_ != null || withDailyBuddyAffection_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-     * @return The withDailyBuddyAffection.
-     */
-    public POGOProtos.Rpc.WithDailyBuddyAffectionProto getWithDailyBuddyAffection() {
-      if (withDailyBuddyAffectionBuilder_ == null) {
-        return withDailyBuddyAffection_ == null ? POGOProtos.Rpc.WithDailyBuddyAffectionProto.getDefaultInstance() : withDailyBuddyAffection_;
-      } else {
-        return withDailyBuddyAffectionBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-     */
-    public Builder setWithDailyBuddyAffection(POGOProtos.Rpc.WithDailyBuddyAffectionProto value) {
-      if (withDailyBuddyAffectionBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        withDailyBuddyAffection_ = value;
-        onChanged();
-      } else {
-        withDailyBuddyAffectionBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-     */
-    public Builder setWithDailyBuddyAffection(
-        POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder builderForValue) {
-      if (withDailyBuddyAffectionBuilder_ == null) {
-        withDailyBuddyAffection_ = builderForValue.build();
-        onChanged();
-      } else {
-        withDailyBuddyAffectionBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-     */
-    public Builder mergeWithDailyBuddyAffection(POGOProtos.Rpc.WithDailyBuddyAffectionProto value) {
-      if (withDailyBuddyAffectionBuilder_ == null) {
-        if (withDailyBuddyAffection_ != null) {
-          withDailyBuddyAffection_ =
-            POGOProtos.Rpc.WithDailyBuddyAffectionProto.newBuilder(withDailyBuddyAffection_).mergeFrom(value).buildPartial();
-        } else {
-          withDailyBuddyAffection_ = value;
-        }
-        onChanged();
-      } else {
-        withDailyBuddyAffectionBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-     */
-    public Builder clearWithDailyBuddyAffection() {
-      if (withDailyBuddyAffectionBuilder_ == null) {
-        withDailyBuddyAffection_ = null;
-        onChanged();
-      } else {
-        withDailyBuddyAffection_ = null;
-        withDailyBuddyAffectionBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-     */
-    public POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder getWithDailyBuddyAffectionBuilder() {
-      
-      onChanged();
-      return getWithDailyBuddyAffectionFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-     */
-    public POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder getWithDailyBuddyAffectionOrBuilder() {
-      if (withDailyBuddyAffectionBuilder_ != null) {
-        return withDailyBuddyAffectionBuilder_.getMessageOrBuilder();
-      } else {
-        return withDailyBuddyAffection_ == null ?
-            POGOProtos.Rpc.WithDailyBuddyAffectionProto.getDefaultInstance() : withDailyBuddyAffection_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithDailyBuddyAffectionProto with_daily_buddy_affection = 26;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.WithDailyBuddyAffectionProto, POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder, POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder> 
-        getWithDailyBuddyAffectionFieldBuilder() {
-      if (withDailyBuddyAffectionBuilder_ == null) {
-        withDailyBuddyAffectionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.WithDailyBuddyAffectionProto, POGOProtos.Rpc.WithDailyBuddyAffectionProto.Builder, POGOProtos.Rpc.WithDailyBuddyAffectionProtoOrBuilder>(
-                getWithDailyBuddyAffection(),
-                getParentForChildren(),
-                isClean());
-        withDailyBuddyAffection_ = null;
-      }
-      return withDailyBuddyAffectionBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

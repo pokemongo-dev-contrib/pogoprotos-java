@@ -190,4 +190,28 @@ public interface FortSearchLogEntryOrBuilder extends
    */
   POGOProtos.Data.Gift.GiftBoxOrBuilder getGiftBoxesOrBuilder(
       int index);
+
+  /**
+   * <code>repeated .POGOProtos.Inventory.LootItem stickers = 11;</code>
+   */
+  java.util.List<POGOProtos.Inventory.LootItem> 
+      getStickersList();
+  /**
+   * <code>repeated .POGOProtos.Inventory.LootItem stickers = 11;</code>
+   */
+  POGOProtos.Inventory.LootItem getStickers(int index);
+  /**
+   * <code>repeated .POGOProtos.Inventory.LootItem stickers = 11;</code>
+   */
+  int getStickersCount();
+  /**
+   * <code>repeated .POGOProtos.Inventory.LootItem stickers = 11;</code>
+   */
+  java.util.List<? extends POGOProtos.Inventory.LootItemOrBuilder> 
+      getStickersOrBuilderList();
+  /**
+   * <code>repeated .POGOProtos.Inventory.LootItem stickers = 11;</code>
+   */
+  POGOProtos.Inventory.LootItemOrBuilder getStickersOrBuilder(
+      int index);
 }

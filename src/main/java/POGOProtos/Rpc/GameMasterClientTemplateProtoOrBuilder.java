@@ -1098,4 +1098,34 @@ public interface GameMasterClientTemplateProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.CrossGameSocialSettingsProto cross_game_social_settings = 86;</code>
    */
   POGOProtos.Rpc.CrossGameSocialSettingsProtoOrBuilder getCrossGameSocialSettingsOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+   * @return Whether the mapDisplaySettings field is set.
+   */
+  boolean hasMapDisplaySettings();
+  /**
+   * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+   * @return The mapDisplaySettings.
+   */
+  POGOProtos.Rpc.MapDisplaySettingsProto getMapDisplaySettings();
+  /**
+   * <code>.POGOProtos.Rpc.MapDisplaySettingsProto map_display_settings = 87;</code>
+   */
+  POGOProtos.Rpc.MapDisplaySettingsProtoOrBuilder getMapDisplaySettingsOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+   * @return Whether the arTelemetrySettings field is set.
+   */
+  boolean hasArTelemetrySettings();
+  /**
+   * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+   * @return The arTelemetrySettings.
+   */
+  POGOProtos.Rpc.ArTelemetrySettingsProto getArTelemetrySettings();
+  /**
+   * <code>.POGOProtos.Rpc.ArTelemetrySettingsProto ar_telemetry_settings = 90;</code>
+   */
+  POGOProtos.Rpc.ArTelemetrySettingsProtoOrBuilder getArTelemetrySettingsOrBuilder();
 }

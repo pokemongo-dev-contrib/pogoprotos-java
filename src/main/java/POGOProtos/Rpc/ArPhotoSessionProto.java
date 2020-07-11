@@ -20,6 +20,10 @@ private static final long serialVersionUID = 0L;
     furthestStepCompleted_ = 0;
     arContext_ = 0;
     modelUrl_ = "";
+    ardkVersion_ = "";
+    framerateSamples_ = java.util.Collections.emptyList();
+    batterySamples_ = java.util.Collections.emptyList();
+    processorSamples_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -42,6 +46,7 @@ private static final long serialVersionUID = 0L;
     if (extensionRegistry == null) {
       throw new java.lang.NullPointerException();
     }
+    int mutable_bitField0_ = 0;
     com.google.protobuf.UnknownFieldSet.Builder unknownFields =
         com.google.protobuf.UnknownFieldSet.newBuilder();
     try {
@@ -116,6 +121,69 @@ private static final long serialVersionUID = 0L;
             modelUrl_ = s;
             break;
           }
+          case 106: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            ardkVersion_ = s;
+            break;
+          }
+          case 112: {
+
+            averageFramerate_ = input.readInt32();
+            break;
+          }
+          case 125: {
+
+            averageBatteryPerMin_ = input.readFloat();
+            break;
+          }
+          case 133: {
+
+            averageCpuUsage_ = input.readFloat();
+            break;
+          }
+          case 141: {
+
+            averageGpuUsage_ = input.readFloat();
+            break;
+          }
+          case 146: {
+            if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              framerateSamples_ = new java.util.ArrayList<POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample>();
+              mutable_bitField0_ |= 0x00000001;
+            }
+            framerateSamples_.add(
+                input.readMessage(POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.parser(), extensionRegistry));
+            break;
+          }
+          case 154: {
+            if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              batterySamples_ = new java.util.ArrayList<POGOProtos.Rpc.ArPhotoSessionProto.BatterySample>();
+              mutable_bitField0_ |= 0x00000002;
+            }
+            batterySamples_.add(
+                input.readMessage(POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.parser(), extensionRegistry));
+            break;
+          }
+          case 162: {
+            if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              processorSamples_ = new java.util.ArrayList<POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample>();
+              mutable_bitField0_ |= 0x00000004;
+            }
+            processorSamples_.add(
+                input.readMessage(POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.parser(), extensionRegistry));
+            break;
+          }
+          case 168: {
+
+            sessionStartToPlaneDetectionMs_ = input.readInt32();
+            break;
+          }
+          case 176: {
+
+            planeDetectionToUserInteractionMs_ = input.readInt32();
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -131,6 +199,15 @@ private static final long serialVersionUID = 0L;
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
+      if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        framerateSamples_ = java.util.Collections.unmodifiableList(framerateSamples_);
+      }
+      if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        batterySamples_ = java.util.Collections.unmodifiableList(batterySamples_);
+      }
+      if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        processorSamples_ = java.util.Collections.unmodifiableList(processorSamples_);
+      }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
     }
@@ -393,6 +470,137 @@ private static final long serialVersionUID = 0L;
   }
 
   /**
+   * Protobuf enum {@code POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus}
+   */
+  public enum BatteryStatus
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>UNDETERMINED = 0;</code>
+     */
+    UNDETERMINED(0),
+    /**
+     * <code>CHARGING = 1;</code>
+     */
+    CHARGING(1),
+    /**
+     * <code>DISCHARGING = 2;</code>
+     */
+    DISCHARGING(2),
+    /**
+     * <code>NOT_CHARGING = 3;</code>
+     */
+    NOT_CHARGING(3),
+    /**
+     * <code>FULL = 4;</code>
+     */
+    FULL(4),
+    UNRECOGNIZED(-1),
+    ;
+
+    /**
+     * <code>UNDETERMINED = 0;</code>
+     */
+    public static final int UNDETERMINED_VALUE = 0;
+    /**
+     * <code>CHARGING = 1;</code>
+     */
+    public static final int CHARGING_VALUE = 1;
+    /**
+     * <code>DISCHARGING = 2;</code>
+     */
+    public static final int DISCHARGING_VALUE = 2;
+    /**
+     * <code>NOT_CHARGING = 3;</code>
+     */
+    public static final int NOT_CHARGING_VALUE = 3;
+    /**
+     * <code>FULL = 4;</code>
+     */
+    public static final int FULL_VALUE = 4;
+
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static BatteryStatus valueOf(int value) {
+      return forNumber(value);
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static BatteryStatus forNumber(int value) {
+      switch (value) {
+        case 0: return UNDETERMINED;
+        case 1: return CHARGING;
+        case 2: return DISCHARGING;
+        case 3: return NOT_CHARGING;
+        case 4: return FULL;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<BatteryStatus>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        BatteryStatus> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<BatteryStatus>() {
+            public BatteryStatus findValueByNumber(int number) {
+              return BatteryStatus.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      return getDescriptor().getValues().get(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return POGOProtos.Rpc.ArPhotoSessionProto.getDescriptor().getEnumTypes().get(2);
+    }
+
+    private static final BatteryStatus[] VALUES = values();
+
+    public static BatteryStatus valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private BatteryStatus(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus)
+  }
+
+  /**
    * Protobuf enum {@code POGOProtos.Rpc.ArPhotoSessionProto.Step}
    */
   public enum Step
@@ -506,7 +714,7 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return POGOProtos.Rpc.ArPhotoSessionProto.getDescriptor().getEnumTypes().get(2);
+      return POGOProtos.Rpc.ArPhotoSessionProto.getDescriptor().getEnumTypes().get(3);
     }
 
     private static final Step[] VALUES = values();
@@ -530,6 +738,2904 @@ private static final long serialVersionUID = 0L;
     }
 
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.ArPhotoSessionProto.Step)
+  }
+
+  public interface ArConditionsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.ArPhotoSessionProto.ArConditions)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int64 timestamp = 1;</code>
+     * @return The timestamp.
+     */
+    long getTimestamp();
+
+    /**
+     * <code>bool occlusions_enabled = 2;</code>
+     * @return The occlusionsEnabled.
+     */
+    boolean getOcclusionsEnabled();
+
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.Step current_ar_step = 3;</code>
+     * @return The enum numeric value on the wire for currentArStep.
+     */
+    int getCurrentArStepValue();
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.Step current_ar_step = 3;</code>
+     * @return The currentArStep.
+     */
+    POGOProtos.Rpc.ArPhotoSessionProto.Step getCurrentArStep();
+  }
+  /**
+   * Protobuf type {@code POGOProtos.Rpc.ArPhotoSessionProto.ArConditions}
+   */
+  public  static final class ArConditions extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ArPhotoSessionProto.ArConditions)
+      ArConditionsOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ArConditions.newBuilder() to construct.
+    private ArConditions(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ArConditions() {
+      currentArStep_ = 0;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new ArConditions();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ArConditions(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+
+              timestamp_ = input.readInt64();
+              break;
+            }
+            case 16: {
+
+              occlusionsEnabled_ = input.readBool();
+              break;
+            }
+            case 24: {
+              int rawValue = input.readEnum();
+
+              currentArStep_ = rawValue;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_ArConditions_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_ArConditions_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.class, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder.class);
+    }
+
+    public static final int TIMESTAMP_FIELD_NUMBER = 1;
+    private long timestamp_;
+    /**
+     * <code>int64 timestamp = 1;</code>
+     * @return The timestamp.
+     */
+    public long getTimestamp() {
+      return timestamp_;
+    }
+
+    public static final int OCCLUSIONS_ENABLED_FIELD_NUMBER = 2;
+    private boolean occlusionsEnabled_;
+    /**
+     * <code>bool occlusions_enabled = 2;</code>
+     * @return The occlusionsEnabled.
+     */
+    public boolean getOcclusionsEnabled() {
+      return occlusionsEnabled_;
+    }
+
+    public static final int CURRENT_AR_STEP_FIELD_NUMBER = 3;
+    private int currentArStep_;
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.Step current_ar_step = 3;</code>
+     * @return The enum numeric value on the wire for currentArStep.
+     */
+    public int getCurrentArStepValue() {
+      return currentArStep_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.Step current_ar_step = 3;</code>
+     * @return The currentArStep.
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.Step getCurrentArStep() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.ArPhotoSessionProto.Step result = POGOProtos.Rpc.ArPhotoSessionProto.Step.valueOf(currentArStep_);
+      return result == null ? POGOProtos.Rpc.ArPhotoSessionProto.Step.UNRECOGNIZED : result;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (timestamp_ != 0L) {
+        output.writeInt64(1, timestamp_);
+      }
+      if (occlusionsEnabled_ != false) {
+        output.writeBool(2, occlusionsEnabled_);
+      }
+      if (currentArStep_ != POGOProtos.Rpc.ArPhotoSessionProto.Step.UNKNOWN.getNumber()) {
+        output.writeEnum(3, currentArStep_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (timestamp_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, timestamp_);
+      }
+      if (occlusionsEnabled_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(2, occlusionsEnabled_);
+      }
+      if (currentArStep_ != POGOProtos.Rpc.ArPhotoSessionProto.Step.UNKNOWN.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, currentArStep_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof POGOProtos.Rpc.ArPhotoSessionProto.ArConditions)) {
+        return super.equals(obj);
+      }
+      POGOProtos.Rpc.ArPhotoSessionProto.ArConditions other = (POGOProtos.Rpc.ArPhotoSessionProto.ArConditions) obj;
+
+      if (getTimestamp()
+          != other.getTimestamp()) return false;
+      if (getOcclusionsEnabled()
+          != other.getOcclusionsEnabled()) return false;
+      if (currentArStep_ != other.currentArStep_) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTimestamp());
+      hash = (37 * hash) + OCCLUSIONS_ENABLED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getOcclusionsEnabled());
+      hash = (37 * hash) + CURRENT_AR_STEP_FIELD_NUMBER;
+      hash = (53 * hash) + currentArStep_;
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code POGOProtos.Rpc.ArPhotoSessionProto.ArConditions}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.ArPhotoSessionProto.ArConditions)
+        POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_ArConditions_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_ArConditions_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.class, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder.class);
+      }
+
+      // Construct using POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        timestamp_ = 0L;
+
+        occlusionsEnabled_ = false;
+
+        currentArStep_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_ArConditions_descriptor;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getDefaultInstanceForType() {
+        return POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions build() {
+        POGOProtos.Rpc.ArPhotoSessionProto.ArConditions result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions buildPartial() {
+        POGOProtos.Rpc.ArPhotoSessionProto.ArConditions result = new POGOProtos.Rpc.ArPhotoSessionProto.ArConditions(this);
+        result.timestamp_ = timestamp_;
+        result.occlusionsEnabled_ = occlusionsEnabled_;
+        result.currentArStep_ = currentArStep_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof POGOProtos.Rpc.ArPhotoSessionProto.ArConditions) {
+          return mergeFrom((POGOProtos.Rpc.ArPhotoSessionProto.ArConditions)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions other) {
+        if (other == POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance()) return this;
+        if (other.getTimestamp() != 0L) {
+          setTimestamp(other.getTimestamp());
+        }
+        if (other.getOcclusionsEnabled() != false) {
+          setOcclusionsEnabled(other.getOcclusionsEnabled());
+        }
+        if (other.currentArStep_ != 0) {
+          setCurrentArStepValue(other.getCurrentArStepValue());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        POGOProtos.Rpc.ArPhotoSessionProto.ArConditions parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (POGOProtos.Rpc.ArPhotoSessionProto.ArConditions) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private long timestamp_ ;
+      /**
+       * <code>int64 timestamp = 1;</code>
+       * @return The timestamp.
+       */
+      public long getTimestamp() {
+        return timestamp_;
+      }
+      /**
+       * <code>int64 timestamp = 1;</code>
+       * @param value The timestamp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTimestamp(long value) {
+        
+        timestamp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 timestamp = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTimestamp() {
+        
+        timestamp_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private boolean occlusionsEnabled_ ;
+      /**
+       * <code>bool occlusions_enabled = 2;</code>
+       * @return The occlusionsEnabled.
+       */
+      public boolean getOcclusionsEnabled() {
+        return occlusionsEnabled_;
+      }
+      /**
+       * <code>bool occlusions_enabled = 2;</code>
+       * @param value The occlusionsEnabled to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOcclusionsEnabled(boolean value) {
+        
+        occlusionsEnabled_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool occlusions_enabled = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOcclusionsEnabled() {
+        
+        occlusionsEnabled_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int currentArStep_ = 0;
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.Step current_ar_step = 3;</code>
+       * @return The enum numeric value on the wire for currentArStep.
+       */
+      public int getCurrentArStepValue() {
+        return currentArStep_;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.Step current_ar_step = 3;</code>
+       * @param value The enum numeric value on the wire for currentArStep to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurrentArStepValue(int value) {
+        currentArStep_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.Step current_ar_step = 3;</code>
+       * @return The currentArStep.
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.Step getCurrentArStep() {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.ArPhotoSessionProto.Step result = POGOProtos.Rpc.ArPhotoSessionProto.Step.valueOf(currentArStep_);
+        return result == null ? POGOProtos.Rpc.ArPhotoSessionProto.Step.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.Step current_ar_step = 3;</code>
+       * @param value The currentArStep to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCurrentArStep(POGOProtos.Rpc.ArPhotoSessionProto.Step value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        currentArStep_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.Step current_ar_step = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCurrentArStep() {
+        
+        currentArStep_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.ArPhotoSessionProto.ArConditions)
+    }
+
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.ArPhotoSessionProto.ArConditions)
+    private static final POGOProtos.Rpc.ArPhotoSessionProto.ArConditions DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.ArPhotoSessionProto.ArConditions();
+    }
+
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ArConditions>
+        PARSER = new com.google.protobuf.AbstractParser<ArConditions>() {
+      @java.lang.Override
+      public ArConditions parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ArConditions(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ArConditions> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ArConditions> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface BatterySampleOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.ArPhotoSessionProto.BatterySample)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return Whether the conditions field is set.
+     */
+    boolean hasConditions();
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return The conditions.
+     */
+    POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getConditions();
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     */
+    POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder getConditionsOrBuilder();
+
+    /**
+     * <code>float battery_level = 2;</code>
+     * @return The batteryLevel.
+     */
+    float getBatteryLevel();
+
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus status = 3;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    int getStatusValue();
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus status = 3;</code>
+     * @return The status.
+     */
+    POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus getStatus();
+  }
+  /**
+   * Protobuf type {@code POGOProtos.Rpc.ArPhotoSessionProto.BatterySample}
+   */
+  public  static final class BatterySample extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ArPhotoSessionProto.BatterySample)
+      BatterySampleOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use BatterySample.newBuilder() to construct.
+    private BatterySample(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private BatterySample() {
+      status_ = 0;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new BatterySample();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private BatterySample(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder subBuilder = null;
+              if (conditions_ != null) {
+                subBuilder = conditions_.toBuilder();
+              }
+              conditions_ = input.readMessage(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(conditions_);
+                conditions_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 21: {
+
+              batteryLevel_ = input.readFloat();
+              break;
+            }
+            case 24: {
+              int rawValue = input.readEnum();
+
+              status_ = rawValue;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_BatterySample_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_BatterySample_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.class, POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder.class);
+    }
+
+    public static final int CONDITIONS_FIELD_NUMBER = 1;
+    private POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions_;
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return Whether the conditions field is set.
+     */
+    public boolean hasConditions() {
+      return conditions_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return The conditions.
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getConditions() {
+      return conditions_ == null ? POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance() : conditions_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder getConditionsOrBuilder() {
+      return getConditions();
+    }
+
+    public static final int BATTERY_LEVEL_FIELD_NUMBER = 2;
+    private float batteryLevel_;
+    /**
+     * <code>float battery_level = 2;</code>
+     * @return The batteryLevel.
+     */
+    public float getBatteryLevel() {
+      return batteryLevel_;
+    }
+
+    public static final int STATUS_FIELD_NUMBER = 3;
+    private int status_;
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus status = 3;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus status = 3;</code>
+     * @return The status.
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus getStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus result = POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus.UNRECOGNIZED : result;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (conditions_ != null) {
+        output.writeMessage(1, getConditions());
+      }
+      if (batteryLevel_ != 0F) {
+        output.writeFloat(2, batteryLevel_);
+      }
+      if (status_ != POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus.UNDETERMINED.getNumber()) {
+        output.writeEnum(3, status_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (conditions_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getConditions());
+      }
+      if (batteryLevel_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(2, batteryLevel_);
+      }
+      if (status_ != POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus.UNDETERMINED.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(3, status_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof POGOProtos.Rpc.ArPhotoSessionProto.BatterySample)) {
+        return super.equals(obj);
+      }
+      POGOProtos.Rpc.ArPhotoSessionProto.BatterySample other = (POGOProtos.Rpc.ArPhotoSessionProto.BatterySample) obj;
+
+      if (hasConditions() != other.hasConditions()) return false;
+      if (hasConditions()) {
+        if (!getConditions()
+            .equals(other.getConditions())) return false;
+      }
+      if (java.lang.Float.floatToIntBits(getBatteryLevel())
+          != java.lang.Float.floatToIntBits(
+              other.getBatteryLevel())) return false;
+      if (status_ != other.status_) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasConditions()) {
+        hash = (37 * hash) + CONDITIONS_FIELD_NUMBER;
+        hash = (53 * hash) + getConditions().hashCode();
+      }
+      hash = (37 * hash) + BATTERY_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getBatteryLevel());
+      hash = (37 * hash) + STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + status_;
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(POGOProtos.Rpc.ArPhotoSessionProto.BatterySample prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code POGOProtos.Rpc.ArPhotoSessionProto.BatterySample}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.ArPhotoSessionProto.BatterySample)
+        POGOProtos.Rpc.ArPhotoSessionProto.BatterySampleOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_BatterySample_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_BatterySample_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.class, POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder.class);
+      }
+
+      // Construct using POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (conditionsBuilder_ == null) {
+          conditions_ = null;
+        } else {
+          conditions_ = null;
+          conditionsBuilder_ = null;
+        }
+        batteryLevel_ = 0F;
+
+        status_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_BatterySample_descriptor;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.BatterySample getDefaultInstanceForType() {
+        return POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.BatterySample build() {
+        POGOProtos.Rpc.ArPhotoSessionProto.BatterySample result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.BatterySample buildPartial() {
+        POGOProtos.Rpc.ArPhotoSessionProto.BatterySample result = new POGOProtos.Rpc.ArPhotoSessionProto.BatterySample(this);
+        if (conditionsBuilder_ == null) {
+          result.conditions_ = conditions_;
+        } else {
+          result.conditions_ = conditionsBuilder_.build();
+        }
+        result.batteryLevel_ = batteryLevel_;
+        result.status_ = status_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof POGOProtos.Rpc.ArPhotoSessionProto.BatterySample) {
+          return mergeFrom((POGOProtos.Rpc.ArPhotoSessionProto.BatterySample)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(POGOProtos.Rpc.ArPhotoSessionProto.BatterySample other) {
+        if (other == POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.getDefaultInstance()) return this;
+        if (other.hasConditions()) {
+          mergeConditions(other.getConditions());
+        }
+        if (other.getBatteryLevel() != 0F) {
+          setBatteryLevel(other.getBatteryLevel());
+        }
+        if (other.status_ != 0) {
+          setStatusValue(other.getStatusValue());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        POGOProtos.Rpc.ArPhotoSessionProto.BatterySample parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (POGOProtos.Rpc.ArPhotoSessionProto.BatterySample) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.ArPhotoSessionProto.ArConditions, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder> conditionsBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       * @return Whether the conditions field is set.
+       */
+      public boolean hasConditions() {
+        return conditionsBuilder_ != null || conditions_ != null;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       * @return The conditions.
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getConditions() {
+        if (conditionsBuilder_ == null) {
+          return conditions_ == null ? POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance() : conditions_;
+        } else {
+          return conditionsBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder setConditions(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          conditions_ = value;
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder setConditions(
+          POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          conditions_ = builderForValue.build();
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder mergeConditions(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions value) {
+        if (conditionsBuilder_ == null) {
+          if (conditions_ != null) {
+            conditions_ =
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.newBuilder(conditions_).mergeFrom(value).buildPartial();
+          } else {
+            conditions_ = value;
+          }
+          onChanged();
+        } else {
+          conditionsBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder clearConditions() {
+        if (conditionsBuilder_ == null) {
+          conditions_ = null;
+          onChanged();
+        } else {
+          conditions_ = null;
+          conditionsBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder getConditionsBuilder() {
+        
+        onChanged();
+        return getConditionsFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder getConditionsOrBuilder() {
+        if (conditionsBuilder_ != null) {
+          return conditionsBuilder_.getMessageOrBuilder();
+        } else {
+          return conditions_ == null ?
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance() : conditions_;
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.ArPhotoSessionProto.ArConditions, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder> 
+          getConditionsFieldBuilder() {
+        if (conditionsBuilder_ == null) {
+          conditionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder>(
+                  getConditions(),
+                  getParentForChildren(),
+                  isClean());
+          conditions_ = null;
+        }
+        return conditionsBuilder_;
+      }
+
+      private float batteryLevel_ ;
+      /**
+       * <code>float battery_level = 2;</code>
+       * @return The batteryLevel.
+       */
+      public float getBatteryLevel() {
+        return batteryLevel_;
+      }
+      /**
+       * <code>float battery_level = 2;</code>
+       * @param value The batteryLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBatteryLevel(float value) {
+        
+        batteryLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float battery_level = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBatteryLevel() {
+        
+        batteryLevel_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int status_ = 0;
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus status = 3;</code>
+       * @return The enum numeric value on the wire for status.
+       */
+      public int getStatusValue() {
+        return status_;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus status = 3;</code>
+       * @param value The enum numeric value on the wire for status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatusValue(int value) {
+        status_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus status = 3;</code>
+       * @return The status.
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus getStatus() {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus result = POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus.valueOf(status_);
+        return result == null ? POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus status = 3;</code>
+       * @param value The status to set.
+       * @return This builder for chaining.
+       */
+      public Builder setStatus(POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        status_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.BatteryStatus status = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearStatus() {
+        
+        status_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.ArPhotoSessionProto.BatterySample)
+    }
+
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.ArPhotoSessionProto.BatterySample)
+    private static final POGOProtos.Rpc.ArPhotoSessionProto.BatterySample DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.ArPhotoSessionProto.BatterySample();
+    }
+
+    public static POGOProtos.Rpc.ArPhotoSessionProto.BatterySample getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<BatterySample>
+        PARSER = new com.google.protobuf.AbstractParser<BatterySample>() {
+      @java.lang.Override
+      public BatterySample parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new BatterySample(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<BatterySample> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BatterySample> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public POGOProtos.Rpc.ArPhotoSessionProto.BatterySample getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface FramerateSampleOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return Whether the conditions field is set.
+     */
+    boolean hasConditions();
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return The conditions.
+     */
+    POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getConditions();
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     */
+    POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder getConditionsOrBuilder();
+
+    /**
+     * <code>int32 framerate = 2;</code>
+     * @return The framerate.
+     */
+    int getFramerate();
+  }
+  /**
+   * Protobuf type {@code POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample}
+   */
+  public  static final class FramerateSample extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample)
+      FramerateSampleOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use FramerateSample.newBuilder() to construct.
+    private FramerateSample(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private FramerateSample() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new FramerateSample();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private FramerateSample(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder subBuilder = null;
+              if (conditions_ != null) {
+                subBuilder = conditions_.toBuilder();
+              }
+              conditions_ = input.readMessage(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(conditions_);
+                conditions_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 16: {
+
+              framerate_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_FramerateSample_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_FramerateSample_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.class, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder.class);
+    }
+
+    public static final int CONDITIONS_FIELD_NUMBER = 1;
+    private POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions_;
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return Whether the conditions field is set.
+     */
+    public boolean hasConditions() {
+      return conditions_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return The conditions.
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getConditions() {
+      return conditions_ == null ? POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance() : conditions_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder getConditionsOrBuilder() {
+      return getConditions();
+    }
+
+    public static final int FRAMERATE_FIELD_NUMBER = 2;
+    private int framerate_;
+    /**
+     * <code>int32 framerate = 2;</code>
+     * @return The framerate.
+     */
+    public int getFramerate() {
+      return framerate_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (conditions_ != null) {
+        output.writeMessage(1, getConditions());
+      }
+      if (framerate_ != 0) {
+        output.writeInt32(2, framerate_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (conditions_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getConditions());
+      }
+      if (framerate_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, framerate_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample)) {
+        return super.equals(obj);
+      }
+      POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample other = (POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample) obj;
+
+      if (hasConditions() != other.hasConditions()) return false;
+      if (hasConditions()) {
+        if (!getConditions()
+            .equals(other.getConditions())) return false;
+      }
+      if (getFramerate()
+          != other.getFramerate()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasConditions()) {
+        hash = (37 * hash) + CONDITIONS_FIELD_NUMBER;
+        hash = (53 * hash) + getConditions().hashCode();
+      }
+      hash = (37 * hash) + FRAMERATE_FIELD_NUMBER;
+      hash = (53 * hash) + getFramerate();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample)
+        POGOProtos.Rpc.ArPhotoSessionProto.FramerateSampleOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_FramerateSample_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_FramerateSample_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.class, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder.class);
+      }
+
+      // Construct using POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (conditionsBuilder_ == null) {
+          conditions_ = null;
+        } else {
+          conditions_ = null;
+          conditionsBuilder_ = null;
+        }
+        framerate_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_FramerateSample_descriptor;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample getDefaultInstanceForType() {
+        return POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample build() {
+        POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample buildPartial() {
+        POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample result = new POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample(this);
+        if (conditionsBuilder_ == null) {
+          result.conditions_ = conditions_;
+        } else {
+          result.conditions_ = conditionsBuilder_.build();
+        }
+        result.framerate_ = framerate_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample) {
+          return mergeFrom((POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample other) {
+        if (other == POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.getDefaultInstance()) return this;
+        if (other.hasConditions()) {
+          mergeConditions(other.getConditions());
+        }
+        if (other.getFramerate() != 0) {
+          setFramerate(other.getFramerate());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.ArPhotoSessionProto.ArConditions, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder> conditionsBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       * @return Whether the conditions field is set.
+       */
+      public boolean hasConditions() {
+        return conditionsBuilder_ != null || conditions_ != null;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       * @return The conditions.
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getConditions() {
+        if (conditionsBuilder_ == null) {
+          return conditions_ == null ? POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance() : conditions_;
+        } else {
+          return conditionsBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder setConditions(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          conditions_ = value;
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder setConditions(
+          POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          conditions_ = builderForValue.build();
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder mergeConditions(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions value) {
+        if (conditionsBuilder_ == null) {
+          if (conditions_ != null) {
+            conditions_ =
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.newBuilder(conditions_).mergeFrom(value).buildPartial();
+          } else {
+            conditions_ = value;
+          }
+          onChanged();
+        } else {
+          conditionsBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder clearConditions() {
+        if (conditionsBuilder_ == null) {
+          conditions_ = null;
+          onChanged();
+        } else {
+          conditions_ = null;
+          conditionsBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder getConditionsBuilder() {
+        
+        onChanged();
+        return getConditionsFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder getConditionsOrBuilder() {
+        if (conditionsBuilder_ != null) {
+          return conditionsBuilder_.getMessageOrBuilder();
+        } else {
+          return conditions_ == null ?
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance() : conditions_;
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.ArPhotoSessionProto.ArConditions, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder> 
+          getConditionsFieldBuilder() {
+        if (conditionsBuilder_ == null) {
+          conditionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder>(
+                  getConditions(),
+                  getParentForChildren(),
+                  isClean());
+          conditions_ = null;
+        }
+        return conditionsBuilder_;
+      }
+
+      private int framerate_ ;
+      /**
+       * <code>int32 framerate = 2;</code>
+       * @return The framerate.
+       */
+      public int getFramerate() {
+        return framerate_;
+      }
+      /**
+       * <code>int32 framerate = 2;</code>
+       * @param value The framerate to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFramerate(int value) {
+        
+        framerate_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 framerate = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFramerate() {
+        
+        framerate_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample)
+    }
+
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample)
+    private static final POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample();
+    }
+
+    public static POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<FramerateSample>
+        PARSER = new com.google.protobuf.AbstractParser<FramerateSample>() {
+      @java.lang.Override
+      public FramerateSample parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new FramerateSample(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<FramerateSample> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<FramerateSample> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface ProcessorSampleOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return Whether the conditions field is set.
+     */
+    boolean hasConditions();
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return The conditions.
+     */
+    POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getConditions();
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     */
+    POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder getConditionsOrBuilder();
+
+    /**
+     * <code>float cpu_usage = 2;</code>
+     * @return The cpuUsage.
+     */
+    float getCpuUsage();
+
+    /**
+     * <code>float gpu_usage = 3;</code>
+     * @return The gpuUsage.
+     */
+    float getGpuUsage();
+  }
+  /**
+   * Protobuf type {@code POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample}
+   */
+  public  static final class ProcessorSample extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample)
+      ProcessorSampleOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ProcessorSample.newBuilder() to construct.
+    private ProcessorSample(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ProcessorSample() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new ProcessorSample();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ProcessorSample(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder subBuilder = null;
+              if (conditions_ != null) {
+                subBuilder = conditions_.toBuilder();
+              }
+              conditions_ = input.readMessage(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(conditions_);
+                conditions_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 21: {
+
+              cpuUsage_ = input.readFloat();
+              break;
+            }
+            case 29: {
+
+              gpuUsage_ = input.readFloat();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_ProcessorSample_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_ProcessorSample_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.class, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder.class);
+    }
+
+    public static final int CONDITIONS_FIELD_NUMBER = 1;
+    private POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions_;
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return Whether the conditions field is set.
+     */
+    public boolean hasConditions() {
+      return conditions_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     * @return The conditions.
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getConditions() {
+      return conditions_ == null ? POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance() : conditions_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder getConditionsOrBuilder() {
+      return getConditions();
+    }
+
+    public static final int CPU_USAGE_FIELD_NUMBER = 2;
+    private float cpuUsage_;
+    /**
+     * <code>float cpu_usage = 2;</code>
+     * @return The cpuUsage.
+     */
+    public float getCpuUsage() {
+      return cpuUsage_;
+    }
+
+    public static final int GPU_USAGE_FIELD_NUMBER = 3;
+    private float gpuUsage_;
+    /**
+     * <code>float gpu_usage = 3;</code>
+     * @return The gpuUsage.
+     */
+    public float getGpuUsage() {
+      return gpuUsage_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (conditions_ != null) {
+        output.writeMessage(1, getConditions());
+      }
+      if (cpuUsage_ != 0F) {
+        output.writeFloat(2, cpuUsage_);
+      }
+      if (gpuUsage_ != 0F) {
+        output.writeFloat(3, gpuUsage_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (conditions_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getConditions());
+      }
+      if (cpuUsage_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(2, cpuUsage_);
+      }
+      if (gpuUsage_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(3, gpuUsage_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample)) {
+        return super.equals(obj);
+      }
+      POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample other = (POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample) obj;
+
+      if (hasConditions() != other.hasConditions()) return false;
+      if (hasConditions()) {
+        if (!getConditions()
+            .equals(other.getConditions())) return false;
+      }
+      if (java.lang.Float.floatToIntBits(getCpuUsage())
+          != java.lang.Float.floatToIntBits(
+              other.getCpuUsage())) return false;
+      if (java.lang.Float.floatToIntBits(getGpuUsage())
+          != java.lang.Float.floatToIntBits(
+              other.getGpuUsage())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasConditions()) {
+        hash = (37 * hash) + CONDITIONS_FIELD_NUMBER;
+        hash = (53 * hash) + getConditions().hashCode();
+      }
+      hash = (37 * hash) + CPU_USAGE_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getCpuUsage());
+      hash = (37 * hash) + GPU_USAGE_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getGpuUsage());
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample)
+        POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSampleOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_ProcessorSample_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_ProcessorSample_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.class, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder.class);
+      }
+
+      // Construct using POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (conditionsBuilder_ == null) {
+          conditions_ = null;
+        } else {
+          conditions_ = null;
+          conditionsBuilder_ = null;
+        }
+        cpuUsage_ = 0F;
+
+        gpuUsage_ = 0F;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_ArPhotoSessionProto_ProcessorSample_descriptor;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample getDefaultInstanceForType() {
+        return POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample build() {
+        POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample buildPartial() {
+        POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample result = new POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample(this);
+        if (conditionsBuilder_ == null) {
+          result.conditions_ = conditions_;
+        } else {
+          result.conditions_ = conditionsBuilder_.build();
+        }
+        result.cpuUsage_ = cpuUsage_;
+        result.gpuUsage_ = gpuUsage_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample) {
+          return mergeFrom((POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample other) {
+        if (other == POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.getDefaultInstance()) return this;
+        if (other.hasConditions()) {
+          mergeConditions(other.getConditions());
+        }
+        if (other.getCpuUsage() != 0F) {
+          setCpuUsage(other.getCpuUsage());
+        }
+        if (other.getGpuUsage() != 0F) {
+          setGpuUsage(other.getGpuUsage());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.ArPhotoSessionProto.ArConditions, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder> conditionsBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       * @return Whether the conditions field is set.
+       */
+      public boolean hasConditions() {
+        return conditionsBuilder_ != null || conditions_ != null;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       * @return The conditions.
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions getConditions() {
+        if (conditionsBuilder_ == null) {
+          return conditions_ == null ? POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance() : conditions_;
+        } else {
+          return conditionsBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder setConditions(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          conditions_ = value;
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder setConditions(
+          POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          conditions_ = builderForValue.build();
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder mergeConditions(POGOProtos.Rpc.ArPhotoSessionProto.ArConditions value) {
+        if (conditionsBuilder_ == null) {
+          if (conditions_ != null) {
+            conditions_ =
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.newBuilder(conditions_).mergeFrom(value).buildPartial();
+          } else {
+            conditions_ = value;
+          }
+          onChanged();
+        } else {
+          conditionsBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public Builder clearConditions() {
+        if (conditionsBuilder_ == null) {
+          conditions_ = null;
+          onChanged();
+        } else {
+          conditions_ = null;
+          conditionsBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder getConditionsBuilder() {
+        
+        onChanged();
+        return getConditionsFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      public POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder getConditionsOrBuilder() {
+        if (conditionsBuilder_ != null) {
+          return conditionsBuilder_.getMessageOrBuilder();
+        } else {
+          return conditions_ == null ?
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.getDefaultInstance() : conditions_;
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.ArPhotoSessionProto.ArConditions conditions = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.ArPhotoSessionProto.ArConditions, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder> 
+          getConditionsFieldBuilder() {
+        if (conditionsBuilder_ == null) {
+          conditionsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.ArPhotoSessionProto.ArConditions, POGOProtos.Rpc.ArPhotoSessionProto.ArConditions.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ArConditionsOrBuilder>(
+                  getConditions(),
+                  getParentForChildren(),
+                  isClean());
+          conditions_ = null;
+        }
+        return conditionsBuilder_;
+      }
+
+      private float cpuUsage_ ;
+      /**
+       * <code>float cpu_usage = 2;</code>
+       * @return The cpuUsage.
+       */
+      public float getCpuUsage() {
+        return cpuUsage_;
+      }
+      /**
+       * <code>float cpu_usage = 2;</code>
+       * @param value The cpuUsage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCpuUsage(float value) {
+        
+        cpuUsage_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float cpu_usage = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCpuUsage() {
+        
+        cpuUsage_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float gpuUsage_ ;
+      /**
+       * <code>float gpu_usage = 3;</code>
+       * @return The gpuUsage.
+       */
+      public float getGpuUsage() {
+        return gpuUsage_;
+      }
+      /**
+       * <code>float gpu_usage = 3;</code>
+       * @param value The gpuUsage to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGpuUsage(float value) {
+        
+        gpuUsage_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float gpu_usage = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGpuUsage() {
+        
+        gpuUsage_ = 0F;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample)
+    }
+
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample)
+    private static final POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample();
+    }
+
+    public static POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ProcessorSample>
+        PARSER = new com.google.protobuf.AbstractParser<ProcessorSample>() {
+      @java.lang.Override
+      public ProcessorSample parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ProcessorSample(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ProcessorSample> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ProcessorSample> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
   }
 
   public static final int AR_TYPE_FIELD_NUMBER = 1;
@@ -705,6 +3811,207 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int ARDK_VERSION_FIELD_NUMBER = 13;
+  private volatile java.lang.Object ardkVersion_;
+  /**
+   * <code>string ardk_version = 13;</code>
+   * @return The ardkVersion.
+   */
+  public java.lang.String getArdkVersion() {
+    java.lang.Object ref = ardkVersion_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      ardkVersion_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string ardk_version = 13;</code>
+   * @return The bytes for ardkVersion.
+   */
+  public com.google.protobuf.ByteString
+      getArdkVersionBytes() {
+    java.lang.Object ref = ardkVersion_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      ardkVersion_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int AVERAGE_FRAMERATE_FIELD_NUMBER = 14;
+  private int averageFramerate_;
+  /**
+   * <code>int32 average_framerate = 14;</code>
+   * @return The averageFramerate.
+   */
+  public int getAverageFramerate() {
+    return averageFramerate_;
+  }
+
+  public static final int AVERAGE_BATTERY_PER_MIN_FIELD_NUMBER = 15;
+  private float averageBatteryPerMin_;
+  /**
+   * <code>float average_battery_per_min = 15;</code>
+   * @return The averageBatteryPerMin.
+   */
+  public float getAverageBatteryPerMin() {
+    return averageBatteryPerMin_;
+  }
+
+  public static final int AVERAGE_CPU_USAGE_FIELD_NUMBER = 16;
+  private float averageCpuUsage_;
+  /**
+   * <code>float average_cpu_usage = 16;</code>
+   * @return The averageCpuUsage.
+   */
+  public float getAverageCpuUsage() {
+    return averageCpuUsage_;
+  }
+
+  public static final int AVERAGE_GPU_USAGE_FIELD_NUMBER = 17;
+  private float averageGpuUsage_;
+  /**
+   * <code>float average_gpu_usage = 17;</code>
+   * @return The averageGpuUsage.
+   */
+  public float getAverageGpuUsage() {
+    return averageGpuUsage_;
+  }
+
+  public static final int FRAMERATE_SAMPLES_FIELD_NUMBER = 18;
+  private java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample> framerateSamples_;
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+   */
+  public java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample> getFramerateSamplesList() {
+    return framerateSamples_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+   */
+  public java.util.List<? extends POGOProtos.Rpc.ArPhotoSessionProto.FramerateSampleOrBuilder> 
+      getFramerateSamplesOrBuilderList() {
+    return framerateSamples_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+   */
+  public int getFramerateSamplesCount() {
+    return framerateSamples_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+   */
+  public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample getFramerateSamples(int index) {
+    return framerateSamples_.get(index);
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+   */
+  public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSampleOrBuilder getFramerateSamplesOrBuilder(
+      int index) {
+    return framerateSamples_.get(index);
+  }
+
+  public static final int BATTERY_SAMPLES_FIELD_NUMBER = 19;
+  private java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.BatterySample> batterySamples_;
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+   */
+  public java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.BatterySample> getBatterySamplesList() {
+    return batterySamples_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+   */
+  public java.util.List<? extends POGOProtos.Rpc.ArPhotoSessionProto.BatterySampleOrBuilder> 
+      getBatterySamplesOrBuilderList() {
+    return batterySamples_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+   */
+  public int getBatterySamplesCount() {
+    return batterySamples_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+   */
+  public POGOProtos.Rpc.ArPhotoSessionProto.BatterySample getBatterySamples(int index) {
+    return batterySamples_.get(index);
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+   */
+  public POGOProtos.Rpc.ArPhotoSessionProto.BatterySampleOrBuilder getBatterySamplesOrBuilder(
+      int index) {
+    return batterySamples_.get(index);
+  }
+
+  public static final int PROCESSOR_SAMPLES_FIELD_NUMBER = 20;
+  private java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample> processorSamples_;
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+   */
+  public java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample> getProcessorSamplesList() {
+    return processorSamples_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+   */
+  public java.util.List<? extends POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSampleOrBuilder> 
+      getProcessorSamplesOrBuilderList() {
+    return processorSamples_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+   */
+  public int getProcessorSamplesCount() {
+    return processorSamples_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+   */
+  public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample getProcessorSamples(int index) {
+    return processorSamples_.get(index);
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+   */
+  public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSampleOrBuilder getProcessorSamplesOrBuilder(
+      int index) {
+    return processorSamples_.get(index);
+  }
+
+  public static final int SESSION_START_TO_PLANE_DETECTION_MS_FIELD_NUMBER = 21;
+  private int sessionStartToPlaneDetectionMs_;
+  /**
+   * <code>int32 session_start_to_plane_detection_ms = 21;</code>
+   * @return The sessionStartToPlaneDetectionMs.
+   */
+  public int getSessionStartToPlaneDetectionMs() {
+    return sessionStartToPlaneDetectionMs_;
+  }
+
+  public static final int PLANE_DETECTION_TO_USER_INTERACTION_MS_FIELD_NUMBER = 22;
+  private int planeDetectionToUserInteractionMs_;
+  /**
+   * <code>int32 plane_detection_to_user_interaction_ms = 22;</code>
+   * @return The planeDetectionToUserInteractionMs.
+   */
+  public int getPlaneDetectionToUserInteractionMs() {
+    return planeDetectionToUserInteractionMs_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -754,6 +4061,36 @@ private static final long serialVersionUID = 0L;
     }
     if (!getModelUrlBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 12, modelUrl_);
+    }
+    if (!getArdkVersionBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 13, ardkVersion_);
+    }
+    if (averageFramerate_ != 0) {
+      output.writeInt32(14, averageFramerate_);
+    }
+    if (averageBatteryPerMin_ != 0F) {
+      output.writeFloat(15, averageBatteryPerMin_);
+    }
+    if (averageCpuUsage_ != 0F) {
+      output.writeFloat(16, averageCpuUsage_);
+    }
+    if (averageGpuUsage_ != 0F) {
+      output.writeFloat(17, averageGpuUsage_);
+    }
+    for (int i = 0; i < framerateSamples_.size(); i++) {
+      output.writeMessage(18, framerateSamples_.get(i));
+    }
+    for (int i = 0; i < batterySamples_.size(); i++) {
+      output.writeMessage(19, batterySamples_.get(i));
+    }
+    for (int i = 0; i < processorSamples_.size(); i++) {
+      output.writeMessage(20, processorSamples_.get(i));
+    }
+    if (sessionStartToPlaneDetectionMs_ != 0) {
+      output.writeInt32(21, sessionStartToPlaneDetectionMs_);
+    }
+    if (planeDetectionToUserInteractionMs_ != 0) {
+      output.writeInt32(22, planeDetectionToUserInteractionMs_);
     }
     unknownFields.writeTo(output);
   }
@@ -811,6 +4148,45 @@ private static final long serialVersionUID = 0L;
     if (!getModelUrlBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, modelUrl_);
     }
+    if (!getArdkVersionBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, ardkVersion_);
+    }
+    if (averageFramerate_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(14, averageFramerate_);
+    }
+    if (averageBatteryPerMin_ != 0F) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeFloatSize(15, averageBatteryPerMin_);
+    }
+    if (averageCpuUsage_ != 0F) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeFloatSize(16, averageCpuUsage_);
+    }
+    if (averageGpuUsage_ != 0F) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeFloatSize(17, averageGpuUsage_);
+    }
+    for (int i = 0; i < framerateSamples_.size(); i++) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(18, framerateSamples_.get(i));
+    }
+    for (int i = 0; i < batterySamples_.size(); i++) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(19, batterySamples_.get(i));
+    }
+    for (int i = 0; i < processorSamples_.size(); i++) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(20, processorSamples_.get(i));
+    }
+    if (sessionStartToPlaneDetectionMs_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(21, sessionStartToPlaneDetectionMs_);
+    }
+    if (planeDetectionToUserInteractionMs_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(22, planeDetectionToUserInteractionMs_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -847,6 +4223,29 @@ private static final long serialVersionUID = 0L;
         != other.getNumPhotosSharedOcclusions()) return false;
     if (!getModelUrl()
         .equals(other.getModelUrl())) return false;
+    if (!getArdkVersion()
+        .equals(other.getArdkVersion())) return false;
+    if (getAverageFramerate()
+        != other.getAverageFramerate()) return false;
+    if (java.lang.Float.floatToIntBits(getAverageBatteryPerMin())
+        != java.lang.Float.floatToIntBits(
+            other.getAverageBatteryPerMin())) return false;
+    if (java.lang.Float.floatToIntBits(getAverageCpuUsage())
+        != java.lang.Float.floatToIntBits(
+            other.getAverageCpuUsage())) return false;
+    if (java.lang.Float.floatToIntBits(getAverageGpuUsage())
+        != java.lang.Float.floatToIntBits(
+            other.getAverageGpuUsage())) return false;
+    if (!getFramerateSamplesList()
+        .equals(other.getFramerateSamplesList())) return false;
+    if (!getBatterySamplesList()
+        .equals(other.getBatterySamplesList())) return false;
+    if (!getProcessorSamplesList()
+        .equals(other.getProcessorSamplesList())) return false;
+    if (getSessionStartToPlaneDetectionMs()
+        != other.getSessionStartToPlaneDetectionMs()) return false;
+    if (getPlaneDetectionToUserInteractionMs()
+        != other.getPlaneDetectionToUserInteractionMs()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -884,6 +4283,35 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getNumPhotosSharedOcclusions();
     hash = (37 * hash) + MODEL_URL_FIELD_NUMBER;
     hash = (53 * hash) + getModelUrl().hashCode();
+    hash = (37 * hash) + ARDK_VERSION_FIELD_NUMBER;
+    hash = (53 * hash) + getArdkVersion().hashCode();
+    hash = (37 * hash) + AVERAGE_FRAMERATE_FIELD_NUMBER;
+    hash = (53 * hash) + getAverageFramerate();
+    hash = (37 * hash) + AVERAGE_BATTERY_PER_MIN_FIELD_NUMBER;
+    hash = (53 * hash) + java.lang.Float.floatToIntBits(
+        getAverageBatteryPerMin());
+    hash = (37 * hash) + AVERAGE_CPU_USAGE_FIELD_NUMBER;
+    hash = (53 * hash) + java.lang.Float.floatToIntBits(
+        getAverageCpuUsage());
+    hash = (37 * hash) + AVERAGE_GPU_USAGE_FIELD_NUMBER;
+    hash = (53 * hash) + java.lang.Float.floatToIntBits(
+        getAverageGpuUsage());
+    if (getFramerateSamplesCount() > 0) {
+      hash = (37 * hash) + FRAMERATE_SAMPLES_FIELD_NUMBER;
+      hash = (53 * hash) + getFramerateSamplesList().hashCode();
+    }
+    if (getBatterySamplesCount() > 0) {
+      hash = (37 * hash) + BATTERY_SAMPLES_FIELD_NUMBER;
+      hash = (53 * hash) + getBatterySamplesList().hashCode();
+    }
+    if (getProcessorSamplesCount() > 0) {
+      hash = (37 * hash) + PROCESSOR_SAMPLES_FIELD_NUMBER;
+      hash = (53 * hash) + getProcessorSamplesList().hashCode();
+    }
+    hash = (37 * hash) + SESSION_START_TO_PLANE_DETECTION_MS_FIELD_NUMBER;
+    hash = (53 * hash) + getSessionStartToPlaneDetectionMs();
+    hash = (37 * hash) + PLANE_DETECTION_TO_USER_INTERACTION_MS_FIELD_NUMBER;
+    hash = (53 * hash) + getPlaneDetectionToUserInteractionMs();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1012,6 +4440,9 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
+        getFramerateSamplesFieldBuilder();
+        getBatterySamplesFieldBuilder();
+        getProcessorSamplesFieldBuilder();
       }
     }
     @java.lang.Override
@@ -1041,6 +4472,38 @@ private static final long serialVersionUID = 0L;
 
       modelUrl_ = "";
 
+      ardkVersion_ = "";
+
+      averageFramerate_ = 0;
+
+      averageBatteryPerMin_ = 0F;
+
+      averageCpuUsage_ = 0F;
+
+      averageGpuUsage_ = 0F;
+
+      if (framerateSamplesBuilder_ == null) {
+        framerateSamples_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+      } else {
+        framerateSamplesBuilder_.clear();
+      }
+      if (batterySamplesBuilder_ == null) {
+        batterySamples_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+      } else {
+        batterySamplesBuilder_.clear();
+      }
+      if (processorSamplesBuilder_ == null) {
+        processorSamples_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+      } else {
+        processorSamplesBuilder_.clear();
+      }
+      sessionStartToPlaneDetectionMs_ = 0;
+
+      planeDetectionToUserInteractionMs_ = 0;
+
       return this;
     }
 
@@ -1067,6 +4530,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.ArPhotoSessionProto buildPartial() {
       POGOProtos.Rpc.ArPhotoSessionProto result = new POGOProtos.Rpc.ArPhotoSessionProto(this);
+      int from_bitField0_ = bitField0_;
       result.arType_ = arType_;
       result.furthestStepCompleted_ = furthestStepCompleted_;
       result.numPhotosTaken_ = numPhotosTaken_;
@@ -1079,6 +4543,40 @@ private static final long serialVersionUID = 0L;
       result.sessionLengthOcclusions_ = sessionLengthOcclusions_;
       result.numPhotosSharedOcclusions_ = numPhotosSharedOcclusions_;
       result.modelUrl_ = modelUrl_;
+      result.ardkVersion_ = ardkVersion_;
+      result.averageFramerate_ = averageFramerate_;
+      result.averageBatteryPerMin_ = averageBatteryPerMin_;
+      result.averageCpuUsage_ = averageCpuUsage_;
+      result.averageGpuUsage_ = averageGpuUsage_;
+      if (framerateSamplesBuilder_ == null) {
+        if (((bitField0_ & 0x00000001) != 0)) {
+          framerateSamples_ = java.util.Collections.unmodifiableList(framerateSamples_);
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.framerateSamples_ = framerateSamples_;
+      } else {
+        result.framerateSamples_ = framerateSamplesBuilder_.build();
+      }
+      if (batterySamplesBuilder_ == null) {
+        if (((bitField0_ & 0x00000002) != 0)) {
+          batterySamples_ = java.util.Collections.unmodifiableList(batterySamples_);
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.batterySamples_ = batterySamples_;
+      } else {
+        result.batterySamples_ = batterySamplesBuilder_.build();
+      }
+      if (processorSamplesBuilder_ == null) {
+        if (((bitField0_ & 0x00000004) != 0)) {
+          processorSamples_ = java.util.Collections.unmodifiableList(processorSamples_);
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.processorSamples_ = processorSamples_;
+      } else {
+        result.processorSamples_ = processorSamplesBuilder_.build();
+      }
+      result.sessionStartToPlaneDetectionMs_ = sessionStartToPlaneDetectionMs_;
+      result.planeDetectionToUserInteractionMs_ = planeDetectionToUserInteractionMs_;
       onBuilt();
       return result;
     }
@@ -1164,6 +4662,106 @@ private static final long serialVersionUID = 0L;
         modelUrl_ = other.modelUrl_;
         onChanged();
       }
+      if (!other.getArdkVersion().isEmpty()) {
+        ardkVersion_ = other.ardkVersion_;
+        onChanged();
+      }
+      if (other.getAverageFramerate() != 0) {
+        setAverageFramerate(other.getAverageFramerate());
+      }
+      if (other.getAverageBatteryPerMin() != 0F) {
+        setAverageBatteryPerMin(other.getAverageBatteryPerMin());
+      }
+      if (other.getAverageCpuUsage() != 0F) {
+        setAverageCpuUsage(other.getAverageCpuUsage());
+      }
+      if (other.getAverageGpuUsage() != 0F) {
+        setAverageGpuUsage(other.getAverageGpuUsage());
+      }
+      if (framerateSamplesBuilder_ == null) {
+        if (!other.framerateSamples_.isEmpty()) {
+          if (framerateSamples_.isEmpty()) {
+            framerateSamples_ = other.framerateSamples_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureFramerateSamplesIsMutable();
+            framerateSamples_.addAll(other.framerateSamples_);
+          }
+          onChanged();
+        }
+      } else {
+        if (!other.framerateSamples_.isEmpty()) {
+          if (framerateSamplesBuilder_.isEmpty()) {
+            framerateSamplesBuilder_.dispose();
+            framerateSamplesBuilder_ = null;
+            framerateSamples_ = other.framerateSamples_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+            framerateSamplesBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getFramerateSamplesFieldBuilder() : null;
+          } else {
+            framerateSamplesBuilder_.addAllMessages(other.framerateSamples_);
+          }
+        }
+      }
+      if (batterySamplesBuilder_ == null) {
+        if (!other.batterySamples_.isEmpty()) {
+          if (batterySamples_.isEmpty()) {
+            batterySamples_ = other.batterySamples_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+          } else {
+            ensureBatterySamplesIsMutable();
+            batterySamples_.addAll(other.batterySamples_);
+          }
+          onChanged();
+        }
+      } else {
+        if (!other.batterySamples_.isEmpty()) {
+          if (batterySamplesBuilder_.isEmpty()) {
+            batterySamplesBuilder_.dispose();
+            batterySamplesBuilder_ = null;
+            batterySamples_ = other.batterySamples_;
+            bitField0_ = (bitField0_ & ~0x00000002);
+            batterySamplesBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getBatterySamplesFieldBuilder() : null;
+          } else {
+            batterySamplesBuilder_.addAllMessages(other.batterySamples_);
+          }
+        }
+      }
+      if (processorSamplesBuilder_ == null) {
+        if (!other.processorSamples_.isEmpty()) {
+          if (processorSamples_.isEmpty()) {
+            processorSamples_ = other.processorSamples_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureProcessorSamplesIsMutable();
+            processorSamples_.addAll(other.processorSamples_);
+          }
+          onChanged();
+        }
+      } else {
+        if (!other.processorSamples_.isEmpty()) {
+          if (processorSamplesBuilder_.isEmpty()) {
+            processorSamplesBuilder_.dispose();
+            processorSamplesBuilder_ = null;
+            processorSamples_ = other.processorSamples_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+            processorSamplesBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getProcessorSamplesFieldBuilder() : null;
+          } else {
+            processorSamplesBuilder_.addAllMessages(other.processorSamples_);
+          }
+        }
+      }
+      if (other.getSessionStartToPlaneDetectionMs() != 0) {
+        setSessionStartToPlaneDetectionMs(other.getSessionStartToPlaneDetectionMs());
+      }
+      if (other.getPlaneDetectionToUserInteractionMs() != 0) {
+        setPlaneDetectionToUserInteractionMs(other.getPlaneDetectionToUserInteractionMs());
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -1192,6 +4790,7 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int bitField0_;
 
     private int arType_ = 0;
     /**
@@ -1661,6 +5260,982 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       modelUrl_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object ardkVersion_ = "";
+    /**
+     * <code>string ardk_version = 13;</code>
+     * @return The ardkVersion.
+     */
+    public java.lang.String getArdkVersion() {
+      java.lang.Object ref = ardkVersion_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        ardkVersion_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string ardk_version = 13;</code>
+     * @return The bytes for ardkVersion.
+     */
+    public com.google.protobuf.ByteString
+        getArdkVersionBytes() {
+      java.lang.Object ref = ardkVersion_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        ardkVersion_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string ardk_version = 13;</code>
+     * @param value The ardkVersion to set.
+     * @return This builder for chaining.
+     */
+    public Builder setArdkVersion(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      ardkVersion_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string ardk_version = 13;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearArdkVersion() {
+      
+      ardkVersion_ = getDefaultInstance().getArdkVersion();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string ardk_version = 13;</code>
+     * @param value The bytes for ardkVersion to set.
+     * @return This builder for chaining.
+     */
+    public Builder setArdkVersionBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      ardkVersion_ = value;
+      onChanged();
+      return this;
+    }
+
+    private int averageFramerate_ ;
+    /**
+     * <code>int32 average_framerate = 14;</code>
+     * @return The averageFramerate.
+     */
+    public int getAverageFramerate() {
+      return averageFramerate_;
+    }
+    /**
+     * <code>int32 average_framerate = 14;</code>
+     * @param value The averageFramerate to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAverageFramerate(int value) {
+      
+      averageFramerate_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 average_framerate = 14;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAverageFramerate() {
+      
+      averageFramerate_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private float averageBatteryPerMin_ ;
+    /**
+     * <code>float average_battery_per_min = 15;</code>
+     * @return The averageBatteryPerMin.
+     */
+    public float getAverageBatteryPerMin() {
+      return averageBatteryPerMin_;
+    }
+    /**
+     * <code>float average_battery_per_min = 15;</code>
+     * @param value The averageBatteryPerMin to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAverageBatteryPerMin(float value) {
+      
+      averageBatteryPerMin_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>float average_battery_per_min = 15;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAverageBatteryPerMin() {
+      
+      averageBatteryPerMin_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private float averageCpuUsage_ ;
+    /**
+     * <code>float average_cpu_usage = 16;</code>
+     * @return The averageCpuUsage.
+     */
+    public float getAverageCpuUsage() {
+      return averageCpuUsage_;
+    }
+    /**
+     * <code>float average_cpu_usage = 16;</code>
+     * @param value The averageCpuUsage to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAverageCpuUsage(float value) {
+      
+      averageCpuUsage_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>float average_cpu_usage = 16;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAverageCpuUsage() {
+      
+      averageCpuUsage_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private float averageGpuUsage_ ;
+    /**
+     * <code>float average_gpu_usage = 17;</code>
+     * @return The averageGpuUsage.
+     */
+    public float getAverageGpuUsage() {
+      return averageGpuUsage_;
+    }
+    /**
+     * <code>float average_gpu_usage = 17;</code>
+     * @param value The averageGpuUsage to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAverageGpuUsage(float value) {
+      
+      averageGpuUsage_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>float average_gpu_usage = 17;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAverageGpuUsage() {
+      
+      averageGpuUsage_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample> framerateSamples_ =
+      java.util.Collections.emptyList();
+    private void ensureFramerateSamplesIsMutable() {
+      if (!((bitField0_ & 0x00000001) != 0)) {
+        framerateSamples_ = new java.util.ArrayList<POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample>(framerateSamples_);
+        bitField0_ |= 0x00000001;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSampleOrBuilder> framerateSamplesBuilder_;
+
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample> getFramerateSamplesList() {
+      if (framerateSamplesBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(framerateSamples_);
+      } else {
+        return framerateSamplesBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public int getFramerateSamplesCount() {
+      if (framerateSamplesBuilder_ == null) {
+        return framerateSamples_.size();
+      } else {
+        return framerateSamplesBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample getFramerateSamples(int index) {
+      if (framerateSamplesBuilder_ == null) {
+        return framerateSamples_.get(index);
+      } else {
+        return framerateSamplesBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public Builder setFramerateSamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample value) {
+      if (framerateSamplesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureFramerateSamplesIsMutable();
+        framerateSamples_.set(index, value);
+        onChanged();
+      } else {
+        framerateSamplesBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public Builder setFramerateSamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder builderForValue) {
+      if (framerateSamplesBuilder_ == null) {
+        ensureFramerateSamplesIsMutable();
+        framerateSamples_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        framerateSamplesBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public Builder addFramerateSamples(POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample value) {
+      if (framerateSamplesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureFramerateSamplesIsMutable();
+        framerateSamples_.add(value);
+        onChanged();
+      } else {
+        framerateSamplesBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public Builder addFramerateSamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample value) {
+      if (framerateSamplesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureFramerateSamplesIsMutable();
+        framerateSamples_.add(index, value);
+        onChanged();
+      } else {
+        framerateSamplesBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public Builder addFramerateSamples(
+        POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder builderForValue) {
+      if (framerateSamplesBuilder_ == null) {
+        ensureFramerateSamplesIsMutable();
+        framerateSamples_.add(builderForValue.build());
+        onChanged();
+      } else {
+        framerateSamplesBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public Builder addFramerateSamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder builderForValue) {
+      if (framerateSamplesBuilder_ == null) {
+        ensureFramerateSamplesIsMutable();
+        framerateSamples_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        framerateSamplesBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public Builder addAllFramerateSamples(
+        java.lang.Iterable<? extends POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample> values) {
+      if (framerateSamplesBuilder_ == null) {
+        ensureFramerateSamplesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, framerateSamples_);
+        onChanged();
+      } else {
+        framerateSamplesBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public Builder clearFramerateSamples() {
+      if (framerateSamplesBuilder_ == null) {
+        framerateSamples_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+      } else {
+        framerateSamplesBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public Builder removeFramerateSamples(int index) {
+      if (framerateSamplesBuilder_ == null) {
+        ensureFramerateSamplesIsMutable();
+        framerateSamples_.remove(index);
+        onChanged();
+      } else {
+        framerateSamplesBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder getFramerateSamplesBuilder(
+        int index) {
+      return getFramerateSamplesFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSampleOrBuilder getFramerateSamplesOrBuilder(
+        int index) {
+      if (framerateSamplesBuilder_ == null) {
+        return framerateSamples_.get(index);  } else {
+        return framerateSamplesBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public java.util.List<? extends POGOProtos.Rpc.ArPhotoSessionProto.FramerateSampleOrBuilder> 
+         getFramerateSamplesOrBuilderList() {
+      if (framerateSamplesBuilder_ != null) {
+        return framerateSamplesBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(framerateSamples_);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder addFramerateSamplesBuilder() {
+      return getFramerateSamplesFieldBuilder().addBuilder(
+          POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder addFramerateSamplesBuilder(
+        int index) {
+      return getFramerateSamplesFieldBuilder().addBuilder(
+          index, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample framerate_samples = 18;</code>
+     */
+    public java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder> 
+         getFramerateSamplesBuilderList() {
+      return getFramerateSamplesFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSampleOrBuilder> 
+        getFramerateSamplesFieldBuilder() {
+      if (framerateSamplesBuilder_ == null) {
+        framerateSamplesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSample.Builder, POGOProtos.Rpc.ArPhotoSessionProto.FramerateSampleOrBuilder>(
+                framerateSamples_,
+                ((bitField0_ & 0x00000001) != 0),
+                getParentForChildren(),
+                isClean());
+        framerateSamples_ = null;
+      }
+      return framerateSamplesBuilder_;
+    }
+
+    private java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.BatterySample> batterySamples_ =
+      java.util.Collections.emptyList();
+    private void ensureBatterySamplesIsMutable() {
+      if (!((bitField0_ & 0x00000002) != 0)) {
+        batterySamples_ = new java.util.ArrayList<POGOProtos.Rpc.ArPhotoSessionProto.BatterySample>(batterySamples_);
+        bitField0_ |= 0x00000002;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Rpc.ArPhotoSessionProto.BatterySample, POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder, POGOProtos.Rpc.ArPhotoSessionProto.BatterySampleOrBuilder> batterySamplesBuilder_;
+
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.BatterySample> getBatterySamplesList() {
+      if (batterySamplesBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(batterySamples_);
+      } else {
+        return batterySamplesBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public int getBatterySamplesCount() {
+      if (batterySamplesBuilder_ == null) {
+        return batterySamples_.size();
+      } else {
+        return batterySamplesBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.BatterySample getBatterySamples(int index) {
+      if (batterySamplesBuilder_ == null) {
+        return batterySamples_.get(index);
+      } else {
+        return batterySamplesBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public Builder setBatterySamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.BatterySample value) {
+      if (batterySamplesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureBatterySamplesIsMutable();
+        batterySamples_.set(index, value);
+        onChanged();
+      } else {
+        batterySamplesBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public Builder setBatterySamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder builderForValue) {
+      if (batterySamplesBuilder_ == null) {
+        ensureBatterySamplesIsMutable();
+        batterySamples_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        batterySamplesBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public Builder addBatterySamples(POGOProtos.Rpc.ArPhotoSessionProto.BatterySample value) {
+      if (batterySamplesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureBatterySamplesIsMutable();
+        batterySamples_.add(value);
+        onChanged();
+      } else {
+        batterySamplesBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public Builder addBatterySamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.BatterySample value) {
+      if (batterySamplesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureBatterySamplesIsMutable();
+        batterySamples_.add(index, value);
+        onChanged();
+      } else {
+        batterySamplesBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public Builder addBatterySamples(
+        POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder builderForValue) {
+      if (batterySamplesBuilder_ == null) {
+        ensureBatterySamplesIsMutable();
+        batterySamples_.add(builderForValue.build());
+        onChanged();
+      } else {
+        batterySamplesBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public Builder addBatterySamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder builderForValue) {
+      if (batterySamplesBuilder_ == null) {
+        ensureBatterySamplesIsMutable();
+        batterySamples_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        batterySamplesBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public Builder addAllBatterySamples(
+        java.lang.Iterable<? extends POGOProtos.Rpc.ArPhotoSessionProto.BatterySample> values) {
+      if (batterySamplesBuilder_ == null) {
+        ensureBatterySamplesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, batterySamples_);
+        onChanged();
+      } else {
+        batterySamplesBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public Builder clearBatterySamples() {
+      if (batterySamplesBuilder_ == null) {
+        batterySamples_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
+      } else {
+        batterySamplesBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public Builder removeBatterySamples(int index) {
+      if (batterySamplesBuilder_ == null) {
+        ensureBatterySamplesIsMutable();
+        batterySamples_.remove(index);
+        onChanged();
+      } else {
+        batterySamplesBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder getBatterySamplesBuilder(
+        int index) {
+      return getBatterySamplesFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.BatterySampleOrBuilder getBatterySamplesOrBuilder(
+        int index) {
+      if (batterySamplesBuilder_ == null) {
+        return batterySamples_.get(index);  } else {
+        return batterySamplesBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public java.util.List<? extends POGOProtos.Rpc.ArPhotoSessionProto.BatterySampleOrBuilder> 
+         getBatterySamplesOrBuilderList() {
+      if (batterySamplesBuilder_ != null) {
+        return batterySamplesBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(batterySamples_);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder addBatterySamplesBuilder() {
+      return getBatterySamplesFieldBuilder().addBuilder(
+          POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder addBatterySamplesBuilder(
+        int index) {
+      return getBatterySamplesFieldBuilder().addBuilder(
+          index, POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.BatterySample battery_samples = 19;</code>
+     */
+    public java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder> 
+         getBatterySamplesBuilderList() {
+      return getBatterySamplesFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Rpc.ArPhotoSessionProto.BatterySample, POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder, POGOProtos.Rpc.ArPhotoSessionProto.BatterySampleOrBuilder> 
+        getBatterySamplesFieldBuilder() {
+      if (batterySamplesBuilder_ == null) {
+        batterySamplesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            POGOProtos.Rpc.ArPhotoSessionProto.BatterySample, POGOProtos.Rpc.ArPhotoSessionProto.BatterySample.Builder, POGOProtos.Rpc.ArPhotoSessionProto.BatterySampleOrBuilder>(
+                batterySamples_,
+                ((bitField0_ & 0x00000002) != 0),
+                getParentForChildren(),
+                isClean());
+        batterySamples_ = null;
+      }
+      return batterySamplesBuilder_;
+    }
+
+    private java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample> processorSamples_ =
+      java.util.Collections.emptyList();
+    private void ensureProcessorSamplesIsMutable() {
+      if (!((bitField0_ & 0x00000004) != 0)) {
+        processorSamples_ = new java.util.ArrayList<POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample>(processorSamples_);
+        bitField0_ |= 0x00000004;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSampleOrBuilder> processorSamplesBuilder_;
+
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample> getProcessorSamplesList() {
+      if (processorSamplesBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(processorSamples_);
+      } else {
+        return processorSamplesBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public int getProcessorSamplesCount() {
+      if (processorSamplesBuilder_ == null) {
+        return processorSamples_.size();
+      } else {
+        return processorSamplesBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample getProcessorSamples(int index) {
+      if (processorSamplesBuilder_ == null) {
+        return processorSamples_.get(index);
+      } else {
+        return processorSamplesBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public Builder setProcessorSamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample value) {
+      if (processorSamplesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureProcessorSamplesIsMutable();
+        processorSamples_.set(index, value);
+        onChanged();
+      } else {
+        processorSamplesBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public Builder setProcessorSamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder builderForValue) {
+      if (processorSamplesBuilder_ == null) {
+        ensureProcessorSamplesIsMutable();
+        processorSamples_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        processorSamplesBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public Builder addProcessorSamples(POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample value) {
+      if (processorSamplesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureProcessorSamplesIsMutable();
+        processorSamples_.add(value);
+        onChanged();
+      } else {
+        processorSamplesBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public Builder addProcessorSamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample value) {
+      if (processorSamplesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureProcessorSamplesIsMutable();
+        processorSamples_.add(index, value);
+        onChanged();
+      } else {
+        processorSamplesBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public Builder addProcessorSamples(
+        POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder builderForValue) {
+      if (processorSamplesBuilder_ == null) {
+        ensureProcessorSamplesIsMutable();
+        processorSamples_.add(builderForValue.build());
+        onChanged();
+      } else {
+        processorSamplesBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public Builder addProcessorSamples(
+        int index, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder builderForValue) {
+      if (processorSamplesBuilder_ == null) {
+        ensureProcessorSamplesIsMutable();
+        processorSamples_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        processorSamplesBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public Builder addAllProcessorSamples(
+        java.lang.Iterable<? extends POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample> values) {
+      if (processorSamplesBuilder_ == null) {
+        ensureProcessorSamplesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, processorSamples_);
+        onChanged();
+      } else {
+        processorSamplesBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public Builder clearProcessorSamples() {
+      if (processorSamplesBuilder_ == null) {
+        processorSamples_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+      } else {
+        processorSamplesBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public Builder removeProcessorSamples(int index) {
+      if (processorSamplesBuilder_ == null) {
+        ensureProcessorSamplesIsMutable();
+        processorSamples_.remove(index);
+        onChanged();
+      } else {
+        processorSamplesBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder getProcessorSamplesBuilder(
+        int index) {
+      return getProcessorSamplesFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSampleOrBuilder getProcessorSamplesOrBuilder(
+        int index) {
+      if (processorSamplesBuilder_ == null) {
+        return processorSamples_.get(index);  } else {
+        return processorSamplesBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public java.util.List<? extends POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSampleOrBuilder> 
+         getProcessorSamplesOrBuilderList() {
+      if (processorSamplesBuilder_ != null) {
+        return processorSamplesBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(processorSamples_);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder addProcessorSamplesBuilder() {
+      return getProcessorSamplesFieldBuilder().addBuilder(
+          POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder addProcessorSamplesBuilder(
+        int index) {
+      return getProcessorSamplesFieldBuilder().addBuilder(
+          index, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample processor_samples = 20;</code>
+     */
+    public java.util.List<POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder> 
+         getProcessorSamplesBuilderList() {
+      return getProcessorSamplesFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSampleOrBuilder> 
+        getProcessorSamplesFieldBuilder() {
+      if (processorSamplesBuilder_ == null) {
+        processorSamplesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSample.Builder, POGOProtos.Rpc.ArPhotoSessionProto.ProcessorSampleOrBuilder>(
+                processorSamples_,
+                ((bitField0_ & 0x00000004) != 0),
+                getParentForChildren(),
+                isClean());
+        processorSamples_ = null;
+      }
+      return processorSamplesBuilder_;
+    }
+
+    private int sessionStartToPlaneDetectionMs_ ;
+    /**
+     * <code>int32 session_start_to_plane_detection_ms = 21;</code>
+     * @return The sessionStartToPlaneDetectionMs.
+     */
+    public int getSessionStartToPlaneDetectionMs() {
+      return sessionStartToPlaneDetectionMs_;
+    }
+    /**
+     * <code>int32 session_start_to_plane_detection_ms = 21;</code>
+     * @param value The sessionStartToPlaneDetectionMs to set.
+     * @return This builder for chaining.
+     */
+    public Builder setSessionStartToPlaneDetectionMs(int value) {
+      
+      sessionStartToPlaneDetectionMs_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 session_start_to_plane_detection_ms = 21;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearSessionStartToPlaneDetectionMs() {
+      
+      sessionStartToPlaneDetectionMs_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int planeDetectionToUserInteractionMs_ ;
+    /**
+     * <code>int32 plane_detection_to_user_interaction_ms = 22;</code>
+     * @return The planeDetectionToUserInteractionMs.
+     */
+    public int getPlaneDetectionToUserInteractionMs() {
+      return planeDetectionToUserInteractionMs_;
+    }
+    /**
+     * <code>int32 plane_detection_to_user_interaction_ms = 22;</code>
+     * @param value The planeDetectionToUserInteractionMs to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPlaneDetectionToUserInteractionMs(int value) {
+      
+      planeDetectionToUserInteractionMs_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 plane_detection_to_user_interaction_ms = 22;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPlaneDetectionToUserInteractionMs() {
+      
+      planeDetectionToUserInteractionMs_ = 0;
       onChanged();
       return this;
     }

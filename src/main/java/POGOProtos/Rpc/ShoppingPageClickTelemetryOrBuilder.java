@@ -46,4 +46,16 @@ public interface ShoppingPageClickTelemetryOrBuilder extends
    * @return The hasItem.
    */
   boolean getHasItem();
+
+  /**
+   * <code>string ml_bundle_tracking_id = 5;</code>
+   * @return The mlBundleTrackingId.
+   */
+  java.lang.String getMlBundleTrackingId();
+  /**
+   * <code>string ml_bundle_tracking_id = 5;</code>
+   * @return The bytes for mlBundleTrackingId.
+   */
+  com.google.protobuf.ByteString
+      getMlBundleTrackingIdBytes();
 }

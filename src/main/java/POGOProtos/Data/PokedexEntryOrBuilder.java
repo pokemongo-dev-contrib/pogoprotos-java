@@ -239,4 +239,33 @@ public interface PokedexEntryOrBuilder extends
    * @return The timesPurified.
    */
   int getTimesPurified();
+
+  /**
+   * <code>repeated .POGOProtos.Enums.Form captured_shiny_forms = 17;</code>
+   * @return A list containing the capturedShinyForms.
+   */
+  java.util.List<POGOProtos.Enums.Form> getCapturedShinyFormsList();
+  /**
+   * <code>repeated .POGOProtos.Enums.Form captured_shiny_forms = 17;</code>
+   * @return The count of capturedShinyForms.
+   */
+  int getCapturedShinyFormsCount();
+  /**
+   * <code>repeated .POGOProtos.Enums.Form captured_shiny_forms = 17;</code>
+   * @param index The index of the element to return.
+   * @return The capturedShinyForms at the given index.
+   */
+  POGOProtos.Enums.Form getCapturedShinyForms(int index);
+  /**
+   * <code>repeated .POGOProtos.Enums.Form captured_shiny_forms = 17;</code>
+   * @return A list containing the enum numeric values on the wire for capturedShinyForms.
+   */
+  java.util.List<java.lang.Integer>
+  getCapturedShinyFormsValueList();
+  /**
+   * <code>repeated .POGOProtos.Enums.Form captured_shiny_forms = 17;</code>
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of capturedShinyForms at the given index.
+   */
+  int getCapturedShinyFormsValue(int index);
 }

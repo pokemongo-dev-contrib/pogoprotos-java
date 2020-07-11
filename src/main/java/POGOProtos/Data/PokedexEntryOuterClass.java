@@ -32,7 +32,7 @@ public final class PokedexEntryOuterClass {
       "GOProtos.Data\032\036POGOProtos/Enums/Costume." +
       "proto\032\033POGOProtos/Enums/Form.proto\032\035POGO" +
       "Protos/Enums/Gender.proto\032 POGOProtos/En" +
-      "ums/PokemonId.proto\"\322\004\n\014PokedexEntry\022/\n\n" +
+      "ums/PokemonId.proto\"\210\005\n\014PokedexEntry\022/\n\n" +
       "pokemon_id\030\001 \001(\0162\033.POGOProtos.Enums.Poke" +
       "monId\022\031\n\021times_encountered\030\002 \001(\005\022\026\n\016time" +
       "s_captured\030\003 \001(\005\022\036\n\026evolution_stone_piec" +
@@ -47,7 +47,9 @@ public final class PokedexEntryOuterClass {
       "\0225\n\023encountered_genders\030\014 \003(\0162\030.POGOProt" +
       "os.Enums.Gender\022\031\n\021encountered_shiny\030\r \001" +
       "(\010\022\034\n\024times_lucky_received\030\016 \001(\005\022\026\n\016time" +
-      "s_purified\030\017 \001(\005B\002P\001b\006proto3"
+      "s_purified\030\017 \001(\005\0224\n\024captured_shiny_forms" +
+      "\030\021 \003(\0162\026.POGOProtos.Enums.FormB\002P\001b\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -62,7 +64,7 @@ public final class PokedexEntryOuterClass {
     internal_static_POGOProtos_Data_PokedexEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_PokedexEntry_descriptor,
-        new java.lang.String[] { "PokemonId", "TimesEncountered", "TimesCaptured", "EvolutionStonePieces", "EvolutionStones", "CapturedCostumes", "CapturedForms", "CapturedGenders", "CapturedShiny", "EncounteredCostumes", "EncounteredForms", "EncounteredGenders", "EncounteredShiny", "TimesLuckyReceived", "TimesPurified", });
+        new java.lang.String[] { "PokemonId", "TimesEncountered", "TimesCaptured", "EvolutionStonePieces", "EvolutionStones", "CapturedCostumes", "CapturedForms", "CapturedGenders", "CapturedShiny", "EncounteredCostumes", "EncounteredForms", "EncounteredGenders", "EncounteredShiny", "TimesLuckyReceived", "TimesPurified", "CapturedShinyForms", });
     POGOProtos.Enums.CostumeOuterClass.getDescriptor();
     POGOProtos.Enums.FormOuterClass.getDescriptor();
     POGOProtos.Enums.GenderOuterClass.getDescriptor();

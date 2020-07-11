@@ -50,41 +50,44 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             POGOProtos.Rpc.ClientInvasionBattleStepProto.Builder subBuilder = null;
-            if (invasionBattle_ != null) {
-              subBuilder = invasionBattle_.toBuilder();
+            if (clientIncidentStepCase_ == 1) {
+              subBuilder = ((POGOProtos.Rpc.ClientInvasionBattleStepProto) clientIncidentStep_).toBuilder();
             }
-            invasionBattle_ = input.readMessage(POGOProtos.Rpc.ClientInvasionBattleStepProto.parser(), extensionRegistry);
+            clientIncidentStep_ =
+                input.readMessage(POGOProtos.Rpc.ClientInvasionBattleStepProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(invasionBattle_);
-              invasionBattle_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ClientInvasionBattleStepProto) clientIncidentStep_);
+              clientIncidentStep_ = subBuilder.buildPartial();
             }
-
+            clientIncidentStepCase_ = 1;
             break;
           }
           case 18: {
             POGOProtos.Rpc.ClientInvasionEncounterStepProto.Builder subBuilder = null;
-            if (invasionEncounter_ != null) {
-              subBuilder = invasionEncounter_.toBuilder();
+            if (clientIncidentStepCase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.ClientInvasionEncounterStepProto) clientIncidentStep_).toBuilder();
             }
-            invasionEncounter_ = input.readMessage(POGOProtos.Rpc.ClientInvasionEncounterStepProto.parser(), extensionRegistry);
+            clientIncidentStep_ =
+                input.readMessage(POGOProtos.Rpc.ClientInvasionEncounterStepProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(invasionEncounter_);
-              invasionEncounter_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ClientInvasionEncounterStepProto) clientIncidentStep_);
+              clientIncidentStep_ = subBuilder.buildPartial();
             }
-
+            clientIncidentStepCase_ = 2;
             break;
           }
           case 26: {
             POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.Builder subBuilder = null;
-            if (pokestopDialogue_ != null) {
-              subBuilder = pokestopDialogue_.toBuilder();
+            if (clientIncidentStepCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto) clientIncidentStep_).toBuilder();
             }
-            pokestopDialogue_ = input.readMessage(POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.parser(), extensionRegistry);
+            clientIncidentStep_ =
+                input.readMessage(POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(pokestopDialogue_);
-              pokestopDialogue_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto) clientIncidentStep_);
+              clientIncidentStep_ = subBuilder.buildPartial();
             }
-
+            clientIncidentStepCase_ = 3;
             break;
           }
           default: {
@@ -119,73 +122,131 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.ClientIncidentStepProto.class, POGOProtos.Rpc.ClientIncidentStepProto.Builder.class);
   }
 
+  private int clientIncidentStepCase_ = 0;
+  private java.lang.Object clientIncidentStep_;
+  public enum ClientIncidentStepCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    INVASION_BATTLE(1),
+    INVASION_ENCOUNTER(2),
+    POKESTOP_DIALOGUE(3),
+    CLIENTINCIDENTSTEP_NOT_SET(0);
+    private final int value;
+    private ClientIncidentStepCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static ClientIncidentStepCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static ClientIncidentStepCase forNumber(int value) {
+      switch (value) {
+        case 1: return INVASION_BATTLE;
+        case 2: return INVASION_ENCOUNTER;
+        case 3: return POKESTOP_DIALOGUE;
+        case 0: return CLIENTINCIDENTSTEP_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public ClientIncidentStepCase
+  getClientIncidentStepCase() {
+    return ClientIncidentStepCase.forNumber(
+        clientIncidentStepCase_);
+  }
+
   public static final int INVASION_BATTLE_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.ClientInvasionBattleStepProto invasionBattle_;
   /**
    * <code>.POGOProtos.Rpc.ClientInvasionBattleStepProto invasion_battle = 1;</code>
    * @return Whether the invasionBattle field is set.
    */
   public boolean hasInvasionBattle() {
-    return invasionBattle_ != null;
+    return clientIncidentStepCase_ == 1;
   }
   /**
    * <code>.POGOProtos.Rpc.ClientInvasionBattleStepProto invasion_battle = 1;</code>
    * @return The invasionBattle.
    */
   public POGOProtos.Rpc.ClientInvasionBattleStepProto getInvasionBattle() {
-    return invasionBattle_ == null ? POGOProtos.Rpc.ClientInvasionBattleStepProto.getDefaultInstance() : invasionBattle_;
+    if (clientIncidentStepCase_ == 1) {
+       return (POGOProtos.Rpc.ClientInvasionBattleStepProto) clientIncidentStep_;
+    }
+    return POGOProtos.Rpc.ClientInvasionBattleStepProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ClientInvasionBattleStepProto invasion_battle = 1;</code>
    */
   public POGOProtos.Rpc.ClientInvasionBattleStepProtoOrBuilder getInvasionBattleOrBuilder() {
-    return getInvasionBattle();
+    if (clientIncidentStepCase_ == 1) {
+       return (POGOProtos.Rpc.ClientInvasionBattleStepProto) clientIncidentStep_;
+    }
+    return POGOProtos.Rpc.ClientInvasionBattleStepProto.getDefaultInstance();
   }
 
   public static final int INVASION_ENCOUNTER_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.ClientInvasionEncounterStepProto invasionEncounter_;
   /**
    * <code>.POGOProtos.Rpc.ClientInvasionEncounterStepProto invasion_encounter = 2;</code>
    * @return Whether the invasionEncounter field is set.
    */
   public boolean hasInvasionEncounter() {
-    return invasionEncounter_ != null;
+    return clientIncidentStepCase_ == 2;
   }
   /**
    * <code>.POGOProtos.Rpc.ClientInvasionEncounterStepProto invasion_encounter = 2;</code>
    * @return The invasionEncounter.
    */
   public POGOProtos.Rpc.ClientInvasionEncounterStepProto getInvasionEncounter() {
-    return invasionEncounter_ == null ? POGOProtos.Rpc.ClientInvasionEncounterStepProto.getDefaultInstance() : invasionEncounter_;
+    if (clientIncidentStepCase_ == 2) {
+       return (POGOProtos.Rpc.ClientInvasionEncounterStepProto) clientIncidentStep_;
+    }
+    return POGOProtos.Rpc.ClientInvasionEncounterStepProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ClientInvasionEncounterStepProto invasion_encounter = 2;</code>
    */
   public POGOProtos.Rpc.ClientInvasionEncounterStepProtoOrBuilder getInvasionEncounterOrBuilder() {
-    return getInvasionEncounter();
+    if (clientIncidentStepCase_ == 2) {
+       return (POGOProtos.Rpc.ClientInvasionEncounterStepProto) clientIncidentStep_;
+    }
+    return POGOProtos.Rpc.ClientInvasionEncounterStepProto.getDefaultInstance();
   }
 
   public static final int POKESTOP_DIALOGUE_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto pokestopDialogue_;
   /**
    * <code>.POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto pokestop_dialogue = 3;</code>
    * @return Whether the pokestopDialogue field is set.
    */
   public boolean hasPokestopDialogue() {
-    return pokestopDialogue_ != null;
+    return clientIncidentStepCase_ == 3;
   }
   /**
    * <code>.POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto pokestop_dialogue = 3;</code>
    * @return The pokestopDialogue.
    */
   public POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto getPokestopDialogue() {
-    return pokestopDialogue_ == null ? POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.getDefaultInstance() : pokestopDialogue_;
+    if (clientIncidentStepCase_ == 3) {
+       return (POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto) clientIncidentStep_;
+    }
+    return POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto pokestop_dialogue = 3;</code>
    */
   public POGOProtos.Rpc.ClientPokestopNpcDialogueStepProtoOrBuilder getPokestopDialogueOrBuilder() {
-    return getPokestopDialogue();
+    if (clientIncidentStepCase_ == 3) {
+       return (POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto) clientIncidentStep_;
+    }
+    return POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -202,14 +263,14 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (invasionBattle_ != null) {
-      output.writeMessage(1, getInvasionBattle());
+    if (clientIncidentStepCase_ == 1) {
+      output.writeMessage(1, (POGOProtos.Rpc.ClientInvasionBattleStepProto) clientIncidentStep_);
     }
-    if (invasionEncounter_ != null) {
-      output.writeMessage(2, getInvasionEncounter());
+    if (clientIncidentStepCase_ == 2) {
+      output.writeMessage(2, (POGOProtos.Rpc.ClientInvasionEncounterStepProto) clientIncidentStep_);
     }
-    if (pokestopDialogue_ != null) {
-      output.writeMessage(3, getPokestopDialogue());
+    if (clientIncidentStepCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto) clientIncidentStep_);
     }
     unknownFields.writeTo(output);
   }
@@ -220,17 +281,17 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (invasionBattle_ != null) {
+    if (clientIncidentStepCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getInvasionBattle());
+        .computeMessageSize(1, (POGOProtos.Rpc.ClientInvasionBattleStepProto) clientIncidentStep_);
     }
-    if (invasionEncounter_ != null) {
+    if (clientIncidentStepCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getInvasionEncounter());
+        .computeMessageSize(2, (POGOProtos.Rpc.ClientInvasionEncounterStepProto) clientIncidentStep_);
     }
-    if (pokestopDialogue_ != null) {
+    if (clientIncidentStepCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getPokestopDialogue());
+        .computeMessageSize(3, (POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto) clientIncidentStep_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -247,20 +308,22 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.ClientIncidentStepProto other = (POGOProtos.Rpc.ClientIncidentStepProto) obj;
 
-    if (hasInvasionBattle() != other.hasInvasionBattle()) return false;
-    if (hasInvasionBattle()) {
-      if (!getInvasionBattle()
-          .equals(other.getInvasionBattle())) return false;
-    }
-    if (hasInvasionEncounter() != other.hasInvasionEncounter()) return false;
-    if (hasInvasionEncounter()) {
-      if (!getInvasionEncounter()
-          .equals(other.getInvasionEncounter())) return false;
-    }
-    if (hasPokestopDialogue() != other.hasPokestopDialogue()) return false;
-    if (hasPokestopDialogue()) {
-      if (!getPokestopDialogue()
-          .equals(other.getPokestopDialogue())) return false;
+    if (!getClientIncidentStepCase().equals(other.getClientIncidentStepCase())) return false;
+    switch (clientIncidentStepCase_) {
+      case 1:
+        if (!getInvasionBattle()
+            .equals(other.getInvasionBattle())) return false;
+        break;
+      case 2:
+        if (!getInvasionEncounter()
+            .equals(other.getInvasionEncounter())) return false;
+        break;
+      case 3:
+        if (!getPokestopDialogue()
+            .equals(other.getPokestopDialogue())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -273,17 +336,21 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasInvasionBattle()) {
-      hash = (37 * hash) + INVASION_BATTLE_FIELD_NUMBER;
-      hash = (53 * hash) + getInvasionBattle().hashCode();
-    }
-    if (hasInvasionEncounter()) {
-      hash = (37 * hash) + INVASION_ENCOUNTER_FIELD_NUMBER;
-      hash = (53 * hash) + getInvasionEncounter().hashCode();
-    }
-    if (hasPokestopDialogue()) {
-      hash = (37 * hash) + POKESTOP_DIALOGUE_FIELD_NUMBER;
-      hash = (53 * hash) + getPokestopDialogue().hashCode();
+    switch (clientIncidentStepCase_) {
+      case 1:
+        hash = (37 * hash) + INVASION_BATTLE_FIELD_NUMBER;
+        hash = (53 * hash) + getInvasionBattle().hashCode();
+        break;
+      case 2:
+        hash = (37 * hash) + INVASION_ENCOUNTER_FIELD_NUMBER;
+        hash = (53 * hash) + getInvasionEncounter().hashCode();
+        break;
+      case 3:
+        hash = (37 * hash) + POKESTOP_DIALOGUE_FIELD_NUMBER;
+        hash = (53 * hash) + getPokestopDialogue().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -418,24 +485,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (invasionBattleBuilder_ == null) {
-        invasionBattle_ = null;
-      } else {
-        invasionBattle_ = null;
-        invasionBattleBuilder_ = null;
-      }
-      if (invasionEncounterBuilder_ == null) {
-        invasionEncounter_ = null;
-      } else {
-        invasionEncounter_ = null;
-        invasionEncounterBuilder_ = null;
-      }
-      if (pokestopDialogueBuilder_ == null) {
-        pokestopDialogue_ = null;
-      } else {
-        pokestopDialogue_ = null;
-        pokestopDialogueBuilder_ = null;
-      }
+      clientIncidentStepCase_ = 0;
+      clientIncidentStep_ = null;
       return this;
     }
 
@@ -462,21 +513,28 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.ClientIncidentStepProto buildPartial() {
       POGOProtos.Rpc.ClientIncidentStepProto result = new POGOProtos.Rpc.ClientIncidentStepProto(this);
-      if (invasionBattleBuilder_ == null) {
-        result.invasionBattle_ = invasionBattle_;
-      } else {
-        result.invasionBattle_ = invasionBattleBuilder_.build();
+      if (clientIncidentStepCase_ == 1) {
+        if (invasionBattleBuilder_ == null) {
+          result.clientIncidentStep_ = clientIncidentStep_;
+        } else {
+          result.clientIncidentStep_ = invasionBattleBuilder_.build();
+        }
       }
-      if (invasionEncounterBuilder_ == null) {
-        result.invasionEncounter_ = invasionEncounter_;
-      } else {
-        result.invasionEncounter_ = invasionEncounterBuilder_.build();
+      if (clientIncidentStepCase_ == 2) {
+        if (invasionEncounterBuilder_ == null) {
+          result.clientIncidentStep_ = clientIncidentStep_;
+        } else {
+          result.clientIncidentStep_ = invasionEncounterBuilder_.build();
+        }
       }
-      if (pokestopDialogueBuilder_ == null) {
-        result.pokestopDialogue_ = pokestopDialogue_;
-      } else {
-        result.pokestopDialogue_ = pokestopDialogueBuilder_.build();
+      if (clientIncidentStepCase_ == 3) {
+        if (pokestopDialogueBuilder_ == null) {
+          result.clientIncidentStep_ = clientIncidentStep_;
+        } else {
+          result.clientIncidentStep_ = pokestopDialogueBuilder_.build();
+        }
       }
+      result.clientIncidentStepCase_ = clientIncidentStepCase_;
       onBuilt();
       return result;
     }
@@ -525,14 +583,22 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.ClientIncidentStepProto other) {
       if (other == POGOProtos.Rpc.ClientIncidentStepProto.getDefaultInstance()) return this;
-      if (other.hasInvasionBattle()) {
-        mergeInvasionBattle(other.getInvasionBattle());
-      }
-      if (other.hasInvasionEncounter()) {
-        mergeInvasionEncounter(other.getInvasionEncounter());
-      }
-      if (other.hasPokestopDialogue()) {
-        mergePokestopDialogue(other.getPokestopDialogue());
+      switch (other.getClientIncidentStepCase()) {
+        case INVASION_BATTLE: {
+          mergeInvasionBattle(other.getInvasionBattle());
+          break;
+        }
+        case INVASION_ENCOUNTER: {
+          mergeInvasionEncounter(other.getInvasionEncounter());
+          break;
+        }
+        case POKESTOP_DIALOGUE: {
+          mergePokestopDialogue(other.getPokestopDialogue());
+          break;
+        }
+        case CLIENTINCIDENTSTEP_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -562,8 +628,22 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int clientIncidentStepCase_ = 0;
+    private java.lang.Object clientIncidentStep_;
+    public ClientIncidentStepCase
+        getClientIncidentStepCase() {
+      return ClientIncidentStepCase.forNumber(
+          clientIncidentStepCase_);
+    }
 
-    private POGOProtos.Rpc.ClientInvasionBattleStepProto invasionBattle_;
+    public Builder clearClientIncidentStep() {
+      clientIncidentStepCase_ = 0;
+      clientIncidentStep_ = null;
+      onChanged();
+      return this;
+    }
+
+
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ClientInvasionBattleStepProto, POGOProtos.Rpc.ClientInvasionBattleStepProto.Builder, POGOProtos.Rpc.ClientInvasionBattleStepProtoOrBuilder> invasionBattleBuilder_;
     /**
@@ -571,7 +651,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the invasionBattle field is set.
      */
     public boolean hasInvasionBattle() {
-      return invasionBattleBuilder_ != null || invasionBattle_ != null;
+      return clientIncidentStepCase_ == 1;
     }
     /**
      * <code>.POGOProtos.Rpc.ClientInvasionBattleStepProto invasion_battle = 1;</code>
@@ -579,9 +659,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ClientInvasionBattleStepProto getInvasionBattle() {
       if (invasionBattleBuilder_ == null) {
-        return invasionBattle_ == null ? POGOProtos.Rpc.ClientInvasionBattleStepProto.getDefaultInstance() : invasionBattle_;
+        if (clientIncidentStepCase_ == 1) {
+          return (POGOProtos.Rpc.ClientInvasionBattleStepProto) clientIncidentStep_;
+        }
+        return POGOProtos.Rpc.ClientInvasionBattleStepProto.getDefaultInstance();
       } else {
-        return invasionBattleBuilder_.getMessage();
+        if (clientIncidentStepCase_ == 1) {
+          return invasionBattleBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ClientInvasionBattleStepProto.getDefaultInstance();
       }
     }
     /**
@@ -592,12 +678,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        invasionBattle_ = value;
+        clientIncidentStep_ = value;
         onChanged();
       } else {
         invasionBattleBuilder_.setMessage(value);
       }
-
+      clientIncidentStepCase_ = 1;
       return this;
     }
     /**
@@ -606,12 +692,12 @@ private static final long serialVersionUID = 0L;
     public Builder setInvasionBattle(
         POGOProtos.Rpc.ClientInvasionBattleStepProto.Builder builderForValue) {
       if (invasionBattleBuilder_ == null) {
-        invasionBattle_ = builderForValue.build();
+        clientIncidentStep_ = builderForValue.build();
         onChanged();
       } else {
         invasionBattleBuilder_.setMessage(builderForValue.build());
       }
-
+      clientIncidentStepCase_ = 1;
       return this;
     }
     /**
@@ -619,17 +705,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeInvasionBattle(POGOProtos.Rpc.ClientInvasionBattleStepProto value) {
       if (invasionBattleBuilder_ == null) {
-        if (invasionBattle_ != null) {
-          invasionBattle_ =
-            POGOProtos.Rpc.ClientInvasionBattleStepProto.newBuilder(invasionBattle_).mergeFrom(value).buildPartial();
+        if (clientIncidentStepCase_ == 1 &&
+            clientIncidentStep_ != POGOProtos.Rpc.ClientInvasionBattleStepProto.getDefaultInstance()) {
+          clientIncidentStep_ = POGOProtos.Rpc.ClientInvasionBattleStepProto.newBuilder((POGOProtos.Rpc.ClientInvasionBattleStepProto) clientIncidentStep_)
+              .mergeFrom(value).buildPartial();
         } else {
-          invasionBattle_ = value;
+          clientIncidentStep_ = value;
         }
         onChanged();
       } else {
-        invasionBattleBuilder_.mergeFrom(value);
+        if (clientIncidentStepCase_ == 1) {
+          invasionBattleBuilder_.mergeFrom(value);
+        }
+        invasionBattleBuilder_.setMessage(value);
       }
-
+      clientIncidentStepCase_ = 1;
       return this;
     }
     /**
@@ -637,32 +727,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearInvasionBattle() {
       if (invasionBattleBuilder_ == null) {
-        invasionBattle_ = null;
-        onChanged();
+        if (clientIncidentStepCase_ == 1) {
+          clientIncidentStepCase_ = 0;
+          clientIncidentStep_ = null;
+          onChanged();
+        }
       } else {
-        invasionBattle_ = null;
-        invasionBattleBuilder_ = null;
+        if (clientIncidentStepCase_ == 1) {
+          clientIncidentStepCase_ = 0;
+          clientIncidentStep_ = null;
+        }
+        invasionBattleBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ClientInvasionBattleStepProto invasion_battle = 1;</code>
      */
     public POGOProtos.Rpc.ClientInvasionBattleStepProto.Builder getInvasionBattleBuilder() {
-      
-      onChanged();
       return getInvasionBattleFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ClientInvasionBattleStepProto invasion_battle = 1;</code>
      */
     public POGOProtos.Rpc.ClientInvasionBattleStepProtoOrBuilder getInvasionBattleOrBuilder() {
-      if (invasionBattleBuilder_ != null) {
+      if ((clientIncidentStepCase_ == 1) && (invasionBattleBuilder_ != null)) {
         return invasionBattleBuilder_.getMessageOrBuilder();
       } else {
-        return invasionBattle_ == null ?
-            POGOProtos.Rpc.ClientInvasionBattleStepProto.getDefaultInstance() : invasionBattle_;
+        if (clientIncidentStepCase_ == 1) {
+          return (POGOProtos.Rpc.ClientInvasionBattleStepProto) clientIncidentStep_;
+        }
+        return POGOProtos.Rpc.ClientInvasionBattleStepProto.getDefaultInstance();
       }
     }
     /**
@@ -672,17 +767,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ClientInvasionBattleStepProto, POGOProtos.Rpc.ClientInvasionBattleStepProto.Builder, POGOProtos.Rpc.ClientInvasionBattleStepProtoOrBuilder> 
         getInvasionBattleFieldBuilder() {
       if (invasionBattleBuilder_ == null) {
+        if (!(clientIncidentStepCase_ == 1)) {
+          clientIncidentStep_ = POGOProtos.Rpc.ClientInvasionBattleStepProto.getDefaultInstance();
+        }
         invasionBattleBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ClientInvasionBattleStepProto, POGOProtos.Rpc.ClientInvasionBattleStepProto.Builder, POGOProtos.Rpc.ClientInvasionBattleStepProtoOrBuilder>(
-                getInvasionBattle(),
+                (POGOProtos.Rpc.ClientInvasionBattleStepProto) clientIncidentStep_,
                 getParentForChildren(),
                 isClean());
-        invasionBattle_ = null;
+        clientIncidentStep_ = null;
       }
+      clientIncidentStepCase_ = 1;
+      onChanged();;
       return invasionBattleBuilder_;
     }
 
-    private POGOProtos.Rpc.ClientInvasionEncounterStepProto invasionEncounter_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ClientInvasionEncounterStepProto, POGOProtos.Rpc.ClientInvasionEncounterStepProto.Builder, POGOProtos.Rpc.ClientInvasionEncounterStepProtoOrBuilder> invasionEncounterBuilder_;
     /**
@@ -690,7 +789,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the invasionEncounter field is set.
      */
     public boolean hasInvasionEncounter() {
-      return invasionEncounterBuilder_ != null || invasionEncounter_ != null;
+      return clientIncidentStepCase_ == 2;
     }
     /**
      * <code>.POGOProtos.Rpc.ClientInvasionEncounterStepProto invasion_encounter = 2;</code>
@@ -698,9 +797,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ClientInvasionEncounterStepProto getInvasionEncounter() {
       if (invasionEncounterBuilder_ == null) {
-        return invasionEncounter_ == null ? POGOProtos.Rpc.ClientInvasionEncounterStepProto.getDefaultInstance() : invasionEncounter_;
+        if (clientIncidentStepCase_ == 2) {
+          return (POGOProtos.Rpc.ClientInvasionEncounterStepProto) clientIncidentStep_;
+        }
+        return POGOProtos.Rpc.ClientInvasionEncounterStepProto.getDefaultInstance();
       } else {
-        return invasionEncounterBuilder_.getMessage();
+        if (clientIncidentStepCase_ == 2) {
+          return invasionEncounterBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ClientInvasionEncounterStepProto.getDefaultInstance();
       }
     }
     /**
@@ -711,12 +816,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        invasionEncounter_ = value;
+        clientIncidentStep_ = value;
         onChanged();
       } else {
         invasionEncounterBuilder_.setMessage(value);
       }
-
+      clientIncidentStepCase_ = 2;
       return this;
     }
     /**
@@ -725,12 +830,12 @@ private static final long serialVersionUID = 0L;
     public Builder setInvasionEncounter(
         POGOProtos.Rpc.ClientInvasionEncounterStepProto.Builder builderForValue) {
       if (invasionEncounterBuilder_ == null) {
-        invasionEncounter_ = builderForValue.build();
+        clientIncidentStep_ = builderForValue.build();
         onChanged();
       } else {
         invasionEncounterBuilder_.setMessage(builderForValue.build());
       }
-
+      clientIncidentStepCase_ = 2;
       return this;
     }
     /**
@@ -738,17 +843,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeInvasionEncounter(POGOProtos.Rpc.ClientInvasionEncounterStepProto value) {
       if (invasionEncounterBuilder_ == null) {
-        if (invasionEncounter_ != null) {
-          invasionEncounter_ =
-            POGOProtos.Rpc.ClientInvasionEncounterStepProto.newBuilder(invasionEncounter_).mergeFrom(value).buildPartial();
+        if (clientIncidentStepCase_ == 2 &&
+            clientIncidentStep_ != POGOProtos.Rpc.ClientInvasionEncounterStepProto.getDefaultInstance()) {
+          clientIncidentStep_ = POGOProtos.Rpc.ClientInvasionEncounterStepProto.newBuilder((POGOProtos.Rpc.ClientInvasionEncounterStepProto) clientIncidentStep_)
+              .mergeFrom(value).buildPartial();
         } else {
-          invasionEncounter_ = value;
+          clientIncidentStep_ = value;
         }
         onChanged();
       } else {
-        invasionEncounterBuilder_.mergeFrom(value);
+        if (clientIncidentStepCase_ == 2) {
+          invasionEncounterBuilder_.mergeFrom(value);
+        }
+        invasionEncounterBuilder_.setMessage(value);
       }
-
+      clientIncidentStepCase_ = 2;
       return this;
     }
     /**
@@ -756,32 +865,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearInvasionEncounter() {
       if (invasionEncounterBuilder_ == null) {
-        invasionEncounter_ = null;
-        onChanged();
+        if (clientIncidentStepCase_ == 2) {
+          clientIncidentStepCase_ = 0;
+          clientIncidentStep_ = null;
+          onChanged();
+        }
       } else {
-        invasionEncounter_ = null;
-        invasionEncounterBuilder_ = null;
+        if (clientIncidentStepCase_ == 2) {
+          clientIncidentStepCase_ = 0;
+          clientIncidentStep_ = null;
+        }
+        invasionEncounterBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ClientInvasionEncounterStepProto invasion_encounter = 2;</code>
      */
     public POGOProtos.Rpc.ClientInvasionEncounterStepProto.Builder getInvasionEncounterBuilder() {
-      
-      onChanged();
       return getInvasionEncounterFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ClientInvasionEncounterStepProto invasion_encounter = 2;</code>
      */
     public POGOProtos.Rpc.ClientInvasionEncounterStepProtoOrBuilder getInvasionEncounterOrBuilder() {
-      if (invasionEncounterBuilder_ != null) {
+      if ((clientIncidentStepCase_ == 2) && (invasionEncounterBuilder_ != null)) {
         return invasionEncounterBuilder_.getMessageOrBuilder();
       } else {
-        return invasionEncounter_ == null ?
-            POGOProtos.Rpc.ClientInvasionEncounterStepProto.getDefaultInstance() : invasionEncounter_;
+        if (clientIncidentStepCase_ == 2) {
+          return (POGOProtos.Rpc.ClientInvasionEncounterStepProto) clientIncidentStep_;
+        }
+        return POGOProtos.Rpc.ClientInvasionEncounterStepProto.getDefaultInstance();
       }
     }
     /**
@@ -791,17 +905,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ClientInvasionEncounterStepProto, POGOProtos.Rpc.ClientInvasionEncounterStepProto.Builder, POGOProtos.Rpc.ClientInvasionEncounterStepProtoOrBuilder> 
         getInvasionEncounterFieldBuilder() {
       if (invasionEncounterBuilder_ == null) {
+        if (!(clientIncidentStepCase_ == 2)) {
+          clientIncidentStep_ = POGOProtos.Rpc.ClientInvasionEncounterStepProto.getDefaultInstance();
+        }
         invasionEncounterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ClientInvasionEncounterStepProto, POGOProtos.Rpc.ClientInvasionEncounterStepProto.Builder, POGOProtos.Rpc.ClientInvasionEncounterStepProtoOrBuilder>(
-                getInvasionEncounter(),
+                (POGOProtos.Rpc.ClientInvasionEncounterStepProto) clientIncidentStep_,
                 getParentForChildren(),
                 isClean());
-        invasionEncounter_ = null;
+        clientIncidentStep_ = null;
       }
+      clientIncidentStepCase_ = 2;
+      onChanged();;
       return invasionEncounterBuilder_;
     }
 
-    private POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto pokestopDialogue_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto, POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.Builder, POGOProtos.Rpc.ClientPokestopNpcDialogueStepProtoOrBuilder> pokestopDialogueBuilder_;
     /**
@@ -809,7 +927,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the pokestopDialogue field is set.
      */
     public boolean hasPokestopDialogue() {
-      return pokestopDialogueBuilder_ != null || pokestopDialogue_ != null;
+      return clientIncidentStepCase_ == 3;
     }
     /**
      * <code>.POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto pokestop_dialogue = 3;</code>
@@ -817,9 +935,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto getPokestopDialogue() {
       if (pokestopDialogueBuilder_ == null) {
-        return pokestopDialogue_ == null ? POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.getDefaultInstance() : pokestopDialogue_;
+        if (clientIncidentStepCase_ == 3) {
+          return (POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto) clientIncidentStep_;
+        }
+        return POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.getDefaultInstance();
       } else {
-        return pokestopDialogueBuilder_.getMessage();
+        if (clientIncidentStepCase_ == 3) {
+          return pokestopDialogueBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.getDefaultInstance();
       }
     }
     /**
@@ -830,12 +954,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        pokestopDialogue_ = value;
+        clientIncidentStep_ = value;
         onChanged();
       } else {
         pokestopDialogueBuilder_.setMessage(value);
       }
-
+      clientIncidentStepCase_ = 3;
       return this;
     }
     /**
@@ -844,12 +968,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPokestopDialogue(
         POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.Builder builderForValue) {
       if (pokestopDialogueBuilder_ == null) {
-        pokestopDialogue_ = builderForValue.build();
+        clientIncidentStep_ = builderForValue.build();
         onChanged();
       } else {
         pokestopDialogueBuilder_.setMessage(builderForValue.build());
       }
-
+      clientIncidentStepCase_ = 3;
       return this;
     }
     /**
@@ -857,17 +981,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePokestopDialogue(POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto value) {
       if (pokestopDialogueBuilder_ == null) {
-        if (pokestopDialogue_ != null) {
-          pokestopDialogue_ =
-            POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.newBuilder(pokestopDialogue_).mergeFrom(value).buildPartial();
+        if (clientIncidentStepCase_ == 3 &&
+            clientIncidentStep_ != POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.getDefaultInstance()) {
+          clientIncidentStep_ = POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.newBuilder((POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto) clientIncidentStep_)
+              .mergeFrom(value).buildPartial();
         } else {
-          pokestopDialogue_ = value;
+          clientIncidentStep_ = value;
         }
         onChanged();
       } else {
-        pokestopDialogueBuilder_.mergeFrom(value);
+        if (clientIncidentStepCase_ == 3) {
+          pokestopDialogueBuilder_.mergeFrom(value);
+        }
+        pokestopDialogueBuilder_.setMessage(value);
       }
-
+      clientIncidentStepCase_ = 3;
       return this;
     }
     /**
@@ -875,32 +1003,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPokestopDialogue() {
       if (pokestopDialogueBuilder_ == null) {
-        pokestopDialogue_ = null;
-        onChanged();
+        if (clientIncidentStepCase_ == 3) {
+          clientIncidentStepCase_ = 0;
+          clientIncidentStep_ = null;
+          onChanged();
+        }
       } else {
-        pokestopDialogue_ = null;
-        pokestopDialogueBuilder_ = null;
+        if (clientIncidentStepCase_ == 3) {
+          clientIncidentStepCase_ = 0;
+          clientIncidentStep_ = null;
+        }
+        pokestopDialogueBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto pokestop_dialogue = 3;</code>
      */
     public POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.Builder getPokestopDialogueBuilder() {
-      
-      onChanged();
       return getPokestopDialogueFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto pokestop_dialogue = 3;</code>
      */
     public POGOProtos.Rpc.ClientPokestopNpcDialogueStepProtoOrBuilder getPokestopDialogueOrBuilder() {
-      if (pokestopDialogueBuilder_ != null) {
+      if ((clientIncidentStepCase_ == 3) && (pokestopDialogueBuilder_ != null)) {
         return pokestopDialogueBuilder_.getMessageOrBuilder();
       } else {
-        return pokestopDialogue_ == null ?
-            POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.getDefaultInstance() : pokestopDialogue_;
+        if (clientIncidentStepCase_ == 3) {
+          return (POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto) clientIncidentStep_;
+        }
+        return POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.getDefaultInstance();
       }
     }
     /**
@@ -910,13 +1043,18 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto, POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.Builder, POGOProtos.Rpc.ClientPokestopNpcDialogueStepProtoOrBuilder> 
         getPokestopDialogueFieldBuilder() {
       if (pokestopDialogueBuilder_ == null) {
+        if (!(clientIncidentStepCase_ == 3)) {
+          clientIncidentStep_ = POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.getDefaultInstance();
+        }
         pokestopDialogueBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto, POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto.Builder, POGOProtos.Rpc.ClientPokestopNpcDialogueStepProtoOrBuilder>(
-                getPokestopDialogue(),
+                (POGOProtos.Rpc.ClientPokestopNpcDialogueStepProto) clientIncidentStep_,
                 getParentForChildren(),
                 isClean());
-        pokestopDialogue_ = null;
+        clientIncidentStep_ = null;
       }
+      clientIncidentStepCase_ = 3;
+      onChanged();;
       return pokestopDialogueBuilder_;
     }
     @java.lang.Override

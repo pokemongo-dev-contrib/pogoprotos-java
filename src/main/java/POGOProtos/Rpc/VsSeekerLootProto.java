@@ -148,6 +148,8 @@ private static final long serialVersionUID = 0L;
      * @return The itemRankingLootTableCount.
      */
     int getItemRankingLootTableCount();
+
+    public POGOProtos.Rpc.VsSeekerLootProto.RewardProto.RewardTypeCase getRewardTypeCase();
   }
   /**
    * Protobuf type {@code POGOProtos.Rpc.VsSeekerLootProto.RewardProto}
@@ -196,35 +198,36 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               POGOProtos.Rpc.LootItemProto.Builder subBuilder = null;
-              if (item_ != null) {
-                subBuilder = item_.toBuilder();
+              if (rewardTypeCase_ == 1) {
+                subBuilder = ((POGOProtos.Rpc.LootItemProto) rewardType_).toBuilder();
               }
-              item_ = input.readMessage(POGOProtos.Rpc.LootItemProto.parser(), extensionRegistry);
+              rewardType_ =
+                  input.readMessage(POGOProtos.Rpc.LootItemProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(item_);
-                item_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.LootItemProto) rewardType_);
+                rewardType_ = subBuilder.buildPartial();
               }
-
+              rewardTypeCase_ = 1;
               break;
             }
             case 16: {
-
-              pokemonReward_ = input.readBool();
+              rewardTypeCase_ = 2;
+              rewardType_ = input.readBool();
               break;
             }
             case 24: {
-
-              itemLootTable_ = input.readBool();
+              rewardTypeCase_ = 3;
+              rewardType_ = input.readBool();
               break;
             }
             case 32: {
-
-              itemLootTableCount_ = input.readInt32();
+              rewardTypeCase_ = 4;
+              rewardType_ = input.readInt32();
               break;
             }
             case 40: {
-
-              itemRankingLootTableCount_ = input.readInt32();
+              rewardTypeCase_ = 5;
+              rewardType_ = input.readInt32();
               break;
             }
             default: {
@@ -259,67 +262,127 @@ private static final long serialVersionUID = 0L;
               POGOProtos.Rpc.VsSeekerLootProto.RewardProto.class, POGOProtos.Rpc.VsSeekerLootProto.RewardProto.Builder.class);
     }
 
+    private int rewardTypeCase_ = 0;
+    private java.lang.Object rewardType_;
+    public enum RewardTypeCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      ITEM(1),
+      POKEMON_REWARD(2),
+      ITEM_LOOT_TABLE(3),
+      ITEM_LOOT_TABLE_COUNT(4),
+      ITEM_RANKING_LOOT_TABLE_COUNT(5),
+      REWARDTYPE_NOT_SET(0);
+      private final int value;
+      private RewardTypeCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static RewardTypeCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static RewardTypeCase forNumber(int value) {
+        switch (value) {
+          case 1: return ITEM;
+          case 2: return POKEMON_REWARD;
+          case 3: return ITEM_LOOT_TABLE;
+          case 4: return ITEM_LOOT_TABLE_COUNT;
+          case 5: return ITEM_RANKING_LOOT_TABLE_COUNT;
+          case 0: return REWARDTYPE_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public RewardTypeCase
+    getRewardTypeCase() {
+      return RewardTypeCase.forNumber(
+          rewardTypeCase_);
+    }
+
     public static final int ITEM_FIELD_NUMBER = 1;
-    private POGOProtos.Rpc.LootItemProto item_;
     /**
      * <code>.POGOProtos.Rpc.LootItemProto item = 1;</code>
      * @return Whether the item field is set.
      */
     public boolean hasItem() {
-      return item_ != null;
+      return rewardTypeCase_ == 1;
     }
     /**
      * <code>.POGOProtos.Rpc.LootItemProto item = 1;</code>
      * @return The item.
      */
     public POGOProtos.Rpc.LootItemProto getItem() {
-      return item_ == null ? POGOProtos.Rpc.LootItemProto.getDefaultInstance() : item_;
+      if (rewardTypeCase_ == 1) {
+         return (POGOProtos.Rpc.LootItemProto) rewardType_;
+      }
+      return POGOProtos.Rpc.LootItemProto.getDefaultInstance();
     }
     /**
      * <code>.POGOProtos.Rpc.LootItemProto item = 1;</code>
      */
     public POGOProtos.Rpc.LootItemProtoOrBuilder getItemOrBuilder() {
-      return getItem();
+      if (rewardTypeCase_ == 1) {
+         return (POGOProtos.Rpc.LootItemProto) rewardType_;
+      }
+      return POGOProtos.Rpc.LootItemProto.getDefaultInstance();
     }
 
     public static final int POKEMON_REWARD_FIELD_NUMBER = 2;
-    private boolean pokemonReward_;
     /**
      * <code>bool pokemon_reward = 2;</code>
      * @return The pokemonReward.
      */
     public boolean getPokemonReward() {
-      return pokemonReward_;
+      if (rewardTypeCase_ == 2) {
+        return (java.lang.Boolean) rewardType_;
+      }
+      return false;
     }
 
     public static final int ITEM_LOOT_TABLE_FIELD_NUMBER = 3;
-    private boolean itemLootTable_;
     /**
      * <code>bool item_loot_table = 3;</code>
      * @return The itemLootTable.
      */
     public boolean getItemLootTable() {
-      return itemLootTable_;
+      if (rewardTypeCase_ == 3) {
+        return (java.lang.Boolean) rewardType_;
+      }
+      return false;
     }
 
     public static final int ITEM_LOOT_TABLE_COUNT_FIELD_NUMBER = 4;
-    private int itemLootTableCount_;
     /**
      * <code>int32 item_loot_table_count = 4;</code>
      * @return The itemLootTableCount.
      */
     public int getItemLootTableCount() {
-      return itemLootTableCount_;
+      if (rewardTypeCase_ == 4) {
+        return (java.lang.Integer) rewardType_;
+      }
+      return 0;
     }
 
     public static final int ITEM_RANKING_LOOT_TABLE_COUNT_FIELD_NUMBER = 5;
-    private int itemRankingLootTableCount_;
     /**
      * <code>int32 item_ranking_loot_table_count = 5;</code>
      * @return The itemRankingLootTableCount.
      */
     public int getItemRankingLootTableCount() {
-      return itemRankingLootTableCount_;
+      if (rewardTypeCase_ == 5) {
+        return (java.lang.Integer) rewardType_;
+      }
+      return 0;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -336,20 +399,24 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (item_ != null) {
-        output.writeMessage(1, getItem());
+      if (rewardTypeCase_ == 1) {
+        output.writeMessage(1, (POGOProtos.Rpc.LootItemProto) rewardType_);
       }
-      if (pokemonReward_ != false) {
-        output.writeBool(2, pokemonReward_);
+      if (rewardTypeCase_ == 2) {
+        output.writeBool(
+            2, (boolean)((java.lang.Boolean) rewardType_));
       }
-      if (itemLootTable_ != false) {
-        output.writeBool(3, itemLootTable_);
+      if (rewardTypeCase_ == 3) {
+        output.writeBool(
+            3, (boolean)((java.lang.Boolean) rewardType_));
       }
-      if (itemLootTableCount_ != 0) {
-        output.writeInt32(4, itemLootTableCount_);
+      if (rewardTypeCase_ == 4) {
+        output.writeInt32(
+            4, (int)((java.lang.Integer) rewardType_));
       }
-      if (itemRankingLootTableCount_ != 0) {
-        output.writeInt32(5, itemRankingLootTableCount_);
+      if (rewardTypeCase_ == 5) {
+        output.writeInt32(
+            5, (int)((java.lang.Integer) rewardType_));
       }
       unknownFields.writeTo(output);
     }
@@ -360,25 +427,29 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (item_ != null) {
+      if (rewardTypeCase_ == 1) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getItem());
+          .computeMessageSize(1, (POGOProtos.Rpc.LootItemProto) rewardType_);
       }
-      if (pokemonReward_ != false) {
+      if (rewardTypeCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, pokemonReward_);
+          .computeBoolSize(
+              2, (boolean)((java.lang.Boolean) rewardType_));
       }
-      if (itemLootTable_ != false) {
+      if (rewardTypeCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, itemLootTable_);
+          .computeBoolSize(
+              3, (boolean)((java.lang.Boolean) rewardType_));
       }
-      if (itemLootTableCount_ != 0) {
+      if (rewardTypeCase_ == 4) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, itemLootTableCount_);
+          .computeInt32Size(
+              4, (int)((java.lang.Integer) rewardType_));
       }
-      if (itemRankingLootTableCount_ != 0) {
+      if (rewardTypeCase_ == 5) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, itemRankingLootTableCount_);
+          .computeInt32Size(
+              5, (int)((java.lang.Integer) rewardType_));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -395,19 +466,31 @@ private static final long serialVersionUID = 0L;
       }
       POGOProtos.Rpc.VsSeekerLootProto.RewardProto other = (POGOProtos.Rpc.VsSeekerLootProto.RewardProto) obj;
 
-      if (hasItem() != other.hasItem()) return false;
-      if (hasItem()) {
-        if (!getItem()
-            .equals(other.getItem())) return false;
+      if (!getRewardTypeCase().equals(other.getRewardTypeCase())) return false;
+      switch (rewardTypeCase_) {
+        case 1:
+          if (!getItem()
+              .equals(other.getItem())) return false;
+          break;
+        case 2:
+          if (getPokemonReward()
+              != other.getPokemonReward()) return false;
+          break;
+        case 3:
+          if (getItemLootTable()
+              != other.getItemLootTable()) return false;
+          break;
+        case 4:
+          if (getItemLootTableCount()
+              != other.getItemLootTableCount()) return false;
+          break;
+        case 5:
+          if (getItemRankingLootTableCount()
+              != other.getItemRankingLootTableCount()) return false;
+          break;
+        case 0:
+        default:
       }
-      if (getPokemonReward()
-          != other.getPokemonReward()) return false;
-      if (getItemLootTable()
-          != other.getItemLootTable()) return false;
-      if (getItemLootTableCount()
-          != other.getItemLootTableCount()) return false;
-      if (getItemRankingLootTableCount()
-          != other.getItemRankingLootTableCount()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -419,20 +502,32 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasItem()) {
-        hash = (37 * hash) + ITEM_FIELD_NUMBER;
-        hash = (53 * hash) + getItem().hashCode();
+      switch (rewardTypeCase_) {
+        case 1:
+          hash = (37 * hash) + ITEM_FIELD_NUMBER;
+          hash = (53 * hash) + getItem().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + POKEMON_REWARD_FIELD_NUMBER;
+          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+              getPokemonReward());
+          break;
+        case 3:
+          hash = (37 * hash) + ITEM_LOOT_TABLE_FIELD_NUMBER;
+          hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+              getItemLootTable());
+          break;
+        case 4:
+          hash = (37 * hash) + ITEM_LOOT_TABLE_COUNT_FIELD_NUMBER;
+          hash = (53 * hash) + getItemLootTableCount();
+          break;
+        case 5:
+          hash = (37 * hash) + ITEM_RANKING_LOOT_TABLE_COUNT_FIELD_NUMBER;
+          hash = (53 * hash) + getItemRankingLootTableCount();
+          break;
+        case 0:
+        default:
       }
-      hash = (37 * hash) + POKEMON_REWARD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getPokemonReward());
-      hash = (37 * hash) + ITEM_LOOT_TABLE_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getItemLootTable());
-      hash = (37 * hash) + ITEM_LOOT_TABLE_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getItemLootTableCount();
-      hash = (37 * hash) + ITEM_RANKING_LOOT_TABLE_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getItemRankingLootTableCount();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -566,20 +661,8 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (itemBuilder_ == null) {
-          item_ = null;
-        } else {
-          item_ = null;
-          itemBuilder_ = null;
-        }
-        pokemonReward_ = false;
-
-        itemLootTable_ = false;
-
-        itemLootTableCount_ = 0;
-
-        itemRankingLootTableCount_ = 0;
-
+        rewardTypeCase_ = 0;
+        rewardType_ = null;
         return this;
       }
 
@@ -606,15 +689,26 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public POGOProtos.Rpc.VsSeekerLootProto.RewardProto buildPartial() {
         POGOProtos.Rpc.VsSeekerLootProto.RewardProto result = new POGOProtos.Rpc.VsSeekerLootProto.RewardProto(this);
-        if (itemBuilder_ == null) {
-          result.item_ = item_;
-        } else {
-          result.item_ = itemBuilder_.build();
+        if (rewardTypeCase_ == 1) {
+          if (itemBuilder_ == null) {
+            result.rewardType_ = rewardType_;
+          } else {
+            result.rewardType_ = itemBuilder_.build();
+          }
         }
-        result.pokemonReward_ = pokemonReward_;
-        result.itemLootTable_ = itemLootTable_;
-        result.itemLootTableCount_ = itemLootTableCount_;
-        result.itemRankingLootTableCount_ = itemRankingLootTableCount_;
+        if (rewardTypeCase_ == 2) {
+          result.rewardType_ = rewardType_;
+        }
+        if (rewardTypeCase_ == 3) {
+          result.rewardType_ = rewardType_;
+        }
+        if (rewardTypeCase_ == 4) {
+          result.rewardType_ = rewardType_;
+        }
+        if (rewardTypeCase_ == 5) {
+          result.rewardType_ = rewardType_;
+        }
+        result.rewardTypeCase_ = rewardTypeCase_;
         onBuilt();
         return result;
       }
@@ -663,20 +757,30 @@ private static final long serialVersionUID = 0L;
 
       public Builder mergeFrom(POGOProtos.Rpc.VsSeekerLootProto.RewardProto other) {
         if (other == POGOProtos.Rpc.VsSeekerLootProto.RewardProto.getDefaultInstance()) return this;
-        if (other.hasItem()) {
-          mergeItem(other.getItem());
-        }
-        if (other.getPokemonReward() != false) {
-          setPokemonReward(other.getPokemonReward());
-        }
-        if (other.getItemLootTable() != false) {
-          setItemLootTable(other.getItemLootTable());
-        }
-        if (other.getItemLootTableCount() != 0) {
-          setItemLootTableCount(other.getItemLootTableCount());
-        }
-        if (other.getItemRankingLootTableCount() != 0) {
-          setItemRankingLootTableCount(other.getItemRankingLootTableCount());
+        switch (other.getRewardTypeCase()) {
+          case ITEM: {
+            mergeItem(other.getItem());
+            break;
+          }
+          case POKEMON_REWARD: {
+            setPokemonReward(other.getPokemonReward());
+            break;
+          }
+          case ITEM_LOOT_TABLE: {
+            setItemLootTable(other.getItemLootTable());
+            break;
+          }
+          case ITEM_LOOT_TABLE_COUNT: {
+            setItemLootTableCount(other.getItemLootTableCount());
+            break;
+          }
+          case ITEM_RANKING_LOOT_TABLE_COUNT: {
+            setItemRankingLootTableCount(other.getItemRankingLootTableCount());
+            break;
+          }
+          case REWARDTYPE_NOT_SET: {
+            break;
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -706,8 +810,22 @@ private static final long serialVersionUID = 0L;
         }
         return this;
       }
+      private int rewardTypeCase_ = 0;
+      private java.lang.Object rewardType_;
+      public RewardTypeCase
+          getRewardTypeCase() {
+        return RewardTypeCase.forNumber(
+            rewardTypeCase_);
+      }
 
-      private POGOProtos.Rpc.LootItemProto item_;
+      public Builder clearRewardType() {
+        rewardTypeCase_ = 0;
+        rewardType_ = null;
+        onChanged();
+        return this;
+      }
+
+
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.LootItemProto, POGOProtos.Rpc.LootItemProto.Builder, POGOProtos.Rpc.LootItemProtoOrBuilder> itemBuilder_;
       /**
@@ -715,7 +833,7 @@ private static final long serialVersionUID = 0L;
        * @return Whether the item field is set.
        */
       public boolean hasItem() {
-        return itemBuilder_ != null || item_ != null;
+        return rewardTypeCase_ == 1;
       }
       /**
        * <code>.POGOProtos.Rpc.LootItemProto item = 1;</code>
@@ -723,9 +841,15 @@ private static final long serialVersionUID = 0L;
        */
       public POGOProtos.Rpc.LootItemProto getItem() {
         if (itemBuilder_ == null) {
-          return item_ == null ? POGOProtos.Rpc.LootItemProto.getDefaultInstance() : item_;
+          if (rewardTypeCase_ == 1) {
+            return (POGOProtos.Rpc.LootItemProto) rewardType_;
+          }
+          return POGOProtos.Rpc.LootItemProto.getDefaultInstance();
         } else {
-          return itemBuilder_.getMessage();
+          if (rewardTypeCase_ == 1) {
+            return itemBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.LootItemProto.getDefaultInstance();
         }
       }
       /**
@@ -736,12 +860,12 @@ private static final long serialVersionUID = 0L;
           if (value == null) {
             throw new NullPointerException();
           }
-          item_ = value;
+          rewardType_ = value;
           onChanged();
         } else {
           itemBuilder_.setMessage(value);
         }
-
+        rewardTypeCase_ = 1;
         return this;
       }
       /**
@@ -750,12 +874,12 @@ private static final long serialVersionUID = 0L;
       public Builder setItem(
           POGOProtos.Rpc.LootItemProto.Builder builderForValue) {
         if (itemBuilder_ == null) {
-          item_ = builderForValue.build();
+          rewardType_ = builderForValue.build();
           onChanged();
         } else {
           itemBuilder_.setMessage(builderForValue.build());
         }
-
+        rewardTypeCase_ = 1;
         return this;
       }
       /**
@@ -763,17 +887,21 @@ private static final long serialVersionUID = 0L;
        */
       public Builder mergeItem(POGOProtos.Rpc.LootItemProto value) {
         if (itemBuilder_ == null) {
-          if (item_ != null) {
-            item_ =
-              POGOProtos.Rpc.LootItemProto.newBuilder(item_).mergeFrom(value).buildPartial();
+          if (rewardTypeCase_ == 1 &&
+              rewardType_ != POGOProtos.Rpc.LootItemProto.getDefaultInstance()) {
+            rewardType_ = POGOProtos.Rpc.LootItemProto.newBuilder((POGOProtos.Rpc.LootItemProto) rewardType_)
+                .mergeFrom(value).buildPartial();
           } else {
-            item_ = value;
+            rewardType_ = value;
           }
           onChanged();
         } else {
-          itemBuilder_.mergeFrom(value);
+          if (rewardTypeCase_ == 1) {
+            itemBuilder_.mergeFrom(value);
+          }
+          itemBuilder_.setMessage(value);
         }
-
+        rewardTypeCase_ = 1;
         return this;
       }
       /**
@@ -781,32 +909,37 @@ private static final long serialVersionUID = 0L;
        */
       public Builder clearItem() {
         if (itemBuilder_ == null) {
-          item_ = null;
-          onChanged();
+          if (rewardTypeCase_ == 1) {
+            rewardTypeCase_ = 0;
+            rewardType_ = null;
+            onChanged();
+          }
         } else {
-          item_ = null;
-          itemBuilder_ = null;
+          if (rewardTypeCase_ == 1) {
+            rewardTypeCase_ = 0;
+            rewardType_ = null;
+          }
+          itemBuilder_.clear();
         }
-
         return this;
       }
       /**
        * <code>.POGOProtos.Rpc.LootItemProto item = 1;</code>
        */
       public POGOProtos.Rpc.LootItemProto.Builder getItemBuilder() {
-        
-        onChanged();
         return getItemFieldBuilder().getBuilder();
       }
       /**
        * <code>.POGOProtos.Rpc.LootItemProto item = 1;</code>
        */
       public POGOProtos.Rpc.LootItemProtoOrBuilder getItemOrBuilder() {
-        if (itemBuilder_ != null) {
+        if ((rewardTypeCase_ == 1) && (itemBuilder_ != null)) {
           return itemBuilder_.getMessageOrBuilder();
         } else {
-          return item_ == null ?
-              POGOProtos.Rpc.LootItemProto.getDefaultInstance() : item_;
+          if (rewardTypeCase_ == 1) {
+            return (POGOProtos.Rpc.LootItemProto) rewardType_;
+          }
+          return POGOProtos.Rpc.LootItemProto.getDefaultInstance();
         }
       }
       /**
@@ -816,23 +949,30 @@ private static final long serialVersionUID = 0L;
           POGOProtos.Rpc.LootItemProto, POGOProtos.Rpc.LootItemProto.Builder, POGOProtos.Rpc.LootItemProtoOrBuilder> 
           getItemFieldBuilder() {
         if (itemBuilder_ == null) {
+          if (!(rewardTypeCase_ == 1)) {
+            rewardType_ = POGOProtos.Rpc.LootItemProto.getDefaultInstance();
+          }
           itemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.LootItemProto, POGOProtos.Rpc.LootItemProto.Builder, POGOProtos.Rpc.LootItemProtoOrBuilder>(
-                  getItem(),
+                  (POGOProtos.Rpc.LootItemProto) rewardType_,
                   getParentForChildren(),
                   isClean());
-          item_ = null;
+          rewardType_ = null;
         }
+        rewardTypeCase_ = 1;
+        onChanged();;
         return itemBuilder_;
       }
 
-      private boolean pokemonReward_ ;
       /**
        * <code>bool pokemon_reward = 2;</code>
        * @return The pokemonReward.
        */
       public boolean getPokemonReward() {
-        return pokemonReward_;
+        if (rewardTypeCase_ == 2) {
+          return (java.lang.Boolean) rewardType_;
+        }
+        return false;
       }
       /**
        * <code>bool pokemon_reward = 2;</code>
@@ -840,8 +980,8 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setPokemonReward(boolean value) {
-        
-        pokemonReward_ = value;
+        rewardTypeCase_ = 2;
+        rewardType_ = value;
         onChanged();
         return this;
       }
@@ -850,19 +990,23 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder clearPokemonReward() {
-        
-        pokemonReward_ = false;
-        onChanged();
+        if (rewardTypeCase_ == 2) {
+          rewardTypeCase_ = 0;
+          rewardType_ = null;
+          onChanged();
+        }
         return this;
       }
 
-      private boolean itemLootTable_ ;
       /**
        * <code>bool item_loot_table = 3;</code>
        * @return The itemLootTable.
        */
       public boolean getItemLootTable() {
-        return itemLootTable_;
+        if (rewardTypeCase_ == 3) {
+          return (java.lang.Boolean) rewardType_;
+        }
+        return false;
       }
       /**
        * <code>bool item_loot_table = 3;</code>
@@ -870,8 +1014,8 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setItemLootTable(boolean value) {
-        
-        itemLootTable_ = value;
+        rewardTypeCase_ = 3;
+        rewardType_ = value;
         onChanged();
         return this;
       }
@@ -880,19 +1024,23 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder clearItemLootTable() {
-        
-        itemLootTable_ = false;
-        onChanged();
+        if (rewardTypeCase_ == 3) {
+          rewardTypeCase_ = 0;
+          rewardType_ = null;
+          onChanged();
+        }
         return this;
       }
 
-      private int itemLootTableCount_ ;
       /**
        * <code>int32 item_loot_table_count = 4;</code>
        * @return The itemLootTableCount.
        */
       public int getItemLootTableCount() {
-        return itemLootTableCount_;
+        if (rewardTypeCase_ == 4) {
+          return (java.lang.Integer) rewardType_;
+        }
+        return 0;
       }
       /**
        * <code>int32 item_loot_table_count = 4;</code>
@@ -900,8 +1048,8 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setItemLootTableCount(int value) {
-        
-        itemLootTableCount_ = value;
+        rewardTypeCase_ = 4;
+        rewardType_ = value;
         onChanged();
         return this;
       }
@@ -910,19 +1058,23 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder clearItemLootTableCount() {
-        
-        itemLootTableCount_ = 0;
-        onChanged();
+        if (rewardTypeCase_ == 4) {
+          rewardTypeCase_ = 0;
+          rewardType_ = null;
+          onChanged();
+        }
         return this;
       }
 
-      private int itemRankingLootTableCount_ ;
       /**
        * <code>int32 item_ranking_loot_table_count = 5;</code>
        * @return The itemRankingLootTableCount.
        */
       public int getItemRankingLootTableCount() {
-        return itemRankingLootTableCount_;
+        if (rewardTypeCase_ == 5) {
+          return (java.lang.Integer) rewardType_;
+        }
+        return 0;
       }
       /**
        * <code>int32 item_ranking_loot_table_count = 5;</code>
@@ -930,8 +1082,8 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setItemRankingLootTableCount(int value) {
-        
-        itemRankingLootTableCount_ = value;
+        rewardTypeCase_ = 5;
+        rewardType_ = value;
         onChanged();
         return this;
       }
@@ -940,9 +1092,11 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder clearItemRankingLootTableCount() {
-        
-        itemRankingLootTableCount_ = 0;
-        onChanged();
+        if (rewardTypeCase_ == 5) {
+          rewardTypeCase_ = 0;
+          rewardType_ = null;
+          onChanged();
+        }
         return this;
       }
       @java.lang.Override

@@ -8,12 +8,6 @@ public interface PlatformInventoryItemProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int64 modified_timestamp = 1;</code>
-   * @return The modifiedTimestamp.
-   */
-  long getModifiedTimestamp();
-
-  /**
    * <code>bytes deleted_item_key = 2;</code>
    * @return The deletedItemKey.
    */
@@ -24,4 +18,12 @@ public interface PlatformInventoryItemProtoOrBuilder extends
    * @return The item.
    */
   com.google.protobuf.ByteString getItem();
+
+  /**
+   * <code>int64 modified_timestamp = 1;</code>
+   * @return The modifiedTimestamp.
+   */
+  long getModifiedTimestamp();
+
+  public POGOProtos.Rpc.PlatformInventoryItemProto.InventoryItemCase getInventoryItemCase();
 }

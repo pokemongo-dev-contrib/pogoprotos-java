@@ -136,162 +136,168 @@ public final class DownloadItemTemplatesResponseOuterClass {
       "ster/SponsoredGeofenceGiftSettings.proto" +
       "\0328POGOProtos/Settings/Master/CrossGameSo" +
       "cialSettings.proto\032-POGOProtos/Data/Stic" +
-      "ker/StickerMetadata.proto\"\2350\n\035DownloadIt" +
-      "emTemplatesResponse\022U\n\006result\030\001 \001(\0162E.PO" +
-      "GOProtos.Networking.Responses.DownloadIt" +
-      "emTemplatesResponse.Result\022n\n\ritem_templ" +
-      "ate\030\002 \003(\0132W.POGOProtos.Networking.Respon" +
-      "ses.DownloadItemTemplatesResponse.GameMa" +
-      "sterClientTemplate\022\024\n\014timestamp_ms\030\003 \001(\004" +
-      "\022\023\n\013page_offset\030\004 \001(\005\032\322-\n\030GameMasterClie" +
-      "ntTemplate\022\023\n\013template_id\030\001 \001(\t\022<\n\007pokem" +
-      "on\030\002 \001(\0132+.POGOProtos.Settings.Master.Po" +
-      "kemonSettings\0226\n\004item\030\003 \001(\0132(.POGOProtos" +
-      ".Settings.Master.ItemSettings\0226\n\004move\030\004 " +
-      "\001(\0132(.POGOProtos.Settings.Master.MoveSet" +
-      "tings\022G\n\rmove_sequence\030\005 \001(\01320.POGOProto" +
-      "s.Settings.Master.MoveSequenceSettings\022I" +
-      "\n\016type_effective\030\010 \001(\01321.POGOProtos.Sett" +
-      "ings.Master.TypeEffectiveSettings\0228\n\005bad" +
-      "ge\030\n \001(\0132).POGOProtos.Settings.Master.Ba" +
-      "dgeSettings\022:\n\006camera\030\013 \001(\0132*.POGOProtos" +
-      ".Settings.Master.CameraSettings\022E\n\014playe" +
-      "r_level\030\014 \001(\0132/.POGOProtos.Settings.Mast" +
-      "er.PlayerLevelSettings\022?\n\tgym_level\030\r \001(" +
-      "\0132,.POGOProtos.Settings.Master.GymLevelS" +
-      "ettings\022F\n\017battle_settings\030\016 \001(\0132-.POGOP" +
-      "rotos.Settings.Master.GymBattleSettings\022" +
-      "I\n\022encounter_settings\030\017 \001(\0132-.POGOProtos" +
-      ".Settings.Master.EncounterSettings\022D\n\020ia" +
-      "p_item_display\030\020 \001(\0132*.POGOProtos.Settin" +
-      "gs.Master.IapItemDisplay\022=\n\014iap_settings" +
-      "\030\021 \001(\0132\'.POGOProtos.Settings.Master.IapS" +
-      "ettings\022L\n\020pokemon_upgrades\030\022 \001(\01322.POGO" +
-      "Protos.Settings.Master.PokemonUpgradeSet" +
-      "tings\022J\n\017equipped_badges\030\023 \001(\01321.POGOPro" +
-      "tos.Settings.Master.EquippedBadgeSetting" +
-      "s\022A\n\016quest_settings\030\024 \001(\0132).POGOProtos.S" +
-      "ettings.Master.QuestSettings\022I\n\024avatar_c" +
-      "ustomization\030\025 \001(\0132+.POGOProtos.Data.Ava" +
-      "tar.AvatarCustomization\022?\n\rform_settings" +
-      "\030\026 \001(\0132(.POGOProtos.Settings.Master.Form" +
-      "Settings\022C\n\017gender_settings\030\027 \001(\0132*.POGO" +
-      "Protos.Settings.Master.GenderSettings\022K\n" +
-      "\022gym_badge_settings\030\030 \001(\0132/.POGOProtos.S" +
-      "ettings.Master.GymBadgeGmtSettings\022G\n\022we" +
-      "ather_affinities\030\031 \001(\0132+.POGOProtos.Sett" +
-      "ings.Master.WeatherAffinity\022H\n\026weather_b" +
-      "onus_settings\030\032 \001(\0132(.POGOProtos.Setting" +
-      "s.Master.WeatherBonus\022O\n\026pokemon_scale_s" +
-      "ettings\030\033 \001(\0132/.POGOProtos.Settings.Mast" +
-      "er.PokemonScaleSetting\022P\n\024iap_category_d" +
-      "isplay\030\034 \001(\01322.POGOProtos.Settings.Maste" +
-      "r.IapItemCategoryDisplay\022T\n\030beluga_pokem" +
-      "on_whitelist\030\035 \001(\01322.POGOProtos.Settings" +
-      ".Master.BelugaPokemonWhitelist\022K\n\023onboar" +
-      "ding_settings\030\036 \001(\0132..POGOProtos.Setting" +
-      "s.Master.OnboardingSettings\022c\n\035friendshi" +
-      "p_milestone_settings\030\037 \001(\0132<.POGOProtos." +
-      "Settings.Master.FriendshipLevelMilestone" +
-      "Settings\022P\n\026lucky_pokemon_settings\030  \001(\013" +
-      "20.POGOProtos.Settings.Master.LuckyPokem" +
-      "onSettings\022C\n\017combat_settings\030! \001(\0132*.PO" +
-      "GOProtos.Settings.Master.CombatSettings\022" +
-      "P\n\026combat_league_settings\030\" \001(\01320.POGOPr" +
-      "otos.Settings.Master.CombatLeagueSetting" +
-      "s\022?\n\rcombat_league\030# \001(\0132(.POGOProtos.Se" +
-      "ttings.Master.CombatLeague\022D\n\020ex_raid_se" +
-      "ttings\030$ \001(\0132*.POGOProtos.Settings.Maste" +
-      "r.ExRaidSettings\022C\n\013combat_move\030% \001(\0132.." +
-      "POGOProtos.Settings.Master.CombatMoveSet" +
-      "tings\022T\n\030background_mode_settings\030& \001(\0132" +
-      "2.POGOProtos.Settings.Master.BackgroundM" +
-      "odeSettings\022W\n\032combat_stat_stage_setting" +
-      "s\030\' \001(\01323.POGOProtos.Settings.Master.Com" +
-      "batStatStageSettings\022H\n\022combat_npc_train" +
-      "er\030( \001(\0132,.POGOProtos.Settings.Master.Co" +
-      "mbatNpcTrainer\022P\n\026combat_npc_personality" +
-      "\030) \001(\01320.POGOProtos.Settings.Master.Comb" +
-      "atNpcPersonality\022P\n\026onboarding_v2_settin" +
-      "gs\030* \001(\01320.POGOProtos.Settings.Master.On" +
-      "boardingV2Settings\022^\n\035party_recommendati" +
-      "on_settings\030+ \001(\01327.POGOProtos.Settings." +
-      "Master.PartyRecommendationSettings\022R\n\027sm" +
-      "eargle_moves_settings\030, \001(\01321.POGOProtos" +
-      ".Settings.Master.SmeargleMovesSettings\022]" +
-      "\n\035pokecoin_purchase_display_gmt\030- \001(\01326." +
-      "POGOProtos.Settings.Master.PokecoinPurch" +
-      "aseDisplayGmt\022M\n\025adventure_sync_v2_gmt\030." +
-      " \001(\0132..POGOProtos.Settings.Master.Advent" +
-      "ureSyncV2Gmt\022J\n\027loading_screen_settings\030" +
-      "/ \001(\0132).POGOProtos.Settings.Master.Loadi" +
-      "ngScreen\022]\n\035invasion_npc_display_setting" +
-      "s\0300 \001(\01326.POGOProtos.Settings.Master.Inv" +
-      "asionNpcDisplaySettings\022g\n\"combat_compet" +
-      "itive_season_settings\0301 \001(\0132;.POGOProtos" +
-      ".Settings.Master.CombatCompetitiveSeason" +
-      "Settings\022X\n\035combat_ranking_proto_setting" +
-      "s\0302 \001(\01321.POGOProtos.Settings.Master.Com" +
-      "batRankingSettings\022;\n\013combat_type\0303 \001(\0132" +
-      "&.POGOProtos.Settings.Master.CombatType\022" +
-      "L\n\024buddy_level_settings\0304 \001(\0132..POGOProt" +
-      "os.Settings.Master.BuddyLevelSettings\022c\n" +
-      " buddy_activity_category_settings\0305 \001(\0132" +
-      "9.POGOProtos.Settings.Master.BuddyActivi" +
-      "tyCategorySettings\022R\n\027buddy_activity_set" +
-      "tings\0306 \001(\01321.POGOProtos.Settings.Master" +
-      ".BuddyActivitySettings\022J\n\023buddy_swap_set" +
-      "tings\0308 \001(\0132-.POGOProtos.Settings.Master" +
-      ".BuddySwapSettings\022U\n\031vs_seeker_client_s" +
-      "ettings\030: \001(\01322.POGOProtos.Settings.Mast" +
-      "er.VsSeekerClientSettings\022_\n\036buddy_encou" +
-      "nter_cameo_settings\030; \001(\01327.POGOProtos.S" +
-      "ettings.Master.BuddyEncounterCameoSettin" +
-      "gs\022]\n\035limited_purchase_sku_settings\030< \001(" +
-      "\01326.POGOProtos.Settings.Master.LimitedPu" +
-      "rchaseSkuSettings\022[\n\034buddy_emotion_level" +
-      "_settings\030= \001(\01325.POGOProtos.Settings.Ma" +
-      "ster.BuddyEmotionLevelSettings\022i\n\'pokest" +
-      "op_invasion_availability_settings\030> \001(\0132" +
-      "8.POGOProtos.Settings.Master.InvasionAva" +
-      "ilabilitySettings\022X\n\032buddy_interaction_s" +
-      "ettings\030? \001(\01324.POGOProtos.Settings.Mast" +
-      "er.BuddyInteractionSettings\022D\n\024vs_seeker" +
-      "_loot_proto\030@ \001(\0132&.POGOProtos.Data.VsSe" +
-      "eker.VsSeekerLoot\022S\n\031vs_seeker_pokemon_r" +
-      "ewards\030A \001(\01320.POGOProtos.Data.VsSeeker." +
-      "VsSeekerPokemonRewards\022U\n\031battle_hub_ord" +
-      "er_settings\030B \001(\01322.POGOProtos.Settings." +
-      "Master.BattleHubOrderSettings\022U\n\031battle_" +
-      "hub_badge_settings\030C \001(\01322.POGOProtos.Se" +
-      "ttings.Master.BattleHubBadgeSettings\022H\n\022" +
-      "map_buddy_settings\030D \001(\0132,.POGOProtos.Se" +
-      "ttings.Master.MapBuddySettings\022J\n\023buddy_" +
-      "walk_settings\030E \001(\0132-.POGOProtos.Setting" +
-      "s.Master.BuddyWalkSettings\022V\n\031platypus_r" +
-      "ollout_settings\030F \001(\01323.POGOProtos.Setti" +
-      "ngs.Master.PlatypusRolloutSettings\022N\n\025bu" +
-      "ddy_hunger_settings\030H \001(\0132/.POGOProtos.S" +
-      "ettings.Master.BuddyHungerSettings\022\201\001\n\020p" +
-      "roject_vacation\030I \001(\0132g.POGOProtos.Netwo" +
-      "rking.Responses.DownloadItemTemplatesRes" +
-      "ponse.GameMasterClientTemplate.ProjectVa" +
-      "cation\022Y\n\033avatar_group_order_settings\030L " +
-      "\001(\01324.POGOProtos.Settings.Master.AvatarG" +
-      "roupOrderSettings\022I\n\022monodepth_settings\030" +
-      "N \001(\0132-.POGOProtos.Settings.Master.Monod" +
-      "epthSettings\022K\n\023raid_settings_proto\030Q \001(" +
-      "\0132..POGOProtos.Settings.Master.RaidClien" +
-      "tSettings\022c\n sponsored_geofence_gift_set" +
-      "tings\030T \001(\01329.POGOProtos.Settings.Master" +
-      ".SponsoredGeofenceGiftSettings\022B\n\020sticke" +
-      "r_metadata\030U \001(\0132(.POGOProtos.Data.Stick" +
-      "er.StickerMetadata\022W\n\032cross_game_social_" +
-      "settings\030V \001(\01323.POGOProtos.Settings.Mas" +
-      "ter.CrossGameSocialSettings\032%\n\017ProjectVa" +
-      "cation\022\022\n\nenable2020\030\001 \001(\010\"5\n\006Result\022\t\n\005" +
-      "UNSET\020\000\022\013\n\007SUCCESS\020\001\022\010\n\004PAGE\020\002\022\t\n\005RETRY\020" +
-      "\003B\002P\001b\006proto3"
+      "ker/StickerMetadata.proto\0323POGOProtos/Se" +
+      "ttings/Master/MapDisplaySettings.proto\0324" +
+      "POGOProtos/Settings/Master/ArTelemetrySe" +
+      "ttings.proto\"\2731\n\035DownloadItemTemplatesRe" +
+      "sponse\022U\n\006result\030\001 \001(\0162E.POGOProtos.Netw" +
+      "orking.Responses.DownloadItemTemplatesRe" +
+      "sponse.Result\022n\n\ritem_template\030\002 \003(\0132W.P" +
+      "OGOProtos.Networking.Responses.DownloadI" +
+      "temTemplatesResponse.GameMasterClientTem" +
+      "plate\022\024\n\014timestamp_ms\030\003 \001(\004\022\023\n\013page_offs" +
+      "et\030\004 \001(\005\032\360.\n\030GameMasterClientTemplate\022\023\n" +
+      "\013template_id\030\001 \001(\t\022<\n\007pokemon\030\002 \001(\0132+.PO" +
+      "GOProtos.Settings.Master.PokemonSettings" +
+      "\0226\n\004item\030\003 \001(\0132(.POGOProtos.Settings.Mas" +
+      "ter.ItemSettings\0226\n\004move\030\004 \001(\0132(.POGOPro" +
+      "tos.Settings.Master.MoveSettings\022G\n\rmove" +
+      "_sequence\030\005 \001(\01320.POGOProtos.Settings.Ma" +
+      "ster.MoveSequenceSettings\022I\n\016type_effect" +
+      "ive\030\010 \001(\01321.POGOProtos.Settings.Master.T" +
+      "ypeEffectiveSettings\0228\n\005badge\030\n \001(\0132).PO" +
+      "GOProtos.Settings.Master.BadgeSettings\022:" +
+      "\n\006camera\030\013 \001(\0132*.POGOProtos.Settings.Mas" +
+      "ter.CameraSettings\022E\n\014player_level\030\014 \001(\013" +
+      "2/.POGOProtos.Settings.Master.PlayerLeve" +
+      "lSettings\022?\n\tgym_level\030\r \001(\0132,.POGOProto" +
+      "s.Settings.Master.GymLevelSettings\022F\n\017ba" +
+      "ttle_settings\030\016 \001(\0132-.POGOProtos.Setting" +
+      "s.Master.GymBattleSettings\022I\n\022encounter_" +
+      "settings\030\017 \001(\0132-.POGOProtos.Settings.Mas" +
+      "ter.EncounterSettings\022D\n\020iap_item_displa" +
+      "y\030\020 \001(\0132*.POGOProtos.Settings.Master.Iap" +
+      "ItemDisplay\022=\n\014iap_settings\030\021 \001(\0132\'.POGO" +
+      "Protos.Settings.Master.IapSettings\022L\n\020po" +
+      "kemon_upgrades\030\022 \001(\01322.POGOProtos.Settin" +
+      "gs.Master.PokemonUpgradeSettings\022J\n\017equi" +
+      "pped_badges\030\023 \001(\01321.POGOProtos.Settings." +
+      "Master.EquippedBadgeSettings\022A\n\016quest_se" +
+      "ttings\030\024 \001(\0132).POGOProtos.Settings.Maste" +
+      "r.QuestSettings\022I\n\024avatar_customization\030" +
+      "\025 \001(\0132+.POGOProtos.Data.Avatar.AvatarCus" +
+      "tomization\022?\n\rform_settings\030\026 \001(\0132(.POGO" +
+      "Protos.Settings.Master.FormSettings\022C\n\017g" +
+      "ender_settings\030\027 \001(\0132*.POGOProtos.Settin" +
+      "gs.Master.GenderSettings\022K\n\022gym_badge_se" +
+      "ttings\030\030 \001(\0132/.POGOProtos.Settings.Maste" +
+      "r.GymBadgeGmtSettings\022G\n\022weather_affinit" +
+      "ies\030\031 \001(\0132+.POGOProtos.Settings.Master.W" +
+      "eatherAffinity\022H\n\026weather_bonus_settings" +
+      "\030\032 \001(\0132(.POGOProtos.Settings.Master.Weat" +
+      "herBonus\022O\n\026pokemon_scale_settings\030\033 \001(\013" +
+      "2/.POGOProtos.Settings.Master.PokemonSca" +
+      "leSetting\022P\n\024iap_category_display\030\034 \001(\0132" +
+      "2.POGOProtos.Settings.Master.IapItemCate" +
+      "goryDisplay\022T\n\030beluga_pokemon_whitelist\030" +
+      "\035 \001(\01322.POGOProtos.Settings.Master.Belug" +
+      "aPokemonWhitelist\022K\n\023onboarding_settings" +
+      "\030\036 \001(\0132..POGOProtos.Settings.Master.Onbo" +
+      "ardingSettings\022c\n\035friendship_milestone_s" +
+      "ettings\030\037 \001(\0132<.POGOProtos.Settings.Mast" +
+      "er.FriendshipLevelMilestoneSettings\022P\n\026l" +
+      "ucky_pokemon_settings\030  \001(\01320.POGOProtos" +
+      ".Settings.Master.LuckyPokemonSettings\022C\n" +
+      "\017combat_settings\030! \001(\0132*.POGOProtos.Sett" +
+      "ings.Master.CombatSettings\022P\n\026combat_lea" +
+      "gue_settings\030\" \001(\01320.POGOProtos.Settings" +
+      ".Master.CombatLeagueSettings\022?\n\rcombat_l" +
+      "eague\030# \001(\0132(.POGOProtos.Settings.Master" +
+      ".CombatLeague\022D\n\020ex_raid_settings\030$ \001(\0132" +
+      "*.POGOProtos.Settings.Master.ExRaidSetti" +
+      "ngs\022C\n\013combat_move\030% \001(\0132..POGOProtos.Se" +
+      "ttings.Master.CombatMoveSettings\022T\n\030back" +
+      "ground_mode_settings\030& \001(\01322.POGOProtos." +
+      "Settings.Master.BackgroundModeSettings\022W" +
+      "\n\032combat_stat_stage_settings\030\' \001(\01323.POG" +
+      "OProtos.Settings.Master.CombatStatStageS" +
+      "ettings\022H\n\022combat_npc_trainer\030( \001(\0132,.PO" +
+      "GOProtos.Settings.Master.CombatNpcTraine" +
+      "r\022P\n\026combat_npc_personality\030) \001(\01320.POGO" +
+      "Protos.Settings.Master.CombatNpcPersonal" +
+      "ity\022P\n\026onboarding_v2_settings\030* \001(\01320.PO" +
+      "GOProtos.Settings.Master.OnboardingV2Set" +
+      "tings\022^\n\035party_recommendation_settings\030+" +
+      " \001(\01327.POGOProtos.Settings.Master.PartyR" +
+      "ecommendationSettings\022R\n\027smeargle_moves_" +
+      "settings\030, \001(\01321.POGOProtos.Settings.Mas" +
+      "ter.SmeargleMovesSettings\022]\n\035pokecoin_pu" +
+      "rchase_display_gmt\030- \001(\01326.POGOProtos.Se" +
+      "ttings.Master.PokecoinPurchaseDisplayGmt" +
+      "\022M\n\025adventure_sync_v2_gmt\030. \001(\0132..POGOPr" +
+      "otos.Settings.Master.AdventureSyncV2Gmt\022" +
+      "J\n\027loading_screen_settings\030/ \001(\0132).POGOP" +
+      "rotos.Settings.Master.LoadingScreen\022]\n\035i" +
+      "nvasion_npc_display_settings\0300 \001(\01326.POG" +
+      "OProtos.Settings.Master.InvasionNpcDispl" +
+      "aySettings\022g\n\"combat_competitive_season_" +
+      "settings\0301 \001(\0132;.POGOProtos.Settings.Mas" +
+      "ter.CombatCompetitiveSeasonSettings\022X\n\035c" +
+      "ombat_ranking_proto_settings\0302 \001(\01321.POG" +
+      "OProtos.Settings.Master.CombatRankingSet" +
+      "tings\022;\n\013combat_type\0303 \001(\0132&.POGOProtos." +
+      "Settings.Master.CombatType\022L\n\024buddy_leve" +
+      "l_settings\0304 \001(\0132..POGOProtos.Settings.M" +
+      "aster.BuddyLevelSettings\022c\n buddy_activi" +
+      "ty_category_settings\0305 \001(\01329.POGOProtos." +
+      "Settings.Master.BuddyActivityCategorySet" +
+      "tings\022R\n\027buddy_activity_settings\0306 \001(\01321" +
+      ".POGOProtos.Settings.Master.BuddyActivit" +
+      "ySettings\022J\n\023buddy_swap_settings\0308 \001(\0132-" +
+      ".POGOProtos.Settings.Master.BuddySwapSet" +
+      "tings\022U\n\031vs_seeker_client_settings\030: \001(\013" +
+      "22.POGOProtos.Settings.Master.VsSeekerCl" +
+      "ientSettings\022_\n\036buddy_encounter_cameo_se" +
+      "ttings\030; \001(\01327.POGOProtos.Settings.Maste" +
+      "r.BuddyEncounterCameoSettings\022]\n\035limited" +
+      "_purchase_sku_settings\030< \001(\01326.POGOProto" +
+      "s.Settings.Master.LimitedPurchaseSkuSett" +
+      "ings\022[\n\034buddy_emotion_level_settings\030= \001" +
+      "(\01325.POGOProtos.Settings.Master.BuddyEmo" +
+      "tionLevelSettings\022i\n\'pokestop_invasion_a" +
+      "vailability_settings\030> \001(\01328.POGOProtos." +
+      "Settings.Master.InvasionAvailabilitySett" +
+      "ings\022X\n\032buddy_interaction_settings\030? \001(\013" +
+      "24.POGOProtos.Settings.Master.BuddyInter" +
+      "actionSettings\022D\n\024vs_seeker_loot_proto\030@" +
+      " \001(\0132&.POGOProtos.Data.VsSeeker.VsSeeker" +
+      "Loot\022S\n\031vs_seeker_pokemon_rewards\030A \001(\0132" +
+      "0.POGOProtos.Data.VsSeeker.VsSeekerPokem" +
+      "onRewards\022U\n\031battle_hub_order_settings\030B" +
+      " \001(\01322.POGOProtos.Settings.Master.Battle" +
+      "HubOrderSettings\022U\n\031battle_hub_badge_set" +
+      "tings\030C \001(\01322.POGOProtos.Settings.Master" +
+      ".BattleHubBadgeSettings\022H\n\022map_buddy_set" +
+      "tings\030D \001(\0132,.POGOProtos.Settings.Master" +
+      ".MapBuddySettings\022J\n\023buddy_walk_settings" +
+      "\030E \001(\0132-.POGOProtos.Settings.Master.Budd" +
+      "yWalkSettings\022V\n\031platypus_rollout_settin" +
+      "gs\030F \001(\01323.POGOProtos.Settings.Master.Pl" +
+      "atypusRolloutSettings\022N\n\025buddy_hunger_se" +
+      "ttings\030H \001(\0132/.POGOProtos.Settings.Maste" +
+      "r.BuddyHungerSettings\022\201\001\n\020project_vacati" +
+      "on\030I \001(\0132g.POGOProtos.Networking.Respons" +
+      "es.DownloadItemTemplatesResponse.GameMas" +
+      "terClientTemplate.ProjectVacation\022Y\n\033ava" +
+      "tar_group_order_settings\030L \001(\01324.POGOPro" +
+      "tos.Settings.Master.AvatarGroupOrderSett" +
+      "ings\022I\n\022monodepth_settings\030N \001(\0132-.POGOP" +
+      "rotos.Settings.Master.MonodepthSettings\022" +
+      "K\n\023raid_settings_proto\030Q \001(\0132..POGOProto" +
+      "s.Settings.Master.RaidClientSettings\022c\n " +
+      "sponsored_geofence_gift_settings\030T \001(\01329" +
+      ".POGOProtos.Settings.Master.SponsoredGeo" +
+      "fenceGiftSettings\022B\n\020sticker_metadata\030U " +
+      "\001(\0132(.POGOProtos.Data.Sticker.StickerMet" +
+      "adata\022W\n\032cross_game_social_settings\030V \001(" +
+      "\01323.POGOProtos.Settings.Master.CrossGame" +
+      "SocialSettings\022L\n\024map_display_settings\030W" +
+      " \001(\0132..POGOProtos.Settings.Master.MapDis" +
+      "playSettings\022N\n\025ar_telemetry_settings\030Z " +
+      "\001(\0132/.POGOProtos.Settings.Master.ArTelem" +
+      "etrySettings\032%\n\017ProjectVacation\022\022\n\nenabl" +
+      "e2020\030\001 \001(\010\"5\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCC" +
+      "ESS\020\001\022\010\n\004PAGE\020\002\022\t\n\005RETRY\020\003B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -367,6 +373,8 @@ public final class DownloadItemTemplatesResponseOuterClass {
           POGOProtos.Settings.Master.SponsoredGeofenceGiftSettingsOuterClass.getDescriptor(),
           POGOProtos.Settings.Master.CrossGameSocialSettingsOuterClass.getDescriptor(),
           POGOProtos.Data.Sticker.StickerMetadataOuterClass.getDescriptor(),
+          POGOProtos.Settings.Master.MapDisplaySettingsOuterClass.getDescriptor(),
+          POGOProtos.Settings.Master.ArTelemetrySettingsOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Networking_Responses_DownloadItemTemplatesResponse_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -379,7 +387,7 @@ public final class DownloadItemTemplatesResponseOuterClass {
     internal_static_POGOProtos_Networking_Responses_DownloadItemTemplatesResponse_GameMasterClientTemplate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_DownloadItemTemplatesResponse_GameMasterClientTemplate_descriptor,
-        new java.lang.String[] { "TemplateId", "Pokemon", "Item", "Move", "MoveSequence", "TypeEffective", "Badge", "Camera", "PlayerLevel", "GymLevel", "BattleSettings", "EncounterSettings", "IapItemDisplay", "IapSettings", "PokemonUpgrades", "EquippedBadges", "QuestSettings", "AvatarCustomization", "FormSettings", "GenderSettings", "GymBadgeSettings", "WeatherAffinities", "WeatherBonusSettings", "PokemonScaleSettings", "IapCategoryDisplay", "BelugaPokemonWhitelist", "OnboardingSettings", "FriendshipMilestoneSettings", "LuckyPokemonSettings", "CombatSettings", "CombatLeagueSettings", "CombatLeague", "ExRaidSettings", "CombatMove", "BackgroundModeSettings", "CombatStatStageSettings", "CombatNpcTrainer", "CombatNpcPersonality", "OnboardingV2Settings", "PartyRecommendationSettings", "SmeargleMovesSettings", "PokecoinPurchaseDisplayGmt", "AdventureSyncV2Gmt", "LoadingScreenSettings", "InvasionNpcDisplaySettings", "CombatCompetitiveSeasonSettings", "CombatRankingProtoSettings", "CombatType", "BuddyLevelSettings", "BuddyActivityCategorySettings", "BuddyActivitySettings", "BuddySwapSettings", "VsSeekerClientSettings", "BuddyEncounterCameoSettings", "LimitedPurchaseSkuSettings", "BuddyEmotionLevelSettings", "PokestopInvasionAvailabilitySettings", "BuddyInteractionSettings", "VsSeekerLootProto", "VsSeekerPokemonRewards", "BattleHubOrderSettings", "BattleHubBadgeSettings", "MapBuddySettings", "BuddyWalkSettings", "PlatypusRolloutSettings", "BuddyHungerSettings", "ProjectVacation", "AvatarGroupOrderSettings", "MonodepthSettings", "RaidSettingsProto", "SponsoredGeofenceGiftSettings", "StickerMetadata", "CrossGameSocialSettings", });
+        new java.lang.String[] { "TemplateId", "Pokemon", "Item", "Move", "MoveSequence", "TypeEffective", "Badge", "Camera", "PlayerLevel", "GymLevel", "BattleSettings", "EncounterSettings", "IapItemDisplay", "IapSettings", "PokemonUpgrades", "EquippedBadges", "QuestSettings", "AvatarCustomization", "FormSettings", "GenderSettings", "GymBadgeSettings", "WeatherAffinities", "WeatherBonusSettings", "PokemonScaleSettings", "IapCategoryDisplay", "BelugaPokemonWhitelist", "OnboardingSettings", "FriendshipMilestoneSettings", "LuckyPokemonSettings", "CombatSettings", "CombatLeagueSettings", "CombatLeague", "ExRaidSettings", "CombatMove", "BackgroundModeSettings", "CombatStatStageSettings", "CombatNpcTrainer", "CombatNpcPersonality", "OnboardingV2Settings", "PartyRecommendationSettings", "SmeargleMovesSettings", "PokecoinPurchaseDisplayGmt", "AdventureSyncV2Gmt", "LoadingScreenSettings", "InvasionNpcDisplaySettings", "CombatCompetitiveSeasonSettings", "CombatRankingProtoSettings", "CombatType", "BuddyLevelSettings", "BuddyActivityCategorySettings", "BuddyActivitySettings", "BuddySwapSettings", "VsSeekerClientSettings", "BuddyEncounterCameoSettings", "LimitedPurchaseSkuSettings", "BuddyEmotionLevelSettings", "PokestopInvasionAvailabilitySettings", "BuddyInteractionSettings", "VsSeekerLootProto", "VsSeekerPokemonRewards", "BattleHubOrderSettings", "BattleHubBadgeSettings", "MapBuddySettings", "BuddyWalkSettings", "PlatypusRolloutSettings", "BuddyHungerSettings", "ProjectVacation", "AvatarGroupOrderSettings", "MonodepthSettings", "RaidSettingsProto", "SponsoredGeofenceGiftSettings", "StickerMetadata", "CrossGameSocialSettings", "MapDisplaySettings", "ArTelemetrySettings", });
     internal_static_POGOProtos_Networking_Responses_DownloadItemTemplatesResponse_GameMasterClientTemplate_ProjectVacation_descriptor =
       internal_static_POGOProtos_Networking_Responses_DownloadItemTemplatesResponse_GameMasterClientTemplate_descriptor.getNestedTypes().get(0);
     internal_static_POGOProtos_Networking_Responses_DownloadItemTemplatesResponse_GameMasterClientTemplate_ProjectVacation_fieldAccessorTable = new
@@ -457,6 +465,8 @@ public final class DownloadItemTemplatesResponseOuterClass {
     POGOProtos.Settings.Master.SponsoredGeofenceGiftSettingsOuterClass.getDescriptor();
     POGOProtos.Settings.Master.CrossGameSocialSettingsOuterClass.getDescriptor();
     POGOProtos.Data.Sticker.StickerMetadataOuterClass.getDescriptor();
+    POGOProtos.Settings.Master.MapDisplaySettingsOuterClass.getDescriptor();
+    POGOProtos.Settings.Master.ArTelemetrySettingsOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

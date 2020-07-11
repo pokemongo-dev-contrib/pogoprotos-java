@@ -429,4 +429,28 @@ public interface PokemonDataOrBuilder extends
    * @return The eggType.
    */
   POGOProtos.Enums.HoloPokemonEggType getEggType();
+
+  /**
+   * <code>repeated .POGOProtos.Data.Quests.ClientQuest quest_buddy_evolution_requirement = 62;</code>
+   */
+  java.util.List<POGOProtos.Data.Quests.ClientQuest> 
+      getQuestBuddyEvolutionRequirementList();
+  /**
+   * <code>repeated .POGOProtos.Data.Quests.ClientQuest quest_buddy_evolution_requirement = 62;</code>
+   */
+  POGOProtos.Data.Quests.ClientQuest getQuestBuddyEvolutionRequirement(int index);
+  /**
+   * <code>repeated .POGOProtos.Data.Quests.ClientQuest quest_buddy_evolution_requirement = 62;</code>
+   */
+  int getQuestBuddyEvolutionRequirementCount();
+  /**
+   * <code>repeated .POGOProtos.Data.Quests.ClientQuest quest_buddy_evolution_requirement = 62;</code>
+   */
+  java.util.List<? extends POGOProtos.Data.Quests.ClientQuestOrBuilder> 
+      getQuestBuddyEvolutionRequirementOrBuilderList();
+  /**
+   * <code>repeated .POGOProtos.Data.Quests.ClientQuest quest_buddy_evolution_requirement = 62;</code>
+   */
+  POGOProtos.Data.Quests.ClientQuestOrBuilder getQuestBuddyEvolutionRequirementOrBuilder(
+      int index);
 }

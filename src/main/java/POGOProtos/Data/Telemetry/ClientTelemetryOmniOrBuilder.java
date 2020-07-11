@@ -953,6 +953,21 @@ public interface ClientTelemetryOmniOrBuilder extends
   POGOProtos.Data.Telemetry.RemoteRaidTelemetryOrBuilder getRemoteRaidTelemetryOrBuilder();
 
   /**
+   * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * @return Whether the deviceOsTelemetry field is set.
+   */
+  boolean hasDeviceOsTelemetry();
+  /**
+   * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * @return The deviceOsTelemetry.
+   */
+  POGOProtos.Data.Telemetry.DeviceOSTelemetry getDeviceOsTelemetry();
+  /**
+   * <code>.POGOProtos.Data.Telemetry.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   */
+  POGOProtos.Data.Telemetry.DeviceOSTelemetryOrBuilder getDeviceOsTelemetryOrBuilder();
+
+  /**
    * <code>.POGOProtos.Data.Telemetry.PlatformServerData server_data = 1001;</code>
    * @return Whether the serverData field is set.
    */

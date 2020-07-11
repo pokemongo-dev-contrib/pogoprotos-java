@@ -374,6 +374,10 @@ private static final long serialVersionUID = 0L;
      * <code>TIMED_STORY_QUEST = 4;</code>
      */
     TIMED_STORY_QUEST(4),
+    /**
+     * <code>TGC_TRACKING_QUEST = 7;</code>
+     */
+    TGC_TRACKING_QUEST(7),
     UNRECOGNIZED(-1),
     ;
 
@@ -397,6 +401,10 @@ private static final long serialVersionUID = 0L;
      * <code>TIMED_STORY_QUEST = 4;</code>
      */
     public static final int TIMED_STORY_QUEST_VALUE = 4;
+    /**
+     * <code>TGC_TRACKING_QUEST = 7;</code>
+     */
+    public static final int TGC_TRACKING_QUEST_VALUE = 7;
 
 
     public final int getNumber() {
@@ -428,6 +436,7 @@ private static final long serialVersionUID = 0L;
         case 2: return CHALLENGE_QUEST;
         case 3: return DAILY_COIN_QUEST;
         case 4: return TIMED_STORY_QUEST;
+        case 7: return TGC_TRACKING_QUEST;
         default: return null;
       }
     }

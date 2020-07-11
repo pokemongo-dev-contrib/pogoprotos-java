@@ -50,80 +50,86 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             POGOProtos.Rpc.PlatformCommonTelemetryBootTime.Builder subBuilder = null;
-            if (bootTime_ != null) {
-              subBuilder = bootTime_.toBuilder();
+            if (telemetryDataCase_ == 1) {
+              subBuilder = ((POGOProtos.Rpc.PlatformCommonTelemetryBootTime) telemetryData_).toBuilder();
             }
-            bootTime_ = input.readMessage(POGOProtos.Rpc.PlatformCommonTelemetryBootTime.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PlatformCommonTelemetryBootTime.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(bootTime_);
-              bootTime_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PlatformCommonTelemetryBootTime) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 1;
             break;
           }
           case 18: {
             POGOProtos.Rpc.PlatformCommonTelemetryShopClick.Builder subBuilder = null;
-            if (shopClick_ != null) {
-              subBuilder = shopClick_.toBuilder();
+            if (telemetryDataCase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.PlatformCommonTelemetryShopClick) telemetryData_).toBuilder();
             }
-            shopClick_ = input.readMessage(POGOProtos.Rpc.PlatformCommonTelemetryShopClick.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PlatformCommonTelemetryShopClick.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(shopClick_);
-              shopClick_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PlatformCommonTelemetryShopClick) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 2;
             break;
           }
           case 26: {
             POGOProtos.Rpc.PlatformCommonTelemetryShopView.Builder subBuilder = null;
-            if (shopView_ != null) {
-              subBuilder = shopView_.toBuilder();
+            if (telemetryDataCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.PlatformCommonTelemetryShopView) telemetryData_).toBuilder();
             }
-            shopView_ = input.readMessage(POGOProtos.Rpc.PlatformCommonTelemetryShopView.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PlatformCommonTelemetryShopView.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(shopView_);
-              shopView_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PlatformCommonTelemetryShopView) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 3;
             break;
           }
           case 34: {
             POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.Builder subBuilder = null;
-            if (poiSubmissionTelemetry_ != null) {
-              subBuilder = poiSubmissionTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 4) {
+              subBuilder = ((POGOProtos.Rpc.PlatformPoiSubmissionTelemetry) telemetryData_).toBuilder();
             }
-            poiSubmissionTelemetry_ = input.readMessage(POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(poiSubmissionTelemetry_);
-              poiSubmissionTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PlatformPoiSubmissionTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 4;
             break;
           }
           case 42: {
             POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.Builder subBuilder = null;
-            if (poiSubmissionPhotoUploadErrorTelemetry_ != null) {
-              subBuilder = poiSubmissionPhotoUploadErrorTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_).toBuilder();
             }
-            poiSubmissionPhotoUploadErrorTelemetry_ = input.readMessage(POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(poiSubmissionPhotoUploadErrorTelemetry_);
-              poiSubmissionPhotoUploadErrorTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 5;
             break;
           }
           case 50: {
             POGOProtos.Rpc.PlatformCommonTelemetryLogIn.Builder subBuilder = null;
-            if (logIn_ != null) {
-              subBuilder = logIn_.toBuilder();
+            if (telemetryDataCase_ == 6) {
+              subBuilder = ((POGOProtos.Rpc.PlatformCommonTelemetryLogIn) telemetryData_).toBuilder();
             }
-            logIn_ = input.readMessage(POGOProtos.Rpc.PlatformCommonTelemetryLogIn.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.PlatformCommonTelemetryLogIn.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(logIn_);
-              logIn_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PlatformCommonTelemetryLogIn) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 6;
             break;
           }
           case 58: {
@@ -184,142 +190,221 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.PlatformApprovedCommonTelemetryProto.class, POGOProtos.Rpc.PlatformApprovedCommonTelemetryProto.Builder.class);
   }
 
+  private int telemetryDataCase_ = 0;
+  private java.lang.Object telemetryData_;
+  public enum TelemetryDataCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    BOOT_TIME(1),
+    SHOP_CLICK(2),
+    SHOP_VIEW(3),
+    POI_SUBMISSION_TELEMETRY(4),
+    POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY(5),
+    LOG_IN(6),
+    TELEMETRYDATA_NOT_SET(0);
+    private final int value;
+    private TelemetryDataCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static TelemetryDataCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static TelemetryDataCase forNumber(int value) {
+      switch (value) {
+        case 1: return BOOT_TIME;
+        case 2: return SHOP_CLICK;
+        case 3: return SHOP_VIEW;
+        case 4: return POI_SUBMISSION_TELEMETRY;
+        case 5: return POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY;
+        case 6: return LOG_IN;
+        case 0: return TELEMETRYDATA_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public TelemetryDataCase
+  getTelemetryDataCase() {
+    return TelemetryDataCase.forNumber(
+        telemetryDataCase_);
+  }
+
   public static final int BOOT_TIME_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.PlatformCommonTelemetryBootTime bootTime_;
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryBootTime boot_time = 1;</code>
    * @return Whether the bootTime field is set.
    */
   public boolean hasBootTime() {
-    return bootTime_ != null;
+    return telemetryDataCase_ == 1;
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryBootTime boot_time = 1;</code>
    * @return The bootTime.
    */
   public POGOProtos.Rpc.PlatformCommonTelemetryBootTime getBootTime() {
-    return bootTime_ == null ? POGOProtos.Rpc.PlatformCommonTelemetryBootTime.getDefaultInstance() : bootTime_;
+    if (telemetryDataCase_ == 1) {
+       return (POGOProtos.Rpc.PlatformCommonTelemetryBootTime) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformCommonTelemetryBootTime.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryBootTime boot_time = 1;</code>
    */
   public POGOProtos.Rpc.PlatformCommonTelemetryBootTimeOrBuilder getBootTimeOrBuilder() {
-    return getBootTime();
+    if (telemetryDataCase_ == 1) {
+       return (POGOProtos.Rpc.PlatformCommonTelemetryBootTime) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformCommonTelemetryBootTime.getDefaultInstance();
   }
 
   public static final int SHOP_CLICK_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.PlatformCommonTelemetryShopClick shopClick_;
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopClick shop_click = 2;</code>
    * @return Whether the shopClick field is set.
    */
   public boolean hasShopClick() {
-    return shopClick_ != null;
+    return telemetryDataCase_ == 2;
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopClick shop_click = 2;</code>
    * @return The shopClick.
    */
   public POGOProtos.Rpc.PlatformCommonTelemetryShopClick getShopClick() {
-    return shopClick_ == null ? POGOProtos.Rpc.PlatformCommonTelemetryShopClick.getDefaultInstance() : shopClick_;
+    if (telemetryDataCase_ == 2) {
+       return (POGOProtos.Rpc.PlatformCommonTelemetryShopClick) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformCommonTelemetryShopClick.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopClick shop_click = 2;</code>
    */
   public POGOProtos.Rpc.PlatformCommonTelemetryShopClickOrBuilder getShopClickOrBuilder() {
-    return getShopClick();
+    if (telemetryDataCase_ == 2) {
+       return (POGOProtos.Rpc.PlatformCommonTelemetryShopClick) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformCommonTelemetryShopClick.getDefaultInstance();
   }
 
   public static final int SHOP_VIEW_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.PlatformCommonTelemetryShopView shopView_;
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopView shop_view = 3;</code>
    * @return Whether the shopView field is set.
    */
   public boolean hasShopView() {
-    return shopView_ != null;
+    return telemetryDataCase_ == 3;
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopView shop_view = 3;</code>
    * @return The shopView.
    */
   public POGOProtos.Rpc.PlatformCommonTelemetryShopView getShopView() {
-    return shopView_ == null ? POGOProtos.Rpc.PlatformCommonTelemetryShopView.getDefaultInstance() : shopView_;
+    if (telemetryDataCase_ == 3) {
+       return (POGOProtos.Rpc.PlatformCommonTelemetryShopView) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformCommonTelemetryShopView.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopView shop_view = 3;</code>
    */
   public POGOProtos.Rpc.PlatformCommonTelemetryShopViewOrBuilder getShopViewOrBuilder() {
-    return getShopView();
+    if (telemetryDataCase_ == 3) {
+       return (POGOProtos.Rpc.PlatformCommonTelemetryShopView) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformCommonTelemetryShopView.getDefaultInstance();
   }
 
   public static final int POI_SUBMISSION_TELEMETRY_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.PlatformPoiSubmissionTelemetry poiSubmissionTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.PlatformPoiSubmissionTelemetry poi_submission_telemetry = 4;</code>
    * @return Whether the poiSubmissionTelemetry field is set.
    */
   public boolean hasPoiSubmissionTelemetry() {
-    return poiSubmissionTelemetry_ != null;
+    return telemetryDataCase_ == 4;
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformPoiSubmissionTelemetry poi_submission_telemetry = 4;</code>
    * @return The poiSubmissionTelemetry.
    */
   public POGOProtos.Rpc.PlatformPoiSubmissionTelemetry getPoiSubmissionTelemetry() {
-    return poiSubmissionTelemetry_ == null ? POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.getDefaultInstance() : poiSubmissionTelemetry_;
+    if (telemetryDataCase_ == 4) {
+       return (POGOProtos.Rpc.PlatformPoiSubmissionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformPoiSubmissionTelemetry poi_submission_telemetry = 4;</code>
    */
   public POGOProtos.Rpc.PlatformPoiSubmissionTelemetryOrBuilder getPoiSubmissionTelemetryOrBuilder() {
-    return getPoiSubmissionTelemetry();
+    if (telemetryDataCase_ == 4) {
+       return (POGOProtos.Rpc.PlatformPoiSubmissionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.getDefaultInstance();
   }
 
   public static final int POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry poiSubmissionPhotoUploadErrorTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;</code>
    * @return Whether the poiSubmissionPhotoUploadErrorTelemetry field is set.
    */
   public boolean hasPoiSubmissionPhotoUploadErrorTelemetry() {
-    return poiSubmissionPhotoUploadErrorTelemetry_ != null;
+    return telemetryDataCase_ == 5;
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;</code>
    * @return The poiSubmissionPhotoUploadErrorTelemetry.
    */
   public POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry getPoiSubmissionPhotoUploadErrorTelemetry() {
-    return poiSubmissionPhotoUploadErrorTelemetry_ == null ? POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance() : poiSubmissionPhotoUploadErrorTelemetry_;
+    if (telemetryDataCase_ == 5) {
+       return (POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;</code>
    */
   public POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetryOrBuilder getPoiSubmissionPhotoUploadErrorTelemetryOrBuilder() {
-    return getPoiSubmissionPhotoUploadErrorTelemetry();
+    if (telemetryDataCase_ == 5) {
+       return (POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
   }
 
   public static final int LOG_IN_FIELD_NUMBER = 6;
-  private POGOProtos.Rpc.PlatformCommonTelemetryLogIn logIn_;
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryLogIn log_in = 6;</code>
    * @return Whether the logIn field is set.
    */
   public boolean hasLogIn() {
-    return logIn_ != null;
+    return telemetryDataCase_ == 6;
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryLogIn log_in = 6;</code>
    * @return The logIn.
    */
   public POGOProtos.Rpc.PlatformCommonTelemetryLogIn getLogIn() {
-    return logIn_ == null ? POGOProtos.Rpc.PlatformCommonTelemetryLogIn.getDefaultInstance() : logIn_;
+    if (telemetryDataCase_ == 6) {
+       return (POGOProtos.Rpc.PlatformCommonTelemetryLogIn) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformCommonTelemetryLogIn.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.PlatformCommonTelemetryLogIn log_in = 6;</code>
    */
   public POGOProtos.Rpc.PlatformCommonTelemetryLogInOrBuilder getLogInOrBuilder() {
-    return getLogIn();
+    if (telemetryDataCase_ == 6) {
+       return (POGOProtos.Rpc.PlatformCommonTelemetryLogIn) telemetryData_;
+    }
+    return POGOProtos.Rpc.PlatformCommonTelemetryLogIn.getDefaultInstance();
   }
 
   public static final int SERVER_DATA_FIELD_NUMBER = 7;
@@ -382,23 +467,23 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (bootTime_ != null) {
-      output.writeMessage(1, getBootTime());
+    if (telemetryDataCase_ == 1) {
+      output.writeMessage(1, (POGOProtos.Rpc.PlatformCommonTelemetryBootTime) telemetryData_);
     }
-    if (shopClick_ != null) {
-      output.writeMessage(2, getShopClick());
+    if (telemetryDataCase_ == 2) {
+      output.writeMessage(2, (POGOProtos.Rpc.PlatformCommonTelemetryShopClick) telemetryData_);
     }
-    if (shopView_ != null) {
-      output.writeMessage(3, getShopView());
+    if (telemetryDataCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.PlatformCommonTelemetryShopView) telemetryData_);
     }
-    if (poiSubmissionTelemetry_ != null) {
-      output.writeMessage(4, getPoiSubmissionTelemetry());
+    if (telemetryDataCase_ == 4) {
+      output.writeMessage(4, (POGOProtos.Rpc.PlatformPoiSubmissionTelemetry) telemetryData_);
     }
-    if (poiSubmissionPhotoUploadErrorTelemetry_ != null) {
-      output.writeMessage(5, getPoiSubmissionPhotoUploadErrorTelemetry());
+    if (telemetryDataCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_);
     }
-    if (logIn_ != null) {
-      output.writeMessage(6, getLogIn());
+    if (telemetryDataCase_ == 6) {
+      output.writeMessage(6, (POGOProtos.Rpc.PlatformCommonTelemetryLogIn) telemetryData_);
     }
     if (serverData_ != null) {
       output.writeMessage(7, getServerData());
@@ -415,29 +500,29 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (bootTime_ != null) {
+    if (telemetryDataCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getBootTime());
+        .computeMessageSize(1, (POGOProtos.Rpc.PlatformCommonTelemetryBootTime) telemetryData_);
     }
-    if (shopClick_ != null) {
+    if (telemetryDataCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getShopClick());
+        .computeMessageSize(2, (POGOProtos.Rpc.PlatformCommonTelemetryShopClick) telemetryData_);
     }
-    if (shopView_ != null) {
+    if (telemetryDataCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getShopView());
+        .computeMessageSize(3, (POGOProtos.Rpc.PlatformCommonTelemetryShopView) telemetryData_);
     }
-    if (poiSubmissionTelemetry_ != null) {
+    if (telemetryDataCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getPoiSubmissionTelemetry());
+        .computeMessageSize(4, (POGOProtos.Rpc.PlatformPoiSubmissionTelemetry) telemetryData_);
     }
-    if (poiSubmissionPhotoUploadErrorTelemetry_ != null) {
+    if (telemetryDataCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getPoiSubmissionPhotoUploadErrorTelemetry());
+        .computeMessageSize(5, (POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_);
     }
-    if (logIn_ != null) {
+    if (telemetryDataCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getLogIn());
+        .computeMessageSize(6, (POGOProtos.Rpc.PlatformCommonTelemetryLogIn) telemetryData_);
     }
     if (serverData_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -462,36 +547,6 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformApprovedCommonTelemetryProto other = (POGOProtos.Rpc.PlatformApprovedCommonTelemetryProto) obj;
 
-    if (hasBootTime() != other.hasBootTime()) return false;
-    if (hasBootTime()) {
-      if (!getBootTime()
-          .equals(other.getBootTime())) return false;
-    }
-    if (hasShopClick() != other.hasShopClick()) return false;
-    if (hasShopClick()) {
-      if (!getShopClick()
-          .equals(other.getShopClick())) return false;
-    }
-    if (hasShopView() != other.hasShopView()) return false;
-    if (hasShopView()) {
-      if (!getShopView()
-          .equals(other.getShopView())) return false;
-    }
-    if (hasPoiSubmissionTelemetry() != other.hasPoiSubmissionTelemetry()) return false;
-    if (hasPoiSubmissionTelemetry()) {
-      if (!getPoiSubmissionTelemetry()
-          .equals(other.getPoiSubmissionTelemetry())) return false;
-    }
-    if (hasPoiSubmissionPhotoUploadErrorTelemetry() != other.hasPoiSubmissionPhotoUploadErrorTelemetry()) return false;
-    if (hasPoiSubmissionPhotoUploadErrorTelemetry()) {
-      if (!getPoiSubmissionPhotoUploadErrorTelemetry()
-          .equals(other.getPoiSubmissionPhotoUploadErrorTelemetry())) return false;
-    }
-    if (hasLogIn() != other.hasLogIn()) return false;
-    if (hasLogIn()) {
-      if (!getLogIn()
-          .equals(other.getLogIn())) return false;
-    }
     if (hasServerData() != other.hasServerData()) return false;
     if (hasServerData()) {
       if (!getServerData()
@@ -501,6 +556,35 @@ private static final long serialVersionUID = 0L;
     if (hasCommonFilters()) {
       if (!getCommonFilters()
           .equals(other.getCommonFilters())) return false;
+    }
+    if (!getTelemetryDataCase().equals(other.getTelemetryDataCase())) return false;
+    switch (telemetryDataCase_) {
+      case 1:
+        if (!getBootTime()
+            .equals(other.getBootTime())) return false;
+        break;
+      case 2:
+        if (!getShopClick()
+            .equals(other.getShopClick())) return false;
+        break;
+      case 3:
+        if (!getShopView()
+            .equals(other.getShopView())) return false;
+        break;
+      case 4:
+        if (!getPoiSubmissionTelemetry()
+            .equals(other.getPoiSubmissionTelemetry())) return false;
+        break;
+      case 5:
+        if (!getPoiSubmissionPhotoUploadErrorTelemetry()
+            .equals(other.getPoiSubmissionPhotoUploadErrorTelemetry())) return false;
+        break;
+      case 6:
+        if (!getLogIn()
+            .equals(other.getLogIn())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -513,30 +597,6 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasBootTime()) {
-      hash = (37 * hash) + BOOT_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBootTime().hashCode();
-    }
-    if (hasShopClick()) {
-      hash = (37 * hash) + SHOP_CLICK_FIELD_NUMBER;
-      hash = (53 * hash) + getShopClick().hashCode();
-    }
-    if (hasShopView()) {
-      hash = (37 * hash) + SHOP_VIEW_FIELD_NUMBER;
-      hash = (53 * hash) + getShopView().hashCode();
-    }
-    if (hasPoiSubmissionTelemetry()) {
-      hash = (37 * hash) + POI_SUBMISSION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getPoiSubmissionTelemetry().hashCode();
-    }
-    if (hasPoiSubmissionPhotoUploadErrorTelemetry()) {
-      hash = (37 * hash) + POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getPoiSubmissionPhotoUploadErrorTelemetry().hashCode();
-    }
-    if (hasLogIn()) {
-      hash = (37 * hash) + LOG_IN_FIELD_NUMBER;
-      hash = (53 * hash) + getLogIn().hashCode();
-    }
     if (hasServerData()) {
       hash = (37 * hash) + SERVER_DATA_FIELD_NUMBER;
       hash = (53 * hash) + getServerData().hashCode();
@@ -544,6 +604,34 @@ private static final long serialVersionUID = 0L;
     if (hasCommonFilters()) {
       hash = (37 * hash) + COMMON_FILTERS_FIELD_NUMBER;
       hash = (53 * hash) + getCommonFilters().hashCode();
+    }
+    switch (telemetryDataCase_) {
+      case 1:
+        hash = (37 * hash) + BOOT_TIME_FIELD_NUMBER;
+        hash = (53 * hash) + getBootTime().hashCode();
+        break;
+      case 2:
+        hash = (37 * hash) + SHOP_CLICK_FIELD_NUMBER;
+        hash = (53 * hash) + getShopClick().hashCode();
+        break;
+      case 3:
+        hash = (37 * hash) + SHOP_VIEW_FIELD_NUMBER;
+        hash = (53 * hash) + getShopView().hashCode();
+        break;
+      case 4:
+        hash = (37 * hash) + POI_SUBMISSION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getPoiSubmissionTelemetry().hashCode();
+        break;
+      case 5:
+        hash = (37 * hash) + POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getPoiSubmissionPhotoUploadErrorTelemetry().hashCode();
+        break;
+      case 6:
+        hash = (37 * hash) + LOG_IN_FIELD_NUMBER;
+        hash = (53 * hash) + getLogIn().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -678,42 +766,6 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (bootTimeBuilder_ == null) {
-        bootTime_ = null;
-      } else {
-        bootTime_ = null;
-        bootTimeBuilder_ = null;
-      }
-      if (shopClickBuilder_ == null) {
-        shopClick_ = null;
-      } else {
-        shopClick_ = null;
-        shopClickBuilder_ = null;
-      }
-      if (shopViewBuilder_ == null) {
-        shopView_ = null;
-      } else {
-        shopView_ = null;
-        shopViewBuilder_ = null;
-      }
-      if (poiSubmissionTelemetryBuilder_ == null) {
-        poiSubmissionTelemetry_ = null;
-      } else {
-        poiSubmissionTelemetry_ = null;
-        poiSubmissionTelemetryBuilder_ = null;
-      }
-      if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        poiSubmissionPhotoUploadErrorTelemetry_ = null;
-      } else {
-        poiSubmissionPhotoUploadErrorTelemetry_ = null;
-        poiSubmissionPhotoUploadErrorTelemetryBuilder_ = null;
-      }
-      if (logInBuilder_ == null) {
-        logIn_ = null;
-      } else {
-        logIn_ = null;
-        logInBuilder_ = null;
-      }
       if (serverDataBuilder_ == null) {
         serverData_ = null;
       } else {
@@ -726,6 +778,8 @@ private static final long serialVersionUID = 0L;
         commonFilters_ = null;
         commonFiltersBuilder_ = null;
       }
+      telemetryDataCase_ = 0;
+      telemetryData_ = null;
       return this;
     }
 
@@ -752,35 +806,47 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PlatformApprovedCommonTelemetryProto buildPartial() {
       POGOProtos.Rpc.PlatformApprovedCommonTelemetryProto result = new POGOProtos.Rpc.PlatformApprovedCommonTelemetryProto(this);
-      if (bootTimeBuilder_ == null) {
-        result.bootTime_ = bootTime_;
-      } else {
-        result.bootTime_ = bootTimeBuilder_.build();
+      if (telemetryDataCase_ == 1) {
+        if (bootTimeBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = bootTimeBuilder_.build();
+        }
       }
-      if (shopClickBuilder_ == null) {
-        result.shopClick_ = shopClick_;
-      } else {
-        result.shopClick_ = shopClickBuilder_.build();
+      if (telemetryDataCase_ == 2) {
+        if (shopClickBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = shopClickBuilder_.build();
+        }
       }
-      if (shopViewBuilder_ == null) {
-        result.shopView_ = shopView_;
-      } else {
-        result.shopView_ = shopViewBuilder_.build();
+      if (telemetryDataCase_ == 3) {
+        if (shopViewBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = shopViewBuilder_.build();
+        }
       }
-      if (poiSubmissionTelemetryBuilder_ == null) {
-        result.poiSubmissionTelemetry_ = poiSubmissionTelemetry_;
-      } else {
-        result.poiSubmissionTelemetry_ = poiSubmissionTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 4) {
+        if (poiSubmissionTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = poiSubmissionTelemetryBuilder_.build();
+        }
       }
-      if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        result.poiSubmissionPhotoUploadErrorTelemetry_ = poiSubmissionPhotoUploadErrorTelemetry_;
-      } else {
-        result.poiSubmissionPhotoUploadErrorTelemetry_ = poiSubmissionPhotoUploadErrorTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 5) {
+        if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = poiSubmissionPhotoUploadErrorTelemetryBuilder_.build();
+        }
       }
-      if (logInBuilder_ == null) {
-        result.logIn_ = logIn_;
-      } else {
-        result.logIn_ = logInBuilder_.build();
+      if (telemetryDataCase_ == 6) {
+        if (logInBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = logInBuilder_.build();
+        }
       }
       if (serverDataBuilder_ == null) {
         result.serverData_ = serverData_;
@@ -792,6 +858,7 @@ private static final long serialVersionUID = 0L;
       } else {
         result.commonFilters_ = commonFiltersBuilder_.build();
       }
+      result.telemetryDataCase_ = telemetryDataCase_;
       onBuilt();
       return result;
     }
@@ -840,29 +907,40 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformApprovedCommonTelemetryProto other) {
       if (other == POGOProtos.Rpc.PlatformApprovedCommonTelemetryProto.getDefaultInstance()) return this;
-      if (other.hasBootTime()) {
-        mergeBootTime(other.getBootTime());
-      }
-      if (other.hasShopClick()) {
-        mergeShopClick(other.getShopClick());
-      }
-      if (other.hasShopView()) {
-        mergeShopView(other.getShopView());
-      }
-      if (other.hasPoiSubmissionTelemetry()) {
-        mergePoiSubmissionTelemetry(other.getPoiSubmissionTelemetry());
-      }
-      if (other.hasPoiSubmissionPhotoUploadErrorTelemetry()) {
-        mergePoiSubmissionPhotoUploadErrorTelemetry(other.getPoiSubmissionPhotoUploadErrorTelemetry());
-      }
-      if (other.hasLogIn()) {
-        mergeLogIn(other.getLogIn());
-      }
       if (other.hasServerData()) {
         mergeServerData(other.getServerData());
       }
       if (other.hasCommonFilters()) {
         mergeCommonFilters(other.getCommonFilters());
+      }
+      switch (other.getTelemetryDataCase()) {
+        case BOOT_TIME: {
+          mergeBootTime(other.getBootTime());
+          break;
+        }
+        case SHOP_CLICK: {
+          mergeShopClick(other.getShopClick());
+          break;
+        }
+        case SHOP_VIEW: {
+          mergeShopView(other.getShopView());
+          break;
+        }
+        case POI_SUBMISSION_TELEMETRY: {
+          mergePoiSubmissionTelemetry(other.getPoiSubmissionTelemetry());
+          break;
+        }
+        case POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY: {
+          mergePoiSubmissionPhotoUploadErrorTelemetry(other.getPoiSubmissionPhotoUploadErrorTelemetry());
+          break;
+        }
+        case LOG_IN: {
+          mergeLogIn(other.getLogIn());
+          break;
+        }
+        case TELEMETRYDATA_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -892,8 +970,22 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int telemetryDataCase_ = 0;
+    private java.lang.Object telemetryData_;
+    public TelemetryDataCase
+        getTelemetryDataCase() {
+      return TelemetryDataCase.forNumber(
+          telemetryDataCase_);
+    }
 
-    private POGOProtos.Rpc.PlatformCommonTelemetryBootTime bootTime_;
+    public Builder clearTelemetryData() {
+      telemetryDataCase_ = 0;
+      telemetryData_ = null;
+      onChanged();
+      return this;
+    }
+
+
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformCommonTelemetryBootTime, POGOProtos.Rpc.PlatformCommonTelemetryBootTime.Builder, POGOProtos.Rpc.PlatformCommonTelemetryBootTimeOrBuilder> bootTimeBuilder_;
     /**
@@ -901,7 +993,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the bootTime field is set.
      */
     public boolean hasBootTime() {
-      return bootTimeBuilder_ != null || bootTime_ != null;
+      return telemetryDataCase_ == 1;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryBootTime boot_time = 1;</code>
@@ -909,9 +1001,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryBootTime getBootTime() {
       if (bootTimeBuilder_ == null) {
-        return bootTime_ == null ? POGOProtos.Rpc.PlatformCommonTelemetryBootTime.getDefaultInstance() : bootTime_;
+        if (telemetryDataCase_ == 1) {
+          return (POGOProtos.Rpc.PlatformCommonTelemetryBootTime) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryBootTime.getDefaultInstance();
       } else {
-        return bootTimeBuilder_.getMessage();
+        if (telemetryDataCase_ == 1) {
+          return bootTimeBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryBootTime.getDefaultInstance();
       }
     }
     /**
@@ -922,12 +1020,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        bootTime_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         bootTimeBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 1;
       return this;
     }
     /**
@@ -936,12 +1034,12 @@ private static final long serialVersionUID = 0L;
     public Builder setBootTime(
         POGOProtos.Rpc.PlatformCommonTelemetryBootTime.Builder builderForValue) {
       if (bootTimeBuilder_ == null) {
-        bootTime_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         bootTimeBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 1;
       return this;
     }
     /**
@@ -949,17 +1047,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeBootTime(POGOProtos.Rpc.PlatformCommonTelemetryBootTime value) {
       if (bootTimeBuilder_ == null) {
-        if (bootTime_ != null) {
-          bootTime_ =
-            POGOProtos.Rpc.PlatformCommonTelemetryBootTime.newBuilder(bootTime_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 1 &&
+            telemetryData_ != POGOProtos.Rpc.PlatformCommonTelemetryBootTime.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PlatformCommonTelemetryBootTime.newBuilder((POGOProtos.Rpc.PlatformCommonTelemetryBootTime) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          bootTime_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        bootTimeBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 1) {
+          bootTimeBuilder_.mergeFrom(value);
+        }
+        bootTimeBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 1;
       return this;
     }
     /**
@@ -967,32 +1069,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearBootTime() {
       if (bootTimeBuilder_ == null) {
-        bootTime_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 1) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        bootTime_ = null;
-        bootTimeBuilder_ = null;
+        if (telemetryDataCase_ == 1) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        bootTimeBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryBootTime boot_time = 1;</code>
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryBootTime.Builder getBootTimeBuilder() {
-      
-      onChanged();
       return getBootTimeFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryBootTime boot_time = 1;</code>
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryBootTimeOrBuilder getBootTimeOrBuilder() {
-      if (bootTimeBuilder_ != null) {
+      if ((telemetryDataCase_ == 1) && (bootTimeBuilder_ != null)) {
         return bootTimeBuilder_.getMessageOrBuilder();
       } else {
-        return bootTime_ == null ?
-            POGOProtos.Rpc.PlatformCommonTelemetryBootTime.getDefaultInstance() : bootTime_;
+        if (telemetryDataCase_ == 1) {
+          return (POGOProtos.Rpc.PlatformCommonTelemetryBootTime) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryBootTime.getDefaultInstance();
       }
     }
     /**
@@ -1002,17 +1109,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlatformCommonTelemetryBootTime, POGOProtos.Rpc.PlatformCommonTelemetryBootTime.Builder, POGOProtos.Rpc.PlatformCommonTelemetryBootTimeOrBuilder> 
         getBootTimeFieldBuilder() {
       if (bootTimeBuilder_ == null) {
+        if (!(telemetryDataCase_ == 1)) {
+          telemetryData_ = POGOProtos.Rpc.PlatformCommonTelemetryBootTime.getDefaultInstance();
+        }
         bootTimeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PlatformCommonTelemetryBootTime, POGOProtos.Rpc.PlatformCommonTelemetryBootTime.Builder, POGOProtos.Rpc.PlatformCommonTelemetryBootTimeOrBuilder>(
-                getBootTime(),
+                (POGOProtos.Rpc.PlatformCommonTelemetryBootTime) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        bootTime_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 1;
+      onChanged();;
       return bootTimeBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformCommonTelemetryShopClick shopClick_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformCommonTelemetryShopClick, POGOProtos.Rpc.PlatformCommonTelemetryShopClick.Builder, POGOProtos.Rpc.PlatformCommonTelemetryShopClickOrBuilder> shopClickBuilder_;
     /**
@@ -1020,7 +1131,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the shopClick field is set.
      */
     public boolean hasShopClick() {
-      return shopClickBuilder_ != null || shopClick_ != null;
+      return telemetryDataCase_ == 2;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopClick shop_click = 2;</code>
@@ -1028,9 +1139,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryShopClick getShopClick() {
       if (shopClickBuilder_ == null) {
-        return shopClick_ == null ? POGOProtos.Rpc.PlatformCommonTelemetryShopClick.getDefaultInstance() : shopClick_;
+        if (telemetryDataCase_ == 2) {
+          return (POGOProtos.Rpc.PlatformCommonTelemetryShopClick) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryShopClick.getDefaultInstance();
       } else {
-        return shopClickBuilder_.getMessage();
+        if (telemetryDataCase_ == 2) {
+          return shopClickBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryShopClick.getDefaultInstance();
       }
     }
     /**
@@ -1041,12 +1158,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        shopClick_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         shopClickBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 2;
       return this;
     }
     /**
@@ -1055,12 +1172,12 @@ private static final long serialVersionUID = 0L;
     public Builder setShopClick(
         POGOProtos.Rpc.PlatformCommonTelemetryShopClick.Builder builderForValue) {
       if (shopClickBuilder_ == null) {
-        shopClick_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         shopClickBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 2;
       return this;
     }
     /**
@@ -1068,17 +1185,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeShopClick(POGOProtos.Rpc.PlatformCommonTelemetryShopClick value) {
       if (shopClickBuilder_ == null) {
-        if (shopClick_ != null) {
-          shopClick_ =
-            POGOProtos.Rpc.PlatformCommonTelemetryShopClick.newBuilder(shopClick_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 2 &&
+            telemetryData_ != POGOProtos.Rpc.PlatformCommonTelemetryShopClick.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PlatformCommonTelemetryShopClick.newBuilder((POGOProtos.Rpc.PlatformCommonTelemetryShopClick) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          shopClick_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        shopClickBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 2) {
+          shopClickBuilder_.mergeFrom(value);
+        }
+        shopClickBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 2;
       return this;
     }
     /**
@@ -1086,32 +1207,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearShopClick() {
       if (shopClickBuilder_ == null) {
-        shopClick_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 2) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        shopClick_ = null;
-        shopClickBuilder_ = null;
+        if (telemetryDataCase_ == 2) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        shopClickBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopClick shop_click = 2;</code>
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryShopClick.Builder getShopClickBuilder() {
-      
-      onChanged();
       return getShopClickFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopClick shop_click = 2;</code>
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryShopClickOrBuilder getShopClickOrBuilder() {
-      if (shopClickBuilder_ != null) {
+      if ((telemetryDataCase_ == 2) && (shopClickBuilder_ != null)) {
         return shopClickBuilder_.getMessageOrBuilder();
       } else {
-        return shopClick_ == null ?
-            POGOProtos.Rpc.PlatformCommonTelemetryShopClick.getDefaultInstance() : shopClick_;
+        if (telemetryDataCase_ == 2) {
+          return (POGOProtos.Rpc.PlatformCommonTelemetryShopClick) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryShopClick.getDefaultInstance();
       }
     }
     /**
@@ -1121,17 +1247,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlatformCommonTelemetryShopClick, POGOProtos.Rpc.PlatformCommonTelemetryShopClick.Builder, POGOProtos.Rpc.PlatformCommonTelemetryShopClickOrBuilder> 
         getShopClickFieldBuilder() {
       if (shopClickBuilder_ == null) {
+        if (!(telemetryDataCase_ == 2)) {
+          telemetryData_ = POGOProtos.Rpc.PlatformCommonTelemetryShopClick.getDefaultInstance();
+        }
         shopClickBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PlatformCommonTelemetryShopClick, POGOProtos.Rpc.PlatformCommonTelemetryShopClick.Builder, POGOProtos.Rpc.PlatformCommonTelemetryShopClickOrBuilder>(
-                getShopClick(),
+                (POGOProtos.Rpc.PlatformCommonTelemetryShopClick) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        shopClick_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 2;
+      onChanged();;
       return shopClickBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformCommonTelemetryShopView shopView_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformCommonTelemetryShopView, POGOProtos.Rpc.PlatformCommonTelemetryShopView.Builder, POGOProtos.Rpc.PlatformCommonTelemetryShopViewOrBuilder> shopViewBuilder_;
     /**
@@ -1139,7 +1269,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the shopView field is set.
      */
     public boolean hasShopView() {
-      return shopViewBuilder_ != null || shopView_ != null;
+      return telemetryDataCase_ == 3;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopView shop_view = 3;</code>
@@ -1147,9 +1277,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryShopView getShopView() {
       if (shopViewBuilder_ == null) {
-        return shopView_ == null ? POGOProtos.Rpc.PlatformCommonTelemetryShopView.getDefaultInstance() : shopView_;
+        if (telemetryDataCase_ == 3) {
+          return (POGOProtos.Rpc.PlatformCommonTelemetryShopView) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryShopView.getDefaultInstance();
       } else {
-        return shopViewBuilder_.getMessage();
+        if (telemetryDataCase_ == 3) {
+          return shopViewBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryShopView.getDefaultInstance();
       }
     }
     /**
@@ -1160,12 +1296,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        shopView_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         shopViewBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 3;
       return this;
     }
     /**
@@ -1174,12 +1310,12 @@ private static final long serialVersionUID = 0L;
     public Builder setShopView(
         POGOProtos.Rpc.PlatformCommonTelemetryShopView.Builder builderForValue) {
       if (shopViewBuilder_ == null) {
-        shopView_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         shopViewBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 3;
       return this;
     }
     /**
@@ -1187,17 +1323,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeShopView(POGOProtos.Rpc.PlatformCommonTelemetryShopView value) {
       if (shopViewBuilder_ == null) {
-        if (shopView_ != null) {
-          shopView_ =
-            POGOProtos.Rpc.PlatformCommonTelemetryShopView.newBuilder(shopView_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 3 &&
+            telemetryData_ != POGOProtos.Rpc.PlatformCommonTelemetryShopView.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PlatformCommonTelemetryShopView.newBuilder((POGOProtos.Rpc.PlatformCommonTelemetryShopView) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          shopView_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        shopViewBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 3) {
+          shopViewBuilder_.mergeFrom(value);
+        }
+        shopViewBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 3;
       return this;
     }
     /**
@@ -1205,32 +1345,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearShopView() {
       if (shopViewBuilder_ == null) {
-        shopView_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 3) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        shopView_ = null;
-        shopViewBuilder_ = null;
+        if (telemetryDataCase_ == 3) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        shopViewBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopView shop_view = 3;</code>
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryShopView.Builder getShopViewBuilder() {
-      
-      onChanged();
       return getShopViewFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryShopView shop_view = 3;</code>
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryShopViewOrBuilder getShopViewOrBuilder() {
-      if (shopViewBuilder_ != null) {
+      if ((telemetryDataCase_ == 3) && (shopViewBuilder_ != null)) {
         return shopViewBuilder_.getMessageOrBuilder();
       } else {
-        return shopView_ == null ?
-            POGOProtos.Rpc.PlatformCommonTelemetryShopView.getDefaultInstance() : shopView_;
+        if (telemetryDataCase_ == 3) {
+          return (POGOProtos.Rpc.PlatformCommonTelemetryShopView) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryShopView.getDefaultInstance();
       }
     }
     /**
@@ -1240,17 +1385,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlatformCommonTelemetryShopView, POGOProtos.Rpc.PlatformCommonTelemetryShopView.Builder, POGOProtos.Rpc.PlatformCommonTelemetryShopViewOrBuilder> 
         getShopViewFieldBuilder() {
       if (shopViewBuilder_ == null) {
+        if (!(telemetryDataCase_ == 3)) {
+          telemetryData_ = POGOProtos.Rpc.PlatformCommonTelemetryShopView.getDefaultInstance();
+        }
         shopViewBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PlatformCommonTelemetryShopView, POGOProtos.Rpc.PlatformCommonTelemetryShopView.Builder, POGOProtos.Rpc.PlatformCommonTelemetryShopViewOrBuilder>(
-                getShopView(),
+                (POGOProtos.Rpc.PlatformCommonTelemetryShopView) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        shopView_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 3;
+      onChanged();;
       return shopViewBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformPoiSubmissionTelemetry poiSubmissionTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformPoiSubmissionTelemetry, POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.Builder, POGOProtos.Rpc.PlatformPoiSubmissionTelemetryOrBuilder> poiSubmissionTelemetryBuilder_;
     /**
@@ -1258,7 +1407,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the poiSubmissionTelemetry field is set.
      */
     public boolean hasPoiSubmissionTelemetry() {
-      return poiSubmissionTelemetryBuilder_ != null || poiSubmissionTelemetry_ != null;
+      return telemetryDataCase_ == 4;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformPoiSubmissionTelemetry poi_submission_telemetry = 4;</code>
@@ -1266,9 +1415,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PlatformPoiSubmissionTelemetry getPoiSubmissionTelemetry() {
       if (poiSubmissionTelemetryBuilder_ == null) {
-        return poiSubmissionTelemetry_ == null ? POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.getDefaultInstance() : poiSubmissionTelemetry_;
+        if (telemetryDataCase_ == 4) {
+          return (POGOProtos.Rpc.PlatformPoiSubmissionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.getDefaultInstance();
       } else {
-        return poiSubmissionTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 4) {
+          return poiSubmissionTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -1279,12 +1434,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        poiSubmissionTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         poiSubmissionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 4;
       return this;
     }
     /**
@@ -1293,12 +1448,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPoiSubmissionTelemetry(
         POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.Builder builderForValue) {
       if (poiSubmissionTelemetryBuilder_ == null) {
-        poiSubmissionTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         poiSubmissionTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 4;
       return this;
     }
     /**
@@ -1306,17 +1461,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePoiSubmissionTelemetry(POGOProtos.Rpc.PlatformPoiSubmissionTelemetry value) {
       if (poiSubmissionTelemetryBuilder_ == null) {
-        if (poiSubmissionTelemetry_ != null) {
-          poiSubmissionTelemetry_ =
-            POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.newBuilder(poiSubmissionTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 4 &&
+            telemetryData_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.newBuilder((POGOProtos.Rpc.PlatformPoiSubmissionTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          poiSubmissionTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        poiSubmissionTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 4) {
+          poiSubmissionTelemetryBuilder_.mergeFrom(value);
+        }
+        poiSubmissionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 4;
       return this;
     }
     /**
@@ -1324,32 +1483,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPoiSubmissionTelemetry() {
       if (poiSubmissionTelemetryBuilder_ == null) {
-        poiSubmissionTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 4) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        poiSubmissionTelemetry_ = null;
-        poiSubmissionTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 4) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        poiSubmissionTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformPoiSubmissionTelemetry poi_submission_telemetry = 4;</code>
      */
     public POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.Builder getPoiSubmissionTelemetryBuilder() {
-      
-      onChanged();
       return getPoiSubmissionTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformPoiSubmissionTelemetry poi_submission_telemetry = 4;</code>
      */
     public POGOProtos.Rpc.PlatformPoiSubmissionTelemetryOrBuilder getPoiSubmissionTelemetryOrBuilder() {
-      if (poiSubmissionTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 4) && (poiSubmissionTelemetryBuilder_ != null)) {
         return poiSubmissionTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return poiSubmissionTelemetry_ == null ?
-            POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.getDefaultInstance() : poiSubmissionTelemetry_;
+        if (telemetryDataCase_ == 4) {
+          return (POGOProtos.Rpc.PlatformPoiSubmissionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -1359,17 +1523,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlatformPoiSubmissionTelemetry, POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.Builder, POGOProtos.Rpc.PlatformPoiSubmissionTelemetryOrBuilder> 
         getPoiSubmissionTelemetryFieldBuilder() {
       if (poiSubmissionTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 4)) {
+          telemetryData_ = POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.getDefaultInstance();
+        }
         poiSubmissionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PlatformPoiSubmissionTelemetry, POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.Builder, POGOProtos.Rpc.PlatformPoiSubmissionTelemetryOrBuilder>(
-                getPoiSubmissionTelemetry(),
+                (POGOProtos.Rpc.PlatformPoiSubmissionTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        poiSubmissionTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 4;
+      onChanged();;
       return poiSubmissionTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry poiSubmissionPhotoUploadErrorTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry, POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.Builder, POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetryOrBuilder> poiSubmissionPhotoUploadErrorTelemetryBuilder_;
     /**
@@ -1377,7 +1545,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the poiSubmissionPhotoUploadErrorTelemetry field is set.
      */
     public boolean hasPoiSubmissionPhotoUploadErrorTelemetry() {
-      return poiSubmissionPhotoUploadErrorTelemetryBuilder_ != null || poiSubmissionPhotoUploadErrorTelemetry_ != null;
+      return telemetryDataCase_ == 5;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;</code>
@@ -1385,9 +1553,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry getPoiSubmissionPhotoUploadErrorTelemetry() {
       if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        return poiSubmissionPhotoUploadErrorTelemetry_ == null ? POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance() : poiSubmissionPhotoUploadErrorTelemetry_;
+        if (telemetryDataCase_ == 5) {
+          return (POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
       } else {
-        return poiSubmissionPhotoUploadErrorTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 5) {
+          return poiSubmissionPhotoUploadErrorTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -1398,12 +1572,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        poiSubmissionPhotoUploadErrorTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         poiSubmissionPhotoUploadErrorTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 5;
       return this;
     }
     /**
@@ -1412,12 +1586,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPoiSubmissionPhotoUploadErrorTelemetry(
         POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.Builder builderForValue) {
       if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        poiSubmissionPhotoUploadErrorTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         poiSubmissionPhotoUploadErrorTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 5;
       return this;
     }
     /**
@@ -1425,17 +1599,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePoiSubmissionPhotoUploadErrorTelemetry(POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry value) {
       if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        if (poiSubmissionPhotoUploadErrorTelemetry_ != null) {
-          poiSubmissionPhotoUploadErrorTelemetry_ =
-            POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.newBuilder(poiSubmissionPhotoUploadErrorTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 5 &&
+            telemetryData_ != POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.newBuilder((POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          poiSubmissionPhotoUploadErrorTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        poiSubmissionPhotoUploadErrorTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 5) {
+          poiSubmissionPhotoUploadErrorTelemetryBuilder_.mergeFrom(value);
+        }
+        poiSubmissionPhotoUploadErrorTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 5;
       return this;
     }
     /**
@@ -1443,32 +1621,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPoiSubmissionPhotoUploadErrorTelemetry() {
       if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        poiSubmissionPhotoUploadErrorTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 5) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        poiSubmissionPhotoUploadErrorTelemetry_ = null;
-        poiSubmissionPhotoUploadErrorTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 5) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        poiSubmissionPhotoUploadErrorTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;</code>
      */
     public POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.Builder getPoiSubmissionPhotoUploadErrorTelemetryBuilder() {
-      
-      onChanged();
       return getPoiSubmissionPhotoUploadErrorTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 5;</code>
      */
     public POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetryOrBuilder getPoiSubmissionPhotoUploadErrorTelemetryOrBuilder() {
-      if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 5) && (poiSubmissionPhotoUploadErrorTelemetryBuilder_ != null)) {
         return poiSubmissionPhotoUploadErrorTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return poiSubmissionPhotoUploadErrorTelemetry_ == null ?
-            POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance() : poiSubmissionPhotoUploadErrorTelemetry_;
+        if (telemetryDataCase_ == 5) {
+          return (POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -1478,17 +1661,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry, POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.Builder, POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetryOrBuilder> 
         getPoiSubmissionPhotoUploadErrorTelemetryFieldBuilder() {
       if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 5)) {
+          telemetryData_ = POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
+        }
         poiSubmissionPhotoUploadErrorTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry, POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry.Builder, POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetryOrBuilder>(
-                getPoiSubmissionPhotoUploadErrorTelemetry(),
+                (POGOProtos.Rpc.PlatformPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        poiSubmissionPhotoUploadErrorTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 5;
+      onChanged();;
       return poiSubmissionPhotoUploadErrorTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformCommonTelemetryLogIn logIn_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformCommonTelemetryLogIn, POGOProtos.Rpc.PlatformCommonTelemetryLogIn.Builder, POGOProtos.Rpc.PlatformCommonTelemetryLogInOrBuilder> logInBuilder_;
     /**
@@ -1496,7 +1683,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the logIn field is set.
      */
     public boolean hasLogIn() {
-      return logInBuilder_ != null || logIn_ != null;
+      return telemetryDataCase_ == 6;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryLogIn log_in = 6;</code>
@@ -1504,9 +1691,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryLogIn getLogIn() {
       if (logInBuilder_ == null) {
-        return logIn_ == null ? POGOProtos.Rpc.PlatformCommonTelemetryLogIn.getDefaultInstance() : logIn_;
+        if (telemetryDataCase_ == 6) {
+          return (POGOProtos.Rpc.PlatformCommonTelemetryLogIn) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryLogIn.getDefaultInstance();
       } else {
-        return logInBuilder_.getMessage();
+        if (telemetryDataCase_ == 6) {
+          return logInBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryLogIn.getDefaultInstance();
       }
     }
     /**
@@ -1517,12 +1710,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        logIn_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         logInBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 6;
       return this;
     }
     /**
@@ -1531,12 +1724,12 @@ private static final long serialVersionUID = 0L;
     public Builder setLogIn(
         POGOProtos.Rpc.PlatformCommonTelemetryLogIn.Builder builderForValue) {
       if (logInBuilder_ == null) {
-        logIn_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         logInBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 6;
       return this;
     }
     /**
@@ -1544,17 +1737,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeLogIn(POGOProtos.Rpc.PlatformCommonTelemetryLogIn value) {
       if (logInBuilder_ == null) {
-        if (logIn_ != null) {
-          logIn_ =
-            POGOProtos.Rpc.PlatformCommonTelemetryLogIn.newBuilder(logIn_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 6 &&
+            telemetryData_ != POGOProtos.Rpc.PlatformCommonTelemetryLogIn.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.PlatformCommonTelemetryLogIn.newBuilder((POGOProtos.Rpc.PlatformCommonTelemetryLogIn) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          logIn_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        logInBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 6) {
+          logInBuilder_.mergeFrom(value);
+        }
+        logInBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 6;
       return this;
     }
     /**
@@ -1562,32 +1759,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearLogIn() {
       if (logInBuilder_ == null) {
-        logIn_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 6) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        logIn_ = null;
-        logInBuilder_ = null;
+        if (telemetryDataCase_ == 6) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        logInBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryLogIn log_in = 6;</code>
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryLogIn.Builder getLogInBuilder() {
-      
-      onChanged();
       return getLogInFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformCommonTelemetryLogIn log_in = 6;</code>
      */
     public POGOProtos.Rpc.PlatformCommonTelemetryLogInOrBuilder getLogInOrBuilder() {
-      if (logInBuilder_ != null) {
+      if ((telemetryDataCase_ == 6) && (logInBuilder_ != null)) {
         return logInBuilder_.getMessageOrBuilder();
       } else {
-        return logIn_ == null ?
-            POGOProtos.Rpc.PlatformCommonTelemetryLogIn.getDefaultInstance() : logIn_;
+        if (telemetryDataCase_ == 6) {
+          return (POGOProtos.Rpc.PlatformCommonTelemetryLogIn) telemetryData_;
+        }
+        return POGOProtos.Rpc.PlatformCommonTelemetryLogIn.getDefaultInstance();
       }
     }
     /**
@@ -1597,13 +1799,18 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlatformCommonTelemetryLogIn, POGOProtos.Rpc.PlatformCommonTelemetryLogIn.Builder, POGOProtos.Rpc.PlatformCommonTelemetryLogInOrBuilder> 
         getLogInFieldBuilder() {
       if (logInBuilder_ == null) {
+        if (!(telemetryDataCase_ == 6)) {
+          telemetryData_ = POGOProtos.Rpc.PlatformCommonTelemetryLogIn.getDefaultInstance();
+        }
         logInBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PlatformCommonTelemetryLogIn, POGOProtos.Rpc.PlatformCommonTelemetryLogIn.Builder, POGOProtos.Rpc.PlatformCommonTelemetryLogInOrBuilder>(
-                getLogIn(),
+                (POGOProtos.Rpc.PlatformCommonTelemetryLogIn) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        logIn_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 6;
+      onChanged();;
       return logInBuilder_;
     }
 

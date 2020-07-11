@@ -16,7 +16,6 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PokemonEncounterRewardProto() {
-    pokemonId_ = 0;
   }
 
   @java.lang.Override
@@ -51,13 +50,13 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
             int rawValue = input.readEnum();
-
-            pokemonId_ = rawValue;
+            typeCase_ = 1;
+            type_ = rawValue;
             break;
           }
           case 16: {
-
-            useQuestPokemonEncounterDistribuition_ = input.readBool();
+            typeCase_ = 2;
+            type_ = input.readBool();
             break;
           }
           case 26: {
@@ -123,33 +122,82 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.PokemonEncounterRewardProto.class, POGOProtos.Rpc.PokemonEncounterRewardProto.Builder.class);
   }
 
+  private int typeCase_ = 0;
+  private java.lang.Object type_;
+  public enum TypeCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    POKEMON_ID(1),
+    USE_QUEST_POKEMON_ENCOUNTER_DISTRIBUITION(2),
+    TYPE_NOT_SET(0);
+    private final int value;
+    private TypeCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static TypeCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static TypeCase forNumber(int value) {
+      switch (value) {
+        case 1: return POKEMON_ID;
+        case 2: return USE_QUEST_POKEMON_ENCOUNTER_DISTRIBUITION;
+        case 0: return TYPE_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public TypeCase
+  getTypeCase() {
+    return TypeCase.forNumber(
+        typeCase_);
+  }
+
   public static final int POKEMON_ID_FIELD_NUMBER = 1;
-  private int pokemonId_;
   /**
    * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 1;</code>
    * @return The enum numeric value on the wire for pokemonId.
    */
   public int getPokemonIdValue() {
-    return pokemonId_;
+    if (typeCase_ == 1) {
+      return (java.lang.Integer) type_;
+    }
+    return 0;
   }
   /**
    * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 1;</code>
    * @return The pokemonId.
    */
   public POGOProtos.Rpc.HoloPokemonId getPokemonId() {
-    @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(pokemonId_);
-    return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+    if (typeCase_ == 1) {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
+          (java.lang.Integer) type_);
+      return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+    }
+    return POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET;
   }
 
   public static final int USE_QUEST_POKEMON_ENCOUNTER_DISTRIBUITION_FIELD_NUMBER = 2;
-  private boolean useQuestPokemonEncounterDistribuition_;
   /**
    * <code>bool use_quest_pokemon_encounter_distribuition = 2;</code>
    * @return The useQuestPokemonEncounterDistribuition.
    */
   public boolean getUseQuestPokemonEncounterDistribuition() {
-    return useQuestPokemonEncounterDistribuition_;
+    if (typeCase_ == 2) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int POKEMON_DISPLAY_FIELD_NUMBER = 3;
@@ -222,11 +270,12 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
-      output.writeEnum(1, pokemonId_);
+    if (typeCase_ == 1) {
+      output.writeEnum(1, ((java.lang.Integer) type_));
     }
-    if (useQuestPokemonEncounterDistribuition_ != false) {
-      output.writeBool(2, useQuestPokemonEncounterDistribuition_);
+    if (typeCase_ == 2) {
+      output.writeBool(
+          2, (boolean)((java.lang.Boolean) type_));
     }
     if (pokemonDisplay_ != null) {
       output.writeMessage(3, getPokemonDisplay());
@@ -246,13 +295,14 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (typeCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, pokemonId_);
+        .computeEnumSize(1, ((java.lang.Integer) type_));
     }
-    if (useQuestPokemonEncounterDistribuition_ != false) {
+    if (typeCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(2, useQuestPokemonEncounterDistribuition_);
+        .computeBoolSize(
+            2, (boolean)((java.lang.Boolean) type_));
     }
     if (pokemonDisplay_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -281,9 +331,6 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PokemonEncounterRewardProto other = (POGOProtos.Rpc.PokemonEncounterRewardProto) obj;
 
-    if (pokemonId_ != other.pokemonId_) return false;
-    if (getUseQuestPokemonEncounterDistribuition()
-        != other.getUseQuestPokemonEncounterDistribuition()) return false;
     if (hasPokemonDisplay() != other.hasPokemonDisplay()) return false;
     if (hasPokemonDisplay()) {
       if (!getPokemonDisplay()
@@ -296,6 +343,19 @@ private static final long serialVersionUID = 0L;
       if (!getDittoDisplay()
           .equals(other.getDittoDisplay())) return false;
     }
+    if (!getTypeCase().equals(other.getTypeCase())) return false;
+    switch (typeCase_) {
+      case 1:
+        if (getPokemonIdValue()
+            != other.getPokemonIdValue()) return false;
+        break;
+      case 2:
+        if (getUseQuestPokemonEncounterDistribuition()
+            != other.getUseQuestPokemonEncounterDistribuition()) return false;
+        break;
+      case 0:
+      default:
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -307,11 +367,6 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + POKEMON_ID_FIELD_NUMBER;
-    hash = (53 * hash) + pokemonId_;
-    hash = (37 * hash) + USE_QUEST_POKEMON_ENCOUNTER_DISTRIBUITION_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getUseQuestPokemonEncounterDistribuition());
     if (hasPokemonDisplay()) {
       hash = (37 * hash) + POKEMON_DISPLAY_FIELD_NUMBER;
       hash = (53 * hash) + getPokemonDisplay().hashCode();
@@ -322,6 +377,19 @@ private static final long serialVersionUID = 0L;
     if (hasDittoDisplay()) {
       hash = (37 * hash) + DITTO_DISPLAY_FIELD_NUMBER;
       hash = (53 * hash) + getDittoDisplay().hashCode();
+    }
+    switch (typeCase_) {
+      case 1:
+        hash = (37 * hash) + POKEMON_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getPokemonIdValue();
+        break;
+      case 2:
+        hash = (37 * hash) + USE_QUEST_POKEMON_ENCOUNTER_DISTRIBUITION_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getUseQuestPokemonEncounterDistribuition());
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -456,10 +524,6 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      pokemonId_ = 0;
-
-      useQuestPokemonEncounterDistribuition_ = false;
-
       if (pokemonDisplayBuilder_ == null) {
         pokemonDisplay_ = null;
       } else {
@@ -474,6 +538,8 @@ private static final long serialVersionUID = 0L;
         dittoDisplay_ = null;
         dittoDisplayBuilder_ = null;
       }
+      typeCase_ = 0;
+      type_ = null;
       return this;
     }
 
@@ -500,8 +566,12 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PokemonEncounterRewardProto buildPartial() {
       POGOProtos.Rpc.PokemonEncounterRewardProto result = new POGOProtos.Rpc.PokemonEncounterRewardProto(this);
-      result.pokemonId_ = pokemonId_;
-      result.useQuestPokemonEncounterDistribuition_ = useQuestPokemonEncounterDistribuition_;
+      if (typeCase_ == 1) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 2) {
+        result.type_ = type_;
+      }
       if (pokemonDisplayBuilder_ == null) {
         result.pokemonDisplay_ = pokemonDisplay_;
       } else {
@@ -513,6 +583,7 @@ private static final long serialVersionUID = 0L;
       } else {
         result.dittoDisplay_ = dittoDisplayBuilder_.build();
       }
+      result.typeCase_ = typeCase_;
       onBuilt();
       return result;
     }
@@ -561,12 +632,6 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PokemonEncounterRewardProto other) {
       if (other == POGOProtos.Rpc.PokemonEncounterRewardProto.getDefaultInstance()) return this;
-      if (other.pokemonId_ != 0) {
-        setPokemonIdValue(other.getPokemonIdValue());
-      }
-      if (other.getUseQuestPokemonEncounterDistribuition() != false) {
-        setUseQuestPokemonEncounterDistribuition(other.getUseQuestPokemonEncounterDistribuition());
-      }
       if (other.hasPokemonDisplay()) {
         mergePokemonDisplay(other.getPokemonDisplay());
       }
@@ -575,6 +640,19 @@ private static final long serialVersionUID = 0L;
       }
       if (other.hasDittoDisplay()) {
         mergeDittoDisplay(other.getDittoDisplay());
+      }
+      switch (other.getTypeCase()) {
+        case POKEMON_ID: {
+          setPokemonIdValue(other.getPokemonIdValue());
+          break;
+        }
+        case USE_QUEST_POKEMON_ENCOUNTER_DISTRIBUITION: {
+          setUseQuestPokemonEncounterDistribuition(other.getUseQuestPokemonEncounterDistribuition());
+          break;
+        }
+        case TYPE_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -604,14 +682,31 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int typeCase_ = 0;
+    private java.lang.Object type_;
+    public TypeCase
+        getTypeCase() {
+      return TypeCase.forNumber(
+          typeCase_);
+    }
 
-    private int pokemonId_ = 0;
+    public Builder clearType() {
+      typeCase_ = 0;
+      type_ = null;
+      onChanged();
+      return this;
+    }
+
+
     /**
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 1;</code>
      * @return The enum numeric value on the wire for pokemonId.
      */
     public int getPokemonIdValue() {
-      return pokemonId_;
+      if (typeCase_ == 1) {
+        return ((java.lang.Integer) type_).intValue();
+      }
+      return 0;
     }
     /**
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 1;</code>
@@ -619,7 +714,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokemonIdValue(int value) {
-      pokemonId_ = value;
+      typeCase_ = 1;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -628,9 +724,13 @@ private static final long serialVersionUID = 0L;
      * @return The pokemonId.
      */
     public POGOProtos.Rpc.HoloPokemonId getPokemonId() {
-      @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(pokemonId_);
-      return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+      if (typeCase_ == 1) {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
+            (java.lang.Integer) type_);
+        return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+      }
+      return POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET;
     }
     /**
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_id = 1;</code>
@@ -641,8 +741,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
-      pokemonId_ = value.getNumber();
+      typeCase_ = 1;
+      type_ = value.getNumber();
       onChanged();
       return this;
     }
@@ -651,19 +751,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokemonId() {
-      
-      pokemonId_ = 0;
-      onChanged();
+      if (typeCase_ == 1) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean useQuestPokemonEncounterDistribuition_ ;
     /**
      * <code>bool use_quest_pokemon_encounter_distribuition = 2;</code>
      * @return The useQuestPokemonEncounterDistribuition.
      */
     public boolean getUseQuestPokemonEncounterDistribuition() {
-      return useQuestPokemonEncounterDistribuition_;
+      if (typeCase_ == 2) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool use_quest_pokemon_encounter_distribuition = 2;</code>
@@ -671,8 +775,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setUseQuestPokemonEncounterDistribuition(boolean value) {
-      
-      useQuestPokemonEncounterDistribuition_ = value;
+      typeCase_ = 2;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -681,9 +785,11 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearUseQuestPokemonEncounterDistribuition() {
-      
-      useQuestPokemonEncounterDistribuition_ = false;
-      onChanged();
+      if (typeCase_ == 2) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 

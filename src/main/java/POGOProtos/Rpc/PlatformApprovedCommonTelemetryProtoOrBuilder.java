@@ -126,4 +126,6 @@ public interface PlatformApprovedCommonTelemetryProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.PlatformClientTelemetryCommonFilterProto common_filters = 8;</code>
    */
   POGOProtos.Rpc.PlatformClientTelemetryCommonFilterProtoOrBuilder getCommonFiltersOrBuilder();
+
+  public POGOProtos.Rpc.PlatformApprovedCommonTelemetryProto.TelemetryDataCase getTelemetryDataCase();
 }

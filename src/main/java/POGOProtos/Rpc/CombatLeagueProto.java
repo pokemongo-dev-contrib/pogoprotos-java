@@ -1968,17 +1968,6 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.ConditionType type = 1;</code>
-     * @return The enum numeric value on the wire for type.
-     */
-    int getTypeValue();
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.ConditionType type = 1;</code>
-     * @return The type.
-     */
-    POGOProtos.Rpc.CombatLeagueProto.ConditionType getType();
-
-    /**
      * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
      * @return Whether the withPokemonCpLimit field is set.
      */
@@ -2067,6 +2056,19 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
      */
     POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder();
+
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.ConditionType type = 1;</code>
+     * @return The enum numeric value on the wire for type.
+     */
+    int getTypeValue();
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.ConditionType type = 1;</code>
+     * @return The type.
+     */
+    POGOProtos.Rpc.CombatLeagueProto.ConditionType getType();
+
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonConditionProto.ConditionCase getConditionCase();
   }
   /**
    * Protobuf type {@code POGOProtos.Rpc.CombatLeagueProto.PokemonConditionProto}
@@ -2122,80 +2124,86 @@ private static final long serialVersionUID = 0L;
             }
             case 18: {
               POGOProtos.Rpc.WithPokemonCpLimitProto.Builder subBuilder = null;
-              if (withPokemonCpLimit_ != null) {
-                subBuilder = withPokemonCpLimit_.toBuilder();
+              if (conditionCase_ == 2) {
+                subBuilder = ((POGOProtos.Rpc.WithPokemonCpLimitProto) condition_).toBuilder();
               }
-              withPokemonCpLimit_ = input.readMessage(POGOProtos.Rpc.WithPokemonCpLimitProto.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.WithPokemonCpLimitProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(withPokemonCpLimit_);
-                withPokemonCpLimit_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.WithPokemonCpLimitProto) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 2;
               break;
             }
             case 26: {
               POGOProtos.Rpc.WithPokemonTypeProto.Builder subBuilder = null;
-              if (withPokemonType_ != null) {
-                subBuilder = withPokemonType_.toBuilder();
+              if (conditionCase_ == 3) {
+                subBuilder = ((POGOProtos.Rpc.WithPokemonTypeProto) condition_).toBuilder();
               }
-              withPokemonType_ = input.readMessage(POGOProtos.Rpc.WithPokemonTypeProto.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.WithPokemonTypeProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(withPokemonType_);
-                withPokemonType_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.WithPokemonTypeProto) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 3;
               break;
             }
             case 34: {
               POGOProtos.Rpc.WithPokemonCategoryProto.Builder subBuilder = null;
-              if (withPokemonCategory_ != null) {
-                subBuilder = withPokemonCategory_.toBuilder();
+              if (conditionCase_ == 4) {
+                subBuilder = ((POGOProtos.Rpc.WithPokemonCategoryProto) condition_).toBuilder();
               }
-              withPokemonCategory_ = input.readMessage(POGOProtos.Rpc.WithPokemonCategoryProto.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.WithPokemonCategoryProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(withPokemonCategory_);
-                withPokemonCategory_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.WithPokemonCategoryProto) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 4;
               break;
             }
             case 42: {
               POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder subBuilder = null;
-              if (pokemonWhitelist_ != null) {
-                subBuilder = pokemonWhitelist_.toBuilder();
+              if (conditionCase_ == 5) {
+                subBuilder = ((POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_).toBuilder();
               }
-              pokemonWhitelist_ = input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(pokemonWhitelist_);
-                pokemonWhitelist_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 5;
               break;
             }
             case 50: {
               POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder subBuilder = null;
-              if (pokemonBanlist_ != null) {
-                subBuilder = pokemonBanlist_.toBuilder();
+              if (conditionCase_ == 6) {
+                subBuilder = ((POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_).toBuilder();
               }
-              pokemonBanlist_ = input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(pokemonBanlist_);
-                pokemonBanlist_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 6;
               break;
             }
             case 58: {
               POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder subBuilder = null;
-              if (pokemonCaughtTimestamp_ != null) {
-                subBuilder = pokemonCaughtTimestamp_.toBuilder();
+              if (conditionCase_ == 7) {
+                subBuilder = ((POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_).toBuilder();
               }
-              pokemonCaughtTimestamp_ = input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(pokemonCaughtTimestamp_);
-                pokemonCaughtTimestamp_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 7;
               break;
             }
             default: {
@@ -2230,6 +2238,223 @@ private static final long serialVersionUID = 0L;
               POGOProtos.Rpc.CombatLeagueProto.PokemonConditionProto.class, POGOProtos.Rpc.CombatLeagueProto.PokemonConditionProto.Builder.class);
     }
 
+    private int conditionCase_ = 0;
+    private java.lang.Object condition_;
+    public enum ConditionCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      WITH_POKEMON_CP_LIMIT(2),
+      WITH_POKEMON_TYPE(3),
+      WITH_POKEMON_CATEGORY(4),
+      POKEMON_WHITELIST(5),
+      POKEMON_BANLIST(6),
+      POKEMON_CAUGHT_TIMESTAMP(7),
+      CONDITION_NOT_SET(0);
+      private final int value;
+      private ConditionCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ConditionCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static ConditionCase forNumber(int value) {
+        switch (value) {
+          case 2: return WITH_POKEMON_CP_LIMIT;
+          case 3: return WITH_POKEMON_TYPE;
+          case 4: return WITH_POKEMON_CATEGORY;
+          case 5: return POKEMON_WHITELIST;
+          case 6: return POKEMON_BANLIST;
+          case 7: return POKEMON_CAUGHT_TIMESTAMP;
+          case 0: return CONDITION_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public ConditionCase
+    getConditionCase() {
+      return ConditionCase.forNumber(
+          conditionCase_);
+    }
+
+    public static final int WITH_POKEMON_CP_LIMIT_FIELD_NUMBER = 2;
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+     * @return Whether the withPokemonCpLimit field is set.
+     */
+    public boolean hasWithPokemonCpLimit() {
+      return conditionCase_ == 2;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+     * @return The withPokemonCpLimit.
+     */
+    public POGOProtos.Rpc.WithPokemonCpLimitProto getWithPokemonCpLimit() {
+      if (conditionCase_ == 2) {
+         return (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder getWithPokemonCpLimitOrBuilder() {
+      if (conditionCase_ == 2) {
+         return (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+    }
+
+    public static final int WITH_POKEMON_TYPE_FIELD_NUMBER = 3;
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+     * @return Whether the withPokemonType field is set.
+     */
+    public boolean hasWithPokemonType() {
+      return conditionCase_ == 3;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+     * @return The withPokemonType.
+     */
+    public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
+      if (conditionCase_ == 3) {
+         return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
+      if (conditionCase_ == 3) {
+         return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+    }
+
+    public static final int WITH_POKEMON_CATEGORY_FIELD_NUMBER = 4;
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+     * @return Whether the withPokemonCategory field is set.
+     */
+    public boolean hasWithPokemonCategory() {
+      return conditionCase_ == 4;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+     * @return The withPokemonCategory.
+     */
+    public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
+      if (conditionCase_ == 4) {
+         return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
+      if (conditionCase_ == 4) {
+         return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+    }
+
+    public static final int POKEMON_WHITELIST_FIELD_NUMBER = 5;
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+     * @return Whether the pokemonWhitelist field is set.
+     */
+    public boolean hasPokemonWhitelist() {
+      return conditionCase_ == 5;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+     * @return The pokemonWhitelist.
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist getPokemonWhitelist() {
+      if (conditionCase_ == 5) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder getPokemonWhitelistOrBuilder() {
+      if (conditionCase_ == 5) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+    }
+
+    public static final int POKEMON_BANLIST_FIELD_NUMBER = 6;
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+     * @return Whether the pokemonBanlist field is set.
+     */
+    public boolean hasPokemonBanlist() {
+      return conditionCase_ == 6;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+     * @return The pokemonBanlist.
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist getPokemonBanlist() {
+      if (conditionCase_ == 6) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder getPokemonBanlistOrBuilder() {
+      if (conditionCase_ == 6) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+    }
+
+    public static final int POKEMON_CAUGHT_TIMESTAMP_FIELD_NUMBER = 7;
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     * @return Whether the pokemonCaughtTimestamp field is set.
+     */
+    public boolean hasPokemonCaughtTimestamp() {
+      return conditionCase_ == 7;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     * @return The pokemonCaughtTimestamp.
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp getPokemonCaughtTimestamp() {
+      if (conditionCase_ == 7) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder() {
+      if (conditionCase_ == 7) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+    }
+
     public static final int TYPE_FIELD_NUMBER = 1;
     private int type_;
     /**
@@ -2249,144 +2474,6 @@ private static final long serialVersionUID = 0L;
       return result == null ? POGOProtos.Rpc.CombatLeagueProto.ConditionType.UNRECOGNIZED : result;
     }
 
-    public static final int WITH_POKEMON_CP_LIMIT_FIELD_NUMBER = 2;
-    private POGOProtos.Rpc.WithPokemonCpLimitProto withPokemonCpLimit_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-     * @return Whether the withPokemonCpLimit field is set.
-     */
-    public boolean hasWithPokemonCpLimit() {
-      return withPokemonCpLimit_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-     * @return The withPokemonCpLimit.
-     */
-    public POGOProtos.Rpc.WithPokemonCpLimitProto getWithPokemonCpLimit() {
-      return withPokemonCpLimit_ == null ? POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance() : withPokemonCpLimit_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder getWithPokemonCpLimitOrBuilder() {
-      return getWithPokemonCpLimit();
-    }
-
-    public static final int WITH_POKEMON_TYPE_FIELD_NUMBER = 3;
-    private POGOProtos.Rpc.WithPokemonTypeProto withPokemonType_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-     * @return Whether the withPokemonType field is set.
-     */
-    public boolean hasWithPokemonType() {
-      return withPokemonType_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-     * @return The withPokemonType.
-     */
-    public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
-      return withPokemonType_ == null ? POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance() : withPokemonType_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
-      return getWithPokemonType();
-    }
-
-    public static final int WITH_POKEMON_CATEGORY_FIELD_NUMBER = 4;
-    private POGOProtos.Rpc.WithPokemonCategoryProto withPokemonCategory_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-     * @return Whether the withPokemonCategory field is set.
-     */
-    public boolean hasWithPokemonCategory() {
-      return withPokemonCategory_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-     * @return The withPokemonCategory.
-     */
-    public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
-      return withPokemonCategory_ == null ? POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance() : withPokemonCategory_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
-      return getWithPokemonCategory();
-    }
-
-    public static final int POKEMON_WHITELIST_FIELD_NUMBER = 5;
-    private POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemonWhitelist_;
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-     * @return Whether the pokemonWhitelist field is set.
-     */
-    public boolean hasPokemonWhitelist() {
-      return pokemonWhitelist_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-     * @return The pokemonWhitelist.
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist getPokemonWhitelist() {
-      return pokemonWhitelist_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance() : pokemonWhitelist_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder getPokemonWhitelistOrBuilder() {
-      return getPokemonWhitelist();
-    }
-
-    public static final int POKEMON_BANLIST_FIELD_NUMBER = 6;
-    private POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemonBanlist_;
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-     * @return Whether the pokemonBanlist field is set.
-     */
-    public boolean hasPokemonBanlist() {
-      return pokemonBanlist_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-     * @return The pokemonBanlist.
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist getPokemonBanlist() {
-      return pokemonBanlist_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance() : pokemonBanlist_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder getPokemonBanlistOrBuilder() {
-      return getPokemonBanlist();
-    }
-
-    public static final int POKEMON_CAUGHT_TIMESTAMP_FIELD_NUMBER = 7;
-    private POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemonCaughtTimestamp_;
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-     * @return Whether the pokemonCaughtTimestamp field is set.
-     */
-    public boolean hasPokemonCaughtTimestamp() {
-      return pokemonCaughtTimestamp_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-     * @return The pokemonCaughtTimestamp.
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp getPokemonCaughtTimestamp() {
-      return pokemonCaughtTimestamp_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance() : pokemonCaughtTimestamp_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder() {
-      return getPokemonCaughtTimestamp();
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -2404,23 +2491,23 @@ private static final long serialVersionUID = 0L;
       if (type_ != POGOProtos.Rpc.CombatLeagueProto.ConditionType.UNSET.getNumber()) {
         output.writeEnum(1, type_);
       }
-      if (withPokemonCpLimit_ != null) {
-        output.writeMessage(2, getWithPokemonCpLimit());
+      if (conditionCase_ == 2) {
+        output.writeMessage(2, (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_);
       }
-      if (withPokemonType_ != null) {
-        output.writeMessage(3, getWithPokemonType());
+      if (conditionCase_ == 3) {
+        output.writeMessage(3, (POGOProtos.Rpc.WithPokemonTypeProto) condition_);
       }
-      if (withPokemonCategory_ != null) {
-        output.writeMessage(4, getWithPokemonCategory());
+      if (conditionCase_ == 4) {
+        output.writeMessage(4, (POGOProtos.Rpc.WithPokemonCategoryProto) condition_);
       }
-      if (pokemonWhitelist_ != null) {
-        output.writeMessage(5, getPokemonWhitelist());
+      if (conditionCase_ == 5) {
+        output.writeMessage(5, (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_);
       }
-      if (pokemonBanlist_ != null) {
-        output.writeMessage(6, getPokemonBanlist());
+      if (conditionCase_ == 6) {
+        output.writeMessage(6, (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_);
       }
-      if (pokemonCaughtTimestamp_ != null) {
-        output.writeMessage(7, getPokemonCaughtTimestamp());
+      if (conditionCase_ == 7) {
+        output.writeMessage(7, (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_);
       }
       unknownFields.writeTo(output);
     }
@@ -2435,29 +2522,29 @@ private static final long serialVersionUID = 0L;
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, type_);
       }
-      if (withPokemonCpLimit_ != null) {
+      if (conditionCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getWithPokemonCpLimit());
+          .computeMessageSize(2, (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_);
       }
-      if (withPokemonType_ != null) {
+      if (conditionCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getWithPokemonType());
+          .computeMessageSize(3, (POGOProtos.Rpc.WithPokemonTypeProto) condition_);
       }
-      if (withPokemonCategory_ != null) {
+      if (conditionCase_ == 4) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getWithPokemonCategory());
+          .computeMessageSize(4, (POGOProtos.Rpc.WithPokemonCategoryProto) condition_);
       }
-      if (pokemonWhitelist_ != null) {
+      if (conditionCase_ == 5) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getPokemonWhitelist());
+          .computeMessageSize(5, (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_);
       }
-      if (pokemonBanlist_ != null) {
+      if (conditionCase_ == 6) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getPokemonBanlist());
+          .computeMessageSize(6, (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_);
       }
-      if (pokemonCaughtTimestamp_ != null) {
+      if (conditionCase_ == 7) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getPokemonCaughtTimestamp());
+          .computeMessageSize(7, (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2475,35 +2562,34 @@ private static final long serialVersionUID = 0L;
       POGOProtos.Rpc.CombatLeagueProto.PokemonConditionProto other = (POGOProtos.Rpc.CombatLeagueProto.PokemonConditionProto) obj;
 
       if (type_ != other.type_) return false;
-      if (hasWithPokemonCpLimit() != other.hasWithPokemonCpLimit()) return false;
-      if (hasWithPokemonCpLimit()) {
-        if (!getWithPokemonCpLimit()
-            .equals(other.getWithPokemonCpLimit())) return false;
-      }
-      if (hasWithPokemonType() != other.hasWithPokemonType()) return false;
-      if (hasWithPokemonType()) {
-        if (!getWithPokemonType()
-            .equals(other.getWithPokemonType())) return false;
-      }
-      if (hasWithPokemonCategory() != other.hasWithPokemonCategory()) return false;
-      if (hasWithPokemonCategory()) {
-        if (!getWithPokemonCategory()
-            .equals(other.getWithPokemonCategory())) return false;
-      }
-      if (hasPokemonWhitelist() != other.hasPokemonWhitelist()) return false;
-      if (hasPokemonWhitelist()) {
-        if (!getPokemonWhitelist()
-            .equals(other.getPokemonWhitelist())) return false;
-      }
-      if (hasPokemonBanlist() != other.hasPokemonBanlist()) return false;
-      if (hasPokemonBanlist()) {
-        if (!getPokemonBanlist()
-            .equals(other.getPokemonBanlist())) return false;
-      }
-      if (hasPokemonCaughtTimestamp() != other.hasPokemonCaughtTimestamp()) return false;
-      if (hasPokemonCaughtTimestamp()) {
-        if (!getPokemonCaughtTimestamp()
-            .equals(other.getPokemonCaughtTimestamp())) return false;
+      if (!getConditionCase().equals(other.getConditionCase())) return false;
+      switch (conditionCase_) {
+        case 2:
+          if (!getWithPokemonCpLimit()
+              .equals(other.getWithPokemonCpLimit())) return false;
+          break;
+        case 3:
+          if (!getWithPokemonType()
+              .equals(other.getWithPokemonType())) return false;
+          break;
+        case 4:
+          if (!getWithPokemonCategory()
+              .equals(other.getWithPokemonCategory())) return false;
+          break;
+        case 5:
+          if (!getPokemonWhitelist()
+              .equals(other.getPokemonWhitelist())) return false;
+          break;
+        case 6:
+          if (!getPokemonBanlist()
+              .equals(other.getPokemonBanlist())) return false;
+          break;
+        case 7:
+          if (!getPokemonCaughtTimestamp()
+              .equals(other.getPokemonCaughtTimestamp())) return false;
+          break;
+        case 0:
+        default:
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -2518,29 +2604,33 @@ private static final long serialVersionUID = 0L;
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + type_;
-      if (hasWithPokemonCpLimit()) {
-        hash = (37 * hash) + WITH_POKEMON_CP_LIMIT_FIELD_NUMBER;
-        hash = (53 * hash) + getWithPokemonCpLimit().hashCode();
-      }
-      if (hasWithPokemonType()) {
-        hash = (37 * hash) + WITH_POKEMON_TYPE_FIELD_NUMBER;
-        hash = (53 * hash) + getWithPokemonType().hashCode();
-      }
-      if (hasWithPokemonCategory()) {
-        hash = (37 * hash) + WITH_POKEMON_CATEGORY_FIELD_NUMBER;
-        hash = (53 * hash) + getWithPokemonCategory().hashCode();
-      }
-      if (hasPokemonWhitelist()) {
-        hash = (37 * hash) + POKEMON_WHITELIST_FIELD_NUMBER;
-        hash = (53 * hash) + getPokemonWhitelist().hashCode();
-      }
-      if (hasPokemonBanlist()) {
-        hash = (37 * hash) + POKEMON_BANLIST_FIELD_NUMBER;
-        hash = (53 * hash) + getPokemonBanlist().hashCode();
-      }
-      if (hasPokemonCaughtTimestamp()) {
-        hash = (37 * hash) + POKEMON_CAUGHT_TIMESTAMP_FIELD_NUMBER;
-        hash = (53 * hash) + getPokemonCaughtTimestamp().hashCode();
+      switch (conditionCase_) {
+        case 2:
+          hash = (37 * hash) + WITH_POKEMON_CP_LIMIT_FIELD_NUMBER;
+          hash = (53 * hash) + getWithPokemonCpLimit().hashCode();
+          break;
+        case 3:
+          hash = (37 * hash) + WITH_POKEMON_TYPE_FIELD_NUMBER;
+          hash = (53 * hash) + getWithPokemonType().hashCode();
+          break;
+        case 4:
+          hash = (37 * hash) + WITH_POKEMON_CATEGORY_FIELD_NUMBER;
+          hash = (53 * hash) + getWithPokemonCategory().hashCode();
+          break;
+        case 5:
+          hash = (37 * hash) + POKEMON_WHITELIST_FIELD_NUMBER;
+          hash = (53 * hash) + getPokemonWhitelist().hashCode();
+          break;
+        case 6:
+          hash = (37 * hash) + POKEMON_BANLIST_FIELD_NUMBER;
+          hash = (53 * hash) + getPokemonBanlist().hashCode();
+          break;
+        case 7:
+          hash = (37 * hash) + POKEMON_CAUGHT_TIMESTAMP_FIELD_NUMBER;
+          hash = (53 * hash) + getPokemonCaughtTimestamp().hashCode();
+          break;
+        case 0:
+        default:
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -2677,42 +2767,8 @@ private static final long serialVersionUID = 0L;
         super.clear();
         type_ = 0;
 
-        if (withPokemonCpLimitBuilder_ == null) {
-          withPokemonCpLimit_ = null;
-        } else {
-          withPokemonCpLimit_ = null;
-          withPokemonCpLimitBuilder_ = null;
-        }
-        if (withPokemonTypeBuilder_ == null) {
-          withPokemonType_ = null;
-        } else {
-          withPokemonType_ = null;
-          withPokemonTypeBuilder_ = null;
-        }
-        if (withPokemonCategoryBuilder_ == null) {
-          withPokemonCategory_ = null;
-        } else {
-          withPokemonCategory_ = null;
-          withPokemonCategoryBuilder_ = null;
-        }
-        if (pokemonWhitelistBuilder_ == null) {
-          pokemonWhitelist_ = null;
-        } else {
-          pokemonWhitelist_ = null;
-          pokemonWhitelistBuilder_ = null;
-        }
-        if (pokemonBanlistBuilder_ == null) {
-          pokemonBanlist_ = null;
-        } else {
-          pokemonBanlist_ = null;
-          pokemonBanlistBuilder_ = null;
-        }
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          pokemonCaughtTimestamp_ = null;
-        } else {
-          pokemonCaughtTimestamp_ = null;
-          pokemonCaughtTimestampBuilder_ = null;
-        }
+        conditionCase_ = 0;
+        condition_ = null;
         return this;
       }
 
@@ -2739,37 +2795,50 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public POGOProtos.Rpc.CombatLeagueProto.PokemonConditionProto buildPartial() {
         POGOProtos.Rpc.CombatLeagueProto.PokemonConditionProto result = new POGOProtos.Rpc.CombatLeagueProto.PokemonConditionProto(this);
+        if (conditionCase_ == 2) {
+          if (withPokemonCpLimitBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = withPokemonCpLimitBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 3) {
+          if (withPokemonTypeBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = withPokemonTypeBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 4) {
+          if (withPokemonCategoryBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = withPokemonCategoryBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 5) {
+          if (pokemonWhitelistBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = pokemonWhitelistBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 6) {
+          if (pokemonBanlistBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = pokemonBanlistBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 7) {
+          if (pokemonCaughtTimestampBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = pokemonCaughtTimestampBuilder_.build();
+          }
+        }
         result.type_ = type_;
-        if (withPokemonCpLimitBuilder_ == null) {
-          result.withPokemonCpLimit_ = withPokemonCpLimit_;
-        } else {
-          result.withPokemonCpLimit_ = withPokemonCpLimitBuilder_.build();
-        }
-        if (withPokemonTypeBuilder_ == null) {
-          result.withPokemonType_ = withPokemonType_;
-        } else {
-          result.withPokemonType_ = withPokemonTypeBuilder_.build();
-        }
-        if (withPokemonCategoryBuilder_ == null) {
-          result.withPokemonCategory_ = withPokemonCategory_;
-        } else {
-          result.withPokemonCategory_ = withPokemonCategoryBuilder_.build();
-        }
-        if (pokemonWhitelistBuilder_ == null) {
-          result.pokemonWhitelist_ = pokemonWhitelist_;
-        } else {
-          result.pokemonWhitelist_ = pokemonWhitelistBuilder_.build();
-        }
-        if (pokemonBanlistBuilder_ == null) {
-          result.pokemonBanlist_ = pokemonBanlist_;
-        } else {
-          result.pokemonBanlist_ = pokemonBanlistBuilder_.build();
-        }
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          result.pokemonCaughtTimestamp_ = pokemonCaughtTimestamp_;
-        } else {
-          result.pokemonCaughtTimestamp_ = pokemonCaughtTimestampBuilder_.build();
-        }
+        result.conditionCase_ = conditionCase_;
         onBuilt();
         return result;
       }
@@ -2821,23 +2890,34 @@ private static final long serialVersionUID = 0L;
         if (other.type_ != 0) {
           setTypeValue(other.getTypeValue());
         }
-        if (other.hasWithPokemonCpLimit()) {
-          mergeWithPokemonCpLimit(other.getWithPokemonCpLimit());
-        }
-        if (other.hasWithPokemonType()) {
-          mergeWithPokemonType(other.getWithPokemonType());
-        }
-        if (other.hasWithPokemonCategory()) {
-          mergeWithPokemonCategory(other.getWithPokemonCategory());
-        }
-        if (other.hasPokemonWhitelist()) {
-          mergePokemonWhitelist(other.getPokemonWhitelist());
-        }
-        if (other.hasPokemonBanlist()) {
-          mergePokemonBanlist(other.getPokemonBanlist());
-        }
-        if (other.hasPokemonCaughtTimestamp()) {
-          mergePokemonCaughtTimestamp(other.getPokemonCaughtTimestamp());
+        switch (other.getConditionCase()) {
+          case WITH_POKEMON_CP_LIMIT: {
+            mergeWithPokemonCpLimit(other.getWithPokemonCpLimit());
+            break;
+          }
+          case WITH_POKEMON_TYPE: {
+            mergeWithPokemonType(other.getWithPokemonType());
+            break;
+          }
+          case WITH_POKEMON_CATEGORY: {
+            mergeWithPokemonCategory(other.getWithPokemonCategory());
+            break;
+          }
+          case POKEMON_WHITELIST: {
+            mergePokemonWhitelist(other.getPokemonWhitelist());
+            break;
+          }
+          case POKEMON_BANLIST: {
+            mergePokemonBanlist(other.getPokemonBanlist());
+            break;
+          }
+          case POKEMON_CAUGHT_TIMESTAMP: {
+            mergePokemonCaughtTimestamp(other.getPokemonCaughtTimestamp());
+            break;
+          }
+          case CONDITION_NOT_SET: {
+            break;
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2866,6 +2946,849 @@ private static final long serialVersionUID = 0L;
           }
         }
         return this;
+      }
+      private int conditionCase_ = 0;
+      private java.lang.Object condition_;
+      public ConditionCase
+          getConditionCase() {
+        return ConditionCase.forNumber(
+            conditionCase_);
+      }
+
+      public Builder clearCondition() {
+        conditionCase_ = 0;
+        condition_ = null;
+        onChanged();
+        return this;
+      }
+
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder> withPokemonCpLimitBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+       * @return Whether the withPokemonCpLimit field is set.
+       */
+      public boolean hasWithPokemonCpLimit() {
+        return conditionCase_ == 2;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+       * @return The withPokemonCpLimit.
+       */
+      public POGOProtos.Rpc.WithPokemonCpLimitProto getWithPokemonCpLimit() {
+        if (withPokemonCpLimitBuilder_ == null) {
+          if (conditionCase_ == 2) {
+            return (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 2) {
+            return withPokemonCpLimitBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+       */
+      public Builder setWithPokemonCpLimit(POGOProtos.Rpc.WithPokemonCpLimitProto value) {
+        if (withPokemonCpLimitBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          withPokemonCpLimitBuilder_.setMessage(value);
+        }
+        conditionCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+       */
+      public Builder setWithPokemonCpLimit(
+          POGOProtos.Rpc.WithPokemonCpLimitProto.Builder builderForValue) {
+        if (withPokemonCpLimitBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          withPokemonCpLimitBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+       */
+      public Builder mergeWithPokemonCpLimit(POGOProtos.Rpc.WithPokemonCpLimitProto value) {
+        if (withPokemonCpLimitBuilder_ == null) {
+          if (conditionCase_ == 2 &&
+              condition_ != POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.WithPokemonCpLimitProto.newBuilder((POGOProtos.Rpc.WithPokemonCpLimitProto) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 2) {
+            withPokemonCpLimitBuilder_.mergeFrom(value);
+          }
+          withPokemonCpLimitBuilder_.setMessage(value);
+        }
+        conditionCase_ = 2;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+       */
+      public Builder clearWithPokemonCpLimit() {
+        if (withPokemonCpLimitBuilder_ == null) {
+          if (conditionCase_ == 2) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 2) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          withPokemonCpLimitBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonCpLimitProto.Builder getWithPokemonCpLimitBuilder() {
+        return getWithPokemonCpLimitFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder getWithPokemonCpLimitOrBuilder() {
+        if ((conditionCase_ == 2) && (withPokemonCpLimitBuilder_ != null)) {
+          return withPokemonCpLimitBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 2) {
+            return (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder> 
+          getWithPokemonCpLimitFieldBuilder() {
+        if (withPokemonCpLimitBuilder_ == null) {
+          if (!(conditionCase_ == 2)) {
+            condition_ = POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+          }
+          withPokemonCpLimitBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder>(
+                  (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 2;
+        onChanged();;
+        return withPokemonCpLimitBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> withPokemonTypeBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+       * @return Whether the withPokemonType field is set.
+       */
+      public boolean hasWithPokemonType() {
+        return conditionCase_ == 3;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+       * @return The withPokemonType.
+       */
+      public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
+        if (withPokemonTypeBuilder_ == null) {
+          if (conditionCase_ == 3) {
+            return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 3) {
+            return withPokemonTypeBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+       */
+      public Builder setWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
+        if (withPokemonTypeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          withPokemonTypeBuilder_.setMessage(value);
+        }
+        conditionCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+       */
+      public Builder setWithPokemonType(
+          POGOProtos.Rpc.WithPokemonTypeProto.Builder builderForValue) {
+        if (withPokemonTypeBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          withPokemonTypeBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+       */
+      public Builder mergeWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
+        if (withPokemonTypeBuilder_ == null) {
+          if (conditionCase_ == 3 &&
+              condition_ != POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.WithPokemonTypeProto.newBuilder((POGOProtos.Rpc.WithPokemonTypeProto) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 3) {
+            withPokemonTypeBuilder_.mergeFrom(value);
+          }
+          withPokemonTypeBuilder_.setMessage(value);
+        }
+        conditionCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+       */
+      public Builder clearWithPokemonType() {
+        if (withPokemonTypeBuilder_ == null) {
+          if (conditionCase_ == 3) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 3) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          withPokemonTypeBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonTypeProto.Builder getWithPokemonTypeBuilder() {
+        return getWithPokemonTypeFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
+        if ((conditionCase_ == 3) && (withPokemonTypeBuilder_ != null)) {
+          return withPokemonTypeBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 3) {
+            return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> 
+          getWithPokemonTypeFieldBuilder() {
+        if (withPokemonTypeBuilder_ == null) {
+          if (!(conditionCase_ == 3)) {
+            condition_ = POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+          }
+          withPokemonTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder>(
+                  (POGOProtos.Rpc.WithPokemonTypeProto) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 3;
+        onChanged();;
+        return withPokemonTypeBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> withPokemonCategoryBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+       * @return Whether the withPokemonCategory field is set.
+       */
+      public boolean hasWithPokemonCategory() {
+        return conditionCase_ == 4;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+       * @return The withPokemonCategory.
+       */
+      public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
+        if (withPokemonCategoryBuilder_ == null) {
+          if (conditionCase_ == 4) {
+            return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 4) {
+            return withPokemonCategoryBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+       */
+      public Builder setWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
+        if (withPokemonCategoryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          withPokemonCategoryBuilder_.setMessage(value);
+        }
+        conditionCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+       */
+      public Builder setWithPokemonCategory(
+          POGOProtos.Rpc.WithPokemonCategoryProto.Builder builderForValue) {
+        if (withPokemonCategoryBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          withPokemonCategoryBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+       */
+      public Builder mergeWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
+        if (withPokemonCategoryBuilder_ == null) {
+          if (conditionCase_ == 4 &&
+              condition_ != POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.WithPokemonCategoryProto.newBuilder((POGOProtos.Rpc.WithPokemonCategoryProto) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 4) {
+            withPokemonCategoryBuilder_.mergeFrom(value);
+          }
+          withPokemonCategoryBuilder_.setMessage(value);
+        }
+        conditionCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+       */
+      public Builder clearWithPokemonCategory() {
+        if (withPokemonCategoryBuilder_ == null) {
+          if (conditionCase_ == 4) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 4) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          withPokemonCategoryBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonCategoryProto.Builder getWithPokemonCategoryBuilder() {
+        return getWithPokemonCategoryFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
+        if ((conditionCase_ == 4) && (withPokemonCategoryBuilder_ != null)) {
+          return withPokemonCategoryBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 4) {
+            return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> 
+          getWithPokemonCategoryFieldBuilder() {
+        if (withPokemonCategoryBuilder_ == null) {
+          if (!(conditionCase_ == 4)) {
+            condition_ = POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+          }
+          withPokemonCategoryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder>(
+                  (POGOProtos.Rpc.WithPokemonCategoryProto) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 4;
+        onChanged();;
+        return withPokemonCategoryBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder> pokemonWhitelistBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+       * @return Whether the pokemonWhitelist field is set.
+       */
+      public boolean hasPokemonWhitelist() {
+        return conditionCase_ == 5;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+       * @return The pokemonWhitelist.
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist getPokemonWhitelist() {
+        if (pokemonWhitelistBuilder_ == null) {
+          if (conditionCase_ == 5) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 5) {
+            return pokemonWhitelistBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+       */
+      public Builder setPokemonWhitelist(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist value) {
+        if (pokemonWhitelistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          pokemonWhitelistBuilder_.setMessage(value);
+        }
+        conditionCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+       */
+      public Builder setPokemonWhitelist(
+          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder builderForValue) {
+        if (pokemonWhitelistBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          pokemonWhitelistBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+       */
+      public Builder mergePokemonWhitelist(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist value) {
+        if (pokemonWhitelistBuilder_ == null) {
+          if (conditionCase_ == 5 &&
+              condition_ != POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.newBuilder((POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 5) {
+            pokemonWhitelistBuilder_.mergeFrom(value);
+          }
+          pokemonWhitelistBuilder_.setMessage(value);
+        }
+        conditionCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+       */
+      public Builder clearPokemonWhitelist() {
+        if (pokemonWhitelistBuilder_ == null) {
+          if (conditionCase_ == 5) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 5) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          pokemonWhitelistBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder getPokemonWhitelistBuilder() {
+        return getPokemonWhitelistFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder getPokemonWhitelistOrBuilder() {
+        if ((conditionCase_ == 5) && (pokemonWhitelistBuilder_ != null)) {
+          return pokemonWhitelistBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 5) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder> 
+          getPokemonWhitelistFieldBuilder() {
+        if (pokemonWhitelistBuilder_ == null) {
+          if (!(conditionCase_ == 5)) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+          }
+          pokemonWhitelistBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder>(
+                  (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 5;
+        onChanged();;
+        return pokemonWhitelistBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder> pokemonBanlistBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+       * @return Whether the pokemonBanlist field is set.
+       */
+      public boolean hasPokemonBanlist() {
+        return conditionCase_ == 6;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+       * @return The pokemonBanlist.
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist getPokemonBanlist() {
+        if (pokemonBanlistBuilder_ == null) {
+          if (conditionCase_ == 6) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 6) {
+            return pokemonBanlistBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+       */
+      public Builder setPokemonBanlist(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist value) {
+        if (pokemonBanlistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          pokemonBanlistBuilder_.setMessage(value);
+        }
+        conditionCase_ = 6;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+       */
+      public Builder setPokemonBanlist(
+          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder builderForValue) {
+        if (pokemonBanlistBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          pokemonBanlistBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 6;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+       */
+      public Builder mergePokemonBanlist(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist value) {
+        if (pokemonBanlistBuilder_ == null) {
+          if (conditionCase_ == 6 &&
+              condition_ != POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.newBuilder((POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 6) {
+            pokemonBanlistBuilder_.mergeFrom(value);
+          }
+          pokemonBanlistBuilder_.setMessage(value);
+        }
+        conditionCase_ = 6;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+       */
+      public Builder clearPokemonBanlist() {
+        if (pokemonBanlistBuilder_ == null) {
+          if (conditionCase_ == 6) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 6) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          pokemonBanlistBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder getPokemonBanlistBuilder() {
+        return getPokemonBanlistFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder getPokemonBanlistOrBuilder() {
+        if ((conditionCase_ == 6) && (pokemonBanlistBuilder_ != null)) {
+          return pokemonBanlistBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 6) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder> 
+          getPokemonBanlistFieldBuilder() {
+        if (pokemonBanlistBuilder_ == null) {
+          if (!(conditionCase_ == 6)) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+          }
+          pokemonBanlistBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder>(
+                  (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 6;
+        onChanged();;
+        return pokemonBanlistBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder> pokemonCaughtTimestampBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+       * @return Whether the pokemonCaughtTimestamp field is set.
+       */
+      public boolean hasPokemonCaughtTimestamp() {
+        return conditionCase_ == 7;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+       * @return The pokemonCaughtTimestamp.
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp getPokemonCaughtTimestamp() {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          if (conditionCase_ == 7) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 7) {
+            return pokemonCaughtTimestampBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+       */
+      public Builder setPokemonCaughtTimestamp(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp value) {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          pokemonCaughtTimestampBuilder_.setMessage(value);
+        }
+        conditionCase_ = 7;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+       */
+      public Builder setPokemonCaughtTimestamp(
+          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder builderForValue) {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          pokemonCaughtTimestampBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 7;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+       */
+      public Builder mergePokemonCaughtTimestamp(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp value) {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          if (conditionCase_ == 7 &&
+              condition_ != POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.newBuilder((POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 7) {
+            pokemonCaughtTimestampBuilder_.mergeFrom(value);
+          }
+          pokemonCaughtTimestampBuilder_.setMessage(value);
+        }
+        conditionCase_ = 7;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+       */
+      public Builder clearPokemonCaughtTimestamp() {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          if (conditionCase_ == 7) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 7) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          pokemonCaughtTimestampBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder getPokemonCaughtTimestampBuilder() {
+        return getPokemonCaughtTimestampFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder() {
+        if ((conditionCase_ == 7) && (pokemonCaughtTimestampBuilder_ != null)) {
+          return pokemonCaughtTimestampBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 7) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder> 
+          getPokemonCaughtTimestampFieldBuilder() {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          if (!(conditionCase_ == 7)) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+          }
+          pokemonCaughtTimestampBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder>(
+                  (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 7;
+        onChanged();;
+        return pokemonCaughtTimestampBuilder_;
       }
 
       private int type_ = 0;
@@ -2918,720 +3841,6 @@ private static final long serialVersionUID = 0L;
         type_ = 0;
         onChanged();
         return this;
-      }
-
-      private POGOProtos.Rpc.WithPokemonCpLimitProto withPokemonCpLimit_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder> withPokemonCpLimitBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-       * @return Whether the withPokemonCpLimit field is set.
-       */
-      public boolean hasWithPokemonCpLimit() {
-        return withPokemonCpLimitBuilder_ != null || withPokemonCpLimit_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-       * @return The withPokemonCpLimit.
-       */
-      public POGOProtos.Rpc.WithPokemonCpLimitProto getWithPokemonCpLimit() {
-        if (withPokemonCpLimitBuilder_ == null) {
-          return withPokemonCpLimit_ == null ? POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance() : withPokemonCpLimit_;
-        } else {
-          return withPokemonCpLimitBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-       */
-      public Builder setWithPokemonCpLimit(POGOProtos.Rpc.WithPokemonCpLimitProto value) {
-        if (withPokemonCpLimitBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          withPokemonCpLimit_ = value;
-          onChanged();
-        } else {
-          withPokemonCpLimitBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-       */
-      public Builder setWithPokemonCpLimit(
-          POGOProtos.Rpc.WithPokemonCpLimitProto.Builder builderForValue) {
-        if (withPokemonCpLimitBuilder_ == null) {
-          withPokemonCpLimit_ = builderForValue.build();
-          onChanged();
-        } else {
-          withPokemonCpLimitBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-       */
-      public Builder mergeWithPokemonCpLimit(POGOProtos.Rpc.WithPokemonCpLimitProto value) {
-        if (withPokemonCpLimitBuilder_ == null) {
-          if (withPokemonCpLimit_ != null) {
-            withPokemonCpLimit_ =
-              POGOProtos.Rpc.WithPokemonCpLimitProto.newBuilder(withPokemonCpLimit_).mergeFrom(value).buildPartial();
-          } else {
-            withPokemonCpLimit_ = value;
-          }
-          onChanged();
-        } else {
-          withPokemonCpLimitBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-       */
-      public Builder clearWithPokemonCpLimit() {
-        if (withPokemonCpLimitBuilder_ == null) {
-          withPokemonCpLimit_ = null;
-          onChanged();
-        } else {
-          withPokemonCpLimit_ = null;
-          withPokemonCpLimitBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonCpLimitProto.Builder getWithPokemonCpLimitBuilder() {
-        
-        onChanged();
-        return getWithPokemonCpLimitFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder getWithPokemonCpLimitOrBuilder() {
-        if (withPokemonCpLimitBuilder_ != null) {
-          return withPokemonCpLimitBuilder_.getMessageOrBuilder();
-        } else {
-          return withPokemonCpLimit_ == null ?
-              POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance() : withPokemonCpLimit_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 2;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder> 
-          getWithPokemonCpLimitFieldBuilder() {
-        if (withPokemonCpLimitBuilder_ == null) {
-          withPokemonCpLimitBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder>(
-                  getWithPokemonCpLimit(),
-                  getParentForChildren(),
-                  isClean());
-          withPokemonCpLimit_ = null;
-        }
-        return withPokemonCpLimitBuilder_;
-      }
-
-      private POGOProtos.Rpc.WithPokemonTypeProto withPokemonType_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> withPokemonTypeBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-       * @return Whether the withPokemonType field is set.
-       */
-      public boolean hasWithPokemonType() {
-        return withPokemonTypeBuilder_ != null || withPokemonType_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-       * @return The withPokemonType.
-       */
-      public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
-        if (withPokemonTypeBuilder_ == null) {
-          return withPokemonType_ == null ? POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance() : withPokemonType_;
-        } else {
-          return withPokemonTypeBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-       */
-      public Builder setWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
-        if (withPokemonTypeBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          withPokemonType_ = value;
-          onChanged();
-        } else {
-          withPokemonTypeBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-       */
-      public Builder setWithPokemonType(
-          POGOProtos.Rpc.WithPokemonTypeProto.Builder builderForValue) {
-        if (withPokemonTypeBuilder_ == null) {
-          withPokemonType_ = builderForValue.build();
-          onChanged();
-        } else {
-          withPokemonTypeBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-       */
-      public Builder mergeWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
-        if (withPokemonTypeBuilder_ == null) {
-          if (withPokemonType_ != null) {
-            withPokemonType_ =
-              POGOProtos.Rpc.WithPokemonTypeProto.newBuilder(withPokemonType_).mergeFrom(value).buildPartial();
-          } else {
-            withPokemonType_ = value;
-          }
-          onChanged();
-        } else {
-          withPokemonTypeBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-       */
-      public Builder clearWithPokemonType() {
-        if (withPokemonTypeBuilder_ == null) {
-          withPokemonType_ = null;
-          onChanged();
-        } else {
-          withPokemonType_ = null;
-          withPokemonTypeBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonTypeProto.Builder getWithPokemonTypeBuilder() {
-        
-        onChanged();
-        return getWithPokemonTypeFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
-        if (withPokemonTypeBuilder_ != null) {
-          return withPokemonTypeBuilder_.getMessageOrBuilder();
-        } else {
-          return withPokemonType_ == null ?
-              POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance() : withPokemonType_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 3;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> 
-          getWithPokemonTypeFieldBuilder() {
-        if (withPokemonTypeBuilder_ == null) {
-          withPokemonTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder>(
-                  getWithPokemonType(),
-                  getParentForChildren(),
-                  isClean());
-          withPokemonType_ = null;
-        }
-        return withPokemonTypeBuilder_;
-      }
-
-      private POGOProtos.Rpc.WithPokemonCategoryProto withPokemonCategory_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> withPokemonCategoryBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-       * @return Whether the withPokemonCategory field is set.
-       */
-      public boolean hasWithPokemonCategory() {
-        return withPokemonCategoryBuilder_ != null || withPokemonCategory_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-       * @return The withPokemonCategory.
-       */
-      public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
-        if (withPokemonCategoryBuilder_ == null) {
-          return withPokemonCategory_ == null ? POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance() : withPokemonCategory_;
-        } else {
-          return withPokemonCategoryBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-       */
-      public Builder setWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
-        if (withPokemonCategoryBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          withPokemonCategory_ = value;
-          onChanged();
-        } else {
-          withPokemonCategoryBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-       */
-      public Builder setWithPokemonCategory(
-          POGOProtos.Rpc.WithPokemonCategoryProto.Builder builderForValue) {
-        if (withPokemonCategoryBuilder_ == null) {
-          withPokemonCategory_ = builderForValue.build();
-          onChanged();
-        } else {
-          withPokemonCategoryBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-       */
-      public Builder mergeWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
-        if (withPokemonCategoryBuilder_ == null) {
-          if (withPokemonCategory_ != null) {
-            withPokemonCategory_ =
-              POGOProtos.Rpc.WithPokemonCategoryProto.newBuilder(withPokemonCategory_).mergeFrom(value).buildPartial();
-          } else {
-            withPokemonCategory_ = value;
-          }
-          onChanged();
-        } else {
-          withPokemonCategoryBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-       */
-      public Builder clearWithPokemonCategory() {
-        if (withPokemonCategoryBuilder_ == null) {
-          withPokemonCategory_ = null;
-          onChanged();
-        } else {
-          withPokemonCategory_ = null;
-          withPokemonCategoryBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonCategoryProto.Builder getWithPokemonCategoryBuilder() {
-        
-        onChanged();
-        return getWithPokemonCategoryFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
-        if (withPokemonCategoryBuilder_ != null) {
-          return withPokemonCategoryBuilder_.getMessageOrBuilder();
-        } else {
-          return withPokemonCategory_ == null ?
-              POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance() : withPokemonCategory_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 4;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> 
-          getWithPokemonCategoryFieldBuilder() {
-        if (withPokemonCategoryBuilder_ == null) {
-          withPokemonCategoryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder>(
-                  getWithPokemonCategory(),
-                  getParentForChildren(),
-                  isClean());
-          withPokemonCategory_ = null;
-        }
-        return withPokemonCategoryBuilder_;
-      }
-
-      private POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemonWhitelist_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder> pokemonWhitelistBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-       * @return Whether the pokemonWhitelist field is set.
-       */
-      public boolean hasPokemonWhitelist() {
-        return pokemonWhitelistBuilder_ != null || pokemonWhitelist_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-       * @return The pokemonWhitelist.
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist getPokemonWhitelist() {
-        if (pokemonWhitelistBuilder_ == null) {
-          return pokemonWhitelist_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance() : pokemonWhitelist_;
-        } else {
-          return pokemonWhitelistBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-       */
-      public Builder setPokemonWhitelist(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist value) {
-        if (pokemonWhitelistBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pokemonWhitelist_ = value;
-          onChanged();
-        } else {
-          pokemonWhitelistBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-       */
-      public Builder setPokemonWhitelist(
-          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder builderForValue) {
-        if (pokemonWhitelistBuilder_ == null) {
-          pokemonWhitelist_ = builderForValue.build();
-          onChanged();
-        } else {
-          pokemonWhitelistBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-       */
-      public Builder mergePokemonWhitelist(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist value) {
-        if (pokemonWhitelistBuilder_ == null) {
-          if (pokemonWhitelist_ != null) {
-            pokemonWhitelist_ =
-              POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.newBuilder(pokemonWhitelist_).mergeFrom(value).buildPartial();
-          } else {
-            pokemonWhitelist_ = value;
-          }
-          onChanged();
-        } else {
-          pokemonWhitelistBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-       */
-      public Builder clearPokemonWhitelist() {
-        if (pokemonWhitelistBuilder_ == null) {
-          pokemonWhitelist_ = null;
-          onChanged();
-        } else {
-          pokemonWhitelist_ = null;
-          pokemonWhitelistBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder getPokemonWhitelistBuilder() {
-        
-        onChanged();
-        return getPokemonWhitelistFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder getPokemonWhitelistOrBuilder() {
-        if (pokemonWhitelistBuilder_ != null) {
-          return pokemonWhitelistBuilder_.getMessageOrBuilder();
-        } else {
-          return pokemonWhitelist_ == null ?
-              POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance() : pokemonWhitelist_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder> 
-          getPokemonWhitelistFieldBuilder() {
-        if (pokemonWhitelistBuilder_ == null) {
-          pokemonWhitelistBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder>(
-                  getPokemonWhitelist(),
-                  getParentForChildren(),
-                  isClean());
-          pokemonWhitelist_ = null;
-        }
-        return pokemonWhitelistBuilder_;
-      }
-
-      private POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemonBanlist_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder> pokemonBanlistBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-       * @return Whether the pokemonBanlist field is set.
-       */
-      public boolean hasPokemonBanlist() {
-        return pokemonBanlistBuilder_ != null || pokemonBanlist_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-       * @return The pokemonBanlist.
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist getPokemonBanlist() {
-        if (pokemonBanlistBuilder_ == null) {
-          return pokemonBanlist_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance() : pokemonBanlist_;
-        } else {
-          return pokemonBanlistBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-       */
-      public Builder setPokemonBanlist(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist value) {
-        if (pokemonBanlistBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pokemonBanlist_ = value;
-          onChanged();
-        } else {
-          pokemonBanlistBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-       */
-      public Builder setPokemonBanlist(
-          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder builderForValue) {
-        if (pokemonBanlistBuilder_ == null) {
-          pokemonBanlist_ = builderForValue.build();
-          onChanged();
-        } else {
-          pokemonBanlistBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-       */
-      public Builder mergePokemonBanlist(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist value) {
-        if (pokemonBanlistBuilder_ == null) {
-          if (pokemonBanlist_ != null) {
-            pokemonBanlist_ =
-              POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.newBuilder(pokemonBanlist_).mergeFrom(value).buildPartial();
-          } else {
-            pokemonBanlist_ = value;
-          }
-          onChanged();
-        } else {
-          pokemonBanlistBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-       */
-      public Builder clearPokemonBanlist() {
-        if (pokemonBanlistBuilder_ == null) {
-          pokemonBanlist_ = null;
-          onChanged();
-        } else {
-          pokemonBanlist_ = null;
-          pokemonBanlistBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder getPokemonBanlistBuilder() {
-        
-        onChanged();
-        return getPokemonBanlistFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder getPokemonBanlistOrBuilder() {
-        if (pokemonBanlistBuilder_ != null) {
-          return pokemonBanlistBuilder_.getMessageOrBuilder();
-        } else {
-          return pokemonBanlist_ == null ?
-              POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance() : pokemonBanlist_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 6;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder> 
-          getPokemonBanlistFieldBuilder() {
-        if (pokemonBanlistBuilder_ == null) {
-          pokemonBanlistBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder>(
-                  getPokemonBanlist(),
-                  getParentForChildren(),
-                  isClean());
-          pokemonBanlist_ = null;
-        }
-        return pokemonBanlistBuilder_;
-      }
-
-      private POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemonCaughtTimestamp_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder> pokemonCaughtTimestampBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-       * @return Whether the pokemonCaughtTimestamp field is set.
-       */
-      public boolean hasPokemonCaughtTimestamp() {
-        return pokemonCaughtTimestampBuilder_ != null || pokemonCaughtTimestamp_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-       * @return The pokemonCaughtTimestamp.
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp getPokemonCaughtTimestamp() {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          return pokemonCaughtTimestamp_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance() : pokemonCaughtTimestamp_;
-        } else {
-          return pokemonCaughtTimestampBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-       */
-      public Builder setPokemonCaughtTimestamp(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp value) {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pokemonCaughtTimestamp_ = value;
-          onChanged();
-        } else {
-          pokemonCaughtTimestampBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-       */
-      public Builder setPokemonCaughtTimestamp(
-          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder builderForValue) {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          pokemonCaughtTimestamp_ = builderForValue.build();
-          onChanged();
-        } else {
-          pokemonCaughtTimestampBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-       */
-      public Builder mergePokemonCaughtTimestamp(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp value) {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          if (pokemonCaughtTimestamp_ != null) {
-            pokemonCaughtTimestamp_ =
-              POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.newBuilder(pokemonCaughtTimestamp_).mergeFrom(value).buildPartial();
-          } else {
-            pokemonCaughtTimestamp_ = value;
-          }
-          onChanged();
-        } else {
-          pokemonCaughtTimestampBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-       */
-      public Builder clearPokemonCaughtTimestamp() {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          pokemonCaughtTimestamp_ = null;
-          onChanged();
-        } else {
-          pokemonCaughtTimestamp_ = null;
-          pokemonCaughtTimestampBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder getPokemonCaughtTimestampBuilder() {
-        
-        onChanged();
-        return getPokemonCaughtTimestampFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder() {
-        if (pokemonCaughtTimestampBuilder_ != null) {
-          return pokemonCaughtTimestampBuilder_.getMessageOrBuilder();
-        } else {
-          return pokemonCaughtTimestamp_ == null ?
-              POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance() : pokemonCaughtTimestamp_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 7;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder> 
-          getPokemonCaughtTimestampFieldBuilder() {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          pokemonCaughtTimestampBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder>(
-                  getPokemonCaughtTimestamp(),
-                  getParentForChildren(),
-                  isClean());
-          pokemonCaughtTimestamp_ = null;
-        }
-        return pokemonCaughtTimestampBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -5255,23 +5464,6 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.ConditionType type = 1;</code>
-     * @return The enum numeric value on the wire for type.
-     */
-    int getTypeValue();
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.ConditionType type = 1;</code>
-     * @return The type.
-     */
-    POGOProtos.Rpc.CombatLeagueProto.ConditionType getType();
-
-    /**
-     * <code>int32 min_pokemon_count = 2;</code>
-     * @return The minPokemonCount.
-     */
-    int getMinPokemonCount();
-
-    /**
      * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
      * @return Whether the withPlayerLevel field is set.
      */
@@ -5375,6 +5567,25 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
      */
     POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder();
+
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.ConditionType type = 1;</code>
+     * @return The enum numeric value on the wire for type.
+     */
+    int getTypeValue();
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.ConditionType type = 1;</code>
+     * @return The type.
+     */
+    POGOProtos.Rpc.CombatLeagueProto.ConditionType getType();
+
+    /**
+     * <code>int32 min_pokemon_count = 2;</code>
+     * @return The minPokemonCount.
+     */
+    int getMinPokemonCount();
+
+    public POGOProtos.Rpc.CombatLeagueProto.UnlockConditionProto.ConditionCase getConditionCase();
   }
   /**
    * Protobuf type {@code POGOProtos.Rpc.CombatLeagueProto.UnlockConditionProto}
@@ -5435,93 +5646,100 @@ private static final long serialVersionUID = 0L;
             }
             case 26: {
               POGOProtos.Rpc.WithPlayerLevelProto.Builder subBuilder = null;
-              if (withPlayerLevel_ != null) {
-                subBuilder = withPlayerLevel_.toBuilder();
+              if (conditionCase_ == 3) {
+                subBuilder = ((POGOProtos.Rpc.WithPlayerLevelProto) condition_).toBuilder();
               }
-              withPlayerLevel_ = input.readMessage(POGOProtos.Rpc.WithPlayerLevelProto.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.WithPlayerLevelProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(withPlayerLevel_);
-                withPlayerLevel_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.WithPlayerLevelProto) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 3;
               break;
             }
             case 34: {
               POGOProtos.Rpc.WithPokemonCpLimitProto.Builder subBuilder = null;
-              if (withPokemonCpLimit_ != null) {
-                subBuilder = withPokemonCpLimit_.toBuilder();
+              if (conditionCase_ == 4) {
+                subBuilder = ((POGOProtos.Rpc.WithPokemonCpLimitProto) condition_).toBuilder();
               }
-              withPokemonCpLimit_ = input.readMessage(POGOProtos.Rpc.WithPokemonCpLimitProto.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.WithPokemonCpLimitProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(withPokemonCpLimit_);
-                withPokemonCpLimit_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.WithPokemonCpLimitProto) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 4;
               break;
             }
             case 42: {
               POGOProtos.Rpc.WithPokemonTypeProto.Builder subBuilder = null;
-              if (withPokemonType_ != null) {
-                subBuilder = withPokemonType_.toBuilder();
+              if (conditionCase_ == 5) {
+                subBuilder = ((POGOProtos.Rpc.WithPokemonTypeProto) condition_).toBuilder();
               }
-              withPokemonType_ = input.readMessage(POGOProtos.Rpc.WithPokemonTypeProto.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.WithPokemonTypeProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(withPokemonType_);
-                withPokemonType_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.WithPokemonTypeProto) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 5;
               break;
             }
             case 50: {
               POGOProtos.Rpc.WithPokemonCategoryProto.Builder subBuilder = null;
-              if (withPokemonCategory_ != null) {
-                subBuilder = withPokemonCategory_.toBuilder();
+              if (conditionCase_ == 6) {
+                subBuilder = ((POGOProtos.Rpc.WithPokemonCategoryProto) condition_).toBuilder();
               }
-              withPokemonCategory_ = input.readMessage(POGOProtos.Rpc.WithPokemonCategoryProto.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.WithPokemonCategoryProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(withPokemonCategory_);
-                withPokemonCategory_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.WithPokemonCategoryProto) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 6;
               break;
             }
             case 58: {
               POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder subBuilder = null;
-              if (pokemonWhitelist_ != null) {
-                subBuilder = pokemonWhitelist_.toBuilder();
+              if (conditionCase_ == 7) {
+                subBuilder = ((POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_).toBuilder();
               }
-              pokemonWhitelist_ = input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(pokemonWhitelist_);
-                pokemonWhitelist_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 7;
               break;
             }
             case 66: {
               POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder subBuilder = null;
-              if (pokemonBanlist_ != null) {
-                subBuilder = pokemonBanlist_.toBuilder();
+              if (conditionCase_ == 8) {
+                subBuilder = ((POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_).toBuilder();
               }
-              pokemonBanlist_ = input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(pokemonBanlist_);
-                pokemonBanlist_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 8;
               break;
             }
             case 74: {
               POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder subBuilder = null;
-              if (pokemonCaughtTimestamp_ != null) {
-                subBuilder = pokemonCaughtTimestamp_.toBuilder();
+              if (conditionCase_ == 9) {
+                subBuilder = ((POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_).toBuilder();
               }
-              pokemonCaughtTimestamp_ = input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.parser(), extensionRegistry);
+              condition_ =
+                  input.readMessage(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(pokemonCaughtTimestamp_);
-                pokemonCaughtTimestamp_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_);
+                condition_ = subBuilder.buildPartial();
               }
-
+              conditionCase_ = 9;
               break;
             }
             default: {
@@ -5556,6 +5774,253 @@ private static final long serialVersionUID = 0L;
               POGOProtos.Rpc.CombatLeagueProto.UnlockConditionProto.class, POGOProtos.Rpc.CombatLeagueProto.UnlockConditionProto.Builder.class);
     }
 
+    private int conditionCase_ = 0;
+    private java.lang.Object condition_;
+    public enum ConditionCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      WITH_PLAYER_LEVEL(3),
+      WITH_POKEMON_CP_LIMIT(4),
+      WITH_POKEMON_TYPE(5),
+      WITH_POKEMON_CATEGORY(6),
+      POKEMON_WHITELIST(7),
+      POKEMON_BANLIST(8),
+      POKEMON_CAUGHT_TIMESTAMP(9),
+      CONDITION_NOT_SET(0);
+      private final int value;
+      private ConditionCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static ConditionCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static ConditionCase forNumber(int value) {
+        switch (value) {
+          case 3: return WITH_PLAYER_LEVEL;
+          case 4: return WITH_POKEMON_CP_LIMIT;
+          case 5: return WITH_POKEMON_TYPE;
+          case 6: return WITH_POKEMON_CATEGORY;
+          case 7: return POKEMON_WHITELIST;
+          case 8: return POKEMON_BANLIST;
+          case 9: return POKEMON_CAUGHT_TIMESTAMP;
+          case 0: return CONDITION_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public ConditionCase
+    getConditionCase() {
+      return ConditionCase.forNumber(
+          conditionCase_);
+    }
+
+    public static final int WITH_PLAYER_LEVEL_FIELD_NUMBER = 3;
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+     * @return Whether the withPlayerLevel field is set.
+     */
+    public boolean hasWithPlayerLevel() {
+      return conditionCase_ == 3;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+     * @return The withPlayerLevel.
+     */
+    public POGOProtos.Rpc.WithPlayerLevelProto getWithPlayerLevel() {
+      if (conditionCase_ == 3) {
+         return (POGOProtos.Rpc.WithPlayerLevelProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+     */
+    public POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder getWithPlayerLevelOrBuilder() {
+      if (conditionCase_ == 3) {
+         return (POGOProtos.Rpc.WithPlayerLevelProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+    }
+
+    public static final int WITH_POKEMON_CP_LIMIT_FIELD_NUMBER = 4;
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+     * @return Whether the withPokemonCpLimit field is set.
+     */
+    public boolean hasWithPokemonCpLimit() {
+      return conditionCase_ == 4;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+     * @return The withPokemonCpLimit.
+     */
+    public POGOProtos.Rpc.WithPokemonCpLimitProto getWithPokemonCpLimit() {
+      if (conditionCase_ == 4) {
+         return (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder getWithPokemonCpLimitOrBuilder() {
+      if (conditionCase_ == 4) {
+         return (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+    }
+
+    public static final int WITH_POKEMON_TYPE_FIELD_NUMBER = 5;
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+     * @return Whether the withPokemonType field is set.
+     */
+    public boolean hasWithPokemonType() {
+      return conditionCase_ == 5;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+     * @return The withPokemonType.
+     */
+    public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
+      if (conditionCase_ == 5) {
+         return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
+      if (conditionCase_ == 5) {
+         return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+    }
+
+    public static final int WITH_POKEMON_CATEGORY_FIELD_NUMBER = 6;
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+     * @return Whether the withPokemonCategory field is set.
+     */
+    public boolean hasWithPokemonCategory() {
+      return conditionCase_ == 6;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+     * @return The withPokemonCategory.
+     */
+    public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
+      if (conditionCase_ == 6) {
+         return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+     */
+    public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
+      if (conditionCase_ == 6) {
+         return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+      }
+      return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+    }
+
+    public static final int POKEMON_WHITELIST_FIELD_NUMBER = 7;
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+     * @return Whether the pokemonWhitelist field is set.
+     */
+    public boolean hasPokemonWhitelist() {
+      return conditionCase_ == 7;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+     * @return The pokemonWhitelist.
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist getPokemonWhitelist() {
+      if (conditionCase_ == 7) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder getPokemonWhitelistOrBuilder() {
+      if (conditionCase_ == 7) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+    }
+
+    public static final int POKEMON_BANLIST_FIELD_NUMBER = 8;
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+     * @return Whether the pokemonBanlist field is set.
+     */
+    public boolean hasPokemonBanlist() {
+      return conditionCase_ == 8;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+     * @return The pokemonBanlist.
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist getPokemonBanlist() {
+      if (conditionCase_ == 8) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder getPokemonBanlistOrBuilder() {
+      if (conditionCase_ == 8) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+    }
+
+    public static final int POKEMON_CAUGHT_TIMESTAMP_FIELD_NUMBER = 9;
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+     * @return Whether the pokemonCaughtTimestamp field is set.
+     */
+    public boolean hasPokemonCaughtTimestamp() {
+      return conditionCase_ == 9;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+     * @return The pokemonCaughtTimestamp.
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp getPokemonCaughtTimestamp() {
+      if (conditionCase_ == 9) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+     */
+    public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder() {
+      if (conditionCase_ == 9) {
+         return (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_;
+      }
+      return POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+    }
+
     public static final int TYPE_FIELD_NUMBER = 1;
     private int type_;
     /**
@@ -5585,167 +6050,6 @@ private static final long serialVersionUID = 0L;
       return minPokemonCount_;
     }
 
-    public static final int WITH_PLAYER_LEVEL_FIELD_NUMBER = 3;
-    private POGOProtos.Rpc.WithPlayerLevelProto withPlayerLevel_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-     * @return Whether the withPlayerLevel field is set.
-     */
-    public boolean hasWithPlayerLevel() {
-      return withPlayerLevel_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-     * @return The withPlayerLevel.
-     */
-    public POGOProtos.Rpc.WithPlayerLevelProto getWithPlayerLevel() {
-      return withPlayerLevel_ == null ? POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance() : withPlayerLevel_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-     */
-    public POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder getWithPlayerLevelOrBuilder() {
-      return getWithPlayerLevel();
-    }
-
-    public static final int WITH_POKEMON_CP_LIMIT_FIELD_NUMBER = 4;
-    private POGOProtos.Rpc.WithPokemonCpLimitProto withPokemonCpLimit_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-     * @return Whether the withPokemonCpLimit field is set.
-     */
-    public boolean hasWithPokemonCpLimit() {
-      return withPokemonCpLimit_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-     * @return The withPokemonCpLimit.
-     */
-    public POGOProtos.Rpc.WithPokemonCpLimitProto getWithPokemonCpLimit() {
-      return withPokemonCpLimit_ == null ? POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance() : withPokemonCpLimit_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder getWithPokemonCpLimitOrBuilder() {
-      return getWithPokemonCpLimit();
-    }
-
-    public static final int WITH_POKEMON_TYPE_FIELD_NUMBER = 5;
-    private POGOProtos.Rpc.WithPokemonTypeProto withPokemonType_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-     * @return Whether the withPokemonType field is set.
-     */
-    public boolean hasWithPokemonType() {
-      return withPokemonType_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-     * @return The withPokemonType.
-     */
-    public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
-      return withPokemonType_ == null ? POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance() : withPokemonType_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
-      return getWithPokemonType();
-    }
-
-    public static final int WITH_POKEMON_CATEGORY_FIELD_NUMBER = 6;
-    private POGOProtos.Rpc.WithPokemonCategoryProto withPokemonCategory_;
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-     * @return Whether the withPokemonCategory field is set.
-     */
-    public boolean hasWithPokemonCategory() {
-      return withPokemonCategory_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-     * @return The withPokemonCategory.
-     */
-    public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
-      return withPokemonCategory_ == null ? POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance() : withPokemonCategory_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-     */
-    public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
-      return getWithPokemonCategory();
-    }
-
-    public static final int POKEMON_WHITELIST_FIELD_NUMBER = 7;
-    private POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemonWhitelist_;
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-     * @return Whether the pokemonWhitelist field is set.
-     */
-    public boolean hasPokemonWhitelist() {
-      return pokemonWhitelist_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-     * @return The pokemonWhitelist.
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist getPokemonWhitelist() {
-      return pokemonWhitelist_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance() : pokemonWhitelist_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder getPokemonWhitelistOrBuilder() {
-      return getPokemonWhitelist();
-    }
-
-    public static final int POKEMON_BANLIST_FIELD_NUMBER = 8;
-    private POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemonBanlist_;
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-     * @return Whether the pokemonBanlist field is set.
-     */
-    public boolean hasPokemonBanlist() {
-      return pokemonBanlist_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-     * @return The pokemonBanlist.
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist getPokemonBanlist() {
-      return pokemonBanlist_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance() : pokemonBanlist_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder getPokemonBanlistOrBuilder() {
-      return getPokemonBanlist();
-    }
-
-    public static final int POKEMON_CAUGHT_TIMESTAMP_FIELD_NUMBER = 9;
-    private POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemonCaughtTimestamp_;
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-     * @return Whether the pokemonCaughtTimestamp field is set.
-     */
-    public boolean hasPokemonCaughtTimestamp() {
-      return pokemonCaughtTimestamp_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-     * @return The pokemonCaughtTimestamp.
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp getPokemonCaughtTimestamp() {
-      return pokemonCaughtTimestamp_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance() : pokemonCaughtTimestamp_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-     */
-    public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder() {
-      return getPokemonCaughtTimestamp();
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -5766,26 +6070,26 @@ private static final long serialVersionUID = 0L;
       if (minPokemonCount_ != 0) {
         output.writeInt32(2, minPokemonCount_);
       }
-      if (withPlayerLevel_ != null) {
-        output.writeMessage(3, getWithPlayerLevel());
+      if (conditionCase_ == 3) {
+        output.writeMessage(3, (POGOProtos.Rpc.WithPlayerLevelProto) condition_);
       }
-      if (withPokemonCpLimit_ != null) {
-        output.writeMessage(4, getWithPokemonCpLimit());
+      if (conditionCase_ == 4) {
+        output.writeMessage(4, (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_);
       }
-      if (withPokemonType_ != null) {
-        output.writeMessage(5, getWithPokemonType());
+      if (conditionCase_ == 5) {
+        output.writeMessage(5, (POGOProtos.Rpc.WithPokemonTypeProto) condition_);
       }
-      if (withPokemonCategory_ != null) {
-        output.writeMessage(6, getWithPokemonCategory());
+      if (conditionCase_ == 6) {
+        output.writeMessage(6, (POGOProtos.Rpc.WithPokemonCategoryProto) condition_);
       }
-      if (pokemonWhitelist_ != null) {
-        output.writeMessage(7, getPokemonWhitelist());
+      if (conditionCase_ == 7) {
+        output.writeMessage(7, (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_);
       }
-      if (pokemonBanlist_ != null) {
-        output.writeMessage(8, getPokemonBanlist());
+      if (conditionCase_ == 8) {
+        output.writeMessage(8, (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_);
       }
-      if (pokemonCaughtTimestamp_ != null) {
-        output.writeMessage(9, getPokemonCaughtTimestamp());
+      if (conditionCase_ == 9) {
+        output.writeMessage(9, (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_);
       }
       unknownFields.writeTo(output);
     }
@@ -5804,33 +6108,33 @@ private static final long serialVersionUID = 0L;
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(2, minPokemonCount_);
       }
-      if (withPlayerLevel_ != null) {
+      if (conditionCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getWithPlayerLevel());
+          .computeMessageSize(3, (POGOProtos.Rpc.WithPlayerLevelProto) condition_);
       }
-      if (withPokemonCpLimit_ != null) {
+      if (conditionCase_ == 4) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getWithPokemonCpLimit());
+          .computeMessageSize(4, (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_);
       }
-      if (withPokemonType_ != null) {
+      if (conditionCase_ == 5) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getWithPokemonType());
+          .computeMessageSize(5, (POGOProtos.Rpc.WithPokemonTypeProto) condition_);
       }
-      if (withPokemonCategory_ != null) {
+      if (conditionCase_ == 6) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getWithPokemonCategory());
+          .computeMessageSize(6, (POGOProtos.Rpc.WithPokemonCategoryProto) condition_);
       }
-      if (pokemonWhitelist_ != null) {
+      if (conditionCase_ == 7) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getPokemonWhitelist());
+          .computeMessageSize(7, (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_);
       }
-      if (pokemonBanlist_ != null) {
+      if (conditionCase_ == 8) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getPokemonBanlist());
+          .computeMessageSize(8, (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_);
       }
-      if (pokemonCaughtTimestamp_ != null) {
+      if (conditionCase_ == 9) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getPokemonCaughtTimestamp());
+          .computeMessageSize(9, (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -5850,40 +6154,38 @@ private static final long serialVersionUID = 0L;
       if (type_ != other.type_) return false;
       if (getMinPokemonCount()
           != other.getMinPokemonCount()) return false;
-      if (hasWithPlayerLevel() != other.hasWithPlayerLevel()) return false;
-      if (hasWithPlayerLevel()) {
-        if (!getWithPlayerLevel()
-            .equals(other.getWithPlayerLevel())) return false;
-      }
-      if (hasWithPokemonCpLimit() != other.hasWithPokemonCpLimit()) return false;
-      if (hasWithPokemonCpLimit()) {
-        if (!getWithPokemonCpLimit()
-            .equals(other.getWithPokemonCpLimit())) return false;
-      }
-      if (hasWithPokemonType() != other.hasWithPokemonType()) return false;
-      if (hasWithPokemonType()) {
-        if (!getWithPokemonType()
-            .equals(other.getWithPokemonType())) return false;
-      }
-      if (hasWithPokemonCategory() != other.hasWithPokemonCategory()) return false;
-      if (hasWithPokemonCategory()) {
-        if (!getWithPokemonCategory()
-            .equals(other.getWithPokemonCategory())) return false;
-      }
-      if (hasPokemonWhitelist() != other.hasPokemonWhitelist()) return false;
-      if (hasPokemonWhitelist()) {
-        if (!getPokemonWhitelist()
-            .equals(other.getPokemonWhitelist())) return false;
-      }
-      if (hasPokemonBanlist() != other.hasPokemonBanlist()) return false;
-      if (hasPokemonBanlist()) {
-        if (!getPokemonBanlist()
-            .equals(other.getPokemonBanlist())) return false;
-      }
-      if (hasPokemonCaughtTimestamp() != other.hasPokemonCaughtTimestamp()) return false;
-      if (hasPokemonCaughtTimestamp()) {
-        if (!getPokemonCaughtTimestamp()
-            .equals(other.getPokemonCaughtTimestamp())) return false;
+      if (!getConditionCase().equals(other.getConditionCase())) return false;
+      switch (conditionCase_) {
+        case 3:
+          if (!getWithPlayerLevel()
+              .equals(other.getWithPlayerLevel())) return false;
+          break;
+        case 4:
+          if (!getWithPokemonCpLimit()
+              .equals(other.getWithPokemonCpLimit())) return false;
+          break;
+        case 5:
+          if (!getWithPokemonType()
+              .equals(other.getWithPokemonType())) return false;
+          break;
+        case 6:
+          if (!getWithPokemonCategory()
+              .equals(other.getWithPokemonCategory())) return false;
+          break;
+        case 7:
+          if (!getPokemonWhitelist()
+              .equals(other.getPokemonWhitelist())) return false;
+          break;
+        case 8:
+          if (!getPokemonBanlist()
+              .equals(other.getPokemonBanlist())) return false;
+          break;
+        case 9:
+          if (!getPokemonCaughtTimestamp()
+              .equals(other.getPokemonCaughtTimestamp())) return false;
+          break;
+        case 0:
+        default:
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -5900,33 +6202,37 @@ private static final long serialVersionUID = 0L;
       hash = (53 * hash) + type_;
       hash = (37 * hash) + MIN_POKEMON_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getMinPokemonCount();
-      if (hasWithPlayerLevel()) {
-        hash = (37 * hash) + WITH_PLAYER_LEVEL_FIELD_NUMBER;
-        hash = (53 * hash) + getWithPlayerLevel().hashCode();
-      }
-      if (hasWithPokemonCpLimit()) {
-        hash = (37 * hash) + WITH_POKEMON_CP_LIMIT_FIELD_NUMBER;
-        hash = (53 * hash) + getWithPokemonCpLimit().hashCode();
-      }
-      if (hasWithPokemonType()) {
-        hash = (37 * hash) + WITH_POKEMON_TYPE_FIELD_NUMBER;
-        hash = (53 * hash) + getWithPokemonType().hashCode();
-      }
-      if (hasWithPokemonCategory()) {
-        hash = (37 * hash) + WITH_POKEMON_CATEGORY_FIELD_NUMBER;
-        hash = (53 * hash) + getWithPokemonCategory().hashCode();
-      }
-      if (hasPokemonWhitelist()) {
-        hash = (37 * hash) + POKEMON_WHITELIST_FIELD_NUMBER;
-        hash = (53 * hash) + getPokemonWhitelist().hashCode();
-      }
-      if (hasPokemonBanlist()) {
-        hash = (37 * hash) + POKEMON_BANLIST_FIELD_NUMBER;
-        hash = (53 * hash) + getPokemonBanlist().hashCode();
-      }
-      if (hasPokemonCaughtTimestamp()) {
-        hash = (37 * hash) + POKEMON_CAUGHT_TIMESTAMP_FIELD_NUMBER;
-        hash = (53 * hash) + getPokemonCaughtTimestamp().hashCode();
+      switch (conditionCase_) {
+        case 3:
+          hash = (37 * hash) + WITH_PLAYER_LEVEL_FIELD_NUMBER;
+          hash = (53 * hash) + getWithPlayerLevel().hashCode();
+          break;
+        case 4:
+          hash = (37 * hash) + WITH_POKEMON_CP_LIMIT_FIELD_NUMBER;
+          hash = (53 * hash) + getWithPokemonCpLimit().hashCode();
+          break;
+        case 5:
+          hash = (37 * hash) + WITH_POKEMON_TYPE_FIELD_NUMBER;
+          hash = (53 * hash) + getWithPokemonType().hashCode();
+          break;
+        case 6:
+          hash = (37 * hash) + WITH_POKEMON_CATEGORY_FIELD_NUMBER;
+          hash = (53 * hash) + getWithPokemonCategory().hashCode();
+          break;
+        case 7:
+          hash = (37 * hash) + POKEMON_WHITELIST_FIELD_NUMBER;
+          hash = (53 * hash) + getPokemonWhitelist().hashCode();
+          break;
+        case 8:
+          hash = (37 * hash) + POKEMON_BANLIST_FIELD_NUMBER;
+          hash = (53 * hash) + getPokemonBanlist().hashCode();
+          break;
+        case 9:
+          hash = (37 * hash) + POKEMON_CAUGHT_TIMESTAMP_FIELD_NUMBER;
+          hash = (53 * hash) + getPokemonCaughtTimestamp().hashCode();
+          break;
+        case 0:
+        default:
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -6065,48 +6371,8 @@ private static final long serialVersionUID = 0L;
 
         minPokemonCount_ = 0;
 
-        if (withPlayerLevelBuilder_ == null) {
-          withPlayerLevel_ = null;
-        } else {
-          withPlayerLevel_ = null;
-          withPlayerLevelBuilder_ = null;
-        }
-        if (withPokemonCpLimitBuilder_ == null) {
-          withPokemonCpLimit_ = null;
-        } else {
-          withPokemonCpLimit_ = null;
-          withPokemonCpLimitBuilder_ = null;
-        }
-        if (withPokemonTypeBuilder_ == null) {
-          withPokemonType_ = null;
-        } else {
-          withPokemonType_ = null;
-          withPokemonTypeBuilder_ = null;
-        }
-        if (withPokemonCategoryBuilder_ == null) {
-          withPokemonCategory_ = null;
-        } else {
-          withPokemonCategory_ = null;
-          withPokemonCategoryBuilder_ = null;
-        }
-        if (pokemonWhitelistBuilder_ == null) {
-          pokemonWhitelist_ = null;
-        } else {
-          pokemonWhitelist_ = null;
-          pokemonWhitelistBuilder_ = null;
-        }
-        if (pokemonBanlistBuilder_ == null) {
-          pokemonBanlist_ = null;
-        } else {
-          pokemonBanlist_ = null;
-          pokemonBanlistBuilder_ = null;
-        }
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          pokemonCaughtTimestamp_ = null;
-        } else {
-          pokemonCaughtTimestamp_ = null;
-          pokemonCaughtTimestampBuilder_ = null;
-        }
+        conditionCase_ = 0;
+        condition_ = null;
         return this;
       }
 
@@ -6133,43 +6399,58 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public POGOProtos.Rpc.CombatLeagueProto.UnlockConditionProto buildPartial() {
         POGOProtos.Rpc.CombatLeagueProto.UnlockConditionProto result = new POGOProtos.Rpc.CombatLeagueProto.UnlockConditionProto(this);
+        if (conditionCase_ == 3) {
+          if (withPlayerLevelBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = withPlayerLevelBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 4) {
+          if (withPokemonCpLimitBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = withPokemonCpLimitBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 5) {
+          if (withPokemonTypeBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = withPokemonTypeBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 6) {
+          if (withPokemonCategoryBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = withPokemonCategoryBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 7) {
+          if (pokemonWhitelistBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = pokemonWhitelistBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 8) {
+          if (pokemonBanlistBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = pokemonBanlistBuilder_.build();
+          }
+        }
+        if (conditionCase_ == 9) {
+          if (pokemonCaughtTimestampBuilder_ == null) {
+            result.condition_ = condition_;
+          } else {
+            result.condition_ = pokemonCaughtTimestampBuilder_.build();
+          }
+        }
         result.type_ = type_;
         result.minPokemonCount_ = minPokemonCount_;
-        if (withPlayerLevelBuilder_ == null) {
-          result.withPlayerLevel_ = withPlayerLevel_;
-        } else {
-          result.withPlayerLevel_ = withPlayerLevelBuilder_.build();
-        }
-        if (withPokemonCpLimitBuilder_ == null) {
-          result.withPokemonCpLimit_ = withPokemonCpLimit_;
-        } else {
-          result.withPokemonCpLimit_ = withPokemonCpLimitBuilder_.build();
-        }
-        if (withPokemonTypeBuilder_ == null) {
-          result.withPokemonType_ = withPokemonType_;
-        } else {
-          result.withPokemonType_ = withPokemonTypeBuilder_.build();
-        }
-        if (withPokemonCategoryBuilder_ == null) {
-          result.withPokemonCategory_ = withPokemonCategory_;
-        } else {
-          result.withPokemonCategory_ = withPokemonCategoryBuilder_.build();
-        }
-        if (pokemonWhitelistBuilder_ == null) {
-          result.pokemonWhitelist_ = pokemonWhitelist_;
-        } else {
-          result.pokemonWhitelist_ = pokemonWhitelistBuilder_.build();
-        }
-        if (pokemonBanlistBuilder_ == null) {
-          result.pokemonBanlist_ = pokemonBanlist_;
-        } else {
-          result.pokemonBanlist_ = pokemonBanlistBuilder_.build();
-        }
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          result.pokemonCaughtTimestamp_ = pokemonCaughtTimestamp_;
-        } else {
-          result.pokemonCaughtTimestamp_ = pokemonCaughtTimestampBuilder_.build();
-        }
+        result.conditionCase_ = conditionCase_;
         onBuilt();
         return result;
       }
@@ -6224,26 +6505,38 @@ private static final long serialVersionUID = 0L;
         if (other.getMinPokemonCount() != 0) {
           setMinPokemonCount(other.getMinPokemonCount());
         }
-        if (other.hasWithPlayerLevel()) {
-          mergeWithPlayerLevel(other.getWithPlayerLevel());
-        }
-        if (other.hasWithPokemonCpLimit()) {
-          mergeWithPokemonCpLimit(other.getWithPokemonCpLimit());
-        }
-        if (other.hasWithPokemonType()) {
-          mergeWithPokemonType(other.getWithPokemonType());
-        }
-        if (other.hasWithPokemonCategory()) {
-          mergeWithPokemonCategory(other.getWithPokemonCategory());
-        }
-        if (other.hasPokemonWhitelist()) {
-          mergePokemonWhitelist(other.getPokemonWhitelist());
-        }
-        if (other.hasPokemonBanlist()) {
-          mergePokemonBanlist(other.getPokemonBanlist());
-        }
-        if (other.hasPokemonCaughtTimestamp()) {
-          mergePokemonCaughtTimestamp(other.getPokemonCaughtTimestamp());
+        switch (other.getConditionCase()) {
+          case WITH_PLAYER_LEVEL: {
+            mergeWithPlayerLevel(other.getWithPlayerLevel());
+            break;
+          }
+          case WITH_POKEMON_CP_LIMIT: {
+            mergeWithPokemonCpLimit(other.getWithPokemonCpLimit());
+            break;
+          }
+          case WITH_POKEMON_TYPE: {
+            mergeWithPokemonType(other.getWithPokemonType());
+            break;
+          }
+          case WITH_POKEMON_CATEGORY: {
+            mergeWithPokemonCategory(other.getWithPokemonCategory());
+            break;
+          }
+          case POKEMON_WHITELIST: {
+            mergePokemonWhitelist(other.getPokemonWhitelist());
+            break;
+          }
+          case POKEMON_BANLIST: {
+            mergePokemonBanlist(other.getPokemonBanlist());
+            break;
+          }
+          case POKEMON_CAUGHT_TIMESTAMP: {
+            mergePokemonCaughtTimestamp(other.getPokemonCaughtTimestamp());
+            break;
+          }
+          case CONDITION_NOT_SET: {
+            break;
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -6272,6 +6565,987 @@ private static final long serialVersionUID = 0L;
           }
         }
         return this;
+      }
+      private int conditionCase_ = 0;
+      private java.lang.Object condition_;
+      public ConditionCase
+          getConditionCase() {
+        return ConditionCase.forNumber(
+            conditionCase_);
+      }
+
+      public Builder clearCondition() {
+        conditionCase_ = 0;
+        condition_ = null;
+        onChanged();
+        return this;
+      }
+
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder> withPlayerLevelBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+       * @return Whether the withPlayerLevel field is set.
+       */
+      public boolean hasWithPlayerLevel() {
+        return conditionCase_ == 3;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+       * @return The withPlayerLevel.
+       */
+      public POGOProtos.Rpc.WithPlayerLevelProto getWithPlayerLevel() {
+        if (withPlayerLevelBuilder_ == null) {
+          if (conditionCase_ == 3) {
+            return (POGOProtos.Rpc.WithPlayerLevelProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 3) {
+            return withPlayerLevelBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+       */
+      public Builder setWithPlayerLevel(POGOProtos.Rpc.WithPlayerLevelProto value) {
+        if (withPlayerLevelBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          withPlayerLevelBuilder_.setMessage(value);
+        }
+        conditionCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+       */
+      public Builder setWithPlayerLevel(
+          POGOProtos.Rpc.WithPlayerLevelProto.Builder builderForValue) {
+        if (withPlayerLevelBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          withPlayerLevelBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+       */
+      public Builder mergeWithPlayerLevel(POGOProtos.Rpc.WithPlayerLevelProto value) {
+        if (withPlayerLevelBuilder_ == null) {
+          if (conditionCase_ == 3 &&
+              condition_ != POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.WithPlayerLevelProto.newBuilder((POGOProtos.Rpc.WithPlayerLevelProto) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 3) {
+            withPlayerLevelBuilder_.mergeFrom(value);
+          }
+          withPlayerLevelBuilder_.setMessage(value);
+        }
+        conditionCase_ = 3;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+       */
+      public Builder clearWithPlayerLevel() {
+        if (withPlayerLevelBuilder_ == null) {
+          if (conditionCase_ == 3) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 3) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          withPlayerLevelBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+       */
+      public POGOProtos.Rpc.WithPlayerLevelProto.Builder getWithPlayerLevelBuilder() {
+        return getWithPlayerLevelFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+       */
+      public POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder getWithPlayerLevelOrBuilder() {
+        if ((conditionCase_ == 3) && (withPlayerLevelBuilder_ != null)) {
+          return withPlayerLevelBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 3) {
+            return (POGOProtos.Rpc.WithPlayerLevelProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder> 
+          getWithPlayerLevelFieldBuilder() {
+        if (withPlayerLevelBuilder_ == null) {
+          if (!(conditionCase_ == 3)) {
+            condition_ = POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance();
+          }
+          withPlayerLevelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder>(
+                  (POGOProtos.Rpc.WithPlayerLevelProto) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 3;
+        onChanged();;
+        return withPlayerLevelBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder> withPokemonCpLimitBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+       * @return Whether the withPokemonCpLimit field is set.
+       */
+      public boolean hasWithPokemonCpLimit() {
+        return conditionCase_ == 4;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+       * @return The withPokemonCpLimit.
+       */
+      public POGOProtos.Rpc.WithPokemonCpLimitProto getWithPokemonCpLimit() {
+        if (withPokemonCpLimitBuilder_ == null) {
+          if (conditionCase_ == 4) {
+            return (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 4) {
+            return withPokemonCpLimitBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+       */
+      public Builder setWithPokemonCpLimit(POGOProtos.Rpc.WithPokemonCpLimitProto value) {
+        if (withPokemonCpLimitBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          withPokemonCpLimitBuilder_.setMessage(value);
+        }
+        conditionCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+       */
+      public Builder setWithPokemonCpLimit(
+          POGOProtos.Rpc.WithPokemonCpLimitProto.Builder builderForValue) {
+        if (withPokemonCpLimitBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          withPokemonCpLimitBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+       */
+      public Builder mergeWithPokemonCpLimit(POGOProtos.Rpc.WithPokemonCpLimitProto value) {
+        if (withPokemonCpLimitBuilder_ == null) {
+          if (conditionCase_ == 4 &&
+              condition_ != POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.WithPokemonCpLimitProto.newBuilder((POGOProtos.Rpc.WithPokemonCpLimitProto) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 4) {
+            withPokemonCpLimitBuilder_.mergeFrom(value);
+          }
+          withPokemonCpLimitBuilder_.setMessage(value);
+        }
+        conditionCase_ = 4;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+       */
+      public Builder clearWithPokemonCpLimit() {
+        if (withPokemonCpLimitBuilder_ == null) {
+          if (conditionCase_ == 4) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 4) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          withPokemonCpLimitBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonCpLimitProto.Builder getWithPokemonCpLimitBuilder() {
+        return getWithPokemonCpLimitFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder getWithPokemonCpLimitOrBuilder() {
+        if ((conditionCase_ == 4) && (withPokemonCpLimitBuilder_ != null)) {
+          return withPokemonCpLimitBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 4) {
+            return (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder> 
+          getWithPokemonCpLimitFieldBuilder() {
+        if (withPokemonCpLimitBuilder_ == null) {
+          if (!(conditionCase_ == 4)) {
+            condition_ = POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance();
+          }
+          withPokemonCpLimitBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder>(
+                  (POGOProtos.Rpc.WithPokemonCpLimitProto) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 4;
+        onChanged();;
+        return withPokemonCpLimitBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> withPokemonTypeBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+       * @return Whether the withPokemonType field is set.
+       */
+      public boolean hasWithPokemonType() {
+        return conditionCase_ == 5;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+       * @return The withPokemonType.
+       */
+      public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
+        if (withPokemonTypeBuilder_ == null) {
+          if (conditionCase_ == 5) {
+            return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 5) {
+            return withPokemonTypeBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+       */
+      public Builder setWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
+        if (withPokemonTypeBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          withPokemonTypeBuilder_.setMessage(value);
+        }
+        conditionCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+       */
+      public Builder setWithPokemonType(
+          POGOProtos.Rpc.WithPokemonTypeProto.Builder builderForValue) {
+        if (withPokemonTypeBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          withPokemonTypeBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+       */
+      public Builder mergeWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
+        if (withPokemonTypeBuilder_ == null) {
+          if (conditionCase_ == 5 &&
+              condition_ != POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.WithPokemonTypeProto.newBuilder((POGOProtos.Rpc.WithPokemonTypeProto) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 5) {
+            withPokemonTypeBuilder_.mergeFrom(value);
+          }
+          withPokemonTypeBuilder_.setMessage(value);
+        }
+        conditionCase_ = 5;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+       */
+      public Builder clearWithPokemonType() {
+        if (withPokemonTypeBuilder_ == null) {
+          if (conditionCase_ == 5) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 5) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          withPokemonTypeBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonTypeProto.Builder getWithPokemonTypeBuilder() {
+        return getWithPokemonTypeFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
+        if ((conditionCase_ == 5) && (withPokemonTypeBuilder_ != null)) {
+          return withPokemonTypeBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 5) {
+            return (POGOProtos.Rpc.WithPokemonTypeProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> 
+          getWithPokemonTypeFieldBuilder() {
+        if (withPokemonTypeBuilder_ == null) {
+          if (!(conditionCase_ == 5)) {
+            condition_ = POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance();
+          }
+          withPokemonTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder>(
+                  (POGOProtos.Rpc.WithPokemonTypeProto) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 5;
+        onChanged();;
+        return withPokemonTypeBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> withPokemonCategoryBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+       * @return Whether the withPokemonCategory field is set.
+       */
+      public boolean hasWithPokemonCategory() {
+        return conditionCase_ == 6;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+       * @return The withPokemonCategory.
+       */
+      public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
+        if (withPokemonCategoryBuilder_ == null) {
+          if (conditionCase_ == 6) {
+            return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 6) {
+            return withPokemonCategoryBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+       */
+      public Builder setWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
+        if (withPokemonCategoryBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          withPokemonCategoryBuilder_.setMessage(value);
+        }
+        conditionCase_ = 6;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+       */
+      public Builder setWithPokemonCategory(
+          POGOProtos.Rpc.WithPokemonCategoryProto.Builder builderForValue) {
+        if (withPokemonCategoryBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          withPokemonCategoryBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 6;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+       */
+      public Builder mergeWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
+        if (withPokemonCategoryBuilder_ == null) {
+          if (conditionCase_ == 6 &&
+              condition_ != POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.WithPokemonCategoryProto.newBuilder((POGOProtos.Rpc.WithPokemonCategoryProto) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 6) {
+            withPokemonCategoryBuilder_.mergeFrom(value);
+          }
+          withPokemonCategoryBuilder_.setMessage(value);
+        }
+        conditionCase_ = 6;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+       */
+      public Builder clearWithPokemonCategory() {
+        if (withPokemonCategoryBuilder_ == null) {
+          if (conditionCase_ == 6) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 6) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          withPokemonCategoryBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonCategoryProto.Builder getWithPokemonCategoryBuilder() {
+        return getWithPokemonCategoryFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+       */
+      public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
+        if ((conditionCase_ == 6) && (withPokemonCategoryBuilder_ != null)) {
+          return withPokemonCategoryBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 6) {
+            return (POGOProtos.Rpc.WithPokemonCategoryProto) condition_;
+          }
+          return POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> 
+          getWithPokemonCategoryFieldBuilder() {
+        if (withPokemonCategoryBuilder_ == null) {
+          if (!(conditionCase_ == 6)) {
+            condition_ = POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance();
+          }
+          withPokemonCategoryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder>(
+                  (POGOProtos.Rpc.WithPokemonCategoryProto) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 6;
+        onChanged();;
+        return withPokemonCategoryBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder> pokemonWhitelistBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+       * @return Whether the pokemonWhitelist field is set.
+       */
+      public boolean hasPokemonWhitelist() {
+        return conditionCase_ == 7;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+       * @return The pokemonWhitelist.
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist getPokemonWhitelist() {
+        if (pokemonWhitelistBuilder_ == null) {
+          if (conditionCase_ == 7) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 7) {
+            return pokemonWhitelistBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+       */
+      public Builder setPokemonWhitelist(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist value) {
+        if (pokemonWhitelistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          pokemonWhitelistBuilder_.setMessage(value);
+        }
+        conditionCase_ = 7;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+       */
+      public Builder setPokemonWhitelist(
+          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder builderForValue) {
+        if (pokemonWhitelistBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          pokemonWhitelistBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 7;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+       */
+      public Builder mergePokemonWhitelist(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist value) {
+        if (pokemonWhitelistBuilder_ == null) {
+          if (conditionCase_ == 7 &&
+              condition_ != POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.newBuilder((POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 7) {
+            pokemonWhitelistBuilder_.mergeFrom(value);
+          }
+          pokemonWhitelistBuilder_.setMessage(value);
+        }
+        conditionCase_ = 7;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+       */
+      public Builder clearPokemonWhitelist() {
+        if (pokemonWhitelistBuilder_ == null) {
+          if (conditionCase_ == 7) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 7) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          pokemonWhitelistBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder getPokemonWhitelistBuilder() {
+        return getPokemonWhitelistFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder getPokemonWhitelistOrBuilder() {
+        if ((conditionCase_ == 7) && (pokemonWhitelistBuilder_ != null)) {
+          return pokemonWhitelistBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 7) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder> 
+          getPokemonWhitelistFieldBuilder() {
+        if (pokemonWhitelistBuilder_ == null) {
+          if (!(conditionCase_ == 7)) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance();
+          }
+          pokemonWhitelistBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder>(
+                  (POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 7;
+        onChanged();;
+        return pokemonWhitelistBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder> pokemonBanlistBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+       * @return Whether the pokemonBanlist field is set.
+       */
+      public boolean hasPokemonBanlist() {
+        return conditionCase_ == 8;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+       * @return The pokemonBanlist.
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist getPokemonBanlist() {
+        if (pokemonBanlistBuilder_ == null) {
+          if (conditionCase_ == 8) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 8) {
+            return pokemonBanlistBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+       */
+      public Builder setPokemonBanlist(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist value) {
+        if (pokemonBanlistBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          pokemonBanlistBuilder_.setMessage(value);
+        }
+        conditionCase_ = 8;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+       */
+      public Builder setPokemonBanlist(
+          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder builderForValue) {
+        if (pokemonBanlistBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          pokemonBanlistBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 8;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+       */
+      public Builder mergePokemonBanlist(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist value) {
+        if (pokemonBanlistBuilder_ == null) {
+          if (conditionCase_ == 8 &&
+              condition_ != POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.newBuilder((POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 8) {
+            pokemonBanlistBuilder_.mergeFrom(value);
+          }
+          pokemonBanlistBuilder_.setMessage(value);
+        }
+        conditionCase_ = 8;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+       */
+      public Builder clearPokemonBanlist() {
+        if (pokemonBanlistBuilder_ == null) {
+          if (conditionCase_ == 8) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 8) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          pokemonBanlistBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder getPokemonBanlistBuilder() {
+        return getPokemonBanlistFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder getPokemonBanlistOrBuilder() {
+        if ((conditionCase_ == 8) && (pokemonBanlistBuilder_ != null)) {
+          return pokemonBanlistBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 8) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder> 
+          getPokemonBanlistFieldBuilder() {
+        if (pokemonBanlistBuilder_ == null) {
+          if (!(conditionCase_ == 8)) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance();
+          }
+          pokemonBanlistBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder>(
+                  (POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 8;
+        onChanged();;
+        return pokemonBanlistBuilder_;
+      }
+
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder> pokemonCaughtTimestampBuilder_;
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+       * @return Whether the pokemonCaughtTimestamp field is set.
+       */
+      public boolean hasPokemonCaughtTimestamp() {
+        return conditionCase_ == 9;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+       * @return The pokemonCaughtTimestamp.
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp getPokemonCaughtTimestamp() {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          if (conditionCase_ == 9) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+        } else {
+          if (conditionCase_ == 9) {
+            return pokemonCaughtTimestampBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+       */
+      public Builder setPokemonCaughtTimestamp(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp value) {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          condition_ = value;
+          onChanged();
+        } else {
+          pokemonCaughtTimestampBuilder_.setMessage(value);
+        }
+        conditionCase_ = 9;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+       */
+      public Builder setPokemonCaughtTimestamp(
+          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder builderForValue) {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          condition_ = builderForValue.build();
+          onChanged();
+        } else {
+          pokemonCaughtTimestampBuilder_.setMessage(builderForValue.build());
+        }
+        conditionCase_ = 9;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+       */
+      public Builder mergePokemonCaughtTimestamp(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp value) {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          if (conditionCase_ == 9 &&
+              condition_ != POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance()) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.newBuilder((POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_)
+                .mergeFrom(value).buildPartial();
+          } else {
+            condition_ = value;
+          }
+          onChanged();
+        } else {
+          if (conditionCase_ == 9) {
+            pokemonCaughtTimestampBuilder_.mergeFrom(value);
+          }
+          pokemonCaughtTimestampBuilder_.setMessage(value);
+        }
+        conditionCase_ = 9;
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+       */
+      public Builder clearPokemonCaughtTimestamp() {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          if (conditionCase_ == 9) {
+            conditionCase_ = 0;
+            condition_ = null;
+            onChanged();
+          }
+        } else {
+          if (conditionCase_ == 9) {
+            conditionCase_ = 0;
+            condition_ = null;
+          }
+          pokemonCaughtTimestampBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder getPokemonCaughtTimestampBuilder() {
+        return getPokemonCaughtTimestampFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+       */
+      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder() {
+        if ((conditionCase_ == 9) && (pokemonCaughtTimestampBuilder_ != null)) {
+          return pokemonCaughtTimestampBuilder_.getMessageOrBuilder();
+        } else {
+          if (conditionCase_ == 9) {
+            return (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_;
+          }
+          return POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+        }
+      }
+      /**
+       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder> 
+          getPokemonCaughtTimestampFieldBuilder() {
+        if (pokemonCaughtTimestampBuilder_ == null) {
+          if (!(conditionCase_ == 9)) {
+            condition_ = POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance();
+          }
+          pokemonCaughtTimestampBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder>(
+                  (POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp) condition_,
+                  getParentForChildren(),
+                  isClean());
+          condition_ = null;
+        }
+        conditionCase_ = 9;
+        onChanged();;
+        return pokemonCaughtTimestampBuilder_;
       }
 
       private int type_ = 0;
@@ -6354,839 +7628,6 @@ private static final long serialVersionUID = 0L;
         minPokemonCount_ = 0;
         onChanged();
         return this;
-      }
-
-      private POGOProtos.Rpc.WithPlayerLevelProto withPlayerLevel_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder> withPlayerLevelBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-       * @return Whether the withPlayerLevel field is set.
-       */
-      public boolean hasWithPlayerLevel() {
-        return withPlayerLevelBuilder_ != null || withPlayerLevel_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-       * @return The withPlayerLevel.
-       */
-      public POGOProtos.Rpc.WithPlayerLevelProto getWithPlayerLevel() {
-        if (withPlayerLevelBuilder_ == null) {
-          return withPlayerLevel_ == null ? POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance() : withPlayerLevel_;
-        } else {
-          return withPlayerLevelBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-       */
-      public Builder setWithPlayerLevel(POGOProtos.Rpc.WithPlayerLevelProto value) {
-        if (withPlayerLevelBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          withPlayerLevel_ = value;
-          onChanged();
-        } else {
-          withPlayerLevelBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-       */
-      public Builder setWithPlayerLevel(
-          POGOProtos.Rpc.WithPlayerLevelProto.Builder builderForValue) {
-        if (withPlayerLevelBuilder_ == null) {
-          withPlayerLevel_ = builderForValue.build();
-          onChanged();
-        } else {
-          withPlayerLevelBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-       */
-      public Builder mergeWithPlayerLevel(POGOProtos.Rpc.WithPlayerLevelProto value) {
-        if (withPlayerLevelBuilder_ == null) {
-          if (withPlayerLevel_ != null) {
-            withPlayerLevel_ =
-              POGOProtos.Rpc.WithPlayerLevelProto.newBuilder(withPlayerLevel_).mergeFrom(value).buildPartial();
-          } else {
-            withPlayerLevel_ = value;
-          }
-          onChanged();
-        } else {
-          withPlayerLevelBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-       */
-      public Builder clearWithPlayerLevel() {
-        if (withPlayerLevelBuilder_ == null) {
-          withPlayerLevel_ = null;
-          onChanged();
-        } else {
-          withPlayerLevel_ = null;
-          withPlayerLevelBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-       */
-      public POGOProtos.Rpc.WithPlayerLevelProto.Builder getWithPlayerLevelBuilder() {
-        
-        onChanged();
-        return getWithPlayerLevelFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-       */
-      public POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder getWithPlayerLevelOrBuilder() {
-        if (withPlayerLevelBuilder_ != null) {
-          return withPlayerLevelBuilder_.getMessageOrBuilder();
-        } else {
-          return withPlayerLevel_ == null ?
-              POGOProtos.Rpc.WithPlayerLevelProto.getDefaultInstance() : withPlayerLevel_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPlayerLevelProto with_player_level = 3;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder> 
-          getWithPlayerLevelFieldBuilder() {
-        if (withPlayerLevelBuilder_ == null) {
-          withPlayerLevelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.WithPlayerLevelProto, POGOProtos.Rpc.WithPlayerLevelProto.Builder, POGOProtos.Rpc.WithPlayerLevelProtoOrBuilder>(
-                  getWithPlayerLevel(),
-                  getParentForChildren(),
-                  isClean());
-          withPlayerLevel_ = null;
-        }
-        return withPlayerLevelBuilder_;
-      }
-
-      private POGOProtos.Rpc.WithPokemonCpLimitProto withPokemonCpLimit_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder> withPokemonCpLimitBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-       * @return Whether the withPokemonCpLimit field is set.
-       */
-      public boolean hasWithPokemonCpLimit() {
-        return withPokemonCpLimitBuilder_ != null || withPokemonCpLimit_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-       * @return The withPokemonCpLimit.
-       */
-      public POGOProtos.Rpc.WithPokemonCpLimitProto getWithPokemonCpLimit() {
-        if (withPokemonCpLimitBuilder_ == null) {
-          return withPokemonCpLimit_ == null ? POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance() : withPokemonCpLimit_;
-        } else {
-          return withPokemonCpLimitBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-       */
-      public Builder setWithPokemonCpLimit(POGOProtos.Rpc.WithPokemonCpLimitProto value) {
-        if (withPokemonCpLimitBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          withPokemonCpLimit_ = value;
-          onChanged();
-        } else {
-          withPokemonCpLimitBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-       */
-      public Builder setWithPokemonCpLimit(
-          POGOProtos.Rpc.WithPokemonCpLimitProto.Builder builderForValue) {
-        if (withPokemonCpLimitBuilder_ == null) {
-          withPokemonCpLimit_ = builderForValue.build();
-          onChanged();
-        } else {
-          withPokemonCpLimitBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-       */
-      public Builder mergeWithPokemonCpLimit(POGOProtos.Rpc.WithPokemonCpLimitProto value) {
-        if (withPokemonCpLimitBuilder_ == null) {
-          if (withPokemonCpLimit_ != null) {
-            withPokemonCpLimit_ =
-              POGOProtos.Rpc.WithPokemonCpLimitProto.newBuilder(withPokemonCpLimit_).mergeFrom(value).buildPartial();
-          } else {
-            withPokemonCpLimit_ = value;
-          }
-          onChanged();
-        } else {
-          withPokemonCpLimitBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-       */
-      public Builder clearWithPokemonCpLimit() {
-        if (withPokemonCpLimitBuilder_ == null) {
-          withPokemonCpLimit_ = null;
-          onChanged();
-        } else {
-          withPokemonCpLimit_ = null;
-          withPokemonCpLimitBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonCpLimitProto.Builder getWithPokemonCpLimitBuilder() {
-        
-        onChanged();
-        return getWithPokemonCpLimitFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder getWithPokemonCpLimitOrBuilder() {
-        if (withPokemonCpLimitBuilder_ != null) {
-          return withPokemonCpLimitBuilder_.getMessageOrBuilder();
-        } else {
-          return withPokemonCpLimit_ == null ?
-              POGOProtos.Rpc.WithPokemonCpLimitProto.getDefaultInstance() : withPokemonCpLimit_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCpLimitProto with_pokemon_cp_limit = 4;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder> 
-          getWithPokemonCpLimitFieldBuilder() {
-        if (withPokemonCpLimitBuilder_ == null) {
-          withPokemonCpLimitBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.WithPokemonCpLimitProto, POGOProtos.Rpc.WithPokemonCpLimitProto.Builder, POGOProtos.Rpc.WithPokemonCpLimitProtoOrBuilder>(
-                  getWithPokemonCpLimit(),
-                  getParentForChildren(),
-                  isClean());
-          withPokemonCpLimit_ = null;
-        }
-        return withPokemonCpLimitBuilder_;
-      }
-
-      private POGOProtos.Rpc.WithPokemonTypeProto withPokemonType_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> withPokemonTypeBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-       * @return Whether the withPokemonType field is set.
-       */
-      public boolean hasWithPokemonType() {
-        return withPokemonTypeBuilder_ != null || withPokemonType_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-       * @return The withPokemonType.
-       */
-      public POGOProtos.Rpc.WithPokemonTypeProto getWithPokemonType() {
-        if (withPokemonTypeBuilder_ == null) {
-          return withPokemonType_ == null ? POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance() : withPokemonType_;
-        } else {
-          return withPokemonTypeBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-       */
-      public Builder setWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
-        if (withPokemonTypeBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          withPokemonType_ = value;
-          onChanged();
-        } else {
-          withPokemonTypeBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-       */
-      public Builder setWithPokemonType(
-          POGOProtos.Rpc.WithPokemonTypeProto.Builder builderForValue) {
-        if (withPokemonTypeBuilder_ == null) {
-          withPokemonType_ = builderForValue.build();
-          onChanged();
-        } else {
-          withPokemonTypeBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-       */
-      public Builder mergeWithPokemonType(POGOProtos.Rpc.WithPokemonTypeProto value) {
-        if (withPokemonTypeBuilder_ == null) {
-          if (withPokemonType_ != null) {
-            withPokemonType_ =
-              POGOProtos.Rpc.WithPokemonTypeProto.newBuilder(withPokemonType_).mergeFrom(value).buildPartial();
-          } else {
-            withPokemonType_ = value;
-          }
-          onChanged();
-        } else {
-          withPokemonTypeBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-       */
-      public Builder clearWithPokemonType() {
-        if (withPokemonTypeBuilder_ == null) {
-          withPokemonType_ = null;
-          onChanged();
-        } else {
-          withPokemonType_ = null;
-          withPokemonTypeBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonTypeProto.Builder getWithPokemonTypeBuilder() {
-        
-        onChanged();
-        return getWithPokemonTypeFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder getWithPokemonTypeOrBuilder() {
-        if (withPokemonTypeBuilder_ != null) {
-          return withPokemonTypeBuilder_.getMessageOrBuilder();
-        } else {
-          return withPokemonType_ == null ?
-              POGOProtos.Rpc.WithPokemonTypeProto.getDefaultInstance() : withPokemonType_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonTypeProto with_pokemon_type = 5;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder> 
-          getWithPokemonTypeFieldBuilder() {
-        if (withPokemonTypeBuilder_ == null) {
-          withPokemonTypeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.WithPokemonTypeProto, POGOProtos.Rpc.WithPokemonTypeProto.Builder, POGOProtos.Rpc.WithPokemonTypeProtoOrBuilder>(
-                  getWithPokemonType(),
-                  getParentForChildren(),
-                  isClean());
-          withPokemonType_ = null;
-        }
-        return withPokemonTypeBuilder_;
-      }
-
-      private POGOProtos.Rpc.WithPokemonCategoryProto withPokemonCategory_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> withPokemonCategoryBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-       * @return Whether the withPokemonCategory field is set.
-       */
-      public boolean hasWithPokemonCategory() {
-        return withPokemonCategoryBuilder_ != null || withPokemonCategory_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-       * @return The withPokemonCategory.
-       */
-      public POGOProtos.Rpc.WithPokemonCategoryProto getWithPokemonCategory() {
-        if (withPokemonCategoryBuilder_ == null) {
-          return withPokemonCategory_ == null ? POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance() : withPokemonCategory_;
-        } else {
-          return withPokemonCategoryBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-       */
-      public Builder setWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
-        if (withPokemonCategoryBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          withPokemonCategory_ = value;
-          onChanged();
-        } else {
-          withPokemonCategoryBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-       */
-      public Builder setWithPokemonCategory(
-          POGOProtos.Rpc.WithPokemonCategoryProto.Builder builderForValue) {
-        if (withPokemonCategoryBuilder_ == null) {
-          withPokemonCategory_ = builderForValue.build();
-          onChanged();
-        } else {
-          withPokemonCategoryBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-       */
-      public Builder mergeWithPokemonCategory(POGOProtos.Rpc.WithPokemonCategoryProto value) {
-        if (withPokemonCategoryBuilder_ == null) {
-          if (withPokemonCategory_ != null) {
-            withPokemonCategory_ =
-              POGOProtos.Rpc.WithPokemonCategoryProto.newBuilder(withPokemonCategory_).mergeFrom(value).buildPartial();
-          } else {
-            withPokemonCategory_ = value;
-          }
-          onChanged();
-        } else {
-          withPokemonCategoryBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-       */
-      public Builder clearWithPokemonCategory() {
-        if (withPokemonCategoryBuilder_ == null) {
-          withPokemonCategory_ = null;
-          onChanged();
-        } else {
-          withPokemonCategory_ = null;
-          withPokemonCategoryBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonCategoryProto.Builder getWithPokemonCategoryBuilder() {
-        
-        onChanged();
-        return getWithPokemonCategoryFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-       */
-      public POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder getWithPokemonCategoryOrBuilder() {
-        if (withPokemonCategoryBuilder_ != null) {
-          return withPokemonCategoryBuilder_.getMessageOrBuilder();
-        } else {
-          return withPokemonCategory_ == null ?
-              POGOProtos.Rpc.WithPokemonCategoryProto.getDefaultInstance() : withPokemonCategory_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.WithPokemonCategoryProto with_pokemon_category = 6;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder> 
-          getWithPokemonCategoryFieldBuilder() {
-        if (withPokemonCategoryBuilder_ == null) {
-          withPokemonCategoryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.WithPokemonCategoryProto, POGOProtos.Rpc.WithPokemonCategoryProto.Builder, POGOProtos.Rpc.WithPokemonCategoryProtoOrBuilder>(
-                  getWithPokemonCategory(),
-                  getParentForChildren(),
-                  isClean());
-          withPokemonCategory_ = null;
-        }
-        return withPokemonCategoryBuilder_;
-      }
-
-      private POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemonWhitelist_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder> pokemonWhitelistBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-       * @return Whether the pokemonWhitelist field is set.
-       */
-      public boolean hasPokemonWhitelist() {
-        return pokemonWhitelistBuilder_ != null || pokemonWhitelist_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-       * @return The pokemonWhitelist.
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist getPokemonWhitelist() {
-        if (pokemonWhitelistBuilder_ == null) {
-          return pokemonWhitelist_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance() : pokemonWhitelist_;
-        } else {
-          return pokemonWhitelistBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-       */
-      public Builder setPokemonWhitelist(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist value) {
-        if (pokemonWhitelistBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pokemonWhitelist_ = value;
-          onChanged();
-        } else {
-          pokemonWhitelistBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-       */
-      public Builder setPokemonWhitelist(
-          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder builderForValue) {
-        if (pokemonWhitelistBuilder_ == null) {
-          pokemonWhitelist_ = builderForValue.build();
-          onChanged();
-        } else {
-          pokemonWhitelistBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-       */
-      public Builder mergePokemonWhitelist(POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist value) {
-        if (pokemonWhitelistBuilder_ == null) {
-          if (pokemonWhitelist_ != null) {
-            pokemonWhitelist_ =
-              POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.newBuilder(pokemonWhitelist_).mergeFrom(value).buildPartial();
-          } else {
-            pokemonWhitelist_ = value;
-          }
-          onChanged();
-        } else {
-          pokemonWhitelistBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-       */
-      public Builder clearPokemonWhitelist() {
-        if (pokemonWhitelistBuilder_ == null) {
-          pokemonWhitelist_ = null;
-          onChanged();
-        } else {
-          pokemonWhitelist_ = null;
-          pokemonWhitelistBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder getPokemonWhitelistBuilder() {
-        
-        onChanged();
-        return getPokemonWhitelistFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder getPokemonWhitelistOrBuilder() {
-        if (pokemonWhitelistBuilder_ != null) {
-          return pokemonWhitelistBuilder_.getMessageOrBuilder();
-        } else {
-          return pokemonWhitelist_ == null ?
-              POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.getDefaultInstance() : pokemonWhitelist_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist pokemon_whitelist = 7;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder> 
-          getPokemonWhitelistFieldBuilder() {
-        if (pokemonWhitelistBuilder_ == null) {
-          pokemonWhitelistBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonWhitelistOrBuilder>(
-                  getPokemonWhitelist(),
-                  getParentForChildren(),
-                  isClean());
-          pokemonWhitelist_ = null;
-        }
-        return pokemonWhitelistBuilder_;
-      }
-
-      private POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemonBanlist_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder> pokemonBanlistBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-       * @return Whether the pokemonBanlist field is set.
-       */
-      public boolean hasPokemonBanlist() {
-        return pokemonBanlistBuilder_ != null || pokemonBanlist_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-       * @return The pokemonBanlist.
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist getPokemonBanlist() {
-        if (pokemonBanlistBuilder_ == null) {
-          return pokemonBanlist_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance() : pokemonBanlist_;
-        } else {
-          return pokemonBanlistBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-       */
-      public Builder setPokemonBanlist(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist value) {
-        if (pokemonBanlistBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pokemonBanlist_ = value;
-          onChanged();
-        } else {
-          pokemonBanlistBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-       */
-      public Builder setPokemonBanlist(
-          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder builderForValue) {
-        if (pokemonBanlistBuilder_ == null) {
-          pokemonBanlist_ = builderForValue.build();
-          onChanged();
-        } else {
-          pokemonBanlistBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-       */
-      public Builder mergePokemonBanlist(POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist value) {
-        if (pokemonBanlistBuilder_ == null) {
-          if (pokemonBanlist_ != null) {
-            pokemonBanlist_ =
-              POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.newBuilder(pokemonBanlist_).mergeFrom(value).buildPartial();
-          } else {
-            pokemonBanlist_ = value;
-          }
-          onChanged();
-        } else {
-          pokemonBanlistBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-       */
-      public Builder clearPokemonBanlist() {
-        if (pokemonBanlistBuilder_ == null) {
-          pokemonBanlist_ = null;
-          onChanged();
-        } else {
-          pokemonBanlist_ = null;
-          pokemonBanlistBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder getPokemonBanlistBuilder() {
-        
-        onChanged();
-        return getPokemonBanlistFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder getPokemonBanlistOrBuilder() {
-        if (pokemonBanlistBuilder_ != null) {
-          return pokemonBanlistBuilder_.getMessageOrBuilder();
-        } else {
-          return pokemonBanlist_ == null ?
-              POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.getDefaultInstance() : pokemonBanlist_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist pokemon_banlist = 8;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder> 
-          getPokemonBanlistFieldBuilder() {
-        if (pokemonBanlistBuilder_ == null) {
-          pokemonBanlistBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlist.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonBanlistOrBuilder>(
-                  getPokemonBanlist(),
-                  getParentForChildren(),
-                  isClean());
-          pokemonBanlist_ = null;
-        }
-        return pokemonBanlistBuilder_;
-      }
-
-      private POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemonCaughtTimestamp_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder> pokemonCaughtTimestampBuilder_;
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-       * @return Whether the pokemonCaughtTimestamp field is set.
-       */
-      public boolean hasPokemonCaughtTimestamp() {
-        return pokemonCaughtTimestampBuilder_ != null || pokemonCaughtTimestamp_ != null;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-       * @return The pokemonCaughtTimestamp.
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp getPokemonCaughtTimestamp() {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          return pokemonCaughtTimestamp_ == null ? POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance() : pokemonCaughtTimestamp_;
-        } else {
-          return pokemonCaughtTimestampBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-       */
-      public Builder setPokemonCaughtTimestamp(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp value) {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pokemonCaughtTimestamp_ = value;
-          onChanged();
-        } else {
-          pokemonCaughtTimestampBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-       */
-      public Builder setPokemonCaughtTimestamp(
-          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder builderForValue) {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          pokemonCaughtTimestamp_ = builderForValue.build();
-          onChanged();
-        } else {
-          pokemonCaughtTimestampBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-       */
-      public Builder mergePokemonCaughtTimestamp(POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp value) {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          if (pokemonCaughtTimestamp_ != null) {
-            pokemonCaughtTimestamp_ =
-              POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.newBuilder(pokemonCaughtTimestamp_).mergeFrom(value).buildPartial();
-          } else {
-            pokemonCaughtTimestamp_ = value;
-          }
-          onChanged();
-        } else {
-          pokemonCaughtTimestampBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-       */
-      public Builder clearPokemonCaughtTimestamp() {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          pokemonCaughtTimestamp_ = null;
-          onChanged();
-        } else {
-          pokemonCaughtTimestamp_ = null;
-          pokemonCaughtTimestampBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder getPokemonCaughtTimestampBuilder() {
-        
-        onChanged();
-        return getPokemonCaughtTimestampFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-       */
-      public POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder getPokemonCaughtTimestampOrBuilder() {
-        if (pokemonCaughtTimestampBuilder_ != null) {
-          return pokemonCaughtTimestampBuilder_.getMessageOrBuilder();
-        } else {
-          return pokemonCaughtTimestamp_ == null ?
-              POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.getDefaultInstance() : pokemonCaughtTimestamp_;
-        }
-      }
-      /**
-       * <code>.POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp pokemon_caught_timestamp = 9;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder> 
-          getPokemonCaughtTimestampFieldBuilder() {
-        if (pokemonCaughtTimestampBuilder_ == null) {
-          pokemonCaughtTimestampBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestamp.Builder, POGOProtos.Rpc.CombatLeagueProto.PokemonCaughtTimestampOrBuilder>(
-                  getPokemonCaughtTimestamp(),
-                  getParentForChildren(),
-                  isClean());
-          pokemonCaughtTimestamp_ = null;
-        }
-        return pokemonCaughtTimestampBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(

@@ -195,6 +195,8 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
      */
     POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder getExplicitBucketsOrBuilder();
+
+    public POGOProtos.Rpc.Distribution.BucketOptions.BucketTypeCase getBucketTypeCase();
   }
   /**
    * Protobuf type {@code POGOProtos.Rpc.Distribution.BucketOptions}
@@ -243,41 +245,44 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder subBuilder = null;
-              if (linearBuckets_ != null) {
-                subBuilder = linearBuckets_.toBuilder();
+              if (bucketTypeCase_ == 1) {
+                subBuilder = ((POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_).toBuilder();
               }
-              linearBuckets_ = input.readMessage(POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.parser(), extensionRegistry);
+              bucketType_ =
+                  input.readMessage(POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(linearBuckets_);
-                linearBuckets_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_);
+                bucketType_ = subBuilder.buildPartial();
               }
-
+              bucketTypeCase_ = 1;
               break;
             }
             case 18: {
               POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder subBuilder = null;
-              if (exponentialBuckets_ != null) {
-                subBuilder = exponentialBuckets_.toBuilder();
+              if (bucketTypeCase_ == 2) {
+                subBuilder = ((POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_).toBuilder();
               }
-              exponentialBuckets_ = input.readMessage(POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.parser(), extensionRegistry);
+              bucketType_ =
+                  input.readMessage(POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(exponentialBuckets_);
-                exponentialBuckets_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_);
+                bucketType_ = subBuilder.buildPartial();
               }
-
+              bucketTypeCase_ = 2;
               break;
             }
             case 26: {
               POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder subBuilder = null;
-              if (explicitBuckets_ != null) {
-                subBuilder = explicitBuckets_.toBuilder();
+              if (bucketTypeCase_ == 3) {
+                subBuilder = ((POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_).toBuilder();
               }
-              explicitBuckets_ = input.readMessage(POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.parser(), extensionRegistry);
+              bucketType_ =
+                  input.readMessage(POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(explicitBuckets_);
-                explicitBuckets_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom((POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_);
+                bucketType_ = subBuilder.buildPartial();
               }
-
+              bucketTypeCase_ = 3;
               break;
             }
             default: {
@@ -2178,73 +2183,131 @@ private static final long serialVersionUID = 0L;
 
     }
 
+    private int bucketTypeCase_ = 0;
+    private java.lang.Object bucketType_;
+    public enum BucketTypeCase
+        implements com.google.protobuf.Internal.EnumLite,
+            com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+      LINEAR_BUCKETS(1),
+      EXPONENTIAL_BUCKETS(2),
+      EXPLICIT_BUCKETS(3),
+      BUCKETTYPE_NOT_SET(0);
+      private final int value;
+      private BucketTypeCase(int value) {
+        this.value = value;
+      }
+      /**
+       * @param value The number of the enum to look for.
+       * @return The enum associated with the given number.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BucketTypeCase valueOf(int value) {
+        return forNumber(value);
+      }
+
+      public static BucketTypeCase forNumber(int value) {
+        switch (value) {
+          case 1: return LINEAR_BUCKETS;
+          case 2: return EXPONENTIAL_BUCKETS;
+          case 3: return EXPLICIT_BUCKETS;
+          case 0: return BUCKETTYPE_NOT_SET;
+          default: return null;
+        }
+      }
+      public int getNumber() {
+        return this.value;
+      }
+    };
+
+    public BucketTypeCase
+    getBucketTypeCase() {
+      return BucketTypeCase.forNumber(
+          bucketTypeCase_);
+    }
+
     public static final int LINEAR_BUCKETS_FIELD_NUMBER = 1;
-    private POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linearBuckets_;
     /**
      * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
      * @return Whether the linearBuckets field is set.
      */
     public boolean hasLinearBuckets() {
-      return linearBuckets_ != null;
+      return bucketTypeCase_ == 1;
     }
     /**
      * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
      * @return The linearBuckets.
      */
     public POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets getLinearBuckets() {
-      return linearBuckets_ == null ? POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance() : linearBuckets_;
+      if (bucketTypeCase_ == 1) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_;
+      }
+      return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
     }
     /**
      * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
      */
     public POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder getLinearBucketsOrBuilder() {
-      return getLinearBuckets();
+      if (bucketTypeCase_ == 1) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_;
+      }
+      return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
     }
 
     public static final int EXPONENTIAL_BUCKETS_FIELD_NUMBER = 2;
-    private POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponentialBuckets_;
     /**
      * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
      * @return Whether the exponentialBuckets field is set.
      */
     public boolean hasExponentialBuckets() {
-      return exponentialBuckets_ != null;
+      return bucketTypeCase_ == 2;
     }
     /**
      * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
      * @return The exponentialBuckets.
      */
     public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets getExponentialBuckets() {
-      return exponentialBuckets_ == null ? POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance() : exponentialBuckets_;
+      if (bucketTypeCase_ == 2) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_;
+      }
+      return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
     }
     /**
      * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
      */
     public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder getExponentialBucketsOrBuilder() {
-      return getExponentialBuckets();
+      if (bucketTypeCase_ == 2) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_;
+      }
+      return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
     }
 
     public static final int EXPLICIT_BUCKETS_FIELD_NUMBER = 3;
-    private POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicitBuckets_;
     /**
      * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
      * @return Whether the explicitBuckets field is set.
      */
     public boolean hasExplicitBuckets() {
-      return explicitBuckets_ != null;
+      return bucketTypeCase_ == 3;
     }
     /**
      * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
      * @return The explicitBuckets.
      */
     public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets getExplicitBuckets() {
-      return explicitBuckets_ == null ? POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance() : explicitBuckets_;
+      if (bucketTypeCase_ == 3) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_;
+      }
+      return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
     }
     /**
      * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
      */
     public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder getExplicitBucketsOrBuilder() {
-      return getExplicitBuckets();
+      if (bucketTypeCase_ == 3) {
+         return (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_;
+      }
+      return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2261,14 +2324,14 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (linearBuckets_ != null) {
-        output.writeMessage(1, getLinearBuckets());
+      if (bucketTypeCase_ == 1) {
+        output.writeMessage(1, (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_);
       }
-      if (exponentialBuckets_ != null) {
-        output.writeMessage(2, getExponentialBuckets());
+      if (bucketTypeCase_ == 2) {
+        output.writeMessage(2, (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_);
       }
-      if (explicitBuckets_ != null) {
-        output.writeMessage(3, getExplicitBuckets());
+      if (bucketTypeCase_ == 3) {
+        output.writeMessage(3, (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_);
       }
       unknownFields.writeTo(output);
     }
@@ -2279,17 +2342,17 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (linearBuckets_ != null) {
+      if (bucketTypeCase_ == 1) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getLinearBuckets());
+          .computeMessageSize(1, (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_);
       }
-      if (exponentialBuckets_ != null) {
+      if (bucketTypeCase_ == 2) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getExponentialBuckets());
+          .computeMessageSize(2, (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_);
       }
-      if (explicitBuckets_ != null) {
+      if (bucketTypeCase_ == 3) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getExplicitBuckets());
+          .computeMessageSize(3, (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2306,20 +2369,22 @@ private static final long serialVersionUID = 0L;
       }
       POGOProtos.Rpc.Distribution.BucketOptions other = (POGOProtos.Rpc.Distribution.BucketOptions) obj;
 
-      if (hasLinearBuckets() != other.hasLinearBuckets()) return false;
-      if (hasLinearBuckets()) {
-        if (!getLinearBuckets()
-            .equals(other.getLinearBuckets())) return false;
-      }
-      if (hasExponentialBuckets() != other.hasExponentialBuckets()) return false;
-      if (hasExponentialBuckets()) {
-        if (!getExponentialBuckets()
-            .equals(other.getExponentialBuckets())) return false;
-      }
-      if (hasExplicitBuckets() != other.hasExplicitBuckets()) return false;
-      if (hasExplicitBuckets()) {
-        if (!getExplicitBuckets()
-            .equals(other.getExplicitBuckets())) return false;
+      if (!getBucketTypeCase().equals(other.getBucketTypeCase())) return false;
+      switch (bucketTypeCase_) {
+        case 1:
+          if (!getLinearBuckets()
+              .equals(other.getLinearBuckets())) return false;
+          break;
+        case 2:
+          if (!getExponentialBuckets()
+              .equals(other.getExponentialBuckets())) return false;
+          break;
+        case 3:
+          if (!getExplicitBuckets()
+              .equals(other.getExplicitBuckets())) return false;
+          break;
+        case 0:
+        default:
       }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
@@ -2332,17 +2397,21 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasLinearBuckets()) {
-        hash = (37 * hash) + LINEAR_BUCKETS_FIELD_NUMBER;
-        hash = (53 * hash) + getLinearBuckets().hashCode();
-      }
-      if (hasExponentialBuckets()) {
-        hash = (37 * hash) + EXPONENTIAL_BUCKETS_FIELD_NUMBER;
-        hash = (53 * hash) + getExponentialBuckets().hashCode();
-      }
-      if (hasExplicitBuckets()) {
-        hash = (37 * hash) + EXPLICIT_BUCKETS_FIELD_NUMBER;
-        hash = (53 * hash) + getExplicitBuckets().hashCode();
+      switch (bucketTypeCase_) {
+        case 1:
+          hash = (37 * hash) + LINEAR_BUCKETS_FIELD_NUMBER;
+          hash = (53 * hash) + getLinearBuckets().hashCode();
+          break;
+        case 2:
+          hash = (37 * hash) + EXPONENTIAL_BUCKETS_FIELD_NUMBER;
+          hash = (53 * hash) + getExponentialBuckets().hashCode();
+          break;
+        case 3:
+          hash = (37 * hash) + EXPLICIT_BUCKETS_FIELD_NUMBER;
+          hash = (53 * hash) + getExplicitBuckets().hashCode();
+          break;
+        case 0:
+        default:
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -2477,24 +2546,8 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (linearBucketsBuilder_ == null) {
-          linearBuckets_ = null;
-        } else {
-          linearBuckets_ = null;
-          linearBucketsBuilder_ = null;
-        }
-        if (exponentialBucketsBuilder_ == null) {
-          exponentialBuckets_ = null;
-        } else {
-          exponentialBuckets_ = null;
-          exponentialBucketsBuilder_ = null;
-        }
-        if (explicitBucketsBuilder_ == null) {
-          explicitBuckets_ = null;
-        } else {
-          explicitBuckets_ = null;
-          explicitBucketsBuilder_ = null;
-        }
+        bucketTypeCase_ = 0;
+        bucketType_ = null;
         return this;
       }
 
@@ -2521,21 +2574,28 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public POGOProtos.Rpc.Distribution.BucketOptions buildPartial() {
         POGOProtos.Rpc.Distribution.BucketOptions result = new POGOProtos.Rpc.Distribution.BucketOptions(this);
-        if (linearBucketsBuilder_ == null) {
-          result.linearBuckets_ = linearBuckets_;
-        } else {
-          result.linearBuckets_ = linearBucketsBuilder_.build();
+        if (bucketTypeCase_ == 1) {
+          if (linearBucketsBuilder_ == null) {
+            result.bucketType_ = bucketType_;
+          } else {
+            result.bucketType_ = linearBucketsBuilder_.build();
+          }
         }
-        if (exponentialBucketsBuilder_ == null) {
-          result.exponentialBuckets_ = exponentialBuckets_;
-        } else {
-          result.exponentialBuckets_ = exponentialBucketsBuilder_.build();
+        if (bucketTypeCase_ == 2) {
+          if (exponentialBucketsBuilder_ == null) {
+            result.bucketType_ = bucketType_;
+          } else {
+            result.bucketType_ = exponentialBucketsBuilder_.build();
+          }
         }
-        if (explicitBucketsBuilder_ == null) {
-          result.explicitBuckets_ = explicitBuckets_;
-        } else {
-          result.explicitBuckets_ = explicitBucketsBuilder_.build();
+        if (bucketTypeCase_ == 3) {
+          if (explicitBucketsBuilder_ == null) {
+            result.bucketType_ = bucketType_;
+          } else {
+            result.bucketType_ = explicitBucketsBuilder_.build();
+          }
         }
+        result.bucketTypeCase_ = bucketTypeCase_;
         onBuilt();
         return result;
       }
@@ -2584,14 +2644,22 @@ private static final long serialVersionUID = 0L;
 
       public Builder mergeFrom(POGOProtos.Rpc.Distribution.BucketOptions other) {
         if (other == POGOProtos.Rpc.Distribution.BucketOptions.getDefaultInstance()) return this;
-        if (other.hasLinearBuckets()) {
-          mergeLinearBuckets(other.getLinearBuckets());
-        }
-        if (other.hasExponentialBuckets()) {
-          mergeExponentialBuckets(other.getExponentialBuckets());
-        }
-        if (other.hasExplicitBuckets()) {
-          mergeExplicitBuckets(other.getExplicitBuckets());
+        switch (other.getBucketTypeCase()) {
+          case LINEAR_BUCKETS: {
+            mergeLinearBuckets(other.getLinearBuckets());
+            break;
+          }
+          case EXPONENTIAL_BUCKETS: {
+            mergeExponentialBuckets(other.getExponentialBuckets());
+            break;
+          }
+          case EXPLICIT_BUCKETS: {
+            mergeExplicitBuckets(other.getExplicitBuckets());
+            break;
+          }
+          case BUCKETTYPE_NOT_SET: {
+            break;
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -2621,8 +2689,22 @@ private static final long serialVersionUID = 0L;
         }
         return this;
       }
+      private int bucketTypeCase_ = 0;
+      private java.lang.Object bucketType_;
+      public BucketTypeCase
+          getBucketTypeCase() {
+        return BucketTypeCase.forNumber(
+            bucketTypeCase_);
+      }
 
-      private POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linearBuckets_;
+      public Builder clearBucketType() {
+        bucketTypeCase_ = 0;
+        bucketType_ = null;
+        onChanged();
+        return this;
+      }
+
+
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets, POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder> linearBucketsBuilder_;
       /**
@@ -2630,7 +2712,7 @@ private static final long serialVersionUID = 0L;
        * @return Whether the linearBuckets field is set.
        */
       public boolean hasLinearBuckets() {
-        return linearBucketsBuilder_ != null || linearBuckets_ != null;
+        return bucketTypeCase_ == 1;
       }
       /**
        * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
@@ -2638,9 +2720,15 @@ private static final long serialVersionUID = 0L;
        */
       public POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets getLinearBuckets() {
         if (linearBucketsBuilder_ == null) {
-          return linearBuckets_ == null ? POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance() : linearBuckets_;
+          if (bucketTypeCase_ == 1) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_;
+          }
+          return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
         } else {
-          return linearBucketsBuilder_.getMessage();
+          if (bucketTypeCase_ == 1) {
+            return linearBucketsBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
         }
       }
       /**
@@ -2651,12 +2739,12 @@ private static final long serialVersionUID = 0L;
           if (value == null) {
             throw new NullPointerException();
           }
-          linearBuckets_ = value;
+          bucketType_ = value;
           onChanged();
         } else {
           linearBucketsBuilder_.setMessage(value);
         }
-
+        bucketTypeCase_ = 1;
         return this;
       }
       /**
@@ -2665,12 +2753,12 @@ private static final long serialVersionUID = 0L;
       public Builder setLinearBuckets(
           POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder builderForValue) {
         if (linearBucketsBuilder_ == null) {
-          linearBuckets_ = builderForValue.build();
+          bucketType_ = builderForValue.build();
           onChanged();
         } else {
           linearBucketsBuilder_.setMessage(builderForValue.build());
         }
-
+        bucketTypeCase_ = 1;
         return this;
       }
       /**
@@ -2678,17 +2766,21 @@ private static final long serialVersionUID = 0L;
        */
       public Builder mergeLinearBuckets(POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets value) {
         if (linearBucketsBuilder_ == null) {
-          if (linearBuckets_ != null) {
-            linearBuckets_ =
-              POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.newBuilder(linearBuckets_).mergeFrom(value).buildPartial();
+          if (bucketTypeCase_ == 1 &&
+              bucketType_ != POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance()) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.newBuilder((POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_)
+                .mergeFrom(value).buildPartial();
           } else {
-            linearBuckets_ = value;
+            bucketType_ = value;
           }
           onChanged();
         } else {
-          linearBucketsBuilder_.mergeFrom(value);
+          if (bucketTypeCase_ == 1) {
+            linearBucketsBuilder_.mergeFrom(value);
+          }
+          linearBucketsBuilder_.setMessage(value);
         }
-
+        bucketTypeCase_ = 1;
         return this;
       }
       /**
@@ -2696,32 +2788,37 @@ private static final long serialVersionUID = 0L;
        */
       public Builder clearLinearBuckets() {
         if (linearBucketsBuilder_ == null) {
-          linearBuckets_ = null;
-          onChanged();
+          if (bucketTypeCase_ == 1) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
+            onChanged();
+          }
         } else {
-          linearBuckets_ = null;
-          linearBucketsBuilder_ = null;
+          if (bucketTypeCase_ == 1) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
+          }
+          linearBucketsBuilder_.clear();
         }
-
         return this;
       }
       /**
        * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        */
       public POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder getLinearBucketsBuilder() {
-        
-        onChanged();
         return getLinearBucketsFieldBuilder().getBuilder();
       }
       /**
        * <code>.POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets linear_buckets = 1;</code>
        */
       public POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder getLinearBucketsOrBuilder() {
-        if (linearBucketsBuilder_ != null) {
+        if ((bucketTypeCase_ == 1) && (linearBucketsBuilder_ != null)) {
           return linearBucketsBuilder_.getMessageOrBuilder();
         } else {
-          return linearBuckets_ == null ?
-              POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance() : linearBuckets_;
+          if (bucketTypeCase_ == 1) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_;
+          }
+          return POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
         }
       }
       /**
@@ -2731,17 +2828,21 @@ private static final long serialVersionUID = 0L;
           POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets, POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder> 
           getLinearBucketsFieldBuilder() {
         if (linearBucketsBuilder_ == null) {
+          if (!(bucketTypeCase_ == 1)) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.getDefaultInstance();
+          }
           linearBucketsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets, POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.LinearBucketsOrBuilder>(
-                  getLinearBuckets(),
+                  (POGOProtos.Rpc.Distribution.BucketOptions.LinearBuckets) bucketType_,
                   getParentForChildren(),
                   isClean());
-          linearBuckets_ = null;
+          bucketType_ = null;
         }
+        bucketTypeCase_ = 1;
+        onChanged();;
         return linearBucketsBuilder_;
       }
 
-      private POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponentialBuckets_;
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder> exponentialBucketsBuilder_;
       /**
@@ -2749,7 +2850,7 @@ private static final long serialVersionUID = 0L;
        * @return Whether the exponentialBuckets field is set.
        */
       public boolean hasExponentialBuckets() {
-        return exponentialBucketsBuilder_ != null || exponentialBuckets_ != null;
+        return bucketTypeCase_ == 2;
       }
       /**
        * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
@@ -2757,9 +2858,15 @@ private static final long serialVersionUID = 0L;
        */
       public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets getExponentialBuckets() {
         if (exponentialBucketsBuilder_ == null) {
-          return exponentialBuckets_ == null ? POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance() : exponentialBuckets_;
+          if (bucketTypeCase_ == 2) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_;
+          }
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
         } else {
-          return exponentialBucketsBuilder_.getMessage();
+          if (bucketTypeCase_ == 2) {
+            return exponentialBucketsBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
         }
       }
       /**
@@ -2770,12 +2877,12 @@ private static final long serialVersionUID = 0L;
           if (value == null) {
             throw new NullPointerException();
           }
-          exponentialBuckets_ = value;
+          bucketType_ = value;
           onChanged();
         } else {
           exponentialBucketsBuilder_.setMessage(value);
         }
-
+        bucketTypeCase_ = 2;
         return this;
       }
       /**
@@ -2784,12 +2891,12 @@ private static final long serialVersionUID = 0L;
       public Builder setExponentialBuckets(
           POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder builderForValue) {
         if (exponentialBucketsBuilder_ == null) {
-          exponentialBuckets_ = builderForValue.build();
+          bucketType_ = builderForValue.build();
           onChanged();
         } else {
           exponentialBucketsBuilder_.setMessage(builderForValue.build());
         }
-
+        bucketTypeCase_ = 2;
         return this;
       }
       /**
@@ -2797,17 +2904,21 @@ private static final long serialVersionUID = 0L;
        */
       public Builder mergeExponentialBuckets(POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets value) {
         if (exponentialBucketsBuilder_ == null) {
-          if (exponentialBuckets_ != null) {
-            exponentialBuckets_ =
-              POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.newBuilder(exponentialBuckets_).mergeFrom(value).buildPartial();
+          if (bucketTypeCase_ == 2 &&
+              bucketType_ != POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance()) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.newBuilder((POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_)
+                .mergeFrom(value).buildPartial();
           } else {
-            exponentialBuckets_ = value;
+            bucketType_ = value;
           }
           onChanged();
         } else {
-          exponentialBucketsBuilder_.mergeFrom(value);
+          if (bucketTypeCase_ == 2) {
+            exponentialBucketsBuilder_.mergeFrom(value);
+          }
+          exponentialBucketsBuilder_.setMessage(value);
         }
-
+        bucketTypeCase_ = 2;
         return this;
       }
       /**
@@ -2815,32 +2926,37 @@ private static final long serialVersionUID = 0L;
        */
       public Builder clearExponentialBuckets() {
         if (exponentialBucketsBuilder_ == null) {
-          exponentialBuckets_ = null;
-          onChanged();
+          if (bucketTypeCase_ == 2) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
+            onChanged();
+          }
         } else {
-          exponentialBuckets_ = null;
-          exponentialBucketsBuilder_ = null;
+          if (bucketTypeCase_ == 2) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
+          }
+          exponentialBucketsBuilder_.clear();
         }
-
         return this;
       }
       /**
        * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        */
       public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder getExponentialBucketsBuilder() {
-        
-        onChanged();
         return getExponentialBucketsFieldBuilder().getBuilder();
       }
       /**
        * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets exponential_buckets = 2;</code>
        */
       public POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder getExponentialBucketsOrBuilder() {
-        if (exponentialBucketsBuilder_ != null) {
+        if ((bucketTypeCase_ == 2) && (exponentialBucketsBuilder_ != null)) {
           return exponentialBucketsBuilder_.getMessageOrBuilder();
         } else {
-          return exponentialBuckets_ == null ?
-              POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance() : exponentialBuckets_;
+          if (bucketTypeCase_ == 2) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_;
+          }
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
         }
       }
       /**
@@ -2850,17 +2966,21 @@ private static final long serialVersionUID = 0L;
           POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder> 
           getExponentialBucketsFieldBuilder() {
         if (exponentialBucketsBuilder_ == null) {
+          if (!(bucketTypeCase_ == 2)) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.getDefaultInstance();
+          }
           exponentialBucketsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBucketsOrBuilder>(
-                  getExponentialBuckets(),
+                  (POGOProtos.Rpc.Distribution.BucketOptions.ExponentialBuckets) bucketType_,
                   getParentForChildren(),
                   isClean());
-          exponentialBuckets_ = null;
+          bucketType_ = null;
         }
+        bucketTypeCase_ = 2;
+        onChanged();;
         return exponentialBucketsBuilder_;
       }
 
-      private POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicitBuckets_;
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder> explicitBucketsBuilder_;
       /**
@@ -2868,7 +2988,7 @@ private static final long serialVersionUID = 0L;
        * @return Whether the explicitBuckets field is set.
        */
       public boolean hasExplicitBuckets() {
-        return explicitBucketsBuilder_ != null || explicitBuckets_ != null;
+        return bucketTypeCase_ == 3;
       }
       /**
        * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
@@ -2876,9 +2996,15 @@ private static final long serialVersionUID = 0L;
        */
       public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets getExplicitBuckets() {
         if (explicitBucketsBuilder_ == null) {
-          return explicitBuckets_ == null ? POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance() : explicitBuckets_;
+          if (bucketTypeCase_ == 3) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_;
+          }
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
         } else {
-          return explicitBucketsBuilder_.getMessage();
+          if (bucketTypeCase_ == 3) {
+            return explicitBucketsBuilder_.getMessage();
+          }
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
         }
       }
       /**
@@ -2889,12 +3015,12 @@ private static final long serialVersionUID = 0L;
           if (value == null) {
             throw new NullPointerException();
           }
-          explicitBuckets_ = value;
+          bucketType_ = value;
           onChanged();
         } else {
           explicitBucketsBuilder_.setMessage(value);
         }
-
+        bucketTypeCase_ = 3;
         return this;
       }
       /**
@@ -2903,12 +3029,12 @@ private static final long serialVersionUID = 0L;
       public Builder setExplicitBuckets(
           POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder builderForValue) {
         if (explicitBucketsBuilder_ == null) {
-          explicitBuckets_ = builderForValue.build();
+          bucketType_ = builderForValue.build();
           onChanged();
         } else {
           explicitBucketsBuilder_.setMessage(builderForValue.build());
         }
-
+        bucketTypeCase_ = 3;
         return this;
       }
       /**
@@ -2916,17 +3042,21 @@ private static final long serialVersionUID = 0L;
        */
       public Builder mergeExplicitBuckets(POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets value) {
         if (explicitBucketsBuilder_ == null) {
-          if (explicitBuckets_ != null) {
-            explicitBuckets_ =
-              POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.newBuilder(explicitBuckets_).mergeFrom(value).buildPartial();
+          if (bucketTypeCase_ == 3 &&
+              bucketType_ != POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance()) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.newBuilder((POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_)
+                .mergeFrom(value).buildPartial();
           } else {
-            explicitBuckets_ = value;
+            bucketType_ = value;
           }
           onChanged();
         } else {
-          explicitBucketsBuilder_.mergeFrom(value);
+          if (bucketTypeCase_ == 3) {
+            explicitBucketsBuilder_.mergeFrom(value);
+          }
+          explicitBucketsBuilder_.setMessage(value);
         }
-
+        bucketTypeCase_ = 3;
         return this;
       }
       /**
@@ -2934,32 +3064,37 @@ private static final long serialVersionUID = 0L;
        */
       public Builder clearExplicitBuckets() {
         if (explicitBucketsBuilder_ == null) {
-          explicitBuckets_ = null;
-          onChanged();
+          if (bucketTypeCase_ == 3) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
+            onChanged();
+          }
         } else {
-          explicitBuckets_ = null;
-          explicitBucketsBuilder_ = null;
+          if (bucketTypeCase_ == 3) {
+            bucketTypeCase_ = 0;
+            bucketType_ = null;
+          }
+          explicitBucketsBuilder_.clear();
         }
-
         return this;
       }
       /**
        * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        */
       public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder getExplicitBucketsBuilder() {
-        
-        onChanged();
         return getExplicitBucketsFieldBuilder().getBuilder();
       }
       /**
        * <code>.POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets explicit_buckets = 3;</code>
        */
       public POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder getExplicitBucketsOrBuilder() {
-        if (explicitBucketsBuilder_ != null) {
+        if ((bucketTypeCase_ == 3) && (explicitBucketsBuilder_ != null)) {
           return explicitBucketsBuilder_.getMessageOrBuilder();
         } else {
-          return explicitBuckets_ == null ?
-              POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance() : explicitBuckets_;
+          if (bucketTypeCase_ == 3) {
+            return (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_;
+          }
+          return POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
         }
       }
       /**
@@ -2969,13 +3104,18 @@ private static final long serialVersionUID = 0L;
           POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder> 
           getExplicitBucketsFieldBuilder() {
         if (explicitBucketsBuilder_ == null) {
+          if (!(bucketTypeCase_ == 3)) {
+            bucketType_ = POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.getDefaultInstance();
+          }
           explicitBucketsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets.Builder, POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBucketsOrBuilder>(
-                  getExplicitBuckets(),
+                  (POGOProtos.Rpc.Distribution.BucketOptions.ExplicitBuckets) bucketType_,
                   getParentForChildren(),
                   isClean());
-          explicitBuckets_ = null;
+          bucketType_ = null;
         }
+        bucketTypeCase_ = 3;
+        onChanged();;
         return explicitBucketsBuilder_;
       }
       @java.lang.Override

@@ -352,6 +352,20 @@ private static final long serialVersionUID = 0L;
             actionCase_ = 23;
             break;
           }
+          case 194: {
+            POGOProtos.Data.Logs.BuddyConsumablesLogEntry.Builder subBuilder = null;
+            if (actionCase_ == 24) {
+              subBuilder = ((POGOProtos.Data.Logs.BuddyConsumablesLogEntry) action_).toBuilder();
+            }
+            action_ =
+                input.readMessage(POGOProtos.Data.Logs.BuddyConsumablesLogEntry.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Data.Logs.BuddyConsumablesLogEntry) action_);
+              action_ = subBuilder.buildPartial();
+            }
+            actionCase_ = 24;
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -410,6 +424,7 @@ private static final long serialVersionUID = 0L;
     VS_SEEKER_SET(21),
     VS_SEEKER_COMPLETE_SEASON(22),
     VS_SEEKER_WIN_REWARDS(23),
+    BUDDY_CONSUMABLES(24),
     ACTION_NOT_SET(0);
     private final int value;
     private ActionCase(int value) {
@@ -448,6 +463,7 @@ private static final long serialVersionUID = 0L;
         case 21: return VS_SEEKER_SET;
         case 22: return VS_SEEKER_COMPLETE_SEASON;
         case 23: return VS_SEEKER_WIN_REWARDS;
+        case 24: return BUDDY_CONSUMABLES;
         case 0: return ACTION_NOT_SET;
         default: return null;
       }
@@ -1071,6 +1087,34 @@ private static final long serialVersionUID = 0L;
     return POGOProtos.Data.Logs.VsSeekerWinRewardsLogEntry.getDefaultInstance();
   }
 
+  public static final int BUDDY_CONSUMABLES_FIELD_NUMBER = 24;
+  /**
+   * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   * @return Whether the buddyConsumables field is set.
+   */
+  public boolean hasBuddyConsumables() {
+    return actionCase_ == 24;
+  }
+  /**
+   * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   * @return The buddyConsumables.
+   */
+  public POGOProtos.Data.Logs.BuddyConsumablesLogEntry getBuddyConsumables() {
+    if (actionCase_ == 24) {
+       return (POGOProtos.Data.Logs.BuddyConsumablesLogEntry) action_;
+    }
+    return POGOProtos.Data.Logs.BuddyConsumablesLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   */
+  public POGOProtos.Data.Logs.BuddyConsumablesLogEntryOrBuilder getBuddyConsumablesOrBuilder() {
+    if (actionCase_ == 24) {
+       return (POGOProtos.Data.Logs.BuddyConsumablesLogEntry) action_;
+    }
+    return POGOProtos.Data.Logs.BuddyConsumablesLogEntry.getDefaultInstance();
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -1153,6 +1197,9 @@ private static final long serialVersionUID = 0L;
     }
     if (actionCase_ == 23) {
       output.writeMessage(23, (POGOProtos.Data.Logs.VsSeekerWinRewardsLogEntry) action_);
+    }
+    if (actionCase_ == 24) {
+      output.writeMessage(24, (POGOProtos.Data.Logs.BuddyConsumablesLogEntry) action_);
     }
     unknownFields.writeTo(output);
   }
@@ -1254,6 +1301,10 @@ private static final long serialVersionUID = 0L;
     if (actionCase_ == 23) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(23, (POGOProtos.Data.Logs.VsSeekerWinRewardsLogEntry) action_);
+    }
+    if (actionCase_ == 24) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(24, (POGOProtos.Data.Logs.BuddyConsumablesLogEntry) action_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1360,6 +1411,10 @@ private static final long serialVersionUID = 0L;
         if (!getVsSeekerWinRewards()
             .equals(other.getVsSeekerWinRewards())) return false;
         break;
+      case 24:
+        if (!getBuddyConsumables()
+            .equals(other.getBuddyConsumables())) return false;
+        break;
       case 0:
       default:
     }
@@ -1464,6 +1519,10 @@ private static final long serialVersionUID = 0L;
       case 23:
         hash = (37 * hash) + VS_SEEKER_WIN_REWARDS_FIELD_NUMBER;
         hash = (53 * hash) + getVsSeekerWinRewards().hashCode();
+        break;
+      case 24:
+        hash = (37 * hash) + BUDDY_CONSUMABLES_FIELD_NUMBER;
+        hash = (53 * hash) + getBuddyConsumables().hashCode();
         break;
       case 0:
       default:
@@ -1782,6 +1841,13 @@ private static final long serialVersionUID = 0L;
           result.action_ = vsSeekerWinRewardsBuilder_.build();
         }
       }
+      if (actionCase_ == 24) {
+        if (buddyConsumablesBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = buddyConsumablesBuilder_.build();
+        }
+      }
       result.actionCase_ = actionCase_;
       onBuilt();
       return result;
@@ -1920,6 +1986,10 @@ private static final long serialVersionUID = 0L;
         }
         case VS_SEEKER_WIN_REWARDS: {
           mergeVsSeekerWinRewards(other.getVsSeekerWinRewards());
+          break;
+        }
+        case BUDDY_CONSUMABLES: {
+          mergeBuddyConsumables(other.getBuddyConsumables());
           break;
         }
         case ACTION_NOT_SET: {
@@ -4926,6 +4996,144 @@ private static final long serialVersionUID = 0L;
       actionCase_ = 23;
       onChanged();;
       return vsSeekerWinRewardsBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Logs.BuddyConsumablesLogEntry, POGOProtos.Data.Logs.BuddyConsumablesLogEntry.Builder, POGOProtos.Data.Logs.BuddyConsumablesLogEntryOrBuilder> buddyConsumablesBuilder_;
+    /**
+     * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     * @return Whether the buddyConsumables field is set.
+     */
+    public boolean hasBuddyConsumables() {
+      return actionCase_ == 24;
+    }
+    /**
+     * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     * @return The buddyConsumables.
+     */
+    public POGOProtos.Data.Logs.BuddyConsumablesLogEntry getBuddyConsumables() {
+      if (buddyConsumablesBuilder_ == null) {
+        if (actionCase_ == 24) {
+          return (POGOProtos.Data.Logs.BuddyConsumablesLogEntry) action_;
+        }
+        return POGOProtos.Data.Logs.BuddyConsumablesLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 24) {
+          return buddyConsumablesBuilder_.getMessage();
+        }
+        return POGOProtos.Data.Logs.BuddyConsumablesLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public Builder setBuddyConsumables(POGOProtos.Data.Logs.BuddyConsumablesLogEntry value) {
+      if (buddyConsumablesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        buddyConsumablesBuilder_.setMessage(value);
+      }
+      actionCase_ = 24;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public Builder setBuddyConsumables(
+        POGOProtos.Data.Logs.BuddyConsumablesLogEntry.Builder builderForValue) {
+      if (buddyConsumablesBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        buddyConsumablesBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 24;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public Builder mergeBuddyConsumables(POGOProtos.Data.Logs.BuddyConsumablesLogEntry value) {
+      if (buddyConsumablesBuilder_ == null) {
+        if (actionCase_ == 24 &&
+            action_ != POGOProtos.Data.Logs.BuddyConsumablesLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Data.Logs.BuddyConsumablesLogEntry.newBuilder((POGOProtos.Data.Logs.BuddyConsumablesLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 24) {
+          buddyConsumablesBuilder_.mergeFrom(value);
+        }
+        buddyConsumablesBuilder_.setMessage(value);
+      }
+      actionCase_ = 24;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public Builder clearBuddyConsumables() {
+      if (buddyConsumablesBuilder_ == null) {
+        if (actionCase_ == 24) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 24) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        buddyConsumablesBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public POGOProtos.Data.Logs.BuddyConsumablesLogEntry.Builder getBuddyConsumablesBuilder() {
+      return getBuddyConsumablesFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public POGOProtos.Data.Logs.BuddyConsumablesLogEntryOrBuilder getBuddyConsumablesOrBuilder() {
+      if ((actionCase_ == 24) && (buddyConsumablesBuilder_ != null)) {
+        return buddyConsumablesBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 24) {
+          return (POGOProtos.Data.Logs.BuddyConsumablesLogEntry) action_;
+        }
+        return POGOProtos.Data.Logs.BuddyConsumablesLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Data.Logs.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Data.Logs.BuddyConsumablesLogEntry, POGOProtos.Data.Logs.BuddyConsumablesLogEntry.Builder, POGOProtos.Data.Logs.BuddyConsumablesLogEntryOrBuilder> 
+        getBuddyConsumablesFieldBuilder() {
+      if (buddyConsumablesBuilder_ == null) {
+        if (!(actionCase_ == 24)) {
+          action_ = POGOProtos.Data.Logs.BuddyConsumablesLogEntry.getDefaultInstance();
+        }
+        buddyConsumablesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Data.Logs.BuddyConsumablesLogEntry, POGOProtos.Data.Logs.BuddyConsumablesLogEntry.Builder, POGOProtos.Data.Logs.BuddyConsumablesLogEntryOrBuilder>(
+                (POGOProtos.Data.Logs.BuddyConsumablesLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 24;
+      onChanged();;
+      return buddyConsumablesBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

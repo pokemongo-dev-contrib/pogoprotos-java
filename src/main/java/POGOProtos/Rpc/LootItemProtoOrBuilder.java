@@ -42,12 +42,6 @@ public interface LootItemProtoOrBuilder extends
   POGOProtos.Rpc.HoloPokemonId getPokemonCandy();
 
   /**
-   * <code>int32 count = 5;</code>
-   * @return The count.
-   */
-  int getCount();
-
-  /**
    * <code>bool experience = 6;</code>
    * @return The experience.
    */
@@ -91,4 +85,12 @@ public interface LootItemProtoOrBuilder extends
    */
   com.google.protobuf.ByteString
       getStickerIdBytes();
+
+  /**
+   * <code>int32 count = 5;</code>
+   * @return The count.
+   */
+  int getCount();
+
+  public POGOProtos.Rpc.LootItemProto.TypeCase getTypeCase();
 }

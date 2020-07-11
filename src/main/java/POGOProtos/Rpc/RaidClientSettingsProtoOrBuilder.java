@@ -107,4 +107,33 @@ public interface RaidClientSettingsProtoOrBuilder extends
    * @return The enum numeric value on the wire of unsupportedRaidLevelsForFriendInvites at the given index.
    */
   int getUnsupportedRaidLevelsForFriendInvitesValue(int index);
+
+  /**
+   * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+   * @return A list containing the unsupportedRemoteRaidLevels.
+   */
+  java.util.List<POGOProtos.Rpc.RaidLevel> getUnsupportedRemoteRaidLevelsList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+   * @return The count of unsupportedRemoteRaidLevels.
+   */
+  int getUnsupportedRemoteRaidLevelsCount();
+  /**
+   * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+   * @param index The index of the element to return.
+   * @return The unsupportedRemoteRaidLevels at the given index.
+   */
+  POGOProtos.Rpc.RaidLevel getUnsupportedRemoteRaidLevels(int index);
+  /**
+   * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+   * @return A list containing the enum numeric values on the wire for unsupportedRemoteRaidLevels.
+   */
+  java.util.List<java.lang.Integer>
+  getUnsupportedRemoteRaidLevelsValueList();
+  /**
+   * <code>repeated .POGOProtos.Rpc.RaidLevel unsupported_remote_raid_levels = 14;</code>
+   * @param index The index of the value to return.
+   * @return The enum numeric value on the wire of unsupportedRemoteRaidLevels at the given index.
+   */
+  int getUnsupportedRemoteRaidLevelsValue(int index);
 }

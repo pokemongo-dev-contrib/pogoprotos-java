@@ -60,275 +60,310 @@ private static final long serialVersionUID = 0L;
           }
           case 26: {
             POGOProtos.Rpc.CatchPokemonLogEntry.Builder subBuilder = null;
-            if (catchPokemon_ != null) {
-              subBuilder = catchPokemon_.toBuilder();
+            if (actionCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.CatchPokemonLogEntry) action_).toBuilder();
             }
-            catchPokemon_ = input.readMessage(POGOProtos.Rpc.CatchPokemonLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.CatchPokemonLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(catchPokemon_);
-              catchPokemon_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CatchPokemonLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 3;
             break;
           }
           case 34: {
             POGOProtos.Rpc.FortSearchLogEntry.Builder subBuilder = null;
-            if (fortSearch_ != null) {
-              subBuilder = fortSearch_.toBuilder();
+            if (actionCase_ == 4) {
+              subBuilder = ((POGOProtos.Rpc.FortSearchLogEntry) action_).toBuilder();
             }
-            fortSearch_ = input.readMessage(POGOProtos.Rpc.FortSearchLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.FortSearchLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(fortSearch_);
-              fortSearch_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.FortSearchLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 4;
             break;
           }
           case 42: {
             POGOProtos.Rpc.BuddyPokemonLogEntry.Builder subBuilder = null;
-            if (buddyPokemon_ != null) {
-              subBuilder = buddyPokemon_.toBuilder();
+            if (actionCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.BuddyPokemonLogEntry) action_).toBuilder();
             }
-            buddyPokemon_ = input.readMessage(POGOProtos.Rpc.BuddyPokemonLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.BuddyPokemonLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(buddyPokemon_);
-              buddyPokemon_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyPokemonLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 5;
             break;
           }
           case 50: {
             POGOProtos.Rpc.RaidRewardsLogEntry.Builder subBuilder = null;
-            if (raidRewards_ != null) {
-              subBuilder = raidRewards_.toBuilder();
+            if (actionCase_ == 6) {
+              subBuilder = ((POGOProtos.Rpc.RaidRewardsLogEntry) action_).toBuilder();
             }
-            raidRewards_ = input.readMessage(POGOProtos.Rpc.RaidRewardsLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.RaidRewardsLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(raidRewards_);
-              raidRewards_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.RaidRewardsLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 6;
             break;
           }
           case 58: {
             POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder subBuilder = null;
-            if (passcodeRewards_ != null) {
-              subBuilder = passcodeRewards_.toBuilder();
+            if (actionCase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.PasscodeRewardsLogEntry) action_).toBuilder();
             }
-            passcodeRewards_ = input.readMessage(POGOProtos.Rpc.PasscodeRewardsLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.PasscodeRewardsLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(passcodeRewards_);
-              passcodeRewards_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PasscodeRewardsLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 7;
             break;
           }
           case 66: {
             POGOProtos.Rpc.CompleteQuestLogEntry.Builder subBuilder = null;
-            if (completeQuest_ != null) {
-              subBuilder = completeQuest_.toBuilder();
+            if (actionCase_ == 8) {
+              subBuilder = ((POGOProtos.Rpc.CompleteQuestLogEntry) action_).toBuilder();
             }
-            completeQuest_ = input.readMessage(POGOProtos.Rpc.CompleteQuestLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.CompleteQuestLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(completeQuest_);
-              completeQuest_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CompleteQuestLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 8;
             break;
           }
           case 74: {
             POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder subBuilder = null;
-            if (completeQuestStampCard_ != null) {
-              subBuilder = completeQuestStampCard_.toBuilder();
+            if (actionCase_ == 9) {
+              subBuilder = ((POGOProtos.Rpc.CompleteQuestStampCardLogEntry) action_).toBuilder();
             }
-            completeQuestStampCard_ = input.readMessage(POGOProtos.Rpc.CompleteQuestStampCardLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.CompleteQuestStampCardLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(completeQuestStampCard_);
-              completeQuestStampCard_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CompleteQuestStampCardLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 9;
             break;
           }
           case 82: {
             POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder subBuilder = null;
-            if (completeQuestPokemonEncounter_ != null) {
-              subBuilder = completeQuestPokemonEncounter_.toBuilder();
+            if (actionCase_ == 10) {
+              subBuilder = ((POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) action_).toBuilder();
             }
-            completeQuestPokemonEncounter_ = input.readMessage(POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(completeQuestPokemonEncounter_);
-              completeQuestPokemonEncounter_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 10;
             break;
           }
           case 90: {
             POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder subBuilder = null;
-            if (belugaTransfer_ != null) {
-              subBuilder = belugaTransfer_.toBuilder();
+            if (actionCase_ == 11) {
+              subBuilder = ((POGOProtos.Rpc.BelugaDailyTransferLogEntry) action_).toBuilder();
             }
-            belugaTransfer_ = input.readMessage(POGOProtos.Rpc.BelugaDailyTransferLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.BelugaDailyTransferLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(belugaTransfer_);
-              belugaTransfer_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.BelugaDailyTransferLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 11;
             break;
           }
           case 98: {
             POGOProtos.Rpc.OpenGiftLogEntry.Builder subBuilder = null;
-            if (openGift_ != null) {
-              subBuilder = openGift_.toBuilder();
+            if (actionCase_ == 12) {
+              subBuilder = ((POGOProtos.Rpc.OpenGiftLogEntry) action_).toBuilder();
             }
-            openGift_ = input.readMessage(POGOProtos.Rpc.OpenGiftLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.OpenGiftLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(openGift_);
-              openGift_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.OpenGiftLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 12;
             break;
           }
           case 106: {
             POGOProtos.Rpc.SendGiftLogEntry.Builder subBuilder = null;
-            if (sendGift_ != null) {
-              subBuilder = sendGift_.toBuilder();
+            if (actionCase_ == 13) {
+              subBuilder = ((POGOProtos.Rpc.SendGiftLogEntry) action_).toBuilder();
             }
-            sendGift_ = input.readMessage(POGOProtos.Rpc.SendGiftLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.SendGiftLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(sendGift_);
-              sendGift_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.SendGiftLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 13;
             break;
           }
           case 114: {
             POGOProtos.Rpc.TradingLogEntry.Builder subBuilder = null;
-            if (trading_ != null) {
-              subBuilder = trading_.toBuilder();
+            if (actionCase_ == 14) {
+              subBuilder = ((POGOProtos.Rpc.TradingLogEntry) action_).toBuilder();
             }
-            trading_ = input.readMessage(POGOProtos.Rpc.TradingLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.TradingLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(trading_);
-              trading_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.TradingLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 14;
             break;
           }
           case 122: {
             POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder subBuilder = null;
-            if (shareExRaidPass_ != null) {
-              subBuilder = shareExRaidPass_.toBuilder();
+            if (actionCase_ == 15) {
+              subBuilder = ((POGOProtos.Rpc.ShareExRaidPassLogEntry) action_).toBuilder();
             }
-            shareExRaidPass_ = input.readMessage(POGOProtos.Rpc.ShareExRaidPassLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.ShareExRaidPassLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(shareExRaidPass_);
-              shareExRaidPass_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ShareExRaidPassLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 15;
             break;
           }
           case 130: {
             POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder subBuilder = null;
-            if (declineExRaidPass_ != null) {
-              subBuilder = declineExRaidPass_.toBuilder();
+            if (actionCase_ == 16) {
+              subBuilder = ((POGOProtos.Rpc.DeclineExRaidPassLogEntry) action_).toBuilder();
             }
-            declineExRaidPass_ = input.readMessage(POGOProtos.Rpc.DeclineExRaidPassLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.DeclineExRaidPassLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(declineExRaidPass_);
-              declineExRaidPass_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.DeclineExRaidPassLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 16;
             break;
           }
           case 138: {
             POGOProtos.Rpc.FitnessRewardsLogEntry.Builder subBuilder = null;
-            if (fitnessRewards_ != null) {
-              subBuilder = fitnessRewards_.toBuilder();
+            if (actionCase_ == 17) {
+              subBuilder = ((POGOProtos.Rpc.FitnessRewardsLogEntry) action_).toBuilder();
             }
-            fitnessRewards_ = input.readMessage(POGOProtos.Rpc.FitnessRewardsLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.FitnessRewardsLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(fitnessRewards_);
-              fitnessRewards_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.FitnessRewardsLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 17;
             break;
           }
           case 146: {
             POGOProtos.Rpc.CombatLogEntry.Builder subBuilder = null;
-            if (combat_ != null) {
-              subBuilder = combat_.toBuilder();
+            if (actionCase_ == 18) {
+              subBuilder = ((POGOProtos.Rpc.CombatLogEntry) action_).toBuilder();
             }
-            combat_ = input.readMessage(POGOProtos.Rpc.CombatLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.CombatLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(combat_);
-              combat_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CombatLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 18;
             break;
           }
           case 154: {
             POGOProtos.Rpc.PurifyPokemonLogEntry.Builder subBuilder = null;
-            if (purifyPokemon_ != null) {
-              subBuilder = purifyPokemon_.toBuilder();
+            if (actionCase_ == 19) {
+              subBuilder = ((POGOProtos.Rpc.PurifyPokemonLogEntry) action_).toBuilder();
             }
-            purifyPokemon_ = input.readMessage(POGOProtos.Rpc.PurifyPokemonLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.PurifyPokemonLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(purifyPokemon_);
-              purifyPokemon_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PurifyPokemonLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 19;
             break;
           }
           case 162: {
             POGOProtos.Rpc.InvasionVictoryLogEntry.Builder subBuilder = null;
-            if (invasionVictory_ != null) {
-              subBuilder = invasionVictory_.toBuilder();
+            if (actionCase_ == 20) {
+              subBuilder = ((POGOProtos.Rpc.InvasionVictoryLogEntry) action_).toBuilder();
             }
-            invasionVictory_ = input.readMessage(POGOProtos.Rpc.InvasionVictoryLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.InvasionVictoryLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(invasionVictory_);
-              invasionVictory_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.InvasionVictoryLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 20;
             break;
           }
           case 170: {
             POGOProtos.Rpc.VsSeekerSetLogEntry.Builder subBuilder = null;
-            if (vsSeekerSet_ != null) {
-              subBuilder = vsSeekerSet_.toBuilder();
+            if (actionCase_ == 21) {
+              subBuilder = ((POGOProtos.Rpc.VsSeekerSetLogEntry) action_).toBuilder();
             }
-            vsSeekerSet_ = input.readMessage(POGOProtos.Rpc.VsSeekerSetLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.VsSeekerSetLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(vsSeekerSet_);
-              vsSeekerSet_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.VsSeekerSetLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 21;
             break;
           }
           case 178: {
             POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder subBuilder = null;
-            if (vsSeekerCompleteSeason_ != null) {
-              subBuilder = vsSeekerCompleteSeason_.toBuilder();
+            if (actionCase_ == 22) {
+              subBuilder = ((POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) action_).toBuilder();
             }
-            vsSeekerCompleteSeason_ = input.readMessage(POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(vsSeekerCompleteSeason_);
-              vsSeekerCompleteSeason_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 22;
             break;
           }
           case 186: {
             POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder subBuilder = null;
-            if (vsSeekerWinRewards_ != null) {
-              subBuilder = vsSeekerWinRewards_.toBuilder();
+            if (actionCase_ == 23) {
+              subBuilder = ((POGOProtos.Rpc.VsSeekerWinRewardsLogEntry) action_).toBuilder();
             }
-            vsSeekerWinRewards_ = input.readMessage(POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.parser(), extensionRegistry);
+            action_ =
+                input.readMessage(POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(vsSeekerWinRewards_);
-              vsSeekerWinRewards_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.VsSeekerWinRewardsLogEntry) action_);
+              action_ = subBuilder.buildPartial();
             }
-
+            actionCase_ = 23;
+            break;
+          }
+          case 194: {
+            POGOProtos.Rpc.BuddyConsumablesLogEntry.Builder subBuilder = null;
+            if (actionCase_ == 24) {
+              subBuilder = ((POGOProtos.Rpc.BuddyConsumablesLogEntry) action_).toBuilder();
+            }
+            action_ =
+                input.readMessage(POGOProtos.Rpc.BuddyConsumablesLogEntry.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyConsumablesLogEntry) action_);
+              action_ = subBuilder.buildPartial();
+            }
+            actionCase_ = 24;
             break;
           }
           default: {
@@ -363,6 +398,703 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.ActionLogEntry.class, POGOProtos.Rpc.ActionLogEntry.Builder.class);
   }
 
+  private int actionCase_ = 0;
+  private java.lang.Object action_;
+  public enum ActionCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    CATCH_POKEMON(3),
+    FORT_SEARCH(4),
+    BUDDY_POKEMON(5),
+    RAID_REWARDS(6),
+    PASSCODE_REWARDS(7),
+    COMPLETE_QUEST(8),
+    COMPLETE_QUEST_STAMP_CARD(9),
+    COMPLETE_QUEST_POKEMON_ENCOUNTER(10),
+    BELUGA_TRANSFER(11),
+    OPEN_GIFT(12),
+    SEND_GIFT(13),
+    TRADING(14),
+    SHARE_EX_RAID_PASS(15),
+    DECLINE_EX_RAID_PASS(16),
+    FITNESS_REWARDS(17),
+    COMBAT(18),
+    PURIFY_POKEMON(19),
+    INVASION_VICTORY(20),
+    VS_SEEKER_SET(21),
+    VS_SEEKER_COMPLETE_SEASON(22),
+    VS_SEEKER_WIN_REWARDS(23),
+    BUDDY_CONSUMABLES(24),
+    ACTION_NOT_SET(0);
+    private final int value;
+    private ActionCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static ActionCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static ActionCase forNumber(int value) {
+      switch (value) {
+        case 3: return CATCH_POKEMON;
+        case 4: return FORT_SEARCH;
+        case 5: return BUDDY_POKEMON;
+        case 6: return RAID_REWARDS;
+        case 7: return PASSCODE_REWARDS;
+        case 8: return COMPLETE_QUEST;
+        case 9: return COMPLETE_QUEST_STAMP_CARD;
+        case 10: return COMPLETE_QUEST_POKEMON_ENCOUNTER;
+        case 11: return BELUGA_TRANSFER;
+        case 12: return OPEN_GIFT;
+        case 13: return SEND_GIFT;
+        case 14: return TRADING;
+        case 15: return SHARE_EX_RAID_PASS;
+        case 16: return DECLINE_EX_RAID_PASS;
+        case 17: return FITNESS_REWARDS;
+        case 18: return COMBAT;
+        case 19: return PURIFY_POKEMON;
+        case 20: return INVASION_VICTORY;
+        case 21: return VS_SEEKER_SET;
+        case 22: return VS_SEEKER_COMPLETE_SEASON;
+        case 23: return VS_SEEKER_WIN_REWARDS;
+        case 24: return BUDDY_CONSUMABLES;
+        case 0: return ACTION_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public ActionCase
+  getActionCase() {
+    return ActionCase.forNumber(
+        actionCase_);
+  }
+
+  public static final int CATCH_POKEMON_FIELD_NUMBER = 3;
+  /**
+   * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+   * @return Whether the catchPokemon field is set.
+   */
+  public boolean hasCatchPokemon() {
+    return actionCase_ == 3;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+   * @return The catchPokemon.
+   */
+  public POGOProtos.Rpc.CatchPokemonLogEntry getCatchPokemon() {
+    if (actionCase_ == 3) {
+       return (POGOProtos.Rpc.CatchPokemonLogEntry) action_;
+    }
+    return POGOProtos.Rpc.CatchPokemonLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+   */
+  public POGOProtos.Rpc.CatchPokemonLogEntryOrBuilder getCatchPokemonOrBuilder() {
+    if (actionCase_ == 3) {
+       return (POGOProtos.Rpc.CatchPokemonLogEntry) action_;
+    }
+    return POGOProtos.Rpc.CatchPokemonLogEntry.getDefaultInstance();
+  }
+
+  public static final int FORT_SEARCH_FIELD_NUMBER = 4;
+  /**
+   * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+   * @return Whether the fortSearch field is set.
+   */
+  public boolean hasFortSearch() {
+    return actionCase_ == 4;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+   * @return The fortSearch.
+   */
+  public POGOProtos.Rpc.FortSearchLogEntry getFortSearch() {
+    if (actionCase_ == 4) {
+       return (POGOProtos.Rpc.FortSearchLogEntry) action_;
+    }
+    return POGOProtos.Rpc.FortSearchLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+   */
+  public POGOProtos.Rpc.FortSearchLogEntryOrBuilder getFortSearchOrBuilder() {
+    if (actionCase_ == 4) {
+       return (POGOProtos.Rpc.FortSearchLogEntry) action_;
+    }
+    return POGOProtos.Rpc.FortSearchLogEntry.getDefaultInstance();
+  }
+
+  public static final int BUDDY_POKEMON_FIELD_NUMBER = 5;
+  /**
+   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+   * @return Whether the buddyPokemon field is set.
+   */
+  public boolean hasBuddyPokemon() {
+    return actionCase_ == 5;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+   * @return The buddyPokemon.
+   */
+  public POGOProtos.Rpc.BuddyPokemonLogEntry getBuddyPokemon() {
+    if (actionCase_ == 5) {
+       return (POGOProtos.Rpc.BuddyPokemonLogEntry) action_;
+    }
+    return POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+   */
+  public POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder getBuddyPokemonOrBuilder() {
+    if (actionCase_ == 5) {
+       return (POGOProtos.Rpc.BuddyPokemonLogEntry) action_;
+    }
+    return POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
+  }
+
+  public static final int RAID_REWARDS_FIELD_NUMBER = 6;
+  /**
+   * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+   * @return Whether the raidRewards field is set.
+   */
+  public boolean hasRaidRewards() {
+    return actionCase_ == 6;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+   * @return The raidRewards.
+   */
+  public POGOProtos.Rpc.RaidRewardsLogEntry getRaidRewards() {
+    if (actionCase_ == 6) {
+       return (POGOProtos.Rpc.RaidRewardsLogEntry) action_;
+    }
+    return POGOProtos.Rpc.RaidRewardsLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+   */
+  public POGOProtos.Rpc.RaidRewardsLogEntryOrBuilder getRaidRewardsOrBuilder() {
+    if (actionCase_ == 6) {
+       return (POGOProtos.Rpc.RaidRewardsLogEntry) action_;
+    }
+    return POGOProtos.Rpc.RaidRewardsLogEntry.getDefaultInstance();
+  }
+
+  public static final int PASSCODE_REWARDS_FIELD_NUMBER = 7;
+  /**
+   * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+   * @return Whether the passcodeRewards field is set.
+   */
+  public boolean hasPasscodeRewards() {
+    return actionCase_ == 7;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+   * @return The passcodeRewards.
+   */
+  public POGOProtos.Rpc.PasscodeRewardsLogEntry getPasscodeRewards() {
+    if (actionCase_ == 7) {
+       return (POGOProtos.Rpc.PasscodeRewardsLogEntry) action_;
+    }
+    return POGOProtos.Rpc.PasscodeRewardsLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+   */
+  public POGOProtos.Rpc.PasscodeRewardsLogEntryOrBuilder getPasscodeRewardsOrBuilder() {
+    if (actionCase_ == 7) {
+       return (POGOProtos.Rpc.PasscodeRewardsLogEntry) action_;
+    }
+    return POGOProtos.Rpc.PasscodeRewardsLogEntry.getDefaultInstance();
+  }
+
+  public static final int COMPLETE_QUEST_FIELD_NUMBER = 8;
+  /**
+   * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+   * @return Whether the completeQuest field is set.
+   */
+  public boolean hasCompleteQuest() {
+    return actionCase_ == 8;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+   * @return The completeQuest.
+   */
+  public POGOProtos.Rpc.CompleteQuestLogEntry getCompleteQuest() {
+    if (actionCase_ == 8) {
+       return (POGOProtos.Rpc.CompleteQuestLogEntry) action_;
+    }
+    return POGOProtos.Rpc.CompleteQuestLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+   */
+  public POGOProtos.Rpc.CompleteQuestLogEntryOrBuilder getCompleteQuestOrBuilder() {
+    if (actionCase_ == 8) {
+       return (POGOProtos.Rpc.CompleteQuestLogEntry) action_;
+    }
+    return POGOProtos.Rpc.CompleteQuestLogEntry.getDefaultInstance();
+  }
+
+  public static final int COMPLETE_QUEST_STAMP_CARD_FIELD_NUMBER = 9;
+  /**
+   * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+   * @return Whether the completeQuestStampCard field is set.
+   */
+  public boolean hasCompleteQuestStampCard() {
+    return actionCase_ == 9;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+   * @return The completeQuestStampCard.
+   */
+  public POGOProtos.Rpc.CompleteQuestStampCardLogEntry getCompleteQuestStampCard() {
+    if (actionCase_ == 9) {
+       return (POGOProtos.Rpc.CompleteQuestStampCardLogEntry) action_;
+    }
+    return POGOProtos.Rpc.CompleteQuestStampCardLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+   */
+  public POGOProtos.Rpc.CompleteQuestStampCardLogEntryOrBuilder getCompleteQuestStampCardOrBuilder() {
+    if (actionCase_ == 9) {
+       return (POGOProtos.Rpc.CompleteQuestStampCardLogEntry) action_;
+    }
+    return POGOProtos.Rpc.CompleteQuestStampCardLogEntry.getDefaultInstance();
+  }
+
+  public static final int COMPLETE_QUEST_POKEMON_ENCOUNTER_FIELD_NUMBER = 10;
+  /**
+   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+   * @return Whether the completeQuestPokemonEncounter field is set.
+   */
+  public boolean hasCompleteQuestPokemonEncounter() {
+    return actionCase_ == 10;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+   * @return The completeQuestPokemonEncounter.
+   */
+  public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry getCompleteQuestPokemonEncounter() {
+    if (actionCase_ == 10) {
+       return (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) action_;
+    }
+    return POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+   */
+  public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder getCompleteQuestPokemonEncounterOrBuilder() {
+    if (actionCase_ == 10) {
+       return (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) action_;
+    }
+    return POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
+  }
+
+  public static final int BELUGA_TRANSFER_FIELD_NUMBER = 11;
+  /**
+   * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+   * @return Whether the belugaTransfer field is set.
+   */
+  public boolean hasBelugaTransfer() {
+    return actionCase_ == 11;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+   * @return The belugaTransfer.
+   */
+  public POGOProtos.Rpc.BelugaDailyTransferLogEntry getBelugaTransfer() {
+    if (actionCase_ == 11) {
+       return (POGOProtos.Rpc.BelugaDailyTransferLogEntry) action_;
+    }
+    return POGOProtos.Rpc.BelugaDailyTransferLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+   */
+  public POGOProtos.Rpc.BelugaDailyTransferLogEntryOrBuilder getBelugaTransferOrBuilder() {
+    if (actionCase_ == 11) {
+       return (POGOProtos.Rpc.BelugaDailyTransferLogEntry) action_;
+    }
+    return POGOProtos.Rpc.BelugaDailyTransferLogEntry.getDefaultInstance();
+  }
+
+  public static final int OPEN_GIFT_FIELD_NUMBER = 12;
+  /**
+   * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+   * @return Whether the openGift field is set.
+   */
+  public boolean hasOpenGift() {
+    return actionCase_ == 12;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+   * @return The openGift.
+   */
+  public POGOProtos.Rpc.OpenGiftLogEntry getOpenGift() {
+    if (actionCase_ == 12) {
+       return (POGOProtos.Rpc.OpenGiftLogEntry) action_;
+    }
+    return POGOProtos.Rpc.OpenGiftLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+   */
+  public POGOProtos.Rpc.OpenGiftLogEntryOrBuilder getOpenGiftOrBuilder() {
+    if (actionCase_ == 12) {
+       return (POGOProtos.Rpc.OpenGiftLogEntry) action_;
+    }
+    return POGOProtos.Rpc.OpenGiftLogEntry.getDefaultInstance();
+  }
+
+  public static final int SEND_GIFT_FIELD_NUMBER = 13;
+  /**
+   * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+   * @return Whether the sendGift field is set.
+   */
+  public boolean hasSendGift() {
+    return actionCase_ == 13;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+   * @return The sendGift.
+   */
+  public POGOProtos.Rpc.SendGiftLogEntry getSendGift() {
+    if (actionCase_ == 13) {
+       return (POGOProtos.Rpc.SendGiftLogEntry) action_;
+    }
+    return POGOProtos.Rpc.SendGiftLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+   */
+  public POGOProtos.Rpc.SendGiftLogEntryOrBuilder getSendGiftOrBuilder() {
+    if (actionCase_ == 13) {
+       return (POGOProtos.Rpc.SendGiftLogEntry) action_;
+    }
+    return POGOProtos.Rpc.SendGiftLogEntry.getDefaultInstance();
+  }
+
+  public static final int TRADING_FIELD_NUMBER = 14;
+  /**
+   * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+   * @return Whether the trading field is set.
+   */
+  public boolean hasTrading() {
+    return actionCase_ == 14;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+   * @return The trading.
+   */
+  public POGOProtos.Rpc.TradingLogEntry getTrading() {
+    if (actionCase_ == 14) {
+       return (POGOProtos.Rpc.TradingLogEntry) action_;
+    }
+    return POGOProtos.Rpc.TradingLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+   */
+  public POGOProtos.Rpc.TradingLogEntryOrBuilder getTradingOrBuilder() {
+    if (actionCase_ == 14) {
+       return (POGOProtos.Rpc.TradingLogEntry) action_;
+    }
+    return POGOProtos.Rpc.TradingLogEntry.getDefaultInstance();
+  }
+
+  public static final int SHARE_EX_RAID_PASS_FIELD_NUMBER = 15;
+  /**
+   * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+   * @return Whether the shareExRaidPass field is set.
+   */
+  public boolean hasShareExRaidPass() {
+    return actionCase_ == 15;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+   * @return The shareExRaidPass.
+   */
+  public POGOProtos.Rpc.ShareExRaidPassLogEntry getShareExRaidPass() {
+    if (actionCase_ == 15) {
+       return (POGOProtos.Rpc.ShareExRaidPassLogEntry) action_;
+    }
+    return POGOProtos.Rpc.ShareExRaidPassLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+   */
+  public POGOProtos.Rpc.ShareExRaidPassLogEntryOrBuilder getShareExRaidPassOrBuilder() {
+    if (actionCase_ == 15) {
+       return (POGOProtos.Rpc.ShareExRaidPassLogEntry) action_;
+    }
+    return POGOProtos.Rpc.ShareExRaidPassLogEntry.getDefaultInstance();
+  }
+
+  public static final int DECLINE_EX_RAID_PASS_FIELD_NUMBER = 16;
+  /**
+   * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+   * @return Whether the declineExRaidPass field is set.
+   */
+  public boolean hasDeclineExRaidPass() {
+    return actionCase_ == 16;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+   * @return The declineExRaidPass.
+   */
+  public POGOProtos.Rpc.DeclineExRaidPassLogEntry getDeclineExRaidPass() {
+    if (actionCase_ == 16) {
+       return (POGOProtos.Rpc.DeclineExRaidPassLogEntry) action_;
+    }
+    return POGOProtos.Rpc.DeclineExRaidPassLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+   */
+  public POGOProtos.Rpc.DeclineExRaidPassLogEntryOrBuilder getDeclineExRaidPassOrBuilder() {
+    if (actionCase_ == 16) {
+       return (POGOProtos.Rpc.DeclineExRaidPassLogEntry) action_;
+    }
+    return POGOProtos.Rpc.DeclineExRaidPassLogEntry.getDefaultInstance();
+  }
+
+  public static final int FITNESS_REWARDS_FIELD_NUMBER = 17;
+  /**
+   * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+   * @return Whether the fitnessRewards field is set.
+   */
+  public boolean hasFitnessRewards() {
+    return actionCase_ == 17;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+   * @return The fitnessRewards.
+   */
+  public POGOProtos.Rpc.FitnessRewardsLogEntry getFitnessRewards() {
+    if (actionCase_ == 17) {
+       return (POGOProtos.Rpc.FitnessRewardsLogEntry) action_;
+    }
+    return POGOProtos.Rpc.FitnessRewardsLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+   */
+  public POGOProtos.Rpc.FitnessRewardsLogEntryOrBuilder getFitnessRewardsOrBuilder() {
+    if (actionCase_ == 17) {
+       return (POGOProtos.Rpc.FitnessRewardsLogEntry) action_;
+    }
+    return POGOProtos.Rpc.FitnessRewardsLogEntry.getDefaultInstance();
+  }
+
+  public static final int COMBAT_FIELD_NUMBER = 18;
+  /**
+   * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+   * @return Whether the combat field is set.
+   */
+  public boolean hasCombat() {
+    return actionCase_ == 18;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+   * @return The combat.
+   */
+  public POGOProtos.Rpc.CombatLogEntry getCombat() {
+    if (actionCase_ == 18) {
+       return (POGOProtos.Rpc.CombatLogEntry) action_;
+    }
+    return POGOProtos.Rpc.CombatLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+   */
+  public POGOProtos.Rpc.CombatLogEntryOrBuilder getCombatOrBuilder() {
+    if (actionCase_ == 18) {
+       return (POGOProtos.Rpc.CombatLogEntry) action_;
+    }
+    return POGOProtos.Rpc.CombatLogEntry.getDefaultInstance();
+  }
+
+  public static final int PURIFY_POKEMON_FIELD_NUMBER = 19;
+  /**
+   * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+   * @return Whether the purifyPokemon field is set.
+   */
+  public boolean hasPurifyPokemon() {
+    return actionCase_ == 19;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+   * @return The purifyPokemon.
+   */
+  public POGOProtos.Rpc.PurifyPokemonLogEntry getPurifyPokemon() {
+    if (actionCase_ == 19) {
+       return (POGOProtos.Rpc.PurifyPokemonLogEntry) action_;
+    }
+    return POGOProtos.Rpc.PurifyPokemonLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+   */
+  public POGOProtos.Rpc.PurifyPokemonLogEntryOrBuilder getPurifyPokemonOrBuilder() {
+    if (actionCase_ == 19) {
+       return (POGOProtos.Rpc.PurifyPokemonLogEntry) action_;
+    }
+    return POGOProtos.Rpc.PurifyPokemonLogEntry.getDefaultInstance();
+  }
+
+  public static final int INVASION_VICTORY_FIELD_NUMBER = 20;
+  /**
+   * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+   * @return Whether the invasionVictory field is set.
+   */
+  public boolean hasInvasionVictory() {
+    return actionCase_ == 20;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+   * @return The invasionVictory.
+   */
+  public POGOProtos.Rpc.InvasionVictoryLogEntry getInvasionVictory() {
+    if (actionCase_ == 20) {
+       return (POGOProtos.Rpc.InvasionVictoryLogEntry) action_;
+    }
+    return POGOProtos.Rpc.InvasionVictoryLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+   */
+  public POGOProtos.Rpc.InvasionVictoryLogEntryOrBuilder getInvasionVictoryOrBuilder() {
+    if (actionCase_ == 20) {
+       return (POGOProtos.Rpc.InvasionVictoryLogEntry) action_;
+    }
+    return POGOProtos.Rpc.InvasionVictoryLogEntry.getDefaultInstance();
+  }
+
+  public static final int VS_SEEKER_SET_FIELD_NUMBER = 21;
+  /**
+   * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+   * @return Whether the vsSeekerSet field is set.
+   */
+  public boolean hasVsSeekerSet() {
+    return actionCase_ == 21;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+   * @return The vsSeekerSet.
+   */
+  public POGOProtos.Rpc.VsSeekerSetLogEntry getVsSeekerSet() {
+    if (actionCase_ == 21) {
+       return (POGOProtos.Rpc.VsSeekerSetLogEntry) action_;
+    }
+    return POGOProtos.Rpc.VsSeekerSetLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+   */
+  public POGOProtos.Rpc.VsSeekerSetLogEntryOrBuilder getVsSeekerSetOrBuilder() {
+    if (actionCase_ == 21) {
+       return (POGOProtos.Rpc.VsSeekerSetLogEntry) action_;
+    }
+    return POGOProtos.Rpc.VsSeekerSetLogEntry.getDefaultInstance();
+  }
+
+  public static final int VS_SEEKER_COMPLETE_SEASON_FIELD_NUMBER = 22;
+  /**
+   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+   * @return Whether the vsSeekerCompleteSeason field is set.
+   */
+  public boolean hasVsSeekerCompleteSeason() {
+    return actionCase_ == 22;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+   * @return The vsSeekerCompleteSeason.
+   */
+  public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry getVsSeekerCompleteSeason() {
+    if (actionCase_ == 22) {
+       return (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) action_;
+    }
+    return POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+   */
+  public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder getVsSeekerCompleteSeasonOrBuilder() {
+    if (actionCase_ == 22) {
+       return (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) action_;
+    }
+    return POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
+  }
+
+  public static final int VS_SEEKER_WIN_REWARDS_FIELD_NUMBER = 23;
+  /**
+   * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+   * @return Whether the vsSeekerWinRewards field is set.
+   */
+  public boolean hasVsSeekerWinRewards() {
+    return actionCase_ == 23;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+   * @return The vsSeekerWinRewards.
+   */
+  public POGOProtos.Rpc.VsSeekerWinRewardsLogEntry getVsSeekerWinRewards() {
+    if (actionCase_ == 23) {
+       return (POGOProtos.Rpc.VsSeekerWinRewardsLogEntry) action_;
+    }
+    return POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+   */
+  public POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder getVsSeekerWinRewardsOrBuilder() {
+    if (actionCase_ == 23) {
+       return (POGOProtos.Rpc.VsSeekerWinRewardsLogEntry) action_;
+    }
+    return POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.getDefaultInstance();
+  }
+
+  public static final int BUDDY_CONSUMABLES_FIELD_NUMBER = 24;
+  /**
+   * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   * @return Whether the buddyConsumables field is set.
+   */
+  public boolean hasBuddyConsumables() {
+    return actionCase_ == 24;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   * @return The buddyConsumables.
+   */
+  public POGOProtos.Rpc.BuddyConsumablesLogEntry getBuddyConsumables() {
+    if (actionCase_ == 24) {
+       return (POGOProtos.Rpc.BuddyConsumablesLogEntry) action_;
+    }
+    return POGOProtos.Rpc.BuddyConsumablesLogEntry.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+   */
+  public POGOProtos.Rpc.BuddyConsumablesLogEntryOrBuilder getBuddyConsumablesOrBuilder() {
+    if (actionCase_ == 24) {
+       return (POGOProtos.Rpc.BuddyConsumablesLogEntry) action_;
+    }
+    return POGOProtos.Rpc.BuddyConsumablesLogEntry.getDefaultInstance();
+  }
+
   public static final int TIMESTAMP_MS_FIELD_NUMBER = 1;
   private long timestampMs_;
   /**
@@ -381,489 +1113,6 @@ private static final long serialVersionUID = 0L;
    */
   public boolean getSfida() {
     return sfida_;
-  }
-
-  public static final int CATCH_POKEMON_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.CatchPokemonLogEntry catchPokemon_;
-  /**
-   * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-   * @return Whether the catchPokemon field is set.
-   */
-  public boolean hasCatchPokemon() {
-    return catchPokemon_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-   * @return The catchPokemon.
-   */
-  public POGOProtos.Rpc.CatchPokemonLogEntry getCatchPokemon() {
-    return catchPokemon_ == null ? POGOProtos.Rpc.CatchPokemonLogEntry.getDefaultInstance() : catchPokemon_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-   */
-  public POGOProtos.Rpc.CatchPokemonLogEntryOrBuilder getCatchPokemonOrBuilder() {
-    return getCatchPokemon();
-  }
-
-  public static final int FORT_SEARCH_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.FortSearchLogEntry fortSearch_;
-  /**
-   * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-   * @return Whether the fortSearch field is set.
-   */
-  public boolean hasFortSearch() {
-    return fortSearch_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-   * @return The fortSearch.
-   */
-  public POGOProtos.Rpc.FortSearchLogEntry getFortSearch() {
-    return fortSearch_ == null ? POGOProtos.Rpc.FortSearchLogEntry.getDefaultInstance() : fortSearch_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-   */
-  public POGOProtos.Rpc.FortSearchLogEntryOrBuilder getFortSearchOrBuilder() {
-    return getFortSearch();
-  }
-
-  public static final int BUDDY_POKEMON_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.BuddyPokemonLogEntry buddyPokemon_;
-  /**
-   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-   * @return Whether the buddyPokemon field is set.
-   */
-  public boolean hasBuddyPokemon() {
-    return buddyPokemon_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-   * @return The buddyPokemon.
-   */
-  public POGOProtos.Rpc.BuddyPokemonLogEntry getBuddyPokemon() {
-    return buddyPokemon_ == null ? POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance() : buddyPokemon_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-   */
-  public POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder getBuddyPokemonOrBuilder() {
-    return getBuddyPokemon();
-  }
-
-  public static final int RAID_REWARDS_FIELD_NUMBER = 6;
-  private POGOProtos.Rpc.RaidRewardsLogEntry raidRewards_;
-  /**
-   * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-   * @return Whether the raidRewards field is set.
-   */
-  public boolean hasRaidRewards() {
-    return raidRewards_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-   * @return The raidRewards.
-   */
-  public POGOProtos.Rpc.RaidRewardsLogEntry getRaidRewards() {
-    return raidRewards_ == null ? POGOProtos.Rpc.RaidRewardsLogEntry.getDefaultInstance() : raidRewards_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-   */
-  public POGOProtos.Rpc.RaidRewardsLogEntryOrBuilder getRaidRewardsOrBuilder() {
-    return getRaidRewards();
-  }
-
-  public static final int PASSCODE_REWARDS_FIELD_NUMBER = 7;
-  private POGOProtos.Rpc.PasscodeRewardsLogEntry passcodeRewards_;
-  /**
-   * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-   * @return Whether the passcodeRewards field is set.
-   */
-  public boolean hasPasscodeRewards() {
-    return passcodeRewards_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-   * @return The passcodeRewards.
-   */
-  public POGOProtos.Rpc.PasscodeRewardsLogEntry getPasscodeRewards() {
-    return passcodeRewards_ == null ? POGOProtos.Rpc.PasscodeRewardsLogEntry.getDefaultInstance() : passcodeRewards_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-   */
-  public POGOProtos.Rpc.PasscodeRewardsLogEntryOrBuilder getPasscodeRewardsOrBuilder() {
-    return getPasscodeRewards();
-  }
-
-  public static final int COMPLETE_QUEST_FIELD_NUMBER = 8;
-  private POGOProtos.Rpc.CompleteQuestLogEntry completeQuest_;
-  /**
-   * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-   * @return Whether the completeQuest field is set.
-   */
-  public boolean hasCompleteQuest() {
-    return completeQuest_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-   * @return The completeQuest.
-   */
-  public POGOProtos.Rpc.CompleteQuestLogEntry getCompleteQuest() {
-    return completeQuest_ == null ? POGOProtos.Rpc.CompleteQuestLogEntry.getDefaultInstance() : completeQuest_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-   */
-  public POGOProtos.Rpc.CompleteQuestLogEntryOrBuilder getCompleteQuestOrBuilder() {
-    return getCompleteQuest();
-  }
-
-  public static final int COMPLETE_QUEST_STAMP_CARD_FIELD_NUMBER = 9;
-  private POGOProtos.Rpc.CompleteQuestStampCardLogEntry completeQuestStampCard_;
-  /**
-   * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-   * @return Whether the completeQuestStampCard field is set.
-   */
-  public boolean hasCompleteQuestStampCard() {
-    return completeQuestStampCard_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-   * @return The completeQuestStampCard.
-   */
-  public POGOProtos.Rpc.CompleteQuestStampCardLogEntry getCompleteQuestStampCard() {
-    return completeQuestStampCard_ == null ? POGOProtos.Rpc.CompleteQuestStampCardLogEntry.getDefaultInstance() : completeQuestStampCard_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-   */
-  public POGOProtos.Rpc.CompleteQuestStampCardLogEntryOrBuilder getCompleteQuestStampCardOrBuilder() {
-    return getCompleteQuestStampCard();
-  }
-
-  public static final int COMPLETE_QUEST_POKEMON_ENCOUNTER_FIELD_NUMBER = 10;
-  private POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry completeQuestPokemonEncounter_;
-  /**
-   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-   * @return Whether the completeQuestPokemonEncounter field is set.
-   */
-  public boolean hasCompleteQuestPokemonEncounter() {
-    return completeQuestPokemonEncounter_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-   * @return The completeQuestPokemonEncounter.
-   */
-  public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry getCompleteQuestPokemonEncounter() {
-    return completeQuestPokemonEncounter_ == null ? POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance() : completeQuestPokemonEncounter_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-   */
-  public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder getCompleteQuestPokemonEncounterOrBuilder() {
-    return getCompleteQuestPokemonEncounter();
-  }
-
-  public static final int BELUGA_TRANSFER_FIELD_NUMBER = 11;
-  private POGOProtos.Rpc.BelugaDailyTransferLogEntry belugaTransfer_;
-  /**
-   * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-   * @return Whether the belugaTransfer field is set.
-   */
-  public boolean hasBelugaTransfer() {
-    return belugaTransfer_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-   * @return The belugaTransfer.
-   */
-  public POGOProtos.Rpc.BelugaDailyTransferLogEntry getBelugaTransfer() {
-    return belugaTransfer_ == null ? POGOProtos.Rpc.BelugaDailyTransferLogEntry.getDefaultInstance() : belugaTransfer_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-   */
-  public POGOProtos.Rpc.BelugaDailyTransferLogEntryOrBuilder getBelugaTransferOrBuilder() {
-    return getBelugaTransfer();
-  }
-
-  public static final int OPEN_GIFT_FIELD_NUMBER = 12;
-  private POGOProtos.Rpc.OpenGiftLogEntry openGift_;
-  /**
-   * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-   * @return Whether the openGift field is set.
-   */
-  public boolean hasOpenGift() {
-    return openGift_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-   * @return The openGift.
-   */
-  public POGOProtos.Rpc.OpenGiftLogEntry getOpenGift() {
-    return openGift_ == null ? POGOProtos.Rpc.OpenGiftLogEntry.getDefaultInstance() : openGift_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-   */
-  public POGOProtos.Rpc.OpenGiftLogEntryOrBuilder getOpenGiftOrBuilder() {
-    return getOpenGift();
-  }
-
-  public static final int SEND_GIFT_FIELD_NUMBER = 13;
-  private POGOProtos.Rpc.SendGiftLogEntry sendGift_;
-  /**
-   * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-   * @return Whether the sendGift field is set.
-   */
-  public boolean hasSendGift() {
-    return sendGift_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-   * @return The sendGift.
-   */
-  public POGOProtos.Rpc.SendGiftLogEntry getSendGift() {
-    return sendGift_ == null ? POGOProtos.Rpc.SendGiftLogEntry.getDefaultInstance() : sendGift_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-   */
-  public POGOProtos.Rpc.SendGiftLogEntryOrBuilder getSendGiftOrBuilder() {
-    return getSendGift();
-  }
-
-  public static final int TRADING_FIELD_NUMBER = 14;
-  private POGOProtos.Rpc.TradingLogEntry trading_;
-  /**
-   * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-   * @return Whether the trading field is set.
-   */
-  public boolean hasTrading() {
-    return trading_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-   * @return The trading.
-   */
-  public POGOProtos.Rpc.TradingLogEntry getTrading() {
-    return trading_ == null ? POGOProtos.Rpc.TradingLogEntry.getDefaultInstance() : trading_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-   */
-  public POGOProtos.Rpc.TradingLogEntryOrBuilder getTradingOrBuilder() {
-    return getTrading();
-  }
-
-  public static final int SHARE_EX_RAID_PASS_FIELD_NUMBER = 15;
-  private POGOProtos.Rpc.ShareExRaidPassLogEntry shareExRaidPass_;
-  /**
-   * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-   * @return Whether the shareExRaidPass field is set.
-   */
-  public boolean hasShareExRaidPass() {
-    return shareExRaidPass_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-   * @return The shareExRaidPass.
-   */
-  public POGOProtos.Rpc.ShareExRaidPassLogEntry getShareExRaidPass() {
-    return shareExRaidPass_ == null ? POGOProtos.Rpc.ShareExRaidPassLogEntry.getDefaultInstance() : shareExRaidPass_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-   */
-  public POGOProtos.Rpc.ShareExRaidPassLogEntryOrBuilder getShareExRaidPassOrBuilder() {
-    return getShareExRaidPass();
-  }
-
-  public static final int DECLINE_EX_RAID_PASS_FIELD_NUMBER = 16;
-  private POGOProtos.Rpc.DeclineExRaidPassLogEntry declineExRaidPass_;
-  /**
-   * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-   * @return Whether the declineExRaidPass field is set.
-   */
-  public boolean hasDeclineExRaidPass() {
-    return declineExRaidPass_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-   * @return The declineExRaidPass.
-   */
-  public POGOProtos.Rpc.DeclineExRaidPassLogEntry getDeclineExRaidPass() {
-    return declineExRaidPass_ == null ? POGOProtos.Rpc.DeclineExRaidPassLogEntry.getDefaultInstance() : declineExRaidPass_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-   */
-  public POGOProtos.Rpc.DeclineExRaidPassLogEntryOrBuilder getDeclineExRaidPassOrBuilder() {
-    return getDeclineExRaidPass();
-  }
-
-  public static final int FITNESS_REWARDS_FIELD_NUMBER = 17;
-  private POGOProtos.Rpc.FitnessRewardsLogEntry fitnessRewards_;
-  /**
-   * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-   * @return Whether the fitnessRewards field is set.
-   */
-  public boolean hasFitnessRewards() {
-    return fitnessRewards_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-   * @return The fitnessRewards.
-   */
-  public POGOProtos.Rpc.FitnessRewardsLogEntry getFitnessRewards() {
-    return fitnessRewards_ == null ? POGOProtos.Rpc.FitnessRewardsLogEntry.getDefaultInstance() : fitnessRewards_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-   */
-  public POGOProtos.Rpc.FitnessRewardsLogEntryOrBuilder getFitnessRewardsOrBuilder() {
-    return getFitnessRewards();
-  }
-
-  public static final int COMBAT_FIELD_NUMBER = 18;
-  private POGOProtos.Rpc.CombatLogEntry combat_;
-  /**
-   * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-   * @return Whether the combat field is set.
-   */
-  public boolean hasCombat() {
-    return combat_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-   * @return The combat.
-   */
-  public POGOProtos.Rpc.CombatLogEntry getCombat() {
-    return combat_ == null ? POGOProtos.Rpc.CombatLogEntry.getDefaultInstance() : combat_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-   */
-  public POGOProtos.Rpc.CombatLogEntryOrBuilder getCombatOrBuilder() {
-    return getCombat();
-  }
-
-  public static final int PURIFY_POKEMON_FIELD_NUMBER = 19;
-  private POGOProtos.Rpc.PurifyPokemonLogEntry purifyPokemon_;
-  /**
-   * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-   * @return Whether the purifyPokemon field is set.
-   */
-  public boolean hasPurifyPokemon() {
-    return purifyPokemon_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-   * @return The purifyPokemon.
-   */
-  public POGOProtos.Rpc.PurifyPokemonLogEntry getPurifyPokemon() {
-    return purifyPokemon_ == null ? POGOProtos.Rpc.PurifyPokemonLogEntry.getDefaultInstance() : purifyPokemon_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-   */
-  public POGOProtos.Rpc.PurifyPokemonLogEntryOrBuilder getPurifyPokemonOrBuilder() {
-    return getPurifyPokemon();
-  }
-
-  public static final int INVASION_VICTORY_FIELD_NUMBER = 20;
-  private POGOProtos.Rpc.InvasionVictoryLogEntry invasionVictory_;
-  /**
-   * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-   * @return Whether the invasionVictory field is set.
-   */
-  public boolean hasInvasionVictory() {
-    return invasionVictory_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-   * @return The invasionVictory.
-   */
-  public POGOProtos.Rpc.InvasionVictoryLogEntry getInvasionVictory() {
-    return invasionVictory_ == null ? POGOProtos.Rpc.InvasionVictoryLogEntry.getDefaultInstance() : invasionVictory_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-   */
-  public POGOProtos.Rpc.InvasionVictoryLogEntryOrBuilder getInvasionVictoryOrBuilder() {
-    return getInvasionVictory();
-  }
-
-  public static final int VS_SEEKER_SET_FIELD_NUMBER = 21;
-  private POGOProtos.Rpc.VsSeekerSetLogEntry vsSeekerSet_;
-  /**
-   * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-   * @return Whether the vsSeekerSet field is set.
-   */
-  public boolean hasVsSeekerSet() {
-    return vsSeekerSet_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-   * @return The vsSeekerSet.
-   */
-  public POGOProtos.Rpc.VsSeekerSetLogEntry getVsSeekerSet() {
-    return vsSeekerSet_ == null ? POGOProtos.Rpc.VsSeekerSetLogEntry.getDefaultInstance() : vsSeekerSet_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-   */
-  public POGOProtos.Rpc.VsSeekerSetLogEntryOrBuilder getVsSeekerSetOrBuilder() {
-    return getVsSeekerSet();
-  }
-
-  public static final int VS_SEEKER_COMPLETE_SEASON_FIELD_NUMBER = 22;
-  private POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vsSeekerCompleteSeason_;
-  /**
-   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-   * @return Whether the vsSeekerCompleteSeason field is set.
-   */
-  public boolean hasVsSeekerCompleteSeason() {
-    return vsSeekerCompleteSeason_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-   * @return The vsSeekerCompleteSeason.
-   */
-  public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry getVsSeekerCompleteSeason() {
-    return vsSeekerCompleteSeason_ == null ? POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance() : vsSeekerCompleteSeason_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-   */
-  public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder getVsSeekerCompleteSeasonOrBuilder() {
-    return getVsSeekerCompleteSeason();
-  }
-
-  public static final int VS_SEEKER_WIN_REWARDS_FIELD_NUMBER = 23;
-  private POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vsSeekerWinRewards_;
-  /**
-   * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-   * @return Whether the vsSeekerWinRewards field is set.
-   */
-  public boolean hasVsSeekerWinRewards() {
-    return vsSeekerWinRewards_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-   * @return The vsSeekerWinRewards.
-   */
-  public POGOProtos.Rpc.VsSeekerWinRewardsLogEntry getVsSeekerWinRewards() {
-    return vsSeekerWinRewards_ == null ? POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.getDefaultInstance() : vsSeekerWinRewards_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-   */
-  public POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder getVsSeekerWinRewardsOrBuilder() {
-    return getVsSeekerWinRewards();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -886,68 +1135,71 @@ private static final long serialVersionUID = 0L;
     if (sfida_ != false) {
       output.writeBool(2, sfida_);
     }
-    if (catchPokemon_ != null) {
-      output.writeMessage(3, getCatchPokemon());
+    if (actionCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.CatchPokemonLogEntry) action_);
     }
-    if (fortSearch_ != null) {
-      output.writeMessage(4, getFortSearch());
+    if (actionCase_ == 4) {
+      output.writeMessage(4, (POGOProtos.Rpc.FortSearchLogEntry) action_);
     }
-    if (buddyPokemon_ != null) {
-      output.writeMessage(5, getBuddyPokemon());
+    if (actionCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.BuddyPokemonLogEntry) action_);
     }
-    if (raidRewards_ != null) {
-      output.writeMessage(6, getRaidRewards());
+    if (actionCase_ == 6) {
+      output.writeMessage(6, (POGOProtos.Rpc.RaidRewardsLogEntry) action_);
     }
-    if (passcodeRewards_ != null) {
-      output.writeMessage(7, getPasscodeRewards());
+    if (actionCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.PasscodeRewardsLogEntry) action_);
     }
-    if (completeQuest_ != null) {
-      output.writeMessage(8, getCompleteQuest());
+    if (actionCase_ == 8) {
+      output.writeMessage(8, (POGOProtos.Rpc.CompleteQuestLogEntry) action_);
     }
-    if (completeQuestStampCard_ != null) {
-      output.writeMessage(9, getCompleteQuestStampCard());
+    if (actionCase_ == 9) {
+      output.writeMessage(9, (POGOProtos.Rpc.CompleteQuestStampCardLogEntry) action_);
     }
-    if (completeQuestPokemonEncounter_ != null) {
-      output.writeMessage(10, getCompleteQuestPokemonEncounter());
+    if (actionCase_ == 10) {
+      output.writeMessage(10, (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) action_);
     }
-    if (belugaTransfer_ != null) {
-      output.writeMessage(11, getBelugaTransfer());
+    if (actionCase_ == 11) {
+      output.writeMessage(11, (POGOProtos.Rpc.BelugaDailyTransferLogEntry) action_);
     }
-    if (openGift_ != null) {
-      output.writeMessage(12, getOpenGift());
+    if (actionCase_ == 12) {
+      output.writeMessage(12, (POGOProtos.Rpc.OpenGiftLogEntry) action_);
     }
-    if (sendGift_ != null) {
-      output.writeMessage(13, getSendGift());
+    if (actionCase_ == 13) {
+      output.writeMessage(13, (POGOProtos.Rpc.SendGiftLogEntry) action_);
     }
-    if (trading_ != null) {
-      output.writeMessage(14, getTrading());
+    if (actionCase_ == 14) {
+      output.writeMessage(14, (POGOProtos.Rpc.TradingLogEntry) action_);
     }
-    if (shareExRaidPass_ != null) {
-      output.writeMessage(15, getShareExRaidPass());
+    if (actionCase_ == 15) {
+      output.writeMessage(15, (POGOProtos.Rpc.ShareExRaidPassLogEntry) action_);
     }
-    if (declineExRaidPass_ != null) {
-      output.writeMessage(16, getDeclineExRaidPass());
+    if (actionCase_ == 16) {
+      output.writeMessage(16, (POGOProtos.Rpc.DeclineExRaidPassLogEntry) action_);
     }
-    if (fitnessRewards_ != null) {
-      output.writeMessage(17, getFitnessRewards());
+    if (actionCase_ == 17) {
+      output.writeMessage(17, (POGOProtos.Rpc.FitnessRewardsLogEntry) action_);
     }
-    if (combat_ != null) {
-      output.writeMessage(18, getCombat());
+    if (actionCase_ == 18) {
+      output.writeMessage(18, (POGOProtos.Rpc.CombatLogEntry) action_);
     }
-    if (purifyPokemon_ != null) {
-      output.writeMessage(19, getPurifyPokemon());
+    if (actionCase_ == 19) {
+      output.writeMessage(19, (POGOProtos.Rpc.PurifyPokemonLogEntry) action_);
     }
-    if (invasionVictory_ != null) {
-      output.writeMessage(20, getInvasionVictory());
+    if (actionCase_ == 20) {
+      output.writeMessage(20, (POGOProtos.Rpc.InvasionVictoryLogEntry) action_);
     }
-    if (vsSeekerSet_ != null) {
-      output.writeMessage(21, getVsSeekerSet());
+    if (actionCase_ == 21) {
+      output.writeMessage(21, (POGOProtos.Rpc.VsSeekerSetLogEntry) action_);
     }
-    if (vsSeekerCompleteSeason_ != null) {
-      output.writeMessage(22, getVsSeekerCompleteSeason());
+    if (actionCase_ == 22) {
+      output.writeMessage(22, (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) action_);
     }
-    if (vsSeekerWinRewards_ != null) {
-      output.writeMessage(23, getVsSeekerWinRewards());
+    if (actionCase_ == 23) {
+      output.writeMessage(23, (POGOProtos.Rpc.VsSeekerWinRewardsLogEntry) action_);
+    }
+    if (actionCase_ == 24) {
+      output.writeMessage(24, (POGOProtos.Rpc.BuddyConsumablesLogEntry) action_);
     }
     unknownFields.writeTo(output);
   }
@@ -966,89 +1218,93 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(2, sfida_);
     }
-    if (catchPokemon_ != null) {
+    if (actionCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getCatchPokemon());
+        .computeMessageSize(3, (POGOProtos.Rpc.CatchPokemonLogEntry) action_);
     }
-    if (fortSearch_ != null) {
+    if (actionCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getFortSearch());
+        .computeMessageSize(4, (POGOProtos.Rpc.FortSearchLogEntry) action_);
     }
-    if (buddyPokemon_ != null) {
+    if (actionCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getBuddyPokemon());
+        .computeMessageSize(5, (POGOProtos.Rpc.BuddyPokemonLogEntry) action_);
     }
-    if (raidRewards_ != null) {
+    if (actionCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getRaidRewards());
+        .computeMessageSize(6, (POGOProtos.Rpc.RaidRewardsLogEntry) action_);
     }
-    if (passcodeRewards_ != null) {
+    if (actionCase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getPasscodeRewards());
+        .computeMessageSize(7, (POGOProtos.Rpc.PasscodeRewardsLogEntry) action_);
     }
-    if (completeQuest_ != null) {
+    if (actionCase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getCompleteQuest());
+        .computeMessageSize(8, (POGOProtos.Rpc.CompleteQuestLogEntry) action_);
     }
-    if (completeQuestStampCard_ != null) {
+    if (actionCase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, getCompleteQuestStampCard());
+        .computeMessageSize(9, (POGOProtos.Rpc.CompleteQuestStampCardLogEntry) action_);
     }
-    if (completeQuestPokemonEncounter_ != null) {
+    if (actionCase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, getCompleteQuestPokemonEncounter());
+        .computeMessageSize(10, (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) action_);
     }
-    if (belugaTransfer_ != null) {
+    if (actionCase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(11, getBelugaTransfer());
+        .computeMessageSize(11, (POGOProtos.Rpc.BelugaDailyTransferLogEntry) action_);
     }
-    if (openGift_ != null) {
+    if (actionCase_ == 12) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, getOpenGift());
+        .computeMessageSize(12, (POGOProtos.Rpc.OpenGiftLogEntry) action_);
     }
-    if (sendGift_ != null) {
+    if (actionCase_ == 13) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(13, getSendGift());
+        .computeMessageSize(13, (POGOProtos.Rpc.SendGiftLogEntry) action_);
     }
-    if (trading_ != null) {
+    if (actionCase_ == 14) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(14, getTrading());
+        .computeMessageSize(14, (POGOProtos.Rpc.TradingLogEntry) action_);
     }
-    if (shareExRaidPass_ != null) {
+    if (actionCase_ == 15) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(15, getShareExRaidPass());
+        .computeMessageSize(15, (POGOProtos.Rpc.ShareExRaidPassLogEntry) action_);
     }
-    if (declineExRaidPass_ != null) {
+    if (actionCase_ == 16) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(16, getDeclineExRaidPass());
+        .computeMessageSize(16, (POGOProtos.Rpc.DeclineExRaidPassLogEntry) action_);
     }
-    if (fitnessRewards_ != null) {
+    if (actionCase_ == 17) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(17, getFitnessRewards());
+        .computeMessageSize(17, (POGOProtos.Rpc.FitnessRewardsLogEntry) action_);
     }
-    if (combat_ != null) {
+    if (actionCase_ == 18) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(18, getCombat());
+        .computeMessageSize(18, (POGOProtos.Rpc.CombatLogEntry) action_);
     }
-    if (purifyPokemon_ != null) {
+    if (actionCase_ == 19) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(19, getPurifyPokemon());
+        .computeMessageSize(19, (POGOProtos.Rpc.PurifyPokemonLogEntry) action_);
     }
-    if (invasionVictory_ != null) {
+    if (actionCase_ == 20) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(20, getInvasionVictory());
+        .computeMessageSize(20, (POGOProtos.Rpc.InvasionVictoryLogEntry) action_);
     }
-    if (vsSeekerSet_ != null) {
+    if (actionCase_ == 21) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(21, getVsSeekerSet());
+        .computeMessageSize(21, (POGOProtos.Rpc.VsSeekerSetLogEntry) action_);
     }
-    if (vsSeekerCompleteSeason_ != null) {
+    if (actionCase_ == 22) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(22, getVsSeekerCompleteSeason());
+        .computeMessageSize(22, (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) action_);
     }
-    if (vsSeekerWinRewards_ != null) {
+    if (actionCase_ == 23) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(23, getVsSeekerWinRewards());
+        .computeMessageSize(23, (POGOProtos.Rpc.VsSeekerWinRewardsLogEntry) action_);
+    }
+    if (actionCase_ == 24) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(24, (POGOProtos.Rpc.BuddyConsumablesLogEntry) action_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1069,110 +1325,98 @@ private static final long serialVersionUID = 0L;
         != other.getTimestampMs()) return false;
     if (getSfida()
         != other.getSfida()) return false;
-    if (hasCatchPokemon() != other.hasCatchPokemon()) return false;
-    if (hasCatchPokemon()) {
-      if (!getCatchPokemon()
-          .equals(other.getCatchPokemon())) return false;
-    }
-    if (hasFortSearch() != other.hasFortSearch()) return false;
-    if (hasFortSearch()) {
-      if (!getFortSearch()
-          .equals(other.getFortSearch())) return false;
-    }
-    if (hasBuddyPokemon() != other.hasBuddyPokemon()) return false;
-    if (hasBuddyPokemon()) {
-      if (!getBuddyPokemon()
-          .equals(other.getBuddyPokemon())) return false;
-    }
-    if (hasRaidRewards() != other.hasRaidRewards()) return false;
-    if (hasRaidRewards()) {
-      if (!getRaidRewards()
-          .equals(other.getRaidRewards())) return false;
-    }
-    if (hasPasscodeRewards() != other.hasPasscodeRewards()) return false;
-    if (hasPasscodeRewards()) {
-      if (!getPasscodeRewards()
-          .equals(other.getPasscodeRewards())) return false;
-    }
-    if (hasCompleteQuest() != other.hasCompleteQuest()) return false;
-    if (hasCompleteQuest()) {
-      if (!getCompleteQuest()
-          .equals(other.getCompleteQuest())) return false;
-    }
-    if (hasCompleteQuestStampCard() != other.hasCompleteQuestStampCard()) return false;
-    if (hasCompleteQuestStampCard()) {
-      if (!getCompleteQuestStampCard()
-          .equals(other.getCompleteQuestStampCard())) return false;
-    }
-    if (hasCompleteQuestPokemonEncounter() != other.hasCompleteQuestPokemonEncounter()) return false;
-    if (hasCompleteQuestPokemonEncounter()) {
-      if (!getCompleteQuestPokemonEncounter()
-          .equals(other.getCompleteQuestPokemonEncounter())) return false;
-    }
-    if (hasBelugaTransfer() != other.hasBelugaTransfer()) return false;
-    if (hasBelugaTransfer()) {
-      if (!getBelugaTransfer()
-          .equals(other.getBelugaTransfer())) return false;
-    }
-    if (hasOpenGift() != other.hasOpenGift()) return false;
-    if (hasOpenGift()) {
-      if (!getOpenGift()
-          .equals(other.getOpenGift())) return false;
-    }
-    if (hasSendGift() != other.hasSendGift()) return false;
-    if (hasSendGift()) {
-      if (!getSendGift()
-          .equals(other.getSendGift())) return false;
-    }
-    if (hasTrading() != other.hasTrading()) return false;
-    if (hasTrading()) {
-      if (!getTrading()
-          .equals(other.getTrading())) return false;
-    }
-    if (hasShareExRaidPass() != other.hasShareExRaidPass()) return false;
-    if (hasShareExRaidPass()) {
-      if (!getShareExRaidPass()
-          .equals(other.getShareExRaidPass())) return false;
-    }
-    if (hasDeclineExRaidPass() != other.hasDeclineExRaidPass()) return false;
-    if (hasDeclineExRaidPass()) {
-      if (!getDeclineExRaidPass()
-          .equals(other.getDeclineExRaidPass())) return false;
-    }
-    if (hasFitnessRewards() != other.hasFitnessRewards()) return false;
-    if (hasFitnessRewards()) {
-      if (!getFitnessRewards()
-          .equals(other.getFitnessRewards())) return false;
-    }
-    if (hasCombat() != other.hasCombat()) return false;
-    if (hasCombat()) {
-      if (!getCombat()
-          .equals(other.getCombat())) return false;
-    }
-    if (hasPurifyPokemon() != other.hasPurifyPokemon()) return false;
-    if (hasPurifyPokemon()) {
-      if (!getPurifyPokemon()
-          .equals(other.getPurifyPokemon())) return false;
-    }
-    if (hasInvasionVictory() != other.hasInvasionVictory()) return false;
-    if (hasInvasionVictory()) {
-      if (!getInvasionVictory()
-          .equals(other.getInvasionVictory())) return false;
-    }
-    if (hasVsSeekerSet() != other.hasVsSeekerSet()) return false;
-    if (hasVsSeekerSet()) {
-      if (!getVsSeekerSet()
-          .equals(other.getVsSeekerSet())) return false;
-    }
-    if (hasVsSeekerCompleteSeason() != other.hasVsSeekerCompleteSeason()) return false;
-    if (hasVsSeekerCompleteSeason()) {
-      if (!getVsSeekerCompleteSeason()
-          .equals(other.getVsSeekerCompleteSeason())) return false;
-    }
-    if (hasVsSeekerWinRewards() != other.hasVsSeekerWinRewards()) return false;
-    if (hasVsSeekerWinRewards()) {
-      if (!getVsSeekerWinRewards()
-          .equals(other.getVsSeekerWinRewards())) return false;
+    if (!getActionCase().equals(other.getActionCase())) return false;
+    switch (actionCase_) {
+      case 3:
+        if (!getCatchPokemon()
+            .equals(other.getCatchPokemon())) return false;
+        break;
+      case 4:
+        if (!getFortSearch()
+            .equals(other.getFortSearch())) return false;
+        break;
+      case 5:
+        if (!getBuddyPokemon()
+            .equals(other.getBuddyPokemon())) return false;
+        break;
+      case 6:
+        if (!getRaidRewards()
+            .equals(other.getRaidRewards())) return false;
+        break;
+      case 7:
+        if (!getPasscodeRewards()
+            .equals(other.getPasscodeRewards())) return false;
+        break;
+      case 8:
+        if (!getCompleteQuest()
+            .equals(other.getCompleteQuest())) return false;
+        break;
+      case 9:
+        if (!getCompleteQuestStampCard()
+            .equals(other.getCompleteQuestStampCard())) return false;
+        break;
+      case 10:
+        if (!getCompleteQuestPokemonEncounter()
+            .equals(other.getCompleteQuestPokemonEncounter())) return false;
+        break;
+      case 11:
+        if (!getBelugaTransfer()
+            .equals(other.getBelugaTransfer())) return false;
+        break;
+      case 12:
+        if (!getOpenGift()
+            .equals(other.getOpenGift())) return false;
+        break;
+      case 13:
+        if (!getSendGift()
+            .equals(other.getSendGift())) return false;
+        break;
+      case 14:
+        if (!getTrading()
+            .equals(other.getTrading())) return false;
+        break;
+      case 15:
+        if (!getShareExRaidPass()
+            .equals(other.getShareExRaidPass())) return false;
+        break;
+      case 16:
+        if (!getDeclineExRaidPass()
+            .equals(other.getDeclineExRaidPass())) return false;
+        break;
+      case 17:
+        if (!getFitnessRewards()
+            .equals(other.getFitnessRewards())) return false;
+        break;
+      case 18:
+        if (!getCombat()
+            .equals(other.getCombat())) return false;
+        break;
+      case 19:
+        if (!getPurifyPokemon()
+            .equals(other.getPurifyPokemon())) return false;
+        break;
+      case 20:
+        if (!getInvasionVictory()
+            .equals(other.getInvasionVictory())) return false;
+        break;
+      case 21:
+        if (!getVsSeekerSet()
+            .equals(other.getVsSeekerSet())) return false;
+        break;
+      case 22:
+        if (!getVsSeekerCompleteSeason()
+            .equals(other.getVsSeekerCompleteSeason())) return false;
+        break;
+      case 23:
+        if (!getVsSeekerWinRewards()
+            .equals(other.getVsSeekerWinRewards())) return false;
+        break;
+      case 24:
+        if (!getBuddyConsumables()
+            .equals(other.getBuddyConsumables())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -1191,89 +1435,97 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + SFIDA_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getSfida());
-    if (hasCatchPokemon()) {
-      hash = (37 * hash) + CATCH_POKEMON_FIELD_NUMBER;
-      hash = (53 * hash) + getCatchPokemon().hashCode();
-    }
-    if (hasFortSearch()) {
-      hash = (37 * hash) + FORT_SEARCH_FIELD_NUMBER;
-      hash = (53 * hash) + getFortSearch().hashCode();
-    }
-    if (hasBuddyPokemon()) {
-      hash = (37 * hash) + BUDDY_POKEMON_FIELD_NUMBER;
-      hash = (53 * hash) + getBuddyPokemon().hashCode();
-    }
-    if (hasRaidRewards()) {
-      hash = (37 * hash) + RAID_REWARDS_FIELD_NUMBER;
-      hash = (53 * hash) + getRaidRewards().hashCode();
-    }
-    if (hasPasscodeRewards()) {
-      hash = (37 * hash) + PASSCODE_REWARDS_FIELD_NUMBER;
-      hash = (53 * hash) + getPasscodeRewards().hashCode();
-    }
-    if (hasCompleteQuest()) {
-      hash = (37 * hash) + COMPLETE_QUEST_FIELD_NUMBER;
-      hash = (53 * hash) + getCompleteQuest().hashCode();
-    }
-    if (hasCompleteQuestStampCard()) {
-      hash = (37 * hash) + COMPLETE_QUEST_STAMP_CARD_FIELD_NUMBER;
-      hash = (53 * hash) + getCompleteQuestStampCard().hashCode();
-    }
-    if (hasCompleteQuestPokemonEncounter()) {
-      hash = (37 * hash) + COMPLETE_QUEST_POKEMON_ENCOUNTER_FIELD_NUMBER;
-      hash = (53 * hash) + getCompleteQuestPokemonEncounter().hashCode();
-    }
-    if (hasBelugaTransfer()) {
-      hash = (37 * hash) + BELUGA_TRANSFER_FIELD_NUMBER;
-      hash = (53 * hash) + getBelugaTransfer().hashCode();
-    }
-    if (hasOpenGift()) {
-      hash = (37 * hash) + OPEN_GIFT_FIELD_NUMBER;
-      hash = (53 * hash) + getOpenGift().hashCode();
-    }
-    if (hasSendGift()) {
-      hash = (37 * hash) + SEND_GIFT_FIELD_NUMBER;
-      hash = (53 * hash) + getSendGift().hashCode();
-    }
-    if (hasTrading()) {
-      hash = (37 * hash) + TRADING_FIELD_NUMBER;
-      hash = (53 * hash) + getTrading().hashCode();
-    }
-    if (hasShareExRaidPass()) {
-      hash = (37 * hash) + SHARE_EX_RAID_PASS_FIELD_NUMBER;
-      hash = (53 * hash) + getShareExRaidPass().hashCode();
-    }
-    if (hasDeclineExRaidPass()) {
-      hash = (37 * hash) + DECLINE_EX_RAID_PASS_FIELD_NUMBER;
-      hash = (53 * hash) + getDeclineExRaidPass().hashCode();
-    }
-    if (hasFitnessRewards()) {
-      hash = (37 * hash) + FITNESS_REWARDS_FIELD_NUMBER;
-      hash = (53 * hash) + getFitnessRewards().hashCode();
-    }
-    if (hasCombat()) {
-      hash = (37 * hash) + COMBAT_FIELD_NUMBER;
-      hash = (53 * hash) + getCombat().hashCode();
-    }
-    if (hasPurifyPokemon()) {
-      hash = (37 * hash) + PURIFY_POKEMON_FIELD_NUMBER;
-      hash = (53 * hash) + getPurifyPokemon().hashCode();
-    }
-    if (hasInvasionVictory()) {
-      hash = (37 * hash) + INVASION_VICTORY_FIELD_NUMBER;
-      hash = (53 * hash) + getInvasionVictory().hashCode();
-    }
-    if (hasVsSeekerSet()) {
-      hash = (37 * hash) + VS_SEEKER_SET_FIELD_NUMBER;
-      hash = (53 * hash) + getVsSeekerSet().hashCode();
-    }
-    if (hasVsSeekerCompleteSeason()) {
-      hash = (37 * hash) + VS_SEEKER_COMPLETE_SEASON_FIELD_NUMBER;
-      hash = (53 * hash) + getVsSeekerCompleteSeason().hashCode();
-    }
-    if (hasVsSeekerWinRewards()) {
-      hash = (37 * hash) + VS_SEEKER_WIN_REWARDS_FIELD_NUMBER;
-      hash = (53 * hash) + getVsSeekerWinRewards().hashCode();
+    switch (actionCase_) {
+      case 3:
+        hash = (37 * hash) + CATCH_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getCatchPokemon().hashCode();
+        break;
+      case 4:
+        hash = (37 * hash) + FORT_SEARCH_FIELD_NUMBER;
+        hash = (53 * hash) + getFortSearch().hashCode();
+        break;
+      case 5:
+        hash = (37 * hash) + BUDDY_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getBuddyPokemon().hashCode();
+        break;
+      case 6:
+        hash = (37 * hash) + RAID_REWARDS_FIELD_NUMBER;
+        hash = (53 * hash) + getRaidRewards().hashCode();
+        break;
+      case 7:
+        hash = (37 * hash) + PASSCODE_REWARDS_FIELD_NUMBER;
+        hash = (53 * hash) + getPasscodeRewards().hashCode();
+        break;
+      case 8:
+        hash = (37 * hash) + COMPLETE_QUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getCompleteQuest().hashCode();
+        break;
+      case 9:
+        hash = (37 * hash) + COMPLETE_QUEST_STAMP_CARD_FIELD_NUMBER;
+        hash = (53 * hash) + getCompleteQuestStampCard().hashCode();
+        break;
+      case 10:
+        hash = (37 * hash) + COMPLETE_QUEST_POKEMON_ENCOUNTER_FIELD_NUMBER;
+        hash = (53 * hash) + getCompleteQuestPokemonEncounter().hashCode();
+        break;
+      case 11:
+        hash = (37 * hash) + BELUGA_TRANSFER_FIELD_NUMBER;
+        hash = (53 * hash) + getBelugaTransfer().hashCode();
+        break;
+      case 12:
+        hash = (37 * hash) + OPEN_GIFT_FIELD_NUMBER;
+        hash = (53 * hash) + getOpenGift().hashCode();
+        break;
+      case 13:
+        hash = (37 * hash) + SEND_GIFT_FIELD_NUMBER;
+        hash = (53 * hash) + getSendGift().hashCode();
+        break;
+      case 14:
+        hash = (37 * hash) + TRADING_FIELD_NUMBER;
+        hash = (53 * hash) + getTrading().hashCode();
+        break;
+      case 15:
+        hash = (37 * hash) + SHARE_EX_RAID_PASS_FIELD_NUMBER;
+        hash = (53 * hash) + getShareExRaidPass().hashCode();
+        break;
+      case 16:
+        hash = (37 * hash) + DECLINE_EX_RAID_PASS_FIELD_NUMBER;
+        hash = (53 * hash) + getDeclineExRaidPass().hashCode();
+        break;
+      case 17:
+        hash = (37 * hash) + FITNESS_REWARDS_FIELD_NUMBER;
+        hash = (53 * hash) + getFitnessRewards().hashCode();
+        break;
+      case 18:
+        hash = (37 * hash) + COMBAT_FIELD_NUMBER;
+        hash = (53 * hash) + getCombat().hashCode();
+        break;
+      case 19:
+        hash = (37 * hash) + PURIFY_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getPurifyPokemon().hashCode();
+        break;
+      case 20:
+        hash = (37 * hash) + INVASION_VICTORY_FIELD_NUMBER;
+        hash = (53 * hash) + getInvasionVictory().hashCode();
+        break;
+      case 21:
+        hash = (37 * hash) + VS_SEEKER_SET_FIELD_NUMBER;
+        hash = (53 * hash) + getVsSeekerSet().hashCode();
+        break;
+      case 22:
+        hash = (37 * hash) + VS_SEEKER_COMPLETE_SEASON_FIELD_NUMBER;
+        hash = (53 * hash) + getVsSeekerCompleteSeason().hashCode();
+        break;
+      case 23:
+        hash = (37 * hash) + VS_SEEKER_WIN_REWARDS_FIELD_NUMBER;
+        hash = (53 * hash) + getVsSeekerWinRewards().hashCode();
+        break;
+      case 24:
+        hash = (37 * hash) + BUDDY_CONSUMABLES_FIELD_NUMBER;
+        hash = (53 * hash) + getBuddyConsumables().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -1412,132 +1664,8 @@ private static final long serialVersionUID = 0L;
 
       sfida_ = false;
 
-      if (catchPokemonBuilder_ == null) {
-        catchPokemon_ = null;
-      } else {
-        catchPokemon_ = null;
-        catchPokemonBuilder_ = null;
-      }
-      if (fortSearchBuilder_ == null) {
-        fortSearch_ = null;
-      } else {
-        fortSearch_ = null;
-        fortSearchBuilder_ = null;
-      }
-      if (buddyPokemonBuilder_ == null) {
-        buddyPokemon_ = null;
-      } else {
-        buddyPokemon_ = null;
-        buddyPokemonBuilder_ = null;
-      }
-      if (raidRewardsBuilder_ == null) {
-        raidRewards_ = null;
-      } else {
-        raidRewards_ = null;
-        raidRewardsBuilder_ = null;
-      }
-      if (passcodeRewardsBuilder_ == null) {
-        passcodeRewards_ = null;
-      } else {
-        passcodeRewards_ = null;
-        passcodeRewardsBuilder_ = null;
-      }
-      if (completeQuestBuilder_ == null) {
-        completeQuest_ = null;
-      } else {
-        completeQuest_ = null;
-        completeQuestBuilder_ = null;
-      }
-      if (completeQuestStampCardBuilder_ == null) {
-        completeQuestStampCard_ = null;
-      } else {
-        completeQuestStampCard_ = null;
-        completeQuestStampCardBuilder_ = null;
-      }
-      if (completeQuestPokemonEncounterBuilder_ == null) {
-        completeQuestPokemonEncounter_ = null;
-      } else {
-        completeQuestPokemonEncounter_ = null;
-        completeQuestPokemonEncounterBuilder_ = null;
-      }
-      if (belugaTransferBuilder_ == null) {
-        belugaTransfer_ = null;
-      } else {
-        belugaTransfer_ = null;
-        belugaTransferBuilder_ = null;
-      }
-      if (openGiftBuilder_ == null) {
-        openGift_ = null;
-      } else {
-        openGift_ = null;
-        openGiftBuilder_ = null;
-      }
-      if (sendGiftBuilder_ == null) {
-        sendGift_ = null;
-      } else {
-        sendGift_ = null;
-        sendGiftBuilder_ = null;
-      }
-      if (tradingBuilder_ == null) {
-        trading_ = null;
-      } else {
-        trading_ = null;
-        tradingBuilder_ = null;
-      }
-      if (shareExRaidPassBuilder_ == null) {
-        shareExRaidPass_ = null;
-      } else {
-        shareExRaidPass_ = null;
-        shareExRaidPassBuilder_ = null;
-      }
-      if (declineExRaidPassBuilder_ == null) {
-        declineExRaidPass_ = null;
-      } else {
-        declineExRaidPass_ = null;
-        declineExRaidPassBuilder_ = null;
-      }
-      if (fitnessRewardsBuilder_ == null) {
-        fitnessRewards_ = null;
-      } else {
-        fitnessRewards_ = null;
-        fitnessRewardsBuilder_ = null;
-      }
-      if (combatBuilder_ == null) {
-        combat_ = null;
-      } else {
-        combat_ = null;
-        combatBuilder_ = null;
-      }
-      if (purifyPokemonBuilder_ == null) {
-        purifyPokemon_ = null;
-      } else {
-        purifyPokemon_ = null;
-        purifyPokemonBuilder_ = null;
-      }
-      if (invasionVictoryBuilder_ == null) {
-        invasionVictory_ = null;
-      } else {
-        invasionVictory_ = null;
-        invasionVictoryBuilder_ = null;
-      }
-      if (vsSeekerSetBuilder_ == null) {
-        vsSeekerSet_ = null;
-      } else {
-        vsSeekerSet_ = null;
-        vsSeekerSetBuilder_ = null;
-      }
-      if (vsSeekerCompleteSeasonBuilder_ == null) {
-        vsSeekerCompleteSeason_ = null;
-      } else {
-        vsSeekerCompleteSeason_ = null;
-        vsSeekerCompleteSeasonBuilder_ = null;
-      }
-      if (vsSeekerWinRewardsBuilder_ == null) {
-        vsSeekerWinRewards_ = null;
-      } else {
-        vsSeekerWinRewards_ = null;
-        vsSeekerWinRewardsBuilder_ = null;
-      }
+      actionCase_ = 0;
+      action_ = null;
       return this;
     }
 
@@ -1564,113 +1692,163 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.ActionLogEntry buildPartial() {
       POGOProtos.Rpc.ActionLogEntry result = new POGOProtos.Rpc.ActionLogEntry(this);
+      if (actionCase_ == 3) {
+        if (catchPokemonBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = catchPokemonBuilder_.build();
+        }
+      }
+      if (actionCase_ == 4) {
+        if (fortSearchBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = fortSearchBuilder_.build();
+        }
+      }
+      if (actionCase_ == 5) {
+        if (buddyPokemonBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = buddyPokemonBuilder_.build();
+        }
+      }
+      if (actionCase_ == 6) {
+        if (raidRewardsBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = raidRewardsBuilder_.build();
+        }
+      }
+      if (actionCase_ == 7) {
+        if (passcodeRewardsBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = passcodeRewardsBuilder_.build();
+        }
+      }
+      if (actionCase_ == 8) {
+        if (completeQuestBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = completeQuestBuilder_.build();
+        }
+      }
+      if (actionCase_ == 9) {
+        if (completeQuestStampCardBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = completeQuestStampCardBuilder_.build();
+        }
+      }
+      if (actionCase_ == 10) {
+        if (completeQuestPokemonEncounterBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = completeQuestPokemonEncounterBuilder_.build();
+        }
+      }
+      if (actionCase_ == 11) {
+        if (belugaTransferBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = belugaTransferBuilder_.build();
+        }
+      }
+      if (actionCase_ == 12) {
+        if (openGiftBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = openGiftBuilder_.build();
+        }
+      }
+      if (actionCase_ == 13) {
+        if (sendGiftBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = sendGiftBuilder_.build();
+        }
+      }
+      if (actionCase_ == 14) {
+        if (tradingBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = tradingBuilder_.build();
+        }
+      }
+      if (actionCase_ == 15) {
+        if (shareExRaidPassBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = shareExRaidPassBuilder_.build();
+        }
+      }
+      if (actionCase_ == 16) {
+        if (declineExRaidPassBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = declineExRaidPassBuilder_.build();
+        }
+      }
+      if (actionCase_ == 17) {
+        if (fitnessRewardsBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = fitnessRewardsBuilder_.build();
+        }
+      }
+      if (actionCase_ == 18) {
+        if (combatBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = combatBuilder_.build();
+        }
+      }
+      if (actionCase_ == 19) {
+        if (purifyPokemonBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = purifyPokemonBuilder_.build();
+        }
+      }
+      if (actionCase_ == 20) {
+        if (invasionVictoryBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = invasionVictoryBuilder_.build();
+        }
+      }
+      if (actionCase_ == 21) {
+        if (vsSeekerSetBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = vsSeekerSetBuilder_.build();
+        }
+      }
+      if (actionCase_ == 22) {
+        if (vsSeekerCompleteSeasonBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = vsSeekerCompleteSeasonBuilder_.build();
+        }
+      }
+      if (actionCase_ == 23) {
+        if (vsSeekerWinRewardsBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = vsSeekerWinRewardsBuilder_.build();
+        }
+      }
+      if (actionCase_ == 24) {
+        if (buddyConsumablesBuilder_ == null) {
+          result.action_ = action_;
+        } else {
+          result.action_ = buddyConsumablesBuilder_.build();
+        }
+      }
       result.timestampMs_ = timestampMs_;
       result.sfida_ = sfida_;
-      if (catchPokemonBuilder_ == null) {
-        result.catchPokemon_ = catchPokemon_;
-      } else {
-        result.catchPokemon_ = catchPokemonBuilder_.build();
-      }
-      if (fortSearchBuilder_ == null) {
-        result.fortSearch_ = fortSearch_;
-      } else {
-        result.fortSearch_ = fortSearchBuilder_.build();
-      }
-      if (buddyPokemonBuilder_ == null) {
-        result.buddyPokemon_ = buddyPokemon_;
-      } else {
-        result.buddyPokemon_ = buddyPokemonBuilder_.build();
-      }
-      if (raidRewardsBuilder_ == null) {
-        result.raidRewards_ = raidRewards_;
-      } else {
-        result.raidRewards_ = raidRewardsBuilder_.build();
-      }
-      if (passcodeRewardsBuilder_ == null) {
-        result.passcodeRewards_ = passcodeRewards_;
-      } else {
-        result.passcodeRewards_ = passcodeRewardsBuilder_.build();
-      }
-      if (completeQuestBuilder_ == null) {
-        result.completeQuest_ = completeQuest_;
-      } else {
-        result.completeQuest_ = completeQuestBuilder_.build();
-      }
-      if (completeQuestStampCardBuilder_ == null) {
-        result.completeQuestStampCard_ = completeQuestStampCard_;
-      } else {
-        result.completeQuestStampCard_ = completeQuestStampCardBuilder_.build();
-      }
-      if (completeQuestPokemonEncounterBuilder_ == null) {
-        result.completeQuestPokemonEncounter_ = completeQuestPokemonEncounter_;
-      } else {
-        result.completeQuestPokemonEncounter_ = completeQuestPokemonEncounterBuilder_.build();
-      }
-      if (belugaTransferBuilder_ == null) {
-        result.belugaTransfer_ = belugaTransfer_;
-      } else {
-        result.belugaTransfer_ = belugaTransferBuilder_.build();
-      }
-      if (openGiftBuilder_ == null) {
-        result.openGift_ = openGift_;
-      } else {
-        result.openGift_ = openGiftBuilder_.build();
-      }
-      if (sendGiftBuilder_ == null) {
-        result.sendGift_ = sendGift_;
-      } else {
-        result.sendGift_ = sendGiftBuilder_.build();
-      }
-      if (tradingBuilder_ == null) {
-        result.trading_ = trading_;
-      } else {
-        result.trading_ = tradingBuilder_.build();
-      }
-      if (shareExRaidPassBuilder_ == null) {
-        result.shareExRaidPass_ = shareExRaidPass_;
-      } else {
-        result.shareExRaidPass_ = shareExRaidPassBuilder_.build();
-      }
-      if (declineExRaidPassBuilder_ == null) {
-        result.declineExRaidPass_ = declineExRaidPass_;
-      } else {
-        result.declineExRaidPass_ = declineExRaidPassBuilder_.build();
-      }
-      if (fitnessRewardsBuilder_ == null) {
-        result.fitnessRewards_ = fitnessRewards_;
-      } else {
-        result.fitnessRewards_ = fitnessRewardsBuilder_.build();
-      }
-      if (combatBuilder_ == null) {
-        result.combat_ = combat_;
-      } else {
-        result.combat_ = combatBuilder_.build();
-      }
-      if (purifyPokemonBuilder_ == null) {
-        result.purifyPokemon_ = purifyPokemon_;
-      } else {
-        result.purifyPokemon_ = purifyPokemonBuilder_.build();
-      }
-      if (invasionVictoryBuilder_ == null) {
-        result.invasionVictory_ = invasionVictory_;
-      } else {
-        result.invasionVictory_ = invasionVictoryBuilder_.build();
-      }
-      if (vsSeekerSetBuilder_ == null) {
-        result.vsSeekerSet_ = vsSeekerSet_;
-      } else {
-        result.vsSeekerSet_ = vsSeekerSetBuilder_.build();
-      }
-      if (vsSeekerCompleteSeasonBuilder_ == null) {
-        result.vsSeekerCompleteSeason_ = vsSeekerCompleteSeason_;
-      } else {
-        result.vsSeekerCompleteSeason_ = vsSeekerCompleteSeasonBuilder_.build();
-      }
-      if (vsSeekerWinRewardsBuilder_ == null) {
-        result.vsSeekerWinRewards_ = vsSeekerWinRewards_;
-      } else {
-        result.vsSeekerWinRewards_ = vsSeekerWinRewardsBuilder_.build();
-      }
+      result.actionCase_ = actionCase_;
       onBuilt();
       return result;
     }
@@ -1725,68 +1903,98 @@ private static final long serialVersionUID = 0L;
       if (other.getSfida() != false) {
         setSfida(other.getSfida());
       }
-      if (other.hasCatchPokemon()) {
-        mergeCatchPokemon(other.getCatchPokemon());
-      }
-      if (other.hasFortSearch()) {
-        mergeFortSearch(other.getFortSearch());
-      }
-      if (other.hasBuddyPokemon()) {
-        mergeBuddyPokemon(other.getBuddyPokemon());
-      }
-      if (other.hasRaidRewards()) {
-        mergeRaidRewards(other.getRaidRewards());
-      }
-      if (other.hasPasscodeRewards()) {
-        mergePasscodeRewards(other.getPasscodeRewards());
-      }
-      if (other.hasCompleteQuest()) {
-        mergeCompleteQuest(other.getCompleteQuest());
-      }
-      if (other.hasCompleteQuestStampCard()) {
-        mergeCompleteQuestStampCard(other.getCompleteQuestStampCard());
-      }
-      if (other.hasCompleteQuestPokemonEncounter()) {
-        mergeCompleteQuestPokemonEncounter(other.getCompleteQuestPokemonEncounter());
-      }
-      if (other.hasBelugaTransfer()) {
-        mergeBelugaTransfer(other.getBelugaTransfer());
-      }
-      if (other.hasOpenGift()) {
-        mergeOpenGift(other.getOpenGift());
-      }
-      if (other.hasSendGift()) {
-        mergeSendGift(other.getSendGift());
-      }
-      if (other.hasTrading()) {
-        mergeTrading(other.getTrading());
-      }
-      if (other.hasShareExRaidPass()) {
-        mergeShareExRaidPass(other.getShareExRaidPass());
-      }
-      if (other.hasDeclineExRaidPass()) {
-        mergeDeclineExRaidPass(other.getDeclineExRaidPass());
-      }
-      if (other.hasFitnessRewards()) {
-        mergeFitnessRewards(other.getFitnessRewards());
-      }
-      if (other.hasCombat()) {
-        mergeCombat(other.getCombat());
-      }
-      if (other.hasPurifyPokemon()) {
-        mergePurifyPokemon(other.getPurifyPokemon());
-      }
-      if (other.hasInvasionVictory()) {
-        mergeInvasionVictory(other.getInvasionVictory());
-      }
-      if (other.hasVsSeekerSet()) {
-        mergeVsSeekerSet(other.getVsSeekerSet());
-      }
-      if (other.hasVsSeekerCompleteSeason()) {
-        mergeVsSeekerCompleteSeason(other.getVsSeekerCompleteSeason());
-      }
-      if (other.hasVsSeekerWinRewards()) {
-        mergeVsSeekerWinRewards(other.getVsSeekerWinRewards());
+      switch (other.getActionCase()) {
+        case CATCH_POKEMON: {
+          mergeCatchPokemon(other.getCatchPokemon());
+          break;
+        }
+        case FORT_SEARCH: {
+          mergeFortSearch(other.getFortSearch());
+          break;
+        }
+        case BUDDY_POKEMON: {
+          mergeBuddyPokemon(other.getBuddyPokemon());
+          break;
+        }
+        case RAID_REWARDS: {
+          mergeRaidRewards(other.getRaidRewards());
+          break;
+        }
+        case PASSCODE_REWARDS: {
+          mergePasscodeRewards(other.getPasscodeRewards());
+          break;
+        }
+        case COMPLETE_QUEST: {
+          mergeCompleteQuest(other.getCompleteQuest());
+          break;
+        }
+        case COMPLETE_QUEST_STAMP_CARD: {
+          mergeCompleteQuestStampCard(other.getCompleteQuestStampCard());
+          break;
+        }
+        case COMPLETE_QUEST_POKEMON_ENCOUNTER: {
+          mergeCompleteQuestPokemonEncounter(other.getCompleteQuestPokemonEncounter());
+          break;
+        }
+        case BELUGA_TRANSFER: {
+          mergeBelugaTransfer(other.getBelugaTransfer());
+          break;
+        }
+        case OPEN_GIFT: {
+          mergeOpenGift(other.getOpenGift());
+          break;
+        }
+        case SEND_GIFT: {
+          mergeSendGift(other.getSendGift());
+          break;
+        }
+        case TRADING: {
+          mergeTrading(other.getTrading());
+          break;
+        }
+        case SHARE_EX_RAID_PASS: {
+          mergeShareExRaidPass(other.getShareExRaidPass());
+          break;
+        }
+        case DECLINE_EX_RAID_PASS: {
+          mergeDeclineExRaidPass(other.getDeclineExRaidPass());
+          break;
+        }
+        case FITNESS_REWARDS: {
+          mergeFitnessRewards(other.getFitnessRewards());
+          break;
+        }
+        case COMBAT: {
+          mergeCombat(other.getCombat());
+          break;
+        }
+        case PURIFY_POKEMON: {
+          mergePurifyPokemon(other.getPurifyPokemon());
+          break;
+        }
+        case INVASION_VICTORY: {
+          mergeInvasionVictory(other.getInvasionVictory());
+          break;
+        }
+        case VS_SEEKER_SET: {
+          mergeVsSeekerSet(other.getVsSeekerSet());
+          break;
+        }
+        case VS_SEEKER_COMPLETE_SEASON: {
+          mergeVsSeekerCompleteSeason(other.getVsSeekerCompleteSeason());
+          break;
+        }
+        case VS_SEEKER_WIN_REWARDS: {
+          mergeVsSeekerWinRewards(other.getVsSeekerWinRewards());
+          break;
+        }
+        case BUDDY_CONSUMABLES: {
+          mergeBuddyConsumables(other.getBuddyConsumables());
+          break;
+        }
+        case ACTION_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1815,6 +2023,3057 @@ private static final long serialVersionUID = 0L;
         }
       }
       return this;
+    }
+    private int actionCase_ = 0;
+    private java.lang.Object action_;
+    public ActionCase
+        getActionCase() {
+      return ActionCase.forNumber(
+          actionCase_);
+    }
+
+    public Builder clearAction() {
+      actionCase_ = 0;
+      action_ = null;
+      onChanged();
+      return this;
+    }
+
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CatchPokemonLogEntry, POGOProtos.Rpc.CatchPokemonLogEntry.Builder, POGOProtos.Rpc.CatchPokemonLogEntryOrBuilder> catchPokemonBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     * @return Whether the catchPokemon field is set.
+     */
+    public boolean hasCatchPokemon() {
+      return actionCase_ == 3;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     * @return The catchPokemon.
+     */
+    public POGOProtos.Rpc.CatchPokemonLogEntry getCatchPokemon() {
+      if (catchPokemonBuilder_ == null) {
+        if (actionCase_ == 3) {
+          return (POGOProtos.Rpc.CatchPokemonLogEntry) action_;
+        }
+        return POGOProtos.Rpc.CatchPokemonLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 3) {
+          return catchPokemonBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CatchPokemonLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     */
+    public Builder setCatchPokemon(POGOProtos.Rpc.CatchPokemonLogEntry value) {
+      if (catchPokemonBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        catchPokemonBuilder_.setMessage(value);
+      }
+      actionCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     */
+    public Builder setCatchPokemon(
+        POGOProtos.Rpc.CatchPokemonLogEntry.Builder builderForValue) {
+      if (catchPokemonBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        catchPokemonBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     */
+    public Builder mergeCatchPokemon(POGOProtos.Rpc.CatchPokemonLogEntry value) {
+      if (catchPokemonBuilder_ == null) {
+        if (actionCase_ == 3 &&
+            action_ != POGOProtos.Rpc.CatchPokemonLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.CatchPokemonLogEntry.newBuilder((POGOProtos.Rpc.CatchPokemonLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 3) {
+          catchPokemonBuilder_.mergeFrom(value);
+        }
+        catchPokemonBuilder_.setMessage(value);
+      }
+      actionCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     */
+    public Builder clearCatchPokemon() {
+      if (catchPokemonBuilder_ == null) {
+        if (actionCase_ == 3) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 3) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        catchPokemonBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     */
+    public POGOProtos.Rpc.CatchPokemonLogEntry.Builder getCatchPokemonBuilder() {
+      return getCatchPokemonFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     */
+    public POGOProtos.Rpc.CatchPokemonLogEntryOrBuilder getCatchPokemonOrBuilder() {
+      if ((actionCase_ == 3) && (catchPokemonBuilder_ != null)) {
+        return catchPokemonBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 3) {
+          return (POGOProtos.Rpc.CatchPokemonLogEntry) action_;
+        }
+        return POGOProtos.Rpc.CatchPokemonLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CatchPokemonLogEntry, POGOProtos.Rpc.CatchPokemonLogEntry.Builder, POGOProtos.Rpc.CatchPokemonLogEntryOrBuilder> 
+        getCatchPokemonFieldBuilder() {
+      if (catchPokemonBuilder_ == null) {
+        if (!(actionCase_ == 3)) {
+          action_ = POGOProtos.Rpc.CatchPokemonLogEntry.getDefaultInstance();
+        }
+        catchPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.CatchPokemonLogEntry, POGOProtos.Rpc.CatchPokemonLogEntry.Builder, POGOProtos.Rpc.CatchPokemonLogEntryOrBuilder>(
+                (POGOProtos.Rpc.CatchPokemonLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 3;
+      onChanged();;
+      return catchPokemonBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.FortSearchLogEntry, POGOProtos.Rpc.FortSearchLogEntry.Builder, POGOProtos.Rpc.FortSearchLogEntryOrBuilder> fortSearchBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+     * @return Whether the fortSearch field is set.
+     */
+    public boolean hasFortSearch() {
+      return actionCase_ == 4;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+     * @return The fortSearch.
+     */
+    public POGOProtos.Rpc.FortSearchLogEntry getFortSearch() {
+      if (fortSearchBuilder_ == null) {
+        if (actionCase_ == 4) {
+          return (POGOProtos.Rpc.FortSearchLogEntry) action_;
+        }
+        return POGOProtos.Rpc.FortSearchLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 4) {
+          return fortSearchBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.FortSearchLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+     */
+    public Builder setFortSearch(POGOProtos.Rpc.FortSearchLogEntry value) {
+      if (fortSearchBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        fortSearchBuilder_.setMessage(value);
+      }
+      actionCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+     */
+    public Builder setFortSearch(
+        POGOProtos.Rpc.FortSearchLogEntry.Builder builderForValue) {
+      if (fortSearchBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        fortSearchBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+     */
+    public Builder mergeFortSearch(POGOProtos.Rpc.FortSearchLogEntry value) {
+      if (fortSearchBuilder_ == null) {
+        if (actionCase_ == 4 &&
+            action_ != POGOProtos.Rpc.FortSearchLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.FortSearchLogEntry.newBuilder((POGOProtos.Rpc.FortSearchLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 4) {
+          fortSearchBuilder_.mergeFrom(value);
+        }
+        fortSearchBuilder_.setMessage(value);
+      }
+      actionCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+     */
+    public Builder clearFortSearch() {
+      if (fortSearchBuilder_ == null) {
+        if (actionCase_ == 4) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 4) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        fortSearchBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+     */
+    public POGOProtos.Rpc.FortSearchLogEntry.Builder getFortSearchBuilder() {
+      return getFortSearchFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+     */
+    public POGOProtos.Rpc.FortSearchLogEntryOrBuilder getFortSearchOrBuilder() {
+      if ((actionCase_ == 4) && (fortSearchBuilder_ != null)) {
+        return fortSearchBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 4) {
+          return (POGOProtos.Rpc.FortSearchLogEntry) action_;
+        }
+        return POGOProtos.Rpc.FortSearchLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.FortSearchLogEntry, POGOProtos.Rpc.FortSearchLogEntry.Builder, POGOProtos.Rpc.FortSearchLogEntryOrBuilder> 
+        getFortSearchFieldBuilder() {
+      if (fortSearchBuilder_ == null) {
+        if (!(actionCase_ == 4)) {
+          action_ = POGOProtos.Rpc.FortSearchLogEntry.getDefaultInstance();
+        }
+        fortSearchBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.FortSearchLogEntry, POGOProtos.Rpc.FortSearchLogEntry.Builder, POGOProtos.Rpc.FortSearchLogEntryOrBuilder>(
+                (POGOProtos.Rpc.FortSearchLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 4;
+      onChanged();;
+      return fortSearchBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.BuddyPokemonLogEntry, POGOProtos.Rpc.BuddyPokemonLogEntry.Builder, POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder> buddyPokemonBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     * @return Whether the buddyPokemon field is set.
+     */
+    public boolean hasBuddyPokemon() {
+      return actionCase_ == 5;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     * @return The buddyPokemon.
+     */
+    public POGOProtos.Rpc.BuddyPokemonLogEntry getBuddyPokemon() {
+      if (buddyPokemonBuilder_ == null) {
+        if (actionCase_ == 5) {
+          return (POGOProtos.Rpc.BuddyPokemonLogEntry) action_;
+        }
+        return POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 5) {
+          return buddyPokemonBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     */
+    public Builder setBuddyPokemon(POGOProtos.Rpc.BuddyPokemonLogEntry value) {
+      if (buddyPokemonBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        buddyPokemonBuilder_.setMessage(value);
+      }
+      actionCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     */
+    public Builder setBuddyPokemon(
+        POGOProtos.Rpc.BuddyPokemonLogEntry.Builder builderForValue) {
+      if (buddyPokemonBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        buddyPokemonBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     */
+    public Builder mergeBuddyPokemon(POGOProtos.Rpc.BuddyPokemonLogEntry value) {
+      if (buddyPokemonBuilder_ == null) {
+        if (actionCase_ == 5 &&
+            action_ != POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.BuddyPokemonLogEntry.newBuilder((POGOProtos.Rpc.BuddyPokemonLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 5) {
+          buddyPokemonBuilder_.mergeFrom(value);
+        }
+        buddyPokemonBuilder_.setMessage(value);
+      }
+      actionCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     */
+    public Builder clearBuddyPokemon() {
+      if (buddyPokemonBuilder_ == null) {
+        if (actionCase_ == 5) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 5) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        buddyPokemonBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     */
+    public POGOProtos.Rpc.BuddyPokemonLogEntry.Builder getBuddyPokemonBuilder() {
+      return getBuddyPokemonFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     */
+    public POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder getBuddyPokemonOrBuilder() {
+      if ((actionCase_ == 5) && (buddyPokemonBuilder_ != null)) {
+        return buddyPokemonBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 5) {
+          return (POGOProtos.Rpc.BuddyPokemonLogEntry) action_;
+        }
+        return POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.BuddyPokemonLogEntry, POGOProtos.Rpc.BuddyPokemonLogEntry.Builder, POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder> 
+        getBuddyPokemonFieldBuilder() {
+      if (buddyPokemonBuilder_ == null) {
+        if (!(actionCase_ == 5)) {
+          action_ = POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
+        }
+        buddyPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.BuddyPokemonLogEntry, POGOProtos.Rpc.BuddyPokemonLogEntry.Builder, POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder>(
+                (POGOProtos.Rpc.BuddyPokemonLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 5;
+      onChanged();;
+      return buddyPokemonBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.RaidRewardsLogEntry, POGOProtos.Rpc.RaidRewardsLogEntry.Builder, POGOProtos.Rpc.RaidRewardsLogEntryOrBuilder> raidRewardsBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+     * @return Whether the raidRewards field is set.
+     */
+    public boolean hasRaidRewards() {
+      return actionCase_ == 6;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+     * @return The raidRewards.
+     */
+    public POGOProtos.Rpc.RaidRewardsLogEntry getRaidRewards() {
+      if (raidRewardsBuilder_ == null) {
+        if (actionCase_ == 6) {
+          return (POGOProtos.Rpc.RaidRewardsLogEntry) action_;
+        }
+        return POGOProtos.Rpc.RaidRewardsLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 6) {
+          return raidRewardsBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.RaidRewardsLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+     */
+    public Builder setRaidRewards(POGOProtos.Rpc.RaidRewardsLogEntry value) {
+      if (raidRewardsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        raidRewardsBuilder_.setMessage(value);
+      }
+      actionCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+     */
+    public Builder setRaidRewards(
+        POGOProtos.Rpc.RaidRewardsLogEntry.Builder builderForValue) {
+      if (raidRewardsBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        raidRewardsBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+     */
+    public Builder mergeRaidRewards(POGOProtos.Rpc.RaidRewardsLogEntry value) {
+      if (raidRewardsBuilder_ == null) {
+        if (actionCase_ == 6 &&
+            action_ != POGOProtos.Rpc.RaidRewardsLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.RaidRewardsLogEntry.newBuilder((POGOProtos.Rpc.RaidRewardsLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 6) {
+          raidRewardsBuilder_.mergeFrom(value);
+        }
+        raidRewardsBuilder_.setMessage(value);
+      }
+      actionCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+     */
+    public Builder clearRaidRewards() {
+      if (raidRewardsBuilder_ == null) {
+        if (actionCase_ == 6) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 6) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        raidRewardsBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+     */
+    public POGOProtos.Rpc.RaidRewardsLogEntry.Builder getRaidRewardsBuilder() {
+      return getRaidRewardsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+     */
+    public POGOProtos.Rpc.RaidRewardsLogEntryOrBuilder getRaidRewardsOrBuilder() {
+      if ((actionCase_ == 6) && (raidRewardsBuilder_ != null)) {
+        return raidRewardsBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 6) {
+          return (POGOProtos.Rpc.RaidRewardsLogEntry) action_;
+        }
+        return POGOProtos.Rpc.RaidRewardsLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.RaidRewardsLogEntry, POGOProtos.Rpc.RaidRewardsLogEntry.Builder, POGOProtos.Rpc.RaidRewardsLogEntryOrBuilder> 
+        getRaidRewardsFieldBuilder() {
+      if (raidRewardsBuilder_ == null) {
+        if (!(actionCase_ == 6)) {
+          action_ = POGOProtos.Rpc.RaidRewardsLogEntry.getDefaultInstance();
+        }
+        raidRewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.RaidRewardsLogEntry, POGOProtos.Rpc.RaidRewardsLogEntry.Builder, POGOProtos.Rpc.RaidRewardsLogEntryOrBuilder>(
+                (POGOProtos.Rpc.RaidRewardsLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 6;
+      onChanged();;
+      return raidRewardsBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PasscodeRewardsLogEntry, POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder, POGOProtos.Rpc.PasscodeRewardsLogEntryOrBuilder> passcodeRewardsBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     * @return Whether the passcodeRewards field is set.
+     */
+    public boolean hasPasscodeRewards() {
+      return actionCase_ == 7;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     * @return The passcodeRewards.
+     */
+    public POGOProtos.Rpc.PasscodeRewardsLogEntry getPasscodeRewards() {
+      if (passcodeRewardsBuilder_ == null) {
+        if (actionCase_ == 7) {
+          return (POGOProtos.Rpc.PasscodeRewardsLogEntry) action_;
+        }
+        return POGOProtos.Rpc.PasscodeRewardsLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 7) {
+          return passcodeRewardsBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PasscodeRewardsLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     */
+    public Builder setPasscodeRewards(POGOProtos.Rpc.PasscodeRewardsLogEntry value) {
+      if (passcodeRewardsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        passcodeRewardsBuilder_.setMessage(value);
+      }
+      actionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     */
+    public Builder setPasscodeRewards(
+        POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder builderForValue) {
+      if (passcodeRewardsBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        passcodeRewardsBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     */
+    public Builder mergePasscodeRewards(POGOProtos.Rpc.PasscodeRewardsLogEntry value) {
+      if (passcodeRewardsBuilder_ == null) {
+        if (actionCase_ == 7 &&
+            action_ != POGOProtos.Rpc.PasscodeRewardsLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.PasscodeRewardsLogEntry.newBuilder((POGOProtos.Rpc.PasscodeRewardsLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 7) {
+          passcodeRewardsBuilder_.mergeFrom(value);
+        }
+        passcodeRewardsBuilder_.setMessage(value);
+      }
+      actionCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     */
+    public Builder clearPasscodeRewards() {
+      if (passcodeRewardsBuilder_ == null) {
+        if (actionCase_ == 7) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 7) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        passcodeRewardsBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     */
+    public POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder getPasscodeRewardsBuilder() {
+      return getPasscodeRewardsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     */
+    public POGOProtos.Rpc.PasscodeRewardsLogEntryOrBuilder getPasscodeRewardsOrBuilder() {
+      if ((actionCase_ == 7) && (passcodeRewardsBuilder_ != null)) {
+        return passcodeRewardsBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 7) {
+          return (POGOProtos.Rpc.PasscodeRewardsLogEntry) action_;
+        }
+        return POGOProtos.Rpc.PasscodeRewardsLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PasscodeRewardsLogEntry, POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder, POGOProtos.Rpc.PasscodeRewardsLogEntryOrBuilder> 
+        getPasscodeRewardsFieldBuilder() {
+      if (passcodeRewardsBuilder_ == null) {
+        if (!(actionCase_ == 7)) {
+          action_ = POGOProtos.Rpc.PasscodeRewardsLogEntry.getDefaultInstance();
+        }
+        passcodeRewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.PasscodeRewardsLogEntry, POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder, POGOProtos.Rpc.PasscodeRewardsLogEntryOrBuilder>(
+                (POGOProtos.Rpc.PasscodeRewardsLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 7;
+      onChanged();;
+      return passcodeRewardsBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CompleteQuestLogEntry, POGOProtos.Rpc.CompleteQuestLogEntry.Builder, POGOProtos.Rpc.CompleteQuestLogEntryOrBuilder> completeQuestBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+     * @return Whether the completeQuest field is set.
+     */
+    public boolean hasCompleteQuest() {
+      return actionCase_ == 8;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+     * @return The completeQuest.
+     */
+    public POGOProtos.Rpc.CompleteQuestLogEntry getCompleteQuest() {
+      if (completeQuestBuilder_ == null) {
+        if (actionCase_ == 8) {
+          return (POGOProtos.Rpc.CompleteQuestLogEntry) action_;
+        }
+        return POGOProtos.Rpc.CompleteQuestLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 8) {
+          return completeQuestBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CompleteQuestLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+     */
+    public Builder setCompleteQuest(POGOProtos.Rpc.CompleteQuestLogEntry value) {
+      if (completeQuestBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        completeQuestBuilder_.setMessage(value);
+      }
+      actionCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+     */
+    public Builder setCompleteQuest(
+        POGOProtos.Rpc.CompleteQuestLogEntry.Builder builderForValue) {
+      if (completeQuestBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        completeQuestBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+     */
+    public Builder mergeCompleteQuest(POGOProtos.Rpc.CompleteQuestLogEntry value) {
+      if (completeQuestBuilder_ == null) {
+        if (actionCase_ == 8 &&
+            action_ != POGOProtos.Rpc.CompleteQuestLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.CompleteQuestLogEntry.newBuilder((POGOProtos.Rpc.CompleteQuestLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 8) {
+          completeQuestBuilder_.mergeFrom(value);
+        }
+        completeQuestBuilder_.setMessage(value);
+      }
+      actionCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+     */
+    public Builder clearCompleteQuest() {
+      if (completeQuestBuilder_ == null) {
+        if (actionCase_ == 8) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 8) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        completeQuestBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+     */
+    public POGOProtos.Rpc.CompleteQuestLogEntry.Builder getCompleteQuestBuilder() {
+      return getCompleteQuestFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+     */
+    public POGOProtos.Rpc.CompleteQuestLogEntryOrBuilder getCompleteQuestOrBuilder() {
+      if ((actionCase_ == 8) && (completeQuestBuilder_ != null)) {
+        return completeQuestBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 8) {
+          return (POGOProtos.Rpc.CompleteQuestLogEntry) action_;
+        }
+        return POGOProtos.Rpc.CompleteQuestLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CompleteQuestLogEntry, POGOProtos.Rpc.CompleteQuestLogEntry.Builder, POGOProtos.Rpc.CompleteQuestLogEntryOrBuilder> 
+        getCompleteQuestFieldBuilder() {
+      if (completeQuestBuilder_ == null) {
+        if (!(actionCase_ == 8)) {
+          action_ = POGOProtos.Rpc.CompleteQuestLogEntry.getDefaultInstance();
+        }
+        completeQuestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.CompleteQuestLogEntry, POGOProtos.Rpc.CompleteQuestLogEntry.Builder, POGOProtos.Rpc.CompleteQuestLogEntryOrBuilder>(
+                (POGOProtos.Rpc.CompleteQuestLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 8;
+      onChanged();;
+      return completeQuestBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CompleteQuestStampCardLogEntry, POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder, POGOProtos.Rpc.CompleteQuestStampCardLogEntryOrBuilder> completeQuestStampCardBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     * @return Whether the completeQuestStampCard field is set.
+     */
+    public boolean hasCompleteQuestStampCard() {
+      return actionCase_ == 9;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     * @return The completeQuestStampCard.
+     */
+    public POGOProtos.Rpc.CompleteQuestStampCardLogEntry getCompleteQuestStampCard() {
+      if (completeQuestStampCardBuilder_ == null) {
+        if (actionCase_ == 9) {
+          return (POGOProtos.Rpc.CompleteQuestStampCardLogEntry) action_;
+        }
+        return POGOProtos.Rpc.CompleteQuestStampCardLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 9) {
+          return completeQuestStampCardBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CompleteQuestStampCardLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     */
+    public Builder setCompleteQuestStampCard(POGOProtos.Rpc.CompleteQuestStampCardLogEntry value) {
+      if (completeQuestStampCardBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        completeQuestStampCardBuilder_.setMessage(value);
+      }
+      actionCase_ = 9;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     */
+    public Builder setCompleteQuestStampCard(
+        POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder builderForValue) {
+      if (completeQuestStampCardBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        completeQuestStampCardBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 9;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     */
+    public Builder mergeCompleteQuestStampCard(POGOProtos.Rpc.CompleteQuestStampCardLogEntry value) {
+      if (completeQuestStampCardBuilder_ == null) {
+        if (actionCase_ == 9 &&
+            action_ != POGOProtos.Rpc.CompleteQuestStampCardLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.CompleteQuestStampCardLogEntry.newBuilder((POGOProtos.Rpc.CompleteQuestStampCardLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 9) {
+          completeQuestStampCardBuilder_.mergeFrom(value);
+        }
+        completeQuestStampCardBuilder_.setMessage(value);
+      }
+      actionCase_ = 9;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     */
+    public Builder clearCompleteQuestStampCard() {
+      if (completeQuestStampCardBuilder_ == null) {
+        if (actionCase_ == 9) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 9) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        completeQuestStampCardBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     */
+    public POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder getCompleteQuestStampCardBuilder() {
+      return getCompleteQuestStampCardFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     */
+    public POGOProtos.Rpc.CompleteQuestStampCardLogEntryOrBuilder getCompleteQuestStampCardOrBuilder() {
+      if ((actionCase_ == 9) && (completeQuestStampCardBuilder_ != null)) {
+        return completeQuestStampCardBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 9) {
+          return (POGOProtos.Rpc.CompleteQuestStampCardLogEntry) action_;
+        }
+        return POGOProtos.Rpc.CompleteQuestStampCardLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CompleteQuestStampCardLogEntry, POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder, POGOProtos.Rpc.CompleteQuestStampCardLogEntryOrBuilder> 
+        getCompleteQuestStampCardFieldBuilder() {
+      if (completeQuestStampCardBuilder_ == null) {
+        if (!(actionCase_ == 9)) {
+          action_ = POGOProtos.Rpc.CompleteQuestStampCardLogEntry.getDefaultInstance();
+        }
+        completeQuestStampCardBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.CompleteQuestStampCardLogEntry, POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder, POGOProtos.Rpc.CompleteQuestStampCardLogEntryOrBuilder>(
+                (POGOProtos.Rpc.CompleteQuestStampCardLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 9;
+      onChanged();;
+      return completeQuestStampCardBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder> completeQuestPokemonEncounterBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     * @return Whether the completeQuestPokemonEncounter field is set.
+     */
+    public boolean hasCompleteQuestPokemonEncounter() {
+      return actionCase_ == 10;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     * @return The completeQuestPokemonEncounter.
+     */
+    public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry getCompleteQuestPokemonEncounter() {
+      if (completeQuestPokemonEncounterBuilder_ == null) {
+        if (actionCase_ == 10) {
+          return (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) action_;
+        }
+        return POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 10) {
+          return completeQuestPokemonEncounterBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     */
+    public Builder setCompleteQuestPokemonEncounter(POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry value) {
+      if (completeQuestPokemonEncounterBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        completeQuestPokemonEncounterBuilder_.setMessage(value);
+      }
+      actionCase_ = 10;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     */
+    public Builder setCompleteQuestPokemonEncounter(
+        POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder builderForValue) {
+      if (completeQuestPokemonEncounterBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        completeQuestPokemonEncounterBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 10;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     */
+    public Builder mergeCompleteQuestPokemonEncounter(POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry value) {
+      if (completeQuestPokemonEncounterBuilder_ == null) {
+        if (actionCase_ == 10 &&
+            action_ != POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.newBuilder((POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 10) {
+          completeQuestPokemonEncounterBuilder_.mergeFrom(value);
+        }
+        completeQuestPokemonEncounterBuilder_.setMessage(value);
+      }
+      actionCase_ = 10;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     */
+    public Builder clearCompleteQuestPokemonEncounter() {
+      if (completeQuestPokemonEncounterBuilder_ == null) {
+        if (actionCase_ == 10) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 10) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        completeQuestPokemonEncounterBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     */
+    public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder getCompleteQuestPokemonEncounterBuilder() {
+      return getCompleteQuestPokemonEncounterFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     */
+    public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder getCompleteQuestPokemonEncounterOrBuilder() {
+      if ((actionCase_ == 10) && (completeQuestPokemonEncounterBuilder_ != null)) {
+        return completeQuestPokemonEncounterBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 10) {
+          return (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) action_;
+        }
+        return POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder> 
+        getCompleteQuestPokemonEncounterFieldBuilder() {
+      if (completeQuestPokemonEncounterBuilder_ == null) {
+        if (!(actionCase_ == 10)) {
+          action_ = POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
+        }
+        completeQuestPokemonEncounterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder>(
+                (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 10;
+      onChanged();;
+      return completeQuestPokemonEncounterBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.BelugaDailyTransferLogEntry, POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder, POGOProtos.Rpc.BelugaDailyTransferLogEntryOrBuilder> belugaTransferBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     * @return Whether the belugaTransfer field is set.
+     */
+    public boolean hasBelugaTransfer() {
+      return actionCase_ == 11;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     * @return The belugaTransfer.
+     */
+    public POGOProtos.Rpc.BelugaDailyTransferLogEntry getBelugaTransfer() {
+      if (belugaTransferBuilder_ == null) {
+        if (actionCase_ == 11) {
+          return (POGOProtos.Rpc.BelugaDailyTransferLogEntry) action_;
+        }
+        return POGOProtos.Rpc.BelugaDailyTransferLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 11) {
+          return belugaTransferBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.BelugaDailyTransferLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     */
+    public Builder setBelugaTransfer(POGOProtos.Rpc.BelugaDailyTransferLogEntry value) {
+      if (belugaTransferBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        belugaTransferBuilder_.setMessage(value);
+      }
+      actionCase_ = 11;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     */
+    public Builder setBelugaTransfer(
+        POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder builderForValue) {
+      if (belugaTransferBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        belugaTransferBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 11;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     */
+    public Builder mergeBelugaTransfer(POGOProtos.Rpc.BelugaDailyTransferLogEntry value) {
+      if (belugaTransferBuilder_ == null) {
+        if (actionCase_ == 11 &&
+            action_ != POGOProtos.Rpc.BelugaDailyTransferLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.BelugaDailyTransferLogEntry.newBuilder((POGOProtos.Rpc.BelugaDailyTransferLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 11) {
+          belugaTransferBuilder_.mergeFrom(value);
+        }
+        belugaTransferBuilder_.setMessage(value);
+      }
+      actionCase_ = 11;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     */
+    public Builder clearBelugaTransfer() {
+      if (belugaTransferBuilder_ == null) {
+        if (actionCase_ == 11) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 11) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        belugaTransferBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     */
+    public POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder getBelugaTransferBuilder() {
+      return getBelugaTransferFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     */
+    public POGOProtos.Rpc.BelugaDailyTransferLogEntryOrBuilder getBelugaTransferOrBuilder() {
+      if ((actionCase_ == 11) && (belugaTransferBuilder_ != null)) {
+        return belugaTransferBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 11) {
+          return (POGOProtos.Rpc.BelugaDailyTransferLogEntry) action_;
+        }
+        return POGOProtos.Rpc.BelugaDailyTransferLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.BelugaDailyTransferLogEntry, POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder, POGOProtos.Rpc.BelugaDailyTransferLogEntryOrBuilder> 
+        getBelugaTransferFieldBuilder() {
+      if (belugaTransferBuilder_ == null) {
+        if (!(actionCase_ == 11)) {
+          action_ = POGOProtos.Rpc.BelugaDailyTransferLogEntry.getDefaultInstance();
+        }
+        belugaTransferBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.BelugaDailyTransferLogEntry, POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder, POGOProtos.Rpc.BelugaDailyTransferLogEntryOrBuilder>(
+                (POGOProtos.Rpc.BelugaDailyTransferLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 11;
+      onChanged();;
+      return belugaTransferBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.OpenGiftLogEntry, POGOProtos.Rpc.OpenGiftLogEntry.Builder, POGOProtos.Rpc.OpenGiftLogEntryOrBuilder> openGiftBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+     * @return Whether the openGift field is set.
+     */
+    public boolean hasOpenGift() {
+      return actionCase_ == 12;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+     * @return The openGift.
+     */
+    public POGOProtos.Rpc.OpenGiftLogEntry getOpenGift() {
+      if (openGiftBuilder_ == null) {
+        if (actionCase_ == 12) {
+          return (POGOProtos.Rpc.OpenGiftLogEntry) action_;
+        }
+        return POGOProtos.Rpc.OpenGiftLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 12) {
+          return openGiftBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.OpenGiftLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+     */
+    public Builder setOpenGift(POGOProtos.Rpc.OpenGiftLogEntry value) {
+      if (openGiftBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        openGiftBuilder_.setMessage(value);
+      }
+      actionCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+     */
+    public Builder setOpenGift(
+        POGOProtos.Rpc.OpenGiftLogEntry.Builder builderForValue) {
+      if (openGiftBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        openGiftBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+     */
+    public Builder mergeOpenGift(POGOProtos.Rpc.OpenGiftLogEntry value) {
+      if (openGiftBuilder_ == null) {
+        if (actionCase_ == 12 &&
+            action_ != POGOProtos.Rpc.OpenGiftLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.OpenGiftLogEntry.newBuilder((POGOProtos.Rpc.OpenGiftLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 12) {
+          openGiftBuilder_.mergeFrom(value);
+        }
+        openGiftBuilder_.setMessage(value);
+      }
+      actionCase_ = 12;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+     */
+    public Builder clearOpenGift() {
+      if (openGiftBuilder_ == null) {
+        if (actionCase_ == 12) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 12) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        openGiftBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+     */
+    public POGOProtos.Rpc.OpenGiftLogEntry.Builder getOpenGiftBuilder() {
+      return getOpenGiftFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+     */
+    public POGOProtos.Rpc.OpenGiftLogEntryOrBuilder getOpenGiftOrBuilder() {
+      if ((actionCase_ == 12) && (openGiftBuilder_ != null)) {
+        return openGiftBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 12) {
+          return (POGOProtos.Rpc.OpenGiftLogEntry) action_;
+        }
+        return POGOProtos.Rpc.OpenGiftLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.OpenGiftLogEntry, POGOProtos.Rpc.OpenGiftLogEntry.Builder, POGOProtos.Rpc.OpenGiftLogEntryOrBuilder> 
+        getOpenGiftFieldBuilder() {
+      if (openGiftBuilder_ == null) {
+        if (!(actionCase_ == 12)) {
+          action_ = POGOProtos.Rpc.OpenGiftLogEntry.getDefaultInstance();
+        }
+        openGiftBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.OpenGiftLogEntry, POGOProtos.Rpc.OpenGiftLogEntry.Builder, POGOProtos.Rpc.OpenGiftLogEntryOrBuilder>(
+                (POGOProtos.Rpc.OpenGiftLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 12;
+      onChanged();;
+      return openGiftBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.SendGiftLogEntry, POGOProtos.Rpc.SendGiftLogEntry.Builder, POGOProtos.Rpc.SendGiftLogEntryOrBuilder> sendGiftBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+     * @return Whether the sendGift field is set.
+     */
+    public boolean hasSendGift() {
+      return actionCase_ == 13;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+     * @return The sendGift.
+     */
+    public POGOProtos.Rpc.SendGiftLogEntry getSendGift() {
+      if (sendGiftBuilder_ == null) {
+        if (actionCase_ == 13) {
+          return (POGOProtos.Rpc.SendGiftLogEntry) action_;
+        }
+        return POGOProtos.Rpc.SendGiftLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 13) {
+          return sendGiftBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.SendGiftLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+     */
+    public Builder setSendGift(POGOProtos.Rpc.SendGiftLogEntry value) {
+      if (sendGiftBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        sendGiftBuilder_.setMessage(value);
+      }
+      actionCase_ = 13;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+     */
+    public Builder setSendGift(
+        POGOProtos.Rpc.SendGiftLogEntry.Builder builderForValue) {
+      if (sendGiftBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        sendGiftBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 13;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+     */
+    public Builder mergeSendGift(POGOProtos.Rpc.SendGiftLogEntry value) {
+      if (sendGiftBuilder_ == null) {
+        if (actionCase_ == 13 &&
+            action_ != POGOProtos.Rpc.SendGiftLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.SendGiftLogEntry.newBuilder((POGOProtos.Rpc.SendGiftLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 13) {
+          sendGiftBuilder_.mergeFrom(value);
+        }
+        sendGiftBuilder_.setMessage(value);
+      }
+      actionCase_ = 13;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+     */
+    public Builder clearSendGift() {
+      if (sendGiftBuilder_ == null) {
+        if (actionCase_ == 13) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 13) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        sendGiftBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+     */
+    public POGOProtos.Rpc.SendGiftLogEntry.Builder getSendGiftBuilder() {
+      return getSendGiftFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+     */
+    public POGOProtos.Rpc.SendGiftLogEntryOrBuilder getSendGiftOrBuilder() {
+      if ((actionCase_ == 13) && (sendGiftBuilder_ != null)) {
+        return sendGiftBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 13) {
+          return (POGOProtos.Rpc.SendGiftLogEntry) action_;
+        }
+        return POGOProtos.Rpc.SendGiftLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.SendGiftLogEntry, POGOProtos.Rpc.SendGiftLogEntry.Builder, POGOProtos.Rpc.SendGiftLogEntryOrBuilder> 
+        getSendGiftFieldBuilder() {
+      if (sendGiftBuilder_ == null) {
+        if (!(actionCase_ == 13)) {
+          action_ = POGOProtos.Rpc.SendGiftLogEntry.getDefaultInstance();
+        }
+        sendGiftBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.SendGiftLogEntry, POGOProtos.Rpc.SendGiftLogEntry.Builder, POGOProtos.Rpc.SendGiftLogEntryOrBuilder>(
+                (POGOProtos.Rpc.SendGiftLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 13;
+      onChanged();;
+      return sendGiftBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.TradingLogEntry, POGOProtos.Rpc.TradingLogEntry.Builder, POGOProtos.Rpc.TradingLogEntryOrBuilder> tradingBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+     * @return Whether the trading field is set.
+     */
+    public boolean hasTrading() {
+      return actionCase_ == 14;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+     * @return The trading.
+     */
+    public POGOProtos.Rpc.TradingLogEntry getTrading() {
+      if (tradingBuilder_ == null) {
+        if (actionCase_ == 14) {
+          return (POGOProtos.Rpc.TradingLogEntry) action_;
+        }
+        return POGOProtos.Rpc.TradingLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 14) {
+          return tradingBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.TradingLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+     */
+    public Builder setTrading(POGOProtos.Rpc.TradingLogEntry value) {
+      if (tradingBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        tradingBuilder_.setMessage(value);
+      }
+      actionCase_ = 14;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+     */
+    public Builder setTrading(
+        POGOProtos.Rpc.TradingLogEntry.Builder builderForValue) {
+      if (tradingBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        tradingBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 14;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+     */
+    public Builder mergeTrading(POGOProtos.Rpc.TradingLogEntry value) {
+      if (tradingBuilder_ == null) {
+        if (actionCase_ == 14 &&
+            action_ != POGOProtos.Rpc.TradingLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.TradingLogEntry.newBuilder((POGOProtos.Rpc.TradingLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 14) {
+          tradingBuilder_.mergeFrom(value);
+        }
+        tradingBuilder_.setMessage(value);
+      }
+      actionCase_ = 14;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+     */
+    public Builder clearTrading() {
+      if (tradingBuilder_ == null) {
+        if (actionCase_ == 14) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 14) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        tradingBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+     */
+    public POGOProtos.Rpc.TradingLogEntry.Builder getTradingBuilder() {
+      return getTradingFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+     */
+    public POGOProtos.Rpc.TradingLogEntryOrBuilder getTradingOrBuilder() {
+      if ((actionCase_ == 14) && (tradingBuilder_ != null)) {
+        return tradingBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 14) {
+          return (POGOProtos.Rpc.TradingLogEntry) action_;
+        }
+        return POGOProtos.Rpc.TradingLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.TradingLogEntry, POGOProtos.Rpc.TradingLogEntry.Builder, POGOProtos.Rpc.TradingLogEntryOrBuilder> 
+        getTradingFieldBuilder() {
+      if (tradingBuilder_ == null) {
+        if (!(actionCase_ == 14)) {
+          action_ = POGOProtos.Rpc.TradingLogEntry.getDefaultInstance();
+        }
+        tradingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.TradingLogEntry, POGOProtos.Rpc.TradingLogEntry.Builder, POGOProtos.Rpc.TradingLogEntryOrBuilder>(
+                (POGOProtos.Rpc.TradingLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 14;
+      onChanged();;
+      return tradingBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ShareExRaidPassLogEntry, POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder, POGOProtos.Rpc.ShareExRaidPassLogEntryOrBuilder> shareExRaidPassBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     * @return Whether the shareExRaidPass field is set.
+     */
+    public boolean hasShareExRaidPass() {
+      return actionCase_ == 15;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     * @return The shareExRaidPass.
+     */
+    public POGOProtos.Rpc.ShareExRaidPassLogEntry getShareExRaidPass() {
+      if (shareExRaidPassBuilder_ == null) {
+        if (actionCase_ == 15) {
+          return (POGOProtos.Rpc.ShareExRaidPassLogEntry) action_;
+        }
+        return POGOProtos.Rpc.ShareExRaidPassLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 15) {
+          return shareExRaidPassBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.ShareExRaidPassLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     */
+    public Builder setShareExRaidPass(POGOProtos.Rpc.ShareExRaidPassLogEntry value) {
+      if (shareExRaidPassBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        shareExRaidPassBuilder_.setMessage(value);
+      }
+      actionCase_ = 15;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     */
+    public Builder setShareExRaidPass(
+        POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder builderForValue) {
+      if (shareExRaidPassBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        shareExRaidPassBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 15;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     */
+    public Builder mergeShareExRaidPass(POGOProtos.Rpc.ShareExRaidPassLogEntry value) {
+      if (shareExRaidPassBuilder_ == null) {
+        if (actionCase_ == 15 &&
+            action_ != POGOProtos.Rpc.ShareExRaidPassLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.ShareExRaidPassLogEntry.newBuilder((POGOProtos.Rpc.ShareExRaidPassLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 15) {
+          shareExRaidPassBuilder_.mergeFrom(value);
+        }
+        shareExRaidPassBuilder_.setMessage(value);
+      }
+      actionCase_ = 15;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     */
+    public Builder clearShareExRaidPass() {
+      if (shareExRaidPassBuilder_ == null) {
+        if (actionCase_ == 15) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 15) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        shareExRaidPassBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     */
+    public POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder getShareExRaidPassBuilder() {
+      return getShareExRaidPassFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     */
+    public POGOProtos.Rpc.ShareExRaidPassLogEntryOrBuilder getShareExRaidPassOrBuilder() {
+      if ((actionCase_ == 15) && (shareExRaidPassBuilder_ != null)) {
+        return shareExRaidPassBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 15) {
+          return (POGOProtos.Rpc.ShareExRaidPassLogEntry) action_;
+        }
+        return POGOProtos.Rpc.ShareExRaidPassLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.ShareExRaidPassLogEntry, POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder, POGOProtos.Rpc.ShareExRaidPassLogEntryOrBuilder> 
+        getShareExRaidPassFieldBuilder() {
+      if (shareExRaidPassBuilder_ == null) {
+        if (!(actionCase_ == 15)) {
+          action_ = POGOProtos.Rpc.ShareExRaidPassLogEntry.getDefaultInstance();
+        }
+        shareExRaidPassBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.ShareExRaidPassLogEntry, POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder, POGOProtos.Rpc.ShareExRaidPassLogEntryOrBuilder>(
+                (POGOProtos.Rpc.ShareExRaidPassLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 15;
+      onChanged();;
+      return shareExRaidPassBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.DeclineExRaidPassLogEntry, POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder, POGOProtos.Rpc.DeclineExRaidPassLogEntryOrBuilder> declineExRaidPassBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     * @return Whether the declineExRaidPass field is set.
+     */
+    public boolean hasDeclineExRaidPass() {
+      return actionCase_ == 16;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     * @return The declineExRaidPass.
+     */
+    public POGOProtos.Rpc.DeclineExRaidPassLogEntry getDeclineExRaidPass() {
+      if (declineExRaidPassBuilder_ == null) {
+        if (actionCase_ == 16) {
+          return (POGOProtos.Rpc.DeclineExRaidPassLogEntry) action_;
+        }
+        return POGOProtos.Rpc.DeclineExRaidPassLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 16) {
+          return declineExRaidPassBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.DeclineExRaidPassLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     */
+    public Builder setDeclineExRaidPass(POGOProtos.Rpc.DeclineExRaidPassLogEntry value) {
+      if (declineExRaidPassBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        declineExRaidPassBuilder_.setMessage(value);
+      }
+      actionCase_ = 16;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     */
+    public Builder setDeclineExRaidPass(
+        POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder builderForValue) {
+      if (declineExRaidPassBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        declineExRaidPassBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 16;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     */
+    public Builder mergeDeclineExRaidPass(POGOProtos.Rpc.DeclineExRaidPassLogEntry value) {
+      if (declineExRaidPassBuilder_ == null) {
+        if (actionCase_ == 16 &&
+            action_ != POGOProtos.Rpc.DeclineExRaidPassLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.DeclineExRaidPassLogEntry.newBuilder((POGOProtos.Rpc.DeclineExRaidPassLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 16) {
+          declineExRaidPassBuilder_.mergeFrom(value);
+        }
+        declineExRaidPassBuilder_.setMessage(value);
+      }
+      actionCase_ = 16;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     */
+    public Builder clearDeclineExRaidPass() {
+      if (declineExRaidPassBuilder_ == null) {
+        if (actionCase_ == 16) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 16) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        declineExRaidPassBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     */
+    public POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder getDeclineExRaidPassBuilder() {
+      return getDeclineExRaidPassFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     */
+    public POGOProtos.Rpc.DeclineExRaidPassLogEntryOrBuilder getDeclineExRaidPassOrBuilder() {
+      if ((actionCase_ == 16) && (declineExRaidPassBuilder_ != null)) {
+        return declineExRaidPassBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 16) {
+          return (POGOProtos.Rpc.DeclineExRaidPassLogEntry) action_;
+        }
+        return POGOProtos.Rpc.DeclineExRaidPassLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.DeclineExRaidPassLogEntry, POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder, POGOProtos.Rpc.DeclineExRaidPassLogEntryOrBuilder> 
+        getDeclineExRaidPassFieldBuilder() {
+      if (declineExRaidPassBuilder_ == null) {
+        if (!(actionCase_ == 16)) {
+          action_ = POGOProtos.Rpc.DeclineExRaidPassLogEntry.getDefaultInstance();
+        }
+        declineExRaidPassBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.DeclineExRaidPassLogEntry, POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder, POGOProtos.Rpc.DeclineExRaidPassLogEntryOrBuilder>(
+                (POGOProtos.Rpc.DeclineExRaidPassLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 16;
+      onChanged();;
+      return declineExRaidPassBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.FitnessRewardsLogEntry, POGOProtos.Rpc.FitnessRewardsLogEntry.Builder, POGOProtos.Rpc.FitnessRewardsLogEntryOrBuilder> fitnessRewardsBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     * @return Whether the fitnessRewards field is set.
+     */
+    public boolean hasFitnessRewards() {
+      return actionCase_ == 17;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     * @return The fitnessRewards.
+     */
+    public POGOProtos.Rpc.FitnessRewardsLogEntry getFitnessRewards() {
+      if (fitnessRewardsBuilder_ == null) {
+        if (actionCase_ == 17) {
+          return (POGOProtos.Rpc.FitnessRewardsLogEntry) action_;
+        }
+        return POGOProtos.Rpc.FitnessRewardsLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 17) {
+          return fitnessRewardsBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.FitnessRewardsLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     */
+    public Builder setFitnessRewards(POGOProtos.Rpc.FitnessRewardsLogEntry value) {
+      if (fitnessRewardsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        fitnessRewardsBuilder_.setMessage(value);
+      }
+      actionCase_ = 17;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     */
+    public Builder setFitnessRewards(
+        POGOProtos.Rpc.FitnessRewardsLogEntry.Builder builderForValue) {
+      if (fitnessRewardsBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        fitnessRewardsBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 17;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     */
+    public Builder mergeFitnessRewards(POGOProtos.Rpc.FitnessRewardsLogEntry value) {
+      if (fitnessRewardsBuilder_ == null) {
+        if (actionCase_ == 17 &&
+            action_ != POGOProtos.Rpc.FitnessRewardsLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.FitnessRewardsLogEntry.newBuilder((POGOProtos.Rpc.FitnessRewardsLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 17) {
+          fitnessRewardsBuilder_.mergeFrom(value);
+        }
+        fitnessRewardsBuilder_.setMessage(value);
+      }
+      actionCase_ = 17;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     */
+    public Builder clearFitnessRewards() {
+      if (fitnessRewardsBuilder_ == null) {
+        if (actionCase_ == 17) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 17) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        fitnessRewardsBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     */
+    public POGOProtos.Rpc.FitnessRewardsLogEntry.Builder getFitnessRewardsBuilder() {
+      return getFitnessRewardsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     */
+    public POGOProtos.Rpc.FitnessRewardsLogEntryOrBuilder getFitnessRewardsOrBuilder() {
+      if ((actionCase_ == 17) && (fitnessRewardsBuilder_ != null)) {
+        return fitnessRewardsBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 17) {
+          return (POGOProtos.Rpc.FitnessRewardsLogEntry) action_;
+        }
+        return POGOProtos.Rpc.FitnessRewardsLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.FitnessRewardsLogEntry, POGOProtos.Rpc.FitnessRewardsLogEntry.Builder, POGOProtos.Rpc.FitnessRewardsLogEntryOrBuilder> 
+        getFitnessRewardsFieldBuilder() {
+      if (fitnessRewardsBuilder_ == null) {
+        if (!(actionCase_ == 17)) {
+          action_ = POGOProtos.Rpc.FitnessRewardsLogEntry.getDefaultInstance();
+        }
+        fitnessRewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.FitnessRewardsLogEntry, POGOProtos.Rpc.FitnessRewardsLogEntry.Builder, POGOProtos.Rpc.FitnessRewardsLogEntryOrBuilder>(
+                (POGOProtos.Rpc.FitnessRewardsLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 17;
+      onChanged();;
+      return fitnessRewardsBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CombatLogEntry, POGOProtos.Rpc.CombatLogEntry.Builder, POGOProtos.Rpc.CombatLogEntryOrBuilder> combatBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+     * @return Whether the combat field is set.
+     */
+    public boolean hasCombat() {
+      return actionCase_ == 18;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+     * @return The combat.
+     */
+    public POGOProtos.Rpc.CombatLogEntry getCombat() {
+      if (combatBuilder_ == null) {
+        if (actionCase_ == 18) {
+          return (POGOProtos.Rpc.CombatLogEntry) action_;
+        }
+        return POGOProtos.Rpc.CombatLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 18) {
+          return combatBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CombatLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+     */
+    public Builder setCombat(POGOProtos.Rpc.CombatLogEntry value) {
+      if (combatBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        combatBuilder_.setMessage(value);
+      }
+      actionCase_ = 18;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+     */
+    public Builder setCombat(
+        POGOProtos.Rpc.CombatLogEntry.Builder builderForValue) {
+      if (combatBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        combatBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 18;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+     */
+    public Builder mergeCombat(POGOProtos.Rpc.CombatLogEntry value) {
+      if (combatBuilder_ == null) {
+        if (actionCase_ == 18 &&
+            action_ != POGOProtos.Rpc.CombatLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.CombatLogEntry.newBuilder((POGOProtos.Rpc.CombatLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 18) {
+          combatBuilder_.mergeFrom(value);
+        }
+        combatBuilder_.setMessage(value);
+      }
+      actionCase_ = 18;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+     */
+    public Builder clearCombat() {
+      if (combatBuilder_ == null) {
+        if (actionCase_ == 18) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 18) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        combatBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+     */
+    public POGOProtos.Rpc.CombatLogEntry.Builder getCombatBuilder() {
+      return getCombatFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+     */
+    public POGOProtos.Rpc.CombatLogEntryOrBuilder getCombatOrBuilder() {
+      if ((actionCase_ == 18) && (combatBuilder_ != null)) {
+        return combatBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 18) {
+          return (POGOProtos.Rpc.CombatLogEntry) action_;
+        }
+        return POGOProtos.Rpc.CombatLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CombatLogEntry, POGOProtos.Rpc.CombatLogEntry.Builder, POGOProtos.Rpc.CombatLogEntryOrBuilder> 
+        getCombatFieldBuilder() {
+      if (combatBuilder_ == null) {
+        if (!(actionCase_ == 18)) {
+          action_ = POGOProtos.Rpc.CombatLogEntry.getDefaultInstance();
+        }
+        combatBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.CombatLogEntry, POGOProtos.Rpc.CombatLogEntry.Builder, POGOProtos.Rpc.CombatLogEntryOrBuilder>(
+                (POGOProtos.Rpc.CombatLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 18;
+      onChanged();;
+      return combatBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PurifyPokemonLogEntry, POGOProtos.Rpc.PurifyPokemonLogEntry.Builder, POGOProtos.Rpc.PurifyPokemonLogEntryOrBuilder> purifyPokemonBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+     * @return Whether the purifyPokemon field is set.
+     */
+    public boolean hasPurifyPokemon() {
+      return actionCase_ == 19;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+     * @return The purifyPokemon.
+     */
+    public POGOProtos.Rpc.PurifyPokemonLogEntry getPurifyPokemon() {
+      if (purifyPokemonBuilder_ == null) {
+        if (actionCase_ == 19) {
+          return (POGOProtos.Rpc.PurifyPokemonLogEntry) action_;
+        }
+        return POGOProtos.Rpc.PurifyPokemonLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 19) {
+          return purifyPokemonBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PurifyPokemonLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+     */
+    public Builder setPurifyPokemon(POGOProtos.Rpc.PurifyPokemonLogEntry value) {
+      if (purifyPokemonBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        purifyPokemonBuilder_.setMessage(value);
+      }
+      actionCase_ = 19;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+     */
+    public Builder setPurifyPokemon(
+        POGOProtos.Rpc.PurifyPokemonLogEntry.Builder builderForValue) {
+      if (purifyPokemonBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        purifyPokemonBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 19;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+     */
+    public Builder mergePurifyPokemon(POGOProtos.Rpc.PurifyPokemonLogEntry value) {
+      if (purifyPokemonBuilder_ == null) {
+        if (actionCase_ == 19 &&
+            action_ != POGOProtos.Rpc.PurifyPokemonLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.PurifyPokemonLogEntry.newBuilder((POGOProtos.Rpc.PurifyPokemonLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 19) {
+          purifyPokemonBuilder_.mergeFrom(value);
+        }
+        purifyPokemonBuilder_.setMessage(value);
+      }
+      actionCase_ = 19;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+     */
+    public Builder clearPurifyPokemon() {
+      if (purifyPokemonBuilder_ == null) {
+        if (actionCase_ == 19) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 19) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        purifyPokemonBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+     */
+    public POGOProtos.Rpc.PurifyPokemonLogEntry.Builder getPurifyPokemonBuilder() {
+      return getPurifyPokemonFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+     */
+    public POGOProtos.Rpc.PurifyPokemonLogEntryOrBuilder getPurifyPokemonOrBuilder() {
+      if ((actionCase_ == 19) && (purifyPokemonBuilder_ != null)) {
+        return purifyPokemonBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 19) {
+          return (POGOProtos.Rpc.PurifyPokemonLogEntry) action_;
+        }
+        return POGOProtos.Rpc.PurifyPokemonLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PurifyPokemonLogEntry, POGOProtos.Rpc.PurifyPokemonLogEntry.Builder, POGOProtos.Rpc.PurifyPokemonLogEntryOrBuilder> 
+        getPurifyPokemonFieldBuilder() {
+      if (purifyPokemonBuilder_ == null) {
+        if (!(actionCase_ == 19)) {
+          action_ = POGOProtos.Rpc.PurifyPokemonLogEntry.getDefaultInstance();
+        }
+        purifyPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.PurifyPokemonLogEntry, POGOProtos.Rpc.PurifyPokemonLogEntry.Builder, POGOProtos.Rpc.PurifyPokemonLogEntryOrBuilder>(
+                (POGOProtos.Rpc.PurifyPokemonLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 19;
+      onChanged();;
+      return purifyPokemonBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.InvasionVictoryLogEntry, POGOProtos.Rpc.InvasionVictoryLogEntry.Builder, POGOProtos.Rpc.InvasionVictoryLogEntryOrBuilder> invasionVictoryBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+     * @return Whether the invasionVictory field is set.
+     */
+    public boolean hasInvasionVictory() {
+      return actionCase_ == 20;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+     * @return The invasionVictory.
+     */
+    public POGOProtos.Rpc.InvasionVictoryLogEntry getInvasionVictory() {
+      if (invasionVictoryBuilder_ == null) {
+        if (actionCase_ == 20) {
+          return (POGOProtos.Rpc.InvasionVictoryLogEntry) action_;
+        }
+        return POGOProtos.Rpc.InvasionVictoryLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 20) {
+          return invasionVictoryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.InvasionVictoryLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+     */
+    public Builder setInvasionVictory(POGOProtos.Rpc.InvasionVictoryLogEntry value) {
+      if (invasionVictoryBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        invasionVictoryBuilder_.setMessage(value);
+      }
+      actionCase_ = 20;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+     */
+    public Builder setInvasionVictory(
+        POGOProtos.Rpc.InvasionVictoryLogEntry.Builder builderForValue) {
+      if (invasionVictoryBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        invasionVictoryBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 20;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+     */
+    public Builder mergeInvasionVictory(POGOProtos.Rpc.InvasionVictoryLogEntry value) {
+      if (invasionVictoryBuilder_ == null) {
+        if (actionCase_ == 20 &&
+            action_ != POGOProtos.Rpc.InvasionVictoryLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.InvasionVictoryLogEntry.newBuilder((POGOProtos.Rpc.InvasionVictoryLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 20) {
+          invasionVictoryBuilder_.mergeFrom(value);
+        }
+        invasionVictoryBuilder_.setMessage(value);
+      }
+      actionCase_ = 20;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+     */
+    public Builder clearInvasionVictory() {
+      if (invasionVictoryBuilder_ == null) {
+        if (actionCase_ == 20) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 20) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        invasionVictoryBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+     */
+    public POGOProtos.Rpc.InvasionVictoryLogEntry.Builder getInvasionVictoryBuilder() {
+      return getInvasionVictoryFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+     */
+    public POGOProtos.Rpc.InvasionVictoryLogEntryOrBuilder getInvasionVictoryOrBuilder() {
+      if ((actionCase_ == 20) && (invasionVictoryBuilder_ != null)) {
+        return invasionVictoryBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 20) {
+          return (POGOProtos.Rpc.InvasionVictoryLogEntry) action_;
+        }
+        return POGOProtos.Rpc.InvasionVictoryLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.InvasionVictoryLogEntry, POGOProtos.Rpc.InvasionVictoryLogEntry.Builder, POGOProtos.Rpc.InvasionVictoryLogEntryOrBuilder> 
+        getInvasionVictoryFieldBuilder() {
+      if (invasionVictoryBuilder_ == null) {
+        if (!(actionCase_ == 20)) {
+          action_ = POGOProtos.Rpc.InvasionVictoryLogEntry.getDefaultInstance();
+        }
+        invasionVictoryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.InvasionVictoryLogEntry, POGOProtos.Rpc.InvasionVictoryLogEntry.Builder, POGOProtos.Rpc.InvasionVictoryLogEntryOrBuilder>(
+                (POGOProtos.Rpc.InvasionVictoryLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 20;
+      onChanged();;
+      return invasionVictoryBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.VsSeekerSetLogEntry, POGOProtos.Rpc.VsSeekerSetLogEntry.Builder, POGOProtos.Rpc.VsSeekerSetLogEntryOrBuilder> vsSeekerSetBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+     * @return Whether the vsSeekerSet field is set.
+     */
+    public boolean hasVsSeekerSet() {
+      return actionCase_ == 21;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+     * @return The vsSeekerSet.
+     */
+    public POGOProtos.Rpc.VsSeekerSetLogEntry getVsSeekerSet() {
+      if (vsSeekerSetBuilder_ == null) {
+        if (actionCase_ == 21) {
+          return (POGOProtos.Rpc.VsSeekerSetLogEntry) action_;
+        }
+        return POGOProtos.Rpc.VsSeekerSetLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 21) {
+          return vsSeekerSetBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.VsSeekerSetLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+     */
+    public Builder setVsSeekerSet(POGOProtos.Rpc.VsSeekerSetLogEntry value) {
+      if (vsSeekerSetBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        vsSeekerSetBuilder_.setMessage(value);
+      }
+      actionCase_ = 21;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+     */
+    public Builder setVsSeekerSet(
+        POGOProtos.Rpc.VsSeekerSetLogEntry.Builder builderForValue) {
+      if (vsSeekerSetBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        vsSeekerSetBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 21;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+     */
+    public Builder mergeVsSeekerSet(POGOProtos.Rpc.VsSeekerSetLogEntry value) {
+      if (vsSeekerSetBuilder_ == null) {
+        if (actionCase_ == 21 &&
+            action_ != POGOProtos.Rpc.VsSeekerSetLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.VsSeekerSetLogEntry.newBuilder((POGOProtos.Rpc.VsSeekerSetLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 21) {
+          vsSeekerSetBuilder_.mergeFrom(value);
+        }
+        vsSeekerSetBuilder_.setMessage(value);
+      }
+      actionCase_ = 21;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+     */
+    public Builder clearVsSeekerSet() {
+      if (vsSeekerSetBuilder_ == null) {
+        if (actionCase_ == 21) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 21) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        vsSeekerSetBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+     */
+    public POGOProtos.Rpc.VsSeekerSetLogEntry.Builder getVsSeekerSetBuilder() {
+      return getVsSeekerSetFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+     */
+    public POGOProtos.Rpc.VsSeekerSetLogEntryOrBuilder getVsSeekerSetOrBuilder() {
+      if ((actionCase_ == 21) && (vsSeekerSetBuilder_ != null)) {
+        return vsSeekerSetBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 21) {
+          return (POGOProtos.Rpc.VsSeekerSetLogEntry) action_;
+        }
+        return POGOProtos.Rpc.VsSeekerSetLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.VsSeekerSetLogEntry, POGOProtos.Rpc.VsSeekerSetLogEntry.Builder, POGOProtos.Rpc.VsSeekerSetLogEntryOrBuilder> 
+        getVsSeekerSetFieldBuilder() {
+      if (vsSeekerSetBuilder_ == null) {
+        if (!(actionCase_ == 21)) {
+          action_ = POGOProtos.Rpc.VsSeekerSetLogEntry.getDefaultInstance();
+        }
+        vsSeekerSetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.VsSeekerSetLogEntry, POGOProtos.Rpc.VsSeekerSetLogEntry.Builder, POGOProtos.Rpc.VsSeekerSetLogEntryOrBuilder>(
+                (POGOProtos.Rpc.VsSeekerSetLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 21;
+      onChanged();;
+      return vsSeekerSetBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder> vsSeekerCompleteSeasonBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+     * @return Whether the vsSeekerCompleteSeason field is set.
+     */
+    public boolean hasVsSeekerCompleteSeason() {
+      return actionCase_ == 22;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+     * @return The vsSeekerCompleteSeason.
+     */
+    public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry getVsSeekerCompleteSeason() {
+      if (vsSeekerCompleteSeasonBuilder_ == null) {
+        if (actionCase_ == 22) {
+          return (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) action_;
+        }
+        return POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 22) {
+          return vsSeekerCompleteSeasonBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+     */
+    public Builder setVsSeekerCompleteSeason(POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry value) {
+      if (vsSeekerCompleteSeasonBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        vsSeekerCompleteSeasonBuilder_.setMessage(value);
+      }
+      actionCase_ = 22;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+     */
+    public Builder setVsSeekerCompleteSeason(
+        POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder builderForValue) {
+      if (vsSeekerCompleteSeasonBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        vsSeekerCompleteSeasonBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 22;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+     */
+    public Builder mergeVsSeekerCompleteSeason(POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry value) {
+      if (vsSeekerCompleteSeasonBuilder_ == null) {
+        if (actionCase_ == 22 &&
+            action_ != POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.newBuilder((POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 22) {
+          vsSeekerCompleteSeasonBuilder_.mergeFrom(value);
+        }
+        vsSeekerCompleteSeasonBuilder_.setMessage(value);
+      }
+      actionCase_ = 22;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+     */
+    public Builder clearVsSeekerCompleteSeason() {
+      if (vsSeekerCompleteSeasonBuilder_ == null) {
+        if (actionCase_ == 22) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 22) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        vsSeekerCompleteSeasonBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+     */
+    public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder getVsSeekerCompleteSeasonBuilder() {
+      return getVsSeekerCompleteSeasonFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+     */
+    public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder getVsSeekerCompleteSeasonOrBuilder() {
+      if ((actionCase_ == 22) && (vsSeekerCompleteSeasonBuilder_ != null)) {
+        return vsSeekerCompleteSeasonBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 22) {
+          return (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) action_;
+        }
+        return POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder> 
+        getVsSeekerCompleteSeasonFieldBuilder() {
+      if (vsSeekerCompleteSeasonBuilder_ == null) {
+        if (!(actionCase_ == 22)) {
+          action_ = POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
+        }
+        vsSeekerCompleteSeasonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder>(
+                (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 22;
+      onChanged();;
+      return vsSeekerCompleteSeasonBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.VsSeekerWinRewardsLogEntry, POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder, POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder> vsSeekerWinRewardsBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+     * @return Whether the vsSeekerWinRewards field is set.
+     */
+    public boolean hasVsSeekerWinRewards() {
+      return actionCase_ == 23;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+     * @return The vsSeekerWinRewards.
+     */
+    public POGOProtos.Rpc.VsSeekerWinRewardsLogEntry getVsSeekerWinRewards() {
+      if (vsSeekerWinRewardsBuilder_ == null) {
+        if (actionCase_ == 23) {
+          return (POGOProtos.Rpc.VsSeekerWinRewardsLogEntry) action_;
+        }
+        return POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 23) {
+          return vsSeekerWinRewardsBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+     */
+    public Builder setVsSeekerWinRewards(POGOProtos.Rpc.VsSeekerWinRewardsLogEntry value) {
+      if (vsSeekerWinRewardsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        vsSeekerWinRewardsBuilder_.setMessage(value);
+      }
+      actionCase_ = 23;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+     */
+    public Builder setVsSeekerWinRewards(
+        POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder builderForValue) {
+      if (vsSeekerWinRewardsBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        vsSeekerWinRewardsBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 23;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+     */
+    public Builder mergeVsSeekerWinRewards(POGOProtos.Rpc.VsSeekerWinRewardsLogEntry value) {
+      if (vsSeekerWinRewardsBuilder_ == null) {
+        if (actionCase_ == 23 &&
+            action_ != POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.newBuilder((POGOProtos.Rpc.VsSeekerWinRewardsLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 23) {
+          vsSeekerWinRewardsBuilder_.mergeFrom(value);
+        }
+        vsSeekerWinRewardsBuilder_.setMessage(value);
+      }
+      actionCase_ = 23;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+     */
+    public Builder clearVsSeekerWinRewards() {
+      if (vsSeekerWinRewardsBuilder_ == null) {
+        if (actionCase_ == 23) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 23) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        vsSeekerWinRewardsBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+     */
+    public POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder getVsSeekerWinRewardsBuilder() {
+      return getVsSeekerWinRewardsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+     */
+    public POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder getVsSeekerWinRewardsOrBuilder() {
+      if ((actionCase_ == 23) && (vsSeekerWinRewardsBuilder_ != null)) {
+        return vsSeekerWinRewardsBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 23) {
+          return (POGOProtos.Rpc.VsSeekerWinRewardsLogEntry) action_;
+        }
+        return POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.VsSeekerWinRewardsLogEntry, POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder, POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder> 
+        getVsSeekerWinRewardsFieldBuilder() {
+      if (vsSeekerWinRewardsBuilder_ == null) {
+        if (!(actionCase_ == 23)) {
+          action_ = POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.getDefaultInstance();
+        }
+        vsSeekerWinRewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.VsSeekerWinRewardsLogEntry, POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder, POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder>(
+                (POGOProtos.Rpc.VsSeekerWinRewardsLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 23;
+      onChanged();;
+      return vsSeekerWinRewardsBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.BuddyConsumablesLogEntry, POGOProtos.Rpc.BuddyConsumablesLogEntry.Builder, POGOProtos.Rpc.BuddyConsumablesLogEntryOrBuilder> buddyConsumablesBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     * @return Whether the buddyConsumables field is set.
+     */
+    public boolean hasBuddyConsumables() {
+      return actionCase_ == 24;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     * @return The buddyConsumables.
+     */
+    public POGOProtos.Rpc.BuddyConsumablesLogEntry getBuddyConsumables() {
+      if (buddyConsumablesBuilder_ == null) {
+        if (actionCase_ == 24) {
+          return (POGOProtos.Rpc.BuddyConsumablesLogEntry) action_;
+        }
+        return POGOProtos.Rpc.BuddyConsumablesLogEntry.getDefaultInstance();
+      } else {
+        if (actionCase_ == 24) {
+          return buddyConsumablesBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.BuddyConsumablesLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public Builder setBuddyConsumables(POGOProtos.Rpc.BuddyConsumablesLogEntry value) {
+      if (buddyConsumablesBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        action_ = value;
+        onChanged();
+      } else {
+        buddyConsumablesBuilder_.setMessage(value);
+      }
+      actionCase_ = 24;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public Builder setBuddyConsumables(
+        POGOProtos.Rpc.BuddyConsumablesLogEntry.Builder builderForValue) {
+      if (buddyConsumablesBuilder_ == null) {
+        action_ = builderForValue.build();
+        onChanged();
+      } else {
+        buddyConsumablesBuilder_.setMessage(builderForValue.build());
+      }
+      actionCase_ = 24;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public Builder mergeBuddyConsumables(POGOProtos.Rpc.BuddyConsumablesLogEntry value) {
+      if (buddyConsumablesBuilder_ == null) {
+        if (actionCase_ == 24 &&
+            action_ != POGOProtos.Rpc.BuddyConsumablesLogEntry.getDefaultInstance()) {
+          action_ = POGOProtos.Rpc.BuddyConsumablesLogEntry.newBuilder((POGOProtos.Rpc.BuddyConsumablesLogEntry) action_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          action_ = value;
+        }
+        onChanged();
+      } else {
+        if (actionCase_ == 24) {
+          buddyConsumablesBuilder_.mergeFrom(value);
+        }
+        buddyConsumablesBuilder_.setMessage(value);
+      }
+      actionCase_ = 24;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public Builder clearBuddyConsumables() {
+      if (buddyConsumablesBuilder_ == null) {
+        if (actionCase_ == 24) {
+          actionCase_ = 0;
+          action_ = null;
+          onChanged();
+        }
+      } else {
+        if (actionCase_ == 24) {
+          actionCase_ = 0;
+          action_ = null;
+        }
+        buddyConsumablesBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public POGOProtos.Rpc.BuddyConsumablesLogEntry.Builder getBuddyConsumablesBuilder() {
+      return getBuddyConsumablesFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    public POGOProtos.Rpc.BuddyConsumablesLogEntryOrBuilder getBuddyConsumablesOrBuilder() {
+      if ((actionCase_ == 24) && (buddyConsumablesBuilder_ != null)) {
+        return buddyConsumablesBuilder_.getMessageOrBuilder();
+      } else {
+        if (actionCase_ == 24) {
+          return (POGOProtos.Rpc.BuddyConsumablesLogEntry) action_;
+        }
+        return POGOProtos.Rpc.BuddyConsumablesLogEntry.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.BuddyConsumablesLogEntry buddy_consumables = 24;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.BuddyConsumablesLogEntry, POGOProtos.Rpc.BuddyConsumablesLogEntry.Builder, POGOProtos.Rpc.BuddyConsumablesLogEntryOrBuilder> 
+        getBuddyConsumablesFieldBuilder() {
+      if (buddyConsumablesBuilder_ == null) {
+        if (!(actionCase_ == 24)) {
+          action_ = POGOProtos.Rpc.BuddyConsumablesLogEntry.getDefaultInstance();
+        }
+        buddyConsumablesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.BuddyConsumablesLogEntry, POGOProtos.Rpc.BuddyConsumablesLogEntry.Builder, POGOProtos.Rpc.BuddyConsumablesLogEntryOrBuilder>(
+                (POGOProtos.Rpc.BuddyConsumablesLogEntry) action_,
+                getParentForChildren(),
+                isClean());
+        action_ = null;
+      }
+      actionCase_ = 24;
+      onChanged();;
+      return buddyConsumablesBuilder_;
     }
 
     private long timestampMs_ ;
@@ -1875,2505 +5134,6 @@ private static final long serialVersionUID = 0L;
       sfida_ = false;
       onChanged();
       return this;
-    }
-
-    private POGOProtos.Rpc.CatchPokemonLogEntry catchPokemon_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CatchPokemonLogEntry, POGOProtos.Rpc.CatchPokemonLogEntry.Builder, POGOProtos.Rpc.CatchPokemonLogEntryOrBuilder> catchPokemonBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-     * @return Whether the catchPokemon field is set.
-     */
-    public boolean hasCatchPokemon() {
-      return catchPokemonBuilder_ != null || catchPokemon_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-     * @return The catchPokemon.
-     */
-    public POGOProtos.Rpc.CatchPokemonLogEntry getCatchPokemon() {
-      if (catchPokemonBuilder_ == null) {
-        return catchPokemon_ == null ? POGOProtos.Rpc.CatchPokemonLogEntry.getDefaultInstance() : catchPokemon_;
-      } else {
-        return catchPokemonBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-     */
-    public Builder setCatchPokemon(POGOProtos.Rpc.CatchPokemonLogEntry value) {
-      if (catchPokemonBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        catchPokemon_ = value;
-        onChanged();
-      } else {
-        catchPokemonBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-     */
-    public Builder setCatchPokemon(
-        POGOProtos.Rpc.CatchPokemonLogEntry.Builder builderForValue) {
-      if (catchPokemonBuilder_ == null) {
-        catchPokemon_ = builderForValue.build();
-        onChanged();
-      } else {
-        catchPokemonBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-     */
-    public Builder mergeCatchPokemon(POGOProtos.Rpc.CatchPokemonLogEntry value) {
-      if (catchPokemonBuilder_ == null) {
-        if (catchPokemon_ != null) {
-          catchPokemon_ =
-            POGOProtos.Rpc.CatchPokemonLogEntry.newBuilder(catchPokemon_).mergeFrom(value).buildPartial();
-        } else {
-          catchPokemon_ = value;
-        }
-        onChanged();
-      } else {
-        catchPokemonBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-     */
-    public Builder clearCatchPokemon() {
-      if (catchPokemonBuilder_ == null) {
-        catchPokemon_ = null;
-        onChanged();
-      } else {
-        catchPokemon_ = null;
-        catchPokemonBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-     */
-    public POGOProtos.Rpc.CatchPokemonLogEntry.Builder getCatchPokemonBuilder() {
-      
-      onChanged();
-      return getCatchPokemonFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-     */
-    public POGOProtos.Rpc.CatchPokemonLogEntryOrBuilder getCatchPokemonOrBuilder() {
-      if (catchPokemonBuilder_ != null) {
-        return catchPokemonBuilder_.getMessageOrBuilder();
-      } else {
-        return catchPokemon_ == null ?
-            POGOProtos.Rpc.CatchPokemonLogEntry.getDefaultInstance() : catchPokemon_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonLogEntry catch_pokemon = 3;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CatchPokemonLogEntry, POGOProtos.Rpc.CatchPokemonLogEntry.Builder, POGOProtos.Rpc.CatchPokemonLogEntryOrBuilder> 
-        getCatchPokemonFieldBuilder() {
-      if (catchPokemonBuilder_ == null) {
-        catchPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.CatchPokemonLogEntry, POGOProtos.Rpc.CatchPokemonLogEntry.Builder, POGOProtos.Rpc.CatchPokemonLogEntryOrBuilder>(
-                getCatchPokemon(),
-                getParentForChildren(),
-                isClean());
-        catchPokemon_ = null;
-      }
-      return catchPokemonBuilder_;
-    }
-
-    private POGOProtos.Rpc.FortSearchLogEntry fortSearch_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.FortSearchLogEntry, POGOProtos.Rpc.FortSearchLogEntry.Builder, POGOProtos.Rpc.FortSearchLogEntryOrBuilder> fortSearchBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-     * @return Whether the fortSearch field is set.
-     */
-    public boolean hasFortSearch() {
-      return fortSearchBuilder_ != null || fortSearch_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-     * @return The fortSearch.
-     */
-    public POGOProtos.Rpc.FortSearchLogEntry getFortSearch() {
-      if (fortSearchBuilder_ == null) {
-        return fortSearch_ == null ? POGOProtos.Rpc.FortSearchLogEntry.getDefaultInstance() : fortSearch_;
-      } else {
-        return fortSearchBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-     */
-    public Builder setFortSearch(POGOProtos.Rpc.FortSearchLogEntry value) {
-      if (fortSearchBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        fortSearch_ = value;
-        onChanged();
-      } else {
-        fortSearchBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-     */
-    public Builder setFortSearch(
-        POGOProtos.Rpc.FortSearchLogEntry.Builder builderForValue) {
-      if (fortSearchBuilder_ == null) {
-        fortSearch_ = builderForValue.build();
-        onChanged();
-      } else {
-        fortSearchBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-     */
-    public Builder mergeFortSearch(POGOProtos.Rpc.FortSearchLogEntry value) {
-      if (fortSearchBuilder_ == null) {
-        if (fortSearch_ != null) {
-          fortSearch_ =
-            POGOProtos.Rpc.FortSearchLogEntry.newBuilder(fortSearch_).mergeFrom(value).buildPartial();
-        } else {
-          fortSearch_ = value;
-        }
-        onChanged();
-      } else {
-        fortSearchBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-     */
-    public Builder clearFortSearch() {
-      if (fortSearchBuilder_ == null) {
-        fortSearch_ = null;
-        onChanged();
-      } else {
-        fortSearch_ = null;
-        fortSearchBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-     */
-    public POGOProtos.Rpc.FortSearchLogEntry.Builder getFortSearchBuilder() {
-      
-      onChanged();
-      return getFortSearchFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-     */
-    public POGOProtos.Rpc.FortSearchLogEntryOrBuilder getFortSearchOrBuilder() {
-      if (fortSearchBuilder_ != null) {
-        return fortSearchBuilder_.getMessageOrBuilder();
-      } else {
-        return fortSearch_ == null ?
-            POGOProtos.Rpc.FortSearchLogEntry.getDefaultInstance() : fortSearch_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FortSearchLogEntry fort_search = 4;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.FortSearchLogEntry, POGOProtos.Rpc.FortSearchLogEntry.Builder, POGOProtos.Rpc.FortSearchLogEntryOrBuilder> 
-        getFortSearchFieldBuilder() {
-      if (fortSearchBuilder_ == null) {
-        fortSearchBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.FortSearchLogEntry, POGOProtos.Rpc.FortSearchLogEntry.Builder, POGOProtos.Rpc.FortSearchLogEntryOrBuilder>(
-                getFortSearch(),
-                getParentForChildren(),
-                isClean());
-        fortSearch_ = null;
-      }
-      return fortSearchBuilder_;
-    }
-
-    private POGOProtos.Rpc.BuddyPokemonLogEntry buddyPokemon_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyPokemonLogEntry, POGOProtos.Rpc.BuddyPokemonLogEntry.Builder, POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder> buddyPokemonBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-     * @return Whether the buddyPokemon field is set.
-     */
-    public boolean hasBuddyPokemon() {
-      return buddyPokemonBuilder_ != null || buddyPokemon_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-     * @return The buddyPokemon.
-     */
-    public POGOProtos.Rpc.BuddyPokemonLogEntry getBuddyPokemon() {
-      if (buddyPokemonBuilder_ == null) {
-        return buddyPokemon_ == null ? POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance() : buddyPokemon_;
-      } else {
-        return buddyPokemonBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-     */
-    public Builder setBuddyPokemon(POGOProtos.Rpc.BuddyPokemonLogEntry value) {
-      if (buddyPokemonBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        buddyPokemon_ = value;
-        onChanged();
-      } else {
-        buddyPokemonBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-     */
-    public Builder setBuddyPokemon(
-        POGOProtos.Rpc.BuddyPokemonLogEntry.Builder builderForValue) {
-      if (buddyPokemonBuilder_ == null) {
-        buddyPokemon_ = builderForValue.build();
-        onChanged();
-      } else {
-        buddyPokemonBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-     */
-    public Builder mergeBuddyPokemon(POGOProtos.Rpc.BuddyPokemonLogEntry value) {
-      if (buddyPokemonBuilder_ == null) {
-        if (buddyPokemon_ != null) {
-          buddyPokemon_ =
-            POGOProtos.Rpc.BuddyPokemonLogEntry.newBuilder(buddyPokemon_).mergeFrom(value).buildPartial();
-        } else {
-          buddyPokemon_ = value;
-        }
-        onChanged();
-      } else {
-        buddyPokemonBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-     */
-    public Builder clearBuddyPokemon() {
-      if (buddyPokemonBuilder_ == null) {
-        buddyPokemon_ = null;
-        onChanged();
-      } else {
-        buddyPokemon_ = null;
-        buddyPokemonBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-     */
-    public POGOProtos.Rpc.BuddyPokemonLogEntry.Builder getBuddyPokemonBuilder() {
-      
-      onChanged();
-      return getBuddyPokemonFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-     */
-    public POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder getBuddyPokemonOrBuilder() {
-      if (buddyPokemonBuilder_ != null) {
-        return buddyPokemonBuilder_.getMessageOrBuilder();
-      } else {
-        return buddyPokemon_ == null ?
-            POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance() : buddyPokemon_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyPokemonLogEntry, POGOProtos.Rpc.BuddyPokemonLogEntry.Builder, POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder> 
-        getBuddyPokemonFieldBuilder() {
-      if (buddyPokemonBuilder_ == null) {
-        buddyPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.BuddyPokemonLogEntry, POGOProtos.Rpc.BuddyPokemonLogEntry.Builder, POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder>(
-                getBuddyPokemon(),
-                getParentForChildren(),
-                isClean());
-        buddyPokemon_ = null;
-      }
-      return buddyPokemonBuilder_;
-    }
-
-    private POGOProtos.Rpc.RaidRewardsLogEntry raidRewards_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.RaidRewardsLogEntry, POGOProtos.Rpc.RaidRewardsLogEntry.Builder, POGOProtos.Rpc.RaidRewardsLogEntryOrBuilder> raidRewardsBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-     * @return Whether the raidRewards field is set.
-     */
-    public boolean hasRaidRewards() {
-      return raidRewardsBuilder_ != null || raidRewards_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-     * @return The raidRewards.
-     */
-    public POGOProtos.Rpc.RaidRewardsLogEntry getRaidRewards() {
-      if (raidRewardsBuilder_ == null) {
-        return raidRewards_ == null ? POGOProtos.Rpc.RaidRewardsLogEntry.getDefaultInstance() : raidRewards_;
-      } else {
-        return raidRewardsBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-     */
-    public Builder setRaidRewards(POGOProtos.Rpc.RaidRewardsLogEntry value) {
-      if (raidRewardsBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        raidRewards_ = value;
-        onChanged();
-      } else {
-        raidRewardsBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-     */
-    public Builder setRaidRewards(
-        POGOProtos.Rpc.RaidRewardsLogEntry.Builder builderForValue) {
-      if (raidRewardsBuilder_ == null) {
-        raidRewards_ = builderForValue.build();
-        onChanged();
-      } else {
-        raidRewardsBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-     */
-    public Builder mergeRaidRewards(POGOProtos.Rpc.RaidRewardsLogEntry value) {
-      if (raidRewardsBuilder_ == null) {
-        if (raidRewards_ != null) {
-          raidRewards_ =
-            POGOProtos.Rpc.RaidRewardsLogEntry.newBuilder(raidRewards_).mergeFrom(value).buildPartial();
-        } else {
-          raidRewards_ = value;
-        }
-        onChanged();
-      } else {
-        raidRewardsBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-     */
-    public Builder clearRaidRewards() {
-      if (raidRewardsBuilder_ == null) {
-        raidRewards_ = null;
-        onChanged();
-      } else {
-        raidRewards_ = null;
-        raidRewardsBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-     */
-    public POGOProtos.Rpc.RaidRewardsLogEntry.Builder getRaidRewardsBuilder() {
-      
-      onChanged();
-      return getRaidRewardsFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-     */
-    public POGOProtos.Rpc.RaidRewardsLogEntryOrBuilder getRaidRewardsOrBuilder() {
-      if (raidRewardsBuilder_ != null) {
-        return raidRewardsBuilder_.getMessageOrBuilder();
-      } else {
-        return raidRewards_ == null ?
-            POGOProtos.Rpc.RaidRewardsLogEntry.getDefaultInstance() : raidRewards_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.RaidRewardsLogEntry raid_rewards = 6;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.RaidRewardsLogEntry, POGOProtos.Rpc.RaidRewardsLogEntry.Builder, POGOProtos.Rpc.RaidRewardsLogEntryOrBuilder> 
-        getRaidRewardsFieldBuilder() {
-      if (raidRewardsBuilder_ == null) {
-        raidRewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.RaidRewardsLogEntry, POGOProtos.Rpc.RaidRewardsLogEntry.Builder, POGOProtos.Rpc.RaidRewardsLogEntryOrBuilder>(
-                getRaidRewards(),
-                getParentForChildren(),
-                isClean());
-        raidRewards_ = null;
-      }
-      return raidRewardsBuilder_;
-    }
-
-    private POGOProtos.Rpc.PasscodeRewardsLogEntry passcodeRewards_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PasscodeRewardsLogEntry, POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder, POGOProtos.Rpc.PasscodeRewardsLogEntryOrBuilder> passcodeRewardsBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-     * @return Whether the passcodeRewards field is set.
-     */
-    public boolean hasPasscodeRewards() {
-      return passcodeRewardsBuilder_ != null || passcodeRewards_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-     * @return The passcodeRewards.
-     */
-    public POGOProtos.Rpc.PasscodeRewardsLogEntry getPasscodeRewards() {
-      if (passcodeRewardsBuilder_ == null) {
-        return passcodeRewards_ == null ? POGOProtos.Rpc.PasscodeRewardsLogEntry.getDefaultInstance() : passcodeRewards_;
-      } else {
-        return passcodeRewardsBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-     */
-    public Builder setPasscodeRewards(POGOProtos.Rpc.PasscodeRewardsLogEntry value) {
-      if (passcodeRewardsBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        passcodeRewards_ = value;
-        onChanged();
-      } else {
-        passcodeRewardsBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-     */
-    public Builder setPasscodeRewards(
-        POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder builderForValue) {
-      if (passcodeRewardsBuilder_ == null) {
-        passcodeRewards_ = builderForValue.build();
-        onChanged();
-      } else {
-        passcodeRewardsBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-     */
-    public Builder mergePasscodeRewards(POGOProtos.Rpc.PasscodeRewardsLogEntry value) {
-      if (passcodeRewardsBuilder_ == null) {
-        if (passcodeRewards_ != null) {
-          passcodeRewards_ =
-            POGOProtos.Rpc.PasscodeRewardsLogEntry.newBuilder(passcodeRewards_).mergeFrom(value).buildPartial();
-        } else {
-          passcodeRewards_ = value;
-        }
-        onChanged();
-      } else {
-        passcodeRewardsBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-     */
-    public Builder clearPasscodeRewards() {
-      if (passcodeRewardsBuilder_ == null) {
-        passcodeRewards_ = null;
-        onChanged();
-      } else {
-        passcodeRewards_ = null;
-        passcodeRewardsBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-     */
-    public POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder getPasscodeRewardsBuilder() {
-      
-      onChanged();
-      return getPasscodeRewardsFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-     */
-    public POGOProtos.Rpc.PasscodeRewardsLogEntryOrBuilder getPasscodeRewardsOrBuilder() {
-      if (passcodeRewardsBuilder_ != null) {
-        return passcodeRewardsBuilder_.getMessageOrBuilder();
-      } else {
-        return passcodeRewards_ == null ?
-            POGOProtos.Rpc.PasscodeRewardsLogEntry.getDefaultInstance() : passcodeRewards_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PasscodeRewardsLogEntry passcode_rewards = 7;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PasscodeRewardsLogEntry, POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder, POGOProtos.Rpc.PasscodeRewardsLogEntryOrBuilder> 
-        getPasscodeRewardsFieldBuilder() {
-      if (passcodeRewardsBuilder_ == null) {
-        passcodeRewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PasscodeRewardsLogEntry, POGOProtos.Rpc.PasscodeRewardsLogEntry.Builder, POGOProtos.Rpc.PasscodeRewardsLogEntryOrBuilder>(
-                getPasscodeRewards(),
-                getParentForChildren(),
-                isClean());
-        passcodeRewards_ = null;
-      }
-      return passcodeRewardsBuilder_;
-    }
-
-    private POGOProtos.Rpc.CompleteQuestLogEntry completeQuest_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CompleteQuestLogEntry, POGOProtos.Rpc.CompleteQuestLogEntry.Builder, POGOProtos.Rpc.CompleteQuestLogEntryOrBuilder> completeQuestBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-     * @return Whether the completeQuest field is set.
-     */
-    public boolean hasCompleteQuest() {
-      return completeQuestBuilder_ != null || completeQuest_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-     * @return The completeQuest.
-     */
-    public POGOProtos.Rpc.CompleteQuestLogEntry getCompleteQuest() {
-      if (completeQuestBuilder_ == null) {
-        return completeQuest_ == null ? POGOProtos.Rpc.CompleteQuestLogEntry.getDefaultInstance() : completeQuest_;
-      } else {
-        return completeQuestBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-     */
-    public Builder setCompleteQuest(POGOProtos.Rpc.CompleteQuestLogEntry value) {
-      if (completeQuestBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        completeQuest_ = value;
-        onChanged();
-      } else {
-        completeQuestBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-     */
-    public Builder setCompleteQuest(
-        POGOProtos.Rpc.CompleteQuestLogEntry.Builder builderForValue) {
-      if (completeQuestBuilder_ == null) {
-        completeQuest_ = builderForValue.build();
-        onChanged();
-      } else {
-        completeQuestBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-     */
-    public Builder mergeCompleteQuest(POGOProtos.Rpc.CompleteQuestLogEntry value) {
-      if (completeQuestBuilder_ == null) {
-        if (completeQuest_ != null) {
-          completeQuest_ =
-            POGOProtos.Rpc.CompleteQuestLogEntry.newBuilder(completeQuest_).mergeFrom(value).buildPartial();
-        } else {
-          completeQuest_ = value;
-        }
-        onChanged();
-      } else {
-        completeQuestBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-     */
-    public Builder clearCompleteQuest() {
-      if (completeQuestBuilder_ == null) {
-        completeQuest_ = null;
-        onChanged();
-      } else {
-        completeQuest_ = null;
-        completeQuestBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-     */
-    public POGOProtos.Rpc.CompleteQuestLogEntry.Builder getCompleteQuestBuilder() {
-      
-      onChanged();
-      return getCompleteQuestFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-     */
-    public POGOProtos.Rpc.CompleteQuestLogEntryOrBuilder getCompleteQuestOrBuilder() {
-      if (completeQuestBuilder_ != null) {
-        return completeQuestBuilder_.getMessageOrBuilder();
-      } else {
-        return completeQuest_ == null ?
-            POGOProtos.Rpc.CompleteQuestLogEntry.getDefaultInstance() : completeQuest_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestLogEntry complete_quest = 8;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CompleteQuestLogEntry, POGOProtos.Rpc.CompleteQuestLogEntry.Builder, POGOProtos.Rpc.CompleteQuestLogEntryOrBuilder> 
-        getCompleteQuestFieldBuilder() {
-      if (completeQuestBuilder_ == null) {
-        completeQuestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.CompleteQuestLogEntry, POGOProtos.Rpc.CompleteQuestLogEntry.Builder, POGOProtos.Rpc.CompleteQuestLogEntryOrBuilder>(
-                getCompleteQuest(),
-                getParentForChildren(),
-                isClean());
-        completeQuest_ = null;
-      }
-      return completeQuestBuilder_;
-    }
-
-    private POGOProtos.Rpc.CompleteQuestStampCardLogEntry completeQuestStampCard_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CompleteQuestStampCardLogEntry, POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder, POGOProtos.Rpc.CompleteQuestStampCardLogEntryOrBuilder> completeQuestStampCardBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-     * @return Whether the completeQuestStampCard field is set.
-     */
-    public boolean hasCompleteQuestStampCard() {
-      return completeQuestStampCardBuilder_ != null || completeQuestStampCard_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-     * @return The completeQuestStampCard.
-     */
-    public POGOProtos.Rpc.CompleteQuestStampCardLogEntry getCompleteQuestStampCard() {
-      if (completeQuestStampCardBuilder_ == null) {
-        return completeQuestStampCard_ == null ? POGOProtos.Rpc.CompleteQuestStampCardLogEntry.getDefaultInstance() : completeQuestStampCard_;
-      } else {
-        return completeQuestStampCardBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-     */
-    public Builder setCompleteQuestStampCard(POGOProtos.Rpc.CompleteQuestStampCardLogEntry value) {
-      if (completeQuestStampCardBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        completeQuestStampCard_ = value;
-        onChanged();
-      } else {
-        completeQuestStampCardBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-     */
-    public Builder setCompleteQuestStampCard(
-        POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder builderForValue) {
-      if (completeQuestStampCardBuilder_ == null) {
-        completeQuestStampCard_ = builderForValue.build();
-        onChanged();
-      } else {
-        completeQuestStampCardBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-     */
-    public Builder mergeCompleteQuestStampCard(POGOProtos.Rpc.CompleteQuestStampCardLogEntry value) {
-      if (completeQuestStampCardBuilder_ == null) {
-        if (completeQuestStampCard_ != null) {
-          completeQuestStampCard_ =
-            POGOProtos.Rpc.CompleteQuestStampCardLogEntry.newBuilder(completeQuestStampCard_).mergeFrom(value).buildPartial();
-        } else {
-          completeQuestStampCard_ = value;
-        }
-        onChanged();
-      } else {
-        completeQuestStampCardBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-     */
-    public Builder clearCompleteQuestStampCard() {
-      if (completeQuestStampCardBuilder_ == null) {
-        completeQuestStampCard_ = null;
-        onChanged();
-      } else {
-        completeQuestStampCard_ = null;
-        completeQuestStampCardBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-     */
-    public POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder getCompleteQuestStampCardBuilder() {
-      
-      onChanged();
-      return getCompleteQuestStampCardFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-     */
-    public POGOProtos.Rpc.CompleteQuestStampCardLogEntryOrBuilder getCompleteQuestStampCardOrBuilder() {
-      if (completeQuestStampCardBuilder_ != null) {
-        return completeQuestStampCardBuilder_.getMessageOrBuilder();
-      } else {
-        return completeQuestStampCard_ == null ?
-            POGOProtos.Rpc.CompleteQuestStampCardLogEntry.getDefaultInstance() : completeQuestStampCard_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestStampCardLogEntry complete_quest_stamp_card = 9;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CompleteQuestStampCardLogEntry, POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder, POGOProtos.Rpc.CompleteQuestStampCardLogEntryOrBuilder> 
-        getCompleteQuestStampCardFieldBuilder() {
-      if (completeQuestStampCardBuilder_ == null) {
-        completeQuestStampCardBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.CompleteQuestStampCardLogEntry, POGOProtos.Rpc.CompleteQuestStampCardLogEntry.Builder, POGOProtos.Rpc.CompleteQuestStampCardLogEntryOrBuilder>(
-                getCompleteQuestStampCard(),
-                getParentForChildren(),
-                isClean());
-        completeQuestStampCard_ = null;
-      }
-      return completeQuestStampCardBuilder_;
-    }
-
-    private POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry completeQuestPokemonEncounter_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder> completeQuestPokemonEncounterBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-     * @return Whether the completeQuestPokemonEncounter field is set.
-     */
-    public boolean hasCompleteQuestPokemonEncounter() {
-      return completeQuestPokemonEncounterBuilder_ != null || completeQuestPokemonEncounter_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-     * @return The completeQuestPokemonEncounter.
-     */
-    public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry getCompleteQuestPokemonEncounter() {
-      if (completeQuestPokemonEncounterBuilder_ == null) {
-        return completeQuestPokemonEncounter_ == null ? POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance() : completeQuestPokemonEncounter_;
-      } else {
-        return completeQuestPokemonEncounterBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-     */
-    public Builder setCompleteQuestPokemonEncounter(POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry value) {
-      if (completeQuestPokemonEncounterBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        completeQuestPokemonEncounter_ = value;
-        onChanged();
-      } else {
-        completeQuestPokemonEncounterBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-     */
-    public Builder setCompleteQuestPokemonEncounter(
-        POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder builderForValue) {
-      if (completeQuestPokemonEncounterBuilder_ == null) {
-        completeQuestPokemonEncounter_ = builderForValue.build();
-        onChanged();
-      } else {
-        completeQuestPokemonEncounterBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-     */
-    public Builder mergeCompleteQuestPokemonEncounter(POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry value) {
-      if (completeQuestPokemonEncounterBuilder_ == null) {
-        if (completeQuestPokemonEncounter_ != null) {
-          completeQuestPokemonEncounter_ =
-            POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.newBuilder(completeQuestPokemonEncounter_).mergeFrom(value).buildPartial();
-        } else {
-          completeQuestPokemonEncounter_ = value;
-        }
-        onChanged();
-      } else {
-        completeQuestPokemonEncounterBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-     */
-    public Builder clearCompleteQuestPokemonEncounter() {
-      if (completeQuestPokemonEncounterBuilder_ == null) {
-        completeQuestPokemonEncounter_ = null;
-        onChanged();
-      } else {
-        completeQuestPokemonEncounter_ = null;
-        completeQuestPokemonEncounterBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-     */
-    public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder getCompleteQuestPokemonEncounterBuilder() {
-      
-      onChanged();
-      return getCompleteQuestPokemonEncounterFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-     */
-    public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder getCompleteQuestPokemonEncounterOrBuilder() {
-      if (completeQuestPokemonEncounterBuilder_ != null) {
-        return completeQuestPokemonEncounterBuilder_.getMessageOrBuilder();
-      } else {
-        return completeQuestPokemonEncounter_ == null ?
-            POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance() : completeQuestPokemonEncounter_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder> 
-        getCompleteQuestPokemonEncounterFieldBuilder() {
-      if (completeQuestPokemonEncounterBuilder_ == null) {
-        completeQuestPokemonEncounterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder>(
-                getCompleteQuestPokemonEncounter(),
-                getParentForChildren(),
-                isClean());
-        completeQuestPokemonEncounter_ = null;
-      }
-      return completeQuestPokemonEncounterBuilder_;
-    }
-
-    private POGOProtos.Rpc.BelugaDailyTransferLogEntry belugaTransfer_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BelugaDailyTransferLogEntry, POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder, POGOProtos.Rpc.BelugaDailyTransferLogEntryOrBuilder> belugaTransferBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-     * @return Whether the belugaTransfer field is set.
-     */
-    public boolean hasBelugaTransfer() {
-      return belugaTransferBuilder_ != null || belugaTransfer_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-     * @return The belugaTransfer.
-     */
-    public POGOProtos.Rpc.BelugaDailyTransferLogEntry getBelugaTransfer() {
-      if (belugaTransferBuilder_ == null) {
-        return belugaTransfer_ == null ? POGOProtos.Rpc.BelugaDailyTransferLogEntry.getDefaultInstance() : belugaTransfer_;
-      } else {
-        return belugaTransferBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-     */
-    public Builder setBelugaTransfer(POGOProtos.Rpc.BelugaDailyTransferLogEntry value) {
-      if (belugaTransferBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        belugaTransfer_ = value;
-        onChanged();
-      } else {
-        belugaTransferBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-     */
-    public Builder setBelugaTransfer(
-        POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder builderForValue) {
-      if (belugaTransferBuilder_ == null) {
-        belugaTransfer_ = builderForValue.build();
-        onChanged();
-      } else {
-        belugaTransferBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-     */
-    public Builder mergeBelugaTransfer(POGOProtos.Rpc.BelugaDailyTransferLogEntry value) {
-      if (belugaTransferBuilder_ == null) {
-        if (belugaTransfer_ != null) {
-          belugaTransfer_ =
-            POGOProtos.Rpc.BelugaDailyTransferLogEntry.newBuilder(belugaTransfer_).mergeFrom(value).buildPartial();
-        } else {
-          belugaTransfer_ = value;
-        }
-        onChanged();
-      } else {
-        belugaTransferBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-     */
-    public Builder clearBelugaTransfer() {
-      if (belugaTransferBuilder_ == null) {
-        belugaTransfer_ = null;
-        onChanged();
-      } else {
-        belugaTransfer_ = null;
-        belugaTransferBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-     */
-    public POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder getBelugaTransferBuilder() {
-      
-      onChanged();
-      return getBelugaTransferFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-     */
-    public POGOProtos.Rpc.BelugaDailyTransferLogEntryOrBuilder getBelugaTransferOrBuilder() {
-      if (belugaTransferBuilder_ != null) {
-        return belugaTransferBuilder_.getMessageOrBuilder();
-      } else {
-        return belugaTransfer_ == null ?
-            POGOProtos.Rpc.BelugaDailyTransferLogEntry.getDefaultInstance() : belugaTransfer_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.BelugaDailyTransferLogEntry beluga_transfer = 11;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BelugaDailyTransferLogEntry, POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder, POGOProtos.Rpc.BelugaDailyTransferLogEntryOrBuilder> 
-        getBelugaTransferFieldBuilder() {
-      if (belugaTransferBuilder_ == null) {
-        belugaTransferBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.BelugaDailyTransferLogEntry, POGOProtos.Rpc.BelugaDailyTransferLogEntry.Builder, POGOProtos.Rpc.BelugaDailyTransferLogEntryOrBuilder>(
-                getBelugaTransfer(),
-                getParentForChildren(),
-                isClean());
-        belugaTransfer_ = null;
-      }
-      return belugaTransferBuilder_;
-    }
-
-    private POGOProtos.Rpc.OpenGiftLogEntry openGift_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.OpenGiftLogEntry, POGOProtos.Rpc.OpenGiftLogEntry.Builder, POGOProtos.Rpc.OpenGiftLogEntryOrBuilder> openGiftBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-     * @return Whether the openGift field is set.
-     */
-    public boolean hasOpenGift() {
-      return openGiftBuilder_ != null || openGift_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-     * @return The openGift.
-     */
-    public POGOProtos.Rpc.OpenGiftLogEntry getOpenGift() {
-      if (openGiftBuilder_ == null) {
-        return openGift_ == null ? POGOProtos.Rpc.OpenGiftLogEntry.getDefaultInstance() : openGift_;
-      } else {
-        return openGiftBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-     */
-    public Builder setOpenGift(POGOProtos.Rpc.OpenGiftLogEntry value) {
-      if (openGiftBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        openGift_ = value;
-        onChanged();
-      } else {
-        openGiftBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-     */
-    public Builder setOpenGift(
-        POGOProtos.Rpc.OpenGiftLogEntry.Builder builderForValue) {
-      if (openGiftBuilder_ == null) {
-        openGift_ = builderForValue.build();
-        onChanged();
-      } else {
-        openGiftBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-     */
-    public Builder mergeOpenGift(POGOProtos.Rpc.OpenGiftLogEntry value) {
-      if (openGiftBuilder_ == null) {
-        if (openGift_ != null) {
-          openGift_ =
-            POGOProtos.Rpc.OpenGiftLogEntry.newBuilder(openGift_).mergeFrom(value).buildPartial();
-        } else {
-          openGift_ = value;
-        }
-        onChanged();
-      } else {
-        openGiftBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-     */
-    public Builder clearOpenGift() {
-      if (openGiftBuilder_ == null) {
-        openGift_ = null;
-        onChanged();
-      } else {
-        openGift_ = null;
-        openGiftBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-     */
-    public POGOProtos.Rpc.OpenGiftLogEntry.Builder getOpenGiftBuilder() {
-      
-      onChanged();
-      return getOpenGiftFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-     */
-    public POGOProtos.Rpc.OpenGiftLogEntryOrBuilder getOpenGiftOrBuilder() {
-      if (openGiftBuilder_ != null) {
-        return openGiftBuilder_.getMessageOrBuilder();
-      } else {
-        return openGift_ == null ?
-            POGOProtos.Rpc.OpenGiftLogEntry.getDefaultInstance() : openGift_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.OpenGiftLogEntry open_gift = 12;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.OpenGiftLogEntry, POGOProtos.Rpc.OpenGiftLogEntry.Builder, POGOProtos.Rpc.OpenGiftLogEntryOrBuilder> 
-        getOpenGiftFieldBuilder() {
-      if (openGiftBuilder_ == null) {
-        openGiftBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.OpenGiftLogEntry, POGOProtos.Rpc.OpenGiftLogEntry.Builder, POGOProtos.Rpc.OpenGiftLogEntryOrBuilder>(
-                getOpenGift(),
-                getParentForChildren(),
-                isClean());
-        openGift_ = null;
-      }
-      return openGiftBuilder_;
-    }
-
-    private POGOProtos.Rpc.SendGiftLogEntry sendGift_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.SendGiftLogEntry, POGOProtos.Rpc.SendGiftLogEntry.Builder, POGOProtos.Rpc.SendGiftLogEntryOrBuilder> sendGiftBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-     * @return Whether the sendGift field is set.
-     */
-    public boolean hasSendGift() {
-      return sendGiftBuilder_ != null || sendGift_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-     * @return The sendGift.
-     */
-    public POGOProtos.Rpc.SendGiftLogEntry getSendGift() {
-      if (sendGiftBuilder_ == null) {
-        return sendGift_ == null ? POGOProtos.Rpc.SendGiftLogEntry.getDefaultInstance() : sendGift_;
-      } else {
-        return sendGiftBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-     */
-    public Builder setSendGift(POGOProtos.Rpc.SendGiftLogEntry value) {
-      if (sendGiftBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        sendGift_ = value;
-        onChanged();
-      } else {
-        sendGiftBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-     */
-    public Builder setSendGift(
-        POGOProtos.Rpc.SendGiftLogEntry.Builder builderForValue) {
-      if (sendGiftBuilder_ == null) {
-        sendGift_ = builderForValue.build();
-        onChanged();
-      } else {
-        sendGiftBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-     */
-    public Builder mergeSendGift(POGOProtos.Rpc.SendGiftLogEntry value) {
-      if (sendGiftBuilder_ == null) {
-        if (sendGift_ != null) {
-          sendGift_ =
-            POGOProtos.Rpc.SendGiftLogEntry.newBuilder(sendGift_).mergeFrom(value).buildPartial();
-        } else {
-          sendGift_ = value;
-        }
-        onChanged();
-      } else {
-        sendGiftBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-     */
-    public Builder clearSendGift() {
-      if (sendGiftBuilder_ == null) {
-        sendGift_ = null;
-        onChanged();
-      } else {
-        sendGift_ = null;
-        sendGiftBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-     */
-    public POGOProtos.Rpc.SendGiftLogEntry.Builder getSendGiftBuilder() {
-      
-      onChanged();
-      return getSendGiftFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-     */
-    public POGOProtos.Rpc.SendGiftLogEntryOrBuilder getSendGiftOrBuilder() {
-      if (sendGiftBuilder_ != null) {
-        return sendGiftBuilder_.getMessageOrBuilder();
-      } else {
-        return sendGift_ == null ?
-            POGOProtos.Rpc.SendGiftLogEntry.getDefaultInstance() : sendGift_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.SendGiftLogEntry send_gift = 13;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.SendGiftLogEntry, POGOProtos.Rpc.SendGiftLogEntry.Builder, POGOProtos.Rpc.SendGiftLogEntryOrBuilder> 
-        getSendGiftFieldBuilder() {
-      if (sendGiftBuilder_ == null) {
-        sendGiftBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.SendGiftLogEntry, POGOProtos.Rpc.SendGiftLogEntry.Builder, POGOProtos.Rpc.SendGiftLogEntryOrBuilder>(
-                getSendGift(),
-                getParentForChildren(),
-                isClean());
-        sendGift_ = null;
-      }
-      return sendGiftBuilder_;
-    }
-
-    private POGOProtos.Rpc.TradingLogEntry trading_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.TradingLogEntry, POGOProtos.Rpc.TradingLogEntry.Builder, POGOProtos.Rpc.TradingLogEntryOrBuilder> tradingBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-     * @return Whether the trading field is set.
-     */
-    public boolean hasTrading() {
-      return tradingBuilder_ != null || trading_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-     * @return The trading.
-     */
-    public POGOProtos.Rpc.TradingLogEntry getTrading() {
-      if (tradingBuilder_ == null) {
-        return trading_ == null ? POGOProtos.Rpc.TradingLogEntry.getDefaultInstance() : trading_;
-      } else {
-        return tradingBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-     */
-    public Builder setTrading(POGOProtos.Rpc.TradingLogEntry value) {
-      if (tradingBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        trading_ = value;
-        onChanged();
-      } else {
-        tradingBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-     */
-    public Builder setTrading(
-        POGOProtos.Rpc.TradingLogEntry.Builder builderForValue) {
-      if (tradingBuilder_ == null) {
-        trading_ = builderForValue.build();
-        onChanged();
-      } else {
-        tradingBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-     */
-    public Builder mergeTrading(POGOProtos.Rpc.TradingLogEntry value) {
-      if (tradingBuilder_ == null) {
-        if (trading_ != null) {
-          trading_ =
-            POGOProtos.Rpc.TradingLogEntry.newBuilder(trading_).mergeFrom(value).buildPartial();
-        } else {
-          trading_ = value;
-        }
-        onChanged();
-      } else {
-        tradingBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-     */
-    public Builder clearTrading() {
-      if (tradingBuilder_ == null) {
-        trading_ = null;
-        onChanged();
-      } else {
-        trading_ = null;
-        tradingBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-     */
-    public POGOProtos.Rpc.TradingLogEntry.Builder getTradingBuilder() {
-      
-      onChanged();
-      return getTradingFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-     */
-    public POGOProtos.Rpc.TradingLogEntryOrBuilder getTradingOrBuilder() {
-      if (tradingBuilder_ != null) {
-        return tradingBuilder_.getMessageOrBuilder();
-      } else {
-        return trading_ == null ?
-            POGOProtos.Rpc.TradingLogEntry.getDefaultInstance() : trading_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradingLogEntry trading = 14;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.TradingLogEntry, POGOProtos.Rpc.TradingLogEntry.Builder, POGOProtos.Rpc.TradingLogEntryOrBuilder> 
-        getTradingFieldBuilder() {
-      if (tradingBuilder_ == null) {
-        tradingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.TradingLogEntry, POGOProtos.Rpc.TradingLogEntry.Builder, POGOProtos.Rpc.TradingLogEntryOrBuilder>(
-                getTrading(),
-                getParentForChildren(),
-                isClean());
-        trading_ = null;
-      }
-      return tradingBuilder_;
-    }
-
-    private POGOProtos.Rpc.ShareExRaidPassLogEntry shareExRaidPass_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ShareExRaidPassLogEntry, POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder, POGOProtos.Rpc.ShareExRaidPassLogEntryOrBuilder> shareExRaidPassBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-     * @return Whether the shareExRaidPass field is set.
-     */
-    public boolean hasShareExRaidPass() {
-      return shareExRaidPassBuilder_ != null || shareExRaidPass_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-     * @return The shareExRaidPass.
-     */
-    public POGOProtos.Rpc.ShareExRaidPassLogEntry getShareExRaidPass() {
-      if (shareExRaidPassBuilder_ == null) {
-        return shareExRaidPass_ == null ? POGOProtos.Rpc.ShareExRaidPassLogEntry.getDefaultInstance() : shareExRaidPass_;
-      } else {
-        return shareExRaidPassBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-     */
-    public Builder setShareExRaidPass(POGOProtos.Rpc.ShareExRaidPassLogEntry value) {
-      if (shareExRaidPassBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        shareExRaidPass_ = value;
-        onChanged();
-      } else {
-        shareExRaidPassBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-     */
-    public Builder setShareExRaidPass(
-        POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder builderForValue) {
-      if (shareExRaidPassBuilder_ == null) {
-        shareExRaidPass_ = builderForValue.build();
-        onChanged();
-      } else {
-        shareExRaidPassBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-     */
-    public Builder mergeShareExRaidPass(POGOProtos.Rpc.ShareExRaidPassLogEntry value) {
-      if (shareExRaidPassBuilder_ == null) {
-        if (shareExRaidPass_ != null) {
-          shareExRaidPass_ =
-            POGOProtos.Rpc.ShareExRaidPassLogEntry.newBuilder(shareExRaidPass_).mergeFrom(value).buildPartial();
-        } else {
-          shareExRaidPass_ = value;
-        }
-        onChanged();
-      } else {
-        shareExRaidPassBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-     */
-    public Builder clearShareExRaidPass() {
-      if (shareExRaidPassBuilder_ == null) {
-        shareExRaidPass_ = null;
-        onChanged();
-      } else {
-        shareExRaidPass_ = null;
-        shareExRaidPassBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-     */
-    public POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder getShareExRaidPassBuilder() {
-      
-      onChanged();
-      return getShareExRaidPassFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-     */
-    public POGOProtos.Rpc.ShareExRaidPassLogEntryOrBuilder getShareExRaidPassOrBuilder() {
-      if (shareExRaidPassBuilder_ != null) {
-        return shareExRaidPassBuilder_.getMessageOrBuilder();
-      } else {
-        return shareExRaidPass_ == null ?
-            POGOProtos.Rpc.ShareExRaidPassLogEntry.getDefaultInstance() : shareExRaidPass_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.ShareExRaidPassLogEntry share_ex_raid_pass = 15;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ShareExRaidPassLogEntry, POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder, POGOProtos.Rpc.ShareExRaidPassLogEntryOrBuilder> 
-        getShareExRaidPassFieldBuilder() {
-      if (shareExRaidPassBuilder_ == null) {
-        shareExRaidPassBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ShareExRaidPassLogEntry, POGOProtos.Rpc.ShareExRaidPassLogEntry.Builder, POGOProtos.Rpc.ShareExRaidPassLogEntryOrBuilder>(
-                getShareExRaidPass(),
-                getParentForChildren(),
-                isClean());
-        shareExRaidPass_ = null;
-      }
-      return shareExRaidPassBuilder_;
-    }
-
-    private POGOProtos.Rpc.DeclineExRaidPassLogEntry declineExRaidPass_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DeclineExRaidPassLogEntry, POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder, POGOProtos.Rpc.DeclineExRaidPassLogEntryOrBuilder> declineExRaidPassBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-     * @return Whether the declineExRaidPass field is set.
-     */
-    public boolean hasDeclineExRaidPass() {
-      return declineExRaidPassBuilder_ != null || declineExRaidPass_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-     * @return The declineExRaidPass.
-     */
-    public POGOProtos.Rpc.DeclineExRaidPassLogEntry getDeclineExRaidPass() {
-      if (declineExRaidPassBuilder_ == null) {
-        return declineExRaidPass_ == null ? POGOProtos.Rpc.DeclineExRaidPassLogEntry.getDefaultInstance() : declineExRaidPass_;
-      } else {
-        return declineExRaidPassBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-     */
-    public Builder setDeclineExRaidPass(POGOProtos.Rpc.DeclineExRaidPassLogEntry value) {
-      if (declineExRaidPassBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        declineExRaidPass_ = value;
-        onChanged();
-      } else {
-        declineExRaidPassBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-     */
-    public Builder setDeclineExRaidPass(
-        POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder builderForValue) {
-      if (declineExRaidPassBuilder_ == null) {
-        declineExRaidPass_ = builderForValue.build();
-        onChanged();
-      } else {
-        declineExRaidPassBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-     */
-    public Builder mergeDeclineExRaidPass(POGOProtos.Rpc.DeclineExRaidPassLogEntry value) {
-      if (declineExRaidPassBuilder_ == null) {
-        if (declineExRaidPass_ != null) {
-          declineExRaidPass_ =
-            POGOProtos.Rpc.DeclineExRaidPassLogEntry.newBuilder(declineExRaidPass_).mergeFrom(value).buildPartial();
-        } else {
-          declineExRaidPass_ = value;
-        }
-        onChanged();
-      } else {
-        declineExRaidPassBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-     */
-    public Builder clearDeclineExRaidPass() {
-      if (declineExRaidPassBuilder_ == null) {
-        declineExRaidPass_ = null;
-        onChanged();
-      } else {
-        declineExRaidPass_ = null;
-        declineExRaidPassBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-     */
-    public POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder getDeclineExRaidPassBuilder() {
-      
-      onChanged();
-      return getDeclineExRaidPassFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-     */
-    public POGOProtos.Rpc.DeclineExRaidPassLogEntryOrBuilder getDeclineExRaidPassOrBuilder() {
-      if (declineExRaidPassBuilder_ != null) {
-        return declineExRaidPassBuilder_.getMessageOrBuilder();
-      } else {
-        return declineExRaidPass_ == null ?
-            POGOProtos.Rpc.DeclineExRaidPassLogEntry.getDefaultInstance() : declineExRaidPass_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DeclineExRaidPassLogEntry decline_ex_raid_pass = 16;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DeclineExRaidPassLogEntry, POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder, POGOProtos.Rpc.DeclineExRaidPassLogEntryOrBuilder> 
-        getDeclineExRaidPassFieldBuilder() {
-      if (declineExRaidPassBuilder_ == null) {
-        declineExRaidPassBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.DeclineExRaidPassLogEntry, POGOProtos.Rpc.DeclineExRaidPassLogEntry.Builder, POGOProtos.Rpc.DeclineExRaidPassLogEntryOrBuilder>(
-                getDeclineExRaidPass(),
-                getParentForChildren(),
-                isClean());
-        declineExRaidPass_ = null;
-      }
-      return declineExRaidPassBuilder_;
-    }
-
-    private POGOProtos.Rpc.FitnessRewardsLogEntry fitnessRewards_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.FitnessRewardsLogEntry, POGOProtos.Rpc.FitnessRewardsLogEntry.Builder, POGOProtos.Rpc.FitnessRewardsLogEntryOrBuilder> fitnessRewardsBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-     * @return Whether the fitnessRewards field is set.
-     */
-    public boolean hasFitnessRewards() {
-      return fitnessRewardsBuilder_ != null || fitnessRewards_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-     * @return The fitnessRewards.
-     */
-    public POGOProtos.Rpc.FitnessRewardsLogEntry getFitnessRewards() {
-      if (fitnessRewardsBuilder_ == null) {
-        return fitnessRewards_ == null ? POGOProtos.Rpc.FitnessRewardsLogEntry.getDefaultInstance() : fitnessRewards_;
-      } else {
-        return fitnessRewardsBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-     */
-    public Builder setFitnessRewards(POGOProtos.Rpc.FitnessRewardsLogEntry value) {
-      if (fitnessRewardsBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        fitnessRewards_ = value;
-        onChanged();
-      } else {
-        fitnessRewardsBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-     */
-    public Builder setFitnessRewards(
-        POGOProtos.Rpc.FitnessRewardsLogEntry.Builder builderForValue) {
-      if (fitnessRewardsBuilder_ == null) {
-        fitnessRewards_ = builderForValue.build();
-        onChanged();
-      } else {
-        fitnessRewardsBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-     */
-    public Builder mergeFitnessRewards(POGOProtos.Rpc.FitnessRewardsLogEntry value) {
-      if (fitnessRewardsBuilder_ == null) {
-        if (fitnessRewards_ != null) {
-          fitnessRewards_ =
-            POGOProtos.Rpc.FitnessRewardsLogEntry.newBuilder(fitnessRewards_).mergeFrom(value).buildPartial();
-        } else {
-          fitnessRewards_ = value;
-        }
-        onChanged();
-      } else {
-        fitnessRewardsBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-     */
-    public Builder clearFitnessRewards() {
-      if (fitnessRewardsBuilder_ == null) {
-        fitnessRewards_ = null;
-        onChanged();
-      } else {
-        fitnessRewards_ = null;
-        fitnessRewardsBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-     */
-    public POGOProtos.Rpc.FitnessRewardsLogEntry.Builder getFitnessRewardsBuilder() {
-      
-      onChanged();
-      return getFitnessRewardsFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-     */
-    public POGOProtos.Rpc.FitnessRewardsLogEntryOrBuilder getFitnessRewardsOrBuilder() {
-      if (fitnessRewardsBuilder_ != null) {
-        return fitnessRewardsBuilder_.getMessageOrBuilder();
-      } else {
-        return fitnessRewards_ == null ?
-            POGOProtos.Rpc.FitnessRewardsLogEntry.getDefaultInstance() : fitnessRewards_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.FitnessRewardsLogEntry fitness_rewards = 17;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.FitnessRewardsLogEntry, POGOProtos.Rpc.FitnessRewardsLogEntry.Builder, POGOProtos.Rpc.FitnessRewardsLogEntryOrBuilder> 
-        getFitnessRewardsFieldBuilder() {
-      if (fitnessRewardsBuilder_ == null) {
-        fitnessRewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.FitnessRewardsLogEntry, POGOProtos.Rpc.FitnessRewardsLogEntry.Builder, POGOProtos.Rpc.FitnessRewardsLogEntryOrBuilder>(
-                getFitnessRewards(),
-                getParentForChildren(),
-                isClean());
-        fitnessRewards_ = null;
-      }
-      return fitnessRewardsBuilder_;
-    }
-
-    private POGOProtos.Rpc.CombatLogEntry combat_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CombatLogEntry, POGOProtos.Rpc.CombatLogEntry.Builder, POGOProtos.Rpc.CombatLogEntryOrBuilder> combatBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-     * @return Whether the combat field is set.
-     */
-    public boolean hasCombat() {
-      return combatBuilder_ != null || combat_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-     * @return The combat.
-     */
-    public POGOProtos.Rpc.CombatLogEntry getCombat() {
-      if (combatBuilder_ == null) {
-        return combat_ == null ? POGOProtos.Rpc.CombatLogEntry.getDefaultInstance() : combat_;
-      } else {
-        return combatBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-     */
-    public Builder setCombat(POGOProtos.Rpc.CombatLogEntry value) {
-      if (combatBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        combat_ = value;
-        onChanged();
-      } else {
-        combatBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-     */
-    public Builder setCombat(
-        POGOProtos.Rpc.CombatLogEntry.Builder builderForValue) {
-      if (combatBuilder_ == null) {
-        combat_ = builderForValue.build();
-        onChanged();
-      } else {
-        combatBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-     */
-    public Builder mergeCombat(POGOProtos.Rpc.CombatLogEntry value) {
-      if (combatBuilder_ == null) {
-        if (combat_ != null) {
-          combat_ =
-            POGOProtos.Rpc.CombatLogEntry.newBuilder(combat_).mergeFrom(value).buildPartial();
-        } else {
-          combat_ = value;
-        }
-        onChanged();
-      } else {
-        combatBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-     */
-    public Builder clearCombat() {
-      if (combatBuilder_ == null) {
-        combat_ = null;
-        onChanged();
-      } else {
-        combat_ = null;
-        combatBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-     */
-    public POGOProtos.Rpc.CombatLogEntry.Builder getCombatBuilder() {
-      
-      onChanged();
-      return getCombatFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-     */
-    public POGOProtos.Rpc.CombatLogEntryOrBuilder getCombatOrBuilder() {
-      if (combatBuilder_ != null) {
-        return combatBuilder_.getMessageOrBuilder();
-      } else {
-        return combat_ == null ?
-            POGOProtos.Rpc.CombatLogEntry.getDefaultInstance() : combat_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatLogEntry combat = 18;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CombatLogEntry, POGOProtos.Rpc.CombatLogEntry.Builder, POGOProtos.Rpc.CombatLogEntryOrBuilder> 
-        getCombatFieldBuilder() {
-      if (combatBuilder_ == null) {
-        combatBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.CombatLogEntry, POGOProtos.Rpc.CombatLogEntry.Builder, POGOProtos.Rpc.CombatLogEntryOrBuilder>(
-                getCombat(),
-                getParentForChildren(),
-                isClean());
-        combat_ = null;
-      }
-      return combatBuilder_;
-    }
-
-    private POGOProtos.Rpc.PurifyPokemonLogEntry purifyPokemon_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PurifyPokemonLogEntry, POGOProtos.Rpc.PurifyPokemonLogEntry.Builder, POGOProtos.Rpc.PurifyPokemonLogEntryOrBuilder> purifyPokemonBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-     * @return Whether the purifyPokemon field is set.
-     */
-    public boolean hasPurifyPokemon() {
-      return purifyPokemonBuilder_ != null || purifyPokemon_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-     * @return The purifyPokemon.
-     */
-    public POGOProtos.Rpc.PurifyPokemonLogEntry getPurifyPokemon() {
-      if (purifyPokemonBuilder_ == null) {
-        return purifyPokemon_ == null ? POGOProtos.Rpc.PurifyPokemonLogEntry.getDefaultInstance() : purifyPokemon_;
-      } else {
-        return purifyPokemonBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-     */
-    public Builder setPurifyPokemon(POGOProtos.Rpc.PurifyPokemonLogEntry value) {
-      if (purifyPokemonBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        purifyPokemon_ = value;
-        onChanged();
-      } else {
-        purifyPokemonBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-     */
-    public Builder setPurifyPokemon(
-        POGOProtos.Rpc.PurifyPokemonLogEntry.Builder builderForValue) {
-      if (purifyPokemonBuilder_ == null) {
-        purifyPokemon_ = builderForValue.build();
-        onChanged();
-      } else {
-        purifyPokemonBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-     */
-    public Builder mergePurifyPokemon(POGOProtos.Rpc.PurifyPokemonLogEntry value) {
-      if (purifyPokemonBuilder_ == null) {
-        if (purifyPokemon_ != null) {
-          purifyPokemon_ =
-            POGOProtos.Rpc.PurifyPokemonLogEntry.newBuilder(purifyPokemon_).mergeFrom(value).buildPartial();
-        } else {
-          purifyPokemon_ = value;
-        }
-        onChanged();
-      } else {
-        purifyPokemonBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-     */
-    public Builder clearPurifyPokemon() {
-      if (purifyPokemonBuilder_ == null) {
-        purifyPokemon_ = null;
-        onChanged();
-      } else {
-        purifyPokemon_ = null;
-        purifyPokemonBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-     */
-    public POGOProtos.Rpc.PurifyPokemonLogEntry.Builder getPurifyPokemonBuilder() {
-      
-      onChanged();
-      return getPurifyPokemonFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-     */
-    public POGOProtos.Rpc.PurifyPokemonLogEntryOrBuilder getPurifyPokemonOrBuilder() {
-      if (purifyPokemonBuilder_ != null) {
-        return purifyPokemonBuilder_.getMessageOrBuilder();
-      } else {
-        return purifyPokemon_ == null ?
-            POGOProtos.Rpc.PurifyPokemonLogEntry.getDefaultInstance() : purifyPokemon_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PurifyPokemonLogEntry purify_pokemon = 19;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PurifyPokemonLogEntry, POGOProtos.Rpc.PurifyPokemonLogEntry.Builder, POGOProtos.Rpc.PurifyPokemonLogEntryOrBuilder> 
-        getPurifyPokemonFieldBuilder() {
-      if (purifyPokemonBuilder_ == null) {
-        purifyPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PurifyPokemonLogEntry, POGOProtos.Rpc.PurifyPokemonLogEntry.Builder, POGOProtos.Rpc.PurifyPokemonLogEntryOrBuilder>(
-                getPurifyPokemon(),
-                getParentForChildren(),
-                isClean());
-        purifyPokemon_ = null;
-      }
-      return purifyPokemonBuilder_;
-    }
-
-    private POGOProtos.Rpc.InvasionVictoryLogEntry invasionVictory_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.InvasionVictoryLogEntry, POGOProtos.Rpc.InvasionVictoryLogEntry.Builder, POGOProtos.Rpc.InvasionVictoryLogEntryOrBuilder> invasionVictoryBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-     * @return Whether the invasionVictory field is set.
-     */
-    public boolean hasInvasionVictory() {
-      return invasionVictoryBuilder_ != null || invasionVictory_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-     * @return The invasionVictory.
-     */
-    public POGOProtos.Rpc.InvasionVictoryLogEntry getInvasionVictory() {
-      if (invasionVictoryBuilder_ == null) {
-        return invasionVictory_ == null ? POGOProtos.Rpc.InvasionVictoryLogEntry.getDefaultInstance() : invasionVictory_;
-      } else {
-        return invasionVictoryBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-     */
-    public Builder setInvasionVictory(POGOProtos.Rpc.InvasionVictoryLogEntry value) {
-      if (invasionVictoryBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        invasionVictory_ = value;
-        onChanged();
-      } else {
-        invasionVictoryBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-     */
-    public Builder setInvasionVictory(
-        POGOProtos.Rpc.InvasionVictoryLogEntry.Builder builderForValue) {
-      if (invasionVictoryBuilder_ == null) {
-        invasionVictory_ = builderForValue.build();
-        onChanged();
-      } else {
-        invasionVictoryBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-     */
-    public Builder mergeInvasionVictory(POGOProtos.Rpc.InvasionVictoryLogEntry value) {
-      if (invasionVictoryBuilder_ == null) {
-        if (invasionVictory_ != null) {
-          invasionVictory_ =
-            POGOProtos.Rpc.InvasionVictoryLogEntry.newBuilder(invasionVictory_).mergeFrom(value).buildPartial();
-        } else {
-          invasionVictory_ = value;
-        }
-        onChanged();
-      } else {
-        invasionVictoryBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-     */
-    public Builder clearInvasionVictory() {
-      if (invasionVictoryBuilder_ == null) {
-        invasionVictory_ = null;
-        onChanged();
-      } else {
-        invasionVictory_ = null;
-        invasionVictoryBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-     */
-    public POGOProtos.Rpc.InvasionVictoryLogEntry.Builder getInvasionVictoryBuilder() {
-      
-      onChanged();
-      return getInvasionVictoryFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-     */
-    public POGOProtos.Rpc.InvasionVictoryLogEntryOrBuilder getInvasionVictoryOrBuilder() {
-      if (invasionVictoryBuilder_ != null) {
-        return invasionVictoryBuilder_.getMessageOrBuilder();
-      } else {
-        return invasionVictory_ == null ?
-            POGOProtos.Rpc.InvasionVictoryLogEntry.getDefaultInstance() : invasionVictory_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.InvasionVictoryLogEntry invasion_victory = 20;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.InvasionVictoryLogEntry, POGOProtos.Rpc.InvasionVictoryLogEntry.Builder, POGOProtos.Rpc.InvasionVictoryLogEntryOrBuilder> 
-        getInvasionVictoryFieldBuilder() {
-      if (invasionVictoryBuilder_ == null) {
-        invasionVictoryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.InvasionVictoryLogEntry, POGOProtos.Rpc.InvasionVictoryLogEntry.Builder, POGOProtos.Rpc.InvasionVictoryLogEntryOrBuilder>(
-                getInvasionVictory(),
-                getParentForChildren(),
-                isClean());
-        invasionVictory_ = null;
-      }
-      return invasionVictoryBuilder_;
-    }
-
-    private POGOProtos.Rpc.VsSeekerSetLogEntry vsSeekerSet_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.VsSeekerSetLogEntry, POGOProtos.Rpc.VsSeekerSetLogEntry.Builder, POGOProtos.Rpc.VsSeekerSetLogEntryOrBuilder> vsSeekerSetBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-     * @return Whether the vsSeekerSet field is set.
-     */
-    public boolean hasVsSeekerSet() {
-      return vsSeekerSetBuilder_ != null || vsSeekerSet_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-     * @return The vsSeekerSet.
-     */
-    public POGOProtos.Rpc.VsSeekerSetLogEntry getVsSeekerSet() {
-      if (vsSeekerSetBuilder_ == null) {
-        return vsSeekerSet_ == null ? POGOProtos.Rpc.VsSeekerSetLogEntry.getDefaultInstance() : vsSeekerSet_;
-      } else {
-        return vsSeekerSetBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-     */
-    public Builder setVsSeekerSet(POGOProtos.Rpc.VsSeekerSetLogEntry value) {
-      if (vsSeekerSetBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        vsSeekerSet_ = value;
-        onChanged();
-      } else {
-        vsSeekerSetBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-     */
-    public Builder setVsSeekerSet(
-        POGOProtos.Rpc.VsSeekerSetLogEntry.Builder builderForValue) {
-      if (vsSeekerSetBuilder_ == null) {
-        vsSeekerSet_ = builderForValue.build();
-        onChanged();
-      } else {
-        vsSeekerSetBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-     */
-    public Builder mergeVsSeekerSet(POGOProtos.Rpc.VsSeekerSetLogEntry value) {
-      if (vsSeekerSetBuilder_ == null) {
-        if (vsSeekerSet_ != null) {
-          vsSeekerSet_ =
-            POGOProtos.Rpc.VsSeekerSetLogEntry.newBuilder(vsSeekerSet_).mergeFrom(value).buildPartial();
-        } else {
-          vsSeekerSet_ = value;
-        }
-        onChanged();
-      } else {
-        vsSeekerSetBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-     */
-    public Builder clearVsSeekerSet() {
-      if (vsSeekerSetBuilder_ == null) {
-        vsSeekerSet_ = null;
-        onChanged();
-      } else {
-        vsSeekerSet_ = null;
-        vsSeekerSetBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-     */
-    public POGOProtos.Rpc.VsSeekerSetLogEntry.Builder getVsSeekerSetBuilder() {
-      
-      onChanged();
-      return getVsSeekerSetFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-     */
-    public POGOProtos.Rpc.VsSeekerSetLogEntryOrBuilder getVsSeekerSetOrBuilder() {
-      if (vsSeekerSetBuilder_ != null) {
-        return vsSeekerSetBuilder_.getMessageOrBuilder();
-      } else {
-        return vsSeekerSet_ == null ?
-            POGOProtos.Rpc.VsSeekerSetLogEntry.getDefaultInstance() : vsSeekerSet_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerSetLogEntry vs_seeker_set = 21;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.VsSeekerSetLogEntry, POGOProtos.Rpc.VsSeekerSetLogEntry.Builder, POGOProtos.Rpc.VsSeekerSetLogEntryOrBuilder> 
-        getVsSeekerSetFieldBuilder() {
-      if (vsSeekerSetBuilder_ == null) {
-        vsSeekerSetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.VsSeekerSetLogEntry, POGOProtos.Rpc.VsSeekerSetLogEntry.Builder, POGOProtos.Rpc.VsSeekerSetLogEntryOrBuilder>(
-                getVsSeekerSet(),
-                getParentForChildren(),
-                isClean());
-        vsSeekerSet_ = null;
-      }
-      return vsSeekerSetBuilder_;
-    }
-
-    private POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vsSeekerCompleteSeason_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder> vsSeekerCompleteSeasonBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-     * @return Whether the vsSeekerCompleteSeason field is set.
-     */
-    public boolean hasVsSeekerCompleteSeason() {
-      return vsSeekerCompleteSeasonBuilder_ != null || vsSeekerCompleteSeason_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-     * @return The vsSeekerCompleteSeason.
-     */
-    public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry getVsSeekerCompleteSeason() {
-      if (vsSeekerCompleteSeasonBuilder_ == null) {
-        return vsSeekerCompleteSeason_ == null ? POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance() : vsSeekerCompleteSeason_;
-      } else {
-        return vsSeekerCompleteSeasonBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-     */
-    public Builder setVsSeekerCompleteSeason(POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry value) {
-      if (vsSeekerCompleteSeasonBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        vsSeekerCompleteSeason_ = value;
-        onChanged();
-      } else {
-        vsSeekerCompleteSeasonBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-     */
-    public Builder setVsSeekerCompleteSeason(
-        POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder builderForValue) {
-      if (vsSeekerCompleteSeasonBuilder_ == null) {
-        vsSeekerCompleteSeason_ = builderForValue.build();
-        onChanged();
-      } else {
-        vsSeekerCompleteSeasonBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-     */
-    public Builder mergeVsSeekerCompleteSeason(POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry value) {
-      if (vsSeekerCompleteSeasonBuilder_ == null) {
-        if (vsSeekerCompleteSeason_ != null) {
-          vsSeekerCompleteSeason_ =
-            POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.newBuilder(vsSeekerCompleteSeason_).mergeFrom(value).buildPartial();
-        } else {
-          vsSeekerCompleteSeason_ = value;
-        }
-        onChanged();
-      } else {
-        vsSeekerCompleteSeasonBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-     */
-    public Builder clearVsSeekerCompleteSeason() {
-      if (vsSeekerCompleteSeasonBuilder_ == null) {
-        vsSeekerCompleteSeason_ = null;
-        onChanged();
-      } else {
-        vsSeekerCompleteSeason_ = null;
-        vsSeekerCompleteSeasonBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-     */
-    public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder getVsSeekerCompleteSeasonBuilder() {
-      
-      onChanged();
-      return getVsSeekerCompleteSeasonFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-     */
-    public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder getVsSeekerCompleteSeasonOrBuilder() {
-      if (vsSeekerCompleteSeasonBuilder_ != null) {
-        return vsSeekerCompleteSeasonBuilder_.getMessageOrBuilder();
-      } else {
-        return vsSeekerCompleteSeason_ == null ?
-            POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance() : vsSeekerCompleteSeason_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder> 
-        getVsSeekerCompleteSeasonFieldBuilder() {
-      if (vsSeekerCompleteSeasonBuilder_ == null) {
-        vsSeekerCompleteSeasonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder>(
-                getVsSeekerCompleteSeason(),
-                getParentForChildren(),
-                isClean());
-        vsSeekerCompleteSeason_ = null;
-      }
-      return vsSeekerCompleteSeasonBuilder_;
-    }
-
-    private POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vsSeekerWinRewards_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.VsSeekerWinRewardsLogEntry, POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder, POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder> vsSeekerWinRewardsBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-     * @return Whether the vsSeekerWinRewards field is set.
-     */
-    public boolean hasVsSeekerWinRewards() {
-      return vsSeekerWinRewardsBuilder_ != null || vsSeekerWinRewards_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-     * @return The vsSeekerWinRewards.
-     */
-    public POGOProtos.Rpc.VsSeekerWinRewardsLogEntry getVsSeekerWinRewards() {
-      if (vsSeekerWinRewardsBuilder_ == null) {
-        return vsSeekerWinRewards_ == null ? POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.getDefaultInstance() : vsSeekerWinRewards_;
-      } else {
-        return vsSeekerWinRewardsBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-     */
-    public Builder setVsSeekerWinRewards(POGOProtos.Rpc.VsSeekerWinRewardsLogEntry value) {
-      if (vsSeekerWinRewardsBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        vsSeekerWinRewards_ = value;
-        onChanged();
-      } else {
-        vsSeekerWinRewardsBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-     */
-    public Builder setVsSeekerWinRewards(
-        POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder builderForValue) {
-      if (vsSeekerWinRewardsBuilder_ == null) {
-        vsSeekerWinRewards_ = builderForValue.build();
-        onChanged();
-      } else {
-        vsSeekerWinRewardsBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-     */
-    public Builder mergeVsSeekerWinRewards(POGOProtos.Rpc.VsSeekerWinRewardsLogEntry value) {
-      if (vsSeekerWinRewardsBuilder_ == null) {
-        if (vsSeekerWinRewards_ != null) {
-          vsSeekerWinRewards_ =
-            POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.newBuilder(vsSeekerWinRewards_).mergeFrom(value).buildPartial();
-        } else {
-          vsSeekerWinRewards_ = value;
-        }
-        onChanged();
-      } else {
-        vsSeekerWinRewardsBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-     */
-    public Builder clearVsSeekerWinRewards() {
-      if (vsSeekerWinRewardsBuilder_ == null) {
-        vsSeekerWinRewards_ = null;
-        onChanged();
-      } else {
-        vsSeekerWinRewards_ = null;
-        vsSeekerWinRewardsBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-     */
-    public POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder getVsSeekerWinRewardsBuilder() {
-      
-      onChanged();
-      return getVsSeekerWinRewardsFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-     */
-    public POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder getVsSeekerWinRewardsOrBuilder() {
-      if (vsSeekerWinRewardsBuilder_ != null) {
-        return vsSeekerWinRewardsBuilder_.getMessageOrBuilder();
-      } else {
-        return vsSeekerWinRewards_ == null ?
-            POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.getDefaultInstance() : vsSeekerWinRewards_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.VsSeekerWinRewardsLogEntry vs_seeker_win_rewards = 23;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.VsSeekerWinRewardsLogEntry, POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder, POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder> 
-        getVsSeekerWinRewardsFieldBuilder() {
-      if (vsSeekerWinRewardsBuilder_ == null) {
-        vsSeekerWinRewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.VsSeekerWinRewardsLogEntry, POGOProtos.Rpc.VsSeekerWinRewardsLogEntry.Builder, POGOProtos.Rpc.VsSeekerWinRewardsLogEntryOrBuilder>(
-                getVsSeekerWinRewards(),
-                getParentForChildren(),
-                isClean());
-        vsSeekerWinRewards_ = null;
-      }
-      return vsSeekerWinRewardsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

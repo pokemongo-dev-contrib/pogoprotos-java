@@ -8,17 +8,6 @@ public interface QuestRewardProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.QuestRewardProto.Type type = 1;</code>
-   * @return The enum numeric value on the wire for type.
-   */
-  int getTypeValue();
-  /**
-   * <code>.POGOProtos.Rpc.QuestRewardProto.Type type = 1;</code>
-   * @return The type.
-   */
-  POGOProtos.Rpc.QuestRewardProto.Type getType();
-
-  /**
    * <code>int32 exp = 2;</code>
    * @return The exp.
    */
@@ -119,4 +108,17 @@ public interface QuestRewardProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.StickerRewardProto sticker = 12;</code>
    */
   POGOProtos.Rpc.StickerRewardProtoOrBuilder getStickerOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.QuestRewardProto.Type type = 1;</code>
+   * @return The enum numeric value on the wire for type.
+   */
+  int getTypeValue();
+  /**
+   * <code>.POGOProtos.Rpc.QuestRewardProto.Type type = 1;</code>
+   * @return The type.
+   */
+  POGOProtos.Rpc.QuestRewardProto.Type getType();
+
+  public POGOProtos.Rpc.QuestRewardProto.RewardCase getRewardCase();
 }

@@ -31,14 +31,14 @@ public final class SetAvatarResponseOuterClass {
       "\n7POGOProtos/Networking/Responses/SetAva" +
       "tarResponse.proto\022\037POGOProtos.Networking" +
       ".Responses\032 POGOProtos/Data/PlayerData.p" +
-      "roto\"\233\002\n\021SetAvatarResponse\022I\n\006status\030\001 \001" +
+      "roto\"\255\002\n\021SetAvatarResponse\022I\n\006status\030\001 \001" +
       "(\01629.POGOProtos.Networking.Responses.Set" +
       "AvatarResponse.Status\0220\n\013player_data\030\002 \001" +
-      "(\0132\033.POGOProtos.Data.PlayerData\"\210\001\n\006Stat" +
+      "(\0132\033.POGOProtos.Data.PlayerData\"\232\001\n\006Stat" +
       "us\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\026\n\022AVATAR_ALR" +
       "EADY_SET\020\002\022\013\n\007FAILURE\020\003\022\024\n\020SLOT_NOT_ALLO" +
       "WED\020\004\022\022\n\016ITEM_NOT_OWNED\020\005\022\027\n\023INVALID_AVA" +
-      "TAR_TYPE\020\006B\002P\001b\006proto3"
+      "TAR_TYPE\020\006\022\020\n\014AVATAR_RESET\020\007B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

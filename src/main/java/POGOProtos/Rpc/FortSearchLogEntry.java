@@ -25,6 +25,7 @@ private static final long serialVersionUID = 0L;
     bonusItems_ = java.util.Collections.emptyList();
     teamBonusItems_ = java.util.Collections.emptyList();
     giftBoxes_ = java.util.Collections.emptyList();
+    stickers_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -135,6 +136,15 @@ private static final long serialVersionUID = 0L;
                 input.readMessage(POGOProtos.Rpc.GiftBoxProto.parser(), extensionRegistry));
             break;
           }
+          case 90: {
+            if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+              stickers_ = new java.util.ArrayList<POGOProtos.Rpc.LootItemProto>();
+              mutable_bitField0_ |= 0x00000040;
+            }
+            stickers_.add(
+                input.readMessage(POGOProtos.Rpc.LootItemProto.parser(), extensionRegistry));
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -167,6 +177,9 @@ private static final long serialVersionUID = 0L;
       }
       if (((mutable_bitField0_ & 0x00000020) != 0)) {
         giftBoxes_ = java.util.Collections.unmodifiableList(giftBoxes_);
+      }
+      if (((mutable_bitField0_ & 0x00000040) != 0)) {
+        stickers_ = java.util.Collections.unmodifiableList(stickers_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -583,6 +596,41 @@ private static final long serialVersionUID = 0L;
     return giftBoxes_.get(index);
   }
 
+  public static final int STICKERS_FIELD_NUMBER = 11;
+  private java.util.List<POGOProtos.Rpc.LootItemProto> stickers_;
+  /**
+   * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+   */
+  public java.util.List<POGOProtos.Rpc.LootItemProto> getStickersList() {
+    return stickers_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+   */
+  public java.util.List<? extends POGOProtos.Rpc.LootItemProtoOrBuilder> 
+      getStickersOrBuilderList() {
+    return stickers_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+   */
+  public int getStickersCount() {
+    return stickers_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+   */
+  public POGOProtos.Rpc.LootItemProto getStickers(int index) {
+    return stickers_.get(index);
+  }
+  /**
+   * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+   */
+  public POGOProtos.Rpc.LootItemProtoOrBuilder getStickersOrBuilder(
+      int index) {
+    return stickers_.get(index);
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -626,6 +674,9 @@ private static final long serialVersionUID = 0L;
     }
     for (int i = 0; i < giftBoxes_.size(); i++) {
       output.writeMessage(10, giftBoxes_.get(i));
+    }
+    for (int i = 0; i < stickers_.size(); i++) {
+      output.writeMessage(11, stickers_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -675,6 +726,10 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(10, giftBoxes_.get(i));
     }
+    for (int i = 0; i < stickers_.size(); i++) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(11, stickers_.get(i));
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -708,6 +763,8 @@ private static final long serialVersionUID = 0L;
         .equals(other.getTeamBonusItemsList())) return false;
     if (!getGiftBoxesList()
         .equals(other.getGiftBoxesList())) return false;
+    if (!getStickersList()
+        .equals(other.getStickersList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -750,6 +807,10 @@ private static final long serialVersionUID = 0L;
     if (getGiftBoxesCount() > 0) {
       hash = (37 * hash) + GIFT_BOXES_FIELD_NUMBER;
       hash = (53 * hash) + getGiftBoxesList().hashCode();
+    }
+    if (getStickersCount() > 0) {
+      hash = (37 * hash) + STICKERS_FIELD_NUMBER;
+      hash = (53 * hash) + getStickersList().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -885,6 +946,7 @@ private static final long serialVersionUID = 0L;
         getBonusItemsFieldBuilder();
         getTeamBonusItemsFieldBuilder();
         getGiftBoxesFieldBuilder();
+        getStickersFieldBuilder();
       }
     }
     @java.lang.Override
@@ -933,6 +995,12 @@ private static final long serialVersionUID = 0L;
         bitField0_ = (bitField0_ & ~0x00000020);
       } else {
         giftBoxesBuilder_.clear();
+      }
+      if (stickersBuilder_ == null) {
+        stickers_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000040);
+      } else {
+        stickersBuilder_.clear();
       }
       return this;
     }
@@ -1018,6 +1086,15 @@ private static final long serialVersionUID = 0L;
         result.giftBoxes_ = giftBoxes_;
       } else {
         result.giftBoxes_ = giftBoxesBuilder_.build();
+      }
+      if (stickersBuilder_ == null) {
+        if (((bitField0_ & 0x00000040) != 0)) {
+          stickers_ = java.util.Collections.unmodifiableList(stickers_);
+          bitField0_ = (bitField0_ & ~0x00000040);
+        }
+        result.stickers_ = stickers_;
+      } else {
+        result.stickers_ = stickersBuilder_.build();
       }
       onBuilt();
       return result;
@@ -1233,6 +1310,32 @@ private static final long serialVersionUID = 0L;
                  getGiftBoxesFieldBuilder() : null;
           } else {
             giftBoxesBuilder_.addAllMessages(other.giftBoxes_);
+          }
+        }
+      }
+      if (stickersBuilder_ == null) {
+        if (!other.stickers_.isEmpty()) {
+          if (stickers_.isEmpty()) {
+            stickers_ = other.stickers_;
+            bitField0_ = (bitField0_ & ~0x00000040);
+          } else {
+            ensureStickersIsMutable();
+            stickers_.addAll(other.stickers_);
+          }
+          onChanged();
+        }
+      } else {
+        if (!other.stickers_.isEmpty()) {
+          if (stickersBuilder_.isEmpty()) {
+            stickersBuilder_.dispose();
+            stickersBuilder_ = null;
+            stickers_ = other.stickers_;
+            bitField0_ = (bitField0_ & ~0x00000040);
+            stickersBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getStickersFieldBuilder() : null;
+          } else {
+            stickersBuilder_.addAllMessages(other.stickers_);
           }
         }
       }
@@ -2914,6 +3017,246 @@ private static final long serialVersionUID = 0L;
         giftBoxes_ = null;
       }
       return giftBoxesBuilder_;
+    }
+
+    private java.util.List<POGOProtos.Rpc.LootItemProto> stickers_ =
+      java.util.Collections.emptyList();
+    private void ensureStickersIsMutable() {
+      if (!((bitField0_ & 0x00000040) != 0)) {
+        stickers_ = new java.util.ArrayList<POGOProtos.Rpc.LootItemProto>(stickers_);
+        bitField0_ |= 0x00000040;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Rpc.LootItemProto, POGOProtos.Rpc.LootItemProto.Builder, POGOProtos.Rpc.LootItemProtoOrBuilder> stickersBuilder_;
+
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public java.util.List<POGOProtos.Rpc.LootItemProto> getStickersList() {
+      if (stickersBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(stickers_);
+      } else {
+        return stickersBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public int getStickersCount() {
+      if (stickersBuilder_ == null) {
+        return stickers_.size();
+      } else {
+        return stickersBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public POGOProtos.Rpc.LootItemProto getStickers(int index) {
+      if (stickersBuilder_ == null) {
+        return stickers_.get(index);
+      } else {
+        return stickersBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public Builder setStickers(
+        int index, POGOProtos.Rpc.LootItemProto value) {
+      if (stickersBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureStickersIsMutable();
+        stickers_.set(index, value);
+        onChanged();
+      } else {
+        stickersBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public Builder setStickers(
+        int index, POGOProtos.Rpc.LootItemProto.Builder builderForValue) {
+      if (stickersBuilder_ == null) {
+        ensureStickersIsMutable();
+        stickers_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        stickersBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public Builder addStickers(POGOProtos.Rpc.LootItemProto value) {
+      if (stickersBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureStickersIsMutable();
+        stickers_.add(value);
+        onChanged();
+      } else {
+        stickersBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public Builder addStickers(
+        int index, POGOProtos.Rpc.LootItemProto value) {
+      if (stickersBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureStickersIsMutable();
+        stickers_.add(index, value);
+        onChanged();
+      } else {
+        stickersBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public Builder addStickers(
+        POGOProtos.Rpc.LootItemProto.Builder builderForValue) {
+      if (stickersBuilder_ == null) {
+        ensureStickersIsMutable();
+        stickers_.add(builderForValue.build());
+        onChanged();
+      } else {
+        stickersBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public Builder addStickers(
+        int index, POGOProtos.Rpc.LootItemProto.Builder builderForValue) {
+      if (stickersBuilder_ == null) {
+        ensureStickersIsMutable();
+        stickers_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        stickersBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public Builder addAllStickers(
+        java.lang.Iterable<? extends POGOProtos.Rpc.LootItemProto> values) {
+      if (stickersBuilder_ == null) {
+        ensureStickersIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, stickers_);
+        onChanged();
+      } else {
+        stickersBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public Builder clearStickers() {
+      if (stickersBuilder_ == null) {
+        stickers_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000040);
+        onChanged();
+      } else {
+        stickersBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public Builder removeStickers(int index) {
+      if (stickersBuilder_ == null) {
+        ensureStickersIsMutable();
+        stickers_.remove(index);
+        onChanged();
+      } else {
+        stickersBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public POGOProtos.Rpc.LootItemProto.Builder getStickersBuilder(
+        int index) {
+      return getStickersFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public POGOProtos.Rpc.LootItemProtoOrBuilder getStickersOrBuilder(
+        int index) {
+      if (stickersBuilder_ == null) {
+        return stickers_.get(index);  } else {
+        return stickersBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public java.util.List<? extends POGOProtos.Rpc.LootItemProtoOrBuilder> 
+         getStickersOrBuilderList() {
+      if (stickersBuilder_ != null) {
+        return stickersBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(stickers_);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public POGOProtos.Rpc.LootItemProto.Builder addStickersBuilder() {
+      return getStickersFieldBuilder().addBuilder(
+          POGOProtos.Rpc.LootItemProto.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public POGOProtos.Rpc.LootItemProto.Builder addStickersBuilder(
+        int index) {
+      return getStickersFieldBuilder().addBuilder(
+          index, POGOProtos.Rpc.LootItemProto.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.LootItemProto stickers = 11;</code>
+     */
+    public java.util.List<POGOProtos.Rpc.LootItemProto.Builder> 
+         getStickersBuilderList() {
+      return getStickersFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Rpc.LootItemProto, POGOProtos.Rpc.LootItemProto.Builder, POGOProtos.Rpc.LootItemProtoOrBuilder> 
+        getStickersFieldBuilder() {
+      if (stickersBuilder_ == null) {
+        stickersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            POGOProtos.Rpc.LootItemProto, POGOProtos.Rpc.LootItemProto.Builder, POGOProtos.Rpc.LootItemProtoOrBuilder>(
+                stickers_,
+                ((bitField0_ & 0x00000040) != 0),
+                getParentForChildren(),
+                isClean());
+        stickers_ = null;
+      }
+      return stickersBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

@@ -39,4 +39,6 @@ public interface FitnessReportProtoOrBuilder extends
    * @return The gameData.
    */
   com.google.protobuf.ByteString getGameData();
+
+  public POGOProtos.Rpc.FitnessReportProto.WindowCase getWindowCase();
 }

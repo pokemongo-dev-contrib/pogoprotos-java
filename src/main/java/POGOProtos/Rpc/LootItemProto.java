@@ -16,10 +16,6 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private LootItemProto() {
-    item_ = 0;
-    pokemonCandy_ = 0;
-    avatarTemplateId_ = "";
-    stickerId_ = "";
   }
 
   @java.lang.Override
@@ -54,24 +50,24 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
             int rawValue = input.readEnum();
-
-            item_ = rawValue;
+            typeCase_ = 1;
+            type_ = rawValue;
             break;
           }
           case 16: {
-
-            stardust_ = input.readBool();
+            typeCase_ = 2;
+            type_ = input.readBool();
             break;
           }
           case 24: {
-
-            pokecoin_ = input.readBool();
+            typeCase_ = 3;
+            type_ = input.readBool();
             break;
           }
           case 32: {
             int rawValue = input.readEnum();
-
-            pokemonCandy_ = rawValue;
+            typeCase_ = 4;
+            type_ = rawValue;
             break;
           }
           case 40: {
@@ -80,33 +76,34 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 48: {
-
-            experience_ = input.readBool();
+            typeCase_ = 6;
+            type_ = input.readBool();
             break;
           }
           case 58: {
             POGOProtos.Rpc.PokemonProto.Builder subBuilder = null;
-            if (pokemonEgg_ != null) {
-              subBuilder = pokemonEgg_.toBuilder();
+            if (typeCase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.PokemonProto) type_).toBuilder();
             }
-            pokemonEgg_ = input.readMessage(POGOProtos.Rpc.PokemonProto.parser(), extensionRegistry);
+            type_ =
+                input.readMessage(POGOProtos.Rpc.PokemonProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(pokemonEgg_);
-              pokemonEgg_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.PokemonProto) type_);
+              type_ = subBuilder.buildPartial();
             }
-
+            typeCase_ = 7;
             break;
           }
           case 66: {
             java.lang.String s = input.readStringRequireUtf8();
-
-            avatarTemplateId_ = s;
+            typeCase_ = 8;
+            type_ = s;
             break;
           }
           case 74: {
             java.lang.String s = input.readStringRequireUtf8();
-
-            stickerId_ = s;
+            typeCase_ = 9;
+            type_ = s;
             break;
           }
           default: {
@@ -141,62 +138,261 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.LootItemProto.class, POGOProtos.Rpc.LootItemProto.Builder.class);
   }
 
+  private int typeCase_ = 0;
+  private java.lang.Object type_;
+  public enum TypeCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    ITEM(1),
+    STARDUST(2),
+    POKECOIN(3),
+    POKEMON_CANDY(4),
+    EXPERIENCE(6),
+    POKEMON_EGG(7),
+    AVATAR_TEMPLATE_ID(8),
+    STICKER_ID(9),
+    TYPE_NOT_SET(0);
+    private final int value;
+    private TypeCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static TypeCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static TypeCase forNumber(int value) {
+      switch (value) {
+        case 1: return ITEM;
+        case 2: return STARDUST;
+        case 3: return POKECOIN;
+        case 4: return POKEMON_CANDY;
+        case 6: return EXPERIENCE;
+        case 7: return POKEMON_EGG;
+        case 8: return AVATAR_TEMPLATE_ID;
+        case 9: return STICKER_ID;
+        case 0: return TYPE_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public TypeCase
+  getTypeCase() {
+    return TypeCase.forNumber(
+        typeCase_);
+  }
+
   public static final int ITEM_FIELD_NUMBER = 1;
-  private int item_;
   /**
    * <code>.POGOProtos.Rpc.Item item = 1;</code>
    * @return The enum numeric value on the wire for item.
    */
   public int getItemValue() {
-    return item_;
+    if (typeCase_ == 1) {
+      return (java.lang.Integer) type_;
+    }
+    return 0;
   }
   /**
    * <code>.POGOProtos.Rpc.Item item = 1;</code>
    * @return The item.
    */
   public POGOProtos.Rpc.Item getItem() {
-    @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(item_);
-    return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+    if (typeCase_ == 1) {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(
+          (java.lang.Integer) type_);
+      return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+    }
+    return POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN;
   }
 
   public static final int STARDUST_FIELD_NUMBER = 2;
-  private boolean stardust_;
   /**
    * <code>bool stardust = 2;</code>
    * @return The stardust.
    */
   public boolean getStardust() {
-    return stardust_;
+    if (typeCase_ == 2) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int POKECOIN_FIELD_NUMBER = 3;
-  private boolean pokecoin_;
   /**
    * <code>bool pokecoin = 3;</code>
    * @return The pokecoin.
    */
   public boolean getPokecoin() {
-    return pokecoin_;
+    if (typeCase_ == 3) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
   }
 
   public static final int POKEMON_CANDY_FIELD_NUMBER = 4;
-  private int pokemonCandy_;
   /**
    * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_candy = 4;</code>
    * @return The enum numeric value on the wire for pokemonCandy.
    */
   public int getPokemonCandyValue() {
-    return pokemonCandy_;
+    if (typeCase_ == 4) {
+      return (java.lang.Integer) type_;
+    }
+    return 0;
   }
   /**
    * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_candy = 4;</code>
    * @return The pokemonCandy.
    */
   public POGOProtos.Rpc.HoloPokemonId getPokemonCandy() {
-    @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(pokemonCandy_);
-    return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+    if (typeCase_ == 4) {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
+          (java.lang.Integer) type_);
+      return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+    }
+    return POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET;
+  }
+
+  public static final int EXPERIENCE_FIELD_NUMBER = 6;
+  /**
+   * <code>bool experience = 6;</code>
+   * @return The experience.
+   */
+  public boolean getExperience() {
+    if (typeCase_ == 6) {
+      return (java.lang.Boolean) type_;
+    }
+    return false;
+  }
+
+  public static final int POKEMON_EGG_FIELD_NUMBER = 7;
+  /**
+   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+   * @return Whether the pokemonEgg field is set.
+   */
+  public boolean hasPokemonEgg() {
+    return typeCase_ == 7;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+   * @return The pokemonEgg.
+   */
+  public POGOProtos.Rpc.PokemonProto getPokemonEgg() {
+    if (typeCase_ == 7) {
+       return (POGOProtos.Rpc.PokemonProto) type_;
+    }
+    return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+   */
+  public POGOProtos.Rpc.PokemonProtoOrBuilder getPokemonEggOrBuilder() {
+    if (typeCase_ == 7) {
+       return (POGOProtos.Rpc.PokemonProto) type_;
+    }
+    return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+  }
+
+  public static final int AVATAR_TEMPLATE_ID_FIELD_NUMBER = 8;
+  /**
+   * <code>string avatar_template_id = 8;</code>
+   * @return The avatarTemplateId.
+   */
+  public java.lang.String getAvatarTemplateId() {
+    java.lang.Object ref = "";
+    if (typeCase_ == 8) {
+      ref = type_;
+    }
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      if (typeCase_ == 8) {
+        type_ = s;
+      }
+      return s;
+    }
+  }
+  /**
+   * <code>string avatar_template_id = 8;</code>
+   * @return The bytes for avatarTemplateId.
+   */
+  public com.google.protobuf.ByteString
+      getAvatarTemplateIdBytes() {
+    java.lang.Object ref = "";
+    if (typeCase_ == 8) {
+      ref = type_;
+    }
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      if (typeCase_ == 8) {
+        type_ = b;
+      }
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int STICKER_ID_FIELD_NUMBER = 9;
+  /**
+   * <code>string sticker_id = 9;</code>
+   * @return The stickerId.
+   */
+  public java.lang.String getStickerId() {
+    java.lang.Object ref = "";
+    if (typeCase_ == 9) {
+      ref = type_;
+    }
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      if (typeCase_ == 9) {
+        type_ = s;
+      }
+      return s;
+    }
+  }
+  /**
+   * <code>string sticker_id = 9;</code>
+   * @return The bytes for stickerId.
+   */
+  public com.google.protobuf.ByteString
+      getStickerIdBytes() {
+    java.lang.Object ref = "";
+    if (typeCase_ == 9) {
+      ref = type_;
+    }
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      if (typeCase_ == 9) {
+        type_ = b;
+      }
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
   }
 
   public static final int COUNT_FIELD_NUMBER = 5;
@@ -207,111 +403,6 @@ private static final long serialVersionUID = 0L;
    */
   public int getCount() {
     return count_;
-  }
-
-  public static final int EXPERIENCE_FIELD_NUMBER = 6;
-  private boolean experience_;
-  /**
-   * <code>bool experience = 6;</code>
-   * @return The experience.
-   */
-  public boolean getExperience() {
-    return experience_;
-  }
-
-  public static final int POKEMON_EGG_FIELD_NUMBER = 7;
-  private POGOProtos.Rpc.PokemonProto pokemonEgg_;
-  /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-   * @return Whether the pokemonEgg field is set.
-   */
-  public boolean hasPokemonEgg() {
-    return pokemonEgg_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-   * @return The pokemonEgg.
-   */
-  public POGOProtos.Rpc.PokemonProto getPokemonEgg() {
-    return pokemonEgg_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : pokemonEgg_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-   */
-  public POGOProtos.Rpc.PokemonProtoOrBuilder getPokemonEggOrBuilder() {
-    return getPokemonEgg();
-  }
-
-  public static final int AVATAR_TEMPLATE_ID_FIELD_NUMBER = 8;
-  private volatile java.lang.Object avatarTemplateId_;
-  /**
-   * <code>string avatar_template_id = 8;</code>
-   * @return The avatarTemplateId.
-   */
-  public java.lang.String getAvatarTemplateId() {
-    java.lang.Object ref = avatarTemplateId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      avatarTemplateId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string avatar_template_id = 8;</code>
-   * @return The bytes for avatarTemplateId.
-   */
-  public com.google.protobuf.ByteString
-      getAvatarTemplateIdBytes() {
-    java.lang.Object ref = avatarTemplateId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      avatarTemplateId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int STICKER_ID_FIELD_NUMBER = 9;
-  private volatile java.lang.Object stickerId_;
-  /**
-   * <code>string sticker_id = 9;</code>
-   * @return The stickerId.
-   */
-  public java.lang.String getStickerId() {
-    java.lang.Object ref = stickerId_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      stickerId_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string sticker_id = 9;</code>
-   * @return The bytes for stickerId.
-   */
-  public com.google.protobuf.ByteString
-      getStickerIdBytes() {
-    java.lang.Object ref = stickerId_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      stickerId_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
   }
 
   private byte memoizedIsInitialized = -1;
@@ -328,32 +419,35 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
-      output.writeEnum(1, item_);
+    if (typeCase_ == 1) {
+      output.writeEnum(1, ((java.lang.Integer) type_));
     }
-    if (stardust_ != false) {
-      output.writeBool(2, stardust_);
+    if (typeCase_ == 2) {
+      output.writeBool(
+          2, (boolean)((java.lang.Boolean) type_));
     }
-    if (pokecoin_ != false) {
-      output.writeBool(3, pokecoin_);
+    if (typeCase_ == 3) {
+      output.writeBool(
+          3, (boolean)((java.lang.Boolean) type_));
     }
-    if (pokemonCandy_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
-      output.writeEnum(4, pokemonCandy_);
+    if (typeCase_ == 4) {
+      output.writeEnum(4, ((java.lang.Integer) type_));
     }
     if (count_ != 0) {
       output.writeInt32(5, count_);
     }
-    if (experience_ != false) {
-      output.writeBool(6, experience_);
+    if (typeCase_ == 6) {
+      output.writeBool(
+          6, (boolean)((java.lang.Boolean) type_));
     }
-    if (pokemonEgg_ != null) {
-      output.writeMessage(7, getPokemonEgg());
+    if (typeCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.PokemonProto) type_);
     }
-    if (!getAvatarTemplateIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, avatarTemplateId_);
+    if (typeCase_ == 8) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, type_);
     }
-    if (!getStickerIdBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, stickerId_);
+    if (typeCase_ == 9) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, type_);
     }
     unknownFields.writeTo(output);
   }
@@ -364,39 +458,42 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (typeCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, item_);
+        .computeEnumSize(1, ((java.lang.Integer) type_));
     }
-    if (stardust_ != false) {
+    if (typeCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(2, stardust_);
+        .computeBoolSize(
+            2, (boolean)((java.lang.Boolean) type_));
     }
-    if (pokecoin_ != false) {
+    if (typeCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(3, pokecoin_);
+        .computeBoolSize(
+            3, (boolean)((java.lang.Boolean) type_));
     }
-    if (pokemonCandy_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (typeCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(4, pokemonCandy_);
+        .computeEnumSize(4, ((java.lang.Integer) type_));
     }
     if (count_ != 0) {
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(5, count_);
     }
-    if (experience_ != false) {
+    if (typeCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(6, experience_);
+        .computeBoolSize(
+            6, (boolean)((java.lang.Boolean) type_));
     }
-    if (pokemonEgg_ != null) {
+    if (typeCase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getPokemonEgg());
+        .computeMessageSize(7, (POGOProtos.Rpc.PokemonProto) type_);
     }
-    if (!getAvatarTemplateIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, avatarTemplateId_);
+    if (typeCase_ == 8) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, type_);
     }
-    if (!getStickerIdBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, stickerId_);
+    if (typeCase_ == 9) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, type_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -413,25 +510,45 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.LootItemProto other = (POGOProtos.Rpc.LootItemProto) obj;
 
-    if (item_ != other.item_) return false;
-    if (getStardust()
-        != other.getStardust()) return false;
-    if (getPokecoin()
-        != other.getPokecoin()) return false;
-    if (pokemonCandy_ != other.pokemonCandy_) return false;
     if (getCount()
         != other.getCount()) return false;
-    if (getExperience()
-        != other.getExperience()) return false;
-    if (hasPokemonEgg() != other.hasPokemonEgg()) return false;
-    if (hasPokemonEgg()) {
-      if (!getPokemonEgg()
-          .equals(other.getPokemonEgg())) return false;
+    if (!getTypeCase().equals(other.getTypeCase())) return false;
+    switch (typeCase_) {
+      case 1:
+        if (getItemValue()
+            != other.getItemValue()) return false;
+        break;
+      case 2:
+        if (getStardust()
+            != other.getStardust()) return false;
+        break;
+      case 3:
+        if (getPokecoin()
+            != other.getPokecoin()) return false;
+        break;
+      case 4:
+        if (getPokemonCandyValue()
+            != other.getPokemonCandyValue()) return false;
+        break;
+      case 6:
+        if (getExperience()
+            != other.getExperience()) return false;
+        break;
+      case 7:
+        if (!getPokemonEgg()
+            .equals(other.getPokemonEgg())) return false;
+        break;
+      case 8:
+        if (!getAvatarTemplateId()
+            .equals(other.getAvatarTemplateId())) return false;
+        break;
+      case 9:
+        if (!getStickerId()
+            .equals(other.getStickerId())) return false;
+        break;
+      case 0:
+      default:
     }
-    if (!getAvatarTemplateId()
-        .equals(other.getAvatarTemplateId())) return false;
-    if (!getStickerId()
-        .equals(other.getStickerId())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -443,29 +560,47 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + ITEM_FIELD_NUMBER;
-    hash = (53 * hash) + item_;
-    hash = (37 * hash) + STARDUST_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getStardust());
-    hash = (37 * hash) + POKECOIN_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getPokecoin());
-    hash = (37 * hash) + POKEMON_CANDY_FIELD_NUMBER;
-    hash = (53 * hash) + pokemonCandy_;
     hash = (37 * hash) + COUNT_FIELD_NUMBER;
     hash = (53 * hash) + getCount();
-    hash = (37 * hash) + EXPERIENCE_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getExperience());
-    if (hasPokemonEgg()) {
-      hash = (37 * hash) + POKEMON_EGG_FIELD_NUMBER;
-      hash = (53 * hash) + getPokemonEgg().hashCode();
+    switch (typeCase_) {
+      case 1:
+        hash = (37 * hash) + ITEM_FIELD_NUMBER;
+        hash = (53 * hash) + getItemValue();
+        break;
+      case 2:
+        hash = (37 * hash) + STARDUST_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getStardust());
+        break;
+      case 3:
+        hash = (37 * hash) + POKECOIN_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getPokecoin());
+        break;
+      case 4:
+        hash = (37 * hash) + POKEMON_CANDY_FIELD_NUMBER;
+        hash = (53 * hash) + getPokemonCandyValue();
+        break;
+      case 6:
+        hash = (37 * hash) + EXPERIENCE_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getExperience());
+        break;
+      case 7:
+        hash = (37 * hash) + POKEMON_EGG_FIELD_NUMBER;
+        hash = (53 * hash) + getPokemonEgg().hashCode();
+        break;
+      case 8:
+        hash = (37 * hash) + AVATAR_TEMPLATE_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getAvatarTemplateId().hashCode();
+        break;
+      case 9:
+        hash = (37 * hash) + STICKER_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getStickerId().hashCode();
+        break;
+      case 0:
+      default:
     }
-    hash = (37 * hash) + AVATAR_TEMPLATE_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getAvatarTemplateId().hashCode();
-    hash = (37 * hash) + STICKER_ID_FIELD_NUMBER;
-    hash = (53 * hash) + getStickerId().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -599,28 +734,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      item_ = 0;
-
-      stardust_ = false;
-
-      pokecoin_ = false;
-
-      pokemonCandy_ = 0;
-
       count_ = 0;
 
-      experience_ = false;
-
-      if (pokemonEggBuilder_ == null) {
-        pokemonEgg_ = null;
-      } else {
-        pokemonEgg_ = null;
-        pokemonEggBuilder_ = null;
-      }
-      avatarTemplateId_ = "";
-
-      stickerId_ = "";
-
+      typeCase_ = 0;
+      type_ = null;
       return this;
     }
 
@@ -647,19 +764,36 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.LootItemProto buildPartial() {
       POGOProtos.Rpc.LootItemProto result = new POGOProtos.Rpc.LootItemProto(this);
-      result.item_ = item_;
-      result.stardust_ = stardust_;
-      result.pokecoin_ = pokecoin_;
-      result.pokemonCandy_ = pokemonCandy_;
-      result.count_ = count_;
-      result.experience_ = experience_;
-      if (pokemonEggBuilder_ == null) {
-        result.pokemonEgg_ = pokemonEgg_;
-      } else {
-        result.pokemonEgg_ = pokemonEggBuilder_.build();
+      if (typeCase_ == 1) {
+        result.type_ = type_;
       }
-      result.avatarTemplateId_ = avatarTemplateId_;
-      result.stickerId_ = stickerId_;
+      if (typeCase_ == 2) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 3) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 4) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 6) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 7) {
+        if (pokemonEggBuilder_ == null) {
+          result.type_ = type_;
+        } else {
+          result.type_ = pokemonEggBuilder_.build();
+        }
+      }
+      if (typeCase_ == 8) {
+        result.type_ = type_;
+      }
+      if (typeCase_ == 9) {
+        result.type_ = type_;
+      }
+      result.count_ = count_;
+      result.typeCase_ = typeCase_;
       onBuilt();
       return result;
     }
@@ -708,34 +842,49 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.LootItemProto other) {
       if (other == POGOProtos.Rpc.LootItemProto.getDefaultInstance()) return this;
-      if (other.item_ != 0) {
-        setItemValue(other.getItemValue());
-      }
-      if (other.getStardust() != false) {
-        setStardust(other.getStardust());
-      }
-      if (other.getPokecoin() != false) {
-        setPokecoin(other.getPokecoin());
-      }
-      if (other.pokemonCandy_ != 0) {
-        setPokemonCandyValue(other.getPokemonCandyValue());
-      }
       if (other.getCount() != 0) {
         setCount(other.getCount());
       }
-      if (other.getExperience() != false) {
-        setExperience(other.getExperience());
-      }
-      if (other.hasPokemonEgg()) {
-        mergePokemonEgg(other.getPokemonEgg());
-      }
-      if (!other.getAvatarTemplateId().isEmpty()) {
-        avatarTemplateId_ = other.avatarTemplateId_;
-        onChanged();
-      }
-      if (!other.getStickerId().isEmpty()) {
-        stickerId_ = other.stickerId_;
-        onChanged();
+      switch (other.getTypeCase()) {
+        case ITEM: {
+          setItemValue(other.getItemValue());
+          break;
+        }
+        case STARDUST: {
+          setStardust(other.getStardust());
+          break;
+        }
+        case POKECOIN: {
+          setPokecoin(other.getPokecoin());
+          break;
+        }
+        case POKEMON_CANDY: {
+          setPokemonCandyValue(other.getPokemonCandyValue());
+          break;
+        }
+        case EXPERIENCE: {
+          setExperience(other.getExperience());
+          break;
+        }
+        case POKEMON_EGG: {
+          mergePokemonEgg(other.getPokemonEgg());
+          break;
+        }
+        case AVATAR_TEMPLATE_ID: {
+          typeCase_ = 8;
+          type_ = other.type_;
+          onChanged();
+          break;
+        }
+        case STICKER_ID: {
+          typeCase_ = 9;
+          type_ = other.type_;
+          onChanged();
+          break;
+        }
+        case TYPE_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -765,14 +914,31 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int typeCase_ = 0;
+    private java.lang.Object type_;
+    public TypeCase
+        getTypeCase() {
+      return TypeCase.forNumber(
+          typeCase_);
+    }
 
-    private int item_ = 0;
+    public Builder clearType() {
+      typeCase_ = 0;
+      type_ = null;
+      onChanged();
+      return this;
+    }
+
+
     /**
      * <code>.POGOProtos.Rpc.Item item = 1;</code>
      * @return The enum numeric value on the wire for item.
      */
     public int getItemValue() {
-      return item_;
+      if (typeCase_ == 1) {
+        return ((java.lang.Integer) type_).intValue();
+      }
+      return 0;
     }
     /**
      * <code>.POGOProtos.Rpc.Item item = 1;</code>
@@ -780,7 +946,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setItemValue(int value) {
-      item_ = value;
+      typeCase_ = 1;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -789,9 +956,13 @@ private static final long serialVersionUID = 0L;
      * @return The item.
      */
     public POGOProtos.Rpc.Item getItem() {
-      @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(item_);
-      return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+      if (typeCase_ == 1) {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(
+            (java.lang.Integer) type_);
+        return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
+      }
+      return POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN;
     }
     /**
      * <code>.POGOProtos.Rpc.Item item = 1;</code>
@@ -802,8 +973,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
-      item_ = value.getNumber();
+      typeCase_ = 1;
+      type_ = value.getNumber();
       onChanged();
       return this;
     }
@@ -812,19 +983,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearItem() {
-      
-      item_ = 0;
-      onChanged();
+      if (typeCase_ == 1) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean stardust_ ;
     /**
      * <code>bool stardust = 2;</code>
      * @return The stardust.
      */
     public boolean getStardust() {
-      return stardust_;
+      if (typeCase_ == 2) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool stardust = 2;</code>
@@ -832,8 +1007,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStardust(boolean value) {
-      
-      stardust_ = value;
+      typeCase_ = 2;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -842,19 +1017,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearStardust() {
-      
-      stardust_ = false;
-      onChanged();
+      if (typeCase_ == 2) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private boolean pokecoin_ ;
     /**
      * <code>bool pokecoin = 3;</code>
      * @return The pokecoin.
      */
     public boolean getPokecoin() {
-      return pokecoin_;
+      if (typeCase_ == 3) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
     }
     /**
      * <code>bool pokecoin = 3;</code>
@@ -862,8 +1041,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokecoin(boolean value) {
-      
-      pokecoin_ = value;
+      typeCase_ = 3;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -872,19 +1051,23 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokecoin() {
-      
-      pokecoin_ = false;
-      onChanged();
+      if (typeCase_ == 3) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
       return this;
     }
 
-    private int pokemonCandy_ = 0;
     /**
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_candy = 4;</code>
      * @return The enum numeric value on the wire for pokemonCandy.
      */
     public int getPokemonCandyValue() {
-      return pokemonCandy_;
+      if (typeCase_ == 4) {
+        return ((java.lang.Integer) type_).intValue();
+      }
+      return 0;
     }
     /**
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_candy = 4;</code>
@@ -892,7 +1075,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokemonCandyValue(int value) {
-      pokemonCandy_ = value;
+      typeCase_ = 4;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -901,9 +1085,13 @@ private static final long serialVersionUID = 0L;
      * @return The pokemonCandy.
      */
     public POGOProtos.Rpc.HoloPokemonId getPokemonCandy() {
-      @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(pokemonCandy_);
-      return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+      if (typeCase_ == 4) {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
+            (java.lang.Integer) type_);
+        return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+      }
+      return POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET;
     }
     /**
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_candy = 4;</code>
@@ -914,8 +1102,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      
-      pokemonCandy_ = value.getNumber();
+      typeCase_ = 4;
+      type_ = value.getNumber();
       onChanged();
       return this;
     }
@@ -924,8 +1112,356 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokemonCandy() {
-      
-      pokemonCandy_ = 0;
+      if (typeCase_ == 4) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    /**
+     * <code>bool experience = 6;</code>
+     * @return The experience.
+     */
+    public boolean getExperience() {
+      if (typeCase_ == 6) {
+        return (java.lang.Boolean) type_;
+      }
+      return false;
+    }
+    /**
+     * <code>bool experience = 6;</code>
+     * @param value The experience to set.
+     * @return This builder for chaining.
+     */
+    public Builder setExperience(boolean value) {
+      typeCase_ = 6;
+      type_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool experience = 6;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearExperience() {
+      if (typeCase_ == 6) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> pokemonEggBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * @return Whether the pokemonEgg field is set.
+     */
+    public boolean hasPokemonEgg() {
+      return typeCase_ == 7;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * @return The pokemonEgg.
+     */
+    public POGOProtos.Rpc.PokemonProto getPokemonEgg() {
+      if (pokemonEggBuilder_ == null) {
+        if (typeCase_ == 7) {
+          return (POGOProtos.Rpc.PokemonProto) type_;
+        }
+        return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+      } else {
+        if (typeCase_ == 7) {
+          return pokemonEggBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     */
+    public Builder setPokemonEgg(POGOProtos.Rpc.PokemonProto value) {
+      if (pokemonEggBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        type_ = value;
+        onChanged();
+      } else {
+        pokemonEggBuilder_.setMessage(value);
+      }
+      typeCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     */
+    public Builder setPokemonEgg(
+        POGOProtos.Rpc.PokemonProto.Builder builderForValue) {
+      if (pokemonEggBuilder_ == null) {
+        type_ = builderForValue.build();
+        onChanged();
+      } else {
+        pokemonEggBuilder_.setMessage(builderForValue.build());
+      }
+      typeCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     */
+    public Builder mergePokemonEgg(POGOProtos.Rpc.PokemonProto value) {
+      if (pokemonEggBuilder_ == null) {
+        if (typeCase_ == 7 &&
+            type_ != POGOProtos.Rpc.PokemonProto.getDefaultInstance()) {
+          type_ = POGOProtos.Rpc.PokemonProto.newBuilder((POGOProtos.Rpc.PokemonProto) type_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          type_ = value;
+        }
+        onChanged();
+      } else {
+        if (typeCase_ == 7) {
+          pokemonEggBuilder_.mergeFrom(value);
+        }
+        pokemonEggBuilder_.setMessage(value);
+      }
+      typeCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     */
+    public Builder clearPokemonEgg() {
+      if (pokemonEggBuilder_ == null) {
+        if (typeCase_ == 7) {
+          typeCase_ = 0;
+          type_ = null;
+          onChanged();
+        }
+      } else {
+        if (typeCase_ == 7) {
+          typeCase_ = 0;
+          type_ = null;
+        }
+        pokemonEggBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     */
+    public POGOProtos.Rpc.PokemonProto.Builder getPokemonEggBuilder() {
+      return getPokemonEggFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     */
+    public POGOProtos.Rpc.PokemonProtoOrBuilder getPokemonEggOrBuilder() {
+      if ((typeCase_ == 7) && (pokemonEggBuilder_ != null)) {
+        return pokemonEggBuilder_.getMessageOrBuilder();
+      } else {
+        if (typeCase_ == 7) {
+          return (POGOProtos.Rpc.PokemonProto) type_;
+        }
+        return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> 
+        getPokemonEggFieldBuilder() {
+      if (pokemonEggBuilder_ == null) {
+        if (!(typeCase_ == 7)) {
+          type_ = POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+        }
+        pokemonEggBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder>(
+                (POGOProtos.Rpc.PokemonProto) type_,
+                getParentForChildren(),
+                isClean());
+        type_ = null;
+      }
+      typeCase_ = 7;
+      onChanged();;
+      return pokemonEggBuilder_;
+    }
+
+    /**
+     * <code>string avatar_template_id = 8;</code>
+     * @return The avatarTemplateId.
+     */
+    public java.lang.String getAvatarTemplateId() {
+      java.lang.Object ref = "";
+      if (typeCase_ == 8) {
+        ref = type_;
+      }
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (typeCase_ == 8) {
+          type_ = s;
+        }
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string avatar_template_id = 8;</code>
+     * @return The bytes for avatarTemplateId.
+     */
+    public com.google.protobuf.ByteString
+        getAvatarTemplateIdBytes() {
+      java.lang.Object ref = "";
+      if (typeCase_ == 8) {
+        ref = type_;
+      }
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        if (typeCase_ == 8) {
+          type_ = b;
+        }
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string avatar_template_id = 8;</code>
+     * @param value The avatarTemplateId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAvatarTemplateId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  typeCase_ = 8;
+      type_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string avatar_template_id = 8;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAvatarTemplateId() {
+      if (typeCase_ == 8) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
+      return this;
+    }
+    /**
+     * <code>string avatar_template_id = 8;</code>
+     * @param value The bytes for avatarTemplateId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAvatarTemplateIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      typeCase_ = 8;
+      type_ = value;
+      onChanged();
+      return this;
+    }
+
+    /**
+     * <code>string sticker_id = 9;</code>
+     * @return The stickerId.
+     */
+    public java.lang.String getStickerId() {
+      java.lang.Object ref = "";
+      if (typeCase_ == 9) {
+        ref = type_;
+      }
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (typeCase_ == 9) {
+          type_ = s;
+        }
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string sticker_id = 9;</code>
+     * @return The bytes for stickerId.
+     */
+    public com.google.protobuf.ByteString
+        getStickerIdBytes() {
+      java.lang.Object ref = "";
+      if (typeCase_ == 9) {
+        ref = type_;
+      }
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        if (typeCase_ == 9) {
+          type_ = b;
+        }
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string sticker_id = 9;</code>
+     * @param value The stickerId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStickerId(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  typeCase_ = 9;
+      type_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string sticker_id = 9;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStickerId() {
+      if (typeCase_ == 9) {
+        typeCase_ = 0;
+        type_ = null;
+        onChanged();
+      }
+      return this;
+    }
+    /**
+     * <code>string sticker_id = 9;</code>
+     * @param value The bytes for stickerId to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStickerIdBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      typeCase_ = 9;
+      type_ = value;
       onChanged();
       return this;
     }
@@ -956,307 +1492,6 @@ private static final long serialVersionUID = 0L;
     public Builder clearCount() {
       
       count_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private boolean experience_ ;
-    /**
-     * <code>bool experience = 6;</code>
-     * @return The experience.
-     */
-    public boolean getExperience() {
-      return experience_;
-    }
-    /**
-     * <code>bool experience = 6;</code>
-     * @param value The experience to set.
-     * @return This builder for chaining.
-     */
-    public Builder setExperience(boolean value) {
-      
-      experience_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>bool experience = 6;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearExperience() {
-      
-      experience_ = false;
-      onChanged();
-      return this;
-    }
-
-    private POGOProtos.Rpc.PokemonProto pokemonEgg_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> pokemonEggBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-     * @return Whether the pokemonEgg field is set.
-     */
-    public boolean hasPokemonEgg() {
-      return pokemonEggBuilder_ != null || pokemonEgg_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-     * @return The pokemonEgg.
-     */
-    public POGOProtos.Rpc.PokemonProto getPokemonEgg() {
-      if (pokemonEggBuilder_ == null) {
-        return pokemonEgg_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : pokemonEgg_;
-      } else {
-        return pokemonEggBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-     */
-    public Builder setPokemonEgg(POGOProtos.Rpc.PokemonProto value) {
-      if (pokemonEggBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        pokemonEgg_ = value;
-        onChanged();
-      } else {
-        pokemonEggBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-     */
-    public Builder setPokemonEgg(
-        POGOProtos.Rpc.PokemonProto.Builder builderForValue) {
-      if (pokemonEggBuilder_ == null) {
-        pokemonEgg_ = builderForValue.build();
-        onChanged();
-      } else {
-        pokemonEggBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-     */
-    public Builder mergePokemonEgg(POGOProtos.Rpc.PokemonProto value) {
-      if (pokemonEggBuilder_ == null) {
-        if (pokemonEgg_ != null) {
-          pokemonEgg_ =
-            POGOProtos.Rpc.PokemonProto.newBuilder(pokemonEgg_).mergeFrom(value).buildPartial();
-        } else {
-          pokemonEgg_ = value;
-        }
-        onChanged();
-      } else {
-        pokemonEggBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-     */
-    public Builder clearPokemonEgg() {
-      if (pokemonEggBuilder_ == null) {
-        pokemonEgg_ = null;
-        onChanged();
-      } else {
-        pokemonEgg_ = null;
-        pokemonEggBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-     */
-    public POGOProtos.Rpc.PokemonProto.Builder getPokemonEggBuilder() {
-      
-      onChanged();
-      return getPokemonEggFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-     */
-    public POGOProtos.Rpc.PokemonProtoOrBuilder getPokemonEggOrBuilder() {
-      if (pokemonEggBuilder_ != null) {
-        return pokemonEggBuilder_.getMessageOrBuilder();
-      } else {
-        return pokemonEgg_ == null ?
-            POGOProtos.Rpc.PokemonProto.getDefaultInstance() : pokemonEgg_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> 
-        getPokemonEggFieldBuilder() {
-      if (pokemonEggBuilder_ == null) {
-        pokemonEggBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder>(
-                getPokemonEgg(),
-                getParentForChildren(),
-                isClean());
-        pokemonEgg_ = null;
-      }
-      return pokemonEggBuilder_;
-    }
-
-    private java.lang.Object avatarTemplateId_ = "";
-    /**
-     * <code>string avatar_template_id = 8;</code>
-     * @return The avatarTemplateId.
-     */
-    public java.lang.String getAvatarTemplateId() {
-      java.lang.Object ref = avatarTemplateId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        avatarTemplateId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string avatar_template_id = 8;</code>
-     * @return The bytes for avatarTemplateId.
-     */
-    public com.google.protobuf.ByteString
-        getAvatarTemplateIdBytes() {
-      java.lang.Object ref = avatarTemplateId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        avatarTemplateId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string avatar_template_id = 8;</code>
-     * @param value The avatarTemplateId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setAvatarTemplateId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      avatarTemplateId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string avatar_template_id = 8;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearAvatarTemplateId() {
-      
-      avatarTemplateId_ = getDefaultInstance().getAvatarTemplateId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string avatar_template_id = 8;</code>
-     * @param value The bytes for avatarTemplateId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setAvatarTemplateIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      avatarTemplateId_ = value;
-      onChanged();
-      return this;
-    }
-
-    private java.lang.Object stickerId_ = "";
-    /**
-     * <code>string sticker_id = 9;</code>
-     * @return The stickerId.
-     */
-    public java.lang.String getStickerId() {
-      java.lang.Object ref = stickerId_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        stickerId_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string sticker_id = 9;</code>
-     * @return The bytes for stickerId.
-     */
-    public com.google.protobuf.ByteString
-        getStickerIdBytes() {
-      java.lang.Object ref = stickerId_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        stickerId_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string sticker_id = 9;</code>
-     * @param value The stickerId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setStickerId(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      stickerId_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string sticker_id = 9;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearStickerId() {
-      
-      stickerId_ = getDefaultInstance().getStickerId();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string sticker_id = 9;</code>
-     * @param value The bytes for stickerId to set.
-     * @return This builder for chaining.
-     */
-    public Builder setStickerIdBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      stickerId_ = value;
       onChanged();
       return this;
     }

@@ -30,28 +30,32 @@ public final class RaidRewardsLogEntryOuterClass {
     java.lang.String[] descriptorData = {
       "\n.POGOProtos/Data/Logs/RaidRewardsLogEnt" +
       "ry.proto\022\024POGOProtos.Data.Logs\032(POGOProt" +
-      "os/Inventory/Item/ItemData.proto\"\223\002\n\023Rai" +
-      "dRewardsLogEntry\022@\n\006result\030\001 \001(\01620.POGOP" +
-      "rotos.Data.Logs.RaidRewardsLogEntry.Resu" +
-      "lt\022\024\n\014is_exclusive\030\002 \001(\010\0222\n\005items\030\003 \003(\0132" +
-      "#.POGOProtos.Inventory.Item.ItemData\022<\n\017" +
-      "default_rewards\030\004 \003(\0132#.POGOProtos.Inven" +
-      "tory.Item.ItemData\022\020\n\010stardust\030\005 \001(\005\" \n\006" +
-      "Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001B\002P\001b\006prot" +
-      "o3"
+      "os/Inventory/Item/ItemData.proto\032#POGOPr" +
+      "otos/Inventory/LootItem.proto\"\305\002\n\023RaidRe" +
+      "wardsLogEntry\022@\n\006result\030\001 \001(\01620.POGOProt" +
+      "os.Data.Logs.RaidRewardsLogEntry.Result\022" +
+      "\024\n\014is_exclusive\030\002 \001(\010\0222\n\005items\030\003 \003(\0132#.P" +
+      "OGOProtos.Inventory.Item.ItemData\022<\n\017def" +
+      "ault_rewards\030\004 \003(\0132#.POGOProtos.Inventor" +
+      "y.Item.ItemData\022\020\n\010stardust\030\005 \001(\005\0220\n\010sti" +
+      "ckers\030\006 \003(\0132\036.POGOProtos.Inventory.LootI" +
+      "tem\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001B\002P" +
+      "\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           POGOProtos.Inventory.Item.ItemDataOuterClass.getDescriptor(),
+          POGOProtos.Inventory.LootItemOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Data_Logs_RaidRewardsLogEntry_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_POGOProtos_Data_Logs_RaidRewardsLogEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Data_Logs_RaidRewardsLogEntry_descriptor,
-        new java.lang.String[] { "Result", "IsExclusive", "Items", "DefaultRewards", "Stardust", });
+        new java.lang.String[] { "Result", "IsExclusive", "Items", "DefaultRewards", "Stardust", "Stickers", });
     POGOProtos.Inventory.Item.ItemDataOuterClass.getDescriptor();
+    POGOProtos.Inventory.LootItemOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

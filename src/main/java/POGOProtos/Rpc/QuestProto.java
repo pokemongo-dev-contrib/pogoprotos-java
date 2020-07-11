@@ -65,106 +65,114 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             POGOProtos.Rpc.DailyQuestProto.Builder subBuilder = null;
-            if (dailyQuest_ != null) {
-              subBuilder = dailyQuest_.toBuilder();
+            if (questCase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.DailyQuestProto) quest_).toBuilder();
             }
-            dailyQuest_ = input.readMessage(POGOProtos.Rpc.DailyQuestProto.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.DailyQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(dailyQuest_);
-              dailyQuest_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.DailyQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-
+            questCase_ = 2;
             break;
           }
           case 26: {
             POGOProtos.Rpc.MultiPartQuestProto.Builder subBuilder = null;
-            if (multiPart_ != null) {
-              subBuilder = multiPart_.toBuilder();
+            if (questCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.MultiPartQuestProto) quest_).toBuilder();
             }
-            multiPart_ = input.readMessage(POGOProtos.Rpc.MultiPartQuestProto.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.MultiPartQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(multiPart_);
-              multiPart_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.MultiPartQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-
+            questCase_ = 3;
             break;
           }
           case 34: {
             POGOProtos.Rpc.CatchPokemonQuestProto.Builder subBuilder = null;
-            if (catchPokemon_ != null) {
-              subBuilder = catchPokemon_.toBuilder();
+            if (questCase_ == 4) {
+              subBuilder = ((POGOProtos.Rpc.CatchPokemonQuestProto) quest_).toBuilder();
             }
-            catchPokemon_ = input.readMessage(POGOProtos.Rpc.CatchPokemonQuestProto.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.CatchPokemonQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(catchPokemon_);
-              catchPokemon_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.CatchPokemonQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-
+            questCase_ = 4;
             break;
           }
           case 42: {
             POGOProtos.Rpc.AddFriendQuestProto.Builder subBuilder = null;
-            if (addFriend_ != null) {
-              subBuilder = addFriend_.toBuilder();
+            if (questCase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.AddFriendQuestProto) quest_).toBuilder();
             }
-            addFriend_ = input.readMessage(POGOProtos.Rpc.AddFriendQuestProto.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.AddFriendQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(addFriend_);
-              addFriend_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.AddFriendQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-
+            questCase_ = 5;
             break;
           }
           case 50: {
             POGOProtos.Rpc.TradePokemonQuestProto.Builder subBuilder = null;
-            if (tradePokemon_ != null) {
-              subBuilder = tradePokemon_.toBuilder();
+            if (questCase_ == 6) {
+              subBuilder = ((POGOProtos.Rpc.TradePokemonQuestProto) quest_).toBuilder();
             }
-            tradePokemon_ = input.readMessage(POGOProtos.Rpc.TradePokemonQuestProto.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.TradePokemonQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(tradePokemon_);
-              tradePokemon_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.TradePokemonQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-
+            questCase_ = 6;
             break;
           }
           case 58: {
             POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder subBuilder = null;
-            if (dailyBuddyAffection_ != null) {
-              subBuilder = dailyBuddyAffection_.toBuilder();
+            if (questCase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_).toBuilder();
             }
-            dailyBuddyAffection_ = input.readMessage(POGOProtos.Rpc.DailyBuddyAffectionQuestProto.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.DailyBuddyAffectionQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(dailyBuddyAffection_);
-              dailyBuddyAffection_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-
+            questCase_ = 7;
             break;
           }
           case 66: {
             POGOProtos.Rpc.QuestWalkProto.Builder subBuilder = null;
-            if (questWalk_ != null) {
-              subBuilder = questWalk_.toBuilder();
+            if (questCase_ == 8) {
+              subBuilder = ((POGOProtos.Rpc.QuestWalkProto) quest_).toBuilder();
             }
-            questWalk_ = input.readMessage(POGOProtos.Rpc.QuestWalkProto.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.QuestWalkProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(questWalk_);
-              questWalk_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.QuestWalkProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-
+            questCase_ = 8;
             break;
           }
           case 74: {
             POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder subBuilder = null;
-            if (evolveIntoPokemon_ != null) {
-              subBuilder = evolveIntoPokemon_.toBuilder();
+            if (questCase_ == 9) {
+              subBuilder = ((POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_).toBuilder();
             }
-            evolveIntoPokemon_ = input.readMessage(POGOProtos.Rpc.EvolveIntoPokemonQuestProto.parser(), extensionRegistry);
+            quest_ =
+                input.readMessage(POGOProtos.Rpc.EvolveIntoPokemonQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(evolveIntoPokemon_);
-              evolveIntoPokemon_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_);
+              quest_ = subBuilder.buildPartial();
             }
-
+            questCase_ = 9;
             break;
           }
           case 794: {
@@ -366,6 +374,10 @@ private static final long serialVersionUID = 0L;
      * <code>TIMED_STORY_QUEST = 4;</code>
      */
     TIMED_STORY_QUEST(4),
+    /**
+     * <code>TGC_TRACKING_QUEST = 7;</code>
+     */
+    TGC_TRACKING_QUEST(7),
     UNRECOGNIZED(-1),
     ;
 
@@ -389,6 +401,10 @@ private static final long serialVersionUID = 0L;
      * <code>TIMED_STORY_QUEST = 4;</code>
      */
     public static final int TIMED_STORY_QUEST_VALUE = 4;
+    /**
+     * <code>TGC_TRACKING_QUEST = 7;</code>
+     */
+    public static final int TGC_TRACKING_QUEST_VALUE = 7;
 
 
     public final int getNumber() {
@@ -420,6 +436,7 @@ private static final long serialVersionUID = 0L;
         case 2: return CHALLENGE_QUEST;
         case 3: return DAILY_COIN_QUEST;
         case 4: return TIMED_STORY_QUEST;
+        case 7: return TGC_TRACKING_QUEST;
         default: return null;
       }
     }
@@ -585,6 +602,283 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.QuestProto.Status)
   }
 
+  private int questCase_ = 0;
+  private java.lang.Object quest_;
+  public enum QuestCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    DAILY_QUEST(2),
+    MULTI_PART(3),
+    CATCH_POKEMON(4),
+    ADD_FRIEND(5),
+    TRADE_POKEMON(6),
+    DAILY_BUDDY_AFFECTION(7),
+    QUEST_WALK(8),
+    EVOLVE_INTO_POKEMON(9),
+    QUEST_NOT_SET(0);
+    private final int value;
+    private QuestCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static QuestCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static QuestCase forNumber(int value) {
+      switch (value) {
+        case 2: return DAILY_QUEST;
+        case 3: return MULTI_PART;
+        case 4: return CATCH_POKEMON;
+        case 5: return ADD_FRIEND;
+        case 6: return TRADE_POKEMON;
+        case 7: return DAILY_BUDDY_AFFECTION;
+        case 8: return QUEST_WALK;
+        case 9: return EVOLVE_INTO_POKEMON;
+        case 0: return QUEST_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public QuestCase
+  getQuestCase() {
+    return QuestCase.forNumber(
+        questCase_);
+  }
+
+  public static final int DAILY_QUEST_FIELD_NUMBER = 2;
+  /**
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+   * @return Whether the dailyQuest field is set.
+   */
+  public boolean hasDailyQuest() {
+    return questCase_ == 2;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+   * @return The dailyQuest.
+   */
+  public POGOProtos.Rpc.DailyQuestProto getDailyQuest() {
+    if (questCase_ == 2) {
+       return (POGOProtos.Rpc.DailyQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+   */
+  public POGOProtos.Rpc.DailyQuestProtoOrBuilder getDailyQuestOrBuilder() {
+    if (questCase_ == 2) {
+       return (POGOProtos.Rpc.DailyQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
+  }
+
+  public static final int MULTI_PART_FIELD_NUMBER = 3;
+  /**
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+   * @return Whether the multiPart field is set.
+   */
+  public boolean hasMultiPart() {
+    return questCase_ == 3;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+   * @return The multiPart.
+   */
+  public POGOProtos.Rpc.MultiPartQuestProto getMultiPart() {
+    if (questCase_ == 3) {
+       return (POGOProtos.Rpc.MultiPartQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+   */
+  public POGOProtos.Rpc.MultiPartQuestProtoOrBuilder getMultiPartOrBuilder() {
+    if (questCase_ == 3) {
+       return (POGOProtos.Rpc.MultiPartQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
+  }
+
+  public static final int CATCH_POKEMON_FIELD_NUMBER = 4;
+  /**
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+   * @return Whether the catchPokemon field is set.
+   */
+  public boolean hasCatchPokemon() {
+    return questCase_ == 4;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+   * @return The catchPokemon.
+   */
+  public POGOProtos.Rpc.CatchPokemonQuestProto getCatchPokemon() {
+    if (questCase_ == 4) {
+       return (POGOProtos.Rpc.CatchPokemonQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+   */
+  public POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder getCatchPokemonOrBuilder() {
+    if (questCase_ == 4) {
+       return (POGOProtos.Rpc.CatchPokemonQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
+  }
+
+  public static final int ADD_FRIEND_FIELD_NUMBER = 5;
+  /**
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+   * @return Whether the addFriend field is set.
+   */
+  public boolean hasAddFriend() {
+    return questCase_ == 5;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+   * @return The addFriend.
+   */
+  public POGOProtos.Rpc.AddFriendQuestProto getAddFriend() {
+    if (questCase_ == 5) {
+       return (POGOProtos.Rpc.AddFriendQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+   */
+  public POGOProtos.Rpc.AddFriendQuestProtoOrBuilder getAddFriendOrBuilder() {
+    if (questCase_ == 5) {
+       return (POGOProtos.Rpc.AddFriendQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
+  }
+
+  public static final int TRADE_POKEMON_FIELD_NUMBER = 6;
+  /**
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+   * @return Whether the tradePokemon field is set.
+   */
+  public boolean hasTradePokemon() {
+    return questCase_ == 6;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+   * @return The tradePokemon.
+   */
+  public POGOProtos.Rpc.TradePokemonQuestProto getTradePokemon() {
+    if (questCase_ == 6) {
+       return (POGOProtos.Rpc.TradePokemonQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+   */
+  public POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder getTradePokemonOrBuilder() {
+    if (questCase_ == 6) {
+       return (POGOProtos.Rpc.TradePokemonQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
+  }
+
+  public static final int DAILY_BUDDY_AFFECTION_FIELD_NUMBER = 7;
+  /**
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+   * @return Whether the dailyBuddyAffection field is set.
+   */
+  public boolean hasDailyBuddyAffection() {
+    return questCase_ == 7;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+   * @return The dailyBuddyAffection.
+   */
+  public POGOProtos.Rpc.DailyBuddyAffectionQuestProto getDailyBuddyAffection() {
+    if (questCase_ == 7) {
+       return (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+   */
+  public POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder getDailyBuddyAffectionOrBuilder() {
+    if (questCase_ == 7) {
+       return (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
+  }
+
+  public static final int QUEST_WALK_FIELD_NUMBER = 8;
+  /**
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+   * @return Whether the questWalk field is set.
+   */
+  public boolean hasQuestWalk() {
+    return questCase_ == 8;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+   * @return The questWalk.
+   */
+  public POGOProtos.Rpc.QuestWalkProto getQuestWalk() {
+    if (questCase_ == 8) {
+       return (POGOProtos.Rpc.QuestWalkProto) quest_;
+    }
+    return POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+   */
+  public POGOProtos.Rpc.QuestWalkProtoOrBuilder getQuestWalkOrBuilder() {
+    if (questCase_ == 8) {
+       return (POGOProtos.Rpc.QuestWalkProto) quest_;
+    }
+    return POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
+  }
+
+  public static final int EVOLVE_INTO_POKEMON_FIELD_NUMBER = 9;
+  /**
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+   * @return Whether the evolveIntoPokemon field is set.
+   */
+  public boolean hasEvolveIntoPokemon() {
+    return questCase_ == 9;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+   * @return The evolveIntoPokemon.
+   */
+  public POGOProtos.Rpc.EvolveIntoPokemonQuestProto getEvolveIntoPokemon() {
+    if (questCase_ == 9) {
+       return (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+   */
+  public POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder getEvolveIntoPokemonOrBuilder() {
+    if (questCase_ == 9) {
+       return (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_;
+    }
+    return POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
+  }
+
   public static final int QUEST_TYPE_FIELD_NUMBER = 1;
   private int questType_;
   /**
@@ -602,190 +896,6 @@ private static final long serialVersionUID = 0L;
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(questType_);
     return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
-  }
-
-  public static final int DAILY_QUEST_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.DailyQuestProto dailyQuest_;
-  /**
-   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-   * @return Whether the dailyQuest field is set.
-   */
-  public boolean hasDailyQuest() {
-    return dailyQuest_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-   * @return The dailyQuest.
-   */
-  public POGOProtos.Rpc.DailyQuestProto getDailyQuest() {
-    return dailyQuest_ == null ? POGOProtos.Rpc.DailyQuestProto.getDefaultInstance() : dailyQuest_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-   */
-  public POGOProtos.Rpc.DailyQuestProtoOrBuilder getDailyQuestOrBuilder() {
-    return getDailyQuest();
-  }
-
-  public static final int MULTI_PART_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.MultiPartQuestProto multiPart_;
-  /**
-   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-   * @return Whether the multiPart field is set.
-   */
-  public boolean hasMultiPart() {
-    return multiPart_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-   * @return The multiPart.
-   */
-  public POGOProtos.Rpc.MultiPartQuestProto getMultiPart() {
-    return multiPart_ == null ? POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance() : multiPart_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-   */
-  public POGOProtos.Rpc.MultiPartQuestProtoOrBuilder getMultiPartOrBuilder() {
-    return getMultiPart();
-  }
-
-  public static final int CATCH_POKEMON_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.CatchPokemonQuestProto catchPokemon_;
-  /**
-   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-   * @return Whether the catchPokemon field is set.
-   */
-  public boolean hasCatchPokemon() {
-    return catchPokemon_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-   * @return The catchPokemon.
-   */
-  public POGOProtos.Rpc.CatchPokemonQuestProto getCatchPokemon() {
-    return catchPokemon_ == null ? POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance() : catchPokemon_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-   */
-  public POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder getCatchPokemonOrBuilder() {
-    return getCatchPokemon();
-  }
-
-  public static final int ADD_FRIEND_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.AddFriendQuestProto addFriend_;
-  /**
-   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-   * @return Whether the addFriend field is set.
-   */
-  public boolean hasAddFriend() {
-    return addFriend_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-   * @return The addFriend.
-   */
-  public POGOProtos.Rpc.AddFriendQuestProto getAddFriend() {
-    return addFriend_ == null ? POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance() : addFriend_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-   */
-  public POGOProtos.Rpc.AddFriendQuestProtoOrBuilder getAddFriendOrBuilder() {
-    return getAddFriend();
-  }
-
-  public static final int TRADE_POKEMON_FIELD_NUMBER = 6;
-  private POGOProtos.Rpc.TradePokemonQuestProto tradePokemon_;
-  /**
-   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-   * @return Whether the tradePokemon field is set.
-   */
-  public boolean hasTradePokemon() {
-    return tradePokemon_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-   * @return The tradePokemon.
-   */
-  public POGOProtos.Rpc.TradePokemonQuestProto getTradePokemon() {
-    return tradePokemon_ == null ? POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance() : tradePokemon_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-   */
-  public POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder getTradePokemonOrBuilder() {
-    return getTradePokemon();
-  }
-
-  public static final int DAILY_BUDDY_AFFECTION_FIELD_NUMBER = 7;
-  private POGOProtos.Rpc.DailyBuddyAffectionQuestProto dailyBuddyAffection_;
-  /**
-   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-   * @return Whether the dailyBuddyAffection field is set.
-   */
-  public boolean hasDailyBuddyAffection() {
-    return dailyBuddyAffection_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-   * @return The dailyBuddyAffection.
-   */
-  public POGOProtos.Rpc.DailyBuddyAffectionQuestProto getDailyBuddyAffection() {
-    return dailyBuddyAffection_ == null ? POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance() : dailyBuddyAffection_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-   */
-  public POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder getDailyBuddyAffectionOrBuilder() {
-    return getDailyBuddyAffection();
-  }
-
-  public static final int QUEST_WALK_FIELD_NUMBER = 8;
-  private POGOProtos.Rpc.QuestWalkProto questWalk_;
-  /**
-   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-   * @return Whether the questWalk field is set.
-   */
-  public boolean hasQuestWalk() {
-    return questWalk_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-   * @return The questWalk.
-   */
-  public POGOProtos.Rpc.QuestWalkProto getQuestWalk() {
-    return questWalk_ == null ? POGOProtos.Rpc.QuestWalkProto.getDefaultInstance() : questWalk_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-   */
-  public POGOProtos.Rpc.QuestWalkProtoOrBuilder getQuestWalkOrBuilder() {
-    return getQuestWalk();
-  }
-
-  public static final int EVOLVE_INTO_POKEMON_FIELD_NUMBER = 9;
-  private POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolveIntoPokemon_;
-  /**
-   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-   * @return Whether the evolveIntoPokemon field is set.
-   */
-  public boolean hasEvolveIntoPokemon() {
-    return evolveIntoPokemon_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-   * @return The evolveIntoPokemon.
-   */
-  public POGOProtos.Rpc.EvolveIntoPokemonQuestProto getEvolveIntoPokemon() {
-    return evolveIntoPokemon_ == null ? POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance() : evolveIntoPokemon_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-   */
-  public POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder getEvolveIntoPokemonOrBuilder() {
-    return getEvolveIntoPokemon();
   }
 
   public static final int DAYS_IN_AROW_FIELD_NUMBER = 99;
@@ -1201,29 +1311,29 @@ private static final long serialVersionUID = 0L;
     if (questType_ != POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET.getNumber()) {
       output.writeEnum(1, questType_);
     }
-    if (dailyQuest_ != null) {
-      output.writeMessage(2, getDailyQuest());
+    if (questCase_ == 2) {
+      output.writeMessage(2, (POGOProtos.Rpc.DailyQuestProto) quest_);
     }
-    if (multiPart_ != null) {
-      output.writeMessage(3, getMultiPart());
+    if (questCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.MultiPartQuestProto) quest_);
     }
-    if (catchPokemon_ != null) {
-      output.writeMessage(4, getCatchPokemon());
+    if (questCase_ == 4) {
+      output.writeMessage(4, (POGOProtos.Rpc.CatchPokemonQuestProto) quest_);
     }
-    if (addFriend_ != null) {
-      output.writeMessage(5, getAddFriend());
+    if (questCase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.AddFriendQuestProto) quest_);
     }
-    if (tradePokemon_ != null) {
-      output.writeMessage(6, getTradePokemon());
+    if (questCase_ == 6) {
+      output.writeMessage(6, (POGOProtos.Rpc.TradePokemonQuestProto) quest_);
     }
-    if (dailyBuddyAffection_ != null) {
-      output.writeMessage(7, getDailyBuddyAffection());
+    if (questCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_);
     }
-    if (questWalk_ != null) {
-      output.writeMessage(8, getQuestWalk());
+    if (questCase_ == 8) {
+      output.writeMessage(8, (POGOProtos.Rpc.QuestWalkProto) quest_);
     }
-    if (evolveIntoPokemon_ != null) {
-      output.writeMessage(9, getEvolveIntoPokemon());
+    if (questCase_ == 9) {
+      output.writeMessage(9, (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_);
     }
     if (daysInArow_ != null) {
       output.writeMessage(99, getDaysInArow());
@@ -1301,37 +1411,37 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, questType_);
     }
-    if (dailyQuest_ != null) {
+    if (questCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getDailyQuest());
+        .computeMessageSize(2, (POGOProtos.Rpc.DailyQuestProto) quest_);
     }
-    if (multiPart_ != null) {
+    if (questCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getMultiPart());
+        .computeMessageSize(3, (POGOProtos.Rpc.MultiPartQuestProto) quest_);
     }
-    if (catchPokemon_ != null) {
+    if (questCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getCatchPokemon());
+        .computeMessageSize(4, (POGOProtos.Rpc.CatchPokemonQuestProto) quest_);
     }
-    if (addFriend_ != null) {
+    if (questCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getAddFriend());
+        .computeMessageSize(5, (POGOProtos.Rpc.AddFriendQuestProto) quest_);
     }
-    if (tradePokemon_ != null) {
+    if (questCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getTradePokemon());
+        .computeMessageSize(6, (POGOProtos.Rpc.TradePokemonQuestProto) quest_);
     }
-    if (dailyBuddyAffection_ != null) {
+    if (questCase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getDailyBuddyAffection());
+        .computeMessageSize(7, (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_);
     }
-    if (questWalk_ != null) {
+    if (questCase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getQuestWalk());
+        .computeMessageSize(8, (POGOProtos.Rpc.QuestWalkProto) quest_);
     }
-    if (evolveIntoPokemon_ != null) {
+    if (questCase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, getEvolveIntoPokemon());
+        .computeMessageSize(9, (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_);
     }
     if (daysInArow_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -1429,46 +1539,6 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.QuestProto other = (POGOProtos.Rpc.QuestProto) obj;
 
     if (questType_ != other.questType_) return false;
-    if (hasDailyQuest() != other.hasDailyQuest()) return false;
-    if (hasDailyQuest()) {
-      if (!getDailyQuest()
-          .equals(other.getDailyQuest())) return false;
-    }
-    if (hasMultiPart() != other.hasMultiPart()) return false;
-    if (hasMultiPart()) {
-      if (!getMultiPart()
-          .equals(other.getMultiPart())) return false;
-    }
-    if (hasCatchPokemon() != other.hasCatchPokemon()) return false;
-    if (hasCatchPokemon()) {
-      if (!getCatchPokemon()
-          .equals(other.getCatchPokemon())) return false;
-    }
-    if (hasAddFriend() != other.hasAddFriend()) return false;
-    if (hasAddFriend()) {
-      if (!getAddFriend()
-          .equals(other.getAddFriend())) return false;
-    }
-    if (hasTradePokemon() != other.hasTradePokemon()) return false;
-    if (hasTradePokemon()) {
-      if (!getTradePokemon()
-          .equals(other.getTradePokemon())) return false;
-    }
-    if (hasDailyBuddyAffection() != other.hasDailyBuddyAffection()) return false;
-    if (hasDailyBuddyAffection()) {
-      if (!getDailyBuddyAffection()
-          .equals(other.getDailyBuddyAffection())) return false;
-    }
-    if (hasQuestWalk() != other.hasQuestWalk()) return false;
-    if (hasQuestWalk()) {
-      if (!getQuestWalk()
-          .equals(other.getQuestWalk())) return false;
-    }
-    if (hasEvolveIntoPokemon() != other.hasEvolveIntoPokemon()) return false;
-    if (hasEvolveIntoPokemon()) {
-      if (!getEvolveIntoPokemon()
-          .equals(other.getEvolveIntoPokemon())) return false;
-    }
     if (hasDaysInArow() != other.hasDaysInArow()) return false;
     if (hasDaysInArow()) {
       if (!getDaysInArow()
@@ -1518,6 +1588,43 @@ private static final long serialVersionUID = 0L;
         .equals(other.getRewardPokemonIconUrl())) return false;
     if (getEndTimestampMs()
         != other.getEndTimestampMs()) return false;
+    if (!getQuestCase().equals(other.getQuestCase())) return false;
+    switch (questCase_) {
+      case 2:
+        if (!getDailyQuest()
+            .equals(other.getDailyQuest())) return false;
+        break;
+      case 3:
+        if (!getMultiPart()
+            .equals(other.getMultiPart())) return false;
+        break;
+      case 4:
+        if (!getCatchPokemon()
+            .equals(other.getCatchPokemon())) return false;
+        break;
+      case 5:
+        if (!getAddFriend()
+            .equals(other.getAddFriend())) return false;
+        break;
+      case 6:
+        if (!getTradePokemon()
+            .equals(other.getTradePokemon())) return false;
+        break;
+      case 7:
+        if (!getDailyBuddyAffection()
+            .equals(other.getDailyBuddyAffection())) return false;
+        break;
+      case 8:
+        if (!getQuestWalk()
+            .equals(other.getQuestWalk())) return false;
+        break;
+      case 9:
+        if (!getEvolveIntoPokemon()
+            .equals(other.getEvolveIntoPokemon())) return false;
+        break;
+      case 0:
+      default:
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -1531,38 +1638,6 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + QUEST_TYPE_FIELD_NUMBER;
     hash = (53 * hash) + questType_;
-    if (hasDailyQuest()) {
-      hash = (37 * hash) + DAILY_QUEST_FIELD_NUMBER;
-      hash = (53 * hash) + getDailyQuest().hashCode();
-    }
-    if (hasMultiPart()) {
-      hash = (37 * hash) + MULTI_PART_FIELD_NUMBER;
-      hash = (53 * hash) + getMultiPart().hashCode();
-    }
-    if (hasCatchPokemon()) {
-      hash = (37 * hash) + CATCH_POKEMON_FIELD_NUMBER;
-      hash = (53 * hash) + getCatchPokemon().hashCode();
-    }
-    if (hasAddFriend()) {
-      hash = (37 * hash) + ADD_FRIEND_FIELD_NUMBER;
-      hash = (53 * hash) + getAddFriend().hashCode();
-    }
-    if (hasTradePokemon()) {
-      hash = (37 * hash) + TRADE_POKEMON_FIELD_NUMBER;
-      hash = (53 * hash) + getTradePokemon().hashCode();
-    }
-    if (hasDailyBuddyAffection()) {
-      hash = (37 * hash) + DAILY_BUDDY_AFFECTION_FIELD_NUMBER;
-      hash = (53 * hash) + getDailyBuddyAffection().hashCode();
-    }
-    if (hasQuestWalk()) {
-      hash = (37 * hash) + QUEST_WALK_FIELD_NUMBER;
-      hash = (53 * hash) + getQuestWalk().hashCode();
-    }
-    if (hasEvolveIntoPokemon()) {
-      hash = (37 * hash) + EVOLVE_INTO_POKEMON_FIELD_NUMBER;
-      hash = (53 * hash) + getEvolveIntoPokemon().hashCode();
-    }
     if (hasDaysInArow()) {
       hash = (37 * hash) + DAYS_IN_AROW_FIELD_NUMBER;
       hash = (53 * hash) + getDaysInArow().hashCode();
@@ -1621,6 +1696,42 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + END_TIMESTAMP_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getEndTimestampMs());
+    switch (questCase_) {
+      case 2:
+        hash = (37 * hash) + DAILY_QUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getDailyQuest().hashCode();
+        break;
+      case 3:
+        hash = (37 * hash) + MULTI_PART_FIELD_NUMBER;
+        hash = (53 * hash) + getMultiPart().hashCode();
+        break;
+      case 4:
+        hash = (37 * hash) + CATCH_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getCatchPokemon().hashCode();
+        break;
+      case 5:
+        hash = (37 * hash) + ADD_FRIEND_FIELD_NUMBER;
+        hash = (53 * hash) + getAddFriend().hashCode();
+        break;
+      case 6:
+        hash = (37 * hash) + TRADE_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getTradePokemon().hashCode();
+        break;
+      case 7:
+        hash = (37 * hash) + DAILY_BUDDY_AFFECTION_FIELD_NUMBER;
+        hash = (53 * hash) + getDailyBuddyAffection().hashCode();
+        break;
+      case 8:
+        hash = (37 * hash) + QUEST_WALK_FIELD_NUMBER;
+        hash = (53 * hash) + getQuestWalk().hashCode();
+        break;
+      case 9:
+        hash = (37 * hash) + EVOLVE_INTO_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getEvolveIntoPokemon().hashCode();
+        break;
+      case 0:
+      default:
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1757,54 +1868,6 @@ private static final long serialVersionUID = 0L;
       super.clear();
       questType_ = 0;
 
-      if (dailyQuestBuilder_ == null) {
-        dailyQuest_ = null;
-      } else {
-        dailyQuest_ = null;
-        dailyQuestBuilder_ = null;
-      }
-      if (multiPartBuilder_ == null) {
-        multiPart_ = null;
-      } else {
-        multiPart_ = null;
-        multiPartBuilder_ = null;
-      }
-      if (catchPokemonBuilder_ == null) {
-        catchPokemon_ = null;
-      } else {
-        catchPokemon_ = null;
-        catchPokemonBuilder_ = null;
-      }
-      if (addFriendBuilder_ == null) {
-        addFriend_ = null;
-      } else {
-        addFriend_ = null;
-        addFriendBuilder_ = null;
-      }
-      if (tradePokemonBuilder_ == null) {
-        tradePokemon_ = null;
-      } else {
-        tradePokemon_ = null;
-        tradePokemonBuilder_ = null;
-      }
-      if (dailyBuddyAffectionBuilder_ == null) {
-        dailyBuddyAffection_ = null;
-      } else {
-        dailyBuddyAffection_ = null;
-        dailyBuddyAffectionBuilder_ = null;
-      }
-      if (questWalkBuilder_ == null) {
-        questWalk_ = null;
-      } else {
-        questWalk_ = null;
-        questWalkBuilder_ = null;
-      }
-      if (evolveIntoPokemonBuilder_ == null) {
-        evolveIntoPokemon_ = null;
-      } else {
-        evolveIntoPokemon_ = null;
-        evolveIntoPokemonBuilder_ = null;
-      }
       if (daysInArowBuilder_ == null) {
         daysInArow_ = null;
       } else {
@@ -1863,6 +1926,8 @@ private static final long serialVersionUID = 0L;
 
       endTimestampMs_ = 0L;
 
+      questCase_ = 0;
+      quest_ = null;
       return this;
     }
 
@@ -1890,47 +1955,63 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.QuestProto buildPartial() {
       POGOProtos.Rpc.QuestProto result = new POGOProtos.Rpc.QuestProto(this);
       int from_bitField0_ = bitField0_;
+      if (questCase_ == 2) {
+        if (dailyQuestBuilder_ == null) {
+          result.quest_ = quest_;
+        } else {
+          result.quest_ = dailyQuestBuilder_.build();
+        }
+      }
+      if (questCase_ == 3) {
+        if (multiPartBuilder_ == null) {
+          result.quest_ = quest_;
+        } else {
+          result.quest_ = multiPartBuilder_.build();
+        }
+      }
+      if (questCase_ == 4) {
+        if (catchPokemonBuilder_ == null) {
+          result.quest_ = quest_;
+        } else {
+          result.quest_ = catchPokemonBuilder_.build();
+        }
+      }
+      if (questCase_ == 5) {
+        if (addFriendBuilder_ == null) {
+          result.quest_ = quest_;
+        } else {
+          result.quest_ = addFriendBuilder_.build();
+        }
+      }
+      if (questCase_ == 6) {
+        if (tradePokemonBuilder_ == null) {
+          result.quest_ = quest_;
+        } else {
+          result.quest_ = tradePokemonBuilder_.build();
+        }
+      }
+      if (questCase_ == 7) {
+        if (dailyBuddyAffectionBuilder_ == null) {
+          result.quest_ = quest_;
+        } else {
+          result.quest_ = dailyBuddyAffectionBuilder_.build();
+        }
+      }
+      if (questCase_ == 8) {
+        if (questWalkBuilder_ == null) {
+          result.quest_ = quest_;
+        } else {
+          result.quest_ = questWalkBuilder_.build();
+        }
+      }
+      if (questCase_ == 9) {
+        if (evolveIntoPokemonBuilder_ == null) {
+          result.quest_ = quest_;
+        } else {
+          result.quest_ = evolveIntoPokemonBuilder_.build();
+        }
+      }
       result.questType_ = questType_;
-      if (dailyQuestBuilder_ == null) {
-        result.dailyQuest_ = dailyQuest_;
-      } else {
-        result.dailyQuest_ = dailyQuestBuilder_.build();
-      }
-      if (multiPartBuilder_ == null) {
-        result.multiPart_ = multiPart_;
-      } else {
-        result.multiPart_ = multiPartBuilder_.build();
-      }
-      if (catchPokemonBuilder_ == null) {
-        result.catchPokemon_ = catchPokemon_;
-      } else {
-        result.catchPokemon_ = catchPokemonBuilder_.build();
-      }
-      if (addFriendBuilder_ == null) {
-        result.addFriend_ = addFriend_;
-      } else {
-        result.addFriend_ = addFriendBuilder_.build();
-      }
-      if (tradePokemonBuilder_ == null) {
-        result.tradePokemon_ = tradePokemon_;
-      } else {
-        result.tradePokemon_ = tradePokemonBuilder_.build();
-      }
-      if (dailyBuddyAffectionBuilder_ == null) {
-        result.dailyBuddyAffection_ = dailyBuddyAffection_;
-      } else {
-        result.dailyBuddyAffection_ = dailyBuddyAffectionBuilder_.build();
-      }
-      if (questWalkBuilder_ == null) {
-        result.questWalk_ = questWalk_;
-      } else {
-        result.questWalk_ = questWalkBuilder_.build();
-      }
-      if (evolveIntoPokemonBuilder_ == null) {
-        result.evolveIntoPokemon_ = evolveIntoPokemon_;
-      } else {
-        result.evolveIntoPokemon_ = evolveIntoPokemonBuilder_.build();
-      }
       if (daysInArowBuilder_ == null) {
         result.daysInArow_ = daysInArow_;
       } else {
@@ -1972,6 +2053,7 @@ private static final long serialVersionUID = 0L;
       }
       result.rewardPokemonIconUrl_ = rewardPokemonIconUrl_;
       result.endTimestampMs_ = endTimestampMs_;
+      result.questCase_ = questCase_;
       onBuilt();
       return result;
     }
@@ -2022,30 +2104,6 @@ private static final long serialVersionUID = 0L;
       if (other == POGOProtos.Rpc.QuestProto.getDefaultInstance()) return this;
       if (other.questType_ != 0) {
         setQuestTypeValue(other.getQuestTypeValue());
-      }
-      if (other.hasDailyQuest()) {
-        mergeDailyQuest(other.getDailyQuest());
-      }
-      if (other.hasMultiPart()) {
-        mergeMultiPart(other.getMultiPart());
-      }
-      if (other.hasCatchPokemon()) {
-        mergeCatchPokemon(other.getCatchPokemon());
-      }
-      if (other.hasAddFriend()) {
-        mergeAddFriend(other.getAddFriend());
-      }
-      if (other.hasTradePokemon()) {
-        mergeTradePokemon(other.getTradePokemon());
-      }
-      if (other.hasDailyBuddyAffection()) {
-        mergeDailyBuddyAffection(other.getDailyBuddyAffection());
-      }
-      if (other.hasQuestWalk()) {
-        mergeQuestWalk(other.getQuestWalk());
-      }
-      if (other.hasEvolveIntoPokemon()) {
-        mergeEvolveIntoPokemon(other.getEvolveIntoPokemon());
       }
       if (other.hasDaysInArow()) {
         mergeDaysInArow(other.getDaysInArow());
@@ -2137,6 +2195,43 @@ private static final long serialVersionUID = 0L;
       if (other.getEndTimestampMs() != 0L) {
         setEndTimestampMs(other.getEndTimestampMs());
       }
+      switch (other.getQuestCase()) {
+        case DAILY_QUEST: {
+          mergeDailyQuest(other.getDailyQuest());
+          break;
+        }
+        case MULTI_PART: {
+          mergeMultiPart(other.getMultiPart());
+          break;
+        }
+        case CATCH_POKEMON: {
+          mergeCatchPokemon(other.getCatchPokemon());
+          break;
+        }
+        case ADD_FRIEND: {
+          mergeAddFriend(other.getAddFriend());
+          break;
+        }
+        case TRADE_POKEMON: {
+          mergeTradePokemon(other.getTradePokemon());
+          break;
+        }
+        case DAILY_BUDDY_AFFECTION: {
+          mergeDailyBuddyAffection(other.getDailyBuddyAffection());
+          break;
+        }
+        case QUEST_WALK: {
+          mergeQuestWalk(other.getQuestWalk());
+          break;
+        }
+        case EVOLVE_INTO_POKEMON: {
+          mergeEvolveIntoPokemon(other.getEvolveIntoPokemon());
+          break;
+        }
+        case QUEST_NOT_SET: {
+          break;
+        }
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -2165,7 +2260,1126 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int questCase_ = 0;
+    private java.lang.Object quest_;
+    public QuestCase
+        getQuestCase() {
+      return QuestCase.forNumber(
+          questCase_);
+    }
+
+    public Builder clearQuest() {
+      questCase_ = 0;
+      quest_ = null;
+      onChanged();
+      return this;
+    }
+
     private int bitField0_;
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.DailyQuestProto, POGOProtos.Rpc.DailyQuestProto.Builder, POGOProtos.Rpc.DailyQuestProtoOrBuilder> dailyQuestBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+     * @return Whether the dailyQuest field is set.
+     */
+    public boolean hasDailyQuest() {
+      return questCase_ == 2;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+     * @return The dailyQuest.
+     */
+    public POGOProtos.Rpc.DailyQuestProto getDailyQuest() {
+      if (dailyQuestBuilder_ == null) {
+        if (questCase_ == 2) {
+          return (POGOProtos.Rpc.DailyQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
+      } else {
+        if (questCase_ == 2) {
+          return dailyQuestBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+     */
+    public Builder setDailyQuest(POGOProtos.Rpc.DailyQuestProto value) {
+      if (dailyQuestBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        quest_ = value;
+        onChanged();
+      } else {
+        dailyQuestBuilder_.setMessage(value);
+      }
+      questCase_ = 2;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+     */
+    public Builder setDailyQuest(
+        POGOProtos.Rpc.DailyQuestProto.Builder builderForValue) {
+      if (dailyQuestBuilder_ == null) {
+        quest_ = builderForValue.build();
+        onChanged();
+      } else {
+        dailyQuestBuilder_.setMessage(builderForValue.build());
+      }
+      questCase_ = 2;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+     */
+    public Builder mergeDailyQuest(POGOProtos.Rpc.DailyQuestProto value) {
+      if (dailyQuestBuilder_ == null) {
+        if (questCase_ == 2 &&
+            quest_ != POGOProtos.Rpc.DailyQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.DailyQuestProto.newBuilder((POGOProtos.Rpc.DailyQuestProto) quest_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          quest_ = value;
+        }
+        onChanged();
+      } else {
+        if (questCase_ == 2) {
+          dailyQuestBuilder_.mergeFrom(value);
+        }
+        dailyQuestBuilder_.setMessage(value);
+      }
+      questCase_ = 2;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+     */
+    public Builder clearDailyQuest() {
+      if (dailyQuestBuilder_ == null) {
+        if (questCase_ == 2) {
+          questCase_ = 0;
+          quest_ = null;
+          onChanged();
+        }
+      } else {
+        if (questCase_ == 2) {
+          questCase_ = 0;
+          quest_ = null;
+        }
+        dailyQuestBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+     */
+    public POGOProtos.Rpc.DailyQuestProto.Builder getDailyQuestBuilder() {
+      return getDailyQuestFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+     */
+    public POGOProtos.Rpc.DailyQuestProtoOrBuilder getDailyQuestOrBuilder() {
+      if ((questCase_ == 2) && (dailyQuestBuilder_ != null)) {
+        return dailyQuestBuilder_.getMessageOrBuilder();
+      } else {
+        if (questCase_ == 2) {
+          return (POGOProtos.Rpc.DailyQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.DailyQuestProto, POGOProtos.Rpc.DailyQuestProto.Builder, POGOProtos.Rpc.DailyQuestProtoOrBuilder> 
+        getDailyQuestFieldBuilder() {
+      if (dailyQuestBuilder_ == null) {
+        if (!(questCase_ == 2)) {
+          quest_ = POGOProtos.Rpc.DailyQuestProto.getDefaultInstance();
+        }
+        dailyQuestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.DailyQuestProto, POGOProtos.Rpc.DailyQuestProto.Builder, POGOProtos.Rpc.DailyQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.DailyQuestProto) quest_,
+                getParentForChildren(),
+                isClean());
+        quest_ = null;
+      }
+      questCase_ = 2;
+      onChanged();;
+      return dailyQuestBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.MultiPartQuestProto, POGOProtos.Rpc.MultiPartQuestProto.Builder, POGOProtos.Rpc.MultiPartQuestProtoOrBuilder> multiPartBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+     * @return Whether the multiPart field is set.
+     */
+    public boolean hasMultiPart() {
+      return questCase_ == 3;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+     * @return The multiPart.
+     */
+    public POGOProtos.Rpc.MultiPartQuestProto getMultiPart() {
+      if (multiPartBuilder_ == null) {
+        if (questCase_ == 3) {
+          return (POGOProtos.Rpc.MultiPartQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
+      } else {
+        if (questCase_ == 3) {
+          return multiPartBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+     */
+    public Builder setMultiPart(POGOProtos.Rpc.MultiPartQuestProto value) {
+      if (multiPartBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        quest_ = value;
+        onChanged();
+      } else {
+        multiPartBuilder_.setMessage(value);
+      }
+      questCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+     */
+    public Builder setMultiPart(
+        POGOProtos.Rpc.MultiPartQuestProto.Builder builderForValue) {
+      if (multiPartBuilder_ == null) {
+        quest_ = builderForValue.build();
+        onChanged();
+      } else {
+        multiPartBuilder_.setMessage(builderForValue.build());
+      }
+      questCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+     */
+    public Builder mergeMultiPart(POGOProtos.Rpc.MultiPartQuestProto value) {
+      if (multiPartBuilder_ == null) {
+        if (questCase_ == 3 &&
+            quest_ != POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.MultiPartQuestProto.newBuilder((POGOProtos.Rpc.MultiPartQuestProto) quest_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          quest_ = value;
+        }
+        onChanged();
+      } else {
+        if (questCase_ == 3) {
+          multiPartBuilder_.mergeFrom(value);
+        }
+        multiPartBuilder_.setMessage(value);
+      }
+      questCase_ = 3;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+     */
+    public Builder clearMultiPart() {
+      if (multiPartBuilder_ == null) {
+        if (questCase_ == 3) {
+          questCase_ = 0;
+          quest_ = null;
+          onChanged();
+        }
+      } else {
+        if (questCase_ == 3) {
+          questCase_ = 0;
+          quest_ = null;
+        }
+        multiPartBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+     */
+    public POGOProtos.Rpc.MultiPartQuestProto.Builder getMultiPartBuilder() {
+      return getMultiPartFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+     */
+    public POGOProtos.Rpc.MultiPartQuestProtoOrBuilder getMultiPartOrBuilder() {
+      if ((questCase_ == 3) && (multiPartBuilder_ != null)) {
+        return multiPartBuilder_.getMessageOrBuilder();
+      } else {
+        if (questCase_ == 3) {
+          return (POGOProtos.Rpc.MultiPartQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.MultiPartQuestProto, POGOProtos.Rpc.MultiPartQuestProto.Builder, POGOProtos.Rpc.MultiPartQuestProtoOrBuilder> 
+        getMultiPartFieldBuilder() {
+      if (multiPartBuilder_ == null) {
+        if (!(questCase_ == 3)) {
+          quest_ = POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance();
+        }
+        multiPartBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.MultiPartQuestProto, POGOProtos.Rpc.MultiPartQuestProto.Builder, POGOProtos.Rpc.MultiPartQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.MultiPartQuestProto) quest_,
+                getParentForChildren(),
+                isClean());
+        quest_ = null;
+      }
+      questCase_ = 3;
+      onChanged();;
+      return multiPartBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CatchPokemonQuestProto, POGOProtos.Rpc.CatchPokemonQuestProto.Builder, POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder> catchPokemonBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+     * @return Whether the catchPokemon field is set.
+     */
+    public boolean hasCatchPokemon() {
+      return questCase_ == 4;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+     * @return The catchPokemon.
+     */
+    public POGOProtos.Rpc.CatchPokemonQuestProto getCatchPokemon() {
+      if (catchPokemonBuilder_ == null) {
+        if (questCase_ == 4) {
+          return (POGOProtos.Rpc.CatchPokemonQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
+      } else {
+        if (questCase_ == 4) {
+          return catchPokemonBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+     */
+    public Builder setCatchPokemon(POGOProtos.Rpc.CatchPokemonQuestProto value) {
+      if (catchPokemonBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        quest_ = value;
+        onChanged();
+      } else {
+        catchPokemonBuilder_.setMessage(value);
+      }
+      questCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+     */
+    public Builder setCatchPokemon(
+        POGOProtos.Rpc.CatchPokemonQuestProto.Builder builderForValue) {
+      if (catchPokemonBuilder_ == null) {
+        quest_ = builderForValue.build();
+        onChanged();
+      } else {
+        catchPokemonBuilder_.setMessage(builderForValue.build());
+      }
+      questCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+     */
+    public Builder mergeCatchPokemon(POGOProtos.Rpc.CatchPokemonQuestProto value) {
+      if (catchPokemonBuilder_ == null) {
+        if (questCase_ == 4 &&
+            quest_ != POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.CatchPokemonQuestProto.newBuilder((POGOProtos.Rpc.CatchPokemonQuestProto) quest_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          quest_ = value;
+        }
+        onChanged();
+      } else {
+        if (questCase_ == 4) {
+          catchPokemonBuilder_.mergeFrom(value);
+        }
+        catchPokemonBuilder_.setMessage(value);
+      }
+      questCase_ = 4;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+     */
+    public Builder clearCatchPokemon() {
+      if (catchPokemonBuilder_ == null) {
+        if (questCase_ == 4) {
+          questCase_ = 0;
+          quest_ = null;
+          onChanged();
+        }
+      } else {
+        if (questCase_ == 4) {
+          questCase_ = 0;
+          quest_ = null;
+        }
+        catchPokemonBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+     */
+    public POGOProtos.Rpc.CatchPokemonQuestProto.Builder getCatchPokemonBuilder() {
+      return getCatchPokemonFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+     */
+    public POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder getCatchPokemonOrBuilder() {
+      if ((questCase_ == 4) && (catchPokemonBuilder_ != null)) {
+        return catchPokemonBuilder_.getMessageOrBuilder();
+      } else {
+        if (questCase_ == 4) {
+          return (POGOProtos.Rpc.CatchPokemonQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CatchPokemonQuestProto, POGOProtos.Rpc.CatchPokemonQuestProto.Builder, POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder> 
+        getCatchPokemonFieldBuilder() {
+      if (catchPokemonBuilder_ == null) {
+        if (!(questCase_ == 4)) {
+          quest_ = POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance();
+        }
+        catchPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.CatchPokemonQuestProto, POGOProtos.Rpc.CatchPokemonQuestProto.Builder, POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.CatchPokemonQuestProto) quest_,
+                getParentForChildren(),
+                isClean());
+        quest_ = null;
+      }
+      questCase_ = 4;
+      onChanged();;
+      return catchPokemonBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.AddFriendQuestProto, POGOProtos.Rpc.AddFriendQuestProto.Builder, POGOProtos.Rpc.AddFriendQuestProtoOrBuilder> addFriendBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+     * @return Whether the addFriend field is set.
+     */
+    public boolean hasAddFriend() {
+      return questCase_ == 5;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+     * @return The addFriend.
+     */
+    public POGOProtos.Rpc.AddFriendQuestProto getAddFriend() {
+      if (addFriendBuilder_ == null) {
+        if (questCase_ == 5) {
+          return (POGOProtos.Rpc.AddFriendQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
+      } else {
+        if (questCase_ == 5) {
+          return addFriendBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+     */
+    public Builder setAddFriend(POGOProtos.Rpc.AddFriendQuestProto value) {
+      if (addFriendBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        quest_ = value;
+        onChanged();
+      } else {
+        addFriendBuilder_.setMessage(value);
+      }
+      questCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+     */
+    public Builder setAddFriend(
+        POGOProtos.Rpc.AddFriendQuestProto.Builder builderForValue) {
+      if (addFriendBuilder_ == null) {
+        quest_ = builderForValue.build();
+        onChanged();
+      } else {
+        addFriendBuilder_.setMessage(builderForValue.build());
+      }
+      questCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+     */
+    public Builder mergeAddFriend(POGOProtos.Rpc.AddFriendQuestProto value) {
+      if (addFriendBuilder_ == null) {
+        if (questCase_ == 5 &&
+            quest_ != POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.AddFriendQuestProto.newBuilder((POGOProtos.Rpc.AddFriendQuestProto) quest_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          quest_ = value;
+        }
+        onChanged();
+      } else {
+        if (questCase_ == 5) {
+          addFriendBuilder_.mergeFrom(value);
+        }
+        addFriendBuilder_.setMessage(value);
+      }
+      questCase_ = 5;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+     */
+    public Builder clearAddFriend() {
+      if (addFriendBuilder_ == null) {
+        if (questCase_ == 5) {
+          questCase_ = 0;
+          quest_ = null;
+          onChanged();
+        }
+      } else {
+        if (questCase_ == 5) {
+          questCase_ = 0;
+          quest_ = null;
+        }
+        addFriendBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+     */
+    public POGOProtos.Rpc.AddFriendQuestProto.Builder getAddFriendBuilder() {
+      return getAddFriendFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+     */
+    public POGOProtos.Rpc.AddFriendQuestProtoOrBuilder getAddFriendOrBuilder() {
+      if ((questCase_ == 5) && (addFriendBuilder_ != null)) {
+        return addFriendBuilder_.getMessageOrBuilder();
+      } else {
+        if (questCase_ == 5) {
+          return (POGOProtos.Rpc.AddFriendQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.AddFriendQuestProto, POGOProtos.Rpc.AddFriendQuestProto.Builder, POGOProtos.Rpc.AddFriendQuestProtoOrBuilder> 
+        getAddFriendFieldBuilder() {
+      if (addFriendBuilder_ == null) {
+        if (!(questCase_ == 5)) {
+          quest_ = POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance();
+        }
+        addFriendBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.AddFriendQuestProto, POGOProtos.Rpc.AddFriendQuestProto.Builder, POGOProtos.Rpc.AddFriendQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.AddFriendQuestProto) quest_,
+                getParentForChildren(),
+                isClean());
+        quest_ = null;
+      }
+      questCase_ = 5;
+      onChanged();;
+      return addFriendBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.TradePokemonQuestProto, POGOProtos.Rpc.TradePokemonQuestProto.Builder, POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder> tradePokemonBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+     * @return Whether the tradePokemon field is set.
+     */
+    public boolean hasTradePokemon() {
+      return questCase_ == 6;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+     * @return The tradePokemon.
+     */
+    public POGOProtos.Rpc.TradePokemonQuestProto getTradePokemon() {
+      if (tradePokemonBuilder_ == null) {
+        if (questCase_ == 6) {
+          return (POGOProtos.Rpc.TradePokemonQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
+      } else {
+        if (questCase_ == 6) {
+          return tradePokemonBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+     */
+    public Builder setTradePokemon(POGOProtos.Rpc.TradePokemonQuestProto value) {
+      if (tradePokemonBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        quest_ = value;
+        onChanged();
+      } else {
+        tradePokemonBuilder_.setMessage(value);
+      }
+      questCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+     */
+    public Builder setTradePokemon(
+        POGOProtos.Rpc.TradePokemonQuestProto.Builder builderForValue) {
+      if (tradePokemonBuilder_ == null) {
+        quest_ = builderForValue.build();
+        onChanged();
+      } else {
+        tradePokemonBuilder_.setMessage(builderForValue.build());
+      }
+      questCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+     */
+    public Builder mergeTradePokemon(POGOProtos.Rpc.TradePokemonQuestProto value) {
+      if (tradePokemonBuilder_ == null) {
+        if (questCase_ == 6 &&
+            quest_ != POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.TradePokemonQuestProto.newBuilder((POGOProtos.Rpc.TradePokemonQuestProto) quest_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          quest_ = value;
+        }
+        onChanged();
+      } else {
+        if (questCase_ == 6) {
+          tradePokemonBuilder_.mergeFrom(value);
+        }
+        tradePokemonBuilder_.setMessage(value);
+      }
+      questCase_ = 6;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+     */
+    public Builder clearTradePokemon() {
+      if (tradePokemonBuilder_ == null) {
+        if (questCase_ == 6) {
+          questCase_ = 0;
+          quest_ = null;
+          onChanged();
+        }
+      } else {
+        if (questCase_ == 6) {
+          questCase_ = 0;
+          quest_ = null;
+        }
+        tradePokemonBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+     */
+    public POGOProtos.Rpc.TradePokemonQuestProto.Builder getTradePokemonBuilder() {
+      return getTradePokemonFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+     */
+    public POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder getTradePokemonOrBuilder() {
+      if ((questCase_ == 6) && (tradePokemonBuilder_ != null)) {
+        return tradePokemonBuilder_.getMessageOrBuilder();
+      } else {
+        if (questCase_ == 6) {
+          return (POGOProtos.Rpc.TradePokemonQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.TradePokemonQuestProto, POGOProtos.Rpc.TradePokemonQuestProto.Builder, POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder> 
+        getTradePokemonFieldBuilder() {
+      if (tradePokemonBuilder_ == null) {
+        if (!(questCase_ == 6)) {
+          quest_ = POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance();
+        }
+        tradePokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.TradePokemonQuestProto, POGOProtos.Rpc.TradePokemonQuestProto.Builder, POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.TradePokemonQuestProto) quest_,
+                getParentForChildren(),
+                isClean());
+        quest_ = null;
+      }
+      questCase_ = 6;
+      onChanged();;
+      return tradePokemonBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.DailyBuddyAffectionQuestProto, POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder, POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder> dailyBuddyAffectionBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+     * @return Whether the dailyBuddyAffection field is set.
+     */
+    public boolean hasDailyBuddyAffection() {
+      return questCase_ == 7;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+     * @return The dailyBuddyAffection.
+     */
+    public POGOProtos.Rpc.DailyBuddyAffectionQuestProto getDailyBuddyAffection() {
+      if (dailyBuddyAffectionBuilder_ == null) {
+        if (questCase_ == 7) {
+          return (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
+      } else {
+        if (questCase_ == 7) {
+          return dailyBuddyAffectionBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+     */
+    public Builder setDailyBuddyAffection(POGOProtos.Rpc.DailyBuddyAffectionQuestProto value) {
+      if (dailyBuddyAffectionBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        quest_ = value;
+        onChanged();
+      } else {
+        dailyBuddyAffectionBuilder_.setMessage(value);
+      }
+      questCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+     */
+    public Builder setDailyBuddyAffection(
+        POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder builderForValue) {
+      if (dailyBuddyAffectionBuilder_ == null) {
+        quest_ = builderForValue.build();
+        onChanged();
+      } else {
+        dailyBuddyAffectionBuilder_.setMessage(builderForValue.build());
+      }
+      questCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+     */
+    public Builder mergeDailyBuddyAffection(POGOProtos.Rpc.DailyBuddyAffectionQuestProto value) {
+      if (dailyBuddyAffectionBuilder_ == null) {
+        if (questCase_ == 7 &&
+            quest_ != POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.DailyBuddyAffectionQuestProto.newBuilder((POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          quest_ = value;
+        }
+        onChanged();
+      } else {
+        if (questCase_ == 7) {
+          dailyBuddyAffectionBuilder_.mergeFrom(value);
+        }
+        dailyBuddyAffectionBuilder_.setMessage(value);
+      }
+      questCase_ = 7;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+     */
+    public Builder clearDailyBuddyAffection() {
+      if (dailyBuddyAffectionBuilder_ == null) {
+        if (questCase_ == 7) {
+          questCase_ = 0;
+          quest_ = null;
+          onChanged();
+        }
+      } else {
+        if (questCase_ == 7) {
+          questCase_ = 0;
+          quest_ = null;
+        }
+        dailyBuddyAffectionBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+     */
+    public POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder getDailyBuddyAffectionBuilder() {
+      return getDailyBuddyAffectionFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+     */
+    public POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder getDailyBuddyAffectionOrBuilder() {
+      if ((questCase_ == 7) && (dailyBuddyAffectionBuilder_ != null)) {
+        return dailyBuddyAffectionBuilder_.getMessageOrBuilder();
+      } else {
+        if (questCase_ == 7) {
+          return (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.DailyBuddyAffectionQuestProto, POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder, POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder> 
+        getDailyBuddyAffectionFieldBuilder() {
+      if (dailyBuddyAffectionBuilder_ == null) {
+        if (!(questCase_ == 7)) {
+          quest_ = POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance();
+        }
+        dailyBuddyAffectionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.DailyBuddyAffectionQuestProto, POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder, POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.DailyBuddyAffectionQuestProto) quest_,
+                getParentForChildren(),
+                isClean());
+        quest_ = null;
+      }
+      questCase_ = 7;
+      onChanged();;
+      return dailyBuddyAffectionBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestWalkProto, POGOProtos.Rpc.QuestWalkProto.Builder, POGOProtos.Rpc.QuestWalkProtoOrBuilder> questWalkBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+     * @return Whether the questWalk field is set.
+     */
+    public boolean hasQuestWalk() {
+      return questCase_ == 8;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+     * @return The questWalk.
+     */
+    public POGOProtos.Rpc.QuestWalkProto getQuestWalk() {
+      if (questWalkBuilder_ == null) {
+        if (questCase_ == 8) {
+          return (POGOProtos.Rpc.QuestWalkProto) quest_;
+        }
+        return POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
+      } else {
+        if (questCase_ == 8) {
+          return questWalkBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+     */
+    public Builder setQuestWalk(POGOProtos.Rpc.QuestWalkProto value) {
+      if (questWalkBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        quest_ = value;
+        onChanged();
+      } else {
+        questWalkBuilder_.setMessage(value);
+      }
+      questCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+     */
+    public Builder setQuestWalk(
+        POGOProtos.Rpc.QuestWalkProto.Builder builderForValue) {
+      if (questWalkBuilder_ == null) {
+        quest_ = builderForValue.build();
+        onChanged();
+      } else {
+        questWalkBuilder_.setMessage(builderForValue.build());
+      }
+      questCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+     */
+    public Builder mergeQuestWalk(POGOProtos.Rpc.QuestWalkProto value) {
+      if (questWalkBuilder_ == null) {
+        if (questCase_ == 8 &&
+            quest_ != POGOProtos.Rpc.QuestWalkProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.QuestWalkProto.newBuilder((POGOProtos.Rpc.QuestWalkProto) quest_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          quest_ = value;
+        }
+        onChanged();
+      } else {
+        if (questCase_ == 8) {
+          questWalkBuilder_.mergeFrom(value);
+        }
+        questWalkBuilder_.setMessage(value);
+      }
+      questCase_ = 8;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+     */
+    public Builder clearQuestWalk() {
+      if (questWalkBuilder_ == null) {
+        if (questCase_ == 8) {
+          questCase_ = 0;
+          quest_ = null;
+          onChanged();
+        }
+      } else {
+        if (questCase_ == 8) {
+          questCase_ = 0;
+          quest_ = null;
+        }
+        questWalkBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+     */
+    public POGOProtos.Rpc.QuestWalkProto.Builder getQuestWalkBuilder() {
+      return getQuestWalkFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+     */
+    public POGOProtos.Rpc.QuestWalkProtoOrBuilder getQuestWalkOrBuilder() {
+      if ((questCase_ == 8) && (questWalkBuilder_ != null)) {
+        return questWalkBuilder_.getMessageOrBuilder();
+      } else {
+        if (questCase_ == 8) {
+          return (POGOProtos.Rpc.QuestWalkProto) quest_;
+        }
+        return POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.QuestWalkProto, POGOProtos.Rpc.QuestWalkProto.Builder, POGOProtos.Rpc.QuestWalkProtoOrBuilder> 
+        getQuestWalkFieldBuilder() {
+      if (questWalkBuilder_ == null) {
+        if (!(questCase_ == 8)) {
+          quest_ = POGOProtos.Rpc.QuestWalkProto.getDefaultInstance();
+        }
+        questWalkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.QuestWalkProto, POGOProtos.Rpc.QuestWalkProto.Builder, POGOProtos.Rpc.QuestWalkProtoOrBuilder>(
+                (POGOProtos.Rpc.QuestWalkProto) quest_,
+                getParentForChildren(),
+                isClean());
+        quest_ = null;
+      }
+      questCase_ = 8;
+      onChanged();;
+      return questWalkBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.EvolveIntoPokemonQuestProto, POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder, POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder> evolveIntoPokemonBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+     * @return Whether the evolveIntoPokemon field is set.
+     */
+    public boolean hasEvolveIntoPokemon() {
+      return questCase_ == 9;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+     * @return The evolveIntoPokemon.
+     */
+    public POGOProtos.Rpc.EvolveIntoPokemonQuestProto getEvolveIntoPokemon() {
+      if (evolveIntoPokemonBuilder_ == null) {
+        if (questCase_ == 9) {
+          return (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
+      } else {
+        if (questCase_ == 9) {
+          return evolveIntoPokemonBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+     */
+    public Builder setEvolveIntoPokemon(POGOProtos.Rpc.EvolveIntoPokemonQuestProto value) {
+      if (evolveIntoPokemonBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        quest_ = value;
+        onChanged();
+      } else {
+        evolveIntoPokemonBuilder_.setMessage(value);
+      }
+      questCase_ = 9;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+     */
+    public Builder setEvolveIntoPokemon(
+        POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder builderForValue) {
+      if (evolveIntoPokemonBuilder_ == null) {
+        quest_ = builderForValue.build();
+        onChanged();
+      } else {
+        evolveIntoPokemonBuilder_.setMessage(builderForValue.build());
+      }
+      questCase_ = 9;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+     */
+    public Builder mergeEvolveIntoPokemon(POGOProtos.Rpc.EvolveIntoPokemonQuestProto value) {
+      if (evolveIntoPokemonBuilder_ == null) {
+        if (questCase_ == 9 &&
+            quest_ != POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance()) {
+          quest_ = POGOProtos.Rpc.EvolveIntoPokemonQuestProto.newBuilder((POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          quest_ = value;
+        }
+        onChanged();
+      } else {
+        if (questCase_ == 9) {
+          evolveIntoPokemonBuilder_.mergeFrom(value);
+        }
+        evolveIntoPokemonBuilder_.setMessage(value);
+      }
+      questCase_ = 9;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+     */
+    public Builder clearEvolveIntoPokemon() {
+      if (evolveIntoPokemonBuilder_ == null) {
+        if (questCase_ == 9) {
+          questCase_ = 0;
+          quest_ = null;
+          onChanged();
+        }
+      } else {
+        if (questCase_ == 9) {
+          questCase_ = 0;
+          quest_ = null;
+        }
+        evolveIntoPokemonBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+     */
+    public POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder getEvolveIntoPokemonBuilder() {
+      return getEvolveIntoPokemonFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+     */
+    public POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder getEvolveIntoPokemonOrBuilder() {
+      if ((questCase_ == 9) && (evolveIntoPokemonBuilder_ != null)) {
+        return evolveIntoPokemonBuilder_.getMessageOrBuilder();
+      } else {
+        if (questCase_ == 9) {
+          return (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_;
+        }
+        return POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.EvolveIntoPokemonQuestProto, POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder, POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder> 
+        getEvolveIntoPokemonFieldBuilder() {
+      if (evolveIntoPokemonBuilder_ == null) {
+        if (!(questCase_ == 9)) {
+          quest_ = POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance();
+        }
+        evolveIntoPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.EvolveIntoPokemonQuestProto, POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder, POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder>(
+                (POGOProtos.Rpc.EvolveIntoPokemonQuestProto) quest_,
+                getParentForChildren(),
+                isClean());
+        quest_ = null;
+      }
+      questCase_ = 9;
+      onChanged();;
+      return evolveIntoPokemonBuilder_;
+    }
 
     private int questType_ = 0;
     /**
@@ -2217,958 +3431,6 @@ private static final long serialVersionUID = 0L;
       questType_ = 0;
       onChanged();
       return this;
-    }
-
-    private POGOProtos.Rpc.DailyQuestProto dailyQuest_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DailyQuestProto, POGOProtos.Rpc.DailyQuestProto.Builder, POGOProtos.Rpc.DailyQuestProtoOrBuilder> dailyQuestBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-     * @return Whether the dailyQuest field is set.
-     */
-    public boolean hasDailyQuest() {
-      return dailyQuestBuilder_ != null || dailyQuest_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-     * @return The dailyQuest.
-     */
-    public POGOProtos.Rpc.DailyQuestProto getDailyQuest() {
-      if (dailyQuestBuilder_ == null) {
-        return dailyQuest_ == null ? POGOProtos.Rpc.DailyQuestProto.getDefaultInstance() : dailyQuest_;
-      } else {
-        return dailyQuestBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-     */
-    public Builder setDailyQuest(POGOProtos.Rpc.DailyQuestProto value) {
-      if (dailyQuestBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        dailyQuest_ = value;
-        onChanged();
-      } else {
-        dailyQuestBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-     */
-    public Builder setDailyQuest(
-        POGOProtos.Rpc.DailyQuestProto.Builder builderForValue) {
-      if (dailyQuestBuilder_ == null) {
-        dailyQuest_ = builderForValue.build();
-        onChanged();
-      } else {
-        dailyQuestBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-     */
-    public Builder mergeDailyQuest(POGOProtos.Rpc.DailyQuestProto value) {
-      if (dailyQuestBuilder_ == null) {
-        if (dailyQuest_ != null) {
-          dailyQuest_ =
-            POGOProtos.Rpc.DailyQuestProto.newBuilder(dailyQuest_).mergeFrom(value).buildPartial();
-        } else {
-          dailyQuest_ = value;
-        }
-        onChanged();
-      } else {
-        dailyQuestBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-     */
-    public Builder clearDailyQuest() {
-      if (dailyQuestBuilder_ == null) {
-        dailyQuest_ = null;
-        onChanged();
-      } else {
-        dailyQuest_ = null;
-        dailyQuestBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-     */
-    public POGOProtos.Rpc.DailyQuestProto.Builder getDailyQuestBuilder() {
-      
-      onChanged();
-      return getDailyQuestFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-     */
-    public POGOProtos.Rpc.DailyQuestProtoOrBuilder getDailyQuestOrBuilder() {
-      if (dailyQuestBuilder_ != null) {
-        return dailyQuestBuilder_.getMessageOrBuilder();
-      } else {
-        return dailyQuest_ == null ?
-            POGOProtos.Rpc.DailyQuestProto.getDefaultInstance() : dailyQuest_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DailyQuestProto, POGOProtos.Rpc.DailyQuestProto.Builder, POGOProtos.Rpc.DailyQuestProtoOrBuilder> 
-        getDailyQuestFieldBuilder() {
-      if (dailyQuestBuilder_ == null) {
-        dailyQuestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.DailyQuestProto, POGOProtos.Rpc.DailyQuestProto.Builder, POGOProtos.Rpc.DailyQuestProtoOrBuilder>(
-                getDailyQuest(),
-                getParentForChildren(),
-                isClean());
-        dailyQuest_ = null;
-      }
-      return dailyQuestBuilder_;
-    }
-
-    private POGOProtos.Rpc.MultiPartQuestProto multiPart_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.MultiPartQuestProto, POGOProtos.Rpc.MultiPartQuestProto.Builder, POGOProtos.Rpc.MultiPartQuestProtoOrBuilder> multiPartBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-     * @return Whether the multiPart field is set.
-     */
-    public boolean hasMultiPart() {
-      return multiPartBuilder_ != null || multiPart_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-     * @return The multiPart.
-     */
-    public POGOProtos.Rpc.MultiPartQuestProto getMultiPart() {
-      if (multiPartBuilder_ == null) {
-        return multiPart_ == null ? POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance() : multiPart_;
-      } else {
-        return multiPartBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-     */
-    public Builder setMultiPart(POGOProtos.Rpc.MultiPartQuestProto value) {
-      if (multiPartBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        multiPart_ = value;
-        onChanged();
-      } else {
-        multiPartBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-     */
-    public Builder setMultiPart(
-        POGOProtos.Rpc.MultiPartQuestProto.Builder builderForValue) {
-      if (multiPartBuilder_ == null) {
-        multiPart_ = builderForValue.build();
-        onChanged();
-      } else {
-        multiPartBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-     */
-    public Builder mergeMultiPart(POGOProtos.Rpc.MultiPartQuestProto value) {
-      if (multiPartBuilder_ == null) {
-        if (multiPart_ != null) {
-          multiPart_ =
-            POGOProtos.Rpc.MultiPartQuestProto.newBuilder(multiPart_).mergeFrom(value).buildPartial();
-        } else {
-          multiPart_ = value;
-        }
-        onChanged();
-      } else {
-        multiPartBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-     */
-    public Builder clearMultiPart() {
-      if (multiPartBuilder_ == null) {
-        multiPart_ = null;
-        onChanged();
-      } else {
-        multiPart_ = null;
-        multiPartBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-     */
-    public POGOProtos.Rpc.MultiPartQuestProto.Builder getMultiPartBuilder() {
-      
-      onChanged();
-      return getMultiPartFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-     */
-    public POGOProtos.Rpc.MultiPartQuestProtoOrBuilder getMultiPartOrBuilder() {
-      if (multiPartBuilder_ != null) {
-        return multiPartBuilder_.getMessageOrBuilder();
-      } else {
-        return multiPart_ == null ?
-            POGOProtos.Rpc.MultiPartQuestProto.getDefaultInstance() : multiPart_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.MultiPartQuestProto, POGOProtos.Rpc.MultiPartQuestProto.Builder, POGOProtos.Rpc.MultiPartQuestProtoOrBuilder> 
-        getMultiPartFieldBuilder() {
-      if (multiPartBuilder_ == null) {
-        multiPartBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.MultiPartQuestProto, POGOProtos.Rpc.MultiPartQuestProto.Builder, POGOProtos.Rpc.MultiPartQuestProtoOrBuilder>(
-                getMultiPart(),
-                getParentForChildren(),
-                isClean());
-        multiPart_ = null;
-      }
-      return multiPartBuilder_;
-    }
-
-    private POGOProtos.Rpc.CatchPokemonQuestProto catchPokemon_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CatchPokemonQuestProto, POGOProtos.Rpc.CatchPokemonQuestProto.Builder, POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder> catchPokemonBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-     * @return Whether the catchPokemon field is set.
-     */
-    public boolean hasCatchPokemon() {
-      return catchPokemonBuilder_ != null || catchPokemon_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-     * @return The catchPokemon.
-     */
-    public POGOProtos.Rpc.CatchPokemonQuestProto getCatchPokemon() {
-      if (catchPokemonBuilder_ == null) {
-        return catchPokemon_ == null ? POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance() : catchPokemon_;
-      } else {
-        return catchPokemonBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-     */
-    public Builder setCatchPokemon(POGOProtos.Rpc.CatchPokemonQuestProto value) {
-      if (catchPokemonBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        catchPokemon_ = value;
-        onChanged();
-      } else {
-        catchPokemonBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-     */
-    public Builder setCatchPokemon(
-        POGOProtos.Rpc.CatchPokemonQuestProto.Builder builderForValue) {
-      if (catchPokemonBuilder_ == null) {
-        catchPokemon_ = builderForValue.build();
-        onChanged();
-      } else {
-        catchPokemonBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-     */
-    public Builder mergeCatchPokemon(POGOProtos.Rpc.CatchPokemonQuestProto value) {
-      if (catchPokemonBuilder_ == null) {
-        if (catchPokemon_ != null) {
-          catchPokemon_ =
-            POGOProtos.Rpc.CatchPokemonQuestProto.newBuilder(catchPokemon_).mergeFrom(value).buildPartial();
-        } else {
-          catchPokemon_ = value;
-        }
-        onChanged();
-      } else {
-        catchPokemonBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-     */
-    public Builder clearCatchPokemon() {
-      if (catchPokemonBuilder_ == null) {
-        catchPokemon_ = null;
-        onChanged();
-      } else {
-        catchPokemon_ = null;
-        catchPokemonBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-     */
-    public POGOProtos.Rpc.CatchPokemonQuestProto.Builder getCatchPokemonBuilder() {
-      
-      onChanged();
-      return getCatchPokemonFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-     */
-    public POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder getCatchPokemonOrBuilder() {
-      if (catchPokemonBuilder_ != null) {
-        return catchPokemonBuilder_.getMessageOrBuilder();
-      } else {
-        return catchPokemon_ == null ?
-            POGOProtos.Rpc.CatchPokemonQuestProto.getDefaultInstance() : catchPokemon_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CatchPokemonQuestProto, POGOProtos.Rpc.CatchPokemonQuestProto.Builder, POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder> 
-        getCatchPokemonFieldBuilder() {
-      if (catchPokemonBuilder_ == null) {
-        catchPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.CatchPokemonQuestProto, POGOProtos.Rpc.CatchPokemonQuestProto.Builder, POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder>(
-                getCatchPokemon(),
-                getParentForChildren(),
-                isClean());
-        catchPokemon_ = null;
-      }
-      return catchPokemonBuilder_;
-    }
-
-    private POGOProtos.Rpc.AddFriendQuestProto addFriend_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AddFriendQuestProto, POGOProtos.Rpc.AddFriendQuestProto.Builder, POGOProtos.Rpc.AddFriendQuestProtoOrBuilder> addFriendBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-     * @return Whether the addFriend field is set.
-     */
-    public boolean hasAddFriend() {
-      return addFriendBuilder_ != null || addFriend_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-     * @return The addFriend.
-     */
-    public POGOProtos.Rpc.AddFriendQuestProto getAddFriend() {
-      if (addFriendBuilder_ == null) {
-        return addFriend_ == null ? POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance() : addFriend_;
-      } else {
-        return addFriendBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-     */
-    public Builder setAddFriend(POGOProtos.Rpc.AddFriendQuestProto value) {
-      if (addFriendBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        addFriend_ = value;
-        onChanged();
-      } else {
-        addFriendBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-     */
-    public Builder setAddFriend(
-        POGOProtos.Rpc.AddFriendQuestProto.Builder builderForValue) {
-      if (addFriendBuilder_ == null) {
-        addFriend_ = builderForValue.build();
-        onChanged();
-      } else {
-        addFriendBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-     */
-    public Builder mergeAddFriend(POGOProtos.Rpc.AddFriendQuestProto value) {
-      if (addFriendBuilder_ == null) {
-        if (addFriend_ != null) {
-          addFriend_ =
-            POGOProtos.Rpc.AddFriendQuestProto.newBuilder(addFriend_).mergeFrom(value).buildPartial();
-        } else {
-          addFriend_ = value;
-        }
-        onChanged();
-      } else {
-        addFriendBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-     */
-    public Builder clearAddFriend() {
-      if (addFriendBuilder_ == null) {
-        addFriend_ = null;
-        onChanged();
-      } else {
-        addFriend_ = null;
-        addFriendBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-     */
-    public POGOProtos.Rpc.AddFriendQuestProto.Builder getAddFriendBuilder() {
-      
-      onChanged();
-      return getAddFriendFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-     */
-    public POGOProtos.Rpc.AddFriendQuestProtoOrBuilder getAddFriendOrBuilder() {
-      if (addFriendBuilder_ != null) {
-        return addFriendBuilder_.getMessageOrBuilder();
-      } else {
-        return addFriend_ == null ?
-            POGOProtos.Rpc.AddFriendQuestProto.getDefaultInstance() : addFriend_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AddFriendQuestProto, POGOProtos.Rpc.AddFriendQuestProto.Builder, POGOProtos.Rpc.AddFriendQuestProtoOrBuilder> 
-        getAddFriendFieldBuilder() {
-      if (addFriendBuilder_ == null) {
-        addFriendBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.AddFriendQuestProto, POGOProtos.Rpc.AddFriendQuestProto.Builder, POGOProtos.Rpc.AddFriendQuestProtoOrBuilder>(
-                getAddFriend(),
-                getParentForChildren(),
-                isClean());
-        addFriend_ = null;
-      }
-      return addFriendBuilder_;
-    }
-
-    private POGOProtos.Rpc.TradePokemonQuestProto tradePokemon_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.TradePokemonQuestProto, POGOProtos.Rpc.TradePokemonQuestProto.Builder, POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder> tradePokemonBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-     * @return Whether the tradePokemon field is set.
-     */
-    public boolean hasTradePokemon() {
-      return tradePokemonBuilder_ != null || tradePokemon_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-     * @return The tradePokemon.
-     */
-    public POGOProtos.Rpc.TradePokemonQuestProto getTradePokemon() {
-      if (tradePokemonBuilder_ == null) {
-        return tradePokemon_ == null ? POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance() : tradePokemon_;
-      } else {
-        return tradePokemonBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-     */
-    public Builder setTradePokemon(POGOProtos.Rpc.TradePokemonQuestProto value) {
-      if (tradePokemonBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        tradePokemon_ = value;
-        onChanged();
-      } else {
-        tradePokemonBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-     */
-    public Builder setTradePokemon(
-        POGOProtos.Rpc.TradePokemonQuestProto.Builder builderForValue) {
-      if (tradePokemonBuilder_ == null) {
-        tradePokemon_ = builderForValue.build();
-        onChanged();
-      } else {
-        tradePokemonBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-     */
-    public Builder mergeTradePokemon(POGOProtos.Rpc.TradePokemonQuestProto value) {
-      if (tradePokemonBuilder_ == null) {
-        if (tradePokemon_ != null) {
-          tradePokemon_ =
-            POGOProtos.Rpc.TradePokemonQuestProto.newBuilder(tradePokemon_).mergeFrom(value).buildPartial();
-        } else {
-          tradePokemon_ = value;
-        }
-        onChanged();
-      } else {
-        tradePokemonBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-     */
-    public Builder clearTradePokemon() {
-      if (tradePokemonBuilder_ == null) {
-        tradePokemon_ = null;
-        onChanged();
-      } else {
-        tradePokemon_ = null;
-        tradePokemonBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-     */
-    public POGOProtos.Rpc.TradePokemonQuestProto.Builder getTradePokemonBuilder() {
-      
-      onChanged();
-      return getTradePokemonFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-     */
-    public POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder getTradePokemonOrBuilder() {
-      if (tradePokemonBuilder_ != null) {
-        return tradePokemonBuilder_.getMessageOrBuilder();
-      } else {
-        return tradePokemon_ == null ?
-            POGOProtos.Rpc.TradePokemonQuestProto.getDefaultInstance() : tradePokemon_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.TradePokemonQuestProto, POGOProtos.Rpc.TradePokemonQuestProto.Builder, POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder> 
-        getTradePokemonFieldBuilder() {
-      if (tradePokemonBuilder_ == null) {
-        tradePokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.TradePokemonQuestProto, POGOProtos.Rpc.TradePokemonQuestProto.Builder, POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder>(
-                getTradePokemon(),
-                getParentForChildren(),
-                isClean());
-        tradePokemon_ = null;
-      }
-      return tradePokemonBuilder_;
-    }
-
-    private POGOProtos.Rpc.DailyBuddyAffectionQuestProto dailyBuddyAffection_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DailyBuddyAffectionQuestProto, POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder, POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder> dailyBuddyAffectionBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-     * @return Whether the dailyBuddyAffection field is set.
-     */
-    public boolean hasDailyBuddyAffection() {
-      return dailyBuddyAffectionBuilder_ != null || dailyBuddyAffection_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-     * @return The dailyBuddyAffection.
-     */
-    public POGOProtos.Rpc.DailyBuddyAffectionQuestProto getDailyBuddyAffection() {
-      if (dailyBuddyAffectionBuilder_ == null) {
-        return dailyBuddyAffection_ == null ? POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance() : dailyBuddyAffection_;
-      } else {
-        return dailyBuddyAffectionBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-     */
-    public Builder setDailyBuddyAffection(POGOProtos.Rpc.DailyBuddyAffectionQuestProto value) {
-      if (dailyBuddyAffectionBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        dailyBuddyAffection_ = value;
-        onChanged();
-      } else {
-        dailyBuddyAffectionBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-     */
-    public Builder setDailyBuddyAffection(
-        POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder builderForValue) {
-      if (dailyBuddyAffectionBuilder_ == null) {
-        dailyBuddyAffection_ = builderForValue.build();
-        onChanged();
-      } else {
-        dailyBuddyAffectionBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-     */
-    public Builder mergeDailyBuddyAffection(POGOProtos.Rpc.DailyBuddyAffectionQuestProto value) {
-      if (dailyBuddyAffectionBuilder_ == null) {
-        if (dailyBuddyAffection_ != null) {
-          dailyBuddyAffection_ =
-            POGOProtos.Rpc.DailyBuddyAffectionQuestProto.newBuilder(dailyBuddyAffection_).mergeFrom(value).buildPartial();
-        } else {
-          dailyBuddyAffection_ = value;
-        }
-        onChanged();
-      } else {
-        dailyBuddyAffectionBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-     */
-    public Builder clearDailyBuddyAffection() {
-      if (dailyBuddyAffectionBuilder_ == null) {
-        dailyBuddyAffection_ = null;
-        onChanged();
-      } else {
-        dailyBuddyAffection_ = null;
-        dailyBuddyAffectionBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-     */
-    public POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder getDailyBuddyAffectionBuilder() {
-      
-      onChanged();
-      return getDailyBuddyAffectionFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-     */
-    public POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder getDailyBuddyAffectionOrBuilder() {
-      if (dailyBuddyAffectionBuilder_ != null) {
-        return dailyBuddyAffectionBuilder_.getMessageOrBuilder();
-      } else {
-        return dailyBuddyAffection_ == null ?
-            POGOProtos.Rpc.DailyBuddyAffectionQuestProto.getDefaultInstance() : dailyBuddyAffection_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DailyBuddyAffectionQuestProto, POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder, POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder> 
-        getDailyBuddyAffectionFieldBuilder() {
-      if (dailyBuddyAffectionBuilder_ == null) {
-        dailyBuddyAffectionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.DailyBuddyAffectionQuestProto, POGOProtos.Rpc.DailyBuddyAffectionQuestProto.Builder, POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder>(
-                getDailyBuddyAffection(),
-                getParentForChildren(),
-                isClean());
-        dailyBuddyAffection_ = null;
-      }
-      return dailyBuddyAffectionBuilder_;
-    }
-
-    private POGOProtos.Rpc.QuestWalkProto questWalk_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestWalkProto, POGOProtos.Rpc.QuestWalkProto.Builder, POGOProtos.Rpc.QuestWalkProtoOrBuilder> questWalkBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-     * @return Whether the questWalk field is set.
-     */
-    public boolean hasQuestWalk() {
-      return questWalkBuilder_ != null || questWalk_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-     * @return The questWalk.
-     */
-    public POGOProtos.Rpc.QuestWalkProto getQuestWalk() {
-      if (questWalkBuilder_ == null) {
-        return questWalk_ == null ? POGOProtos.Rpc.QuestWalkProto.getDefaultInstance() : questWalk_;
-      } else {
-        return questWalkBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-     */
-    public Builder setQuestWalk(POGOProtos.Rpc.QuestWalkProto value) {
-      if (questWalkBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        questWalk_ = value;
-        onChanged();
-      } else {
-        questWalkBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-     */
-    public Builder setQuestWalk(
-        POGOProtos.Rpc.QuestWalkProto.Builder builderForValue) {
-      if (questWalkBuilder_ == null) {
-        questWalk_ = builderForValue.build();
-        onChanged();
-      } else {
-        questWalkBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-     */
-    public Builder mergeQuestWalk(POGOProtos.Rpc.QuestWalkProto value) {
-      if (questWalkBuilder_ == null) {
-        if (questWalk_ != null) {
-          questWalk_ =
-            POGOProtos.Rpc.QuestWalkProto.newBuilder(questWalk_).mergeFrom(value).buildPartial();
-        } else {
-          questWalk_ = value;
-        }
-        onChanged();
-      } else {
-        questWalkBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-     */
-    public Builder clearQuestWalk() {
-      if (questWalkBuilder_ == null) {
-        questWalk_ = null;
-        onChanged();
-      } else {
-        questWalk_ = null;
-        questWalkBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-     */
-    public POGOProtos.Rpc.QuestWalkProto.Builder getQuestWalkBuilder() {
-      
-      onChanged();
-      return getQuestWalkFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-     */
-    public POGOProtos.Rpc.QuestWalkProtoOrBuilder getQuestWalkOrBuilder() {
-      if (questWalkBuilder_ != null) {
-        return questWalkBuilder_.getMessageOrBuilder();
-      } else {
-        return questWalk_ == null ?
-            POGOProtos.Rpc.QuestWalkProto.getDefaultInstance() : questWalk_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestWalkProto, POGOProtos.Rpc.QuestWalkProto.Builder, POGOProtos.Rpc.QuestWalkProtoOrBuilder> 
-        getQuestWalkFieldBuilder() {
-      if (questWalkBuilder_ == null) {
-        questWalkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.QuestWalkProto, POGOProtos.Rpc.QuestWalkProto.Builder, POGOProtos.Rpc.QuestWalkProtoOrBuilder>(
-                getQuestWalk(),
-                getParentForChildren(),
-                isClean());
-        questWalk_ = null;
-      }
-      return questWalkBuilder_;
-    }
-
-    private POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolveIntoPokemon_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.EvolveIntoPokemonQuestProto, POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder, POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder> evolveIntoPokemonBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-     * @return Whether the evolveIntoPokemon field is set.
-     */
-    public boolean hasEvolveIntoPokemon() {
-      return evolveIntoPokemonBuilder_ != null || evolveIntoPokemon_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-     * @return The evolveIntoPokemon.
-     */
-    public POGOProtos.Rpc.EvolveIntoPokemonQuestProto getEvolveIntoPokemon() {
-      if (evolveIntoPokemonBuilder_ == null) {
-        return evolveIntoPokemon_ == null ? POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance() : evolveIntoPokemon_;
-      } else {
-        return evolveIntoPokemonBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-     */
-    public Builder setEvolveIntoPokemon(POGOProtos.Rpc.EvolveIntoPokemonQuestProto value) {
-      if (evolveIntoPokemonBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        evolveIntoPokemon_ = value;
-        onChanged();
-      } else {
-        evolveIntoPokemonBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-     */
-    public Builder setEvolveIntoPokemon(
-        POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder builderForValue) {
-      if (evolveIntoPokemonBuilder_ == null) {
-        evolveIntoPokemon_ = builderForValue.build();
-        onChanged();
-      } else {
-        evolveIntoPokemonBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-     */
-    public Builder mergeEvolveIntoPokemon(POGOProtos.Rpc.EvolveIntoPokemonQuestProto value) {
-      if (evolveIntoPokemonBuilder_ == null) {
-        if (evolveIntoPokemon_ != null) {
-          evolveIntoPokemon_ =
-            POGOProtos.Rpc.EvolveIntoPokemonQuestProto.newBuilder(evolveIntoPokemon_).mergeFrom(value).buildPartial();
-        } else {
-          evolveIntoPokemon_ = value;
-        }
-        onChanged();
-      } else {
-        evolveIntoPokemonBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-     */
-    public Builder clearEvolveIntoPokemon() {
-      if (evolveIntoPokemonBuilder_ == null) {
-        evolveIntoPokemon_ = null;
-        onChanged();
-      } else {
-        evolveIntoPokemon_ = null;
-        evolveIntoPokemonBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-     */
-    public POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder getEvolveIntoPokemonBuilder() {
-      
-      onChanged();
-      return getEvolveIntoPokemonFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-     */
-    public POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder getEvolveIntoPokemonOrBuilder() {
-      if (evolveIntoPokemonBuilder_ != null) {
-        return evolveIntoPokemonBuilder_.getMessageOrBuilder();
-      } else {
-        return evolveIntoPokemon_ == null ?
-            POGOProtos.Rpc.EvolveIntoPokemonQuestProto.getDefaultInstance() : evolveIntoPokemon_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.EvolveIntoPokemonQuestProto, POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder, POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder> 
-        getEvolveIntoPokemonFieldBuilder() {
-      if (evolveIntoPokemonBuilder_ == null) {
-        evolveIntoPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.EvolveIntoPokemonQuestProto, POGOProtos.Rpc.EvolveIntoPokemonQuestProto.Builder, POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder>(
-                getEvolveIntoPokemon(),
-                getParentForChildren(),
-                isClean());
-        evolveIntoPokemon_ = null;
-      }
-      return evolveIntoPokemonBuilder_;
     }
 
     private POGOProtos.Rpc.DaysWithARowQuestProto daysInArow_;

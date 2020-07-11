@@ -1128,6 +1128,10 @@ public enum HoloPokemonMove
    * <code>HOLO_POKEMON_MOVE_V0341_MOVE_FLY = 341;</code>
    */
   HOLO_POKEMON_MOVE_V0341_MOVE_FLY(341),
+  /**
+   * <code>HOLO_POKEMON_MOVE_V0342_MOVE_V_CREATE = 342;</code>
+   */
+  HOLO_POKEMON_MOVE_V0342_MOVE_V_CREATE(342),
   UNRECOGNIZED(-1),
   ;
 
@@ -2251,6 +2255,10 @@ public enum HoloPokemonMove
    * <code>HOLO_POKEMON_MOVE_V0341_MOVE_FLY = 341;</code>
    */
   public static final int HOLO_POKEMON_MOVE_V0341_MOVE_FLY_VALUE = 341;
+  /**
+   * <code>HOLO_POKEMON_MOVE_V0342_MOVE_V_CREATE = 342;</code>
+   */
+  public static final int HOLO_POKEMON_MOVE_V0342_MOVE_V_CREATE_VALUE = 342;
 
 
   public final int getNumber() {
@@ -2557,6 +2565,7 @@ public enum HoloPokemonMove
       case 339: return HOLO_POKEMON_MOVE_V0339_MOVE_TECHNO_BLAST_WATER;
       case 340: return HOLO_POKEMON_MOVE_V0340_MOVE_TECHNO_BLAST_SHOCK;
       case 341: return HOLO_POKEMON_MOVE_V0341_MOVE_FLY;
+      case 342: return HOLO_POKEMON_MOVE_V0342_MOVE_V_CREATE;
       default: return null;
     }
   }

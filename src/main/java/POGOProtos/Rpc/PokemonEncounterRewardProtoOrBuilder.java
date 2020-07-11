@@ -59,4 +59,6 @@ public interface PokemonEncounterRewardProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.PokemonDisplayProto ditto_display = 5;</code>
    */
   POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getDittoDisplayOrBuilder();
+
+  public POGOProtos.Rpc.PokemonEncounterRewardProto.TypeCase getTypeCase();
 }

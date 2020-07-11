@@ -576,9 +576,9 @@ private static final long serialVersionUID = 0L;
     public enum OnlineStatus
         implements com.google.protobuf.ProtocolMessageEnum {
       /**
-       * <code>ONLINE_STATUS_UNSET = 0;</code>
+       * <code>UNSET = 0;</code>
        */
-      ONLINE_STATUS_UNSET(0),
+      UNSET(0),
       /**
        * <code>STATUS_UNKNOWN = 1;</code>
        */
@@ -595,9 +595,9 @@ private static final long serialVersionUID = 0L;
       ;
 
       /**
-       * <code>ONLINE_STATUS_UNSET = 0;</code>
+       * <code>UNSET = 0;</code>
        */
-      public static final int ONLINE_STATUS_UNSET_VALUE = 0;
+      public static final int UNSET_VALUE = 0;
       /**
        * <code>STATUS_UNKNOWN = 1;</code>
        */
@@ -636,7 +636,7 @@ private static final long serialVersionUID = 0L;
        */
       public static OnlineStatus forNumber(int value) {
         switch (value) {
-          case 0: return ONLINE_STATUS_UNSET;
+          case 0: return UNSET;
           case 1: return STATUS_UNKNOWN;
           case 2: return STATUS_ONLINE;
           case 3: return STATUS_OFFLINE;

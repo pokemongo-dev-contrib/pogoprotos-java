@@ -8,6 +8,36 @@ public interface PokestopIncidentDisplayProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
+   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
+   * @return Whether the characterDisplay field is set.
+   */
+  boolean hasCharacterDisplay();
+  /**
+   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
+   * @return The characterDisplay.
+   */
+  POGOProtos.Rpc.CharacterDisplayProto getCharacterDisplay();
+  /**
+   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
+   */
+  POGOProtos.Rpc.CharacterDisplayProtoOrBuilder getCharacterDisplayOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
+   * @return Whether the invasionFinished field is set.
+   */
+  boolean hasInvasionFinished();
+  /**
+   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
+   * @return The invasionFinished.
+   */
+  POGOProtos.Rpc.InvasionFinishedDisplayProto getInvasionFinished();
+  /**
+   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
+   */
+  POGOProtos.Rpc.InvasionFinishedDisplayProtoOrBuilder getInvasionFinishedOrBuilder();
+
+  /**
    * <code>string incident_id = 1;</code>
    * @return The incidentId.
    */
@@ -66,33 +96,5 @@ public interface PokestopIncidentDisplayProtoOrBuilder extends
    */
   boolean getContinueDisplayingIncident();
 
-  /**
-   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
-   * @return Whether the characterDisplay field is set.
-   */
-  boolean hasCharacterDisplay();
-  /**
-   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
-   * @return The characterDisplay.
-   */
-  POGOProtos.Rpc.CharacterDisplayProto getCharacterDisplay();
-  /**
-   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
-   */
-  POGOProtos.Rpc.CharacterDisplayProtoOrBuilder getCharacterDisplayOrBuilder();
-
-  /**
-   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
-   * @return Whether the invasionFinished field is set.
-   */
-  boolean hasInvasionFinished();
-  /**
-   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
-   * @return The invasionFinished.
-   */
-  POGOProtos.Rpc.InvasionFinishedDisplayProto getInvasionFinished();
-  /**
-   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
-   */
-  POGOProtos.Rpc.InvasionFinishedDisplayProtoOrBuilder getInvasionFinishedOrBuilder();
+  public POGOProtos.Rpc.PokestopIncidentDisplayProto.MapDisplayCase getMapDisplayCase();
 }

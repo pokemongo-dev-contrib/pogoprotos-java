@@ -8,6 +8,18 @@ public interface LimitedEditionPokemonEncounterRewardProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
+   * <code>int32 lifetime_max_count = 3;</code>
+   * @return The lifetimeMaxCount.
+   */
+  int getLifetimeMaxCount();
+
+  /**
+   * <code>int32 per_competitive_combat_season_max_count = 4;</code>
+   * @return The perCompetitiveCombatSeasonMaxCount.
+   */
+  int getPerCompetitiveCombatSeasonMaxCount();
+
+  /**
    * <code>.POGOProtos.Rpc.PokemonEncounterRewardProto pokemon = 1;</code>
    * @return Whether the pokemon field is set.
    */
@@ -34,15 +46,5 @@ public interface LimitedEditionPokemonEncounterRewardProtoOrBuilder extends
   com.google.protobuf.ByteString
       getIdentifierBytes();
 
-  /**
-   * <code>int32 lifetime_max_count = 3;</code>
-   * @return The lifetimeMaxCount.
-   */
-  int getLifetimeMaxCount();
-
-  /**
-   * <code>int32 per_competitive_combat_season_max_count = 4;</code>
-   * @return The perCompetitiveCombatSeasonMaxCount.
-   */
-  int getPerCompetitiveCombatSeasonMaxCount();
+  public POGOProtos.Rpc.LimitedEditionPokemonEncounterRewardProto.LimitCase getLimitCase();
 }

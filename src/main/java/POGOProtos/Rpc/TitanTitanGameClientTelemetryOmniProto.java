@@ -50,41 +50,44 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             POGOProtos.Rpc.TitanPoiSubmissionTelemetry.Builder subBuilder = null;
-            if (poiSubmissionTelemetry_ != null) {
-              subBuilder = poiSubmissionTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 1) {
+              subBuilder = ((POGOProtos.Rpc.TitanPoiSubmissionTelemetry) telemetryData_).toBuilder();
             }
-            poiSubmissionTelemetry_ = input.readMessage(POGOProtos.Rpc.TitanPoiSubmissionTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.TitanPoiSubmissionTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(poiSubmissionTelemetry_);
-              poiSubmissionTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.TitanPoiSubmissionTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 1;
             break;
           }
           case 18: {
             POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.Builder subBuilder = null;
-            if (poiSubmissionPhotoUploadErrorTelemetry_ != null) {
-              subBuilder = poiSubmissionPhotoUploadErrorTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_).toBuilder();
             }
-            poiSubmissionPhotoUploadErrorTelemetry_ = input.readMessage(POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(poiSubmissionPhotoUploadErrorTelemetry_);
-              poiSubmissionPhotoUploadErrorTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 2;
             break;
           }
           case 26: {
             POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.Builder subBuilder = null;
-            if (playerMetadataTelemetry_ != null) {
-              subBuilder = playerMetadataTelemetry_.toBuilder();
+            if (telemetryDataCase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry) telemetryData_).toBuilder();
             }
-            playerMetadataTelemetry_ = input.readMessage(POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.parser(), extensionRegistry);
+            telemetryData_ =
+                input.readMessage(POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(playerMetadataTelemetry_);
-              playerMetadataTelemetry_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry) telemetryData_);
+              telemetryData_ = subBuilder.buildPartial();
             }
-
+            telemetryDataCase_ = 3;
             break;
           }
           case 8010: {
@@ -132,73 +135,131 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.TitanTitanGameClientTelemetryOmniProto.class, POGOProtos.Rpc.TitanTitanGameClientTelemetryOmniProto.Builder.class);
   }
 
+  private int telemetryDataCase_ = 0;
+  private java.lang.Object telemetryData_;
+  public enum TelemetryDataCase
+      implements com.google.protobuf.Internal.EnumLite,
+          com.google.protobuf.AbstractMessage.InternalOneOfEnum {
+    POI_SUBMISSION_TELEMETRY(1),
+    POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY(2),
+    PLAYER_METADATA_TELEMETRY(3),
+    TELEMETRYDATA_NOT_SET(0);
+    private final int value;
+    private TelemetryDataCase(int value) {
+      this.value = value;
+    }
+    /**
+     * @param value The number of the enum to look for.
+     * @return The enum associated with the given number.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static TelemetryDataCase valueOf(int value) {
+      return forNumber(value);
+    }
+
+    public static TelemetryDataCase forNumber(int value) {
+      switch (value) {
+        case 1: return POI_SUBMISSION_TELEMETRY;
+        case 2: return POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY;
+        case 3: return PLAYER_METADATA_TELEMETRY;
+        case 0: return TELEMETRYDATA_NOT_SET;
+        default: return null;
+      }
+    }
+    public int getNumber() {
+      return this.value;
+    }
+  };
+
+  public TelemetryDataCase
+  getTelemetryDataCase() {
+    return TelemetryDataCase.forNumber(
+        telemetryDataCase_);
+  }
+
   public static final int POI_SUBMISSION_TELEMETRY_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.TitanPoiSubmissionTelemetry poiSubmissionTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.TitanPoiSubmissionTelemetry poi_submission_telemetry = 1;</code>
    * @return Whether the poiSubmissionTelemetry field is set.
    */
   public boolean hasPoiSubmissionTelemetry() {
-    return poiSubmissionTelemetry_ != null;
+    return telemetryDataCase_ == 1;
   }
   /**
    * <code>.POGOProtos.Rpc.TitanPoiSubmissionTelemetry poi_submission_telemetry = 1;</code>
    * @return The poiSubmissionTelemetry.
    */
   public POGOProtos.Rpc.TitanPoiSubmissionTelemetry getPoiSubmissionTelemetry() {
-    return poiSubmissionTelemetry_ == null ? POGOProtos.Rpc.TitanPoiSubmissionTelemetry.getDefaultInstance() : poiSubmissionTelemetry_;
+    if (telemetryDataCase_ == 1) {
+       return (POGOProtos.Rpc.TitanPoiSubmissionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.TitanPoiSubmissionTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.TitanPoiSubmissionTelemetry poi_submission_telemetry = 1;</code>
    */
   public POGOProtos.Rpc.TitanPoiSubmissionTelemetryOrBuilder getPoiSubmissionTelemetryOrBuilder() {
-    return getPoiSubmissionTelemetry();
+    if (telemetryDataCase_ == 1) {
+       return (POGOProtos.Rpc.TitanPoiSubmissionTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.TitanPoiSubmissionTelemetry.getDefaultInstance();
   }
 
   public static final int POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry poiSubmissionPhotoUploadErrorTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 2;</code>
    * @return Whether the poiSubmissionPhotoUploadErrorTelemetry field is set.
    */
   public boolean hasPoiSubmissionPhotoUploadErrorTelemetry() {
-    return poiSubmissionPhotoUploadErrorTelemetry_ != null;
+    return telemetryDataCase_ == 2;
   }
   /**
    * <code>.POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 2;</code>
    * @return The poiSubmissionPhotoUploadErrorTelemetry.
    */
   public POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry getPoiSubmissionPhotoUploadErrorTelemetry() {
-    return poiSubmissionPhotoUploadErrorTelemetry_ == null ? POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance() : poiSubmissionPhotoUploadErrorTelemetry_;
+    if (telemetryDataCase_ == 2) {
+       return (POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 2;</code>
    */
   public POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetryOrBuilder getPoiSubmissionPhotoUploadErrorTelemetryOrBuilder() {
-    return getPoiSubmissionPhotoUploadErrorTelemetry();
+    if (telemetryDataCase_ == 2) {
+       return (POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
   }
 
   public static final int PLAYER_METADATA_TELEMETRY_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry playerMetadataTelemetry_;
   /**
    * <code>.POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry player_metadata_telemetry = 3;</code>
    * @return Whether the playerMetadataTelemetry field is set.
    */
   public boolean hasPlayerMetadataTelemetry() {
-    return playerMetadataTelemetry_ != null;
+    return telemetryDataCase_ == 3;
   }
   /**
    * <code>.POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry player_metadata_telemetry = 3;</code>
    * @return The playerMetadataTelemetry.
    */
   public POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry getPlayerMetadataTelemetry() {
-    return playerMetadataTelemetry_ == null ? POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.getDefaultInstance() : playerMetadataTelemetry_;
+    if (telemetryDataCase_ == 3) {
+       return (POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry player_metadata_telemetry = 3;</code>
    */
   public POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetryOrBuilder getPlayerMetadataTelemetryOrBuilder() {
-    return getPlayerMetadataTelemetry();
+    if (telemetryDataCase_ == 3) {
+       return (POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry) telemetryData_;
+    }
+    return POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.getDefaultInstance();
   }
 
   public static final int SERVER_DATA_FIELD_NUMBER = 1001;
@@ -238,14 +299,14 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (poiSubmissionTelemetry_ != null) {
-      output.writeMessage(1, getPoiSubmissionTelemetry());
+    if (telemetryDataCase_ == 1) {
+      output.writeMessage(1, (POGOProtos.Rpc.TitanPoiSubmissionTelemetry) telemetryData_);
     }
-    if (poiSubmissionPhotoUploadErrorTelemetry_ != null) {
-      output.writeMessage(2, getPoiSubmissionPhotoUploadErrorTelemetry());
+    if (telemetryDataCase_ == 2) {
+      output.writeMessage(2, (POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_);
     }
-    if (playerMetadataTelemetry_ != null) {
-      output.writeMessage(3, getPlayerMetadataTelemetry());
+    if (telemetryDataCase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry) telemetryData_);
     }
     if (serverData_ != null) {
       output.writeMessage(1001, getServerData());
@@ -259,17 +320,17 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (poiSubmissionTelemetry_ != null) {
+    if (telemetryDataCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getPoiSubmissionTelemetry());
+        .computeMessageSize(1, (POGOProtos.Rpc.TitanPoiSubmissionTelemetry) telemetryData_);
     }
-    if (poiSubmissionPhotoUploadErrorTelemetry_ != null) {
+    if (telemetryDataCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getPoiSubmissionPhotoUploadErrorTelemetry());
+        .computeMessageSize(2, (POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_);
     }
-    if (playerMetadataTelemetry_ != null) {
+    if (telemetryDataCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getPlayerMetadataTelemetry());
+        .computeMessageSize(3, (POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry) telemetryData_);
     }
     if (serverData_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -290,25 +351,27 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.TitanTitanGameClientTelemetryOmniProto other = (POGOProtos.Rpc.TitanTitanGameClientTelemetryOmniProto) obj;
 
-    if (hasPoiSubmissionTelemetry() != other.hasPoiSubmissionTelemetry()) return false;
-    if (hasPoiSubmissionTelemetry()) {
-      if (!getPoiSubmissionTelemetry()
-          .equals(other.getPoiSubmissionTelemetry())) return false;
-    }
-    if (hasPoiSubmissionPhotoUploadErrorTelemetry() != other.hasPoiSubmissionPhotoUploadErrorTelemetry()) return false;
-    if (hasPoiSubmissionPhotoUploadErrorTelemetry()) {
-      if (!getPoiSubmissionPhotoUploadErrorTelemetry()
-          .equals(other.getPoiSubmissionPhotoUploadErrorTelemetry())) return false;
-    }
-    if (hasPlayerMetadataTelemetry() != other.hasPlayerMetadataTelemetry()) return false;
-    if (hasPlayerMetadataTelemetry()) {
-      if (!getPlayerMetadataTelemetry()
-          .equals(other.getPlayerMetadataTelemetry())) return false;
-    }
     if (hasServerData() != other.hasServerData()) return false;
     if (hasServerData()) {
       if (!getServerData()
           .equals(other.getServerData())) return false;
+    }
+    if (!getTelemetryDataCase().equals(other.getTelemetryDataCase())) return false;
+    switch (telemetryDataCase_) {
+      case 1:
+        if (!getPoiSubmissionTelemetry()
+            .equals(other.getPoiSubmissionTelemetry())) return false;
+        break;
+      case 2:
+        if (!getPoiSubmissionPhotoUploadErrorTelemetry()
+            .equals(other.getPoiSubmissionPhotoUploadErrorTelemetry())) return false;
+        break;
+      case 3:
+        if (!getPlayerMetadataTelemetry()
+            .equals(other.getPlayerMetadataTelemetry())) return false;
+        break;
+      case 0:
+      default:
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -321,21 +384,25 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasPoiSubmissionTelemetry()) {
-      hash = (37 * hash) + POI_SUBMISSION_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getPoiSubmissionTelemetry().hashCode();
-    }
-    if (hasPoiSubmissionPhotoUploadErrorTelemetry()) {
-      hash = (37 * hash) + POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getPoiSubmissionPhotoUploadErrorTelemetry().hashCode();
-    }
-    if (hasPlayerMetadataTelemetry()) {
-      hash = (37 * hash) + PLAYER_METADATA_TELEMETRY_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerMetadataTelemetry().hashCode();
-    }
     if (hasServerData()) {
       hash = (37 * hash) + SERVER_DATA_FIELD_NUMBER;
       hash = (53 * hash) + getServerData().hashCode();
+    }
+    switch (telemetryDataCase_) {
+      case 1:
+        hash = (37 * hash) + POI_SUBMISSION_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getPoiSubmissionTelemetry().hashCode();
+        break;
+      case 2:
+        hash = (37 * hash) + POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getPoiSubmissionPhotoUploadErrorTelemetry().hashCode();
+        break;
+      case 3:
+        hash = (37 * hash) + PLAYER_METADATA_TELEMETRY_FIELD_NUMBER;
+        hash = (53 * hash) + getPlayerMetadataTelemetry().hashCode();
+        break;
+      case 0:
+      default:
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -470,30 +537,14 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (poiSubmissionTelemetryBuilder_ == null) {
-        poiSubmissionTelemetry_ = null;
-      } else {
-        poiSubmissionTelemetry_ = null;
-        poiSubmissionTelemetryBuilder_ = null;
-      }
-      if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        poiSubmissionPhotoUploadErrorTelemetry_ = null;
-      } else {
-        poiSubmissionPhotoUploadErrorTelemetry_ = null;
-        poiSubmissionPhotoUploadErrorTelemetryBuilder_ = null;
-      }
-      if (playerMetadataTelemetryBuilder_ == null) {
-        playerMetadataTelemetry_ = null;
-      } else {
-        playerMetadataTelemetry_ = null;
-        playerMetadataTelemetryBuilder_ = null;
-      }
       if (serverDataBuilder_ == null) {
         serverData_ = null;
       } else {
         serverData_ = null;
         serverDataBuilder_ = null;
       }
+      telemetryDataCase_ = 0;
+      telemetryData_ = null;
       return this;
     }
 
@@ -520,26 +571,33 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.TitanTitanGameClientTelemetryOmniProto buildPartial() {
       POGOProtos.Rpc.TitanTitanGameClientTelemetryOmniProto result = new POGOProtos.Rpc.TitanTitanGameClientTelemetryOmniProto(this);
-      if (poiSubmissionTelemetryBuilder_ == null) {
-        result.poiSubmissionTelemetry_ = poiSubmissionTelemetry_;
-      } else {
-        result.poiSubmissionTelemetry_ = poiSubmissionTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 1) {
+        if (poiSubmissionTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = poiSubmissionTelemetryBuilder_.build();
+        }
       }
-      if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        result.poiSubmissionPhotoUploadErrorTelemetry_ = poiSubmissionPhotoUploadErrorTelemetry_;
-      } else {
-        result.poiSubmissionPhotoUploadErrorTelemetry_ = poiSubmissionPhotoUploadErrorTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 2) {
+        if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = poiSubmissionPhotoUploadErrorTelemetryBuilder_.build();
+        }
       }
-      if (playerMetadataTelemetryBuilder_ == null) {
-        result.playerMetadataTelemetry_ = playerMetadataTelemetry_;
-      } else {
-        result.playerMetadataTelemetry_ = playerMetadataTelemetryBuilder_.build();
+      if (telemetryDataCase_ == 3) {
+        if (playerMetadataTelemetryBuilder_ == null) {
+          result.telemetryData_ = telemetryData_;
+        } else {
+          result.telemetryData_ = playerMetadataTelemetryBuilder_.build();
+        }
       }
       if (serverDataBuilder_ == null) {
         result.serverData_ = serverData_;
       } else {
         result.serverData_ = serverDataBuilder_.build();
       }
+      result.telemetryDataCase_ = telemetryDataCase_;
       onBuilt();
       return result;
     }
@@ -588,17 +646,25 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.TitanTitanGameClientTelemetryOmniProto other) {
       if (other == POGOProtos.Rpc.TitanTitanGameClientTelemetryOmniProto.getDefaultInstance()) return this;
-      if (other.hasPoiSubmissionTelemetry()) {
-        mergePoiSubmissionTelemetry(other.getPoiSubmissionTelemetry());
-      }
-      if (other.hasPoiSubmissionPhotoUploadErrorTelemetry()) {
-        mergePoiSubmissionPhotoUploadErrorTelemetry(other.getPoiSubmissionPhotoUploadErrorTelemetry());
-      }
-      if (other.hasPlayerMetadataTelemetry()) {
-        mergePlayerMetadataTelemetry(other.getPlayerMetadataTelemetry());
-      }
       if (other.hasServerData()) {
         mergeServerData(other.getServerData());
+      }
+      switch (other.getTelemetryDataCase()) {
+        case POI_SUBMISSION_TELEMETRY: {
+          mergePoiSubmissionTelemetry(other.getPoiSubmissionTelemetry());
+          break;
+        }
+        case POI_SUBMISSION_PHOTO_UPLOAD_ERROR_TELEMETRY: {
+          mergePoiSubmissionPhotoUploadErrorTelemetry(other.getPoiSubmissionPhotoUploadErrorTelemetry());
+          break;
+        }
+        case PLAYER_METADATA_TELEMETRY: {
+          mergePlayerMetadataTelemetry(other.getPlayerMetadataTelemetry());
+          break;
+        }
+        case TELEMETRYDATA_NOT_SET: {
+          break;
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -628,8 +694,22 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
+    private int telemetryDataCase_ = 0;
+    private java.lang.Object telemetryData_;
+    public TelemetryDataCase
+        getTelemetryDataCase() {
+      return TelemetryDataCase.forNumber(
+          telemetryDataCase_);
+    }
 
-    private POGOProtos.Rpc.TitanPoiSubmissionTelemetry poiSubmissionTelemetry_;
+    public Builder clearTelemetryData() {
+      telemetryDataCase_ = 0;
+      telemetryData_ = null;
+      onChanged();
+      return this;
+    }
+
+
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.TitanPoiSubmissionTelemetry, POGOProtos.Rpc.TitanPoiSubmissionTelemetry.Builder, POGOProtos.Rpc.TitanPoiSubmissionTelemetryOrBuilder> poiSubmissionTelemetryBuilder_;
     /**
@@ -637,7 +717,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the poiSubmissionTelemetry field is set.
      */
     public boolean hasPoiSubmissionTelemetry() {
-      return poiSubmissionTelemetryBuilder_ != null || poiSubmissionTelemetry_ != null;
+      return telemetryDataCase_ == 1;
     }
     /**
      * <code>.POGOProtos.Rpc.TitanPoiSubmissionTelemetry poi_submission_telemetry = 1;</code>
@@ -645,9 +725,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.TitanPoiSubmissionTelemetry getPoiSubmissionTelemetry() {
       if (poiSubmissionTelemetryBuilder_ == null) {
-        return poiSubmissionTelemetry_ == null ? POGOProtos.Rpc.TitanPoiSubmissionTelemetry.getDefaultInstance() : poiSubmissionTelemetry_;
+        if (telemetryDataCase_ == 1) {
+          return (POGOProtos.Rpc.TitanPoiSubmissionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.TitanPoiSubmissionTelemetry.getDefaultInstance();
       } else {
-        return poiSubmissionTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 1) {
+          return poiSubmissionTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.TitanPoiSubmissionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -658,12 +744,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        poiSubmissionTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         poiSubmissionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 1;
       return this;
     }
     /**
@@ -672,12 +758,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPoiSubmissionTelemetry(
         POGOProtos.Rpc.TitanPoiSubmissionTelemetry.Builder builderForValue) {
       if (poiSubmissionTelemetryBuilder_ == null) {
-        poiSubmissionTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         poiSubmissionTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 1;
       return this;
     }
     /**
@@ -685,17 +771,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePoiSubmissionTelemetry(POGOProtos.Rpc.TitanPoiSubmissionTelemetry value) {
       if (poiSubmissionTelemetryBuilder_ == null) {
-        if (poiSubmissionTelemetry_ != null) {
-          poiSubmissionTelemetry_ =
-            POGOProtos.Rpc.TitanPoiSubmissionTelemetry.newBuilder(poiSubmissionTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 1 &&
+            telemetryData_ != POGOProtos.Rpc.TitanPoiSubmissionTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.TitanPoiSubmissionTelemetry.newBuilder((POGOProtos.Rpc.TitanPoiSubmissionTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          poiSubmissionTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        poiSubmissionTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 1) {
+          poiSubmissionTelemetryBuilder_.mergeFrom(value);
+        }
+        poiSubmissionTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 1;
       return this;
     }
     /**
@@ -703,32 +793,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPoiSubmissionTelemetry() {
       if (poiSubmissionTelemetryBuilder_ == null) {
-        poiSubmissionTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 1) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        poiSubmissionTelemetry_ = null;
-        poiSubmissionTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 1) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        poiSubmissionTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.TitanPoiSubmissionTelemetry poi_submission_telemetry = 1;</code>
      */
     public POGOProtos.Rpc.TitanPoiSubmissionTelemetry.Builder getPoiSubmissionTelemetryBuilder() {
-      
-      onChanged();
       return getPoiSubmissionTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.TitanPoiSubmissionTelemetry poi_submission_telemetry = 1;</code>
      */
     public POGOProtos.Rpc.TitanPoiSubmissionTelemetryOrBuilder getPoiSubmissionTelemetryOrBuilder() {
-      if (poiSubmissionTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 1) && (poiSubmissionTelemetryBuilder_ != null)) {
         return poiSubmissionTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return poiSubmissionTelemetry_ == null ?
-            POGOProtos.Rpc.TitanPoiSubmissionTelemetry.getDefaultInstance() : poiSubmissionTelemetry_;
+        if (telemetryDataCase_ == 1) {
+          return (POGOProtos.Rpc.TitanPoiSubmissionTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.TitanPoiSubmissionTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -738,17 +833,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.TitanPoiSubmissionTelemetry, POGOProtos.Rpc.TitanPoiSubmissionTelemetry.Builder, POGOProtos.Rpc.TitanPoiSubmissionTelemetryOrBuilder> 
         getPoiSubmissionTelemetryFieldBuilder() {
       if (poiSubmissionTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 1)) {
+          telemetryData_ = POGOProtos.Rpc.TitanPoiSubmissionTelemetry.getDefaultInstance();
+        }
         poiSubmissionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.TitanPoiSubmissionTelemetry, POGOProtos.Rpc.TitanPoiSubmissionTelemetry.Builder, POGOProtos.Rpc.TitanPoiSubmissionTelemetryOrBuilder>(
-                getPoiSubmissionTelemetry(),
+                (POGOProtos.Rpc.TitanPoiSubmissionTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        poiSubmissionTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 1;
+      onChanged();;
       return poiSubmissionTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry poiSubmissionPhotoUploadErrorTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry, POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.Builder, POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetryOrBuilder> poiSubmissionPhotoUploadErrorTelemetryBuilder_;
     /**
@@ -756,7 +855,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the poiSubmissionPhotoUploadErrorTelemetry field is set.
      */
     public boolean hasPoiSubmissionPhotoUploadErrorTelemetry() {
-      return poiSubmissionPhotoUploadErrorTelemetryBuilder_ != null || poiSubmissionPhotoUploadErrorTelemetry_ != null;
+      return telemetryDataCase_ == 2;
     }
     /**
      * <code>.POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 2;</code>
@@ -764,9 +863,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry getPoiSubmissionPhotoUploadErrorTelemetry() {
       if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        return poiSubmissionPhotoUploadErrorTelemetry_ == null ? POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance() : poiSubmissionPhotoUploadErrorTelemetry_;
+        if (telemetryDataCase_ == 2) {
+          return (POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
       } else {
-        return poiSubmissionPhotoUploadErrorTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 2) {
+          return poiSubmissionPhotoUploadErrorTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -777,12 +882,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        poiSubmissionPhotoUploadErrorTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         poiSubmissionPhotoUploadErrorTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 2;
       return this;
     }
     /**
@@ -791,12 +896,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPoiSubmissionPhotoUploadErrorTelemetry(
         POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.Builder builderForValue) {
       if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        poiSubmissionPhotoUploadErrorTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         poiSubmissionPhotoUploadErrorTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 2;
       return this;
     }
     /**
@@ -804,17 +909,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePoiSubmissionPhotoUploadErrorTelemetry(POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry value) {
       if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        if (poiSubmissionPhotoUploadErrorTelemetry_ != null) {
-          poiSubmissionPhotoUploadErrorTelemetry_ =
-            POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.newBuilder(poiSubmissionPhotoUploadErrorTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 2 &&
+            telemetryData_ != POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.newBuilder((POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          poiSubmissionPhotoUploadErrorTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        poiSubmissionPhotoUploadErrorTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 2) {
+          poiSubmissionPhotoUploadErrorTelemetryBuilder_.mergeFrom(value);
+        }
+        poiSubmissionPhotoUploadErrorTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 2;
       return this;
     }
     /**
@@ -822,32 +931,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPoiSubmissionPhotoUploadErrorTelemetry() {
       if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
-        poiSubmissionPhotoUploadErrorTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 2) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        poiSubmissionPhotoUploadErrorTelemetry_ = null;
-        poiSubmissionPhotoUploadErrorTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 2) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        poiSubmissionPhotoUploadErrorTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 2;</code>
      */
     public POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.Builder getPoiSubmissionPhotoUploadErrorTelemetryBuilder() {
-      
-      onChanged();
       return getPoiSubmissionPhotoUploadErrorTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry poi_submission_photo_upload_error_telemetry = 2;</code>
      */
     public POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetryOrBuilder getPoiSubmissionPhotoUploadErrorTelemetryOrBuilder() {
-      if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 2) && (poiSubmissionPhotoUploadErrorTelemetryBuilder_ != null)) {
         return poiSubmissionPhotoUploadErrorTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return poiSubmissionPhotoUploadErrorTelemetry_ == null ?
-            POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance() : poiSubmissionPhotoUploadErrorTelemetry_;
+        if (telemetryDataCase_ == 2) {
+          return (POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -857,17 +971,21 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry, POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.Builder, POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetryOrBuilder> 
         getPoiSubmissionPhotoUploadErrorTelemetryFieldBuilder() {
       if (poiSubmissionPhotoUploadErrorTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 2)) {
+          telemetryData_ = POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.getDefaultInstance();
+        }
         poiSubmissionPhotoUploadErrorTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry, POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry.Builder, POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetryOrBuilder>(
-                getPoiSubmissionPhotoUploadErrorTelemetry(),
+                (POGOProtos.Rpc.TitanPoiSubmissionPhotoUploadErrorTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        poiSubmissionPhotoUploadErrorTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 2;
+      onChanged();;
       return poiSubmissionPhotoUploadErrorTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry playerMetadataTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry, POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.Builder, POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetryOrBuilder> playerMetadataTelemetryBuilder_;
     /**
@@ -875,7 +993,7 @@ private static final long serialVersionUID = 0L;
      * @return Whether the playerMetadataTelemetry field is set.
      */
     public boolean hasPlayerMetadataTelemetry() {
-      return playerMetadataTelemetryBuilder_ != null || playerMetadataTelemetry_ != null;
+      return telemetryDataCase_ == 3;
     }
     /**
      * <code>.POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry player_metadata_telemetry = 3;</code>
@@ -883,9 +1001,15 @@ private static final long serialVersionUID = 0L;
      */
     public POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry getPlayerMetadataTelemetry() {
       if (playerMetadataTelemetryBuilder_ == null) {
-        return playerMetadataTelemetry_ == null ? POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.getDefaultInstance() : playerMetadataTelemetry_;
+        if (telemetryDataCase_ == 3) {
+          return (POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.getDefaultInstance();
       } else {
-        return playerMetadataTelemetryBuilder_.getMessage();
+        if (telemetryDataCase_ == 3) {
+          return playerMetadataTelemetryBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -896,12 +1020,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        playerMetadataTelemetry_ = value;
+        telemetryData_ = value;
         onChanged();
       } else {
         playerMetadataTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 3;
       return this;
     }
     /**
@@ -910,12 +1034,12 @@ private static final long serialVersionUID = 0L;
     public Builder setPlayerMetadataTelemetry(
         POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.Builder builderForValue) {
       if (playerMetadataTelemetryBuilder_ == null) {
-        playerMetadataTelemetry_ = builderForValue.build();
+        telemetryData_ = builderForValue.build();
         onChanged();
       } else {
         playerMetadataTelemetryBuilder_.setMessage(builderForValue.build());
       }
-
+      telemetryDataCase_ = 3;
       return this;
     }
     /**
@@ -923,17 +1047,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergePlayerMetadataTelemetry(POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry value) {
       if (playerMetadataTelemetryBuilder_ == null) {
-        if (playerMetadataTelemetry_ != null) {
-          playerMetadataTelemetry_ =
-            POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.newBuilder(playerMetadataTelemetry_).mergeFrom(value).buildPartial();
+        if (telemetryDataCase_ == 3 &&
+            telemetryData_ != POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.newBuilder((POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry) telemetryData_)
+              .mergeFrom(value).buildPartial();
         } else {
-          playerMetadataTelemetry_ = value;
+          telemetryData_ = value;
         }
         onChanged();
       } else {
-        playerMetadataTelemetryBuilder_.mergeFrom(value);
+        if (telemetryDataCase_ == 3) {
+          playerMetadataTelemetryBuilder_.mergeFrom(value);
+        }
+        playerMetadataTelemetryBuilder_.setMessage(value);
       }
-
+      telemetryDataCase_ = 3;
       return this;
     }
     /**
@@ -941,32 +1069,37 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearPlayerMetadataTelemetry() {
       if (playerMetadataTelemetryBuilder_ == null) {
-        playerMetadataTelemetry_ = null;
-        onChanged();
+        if (telemetryDataCase_ == 3) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+          onChanged();
+        }
       } else {
-        playerMetadataTelemetry_ = null;
-        playerMetadataTelemetryBuilder_ = null;
+        if (telemetryDataCase_ == 3) {
+          telemetryDataCase_ = 0;
+          telemetryData_ = null;
+        }
+        playerMetadataTelemetryBuilder_.clear();
       }
-
       return this;
     }
     /**
      * <code>.POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry player_metadata_telemetry = 3;</code>
      */
     public POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.Builder getPlayerMetadataTelemetryBuilder() {
-      
-      onChanged();
       return getPlayerMetadataTelemetryFieldBuilder().getBuilder();
     }
     /**
      * <code>.POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry player_metadata_telemetry = 3;</code>
      */
     public POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetryOrBuilder getPlayerMetadataTelemetryOrBuilder() {
-      if (playerMetadataTelemetryBuilder_ != null) {
+      if ((telemetryDataCase_ == 3) && (playerMetadataTelemetryBuilder_ != null)) {
         return playerMetadataTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return playerMetadataTelemetry_ == null ?
-            POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.getDefaultInstance() : playerMetadataTelemetry_;
+        if (telemetryDataCase_ == 3) {
+          return (POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry) telemetryData_;
+        }
+        return POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.getDefaultInstance();
       }
     }
     /**
@@ -976,13 +1109,18 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry, POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.Builder, POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetryOrBuilder> 
         getPlayerMetadataTelemetryFieldBuilder() {
       if (playerMetadataTelemetryBuilder_ == null) {
+        if (!(telemetryDataCase_ == 3)) {
+          telemetryData_ = POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.getDefaultInstance();
+        }
         playerMetadataTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry, POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry.Builder, POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetryOrBuilder>(
-                getPlayerMetadataTelemetry(),
+                (POGOProtos.Rpc.TitanPoiPlayerMetadataTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
-        playerMetadataTelemetry_ = null;
+        telemetryData_ = null;
       }
+      telemetryDataCase_ = 3;
+      onChanged();;
       return playerMetadataTelemetryBuilder_;
     }
 

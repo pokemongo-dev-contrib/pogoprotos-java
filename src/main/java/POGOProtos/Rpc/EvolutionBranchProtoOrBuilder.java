@@ -103,4 +103,29 @@ public interface EvolutionBranchProtoOrBuilder extends
    * @return The noCandyCostViaTrade.
    */
   boolean getNoCandyCostViaTrade();
+
+  /**
+   * <code>repeated string quest_requirement_template_id = 17;</code>
+   * @return A list containing the questRequirementTemplateId.
+   */
+  java.util.List<java.lang.String>
+      getQuestRequirementTemplateIdList();
+  /**
+   * <code>repeated string quest_requirement_template_id = 17;</code>
+   * @return The count of questRequirementTemplateId.
+   */
+  int getQuestRequirementTemplateIdCount();
+  /**
+   * <code>repeated string quest_requirement_template_id = 17;</code>
+   * @param index The index of the element to return.
+   * @return The questRequirementTemplateId at the given index.
+   */
+  java.lang.String getQuestRequirementTemplateId(int index);
+  /**
+   * <code>repeated string quest_requirement_template_id = 17;</code>
+   * @param index The index of the value to return.
+   * @return The bytes of the questRequirementTemplateId at the given index.
+   */
+  com.google.protobuf.ByteString
+      getQuestRequirementTemplateIdBytes(int index);
 }

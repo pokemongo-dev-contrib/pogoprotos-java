@@ -142,4 +142,6 @@ public interface HoloInventoryKeyProtoOrBuilder extends
    */
   com.google.protobuf.ByteString
       getStickerIdBytes();
+
+  public POGOProtos.Rpc.HoloInventoryKeyProto.TypeCase getTypeCase();
 }

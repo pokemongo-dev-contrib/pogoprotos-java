@@ -19,6 +19,7 @@ private static final long serialVersionUID = 0L;
     result_ = 0;
     items_ = java.util.Collections.emptyList();
     defaultRewards_ = java.util.Collections.emptyList();
+    stickers_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -86,6 +87,15 @@ private static final long serialVersionUID = 0L;
             stardust_ = input.readInt32();
             break;
           }
+          case 50: {
+            if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              stickers_ = new java.util.ArrayList<POGOProtos.Inventory.LootItem>();
+              mutable_bitField0_ |= 0x00000004;
+            }
+            stickers_.add(
+                input.readMessage(POGOProtos.Inventory.LootItem.parser(), extensionRegistry));
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -106,6 +116,9 @@ private static final long serialVersionUID = 0L;
       }
       if (((mutable_bitField0_ & 0x00000002) != 0)) {
         defaultRewards_ = java.util.Collections.unmodifiableList(defaultRewards_);
+      }
+      if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        stickers_ = java.util.Collections.unmodifiableList(stickers_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -337,6 +350,41 @@ private static final long serialVersionUID = 0L;
     return stardust_;
   }
 
+  public static final int STICKERS_FIELD_NUMBER = 6;
+  private java.util.List<POGOProtos.Inventory.LootItem> stickers_;
+  /**
+   * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+   */
+  public java.util.List<POGOProtos.Inventory.LootItem> getStickersList() {
+    return stickers_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+   */
+  public java.util.List<? extends POGOProtos.Inventory.LootItemOrBuilder> 
+      getStickersOrBuilderList() {
+    return stickers_;
+  }
+  /**
+   * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+   */
+  public int getStickersCount() {
+    return stickers_.size();
+  }
+  /**
+   * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+   */
+  public POGOProtos.Inventory.LootItem getStickers(int index) {
+    return stickers_.get(index);
+  }
+  /**
+   * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+   */
+  public POGOProtos.Inventory.LootItemOrBuilder getStickersOrBuilder(
+      int index) {
+    return stickers_.get(index);
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -365,6 +413,9 @@ private static final long serialVersionUID = 0L;
     }
     if (stardust_ != 0) {
       output.writeInt32(5, stardust_);
+    }
+    for (int i = 0; i < stickers_.size(); i++) {
+      output.writeMessage(6, stickers_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -395,6 +446,10 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(5, stardust_);
     }
+    for (int i = 0; i < stickers_.size(); i++) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(6, stickers_.get(i));
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -419,6 +474,8 @@ private static final long serialVersionUID = 0L;
         .equals(other.getDefaultRewardsList())) return false;
     if (getStardust()
         != other.getStardust()) return false;
+    if (!getStickersList()
+        .equals(other.getStickersList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -445,6 +502,10 @@ private static final long serialVersionUID = 0L;
     }
     hash = (37 * hash) + STARDUST_FIELD_NUMBER;
     hash = (53 * hash) + getStardust();
+    if (getStickersCount() > 0) {
+      hash = (37 * hash) + STICKERS_FIELD_NUMBER;
+      hash = (53 * hash) + getStickersList().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -575,6 +636,7 @@ private static final long serialVersionUID = 0L;
               .alwaysUseFieldBuilders) {
         getItemsFieldBuilder();
         getDefaultRewardsFieldBuilder();
+        getStickersFieldBuilder();
       }
     }
     @java.lang.Override
@@ -598,6 +660,12 @@ private static final long serialVersionUID = 0L;
       }
       stardust_ = 0;
 
+      if (stickersBuilder_ == null) {
+        stickers_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+      } else {
+        stickersBuilder_.clear();
+      }
       return this;
     }
 
@@ -646,6 +714,15 @@ private static final long serialVersionUID = 0L;
         result.defaultRewards_ = defaultRewardsBuilder_.build();
       }
       result.stardust_ = stardust_;
+      if (stickersBuilder_ == null) {
+        if (((bitField0_ & 0x00000004) != 0)) {
+          stickers_ = java.util.Collections.unmodifiableList(stickers_);
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.stickers_ = stickers_;
+      } else {
+        result.stickers_ = stickersBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -754,6 +831,32 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getStardust() != 0) {
         setStardust(other.getStardust());
+      }
+      if (stickersBuilder_ == null) {
+        if (!other.stickers_.isEmpty()) {
+          if (stickers_.isEmpty()) {
+            stickers_ = other.stickers_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+          } else {
+            ensureStickersIsMutable();
+            stickers_.addAll(other.stickers_);
+          }
+          onChanged();
+        }
+      } else {
+        if (!other.stickers_.isEmpty()) {
+          if (stickersBuilder_.isEmpty()) {
+            stickersBuilder_.dispose();
+            stickersBuilder_ = null;
+            stickers_ = other.stickers_;
+            bitField0_ = (bitField0_ & ~0x00000004);
+            stickersBuilder_ = 
+              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                 getStickersFieldBuilder() : null;
+          } else {
+            stickersBuilder_.addAllMessages(other.stickers_);
+          }
+        }
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1375,6 +1478,246 @@ private static final long serialVersionUID = 0L;
       stardust_ = 0;
       onChanged();
       return this;
+    }
+
+    private java.util.List<POGOProtos.Inventory.LootItem> stickers_ =
+      java.util.Collections.emptyList();
+    private void ensureStickersIsMutable() {
+      if (!((bitField0_ & 0x00000004) != 0)) {
+        stickers_ = new java.util.ArrayList<POGOProtos.Inventory.LootItem>(stickers_);
+        bitField0_ |= 0x00000004;
+       }
+    }
+
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Inventory.LootItem, POGOProtos.Inventory.LootItem.Builder, POGOProtos.Inventory.LootItemOrBuilder> stickersBuilder_;
+
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public java.util.List<POGOProtos.Inventory.LootItem> getStickersList() {
+      if (stickersBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(stickers_);
+      } else {
+        return stickersBuilder_.getMessageList();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public int getStickersCount() {
+      if (stickersBuilder_ == null) {
+        return stickers_.size();
+      } else {
+        return stickersBuilder_.getCount();
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public POGOProtos.Inventory.LootItem getStickers(int index) {
+      if (stickersBuilder_ == null) {
+        return stickers_.get(index);
+      } else {
+        return stickersBuilder_.getMessage(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public Builder setStickers(
+        int index, POGOProtos.Inventory.LootItem value) {
+      if (stickersBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureStickersIsMutable();
+        stickers_.set(index, value);
+        onChanged();
+      } else {
+        stickersBuilder_.setMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public Builder setStickers(
+        int index, POGOProtos.Inventory.LootItem.Builder builderForValue) {
+      if (stickersBuilder_ == null) {
+        ensureStickersIsMutable();
+        stickers_.set(index, builderForValue.build());
+        onChanged();
+      } else {
+        stickersBuilder_.setMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public Builder addStickers(POGOProtos.Inventory.LootItem value) {
+      if (stickersBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureStickersIsMutable();
+        stickers_.add(value);
+        onChanged();
+      } else {
+        stickersBuilder_.addMessage(value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public Builder addStickers(
+        int index, POGOProtos.Inventory.LootItem value) {
+      if (stickersBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        ensureStickersIsMutable();
+        stickers_.add(index, value);
+        onChanged();
+      } else {
+        stickersBuilder_.addMessage(index, value);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public Builder addStickers(
+        POGOProtos.Inventory.LootItem.Builder builderForValue) {
+      if (stickersBuilder_ == null) {
+        ensureStickersIsMutable();
+        stickers_.add(builderForValue.build());
+        onChanged();
+      } else {
+        stickersBuilder_.addMessage(builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public Builder addStickers(
+        int index, POGOProtos.Inventory.LootItem.Builder builderForValue) {
+      if (stickersBuilder_ == null) {
+        ensureStickersIsMutable();
+        stickers_.add(index, builderForValue.build());
+        onChanged();
+      } else {
+        stickersBuilder_.addMessage(index, builderForValue.build());
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public Builder addAllStickers(
+        java.lang.Iterable<? extends POGOProtos.Inventory.LootItem> values) {
+      if (stickersBuilder_ == null) {
+        ensureStickersIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, stickers_);
+        onChanged();
+      } else {
+        stickersBuilder_.addAllMessages(values);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public Builder clearStickers() {
+      if (stickersBuilder_ == null) {
+        stickers_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+      } else {
+        stickersBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public Builder removeStickers(int index) {
+      if (stickersBuilder_ == null) {
+        ensureStickersIsMutable();
+        stickers_.remove(index);
+        onChanged();
+      } else {
+        stickersBuilder_.remove(index);
+      }
+      return this;
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public POGOProtos.Inventory.LootItem.Builder getStickersBuilder(
+        int index) {
+      return getStickersFieldBuilder().getBuilder(index);
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public POGOProtos.Inventory.LootItemOrBuilder getStickersOrBuilder(
+        int index) {
+      if (stickersBuilder_ == null) {
+        return stickers_.get(index);  } else {
+        return stickersBuilder_.getMessageOrBuilder(index);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public java.util.List<? extends POGOProtos.Inventory.LootItemOrBuilder> 
+         getStickersOrBuilderList() {
+      if (stickersBuilder_ != null) {
+        return stickersBuilder_.getMessageOrBuilderList();
+      } else {
+        return java.util.Collections.unmodifiableList(stickers_);
+      }
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public POGOProtos.Inventory.LootItem.Builder addStickersBuilder() {
+      return getStickersFieldBuilder().addBuilder(
+          POGOProtos.Inventory.LootItem.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public POGOProtos.Inventory.LootItem.Builder addStickersBuilder(
+        int index) {
+      return getStickersFieldBuilder().addBuilder(
+          index, POGOProtos.Inventory.LootItem.getDefaultInstance());
+    }
+    /**
+     * <code>repeated .POGOProtos.Inventory.LootItem stickers = 6;</code>
+     */
+    public java.util.List<POGOProtos.Inventory.LootItem.Builder> 
+         getStickersBuilderList() {
+      return getStickersFieldBuilder().getBuilderList();
+    }
+    private com.google.protobuf.RepeatedFieldBuilderV3<
+        POGOProtos.Inventory.LootItem, POGOProtos.Inventory.LootItem.Builder, POGOProtos.Inventory.LootItemOrBuilder> 
+        getStickersFieldBuilder() {
+      if (stickersBuilder_ == null) {
+        stickersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            POGOProtos.Inventory.LootItem, POGOProtos.Inventory.LootItem.Builder, POGOProtos.Inventory.LootItemOrBuilder>(
+                stickers_,
+                ((bitField0_ & 0x00000004) != 0),
+                getParentForChildren(),
+                isClean());
+        stickers_ = null;
+      }
+      return stickersBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(
