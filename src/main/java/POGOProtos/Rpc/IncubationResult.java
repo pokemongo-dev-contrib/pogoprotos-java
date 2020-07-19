@@ -81,7 +81,7 @@ public enum IncubationResult
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(13);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(24);
   }
 
   private static final IncubationResult[] VALUES = values();

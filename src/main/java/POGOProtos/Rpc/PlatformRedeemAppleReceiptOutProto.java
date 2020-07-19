@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformRedeemAppleReceiptOutProto() {
+    status_ = 0;
     provisionedTransactionTokens_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
@@ -50,7 +51,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            status_ = rawValue;
+            break;
+          }
+          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
               provisionedTransactionTokens_ = new com.google.protobuf.LazyStringArrayList();
@@ -207,10 +214,29 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status)
   }
 
-  public static final int PROVISIONED_TRANSACTION_TOKENS_FIELD_NUMBER = 1;
+  public static final int STATUS_FIELD_NUMBER = 1;
+  private int status_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  public int getStatusValue() {
+    return status_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status status = 1;</code>
+   * @return The status.
+   */
+  public POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status getStatus() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status result = POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status.valueOf(status_);
+    return result == null ? POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status.UNRECOGNIZED : result;
+  }
+
+  public static final int PROVISIONED_TRANSACTION_TOKENS_FIELD_NUMBER = 2;
   private com.google.protobuf.LazyStringList provisionedTransactionTokens_;
   /**
-   * <code>repeated string provisioned_transaction_tokens = 1;</code>
+   * <code>repeated string provisioned_transaction_tokens = 2;</code>
    * @return A list containing the provisionedTransactionTokens.
    */
   public com.google.protobuf.ProtocolStringList
@@ -218,14 +244,14 @@ private static final long serialVersionUID = 0L;
     return provisionedTransactionTokens_;
   }
   /**
-   * <code>repeated string provisioned_transaction_tokens = 1;</code>
+   * <code>repeated string provisioned_transaction_tokens = 2;</code>
    * @return The count of provisionedTransactionTokens.
    */
   public int getProvisionedTransactionTokensCount() {
     return provisionedTransactionTokens_.size();
   }
   /**
-   * <code>repeated string provisioned_transaction_tokens = 1;</code>
+   * <code>repeated string provisioned_transaction_tokens = 2;</code>
    * @param index The index of the element to return.
    * @return The provisionedTransactionTokens at the given index.
    */
@@ -233,7 +259,7 @@ private static final long serialVersionUID = 0L;
     return provisionedTransactionTokens_.get(index);
   }
   /**
-   * <code>repeated string provisioned_transaction_tokens = 1;</code>
+   * <code>repeated string provisioned_transaction_tokens = 2;</code>
    * @param index The index of the value to return.
    * @return The bytes of the provisionedTransactionTokens at the given index.
    */
@@ -256,8 +282,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (status_ != POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status.UNSET.getNumber()) {
+      output.writeEnum(1, status_);
+    }
     for (int i = 0; i < provisionedTransactionTokens_.size(); i++) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, provisionedTransactionTokens_.getRaw(i));
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, provisionedTransactionTokens_.getRaw(i));
     }
     unknownFields.writeTo(output);
   }
@@ -268,6 +297,10 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (status_ != POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, status_);
+    }
     {
       int dataSize = 0;
       for (int i = 0; i < provisionedTransactionTokens_.size(); i++) {
@@ -291,6 +324,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto other = (POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto) obj;
 
+    if (status_ != other.status_) return false;
     if (!getProvisionedTransactionTokensList()
         .equals(other.getProvisionedTransactionTokensList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
@@ -304,6 +338,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
     if (getProvisionedTransactionTokensCount() > 0) {
       hash = (37 * hash) + PROVISIONED_TRANSACTION_TOKENS_FIELD_NUMBER;
       hash = (53 * hash) + getProvisionedTransactionTokensList().hashCode();
@@ -441,6 +477,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      status_ = 0;
+
       provisionedTransactionTokens_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       bitField0_ = (bitField0_ & ~0x00000001);
       return this;
@@ -470,6 +508,7 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto buildPartial() {
       POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto result = new POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto(this);
       int from_bitField0_ = bitField0_;
+      result.status_ = status_;
       if (((bitField0_ & 0x00000001) != 0)) {
         provisionedTransactionTokens_ = provisionedTransactionTokens_.getUnmodifiableView();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -523,6 +562,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto other) {
       if (other == POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.getDefaultInstance()) return this;
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
+      }
       if (!other.provisionedTransactionTokens_.isEmpty()) {
         if (provisionedTransactionTokens_.isEmpty()) {
           provisionedTransactionTokens_ = other.provisionedTransactionTokens_;
@@ -563,6 +605,58 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
+    private int status_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status status = 1;</code>
+     * @param value The enum numeric value on the wire for status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatusValue(int value) {
+      status_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status status = 1;</code>
+     * @return The status.
+     */
+    public POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status getStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status result = POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status status = 1;</code>
+     * @param value The status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatus(POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      status_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status status = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStatus() {
+      
+      status_ = 0;
+      onChanged();
+      return this;
+    }
+
     private com.google.protobuf.LazyStringList provisionedTransactionTokens_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     private void ensureProvisionedTransactionTokensIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
@@ -571,7 +665,7 @@ private static final long serialVersionUID = 0L;
        }
     }
     /**
-     * <code>repeated string provisioned_transaction_tokens = 1;</code>
+     * <code>repeated string provisioned_transaction_tokens = 2;</code>
      * @return A list containing the provisionedTransactionTokens.
      */
     public com.google.protobuf.ProtocolStringList
@@ -579,14 +673,14 @@ private static final long serialVersionUID = 0L;
       return provisionedTransactionTokens_.getUnmodifiableView();
     }
     /**
-     * <code>repeated string provisioned_transaction_tokens = 1;</code>
+     * <code>repeated string provisioned_transaction_tokens = 2;</code>
      * @return The count of provisionedTransactionTokens.
      */
     public int getProvisionedTransactionTokensCount() {
       return provisionedTransactionTokens_.size();
     }
     /**
-     * <code>repeated string provisioned_transaction_tokens = 1;</code>
+     * <code>repeated string provisioned_transaction_tokens = 2;</code>
      * @param index The index of the element to return.
      * @return The provisionedTransactionTokens at the given index.
      */
@@ -594,7 +688,7 @@ private static final long serialVersionUID = 0L;
       return provisionedTransactionTokens_.get(index);
     }
     /**
-     * <code>repeated string provisioned_transaction_tokens = 1;</code>
+     * <code>repeated string provisioned_transaction_tokens = 2;</code>
      * @param index The index of the value to return.
      * @return The bytes of the provisionedTransactionTokens at the given index.
      */
@@ -603,7 +697,7 @@ private static final long serialVersionUID = 0L;
       return provisionedTransactionTokens_.getByteString(index);
     }
     /**
-     * <code>repeated string provisioned_transaction_tokens = 1;</code>
+     * <code>repeated string provisioned_transaction_tokens = 2;</code>
      * @param index The index to set the value at.
      * @param value The provisionedTransactionTokens to set.
      * @return This builder for chaining.
@@ -619,7 +713,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated string provisioned_transaction_tokens = 1;</code>
+     * <code>repeated string provisioned_transaction_tokens = 2;</code>
      * @param value The provisionedTransactionTokens to add.
      * @return This builder for chaining.
      */
@@ -634,7 +728,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated string provisioned_transaction_tokens = 1;</code>
+     * <code>repeated string provisioned_transaction_tokens = 2;</code>
      * @param values The provisionedTransactionTokens to add.
      * @return This builder for chaining.
      */
@@ -647,7 +741,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated string provisioned_transaction_tokens = 1;</code>
+     * <code>repeated string provisioned_transaction_tokens = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearProvisionedTransactionTokens() {
@@ -657,7 +751,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated string provisioned_transaction_tokens = 1;</code>
+     * <code>repeated string provisioned_transaction_tokens = 2;</code>
      * @param value The bytes of the provisionedTransactionTokens to add.
      * @return This builder for chaining.
      */

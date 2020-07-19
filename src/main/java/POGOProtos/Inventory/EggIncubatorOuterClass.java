@@ -36,7 +36,7 @@ public final class EggIncubatorOuterClass {
       "OProtos.Inventory.Item.ItemId\022>\n\016incubat" +
       "or_type\030\003 \001(\0162&.POGOProtos.Inventory.Egg" +
       "IncubatorType\022\026\n\016uses_remaining\030\004 \001(\005\022\022\n" +
-      "\npokemon_id\030\005 \001(\006\022\027\n\017start_km_walked\030\006 \001" +
+      "\npokemon_id\030\005 \001(\003\022\027\n\017start_km_walked\030\006 \001" +
       "(\001\022\030\n\020target_km_walked\030\007 \001(\001B\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

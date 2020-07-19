@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformGenerateGmapSignedUrlOutProto() {
+    result_ = 0;
     signedUrl_ = "";
   }
 
@@ -49,7 +50,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            result_ = rawValue;
+            break;
+          }
+          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             signedUrl_ = s;
@@ -227,10 +234,29 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result)
   }
 
-  public static final int SIGNED_URL_FIELD_NUMBER = 1;
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  public int getResultValue() {
+    return result_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  public POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result.UNRECOGNIZED : result;
+  }
+
+  public static final int SIGNED_URL_FIELD_NUMBER = 2;
   private volatile java.lang.Object signedUrl_;
   /**
-   * <code>string signed_url = 1;</code>
+   * <code>string signed_url = 2;</code>
    * @return The signedUrl.
    */
   public java.lang.String getSignedUrl() {
@@ -246,7 +272,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string signed_url = 1;</code>
+   * <code>string signed_url = 2;</code>
    * @return The bytes for signedUrl.
    */
   public com.google.protobuf.ByteString
@@ -277,8 +303,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (result_ != POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
+    }
     if (!getSignedUrlBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, signedUrl_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, signedUrl_);
     }
     unknownFields.writeTo(output);
   }
@@ -289,8 +318,12 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (result_ != POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, result_);
+    }
     if (!getSignedUrlBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, signedUrl_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, signedUrl_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -307,6 +340,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto other = (POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto) obj;
 
+    if (result_ != other.result_) return false;
     if (!getSignedUrl()
         .equals(other.getSignedUrl())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
@@ -320,6 +354,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     hash = (37 * hash) + SIGNED_URL_FIELD_NUMBER;
     hash = (53 * hash) + getSignedUrl().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -455,6 +491,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      result_ = 0;
+
       signedUrl_ = "";
 
       return this;
@@ -483,6 +521,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto buildPartial() {
       POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto result = new POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto(this);
+      result.result_ = result_;
       result.signedUrl_ = signedUrl_;
       onBuilt();
       return result;
@@ -532,6 +571,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto other) {
       if (other == POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
+      }
       if (!other.getSignedUrl().isEmpty()) {
         signedUrl_ = other.signedUrl_;
         onChanged();
@@ -565,9 +607,61 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private int result_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = 1;</code>
+     * @param value The result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResult(POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      result_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearResult() {
+      
+      result_ = 0;
+      onChanged();
+      return this;
+    }
+
     private java.lang.Object signedUrl_ = "";
     /**
-     * <code>string signed_url = 1;</code>
+     * <code>string signed_url = 2;</code>
      * @return The signedUrl.
      */
     public java.lang.String getSignedUrl() {
@@ -583,7 +677,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string signed_url = 1;</code>
+     * <code>string signed_url = 2;</code>
      * @return The bytes for signedUrl.
      */
     public com.google.protobuf.ByteString
@@ -600,7 +694,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string signed_url = 1;</code>
+     * <code>string signed_url = 2;</code>
      * @param value The signedUrl to set.
      * @return This builder for chaining.
      */
@@ -615,7 +709,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string signed_url = 1;</code>
+     * <code>string signed_url = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearSignedUrl() {
@@ -625,7 +719,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string signed_url = 1;</code>
+     * <code>string signed_url = 2;</code>
      * @param value The bytes for signedUrl to set.
      * @return This builder for chaining.
      */

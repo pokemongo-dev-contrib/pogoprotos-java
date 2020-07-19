@@ -99,7 +99,7 @@ public enum Team
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(104);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(129);
   }
 
   private static final Team[] VALUES = values();

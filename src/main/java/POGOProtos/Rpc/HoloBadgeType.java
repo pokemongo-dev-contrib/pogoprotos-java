@@ -2250,7 +2250,7 @@ public enum HoloBadgeType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(54);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(79);
   }
 
   private static final HoloBadgeType[] VALUES = values();

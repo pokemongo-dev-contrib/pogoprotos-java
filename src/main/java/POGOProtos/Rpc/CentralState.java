@@ -117,7 +117,7 @@ public enum CentralState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(17);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(37);
   }
 
   private static final CentralState[] VALUES = values();

@@ -1394,44 +1394,55 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>double distance_to_player_km = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    int getResultValue();
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
+     * @return The result.
+     */
+    POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result getResult();
+
+    /**
+     * <code>double distance_to_player_km = 2;</code>
      * @return The distanceToPlayerKm.
      */
     double getDistanceToPlayerKm();
 
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
      * @return Whether the locale field is set.
      */
     boolean hasLocale();
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
      * @return The locale.
      */
     POGOProtos.Rpc.PlatformPlayerLocaleProto getLocale();
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
      */
     POGOProtos.Rpc.PlatformPlayerLocaleProtoOrBuilder getLocaleOrBuilder();
 
     /**
-     * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 4;</code>
      * @return The enum numeric value on the wire for onlineStatus.
      */
     int getOnlineStatusValue();
     /**
-     * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 4;</code>
      * @return The onlineStatus.
      */
     POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus getOnlineStatus();
 
     /**
-     * <code>string last_played_app_key = 4;</code>
+     * <code>string last_played_app_key = 5;</code>
      * @return The lastPlayedAppKey.
      */
     java.lang.String getLastPlayedAppKey();
     /**
-     * <code>string last_played_app_key = 4;</code>
+     * <code>string last_played_app_key = 5;</code>
      * @return The bytes for lastPlayedAppKey.
      */
     com.google.protobuf.ByteString
@@ -1450,6 +1461,7 @@ private static final long serialVersionUID = 0L;
       super(builder);
     }
     private PlayerStatusDetailsProto() {
+      result_ = 0;
       onlineStatus_ = 0;
       lastPlayedAppKey_ = "";
     }
@@ -1484,12 +1496,18 @@ private static final long serialVersionUID = 0L;
             case 0:
               done = true;
               break;
-            case 9: {
+            case 8: {
+              int rawValue = input.readEnum();
+
+              result_ = rawValue;
+              break;
+            }
+            case 17: {
 
               distanceToPlayerKm_ = input.readDouble();
               break;
             }
-            case 18: {
+            case 26: {
               POGOProtos.Rpc.PlatformPlayerLocaleProto.Builder subBuilder = null;
               if (locale_ != null) {
                 subBuilder = locale_.toBuilder();
@@ -1502,13 +1520,13 @@ private static final long serialVersionUID = 0L;
 
               break;
             }
-            case 24: {
+            case 32: {
               int rawValue = input.readEnum();
 
               onlineStatus_ = rawValue;
               break;
             }
-            case 34: {
+            case 42: {
               java.lang.String s = input.readStringRequireUtf8();
 
               lastPlayedAppKey_ = s;
@@ -1677,50 +1695,69 @@ private static final long serialVersionUID = 0L;
       // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result)
     }
 
-    public static final int DISTANCE_TO_PLAYER_KM_FIELD_NUMBER = 1;
+    public static final int RESULT_FIELD_NUMBER = 1;
+    private int result_;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result.UNRECOGNIZED : result;
+    }
+
+    public static final int DISTANCE_TO_PLAYER_KM_FIELD_NUMBER = 2;
     private double distanceToPlayerKm_;
     /**
-     * <code>double distance_to_player_km = 1;</code>
+     * <code>double distance_to_player_km = 2;</code>
      * @return The distanceToPlayerKm.
      */
     public double getDistanceToPlayerKm() {
       return distanceToPlayerKm_;
     }
 
-    public static final int LOCALE_FIELD_NUMBER = 2;
+    public static final int LOCALE_FIELD_NUMBER = 3;
     private POGOProtos.Rpc.PlatformPlayerLocaleProto locale_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
      * @return Whether the locale field is set.
      */
     public boolean hasLocale() {
       return locale_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
      * @return The locale.
      */
     public POGOProtos.Rpc.PlatformPlayerLocaleProto getLocale() {
       return locale_ == null ? POGOProtos.Rpc.PlatformPlayerLocaleProto.getDefaultInstance() : locale_;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
      */
     public POGOProtos.Rpc.PlatformPlayerLocaleProtoOrBuilder getLocaleOrBuilder() {
       return getLocale();
     }
 
-    public static final int ONLINE_STATUS_FIELD_NUMBER = 3;
+    public static final int ONLINE_STATUS_FIELD_NUMBER = 4;
     private int onlineStatus_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 4;</code>
      * @return The enum numeric value on the wire for onlineStatus.
      */
     public int getOnlineStatusValue() {
       return onlineStatus_;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 3;</code>
+     * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 4;</code>
      * @return The onlineStatus.
      */
     public POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus getOnlineStatus() {
@@ -1729,10 +1766,10 @@ private static final long serialVersionUID = 0L;
       return result == null ? POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus.UNRECOGNIZED : result;
     }
 
-    public static final int LAST_PLAYED_APP_KEY_FIELD_NUMBER = 4;
+    public static final int LAST_PLAYED_APP_KEY_FIELD_NUMBER = 5;
     private volatile java.lang.Object lastPlayedAppKey_;
     /**
-     * <code>string last_played_app_key = 4;</code>
+     * <code>string last_played_app_key = 5;</code>
      * @return The lastPlayedAppKey.
      */
     public java.lang.String getLastPlayedAppKey() {
@@ -1748,7 +1785,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string last_played_app_key = 4;</code>
+     * <code>string last_played_app_key = 5;</code>
      * @return The bytes for lastPlayedAppKey.
      */
     public com.google.protobuf.ByteString
@@ -1779,17 +1816,20 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (result_ != POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result.UNSET.getNumber()) {
+        output.writeEnum(1, result_);
+      }
       if (distanceToPlayerKm_ != 0D) {
-        output.writeDouble(1, distanceToPlayerKm_);
+        output.writeDouble(2, distanceToPlayerKm_);
       }
       if (locale_ != null) {
-        output.writeMessage(2, getLocale());
+        output.writeMessage(3, getLocale());
       }
       if (onlineStatus_ != POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus.STATUS_UNSET.getNumber()) {
-        output.writeEnum(3, onlineStatus_);
+        output.writeEnum(4, onlineStatus_);
       }
       if (!getLastPlayedAppKeyBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, lastPlayedAppKey_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, lastPlayedAppKey_);
       }
       unknownFields.writeTo(output);
     }
@@ -1800,20 +1840,24 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
+      if (result_ != POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result.UNSET.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, result_);
+      }
       if (distanceToPlayerKm_ != 0D) {
         size += com.google.protobuf.CodedOutputStream
-          .computeDoubleSize(1, distanceToPlayerKm_);
+          .computeDoubleSize(2, distanceToPlayerKm_);
       }
       if (locale_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getLocale());
+          .computeMessageSize(3, getLocale());
       }
       if (onlineStatus_ != POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus.STATUS_UNSET.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, onlineStatus_);
+          .computeEnumSize(4, onlineStatus_);
       }
       if (!getLastPlayedAppKeyBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, lastPlayedAppKey_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, lastPlayedAppKey_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1830,6 +1874,7 @@ private static final long serialVersionUID = 0L;
       }
       POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto other = (POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto) obj;
 
+      if (result_ != other.result_) return false;
       if (java.lang.Double.doubleToLongBits(getDistanceToPlayerKm())
           != java.lang.Double.doubleToLongBits(
               other.getDistanceToPlayerKm())) return false;
@@ -1852,6 +1897,8 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RESULT_FIELD_NUMBER;
+      hash = (53 * hash) + result_;
       hash = (37 * hash) + DISTANCE_TO_PLAYER_KM_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           java.lang.Double.doubleToLongBits(getDistanceToPlayerKm()));
@@ -1996,6 +2043,8 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        result_ = 0;
+
         distanceToPlayerKm_ = 0D;
 
         if (localeBuilder_ == null) {
@@ -2034,6 +2083,7 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto buildPartial() {
         POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto result = new POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto(this);
+        result.result_ = result_;
         result.distanceToPlayerKm_ = distanceToPlayerKm_;
         if (localeBuilder_ == null) {
           result.locale_ = locale_;
@@ -2090,6 +2140,9 @@ private static final long serialVersionUID = 0L;
 
       public Builder mergeFrom(POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto other) {
         if (other == POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.getDefaultInstance()) return this;
+        if (other.result_ != 0) {
+          setResultValue(other.getResultValue());
+        }
         if (other.getDistanceToPlayerKm() != 0D) {
           setDistanceToPlayerKm(other.getDistanceToPlayerKm());
         }
@@ -2132,16 +2185,68 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
+      private int result_ = 0;
+      /**
+       * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
+       * @return The enum numeric value on the wire for result.
+       */
+      public int getResultValue() {
+        return result_;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
+       * @param value The enum numeric value on the wire for result to set.
+       * @return This builder for chaining.
+       */
+      public Builder setResultValue(int value) {
+        result_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
+       * @return The result.
+       */
+      public POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result getResult() {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result.valueOf(result_);
+        return result == null ? POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
+       * @param value The result to set.
+       * @return This builder for chaining.
+       */
+      public Builder setResult(POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        result_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearResult() {
+        
+        result_ = 0;
+        onChanged();
+        return this;
+      }
+
       private double distanceToPlayerKm_ ;
       /**
-       * <code>double distance_to_player_km = 1;</code>
+       * <code>double distance_to_player_km = 2;</code>
        * @return The distanceToPlayerKm.
        */
       public double getDistanceToPlayerKm() {
         return distanceToPlayerKm_;
       }
       /**
-       * <code>double distance_to_player_km = 1;</code>
+       * <code>double distance_to_player_km = 2;</code>
        * @param value The distanceToPlayerKm to set.
        * @return This builder for chaining.
        */
@@ -2152,7 +2257,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>double distance_to_player_km = 1;</code>
+       * <code>double distance_to_player_km = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearDistanceToPlayerKm() {
@@ -2166,14 +2271,14 @@ private static final long serialVersionUID = 0L;
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.PlatformPlayerLocaleProto, POGOProtos.Rpc.PlatformPlayerLocaleProto.Builder, POGOProtos.Rpc.PlatformPlayerLocaleProtoOrBuilder> localeBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
        * @return Whether the locale field is set.
        */
       public boolean hasLocale() {
         return localeBuilder_ != null || locale_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
        * @return The locale.
        */
       public POGOProtos.Rpc.PlatformPlayerLocaleProto getLocale() {
@@ -2184,7 +2289,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
        */
       public Builder setLocale(POGOProtos.Rpc.PlatformPlayerLocaleProto value) {
         if (localeBuilder_ == null) {
@@ -2200,7 +2305,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
        */
       public Builder setLocale(
           POGOProtos.Rpc.PlatformPlayerLocaleProto.Builder builderForValue) {
@@ -2214,7 +2319,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
        */
       public Builder mergeLocale(POGOProtos.Rpc.PlatformPlayerLocaleProto value) {
         if (localeBuilder_ == null) {
@@ -2232,7 +2337,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
        */
       public Builder clearLocale() {
         if (localeBuilder_ == null) {
@@ -2246,7 +2351,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
        */
       public POGOProtos.Rpc.PlatformPlayerLocaleProto.Builder getLocaleBuilder() {
         
@@ -2254,7 +2359,7 @@ private static final long serialVersionUID = 0L;
         return getLocaleFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
        */
       public POGOProtos.Rpc.PlatformPlayerLocaleProtoOrBuilder getLocaleOrBuilder() {
         if (localeBuilder_ != null) {
@@ -2265,7 +2370,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
+       * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.PlatformPlayerLocaleProto, POGOProtos.Rpc.PlatformPlayerLocaleProto.Builder, POGOProtos.Rpc.PlatformPlayerLocaleProtoOrBuilder> 
@@ -2283,14 +2388,14 @@ private static final long serialVersionUID = 0L;
 
       private int onlineStatus_ = 0;
       /**
-       * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 3;</code>
+       * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 4;</code>
        * @return The enum numeric value on the wire for onlineStatus.
        */
       public int getOnlineStatusValue() {
         return onlineStatus_;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 3;</code>
+       * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 4;</code>
        * @param value The enum numeric value on the wire for onlineStatus to set.
        * @return This builder for chaining.
        */
@@ -2300,7 +2405,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 3;</code>
+       * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 4;</code>
        * @return The onlineStatus.
        */
       public POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus getOnlineStatus() {
@@ -2309,7 +2414,7 @@ private static final long serialVersionUID = 0L;
         return result == null ? POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus.UNRECOGNIZED : result;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 3;</code>
+       * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 4;</code>
        * @param value The onlineStatus to set.
        * @return This builder for chaining.
        */
@@ -2323,7 +2428,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 3;</code>
+       * <code>.POGOProtos.Rpc.PlatformSocialV2Enum.OnlineStatus online_status = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearOnlineStatus() {
@@ -2335,7 +2440,7 @@ private static final long serialVersionUID = 0L;
 
       private java.lang.Object lastPlayedAppKey_ = "";
       /**
-       * <code>string last_played_app_key = 4;</code>
+       * <code>string last_played_app_key = 5;</code>
        * @return The lastPlayedAppKey.
        */
       public java.lang.String getLastPlayedAppKey() {
@@ -2351,7 +2456,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>string last_played_app_key = 4;</code>
+       * <code>string last_played_app_key = 5;</code>
        * @return The bytes for lastPlayedAppKey.
        */
       public com.google.protobuf.ByteString
@@ -2368,7 +2473,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>string last_played_app_key = 4;</code>
+       * <code>string last_played_app_key = 5;</code>
        * @param value The lastPlayedAppKey to set.
        * @return This builder for chaining.
        */
@@ -2383,7 +2488,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>string last_played_app_key = 4;</code>
+       * <code>string last_played_app_key = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearLastPlayedAppKey() {
@@ -2393,7 +2498,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>string last_played_app_key = 4;</code>
+       * <code>string last_played_app_key = 5;</code>
        * @param value The bytes for lastPlayedAppKey to set.
        * @return This builder for chaining.
        */

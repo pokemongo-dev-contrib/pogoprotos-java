@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private RedeemPasscodeResponseProto() {
+    result_ = 0;
     acquiredItem_ = java.util.Collections.emptyList();
     acquiredItemsProto_ = com.google.protobuf.ByteString.EMPTY;
     passcode_ = "";
@@ -52,7 +53,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            result_ = rawValue;
+            break;
+          }
+          case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
               acquiredItem_ = new java.util.ArrayList<POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem>();
               mutable_bitField0_ |= 0x00000001;
@@ -61,12 +68,12 @@ private static final long serialVersionUID = 0L;
                 input.readMessage(POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.parser(), extensionRegistry));
             break;
           }
-          case 18: {
+          case 26: {
 
             acquiredItemsProto_ = input.readBytes();
             break;
           }
-          case 26: {
+          case 34: {
             java.lang.String s = input.readStringRequireUtf8();
 
             passcode_ = s;
@@ -882,55 +889,74 @@ private static final long serialVersionUID = 0L;
 
   }
 
-  public static final int ACQUIRED_ITEM_FIELD_NUMBER = 1;
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
+  /**
+   * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  public int getResultValue() {
+    return result_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
+   * @return The result.
+   */
+  public POGOProtos.Rpc.RedeemPasscodeResponseProto.Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = POGOProtos.Rpc.RedeemPasscodeResponseProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.RedeemPasscodeResponseProto.Result.UNRECOGNIZED : result;
+  }
+
+  public static final int ACQUIRED_ITEM_FIELD_NUMBER = 2;
   private java.util.List<POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem> acquiredItem_;
   /**
-   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
   public java.util.List<POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem> getAcquiredItemList() {
     return acquiredItem_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
   public java.util.List<? extends POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItemOrBuilder> 
       getAcquiredItemOrBuilderList() {
     return acquiredItem_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
   public int getAcquiredItemCount() {
     return acquiredItem_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
   public POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem getAcquiredItem(int index) {
     return acquiredItem_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
   public POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItemOrBuilder getAcquiredItemOrBuilder(
       int index) {
     return acquiredItem_.get(index);
   }
 
-  public static final int ACQUIRED_ITEMS_PROTO_FIELD_NUMBER = 2;
+  public static final int ACQUIRED_ITEMS_PROTO_FIELD_NUMBER = 3;
   private com.google.protobuf.ByteString acquiredItemsProto_;
   /**
-   * <code>bytes acquired_items_proto = 2;</code>
+   * <code>bytes acquired_items_proto = 3;</code>
    * @return The acquiredItemsProto.
    */
   public com.google.protobuf.ByteString getAcquiredItemsProto() {
     return acquiredItemsProto_;
   }
 
-  public static final int PASSCODE_FIELD_NUMBER = 3;
+  public static final int PASSCODE_FIELD_NUMBER = 4;
   private volatile java.lang.Object passcode_;
   /**
-   * <code>string passcode = 3;</code>
+   * <code>string passcode = 4;</code>
    * @return The passcode.
    */
   public java.lang.String getPasscode() {
@@ -946,7 +972,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string passcode = 3;</code>
+   * <code>string passcode = 4;</code>
    * @return The bytes for passcode.
    */
   public com.google.protobuf.ByteString
@@ -977,14 +1003,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (result_ != POGOProtos.Rpc.RedeemPasscodeResponseProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
+    }
     for (int i = 0; i < acquiredItem_.size(); i++) {
-      output.writeMessage(1, acquiredItem_.get(i));
+      output.writeMessage(2, acquiredItem_.get(i));
     }
     if (!acquiredItemsProto_.isEmpty()) {
-      output.writeBytes(2, acquiredItemsProto_);
+      output.writeBytes(3, acquiredItemsProto_);
     }
     if (!getPasscodeBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, passcode_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, passcode_);
     }
     unknownFields.writeTo(output);
   }
@@ -995,16 +1024,20 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (result_ != POGOProtos.Rpc.RedeemPasscodeResponseProto.Result.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, result_);
+    }
     for (int i = 0; i < acquiredItem_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, acquiredItem_.get(i));
+        .computeMessageSize(2, acquiredItem_.get(i));
     }
     if (!acquiredItemsProto_.isEmpty()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(2, acquiredItemsProto_);
+        .computeBytesSize(3, acquiredItemsProto_);
     }
     if (!getPasscodeBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, passcode_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, passcode_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1021,6 +1054,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.RedeemPasscodeResponseProto other = (POGOProtos.Rpc.RedeemPasscodeResponseProto) obj;
 
+    if (result_ != other.result_) return false;
     if (!getAcquiredItemList()
         .equals(other.getAcquiredItemList())) return false;
     if (!getAcquiredItemsProto()
@@ -1038,6 +1072,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     if (getAcquiredItemCount() > 0) {
       hash = (37 * hash) + ACQUIRED_ITEM_FIELD_NUMBER;
       hash = (53 * hash) + getAcquiredItemList().hashCode();
@@ -1180,6 +1216,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      result_ = 0;
+
       if (acquiredItemBuilder_ == null) {
         acquiredItem_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -1217,6 +1255,7 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.RedeemPasscodeResponseProto buildPartial() {
       POGOProtos.Rpc.RedeemPasscodeResponseProto result = new POGOProtos.Rpc.RedeemPasscodeResponseProto(this);
       int from_bitField0_ = bitField0_;
+      result.result_ = result_;
       if (acquiredItemBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           acquiredItem_ = java.util.Collections.unmodifiableList(acquiredItem_);
@@ -1276,6 +1315,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.RedeemPasscodeResponseProto other) {
       if (other == POGOProtos.Rpc.RedeemPasscodeResponseProto.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
+      }
       if (acquiredItemBuilder_ == null) {
         if (!other.acquiredItem_.isEmpty()) {
           if (acquiredItem_.isEmpty()) {
@@ -1339,6 +1381,58 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
+    private int result_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.RedeemPasscodeResponseProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = POGOProtos.Rpc.RedeemPasscodeResponseProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.RedeemPasscodeResponseProto.Result.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
+     * @param value The result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResult(POGOProtos.Rpc.RedeemPasscodeResponseProto.Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      result_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearResult() {
+      
+      result_ = 0;
+      onChanged();
+      return this;
+    }
+
     private java.util.List<POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem> acquiredItem_ =
       java.util.Collections.emptyList();
     private void ensureAcquiredItemIsMutable() {
@@ -1352,7 +1446,7 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem, POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.Builder, POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItemOrBuilder> acquiredItemBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public java.util.List<POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem> getAcquiredItemList() {
       if (acquiredItemBuilder_ == null) {
@@ -1362,7 +1456,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public int getAcquiredItemCount() {
       if (acquiredItemBuilder_ == null) {
@@ -1372,7 +1466,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem getAcquiredItem(int index) {
       if (acquiredItemBuilder_ == null) {
@@ -1382,7 +1476,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public Builder setAcquiredItem(
         int index, POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem value) {
@@ -1399,7 +1493,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public Builder setAcquiredItem(
         int index, POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.Builder builderForValue) {
@@ -1413,7 +1507,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public Builder addAcquiredItem(POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem value) {
       if (acquiredItemBuilder_ == null) {
@@ -1429,7 +1523,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public Builder addAcquiredItem(
         int index, POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem value) {
@@ -1446,7 +1540,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public Builder addAcquiredItem(
         POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.Builder builderForValue) {
@@ -1460,7 +1554,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public Builder addAcquiredItem(
         int index, POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.Builder builderForValue) {
@@ -1474,7 +1568,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public Builder addAllAcquiredItem(
         java.lang.Iterable<? extends POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem> values) {
@@ -1489,7 +1583,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public Builder clearAcquiredItem() {
       if (acquiredItemBuilder_ == null) {
@@ -1502,7 +1596,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public Builder removeAcquiredItem(int index) {
       if (acquiredItemBuilder_ == null) {
@@ -1515,14 +1609,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.Builder getAcquiredItemBuilder(
         int index) {
       return getAcquiredItemFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItemOrBuilder getAcquiredItemOrBuilder(
         int index) {
@@ -1532,7 +1626,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItemOrBuilder> 
          getAcquiredItemOrBuilderList() {
@@ -1543,14 +1637,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.Builder addAcquiredItemBuilder() {
       return getAcquiredItemFieldBuilder().addBuilder(
           POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.Builder addAcquiredItemBuilder(
         int index) {
@@ -1558,7 +1652,7 @@ private static final long serialVersionUID = 0L;
           index, POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
      */
     public java.util.List<POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem.Builder> 
          getAcquiredItemBuilderList() {
@@ -1581,14 +1675,14 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.ByteString acquiredItemsProto_ = com.google.protobuf.ByteString.EMPTY;
     /**
-     * <code>bytes acquired_items_proto = 2;</code>
+     * <code>bytes acquired_items_proto = 3;</code>
      * @return The acquiredItemsProto.
      */
     public com.google.protobuf.ByteString getAcquiredItemsProto() {
       return acquiredItemsProto_;
     }
     /**
-     * <code>bytes acquired_items_proto = 2;</code>
+     * <code>bytes acquired_items_proto = 3;</code>
      * @param value The acquiredItemsProto to set.
      * @return This builder for chaining.
      */
@@ -1602,7 +1696,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>bytes acquired_items_proto = 2;</code>
+     * <code>bytes acquired_items_proto = 3;</code>
      * @return This builder for chaining.
      */
     public Builder clearAcquiredItemsProto() {
@@ -1614,7 +1708,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object passcode_ = "";
     /**
-     * <code>string passcode = 3;</code>
+     * <code>string passcode = 4;</code>
      * @return The passcode.
      */
     public java.lang.String getPasscode() {
@@ -1630,7 +1724,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string passcode = 3;</code>
+     * <code>string passcode = 4;</code>
      * @return The bytes for passcode.
      */
     public com.google.protobuf.ByteString
@@ -1647,7 +1741,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string passcode = 3;</code>
+     * <code>string passcode = 4;</code>
      * @param value The passcode to set.
      * @return This builder for chaining.
      */
@@ -1662,7 +1756,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string passcode = 3;</code>
+     * <code>string passcode = 4;</code>
      * @return This builder for chaining.
      */
     public Builder clearPasscode() {
@@ -1672,7 +1766,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string passcode = 3;</code>
+     * <code>string passcode = 4;</code>
      * @param value The bytes for passcode to set.
      * @return This builder for chaining.
      */

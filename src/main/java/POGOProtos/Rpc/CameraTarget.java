@@ -189,7 +189,7 @@ public enum CameraTarget
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(41);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(66);
   }
 
   private static final CameraTarget[] VALUES = values();

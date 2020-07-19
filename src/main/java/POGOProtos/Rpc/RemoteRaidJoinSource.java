@@ -99,7 +99,7 @@ public enum RemoteRaidJoinSource
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(95);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(120);
   }
 
   private static final RemoteRaidJoinSource[] VALUES = values();

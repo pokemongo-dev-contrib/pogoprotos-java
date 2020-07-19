@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private GetAdventureSyncSettingsResponseProto() {
+    status_ = 0;
   }
 
   @java.lang.Override
@@ -48,7 +49,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            status_ = rawValue;
+            break;
+          }
+          case 18: {
             POGOProtos.Rpc.AdventureSyncSettingsProto.Builder subBuilder = null;
             if (adventureSyncSettings_ != null) {
               subBuilder = adventureSyncSettings_.toBuilder();
@@ -215,24 +222,43 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status)
   }
 
-  public static final int ADVENTURE_SYNC_SETTINGS_FIELD_NUMBER = 1;
+  public static final int STATUS_FIELD_NUMBER = 1;
+  private int status_;
+  /**
+   * <code>.POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  public int getStatusValue() {
+    return status_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status status = 1;</code>
+   * @return The status.
+   */
+  public POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status getStatus() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status result = POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status.valueOf(status_);
+    return result == null ? POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status.UNRECOGNIZED : result;
+  }
+
+  public static final int ADVENTURE_SYNC_SETTINGS_FIELD_NUMBER = 2;
   private POGOProtos.Rpc.AdventureSyncSettingsProto adventureSyncSettings_;
   /**
-   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
    * @return Whether the adventureSyncSettings field is set.
    */
   public boolean hasAdventureSyncSettings() {
     return adventureSyncSettings_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
    * @return The adventureSyncSettings.
    */
   public POGOProtos.Rpc.AdventureSyncSettingsProto getAdventureSyncSettings() {
     return adventureSyncSettings_ == null ? POGOProtos.Rpc.AdventureSyncSettingsProto.getDefaultInstance() : adventureSyncSettings_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
    */
   public POGOProtos.Rpc.AdventureSyncSettingsProtoOrBuilder getAdventureSyncSettingsOrBuilder() {
     return getAdventureSyncSettings();
@@ -252,8 +278,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (status_ != POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status.UNSET.getNumber()) {
+      output.writeEnum(1, status_);
+    }
     if (adventureSyncSettings_ != null) {
-      output.writeMessage(1, getAdventureSyncSettings());
+      output.writeMessage(2, getAdventureSyncSettings());
     }
     unknownFields.writeTo(output);
   }
@@ -264,9 +293,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (status_ != POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, status_);
+    }
     if (adventureSyncSettings_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getAdventureSyncSettings());
+        .computeMessageSize(2, getAdventureSyncSettings());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -283,6 +316,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto other = (POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto) obj;
 
+    if (status_ != other.status_) return false;
     if (hasAdventureSyncSettings() != other.hasAdventureSyncSettings()) return false;
     if (hasAdventureSyncSettings()) {
       if (!getAdventureSyncSettings()
@@ -299,6 +333,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
     if (hasAdventureSyncSettings()) {
       hash = (37 * hash) + ADVENTURE_SYNC_SETTINGS_FIELD_NUMBER;
       hash = (53 * hash) + getAdventureSyncSettings().hashCode();
@@ -436,6 +472,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      status_ = 0;
+
       if (adventureSyncSettingsBuilder_ == null) {
         adventureSyncSettings_ = null;
       } else {
@@ -468,6 +506,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto buildPartial() {
       POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto result = new POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto(this);
+      result.status_ = status_;
       if (adventureSyncSettingsBuilder_ == null) {
         result.adventureSyncSettings_ = adventureSyncSettings_;
       } else {
@@ -521,6 +560,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto other) {
       if (other == POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.getDefaultInstance()) return this;
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
+      }
       if (other.hasAdventureSyncSettings()) {
         mergeAdventureSyncSettings(other.getAdventureSyncSettings());
       }
@@ -553,18 +595,70 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private int status_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status status = 1;</code>
+     * @param value The enum numeric value on the wire for status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatusValue(int value) {
+      status_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status status = 1;</code>
+     * @return The status.
+     */
+    public POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status getStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status result = POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status status = 1;</code>
+     * @param value The status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatus(POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      status_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status status = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStatus() {
+      
+      status_ = 0;
+      onChanged();
+      return this;
+    }
+
     private POGOProtos.Rpc.AdventureSyncSettingsProto adventureSyncSettings_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.AdventureSyncSettingsProto, POGOProtos.Rpc.AdventureSyncSettingsProto.Builder, POGOProtos.Rpc.AdventureSyncSettingsProtoOrBuilder> adventureSyncSettingsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
      * @return Whether the adventureSyncSettings field is set.
      */
     public boolean hasAdventureSyncSettings() {
       return adventureSyncSettingsBuilder_ != null || adventureSyncSettings_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
      * @return The adventureSyncSettings.
      */
     public POGOProtos.Rpc.AdventureSyncSettingsProto getAdventureSyncSettings() {
@@ -575,7 +669,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
      */
     public Builder setAdventureSyncSettings(POGOProtos.Rpc.AdventureSyncSettingsProto value) {
       if (adventureSyncSettingsBuilder_ == null) {
@@ -591,7 +685,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
      */
     public Builder setAdventureSyncSettings(
         POGOProtos.Rpc.AdventureSyncSettingsProto.Builder builderForValue) {
@@ -605,7 +699,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
      */
     public Builder mergeAdventureSyncSettings(POGOProtos.Rpc.AdventureSyncSettingsProto value) {
       if (adventureSyncSettingsBuilder_ == null) {
@@ -623,7 +717,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
      */
     public Builder clearAdventureSyncSettings() {
       if (adventureSyncSettingsBuilder_ == null) {
@@ -637,7 +731,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
      */
     public POGOProtos.Rpc.AdventureSyncSettingsProto.Builder getAdventureSyncSettingsBuilder() {
       
@@ -645,7 +739,7 @@ private static final long serialVersionUID = 0L;
       return getAdventureSyncSettingsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
      */
     public POGOProtos.Rpc.AdventureSyncSettingsProtoOrBuilder getAdventureSyncSettingsOrBuilder() {
       if (adventureSyncSettingsBuilder_ != null) {
@@ -656,7 +750,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+     * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.AdventureSyncSettingsProto, POGOProtos.Rpc.AdventureSyncSettingsProto.Builder, POGOProtos.Rpc.AdventureSyncSettingsProtoOrBuilder> 

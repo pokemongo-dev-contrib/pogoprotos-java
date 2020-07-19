@@ -108,7 +108,7 @@ public enum ProfilePageTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(89);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(114);
   }
 
   private static final ProfilePageTelemetryIds[] VALUES = values();

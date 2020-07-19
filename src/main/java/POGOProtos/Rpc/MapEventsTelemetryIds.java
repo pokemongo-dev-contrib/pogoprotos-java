@@ -171,7 +171,7 @@ public enum MapEventsTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(74);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(99);
   }
 
   private static final MapEventsTelemetryIds[] VALUES = values();

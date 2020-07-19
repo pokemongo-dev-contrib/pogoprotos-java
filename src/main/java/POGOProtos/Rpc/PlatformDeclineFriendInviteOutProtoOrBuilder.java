@@ -6,4 +6,15 @@ package POGOProtos.Rpc;
 public interface PlatformDeclineFriendInviteOutProtoOrBuilder extends
     // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.PlatformDeclineFriendInviteOutProto)
     com.google.protobuf.MessageOrBuilder {
+
+  /**
+   * <code>.POGOProtos.Rpc.PlatformDeclineFriendInviteOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformDeclineFriendInviteOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformDeclineFriendInviteOutProto.Result getResult();
 }

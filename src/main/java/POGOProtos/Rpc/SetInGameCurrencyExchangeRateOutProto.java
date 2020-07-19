@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private SetInGameCurrencyExchangeRateOutProto() {
+    status_ = 0;
   }
 
   @java.lang.Override
@@ -48,6 +49,12 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
+          case 8: {
+            int rawValue = input.readEnum();
+
+            status_ = rawValue;
+            break;
+          }
           default: {
             if (!parseUnknownField(
                 input, unknownFields, extensionRegistry, tag)) {
@@ -193,6 +200,25 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status)
   }
 
+  public static final int STATUS_FIELD_NUMBER = 1;
+  private int status_;
+  /**
+   * <code>.POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  public int getStatusValue() {
+    return status_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status status = 1;</code>
+   * @return The status.
+   */
+  public POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status getStatus() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status result = POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status.valueOf(status_);
+    return result == null ? POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status.UNRECOGNIZED : result;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -207,6 +233,9 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (status_ != POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status.UNSET.getNumber()) {
+      output.writeEnum(1, status_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -216,6 +245,10 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (status_ != POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, status_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -231,6 +264,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto other = (POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto) obj;
 
+    if (status_ != other.status_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -242,6 +276,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -375,6 +411,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      status_ = 0;
+
       return this;
     }
 
@@ -401,6 +439,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto buildPartial() {
       POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto result = new POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto(this);
+      result.status_ = status_;
       onBuilt();
       return result;
     }
@@ -449,6 +488,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto other) {
       if (other == POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.getDefaultInstance()) return this;
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
+      }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
       return this;
@@ -475,6 +517,58 @@ private static final long serialVersionUID = 0L;
           mergeFrom(parsedMessage);
         }
       }
+      return this;
+    }
+
+    private int status_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status status = 1;</code>
+     * @param value The enum numeric value on the wire for status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatusValue(int value) {
+      status_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status status = 1;</code>
+     * @return The status.
+     */
+    public POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status getStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status result = POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status status = 1;</code>
+     * @param value The status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatus(POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      status_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status status = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStatus() {
+      
+      status_ = 0;
+      onChanged();
       return this;
     }
     @java.lang.Override

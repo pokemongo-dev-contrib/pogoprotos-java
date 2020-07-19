@@ -144,7 +144,7 @@ public enum PokedexGenerationId
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(8);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(18);
   }
 
   private static final PokedexGenerationId[] VALUES = values();

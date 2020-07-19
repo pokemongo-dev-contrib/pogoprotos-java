@@ -135,7 +135,7 @@ public enum HoloPokemonNature
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(66);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(91);
   }
 
   private static final HoloPokemonNature[] VALUES = values();

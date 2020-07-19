@@ -135,7 +135,7 @@ public enum BuddyEmotionLevel
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(38);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(63);
   }
 
   private static final BuddyEmotionLevel[] VALUES = values();

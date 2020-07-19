@@ -504,7 +504,7 @@ public enum HoloholoClientTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(55);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(80);
   }
 
   private static final HoloholoClientTelemetryIds[] VALUES = values();

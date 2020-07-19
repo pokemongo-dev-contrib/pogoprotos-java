@@ -99,7 +99,7 @@ public enum PokemonInventoryTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(88);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(113);
   }
 
   private static final PokemonInventoryTelemetryIds[] VALUES = values();

@@ -99,7 +99,7 @@ public enum AssetBundleStatus
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(2);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(4);
   }
 
   private static final AssetBundleStatus[] VALUES = values();

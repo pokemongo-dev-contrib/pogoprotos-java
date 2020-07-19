@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformGetIncomingFriendInvitesOutProto() {
+    result_ = 0;
     invites_ = java.util.Collections.emptyList();
   }
 
@@ -50,6 +51,12 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
+          case 8: {
+            int rawValue = input.readEnum();
+
+            result_ = rawValue;
+            break;
+          }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
               invites_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformIncomingFriendInviteDisplayProto>();
@@ -207,6 +214,25 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result)
   }
 
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  public int getResultValue() {
+    return result_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  public POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result.UNRECOGNIZED : result;
+  }
+
   public static final int INVITES_FIELD_NUMBER = 2;
   private java.util.List<POGOProtos.Rpc.PlatformIncomingFriendInviteDisplayProto> invites_;
   /**
@@ -256,6 +282,9 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (result_ != POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
+    }
     for (int i = 0; i < invites_.size(); i++) {
       output.writeMessage(2, invites_.get(i));
     }
@@ -268,6 +297,10 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (result_ != POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, result_);
+    }
     for (int i = 0; i < invites_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, invites_.get(i));
@@ -287,6 +320,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto other = (POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto) obj;
 
+    if (result_ != other.result_) return false;
     if (!getInvitesList()
         .equals(other.getInvitesList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
@@ -300,6 +334,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     if (getInvitesCount() > 0) {
       hash = (37 * hash) + INVITES_FIELD_NUMBER;
       hash = (53 * hash) + getInvitesList().hashCode();
@@ -438,6 +474,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      result_ = 0;
+
       if (invitesBuilder_ == null) {
         invites_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -471,6 +509,7 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto buildPartial() {
       POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto result = new POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto(this);
       int from_bitField0_ = bitField0_;
+      result.result_ = result_;
       if (invitesBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           invites_ = java.util.Collections.unmodifiableList(invites_);
@@ -528,6 +567,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto other) {
       if (other == POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
+      }
       if (invitesBuilder_ == null) {
         if (!other.invites_.isEmpty()) {
           if (invites_.isEmpty()) {
@@ -583,6 +625,58 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int bitField0_;
+
+    private int result_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = 1;</code>
+     * @param value The result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResult(POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      result_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearResult() {
+      
+      result_ = 0;
+      onChanged();
+      return this;
+    }
 
     private java.util.List<POGOProtos.Rpc.PlatformIncomingFriendInviteDisplayProto> invites_ =
       java.util.Collections.emptyList();

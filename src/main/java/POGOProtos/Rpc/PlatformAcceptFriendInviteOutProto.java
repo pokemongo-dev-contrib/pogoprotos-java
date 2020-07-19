@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformAcceptFriendInviteOutProto() {
+    result_ = 0;
   }
 
   @java.lang.Override
@@ -48,7 +49,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            result_ = rawValue;
+            break;
+          }
+          case 18: {
             POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder subBuilder = null;
             if (friend_ != null) {
               subBuilder = friend_.toBuilder();
@@ -251,24 +258,43 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result)
   }
 
-  public static final int FRIEND_FIELD_NUMBER = 1;
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  public int getResultValue() {
+    return result_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  public POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result result = POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result.UNRECOGNIZED : result;
+  }
+
+  public static final int FRIEND_FIELD_NUMBER = 2;
   private POGOProtos.Rpc.PlatformPlayerSummaryProto friend_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
    * @return Whether the friend field is set.
    */
   public boolean hasFriend() {
     return friend_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
    * @return The friend.
    */
   public POGOProtos.Rpc.PlatformPlayerSummaryProto getFriend() {
     return friend_ == null ? POGOProtos.Rpc.PlatformPlayerSummaryProto.getDefaultInstance() : friend_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
    */
   public POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder getFriendOrBuilder() {
     return getFriend();
@@ -288,8 +314,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (result_ != POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
+    }
     if (friend_ != null) {
-      output.writeMessage(1, getFriend());
+      output.writeMessage(2, getFriend());
     }
     unknownFields.writeTo(output);
   }
@@ -300,9 +329,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (result_ != POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, result_);
+    }
     if (friend_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getFriend());
+        .computeMessageSize(2, getFriend());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -319,6 +352,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto other = (POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto) obj;
 
+    if (result_ != other.result_) return false;
     if (hasFriend() != other.hasFriend()) return false;
     if (hasFriend()) {
       if (!getFriend()
@@ -335,6 +369,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     if (hasFriend()) {
       hash = (37 * hash) + FRIEND_FIELD_NUMBER;
       hash = (53 * hash) + getFriend().hashCode();
@@ -472,6 +508,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      result_ = 0;
+
       if (friendBuilder_ == null) {
         friend_ = null;
       } else {
@@ -504,6 +542,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto buildPartial() {
       POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto result = new POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto(this);
+      result.result_ = result_;
       if (friendBuilder_ == null) {
         result.friend_ = friend_;
       } else {
@@ -557,6 +596,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto other) {
       if (other == POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
+      }
       if (other.hasFriend()) {
         mergeFriend(other.getFriend());
       }
@@ -589,18 +631,70 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private int result_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result result = POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result result = 1;</code>
+     * @param value The result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResult(POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      result_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformAcceptFriendInviteOutProto.Result result = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearResult() {
+      
+      result_ = 0;
+      onChanged();
+      return this;
+    }
+
     private POGOProtos.Rpc.PlatformPlayerSummaryProto friend_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformPlayerSummaryProto, POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder, POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder> friendBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
      * @return Whether the friend field is set.
      */
     public boolean hasFriend() {
       return friendBuilder_ != null || friend_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
      * @return The friend.
      */
     public POGOProtos.Rpc.PlatformPlayerSummaryProto getFriend() {
@@ -611,7 +705,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
      */
     public Builder setFriend(POGOProtos.Rpc.PlatformPlayerSummaryProto value) {
       if (friendBuilder_ == null) {
@@ -627,7 +721,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
      */
     public Builder setFriend(
         POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder builderForValue) {
@@ -641,7 +735,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
      */
     public Builder mergeFriend(POGOProtos.Rpc.PlatformPlayerSummaryProto value) {
       if (friendBuilder_ == null) {
@@ -659,7 +753,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
      */
     public Builder clearFriend() {
       if (friendBuilder_ == null) {
@@ -673,7 +767,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
      */
     public POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder getFriendBuilder() {
       
@@ -681,7 +775,7 @@ private static final long serialVersionUID = 0L;
       return getFriendFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
      */
     public POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder getFriendOrBuilder() {
       if (friendBuilder_ != null) {
@@ -692,7 +786,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto friend = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformPlayerSummaryProto, POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder, POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder> 

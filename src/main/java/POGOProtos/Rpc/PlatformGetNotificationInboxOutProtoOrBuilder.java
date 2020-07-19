@@ -8,17 +8,28 @@ public interface PlatformGetNotificationInboxOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformGetNotificationInboxOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetNotificationInboxOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformGetNotificationInboxOutProto.Result getResult();
+
+  /**
+   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
    * @return Whether the inbox field is set.
    */
   boolean hasInbox();
   /**
-   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
    * @return The inbox.
    */
   POGOProtos.Rpc.PlatformClientInbox getInbox();
   /**
-   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
    */
   POGOProtos.Rpc.PlatformClientInboxOrBuilder getInboxOrBuilder();
 }

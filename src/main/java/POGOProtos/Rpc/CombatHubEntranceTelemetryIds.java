@@ -81,7 +81,7 @@ public enum CombatHubEntranceTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(42);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(67);
   }
 
   private static final CombatHubEntranceTelemetryIds[] VALUES = values();

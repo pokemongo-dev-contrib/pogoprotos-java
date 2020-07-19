@@ -48,7 +48,7 @@ public interface EggIncubatorOrBuilder extends
   int getUsesRemaining();
 
   /**
-   * <code>fixed64 pokemon_id = 5;</code>
+   * <code>int64 pokemon_id = 5;</code>
    * @return The pokemonId.
    */
   long getPokemonId();

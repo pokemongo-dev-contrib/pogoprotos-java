@@ -99,7 +99,7 @@ public enum Store
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(103);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(128);
   }
 
   private static final Store[] VALUES = values();

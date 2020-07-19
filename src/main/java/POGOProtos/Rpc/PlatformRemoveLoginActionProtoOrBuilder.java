@@ -8,10 +8,15 @@ public interface PlatformRemoveLoginActionProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int32 identity_provider = 1;</code>
+   * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
+   * @return The enum numeric value on the wire for identityProvider.
+   */
+  int getIdentityProviderValue();
+  /**
+   * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
    * @return The identityProvider.
    */
-  int getIdentityProvider();
+  POGOProtos.Rpc.IdentityProvider getIdentityProvider();
 
   /**
    * <code>string auth_provider_id = 2;</code>

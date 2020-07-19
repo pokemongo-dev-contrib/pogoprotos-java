@@ -99,7 +99,7 @@ public enum RemoteRaidInviteAcceptSource
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(94);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(119);
   }
 
   private static final RemoteRaidInviteAcceptSource[] VALUES = values();

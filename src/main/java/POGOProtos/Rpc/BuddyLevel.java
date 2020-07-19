@@ -126,7 +126,7 @@ public enum BuddyLevel
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(39);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(64);
   }
 
   private static final BuddyLevel[] VALUES = values();

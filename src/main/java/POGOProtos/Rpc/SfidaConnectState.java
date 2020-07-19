@@ -135,7 +135,7 @@ public enum SfidaConnectState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(21);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(41);
   }
 
   private static final SfidaConnectState[] VALUES = values();

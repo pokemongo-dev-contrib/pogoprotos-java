@@ -108,7 +108,7 @@ public enum VfxLevel
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(23);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(44);
   }
 
   private static final VfxLevel[] VALUES = values();

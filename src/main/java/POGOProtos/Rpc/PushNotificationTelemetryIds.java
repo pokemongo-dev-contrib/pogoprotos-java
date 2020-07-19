@@ -81,7 +81,7 @@ public enum PushNotificationTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(90);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(115);
   }
 
   private static final PushNotificationTelemetryIds[] VALUES = values();

@@ -8,15 +8,15 @@ public interface ItemProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.Item item = 1;</code>
-   * @return The enum numeric value on the wire for item.
+   * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
+   * @return The enum numeric value on the wire for itemId.
    */
-  int getItemValue();
+  int getItemIdValue();
   /**
-   * <code>.POGOProtos.Rpc.Item item = 1;</code>
-   * @return The item.
+   * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
+   * @return The itemId.
    */
-  POGOProtos.Rpc.Item getItem();
+  POGOProtos.Rpc.Item getItemId();
 
   /**
    * <code>int32 count = 2;</code>

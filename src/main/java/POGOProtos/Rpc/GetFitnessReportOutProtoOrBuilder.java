@@ -8,55 +8,66 @@ public interface GetFitnessReportOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+   * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  int getStatusValue();
+  /**
+   * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
+   * @return The status.
+   */
+  POGOProtos.Rpc.GetFitnessReportOutProto.Status getStatus();
+
+  /**
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
   java.util.List<POGOProtos.Rpc.FitnessReportProto> 
       getDailyReportsList();
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
   POGOProtos.Rpc.FitnessReportProto getDailyReports(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
   int getDailyReportsCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.FitnessReportProtoOrBuilder> 
       getDailyReportsOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
   POGOProtos.Rpc.FitnessReportProtoOrBuilder getDailyReportsOrBuilder(
       int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
   java.util.List<POGOProtos.Rpc.FitnessReportProto> 
       getWeeklyReportsList();
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
   POGOProtos.Rpc.FitnessReportProto getWeeklyReports(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
   int getWeeklyReportsCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.FitnessReportProtoOrBuilder> 
       getWeeklyReportsOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
   POGOProtos.Rpc.FitnessReportProtoOrBuilder getWeeklyReportsOrBuilder(
       int index);
 
   /**
-   * <code>int64 week_reset_timestamp_since_monday_ms = 3;</code>
+   * <code>int64 week_reset_timestamp_since_monday_ms = 4;</code>
    * @return The weekResetTimestampSinceMondayMs.
    */
   long getWeekResetTimestampSinceMondayMs();

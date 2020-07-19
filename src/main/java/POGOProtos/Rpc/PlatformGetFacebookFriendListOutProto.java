@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformGetFacebookFriendListOutProto() {
+    result_ = 0;
     friend_ = java.util.Collections.emptyList();
     nextCursor_ = "";
   }
@@ -51,6 +52,12 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
+          case 8: {
+            int rawValue = input.readEnum();
+
+            result_ = rawValue;
+            break;
+          }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
               friend_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.FacebookFriendProto>();
@@ -1016,6 +1023,25 @@ private static final long serialVersionUID = 0L;
 
   }
 
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  public int getResultValue() {
+    return result_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  public POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result.UNRECOGNIZED : result;
+  }
+
   public static final int FRIEND_FIELD_NUMBER = 2;
   private java.util.List<POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.FacebookFriendProto> friend_;
   /**
@@ -1101,6 +1127,9 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (result_ != POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
+    }
     for (int i = 0; i < friend_.size(); i++) {
       output.writeMessage(2, friend_.get(i));
     }
@@ -1116,6 +1145,10 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (result_ != POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, result_);
+    }
     for (int i = 0; i < friend_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, friend_.get(i));
@@ -1138,6 +1171,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto other = (POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto) obj;
 
+    if (result_ != other.result_) return false;
     if (!getFriendList()
         .equals(other.getFriendList())) return false;
     if (!getNextCursor()
@@ -1153,6 +1187,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     if (getFriendCount() > 0) {
       hash = (37 * hash) + FRIEND_FIELD_NUMBER;
       hash = (53 * hash) + getFriendList().hashCode();
@@ -1293,6 +1329,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      result_ = 0;
+
       if (friendBuilder_ == null) {
         friend_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -1328,6 +1366,7 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto buildPartial() {
       POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto result = new POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto(this);
       int from_bitField0_ = bitField0_;
+      result.result_ = result_;
       if (friendBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           friend_ = java.util.Collections.unmodifiableList(friend_);
@@ -1386,6 +1425,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto other) {
       if (other == POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
+      }
       if (friendBuilder_ == null) {
         if (!other.friend_.isEmpty()) {
           if (friend_.isEmpty()) {
@@ -1445,6 +1487,58 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     private int bitField0_;
+
+    private int result_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = 1;</code>
+     * @param value The result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResult(POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      result_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearResult() {
+      
+      result_ = 0;
+      onChanged();
+      return this;
+    }
 
     private java.util.List<POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.FacebookFriendProto> friend_ =
       java.util.Collections.emptyList();

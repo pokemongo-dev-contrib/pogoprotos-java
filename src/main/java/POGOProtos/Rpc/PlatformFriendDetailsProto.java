@@ -18,6 +18,7 @@ private static final long serialVersionUID = 0L;
   private PlatformFriendDetailsProto() {
     friendVisibleData_ = com.google.protobuf.ByteString.EMPTY;
     dataWithMe_ = com.google.protobuf.ByteString.EMPTY;
+    onlineStatus_ = 0;
   }
 
   @java.lang.Override
@@ -76,6 +77,12 @@ private static final long serialVersionUID = 0L;
           case 34: {
 
             dataWithMe_ = input.readBytes();
+            break;
+          }
+          case 40: {
+            int rawValue = input.readEnum();
+
+            onlineStatus_ = rawValue;
             break;
           }
           default: {
@@ -285,6 +292,25 @@ private static final long serialVersionUID = 0L;
     return dataWithMe_;
   }
 
+  public static final int ONLINE_STATUS_FIELD_NUMBER = 5;
+  private int onlineStatus_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus online_status = 5;</code>
+   * @return The enum numeric value on the wire for onlineStatus.
+   */
+  public int getOnlineStatusValue() {
+    return onlineStatus_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus online_status = 5;</code>
+   * @return The onlineStatus.
+   */
+  public POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus getOnlineStatus() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus result = POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus.valueOf(onlineStatus_);
+    return result == null ? POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus.UNRECOGNIZED : result;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -311,6 +337,9 @@ private static final long serialVersionUID = 0L;
     if (!dataWithMe_.isEmpty()) {
       output.writeBytes(4, dataWithMe_);
     }
+    if (onlineStatus_ != POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus.UNSET.getNumber()) {
+      output.writeEnum(5, onlineStatus_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -335,6 +364,10 @@ private static final long serialVersionUID = 0L;
     if (!dataWithMe_.isEmpty()) {
       size += com.google.protobuf.CodedOutputStream
         .computeBytesSize(4, dataWithMe_);
+    }
+    if (onlineStatus_ != POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(5, onlineStatus_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -362,6 +395,7 @@ private static final long serialVersionUID = 0L;
         != other.getScore()) return false;
     if (!getDataWithMe()
         .equals(other.getDataWithMe())) return false;
+    if (onlineStatus_ != other.onlineStatus_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -383,6 +417,8 @@ private static final long serialVersionUID = 0L;
     hash = (53 * hash) + getScore();
     hash = (37 * hash) + DATA_WITH_ME_FIELD_NUMBER;
     hash = (53 * hash) + getDataWithMe().hashCode();
+    hash = (37 * hash) + ONLINE_STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + onlineStatus_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -528,6 +564,8 @@ private static final long serialVersionUID = 0L;
 
       dataWithMe_ = com.google.protobuf.ByteString.EMPTY;
 
+      onlineStatus_ = 0;
+
       return this;
     }
 
@@ -562,6 +600,7 @@ private static final long serialVersionUID = 0L;
       result.friendVisibleData_ = friendVisibleData_;
       result.score_ = score_;
       result.dataWithMe_ = dataWithMe_;
+      result.onlineStatus_ = onlineStatus_;
       onBuilt();
       return result;
     }
@@ -621,6 +660,9 @@ private static final long serialVersionUID = 0L;
       }
       if (other.getDataWithMe() != com.google.protobuf.ByteString.EMPTY) {
         setDataWithMe(other.getDataWithMe());
+      }
+      if (other.onlineStatus_ != 0) {
+        setOnlineStatusValue(other.getOnlineStatusValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -862,6 +904,58 @@ private static final long serialVersionUID = 0L;
     public Builder clearDataWithMe() {
       
       dataWithMe_ = getDefaultInstance().getDataWithMe();
+      onChanged();
+      return this;
+    }
+
+    private int onlineStatus_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus online_status = 5;</code>
+     * @return The enum numeric value on the wire for onlineStatus.
+     */
+    public int getOnlineStatusValue() {
+      return onlineStatus_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus online_status = 5;</code>
+     * @param value The enum numeric value on the wire for onlineStatus to set.
+     * @return This builder for chaining.
+     */
+    public Builder setOnlineStatusValue(int value) {
+      onlineStatus_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus online_status = 5;</code>
+     * @return The onlineStatus.
+     */
+    public POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus getOnlineStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus result = POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus.valueOf(onlineStatus_);
+      return result == null ? POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus online_status = 5;</code>
+     * @param value The onlineStatus to set.
+     * @return This builder for chaining.
+     */
+    public Builder setOnlineStatus(POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      onlineStatus_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus online_status = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearOnlineStatus() {
+      
+      onlineStatus_ = 0;
       onChanged();
       return this;
     }

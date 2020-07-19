@@ -8,12 +8,23 @@ public interface PlatformGenerateGmapSignedUrlOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string signed_url = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformGenerateGmapSignedUrlOutProto.Result getResult();
+
+  /**
+   * <code>string signed_url = 2;</code>
    * @return The signedUrl.
    */
   java.lang.String getSignedUrl();
   /**
-   * <code>string signed_url = 1;</code>
+   * <code>string signed_url = 2;</code>
    * @return The bytes for signedUrl.
    */
   com.google.protobuf.ByteString

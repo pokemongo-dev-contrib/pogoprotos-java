@@ -81,7 +81,7 @@ public enum WebTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(108);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(133);
   }
 
   private static final WebTelemetryIds[] VALUES = values();

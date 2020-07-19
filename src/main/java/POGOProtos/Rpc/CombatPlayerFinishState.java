@@ -90,7 +90,7 @@ public enum CombatPlayerFinishState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(43);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(68);
   }
 
   private static final CombatPlayerFinishState[] VALUES = values();

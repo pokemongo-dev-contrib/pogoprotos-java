@@ -90,7 +90,7 @@ public enum PoiImageType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(114);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(143);
   }
 
   private static final PoiImageType[] VALUES = values();

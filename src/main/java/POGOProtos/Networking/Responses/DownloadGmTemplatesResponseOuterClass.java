@@ -35,24 +35,29 @@ public final class DownloadGmTemplatesResponseOuterClass {
     java.lang.String[] descriptorData = {
       "\nAPOGOProtos/Networking/Responses/Downlo" +
       "adGmTemplatesResponse.proto\022\037POGOProtos." +
-      "Networking.Responses\"\361\003\n\033DownloadGmTempl" +
-      "atesResponse\022S\n\006result\030\001 \001(\0162C.POGOProto" +
-      "s.Networking.Responses.DownloadGmTemplat" +
-      "esResponse.Result\022g\n\010template\030\002 \003(\0132U.PO" +
-      "GOProtos.Networking.Responses.DownloadGm" +
-      "TemplatesResponse.ClientGameMasterTempla" +
-      "te\022\030\n\020deleted_template\030\003 \003(\t\022\020\n\010batch_id" +
-      "\030\004 \001(\004\022\023\n\013page_offset\030\005 \001(\005\022\025\n\rexperimen" +
-      "t_id\030\006 \003(\005\032=\n\030ClientGameMasterTemplate\022\023" +
-      "\n\013template_id\030\001 \001(\t\022\014\n\004data\030\002 \001(\014\"}\n\006Res" +
-      "ult\022\t\n\005UNSET\020\000\022\014\n\010COMPLETE\020\001\022\020\n\014MORE_RES" +
-      "ULTS\020\002\022\025\n\021BATCH_ID_NOT_LIVE\020\003\022\032\n\026INVALID" +
-      "_BASIS_BATCH_ID\020\004\022\025\n\021WRONG_EXPERIMENTS\020\005" +
-      "B\002P\001b\006proto3"
+      "Networking.Responses\032CPOGOProtos/Network" +
+      "ing/Responses/DownloadItemTemplatesRespo" +
+      "nse.proto\"\313\004\n\033DownloadGmTemplatesRespons" +
+      "e\022S\n\006result\030\001 \001(\0162C.POGOProtos.Networkin" +
+      "g.Responses.DownloadGmTemplatesResponse." +
+      "Result\022g\n\010template\030\002 \003(\0132U.POGOProtos.Ne" +
+      "tworking.Responses.DownloadGmTemplatesRe" +
+      "sponse.ClientGameMasterTemplate\022\030\n\020delet" +
+      "ed_template\030\003 \003(\t\022\020\n\010batch_id\030\004 \001(\004\022\023\n\013p" +
+      "age_offset\030\005 \001(\005\022\025\n\rexperiment_id\030\006 \003(\005\032" +
+      "\226\001\n\030ClientGameMasterTemplate\022\023\n\013template" +
+      "_id\030\001 \001(\t\022e\n\004data\030\002 \001(\0132W.POGOProtos.Net" +
+      "working.Responses.DownloadItemTemplatesR" +
+      "esponse.GameMasterClientTemplate\"}\n\006Resu" +
+      "lt\022\t\n\005UNSET\020\000\022\014\n\010COMPLETE\020\001\022\020\n\014MORE_RESU" +
+      "LTS\020\002\022\025\n\021BATCH_ID_NOT_LIVE\020\003\022\032\n\026INVALID_" +
+      "BASIS_BATCH_ID\020\004\022\025\n\021WRONG_EXPERIMENTS\020\005B" +
+      "\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          POGOProtos.Networking.Responses.DownloadItemTemplatesResponseOuterClass.getDescriptor(),
         });
     internal_static_POGOProtos_Networking_Responses_DownloadGmTemplatesResponse_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -66,6 +71,7 @@ public final class DownloadGmTemplatesResponseOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Networking_Responses_DownloadGmTemplatesResponse_ClientGameMasterTemplate_descriptor,
         new java.lang.String[] { "TemplateId", "Data", });
+    POGOProtos.Networking.Responses.DownloadItemTemplatesResponseOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

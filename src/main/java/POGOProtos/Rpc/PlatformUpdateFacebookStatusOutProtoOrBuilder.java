@@ -6,4 +6,15 @@ package POGOProtos.Rpc;
 public interface PlatformUpdateFacebookStatusOutProtoOrBuilder extends
     // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.PlatformUpdateFacebookStatusOutProto)
     com.google.protobuf.MessageOrBuilder {
+
+  /**
+   * <code>.POGOProtos.Rpc.PlatformUpdateFacebookStatusOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformUpdateFacebookStatusOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformUpdateFacebookStatusOutProto.Result getResult();
 }

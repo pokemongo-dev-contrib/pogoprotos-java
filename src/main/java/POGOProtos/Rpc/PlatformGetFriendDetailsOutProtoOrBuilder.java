@@ -8,6 +8,17 @@ public interface PlatformGetFriendDetailsOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
+   * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetFriendDetailsOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformGetFriendDetailsOutProto.Result getResult();
+
+  /**
    * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
   java.util.List<POGOProtos.Rpc.PlatformFriendDetailsProto> 

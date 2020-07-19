@@ -6,4 +6,15 @@ package POGOProtos.Rpc;
 public interface PlatformSavePlayerSettingsOutProtoOrBuilder extends
     // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.PlatformSavePlayerSettingsOutProto)
     com.google.protobuf.MessageOrBuilder {
+
+  /**
+   * <code>.POGOProtos.Rpc.PlatformSavePlayerSettingsOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformSavePlayerSettingsOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformSavePlayerSettingsOutProto.Result getResult();
 }

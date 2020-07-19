@@ -8,24 +8,35 @@ public interface PlatformRedeemAppleReceiptOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated string provisioned_transaction_tokens = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  int getStatusValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status status = 1;</code>
+   * @return The status.
+   */
+  POGOProtos.Rpc.PlatformRedeemAppleReceiptOutProto.Status getStatus();
+
+  /**
+   * <code>repeated string provisioned_transaction_tokens = 2;</code>
    * @return A list containing the provisionedTransactionTokens.
    */
   java.util.List<java.lang.String>
       getProvisionedTransactionTokensList();
   /**
-   * <code>repeated string provisioned_transaction_tokens = 1;</code>
+   * <code>repeated string provisioned_transaction_tokens = 2;</code>
    * @return The count of provisionedTransactionTokens.
    */
   int getProvisionedTransactionTokensCount();
   /**
-   * <code>repeated string provisioned_transaction_tokens = 1;</code>
+   * <code>repeated string provisioned_transaction_tokens = 2;</code>
    * @param index The index of the element to return.
    * @return The provisionedTransactionTokens at the given index.
    */
   java.lang.String getProvisionedTransactionTokens(int index);
   /**
-   * <code>repeated string provisioned_transaction_tokens = 1;</code>
+   * <code>repeated string provisioned_transaction_tokens = 2;</code>
    * @param index The index of the value to return.
    * @return The bytes of the provisionedTransactionTokens at the given index.
    */

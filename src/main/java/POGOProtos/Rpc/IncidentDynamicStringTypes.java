@@ -189,7 +189,7 @@ public enum IncidentDynamicStringTypes
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(9);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(20);
   }
 
   private static final IncidentDynamicStringTypes[] VALUES = values();

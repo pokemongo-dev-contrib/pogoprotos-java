@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformGetPlayerSettingsOutProto() {
+    result_ = 0;
   }
 
   @java.lang.Override
@@ -48,7 +49,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            result_ = rawValue;
+            break;
+          }
+          case 18: {
             POGOProtos.Rpc.PlatformPlayerSettingsProto.Builder subBuilder = null;
             if (settings_ != null) {
               subBuilder = settings_.toBuilder();
@@ -215,24 +222,43 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result)
   }
 
-  public static final int SETTINGS_FIELD_NUMBER = 1;
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  public int getResultValue() {
+    return result_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  public POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result result = POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result.UNRECOGNIZED : result;
+  }
+
+  public static final int SETTINGS_FIELD_NUMBER = 2;
   private POGOProtos.Rpc.PlatformPlayerSettingsProto settings_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
    * @return Whether the settings field is set.
    */
   public boolean hasSettings() {
     return settings_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
    * @return The settings.
    */
   public POGOProtos.Rpc.PlatformPlayerSettingsProto getSettings() {
     return settings_ == null ? POGOProtos.Rpc.PlatformPlayerSettingsProto.getDefaultInstance() : settings_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
    */
   public POGOProtos.Rpc.PlatformPlayerSettingsProtoOrBuilder getSettingsOrBuilder() {
     return getSettings();
@@ -252,8 +278,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (result_ != POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
+    }
     if (settings_ != null) {
-      output.writeMessage(1, getSettings());
+      output.writeMessage(2, getSettings());
     }
     unknownFields.writeTo(output);
   }
@@ -264,9 +293,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (result_ != POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, result_);
+    }
     if (settings_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getSettings());
+        .computeMessageSize(2, getSettings());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -283,6 +316,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto other = (POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto) obj;
 
+    if (result_ != other.result_) return false;
     if (hasSettings() != other.hasSettings()) return false;
     if (hasSettings()) {
       if (!getSettings()
@@ -299,6 +333,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     if (hasSettings()) {
       hash = (37 * hash) + SETTINGS_FIELD_NUMBER;
       hash = (53 * hash) + getSettings().hashCode();
@@ -436,6 +472,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      result_ = 0;
+
       if (settingsBuilder_ == null) {
         settings_ = null;
       } else {
@@ -468,6 +506,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto buildPartial() {
       POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto result = new POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto(this);
+      result.result_ = result_;
       if (settingsBuilder_ == null) {
         result.settings_ = settings_;
       } else {
@@ -521,6 +560,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto other) {
       if (other == POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
+      }
       if (other.hasSettings()) {
         mergeSettings(other.getSettings());
       }
@@ -553,18 +595,70 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private int result_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result result = POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result result = 1;</code>
+     * @param value The result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResult(POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      result_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetPlayerSettingsOutProto.Result result = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearResult() {
+      
+      result_ = 0;
+      onChanged();
+      return this;
+    }
+
     private POGOProtos.Rpc.PlatformPlayerSettingsProto settings_;
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformPlayerSettingsProto, POGOProtos.Rpc.PlatformPlayerSettingsProto.Builder, POGOProtos.Rpc.PlatformPlayerSettingsProtoOrBuilder> settingsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
      * @return Whether the settings field is set.
      */
     public boolean hasSettings() {
       return settingsBuilder_ != null || settings_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
      * @return The settings.
      */
     public POGOProtos.Rpc.PlatformPlayerSettingsProto getSettings() {
@@ -575,7 +669,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
      */
     public Builder setSettings(POGOProtos.Rpc.PlatformPlayerSettingsProto value) {
       if (settingsBuilder_ == null) {
@@ -591,7 +685,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
      */
     public Builder setSettings(
         POGOProtos.Rpc.PlatformPlayerSettingsProto.Builder builderForValue) {
@@ -605,7 +699,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
      */
     public Builder mergeSettings(POGOProtos.Rpc.PlatformPlayerSettingsProto value) {
       if (settingsBuilder_ == null) {
@@ -623,7 +717,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
      */
     public Builder clearSettings() {
       if (settingsBuilder_ == null) {
@@ -637,7 +731,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
      */
     public POGOProtos.Rpc.PlatformPlayerSettingsProto.Builder getSettingsBuilder() {
       
@@ -645,7 +739,7 @@ private static final long serialVersionUID = 0L;
       return getSettingsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
      */
     public POGOProtos.Rpc.PlatformPlayerSettingsProtoOrBuilder getSettingsOrBuilder() {
       if (settingsBuilder_ != null) {
@@ -656,7 +750,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlayerSettingsProto settings = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformPlayerSettingsProto, POGOProtos.Rpc.PlatformPlayerSettingsProto.Builder, POGOProtos.Rpc.PlatformPlayerSettingsProtoOrBuilder> 

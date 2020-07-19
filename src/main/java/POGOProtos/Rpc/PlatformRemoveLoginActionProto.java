@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformRemoveLoginActionProto() {
+    identityProvider_ = 0;
     authProviderId_ = "";
   }
 
@@ -50,8 +51,9 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 8: {
+            int rawValue = input.readEnum();
 
-            identityProvider_ = input.readInt32();
+            identityProvider_ = rawValue;
             break;
           }
           case 18: {
@@ -95,11 +97,20 @@ private static final long serialVersionUID = 0L;
   public static final int IDENTITY_PROVIDER_FIELD_NUMBER = 1;
   private int identityProvider_;
   /**
-   * <code>int32 identity_provider = 1;</code>
+   * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
+   * @return The enum numeric value on the wire for identityProvider.
+   */
+  public int getIdentityProviderValue() {
+    return identityProvider_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
    * @return The identityProvider.
    */
-  public int getIdentityProvider() {
-    return identityProvider_;
+  public POGOProtos.Rpc.IdentityProvider getIdentityProvider() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.IdentityProvider result = POGOProtos.Rpc.IdentityProvider.valueOf(identityProvider_);
+    return result == null ? POGOProtos.Rpc.IdentityProvider.UNRECOGNIZED : result;
   }
 
   public static final int AUTH_PROVIDER_ID_FIELD_NUMBER = 2;
@@ -152,8 +163,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (identityProvider_ != 0) {
-      output.writeInt32(1, identityProvider_);
+    if (identityProvider_ != POGOProtos.Rpc.IdentityProvider.PLATFORM_IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER.getNumber()) {
+      output.writeEnum(1, identityProvider_);
     }
     if (!getAuthProviderIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, authProviderId_);
@@ -167,9 +178,9 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (identityProvider_ != 0) {
+    if (identityProvider_ != POGOProtos.Rpc.IdentityProvider.PLATFORM_IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(1, identityProvider_);
+        .computeEnumSize(1, identityProvider_);
     }
     if (!getAuthProviderIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, authProviderId_);
@@ -189,8 +200,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformRemoveLoginActionProto other = (POGOProtos.Rpc.PlatformRemoveLoginActionProto) obj;
 
-    if (getIdentityProvider()
-        != other.getIdentityProvider()) return false;
+    if (identityProvider_ != other.identityProvider_) return false;
     if (!getAuthProviderId()
         .equals(other.getAuthProviderId())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
@@ -205,7 +215,7 @@ private static final long serialVersionUID = 0L;
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + IDENTITY_PROVIDER_FIELD_NUMBER;
-    hash = (53 * hash) + getIdentityProvider();
+    hash = (53 * hash) + identityProvider_;
     hash = (37 * hash) + AUTH_PROVIDER_ID_FIELD_NUMBER;
     hash = (53 * hash) + getAuthProviderId().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -421,8 +431,8 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformRemoveLoginActionProto other) {
       if (other == POGOProtos.Rpc.PlatformRemoveLoginActionProto.getDefaultInstance()) return this;
-      if (other.getIdentityProvider() != 0) {
-        setIdentityProvider(other.getIdentityProvider());
+      if (other.identityProvider_ != 0) {
+        setIdentityProviderValue(other.getIdentityProviderValue());
       }
       if (!other.getAuthProviderId().isEmpty()) {
         authProviderId_ = other.authProviderId_;
@@ -457,27 +467,49 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int identityProvider_ ;
+    private int identityProvider_ = 0;
     /**
-     * <code>int32 identity_provider = 1;</code>
-     * @return The identityProvider.
+     * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
+     * @return The enum numeric value on the wire for identityProvider.
      */
-    public int getIdentityProvider() {
+    public int getIdentityProviderValue() {
       return identityProvider_;
     }
     /**
-     * <code>int32 identity_provider = 1;</code>
-     * @param value The identityProvider to set.
+     * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
+     * @param value The enum numeric value on the wire for identityProvider to set.
      * @return This builder for chaining.
      */
-    public Builder setIdentityProvider(int value) {
-      
+    public Builder setIdentityProviderValue(int value) {
       identityProvider_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 identity_provider = 1;</code>
+     * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
+     * @return The identityProvider.
+     */
+    public POGOProtos.Rpc.IdentityProvider getIdentityProvider() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.IdentityProvider result = POGOProtos.Rpc.IdentityProvider.valueOf(identityProvider_);
+      return result == null ? POGOProtos.Rpc.IdentityProvider.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
+     * @param value The identityProvider to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIdentityProvider(POGOProtos.Rpc.IdentityProvider value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      identityProvider_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearIdentityProvider() {

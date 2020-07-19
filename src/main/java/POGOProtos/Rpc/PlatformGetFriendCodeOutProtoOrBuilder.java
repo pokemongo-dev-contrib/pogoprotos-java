@@ -8,6 +8,17 @@ public interface PlatformGetFriendCodeOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
+   * <code>.POGOProtos.Rpc.PlatformGetFriendCodeOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetFriendCodeOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformGetFriendCodeOutProto.Result getResult();
+
+  /**
    * <code>string friend_code = 2;</code>
    * @return The friendCode.
    */

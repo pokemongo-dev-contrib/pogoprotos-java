@@ -8,17 +8,28 @@ public interface PlatformRegisterBackgroundDeviceResponseProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  int getStatusValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status status = 1;</code>
+   * @return The status.
+   */
+  POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status getStatus();
+
+  /**
+   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
    * @return Whether the token field is set.
    */
   boolean hasToken();
   /**
-   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
    * @return The token.
    */
-  POGOProtos.Rpc.PlatformBackgroundToken getToken();
+  POGOProtos.Rpc.BackgroundToken getToken();
   /**
-   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
    */
-  POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder getTokenOrBuilder();
+  POGOProtos.Rpc.BackgroundTokenOrBuilder getTokenOrBuilder();
 }

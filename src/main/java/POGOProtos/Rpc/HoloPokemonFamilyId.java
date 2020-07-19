@@ -3060,7 +3060,7 @@ public enum HoloPokemonFamilyId
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(62);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(87);
   }
 
   private static final HoloPokemonFamilyId[] VALUES = values();

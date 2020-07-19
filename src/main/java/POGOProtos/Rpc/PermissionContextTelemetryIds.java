@@ -135,7 +135,7 @@ public enum PermissionContextTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(81);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(106);
   }
 
   private static final PermissionContextTelemetryIds[] VALUES = values();

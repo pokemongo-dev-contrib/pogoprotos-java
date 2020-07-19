@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformGetFriendsListOutProto() {
+    result_ = 0;
     friend_ = java.util.Collections.emptyList();
   }
 
@@ -50,7 +51,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            result_ = rawValue;
+            break;
+          }
+          case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
               friend_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto>();
               mutable_bitField0_ |= 0x00000001;
@@ -92,128 +99,6 @@ private static final long serialVersionUID = 0L;
     return POGOProtos.Rpc.Rpc.internal_static_POGOProtos_Rpc_PlatformGetFriendsListOutProto_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             POGOProtos.Rpc.PlatformGetFriendsListOutProto.class, POGOProtos.Rpc.PlatformGetFriendsListOutProto.Builder.class);
-  }
-
-  /**
-   * Protobuf enum {@code POGOProtos.Rpc.PlatformGetFriendsListOutProto.OnlineStatus}
-   */
-  public enum OnlineStatus
-      implements com.google.protobuf.ProtocolMessageEnum {
-    /**
-     * <code>ONLINE_STATUS_UNSET = 0;</code>
-     */
-    ONLINE_STATUS_UNSET(0),
-    /**
-     * <code>STATUS_UNKNOWN = 1;</code>
-     */
-    STATUS_UNKNOWN(1),
-    /**
-     * <code>STATUS_ONLINE = 2;</code>
-     */
-    STATUS_ONLINE(2),
-    /**
-     * <code>STATUS_OFFLINE = 3;</code>
-     */
-    STATUS_OFFLINE(3),
-    UNRECOGNIZED(-1),
-    ;
-
-    /**
-     * <code>ONLINE_STATUS_UNSET = 0;</code>
-     */
-    public static final int ONLINE_STATUS_UNSET_VALUE = 0;
-    /**
-     * <code>STATUS_UNKNOWN = 1;</code>
-     */
-    public static final int STATUS_UNKNOWN_VALUE = 1;
-    /**
-     * <code>STATUS_ONLINE = 2;</code>
-     */
-    public static final int STATUS_ONLINE_VALUE = 2;
-    /**
-     * <code>STATUS_OFFLINE = 3;</code>
-     */
-    public static final int STATUS_OFFLINE_VALUE = 3;
-
-
-    public final int getNumber() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
-            "Can't get the number of an unknown enum value.");
-      }
-      return value;
-    }
-
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     * @deprecated Use {@link #forNumber(int)} instead.
-     */
-    @java.lang.Deprecated
-    public static OnlineStatus valueOf(int value) {
-      return forNumber(value);
-    }
-
-    /**
-     * @param value The numeric wire value of the corresponding enum entry.
-     * @return The enum associated with the given numeric wire value.
-     */
-    public static OnlineStatus forNumber(int value) {
-      switch (value) {
-        case 0: return ONLINE_STATUS_UNSET;
-        case 1: return STATUS_UNKNOWN;
-        case 2: return STATUS_ONLINE;
-        case 3: return STATUS_OFFLINE;
-        default: return null;
-      }
-    }
-
-    public static com.google.protobuf.Internal.EnumLiteMap<OnlineStatus>
-        internalGetValueMap() {
-      return internalValueMap;
-    }
-    private static final com.google.protobuf.Internal.EnumLiteMap<
-        OnlineStatus> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<OnlineStatus>() {
-            public OnlineStatus findValueByNumber(int number) {
-              return OnlineStatus.forNumber(number);
-            }
-          };
-
-    public final com.google.protobuf.Descriptors.EnumValueDescriptor
-        getValueDescriptor() {
-      return getDescriptor().getValues().get(ordinal());
-    }
-    public final com.google.protobuf.Descriptors.EnumDescriptor
-        getDescriptorForType() {
-      return getDescriptor();
-    }
-    public static final com.google.protobuf.Descriptors.EnumDescriptor
-        getDescriptor() {
-      return POGOProtos.Rpc.PlatformGetFriendsListOutProto.getDescriptor().getEnumTypes().get(0);
-    }
-
-    private static final OnlineStatus[] VALUES = values();
-
-    public static OnlineStatus valueOf(
-        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
-      if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
-          "EnumValueDescriptor is not for this type.");
-      }
-      if (desc.getIndex() == -1) {
-        return UNRECOGNIZED;
-      }
-      return VALUES[desc.getIndex()];
-    }
-
-    private final int value;
-
-    private OnlineStatus(int value) {
-      this.value = value;
-    }
-
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformGetFriendsListOutProto.OnlineStatus)
   }
 
   /**
@@ -303,7 +188,7 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return POGOProtos.Rpc.PlatformGetFriendsListOutProto.getDescriptor().getEnumTypes().get(1);
+      return POGOProtos.Rpc.PlatformGetFriendsListOutProto.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final Result[] VALUES = values();
@@ -425,6 +310,17 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.SharedFriendshipProto shared_data = 10;</code>
      */
     POGOProtos.Rpc.PlatformGetFriendsListOutProto.SharedFriendshipProtoOrBuilder getSharedDataOrBuilder();
+
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
+     * @return The enum numeric value on the wire for onlineStatus.
+     */
+    int getOnlineStatusValue();
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
+     * @return The onlineStatus.
+     */
+    POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus getOnlineStatus();
   }
   /**
    * Protobuf type {@code POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto}
@@ -444,6 +340,7 @@ private static final long serialVersionUID = 0L;
       team_ = "";
       dataWithMe_ = com.google.protobuf.ByteString.EMPTY;
       fbUserId_ = "";
+      onlineStatus_ = 0;
     }
 
     @java.lang.Override
@@ -536,6 +433,12 @@ private static final long serialVersionUID = 0L;
                 sharedData_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 88: {
+              int rawValue = input.readEnum();
+
+              onlineStatus_ = rawValue;
               break;
             }
             default: {
@@ -909,6 +812,25 @@ private static final long serialVersionUID = 0L;
       return getSharedData();
     }
 
+    public static final int ONLINE_STATUS_FIELD_NUMBER = 11;
+    private int onlineStatus_;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
+     * @return The enum numeric value on the wire for onlineStatus.
+     */
+    public int getOnlineStatusValue() {
+      return onlineStatus_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
+     * @return The onlineStatus.
+     */
+    public POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus getOnlineStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus result = POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus.valueOf(onlineStatus_);
+      return result == null ? POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus.UNRECOGNIZED : result;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -952,6 +874,9 @@ private static final long serialVersionUID = 0L;
       }
       if (sharedData_ != null) {
         output.writeMessage(10, getSharedData());
+      }
+      if (onlineStatus_ != POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus.UNSET.getNumber()) {
+        output.writeEnum(11, onlineStatus_);
       }
       unknownFields.writeTo(output);
     }
@@ -998,6 +923,10 @@ private static final long serialVersionUID = 0L;
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(10, getSharedData());
       }
+      if (onlineStatus_ != POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus.UNSET.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(11, onlineStatus_);
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -1036,6 +965,7 @@ private static final long serialVersionUID = 0L;
         if (!getSharedData()
             .equals(other.getSharedData())) return false;
       }
+      if (onlineStatus_ != other.onlineStatus_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1072,6 +1002,8 @@ private static final long serialVersionUID = 0L;
         hash = (37 * hash) + SHARED_DATA_FIELD_NUMBER;
         hash = (53 * hash) + getSharedData().hashCode();
       }
+      hash = (37 * hash) + ONLINE_STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + onlineStatus_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1229,6 +1161,8 @@ private static final long serialVersionUID = 0L;
           sharedData_ = null;
           sharedDataBuilder_ = null;
         }
+        onlineStatus_ = 0;
+
         return this;
       }
 
@@ -1269,6 +1203,7 @@ private static final long serialVersionUID = 0L;
         } else {
           result.sharedData_ = sharedDataBuilder_.build();
         }
+        result.onlineStatus_ = onlineStatus_;
         onBuilt();
         return result;
       }
@@ -1350,6 +1285,9 @@ private static final long serialVersionUID = 0L;
         }
         if (other.hasSharedData()) {
           mergeSharedData(other.getSharedData());
+        }
+        if (other.onlineStatus_ != 0) {
+          setOnlineStatusValue(other.getOnlineStatusValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1954,6 +1892,58 @@ private static final long serialVersionUID = 0L;
           sharedData_ = null;
         }
         return sharedDataBuilder_;
+      }
+
+      private int onlineStatus_ = 0;
+      /**
+       * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
+       * @return The enum numeric value on the wire for onlineStatus.
+       */
+      public int getOnlineStatusValue() {
+        return onlineStatus_;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
+       * @param value The enum numeric value on the wire for onlineStatus to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOnlineStatusValue(int value) {
+        onlineStatus_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
+       * @return The onlineStatus.
+       */
+      public POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus getOnlineStatus() {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus result = POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus.valueOf(onlineStatus_);
+        return result == null ? POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
+       * @param value The onlineStatus to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOnlineStatus(POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        onlineStatus_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOnlineStatus() {
+        
+        onlineStatus_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -2711,35 +2701,54 @@ private static final long serialVersionUID = 0L;
 
   }
 
-  public static final int FRIEND_FIELD_NUMBER = 1;
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  public int getResultValue() {
+    return result_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  public POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result result = POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result.UNRECOGNIZED : result;
+  }
+
+  public static final int FRIEND_FIELD_NUMBER = 2;
   private java.util.List<POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto> friend_;
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
    */
   public java.util.List<POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto> getFriendList() {
     return friend_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
    */
   public java.util.List<? extends POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProtoOrBuilder> 
       getFriendOrBuilderList() {
     return friend_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
    */
   public int getFriendCount() {
     return friend_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
    */
   public POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto getFriend(int index) {
     return friend_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
    */
   public POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProtoOrBuilder getFriendOrBuilder(
       int index) {
@@ -2760,8 +2769,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (result_ != POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
+    }
     for (int i = 0; i < friend_.size(); i++) {
-      output.writeMessage(1, friend_.get(i));
+      output.writeMessage(2, friend_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -2772,9 +2784,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (result_ != POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, result_);
+    }
     for (int i = 0; i < friend_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, friend_.get(i));
+        .computeMessageSize(2, friend_.get(i));
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -2791,6 +2807,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformGetFriendsListOutProto other = (POGOProtos.Rpc.PlatformGetFriendsListOutProto) obj;
 
+    if (result_ != other.result_) return false;
     if (!getFriendList()
         .equals(other.getFriendList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
@@ -2804,6 +2821,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     if (getFriendCount() > 0) {
       hash = (37 * hash) + FRIEND_FIELD_NUMBER;
       hash = (53 * hash) + getFriendList().hashCode();
@@ -2942,6 +2961,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      result_ = 0;
+
       if (friendBuilder_ == null) {
         friend_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -2975,6 +2996,7 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.PlatformGetFriendsListOutProto buildPartial() {
       POGOProtos.Rpc.PlatformGetFriendsListOutProto result = new POGOProtos.Rpc.PlatformGetFriendsListOutProto(this);
       int from_bitField0_ = bitField0_;
+      result.result_ = result_;
       if (friendBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           friend_ = java.util.Collections.unmodifiableList(friend_);
@@ -3032,6 +3054,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformGetFriendsListOutProto other) {
       if (other == POGOProtos.Rpc.PlatformGetFriendsListOutProto.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
+      }
       if (friendBuilder_ == null) {
         if (!other.friend_.isEmpty()) {
           if (friend_.isEmpty()) {
@@ -3088,6 +3113,58 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
+    private int result_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result result = POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result result = 1;</code>
+     * @param value The result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResult(POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      result_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetFriendsListOutProto.Result result = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearResult() {
+      
+      result_ = 0;
+      onChanged();
+      return this;
+    }
+
     private java.util.List<POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto> friend_ =
       java.util.Collections.emptyList();
     private void ensureFriendIsMutable() {
@@ -3101,7 +3178,7 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto, POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.Builder, POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProtoOrBuilder> friendBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public java.util.List<POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto> getFriendList() {
       if (friendBuilder_ == null) {
@@ -3111,7 +3188,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public int getFriendCount() {
       if (friendBuilder_ == null) {
@@ -3121,7 +3198,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto getFriend(int index) {
       if (friendBuilder_ == null) {
@@ -3131,7 +3208,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public Builder setFriend(
         int index, POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto value) {
@@ -3148,7 +3225,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public Builder setFriend(
         int index, POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.Builder builderForValue) {
@@ -3162,7 +3239,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public Builder addFriend(POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto value) {
       if (friendBuilder_ == null) {
@@ -3178,7 +3255,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public Builder addFriend(
         int index, POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto value) {
@@ -3195,7 +3272,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public Builder addFriend(
         POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.Builder builderForValue) {
@@ -3209,7 +3286,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public Builder addFriend(
         int index, POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.Builder builderForValue) {
@@ -3223,7 +3300,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public Builder addAllFriend(
         java.lang.Iterable<? extends POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto> values) {
@@ -3238,7 +3315,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public Builder clearFriend() {
       if (friendBuilder_ == null) {
@@ -3251,7 +3328,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public Builder removeFriend(int index) {
       if (friendBuilder_ == null) {
@@ -3264,14 +3341,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.Builder getFriendBuilder(
         int index) {
       return getFriendFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProtoOrBuilder getFriendOrBuilder(
         int index) {
@@ -3281,7 +3358,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProtoOrBuilder> 
          getFriendOrBuilderList() {
@@ -3292,14 +3369,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.Builder addFriendBuilder() {
       return getFriendFieldBuilder().addBuilder(
           POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.Builder addFriendBuilder(
         int index) {
@@ -3307,7 +3384,7 @@ private static final long serialVersionUID = 0L;
           index, POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto friend = 2;</code>
      */
     public java.util.List<POGOProtos.Rpc.PlatformGetFriendsListOutProto.FriendProto.Builder> 
          getFriendBuilderList() {

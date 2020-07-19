@@ -39,4 +39,15 @@ public interface PlatformFriendDetailsProtoOrBuilder extends
    * @return The dataWithMe.
    */
   com.google.protobuf.ByteString getDataWithMe();
+
+  /**
+   * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus online_status = 5;</code>
+   * @return The enum numeric value on the wire for onlineStatus.
+   */
+  int getOnlineStatusValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus online_status = 5;</code>
+   * @return The onlineStatus.
+   */
+  POGOProtos.Rpc.PlatformFriendDetailsProto.OnlineStatus getOnlineStatus();
 }

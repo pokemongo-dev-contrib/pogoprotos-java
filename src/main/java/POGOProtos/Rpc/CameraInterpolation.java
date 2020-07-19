@@ -108,7 +108,7 @@ public enum CameraInterpolation
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(40);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(65);
   }
 
   private static final CameraInterpolation[] VALUES = values();

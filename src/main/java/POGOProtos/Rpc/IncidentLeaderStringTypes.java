@@ -144,7 +144,7 @@ public enum IncidentLeaderStringTypes
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(11);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(22);
   }
 
   private static final IncidentLeaderStringTypes[] VALUES = values();

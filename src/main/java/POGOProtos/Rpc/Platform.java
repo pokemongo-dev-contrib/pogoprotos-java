@@ -117,7 +117,7 @@ public enum Platform
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(83);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(108);
   }
 
   private static final Platform[] VALUES = values();

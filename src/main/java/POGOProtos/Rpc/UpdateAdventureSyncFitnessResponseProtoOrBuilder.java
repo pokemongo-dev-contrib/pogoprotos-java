@@ -6,4 +6,15 @@ package POGOProtos.Rpc;
 public interface UpdateAdventureSyncFitnessResponseProtoOrBuilder extends
     // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto)
     com.google.protobuf.MessageOrBuilder {
+
+  /**
+   * <code>.POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  int getStatusValue();
+  /**
+   * <code>.POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status status = 1;</code>
+   * @return The status.
+   */
+  POGOProtos.Rpc.UpdateAdventureSyncFitnessResponseProto.Status getStatus();
 }

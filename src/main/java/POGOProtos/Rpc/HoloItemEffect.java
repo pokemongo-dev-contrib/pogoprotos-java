@@ -216,7 +216,7 @@ public enum HoloItemEffect
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(58);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(83);
   }
 
   private static final HoloItemEffect[] VALUES = values();

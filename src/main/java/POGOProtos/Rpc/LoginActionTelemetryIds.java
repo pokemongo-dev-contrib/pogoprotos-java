@@ -324,7 +324,7 @@ public enum LoginActionTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(73);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(98);
   }
 
   private static final LoginActionTelemetryIds[] VALUES = values();

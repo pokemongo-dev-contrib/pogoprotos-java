@@ -6,4 +6,15 @@ package POGOProtos.Rpc;
 public interface SetInGameCurrencyExchangeRateOutProtoOrBuilder extends
     // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto)
     com.google.protobuf.MessageOrBuilder {
+
+  /**
+   * <code>.POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  int getStatusValue();
+  /**
+   * <code>.POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status status = 1;</code>
+   * @return The status.
+   */
+  POGOProtos.Rpc.SetInGameCurrencyExchangeRateOutProto.Status getStatus();
 }

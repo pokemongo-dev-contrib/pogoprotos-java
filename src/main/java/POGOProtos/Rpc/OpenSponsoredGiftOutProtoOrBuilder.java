@@ -8,6 +8,17 @@ public interface OpenSponsoredGiftOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
+   * <code>.POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result getResult();
+
+  /**
    * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
    * @return Whether the rewards field is set.
    */

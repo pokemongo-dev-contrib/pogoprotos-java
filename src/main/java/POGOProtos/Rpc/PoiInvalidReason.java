@@ -126,7 +126,7 @@ public enum PoiInvalidReason
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(27);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(51);
   }
 
   private static final PoiInvalidReason[] VALUES = values();

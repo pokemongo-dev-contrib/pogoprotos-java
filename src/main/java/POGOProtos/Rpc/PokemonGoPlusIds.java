@@ -207,7 +207,7 @@ public enum PokemonGoPlusIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(87);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(112);
   }
 
   private static final PokemonGoPlusIds[] VALUES = values();

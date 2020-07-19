@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformGetAvailableSkusAndBalancesOutProto() {
+    status_ = 0;
     availableSku_ = java.util.Collections.emptyList();
     balance_ = java.util.Collections.emptyList();
     playerToken_ = "";
@@ -52,7 +53,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            status_ = rawValue;
+            break;
+          }
+          case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
               availableSku_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformAvailableSkuProto>();
               mutable_bitField0_ |= 0x00000001;
@@ -61,7 +68,7 @@ private static final long serialVersionUID = 0L;
                 input.readMessage(POGOProtos.Rpc.PlatformAvailableSkuProto.parser(), extensionRegistry));
             break;
           }
-          case 18: {
+          case 26: {
             if (!((mutable_bitField0_ & 0x00000002) != 0)) {
               balance_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformCurrencyQuantityProto>();
               mutable_bitField0_ |= 0x00000002;
@@ -70,7 +77,7 @@ private static final long serialVersionUID = 0L;
                 input.readMessage(POGOProtos.Rpc.PlatformCurrencyQuantityProto.parser(), extensionRegistry));
             break;
           }
-          case 26: {
+          case 34: {
             java.lang.String s = input.readStringRequireUtf8();
 
             playerToken_ = s;
@@ -227,80 +234,99 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status)
   }
 
-  public static final int AVAILABLE_SKU_FIELD_NUMBER = 1;
+  public static final int STATUS_FIELD_NUMBER = 1;
+  private int status_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  public int getStatusValue() {
+    return status_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status status = 1;</code>
+   * @return The status.
+   */
+  public POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status getStatus() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status result = POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status.valueOf(status_);
+    return result == null ? POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status.UNRECOGNIZED : result;
+  }
+
+  public static final int AVAILABLE_SKU_FIELD_NUMBER = 2;
   private java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto> availableSku_;
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   public java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto> getAvailableSkuList() {
     return availableSku_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   public java.util.List<? extends POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder> 
       getAvailableSkuOrBuilderList() {
     return availableSku_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   public int getAvailableSkuCount() {
     return availableSku_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   public POGOProtos.Rpc.PlatformAvailableSkuProto getAvailableSku(int index) {
     return availableSku_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   public POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder getAvailableSkuOrBuilder(
       int index) {
     return availableSku_.get(index);
   }
 
-  public static final int BALANCE_FIELD_NUMBER = 2;
+  public static final int BALANCE_FIELD_NUMBER = 3;
   private java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> balance_;
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   public java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> getBalanceList() {
     return balance_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   public java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
       getBalanceOrBuilderList() {
     return balance_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   public int getBalanceCount() {
     return balance_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   public POGOProtos.Rpc.PlatformCurrencyQuantityProto getBalance(int index) {
     return balance_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   public POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getBalanceOrBuilder(
       int index) {
     return balance_.get(index);
   }
 
-  public static final int PLAYER_TOKEN_FIELD_NUMBER = 3;
+  public static final int PLAYER_TOKEN_FIELD_NUMBER = 4;
   private volatile java.lang.Object playerToken_;
   /**
-   * <code>string player_token = 3;</code>
+   * <code>string player_token = 4;</code>
    * @return The playerToken.
    */
   public java.lang.String getPlayerToken() {
@@ -316,7 +342,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string player_token = 3;</code>
+   * <code>string player_token = 4;</code>
    * @return The bytes for playerToken.
    */
   public com.google.protobuf.ByteString
@@ -347,14 +373,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (status_ != POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status.UNSET.getNumber()) {
+      output.writeEnum(1, status_);
+    }
     for (int i = 0; i < availableSku_.size(); i++) {
-      output.writeMessage(1, availableSku_.get(i));
+      output.writeMessage(2, availableSku_.get(i));
     }
     for (int i = 0; i < balance_.size(); i++) {
-      output.writeMessage(2, balance_.get(i));
+      output.writeMessage(3, balance_.get(i));
     }
     if (!getPlayerTokenBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, playerToken_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, playerToken_);
     }
     unknownFields.writeTo(output);
   }
@@ -365,16 +394,20 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (status_ != POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, status_);
+    }
     for (int i = 0; i < availableSku_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, availableSku_.get(i));
+        .computeMessageSize(2, availableSku_.get(i));
     }
     for (int i = 0; i < balance_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, balance_.get(i));
+        .computeMessageSize(3, balance_.get(i));
     }
     if (!getPlayerTokenBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, playerToken_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, playerToken_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -391,6 +424,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto other = (POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto) obj;
 
+    if (status_ != other.status_) return false;
     if (!getAvailableSkuList()
         .equals(other.getAvailableSkuList())) return false;
     if (!getBalanceList()
@@ -408,6 +442,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
     if (getAvailableSkuCount() > 0) {
       hash = (37 * hash) + AVAILABLE_SKU_FIELD_NUMBER;
       hash = (53 * hash) + getAvailableSkuList().hashCode();
@@ -553,6 +589,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      status_ = 0;
+
       if (availableSkuBuilder_ == null) {
         availableSku_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -594,6 +632,7 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto buildPartial() {
       POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto result = new POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto(this);
       int from_bitField0_ = bitField0_;
+      result.status_ = status_;
       if (availableSkuBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           availableSku_ = java.util.Collections.unmodifiableList(availableSku_);
@@ -661,6 +700,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto other) {
       if (other == POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.getDefaultInstance()) return this;
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
+      }
       if (availableSkuBuilder_ == null) {
         if (!other.availableSku_.isEmpty()) {
           if (availableSku_.isEmpty()) {
@@ -747,6 +789,58 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
+    private int status_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status status = 1;</code>
+     * @param value The enum numeric value on the wire for status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatusValue(int value) {
+      status_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status status = 1;</code>
+     * @return The status.
+     */
+    public POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status getStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status result = POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status status = 1;</code>
+     * @param value The status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatus(POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      status_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformGetAvailableSkusAndBalancesOutProto.Status status = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStatus() {
+      
+      status_ = 0;
+      onChanged();
+      return this;
+    }
+
     private java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto> availableSku_ =
       java.util.Collections.emptyList();
     private void ensureAvailableSkuIsMutable() {
@@ -760,7 +854,7 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlatformAvailableSkuProto, POGOProtos.Rpc.PlatformAvailableSkuProto.Builder, POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder> availableSkuBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto> getAvailableSkuList() {
       if (availableSkuBuilder_ == null) {
@@ -770,7 +864,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public int getAvailableSkuCount() {
       if (availableSkuBuilder_ == null) {
@@ -780,7 +874,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public POGOProtos.Rpc.PlatformAvailableSkuProto getAvailableSku(int index) {
       if (availableSkuBuilder_ == null) {
@@ -790,7 +884,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder setAvailableSku(
         int index, POGOProtos.Rpc.PlatformAvailableSkuProto value) {
@@ -807,7 +901,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder setAvailableSku(
         int index, POGOProtos.Rpc.PlatformAvailableSkuProto.Builder builderForValue) {
@@ -821,7 +915,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder addAvailableSku(POGOProtos.Rpc.PlatformAvailableSkuProto value) {
       if (availableSkuBuilder_ == null) {
@@ -837,7 +931,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder addAvailableSku(
         int index, POGOProtos.Rpc.PlatformAvailableSkuProto value) {
@@ -854,7 +948,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder addAvailableSku(
         POGOProtos.Rpc.PlatformAvailableSkuProto.Builder builderForValue) {
@@ -868,7 +962,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder addAvailableSku(
         int index, POGOProtos.Rpc.PlatformAvailableSkuProto.Builder builderForValue) {
@@ -882,7 +976,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder addAllAvailableSku(
         java.lang.Iterable<? extends POGOProtos.Rpc.PlatformAvailableSkuProto> values) {
@@ -897,7 +991,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder clearAvailableSku() {
       if (availableSkuBuilder_ == null) {
@@ -910,7 +1004,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder removeAvailableSku(int index) {
       if (availableSkuBuilder_ == null) {
@@ -923,14 +1017,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public POGOProtos.Rpc.PlatformAvailableSkuProto.Builder getAvailableSkuBuilder(
         int index) {
       return getAvailableSkuFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder getAvailableSkuOrBuilder(
         int index) {
@@ -940,7 +1034,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder> 
          getAvailableSkuOrBuilderList() {
@@ -951,14 +1045,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public POGOProtos.Rpc.PlatformAvailableSkuProto.Builder addAvailableSkuBuilder() {
       return getAvailableSkuFieldBuilder().addBuilder(
           POGOProtos.Rpc.PlatformAvailableSkuProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public POGOProtos.Rpc.PlatformAvailableSkuProto.Builder addAvailableSkuBuilder(
         int index) {
@@ -966,7 +1060,7 @@ private static final long serialVersionUID = 0L;
           index, POGOProtos.Rpc.PlatformAvailableSkuProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto.Builder> 
          getAvailableSkuBuilderList() {
@@ -1000,7 +1094,7 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.PlatformCurrencyQuantityProto, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder, POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> balanceBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> getBalanceList() {
       if (balanceBuilder_ == null) {
@@ -1010,7 +1104,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public int getBalanceCount() {
       if (balanceBuilder_ == null) {
@@ -1020,7 +1114,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public POGOProtos.Rpc.PlatformCurrencyQuantityProto getBalance(int index) {
       if (balanceBuilder_ == null) {
@@ -1030,7 +1124,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder setBalance(
         int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto value) {
@@ -1047,7 +1141,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder setBalance(
         int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder builderForValue) {
@@ -1061,7 +1155,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder addBalance(POGOProtos.Rpc.PlatformCurrencyQuantityProto value) {
       if (balanceBuilder_ == null) {
@@ -1077,7 +1171,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder addBalance(
         int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto value) {
@@ -1094,7 +1188,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder addBalance(
         POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder builderForValue) {
@@ -1108,7 +1202,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder addBalance(
         int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder builderForValue) {
@@ -1122,7 +1216,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder addAllBalance(
         java.lang.Iterable<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProto> values) {
@@ -1137,7 +1231,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder clearBalance() {
       if (balanceBuilder_ == null) {
@@ -1150,7 +1244,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder removeBalance(int index) {
       if (balanceBuilder_ == null) {
@@ -1163,14 +1257,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder getBalanceBuilder(
         int index) {
       return getBalanceFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getBalanceOrBuilder(
         int index) {
@@ -1180,7 +1274,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
          getBalanceOrBuilderList() {
@@ -1191,14 +1285,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder addBalanceBuilder() {
       return getBalanceFieldBuilder().addBuilder(
           POGOProtos.Rpc.PlatformCurrencyQuantityProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder addBalanceBuilder(
         int index) {
@@ -1206,7 +1300,7 @@ private static final long serialVersionUID = 0L;
           index, POGOProtos.Rpc.PlatformCurrencyQuantityProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder> 
          getBalanceBuilderList() {
@@ -1229,7 +1323,7 @@ private static final long serialVersionUID = 0L;
 
     private java.lang.Object playerToken_ = "";
     /**
-     * <code>string player_token = 3;</code>
+     * <code>string player_token = 4;</code>
      * @return The playerToken.
      */
     public java.lang.String getPlayerToken() {
@@ -1245,7 +1339,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string player_token = 3;</code>
+     * <code>string player_token = 4;</code>
      * @return The bytes for playerToken.
      */
     public com.google.protobuf.ByteString
@@ -1262,7 +1356,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string player_token = 3;</code>
+     * <code>string player_token = 4;</code>
      * @param value The playerToken to set.
      * @return This builder for chaining.
      */
@@ -1277,7 +1371,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string player_token = 3;</code>
+     * <code>string player_token = 4;</code>
      * @return This builder for chaining.
      */
     public Builder clearPlayerToken() {
@@ -1287,7 +1381,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string player_token = 3;</code>
+     * <code>string player_token = 4;</code>
      * @param value The bytes for playerToken to set.
      * @return This builder for chaining.
      */

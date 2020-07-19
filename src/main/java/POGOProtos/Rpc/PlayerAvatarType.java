@@ -81,7 +81,7 @@ public enum PlayerAvatarType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(84);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(109);
   }
 
   private static final PlayerAvatarType[] VALUES = values();

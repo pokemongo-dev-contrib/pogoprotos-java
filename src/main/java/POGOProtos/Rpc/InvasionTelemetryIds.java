@@ -189,7 +189,7 @@ public enum InvasionTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(69);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(94);
   }
 
   private static final InvasionTelemetryIds[] VALUES = values();

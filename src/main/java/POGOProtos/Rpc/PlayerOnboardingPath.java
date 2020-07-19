@@ -90,7 +90,7 @@ public enum PlayerOnboardingPath
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(7);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(17);
   }
 
   private static final PlayerOnboardingPath[] VALUES = values();

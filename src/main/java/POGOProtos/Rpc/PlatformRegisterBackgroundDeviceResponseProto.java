@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformRegisterBackgroundDeviceResponseProto() {
+    status_ = 0;
   }
 
   @java.lang.Override
@@ -48,12 +49,18 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
-            POGOProtos.Rpc.PlatformBackgroundToken.Builder subBuilder = null;
+          case 8: {
+            int rawValue = input.readEnum();
+
+            status_ = rawValue;
+            break;
+          }
+          case 18: {
+            POGOProtos.Rpc.BackgroundToken.Builder subBuilder = null;
             if (token_ != null) {
               subBuilder = token_.toBuilder();
             }
-            token_ = input.readMessage(POGOProtos.Rpc.PlatformBackgroundToken.parser(), extensionRegistry);
+            token_ = input.readMessage(POGOProtos.Rpc.BackgroundToken.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(token_);
               token_ = subBuilder.buildPartial();
@@ -206,26 +213,45 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status)
   }
 
-  public static final int TOKEN_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.PlatformBackgroundToken token_;
+  public static final int STATUS_FIELD_NUMBER = 1;
+  private int status_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  public int getStatusValue() {
+    return status_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status status = 1;</code>
+   * @return The status.
+   */
+  public POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status getStatus() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status result = POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status.valueOf(status_);
+    return result == null ? POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status.UNRECOGNIZED : result;
+  }
+
+  public static final int TOKEN_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.BackgroundToken token_;
+  /**
+   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
    * @return Whether the token field is set.
    */
   public boolean hasToken() {
     return token_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
    * @return The token.
    */
-  public POGOProtos.Rpc.PlatformBackgroundToken getToken() {
-    return token_ == null ? POGOProtos.Rpc.PlatformBackgroundToken.getDefaultInstance() : token_;
+  public POGOProtos.Rpc.BackgroundToken getToken() {
+    return token_ == null ? POGOProtos.Rpc.BackgroundToken.getDefaultInstance() : token_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
    */
-  public POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder getTokenOrBuilder() {
+  public POGOProtos.Rpc.BackgroundTokenOrBuilder getTokenOrBuilder() {
     return getToken();
   }
 
@@ -243,8 +269,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (status_ != POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status.UNSET.getNumber()) {
+      output.writeEnum(1, status_);
+    }
     if (token_ != null) {
-      output.writeMessage(1, getToken());
+      output.writeMessage(2, getToken());
     }
     unknownFields.writeTo(output);
   }
@@ -255,9 +284,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (status_ != POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, status_);
+    }
     if (token_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getToken());
+        .computeMessageSize(2, getToken());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -274,6 +307,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto other = (POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto) obj;
 
+    if (status_ != other.status_) return false;
     if (hasToken() != other.hasToken()) return false;
     if (hasToken()) {
       if (!getToken()
@@ -290,6 +324,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
     if (hasToken()) {
       hash = (37 * hash) + TOKEN_FIELD_NUMBER;
       hash = (53 * hash) + getToken().hashCode();
@@ -427,6 +463,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      status_ = 0;
+
       if (tokenBuilder_ == null) {
         token_ = null;
       } else {
@@ -459,6 +497,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto buildPartial() {
       POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto result = new POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto(this);
+      result.status_ = status_;
       if (tokenBuilder_ == null) {
         result.token_ = token_;
       } else {
@@ -512,6 +551,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto other) {
       if (other == POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.getDefaultInstance()) return this;
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
+      }
       if (other.hasToken()) {
         mergeToken(other.getToken());
       }
@@ -544,31 +586,83 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.PlatformBackgroundToken token_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformBackgroundToken, POGOProtos.Rpc.PlatformBackgroundToken.Builder, POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder> tokenBuilder_;
+    private int status_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status status = 1;</code>
+     * @param value The enum numeric value on the wire for status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatusValue(int value) {
+      status_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status status = 1;</code>
+     * @return The status.
+     */
+    public POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status getStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status result = POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status status = 1;</code>
+     * @param value The status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatus(POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      status_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformRegisterBackgroundDeviceResponseProto.Status status = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStatus() {
+      
+      status_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private POGOProtos.Rpc.BackgroundToken token_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.BackgroundToken, POGOProtos.Rpc.BackgroundToken.Builder, POGOProtos.Rpc.BackgroundTokenOrBuilder> tokenBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
      * @return Whether the token field is set.
      */
     public boolean hasToken() {
       return tokenBuilder_ != null || token_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
      * @return The token.
      */
-    public POGOProtos.Rpc.PlatformBackgroundToken getToken() {
+    public POGOProtos.Rpc.BackgroundToken getToken() {
       if (tokenBuilder_ == null) {
-        return token_ == null ? POGOProtos.Rpc.PlatformBackgroundToken.getDefaultInstance() : token_;
+        return token_ == null ? POGOProtos.Rpc.BackgroundToken.getDefaultInstance() : token_;
       } else {
         return tokenBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
      */
-    public Builder setToken(POGOProtos.Rpc.PlatformBackgroundToken value) {
+    public Builder setToken(POGOProtos.Rpc.BackgroundToken value) {
       if (tokenBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -582,10 +676,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
      */
     public Builder setToken(
-        POGOProtos.Rpc.PlatformBackgroundToken.Builder builderForValue) {
+        POGOProtos.Rpc.BackgroundToken.Builder builderForValue) {
       if (tokenBuilder_ == null) {
         token_ = builderForValue.build();
         onChanged();
@@ -596,13 +690,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
      */
-    public Builder mergeToken(POGOProtos.Rpc.PlatformBackgroundToken value) {
+    public Builder mergeToken(POGOProtos.Rpc.BackgroundToken value) {
       if (tokenBuilder_ == null) {
         if (token_ != null) {
           token_ =
-            POGOProtos.Rpc.PlatformBackgroundToken.newBuilder(token_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.BackgroundToken.newBuilder(token_).mergeFrom(value).buildPartial();
         } else {
           token_ = value;
         }
@@ -614,7 +708,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
      */
     public Builder clearToken() {
       if (tokenBuilder_ == null) {
@@ -628,33 +722,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformBackgroundToken.Builder getTokenBuilder() {
+    public POGOProtos.Rpc.BackgroundToken.Builder getTokenBuilder() {
       
       onChanged();
       return getTokenFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder getTokenOrBuilder() {
+    public POGOProtos.Rpc.BackgroundTokenOrBuilder getTokenOrBuilder() {
       if (tokenBuilder_ != null) {
         return tokenBuilder_.getMessageOrBuilder();
       } else {
         return token_ == null ?
-            POGOProtos.Rpc.PlatformBackgroundToken.getDefaultInstance() : token_;
+            POGOProtos.Rpc.BackgroundToken.getDefaultInstance() : token_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 1;</code>
+     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformBackgroundToken, POGOProtos.Rpc.PlatformBackgroundToken.Builder, POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder> 
+        POGOProtos.Rpc.BackgroundToken, POGOProtos.Rpc.BackgroundToken.Builder, POGOProtos.Rpc.BackgroundTokenOrBuilder> 
         getTokenFieldBuilder() {
       if (tokenBuilder_ == null) {
         tokenBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformBackgroundToken, POGOProtos.Rpc.PlatformBackgroundToken.Builder, POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder>(
+            POGOProtos.Rpc.BackgroundToken, POGOProtos.Rpc.BackgroundToken.Builder, POGOProtos.Rpc.BackgroundTokenOrBuilder>(
                 getToken(),
                 getParentForChildren(),
                 isClean());

@@ -2592,7 +2592,7 @@ public enum HoloPokemonMove
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(64);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(89);
   }
 
   private static final HoloPokemonMove[] VALUES = values();

@@ -108,7 +108,7 @@ public enum IncidentDisplayType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(68);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(93);
   }
 
   private static final IncidentDisplayType[] VALUES = values();

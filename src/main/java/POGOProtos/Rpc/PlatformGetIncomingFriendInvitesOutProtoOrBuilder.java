@@ -8,6 +8,17 @@ public interface PlatformGetIncomingFriendInvitesOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
+   * <code>.POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformGetIncomingFriendInvitesOutProto.Result getResult();
+
+  /**
    * <code>repeated .POGOProtos.Rpc.PlatformIncomingFriendInviteDisplayProto invites = 2;</code>
    */
   java.util.List<POGOProtos.Rpc.PlatformIncomingFriendInviteDisplayProto> 

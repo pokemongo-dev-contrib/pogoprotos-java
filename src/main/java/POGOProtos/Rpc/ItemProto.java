@@ -16,7 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private ItemProto() {
-    item_ = 0;
+    itemId_ = 0;
   }
 
   @java.lang.Override
@@ -52,7 +52,7 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            item_ = rawValue;
+            itemId_ = rawValue;
             break;
           }
           case 16: {
@@ -97,22 +97,22 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.ItemProto.class, POGOProtos.Rpc.ItemProto.Builder.class);
   }
 
-  public static final int ITEM_FIELD_NUMBER = 1;
-  private int item_;
+  public static final int ITEM_ID_FIELD_NUMBER = 1;
+  private int itemId_;
   /**
-   * <code>.POGOProtos.Rpc.Item item = 1;</code>
-   * @return The enum numeric value on the wire for item.
+   * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
+   * @return The enum numeric value on the wire for itemId.
    */
-  public int getItemValue() {
-    return item_;
+  public int getItemIdValue() {
+    return itemId_;
   }
   /**
-   * <code>.POGOProtos.Rpc.Item item = 1;</code>
-   * @return The item.
+   * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
+   * @return The itemId.
    */
-  public POGOProtos.Rpc.Item getItem() {
+  public POGOProtos.Rpc.Item getItemId() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(item_);
+    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(itemId_);
     return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
   }
 
@@ -150,8 +150,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
-      output.writeEnum(1, item_);
+    if (itemId_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+      output.writeEnum(1, itemId_);
     }
     if (count_ != 0) {
       output.writeInt32(2, count_);
@@ -168,9 +168,9 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (itemId_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, item_);
+        .computeEnumSize(1, itemId_);
     }
     if (count_ != 0) {
       size += com.google.protobuf.CodedOutputStream
@@ -195,7 +195,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.ItemProto other = (POGOProtos.Rpc.ItemProto) obj;
 
-    if (item_ != other.item_) return false;
+    if (itemId_ != other.itemId_) return false;
     if (getCount()
         != other.getCount()) return false;
     if (getUnseen()
@@ -211,8 +211,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + ITEM_FIELD_NUMBER;
-    hash = (53 * hash) + item_;
+    hash = (37 * hash) + ITEM_ID_FIELD_NUMBER;
+    hash = (53 * hash) + itemId_;
     hash = (37 * hash) + COUNT_FIELD_NUMBER;
     hash = (53 * hash) + getCount();
     hash = (37 * hash) + UNSEEN_FIELD_NUMBER;
@@ -351,7 +351,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      item_ = 0;
+      itemId_ = 0;
 
       count_ = 0;
 
@@ -383,7 +383,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.ItemProto buildPartial() {
       POGOProtos.Rpc.ItemProto result = new POGOProtos.Rpc.ItemProto(this);
-      result.item_ = item_;
+      result.itemId_ = itemId_;
       result.count_ = count_;
       result.unseen_ = unseen_;
       onBuilt();
@@ -434,8 +434,8 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.ItemProto other) {
       if (other == POGOProtos.Rpc.ItemProto.getDefaultInstance()) return this;
-      if (other.item_ != 0) {
-        setItemValue(other.getItemValue());
+      if (other.itemId_ != 0) {
+        setItemIdValue(other.getItemIdValue());
       }
       if (other.getCount() != 0) {
         setCount(other.getCount());
@@ -472,54 +472,54 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int item_ = 0;
+    private int itemId_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.Item item = 1;</code>
-     * @return The enum numeric value on the wire for item.
+     * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
+     * @return The enum numeric value on the wire for itemId.
      */
-    public int getItemValue() {
-      return item_;
+    public int getItemIdValue() {
+      return itemId_;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item item = 1;</code>
-     * @param value The enum numeric value on the wire for item to set.
+     * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
+     * @param value The enum numeric value on the wire for itemId to set.
      * @return This builder for chaining.
      */
-    public Builder setItemValue(int value) {
-      item_ = value;
+    public Builder setItemIdValue(int value) {
+      itemId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item item = 1;</code>
-     * @return The item.
+     * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
+     * @return The itemId.
      */
-    public POGOProtos.Rpc.Item getItem() {
+    public POGOProtos.Rpc.Item getItemId() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(item_);
+      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(itemId_);
       return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item item = 1;</code>
-     * @param value The item to set.
+     * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
+     * @param value The itemId to set.
      * @return This builder for chaining.
      */
-    public Builder setItem(POGOProtos.Rpc.Item value) {
+    public Builder setItemId(POGOProtos.Rpc.Item value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      item_ = value.getNumber();
+      itemId_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item item = 1;</code>
+     * <code>.POGOProtos.Rpc.Item item_id = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearItem() {
+    public Builder clearItemId() {
       
-      item_ = 0;
+      itemId_ = 0;
       onChanged();
       return this;
     }

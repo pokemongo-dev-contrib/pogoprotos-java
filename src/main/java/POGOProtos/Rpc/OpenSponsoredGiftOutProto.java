@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private OpenSponsoredGiftOutProto() {
+    result_ = 0;
   }
 
   @java.lang.Override
@@ -48,6 +49,12 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
+          case 8: {
+            int rawValue = input.readEnum();
+
+            result_ = rawValue;
+            break;
+          }
           case 18: {
             POGOProtos.Rpc.LootProto.Builder subBuilder = null;
             if (rewards_ != null) {
@@ -224,6 +231,25 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result)
   }
 
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
+  /**
+   * <code>.POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  public int getResultValue() {
+    return result_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  public POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result.UNRECOGNIZED : result;
+  }
+
   public static final int REWARDS_FIELD_NUMBER = 2;
   private POGOProtos.Rpc.LootProto rewards_;
   /**
@@ -261,6 +287,9 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (result_ != POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
+    }
     if (rewards_ != null) {
       output.writeMessage(2, getRewards());
     }
@@ -273,6 +302,10 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (result_ != POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, result_);
+    }
     if (rewards_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getRewards());
@@ -292,6 +325,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.OpenSponsoredGiftOutProto other = (POGOProtos.Rpc.OpenSponsoredGiftOutProto) obj;
 
+    if (result_ != other.result_) return false;
     if (hasRewards() != other.hasRewards()) return false;
     if (hasRewards()) {
       if (!getRewards()
@@ -308,6 +342,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     if (hasRewards()) {
       hash = (37 * hash) + REWARDS_FIELD_NUMBER;
       hash = (53 * hash) + getRewards().hashCode();
@@ -445,6 +481,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      result_ = 0;
+
       if (rewardsBuilder_ == null) {
         rewards_ = null;
       } else {
@@ -477,6 +515,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.OpenSponsoredGiftOutProto buildPartial() {
       POGOProtos.Rpc.OpenSponsoredGiftOutProto result = new POGOProtos.Rpc.OpenSponsoredGiftOutProto(this);
+      result.result_ = result_;
       if (rewardsBuilder_ == null) {
         result.rewards_ = rewards_;
       } else {
@@ -530,6 +569,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.OpenSponsoredGiftOutProto other) {
       if (other == POGOProtos.Rpc.OpenSponsoredGiftOutProto.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
+      }
       if (other.hasRewards()) {
         mergeRewards(other.getRewards());
       }
@@ -559,6 +601,58 @@ private static final long serialVersionUID = 0L;
           mergeFrom(parsedMessage);
         }
       }
+      return this;
+    }
+
+    private int result_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = 1;</code>
+     * @param value The result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResult(POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      result_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.OpenSponsoredGiftOutProto.Result result = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearResult() {
+      
+      result_ = 0;
+      onChanged();
       return this;
     }
 

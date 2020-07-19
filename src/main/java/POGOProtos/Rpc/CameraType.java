@@ -99,7 +99,7 @@ public enum CameraType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(110);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(139);
   }
 
   private static final CameraType[] VALUES = values();

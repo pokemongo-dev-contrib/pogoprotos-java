@@ -234,7 +234,7 @@ public enum ShoppingPageTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(99);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(124);
   }
 
   private static final ShoppingPageTelemetryIds[] VALUES = values();

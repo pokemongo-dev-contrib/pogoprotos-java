@@ -225,7 +225,7 @@ public enum SouvenirTypeId
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(102);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(127);
   }
 
   private static final SouvenirTypeId[] VALUES = values();

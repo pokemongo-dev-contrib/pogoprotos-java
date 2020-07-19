@@ -117,7 +117,7 @@ public enum DeviceServiceTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(46);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(71);
   }
 
   private static final DeviceServiceTelemetryIds[] VALUES = values();

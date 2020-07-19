@@ -459,7 +459,7 @@ public enum TutorialCompletion
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(105);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(130);
   }
 
   private static final TutorialCompletion[] VALUES = values();

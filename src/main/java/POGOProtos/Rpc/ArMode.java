@@ -90,7 +90,7 @@ public enum ArMode
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(0);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(1);
   }
 
   private static final ArMode[] VALUES = values();

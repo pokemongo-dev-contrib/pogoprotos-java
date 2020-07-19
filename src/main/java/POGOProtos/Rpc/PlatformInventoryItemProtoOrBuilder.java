@@ -14,10 +14,19 @@ public interface PlatformInventoryItemProtoOrBuilder extends
   com.google.protobuf.ByteString getDeletedItemKey();
 
   /**
-   * <code>bytes item = 3;</code>
-   * @return The item.
+   * <code>.POGOProtos.Rpc.HoloInventoryItemProto inventory_item_data = 3;</code>
+   * @return Whether the inventoryItemData field is set.
    */
-  com.google.protobuf.ByteString getItem();
+  boolean hasInventoryItemData();
+  /**
+   * <code>.POGOProtos.Rpc.HoloInventoryItemProto inventory_item_data = 3;</code>
+   * @return The inventoryItemData.
+   */
+  POGOProtos.Rpc.HoloInventoryItemProto getInventoryItemData();
+  /**
+   * <code>.POGOProtos.Rpc.HoloInventoryItemProto inventory_item_data = 3;</code>
+   */
+  POGOProtos.Rpc.HoloInventoryItemProtoOrBuilder getInventoryItemDataOrBuilder();
 
   /**
    * <code>int64 modified_timestamp = 1;</code>

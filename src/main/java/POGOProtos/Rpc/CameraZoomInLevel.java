@@ -99,7 +99,7 @@ public enum CameraZoomInLevel
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(111);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(140);
   }
 
   private static final CameraZoomInLevel[] VALUES = values();

@@ -8,6 +8,17 @@ public interface PlatformSearchPlayerOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
+   * <code>.POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result getResult();
+
+  /**
    * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
    * @return Whether the player field is set.
    */

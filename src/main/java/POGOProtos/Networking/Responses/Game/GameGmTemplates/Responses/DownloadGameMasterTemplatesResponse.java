@@ -306,10 +306,19 @@ private static final long serialVersionUID = 0L;
         getTemplateIdBytes();
 
     /**
-     * <code>bytes data = 2;</code>
+     * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
+     * @return Whether the data field is set.
+     */
+    boolean hasData();
+    /**
+     * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
      * @return The data.
      */
-    com.google.protobuf.ByteString getData();
+    POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate getData();
+    /**
+     * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
+     */
+    POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplateOrBuilder getDataOrBuilder();
   }
   /**
    * Protobuf type {@code POGOProtos.Networking.Responses.Game.GameGmTemplates.Responses.DownloadGameMasterTemplatesResponse.ClientGameMasterTemplate}
@@ -325,7 +334,6 @@ private static final long serialVersionUID = 0L;
     }
     private ClientGameMasterTemplate() {
       templateId_ = "";
-      data_ = com.google.protobuf.ByteString.EMPTY;
     }
 
     @java.lang.Override
@@ -365,8 +373,16 @@ private static final long serialVersionUID = 0L;
               break;
             }
             case 18: {
+              POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.Builder subBuilder = null;
+              if (data_ != null) {
+                subBuilder = data_.toBuilder();
+              }
+              data_ = input.readMessage(POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(data_);
+                data_ = subBuilder.buildPartial();
+              }
 
-              data_ = input.readBytes();
               break;
             }
             default: {
@@ -438,13 +454,26 @@ private static final long serialVersionUID = 0L;
     }
 
     public static final int DATA_FIELD_NUMBER = 2;
-    private com.google.protobuf.ByteString data_;
+    private POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data_;
     /**
-     * <code>bytes data = 2;</code>
+     * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
+     * @return Whether the data field is set.
+     */
+    public boolean hasData() {
+      return data_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
      * @return The data.
      */
-    public com.google.protobuf.ByteString getData() {
-      return data_;
+    public POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate getData() {
+      return data_ == null ? POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.getDefaultInstance() : data_;
+    }
+    /**
+     * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
+     */
+    public POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplateOrBuilder getDataOrBuilder() {
+      return getData();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -464,8 +493,8 @@ private static final long serialVersionUID = 0L;
       if (!getTemplateIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, templateId_);
       }
-      if (!data_.isEmpty()) {
-        output.writeBytes(2, data_);
+      if (data_ != null) {
+        output.writeMessage(2, getData());
       }
       unknownFields.writeTo(output);
     }
@@ -479,9 +508,9 @@ private static final long serialVersionUID = 0L;
       if (!getTemplateIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, templateId_);
       }
-      if (!data_.isEmpty()) {
+      if (data_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(2, data_);
+          .computeMessageSize(2, getData());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -500,8 +529,11 @@ private static final long serialVersionUID = 0L;
 
       if (!getTemplateId()
           .equals(other.getTemplateId())) return false;
-      if (!getData()
-          .equals(other.getData())) return false;
+      if (hasData() != other.hasData()) return false;
+      if (hasData()) {
+        if (!getData()
+            .equals(other.getData())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -515,8 +547,10 @@ private static final long serialVersionUID = 0L;
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TEMPLATE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getTemplateId().hashCode();
-      hash = (37 * hash) + DATA_FIELD_NUMBER;
-      hash = (53 * hash) + getData().hashCode();
+      if (hasData()) {
+        hash = (37 * hash) + DATA_FIELD_NUMBER;
+        hash = (53 * hash) + getData().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -652,8 +686,12 @@ private static final long serialVersionUID = 0L;
         super.clear();
         templateId_ = "";
 
-        data_ = com.google.protobuf.ByteString.EMPTY;
-
+        if (dataBuilder_ == null) {
+          data_ = null;
+        } else {
+          data_ = null;
+          dataBuilder_ = null;
+        }
         return this;
       }
 
@@ -681,7 +719,11 @@ private static final long serialVersionUID = 0L;
       public POGOProtos.Networking.Responses.Game.GameGmTemplates.Responses.DownloadGameMasterTemplatesResponse.ClientGameMasterTemplate buildPartial() {
         POGOProtos.Networking.Responses.Game.GameGmTemplates.Responses.DownloadGameMasterTemplatesResponse.ClientGameMasterTemplate result = new POGOProtos.Networking.Responses.Game.GameGmTemplates.Responses.DownloadGameMasterTemplatesResponse.ClientGameMasterTemplate(this);
         result.templateId_ = templateId_;
-        result.data_ = data_;
+        if (dataBuilder_ == null) {
+          result.data_ = data_;
+        } else {
+          result.data_ = dataBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -734,8 +776,8 @@ private static final long serialVersionUID = 0L;
           templateId_ = other.templateId_;
           onChanged();
         }
-        if (other.getData() != com.google.protobuf.ByteString.EMPTY) {
-          setData(other.getData());
+        if (other.hasData()) {
+          mergeData(other.getData());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -842,37 +884,123 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      private com.google.protobuf.ByteString data_ = com.google.protobuf.ByteString.EMPTY;
+      private POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate, POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.Builder, POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplateOrBuilder> dataBuilder_;
       /**
-       * <code>bytes data = 2;</code>
+       * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
+       * @return Whether the data field is set.
+       */
+      public boolean hasData() {
+        return dataBuilder_ != null || data_ != null;
+      }
+      /**
+       * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
        * @return The data.
        */
-      public com.google.protobuf.ByteString getData() {
-        return data_;
+      public POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate getData() {
+        if (dataBuilder_ == null) {
+          return data_ == null ? POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.getDefaultInstance() : data_;
+        } else {
+          return dataBuilder_.getMessage();
+        }
       }
       /**
-       * <code>bytes data = 2;</code>
-       * @param value The data to set.
-       * @return This builder for chaining.
+       * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
        */
-      public Builder setData(com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        data_ = value;
-        onChanged();
+      public Builder setData(POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate value) {
+        if (dataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          data_ = value;
+          onChanged();
+        } else {
+          dataBuilder_.setMessage(value);
+        }
+
         return this;
       }
       /**
-       * <code>bytes data = 2;</code>
-       * @return This builder for chaining.
+       * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
+       */
+      public Builder setData(
+          POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.Builder builderForValue) {
+        if (dataBuilder_ == null) {
+          data_ = builderForValue.build();
+          onChanged();
+        } else {
+          dataBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
+       */
+      public Builder mergeData(POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate value) {
+        if (dataBuilder_ == null) {
+          if (data_ != null) {
+            data_ =
+              POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.newBuilder(data_).mergeFrom(value).buildPartial();
+          } else {
+            data_ = value;
+          }
+          onChanged();
+        } else {
+          dataBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
        */
       public Builder clearData() {
-        
-        data_ = getDefaultInstance().getData();
-        onChanged();
+        if (dataBuilder_ == null) {
+          data_ = null;
+          onChanged();
+        } else {
+          data_ = null;
+          dataBuilder_ = null;
+        }
+
         return this;
+      }
+      /**
+       * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
+       */
+      public POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.Builder getDataBuilder() {
+        
+        onChanged();
+        return getDataFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
+       */
+      public POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplateOrBuilder getDataOrBuilder() {
+        if (dataBuilder_ != null) {
+          return dataBuilder_.getMessageOrBuilder();
+        } else {
+          return data_ == null ?
+              POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.getDefaultInstance() : data_;
+        }
+      }
+      /**
+       * <code>.POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate data = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate, POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.Builder, POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplateOrBuilder> 
+          getDataFieldBuilder() {
+        if (dataBuilder_ == null) {
+          dataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate, POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplate.Builder, POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.GameMasterClientTemplateOrBuilder>(
+                  getData(),
+                  getParentForChildren(),
+                  isClean());
+          data_ = null;
+        }
+        return dataBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(

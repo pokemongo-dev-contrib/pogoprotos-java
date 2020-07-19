@@ -8,6 +8,17 @@ public interface PlatformGetFacebookFriendListOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
+   * <code>.POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.Result getResult();
+
+  /**
    * <code>repeated .POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.FacebookFriendProto friend = 2;</code>
    */
   java.util.List<POGOProtos.Rpc.PlatformGetFacebookFriendListOutProto.FacebookFriendProto> 

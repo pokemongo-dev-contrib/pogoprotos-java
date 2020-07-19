@@ -90,7 +90,7 @@ public enum PhoneBoothPresentationMode
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(29);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(54);
   }
 
   private static final PhoneBoothPresentationMode[] VALUES = values();

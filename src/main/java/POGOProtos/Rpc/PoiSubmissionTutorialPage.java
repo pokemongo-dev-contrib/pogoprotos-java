@@ -99,7 +99,7 @@ public enum PoiSubmissionTutorialPage
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(16);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(36);
   }
 
   private static final PoiSubmissionTutorialPage[] VALUES = values();

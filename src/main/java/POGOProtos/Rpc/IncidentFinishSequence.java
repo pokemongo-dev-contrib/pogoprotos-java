@@ -81,7 +81,7 @@ public enum IncidentFinishSequence
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(10);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(21);
   }
 
   private static final IncidentFinishSequence[] VALUES = values();

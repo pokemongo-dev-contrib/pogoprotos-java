@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private GetFitnessReportOutProto() {
+    status_ = 0;
     dailyReports_ = java.util.Collections.emptyList();
     weeklyReports_ = java.util.Collections.emptyList();
   }
@@ -51,7 +52,13 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            status_ = rawValue;
+            break;
+          }
+          case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
               dailyReports_ = new java.util.ArrayList<POGOProtos.Rpc.FitnessReportProto>();
               mutable_bitField0_ |= 0x00000001;
@@ -60,7 +67,7 @@ private static final long serialVersionUID = 0L;
                 input.readMessage(POGOProtos.Rpc.FitnessReportProto.parser(), extensionRegistry));
             break;
           }
-          case 18: {
+          case 26: {
             if (!((mutable_bitField0_ & 0x00000002) != 0)) {
               weeklyReports_ = new java.util.ArrayList<POGOProtos.Rpc.FitnessReportProto>();
               mutable_bitField0_ |= 0x00000002;
@@ -69,7 +76,7 @@ private static final long serialVersionUID = 0L;
                 input.readMessage(POGOProtos.Rpc.FitnessReportProto.parser(), extensionRegistry));
             break;
           }
-          case 24: {
+          case 32: {
 
             weekResetTimestampSinceMondayMs_ = input.readInt64();
             break;
@@ -252,80 +259,99 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.GetFitnessReportOutProto.Status)
   }
 
-  public static final int DAILY_REPORTS_FIELD_NUMBER = 1;
+  public static final int STATUS_FIELD_NUMBER = 1;
+  private int status_;
+  /**
+   * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  public int getStatusValue() {
+    return status_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
+   * @return The status.
+   */
+  public POGOProtos.Rpc.GetFitnessReportOutProto.Status getStatus() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.GetFitnessReportOutProto.Status result = POGOProtos.Rpc.GetFitnessReportOutProto.Status.valueOf(status_);
+    return result == null ? POGOProtos.Rpc.GetFitnessReportOutProto.Status.UNRECOGNIZED : result;
+  }
+
+  public static final int DAILY_REPORTS_FIELD_NUMBER = 2;
   private java.util.List<POGOProtos.Rpc.FitnessReportProto> dailyReports_;
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
   public java.util.List<POGOProtos.Rpc.FitnessReportProto> getDailyReportsList() {
     return dailyReports_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
   public java.util.List<? extends POGOProtos.Rpc.FitnessReportProtoOrBuilder> 
       getDailyReportsOrBuilderList() {
     return dailyReports_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
   public int getDailyReportsCount() {
     return dailyReports_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
   public POGOProtos.Rpc.FitnessReportProto getDailyReports(int index) {
     return dailyReports_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
    */
   public POGOProtos.Rpc.FitnessReportProtoOrBuilder getDailyReportsOrBuilder(
       int index) {
     return dailyReports_.get(index);
   }
 
-  public static final int WEEKLY_REPORTS_FIELD_NUMBER = 2;
+  public static final int WEEKLY_REPORTS_FIELD_NUMBER = 3;
   private java.util.List<POGOProtos.Rpc.FitnessReportProto> weeklyReports_;
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
   public java.util.List<POGOProtos.Rpc.FitnessReportProto> getWeeklyReportsList() {
     return weeklyReports_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
   public java.util.List<? extends POGOProtos.Rpc.FitnessReportProtoOrBuilder> 
       getWeeklyReportsOrBuilderList() {
     return weeklyReports_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
   public int getWeeklyReportsCount() {
     return weeklyReports_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
   public POGOProtos.Rpc.FitnessReportProto getWeeklyReports(int index) {
     return weeklyReports_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
    */
   public POGOProtos.Rpc.FitnessReportProtoOrBuilder getWeeklyReportsOrBuilder(
       int index) {
     return weeklyReports_.get(index);
   }
 
-  public static final int WEEK_RESET_TIMESTAMP_SINCE_MONDAY_MS_FIELD_NUMBER = 3;
+  public static final int WEEK_RESET_TIMESTAMP_SINCE_MONDAY_MS_FIELD_NUMBER = 4;
   private long weekResetTimestampSinceMondayMs_;
   /**
-   * <code>int64 week_reset_timestamp_since_monday_ms = 3;</code>
+   * <code>int64 week_reset_timestamp_since_monday_ms = 4;</code>
    * @return The weekResetTimestampSinceMondayMs.
    */
   public long getWeekResetTimestampSinceMondayMs() {
@@ -346,14 +372,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (status_ != POGOProtos.Rpc.GetFitnessReportOutProto.Status.UNSET.getNumber()) {
+      output.writeEnum(1, status_);
+    }
     for (int i = 0; i < dailyReports_.size(); i++) {
-      output.writeMessage(1, dailyReports_.get(i));
+      output.writeMessage(2, dailyReports_.get(i));
     }
     for (int i = 0; i < weeklyReports_.size(); i++) {
-      output.writeMessage(2, weeklyReports_.get(i));
+      output.writeMessage(3, weeklyReports_.get(i));
     }
     if (weekResetTimestampSinceMondayMs_ != 0L) {
-      output.writeInt64(3, weekResetTimestampSinceMondayMs_);
+      output.writeInt64(4, weekResetTimestampSinceMondayMs_);
     }
     unknownFields.writeTo(output);
   }
@@ -364,17 +393,21 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (status_ != POGOProtos.Rpc.GetFitnessReportOutProto.Status.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, status_);
+    }
     for (int i = 0; i < dailyReports_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, dailyReports_.get(i));
+        .computeMessageSize(2, dailyReports_.get(i));
     }
     for (int i = 0; i < weeklyReports_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, weeklyReports_.get(i));
+        .computeMessageSize(3, weeklyReports_.get(i));
     }
     if (weekResetTimestampSinceMondayMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(3, weekResetTimestampSinceMondayMs_);
+        .computeInt64Size(4, weekResetTimestampSinceMondayMs_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -391,6 +424,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.GetFitnessReportOutProto other = (POGOProtos.Rpc.GetFitnessReportOutProto) obj;
 
+    if (status_ != other.status_) return false;
     if (!getDailyReportsList()
         .equals(other.getDailyReportsList())) return false;
     if (!getWeeklyReportsList()
@@ -408,6 +442,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
     if (getDailyReportsCount() > 0) {
       hash = (37 * hash) + DAILY_REPORTS_FIELD_NUMBER;
       hash = (53 * hash) + getDailyReportsList().hashCode();
@@ -554,6 +590,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      status_ = 0;
+
       if (dailyReportsBuilder_ == null) {
         dailyReports_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -595,6 +633,7 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.GetFitnessReportOutProto buildPartial() {
       POGOProtos.Rpc.GetFitnessReportOutProto result = new POGOProtos.Rpc.GetFitnessReportOutProto(this);
       int from_bitField0_ = bitField0_;
+      result.status_ = status_;
       if (dailyReportsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
           dailyReports_ = java.util.Collections.unmodifiableList(dailyReports_);
@@ -662,6 +701,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.GetFitnessReportOutProto other) {
       if (other == POGOProtos.Rpc.GetFitnessReportOutProto.getDefaultInstance()) return this;
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
+      }
       if (dailyReportsBuilder_ == null) {
         if (!other.dailyReports_.isEmpty()) {
           if (dailyReports_.isEmpty()) {
@@ -747,6 +789,58 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
+    private int status_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
+     * @param value The enum numeric value on the wire for status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatusValue(int value) {
+      status_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
+     * @return The status.
+     */
+    public POGOProtos.Rpc.GetFitnessReportOutProto.Status getStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.GetFitnessReportOutProto.Status result = POGOProtos.Rpc.GetFitnessReportOutProto.Status.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.GetFitnessReportOutProto.Status.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
+     * @param value The status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatus(POGOProtos.Rpc.GetFitnessReportOutProto.Status value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      status_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.GetFitnessReportOutProto.Status status = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStatus() {
+      
+      status_ = 0;
+      onChanged();
+      return this;
+    }
+
     private java.util.List<POGOProtos.Rpc.FitnessReportProto> dailyReports_ =
       java.util.Collections.emptyList();
     private void ensureDailyReportsIsMutable() {
@@ -760,7 +854,7 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.FitnessReportProto, POGOProtos.Rpc.FitnessReportProto.Builder, POGOProtos.Rpc.FitnessReportProtoOrBuilder> dailyReportsBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public java.util.List<POGOProtos.Rpc.FitnessReportProto> getDailyReportsList() {
       if (dailyReportsBuilder_ == null) {
@@ -770,7 +864,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public int getDailyReportsCount() {
       if (dailyReportsBuilder_ == null) {
@@ -780,7 +874,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public POGOProtos.Rpc.FitnessReportProto getDailyReports(int index) {
       if (dailyReportsBuilder_ == null) {
@@ -790,7 +884,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public Builder setDailyReports(
         int index, POGOProtos.Rpc.FitnessReportProto value) {
@@ -807,7 +901,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public Builder setDailyReports(
         int index, POGOProtos.Rpc.FitnessReportProto.Builder builderForValue) {
@@ -821,7 +915,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public Builder addDailyReports(POGOProtos.Rpc.FitnessReportProto value) {
       if (dailyReportsBuilder_ == null) {
@@ -837,7 +931,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public Builder addDailyReports(
         int index, POGOProtos.Rpc.FitnessReportProto value) {
@@ -854,7 +948,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public Builder addDailyReports(
         POGOProtos.Rpc.FitnessReportProto.Builder builderForValue) {
@@ -868,7 +962,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public Builder addDailyReports(
         int index, POGOProtos.Rpc.FitnessReportProto.Builder builderForValue) {
@@ -882,7 +976,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public Builder addAllDailyReports(
         java.lang.Iterable<? extends POGOProtos.Rpc.FitnessReportProto> values) {
@@ -897,7 +991,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public Builder clearDailyReports() {
       if (dailyReportsBuilder_ == null) {
@@ -910,7 +1004,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public Builder removeDailyReports(int index) {
       if (dailyReportsBuilder_ == null) {
@@ -923,14 +1017,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public POGOProtos.Rpc.FitnessReportProto.Builder getDailyReportsBuilder(
         int index) {
       return getDailyReportsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public POGOProtos.Rpc.FitnessReportProtoOrBuilder getDailyReportsOrBuilder(
         int index) {
@@ -940,7 +1034,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.FitnessReportProtoOrBuilder> 
          getDailyReportsOrBuilderList() {
@@ -951,14 +1045,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public POGOProtos.Rpc.FitnessReportProto.Builder addDailyReportsBuilder() {
       return getDailyReportsFieldBuilder().addBuilder(
           POGOProtos.Rpc.FitnessReportProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public POGOProtos.Rpc.FitnessReportProto.Builder addDailyReportsBuilder(
         int index) {
@@ -966,7 +1060,7 @@ private static final long serialVersionUID = 0L;
           index, POGOProtos.Rpc.FitnessReportProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto daily_reports = 2;</code>
      */
     public java.util.List<POGOProtos.Rpc.FitnessReportProto.Builder> 
          getDailyReportsBuilderList() {
@@ -1000,7 +1094,7 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.FitnessReportProto, POGOProtos.Rpc.FitnessReportProto.Builder, POGOProtos.Rpc.FitnessReportProtoOrBuilder> weeklyReportsBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public java.util.List<POGOProtos.Rpc.FitnessReportProto> getWeeklyReportsList() {
       if (weeklyReportsBuilder_ == null) {
@@ -1010,7 +1104,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public int getWeeklyReportsCount() {
       if (weeklyReportsBuilder_ == null) {
@@ -1020,7 +1114,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public POGOProtos.Rpc.FitnessReportProto getWeeklyReports(int index) {
       if (weeklyReportsBuilder_ == null) {
@@ -1030,7 +1124,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public Builder setWeeklyReports(
         int index, POGOProtos.Rpc.FitnessReportProto value) {
@@ -1047,7 +1141,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public Builder setWeeklyReports(
         int index, POGOProtos.Rpc.FitnessReportProto.Builder builderForValue) {
@@ -1061,7 +1155,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public Builder addWeeklyReports(POGOProtos.Rpc.FitnessReportProto value) {
       if (weeklyReportsBuilder_ == null) {
@@ -1077,7 +1171,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public Builder addWeeklyReports(
         int index, POGOProtos.Rpc.FitnessReportProto value) {
@@ -1094,7 +1188,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public Builder addWeeklyReports(
         POGOProtos.Rpc.FitnessReportProto.Builder builderForValue) {
@@ -1108,7 +1202,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public Builder addWeeklyReports(
         int index, POGOProtos.Rpc.FitnessReportProto.Builder builderForValue) {
@@ -1122,7 +1216,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public Builder addAllWeeklyReports(
         java.lang.Iterable<? extends POGOProtos.Rpc.FitnessReportProto> values) {
@@ -1137,7 +1231,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public Builder clearWeeklyReports() {
       if (weeklyReportsBuilder_ == null) {
@@ -1150,7 +1244,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public Builder removeWeeklyReports(int index) {
       if (weeklyReportsBuilder_ == null) {
@@ -1163,14 +1257,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public POGOProtos.Rpc.FitnessReportProto.Builder getWeeklyReportsBuilder(
         int index) {
       return getWeeklyReportsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public POGOProtos.Rpc.FitnessReportProtoOrBuilder getWeeklyReportsOrBuilder(
         int index) {
@@ -1180,7 +1274,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.FitnessReportProtoOrBuilder> 
          getWeeklyReportsOrBuilderList() {
@@ -1191,14 +1285,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public POGOProtos.Rpc.FitnessReportProto.Builder addWeeklyReportsBuilder() {
       return getWeeklyReportsFieldBuilder().addBuilder(
           POGOProtos.Rpc.FitnessReportProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public POGOProtos.Rpc.FitnessReportProto.Builder addWeeklyReportsBuilder(
         int index) {
@@ -1206,7 +1300,7 @@ private static final long serialVersionUID = 0L;
           index, POGOProtos.Rpc.FitnessReportProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.FitnessReportProto weekly_reports = 3;</code>
      */
     public java.util.List<POGOProtos.Rpc.FitnessReportProto.Builder> 
          getWeeklyReportsBuilderList() {
@@ -1229,14 +1323,14 @@ private static final long serialVersionUID = 0L;
 
     private long weekResetTimestampSinceMondayMs_ ;
     /**
-     * <code>int64 week_reset_timestamp_since_monday_ms = 3;</code>
+     * <code>int64 week_reset_timestamp_since_monday_ms = 4;</code>
      * @return The weekResetTimestampSinceMondayMs.
      */
     public long getWeekResetTimestampSinceMondayMs() {
       return weekResetTimestampSinceMondayMs_;
     }
     /**
-     * <code>int64 week_reset_timestamp_since_monday_ms = 3;</code>
+     * <code>int64 week_reset_timestamp_since_monday_ms = 4;</code>
      * @param value The weekResetTimestampSinceMondayMs to set.
      * @return This builder for chaining.
      */
@@ -1247,7 +1341,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>int64 week_reset_timestamp_since_monday_ms = 3;</code>
+     * <code>int64 week_reset_timestamp_since_monday_ms = 4;</code>
      * @return This builder for chaining.
      */
     public Builder clearWeekResetTimestampSinceMondayMs() {

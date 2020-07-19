@@ -126,7 +126,7 @@ public enum BattleHubSection
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(32);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(57);
   }
 
   private static final BattleHubSection[] VALUES = values();

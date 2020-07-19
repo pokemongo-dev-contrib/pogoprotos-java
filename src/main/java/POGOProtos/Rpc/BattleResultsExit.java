@@ -90,7 +90,7 @@ public enum BattleResultsExit
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(5);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(14);
   }
 
   private static final BattleResultsExit[] VALUES = values();

@@ -81,7 +81,7 @@ public enum AvatarCompletion
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(3);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(7);
   }
 
   private static final AvatarCompletion[] VALUES = values();

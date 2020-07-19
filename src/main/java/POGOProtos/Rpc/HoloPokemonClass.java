@@ -90,7 +90,7 @@ public enum HoloPokemonClass
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(60);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(85);
   }
 
   private static final HoloPokemonClass[] VALUES = values();

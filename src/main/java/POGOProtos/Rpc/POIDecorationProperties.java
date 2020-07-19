@@ -162,7 +162,7 @@ public enum POIDecorationProperties
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(15);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(35);
   }
 
   private static final POIDecorationProperties[] VALUES = values();

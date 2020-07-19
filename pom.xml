@@ -52,12 +52,13 @@
             </extension>
         </extensions>
         <plugins>
+            <!--
             <plugin>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
                 <groupId>org.codehaus.mojo</groupId>
                <executions>
-                   <!--<execution>
+                   <execution>
                        <id>Build Base</id>
                        <phase>initialize</phase>
                        <goals>
@@ -68,9 +69,10 @@
                            <basedir>POGOProtos</basedir>
                            <commandlineArgs>compile.py java -o ../src/main/java -java_multiple_files</commandlineArgs>
                        </configuration>
-                   </execution>-->
+                   </execution>
                 </executions>
             </plugin>
+            -->
             <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.1.0</version>

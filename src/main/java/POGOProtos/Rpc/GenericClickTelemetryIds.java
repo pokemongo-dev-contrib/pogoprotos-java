@@ -90,7 +90,7 @@ public enum GenericClickTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(51);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(76);
   }
 
   private static final GenericClickTelemetryIds[] VALUES = values();

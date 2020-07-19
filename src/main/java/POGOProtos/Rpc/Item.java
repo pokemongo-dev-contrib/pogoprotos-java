@@ -639,7 +639,7 @@ public enum Item
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(71);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(96);
   }
 
   private static final Item[] VALUES = values();

@@ -8,42 +8,53 @@ public interface RedeemPasscodeResponseProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+   * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.RedeemPasscodeResponseProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.RedeemPasscodeResponseProto.Result getResult();
+
+  /**
+   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
   java.util.List<POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem> 
       getAcquiredItemList();
   /**
-   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
   POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem getAcquiredItem(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
   int getAcquiredItemCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItemOrBuilder> 
       getAcquiredItemOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItem acquired_item = 2;</code>
    */
   POGOProtos.Rpc.RedeemPasscodeResponseProto.AcquiredItemOrBuilder getAcquiredItemOrBuilder(
       int index);
 
   /**
-   * <code>bytes acquired_items_proto = 2;</code>
+   * <code>bytes acquired_items_proto = 3;</code>
    * @return The acquiredItemsProto.
    */
   com.google.protobuf.ByteString getAcquiredItemsProto();
 
   /**
-   * <code>string passcode = 3;</code>
+   * <code>string passcode = 4;</code>
    * @return The passcode.
    */
   java.lang.String getPasscode();
   /**
-   * <code>string passcode = 3;</code>
+   * <code>string passcode = 4;</code>
    * @return The bytes for passcode.
    */
   com.google.protobuf.ByteString

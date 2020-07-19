@@ -99,7 +99,7 @@ public enum POIDecorationFollowFlags
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(14);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(34);
   }
 
   private static final POIDecorationFollowFlags[] VALUES = values();

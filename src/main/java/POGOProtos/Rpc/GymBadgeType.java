@@ -108,7 +108,7 @@ public enum GymBadgeType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(52);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(77);
   }
 
   private static final GymBadgeType[] VALUES = values();

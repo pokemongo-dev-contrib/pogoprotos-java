@@ -6,4 +6,15 @@ package POGOProtos.Rpc;
 public interface PlatformInviteFacebookFriendOutProtoOrBuilder extends
     // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.PlatformInviteFacebookFriendOutProto)
     com.google.protobuf.MessageOrBuilder {
+
+  /**
+   * <code>.POGOProtos.Rpc.PlatformInviteFacebookFriendOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformInviteFacebookFriendOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformInviteFacebookFriendOutProto.Result getResult();
 }

@@ -8,17 +8,28 @@ public interface GetAdventureSyncSettingsResponseProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+   * <code>.POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  int getStatusValue();
+  /**
+   * <code>.POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status status = 1;</code>
+   * @return The status.
+   */
+  POGOProtos.Rpc.GetAdventureSyncSettingsResponseProto.Status getStatus();
+
+  /**
+   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
    * @return Whether the adventureSyncSettings field is set.
    */
   boolean hasAdventureSyncSettings();
   /**
-   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
    * @return The adventureSyncSettings.
    */
   POGOProtos.Rpc.AdventureSyncSettingsProto getAdventureSyncSettings();
   /**
-   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 1;</code>
+   * <code>.POGOProtos.Rpc.AdventureSyncSettingsProto adventure_sync_settings = 2;</code>
    */
   POGOProtos.Rpc.AdventureSyncSettingsProtoOrBuilder getAdventureSyncSettingsOrBuilder();
 }

@@ -81,7 +81,7 @@ public enum HoloPokemonEggType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(61);
+    return POGOProtos.Rpc.Rpc.getDescriptor().getEnumTypes().get(86);
   }
 
   private static final HoloPokemonEggType[] VALUES = values();

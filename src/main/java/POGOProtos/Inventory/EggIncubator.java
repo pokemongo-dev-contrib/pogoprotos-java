@@ -74,9 +74,9 @@ private static final long serialVersionUID = 0L;
             usesRemaining_ = input.readInt32();
             break;
           }
-          case 41: {
+          case 40: {
 
-            pokemonId_ = input.readFixed64();
+            pokemonId_ = input.readInt64();
             break;
           }
           case 49: {
@@ -208,7 +208,7 @@ private static final long serialVersionUID = 0L;
   public static final int POKEMON_ID_FIELD_NUMBER = 5;
   private long pokemonId_;
   /**
-   * <code>fixed64 pokemon_id = 5;</code>
+   * <code>int64 pokemon_id = 5;</code>
    * @return The pokemonId.
    */
   public long getPokemonId() {
@@ -262,7 +262,7 @@ private static final long serialVersionUID = 0L;
       output.writeInt32(4, usesRemaining_);
     }
     if (pokemonId_ != 0L) {
-      output.writeFixed64(5, pokemonId_);
+      output.writeInt64(5, pokemonId_);
     }
     if (startKmWalked_ != 0D) {
       output.writeDouble(6, startKmWalked_);
@@ -296,7 +296,7 @@ private static final long serialVersionUID = 0L;
     }
     if (pokemonId_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFixed64Size(5, pokemonId_);
+        .computeInt64Size(5, pokemonId_);
     }
     if (startKmWalked_ != 0D) {
       size += com.google.protobuf.CodedOutputStream
@@ -854,14 +854,14 @@ private static final long serialVersionUID = 0L;
 
     private long pokemonId_ ;
     /**
-     * <code>fixed64 pokemon_id = 5;</code>
+     * <code>int64 pokemon_id = 5;</code>
      * @return The pokemonId.
      */
     public long getPokemonId() {
       return pokemonId_;
     }
     /**
-     * <code>fixed64 pokemon_id = 5;</code>
+     * <code>int64 pokemon_id = 5;</code>
      * @param value The pokemonId to set.
      * @return This builder for chaining.
      */
@@ -872,7 +872,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>fixed64 pokemon_id = 5;</code>
+     * <code>int64 pokemon_id = 5;</code>
      * @return This builder for chaining.
      */
     public Builder clearPokemonId() {

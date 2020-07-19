@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformProxyResponseProto() {
+    status_ = 0;
     assignedHost_ = "";
     payload_ = com.google.protobuf.ByteString.EMPTY;
   }
@@ -50,13 +51,19 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 10: {
+          case 8: {
+            int rawValue = input.readEnum();
+
+            status_ = rawValue;
+            break;
+          }
+          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             assignedHost_ = s;
             break;
           }
-          case 18: {
+          case 26: {
 
             payload_ = input.readBytes();
             break;
@@ -278,10 +285,29 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformProxyResponseProto.Status)
   }
 
-  public static final int ASSIGNED_HOST_FIELD_NUMBER = 1;
+  public static final int STATUS_FIELD_NUMBER = 1;
+  private int status_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformProxyResponseProto.Status status = 1;</code>
+   * @return The enum numeric value on the wire for status.
+   */
+  public int getStatusValue() {
+    return status_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformProxyResponseProto.Status status = 1;</code>
+   * @return The status.
+   */
+  public POGOProtos.Rpc.PlatformProxyResponseProto.Status getStatus() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformProxyResponseProto.Status result = POGOProtos.Rpc.PlatformProxyResponseProto.Status.valueOf(status_);
+    return result == null ? POGOProtos.Rpc.PlatformProxyResponseProto.Status.UNRECOGNIZED : result;
+  }
+
+  public static final int ASSIGNED_HOST_FIELD_NUMBER = 2;
   private volatile java.lang.Object assignedHost_;
   /**
-   * <code>string assigned_host = 1;</code>
+   * <code>string assigned_host = 2;</code>
    * @return The assignedHost.
    */
   public java.lang.String getAssignedHost() {
@@ -297,7 +323,7 @@ private static final long serialVersionUID = 0L;
     }
   }
   /**
-   * <code>string assigned_host = 1;</code>
+   * <code>string assigned_host = 2;</code>
    * @return The bytes for assignedHost.
    */
   public com.google.protobuf.ByteString
@@ -314,10 +340,10 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int PAYLOAD_FIELD_NUMBER = 2;
+  public static final int PAYLOAD_FIELD_NUMBER = 3;
   private com.google.protobuf.ByteString payload_;
   /**
-   * <code>bytes payload = 2;</code>
+   * <code>bytes payload = 3;</code>
    * @return The payload.
    */
   public com.google.protobuf.ByteString getPayload() {
@@ -338,11 +364,14 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (status_ != POGOProtos.Rpc.PlatformProxyResponseProto.Status.UNSET.getNumber()) {
+      output.writeEnum(1, status_);
+    }
     if (!getAssignedHostBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, assignedHost_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, assignedHost_);
     }
     if (!payload_.isEmpty()) {
-      output.writeBytes(2, payload_);
+      output.writeBytes(3, payload_);
     }
     unknownFields.writeTo(output);
   }
@@ -353,12 +382,16 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (status_ != POGOProtos.Rpc.PlatformProxyResponseProto.Status.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, status_);
+    }
     if (!getAssignedHostBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, assignedHost_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, assignedHost_);
     }
     if (!payload_.isEmpty()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(2, payload_);
+        .computeBytesSize(3, payload_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -375,6 +408,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformProxyResponseProto other = (POGOProtos.Rpc.PlatformProxyResponseProto) obj;
 
+    if (status_ != other.status_) return false;
     if (!getAssignedHost()
         .equals(other.getAssignedHost())) return false;
     if (!getPayload()
@@ -390,6 +424,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + STATUS_FIELD_NUMBER;
+    hash = (53 * hash) + status_;
     hash = (37 * hash) + ASSIGNED_HOST_FIELD_NUMBER;
     hash = (53 * hash) + getAssignedHost().hashCode();
     hash = (37 * hash) + PAYLOAD_FIELD_NUMBER;
@@ -527,6 +563,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      status_ = 0;
+
       assignedHost_ = "";
 
       payload_ = com.google.protobuf.ByteString.EMPTY;
@@ -557,6 +595,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PlatformProxyResponseProto buildPartial() {
       POGOProtos.Rpc.PlatformProxyResponseProto result = new POGOProtos.Rpc.PlatformProxyResponseProto(this);
+      result.status_ = status_;
       result.assignedHost_ = assignedHost_;
       result.payload_ = payload_;
       onBuilt();
@@ -607,6 +646,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformProxyResponseProto other) {
       if (other == POGOProtos.Rpc.PlatformProxyResponseProto.getDefaultInstance()) return this;
+      if (other.status_ != 0) {
+        setStatusValue(other.getStatusValue());
+      }
       if (!other.getAssignedHost().isEmpty()) {
         assignedHost_ = other.assignedHost_;
         onChanged();
@@ -643,9 +685,61 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
+    private int status_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformProxyResponseProto.Status status = 1;</code>
+     * @return The enum numeric value on the wire for status.
+     */
+    public int getStatusValue() {
+      return status_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformProxyResponseProto.Status status = 1;</code>
+     * @param value The enum numeric value on the wire for status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatusValue(int value) {
+      status_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformProxyResponseProto.Status status = 1;</code>
+     * @return The status.
+     */
+    public POGOProtos.Rpc.PlatformProxyResponseProto.Status getStatus() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformProxyResponseProto.Status result = POGOProtos.Rpc.PlatformProxyResponseProto.Status.valueOf(status_);
+      return result == null ? POGOProtos.Rpc.PlatformProxyResponseProto.Status.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformProxyResponseProto.Status status = 1;</code>
+     * @param value The status to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStatus(POGOProtos.Rpc.PlatformProxyResponseProto.Status value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      status_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformProxyResponseProto.Status status = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStatus() {
+      
+      status_ = 0;
+      onChanged();
+      return this;
+    }
+
     private java.lang.Object assignedHost_ = "";
     /**
-     * <code>string assigned_host = 1;</code>
+     * <code>string assigned_host = 2;</code>
      * @return The assignedHost.
      */
     public java.lang.String getAssignedHost() {
@@ -661,7 +755,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string assigned_host = 1;</code>
+     * <code>string assigned_host = 2;</code>
      * @return The bytes for assignedHost.
      */
     public com.google.protobuf.ByteString
@@ -678,7 +772,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>string assigned_host = 1;</code>
+     * <code>string assigned_host = 2;</code>
      * @param value The assignedHost to set.
      * @return This builder for chaining.
      */
@@ -693,7 +787,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string assigned_host = 1;</code>
+     * <code>string assigned_host = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearAssignedHost() {
@@ -703,7 +797,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>string assigned_host = 1;</code>
+     * <code>string assigned_host = 2;</code>
      * @param value The bytes for assignedHost to set.
      * @return This builder for chaining.
      */
@@ -721,14 +815,14 @@ private static final long serialVersionUID = 0L;
 
     private com.google.protobuf.ByteString payload_ = com.google.protobuf.ByteString.EMPTY;
     /**
-     * <code>bytes payload = 2;</code>
+     * <code>bytes payload = 3;</code>
      * @return The payload.
      */
     public com.google.protobuf.ByteString getPayload() {
       return payload_;
     }
     /**
-     * <code>bytes payload = 2;</code>
+     * <code>bytes payload = 3;</code>
      * @param value The payload to set.
      * @return This builder for chaining.
      */
@@ -742,7 +836,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>bytes payload = 2;</code>
+     * <code>bytes payload = 3;</code>
      * @return This builder for chaining.
      */
     public Builder clearPayload() {

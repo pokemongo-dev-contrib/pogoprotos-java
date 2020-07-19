@@ -6,4 +6,15 @@ package POGOProtos.Rpc;
 public interface PlatformPushNotificationRegistryOutProtoOrBuilder extends
     // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.PlatformPushNotificationRegistryOutProto)
     com.google.protobuf.MessageOrBuilder {
+
+  /**
+   * <code>.POGOProtos.Rpc.PlatformPushNotificationRegistryOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  int getResultValue();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformPushNotificationRegistryOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  POGOProtos.Rpc.PlatformPushNotificationRegistryOutProto.Result getResult();
 }

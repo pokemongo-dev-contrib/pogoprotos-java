@@ -16,6 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private PlatformSearchPlayerOutProto() {
+    result_ = 0;
   }
 
   @java.lang.Override
@@ -48,6 +49,12 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
+          case 8: {
+            int rawValue = input.readEnum();
+
+            result_ = rawValue;
+            break;
+          }
           case 18: {
             POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder subBuilder = null;
             if (player_ != null) {
@@ -215,6 +222,25 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result)
   }
 
+  public static final int RESULT_FIELD_NUMBER = 1;
+  private int result_;
+  /**
+   * <code>.POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = 1;</code>
+   * @return The enum numeric value on the wire for result.
+   */
+  public int getResultValue() {
+    return result_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = 1;</code>
+   * @return The result.
+   */
+  public POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result getResult() {
+    @SuppressWarnings("deprecation")
+    POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result.valueOf(result_);
+    return result == null ? POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result.UNRECOGNIZED : result;
+  }
+
   public static final int PLAYER_FIELD_NUMBER = 2;
   private POGOProtos.Rpc.PlatformPlayerSummaryProto player_;
   /**
@@ -252,6 +278,9 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (result_ != POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result.UNSET.getNumber()) {
+      output.writeEnum(1, result_);
+    }
     if (player_ != null) {
       output.writeMessage(2, getPlayer());
     }
@@ -264,6 +293,10 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
+    if (result_ != POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result.UNSET.getNumber()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(1, result_);
+    }
     if (player_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getPlayer());
@@ -283,6 +316,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.PlatformSearchPlayerOutProto other = (POGOProtos.Rpc.PlatformSearchPlayerOutProto) obj;
 
+    if (result_ != other.result_) return false;
     if (hasPlayer() != other.hasPlayer()) return false;
     if (hasPlayer()) {
       if (!getPlayer()
@@ -299,6 +333,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + result_;
     if (hasPlayer()) {
       hash = (37 * hash) + PLAYER_FIELD_NUMBER;
       hash = (53 * hash) + getPlayer().hashCode();
@@ -436,6 +472,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
+      result_ = 0;
+
       if (playerBuilder_ == null) {
         player_ = null;
       } else {
@@ -468,6 +506,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.PlatformSearchPlayerOutProto buildPartial() {
       POGOProtos.Rpc.PlatformSearchPlayerOutProto result = new POGOProtos.Rpc.PlatformSearchPlayerOutProto(this);
+      result.result_ = result_;
       if (playerBuilder_ == null) {
         result.player_ = player_;
       } else {
@@ -521,6 +560,9 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.PlatformSearchPlayerOutProto other) {
       if (other == POGOProtos.Rpc.PlatformSearchPlayerOutProto.getDefaultInstance()) return this;
+      if (other.result_ != 0) {
+        setResultValue(other.getResultValue());
+      }
       if (other.hasPlayer()) {
         mergePlayer(other.getPlayer());
       }
@@ -550,6 +592,58 @@ private static final long serialVersionUID = 0L;
           mergeFrom(parsedMessage);
         }
       }
+      return this;
+    }
+
+    private int result_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = 1;</code>
+     * @return The enum numeric value on the wire for result.
+     */
+    public int getResultValue() {
+      return result_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = 1;</code>
+     * @param value The enum numeric value on the wire for result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResultValue(int value) {
+      result_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = 1;</code>
+     * @return The result.
+     */
+    public POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result getResult() {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result.valueOf(result_);
+      return result == null ? POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result.UNRECOGNIZED : result;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = 1;</code>
+     * @param value The result to set.
+     * @return This builder for chaining.
+     */
+    public Builder setResult(POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      
+      result_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.PlatformSearchPlayerOutProto.Result result = 1;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearResult() {
+      
+      result_ = 0;
+      onChanged();
       return this;
     }
 
