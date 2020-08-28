@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.pokebattler</groupId>
     <artifactId>POGOProtos</artifactId>
-    <version>2.52.4</version>
+    <version>2.52.5</version>
     <packaging>jar</packaging>
     <name>POGOProtos Java</name>
     <description>Java bindings for Pokemon Go Protocol Buffers</description>
@@ -52,7 +52,7 @@
             </extension>
         </extensions>
         <plugins>
-            <!--
+            <!-- For subModule
             <plugin>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.6.0</version>
@@ -67,7 +67,7 @@
                        <<configuration>
                            <executable>python</executable>
                            <basedir>POGOProtos</basedir>
-                           <commandlineArgs>compile.py java -o ../src/main/java -java_multiple_files</commandlineArgs>
+                           <commandlineArgs>compile_src.py java -o ../src/main/java -java_multiple_files</commandlineArgs>
                        </configuration>
                    </execution>
                 </executions>

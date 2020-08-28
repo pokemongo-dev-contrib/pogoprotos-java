@@ -125,7 +125,7 @@ public enum SponsorPoiInvalidReason
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(139);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(140);
   }
 
   private static final SponsorPoiInvalidReason[] VALUES = values();

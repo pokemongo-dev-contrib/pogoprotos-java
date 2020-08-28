@@ -63,11 +63,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.PBMGHIOCLGG.Builder subBuilder = null;
+            POGOProtos.Rpc.GELJPJIBFOA.Builder subBuilder = null;
             if (data_ != null) {
               subBuilder = data_.toBuilder();
             }
-            data_ = input.readMessage(POGOProtos.Rpc.PBMGHIOCLGG.parser(), extensionRegistry);
+            data_ = input.readMessage(POGOProtos.Rpc.GELJPJIBFOA.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(data_);
               data_ = subBuilder.buildPartial();
@@ -146,9 +146,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int DATA_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.PBMGHIOCLGG data_;
+  private POGOProtos.Rpc.GELJPJIBFOA data_;
   /**
-   * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+   * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
    * @return Whether the data field is set.
    */
   @java.lang.Override
@@ -156,18 +156,18 @@ private static final long serialVersionUID = 0L;
     return data_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+   * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
    * @return The data.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PBMGHIOCLGG getData() {
-    return data_ == null ? POGOProtos.Rpc.PBMGHIOCLGG.getDefaultInstance() : data_;
+  public POGOProtos.Rpc.GELJPJIBFOA getData() {
+    return data_ == null ? POGOProtos.Rpc.GELJPJIBFOA.getDefaultInstance() : data_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+   * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PBMGHIOCLGGOrBuilder getDataOrBuilder() {
+  public POGOProtos.Rpc.GELJPJIBFOAOrBuilder getDataOrBuilder() {
     return getData();
   }
 
@@ -586,31 +586,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.PBMGHIOCLGG data_;
+    private POGOProtos.Rpc.GELJPJIBFOA data_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PBMGHIOCLGG, POGOProtos.Rpc.PBMGHIOCLGG.Builder, POGOProtos.Rpc.PBMGHIOCLGGOrBuilder> dataBuilder_;
+        POGOProtos.Rpc.GELJPJIBFOA, POGOProtos.Rpc.GELJPJIBFOA.Builder, POGOProtos.Rpc.GELJPJIBFOAOrBuilder> dataBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+     * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
      * @return Whether the data field is set.
      */
     public boolean hasData() {
       return dataBuilder_ != null || data_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+     * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
      * @return The data.
      */
-    public POGOProtos.Rpc.PBMGHIOCLGG getData() {
+    public POGOProtos.Rpc.GELJPJIBFOA getData() {
       if (dataBuilder_ == null) {
-        return data_ == null ? POGOProtos.Rpc.PBMGHIOCLGG.getDefaultInstance() : data_;
+        return data_ == null ? POGOProtos.Rpc.GELJPJIBFOA.getDefaultInstance() : data_;
       } else {
         return dataBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+     * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
      */
-    public Builder setData(POGOProtos.Rpc.PBMGHIOCLGG value) {
+    public Builder setData(POGOProtos.Rpc.GELJPJIBFOA value) {
       if (dataBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -624,10 +624,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+     * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
      */
     public Builder setData(
-        POGOProtos.Rpc.PBMGHIOCLGG.Builder builderForValue) {
+        POGOProtos.Rpc.GELJPJIBFOA.Builder builderForValue) {
       if (dataBuilder_ == null) {
         data_ = builderForValue.build();
         onChanged();
@@ -638,13 +638,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+     * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
      */
-    public Builder mergeData(POGOProtos.Rpc.PBMGHIOCLGG value) {
+    public Builder mergeData(POGOProtos.Rpc.GELJPJIBFOA value) {
       if (dataBuilder_ == null) {
         if (data_ != null) {
           data_ =
-            POGOProtos.Rpc.PBMGHIOCLGG.newBuilder(data_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.GELJPJIBFOA.newBuilder(data_).mergeFrom(value).buildPartial();
         } else {
           data_ = value;
         }
@@ -656,7 +656,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+     * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
      */
     public Builder clearData() {
       if (dataBuilder_ == null) {
@@ -670,33 +670,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+     * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
      */
-    public POGOProtos.Rpc.PBMGHIOCLGG.Builder getDataBuilder() {
+    public POGOProtos.Rpc.GELJPJIBFOA.Builder getDataBuilder() {
       
       onChanged();
       return getDataFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+     * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
      */
-    public POGOProtos.Rpc.PBMGHIOCLGGOrBuilder getDataOrBuilder() {
+    public POGOProtos.Rpc.GELJPJIBFOAOrBuilder getDataOrBuilder() {
       if (dataBuilder_ != null) {
         return dataBuilder_.getMessageOrBuilder();
       } else {
         return data_ == null ?
-            POGOProtos.Rpc.PBMGHIOCLGG.getDefaultInstance() : data_;
+            POGOProtos.Rpc.GELJPJIBFOA.getDefaultInstance() : data_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PBMGHIOCLGG data = 2;</code>
+     * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PBMGHIOCLGG, POGOProtos.Rpc.PBMGHIOCLGG.Builder, POGOProtos.Rpc.PBMGHIOCLGGOrBuilder> 
+        POGOProtos.Rpc.GELJPJIBFOA, POGOProtos.Rpc.GELJPJIBFOA.Builder, POGOProtos.Rpc.GELJPJIBFOAOrBuilder> 
         getDataFieldBuilder() {
       if (dataBuilder_ == null) {
         dataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PBMGHIOCLGG, POGOProtos.Rpc.PBMGHIOCLGG.Builder, POGOProtos.Rpc.PBMGHIOCLGGOrBuilder>(
+            POGOProtos.Rpc.GELJPJIBFOA, POGOProtos.Rpc.GELJPJIBFOA.Builder, POGOProtos.Rpc.GELJPJIBFOAOrBuilder>(
                 getData(),
                 getParentForChildren(),
                 isClean());

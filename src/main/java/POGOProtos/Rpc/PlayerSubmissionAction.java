@@ -227,7 +227,7 @@ public enum PlayerSubmissionAction
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(140);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(141);
   }
 
   private static final PlayerSubmissionAction[] VALUES = values();

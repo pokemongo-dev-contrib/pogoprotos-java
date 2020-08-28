@@ -14,19 +14,19 @@ public interface InventoryItemProtoOrBuilder extends
   com.google.protobuf.ByteString getDeletedItemKey();
 
   /**
-   * <code>.POGOProtos.Rpc.MKBNBGHGGBA item = 3;</code>
+   * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
    * @return Whether the item field is set.
    */
   boolean hasItem();
   /**
-   * <code>.POGOProtos.Rpc.MKBNBGHGGBA item = 3;</code>
+   * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
    * @return The item.
    */
-  POGOProtos.Rpc.MKBNBGHGGBA getItem();
+  POGOProtos.Rpc.GIHDKPLAGIO getItem();
   /**
-   * <code>.POGOProtos.Rpc.MKBNBGHGGBA item = 3;</code>
+   * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
    */
-  POGOProtos.Rpc.MKBNBGHGGBAOrBuilder getItemOrBuilder();
+  POGOProtos.Rpc.GIHDKPLAGIOOrBuilder getItemOrBuilder();
 
   /**
    * <code>int64 modified_timestamp = 1;</code>
