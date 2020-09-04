@@ -467,7 +467,7 @@ public enum TweenAction
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(134);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(135);
   }
 
   private static final TweenAction[] VALUES = values();

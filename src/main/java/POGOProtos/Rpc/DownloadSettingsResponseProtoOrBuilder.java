@@ -32,17 +32,17 @@ public interface DownloadSettingsResponseProtoOrBuilder extends
       getSha1Bytes();
 
   /**
-   * <code>.POGOProtos.Rpc.NGPDKHMMKGF values = 3;</code>
+   * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
    * @return Whether the values field is set.
    */
   boolean hasValues();
   /**
-   * <code>.POGOProtos.Rpc.NGPDKHMMKGF values = 3;</code>
+   * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
    * @return The values.
    */
-  POGOProtos.Rpc.NGPDKHMMKGF getValues();
+  POGOProtos.Rpc.EIIOIPNIHIB getValues();
   /**
-   * <code>.POGOProtos.Rpc.NGPDKHMMKGF values = 3;</code>
+   * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
    */
-  POGOProtos.Rpc.NGPDKHMMKGFOrBuilder getValuesOrBuilder();
+  POGOProtos.Rpc.EIIOIPNIHIBOrBuilder getValuesOrBuilder();
 }

@@ -12,7 +12,7 @@ public class AssetsDigestDecodeTest {
 	public void TestAssetsDigestDecode() throws Exception {
 		try (InputStream is = getClass().getResourceAsStream("/ASSET_DIGEST"))
         {
-			KFNOJNMNCKN response = KFNOJNMNCKN.parseFrom(is);
+			BOKKJPBAPLK response = BOKKJPBAPLK.parseFrom(is);
 			JsonFormat.Printer printer = JsonFormat.printer();
 			try (OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream("target/test-classes/ASSET_DIGEST.json")))
             {

@@ -20,17 +20,17 @@ public interface ClientGameMasterTemplateProtoOrBuilder extends
       getTemplateIdBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
+   * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
    * @return Whether the data field is set.
    */
   boolean hasData();
   /**
-   * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
+   * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
    * @return The data.
    */
-  POGOProtos.Rpc.GELJPJIBFOA getData();
+  POGOProtos.Rpc.FMCHABOILMM getData();
   /**
-   * <code>.POGOProtos.Rpc.GELJPJIBFOA data = 2;</code>
+   * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
    */
-  POGOProtos.Rpc.GELJPJIBFOAOrBuilder getDataOrBuilder();
+  POGOProtos.Rpc.FMCHABOILMMOrBuilder getDataOrBuilder();
 }

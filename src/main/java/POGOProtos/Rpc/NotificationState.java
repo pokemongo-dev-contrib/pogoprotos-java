@@ -89,7 +89,7 @@ public enum NotificationState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(136);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(137);
   }
 
   private static final NotificationState[] VALUES = values();

@@ -119,7 +119,7 @@ public enum InvitationType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(135);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(136);
   }
 
   private static final InvitationType[] VALUES = values();

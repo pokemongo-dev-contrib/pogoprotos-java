@@ -63,14 +63,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 26: {
-            POGOProtos.Rpc.GIHDKPLAGIO.Builder subBuilder = null;
+            POGOProtos.Rpc.DNNGDJLGPPP.Builder subBuilder = null;
             if (inventoryItemCase_ == 3) {
-              subBuilder = ((POGOProtos.Rpc.GIHDKPLAGIO) inventoryItem_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_).toBuilder();
             }
             inventoryItem_ =
-                input.readMessage(POGOProtos.Rpc.GIHDKPLAGIO.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.DNNGDJLGPPP.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.GIHDKPLAGIO) inventoryItem_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_);
               inventoryItem_ = subBuilder.buildPartial();
             }
             inventoryItemCase_ = 3;
@@ -164,7 +164,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int ITEM_FIELD_NUMBER = 3;
   /**
-   * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+   * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
    * @return Whether the item field is set.
    */
   @java.lang.Override
@@ -172,25 +172,25 @@ private static final long serialVersionUID = 0L;
     return inventoryItemCase_ == 3;
   }
   /**
-   * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+   * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
    * @return The item.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GIHDKPLAGIO getItem() {
+  public POGOProtos.Rpc.DNNGDJLGPPP getItem() {
     if (inventoryItemCase_ == 3) {
-       return (POGOProtos.Rpc.GIHDKPLAGIO) inventoryItem_;
+       return (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_;
     }
-    return POGOProtos.Rpc.GIHDKPLAGIO.getDefaultInstance();
+    return POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+   * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GIHDKPLAGIOOrBuilder getItemOrBuilder() {
+  public POGOProtos.Rpc.DNNGDJLGPPPOrBuilder getItemOrBuilder() {
     if (inventoryItemCase_ == 3) {
-       return (POGOProtos.Rpc.GIHDKPLAGIO) inventoryItem_;
+       return (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_;
     }
-    return POGOProtos.Rpc.GIHDKPLAGIO.getDefaultInstance();
+    return POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
   }
 
   public static final int MODIFIED_TIMESTAMP_FIELD_NUMBER = 1;
@@ -226,7 +226,7 @@ private static final long serialVersionUID = 0L;
           2, (com.google.protobuf.ByteString) inventoryItem_);
     }
     if (inventoryItemCase_ == 3) {
-      output.writeMessage(3, (POGOProtos.Rpc.GIHDKPLAGIO) inventoryItem_);
+      output.writeMessage(3, (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_);
     }
     unknownFields.writeTo(output);
   }
@@ -248,7 +248,7 @@ private static final long serialVersionUID = 0L;
     }
     if (inventoryItemCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, (POGOProtos.Rpc.GIHDKPLAGIO) inventoryItem_);
+        .computeMessageSize(3, (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -631,9 +631,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GIHDKPLAGIO, POGOProtos.Rpc.GIHDKPLAGIO.Builder, POGOProtos.Rpc.GIHDKPLAGIOOrBuilder> itemBuilder_;
+        POGOProtos.Rpc.DNNGDJLGPPP, POGOProtos.Rpc.DNNGDJLGPPP.Builder, POGOProtos.Rpc.DNNGDJLGPPPOrBuilder> itemBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
      * @return Whether the item field is set.
      */
     @java.lang.Override
@@ -641,27 +641,27 @@ private static final long serialVersionUID = 0L;
       return inventoryItemCase_ == 3;
     }
     /**
-     * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
      * @return The item.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.GIHDKPLAGIO getItem() {
+    public POGOProtos.Rpc.DNNGDJLGPPP getItem() {
       if (itemBuilder_ == null) {
         if (inventoryItemCase_ == 3) {
-          return (POGOProtos.Rpc.GIHDKPLAGIO) inventoryItem_;
+          return (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_;
         }
-        return POGOProtos.Rpc.GIHDKPLAGIO.getDefaultInstance();
+        return POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
       } else {
         if (inventoryItemCase_ == 3) {
           return itemBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.GIHDKPLAGIO.getDefaultInstance();
+        return POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
      */
-    public Builder setItem(POGOProtos.Rpc.GIHDKPLAGIO value) {
+    public Builder setItem(POGOProtos.Rpc.DNNGDJLGPPP value) {
       if (itemBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -675,10 +675,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
      */
     public Builder setItem(
-        POGOProtos.Rpc.GIHDKPLAGIO.Builder builderForValue) {
+        POGOProtos.Rpc.DNNGDJLGPPP.Builder builderForValue) {
       if (itemBuilder_ == null) {
         inventoryItem_ = builderForValue.build();
         onChanged();
@@ -689,13 +689,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
      */
-    public Builder mergeItem(POGOProtos.Rpc.GIHDKPLAGIO value) {
+    public Builder mergeItem(POGOProtos.Rpc.DNNGDJLGPPP value) {
       if (itemBuilder_ == null) {
         if (inventoryItemCase_ == 3 &&
-            inventoryItem_ != POGOProtos.Rpc.GIHDKPLAGIO.getDefaultInstance()) {
-          inventoryItem_ = POGOProtos.Rpc.GIHDKPLAGIO.newBuilder((POGOProtos.Rpc.GIHDKPLAGIO) inventoryItem_)
+            inventoryItem_ != POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance()) {
+          inventoryItem_ = POGOProtos.Rpc.DNNGDJLGPPP.newBuilder((POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_)
               .mergeFrom(value).buildPartial();
         } else {
           inventoryItem_ = value;
@@ -711,7 +711,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
      */
     public Builder clearItem() {
       if (itemBuilder_ == null) {
@@ -730,38 +730,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
      */
-    public POGOProtos.Rpc.GIHDKPLAGIO.Builder getItemBuilder() {
+    public POGOProtos.Rpc.DNNGDJLGPPP.Builder getItemBuilder() {
       return getItemFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.GIHDKPLAGIOOrBuilder getItemOrBuilder() {
+    public POGOProtos.Rpc.DNNGDJLGPPPOrBuilder getItemOrBuilder() {
       if ((inventoryItemCase_ == 3) && (itemBuilder_ != null)) {
         return itemBuilder_.getMessageOrBuilder();
       } else {
         if (inventoryItemCase_ == 3) {
-          return (POGOProtos.Rpc.GIHDKPLAGIO) inventoryItem_;
+          return (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_;
         }
-        return POGOProtos.Rpc.GIHDKPLAGIO.getDefaultInstance();
+        return POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GIHDKPLAGIO item = 3;</code>
+     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GIHDKPLAGIO, POGOProtos.Rpc.GIHDKPLAGIO.Builder, POGOProtos.Rpc.GIHDKPLAGIOOrBuilder> 
+        POGOProtos.Rpc.DNNGDJLGPPP, POGOProtos.Rpc.DNNGDJLGPPP.Builder, POGOProtos.Rpc.DNNGDJLGPPPOrBuilder> 
         getItemFieldBuilder() {
       if (itemBuilder_ == null) {
         if (!(inventoryItemCase_ == 3)) {
-          inventoryItem_ = POGOProtos.Rpc.GIHDKPLAGIO.getDefaultInstance();
+          inventoryItem_ = POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
         }
         itemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.GIHDKPLAGIO, POGOProtos.Rpc.GIHDKPLAGIO.Builder, POGOProtos.Rpc.GIHDKPLAGIOOrBuilder>(
-                (POGOProtos.Rpc.GIHDKPLAGIO) inventoryItem_,
+            POGOProtos.Rpc.DNNGDJLGPPP, POGOProtos.Rpc.DNNGDJLGPPP.Builder, POGOProtos.Rpc.DNNGDJLGPPPOrBuilder>(
+                (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_,
                 getParentForChildren(),
                 isClean());
         inventoryItem_ = null;
