@@ -20,7 +20,6 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private MapTileDataProto() {
-    tileData_ = com.google.protobuf.ByteString.EMPTY;
   }
 
   @java.lang.Override
@@ -67,8 +66,16 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
+            POGOProtos.Rpc.MapCompositionRoot.Builder subBuilder = null;
+            if (tileData_ != null) {
+              subBuilder = tileData_.toBuilder();
+            }
+            tileData_ = input.readMessage(POGOProtos.Rpc.MapCompositionRoot.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(tileData_);
+              tileData_ = subBuilder.buildPartial();
+            }
 
-            tileData_ = input.readBytes();
             break;
           }
           default: {
@@ -130,14 +137,29 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TILE_DATA_FIELD_NUMBER = 2;
-  private com.google.protobuf.ByteString tileData_;
+  private POGOProtos.Rpc.MapCompositionRoot tileData_;
   /**
-   * <code>bytes tile_data = 2;</code>
+   * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
+   * @return Whether the tileData field is set.
+   */
+  @java.lang.Override
+  public boolean hasTileData() {
+    return tileData_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
    * @return The tileData.
    */
   @java.lang.Override
-  public com.google.protobuf.ByteString getTileData() {
-    return tileData_;
+  public POGOProtos.Rpc.MapCompositionRoot getTileData() {
+    return tileData_ == null ? POGOProtos.Rpc.MapCompositionRoot.getDefaultInstance() : tileData_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.MapCompositionRootOrBuilder getTileDataOrBuilder() {
+    return getTileData();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -157,8 +179,8 @@ private static final long serialVersionUID = 0L;
     if (mapTile_ != null) {
       output.writeMessage(1, getMapTile());
     }
-    if (!tileData_.isEmpty()) {
-      output.writeBytes(2, tileData_);
+    if (tileData_ != null) {
+      output.writeMessage(2, getTileData());
     }
     unknownFields.writeTo(output);
   }
@@ -173,9 +195,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, getMapTile());
     }
-    if (!tileData_.isEmpty()) {
+    if (tileData_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(2, tileData_);
+        .computeMessageSize(2, getTileData());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -197,8 +219,11 @@ private static final long serialVersionUID = 0L;
       if (!getMapTile()
           .equals(other.getMapTile())) return false;
     }
-    if (!getTileData()
-        .equals(other.getTileData())) return false;
+    if (hasTileData() != other.hasTileData()) return false;
+    if (hasTileData()) {
+      if (!getTileData()
+          .equals(other.getTileData())) return false;
+    }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -214,8 +239,10 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + MAP_TILE_FIELD_NUMBER;
       hash = (53 * hash) + getMapTile().hashCode();
     }
-    hash = (37 * hash) + TILE_DATA_FIELD_NUMBER;
-    hash = (53 * hash) + getTileData().hashCode();
+    if (hasTileData()) {
+      hash = (37 * hash) + TILE_DATA_FIELD_NUMBER;
+      hash = (53 * hash) + getTileData().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -359,8 +386,12 @@ private static final long serialVersionUID = 0L;
         mapTile_ = null;
         mapTileBuilder_ = null;
       }
-      tileData_ = com.google.protobuf.ByteString.EMPTY;
-
+      if (tileDataBuilder_ == null) {
+        tileData_ = null;
+      } else {
+        tileData_ = null;
+        tileDataBuilder_ = null;
+      }
       return this;
     }
 
@@ -392,7 +423,11 @@ private static final long serialVersionUID = 0L;
       } else {
         result.mapTile_ = mapTileBuilder_.build();
       }
-      result.tileData_ = tileData_;
+      if (tileDataBuilder_ == null) {
+        result.tileData_ = tileData_;
+      } else {
+        result.tileData_ = tileDataBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -444,8 +479,8 @@ private static final long serialVersionUID = 0L;
       if (other.hasMapTile()) {
         mergeMapTile(other.getMapTile());
       }
-      if (other.getTileData() != com.google.protobuf.ByteString.EMPTY) {
-        setTileData(other.getTileData());
+      if (other.hasTileData()) {
+        mergeTileData(other.getTileData());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -595,38 +630,123 @@ private static final long serialVersionUID = 0L;
       return mapTileBuilder_;
     }
 
-    private com.google.protobuf.ByteString tileData_ = com.google.protobuf.ByteString.EMPTY;
+    private POGOProtos.Rpc.MapCompositionRoot tileData_;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.MapCompositionRoot, POGOProtos.Rpc.MapCompositionRoot.Builder, POGOProtos.Rpc.MapCompositionRootOrBuilder> tileDataBuilder_;
     /**
-     * <code>bytes tile_data = 2;</code>
+     * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
+     * @return Whether the tileData field is set.
+     */
+    public boolean hasTileData() {
+      return tileDataBuilder_ != null || tileData_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
      * @return The tileData.
      */
-    @java.lang.Override
-    public com.google.protobuf.ByteString getTileData() {
-      return tileData_;
+    public POGOProtos.Rpc.MapCompositionRoot getTileData() {
+      if (tileDataBuilder_ == null) {
+        return tileData_ == null ? POGOProtos.Rpc.MapCompositionRoot.getDefaultInstance() : tileData_;
+      } else {
+        return tileDataBuilder_.getMessage();
+      }
     }
     /**
-     * <code>bytes tile_data = 2;</code>
-     * @param value The tileData to set.
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
      */
-    public Builder setTileData(com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      tileData_ = value;
-      onChanged();
+    public Builder setTileData(POGOProtos.Rpc.MapCompositionRoot value) {
+      if (tileDataBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        tileData_ = value;
+        onChanged();
+      } else {
+        tileDataBuilder_.setMessage(value);
+      }
+
       return this;
     }
     /**
-     * <code>bytes tile_data = 2;</code>
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
+     */
+    public Builder setTileData(
+        POGOProtos.Rpc.MapCompositionRoot.Builder builderForValue) {
+      if (tileDataBuilder_ == null) {
+        tileData_ = builderForValue.build();
+        onChanged();
+      } else {
+        tileDataBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
+     */
+    public Builder mergeTileData(POGOProtos.Rpc.MapCompositionRoot value) {
+      if (tileDataBuilder_ == null) {
+        if (tileData_ != null) {
+          tileData_ =
+            POGOProtos.Rpc.MapCompositionRoot.newBuilder(tileData_).mergeFrom(value).buildPartial();
+        } else {
+          tileData_ = value;
+        }
+        onChanged();
+      } else {
+        tileDataBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
      */
     public Builder clearTileData() {
-      
-      tileData_ = getDefaultInstance().getTileData();
-      onChanged();
+      if (tileDataBuilder_ == null) {
+        tileData_ = null;
+        onChanged();
+      } else {
+        tileData_ = null;
+        tileDataBuilder_ = null;
+      }
+
       return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
+     */
+    public POGOProtos.Rpc.MapCompositionRoot.Builder getTileDataBuilder() {
+      
+      onChanged();
+      return getTileDataFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
+     */
+    public POGOProtos.Rpc.MapCompositionRootOrBuilder getTileDataOrBuilder() {
+      if (tileDataBuilder_ != null) {
+        return tileDataBuilder_.getMessageOrBuilder();
+      } else {
+        return tileData_ == null ?
+            POGOProtos.Rpc.MapCompositionRoot.getDefaultInstance() : tileData_;
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.MapCompositionRoot, POGOProtos.Rpc.MapCompositionRoot.Builder, POGOProtos.Rpc.MapCompositionRootOrBuilder> 
+        getTileDataFieldBuilder() {
+      if (tileDataBuilder_ == null) {
+        tileDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.MapCompositionRoot, POGOProtos.Rpc.MapCompositionRoot.Builder, POGOProtos.Rpc.MapCompositionRootOrBuilder>(
+                getTileData(),
+                getParentForChildren(),
+                isClean());
+        tileData_ = null;
+      }
+      return tileDataBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

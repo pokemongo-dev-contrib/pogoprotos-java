@@ -58,19 +58,28 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
+            POGOProtos.Rpc.HoloInventoryKeyProto.Builder subBuilder = null;
+            if (inventoryItemCase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_).toBuilder();
+            }
+            inventoryItem_ =
+                input.readMessage(POGOProtos.Rpc.HoloInventoryKeyProto.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_);
+              inventoryItem_ = subBuilder.buildPartial();
+            }
             inventoryItemCase_ = 2;
-            inventoryItem_ = input.readBytes();
             break;
           }
           case 26: {
-            POGOProtos.Rpc.DNNGDJLGPPP.Builder subBuilder = null;
+            POGOProtos.Rpc.HoloInventoryItemProto.Builder subBuilder = null;
             if (inventoryItemCase_ == 3) {
-              subBuilder = ((POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_).toBuilder();
             }
             inventoryItem_ =
-                input.readMessage(POGOProtos.Rpc.DNNGDJLGPPP.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.HoloInventoryItemProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_);
               inventoryItem_ = subBuilder.buildPartial();
             }
             inventoryItemCase_ = 3;
@@ -151,20 +160,38 @@ private static final long serialVersionUID = 0L;
 
   public static final int DELETED_ITEM_KEY_FIELD_NUMBER = 2;
   /**
-   * <code>bytes deleted_item_key = 2;</code>
+   * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
+   * @return Whether the deletedItemKey field is set.
+   */
+  @java.lang.Override
+  public boolean hasDeletedItemKey() {
+    return inventoryItemCase_ == 2;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
    * @return The deletedItemKey.
    */
   @java.lang.Override
-  public com.google.protobuf.ByteString getDeletedItemKey() {
+  public POGOProtos.Rpc.HoloInventoryKeyProto getDeletedItemKey() {
     if (inventoryItemCase_ == 2) {
-      return (com.google.protobuf.ByteString) inventoryItem_;
+       return (POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_;
     }
-    return com.google.protobuf.ByteString.EMPTY;
+    return POGOProtos.Rpc.HoloInventoryKeyProto.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.HoloInventoryKeyProtoOrBuilder getDeletedItemKeyOrBuilder() {
+    if (inventoryItemCase_ == 2) {
+       return (POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_;
+    }
+    return POGOProtos.Rpc.HoloInventoryKeyProto.getDefaultInstance();
   }
 
   public static final int ITEM_FIELD_NUMBER = 3;
   /**
-   * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+   * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
    * @return Whether the item field is set.
    */
   @java.lang.Override
@@ -172,25 +199,25 @@ private static final long serialVersionUID = 0L;
     return inventoryItemCase_ == 3;
   }
   /**
-   * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+   * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
    * @return The item.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DNNGDJLGPPP getItem() {
+  public POGOProtos.Rpc.HoloInventoryItemProto getItem() {
     if (inventoryItemCase_ == 3) {
-       return (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_;
+       return (POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_;
     }
-    return POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
+    return POGOProtos.Rpc.HoloInventoryItemProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+   * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DNNGDJLGPPPOrBuilder getItemOrBuilder() {
+  public POGOProtos.Rpc.HoloInventoryItemProtoOrBuilder getItemOrBuilder() {
     if (inventoryItemCase_ == 3) {
-       return (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_;
+       return (POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_;
     }
-    return POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
+    return POGOProtos.Rpc.HoloInventoryItemProto.getDefaultInstance();
   }
 
   public static final int MODIFIED_TIMESTAMP_FIELD_NUMBER = 1;
@@ -222,11 +249,10 @@ private static final long serialVersionUID = 0L;
       output.writeInt64(1, modifiedTimestamp_);
     }
     if (inventoryItemCase_ == 2) {
-      output.writeBytes(
-          2, (com.google.protobuf.ByteString) inventoryItem_);
+      output.writeMessage(2, (POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_);
     }
     if (inventoryItemCase_ == 3) {
-      output.writeMessage(3, (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_);
+      output.writeMessage(3, (POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_);
     }
     unknownFields.writeTo(output);
   }
@@ -243,12 +269,11 @@ private static final long serialVersionUID = 0L;
     }
     if (inventoryItemCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(
-            2, (com.google.protobuf.ByteString) inventoryItem_);
+        .computeMessageSize(2, (POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_);
     }
     if (inventoryItemCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_);
+        .computeMessageSize(3, (POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -474,7 +499,11 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.InventoryItemProto buildPartial() {
       POGOProtos.Rpc.InventoryItemProto result = new POGOProtos.Rpc.InventoryItemProto(this);
       if (inventoryItemCase_ == 2) {
-        result.inventoryItem_ = inventoryItem_;
+        if (deletedItemKeyBuilder_ == null) {
+          result.inventoryItem_ = inventoryItem_;
+        } else {
+          result.inventoryItem_ = deletedItemKeyBuilder_.build();
+        }
       }
       if (inventoryItemCase_ == 3) {
         if (itemBuilder_ == null) {
@@ -538,7 +567,7 @@ private static final long serialVersionUID = 0L;
       }
       switch (other.getInventoryItemCase()) {
         case DELETED_ITEM_KEY: {
-          setDeletedItemKey(other.getDeletedItemKey());
+          mergeDeletedItemKey(other.getDeletedItemKey());
           break;
         }
         case ITEM: {
@@ -593,47 +622,151 @@ private static final long serialVersionUID = 0L;
     }
 
 
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.HoloInventoryKeyProto, POGOProtos.Rpc.HoloInventoryKeyProto.Builder, POGOProtos.Rpc.HoloInventoryKeyProtoOrBuilder> deletedItemKeyBuilder_;
     /**
-     * <code>bytes deleted_item_key = 2;</code>
+     * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
+     * @return Whether the deletedItemKey field is set.
+     */
+    @java.lang.Override
+    public boolean hasDeletedItemKey() {
+      return inventoryItemCase_ == 2;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
      * @return The deletedItemKey.
      */
-    public com.google.protobuf.ByteString getDeletedItemKey() {
-      if (inventoryItemCase_ == 2) {
-        return (com.google.protobuf.ByteString) inventoryItem_;
+    @java.lang.Override
+    public POGOProtos.Rpc.HoloInventoryKeyProto getDeletedItemKey() {
+      if (deletedItemKeyBuilder_ == null) {
+        if (inventoryItemCase_ == 2) {
+          return (POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_;
+        }
+        return POGOProtos.Rpc.HoloInventoryKeyProto.getDefaultInstance();
+      } else {
+        if (inventoryItemCase_ == 2) {
+          return deletedItemKeyBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.HoloInventoryKeyProto.getDefaultInstance();
       }
-      return com.google.protobuf.ByteString.EMPTY;
     }
     /**
-     * <code>bytes deleted_item_key = 2;</code>
-     * @param value The deletedItemKey to set.
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
      */
-    public Builder setDeletedItemKey(com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  inventoryItemCase_ = 2;
-      inventoryItem_ = value;
-      onChanged();
+    public Builder setDeletedItemKey(POGOProtos.Rpc.HoloInventoryKeyProto value) {
+      if (deletedItemKeyBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        inventoryItem_ = value;
+        onChanged();
+      } else {
+        deletedItemKeyBuilder_.setMessage(value);
+      }
+      inventoryItemCase_ = 2;
       return this;
     }
     /**
-     * <code>bytes deleted_item_key = 2;</code>
-     * @return This builder for chaining.
+     * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
+     */
+    public Builder setDeletedItemKey(
+        POGOProtos.Rpc.HoloInventoryKeyProto.Builder builderForValue) {
+      if (deletedItemKeyBuilder_ == null) {
+        inventoryItem_ = builderForValue.build();
+        onChanged();
+      } else {
+        deletedItemKeyBuilder_.setMessage(builderForValue.build());
+      }
+      inventoryItemCase_ = 2;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
+     */
+    public Builder mergeDeletedItemKey(POGOProtos.Rpc.HoloInventoryKeyProto value) {
+      if (deletedItemKeyBuilder_ == null) {
+        if (inventoryItemCase_ == 2 &&
+            inventoryItem_ != POGOProtos.Rpc.HoloInventoryKeyProto.getDefaultInstance()) {
+          inventoryItem_ = POGOProtos.Rpc.HoloInventoryKeyProto.newBuilder((POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          inventoryItem_ = value;
+        }
+        onChanged();
+      } else {
+        if (inventoryItemCase_ == 2) {
+          deletedItemKeyBuilder_.mergeFrom(value);
+        }
+        deletedItemKeyBuilder_.setMessage(value);
+      }
+      inventoryItemCase_ = 2;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
      */
     public Builder clearDeletedItemKey() {
-      if (inventoryItemCase_ == 2) {
-        inventoryItemCase_ = 0;
-        inventoryItem_ = null;
-        onChanged();
+      if (deletedItemKeyBuilder_ == null) {
+        if (inventoryItemCase_ == 2) {
+          inventoryItemCase_ = 0;
+          inventoryItem_ = null;
+          onChanged();
+        }
+      } else {
+        if (inventoryItemCase_ == 2) {
+          inventoryItemCase_ = 0;
+          inventoryItem_ = null;
+        }
+        deletedItemKeyBuilder_.clear();
       }
       return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
+     */
+    public POGOProtos.Rpc.HoloInventoryKeyProto.Builder getDeletedItemKeyBuilder() {
+      return getDeletedItemKeyFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.HoloInventoryKeyProtoOrBuilder getDeletedItemKeyOrBuilder() {
+      if ((inventoryItemCase_ == 2) && (deletedItemKeyBuilder_ != null)) {
+        return deletedItemKeyBuilder_.getMessageOrBuilder();
+      } else {
+        if (inventoryItemCase_ == 2) {
+          return (POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_;
+        }
+        return POGOProtos.Rpc.HoloInventoryKeyProto.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.HoloInventoryKeyProto, POGOProtos.Rpc.HoloInventoryKeyProto.Builder, POGOProtos.Rpc.HoloInventoryKeyProtoOrBuilder> 
+        getDeletedItemKeyFieldBuilder() {
+      if (deletedItemKeyBuilder_ == null) {
+        if (!(inventoryItemCase_ == 2)) {
+          inventoryItem_ = POGOProtos.Rpc.HoloInventoryKeyProto.getDefaultInstance();
+        }
+        deletedItemKeyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.HoloInventoryKeyProto, POGOProtos.Rpc.HoloInventoryKeyProto.Builder, POGOProtos.Rpc.HoloInventoryKeyProtoOrBuilder>(
+                (POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_,
+                getParentForChildren(),
+                isClean());
+        inventoryItem_ = null;
+      }
+      inventoryItemCase_ = 2;
+      onChanged();;
+      return deletedItemKeyBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DNNGDJLGPPP, POGOProtos.Rpc.DNNGDJLGPPP.Builder, POGOProtos.Rpc.DNNGDJLGPPPOrBuilder> itemBuilder_;
+        POGOProtos.Rpc.HoloInventoryItemProto, POGOProtos.Rpc.HoloInventoryItemProto.Builder, POGOProtos.Rpc.HoloInventoryItemProtoOrBuilder> itemBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+     * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      * @return Whether the item field is set.
      */
     @java.lang.Override
@@ -641,27 +774,27 @@ private static final long serialVersionUID = 0L;
       return inventoryItemCase_ == 3;
     }
     /**
-     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+     * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      * @return The item.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.DNNGDJLGPPP getItem() {
+    public POGOProtos.Rpc.HoloInventoryItemProto getItem() {
       if (itemBuilder_ == null) {
         if (inventoryItemCase_ == 3) {
-          return (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_;
+          return (POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_;
         }
-        return POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
+        return POGOProtos.Rpc.HoloInventoryItemProto.getDefaultInstance();
       } else {
         if (inventoryItemCase_ == 3) {
           return itemBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
+        return POGOProtos.Rpc.HoloInventoryItemProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+     * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      */
-    public Builder setItem(POGOProtos.Rpc.DNNGDJLGPPP value) {
+    public Builder setItem(POGOProtos.Rpc.HoloInventoryItemProto value) {
       if (itemBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -675,10 +808,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+     * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      */
     public Builder setItem(
-        POGOProtos.Rpc.DNNGDJLGPPP.Builder builderForValue) {
+        POGOProtos.Rpc.HoloInventoryItemProto.Builder builderForValue) {
       if (itemBuilder_ == null) {
         inventoryItem_ = builderForValue.build();
         onChanged();
@@ -689,13 +822,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+     * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      */
-    public Builder mergeItem(POGOProtos.Rpc.DNNGDJLGPPP value) {
+    public Builder mergeItem(POGOProtos.Rpc.HoloInventoryItemProto value) {
       if (itemBuilder_ == null) {
         if (inventoryItemCase_ == 3 &&
-            inventoryItem_ != POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance()) {
-          inventoryItem_ = POGOProtos.Rpc.DNNGDJLGPPP.newBuilder((POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_)
+            inventoryItem_ != POGOProtos.Rpc.HoloInventoryItemProto.getDefaultInstance()) {
+          inventoryItem_ = POGOProtos.Rpc.HoloInventoryItemProto.newBuilder((POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_)
               .mergeFrom(value).buildPartial();
         } else {
           inventoryItem_ = value;
@@ -711,7 +844,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+     * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      */
     public Builder clearItem() {
       if (itemBuilder_ == null) {
@@ -730,38 +863,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+     * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      */
-    public POGOProtos.Rpc.DNNGDJLGPPP.Builder getItemBuilder() {
+    public POGOProtos.Rpc.HoloInventoryItemProto.Builder getItemBuilder() {
       return getItemFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+     * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.DNNGDJLGPPPOrBuilder getItemOrBuilder() {
+    public POGOProtos.Rpc.HoloInventoryItemProtoOrBuilder getItemOrBuilder() {
       if ((inventoryItemCase_ == 3) && (itemBuilder_ != null)) {
         return itemBuilder_.getMessageOrBuilder();
       } else {
         if (inventoryItemCase_ == 3) {
-          return (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_;
+          return (POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_;
         }
-        return POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
+        return POGOProtos.Rpc.HoloInventoryItemProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+     * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DNNGDJLGPPP, POGOProtos.Rpc.DNNGDJLGPPP.Builder, POGOProtos.Rpc.DNNGDJLGPPPOrBuilder> 
+        POGOProtos.Rpc.HoloInventoryItemProto, POGOProtos.Rpc.HoloInventoryItemProto.Builder, POGOProtos.Rpc.HoloInventoryItemProtoOrBuilder> 
         getItemFieldBuilder() {
       if (itemBuilder_ == null) {
         if (!(inventoryItemCase_ == 3)) {
-          inventoryItem_ = POGOProtos.Rpc.DNNGDJLGPPP.getDefaultInstance();
+          inventoryItem_ = POGOProtos.Rpc.HoloInventoryItemProto.getDefaultInstance();
         }
         itemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.DNNGDJLGPPP, POGOProtos.Rpc.DNNGDJLGPPP.Builder, POGOProtos.Rpc.DNNGDJLGPPPOrBuilder>(
-                (POGOProtos.Rpc.DNNGDJLGPPP) inventoryItem_,
+            POGOProtos.Rpc.HoloInventoryItemProto, POGOProtos.Rpc.HoloInventoryItemProto.Builder, POGOProtos.Rpc.HoloInventoryItemProtoOrBuilder>(
+                (POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_,
                 getParentForChildren(),
                 isClean());
         inventoryItem_ = null;

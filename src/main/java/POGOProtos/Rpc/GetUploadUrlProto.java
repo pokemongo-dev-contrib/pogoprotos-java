@@ -314,7 +314,7 @@ private static final long serialVersionUID = 0L;
     if (!getGameUniqueIdBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, gameUniqueId_);
     }
-    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLAYERSUBMISSIONTYPEPROTO_TYPE_UNSPECIFIED.getNumber()) {
+    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLAYER_SUBMISSION_TYPE_PROTO_TYPE_UNSPECIFIED.getNumber()) {
       output.writeEnum(3, submissionType_);
     }
     if (!getSubmissionIdBytes().isEmpty()) {
@@ -338,7 +338,7 @@ private static final long serialVersionUID = 0L;
     if (!getGameUniqueIdBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, gameUniqueId_);
     }
-    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLAYERSUBMISSIONTYPEPROTO_TYPE_UNSPECIFIED.getNumber()) {
+    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLAYER_SUBMISSION_TYPE_PROTO_TYPE_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, submissionType_);
     }

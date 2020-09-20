@@ -63,11 +63,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.FMCHABOILMM.Builder subBuilder = null;
+            POGOProtos.Rpc.GameMasterClientTemplateProto.Builder subBuilder = null;
             if (data_ != null) {
               subBuilder = data_.toBuilder();
             }
-            data_ = input.readMessage(POGOProtos.Rpc.FMCHABOILMM.parser(), extensionRegistry);
+            data_ = input.readMessage(POGOProtos.Rpc.GameMasterClientTemplateProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(data_);
               data_ = subBuilder.buildPartial();
@@ -146,9 +146,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int DATA_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.FMCHABOILMM data_;
+  private POGOProtos.Rpc.GameMasterClientTemplateProto data_;
   /**
-   * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+   * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
    * @return Whether the data field is set.
    */
   @java.lang.Override
@@ -156,18 +156,18 @@ private static final long serialVersionUID = 0L;
     return data_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+   * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
    * @return The data.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.FMCHABOILMM getData() {
-    return data_ == null ? POGOProtos.Rpc.FMCHABOILMM.getDefaultInstance() : data_;
+  public POGOProtos.Rpc.GameMasterClientTemplateProto getData() {
+    return data_ == null ? POGOProtos.Rpc.GameMasterClientTemplateProto.getDefaultInstance() : data_;
   }
   /**
-   * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+   * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.FMCHABOILMMOrBuilder getDataOrBuilder() {
+  public POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder getDataOrBuilder() {
     return getData();
   }
 
@@ -586,31 +586,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.FMCHABOILMM data_;
+    private POGOProtos.Rpc.GameMasterClientTemplateProto data_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.FMCHABOILMM, POGOProtos.Rpc.FMCHABOILMM.Builder, POGOProtos.Rpc.FMCHABOILMMOrBuilder> dataBuilder_;
+        POGOProtos.Rpc.GameMasterClientTemplateProto, POGOProtos.Rpc.GameMasterClientTemplateProto.Builder, POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder> dataBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      * @return Whether the data field is set.
      */
     public boolean hasData() {
       return dataBuilder_ != null || data_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      * @return The data.
      */
-    public POGOProtos.Rpc.FMCHABOILMM getData() {
+    public POGOProtos.Rpc.GameMasterClientTemplateProto getData() {
       if (dataBuilder_ == null) {
-        return data_ == null ? POGOProtos.Rpc.FMCHABOILMM.getDefaultInstance() : data_;
+        return data_ == null ? POGOProtos.Rpc.GameMasterClientTemplateProto.getDefaultInstance() : data_;
       } else {
         return dataBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
-    public Builder setData(POGOProtos.Rpc.FMCHABOILMM value) {
+    public Builder setData(POGOProtos.Rpc.GameMasterClientTemplateProto value) {
       if (dataBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -624,10 +624,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     public Builder setData(
-        POGOProtos.Rpc.FMCHABOILMM.Builder builderForValue) {
+        POGOProtos.Rpc.GameMasterClientTemplateProto.Builder builderForValue) {
       if (dataBuilder_ == null) {
         data_ = builderForValue.build();
         onChanged();
@@ -638,13 +638,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
-    public Builder mergeData(POGOProtos.Rpc.FMCHABOILMM value) {
+    public Builder mergeData(POGOProtos.Rpc.GameMasterClientTemplateProto value) {
       if (dataBuilder_ == null) {
         if (data_ != null) {
           data_ =
-            POGOProtos.Rpc.FMCHABOILMM.newBuilder(data_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.GameMasterClientTemplateProto.newBuilder(data_).mergeFrom(value).buildPartial();
         } else {
           data_ = value;
         }
@@ -656,7 +656,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     public Builder clearData() {
       if (dataBuilder_ == null) {
@@ -670,33 +670,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
-    public POGOProtos.Rpc.FMCHABOILMM.Builder getDataBuilder() {
+    public POGOProtos.Rpc.GameMasterClientTemplateProto.Builder getDataBuilder() {
       
       onChanged();
       return getDataFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
-    public POGOProtos.Rpc.FMCHABOILMMOrBuilder getDataOrBuilder() {
+    public POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder getDataOrBuilder() {
       if (dataBuilder_ != null) {
         return dataBuilder_.getMessageOrBuilder();
       } else {
         return data_ == null ?
-            POGOProtos.Rpc.FMCHABOILMM.getDefaultInstance() : data_;
+            POGOProtos.Rpc.GameMasterClientTemplateProto.getDefaultInstance() : data_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.FMCHABOILMM data = 2;</code>
+     * <code>.POGOProtos.Rpc.GameMasterClientTemplateProto data = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.FMCHABOILMM, POGOProtos.Rpc.FMCHABOILMM.Builder, POGOProtos.Rpc.FMCHABOILMMOrBuilder> 
+        POGOProtos.Rpc.GameMasterClientTemplateProto, POGOProtos.Rpc.GameMasterClientTemplateProto.Builder, POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder> 
         getDataFieldBuilder() {
       if (dataBuilder_ == null) {
         dataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.FMCHABOILMM, POGOProtos.Rpc.FMCHABOILMM.Builder, POGOProtos.Rpc.FMCHABOILMMOrBuilder>(
+            POGOProtos.Rpc.GameMasterClientTemplateProto, POGOProtos.Rpc.GameMasterClientTemplateProto.Builder, POGOProtos.Rpc.GameMasterClientTemplateProtoOrBuilder>(
                 getData(),
                 getParentForChildren(),
                 isClean());

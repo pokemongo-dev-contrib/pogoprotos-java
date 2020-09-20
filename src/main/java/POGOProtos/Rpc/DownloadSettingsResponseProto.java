@@ -67,11 +67,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 26: {
-            POGOProtos.Rpc.EIIOIPNIHIB.Builder subBuilder = null;
+            POGOProtos.Rpc.GlobalSettingsProto.Builder subBuilder = null;
             if (values_ != null) {
               subBuilder = values_.toBuilder();
             }
-            values_ = input.readMessage(POGOProtos.Rpc.EIIOIPNIHIB.parser(), extensionRegistry);
+            values_ = input.readMessage(POGOProtos.Rpc.GlobalSettingsProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(values_);
               values_ = subBuilder.buildPartial();
@@ -188,9 +188,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int VALUES_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.EIIOIPNIHIB values_;
+  private POGOProtos.Rpc.GlobalSettingsProto values_;
   /**
-   * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+   * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
    * @return Whether the values field is set.
    */
   @java.lang.Override
@@ -198,18 +198,18 @@ private static final long serialVersionUID = 0L;
     return values_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+   * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
    * @return The values.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EIIOIPNIHIB getValues() {
-    return values_ == null ? POGOProtos.Rpc.EIIOIPNIHIB.getDefaultInstance() : values_;
+  public POGOProtos.Rpc.GlobalSettingsProto getValues() {
+    return values_ == null ? POGOProtos.Rpc.GlobalSettingsProto.getDefaultInstance() : values_;
   }
   /**
-   * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+   * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EIIOIPNIHIBOrBuilder getValuesOrBuilder() {
+  public POGOProtos.Rpc.GlobalSettingsProtoOrBuilder getValuesOrBuilder() {
     return getValues();
   }
 
@@ -718,31 +718,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.EIIOIPNIHIB values_;
+    private POGOProtos.Rpc.GlobalSettingsProto values_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.EIIOIPNIHIB, POGOProtos.Rpc.EIIOIPNIHIB.Builder, POGOProtos.Rpc.EIIOIPNIHIBOrBuilder> valuesBuilder_;
+        POGOProtos.Rpc.GlobalSettingsProto, POGOProtos.Rpc.GlobalSettingsProto.Builder, POGOProtos.Rpc.GlobalSettingsProtoOrBuilder> valuesBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      * @return Whether the values field is set.
      */
     public boolean hasValues() {
       return valuesBuilder_ != null || values_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      * @return The values.
      */
-    public POGOProtos.Rpc.EIIOIPNIHIB getValues() {
+    public POGOProtos.Rpc.GlobalSettingsProto getValues() {
       if (valuesBuilder_ == null) {
-        return values_ == null ? POGOProtos.Rpc.EIIOIPNIHIB.getDefaultInstance() : values_;
+        return values_ == null ? POGOProtos.Rpc.GlobalSettingsProto.getDefaultInstance() : values_;
       } else {
         return valuesBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      */
-    public Builder setValues(POGOProtos.Rpc.EIIOIPNIHIB value) {
+    public Builder setValues(POGOProtos.Rpc.GlobalSettingsProto value) {
       if (valuesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -756,10 +756,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      */
     public Builder setValues(
-        POGOProtos.Rpc.EIIOIPNIHIB.Builder builderForValue) {
+        POGOProtos.Rpc.GlobalSettingsProto.Builder builderForValue) {
       if (valuesBuilder_ == null) {
         values_ = builderForValue.build();
         onChanged();
@@ -770,13 +770,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      */
-    public Builder mergeValues(POGOProtos.Rpc.EIIOIPNIHIB value) {
+    public Builder mergeValues(POGOProtos.Rpc.GlobalSettingsProto value) {
       if (valuesBuilder_ == null) {
         if (values_ != null) {
           values_ =
-            POGOProtos.Rpc.EIIOIPNIHIB.newBuilder(values_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.GlobalSettingsProto.newBuilder(values_).mergeFrom(value).buildPartial();
         } else {
           values_ = value;
         }
@@ -788,7 +788,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      */
     public Builder clearValues() {
       if (valuesBuilder_ == null) {
@@ -802,33 +802,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      */
-    public POGOProtos.Rpc.EIIOIPNIHIB.Builder getValuesBuilder() {
+    public POGOProtos.Rpc.GlobalSettingsProto.Builder getValuesBuilder() {
       
       onChanged();
       return getValuesFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      */
-    public POGOProtos.Rpc.EIIOIPNIHIBOrBuilder getValuesOrBuilder() {
+    public POGOProtos.Rpc.GlobalSettingsProtoOrBuilder getValuesOrBuilder() {
       if (valuesBuilder_ != null) {
         return valuesBuilder_.getMessageOrBuilder();
       } else {
         return values_ == null ?
-            POGOProtos.Rpc.EIIOIPNIHIB.getDefaultInstance() : values_;
+            POGOProtos.Rpc.GlobalSettingsProto.getDefaultInstance() : values_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.EIIOIPNIHIB values = 3;</code>
+     * <code>.POGOProtos.Rpc.GlobalSettingsProto values = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.EIIOIPNIHIB, POGOProtos.Rpc.EIIOIPNIHIB.Builder, POGOProtos.Rpc.EIIOIPNIHIBOrBuilder> 
+        POGOProtos.Rpc.GlobalSettingsProto, POGOProtos.Rpc.GlobalSettingsProto.Builder, POGOProtos.Rpc.GlobalSettingsProtoOrBuilder> 
         getValuesFieldBuilder() {
       if (valuesBuilder_ == null) {
         valuesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.EIIOIPNIHIB, POGOProtos.Rpc.EIIOIPNIHIB.Builder, POGOProtos.Rpc.EIIOIPNIHIBOrBuilder>(
+            POGOProtos.Rpc.GlobalSettingsProto, POGOProtos.Rpc.GlobalSettingsProto.Builder, POGOProtos.Rpc.GlobalSettingsProtoOrBuilder>(
                 getValues(),
                 getParentForChildren(),
                 isClean());

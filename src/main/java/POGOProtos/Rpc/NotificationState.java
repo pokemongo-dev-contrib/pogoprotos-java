@@ -13,24 +13,24 @@ package POGOProtos.Rpc;
 public enum NotificationState
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>NOTIFICATIONSTATE_UNSET_STATE = 0;</code>
+   * <code>NOTIFICATION_STATE_UNSET_STATE = 0;</code>
    */
-  NOTIFICATIONSTATE_UNSET_STATE(0),
+  NOTIFICATION_STATE_UNSET_STATE(0),
   /**
-   * <code>NOTIFICATIONSTATE_VIEWED = 1;</code>
+   * <code>NOTIFICATION_STATE_VIEWED = 1;</code>
    */
-  NOTIFICATIONSTATE_VIEWED(1),
+  NOTIFICATION_STATE_VIEWED(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>NOTIFICATIONSTATE_UNSET_STATE = 0;</code>
+   * <code>NOTIFICATION_STATE_UNSET_STATE = 0;</code>
    */
-  public static final int NOTIFICATIONSTATE_UNSET_STATE_VALUE = 0;
+  public static final int NOTIFICATION_STATE_UNSET_STATE_VALUE = 0;
   /**
-   * <code>NOTIFICATIONSTATE_VIEWED = 1;</code>
+   * <code>NOTIFICATION_STATE_VIEWED = 1;</code>
    */
-  public static final int NOTIFICATIONSTATE_VIEWED_VALUE = 1;
+  public static final int NOTIFICATION_STATE_VIEWED_VALUE = 1;
 
 
   public final int getNumber() {
@@ -57,8 +57,8 @@ public enum NotificationState
    */
   public static NotificationState forNumber(int value) {
     switch (value) {
-      case 0: return NOTIFICATIONSTATE_UNSET_STATE;
-      case 1: return NOTIFICATIONSTATE_VIEWED;
+      case 0: return NOTIFICATION_STATE_UNSET_STATE;
+      case 1: return NOTIFICATION_STATE_VIEWED;
       default: return null;
     }
   }

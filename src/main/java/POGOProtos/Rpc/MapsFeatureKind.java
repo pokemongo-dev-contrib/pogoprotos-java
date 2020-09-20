@@ -16,528 +16,528 @@ package POGOProtos.Rpc;
 public enum MapsFeatureKind
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>MAPSFEATUREKIND_UNDEFINED = 0;</code>
+   * <code>MAPS_FEATURE_KIND_UNDEFINED = 0;</code>
    */
-  MAPSFEATUREKIND_UNDEFINED(0),
+  MAPS_FEATURE_KIND_UNDEFINED(0),
   /**
-   * <code>MAPSFEATUREKIND_BASIN = 1;</code>
+   * <code>MAPS_FEATURE_KIND_BASIN = 1;</code>
    */
-  MAPSFEATUREKIND_BASIN(1),
+  MAPS_FEATURE_KIND_BASIN(1),
   /**
-   * <code>MAPSFEATUREKIND_CANAL = 2;</code>
+   * <code>MAPS_FEATURE_KIND_CANAL = 2;</code>
    */
-  MAPSFEATUREKIND_CANAL(2),
+  MAPS_FEATURE_KIND_CANAL(2),
   /**
-   * <code>MAPSFEATUREKIND_CEMETERY = 3;</code>
+   * <code>MAPS_FEATURE_KIND_CEMETERY = 3;</code>
    */
-  MAPSFEATUREKIND_CEMETERY(3),
+  MAPS_FEATURE_KIND_CEMETERY(3),
   /**
-   * <code>MAPSFEATUREKIND_CINEMA = 4;</code>
+   * <code>MAPS_FEATURE_KIND_CINEMA = 4;</code>
    */
-  MAPSFEATUREKIND_CINEMA(4),
+  MAPS_FEATURE_KIND_CINEMA(4),
   /**
-   * <code>MAPSFEATUREKIND_COLLEGE = 5;</code>
+   * <code>MAPS_FEATURE_KIND_COLLEGE = 5;</code>
    */
-  MAPSFEATUREKIND_COLLEGE(5),
+  MAPS_FEATURE_KIND_COLLEGE(5),
   /**
-   * <code>MAPSFEATUREKIND_COMMERCIAL = 6;</code>
+   * <code>MAPS_FEATURE_KIND_COMMERCIAL = 6;</code>
    */
-  MAPSFEATUREKIND_COMMERCIAL(6),
+  MAPS_FEATURE_KIND_COMMERCIAL(6),
   /**
-   * <code>MAPSFEATUREKIND_COMMON = 7;</code>
+   * <code>MAPS_FEATURE_KIND_COMMON = 7;</code>
    */
-  MAPSFEATUREKIND_COMMON(7),
+  MAPS_FEATURE_KIND_COMMON(7),
   /**
-   * <code>MAPSFEATUREKIND_DAM = 8;</code>
+   * <code>MAPS_FEATURE_KIND_DAM = 8;</code>
    */
-  MAPSFEATUREKIND_DAM(8),
+  MAPS_FEATURE_KIND_DAM(8),
   /**
-   * <code>MAPSFEATUREKIND_DITCH = 9;</code>
+   * <code>MAPS_FEATURE_KIND_DITCH = 9;</code>
    */
-  MAPSFEATUREKIND_DITCH(9),
+  MAPS_FEATURE_KIND_DITCH(9),
   /**
-   * <code>MAPSFEATUREKIND_DOCK = 10;</code>
+   * <code>MAPS_FEATURE_KIND_DOCK = 10;</code>
    */
-  MAPSFEATUREKIND_DOCK(10),
+  MAPS_FEATURE_KIND_DOCK(10),
   /**
-   * <code>MAPSFEATUREKIND_DRAIN = 11;</code>
+   * <code>MAPS_FEATURE_KIND_DRAIN = 11;</code>
    */
-  MAPSFEATUREKIND_DRAIN(11),
+  MAPS_FEATURE_KIND_DRAIN(11),
   /**
-   * <code>MAPSFEATUREKIND_FARM = 12;</code>
+   * <code>MAPS_FEATURE_KIND_FARM = 12;</code>
    */
-  MAPSFEATUREKIND_FARM(12),
+  MAPS_FEATURE_KIND_FARM(12),
   /**
-   * <code>MAPSFEATUREKIND_FARMLAND = 13;</code>
+   * <code>MAPS_FEATURE_KIND_FARMLAND = 13;</code>
    */
-  MAPSFEATUREKIND_FARMLAND(13),
+  MAPS_FEATURE_KIND_FARMLAND(13),
   /**
-   * <code>MAPSFEATUREKIND_FARMYARD = 14;</code>
+   * <code>MAPS_FEATURE_KIND_FARMYARD = 14;</code>
    */
-  MAPSFEATUREKIND_FARMYARD(14),
+  MAPS_FEATURE_KIND_FARMYARD(14),
   /**
-   * <code>MAPSFEATUREKIND_FOOTWAY = 15;</code>
+   * <code>MAPS_FEATURE_KIND_FOOTWAY = 15;</code>
    */
-  MAPSFEATUREKIND_FOOTWAY(15),
+  MAPS_FEATURE_KIND_FOOTWAY(15),
   /**
-   * <code>MAPSFEATUREKIND_FOREST = 16;</code>
+   * <code>MAPS_FEATURE_KIND_FOREST = 16;</code>
    */
-  MAPSFEATUREKIND_FOREST(16),
+  MAPS_FEATURE_KIND_FOREST(16),
   /**
-   * <code>MAPSFEATUREKIND_GARDEN = 17;</code>
+   * <code>MAPS_FEATURE_KIND_GARDEN = 17;</code>
    */
-  MAPSFEATUREKIND_GARDEN(17),
+  MAPS_FEATURE_KIND_GARDEN(17),
   /**
-   * <code>MAPSFEATUREKIND_GLACIER = 18;</code>
+   * <code>MAPS_FEATURE_KIND_GLACIER = 18;</code>
    */
-  MAPSFEATUREKIND_GLACIER(18),
+  MAPS_FEATURE_KIND_GLACIER(18),
   /**
-   * <code>MAPSFEATUREKIND_GOLF_COURSE = 19;</code>
+   * <code>MAPS_FEATURE_KIND_GOLF_COURSE = 19;</code>
    */
-  MAPSFEATUREKIND_GOLF_COURSE(19),
+  MAPS_FEATURE_KIND_GOLF_COURSE(19),
   /**
-   * <code>MAPSFEATUREKIND_GRASS = 20;</code>
+   * <code>MAPS_FEATURE_KIND_GRASS = 20;</code>
    */
-  MAPSFEATUREKIND_GRASS(20),
+  MAPS_FEATURE_KIND_GRASS(20),
   /**
-   * <code>MAPSFEATUREKIND_HIGHWAY = 21;</code>
+   * <code>MAPS_FEATURE_KIND_HIGHWAY = 21;</code>
    */
-  MAPSFEATUREKIND_HIGHWAY(21),
+  MAPS_FEATURE_KIND_HIGHWAY(21),
   /**
-   * <code>MAPSFEATUREKIND_HOSPITAL = 22;</code>
+   * <code>MAPS_FEATURE_KIND_HOSPITAL = 22;</code>
    */
-  MAPSFEATUREKIND_HOSPITAL(22),
+  MAPS_FEATURE_KIND_HOSPITAL(22),
   /**
-   * <code>MAPSFEATUREKIND_HOTEL = 23;</code>
+   * <code>MAPS_FEATURE_KIND_HOTEL = 23;</code>
    */
-  MAPSFEATUREKIND_HOTEL(23),
+  MAPS_FEATURE_KIND_HOTEL(23),
   /**
-   * <code>MAPSFEATUREKIND_INDUSTRIAL = 24;</code>
+   * <code>MAPS_FEATURE_KIND_INDUSTRIAL = 24;</code>
    */
-  MAPSFEATUREKIND_INDUSTRIAL(24),
+  MAPS_FEATURE_KIND_INDUSTRIAL(24),
   /**
-   * <code>MAPSFEATUREKIND_LAKE = 25;</code>
+   * <code>MAPS_FEATURE_KIND_LAKE = 25;</code>
    */
-  MAPSFEATUREKIND_LAKE(25),
+  MAPS_FEATURE_KIND_LAKE(25),
   /**
-   * <code>MAPSFEATUREKIND_LAND = 26;</code>
+   * <code>MAPS_FEATURE_KIND_LAND = 26;</code>
    */
-  MAPSFEATUREKIND_LAND(26),
+  MAPS_FEATURE_KIND_LAND(26),
   /**
-   * <code>MAPSFEATUREKIND_LIBRARY = 27;</code>
+   * <code>MAPS_FEATURE_KIND_LIBRARY = 27;</code>
    */
-  MAPSFEATUREKIND_LIBRARY(27),
+  MAPS_FEATURE_KIND_LIBRARY(27),
   /**
-   * <code>MAPSFEATUREKIND_MAJOR_ROAD = 28;</code>
+   * <code>MAPS_FEATURE_KIND_MAJOR_ROAD = 28;</code>
    */
-  MAPSFEATUREKIND_MAJOR_ROAD(28),
+  MAPS_FEATURE_KIND_MAJOR_ROAD(28),
   /**
-   * <code>MAPSFEATUREKIND_MEADOW = 29;</code>
+   * <code>MAPS_FEATURE_KIND_MEADOW = 29;</code>
    */
-  MAPSFEATUREKIND_MEADOW(29),
+  MAPS_FEATURE_KIND_MEADOW(29),
   /**
-   * <code>MAPSFEATUREKIND_MINOR_ROAD = 30;</code>
+   * <code>MAPS_FEATURE_KIND_MINOR_ROAD = 30;</code>
    */
-  MAPSFEATUREKIND_MINOR_ROAD(30),
+  MAPS_FEATURE_KIND_MINOR_ROAD(30),
   /**
-   * <code>MAPSFEATUREKIND_NATURE_RESERVE = 31;</code>
+   * <code>MAPS_FEATURE_KIND_NATURE_RESERVE = 31;</code>
    */
-  MAPSFEATUREKIND_NATURE_RESERVE(31),
+  MAPS_FEATURE_KIND_NATURE_RESERVE(31),
   /**
-   * <code>MAPSFEATUREKIND_OCEAN = 32;</code>
+   * <code>MAPS_FEATURE_KIND_OCEAN = 32;</code>
    */
-  MAPSFEATUREKIND_OCEAN(32),
+  MAPS_FEATURE_KIND_OCEAN(32),
   /**
-   * <code>MAPSFEATUREKIND_PARK = 33;</code>
+   * <code>MAPS_FEATURE_KIND_PARK = 33;</code>
    */
-  MAPSFEATUREKIND_PARK(33),
+  MAPS_FEATURE_KIND_PARK(33),
   /**
-   * <code>MAPSFEATUREKIND_PARKING = 34;</code>
+   * <code>MAPS_FEATURE_KIND_PARKING = 34;</code>
    */
-  MAPSFEATUREKIND_PARKING(34),
+  MAPS_FEATURE_KIND_PARKING(34),
   /**
-   * <code>MAPSFEATUREKIND_PATH = 35;</code>
+   * <code>MAPS_FEATURE_KIND_PATH = 35;</code>
    */
-  MAPSFEATUREKIND_PATH(35),
+  MAPS_FEATURE_KIND_PATH(35),
   /**
-   * <code>MAPSFEATUREKIND_PEDESTRIAN = 36;</code>
+   * <code>MAPS_FEATURE_KIND_PEDESTRIAN = 36;</code>
    */
-  MAPSFEATUREKIND_PEDESTRIAN(36),
+  MAPS_FEATURE_KIND_PEDESTRIAN(36),
   /**
-   * <code>MAPSFEATUREKIND_PITCH = 37;</code>
+   * <code>MAPS_FEATURE_KIND_PITCH = 37;</code>
    */
-  MAPSFEATUREKIND_PITCH(37),
+  MAPS_FEATURE_KIND_PITCH(37),
   /**
-   * <code>MAPSFEATUREKIND_PLACE_OF_WORSHIP = 38;</code>
+   * <code>MAPS_FEATURE_KIND_PLACE_OF_WORSHIP = 38;</code>
    */
-  MAPSFEATUREKIND_PLACE_OF_WORSHIP(38),
+  MAPS_FEATURE_KIND_PLACE_OF_WORSHIP(38),
   /**
-   * <code>MAPSFEATUREKIND_PLAYA = 39;</code>
+   * <code>MAPS_FEATURE_KIND_PLAYA = 39;</code>
    */
-  MAPSFEATUREKIND_PLAYA(39),
+  MAPS_FEATURE_KIND_PLAYA(39),
   /**
-   * <code>MAPSFEATUREKIND_PLAYGROUND = 40;</code>
+   * <code>MAPS_FEATURE_KIND_PLAYGROUND = 40;</code>
    */
-  MAPSFEATUREKIND_PLAYGROUND(40),
+  MAPS_FEATURE_KIND_PLAYGROUND(40),
   /**
-   * <code>MAPSFEATUREKIND_QUARRY = 41;</code>
+   * <code>MAPS_FEATURE_KIND_QUARRY = 41;</code>
    */
-  MAPSFEATUREKIND_QUARRY(41),
+  MAPS_FEATURE_KIND_QUARRY(41),
   /**
-   * <code>MAPSFEATUREKIND_RAILWAY = 42;</code>
+   * <code>MAPS_FEATURE_KIND_RAILWAY = 42;</code>
    */
-  MAPSFEATUREKIND_RAILWAY(42),
+  MAPS_FEATURE_KIND_RAILWAY(42),
   /**
-   * <code>MAPSFEATUREKIND_RECREATION_AREA = 43;</code>
+   * <code>MAPS_FEATURE_KIND_RECREATION_AREA = 43;</code>
    */
-  MAPSFEATUREKIND_RECREATION_AREA(43),
+  MAPS_FEATURE_KIND_RECREATION_AREA(43),
   /**
-   * <code>MAPSFEATUREKIND_RESERVOIR = 44;</code>
+   * <code>MAPS_FEATURE_KIND_RESERVOIR = 44;</code>
    */
-  MAPSFEATUREKIND_RESERVOIR(44),
+  MAPS_FEATURE_KIND_RESERVOIR(44),
   /**
-   * <code>MAPSFEATUREKIND_RESIDENTIAL = 45;</code>
+   * <code>MAPS_FEATURE_KIND_RESIDENTIAL = 45;</code>
    */
-  MAPSFEATUREKIND_RESIDENTIAL(45),
+  MAPS_FEATURE_KIND_RESIDENTIAL(45),
   /**
-   * <code>MAPSFEATUREKIND_RETAIL = 46;</code>
+   * <code>MAPS_FEATURE_KIND_RETAIL = 46;</code>
    */
-  MAPSFEATUREKIND_RETAIL(46),
+  MAPS_FEATURE_KIND_RETAIL(46),
   /**
-   * <code>MAPSFEATUREKIND_RIVER = 47;</code>
+   * <code>MAPS_FEATURE_KIND_RIVER = 47;</code>
    */
-  MAPSFEATUREKIND_RIVER(47),
+  MAPS_FEATURE_KIND_RIVER(47),
   /**
-   * <code>MAPSFEATUREKIND_RIVERBANK = 48;</code>
+   * <code>MAPS_FEATURE_KIND_RIVERBANK = 48;</code>
    */
-  MAPSFEATUREKIND_RIVERBANK(48),
+  MAPS_FEATURE_KIND_RIVERBANK(48),
   /**
-   * <code>MAPSFEATUREKIND_RUNWAY = 49;</code>
+   * <code>MAPS_FEATURE_KIND_RUNWAY = 49;</code>
    */
-  MAPSFEATUREKIND_RUNWAY(49),
+  MAPS_FEATURE_KIND_RUNWAY(49),
   /**
-   * <code>MAPSFEATUREKIND_SCHOOL = 50;</code>
+   * <code>MAPS_FEATURE_KIND_SCHOOL = 50;</code>
    */
-  MAPSFEATUREKIND_SCHOOL(50),
+  MAPS_FEATURE_KIND_SCHOOL(50),
   /**
-   * <code>MAPSFEATUREKIND_SPORTS_CENTER = 51;</code>
+   * <code>MAPS_FEATURE_KIND_SPORTS_CENTER = 51;</code>
    */
-  MAPSFEATUREKIND_SPORTS_CENTER(51),
+  MAPS_FEATURE_KIND_SPORTS_CENTER(51),
   /**
-   * <code>MAPSFEATUREKIND_STADIUM = 52;</code>
+   * <code>MAPS_FEATURE_KIND_STADIUM = 52;</code>
    */
-  MAPSFEATUREKIND_STADIUM(52),
+  MAPS_FEATURE_KIND_STADIUM(52),
   /**
-   * <code>MAPSFEATUREKIND_STREAM = 53;</code>
+   * <code>MAPS_FEATURE_KIND_STREAM = 53;</code>
    */
-  MAPSFEATUREKIND_STREAM(53),
+  MAPS_FEATURE_KIND_STREAM(53),
   /**
-   * <code>MAPSFEATUREKIND_TAXIWAY = 54;</code>
+   * <code>MAPS_FEATURE_KIND_TAXIWAY = 54;</code>
    */
-  MAPSFEATUREKIND_TAXIWAY(54),
+  MAPS_FEATURE_KIND_TAXIWAY(54),
   /**
-   * <code>MAPSFEATUREKIND_THEATRE = 55;</code>
+   * <code>MAPS_FEATURE_KIND_THEATRE = 55;</code>
    */
-  MAPSFEATUREKIND_THEATRE(55),
+  MAPS_FEATURE_KIND_THEATRE(55),
   /**
-   * <code>MAPSFEATUREKIND_UNIVERSITY = 56;</code>
+   * <code>MAPS_FEATURE_KIND_UNIVERSITY = 56;</code>
    */
-  MAPSFEATUREKIND_UNIVERSITY(56),
+  MAPS_FEATURE_KIND_UNIVERSITY(56),
   /**
-   * <code>MAPSFEATUREKIND_URBAN_AREA = 57;</code>
+   * <code>MAPS_FEATURE_KIND_URBAN_AREA = 57;</code>
    */
-  MAPSFEATUREKIND_URBAN_AREA(57),
+  MAPS_FEATURE_KIND_URBAN_AREA(57),
   /**
-   * <code>MAPSFEATUREKIND_WATER = 58;</code>
+   * <code>MAPS_FEATURE_KIND_WATER = 58;</code>
    */
-  MAPSFEATUREKIND_WATER(58),
+  MAPS_FEATURE_KIND_WATER(58),
   /**
-   * <code>MAPSFEATUREKIND_WETLAND = 59;</code>
+   * <code>MAPS_FEATURE_KIND_WETLAND = 59;</code>
    */
-  MAPSFEATUREKIND_WETLAND(59),
+  MAPS_FEATURE_KIND_WETLAND(59),
   /**
-   * <code>MAPSFEATUREKIND_WOOD = 60;</code>
+   * <code>MAPS_FEATURE_KIND_WOOD = 60;</code>
    */
-  MAPSFEATUREKIND_WOOD(60),
+  MAPS_FEATURE_KIND_WOOD(60),
   /**
-   * <code>MAPSFEATUREKIND_DEBUG_TILE_OUTLINE = 61;</code>
+   * <code>MAPS_FEATURE_KIND_DEBUG_TILE_OUTLINE = 61;</code>
    */
-  MAPSFEATUREKIND_DEBUG_TILE_OUTLINE(61),
+  MAPS_FEATURE_KIND_DEBUG_TILE_OUTLINE(61),
   /**
-   * <code>MAPSFEATUREKIND_DEBUG_TILE_SURFACE = 62;</code>
+   * <code>MAPS_FEATURE_KIND_DEBUG_TILE_SURFACE = 62;</code>
    */
-  MAPSFEATUREKIND_DEBUG_TILE_SURFACE(62),
+  MAPS_FEATURE_KIND_DEBUG_TILE_SURFACE(62),
   /**
-   * <code>MAPSFEATUREKIND_OTHER = 63;</code>
+   * <code>MAPS_FEATURE_KIND_OTHER = 63;</code>
    */
-  MAPSFEATUREKIND_OTHER(63),
+  MAPS_FEATURE_KIND_OTHER(63),
   /**
-   * <code>MAPSFEATUREKIND_ANY = 2000;</code>
+   * <code>MAPS_FEATURE_KIND_ANY = 2000;</code>
    */
-  MAPSFEATUREKIND_ANY(2000),
+  MAPS_FEATURE_KIND_ANY(2000),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>MAPSFEATUREKIND_UNDEFINED = 0;</code>
+   * <code>MAPS_FEATURE_KIND_UNDEFINED = 0;</code>
    */
-  public static final int MAPSFEATUREKIND_UNDEFINED_VALUE = 0;
+  public static final int MAPS_FEATURE_KIND_UNDEFINED_VALUE = 0;
   /**
-   * <code>MAPSFEATUREKIND_BASIN = 1;</code>
+   * <code>MAPS_FEATURE_KIND_BASIN = 1;</code>
    */
-  public static final int MAPSFEATUREKIND_BASIN_VALUE = 1;
+  public static final int MAPS_FEATURE_KIND_BASIN_VALUE = 1;
   /**
-   * <code>MAPSFEATUREKIND_CANAL = 2;</code>
+   * <code>MAPS_FEATURE_KIND_CANAL = 2;</code>
    */
-  public static final int MAPSFEATUREKIND_CANAL_VALUE = 2;
+  public static final int MAPS_FEATURE_KIND_CANAL_VALUE = 2;
   /**
-   * <code>MAPSFEATUREKIND_CEMETERY = 3;</code>
+   * <code>MAPS_FEATURE_KIND_CEMETERY = 3;</code>
    */
-  public static final int MAPSFEATUREKIND_CEMETERY_VALUE = 3;
+  public static final int MAPS_FEATURE_KIND_CEMETERY_VALUE = 3;
   /**
-   * <code>MAPSFEATUREKIND_CINEMA = 4;</code>
+   * <code>MAPS_FEATURE_KIND_CINEMA = 4;</code>
    */
-  public static final int MAPSFEATUREKIND_CINEMA_VALUE = 4;
+  public static final int MAPS_FEATURE_KIND_CINEMA_VALUE = 4;
   /**
-   * <code>MAPSFEATUREKIND_COLLEGE = 5;</code>
+   * <code>MAPS_FEATURE_KIND_COLLEGE = 5;</code>
    */
-  public static final int MAPSFEATUREKIND_COLLEGE_VALUE = 5;
+  public static final int MAPS_FEATURE_KIND_COLLEGE_VALUE = 5;
   /**
-   * <code>MAPSFEATUREKIND_COMMERCIAL = 6;</code>
+   * <code>MAPS_FEATURE_KIND_COMMERCIAL = 6;</code>
    */
-  public static final int MAPSFEATUREKIND_COMMERCIAL_VALUE = 6;
+  public static final int MAPS_FEATURE_KIND_COMMERCIAL_VALUE = 6;
   /**
-   * <code>MAPSFEATUREKIND_COMMON = 7;</code>
+   * <code>MAPS_FEATURE_KIND_COMMON = 7;</code>
    */
-  public static final int MAPSFEATUREKIND_COMMON_VALUE = 7;
+  public static final int MAPS_FEATURE_KIND_COMMON_VALUE = 7;
   /**
-   * <code>MAPSFEATUREKIND_DAM = 8;</code>
+   * <code>MAPS_FEATURE_KIND_DAM = 8;</code>
    */
-  public static final int MAPSFEATUREKIND_DAM_VALUE = 8;
+  public static final int MAPS_FEATURE_KIND_DAM_VALUE = 8;
   /**
-   * <code>MAPSFEATUREKIND_DITCH = 9;</code>
+   * <code>MAPS_FEATURE_KIND_DITCH = 9;</code>
    */
-  public static final int MAPSFEATUREKIND_DITCH_VALUE = 9;
+  public static final int MAPS_FEATURE_KIND_DITCH_VALUE = 9;
   /**
-   * <code>MAPSFEATUREKIND_DOCK = 10;</code>
+   * <code>MAPS_FEATURE_KIND_DOCK = 10;</code>
    */
-  public static final int MAPSFEATUREKIND_DOCK_VALUE = 10;
+  public static final int MAPS_FEATURE_KIND_DOCK_VALUE = 10;
   /**
-   * <code>MAPSFEATUREKIND_DRAIN = 11;</code>
+   * <code>MAPS_FEATURE_KIND_DRAIN = 11;</code>
    */
-  public static final int MAPSFEATUREKIND_DRAIN_VALUE = 11;
+  public static final int MAPS_FEATURE_KIND_DRAIN_VALUE = 11;
   /**
-   * <code>MAPSFEATUREKIND_FARM = 12;</code>
+   * <code>MAPS_FEATURE_KIND_FARM = 12;</code>
    */
-  public static final int MAPSFEATUREKIND_FARM_VALUE = 12;
+  public static final int MAPS_FEATURE_KIND_FARM_VALUE = 12;
   /**
-   * <code>MAPSFEATUREKIND_FARMLAND = 13;</code>
+   * <code>MAPS_FEATURE_KIND_FARMLAND = 13;</code>
    */
-  public static final int MAPSFEATUREKIND_FARMLAND_VALUE = 13;
+  public static final int MAPS_FEATURE_KIND_FARMLAND_VALUE = 13;
   /**
-   * <code>MAPSFEATUREKIND_FARMYARD = 14;</code>
+   * <code>MAPS_FEATURE_KIND_FARMYARD = 14;</code>
    */
-  public static final int MAPSFEATUREKIND_FARMYARD_VALUE = 14;
+  public static final int MAPS_FEATURE_KIND_FARMYARD_VALUE = 14;
   /**
-   * <code>MAPSFEATUREKIND_FOOTWAY = 15;</code>
+   * <code>MAPS_FEATURE_KIND_FOOTWAY = 15;</code>
    */
-  public static final int MAPSFEATUREKIND_FOOTWAY_VALUE = 15;
+  public static final int MAPS_FEATURE_KIND_FOOTWAY_VALUE = 15;
   /**
-   * <code>MAPSFEATUREKIND_FOREST = 16;</code>
+   * <code>MAPS_FEATURE_KIND_FOREST = 16;</code>
    */
-  public static final int MAPSFEATUREKIND_FOREST_VALUE = 16;
+  public static final int MAPS_FEATURE_KIND_FOREST_VALUE = 16;
   /**
-   * <code>MAPSFEATUREKIND_GARDEN = 17;</code>
+   * <code>MAPS_FEATURE_KIND_GARDEN = 17;</code>
    */
-  public static final int MAPSFEATUREKIND_GARDEN_VALUE = 17;
+  public static final int MAPS_FEATURE_KIND_GARDEN_VALUE = 17;
   /**
-   * <code>MAPSFEATUREKIND_GLACIER = 18;</code>
+   * <code>MAPS_FEATURE_KIND_GLACIER = 18;</code>
    */
-  public static final int MAPSFEATUREKIND_GLACIER_VALUE = 18;
+  public static final int MAPS_FEATURE_KIND_GLACIER_VALUE = 18;
   /**
-   * <code>MAPSFEATUREKIND_GOLF_COURSE = 19;</code>
+   * <code>MAPS_FEATURE_KIND_GOLF_COURSE = 19;</code>
    */
-  public static final int MAPSFEATUREKIND_GOLF_COURSE_VALUE = 19;
+  public static final int MAPS_FEATURE_KIND_GOLF_COURSE_VALUE = 19;
   /**
-   * <code>MAPSFEATUREKIND_GRASS = 20;</code>
+   * <code>MAPS_FEATURE_KIND_GRASS = 20;</code>
    */
-  public static final int MAPSFEATUREKIND_GRASS_VALUE = 20;
+  public static final int MAPS_FEATURE_KIND_GRASS_VALUE = 20;
   /**
-   * <code>MAPSFEATUREKIND_HIGHWAY = 21;</code>
+   * <code>MAPS_FEATURE_KIND_HIGHWAY = 21;</code>
    */
-  public static final int MAPSFEATUREKIND_HIGHWAY_VALUE = 21;
+  public static final int MAPS_FEATURE_KIND_HIGHWAY_VALUE = 21;
   /**
-   * <code>MAPSFEATUREKIND_HOSPITAL = 22;</code>
+   * <code>MAPS_FEATURE_KIND_HOSPITAL = 22;</code>
    */
-  public static final int MAPSFEATUREKIND_HOSPITAL_VALUE = 22;
+  public static final int MAPS_FEATURE_KIND_HOSPITAL_VALUE = 22;
   /**
-   * <code>MAPSFEATUREKIND_HOTEL = 23;</code>
+   * <code>MAPS_FEATURE_KIND_HOTEL = 23;</code>
    */
-  public static final int MAPSFEATUREKIND_HOTEL_VALUE = 23;
+  public static final int MAPS_FEATURE_KIND_HOTEL_VALUE = 23;
   /**
-   * <code>MAPSFEATUREKIND_INDUSTRIAL = 24;</code>
+   * <code>MAPS_FEATURE_KIND_INDUSTRIAL = 24;</code>
    */
-  public static final int MAPSFEATUREKIND_INDUSTRIAL_VALUE = 24;
+  public static final int MAPS_FEATURE_KIND_INDUSTRIAL_VALUE = 24;
   /**
-   * <code>MAPSFEATUREKIND_LAKE = 25;</code>
+   * <code>MAPS_FEATURE_KIND_LAKE = 25;</code>
    */
-  public static final int MAPSFEATUREKIND_LAKE_VALUE = 25;
+  public static final int MAPS_FEATURE_KIND_LAKE_VALUE = 25;
   /**
-   * <code>MAPSFEATUREKIND_LAND = 26;</code>
+   * <code>MAPS_FEATURE_KIND_LAND = 26;</code>
    */
-  public static final int MAPSFEATUREKIND_LAND_VALUE = 26;
+  public static final int MAPS_FEATURE_KIND_LAND_VALUE = 26;
   /**
-   * <code>MAPSFEATUREKIND_LIBRARY = 27;</code>
+   * <code>MAPS_FEATURE_KIND_LIBRARY = 27;</code>
    */
-  public static final int MAPSFEATUREKIND_LIBRARY_VALUE = 27;
+  public static final int MAPS_FEATURE_KIND_LIBRARY_VALUE = 27;
   /**
-   * <code>MAPSFEATUREKIND_MAJOR_ROAD = 28;</code>
+   * <code>MAPS_FEATURE_KIND_MAJOR_ROAD = 28;</code>
    */
-  public static final int MAPSFEATUREKIND_MAJOR_ROAD_VALUE = 28;
+  public static final int MAPS_FEATURE_KIND_MAJOR_ROAD_VALUE = 28;
   /**
-   * <code>MAPSFEATUREKIND_MEADOW = 29;</code>
+   * <code>MAPS_FEATURE_KIND_MEADOW = 29;</code>
    */
-  public static final int MAPSFEATUREKIND_MEADOW_VALUE = 29;
+  public static final int MAPS_FEATURE_KIND_MEADOW_VALUE = 29;
   /**
-   * <code>MAPSFEATUREKIND_MINOR_ROAD = 30;</code>
+   * <code>MAPS_FEATURE_KIND_MINOR_ROAD = 30;</code>
    */
-  public static final int MAPSFEATUREKIND_MINOR_ROAD_VALUE = 30;
+  public static final int MAPS_FEATURE_KIND_MINOR_ROAD_VALUE = 30;
   /**
-   * <code>MAPSFEATUREKIND_NATURE_RESERVE = 31;</code>
+   * <code>MAPS_FEATURE_KIND_NATURE_RESERVE = 31;</code>
    */
-  public static final int MAPSFEATUREKIND_NATURE_RESERVE_VALUE = 31;
+  public static final int MAPS_FEATURE_KIND_NATURE_RESERVE_VALUE = 31;
   /**
-   * <code>MAPSFEATUREKIND_OCEAN = 32;</code>
+   * <code>MAPS_FEATURE_KIND_OCEAN = 32;</code>
    */
-  public static final int MAPSFEATUREKIND_OCEAN_VALUE = 32;
+  public static final int MAPS_FEATURE_KIND_OCEAN_VALUE = 32;
   /**
-   * <code>MAPSFEATUREKIND_PARK = 33;</code>
+   * <code>MAPS_FEATURE_KIND_PARK = 33;</code>
    */
-  public static final int MAPSFEATUREKIND_PARK_VALUE = 33;
+  public static final int MAPS_FEATURE_KIND_PARK_VALUE = 33;
   /**
-   * <code>MAPSFEATUREKIND_PARKING = 34;</code>
+   * <code>MAPS_FEATURE_KIND_PARKING = 34;</code>
    */
-  public static final int MAPSFEATUREKIND_PARKING_VALUE = 34;
+  public static final int MAPS_FEATURE_KIND_PARKING_VALUE = 34;
   /**
-   * <code>MAPSFEATUREKIND_PATH = 35;</code>
+   * <code>MAPS_FEATURE_KIND_PATH = 35;</code>
    */
-  public static final int MAPSFEATUREKIND_PATH_VALUE = 35;
+  public static final int MAPS_FEATURE_KIND_PATH_VALUE = 35;
   /**
-   * <code>MAPSFEATUREKIND_PEDESTRIAN = 36;</code>
+   * <code>MAPS_FEATURE_KIND_PEDESTRIAN = 36;</code>
    */
-  public static final int MAPSFEATUREKIND_PEDESTRIAN_VALUE = 36;
+  public static final int MAPS_FEATURE_KIND_PEDESTRIAN_VALUE = 36;
   /**
-   * <code>MAPSFEATUREKIND_PITCH = 37;</code>
+   * <code>MAPS_FEATURE_KIND_PITCH = 37;</code>
    */
-  public static final int MAPSFEATUREKIND_PITCH_VALUE = 37;
+  public static final int MAPS_FEATURE_KIND_PITCH_VALUE = 37;
   /**
-   * <code>MAPSFEATUREKIND_PLACE_OF_WORSHIP = 38;</code>
+   * <code>MAPS_FEATURE_KIND_PLACE_OF_WORSHIP = 38;</code>
    */
-  public static final int MAPSFEATUREKIND_PLACE_OF_WORSHIP_VALUE = 38;
+  public static final int MAPS_FEATURE_KIND_PLACE_OF_WORSHIP_VALUE = 38;
   /**
-   * <code>MAPSFEATUREKIND_PLAYA = 39;</code>
+   * <code>MAPS_FEATURE_KIND_PLAYA = 39;</code>
    */
-  public static final int MAPSFEATUREKIND_PLAYA_VALUE = 39;
+  public static final int MAPS_FEATURE_KIND_PLAYA_VALUE = 39;
   /**
-   * <code>MAPSFEATUREKIND_PLAYGROUND = 40;</code>
+   * <code>MAPS_FEATURE_KIND_PLAYGROUND = 40;</code>
    */
-  public static final int MAPSFEATUREKIND_PLAYGROUND_VALUE = 40;
+  public static final int MAPS_FEATURE_KIND_PLAYGROUND_VALUE = 40;
   /**
-   * <code>MAPSFEATUREKIND_QUARRY = 41;</code>
+   * <code>MAPS_FEATURE_KIND_QUARRY = 41;</code>
    */
-  public static final int MAPSFEATUREKIND_QUARRY_VALUE = 41;
+  public static final int MAPS_FEATURE_KIND_QUARRY_VALUE = 41;
   /**
-   * <code>MAPSFEATUREKIND_RAILWAY = 42;</code>
+   * <code>MAPS_FEATURE_KIND_RAILWAY = 42;</code>
    */
-  public static final int MAPSFEATUREKIND_RAILWAY_VALUE = 42;
+  public static final int MAPS_FEATURE_KIND_RAILWAY_VALUE = 42;
   /**
-   * <code>MAPSFEATUREKIND_RECREATION_AREA = 43;</code>
+   * <code>MAPS_FEATURE_KIND_RECREATION_AREA = 43;</code>
    */
-  public static final int MAPSFEATUREKIND_RECREATION_AREA_VALUE = 43;
+  public static final int MAPS_FEATURE_KIND_RECREATION_AREA_VALUE = 43;
   /**
-   * <code>MAPSFEATUREKIND_RESERVOIR = 44;</code>
+   * <code>MAPS_FEATURE_KIND_RESERVOIR = 44;</code>
    */
-  public static final int MAPSFEATUREKIND_RESERVOIR_VALUE = 44;
+  public static final int MAPS_FEATURE_KIND_RESERVOIR_VALUE = 44;
   /**
-   * <code>MAPSFEATUREKIND_RESIDENTIAL = 45;</code>
+   * <code>MAPS_FEATURE_KIND_RESIDENTIAL = 45;</code>
    */
-  public static final int MAPSFEATUREKIND_RESIDENTIAL_VALUE = 45;
+  public static final int MAPS_FEATURE_KIND_RESIDENTIAL_VALUE = 45;
   /**
-   * <code>MAPSFEATUREKIND_RETAIL = 46;</code>
+   * <code>MAPS_FEATURE_KIND_RETAIL = 46;</code>
    */
-  public static final int MAPSFEATUREKIND_RETAIL_VALUE = 46;
+  public static final int MAPS_FEATURE_KIND_RETAIL_VALUE = 46;
   /**
-   * <code>MAPSFEATUREKIND_RIVER = 47;</code>
+   * <code>MAPS_FEATURE_KIND_RIVER = 47;</code>
    */
-  public static final int MAPSFEATUREKIND_RIVER_VALUE = 47;
+  public static final int MAPS_FEATURE_KIND_RIVER_VALUE = 47;
   /**
-   * <code>MAPSFEATUREKIND_RIVERBANK = 48;</code>
+   * <code>MAPS_FEATURE_KIND_RIVERBANK = 48;</code>
    */
-  public static final int MAPSFEATUREKIND_RIVERBANK_VALUE = 48;
+  public static final int MAPS_FEATURE_KIND_RIVERBANK_VALUE = 48;
   /**
-   * <code>MAPSFEATUREKIND_RUNWAY = 49;</code>
+   * <code>MAPS_FEATURE_KIND_RUNWAY = 49;</code>
    */
-  public static final int MAPSFEATUREKIND_RUNWAY_VALUE = 49;
+  public static final int MAPS_FEATURE_KIND_RUNWAY_VALUE = 49;
   /**
-   * <code>MAPSFEATUREKIND_SCHOOL = 50;</code>
+   * <code>MAPS_FEATURE_KIND_SCHOOL = 50;</code>
    */
-  public static final int MAPSFEATUREKIND_SCHOOL_VALUE = 50;
+  public static final int MAPS_FEATURE_KIND_SCHOOL_VALUE = 50;
   /**
-   * <code>MAPSFEATUREKIND_SPORTS_CENTER = 51;</code>
+   * <code>MAPS_FEATURE_KIND_SPORTS_CENTER = 51;</code>
    */
-  public static final int MAPSFEATUREKIND_SPORTS_CENTER_VALUE = 51;
+  public static final int MAPS_FEATURE_KIND_SPORTS_CENTER_VALUE = 51;
   /**
-   * <code>MAPSFEATUREKIND_STADIUM = 52;</code>
+   * <code>MAPS_FEATURE_KIND_STADIUM = 52;</code>
    */
-  public static final int MAPSFEATUREKIND_STADIUM_VALUE = 52;
+  public static final int MAPS_FEATURE_KIND_STADIUM_VALUE = 52;
   /**
-   * <code>MAPSFEATUREKIND_STREAM = 53;</code>
+   * <code>MAPS_FEATURE_KIND_STREAM = 53;</code>
    */
-  public static final int MAPSFEATUREKIND_STREAM_VALUE = 53;
+  public static final int MAPS_FEATURE_KIND_STREAM_VALUE = 53;
   /**
-   * <code>MAPSFEATUREKIND_TAXIWAY = 54;</code>
+   * <code>MAPS_FEATURE_KIND_TAXIWAY = 54;</code>
    */
-  public static final int MAPSFEATUREKIND_TAXIWAY_VALUE = 54;
+  public static final int MAPS_FEATURE_KIND_TAXIWAY_VALUE = 54;
   /**
-   * <code>MAPSFEATUREKIND_THEATRE = 55;</code>
+   * <code>MAPS_FEATURE_KIND_THEATRE = 55;</code>
    */
-  public static final int MAPSFEATUREKIND_THEATRE_VALUE = 55;
+  public static final int MAPS_FEATURE_KIND_THEATRE_VALUE = 55;
   /**
-   * <code>MAPSFEATUREKIND_UNIVERSITY = 56;</code>
+   * <code>MAPS_FEATURE_KIND_UNIVERSITY = 56;</code>
    */
-  public static final int MAPSFEATUREKIND_UNIVERSITY_VALUE = 56;
+  public static final int MAPS_FEATURE_KIND_UNIVERSITY_VALUE = 56;
   /**
-   * <code>MAPSFEATUREKIND_URBAN_AREA = 57;</code>
+   * <code>MAPS_FEATURE_KIND_URBAN_AREA = 57;</code>
    */
-  public static final int MAPSFEATUREKIND_URBAN_AREA_VALUE = 57;
+  public static final int MAPS_FEATURE_KIND_URBAN_AREA_VALUE = 57;
   /**
-   * <code>MAPSFEATUREKIND_WATER = 58;</code>
+   * <code>MAPS_FEATURE_KIND_WATER = 58;</code>
    */
-  public static final int MAPSFEATUREKIND_WATER_VALUE = 58;
+  public static final int MAPS_FEATURE_KIND_WATER_VALUE = 58;
   /**
-   * <code>MAPSFEATUREKIND_WETLAND = 59;</code>
+   * <code>MAPS_FEATURE_KIND_WETLAND = 59;</code>
    */
-  public static final int MAPSFEATUREKIND_WETLAND_VALUE = 59;
+  public static final int MAPS_FEATURE_KIND_WETLAND_VALUE = 59;
   /**
-   * <code>MAPSFEATUREKIND_WOOD = 60;</code>
+   * <code>MAPS_FEATURE_KIND_WOOD = 60;</code>
    */
-  public static final int MAPSFEATUREKIND_WOOD_VALUE = 60;
+  public static final int MAPS_FEATURE_KIND_WOOD_VALUE = 60;
   /**
-   * <code>MAPSFEATUREKIND_DEBUG_TILE_OUTLINE = 61;</code>
+   * <code>MAPS_FEATURE_KIND_DEBUG_TILE_OUTLINE = 61;</code>
    */
-  public static final int MAPSFEATUREKIND_DEBUG_TILE_OUTLINE_VALUE = 61;
+  public static final int MAPS_FEATURE_KIND_DEBUG_TILE_OUTLINE_VALUE = 61;
   /**
-   * <code>MAPSFEATUREKIND_DEBUG_TILE_SURFACE = 62;</code>
+   * <code>MAPS_FEATURE_KIND_DEBUG_TILE_SURFACE = 62;</code>
    */
-  public static final int MAPSFEATUREKIND_DEBUG_TILE_SURFACE_VALUE = 62;
+  public static final int MAPS_FEATURE_KIND_DEBUG_TILE_SURFACE_VALUE = 62;
   /**
-   * <code>MAPSFEATUREKIND_OTHER = 63;</code>
+   * <code>MAPS_FEATURE_KIND_OTHER = 63;</code>
    */
-  public static final int MAPSFEATUREKIND_OTHER_VALUE = 63;
+  public static final int MAPS_FEATURE_KIND_OTHER_VALUE = 63;
   /**
-   * <code>MAPSFEATUREKIND_ANY = 2000;</code>
+   * <code>MAPS_FEATURE_KIND_ANY = 2000;</code>
    */
-  public static final int MAPSFEATUREKIND_ANY_VALUE = 2000;
+  public static final int MAPS_FEATURE_KIND_ANY_VALUE = 2000;
 
 
   public final int getNumber() {
@@ -564,71 +564,71 @@ public enum MapsFeatureKind
    */
   public static MapsFeatureKind forNumber(int value) {
     switch (value) {
-      case 0: return MAPSFEATUREKIND_UNDEFINED;
-      case 1: return MAPSFEATUREKIND_BASIN;
-      case 2: return MAPSFEATUREKIND_CANAL;
-      case 3: return MAPSFEATUREKIND_CEMETERY;
-      case 4: return MAPSFEATUREKIND_CINEMA;
-      case 5: return MAPSFEATUREKIND_COLLEGE;
-      case 6: return MAPSFEATUREKIND_COMMERCIAL;
-      case 7: return MAPSFEATUREKIND_COMMON;
-      case 8: return MAPSFEATUREKIND_DAM;
-      case 9: return MAPSFEATUREKIND_DITCH;
-      case 10: return MAPSFEATUREKIND_DOCK;
-      case 11: return MAPSFEATUREKIND_DRAIN;
-      case 12: return MAPSFEATUREKIND_FARM;
-      case 13: return MAPSFEATUREKIND_FARMLAND;
-      case 14: return MAPSFEATUREKIND_FARMYARD;
-      case 15: return MAPSFEATUREKIND_FOOTWAY;
-      case 16: return MAPSFEATUREKIND_FOREST;
-      case 17: return MAPSFEATUREKIND_GARDEN;
-      case 18: return MAPSFEATUREKIND_GLACIER;
-      case 19: return MAPSFEATUREKIND_GOLF_COURSE;
-      case 20: return MAPSFEATUREKIND_GRASS;
-      case 21: return MAPSFEATUREKIND_HIGHWAY;
-      case 22: return MAPSFEATUREKIND_HOSPITAL;
-      case 23: return MAPSFEATUREKIND_HOTEL;
-      case 24: return MAPSFEATUREKIND_INDUSTRIAL;
-      case 25: return MAPSFEATUREKIND_LAKE;
-      case 26: return MAPSFEATUREKIND_LAND;
-      case 27: return MAPSFEATUREKIND_LIBRARY;
-      case 28: return MAPSFEATUREKIND_MAJOR_ROAD;
-      case 29: return MAPSFEATUREKIND_MEADOW;
-      case 30: return MAPSFEATUREKIND_MINOR_ROAD;
-      case 31: return MAPSFEATUREKIND_NATURE_RESERVE;
-      case 32: return MAPSFEATUREKIND_OCEAN;
-      case 33: return MAPSFEATUREKIND_PARK;
-      case 34: return MAPSFEATUREKIND_PARKING;
-      case 35: return MAPSFEATUREKIND_PATH;
-      case 36: return MAPSFEATUREKIND_PEDESTRIAN;
-      case 37: return MAPSFEATUREKIND_PITCH;
-      case 38: return MAPSFEATUREKIND_PLACE_OF_WORSHIP;
-      case 39: return MAPSFEATUREKIND_PLAYA;
-      case 40: return MAPSFEATUREKIND_PLAYGROUND;
-      case 41: return MAPSFEATUREKIND_QUARRY;
-      case 42: return MAPSFEATUREKIND_RAILWAY;
-      case 43: return MAPSFEATUREKIND_RECREATION_AREA;
-      case 44: return MAPSFEATUREKIND_RESERVOIR;
-      case 45: return MAPSFEATUREKIND_RESIDENTIAL;
-      case 46: return MAPSFEATUREKIND_RETAIL;
-      case 47: return MAPSFEATUREKIND_RIVER;
-      case 48: return MAPSFEATUREKIND_RIVERBANK;
-      case 49: return MAPSFEATUREKIND_RUNWAY;
-      case 50: return MAPSFEATUREKIND_SCHOOL;
-      case 51: return MAPSFEATUREKIND_SPORTS_CENTER;
-      case 52: return MAPSFEATUREKIND_STADIUM;
-      case 53: return MAPSFEATUREKIND_STREAM;
-      case 54: return MAPSFEATUREKIND_TAXIWAY;
-      case 55: return MAPSFEATUREKIND_THEATRE;
-      case 56: return MAPSFEATUREKIND_UNIVERSITY;
-      case 57: return MAPSFEATUREKIND_URBAN_AREA;
-      case 58: return MAPSFEATUREKIND_WATER;
-      case 59: return MAPSFEATUREKIND_WETLAND;
-      case 60: return MAPSFEATUREKIND_WOOD;
-      case 61: return MAPSFEATUREKIND_DEBUG_TILE_OUTLINE;
-      case 62: return MAPSFEATUREKIND_DEBUG_TILE_SURFACE;
-      case 63: return MAPSFEATUREKIND_OTHER;
-      case 2000: return MAPSFEATUREKIND_ANY;
+      case 0: return MAPS_FEATURE_KIND_UNDEFINED;
+      case 1: return MAPS_FEATURE_KIND_BASIN;
+      case 2: return MAPS_FEATURE_KIND_CANAL;
+      case 3: return MAPS_FEATURE_KIND_CEMETERY;
+      case 4: return MAPS_FEATURE_KIND_CINEMA;
+      case 5: return MAPS_FEATURE_KIND_COLLEGE;
+      case 6: return MAPS_FEATURE_KIND_COMMERCIAL;
+      case 7: return MAPS_FEATURE_KIND_COMMON;
+      case 8: return MAPS_FEATURE_KIND_DAM;
+      case 9: return MAPS_FEATURE_KIND_DITCH;
+      case 10: return MAPS_FEATURE_KIND_DOCK;
+      case 11: return MAPS_FEATURE_KIND_DRAIN;
+      case 12: return MAPS_FEATURE_KIND_FARM;
+      case 13: return MAPS_FEATURE_KIND_FARMLAND;
+      case 14: return MAPS_FEATURE_KIND_FARMYARD;
+      case 15: return MAPS_FEATURE_KIND_FOOTWAY;
+      case 16: return MAPS_FEATURE_KIND_FOREST;
+      case 17: return MAPS_FEATURE_KIND_GARDEN;
+      case 18: return MAPS_FEATURE_KIND_GLACIER;
+      case 19: return MAPS_FEATURE_KIND_GOLF_COURSE;
+      case 20: return MAPS_FEATURE_KIND_GRASS;
+      case 21: return MAPS_FEATURE_KIND_HIGHWAY;
+      case 22: return MAPS_FEATURE_KIND_HOSPITAL;
+      case 23: return MAPS_FEATURE_KIND_HOTEL;
+      case 24: return MAPS_FEATURE_KIND_INDUSTRIAL;
+      case 25: return MAPS_FEATURE_KIND_LAKE;
+      case 26: return MAPS_FEATURE_KIND_LAND;
+      case 27: return MAPS_FEATURE_KIND_LIBRARY;
+      case 28: return MAPS_FEATURE_KIND_MAJOR_ROAD;
+      case 29: return MAPS_FEATURE_KIND_MEADOW;
+      case 30: return MAPS_FEATURE_KIND_MINOR_ROAD;
+      case 31: return MAPS_FEATURE_KIND_NATURE_RESERVE;
+      case 32: return MAPS_FEATURE_KIND_OCEAN;
+      case 33: return MAPS_FEATURE_KIND_PARK;
+      case 34: return MAPS_FEATURE_KIND_PARKING;
+      case 35: return MAPS_FEATURE_KIND_PATH;
+      case 36: return MAPS_FEATURE_KIND_PEDESTRIAN;
+      case 37: return MAPS_FEATURE_KIND_PITCH;
+      case 38: return MAPS_FEATURE_KIND_PLACE_OF_WORSHIP;
+      case 39: return MAPS_FEATURE_KIND_PLAYA;
+      case 40: return MAPS_FEATURE_KIND_PLAYGROUND;
+      case 41: return MAPS_FEATURE_KIND_QUARRY;
+      case 42: return MAPS_FEATURE_KIND_RAILWAY;
+      case 43: return MAPS_FEATURE_KIND_RECREATION_AREA;
+      case 44: return MAPS_FEATURE_KIND_RESERVOIR;
+      case 45: return MAPS_FEATURE_KIND_RESIDENTIAL;
+      case 46: return MAPS_FEATURE_KIND_RETAIL;
+      case 47: return MAPS_FEATURE_KIND_RIVER;
+      case 48: return MAPS_FEATURE_KIND_RIVERBANK;
+      case 49: return MAPS_FEATURE_KIND_RUNWAY;
+      case 50: return MAPS_FEATURE_KIND_SCHOOL;
+      case 51: return MAPS_FEATURE_KIND_SPORTS_CENTER;
+      case 52: return MAPS_FEATURE_KIND_STADIUM;
+      case 53: return MAPS_FEATURE_KIND_STREAM;
+      case 54: return MAPS_FEATURE_KIND_TAXIWAY;
+      case 55: return MAPS_FEATURE_KIND_THEATRE;
+      case 56: return MAPS_FEATURE_KIND_UNIVERSITY;
+      case 57: return MAPS_FEATURE_KIND_URBAN_AREA;
+      case 58: return MAPS_FEATURE_KIND_WATER;
+      case 59: return MAPS_FEATURE_KIND_WETLAND;
+      case 60: return MAPS_FEATURE_KIND_WOOD;
+      case 61: return MAPS_FEATURE_KIND_DEBUG_TILE_OUTLINE;
+      case 62: return MAPS_FEATURE_KIND_DEBUG_TILE_SURFACE;
+      case 63: return MAPS_FEATURE_KIND_OTHER;
+      case 2000: return MAPS_FEATURE_KIND_ANY;
       default: return null;
     }
   }
@@ -659,7 +659,7 @@ public enum MapsFeatureKind
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(6);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(7);
   }
 
   private static final MapsFeatureKind[] VALUES = values();

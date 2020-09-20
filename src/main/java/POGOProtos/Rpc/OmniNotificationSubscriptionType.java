@@ -16,32 +16,32 @@ package POGOProtos.Rpc;
 public enum OmniNotificationSubscriptionType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>OMNINOTIFICATIONSUBSCRIPTIONTYPE_OPTED_IN = 0;</code>
+   * <code>OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_OPTED_IN = 0;</code>
    */
-  OMNINOTIFICATIONSUBSCRIPTIONTYPE_OPTED_IN(0),
+  OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_OPTED_IN(0),
   /**
-   * <code>OMNINOTIFICATIONSUBSCRIPTIONTYPE_SUBSCRIBED = 1;</code>
+   * <code>OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_SUBSCRIBED = 1;</code>
    */
-  OMNINOTIFICATIONSUBSCRIPTIONTYPE_SUBSCRIBED(1),
+  OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_SUBSCRIBED(1),
   /**
-   * <code>OMNINOTIFICATIONSUBSCRIPTIONTYPE_UNSUBSCRIBED = 2;</code>
+   * <code>OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_UNSUBSCRIBED = 2;</code>
    */
-  OMNINOTIFICATIONSUBSCRIPTIONTYPE_UNSUBSCRIBED(2),
+  OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_UNSUBSCRIBED(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>OMNINOTIFICATIONSUBSCRIPTIONTYPE_OPTED_IN = 0;</code>
+   * <code>OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_OPTED_IN = 0;</code>
    */
-  public static final int OMNINOTIFICATIONSUBSCRIPTIONTYPE_OPTED_IN_VALUE = 0;
+  public static final int OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_OPTED_IN_VALUE = 0;
   /**
-   * <code>OMNINOTIFICATIONSUBSCRIPTIONTYPE_SUBSCRIBED = 1;</code>
+   * <code>OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_SUBSCRIBED = 1;</code>
    */
-  public static final int OMNINOTIFICATIONSUBSCRIPTIONTYPE_SUBSCRIBED_VALUE = 1;
+  public static final int OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_SUBSCRIBED_VALUE = 1;
   /**
-   * <code>OMNINOTIFICATIONSUBSCRIPTIONTYPE_UNSUBSCRIBED = 2;</code>
+   * <code>OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_UNSUBSCRIBED = 2;</code>
    */
-  public static final int OMNINOTIFICATIONSUBSCRIPTIONTYPE_UNSUBSCRIBED_VALUE = 2;
+  public static final int OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_UNSUBSCRIBED_VALUE = 2;
 
 
   public final int getNumber() {
@@ -68,9 +68,9 @@ public enum OmniNotificationSubscriptionType
    */
   public static OmniNotificationSubscriptionType forNumber(int value) {
     switch (value) {
-      case 0: return OMNINOTIFICATIONSUBSCRIPTIONTYPE_OPTED_IN;
-      case 1: return OMNINOTIFICATIONSUBSCRIPTIONTYPE_SUBSCRIBED;
-      case 2: return OMNINOTIFICATIONSUBSCRIPTIONTYPE_UNSUBSCRIBED;
+      case 0: return OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_OPTED_IN;
+      case 1: return OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_SUBSCRIBED;
+      case 2: return OMNI_NOTIFICATION_SUBSCRIPTION_TYPE_UNSUBSCRIBED;
       default: return null;
     }
   }
@@ -101,7 +101,7 @@ public enum OmniNotificationSubscriptionType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(12);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(13);
   }
 
   private static final OmniNotificationSubscriptionType[] VALUES = values();

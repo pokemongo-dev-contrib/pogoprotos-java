@@ -16,24 +16,24 @@ package POGOProtos.Rpc;
 public enum HelpshiftAuthFailureReason
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>HELPSHIFTAUTHFAILUREREASON_AUTH_TOKEN_NOT_PROVIDED = 0;</code>
+   * <code>HELPSHIFT_AUTH_FAILURE_REASON_AUTH_TOKEN_NOT_PROVIDED = 0;</code>
    */
-  HELPSHIFTAUTHFAILUREREASON_AUTH_TOKEN_NOT_PROVIDED(0),
+  HELPSHIFT_AUTH_FAILURE_REASON_AUTH_TOKEN_NOT_PROVIDED(0),
   /**
-   * <code>HELPSHIFTAUTHFAILUREREASON_INVALID_AUTH_TOKEN = 1;</code>
+   * <code>HELPSHIFT_AUTH_FAILURE_REASON_INVALID_AUTH_TOKEN = 1;</code>
    */
-  HELPSHIFTAUTHFAILUREREASON_INVALID_AUTH_TOKEN(1),
+  HELPSHIFT_AUTH_FAILURE_REASON_INVALID_AUTH_TOKEN(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>HELPSHIFTAUTHFAILUREREASON_AUTH_TOKEN_NOT_PROVIDED = 0;</code>
+   * <code>HELPSHIFT_AUTH_FAILURE_REASON_AUTH_TOKEN_NOT_PROVIDED = 0;</code>
    */
-  public static final int HELPSHIFTAUTHFAILUREREASON_AUTH_TOKEN_NOT_PROVIDED_VALUE = 0;
+  public static final int HELPSHIFT_AUTH_FAILURE_REASON_AUTH_TOKEN_NOT_PROVIDED_VALUE = 0;
   /**
-   * <code>HELPSHIFTAUTHFAILUREREASON_INVALID_AUTH_TOKEN = 1;</code>
+   * <code>HELPSHIFT_AUTH_FAILURE_REASON_INVALID_AUTH_TOKEN = 1;</code>
    */
-  public static final int HELPSHIFTAUTHFAILUREREASON_INVALID_AUTH_TOKEN_VALUE = 1;
+  public static final int HELPSHIFT_AUTH_FAILURE_REASON_INVALID_AUTH_TOKEN_VALUE = 1;
 
 
   public final int getNumber() {
@@ -60,8 +60,8 @@ public enum HelpshiftAuthFailureReason
    */
   public static HelpshiftAuthFailureReason forNumber(int value) {
     switch (value) {
-      case 0: return HELPSHIFTAUTHFAILUREREASON_AUTH_TOKEN_NOT_PROVIDED;
-      case 1: return HELPSHIFTAUTHFAILUREREASON_INVALID_AUTH_TOKEN;
+      case 0: return HELPSHIFT_AUTH_FAILURE_REASON_AUTH_TOKEN_NOT_PROVIDED;
+      case 1: return HELPSHIFT_AUTH_FAILURE_REASON_INVALID_AUTH_TOKEN;
       default: return null;
     }
   }
@@ -92,7 +92,7 @@ public enum HelpshiftAuthFailureReason
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(9);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(10);
   }
 
   private static final HelpshiftAuthFailureReason[] VALUES = values();

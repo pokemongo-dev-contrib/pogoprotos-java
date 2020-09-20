@@ -13,72 +13,72 @@ package POGOProtos.Rpc;
 public enum SfidaConnectState
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>SFIDACONNECTSTATE_DISCONNECTED = 0;</code>
+   * <code>SFIDA_CONNECT_STATE_DISCONNECTED = 0;</code>
    */
-  SFIDACONNECTSTATE_DISCONNECTED(0),
+  SFIDA_CONNECT_STATE_DISCONNECTED(0),
   /**
-   * <code>SFIDACONNECTSTATE_DISCONNECTING = 1;</code>
+   * <code>SFIDA_CONNECT_STATE_DISCONNECTING = 1;</code>
    */
-  SFIDACONNECTSTATE_DISCONNECTING(1),
+  SFIDA_CONNECT_STATE_DISCONNECTING(1),
   /**
-   * <code>SFIDACONNECTSTATE_CONNECTED = 2;</code>
+   * <code>SFIDA_CONNECT_STATE_CONNECTED = 2;</code>
    */
-  SFIDACONNECTSTATE_CONNECTED(2),
+  SFIDA_CONNECT_STATE_CONNECTED(2),
   /**
-   * <code>SFIDACONNECTSTATE_DISCOVERED = 3;</code>
+   * <code>SFIDA_CONNECT_STATE_DISCOVERED = 3;</code>
    */
-  SFIDACONNECTSTATE_DISCOVERED(3),
+  SFIDA_CONNECT_STATE_DISCOVERED(3),
   /**
-   * <code>SFIDACONNECTSTATE_CERTIFIED = 4;</code>
+   * <code>SFIDA_CONNECT_STATE_CERTIFIED = 4;</code>
    */
-  SFIDACONNECTSTATE_CERTIFIED(4),
+  SFIDA_CONNECT_STATE_CERTIFIED(4),
   /**
-   * <code>SFIDACONNECTSTATE_SOFTWARE_UPDATE = 5;</code>
+   * <code>SFIDA_CONNECT_STATE_SOFTWARE_UPDATE = 5;</code>
    */
-  SFIDACONNECTSTATE_SOFTWARE_UPDATE(5),
+  SFIDA_CONNECT_STATE_SOFTWARE_UPDATE(5),
   /**
-   * <code>SFIDACONNECTSTATE_FAILED = 6;</code>
+   * <code>SFIDA_CONNECT_STATE_FAILED = 6;</code>
    */
-  SFIDACONNECTSTATE_FAILED(6),
+  SFIDA_CONNECT_STATE_FAILED(6),
   /**
-   * <code>SFIDACONNECTSTATE_CONNECTING = 7;</code>
+   * <code>SFIDA_CONNECT_STATE_CONNECTING = 7;</code>
    */
-  SFIDACONNECTSTATE_CONNECTING(7),
+  SFIDA_CONNECT_STATE_CONNECTING(7),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>SFIDACONNECTSTATE_DISCONNECTED = 0;</code>
+   * <code>SFIDA_CONNECT_STATE_DISCONNECTED = 0;</code>
    */
-  public static final int SFIDACONNECTSTATE_DISCONNECTED_VALUE = 0;
+  public static final int SFIDA_CONNECT_STATE_DISCONNECTED_VALUE = 0;
   /**
-   * <code>SFIDACONNECTSTATE_DISCONNECTING = 1;</code>
+   * <code>SFIDA_CONNECT_STATE_DISCONNECTING = 1;</code>
    */
-  public static final int SFIDACONNECTSTATE_DISCONNECTING_VALUE = 1;
+  public static final int SFIDA_CONNECT_STATE_DISCONNECTING_VALUE = 1;
   /**
-   * <code>SFIDACONNECTSTATE_CONNECTED = 2;</code>
+   * <code>SFIDA_CONNECT_STATE_CONNECTED = 2;</code>
    */
-  public static final int SFIDACONNECTSTATE_CONNECTED_VALUE = 2;
+  public static final int SFIDA_CONNECT_STATE_CONNECTED_VALUE = 2;
   /**
-   * <code>SFIDACONNECTSTATE_DISCOVERED = 3;</code>
+   * <code>SFIDA_CONNECT_STATE_DISCOVERED = 3;</code>
    */
-  public static final int SFIDACONNECTSTATE_DISCOVERED_VALUE = 3;
+  public static final int SFIDA_CONNECT_STATE_DISCOVERED_VALUE = 3;
   /**
-   * <code>SFIDACONNECTSTATE_CERTIFIED = 4;</code>
+   * <code>SFIDA_CONNECT_STATE_CERTIFIED = 4;</code>
    */
-  public static final int SFIDACONNECTSTATE_CERTIFIED_VALUE = 4;
+  public static final int SFIDA_CONNECT_STATE_CERTIFIED_VALUE = 4;
   /**
-   * <code>SFIDACONNECTSTATE_SOFTWARE_UPDATE = 5;</code>
+   * <code>SFIDA_CONNECT_STATE_SOFTWARE_UPDATE = 5;</code>
    */
-  public static final int SFIDACONNECTSTATE_SOFTWARE_UPDATE_VALUE = 5;
+  public static final int SFIDA_CONNECT_STATE_SOFTWARE_UPDATE_VALUE = 5;
   /**
-   * <code>SFIDACONNECTSTATE_FAILED = 6;</code>
+   * <code>SFIDA_CONNECT_STATE_FAILED = 6;</code>
    */
-  public static final int SFIDACONNECTSTATE_FAILED_VALUE = 6;
+  public static final int SFIDA_CONNECT_STATE_FAILED_VALUE = 6;
   /**
-   * <code>SFIDACONNECTSTATE_CONNECTING = 7;</code>
+   * <code>SFIDA_CONNECT_STATE_CONNECTING = 7;</code>
    */
-  public static final int SFIDACONNECTSTATE_CONNECTING_VALUE = 7;
+  public static final int SFIDA_CONNECT_STATE_CONNECTING_VALUE = 7;
 
 
   public final int getNumber() {
@@ -105,14 +105,14 @@ public enum SfidaConnectState
    */
   public static SfidaConnectState forNumber(int value) {
     switch (value) {
-      case 0: return SFIDACONNECTSTATE_DISCONNECTED;
-      case 1: return SFIDACONNECTSTATE_DISCONNECTING;
-      case 2: return SFIDACONNECTSTATE_CONNECTED;
-      case 3: return SFIDACONNECTSTATE_DISCOVERED;
-      case 4: return SFIDACONNECTSTATE_CERTIFIED;
-      case 5: return SFIDACONNECTSTATE_SOFTWARE_UPDATE;
-      case 6: return SFIDACONNECTSTATE_FAILED;
-      case 7: return SFIDACONNECTSTATE_CONNECTING;
+      case 0: return SFIDA_CONNECT_STATE_DISCONNECTED;
+      case 1: return SFIDA_CONNECT_STATE_DISCONNECTING;
+      case 2: return SFIDA_CONNECT_STATE_CONNECTED;
+      case 3: return SFIDA_CONNECT_STATE_DISCOVERED;
+      case 4: return SFIDA_CONNECT_STATE_CERTIFIED;
+      case 5: return SFIDA_CONNECT_STATE_SOFTWARE_UPDATE;
+      case 6: return SFIDA_CONNECT_STATE_FAILED;
+      case 7: return SFIDA_CONNECT_STATE_CONNECTING;
       default: return null;
     }
   }
@@ -143,7 +143,7 @@ public enum SfidaConnectState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(17);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(18);
   }
 
   private static final SfidaConnectState[] VALUES = values();

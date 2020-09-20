@@ -211,7 +211,7 @@ private static final long serialVersionUID = 0L;
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
-    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLAYERSUBMISSIONTYPEPROTO_TYPE_UNSPECIFIED.getNumber()) {
+    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLAYER_SUBMISSION_TYPE_PROTO_TYPE_UNSPECIFIED.getNumber()) {
       output.writeEnum(1, submissionType_);
     }
     if (getSubmissionTypesList().size() > 0) {
@@ -230,7 +230,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLAYERSUBMISSIONTYPEPROTO_TYPE_UNSPECIFIED.getNumber()) {
+    if (submissionType_ != POGOProtos.Rpc.PlayerSubmissionTypeProto.PLAYER_SUBMISSION_TYPE_PROTO_TYPE_UNSPECIFIED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, submissionType_);
     }

@@ -13,360 +13,360 @@ package POGOProtos.Rpc;
 public enum TweenAction
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>TWEENACTION_MOVE_X = 0;</code>
+   * <code>TWEEN_ACTION_MOVE_X = 0;</code>
    */
-  TWEENACTION_MOVE_X(0),
+  TWEEN_ACTION_MOVE_X(0),
   /**
-   * <code>TWEENACTION_MOVE_Y = 1;</code>
+   * <code>TWEEN_ACTION_MOVE_Y = 1;</code>
    */
-  TWEENACTION_MOVE_Y(1),
+  TWEEN_ACTION_MOVE_Y(1),
   /**
-   * <code>TWEENACTION_MOVE_Z = 2;</code>
+   * <code>TWEEN_ACTION_MOVE_Z = 2;</code>
    */
-  TWEENACTION_MOVE_Z(2),
+  TWEEN_ACTION_MOVE_Z(2),
   /**
-   * <code>TWEENACTION_MOVE_LOCAL_X = 3;</code>
+   * <code>TWEEN_ACTION_MOVE_LOCAL_X = 3;</code>
    */
-  TWEENACTION_MOVE_LOCAL_X(3),
+  TWEEN_ACTION_MOVE_LOCAL_X(3),
   /**
-   * <code>TWEENACTION_MOVE_LOCAL_Y = 4;</code>
+   * <code>TWEEN_ACTION_MOVE_LOCAL_Y = 4;</code>
    */
-  TWEENACTION_MOVE_LOCAL_Y(4),
+  TWEEN_ACTION_MOVE_LOCAL_Y(4),
   /**
-   * <code>TWEENACTION_MOVE_LOCAL_Z = 5;</code>
+   * <code>TWEEN_ACTION_MOVE_LOCAL_Z = 5;</code>
    */
-  TWEENACTION_MOVE_LOCAL_Z(5),
+  TWEEN_ACTION_MOVE_LOCAL_Z(5),
   /**
-   * <code>TWEENACTION_MOVE_CURVED = 6;</code>
+   * <code>TWEEN_ACTION_MOVE_CURVED = 6;</code>
    */
-  TWEENACTION_MOVE_CURVED(6),
+  TWEEN_ACTION_MOVE_CURVED(6),
   /**
-   * <code>TWEENACTION_MOVE_CURVED_LOCAL = 7;</code>
+   * <code>TWEEN_ACTION_MOVE_CURVED_LOCAL = 7;</code>
    */
-  TWEENACTION_MOVE_CURVED_LOCAL(7),
+  TWEEN_ACTION_MOVE_CURVED_LOCAL(7),
   /**
-   * <code>TWEENACTION_MOVE_SPLINE = 8;</code>
+   * <code>TWEEN_ACTION_MOVE_SPLINE = 8;</code>
    */
-  TWEENACTION_MOVE_SPLINE(8),
+  TWEEN_ACTION_MOVE_SPLINE(8),
   /**
-   * <code>TWEENACTION_MOVE_SPLINE_LOCAL = 9;</code>
+   * <code>TWEEN_ACTION_MOVE_SPLINE_LOCAL = 9;</code>
    */
-  TWEENACTION_MOVE_SPLINE_LOCAL(9),
+  TWEEN_ACTION_MOVE_SPLINE_LOCAL(9),
   /**
-   * <code>TWEENACTION_SCALE_X = 10;</code>
+   * <code>TWEEN_ACTION_SCALE_X = 10;</code>
    */
-  TWEENACTION_SCALE_X(10),
+  TWEEN_ACTION_SCALE_X(10),
   /**
-   * <code>TWEENACTION_SCALE_Y = 11;</code>
+   * <code>TWEEN_ACTION_SCALE_Y = 11;</code>
    */
-  TWEENACTION_SCALE_Y(11),
+  TWEEN_ACTION_SCALE_Y(11),
   /**
-   * <code>TWEENACTION_SCALE_Z = 12;</code>
+   * <code>TWEEN_ACTION_SCALE_Z = 12;</code>
    */
-  TWEENACTION_SCALE_Z(12),
+  TWEEN_ACTION_SCALE_Z(12),
   /**
-   * <code>TWEENACTION_ROTATE_X = 13;</code>
+   * <code>TWEEN_ACTION_ROTATE_X = 13;</code>
    */
-  TWEENACTION_ROTATE_X(13),
+  TWEEN_ACTION_ROTATE_X(13),
   /**
-   * <code>TWEENACTION_ROTATE_Y = 14;</code>
+   * <code>TWEEN_ACTION_ROTATE_Y = 14;</code>
    */
-  TWEENACTION_ROTATE_Y(14),
+  TWEEN_ACTION_ROTATE_Y(14),
   /**
-   * <code>TWEENACTION_ROTATE_Z = 15;</code>
+   * <code>TWEEN_ACTION_ROTATE_Z = 15;</code>
    */
-  TWEENACTION_ROTATE_Z(15),
+  TWEEN_ACTION_ROTATE_Z(15),
   /**
-   * <code>TWEENACTION_ROTATE_AROUND = 16;</code>
+   * <code>TWEEN_ACTION_ROTATE_AROUND = 16;</code>
    */
-  TWEENACTION_ROTATE_AROUND(16),
+  TWEEN_ACTION_ROTATE_AROUND(16),
   /**
-   * <code>TWEENACTION_ROTATE_AROUND_LOCAL = 17;</code>
+   * <code>TWEEN_ACTION_ROTATE_AROUND_LOCAL = 17;</code>
    */
-  TWEENACTION_ROTATE_AROUND_LOCAL(17),
+  TWEEN_ACTION_ROTATE_AROUND_LOCAL(17),
   /**
-   * <code>TWEENACTION_CANVAS_ROTATEAROUND = 18;</code>
+   * <code>TWEEN_ACTION_CANVAS_ROTATEAROUND = 18;</code>
    */
-  TWEENACTION_CANVAS_ROTATEAROUND(18),
+  TWEEN_ACTION_CANVAS_ROTATEAROUND(18),
   /**
-   * <code>TWEENACTION_CANVAS_ROTATEAROUND_LOCAL = 19;</code>
+   * <code>TWEEN_ACTION_CANVAS_ROTATEAROUND_LOCAL = 19;</code>
    */
-  TWEENACTION_CANVAS_ROTATEAROUND_LOCAL(19),
+  TWEEN_ACTION_CANVAS_ROTATEAROUND_LOCAL(19),
   /**
-   * <code>TWEENACTION_CANVAS_PLAYSPRITE = 20;</code>
+   * <code>TWEEN_ACTION_CANVAS_PLAYSPRITE = 20;</code>
    */
-  TWEENACTION_CANVAS_PLAYSPRITE(20),
+  TWEEN_ACTION_CANVAS_PLAYSPRITE(20),
   /**
-   * <code>TWEENACTION_ALPHA = 21;</code>
+   * <code>TWEEN_ACTION_ALPHA = 21;</code>
    */
-  TWEENACTION_ALPHA(21),
+  TWEEN_ACTION_ALPHA(21),
   /**
-   * <code>TWEENACTION_TEXT_ALPHA = 22;</code>
+   * <code>TWEEN_ACTION_TEXT_ALPHA = 22;</code>
    */
-  TWEENACTION_TEXT_ALPHA(22),
+  TWEEN_ACTION_TEXT_ALPHA(22),
   /**
-   * <code>TWEENACTION_CANVAS_ALPHA = 23;</code>
+   * <code>TWEEN_ACTION_CANVAS_ALPHA = 23;</code>
    */
-  TWEENACTION_CANVAS_ALPHA(23),
+  TWEEN_ACTION_CANVAS_ALPHA(23),
   /**
-   * <code>TWEENACTION_ALPHA_VERTEX = 24;</code>
+   * <code>TWEEN_ACTION_ALPHA_VERTEX = 24;</code>
    */
-  TWEENACTION_ALPHA_VERTEX(24),
+  TWEEN_ACTION_ALPHA_VERTEX(24),
   /**
-   * <code>TWEENACTION_COLOR = 25;</code>
+   * <code>TWEEN_ACTION_COLOR = 25;</code>
    */
-  TWEENACTION_COLOR(25),
+  TWEEN_ACTION_COLOR(25),
   /**
-   * <code>TWEENACTION_CALLBACK_COLOR = 26;</code>
+   * <code>TWEEN_ACTION_CALLBACK_COLOR = 26;</code>
    */
-  TWEENACTION_CALLBACK_COLOR(26),
+  TWEEN_ACTION_CALLBACK_COLOR(26),
   /**
-   * <code>TWEENACTION_TEXT_COLOR = 27;</code>
+   * <code>TWEEN_ACTION_TEXT_COLOR = 27;</code>
    */
-  TWEENACTION_TEXT_COLOR(27),
+  TWEEN_ACTION_TEXT_COLOR(27),
   /**
-   * <code>TWEENACTION_CANVAS_COLOR = 28;</code>
+   * <code>TWEEN_ACTION_CANVAS_COLOR = 28;</code>
    */
-  TWEENACTION_CANVAS_COLOR(28),
+  TWEEN_ACTION_CANVAS_COLOR(28),
   /**
-   * <code>TWEENACTION_CALLBACK = 29;</code>
+   * <code>TWEEN_ACTION_CALLBACK = 29;</code>
    */
-  TWEENACTION_CALLBACK(29),
+  TWEEN_ACTION_CALLBACK(29),
   /**
-   * <code>TWEENACTION_MOVE = 30;</code>
+   * <code>TWEEN_ACTION_MOVE = 30;</code>
    */
-  TWEENACTION_MOVE(30),
+  TWEEN_ACTION_MOVE(30),
   /**
-   * <code>TWEENACTION_MOVE_LOCAL = 31;</code>
+   * <code>TWEEN_ACTION_MOVE_LOCAL = 31;</code>
    */
-  TWEENACTION_MOVE_LOCAL(31),
+  TWEEN_ACTION_MOVE_LOCAL(31),
   /**
-   * <code>TWEENACTION_ROTATE = 32;</code>
+   * <code>TWEEN_ACTION_ROTATE = 32;</code>
    */
-  TWEENACTION_ROTATE(32),
+  TWEEN_ACTION_ROTATE(32),
   /**
-   * <code>TWEENACTION_ROTATE_LOCAL = 33;</code>
+   * <code>TWEEN_ACTION_ROTATE_LOCAL = 33;</code>
    */
-  TWEENACTION_ROTATE_LOCAL(33),
+  TWEEN_ACTION_ROTATE_LOCAL(33),
   /**
-   * <code>TWEENACTION_SCALE = 34;</code>
+   * <code>TWEEN_ACTION_SCALE = 34;</code>
    */
-  TWEENACTION_SCALE(34),
+  TWEEN_ACTION_SCALE(34),
   /**
-   * <code>TWEENACTION_VALUE3 = 35;</code>
+   * <code>TWEEN_ACTION_VALUE3 = 35;</code>
    */
-  TWEENACTION_VALUE3(35),
+  TWEEN_ACTION_VALUE3(35),
   /**
-   * <code>TWEENACTION_GUI_MOVE = 36;</code>
+   * <code>TWEEN_ACTION_GUI_MOVE = 36;</code>
    */
-  TWEENACTION_GUI_MOVE(36),
+  TWEEN_ACTION_GUI_MOVE(36),
   /**
-   * <code>TWEENACTION_GUI_MOVE_MARGIN = 37;</code>
+   * <code>TWEEN_ACTION_GUI_MOVE_MARGIN = 37;</code>
    */
-  TWEENACTION_GUI_MOVE_MARGIN(37),
+  TWEEN_ACTION_GUI_MOVE_MARGIN(37),
   /**
-   * <code>TWEENACTION_GUI_SCALE = 38;</code>
+   * <code>TWEEN_ACTION_GUI_SCALE = 38;</code>
    */
-  TWEENACTION_GUI_SCALE(38),
+  TWEEN_ACTION_GUI_SCALE(38),
   /**
-   * <code>TWEENACTION_GUI_ALPHA = 39;</code>
+   * <code>TWEEN_ACTION_GUI_ALPHA = 39;</code>
    */
-  TWEENACTION_GUI_ALPHA(39),
+  TWEEN_ACTION_GUI_ALPHA(39),
   /**
-   * <code>TWEENACTION_GUI_ROTATE = 40;</code>
+   * <code>TWEEN_ACTION_GUI_ROTATE = 40;</code>
    */
-  TWEENACTION_GUI_ROTATE(40),
+  TWEEN_ACTION_GUI_ROTATE(40),
   /**
-   * <code>TWEENACTION_DELAYED_SOUND = 41;</code>
+   * <code>TWEEN_ACTION_DELAYED_SOUND = 41;</code>
    */
-  TWEENACTION_DELAYED_SOUND(41),
+  TWEEN_ACTION_DELAYED_SOUND(41),
   /**
-   * <code>TWEENACTION_CANVAS_MOVE = 42;</code>
+   * <code>TWEEN_ACTION_CANVAS_MOVE = 42;</code>
    */
-  TWEENACTION_CANVAS_MOVE(42),
+  TWEEN_ACTION_CANVAS_MOVE(42),
   /**
-   * <code>TWEENACTION_CANVAS_SCALE = 43;</code>
+   * <code>TWEEN_ACTION_CANVAS_SCALE = 43;</code>
    */
-  TWEENACTION_CANVAS_SCALE(43),
+  TWEEN_ACTION_CANVAS_SCALE(43),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>TWEENACTION_MOVE_X = 0;</code>
+   * <code>TWEEN_ACTION_MOVE_X = 0;</code>
    */
-  public static final int TWEENACTION_MOVE_X_VALUE = 0;
+  public static final int TWEEN_ACTION_MOVE_X_VALUE = 0;
   /**
-   * <code>TWEENACTION_MOVE_Y = 1;</code>
+   * <code>TWEEN_ACTION_MOVE_Y = 1;</code>
    */
-  public static final int TWEENACTION_MOVE_Y_VALUE = 1;
+  public static final int TWEEN_ACTION_MOVE_Y_VALUE = 1;
   /**
-   * <code>TWEENACTION_MOVE_Z = 2;</code>
+   * <code>TWEEN_ACTION_MOVE_Z = 2;</code>
    */
-  public static final int TWEENACTION_MOVE_Z_VALUE = 2;
+  public static final int TWEEN_ACTION_MOVE_Z_VALUE = 2;
   /**
-   * <code>TWEENACTION_MOVE_LOCAL_X = 3;</code>
+   * <code>TWEEN_ACTION_MOVE_LOCAL_X = 3;</code>
    */
-  public static final int TWEENACTION_MOVE_LOCAL_X_VALUE = 3;
+  public static final int TWEEN_ACTION_MOVE_LOCAL_X_VALUE = 3;
   /**
-   * <code>TWEENACTION_MOVE_LOCAL_Y = 4;</code>
+   * <code>TWEEN_ACTION_MOVE_LOCAL_Y = 4;</code>
    */
-  public static final int TWEENACTION_MOVE_LOCAL_Y_VALUE = 4;
+  public static final int TWEEN_ACTION_MOVE_LOCAL_Y_VALUE = 4;
   /**
-   * <code>TWEENACTION_MOVE_LOCAL_Z = 5;</code>
+   * <code>TWEEN_ACTION_MOVE_LOCAL_Z = 5;</code>
    */
-  public static final int TWEENACTION_MOVE_LOCAL_Z_VALUE = 5;
+  public static final int TWEEN_ACTION_MOVE_LOCAL_Z_VALUE = 5;
   /**
-   * <code>TWEENACTION_MOVE_CURVED = 6;</code>
+   * <code>TWEEN_ACTION_MOVE_CURVED = 6;</code>
    */
-  public static final int TWEENACTION_MOVE_CURVED_VALUE = 6;
+  public static final int TWEEN_ACTION_MOVE_CURVED_VALUE = 6;
   /**
-   * <code>TWEENACTION_MOVE_CURVED_LOCAL = 7;</code>
+   * <code>TWEEN_ACTION_MOVE_CURVED_LOCAL = 7;</code>
    */
-  public static final int TWEENACTION_MOVE_CURVED_LOCAL_VALUE = 7;
+  public static final int TWEEN_ACTION_MOVE_CURVED_LOCAL_VALUE = 7;
   /**
-   * <code>TWEENACTION_MOVE_SPLINE = 8;</code>
+   * <code>TWEEN_ACTION_MOVE_SPLINE = 8;</code>
    */
-  public static final int TWEENACTION_MOVE_SPLINE_VALUE = 8;
+  public static final int TWEEN_ACTION_MOVE_SPLINE_VALUE = 8;
   /**
-   * <code>TWEENACTION_MOVE_SPLINE_LOCAL = 9;</code>
+   * <code>TWEEN_ACTION_MOVE_SPLINE_LOCAL = 9;</code>
    */
-  public static final int TWEENACTION_MOVE_SPLINE_LOCAL_VALUE = 9;
+  public static final int TWEEN_ACTION_MOVE_SPLINE_LOCAL_VALUE = 9;
   /**
-   * <code>TWEENACTION_SCALE_X = 10;</code>
+   * <code>TWEEN_ACTION_SCALE_X = 10;</code>
    */
-  public static final int TWEENACTION_SCALE_X_VALUE = 10;
+  public static final int TWEEN_ACTION_SCALE_X_VALUE = 10;
   /**
-   * <code>TWEENACTION_SCALE_Y = 11;</code>
+   * <code>TWEEN_ACTION_SCALE_Y = 11;</code>
    */
-  public static final int TWEENACTION_SCALE_Y_VALUE = 11;
+  public static final int TWEEN_ACTION_SCALE_Y_VALUE = 11;
   /**
-   * <code>TWEENACTION_SCALE_Z = 12;</code>
+   * <code>TWEEN_ACTION_SCALE_Z = 12;</code>
    */
-  public static final int TWEENACTION_SCALE_Z_VALUE = 12;
+  public static final int TWEEN_ACTION_SCALE_Z_VALUE = 12;
   /**
-   * <code>TWEENACTION_ROTATE_X = 13;</code>
+   * <code>TWEEN_ACTION_ROTATE_X = 13;</code>
    */
-  public static final int TWEENACTION_ROTATE_X_VALUE = 13;
+  public static final int TWEEN_ACTION_ROTATE_X_VALUE = 13;
   /**
-   * <code>TWEENACTION_ROTATE_Y = 14;</code>
+   * <code>TWEEN_ACTION_ROTATE_Y = 14;</code>
    */
-  public static final int TWEENACTION_ROTATE_Y_VALUE = 14;
+  public static final int TWEEN_ACTION_ROTATE_Y_VALUE = 14;
   /**
-   * <code>TWEENACTION_ROTATE_Z = 15;</code>
+   * <code>TWEEN_ACTION_ROTATE_Z = 15;</code>
    */
-  public static final int TWEENACTION_ROTATE_Z_VALUE = 15;
+  public static final int TWEEN_ACTION_ROTATE_Z_VALUE = 15;
   /**
-   * <code>TWEENACTION_ROTATE_AROUND = 16;</code>
+   * <code>TWEEN_ACTION_ROTATE_AROUND = 16;</code>
    */
-  public static final int TWEENACTION_ROTATE_AROUND_VALUE = 16;
+  public static final int TWEEN_ACTION_ROTATE_AROUND_VALUE = 16;
   /**
-   * <code>TWEENACTION_ROTATE_AROUND_LOCAL = 17;</code>
+   * <code>TWEEN_ACTION_ROTATE_AROUND_LOCAL = 17;</code>
    */
-  public static final int TWEENACTION_ROTATE_AROUND_LOCAL_VALUE = 17;
+  public static final int TWEEN_ACTION_ROTATE_AROUND_LOCAL_VALUE = 17;
   /**
-   * <code>TWEENACTION_CANVAS_ROTATEAROUND = 18;</code>
+   * <code>TWEEN_ACTION_CANVAS_ROTATEAROUND = 18;</code>
    */
-  public static final int TWEENACTION_CANVAS_ROTATEAROUND_VALUE = 18;
+  public static final int TWEEN_ACTION_CANVAS_ROTATEAROUND_VALUE = 18;
   /**
-   * <code>TWEENACTION_CANVAS_ROTATEAROUND_LOCAL = 19;</code>
+   * <code>TWEEN_ACTION_CANVAS_ROTATEAROUND_LOCAL = 19;</code>
    */
-  public static final int TWEENACTION_CANVAS_ROTATEAROUND_LOCAL_VALUE = 19;
+  public static final int TWEEN_ACTION_CANVAS_ROTATEAROUND_LOCAL_VALUE = 19;
   /**
-   * <code>TWEENACTION_CANVAS_PLAYSPRITE = 20;</code>
+   * <code>TWEEN_ACTION_CANVAS_PLAYSPRITE = 20;</code>
    */
-  public static final int TWEENACTION_CANVAS_PLAYSPRITE_VALUE = 20;
+  public static final int TWEEN_ACTION_CANVAS_PLAYSPRITE_VALUE = 20;
   /**
-   * <code>TWEENACTION_ALPHA = 21;</code>
+   * <code>TWEEN_ACTION_ALPHA = 21;</code>
    */
-  public static final int TWEENACTION_ALPHA_VALUE = 21;
+  public static final int TWEEN_ACTION_ALPHA_VALUE = 21;
   /**
-   * <code>TWEENACTION_TEXT_ALPHA = 22;</code>
+   * <code>TWEEN_ACTION_TEXT_ALPHA = 22;</code>
    */
-  public static final int TWEENACTION_TEXT_ALPHA_VALUE = 22;
+  public static final int TWEEN_ACTION_TEXT_ALPHA_VALUE = 22;
   /**
-   * <code>TWEENACTION_CANVAS_ALPHA = 23;</code>
+   * <code>TWEEN_ACTION_CANVAS_ALPHA = 23;</code>
    */
-  public static final int TWEENACTION_CANVAS_ALPHA_VALUE = 23;
+  public static final int TWEEN_ACTION_CANVAS_ALPHA_VALUE = 23;
   /**
-   * <code>TWEENACTION_ALPHA_VERTEX = 24;</code>
+   * <code>TWEEN_ACTION_ALPHA_VERTEX = 24;</code>
    */
-  public static final int TWEENACTION_ALPHA_VERTEX_VALUE = 24;
+  public static final int TWEEN_ACTION_ALPHA_VERTEX_VALUE = 24;
   /**
-   * <code>TWEENACTION_COLOR = 25;</code>
+   * <code>TWEEN_ACTION_COLOR = 25;</code>
    */
-  public static final int TWEENACTION_COLOR_VALUE = 25;
+  public static final int TWEEN_ACTION_COLOR_VALUE = 25;
   /**
-   * <code>TWEENACTION_CALLBACK_COLOR = 26;</code>
+   * <code>TWEEN_ACTION_CALLBACK_COLOR = 26;</code>
    */
-  public static final int TWEENACTION_CALLBACK_COLOR_VALUE = 26;
+  public static final int TWEEN_ACTION_CALLBACK_COLOR_VALUE = 26;
   /**
-   * <code>TWEENACTION_TEXT_COLOR = 27;</code>
+   * <code>TWEEN_ACTION_TEXT_COLOR = 27;</code>
    */
-  public static final int TWEENACTION_TEXT_COLOR_VALUE = 27;
+  public static final int TWEEN_ACTION_TEXT_COLOR_VALUE = 27;
   /**
-   * <code>TWEENACTION_CANVAS_COLOR = 28;</code>
+   * <code>TWEEN_ACTION_CANVAS_COLOR = 28;</code>
    */
-  public static final int TWEENACTION_CANVAS_COLOR_VALUE = 28;
+  public static final int TWEEN_ACTION_CANVAS_COLOR_VALUE = 28;
   /**
-   * <code>TWEENACTION_CALLBACK = 29;</code>
+   * <code>TWEEN_ACTION_CALLBACK = 29;</code>
    */
-  public static final int TWEENACTION_CALLBACK_VALUE = 29;
+  public static final int TWEEN_ACTION_CALLBACK_VALUE = 29;
   /**
-   * <code>TWEENACTION_MOVE = 30;</code>
+   * <code>TWEEN_ACTION_MOVE = 30;</code>
    */
-  public static final int TWEENACTION_MOVE_VALUE = 30;
+  public static final int TWEEN_ACTION_MOVE_VALUE = 30;
   /**
-   * <code>TWEENACTION_MOVE_LOCAL = 31;</code>
+   * <code>TWEEN_ACTION_MOVE_LOCAL = 31;</code>
    */
-  public static final int TWEENACTION_MOVE_LOCAL_VALUE = 31;
+  public static final int TWEEN_ACTION_MOVE_LOCAL_VALUE = 31;
   /**
-   * <code>TWEENACTION_ROTATE = 32;</code>
+   * <code>TWEEN_ACTION_ROTATE = 32;</code>
    */
-  public static final int TWEENACTION_ROTATE_VALUE = 32;
+  public static final int TWEEN_ACTION_ROTATE_VALUE = 32;
   /**
-   * <code>TWEENACTION_ROTATE_LOCAL = 33;</code>
+   * <code>TWEEN_ACTION_ROTATE_LOCAL = 33;</code>
    */
-  public static final int TWEENACTION_ROTATE_LOCAL_VALUE = 33;
+  public static final int TWEEN_ACTION_ROTATE_LOCAL_VALUE = 33;
   /**
-   * <code>TWEENACTION_SCALE = 34;</code>
+   * <code>TWEEN_ACTION_SCALE = 34;</code>
    */
-  public static final int TWEENACTION_SCALE_VALUE = 34;
+  public static final int TWEEN_ACTION_SCALE_VALUE = 34;
   /**
-   * <code>TWEENACTION_VALUE3 = 35;</code>
+   * <code>TWEEN_ACTION_VALUE3 = 35;</code>
    */
-  public static final int TWEENACTION_VALUE3_VALUE = 35;
+  public static final int TWEEN_ACTION_VALUE3_VALUE = 35;
   /**
-   * <code>TWEENACTION_GUI_MOVE = 36;</code>
+   * <code>TWEEN_ACTION_GUI_MOVE = 36;</code>
    */
-  public static final int TWEENACTION_GUI_MOVE_VALUE = 36;
+  public static final int TWEEN_ACTION_GUI_MOVE_VALUE = 36;
   /**
-   * <code>TWEENACTION_GUI_MOVE_MARGIN = 37;</code>
+   * <code>TWEEN_ACTION_GUI_MOVE_MARGIN = 37;</code>
    */
-  public static final int TWEENACTION_GUI_MOVE_MARGIN_VALUE = 37;
+  public static final int TWEEN_ACTION_GUI_MOVE_MARGIN_VALUE = 37;
   /**
-   * <code>TWEENACTION_GUI_SCALE = 38;</code>
+   * <code>TWEEN_ACTION_GUI_SCALE = 38;</code>
    */
-  public static final int TWEENACTION_GUI_SCALE_VALUE = 38;
+  public static final int TWEEN_ACTION_GUI_SCALE_VALUE = 38;
   /**
-   * <code>TWEENACTION_GUI_ALPHA = 39;</code>
+   * <code>TWEEN_ACTION_GUI_ALPHA = 39;</code>
    */
-  public static final int TWEENACTION_GUI_ALPHA_VALUE = 39;
+  public static final int TWEEN_ACTION_GUI_ALPHA_VALUE = 39;
   /**
-   * <code>TWEENACTION_GUI_ROTATE = 40;</code>
+   * <code>TWEEN_ACTION_GUI_ROTATE = 40;</code>
    */
-  public static final int TWEENACTION_GUI_ROTATE_VALUE = 40;
+  public static final int TWEEN_ACTION_GUI_ROTATE_VALUE = 40;
   /**
-   * <code>TWEENACTION_DELAYED_SOUND = 41;</code>
+   * <code>TWEEN_ACTION_DELAYED_SOUND = 41;</code>
    */
-  public static final int TWEENACTION_DELAYED_SOUND_VALUE = 41;
+  public static final int TWEEN_ACTION_DELAYED_SOUND_VALUE = 41;
   /**
-   * <code>TWEENACTION_CANVAS_MOVE = 42;</code>
+   * <code>TWEEN_ACTION_CANVAS_MOVE = 42;</code>
    */
-  public static final int TWEENACTION_CANVAS_MOVE_VALUE = 42;
+  public static final int TWEEN_ACTION_CANVAS_MOVE_VALUE = 42;
   /**
-   * <code>TWEENACTION_CANVAS_SCALE = 43;</code>
+   * <code>TWEEN_ACTION_CANVAS_SCALE = 43;</code>
    */
-  public static final int TWEENACTION_CANVAS_SCALE_VALUE = 43;
+  public static final int TWEEN_ACTION_CANVAS_SCALE_VALUE = 43;
 
 
   public final int getNumber() {
@@ -393,50 +393,50 @@ public enum TweenAction
    */
   public static TweenAction forNumber(int value) {
     switch (value) {
-      case 0: return TWEENACTION_MOVE_X;
-      case 1: return TWEENACTION_MOVE_Y;
-      case 2: return TWEENACTION_MOVE_Z;
-      case 3: return TWEENACTION_MOVE_LOCAL_X;
-      case 4: return TWEENACTION_MOVE_LOCAL_Y;
-      case 5: return TWEENACTION_MOVE_LOCAL_Z;
-      case 6: return TWEENACTION_MOVE_CURVED;
-      case 7: return TWEENACTION_MOVE_CURVED_LOCAL;
-      case 8: return TWEENACTION_MOVE_SPLINE;
-      case 9: return TWEENACTION_MOVE_SPLINE_LOCAL;
-      case 10: return TWEENACTION_SCALE_X;
-      case 11: return TWEENACTION_SCALE_Y;
-      case 12: return TWEENACTION_SCALE_Z;
-      case 13: return TWEENACTION_ROTATE_X;
-      case 14: return TWEENACTION_ROTATE_Y;
-      case 15: return TWEENACTION_ROTATE_Z;
-      case 16: return TWEENACTION_ROTATE_AROUND;
-      case 17: return TWEENACTION_ROTATE_AROUND_LOCAL;
-      case 18: return TWEENACTION_CANVAS_ROTATEAROUND;
-      case 19: return TWEENACTION_CANVAS_ROTATEAROUND_LOCAL;
-      case 20: return TWEENACTION_CANVAS_PLAYSPRITE;
-      case 21: return TWEENACTION_ALPHA;
-      case 22: return TWEENACTION_TEXT_ALPHA;
-      case 23: return TWEENACTION_CANVAS_ALPHA;
-      case 24: return TWEENACTION_ALPHA_VERTEX;
-      case 25: return TWEENACTION_COLOR;
-      case 26: return TWEENACTION_CALLBACK_COLOR;
-      case 27: return TWEENACTION_TEXT_COLOR;
-      case 28: return TWEENACTION_CANVAS_COLOR;
-      case 29: return TWEENACTION_CALLBACK;
-      case 30: return TWEENACTION_MOVE;
-      case 31: return TWEENACTION_MOVE_LOCAL;
-      case 32: return TWEENACTION_ROTATE;
-      case 33: return TWEENACTION_ROTATE_LOCAL;
-      case 34: return TWEENACTION_SCALE;
-      case 35: return TWEENACTION_VALUE3;
-      case 36: return TWEENACTION_GUI_MOVE;
-      case 37: return TWEENACTION_GUI_MOVE_MARGIN;
-      case 38: return TWEENACTION_GUI_SCALE;
-      case 39: return TWEENACTION_GUI_ALPHA;
-      case 40: return TWEENACTION_GUI_ROTATE;
-      case 41: return TWEENACTION_DELAYED_SOUND;
-      case 42: return TWEENACTION_CANVAS_MOVE;
-      case 43: return TWEENACTION_CANVAS_SCALE;
+      case 0: return TWEEN_ACTION_MOVE_X;
+      case 1: return TWEEN_ACTION_MOVE_Y;
+      case 2: return TWEEN_ACTION_MOVE_Z;
+      case 3: return TWEEN_ACTION_MOVE_LOCAL_X;
+      case 4: return TWEEN_ACTION_MOVE_LOCAL_Y;
+      case 5: return TWEEN_ACTION_MOVE_LOCAL_Z;
+      case 6: return TWEEN_ACTION_MOVE_CURVED;
+      case 7: return TWEEN_ACTION_MOVE_CURVED_LOCAL;
+      case 8: return TWEEN_ACTION_MOVE_SPLINE;
+      case 9: return TWEEN_ACTION_MOVE_SPLINE_LOCAL;
+      case 10: return TWEEN_ACTION_SCALE_X;
+      case 11: return TWEEN_ACTION_SCALE_Y;
+      case 12: return TWEEN_ACTION_SCALE_Z;
+      case 13: return TWEEN_ACTION_ROTATE_X;
+      case 14: return TWEEN_ACTION_ROTATE_Y;
+      case 15: return TWEEN_ACTION_ROTATE_Z;
+      case 16: return TWEEN_ACTION_ROTATE_AROUND;
+      case 17: return TWEEN_ACTION_ROTATE_AROUND_LOCAL;
+      case 18: return TWEEN_ACTION_CANVAS_ROTATEAROUND;
+      case 19: return TWEEN_ACTION_CANVAS_ROTATEAROUND_LOCAL;
+      case 20: return TWEEN_ACTION_CANVAS_PLAYSPRITE;
+      case 21: return TWEEN_ACTION_ALPHA;
+      case 22: return TWEEN_ACTION_TEXT_ALPHA;
+      case 23: return TWEEN_ACTION_CANVAS_ALPHA;
+      case 24: return TWEEN_ACTION_ALPHA_VERTEX;
+      case 25: return TWEEN_ACTION_COLOR;
+      case 26: return TWEEN_ACTION_CALLBACK_COLOR;
+      case 27: return TWEEN_ACTION_TEXT_COLOR;
+      case 28: return TWEEN_ACTION_CANVAS_COLOR;
+      case 29: return TWEEN_ACTION_CALLBACK;
+      case 30: return TWEEN_ACTION_MOVE;
+      case 31: return TWEEN_ACTION_MOVE_LOCAL;
+      case 32: return TWEEN_ACTION_ROTATE;
+      case 33: return TWEEN_ACTION_ROTATE_LOCAL;
+      case 34: return TWEEN_ACTION_SCALE;
+      case 35: return TWEEN_ACTION_VALUE3;
+      case 36: return TWEEN_ACTION_GUI_MOVE;
+      case 37: return TWEEN_ACTION_GUI_MOVE_MARGIN;
+      case 38: return TWEEN_ACTION_GUI_SCALE;
+      case 39: return TWEEN_ACTION_GUI_ALPHA;
+      case 40: return TWEEN_ACTION_GUI_ROTATE;
+      case 41: return TWEEN_ACTION_DELAYED_SOUND;
+      case 42: return TWEEN_ACTION_CANVAS_MOVE;
+      case 43: return TWEEN_ACTION_CANVAS_SCALE;
       default: return null;
     }
   }

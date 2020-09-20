@@ -16,24 +16,24 @@ package POGOProtos.Rpc;
 public enum GuiTransitionType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>GUITRANSITIONTYPE_IN = 0;</code>
+   * <code>GUI_TRANSITION_TYPE_IN = 0;</code>
    */
-  GUITRANSITIONTYPE_IN(0),
+  GUI_TRANSITION_TYPE_IN(0),
   /**
-   * <code>GUITRANSITIONTYPE_OUT = 1;</code>
+   * <code>GUI_TRANSITION_TYPE_OUT = 1;</code>
    */
-  GUITRANSITIONTYPE_OUT(1),
+  GUI_TRANSITION_TYPE_OUT(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>GUITRANSITIONTYPE_IN = 0;</code>
+   * <code>GUI_TRANSITION_TYPE_IN = 0;</code>
    */
-  public static final int GUITRANSITIONTYPE_IN_VALUE = 0;
+  public static final int GUI_TRANSITION_TYPE_IN_VALUE = 0;
   /**
-   * <code>GUITRANSITIONTYPE_OUT = 1;</code>
+   * <code>GUI_TRANSITION_TYPE_OUT = 1;</code>
    */
-  public static final int GUITRANSITIONTYPE_OUT_VALUE = 1;
+  public static final int GUI_TRANSITION_TYPE_OUT_VALUE = 1;
 
 
   public final int getNumber() {
@@ -60,8 +60,8 @@ public enum GuiTransitionType
    */
   public static GuiTransitionType forNumber(int value) {
     switch (value) {
-      case 0: return GUITRANSITIONTYPE_IN;
-      case 1: return GUITRANSITIONTYPE_OUT;
+      case 0: return GUI_TRANSITION_TYPE_IN;
+      case 1: return GUI_TRANSITION_TYPE_OUT;
       default: return null;
     }
   }
@@ -92,7 +92,7 @@ public enum GuiTransitionType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(8);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(9);
   }
 
   private static final GuiTransitionType[] VALUES = values();

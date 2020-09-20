@@ -33,4 +33,16 @@ public interface GrapeshotComposeDataProtoOrBuilder extends
    * <code>.POGOProtos.Rpc.GrapeshotAuthenticationDataProto authentication = 2;</code>
    */
   POGOProtos.Rpc.GrapeshotAuthenticationDataProtoOrBuilder getAuthenticationOrBuilder();
+
+  /**
+   * <code>string hash = 3;</code>
+   * @return The hash.
+   */
+  java.lang.String getHash();
+  /**
+   * <code>string hash = 3;</code>
+   * @return The bytes for hash.
+   */
+  com.google.protobuf.ByteString
+      getHashBytes();
 }

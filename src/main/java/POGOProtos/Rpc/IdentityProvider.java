@@ -16,112 +16,112 @@ package POGOProtos.Rpc;
 public enum IdentityProvider
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>IDENTITYPROVIDER_UNSET_IDENTITY_PROVIDER = 0;</code>
+   * <code>IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER = 0;</code>
    */
-  IDENTITYPROVIDER_UNSET_IDENTITY_PROVIDER(0),
+  IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER(0),
   /**
-   * <code>IDENTITYPROVIDER_GOOGLE = 1;</code>
+   * <code>IDENTITY_PROVIDER_GOOGLE = 1;</code>
    */
-  IDENTITYPROVIDER_GOOGLE(1),
+  IDENTITY_PROVIDER_GOOGLE(1),
   /**
-   * <code>IDENTITYPROVIDER_PTC = 2;</code>
+   * <code>IDENTITY_PROVIDER_PTC = 2;</code>
    */
-  IDENTITYPROVIDER_PTC(2),
+  IDENTITY_PROVIDER_PTC(2),
   /**
-   * <code>IDENTITYPROVIDER_FACEBOOK = 3;</code>
+   * <code>IDENTITY_PROVIDER_FACEBOOK = 3;</code>
    */
-  IDENTITYPROVIDER_FACEBOOK(3),
+  IDENTITY_PROVIDER_FACEBOOK(3),
   /**
-   * <code>IDENTITYPROVIDER_BACKGROUND = 4;</code>
+   * <code>IDENTITY_PROVIDER_BACKGROUND = 4;</code>
    */
-  IDENTITYPROVIDER_BACKGROUND(4),
+  IDENTITY_PROVIDER_BACKGROUND(4),
   /**
-   * <code>IDENTITYPROVIDER_INTERNAL = 5;</code>
+   * <code>IDENTITY_PROVIDER_INTERNAL = 5;</code>
    */
-  IDENTITYPROVIDER_INTERNAL(5),
+  IDENTITY_PROVIDER_INTERNAL(5),
   /**
-   * <code>IDENTITYPROVIDER_SFIDA = 6;</code>
+   * <code>IDENTITY_PROVIDER_SFIDA = 6;</code>
    */
-  IDENTITYPROVIDER_SFIDA(6),
+  IDENTITY_PROVIDER_SFIDA(6),
   /**
-   * <code>IDENTITYPROVIDER_SUPER_AWESOME = 7;</code>
+   * <code>IDENTITY_PROVIDER_SUPER_AWESOME = 7;</code>
    */
-  IDENTITYPROVIDER_SUPER_AWESOME(7),
+  IDENTITY_PROVIDER_SUPER_AWESOME(7),
   /**
-   * <code>IDENTITYPROVIDER_DEVELOPER = 8;</code>
+   * <code>IDENTITY_PROVIDER_DEVELOPER = 8;</code>
    */
-  IDENTITYPROVIDER_DEVELOPER(8),
+  IDENTITY_PROVIDER_DEVELOPER(8),
   /**
-   * <code>IDENTITYPROVIDER_SHARED_SECRET = 9;</code>
+   * <code>IDENTITY_PROVIDER_SHARED_SECRET = 9;</code>
    */
-  IDENTITYPROVIDER_SHARED_SECRET(9),
+  IDENTITY_PROVIDER_SHARED_SECRET(9),
   /**
-   * <code>IDENTITYPROVIDER_POSEIDON = 10;</code>
+   * <code>IDENTITY_PROVIDER_POSEIDON = 10;</code>
    */
-  IDENTITYPROVIDER_POSEIDON(10),
+  IDENTITY_PROVIDER_POSEIDON(10),
   /**
-   * <code>IDENTITYPROVIDER_NINTENDO = 11;</code>
+   * <code>IDENTITY_PROVIDER_NINTENDO = 11;</code>
    */
-  IDENTITYPROVIDER_NINTENDO(11),
+  IDENTITY_PROVIDER_NINTENDO(11),
   /**
-   * <code>IDENTITYPROVIDER_APPLE = 12;</code>
+   * <code>IDENTITY_PROVIDER_APPLE = 12;</code>
    */
-  IDENTITYPROVIDER_APPLE(12),
+  IDENTITY_PROVIDER_APPLE(12),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>IDENTITYPROVIDER_UNSET_IDENTITY_PROVIDER = 0;</code>
+   * <code>IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER = 0;</code>
    */
-  public static final int IDENTITYPROVIDER_UNSET_IDENTITY_PROVIDER_VALUE = 0;
+  public static final int IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER_VALUE = 0;
   /**
-   * <code>IDENTITYPROVIDER_GOOGLE = 1;</code>
+   * <code>IDENTITY_PROVIDER_GOOGLE = 1;</code>
    */
-  public static final int IDENTITYPROVIDER_GOOGLE_VALUE = 1;
+  public static final int IDENTITY_PROVIDER_GOOGLE_VALUE = 1;
   /**
-   * <code>IDENTITYPROVIDER_PTC = 2;</code>
+   * <code>IDENTITY_PROVIDER_PTC = 2;</code>
    */
-  public static final int IDENTITYPROVIDER_PTC_VALUE = 2;
+  public static final int IDENTITY_PROVIDER_PTC_VALUE = 2;
   /**
-   * <code>IDENTITYPROVIDER_FACEBOOK = 3;</code>
+   * <code>IDENTITY_PROVIDER_FACEBOOK = 3;</code>
    */
-  public static final int IDENTITYPROVIDER_FACEBOOK_VALUE = 3;
+  public static final int IDENTITY_PROVIDER_FACEBOOK_VALUE = 3;
   /**
-   * <code>IDENTITYPROVIDER_BACKGROUND = 4;</code>
+   * <code>IDENTITY_PROVIDER_BACKGROUND = 4;</code>
    */
-  public static final int IDENTITYPROVIDER_BACKGROUND_VALUE = 4;
+  public static final int IDENTITY_PROVIDER_BACKGROUND_VALUE = 4;
   /**
-   * <code>IDENTITYPROVIDER_INTERNAL = 5;</code>
+   * <code>IDENTITY_PROVIDER_INTERNAL = 5;</code>
    */
-  public static final int IDENTITYPROVIDER_INTERNAL_VALUE = 5;
+  public static final int IDENTITY_PROVIDER_INTERNAL_VALUE = 5;
   /**
-   * <code>IDENTITYPROVIDER_SFIDA = 6;</code>
+   * <code>IDENTITY_PROVIDER_SFIDA = 6;</code>
    */
-  public static final int IDENTITYPROVIDER_SFIDA_VALUE = 6;
+  public static final int IDENTITY_PROVIDER_SFIDA_VALUE = 6;
   /**
-   * <code>IDENTITYPROVIDER_SUPER_AWESOME = 7;</code>
+   * <code>IDENTITY_PROVIDER_SUPER_AWESOME = 7;</code>
    */
-  public static final int IDENTITYPROVIDER_SUPER_AWESOME_VALUE = 7;
+  public static final int IDENTITY_PROVIDER_SUPER_AWESOME_VALUE = 7;
   /**
-   * <code>IDENTITYPROVIDER_DEVELOPER = 8;</code>
+   * <code>IDENTITY_PROVIDER_DEVELOPER = 8;</code>
    */
-  public static final int IDENTITYPROVIDER_DEVELOPER_VALUE = 8;
+  public static final int IDENTITY_PROVIDER_DEVELOPER_VALUE = 8;
   /**
-   * <code>IDENTITYPROVIDER_SHARED_SECRET = 9;</code>
+   * <code>IDENTITY_PROVIDER_SHARED_SECRET = 9;</code>
    */
-  public static final int IDENTITYPROVIDER_SHARED_SECRET_VALUE = 9;
+  public static final int IDENTITY_PROVIDER_SHARED_SECRET_VALUE = 9;
   /**
-   * <code>IDENTITYPROVIDER_POSEIDON = 10;</code>
+   * <code>IDENTITY_PROVIDER_POSEIDON = 10;</code>
    */
-  public static final int IDENTITYPROVIDER_POSEIDON_VALUE = 10;
+  public static final int IDENTITY_PROVIDER_POSEIDON_VALUE = 10;
   /**
-   * <code>IDENTITYPROVIDER_NINTENDO = 11;</code>
+   * <code>IDENTITY_PROVIDER_NINTENDO = 11;</code>
    */
-  public static final int IDENTITYPROVIDER_NINTENDO_VALUE = 11;
+  public static final int IDENTITY_PROVIDER_NINTENDO_VALUE = 11;
   /**
-   * <code>IDENTITYPROVIDER_APPLE = 12;</code>
+   * <code>IDENTITY_PROVIDER_APPLE = 12;</code>
    */
-  public static final int IDENTITYPROVIDER_APPLE_VALUE = 12;
+  public static final int IDENTITY_PROVIDER_APPLE_VALUE = 12;
 
 
   public final int getNumber() {
@@ -148,19 +148,19 @@ public enum IdentityProvider
    */
   public static IdentityProvider forNumber(int value) {
     switch (value) {
-      case 0: return IDENTITYPROVIDER_UNSET_IDENTITY_PROVIDER;
-      case 1: return IDENTITYPROVIDER_GOOGLE;
-      case 2: return IDENTITYPROVIDER_PTC;
-      case 3: return IDENTITYPROVIDER_FACEBOOK;
-      case 4: return IDENTITYPROVIDER_BACKGROUND;
-      case 5: return IDENTITYPROVIDER_INTERNAL;
-      case 6: return IDENTITYPROVIDER_SFIDA;
-      case 7: return IDENTITYPROVIDER_SUPER_AWESOME;
-      case 8: return IDENTITYPROVIDER_DEVELOPER;
-      case 9: return IDENTITYPROVIDER_SHARED_SECRET;
-      case 10: return IDENTITYPROVIDER_POSEIDON;
-      case 11: return IDENTITYPROVIDER_NINTENDO;
-      case 12: return IDENTITYPROVIDER_APPLE;
+      case 0: return IDENTITY_PROVIDER_UNSET_IDENTITY_PROVIDER;
+      case 1: return IDENTITY_PROVIDER_GOOGLE;
+      case 2: return IDENTITY_PROVIDER_PTC;
+      case 3: return IDENTITY_PROVIDER_FACEBOOK;
+      case 4: return IDENTITY_PROVIDER_BACKGROUND;
+      case 5: return IDENTITY_PROVIDER_INTERNAL;
+      case 6: return IDENTITY_PROVIDER_SFIDA;
+      case 7: return IDENTITY_PROVIDER_SUPER_AWESOME;
+      case 8: return IDENTITY_PROVIDER_DEVELOPER;
+      case 9: return IDENTITY_PROVIDER_SHARED_SECRET;
+      case 10: return IDENTITY_PROVIDER_POSEIDON;
+      case 11: return IDENTITY_PROVIDER_NINTENDO;
+      case 12: return IDENTITY_PROVIDER_APPLE;
       default: return null;
     }
   }
@@ -191,7 +191,7 @@ public enum IdentityProvider
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(2);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(3);
   }
 
   private static final IdentityProvider[] VALUES = values();

@@ -16,32 +16,32 @@ package POGOProtos.Rpc;
 public enum PoiImageType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POIIMAGETYPE_UNSET = 0;</code>
+   * <code>POI_IMAGE_TYPE_UNSET = 0;</code>
    */
-  POIIMAGETYPE_UNSET(0),
+  POI_IMAGE_TYPE_UNSET(0),
   /**
-   * <code>POIIMAGETYPE_MAIN = 1;</code>
+   * <code>POI_IMAGE_TYPE_MAIN = 1;</code>
    */
-  POIIMAGETYPE_MAIN(1),
+  POI_IMAGE_TYPE_MAIN(1),
   /**
-   * <code>POIIMAGETYPE_SURROUNDING = 2;</code>
+   * <code>POI_IMAGE_TYPE_SURROUNDING = 2;</code>
    */
-  POIIMAGETYPE_SURROUNDING(2),
+  POI_IMAGE_TYPE_SURROUNDING(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POIIMAGETYPE_UNSET = 0;</code>
+   * <code>POI_IMAGE_TYPE_UNSET = 0;</code>
    */
-  public static final int POIIMAGETYPE_UNSET_VALUE = 0;
+  public static final int POI_IMAGE_TYPE_UNSET_VALUE = 0;
   /**
-   * <code>POIIMAGETYPE_MAIN = 1;</code>
+   * <code>POI_IMAGE_TYPE_MAIN = 1;</code>
    */
-  public static final int POIIMAGETYPE_MAIN_VALUE = 1;
+  public static final int POI_IMAGE_TYPE_MAIN_VALUE = 1;
   /**
-   * <code>POIIMAGETYPE_SURROUNDING = 2;</code>
+   * <code>POI_IMAGE_TYPE_SURROUNDING = 2;</code>
    */
-  public static final int POIIMAGETYPE_SURROUNDING_VALUE = 2;
+  public static final int POI_IMAGE_TYPE_SURROUNDING_VALUE = 2;
 
 
   public final int getNumber() {
@@ -68,9 +68,9 @@ public enum PoiImageType
    */
   public static PoiImageType forNumber(int value) {
     switch (value) {
-      case 0: return POIIMAGETYPE_UNSET;
-      case 1: return POIIMAGETYPE_MAIN;
-      case 2: return POIIMAGETYPE_SURROUNDING;
+      case 0: return POI_IMAGE_TYPE_UNSET;
+      case 1: return POI_IMAGE_TYPE_MAIN;
+      case 2: return POI_IMAGE_TYPE_SURROUNDING;
       default: return null;
     }
   }

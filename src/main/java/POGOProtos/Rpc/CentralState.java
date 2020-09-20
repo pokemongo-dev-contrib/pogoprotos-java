@@ -16,56 +16,56 @@ package POGOProtos.Rpc;
 public enum CentralState
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>CENTRALSTATE_UNKNOWN = 0;</code>
+   * <code>CENTRAL_STATE_UNKNOWN = 0;</code>
    */
-  CENTRALSTATE_UNKNOWN(0),
+  CENTRAL_STATE_UNKNOWN(0),
   /**
-   * <code>CENTRALSTATE_RESETTING = 1;</code>
+   * <code>CENTRAL_STATE_RESETTING = 1;</code>
    */
-  CENTRALSTATE_RESETTING(1),
+  CENTRAL_STATE_RESETTING(1),
   /**
-   * <code>CENTRALSTATE_UNSUPPORTED = 2;</code>
+   * <code>CENTRAL_STATE_UNSUPPORTED = 2;</code>
    */
-  CENTRALSTATE_UNSUPPORTED(2),
+  CENTRAL_STATE_UNSUPPORTED(2),
   /**
-   * <code>CENTRALSTATE_UNAUTHORIZED = 3;</code>
+   * <code>CENTRAL_STATE_UNAUTHORIZED = 3;</code>
    */
-  CENTRALSTATE_UNAUTHORIZED(3),
+  CENTRAL_STATE_UNAUTHORIZED(3),
   /**
-   * <code>CENTRALSTATE_POWERED_OFF = 4;</code>
+   * <code>CENTRAL_STATE_POWERED_OFF = 4;</code>
    */
-  CENTRALSTATE_POWERED_OFF(4),
+  CENTRAL_STATE_POWERED_OFF(4),
   /**
-   * <code>CENTRALSTATE_POWERED_ON = 5;</code>
+   * <code>CENTRAL_STATE_POWERED_ON = 5;</code>
    */
-  CENTRALSTATE_POWERED_ON(5),
+  CENTRAL_STATE_POWERED_ON(5),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>CENTRALSTATE_UNKNOWN = 0;</code>
+   * <code>CENTRAL_STATE_UNKNOWN = 0;</code>
    */
-  public static final int CENTRALSTATE_UNKNOWN_VALUE = 0;
+  public static final int CENTRAL_STATE_UNKNOWN_VALUE = 0;
   /**
-   * <code>CENTRALSTATE_RESETTING = 1;</code>
+   * <code>CENTRAL_STATE_RESETTING = 1;</code>
    */
-  public static final int CENTRALSTATE_RESETTING_VALUE = 1;
+  public static final int CENTRAL_STATE_RESETTING_VALUE = 1;
   /**
-   * <code>CENTRALSTATE_UNSUPPORTED = 2;</code>
+   * <code>CENTRAL_STATE_UNSUPPORTED = 2;</code>
    */
-  public static final int CENTRALSTATE_UNSUPPORTED_VALUE = 2;
+  public static final int CENTRAL_STATE_UNSUPPORTED_VALUE = 2;
   /**
-   * <code>CENTRALSTATE_UNAUTHORIZED = 3;</code>
+   * <code>CENTRAL_STATE_UNAUTHORIZED = 3;</code>
    */
-  public static final int CENTRALSTATE_UNAUTHORIZED_VALUE = 3;
+  public static final int CENTRAL_STATE_UNAUTHORIZED_VALUE = 3;
   /**
-   * <code>CENTRALSTATE_POWERED_OFF = 4;</code>
+   * <code>CENTRAL_STATE_POWERED_OFF = 4;</code>
    */
-  public static final int CENTRALSTATE_POWERED_OFF_VALUE = 4;
+  public static final int CENTRAL_STATE_POWERED_OFF_VALUE = 4;
   /**
-   * <code>CENTRALSTATE_POWERED_ON = 5;</code>
+   * <code>CENTRAL_STATE_POWERED_ON = 5;</code>
    */
-  public static final int CENTRALSTATE_POWERED_ON_VALUE = 5;
+  public static final int CENTRAL_STATE_POWERED_ON_VALUE = 5;
 
 
   public final int getNumber() {
@@ -92,12 +92,12 @@ public enum CentralState
    */
   public static CentralState forNumber(int value) {
     switch (value) {
-      case 0: return CENTRALSTATE_UNKNOWN;
-      case 1: return CENTRALSTATE_RESETTING;
-      case 2: return CENTRALSTATE_UNSUPPORTED;
-      case 3: return CENTRALSTATE_UNAUTHORIZED;
-      case 4: return CENTRALSTATE_POWERED_OFF;
-      case 5: return CENTRALSTATE_POWERED_ON;
+      case 0: return CENTRAL_STATE_UNKNOWN;
+      case 1: return CENTRAL_STATE_RESETTING;
+      case 2: return CENTRAL_STATE_UNSUPPORTED;
+      case 3: return CENTRAL_STATE_UNAUTHORIZED;
+      case 4: return CENTRAL_STATE_POWERED_OFF;
+      case 5: return CENTRAL_STATE_POWERED_ON;
       default: return null;
     }
   }
@@ -128,7 +128,7 @@ public enum CentralState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(13);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(14);
   }
 
   private static final CentralState[] VALUES = values();

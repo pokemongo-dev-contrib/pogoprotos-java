@@ -23,8 +23,17 @@ public interface MapTileDataProtoOrBuilder extends
   POGOProtos.Rpc.MapTileProtoOrBuilder getMapTileOrBuilder();
 
   /**
-   * <code>bytes tile_data = 2;</code>
+   * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
+   * @return Whether the tileData field is set.
+   */
+  boolean hasTileData();
+  /**
+   * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
    * @return The tileData.
    */
-  com.google.protobuf.ByteString getTileData();
+  POGOProtos.Rpc.MapCompositionRoot getTileData();
+  /**
+   * <code>.POGOProtos.Rpc.MapCompositionRoot tile_data = 2;</code>
+   */
+  POGOProtos.Rpc.MapCompositionRootOrBuilder getTileDataOrBuilder();
 }

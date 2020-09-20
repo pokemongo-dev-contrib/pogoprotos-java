@@ -13,64 +13,64 @@ package POGOProtos.Rpc;
 public enum PluginState
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>PLUGINSTATE_UNKNOWN = 0;</code>
+   * <code>PLUGIN_STATE_UNKNOWN = 0;</code>
    */
-  PLUGINSTATE_UNKNOWN(0),
+  PLUGIN_STATE_UNKNOWN(0),
   /**
-   * <code>PLUGINSTATE_INITIALIZED = 1;</code>
+   * <code>PLUGIN_STATE_INITIALIZED = 1;</code>
    */
-  PLUGINSTATE_INITIALIZED(1),
+  PLUGIN_STATE_INITIALIZED(1),
   /**
-   * <code>PLUGINSTATE_STARTING = 2;</code>
+   * <code>PLUGIN_STATE_STARTING = 2;</code>
    */
-  PLUGINSTATE_STARTING(2),
+  PLUGIN_STATE_STARTING(2),
   /**
-   * <code>PLUGINSTATE_STARTED = 3;</code>
+   * <code>PLUGIN_STATE_STARTED = 3;</code>
    */
-  PLUGINSTATE_STARTED(3),
+  PLUGIN_STATE_STARTED(3),
   /**
-   * <code>PLUGINSTATE_RESUMED = 4;</code>
+   * <code>PLUGIN_STATE_RESUMED = 4;</code>
    */
-  PLUGINSTATE_RESUMED(4),
+  PLUGIN_STATE_RESUMED(4),
   /**
-   * <code>PLUGINSTATE_PAUSED = 5;</code>
+   * <code>PLUGIN_STATE_PAUSED = 5;</code>
    */
-  PLUGINSTATE_PAUSED(5),
+  PLUGIN_STATE_PAUSED(5),
   /**
-   * <code>PLUGINSTATE_STOPPED = 6;</code>
+   * <code>PLUGIN_STATE_STOPPED = 6;</code>
    */
-  PLUGINSTATE_STOPPED(6),
+  PLUGIN_STATE_STOPPED(6),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>PLUGINSTATE_UNKNOWN = 0;</code>
+   * <code>PLUGIN_STATE_UNKNOWN = 0;</code>
    */
-  public static final int PLUGINSTATE_UNKNOWN_VALUE = 0;
+  public static final int PLUGIN_STATE_UNKNOWN_VALUE = 0;
   /**
-   * <code>PLUGINSTATE_INITIALIZED = 1;</code>
+   * <code>PLUGIN_STATE_INITIALIZED = 1;</code>
    */
-  public static final int PLUGINSTATE_INITIALIZED_VALUE = 1;
+  public static final int PLUGIN_STATE_INITIALIZED_VALUE = 1;
   /**
-   * <code>PLUGINSTATE_STARTING = 2;</code>
+   * <code>PLUGIN_STATE_STARTING = 2;</code>
    */
-  public static final int PLUGINSTATE_STARTING_VALUE = 2;
+  public static final int PLUGIN_STATE_STARTING_VALUE = 2;
   /**
-   * <code>PLUGINSTATE_STARTED = 3;</code>
+   * <code>PLUGIN_STATE_STARTED = 3;</code>
    */
-  public static final int PLUGINSTATE_STARTED_VALUE = 3;
+  public static final int PLUGIN_STATE_STARTED_VALUE = 3;
   /**
-   * <code>PLUGINSTATE_RESUMED = 4;</code>
+   * <code>PLUGIN_STATE_RESUMED = 4;</code>
    */
-  public static final int PLUGINSTATE_RESUMED_VALUE = 4;
+  public static final int PLUGIN_STATE_RESUMED_VALUE = 4;
   /**
-   * <code>PLUGINSTATE_PAUSED = 5;</code>
+   * <code>PLUGIN_STATE_PAUSED = 5;</code>
    */
-  public static final int PLUGINSTATE_PAUSED_VALUE = 5;
+  public static final int PLUGIN_STATE_PAUSED_VALUE = 5;
   /**
-   * <code>PLUGINSTATE_STOPPED = 6;</code>
+   * <code>PLUGIN_STATE_STOPPED = 6;</code>
    */
-  public static final int PLUGINSTATE_STOPPED_VALUE = 6;
+  public static final int PLUGIN_STATE_STOPPED_VALUE = 6;
 
 
   public final int getNumber() {
@@ -97,13 +97,13 @@ public enum PluginState
    */
   public static PluginState forNumber(int value) {
     switch (value) {
-      case 0: return PLUGINSTATE_UNKNOWN;
-      case 1: return PLUGINSTATE_INITIALIZED;
-      case 2: return PLUGINSTATE_STARTING;
-      case 3: return PLUGINSTATE_STARTED;
-      case 4: return PLUGINSTATE_RESUMED;
-      case 5: return PLUGINSTATE_PAUSED;
-      case 6: return PLUGINSTATE_STOPPED;
+      case 0: return PLUGIN_STATE_UNKNOWN;
+      case 1: return PLUGIN_STATE_INITIALIZED;
+      case 2: return PLUGIN_STATE_STARTING;
+      case 3: return PLUGIN_STATE_STARTED;
+      case 4: return PLUGIN_STATE_RESUMED;
+      case 5: return PLUGIN_STATE_PAUSED;
+      case 6: return PLUGIN_STATE_STOPPED;
       default: return null;
     }
   }
@@ -134,7 +134,7 @@ public enum PluginState
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(16);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(17);
   }
 
   private static final PluginState[] VALUES = values();

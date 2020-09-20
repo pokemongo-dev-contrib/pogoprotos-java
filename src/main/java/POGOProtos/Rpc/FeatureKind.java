@@ -16,520 +16,520 @@ package POGOProtos.Rpc;
 public enum FeatureKind
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>FEATUREKIND_KIND_UNDEFINED = 0;</code>
+   * <code>FEATURE_KIND_KIND_UNDEFINED = 0;</code>
    */
-  FEATUREKIND_KIND_UNDEFINED(0),
+  FEATURE_KIND_KIND_UNDEFINED(0),
   /**
-   * <code>FEATUREKIND_KIND_BASIN = 1;</code>
+   * <code>FEATURE_KIND_KIND_BASIN = 1;</code>
    */
-  FEATUREKIND_KIND_BASIN(1),
+  FEATURE_KIND_KIND_BASIN(1),
   /**
-   * <code>FEATUREKIND_KIND_CANAL = 2;</code>
+   * <code>FEATURE_KIND_KIND_CANAL = 2;</code>
    */
-  FEATUREKIND_KIND_CANAL(2),
+  FEATURE_KIND_KIND_CANAL(2),
   /**
-   * <code>FEATUREKIND_KIND_CEMETERY = 3;</code>
+   * <code>FEATURE_KIND_KIND_CEMETERY = 3;</code>
    */
-  FEATUREKIND_KIND_CEMETERY(3),
+  FEATURE_KIND_KIND_CEMETERY(3),
   /**
-   * <code>FEATUREKIND_KIND_CINEMA = 4;</code>
+   * <code>FEATURE_KIND_KIND_CINEMA = 4;</code>
    */
-  FEATUREKIND_KIND_CINEMA(4),
+  FEATURE_KIND_KIND_CINEMA(4),
   /**
-   * <code>FEATUREKIND_KIND_COLLEGE = 5;</code>
+   * <code>FEATURE_KIND_KIND_COLLEGE = 5;</code>
    */
-  FEATUREKIND_KIND_COLLEGE(5),
+  FEATURE_KIND_KIND_COLLEGE(5),
   /**
-   * <code>FEATUREKIND_KIND_COMMERCIAL = 6;</code>
+   * <code>FEATURE_KIND_KIND_COMMERCIAL = 6;</code>
    */
-  FEATUREKIND_KIND_COMMERCIAL(6),
+  FEATURE_KIND_KIND_COMMERCIAL(6),
   /**
-   * <code>FEATUREKIND_KIND_COMMON = 7;</code>
+   * <code>FEATURE_KIND_KIND_COMMON = 7;</code>
    */
-  FEATUREKIND_KIND_COMMON(7),
+  FEATURE_KIND_KIND_COMMON(7),
   /**
-   * <code>FEATUREKIND_KIND_DAM = 8;</code>
+   * <code>FEATURE_KIND_KIND_DAM = 8;</code>
    */
-  FEATUREKIND_KIND_DAM(8),
+  FEATURE_KIND_KIND_DAM(8),
   /**
-   * <code>FEATUREKIND_KIND_DITCH = 9;</code>
+   * <code>FEATURE_KIND_KIND_DITCH = 9;</code>
    */
-  FEATUREKIND_KIND_DITCH(9),
+  FEATURE_KIND_KIND_DITCH(9),
   /**
-   * <code>FEATUREKIND_KIND_DOCK = 10;</code>
+   * <code>FEATURE_KIND_KIND_DOCK = 10;</code>
    */
-  FEATUREKIND_KIND_DOCK(10),
+  FEATURE_KIND_KIND_DOCK(10),
   /**
-   * <code>FEATUREKIND_KIND_DRAIN = 11;</code>
+   * <code>FEATURE_KIND_KIND_DRAIN = 11;</code>
    */
-  FEATUREKIND_KIND_DRAIN(11),
+  FEATURE_KIND_KIND_DRAIN(11),
   /**
-   * <code>FEATUREKIND_KIND_FARM = 12;</code>
+   * <code>FEATURE_KIND_KIND_FARM = 12;</code>
    */
-  FEATUREKIND_KIND_FARM(12),
+  FEATURE_KIND_KIND_FARM(12),
   /**
-   * <code>FEATUREKIND_KIND_FARMLAND = 13;</code>
+   * <code>FEATURE_KIND_KIND_FARMLAND = 13;</code>
    */
-  FEATUREKIND_KIND_FARMLAND(13),
+  FEATURE_KIND_KIND_FARMLAND(13),
   /**
-   * <code>FEATUREKIND_KIND_FARMYARD = 14;</code>
+   * <code>FEATURE_KIND_KIND_FARMYARD = 14;</code>
    */
-  FEATUREKIND_KIND_FARMYARD(14),
+  FEATURE_KIND_KIND_FARMYARD(14),
   /**
-   * <code>FEATUREKIND_KIND_FOOTWAY = 15;</code>
+   * <code>FEATURE_KIND_KIND_FOOTWAY = 15;</code>
    */
-  FEATUREKIND_KIND_FOOTWAY(15),
+  FEATURE_KIND_KIND_FOOTWAY(15),
   /**
-   * <code>FEATUREKIND_KIND_FOREST = 16;</code>
+   * <code>FEATURE_KIND_KIND_FOREST = 16;</code>
    */
-  FEATUREKIND_KIND_FOREST(16),
+  FEATURE_KIND_KIND_FOREST(16),
   /**
-   * <code>FEATUREKIND_KIND_GARDEN = 17;</code>
+   * <code>FEATURE_KIND_KIND_GARDEN = 17;</code>
    */
-  FEATUREKIND_KIND_GARDEN(17),
+  FEATURE_KIND_KIND_GARDEN(17),
   /**
-   * <code>FEATUREKIND_KIND_GLACIER = 18;</code>
+   * <code>FEATURE_KIND_KIND_GLACIER = 18;</code>
    */
-  FEATUREKIND_KIND_GLACIER(18),
+  FEATURE_KIND_KIND_GLACIER(18),
   /**
-   * <code>FEATUREKIND_KIND_GOLF_COURSE = 19;</code>
+   * <code>FEATURE_KIND_KIND_GOLF_COURSE = 19;</code>
    */
-  FEATUREKIND_KIND_GOLF_COURSE(19),
+  FEATURE_KIND_KIND_GOLF_COURSE(19),
   /**
-   * <code>FEATUREKIND_KIND_GRASS = 20;</code>
+   * <code>FEATURE_KIND_KIND_GRASS = 20;</code>
    */
-  FEATUREKIND_KIND_GRASS(20),
+  FEATURE_KIND_KIND_GRASS(20),
   /**
-   * <code>FEATUREKIND_KIND_HIGHWAY = 21;</code>
+   * <code>FEATURE_KIND_KIND_HIGHWAY = 21;</code>
    */
-  FEATUREKIND_KIND_HIGHWAY(21),
+  FEATURE_KIND_KIND_HIGHWAY(21),
   /**
-   * <code>FEATUREKIND_KIND_HOSPITAL = 22;</code>
+   * <code>FEATURE_KIND_KIND_HOSPITAL = 22;</code>
    */
-  FEATUREKIND_KIND_HOSPITAL(22),
+  FEATURE_KIND_KIND_HOSPITAL(22),
   /**
-   * <code>FEATUREKIND_KIND_HOTEL = 23;</code>
+   * <code>FEATURE_KIND_KIND_HOTEL = 23;</code>
    */
-  FEATUREKIND_KIND_HOTEL(23),
+  FEATURE_KIND_KIND_HOTEL(23),
   /**
-   * <code>FEATUREKIND_KIND_INDUSTRIAL = 24;</code>
+   * <code>FEATURE_KIND_KIND_INDUSTRIAL = 24;</code>
    */
-  FEATUREKIND_KIND_INDUSTRIAL(24),
+  FEATURE_KIND_KIND_INDUSTRIAL(24),
   /**
-   * <code>FEATUREKIND_KIND_LAKE = 25;</code>
+   * <code>FEATURE_KIND_KIND_LAKE = 25;</code>
    */
-  FEATUREKIND_KIND_LAKE(25),
+  FEATURE_KIND_KIND_LAKE(25),
   /**
-   * <code>FEATUREKIND_KIND_LAND = 26;</code>
+   * <code>FEATURE_KIND_KIND_LAND = 26;</code>
    */
-  FEATUREKIND_KIND_LAND(26),
+  FEATURE_KIND_KIND_LAND(26),
   /**
-   * <code>FEATUREKIND_KIND_LIBRARY = 27;</code>
+   * <code>FEATURE_KIND_KIND_LIBRARY = 27;</code>
    */
-  FEATUREKIND_KIND_LIBRARY(27),
+  FEATURE_KIND_KIND_LIBRARY(27),
   /**
-   * <code>FEATUREKIND_KIND_MAJOR_ROAD = 28;</code>
+   * <code>FEATURE_KIND_KIND_MAJOR_ROAD = 28;</code>
    */
-  FEATUREKIND_KIND_MAJOR_ROAD(28),
+  FEATURE_KIND_KIND_MAJOR_ROAD(28),
   /**
-   * <code>FEATUREKIND_KIND_MEADOW = 29;</code>
+   * <code>FEATURE_KIND_KIND_MEADOW = 29;</code>
    */
-  FEATUREKIND_KIND_MEADOW(29),
+  FEATURE_KIND_KIND_MEADOW(29),
   /**
-   * <code>FEATUREKIND_KIND_MINOR_ROAD = 30;</code>
+   * <code>FEATURE_KIND_KIND_MINOR_ROAD = 30;</code>
    */
-  FEATUREKIND_KIND_MINOR_ROAD(30),
+  FEATURE_KIND_KIND_MINOR_ROAD(30),
   /**
-   * <code>FEATUREKIND_KIND_NATURE_RESERVE = 31;</code>
+   * <code>FEATURE_KIND_KIND_NATURE_RESERVE = 31;</code>
    */
-  FEATUREKIND_KIND_NATURE_RESERVE(31),
+  FEATURE_KIND_KIND_NATURE_RESERVE(31),
   /**
-   * <code>FEATUREKIND_KIND_OCEAN = 32;</code>
+   * <code>FEATURE_KIND_KIND_OCEAN = 32;</code>
    */
-  FEATUREKIND_KIND_OCEAN(32),
+  FEATURE_KIND_KIND_OCEAN(32),
   /**
-   * <code>FEATUREKIND_KIND_PARK = 33;</code>
+   * <code>FEATURE_KIND_KIND_PARK = 33;</code>
    */
-  FEATUREKIND_KIND_PARK(33),
+  FEATURE_KIND_KIND_PARK(33),
   /**
-   * <code>FEATUREKIND_KIND_PARKING = 34;</code>
+   * <code>FEATURE_KIND_KIND_PARKING = 34;</code>
    */
-  FEATUREKIND_KIND_PARKING(34),
+  FEATURE_KIND_KIND_PARKING(34),
   /**
-   * <code>FEATUREKIND_KIND_PATH = 35;</code>
+   * <code>FEATURE_KIND_KIND_PATH = 35;</code>
    */
-  FEATUREKIND_KIND_PATH(35),
+  FEATURE_KIND_KIND_PATH(35),
   /**
-   * <code>FEATUREKIND_KIND_PEDESTRIAN = 36;</code>
+   * <code>FEATURE_KIND_KIND_PEDESTRIAN = 36;</code>
    */
-  FEATUREKIND_KIND_PEDESTRIAN(36),
+  FEATURE_KIND_KIND_PEDESTRIAN(36),
   /**
-   * <code>FEATUREKIND_KIND_PITCH = 37;</code>
+   * <code>FEATURE_KIND_KIND_PITCH = 37;</code>
    */
-  FEATUREKIND_KIND_PITCH(37),
+  FEATURE_KIND_KIND_PITCH(37),
   /**
-   * <code>FEATUREKIND_KIND_PLACE_OF_WORSHIP = 38;</code>
+   * <code>FEATURE_KIND_KIND_PLACE_OF_WORSHIP = 38;</code>
    */
-  FEATUREKIND_KIND_PLACE_OF_WORSHIP(38),
+  FEATURE_KIND_KIND_PLACE_OF_WORSHIP(38),
   /**
-   * <code>FEATUREKIND_KIND_PLAYA = 39;</code>
+   * <code>FEATURE_KIND_KIND_PLAYA = 39;</code>
    */
-  FEATUREKIND_KIND_PLAYA(39),
+  FEATURE_KIND_KIND_PLAYA(39),
   /**
-   * <code>FEATUREKIND_KIND_PLAYGROUND = 40;</code>
+   * <code>FEATURE_KIND_KIND_PLAYGROUND = 40;</code>
    */
-  FEATUREKIND_KIND_PLAYGROUND(40),
+  FEATURE_KIND_KIND_PLAYGROUND(40),
   /**
-   * <code>FEATUREKIND_KIND_QUARRY = 41;</code>
+   * <code>FEATURE_KIND_KIND_QUARRY = 41;</code>
    */
-  FEATUREKIND_KIND_QUARRY(41),
+  FEATURE_KIND_KIND_QUARRY(41),
   /**
-   * <code>FEATUREKIND_KIND_RAILWAY = 42;</code>
+   * <code>FEATURE_KIND_KIND_RAILWAY = 42;</code>
    */
-  FEATUREKIND_KIND_RAILWAY(42),
+  FEATURE_KIND_KIND_RAILWAY(42),
   /**
-   * <code>FEATUREKIND_KIND_RECREATION_AREA = 43;</code>
+   * <code>FEATURE_KIND_KIND_RECREATION_AREA = 43;</code>
    */
-  FEATUREKIND_KIND_RECREATION_AREA(43),
+  FEATURE_KIND_KIND_RECREATION_AREA(43),
   /**
-   * <code>FEATUREKIND_KIND_RESERVOIR = 44;</code>
+   * <code>FEATURE_KIND_KIND_RESERVOIR = 44;</code>
    */
-  FEATUREKIND_KIND_RESERVOIR(44),
+  FEATURE_KIND_KIND_RESERVOIR(44),
   /**
-   * <code>FEATUREKIND_KIND_RESIDENTIAL = 45;</code>
+   * <code>FEATURE_KIND_KIND_RESIDENTIAL = 45;</code>
    */
-  FEATUREKIND_KIND_RESIDENTIAL(45),
+  FEATURE_KIND_KIND_RESIDENTIAL(45),
   /**
-   * <code>FEATUREKIND_KIND_RETAIL = 46;</code>
+   * <code>FEATURE_KIND_KIND_RETAIL = 46;</code>
    */
-  FEATUREKIND_KIND_RETAIL(46),
+  FEATURE_KIND_KIND_RETAIL(46),
   /**
-   * <code>FEATUREKIND_KIND_RIVER = 47;</code>
+   * <code>FEATURE_KIND_KIND_RIVER = 47;</code>
    */
-  FEATUREKIND_KIND_RIVER(47),
+  FEATURE_KIND_KIND_RIVER(47),
   /**
-   * <code>FEATUREKIND_KIND_RIVERBANK = 48;</code>
+   * <code>FEATURE_KIND_KIND_RIVERBANK = 48;</code>
    */
-  FEATUREKIND_KIND_RIVERBANK(48),
+  FEATURE_KIND_KIND_RIVERBANK(48),
   /**
-   * <code>FEATUREKIND_KIND_RUNWAY = 49;</code>
+   * <code>FEATURE_KIND_KIND_RUNWAY = 49;</code>
    */
-  FEATUREKIND_KIND_RUNWAY(49),
+  FEATURE_KIND_KIND_RUNWAY(49),
   /**
-   * <code>FEATUREKIND_KIND_SCHOOL = 50;</code>
+   * <code>FEATURE_KIND_KIND_SCHOOL = 50;</code>
    */
-  FEATUREKIND_KIND_SCHOOL(50),
+  FEATURE_KIND_KIND_SCHOOL(50),
   /**
-   * <code>FEATUREKIND_KIND_SPORTS_CENTER = 51;</code>
+   * <code>FEATURE_KIND_KIND_SPORTS_CENTER = 51;</code>
    */
-  FEATUREKIND_KIND_SPORTS_CENTER(51),
+  FEATURE_KIND_KIND_SPORTS_CENTER(51),
   /**
-   * <code>FEATUREKIND_KIND_STADIUM = 52;</code>
+   * <code>FEATURE_KIND_KIND_STADIUM = 52;</code>
    */
-  FEATUREKIND_KIND_STADIUM(52),
+  FEATURE_KIND_KIND_STADIUM(52),
   /**
-   * <code>FEATUREKIND_KIND_STREAM = 53;</code>
+   * <code>FEATURE_KIND_KIND_STREAM = 53;</code>
    */
-  FEATUREKIND_KIND_STREAM(53),
+  FEATURE_KIND_KIND_STREAM(53),
   /**
-   * <code>FEATUREKIND_KIND_TAXIWAY = 54;</code>
+   * <code>FEATURE_KIND_KIND_TAXIWAY = 54;</code>
    */
-  FEATUREKIND_KIND_TAXIWAY(54),
+  FEATURE_KIND_KIND_TAXIWAY(54),
   /**
-   * <code>FEATUREKIND_KIND_THEATRE = 55;</code>
+   * <code>FEATURE_KIND_KIND_THEATRE = 55;</code>
    */
-  FEATUREKIND_KIND_THEATRE(55),
+  FEATURE_KIND_KIND_THEATRE(55),
   /**
-   * <code>FEATUREKIND_KIND_UNIVERSITY = 56;</code>
+   * <code>FEATURE_KIND_KIND_UNIVERSITY = 56;</code>
    */
-  FEATUREKIND_KIND_UNIVERSITY(56),
+  FEATURE_KIND_KIND_UNIVERSITY(56),
   /**
-   * <code>FEATUREKIND_KIND_URBAN_AREA = 57;</code>
+   * <code>FEATURE_KIND_KIND_URBAN_AREA = 57;</code>
    */
-  FEATUREKIND_KIND_URBAN_AREA(57),
+  FEATURE_KIND_KIND_URBAN_AREA(57),
   /**
-   * <code>FEATUREKIND_KIND_WATER = 58;</code>
+   * <code>FEATURE_KIND_KIND_WATER = 58;</code>
    */
-  FEATUREKIND_KIND_WATER(58),
+  FEATURE_KIND_KIND_WATER(58),
   /**
-   * <code>FEATUREKIND_KIND_WETLAND = 59;</code>
+   * <code>FEATURE_KIND_KIND_WETLAND = 59;</code>
    */
-  FEATUREKIND_KIND_WETLAND(59),
+  FEATURE_KIND_KIND_WETLAND(59),
   /**
-   * <code>FEATUREKIND_KIND_WOOD = 60;</code>
+   * <code>FEATURE_KIND_KIND_WOOD = 60;</code>
    */
-  FEATUREKIND_KIND_WOOD(60),
+  FEATURE_KIND_KIND_WOOD(60),
   /**
-   * <code>FEATUREKIND_KIND_DEBUG_TILE_OUTLINE = 61;</code>
+   * <code>FEATURE_KIND_KIND_DEBUG_TILE_OUTLINE = 61;</code>
    */
-  FEATUREKIND_KIND_DEBUG_TILE_OUTLINE(61),
+  FEATURE_KIND_KIND_DEBUG_TILE_OUTLINE(61),
   /**
-   * <code>FEATUREKIND_KIND_DEBUG_TILE_SURFACE = 62;</code>
+   * <code>FEATURE_KIND_KIND_DEBUG_TILE_SURFACE = 62;</code>
    */
-  FEATUREKIND_KIND_DEBUG_TILE_SURFACE(62),
+  FEATURE_KIND_KIND_DEBUG_TILE_SURFACE(62),
   /**
-   * <code>FEATUREKIND_KIND_OTHER = 63;</code>
+   * <code>FEATURE_KIND_KIND_OTHER = 63;</code>
    */
-  FEATUREKIND_KIND_OTHER(63),
+  FEATURE_KIND_KIND_OTHER(63),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>FEATUREKIND_KIND_UNDEFINED = 0;</code>
+   * <code>FEATURE_KIND_KIND_UNDEFINED = 0;</code>
    */
-  public static final int FEATUREKIND_KIND_UNDEFINED_VALUE = 0;
+  public static final int FEATURE_KIND_KIND_UNDEFINED_VALUE = 0;
   /**
-   * <code>FEATUREKIND_KIND_BASIN = 1;</code>
+   * <code>FEATURE_KIND_KIND_BASIN = 1;</code>
    */
-  public static final int FEATUREKIND_KIND_BASIN_VALUE = 1;
+  public static final int FEATURE_KIND_KIND_BASIN_VALUE = 1;
   /**
-   * <code>FEATUREKIND_KIND_CANAL = 2;</code>
+   * <code>FEATURE_KIND_KIND_CANAL = 2;</code>
    */
-  public static final int FEATUREKIND_KIND_CANAL_VALUE = 2;
+  public static final int FEATURE_KIND_KIND_CANAL_VALUE = 2;
   /**
-   * <code>FEATUREKIND_KIND_CEMETERY = 3;</code>
+   * <code>FEATURE_KIND_KIND_CEMETERY = 3;</code>
    */
-  public static final int FEATUREKIND_KIND_CEMETERY_VALUE = 3;
+  public static final int FEATURE_KIND_KIND_CEMETERY_VALUE = 3;
   /**
-   * <code>FEATUREKIND_KIND_CINEMA = 4;</code>
+   * <code>FEATURE_KIND_KIND_CINEMA = 4;</code>
    */
-  public static final int FEATUREKIND_KIND_CINEMA_VALUE = 4;
+  public static final int FEATURE_KIND_KIND_CINEMA_VALUE = 4;
   /**
-   * <code>FEATUREKIND_KIND_COLLEGE = 5;</code>
+   * <code>FEATURE_KIND_KIND_COLLEGE = 5;</code>
    */
-  public static final int FEATUREKIND_KIND_COLLEGE_VALUE = 5;
+  public static final int FEATURE_KIND_KIND_COLLEGE_VALUE = 5;
   /**
-   * <code>FEATUREKIND_KIND_COMMERCIAL = 6;</code>
+   * <code>FEATURE_KIND_KIND_COMMERCIAL = 6;</code>
    */
-  public static final int FEATUREKIND_KIND_COMMERCIAL_VALUE = 6;
+  public static final int FEATURE_KIND_KIND_COMMERCIAL_VALUE = 6;
   /**
-   * <code>FEATUREKIND_KIND_COMMON = 7;</code>
+   * <code>FEATURE_KIND_KIND_COMMON = 7;</code>
    */
-  public static final int FEATUREKIND_KIND_COMMON_VALUE = 7;
+  public static final int FEATURE_KIND_KIND_COMMON_VALUE = 7;
   /**
-   * <code>FEATUREKIND_KIND_DAM = 8;</code>
+   * <code>FEATURE_KIND_KIND_DAM = 8;</code>
    */
-  public static final int FEATUREKIND_KIND_DAM_VALUE = 8;
+  public static final int FEATURE_KIND_KIND_DAM_VALUE = 8;
   /**
-   * <code>FEATUREKIND_KIND_DITCH = 9;</code>
+   * <code>FEATURE_KIND_KIND_DITCH = 9;</code>
    */
-  public static final int FEATUREKIND_KIND_DITCH_VALUE = 9;
+  public static final int FEATURE_KIND_KIND_DITCH_VALUE = 9;
   /**
-   * <code>FEATUREKIND_KIND_DOCK = 10;</code>
+   * <code>FEATURE_KIND_KIND_DOCK = 10;</code>
    */
-  public static final int FEATUREKIND_KIND_DOCK_VALUE = 10;
+  public static final int FEATURE_KIND_KIND_DOCK_VALUE = 10;
   /**
-   * <code>FEATUREKIND_KIND_DRAIN = 11;</code>
+   * <code>FEATURE_KIND_KIND_DRAIN = 11;</code>
    */
-  public static final int FEATUREKIND_KIND_DRAIN_VALUE = 11;
+  public static final int FEATURE_KIND_KIND_DRAIN_VALUE = 11;
   /**
-   * <code>FEATUREKIND_KIND_FARM = 12;</code>
+   * <code>FEATURE_KIND_KIND_FARM = 12;</code>
    */
-  public static final int FEATUREKIND_KIND_FARM_VALUE = 12;
+  public static final int FEATURE_KIND_KIND_FARM_VALUE = 12;
   /**
-   * <code>FEATUREKIND_KIND_FARMLAND = 13;</code>
+   * <code>FEATURE_KIND_KIND_FARMLAND = 13;</code>
    */
-  public static final int FEATUREKIND_KIND_FARMLAND_VALUE = 13;
+  public static final int FEATURE_KIND_KIND_FARMLAND_VALUE = 13;
   /**
-   * <code>FEATUREKIND_KIND_FARMYARD = 14;</code>
+   * <code>FEATURE_KIND_KIND_FARMYARD = 14;</code>
    */
-  public static final int FEATUREKIND_KIND_FARMYARD_VALUE = 14;
+  public static final int FEATURE_KIND_KIND_FARMYARD_VALUE = 14;
   /**
-   * <code>FEATUREKIND_KIND_FOOTWAY = 15;</code>
+   * <code>FEATURE_KIND_KIND_FOOTWAY = 15;</code>
    */
-  public static final int FEATUREKIND_KIND_FOOTWAY_VALUE = 15;
+  public static final int FEATURE_KIND_KIND_FOOTWAY_VALUE = 15;
   /**
-   * <code>FEATUREKIND_KIND_FOREST = 16;</code>
+   * <code>FEATURE_KIND_KIND_FOREST = 16;</code>
    */
-  public static final int FEATUREKIND_KIND_FOREST_VALUE = 16;
+  public static final int FEATURE_KIND_KIND_FOREST_VALUE = 16;
   /**
-   * <code>FEATUREKIND_KIND_GARDEN = 17;</code>
+   * <code>FEATURE_KIND_KIND_GARDEN = 17;</code>
    */
-  public static final int FEATUREKIND_KIND_GARDEN_VALUE = 17;
+  public static final int FEATURE_KIND_KIND_GARDEN_VALUE = 17;
   /**
-   * <code>FEATUREKIND_KIND_GLACIER = 18;</code>
+   * <code>FEATURE_KIND_KIND_GLACIER = 18;</code>
    */
-  public static final int FEATUREKIND_KIND_GLACIER_VALUE = 18;
+  public static final int FEATURE_KIND_KIND_GLACIER_VALUE = 18;
   /**
-   * <code>FEATUREKIND_KIND_GOLF_COURSE = 19;</code>
+   * <code>FEATURE_KIND_KIND_GOLF_COURSE = 19;</code>
    */
-  public static final int FEATUREKIND_KIND_GOLF_COURSE_VALUE = 19;
+  public static final int FEATURE_KIND_KIND_GOLF_COURSE_VALUE = 19;
   /**
-   * <code>FEATUREKIND_KIND_GRASS = 20;</code>
+   * <code>FEATURE_KIND_KIND_GRASS = 20;</code>
    */
-  public static final int FEATUREKIND_KIND_GRASS_VALUE = 20;
+  public static final int FEATURE_KIND_KIND_GRASS_VALUE = 20;
   /**
-   * <code>FEATUREKIND_KIND_HIGHWAY = 21;</code>
+   * <code>FEATURE_KIND_KIND_HIGHWAY = 21;</code>
    */
-  public static final int FEATUREKIND_KIND_HIGHWAY_VALUE = 21;
+  public static final int FEATURE_KIND_KIND_HIGHWAY_VALUE = 21;
   /**
-   * <code>FEATUREKIND_KIND_HOSPITAL = 22;</code>
+   * <code>FEATURE_KIND_KIND_HOSPITAL = 22;</code>
    */
-  public static final int FEATUREKIND_KIND_HOSPITAL_VALUE = 22;
+  public static final int FEATURE_KIND_KIND_HOSPITAL_VALUE = 22;
   /**
-   * <code>FEATUREKIND_KIND_HOTEL = 23;</code>
+   * <code>FEATURE_KIND_KIND_HOTEL = 23;</code>
    */
-  public static final int FEATUREKIND_KIND_HOTEL_VALUE = 23;
+  public static final int FEATURE_KIND_KIND_HOTEL_VALUE = 23;
   /**
-   * <code>FEATUREKIND_KIND_INDUSTRIAL = 24;</code>
+   * <code>FEATURE_KIND_KIND_INDUSTRIAL = 24;</code>
    */
-  public static final int FEATUREKIND_KIND_INDUSTRIAL_VALUE = 24;
+  public static final int FEATURE_KIND_KIND_INDUSTRIAL_VALUE = 24;
   /**
-   * <code>FEATUREKIND_KIND_LAKE = 25;</code>
+   * <code>FEATURE_KIND_KIND_LAKE = 25;</code>
    */
-  public static final int FEATUREKIND_KIND_LAKE_VALUE = 25;
+  public static final int FEATURE_KIND_KIND_LAKE_VALUE = 25;
   /**
-   * <code>FEATUREKIND_KIND_LAND = 26;</code>
+   * <code>FEATURE_KIND_KIND_LAND = 26;</code>
    */
-  public static final int FEATUREKIND_KIND_LAND_VALUE = 26;
+  public static final int FEATURE_KIND_KIND_LAND_VALUE = 26;
   /**
-   * <code>FEATUREKIND_KIND_LIBRARY = 27;</code>
+   * <code>FEATURE_KIND_KIND_LIBRARY = 27;</code>
    */
-  public static final int FEATUREKIND_KIND_LIBRARY_VALUE = 27;
+  public static final int FEATURE_KIND_KIND_LIBRARY_VALUE = 27;
   /**
-   * <code>FEATUREKIND_KIND_MAJOR_ROAD = 28;</code>
+   * <code>FEATURE_KIND_KIND_MAJOR_ROAD = 28;</code>
    */
-  public static final int FEATUREKIND_KIND_MAJOR_ROAD_VALUE = 28;
+  public static final int FEATURE_KIND_KIND_MAJOR_ROAD_VALUE = 28;
   /**
-   * <code>FEATUREKIND_KIND_MEADOW = 29;</code>
+   * <code>FEATURE_KIND_KIND_MEADOW = 29;</code>
    */
-  public static final int FEATUREKIND_KIND_MEADOW_VALUE = 29;
+  public static final int FEATURE_KIND_KIND_MEADOW_VALUE = 29;
   /**
-   * <code>FEATUREKIND_KIND_MINOR_ROAD = 30;</code>
+   * <code>FEATURE_KIND_KIND_MINOR_ROAD = 30;</code>
    */
-  public static final int FEATUREKIND_KIND_MINOR_ROAD_VALUE = 30;
+  public static final int FEATURE_KIND_KIND_MINOR_ROAD_VALUE = 30;
   /**
-   * <code>FEATUREKIND_KIND_NATURE_RESERVE = 31;</code>
+   * <code>FEATURE_KIND_KIND_NATURE_RESERVE = 31;</code>
    */
-  public static final int FEATUREKIND_KIND_NATURE_RESERVE_VALUE = 31;
+  public static final int FEATURE_KIND_KIND_NATURE_RESERVE_VALUE = 31;
   /**
-   * <code>FEATUREKIND_KIND_OCEAN = 32;</code>
+   * <code>FEATURE_KIND_KIND_OCEAN = 32;</code>
    */
-  public static final int FEATUREKIND_KIND_OCEAN_VALUE = 32;
+  public static final int FEATURE_KIND_KIND_OCEAN_VALUE = 32;
   /**
-   * <code>FEATUREKIND_KIND_PARK = 33;</code>
+   * <code>FEATURE_KIND_KIND_PARK = 33;</code>
    */
-  public static final int FEATUREKIND_KIND_PARK_VALUE = 33;
+  public static final int FEATURE_KIND_KIND_PARK_VALUE = 33;
   /**
-   * <code>FEATUREKIND_KIND_PARKING = 34;</code>
+   * <code>FEATURE_KIND_KIND_PARKING = 34;</code>
    */
-  public static final int FEATUREKIND_KIND_PARKING_VALUE = 34;
+  public static final int FEATURE_KIND_KIND_PARKING_VALUE = 34;
   /**
-   * <code>FEATUREKIND_KIND_PATH = 35;</code>
+   * <code>FEATURE_KIND_KIND_PATH = 35;</code>
    */
-  public static final int FEATUREKIND_KIND_PATH_VALUE = 35;
+  public static final int FEATURE_KIND_KIND_PATH_VALUE = 35;
   /**
-   * <code>FEATUREKIND_KIND_PEDESTRIAN = 36;</code>
+   * <code>FEATURE_KIND_KIND_PEDESTRIAN = 36;</code>
    */
-  public static final int FEATUREKIND_KIND_PEDESTRIAN_VALUE = 36;
+  public static final int FEATURE_KIND_KIND_PEDESTRIAN_VALUE = 36;
   /**
-   * <code>FEATUREKIND_KIND_PITCH = 37;</code>
+   * <code>FEATURE_KIND_KIND_PITCH = 37;</code>
    */
-  public static final int FEATUREKIND_KIND_PITCH_VALUE = 37;
+  public static final int FEATURE_KIND_KIND_PITCH_VALUE = 37;
   /**
-   * <code>FEATUREKIND_KIND_PLACE_OF_WORSHIP = 38;</code>
+   * <code>FEATURE_KIND_KIND_PLACE_OF_WORSHIP = 38;</code>
    */
-  public static final int FEATUREKIND_KIND_PLACE_OF_WORSHIP_VALUE = 38;
+  public static final int FEATURE_KIND_KIND_PLACE_OF_WORSHIP_VALUE = 38;
   /**
-   * <code>FEATUREKIND_KIND_PLAYA = 39;</code>
+   * <code>FEATURE_KIND_KIND_PLAYA = 39;</code>
    */
-  public static final int FEATUREKIND_KIND_PLAYA_VALUE = 39;
+  public static final int FEATURE_KIND_KIND_PLAYA_VALUE = 39;
   /**
-   * <code>FEATUREKIND_KIND_PLAYGROUND = 40;</code>
+   * <code>FEATURE_KIND_KIND_PLAYGROUND = 40;</code>
    */
-  public static final int FEATUREKIND_KIND_PLAYGROUND_VALUE = 40;
+  public static final int FEATURE_KIND_KIND_PLAYGROUND_VALUE = 40;
   /**
-   * <code>FEATUREKIND_KIND_QUARRY = 41;</code>
+   * <code>FEATURE_KIND_KIND_QUARRY = 41;</code>
    */
-  public static final int FEATUREKIND_KIND_QUARRY_VALUE = 41;
+  public static final int FEATURE_KIND_KIND_QUARRY_VALUE = 41;
   /**
-   * <code>FEATUREKIND_KIND_RAILWAY = 42;</code>
+   * <code>FEATURE_KIND_KIND_RAILWAY = 42;</code>
    */
-  public static final int FEATUREKIND_KIND_RAILWAY_VALUE = 42;
+  public static final int FEATURE_KIND_KIND_RAILWAY_VALUE = 42;
   /**
-   * <code>FEATUREKIND_KIND_RECREATION_AREA = 43;</code>
+   * <code>FEATURE_KIND_KIND_RECREATION_AREA = 43;</code>
    */
-  public static final int FEATUREKIND_KIND_RECREATION_AREA_VALUE = 43;
+  public static final int FEATURE_KIND_KIND_RECREATION_AREA_VALUE = 43;
   /**
-   * <code>FEATUREKIND_KIND_RESERVOIR = 44;</code>
+   * <code>FEATURE_KIND_KIND_RESERVOIR = 44;</code>
    */
-  public static final int FEATUREKIND_KIND_RESERVOIR_VALUE = 44;
+  public static final int FEATURE_KIND_KIND_RESERVOIR_VALUE = 44;
   /**
-   * <code>FEATUREKIND_KIND_RESIDENTIAL = 45;</code>
+   * <code>FEATURE_KIND_KIND_RESIDENTIAL = 45;</code>
    */
-  public static final int FEATUREKIND_KIND_RESIDENTIAL_VALUE = 45;
+  public static final int FEATURE_KIND_KIND_RESIDENTIAL_VALUE = 45;
   /**
-   * <code>FEATUREKIND_KIND_RETAIL = 46;</code>
+   * <code>FEATURE_KIND_KIND_RETAIL = 46;</code>
    */
-  public static final int FEATUREKIND_KIND_RETAIL_VALUE = 46;
+  public static final int FEATURE_KIND_KIND_RETAIL_VALUE = 46;
   /**
-   * <code>FEATUREKIND_KIND_RIVER = 47;</code>
+   * <code>FEATURE_KIND_KIND_RIVER = 47;</code>
    */
-  public static final int FEATUREKIND_KIND_RIVER_VALUE = 47;
+  public static final int FEATURE_KIND_KIND_RIVER_VALUE = 47;
   /**
-   * <code>FEATUREKIND_KIND_RIVERBANK = 48;</code>
+   * <code>FEATURE_KIND_KIND_RIVERBANK = 48;</code>
    */
-  public static final int FEATUREKIND_KIND_RIVERBANK_VALUE = 48;
+  public static final int FEATURE_KIND_KIND_RIVERBANK_VALUE = 48;
   /**
-   * <code>FEATUREKIND_KIND_RUNWAY = 49;</code>
+   * <code>FEATURE_KIND_KIND_RUNWAY = 49;</code>
    */
-  public static final int FEATUREKIND_KIND_RUNWAY_VALUE = 49;
+  public static final int FEATURE_KIND_KIND_RUNWAY_VALUE = 49;
   /**
-   * <code>FEATUREKIND_KIND_SCHOOL = 50;</code>
+   * <code>FEATURE_KIND_KIND_SCHOOL = 50;</code>
    */
-  public static final int FEATUREKIND_KIND_SCHOOL_VALUE = 50;
+  public static final int FEATURE_KIND_KIND_SCHOOL_VALUE = 50;
   /**
-   * <code>FEATUREKIND_KIND_SPORTS_CENTER = 51;</code>
+   * <code>FEATURE_KIND_KIND_SPORTS_CENTER = 51;</code>
    */
-  public static final int FEATUREKIND_KIND_SPORTS_CENTER_VALUE = 51;
+  public static final int FEATURE_KIND_KIND_SPORTS_CENTER_VALUE = 51;
   /**
-   * <code>FEATUREKIND_KIND_STADIUM = 52;</code>
+   * <code>FEATURE_KIND_KIND_STADIUM = 52;</code>
    */
-  public static final int FEATUREKIND_KIND_STADIUM_VALUE = 52;
+  public static final int FEATURE_KIND_KIND_STADIUM_VALUE = 52;
   /**
-   * <code>FEATUREKIND_KIND_STREAM = 53;</code>
+   * <code>FEATURE_KIND_KIND_STREAM = 53;</code>
    */
-  public static final int FEATUREKIND_KIND_STREAM_VALUE = 53;
+  public static final int FEATURE_KIND_KIND_STREAM_VALUE = 53;
   /**
-   * <code>FEATUREKIND_KIND_TAXIWAY = 54;</code>
+   * <code>FEATURE_KIND_KIND_TAXIWAY = 54;</code>
    */
-  public static final int FEATUREKIND_KIND_TAXIWAY_VALUE = 54;
+  public static final int FEATURE_KIND_KIND_TAXIWAY_VALUE = 54;
   /**
-   * <code>FEATUREKIND_KIND_THEATRE = 55;</code>
+   * <code>FEATURE_KIND_KIND_THEATRE = 55;</code>
    */
-  public static final int FEATUREKIND_KIND_THEATRE_VALUE = 55;
+  public static final int FEATURE_KIND_KIND_THEATRE_VALUE = 55;
   /**
-   * <code>FEATUREKIND_KIND_UNIVERSITY = 56;</code>
+   * <code>FEATURE_KIND_KIND_UNIVERSITY = 56;</code>
    */
-  public static final int FEATUREKIND_KIND_UNIVERSITY_VALUE = 56;
+  public static final int FEATURE_KIND_KIND_UNIVERSITY_VALUE = 56;
   /**
-   * <code>FEATUREKIND_KIND_URBAN_AREA = 57;</code>
+   * <code>FEATURE_KIND_KIND_URBAN_AREA = 57;</code>
    */
-  public static final int FEATUREKIND_KIND_URBAN_AREA_VALUE = 57;
+  public static final int FEATURE_KIND_KIND_URBAN_AREA_VALUE = 57;
   /**
-   * <code>FEATUREKIND_KIND_WATER = 58;</code>
+   * <code>FEATURE_KIND_KIND_WATER = 58;</code>
    */
-  public static final int FEATUREKIND_KIND_WATER_VALUE = 58;
+  public static final int FEATURE_KIND_KIND_WATER_VALUE = 58;
   /**
-   * <code>FEATUREKIND_KIND_WETLAND = 59;</code>
+   * <code>FEATURE_KIND_KIND_WETLAND = 59;</code>
    */
-  public static final int FEATUREKIND_KIND_WETLAND_VALUE = 59;
+  public static final int FEATURE_KIND_KIND_WETLAND_VALUE = 59;
   /**
-   * <code>FEATUREKIND_KIND_WOOD = 60;</code>
+   * <code>FEATURE_KIND_KIND_WOOD = 60;</code>
    */
-  public static final int FEATUREKIND_KIND_WOOD_VALUE = 60;
+  public static final int FEATURE_KIND_KIND_WOOD_VALUE = 60;
   /**
-   * <code>FEATUREKIND_KIND_DEBUG_TILE_OUTLINE = 61;</code>
+   * <code>FEATURE_KIND_KIND_DEBUG_TILE_OUTLINE = 61;</code>
    */
-  public static final int FEATUREKIND_KIND_DEBUG_TILE_OUTLINE_VALUE = 61;
+  public static final int FEATURE_KIND_KIND_DEBUG_TILE_OUTLINE_VALUE = 61;
   /**
-   * <code>FEATUREKIND_KIND_DEBUG_TILE_SURFACE = 62;</code>
+   * <code>FEATURE_KIND_KIND_DEBUG_TILE_SURFACE = 62;</code>
    */
-  public static final int FEATUREKIND_KIND_DEBUG_TILE_SURFACE_VALUE = 62;
+  public static final int FEATURE_KIND_KIND_DEBUG_TILE_SURFACE_VALUE = 62;
   /**
-   * <code>FEATUREKIND_KIND_OTHER = 63;</code>
+   * <code>FEATURE_KIND_KIND_OTHER = 63;</code>
    */
-  public static final int FEATUREKIND_KIND_OTHER_VALUE = 63;
+  public static final int FEATURE_KIND_KIND_OTHER_VALUE = 63;
 
 
   public final int getNumber() {
@@ -556,70 +556,70 @@ public enum FeatureKind
    */
   public static FeatureKind forNumber(int value) {
     switch (value) {
-      case 0: return FEATUREKIND_KIND_UNDEFINED;
-      case 1: return FEATUREKIND_KIND_BASIN;
-      case 2: return FEATUREKIND_KIND_CANAL;
-      case 3: return FEATUREKIND_KIND_CEMETERY;
-      case 4: return FEATUREKIND_KIND_CINEMA;
-      case 5: return FEATUREKIND_KIND_COLLEGE;
-      case 6: return FEATUREKIND_KIND_COMMERCIAL;
-      case 7: return FEATUREKIND_KIND_COMMON;
-      case 8: return FEATUREKIND_KIND_DAM;
-      case 9: return FEATUREKIND_KIND_DITCH;
-      case 10: return FEATUREKIND_KIND_DOCK;
-      case 11: return FEATUREKIND_KIND_DRAIN;
-      case 12: return FEATUREKIND_KIND_FARM;
-      case 13: return FEATUREKIND_KIND_FARMLAND;
-      case 14: return FEATUREKIND_KIND_FARMYARD;
-      case 15: return FEATUREKIND_KIND_FOOTWAY;
-      case 16: return FEATUREKIND_KIND_FOREST;
-      case 17: return FEATUREKIND_KIND_GARDEN;
-      case 18: return FEATUREKIND_KIND_GLACIER;
-      case 19: return FEATUREKIND_KIND_GOLF_COURSE;
-      case 20: return FEATUREKIND_KIND_GRASS;
-      case 21: return FEATUREKIND_KIND_HIGHWAY;
-      case 22: return FEATUREKIND_KIND_HOSPITAL;
-      case 23: return FEATUREKIND_KIND_HOTEL;
-      case 24: return FEATUREKIND_KIND_INDUSTRIAL;
-      case 25: return FEATUREKIND_KIND_LAKE;
-      case 26: return FEATUREKIND_KIND_LAND;
-      case 27: return FEATUREKIND_KIND_LIBRARY;
-      case 28: return FEATUREKIND_KIND_MAJOR_ROAD;
-      case 29: return FEATUREKIND_KIND_MEADOW;
-      case 30: return FEATUREKIND_KIND_MINOR_ROAD;
-      case 31: return FEATUREKIND_KIND_NATURE_RESERVE;
-      case 32: return FEATUREKIND_KIND_OCEAN;
-      case 33: return FEATUREKIND_KIND_PARK;
-      case 34: return FEATUREKIND_KIND_PARKING;
-      case 35: return FEATUREKIND_KIND_PATH;
-      case 36: return FEATUREKIND_KIND_PEDESTRIAN;
-      case 37: return FEATUREKIND_KIND_PITCH;
-      case 38: return FEATUREKIND_KIND_PLACE_OF_WORSHIP;
-      case 39: return FEATUREKIND_KIND_PLAYA;
-      case 40: return FEATUREKIND_KIND_PLAYGROUND;
-      case 41: return FEATUREKIND_KIND_QUARRY;
-      case 42: return FEATUREKIND_KIND_RAILWAY;
-      case 43: return FEATUREKIND_KIND_RECREATION_AREA;
-      case 44: return FEATUREKIND_KIND_RESERVOIR;
-      case 45: return FEATUREKIND_KIND_RESIDENTIAL;
-      case 46: return FEATUREKIND_KIND_RETAIL;
-      case 47: return FEATUREKIND_KIND_RIVER;
-      case 48: return FEATUREKIND_KIND_RIVERBANK;
-      case 49: return FEATUREKIND_KIND_RUNWAY;
-      case 50: return FEATUREKIND_KIND_SCHOOL;
-      case 51: return FEATUREKIND_KIND_SPORTS_CENTER;
-      case 52: return FEATUREKIND_KIND_STADIUM;
-      case 53: return FEATUREKIND_KIND_STREAM;
-      case 54: return FEATUREKIND_KIND_TAXIWAY;
-      case 55: return FEATUREKIND_KIND_THEATRE;
-      case 56: return FEATUREKIND_KIND_UNIVERSITY;
-      case 57: return FEATUREKIND_KIND_URBAN_AREA;
-      case 58: return FEATUREKIND_KIND_WATER;
-      case 59: return FEATUREKIND_KIND_WETLAND;
-      case 60: return FEATUREKIND_KIND_WOOD;
-      case 61: return FEATUREKIND_KIND_DEBUG_TILE_OUTLINE;
-      case 62: return FEATUREKIND_KIND_DEBUG_TILE_SURFACE;
-      case 63: return FEATUREKIND_KIND_OTHER;
+      case 0: return FEATURE_KIND_KIND_UNDEFINED;
+      case 1: return FEATURE_KIND_KIND_BASIN;
+      case 2: return FEATURE_KIND_KIND_CANAL;
+      case 3: return FEATURE_KIND_KIND_CEMETERY;
+      case 4: return FEATURE_KIND_KIND_CINEMA;
+      case 5: return FEATURE_KIND_KIND_COLLEGE;
+      case 6: return FEATURE_KIND_KIND_COMMERCIAL;
+      case 7: return FEATURE_KIND_KIND_COMMON;
+      case 8: return FEATURE_KIND_KIND_DAM;
+      case 9: return FEATURE_KIND_KIND_DITCH;
+      case 10: return FEATURE_KIND_KIND_DOCK;
+      case 11: return FEATURE_KIND_KIND_DRAIN;
+      case 12: return FEATURE_KIND_KIND_FARM;
+      case 13: return FEATURE_KIND_KIND_FARMLAND;
+      case 14: return FEATURE_KIND_KIND_FARMYARD;
+      case 15: return FEATURE_KIND_KIND_FOOTWAY;
+      case 16: return FEATURE_KIND_KIND_FOREST;
+      case 17: return FEATURE_KIND_KIND_GARDEN;
+      case 18: return FEATURE_KIND_KIND_GLACIER;
+      case 19: return FEATURE_KIND_KIND_GOLF_COURSE;
+      case 20: return FEATURE_KIND_KIND_GRASS;
+      case 21: return FEATURE_KIND_KIND_HIGHWAY;
+      case 22: return FEATURE_KIND_KIND_HOSPITAL;
+      case 23: return FEATURE_KIND_KIND_HOTEL;
+      case 24: return FEATURE_KIND_KIND_INDUSTRIAL;
+      case 25: return FEATURE_KIND_KIND_LAKE;
+      case 26: return FEATURE_KIND_KIND_LAND;
+      case 27: return FEATURE_KIND_KIND_LIBRARY;
+      case 28: return FEATURE_KIND_KIND_MAJOR_ROAD;
+      case 29: return FEATURE_KIND_KIND_MEADOW;
+      case 30: return FEATURE_KIND_KIND_MINOR_ROAD;
+      case 31: return FEATURE_KIND_KIND_NATURE_RESERVE;
+      case 32: return FEATURE_KIND_KIND_OCEAN;
+      case 33: return FEATURE_KIND_KIND_PARK;
+      case 34: return FEATURE_KIND_KIND_PARKING;
+      case 35: return FEATURE_KIND_KIND_PATH;
+      case 36: return FEATURE_KIND_KIND_PEDESTRIAN;
+      case 37: return FEATURE_KIND_KIND_PITCH;
+      case 38: return FEATURE_KIND_KIND_PLACE_OF_WORSHIP;
+      case 39: return FEATURE_KIND_KIND_PLAYA;
+      case 40: return FEATURE_KIND_KIND_PLAYGROUND;
+      case 41: return FEATURE_KIND_KIND_QUARRY;
+      case 42: return FEATURE_KIND_KIND_RAILWAY;
+      case 43: return FEATURE_KIND_KIND_RECREATION_AREA;
+      case 44: return FEATURE_KIND_KIND_RESERVOIR;
+      case 45: return FEATURE_KIND_KIND_RESIDENTIAL;
+      case 46: return FEATURE_KIND_KIND_RETAIL;
+      case 47: return FEATURE_KIND_KIND_RIVER;
+      case 48: return FEATURE_KIND_KIND_RIVERBANK;
+      case 49: return FEATURE_KIND_KIND_RUNWAY;
+      case 50: return FEATURE_KIND_KIND_SCHOOL;
+      case 51: return FEATURE_KIND_KIND_SPORTS_CENTER;
+      case 52: return FEATURE_KIND_KIND_STADIUM;
+      case 53: return FEATURE_KIND_KIND_STREAM;
+      case 54: return FEATURE_KIND_KIND_TAXIWAY;
+      case 55: return FEATURE_KIND_KIND_THEATRE;
+      case 56: return FEATURE_KIND_KIND_UNIVERSITY;
+      case 57: return FEATURE_KIND_KIND_URBAN_AREA;
+      case 58: return FEATURE_KIND_KIND_WATER;
+      case 59: return FEATURE_KIND_KIND_WETLAND;
+      case 60: return FEATURE_KIND_KIND_WOOD;
+      case 61: return FEATURE_KIND_KIND_DEBUG_TILE_OUTLINE;
+      case 62: return FEATURE_KIND_KIND_DEBUG_TILE_SURFACE;
+      case 63: return FEATURE_KIND_KIND_OTHER;
       default: return null;
     }
   }

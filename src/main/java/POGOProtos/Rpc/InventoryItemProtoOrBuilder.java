@@ -8,25 +8,34 @@ public interface InventoryItemProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>bytes deleted_item_key = 2;</code>
+   * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
+   * @return Whether the deletedItemKey field is set.
+   */
+  boolean hasDeletedItemKey();
+  /**
+   * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
    * @return The deletedItemKey.
    */
-  com.google.protobuf.ByteString getDeletedItemKey();
+  POGOProtos.Rpc.HoloInventoryKeyProto getDeletedItemKey();
+  /**
+   * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
+   */
+  POGOProtos.Rpc.HoloInventoryKeyProtoOrBuilder getDeletedItemKeyOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+   * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
    * @return Whether the item field is set.
    */
   boolean hasItem();
   /**
-   * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+   * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
    * @return The item.
    */
-  POGOProtos.Rpc.DNNGDJLGPPP getItem();
+  POGOProtos.Rpc.HoloInventoryItemProto getItem();
   /**
-   * <code>.POGOProtos.Rpc.DNNGDJLGPPP item = 3;</code>
+   * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
    */
-  POGOProtos.Rpc.DNNGDJLGPPPOrBuilder getItemOrBuilder();
+  POGOProtos.Rpc.HoloInventoryItemProtoOrBuilder getItemOrBuilder();
 
   /**
    * <code>int64 modified_timestamp = 1;</code>

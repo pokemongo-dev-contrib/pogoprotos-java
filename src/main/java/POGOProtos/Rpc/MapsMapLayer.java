@@ -13,96 +13,96 @@ package POGOProtos.Rpc;
 public enum MapsMapLayer
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>MAPSMAPLAYER_UNDEFINED = 0;</code>
+   * <code>MAPS_MAP_LAYER_UNDEFINED = 0;</code>
    */
-  MAPSMAPLAYER_UNDEFINED(0),
+  MAPS_MAP_LAYER_UNDEFINED(0),
   /**
-   * <code>MAPSMAPLAYER_BOUNDARIES = 1;</code>
+   * <code>MAPS_MAP_LAYER_BOUNDARIES = 1;</code>
    */
-  MAPSMAPLAYER_BOUNDARIES(1),
+  MAPS_MAP_LAYER_BOUNDARIES(1),
   /**
-   * <code>MAPSMAPLAYER_BUILDINGS = 2;</code>
+   * <code>MAPS_MAP_LAYER_BUILDINGS = 2;</code>
    */
-  MAPSMAPLAYER_BUILDINGS(2),
+  MAPS_MAP_LAYER_BUILDINGS(2),
   /**
-   * <code>MAPSMAPLAYER_LANDMASS = 3;</code>
+   * <code>MAPS_MAP_LAYER_LANDMASS = 3;</code>
    */
-  MAPSMAPLAYER_LANDMASS(3),
+  MAPS_MAP_LAYER_LANDMASS(3),
   /**
-   * <code>MAPSMAPLAYER_LANDUSE = 4;</code>
+   * <code>MAPS_MAP_LAYER_LANDUSE = 4;</code>
    */
-  MAPSMAPLAYER_LANDUSE(4),
+  MAPS_MAP_LAYER_LANDUSE(4),
   /**
-   * <code>MAPSMAPLAYER_PLACES = 5;</code>
+   * <code>MAPS_MAP_LAYER_PLACES = 5;</code>
    */
-  MAPSMAPLAYER_PLACES(5),
+  MAPS_MAP_LAYER_PLACES(5),
   /**
-   * <code>MAPSMAPLAYER_POIS = 6;</code>
+   * <code>MAPS_MAP_LAYER_POIS = 6;</code>
    */
-  MAPSMAPLAYER_POIS(6),
+  MAPS_MAP_LAYER_POIS(6),
   /**
-   * <code>MAPSMAPLAYER_ROADS = 7;</code>
+   * <code>MAPS_MAP_LAYER_ROADS = 7;</code>
    */
-  MAPSMAPLAYER_ROADS(7),
+  MAPS_MAP_LAYER_ROADS(7),
   /**
-   * <code>MAPSMAPLAYER_TRANSIT = 8;</code>
+   * <code>MAPS_MAP_LAYER_TRANSIT = 8;</code>
    */
-  MAPSMAPLAYER_TRANSIT(8),
+  MAPS_MAP_LAYER_TRANSIT(8),
   /**
-   * <code>MAPSMAPLAYER_WATER = 9;</code>
+   * <code>MAPS_MAP_LAYER_WATER = 9;</code>
    */
-  MAPSMAPLAYER_WATER(9),
+  MAPS_MAP_LAYER_WATER(9),
   /**
-   * <code>MAPSMAPLAYER_DEBUG_TILE_BOUNDARIES = 10;</code>
+   * <code>MAPS_MAP_LAYER_DEBUG_TILE_BOUNDARIES = 10;</code>
    */
-  MAPSMAPLAYER_DEBUG_TILE_BOUNDARIES(10),
+  MAPS_MAP_LAYER_DEBUG_TILE_BOUNDARIES(10),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>MAPSMAPLAYER_UNDEFINED = 0;</code>
+   * <code>MAPS_MAP_LAYER_UNDEFINED = 0;</code>
    */
-  public static final int MAPSMAPLAYER_UNDEFINED_VALUE = 0;
+  public static final int MAPS_MAP_LAYER_UNDEFINED_VALUE = 0;
   /**
-   * <code>MAPSMAPLAYER_BOUNDARIES = 1;</code>
+   * <code>MAPS_MAP_LAYER_BOUNDARIES = 1;</code>
    */
-  public static final int MAPSMAPLAYER_BOUNDARIES_VALUE = 1;
+  public static final int MAPS_MAP_LAYER_BOUNDARIES_VALUE = 1;
   /**
-   * <code>MAPSMAPLAYER_BUILDINGS = 2;</code>
+   * <code>MAPS_MAP_LAYER_BUILDINGS = 2;</code>
    */
-  public static final int MAPSMAPLAYER_BUILDINGS_VALUE = 2;
+  public static final int MAPS_MAP_LAYER_BUILDINGS_VALUE = 2;
   /**
-   * <code>MAPSMAPLAYER_LANDMASS = 3;</code>
+   * <code>MAPS_MAP_LAYER_LANDMASS = 3;</code>
    */
-  public static final int MAPSMAPLAYER_LANDMASS_VALUE = 3;
+  public static final int MAPS_MAP_LAYER_LANDMASS_VALUE = 3;
   /**
-   * <code>MAPSMAPLAYER_LANDUSE = 4;</code>
+   * <code>MAPS_MAP_LAYER_LANDUSE = 4;</code>
    */
-  public static final int MAPSMAPLAYER_LANDUSE_VALUE = 4;
+  public static final int MAPS_MAP_LAYER_LANDUSE_VALUE = 4;
   /**
-   * <code>MAPSMAPLAYER_PLACES = 5;</code>
+   * <code>MAPS_MAP_LAYER_PLACES = 5;</code>
    */
-  public static final int MAPSMAPLAYER_PLACES_VALUE = 5;
+  public static final int MAPS_MAP_LAYER_PLACES_VALUE = 5;
   /**
-   * <code>MAPSMAPLAYER_POIS = 6;</code>
+   * <code>MAPS_MAP_LAYER_POIS = 6;</code>
    */
-  public static final int MAPSMAPLAYER_POIS_VALUE = 6;
+  public static final int MAPS_MAP_LAYER_POIS_VALUE = 6;
   /**
-   * <code>MAPSMAPLAYER_ROADS = 7;</code>
+   * <code>MAPS_MAP_LAYER_ROADS = 7;</code>
    */
-  public static final int MAPSMAPLAYER_ROADS_VALUE = 7;
+  public static final int MAPS_MAP_LAYER_ROADS_VALUE = 7;
   /**
-   * <code>MAPSMAPLAYER_TRANSIT = 8;</code>
+   * <code>MAPS_MAP_LAYER_TRANSIT = 8;</code>
    */
-  public static final int MAPSMAPLAYER_TRANSIT_VALUE = 8;
+  public static final int MAPS_MAP_LAYER_TRANSIT_VALUE = 8;
   /**
-   * <code>MAPSMAPLAYER_WATER = 9;</code>
+   * <code>MAPS_MAP_LAYER_WATER = 9;</code>
    */
-  public static final int MAPSMAPLAYER_WATER_VALUE = 9;
+  public static final int MAPS_MAP_LAYER_WATER_VALUE = 9;
   /**
-   * <code>MAPSMAPLAYER_DEBUG_TILE_BOUNDARIES = 10;</code>
+   * <code>MAPS_MAP_LAYER_DEBUG_TILE_BOUNDARIES = 10;</code>
    */
-  public static final int MAPSMAPLAYER_DEBUG_TILE_BOUNDARIES_VALUE = 10;
+  public static final int MAPS_MAP_LAYER_DEBUG_TILE_BOUNDARIES_VALUE = 10;
 
 
   public final int getNumber() {
@@ -129,17 +129,17 @@ public enum MapsMapLayer
    */
   public static MapsMapLayer forNumber(int value) {
     switch (value) {
-      case 0: return MAPSMAPLAYER_UNDEFINED;
-      case 1: return MAPSMAPLAYER_BOUNDARIES;
-      case 2: return MAPSMAPLAYER_BUILDINGS;
-      case 3: return MAPSMAPLAYER_LANDMASS;
-      case 4: return MAPSMAPLAYER_LANDUSE;
-      case 5: return MAPSMAPLAYER_PLACES;
-      case 6: return MAPSMAPLAYER_POIS;
-      case 7: return MAPSMAPLAYER_ROADS;
-      case 8: return MAPSMAPLAYER_TRANSIT;
-      case 9: return MAPSMAPLAYER_WATER;
-      case 10: return MAPSMAPLAYER_DEBUG_TILE_BOUNDARIES;
+      case 0: return MAPS_MAP_LAYER_UNDEFINED;
+      case 1: return MAPS_MAP_LAYER_BOUNDARIES;
+      case 2: return MAPS_MAP_LAYER_BUILDINGS;
+      case 3: return MAPS_MAP_LAYER_LANDMASS;
+      case 4: return MAPS_MAP_LAYER_LANDUSE;
+      case 5: return MAPS_MAP_LAYER_PLACES;
+      case 6: return MAPS_MAP_LAYER_POIS;
+      case 7: return MAPS_MAP_LAYER_ROADS;
+      case 8: return MAPS_MAP_LAYER_TRANSIT;
+      case 9: return MAPS_MAP_LAYER_WATER;
+      case 10: return MAPS_MAP_LAYER_DEBUG_TILE_BOUNDARIES;
       default: return null;
     }
   }
@@ -170,7 +170,7 @@ public enum MapsMapLayer
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(7);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(8);
   }
 
   private static final MapsMapLayer[] VALUES = values();

@@ -16,16 +16,16 @@ package POGOProtos.Rpc;
 public enum ArMappingTutorialPage
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>ARMAPPINGTUTORIALPAGE_RECORDING_TIPS = 0;</code>
+   * <code>AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS = 0;</code>
    */
-  ARMAPPINGTUTORIALPAGE_RECORDING_TIPS(0),
+  AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS(0),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>ARMAPPINGTUTORIALPAGE_RECORDING_TIPS = 0;</code>
+   * <code>AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS = 0;</code>
    */
-  public static final int ARMAPPINGTUTORIALPAGE_RECORDING_TIPS_VALUE = 0;
+  public static final int AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS_VALUE = 0;
 
 
   public final int getNumber() {
@@ -52,7 +52,7 @@ public enum ArMappingTutorialPage
    */
   public static ArMappingTutorialPage forNumber(int value) {
     switch (value) {
-      case 0: return ARMAPPINGTUTORIALPAGE_RECORDING_TIPS;
+      case 0: return AR_MAPPING_TUTORIAL_PAGE_RECORDING_TIPS;
       default: return null;
     }
   }
@@ -83,7 +83,7 @@ public enum ArMappingTutorialPage
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(1);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(2);
   }
 
   private static final ArMappingTutorialPage[] VALUES = values();

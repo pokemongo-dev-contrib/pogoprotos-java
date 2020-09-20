@@ -13,40 +13,40 @@ package POGOProtos.Rpc;
 public enum ProviderType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>PROVIDERTYPE_NONE = 0;</code>
+   * <code>PROVIDER_TYPE_NONE = 0;</code>
    */
-  PROVIDERTYPE_NONE(0),
+  PROVIDER_TYPE_NONE(0),
   /**
-   * <code>PROVIDERTYPE_GOOGLE = 1;</code>
+   * <code>PROVIDER_TYPE_GOOGLE = 1;</code>
    */
-  PROVIDERTYPE_GOOGLE(1),
+  PROVIDER_TYPE_GOOGLE(1),
   /**
-   * <code>PROVIDERTYPE_FACEBOOK = 2;</code>
+   * <code>PROVIDER_TYPE_FACEBOOK = 2;</code>
    */
-  PROVIDERTYPE_FACEBOOK(2),
+  PROVIDER_TYPE_FACEBOOK(2),
   /**
-   * <code>PROVIDERTYPE_APPLE = 3;</code>
+   * <code>PROVIDER_TYPE_APPLE = 3;</code>
    */
-  PROVIDERTYPE_APPLE(3),
+  PROVIDER_TYPE_APPLE(3),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>PROVIDERTYPE_NONE = 0;</code>
+   * <code>PROVIDER_TYPE_NONE = 0;</code>
    */
-  public static final int PROVIDERTYPE_NONE_VALUE = 0;
+  public static final int PROVIDER_TYPE_NONE_VALUE = 0;
   /**
-   * <code>PROVIDERTYPE_GOOGLE = 1;</code>
+   * <code>PROVIDER_TYPE_GOOGLE = 1;</code>
    */
-  public static final int PROVIDERTYPE_GOOGLE_VALUE = 1;
+  public static final int PROVIDER_TYPE_GOOGLE_VALUE = 1;
   /**
-   * <code>PROVIDERTYPE_FACEBOOK = 2;</code>
+   * <code>PROVIDER_TYPE_FACEBOOK = 2;</code>
    */
-  public static final int PROVIDERTYPE_FACEBOOK_VALUE = 2;
+  public static final int PROVIDER_TYPE_FACEBOOK_VALUE = 2;
   /**
-   * <code>PROVIDERTYPE_APPLE = 3;</code>
+   * <code>PROVIDER_TYPE_APPLE = 3;</code>
    */
-  public static final int PROVIDERTYPE_APPLE_VALUE = 3;
+  public static final int PROVIDER_TYPE_APPLE_VALUE = 3;
 
 
   public final int getNumber() {
@@ -73,10 +73,10 @@ public enum ProviderType
    */
   public static ProviderType forNumber(int value) {
     switch (value) {
-      case 0: return PROVIDERTYPE_NONE;
-      case 1: return PROVIDERTYPE_GOOGLE;
-      case 2: return PROVIDERTYPE_FACEBOOK;
-      case 3: return PROVIDERTYPE_APPLE;
+      case 0: return PROVIDER_TYPE_NONE;
+      case 1: return PROVIDER_TYPE_GOOGLE;
+      case 2: return PROVIDER_TYPE_FACEBOOK;
+      case 3: return PROVIDER_TYPE_APPLE;
       default: return null;
     }
   }
@@ -107,7 +107,7 @@ public enum ProviderType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(5);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(6);
   }
 
   private static final ProviderType[] VALUES = values();
