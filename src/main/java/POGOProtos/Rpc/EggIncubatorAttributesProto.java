@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private EggIncubatorAttributesProto() {
-    dcpcbogjpld_ = 0;
+    incubatorType_ = 0;
   }
 
   @java.lang.Override
@@ -56,17 +56,17 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            dcpcbogjpld_ = rawValue;
+            incubatorType_ = rawValue;
             break;
           }
           case 16: {
 
-            pmdookglgff_ = input.readInt32();
+            uses_ = input.readInt32();
             break;
           }
           case 29: {
 
-            cnjkbellmkm_ = input.readFloat();
+            distanceMultiplier_ = input.readFloat();
             break;
           }
           default: {
@@ -101,45 +101,45 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.EggIncubatorAttributesProto.class, POGOProtos.Rpc.EggIncubatorAttributesProto.Builder.class);
   }
 
-  public static final int DCPCBOGJPLD_FIELD_NUMBER = 1;
-  private int dcpcbogjpld_;
+  public static final int INCUBATOR_TYPE_FIELD_NUMBER = 1;
+  private int incubatorType_;
   /**
-   * <code>.POGOProtos.Rpc.EggIncubatorType dcpcbogjpld = 1;</code>
-   * @return The enum numeric value on the wire for dcpcbogjpld.
+   * <code>.POGOProtos.Rpc.EggIncubatorType incubator_type = 1;</code>
+   * @return The enum numeric value on the wire for incubatorType.
    */
-  @java.lang.Override public int getDcpcbogjpldValue() {
-    return dcpcbogjpld_;
+  @java.lang.Override public int getIncubatorTypeValue() {
+    return incubatorType_;
   }
   /**
-   * <code>.POGOProtos.Rpc.EggIncubatorType dcpcbogjpld = 1;</code>
-   * @return The dcpcbogjpld.
+   * <code>.POGOProtos.Rpc.EggIncubatorType incubator_type = 1;</code>
+   * @return The incubatorType.
    */
-  @java.lang.Override public POGOProtos.Rpc.EggIncubatorType getDcpcbogjpld() {
+  @java.lang.Override public POGOProtos.Rpc.EggIncubatorType getIncubatorType() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.EggIncubatorType result = POGOProtos.Rpc.EggIncubatorType.valueOf(dcpcbogjpld_);
+    POGOProtos.Rpc.EggIncubatorType result = POGOProtos.Rpc.EggIncubatorType.valueOf(incubatorType_);
     return result == null ? POGOProtos.Rpc.EggIncubatorType.UNRECOGNIZED : result;
   }
 
-  public static final int PMDOOKGLGFF_FIELD_NUMBER = 2;
-  private int pmdookglgff_;
+  public static final int USES_FIELD_NUMBER = 2;
+  private int uses_;
   /**
-   * <code>int32 pmdookglgff = 2;</code>
-   * @return The pmdookglgff.
+   * <code>int32 uses = 2;</code>
+   * @return The uses.
    */
   @java.lang.Override
-  public int getPmdookglgff() {
-    return pmdookglgff_;
+  public int getUses() {
+    return uses_;
   }
 
-  public static final int CNJKBELLMKM_FIELD_NUMBER = 3;
-  private float cnjkbellmkm_;
+  public static final int DISTANCE_MULTIPLIER_FIELD_NUMBER = 3;
+  private float distanceMultiplier_;
   /**
-   * <code>float cnjkbellmkm = 3;</code>
-   * @return The cnjkbellmkm.
+   * <code>float distance_multiplier = 3;</code>
+   * @return The distanceMultiplier.
    */
   @java.lang.Override
-  public float getCnjkbellmkm() {
-    return cnjkbellmkm_;
+  public float getDistanceMultiplier() {
+    return distanceMultiplier_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -156,14 +156,14 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (dcpcbogjpld_ != POGOProtos.Rpc.EggIncubatorType.EGG_INCUBATOR_TYPE_INCUBATOR_UNSET.getNumber()) {
-      output.writeEnum(1, dcpcbogjpld_);
+    if (incubatorType_ != POGOProtos.Rpc.EggIncubatorType.EGG_INCUBATOR_TYPE_INCUBATOR_UNSET.getNumber()) {
+      output.writeEnum(1, incubatorType_);
     }
-    if (pmdookglgff_ != 0) {
-      output.writeInt32(2, pmdookglgff_);
+    if (uses_ != 0) {
+      output.writeInt32(2, uses_);
     }
-    if (cnjkbellmkm_ != 0F) {
-      output.writeFloat(3, cnjkbellmkm_);
+    if (distanceMultiplier_ != 0F) {
+      output.writeFloat(3, distanceMultiplier_);
     }
     unknownFields.writeTo(output);
   }
@@ -174,17 +174,17 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (dcpcbogjpld_ != POGOProtos.Rpc.EggIncubatorType.EGG_INCUBATOR_TYPE_INCUBATOR_UNSET.getNumber()) {
+    if (incubatorType_ != POGOProtos.Rpc.EggIncubatorType.EGG_INCUBATOR_TYPE_INCUBATOR_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, dcpcbogjpld_);
+        .computeEnumSize(1, incubatorType_);
     }
-    if (pmdookglgff_ != 0) {
+    if (uses_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, pmdookglgff_);
+        .computeInt32Size(2, uses_);
     }
-    if (cnjkbellmkm_ != 0F) {
+    if (distanceMultiplier_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(3, cnjkbellmkm_);
+        .computeFloatSize(3, distanceMultiplier_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -201,12 +201,12 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.EggIncubatorAttributesProto other = (POGOProtos.Rpc.EggIncubatorAttributesProto) obj;
 
-    if (dcpcbogjpld_ != other.dcpcbogjpld_) return false;
-    if (getPmdookglgff()
-        != other.getPmdookglgff()) return false;
-    if (java.lang.Float.floatToIntBits(getCnjkbellmkm())
+    if (incubatorType_ != other.incubatorType_) return false;
+    if (getUses()
+        != other.getUses()) return false;
+    if (java.lang.Float.floatToIntBits(getDistanceMultiplier())
         != java.lang.Float.floatToIntBits(
-            other.getCnjkbellmkm())) return false;
+            other.getDistanceMultiplier())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -218,13 +218,13 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + DCPCBOGJPLD_FIELD_NUMBER;
-    hash = (53 * hash) + dcpcbogjpld_;
-    hash = (37 * hash) + PMDOOKGLGFF_FIELD_NUMBER;
-    hash = (53 * hash) + getPmdookglgff();
-    hash = (37 * hash) + CNJKBELLMKM_FIELD_NUMBER;
+    hash = (37 * hash) + INCUBATOR_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + incubatorType_;
+    hash = (37 * hash) + USES_FIELD_NUMBER;
+    hash = (53 * hash) + getUses();
+    hash = (37 * hash) + DISTANCE_MULTIPLIER_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getCnjkbellmkm());
+        getDistanceMultiplier());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -362,11 +362,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      dcpcbogjpld_ = 0;
+      incubatorType_ = 0;
 
-      pmdookglgff_ = 0;
+      uses_ = 0;
 
-      cnjkbellmkm_ = 0F;
+      distanceMultiplier_ = 0F;
 
       return this;
     }
@@ -394,9 +394,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.EggIncubatorAttributesProto buildPartial() {
       POGOProtos.Rpc.EggIncubatorAttributesProto result = new POGOProtos.Rpc.EggIncubatorAttributesProto(this);
-      result.dcpcbogjpld_ = dcpcbogjpld_;
-      result.pmdookglgff_ = pmdookglgff_;
-      result.cnjkbellmkm_ = cnjkbellmkm_;
+      result.incubatorType_ = incubatorType_;
+      result.uses_ = uses_;
+      result.distanceMultiplier_ = distanceMultiplier_;
       onBuilt();
       return result;
     }
@@ -445,14 +445,14 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.EggIncubatorAttributesProto other) {
       if (other == POGOProtos.Rpc.EggIncubatorAttributesProto.getDefaultInstance()) return this;
-      if (other.dcpcbogjpld_ != 0) {
-        setDcpcbogjpldValue(other.getDcpcbogjpldValue());
+      if (other.incubatorType_ != 0) {
+        setIncubatorTypeValue(other.getIncubatorTypeValue());
       }
-      if (other.getPmdookglgff() != 0) {
-        setPmdookglgff(other.getPmdookglgff());
+      if (other.getUses() != 0) {
+        setUses(other.getUses());
       }
-      if (other.getCnjkbellmkm() != 0F) {
-        setCnjkbellmkm(other.getCnjkbellmkm());
+      if (other.getDistanceMultiplier() != 0F) {
+        setDistanceMultiplier(other.getDistanceMultiplier());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -483,118 +483,118 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int dcpcbogjpld_ = 0;
+    private int incubatorType_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorType dcpcbogjpld = 1;</code>
-     * @return The enum numeric value on the wire for dcpcbogjpld.
+     * <code>.POGOProtos.Rpc.EggIncubatorType incubator_type = 1;</code>
+     * @return The enum numeric value on the wire for incubatorType.
      */
-    @java.lang.Override public int getDcpcbogjpldValue() {
-      return dcpcbogjpld_;
+    @java.lang.Override public int getIncubatorTypeValue() {
+      return incubatorType_;
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorType dcpcbogjpld = 1;</code>
-     * @param value The enum numeric value on the wire for dcpcbogjpld to set.
+     * <code>.POGOProtos.Rpc.EggIncubatorType incubator_type = 1;</code>
+     * @param value The enum numeric value on the wire for incubatorType to set.
      * @return This builder for chaining.
      */
-    public Builder setDcpcbogjpldValue(int value) {
+    public Builder setIncubatorTypeValue(int value) {
       
-      dcpcbogjpld_ = value;
+      incubatorType_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorType dcpcbogjpld = 1;</code>
-     * @return The dcpcbogjpld.
+     * <code>.POGOProtos.Rpc.EggIncubatorType incubator_type = 1;</code>
+     * @return The incubatorType.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.EggIncubatorType getDcpcbogjpld() {
+    public POGOProtos.Rpc.EggIncubatorType getIncubatorType() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.EggIncubatorType result = POGOProtos.Rpc.EggIncubatorType.valueOf(dcpcbogjpld_);
+      POGOProtos.Rpc.EggIncubatorType result = POGOProtos.Rpc.EggIncubatorType.valueOf(incubatorType_);
       return result == null ? POGOProtos.Rpc.EggIncubatorType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorType dcpcbogjpld = 1;</code>
-     * @param value The dcpcbogjpld to set.
+     * <code>.POGOProtos.Rpc.EggIncubatorType incubator_type = 1;</code>
+     * @param value The incubatorType to set.
      * @return This builder for chaining.
      */
-    public Builder setDcpcbogjpld(POGOProtos.Rpc.EggIncubatorType value) {
+    public Builder setIncubatorType(POGOProtos.Rpc.EggIncubatorType value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      dcpcbogjpld_ = value.getNumber();
+      incubatorType_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorType dcpcbogjpld = 1;</code>
+     * <code>.POGOProtos.Rpc.EggIncubatorType incubator_type = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDcpcbogjpld() {
+    public Builder clearIncubatorType() {
       
-      dcpcbogjpld_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private int pmdookglgff_ ;
-    /**
-     * <code>int32 pmdookglgff = 2;</code>
-     * @return The pmdookglgff.
-     */
-    @java.lang.Override
-    public int getPmdookglgff() {
-      return pmdookglgff_;
-    }
-    /**
-     * <code>int32 pmdookglgff = 2;</code>
-     * @param value The pmdookglgff to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPmdookglgff(int value) {
-      
-      pmdookglgff_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 pmdookglgff = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPmdookglgff() {
-      
-      pmdookglgff_ = 0;
+      incubatorType_ = 0;
       onChanged();
       return this;
     }
 
-    private float cnjkbellmkm_ ;
+    private int uses_ ;
     /**
-     * <code>float cnjkbellmkm = 3;</code>
-     * @return The cnjkbellmkm.
+     * <code>int32 uses = 2;</code>
+     * @return The uses.
      */
     @java.lang.Override
-    public float getCnjkbellmkm() {
-      return cnjkbellmkm_;
+    public int getUses() {
+      return uses_;
     }
     /**
-     * <code>float cnjkbellmkm = 3;</code>
-     * @param value The cnjkbellmkm to set.
+     * <code>int32 uses = 2;</code>
+     * @param value The uses to set.
      * @return This builder for chaining.
      */
-    public Builder setCnjkbellmkm(float value) {
+    public Builder setUses(int value) {
       
-      cnjkbellmkm_ = value;
+      uses_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float cnjkbellmkm = 3;</code>
+     * <code>int32 uses = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearCnjkbellmkm() {
+    public Builder clearUses() {
       
-      cnjkbellmkm_ = 0F;
+      uses_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private float distanceMultiplier_ ;
+    /**
+     * <code>float distance_multiplier = 3;</code>
+     * @return The distanceMultiplier.
+     */
+    @java.lang.Override
+    public float getDistanceMultiplier() {
+      return distanceMultiplier_;
+    }
+    /**
+     * <code>float distance_multiplier = 3;</code>
+     * @param value The distanceMultiplier to set.
+     * @return This builder for chaining.
+     */
+    public Builder setDistanceMultiplier(float value) {
+      
+      distanceMultiplier_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>float distance_multiplier = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearDistanceMultiplier() {
+      
+      distanceMultiplier_ = 0F;
       onChanged();
       return this;
     }

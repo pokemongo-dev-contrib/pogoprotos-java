@@ -8,25 +8,25 @@ public interface EggIncubatorAttributesProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.EggIncubatorType dcpcbogjpld = 1;</code>
-   * @return The enum numeric value on the wire for dcpcbogjpld.
+   * <code>.POGOProtos.Rpc.EggIncubatorType incubator_type = 1;</code>
+   * @return The enum numeric value on the wire for incubatorType.
    */
-  int getDcpcbogjpldValue();
+  int getIncubatorTypeValue();
   /**
-   * <code>.POGOProtos.Rpc.EggIncubatorType dcpcbogjpld = 1;</code>
-   * @return The dcpcbogjpld.
+   * <code>.POGOProtos.Rpc.EggIncubatorType incubator_type = 1;</code>
+   * @return The incubatorType.
    */
-  POGOProtos.Rpc.EggIncubatorType getDcpcbogjpld();
+  POGOProtos.Rpc.EggIncubatorType getIncubatorType();
 
   /**
-   * <code>int32 pmdookglgff = 2;</code>
-   * @return The pmdookglgff.
+   * <code>int32 uses = 2;</code>
+   * @return The uses.
    */
-  int getPmdookglgff();
+  int getUses();
 
   /**
-   * <code>float cnjkbellmkm = 3;</code>
-   * @return The cnjkbellmkm.
+   * <code>float distance_multiplier = 3;</code>
+   * @return The distanceMultiplier.
    */
-  float getCnjkbellmkm();
+  float getDistanceMultiplier();
 }

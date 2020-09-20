@@ -54,12 +54,12 @@ private static final long serialVersionUID = 0L;
             break;
           case 13: {
 
-            kdbhkdclnca_ = input.readFloat();
+            xpMultiplier_ = input.readFloat();
             break;
           }
           case 16: {
 
-            kbagoidgipf_ = input.readInt32();
+            boostDurationMs_ = input.readInt32();
             break;
           }
           default: {
@@ -94,26 +94,26 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.ExperienceBoostAttributesProto.class, POGOProtos.Rpc.ExperienceBoostAttributesProto.Builder.class);
   }
 
-  public static final int KDBHKDCLNCA_FIELD_NUMBER = 1;
-  private float kdbhkdclnca_;
+  public static final int XP_MULTIPLIER_FIELD_NUMBER = 1;
+  private float xpMultiplier_;
   /**
-   * <code>float kdbhkdclnca = 1;</code>
-   * @return The kdbhkdclnca.
+   * <code>float xp_multiplier = 1;</code>
+   * @return The xpMultiplier.
    */
   @java.lang.Override
-  public float getKdbhkdclnca() {
-    return kdbhkdclnca_;
+  public float getXpMultiplier() {
+    return xpMultiplier_;
   }
 
-  public static final int KBAGOIDGIPF_FIELD_NUMBER = 2;
-  private int kbagoidgipf_;
+  public static final int BOOST_DURATION_MS_FIELD_NUMBER = 2;
+  private int boostDurationMs_;
   /**
-   * <code>int32 kbagoidgipf = 2;</code>
-   * @return The kbagoidgipf.
+   * <code>int32 boost_duration_ms = 2;</code>
+   * @return The boostDurationMs.
    */
   @java.lang.Override
-  public int getKbagoidgipf() {
-    return kbagoidgipf_;
+  public int getBoostDurationMs() {
+    return boostDurationMs_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -130,11 +130,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (kdbhkdclnca_ != 0F) {
-      output.writeFloat(1, kdbhkdclnca_);
+    if (xpMultiplier_ != 0F) {
+      output.writeFloat(1, xpMultiplier_);
     }
-    if (kbagoidgipf_ != 0) {
-      output.writeInt32(2, kbagoidgipf_);
+    if (boostDurationMs_ != 0) {
+      output.writeInt32(2, boostDurationMs_);
     }
     unknownFields.writeTo(output);
   }
@@ -145,13 +145,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (kdbhkdclnca_ != 0F) {
+    if (xpMultiplier_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(1, kdbhkdclnca_);
+        .computeFloatSize(1, xpMultiplier_);
     }
-    if (kbagoidgipf_ != 0) {
+    if (boostDurationMs_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, kbagoidgipf_);
+        .computeInt32Size(2, boostDurationMs_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -168,11 +168,11 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.ExperienceBoostAttributesProto other = (POGOProtos.Rpc.ExperienceBoostAttributesProto) obj;
 
-    if (java.lang.Float.floatToIntBits(getKdbhkdclnca())
+    if (java.lang.Float.floatToIntBits(getXpMultiplier())
         != java.lang.Float.floatToIntBits(
-            other.getKdbhkdclnca())) return false;
-    if (getKbagoidgipf()
-        != other.getKbagoidgipf()) return false;
+            other.getXpMultiplier())) return false;
+    if (getBoostDurationMs()
+        != other.getBoostDurationMs()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -184,11 +184,11 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + KDBHKDCLNCA_FIELD_NUMBER;
+    hash = (37 * hash) + XP_MULTIPLIER_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getKdbhkdclnca());
-    hash = (37 * hash) + KBAGOIDGIPF_FIELD_NUMBER;
-    hash = (53 * hash) + getKbagoidgipf();
+        getXpMultiplier());
+    hash = (37 * hash) + BOOST_DURATION_MS_FIELD_NUMBER;
+    hash = (53 * hash) + getBoostDurationMs();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -326,9 +326,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      kdbhkdclnca_ = 0F;
+      xpMultiplier_ = 0F;
 
-      kbagoidgipf_ = 0;
+      boostDurationMs_ = 0;
 
       return this;
     }
@@ -356,8 +356,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.ExperienceBoostAttributesProto buildPartial() {
       POGOProtos.Rpc.ExperienceBoostAttributesProto result = new POGOProtos.Rpc.ExperienceBoostAttributesProto(this);
-      result.kdbhkdclnca_ = kdbhkdclnca_;
-      result.kbagoidgipf_ = kbagoidgipf_;
+      result.xpMultiplier_ = xpMultiplier_;
+      result.boostDurationMs_ = boostDurationMs_;
       onBuilt();
       return result;
     }
@@ -406,11 +406,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.ExperienceBoostAttributesProto other) {
       if (other == POGOProtos.Rpc.ExperienceBoostAttributesProto.getDefaultInstance()) return this;
-      if (other.getKdbhkdclnca() != 0F) {
-        setKdbhkdclnca(other.getKdbhkdclnca());
+      if (other.getXpMultiplier() != 0F) {
+        setXpMultiplier(other.getXpMultiplier());
       }
-      if (other.getKbagoidgipf() != 0) {
-        setKbagoidgipf(other.getKbagoidgipf());
+      if (other.getBoostDurationMs() != 0) {
+        setBoostDurationMs(other.getBoostDurationMs());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -441,64 +441,64 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private float kdbhkdclnca_ ;
+    private float xpMultiplier_ ;
     /**
-     * <code>float kdbhkdclnca = 1;</code>
-     * @return The kdbhkdclnca.
+     * <code>float xp_multiplier = 1;</code>
+     * @return The xpMultiplier.
      */
     @java.lang.Override
-    public float getKdbhkdclnca() {
-      return kdbhkdclnca_;
+    public float getXpMultiplier() {
+      return xpMultiplier_;
     }
     /**
-     * <code>float kdbhkdclnca = 1;</code>
-     * @param value The kdbhkdclnca to set.
+     * <code>float xp_multiplier = 1;</code>
+     * @param value The xpMultiplier to set.
      * @return This builder for chaining.
      */
-    public Builder setKdbhkdclnca(float value) {
+    public Builder setXpMultiplier(float value) {
       
-      kdbhkdclnca_ = value;
+      xpMultiplier_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float kdbhkdclnca = 1;</code>
+     * <code>float xp_multiplier = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearKdbhkdclnca() {
+    public Builder clearXpMultiplier() {
       
-      kdbhkdclnca_ = 0F;
+      xpMultiplier_ = 0F;
       onChanged();
       return this;
     }
 
-    private int kbagoidgipf_ ;
+    private int boostDurationMs_ ;
     /**
-     * <code>int32 kbagoidgipf = 2;</code>
-     * @return The kbagoidgipf.
+     * <code>int32 boost_duration_ms = 2;</code>
+     * @return The boostDurationMs.
      */
     @java.lang.Override
-    public int getKbagoidgipf() {
-      return kbagoidgipf_;
+    public int getBoostDurationMs() {
+      return boostDurationMs_;
     }
     /**
-     * <code>int32 kbagoidgipf = 2;</code>
-     * @param value The kbagoidgipf to set.
+     * <code>int32 boost_duration_ms = 2;</code>
+     * @param value The boostDurationMs to set.
      * @return This builder for chaining.
      */
-    public Builder setKbagoidgipf(int value) {
+    public Builder setBoostDurationMs(int value) {
       
-      kbagoidgipf_ = value;
+      boostDurationMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 kbagoidgipf = 2;</code>
+     * <code>int32 boost_duration_ms = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearKbagoidgipf() {
+    public Builder clearBoostDurationMs() {
       
-      kbagoidgipf_ = 0;
+      boostDurationMs_ = 0;
       onChanged();
       return this;
     }

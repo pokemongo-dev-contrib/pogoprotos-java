@@ -8,14 +8,14 @@ public interface ExperienceBoostAttributesProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>float kdbhkdclnca = 1;</code>
-   * @return The kdbhkdclnca.
+   * <code>float xp_multiplier = 1;</code>
+   * @return The xpMultiplier.
    */
-  float getKdbhkdclnca();
+  float getXpMultiplier();
 
   /**
-   * <code>int32 kbagoidgipf = 2;</code>
-   * @return The kbagoidgipf.
+   * <code>int32 boost_duration_ms = 2;</code>
+   * @return The boostDurationMs.
    */
-  int getKbagoidgipf();
+  int getBoostDurationMs();
 }
