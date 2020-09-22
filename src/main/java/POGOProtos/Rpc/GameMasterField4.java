@@ -85,11 +85,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 42: {
-            POGOProtos.Rpc.POCJJMBIJKE.Builder subBuilder = null;
+            POGOProtos.Rpc.QuestDisplayProto.Builder subBuilder = null;
             if (field5_ != null) {
               subBuilder = field5_.toBuilder();
             }
-            field5_ = input.readMessage(POGOProtos.Rpc.POCJJMBIJKE.parser(), extensionRegistry);
+            field5_ = input.readMessage(POGOProtos.Rpc.QuestDisplayProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(field5_);
               field5_ = subBuilder.buildPartial();
@@ -249,9 +249,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FIELD5_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.POCJJMBIJKE field5_;
+  private POGOProtos.Rpc.QuestDisplayProto field5_;
   /**
-   * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+   * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
    * @return Whether the field5 field is set.
    */
   @java.lang.Override
@@ -259,18 +259,18 @@ private static final long serialVersionUID = 0L;
     return field5_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+   * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
    * @return The field5.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.POCJJMBIJKE getField5() {
-    return field5_ == null ? POGOProtos.Rpc.POCJJMBIJKE.getDefaultInstance() : field5_;
+  public POGOProtos.Rpc.QuestDisplayProto getField5() {
+    return field5_ == null ? POGOProtos.Rpc.QuestDisplayProto.getDefaultInstance() : field5_;
   }
   /**
-   * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+   * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.POCJJMBIJKEOrBuilder getField5OrBuilder() {
+  public POGOProtos.Rpc.QuestDisplayProtoOrBuilder getField5OrBuilder() {
     return getField5();
   }
 
@@ -1123,31 +1123,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.POCJJMBIJKE field5_;
+    private POGOProtos.Rpc.QuestDisplayProto field5_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.POCJJMBIJKE, POGOProtos.Rpc.POCJJMBIJKE.Builder, POGOProtos.Rpc.POCJJMBIJKEOrBuilder> field5Builder_;
+        POGOProtos.Rpc.QuestDisplayProto, POGOProtos.Rpc.QuestDisplayProto.Builder, POGOProtos.Rpc.QuestDisplayProtoOrBuilder> field5Builder_;
     /**
-     * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
      * @return Whether the field5 field is set.
      */
     public boolean hasField5() {
       return field5Builder_ != null || field5_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
      * @return The field5.
      */
-    public POGOProtos.Rpc.POCJJMBIJKE getField5() {
+    public POGOProtos.Rpc.QuestDisplayProto getField5() {
       if (field5Builder_ == null) {
-        return field5_ == null ? POGOProtos.Rpc.POCJJMBIJKE.getDefaultInstance() : field5_;
+        return field5_ == null ? POGOProtos.Rpc.QuestDisplayProto.getDefaultInstance() : field5_;
       } else {
         return field5Builder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
      */
-    public Builder setField5(POGOProtos.Rpc.POCJJMBIJKE value) {
+    public Builder setField5(POGOProtos.Rpc.QuestDisplayProto value) {
       if (field5Builder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1161,10 +1161,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
      */
     public Builder setField5(
-        POGOProtos.Rpc.POCJJMBIJKE.Builder builderForValue) {
+        POGOProtos.Rpc.QuestDisplayProto.Builder builderForValue) {
       if (field5Builder_ == null) {
         field5_ = builderForValue.build();
         onChanged();
@@ -1175,13 +1175,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
      */
-    public Builder mergeField5(POGOProtos.Rpc.POCJJMBIJKE value) {
+    public Builder mergeField5(POGOProtos.Rpc.QuestDisplayProto value) {
       if (field5Builder_ == null) {
         if (field5_ != null) {
           field5_ =
-            POGOProtos.Rpc.POCJJMBIJKE.newBuilder(field5_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.QuestDisplayProto.newBuilder(field5_).mergeFrom(value).buildPartial();
         } else {
           field5_ = value;
         }
@@ -1193,7 +1193,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
      */
     public Builder clearField5() {
       if (field5Builder_ == null) {
@@ -1207,33 +1207,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
      */
-    public POGOProtos.Rpc.POCJJMBIJKE.Builder getField5Builder() {
+    public POGOProtos.Rpc.QuestDisplayProto.Builder getField5Builder() {
       
       onChanged();
       return getField5FieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
      */
-    public POGOProtos.Rpc.POCJJMBIJKEOrBuilder getField5OrBuilder() {
+    public POGOProtos.Rpc.QuestDisplayProtoOrBuilder getField5OrBuilder() {
       if (field5Builder_ != null) {
         return field5Builder_.getMessageOrBuilder();
       } else {
         return field5_ == null ?
-            POGOProtos.Rpc.POCJJMBIJKE.getDefaultInstance() : field5_;
+            POGOProtos.Rpc.QuestDisplayProto.getDefaultInstance() : field5_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.POCJJMBIJKE, POGOProtos.Rpc.POCJJMBIJKE.Builder, POGOProtos.Rpc.POCJJMBIJKEOrBuilder> 
+        POGOProtos.Rpc.QuestDisplayProto, POGOProtos.Rpc.QuestDisplayProto.Builder, POGOProtos.Rpc.QuestDisplayProtoOrBuilder> 
         getField5FieldBuilder() {
       if (field5Builder_ == null) {
         field5Builder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.POCJJMBIJKE, POGOProtos.Rpc.POCJJMBIJKE.Builder, POGOProtos.Rpc.POCJJMBIJKEOrBuilder>(
+            POGOProtos.Rpc.QuestDisplayProto, POGOProtos.Rpc.QuestDisplayProto.Builder, POGOProtos.Rpc.QuestDisplayProtoOrBuilder>(
                 getField5(),
                 getParentForChildren(),
                 isClean());

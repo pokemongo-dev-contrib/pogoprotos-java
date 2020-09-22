@@ -19,19 +19,19 @@ public interface KHPLIBGIGABOrBuilder extends
   POGOProtos.Rpc.KHPLIBGIGAB.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
    * @return Whether the opkdegdijah field is set.
    */
   boolean hasOpkdegdijah();
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
    * @return The opkdegdijah.
    */
-  POGOProtos.Rpc.NLOCPHGFFNM getOpkdegdijah();
+  POGOProtos.Rpc.BuddyGiftProto getOpkdegdijah();
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
    */
-  POGOProtos.Rpc.NLOCPHGFFNMOrBuilder getOpkdegdijahOrBuilder();
+  POGOProtos.Rpc.BuddyGiftProtoOrBuilder getOpkdegdijahOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.BuddyObservedData cfncokpnoeg = 4;</code>

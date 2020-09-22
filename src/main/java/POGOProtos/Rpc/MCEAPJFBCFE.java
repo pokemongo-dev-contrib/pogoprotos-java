@@ -195,11 +195,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 546: {
-            POGOProtos.Rpc.NLOCPHGFFNM.Builder subBuilder = null;
+            POGOProtos.Rpc.BuddyGiftProto.Builder subBuilder = null;
             if (nchennmhggm_ != null) {
               subBuilder = nchennmhggm_.toBuilder();
             }
-            nchennmhggm_ = input.readMessage(POGOProtos.Rpc.NLOCPHGFFNM.parser(), extensionRegistry);
+            nchennmhggm_ = input.readMessage(POGOProtos.Rpc.BuddyGiftProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(nchennmhggm_);
               nchennmhggm_ = subBuilder.buildPartial();
@@ -213,7 +213,7 @@ private static final long serialVersionUID = 0L;
                   OegphmcaenbDefaultEntryHolder.defaultEntry);
               mutable_bitField0_ |= 0x00000002;
             }
-            com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+            com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
             oegphmcaenb__ = input.readMessage(
                 OegphmcaenbDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
             oegphmcaenb_.getMutableMap().put(
@@ -226,7 +226,7 @@ private static final long serialVersionUID = 0L;
                   BmlaijcmoekDefaultEntryHolder.defaultEntry);
               mutable_bitField0_ |= 0x00000004;
             }
-            com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+            com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
             bmlaijcmoek__ = input.readMessage(
                 BmlaijcmoekDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
             bmlaijcmoek_.getMutableMap().put(
@@ -239,7 +239,7 @@ private static final long serialVersionUID = 0L;
                   LhjekkeejhaDefaultEntryHolder.defaultEntry);
               mutable_bitField0_ |= 0x00000008;
             }
-            com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+            com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
             lhjekkeejha__ = input.readMessage(
                 LhjekkeejhaDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
             lhjekkeejha_.getMutableMap().put(
@@ -1572,9 +1572,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int NCHENNMHGGM_FIELD_NUMBER = 68;
-  private POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm_;
+  private POGOProtos.Rpc.BuddyGiftProto nchennmhggm_;
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
    * @return Whether the nchennmhggm field is set.
    */
   @java.lang.Override
@@ -1582,36 +1582,36 @@ private static final long serialVersionUID = 0L;
     return nchennmhggm_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
    * @return The nchennmhggm.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.NLOCPHGFFNM getNchennmhggm() {
-    return nchennmhggm_ == null ? POGOProtos.Rpc.NLOCPHGFFNM.getDefaultInstance() : nchennmhggm_;
+  public POGOProtos.Rpc.BuddyGiftProto getNchennmhggm() {
+    return nchennmhggm_ == null ? POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : nchennmhggm_;
   }
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.NLOCPHGFFNMOrBuilder getNchennmhggmOrBuilder() {
+  public POGOProtos.Rpc.BuddyGiftProtoOrBuilder getNchennmhggmOrBuilder() {
     return getNchennmhggm();
   }
 
   public static final int OEGPHMCAENB_FIELD_NUMBER = 69;
   private static final class OegphmcaenbDefaultEntryHolder {
     static final com.google.protobuf.MapEntry<
-        java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> defaultEntry =
+        java.lang.Integer, POGOProtos.Rpc.SouvenirProto> defaultEntry =
             com.google.protobuf.MapEntry
-            .<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>newDefaultInstance(
+            .<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>newDefaultInstance(
                 POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_MCEAPJFBCFE_OegphmcaenbEntry_descriptor, 
                 com.google.protobuf.WireFormat.FieldType.INT32,
                 0,
                 com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                POGOProtos.Rpc.PDNJNJNJKAG.getDefaultInstance());
+                POGOProtos.Rpc.SouvenirProto.getDefaultInstance());
   }
   private com.google.protobuf.MapField<
-      java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> oegphmcaenb_;
-  private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+      java.lang.Integer, POGOProtos.Rpc.SouvenirProto> oegphmcaenb_;
+  private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
   internalGetOegphmcaenb() {
     if (oegphmcaenb_ == null) {
       return com.google.protobuf.MapField.emptyMapField(
@@ -1624,7 +1624,7 @@ private static final long serialVersionUID = 0L;
     return internalGetOegphmcaenb().getMap().size();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
    */
 
   @java.lang.Override
@@ -1638,39 +1638,39 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   @java.lang.Deprecated
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> getOegphmcaenb() {
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenb() {
     return getOegphmcaenbMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
    */
   @java.lang.Override
 
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> getOegphmcaenbMap() {
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenbMap() {
     return internalGetOegphmcaenb().getMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrDefault(
+  public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrDefault(
       int key,
-      POGOProtos.Rpc.PDNJNJNJKAG defaultValue) {
+      POGOProtos.Rpc.SouvenirProto defaultValue) {
     
-    java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> map =
+    java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
         internalGetOegphmcaenb().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrThrow(
+  public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrThrow(
       int key) {
     
-    java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> map =
+    java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
         internalGetOegphmcaenb().getMap();
     if (!map.containsKey(key)) {
       throw new java.lang.IllegalArgumentException();
@@ -1681,18 +1681,18 @@ private static final long serialVersionUID = 0L;
   public static final int BMLAIJCMOEK_FIELD_NUMBER = 70;
   private static final class BmlaijcmoekDefaultEntryHolder {
     static final com.google.protobuf.MapEntry<
-        java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> defaultEntry =
+        java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> defaultEntry =
             com.google.protobuf.MapEntry
-            .<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>newDefaultInstance(
+            .<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>newDefaultInstance(
                 POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_MCEAPJFBCFE_BmlaijcmoekEntry_descriptor, 
                 com.google.protobuf.WireFormat.FieldType.INT32,
                 0,
                 com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                POGOProtos.Rpc.GNJGCPJMODK.getDefaultInstance());
+                POGOProtos.Rpc.DailyCounterProto.getDefaultInstance());
   }
   private com.google.protobuf.MapField<
-      java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> bmlaijcmoek_;
-  private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+      java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> bmlaijcmoek_;
+  private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
   internalGetBmlaijcmoek() {
     if (bmlaijcmoek_ == null) {
       return com.google.protobuf.MapField.emptyMapField(
@@ -1705,7 +1705,7 @@ private static final long serialVersionUID = 0L;
     return internalGetBmlaijcmoek().getMap().size();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
    */
 
   @java.lang.Override
@@ -1719,39 +1719,39 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   @java.lang.Deprecated
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> getBmlaijcmoek() {
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> getBmlaijcmoek() {
     return getBmlaijcmoekMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
    */
   @java.lang.Override
 
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> getBmlaijcmoekMap() {
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> getBmlaijcmoekMap() {
     return internalGetBmlaijcmoek().getMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.GNJGCPJMODK getBmlaijcmoekOrDefault(
+  public POGOProtos.Rpc.DailyCounterProto getBmlaijcmoekOrDefault(
       int key,
-      POGOProtos.Rpc.GNJGCPJMODK defaultValue) {
+      POGOProtos.Rpc.DailyCounterProto defaultValue) {
     
-    java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> map =
+    java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> map =
         internalGetBmlaijcmoek().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.GNJGCPJMODK getBmlaijcmoekOrThrow(
+  public POGOProtos.Rpc.DailyCounterProto getBmlaijcmoekOrThrow(
       int key) {
     
-    java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> map =
+    java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> map =
         internalGetBmlaijcmoek().getMap();
     if (!map.containsKey(key)) {
       throw new java.lang.IllegalArgumentException();
@@ -1762,18 +1762,18 @@ private static final long serialVersionUID = 0L;
   public static final int LHJEKKEEJHA_FIELD_NUMBER = 71;
   private static final class LhjekkeejhaDefaultEntryHolder {
     static final com.google.protobuf.MapEntry<
-        java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> defaultEntry =
+        java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> defaultEntry =
             com.google.protobuf.MapEntry
-            .<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>newDefaultInstance(
+            .<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>newDefaultInstance(
                 POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_MCEAPJFBCFE_LhjekkeejhaEntry_descriptor, 
                 com.google.protobuf.WireFormat.FieldType.INT32,
                 0,
                 com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                POGOProtos.Rpc.GNJGCPJMODK.getDefaultInstance());
+                POGOProtos.Rpc.DailyCounterProto.getDefaultInstance());
   }
   private com.google.protobuf.MapField<
-      java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> lhjekkeejha_;
-  private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+      java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> lhjekkeejha_;
+  private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
   internalGetLhjekkeejha() {
     if (lhjekkeejha_ == null) {
       return com.google.protobuf.MapField.emptyMapField(
@@ -1786,7 +1786,7 @@ private static final long serialVersionUID = 0L;
     return internalGetLhjekkeejha().getMap().size();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
    */
 
   @java.lang.Override
@@ -1800,39 +1800,39 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   @java.lang.Deprecated
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> getLhjekkeejha() {
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> getLhjekkeejha() {
     return getLhjekkeejhaMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
    */
   @java.lang.Override
 
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> getLhjekkeejhaMap() {
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> getLhjekkeejhaMap() {
     return internalGetLhjekkeejha().getMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.GNJGCPJMODK getLhjekkeejhaOrDefault(
+  public POGOProtos.Rpc.DailyCounterProto getLhjekkeejhaOrDefault(
       int key,
-      POGOProtos.Rpc.GNJGCPJMODK defaultValue) {
+      POGOProtos.Rpc.DailyCounterProto defaultValue) {
     
-    java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> map =
+    java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> map =
         internalGetLhjekkeejha().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.GNJGCPJMODK getLhjekkeejhaOrThrow(
+  public POGOProtos.Rpc.DailyCounterProto getLhjekkeejhaOrThrow(
       int key) {
     
-    java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> map =
+    java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> map =
         internalGetLhjekkeejha().getMap();
     if (!map.containsKey(key)) {
       throw new java.lang.IllegalArgumentException();
@@ -2431,9 +2431,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(68, getNchennmhggm());
     }
-    for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> entry
+    for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> entry
          : internalGetOegphmcaenb().getMap().entrySet()) {
-      com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+      com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
       oegphmcaenb__ = OegphmcaenbDefaultEntryHolder.defaultEntry.newBuilderForType()
           .setKey(entry.getKey())
           .setValue(entry.getValue())
@@ -2441,9 +2441,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(69, oegphmcaenb__);
     }
-    for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> entry
+    for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> entry
          : internalGetBmlaijcmoek().getMap().entrySet()) {
-      com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+      com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
       bmlaijcmoek__ = BmlaijcmoekDefaultEntryHolder.defaultEntry.newBuilderForType()
           .setKey(entry.getKey())
           .setValue(entry.getValue())
@@ -2451,9 +2451,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(70, bmlaijcmoek__);
     }
-    for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> entry
+    for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> entry
          : internalGetLhjekkeejha().getMap().entrySet()) {
-      com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+      com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
       lhjekkeejha__ = LhjekkeejhaDefaultEntryHolder.defaultEntry.newBuilderForType()
           .setKey(entry.getKey())
           .setValue(entry.getValue())
@@ -4289,31 +4289,31 @@ private static final long serialVersionUID = 0L;
       return omhbpdpclojBuilder_;
     }
 
-    private POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm_;
+    private POGOProtos.Rpc.BuddyGiftProto nchennmhggm_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NLOCPHGFFNM, POGOProtos.Rpc.NLOCPHGFFNM.Builder, POGOProtos.Rpc.NLOCPHGFFNMOrBuilder> nchennmhggmBuilder_;
+        POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder> nchennmhggmBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
      * @return Whether the nchennmhggm field is set.
      */
     public boolean hasNchennmhggm() {
       return nchennmhggmBuilder_ != null || nchennmhggm_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
      * @return The nchennmhggm.
      */
-    public POGOProtos.Rpc.NLOCPHGFFNM getNchennmhggm() {
+    public POGOProtos.Rpc.BuddyGiftProto getNchennmhggm() {
       if (nchennmhggmBuilder_ == null) {
-        return nchennmhggm_ == null ? POGOProtos.Rpc.NLOCPHGFFNM.getDefaultInstance() : nchennmhggm_;
+        return nchennmhggm_ == null ? POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : nchennmhggm_;
       } else {
         return nchennmhggmBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
      */
-    public Builder setNchennmhggm(POGOProtos.Rpc.NLOCPHGFFNM value) {
+    public Builder setNchennmhggm(POGOProtos.Rpc.BuddyGiftProto value) {
       if (nchennmhggmBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -4327,10 +4327,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
      */
     public Builder setNchennmhggm(
-        POGOProtos.Rpc.NLOCPHGFFNM.Builder builderForValue) {
+        POGOProtos.Rpc.BuddyGiftProto.Builder builderForValue) {
       if (nchennmhggmBuilder_ == null) {
         nchennmhggm_ = builderForValue.build();
         onChanged();
@@ -4341,13 +4341,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
      */
-    public Builder mergeNchennmhggm(POGOProtos.Rpc.NLOCPHGFFNM value) {
+    public Builder mergeNchennmhggm(POGOProtos.Rpc.BuddyGiftProto value) {
       if (nchennmhggmBuilder_ == null) {
         if (nchennmhggm_ != null) {
           nchennmhggm_ =
-            POGOProtos.Rpc.NLOCPHGFFNM.newBuilder(nchennmhggm_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.BuddyGiftProto.newBuilder(nchennmhggm_).mergeFrom(value).buildPartial();
         } else {
           nchennmhggm_ = value;
         }
@@ -4359,7 +4359,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
      */
     public Builder clearNchennmhggm() {
       if (nchennmhggmBuilder_ == null) {
@@ -4373,33 +4373,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
      */
-    public POGOProtos.Rpc.NLOCPHGFFNM.Builder getNchennmhggmBuilder() {
+    public POGOProtos.Rpc.BuddyGiftProto.Builder getNchennmhggmBuilder() {
       
       onChanged();
       return getNchennmhggmFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
      */
-    public POGOProtos.Rpc.NLOCPHGFFNMOrBuilder getNchennmhggmOrBuilder() {
+    public POGOProtos.Rpc.BuddyGiftProtoOrBuilder getNchennmhggmOrBuilder() {
       if (nchennmhggmBuilder_ != null) {
         return nchennmhggmBuilder_.getMessageOrBuilder();
       } else {
         return nchennmhggm_ == null ?
-            POGOProtos.Rpc.NLOCPHGFFNM.getDefaultInstance() : nchennmhggm_;
+            POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : nchennmhggm_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NLOCPHGFFNM, POGOProtos.Rpc.NLOCPHGFFNM.Builder, POGOProtos.Rpc.NLOCPHGFFNMOrBuilder> 
+        POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder> 
         getNchennmhggmFieldBuilder() {
       if (nchennmhggmBuilder_ == null) {
         nchennmhggmBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.NLOCPHGFFNM, POGOProtos.Rpc.NLOCPHGFFNM.Builder, POGOProtos.Rpc.NLOCPHGFFNMOrBuilder>(
+            POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder>(
                 getNchennmhggm(),
                 getParentForChildren(),
                 isClean());
@@ -4409,8 +4409,8 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.MapField<
-        java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> oegphmcaenb_;
-    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+        java.lang.Integer, POGOProtos.Rpc.SouvenirProto> oegphmcaenb_;
+    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
     internalGetOegphmcaenb() {
       if (oegphmcaenb_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -4418,7 +4418,7 @@ private static final long serialVersionUID = 0L;
       }
       return oegphmcaenb_;
     }
-    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
     internalGetMutableOegphmcaenb() {
       onChanged();;
       if (oegphmcaenb_ == null) {
@@ -4435,7 +4435,7 @@ private static final long serialVersionUID = 0L;
       return internalGetOegphmcaenb().getMap().size();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
      */
 
     @java.lang.Override
@@ -4449,39 +4449,39 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> getOegphmcaenb() {
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenb() {
       return getOegphmcaenbMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> getOegphmcaenbMap() {
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenbMap() {
       return internalGetOegphmcaenb().getMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrDefault(
+    public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrDefault(
         int key,
-        POGOProtos.Rpc.PDNJNJNJKAG defaultValue) {
+        POGOProtos.Rpc.SouvenirProto defaultValue) {
       
-      java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> map =
+      java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
           internalGetOegphmcaenb().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrThrow(
+    public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrThrow(
         int key) {
       
-      java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> map =
+      java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
           internalGetOegphmcaenb().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -4495,7 +4495,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
      */
 
     public Builder removeOegphmcaenb(
@@ -4509,16 +4509,16 @@ private static final long serialVersionUID = 0L;
      * Use alternate mutation accessors instead.
      */
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
     getMutableOegphmcaenb() {
       return internalGetMutableOegphmcaenb().getMutableMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
      */
     public Builder putOegphmcaenb(
         int key,
-        POGOProtos.Rpc.PDNJNJNJKAG value) {
+        POGOProtos.Rpc.SouvenirProto value) {
       
       if (value == null) { throw new java.lang.NullPointerException(); }
       internalGetMutableOegphmcaenb().getMutableMap()
@@ -4526,19 +4526,19 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
      */
 
     public Builder putAllOegphmcaenb(
-        java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> values) {
+        java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> values) {
       internalGetMutableOegphmcaenb().getMutableMap()
           .putAll(values);
       return this;
     }
 
     private com.google.protobuf.MapField<
-        java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> bmlaijcmoek_;
-    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+        java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> bmlaijcmoek_;
+    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
     internalGetBmlaijcmoek() {
       if (bmlaijcmoek_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -4546,7 +4546,7 @@ private static final long serialVersionUID = 0L;
       }
       return bmlaijcmoek_;
     }
-    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
     internalGetMutableBmlaijcmoek() {
       onChanged();;
       if (bmlaijcmoek_ == null) {
@@ -4563,7 +4563,7 @@ private static final long serialVersionUID = 0L;
       return internalGetBmlaijcmoek().getMap().size();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
      */
 
     @java.lang.Override
@@ -4577,39 +4577,39 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> getBmlaijcmoek() {
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> getBmlaijcmoek() {
       return getBmlaijcmoekMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> getBmlaijcmoekMap() {
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> getBmlaijcmoekMap() {
       return internalGetBmlaijcmoek().getMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.GNJGCPJMODK getBmlaijcmoekOrDefault(
+    public POGOProtos.Rpc.DailyCounterProto getBmlaijcmoekOrDefault(
         int key,
-        POGOProtos.Rpc.GNJGCPJMODK defaultValue) {
+        POGOProtos.Rpc.DailyCounterProto defaultValue) {
       
-      java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> map =
+      java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> map =
           internalGetBmlaijcmoek().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.GNJGCPJMODK getBmlaijcmoekOrThrow(
+    public POGOProtos.Rpc.DailyCounterProto getBmlaijcmoekOrThrow(
         int key) {
       
-      java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> map =
+      java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> map =
           internalGetBmlaijcmoek().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -4623,7 +4623,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
      */
 
     public Builder removeBmlaijcmoek(
@@ -4637,16 +4637,16 @@ private static final long serialVersionUID = 0L;
      * Use alternate mutation accessors instead.
      */
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
     getMutableBmlaijcmoek() {
       return internalGetMutableBmlaijcmoek().getMutableMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
      */
     public Builder putBmlaijcmoek(
         int key,
-        POGOProtos.Rpc.GNJGCPJMODK value) {
+        POGOProtos.Rpc.DailyCounterProto value) {
       
       if (value == null) { throw new java.lang.NullPointerException(); }
       internalGetMutableBmlaijcmoek().getMutableMap()
@@ -4654,19 +4654,19 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
      */
 
     public Builder putAllBmlaijcmoek(
-        java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> values) {
+        java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> values) {
       internalGetMutableBmlaijcmoek().getMutableMap()
           .putAll(values);
       return this;
     }
 
     private com.google.protobuf.MapField<
-        java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> lhjekkeejha_;
-    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+        java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> lhjekkeejha_;
+    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
     internalGetLhjekkeejha() {
       if (lhjekkeejha_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -4674,7 +4674,7 @@ private static final long serialVersionUID = 0L;
       }
       return lhjekkeejha_;
     }
-    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
     internalGetMutableLhjekkeejha() {
       onChanged();;
       if (lhjekkeejha_ == null) {
@@ -4691,7 +4691,7 @@ private static final long serialVersionUID = 0L;
       return internalGetLhjekkeejha().getMap().size();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
      */
 
     @java.lang.Override
@@ -4705,39 +4705,39 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> getLhjekkeejha() {
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> getLhjekkeejha() {
       return getLhjekkeejhaMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> getLhjekkeejhaMap() {
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> getLhjekkeejhaMap() {
       return internalGetLhjekkeejha().getMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.GNJGCPJMODK getLhjekkeejhaOrDefault(
+    public POGOProtos.Rpc.DailyCounterProto getLhjekkeejhaOrDefault(
         int key,
-        POGOProtos.Rpc.GNJGCPJMODK defaultValue) {
+        POGOProtos.Rpc.DailyCounterProto defaultValue) {
       
-      java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> map =
+      java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> map =
           internalGetLhjekkeejha().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.GNJGCPJMODK getLhjekkeejhaOrThrow(
+    public POGOProtos.Rpc.DailyCounterProto getLhjekkeejhaOrThrow(
         int key) {
       
-      java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> map =
+      java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> map =
           internalGetLhjekkeejha().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -4751,7 +4751,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
      */
 
     public Builder removeLhjekkeejha(
@@ -4765,16 +4765,16 @@ private static final long serialVersionUID = 0L;
      * Use alternate mutation accessors instead.
      */
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
     getMutableLhjekkeejha() {
       return internalGetMutableLhjekkeejha().getMutableMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
      */
     public Builder putLhjekkeejha(
         int key,
-        POGOProtos.Rpc.GNJGCPJMODK value) {
+        POGOProtos.Rpc.DailyCounterProto value) {
       
       if (value == null) { throw new java.lang.NullPointerException(); }
       internalGetMutableLhjekkeejha().getMutableMap()
@@ -4782,11 +4782,11 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
      */
 
     public Builder putAllLhjekkeejha(
-        java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK> values) {
+        java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto> values) {
       internalGetMutableLhjekkeejha().getMutableMap()
           .putAll(values);
       return this;

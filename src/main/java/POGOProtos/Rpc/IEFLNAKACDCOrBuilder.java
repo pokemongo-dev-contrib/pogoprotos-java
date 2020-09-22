@@ -19,17 +19,17 @@ public interface IEFLNAKACDCOrBuilder extends
   POGOProtos.Rpc.IEFLNAKACDC.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.LHJCJEKBKMK cnmhjlaehkl = 2;</code>
+   * <code>.POGOProtos.Rpc.AppliedItemProto cnmhjlaehkl = 2;</code>
    * @return Whether the cnmhjlaehkl field is set.
    */
   boolean hasCnmhjlaehkl();
   /**
-   * <code>.POGOProtos.Rpc.LHJCJEKBKMK cnmhjlaehkl = 2;</code>
+   * <code>.POGOProtos.Rpc.AppliedItemProto cnmhjlaehkl = 2;</code>
    * @return The cnmhjlaehkl.
    */
-  POGOProtos.Rpc.LHJCJEKBKMK getCnmhjlaehkl();
+  POGOProtos.Rpc.AppliedItemProto getCnmhjlaehkl();
   /**
-   * <code>.POGOProtos.Rpc.LHJCJEKBKMK cnmhjlaehkl = 2;</code>
+   * <code>.POGOProtos.Rpc.AppliedItemProto cnmhjlaehkl = 2;</code>
    */
-  POGOProtos.Rpc.LHJCJEKBKMKOrBuilder getCnmhjlaehklOrBuilder();
+  POGOProtos.Rpc.AppliedItemProtoOrBuilder getCnmhjlaehklOrBuilder();
 }

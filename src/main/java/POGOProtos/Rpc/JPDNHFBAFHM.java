@@ -61,11 +61,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.OANEOIOHADA.Builder subBuilder = null;
+            POGOProtos.Rpc.CombatActionProto.Builder subBuilder = null;
             if (fcjhofhmeje_ != null) {
               subBuilder = fcjhofhmeje_.toBuilder();
             }
-            fcjhofhmeje_ = input.readMessage(POGOProtos.Rpc.OANEOIOHADA.parser(), extensionRegistry);
+            fcjhofhmeje_ = input.readMessage(POGOProtos.Rpc.CombatActionProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(fcjhofhmeje_);
               fcjhofhmeje_ = subBuilder.buildPartial();
@@ -150,9 +150,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FCJHOFHMEJE_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje_;
+  private POGOProtos.Rpc.CombatActionProto fcjhofhmeje_;
   /**
-   * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+   * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
    * @return Whether the fcjhofhmeje field is set.
    */
   @java.lang.Override
@@ -160,18 +160,18 @@ private static final long serialVersionUID = 0L;
     return fcjhofhmeje_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+   * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
    * @return The fcjhofhmeje.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.OANEOIOHADA getFcjhofhmeje() {
-    return fcjhofhmeje_ == null ? POGOProtos.Rpc.OANEOIOHADA.getDefaultInstance() : fcjhofhmeje_;
+  public POGOProtos.Rpc.CombatActionProto getFcjhofhmeje() {
+    return fcjhofhmeje_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : fcjhofhmeje_;
   }
   /**
-   * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+   * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.OANEOIOHADAOrBuilder getFcjhofhmejeOrBuilder() {
+  public POGOProtos.Rpc.CombatActionProtoOrBuilder getFcjhofhmejeOrBuilder() {
     return getFcjhofhmeje();
   }
 
@@ -642,31 +642,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje_;
+    private POGOProtos.Rpc.CombatActionProto fcjhofhmeje_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.OANEOIOHADA, POGOProtos.Rpc.OANEOIOHADA.Builder, POGOProtos.Rpc.OANEOIOHADAOrBuilder> fcjhofhmejeBuilder_;
+        POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> fcjhofhmejeBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
      * @return Whether the fcjhofhmeje field is set.
      */
     public boolean hasFcjhofhmeje() {
       return fcjhofhmejeBuilder_ != null || fcjhofhmeje_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
      * @return The fcjhofhmeje.
      */
-    public POGOProtos.Rpc.OANEOIOHADA getFcjhofhmeje() {
+    public POGOProtos.Rpc.CombatActionProto getFcjhofhmeje() {
       if (fcjhofhmejeBuilder_ == null) {
-        return fcjhofhmeje_ == null ? POGOProtos.Rpc.OANEOIOHADA.getDefaultInstance() : fcjhofhmeje_;
+        return fcjhofhmeje_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : fcjhofhmeje_;
       } else {
         return fcjhofhmejeBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
      */
-    public Builder setFcjhofhmeje(POGOProtos.Rpc.OANEOIOHADA value) {
+    public Builder setFcjhofhmeje(POGOProtos.Rpc.CombatActionProto value) {
       if (fcjhofhmejeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -680,10 +680,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
      */
     public Builder setFcjhofhmeje(
-        POGOProtos.Rpc.OANEOIOHADA.Builder builderForValue) {
+        POGOProtos.Rpc.CombatActionProto.Builder builderForValue) {
       if (fcjhofhmejeBuilder_ == null) {
         fcjhofhmeje_ = builderForValue.build();
         onChanged();
@@ -694,13 +694,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
      */
-    public Builder mergeFcjhofhmeje(POGOProtos.Rpc.OANEOIOHADA value) {
+    public Builder mergeFcjhofhmeje(POGOProtos.Rpc.CombatActionProto value) {
       if (fcjhofhmejeBuilder_ == null) {
         if (fcjhofhmeje_ != null) {
           fcjhofhmeje_ =
-            POGOProtos.Rpc.OANEOIOHADA.newBuilder(fcjhofhmeje_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.CombatActionProto.newBuilder(fcjhofhmeje_).mergeFrom(value).buildPartial();
         } else {
           fcjhofhmeje_ = value;
         }
@@ -712,7 +712,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
      */
     public Builder clearFcjhofhmeje() {
       if (fcjhofhmejeBuilder_ == null) {
@@ -726,33 +726,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
      */
-    public POGOProtos.Rpc.OANEOIOHADA.Builder getFcjhofhmejeBuilder() {
+    public POGOProtos.Rpc.CombatActionProto.Builder getFcjhofhmejeBuilder() {
       
       onChanged();
       return getFcjhofhmejeFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
      */
-    public POGOProtos.Rpc.OANEOIOHADAOrBuilder getFcjhofhmejeOrBuilder() {
+    public POGOProtos.Rpc.CombatActionProtoOrBuilder getFcjhofhmejeOrBuilder() {
       if (fcjhofhmejeBuilder_ != null) {
         return fcjhofhmejeBuilder_.getMessageOrBuilder();
       } else {
         return fcjhofhmeje_ == null ?
-            POGOProtos.Rpc.OANEOIOHADA.getDefaultInstance() : fcjhofhmeje_;
+            POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : fcjhofhmeje_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.OANEOIOHADA, POGOProtos.Rpc.OANEOIOHADA.Builder, POGOProtos.Rpc.OANEOIOHADAOrBuilder> 
+        POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> 
         getFcjhofhmejeFieldBuilder() {
       if (fcjhofhmejeBuilder_ == null) {
         fcjhofhmejeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.OANEOIOHADA, POGOProtos.Rpc.OANEOIOHADA.Builder, POGOProtos.Rpc.OANEOIOHADAOrBuilder>(
+            POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder>(
                 getFcjhofhmeje(),
                 getParentForChildren(),
                 isClean());

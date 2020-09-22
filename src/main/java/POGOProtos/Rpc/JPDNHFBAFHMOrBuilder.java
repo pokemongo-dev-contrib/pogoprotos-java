@@ -20,19 +20,19 @@ public interface JPDNHFBAFHMOrBuilder extends
       getHdegllgmeihBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+   * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
    * @return Whether the fcjhofhmeje field is set.
    */
   boolean hasFcjhofhmeje();
   /**
-   * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+   * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
    * @return The fcjhofhmeje.
    */
-  POGOProtos.Rpc.OANEOIOHADA getFcjhofhmeje();
+  POGOProtos.Rpc.CombatActionProto getFcjhofhmeje();
   /**
-   * <code>.POGOProtos.Rpc.OANEOIOHADA fcjhofhmeje = 2;</code>
+   * <code>.POGOProtos.Rpc.CombatActionProto fcjhofhmeje = 2;</code>
    */
-  POGOProtos.Rpc.OANEOIOHADAOrBuilder getFcjhofhmejeOrBuilder();
+  POGOProtos.Rpc.CombatActionProtoOrBuilder getFcjhofhmejeOrBuilder();
 
   /**
    * <code>string fnginpplknd = 3;</code>

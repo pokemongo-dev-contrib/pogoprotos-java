@@ -91,14 +91,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 42: {
-            POGOProtos.Rpc.EFEEMEDLPGC.Builder subBuilder = null;
+            POGOProtos.Rpc.BuddyPokemonLogEntry.Builder subBuilder = null;
             if (dataCase_ == 5) {
-              subBuilder = ((POGOProtos.Rpc.EFEEMEDLPGC) data_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.BuddyPokemonLogEntry) data_).toBuilder();
             }
             data_ =
-                input.readMessage(POGOProtos.Rpc.EFEEMEDLPGC.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.BuddyPokemonLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.EFEEMEDLPGC) data_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyPokemonLogEntry) data_);
               data_ = subBuilder.buildPartial();
             }
             dataCase_ = 5;
@@ -161,14 +161,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 82: {
-            POGOProtos.Rpc.GFKPHHHJBCN.Builder subBuilder = null;
+            POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder subBuilder = null;
             if (dataCase_ == 10) {
-              subBuilder = ((POGOProtos.Rpc.GFKPHHHJBCN) data_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) data_).toBuilder();
             }
             data_ =
-                input.readMessage(POGOProtos.Rpc.GFKPHHHJBCN.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.GFKPHHHJBCN) data_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) data_);
               data_ = subBuilder.buildPartial();
             }
             dataCase_ = 10;
@@ -329,14 +329,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 178: {
-            POGOProtos.Rpc.AHNNPKBMMJN.Builder subBuilder = null;
+            POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder subBuilder = null;
             if (dataCase_ == 22) {
-              subBuilder = ((POGOProtos.Rpc.AHNNPKBMMJN) data_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) data_).toBuilder();
             }
             data_ =
-                input.readMessage(POGOProtos.Rpc.AHNNPKBMMJN.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.AHNNPKBMMJN) data_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) data_);
               data_ = subBuilder.buildPartial();
             }
             dataCase_ = 22;
@@ -547,7 +547,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int BUDDY_POKEMON_FIELD_NUMBER = 5;
   /**
-   * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
    * @return Whether the buddyPokemon field is set.
    */
   @java.lang.Override
@@ -555,25 +555,25 @@ private static final long serialVersionUID = 0L;
     return dataCase_ == 5;
   }
   /**
-   * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
    * @return The buddyPokemon.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EFEEMEDLPGC getBuddyPokemon() {
+  public POGOProtos.Rpc.BuddyPokemonLogEntry getBuddyPokemon() {
     if (dataCase_ == 5) {
-       return (POGOProtos.Rpc.EFEEMEDLPGC) data_;
+       return (POGOProtos.Rpc.BuddyPokemonLogEntry) data_;
     }
-    return POGOProtos.Rpc.EFEEMEDLPGC.getDefaultInstance();
+    return POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EFEEMEDLPGCOrBuilder getBuddyPokemonOrBuilder() {
+  public POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder getBuddyPokemonOrBuilder() {
     if (dataCase_ == 5) {
-       return (POGOProtos.Rpc.EFEEMEDLPGC) data_;
+       return (POGOProtos.Rpc.BuddyPokemonLogEntry) data_;
     }
-    return POGOProtos.Rpc.EFEEMEDLPGC.getDefaultInstance();
+    return POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
   }
 
   public static final int RAID_REWARDS_FIELD_NUMBER = 6;
@@ -702,7 +702,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int COMPLETE_QUEST_POKEMON_ENCOUNTER_FIELD_NUMBER = 10;
   /**
-   * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
    * @return Whether the completeQuestPokemonEncounter field is set.
    */
   @java.lang.Override
@@ -710,25 +710,25 @@ private static final long serialVersionUID = 0L;
     return dataCase_ == 10;
   }
   /**
-   * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
    * @return The completeQuestPokemonEncounter.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GFKPHHHJBCN getCompleteQuestPokemonEncounter() {
+  public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry getCompleteQuestPokemonEncounter() {
     if (dataCase_ == 10) {
-       return (POGOProtos.Rpc.GFKPHHHJBCN) data_;
+       return (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) data_;
     }
-    return POGOProtos.Rpc.GFKPHHHJBCN.getDefaultInstance();
+    return POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GFKPHHHJBCNOrBuilder getCompleteQuestPokemonEncounterOrBuilder() {
+  public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder getCompleteQuestPokemonEncounterOrBuilder() {
     if (dataCase_ == 10) {
-       return (POGOProtos.Rpc.GFKPHHHJBCN) data_;
+       return (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) data_;
     }
-    return POGOProtos.Rpc.GFKPHHHJBCN.getDefaultInstance();
+    return POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
   }
 
   public static final int BELUGA_TRANSFER_FIELD_NUMBER = 11;
@@ -1074,7 +1074,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int VS_SEEKER_COMPLETE_SEASON_FIELD_NUMBER = 22;
   /**
-   * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
    * @return Whether the vsSeekerCompleteSeason field is set.
    */
   @java.lang.Override
@@ -1082,25 +1082,25 @@ private static final long serialVersionUID = 0L;
     return dataCase_ == 22;
   }
   /**
-   * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
    * @return The vsSeekerCompleteSeason.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AHNNPKBMMJN getVsSeekerCompleteSeason() {
+  public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry getVsSeekerCompleteSeason() {
     if (dataCase_ == 22) {
-       return (POGOProtos.Rpc.AHNNPKBMMJN) data_;
+       return (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) data_;
     }
-    return POGOProtos.Rpc.AHNNPKBMMJN.getDefaultInstance();
+    return POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AHNNPKBMMJNOrBuilder getVsSeekerCompleteSeasonOrBuilder() {
+  public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder getVsSeekerCompleteSeasonOrBuilder() {
     if (dataCase_ == 22) {
-       return (POGOProtos.Rpc.AHNNPKBMMJN) data_;
+       return (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) data_;
     }
-    return POGOProtos.Rpc.AHNNPKBMMJN.getDefaultInstance();
+    return POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
   }
 
   public static final int VS_SEEKER_WIN_REWARDS_FIELD_NUMBER = 23;
@@ -1214,7 +1214,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(4, (POGOProtos.Rpc.MOOKPLNJKFA) data_);
     }
     if (dataCase_ == 5) {
-      output.writeMessage(5, (POGOProtos.Rpc.EFEEMEDLPGC) data_);
+      output.writeMessage(5, (POGOProtos.Rpc.BuddyPokemonLogEntry) data_);
     }
     if (dataCase_ == 6) {
       output.writeMessage(6, (POGOProtos.Rpc.JPFMNNIBKLH) data_);
@@ -1229,7 +1229,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(9, (POGOProtos.Rpc.OABFJHBECOO) data_);
     }
     if (dataCase_ == 10) {
-      output.writeMessage(10, (POGOProtos.Rpc.GFKPHHHJBCN) data_);
+      output.writeMessage(10, (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) data_);
     }
     if (dataCase_ == 11) {
       output.writeMessage(11, (POGOProtos.Rpc.JNHBKAEPKLN) data_);
@@ -1265,7 +1265,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(21, (POGOProtos.Rpc.MMLINCEHMIN) data_);
     }
     if (dataCase_ == 22) {
-      output.writeMessage(22, (POGOProtos.Rpc.AHNNPKBMMJN) data_);
+      output.writeMessage(22, (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) data_);
     }
     if (dataCase_ == 23) {
       output.writeMessage(23, (POGOProtos.Rpc.KDAOIKKFKMH) data_);
@@ -1300,7 +1300,7 @@ private static final long serialVersionUID = 0L;
     }
     if (dataCase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, (POGOProtos.Rpc.EFEEMEDLPGC) data_);
+        .computeMessageSize(5, (POGOProtos.Rpc.BuddyPokemonLogEntry) data_);
     }
     if (dataCase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
@@ -1320,7 +1320,7 @@ private static final long serialVersionUID = 0L;
     }
     if (dataCase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, (POGOProtos.Rpc.GFKPHHHJBCN) data_);
+        .computeMessageSize(10, (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) data_);
     }
     if (dataCase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
@@ -1368,7 +1368,7 @@ private static final long serialVersionUID = 0L;
     }
     if (dataCase_ == 22) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(22, (POGOProtos.Rpc.AHNNPKBMMJN) data_);
+        .computeMessageSize(22, (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) data_);
     }
     if (dataCase_ == 23) {
       size += com.google.protobuf.CodedOutputStream
@@ -2399,9 +2399,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.EFEEMEDLPGC, POGOProtos.Rpc.EFEEMEDLPGC.Builder, POGOProtos.Rpc.EFEEMEDLPGCOrBuilder> buddyPokemonBuilder_;
+        POGOProtos.Rpc.BuddyPokemonLogEntry, POGOProtos.Rpc.BuddyPokemonLogEntry.Builder, POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder> buddyPokemonBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
      * @return Whether the buddyPokemon field is set.
      */
     @java.lang.Override
@@ -2409,27 +2409,27 @@ private static final long serialVersionUID = 0L;
       return dataCase_ == 5;
     }
     /**
-     * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
      * @return The buddyPokemon.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.EFEEMEDLPGC getBuddyPokemon() {
+    public POGOProtos.Rpc.BuddyPokemonLogEntry getBuddyPokemon() {
       if (buddyPokemonBuilder_ == null) {
         if (dataCase_ == 5) {
-          return (POGOProtos.Rpc.EFEEMEDLPGC) data_;
+          return (POGOProtos.Rpc.BuddyPokemonLogEntry) data_;
         }
-        return POGOProtos.Rpc.EFEEMEDLPGC.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
       } else {
         if (dataCase_ == 5) {
           return buddyPokemonBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.EFEEMEDLPGC.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
      */
-    public Builder setBuddyPokemon(POGOProtos.Rpc.EFEEMEDLPGC value) {
+    public Builder setBuddyPokemon(POGOProtos.Rpc.BuddyPokemonLogEntry value) {
       if (buddyPokemonBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2443,10 +2443,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
      */
     public Builder setBuddyPokemon(
-        POGOProtos.Rpc.EFEEMEDLPGC.Builder builderForValue) {
+        POGOProtos.Rpc.BuddyPokemonLogEntry.Builder builderForValue) {
       if (buddyPokemonBuilder_ == null) {
         data_ = builderForValue.build();
         onChanged();
@@ -2457,13 +2457,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
      */
-    public Builder mergeBuddyPokemon(POGOProtos.Rpc.EFEEMEDLPGC value) {
+    public Builder mergeBuddyPokemon(POGOProtos.Rpc.BuddyPokemonLogEntry value) {
       if (buddyPokemonBuilder_ == null) {
         if (dataCase_ == 5 &&
-            data_ != POGOProtos.Rpc.EFEEMEDLPGC.getDefaultInstance()) {
-          data_ = POGOProtos.Rpc.EFEEMEDLPGC.newBuilder((POGOProtos.Rpc.EFEEMEDLPGC) data_)
+            data_ != POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance()) {
+          data_ = POGOProtos.Rpc.BuddyPokemonLogEntry.newBuilder((POGOProtos.Rpc.BuddyPokemonLogEntry) data_)
               .mergeFrom(value).buildPartial();
         } else {
           data_ = value;
@@ -2479,7 +2479,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
      */
     public Builder clearBuddyPokemon() {
       if (buddyPokemonBuilder_ == null) {
@@ -2498,38 +2498,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
      */
-    public POGOProtos.Rpc.EFEEMEDLPGC.Builder getBuddyPokemonBuilder() {
+    public POGOProtos.Rpc.BuddyPokemonLogEntry.Builder getBuddyPokemonBuilder() {
       return getBuddyPokemonFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.EFEEMEDLPGCOrBuilder getBuddyPokemonOrBuilder() {
+    public POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder getBuddyPokemonOrBuilder() {
       if ((dataCase_ == 5) && (buddyPokemonBuilder_ != null)) {
         return buddyPokemonBuilder_.getMessageOrBuilder();
       } else {
         if (dataCase_ == 5) {
-          return (POGOProtos.Rpc.EFEEMEDLPGC) data_;
+          return (POGOProtos.Rpc.BuddyPokemonLogEntry) data_;
         }
-        return POGOProtos.Rpc.EFEEMEDLPGC.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+     * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.EFEEMEDLPGC, POGOProtos.Rpc.EFEEMEDLPGC.Builder, POGOProtos.Rpc.EFEEMEDLPGCOrBuilder> 
+        POGOProtos.Rpc.BuddyPokemonLogEntry, POGOProtos.Rpc.BuddyPokemonLogEntry.Builder, POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder> 
         getBuddyPokemonFieldBuilder() {
       if (buddyPokemonBuilder_ == null) {
         if (!(dataCase_ == 5)) {
-          data_ = POGOProtos.Rpc.EFEEMEDLPGC.getDefaultInstance();
+          data_ = POGOProtos.Rpc.BuddyPokemonLogEntry.getDefaultInstance();
         }
         buddyPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.EFEEMEDLPGC, POGOProtos.Rpc.EFEEMEDLPGC.Builder, POGOProtos.Rpc.EFEEMEDLPGCOrBuilder>(
-                (POGOProtos.Rpc.EFEEMEDLPGC) data_,
+            POGOProtos.Rpc.BuddyPokemonLogEntry, POGOProtos.Rpc.BuddyPokemonLogEntry.Builder, POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder>(
+                (POGOProtos.Rpc.BuddyPokemonLogEntry) data_,
                 getParentForChildren(),
                 isClean());
         data_ = null;
@@ -3104,9 +3104,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GFKPHHHJBCN, POGOProtos.Rpc.GFKPHHHJBCN.Builder, POGOProtos.Rpc.GFKPHHHJBCNOrBuilder> completeQuestPokemonEncounterBuilder_;
+        POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder> completeQuestPokemonEncounterBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
      * @return Whether the completeQuestPokemonEncounter field is set.
      */
     @java.lang.Override
@@ -3114,27 +3114,27 @@ private static final long serialVersionUID = 0L;
       return dataCase_ == 10;
     }
     /**
-     * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
      * @return The completeQuestPokemonEncounter.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.GFKPHHHJBCN getCompleteQuestPokemonEncounter() {
+    public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry getCompleteQuestPokemonEncounter() {
       if (completeQuestPokemonEncounterBuilder_ == null) {
         if (dataCase_ == 10) {
-          return (POGOProtos.Rpc.GFKPHHHJBCN) data_;
+          return (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) data_;
         }
-        return POGOProtos.Rpc.GFKPHHHJBCN.getDefaultInstance();
+        return POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
       } else {
         if (dataCase_ == 10) {
           return completeQuestPokemonEncounterBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.GFKPHHHJBCN.getDefaultInstance();
+        return POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
      */
-    public Builder setCompleteQuestPokemonEncounter(POGOProtos.Rpc.GFKPHHHJBCN value) {
+    public Builder setCompleteQuestPokemonEncounter(POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry value) {
       if (completeQuestPokemonEncounterBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3148,10 +3148,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
      */
     public Builder setCompleteQuestPokemonEncounter(
-        POGOProtos.Rpc.GFKPHHHJBCN.Builder builderForValue) {
+        POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder builderForValue) {
       if (completeQuestPokemonEncounterBuilder_ == null) {
         data_ = builderForValue.build();
         onChanged();
@@ -3162,13 +3162,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
      */
-    public Builder mergeCompleteQuestPokemonEncounter(POGOProtos.Rpc.GFKPHHHJBCN value) {
+    public Builder mergeCompleteQuestPokemonEncounter(POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry value) {
       if (completeQuestPokemonEncounterBuilder_ == null) {
         if (dataCase_ == 10 &&
-            data_ != POGOProtos.Rpc.GFKPHHHJBCN.getDefaultInstance()) {
-          data_ = POGOProtos.Rpc.GFKPHHHJBCN.newBuilder((POGOProtos.Rpc.GFKPHHHJBCN) data_)
+            data_ != POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance()) {
+          data_ = POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.newBuilder((POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) data_)
               .mergeFrom(value).buildPartial();
         } else {
           data_ = value;
@@ -3184,7 +3184,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
      */
     public Builder clearCompleteQuestPokemonEncounter() {
       if (completeQuestPokemonEncounterBuilder_ == null) {
@@ -3203,38 +3203,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
      */
-    public POGOProtos.Rpc.GFKPHHHJBCN.Builder getCompleteQuestPokemonEncounterBuilder() {
+    public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder getCompleteQuestPokemonEncounterBuilder() {
       return getCompleteQuestPokemonEncounterFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.GFKPHHHJBCNOrBuilder getCompleteQuestPokemonEncounterOrBuilder() {
+    public POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder getCompleteQuestPokemonEncounterOrBuilder() {
       if ((dataCase_ == 10) && (completeQuestPokemonEncounterBuilder_ != null)) {
         return completeQuestPokemonEncounterBuilder_.getMessageOrBuilder();
       } else {
         if (dataCase_ == 10) {
-          return (POGOProtos.Rpc.GFKPHHHJBCN) data_;
+          return (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) data_;
         }
-        return POGOProtos.Rpc.GFKPHHHJBCN.getDefaultInstance();
+        return POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+     * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GFKPHHHJBCN, POGOProtos.Rpc.GFKPHHHJBCN.Builder, POGOProtos.Rpc.GFKPHHHJBCNOrBuilder> 
+        POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder> 
         getCompleteQuestPokemonEncounterFieldBuilder() {
       if (completeQuestPokemonEncounterBuilder_ == null) {
         if (!(dataCase_ == 10)) {
-          data_ = POGOProtos.Rpc.GFKPHHHJBCN.getDefaultInstance();
+          data_ = POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.getDefaultInstance();
         }
         completeQuestPokemonEncounterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.GFKPHHHJBCN, POGOProtos.Rpc.GFKPHHHJBCN.Builder, POGOProtos.Rpc.GFKPHHHJBCNOrBuilder>(
-                (POGOProtos.Rpc.GFKPHHHJBCN) data_,
+            POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry.Builder, POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder>(
+                (POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry) data_,
                 getParentForChildren(),
                 isClean());
         data_ = null;
@@ -4796,9 +4796,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AHNNPKBMMJN, POGOProtos.Rpc.AHNNPKBMMJN.Builder, POGOProtos.Rpc.AHNNPKBMMJNOrBuilder> vsSeekerCompleteSeasonBuilder_;
+        POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder> vsSeekerCompleteSeasonBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
      * @return Whether the vsSeekerCompleteSeason field is set.
      */
     @java.lang.Override
@@ -4806,27 +4806,27 @@ private static final long serialVersionUID = 0L;
       return dataCase_ == 22;
     }
     /**
-     * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
      * @return The vsSeekerCompleteSeason.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.AHNNPKBMMJN getVsSeekerCompleteSeason() {
+    public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry getVsSeekerCompleteSeason() {
       if (vsSeekerCompleteSeasonBuilder_ == null) {
         if (dataCase_ == 22) {
-          return (POGOProtos.Rpc.AHNNPKBMMJN) data_;
+          return (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) data_;
         }
-        return POGOProtos.Rpc.AHNNPKBMMJN.getDefaultInstance();
+        return POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
       } else {
         if (dataCase_ == 22) {
           return vsSeekerCompleteSeasonBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.AHNNPKBMMJN.getDefaultInstance();
+        return POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
      */
-    public Builder setVsSeekerCompleteSeason(POGOProtos.Rpc.AHNNPKBMMJN value) {
+    public Builder setVsSeekerCompleteSeason(POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry value) {
       if (vsSeekerCompleteSeasonBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -4840,10 +4840,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
      */
     public Builder setVsSeekerCompleteSeason(
-        POGOProtos.Rpc.AHNNPKBMMJN.Builder builderForValue) {
+        POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder builderForValue) {
       if (vsSeekerCompleteSeasonBuilder_ == null) {
         data_ = builderForValue.build();
         onChanged();
@@ -4854,13 +4854,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
      */
-    public Builder mergeVsSeekerCompleteSeason(POGOProtos.Rpc.AHNNPKBMMJN value) {
+    public Builder mergeVsSeekerCompleteSeason(POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry value) {
       if (vsSeekerCompleteSeasonBuilder_ == null) {
         if (dataCase_ == 22 &&
-            data_ != POGOProtos.Rpc.AHNNPKBMMJN.getDefaultInstance()) {
-          data_ = POGOProtos.Rpc.AHNNPKBMMJN.newBuilder((POGOProtos.Rpc.AHNNPKBMMJN) data_)
+            data_ != POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance()) {
+          data_ = POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.newBuilder((POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) data_)
               .mergeFrom(value).buildPartial();
         } else {
           data_ = value;
@@ -4876,7 +4876,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
      */
     public Builder clearVsSeekerCompleteSeason() {
       if (vsSeekerCompleteSeasonBuilder_ == null) {
@@ -4895,38 +4895,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
      */
-    public POGOProtos.Rpc.AHNNPKBMMJN.Builder getVsSeekerCompleteSeasonBuilder() {
+    public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder getVsSeekerCompleteSeasonBuilder() {
       return getVsSeekerCompleteSeasonFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.AHNNPKBMMJNOrBuilder getVsSeekerCompleteSeasonOrBuilder() {
+    public POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder getVsSeekerCompleteSeasonOrBuilder() {
       if ((dataCase_ == 22) && (vsSeekerCompleteSeasonBuilder_ != null)) {
         return vsSeekerCompleteSeasonBuilder_.getMessageOrBuilder();
       } else {
         if (dataCase_ == 22) {
-          return (POGOProtos.Rpc.AHNNPKBMMJN) data_;
+          return (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) data_;
         }
-        return POGOProtos.Rpc.AHNNPKBMMJN.getDefaultInstance();
+        return POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+     * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AHNNPKBMMJN, POGOProtos.Rpc.AHNNPKBMMJN.Builder, POGOProtos.Rpc.AHNNPKBMMJNOrBuilder> 
+        POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder> 
         getVsSeekerCompleteSeasonFieldBuilder() {
       if (vsSeekerCompleteSeasonBuilder_ == null) {
         if (!(dataCase_ == 22)) {
-          data_ = POGOProtos.Rpc.AHNNPKBMMJN.getDefaultInstance();
+          data_ = POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.getDefaultInstance();
         }
         vsSeekerCompleteSeasonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.AHNNPKBMMJN, POGOProtos.Rpc.AHNNPKBMMJN.Builder, POGOProtos.Rpc.AHNNPKBMMJNOrBuilder>(
-                (POGOProtos.Rpc.AHNNPKBMMJN) data_,
+            POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry.Builder, POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder>(
+                (POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry) data_,
                 getParentForChildren(),
                 isClean());
         data_ = null;

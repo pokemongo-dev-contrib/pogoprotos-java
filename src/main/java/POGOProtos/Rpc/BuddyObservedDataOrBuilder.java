@@ -14,34 +14,34 @@ public interface BuddyObservedDataOrBuilder extends
   int getCppkjnmpbkb();
 
   /**
-   * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
    * @return Whether the bcnfhogkjfj field is set.
    */
   boolean hasBcnfhogkjfj();
   /**
-   * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
    * @return The bcnfhogkjfj.
    */
-  POGOProtos.Rpc.HPIFJELPBGP getBcnfhogkjfj();
+  POGOProtos.Rpc.BuddyStats getBcnfhogkjfj();
   /**
-   * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
    */
-  POGOProtos.Rpc.HPIFJELPBGPOrBuilder getBcnfhogkjfjOrBuilder();
+  POGOProtos.Rpc.BuddyStatsOrBuilder getBcnfhogkjfjOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
    * @return Whether the nchennmhggm field is set.
    */
   boolean hasNchennmhggm();
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
    * @return The nchennmhggm.
    */
-  POGOProtos.Rpc.NLOCPHGFFNM getNchennmhggm();
+  POGOProtos.Rpc.BuddyGiftProto getNchennmhggm();
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
    */
-  POGOProtos.Rpc.NLOCPHGFFNMOrBuilder getNchennmhggmOrBuilder();
+  POGOProtos.Rpc.BuddyGiftProtoOrBuilder getNchennmhggmOrBuilder();
 
   /**
    * <code>int32 nkhenfnjjge = 7;</code>
@@ -50,22 +50,22 @@ public interface BuddyObservedDataOrBuilder extends
   int getNkhenfnjjge();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ pecaginmfan = 8;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
    * @return The enum numeric value on the wire for pecaginmfan.
    */
   int getPecaginmfanValue();
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ pecaginmfan = 8;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
    * @return The pecaginmfan.
    */
-  POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ getPecaginmfan();
+  POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult getPecaginmfan();
 
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
    */
   int getOegphmcaenbCount();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
    */
   boolean containsOegphmcaenb(
       int key);
@@ -73,25 +73,25 @@ public interface BuddyObservedDataOrBuilder extends
    * Use {@link #getOegphmcaenbMap()} instead.
    */
   @java.lang.Deprecated
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
   getOegphmcaenb();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
    */
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
   getOegphmcaenbMap();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
    */
 
-  POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrDefault(
+  POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrDefault(
       int key,
-      POGOProtos.Rpc.PDNJNJNJKAG defaultValue);
+      POGOProtos.Rpc.SouvenirProto defaultValue);
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
    */
 
-  POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrThrow(
+  POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrThrow(
       int key);
 
   /**
@@ -110,19 +110,19 @@ public interface BuddyObservedDataOrBuilder extends
   POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder getEnjffacophdOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
    * @return Whether the cncabapaflc field is set.
    */
   boolean hasCncabapaflc();
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
    * @return The cncabapaflc.
    */
-  POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF getCncabapaflc();
+  POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getCncabapaflc();
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
    */
-  POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNFOrBuilder getCncabapaflcOrBuilder();
+  POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder getCncabapaflcOrBuilder();
 
   /**
    * <code>string jpneiholigi = 12;</code>

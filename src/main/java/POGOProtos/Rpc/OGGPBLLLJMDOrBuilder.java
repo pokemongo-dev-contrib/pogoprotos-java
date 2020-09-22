@@ -34,17 +34,17 @@ public interface OGGPBLLLJMDOrBuilder extends
   POGOProtos.Rpc.BattleUpdateProtoOrBuilder getMifmmmlipdfOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 3;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 3;</code>
    * @return Whether the hdinlbkpiel field is set.
    */
   boolean hasHdinlbkpiel();
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 3;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 3;</code>
    * @return The hdinlbkpiel.
    */
-  POGOProtos.Rpc.NDLAECIHENK getHdinlbkpiel();
+  POGOProtos.Rpc.AwardedGymBadge getHdinlbkpiel();
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 3;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 3;</code>
    */
-  POGOProtos.Rpc.NDLAECIHENKOrBuilder getHdinlbkpielOrBuilder();
+  POGOProtos.Rpc.AwardedGymBadgeOrBuilder getHdinlbkpielOrBuilder();
 }

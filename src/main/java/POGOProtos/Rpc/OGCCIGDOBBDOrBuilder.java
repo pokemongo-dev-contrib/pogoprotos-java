@@ -81,19 +81,19 @@ public interface OGCCIGDOBBDOrBuilder extends
   POGOProtos.Rpc.Item getEajohpjbknk();
 
   /**
-   * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 9;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 9;</code>
    * @return Whether the bcnfhogkjfj field is set.
    */
   boolean hasBcnfhogkjfj();
   /**
-   * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 9;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 9;</code>
    * @return The bcnfhogkjfj.
    */
-  POGOProtos.Rpc.HPIFJELPBGP getBcnfhogkjfj();
+  POGOProtos.Rpc.BuddyStats getBcnfhogkjfj();
   /**
-   * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 9;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 9;</code>
    */
-  POGOProtos.Rpc.HPIFJELPBGPOrBuilder getBcnfhogkjfjOrBuilder();
+  POGOProtos.Rpc.BuddyStatsOrBuilder getBcnfhogkjfjOrBuilder();
 
   /**
    * <code>int32 cppkjnmpbkb = 10;</code>
@@ -144,11 +144,11 @@ public interface OGCCIGDOBBDOrBuilder extends
   long getMjomhbbbldm();
 
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 17;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 17;</code>
    */
   int getOegphmcaenbCount();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 17;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 17;</code>
    */
   boolean containsOegphmcaenb(
       int key);
@@ -156,25 +156,25 @@ public interface OGCCIGDOBBDOrBuilder extends
    * Use {@link #getOegphmcaenbMap()} instead.
    */
   @java.lang.Deprecated
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
   getOegphmcaenb();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 17;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 17;</code>
    */
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
   getOegphmcaenbMap();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 17;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 17;</code>
    */
 
-  POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrDefault(
+  POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrDefault(
       int key,
-      POGOProtos.Rpc.PDNJNJNJKAG defaultValue);
+      POGOProtos.Rpc.SouvenirProto defaultValue);
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 17;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 17;</code>
    */
 
-  POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrThrow(
+  POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrThrow(
       int key);
 
   /**

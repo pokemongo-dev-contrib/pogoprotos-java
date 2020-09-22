@@ -8,26 +8,26 @@ public interface BattleLogProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA jlnijhmemnj = 1;</code>
+   * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
    * @return The enum numeric value on the wire for jlnijhmemnj.
    */
   int getJlnijhmemnjValue();
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA jlnijhmemnj = 1;</code>
+   * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
    * @return The jlnijhmemnj.
    */
-  POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA getJlnijhmemnj();
+  POGOProtos.Rpc.BattleLogProto.State getJlnijhmemnj();
 
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.APFDMENHKDI dbecogechda = 2;</code>
+   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
    * @return The enum numeric value on the wire for dbecogechda.
    */
   int getDbecogechdaValue();
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.APFDMENHKDI dbecogechda = 2;</code>
+   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
    * @return The dbecogechda.
    */
-  POGOProtos.Rpc.BattleLogProto.APFDMENHKDI getDbecogechda();
+  POGOProtos.Rpc.BattleLogProto.BattleType getDbecogechda();
 
   /**
    * <code>int64 dikaifhaigb = 3;</code>
@@ -36,27 +36,27 @@ public interface BattleLogProtoOrBuilder extends
   long getDikaifhaigb();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
    */
-  java.util.List<POGOProtos.Rpc.CPBMIJKOPPM> 
+  java.util.List<POGOProtos.Rpc.BattleActionProto> 
       getNcilckfpfoeList();
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
    */
-  POGOProtos.Rpc.CPBMIJKOPPM getNcilckfpfoe(int index);
+  POGOProtos.Rpc.BattleActionProto getNcilckfpfoe(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
    */
   int getNcilckfpfoeCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.CPBMIJKOPPMOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.BattleActionProtoOrBuilder> 
       getNcilckfpfoeOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
    */
-  POGOProtos.Rpc.CPBMIJKOPPMOrBuilder getNcilckfpfoeOrBuilder(
+  POGOProtos.Rpc.BattleActionProtoOrBuilder getNcilckfpfoeOrBuilder(
       int index);
 
   /**

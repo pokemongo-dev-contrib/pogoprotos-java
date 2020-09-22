@@ -240,27 +240,27 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
      */
-    java.util.List<POGOProtos.Rpc.NDLAECIHENK> 
+    java.util.List<POGOProtos.Rpc.AwardedGymBadge> 
         getHdinlbkpielList();
     /**
-     * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
      */
-    POGOProtos.Rpc.NDLAECIHENK getHdinlbkpiel(int index);
+    POGOProtos.Rpc.AwardedGymBadge getHdinlbkpiel(int index);
     /**
-     * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
      */
     int getHdinlbkpielCount();
     /**
-     * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
      */
-    java.util.List<? extends POGOProtos.Rpc.NDLAECIHENKOrBuilder> 
+    java.util.List<? extends POGOProtos.Rpc.AwardedGymBadgeOrBuilder> 
         getHdinlbkpielOrBuilderList();
     /**
-     * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
      */
-    POGOProtos.Rpc.NDLAECIHENKOrBuilder getHdinlbkpielOrBuilder(
+    POGOProtos.Rpc.AwardedGymBadgeOrBuilder getHdinlbkpielOrBuilder(
         int index);
 
     /**
@@ -322,11 +322,11 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                hdinlbkpiel_ = new java.util.ArrayList<POGOProtos.Rpc.NDLAECIHENK>();
+                hdinlbkpiel_ = new java.util.ArrayList<POGOProtos.Rpc.AwardedGymBadge>();
                 mutable_bitField0_ |= 0x00000001;
               }
               hdinlbkpiel_.add(
-                  input.readMessage(POGOProtos.Rpc.NDLAECIHENK.parser(), extensionRegistry));
+                  input.readMessage(POGOProtos.Rpc.AwardedGymBadge.parser(), extensionRegistry));
               break;
             }
             case 16: {
@@ -370,41 +370,41 @@ private static final long serialVersionUID = 0L;
     }
 
     public static final int HDINLBKPIEL_FIELD_NUMBER = 1;
-    private java.util.List<POGOProtos.Rpc.NDLAECIHENK> hdinlbkpiel_;
+    private java.util.List<POGOProtos.Rpc.AwardedGymBadge> hdinlbkpiel_;
     /**
-     * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<POGOProtos.Rpc.NDLAECIHENK> getHdinlbkpielList() {
+    public java.util.List<POGOProtos.Rpc.AwardedGymBadge> getHdinlbkpielList() {
       return hdinlbkpiel_;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends POGOProtos.Rpc.NDLAECIHENKOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.AwardedGymBadgeOrBuilder> 
         getHdinlbkpielOrBuilderList() {
       return hdinlbkpiel_;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
      */
     @java.lang.Override
     public int getHdinlbkpielCount() {
       return hdinlbkpiel_.size();
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.NDLAECIHENK getHdinlbkpiel(int index) {
+    public POGOProtos.Rpc.AwardedGymBadge getHdinlbkpiel(int index) {
       return hdinlbkpiel_.get(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.NDLAECIHENKOrBuilder getHdinlbkpielOrBuilder(
+    public POGOProtos.Rpc.AwardedGymBadgeOrBuilder getHdinlbkpielOrBuilder(
         int index) {
       return hdinlbkpiel_.get(index);
     }
@@ -783,22 +783,22 @@ private static final long serialVersionUID = 0L;
       }
       private int bitField0_;
 
-      private java.util.List<POGOProtos.Rpc.NDLAECIHENK> hdinlbkpiel_ =
+      private java.util.List<POGOProtos.Rpc.AwardedGymBadge> hdinlbkpiel_ =
         java.util.Collections.emptyList();
       private void ensureHdinlbkpielIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          hdinlbkpiel_ = new java.util.ArrayList<POGOProtos.Rpc.NDLAECIHENK>(hdinlbkpiel_);
+          hdinlbkpiel_ = new java.util.ArrayList<POGOProtos.Rpc.AwardedGymBadge>(hdinlbkpiel_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          POGOProtos.Rpc.NDLAECIHENK, POGOProtos.Rpc.NDLAECIHENK.Builder, POGOProtos.Rpc.NDLAECIHENKOrBuilder> hdinlbkpielBuilder_;
+          POGOProtos.Rpc.AwardedGymBadge, POGOProtos.Rpc.AwardedGymBadge.Builder, POGOProtos.Rpc.AwardedGymBadgeOrBuilder> hdinlbkpielBuilder_;
 
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
-      public java.util.List<POGOProtos.Rpc.NDLAECIHENK> getHdinlbkpielList() {
+      public java.util.List<POGOProtos.Rpc.AwardedGymBadge> getHdinlbkpielList() {
         if (hdinlbkpielBuilder_ == null) {
           return java.util.Collections.unmodifiableList(hdinlbkpiel_);
         } else {
@@ -806,7 +806,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
       public int getHdinlbkpielCount() {
         if (hdinlbkpielBuilder_ == null) {
@@ -816,9 +816,9 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
-      public POGOProtos.Rpc.NDLAECIHENK getHdinlbkpiel(int index) {
+      public POGOProtos.Rpc.AwardedGymBadge getHdinlbkpiel(int index) {
         if (hdinlbkpielBuilder_ == null) {
           return hdinlbkpiel_.get(index);
         } else {
@@ -826,10 +826,10 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
       public Builder setHdinlbkpiel(
-          int index, POGOProtos.Rpc.NDLAECIHENK value) {
+          int index, POGOProtos.Rpc.AwardedGymBadge value) {
         if (hdinlbkpielBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -843,10 +843,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
       public Builder setHdinlbkpiel(
-          int index, POGOProtos.Rpc.NDLAECIHENK.Builder builderForValue) {
+          int index, POGOProtos.Rpc.AwardedGymBadge.Builder builderForValue) {
         if (hdinlbkpielBuilder_ == null) {
           ensureHdinlbkpielIsMutable();
           hdinlbkpiel_.set(index, builderForValue.build());
@@ -857,9 +857,9 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
-      public Builder addHdinlbkpiel(POGOProtos.Rpc.NDLAECIHENK value) {
+      public Builder addHdinlbkpiel(POGOProtos.Rpc.AwardedGymBadge value) {
         if (hdinlbkpielBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -873,10 +873,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
       public Builder addHdinlbkpiel(
-          int index, POGOProtos.Rpc.NDLAECIHENK value) {
+          int index, POGOProtos.Rpc.AwardedGymBadge value) {
         if (hdinlbkpielBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -890,10 +890,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
       public Builder addHdinlbkpiel(
-          POGOProtos.Rpc.NDLAECIHENK.Builder builderForValue) {
+          POGOProtos.Rpc.AwardedGymBadge.Builder builderForValue) {
         if (hdinlbkpielBuilder_ == null) {
           ensureHdinlbkpielIsMutable();
           hdinlbkpiel_.add(builderForValue.build());
@@ -904,10 +904,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
       public Builder addHdinlbkpiel(
-          int index, POGOProtos.Rpc.NDLAECIHENK.Builder builderForValue) {
+          int index, POGOProtos.Rpc.AwardedGymBadge.Builder builderForValue) {
         if (hdinlbkpielBuilder_ == null) {
           ensureHdinlbkpielIsMutable();
           hdinlbkpiel_.add(index, builderForValue.build());
@@ -918,10 +918,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
       public Builder addAllHdinlbkpiel(
-          java.lang.Iterable<? extends POGOProtos.Rpc.NDLAECIHENK> values) {
+          java.lang.Iterable<? extends POGOProtos.Rpc.AwardedGymBadge> values) {
         if (hdinlbkpielBuilder_ == null) {
           ensureHdinlbkpielIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -933,7 +933,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
       public Builder clearHdinlbkpiel() {
         if (hdinlbkpielBuilder_ == null) {
@@ -946,7 +946,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
       public Builder removeHdinlbkpiel(int index) {
         if (hdinlbkpielBuilder_ == null) {
@@ -959,16 +959,16 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
-      public POGOProtos.Rpc.NDLAECIHENK.Builder getHdinlbkpielBuilder(
+      public POGOProtos.Rpc.AwardedGymBadge.Builder getHdinlbkpielBuilder(
           int index) {
         return getHdinlbkpielFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
-      public POGOProtos.Rpc.NDLAECIHENKOrBuilder getHdinlbkpielOrBuilder(
+      public POGOProtos.Rpc.AwardedGymBadgeOrBuilder getHdinlbkpielOrBuilder(
           int index) {
         if (hdinlbkpielBuilder_ == null) {
           return hdinlbkpiel_.get(index);  } else {
@@ -976,9 +976,9 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
-      public java.util.List<? extends POGOProtos.Rpc.NDLAECIHENKOrBuilder> 
+      public java.util.List<? extends POGOProtos.Rpc.AwardedGymBadgeOrBuilder> 
            getHdinlbkpielOrBuilderList() {
         if (hdinlbkpielBuilder_ != null) {
           return hdinlbkpielBuilder_.getMessageOrBuilderList();
@@ -987,33 +987,33 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
-      public POGOProtos.Rpc.NDLAECIHENK.Builder addHdinlbkpielBuilder() {
+      public POGOProtos.Rpc.AwardedGymBadge.Builder addHdinlbkpielBuilder() {
         return getHdinlbkpielFieldBuilder().addBuilder(
-            POGOProtos.Rpc.NDLAECIHENK.getDefaultInstance());
+            POGOProtos.Rpc.AwardedGymBadge.getDefaultInstance());
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
-      public POGOProtos.Rpc.NDLAECIHENK.Builder addHdinlbkpielBuilder(
+      public POGOProtos.Rpc.AwardedGymBadge.Builder addHdinlbkpielBuilder(
           int index) {
         return getHdinlbkpielFieldBuilder().addBuilder(
-            index, POGOProtos.Rpc.NDLAECIHENK.getDefaultInstance());
+            index, POGOProtos.Rpc.AwardedGymBadge.getDefaultInstance());
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
        */
-      public java.util.List<POGOProtos.Rpc.NDLAECIHENK.Builder> 
+      public java.util.List<POGOProtos.Rpc.AwardedGymBadge.Builder> 
            getHdinlbkpielBuilderList() {
         return getHdinlbkpielFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          POGOProtos.Rpc.NDLAECIHENK, POGOProtos.Rpc.NDLAECIHENK.Builder, POGOProtos.Rpc.NDLAECIHENKOrBuilder> 
+          POGOProtos.Rpc.AwardedGymBadge, POGOProtos.Rpc.AwardedGymBadge.Builder, POGOProtos.Rpc.AwardedGymBadgeOrBuilder> 
           getHdinlbkpielFieldBuilder() {
         if (hdinlbkpielBuilder_ == null) {
           hdinlbkpielBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              POGOProtos.Rpc.NDLAECIHENK, POGOProtos.Rpc.NDLAECIHENK.Builder, POGOProtos.Rpc.NDLAECIHENKOrBuilder>(
+              POGOProtos.Rpc.AwardedGymBadge, POGOProtos.Rpc.AwardedGymBadge.Builder, POGOProtos.Rpc.AwardedGymBadgeOrBuilder>(
                   hdinlbkpiel_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),

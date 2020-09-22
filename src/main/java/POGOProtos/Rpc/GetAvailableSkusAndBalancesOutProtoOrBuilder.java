@@ -43,27 +43,27 @@ public interface GetAvailableSkusAndBalancesOutProtoOrBuilder extends
       int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
-  java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> 
+  java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> 
       getBalanceList();
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
-  POGOProtos.Rpc.CurrencyQuantityProto getBalance(int index);
+  POGOProtos.Rpc.PlatformCurrencyQuantityProto getBalance(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   int getBalanceCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
       getBalanceOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
-  POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder getBalanceOrBuilder(
+  POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getBalanceOrBuilder(
       int index);
 
   /**

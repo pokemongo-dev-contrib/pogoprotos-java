@@ -8,15 +8,15 @@ public interface CombatProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.BALOCEBEKII eihblpligfa = 1;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
    * @return The enum numeric value on the wire for eihblpligfa.
    */
   int getEihblpligfaValue();
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.BALOCEBEKII eihblpligfa = 1;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
    * @return The eihblpligfa.
    */
-  POGOProtos.Rpc.CombatProto.BALOCEBEKII getEihblpligfa();
+  POGOProtos.Rpc.CombatProto.CombatState getEihblpligfa();
 
   /**
    * <code>string hdegllgmeih = 2;</code>
@@ -31,34 +31,34 @@ public interface CombatProtoOrBuilder extends
       getHdegllgmeihBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
    * @return Whether the ekinggfmndg field is set.
    */
   boolean hasEkinggfmndg();
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
    * @return The ekinggfmndg.
    */
-  POGOProtos.Rpc.CombatProto.CEAKNELMNKK getEkinggfmndg();
+  POGOProtos.Rpc.CombatProto.CombatPlayerProto getEkinggfmndg();
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
    */
-  POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder getEkinggfmndgOrBuilder();
+  POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getEkinggfmndgOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
    * @return Whether the hlpfmbellom field is set.
    */
   boolean hasHlpfmbellom();
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
    * @return The hlpfmbellom.
    */
-  POGOProtos.Rpc.CombatProto.CEAKNELMNKK getHlpfmbellom();
+  POGOProtos.Rpc.CombatProto.CombatPlayerProto getHlpfmbellom();
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
    */
-  POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder getHlpfmbellomOrBuilder();
+  POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getHlpfmbellomOrBuilder();
 
   /**
    * <code>int64 ibbcgicfalh = 5;</code>

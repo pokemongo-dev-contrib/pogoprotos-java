@@ -19,17 +19,17 @@ public interface UseItemStardustBoostOutProtoOrBuilder extends
   POGOProtos.Rpc.UseItemStardustBoostOutProto.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
-   * @return Whether the appliedItems field is set.
+   * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
+   * @return Whether the imahidankpd field is set.
    */
-  boolean hasAppliedItems();
+  boolean hasImahidankpd();
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
-   * @return The appliedItems.
+   * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
+   * @return The imahidankpd.
    */
-  POGOProtos.Rpc.AppliedItemsProto getAppliedItems();
+  POGOProtos.Rpc.AppliedItemsProto getImahidankpd();
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
+   * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
    */
-  POGOProtos.Rpc.AppliedItemsProtoOrBuilder getAppliedItemsOrBuilder();
+  POGOProtos.Rpc.AppliedItemsProtoOrBuilder getImahidankpdOrBuilder();
 }

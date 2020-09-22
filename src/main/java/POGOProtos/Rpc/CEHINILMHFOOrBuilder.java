@@ -8,17 +8,17 @@ public interface CEHINILMHFOOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
    * @return Whether the bmlimeljeek field is set.
    */
   boolean hasBmlimeljeek();
   /**
-   * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
    * @return The bmlimeljeek.
    */
-  POGOProtos.Rpc.DLAAGICPEDP getBmlimeljeek();
+  POGOProtos.Rpc.SocialPlayerSettingsProto getBmlimeljeek();
   /**
-   * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
    */
-  POGOProtos.Rpc.DLAAGICPEDPOrBuilder getBmlimeljeekOrBuilder();
+  POGOProtos.Rpc.SocialPlayerSettingsProtoOrBuilder getBmlimeljeekOrBuilder();
 }

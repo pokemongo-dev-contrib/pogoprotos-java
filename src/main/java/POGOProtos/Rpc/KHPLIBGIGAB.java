@@ -61,11 +61,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.NLOCPHGFFNM.Builder subBuilder = null;
+            POGOProtos.Rpc.BuddyGiftProto.Builder subBuilder = null;
             if (opkdegdijah_ != null) {
               subBuilder = opkdegdijah_.toBuilder();
             }
-            opkdegdijah_ = input.readMessage(POGOProtos.Rpc.NLOCPHGFFNM.parser(), extensionRegistry);
+            opkdegdijah_ = input.readMessage(POGOProtos.Rpc.BuddyGiftProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(opkdegdijah_);
               opkdegdijah_ = subBuilder.buildPartial();
@@ -301,9 +301,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int OPKDEGDIJAH_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah_;
+  private POGOProtos.Rpc.BuddyGiftProto opkdegdijah_;
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
    * @return Whether the opkdegdijah field is set.
    */
   @java.lang.Override
@@ -311,18 +311,18 @@ private static final long serialVersionUID = 0L;
     return opkdegdijah_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
    * @return The opkdegdijah.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.NLOCPHGFFNM getOpkdegdijah() {
-    return opkdegdijah_ == null ? POGOProtos.Rpc.NLOCPHGFFNM.getDefaultInstance() : opkdegdijah_;
+  public POGOProtos.Rpc.BuddyGiftProto getOpkdegdijah() {
+    return opkdegdijah_ == null ? POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : opkdegdijah_;
   }
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.NLOCPHGFFNMOrBuilder getOpkdegdijahOrBuilder() {
+  public POGOProtos.Rpc.BuddyGiftProtoOrBuilder getOpkdegdijahOrBuilder() {
     return getOpkdegdijah();
   }
 
@@ -806,31 +806,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah_;
+    private POGOProtos.Rpc.BuddyGiftProto opkdegdijah_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NLOCPHGFFNM, POGOProtos.Rpc.NLOCPHGFFNM.Builder, POGOProtos.Rpc.NLOCPHGFFNMOrBuilder> opkdegdijahBuilder_;
+        POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder> opkdegdijahBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
      * @return Whether the opkdegdijah field is set.
      */
     public boolean hasOpkdegdijah() {
       return opkdegdijahBuilder_ != null || opkdegdijah_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
      * @return The opkdegdijah.
      */
-    public POGOProtos.Rpc.NLOCPHGFFNM getOpkdegdijah() {
+    public POGOProtos.Rpc.BuddyGiftProto getOpkdegdijah() {
       if (opkdegdijahBuilder_ == null) {
-        return opkdegdijah_ == null ? POGOProtos.Rpc.NLOCPHGFFNM.getDefaultInstance() : opkdegdijah_;
+        return opkdegdijah_ == null ? POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : opkdegdijah_;
       } else {
         return opkdegdijahBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
      */
-    public Builder setOpkdegdijah(POGOProtos.Rpc.NLOCPHGFFNM value) {
+    public Builder setOpkdegdijah(POGOProtos.Rpc.BuddyGiftProto value) {
       if (opkdegdijahBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -844,10 +844,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
      */
     public Builder setOpkdegdijah(
-        POGOProtos.Rpc.NLOCPHGFFNM.Builder builderForValue) {
+        POGOProtos.Rpc.BuddyGiftProto.Builder builderForValue) {
       if (opkdegdijahBuilder_ == null) {
         opkdegdijah_ = builderForValue.build();
         onChanged();
@@ -858,13 +858,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
      */
-    public Builder mergeOpkdegdijah(POGOProtos.Rpc.NLOCPHGFFNM value) {
+    public Builder mergeOpkdegdijah(POGOProtos.Rpc.BuddyGiftProto value) {
       if (opkdegdijahBuilder_ == null) {
         if (opkdegdijah_ != null) {
           opkdegdijah_ =
-            POGOProtos.Rpc.NLOCPHGFFNM.newBuilder(opkdegdijah_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.BuddyGiftProto.newBuilder(opkdegdijah_).mergeFrom(value).buildPartial();
         } else {
           opkdegdijah_ = value;
         }
@@ -876,7 +876,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
      */
     public Builder clearOpkdegdijah() {
       if (opkdegdijahBuilder_ == null) {
@@ -890,33 +890,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
      */
-    public POGOProtos.Rpc.NLOCPHGFFNM.Builder getOpkdegdijahBuilder() {
+    public POGOProtos.Rpc.BuddyGiftProto.Builder getOpkdegdijahBuilder() {
       
       onChanged();
       return getOpkdegdijahFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
      */
-    public POGOProtos.Rpc.NLOCPHGFFNMOrBuilder getOpkdegdijahOrBuilder() {
+    public POGOProtos.Rpc.BuddyGiftProtoOrBuilder getOpkdegdijahOrBuilder() {
       if (opkdegdijahBuilder_ != null) {
         return opkdegdijahBuilder_.getMessageOrBuilder();
       } else {
         return opkdegdijah_ == null ?
-            POGOProtos.Rpc.NLOCPHGFFNM.getDefaultInstance() : opkdegdijah_;
+            POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : opkdegdijah_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM opkdegdijah = 2;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto opkdegdijah = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NLOCPHGFFNM, POGOProtos.Rpc.NLOCPHGFFNM.Builder, POGOProtos.Rpc.NLOCPHGFFNMOrBuilder> 
+        POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder> 
         getOpkdegdijahFieldBuilder() {
       if (opkdegdijahBuilder_ == null) {
         opkdegdijahBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.NLOCPHGFFNM, POGOProtos.Rpc.NLOCPHGFFNM.Builder, POGOProtos.Rpc.NLOCPHGFFNMOrBuilder>(
+            POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder>(
                 getOpkdegdijah(),
                 getParentForChildren(),
                 isClean());

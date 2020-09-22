@@ -8,19 +8,19 @@ public interface IGIAHBOHKEIOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
    * @return Whether the fdanacihmef field is set.
    */
   boolean hasFdanacihmef();
   /**
-   * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
    * @return The fdanacihmef.
    */
-  POGOProtos.Rpc.DKCCAGCEEHM getFdanacihmef();
+  POGOProtos.Rpc.LobbyProto getFdanacihmef();
   /**
-   * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
    */
-  POGOProtos.Rpc.DKCCAGCEEHMOrBuilder getFdanacihmefOrBuilder();
+  POGOProtos.Rpc.LobbyProtoOrBuilder getFdanacihmefOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.BattleProto cpiahbokfnf = 2;</code>
@@ -55,19 +55,19 @@ public interface IGIAHBOHKEIOrBuilder extends
   POGOProtos.Rpc.IGIAHBOHKEI.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+   * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
    * @return Whether the hmcoddoifhd field is set.
    */
   boolean hasHmcoddoifhd();
   /**
-   * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+   * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
    * @return The hmcoddoifhd.
    */
-  POGOProtos.Rpc.NBIFPOJPDAD getHmcoddoifhd();
+  POGOProtos.Rpc.RaidInfoProto getHmcoddoifhd();
   /**
-   * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+   * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
    */
-  POGOProtos.Rpc.NBIFPOJPDADOrBuilder getHmcoddoifhdOrBuilder();
+  POGOProtos.Rpc.RaidInfoProtoOrBuilder getHmcoddoifhdOrBuilder();
 
   /**
    * <code>bool bddlljbfpaj = 6;</code>

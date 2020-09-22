@@ -26,51 +26,51 @@ public interface AvailableSkuProtoOrBuilder extends
   boolean getIsThirdPartyVendorItem();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto price = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto price = 3;</code>
    */
-  java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> 
+  java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> 
       getPriceList();
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto price = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto price = 3;</code>
    */
-  POGOProtos.Rpc.CurrencyQuantityProto getPrice(int index);
+  POGOProtos.Rpc.PlatformCurrencyQuantityProto getPrice(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto price = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto price = 3;</code>
    */
   int getPriceCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto price = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto price = 3;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
       getPriceOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto price = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto price = 3;</code>
    */
-  POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder getPriceOrBuilder(
+  POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getPriceOrBuilder(
       int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_granted = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_granted = 4;</code>
    */
-  java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> 
+  java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> 
       getCurrencyGrantedList();
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_granted = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_granted = 4;</code>
    */
-  POGOProtos.Rpc.CurrencyQuantityProto getCurrencyGranted(int index);
+  POGOProtos.Rpc.PlatformCurrencyQuantityProto getCurrencyGranted(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_granted = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_granted = 4;</code>
    */
   int getCurrencyGrantedCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_granted = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_granted = 4;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
       getCurrencyGrantedOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto currency_granted = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_granted = 4;</code>
    */
-  POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder getCurrencyGrantedOrBuilder(
+  POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getCurrencyGrantedOrBuilder(
       int index);
 
   /**

@@ -234,17 +234,17 @@ public interface FortDetailsOutProtoOrBuilder extends
       getLgkeacjeghpBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+   * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
    * @return Whether the cnpdpimfkbe field is set.
    */
   boolean hasCnpdpimfkbe();
   /**
-   * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+   * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
    * @return The cnpdpimfkbe.
    */
-  POGOProtos.Rpc.HFBDDPFODDM getCnpdpimfkbe();
+  POGOProtos.Rpc.SponsoredDetailsProto getCnpdpimfkbe();
   /**
-   * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+   * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
    */
-  POGOProtos.Rpc.HFBDDPFODDMOrBuilder getCnpdpimfkbeOrBuilder();
+  POGOProtos.Rpc.SponsoredDetailsProtoOrBuilder getCnpdpimfkbeOrBuilder();
 }

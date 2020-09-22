@@ -8,11 +8,11 @@ public interface LimitedPurchaseSkuRecordProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
    */
   int getHlepgnjdgfpCount();
   /**
-   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
    */
   boolean containsHlepgnjdgfp(
       java.lang.String key);
@@ -20,24 +20,24 @@ public interface LimitedPurchaseSkuRecordProtoOrBuilder extends
    * Use {@link #getHlepgnjdgfpMap()} instead.
    */
   @java.lang.Deprecated
-  java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG>
+  java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto>
   getHlepgnjdgfp();
   /**
-   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
    */
-  java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG>
+  java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto>
   getHlepgnjdgfpMap();
   /**
-   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
    */
 
-  POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG getHlepgnjdgfpOrDefault(
+  POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto getHlepgnjdgfpOrDefault(
       java.lang.String key,
-      POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG defaultValue);
+      POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto defaultValue);
   /**
-   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
    */
 
-  POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG getHlepgnjdgfpOrThrow(
+  POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto getHlepgnjdgfpOrThrow(
       java.lang.String key);
 }

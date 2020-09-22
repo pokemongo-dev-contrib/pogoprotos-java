@@ -8,27 +8,27 @@ public interface BFLELDCNNMFOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 1;</code>
    */
-  java.util.List<POGOProtos.Rpc.MGGHNNFEHPA> 
+  java.util.List<POGOProtos.Rpc.GiftBoxDetailsProto> 
       getAffofpddmmpList();
   /**
-   * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 1;</code>
    */
-  POGOProtos.Rpc.MGGHNNFEHPA getAffofpddmmp(int index);
+  POGOProtos.Rpc.GiftBoxDetailsProto getAffofpddmmp(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 1;</code>
    */
   int getAffofpddmmpCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 1;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.MGGHNNFEHPAOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.GiftBoxDetailsProtoOrBuilder> 
       getAffofpddmmpOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 1;</code>
    */
-  POGOProtos.Rpc.MGGHNNFEHPAOrBuilder getAffofpddmmpOrBuilder(
+  POGOProtos.Rpc.GiftBoxDetailsProtoOrBuilder getAffofpddmmpOrBuilder(
       int index);
 
   /**

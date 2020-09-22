@@ -8,17 +8,17 @@ public interface KAHFAFPGIJLOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
    * @return Whether the aiifjelhmlm field is set.
    */
   boolean hasAiifjelhmlm();
   /**
-   * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
    * @return The aiifjelhmlm.
    */
-  POGOProtos.Rpc.OIAFIOKKDNL getAiifjelhmlm();
+  POGOProtos.Rpc.ContactSettingsProto getAiifjelhmlm();
   /**
-   * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
    */
-  POGOProtos.Rpc.OIAFIOKKDNLOrBuilder getAiifjelhmlmOrBuilder();
+  POGOProtos.Rpc.ContactSettingsProtoOrBuilder getAiifjelhmlmOrBuilder();
 }

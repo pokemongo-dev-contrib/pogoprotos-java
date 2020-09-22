@@ -19,17 +19,17 @@ public interface KAFPKBHJECKOrBuilder extends
   POGOProtos.Rpc.KAFPKBHJECK.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
    * @return Whether the jikkdljggho field is set.
    */
   boolean hasJikkdljggho();
   /**
-   * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
    * @return The jikkdljggho.
    */
-  POGOProtos.Rpc.OAPMJMAEIOH getJikkdljggho();
+  POGOProtos.Rpc.TradingProto getJikkdljggho();
   /**
-   * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
    */
-  POGOProtos.Rpc.OAPMJMAEIOHOrBuilder getJikkdljgghoOrBuilder();
+  POGOProtos.Rpc.TradingProtoOrBuilder getJikkdljgghoOrBuilder();
 }

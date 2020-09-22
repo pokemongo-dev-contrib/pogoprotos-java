@@ -833,19 +833,19 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
   POGOProtos.Rpc.ScreenResolutionTelemetryOrBuilder getScreenResolutionTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+   * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
    * @return Whether the arBuddyMultiplayerSessionTelemetry field is set.
    */
   boolean hasArBuddyMultiplayerSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+   * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
    * @return The arBuddyMultiplayerSessionTelemetry.
    */
-  POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry getArBuddyMultiplayerSessionTelemetry();
+  POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry getArBuddyMultiplayerSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+   * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
    */
-  POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetryOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder();
+  POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
@@ -953,19 +953,19 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
   POGOProtos.Rpc.RemoteRaidTelemetryOrBuilder getRemoteRaidTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
    * @return Whether the deviceOsTelemetry field is set.
    */
   boolean hasDeviceOsTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
    * @return The deviceOsTelemetry.
    */
-  POGOProtos.Rpc.DeviceOsTelemetry getDeviceOsTelemetry();
+  POGOProtos.Rpc.DeviceOSTelemetry getDeviceOsTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
    */
-  POGOProtos.Rpc.DeviceOsTelemetryOrBuilder getDeviceOsTelemetryOrBuilder();
+  POGOProtos.Rpc.DeviceOSTelemetryOrBuilder getDeviceOsTelemetryOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.NianticProfileTelemetry niantic_profile_telemetry = 65;</code>

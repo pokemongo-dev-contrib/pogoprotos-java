@@ -88,19 +88,19 @@ public interface ClientPlayerProtoOrBuilder extends
   int getAdedlghfhie();
 
   /**
-   * <code>.POGOProtos.Rpc.DENFJCEPLEC dfoecgbmbhn = 11;</code>
+   * <code>.POGOProtos.Rpc.DailyBonusProto dfoecgbmbhn = 11;</code>
    * @return Whether the dfoecgbmbhn field is set.
    */
   boolean hasDfoecgbmbhn();
   /**
-   * <code>.POGOProtos.Rpc.DENFJCEPLEC dfoecgbmbhn = 11;</code>
+   * <code>.POGOProtos.Rpc.DailyBonusProto dfoecgbmbhn = 11;</code>
    * @return The dfoecgbmbhn.
    */
-  POGOProtos.Rpc.DENFJCEPLEC getDfoecgbmbhn();
+  POGOProtos.Rpc.DailyBonusProto getDfoecgbmbhn();
   /**
-   * <code>.POGOProtos.Rpc.DENFJCEPLEC dfoecgbmbhn = 11;</code>
+   * <code>.POGOProtos.Rpc.DailyBonusProto dfoecgbmbhn = 11;</code>
    */
-  POGOProtos.Rpc.DENFJCEPLECOrBuilder getDfoecgbmbhnOrBuilder();
+  POGOProtos.Rpc.DailyBonusProtoOrBuilder getDfoecgbmbhnOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.EquippedBadgeProto ibdgmlchhkp = 12;</code>
@@ -118,42 +118,42 @@ public interface ClientPlayerProtoOrBuilder extends
   POGOProtos.Rpc.EquippedBadgeProtoOrBuilder getIbdgmlchhkpOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 13;</code>
+   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 13;</code>
    * @return Whether the aiifjelhmlm field is set.
    */
   boolean hasAiifjelhmlm();
   /**
-   * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 13;</code>
+   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 13;</code>
    * @return The aiifjelhmlm.
    */
-  POGOProtos.Rpc.OIAFIOKKDNL getAiifjelhmlm();
+  POGOProtos.Rpc.ContactSettingsProto getAiifjelhmlm();
   /**
-   * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 13;</code>
+   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 13;</code>
    */
-  POGOProtos.Rpc.OIAFIOKKDNLOrBuilder getAiifjelhmlmOrBuilder();
+  POGOProtos.Rpc.ContactSettingsProtoOrBuilder getAiifjelhmlmOrBuilder();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.MBDABLKLKDB eeiaamoemkh = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto eeiaamoemkh = 14;</code>
    */
-  java.util.List<POGOProtos.Rpc.MBDABLKLKDB> 
+  java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> 
       getEeiaamoemkhList();
   /**
-   * <code>repeated .POGOProtos.Rpc.MBDABLKLKDB eeiaamoemkh = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto eeiaamoemkh = 14;</code>
    */
-  POGOProtos.Rpc.MBDABLKLKDB getEeiaamoemkh(int index);
+  POGOProtos.Rpc.PlatformCurrencyQuantityProto getEeiaamoemkh(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.MBDABLKLKDB eeiaamoemkh = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto eeiaamoemkh = 14;</code>
    */
   int getEeiaamoemkhCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.MBDABLKLKDB eeiaamoemkh = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto eeiaamoemkh = 14;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.MBDABLKLKDBOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
       getEeiaamoemkhOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.MBDABLKLKDB eeiaamoemkh = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto eeiaamoemkh = 14;</code>
    */
-  POGOProtos.Rpc.MBDABLKLKDBOrBuilder getEeiaamoemkhOrBuilder(
+  POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getEeiaamoemkhOrBuilder(
       int index);
 
   /**
@@ -163,19 +163,19 @@ public interface ClientPlayerProtoOrBuilder extends
   int getIepkpebbcpl();
 
   /**
-   * <code>.POGOProtos.Rpc.BHCGCKFKKGM gchmnmgcogk = 16;</code>
+   * <code>.POGOProtos.Rpc.BuddyPokemonProto gchmnmgcogk = 16;</code>
    * @return Whether the gchmnmgcogk field is set.
    */
   boolean hasGchmnmgcogk();
   /**
-   * <code>.POGOProtos.Rpc.BHCGCKFKKGM gchmnmgcogk = 16;</code>
+   * <code>.POGOProtos.Rpc.BuddyPokemonProto gchmnmgcogk = 16;</code>
    * @return The gchmnmgcogk.
    */
-  POGOProtos.Rpc.BHCGCKFKKGM getGchmnmgcogk();
+  POGOProtos.Rpc.BuddyPokemonProto getGchmnmgcogk();
   /**
-   * <code>.POGOProtos.Rpc.BHCGCKFKKGM gchmnmgcogk = 16;</code>
+   * <code>.POGOProtos.Rpc.BuddyPokemonProto gchmnmgcogk = 16;</code>
    */
-  POGOProtos.Rpc.BHCGCKFKKGMOrBuilder getGchmnmgcogkOrBuilder();
+  POGOProtos.Rpc.BuddyPokemonProtoOrBuilder getGchmnmgcogkOrBuilder();
 
   /**
    * <code>int64 ojmehflcljk = 17;</code>
@@ -205,34 +205,34 @@ public interface ClientPlayerProtoOrBuilder extends
   boolean getLablpghilin();
 
   /**
-   * <code>.POGOProtos.Rpc.DLAAGICPEDP gpmdheopjhf = 20;</code>
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto gpmdheopjhf = 20;</code>
    * @return Whether the gpmdheopjhf field is set.
    */
   boolean hasGpmdheopjhf();
   /**
-   * <code>.POGOProtos.Rpc.DLAAGICPEDP gpmdheopjhf = 20;</code>
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto gpmdheopjhf = 20;</code>
    * @return The gpmdheopjhf.
    */
-  POGOProtos.Rpc.DLAAGICPEDP getGpmdheopjhf();
+  POGOProtos.Rpc.SocialPlayerSettingsProto getGpmdheopjhf();
   /**
-   * <code>.POGOProtos.Rpc.DLAAGICPEDP gpmdheopjhf = 20;</code>
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto gpmdheopjhf = 20;</code>
    */
-  POGOProtos.Rpc.DLAAGICPEDPOrBuilder getGpmdheopjhfOrBuilder();
+  POGOProtos.Rpc.SocialPlayerSettingsProtoOrBuilder getGpmdheopjhfOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.KMGAPBOCBGK jnoillflbkb = 21;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto jnoillflbkb = 21;</code>
    * @return Whether the jnoillflbkb field is set.
    */
   boolean hasJnoillflbkb();
   /**
-   * <code>.POGOProtos.Rpc.KMGAPBOCBGK jnoillflbkb = 21;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto jnoillflbkb = 21;</code>
    * @return The jnoillflbkb.
    */
-  POGOProtos.Rpc.KMGAPBOCBGK getJnoillflbkb();
+  POGOProtos.Rpc.CombatPlayerPreferencesProto getJnoillflbkb();
   /**
-   * <code>.POGOProtos.Rpc.KMGAPBOCBGK jnoillflbkb = 21;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto jnoillflbkb = 21;</code>
    */
-  POGOProtos.Rpc.KMGAPBOCBGKOrBuilder getJnoillflbkbOrBuilder();
+  POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder getJnoillflbkbOrBuilder();
 
   /**
    * <code>string fomhnhnkgnn = 22;</code>
@@ -247,19 +247,19 @@ public interface ClientPlayerProtoOrBuilder extends
       getFomhnhnkgnnBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.MMFGBGAMBNO faljldnilhn = 23;</code>
+   * <code>.POGOProtos.Rpc.TeamChangeInfoProto faljldnilhn = 23;</code>
    * @return Whether the faljldnilhn field is set.
    */
   boolean hasFaljldnilhn();
   /**
-   * <code>.POGOProtos.Rpc.MMFGBGAMBNO faljldnilhn = 23;</code>
+   * <code>.POGOProtos.Rpc.TeamChangeInfoProto faljldnilhn = 23;</code>
    * @return The faljldnilhn.
    */
-  POGOProtos.Rpc.MMFGBGAMBNO getFaljldnilhn();
+  POGOProtos.Rpc.TeamChangeInfoProto getFaljldnilhn();
   /**
-   * <code>.POGOProtos.Rpc.MMFGBGAMBNO faljldnilhn = 23;</code>
+   * <code>.POGOProtos.Rpc.TeamChangeInfoProto faljldnilhn = 23;</code>
    */
-  POGOProtos.Rpc.MMFGBGAMBNOOrBuilder getFaljldnilhnOrBuilder();
+  POGOProtos.Rpc.TeamChangeInfoProtoOrBuilder getFaljldnilhnOrBuilder();
 
   /**
    * <code>repeated .POGOProtos.Rpc.HoloPokemonId mecekmdmljk = 24;</code>
@@ -339,17 +339,17 @@ public interface ClientPlayerProtoOrBuilder extends
       getAdocjpgdflgBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.LMJMJJOLOPJ eppomfmlneh = 29;</code>
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto eppomfmlneh = 29;</code>
    * @return Whether the eppomfmlneh field is set.
    */
   boolean hasEppomfmlneh();
   /**
-   * <code>.POGOProtos.Rpc.LMJMJJOLOPJ eppomfmlneh = 29;</code>
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto eppomfmlneh = 29;</code>
    * @return The eppomfmlneh.
    */
-  POGOProtos.Rpc.LMJMJJOLOPJ getEppomfmlneh();
+  POGOProtos.Rpc.PlayerPreferencesProto getEppomfmlneh();
   /**
-   * <code>.POGOProtos.Rpc.LMJMJJOLOPJ eppomfmlneh = 29;</code>
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto eppomfmlneh = 29;</code>
    */
-  POGOProtos.Rpc.LMJMJJOLOPJOrBuilder getEppomfmlnehOrBuilder();
+  POGOProtos.Rpc.PlayerPreferencesProtoOrBuilder getEppomfmlnehOrBuilder();
 }

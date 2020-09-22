@@ -56,11 +56,11 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              nlcdjdbnigj_ = new java.util.ArrayList<POGOProtos.Rpc.OIPJPMELKBL>();
+              nlcdjdbnigj_ = new java.util.ArrayList<POGOProtos.Rpc.InventoryUpgradeProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             nlcdjdbnigj_.add(
-                input.readMessage(POGOProtos.Rpc.OIPJPMELKBL.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.InventoryUpgradeProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -99,41 +99,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int NLCDJDBNIGJ_FIELD_NUMBER = 1;
-  private java.util.List<POGOProtos.Rpc.OIPJPMELKBL> nlcdjdbnigj_;
+  private java.util.List<POGOProtos.Rpc.InventoryUpgradeProto> nlcdjdbnigj_;
   /**
-   * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.OIPJPMELKBL> getNlcdjdbnigjList() {
+  public java.util.List<POGOProtos.Rpc.InventoryUpgradeProto> getNlcdjdbnigjList() {
     return nlcdjdbnigj_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.OIPJPMELKBLOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.InventoryUpgradeProtoOrBuilder> 
       getNlcdjdbnigjOrBuilderList() {
     return nlcdjdbnigj_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
    */
   @java.lang.Override
   public int getNlcdjdbnigjCount() {
     return nlcdjdbnigj_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.OIPJPMELKBL getNlcdjdbnigj(int index) {
+  public POGOProtos.Rpc.InventoryUpgradeProto getNlcdjdbnigj(int index) {
     return nlcdjdbnigj_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.OIPJPMELKBLOrBuilder getNlcdjdbnigjOrBuilder(
+  public POGOProtos.Rpc.InventoryUpgradeProtoOrBuilder getNlcdjdbnigjOrBuilder(
       int index) {
     return nlcdjdbnigj_.get(index);
   }
@@ -484,22 +484,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<POGOProtos.Rpc.OIPJPMELKBL> nlcdjdbnigj_ =
+    private java.util.List<POGOProtos.Rpc.InventoryUpgradeProto> nlcdjdbnigj_ =
       java.util.Collections.emptyList();
     private void ensureNlcdjdbnigjIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        nlcdjdbnigj_ = new java.util.ArrayList<POGOProtos.Rpc.OIPJPMELKBL>(nlcdjdbnigj_);
+        nlcdjdbnigj_ = new java.util.ArrayList<POGOProtos.Rpc.InventoryUpgradeProto>(nlcdjdbnigj_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.OIPJPMELKBL, POGOProtos.Rpc.OIPJPMELKBL.Builder, POGOProtos.Rpc.OIPJPMELKBLOrBuilder> nlcdjdbnigjBuilder_;
+        POGOProtos.Rpc.InventoryUpgradeProto, POGOProtos.Rpc.InventoryUpgradeProto.Builder, POGOProtos.Rpc.InventoryUpgradeProtoOrBuilder> nlcdjdbnigjBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
-    public java.util.List<POGOProtos.Rpc.OIPJPMELKBL> getNlcdjdbnigjList() {
+    public java.util.List<POGOProtos.Rpc.InventoryUpgradeProto> getNlcdjdbnigjList() {
       if (nlcdjdbnigjBuilder_ == null) {
         return java.util.Collections.unmodifiableList(nlcdjdbnigj_);
       } else {
@@ -507,7 +507,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
     public int getNlcdjdbnigjCount() {
       if (nlcdjdbnigjBuilder_ == null) {
@@ -517,9 +517,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
-    public POGOProtos.Rpc.OIPJPMELKBL getNlcdjdbnigj(int index) {
+    public POGOProtos.Rpc.InventoryUpgradeProto getNlcdjdbnigj(int index) {
       if (nlcdjdbnigjBuilder_ == null) {
         return nlcdjdbnigj_.get(index);
       } else {
@@ -527,10 +527,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
     public Builder setNlcdjdbnigj(
-        int index, POGOProtos.Rpc.OIPJPMELKBL value) {
+        int index, POGOProtos.Rpc.InventoryUpgradeProto value) {
       if (nlcdjdbnigjBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -544,10 +544,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
     public Builder setNlcdjdbnigj(
-        int index, POGOProtos.Rpc.OIPJPMELKBL.Builder builderForValue) {
+        int index, POGOProtos.Rpc.InventoryUpgradeProto.Builder builderForValue) {
       if (nlcdjdbnigjBuilder_ == null) {
         ensureNlcdjdbnigjIsMutable();
         nlcdjdbnigj_.set(index, builderForValue.build());
@@ -558,9 +558,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
-    public Builder addNlcdjdbnigj(POGOProtos.Rpc.OIPJPMELKBL value) {
+    public Builder addNlcdjdbnigj(POGOProtos.Rpc.InventoryUpgradeProto value) {
       if (nlcdjdbnigjBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -574,10 +574,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
     public Builder addNlcdjdbnigj(
-        int index, POGOProtos.Rpc.OIPJPMELKBL value) {
+        int index, POGOProtos.Rpc.InventoryUpgradeProto value) {
       if (nlcdjdbnigjBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -591,10 +591,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
     public Builder addNlcdjdbnigj(
-        POGOProtos.Rpc.OIPJPMELKBL.Builder builderForValue) {
+        POGOProtos.Rpc.InventoryUpgradeProto.Builder builderForValue) {
       if (nlcdjdbnigjBuilder_ == null) {
         ensureNlcdjdbnigjIsMutable();
         nlcdjdbnigj_.add(builderForValue.build());
@@ -605,10 +605,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
     public Builder addNlcdjdbnigj(
-        int index, POGOProtos.Rpc.OIPJPMELKBL.Builder builderForValue) {
+        int index, POGOProtos.Rpc.InventoryUpgradeProto.Builder builderForValue) {
       if (nlcdjdbnigjBuilder_ == null) {
         ensureNlcdjdbnigjIsMutable();
         nlcdjdbnigj_.add(index, builderForValue.build());
@@ -619,10 +619,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
     public Builder addAllNlcdjdbnigj(
-        java.lang.Iterable<? extends POGOProtos.Rpc.OIPJPMELKBL> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.InventoryUpgradeProto> values) {
       if (nlcdjdbnigjBuilder_ == null) {
         ensureNlcdjdbnigjIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -634,7 +634,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
     public Builder clearNlcdjdbnigj() {
       if (nlcdjdbnigjBuilder_ == null) {
@@ -647,7 +647,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
     public Builder removeNlcdjdbnigj(int index) {
       if (nlcdjdbnigjBuilder_ == null) {
@@ -660,16 +660,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
-    public POGOProtos.Rpc.OIPJPMELKBL.Builder getNlcdjdbnigjBuilder(
+    public POGOProtos.Rpc.InventoryUpgradeProto.Builder getNlcdjdbnigjBuilder(
         int index) {
       return getNlcdjdbnigjFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
-    public POGOProtos.Rpc.OIPJPMELKBLOrBuilder getNlcdjdbnigjOrBuilder(
+    public POGOProtos.Rpc.InventoryUpgradeProtoOrBuilder getNlcdjdbnigjOrBuilder(
         int index) {
       if (nlcdjdbnigjBuilder_ == null) {
         return nlcdjdbnigj_.get(index);  } else {
@@ -677,9 +677,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.OIPJPMELKBLOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.InventoryUpgradeProtoOrBuilder> 
          getNlcdjdbnigjOrBuilderList() {
       if (nlcdjdbnigjBuilder_ != null) {
         return nlcdjdbnigjBuilder_.getMessageOrBuilderList();
@@ -688,33 +688,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
-    public POGOProtos.Rpc.OIPJPMELKBL.Builder addNlcdjdbnigjBuilder() {
+    public POGOProtos.Rpc.InventoryUpgradeProto.Builder addNlcdjdbnigjBuilder() {
       return getNlcdjdbnigjFieldBuilder().addBuilder(
-          POGOProtos.Rpc.OIPJPMELKBL.getDefaultInstance());
+          POGOProtos.Rpc.InventoryUpgradeProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
-    public POGOProtos.Rpc.OIPJPMELKBL.Builder addNlcdjdbnigjBuilder(
+    public POGOProtos.Rpc.InventoryUpgradeProto.Builder addNlcdjdbnigjBuilder(
         int index) {
       return getNlcdjdbnigjFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.OIPJPMELKBL.getDefaultInstance());
+          index, POGOProtos.Rpc.InventoryUpgradeProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
      */
-    public java.util.List<POGOProtos.Rpc.OIPJPMELKBL.Builder> 
+    public java.util.List<POGOProtos.Rpc.InventoryUpgradeProto.Builder> 
          getNlcdjdbnigjBuilderList() {
       return getNlcdjdbnigjFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.OIPJPMELKBL, POGOProtos.Rpc.OIPJPMELKBL.Builder, POGOProtos.Rpc.OIPJPMELKBLOrBuilder> 
+        POGOProtos.Rpc.InventoryUpgradeProto, POGOProtos.Rpc.InventoryUpgradeProto.Builder, POGOProtos.Rpc.InventoryUpgradeProtoOrBuilder> 
         getNlcdjdbnigjFieldBuilder() {
       if (nlcdjdbnigjBuilder_ == null) {
         nlcdjdbnigjBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.OIPJPMELKBL, POGOProtos.Rpc.OIPJPMELKBL.Builder, POGOProtos.Rpc.OIPJPMELKBLOrBuilder>(
+            POGOProtos.Rpc.InventoryUpgradeProto, POGOProtos.Rpc.InventoryUpgradeProto.Builder, POGOProtos.Rpc.InventoryUpgradeProtoOrBuilder>(
                 nlcdjdbnigj_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

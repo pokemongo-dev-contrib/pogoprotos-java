@@ -19,34 +19,34 @@ public interface NIEDDLOEAANOrBuilder extends
   POGOProtos.Rpc.NIEDDLOEAAN.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
    * @return Whether the oknapplbpbk field is set.
    */
   boolean hasOknapplbpbk();
   /**
-   * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
    * @return The oknapplbpbk.
    */
-  POGOProtos.Rpc.AGGMCJMFNGN getOknapplbpbk();
+  POGOProtos.Rpc.GymStatusAndDefendersProto getOknapplbpbk();
   /**
-   * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
    */
-  POGOProtos.Rpc.AGGMCJMFNGNOrBuilder getOknapplbpbkOrBuilder();
+  POGOProtos.Rpc.GymStatusAndDefendersProtoOrBuilder getOknapplbpbkOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
    * @return Whether the eoilecekhdn field is set.
    */
   boolean hasEoilecekhdn();
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
    * @return The eoilecekhdn.
    */
-  POGOProtos.Rpc.NDLAECIHENK getEoilecekhdn();
+  POGOProtos.Rpc.AwardedGymBadge getEoilecekhdn();
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
    */
-  POGOProtos.Rpc.NDLAECIHENKOrBuilder getEoilecekhdnOrBuilder();
+  POGOProtos.Rpc.AwardedGymBadgeOrBuilder getEoilecekhdnOrBuilder();
 
   /**
    * <code>int64 nimjbiippjj = 4;</code>

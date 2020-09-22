@@ -66,17 +66,17 @@ public interface GameMasterField4OrBuilder extends
   POGOProtos.Rpc.QuestProto.Context getField4();
 
   /**
-   * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+   * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
    * @return Whether the field5 field is set.
    */
   boolean hasField5();
   /**
-   * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+   * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
    * @return The field5.
    */
-  POGOProtos.Rpc.POCJJMBIJKE getField5();
+  POGOProtos.Rpc.QuestDisplayProto getField5();
   /**
-   * <code>.POGOProtos.Rpc.POCJJMBIJKE field5 = 5;</code>
+   * <code>.POGOProtos.Rpc.QuestDisplayProto field5 = 5;</code>
    */
-  POGOProtos.Rpc.POCJJMBIJKEOrBuilder getField5OrBuilder();
+  POGOProtos.Rpc.QuestDisplayProtoOrBuilder getField5OrBuilder();
 }

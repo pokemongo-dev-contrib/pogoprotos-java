@@ -823,14 +823,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 450: {
-            POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.Builder subBuilder = null;
+            POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder subBuilder = null;
             if (telemetryDataCase_ == 56) {
-              subBuilder = ((POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) telemetryData_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_).toBuilder();
             }
             telemetryData_ =
-                input.readMessage(POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) telemetryData_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_);
               telemetryData_ = subBuilder.buildPartial();
             }
             telemetryDataCase_ = 56;
@@ -935,14 +935,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 514: {
-            POGOProtos.Rpc.DeviceOsTelemetry.Builder subBuilder = null;
+            POGOProtos.Rpc.DeviceOSTelemetry.Builder subBuilder = null;
             if (telemetryDataCase_ == 64) {
-              subBuilder = ((POGOProtos.Rpc.DeviceOsTelemetry) telemetryData_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_).toBuilder();
             }
             telemetryData_ =
-                input.readMessage(POGOProtos.Rpc.DeviceOsTelemetry.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.DeviceOSTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.DeviceOsTelemetry) telemetryData_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_);
               telemetryData_ = subBuilder.buildPartial();
             }
             telemetryDataCase_ = 64;
@@ -2910,7 +2910,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int AR_BUDDY_MULTIPLAYER_SESSION_TELEMETRY_FIELD_NUMBER = 56;
   /**
-   * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+   * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
    * @return Whether the arBuddyMultiplayerSessionTelemetry field is set.
    */
   @java.lang.Override
@@ -2918,25 +2918,25 @@ private static final long serialVersionUID = 0L;
     return telemetryDataCase_ == 56;
   }
   /**
-   * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+   * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
    * @return The arBuddyMultiplayerSessionTelemetry.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry getArBuddyMultiplayerSessionTelemetry() {
+  public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry getArBuddyMultiplayerSessionTelemetry() {
     if (telemetryDataCase_ == 56) {
-       return (POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_;
     }
-    return POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+   * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetryOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder() {
+  public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder() {
     if (telemetryDataCase_ == 56) {
-       return (POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_;
     }
-    return POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
   }
 
   public static final int BUDDY_MULTIPLAYER_CONNECTION_FAILED_TELEMETRY_FIELD_NUMBER = 57;
@@ -3158,7 +3158,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int DEVICE_OS_TELEMETRY_FIELD_NUMBER = 64;
   /**
-   * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
    * @return Whether the deviceOsTelemetry field is set.
    */
   @java.lang.Override
@@ -3166,25 +3166,25 @@ private static final long serialVersionUID = 0L;
     return telemetryDataCase_ == 64;
   }
   /**
-   * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
    * @return The deviceOsTelemetry.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DeviceOsTelemetry getDeviceOsTelemetry() {
+  public POGOProtos.Rpc.DeviceOSTelemetry getDeviceOsTelemetry() {
     if (telemetryDataCase_ == 64) {
-       return (POGOProtos.Rpc.DeviceOsTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_;
     }
-    return POGOProtos.Rpc.DeviceOsTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DeviceOsTelemetryOrBuilder getDeviceOsTelemetryOrBuilder() {
+  public POGOProtos.Rpc.DeviceOSTelemetryOrBuilder getDeviceOsTelemetryOrBuilder() {
     if (telemetryDataCase_ == 64) {
-       return (POGOProtos.Rpc.DeviceOsTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_;
     }
-    return POGOProtos.Rpc.DeviceOsTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
   }
 
   public static final int NIANTIC_PROFILE_TELEMETRY_FIELD_NUMBER = 65;
@@ -3481,7 +3481,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(55, (POGOProtos.Rpc.ScreenResolutionTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 56) {
-      output.writeMessage(56, (POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) telemetryData_);
+      output.writeMessage(56, (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 57) {
       output.writeMessage(57, (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_);
@@ -3505,7 +3505,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(63, (POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 64) {
-      output.writeMessage(64, (POGOProtos.Rpc.DeviceOsTelemetry) telemetryData_);
+      output.writeMessage(64, (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 65) {
       output.writeMessage(65, (POGOProtos.Rpc.NianticProfileTelemetry) telemetryData_);
@@ -3750,7 +3750,7 @@ private static final long serialVersionUID = 0L;
     }
     if (telemetryDataCase_ == 56) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(56, (POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) telemetryData_);
+        .computeMessageSize(56, (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 57) {
       size += com.google.protobuf.CodedOutputStream
@@ -3782,7 +3782,7 @@ private static final long serialVersionUID = 0L;
     }
     if (telemetryDataCase_ == 64) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(64, (POGOProtos.Rpc.DeviceOsTelemetry) telemetryData_);
+        .computeMessageSize(64, (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 65) {
       size += com.google.protobuf.CodedOutputStream
@@ -13154,9 +13154,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry, POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.Builder, POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetryOrBuilder> arBuddyMultiplayerSessionTelemetryBuilder_;
+        POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder> arBuddyMultiplayerSessionTelemetryBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+     * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      * @return Whether the arBuddyMultiplayerSessionTelemetry field is set.
      */
     @java.lang.Override
@@ -13164,27 +13164,27 @@ private static final long serialVersionUID = 0L;
       return telemetryDataCase_ == 56;
     }
     /**
-     * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+     * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      * @return The arBuddyMultiplayerSessionTelemetry.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry getArBuddyMultiplayerSessionTelemetry() {
+    public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry getArBuddyMultiplayerSessionTelemetry() {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 56) {
-          return (POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_;
         }
-        return POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
       } else {
         if (telemetryDataCase_ == 56) {
           return arBuddyMultiplayerSessionTelemetryBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+     * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      */
-    public Builder setArBuddyMultiplayerSessionTelemetry(POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry value) {
+    public Builder setArBuddyMultiplayerSessionTelemetry(POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry value) {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -13198,10 +13198,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+     * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      */
     public Builder setArBuddyMultiplayerSessionTelemetry(
-        POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.Builder builderForValue) {
+        POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder builderForValue) {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
         telemetryData_ = builderForValue.build();
         onChanged();
@@ -13212,13 +13212,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+     * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      */
-    public Builder mergeArBuddyMultiplayerSessionTelemetry(POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry value) {
+    public Builder mergeArBuddyMultiplayerSessionTelemetry(POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry value) {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 56 &&
-            telemetryData_ != POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.getDefaultInstance()) {
-          telemetryData_ = POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.newBuilder((POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) telemetryData_)
+            telemetryData_ != POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.newBuilder((POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_)
               .mergeFrom(value).buildPartial();
         } else {
           telemetryData_ = value;
@@ -13234,7 +13234,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+     * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      */
     public Builder clearArBuddyMultiplayerSessionTelemetry() {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
@@ -13253,38 +13253,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+     * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      */
-    public POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.Builder getArBuddyMultiplayerSessionTelemetryBuilder() {
+    public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder getArBuddyMultiplayerSessionTelemetryBuilder() {
       return getArBuddyMultiplayerSessionTelemetryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+     * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetryOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder() {
+    public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder() {
       if ((telemetryDataCase_ == 56) && (arBuddyMultiplayerSessionTelemetryBuilder_ != null)) {
         return arBuddyMultiplayerSessionTelemetryBuilder_.getMessageOrBuilder();
       } else {
         if (telemetryDataCase_ == 56) {
-          return (POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_;
         }
-        return POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+     * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry, POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.Builder, POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetryOrBuilder> 
+        POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder> 
         getArBuddyMultiplayerSessionTelemetryFieldBuilder() {
       if (arBuddyMultiplayerSessionTelemetryBuilder_ == null) {
         if (!(telemetryDataCase_ == 56)) {
-          telemetryData_ = POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.getDefaultInstance();
+          telemetryData_ = POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
         }
         arBuddyMultiplayerSessionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry, POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.Builder, POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetryOrBuilder>(
-                (POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) telemetryData_,
+            POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder>(
+                (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
         telemetryData_ = null;
@@ -14282,9 +14282,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DeviceOsTelemetry, POGOProtos.Rpc.DeviceOsTelemetry.Builder, POGOProtos.Rpc.DeviceOsTelemetryOrBuilder> deviceOsTelemetryBuilder_;
+        POGOProtos.Rpc.DeviceOSTelemetry, POGOProtos.Rpc.DeviceOSTelemetry.Builder, POGOProtos.Rpc.DeviceOSTelemetryOrBuilder> deviceOsTelemetryBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
      * @return Whether the deviceOsTelemetry field is set.
      */
     @java.lang.Override
@@ -14292,27 +14292,27 @@ private static final long serialVersionUID = 0L;
       return telemetryDataCase_ == 64;
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
      * @return The deviceOsTelemetry.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.DeviceOsTelemetry getDeviceOsTelemetry() {
+    public POGOProtos.Rpc.DeviceOSTelemetry getDeviceOsTelemetry() {
       if (deviceOsTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 64) {
-          return (POGOProtos.Rpc.DeviceOsTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_;
         }
-        return POGOProtos.Rpc.DeviceOsTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
       } else {
         if (telemetryDataCase_ == 64) {
           return deviceOsTelemetryBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.DeviceOsTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
      */
-    public Builder setDeviceOsTelemetry(POGOProtos.Rpc.DeviceOsTelemetry value) {
+    public Builder setDeviceOsTelemetry(POGOProtos.Rpc.DeviceOSTelemetry value) {
       if (deviceOsTelemetryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -14326,10 +14326,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
      */
     public Builder setDeviceOsTelemetry(
-        POGOProtos.Rpc.DeviceOsTelemetry.Builder builderForValue) {
+        POGOProtos.Rpc.DeviceOSTelemetry.Builder builderForValue) {
       if (deviceOsTelemetryBuilder_ == null) {
         telemetryData_ = builderForValue.build();
         onChanged();
@@ -14340,13 +14340,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
      */
-    public Builder mergeDeviceOsTelemetry(POGOProtos.Rpc.DeviceOsTelemetry value) {
+    public Builder mergeDeviceOsTelemetry(POGOProtos.Rpc.DeviceOSTelemetry value) {
       if (deviceOsTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 64 &&
-            telemetryData_ != POGOProtos.Rpc.DeviceOsTelemetry.getDefaultInstance()) {
-          telemetryData_ = POGOProtos.Rpc.DeviceOsTelemetry.newBuilder((POGOProtos.Rpc.DeviceOsTelemetry) telemetryData_)
+            telemetryData_ != POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.DeviceOSTelemetry.newBuilder((POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_)
               .mergeFrom(value).buildPartial();
         } else {
           telemetryData_ = value;
@@ -14362,7 +14362,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
      */
     public Builder clearDeviceOsTelemetry() {
       if (deviceOsTelemetryBuilder_ == null) {
@@ -14381,38 +14381,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
      */
-    public POGOProtos.Rpc.DeviceOsTelemetry.Builder getDeviceOsTelemetryBuilder() {
+    public POGOProtos.Rpc.DeviceOSTelemetry.Builder getDeviceOsTelemetryBuilder() {
       return getDeviceOsTelemetryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.DeviceOsTelemetryOrBuilder getDeviceOsTelemetryOrBuilder() {
+    public POGOProtos.Rpc.DeviceOSTelemetryOrBuilder getDeviceOsTelemetryOrBuilder() {
       if ((telemetryDataCase_ == 64) && (deviceOsTelemetryBuilder_ != null)) {
         return deviceOsTelemetryBuilder_.getMessageOrBuilder();
       } else {
         if (telemetryDataCase_ == 64) {
-          return (POGOProtos.Rpc.DeviceOsTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_;
         }
-        return POGOProtos.Rpc.DeviceOsTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry device_os_telemetry = 64;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DeviceOsTelemetry, POGOProtos.Rpc.DeviceOsTelemetry.Builder, POGOProtos.Rpc.DeviceOsTelemetryOrBuilder> 
+        POGOProtos.Rpc.DeviceOSTelemetry, POGOProtos.Rpc.DeviceOSTelemetry.Builder, POGOProtos.Rpc.DeviceOSTelemetryOrBuilder> 
         getDeviceOsTelemetryFieldBuilder() {
       if (deviceOsTelemetryBuilder_ == null) {
         if (!(telemetryDataCase_ == 64)) {
-          telemetryData_ = POGOProtos.Rpc.DeviceOsTelemetry.getDefaultInstance();
+          telemetryData_ = POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
         }
         deviceOsTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.DeviceOsTelemetry, POGOProtos.Rpc.DeviceOsTelemetry.Builder, POGOProtos.Rpc.DeviceOsTelemetryOrBuilder>(
-                (POGOProtos.Rpc.DeviceOsTelemetry) telemetryData_,
+            POGOProtos.Rpc.DeviceOSTelemetry, POGOProtos.Rpc.DeviceOSTelemetry.Builder, POGOProtos.Rpc.DeviceOSTelemetryOrBuilder>(
+                (POGOProtos.Rpc.DeviceOSTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
         telemetryData_ = null;

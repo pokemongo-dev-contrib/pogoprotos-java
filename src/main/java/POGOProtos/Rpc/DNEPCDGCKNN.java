@@ -60,11 +60,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.JPCFJPJCOIH.Builder subBuilder = null;
+            POGOProtos.Rpc.FriendshipLevelDataProto.Builder subBuilder = null;
             if (dbmpjddjeng_ != null) {
               subBuilder = dbmpjddjeng_.toBuilder();
             }
-            dbmpjddjeng_ = input.readMessage(POGOProtos.Rpc.JPCFJPJCOIH.parser(), extensionRegistry);
+            dbmpjddjeng_ = input.readMessage(POGOProtos.Rpc.FriendshipLevelDataProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(dbmpjddjeng_);
               dbmpjddjeng_ = subBuilder.buildPartial();
@@ -137,9 +137,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int DBMPJDDJENG_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng_;
+  private POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng_;
   /**
-   * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+   * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
    * @return Whether the dbmpjddjeng field is set.
    */
   @java.lang.Override
@@ -147,18 +147,18 @@ private static final long serialVersionUID = 0L;
     return dbmpjddjeng_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+   * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
    * @return The dbmpjddjeng.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.JPCFJPJCOIH getDbmpjddjeng() {
-    return dbmpjddjeng_ == null ? POGOProtos.Rpc.JPCFJPJCOIH.getDefaultInstance() : dbmpjddjeng_;
+  public POGOProtos.Rpc.FriendshipLevelDataProto getDbmpjddjeng() {
+    return dbmpjddjeng_ == null ? POGOProtos.Rpc.FriendshipLevelDataProto.getDefaultInstance() : dbmpjddjeng_;
   }
   /**
-   * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+   * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.JPCFJPJCOIHOrBuilder getDbmpjddjengOrBuilder() {
+  public POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder getDbmpjddjengOrBuilder() {
     return getDbmpjddjeng();
   }
 
@@ -607,31 +607,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng_;
+    private POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JPCFJPJCOIH, POGOProtos.Rpc.JPCFJPJCOIH.Builder, POGOProtos.Rpc.JPCFJPJCOIHOrBuilder> dbmpjddjengBuilder_;
+        POGOProtos.Rpc.FriendshipLevelDataProto, POGOProtos.Rpc.FriendshipLevelDataProto.Builder, POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder> dbmpjddjengBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
      * @return Whether the dbmpjddjeng field is set.
      */
     public boolean hasDbmpjddjeng() {
       return dbmpjddjengBuilder_ != null || dbmpjddjeng_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
      * @return The dbmpjddjeng.
      */
-    public POGOProtos.Rpc.JPCFJPJCOIH getDbmpjddjeng() {
+    public POGOProtos.Rpc.FriendshipLevelDataProto getDbmpjddjeng() {
       if (dbmpjddjengBuilder_ == null) {
-        return dbmpjddjeng_ == null ? POGOProtos.Rpc.JPCFJPJCOIH.getDefaultInstance() : dbmpjddjeng_;
+        return dbmpjddjeng_ == null ? POGOProtos.Rpc.FriendshipLevelDataProto.getDefaultInstance() : dbmpjddjeng_;
       } else {
         return dbmpjddjengBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
      */
-    public Builder setDbmpjddjeng(POGOProtos.Rpc.JPCFJPJCOIH value) {
+    public Builder setDbmpjddjeng(POGOProtos.Rpc.FriendshipLevelDataProto value) {
       if (dbmpjddjengBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -645,10 +645,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
      */
     public Builder setDbmpjddjeng(
-        POGOProtos.Rpc.JPCFJPJCOIH.Builder builderForValue) {
+        POGOProtos.Rpc.FriendshipLevelDataProto.Builder builderForValue) {
       if (dbmpjddjengBuilder_ == null) {
         dbmpjddjeng_ = builderForValue.build();
         onChanged();
@@ -659,13 +659,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
      */
-    public Builder mergeDbmpjddjeng(POGOProtos.Rpc.JPCFJPJCOIH value) {
+    public Builder mergeDbmpjddjeng(POGOProtos.Rpc.FriendshipLevelDataProto value) {
       if (dbmpjddjengBuilder_ == null) {
         if (dbmpjddjeng_ != null) {
           dbmpjddjeng_ =
-            POGOProtos.Rpc.JPCFJPJCOIH.newBuilder(dbmpjddjeng_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.FriendshipLevelDataProto.newBuilder(dbmpjddjeng_).mergeFrom(value).buildPartial();
         } else {
           dbmpjddjeng_ = value;
         }
@@ -677,7 +677,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
      */
     public Builder clearDbmpjddjeng() {
       if (dbmpjddjengBuilder_ == null) {
@@ -691,33 +691,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
      */
-    public POGOProtos.Rpc.JPCFJPJCOIH.Builder getDbmpjddjengBuilder() {
+    public POGOProtos.Rpc.FriendshipLevelDataProto.Builder getDbmpjddjengBuilder() {
       
       onChanged();
       return getDbmpjddjengFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
      */
-    public POGOProtos.Rpc.JPCFJPJCOIHOrBuilder getDbmpjddjengOrBuilder() {
+    public POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder getDbmpjddjengOrBuilder() {
       if (dbmpjddjengBuilder_ != null) {
         return dbmpjddjengBuilder_.getMessageOrBuilder();
       } else {
         return dbmpjddjeng_ == null ?
-            POGOProtos.Rpc.JPCFJPJCOIH.getDefaultInstance() : dbmpjddjeng_;
+            POGOProtos.Rpc.FriendshipLevelDataProto.getDefaultInstance() : dbmpjddjeng_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JPCFJPJCOIH, POGOProtos.Rpc.JPCFJPJCOIH.Builder, POGOProtos.Rpc.JPCFJPJCOIHOrBuilder> 
+        POGOProtos.Rpc.FriendshipLevelDataProto, POGOProtos.Rpc.FriendshipLevelDataProto.Builder, POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder> 
         getDbmpjddjengFieldBuilder() {
       if (dbmpjddjengBuilder_ == null) {
         dbmpjddjengBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.JPCFJPJCOIH, POGOProtos.Rpc.JPCFJPJCOIH.Builder, POGOProtos.Rpc.JPCFJPJCOIHOrBuilder>(
+            POGOProtos.Rpc.FriendshipLevelDataProto, POGOProtos.Rpc.FriendshipLevelDataProto.Builder, POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder>(
                 getDbmpjddjeng(),
                 getParentForChildren(),
                 isClean());

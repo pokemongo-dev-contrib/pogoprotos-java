@@ -38,27 +38,27 @@ public interface SpinPokestopTelemetryOrBuilder extends
   int getEpejamdemjg();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
    */
-  java.util.List<POGOProtos.Rpc.DHHFMOFNIGP> 
+  java.util.List<POGOProtos.Rpc.PokestopReward> 
       getLmdeimbgdacList();
   /**
-   * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
    */
-  POGOProtos.Rpc.DHHFMOFNIGP getLmdeimbgdac(int index);
+  POGOProtos.Rpc.PokestopReward getLmdeimbgdac(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
    */
   int getLmdeimbgdacCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.DHHFMOFNIGPOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.PokestopRewardOrBuilder> 
       getLmdeimbgdacOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
    */
-  POGOProtos.Rpc.DHHFMOFNIGPOrBuilder getLmdeimbgdacOrBuilder(
+  POGOProtos.Rpc.PokestopRewardOrBuilder getLmdeimbgdacOrBuilder(
       int index);
 
   /**

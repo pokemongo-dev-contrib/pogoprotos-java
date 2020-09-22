@@ -53,11 +53,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.LMJMJJOLOPJ.Builder subBuilder = null;
+            POGOProtos.Rpc.PlayerPreferencesProto.Builder subBuilder = null;
             if (bbnlhkefklc_ != null) {
               subBuilder = bbnlhkefklc_.toBuilder();
             }
-            bbnlhkefklc_ = input.readMessage(POGOProtos.Rpc.LMJMJJOLOPJ.parser(), extensionRegistry);
+            bbnlhkefklc_ = input.readMessage(POGOProtos.Rpc.PlayerPreferencesProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(bbnlhkefklc_);
               bbnlhkefklc_ = subBuilder.buildPartial();
@@ -98,9 +98,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int BBNLHKEFKLC_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc_;
+  private POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc_;
   /**
-   * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
    * @return Whether the bbnlhkefklc field is set.
    */
   @java.lang.Override
@@ -108,18 +108,18 @@ private static final long serialVersionUID = 0L;
     return bbnlhkefklc_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
    * @return The bbnlhkefklc.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.LMJMJJOLOPJ getBbnlhkefklc() {
-    return bbnlhkefklc_ == null ? POGOProtos.Rpc.LMJMJJOLOPJ.getDefaultInstance() : bbnlhkefklc_;
+  public POGOProtos.Rpc.PlayerPreferencesProto getBbnlhkefklc() {
+    return bbnlhkefklc_ == null ? POGOProtos.Rpc.PlayerPreferencesProto.getDefaultInstance() : bbnlhkefklc_;
   }
   /**
-   * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.LMJMJJOLOPJOrBuilder getBbnlhkefklcOrBuilder() {
+  public POGOProtos.Rpc.PlayerPreferencesProtoOrBuilder getBbnlhkefklcOrBuilder() {
     return getBbnlhkefklc();
   }
 
@@ -442,31 +442,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc_;
+    private POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LMJMJJOLOPJ, POGOProtos.Rpc.LMJMJJOLOPJ.Builder, POGOProtos.Rpc.LMJMJJOLOPJOrBuilder> bbnlhkefklcBuilder_;
+        POGOProtos.Rpc.PlayerPreferencesProto, POGOProtos.Rpc.PlayerPreferencesProto.Builder, POGOProtos.Rpc.PlayerPreferencesProtoOrBuilder> bbnlhkefklcBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
      * @return Whether the bbnlhkefklc field is set.
      */
     public boolean hasBbnlhkefklc() {
       return bbnlhkefklcBuilder_ != null || bbnlhkefklc_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
      * @return The bbnlhkefklc.
      */
-    public POGOProtos.Rpc.LMJMJJOLOPJ getBbnlhkefklc() {
+    public POGOProtos.Rpc.PlayerPreferencesProto getBbnlhkefklc() {
       if (bbnlhkefklcBuilder_ == null) {
-        return bbnlhkefklc_ == null ? POGOProtos.Rpc.LMJMJJOLOPJ.getDefaultInstance() : bbnlhkefklc_;
+        return bbnlhkefklc_ == null ? POGOProtos.Rpc.PlayerPreferencesProto.getDefaultInstance() : bbnlhkefklc_;
       } else {
         return bbnlhkefklcBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
      */
-    public Builder setBbnlhkefklc(POGOProtos.Rpc.LMJMJJOLOPJ value) {
+    public Builder setBbnlhkefklc(POGOProtos.Rpc.PlayerPreferencesProto value) {
       if (bbnlhkefklcBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -480,10 +480,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
      */
     public Builder setBbnlhkefklc(
-        POGOProtos.Rpc.LMJMJJOLOPJ.Builder builderForValue) {
+        POGOProtos.Rpc.PlayerPreferencesProto.Builder builderForValue) {
       if (bbnlhkefklcBuilder_ == null) {
         bbnlhkefklc_ = builderForValue.build();
         onChanged();
@@ -494,13 +494,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
      */
-    public Builder mergeBbnlhkefklc(POGOProtos.Rpc.LMJMJJOLOPJ value) {
+    public Builder mergeBbnlhkefklc(POGOProtos.Rpc.PlayerPreferencesProto value) {
       if (bbnlhkefklcBuilder_ == null) {
         if (bbnlhkefklc_ != null) {
           bbnlhkefklc_ =
-            POGOProtos.Rpc.LMJMJJOLOPJ.newBuilder(bbnlhkefklc_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlayerPreferencesProto.newBuilder(bbnlhkefklc_).mergeFrom(value).buildPartial();
         } else {
           bbnlhkefklc_ = value;
         }
@@ -512,7 +512,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
      */
     public Builder clearBbnlhkefklc() {
       if (bbnlhkefklcBuilder_ == null) {
@@ -526,33 +526,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
      */
-    public POGOProtos.Rpc.LMJMJJOLOPJ.Builder getBbnlhkefklcBuilder() {
+    public POGOProtos.Rpc.PlayerPreferencesProto.Builder getBbnlhkefklcBuilder() {
       
       onChanged();
       return getBbnlhkefklcFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
      */
-    public POGOProtos.Rpc.LMJMJJOLOPJOrBuilder getBbnlhkefklcOrBuilder() {
+    public POGOProtos.Rpc.PlayerPreferencesProtoOrBuilder getBbnlhkefklcOrBuilder() {
       if (bbnlhkefklcBuilder_ != null) {
         return bbnlhkefklcBuilder_.getMessageOrBuilder();
       } else {
         return bbnlhkefklc_ == null ?
-            POGOProtos.Rpc.LMJMJJOLOPJ.getDefaultInstance() : bbnlhkefklc_;
+            POGOProtos.Rpc.PlayerPreferencesProto.getDefaultInstance() : bbnlhkefklc_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LMJMJJOLOPJ, POGOProtos.Rpc.LMJMJJOLOPJ.Builder, POGOProtos.Rpc.LMJMJJOLOPJOrBuilder> 
+        POGOProtos.Rpc.PlayerPreferencesProto, POGOProtos.Rpc.PlayerPreferencesProto.Builder, POGOProtos.Rpc.PlayerPreferencesProtoOrBuilder> 
         getBbnlhkefklcFieldBuilder() {
       if (bbnlhkefklcBuilder_ == null) {
         bbnlhkefklcBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.LMJMJJOLOPJ, POGOProtos.Rpc.LMJMJJOLOPJ.Builder, POGOProtos.Rpc.LMJMJJOLOPJOrBuilder>(
+            POGOProtos.Rpc.PlayerPreferencesProto, POGOProtos.Rpc.PlayerPreferencesProto.Builder, POGOProtos.Rpc.PlayerPreferencesProtoOrBuilder>(
                 getBbnlhkefklc(),
                 getParentForChildren(),
                 isClean());

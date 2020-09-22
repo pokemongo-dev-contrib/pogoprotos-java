@@ -8,19 +8,19 @@ public interface JABKHBFHHGNOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
    * @return Whether the hdinlbkpiel field is set.
    */
   boolean hasHdinlbkpiel();
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
    * @return The hdinlbkpiel.
    */
-  POGOProtos.Rpc.NDLAECIHENK getHdinlbkpiel();
+  POGOProtos.Rpc.AwardedGymBadge getHdinlbkpiel();
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
    */
-  POGOProtos.Rpc.NDLAECIHENKOrBuilder getHdinlbkpielOrBuilder();
+  POGOProtos.Rpc.AwardedGymBadgeOrBuilder getHdinlbkpielOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>

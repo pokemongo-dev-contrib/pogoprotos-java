@@ -74,11 +74,11 @@ private static final long serialVersionUID = 0L;
           }
           case 26: {
             if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-              balance_ = new java.util.ArrayList<POGOProtos.Rpc.CurrencyQuantityProto>();
+              balance_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformCurrencyQuantityProto>();
               mutable_bitField0_ |= 0x00000002;
             }
             balance_.add(
-                input.readMessage(POGOProtos.Rpc.CurrencyQuantityProto.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.PlatformCurrencyQuantityProto.parser(), extensionRegistry));
             break;
           }
           case 34: {
@@ -306,41 +306,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int BALANCE_FIELD_NUMBER = 3;
-  private java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> balance_;
+  private java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> balance_;
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> getBalanceList() {
+  public java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> getBalanceList() {
     return balance_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
       getBalanceOrBuilderList() {
     return balance_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   @java.lang.Override
   public int getBalanceCount() {
     return balance_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CurrencyQuantityProto getBalance(int index) {
+  public POGOProtos.Rpc.PlatformCurrencyQuantityProto getBalance(int index) {
     return balance_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder getBalanceOrBuilder(
+  public POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getBalanceOrBuilder(
       int index) {
     return balance_.get(index);
   }
@@ -1111,22 +1111,22 @@ private static final long serialVersionUID = 0L;
       return availableSkuBuilder_;
     }
 
-    private java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> balance_ =
+    private java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> balance_ =
       java.util.Collections.emptyList();
     private void ensureBalanceIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        balance_ = new java.util.ArrayList<POGOProtos.Rpc.CurrencyQuantityProto>(balance_);
+        balance_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformCurrencyQuantityProto>(balance_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.CurrencyQuantityProto, POGOProtos.Rpc.CurrencyQuantityProto.Builder, POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> balanceBuilder_;
+        POGOProtos.Rpc.PlatformCurrencyQuantityProto, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder, POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> balanceBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
-    public java.util.List<POGOProtos.Rpc.CurrencyQuantityProto> getBalanceList() {
+    public java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> getBalanceList() {
       if (balanceBuilder_ == null) {
         return java.util.Collections.unmodifiableList(balance_);
       } else {
@@ -1134,7 +1134,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public int getBalanceCount() {
       if (balanceBuilder_ == null) {
@@ -1144,9 +1144,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
-    public POGOProtos.Rpc.CurrencyQuantityProto getBalance(int index) {
+    public POGOProtos.Rpc.PlatformCurrencyQuantityProto getBalance(int index) {
       if (balanceBuilder_ == null) {
         return balance_.get(index);
       } else {
@@ -1154,10 +1154,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder setBalance(
-        int index, POGOProtos.Rpc.CurrencyQuantityProto value) {
+        int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto value) {
       if (balanceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1171,10 +1171,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder setBalance(
-        int index, POGOProtos.Rpc.CurrencyQuantityProto.Builder builderForValue) {
+        int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder builderForValue) {
       if (balanceBuilder_ == null) {
         ensureBalanceIsMutable();
         balance_.set(index, builderForValue.build());
@@ -1185,9 +1185,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
-    public Builder addBalance(POGOProtos.Rpc.CurrencyQuantityProto value) {
+    public Builder addBalance(POGOProtos.Rpc.PlatformCurrencyQuantityProto value) {
       if (balanceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1201,10 +1201,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder addBalance(
-        int index, POGOProtos.Rpc.CurrencyQuantityProto value) {
+        int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto value) {
       if (balanceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1218,10 +1218,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder addBalance(
-        POGOProtos.Rpc.CurrencyQuantityProto.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder builderForValue) {
       if (balanceBuilder_ == null) {
         ensureBalanceIsMutable();
         balance_.add(builderForValue.build());
@@ -1232,10 +1232,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder addBalance(
-        int index, POGOProtos.Rpc.CurrencyQuantityProto.Builder builderForValue) {
+        int index, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder builderForValue) {
       if (balanceBuilder_ == null) {
         ensureBalanceIsMutable();
         balance_.add(index, builderForValue.build());
@@ -1246,10 +1246,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder addAllBalance(
-        java.lang.Iterable<? extends POGOProtos.Rpc.CurrencyQuantityProto> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProto> values) {
       if (balanceBuilder_ == null) {
         ensureBalanceIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1261,7 +1261,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder clearBalance() {
       if (balanceBuilder_ == null) {
@@ -1274,7 +1274,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
     public Builder removeBalance(int index) {
       if (balanceBuilder_ == null) {
@@ -1287,16 +1287,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
-    public POGOProtos.Rpc.CurrencyQuantityProto.Builder getBalanceBuilder(
+    public POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder getBalanceBuilder(
         int index) {
       return getBalanceFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
-    public POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder getBalanceOrBuilder(
+    public POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getBalanceOrBuilder(
         int index) {
       if (balanceBuilder_ == null) {
         return balance_.get(index);  } else {
@@ -1304,9 +1304,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
          getBalanceOrBuilderList() {
       if (balanceBuilder_ != null) {
         return balanceBuilder_.getMessageOrBuilderList();
@@ -1315,33 +1315,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
-    public POGOProtos.Rpc.CurrencyQuantityProto.Builder addBalanceBuilder() {
+    public POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder addBalanceBuilder() {
       return getBalanceFieldBuilder().addBuilder(
-          POGOProtos.Rpc.CurrencyQuantityProto.getDefaultInstance());
+          POGOProtos.Rpc.PlatformCurrencyQuantityProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
-    public POGOProtos.Rpc.CurrencyQuantityProto.Builder addBalanceBuilder(
+    public POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder addBalanceBuilder(
         int index) {
       return getBalanceFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.CurrencyQuantityProto.getDefaultInstance());
+          index, POGOProtos.Rpc.PlatformCurrencyQuantityProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CurrencyQuantityProto balance = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto balance = 3;</code>
      */
-    public java.util.List<POGOProtos.Rpc.CurrencyQuantityProto.Builder> 
+    public java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder> 
          getBalanceBuilderList() {
       return getBalanceFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.CurrencyQuantityProto, POGOProtos.Rpc.CurrencyQuantityProto.Builder, POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder> 
+        POGOProtos.Rpc.PlatformCurrencyQuantityProto, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder, POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
         getBalanceFieldBuilder() {
       if (balanceBuilder_ == null) {
         balanceBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.CurrencyQuantityProto, POGOProtos.Rpc.CurrencyQuantityProto.Builder, POGOProtos.Rpc.CurrencyQuantityProtoOrBuilder>(
+            POGOProtos.Rpc.PlatformCurrencyQuantityProto, POGOProtos.Rpc.PlatformCurrencyQuantityProto.Builder, POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder>(
                 balance_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),

@@ -8,25 +8,25 @@ package POGOProtos.Rpc;
  * ref: CGDDNGLOEHO
  * </pre>
  *
- * Protobuf type {@code POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry}
+ * Protobuf type {@code POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry}
  */
-public final class ArBuddyMultiplayerSessionTelemetry extends
+public final class ARBuddyMultiplayerSessionTelemetry extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry)
-    ArBuddyMultiplayerSessionTelemetryOrBuilder {
+    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry)
+    ARBuddyMultiplayerSessionTelemetryOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use ArBuddyMultiplayerSessionTelemetry.newBuilder() to construct.
-  private ArBuddyMultiplayerSessionTelemetry(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use ARBuddyMultiplayerSessionTelemetry.newBuilder() to construct.
+  private ARBuddyMultiplayerSessionTelemetry(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private ArBuddyMultiplayerSessionTelemetry() {
+  private ARBuddyMultiplayerSessionTelemetry() {
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new ArBuddyMultiplayerSessionTelemetry();
+    return new ARBuddyMultiplayerSessionTelemetry();
   }
 
   @java.lang.Override
@@ -34,7 +34,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private ArBuddyMultiplayerSessionTelemetry(
+  private ARBuddyMultiplayerSessionTelemetry(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -158,15 +158,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ArBuddyMultiplayerSessionTelemetry_descriptor;
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ARBuddyMultiplayerSessionTelemetry_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ArBuddyMultiplayerSessionTelemetry_fieldAccessorTable
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ARBuddyMultiplayerSessionTelemetry_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.class, POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.Builder.class);
+            POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.class, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder.class);
   }
 
   public static final int CAMERA_PERMISSION_GRANTED_FIELD_NUMBER = 1;
@@ -508,10 +508,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry)) {
+    if (!(obj instanceof POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry)) {
       return super.equals(obj);
     }
-    POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry other = (POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) obj;
+    POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry other = (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) obj;
 
     if (getCameraPermissionGranted()
         != other.getCameraPermissionGranted()) return false;
@@ -609,69 +609,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseFrom(
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseFrom(
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseFrom(
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseFrom(
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseFrom(byte[] data)
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseFrom(
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseFrom(
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseDelimitedFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseDelimitedFrom(
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseFrom(
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parseFrom(
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -684,7 +684,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry prototype) {
+  public static Builder newBuilder(POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -704,26 +704,26 @@ private static final long serialVersionUID = 0L;
    * ref: CGDDNGLOEHO
    * </pre>
    *
-   * Protobuf type {@code POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry}
+   * Protobuf type {@code POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry)
-      POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetryOrBuilder {
+      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry)
+      POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ArBuddyMultiplayerSessionTelemetry_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ARBuddyMultiplayerSessionTelemetry_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ArBuddyMultiplayerSessionTelemetry_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ARBuddyMultiplayerSessionTelemetry_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.class, POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.Builder.class);
+              POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.class, POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.Builder.class);
     }
 
-    // Construct using POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.newBuilder()
+    // Construct using POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -781,17 +781,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ArBuddyMultiplayerSessionTelemetry_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_ARBuddyMultiplayerSessionTelemetry_descriptor;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry getDefaultInstanceForType() {
-      return POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.getDefaultInstance();
+    public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry getDefaultInstanceForType() {
+      return POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance();
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry build() {
-      POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry result = buildPartial();
+    public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry build() {
+      POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -799,8 +799,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry buildPartial() {
-      POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry result = new POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry(this);
+    public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry buildPartial() {
+      POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry result = new POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry(this);
       result.cameraPermissionGranted_ = cameraPermissionGranted_;
       result.hostTimeToPublishFirstMap_ = hostTimeToPublishFirstMap_;
       result.hostNumberOfMapsPublished_ = hostNumberOfMapsPublished_;
@@ -856,16 +856,16 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) {
-        return mergeFrom((POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry)other);
+      if (other instanceof POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) {
+        return mergeFrom((POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry other) {
-      if (other == POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry.getDefaultInstance()) return this;
+    public Builder mergeFrom(POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry other) {
+      if (other == POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry.getDefaultInstance()) return this;
       if (other.getCameraPermissionGranted() != false) {
         setCameraPermissionGranted(other.getCameraPermissionGranted());
       }
@@ -932,11 +932,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry parsedMessage = null;
+      POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry) e.getUnfinishedMessage();
+        parsedMessage = (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -1485,41 +1485,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry)
+    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry)
   }
 
-  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry)
-  private static final POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry)
+  private static final POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry();
+    DEFAULT_INSTANCE = new POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry();
   }
 
-  public static POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry getDefaultInstance() {
+  public static POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<ArBuddyMultiplayerSessionTelemetry>
-      PARSER = new com.google.protobuf.AbstractParser<ArBuddyMultiplayerSessionTelemetry>() {
+  private static final com.google.protobuf.Parser<ARBuddyMultiplayerSessionTelemetry>
+      PARSER = new com.google.protobuf.AbstractParser<ARBuddyMultiplayerSessionTelemetry>() {
     @java.lang.Override
-    public ArBuddyMultiplayerSessionTelemetry parsePartialFrom(
+    public ARBuddyMultiplayerSessionTelemetry parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new ArBuddyMultiplayerSessionTelemetry(input, extensionRegistry);
+      return new ARBuddyMultiplayerSessionTelemetry(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<ArBuddyMultiplayerSessionTelemetry> parser() {
+  public static com.google.protobuf.Parser<ARBuddyMultiplayerSessionTelemetry> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<ArBuddyMultiplayerSessionTelemetry> getParserForType() {
+  public com.google.protobuf.Parser<ARBuddyMultiplayerSessionTelemetry> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry getDefaultInstanceForType() {
+  public POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

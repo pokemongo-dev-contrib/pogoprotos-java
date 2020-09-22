@@ -311,19 +311,19 @@ public interface QuestProtoOrBuilder extends
   int getLpmmogciahp();
 
   /**
-   * <code>.POGOProtos.Rpc.GNJGCPJMODK bfpneflmdck = 117;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto bfpneflmdck = 117;</code>
    * @return Whether the bfpneflmdck field is set.
    */
   boolean hasBfpneflmdck();
   /**
-   * <code>.POGOProtos.Rpc.GNJGCPJMODK bfpneflmdck = 117;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto bfpneflmdck = 117;</code>
    * @return The bfpneflmdck.
    */
-  POGOProtos.Rpc.GNJGCPJMODK getBfpneflmdck();
+  POGOProtos.Rpc.DailyCounterProto getBfpneflmdck();
   /**
-   * <code>.POGOProtos.Rpc.GNJGCPJMODK bfpneflmdck = 117;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto bfpneflmdck = 117;</code>
    */
-  POGOProtos.Rpc.GNJGCPJMODKOrBuilder getBfpneflmdckOrBuilder();
+  POGOProtos.Rpc.DailyCounterProtoOrBuilder getBfpneflmdckOrBuilder();
 
   /**
    * <code>string kfliciapahh = 118;</code>

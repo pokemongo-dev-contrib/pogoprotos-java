@@ -53,11 +53,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.HJJBCLOAFKI.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformMetricData.Builder subBuilder = null;
             if (keanhoahmim_ != null) {
               subBuilder = keanhoahmim_.toBuilder();
             }
-            keanhoahmim_ = input.readMessage(POGOProtos.Rpc.HJJBCLOAFKI.parser(), extensionRegistry);
+            keanhoahmim_ = input.readMessage(POGOProtos.Rpc.PlatformMetricData.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(keanhoahmim_);
               keanhoahmim_ = subBuilder.buildPartial();
@@ -98,9 +98,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int KEANHOAHMIM_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim_;
+  private POGOProtos.Rpc.PlatformMetricData keanhoahmim_;
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
    * @return Whether the keanhoahmim field is set.
    */
   @java.lang.Override
@@ -108,18 +108,18 @@ private static final long serialVersionUID = 0L;
     return keanhoahmim_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
    * @return The keanhoahmim.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.HJJBCLOAFKI getKeanhoahmim() {
-    return keanhoahmim_ == null ? POGOProtos.Rpc.HJJBCLOAFKI.getDefaultInstance() : keanhoahmim_;
+  public POGOProtos.Rpc.PlatformMetricData getKeanhoahmim() {
+    return keanhoahmim_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : keanhoahmim_;
   }
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.HJJBCLOAFKIOrBuilder getKeanhoahmimOrBuilder() {
+  public POGOProtos.Rpc.PlatformMetricDataOrBuilder getKeanhoahmimOrBuilder() {
     return getKeanhoahmim();
   }
 
@@ -442,31 +442,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim_;
+    private POGOProtos.Rpc.PlatformMetricData keanhoahmim_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HJJBCLOAFKI, POGOProtos.Rpc.HJJBCLOAFKI.Builder, POGOProtos.Rpc.HJJBCLOAFKIOrBuilder> keanhoahmimBuilder_;
+        POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> keanhoahmimBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
      * @return Whether the keanhoahmim field is set.
      */
     public boolean hasKeanhoahmim() {
       return keanhoahmimBuilder_ != null || keanhoahmim_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
      * @return The keanhoahmim.
      */
-    public POGOProtos.Rpc.HJJBCLOAFKI getKeanhoahmim() {
+    public POGOProtos.Rpc.PlatformMetricData getKeanhoahmim() {
       if (keanhoahmimBuilder_ == null) {
-        return keanhoahmim_ == null ? POGOProtos.Rpc.HJJBCLOAFKI.getDefaultInstance() : keanhoahmim_;
+        return keanhoahmim_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : keanhoahmim_;
       } else {
         return keanhoahmimBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
      */
-    public Builder setKeanhoahmim(POGOProtos.Rpc.HJJBCLOAFKI value) {
+    public Builder setKeanhoahmim(POGOProtos.Rpc.PlatformMetricData value) {
       if (keanhoahmimBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -480,10 +480,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
      */
     public Builder setKeanhoahmim(
-        POGOProtos.Rpc.HJJBCLOAFKI.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformMetricData.Builder builderForValue) {
       if (keanhoahmimBuilder_ == null) {
         keanhoahmim_ = builderForValue.build();
         onChanged();
@@ -494,13 +494,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
      */
-    public Builder mergeKeanhoahmim(POGOProtos.Rpc.HJJBCLOAFKI value) {
+    public Builder mergeKeanhoahmim(POGOProtos.Rpc.PlatformMetricData value) {
       if (keanhoahmimBuilder_ == null) {
         if (keanhoahmim_ != null) {
           keanhoahmim_ =
-            POGOProtos.Rpc.HJJBCLOAFKI.newBuilder(keanhoahmim_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformMetricData.newBuilder(keanhoahmim_).mergeFrom(value).buildPartial();
         } else {
           keanhoahmim_ = value;
         }
@@ -512,7 +512,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
      */
     public Builder clearKeanhoahmim() {
       if (keanhoahmimBuilder_ == null) {
@@ -526,33 +526,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
      */
-    public POGOProtos.Rpc.HJJBCLOAFKI.Builder getKeanhoahmimBuilder() {
+    public POGOProtos.Rpc.PlatformMetricData.Builder getKeanhoahmimBuilder() {
       
       onChanged();
       return getKeanhoahmimFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
      */
-    public POGOProtos.Rpc.HJJBCLOAFKIOrBuilder getKeanhoahmimOrBuilder() {
+    public POGOProtos.Rpc.PlatformMetricDataOrBuilder getKeanhoahmimOrBuilder() {
       if (keanhoahmimBuilder_ != null) {
         return keanhoahmimBuilder_.getMessageOrBuilder();
       } else {
         return keanhoahmim_ == null ?
-            POGOProtos.Rpc.HJJBCLOAFKI.getDefaultInstance() : keanhoahmim_;
+            POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : keanhoahmim_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HJJBCLOAFKI, POGOProtos.Rpc.HJJBCLOAFKI.Builder, POGOProtos.Rpc.HJJBCLOAFKIOrBuilder> 
+        POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> 
         getKeanhoahmimFieldBuilder() {
       if (keanhoahmimBuilder_ == null) {
         keanhoahmimBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.HJJBCLOAFKI, POGOProtos.Rpc.HJJBCLOAFKI.Builder, POGOProtos.Rpc.HJJBCLOAFKIOrBuilder>(
+            POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder>(
                 getKeanhoahmim(),
                 getParentForChildren(),
                 isClean());

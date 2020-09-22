@@ -8,17 +8,17 @@ public interface PKNPEKDPGBPOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
    * @return Whether the oijeoejhgbo field is set.
    */
   boolean hasOijeoejhgbo();
   /**
-   * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
    * @return The oijeoejhgbo.
    */
-  POGOProtos.Rpc.KMGAPBOCBGK getOijeoejhgbo();
+  POGOProtos.Rpc.CombatPlayerPreferencesProto getOijeoejhgbo();
   /**
-   * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
    */
-  POGOProtos.Rpc.KMGAPBOCBGKOrBuilder getOijeoejhgboOrBuilder();
+  POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder getOijeoejhgboOrBuilder();
 }

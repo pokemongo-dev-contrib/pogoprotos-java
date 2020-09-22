@@ -184,11 +184,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 154: {
-            POGOProtos.Rpc.HFBDDPFODDM.Builder subBuilder = null;
+            POGOProtos.Rpc.SponsoredDetailsProto.Builder subBuilder = null;
             if (cnpdpimfkbe_ != null) {
               subBuilder = cnpdpimfkbe_.toBuilder();
             }
-            cnpdpimfkbe_ = input.readMessage(POGOProtos.Rpc.HFBDDPFODDM.parser(), extensionRegistry);
+            cnpdpimfkbe_ = input.readMessage(POGOProtos.Rpc.SponsoredDetailsProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(cnpdpimfkbe_);
               cnpdpimfkbe_ = subBuilder.buildPartial();
@@ -703,9 +703,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CNPDPIMFKBE_FIELD_NUMBER = 19;
-  private POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe_;
+  private POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe_;
   /**
-   * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+   * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
    * @return Whether the cnpdpimfkbe field is set.
    */
   @java.lang.Override
@@ -713,18 +713,18 @@ private static final long serialVersionUID = 0L;
     return cnpdpimfkbe_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+   * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
    * @return The cnpdpimfkbe.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.HFBDDPFODDM getCnpdpimfkbe() {
-    return cnpdpimfkbe_ == null ? POGOProtos.Rpc.HFBDDPFODDM.getDefaultInstance() : cnpdpimfkbe_;
+  public POGOProtos.Rpc.SponsoredDetailsProto getCnpdpimfkbe() {
+    return cnpdpimfkbe_ == null ? POGOProtos.Rpc.SponsoredDetailsProto.getDefaultInstance() : cnpdpimfkbe_;
   }
   /**
-   * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+   * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.HFBDDPFODDMOrBuilder getCnpdpimfkbeOrBuilder() {
+  public POGOProtos.Rpc.SponsoredDetailsProtoOrBuilder getCnpdpimfkbeOrBuilder() {
     return getCnpdpimfkbe();
   }
 
@@ -2952,31 +2952,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe_;
+    private POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HFBDDPFODDM, POGOProtos.Rpc.HFBDDPFODDM.Builder, POGOProtos.Rpc.HFBDDPFODDMOrBuilder> cnpdpimfkbeBuilder_;
+        POGOProtos.Rpc.SponsoredDetailsProto, POGOProtos.Rpc.SponsoredDetailsProto.Builder, POGOProtos.Rpc.SponsoredDetailsProtoOrBuilder> cnpdpimfkbeBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+     * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
      * @return Whether the cnpdpimfkbe field is set.
      */
     public boolean hasCnpdpimfkbe() {
       return cnpdpimfkbeBuilder_ != null || cnpdpimfkbe_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+     * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
      * @return The cnpdpimfkbe.
      */
-    public POGOProtos.Rpc.HFBDDPFODDM getCnpdpimfkbe() {
+    public POGOProtos.Rpc.SponsoredDetailsProto getCnpdpimfkbe() {
       if (cnpdpimfkbeBuilder_ == null) {
-        return cnpdpimfkbe_ == null ? POGOProtos.Rpc.HFBDDPFODDM.getDefaultInstance() : cnpdpimfkbe_;
+        return cnpdpimfkbe_ == null ? POGOProtos.Rpc.SponsoredDetailsProto.getDefaultInstance() : cnpdpimfkbe_;
       } else {
         return cnpdpimfkbeBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+     * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
      */
-    public Builder setCnpdpimfkbe(POGOProtos.Rpc.HFBDDPFODDM value) {
+    public Builder setCnpdpimfkbe(POGOProtos.Rpc.SponsoredDetailsProto value) {
       if (cnpdpimfkbeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2990,10 +2990,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+     * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
      */
     public Builder setCnpdpimfkbe(
-        POGOProtos.Rpc.HFBDDPFODDM.Builder builderForValue) {
+        POGOProtos.Rpc.SponsoredDetailsProto.Builder builderForValue) {
       if (cnpdpimfkbeBuilder_ == null) {
         cnpdpimfkbe_ = builderForValue.build();
         onChanged();
@@ -3004,13 +3004,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+     * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
      */
-    public Builder mergeCnpdpimfkbe(POGOProtos.Rpc.HFBDDPFODDM value) {
+    public Builder mergeCnpdpimfkbe(POGOProtos.Rpc.SponsoredDetailsProto value) {
       if (cnpdpimfkbeBuilder_ == null) {
         if (cnpdpimfkbe_ != null) {
           cnpdpimfkbe_ =
-            POGOProtos.Rpc.HFBDDPFODDM.newBuilder(cnpdpimfkbe_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.SponsoredDetailsProto.newBuilder(cnpdpimfkbe_).mergeFrom(value).buildPartial();
         } else {
           cnpdpimfkbe_ = value;
         }
@@ -3022,7 +3022,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+     * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
      */
     public Builder clearCnpdpimfkbe() {
       if (cnpdpimfkbeBuilder_ == null) {
@@ -3036,33 +3036,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+     * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
      */
-    public POGOProtos.Rpc.HFBDDPFODDM.Builder getCnpdpimfkbeBuilder() {
+    public POGOProtos.Rpc.SponsoredDetailsProto.Builder getCnpdpimfkbeBuilder() {
       
       onChanged();
       return getCnpdpimfkbeFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+     * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
      */
-    public POGOProtos.Rpc.HFBDDPFODDMOrBuilder getCnpdpimfkbeOrBuilder() {
+    public POGOProtos.Rpc.SponsoredDetailsProtoOrBuilder getCnpdpimfkbeOrBuilder() {
       if (cnpdpimfkbeBuilder_ != null) {
         return cnpdpimfkbeBuilder_.getMessageOrBuilder();
       } else {
         return cnpdpimfkbe_ == null ?
-            POGOProtos.Rpc.HFBDDPFODDM.getDefaultInstance() : cnpdpimfkbe_;
+            POGOProtos.Rpc.SponsoredDetailsProto.getDefaultInstance() : cnpdpimfkbe_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HFBDDPFODDM cnpdpimfkbe = 19;</code>
+     * <code>.POGOProtos.Rpc.SponsoredDetailsProto cnpdpimfkbe = 19;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HFBDDPFODDM, POGOProtos.Rpc.HFBDDPFODDM.Builder, POGOProtos.Rpc.HFBDDPFODDMOrBuilder> 
+        POGOProtos.Rpc.SponsoredDetailsProto, POGOProtos.Rpc.SponsoredDetailsProto.Builder, POGOProtos.Rpc.SponsoredDetailsProtoOrBuilder> 
         getCnpdpimfkbeFieldBuilder() {
       if (cnpdpimfkbeBuilder_ == null) {
         cnpdpimfkbeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.HFBDDPFODDM, POGOProtos.Rpc.HFBDDPFODDM.Builder, POGOProtos.Rpc.HFBDDPFODDMOrBuilder>(
+            POGOProtos.Rpc.SponsoredDetailsProto, POGOProtos.Rpc.SponsoredDetailsProto.Builder, POGOProtos.Rpc.SponsoredDetailsProtoOrBuilder>(
                 getCnpdpimfkbe(),
                 getParentForChildren(),
                 isClean());

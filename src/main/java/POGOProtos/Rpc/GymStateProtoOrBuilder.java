@@ -8,42 +8,42 @@ public interface GymStateProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+   * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
    * @return Whether the ajghbigoedn field is set.
    */
   boolean hasAjghbigoedn();
   /**
-   * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+   * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
    * @return The ajghbigoedn.
    */
-  POGOProtos.Rpc.BBNLGKGOGKI getAjghbigoedn();
+  POGOProtos.Rpc.PokemonFortProto getAjghbigoedn();
   /**
-   * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+   * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
    */
-  POGOProtos.Rpc.BBNLGKGOGKIOrBuilder getAjghbigoednOrBuilder();
+  POGOProtos.Rpc.PokemonFortProtoOrBuilder getAjghbigoednOrBuilder();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.AEIJGBPMAGM> 
+  java.util.List<POGOProtos.Rpc.GymMembershipProto> 
       getNaeplcmlgjkList();
   /**
-   * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
    */
-  POGOProtos.Rpc.AEIJGBPMAGM getNaeplcmlgjk(int index);
+  POGOProtos.Rpc.GymMembershipProto getNaeplcmlgjk(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
    */
   int getNaeplcmlgjkCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.AEIJGBPMAGMOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.GymMembershipProtoOrBuilder> 
       getNaeplcmlgjkOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
    */
-  POGOProtos.Rpc.AEIJGBPMAGMOrBuilder getNaeplcmlgjkOrBuilder(
+  POGOProtos.Rpc.GymMembershipProtoOrBuilder getNaeplcmlgjkOrBuilder(
       int index);
 
   /**

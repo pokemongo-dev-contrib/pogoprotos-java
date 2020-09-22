@@ -60,11 +60,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.AGGMCJMFNGN.Builder subBuilder = null;
+            POGOProtos.Rpc.GymStatusAndDefendersProto.Builder subBuilder = null;
             if (oknapplbpbk_ != null) {
               subBuilder = oknapplbpbk_.toBuilder();
             }
-            oknapplbpbk_ = input.readMessage(POGOProtos.Rpc.AGGMCJMFNGN.parser(), extensionRegistry);
+            oknapplbpbk_ = input.readMessage(POGOProtos.Rpc.GymStatusAndDefendersProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(oknapplbpbk_);
               oknapplbpbk_ = subBuilder.buildPartial();
@@ -73,11 +73,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 26: {
-            POGOProtos.Rpc.NDLAECIHENK.Builder subBuilder = null;
+            POGOProtos.Rpc.AwardedGymBadge.Builder subBuilder = null;
             if (eoilecekhdn_ != null) {
               subBuilder = eoilecekhdn_.toBuilder();
             }
-            eoilecekhdn_ = input.readMessage(POGOProtos.Rpc.NDLAECIHENK.parser(), extensionRegistry);
+            eoilecekhdn_ = input.readMessage(POGOProtos.Rpc.AwardedGymBadge.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(eoilecekhdn_);
               eoilecekhdn_ = subBuilder.buildPartial();
@@ -416,9 +416,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int OKNAPPLBPBK_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk_;
+  private POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk_;
   /**
-   * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
    * @return Whether the oknapplbpbk field is set.
    */
   @java.lang.Override
@@ -426,25 +426,25 @@ private static final long serialVersionUID = 0L;
     return oknapplbpbk_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
    * @return The oknapplbpbk.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AGGMCJMFNGN getOknapplbpbk() {
-    return oknapplbpbk_ == null ? POGOProtos.Rpc.AGGMCJMFNGN.getDefaultInstance() : oknapplbpbk_;
+  public POGOProtos.Rpc.GymStatusAndDefendersProto getOknapplbpbk() {
+    return oknapplbpbk_ == null ? POGOProtos.Rpc.GymStatusAndDefendersProto.getDefaultInstance() : oknapplbpbk_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AGGMCJMFNGNOrBuilder getOknapplbpbkOrBuilder() {
+  public POGOProtos.Rpc.GymStatusAndDefendersProtoOrBuilder getOknapplbpbkOrBuilder() {
     return getOknapplbpbk();
   }
 
   public static final int EOILECEKHDN_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.NDLAECIHENK eoilecekhdn_;
+  private POGOProtos.Rpc.AwardedGymBadge eoilecekhdn_;
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
    * @return Whether the eoilecekhdn field is set.
    */
   @java.lang.Override
@@ -452,18 +452,18 @@ private static final long serialVersionUID = 0L;
     return eoilecekhdn_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
    * @return The eoilecekhdn.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.NDLAECIHENK getEoilecekhdn() {
-    return eoilecekhdn_ == null ? POGOProtos.Rpc.NDLAECIHENK.getDefaultInstance() : eoilecekhdn_;
+  public POGOProtos.Rpc.AwardedGymBadge getEoilecekhdn() {
+    return eoilecekhdn_ == null ? POGOProtos.Rpc.AwardedGymBadge.getDefaultInstance() : eoilecekhdn_;
   }
   /**
-   * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.NDLAECIHENKOrBuilder getEoilecekhdnOrBuilder() {
+  public POGOProtos.Rpc.AwardedGymBadgeOrBuilder getEoilecekhdnOrBuilder() {
     return getEoilecekhdn();
   }
 
@@ -915,31 +915,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk_;
+    private POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AGGMCJMFNGN, POGOProtos.Rpc.AGGMCJMFNGN.Builder, POGOProtos.Rpc.AGGMCJMFNGNOrBuilder> oknapplbpbkBuilder_;
+        POGOProtos.Rpc.GymStatusAndDefendersProto, POGOProtos.Rpc.GymStatusAndDefendersProto.Builder, POGOProtos.Rpc.GymStatusAndDefendersProtoOrBuilder> oknapplbpbkBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+     * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
      * @return Whether the oknapplbpbk field is set.
      */
     public boolean hasOknapplbpbk() {
       return oknapplbpbkBuilder_ != null || oknapplbpbk_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+     * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
      * @return The oknapplbpbk.
      */
-    public POGOProtos.Rpc.AGGMCJMFNGN getOknapplbpbk() {
+    public POGOProtos.Rpc.GymStatusAndDefendersProto getOknapplbpbk() {
       if (oknapplbpbkBuilder_ == null) {
-        return oknapplbpbk_ == null ? POGOProtos.Rpc.AGGMCJMFNGN.getDefaultInstance() : oknapplbpbk_;
+        return oknapplbpbk_ == null ? POGOProtos.Rpc.GymStatusAndDefendersProto.getDefaultInstance() : oknapplbpbk_;
       } else {
         return oknapplbpbkBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+     * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
      */
-    public Builder setOknapplbpbk(POGOProtos.Rpc.AGGMCJMFNGN value) {
+    public Builder setOknapplbpbk(POGOProtos.Rpc.GymStatusAndDefendersProto value) {
       if (oknapplbpbkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -953,10 +953,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+     * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
      */
     public Builder setOknapplbpbk(
-        POGOProtos.Rpc.AGGMCJMFNGN.Builder builderForValue) {
+        POGOProtos.Rpc.GymStatusAndDefendersProto.Builder builderForValue) {
       if (oknapplbpbkBuilder_ == null) {
         oknapplbpbk_ = builderForValue.build();
         onChanged();
@@ -967,13 +967,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+     * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
      */
-    public Builder mergeOknapplbpbk(POGOProtos.Rpc.AGGMCJMFNGN value) {
+    public Builder mergeOknapplbpbk(POGOProtos.Rpc.GymStatusAndDefendersProto value) {
       if (oknapplbpbkBuilder_ == null) {
         if (oknapplbpbk_ != null) {
           oknapplbpbk_ =
-            POGOProtos.Rpc.AGGMCJMFNGN.newBuilder(oknapplbpbk_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.GymStatusAndDefendersProto.newBuilder(oknapplbpbk_).mergeFrom(value).buildPartial();
         } else {
           oknapplbpbk_ = value;
         }
@@ -985,7 +985,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+     * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
      */
     public Builder clearOknapplbpbk() {
       if (oknapplbpbkBuilder_ == null) {
@@ -999,33 +999,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+     * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
      */
-    public POGOProtos.Rpc.AGGMCJMFNGN.Builder getOknapplbpbkBuilder() {
+    public POGOProtos.Rpc.GymStatusAndDefendersProto.Builder getOknapplbpbkBuilder() {
       
       onChanged();
       return getOknapplbpbkFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+     * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
      */
-    public POGOProtos.Rpc.AGGMCJMFNGNOrBuilder getOknapplbpbkOrBuilder() {
+    public POGOProtos.Rpc.GymStatusAndDefendersProtoOrBuilder getOknapplbpbkOrBuilder() {
       if (oknapplbpbkBuilder_ != null) {
         return oknapplbpbkBuilder_.getMessageOrBuilder();
       } else {
         return oknapplbpbk_ == null ?
-            POGOProtos.Rpc.AGGMCJMFNGN.getDefaultInstance() : oknapplbpbk_;
+            POGOProtos.Rpc.GymStatusAndDefendersProto.getDefaultInstance() : oknapplbpbk_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AGGMCJMFNGN oknapplbpbk = 2;</code>
+     * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto oknapplbpbk = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AGGMCJMFNGN, POGOProtos.Rpc.AGGMCJMFNGN.Builder, POGOProtos.Rpc.AGGMCJMFNGNOrBuilder> 
+        POGOProtos.Rpc.GymStatusAndDefendersProto, POGOProtos.Rpc.GymStatusAndDefendersProto.Builder, POGOProtos.Rpc.GymStatusAndDefendersProtoOrBuilder> 
         getOknapplbpbkFieldBuilder() {
       if (oknapplbpbkBuilder_ == null) {
         oknapplbpbkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.AGGMCJMFNGN, POGOProtos.Rpc.AGGMCJMFNGN.Builder, POGOProtos.Rpc.AGGMCJMFNGNOrBuilder>(
+            POGOProtos.Rpc.GymStatusAndDefendersProto, POGOProtos.Rpc.GymStatusAndDefendersProto.Builder, POGOProtos.Rpc.GymStatusAndDefendersProtoOrBuilder>(
                 getOknapplbpbk(),
                 getParentForChildren(),
                 isClean());
@@ -1034,31 +1034,31 @@ private static final long serialVersionUID = 0L;
       return oknapplbpbkBuilder_;
     }
 
-    private POGOProtos.Rpc.NDLAECIHENK eoilecekhdn_;
+    private POGOProtos.Rpc.AwardedGymBadge eoilecekhdn_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NDLAECIHENK, POGOProtos.Rpc.NDLAECIHENK.Builder, POGOProtos.Rpc.NDLAECIHENKOrBuilder> eoilecekhdnBuilder_;
+        POGOProtos.Rpc.AwardedGymBadge, POGOProtos.Rpc.AwardedGymBadge.Builder, POGOProtos.Rpc.AwardedGymBadgeOrBuilder> eoilecekhdnBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
      * @return Whether the eoilecekhdn field is set.
      */
     public boolean hasEoilecekhdn() {
       return eoilecekhdnBuilder_ != null || eoilecekhdn_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
      * @return The eoilecekhdn.
      */
-    public POGOProtos.Rpc.NDLAECIHENK getEoilecekhdn() {
+    public POGOProtos.Rpc.AwardedGymBadge getEoilecekhdn() {
       if (eoilecekhdnBuilder_ == null) {
-        return eoilecekhdn_ == null ? POGOProtos.Rpc.NDLAECIHENK.getDefaultInstance() : eoilecekhdn_;
+        return eoilecekhdn_ == null ? POGOProtos.Rpc.AwardedGymBadge.getDefaultInstance() : eoilecekhdn_;
       } else {
         return eoilecekhdnBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
      */
-    public Builder setEoilecekhdn(POGOProtos.Rpc.NDLAECIHENK value) {
+    public Builder setEoilecekhdn(POGOProtos.Rpc.AwardedGymBadge value) {
       if (eoilecekhdnBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1072,10 +1072,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
      */
     public Builder setEoilecekhdn(
-        POGOProtos.Rpc.NDLAECIHENK.Builder builderForValue) {
+        POGOProtos.Rpc.AwardedGymBadge.Builder builderForValue) {
       if (eoilecekhdnBuilder_ == null) {
         eoilecekhdn_ = builderForValue.build();
         onChanged();
@@ -1086,13 +1086,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
      */
-    public Builder mergeEoilecekhdn(POGOProtos.Rpc.NDLAECIHENK value) {
+    public Builder mergeEoilecekhdn(POGOProtos.Rpc.AwardedGymBadge value) {
       if (eoilecekhdnBuilder_ == null) {
         if (eoilecekhdn_ != null) {
           eoilecekhdn_ =
-            POGOProtos.Rpc.NDLAECIHENK.newBuilder(eoilecekhdn_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.AwardedGymBadge.newBuilder(eoilecekhdn_).mergeFrom(value).buildPartial();
         } else {
           eoilecekhdn_ = value;
         }
@@ -1104,7 +1104,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
      */
     public Builder clearEoilecekhdn() {
       if (eoilecekhdnBuilder_ == null) {
@@ -1118,33 +1118,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
      */
-    public POGOProtos.Rpc.NDLAECIHENK.Builder getEoilecekhdnBuilder() {
+    public POGOProtos.Rpc.AwardedGymBadge.Builder getEoilecekhdnBuilder() {
       
       onChanged();
       return getEoilecekhdnFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
      */
-    public POGOProtos.Rpc.NDLAECIHENKOrBuilder getEoilecekhdnOrBuilder() {
+    public POGOProtos.Rpc.AwardedGymBadgeOrBuilder getEoilecekhdnOrBuilder() {
       if (eoilecekhdnBuilder_ != null) {
         return eoilecekhdnBuilder_.getMessageOrBuilder();
       } else {
         return eoilecekhdn_ == null ?
-            POGOProtos.Rpc.NDLAECIHENK.getDefaultInstance() : eoilecekhdn_;
+            POGOProtos.Rpc.AwardedGymBadge.getDefaultInstance() : eoilecekhdn_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NDLAECIHENK eoilecekhdn = 3;</code>
+     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NDLAECIHENK, POGOProtos.Rpc.NDLAECIHENK.Builder, POGOProtos.Rpc.NDLAECIHENKOrBuilder> 
+        POGOProtos.Rpc.AwardedGymBadge, POGOProtos.Rpc.AwardedGymBadge.Builder, POGOProtos.Rpc.AwardedGymBadgeOrBuilder> 
         getEoilecekhdnFieldBuilder() {
       if (eoilecekhdnBuilder_ == null) {
         eoilecekhdnBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.NDLAECIHENK, POGOProtos.Rpc.NDLAECIHENK.Builder, POGOProtos.Rpc.NDLAECIHENKOrBuilder>(
+            POGOProtos.Rpc.AwardedGymBadge, POGOProtos.Rpc.AwardedGymBadge.Builder, POGOProtos.Rpc.AwardedGymBadgeOrBuilder>(
                 getEoilecekhdn(),
                 getParentForChildren(),
                 isClean());

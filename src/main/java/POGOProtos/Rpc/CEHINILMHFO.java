@@ -53,11 +53,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.DLAAGICPEDP.Builder subBuilder = null;
+            POGOProtos.Rpc.SocialPlayerSettingsProto.Builder subBuilder = null;
             if (bmlimeljeek_ != null) {
               subBuilder = bmlimeljeek_.toBuilder();
             }
-            bmlimeljeek_ = input.readMessage(POGOProtos.Rpc.DLAAGICPEDP.parser(), extensionRegistry);
+            bmlimeljeek_ = input.readMessage(POGOProtos.Rpc.SocialPlayerSettingsProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(bmlimeljeek_);
               bmlimeljeek_ = subBuilder.buildPartial();
@@ -98,9 +98,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int BMLIMELJEEK_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek_;
+  private POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek_;
   /**
-   * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
    * @return Whether the bmlimeljeek field is set.
    */
   @java.lang.Override
@@ -108,18 +108,18 @@ private static final long serialVersionUID = 0L;
     return bmlimeljeek_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
    * @return The bmlimeljeek.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DLAAGICPEDP getBmlimeljeek() {
-    return bmlimeljeek_ == null ? POGOProtos.Rpc.DLAAGICPEDP.getDefaultInstance() : bmlimeljeek_;
+  public POGOProtos.Rpc.SocialPlayerSettingsProto getBmlimeljeek() {
+    return bmlimeljeek_ == null ? POGOProtos.Rpc.SocialPlayerSettingsProto.getDefaultInstance() : bmlimeljeek_;
   }
   /**
-   * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DLAAGICPEDPOrBuilder getBmlimeljeekOrBuilder() {
+  public POGOProtos.Rpc.SocialPlayerSettingsProtoOrBuilder getBmlimeljeekOrBuilder() {
     return getBmlimeljeek();
   }
 
@@ -442,31 +442,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek_;
+    private POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DLAAGICPEDP, POGOProtos.Rpc.DLAAGICPEDP.Builder, POGOProtos.Rpc.DLAAGICPEDPOrBuilder> bmlimeljeekBuilder_;
+        POGOProtos.Rpc.SocialPlayerSettingsProto, POGOProtos.Rpc.SocialPlayerSettingsProto.Builder, POGOProtos.Rpc.SocialPlayerSettingsProtoOrBuilder> bmlimeljeekBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+     * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
      * @return Whether the bmlimeljeek field is set.
      */
     public boolean hasBmlimeljeek() {
       return bmlimeljeekBuilder_ != null || bmlimeljeek_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+     * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
      * @return The bmlimeljeek.
      */
-    public POGOProtos.Rpc.DLAAGICPEDP getBmlimeljeek() {
+    public POGOProtos.Rpc.SocialPlayerSettingsProto getBmlimeljeek() {
       if (bmlimeljeekBuilder_ == null) {
-        return bmlimeljeek_ == null ? POGOProtos.Rpc.DLAAGICPEDP.getDefaultInstance() : bmlimeljeek_;
+        return bmlimeljeek_ == null ? POGOProtos.Rpc.SocialPlayerSettingsProto.getDefaultInstance() : bmlimeljeek_;
       } else {
         return bmlimeljeekBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+     * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
      */
-    public Builder setBmlimeljeek(POGOProtos.Rpc.DLAAGICPEDP value) {
+    public Builder setBmlimeljeek(POGOProtos.Rpc.SocialPlayerSettingsProto value) {
       if (bmlimeljeekBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -480,10 +480,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+     * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
      */
     public Builder setBmlimeljeek(
-        POGOProtos.Rpc.DLAAGICPEDP.Builder builderForValue) {
+        POGOProtos.Rpc.SocialPlayerSettingsProto.Builder builderForValue) {
       if (bmlimeljeekBuilder_ == null) {
         bmlimeljeek_ = builderForValue.build();
         onChanged();
@@ -494,13 +494,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+     * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
      */
-    public Builder mergeBmlimeljeek(POGOProtos.Rpc.DLAAGICPEDP value) {
+    public Builder mergeBmlimeljeek(POGOProtos.Rpc.SocialPlayerSettingsProto value) {
       if (bmlimeljeekBuilder_ == null) {
         if (bmlimeljeek_ != null) {
           bmlimeljeek_ =
-            POGOProtos.Rpc.DLAAGICPEDP.newBuilder(bmlimeljeek_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.SocialPlayerSettingsProto.newBuilder(bmlimeljeek_).mergeFrom(value).buildPartial();
         } else {
           bmlimeljeek_ = value;
         }
@@ -512,7 +512,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+     * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
      */
     public Builder clearBmlimeljeek() {
       if (bmlimeljeekBuilder_ == null) {
@@ -526,33 +526,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+     * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
      */
-    public POGOProtos.Rpc.DLAAGICPEDP.Builder getBmlimeljeekBuilder() {
+    public POGOProtos.Rpc.SocialPlayerSettingsProto.Builder getBmlimeljeekBuilder() {
       
       onChanged();
       return getBmlimeljeekFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+     * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
      */
-    public POGOProtos.Rpc.DLAAGICPEDPOrBuilder getBmlimeljeekOrBuilder() {
+    public POGOProtos.Rpc.SocialPlayerSettingsProtoOrBuilder getBmlimeljeekOrBuilder() {
       if (bmlimeljeekBuilder_ != null) {
         return bmlimeljeekBuilder_.getMessageOrBuilder();
       } else {
         return bmlimeljeek_ == null ?
-            POGOProtos.Rpc.DLAAGICPEDP.getDefaultInstance() : bmlimeljeek_;
+            POGOProtos.Rpc.SocialPlayerSettingsProto.getDefaultInstance() : bmlimeljeek_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DLAAGICPEDP bmlimeljeek = 1;</code>
+     * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto bmlimeljeek = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DLAAGICPEDP, POGOProtos.Rpc.DLAAGICPEDP.Builder, POGOProtos.Rpc.DLAAGICPEDPOrBuilder> 
+        POGOProtos.Rpc.SocialPlayerSettingsProto, POGOProtos.Rpc.SocialPlayerSettingsProto.Builder, POGOProtos.Rpc.SocialPlayerSettingsProtoOrBuilder> 
         getBmlimeljeekFieldBuilder() {
       if (bmlimeljeekBuilder_ == null) {
         bmlimeljeekBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.DLAAGICPEDP, POGOProtos.Rpc.DLAAGICPEDP.Builder, POGOProtos.Rpc.DLAAGICPEDPOrBuilder>(
+            POGOProtos.Rpc.SocialPlayerSettingsProto, POGOProtos.Rpc.SocialPlayerSettingsProto.Builder, POGOProtos.Rpc.SocialPlayerSettingsProtoOrBuilder>(
                 getBmlimeljeek(),
                 getParentForChildren(),
                 isClean());

@@ -61,11 +61,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 26: {
-            POGOProtos.Rpc.HPIFJELPBGP.Builder subBuilder = null;
+            POGOProtos.Rpc.BuddyStats.Builder subBuilder = null;
             if (bcnfhogkjfj_ != null) {
               subBuilder = bcnfhogkjfj_.toBuilder();
             }
-            bcnfhogkjfj_ = input.readMessage(POGOProtos.Rpc.HPIFJELPBGP.parser(), extensionRegistry);
+            bcnfhogkjfj_ = input.readMessage(POGOProtos.Rpc.BuddyStats.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(bcnfhogkjfj_);
               bcnfhogkjfj_ = subBuilder.buildPartial();
@@ -74,11 +74,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 50: {
-            POGOProtos.Rpc.NLOCPHGFFNM.Builder subBuilder = null;
+            POGOProtos.Rpc.BuddyGiftProto.Builder subBuilder = null;
             if (nchennmhggm_ != null) {
               subBuilder = nchennmhggm_.toBuilder();
             }
-            nchennmhggm_ = input.readMessage(POGOProtos.Rpc.NLOCPHGFFNM.parser(), extensionRegistry);
+            nchennmhggm_ = input.readMessage(POGOProtos.Rpc.BuddyGiftProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(nchennmhggm_);
               nchennmhggm_ = subBuilder.buildPartial();
@@ -103,7 +103,7 @@ private static final long serialVersionUID = 0L;
                   OegphmcaenbDefaultEntryHolder.defaultEntry);
               mutable_bitField0_ |= 0x00000001;
             }
-            com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+            com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
             oegphmcaenb__ = input.readMessage(
                 OegphmcaenbDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
             oegphmcaenb_.getMutableMap().put(
@@ -124,11 +124,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 90: {
-            POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.Builder subBuilder = null;
+            POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder subBuilder = null;
             if (cncabapaflc_ != null) {
               subBuilder = cncabapaflc_.toBuilder();
             }
-            cncabapaflc_ = input.readMessage(POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.parser(), extensionRegistry);
+            cncabapaflc_ = input.readMessage(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(cncabapaflc_);
               cncabapaflc_ = subBuilder.buildPartial();
@@ -201,9 +201,9 @@ private static final long serialVersionUID = 0L;
    * ref: JBIAAAMCMEG/DHPPAGIEOGN/JKICCDOBCPJ
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ}
+   * Protobuf enum {@code POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult}
    */
-  public enum JKICCDOBCPJ
+  public enum BuddyValidationResult
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNSET = 0;</code>
@@ -280,7 +280,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static JKICCDOBCPJ valueOf(int value) {
+    public static BuddyValidationResult valueOf(int value) {
       return forNumber(value);
     }
 
@@ -288,7 +288,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static JKICCDOBCPJ forNumber(int value) {
+    public static BuddyValidationResult forNumber(int value) {
       switch (value) {
         case 0: return UNSET;
         case 1: return SUCCESS;
@@ -301,15 +301,15 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<JKICCDOBCPJ>
+    public static com.google.protobuf.Internal.EnumLiteMap<BuddyValidationResult>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        JKICCDOBCPJ> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<JKICCDOBCPJ>() {
-            public JKICCDOBCPJ findValueByNumber(int number) {
-              return JKICCDOBCPJ.forNumber(number);
+        BuddyValidationResult> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<BuddyValidationResult>() {
+            public BuddyValidationResult findValueByNumber(int number) {
+              return BuddyValidationResult.forNumber(number);
             }
           };
 
@@ -330,9 +330,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.BuddyObservedData.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final JKICCDOBCPJ[] VALUES = values();
+    private static final BuddyValidationResult[] VALUES = values();
 
-    public static JKICCDOBCPJ valueOf(
+    public static BuddyValidationResult valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -346,15 +346,15 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private JKICCDOBCPJ(int value) {
+    private BuddyValidationResult(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult)
   }
 
-  public interface AJECMKHAMNFOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF)
+  public interface BuddyFeedStatsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -386,25 +386,25 @@ private static final long serialVersionUID = 0L;
    * ref: JBIAAAMCMEG/DHPPAGIEOGN/AJECMKHAMNF
    * </pre>
    *
-   * Protobuf type {@code POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF}
+   * Protobuf type {@code POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats}
    */
-  public static final class AJECMKHAMNF extends
+  public static final class BuddyFeedStats extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF)
-      AJECMKHAMNFOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats)
+      BuddyFeedStatsOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use AJECMKHAMNF.newBuilder() to construct.
-    private AJECMKHAMNF(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use BuddyFeedStats.newBuilder() to construct.
+    private BuddyFeedStats(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private AJECMKHAMNF() {
+    private BuddyFeedStats() {
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new AJECMKHAMNF();
+      return new BuddyFeedStats();
     }
 
     @java.lang.Override
@@ -412,7 +412,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private AJECMKHAMNF(
+    private BuddyFeedStats(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -471,15 +471,15 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_AJECMKHAMNF_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_BuddyFeedStats_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_AJECMKHAMNF_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_BuddyFeedStats_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.class, POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.Builder.class);
+              POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.class, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder.class);
     }
 
     public static final int PBMDMJCDLNO_FIELD_NUMBER = 1;
@@ -587,10 +587,10 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF)) {
+      if (!(obj instanceof POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats)) {
         return super.equals(obj);
       }
-      POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF other = (POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF) obj;
+      POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats other = (POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats) obj;
 
       if (getPbmdmjcdlno()
           != other.getPbmdmjcdlno()) return false;
@@ -629,69 +629,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseFrom(
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseFrom(
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseFrom(
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseFrom(
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseFrom(byte[] data)
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseFrom(
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseFrom(
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseDelimitedFrom(
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseFrom(
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parseFrom(
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -704,7 +704,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF prototype) {
+    public static Builder newBuilder(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -724,26 +724,26 @@ private static final long serialVersionUID = 0L;
      * ref: JBIAAAMCMEG/DHPPAGIEOGN/AJECMKHAMNF
      * </pre>
      *
-     * Protobuf type {@code POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF}
+     * Protobuf type {@code POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF)
-        POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNFOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats)
+        POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_AJECMKHAMNF_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_BuddyFeedStats_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_AJECMKHAMNF_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_BuddyFeedStats_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.class, POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.Builder.class);
+                POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.class, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder.class);
       }
 
-      // Construct using POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.newBuilder()
+      // Construct using POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -775,17 +775,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_AJECMKHAMNF_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_BuddyFeedStats_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF getDefaultInstanceForType() {
-        return POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.getDefaultInstance();
+      public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getDefaultInstanceForType() {
+        return POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF build() {
-        POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF result = buildPartial();
+      public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats build() {
+        POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -793,8 +793,8 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF buildPartial() {
-        POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF result = new POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF(this);
+      public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buildPartial() {
+        POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats result = new POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats(this);
         result.pbmdmjcdlno_ = pbmdmjcdlno_;
         result.bmlkehlgdem_ = bmlkehlgdem_;
         result.afmodaneioo_ = afmodaneioo_;
@@ -837,16 +837,16 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF) {
-          return mergeFrom((POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF)other);
+        if (other instanceof POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats) {
+          return mergeFrom((POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF other) {
-        if (other == POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.getDefaultInstance()) return this;
+      public Builder mergeFrom(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats other) {
+        if (other == POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance()) return this;
         if (other.getPbmdmjcdlno() != 0L) {
           setPbmdmjcdlno(other.getPbmdmjcdlno());
         }
@@ -874,11 +874,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF parsedMessage = null;
+        POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1024,41 +1024,41 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF)
-    private static final POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats)
+    private static final POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF();
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats();
     }
 
-    public static POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF getDefaultInstance() {
+    public static POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<AJECMKHAMNF>
-        PARSER = new com.google.protobuf.AbstractParser<AJECMKHAMNF>() {
+    private static final com.google.protobuf.Parser<BuddyFeedStats>
+        PARSER = new com.google.protobuf.AbstractParser<BuddyFeedStats>() {
       @java.lang.Override
-      public AJECMKHAMNF parsePartialFrom(
+      public BuddyFeedStats parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AJECMKHAMNF(input, extensionRegistry);
+        return new BuddyFeedStats(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<AJECMKHAMNF> parser() {
+    public static com.google.protobuf.Parser<BuddyFeedStats> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<AJECMKHAMNF> getParserForType() {
+    public com.google.protobuf.Parser<BuddyFeedStats> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF getDefaultInstanceForType() {
+    public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1076,9 +1076,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int BCNFHOGKJFJ_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj_;
+  private POGOProtos.Rpc.BuddyStats bcnfhogkjfj_;
   /**
-   * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
    * @return Whether the bcnfhogkjfj field is set.
    */
   @java.lang.Override
@@ -1086,25 +1086,25 @@ private static final long serialVersionUID = 0L;
     return bcnfhogkjfj_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
    * @return The bcnfhogkjfj.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.HPIFJELPBGP getBcnfhogkjfj() {
-    return bcnfhogkjfj_ == null ? POGOProtos.Rpc.HPIFJELPBGP.getDefaultInstance() : bcnfhogkjfj_;
+  public POGOProtos.Rpc.BuddyStats getBcnfhogkjfj() {
+    return bcnfhogkjfj_ == null ? POGOProtos.Rpc.BuddyStats.getDefaultInstance() : bcnfhogkjfj_;
   }
   /**
-   * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.HPIFJELPBGPOrBuilder getBcnfhogkjfjOrBuilder() {
+  public POGOProtos.Rpc.BuddyStatsOrBuilder getBcnfhogkjfjOrBuilder() {
     return getBcnfhogkjfj();
   }
 
   public static final int NCHENNMHGGM_FIELD_NUMBER = 6;
-  private POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm_;
+  private POGOProtos.Rpc.BuddyGiftProto nchennmhggm_;
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
    * @return Whether the nchennmhggm field is set.
    */
   @java.lang.Override
@@ -1112,18 +1112,18 @@ private static final long serialVersionUID = 0L;
     return nchennmhggm_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
    * @return The nchennmhggm.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.NLOCPHGFFNM getNchennmhggm() {
-    return nchennmhggm_ == null ? POGOProtos.Rpc.NLOCPHGFFNM.getDefaultInstance() : nchennmhggm_;
+  public POGOProtos.Rpc.BuddyGiftProto getNchennmhggm() {
+    return nchennmhggm_ == null ? POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : nchennmhggm_;
   }
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.NLOCPHGFFNMOrBuilder getNchennmhggmOrBuilder() {
+  public POGOProtos.Rpc.BuddyGiftProtoOrBuilder getNchennmhggmOrBuilder() {
     return getNchennmhggm();
   }
 
@@ -1141,37 +1141,37 @@ private static final long serialVersionUID = 0L;
   public static final int PECAGINMFAN_FIELD_NUMBER = 8;
   private int pecaginmfan_;
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ pecaginmfan = 8;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
    * @return The enum numeric value on the wire for pecaginmfan.
    */
   @java.lang.Override public int getPecaginmfanValue() {
     return pecaginmfan_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ pecaginmfan = 8;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
    * @return The pecaginmfan.
    */
-  @java.lang.Override public POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ getPecaginmfan() {
+  @java.lang.Override public POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult getPecaginmfan() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ result = POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ.valueOf(pecaginmfan_);
-    return result == null ? POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ.UNRECOGNIZED : result;
+    POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult result = POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.valueOf(pecaginmfan_);
+    return result == null ? POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.UNRECOGNIZED : result;
   }
 
   public static final int OEGPHMCAENB_FIELD_NUMBER = 9;
   private static final class OegphmcaenbDefaultEntryHolder {
     static final com.google.protobuf.MapEntry<
-        java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> defaultEntry =
+        java.lang.Integer, POGOProtos.Rpc.SouvenirProto> defaultEntry =
             com.google.protobuf.MapEntry
-            .<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>newDefaultInstance(
+            .<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>newDefaultInstance(
                 POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_OegphmcaenbEntry_descriptor, 
                 com.google.protobuf.WireFormat.FieldType.INT32,
                 0,
                 com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                POGOProtos.Rpc.PDNJNJNJKAG.getDefaultInstance());
+                POGOProtos.Rpc.SouvenirProto.getDefaultInstance());
   }
   private com.google.protobuf.MapField<
-      java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> oegphmcaenb_;
-  private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+      java.lang.Integer, POGOProtos.Rpc.SouvenirProto> oegphmcaenb_;
+  private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
   internalGetOegphmcaenb() {
     if (oegphmcaenb_ == null) {
       return com.google.protobuf.MapField.emptyMapField(
@@ -1184,7 +1184,7 @@ private static final long serialVersionUID = 0L;
     return internalGetOegphmcaenb().getMap().size();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
    */
 
   @java.lang.Override
@@ -1198,39 +1198,39 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   @java.lang.Deprecated
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> getOegphmcaenb() {
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenb() {
     return getOegphmcaenbMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
    */
   @java.lang.Override
 
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> getOegphmcaenbMap() {
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenbMap() {
     return internalGetOegphmcaenb().getMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrDefault(
+  public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrDefault(
       int key,
-      POGOProtos.Rpc.PDNJNJNJKAG defaultValue) {
+      POGOProtos.Rpc.SouvenirProto defaultValue) {
     
-    java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> map =
+    java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
         internalGetOegphmcaenb().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrThrow(
+  public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrThrow(
       int key) {
     
-    java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> map =
+    java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
         internalGetOegphmcaenb().getMap();
     if (!map.containsKey(key)) {
       throw new java.lang.IllegalArgumentException();
@@ -1265,9 +1265,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CNCABAPAFLC_FIELD_NUMBER = 11;
-  private POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc_;
+  private POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc_;
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
    * @return Whether the cncabapaflc field is set.
    */
   @java.lang.Override
@@ -1275,18 +1275,18 @@ private static final long serialVersionUID = 0L;
     return cncabapaflc_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
    * @return The cncabapaflc.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF getCncabapaflc() {
-    return cncabapaflc_ == null ? POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.getDefaultInstance() : cncabapaflc_;
+  public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getCncabapaflc() {
+    return cncabapaflc_ == null ? POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance() : cncabapaflc_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNFOrBuilder getCncabapaflcOrBuilder() {
+  public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder getCncabapaflcOrBuilder() {
     return getCncabapaflc();
   }
 
@@ -1376,7 +1376,7 @@ private static final long serialVersionUID = 0L;
     if (nkhenfnjjge_ != 0) {
       output.writeInt32(7, nkhenfnjjge_);
     }
-    if (pecaginmfan_ != POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ.UNSET.getNumber()) {
+    if (pecaginmfan_ != POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.UNSET.getNumber()) {
       output.writeEnum(8, pecaginmfan_);
     }
     com.google.protobuf.GeneratedMessageV3
@@ -1425,13 +1425,13 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(7, nkhenfnjjge_);
     }
-    if (pecaginmfan_ != POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ.UNSET.getNumber()) {
+    if (pecaginmfan_ != POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(8, pecaginmfan_);
     }
-    for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> entry
+    for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> entry
          : internalGetOegphmcaenb().getMap().entrySet()) {
-      com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+      com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
       oegphmcaenb__ = OegphmcaenbDefaultEntryHolder.defaultEntry.newBuilderForType()
           .setKey(entry.getKey())
           .setValue(entry.getValue())
@@ -1943,31 +1943,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj_;
+    private POGOProtos.Rpc.BuddyStats bcnfhogkjfj_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HPIFJELPBGP, POGOProtos.Rpc.HPIFJELPBGP.Builder, POGOProtos.Rpc.HPIFJELPBGPOrBuilder> bcnfhogkjfjBuilder_;
+        POGOProtos.Rpc.BuddyStats, POGOProtos.Rpc.BuddyStats.Builder, POGOProtos.Rpc.BuddyStatsOrBuilder> bcnfhogkjfjBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
      * @return Whether the bcnfhogkjfj field is set.
      */
     public boolean hasBcnfhogkjfj() {
       return bcnfhogkjfjBuilder_ != null || bcnfhogkjfj_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
      * @return The bcnfhogkjfj.
      */
-    public POGOProtos.Rpc.HPIFJELPBGP getBcnfhogkjfj() {
+    public POGOProtos.Rpc.BuddyStats getBcnfhogkjfj() {
       if (bcnfhogkjfjBuilder_ == null) {
-        return bcnfhogkjfj_ == null ? POGOProtos.Rpc.HPIFJELPBGP.getDefaultInstance() : bcnfhogkjfj_;
+        return bcnfhogkjfj_ == null ? POGOProtos.Rpc.BuddyStats.getDefaultInstance() : bcnfhogkjfj_;
       } else {
         return bcnfhogkjfjBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
      */
-    public Builder setBcnfhogkjfj(POGOProtos.Rpc.HPIFJELPBGP value) {
+    public Builder setBcnfhogkjfj(POGOProtos.Rpc.BuddyStats value) {
       if (bcnfhogkjfjBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1981,10 +1981,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
      */
     public Builder setBcnfhogkjfj(
-        POGOProtos.Rpc.HPIFJELPBGP.Builder builderForValue) {
+        POGOProtos.Rpc.BuddyStats.Builder builderForValue) {
       if (bcnfhogkjfjBuilder_ == null) {
         bcnfhogkjfj_ = builderForValue.build();
         onChanged();
@@ -1995,13 +1995,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
      */
-    public Builder mergeBcnfhogkjfj(POGOProtos.Rpc.HPIFJELPBGP value) {
+    public Builder mergeBcnfhogkjfj(POGOProtos.Rpc.BuddyStats value) {
       if (bcnfhogkjfjBuilder_ == null) {
         if (bcnfhogkjfj_ != null) {
           bcnfhogkjfj_ =
-            POGOProtos.Rpc.HPIFJELPBGP.newBuilder(bcnfhogkjfj_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.BuddyStats.newBuilder(bcnfhogkjfj_).mergeFrom(value).buildPartial();
         } else {
           bcnfhogkjfj_ = value;
         }
@@ -2013,7 +2013,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
      */
     public Builder clearBcnfhogkjfj() {
       if (bcnfhogkjfjBuilder_ == null) {
@@ -2027,33 +2027,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
      */
-    public POGOProtos.Rpc.HPIFJELPBGP.Builder getBcnfhogkjfjBuilder() {
+    public POGOProtos.Rpc.BuddyStats.Builder getBcnfhogkjfjBuilder() {
       
       onChanged();
       return getBcnfhogkjfjFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
      */
-    public POGOProtos.Rpc.HPIFJELPBGPOrBuilder getBcnfhogkjfjOrBuilder() {
+    public POGOProtos.Rpc.BuddyStatsOrBuilder getBcnfhogkjfjOrBuilder() {
       if (bcnfhogkjfjBuilder_ != null) {
         return bcnfhogkjfjBuilder_.getMessageOrBuilder();
       } else {
         return bcnfhogkjfj_ == null ?
-            POGOProtos.Rpc.HPIFJELPBGP.getDefaultInstance() : bcnfhogkjfj_;
+            POGOProtos.Rpc.BuddyStats.getDefaultInstance() : bcnfhogkjfj_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HPIFJELPBGP bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HPIFJELPBGP, POGOProtos.Rpc.HPIFJELPBGP.Builder, POGOProtos.Rpc.HPIFJELPBGPOrBuilder> 
+        POGOProtos.Rpc.BuddyStats, POGOProtos.Rpc.BuddyStats.Builder, POGOProtos.Rpc.BuddyStatsOrBuilder> 
         getBcnfhogkjfjFieldBuilder() {
       if (bcnfhogkjfjBuilder_ == null) {
         bcnfhogkjfjBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.HPIFJELPBGP, POGOProtos.Rpc.HPIFJELPBGP.Builder, POGOProtos.Rpc.HPIFJELPBGPOrBuilder>(
+            POGOProtos.Rpc.BuddyStats, POGOProtos.Rpc.BuddyStats.Builder, POGOProtos.Rpc.BuddyStatsOrBuilder>(
                 getBcnfhogkjfj(),
                 getParentForChildren(),
                 isClean());
@@ -2062,31 +2062,31 @@ private static final long serialVersionUID = 0L;
       return bcnfhogkjfjBuilder_;
     }
 
-    private POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm_;
+    private POGOProtos.Rpc.BuddyGiftProto nchennmhggm_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NLOCPHGFFNM, POGOProtos.Rpc.NLOCPHGFFNM.Builder, POGOProtos.Rpc.NLOCPHGFFNMOrBuilder> nchennmhggmBuilder_;
+        POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder> nchennmhggmBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
      * @return Whether the nchennmhggm field is set.
      */
     public boolean hasNchennmhggm() {
       return nchennmhggmBuilder_ != null || nchennmhggm_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
      * @return The nchennmhggm.
      */
-    public POGOProtos.Rpc.NLOCPHGFFNM getNchennmhggm() {
+    public POGOProtos.Rpc.BuddyGiftProto getNchennmhggm() {
       if (nchennmhggmBuilder_ == null) {
-        return nchennmhggm_ == null ? POGOProtos.Rpc.NLOCPHGFFNM.getDefaultInstance() : nchennmhggm_;
+        return nchennmhggm_ == null ? POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : nchennmhggm_;
       } else {
         return nchennmhggmBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
      */
-    public Builder setNchennmhggm(POGOProtos.Rpc.NLOCPHGFFNM value) {
+    public Builder setNchennmhggm(POGOProtos.Rpc.BuddyGiftProto value) {
       if (nchennmhggmBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2100,10 +2100,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
      */
     public Builder setNchennmhggm(
-        POGOProtos.Rpc.NLOCPHGFFNM.Builder builderForValue) {
+        POGOProtos.Rpc.BuddyGiftProto.Builder builderForValue) {
       if (nchennmhggmBuilder_ == null) {
         nchennmhggm_ = builderForValue.build();
         onChanged();
@@ -2114,13 +2114,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
      */
-    public Builder mergeNchennmhggm(POGOProtos.Rpc.NLOCPHGFFNM value) {
+    public Builder mergeNchennmhggm(POGOProtos.Rpc.BuddyGiftProto value) {
       if (nchennmhggmBuilder_ == null) {
         if (nchennmhggm_ != null) {
           nchennmhggm_ =
-            POGOProtos.Rpc.NLOCPHGFFNM.newBuilder(nchennmhggm_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.BuddyGiftProto.newBuilder(nchennmhggm_).mergeFrom(value).buildPartial();
         } else {
           nchennmhggm_ = value;
         }
@@ -2132,7 +2132,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
      */
     public Builder clearNchennmhggm() {
       if (nchennmhggmBuilder_ == null) {
@@ -2146,33 +2146,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
      */
-    public POGOProtos.Rpc.NLOCPHGFFNM.Builder getNchennmhggmBuilder() {
+    public POGOProtos.Rpc.BuddyGiftProto.Builder getNchennmhggmBuilder() {
       
       onChanged();
       return getNchennmhggmFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
      */
-    public POGOProtos.Rpc.NLOCPHGFFNMOrBuilder getNchennmhggmOrBuilder() {
+    public POGOProtos.Rpc.BuddyGiftProtoOrBuilder getNchennmhggmOrBuilder() {
       if (nchennmhggmBuilder_ != null) {
         return nchennmhggmBuilder_.getMessageOrBuilder();
       } else {
         return nchennmhggm_ == null ?
-            POGOProtos.Rpc.NLOCPHGFFNM.getDefaultInstance() : nchennmhggm_;
+            POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : nchennmhggm_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NLOCPHGFFNM, POGOProtos.Rpc.NLOCPHGFFNM.Builder, POGOProtos.Rpc.NLOCPHGFFNMOrBuilder> 
+        POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder> 
         getNchennmhggmFieldBuilder() {
       if (nchennmhggmBuilder_ == null) {
         nchennmhggmBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.NLOCPHGFFNM, POGOProtos.Rpc.NLOCPHGFFNM.Builder, POGOProtos.Rpc.NLOCPHGFFNMOrBuilder>(
+            POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder>(
                 getNchennmhggm(),
                 getParentForChildren(),
                 isClean());
@@ -2214,14 +2214,14 @@ private static final long serialVersionUID = 0L;
 
     private int pecaginmfan_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ pecaginmfan = 8;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
      * @return The enum numeric value on the wire for pecaginmfan.
      */
     @java.lang.Override public int getPecaginmfanValue() {
       return pecaginmfan_;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ pecaginmfan = 8;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
      * @param value The enum numeric value on the wire for pecaginmfan to set.
      * @return This builder for chaining.
      */
@@ -2232,21 +2232,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ pecaginmfan = 8;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
      * @return The pecaginmfan.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ getPecaginmfan() {
+    public POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult getPecaginmfan() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ result = POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ.valueOf(pecaginmfan_);
-      return result == null ? POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ.UNRECOGNIZED : result;
+      POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult result = POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.valueOf(pecaginmfan_);
+      return result == null ? POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ pecaginmfan = 8;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
      * @param value The pecaginmfan to set.
      * @return This builder for chaining.
      */
-    public Builder setPecaginmfan(POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ value) {
+    public Builder setPecaginmfan(POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -2256,7 +2256,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.JKICCDOBCPJ pecaginmfan = 8;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
      * @return This builder for chaining.
      */
     public Builder clearPecaginmfan() {
@@ -2267,8 +2267,8 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.MapField<
-        java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> oegphmcaenb_;
-    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+        java.lang.Integer, POGOProtos.Rpc.SouvenirProto> oegphmcaenb_;
+    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
     internalGetOegphmcaenb() {
       if (oegphmcaenb_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -2276,7 +2276,7 @@ private static final long serialVersionUID = 0L;
       }
       return oegphmcaenb_;
     }
-    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
     internalGetMutableOegphmcaenb() {
       onChanged();;
       if (oegphmcaenb_ == null) {
@@ -2293,7 +2293,7 @@ private static final long serialVersionUID = 0L;
       return internalGetOegphmcaenb().getMap().size();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
      */
 
     @java.lang.Override
@@ -2307,39 +2307,39 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> getOegphmcaenb() {
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenb() {
       return getOegphmcaenbMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> getOegphmcaenbMap() {
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenbMap() {
       return internalGetOegphmcaenb().getMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrDefault(
+    public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrDefault(
         int key,
-        POGOProtos.Rpc.PDNJNJNJKAG defaultValue) {
+        POGOProtos.Rpc.SouvenirProto defaultValue) {
       
-      java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> map =
+      java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
           internalGetOegphmcaenb().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrThrow(
+    public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrThrow(
         int key) {
       
-      java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> map =
+      java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
           internalGetOegphmcaenb().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -2353,7 +2353,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
      */
 
     public Builder removeOegphmcaenb(
@@ -2367,16 +2367,16 @@ private static final long serialVersionUID = 0L;
      * Use alternate mutation accessors instead.
      */
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
     getMutableOegphmcaenb() {
       return internalGetMutableOegphmcaenb().getMutableMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
      */
     public Builder putOegphmcaenb(
         int key,
-        POGOProtos.Rpc.PDNJNJNJKAG value) {
+        POGOProtos.Rpc.SouvenirProto value) {
       
       if (value == null) { throw new java.lang.NullPointerException(); }
       internalGetMutableOegphmcaenb().getMutableMap()
@@ -2384,11 +2384,11 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
      */
 
     public Builder putAllOegphmcaenb(
-        java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG> values) {
+        java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> values) {
       internalGetMutableOegphmcaenb().getMutableMap()
           .putAll(values);
       return this;
@@ -2513,31 +2513,31 @@ private static final long serialVersionUID = 0L;
       return enjffacophdBuilder_;
     }
 
-    private POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc_;
+    private POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF, POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.Builder, POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNFOrBuilder> cncabapaflcBuilder_;
+        POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder> cncabapaflcBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
      * @return Whether the cncabapaflc field is set.
      */
     public boolean hasCncabapaflc() {
       return cncabapaflcBuilder_ != null || cncabapaflc_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
      * @return The cncabapaflc.
      */
-    public POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF getCncabapaflc() {
+    public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getCncabapaflc() {
       if (cncabapaflcBuilder_ == null) {
-        return cncabapaflc_ == null ? POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.getDefaultInstance() : cncabapaflc_;
+        return cncabapaflc_ == null ? POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance() : cncabapaflc_;
       } else {
         return cncabapaflcBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
      */
-    public Builder setCncabapaflc(POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF value) {
+    public Builder setCncabapaflc(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats value) {
       if (cncabapaflcBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2551,10 +2551,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
      */
     public Builder setCncabapaflc(
-        POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.Builder builderForValue) {
+        POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder builderForValue) {
       if (cncabapaflcBuilder_ == null) {
         cncabapaflc_ = builderForValue.build();
         onChanged();
@@ -2565,13 +2565,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
      */
-    public Builder mergeCncabapaflc(POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF value) {
+    public Builder mergeCncabapaflc(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats value) {
       if (cncabapaflcBuilder_ == null) {
         if (cncabapaflc_ != null) {
           cncabapaflc_ =
-            POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.newBuilder(cncabapaflc_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.newBuilder(cncabapaflc_).mergeFrom(value).buildPartial();
         } else {
           cncabapaflc_ = value;
         }
@@ -2583,7 +2583,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
      */
     public Builder clearCncabapaflc() {
       if (cncabapaflcBuilder_ == null) {
@@ -2597,33 +2597,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
      */
-    public POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.Builder getCncabapaflcBuilder() {
+    public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder getCncabapaflcBuilder() {
       
       onChanged();
       return getCncabapaflcFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
      */
-    public POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNFOrBuilder getCncabapaflcOrBuilder() {
+    public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder getCncabapaflcOrBuilder() {
       if (cncabapaflcBuilder_ != null) {
         return cncabapaflcBuilder_.getMessageOrBuilder();
       } else {
         return cncabapaflc_ == null ?
-            POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.getDefaultInstance() : cncabapaflc_;
+            POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance() : cncabapaflc_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF, POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.Builder, POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNFOrBuilder> 
+        POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder> 
         getCncabapaflcFieldBuilder() {
       if (cncabapaflcBuilder_ == null) {
         cncabapaflcBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF, POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNF.Builder, POGOProtos.Rpc.BuddyObservedData.AJECMKHAMNFOrBuilder>(
+            POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder>(
                 getCncabapaflc(),
                 getParentForChildren(),
                 isClean());

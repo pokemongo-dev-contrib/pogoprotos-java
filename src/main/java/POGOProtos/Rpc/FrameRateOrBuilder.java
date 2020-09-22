@@ -8,17 +8,17 @@ public interface FrameRateOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
    * @return Whether the keanhoahmim field is set.
    */
   boolean hasKeanhoahmim();
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
    * @return The keanhoahmim.
    */
-  POGOProtos.Rpc.HJJBCLOAFKI getKeanhoahmim();
+  POGOProtos.Rpc.PlatformMetricData getKeanhoahmim();
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI keanhoahmim = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData keanhoahmim = 1;</code>
    */
-  POGOProtos.Rpc.HJJBCLOAFKIOrBuilder getKeanhoahmimOrBuilder();
+  POGOProtos.Rpc.PlatformMetricDataOrBuilder getKeanhoahmimOrBuilder();
 }

@@ -53,11 +53,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.KMGAPBOCBGK.Builder subBuilder = null;
+            POGOProtos.Rpc.CombatPlayerPreferencesProto.Builder subBuilder = null;
             if (oijeoejhgbo_ != null) {
               subBuilder = oijeoejhgbo_.toBuilder();
             }
-            oijeoejhgbo_ = input.readMessage(POGOProtos.Rpc.KMGAPBOCBGK.parser(), extensionRegistry);
+            oijeoejhgbo_ = input.readMessage(POGOProtos.Rpc.CombatPlayerPreferencesProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(oijeoejhgbo_);
               oijeoejhgbo_ = subBuilder.buildPartial();
@@ -98,9 +98,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int OIJEOEJHGBO_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo_;
+  private POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo_;
   /**
-   * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
    * @return Whether the oijeoejhgbo field is set.
    */
   @java.lang.Override
@@ -108,18 +108,18 @@ private static final long serialVersionUID = 0L;
     return oijeoejhgbo_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
    * @return The oijeoejhgbo.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.KMGAPBOCBGK getOijeoejhgbo() {
-    return oijeoejhgbo_ == null ? POGOProtos.Rpc.KMGAPBOCBGK.getDefaultInstance() : oijeoejhgbo_;
+  public POGOProtos.Rpc.CombatPlayerPreferencesProto getOijeoejhgbo() {
+    return oijeoejhgbo_ == null ? POGOProtos.Rpc.CombatPlayerPreferencesProto.getDefaultInstance() : oijeoejhgbo_;
   }
   /**
-   * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.KMGAPBOCBGKOrBuilder getOijeoejhgboOrBuilder() {
+  public POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder getOijeoejhgboOrBuilder() {
     return getOijeoejhgbo();
   }
 
@@ -442,31 +442,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo_;
+    private POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.KMGAPBOCBGK, POGOProtos.Rpc.KMGAPBOCBGK.Builder, POGOProtos.Rpc.KMGAPBOCBGKOrBuilder> oijeoejhgboBuilder_;
+        POGOProtos.Rpc.CombatPlayerPreferencesProto, POGOProtos.Rpc.CombatPlayerPreferencesProto.Builder, POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder> oijeoejhgboBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
      * @return Whether the oijeoejhgbo field is set.
      */
     public boolean hasOijeoejhgbo() {
       return oijeoejhgboBuilder_ != null || oijeoejhgbo_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
      * @return The oijeoejhgbo.
      */
-    public POGOProtos.Rpc.KMGAPBOCBGK getOijeoejhgbo() {
+    public POGOProtos.Rpc.CombatPlayerPreferencesProto getOijeoejhgbo() {
       if (oijeoejhgboBuilder_ == null) {
-        return oijeoejhgbo_ == null ? POGOProtos.Rpc.KMGAPBOCBGK.getDefaultInstance() : oijeoejhgbo_;
+        return oijeoejhgbo_ == null ? POGOProtos.Rpc.CombatPlayerPreferencesProto.getDefaultInstance() : oijeoejhgbo_;
       } else {
         return oijeoejhgboBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
      */
-    public Builder setOijeoejhgbo(POGOProtos.Rpc.KMGAPBOCBGK value) {
+    public Builder setOijeoejhgbo(POGOProtos.Rpc.CombatPlayerPreferencesProto value) {
       if (oijeoejhgboBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -480,10 +480,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
      */
     public Builder setOijeoejhgbo(
-        POGOProtos.Rpc.KMGAPBOCBGK.Builder builderForValue) {
+        POGOProtos.Rpc.CombatPlayerPreferencesProto.Builder builderForValue) {
       if (oijeoejhgboBuilder_ == null) {
         oijeoejhgbo_ = builderForValue.build();
         onChanged();
@@ -494,13 +494,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
      */
-    public Builder mergeOijeoejhgbo(POGOProtos.Rpc.KMGAPBOCBGK value) {
+    public Builder mergeOijeoejhgbo(POGOProtos.Rpc.CombatPlayerPreferencesProto value) {
       if (oijeoejhgboBuilder_ == null) {
         if (oijeoejhgbo_ != null) {
           oijeoejhgbo_ =
-            POGOProtos.Rpc.KMGAPBOCBGK.newBuilder(oijeoejhgbo_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.CombatPlayerPreferencesProto.newBuilder(oijeoejhgbo_).mergeFrom(value).buildPartial();
         } else {
           oijeoejhgbo_ = value;
         }
@@ -512,7 +512,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
      */
     public Builder clearOijeoejhgbo() {
       if (oijeoejhgboBuilder_ == null) {
@@ -526,33 +526,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
      */
-    public POGOProtos.Rpc.KMGAPBOCBGK.Builder getOijeoejhgboBuilder() {
+    public POGOProtos.Rpc.CombatPlayerPreferencesProto.Builder getOijeoejhgboBuilder() {
       
       onChanged();
       return getOijeoejhgboFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
      */
-    public POGOProtos.Rpc.KMGAPBOCBGKOrBuilder getOijeoejhgboOrBuilder() {
+    public POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder getOijeoejhgboOrBuilder() {
       if (oijeoejhgboBuilder_ != null) {
         return oijeoejhgboBuilder_.getMessageOrBuilder();
       } else {
         return oijeoejhgbo_ == null ?
-            POGOProtos.Rpc.KMGAPBOCBGK.getDefaultInstance() : oijeoejhgbo_;
+            POGOProtos.Rpc.CombatPlayerPreferencesProto.getDefaultInstance() : oijeoejhgbo_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.KMGAPBOCBGK oijeoejhgbo = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto oijeoejhgbo = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.KMGAPBOCBGK, POGOProtos.Rpc.KMGAPBOCBGK.Builder, POGOProtos.Rpc.KMGAPBOCBGKOrBuilder> 
+        POGOProtos.Rpc.CombatPlayerPreferencesProto, POGOProtos.Rpc.CombatPlayerPreferencesProto.Builder, POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder> 
         getOijeoejhgboFieldBuilder() {
       if (oijeoejhgboBuilder_ == null) {
         oijeoejhgboBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.KMGAPBOCBGK, POGOProtos.Rpc.KMGAPBOCBGK.Builder, POGOProtos.Rpc.KMGAPBOCBGKOrBuilder>(
+            POGOProtos.Rpc.CombatPlayerPreferencesProto, POGOProtos.Rpc.CombatPlayerPreferencesProto.Builder, POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder>(
                 getOijeoejhgbo(),
                 getParentForChildren(),
                 isClean());

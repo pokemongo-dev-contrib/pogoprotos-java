@@ -98,11 +98,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 58: {
-            POGOProtos.Rpc.HIHLKDPJMMO.Builder subBuilder = null;
+            POGOProtos.Rpc.PokestopIncidentDisplayProto.Builder subBuilder = null;
             if (ccfinmjcobk_ != null) {
               subBuilder = ccfinmjcobk_.toBuilder();
             }
-            ccfinmjcobk_ = input.readMessage(POGOProtos.Rpc.HIHLKDPJMMO.parser(), extensionRegistry);
+            ccfinmjcobk_ = input.readMessage(POGOProtos.Rpc.PokestopIncidentDisplayProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(ccfinmjcobk_);
               ccfinmjcobk_ = subBuilder.buildPartial();
@@ -355,9 +355,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CCFINMJCOBK_FIELD_NUMBER = 7;
-  private POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk_;
+  private POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk_;
   /**
-   * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+   * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
    * @return Whether the ccfinmjcobk field is set.
    */
   @java.lang.Override
@@ -365,18 +365,18 @@ private static final long serialVersionUID = 0L;
     return ccfinmjcobk_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+   * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
    * @return The ccfinmjcobk.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.HIHLKDPJMMO getCcfinmjcobk() {
-    return ccfinmjcobk_ == null ? POGOProtos.Rpc.HIHLKDPJMMO.getDefaultInstance() : ccfinmjcobk_;
+  public POGOProtos.Rpc.PokestopIncidentDisplayProto getCcfinmjcobk() {
+    return ccfinmjcobk_ == null ? POGOProtos.Rpc.PokestopIncidentDisplayProto.getDefaultInstance() : ccfinmjcobk_;
   }
   /**
-   * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+   * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.HIHLKDPJMMOOrBuilder getCcfinmjcobkOrBuilder() {
+  public POGOProtos.Rpc.PokestopIncidentDisplayProtoOrBuilder getCcfinmjcobkOrBuilder() {
     return getCcfinmjcobk();
   }
 
@@ -1451,31 +1451,31 @@ private static final long serialVersionUID = 0L;
       return mnmgifhddomBuilder_;
     }
 
-    private POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk_;
+    private POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HIHLKDPJMMO, POGOProtos.Rpc.HIHLKDPJMMO.Builder, POGOProtos.Rpc.HIHLKDPJMMOOrBuilder> ccfinmjcobkBuilder_;
+        POGOProtos.Rpc.PokestopIncidentDisplayProto, POGOProtos.Rpc.PokestopIncidentDisplayProto.Builder, POGOProtos.Rpc.PokestopIncidentDisplayProtoOrBuilder> ccfinmjcobkBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+     * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
      * @return Whether the ccfinmjcobk field is set.
      */
     public boolean hasCcfinmjcobk() {
       return ccfinmjcobkBuilder_ != null || ccfinmjcobk_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+     * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
      * @return The ccfinmjcobk.
      */
-    public POGOProtos.Rpc.HIHLKDPJMMO getCcfinmjcobk() {
+    public POGOProtos.Rpc.PokestopIncidentDisplayProto getCcfinmjcobk() {
       if (ccfinmjcobkBuilder_ == null) {
-        return ccfinmjcobk_ == null ? POGOProtos.Rpc.HIHLKDPJMMO.getDefaultInstance() : ccfinmjcobk_;
+        return ccfinmjcobk_ == null ? POGOProtos.Rpc.PokestopIncidentDisplayProto.getDefaultInstance() : ccfinmjcobk_;
       } else {
         return ccfinmjcobkBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+     * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
      */
-    public Builder setCcfinmjcobk(POGOProtos.Rpc.HIHLKDPJMMO value) {
+    public Builder setCcfinmjcobk(POGOProtos.Rpc.PokestopIncidentDisplayProto value) {
       if (ccfinmjcobkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1489,10 +1489,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+     * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
      */
     public Builder setCcfinmjcobk(
-        POGOProtos.Rpc.HIHLKDPJMMO.Builder builderForValue) {
+        POGOProtos.Rpc.PokestopIncidentDisplayProto.Builder builderForValue) {
       if (ccfinmjcobkBuilder_ == null) {
         ccfinmjcobk_ = builderForValue.build();
         onChanged();
@@ -1503,13 +1503,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+     * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
      */
-    public Builder mergeCcfinmjcobk(POGOProtos.Rpc.HIHLKDPJMMO value) {
+    public Builder mergeCcfinmjcobk(POGOProtos.Rpc.PokestopIncidentDisplayProto value) {
       if (ccfinmjcobkBuilder_ == null) {
         if (ccfinmjcobk_ != null) {
           ccfinmjcobk_ =
-            POGOProtos.Rpc.HIHLKDPJMMO.newBuilder(ccfinmjcobk_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PokestopIncidentDisplayProto.newBuilder(ccfinmjcobk_).mergeFrom(value).buildPartial();
         } else {
           ccfinmjcobk_ = value;
         }
@@ -1521,7 +1521,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+     * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
      */
     public Builder clearCcfinmjcobk() {
       if (ccfinmjcobkBuilder_ == null) {
@@ -1535,33 +1535,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+     * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
      */
-    public POGOProtos.Rpc.HIHLKDPJMMO.Builder getCcfinmjcobkBuilder() {
+    public POGOProtos.Rpc.PokestopIncidentDisplayProto.Builder getCcfinmjcobkBuilder() {
       
       onChanged();
       return getCcfinmjcobkFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+     * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
      */
-    public POGOProtos.Rpc.HIHLKDPJMMOOrBuilder getCcfinmjcobkOrBuilder() {
+    public POGOProtos.Rpc.PokestopIncidentDisplayProtoOrBuilder getCcfinmjcobkOrBuilder() {
       if (ccfinmjcobkBuilder_ != null) {
         return ccfinmjcobkBuilder_.getMessageOrBuilder();
       } else {
         return ccfinmjcobk_ == null ?
-            POGOProtos.Rpc.HIHLKDPJMMO.getDefaultInstance() : ccfinmjcobk_;
+            POGOProtos.Rpc.PokestopIncidentDisplayProto.getDefaultInstance() : ccfinmjcobk_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+     * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HIHLKDPJMMO, POGOProtos.Rpc.HIHLKDPJMMO.Builder, POGOProtos.Rpc.HIHLKDPJMMOOrBuilder> 
+        POGOProtos.Rpc.PokestopIncidentDisplayProto, POGOProtos.Rpc.PokestopIncidentDisplayProto.Builder, POGOProtos.Rpc.PokestopIncidentDisplayProtoOrBuilder> 
         getCcfinmjcobkFieldBuilder() {
       if (ccfinmjcobkBuilder_ == null) {
         ccfinmjcobkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.HIHLKDPJMMO, POGOProtos.Rpc.HIHLKDPJMMO.Builder, POGOProtos.Rpc.HIHLKDPJMMOOrBuilder>(
+            POGOProtos.Rpc.PokestopIncidentDisplayProto, POGOProtos.Rpc.PokestopIncidentDisplayProto.Builder, POGOProtos.Rpc.PokestopIncidentDisplayProtoOrBuilder>(
                 getCcfinmjcobk(),
                 getParentForChildren(),
                 isClean());

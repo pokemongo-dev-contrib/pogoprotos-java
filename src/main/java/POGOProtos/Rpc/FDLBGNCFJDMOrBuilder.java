@@ -19,41 +19,41 @@ public interface FDLBGNCFJDMOrBuilder extends
   POGOProtos.Rpc.FDLBGNCFJDM.Status getStatus();
 
   /**
-   * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+   * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
    * @return Whether the iblilgjehdh field is set.
    */
   boolean hasIblilgjehdh();
   /**
-   * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+   * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
    * @return The iblilgjehdh.
    */
-  POGOProtos.Rpc.JPJNJMHLBOP getIblilgjehdh();
+  POGOProtos.Rpc.ClientQuestProto getIblilgjehdh();
   /**
-   * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+   * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
    */
-  POGOProtos.Rpc.JPJNJMHLBOPOrBuilder getIblilgjehdhOrBuilder();
+  POGOProtos.Rpc.ClientQuestProtoOrBuilder getIblilgjehdhOrBuilder();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
    */
-  java.util.List<POGOProtos.Rpc.EJDMHKENPII> 
+  java.util.List<POGOProtos.Rpc.QuestStampProto> 
       getPhcdogbllokList();
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
    */
-  POGOProtos.Rpc.EJDMHKENPII getPhcdogbllok(int index);
+  POGOProtos.Rpc.QuestStampProto getPhcdogbllok(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
    */
   int getPhcdogbllokCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.EJDMHKENPIIOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.QuestStampProtoOrBuilder> 
       getPhcdogbllokOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
    */
-  POGOProtos.Rpc.EJDMHKENPIIOrBuilder getPhcdogbllokOrBuilder(
+  POGOProtos.Rpc.QuestStampProtoOrBuilder getPhcdogbllokOrBuilder(
       int index);
 }

@@ -20,27 +20,27 @@ public interface LGOMBNEJMLLOrBuilder extends
   long getEkldipabbak();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.BBNLGKGOGKI fbdpjddippf = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonFortProto fbdpjddippf = 3;</code>
    */
-  java.util.List<POGOProtos.Rpc.BBNLGKGOGKI> 
+  java.util.List<POGOProtos.Rpc.PokemonFortProto> 
       getFbdpjddippfList();
   /**
-   * <code>repeated .POGOProtos.Rpc.BBNLGKGOGKI fbdpjddippf = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonFortProto fbdpjddippf = 3;</code>
    */
-  POGOProtos.Rpc.BBNLGKGOGKI getFbdpjddippf(int index);
+  POGOProtos.Rpc.PokemonFortProto getFbdpjddippf(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.BBNLGKGOGKI fbdpjddippf = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonFortProto fbdpjddippf = 3;</code>
    */
   int getFbdpjddippfCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.BBNLGKGOGKI fbdpjddippf = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonFortProto fbdpjddippf = 3;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.BBNLGKGOGKIOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.PokemonFortProtoOrBuilder> 
       getFbdpjddippfOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.BBNLGKGOGKI fbdpjddippf = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonFortProto fbdpjddippf = 3;</code>
    */
-  POGOProtos.Rpc.BBNLGKGOGKIOrBuilder getFbdpjddippfOrBuilder(
+  POGOProtos.Rpc.PokemonFortProtoOrBuilder getFbdpjddippfOrBuilder(
       int index);
 
   /**
@@ -171,27 +171,27 @@ public interface LGOMBNEJMLLOrBuilder extends
       int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.LIPFKEBDDOH ojfgingnckd = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.MapPokemonProto ojfgingnckd = 10;</code>
    */
-  java.util.List<POGOProtos.Rpc.LIPFKEBDDOH> 
+  java.util.List<POGOProtos.Rpc.MapPokemonProto> 
       getOjfgingnckdList();
   /**
-   * <code>repeated .POGOProtos.Rpc.LIPFKEBDDOH ojfgingnckd = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.MapPokemonProto ojfgingnckd = 10;</code>
    */
-  POGOProtos.Rpc.LIPFKEBDDOH getOjfgingnckd(int index);
+  POGOProtos.Rpc.MapPokemonProto getOjfgingnckd(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.LIPFKEBDDOH ojfgingnckd = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.MapPokemonProto ojfgingnckd = 10;</code>
    */
   int getOjfgingnckdCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.LIPFKEBDDOH ojfgingnckd = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.MapPokemonProto ojfgingnckd = 10;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.LIPFKEBDDOHOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.MapPokemonProtoOrBuilder> 
       getOjfgingnckdOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.LIPFKEBDDOH ojfgingnckd = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.MapPokemonProto ojfgingnckd = 10;</code>
    */
-  POGOProtos.Rpc.LIPFKEBDDOHOrBuilder getOjfgingnckdOrBuilder(
+  POGOProtos.Rpc.MapPokemonProtoOrBuilder getOjfgingnckdOrBuilder(
       int index);
 
   /**

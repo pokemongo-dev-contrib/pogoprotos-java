@@ -54,11 +54,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.DKCCAGCEEHM.Builder subBuilder = null;
+            POGOProtos.Rpc.LobbyProto.Builder subBuilder = null;
             if (fdanacihmef_ != null) {
               subBuilder = fdanacihmef_.toBuilder();
             }
-            fdanacihmef_ = input.readMessage(POGOProtos.Rpc.DKCCAGCEEHM.parser(), extensionRegistry);
+            fdanacihmef_ = input.readMessage(POGOProtos.Rpc.LobbyProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(fdanacihmef_);
               fdanacihmef_ = subBuilder.buildPartial();
@@ -91,11 +91,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 42: {
-            POGOProtos.Rpc.NBIFPOJPDAD.Builder subBuilder = null;
+            POGOProtos.Rpc.RaidInfoProto.Builder subBuilder = null;
             if (hmcoddoifhd_ != null) {
               subBuilder = hmcoddoifhd_.toBuilder();
             }
-            hmcoddoifhd_ = input.readMessage(POGOProtos.Rpc.NBIFPOJPDAD.parser(), extensionRegistry);
+            hmcoddoifhd_ = input.readMessage(POGOProtos.Rpc.RaidInfoProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(hmcoddoifhd_);
               hmcoddoifhd_ = subBuilder.buildPartial();
@@ -348,9 +348,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FDANACIHMEF_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef_;
+  private POGOProtos.Rpc.LobbyProto fdanacihmef_;
   /**
-   * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
    * @return Whether the fdanacihmef field is set.
    */
   @java.lang.Override
@@ -358,18 +358,18 @@ private static final long serialVersionUID = 0L;
     return fdanacihmef_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
    * @return The fdanacihmef.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DKCCAGCEEHM getFdanacihmef() {
-    return fdanacihmef_ == null ? POGOProtos.Rpc.DKCCAGCEEHM.getDefaultInstance() : fdanacihmef_;
+  public POGOProtos.Rpc.LobbyProto getFdanacihmef() {
+    return fdanacihmef_ == null ? POGOProtos.Rpc.LobbyProto.getDefaultInstance() : fdanacihmef_;
   }
   /**
-   * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DKCCAGCEEHMOrBuilder getFdanacihmefOrBuilder() {
+  public POGOProtos.Rpc.LobbyProtoOrBuilder getFdanacihmefOrBuilder() {
     return getFdanacihmef();
   }
 
@@ -430,9 +430,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int HMCODDOIFHD_FIELD_NUMBER = 5;
-  private POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd_;
+  private POGOProtos.Rpc.RaidInfoProto hmcoddoifhd_;
   /**
-   * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+   * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
    * @return Whether the hmcoddoifhd field is set.
    */
   @java.lang.Override
@@ -440,18 +440,18 @@ private static final long serialVersionUID = 0L;
     return hmcoddoifhd_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+   * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
    * @return The hmcoddoifhd.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.NBIFPOJPDAD getHmcoddoifhd() {
-    return hmcoddoifhd_ == null ? POGOProtos.Rpc.NBIFPOJPDAD.getDefaultInstance() : hmcoddoifhd_;
+  public POGOProtos.Rpc.RaidInfoProto getHmcoddoifhd() {
+    return hmcoddoifhd_ == null ? POGOProtos.Rpc.RaidInfoProto.getDefaultInstance() : hmcoddoifhd_;
   }
   /**
-   * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+   * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.NBIFPOJPDADOrBuilder getHmcoddoifhdOrBuilder() {
+  public POGOProtos.Rpc.RaidInfoProtoOrBuilder getHmcoddoifhdOrBuilder() {
     return getHmcoddoifhd();
   }
 
@@ -1183,31 +1183,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef_;
+    private POGOProtos.Rpc.LobbyProto fdanacihmef_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DKCCAGCEEHM, POGOProtos.Rpc.DKCCAGCEEHM.Builder, POGOProtos.Rpc.DKCCAGCEEHMOrBuilder> fdanacihmefBuilder_;
+        POGOProtos.Rpc.LobbyProto, POGOProtos.Rpc.LobbyProto.Builder, POGOProtos.Rpc.LobbyProtoOrBuilder> fdanacihmefBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
      * @return Whether the fdanacihmef field is set.
      */
     public boolean hasFdanacihmef() {
       return fdanacihmefBuilder_ != null || fdanacihmef_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
      * @return The fdanacihmef.
      */
-    public POGOProtos.Rpc.DKCCAGCEEHM getFdanacihmef() {
+    public POGOProtos.Rpc.LobbyProto getFdanacihmef() {
       if (fdanacihmefBuilder_ == null) {
-        return fdanacihmef_ == null ? POGOProtos.Rpc.DKCCAGCEEHM.getDefaultInstance() : fdanacihmef_;
+        return fdanacihmef_ == null ? POGOProtos.Rpc.LobbyProto.getDefaultInstance() : fdanacihmef_;
       } else {
         return fdanacihmefBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
      */
-    public Builder setFdanacihmef(POGOProtos.Rpc.DKCCAGCEEHM value) {
+    public Builder setFdanacihmef(POGOProtos.Rpc.LobbyProto value) {
       if (fdanacihmefBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1221,10 +1221,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
      */
     public Builder setFdanacihmef(
-        POGOProtos.Rpc.DKCCAGCEEHM.Builder builderForValue) {
+        POGOProtos.Rpc.LobbyProto.Builder builderForValue) {
       if (fdanacihmefBuilder_ == null) {
         fdanacihmef_ = builderForValue.build();
         onChanged();
@@ -1235,13 +1235,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
      */
-    public Builder mergeFdanacihmef(POGOProtos.Rpc.DKCCAGCEEHM value) {
+    public Builder mergeFdanacihmef(POGOProtos.Rpc.LobbyProto value) {
       if (fdanacihmefBuilder_ == null) {
         if (fdanacihmef_ != null) {
           fdanacihmef_ =
-            POGOProtos.Rpc.DKCCAGCEEHM.newBuilder(fdanacihmef_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.LobbyProto.newBuilder(fdanacihmef_).mergeFrom(value).buildPartial();
         } else {
           fdanacihmef_ = value;
         }
@@ -1253,7 +1253,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
      */
     public Builder clearFdanacihmef() {
       if (fdanacihmefBuilder_ == null) {
@@ -1267,33 +1267,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
      */
-    public POGOProtos.Rpc.DKCCAGCEEHM.Builder getFdanacihmefBuilder() {
+    public POGOProtos.Rpc.LobbyProto.Builder getFdanacihmefBuilder() {
       
       onChanged();
       return getFdanacihmefFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
      */
-    public POGOProtos.Rpc.DKCCAGCEEHMOrBuilder getFdanacihmefOrBuilder() {
+    public POGOProtos.Rpc.LobbyProtoOrBuilder getFdanacihmefOrBuilder() {
       if (fdanacihmefBuilder_ != null) {
         return fdanacihmefBuilder_.getMessageOrBuilder();
       } else {
         return fdanacihmef_ == null ?
-            POGOProtos.Rpc.DKCCAGCEEHM.getDefaultInstance() : fdanacihmef_;
+            POGOProtos.Rpc.LobbyProto.getDefaultInstance() : fdanacihmef_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 1;</code>
+     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DKCCAGCEEHM, POGOProtos.Rpc.DKCCAGCEEHM.Builder, POGOProtos.Rpc.DKCCAGCEEHMOrBuilder> 
+        POGOProtos.Rpc.LobbyProto, POGOProtos.Rpc.LobbyProto.Builder, POGOProtos.Rpc.LobbyProtoOrBuilder> 
         getFdanacihmefFieldBuilder() {
       if (fdanacihmefBuilder_ == null) {
         fdanacihmefBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.DKCCAGCEEHM, POGOProtos.Rpc.DKCCAGCEEHM.Builder, POGOProtos.Rpc.DKCCAGCEEHMOrBuilder>(
+            POGOProtos.Rpc.LobbyProto, POGOProtos.Rpc.LobbyProto.Builder, POGOProtos.Rpc.LobbyProtoOrBuilder>(
                 getFdanacihmef(),
                 getParentForChildren(),
                 isClean());
@@ -1506,31 +1506,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd_;
+    private POGOProtos.Rpc.RaidInfoProto hmcoddoifhd_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NBIFPOJPDAD, POGOProtos.Rpc.NBIFPOJPDAD.Builder, POGOProtos.Rpc.NBIFPOJPDADOrBuilder> hmcoddoifhdBuilder_;
+        POGOProtos.Rpc.RaidInfoProto, POGOProtos.Rpc.RaidInfoProto.Builder, POGOProtos.Rpc.RaidInfoProtoOrBuilder> hmcoddoifhdBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+     * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
      * @return Whether the hmcoddoifhd field is set.
      */
     public boolean hasHmcoddoifhd() {
       return hmcoddoifhdBuilder_ != null || hmcoddoifhd_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+     * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
      * @return The hmcoddoifhd.
      */
-    public POGOProtos.Rpc.NBIFPOJPDAD getHmcoddoifhd() {
+    public POGOProtos.Rpc.RaidInfoProto getHmcoddoifhd() {
       if (hmcoddoifhdBuilder_ == null) {
-        return hmcoddoifhd_ == null ? POGOProtos.Rpc.NBIFPOJPDAD.getDefaultInstance() : hmcoddoifhd_;
+        return hmcoddoifhd_ == null ? POGOProtos.Rpc.RaidInfoProto.getDefaultInstance() : hmcoddoifhd_;
       } else {
         return hmcoddoifhdBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+     * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
      */
-    public Builder setHmcoddoifhd(POGOProtos.Rpc.NBIFPOJPDAD value) {
+    public Builder setHmcoddoifhd(POGOProtos.Rpc.RaidInfoProto value) {
       if (hmcoddoifhdBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1544,10 +1544,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+     * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
      */
     public Builder setHmcoddoifhd(
-        POGOProtos.Rpc.NBIFPOJPDAD.Builder builderForValue) {
+        POGOProtos.Rpc.RaidInfoProto.Builder builderForValue) {
       if (hmcoddoifhdBuilder_ == null) {
         hmcoddoifhd_ = builderForValue.build();
         onChanged();
@@ -1558,13 +1558,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+     * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
      */
-    public Builder mergeHmcoddoifhd(POGOProtos.Rpc.NBIFPOJPDAD value) {
+    public Builder mergeHmcoddoifhd(POGOProtos.Rpc.RaidInfoProto value) {
       if (hmcoddoifhdBuilder_ == null) {
         if (hmcoddoifhd_ != null) {
           hmcoddoifhd_ =
-            POGOProtos.Rpc.NBIFPOJPDAD.newBuilder(hmcoddoifhd_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.RaidInfoProto.newBuilder(hmcoddoifhd_).mergeFrom(value).buildPartial();
         } else {
           hmcoddoifhd_ = value;
         }
@@ -1576,7 +1576,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+     * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
      */
     public Builder clearHmcoddoifhd() {
       if (hmcoddoifhdBuilder_ == null) {
@@ -1590,33 +1590,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+     * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
      */
-    public POGOProtos.Rpc.NBIFPOJPDAD.Builder getHmcoddoifhdBuilder() {
+    public POGOProtos.Rpc.RaidInfoProto.Builder getHmcoddoifhdBuilder() {
       
       onChanged();
       return getHmcoddoifhdFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+     * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
      */
-    public POGOProtos.Rpc.NBIFPOJPDADOrBuilder getHmcoddoifhdOrBuilder() {
+    public POGOProtos.Rpc.RaidInfoProtoOrBuilder getHmcoddoifhdOrBuilder() {
       if (hmcoddoifhdBuilder_ != null) {
         return hmcoddoifhdBuilder_.getMessageOrBuilder();
       } else {
         return hmcoddoifhd_ == null ?
-            POGOProtos.Rpc.NBIFPOJPDAD.getDefaultInstance() : hmcoddoifhd_;
+            POGOProtos.Rpc.RaidInfoProto.getDefaultInstance() : hmcoddoifhd_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.NBIFPOJPDAD hmcoddoifhd = 5;</code>
+     * <code>.POGOProtos.Rpc.RaidInfoProto hmcoddoifhd = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.NBIFPOJPDAD, POGOProtos.Rpc.NBIFPOJPDAD.Builder, POGOProtos.Rpc.NBIFPOJPDADOrBuilder> 
+        POGOProtos.Rpc.RaidInfoProto, POGOProtos.Rpc.RaidInfoProto.Builder, POGOProtos.Rpc.RaidInfoProtoOrBuilder> 
         getHmcoddoifhdFieldBuilder() {
       if (hmcoddoifhdBuilder_ == null) {
         hmcoddoifhdBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.NBIFPOJPDAD, POGOProtos.Rpc.NBIFPOJPDAD.Builder, POGOProtos.Rpc.NBIFPOJPDADOrBuilder>(
+            POGOProtos.Rpc.RaidInfoProto, POGOProtos.Rpc.RaidInfoProto.Builder, POGOProtos.Rpc.RaidInfoProtoOrBuilder>(
                 getHmcoddoifhd(),
                 getParentForChildren(),
                 isClean());

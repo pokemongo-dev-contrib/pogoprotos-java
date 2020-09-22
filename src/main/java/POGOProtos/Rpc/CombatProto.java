@@ -67,11 +67,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 26: {
-            POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder subBuilder = null;
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder subBuilder = null;
             if (ekinggfmndg_ != null) {
               subBuilder = ekinggfmndg_.toBuilder();
             }
-            ekinggfmndg_ = input.readMessage(POGOProtos.Rpc.CombatProto.CEAKNELMNKK.parser(), extensionRegistry);
+            ekinggfmndg_ = input.readMessage(POGOProtos.Rpc.CombatProto.CombatPlayerProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(ekinggfmndg_);
               ekinggfmndg_ = subBuilder.buildPartial();
@@ -80,11 +80,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 34: {
-            POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder subBuilder = null;
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder subBuilder = null;
             if (hlpfmbellom_ != null) {
               subBuilder = hlpfmbellom_.toBuilder();
             }
-            hlpfmbellom_ = input.readMessage(POGOProtos.Rpc.CombatProto.CEAKNELMNKK.parser(), extensionRegistry);
+            hlpfmbellom_ = input.readMessage(POGOProtos.Rpc.CombatProto.CombatPlayerProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(hlpfmbellom_);
               hlpfmbellom_ = subBuilder.buildPartial();
@@ -179,9 +179,9 @@ private static final long serialVersionUID = 0L;
    * ref: IAEODBIFOMA/JIFBNFGCDNO/BALOCEBEKII
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.CombatProto.BALOCEBEKII}
+   * Protobuf enum {@code POGOProtos.Rpc.CombatProto.CombatState}
    */
-  public enum BALOCEBEKII
+  public enum CombatState
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNSET = 0;</code>
@@ -274,7 +274,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static BALOCEBEKII valueOf(int value) {
+    public static CombatState valueOf(int value) {
       return forNumber(value);
     }
 
@@ -282,7 +282,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static BALOCEBEKII forNumber(int value) {
+    public static CombatState forNumber(int value) {
       switch (value) {
         case 0: return UNSET;
         case 1: return WAITING_FOR_PLAYERS;
@@ -297,15 +297,15 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<BALOCEBEKII>
+    public static com.google.protobuf.Internal.EnumLiteMap<CombatState>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        BALOCEBEKII> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<BALOCEBEKII>() {
-            public BALOCEBEKII findValueByNumber(int number) {
-              return BALOCEBEKII.forNumber(number);
+        CombatState> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<CombatState>() {
+            public CombatState findValueByNumber(int number) {
+              return CombatState.forNumber(number);
             }
           };
 
@@ -326,9 +326,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.CombatProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final BALOCEBEKII[] VALUES = values();
+    private static final CombatState[] VALUES = values();
 
-    public static BALOCEBEKII valueOf(
+    public static CombatState valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -342,15 +342,15 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private BALOCEBEKII(int value) {
+    private CombatState(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.CombatProto.BALOCEBEKII)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.CombatProto.CombatState)
   }
 
-  public interface CEAKNELMNKKOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.CombatProto.CEAKNELMNKK)
+  public interface CombatPlayerProtoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.CombatProto.CombatPlayerProto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -369,82 +369,82 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder getJeenccbbffkOrBuilder();
 
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
      * @return Whether the jjjmbcihbli field is set.
      */
     boolean hasJjjmbcihbli();
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
      * @return The jjjmbcihbli.
      */
-    POGOProtos.Rpc.CombatProto.HPJNAEABNAM getJjjmbcihbli();
+    POGOProtos.Rpc.CombatProto.CombatPokemonProto getJjjmbcihbli();
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
      */
-    POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder getJjjmbcihbliOrBuilder();
+    POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getJjjmbcihbliOrBuilder();
 
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
      */
-    java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM> 
+    java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> 
         getMnnafnmiaafList();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
      */
-    POGOProtos.Rpc.CombatProto.HPJNAEABNAM getMnnafnmiaaf(int index);
+    POGOProtos.Rpc.CombatProto.CombatPokemonProto getMnnafnmiaaf(int index);
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
      */
     int getMnnafnmiaafCount();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
      */
-    java.util.List<? extends POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> 
+    java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
         getMnnafnmiaafOrBuilderList();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
      */
-    POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder getMnnafnmiaafOrBuilder(
+    POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMnnafnmiaafOrBuilder(
         int index);
 
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
      */
-    java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM> 
+    java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> 
         getMhnodplodjhList();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
      */
-    POGOProtos.Rpc.CombatProto.HPJNAEABNAM getMhnodplodjh(int index);
+    POGOProtos.Rpc.CombatProto.CombatPokemonProto getMhnodplodjh(int index);
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
      */
     int getMhnodplodjhCount();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
      */
-    java.util.List<? extends POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> 
+    java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
         getMhnodplodjhOrBuilderList();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
      */
-    POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder getMhnodplodjhOrBuilder(
+    POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMhnodplodjhOrBuilder(
         int index);
 
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
      * @return Whether the bjmjpbndeil field is set.
      */
     boolean hasBjmjpbndeil();
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
      * @return The bjmjpbndeil.
      */
-    POGOProtos.Rpc.OANEOIOHADA getBjmjpbndeil();
+    POGOProtos.Rpc.CombatActionProto getBjmjpbndeil();
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
      */
-    POGOProtos.Rpc.OANEOIOHADAOrBuilder getBjmjpbndeilOrBuilder();
+    POGOProtos.Rpc.CombatActionProtoOrBuilder getBjmjpbndeilOrBuilder();
 
     /**
      * <code>bool jkdlhblamma = 6;</code>
@@ -459,19 +459,19 @@ private static final long serialVersionUID = 0L;
     int getGageimmlnbj();
 
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
      * @return Whether the ififhafklnk field is set.
      */
     boolean hasIfifhafklnk();
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
      * @return The ififhafklnk.
      */
-    POGOProtos.Rpc.OANEOIOHADA getIfifhafklnk();
+    POGOProtos.Rpc.CombatActionProto getIfifhafklnk();
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
      */
-    POGOProtos.Rpc.OANEOIOHADAOrBuilder getIfifhafklnkOrBuilder();
+    POGOProtos.Rpc.CombatActionProtoOrBuilder getIfifhafklnkOrBuilder();
 
     /**
      * <code>int64 jmcnhebeepn = 9;</code>
@@ -520,18 +520,18 @@ private static final long serialVersionUID = 0L;
    * ref: IAEODBIFOMA/JIFBNFGCDNO/CEAKNELMNKK
    * </pre>
    *
-   * Protobuf type {@code POGOProtos.Rpc.CombatProto.CEAKNELMNKK}
+   * Protobuf type {@code POGOProtos.Rpc.CombatProto.CombatPlayerProto}
    */
-  public static final class CEAKNELMNKK extends
+  public static final class CombatPlayerProto extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.CombatProto.CEAKNELMNKK)
-      CEAKNELMNKKOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.CombatProto.CombatPlayerProto)
+      CombatPlayerProtoOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use CEAKNELMNKK.newBuilder() to construct.
-    private CEAKNELMNKK(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use CombatPlayerProto.newBuilder() to construct.
+    private CombatPlayerProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private CEAKNELMNKK() {
+    private CombatPlayerProto() {
       mnnafnmiaaf_ = java.util.Collections.emptyList();
       mhnodplodjh_ = java.util.Collections.emptyList();
       kabdkaelnce_ = "";
@@ -541,7 +541,7 @@ private static final long serialVersionUID = 0L;
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new CEAKNELMNKK();
+      return new CombatPlayerProto();
     }
 
     @java.lang.Override
@@ -549,7 +549,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private CEAKNELMNKK(
+    private CombatPlayerProto(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -582,11 +582,11 @@ private static final long serialVersionUID = 0L;
               break;
             }
             case 18: {
-              POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder subBuilder = null;
+              POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder subBuilder = null;
               if (jjjmbcihbli_ != null) {
                 subBuilder = jjjmbcihbli_.toBuilder();
               }
-              jjjmbcihbli_ = input.readMessage(POGOProtos.Rpc.CombatProto.HPJNAEABNAM.parser(), extensionRegistry);
+              jjjmbcihbli_ = input.readMessage(POGOProtos.Rpc.CombatProto.CombatPokemonProto.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(jjjmbcihbli_);
                 jjjmbcihbli_ = subBuilder.buildPartial();
@@ -596,28 +596,28 @@ private static final long serialVersionUID = 0L;
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                mnnafnmiaaf_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.HPJNAEABNAM>();
+                mnnafnmiaaf_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>();
                 mutable_bitField0_ |= 0x00000001;
               }
               mnnafnmiaaf_.add(
-                  input.readMessage(POGOProtos.Rpc.CombatProto.HPJNAEABNAM.parser(), extensionRegistry));
+                  input.readMessage(POGOProtos.Rpc.CombatProto.CombatPokemonProto.parser(), extensionRegistry));
               break;
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                mhnodplodjh_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.HPJNAEABNAM>();
+                mhnodplodjh_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>();
                 mutable_bitField0_ |= 0x00000002;
               }
               mhnodplodjh_.add(
-                  input.readMessage(POGOProtos.Rpc.CombatProto.HPJNAEABNAM.parser(), extensionRegistry));
+                  input.readMessage(POGOProtos.Rpc.CombatProto.CombatPokemonProto.parser(), extensionRegistry));
               break;
             }
             case 42: {
-              POGOProtos.Rpc.OANEOIOHADA.Builder subBuilder = null;
+              POGOProtos.Rpc.CombatActionProto.Builder subBuilder = null;
               if (bjmjpbndeil_ != null) {
                 subBuilder = bjmjpbndeil_.toBuilder();
               }
-              bjmjpbndeil_ = input.readMessage(POGOProtos.Rpc.OANEOIOHADA.parser(), extensionRegistry);
+              bjmjpbndeil_ = input.readMessage(POGOProtos.Rpc.CombatActionProto.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(bjmjpbndeil_);
                 bjmjpbndeil_ = subBuilder.buildPartial();
@@ -636,11 +636,11 @@ private static final long serialVersionUID = 0L;
               break;
             }
             case 66: {
-              POGOProtos.Rpc.OANEOIOHADA.Builder subBuilder = null;
+              POGOProtos.Rpc.CombatActionProto.Builder subBuilder = null;
               if (ififhafklnk_ != null) {
                 subBuilder = ififhafklnk_.toBuilder();
               }
-              ififhafklnk_ = input.readMessage(POGOProtos.Rpc.OANEOIOHADA.parser(), extensionRegistry);
+              ififhafklnk_ = input.readMessage(POGOProtos.Rpc.CombatActionProto.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(ififhafklnk_);
                 ififhafklnk_ = subBuilder.buildPartial();
@@ -706,15 +706,15 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CEAKNELMNKK_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CombatPlayerProto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CEAKNELMNKK_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CombatPlayerProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.CombatProto.CEAKNELMNKK.class, POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder.class);
+              POGOProtos.Rpc.CombatProto.CombatPlayerProto.class, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder.class);
     }
 
     public static final int JEENCCBBFFK_FIELD_NUMBER = 1;
@@ -744,9 +744,9 @@ private static final long serialVersionUID = 0L;
     }
 
     public static final int JJJMBCIHBLI_FIELD_NUMBER = 2;
-    private POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli_;
+    private POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli_;
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
      * @return Whether the jjjmbcihbli field is set.
      */
     @java.lang.Override
@@ -754,105 +754,105 @@ private static final long serialVersionUID = 0L;
       return jjjmbcihbli_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
      * @return The jjjmbcihbli.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.HPJNAEABNAM getJjjmbcihbli() {
-      return jjjmbcihbli_ == null ? POGOProtos.Rpc.CombatProto.HPJNAEABNAM.getDefaultInstance() : jjjmbcihbli_;
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProto getJjjmbcihbli() {
+      return jjjmbcihbli_ == null ? POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance() : jjjmbcihbli_;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder getJjjmbcihbliOrBuilder() {
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getJjjmbcihbliOrBuilder() {
       return getJjjmbcihbli();
     }
 
     public static final int MNNAFNMIAAF_FIELD_NUMBER = 3;
-    private java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM> mnnafnmiaaf_;
+    private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> mnnafnmiaaf_;
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM> getMnnafnmiaafList() {
+    public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getMnnafnmiaafList() {
       return mnnafnmiaaf_;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
         getMnnafnmiaafOrBuilderList() {
       return mnnafnmiaaf_;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
      */
     @java.lang.Override
     public int getMnnafnmiaafCount() {
       return mnnafnmiaaf_.size();
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.HPJNAEABNAM getMnnafnmiaaf(int index) {
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProto getMnnafnmiaaf(int index) {
       return mnnafnmiaaf_.get(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder getMnnafnmiaafOrBuilder(
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMnnafnmiaafOrBuilder(
         int index) {
       return mnnafnmiaaf_.get(index);
     }
 
     public static final int MHNODPLODJH_FIELD_NUMBER = 4;
-    private java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM> mhnodplodjh_;
+    private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> mhnodplodjh_;
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
      */
     @java.lang.Override
-    public java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM> getMhnodplodjhList() {
+    public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getMhnodplodjhList() {
       return mhnodplodjh_;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
         getMhnodplodjhOrBuilderList() {
       return mhnodplodjh_;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
      */
     @java.lang.Override
     public int getMhnodplodjhCount() {
       return mhnodplodjh_.size();
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.HPJNAEABNAM getMhnodplodjh(int index) {
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProto getMhnodplodjh(int index) {
       return mhnodplodjh_.get(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder getMhnodplodjhOrBuilder(
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMhnodplodjhOrBuilder(
         int index) {
       return mhnodplodjh_.get(index);
     }
 
     public static final int BJMJPBNDEIL_FIELD_NUMBER = 5;
-    private POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil_;
+    private POGOProtos.Rpc.CombatActionProto bjmjpbndeil_;
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
      * @return Whether the bjmjpbndeil field is set.
      */
     @java.lang.Override
@@ -860,18 +860,18 @@ private static final long serialVersionUID = 0L;
       return bjmjpbndeil_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
      * @return The bjmjpbndeil.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.OANEOIOHADA getBjmjpbndeil() {
-      return bjmjpbndeil_ == null ? POGOProtos.Rpc.OANEOIOHADA.getDefaultInstance() : bjmjpbndeil_;
+    public POGOProtos.Rpc.CombatActionProto getBjmjpbndeil() {
+      return bjmjpbndeil_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : bjmjpbndeil_;
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.OANEOIOHADAOrBuilder getBjmjpbndeilOrBuilder() {
+    public POGOProtos.Rpc.CombatActionProtoOrBuilder getBjmjpbndeilOrBuilder() {
       return getBjmjpbndeil();
     }
 
@@ -898,9 +898,9 @@ private static final long serialVersionUID = 0L;
     }
 
     public static final int IFIFHAFKLNK_FIELD_NUMBER = 8;
-    private POGOProtos.Rpc.OANEOIOHADA ififhafklnk_;
+    private POGOProtos.Rpc.CombatActionProto ififhafklnk_;
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
      * @return Whether the ififhafklnk field is set.
      */
     @java.lang.Override
@@ -908,18 +908,18 @@ private static final long serialVersionUID = 0L;
       return ififhafklnk_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
      * @return The ififhafklnk.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.OANEOIOHADA getIfifhafklnk() {
-      return ififhafklnk_ == null ? POGOProtos.Rpc.OANEOIOHADA.getDefaultInstance() : ififhafklnk_;
+    public POGOProtos.Rpc.CombatActionProto getIfifhafklnk() {
+      return ififhafklnk_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : ififhafklnk_;
     }
     /**
-     * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.OANEOIOHADAOrBuilder getIfifhafklnkOrBuilder() {
+    public POGOProtos.Rpc.CombatActionProtoOrBuilder getIfifhafklnkOrBuilder() {
       return getIfifhafklnk();
     }
 
@@ -1146,10 +1146,10 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Rpc.CombatProto.CEAKNELMNKK)) {
+      if (!(obj instanceof POGOProtos.Rpc.CombatProto.CombatPlayerProto)) {
         return super.equals(obj);
       }
-      POGOProtos.Rpc.CombatProto.CEAKNELMNKK other = (POGOProtos.Rpc.CombatProto.CEAKNELMNKK) obj;
+      POGOProtos.Rpc.CombatProto.CombatPlayerProto other = (POGOProtos.Rpc.CombatProto.CombatPlayerProto) obj;
 
       if (hasJeenccbbffk() != other.hasJeenccbbffk()) return false;
       if (hasJeenccbbffk()) {
@@ -1250,69 +1250,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseFrom(byte[] data)
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseDelimitedFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1325,7 +1325,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Rpc.CombatProto.CEAKNELMNKK prototype) {
+    public static Builder newBuilder(POGOProtos.Rpc.CombatProto.CombatPlayerProto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1345,26 +1345,26 @@ private static final long serialVersionUID = 0L;
      * ref: IAEODBIFOMA/JIFBNFGCDNO/CEAKNELMNKK
      * </pre>
      *
-     * Protobuf type {@code POGOProtos.Rpc.CombatProto.CEAKNELMNKK}
+     * Protobuf type {@code POGOProtos.Rpc.CombatProto.CombatPlayerProto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.CombatProto.CEAKNELMNKK)
-        POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.CombatProto.CombatPlayerProto)
+        POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CEAKNELMNKK_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CombatPlayerProto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CEAKNELMNKK_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CombatPlayerProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.CombatProto.CEAKNELMNKK.class, POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder.class);
+                POGOProtos.Rpc.CombatProto.CombatPlayerProto.class, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder.class);
       }
 
-      // Construct using POGOProtos.Rpc.CombatProto.CEAKNELMNKK.newBuilder()
+      // Construct using POGOProtos.Rpc.CombatProto.CombatPlayerProto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1442,17 +1442,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CEAKNELMNKK_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CombatPlayerProto_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.CombatProto.CEAKNELMNKK getDefaultInstanceForType() {
-        return POGOProtos.Rpc.CombatProto.CEAKNELMNKK.getDefaultInstance();
+      public POGOProtos.Rpc.CombatProto.CombatPlayerProto getDefaultInstanceForType() {
+        return POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.CombatProto.CEAKNELMNKK build() {
-        POGOProtos.Rpc.CombatProto.CEAKNELMNKK result = buildPartial();
+      public POGOProtos.Rpc.CombatProto.CombatPlayerProto build() {
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1460,8 +1460,8 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.CombatProto.CEAKNELMNKK buildPartial() {
-        POGOProtos.Rpc.CombatProto.CEAKNELMNKK result = new POGOProtos.Rpc.CombatProto.CEAKNELMNKK(this);
+      public POGOProtos.Rpc.CombatProto.CombatPlayerProto buildPartial() {
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto result = new POGOProtos.Rpc.CombatProto.CombatPlayerProto(this);
         int from_bitField0_ = bitField0_;
         if (jeenccbbffkBuilder_ == null) {
           result.jeenccbbffk_ = jeenccbbffk_;
@@ -1547,16 +1547,16 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Rpc.CombatProto.CEAKNELMNKK) {
-          return mergeFrom((POGOProtos.Rpc.CombatProto.CEAKNELMNKK)other);
+        if (other instanceof POGOProtos.Rpc.CombatProto.CombatPlayerProto) {
+          return mergeFrom((POGOProtos.Rpc.CombatProto.CombatPlayerProto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Rpc.CombatProto.CEAKNELMNKK other) {
-        if (other == POGOProtos.Rpc.CombatProto.CEAKNELMNKK.getDefaultInstance()) return this;
+      public Builder mergeFrom(POGOProtos.Rpc.CombatProto.CombatPlayerProto other) {
+        if (other == POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance()) return this;
         if (other.hasJeenccbbffk()) {
           mergeJeenccbbffk(other.getJeenccbbffk());
         }
@@ -1661,11 +1661,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Rpc.CombatProto.CEAKNELMNKK parsedMessage = null;
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Rpc.CombatProto.CEAKNELMNKK) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Rpc.CombatProto.CombatPlayerProto) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1795,31 +1795,31 @@ private static final long serialVersionUID = 0L;
         return jeenccbbffkBuilder_;
       }
 
-      private POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli_;
+      private POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatProto.HPJNAEABNAM, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder, POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> jjjmbcihbliBuilder_;
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> jjjmbcihbliBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
        * @return Whether the jjjmbcihbli field is set.
        */
       public boolean hasJjjmbcihbli() {
         return jjjmbcihbliBuilder_ != null || jjjmbcihbli_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
        * @return The jjjmbcihbli.
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM getJjjmbcihbli() {
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto getJjjmbcihbli() {
         if (jjjmbcihbliBuilder_ == null) {
-          return jjjmbcihbli_ == null ? POGOProtos.Rpc.CombatProto.HPJNAEABNAM.getDefaultInstance() : jjjmbcihbli_;
+          return jjjmbcihbli_ == null ? POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance() : jjjmbcihbli_;
         } else {
           return jjjmbcihbliBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
        */
-      public Builder setJjjmbcihbli(POGOProtos.Rpc.CombatProto.HPJNAEABNAM value) {
+      public Builder setJjjmbcihbli(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
         if (jjjmbcihbliBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1833,10 +1833,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
        */
       public Builder setJjjmbcihbli(
-          POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder builderForValue) {
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
         if (jjjmbcihbliBuilder_ == null) {
           jjjmbcihbli_ = builderForValue.build();
           onChanged();
@@ -1847,13 +1847,13 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
        */
-      public Builder mergeJjjmbcihbli(POGOProtos.Rpc.CombatProto.HPJNAEABNAM value) {
+      public Builder mergeJjjmbcihbli(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
         if (jjjmbcihbliBuilder_ == null) {
           if (jjjmbcihbli_ != null) {
             jjjmbcihbli_ =
-              POGOProtos.Rpc.CombatProto.HPJNAEABNAM.newBuilder(jjjmbcihbli_).mergeFrom(value).buildPartial();
+              POGOProtos.Rpc.CombatProto.CombatPokemonProto.newBuilder(jjjmbcihbli_).mergeFrom(value).buildPartial();
           } else {
             jjjmbcihbli_ = value;
           }
@@ -1865,7 +1865,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
        */
       public Builder clearJjjmbcihbli() {
         if (jjjmbcihbliBuilder_ == null) {
@@ -1879,33 +1879,33 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder getJjjmbcihbliBuilder() {
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder getJjjmbcihbliBuilder() {
         
         onChanged();
         return getJjjmbcihbliFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder getJjjmbcihbliOrBuilder() {
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getJjjmbcihbliOrBuilder() {
         if (jjjmbcihbliBuilder_ != null) {
           return jjjmbcihbliBuilder_.getMessageOrBuilder();
         } else {
           return jjjmbcihbli_ == null ?
-              POGOProtos.Rpc.CombatProto.HPJNAEABNAM.getDefaultInstance() : jjjmbcihbli_;
+              POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance() : jjjmbcihbli_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.HPJNAEABNAM jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatProto.HPJNAEABNAM, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder, POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> 
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
           getJjjmbcihbliFieldBuilder() {
         if (jjjmbcihbliBuilder_ == null) {
           jjjmbcihbliBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.CombatProto.HPJNAEABNAM, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder, POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder>(
+              POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder>(
                   getJjjmbcihbli(),
                   getParentForChildren(),
                   isClean());
@@ -1914,22 +1914,22 @@ private static final long serialVersionUID = 0L;
         return jjjmbcihbliBuilder_;
       }
 
-      private java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM> mnnafnmiaaf_ =
+      private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> mnnafnmiaaf_ =
         java.util.Collections.emptyList();
       private void ensureMnnafnmiaafIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          mnnafnmiaaf_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.HPJNAEABNAM>(mnnafnmiaaf_);
+          mnnafnmiaaf_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>(mnnafnmiaaf_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          POGOProtos.Rpc.CombatProto.HPJNAEABNAM, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder, POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> mnnafnmiaafBuilder_;
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> mnnafnmiaafBuilder_;
 
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
-      public java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM> getMnnafnmiaafList() {
+      public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getMnnafnmiaafList() {
         if (mnnafnmiaafBuilder_ == null) {
           return java.util.Collections.unmodifiableList(mnnafnmiaaf_);
         } else {
@@ -1937,7 +1937,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
       public int getMnnafnmiaafCount() {
         if (mnnafnmiaafBuilder_ == null) {
@@ -1947,9 +1947,9 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM getMnnafnmiaaf(int index) {
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto getMnnafnmiaaf(int index) {
         if (mnnafnmiaafBuilder_ == null) {
           return mnnafnmiaaf_.get(index);
         } else {
@@ -1957,10 +1957,10 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
       public Builder setMnnafnmiaaf(
-          int index, POGOProtos.Rpc.CombatProto.HPJNAEABNAM value) {
+          int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
         if (mnnafnmiaafBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1974,10 +1974,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
       public Builder setMnnafnmiaaf(
-          int index, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder builderForValue) {
+          int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
         if (mnnafnmiaafBuilder_ == null) {
           ensureMnnafnmiaafIsMutable();
           mnnafnmiaaf_.set(index, builderForValue.build());
@@ -1988,9 +1988,9 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
-      public Builder addMnnafnmiaaf(POGOProtos.Rpc.CombatProto.HPJNAEABNAM value) {
+      public Builder addMnnafnmiaaf(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
         if (mnnafnmiaafBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2004,10 +2004,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
       public Builder addMnnafnmiaaf(
-          int index, POGOProtos.Rpc.CombatProto.HPJNAEABNAM value) {
+          int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
         if (mnnafnmiaafBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2021,10 +2021,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
       public Builder addMnnafnmiaaf(
-          POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder builderForValue) {
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
         if (mnnafnmiaafBuilder_ == null) {
           ensureMnnafnmiaafIsMutable();
           mnnafnmiaaf_.add(builderForValue.build());
@@ -2035,10 +2035,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
       public Builder addMnnafnmiaaf(
-          int index, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder builderForValue) {
+          int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
         if (mnnafnmiaafBuilder_ == null) {
           ensureMnnafnmiaafIsMutable();
           mnnafnmiaaf_.add(index, builderForValue.build());
@@ -2049,10 +2049,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
       public Builder addAllMnnafnmiaaf(
-          java.lang.Iterable<? extends POGOProtos.Rpc.CombatProto.HPJNAEABNAM> values) {
+          java.lang.Iterable<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProto> values) {
         if (mnnafnmiaafBuilder_ == null) {
           ensureMnnafnmiaafIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2064,7 +2064,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
       public Builder clearMnnafnmiaaf() {
         if (mnnafnmiaafBuilder_ == null) {
@@ -2077,7 +2077,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
       public Builder removeMnnafnmiaaf(int index) {
         if (mnnafnmiaafBuilder_ == null) {
@@ -2090,16 +2090,16 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder getMnnafnmiaafBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder getMnnafnmiaafBuilder(
           int index) {
         return getMnnafnmiaafFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder getMnnafnmiaafOrBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMnnafnmiaafOrBuilder(
           int index) {
         if (mnnafnmiaafBuilder_ == null) {
           return mnnafnmiaaf_.get(index);  } else {
@@ -2107,9 +2107,9 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
-      public java.util.List<? extends POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> 
+      public java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
            getMnnafnmiaafOrBuilderList() {
         if (mnnafnmiaafBuilder_ != null) {
           return mnnafnmiaafBuilder_.getMessageOrBuilderList();
@@ -2118,33 +2118,33 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder addMnnafnmiaafBuilder() {
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addMnnafnmiaafBuilder() {
         return getMnnafnmiaafFieldBuilder().addBuilder(
-            POGOProtos.Rpc.CombatProto.HPJNAEABNAM.getDefaultInstance());
+            POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance());
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder addMnnafnmiaafBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addMnnafnmiaafBuilder(
           int index) {
         return getMnnafnmiaafFieldBuilder().addBuilder(
-            index, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.getDefaultInstance());
+            index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance());
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
        */
-      public java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder> 
+      public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder> 
            getMnnafnmiaafBuilderList() {
         return getMnnafnmiaafFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          POGOProtos.Rpc.CombatProto.HPJNAEABNAM, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder, POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> 
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
           getMnnafnmiaafFieldBuilder() {
         if (mnnafnmiaafBuilder_ == null) {
           mnnafnmiaafBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              POGOProtos.Rpc.CombatProto.HPJNAEABNAM, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder, POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder>(
+              POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder>(
                   mnnafnmiaaf_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -2154,22 +2154,22 @@ private static final long serialVersionUID = 0L;
         return mnnafnmiaafBuilder_;
       }
 
-      private java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM> mhnodplodjh_ =
+      private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> mhnodplodjh_ =
         java.util.Collections.emptyList();
       private void ensureMhnodplodjhIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          mhnodplodjh_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.HPJNAEABNAM>(mhnodplodjh_);
+          mhnodplodjh_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>(mhnodplodjh_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          POGOProtos.Rpc.CombatProto.HPJNAEABNAM, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder, POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> mhnodplodjhBuilder_;
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> mhnodplodjhBuilder_;
 
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
-      public java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM> getMhnodplodjhList() {
+      public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getMhnodplodjhList() {
         if (mhnodplodjhBuilder_ == null) {
           return java.util.Collections.unmodifiableList(mhnodplodjh_);
         } else {
@@ -2177,7 +2177,7 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
       public int getMhnodplodjhCount() {
         if (mhnodplodjhBuilder_ == null) {
@@ -2187,9 +2187,9 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM getMhnodplodjh(int index) {
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto getMhnodplodjh(int index) {
         if (mhnodplodjhBuilder_ == null) {
           return mhnodplodjh_.get(index);
         } else {
@@ -2197,10 +2197,10 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
       public Builder setMhnodplodjh(
-          int index, POGOProtos.Rpc.CombatProto.HPJNAEABNAM value) {
+          int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
         if (mhnodplodjhBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2214,10 +2214,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
       public Builder setMhnodplodjh(
-          int index, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder builderForValue) {
+          int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
         if (mhnodplodjhBuilder_ == null) {
           ensureMhnodplodjhIsMutable();
           mhnodplodjh_.set(index, builderForValue.build());
@@ -2228,9 +2228,9 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
-      public Builder addMhnodplodjh(POGOProtos.Rpc.CombatProto.HPJNAEABNAM value) {
+      public Builder addMhnodplodjh(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
         if (mhnodplodjhBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2244,10 +2244,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
       public Builder addMhnodplodjh(
-          int index, POGOProtos.Rpc.CombatProto.HPJNAEABNAM value) {
+          int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
         if (mhnodplodjhBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2261,10 +2261,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
       public Builder addMhnodplodjh(
-          POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder builderForValue) {
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
         if (mhnodplodjhBuilder_ == null) {
           ensureMhnodplodjhIsMutable();
           mhnodplodjh_.add(builderForValue.build());
@@ -2275,10 +2275,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
       public Builder addMhnodplodjh(
-          int index, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder builderForValue) {
+          int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
         if (mhnodplodjhBuilder_ == null) {
           ensureMhnodplodjhIsMutable();
           mhnodplodjh_.add(index, builderForValue.build());
@@ -2289,10 +2289,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
       public Builder addAllMhnodplodjh(
-          java.lang.Iterable<? extends POGOProtos.Rpc.CombatProto.HPJNAEABNAM> values) {
+          java.lang.Iterable<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProto> values) {
         if (mhnodplodjhBuilder_ == null) {
           ensureMhnodplodjhIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2304,7 +2304,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
       public Builder clearMhnodplodjh() {
         if (mhnodplodjhBuilder_ == null) {
@@ -2317,7 +2317,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
       public Builder removeMhnodplodjh(int index) {
         if (mhnodplodjhBuilder_ == null) {
@@ -2330,16 +2330,16 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder getMhnodplodjhBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder getMhnodplodjhBuilder(
           int index) {
         return getMhnodplodjhFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder getMhnodplodjhOrBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMhnodplodjhOrBuilder(
           int index) {
         if (mhnodplodjhBuilder_ == null) {
           return mhnodplodjh_.get(index);  } else {
@@ -2347,9 +2347,9 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
-      public java.util.List<? extends POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> 
+      public java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
            getMhnodplodjhOrBuilderList() {
         if (mhnodplodjhBuilder_ != null) {
           return mhnodplodjhBuilder_.getMessageOrBuilderList();
@@ -2358,33 +2358,33 @@ private static final long serialVersionUID = 0L;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder addMhnodplodjhBuilder() {
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addMhnodplodjhBuilder() {
         return getMhnodplodjhFieldBuilder().addBuilder(
-            POGOProtos.Rpc.CombatProto.HPJNAEABNAM.getDefaultInstance());
+            POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance());
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder addMhnodplodjhBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addMhnodplodjhBuilder(
           int index) {
         return getMhnodplodjhFieldBuilder().addBuilder(
-            index, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.getDefaultInstance());
+            index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance());
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.HPJNAEABNAM mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
        */
-      public java.util.List<POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder> 
+      public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder> 
            getMhnodplodjhBuilderList() {
         return getMhnodplodjhFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          POGOProtos.Rpc.CombatProto.HPJNAEABNAM, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder, POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder> 
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
           getMhnodplodjhFieldBuilder() {
         if (mhnodplodjhBuilder_ == null) {
           mhnodplodjhBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              POGOProtos.Rpc.CombatProto.HPJNAEABNAM, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder, POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder>(
+              POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder>(
                   mhnodplodjh_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -2394,31 +2394,31 @@ private static final long serialVersionUID = 0L;
         return mhnodplodjhBuilder_;
       }
 
-      private POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil_;
+      private POGOProtos.Rpc.CombatActionProto bjmjpbndeil_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.OANEOIOHADA, POGOProtos.Rpc.OANEOIOHADA.Builder, POGOProtos.Rpc.OANEOIOHADAOrBuilder> bjmjpbndeilBuilder_;
+          POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> bjmjpbndeilBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
        * @return Whether the bjmjpbndeil field is set.
        */
       public boolean hasBjmjpbndeil() {
         return bjmjpbndeilBuilder_ != null || bjmjpbndeil_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
        * @return The bjmjpbndeil.
        */
-      public POGOProtos.Rpc.OANEOIOHADA getBjmjpbndeil() {
+      public POGOProtos.Rpc.CombatActionProto getBjmjpbndeil() {
         if (bjmjpbndeilBuilder_ == null) {
-          return bjmjpbndeil_ == null ? POGOProtos.Rpc.OANEOIOHADA.getDefaultInstance() : bjmjpbndeil_;
+          return bjmjpbndeil_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : bjmjpbndeil_;
         } else {
           return bjmjpbndeilBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
        */
-      public Builder setBjmjpbndeil(POGOProtos.Rpc.OANEOIOHADA value) {
+      public Builder setBjmjpbndeil(POGOProtos.Rpc.CombatActionProto value) {
         if (bjmjpbndeilBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2432,10 +2432,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
        */
       public Builder setBjmjpbndeil(
-          POGOProtos.Rpc.OANEOIOHADA.Builder builderForValue) {
+          POGOProtos.Rpc.CombatActionProto.Builder builderForValue) {
         if (bjmjpbndeilBuilder_ == null) {
           bjmjpbndeil_ = builderForValue.build();
           onChanged();
@@ -2446,13 +2446,13 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
        */
-      public Builder mergeBjmjpbndeil(POGOProtos.Rpc.OANEOIOHADA value) {
+      public Builder mergeBjmjpbndeil(POGOProtos.Rpc.CombatActionProto value) {
         if (bjmjpbndeilBuilder_ == null) {
           if (bjmjpbndeil_ != null) {
             bjmjpbndeil_ =
-              POGOProtos.Rpc.OANEOIOHADA.newBuilder(bjmjpbndeil_).mergeFrom(value).buildPartial();
+              POGOProtos.Rpc.CombatActionProto.newBuilder(bjmjpbndeil_).mergeFrom(value).buildPartial();
           } else {
             bjmjpbndeil_ = value;
           }
@@ -2464,7 +2464,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
        */
       public Builder clearBjmjpbndeil() {
         if (bjmjpbndeilBuilder_ == null) {
@@ -2478,33 +2478,33 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
        */
-      public POGOProtos.Rpc.OANEOIOHADA.Builder getBjmjpbndeilBuilder() {
+      public POGOProtos.Rpc.CombatActionProto.Builder getBjmjpbndeilBuilder() {
         
         onChanged();
         return getBjmjpbndeilFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
        */
-      public POGOProtos.Rpc.OANEOIOHADAOrBuilder getBjmjpbndeilOrBuilder() {
+      public POGOProtos.Rpc.CombatActionProtoOrBuilder getBjmjpbndeilOrBuilder() {
         if (bjmjpbndeilBuilder_ != null) {
           return bjmjpbndeilBuilder_.getMessageOrBuilder();
         } else {
           return bjmjpbndeil_ == null ?
-              POGOProtos.Rpc.OANEOIOHADA.getDefaultInstance() : bjmjpbndeil_;
+              POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : bjmjpbndeil_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.OANEOIOHADA, POGOProtos.Rpc.OANEOIOHADA.Builder, POGOProtos.Rpc.OANEOIOHADAOrBuilder> 
+          POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> 
           getBjmjpbndeilFieldBuilder() {
         if (bjmjpbndeilBuilder_ == null) {
           bjmjpbndeilBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.OANEOIOHADA, POGOProtos.Rpc.OANEOIOHADA.Builder, POGOProtos.Rpc.OANEOIOHADAOrBuilder>(
+              POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder>(
                   getBjmjpbndeil(),
                   getParentForChildren(),
                   isClean());
@@ -2575,31 +2575,31 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      private POGOProtos.Rpc.OANEOIOHADA ififhafklnk_;
+      private POGOProtos.Rpc.CombatActionProto ififhafklnk_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.OANEOIOHADA, POGOProtos.Rpc.OANEOIOHADA.Builder, POGOProtos.Rpc.OANEOIOHADAOrBuilder> ififhafklnkBuilder_;
+          POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> ififhafklnkBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
        * @return Whether the ififhafklnk field is set.
        */
       public boolean hasIfifhafklnk() {
         return ififhafklnkBuilder_ != null || ififhafklnk_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
        * @return The ififhafklnk.
        */
-      public POGOProtos.Rpc.OANEOIOHADA getIfifhafklnk() {
+      public POGOProtos.Rpc.CombatActionProto getIfifhafklnk() {
         if (ififhafklnkBuilder_ == null) {
-          return ififhafklnk_ == null ? POGOProtos.Rpc.OANEOIOHADA.getDefaultInstance() : ififhafklnk_;
+          return ififhafklnk_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : ififhafklnk_;
         } else {
           return ififhafklnkBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
        */
-      public Builder setIfifhafklnk(POGOProtos.Rpc.OANEOIOHADA value) {
+      public Builder setIfifhafklnk(POGOProtos.Rpc.CombatActionProto value) {
         if (ififhafklnkBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2613,10 +2613,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
        */
       public Builder setIfifhafklnk(
-          POGOProtos.Rpc.OANEOIOHADA.Builder builderForValue) {
+          POGOProtos.Rpc.CombatActionProto.Builder builderForValue) {
         if (ififhafklnkBuilder_ == null) {
           ififhafklnk_ = builderForValue.build();
           onChanged();
@@ -2627,13 +2627,13 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
        */
-      public Builder mergeIfifhafklnk(POGOProtos.Rpc.OANEOIOHADA value) {
+      public Builder mergeIfifhafklnk(POGOProtos.Rpc.CombatActionProto value) {
         if (ififhafklnkBuilder_ == null) {
           if (ififhafklnk_ != null) {
             ififhafklnk_ =
-              POGOProtos.Rpc.OANEOIOHADA.newBuilder(ififhafklnk_).mergeFrom(value).buildPartial();
+              POGOProtos.Rpc.CombatActionProto.newBuilder(ififhafklnk_).mergeFrom(value).buildPartial();
           } else {
             ififhafklnk_ = value;
           }
@@ -2645,7 +2645,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
        */
       public Builder clearIfifhafklnk() {
         if (ififhafklnkBuilder_ == null) {
@@ -2659,33 +2659,33 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
        */
-      public POGOProtos.Rpc.OANEOIOHADA.Builder getIfifhafklnkBuilder() {
+      public POGOProtos.Rpc.CombatActionProto.Builder getIfifhafklnkBuilder() {
         
         onChanged();
         return getIfifhafklnkFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
        */
-      public POGOProtos.Rpc.OANEOIOHADAOrBuilder getIfifhafklnkOrBuilder() {
+      public POGOProtos.Rpc.CombatActionProtoOrBuilder getIfifhafklnkOrBuilder() {
         if (ififhafklnkBuilder_ != null) {
           return ififhafklnkBuilder_.getMessageOrBuilder();
         } else {
           return ififhafklnk_ == null ?
-              POGOProtos.Rpc.OANEOIOHADA.getDefaultInstance() : ififhafklnk_;
+              POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : ififhafklnk_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.OANEOIOHADA ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.OANEOIOHADA, POGOProtos.Rpc.OANEOIOHADA.Builder, POGOProtos.Rpc.OANEOIOHADAOrBuilder> 
+          POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> 
           getIfifhafklnkFieldBuilder() {
         if (ififhafklnkBuilder_ == null) {
           ififhafklnkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.OANEOIOHADA, POGOProtos.Rpc.OANEOIOHADA.Builder, POGOProtos.Rpc.OANEOIOHADAOrBuilder>(
+              POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder>(
                   getIfifhafklnk(),
                   getParentForChildren(),
                   isClean());
@@ -2937,48 +2937,48 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.CombatProto.CEAKNELMNKK)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.CombatProto.CombatPlayerProto)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.CombatProto.CEAKNELMNKK)
-    private static final POGOProtos.Rpc.CombatProto.CEAKNELMNKK DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.CombatProto.CombatPlayerProto)
+    private static final POGOProtos.Rpc.CombatProto.CombatPlayerProto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Rpc.CombatProto.CEAKNELMNKK();
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.CombatProto.CombatPlayerProto();
     }
 
-    public static POGOProtos.Rpc.CombatProto.CEAKNELMNKK getDefaultInstance() {
+    public static POGOProtos.Rpc.CombatProto.CombatPlayerProto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<CEAKNELMNKK>
-        PARSER = new com.google.protobuf.AbstractParser<CEAKNELMNKK>() {
+    private static final com.google.protobuf.Parser<CombatPlayerProto>
+        PARSER = new com.google.protobuf.AbstractParser<CombatPlayerProto>() {
       @java.lang.Override
-      public CEAKNELMNKK parsePartialFrom(
+      public CombatPlayerProto parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new CEAKNELMNKK(input, extensionRegistry);
+        return new CombatPlayerProto(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<CEAKNELMNKK> parser() {
+    public static com.google.protobuf.Parser<CombatPlayerProto> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<CEAKNELMNKK> getParserForType() {
+    public com.google.protobuf.Parser<CombatPlayerProto> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.CEAKNELMNKK getDefaultInstanceForType() {
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface HPJNAEABNAMOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.CombatProto.HPJNAEABNAM)
+  public interface CombatPokemonProtoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.CombatProto.CombatPokemonProto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -3126,18 +3126,18 @@ private static final long serialVersionUID = 0L;
    * ref: IAEODBIFOMA/JIFBNFGCDNO/HPJNAEABNAM
    * </pre>
    *
-   * Protobuf type {@code POGOProtos.Rpc.CombatProto.HPJNAEABNAM}
+   * Protobuf type {@code POGOProtos.Rpc.CombatProto.CombatPokemonProto}
    */
-  public static final class HPJNAEABNAM extends
+  public static final class CombatPokemonProto extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.CombatProto.HPJNAEABNAM)
-      HPJNAEABNAMOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.CombatProto.CombatPokemonProto)
+      CombatPokemonProtoOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use HPJNAEABNAM.newBuilder() to construct.
-    private HPJNAEABNAM(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use CombatPokemonProto.newBuilder() to construct.
+    private CombatPokemonProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private HPJNAEABNAM() {
+    private CombatPokemonProto() {
       lecobcejkpk_ = "";
       eajohpjbknk_ = 0;
     }
@@ -3146,7 +3146,7 @@ private static final long serialVersionUID = 0L;
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new HPJNAEABNAM();
+      return new CombatPokemonProto();
     }
 
     @java.lang.Override
@@ -3154,7 +3154,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private HPJNAEABNAM(
+    private CombatPokemonProto(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3303,15 +3303,15 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_HPJNAEABNAM_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CombatPokemonProto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_HPJNAEABNAM_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CombatPokemonProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.CombatProto.HPJNAEABNAM.class, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder.class);
+              POGOProtos.Rpc.CombatProto.CombatPokemonProto.class, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder.class);
     }
 
     public static final int MFKGKHDMBPB_FIELD_NUMBER = 1;
@@ -3756,10 +3756,10 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Rpc.CombatProto.HPJNAEABNAM)) {
+      if (!(obj instanceof POGOProtos.Rpc.CombatProto.CombatPokemonProto)) {
         return super.equals(obj);
       }
-      POGOProtos.Rpc.CombatProto.HPJNAEABNAM other = (POGOProtos.Rpc.CombatProto.HPJNAEABNAM) obj;
+      POGOProtos.Rpc.CombatProto.CombatPokemonProto other = (POGOProtos.Rpc.CombatProto.CombatPokemonProto) obj;
 
       if (getMfkgkhdmbpb()
           != other.getMfkgkhdmbpb()) return false;
@@ -3864,69 +3864,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseFrom(byte[] data)
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseDelimitedFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM parseFrom(
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3939,7 +3939,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Rpc.CombatProto.HPJNAEABNAM prototype) {
+    public static Builder newBuilder(POGOProtos.Rpc.CombatProto.CombatPokemonProto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3959,26 +3959,26 @@ private static final long serialVersionUID = 0L;
      * ref: IAEODBIFOMA/JIFBNFGCDNO/HPJNAEABNAM
      * </pre>
      *
-     * Protobuf type {@code POGOProtos.Rpc.CombatProto.HPJNAEABNAM}
+     * Protobuf type {@code POGOProtos.Rpc.CombatProto.CombatPokemonProto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.CombatProto.HPJNAEABNAM)
-        POGOProtos.Rpc.CombatProto.HPJNAEABNAMOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.CombatProto.CombatPokemonProto)
+        POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_HPJNAEABNAM_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CombatPokemonProto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_HPJNAEABNAM_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CombatPokemonProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.CombatProto.HPJNAEABNAM.class, POGOProtos.Rpc.CombatProto.HPJNAEABNAM.Builder.class);
+                POGOProtos.Rpc.CombatProto.CombatPokemonProto.class, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder.class);
       }
 
-      // Construct using POGOProtos.Rpc.CombatProto.HPJNAEABNAM.newBuilder()
+      // Construct using POGOProtos.Rpc.CombatProto.CombatPokemonProto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4046,17 +4046,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_HPJNAEABNAM_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_CombatProto_CombatPokemonProto_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM getDefaultInstanceForType() {
-        return POGOProtos.Rpc.CombatProto.HPJNAEABNAM.getDefaultInstance();
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto getDefaultInstanceForType() {
+        return POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM build() {
-        POGOProtos.Rpc.CombatProto.HPJNAEABNAM result = buildPartial();
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto build() {
+        POGOProtos.Rpc.CombatProto.CombatPokemonProto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -4064,8 +4064,8 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.CombatProto.HPJNAEABNAM buildPartial() {
-        POGOProtos.Rpc.CombatProto.HPJNAEABNAM result = new POGOProtos.Rpc.CombatProto.HPJNAEABNAM(this);
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto buildPartial() {
+        POGOProtos.Rpc.CombatProto.CombatPokemonProto result = new POGOProtos.Rpc.CombatProto.CombatPokemonProto(this);
         result.mfkgkhdmbpb_ = mfkgkhdmbpb_;
         result.kcbcpdfdkel_ = kcbcpdfdkel_;
         result.fgeliggeohb_ = fgeliggeohb_;
@@ -4128,16 +4128,16 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Rpc.CombatProto.HPJNAEABNAM) {
-          return mergeFrom((POGOProtos.Rpc.CombatProto.HPJNAEABNAM)other);
+        if (other instanceof POGOProtos.Rpc.CombatProto.CombatPokemonProto) {
+          return mergeFrom((POGOProtos.Rpc.CombatProto.CombatPokemonProto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Rpc.CombatProto.HPJNAEABNAM other) {
-        if (other == POGOProtos.Rpc.CombatProto.HPJNAEABNAM.getDefaultInstance()) return this;
+      public Builder mergeFrom(POGOProtos.Rpc.CombatProto.CombatPokemonProto other) {
+        if (other == POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance()) return this;
         if (other.getMfkgkhdmbpb() != 0L) {
           setMfkgkhdmbpb(other.getMfkgkhdmbpb());
         }
@@ -4214,11 +4214,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Rpc.CombatProto.HPJNAEABNAM parsedMessage = null;
+        POGOProtos.Rpc.CombatProto.CombatPokemonProto parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Rpc.CombatProto.HPJNAEABNAM) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Rpc.CombatProto.CombatPokemonProto) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -5016,41 +5016,41 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.CombatProto.HPJNAEABNAM)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.CombatProto.CombatPokemonProto)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.CombatProto.HPJNAEABNAM)
-    private static final POGOProtos.Rpc.CombatProto.HPJNAEABNAM DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.CombatProto.CombatPokemonProto)
+    private static final POGOProtos.Rpc.CombatProto.CombatPokemonProto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Rpc.CombatProto.HPJNAEABNAM();
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.CombatProto.CombatPokemonProto();
     }
 
-    public static POGOProtos.Rpc.CombatProto.HPJNAEABNAM getDefaultInstance() {
+    public static POGOProtos.Rpc.CombatProto.CombatPokemonProto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<HPJNAEABNAM>
-        PARSER = new com.google.protobuf.AbstractParser<HPJNAEABNAM>() {
+    private static final com.google.protobuf.Parser<CombatPokemonProto>
+        PARSER = new com.google.protobuf.AbstractParser<CombatPokemonProto>() {
       @java.lang.Override
-      public HPJNAEABNAM parsePartialFrom(
+      public CombatPokemonProto parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new HPJNAEABNAM(input, extensionRegistry);
+        return new CombatPokemonProto(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<HPJNAEABNAM> parser() {
+    public static com.google.protobuf.Parser<CombatPokemonProto> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<HPJNAEABNAM> getParserForType() {
+    public com.google.protobuf.Parser<CombatPokemonProto> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.HPJNAEABNAM getDefaultInstanceForType() {
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5059,20 +5059,20 @@ private static final long serialVersionUID = 0L;
   public static final int EIHBLPLIGFA_FIELD_NUMBER = 1;
   private int eihblpligfa_;
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.BALOCEBEKII eihblpligfa = 1;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
    * @return The enum numeric value on the wire for eihblpligfa.
    */
   @java.lang.Override public int getEihblpligfaValue() {
     return eihblpligfa_;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.BALOCEBEKII eihblpligfa = 1;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
    * @return The eihblpligfa.
    */
-  @java.lang.Override public POGOProtos.Rpc.CombatProto.BALOCEBEKII getEihblpligfa() {
+  @java.lang.Override public POGOProtos.Rpc.CombatProto.CombatState getEihblpligfa() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.CombatProto.BALOCEBEKII result = POGOProtos.Rpc.CombatProto.BALOCEBEKII.valueOf(eihblpligfa_);
-    return result == null ? POGOProtos.Rpc.CombatProto.BALOCEBEKII.UNRECOGNIZED : result;
+    POGOProtos.Rpc.CombatProto.CombatState result = POGOProtos.Rpc.CombatProto.CombatState.valueOf(eihblpligfa_);
+    return result == null ? POGOProtos.Rpc.CombatProto.CombatState.UNRECOGNIZED : result;
   }
 
   public static final int HDEGLLGMEIH_FIELD_NUMBER = 2;
@@ -5114,9 +5114,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int EKINGGFMNDG_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg_;
+  private POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg_;
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
    * @return Whether the ekinggfmndg field is set.
    */
   @java.lang.Override
@@ -5124,25 +5124,25 @@ private static final long serialVersionUID = 0L;
     return ekinggfmndg_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
    * @return The ekinggfmndg.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CombatProto.CEAKNELMNKK getEkinggfmndg() {
-    return ekinggfmndg_ == null ? POGOProtos.Rpc.CombatProto.CEAKNELMNKK.getDefaultInstance() : ekinggfmndg_;
+  public POGOProtos.Rpc.CombatProto.CombatPlayerProto getEkinggfmndg() {
+    return ekinggfmndg_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : ekinggfmndg_;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder getEkinggfmndgOrBuilder() {
+  public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getEkinggfmndgOrBuilder() {
     return getEkinggfmndg();
   }
 
   public static final int HLPFMBELLOM_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom_;
+  private POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom_;
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
    * @return Whether the hlpfmbellom field is set.
    */
   @java.lang.Override
@@ -5150,18 +5150,18 @@ private static final long serialVersionUID = 0L;
     return hlpfmbellom_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
    * @return The hlpfmbellom.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CombatProto.CEAKNELMNKK getHlpfmbellom() {
-    return hlpfmbellom_ == null ? POGOProtos.Rpc.CombatProto.CEAKNELMNKK.getDefaultInstance() : hlpfmbellom_;
+  public POGOProtos.Rpc.CombatProto.CombatPlayerProto getHlpfmbellom() {
+    return hlpfmbellom_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : hlpfmbellom_;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder getHlpfmbellomOrBuilder() {
+  public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getHlpfmbellomOrBuilder() {
     return getHlpfmbellom();
   }
 
@@ -5289,7 +5289,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (eihblpligfa_ != POGOProtos.Rpc.CombatProto.BALOCEBEKII.UNSET.getNumber()) {
+    if (eihblpligfa_ != POGOProtos.Rpc.CombatProto.CombatState.UNSET.getNumber()) {
       output.writeEnum(1, eihblpligfa_);
     }
     if (!getHdegllgmeihBytes().isEmpty()) {
@@ -5340,7 +5340,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (eihblpligfa_ != POGOProtos.Rpc.CombatProto.BALOCEBEKII.UNSET.getNumber()) {
+    if (eihblpligfa_ != POGOProtos.Rpc.CombatProto.CombatState.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, eihblpligfa_);
     }
@@ -5838,14 +5838,14 @@ private static final long serialVersionUID = 0L;
 
     private int eihblpligfa_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.BALOCEBEKII eihblpligfa = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
      * @return The enum numeric value on the wire for eihblpligfa.
      */
     @java.lang.Override public int getEihblpligfaValue() {
       return eihblpligfa_;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.BALOCEBEKII eihblpligfa = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
      * @param value The enum numeric value on the wire for eihblpligfa to set.
      * @return This builder for chaining.
      */
@@ -5856,21 +5856,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.BALOCEBEKII eihblpligfa = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
      * @return The eihblpligfa.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.BALOCEBEKII getEihblpligfa() {
+    public POGOProtos.Rpc.CombatProto.CombatState getEihblpligfa() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.CombatProto.BALOCEBEKII result = POGOProtos.Rpc.CombatProto.BALOCEBEKII.valueOf(eihblpligfa_);
-      return result == null ? POGOProtos.Rpc.CombatProto.BALOCEBEKII.UNRECOGNIZED : result;
+      POGOProtos.Rpc.CombatProto.CombatState result = POGOProtos.Rpc.CombatProto.CombatState.valueOf(eihblpligfa_);
+      return result == null ? POGOProtos.Rpc.CombatProto.CombatState.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.BALOCEBEKII eihblpligfa = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
      * @param value The eihblpligfa to set.
      * @return This builder for chaining.
      */
-    public Builder setEihblpligfa(POGOProtos.Rpc.CombatProto.BALOCEBEKII value) {
+    public Builder setEihblpligfa(POGOProtos.Rpc.CombatProto.CombatState value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -5880,7 +5880,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.BALOCEBEKII eihblpligfa = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearEihblpligfa() {
@@ -5966,31 +5966,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg_;
+    private POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CombatProto.CEAKNELMNKK, POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder, POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder> ekinggfmndgBuilder_;
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder> ekinggfmndgBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
      * @return Whether the ekinggfmndg field is set.
      */
     public boolean hasEkinggfmndg() {
       return ekinggfmndgBuilder_ != null || ekinggfmndg_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
      * @return The ekinggfmndg.
      */
-    public POGOProtos.Rpc.CombatProto.CEAKNELMNKK getEkinggfmndg() {
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProto getEkinggfmndg() {
       if (ekinggfmndgBuilder_ == null) {
-        return ekinggfmndg_ == null ? POGOProtos.Rpc.CombatProto.CEAKNELMNKK.getDefaultInstance() : ekinggfmndg_;
+        return ekinggfmndg_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : ekinggfmndg_;
       } else {
         return ekinggfmndgBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
      */
-    public Builder setEkinggfmndg(POGOProtos.Rpc.CombatProto.CEAKNELMNKK value) {
+    public Builder setEkinggfmndg(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
       if (ekinggfmndgBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -6004,10 +6004,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
      */
     public Builder setEkinggfmndg(
-        POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder builderForValue) {
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder builderForValue) {
       if (ekinggfmndgBuilder_ == null) {
         ekinggfmndg_ = builderForValue.build();
         onChanged();
@@ -6018,13 +6018,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
      */
-    public Builder mergeEkinggfmndg(POGOProtos.Rpc.CombatProto.CEAKNELMNKK value) {
+    public Builder mergeEkinggfmndg(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
       if (ekinggfmndgBuilder_ == null) {
         if (ekinggfmndg_ != null) {
           ekinggfmndg_ =
-            POGOProtos.Rpc.CombatProto.CEAKNELMNKK.newBuilder(ekinggfmndg_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto.newBuilder(ekinggfmndg_).mergeFrom(value).buildPartial();
         } else {
           ekinggfmndg_ = value;
         }
@@ -6036,7 +6036,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
      */
     public Builder clearEkinggfmndg() {
       if (ekinggfmndgBuilder_ == null) {
@@ -6050,33 +6050,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
      */
-    public POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder getEkinggfmndgBuilder() {
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder getEkinggfmndgBuilder() {
       
       onChanged();
       return getEkinggfmndgFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
      */
-    public POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder getEkinggfmndgOrBuilder() {
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getEkinggfmndgOrBuilder() {
       if (ekinggfmndgBuilder_ != null) {
         return ekinggfmndgBuilder_.getMessageOrBuilder();
       } else {
         return ekinggfmndg_ == null ?
-            POGOProtos.Rpc.CombatProto.CEAKNELMNKK.getDefaultInstance() : ekinggfmndg_;
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : ekinggfmndg_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CombatProto.CEAKNELMNKK, POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder, POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder> 
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder> 
         getEkinggfmndgFieldBuilder() {
       if (ekinggfmndgBuilder_ == null) {
         ekinggfmndgBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.CombatProto.CEAKNELMNKK, POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder, POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder>(
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder>(
                 getEkinggfmndg(),
                 getParentForChildren(),
                 isClean());
@@ -6085,31 +6085,31 @@ private static final long serialVersionUID = 0L;
       return ekinggfmndgBuilder_;
     }
 
-    private POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom_;
+    private POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CombatProto.CEAKNELMNKK, POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder, POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder> hlpfmbellomBuilder_;
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder> hlpfmbellomBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
      * @return Whether the hlpfmbellom field is set.
      */
     public boolean hasHlpfmbellom() {
       return hlpfmbellomBuilder_ != null || hlpfmbellom_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
      * @return The hlpfmbellom.
      */
-    public POGOProtos.Rpc.CombatProto.CEAKNELMNKK getHlpfmbellom() {
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProto getHlpfmbellom() {
       if (hlpfmbellomBuilder_ == null) {
-        return hlpfmbellom_ == null ? POGOProtos.Rpc.CombatProto.CEAKNELMNKK.getDefaultInstance() : hlpfmbellom_;
+        return hlpfmbellom_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : hlpfmbellom_;
       } else {
         return hlpfmbellomBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
      */
-    public Builder setHlpfmbellom(POGOProtos.Rpc.CombatProto.CEAKNELMNKK value) {
+    public Builder setHlpfmbellom(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
       if (hlpfmbellomBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -6123,10 +6123,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
      */
     public Builder setHlpfmbellom(
-        POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder builderForValue) {
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder builderForValue) {
       if (hlpfmbellomBuilder_ == null) {
         hlpfmbellom_ = builderForValue.build();
         onChanged();
@@ -6137,13 +6137,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
      */
-    public Builder mergeHlpfmbellom(POGOProtos.Rpc.CombatProto.CEAKNELMNKK value) {
+    public Builder mergeHlpfmbellom(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
       if (hlpfmbellomBuilder_ == null) {
         if (hlpfmbellom_ != null) {
           hlpfmbellom_ =
-            POGOProtos.Rpc.CombatProto.CEAKNELMNKK.newBuilder(hlpfmbellom_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto.newBuilder(hlpfmbellom_).mergeFrom(value).buildPartial();
         } else {
           hlpfmbellom_ = value;
         }
@@ -6155,7 +6155,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
      */
     public Builder clearHlpfmbellom() {
       if (hlpfmbellomBuilder_ == null) {
@@ -6169,33 +6169,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
      */
-    public POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder getHlpfmbellomBuilder() {
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder getHlpfmbellomBuilder() {
       
       onChanged();
       return getHlpfmbellomFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
      */
-    public POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder getHlpfmbellomOrBuilder() {
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getHlpfmbellomOrBuilder() {
       if (hlpfmbellomBuilder_ != null) {
         return hlpfmbellomBuilder_.getMessageOrBuilder();
       } else {
         return hlpfmbellom_ == null ?
-            POGOProtos.Rpc.CombatProto.CEAKNELMNKK.getDefaultInstance() : hlpfmbellom_;
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : hlpfmbellom_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CEAKNELMNKK hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CombatProto.CEAKNELMNKK, POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder, POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder> 
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder> 
         getHlpfmbellomFieldBuilder() {
       if (hlpfmbellomBuilder_ == null) {
         hlpfmbellomBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.CombatProto.CEAKNELMNKK, POGOProtos.Rpc.CombatProto.CEAKNELMNKK.Builder, POGOProtos.Rpc.CombatProto.CEAKNELMNKKOrBuilder>(
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder>(
                 getHlpfmbellom(),
                 getParentForChildren(),
                 isClean());

@@ -59,7 +59,7 @@ private static final long serialVersionUID = 0L;
                   HlepgnjdgfpDefaultEntryHolder.defaultEntry);
               mutable_bitField0_ |= 0x00000001;
             }
-            com.google.protobuf.MapEntry<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG>
+            com.google.protobuf.MapEntry<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto>
             hlepgnjdgfp__ = input.readMessage(
                 HlepgnjdgfpDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
             hlepgnjdgfp_.getMutableMap().put(
@@ -258,8 +258,8 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.ChronoUnit)
   }
 
-  public interface OKPHPHPNACGOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG)
+  public interface PurchaseProtoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -291,25 +291,25 @@ private static final long serialVersionUID = 0L;
    * ref: KIOLHOEBHLE/DBDECFNOILG/OKPHPHPNACG
    * </pre>
    *
-   * Protobuf type {@code POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG}
+   * Protobuf type {@code POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto}
    */
-  public static final class OKPHPHPNACG extends
+  public static final class PurchaseProto extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG)
-      OKPHPHPNACGOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto)
+      PurchaseProtoOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use OKPHPHPNACG.newBuilder() to construct.
-    private OKPHPHPNACG(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use PurchaseProto.newBuilder() to construct.
+    private PurchaseProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private OKPHPHPNACG() {
+    private PurchaseProto() {
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new OKPHPHPNACG();
+      return new PurchaseProto();
     }
 
     @java.lang.Override
@@ -317,7 +317,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private OKPHPHPNACG(
+    private PurchaseProto(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -376,15 +376,15 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_OKPHPHPNACG_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_PurchaseProto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_OKPHPHPNACG_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_PurchaseProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG.class, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG.Builder.class);
+              POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto.class, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto.Builder.class);
     }
 
     public static final int LIOLPILECBJ_FIELD_NUMBER = 1;
@@ -492,10 +492,10 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG)) {
+      if (!(obj instanceof POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto)) {
         return super.equals(obj);
       }
-      POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG other = (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG) obj;
+      POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto other = (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto) obj;
 
       if (getLiolpilecbj()
           != other.getLiolpilecbj()) return false;
@@ -530,69 +530,69 @@ private static final long serialVersionUID = 0L;
       return hash;
     }
 
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseFrom(
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseFrom(
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseFrom(
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseFrom(
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseFrom(byte[] data)
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseFrom(
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseFrom(
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseDelimitedFrom(
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseFrom(
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parseFrom(
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -605,7 +605,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG prototype) {
+    public static Builder newBuilder(POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -625,26 +625,26 @@ private static final long serialVersionUID = 0L;
      * ref: KIOLHOEBHLE/DBDECFNOILG/OKPHPHPNACG
      * </pre>
      *
-     * Protobuf type {@code POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG}
+     * Protobuf type {@code POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG)
-        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACGOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto)
+        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_OKPHPHPNACG_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_PurchaseProto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_OKPHPHPNACG_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_PurchaseProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG.class, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG.Builder.class);
+                POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto.class, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto.Builder.class);
       }
 
-      // Construct using POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG.newBuilder()
+      // Construct using POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -676,17 +676,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_OKPHPHPNACG_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_PurchaseProto_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG getDefaultInstanceForType() {
-        return POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG.getDefaultInstance();
+      public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto getDefaultInstanceForType() {
+        return POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG build() {
-        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG result = buildPartial();
+      public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto build() {
+        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -694,8 +694,8 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG buildPartial() {
-        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG result = new POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG(this);
+      public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto buildPartial() {
+        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto result = new POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto(this);
         result.liolpilecbj_ = liolpilecbj_;
         result.npdkoggalbe_ = npdkoggalbe_;
         result.kaijhdfokll_ = kaijhdfokll_;
@@ -738,16 +738,16 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG) {
-          return mergeFrom((POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG)other);
+        if (other instanceof POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto) {
+          return mergeFrom((POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG other) {
-        if (other == POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG.getDefaultInstance()) return this;
+      public Builder mergeFrom(POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto other) {
+        if (other == POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto.getDefaultInstance()) return this;
         if (other.getLiolpilecbj() != 0) {
           setLiolpilecbj(other.getLiolpilecbj());
         }
@@ -775,11 +775,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG parsedMessage = null;
+        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -925,41 +925,41 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG)
-    private static final POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto)
+    private static final POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG();
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto();
     }
 
-    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG getDefaultInstance() {
+    public static POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<OKPHPHPNACG>
-        PARSER = new com.google.protobuf.AbstractParser<OKPHPHPNACG>() {
+    private static final com.google.protobuf.Parser<PurchaseProto>
+        PARSER = new com.google.protobuf.AbstractParser<PurchaseProto>() {
       @java.lang.Override
-      public OKPHPHPNACG parsePartialFrom(
+      public PurchaseProto parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new OKPHPHPNACG(input, extensionRegistry);
+        return new PurchaseProto(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<OKPHPHPNACG> parser() {
+    public static com.google.protobuf.Parser<PurchaseProto> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<OKPHPHPNACG> getParserForType() {
+    public com.google.protobuf.Parser<PurchaseProto> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG getDefaultInstanceForType() {
+    public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -968,18 +968,18 @@ private static final long serialVersionUID = 0L;
   public static final int HLEPGNJDGFP_FIELD_NUMBER = 1;
   private static final class HlepgnjdgfpDefaultEntryHolder {
     static final com.google.protobuf.MapEntry<
-        java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> defaultEntry =
+        java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> defaultEntry =
             com.google.protobuf.MapEntry
-            .<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG>newDefaultInstance(
+            .<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto>newDefaultInstance(
                 POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_LimitedPurchaseSkuRecordProto_HlepgnjdgfpEntry_descriptor, 
                 com.google.protobuf.WireFormat.FieldType.STRING,
                 "",
                 com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG.getDefaultInstance());
+                POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto.getDefaultInstance());
   }
   private com.google.protobuf.MapField<
-      java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> hlepgnjdgfp_;
-  private com.google.protobuf.MapField<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG>
+      java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> hlepgnjdgfp_;
+  private com.google.protobuf.MapField<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto>
   internalGetHlepgnjdgfp() {
     if (hlepgnjdgfp_ == null) {
       return com.google.protobuf.MapField.emptyMapField(
@@ -992,7 +992,7 @@ private static final long serialVersionUID = 0L;
     return internalGetHlepgnjdgfp().getMap().size();
   }
   /**
-   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
    */
 
   @java.lang.Override
@@ -1006,39 +1006,39 @@ private static final long serialVersionUID = 0L;
    */
   @java.lang.Override
   @java.lang.Deprecated
-  public java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> getHlepgnjdgfp() {
+  public java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> getHlepgnjdgfp() {
     return getHlepgnjdgfpMap();
   }
   /**
-   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
    */
   @java.lang.Override
 
-  public java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> getHlepgnjdgfpMap() {
+  public java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> getHlepgnjdgfpMap() {
     return internalGetHlepgnjdgfp().getMap();
   }
   /**
-   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG getHlepgnjdgfpOrDefault(
+  public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto getHlepgnjdgfpOrDefault(
       java.lang.String key,
-      POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG defaultValue) {
+      POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto defaultValue) {
     if (key == null) { throw new java.lang.NullPointerException(); }
-    java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> map =
+    java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> map =
         internalGetHlepgnjdgfp().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
   /**
-   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+   * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG getHlepgnjdgfpOrThrow(
+  public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto getHlepgnjdgfpOrThrow(
       java.lang.String key) {
     if (key == null) { throw new java.lang.NullPointerException(); }
-    java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> map =
+    java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> map =
         internalGetHlepgnjdgfp().getMap();
     if (!map.containsKey(key)) {
       throw new java.lang.IllegalArgumentException();
@@ -1075,9 +1075,9 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    for (java.util.Map.Entry<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> entry
+    for (java.util.Map.Entry<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> entry
          : internalGetHlepgnjdgfp().getMap().entrySet()) {
-      com.google.protobuf.MapEntry<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG>
+      com.google.protobuf.MapEntry<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto>
       hlepgnjdgfp__ = HlepgnjdgfpDefaultEntryHolder.defaultEntry.newBuilderForType()
           .setKey(entry.getKey())
           .setValue(entry.getValue())
@@ -1387,8 +1387,8 @@ private static final long serialVersionUID = 0L;
     private int bitField0_;
 
     private com.google.protobuf.MapField<
-        java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> hlepgnjdgfp_;
-    private com.google.protobuf.MapField<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG>
+        java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> hlepgnjdgfp_;
+    private com.google.protobuf.MapField<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto>
     internalGetHlepgnjdgfp() {
       if (hlepgnjdgfp_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -1396,7 +1396,7 @@ private static final long serialVersionUID = 0L;
       }
       return hlepgnjdgfp_;
     }
-    private com.google.protobuf.MapField<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG>
+    private com.google.protobuf.MapField<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto>
     internalGetMutableHlepgnjdgfp() {
       onChanged();;
       if (hlepgnjdgfp_ == null) {
@@ -1413,7 +1413,7 @@ private static final long serialVersionUID = 0L;
       return internalGetHlepgnjdgfp().getMap().size();
     }
     /**
-     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
      */
 
     @java.lang.Override
@@ -1427,39 +1427,39 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> getHlepgnjdgfp() {
+    public java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> getHlepgnjdgfp() {
       return getHlepgnjdgfpMap();
     }
     /**
-     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> getHlepgnjdgfpMap() {
+    public java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> getHlepgnjdgfpMap() {
       return internalGetHlepgnjdgfp().getMap();
     }
     /**
-     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG getHlepgnjdgfpOrDefault(
+    public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto getHlepgnjdgfpOrDefault(
         java.lang.String key,
-        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG defaultValue) {
+        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto defaultValue) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> map =
+      java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> map =
           internalGetHlepgnjdgfp().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG getHlepgnjdgfpOrThrow(
+    public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto getHlepgnjdgfpOrThrow(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> map =
+      java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> map =
           internalGetHlepgnjdgfp().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -1473,7 +1473,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
      */
 
     public Builder removeHlepgnjdgfp(
@@ -1487,16 +1487,16 @@ private static final long serialVersionUID = 0L;
      * Use alternate mutation accessors instead.
      */
     @java.lang.Deprecated
-    public java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG>
+    public java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto>
     getMutableHlepgnjdgfp() {
       return internalGetMutableHlepgnjdgfp().getMutableMap();
     }
     /**
-     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
      */
     public Builder putHlepgnjdgfp(
         java.lang.String key,
-        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG value) {
+        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
       internalGetMutableHlepgnjdgfp().getMutableMap()
@@ -1504,11 +1504,11 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG&gt; hlepgnjdgfp = 1;</code>
+     * <code>map&lt;string, .POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto&gt; hlepgnjdgfp = 1;</code>
      */
 
     public Builder putAllHlepgnjdgfp(
-        java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.OKPHPHPNACG> values) {
+        java.util.Map<java.lang.String, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.PurchaseProto> values) {
       internalGetMutableHlepgnjdgfp().getMutableMap()
           .putAll(values);
       return this;

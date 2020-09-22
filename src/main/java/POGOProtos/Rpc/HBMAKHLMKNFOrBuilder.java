@@ -8,26 +8,26 @@ public interface HBMAKHLMKNFOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
    */
-  java.util.List<POGOProtos.Rpc.NDLAECIHENK> 
+  java.util.List<POGOProtos.Rpc.AwardedGymBadge> 
       getHdinlbkpielList();
   /**
-   * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
    */
-  POGOProtos.Rpc.NDLAECIHENK getHdinlbkpiel(int index);
+  POGOProtos.Rpc.AwardedGymBadge getHdinlbkpiel(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
    */
   int getHdinlbkpielCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.NDLAECIHENKOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.AwardedGymBadgeOrBuilder> 
       getHdinlbkpielOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.NDLAECIHENK hdinlbkpiel = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 1;</code>
    */
-  POGOProtos.Rpc.NDLAECIHENKOrBuilder getHdinlbkpielOrBuilder(
+  POGOProtos.Rpc.AwardedGymBadgeOrBuilder getHdinlbkpielOrBuilder(
       int index);
 }

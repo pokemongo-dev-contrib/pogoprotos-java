@@ -54,11 +54,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.HJJBCLOAFKI.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformMetricData.Builder subBuilder = null;
             if (ephppddioph_ != null) {
               subBuilder = ephppddioph_.toBuilder();
             }
-            ephppddioph_ = input.readMessage(POGOProtos.Rpc.HJJBCLOAFKI.parser(), extensionRegistry);
+            ephppddioph_ = input.readMessage(POGOProtos.Rpc.PlatformMetricData.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(ephppddioph_);
               ephppddioph_ = subBuilder.buildPartial();
@@ -361,9 +361,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int EPHPPDDIOPH_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.HJJBCLOAFKI ephppddioph_;
+  private POGOProtos.Rpc.PlatformMetricData ephppddioph_;
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
    * @return Whether the ephppddioph field is set.
    */
   @java.lang.Override
@@ -371,18 +371,18 @@ private static final long serialVersionUID = 0L;
     return ephppddioph_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
    * @return The ephppddioph.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.HJJBCLOAFKI getEphppddioph() {
-    return ephppddioph_ == null ? POGOProtos.Rpc.HJJBCLOAFKI.getDefaultInstance() : ephppddioph_;
+  public POGOProtos.Rpc.PlatformMetricData getEphppddioph() {
+    return ephppddioph_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : ephppddioph_;
   }
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.HJJBCLOAFKIOrBuilder getEphppddiophOrBuilder() {
+  public POGOProtos.Rpc.PlatformMetricDataOrBuilder getEphppddiophOrBuilder() {
     return getEphppddioph();
   }
 
@@ -740,31 +740,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.HJJBCLOAFKI ephppddioph_;
+    private POGOProtos.Rpc.PlatformMetricData ephppddioph_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HJJBCLOAFKI, POGOProtos.Rpc.HJJBCLOAFKI.Builder, POGOProtos.Rpc.HJJBCLOAFKIOrBuilder> ephppddiophBuilder_;
+        POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> ephppddiophBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
      * @return Whether the ephppddioph field is set.
      */
     public boolean hasEphppddioph() {
       return ephppddiophBuilder_ != null || ephppddioph_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
      * @return The ephppddioph.
      */
-    public POGOProtos.Rpc.HJJBCLOAFKI getEphppddioph() {
+    public POGOProtos.Rpc.PlatformMetricData getEphppddioph() {
       if (ephppddiophBuilder_ == null) {
-        return ephppddioph_ == null ? POGOProtos.Rpc.HJJBCLOAFKI.getDefaultInstance() : ephppddioph_;
+        return ephppddioph_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : ephppddioph_;
       } else {
         return ephppddiophBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
      */
-    public Builder setEphppddioph(POGOProtos.Rpc.HJJBCLOAFKI value) {
+    public Builder setEphppddioph(POGOProtos.Rpc.PlatformMetricData value) {
       if (ephppddiophBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -778,10 +778,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
      */
     public Builder setEphppddioph(
-        POGOProtos.Rpc.HJJBCLOAFKI.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformMetricData.Builder builderForValue) {
       if (ephppddiophBuilder_ == null) {
         ephppddioph_ = builderForValue.build();
         onChanged();
@@ -792,13 +792,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
      */
-    public Builder mergeEphppddioph(POGOProtos.Rpc.HJJBCLOAFKI value) {
+    public Builder mergeEphppddioph(POGOProtos.Rpc.PlatformMetricData value) {
       if (ephppddiophBuilder_ == null) {
         if (ephppddioph_ != null) {
           ephppddioph_ =
-            POGOProtos.Rpc.HJJBCLOAFKI.newBuilder(ephppddioph_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformMetricData.newBuilder(ephppddioph_).mergeFrom(value).buildPartial();
         } else {
           ephppddioph_ = value;
         }
@@ -810,7 +810,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
      */
     public Builder clearEphppddioph() {
       if (ephppddiophBuilder_ == null) {
@@ -824,33 +824,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
      */
-    public POGOProtos.Rpc.HJJBCLOAFKI.Builder getEphppddiophBuilder() {
+    public POGOProtos.Rpc.PlatformMetricData.Builder getEphppddiophBuilder() {
       
       onChanged();
       return getEphppddiophFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
      */
-    public POGOProtos.Rpc.HJJBCLOAFKIOrBuilder getEphppddiophOrBuilder() {
+    public POGOProtos.Rpc.PlatformMetricDataOrBuilder getEphppddiophOrBuilder() {
       if (ephppddiophBuilder_ != null) {
         return ephppddiophBuilder_.getMessageOrBuilder();
       } else {
         return ephppddioph_ == null ?
-            POGOProtos.Rpc.HJJBCLOAFKI.getDefaultInstance() : ephppddioph_;
+            POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : ephppddioph_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.HJJBCLOAFKI, POGOProtos.Rpc.HJJBCLOAFKI.Builder, POGOProtos.Rpc.HJJBCLOAFKIOrBuilder> 
+        POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> 
         getEphppddiophFieldBuilder() {
       if (ephppddiophBuilder_ == null) {
         ephppddiophBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.HJJBCLOAFKI, POGOProtos.Rpc.HJJBCLOAFKI.Builder, POGOProtos.Rpc.HJJBCLOAFKIOrBuilder>(
+            POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder>(
                 getEphppddioph(),
                 getParentForChildren(),
                 isClean());

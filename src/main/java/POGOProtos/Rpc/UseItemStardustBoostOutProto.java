@@ -5,7 +5,7 @@ package POGOProtos.Rpc;
 
 /**
  * <pre>
- * ref: ELDPAPALFCM
+ * ref: BPBLEPLNKEM
  * </pre>
  *
  * Protobuf type {@code POGOProtos.Rpc.UseItemStardustBoostOutProto}
@@ -61,13 +61,13 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             POGOProtos.Rpc.AppliedItemsProto.Builder subBuilder = null;
-            if (appliedItems_ != null) {
-              subBuilder = appliedItems_.toBuilder();
+            if (imahidankpd_ != null) {
+              subBuilder = imahidankpd_.toBuilder();
             }
-            appliedItems_ = input.readMessage(POGOProtos.Rpc.AppliedItemsProto.parser(), extensionRegistry);
+            imahidankpd_ = input.readMessage(POGOProtos.Rpc.AppliedItemsProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(appliedItems_);
-              appliedItems_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(imahidankpd_);
+              imahidankpd_ = subBuilder.buildPartial();
             }
 
             break;
@@ -106,7 +106,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: ELDPAPALFCM/HEPCCCGJGPM/OKCBBELJPHI
+   * ref: BPBLEPLNKEM/HODIJOABHPO/BPGOCHCEPNG
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.UseItemStardustBoostOutProto.Result}
@@ -126,9 +126,9 @@ private static final long serialVersionUID = 0L;
      */
     ERROR_INVALID_ITEM_TYPE(2),
     /**
-     * <code>ERROR_XP_BOOST_ALREADY_ACTIVE = 3;</code>
+     * <code>ERROR_STARDUST_BOOST_ALREADY_ACTIVE = 3;</code>
      */
-    ERROR_XP_BOOST_ALREADY_ACTIVE(3),
+    ERROR_STARDUST_BOOST_ALREADY_ACTIVE(3),
     /**
      * <code>ERROR_NO_ITEMS_REMAINING = 4;</code>
      */
@@ -153,9 +153,9 @@ private static final long serialVersionUID = 0L;
      */
     public static final int ERROR_INVALID_ITEM_TYPE_VALUE = 2;
     /**
-     * <code>ERROR_XP_BOOST_ALREADY_ACTIVE = 3;</code>
+     * <code>ERROR_STARDUST_BOOST_ALREADY_ACTIVE = 3;</code>
      */
-    public static final int ERROR_XP_BOOST_ALREADY_ACTIVE_VALUE = 3;
+    public static final int ERROR_STARDUST_BOOST_ALREADY_ACTIVE_VALUE = 3;
     /**
      * <code>ERROR_NO_ITEMS_REMAINING = 4;</code>
      */
@@ -193,7 +193,7 @@ private static final long serialVersionUID = 0L;
         case 0: return UNSET;
         case 1: return SUCCESS;
         case 2: return ERROR_INVALID_ITEM_TYPE;
-        case 3: return ERROR_XP_BOOST_ALREADY_ACTIVE;
+        case 3: return ERROR_STARDUST_BOOST_ALREADY_ACTIVE;
         case 4: return ERROR_NO_ITEMS_REMAINING;
         case 5: return ERROR_LOCATION_UNSET;
         default: return null;
@@ -271,30 +271,30 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.UseItemStardustBoostOutProto.Result.UNRECOGNIZED : result;
   }
 
-  public static final int APPLIED_ITEMS_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.AppliedItemsProto appliedItems_;
+  public static final int IMAHIDANKPD_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.AppliedItemsProto imahidankpd_;
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
-   * @return Whether the appliedItems field is set.
+   * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
+   * @return Whether the imahidankpd field is set.
    */
   @java.lang.Override
-  public boolean hasAppliedItems() {
-    return appliedItems_ != null;
+  public boolean hasImahidankpd() {
+    return imahidankpd_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
-   * @return The appliedItems.
+   * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
+   * @return The imahidankpd.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AppliedItemsProto getAppliedItems() {
-    return appliedItems_ == null ? POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance() : appliedItems_;
+  public POGOProtos.Rpc.AppliedItemsProto getImahidankpd() {
+    return imahidankpd_ == null ? POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance() : imahidankpd_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
+   * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AppliedItemsProtoOrBuilder getAppliedItemsOrBuilder() {
-    return getAppliedItems();
+  public POGOProtos.Rpc.AppliedItemsProtoOrBuilder getImahidankpdOrBuilder() {
+    return getImahidankpd();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -314,8 +314,8 @@ private static final long serialVersionUID = 0L;
     if (result_ != POGOProtos.Rpc.UseItemStardustBoostOutProto.Result.UNSET.getNumber()) {
       output.writeEnum(1, result_);
     }
-    if (appliedItems_ != null) {
-      output.writeMessage(2, getAppliedItems());
+    if (imahidankpd_ != null) {
+      output.writeMessage(2, getImahidankpd());
     }
     unknownFields.writeTo(output);
   }
@@ -330,9 +330,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }
-    if (appliedItems_ != null) {
+    if (imahidankpd_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getAppliedItems());
+        .computeMessageSize(2, getImahidankpd());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -350,10 +350,10 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.UseItemStardustBoostOutProto other = (POGOProtos.Rpc.UseItemStardustBoostOutProto) obj;
 
     if (result_ != other.result_) return false;
-    if (hasAppliedItems() != other.hasAppliedItems()) return false;
-    if (hasAppliedItems()) {
-      if (!getAppliedItems()
-          .equals(other.getAppliedItems())) return false;
+    if (hasImahidankpd() != other.hasImahidankpd()) return false;
+    if (hasImahidankpd()) {
+      if (!getImahidankpd()
+          .equals(other.getImahidankpd())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -368,9 +368,9 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + RESULT_FIELD_NUMBER;
     hash = (53 * hash) + result_;
-    if (hasAppliedItems()) {
-      hash = (37 * hash) + APPLIED_ITEMS_FIELD_NUMBER;
-      hash = (53 * hash) + getAppliedItems().hashCode();
+    if (hasImahidankpd()) {
+      hash = (37 * hash) + IMAHIDANKPD_FIELD_NUMBER;
+      hash = (53 * hash) + getImahidankpd().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -469,7 +469,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: ELDPAPALFCM
+   * ref: BPBLEPLNKEM
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.UseItemStardustBoostOutProto}
@@ -511,11 +511,11 @@ private static final long serialVersionUID = 0L;
       super.clear();
       result_ = 0;
 
-      if (appliedItemsBuilder_ == null) {
-        appliedItems_ = null;
+      if (imahidankpdBuilder_ == null) {
+        imahidankpd_ = null;
       } else {
-        appliedItems_ = null;
-        appliedItemsBuilder_ = null;
+        imahidankpd_ = null;
+        imahidankpdBuilder_ = null;
       }
       return this;
     }
@@ -544,10 +544,10 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.UseItemStardustBoostOutProto buildPartial() {
       POGOProtos.Rpc.UseItemStardustBoostOutProto result = new POGOProtos.Rpc.UseItemStardustBoostOutProto(this);
       result.result_ = result_;
-      if (appliedItemsBuilder_ == null) {
-        result.appliedItems_ = appliedItems_;
+      if (imahidankpdBuilder_ == null) {
+        result.imahidankpd_ = imahidankpd_;
       } else {
-        result.appliedItems_ = appliedItemsBuilder_.build();
+        result.imahidankpd_ = imahidankpdBuilder_.build();
       }
       onBuilt();
       return result;
@@ -600,8 +600,8 @@ private static final long serialVersionUID = 0L;
       if (other.result_ != 0) {
         setResultValue(other.getResultValue());
       }
-      if (other.hasAppliedItems()) {
-        mergeAppliedItems(other.getAppliedItems());
+      if (other.hasImahidankpd()) {
+        mergeImahidankpd(other.getImahidankpd());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -686,123 +686,123 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.AppliedItemsProto appliedItems_;
+    private POGOProtos.Rpc.AppliedItemsProto imahidankpd_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AppliedItemsProto, POGOProtos.Rpc.AppliedItemsProto.Builder, POGOProtos.Rpc.AppliedItemsProtoOrBuilder> appliedItemsBuilder_;
+        POGOProtos.Rpc.AppliedItemsProto, POGOProtos.Rpc.AppliedItemsProto.Builder, POGOProtos.Rpc.AppliedItemsProtoOrBuilder> imahidankpdBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
-     * @return Whether the appliedItems field is set.
+     * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
+     * @return Whether the imahidankpd field is set.
      */
-    public boolean hasAppliedItems() {
-      return appliedItemsBuilder_ != null || appliedItems_ != null;
+    public boolean hasImahidankpd() {
+      return imahidankpdBuilder_ != null || imahidankpd_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
-     * @return The appliedItems.
+     * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
+     * @return The imahidankpd.
      */
-    public POGOProtos.Rpc.AppliedItemsProto getAppliedItems() {
-      if (appliedItemsBuilder_ == null) {
-        return appliedItems_ == null ? POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance() : appliedItems_;
+    public POGOProtos.Rpc.AppliedItemsProto getImahidankpd() {
+      if (imahidankpdBuilder_ == null) {
+        return imahidankpd_ == null ? POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance() : imahidankpd_;
       } else {
-        return appliedItemsBuilder_.getMessage();
+        return imahidankpdBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
+     * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
      */
-    public Builder setAppliedItems(POGOProtos.Rpc.AppliedItemsProto value) {
-      if (appliedItemsBuilder_ == null) {
+    public Builder setImahidankpd(POGOProtos.Rpc.AppliedItemsProto value) {
+      if (imahidankpdBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        appliedItems_ = value;
+        imahidankpd_ = value;
         onChanged();
       } else {
-        appliedItemsBuilder_.setMessage(value);
+        imahidankpdBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
+     * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
      */
-    public Builder setAppliedItems(
+    public Builder setImahidankpd(
         POGOProtos.Rpc.AppliedItemsProto.Builder builderForValue) {
-      if (appliedItemsBuilder_ == null) {
-        appliedItems_ = builderForValue.build();
+      if (imahidankpdBuilder_ == null) {
+        imahidankpd_ = builderForValue.build();
         onChanged();
       } else {
-        appliedItemsBuilder_.setMessage(builderForValue.build());
+        imahidankpdBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
+     * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
      */
-    public Builder mergeAppliedItems(POGOProtos.Rpc.AppliedItemsProto value) {
-      if (appliedItemsBuilder_ == null) {
-        if (appliedItems_ != null) {
-          appliedItems_ =
-            POGOProtos.Rpc.AppliedItemsProto.newBuilder(appliedItems_).mergeFrom(value).buildPartial();
+    public Builder mergeImahidankpd(POGOProtos.Rpc.AppliedItemsProto value) {
+      if (imahidankpdBuilder_ == null) {
+        if (imahidankpd_ != null) {
+          imahidankpd_ =
+            POGOProtos.Rpc.AppliedItemsProto.newBuilder(imahidankpd_).mergeFrom(value).buildPartial();
         } else {
-          appliedItems_ = value;
+          imahidankpd_ = value;
         }
         onChanged();
       } else {
-        appliedItemsBuilder_.mergeFrom(value);
+        imahidankpdBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
+     * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
      */
-    public Builder clearAppliedItems() {
-      if (appliedItemsBuilder_ == null) {
-        appliedItems_ = null;
+    public Builder clearImahidankpd() {
+      if (imahidankpdBuilder_ == null) {
+        imahidankpd_ = null;
         onChanged();
       } else {
-        appliedItems_ = null;
-        appliedItemsBuilder_ = null;
+        imahidankpd_ = null;
+        imahidankpdBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
+     * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
      */
-    public POGOProtos.Rpc.AppliedItemsProto.Builder getAppliedItemsBuilder() {
+    public POGOProtos.Rpc.AppliedItemsProto.Builder getImahidankpdBuilder() {
       
       onChanged();
-      return getAppliedItemsFieldBuilder().getBuilder();
+      return getImahidankpdFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
+     * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
      */
-    public POGOProtos.Rpc.AppliedItemsProtoOrBuilder getAppliedItemsOrBuilder() {
-      if (appliedItemsBuilder_ != null) {
-        return appliedItemsBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.AppliedItemsProtoOrBuilder getImahidankpdOrBuilder() {
+      if (imahidankpdBuilder_ != null) {
+        return imahidankpdBuilder_.getMessageOrBuilder();
       } else {
-        return appliedItems_ == null ?
-            POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance() : appliedItems_;
+        return imahidankpd_ == null ?
+            POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance() : imahidankpd_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 2;</code>
+     * <code>.POGOProtos.Rpc.AppliedItemsProto imahidankpd = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.AppliedItemsProto, POGOProtos.Rpc.AppliedItemsProto.Builder, POGOProtos.Rpc.AppliedItemsProtoOrBuilder> 
-        getAppliedItemsFieldBuilder() {
-      if (appliedItemsBuilder_ == null) {
-        appliedItemsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getImahidankpdFieldBuilder() {
+      if (imahidankpdBuilder_ == null) {
+        imahidankpdBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.AppliedItemsProto, POGOProtos.Rpc.AppliedItemsProto.Builder, POGOProtos.Rpc.AppliedItemsProtoOrBuilder>(
-                getAppliedItems(),
+                getImahidankpd(),
                 getParentForChildren(),
                 isClean());
-        appliedItems_ = null;
+        imahidankpd_ = null;
       }
-      return appliedItemsBuilder_;
+      return imahidankpdBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

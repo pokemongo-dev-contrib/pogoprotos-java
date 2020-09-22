@@ -19,19 +19,19 @@ public interface DNEPCDGCKNNOrBuilder extends
   POGOProtos.Rpc.ShareExRaidPassResult getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+   * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
    * @return Whether the dbmpjddjeng field is set.
    */
   boolean hasDbmpjddjeng();
   /**
-   * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+   * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
    * @return The dbmpjddjeng.
    */
-  POGOProtos.Rpc.JPCFJPJCOIH getDbmpjddjeng();
+  POGOProtos.Rpc.FriendshipLevelDataProto getDbmpjddjeng();
   /**
-   * <code>.POGOProtos.Rpc.JPCFJPJCOIH dbmpjddjeng = 2;</code>
+   * <code>.POGOProtos.Rpc.FriendshipLevelDataProto dbmpjddjeng = 2;</code>
    */
-  POGOProtos.Rpc.JPCFJPJCOIHOrBuilder getDbmpjddjengOrBuilder();
+  POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder getDbmpjddjengOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.PlayerPublicProfileProto fhhnngfbcpf = 3;</code>

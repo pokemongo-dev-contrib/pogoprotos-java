@@ -53,11 +53,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.OIAFIOKKDNL.Builder subBuilder = null;
+            POGOProtos.Rpc.ContactSettingsProto.Builder subBuilder = null;
             if (aiifjelhmlm_ != null) {
               subBuilder = aiifjelhmlm_.toBuilder();
             }
-            aiifjelhmlm_ = input.readMessage(POGOProtos.Rpc.OIAFIOKKDNL.parser(), extensionRegistry);
+            aiifjelhmlm_ = input.readMessage(POGOProtos.Rpc.ContactSettingsProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(aiifjelhmlm_);
               aiifjelhmlm_ = subBuilder.buildPartial();
@@ -98,9 +98,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int AIIFJELHMLM_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm_;
+  private POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm_;
   /**
-   * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
    * @return Whether the aiifjelhmlm field is set.
    */
   @java.lang.Override
@@ -108,18 +108,18 @@ private static final long serialVersionUID = 0L;
     return aiifjelhmlm_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
    * @return The aiifjelhmlm.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.OIAFIOKKDNL getAiifjelhmlm() {
-    return aiifjelhmlm_ == null ? POGOProtos.Rpc.OIAFIOKKDNL.getDefaultInstance() : aiifjelhmlm_;
+  public POGOProtos.Rpc.ContactSettingsProto getAiifjelhmlm() {
+    return aiifjelhmlm_ == null ? POGOProtos.Rpc.ContactSettingsProto.getDefaultInstance() : aiifjelhmlm_;
   }
   /**
-   * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.OIAFIOKKDNLOrBuilder getAiifjelhmlmOrBuilder() {
+  public POGOProtos.Rpc.ContactSettingsProtoOrBuilder getAiifjelhmlmOrBuilder() {
     return getAiifjelhmlm();
   }
 
@@ -442,31 +442,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm_;
+    private POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.OIAFIOKKDNL, POGOProtos.Rpc.OIAFIOKKDNL.Builder, POGOProtos.Rpc.OIAFIOKKDNLOrBuilder> aiifjelhmlmBuilder_;
+        POGOProtos.Rpc.ContactSettingsProto, POGOProtos.Rpc.ContactSettingsProto.Builder, POGOProtos.Rpc.ContactSettingsProtoOrBuilder> aiifjelhmlmBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+     * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
      * @return Whether the aiifjelhmlm field is set.
      */
     public boolean hasAiifjelhmlm() {
       return aiifjelhmlmBuilder_ != null || aiifjelhmlm_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+     * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
      * @return The aiifjelhmlm.
      */
-    public POGOProtos.Rpc.OIAFIOKKDNL getAiifjelhmlm() {
+    public POGOProtos.Rpc.ContactSettingsProto getAiifjelhmlm() {
       if (aiifjelhmlmBuilder_ == null) {
-        return aiifjelhmlm_ == null ? POGOProtos.Rpc.OIAFIOKKDNL.getDefaultInstance() : aiifjelhmlm_;
+        return aiifjelhmlm_ == null ? POGOProtos.Rpc.ContactSettingsProto.getDefaultInstance() : aiifjelhmlm_;
       } else {
         return aiifjelhmlmBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+     * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
      */
-    public Builder setAiifjelhmlm(POGOProtos.Rpc.OIAFIOKKDNL value) {
+    public Builder setAiifjelhmlm(POGOProtos.Rpc.ContactSettingsProto value) {
       if (aiifjelhmlmBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -480,10 +480,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+     * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
      */
     public Builder setAiifjelhmlm(
-        POGOProtos.Rpc.OIAFIOKKDNL.Builder builderForValue) {
+        POGOProtos.Rpc.ContactSettingsProto.Builder builderForValue) {
       if (aiifjelhmlmBuilder_ == null) {
         aiifjelhmlm_ = builderForValue.build();
         onChanged();
@@ -494,13 +494,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+     * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
      */
-    public Builder mergeAiifjelhmlm(POGOProtos.Rpc.OIAFIOKKDNL value) {
+    public Builder mergeAiifjelhmlm(POGOProtos.Rpc.ContactSettingsProto value) {
       if (aiifjelhmlmBuilder_ == null) {
         if (aiifjelhmlm_ != null) {
           aiifjelhmlm_ =
-            POGOProtos.Rpc.OIAFIOKKDNL.newBuilder(aiifjelhmlm_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.ContactSettingsProto.newBuilder(aiifjelhmlm_).mergeFrom(value).buildPartial();
         } else {
           aiifjelhmlm_ = value;
         }
@@ -512,7 +512,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+     * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
      */
     public Builder clearAiifjelhmlm() {
       if (aiifjelhmlmBuilder_ == null) {
@@ -526,33 +526,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+     * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
      */
-    public POGOProtos.Rpc.OIAFIOKKDNL.Builder getAiifjelhmlmBuilder() {
+    public POGOProtos.Rpc.ContactSettingsProto.Builder getAiifjelhmlmBuilder() {
       
       onChanged();
       return getAiifjelhmlmFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+     * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
      */
-    public POGOProtos.Rpc.OIAFIOKKDNLOrBuilder getAiifjelhmlmOrBuilder() {
+    public POGOProtos.Rpc.ContactSettingsProtoOrBuilder getAiifjelhmlmOrBuilder() {
       if (aiifjelhmlmBuilder_ != null) {
         return aiifjelhmlmBuilder_.getMessageOrBuilder();
       } else {
         return aiifjelhmlm_ == null ?
-            POGOProtos.Rpc.OIAFIOKKDNL.getDefaultInstance() : aiifjelhmlm_;
+            POGOProtos.Rpc.ContactSettingsProto.getDefaultInstance() : aiifjelhmlm_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.OIAFIOKKDNL aiifjelhmlm = 1;</code>
+     * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.OIAFIOKKDNL, POGOProtos.Rpc.OIAFIOKKDNL.Builder, POGOProtos.Rpc.OIAFIOKKDNLOrBuilder> 
+        POGOProtos.Rpc.ContactSettingsProto, POGOProtos.Rpc.ContactSettingsProto.Builder, POGOProtos.Rpc.ContactSettingsProtoOrBuilder> 
         getAiifjelhmlmFieldBuilder() {
       if (aiifjelhmlmBuilder_ == null) {
         aiifjelhmlmBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.OIAFIOKKDNL, POGOProtos.Rpc.OIAFIOKKDNL.Builder, POGOProtos.Rpc.OIAFIOKKDNLOrBuilder>(
+            POGOProtos.Rpc.ContactSettingsProto, POGOProtos.Rpc.ContactSettingsProto.Builder, POGOProtos.Rpc.ContactSettingsProtoOrBuilder>(
                 getAiifjelhmlm(),
                 getParentForChildren(),
                 isClean());

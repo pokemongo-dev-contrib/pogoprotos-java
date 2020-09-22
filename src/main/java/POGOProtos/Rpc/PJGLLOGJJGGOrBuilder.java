@@ -8,17 +8,17 @@ public interface PJGLLOGJJGGOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
    * @return Whether the gdadpcnldha field is set.
    */
   boolean hasGdadpcnldha();
   /**
-   * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
    * @return The gdadpcnldha.
    */
-  POGOProtos.Rpc.GNJGCPJMODK getGdadpcnldha();
+  POGOProtos.Rpc.DailyCounterProto getGdadpcnldha();
   /**
-   * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
    */
-  POGOProtos.Rpc.GNJGCPJMODKOrBuilder getGdadpcnldhaOrBuilder();
+  POGOProtos.Rpc.DailyCounterProtoOrBuilder getGdadpcnldhaOrBuilder();
 }

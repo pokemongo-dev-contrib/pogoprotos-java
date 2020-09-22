@@ -8,18 +8,18 @@ package POGOProtos.Rpc;
  * ref: DOBHNGKKJAE
  * </pre>
  *
- * Protobuf type {@code POGOProtos.Rpc.DeviceOsTelemetry}
+ * Protobuf type {@code POGOProtos.Rpc.DeviceOSTelemetry}
  */
-public final class DeviceOsTelemetry extends
+public final class DeviceOSTelemetry extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.DeviceOsTelemetry)
-    DeviceOsTelemetryOrBuilder {
+    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.DeviceOSTelemetry)
+    DeviceOSTelemetryOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use DeviceOsTelemetry.newBuilder() to construct.
-  private DeviceOsTelemetry(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use DeviceOSTelemetry.newBuilder() to construct.
+  private DeviceOSTelemetry(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private DeviceOsTelemetry() {
+  private DeviceOSTelemetry() {
     architecture_ = 0;
   }
 
@@ -27,7 +27,7 @@ private static final long serialVersionUID = 0L;
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new DeviceOsTelemetry();
+    return new DeviceOSTelemetry();
   }
 
   @java.lang.Override
@@ -35,7 +35,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private DeviceOsTelemetry(
+  private DeviceOSTelemetry(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -80,15 +80,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DeviceOsTelemetry_descriptor;
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DeviceOSTelemetry_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DeviceOsTelemetry_fieldAccessorTable
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DeviceOSTelemetry_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            POGOProtos.Rpc.DeviceOsTelemetry.class, POGOProtos.Rpc.DeviceOsTelemetry.Builder.class);
+            POGOProtos.Rpc.DeviceOSTelemetry.class, POGOProtos.Rpc.DeviceOSTelemetry.Builder.class);
   }
 
   /**
@@ -96,7 +96,7 @@ private static final long serialVersionUID = 0L;
    * ref: DOBHNGKKJAE/BCAHLCBMNPD/LFFIBCJMNEF
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture}
+   * Protobuf enum {@code POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture}
    */
   public enum OSArchitecture
       implements com.google.protobuf.ProtocolMessageEnum {
@@ -186,7 +186,7 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return POGOProtos.Rpc.DeviceOsTelemetry.getDescriptor().getEnumTypes().get(0);
+      return POGOProtos.Rpc.DeviceOSTelemetry.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final OSArchitecture[] VALUES = values();
@@ -209,26 +209,26 @@ private static final long serialVersionUID = 0L;
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture)
   }
 
   public static final int ARCHITECTURE_FIELD_NUMBER = 1;
   private int architecture_;
   /**
-   * <code>.POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture architecture = 1;</code>
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture architecture = 1;</code>
    * @return The enum numeric value on the wire for architecture.
    */
   @java.lang.Override public int getArchitectureValue() {
     return architecture_;
   }
   /**
-   * <code>.POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture architecture = 1;</code>
+   * <code>.POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture architecture = 1;</code>
    * @return The architecture.
    */
-  @java.lang.Override public POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture getArchitecture() {
+  @java.lang.Override public POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture getArchitecture() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture result = POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture.valueOf(architecture_);
-    return result == null ? POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture.UNRECOGNIZED : result;
+    POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture result = POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture.valueOf(architecture_);
+    return result == null ? POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -245,7 +245,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (architecture_ != POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture.UNSET.getNumber()) {
+    if (architecture_ != POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture.UNSET.getNumber()) {
       output.writeEnum(1, architecture_);
     }
     unknownFields.writeTo(output);
@@ -257,7 +257,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (architecture_ != POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture.UNSET.getNumber()) {
+    if (architecture_ != POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, architecture_);
     }
@@ -271,10 +271,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof POGOProtos.Rpc.DeviceOsTelemetry)) {
+    if (!(obj instanceof POGOProtos.Rpc.DeviceOSTelemetry)) {
       return super.equals(obj);
     }
-    POGOProtos.Rpc.DeviceOsTelemetry other = (POGOProtos.Rpc.DeviceOsTelemetry) obj;
+    POGOProtos.Rpc.DeviceOSTelemetry other = (POGOProtos.Rpc.DeviceOSTelemetry) obj;
 
     if (architecture_ != other.architecture_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
@@ -295,69 +295,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseFrom(
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseFrom(
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseFrom(
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseFrom(
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseFrom(byte[] data)
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseFrom(
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseFrom(
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseDelimitedFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseDelimitedFrom(
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseFrom(
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.DeviceOsTelemetry parseFrom(
+  public static POGOProtos.Rpc.DeviceOSTelemetry parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -370,7 +370,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(POGOProtos.Rpc.DeviceOsTelemetry prototype) {
+  public static Builder newBuilder(POGOProtos.Rpc.DeviceOSTelemetry prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -390,26 +390,26 @@ private static final long serialVersionUID = 0L;
    * ref: DOBHNGKKJAE
    * </pre>
    *
-   * Protobuf type {@code POGOProtos.Rpc.DeviceOsTelemetry}
+   * Protobuf type {@code POGOProtos.Rpc.DeviceOSTelemetry}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.DeviceOsTelemetry)
-      POGOProtos.Rpc.DeviceOsTelemetryOrBuilder {
+      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.DeviceOSTelemetry)
+      POGOProtos.Rpc.DeviceOSTelemetryOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DeviceOsTelemetry_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DeviceOSTelemetry_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DeviceOsTelemetry_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DeviceOSTelemetry_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.DeviceOsTelemetry.class, POGOProtos.Rpc.DeviceOsTelemetry.Builder.class);
+              POGOProtos.Rpc.DeviceOSTelemetry.class, POGOProtos.Rpc.DeviceOSTelemetry.Builder.class);
     }
 
-    // Construct using POGOProtos.Rpc.DeviceOsTelemetry.newBuilder()
+    // Construct using POGOProtos.Rpc.DeviceOSTelemetry.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -435,17 +435,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DeviceOsTelemetry_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_DeviceOSTelemetry_descriptor;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.DeviceOsTelemetry getDefaultInstanceForType() {
-      return POGOProtos.Rpc.DeviceOsTelemetry.getDefaultInstance();
+    public POGOProtos.Rpc.DeviceOSTelemetry getDefaultInstanceForType() {
+      return POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance();
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.DeviceOsTelemetry build() {
-      POGOProtos.Rpc.DeviceOsTelemetry result = buildPartial();
+    public POGOProtos.Rpc.DeviceOSTelemetry build() {
+      POGOProtos.Rpc.DeviceOSTelemetry result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -453,8 +453,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.DeviceOsTelemetry buildPartial() {
-      POGOProtos.Rpc.DeviceOsTelemetry result = new POGOProtos.Rpc.DeviceOsTelemetry(this);
+    public POGOProtos.Rpc.DeviceOSTelemetry buildPartial() {
+      POGOProtos.Rpc.DeviceOSTelemetry result = new POGOProtos.Rpc.DeviceOSTelemetry(this);
       result.architecture_ = architecture_;
       onBuilt();
       return result;
@@ -494,16 +494,16 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof POGOProtos.Rpc.DeviceOsTelemetry) {
-        return mergeFrom((POGOProtos.Rpc.DeviceOsTelemetry)other);
+      if (other instanceof POGOProtos.Rpc.DeviceOSTelemetry) {
+        return mergeFrom((POGOProtos.Rpc.DeviceOSTelemetry)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(POGOProtos.Rpc.DeviceOsTelemetry other) {
-      if (other == POGOProtos.Rpc.DeviceOsTelemetry.getDefaultInstance()) return this;
+    public Builder mergeFrom(POGOProtos.Rpc.DeviceOSTelemetry other) {
+      if (other == POGOProtos.Rpc.DeviceOSTelemetry.getDefaultInstance()) return this;
       if (other.architecture_ != 0) {
         setArchitectureValue(other.getArchitectureValue());
       }
@@ -522,11 +522,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      POGOProtos.Rpc.DeviceOsTelemetry parsedMessage = null;
+      POGOProtos.Rpc.DeviceOSTelemetry parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (POGOProtos.Rpc.DeviceOsTelemetry) e.getUnfinishedMessage();
+        parsedMessage = (POGOProtos.Rpc.DeviceOSTelemetry) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -538,14 +538,14 @@ private static final long serialVersionUID = 0L;
 
     private int architecture_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture architecture = 1;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture architecture = 1;</code>
      * @return The enum numeric value on the wire for architecture.
      */
     @java.lang.Override public int getArchitectureValue() {
       return architecture_;
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture architecture = 1;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture architecture = 1;</code>
      * @param value The enum numeric value on the wire for architecture to set.
      * @return This builder for chaining.
      */
@@ -556,21 +556,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture architecture = 1;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture architecture = 1;</code>
      * @return The architecture.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture getArchitecture() {
+    public POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture getArchitecture() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture result = POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture.valueOf(architecture_);
-      return result == null ? POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture.UNRECOGNIZED : result;
+      POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture result = POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture.valueOf(architecture_);
+      return result == null ? POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture architecture = 1;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture architecture = 1;</code>
      * @param value The architecture to set.
      * @return This builder for chaining.
      */
-    public Builder setArchitecture(POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture value) {
+    public Builder setArchitecture(POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -580,7 +580,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DeviceOsTelemetry.OSArchitecture architecture = 1;</code>
+     * <code>.POGOProtos.Rpc.DeviceOSTelemetry.OSArchitecture architecture = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearArchitecture() {
@@ -602,41 +602,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.DeviceOsTelemetry)
+    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.DeviceOSTelemetry)
   }
 
-  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.DeviceOsTelemetry)
-  private static final POGOProtos.Rpc.DeviceOsTelemetry DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.DeviceOSTelemetry)
+  private static final POGOProtos.Rpc.DeviceOSTelemetry DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new POGOProtos.Rpc.DeviceOsTelemetry();
+    DEFAULT_INSTANCE = new POGOProtos.Rpc.DeviceOSTelemetry();
   }
 
-  public static POGOProtos.Rpc.DeviceOsTelemetry getDefaultInstance() {
+  public static POGOProtos.Rpc.DeviceOSTelemetry getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<DeviceOsTelemetry>
-      PARSER = new com.google.protobuf.AbstractParser<DeviceOsTelemetry>() {
+  private static final com.google.protobuf.Parser<DeviceOSTelemetry>
+      PARSER = new com.google.protobuf.AbstractParser<DeviceOSTelemetry>() {
     @java.lang.Override
-    public DeviceOsTelemetry parsePartialFrom(
+    public DeviceOSTelemetry parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new DeviceOsTelemetry(input, extensionRegistry);
+      return new DeviceOSTelemetry(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<DeviceOsTelemetry> parser() {
+  public static com.google.protobuf.Parser<DeviceOSTelemetry> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<DeviceOsTelemetry> getParserForType() {
+  public com.google.protobuf.Parser<DeviceOSTelemetry> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public POGOProtos.Rpc.DeviceOsTelemetry getDefaultInstanceForType() {
+  public POGOProtos.Rpc.DeviceOSTelemetry getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

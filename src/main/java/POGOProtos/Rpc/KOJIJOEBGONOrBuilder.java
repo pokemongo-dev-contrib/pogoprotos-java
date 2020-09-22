@@ -19,50 +19,50 @@ public interface KOJIJOEBGONOrBuilder extends
   POGOProtos.Rpc.KOJIJOEBGON.Status getStatus();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP ajmbloldfdf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto ajmbloldfdf = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.JPJNJMHLBOP> 
+  java.util.List<POGOProtos.Rpc.ClientQuestProto> 
       getAjmbloldfdfList();
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP ajmbloldfdf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto ajmbloldfdf = 2;</code>
    */
-  POGOProtos.Rpc.JPJNJMHLBOP getAjmbloldfdf(int index);
+  POGOProtos.Rpc.ClientQuestProto getAjmbloldfdf(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP ajmbloldfdf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto ajmbloldfdf = 2;</code>
    */
   int getAjmbloldfdfCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP ajmbloldfdf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto ajmbloldfdf = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.JPJNJMHLBOPOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.ClientQuestProtoOrBuilder> 
       getAjmbloldfdfOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP ajmbloldfdf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto ajmbloldfdf = 2;</code>
    */
-  POGOProtos.Rpc.JPJNJMHLBOPOrBuilder getAjmbloldfdfOrBuilder(
+  POGOProtos.Rpc.ClientQuestProtoOrBuilder getAjmbloldfdfOrBuilder(
       int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP idnaacklgjk = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto idnaacklgjk = 3;</code>
    */
-  java.util.List<POGOProtos.Rpc.JPJNJMHLBOP> 
+  java.util.List<POGOProtos.Rpc.ClientQuestProto> 
       getIdnaacklgjkList();
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP idnaacklgjk = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto idnaacklgjk = 3;</code>
    */
-  POGOProtos.Rpc.JPJNJMHLBOP getIdnaacklgjk(int index);
+  POGOProtos.Rpc.ClientQuestProto getIdnaacklgjk(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP idnaacklgjk = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto idnaacklgjk = 3;</code>
    */
   int getIdnaacklgjkCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP idnaacklgjk = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto idnaacklgjk = 3;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.JPJNJMHLBOPOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.ClientQuestProtoOrBuilder> 
       getIdnaacklgjkOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP idnaacklgjk = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto idnaacklgjk = 3;</code>
    */
-  POGOProtos.Rpc.JPJNJMHLBOPOrBuilder getIdnaacklgjkOrBuilder(
+  POGOProtos.Rpc.ClientQuestProtoOrBuilder getIdnaacklgjkOrBuilder(
       int index);
 }

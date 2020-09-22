@@ -8,26 +8,26 @@ public interface GiftBoxesProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
    */
-  java.util.List<POGOProtos.Rpc.EENOGKMFLCO> 
+  java.util.List<POGOProtos.Rpc.GiftBoxProto> 
       getDndahknlmmpList();
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
    */
-  POGOProtos.Rpc.EENOGKMFLCO getDndahknlmmp(int index);
+  POGOProtos.Rpc.GiftBoxProto getDndahknlmmp(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
    */
   int getDndahknlmmpCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.EENOGKMFLCOOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.GiftBoxProtoOrBuilder> 
       getDndahknlmmpOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
    */
-  POGOProtos.Rpc.EENOGKMFLCOOrBuilder getDndahknlmmpOrBuilder(
+  POGOProtos.Rpc.GiftBoxProtoOrBuilder getDndahknlmmpOrBuilder(
       int index);
 }

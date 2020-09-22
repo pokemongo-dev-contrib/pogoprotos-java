@@ -3,8 +3,8 @@
 
 package POGOProtos.Rpc;
 
-public interface ArBuddyMultiplayerSessionTelemetryOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.ArBuddyMultiplayerSessionTelemetry)
+public interface ARBuddyMultiplayerSessionTelemetryOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry)
     com.google.protobuf.MessageOrBuilder {
 
   /**

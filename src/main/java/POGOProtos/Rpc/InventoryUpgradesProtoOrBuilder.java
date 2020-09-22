@@ -8,26 +8,26 @@ public interface InventoryUpgradesProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
    */
-  java.util.List<POGOProtos.Rpc.OIPJPMELKBL> 
+  java.util.List<POGOProtos.Rpc.InventoryUpgradeProto> 
       getNlcdjdbnigjList();
   /**
-   * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
    */
-  POGOProtos.Rpc.OIPJPMELKBL getNlcdjdbnigj(int index);
+  POGOProtos.Rpc.InventoryUpgradeProto getNlcdjdbnigj(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
    */
   int getNlcdjdbnigjCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.OIPJPMELKBLOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.InventoryUpgradeProtoOrBuilder> 
       getNlcdjdbnigjOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.OIPJPMELKBL nlcdjdbnigj = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.InventoryUpgradeProto nlcdjdbnigj = 1;</code>
    */
-  POGOProtos.Rpc.OIPJPMELKBLOrBuilder getNlcdjdbnigjOrBuilder(
+  POGOProtos.Rpc.InventoryUpgradeProtoOrBuilder getNlcdjdbnigjOrBuilder(
       int index);
 }

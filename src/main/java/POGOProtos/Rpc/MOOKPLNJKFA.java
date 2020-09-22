@@ -133,11 +133,11 @@ private static final long serialVersionUID = 0L;
           }
           case 82: {
             if (!((mutable_bitField0_ & 0x00000020) != 0)) {
-              acoaapjfnmf_ = new java.util.ArrayList<POGOProtos.Rpc.EENOGKMFLCO>();
+              acoaapjfnmf_ = new java.util.ArrayList<POGOProtos.Rpc.GiftBoxProto>();
               mutable_bitField0_ |= 0x00000020;
             }
             acoaapjfnmf_.add(
-                input.readMessage(POGOProtos.Rpc.EENOGKMFLCO.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.GiftBoxProto.parser(), extensionRegistry));
             break;
           }
           case 90: {
@@ -602,41 +602,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int ACOAAPJFNMF_FIELD_NUMBER = 10;
-  private java.util.List<POGOProtos.Rpc.EENOGKMFLCO> acoaapjfnmf_;
+  private java.util.List<POGOProtos.Rpc.GiftBoxProto> acoaapjfnmf_;
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.EENOGKMFLCO> getAcoaapjfnmfList() {
+  public java.util.List<POGOProtos.Rpc.GiftBoxProto> getAcoaapjfnmfList() {
     return acoaapjfnmf_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.EENOGKMFLCOOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.GiftBoxProtoOrBuilder> 
       getAcoaapjfnmfOrBuilderList() {
     return acoaapjfnmf_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
    */
   @java.lang.Override
   public int getAcoaapjfnmfCount() {
     return acoaapjfnmf_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EENOGKMFLCO getAcoaapjfnmf(int index) {
+  public POGOProtos.Rpc.GiftBoxProto getAcoaapjfnmf(int index) {
     return acoaapjfnmf_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EENOGKMFLCOOrBuilder getAcoaapjfnmfOrBuilder(
+  public POGOProtos.Rpc.GiftBoxProtoOrBuilder getAcoaapjfnmfOrBuilder(
       int index) {
     return acoaapjfnmf_.get(index);
   }
@@ -2838,22 +2838,22 @@ private static final long serialVersionUID = 0L;
       return lbplolgfmglBuilder_;
     }
 
-    private java.util.List<POGOProtos.Rpc.EENOGKMFLCO> acoaapjfnmf_ =
+    private java.util.List<POGOProtos.Rpc.GiftBoxProto> acoaapjfnmf_ =
       java.util.Collections.emptyList();
     private void ensureAcoaapjfnmfIsMutable() {
       if (!((bitField0_ & 0x00000020) != 0)) {
-        acoaapjfnmf_ = new java.util.ArrayList<POGOProtos.Rpc.EENOGKMFLCO>(acoaapjfnmf_);
+        acoaapjfnmf_ = new java.util.ArrayList<POGOProtos.Rpc.GiftBoxProto>(acoaapjfnmf_);
         bitField0_ |= 0x00000020;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.EENOGKMFLCO, POGOProtos.Rpc.EENOGKMFLCO.Builder, POGOProtos.Rpc.EENOGKMFLCOOrBuilder> acoaapjfnmfBuilder_;
+        POGOProtos.Rpc.GiftBoxProto, POGOProtos.Rpc.GiftBoxProto.Builder, POGOProtos.Rpc.GiftBoxProtoOrBuilder> acoaapjfnmfBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
-    public java.util.List<POGOProtos.Rpc.EENOGKMFLCO> getAcoaapjfnmfList() {
+    public java.util.List<POGOProtos.Rpc.GiftBoxProto> getAcoaapjfnmfList() {
       if (acoaapjfnmfBuilder_ == null) {
         return java.util.Collections.unmodifiableList(acoaapjfnmf_);
       } else {
@@ -2861,7 +2861,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
     public int getAcoaapjfnmfCount() {
       if (acoaapjfnmfBuilder_ == null) {
@@ -2871,9 +2871,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
-    public POGOProtos.Rpc.EENOGKMFLCO getAcoaapjfnmf(int index) {
+    public POGOProtos.Rpc.GiftBoxProto getAcoaapjfnmf(int index) {
       if (acoaapjfnmfBuilder_ == null) {
         return acoaapjfnmf_.get(index);
       } else {
@@ -2881,10 +2881,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
     public Builder setAcoaapjfnmf(
-        int index, POGOProtos.Rpc.EENOGKMFLCO value) {
+        int index, POGOProtos.Rpc.GiftBoxProto value) {
       if (acoaapjfnmfBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2898,10 +2898,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
     public Builder setAcoaapjfnmf(
-        int index, POGOProtos.Rpc.EENOGKMFLCO.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GiftBoxProto.Builder builderForValue) {
       if (acoaapjfnmfBuilder_ == null) {
         ensureAcoaapjfnmfIsMutable();
         acoaapjfnmf_.set(index, builderForValue.build());
@@ -2912,9 +2912,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
-    public Builder addAcoaapjfnmf(POGOProtos.Rpc.EENOGKMFLCO value) {
+    public Builder addAcoaapjfnmf(POGOProtos.Rpc.GiftBoxProto value) {
       if (acoaapjfnmfBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2928,10 +2928,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
     public Builder addAcoaapjfnmf(
-        int index, POGOProtos.Rpc.EENOGKMFLCO value) {
+        int index, POGOProtos.Rpc.GiftBoxProto value) {
       if (acoaapjfnmfBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2945,10 +2945,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
     public Builder addAcoaapjfnmf(
-        POGOProtos.Rpc.EENOGKMFLCO.Builder builderForValue) {
+        POGOProtos.Rpc.GiftBoxProto.Builder builderForValue) {
       if (acoaapjfnmfBuilder_ == null) {
         ensureAcoaapjfnmfIsMutable();
         acoaapjfnmf_.add(builderForValue.build());
@@ -2959,10 +2959,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
     public Builder addAcoaapjfnmf(
-        int index, POGOProtos.Rpc.EENOGKMFLCO.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GiftBoxProto.Builder builderForValue) {
       if (acoaapjfnmfBuilder_ == null) {
         ensureAcoaapjfnmfIsMutable();
         acoaapjfnmf_.add(index, builderForValue.build());
@@ -2973,10 +2973,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
     public Builder addAllAcoaapjfnmf(
-        java.lang.Iterable<? extends POGOProtos.Rpc.EENOGKMFLCO> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.GiftBoxProto> values) {
       if (acoaapjfnmfBuilder_ == null) {
         ensureAcoaapjfnmfIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2988,7 +2988,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
     public Builder clearAcoaapjfnmf() {
       if (acoaapjfnmfBuilder_ == null) {
@@ -3001,7 +3001,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
     public Builder removeAcoaapjfnmf(int index) {
       if (acoaapjfnmfBuilder_ == null) {
@@ -3014,16 +3014,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
-    public POGOProtos.Rpc.EENOGKMFLCO.Builder getAcoaapjfnmfBuilder(
+    public POGOProtos.Rpc.GiftBoxProto.Builder getAcoaapjfnmfBuilder(
         int index) {
       return getAcoaapjfnmfFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
-    public POGOProtos.Rpc.EENOGKMFLCOOrBuilder getAcoaapjfnmfOrBuilder(
+    public POGOProtos.Rpc.GiftBoxProtoOrBuilder getAcoaapjfnmfOrBuilder(
         int index) {
       if (acoaapjfnmfBuilder_ == null) {
         return acoaapjfnmf_.get(index);  } else {
@@ -3031,9 +3031,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.EENOGKMFLCOOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.GiftBoxProtoOrBuilder> 
          getAcoaapjfnmfOrBuilderList() {
       if (acoaapjfnmfBuilder_ != null) {
         return acoaapjfnmfBuilder_.getMessageOrBuilderList();
@@ -3042,33 +3042,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
-    public POGOProtos.Rpc.EENOGKMFLCO.Builder addAcoaapjfnmfBuilder() {
+    public POGOProtos.Rpc.GiftBoxProto.Builder addAcoaapjfnmfBuilder() {
       return getAcoaapjfnmfFieldBuilder().addBuilder(
-          POGOProtos.Rpc.EENOGKMFLCO.getDefaultInstance());
+          POGOProtos.Rpc.GiftBoxProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
-    public POGOProtos.Rpc.EENOGKMFLCO.Builder addAcoaapjfnmfBuilder(
+    public POGOProtos.Rpc.GiftBoxProto.Builder addAcoaapjfnmfBuilder(
         int index) {
       return getAcoaapjfnmfFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.EENOGKMFLCO.getDefaultInstance());
+          index, POGOProtos.Rpc.GiftBoxProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
      */
-    public java.util.List<POGOProtos.Rpc.EENOGKMFLCO.Builder> 
+    public java.util.List<POGOProtos.Rpc.GiftBoxProto.Builder> 
          getAcoaapjfnmfBuilderList() {
       return getAcoaapjfnmfFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.EENOGKMFLCO, POGOProtos.Rpc.EENOGKMFLCO.Builder, POGOProtos.Rpc.EENOGKMFLCOOrBuilder> 
+        POGOProtos.Rpc.GiftBoxProto, POGOProtos.Rpc.GiftBoxProto.Builder, POGOProtos.Rpc.GiftBoxProtoOrBuilder> 
         getAcoaapjfnmfFieldBuilder() {
       if (acoaapjfnmfBuilder_ == null) {
         acoaapjfnmfBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.EENOGKMFLCO, POGOProtos.Rpc.EENOGKMFLCO.Builder, POGOProtos.Rpc.EENOGKMFLCOOrBuilder>(
+            POGOProtos.Rpc.GiftBoxProto, POGOProtos.Rpc.GiftBoxProto.Builder, POGOProtos.Rpc.GiftBoxProtoOrBuilder>(
                 acoaapjfnmf_,
                 ((bitField0_ & 0x00000020) != 0),
                 getParentForChildren(),

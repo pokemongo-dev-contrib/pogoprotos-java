@@ -75,11 +75,11 @@ private static final long serialVersionUID = 0L;
           }
           case 34: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              lmdeimbgdac_ = new java.util.ArrayList<POGOProtos.Rpc.DHHFMOFNIGP>();
+              lmdeimbgdac_ = new java.util.ArrayList<POGOProtos.Rpc.PokestopReward>();
               mutable_bitField0_ |= 0x00000001;
             }
             lmdeimbgdac_.add(
-                input.readMessage(POGOProtos.Rpc.DHHFMOFNIGP.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.PokestopReward.parser(), extensionRegistry));
             break;
           }
           case 40: {
@@ -210,41 +210,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int LMDEIMBGDAC_FIELD_NUMBER = 4;
-  private java.util.List<POGOProtos.Rpc.DHHFMOFNIGP> lmdeimbgdac_;
+  private java.util.List<POGOProtos.Rpc.PokestopReward> lmdeimbgdac_;
   /**
-   * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.DHHFMOFNIGP> getLmdeimbgdacList() {
+  public java.util.List<POGOProtos.Rpc.PokestopReward> getLmdeimbgdacList() {
     return lmdeimbgdac_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.DHHFMOFNIGPOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.PokestopRewardOrBuilder> 
       getLmdeimbgdacOrBuilderList() {
     return lmdeimbgdac_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
    */
   @java.lang.Override
   public int getLmdeimbgdacCount() {
     return lmdeimbgdac_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DHHFMOFNIGP getLmdeimbgdac(int index) {
+  public POGOProtos.Rpc.PokestopReward getLmdeimbgdac(int index) {
     return lmdeimbgdac_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DHHFMOFNIGPOrBuilder getLmdeimbgdacOrBuilder(
+  public POGOProtos.Rpc.PokestopRewardOrBuilder getLmdeimbgdacOrBuilder(
       int index) {
     return lmdeimbgdac_.get(index);
   }
@@ -857,22 +857,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.DHHFMOFNIGP> lmdeimbgdac_ =
+    private java.util.List<POGOProtos.Rpc.PokestopReward> lmdeimbgdac_ =
       java.util.Collections.emptyList();
     private void ensureLmdeimbgdacIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        lmdeimbgdac_ = new java.util.ArrayList<POGOProtos.Rpc.DHHFMOFNIGP>(lmdeimbgdac_);
+        lmdeimbgdac_ = new java.util.ArrayList<POGOProtos.Rpc.PokestopReward>(lmdeimbgdac_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.DHHFMOFNIGP, POGOProtos.Rpc.DHHFMOFNIGP.Builder, POGOProtos.Rpc.DHHFMOFNIGPOrBuilder> lmdeimbgdacBuilder_;
+        POGOProtos.Rpc.PokestopReward, POGOProtos.Rpc.PokestopReward.Builder, POGOProtos.Rpc.PokestopRewardOrBuilder> lmdeimbgdacBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
-    public java.util.List<POGOProtos.Rpc.DHHFMOFNIGP> getLmdeimbgdacList() {
+    public java.util.List<POGOProtos.Rpc.PokestopReward> getLmdeimbgdacList() {
       if (lmdeimbgdacBuilder_ == null) {
         return java.util.Collections.unmodifiableList(lmdeimbgdac_);
       } else {
@@ -880,7 +880,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
     public int getLmdeimbgdacCount() {
       if (lmdeimbgdacBuilder_ == null) {
@@ -890,9 +890,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
-    public POGOProtos.Rpc.DHHFMOFNIGP getLmdeimbgdac(int index) {
+    public POGOProtos.Rpc.PokestopReward getLmdeimbgdac(int index) {
       if (lmdeimbgdacBuilder_ == null) {
         return lmdeimbgdac_.get(index);
       } else {
@@ -900,10 +900,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
     public Builder setLmdeimbgdac(
-        int index, POGOProtos.Rpc.DHHFMOFNIGP value) {
+        int index, POGOProtos.Rpc.PokestopReward value) {
       if (lmdeimbgdacBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -917,10 +917,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
     public Builder setLmdeimbgdac(
-        int index, POGOProtos.Rpc.DHHFMOFNIGP.Builder builderForValue) {
+        int index, POGOProtos.Rpc.PokestopReward.Builder builderForValue) {
       if (lmdeimbgdacBuilder_ == null) {
         ensureLmdeimbgdacIsMutable();
         lmdeimbgdac_.set(index, builderForValue.build());
@@ -931,9 +931,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
-    public Builder addLmdeimbgdac(POGOProtos.Rpc.DHHFMOFNIGP value) {
+    public Builder addLmdeimbgdac(POGOProtos.Rpc.PokestopReward value) {
       if (lmdeimbgdacBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -947,10 +947,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
     public Builder addLmdeimbgdac(
-        int index, POGOProtos.Rpc.DHHFMOFNIGP value) {
+        int index, POGOProtos.Rpc.PokestopReward value) {
       if (lmdeimbgdacBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -964,10 +964,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
     public Builder addLmdeimbgdac(
-        POGOProtos.Rpc.DHHFMOFNIGP.Builder builderForValue) {
+        POGOProtos.Rpc.PokestopReward.Builder builderForValue) {
       if (lmdeimbgdacBuilder_ == null) {
         ensureLmdeimbgdacIsMutable();
         lmdeimbgdac_.add(builderForValue.build());
@@ -978,10 +978,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
     public Builder addLmdeimbgdac(
-        int index, POGOProtos.Rpc.DHHFMOFNIGP.Builder builderForValue) {
+        int index, POGOProtos.Rpc.PokestopReward.Builder builderForValue) {
       if (lmdeimbgdacBuilder_ == null) {
         ensureLmdeimbgdacIsMutable();
         lmdeimbgdac_.add(index, builderForValue.build());
@@ -992,10 +992,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
     public Builder addAllLmdeimbgdac(
-        java.lang.Iterable<? extends POGOProtos.Rpc.DHHFMOFNIGP> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.PokestopReward> values) {
       if (lmdeimbgdacBuilder_ == null) {
         ensureLmdeimbgdacIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1007,7 +1007,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
     public Builder clearLmdeimbgdac() {
       if (lmdeimbgdacBuilder_ == null) {
@@ -1020,7 +1020,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
     public Builder removeLmdeimbgdac(int index) {
       if (lmdeimbgdacBuilder_ == null) {
@@ -1033,16 +1033,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
-    public POGOProtos.Rpc.DHHFMOFNIGP.Builder getLmdeimbgdacBuilder(
+    public POGOProtos.Rpc.PokestopReward.Builder getLmdeimbgdacBuilder(
         int index) {
       return getLmdeimbgdacFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
-    public POGOProtos.Rpc.DHHFMOFNIGPOrBuilder getLmdeimbgdacOrBuilder(
+    public POGOProtos.Rpc.PokestopRewardOrBuilder getLmdeimbgdacOrBuilder(
         int index) {
       if (lmdeimbgdacBuilder_ == null) {
         return lmdeimbgdac_.get(index);  } else {
@@ -1050,9 +1050,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.DHHFMOFNIGPOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.PokestopRewardOrBuilder> 
          getLmdeimbgdacOrBuilderList() {
       if (lmdeimbgdacBuilder_ != null) {
         return lmdeimbgdacBuilder_.getMessageOrBuilderList();
@@ -1061,33 +1061,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
-    public POGOProtos.Rpc.DHHFMOFNIGP.Builder addLmdeimbgdacBuilder() {
+    public POGOProtos.Rpc.PokestopReward.Builder addLmdeimbgdacBuilder() {
       return getLmdeimbgdacFieldBuilder().addBuilder(
-          POGOProtos.Rpc.DHHFMOFNIGP.getDefaultInstance());
+          POGOProtos.Rpc.PokestopReward.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
-    public POGOProtos.Rpc.DHHFMOFNIGP.Builder addLmdeimbgdacBuilder(
+    public POGOProtos.Rpc.PokestopReward.Builder addLmdeimbgdacBuilder(
         int index) {
       return getLmdeimbgdacFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.DHHFMOFNIGP.getDefaultInstance());
+          index, POGOProtos.Rpc.PokestopReward.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.DHHFMOFNIGP lmdeimbgdac = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.PokestopReward lmdeimbgdac = 4;</code>
      */
-    public java.util.List<POGOProtos.Rpc.DHHFMOFNIGP.Builder> 
+    public java.util.List<POGOProtos.Rpc.PokestopReward.Builder> 
          getLmdeimbgdacBuilderList() {
       return getLmdeimbgdacFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.DHHFMOFNIGP, POGOProtos.Rpc.DHHFMOFNIGP.Builder, POGOProtos.Rpc.DHHFMOFNIGPOrBuilder> 
+        POGOProtos.Rpc.PokestopReward, POGOProtos.Rpc.PokestopReward.Builder, POGOProtos.Rpc.PokestopRewardOrBuilder> 
         getLmdeimbgdacFieldBuilder() {
       if (lmdeimbgdacBuilder_ == null) {
         lmdeimbgdacBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.DHHFMOFNIGP, POGOProtos.Rpc.DHHFMOFNIGP.Builder, POGOProtos.Rpc.DHHFMOFNIGPOrBuilder>(
+            POGOProtos.Rpc.PokestopReward, POGOProtos.Rpc.PokestopReward.Builder, POGOProtos.Rpc.PokestopRewardOrBuilder>(
                 lmdeimbgdac_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

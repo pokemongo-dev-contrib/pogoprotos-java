@@ -62,11 +62,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.JPJNJMHLBOP.Builder subBuilder = null;
+            POGOProtos.Rpc.ClientQuestProto.Builder subBuilder = null;
             if (iblilgjehdh_ != null) {
               subBuilder = iblilgjehdh_.toBuilder();
             }
-            iblilgjehdh_ = input.readMessage(POGOProtos.Rpc.JPJNJMHLBOP.parser(), extensionRegistry);
+            iblilgjehdh_ = input.readMessage(POGOProtos.Rpc.ClientQuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(iblilgjehdh_);
               iblilgjehdh_ = subBuilder.buildPartial();
@@ -76,11 +76,11 @@ private static final long serialVersionUID = 0L;
           }
           case 26: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              phcdogbllok_ = new java.util.ArrayList<POGOProtos.Rpc.EJDMHKENPII>();
+              phcdogbllok_ = new java.util.ArrayList<POGOProtos.Rpc.QuestStampProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             phcdogbllok_.add(
-                input.readMessage(POGOProtos.Rpc.EJDMHKENPII.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.QuestStampProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -340,9 +340,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int IBLILGJEHDH_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh_;
+  private POGOProtos.Rpc.ClientQuestProto iblilgjehdh_;
   /**
-   * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+   * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
    * @return Whether the iblilgjehdh field is set.
    */
   @java.lang.Override
@@ -350,57 +350,57 @@ private static final long serialVersionUID = 0L;
     return iblilgjehdh_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+   * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
    * @return The iblilgjehdh.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.JPJNJMHLBOP getIblilgjehdh() {
-    return iblilgjehdh_ == null ? POGOProtos.Rpc.JPJNJMHLBOP.getDefaultInstance() : iblilgjehdh_;
+  public POGOProtos.Rpc.ClientQuestProto getIblilgjehdh() {
+    return iblilgjehdh_ == null ? POGOProtos.Rpc.ClientQuestProto.getDefaultInstance() : iblilgjehdh_;
   }
   /**
-   * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+   * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.JPJNJMHLBOPOrBuilder getIblilgjehdhOrBuilder() {
+  public POGOProtos.Rpc.ClientQuestProtoOrBuilder getIblilgjehdhOrBuilder() {
     return getIblilgjehdh();
   }
 
   public static final int PHCDOGBLLOK_FIELD_NUMBER = 3;
-  private java.util.List<POGOProtos.Rpc.EJDMHKENPII> phcdogbllok_;
+  private java.util.List<POGOProtos.Rpc.QuestStampProto> phcdogbllok_;
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.EJDMHKENPII> getPhcdogbllokList() {
+  public java.util.List<POGOProtos.Rpc.QuestStampProto> getPhcdogbllokList() {
     return phcdogbllok_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.EJDMHKENPIIOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.QuestStampProtoOrBuilder> 
       getPhcdogbllokOrBuilderList() {
     return phcdogbllok_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
    */
   @java.lang.Override
   public int getPhcdogbllokCount() {
     return phcdogbllok_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EJDMHKENPII getPhcdogbllok(int index) {
+  public POGOProtos.Rpc.QuestStampProto getPhcdogbllok(int index) {
     return phcdogbllok_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EJDMHKENPIIOrBuilder getPhcdogbllokOrBuilder(
+  public POGOProtos.Rpc.QuestStampProtoOrBuilder getPhcdogbllokOrBuilder(
       int index) {
     return phcdogbllok_.get(index);
   }
@@ -851,31 +851,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh_;
+    private POGOProtos.Rpc.ClientQuestProto iblilgjehdh_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JPJNJMHLBOP, POGOProtos.Rpc.JPJNJMHLBOP.Builder, POGOProtos.Rpc.JPJNJMHLBOPOrBuilder> iblilgjehdhBuilder_;
+        POGOProtos.Rpc.ClientQuestProto, POGOProtos.Rpc.ClientQuestProto.Builder, POGOProtos.Rpc.ClientQuestProtoOrBuilder> iblilgjehdhBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
      * @return Whether the iblilgjehdh field is set.
      */
     public boolean hasIblilgjehdh() {
       return iblilgjehdhBuilder_ != null || iblilgjehdh_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
      * @return The iblilgjehdh.
      */
-    public POGOProtos.Rpc.JPJNJMHLBOP getIblilgjehdh() {
+    public POGOProtos.Rpc.ClientQuestProto getIblilgjehdh() {
       if (iblilgjehdhBuilder_ == null) {
-        return iblilgjehdh_ == null ? POGOProtos.Rpc.JPJNJMHLBOP.getDefaultInstance() : iblilgjehdh_;
+        return iblilgjehdh_ == null ? POGOProtos.Rpc.ClientQuestProto.getDefaultInstance() : iblilgjehdh_;
       } else {
         return iblilgjehdhBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
      */
-    public Builder setIblilgjehdh(POGOProtos.Rpc.JPJNJMHLBOP value) {
+    public Builder setIblilgjehdh(POGOProtos.Rpc.ClientQuestProto value) {
       if (iblilgjehdhBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -889,10 +889,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
      */
     public Builder setIblilgjehdh(
-        POGOProtos.Rpc.JPJNJMHLBOP.Builder builderForValue) {
+        POGOProtos.Rpc.ClientQuestProto.Builder builderForValue) {
       if (iblilgjehdhBuilder_ == null) {
         iblilgjehdh_ = builderForValue.build();
         onChanged();
@@ -903,13 +903,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
      */
-    public Builder mergeIblilgjehdh(POGOProtos.Rpc.JPJNJMHLBOP value) {
+    public Builder mergeIblilgjehdh(POGOProtos.Rpc.ClientQuestProto value) {
       if (iblilgjehdhBuilder_ == null) {
         if (iblilgjehdh_ != null) {
           iblilgjehdh_ =
-            POGOProtos.Rpc.JPJNJMHLBOP.newBuilder(iblilgjehdh_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.ClientQuestProto.newBuilder(iblilgjehdh_).mergeFrom(value).buildPartial();
         } else {
           iblilgjehdh_ = value;
         }
@@ -921,7 +921,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
      */
     public Builder clearIblilgjehdh() {
       if (iblilgjehdhBuilder_ == null) {
@@ -935,33 +935,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
      */
-    public POGOProtos.Rpc.JPJNJMHLBOP.Builder getIblilgjehdhBuilder() {
+    public POGOProtos.Rpc.ClientQuestProto.Builder getIblilgjehdhBuilder() {
       
       onChanged();
       return getIblilgjehdhFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
      */
-    public POGOProtos.Rpc.JPJNJMHLBOPOrBuilder getIblilgjehdhOrBuilder() {
+    public POGOProtos.Rpc.ClientQuestProtoOrBuilder getIblilgjehdhOrBuilder() {
       if (iblilgjehdhBuilder_ != null) {
         return iblilgjehdhBuilder_.getMessageOrBuilder();
       } else {
         return iblilgjehdh_ == null ?
-            POGOProtos.Rpc.JPJNJMHLBOP.getDefaultInstance() : iblilgjehdh_;
+            POGOProtos.Rpc.ClientQuestProto.getDefaultInstance() : iblilgjehdh_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JPJNJMHLBOP iblilgjehdh = 2;</code>
+     * <code>.POGOProtos.Rpc.ClientQuestProto iblilgjehdh = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JPJNJMHLBOP, POGOProtos.Rpc.JPJNJMHLBOP.Builder, POGOProtos.Rpc.JPJNJMHLBOPOrBuilder> 
+        POGOProtos.Rpc.ClientQuestProto, POGOProtos.Rpc.ClientQuestProto.Builder, POGOProtos.Rpc.ClientQuestProtoOrBuilder> 
         getIblilgjehdhFieldBuilder() {
       if (iblilgjehdhBuilder_ == null) {
         iblilgjehdhBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.JPJNJMHLBOP, POGOProtos.Rpc.JPJNJMHLBOP.Builder, POGOProtos.Rpc.JPJNJMHLBOPOrBuilder>(
+            POGOProtos.Rpc.ClientQuestProto, POGOProtos.Rpc.ClientQuestProto.Builder, POGOProtos.Rpc.ClientQuestProtoOrBuilder>(
                 getIblilgjehdh(),
                 getParentForChildren(),
                 isClean());
@@ -970,22 +970,22 @@ private static final long serialVersionUID = 0L;
       return iblilgjehdhBuilder_;
     }
 
-    private java.util.List<POGOProtos.Rpc.EJDMHKENPII> phcdogbllok_ =
+    private java.util.List<POGOProtos.Rpc.QuestStampProto> phcdogbllok_ =
       java.util.Collections.emptyList();
     private void ensurePhcdogbllokIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        phcdogbllok_ = new java.util.ArrayList<POGOProtos.Rpc.EJDMHKENPII>(phcdogbllok_);
+        phcdogbllok_ = new java.util.ArrayList<POGOProtos.Rpc.QuestStampProto>(phcdogbllok_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.EJDMHKENPII, POGOProtos.Rpc.EJDMHKENPII.Builder, POGOProtos.Rpc.EJDMHKENPIIOrBuilder> phcdogbllokBuilder_;
+        POGOProtos.Rpc.QuestStampProto, POGOProtos.Rpc.QuestStampProto.Builder, POGOProtos.Rpc.QuestStampProtoOrBuilder> phcdogbllokBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
-    public java.util.List<POGOProtos.Rpc.EJDMHKENPII> getPhcdogbllokList() {
+    public java.util.List<POGOProtos.Rpc.QuestStampProto> getPhcdogbllokList() {
       if (phcdogbllokBuilder_ == null) {
         return java.util.Collections.unmodifiableList(phcdogbllok_);
       } else {
@@ -993,7 +993,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
     public int getPhcdogbllokCount() {
       if (phcdogbllokBuilder_ == null) {
@@ -1003,9 +1003,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
-    public POGOProtos.Rpc.EJDMHKENPII getPhcdogbllok(int index) {
+    public POGOProtos.Rpc.QuestStampProto getPhcdogbllok(int index) {
       if (phcdogbllokBuilder_ == null) {
         return phcdogbllok_.get(index);
       } else {
@@ -1013,10 +1013,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
     public Builder setPhcdogbllok(
-        int index, POGOProtos.Rpc.EJDMHKENPII value) {
+        int index, POGOProtos.Rpc.QuestStampProto value) {
       if (phcdogbllokBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1030,10 +1030,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
     public Builder setPhcdogbllok(
-        int index, POGOProtos.Rpc.EJDMHKENPII.Builder builderForValue) {
+        int index, POGOProtos.Rpc.QuestStampProto.Builder builderForValue) {
       if (phcdogbllokBuilder_ == null) {
         ensurePhcdogbllokIsMutable();
         phcdogbllok_.set(index, builderForValue.build());
@@ -1044,9 +1044,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
-    public Builder addPhcdogbllok(POGOProtos.Rpc.EJDMHKENPII value) {
+    public Builder addPhcdogbllok(POGOProtos.Rpc.QuestStampProto value) {
       if (phcdogbllokBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1060,10 +1060,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
     public Builder addPhcdogbllok(
-        int index, POGOProtos.Rpc.EJDMHKENPII value) {
+        int index, POGOProtos.Rpc.QuestStampProto value) {
       if (phcdogbllokBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1077,10 +1077,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
     public Builder addPhcdogbllok(
-        POGOProtos.Rpc.EJDMHKENPII.Builder builderForValue) {
+        POGOProtos.Rpc.QuestStampProto.Builder builderForValue) {
       if (phcdogbllokBuilder_ == null) {
         ensurePhcdogbllokIsMutable();
         phcdogbllok_.add(builderForValue.build());
@@ -1091,10 +1091,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
     public Builder addPhcdogbllok(
-        int index, POGOProtos.Rpc.EJDMHKENPII.Builder builderForValue) {
+        int index, POGOProtos.Rpc.QuestStampProto.Builder builderForValue) {
       if (phcdogbllokBuilder_ == null) {
         ensurePhcdogbllokIsMutable();
         phcdogbllok_.add(index, builderForValue.build());
@@ -1105,10 +1105,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
     public Builder addAllPhcdogbllok(
-        java.lang.Iterable<? extends POGOProtos.Rpc.EJDMHKENPII> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.QuestStampProto> values) {
       if (phcdogbllokBuilder_ == null) {
         ensurePhcdogbllokIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1120,7 +1120,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
     public Builder clearPhcdogbllok() {
       if (phcdogbllokBuilder_ == null) {
@@ -1133,7 +1133,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
     public Builder removePhcdogbllok(int index) {
       if (phcdogbllokBuilder_ == null) {
@@ -1146,16 +1146,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
-    public POGOProtos.Rpc.EJDMHKENPII.Builder getPhcdogbllokBuilder(
+    public POGOProtos.Rpc.QuestStampProto.Builder getPhcdogbllokBuilder(
         int index) {
       return getPhcdogbllokFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
-    public POGOProtos.Rpc.EJDMHKENPIIOrBuilder getPhcdogbllokOrBuilder(
+    public POGOProtos.Rpc.QuestStampProtoOrBuilder getPhcdogbllokOrBuilder(
         int index) {
       if (phcdogbllokBuilder_ == null) {
         return phcdogbllok_.get(index);  } else {
@@ -1163,9 +1163,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.EJDMHKENPIIOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.QuestStampProtoOrBuilder> 
          getPhcdogbllokOrBuilderList() {
       if (phcdogbllokBuilder_ != null) {
         return phcdogbllokBuilder_.getMessageOrBuilderList();
@@ -1174,33 +1174,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
-    public POGOProtos.Rpc.EJDMHKENPII.Builder addPhcdogbllokBuilder() {
+    public POGOProtos.Rpc.QuestStampProto.Builder addPhcdogbllokBuilder() {
       return getPhcdogbllokFieldBuilder().addBuilder(
-          POGOProtos.Rpc.EJDMHKENPII.getDefaultInstance());
+          POGOProtos.Rpc.QuestStampProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
-    public POGOProtos.Rpc.EJDMHKENPII.Builder addPhcdogbllokBuilder(
+    public POGOProtos.Rpc.QuestStampProto.Builder addPhcdogbllokBuilder(
         int index) {
       return getPhcdogbllokFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.EJDMHKENPII.getDefaultInstance());
+          index, POGOProtos.Rpc.QuestStampProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 3;</code>
      */
-    public java.util.List<POGOProtos.Rpc.EJDMHKENPII.Builder> 
+    public java.util.List<POGOProtos.Rpc.QuestStampProto.Builder> 
          getPhcdogbllokBuilderList() {
       return getPhcdogbllokFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.EJDMHKENPII, POGOProtos.Rpc.EJDMHKENPII.Builder, POGOProtos.Rpc.EJDMHKENPIIOrBuilder> 
+        POGOProtos.Rpc.QuestStampProto, POGOProtos.Rpc.QuestStampProto.Builder, POGOProtos.Rpc.QuestStampProtoOrBuilder> 
         getPhcdogbllokFieldBuilder() {
       if (phcdogbllokBuilder_ == null) {
         phcdogbllokBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.EJDMHKENPII, POGOProtos.Rpc.EJDMHKENPII.Builder, POGOProtos.Rpc.EJDMHKENPIIOrBuilder>(
+            POGOProtos.Rpc.QuestStampProto, POGOProtos.Rpc.QuestStampProto.Builder, POGOProtos.Rpc.QuestStampProtoOrBuilder>(
                 phcdogbllok_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

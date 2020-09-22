@@ -5,7 +5,7 @@ package POGOProtos.Rpc;
 
 /**
  * <pre>
- * ref: Niantic.Platform.Iap.Protos.CurrencyQuantityProto
+ * ref: MBDABLKLKDB
  * </pre>
  *
  * Protobuf type {@code POGOProtos.Rpc.CurrencyQuantityProto}
@@ -20,7 +20,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private CurrencyQuantityProto() {
-    currencyType_ = "";
+    efkjbabejfn_ = "";
+    igapjkhefdc_ = "";
   }
 
   @java.lang.Override
@@ -56,12 +57,28 @@ private static final long serialVersionUID = 0L;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            currencyType_ = s;
+            efkjbabejfn_ = s;
             break;
           }
           case 16: {
 
-            quantity_ = input.readInt32();
+            ocdhchampmj_ = input.readInt32();
+            break;
+          }
+          case 24: {
+
+            oookdofmngg_ = input.readInt32();
+            break;
+          }
+          case 34: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            igapjkhefdc_ = s;
+            break;
+          }
+          case 40: {
+
+            lfbeennjkoi_ = input.readInt64();
             break;
           }
           default: {
@@ -96,53 +113,113 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.CurrencyQuantityProto.class, POGOProtos.Rpc.CurrencyQuantityProto.Builder.class);
   }
 
-  public static final int CURRENCY_TYPE_FIELD_NUMBER = 1;
-  private volatile java.lang.Object currencyType_;
+  public static final int EFKJBABEJFN_FIELD_NUMBER = 1;
+  private volatile java.lang.Object efkjbabejfn_;
   /**
-   * <code>string currency_type = 1;</code>
-   * @return The currencyType.
+   * <code>string efkjbabejfn = 1;</code>
+   * @return The efkjbabejfn.
    */
   @java.lang.Override
-  public java.lang.String getCurrencyType() {
-    java.lang.Object ref = currencyType_;
+  public java.lang.String getEfkjbabejfn() {
+    java.lang.Object ref = efkjbabejfn_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      currencyType_ = s;
+      efkjbabejfn_ = s;
       return s;
     }
   }
   /**
-   * <code>string currency_type = 1;</code>
-   * @return The bytes for currencyType.
+   * <code>string efkjbabejfn = 1;</code>
+   * @return The bytes for efkjbabejfn.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getCurrencyTypeBytes() {
-    java.lang.Object ref = currencyType_;
+      getEfkjbabejfnBytes() {
+    java.lang.Object ref = efkjbabejfn_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      currencyType_ = b;
+      efkjbabejfn_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int QUANTITY_FIELD_NUMBER = 2;
-  private int quantity_;
+  public static final int OCDHCHAMPMJ_FIELD_NUMBER = 2;
+  private int ocdhchampmj_;
   /**
-   * <code>int32 quantity = 2;</code>
-   * @return The quantity.
+   * <code>int32 ocdhchampmj = 2;</code>
+   * @return The ocdhchampmj.
    */
   @java.lang.Override
-  public int getQuantity() {
-    return quantity_;
+  public int getOcdhchampmj() {
+    return ocdhchampmj_;
+  }
+
+  public static final int OOOKDOFMNGG_FIELD_NUMBER = 3;
+  private int oookdofmngg_;
+  /**
+   * <code>int32 oookdofmngg = 3;</code>
+   * @return The oookdofmngg.
+   */
+  @java.lang.Override
+  public int getOookdofmngg() {
+    return oookdofmngg_;
+  }
+
+  public static final int IGAPJKHEFDC_FIELD_NUMBER = 4;
+  private volatile java.lang.Object igapjkhefdc_;
+  /**
+   * <code>string igapjkhefdc = 4;</code>
+   * @return The igapjkhefdc.
+   */
+  @java.lang.Override
+  public java.lang.String getIgapjkhefdc() {
+    java.lang.Object ref = igapjkhefdc_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      igapjkhefdc_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string igapjkhefdc = 4;</code>
+   * @return The bytes for igapjkhefdc.
+   */
+  @java.lang.Override
+  public com.google.protobuf.ByteString
+      getIgapjkhefdcBytes() {
+    java.lang.Object ref = igapjkhefdc_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      igapjkhefdc_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int LFBEENNJKOI_FIELD_NUMBER = 5;
+  private long lfbeennjkoi_;
+  /**
+   * <code>int64 lfbeennjkoi = 5;</code>
+   * @return The lfbeennjkoi.
+   */
+  @java.lang.Override
+  public long getLfbeennjkoi() {
+    return lfbeennjkoi_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -159,11 +236,20 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getCurrencyTypeBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, currencyType_);
+    if (!getEfkjbabejfnBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, efkjbabejfn_);
     }
-    if (quantity_ != 0) {
-      output.writeInt32(2, quantity_);
+    if (ocdhchampmj_ != 0) {
+      output.writeInt32(2, ocdhchampmj_);
+    }
+    if (oookdofmngg_ != 0) {
+      output.writeInt32(3, oookdofmngg_);
+    }
+    if (!getIgapjkhefdcBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, igapjkhefdc_);
+    }
+    if (lfbeennjkoi_ != 0L) {
+      output.writeInt64(5, lfbeennjkoi_);
     }
     unknownFields.writeTo(output);
   }
@@ -174,12 +260,23 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!getCurrencyTypeBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, currencyType_);
+    if (!getEfkjbabejfnBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, efkjbabejfn_);
     }
-    if (quantity_ != 0) {
+    if (ocdhchampmj_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, quantity_);
+        .computeInt32Size(2, ocdhchampmj_);
+    }
+    if (oookdofmngg_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(3, oookdofmngg_);
+    }
+    if (!getIgapjkhefdcBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, igapjkhefdc_);
+    }
+    if (lfbeennjkoi_ != 0L) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt64Size(5, lfbeennjkoi_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -196,10 +293,16 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.CurrencyQuantityProto other = (POGOProtos.Rpc.CurrencyQuantityProto) obj;
 
-    if (!getCurrencyType()
-        .equals(other.getCurrencyType())) return false;
-    if (getQuantity()
-        != other.getQuantity()) return false;
+    if (!getEfkjbabejfn()
+        .equals(other.getEfkjbabejfn())) return false;
+    if (getOcdhchampmj()
+        != other.getOcdhchampmj()) return false;
+    if (getOookdofmngg()
+        != other.getOookdofmngg()) return false;
+    if (!getIgapjkhefdc()
+        .equals(other.getIgapjkhefdc())) return false;
+    if (getLfbeennjkoi()
+        != other.getLfbeennjkoi()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -211,10 +314,17 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + CURRENCY_TYPE_FIELD_NUMBER;
-    hash = (53 * hash) + getCurrencyType().hashCode();
-    hash = (37 * hash) + QUANTITY_FIELD_NUMBER;
-    hash = (53 * hash) + getQuantity();
+    hash = (37 * hash) + EFKJBABEJFN_FIELD_NUMBER;
+    hash = (53 * hash) + getEfkjbabejfn().hashCode();
+    hash = (37 * hash) + OCDHCHAMPMJ_FIELD_NUMBER;
+    hash = (53 * hash) + getOcdhchampmj();
+    hash = (37 * hash) + OOOKDOFMNGG_FIELD_NUMBER;
+    hash = (53 * hash) + getOookdofmngg();
+    hash = (37 * hash) + IGAPJKHEFDC_FIELD_NUMBER;
+    hash = (53 * hash) + getIgapjkhefdc().hashCode();
+    hash = (37 * hash) + LFBEENNJKOI_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        getLfbeennjkoi());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -312,7 +422,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: Niantic.Platform.Iap.Protos.CurrencyQuantityProto
+   * ref: MBDABLKLKDB
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.CurrencyQuantityProto}
@@ -352,9 +462,15 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      currencyType_ = "";
+      efkjbabejfn_ = "";
 
-      quantity_ = 0;
+      ocdhchampmj_ = 0;
+
+      oookdofmngg_ = 0;
+
+      igapjkhefdc_ = "";
+
+      lfbeennjkoi_ = 0L;
 
       return this;
     }
@@ -382,8 +498,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.CurrencyQuantityProto buildPartial() {
       POGOProtos.Rpc.CurrencyQuantityProto result = new POGOProtos.Rpc.CurrencyQuantityProto(this);
-      result.currencyType_ = currencyType_;
-      result.quantity_ = quantity_;
+      result.efkjbabejfn_ = efkjbabejfn_;
+      result.ocdhchampmj_ = ocdhchampmj_;
+      result.oookdofmngg_ = oookdofmngg_;
+      result.igapjkhefdc_ = igapjkhefdc_;
+      result.lfbeennjkoi_ = lfbeennjkoi_;
       onBuilt();
       return result;
     }
@@ -432,12 +551,22 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.CurrencyQuantityProto other) {
       if (other == POGOProtos.Rpc.CurrencyQuantityProto.getDefaultInstance()) return this;
-      if (!other.getCurrencyType().isEmpty()) {
-        currencyType_ = other.currencyType_;
+      if (!other.getEfkjbabejfn().isEmpty()) {
+        efkjbabejfn_ = other.efkjbabejfn_;
         onChanged();
       }
-      if (other.getQuantity() != 0) {
-        setQuantity(other.getQuantity());
+      if (other.getOcdhchampmj() != 0) {
+        setOcdhchampmj(other.getOcdhchampmj());
+      }
+      if (other.getOookdofmngg() != 0) {
+        setOookdofmngg(other.getOookdofmngg());
+      }
+      if (!other.getIgapjkhefdc().isEmpty()) {
+        igapjkhefdc_ = other.igapjkhefdc_;
+        onChanged();
+      }
+      if (other.getLfbeennjkoi() != 0L) {
+        setLfbeennjkoi(other.getLfbeennjkoi());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -468,109 +597,247 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object currencyType_ = "";
+    private java.lang.Object efkjbabejfn_ = "";
     /**
-     * <code>string currency_type = 1;</code>
-     * @return The currencyType.
+     * <code>string efkjbabejfn = 1;</code>
+     * @return The efkjbabejfn.
      */
-    public java.lang.String getCurrencyType() {
-      java.lang.Object ref = currencyType_;
+    public java.lang.String getEfkjbabejfn() {
+      java.lang.Object ref = efkjbabejfn_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        currencyType_ = s;
+        efkjbabejfn_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string currency_type = 1;</code>
-     * @return The bytes for currencyType.
+     * <code>string efkjbabejfn = 1;</code>
+     * @return The bytes for efkjbabejfn.
      */
     public com.google.protobuf.ByteString
-        getCurrencyTypeBytes() {
-      java.lang.Object ref = currencyType_;
+        getEfkjbabejfnBytes() {
+      java.lang.Object ref = efkjbabejfn_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        currencyType_ = b;
+        efkjbabejfn_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string currency_type = 1;</code>
-     * @param value The currencyType to set.
+     * <code>string efkjbabejfn = 1;</code>
+     * @param value The efkjbabejfn to set.
      * @return This builder for chaining.
      */
-    public Builder setCurrencyType(
+    public Builder setEfkjbabejfn(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      currencyType_ = value;
+      efkjbabejfn_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string currency_type = 1;</code>
+     * <code>string efkjbabejfn = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearCurrencyType() {
+    public Builder clearEfkjbabejfn() {
       
-      currencyType_ = getDefaultInstance().getCurrencyType();
+      efkjbabejfn_ = getDefaultInstance().getEfkjbabejfn();
       onChanged();
       return this;
     }
     /**
-     * <code>string currency_type = 1;</code>
-     * @param value The bytes for currencyType to set.
+     * <code>string efkjbabejfn = 1;</code>
+     * @param value The bytes for efkjbabejfn to set.
      * @return This builder for chaining.
      */
-    public Builder setCurrencyTypeBytes(
+    public Builder setEfkjbabejfnBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      currencyType_ = value;
+      efkjbabejfn_ = value;
       onChanged();
       return this;
     }
 
-    private int quantity_ ;
+    private int ocdhchampmj_ ;
     /**
-     * <code>int32 quantity = 2;</code>
-     * @return The quantity.
+     * <code>int32 ocdhchampmj = 2;</code>
+     * @return The ocdhchampmj.
      */
     @java.lang.Override
-    public int getQuantity() {
-      return quantity_;
+    public int getOcdhchampmj() {
+      return ocdhchampmj_;
     }
     /**
-     * <code>int32 quantity = 2;</code>
-     * @param value The quantity to set.
+     * <code>int32 ocdhchampmj = 2;</code>
+     * @param value The ocdhchampmj to set.
      * @return This builder for chaining.
      */
-    public Builder setQuantity(int value) {
+    public Builder setOcdhchampmj(int value) {
       
-      quantity_ = value;
+      ocdhchampmj_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 quantity = 2;</code>
+     * <code>int32 ocdhchampmj = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearQuantity() {
+    public Builder clearOcdhchampmj() {
       
-      quantity_ = 0;
+      ocdhchampmj_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int oookdofmngg_ ;
+    /**
+     * <code>int32 oookdofmngg = 3;</code>
+     * @return The oookdofmngg.
+     */
+    @java.lang.Override
+    public int getOookdofmngg() {
+      return oookdofmngg_;
+    }
+    /**
+     * <code>int32 oookdofmngg = 3;</code>
+     * @param value The oookdofmngg to set.
+     * @return This builder for chaining.
+     */
+    public Builder setOookdofmngg(int value) {
+      
+      oookdofmngg_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 oookdofmngg = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearOookdofmngg() {
+      
+      oookdofmngg_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object igapjkhefdc_ = "";
+    /**
+     * <code>string igapjkhefdc = 4;</code>
+     * @return The igapjkhefdc.
+     */
+    public java.lang.String getIgapjkhefdc() {
+      java.lang.Object ref = igapjkhefdc_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        igapjkhefdc_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string igapjkhefdc = 4;</code>
+     * @return The bytes for igapjkhefdc.
+     */
+    public com.google.protobuf.ByteString
+        getIgapjkhefdcBytes() {
+      java.lang.Object ref = igapjkhefdc_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        igapjkhefdc_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string igapjkhefdc = 4;</code>
+     * @param value The igapjkhefdc to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIgapjkhefdc(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      igapjkhefdc_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string igapjkhefdc = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearIgapjkhefdc() {
+      
+      igapjkhefdc_ = getDefaultInstance().getIgapjkhefdc();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string igapjkhefdc = 4;</code>
+     * @param value The bytes for igapjkhefdc to set.
+     * @return This builder for chaining.
+     */
+    public Builder setIgapjkhefdcBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      igapjkhefdc_ = value;
+      onChanged();
+      return this;
+    }
+
+    private long lfbeennjkoi_ ;
+    /**
+     * <code>int64 lfbeennjkoi = 5;</code>
+     * @return The lfbeennjkoi.
+     */
+    @java.lang.Override
+    public long getLfbeennjkoi() {
+      return lfbeennjkoi_;
+    }
+    /**
+     * <code>int64 lfbeennjkoi = 5;</code>
+     * @param value The lfbeennjkoi to set.
+     * @return This builder for chaining.
+     */
+    public Builder setLfbeennjkoi(long value) {
+      
+      lfbeennjkoi_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int64 lfbeennjkoi = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearLfbeennjkoi() {
+      
+      lfbeennjkoi_ = 0L;
       onChanged();
       return this;
     }

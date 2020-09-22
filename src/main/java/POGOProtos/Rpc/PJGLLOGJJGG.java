@@ -53,11 +53,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.GNJGCPJMODK.Builder subBuilder = null;
+            POGOProtos.Rpc.DailyCounterProto.Builder subBuilder = null;
             if (gdadpcnldha_ != null) {
               subBuilder = gdadpcnldha_.toBuilder();
             }
-            gdadpcnldha_ = input.readMessage(POGOProtos.Rpc.GNJGCPJMODK.parser(), extensionRegistry);
+            gdadpcnldha_ = input.readMessage(POGOProtos.Rpc.DailyCounterProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(gdadpcnldha_);
               gdadpcnldha_ = subBuilder.buildPartial();
@@ -98,9 +98,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GDADPCNLDHA_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha_;
+  private POGOProtos.Rpc.DailyCounterProto gdadpcnldha_;
   /**
-   * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
    * @return Whether the gdadpcnldha field is set.
    */
   @java.lang.Override
@@ -108,18 +108,18 @@ private static final long serialVersionUID = 0L;
     return gdadpcnldha_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
    * @return The gdadpcnldha.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GNJGCPJMODK getGdadpcnldha() {
-    return gdadpcnldha_ == null ? POGOProtos.Rpc.GNJGCPJMODK.getDefaultInstance() : gdadpcnldha_;
+  public POGOProtos.Rpc.DailyCounterProto getGdadpcnldha() {
+    return gdadpcnldha_ == null ? POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : gdadpcnldha_;
   }
   /**
-   * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GNJGCPJMODKOrBuilder getGdadpcnldhaOrBuilder() {
+  public POGOProtos.Rpc.DailyCounterProtoOrBuilder getGdadpcnldhaOrBuilder() {
     return getGdadpcnldha();
   }
 
@@ -442,31 +442,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha_;
+    private POGOProtos.Rpc.DailyCounterProto gdadpcnldha_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GNJGCPJMODK, POGOProtos.Rpc.GNJGCPJMODK.Builder, POGOProtos.Rpc.GNJGCPJMODKOrBuilder> gdadpcnldhaBuilder_;
+        POGOProtos.Rpc.DailyCounterProto, POGOProtos.Rpc.DailyCounterProto.Builder, POGOProtos.Rpc.DailyCounterProtoOrBuilder> gdadpcnldhaBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
      * @return Whether the gdadpcnldha field is set.
      */
     public boolean hasGdadpcnldha() {
       return gdadpcnldhaBuilder_ != null || gdadpcnldha_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
      * @return The gdadpcnldha.
      */
-    public POGOProtos.Rpc.GNJGCPJMODK getGdadpcnldha() {
+    public POGOProtos.Rpc.DailyCounterProto getGdadpcnldha() {
       if (gdadpcnldhaBuilder_ == null) {
-        return gdadpcnldha_ == null ? POGOProtos.Rpc.GNJGCPJMODK.getDefaultInstance() : gdadpcnldha_;
+        return gdadpcnldha_ == null ? POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : gdadpcnldha_;
       } else {
         return gdadpcnldhaBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
      */
-    public Builder setGdadpcnldha(POGOProtos.Rpc.GNJGCPJMODK value) {
+    public Builder setGdadpcnldha(POGOProtos.Rpc.DailyCounterProto value) {
       if (gdadpcnldhaBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -480,10 +480,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
      */
     public Builder setGdadpcnldha(
-        POGOProtos.Rpc.GNJGCPJMODK.Builder builderForValue) {
+        POGOProtos.Rpc.DailyCounterProto.Builder builderForValue) {
       if (gdadpcnldhaBuilder_ == null) {
         gdadpcnldha_ = builderForValue.build();
         onChanged();
@@ -494,13 +494,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
      */
-    public Builder mergeGdadpcnldha(POGOProtos.Rpc.GNJGCPJMODK value) {
+    public Builder mergeGdadpcnldha(POGOProtos.Rpc.DailyCounterProto value) {
       if (gdadpcnldhaBuilder_ == null) {
         if (gdadpcnldha_ != null) {
           gdadpcnldha_ =
-            POGOProtos.Rpc.GNJGCPJMODK.newBuilder(gdadpcnldha_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.DailyCounterProto.newBuilder(gdadpcnldha_).mergeFrom(value).buildPartial();
         } else {
           gdadpcnldha_ = value;
         }
@@ -512,7 +512,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
      */
     public Builder clearGdadpcnldha() {
       if (gdadpcnldhaBuilder_ == null) {
@@ -526,33 +526,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
      */
-    public POGOProtos.Rpc.GNJGCPJMODK.Builder getGdadpcnldhaBuilder() {
+    public POGOProtos.Rpc.DailyCounterProto.Builder getGdadpcnldhaBuilder() {
       
       onChanged();
       return getGdadpcnldhaFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
      */
-    public POGOProtos.Rpc.GNJGCPJMODKOrBuilder getGdadpcnldhaOrBuilder() {
+    public POGOProtos.Rpc.DailyCounterProtoOrBuilder getGdadpcnldhaOrBuilder() {
       if (gdadpcnldhaBuilder_ != null) {
         return gdadpcnldhaBuilder_.getMessageOrBuilder();
       } else {
         return gdadpcnldha_ == null ?
-            POGOProtos.Rpc.GNJGCPJMODK.getDefaultInstance() : gdadpcnldha_;
+            POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : gdadpcnldha_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GNJGCPJMODK gdadpcnldha = 1;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto gdadpcnldha = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GNJGCPJMODK, POGOProtos.Rpc.GNJGCPJMODK.Builder, POGOProtos.Rpc.GNJGCPJMODKOrBuilder> 
+        POGOProtos.Rpc.DailyCounterProto, POGOProtos.Rpc.DailyCounterProto.Builder, POGOProtos.Rpc.DailyCounterProtoOrBuilder> 
         getGdadpcnldhaFieldBuilder() {
       if (gdadpcnldhaBuilder_ == null) {
         gdadpcnldhaBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.GNJGCPJMODK, POGOProtos.Rpc.GNJGCPJMODK.Builder, POGOProtos.Rpc.GNJGCPJMODKOrBuilder>(
+            POGOProtos.Rpc.DailyCounterProto, POGOProtos.Rpc.DailyCounterProto.Builder, POGOProtos.Rpc.DailyCounterProtoOrBuilder>(
                 getGdadpcnldha(),
                 getParentForChildren(),
                 isClean());

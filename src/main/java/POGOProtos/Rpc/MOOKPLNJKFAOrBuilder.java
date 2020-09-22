@@ -168,27 +168,27 @@ public interface MOOKPLNJKFAOrBuilder extends
       int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
    */
-  java.util.List<POGOProtos.Rpc.EENOGKMFLCO> 
+  java.util.List<POGOProtos.Rpc.GiftBoxProto> 
       getAcoaapjfnmfList();
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
    */
-  POGOProtos.Rpc.EENOGKMFLCO getAcoaapjfnmf(int index);
+  POGOProtos.Rpc.GiftBoxProto getAcoaapjfnmf(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
    */
   int getAcoaapjfnmfCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.EENOGKMFLCOOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.GiftBoxProtoOrBuilder> 
       getAcoaapjfnmfOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO acoaapjfnmf = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto acoaapjfnmf = 10;</code>
    */
-  POGOProtos.Rpc.EENOGKMFLCOOrBuilder getAcoaapjfnmfOrBuilder(
+  POGOProtos.Rpc.GiftBoxProtoOrBuilder getAcoaapjfnmfOrBuilder(
       int index);
 
   /**

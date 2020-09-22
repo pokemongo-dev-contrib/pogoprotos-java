@@ -57,11 +57,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.JPCFJPJCOIH.Builder subBuilder = null;
+            POGOProtos.Rpc.FriendshipLevelDataProto.Builder subBuilder = null;
             if (kgihoibciap_ != null) {
               subBuilder = kgihoibciap_.toBuilder();
             }
-            kgihoibciap_ = input.readMessage(POGOProtos.Rpc.JPCFJPJCOIH.parser(), extensionRegistry);
+            kgihoibciap_ = input.readMessage(POGOProtos.Rpc.FriendshipLevelDataProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(kgihoibciap_);
               kgihoibciap_ = subBuilder.buildPartial();
@@ -71,11 +71,11 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              affofpddmmp_ = new java.util.ArrayList<POGOProtos.Rpc.MGGHNNFEHPA>();
+              affofpddmmp_ = new java.util.ArrayList<POGOProtos.Rpc.GiftBoxDetailsProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             affofpddmmp_.add(
-                input.readMessage(POGOProtos.Rpc.MGGHNNFEHPA.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.GiftBoxDetailsProto.parser(), extensionRegistry));
             break;
           }
           case 26: {
@@ -141,9 +141,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int KGIHOIBCIAP_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap_;
+  private POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap_;
   /**
-   * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+   * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
    * @return Whether the kgihoibciap field is set.
    */
   @java.lang.Override
@@ -151,57 +151,57 @@ private static final long serialVersionUID = 0L;
     return kgihoibciap_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+   * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
    * @return The kgihoibciap.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.JPCFJPJCOIH getKgihoibciap() {
-    return kgihoibciap_ == null ? POGOProtos.Rpc.JPCFJPJCOIH.getDefaultInstance() : kgihoibciap_;
+  public POGOProtos.Rpc.FriendshipLevelDataProto getKgihoibciap() {
+    return kgihoibciap_ == null ? POGOProtos.Rpc.FriendshipLevelDataProto.getDefaultInstance() : kgihoibciap_;
   }
   /**
-   * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+   * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.JPCFJPJCOIHOrBuilder getKgihoibciapOrBuilder() {
+  public POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder getKgihoibciapOrBuilder() {
     return getKgihoibciap();
   }
 
   public static final int AFFOFPDDMMP_FIELD_NUMBER = 2;
-  private java.util.List<POGOProtos.Rpc.MGGHNNFEHPA> affofpddmmp_;
+  private java.util.List<POGOProtos.Rpc.GiftBoxDetailsProto> affofpddmmp_;
   /**
-   * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.MGGHNNFEHPA> getAffofpddmmpList() {
+  public java.util.List<POGOProtos.Rpc.GiftBoxDetailsProto> getAffofpddmmpList() {
     return affofpddmmp_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.MGGHNNFEHPAOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.GiftBoxDetailsProtoOrBuilder> 
       getAffofpddmmpOrBuilderList() {
     return affofpddmmp_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
    */
   @java.lang.Override
   public int getAffofpddmmpCount() {
     return affofpddmmp_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.MGGHNNFEHPA getAffofpddmmp(int index) {
+  public POGOProtos.Rpc.GiftBoxDetailsProto getAffofpddmmp(int index) {
     return affofpddmmp_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.MGGHNNFEHPAOrBuilder getAffofpddmmpOrBuilder(
+  public POGOProtos.Rpc.GiftBoxDetailsProtoOrBuilder getAffofpddmmpOrBuilder(
       int index) {
     return affofpddmmp_.get(index);
   }
@@ -778,31 +778,31 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap_;
+    private POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JPCFJPJCOIH, POGOProtos.Rpc.JPCFJPJCOIH.Builder, POGOProtos.Rpc.JPCFJPJCOIHOrBuilder> kgihoibciapBuilder_;
+        POGOProtos.Rpc.FriendshipLevelDataProto, POGOProtos.Rpc.FriendshipLevelDataProto.Builder, POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder> kgihoibciapBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
      * @return Whether the kgihoibciap field is set.
      */
     public boolean hasKgihoibciap() {
       return kgihoibciapBuilder_ != null || kgihoibciap_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
      * @return The kgihoibciap.
      */
-    public POGOProtos.Rpc.JPCFJPJCOIH getKgihoibciap() {
+    public POGOProtos.Rpc.FriendshipLevelDataProto getKgihoibciap() {
       if (kgihoibciapBuilder_ == null) {
-        return kgihoibciap_ == null ? POGOProtos.Rpc.JPCFJPJCOIH.getDefaultInstance() : kgihoibciap_;
+        return kgihoibciap_ == null ? POGOProtos.Rpc.FriendshipLevelDataProto.getDefaultInstance() : kgihoibciap_;
       } else {
         return kgihoibciapBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
      */
-    public Builder setKgihoibciap(POGOProtos.Rpc.JPCFJPJCOIH value) {
+    public Builder setKgihoibciap(POGOProtos.Rpc.FriendshipLevelDataProto value) {
       if (kgihoibciapBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -816,10 +816,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
      */
     public Builder setKgihoibciap(
-        POGOProtos.Rpc.JPCFJPJCOIH.Builder builderForValue) {
+        POGOProtos.Rpc.FriendshipLevelDataProto.Builder builderForValue) {
       if (kgihoibciapBuilder_ == null) {
         kgihoibciap_ = builderForValue.build();
         onChanged();
@@ -830,13 +830,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
      */
-    public Builder mergeKgihoibciap(POGOProtos.Rpc.JPCFJPJCOIH value) {
+    public Builder mergeKgihoibciap(POGOProtos.Rpc.FriendshipLevelDataProto value) {
       if (kgihoibciapBuilder_ == null) {
         if (kgihoibciap_ != null) {
           kgihoibciap_ =
-            POGOProtos.Rpc.JPCFJPJCOIH.newBuilder(kgihoibciap_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.FriendshipLevelDataProto.newBuilder(kgihoibciap_).mergeFrom(value).buildPartial();
         } else {
           kgihoibciap_ = value;
         }
@@ -848,7 +848,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
      */
     public Builder clearKgihoibciap() {
       if (kgihoibciapBuilder_ == null) {
@@ -862,33 +862,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
      */
-    public POGOProtos.Rpc.JPCFJPJCOIH.Builder getKgihoibciapBuilder() {
+    public POGOProtos.Rpc.FriendshipLevelDataProto.Builder getKgihoibciapBuilder() {
       
       onChanged();
       return getKgihoibciapFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
      */
-    public POGOProtos.Rpc.JPCFJPJCOIHOrBuilder getKgihoibciapOrBuilder() {
+    public POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder getKgihoibciapOrBuilder() {
       if (kgihoibciapBuilder_ != null) {
         return kgihoibciapBuilder_.getMessageOrBuilder();
       } else {
         return kgihoibciap_ == null ?
-            POGOProtos.Rpc.JPCFJPJCOIH.getDefaultInstance() : kgihoibciap_;
+            POGOProtos.Rpc.FriendshipLevelDataProto.getDefaultInstance() : kgihoibciap_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.JPCFJPJCOIH kgihoibciap = 1;</code>
+     * <code>.POGOProtos.Rpc.FriendshipLevelDataProto kgihoibciap = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.JPCFJPJCOIH, POGOProtos.Rpc.JPCFJPJCOIH.Builder, POGOProtos.Rpc.JPCFJPJCOIHOrBuilder> 
+        POGOProtos.Rpc.FriendshipLevelDataProto, POGOProtos.Rpc.FriendshipLevelDataProto.Builder, POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder> 
         getKgihoibciapFieldBuilder() {
       if (kgihoibciapBuilder_ == null) {
         kgihoibciapBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.JPCFJPJCOIH, POGOProtos.Rpc.JPCFJPJCOIH.Builder, POGOProtos.Rpc.JPCFJPJCOIHOrBuilder>(
+            POGOProtos.Rpc.FriendshipLevelDataProto, POGOProtos.Rpc.FriendshipLevelDataProto.Builder, POGOProtos.Rpc.FriendshipLevelDataProtoOrBuilder>(
                 getKgihoibciap(),
                 getParentForChildren(),
                 isClean());
@@ -897,22 +897,22 @@ private static final long serialVersionUID = 0L;
       return kgihoibciapBuilder_;
     }
 
-    private java.util.List<POGOProtos.Rpc.MGGHNNFEHPA> affofpddmmp_ =
+    private java.util.List<POGOProtos.Rpc.GiftBoxDetailsProto> affofpddmmp_ =
       java.util.Collections.emptyList();
     private void ensureAffofpddmmpIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        affofpddmmp_ = new java.util.ArrayList<POGOProtos.Rpc.MGGHNNFEHPA>(affofpddmmp_);
+        affofpddmmp_ = new java.util.ArrayList<POGOProtos.Rpc.GiftBoxDetailsProto>(affofpddmmp_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.MGGHNNFEHPA, POGOProtos.Rpc.MGGHNNFEHPA.Builder, POGOProtos.Rpc.MGGHNNFEHPAOrBuilder> affofpddmmpBuilder_;
+        POGOProtos.Rpc.GiftBoxDetailsProto, POGOProtos.Rpc.GiftBoxDetailsProto.Builder, POGOProtos.Rpc.GiftBoxDetailsProtoOrBuilder> affofpddmmpBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.MGGHNNFEHPA> getAffofpddmmpList() {
+    public java.util.List<POGOProtos.Rpc.GiftBoxDetailsProto> getAffofpddmmpList() {
       if (affofpddmmpBuilder_ == null) {
         return java.util.Collections.unmodifiableList(affofpddmmp_);
       } else {
@@ -920,7 +920,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
     public int getAffofpddmmpCount() {
       if (affofpddmmpBuilder_ == null) {
@@ -930,9 +930,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
-    public POGOProtos.Rpc.MGGHNNFEHPA getAffofpddmmp(int index) {
+    public POGOProtos.Rpc.GiftBoxDetailsProto getAffofpddmmp(int index) {
       if (affofpddmmpBuilder_ == null) {
         return affofpddmmp_.get(index);
       } else {
@@ -940,10 +940,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
     public Builder setAffofpddmmp(
-        int index, POGOProtos.Rpc.MGGHNNFEHPA value) {
+        int index, POGOProtos.Rpc.GiftBoxDetailsProto value) {
       if (affofpddmmpBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -957,10 +957,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
     public Builder setAffofpddmmp(
-        int index, POGOProtos.Rpc.MGGHNNFEHPA.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GiftBoxDetailsProto.Builder builderForValue) {
       if (affofpddmmpBuilder_ == null) {
         ensureAffofpddmmpIsMutable();
         affofpddmmp_.set(index, builderForValue.build());
@@ -971,9 +971,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
-    public Builder addAffofpddmmp(POGOProtos.Rpc.MGGHNNFEHPA value) {
+    public Builder addAffofpddmmp(POGOProtos.Rpc.GiftBoxDetailsProto value) {
       if (affofpddmmpBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -987,10 +987,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
     public Builder addAffofpddmmp(
-        int index, POGOProtos.Rpc.MGGHNNFEHPA value) {
+        int index, POGOProtos.Rpc.GiftBoxDetailsProto value) {
       if (affofpddmmpBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1004,10 +1004,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
     public Builder addAffofpddmmp(
-        POGOProtos.Rpc.MGGHNNFEHPA.Builder builderForValue) {
+        POGOProtos.Rpc.GiftBoxDetailsProto.Builder builderForValue) {
       if (affofpddmmpBuilder_ == null) {
         ensureAffofpddmmpIsMutable();
         affofpddmmp_.add(builderForValue.build());
@@ -1018,10 +1018,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
     public Builder addAffofpddmmp(
-        int index, POGOProtos.Rpc.MGGHNNFEHPA.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GiftBoxDetailsProto.Builder builderForValue) {
       if (affofpddmmpBuilder_ == null) {
         ensureAffofpddmmpIsMutable();
         affofpddmmp_.add(index, builderForValue.build());
@@ -1032,10 +1032,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
     public Builder addAllAffofpddmmp(
-        java.lang.Iterable<? extends POGOProtos.Rpc.MGGHNNFEHPA> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.GiftBoxDetailsProto> values) {
       if (affofpddmmpBuilder_ == null) {
         ensureAffofpddmmpIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1047,7 +1047,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
     public Builder clearAffofpddmmp() {
       if (affofpddmmpBuilder_ == null) {
@@ -1060,7 +1060,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
     public Builder removeAffofpddmmp(int index) {
       if (affofpddmmpBuilder_ == null) {
@@ -1073,16 +1073,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
-    public POGOProtos.Rpc.MGGHNNFEHPA.Builder getAffofpddmmpBuilder(
+    public POGOProtos.Rpc.GiftBoxDetailsProto.Builder getAffofpddmmpBuilder(
         int index) {
       return getAffofpddmmpFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
-    public POGOProtos.Rpc.MGGHNNFEHPAOrBuilder getAffofpddmmpOrBuilder(
+    public POGOProtos.Rpc.GiftBoxDetailsProtoOrBuilder getAffofpddmmpOrBuilder(
         int index) {
       if (affofpddmmpBuilder_ == null) {
         return affofpddmmp_.get(index);  } else {
@@ -1090,9 +1090,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.MGGHNNFEHPAOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.GiftBoxDetailsProtoOrBuilder> 
          getAffofpddmmpOrBuilderList() {
       if (affofpddmmpBuilder_ != null) {
         return affofpddmmpBuilder_.getMessageOrBuilderList();
@@ -1101,33 +1101,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
-    public POGOProtos.Rpc.MGGHNNFEHPA.Builder addAffofpddmmpBuilder() {
+    public POGOProtos.Rpc.GiftBoxDetailsProto.Builder addAffofpddmmpBuilder() {
       return getAffofpddmmpFieldBuilder().addBuilder(
-          POGOProtos.Rpc.MGGHNNFEHPA.getDefaultInstance());
+          POGOProtos.Rpc.GiftBoxDetailsProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
-    public POGOProtos.Rpc.MGGHNNFEHPA.Builder addAffofpddmmpBuilder(
+    public POGOProtos.Rpc.GiftBoxDetailsProto.Builder addAffofpddmmpBuilder(
         int index) {
       return getAffofpddmmpFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.MGGHNNFEHPA.getDefaultInstance());
+          index, POGOProtos.Rpc.GiftBoxDetailsProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MGGHNNFEHPA affofpddmmp = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxDetailsProto affofpddmmp = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.MGGHNNFEHPA.Builder> 
+    public java.util.List<POGOProtos.Rpc.GiftBoxDetailsProto.Builder> 
          getAffofpddmmpBuilderList() {
       return getAffofpddmmpFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.MGGHNNFEHPA, POGOProtos.Rpc.MGGHNNFEHPA.Builder, POGOProtos.Rpc.MGGHNNFEHPAOrBuilder> 
+        POGOProtos.Rpc.GiftBoxDetailsProto, POGOProtos.Rpc.GiftBoxDetailsProto.Builder, POGOProtos.Rpc.GiftBoxDetailsProtoOrBuilder> 
         getAffofpddmmpFieldBuilder() {
       if (affofpddmmpBuilder_ == null) {
         affofpddmmpBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.MGGHNNFEHPA, POGOProtos.Rpc.MGGHNNFEHPA.Builder, POGOProtos.Rpc.MGGHNNFEHPAOrBuilder>(
+            POGOProtos.Rpc.GiftBoxDetailsProto, POGOProtos.Rpc.GiftBoxDetailsProto.Builder, POGOProtos.Rpc.GiftBoxDetailsProtoOrBuilder>(
                 affofpddmmp_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

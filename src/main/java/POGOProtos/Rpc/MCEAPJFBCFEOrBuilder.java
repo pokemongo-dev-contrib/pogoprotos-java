@@ -189,26 +189,26 @@ public interface MCEAPJFBCFEOrBuilder extends
   POGOProtos.Rpc.PLNICJBIDMNOrBuilder getOmhbpdpclojOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
    * @return Whether the nchennmhggm field is set.
    */
   boolean hasNchennmhggm();
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
    * @return The nchennmhggm.
    */
-  POGOProtos.Rpc.NLOCPHGFFNM getNchennmhggm();
+  POGOProtos.Rpc.BuddyGiftProto getNchennmhggm();
   /**
-   * <code>.POGOProtos.Rpc.NLOCPHGFFNM nchennmhggm = 68;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 68;</code>
    */
-  POGOProtos.Rpc.NLOCPHGFFNMOrBuilder getNchennmhggmOrBuilder();
+  POGOProtos.Rpc.BuddyGiftProtoOrBuilder getNchennmhggmOrBuilder();
 
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
    */
   int getOegphmcaenbCount();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
    */
   boolean containsOegphmcaenb(
       int key);
@@ -216,33 +216,33 @@ public interface MCEAPJFBCFEOrBuilder extends
    * Use {@link #getOegphmcaenbMap()} instead.
    */
   @java.lang.Deprecated
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
   getOegphmcaenb();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
    */
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.PDNJNJNJKAG>
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
   getOegphmcaenbMap();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
    */
 
-  POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrDefault(
+  POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrDefault(
       int key,
-      POGOProtos.Rpc.PDNJNJNJKAG defaultValue);
+      POGOProtos.Rpc.SouvenirProto defaultValue);
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.PDNJNJNJKAG&gt; oegphmcaenb = 69;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 69;</code>
    */
 
-  POGOProtos.Rpc.PDNJNJNJKAG getOegphmcaenbOrThrow(
+  POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrThrow(
       int key);
 
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
    */
   int getBmlaijcmoekCount();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
    */
   boolean containsBmlaijcmoek(
       int key);
@@ -250,33 +250,33 @@ public interface MCEAPJFBCFEOrBuilder extends
    * Use {@link #getBmlaijcmoekMap()} instead.
    */
   @java.lang.Deprecated
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
   getBmlaijcmoek();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
    */
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
   getBmlaijcmoekMap();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
    */
 
-  POGOProtos.Rpc.GNJGCPJMODK getBmlaijcmoekOrDefault(
+  POGOProtos.Rpc.DailyCounterProto getBmlaijcmoekOrDefault(
       int key,
-      POGOProtos.Rpc.GNJGCPJMODK defaultValue);
+      POGOProtos.Rpc.DailyCounterProto defaultValue);
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; bmlaijcmoek = 70;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; bmlaijcmoek = 70;</code>
    */
 
-  POGOProtos.Rpc.GNJGCPJMODK getBmlaijcmoekOrThrow(
+  POGOProtos.Rpc.DailyCounterProto getBmlaijcmoekOrThrow(
       int key);
 
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
    */
   int getLhjekkeejhaCount();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
    */
   boolean containsLhjekkeejha(
       int key);
@@ -284,25 +284,25 @@ public interface MCEAPJFBCFEOrBuilder extends
    * Use {@link #getLhjekkeejhaMap()} instead.
    */
   @java.lang.Deprecated
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
   getLhjekkeejha();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
    */
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.GNJGCPJMODK>
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.DailyCounterProto>
   getLhjekkeejhaMap();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
    */
 
-  POGOProtos.Rpc.GNJGCPJMODK getLhjekkeejhaOrDefault(
+  POGOProtos.Rpc.DailyCounterProto getLhjekkeejhaOrDefault(
       int key,
-      POGOProtos.Rpc.GNJGCPJMODK defaultValue);
+      POGOProtos.Rpc.DailyCounterProto defaultValue);
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.GNJGCPJMODK&gt; lhjekkeejha = 71;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.DailyCounterProto&gt; lhjekkeejha = 71;</code>
    */
 
-  POGOProtos.Rpc.GNJGCPJMODK getLhjekkeejhaOrThrow(
+  POGOProtos.Rpc.DailyCounterProto getLhjekkeejhaOrThrow(
       int key);
 
   /**

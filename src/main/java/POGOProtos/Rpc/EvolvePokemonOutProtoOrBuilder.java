@@ -19,23 +19,29 @@ public interface EvolvePokemonOutProtoOrBuilder extends
   POGOProtos.Rpc.EvolvePokemonOutProto.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
-   * @return Whether the evolvedPokemon field is set.
+   * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
+   * @return Whether the jkaaniibbma field is set.
    */
-  boolean hasEvolvedPokemon();
+  boolean hasJkaaniibbma();
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
-   * @return The evolvedPokemon.
+   * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
+   * @return The jkaaniibbma.
    */
-  POGOProtos.Rpc.PokemonProto getEvolvedPokemon();
+  POGOProtos.Rpc.PokemonProto getJkaaniibbma();
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
+   * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
    */
-  POGOProtos.Rpc.PokemonProtoOrBuilder getEvolvedPokemonOrBuilder();
+  POGOProtos.Rpc.PokemonProtoOrBuilder getJkaaniibbmaOrBuilder();
 
   /**
-   * <code>int32 exp_awarded = 3;</code>
-   * @return The expAwarded.
+   * <code>int32 naliljbfokd = 3;</code>
+   * @return The naliljbfokd.
    */
-  int getExpAwarded();
+  int getNaliljbfokd();
+
+  /**
+   * <code>int32 emmphdgkoej = 4;</code>
+   * @return The emmphdgkoej.
+   */
+  int getEmmphdgkoej();
 }

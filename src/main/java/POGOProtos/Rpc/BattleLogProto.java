@@ -75,11 +75,11 @@ private static final long serialVersionUID = 0L;
           }
           case 34: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              ncilckfpfoe_ = new java.util.ArrayList<POGOProtos.Rpc.CPBMIJKOPPM>();
+              ncilckfpfoe_ = new java.util.ArrayList<POGOProtos.Rpc.BattleActionProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             ncilckfpfoe_.add(
-                input.readMessage(POGOProtos.Rpc.CPBMIJKOPPM.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.BattleActionProto.parser(), extensionRegistry));
             break;
           }
           case 40: {
@@ -132,9 +132,9 @@ private static final long serialVersionUID = 0L;
    * ref: IODNOGKPMFE/DEBDGIAIICM/APFDMENHKDI
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.BattleLogProto.APFDMENHKDI}
+   * Protobuf enum {@code POGOProtos.Rpc.BattleLogProto.BattleType}
    */
-  public enum APFDMENHKDI
+  public enum BattleType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>BATTLE_TYPE_UNSET = 0;</code>
@@ -187,7 +187,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static APFDMENHKDI valueOf(int value) {
+    public static BattleType valueOf(int value) {
       return forNumber(value);
     }
 
@@ -195,7 +195,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static APFDMENHKDI forNumber(int value) {
+    public static BattleType forNumber(int value) {
       switch (value) {
         case 0: return BATTLE_TYPE_UNSET;
         case 1: return NORMAL;
@@ -205,15 +205,15 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<APFDMENHKDI>
+    public static com.google.protobuf.Internal.EnumLiteMap<BattleType>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        APFDMENHKDI> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<APFDMENHKDI>() {
-            public APFDMENHKDI findValueByNumber(int number) {
-              return APFDMENHKDI.forNumber(number);
+        BattleType> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<BattleType>() {
+            public BattleType findValueByNumber(int number) {
+              return BattleType.forNumber(number);
             }
           };
 
@@ -234,9 +234,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.BattleLogProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final APFDMENHKDI[] VALUES = values();
+    private static final BattleType[] VALUES = values();
 
-    public static APFDMENHKDI valueOf(
+    public static BattleType valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -250,11 +250,11 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private APFDMENHKDI(int value) {
+    private BattleType(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.BattleLogProto.APFDMENHKDI)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.BattleLogProto.BattleType)
   }
 
   /**
@@ -262,9 +262,9 @@ private static final long serialVersionUID = 0L;
    * ref: IODNOGKPMFE/DEBDGIAIICM/IEDCHPHFDFA
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA}
+   * Protobuf enum {@code POGOProtos.Rpc.BattleLogProto.State}
    */
-  public enum IEDCHPHFDFA
+  public enum State
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>STATE_UNSET = 0;</code>
@@ -325,7 +325,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static IEDCHPHFDFA valueOf(int value) {
+    public static State valueOf(int value) {
       return forNumber(value);
     }
 
@@ -333,7 +333,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static IEDCHPHFDFA forNumber(int value) {
+    public static State forNumber(int value) {
       switch (value) {
         case 0: return STATE_UNSET;
         case 1: return ACTIVE;
@@ -344,15 +344,15 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<IEDCHPHFDFA>
+    public static com.google.protobuf.Internal.EnumLiteMap<State>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        IEDCHPHFDFA> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<IEDCHPHFDFA>() {
-            public IEDCHPHFDFA findValueByNumber(int number) {
-              return IEDCHPHFDFA.forNumber(number);
+        State> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<State>() {
+            public State findValueByNumber(int number) {
+              return State.forNumber(number);
             }
           };
 
@@ -373,9 +373,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.BattleLogProto.getDescriptor().getEnumTypes().get(1);
     }
 
-    private static final IEDCHPHFDFA[] VALUES = values();
+    private static final State[] VALUES = values();
 
-    public static IEDCHPHFDFA valueOf(
+    public static State valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -389,49 +389,49 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private IEDCHPHFDFA(int value) {
+    private State(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.BattleLogProto.State)
   }
 
   public static final int JLNIJHMEMNJ_FIELD_NUMBER = 1;
   private int jlnijhmemnj_;
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA jlnijhmemnj = 1;</code>
+   * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
    * @return The enum numeric value on the wire for jlnijhmemnj.
    */
   @java.lang.Override public int getJlnijhmemnjValue() {
     return jlnijhmemnj_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA jlnijhmemnj = 1;</code>
+   * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
    * @return The jlnijhmemnj.
    */
-  @java.lang.Override public POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA getJlnijhmemnj() {
+  @java.lang.Override public POGOProtos.Rpc.BattleLogProto.State getJlnijhmemnj() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA result = POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA.valueOf(jlnijhmemnj_);
-    return result == null ? POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA.UNRECOGNIZED : result;
+    POGOProtos.Rpc.BattleLogProto.State result = POGOProtos.Rpc.BattleLogProto.State.valueOf(jlnijhmemnj_);
+    return result == null ? POGOProtos.Rpc.BattleLogProto.State.UNRECOGNIZED : result;
   }
 
   public static final int DBECOGECHDA_FIELD_NUMBER = 2;
   private int dbecogechda_;
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.APFDMENHKDI dbecogechda = 2;</code>
+   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
    * @return The enum numeric value on the wire for dbecogechda.
    */
   @java.lang.Override public int getDbecogechdaValue() {
     return dbecogechda_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.APFDMENHKDI dbecogechda = 2;</code>
+   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
    * @return The dbecogechda.
    */
-  @java.lang.Override public POGOProtos.Rpc.BattleLogProto.APFDMENHKDI getDbecogechda() {
+  @java.lang.Override public POGOProtos.Rpc.BattleLogProto.BattleType getDbecogechda() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.BattleLogProto.APFDMENHKDI result = POGOProtos.Rpc.BattleLogProto.APFDMENHKDI.valueOf(dbecogechda_);
-    return result == null ? POGOProtos.Rpc.BattleLogProto.APFDMENHKDI.UNRECOGNIZED : result;
+    POGOProtos.Rpc.BattleLogProto.BattleType result = POGOProtos.Rpc.BattleLogProto.BattleType.valueOf(dbecogechda_);
+    return result == null ? POGOProtos.Rpc.BattleLogProto.BattleType.UNRECOGNIZED : result;
   }
 
   public static final int DIKAIFHAIGB_FIELD_NUMBER = 3;
@@ -446,41 +446,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int NCILCKFPFOE_FIELD_NUMBER = 4;
-  private java.util.List<POGOProtos.Rpc.CPBMIJKOPPM> ncilckfpfoe_;
+  private java.util.List<POGOProtos.Rpc.BattleActionProto> ncilckfpfoe_;
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.CPBMIJKOPPM> getNcilckfpfoeList() {
+  public java.util.List<POGOProtos.Rpc.BattleActionProto> getNcilckfpfoeList() {
     return ncilckfpfoe_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.CPBMIJKOPPMOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.BattleActionProtoOrBuilder> 
       getNcilckfpfoeOrBuilderList() {
     return ncilckfpfoe_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
    */
   @java.lang.Override
   public int getNcilckfpfoeCount() {
     return ncilckfpfoe_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CPBMIJKOPPM getNcilckfpfoe(int index) {
+  public POGOProtos.Rpc.BattleActionProto getNcilckfpfoe(int index) {
     return ncilckfpfoe_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CPBMIJKOPPMOrBuilder getNcilckfpfoeOrBuilder(
+  public POGOProtos.Rpc.BattleActionProtoOrBuilder getNcilckfpfoeOrBuilder(
       int index) {
     return ncilckfpfoe_.get(index);
   }
@@ -521,10 +521,10 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (jlnijhmemnj_ != POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA.STATE_UNSET.getNumber()) {
+    if (jlnijhmemnj_ != POGOProtos.Rpc.BattleLogProto.State.STATE_UNSET.getNumber()) {
       output.writeEnum(1, jlnijhmemnj_);
     }
-    if (dbecogechda_ != POGOProtos.Rpc.BattleLogProto.APFDMENHKDI.BATTLE_TYPE_UNSET.getNumber()) {
+    if (dbecogechda_ != POGOProtos.Rpc.BattleLogProto.BattleType.BATTLE_TYPE_UNSET.getNumber()) {
       output.writeEnum(2, dbecogechda_);
     }
     if (dikaifhaigb_ != 0L) {
@@ -548,11 +548,11 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (jlnijhmemnj_ != POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA.STATE_UNSET.getNumber()) {
+    if (jlnijhmemnj_ != POGOProtos.Rpc.BattleLogProto.State.STATE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, jlnijhmemnj_);
     }
-    if (dbecogechda_ != POGOProtos.Rpc.BattleLogProto.APFDMENHKDI.BATTLE_TYPE_UNSET.getNumber()) {
+    if (dbecogechda_ != POGOProtos.Rpc.BattleLogProto.BattleType.BATTLE_TYPE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, dbecogechda_);
     }
@@ -941,14 +941,14 @@ private static final long serialVersionUID = 0L;
 
     private int jlnijhmemnj_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA jlnijhmemnj = 1;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
      * @return The enum numeric value on the wire for jlnijhmemnj.
      */
     @java.lang.Override public int getJlnijhmemnjValue() {
       return jlnijhmemnj_;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA jlnijhmemnj = 1;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
      * @param value The enum numeric value on the wire for jlnijhmemnj to set.
      * @return This builder for chaining.
      */
@@ -959,21 +959,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA jlnijhmemnj = 1;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
      * @return The jlnijhmemnj.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA getJlnijhmemnj() {
+    public POGOProtos.Rpc.BattleLogProto.State getJlnijhmemnj() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA result = POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA.valueOf(jlnijhmemnj_);
-      return result == null ? POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA.UNRECOGNIZED : result;
+      POGOProtos.Rpc.BattleLogProto.State result = POGOProtos.Rpc.BattleLogProto.State.valueOf(jlnijhmemnj_);
+      return result == null ? POGOProtos.Rpc.BattleLogProto.State.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA jlnijhmemnj = 1;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
      * @param value The jlnijhmemnj to set.
      * @return This builder for chaining.
      */
-    public Builder setJlnijhmemnj(POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA value) {
+    public Builder setJlnijhmemnj(POGOProtos.Rpc.BattleLogProto.State value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -983,7 +983,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.IEDCHPHFDFA jlnijhmemnj = 1;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
      * @return This builder for chaining.
      */
     public Builder clearJlnijhmemnj() {
@@ -995,14 +995,14 @@ private static final long serialVersionUID = 0L;
 
     private int dbecogechda_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.APFDMENHKDI dbecogechda = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
      * @return The enum numeric value on the wire for dbecogechda.
      */
     @java.lang.Override public int getDbecogechdaValue() {
       return dbecogechda_;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.APFDMENHKDI dbecogechda = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
      * @param value The enum numeric value on the wire for dbecogechda to set.
      * @return This builder for chaining.
      */
@@ -1013,21 +1013,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.APFDMENHKDI dbecogechda = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
      * @return The dbecogechda.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BattleLogProto.APFDMENHKDI getDbecogechda() {
+    public POGOProtos.Rpc.BattleLogProto.BattleType getDbecogechda() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.BattleLogProto.APFDMENHKDI result = POGOProtos.Rpc.BattleLogProto.APFDMENHKDI.valueOf(dbecogechda_);
-      return result == null ? POGOProtos.Rpc.BattleLogProto.APFDMENHKDI.UNRECOGNIZED : result;
+      POGOProtos.Rpc.BattleLogProto.BattleType result = POGOProtos.Rpc.BattleLogProto.BattleType.valueOf(dbecogechda_);
+      return result == null ? POGOProtos.Rpc.BattleLogProto.BattleType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.APFDMENHKDI dbecogechda = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
      * @param value The dbecogechda to set.
      * @return This builder for chaining.
      */
-    public Builder setDbecogechda(POGOProtos.Rpc.BattleLogProto.APFDMENHKDI value) {
+    public Builder setDbecogechda(POGOProtos.Rpc.BattleLogProto.BattleType value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -1037,7 +1037,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.APFDMENHKDI dbecogechda = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearDbecogechda() {
@@ -1078,22 +1078,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.CPBMIJKOPPM> ncilckfpfoe_ =
+    private java.util.List<POGOProtos.Rpc.BattleActionProto> ncilckfpfoe_ =
       java.util.Collections.emptyList();
     private void ensureNcilckfpfoeIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        ncilckfpfoe_ = new java.util.ArrayList<POGOProtos.Rpc.CPBMIJKOPPM>(ncilckfpfoe_);
+        ncilckfpfoe_ = new java.util.ArrayList<POGOProtos.Rpc.BattleActionProto>(ncilckfpfoe_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.CPBMIJKOPPM, POGOProtos.Rpc.CPBMIJKOPPM.Builder, POGOProtos.Rpc.CPBMIJKOPPMOrBuilder> ncilckfpfoeBuilder_;
+        POGOProtos.Rpc.BattleActionProto, POGOProtos.Rpc.BattleActionProto.Builder, POGOProtos.Rpc.BattleActionProtoOrBuilder> ncilckfpfoeBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
-    public java.util.List<POGOProtos.Rpc.CPBMIJKOPPM> getNcilckfpfoeList() {
+    public java.util.List<POGOProtos.Rpc.BattleActionProto> getNcilckfpfoeList() {
       if (ncilckfpfoeBuilder_ == null) {
         return java.util.Collections.unmodifiableList(ncilckfpfoe_);
       } else {
@@ -1101,7 +1101,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
     public int getNcilckfpfoeCount() {
       if (ncilckfpfoeBuilder_ == null) {
@@ -1111,9 +1111,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
-    public POGOProtos.Rpc.CPBMIJKOPPM getNcilckfpfoe(int index) {
+    public POGOProtos.Rpc.BattleActionProto getNcilckfpfoe(int index) {
       if (ncilckfpfoeBuilder_ == null) {
         return ncilckfpfoe_.get(index);
       } else {
@@ -1121,10 +1121,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
     public Builder setNcilckfpfoe(
-        int index, POGOProtos.Rpc.CPBMIJKOPPM value) {
+        int index, POGOProtos.Rpc.BattleActionProto value) {
       if (ncilckfpfoeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1138,10 +1138,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
     public Builder setNcilckfpfoe(
-        int index, POGOProtos.Rpc.CPBMIJKOPPM.Builder builderForValue) {
+        int index, POGOProtos.Rpc.BattleActionProto.Builder builderForValue) {
       if (ncilckfpfoeBuilder_ == null) {
         ensureNcilckfpfoeIsMutable();
         ncilckfpfoe_.set(index, builderForValue.build());
@@ -1152,9 +1152,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
-    public Builder addNcilckfpfoe(POGOProtos.Rpc.CPBMIJKOPPM value) {
+    public Builder addNcilckfpfoe(POGOProtos.Rpc.BattleActionProto value) {
       if (ncilckfpfoeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1168,10 +1168,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
     public Builder addNcilckfpfoe(
-        int index, POGOProtos.Rpc.CPBMIJKOPPM value) {
+        int index, POGOProtos.Rpc.BattleActionProto value) {
       if (ncilckfpfoeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1185,10 +1185,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
     public Builder addNcilckfpfoe(
-        POGOProtos.Rpc.CPBMIJKOPPM.Builder builderForValue) {
+        POGOProtos.Rpc.BattleActionProto.Builder builderForValue) {
       if (ncilckfpfoeBuilder_ == null) {
         ensureNcilckfpfoeIsMutable();
         ncilckfpfoe_.add(builderForValue.build());
@@ -1199,10 +1199,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
     public Builder addNcilckfpfoe(
-        int index, POGOProtos.Rpc.CPBMIJKOPPM.Builder builderForValue) {
+        int index, POGOProtos.Rpc.BattleActionProto.Builder builderForValue) {
       if (ncilckfpfoeBuilder_ == null) {
         ensureNcilckfpfoeIsMutable();
         ncilckfpfoe_.add(index, builderForValue.build());
@@ -1213,10 +1213,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
     public Builder addAllNcilckfpfoe(
-        java.lang.Iterable<? extends POGOProtos.Rpc.CPBMIJKOPPM> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.BattleActionProto> values) {
       if (ncilckfpfoeBuilder_ == null) {
         ensureNcilckfpfoeIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1228,7 +1228,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
     public Builder clearNcilckfpfoe() {
       if (ncilckfpfoeBuilder_ == null) {
@@ -1241,7 +1241,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
     public Builder removeNcilckfpfoe(int index) {
       if (ncilckfpfoeBuilder_ == null) {
@@ -1254,16 +1254,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
-    public POGOProtos.Rpc.CPBMIJKOPPM.Builder getNcilckfpfoeBuilder(
+    public POGOProtos.Rpc.BattleActionProto.Builder getNcilckfpfoeBuilder(
         int index) {
       return getNcilckfpfoeFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
-    public POGOProtos.Rpc.CPBMIJKOPPMOrBuilder getNcilckfpfoeOrBuilder(
+    public POGOProtos.Rpc.BattleActionProtoOrBuilder getNcilckfpfoeOrBuilder(
         int index) {
       if (ncilckfpfoeBuilder_ == null) {
         return ncilckfpfoe_.get(index);  } else {
@@ -1271,9 +1271,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.CPBMIJKOPPMOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.BattleActionProtoOrBuilder> 
          getNcilckfpfoeOrBuilderList() {
       if (ncilckfpfoeBuilder_ != null) {
         return ncilckfpfoeBuilder_.getMessageOrBuilderList();
@@ -1282,33 +1282,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
-    public POGOProtos.Rpc.CPBMIJKOPPM.Builder addNcilckfpfoeBuilder() {
+    public POGOProtos.Rpc.BattleActionProto.Builder addNcilckfpfoeBuilder() {
       return getNcilckfpfoeFieldBuilder().addBuilder(
-          POGOProtos.Rpc.CPBMIJKOPPM.getDefaultInstance());
+          POGOProtos.Rpc.BattleActionProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
-    public POGOProtos.Rpc.CPBMIJKOPPM.Builder addNcilckfpfoeBuilder(
+    public POGOProtos.Rpc.BattleActionProto.Builder addNcilckfpfoeBuilder(
         int index) {
       return getNcilckfpfoeFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.CPBMIJKOPPM.getDefaultInstance());
+          index, POGOProtos.Rpc.BattleActionProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
      */
-    public java.util.List<POGOProtos.Rpc.CPBMIJKOPPM.Builder> 
+    public java.util.List<POGOProtos.Rpc.BattleActionProto.Builder> 
          getNcilckfpfoeBuilderList() {
       return getNcilckfpfoeFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.CPBMIJKOPPM, POGOProtos.Rpc.CPBMIJKOPPM.Builder, POGOProtos.Rpc.CPBMIJKOPPMOrBuilder> 
+        POGOProtos.Rpc.BattleActionProto, POGOProtos.Rpc.BattleActionProto.Builder, POGOProtos.Rpc.BattleActionProtoOrBuilder> 
         getNcilckfpfoeFieldBuilder() {
       if (ncilckfpfoeBuilder_ == null) {
         ncilckfpfoeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.CPBMIJKOPPM, POGOProtos.Rpc.CPBMIJKOPPM.Builder, POGOProtos.Rpc.CPBMIJKOPPMOrBuilder>(
+            POGOProtos.Rpc.BattleActionProto, POGOProtos.Rpc.BattleActionProto.Builder, POGOProtos.Rpc.BattleActionProtoOrBuilder>(
                 ncilckfpfoe_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

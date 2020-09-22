@@ -8,26 +8,26 @@ public interface AppliedItemsProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.LHJCJEKBKMK ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
    */
-  java.util.List<POGOProtos.Rpc.LHJCJEKBKMK> 
+  java.util.List<POGOProtos.Rpc.AppliedItemProto> 
       getEkpohjfklalList();
   /**
-   * <code>repeated .POGOProtos.Rpc.LHJCJEKBKMK ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
    */
-  POGOProtos.Rpc.LHJCJEKBKMK getEkpohjfklal(int index);
+  POGOProtos.Rpc.AppliedItemProto getEkpohjfklal(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.LHJCJEKBKMK ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
    */
   int getEkpohjfklalCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.LHJCJEKBKMK ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.LHJCJEKBKMKOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.AppliedItemProtoOrBuilder> 
       getEkpohjfklalOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.LHJCJEKBKMK ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
    */
-  POGOProtos.Rpc.LHJCJEKBKMKOrBuilder getEkpohjfklalOrBuilder(
+  POGOProtos.Rpc.AppliedItemProtoOrBuilder getEkpohjfklalOrBuilder(
       int index);
 }

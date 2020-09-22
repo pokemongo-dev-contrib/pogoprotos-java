@@ -60,11 +60,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.OAPMJMAEIOH.Builder subBuilder = null;
+            POGOProtos.Rpc.TradingProto.Builder subBuilder = null;
             if (jikkdljggho_ != null) {
               subBuilder = jikkdljggho_.toBuilder();
             }
-            jikkdljggho_ = input.readMessage(POGOProtos.Rpc.OAPMJMAEIOH.parser(), extensionRegistry);
+            jikkdljggho_ = input.readMessage(POGOProtos.Rpc.TradingProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(jikkdljggho_);
               jikkdljggho_ = subBuilder.buildPartial();
@@ -281,9 +281,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int JIKKDLJGGHO_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho_;
+  private POGOProtos.Rpc.TradingProto jikkdljggho_;
   /**
-   * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
    * @return Whether the jikkdljggho field is set.
    */
   @java.lang.Override
@@ -291,18 +291,18 @@ private static final long serialVersionUID = 0L;
     return jikkdljggho_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
    * @return The jikkdljggho.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.OAPMJMAEIOH getJikkdljggho() {
-    return jikkdljggho_ == null ? POGOProtos.Rpc.OAPMJMAEIOH.getDefaultInstance() : jikkdljggho_;
+  public POGOProtos.Rpc.TradingProto getJikkdljggho() {
+    return jikkdljggho_ == null ? POGOProtos.Rpc.TradingProto.getDefaultInstance() : jikkdljggho_;
   }
   /**
-   * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.OAPMJMAEIOHOrBuilder getJikkdljgghoOrBuilder() {
+  public POGOProtos.Rpc.TradingProtoOrBuilder getJikkdljgghoOrBuilder() {
     return getJikkdljggho();
   }
 
@@ -695,31 +695,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho_;
+    private POGOProtos.Rpc.TradingProto jikkdljggho_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.OAPMJMAEIOH, POGOProtos.Rpc.OAPMJMAEIOH.Builder, POGOProtos.Rpc.OAPMJMAEIOHOrBuilder> jikkdljgghoBuilder_;
+        POGOProtos.Rpc.TradingProto, POGOProtos.Rpc.TradingProto.Builder, POGOProtos.Rpc.TradingProtoOrBuilder> jikkdljgghoBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
      * @return Whether the jikkdljggho field is set.
      */
     public boolean hasJikkdljggho() {
       return jikkdljgghoBuilder_ != null || jikkdljggho_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
      * @return The jikkdljggho.
      */
-    public POGOProtos.Rpc.OAPMJMAEIOH getJikkdljggho() {
+    public POGOProtos.Rpc.TradingProto getJikkdljggho() {
       if (jikkdljgghoBuilder_ == null) {
-        return jikkdljggho_ == null ? POGOProtos.Rpc.OAPMJMAEIOH.getDefaultInstance() : jikkdljggho_;
+        return jikkdljggho_ == null ? POGOProtos.Rpc.TradingProto.getDefaultInstance() : jikkdljggho_;
       } else {
         return jikkdljgghoBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
      */
-    public Builder setJikkdljggho(POGOProtos.Rpc.OAPMJMAEIOH value) {
+    public Builder setJikkdljggho(POGOProtos.Rpc.TradingProto value) {
       if (jikkdljgghoBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -733,10 +733,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
      */
     public Builder setJikkdljggho(
-        POGOProtos.Rpc.OAPMJMAEIOH.Builder builderForValue) {
+        POGOProtos.Rpc.TradingProto.Builder builderForValue) {
       if (jikkdljgghoBuilder_ == null) {
         jikkdljggho_ = builderForValue.build();
         onChanged();
@@ -747,13 +747,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
      */
-    public Builder mergeJikkdljggho(POGOProtos.Rpc.OAPMJMAEIOH value) {
+    public Builder mergeJikkdljggho(POGOProtos.Rpc.TradingProto value) {
       if (jikkdljgghoBuilder_ == null) {
         if (jikkdljggho_ != null) {
           jikkdljggho_ =
-            POGOProtos.Rpc.OAPMJMAEIOH.newBuilder(jikkdljggho_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.TradingProto.newBuilder(jikkdljggho_).mergeFrom(value).buildPartial();
         } else {
           jikkdljggho_ = value;
         }
@@ -765,7 +765,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
      */
     public Builder clearJikkdljggho() {
       if (jikkdljgghoBuilder_ == null) {
@@ -779,33 +779,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
      */
-    public POGOProtos.Rpc.OAPMJMAEIOH.Builder getJikkdljgghoBuilder() {
+    public POGOProtos.Rpc.TradingProto.Builder getJikkdljgghoBuilder() {
       
       onChanged();
       return getJikkdljgghoFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
      */
-    public POGOProtos.Rpc.OAPMJMAEIOHOrBuilder getJikkdljgghoOrBuilder() {
+    public POGOProtos.Rpc.TradingProtoOrBuilder getJikkdljgghoOrBuilder() {
       if (jikkdljgghoBuilder_ != null) {
         return jikkdljgghoBuilder_.getMessageOrBuilder();
       } else {
         return jikkdljggho_ == null ?
-            POGOProtos.Rpc.OAPMJMAEIOH.getDefaultInstance() : jikkdljggho_;
+            POGOProtos.Rpc.TradingProto.getDefaultInstance() : jikkdljggho_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.OAPMJMAEIOH jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.OAPMJMAEIOH, POGOProtos.Rpc.OAPMJMAEIOH.Builder, POGOProtos.Rpc.OAPMJMAEIOHOrBuilder> 
+        POGOProtos.Rpc.TradingProto, POGOProtos.Rpc.TradingProto.Builder, POGOProtos.Rpc.TradingProtoOrBuilder> 
         getJikkdljgghoFieldBuilder() {
       if (jikkdljgghoBuilder_ == null) {
         jikkdljgghoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.OAPMJMAEIOH, POGOProtos.Rpc.OAPMJMAEIOH.Builder, POGOProtos.Rpc.OAPMJMAEIOHOrBuilder>(
+            POGOProtos.Rpc.TradingProto, POGOProtos.Rpc.TradingProto.Builder, POGOProtos.Rpc.TradingProtoOrBuilder>(
                 getJikkdljggho(),
                 getParentForChildren(),
                 isClean());

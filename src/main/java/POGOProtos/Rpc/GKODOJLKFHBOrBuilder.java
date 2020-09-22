@@ -38,19 +38,19 @@ public interface GKODOJLKFHBOrBuilder extends
   POGOProtos.Rpc.MOOKPLNJKFAOrBuilder getFortSearchOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
    * @return Whether the buddyPokemon field is set.
    */
   boolean hasBuddyPokemon();
   /**
-   * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
    * @return The buddyPokemon.
    */
-  POGOProtos.Rpc.EFEEMEDLPGC getBuddyPokemon();
+  POGOProtos.Rpc.BuddyPokemonLogEntry getBuddyPokemon();
   /**
-   * <code>.POGOProtos.Rpc.EFEEMEDLPGC buddy_pokemon = 5;</code>
+   * <code>.POGOProtos.Rpc.BuddyPokemonLogEntry buddy_pokemon = 5;</code>
    */
-  POGOProtos.Rpc.EFEEMEDLPGCOrBuilder getBuddyPokemonOrBuilder();
+  POGOProtos.Rpc.BuddyPokemonLogEntryOrBuilder getBuddyPokemonOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.JPFMNNIBKLH raid_rewards = 6;</code>
@@ -113,19 +113,19 @@ public interface GKODOJLKFHBOrBuilder extends
   POGOProtos.Rpc.OABFJHBECOOOrBuilder getCompleteQuestStampCardOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
    * @return Whether the completeQuestPokemonEncounter field is set.
    */
   boolean hasCompleteQuestPokemonEncounter();
   /**
-   * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
    * @return The completeQuestPokemonEncounter.
    */
-  POGOProtos.Rpc.GFKPHHHJBCN getCompleteQuestPokemonEncounter();
+  POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry getCompleteQuestPokemonEncounter();
   /**
-   * <code>.POGOProtos.Rpc.GFKPHHHJBCN complete_quest_pokemon_encounter = 10;</code>
+   * <code>.POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntry complete_quest_pokemon_encounter = 10;</code>
    */
-  POGOProtos.Rpc.GFKPHHHJBCNOrBuilder getCompleteQuestPokemonEncounterOrBuilder();
+  POGOProtos.Rpc.CompleteQuestPokemonEncounterLogEntryOrBuilder getCompleteQuestPokemonEncounterOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.JNHBKAEPKLN beluga_transfer = 11;</code>
@@ -293,19 +293,19 @@ public interface GKODOJLKFHBOrBuilder extends
   POGOProtos.Rpc.MMLINCEHMINOrBuilder getVsSeekerSetOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
    * @return Whether the vsSeekerCompleteSeason field is set.
    */
   boolean hasVsSeekerCompleteSeason();
   /**
-   * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
    * @return The vsSeekerCompleteSeason.
    */
-  POGOProtos.Rpc.AHNNPKBMMJN getVsSeekerCompleteSeason();
+  POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry getVsSeekerCompleteSeason();
   /**
-   * <code>.POGOProtos.Rpc.AHNNPKBMMJN vs_seeker_complete_season = 22;</code>
+   * <code>.POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntry vs_seeker_complete_season = 22;</code>
    */
-  POGOProtos.Rpc.AHNNPKBMMJNOrBuilder getVsSeekerCompleteSeasonOrBuilder();
+  POGOProtos.Rpc.VsSeekerCompleteSeasonLogEntryOrBuilder getVsSeekerCompleteSeasonOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.KDAOIKKFKMH vs_seeker_win_rewards = 23;</code>

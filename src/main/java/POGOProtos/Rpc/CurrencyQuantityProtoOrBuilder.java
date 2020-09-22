@@ -8,20 +8,44 @@ public interface CurrencyQuantityProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string currency_type = 1;</code>
-   * @return The currencyType.
+   * <code>string efkjbabejfn = 1;</code>
+   * @return The efkjbabejfn.
    */
-  java.lang.String getCurrencyType();
+  java.lang.String getEfkjbabejfn();
   /**
-   * <code>string currency_type = 1;</code>
-   * @return The bytes for currencyType.
+   * <code>string efkjbabejfn = 1;</code>
+   * @return The bytes for efkjbabejfn.
    */
   com.google.protobuf.ByteString
-      getCurrencyTypeBytes();
+      getEfkjbabejfnBytes();
 
   /**
-   * <code>int32 quantity = 2;</code>
-   * @return The quantity.
+   * <code>int32 ocdhchampmj = 2;</code>
+   * @return The ocdhchampmj.
    */
-  int getQuantity();
+  int getOcdhchampmj();
+
+  /**
+   * <code>int32 oookdofmngg = 3;</code>
+   * @return The oookdofmngg.
+   */
+  int getOookdofmngg();
+
+  /**
+   * <code>string igapjkhefdc = 4;</code>
+   * @return The igapjkhefdc.
+   */
+  java.lang.String getIgapjkhefdc();
+  /**
+   * <code>string igapjkhefdc = 4;</code>
+   * @return The bytes for igapjkhefdc.
+   */
+  com.google.protobuf.ByteString
+      getIgapjkhefdcBytes();
+
+  /**
+   * <code>int64 lfbeennjkoi = 5;</code>
+   * @return The lfbeennjkoi.
+   */
+  long getLfbeennjkoi();
 }

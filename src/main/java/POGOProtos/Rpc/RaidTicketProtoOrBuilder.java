@@ -31,17 +31,17 @@ public interface RaidTicketProtoOrBuilder extends
   POGOProtos.Rpc.Item getEkpohjfklal();
 
   /**
-   * <code>.POGOProtos.Rpc.APBADONLEGM aoleolaciee = 4;</code>
+   * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
    * @return Whether the aoleolaciee field is set.
    */
   boolean hasAoleolaciee();
   /**
-   * <code>.POGOProtos.Rpc.APBADONLEGM aoleolaciee = 4;</code>
+   * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
    * @return The aoleolaciee.
    */
-  POGOProtos.Rpc.APBADONLEGM getAoleolaciee();
+  POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo getAoleolaciee();
   /**
-   * <code>.POGOProtos.Rpc.APBADONLEGM aoleolaciee = 4;</code>
+   * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
    */
-  POGOProtos.Rpc.APBADONLEGMOrBuilder getAoleolacieeOrBuilder();
+  POGOProtos.Rpc.SharedExclusiveTicketTrainerInfoOrBuilder getAoleolacieeOrBuilder();
 }

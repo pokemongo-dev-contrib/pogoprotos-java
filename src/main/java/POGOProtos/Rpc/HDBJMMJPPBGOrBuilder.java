@@ -19,17 +19,17 @@ public interface HDBJMMJPPBGOrBuilder extends
   POGOProtos.Rpc.HDBJMMJPPBG.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 2;</code>
+   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
    * @return Whether the fdanacihmef field is set.
    */
   boolean hasFdanacihmef();
   /**
-   * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 2;</code>
+   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
    * @return The fdanacihmef.
    */
-  POGOProtos.Rpc.DKCCAGCEEHM getFdanacihmef();
+  POGOProtos.Rpc.LobbyProto getFdanacihmef();
   /**
-   * <code>.POGOProtos.Rpc.DKCCAGCEEHM fdanacihmef = 2;</code>
+   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
    */
-  POGOProtos.Rpc.DKCCAGCEEHMOrBuilder getFdanacihmefOrBuilder();
+  POGOProtos.Rpc.LobbyProtoOrBuilder getFdanacihmefOrBuilder();
 }

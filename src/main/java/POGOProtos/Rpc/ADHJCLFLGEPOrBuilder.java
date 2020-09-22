@@ -86,19 +86,19 @@ public interface ADHJCLFLGEPOrBuilder extends
       int index);
 
   /**
-   * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+   * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
    * @return Whether the ccfinmjcobk field is set.
    */
   boolean hasCcfinmjcobk();
   /**
-   * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+   * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
    * @return The ccfinmjcobk.
    */
-  POGOProtos.Rpc.HIHLKDPJMMO getCcfinmjcobk();
+  POGOProtos.Rpc.PokestopIncidentDisplayProto getCcfinmjcobk();
   /**
-   * <code>.POGOProtos.Rpc.HIHLKDPJMMO ccfinmjcobk = 7;</code>
+   * <code>.POGOProtos.Rpc.PokestopIncidentDisplayProto ccfinmjcobk = 7;</code>
    */
-  POGOProtos.Rpc.HIHLKDPJMMOOrBuilder getCcfinmjcobkOrBuilder();
+  POGOProtos.Rpc.PokestopIncidentDisplayProtoOrBuilder getCcfinmjcobkOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.EnumWrapper.InvasionContext okillgigohn = 8;</code>

@@ -8,27 +8,27 @@ public interface QuestStampCardProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 1;</code>
    */
-  java.util.List<POGOProtos.Rpc.EJDMHKENPII> 
+  java.util.List<POGOProtos.Rpc.QuestStampProto> 
       getPhcdogbllokList();
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 1;</code>
    */
-  POGOProtos.Rpc.EJDMHKENPII getPhcdogbllok(int index);
+  POGOProtos.Rpc.QuestStampProto getPhcdogbllok(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 1;</code>
    */
   int getPhcdogbllokCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 1;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.EJDMHKENPIIOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.QuestStampProtoOrBuilder> 
       getPhcdogbllokOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.EJDMHKENPII phcdogbllok = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestStampProto phcdogbllok = 1;</code>
    */
-  POGOProtos.Rpc.EJDMHKENPIIOrBuilder getPhcdogbllokOrBuilder(
+  POGOProtos.Rpc.QuestStampProtoOrBuilder getPhcdogbllokOrBuilder(
       int index);
 
   /**

@@ -65,11 +65,11 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              nikdphgligk_ = new java.util.ArrayList<POGOProtos.Rpc.PHNPDJIHOHJ>();
+              nikdphgligk_ = new java.util.ArrayList<POGOProtos.Rpc.AwardItemProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             nikdphgligk_.add(
-                input.readMessage(POGOProtos.Rpc.PHNPDJIHOHJ.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.AwardItemProto.parser(), extensionRegistry));
             break;
           }
           case 32: {
@@ -286,41 +286,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int NIKDPHGLIGK_FIELD_NUMBER = 2;
-  private java.util.List<POGOProtos.Rpc.PHNPDJIHOHJ> nikdphgligk_;
+  private java.util.List<POGOProtos.Rpc.AwardItemProto> nikdphgligk_;
   /**
-   * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.PHNPDJIHOHJ> getNikdphgligkList() {
+  public java.util.List<POGOProtos.Rpc.AwardItemProto> getNikdphgligkList() {
     return nikdphgligk_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.PHNPDJIHOHJOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.AwardItemProtoOrBuilder> 
       getNikdphgligkOrBuilderList() {
     return nikdphgligk_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
    */
   @java.lang.Override
   public int getNikdphgligkCount() {
     return nikdphgligk_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PHNPDJIHOHJ getNikdphgligk(int index) {
+  public POGOProtos.Rpc.AwardItemProto getNikdphgligk(int index) {
     return nikdphgligk_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PHNPDJIHOHJOrBuilder getNikdphgligkOrBuilder(
+  public POGOProtos.Rpc.AwardItemProtoOrBuilder getNikdphgligkOrBuilder(
       int index) {
     return nikdphgligk_.get(index);
   }
@@ -910,22 +910,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.PHNPDJIHOHJ> nikdphgligk_ =
+    private java.util.List<POGOProtos.Rpc.AwardItemProto> nikdphgligk_ =
       java.util.Collections.emptyList();
     private void ensureNikdphgligkIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        nikdphgligk_ = new java.util.ArrayList<POGOProtos.Rpc.PHNPDJIHOHJ>(nikdphgligk_);
+        nikdphgligk_ = new java.util.ArrayList<POGOProtos.Rpc.AwardItemProto>(nikdphgligk_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PHNPDJIHOHJ, POGOProtos.Rpc.PHNPDJIHOHJ.Builder, POGOProtos.Rpc.PHNPDJIHOHJOrBuilder> nikdphgligkBuilder_;
+        POGOProtos.Rpc.AwardItemProto, POGOProtos.Rpc.AwardItemProto.Builder, POGOProtos.Rpc.AwardItemProtoOrBuilder> nikdphgligkBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PHNPDJIHOHJ> getNikdphgligkList() {
+    public java.util.List<POGOProtos.Rpc.AwardItemProto> getNikdphgligkList() {
       if (nikdphgligkBuilder_ == null) {
         return java.util.Collections.unmodifiableList(nikdphgligk_);
       } else {
@@ -933,7 +933,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
     public int getNikdphgligkCount() {
       if (nikdphgligkBuilder_ == null) {
@@ -943,9 +943,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
-    public POGOProtos.Rpc.PHNPDJIHOHJ getNikdphgligk(int index) {
+    public POGOProtos.Rpc.AwardItemProto getNikdphgligk(int index) {
       if (nikdphgligkBuilder_ == null) {
         return nikdphgligk_.get(index);
       } else {
@@ -953,10 +953,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
     public Builder setNikdphgligk(
-        int index, POGOProtos.Rpc.PHNPDJIHOHJ value) {
+        int index, POGOProtos.Rpc.AwardItemProto value) {
       if (nikdphgligkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -970,10 +970,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
     public Builder setNikdphgligk(
-        int index, POGOProtos.Rpc.PHNPDJIHOHJ.Builder builderForValue) {
+        int index, POGOProtos.Rpc.AwardItemProto.Builder builderForValue) {
       if (nikdphgligkBuilder_ == null) {
         ensureNikdphgligkIsMutable();
         nikdphgligk_.set(index, builderForValue.build());
@@ -984,9 +984,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
-    public Builder addNikdphgligk(POGOProtos.Rpc.PHNPDJIHOHJ value) {
+    public Builder addNikdphgligk(POGOProtos.Rpc.AwardItemProto value) {
       if (nikdphgligkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1000,10 +1000,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
     public Builder addNikdphgligk(
-        int index, POGOProtos.Rpc.PHNPDJIHOHJ value) {
+        int index, POGOProtos.Rpc.AwardItemProto value) {
       if (nikdphgligkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1017,10 +1017,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
     public Builder addNikdphgligk(
-        POGOProtos.Rpc.PHNPDJIHOHJ.Builder builderForValue) {
+        POGOProtos.Rpc.AwardItemProto.Builder builderForValue) {
       if (nikdphgligkBuilder_ == null) {
         ensureNikdphgligkIsMutable();
         nikdphgligk_.add(builderForValue.build());
@@ -1031,10 +1031,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
     public Builder addNikdphgligk(
-        int index, POGOProtos.Rpc.PHNPDJIHOHJ.Builder builderForValue) {
+        int index, POGOProtos.Rpc.AwardItemProto.Builder builderForValue) {
       if (nikdphgligkBuilder_ == null) {
         ensureNikdphgligkIsMutable();
         nikdphgligk_.add(index, builderForValue.build());
@@ -1045,10 +1045,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
     public Builder addAllNikdphgligk(
-        java.lang.Iterable<? extends POGOProtos.Rpc.PHNPDJIHOHJ> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.AwardItemProto> values) {
       if (nikdphgligkBuilder_ == null) {
         ensureNikdphgligkIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1060,7 +1060,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
     public Builder clearNikdphgligk() {
       if (nikdphgligkBuilder_ == null) {
@@ -1073,7 +1073,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
     public Builder removeNikdphgligk(int index) {
       if (nikdphgligkBuilder_ == null) {
@@ -1086,16 +1086,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
-    public POGOProtos.Rpc.PHNPDJIHOHJ.Builder getNikdphgligkBuilder(
+    public POGOProtos.Rpc.AwardItemProto.Builder getNikdphgligkBuilder(
         int index) {
       return getNikdphgligkFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
-    public POGOProtos.Rpc.PHNPDJIHOHJOrBuilder getNikdphgligkOrBuilder(
+    public POGOProtos.Rpc.AwardItemProtoOrBuilder getNikdphgligkOrBuilder(
         int index) {
       if (nikdphgligkBuilder_ == null) {
         return nikdphgligk_.get(index);  } else {
@@ -1103,9 +1103,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.PHNPDJIHOHJOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.AwardItemProtoOrBuilder> 
          getNikdphgligkOrBuilderList() {
       if (nikdphgligkBuilder_ != null) {
         return nikdphgligkBuilder_.getMessageOrBuilderList();
@@ -1114,33 +1114,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
-    public POGOProtos.Rpc.PHNPDJIHOHJ.Builder addNikdphgligkBuilder() {
+    public POGOProtos.Rpc.AwardItemProto.Builder addNikdphgligkBuilder() {
       return getNikdphgligkFieldBuilder().addBuilder(
-          POGOProtos.Rpc.PHNPDJIHOHJ.getDefaultInstance());
+          POGOProtos.Rpc.AwardItemProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
-    public POGOProtos.Rpc.PHNPDJIHOHJ.Builder addNikdphgligkBuilder(
+    public POGOProtos.Rpc.AwardItemProto.Builder addNikdphgligkBuilder(
         int index) {
       return getNikdphgligkFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.PHNPDJIHOHJ.getDefaultInstance());
+          index, POGOProtos.Rpc.AwardItemProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PHNPDJIHOHJ.Builder> 
+    public java.util.List<POGOProtos.Rpc.AwardItemProto.Builder> 
          getNikdphgligkBuilderList() {
       return getNikdphgligkFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PHNPDJIHOHJ, POGOProtos.Rpc.PHNPDJIHOHJ.Builder, POGOProtos.Rpc.PHNPDJIHOHJOrBuilder> 
+        POGOProtos.Rpc.AwardItemProto, POGOProtos.Rpc.AwardItemProto.Builder, POGOProtos.Rpc.AwardItemProtoOrBuilder> 
         getNikdphgligkFieldBuilder() {
       if (nikdphgligkBuilder_ == null) {
         nikdphgligkBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.PHNPDJIHOHJ, POGOProtos.Rpc.PHNPDJIHOHJ.Builder, POGOProtos.Rpc.PHNPDJIHOHJOrBuilder>(
+            POGOProtos.Rpc.AwardItemProto, POGOProtos.Rpc.AwardItemProto.Builder, POGOProtos.Rpc.AwardItemProtoOrBuilder>(
                 nikdphgligk_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

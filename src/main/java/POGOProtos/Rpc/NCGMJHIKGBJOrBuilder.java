@@ -19,27 +19,27 @@ public interface NCGMJHIKGBJOrBuilder extends
   POGOProtos.Rpc.NCGMJHIKGBJ.Result getResult();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.PHNPDJIHOHJ> 
+  java.util.List<POGOProtos.Rpc.AwardItemProto> 
       getNikdphgligkList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
    */
-  POGOProtos.Rpc.PHNPDJIHOHJ getNikdphgligk(int index);
+  POGOProtos.Rpc.AwardItemProto getNikdphgligk(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
    */
   int getNikdphgligkCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.PHNPDJIHOHJOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.AwardItemProtoOrBuilder> 
       getNikdphgligkOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PHNPDJIHOHJ nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
    */
-  POGOProtos.Rpc.PHNPDJIHOHJOrBuilder getNikdphgligkOrBuilder(
+  POGOProtos.Rpc.AwardItemProtoOrBuilder getNikdphgligkOrBuilder(
       int index);
 
   /**

@@ -8,17 +8,17 @@ public interface IOEGOBEDBFLOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
    * @return Whether the bbnlhkefklc field is set.
    */
   boolean hasBbnlhkefklc();
   /**
-   * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
    * @return The bbnlhkefklc.
    */
-  POGOProtos.Rpc.LMJMJJOLOPJ getBbnlhkefklc();
+  POGOProtos.Rpc.PlayerPreferencesProto getBbnlhkefklc();
   /**
-   * <code>.POGOProtos.Rpc.LMJMJJOLOPJ bbnlhkefklc = 1;</code>
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto bbnlhkefklc = 1;</code>
    */
-  POGOProtos.Rpc.LMJMJJOLOPJOrBuilder getBbnlhkefklcOrBuilder();
+  POGOProtos.Rpc.PlayerPreferencesProtoOrBuilder getBbnlhkefklcOrBuilder();
 }

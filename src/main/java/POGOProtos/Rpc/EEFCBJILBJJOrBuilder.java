@@ -19,26 +19,26 @@ public interface EEFCBJILBJJOrBuilder extends
   POGOProtos.Rpc.EEFCBJILBJJ.Status getStatus();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP ajmbloldfdf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto ajmbloldfdf = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.JPJNJMHLBOP> 
+  java.util.List<POGOProtos.Rpc.ClientQuestProto> 
       getAjmbloldfdfList();
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP ajmbloldfdf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto ajmbloldfdf = 2;</code>
    */
-  POGOProtos.Rpc.JPJNJMHLBOP getAjmbloldfdf(int index);
+  POGOProtos.Rpc.ClientQuestProto getAjmbloldfdf(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP ajmbloldfdf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto ajmbloldfdf = 2;</code>
    */
   int getAjmbloldfdfCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP ajmbloldfdf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto ajmbloldfdf = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.JPJNJMHLBOPOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.ClientQuestProtoOrBuilder> 
       getAjmbloldfdfOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.JPJNJMHLBOP ajmbloldfdf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto ajmbloldfdf = 2;</code>
    */
-  POGOProtos.Rpc.JPJNJMHLBOPOrBuilder getAjmbloldfdfOrBuilder(
+  POGOProtos.Rpc.ClientQuestProtoOrBuilder getAjmbloldfdfOrBuilder(
       int index);
 }

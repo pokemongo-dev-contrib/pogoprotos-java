@@ -8,19 +8,19 @@ public interface BootTimeOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
    * @return Whether the ephppddioph field is set.
    */
   boolean hasEphppddioph();
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
    * @return The ephppddioph.
    */
-  POGOProtos.Rpc.HJJBCLOAFKI getEphppddioph();
+  POGOProtos.Rpc.PlatformMetricData getEphppddioph();
   /**
-   * <code>.POGOProtos.Rpc.HJJBCLOAFKI ephppddioph = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
    */
-  POGOProtos.Rpc.HJJBCLOAFKIOrBuilder getEphppddiophOrBuilder();
+  POGOProtos.Rpc.PlatformMetricDataOrBuilder getEphppddiophOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.BootTime.CLIIACAJEIG bpebfhonkmg = 2;</code>

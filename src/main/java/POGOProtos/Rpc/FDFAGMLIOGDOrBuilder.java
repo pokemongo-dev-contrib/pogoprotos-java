@@ -32,43 +32,43 @@ public interface FDFAGMLIOGDOrBuilder extends
       getGanccamkobaBytes();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM fnblbnflejd = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto fnblbnflejd = 3;</code>
    */
-  java.util.List<POGOProtos.Rpc.CPBMIJKOPPM> 
+  java.util.List<POGOProtos.Rpc.BattleActionProto> 
       getFnblbnflejdList();
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM fnblbnflejd = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto fnblbnflejd = 3;</code>
    */
-  POGOProtos.Rpc.CPBMIJKOPPM getFnblbnflejd(int index);
+  POGOProtos.Rpc.BattleActionProto getFnblbnflejd(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM fnblbnflejd = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto fnblbnflejd = 3;</code>
    */
   int getFnblbnflejdCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM fnblbnflejd = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto fnblbnflejd = 3;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.CPBMIJKOPPMOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.BattleActionProtoOrBuilder> 
       getFnblbnflejdOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.CPBMIJKOPPM fnblbnflejd = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto fnblbnflejd = 3;</code>
    */
-  POGOProtos.Rpc.CPBMIJKOPPMOrBuilder getFnblbnflejdOrBuilder(
+  POGOProtos.Rpc.BattleActionProtoOrBuilder getFnblbnflejdOrBuilder(
       int index);
 
   /**
-   * <code>.POGOProtos.Rpc.CPBMIJKOPPM jononjhoped = 4;</code>
+   * <code>.POGOProtos.Rpc.BattleActionProto jononjhoped = 4;</code>
    * @return Whether the jononjhoped field is set.
    */
   boolean hasJononjhoped();
   /**
-   * <code>.POGOProtos.Rpc.CPBMIJKOPPM jononjhoped = 4;</code>
+   * <code>.POGOProtos.Rpc.BattleActionProto jononjhoped = 4;</code>
    * @return The jononjhoped.
    */
-  POGOProtos.Rpc.CPBMIJKOPPM getJononjhoped();
+  POGOProtos.Rpc.BattleActionProto getJononjhoped();
   /**
-   * <code>.POGOProtos.Rpc.CPBMIJKOPPM jononjhoped = 4;</code>
+   * <code>.POGOProtos.Rpc.BattleActionProto jononjhoped = 4;</code>
    */
-  POGOProtos.Rpc.CPBMIJKOPPMOrBuilder getJononjhopedOrBuilder();
+  POGOProtos.Rpc.BattleActionProtoOrBuilder getJononjhopedOrBuilder();
 
   /**
    * <code>double nlblgfioeic = 5;</code>

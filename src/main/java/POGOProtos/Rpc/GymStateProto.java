@@ -55,11 +55,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.BBNLGKGOGKI.Builder subBuilder = null;
+            POGOProtos.Rpc.PokemonFortProto.Builder subBuilder = null;
             if (ajghbigoedn_ != null) {
               subBuilder = ajghbigoedn_.toBuilder();
             }
-            ajghbigoedn_ = input.readMessage(POGOProtos.Rpc.BBNLGKGOGKI.parser(), extensionRegistry);
+            ajghbigoedn_ = input.readMessage(POGOProtos.Rpc.PokemonFortProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(ajghbigoedn_);
               ajghbigoedn_ = subBuilder.buildPartial();
@@ -69,11 +69,11 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              naeplcmlgjk_ = new java.util.ArrayList<POGOProtos.Rpc.AEIJGBPMAGM>();
+              naeplcmlgjk_ = new java.util.ArrayList<POGOProtos.Rpc.GymMembershipProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             naeplcmlgjk_.add(
-                input.readMessage(POGOProtos.Rpc.AEIJGBPMAGM.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.GymMembershipProto.parser(), extensionRegistry));
             break;
           }
           case 24: {
@@ -117,9 +117,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int AJGHBIGOEDN_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn_;
+  private POGOProtos.Rpc.PokemonFortProto ajghbigoedn_;
   /**
-   * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+   * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
    * @return Whether the ajghbigoedn field is set.
    */
   @java.lang.Override
@@ -127,57 +127,57 @@ private static final long serialVersionUID = 0L;
     return ajghbigoedn_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+   * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
    * @return The ajghbigoedn.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BBNLGKGOGKI getAjghbigoedn() {
-    return ajghbigoedn_ == null ? POGOProtos.Rpc.BBNLGKGOGKI.getDefaultInstance() : ajghbigoedn_;
+  public POGOProtos.Rpc.PokemonFortProto getAjghbigoedn() {
+    return ajghbigoedn_ == null ? POGOProtos.Rpc.PokemonFortProto.getDefaultInstance() : ajghbigoedn_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+   * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BBNLGKGOGKIOrBuilder getAjghbigoednOrBuilder() {
+  public POGOProtos.Rpc.PokemonFortProtoOrBuilder getAjghbigoednOrBuilder() {
     return getAjghbigoedn();
   }
 
   public static final int NAEPLCMLGJK_FIELD_NUMBER = 2;
-  private java.util.List<POGOProtos.Rpc.AEIJGBPMAGM> naeplcmlgjk_;
+  private java.util.List<POGOProtos.Rpc.GymMembershipProto> naeplcmlgjk_;
   /**
-   * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.AEIJGBPMAGM> getNaeplcmlgjkList() {
+  public java.util.List<POGOProtos.Rpc.GymMembershipProto> getNaeplcmlgjkList() {
     return naeplcmlgjk_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.AEIJGBPMAGMOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.GymMembershipProtoOrBuilder> 
       getNaeplcmlgjkOrBuilderList() {
     return naeplcmlgjk_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
    */
   @java.lang.Override
   public int getNaeplcmlgjkCount() {
     return naeplcmlgjk_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AEIJGBPMAGM getNaeplcmlgjk(int index) {
+  public POGOProtos.Rpc.GymMembershipProto getNaeplcmlgjk(int index) {
     return naeplcmlgjk_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AEIJGBPMAGMOrBuilder getNaeplcmlgjkOrBuilder(
+  public POGOProtos.Rpc.GymMembershipProtoOrBuilder getNaeplcmlgjkOrBuilder(
       int index) {
     return naeplcmlgjk_.get(index);
   }
@@ -587,31 +587,31 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn_;
+    private POGOProtos.Rpc.PokemonFortProto ajghbigoedn_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BBNLGKGOGKI, POGOProtos.Rpc.BBNLGKGOGKI.Builder, POGOProtos.Rpc.BBNLGKGOGKIOrBuilder> ajghbigoednBuilder_;
+        POGOProtos.Rpc.PokemonFortProto, POGOProtos.Rpc.PokemonFortProto.Builder, POGOProtos.Rpc.PokemonFortProtoOrBuilder> ajghbigoednBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+     * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
      * @return Whether the ajghbigoedn field is set.
      */
     public boolean hasAjghbigoedn() {
       return ajghbigoednBuilder_ != null || ajghbigoedn_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+     * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
      * @return The ajghbigoedn.
      */
-    public POGOProtos.Rpc.BBNLGKGOGKI getAjghbigoedn() {
+    public POGOProtos.Rpc.PokemonFortProto getAjghbigoedn() {
       if (ajghbigoednBuilder_ == null) {
-        return ajghbigoedn_ == null ? POGOProtos.Rpc.BBNLGKGOGKI.getDefaultInstance() : ajghbigoedn_;
+        return ajghbigoedn_ == null ? POGOProtos.Rpc.PokemonFortProto.getDefaultInstance() : ajghbigoedn_;
       } else {
         return ajghbigoednBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+     * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
      */
-    public Builder setAjghbigoedn(POGOProtos.Rpc.BBNLGKGOGKI value) {
+    public Builder setAjghbigoedn(POGOProtos.Rpc.PokemonFortProto value) {
       if (ajghbigoednBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -625,10 +625,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+     * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
      */
     public Builder setAjghbigoedn(
-        POGOProtos.Rpc.BBNLGKGOGKI.Builder builderForValue) {
+        POGOProtos.Rpc.PokemonFortProto.Builder builderForValue) {
       if (ajghbigoednBuilder_ == null) {
         ajghbigoedn_ = builderForValue.build();
         onChanged();
@@ -639,13 +639,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+     * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
      */
-    public Builder mergeAjghbigoedn(POGOProtos.Rpc.BBNLGKGOGKI value) {
+    public Builder mergeAjghbigoedn(POGOProtos.Rpc.PokemonFortProto value) {
       if (ajghbigoednBuilder_ == null) {
         if (ajghbigoedn_ != null) {
           ajghbigoedn_ =
-            POGOProtos.Rpc.BBNLGKGOGKI.newBuilder(ajghbigoedn_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PokemonFortProto.newBuilder(ajghbigoedn_).mergeFrom(value).buildPartial();
         } else {
           ajghbigoedn_ = value;
         }
@@ -657,7 +657,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+     * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
      */
     public Builder clearAjghbigoedn() {
       if (ajghbigoednBuilder_ == null) {
@@ -671,33 +671,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+     * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
      */
-    public POGOProtos.Rpc.BBNLGKGOGKI.Builder getAjghbigoednBuilder() {
+    public POGOProtos.Rpc.PokemonFortProto.Builder getAjghbigoednBuilder() {
       
       onChanged();
       return getAjghbigoednFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+     * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
      */
-    public POGOProtos.Rpc.BBNLGKGOGKIOrBuilder getAjghbigoednOrBuilder() {
+    public POGOProtos.Rpc.PokemonFortProtoOrBuilder getAjghbigoednOrBuilder() {
       if (ajghbigoednBuilder_ != null) {
         return ajghbigoednBuilder_.getMessageOrBuilder();
       } else {
         return ajghbigoedn_ == null ?
-            POGOProtos.Rpc.BBNLGKGOGKI.getDefaultInstance() : ajghbigoedn_;
+            POGOProtos.Rpc.PokemonFortProto.getDefaultInstance() : ajghbigoedn_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BBNLGKGOGKI ajghbigoedn = 1;</code>
+     * <code>.POGOProtos.Rpc.PokemonFortProto ajghbigoedn = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BBNLGKGOGKI, POGOProtos.Rpc.BBNLGKGOGKI.Builder, POGOProtos.Rpc.BBNLGKGOGKIOrBuilder> 
+        POGOProtos.Rpc.PokemonFortProto, POGOProtos.Rpc.PokemonFortProto.Builder, POGOProtos.Rpc.PokemonFortProtoOrBuilder> 
         getAjghbigoednFieldBuilder() {
       if (ajghbigoednBuilder_ == null) {
         ajghbigoednBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.BBNLGKGOGKI, POGOProtos.Rpc.BBNLGKGOGKI.Builder, POGOProtos.Rpc.BBNLGKGOGKIOrBuilder>(
+            POGOProtos.Rpc.PokemonFortProto, POGOProtos.Rpc.PokemonFortProto.Builder, POGOProtos.Rpc.PokemonFortProtoOrBuilder>(
                 getAjghbigoedn(),
                 getParentForChildren(),
                 isClean());
@@ -706,22 +706,22 @@ private static final long serialVersionUID = 0L;
       return ajghbigoednBuilder_;
     }
 
-    private java.util.List<POGOProtos.Rpc.AEIJGBPMAGM> naeplcmlgjk_ =
+    private java.util.List<POGOProtos.Rpc.GymMembershipProto> naeplcmlgjk_ =
       java.util.Collections.emptyList();
     private void ensureNaeplcmlgjkIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        naeplcmlgjk_ = new java.util.ArrayList<POGOProtos.Rpc.AEIJGBPMAGM>(naeplcmlgjk_);
+        naeplcmlgjk_ = new java.util.ArrayList<POGOProtos.Rpc.GymMembershipProto>(naeplcmlgjk_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.AEIJGBPMAGM, POGOProtos.Rpc.AEIJGBPMAGM.Builder, POGOProtos.Rpc.AEIJGBPMAGMOrBuilder> naeplcmlgjkBuilder_;
+        POGOProtos.Rpc.GymMembershipProto, POGOProtos.Rpc.GymMembershipProto.Builder, POGOProtos.Rpc.GymMembershipProtoOrBuilder> naeplcmlgjkBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.AEIJGBPMAGM> getNaeplcmlgjkList() {
+    public java.util.List<POGOProtos.Rpc.GymMembershipProto> getNaeplcmlgjkList() {
       if (naeplcmlgjkBuilder_ == null) {
         return java.util.Collections.unmodifiableList(naeplcmlgjk_);
       } else {
@@ -729,7 +729,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
     public int getNaeplcmlgjkCount() {
       if (naeplcmlgjkBuilder_ == null) {
@@ -739,9 +739,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
-    public POGOProtos.Rpc.AEIJGBPMAGM getNaeplcmlgjk(int index) {
+    public POGOProtos.Rpc.GymMembershipProto getNaeplcmlgjk(int index) {
       if (naeplcmlgjkBuilder_ == null) {
         return naeplcmlgjk_.get(index);
       } else {
@@ -749,10 +749,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
     public Builder setNaeplcmlgjk(
-        int index, POGOProtos.Rpc.AEIJGBPMAGM value) {
+        int index, POGOProtos.Rpc.GymMembershipProto value) {
       if (naeplcmlgjkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -766,10 +766,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
     public Builder setNaeplcmlgjk(
-        int index, POGOProtos.Rpc.AEIJGBPMAGM.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GymMembershipProto.Builder builderForValue) {
       if (naeplcmlgjkBuilder_ == null) {
         ensureNaeplcmlgjkIsMutable();
         naeplcmlgjk_.set(index, builderForValue.build());
@@ -780,9 +780,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
-    public Builder addNaeplcmlgjk(POGOProtos.Rpc.AEIJGBPMAGM value) {
+    public Builder addNaeplcmlgjk(POGOProtos.Rpc.GymMembershipProto value) {
       if (naeplcmlgjkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -796,10 +796,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
     public Builder addNaeplcmlgjk(
-        int index, POGOProtos.Rpc.AEIJGBPMAGM value) {
+        int index, POGOProtos.Rpc.GymMembershipProto value) {
       if (naeplcmlgjkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -813,10 +813,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
     public Builder addNaeplcmlgjk(
-        POGOProtos.Rpc.AEIJGBPMAGM.Builder builderForValue) {
+        POGOProtos.Rpc.GymMembershipProto.Builder builderForValue) {
       if (naeplcmlgjkBuilder_ == null) {
         ensureNaeplcmlgjkIsMutable();
         naeplcmlgjk_.add(builderForValue.build());
@@ -827,10 +827,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
     public Builder addNaeplcmlgjk(
-        int index, POGOProtos.Rpc.AEIJGBPMAGM.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GymMembershipProto.Builder builderForValue) {
       if (naeplcmlgjkBuilder_ == null) {
         ensureNaeplcmlgjkIsMutable();
         naeplcmlgjk_.add(index, builderForValue.build());
@@ -841,10 +841,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
     public Builder addAllNaeplcmlgjk(
-        java.lang.Iterable<? extends POGOProtos.Rpc.AEIJGBPMAGM> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.GymMembershipProto> values) {
       if (naeplcmlgjkBuilder_ == null) {
         ensureNaeplcmlgjkIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -856,7 +856,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
     public Builder clearNaeplcmlgjk() {
       if (naeplcmlgjkBuilder_ == null) {
@@ -869,7 +869,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
     public Builder removeNaeplcmlgjk(int index) {
       if (naeplcmlgjkBuilder_ == null) {
@@ -882,16 +882,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
-    public POGOProtos.Rpc.AEIJGBPMAGM.Builder getNaeplcmlgjkBuilder(
+    public POGOProtos.Rpc.GymMembershipProto.Builder getNaeplcmlgjkBuilder(
         int index) {
       return getNaeplcmlgjkFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
-    public POGOProtos.Rpc.AEIJGBPMAGMOrBuilder getNaeplcmlgjkOrBuilder(
+    public POGOProtos.Rpc.GymMembershipProtoOrBuilder getNaeplcmlgjkOrBuilder(
         int index) {
       if (naeplcmlgjkBuilder_ == null) {
         return naeplcmlgjk_.get(index);  } else {
@@ -899,9 +899,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.AEIJGBPMAGMOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.GymMembershipProtoOrBuilder> 
          getNaeplcmlgjkOrBuilderList() {
       if (naeplcmlgjkBuilder_ != null) {
         return naeplcmlgjkBuilder_.getMessageOrBuilderList();
@@ -910,33 +910,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
-    public POGOProtos.Rpc.AEIJGBPMAGM.Builder addNaeplcmlgjkBuilder() {
+    public POGOProtos.Rpc.GymMembershipProto.Builder addNaeplcmlgjkBuilder() {
       return getNaeplcmlgjkFieldBuilder().addBuilder(
-          POGOProtos.Rpc.AEIJGBPMAGM.getDefaultInstance());
+          POGOProtos.Rpc.GymMembershipProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
-    public POGOProtos.Rpc.AEIJGBPMAGM.Builder addNaeplcmlgjkBuilder(
+    public POGOProtos.Rpc.GymMembershipProto.Builder addNaeplcmlgjkBuilder(
         int index) {
       return getNaeplcmlgjkFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.AEIJGBPMAGM.getDefaultInstance());
+          index, POGOProtos.Rpc.GymMembershipProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AEIJGBPMAGM naeplcmlgjk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymMembershipProto naeplcmlgjk = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.AEIJGBPMAGM.Builder> 
+    public java.util.List<POGOProtos.Rpc.GymMembershipProto.Builder> 
          getNaeplcmlgjkBuilderList() {
       return getNaeplcmlgjkFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.AEIJGBPMAGM, POGOProtos.Rpc.AEIJGBPMAGM.Builder, POGOProtos.Rpc.AEIJGBPMAGMOrBuilder> 
+        POGOProtos.Rpc.GymMembershipProto, POGOProtos.Rpc.GymMembershipProto.Builder, POGOProtos.Rpc.GymMembershipProtoOrBuilder> 
         getNaeplcmlgjkFieldBuilder() {
       if (naeplcmlgjkBuilder_ == null) {
         naeplcmlgjkBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.AEIJGBPMAGM, POGOProtos.Rpc.AEIJGBPMAGM.Builder, POGOProtos.Rpc.AEIJGBPMAGMOrBuilder>(
+            POGOProtos.Rpc.GymMembershipProto, POGOProtos.Rpc.GymMembershipProto.Builder, POGOProtos.Rpc.GymMembershipProtoOrBuilder>(
                 naeplcmlgjk_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

@@ -56,11 +56,11 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              dndahknlmmp_ = new java.util.ArrayList<POGOProtos.Rpc.EENOGKMFLCO>();
+              dndahknlmmp_ = new java.util.ArrayList<POGOProtos.Rpc.GiftBoxProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             dndahknlmmp_.add(
-                input.readMessage(POGOProtos.Rpc.EENOGKMFLCO.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.GiftBoxProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -99,41 +99,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int DNDAHKNLMMP_FIELD_NUMBER = 1;
-  private java.util.List<POGOProtos.Rpc.EENOGKMFLCO> dndahknlmmp_;
+  private java.util.List<POGOProtos.Rpc.GiftBoxProto> dndahknlmmp_;
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.EENOGKMFLCO> getDndahknlmmpList() {
+  public java.util.List<POGOProtos.Rpc.GiftBoxProto> getDndahknlmmpList() {
     return dndahknlmmp_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.EENOGKMFLCOOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.GiftBoxProtoOrBuilder> 
       getDndahknlmmpOrBuilderList() {
     return dndahknlmmp_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
    */
   @java.lang.Override
   public int getDndahknlmmpCount() {
     return dndahknlmmp_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EENOGKMFLCO getDndahknlmmp(int index) {
+  public POGOProtos.Rpc.GiftBoxProto getDndahknlmmp(int index) {
     return dndahknlmmp_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EENOGKMFLCOOrBuilder getDndahknlmmpOrBuilder(
+  public POGOProtos.Rpc.GiftBoxProtoOrBuilder getDndahknlmmpOrBuilder(
       int index) {
     return dndahknlmmp_.get(index);
   }
@@ -484,22 +484,22 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<POGOProtos.Rpc.EENOGKMFLCO> dndahknlmmp_ =
+    private java.util.List<POGOProtos.Rpc.GiftBoxProto> dndahknlmmp_ =
       java.util.Collections.emptyList();
     private void ensureDndahknlmmpIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        dndahknlmmp_ = new java.util.ArrayList<POGOProtos.Rpc.EENOGKMFLCO>(dndahknlmmp_);
+        dndahknlmmp_ = new java.util.ArrayList<POGOProtos.Rpc.GiftBoxProto>(dndahknlmmp_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.EENOGKMFLCO, POGOProtos.Rpc.EENOGKMFLCO.Builder, POGOProtos.Rpc.EENOGKMFLCOOrBuilder> dndahknlmmpBuilder_;
+        POGOProtos.Rpc.GiftBoxProto, POGOProtos.Rpc.GiftBoxProto.Builder, POGOProtos.Rpc.GiftBoxProtoOrBuilder> dndahknlmmpBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
-    public java.util.List<POGOProtos.Rpc.EENOGKMFLCO> getDndahknlmmpList() {
+    public java.util.List<POGOProtos.Rpc.GiftBoxProto> getDndahknlmmpList() {
       if (dndahknlmmpBuilder_ == null) {
         return java.util.Collections.unmodifiableList(dndahknlmmp_);
       } else {
@@ -507,7 +507,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
     public int getDndahknlmmpCount() {
       if (dndahknlmmpBuilder_ == null) {
@@ -517,9 +517,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
-    public POGOProtos.Rpc.EENOGKMFLCO getDndahknlmmp(int index) {
+    public POGOProtos.Rpc.GiftBoxProto getDndahknlmmp(int index) {
       if (dndahknlmmpBuilder_ == null) {
         return dndahknlmmp_.get(index);
       } else {
@@ -527,10 +527,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
     public Builder setDndahknlmmp(
-        int index, POGOProtos.Rpc.EENOGKMFLCO value) {
+        int index, POGOProtos.Rpc.GiftBoxProto value) {
       if (dndahknlmmpBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -544,10 +544,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
     public Builder setDndahknlmmp(
-        int index, POGOProtos.Rpc.EENOGKMFLCO.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GiftBoxProto.Builder builderForValue) {
       if (dndahknlmmpBuilder_ == null) {
         ensureDndahknlmmpIsMutable();
         dndahknlmmp_.set(index, builderForValue.build());
@@ -558,9 +558,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
-    public Builder addDndahknlmmp(POGOProtos.Rpc.EENOGKMFLCO value) {
+    public Builder addDndahknlmmp(POGOProtos.Rpc.GiftBoxProto value) {
       if (dndahknlmmpBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -574,10 +574,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
     public Builder addDndahknlmmp(
-        int index, POGOProtos.Rpc.EENOGKMFLCO value) {
+        int index, POGOProtos.Rpc.GiftBoxProto value) {
       if (dndahknlmmpBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -591,10 +591,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
     public Builder addDndahknlmmp(
-        POGOProtos.Rpc.EENOGKMFLCO.Builder builderForValue) {
+        POGOProtos.Rpc.GiftBoxProto.Builder builderForValue) {
       if (dndahknlmmpBuilder_ == null) {
         ensureDndahknlmmpIsMutable();
         dndahknlmmp_.add(builderForValue.build());
@@ -605,10 +605,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
     public Builder addDndahknlmmp(
-        int index, POGOProtos.Rpc.EENOGKMFLCO.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GiftBoxProto.Builder builderForValue) {
       if (dndahknlmmpBuilder_ == null) {
         ensureDndahknlmmpIsMutable();
         dndahknlmmp_.add(index, builderForValue.build());
@@ -619,10 +619,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
     public Builder addAllDndahknlmmp(
-        java.lang.Iterable<? extends POGOProtos.Rpc.EENOGKMFLCO> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.GiftBoxProto> values) {
       if (dndahknlmmpBuilder_ == null) {
         ensureDndahknlmmpIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -634,7 +634,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
     public Builder clearDndahknlmmp() {
       if (dndahknlmmpBuilder_ == null) {
@@ -647,7 +647,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
     public Builder removeDndahknlmmp(int index) {
       if (dndahknlmmpBuilder_ == null) {
@@ -660,16 +660,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
-    public POGOProtos.Rpc.EENOGKMFLCO.Builder getDndahknlmmpBuilder(
+    public POGOProtos.Rpc.GiftBoxProto.Builder getDndahknlmmpBuilder(
         int index) {
       return getDndahknlmmpFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
-    public POGOProtos.Rpc.EENOGKMFLCOOrBuilder getDndahknlmmpOrBuilder(
+    public POGOProtos.Rpc.GiftBoxProtoOrBuilder getDndahknlmmpOrBuilder(
         int index) {
       if (dndahknlmmpBuilder_ == null) {
         return dndahknlmmp_.get(index);  } else {
@@ -677,9 +677,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.EENOGKMFLCOOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.GiftBoxProtoOrBuilder> 
          getDndahknlmmpOrBuilderList() {
       if (dndahknlmmpBuilder_ != null) {
         return dndahknlmmpBuilder_.getMessageOrBuilderList();
@@ -688,33 +688,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
-    public POGOProtos.Rpc.EENOGKMFLCO.Builder addDndahknlmmpBuilder() {
+    public POGOProtos.Rpc.GiftBoxProto.Builder addDndahknlmmpBuilder() {
       return getDndahknlmmpFieldBuilder().addBuilder(
-          POGOProtos.Rpc.EENOGKMFLCO.getDefaultInstance());
+          POGOProtos.Rpc.GiftBoxProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
-    public POGOProtos.Rpc.EENOGKMFLCO.Builder addDndahknlmmpBuilder(
+    public POGOProtos.Rpc.GiftBoxProto.Builder addDndahknlmmpBuilder(
         int index) {
       return getDndahknlmmpFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.EENOGKMFLCO.getDefaultInstance());
+          index, POGOProtos.Rpc.GiftBoxProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.EENOGKMFLCO dndahknlmmp = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.GiftBoxProto dndahknlmmp = 1;</code>
      */
-    public java.util.List<POGOProtos.Rpc.EENOGKMFLCO.Builder> 
+    public java.util.List<POGOProtos.Rpc.GiftBoxProto.Builder> 
          getDndahknlmmpBuilderList() {
       return getDndahknlmmpFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.EENOGKMFLCO, POGOProtos.Rpc.EENOGKMFLCO.Builder, POGOProtos.Rpc.EENOGKMFLCOOrBuilder> 
+        POGOProtos.Rpc.GiftBoxProto, POGOProtos.Rpc.GiftBoxProto.Builder, POGOProtos.Rpc.GiftBoxProtoOrBuilder> 
         getDndahknlmmpFieldBuilder() {
       if (dndahknlmmpBuilder_ == null) {
         dndahknlmmpBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.EENOGKMFLCO, POGOProtos.Rpc.EENOGKMFLCO.Builder, POGOProtos.Rpc.EENOGKMFLCOOrBuilder>(
+            POGOProtos.Rpc.GiftBoxProto, POGOProtos.Rpc.GiftBoxProto.Builder, POGOProtos.Rpc.GiftBoxProtoOrBuilder>(
                 dndahknlmmp_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

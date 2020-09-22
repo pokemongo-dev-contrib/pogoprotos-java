@@ -5,7 +5,7 @@ package POGOProtos.Rpc;
 
 /**
  * <pre>
- * ref: AFMBGHHBFCF
+ * ref: BJGCDMLJFCG
  * </pre>
  *
  * Protobuf type {@code POGOProtos.Rpc.EvolvePokemonOutProto}
@@ -61,20 +61,25 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             POGOProtos.Rpc.PokemonProto.Builder subBuilder = null;
-            if (evolvedPokemon_ != null) {
-              subBuilder = evolvedPokemon_.toBuilder();
+            if (jkaaniibbma_ != null) {
+              subBuilder = jkaaniibbma_.toBuilder();
             }
-            evolvedPokemon_ = input.readMessage(POGOProtos.Rpc.PokemonProto.parser(), extensionRegistry);
+            jkaaniibbma_ = input.readMessage(POGOProtos.Rpc.PokemonProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(evolvedPokemon_);
-              evolvedPokemon_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(jkaaniibbma_);
+              jkaaniibbma_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 24: {
 
-            expAwarded_ = input.readInt32();
+            naliljbfokd_ = input.readInt32();
+            break;
+          }
+          case 32: {
+
+            emmphdgkoej_ = input.readInt32();
             break;
           }
           default: {
@@ -111,7 +116,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: AFMBGHHBFCF/IMIJOFNNCBH/FGJNBHONABD
+   * ref: BJGCDMLJFCG/BFGAFHBGJAM/CLENMCIICDI
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.EvolvePokemonOutProto.Result}
@@ -146,10 +151,6 @@ private static final long serialVersionUID = 0L;
      * <code>FAILED_INVALID_ITEM_REQUIREMENT = 6;</code>
      */
     FAILED_INVALID_ITEM_REQUIREMENT(6),
-    /**
-     * <code>FAILED_POKEMON_ALREADY_MEGA_EVOLVED = 7;</code>
-     */
-    FAILED_POKEMON_ALREADY_MEGA_EVOLVED(7),
     UNRECOGNIZED(-1),
     ;
 
@@ -181,10 +182,6 @@ private static final long serialVersionUID = 0L;
      * <code>FAILED_INVALID_ITEM_REQUIREMENT = 6;</code>
      */
     public static final int FAILED_INVALID_ITEM_REQUIREMENT_VALUE = 6;
-    /**
-     * <code>FAILED_POKEMON_ALREADY_MEGA_EVOLVED = 7;</code>
-     */
-    public static final int FAILED_POKEMON_ALREADY_MEGA_EVOLVED_VALUE = 7;
 
 
     public final int getNumber() {
@@ -218,7 +215,6 @@ private static final long serialVersionUID = 0L;
         case 4: return FAILED_POKEMON_CANNOT_EVOLVE;
         case 5: return FAILED_POKEMON_IS_DEPLOYED;
         case 6: return FAILED_INVALID_ITEM_REQUIREMENT;
-        case 7: return FAILED_POKEMON_ALREADY_MEGA_EVOLVED;
         default: return null;
       }
     }
@@ -294,41 +290,52 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.EvolvePokemonOutProto.Result.UNRECOGNIZED : result;
   }
 
-  public static final int EVOLVED_POKEMON_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.PokemonProto evolvedPokemon_;
+  public static final int JKAANIIBBMA_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.PokemonProto jkaaniibbma_;
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
-   * @return Whether the evolvedPokemon field is set.
+   * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
+   * @return Whether the jkaaniibbma field is set.
    */
   @java.lang.Override
-  public boolean hasEvolvedPokemon() {
-    return evolvedPokemon_ != null;
+  public boolean hasJkaaniibbma() {
+    return jkaaniibbma_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
-   * @return The evolvedPokemon.
+   * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
+   * @return The jkaaniibbma.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonProto getEvolvedPokemon() {
-    return evolvedPokemon_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : evolvedPokemon_;
+  public POGOProtos.Rpc.PokemonProto getJkaaniibbma() {
+    return jkaaniibbma_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : jkaaniibbma_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
+   * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonProtoOrBuilder getEvolvedPokemonOrBuilder() {
-    return getEvolvedPokemon();
+  public POGOProtos.Rpc.PokemonProtoOrBuilder getJkaaniibbmaOrBuilder() {
+    return getJkaaniibbma();
   }
 
-  public static final int EXP_AWARDED_FIELD_NUMBER = 3;
-  private int expAwarded_;
+  public static final int NALILJBFOKD_FIELD_NUMBER = 3;
+  private int naliljbfokd_;
   /**
-   * <code>int32 exp_awarded = 3;</code>
-   * @return The expAwarded.
+   * <code>int32 naliljbfokd = 3;</code>
+   * @return The naliljbfokd.
    */
   @java.lang.Override
-  public int getExpAwarded() {
-    return expAwarded_;
+  public int getNaliljbfokd() {
+    return naliljbfokd_;
+  }
+
+  public static final int EMMPHDGKOEJ_FIELD_NUMBER = 4;
+  private int emmphdgkoej_;
+  /**
+   * <code>int32 emmphdgkoej = 4;</code>
+   * @return The emmphdgkoej.
+   */
+  @java.lang.Override
+  public int getEmmphdgkoej() {
+    return emmphdgkoej_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -348,11 +355,14 @@ private static final long serialVersionUID = 0L;
     if (result_ != POGOProtos.Rpc.EvolvePokemonOutProto.Result.UNSET.getNumber()) {
       output.writeEnum(1, result_);
     }
-    if (evolvedPokemon_ != null) {
-      output.writeMessage(2, getEvolvedPokemon());
+    if (jkaaniibbma_ != null) {
+      output.writeMessage(2, getJkaaniibbma());
     }
-    if (expAwarded_ != 0) {
-      output.writeInt32(3, expAwarded_);
+    if (naliljbfokd_ != 0) {
+      output.writeInt32(3, naliljbfokd_);
+    }
+    if (emmphdgkoej_ != 0) {
+      output.writeInt32(4, emmphdgkoej_);
     }
     unknownFields.writeTo(output);
   }
@@ -367,13 +377,17 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }
-    if (evolvedPokemon_ != null) {
+    if (jkaaniibbma_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getEvolvedPokemon());
+        .computeMessageSize(2, getJkaaniibbma());
     }
-    if (expAwarded_ != 0) {
+    if (naliljbfokd_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, expAwarded_);
+        .computeInt32Size(3, naliljbfokd_);
+    }
+    if (emmphdgkoej_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(4, emmphdgkoej_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -391,13 +405,15 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.EvolvePokemonOutProto other = (POGOProtos.Rpc.EvolvePokemonOutProto) obj;
 
     if (result_ != other.result_) return false;
-    if (hasEvolvedPokemon() != other.hasEvolvedPokemon()) return false;
-    if (hasEvolvedPokemon()) {
-      if (!getEvolvedPokemon()
-          .equals(other.getEvolvedPokemon())) return false;
+    if (hasJkaaniibbma() != other.hasJkaaniibbma()) return false;
+    if (hasJkaaniibbma()) {
+      if (!getJkaaniibbma()
+          .equals(other.getJkaaniibbma())) return false;
     }
-    if (getExpAwarded()
-        != other.getExpAwarded()) return false;
+    if (getNaliljbfokd()
+        != other.getNaliljbfokd()) return false;
+    if (getEmmphdgkoej()
+        != other.getEmmphdgkoej()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -411,12 +427,14 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + RESULT_FIELD_NUMBER;
     hash = (53 * hash) + result_;
-    if (hasEvolvedPokemon()) {
-      hash = (37 * hash) + EVOLVED_POKEMON_FIELD_NUMBER;
-      hash = (53 * hash) + getEvolvedPokemon().hashCode();
+    if (hasJkaaniibbma()) {
+      hash = (37 * hash) + JKAANIIBBMA_FIELD_NUMBER;
+      hash = (53 * hash) + getJkaaniibbma().hashCode();
     }
-    hash = (37 * hash) + EXP_AWARDED_FIELD_NUMBER;
-    hash = (53 * hash) + getExpAwarded();
+    hash = (37 * hash) + NALILJBFOKD_FIELD_NUMBER;
+    hash = (53 * hash) + getNaliljbfokd();
+    hash = (37 * hash) + EMMPHDGKOEJ_FIELD_NUMBER;
+    hash = (53 * hash) + getEmmphdgkoej();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -514,7 +532,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: AFMBGHHBFCF
+   * ref: BJGCDMLJFCG
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.EvolvePokemonOutProto}
@@ -556,13 +574,15 @@ private static final long serialVersionUID = 0L;
       super.clear();
       result_ = 0;
 
-      if (evolvedPokemonBuilder_ == null) {
-        evolvedPokemon_ = null;
+      if (jkaaniibbmaBuilder_ == null) {
+        jkaaniibbma_ = null;
       } else {
-        evolvedPokemon_ = null;
-        evolvedPokemonBuilder_ = null;
+        jkaaniibbma_ = null;
+        jkaaniibbmaBuilder_ = null;
       }
-      expAwarded_ = 0;
+      naliljbfokd_ = 0;
+
+      emmphdgkoej_ = 0;
 
       return this;
     }
@@ -591,12 +611,13 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.EvolvePokemonOutProto buildPartial() {
       POGOProtos.Rpc.EvolvePokemonOutProto result = new POGOProtos.Rpc.EvolvePokemonOutProto(this);
       result.result_ = result_;
-      if (evolvedPokemonBuilder_ == null) {
-        result.evolvedPokemon_ = evolvedPokemon_;
+      if (jkaaniibbmaBuilder_ == null) {
+        result.jkaaniibbma_ = jkaaniibbma_;
       } else {
-        result.evolvedPokemon_ = evolvedPokemonBuilder_.build();
+        result.jkaaniibbma_ = jkaaniibbmaBuilder_.build();
       }
-      result.expAwarded_ = expAwarded_;
+      result.naliljbfokd_ = naliljbfokd_;
+      result.emmphdgkoej_ = emmphdgkoej_;
       onBuilt();
       return result;
     }
@@ -648,11 +669,14 @@ private static final long serialVersionUID = 0L;
       if (other.result_ != 0) {
         setResultValue(other.getResultValue());
       }
-      if (other.hasEvolvedPokemon()) {
-        mergeEvolvedPokemon(other.getEvolvedPokemon());
+      if (other.hasJkaaniibbma()) {
+        mergeJkaaniibbma(other.getJkaaniibbma());
       }
-      if (other.getExpAwarded() != 0) {
-        setExpAwarded(other.getExpAwarded());
+      if (other.getNaliljbfokd() != 0) {
+        setNaliljbfokd(other.getNaliljbfokd());
+      }
+      if (other.getEmmphdgkoej() != 0) {
+        setEmmphdgkoej(other.getEmmphdgkoej());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -737,152 +761,183 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.PokemonProto evolvedPokemon_;
+    private POGOProtos.Rpc.PokemonProto jkaaniibbma_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> evolvedPokemonBuilder_;
+        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> jkaaniibbmaBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
-     * @return Whether the evolvedPokemon field is set.
+     * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
+     * @return Whether the jkaaniibbma field is set.
      */
-    public boolean hasEvolvedPokemon() {
-      return evolvedPokemonBuilder_ != null || evolvedPokemon_ != null;
+    public boolean hasJkaaniibbma() {
+      return jkaaniibbmaBuilder_ != null || jkaaniibbma_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
-     * @return The evolvedPokemon.
+     * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
+     * @return The jkaaniibbma.
      */
-    public POGOProtos.Rpc.PokemonProto getEvolvedPokemon() {
-      if (evolvedPokemonBuilder_ == null) {
-        return evolvedPokemon_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : evolvedPokemon_;
+    public POGOProtos.Rpc.PokemonProto getJkaaniibbma() {
+      if (jkaaniibbmaBuilder_ == null) {
+        return jkaaniibbma_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : jkaaniibbma_;
       } else {
-        return evolvedPokemonBuilder_.getMessage();
+        return jkaaniibbmaBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
      */
-    public Builder setEvolvedPokemon(POGOProtos.Rpc.PokemonProto value) {
-      if (evolvedPokemonBuilder_ == null) {
+    public Builder setJkaaniibbma(POGOProtos.Rpc.PokemonProto value) {
+      if (jkaaniibbmaBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        evolvedPokemon_ = value;
+        jkaaniibbma_ = value;
         onChanged();
       } else {
-        evolvedPokemonBuilder_.setMessage(value);
+        jkaaniibbmaBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
      */
-    public Builder setEvolvedPokemon(
+    public Builder setJkaaniibbma(
         POGOProtos.Rpc.PokemonProto.Builder builderForValue) {
-      if (evolvedPokemonBuilder_ == null) {
-        evolvedPokemon_ = builderForValue.build();
+      if (jkaaniibbmaBuilder_ == null) {
+        jkaaniibbma_ = builderForValue.build();
         onChanged();
       } else {
-        evolvedPokemonBuilder_.setMessage(builderForValue.build());
+        jkaaniibbmaBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
      */
-    public Builder mergeEvolvedPokemon(POGOProtos.Rpc.PokemonProto value) {
-      if (evolvedPokemonBuilder_ == null) {
-        if (evolvedPokemon_ != null) {
-          evolvedPokemon_ =
-            POGOProtos.Rpc.PokemonProto.newBuilder(evolvedPokemon_).mergeFrom(value).buildPartial();
+    public Builder mergeJkaaniibbma(POGOProtos.Rpc.PokemonProto value) {
+      if (jkaaniibbmaBuilder_ == null) {
+        if (jkaaniibbma_ != null) {
+          jkaaniibbma_ =
+            POGOProtos.Rpc.PokemonProto.newBuilder(jkaaniibbma_).mergeFrom(value).buildPartial();
         } else {
-          evolvedPokemon_ = value;
+          jkaaniibbma_ = value;
         }
         onChanged();
       } else {
-        evolvedPokemonBuilder_.mergeFrom(value);
+        jkaaniibbmaBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
      */
-    public Builder clearEvolvedPokemon() {
-      if (evolvedPokemonBuilder_ == null) {
-        evolvedPokemon_ = null;
+    public Builder clearJkaaniibbma() {
+      if (jkaaniibbmaBuilder_ == null) {
+        jkaaniibbma_ = null;
         onChanged();
       } else {
-        evolvedPokemon_ = null;
-        evolvedPokemonBuilder_ = null;
+        jkaaniibbma_ = null;
+        jkaaniibbmaBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
      */
-    public POGOProtos.Rpc.PokemonProto.Builder getEvolvedPokemonBuilder() {
+    public POGOProtos.Rpc.PokemonProto.Builder getJkaaniibbmaBuilder() {
       
       onChanged();
-      return getEvolvedPokemonFieldBuilder().getBuilder();
+      return getJkaaniibbmaFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
      */
-    public POGOProtos.Rpc.PokemonProtoOrBuilder getEvolvedPokemonOrBuilder() {
-      if (evolvedPokemonBuilder_ != null) {
-        return evolvedPokemonBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.PokemonProtoOrBuilder getJkaaniibbmaOrBuilder() {
+      if (jkaaniibbmaBuilder_ != null) {
+        return jkaaniibbmaBuilder_.getMessageOrBuilder();
       } else {
-        return evolvedPokemon_ == null ?
-            POGOProtos.Rpc.PokemonProto.getDefaultInstance() : evolvedPokemon_;
+        return jkaaniibbma_ == null ?
+            POGOProtos.Rpc.PokemonProto.getDefaultInstance() : jkaaniibbma_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto evolved_pokemon = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonProto jkaaniibbma = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> 
-        getEvolvedPokemonFieldBuilder() {
-      if (evolvedPokemonBuilder_ == null) {
-        evolvedPokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getJkaaniibbmaFieldBuilder() {
+      if (jkaaniibbmaBuilder_ == null) {
+        jkaaniibbmaBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder>(
-                getEvolvedPokemon(),
+                getJkaaniibbma(),
                 getParentForChildren(),
                 isClean());
-        evolvedPokemon_ = null;
+        jkaaniibbma_ = null;
       }
-      return evolvedPokemonBuilder_;
+      return jkaaniibbmaBuilder_;
     }
 
-    private int expAwarded_ ;
+    private int naliljbfokd_ ;
     /**
-     * <code>int32 exp_awarded = 3;</code>
-     * @return The expAwarded.
+     * <code>int32 naliljbfokd = 3;</code>
+     * @return The naliljbfokd.
      */
     @java.lang.Override
-    public int getExpAwarded() {
-      return expAwarded_;
+    public int getNaliljbfokd() {
+      return naliljbfokd_;
     }
     /**
-     * <code>int32 exp_awarded = 3;</code>
-     * @param value The expAwarded to set.
+     * <code>int32 naliljbfokd = 3;</code>
+     * @param value The naliljbfokd to set.
      * @return This builder for chaining.
      */
-    public Builder setExpAwarded(int value) {
+    public Builder setNaliljbfokd(int value) {
       
-      expAwarded_ = value;
+      naliljbfokd_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 exp_awarded = 3;</code>
+     * <code>int32 naliljbfokd = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearExpAwarded() {
+    public Builder clearNaliljbfokd() {
       
-      expAwarded_ = 0;
+      naliljbfokd_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int emmphdgkoej_ ;
+    /**
+     * <code>int32 emmphdgkoej = 4;</code>
+     * @return The emmphdgkoej.
+     */
+    @java.lang.Override
+    public int getEmmphdgkoej() {
+      return emmphdgkoej_;
+    }
+    /**
+     * <code>int32 emmphdgkoej = 4;</code>
+     * @param value The emmphdgkoej to set.
+     * @return This builder for chaining.
+     */
+    public Builder setEmmphdgkoej(int value) {
+      
+      emmphdgkoej_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 emmphdgkoej = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearEmmphdgkoej() {
+      
+      emmphdgkoej_ = 0;
       onChanged();
       return this;
     }
