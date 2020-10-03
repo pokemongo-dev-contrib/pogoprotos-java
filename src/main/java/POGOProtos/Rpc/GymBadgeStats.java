@@ -81,11 +81,11 @@ private static final long serialVersionUID = 0L;
           }
           case 138: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              fdhnjelbilf_ = new java.util.ArrayList<POGOProtos.Rpc.JOHEPGOFODD>();
+              fdhnjelbilf_ = new java.util.ArrayList<POGOProtos.Rpc.GymBattleProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             fdhnjelbilf_.add(
-                input.readMessage(POGOProtos.Rpc.JOHEPGOFODD.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.GymBattleProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -179,41 +179,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FDHNJELBILF_FIELD_NUMBER = 17;
-  private java.util.List<POGOProtos.Rpc.JOHEPGOFODD> fdhnjelbilf_;
+  private java.util.List<POGOProtos.Rpc.GymBattleProto> fdhnjelbilf_;
   /**
-   * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.JOHEPGOFODD> getFdhnjelbilfList() {
+  public java.util.List<POGOProtos.Rpc.GymBattleProto> getFdhnjelbilfList() {
     return fdhnjelbilf_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.JOHEPGOFODDOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.GymBattleProtoOrBuilder> 
       getFdhnjelbilfOrBuilderList() {
     return fdhnjelbilf_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
    */
   @java.lang.Override
   public int getFdhnjelbilfCount() {
     return fdhnjelbilf_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.JOHEPGOFODD getFdhnjelbilf(int index) {
+  public POGOProtos.Rpc.GymBattleProto getFdhnjelbilf(int index) {
     return fdhnjelbilf_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.JOHEPGOFODDOrBuilder getFdhnjelbilfOrBuilder(
+  public POGOProtos.Rpc.GymBattleProtoOrBuilder getFdhnjelbilfOrBuilder(
       int index) {
     return fdhnjelbilf_.get(index);
   }
@@ -805,22 +805,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.JOHEPGOFODD> fdhnjelbilf_ =
+    private java.util.List<POGOProtos.Rpc.GymBattleProto> fdhnjelbilf_ =
       java.util.Collections.emptyList();
     private void ensureFdhnjelbilfIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        fdhnjelbilf_ = new java.util.ArrayList<POGOProtos.Rpc.JOHEPGOFODD>(fdhnjelbilf_);
+        fdhnjelbilf_ = new java.util.ArrayList<POGOProtos.Rpc.GymBattleProto>(fdhnjelbilf_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.JOHEPGOFODD, POGOProtos.Rpc.JOHEPGOFODD.Builder, POGOProtos.Rpc.JOHEPGOFODDOrBuilder> fdhnjelbilfBuilder_;
+        POGOProtos.Rpc.GymBattleProto, POGOProtos.Rpc.GymBattleProto.Builder, POGOProtos.Rpc.GymBattleProtoOrBuilder> fdhnjelbilfBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
-    public java.util.List<POGOProtos.Rpc.JOHEPGOFODD> getFdhnjelbilfList() {
+    public java.util.List<POGOProtos.Rpc.GymBattleProto> getFdhnjelbilfList() {
       if (fdhnjelbilfBuilder_ == null) {
         return java.util.Collections.unmodifiableList(fdhnjelbilf_);
       } else {
@@ -828,7 +828,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
     public int getFdhnjelbilfCount() {
       if (fdhnjelbilfBuilder_ == null) {
@@ -838,9 +838,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
-    public POGOProtos.Rpc.JOHEPGOFODD getFdhnjelbilf(int index) {
+    public POGOProtos.Rpc.GymBattleProto getFdhnjelbilf(int index) {
       if (fdhnjelbilfBuilder_ == null) {
         return fdhnjelbilf_.get(index);
       } else {
@@ -848,10 +848,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
     public Builder setFdhnjelbilf(
-        int index, POGOProtos.Rpc.JOHEPGOFODD value) {
+        int index, POGOProtos.Rpc.GymBattleProto value) {
       if (fdhnjelbilfBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -865,10 +865,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
     public Builder setFdhnjelbilf(
-        int index, POGOProtos.Rpc.JOHEPGOFODD.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GymBattleProto.Builder builderForValue) {
       if (fdhnjelbilfBuilder_ == null) {
         ensureFdhnjelbilfIsMutable();
         fdhnjelbilf_.set(index, builderForValue.build());
@@ -879,9 +879,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
-    public Builder addFdhnjelbilf(POGOProtos.Rpc.JOHEPGOFODD value) {
+    public Builder addFdhnjelbilf(POGOProtos.Rpc.GymBattleProto value) {
       if (fdhnjelbilfBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -895,10 +895,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
     public Builder addFdhnjelbilf(
-        int index, POGOProtos.Rpc.JOHEPGOFODD value) {
+        int index, POGOProtos.Rpc.GymBattleProto value) {
       if (fdhnjelbilfBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -912,10 +912,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
     public Builder addFdhnjelbilf(
-        POGOProtos.Rpc.JOHEPGOFODD.Builder builderForValue) {
+        POGOProtos.Rpc.GymBattleProto.Builder builderForValue) {
       if (fdhnjelbilfBuilder_ == null) {
         ensureFdhnjelbilfIsMutable();
         fdhnjelbilf_.add(builderForValue.build());
@@ -926,10 +926,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
     public Builder addFdhnjelbilf(
-        int index, POGOProtos.Rpc.JOHEPGOFODD.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GymBattleProto.Builder builderForValue) {
       if (fdhnjelbilfBuilder_ == null) {
         ensureFdhnjelbilfIsMutable();
         fdhnjelbilf_.add(index, builderForValue.build());
@@ -940,10 +940,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
     public Builder addAllFdhnjelbilf(
-        java.lang.Iterable<? extends POGOProtos.Rpc.JOHEPGOFODD> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.GymBattleProto> values) {
       if (fdhnjelbilfBuilder_ == null) {
         ensureFdhnjelbilfIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -955,7 +955,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
     public Builder clearFdhnjelbilf() {
       if (fdhnjelbilfBuilder_ == null) {
@@ -968,7 +968,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
     public Builder removeFdhnjelbilf(int index) {
       if (fdhnjelbilfBuilder_ == null) {
@@ -981,16 +981,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
-    public POGOProtos.Rpc.JOHEPGOFODD.Builder getFdhnjelbilfBuilder(
+    public POGOProtos.Rpc.GymBattleProto.Builder getFdhnjelbilfBuilder(
         int index) {
       return getFdhnjelbilfFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
-    public POGOProtos.Rpc.JOHEPGOFODDOrBuilder getFdhnjelbilfOrBuilder(
+    public POGOProtos.Rpc.GymBattleProtoOrBuilder getFdhnjelbilfOrBuilder(
         int index) {
       if (fdhnjelbilfBuilder_ == null) {
         return fdhnjelbilf_.get(index);  } else {
@@ -998,9 +998,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.JOHEPGOFODDOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.GymBattleProtoOrBuilder> 
          getFdhnjelbilfOrBuilderList() {
       if (fdhnjelbilfBuilder_ != null) {
         return fdhnjelbilfBuilder_.getMessageOrBuilderList();
@@ -1009,33 +1009,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
-    public POGOProtos.Rpc.JOHEPGOFODD.Builder addFdhnjelbilfBuilder() {
+    public POGOProtos.Rpc.GymBattleProto.Builder addFdhnjelbilfBuilder() {
       return getFdhnjelbilfFieldBuilder().addBuilder(
-          POGOProtos.Rpc.JOHEPGOFODD.getDefaultInstance());
+          POGOProtos.Rpc.GymBattleProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
-    public POGOProtos.Rpc.JOHEPGOFODD.Builder addFdhnjelbilfBuilder(
+    public POGOProtos.Rpc.GymBattleProto.Builder addFdhnjelbilfBuilder(
         int index) {
       return getFdhnjelbilfFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.JOHEPGOFODD.getDefaultInstance());
+          index, POGOProtos.Rpc.GymBattleProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
      */
-    public java.util.List<POGOProtos.Rpc.JOHEPGOFODD.Builder> 
+    public java.util.List<POGOProtos.Rpc.GymBattleProto.Builder> 
          getFdhnjelbilfBuilderList() {
       return getFdhnjelbilfFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.JOHEPGOFODD, POGOProtos.Rpc.JOHEPGOFODD.Builder, POGOProtos.Rpc.JOHEPGOFODDOrBuilder> 
+        POGOProtos.Rpc.GymBattleProto, POGOProtos.Rpc.GymBattleProto.Builder, POGOProtos.Rpc.GymBattleProtoOrBuilder> 
         getFdhnjelbilfFieldBuilder() {
       if (fdhnjelbilfBuilder_ == null) {
         fdhnjelbilfBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.JOHEPGOFODD, POGOProtos.Rpc.JOHEPGOFODD.Builder, POGOProtos.Rpc.JOHEPGOFODDOrBuilder>(
+            POGOProtos.Rpc.GymBattleProto, POGOProtos.Rpc.GymBattleProto.Builder, POGOProtos.Rpc.GymBattleProtoOrBuilder>(
                 fdhnjelbilf_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

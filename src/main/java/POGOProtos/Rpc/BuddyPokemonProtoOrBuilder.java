@@ -8,47 +8,47 @@ public interface BuddyPokemonProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>uint64 jkenapdnljb = 1;</code>
-   * @return The jkenapdnljb.
+   * <code>fixed64 buddy_pokemon_id = 1;</code>
+   * @return The buddyPokemonId.
    */
-  long getJkenapdnljb();
+  long getBuddyPokemonId();
 
   /**
-   * <code>double gcnhojkbghp = 2;</code>
-   * @return The gcnhojkbghp.
+   * <code>double start_km_walked = 2;</code>
+   * @return The startKmWalked.
    */
-  double getGcnhojkbghp();
+  double getStartKmWalked();
 
   /**
-   * <code>double aphbdljdccf = 3;</code>
-   * @return The aphbdljdccf.
+   * <code>double last_km_awarded = 3;</code>
+   * @return The lastKmAwarded.
    */
-  double getAphbdljdccf();
+  double getLastKmAwarded();
 
   /**
-   * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
-   * @return Whether the bfhhnfniilo field is set.
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
+   * @return Whether the dailyBuddySwaps field is set.
    */
-  boolean hasBfhhnfniilo();
+  boolean hasDailyBuddySwaps();
   /**
-   * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
-   * @return The bfhhnfniilo.
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
+   * @return The dailyBuddySwaps.
    */
-  POGOProtos.Rpc.DailyCounterProto getBfhhnfniilo();
+  POGOProtos.Rpc.DailyCounterProto getDailyBuddySwaps();
   /**
-   * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
    */
-  POGOProtos.Rpc.DailyCounterProtoOrBuilder getBfhhnfniiloOrBuilder();
+  POGOProtos.Rpc.DailyCounterProtoOrBuilder getDailyBuddySwapsOrBuilder();
 
   /**
-   * <code>int64 focomgejgnj = 5;</code>
-   * @return The focomgejgnj.
+   * <code>int64 last_km_awarded_ms = 5;</code>
+   * @return The lastKmAwardedMs.
    */
-  long getFocomgejgnj();
+  long getLastKmAwardedMs();
 
   /**
-   * <code>bool agdodlmbfng = 6;</code>
-   * @return The agdodlmbfng.
+   * <code>bool best_buddies_backfilled = 6;</code>
+   * @return The bestBuddiesBackfilled.
    */
-  boolean getAgdodlmbfng();
+  boolean getBestBuddiesBackfilled();
 }

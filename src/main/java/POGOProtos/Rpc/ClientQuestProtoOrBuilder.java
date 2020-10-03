@@ -8,32 +8,32 @@ public interface ClientQuestProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
-   * @return Whether the iblilgjehdh field is set.
+   * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
+   * @return Whether the quest field is set.
    */
-  boolean hasIblilgjehdh();
+  boolean hasQuest();
   /**
-   * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
-   * @return The iblilgjehdh.
+   * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
+   * @return The quest.
    */
-  POGOProtos.Rpc.QuestProto getIblilgjehdh();
+  POGOProtos.Rpc.QuestProto getQuest();
   /**
-   * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
+   * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
    */
-  POGOProtos.Rpc.QuestProtoOrBuilder getIblilgjehdhOrBuilder();
+  POGOProtos.Rpc.QuestProtoOrBuilder getQuestOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
-   * @return Whether the pbiankchnhp field is set.
+   * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
+   * @return Whether the questDisplay field is set.
    */
-  boolean hasPbiankchnhp();
+  boolean hasQuestDisplay();
   /**
-   * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
-   * @return The pbiankchnhp.
+   * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
+   * @return The questDisplay.
    */
-  POGOProtos.Rpc.QuestDisplayProto getPbiankchnhp();
+  POGOProtos.Rpc.QuestDisplayProto getQuestDisplay();
   /**
-   * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
+   * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
    */
-  POGOProtos.Rpc.QuestDisplayProtoOrBuilder getPbiankchnhpOrBuilder();
+  POGOProtos.Rpc.QuestDisplayProtoOrBuilder getQuestDisplayOrBuilder();
 }

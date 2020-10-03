@@ -248,20 +248,20 @@ private static final long serialVersionUID = 0L;
   public static final int KBFOAMGJIGC_FIELD_NUMBER = 2;
   private int kbfoamgjigc_;
   /**
-   * <code>.POGOProtos.Rpc.TitanPoiImageType kbfoamgjigc = 2;</code>
+   * <code>.POGOProtos.Rpc.PoiImageType kbfoamgjigc = 2;</code>
    * @return The enum numeric value on the wire for kbfoamgjigc.
    */
   @java.lang.Override public int getKbfoamgjigcValue() {
     return kbfoamgjigc_;
   }
   /**
-   * <code>.POGOProtos.Rpc.TitanPoiImageType kbfoamgjigc = 2;</code>
+   * <code>.POGOProtos.Rpc.PoiImageType kbfoamgjigc = 2;</code>
    * @return The kbfoamgjigc.
    */
-  @java.lang.Override public POGOProtos.Rpc.TitanPoiImageType getKbfoamgjigc() {
+  @java.lang.Override public POGOProtos.Rpc.PoiImageType getKbfoamgjigc() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.TitanPoiImageType result = POGOProtos.Rpc.TitanPoiImageType.valueOf(kbfoamgjigc_);
-    return result == null ? POGOProtos.Rpc.TitanPoiImageType.UNRECOGNIZED : result;
+    POGOProtos.Rpc.PoiImageType result = POGOProtos.Rpc.PoiImageType.valueOf(kbfoamgjigc_);
+    return result == null ? POGOProtos.Rpc.PoiImageType.UNRECOGNIZED : result;
   }
 
   public static final int NOBAOIHMGLN_FIELD_NUMBER = 3;
@@ -319,7 +319,7 @@ private static final long serialVersionUID = 0L;
     if (hncojddbiio_ != POGOProtos.Rpc.PEAOBONCJBN.FCMLGPGMGNJ.UNSET.getNumber()) {
       output.writeEnum(1, hncojddbiio_);
     }
-    if (kbfoamgjigc_ != POGOProtos.Rpc.TitanPoiImageType.TITAN_POI_IMAGE_TYPE_UNSET.getNumber()) {
+    if (kbfoamgjigc_ != POGOProtos.Rpc.PoiImageType.POI_IMAGE_TYPE_UNSET.getNumber()) {
       output.writeEnum(2, kbfoamgjigc_);
     }
     if (!getNobaoihmglnBytes().isEmpty()) {
@@ -338,7 +338,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, hncojddbiio_);
     }
-    if (kbfoamgjigc_ != POGOProtos.Rpc.TitanPoiImageType.TITAN_POI_IMAGE_TYPE_UNSET.getNumber()) {
+    if (kbfoamgjigc_ != POGOProtos.Rpc.PoiImageType.POI_IMAGE_TYPE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, kbfoamgjigc_);
     }
@@ -696,14 +696,14 @@ private static final long serialVersionUID = 0L;
 
     private int kbfoamgjigc_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.TitanPoiImageType kbfoamgjigc = 2;</code>
+     * <code>.POGOProtos.Rpc.PoiImageType kbfoamgjigc = 2;</code>
      * @return The enum numeric value on the wire for kbfoamgjigc.
      */
     @java.lang.Override public int getKbfoamgjigcValue() {
       return kbfoamgjigc_;
     }
     /**
-     * <code>.POGOProtos.Rpc.TitanPoiImageType kbfoamgjigc = 2;</code>
+     * <code>.POGOProtos.Rpc.PoiImageType kbfoamgjigc = 2;</code>
      * @param value The enum numeric value on the wire for kbfoamgjigc to set.
      * @return This builder for chaining.
      */
@@ -714,21 +714,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.TitanPoiImageType kbfoamgjigc = 2;</code>
+     * <code>.POGOProtos.Rpc.PoiImageType kbfoamgjigc = 2;</code>
      * @return The kbfoamgjigc.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.TitanPoiImageType getKbfoamgjigc() {
+    public POGOProtos.Rpc.PoiImageType getKbfoamgjigc() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.TitanPoiImageType result = POGOProtos.Rpc.TitanPoiImageType.valueOf(kbfoamgjigc_);
-      return result == null ? POGOProtos.Rpc.TitanPoiImageType.UNRECOGNIZED : result;
+      POGOProtos.Rpc.PoiImageType result = POGOProtos.Rpc.PoiImageType.valueOf(kbfoamgjigc_);
+      return result == null ? POGOProtos.Rpc.PoiImageType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.TitanPoiImageType kbfoamgjigc = 2;</code>
+     * <code>.POGOProtos.Rpc.PoiImageType kbfoamgjigc = 2;</code>
      * @param value The kbfoamgjigc to set.
      * @return This builder for chaining.
      */
-    public Builder setKbfoamgjigc(POGOProtos.Rpc.TitanPoiImageType value) {
+    public Builder setKbfoamgjigc(POGOProtos.Rpc.PoiImageType value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -738,7 +738,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.TitanPoiImageType kbfoamgjigc = 2;</code>
+     * <code>.POGOProtos.Rpc.PoiImageType kbfoamgjigc = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearKbfoamgjigc() {

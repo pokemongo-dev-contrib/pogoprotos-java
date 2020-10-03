@@ -8,31 +8,31 @@ public interface AssetPoiDownloadTelemetryOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-   * @return The enum numeric value on the wire for hiijbokbgde.
+   * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+   * @return The enum numeric value on the wire for assetEventId.
    */
-  int getHiijbokbgdeValue();
+  int getAssetEventIdValue();
   /**
-   * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-   * @return The hiijbokbgde.
+   * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+   * @return The assetEventId.
    */
-  POGOProtos.Rpc.AssetTelemetryIds getHiijbokbgde();
+  POGOProtos.Rpc.AssetTelemetryIds getAssetEventId();
 
   /**
-   * <code>string lndigkkjfml = 2;</code>
-   * @return The lndigkkjfml.
+   * <code>string fort_id = 2;</code>
+   * @return The fortId.
    */
-  java.lang.String getLndigkkjfml();
+  java.lang.String getFortId();
   /**
-   * <code>string lndigkkjfml = 2;</code>
-   * @return The bytes for lndigkkjfml.
+   * <code>string fort_id = 2;</code>
+   * @return The bytes for fortId.
    */
   com.google.protobuf.ByteString
-      getLndigkkjfmlBytes();
+      getFortIdBytes();
 
   /**
-   * <code>uint32 djkelmocljo = 3;</code>
-   * @return The djkelmocljo.
+   * <code>uint32 size = 3;</code>
+   * @return The size.
    */
-  int getDjkelmocljo();
+  int getSize();
 }

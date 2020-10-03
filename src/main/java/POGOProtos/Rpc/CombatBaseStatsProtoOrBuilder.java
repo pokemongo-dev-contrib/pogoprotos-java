@@ -8,20 +8,20 @@ public interface CombatBaseStatsProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int32 mbjmbggodpa = 1;</code>
-   * @return The mbjmbggodpa.
+   * <code>int32 total_battles = 1;</code>
+   * @return The totalBattles.
    */
-  int getMbjmbggodpa();
+  int getTotalBattles();
 
   /**
-   * <code>int32 oclmbbphlgj = 2;</code>
-   * @return The oclmbbphlgj.
+   * <code>int32 wins = 2;</code>
+   * @return The wins.
    */
-  int getOclmbbphlgj();
+  int getWins();
 
   /**
-   * <code>float bpcigoddmja = 3;</code>
-   * @return The bpcigoddmja.
+   * <code>float rating = 3;</code>
+   * @return The rating.
    */
-  float getBpcigoddmja();
+  float getRating();
 }

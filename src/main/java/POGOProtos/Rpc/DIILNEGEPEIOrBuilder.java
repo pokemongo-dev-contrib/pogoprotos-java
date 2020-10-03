@@ -53,19 +53,19 @@ public interface DIILNEGEPEIOrBuilder extends
   POGOProtos.Rpc.EBNLAIFABEPOrBuilder getPlayerMetadataTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
    * @return Whether the ckboefenjcf field is set.
    */
   boolean hasCkboefenjcf();
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
    * @return The ckboefenjcf.
    */
-  POGOProtos.Rpc.PlatformServerData getCkboefenjcf();
+  POGOProtos.Rpc.PlatformPlatformServerData getCkboefenjcf();
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
    */
-  POGOProtos.Rpc.PlatformServerDataOrBuilder getCkboefenjcfOrBuilder();
+  POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getCkboefenjcfOrBuilder();
 
   public POGOProtos.Rpc.DIILNEGEPEI.DataCase getDataCase();
 }

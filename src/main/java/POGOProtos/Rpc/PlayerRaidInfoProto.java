@@ -66,11 +66,11 @@ private static final long serialVersionUID = 0L;
           }
           case 42: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              bilabhihdjn_ = new java.util.ArrayList<POGOProtos.Rpc.IOKGECIIAMP>();
+              bilabhihdjn_ = new java.util.ArrayList<POGOProtos.Rpc.RaidProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             bilabhihdjn_.add(
-                input.readMessage(POGOProtos.Rpc.IOKGECIIAMP.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.RaidProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -131,41 +131,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int BILABHIHDJN_FIELD_NUMBER = 5;
-  private java.util.List<POGOProtos.Rpc.IOKGECIIAMP> bilabhihdjn_;
+  private java.util.List<POGOProtos.Rpc.RaidProto> bilabhihdjn_;
   /**
-   * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.IOKGECIIAMP> getBilabhihdjnList() {
+  public java.util.List<POGOProtos.Rpc.RaidProto> getBilabhihdjnList() {
     return bilabhihdjn_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.IOKGECIIAMPOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.RaidProtoOrBuilder> 
       getBilabhihdjnOrBuilderList() {
     return bilabhihdjn_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
    */
   @java.lang.Override
   public int getBilabhihdjnCount() {
     return bilabhihdjn_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.IOKGECIIAMP getBilabhihdjn(int index) {
+  public POGOProtos.Rpc.RaidProto getBilabhihdjn(int index) {
     return bilabhihdjn_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.IOKGECIIAMPOrBuilder getBilabhihdjnOrBuilder(
+  public POGOProtos.Rpc.RaidProtoOrBuilder getBilabhihdjnOrBuilder(
       int index) {
     return bilabhihdjn_.get(index);
   }
@@ -612,22 +612,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.IOKGECIIAMP> bilabhihdjn_ =
+    private java.util.List<POGOProtos.Rpc.RaidProto> bilabhihdjn_ =
       java.util.Collections.emptyList();
     private void ensureBilabhihdjnIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        bilabhihdjn_ = new java.util.ArrayList<POGOProtos.Rpc.IOKGECIIAMP>(bilabhihdjn_);
+        bilabhihdjn_ = new java.util.ArrayList<POGOProtos.Rpc.RaidProto>(bilabhihdjn_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.IOKGECIIAMP, POGOProtos.Rpc.IOKGECIIAMP.Builder, POGOProtos.Rpc.IOKGECIIAMPOrBuilder> bilabhihdjnBuilder_;
+        POGOProtos.Rpc.RaidProto, POGOProtos.Rpc.RaidProto.Builder, POGOProtos.Rpc.RaidProtoOrBuilder> bilabhihdjnBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
-    public java.util.List<POGOProtos.Rpc.IOKGECIIAMP> getBilabhihdjnList() {
+    public java.util.List<POGOProtos.Rpc.RaidProto> getBilabhihdjnList() {
       if (bilabhihdjnBuilder_ == null) {
         return java.util.Collections.unmodifiableList(bilabhihdjn_);
       } else {
@@ -635,7 +635,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
     public int getBilabhihdjnCount() {
       if (bilabhihdjnBuilder_ == null) {
@@ -645,9 +645,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
-    public POGOProtos.Rpc.IOKGECIIAMP getBilabhihdjn(int index) {
+    public POGOProtos.Rpc.RaidProto getBilabhihdjn(int index) {
       if (bilabhihdjnBuilder_ == null) {
         return bilabhihdjn_.get(index);
       } else {
@@ -655,10 +655,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
     public Builder setBilabhihdjn(
-        int index, POGOProtos.Rpc.IOKGECIIAMP value) {
+        int index, POGOProtos.Rpc.RaidProto value) {
       if (bilabhihdjnBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -672,10 +672,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
     public Builder setBilabhihdjn(
-        int index, POGOProtos.Rpc.IOKGECIIAMP.Builder builderForValue) {
+        int index, POGOProtos.Rpc.RaidProto.Builder builderForValue) {
       if (bilabhihdjnBuilder_ == null) {
         ensureBilabhihdjnIsMutable();
         bilabhihdjn_.set(index, builderForValue.build());
@@ -686,9 +686,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
-    public Builder addBilabhihdjn(POGOProtos.Rpc.IOKGECIIAMP value) {
+    public Builder addBilabhihdjn(POGOProtos.Rpc.RaidProto value) {
       if (bilabhihdjnBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -702,10 +702,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
     public Builder addBilabhihdjn(
-        int index, POGOProtos.Rpc.IOKGECIIAMP value) {
+        int index, POGOProtos.Rpc.RaidProto value) {
       if (bilabhihdjnBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -719,10 +719,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
     public Builder addBilabhihdjn(
-        POGOProtos.Rpc.IOKGECIIAMP.Builder builderForValue) {
+        POGOProtos.Rpc.RaidProto.Builder builderForValue) {
       if (bilabhihdjnBuilder_ == null) {
         ensureBilabhihdjnIsMutable();
         bilabhihdjn_.add(builderForValue.build());
@@ -733,10 +733,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
     public Builder addBilabhihdjn(
-        int index, POGOProtos.Rpc.IOKGECIIAMP.Builder builderForValue) {
+        int index, POGOProtos.Rpc.RaidProto.Builder builderForValue) {
       if (bilabhihdjnBuilder_ == null) {
         ensureBilabhihdjnIsMutable();
         bilabhihdjn_.add(index, builderForValue.build());
@@ -747,10 +747,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
     public Builder addAllBilabhihdjn(
-        java.lang.Iterable<? extends POGOProtos.Rpc.IOKGECIIAMP> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.RaidProto> values) {
       if (bilabhihdjnBuilder_ == null) {
         ensureBilabhihdjnIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -762,7 +762,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
     public Builder clearBilabhihdjn() {
       if (bilabhihdjnBuilder_ == null) {
@@ -775,7 +775,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
     public Builder removeBilabhihdjn(int index) {
       if (bilabhihdjnBuilder_ == null) {
@@ -788,16 +788,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
-    public POGOProtos.Rpc.IOKGECIIAMP.Builder getBilabhihdjnBuilder(
+    public POGOProtos.Rpc.RaidProto.Builder getBilabhihdjnBuilder(
         int index) {
       return getBilabhihdjnFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
-    public POGOProtos.Rpc.IOKGECIIAMPOrBuilder getBilabhihdjnOrBuilder(
+    public POGOProtos.Rpc.RaidProtoOrBuilder getBilabhihdjnOrBuilder(
         int index) {
       if (bilabhihdjnBuilder_ == null) {
         return bilabhihdjn_.get(index);  } else {
@@ -805,9 +805,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.IOKGECIIAMPOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.RaidProtoOrBuilder> 
          getBilabhihdjnOrBuilderList() {
       if (bilabhihdjnBuilder_ != null) {
         return bilabhihdjnBuilder_.getMessageOrBuilderList();
@@ -816,33 +816,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
-    public POGOProtos.Rpc.IOKGECIIAMP.Builder addBilabhihdjnBuilder() {
+    public POGOProtos.Rpc.RaidProto.Builder addBilabhihdjnBuilder() {
       return getBilabhihdjnFieldBuilder().addBuilder(
-          POGOProtos.Rpc.IOKGECIIAMP.getDefaultInstance());
+          POGOProtos.Rpc.RaidProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
-    public POGOProtos.Rpc.IOKGECIIAMP.Builder addBilabhihdjnBuilder(
+    public POGOProtos.Rpc.RaidProto.Builder addBilabhihdjnBuilder(
         int index) {
       return getBilabhihdjnFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.IOKGECIIAMP.getDefaultInstance());
+          index, POGOProtos.Rpc.RaidProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+     * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
      */
-    public java.util.List<POGOProtos.Rpc.IOKGECIIAMP.Builder> 
+    public java.util.List<POGOProtos.Rpc.RaidProto.Builder> 
          getBilabhihdjnBuilderList() {
       return getBilabhihdjnFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.IOKGECIIAMP, POGOProtos.Rpc.IOKGECIIAMP.Builder, POGOProtos.Rpc.IOKGECIIAMPOrBuilder> 
+        POGOProtos.Rpc.RaidProto, POGOProtos.Rpc.RaidProto.Builder, POGOProtos.Rpc.RaidProtoOrBuilder> 
         getBilabhihdjnFieldBuilder() {
       if (bilabhihdjnBuilder_ == null) {
         bilabhihdjnBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.IOKGECIIAMP, POGOProtos.Rpc.IOKGECIIAMP.Builder, POGOProtos.Rpc.IOKGECIIAMPOrBuilder>(
+            POGOProtos.Rpc.RaidProto, POGOProtos.Rpc.RaidProto.Builder, POGOProtos.Rpc.RaidProtoOrBuilder>(
                 bilabhihdjn_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

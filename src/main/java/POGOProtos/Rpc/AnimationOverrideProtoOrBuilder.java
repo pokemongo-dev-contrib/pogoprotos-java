@@ -8,31 +8,31 @@ public interface AnimationOverrideProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF bdiceomajhl = 1;</code>
-   * @return The enum numeric value on the wire for bdiceomajhl.
+   * <code>.POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim animation = 1;</code>
+   * @return The enum numeric value on the wire for animation.
    */
-  int getBdiceomajhlValue();
+  int getAnimationValue();
   /**
-   * <code>.POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF bdiceomajhl = 1;</code>
-   * @return The bdiceomajhl.
+   * <code>.POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim animation = 1;</code>
+   * @return The animation.
    */
-  POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF getBdiceomajhl();
+  POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim getAnimation();
 
   /**
-   * <code>bool mgojhjjaopi = 2;</code>
-   * @return The mgojhjjaopi.
+   * <code>bool blacklist = 2;</code>
+   * @return The blacklist.
    */
-  boolean getMgojhjjaopi();
+  boolean getBlacklist();
 
   /**
-   * <code>float akkaelodadh = 3;</code>
-   * @return The akkaelodadh.
+   * <code>float anim_min = 3;</code>
+   * @return The animMin.
    */
-  float getAkkaelodadh();
+  float getAnimMin();
 
   /**
-   * <code>float aiojnfepehp = 4;</code>
-   * @return The aiojnfepehp.
+   * <code>float anim_max = 4;</code>
+   * @return The animMax.
    */
-  float getAiojnfepehp();
+  float getAnimMax();
 }

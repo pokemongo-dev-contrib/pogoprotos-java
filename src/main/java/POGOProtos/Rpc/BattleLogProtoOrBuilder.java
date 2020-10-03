@@ -8,66 +8,66 @@ public interface BattleLogProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
-   * @return The enum numeric value on the wire for jlnijhmemnj.
+   * <code>.POGOProtos.Rpc.BattleLogProto.State state = 1;</code>
+   * @return The enum numeric value on the wire for state.
    */
-  int getJlnijhmemnjValue();
+  int getStateValue();
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
-   * @return The jlnijhmemnj.
+   * <code>.POGOProtos.Rpc.BattleLogProto.State state = 1;</code>
+   * @return The state.
    */
-  POGOProtos.Rpc.BattleLogProto.State getJlnijhmemnj();
+  POGOProtos.Rpc.BattleLogProto.State getState();
 
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
-   * @return The enum numeric value on the wire for dbecogechda.
+   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType battle_type = 2;</code>
+   * @return The enum numeric value on the wire for battleType.
    */
-  int getDbecogechdaValue();
+  int getBattleTypeValue();
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
-   * @return The dbecogechda.
+   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType battle_type = 2;</code>
+   * @return The battleType.
    */
-  POGOProtos.Rpc.BattleLogProto.BattleType getDbecogechda();
+  POGOProtos.Rpc.BattleLogProto.BattleType getBattleType();
 
   /**
-   * <code>int64 dikaifhaigb = 3;</code>
-   * @return The dikaifhaigb.
+   * <code>int64 server_ms = 3;</code>
+   * @return The serverMs.
    */
-  long getDikaifhaigb();
+  long getServerMs();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
    */
   java.util.List<POGOProtos.Rpc.BattleActionProto> 
-      getNcilckfpfoeList();
+      getBattleActionsList();
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
    */
-  POGOProtos.Rpc.BattleActionProto getNcilckfpfoe(int index);
+  POGOProtos.Rpc.BattleActionProto getBattleActions(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
    */
-  int getNcilckfpfoeCount();
+  int getBattleActionsCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.BattleActionProtoOrBuilder> 
-      getNcilckfpfoeOrBuilderList();
+      getBattleActionsOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
    */
-  POGOProtos.Rpc.BattleActionProtoOrBuilder getNcilckfpfoeOrBuilder(
+  POGOProtos.Rpc.BattleActionProtoOrBuilder getBattleActionsOrBuilder(
       int index);
 
   /**
-   * <code>int64 llocahndhdn = 5;</code>
-   * @return The llocahndhdn.
+   * <code>int64 battle_start_ms = 5;</code>
+   * @return The battleStartMs.
    */
-  long getLlocahndhdn();
+  long getBattleStartMs();
 
   /**
-   * <code>int64 kkfifghaonk = 6;</code>
-   * @return The kkfifghaonk.
+   * <code>int64 battle_end_ms = 6;</code>
+   * @return The battleEndMs.
    */
-  long getKkfifghaonk();
+  long getBattleEndMs();
 }

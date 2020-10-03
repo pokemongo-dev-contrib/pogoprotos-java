@@ -8,139 +8,139 @@ public interface AwardedGymBadgeOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string lndigkkjfml = 1;</code>
-   * @return The lndigkkjfml.
+   * <code>string fort_id = 1;</code>
+   * @return The fortId.
    */
-  java.lang.String getLndigkkjfml();
+  java.lang.String getFortId();
   /**
-   * <code>string lndigkkjfml = 1;</code>
-   * @return The bytes for lndigkkjfml.
+   * <code>string fort_id = 1;</code>
+   * @return The bytes for fortId.
    */
   com.google.protobuf.ByteString
-      getLndigkkjfmlBytes();
+      getFortIdBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.GymBadgeType pkgelpgpohg = 2;</code>
-   * @return The enum numeric value on the wire for pkgelpgpohg.
+   * <code>.POGOProtos.Rpc.GymBadgeType gym_badge_type = 2;</code>
+   * @return The enum numeric value on the wire for gymBadgeType.
    */
-  int getPkgelpgpohgValue();
+  int getGymBadgeTypeValue();
   /**
-   * <code>.POGOProtos.Rpc.GymBadgeType pkgelpgpohg = 2;</code>
-   * @return The pkgelpgpohg.
+   * <code>.POGOProtos.Rpc.GymBadgeType gym_badge_type = 2;</code>
+   * @return The gymBadgeType.
    */
-  POGOProtos.Rpc.GymBadgeType getPkgelpgpohg();
+  POGOProtos.Rpc.GymBadgeType getGymBadgeType();
 
   /**
-   * <code>uint32 hobhbkgonlk = 3;</code>
-   * @return The hobhbkgonlk.
+   * <code>uint32 score = 3;</code>
+   * @return The score.
    */
-  int getHobhbkgonlk();
+  int getScore();
 
   /**
-   * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
-   * @return Whether the hibekaijkho field is set.
+   * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
+   * @return Whether the gymBadgeStats field is set.
    */
-  boolean hasHibekaijkho();
+  boolean hasGymBadgeStats();
   /**
-   * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
-   * @return The hibekaijkho.
+   * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
+   * @return The gymBadgeStats.
    */
-  POGOProtos.Rpc.GymBadgeStats getHibekaijkho();
+  POGOProtos.Rpc.GymBadgeStats getGymBadgeStats();
   /**
-   * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
+   * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
    */
-  POGOProtos.Rpc.GymBadgeStatsOrBuilder getHibekaijkhoOrBuilder();
+  POGOProtos.Rpc.GymBadgeStatsOrBuilder getGymBadgeStatsOrBuilder();
 
   /**
-   * <code>uint64 ggcajdfaibl = 5;</code>
-   * @return The ggcajdfaibl.
+   * <code>uint64 last_update_timestamp_ms = 5;</code>
+   * @return The lastUpdateTimestampMs.
    */
-  long getGgcajdfaibl();
+  long getLastUpdateTimestampMs();
 
   /**
-   * <code>uint64 bdmpfipljfk = 11;</code>
-   * @return The bdmpfipljfk.
+   * <code>uint64 last_check_timestamp_ms = 11;</code>
+   * @return The lastCheckTimestampMs.
    */
-  long getBdmpfipljfk();
+  long getLastCheckTimestampMs();
 
   /**
-   * <code>uint32 bgechkcgoah = 12;</code>
-   * @return The bgechkcgoah.
+   * <code>uint32 earned_points = 12;</code>
+   * @return The earnedPoints.
    */
-  int getBgechkcgoah();
+  int getEarnedPoints();
 
   /**
-   * <code>float gflfaledbio = 13;</code>
-   * @return The gflfaledbio.
+   * <code>float progress = 13;</code>
+   * @return The progress.
    */
-  float getGflfaledbio();
+  float getProgress();
 
   /**
-   * <code>bool linmfjlkkcm = 14;</code>
-   * @return The linmfjlkkcm.
+   * <code>bool level_up = 14;</code>
+   * @return The levelUp.
    */
-  boolean getLinmfjlkkcm();
+  boolean getLevelUp();
 
   /**
-   * <code>string fgmkglfgljh = 15;</code>
-   * @return The fgmkglfgljh.
+   * <code>string name = 15;</code>
+   * @return The name.
    */
-  java.lang.String getFgmkglfgljh();
+  java.lang.String getName();
   /**
-   * <code>string fgmkglfgljh = 15;</code>
-   * @return The bytes for fgmkglfgljh.
+   * <code>string name = 15;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
-      getFgmkglfgljhBytes();
+      getNameBytes();
 
   /**
-   * <code>string ipfnaapigeh = 16;</code>
-   * @return The ipfnaapigeh.
+   * <code>string image_url = 16;</code>
+   * @return The imageUrl.
    */
-  java.lang.String getIpfnaapigeh();
+  java.lang.String getImageUrl();
   /**
-   * <code>string ipfnaapigeh = 16;</code>
-   * @return The bytes for ipfnaapigeh.
+   * <code>string image_url = 16;</code>
+   * @return The bytes for imageUrl.
    */
   com.google.protobuf.ByteString
-      getIpfnaapigehBytes();
+      getImageUrlBytes();
 
   /**
-   * <code>string lcdegoaaeao = 17;</code>
-   * @return The lcdegoaaeao.
+   * <code>string description = 17;</code>
+   * @return The description.
    */
-  java.lang.String getLcdegoaaeao();
+  java.lang.String getDescription();
   /**
-   * <code>string lcdegoaaeao = 17;</code>
-   * @return The bytes for lcdegoaaeao.
+   * <code>string description = 17;</code>
+   * @return The bytes for description.
    */
   com.google.protobuf.ByteString
-      getLcdegoaaeaoBytes();
+      getDescriptionBytes();
 
   /**
-   * <code>double phiabghihcc = 18;</code>
-   * @return The phiabghihcc.
+   * <code>double latitude = 18;</code>
+   * @return The latitude.
    */
-  double getPhiabghihcc();
+  double getLatitude();
 
   /**
-   * <code>double icmnhajccaa = 19;</code>
-   * @return The icmnhajccaa.
+   * <code>double longitude = 19;</code>
+   * @return The longitude.
    */
-  double getIcmnhajccaa();
+  double getLongitude();
 
   /**
-   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
-   * @return Whether the bilabhihdjn field is set.
+   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
+   * @return Whether the raids field is set.
    */
-  boolean hasBilabhihdjn();
+  boolean hasRaids();
   /**
-   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
-   * @return The bilabhihdjn.
+   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
+   * @return The raids.
    */
-  POGOProtos.Rpc.PlayerRaidInfoProto getBilabhihdjn();
+  POGOProtos.Rpc.PlayerRaidInfoProto getRaids();
   /**
-   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
+   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
    */
-  POGOProtos.Rpc.PlayerRaidInfoProtoOrBuilder getBilabhihdjnOrBuilder();
+  POGOProtos.Rpc.PlayerRaidInfoProtoOrBuilder getRaidsOrBuilder();
 }

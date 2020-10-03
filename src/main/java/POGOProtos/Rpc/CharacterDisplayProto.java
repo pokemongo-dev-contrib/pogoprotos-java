@@ -20,8 +20,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private CharacterDisplayProto() {
-    adbhjffoedg_ = 0;
-    jfindmcpnim_ = 0;
+    style_ = 0;
+    character_ = 0;
   }
 
   @java.lang.Override
@@ -57,13 +57,13 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            adbhjffoedg_ = rawValue;
+            style_ = rawValue;
             break;
           }
           case 16: {
             int rawValue = input.readEnum();
 
-            jfindmcpnim_ = rawValue;
+            character_ = rawValue;
             break;
           }
           default: {
@@ -98,41 +98,41 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.CharacterDisplayProto.class, POGOProtos.Rpc.CharacterDisplayProto.Builder.class);
   }
 
-  public static final int ADBHJFFOEDG_FIELD_NUMBER = 1;
-  private int adbhjffoedg_;
+  public static final int STYLE_FIELD_NUMBER = 1;
+  private int style_;
   /**
-   * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle adbhjffoedg = 1;</code>
-   * @return The enum numeric value on the wire for adbhjffoedg.
+   * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle style = 1;</code>
+   * @return The enum numeric value on the wire for style.
    */
-  @java.lang.Override public int getAdbhjffoedgValue() {
-    return adbhjffoedg_;
+  @java.lang.Override public int getStyleValue() {
+    return style_;
   }
   /**
-   * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle adbhjffoedg = 1;</code>
-   * @return The adbhjffoedg.
+   * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle style = 1;</code>
+   * @return The style.
    */
-  @java.lang.Override public POGOProtos.Rpc.EnumWrapper.PokestopStyle getAdbhjffoedg() {
+  @java.lang.Override public POGOProtos.Rpc.EnumWrapper.PokestopStyle getStyle() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.EnumWrapper.PokestopStyle result = POGOProtos.Rpc.EnumWrapper.PokestopStyle.valueOf(adbhjffoedg_);
+    POGOProtos.Rpc.EnumWrapper.PokestopStyle result = POGOProtos.Rpc.EnumWrapper.PokestopStyle.valueOf(style_);
     return result == null ? POGOProtos.Rpc.EnumWrapper.PokestopStyle.UNRECOGNIZED : result;
   }
 
-  public static final int JFINDMCPNIM_FIELD_NUMBER = 2;
-  private int jfindmcpnim_;
+  public static final int CHARACTER_FIELD_NUMBER = 2;
+  private int character_;
   /**
-   * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter jfindmcpnim = 2;</code>
-   * @return The enum numeric value on the wire for jfindmcpnim.
+   * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter character = 2;</code>
+   * @return The enum numeric value on the wire for character.
    */
-  @java.lang.Override public int getJfindmcpnimValue() {
-    return jfindmcpnim_;
+  @java.lang.Override public int getCharacterValue() {
+    return character_;
   }
   /**
-   * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter jfindmcpnim = 2;</code>
-   * @return The jfindmcpnim.
+   * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter character = 2;</code>
+   * @return The character.
    */
-  @java.lang.Override public POGOProtos.Rpc.EnumWrapper.InvasionCharacter getJfindmcpnim() {
+  @java.lang.Override public POGOProtos.Rpc.EnumWrapper.InvasionCharacter getCharacter() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.EnumWrapper.InvasionCharacter result = POGOProtos.Rpc.EnumWrapper.InvasionCharacter.valueOf(jfindmcpnim_);
+    POGOProtos.Rpc.EnumWrapper.InvasionCharacter result = POGOProtos.Rpc.EnumWrapper.InvasionCharacter.valueOf(character_);
     return result == null ? POGOProtos.Rpc.EnumWrapper.InvasionCharacter.UNRECOGNIZED : result;
   }
 
@@ -150,11 +150,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (adbhjffoedg_ != POGOProtos.Rpc.EnumWrapper.PokestopStyle.POKESTOP_NORMAL.getNumber()) {
-      output.writeEnum(1, adbhjffoedg_);
+    if (style_ != POGOProtos.Rpc.EnumWrapper.PokestopStyle.POKESTOP_NORMAL.getNumber()) {
+      output.writeEnum(1, style_);
     }
-    if (jfindmcpnim_ != POGOProtos.Rpc.EnumWrapper.InvasionCharacter.CHARACTER_UNSET.getNumber()) {
-      output.writeEnum(2, jfindmcpnim_);
+    if (character_ != POGOProtos.Rpc.EnumWrapper.InvasionCharacter.CHARACTER_UNSET.getNumber()) {
+      output.writeEnum(2, character_);
     }
     unknownFields.writeTo(output);
   }
@@ -165,13 +165,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (adbhjffoedg_ != POGOProtos.Rpc.EnumWrapper.PokestopStyle.POKESTOP_NORMAL.getNumber()) {
+    if (style_ != POGOProtos.Rpc.EnumWrapper.PokestopStyle.POKESTOP_NORMAL.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, adbhjffoedg_);
+        .computeEnumSize(1, style_);
     }
-    if (jfindmcpnim_ != POGOProtos.Rpc.EnumWrapper.InvasionCharacter.CHARACTER_UNSET.getNumber()) {
+    if (character_ != POGOProtos.Rpc.EnumWrapper.InvasionCharacter.CHARACTER_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, jfindmcpnim_);
+        .computeEnumSize(2, character_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -188,8 +188,8 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.CharacterDisplayProto other = (POGOProtos.Rpc.CharacterDisplayProto) obj;
 
-    if (adbhjffoedg_ != other.adbhjffoedg_) return false;
-    if (jfindmcpnim_ != other.jfindmcpnim_) return false;
+    if (style_ != other.style_) return false;
+    if (character_ != other.character_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -201,10 +201,10 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + ADBHJFFOEDG_FIELD_NUMBER;
-    hash = (53 * hash) + adbhjffoedg_;
-    hash = (37 * hash) + JFINDMCPNIM_FIELD_NUMBER;
-    hash = (53 * hash) + jfindmcpnim_;
+    hash = (37 * hash) + STYLE_FIELD_NUMBER;
+    hash = (53 * hash) + style_;
+    hash = (37 * hash) + CHARACTER_FIELD_NUMBER;
+    hash = (53 * hash) + character_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -342,9 +342,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      adbhjffoedg_ = 0;
+      style_ = 0;
 
-      jfindmcpnim_ = 0;
+      character_ = 0;
 
       return this;
     }
@@ -372,8 +372,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.CharacterDisplayProto buildPartial() {
       POGOProtos.Rpc.CharacterDisplayProto result = new POGOProtos.Rpc.CharacterDisplayProto(this);
-      result.adbhjffoedg_ = adbhjffoedg_;
-      result.jfindmcpnim_ = jfindmcpnim_;
+      result.style_ = style_;
+      result.character_ = character_;
       onBuilt();
       return result;
     }
@@ -422,11 +422,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.CharacterDisplayProto other) {
       if (other == POGOProtos.Rpc.CharacterDisplayProto.getDefaultInstance()) return this;
-      if (other.adbhjffoedg_ != 0) {
-        setAdbhjffoedgValue(other.getAdbhjffoedgValue());
+      if (other.style_ != 0) {
+        setStyleValue(other.getStyleValue());
       }
-      if (other.jfindmcpnim_ != 0) {
-        setJfindmcpnimValue(other.getJfindmcpnimValue());
+      if (other.character_ != 0) {
+        setCharacterValue(other.getCharacterValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -457,110 +457,110 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int adbhjffoedg_ = 0;
+    private int style_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle adbhjffoedg = 1;</code>
-     * @return The enum numeric value on the wire for adbhjffoedg.
+     * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle style = 1;</code>
+     * @return The enum numeric value on the wire for style.
      */
-    @java.lang.Override public int getAdbhjffoedgValue() {
-      return adbhjffoedg_;
+    @java.lang.Override public int getStyleValue() {
+      return style_;
     }
     /**
-     * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle adbhjffoedg = 1;</code>
-     * @param value The enum numeric value on the wire for adbhjffoedg to set.
+     * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle style = 1;</code>
+     * @param value The enum numeric value on the wire for style to set.
      * @return This builder for chaining.
      */
-    public Builder setAdbhjffoedgValue(int value) {
+    public Builder setStyleValue(int value) {
       
-      adbhjffoedg_ = value;
+      style_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle adbhjffoedg = 1;</code>
-     * @return The adbhjffoedg.
+     * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle style = 1;</code>
+     * @return The style.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.EnumWrapper.PokestopStyle getAdbhjffoedg() {
+    public POGOProtos.Rpc.EnumWrapper.PokestopStyle getStyle() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.EnumWrapper.PokestopStyle result = POGOProtos.Rpc.EnumWrapper.PokestopStyle.valueOf(adbhjffoedg_);
+      POGOProtos.Rpc.EnumWrapper.PokestopStyle result = POGOProtos.Rpc.EnumWrapper.PokestopStyle.valueOf(style_);
       return result == null ? POGOProtos.Rpc.EnumWrapper.PokestopStyle.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle adbhjffoedg = 1;</code>
-     * @param value The adbhjffoedg to set.
+     * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle style = 1;</code>
+     * @param value The style to set.
      * @return This builder for chaining.
      */
-    public Builder setAdbhjffoedg(POGOProtos.Rpc.EnumWrapper.PokestopStyle value) {
+    public Builder setStyle(POGOProtos.Rpc.EnumWrapper.PokestopStyle value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      adbhjffoedg_ = value.getNumber();
+      style_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle adbhjffoedg = 1;</code>
+     * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle style = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAdbhjffoedg() {
+    public Builder clearStyle() {
       
-      adbhjffoedg_ = 0;
+      style_ = 0;
       onChanged();
       return this;
     }
 
-    private int jfindmcpnim_ = 0;
+    private int character_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter jfindmcpnim = 2;</code>
-     * @return The enum numeric value on the wire for jfindmcpnim.
+     * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter character = 2;</code>
+     * @return The enum numeric value on the wire for character.
      */
-    @java.lang.Override public int getJfindmcpnimValue() {
-      return jfindmcpnim_;
+    @java.lang.Override public int getCharacterValue() {
+      return character_;
     }
     /**
-     * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter jfindmcpnim = 2;</code>
-     * @param value The enum numeric value on the wire for jfindmcpnim to set.
+     * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter character = 2;</code>
+     * @param value The enum numeric value on the wire for character to set.
      * @return This builder for chaining.
      */
-    public Builder setJfindmcpnimValue(int value) {
+    public Builder setCharacterValue(int value) {
       
-      jfindmcpnim_ = value;
+      character_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter jfindmcpnim = 2;</code>
-     * @return The jfindmcpnim.
+     * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter character = 2;</code>
+     * @return The character.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.EnumWrapper.InvasionCharacter getJfindmcpnim() {
+    public POGOProtos.Rpc.EnumWrapper.InvasionCharacter getCharacter() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.EnumWrapper.InvasionCharacter result = POGOProtos.Rpc.EnumWrapper.InvasionCharacter.valueOf(jfindmcpnim_);
+      POGOProtos.Rpc.EnumWrapper.InvasionCharacter result = POGOProtos.Rpc.EnumWrapper.InvasionCharacter.valueOf(character_);
       return result == null ? POGOProtos.Rpc.EnumWrapper.InvasionCharacter.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter jfindmcpnim = 2;</code>
-     * @param value The jfindmcpnim to set.
+     * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter character = 2;</code>
+     * @param value The character to set.
      * @return This builder for chaining.
      */
-    public Builder setJfindmcpnim(POGOProtos.Rpc.EnumWrapper.InvasionCharacter value) {
+    public Builder setCharacter(POGOProtos.Rpc.EnumWrapper.InvasionCharacter value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      jfindmcpnim_ = value.getNumber();
+      character_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter jfindmcpnim = 2;</code>
+     * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter character = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJfindmcpnim() {
+    public Builder clearCharacter() {
       
-      jfindmcpnim_ = 0;
+      character_ = 0;
       onChanged();
       return this;
     }

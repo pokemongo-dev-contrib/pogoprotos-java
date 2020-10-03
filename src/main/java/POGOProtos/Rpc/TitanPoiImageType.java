@@ -5,7 +5,10 @@ package POGOProtos.Rpc;
 
 /**
  * <pre>
- * ref: PHAJIOHPMLN
+ *----- End rpc -----
+ *------------------------------
+ *----- Begin telemetry -----
+ * ref: Niantic.Platform.Analytics.Telemetry.PoiImageType
  * </pre>
  *
  * Protobuf enum {@code POGOProtos.Rpc.TitanPoiImageType}
@@ -98,7 +101,7 @@ public enum TitanPoiImageType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(129);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(144);
   }
 
   private static final TitanPoiImageType[] VALUES = values();

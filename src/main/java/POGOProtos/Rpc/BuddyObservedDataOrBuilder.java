@@ -8,143 +8,143 @@ public interface BuddyObservedDataOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int32 cppkjnmpbkb = 1;</code>
-   * @return The cppkjnmpbkb.
+   * <code>int32 current_points_earned = 1;</code>
+   * @return The currentPointsEarned.
    */
-  int getCppkjnmpbkb();
+  int getCurrentPointsEarned();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
-   * @return Whether the bcnfhogkjfj field is set.
+   * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
+   * @return Whether the totalStats field is set.
    */
-  boolean hasBcnfhogkjfj();
+  boolean hasTotalStats();
   /**
-   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
-   * @return The bcnfhogkjfj.
+   * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
+   * @return The totalStats.
    */
-  POGOProtos.Rpc.BuddyStats getBcnfhogkjfj();
+  POGOProtos.Rpc.BuddyStats getTotalStats();
   /**
-   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
    */
-  POGOProtos.Rpc.BuddyStatsOrBuilder getBcnfhogkjfjOrBuilder();
+  POGOProtos.Rpc.BuddyStatsOrBuilder getTotalStatsOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
-   * @return Whether the nchennmhggm field is set.
+   * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
+   * @return Whether the buddyGiftPickedUp field is set.
    */
-  boolean hasNchennmhggm();
+  boolean hasBuddyGiftPickedUp();
   /**
-   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
-   * @return The nchennmhggm.
+   * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
+   * @return The buddyGiftPickedUp.
    */
-  POGOProtos.Rpc.BuddyGiftProto getNchennmhggm();
+  POGOProtos.Rpc.BuddyGiftProto getBuddyGiftPickedUp();
   /**
-   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
    */
-  POGOProtos.Rpc.BuddyGiftProtoOrBuilder getNchennmhggmOrBuilder();
+  POGOProtos.Rpc.BuddyGiftProtoOrBuilder getBuddyGiftPickedUpOrBuilder();
 
   /**
-   * <code>int32 nkhenfnjjge = 7;</code>
-   * @return The nkhenfnjjge.
+   * <code>int32 current_emotion_points = 7;</code>
+   * @return The currentEmotionPoints.
    */
-  int getNkhenfnjjge();
+  int getCurrentEmotionPoints();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
-   * @return The enum numeric value on the wire for pecaginmfan.
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult buddy_validation_result = 8;</code>
+   * @return The enum numeric value on the wire for buddyValidationResult.
    */
-  int getPecaginmfanValue();
+  int getBuddyValidationResultValue();
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
-   * @return The pecaginmfan.
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult buddy_validation_result = 8;</code>
+   * @return The buddyValidationResult.
    */
-  POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult getPecaginmfan();
+  POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult getBuddyValidationResult();
 
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
    */
-  int getOegphmcaenbCount();
+  int getSouvenirsCollectedCount();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
    */
-  boolean containsOegphmcaenb(
+  boolean containsSouvenirsCollected(
       int key);
   /**
-   * Use {@link #getOegphmcaenbMap()} instead.
+   * Use {@link #getSouvenirsCollectedMap()} instead.
    */
   @java.lang.Deprecated
   java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
-  getOegphmcaenb();
+  getSouvenirsCollected();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
    */
   java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
-  getOegphmcaenbMap();
+  getSouvenirsCollectedMap();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
    */
 
-  POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrDefault(
+  POGOProtos.Rpc.SouvenirProto getSouvenirsCollectedOrDefault(
       int key,
       POGOProtos.Rpc.SouvenirProto defaultValue);
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
    */
 
-  POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrThrow(
+  POGOProtos.Rpc.SouvenirProto getSouvenirsCollectedOrThrow(
       int key);
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
-   * @return Whether the enjffacophd field is set.
+   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
+   * @return Whether the todayStatsShownHearts field is set.
    */
-  boolean hasEnjffacophd();
+  boolean hasTodayStatsShownHearts();
   /**
-   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
-   * @return The enjffacophd.
+   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
+   * @return The todayStatsShownHearts.
    */
-  POGOProtos.Rpc.BuddyStatsShownHearts getEnjffacophd();
+  POGOProtos.Rpc.BuddyStatsShownHearts getTodayStatsShownHearts();
   /**
-   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
+   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
    */
-  POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder getEnjffacophdOrBuilder();
+  POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder getTodayStatsShownHeartsOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
-   * @return Whether the cncabapaflc field is set.
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
+   * @return Whether the buddyFeedStats field is set.
    */
-  boolean hasCncabapaflc();
+  boolean hasBuddyFeedStats();
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
-   * @return The cncabapaflc.
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
+   * @return The buddyFeedStats.
    */
-  POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getCncabapaflc();
+  POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getBuddyFeedStats();
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
    */
-  POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder getCncabapaflcOrBuilder();
+  POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder getBuddyFeedStatsOrBuilder();
 
   /**
-   * <code>string jpneiholigi = 12;</code>
-   * @return The jpneiholigi.
+   * <code>string attractive_poi_id = 12;</code>
+   * @return The attractivePoiId.
    */
-  java.lang.String getJpneiholigi();
+  java.lang.String getAttractivePoiId();
   /**
-   * <code>string jpneiholigi = 12;</code>
-   * @return The bytes for jpneiholigi.
+   * <code>string attractive_poi_id = 12;</code>
+   * @return The bytes for attractivePoiId.
    */
   com.google.protobuf.ByteString
-      getJpneiholigiBytes();
+      getAttractivePoiIdBytes();
 
   /**
-   * <code>int64 ahojbebbjah = 13;</code>
-   * @return The ahojbebbjah.
+   * <code>int64 attractive_poi_expiration_time_ms = 13;</code>
+   * @return The attractivePoiExpirationTimeMs.
    */
-  long getAhojbebbjah();
+  long getAttractivePoiExpirationTimeMs();
 
   /**
-   * <code>int32 klakafabbeh = 14;</code>
-   * @return The klakafabbeh.
+   * <code>int32 num_days_spent_with_buddy = 14;</code>
+   * @return The numDaysSpentWithBuddy.
    */
-  int getKlakafabbeh();
+  int getNumDaysSpentWithBuddy();
 }

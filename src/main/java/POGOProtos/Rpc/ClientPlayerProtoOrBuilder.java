@@ -8,348 +8,348 @@ public interface ClientPlayerProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int64 ppghkhaiopn = 1;</code>
-   * @return The ppghkhaiopn.
+   * <code>int64 creation_time_ms = 1;</code>
+   * @return The creationTimeMs.
    */
-  long getPpghkhaiopn();
+  long getCreationTimeMs();
 
   /**
-   * <code>string fgmkglfgljh = 2;</code>
-   * @return The fgmkglfgljh.
+   * <code>string name = 2;</code>
+   * @return The name.
    */
-  java.lang.String getFgmkglfgljh();
+  java.lang.String getName();
   /**
-   * <code>string fgmkglfgljh = 2;</code>
-   * @return The bytes for fgmkglfgljh.
+   * <code>string name = 2;</code>
+   * @return The bytes for name.
    */
   com.google.protobuf.ByteString
-      getFgmkglfgljhBytes();
+      getNameBytes();
 
   /**
-   * <code>int32 nbpfkgpfhpc = 5;</code>
-   * @return The nbpfkgpfhpc.
+   * <code>int32 team = 5;</code>
+   * @return The team.
    */
-  int getNbpfkgpfhpc();
+  int getTeam();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.TutorialCompletion bambfakddab = 7;</code>
-   * @return A list containing the bambfakddab.
+   * <code>repeated .POGOProtos.Rpc.TutorialCompletion tutorial_complete = 7;</code>
+   * @return A list containing the tutorialComplete.
    */
-  java.util.List<POGOProtos.Rpc.TutorialCompletion> getBambfakddabList();
+  java.util.List<POGOProtos.Rpc.TutorialCompletion> getTutorialCompleteList();
   /**
-   * <code>repeated .POGOProtos.Rpc.TutorialCompletion bambfakddab = 7;</code>
-   * @return The count of bambfakddab.
+   * <code>repeated .POGOProtos.Rpc.TutorialCompletion tutorial_complete = 7;</code>
+   * @return The count of tutorialComplete.
    */
-  int getBambfakddabCount();
+  int getTutorialCompleteCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.TutorialCompletion bambfakddab = 7;</code>
+   * <code>repeated .POGOProtos.Rpc.TutorialCompletion tutorial_complete = 7;</code>
    * @param index The index of the element to return.
-   * @return The bambfakddab at the given index.
+   * @return The tutorialComplete at the given index.
    */
-  POGOProtos.Rpc.TutorialCompletion getBambfakddab(int index);
+  POGOProtos.Rpc.TutorialCompletion getTutorialComplete(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.TutorialCompletion bambfakddab = 7;</code>
-   * @return A list containing the enum numeric values on the wire for bambfakddab.
+   * <code>repeated .POGOProtos.Rpc.TutorialCompletion tutorial_complete = 7;</code>
+   * @return A list containing the enum numeric values on the wire for tutorialComplete.
    */
   java.util.List<java.lang.Integer>
-  getBambfakddabValueList();
+  getTutorialCompleteValueList();
   /**
-   * <code>repeated .POGOProtos.Rpc.TutorialCompletion bambfakddab = 7;</code>
+   * <code>repeated .POGOProtos.Rpc.TutorialCompletion tutorial_complete = 7;</code>
    * @param index The index of the value to return.
-   * @return The enum numeric value on the wire of bambfakddab at the given index.
+   * @return The enum numeric value on the wire of tutorialComplete at the given index.
    */
-  int getBambfakddabValue(int index);
+  int getTutorialCompleteValue(int index);
 
   /**
-   * <code>.POGOProtos.Rpc.PlayerAvatarProto egpifmoakco = 8;</code>
-   * @return Whether the egpifmoakco field is set.
+   * <code>.POGOProtos.Rpc.PlayerAvatarProto player_avatar_proto = 8;</code>
+   * @return Whether the playerAvatarProto field is set.
    */
-  boolean hasEgpifmoakco();
+  boolean hasPlayerAvatarProto();
   /**
-   * <code>.POGOProtos.Rpc.PlayerAvatarProto egpifmoakco = 8;</code>
-   * @return The egpifmoakco.
+   * <code>.POGOProtos.Rpc.PlayerAvatarProto player_avatar_proto = 8;</code>
+   * @return The playerAvatarProto.
    */
-  POGOProtos.Rpc.PlayerAvatarProto getEgpifmoakco();
+  POGOProtos.Rpc.PlayerAvatarProto getPlayerAvatarProto();
   /**
-   * <code>.POGOProtos.Rpc.PlayerAvatarProto egpifmoakco = 8;</code>
+   * <code>.POGOProtos.Rpc.PlayerAvatarProto player_avatar_proto = 8;</code>
    */
-  POGOProtos.Rpc.PlayerAvatarProtoOrBuilder getEgpifmoakcoOrBuilder();
+  POGOProtos.Rpc.PlayerAvatarProtoOrBuilder getPlayerAvatarProtoOrBuilder();
 
   /**
-   * <code>int32 ecceblnpanl = 9;</code>
-   * @return The ecceblnpanl.
+   * <code>int32 max_pokemon_storage = 9;</code>
+   * @return The maxPokemonStorage.
    */
-  int getEcceblnpanl();
+  int getMaxPokemonStorage();
 
   /**
-   * <code>int32 adedlghfhie = 10;</code>
-   * @return The adedlghfhie.
+   * <code>int32 max_item_storage = 10;</code>
+   * @return The maxItemStorage.
    */
-  int getAdedlghfhie();
+  int getMaxItemStorage();
 
   /**
-   * <code>.POGOProtos.Rpc.DailyBonusProto dfoecgbmbhn = 11;</code>
-   * @return Whether the dfoecgbmbhn field is set.
+   * <code>.POGOProtos.Rpc.DailyBonusProto daily_bonus_proto = 11;</code>
+   * @return Whether the dailyBonusProto field is set.
    */
-  boolean hasDfoecgbmbhn();
+  boolean hasDailyBonusProto();
   /**
-   * <code>.POGOProtos.Rpc.DailyBonusProto dfoecgbmbhn = 11;</code>
-   * @return The dfoecgbmbhn.
+   * <code>.POGOProtos.Rpc.DailyBonusProto daily_bonus_proto = 11;</code>
+   * @return The dailyBonusProto.
    */
-  POGOProtos.Rpc.DailyBonusProto getDfoecgbmbhn();
+  POGOProtos.Rpc.DailyBonusProto getDailyBonusProto();
   /**
-   * <code>.POGOProtos.Rpc.DailyBonusProto dfoecgbmbhn = 11;</code>
+   * <code>.POGOProtos.Rpc.DailyBonusProto daily_bonus_proto = 11;</code>
    */
-  POGOProtos.Rpc.DailyBonusProtoOrBuilder getDfoecgbmbhnOrBuilder();
+  POGOProtos.Rpc.DailyBonusProtoOrBuilder getDailyBonusProtoOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.EquippedBadgeProto ibdgmlchhkp = 12;</code>
-   * @return Whether the ibdgmlchhkp field is set.
+   * <code>.POGOProtos.Rpc.EquippedBadgeProto equipped_badge_proto = 12;</code>
+   * @return Whether the equippedBadgeProto field is set.
    */
-  boolean hasIbdgmlchhkp();
+  boolean hasEquippedBadgeProto();
   /**
-   * <code>.POGOProtos.Rpc.EquippedBadgeProto ibdgmlchhkp = 12;</code>
-   * @return The ibdgmlchhkp.
+   * <code>.POGOProtos.Rpc.EquippedBadgeProto equipped_badge_proto = 12;</code>
+   * @return The equippedBadgeProto.
    */
-  POGOProtos.Rpc.EquippedBadgeProto getIbdgmlchhkp();
+  POGOProtos.Rpc.EquippedBadgeProto getEquippedBadgeProto();
   /**
-   * <code>.POGOProtos.Rpc.EquippedBadgeProto ibdgmlchhkp = 12;</code>
+   * <code>.POGOProtos.Rpc.EquippedBadgeProto equipped_badge_proto = 12;</code>
    */
-  POGOProtos.Rpc.EquippedBadgeProtoOrBuilder getIbdgmlchhkpOrBuilder();
+  POGOProtos.Rpc.EquippedBadgeProtoOrBuilder getEquippedBadgeProtoOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 13;</code>
-   * @return Whether the aiifjelhmlm field is set.
+   * <code>.POGOProtos.Rpc.ContactSettingsProto contact_settings_proto = 13;</code>
+   * @return Whether the contactSettingsProto field is set.
    */
-  boolean hasAiifjelhmlm();
+  boolean hasContactSettingsProto();
   /**
-   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 13;</code>
-   * @return The aiifjelhmlm.
+   * <code>.POGOProtos.Rpc.ContactSettingsProto contact_settings_proto = 13;</code>
+   * @return The contactSettingsProto.
    */
-  POGOProtos.Rpc.ContactSettingsProto getAiifjelhmlm();
+  POGOProtos.Rpc.ContactSettingsProto getContactSettingsProto();
   /**
-   * <code>.POGOProtos.Rpc.ContactSettingsProto aiifjelhmlm = 13;</code>
+   * <code>.POGOProtos.Rpc.ContactSettingsProto contact_settings_proto = 13;</code>
    */
-  POGOProtos.Rpc.ContactSettingsProtoOrBuilder getAiifjelhmlmOrBuilder();
+  POGOProtos.Rpc.ContactSettingsProtoOrBuilder getContactSettingsProtoOrBuilder();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto eeiaamoemkh = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
    */
   java.util.List<POGOProtos.Rpc.PlatformCurrencyQuantityProto> 
-      getEeiaamoemkhList();
+      getCurrencyBalanceList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto eeiaamoemkh = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
    */
-  POGOProtos.Rpc.PlatformCurrencyQuantityProto getEeiaamoemkh(int index);
+  POGOProtos.Rpc.PlatformCurrencyQuantityProto getCurrencyBalance(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto eeiaamoemkh = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
    */
-  int getEeiaamoemkhCount();
+  int getCurrencyBalanceCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto eeiaamoemkh = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder> 
-      getEeiaamoemkhOrBuilderList();
+      getCurrencyBalanceOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto eeiaamoemkh = 14;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformCurrencyQuantityProto currency_balance = 14;</code>
    */
-  POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getEeiaamoemkhOrBuilder(
+  POGOProtos.Rpc.PlatformCurrencyQuantityProtoOrBuilder getCurrencyBalanceOrBuilder(
       int index);
 
   /**
-   * <code>int32 iepkpebbcpl = 15;</code>
-   * @return The iepkpebbcpl.
+   * <code>int32 remaining_codename_claims = 15;</code>
+   * @return The remainingCodenameClaims.
    */
-  int getIepkpebbcpl();
+  int getRemainingCodenameClaims();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyPokemonProto gchmnmgcogk = 16;</code>
-   * @return Whether the gchmnmgcogk field is set.
+   * <code>.POGOProtos.Rpc.BuddyPokemonProto buddy_pokemon_proto = 16;</code>
+   * @return Whether the buddyPokemonProto field is set.
    */
-  boolean hasGchmnmgcogk();
+  boolean hasBuddyPokemonProto();
   /**
-   * <code>.POGOProtos.Rpc.BuddyPokemonProto gchmnmgcogk = 16;</code>
-   * @return The gchmnmgcogk.
+   * <code>.POGOProtos.Rpc.BuddyPokemonProto buddy_pokemon_proto = 16;</code>
+   * @return The buddyPokemonProto.
    */
-  POGOProtos.Rpc.BuddyPokemonProto getGchmnmgcogk();
+  POGOProtos.Rpc.BuddyPokemonProto getBuddyPokemonProto();
   /**
-   * <code>.POGOProtos.Rpc.BuddyPokemonProto gchmnmgcogk = 16;</code>
+   * <code>.POGOProtos.Rpc.BuddyPokemonProto buddy_pokemon_proto = 16;</code>
    */
-  POGOProtos.Rpc.BuddyPokemonProtoOrBuilder getGchmnmgcogkOrBuilder();
+  POGOProtos.Rpc.BuddyPokemonProtoOrBuilder getBuddyPokemonProtoOrBuilder();
 
   /**
-   * <code>int64 ojmehflcljk = 17;</code>
-   * @return The ojmehflcljk.
+   * <code>int64 battle_lockout_end_ms = 17;</code>
+   * @return The battleLockoutEndMs.
    */
-  long getOjmehflcljk();
+  long getBattleLockoutEndMs();
 
   /**
-   * <code>.POGOProtos.Rpc.PlayerAvatarProto mmnipjeacai = 18;</code>
-   * @return Whether the mmnipjeacai field is set.
+   * <code>.POGOProtos.Rpc.PlayerAvatarProto secondary_player_avatar_proto = 18;</code>
+   * @return Whether the secondaryPlayerAvatarProto field is set.
    */
-  boolean hasMmnipjeacai();
+  boolean hasSecondaryPlayerAvatarProto();
   /**
-   * <code>.POGOProtos.Rpc.PlayerAvatarProto mmnipjeacai = 18;</code>
-   * @return The mmnipjeacai.
+   * <code>.POGOProtos.Rpc.PlayerAvatarProto secondary_player_avatar_proto = 18;</code>
+   * @return The secondaryPlayerAvatarProto.
    */
-  POGOProtos.Rpc.PlayerAvatarProto getMmnipjeacai();
+  POGOProtos.Rpc.PlayerAvatarProto getSecondaryPlayerAvatarProto();
   /**
-   * <code>.POGOProtos.Rpc.PlayerAvatarProto mmnipjeacai = 18;</code>
+   * <code>.POGOProtos.Rpc.PlayerAvatarProto secondary_player_avatar_proto = 18;</code>
    */
-  POGOProtos.Rpc.PlayerAvatarProtoOrBuilder getMmnipjeacaiOrBuilder();
+  POGOProtos.Rpc.PlayerAvatarProtoOrBuilder getSecondaryPlayerAvatarProtoOrBuilder();
 
   /**
-   * <code>bool lablpghilin = 19;</code>
-   * @return The lablpghilin.
+   * <code>bool name_is_blacklisted = 19;</code>
+   * @return The nameIsBlacklisted.
    */
-  boolean getLablpghilin();
+  boolean getNameIsBlacklisted();
 
   /**
-   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto gpmdheopjhf = 20;</code>
-   * @return Whether the gpmdheopjhf field is set.
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto social_player_settings = 20;</code>
+   * @return Whether the socialPlayerSettings field is set.
    */
-  boolean hasGpmdheopjhf();
+  boolean hasSocialPlayerSettings();
   /**
-   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto gpmdheopjhf = 20;</code>
-   * @return The gpmdheopjhf.
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto social_player_settings = 20;</code>
+   * @return The socialPlayerSettings.
    */
-  POGOProtos.Rpc.SocialPlayerSettingsProto getGpmdheopjhf();
+  POGOProtos.Rpc.SocialPlayerSettingsProto getSocialPlayerSettings();
   /**
-   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto gpmdheopjhf = 20;</code>
+   * <code>.POGOProtos.Rpc.SocialPlayerSettingsProto social_player_settings = 20;</code>
    */
-  POGOProtos.Rpc.SocialPlayerSettingsProtoOrBuilder getGpmdheopjhfOrBuilder();
+  POGOProtos.Rpc.SocialPlayerSettingsProtoOrBuilder getSocialPlayerSettingsOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto jnoillflbkb = 21;</code>
-   * @return Whether the jnoillflbkb field is set.
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto combat_player_preferences = 21;</code>
+   * @return Whether the combatPlayerPreferences field is set.
    */
-  boolean hasJnoillflbkb();
+  boolean hasCombatPlayerPreferences();
   /**
-   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto jnoillflbkb = 21;</code>
-   * @return The jnoillflbkb.
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto combat_player_preferences = 21;</code>
+   * @return The combatPlayerPreferences.
    */
-  POGOProtos.Rpc.CombatPlayerPreferencesProto getJnoillflbkb();
+  POGOProtos.Rpc.CombatPlayerPreferencesProto getCombatPlayerPreferences();
   /**
-   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto jnoillflbkb = 21;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto combat_player_preferences = 21;</code>
    */
-  POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder getJnoillflbkbOrBuilder();
+  POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder getCombatPlayerPreferencesOrBuilder();
 
   /**
-   * <code>string fomhnhnkgnn = 22;</code>
-   * @return The fomhnhnkgnn.
+   * <code>string player_support_id = 22;</code>
+   * @return The playerSupportId.
    */
-  java.lang.String getFomhnhnkgnn();
+  java.lang.String getPlayerSupportId();
   /**
-   * <code>string fomhnhnkgnn = 22;</code>
-   * @return The bytes for fomhnhnkgnn.
+   * <code>string player_support_id = 22;</code>
+   * @return The bytes for playerSupportId.
    */
   com.google.protobuf.ByteString
-      getFomhnhnkgnnBytes();
+      getPlayerSupportIdBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.TeamChangeInfoProto faljldnilhn = 23;</code>
-   * @return Whether the faljldnilhn field is set.
+   * <code>.POGOProtos.Rpc.TeamChangeInfoProto team_change_info = 23;</code>
+   * @return Whether the teamChangeInfo field is set.
    */
-  boolean hasFaljldnilhn();
+  boolean hasTeamChangeInfo();
   /**
-   * <code>.POGOProtos.Rpc.TeamChangeInfoProto faljldnilhn = 23;</code>
-   * @return The faljldnilhn.
+   * <code>.POGOProtos.Rpc.TeamChangeInfoProto team_change_info = 23;</code>
+   * @return The teamChangeInfo.
    */
-  POGOProtos.Rpc.TeamChangeInfoProto getFaljldnilhn();
+  POGOProtos.Rpc.TeamChangeInfoProto getTeamChangeInfo();
   /**
-   * <code>.POGOProtos.Rpc.TeamChangeInfoProto faljldnilhn = 23;</code>
+   * <code>.POGOProtos.Rpc.TeamChangeInfoProto team_change_info = 23;</code>
    */
-  POGOProtos.Rpc.TeamChangeInfoProtoOrBuilder getFaljldnilhnOrBuilder();
+  POGOProtos.Rpc.TeamChangeInfoProtoOrBuilder getTeamChangeInfoOrBuilder();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.HoloPokemonId mecekmdmljk = 24;</code>
-   * @return A list containing the mecekmdmljk.
+   * <code>repeated .POGOProtos.Rpc.HoloPokemonId consumed_eevee_easter_eggs = 24;</code>
+   * @return A list containing the consumedEeveeEasterEggs.
    */
-  java.util.List<POGOProtos.Rpc.HoloPokemonId> getMecekmdmljkList();
+  java.util.List<POGOProtos.Rpc.HoloPokemonId> getConsumedEeveeEasterEggsList();
   /**
-   * <code>repeated .POGOProtos.Rpc.HoloPokemonId mecekmdmljk = 24;</code>
-   * @return The count of mecekmdmljk.
+   * <code>repeated .POGOProtos.Rpc.HoloPokemonId consumed_eevee_easter_eggs = 24;</code>
+   * @return The count of consumedEeveeEasterEggs.
    */
-  int getMecekmdmljkCount();
+  int getConsumedEeveeEasterEggsCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.HoloPokemonId mecekmdmljk = 24;</code>
+   * <code>repeated .POGOProtos.Rpc.HoloPokemonId consumed_eevee_easter_eggs = 24;</code>
    * @param index The index of the element to return.
-   * @return The mecekmdmljk at the given index.
+   * @return The consumedEeveeEasterEggs at the given index.
    */
-  POGOProtos.Rpc.HoloPokemonId getMecekmdmljk(int index);
+  POGOProtos.Rpc.HoloPokemonId getConsumedEeveeEasterEggs(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.HoloPokemonId mecekmdmljk = 24;</code>
-   * @return A list containing the enum numeric values on the wire for mecekmdmljk.
+   * <code>repeated .POGOProtos.Rpc.HoloPokemonId consumed_eevee_easter_eggs = 24;</code>
+   * @return A list containing the enum numeric values on the wire for consumedEeveeEasterEggs.
    */
   java.util.List<java.lang.Integer>
-  getMecekmdmljkValueList();
+  getConsumedEeveeEasterEggsValueList();
   /**
-   * <code>repeated .POGOProtos.Rpc.HoloPokemonId mecekmdmljk = 24;</code>
+   * <code>repeated .POGOProtos.Rpc.HoloPokemonId consumed_eevee_easter_eggs = 24;</code>
    * @param index The index of the value to return.
-   * @return The enum numeric value on the wire of mecekmdmljk at the given index.
+   * @return The enum numeric value on the wire of consumedEeveeEasterEggs at the given index.
    */
-  int getMecekmdmljkValue(int index);
+  int getConsumedEeveeEasterEggsValue(int index);
 
   /**
-   * <code>.POGOProtos.Rpc.CombatLogProto djkccedkfdc = 25;</code>
-   * @return Whether the djkccedkfdc field is set.
+   * <code>.POGOProtos.Rpc.CombatLogProto combat_log = 25;</code>
+   * @return Whether the combatLog field is set.
    */
-  boolean hasDjkccedkfdc();
+  boolean hasCombatLog();
   /**
-   * <code>.POGOProtos.Rpc.CombatLogProto djkccedkfdc = 25;</code>
-   * @return The djkccedkfdc.
+   * <code>.POGOProtos.Rpc.CombatLogProto combat_log = 25;</code>
+   * @return The combatLog.
    */
-  POGOProtos.Rpc.CombatLogProto getDjkccedkfdc();
+  POGOProtos.Rpc.CombatLogProto getCombatLog();
   /**
-   * <code>.POGOProtos.Rpc.CombatLogProto djkccedkfdc = 25;</code>
+   * <code>.POGOProtos.Rpc.CombatLogProto combat_log = 25;</code>
    */
-  POGOProtos.Rpc.CombatLogProtoOrBuilder getDjkccedkfdcOrBuilder();
+  POGOProtos.Rpc.CombatLogProtoOrBuilder getCombatLogOrBuilder();
 
   /**
-   * <code>int64 lemkbnfgono = 26;</code>
-   * @return The lemkbnfgono.
+   * <code>int64 time_zone_offset_ms = 26;</code>
+   * @return The timeZoneOffsetMs.
    */
-  long getLemkbnfgono();
+  long getTimeZoneOffsetMs();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData bamjgfoagbn = 27;</code>
-   * @return Whether the bamjgfoagbn field is set.
+   * <code>.POGOProtos.Rpc.BuddyObservedData buddy_observed_data = 27;</code>
+   * @return Whether the buddyObservedData field is set.
    */
-  boolean hasBamjgfoagbn();
+  boolean hasBuddyObservedData();
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData bamjgfoagbn = 27;</code>
-   * @return The bamjgfoagbn.
+   * <code>.POGOProtos.Rpc.BuddyObservedData buddy_observed_data = 27;</code>
+   * @return The buddyObservedData.
    */
-  POGOProtos.Rpc.BuddyObservedData getBamjgfoagbn();
+  POGOProtos.Rpc.BuddyObservedData getBuddyObservedData();
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData bamjgfoagbn = 27;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData buddy_observed_data = 27;</code>
    */
-  POGOProtos.Rpc.BuddyObservedDataOrBuilder getBamjgfoagbnOrBuilder();
+  POGOProtos.Rpc.BuddyObservedDataOrBuilder getBuddyObservedDataOrBuilder();
 
   /**
-   * <code>string adocjpgdflg = 28;</code>
-   * @return The adocjpgdflg.
+   * <code>string helpshift_user_id = 28;</code>
+   * @return The helpshiftUserId.
    */
-  java.lang.String getAdocjpgdflg();
+  java.lang.String getHelpshiftUserId();
   /**
-   * <code>string adocjpgdflg = 28;</code>
-   * @return The bytes for adocjpgdflg.
+   * <code>string helpshift_user_id = 28;</code>
+   * @return The bytes for helpshiftUserId.
    */
   com.google.protobuf.ByteString
-      getAdocjpgdflgBytes();
+      getHelpshiftUserIdBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.PlayerPreferencesProto eppomfmlneh = 29;</code>
-   * @return Whether the eppomfmlneh field is set.
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto player_preferences = 29;</code>
+   * @return Whether the playerPreferences field is set.
    */
-  boolean hasEppomfmlneh();
+  boolean hasPlayerPreferences();
   /**
-   * <code>.POGOProtos.Rpc.PlayerPreferencesProto eppomfmlneh = 29;</code>
-   * @return The eppomfmlneh.
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto player_preferences = 29;</code>
+   * @return The playerPreferences.
    */
-  POGOProtos.Rpc.PlayerPreferencesProto getEppomfmlneh();
+  POGOProtos.Rpc.PlayerPreferencesProto getPlayerPreferences();
   /**
-   * <code>.POGOProtos.Rpc.PlayerPreferencesProto eppomfmlneh = 29;</code>
+   * <code>.POGOProtos.Rpc.PlayerPreferencesProto player_preferences = 29;</code>
    */
-  POGOProtos.Rpc.PlayerPreferencesProtoOrBuilder getEppomfmlnehOrBuilder();
+  POGOProtos.Rpc.PlayerPreferencesProtoOrBuilder getPlayerPreferencesOrBuilder();
 }

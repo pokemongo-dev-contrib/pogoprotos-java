@@ -19,27 +19,27 @@ public interface GetFriendDetailsOutProtoOrBuilder extends
   POGOProtos.Rpc.GetFriendDetailsOutProto.Result getResult();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.FriendDetailsProto> 
+  java.util.List<POGOProtos.Rpc.PlatformFriendDetailsProto> 
       getFriendList();
   /**
-   * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
-  POGOProtos.Rpc.FriendDetailsProto getFriend(int index);
+  POGOProtos.Rpc.PlatformFriendDetailsProto getFriend(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
   int getFriendCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.FriendDetailsProtoOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder> 
       getFriendOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
-  POGOProtos.Rpc.FriendDetailsProtoOrBuilder getFriendOrBuilder(
+  POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder getFriendOrBuilder(
       int index);
 
   /**

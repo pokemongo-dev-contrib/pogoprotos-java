@@ -19,17 +19,17 @@ public interface AcceptCombatChallengeOutProtoOrBuilder extends
   POGOProtos.Rpc.AcceptCombatChallengeOutProto.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
-   * @return Whether the oafocnchncd field is set.
+   * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
+   * @return Whether the challenge field is set.
    */
-  boolean hasOafocnchncd();
+  boolean hasChallenge();
   /**
-   * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
-   * @return The oafocnchncd.
+   * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
+   * @return The challenge.
    */
-  POGOProtos.Rpc.CombatChallengeProto getOafocnchncd();
+  POGOProtos.Rpc.CombatChallengeProto getChallenge();
   /**
-   * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
+   * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
    */
-  POGOProtos.Rpc.CombatChallengeProtoOrBuilder getOafocnchncdOrBuilder();
+  POGOProtos.Rpc.CombatChallengeProtoOrBuilder getChallengeOrBuilder();
 }

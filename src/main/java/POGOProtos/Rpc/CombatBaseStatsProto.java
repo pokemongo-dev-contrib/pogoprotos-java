@@ -54,17 +54,17 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
 
-            mbjmbggodpa_ = input.readInt32();
+            totalBattles_ = input.readInt32();
             break;
           }
           case 16: {
 
-            oclmbbphlgj_ = input.readInt32();
+            wins_ = input.readInt32();
             break;
           }
           case 29: {
 
-            bpcigoddmja_ = input.readFloat();
+            rating_ = input.readFloat();
             break;
           }
           default: {
@@ -99,37 +99,37 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.CombatBaseStatsProto.class, POGOProtos.Rpc.CombatBaseStatsProto.Builder.class);
   }
 
-  public static final int MBJMBGGODPA_FIELD_NUMBER = 1;
-  private int mbjmbggodpa_;
+  public static final int TOTAL_BATTLES_FIELD_NUMBER = 1;
+  private int totalBattles_;
   /**
-   * <code>int32 mbjmbggodpa = 1;</code>
-   * @return The mbjmbggodpa.
+   * <code>int32 total_battles = 1;</code>
+   * @return The totalBattles.
    */
   @java.lang.Override
-  public int getMbjmbggodpa() {
-    return mbjmbggodpa_;
+  public int getTotalBattles() {
+    return totalBattles_;
   }
 
-  public static final int OCLMBBPHLGJ_FIELD_NUMBER = 2;
-  private int oclmbbphlgj_;
+  public static final int WINS_FIELD_NUMBER = 2;
+  private int wins_;
   /**
-   * <code>int32 oclmbbphlgj = 2;</code>
-   * @return The oclmbbphlgj.
+   * <code>int32 wins = 2;</code>
+   * @return The wins.
    */
   @java.lang.Override
-  public int getOclmbbphlgj() {
-    return oclmbbphlgj_;
+  public int getWins() {
+    return wins_;
   }
 
-  public static final int BPCIGODDMJA_FIELD_NUMBER = 3;
-  private float bpcigoddmja_;
+  public static final int RATING_FIELD_NUMBER = 3;
+  private float rating_;
   /**
-   * <code>float bpcigoddmja = 3;</code>
-   * @return The bpcigoddmja.
+   * <code>float rating = 3;</code>
+   * @return The rating.
    */
   @java.lang.Override
-  public float getBpcigoddmja() {
-    return bpcigoddmja_;
+  public float getRating() {
+    return rating_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -146,14 +146,14 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (mbjmbggodpa_ != 0) {
-      output.writeInt32(1, mbjmbggodpa_);
+    if (totalBattles_ != 0) {
+      output.writeInt32(1, totalBattles_);
     }
-    if (oclmbbphlgj_ != 0) {
-      output.writeInt32(2, oclmbbphlgj_);
+    if (wins_ != 0) {
+      output.writeInt32(2, wins_);
     }
-    if (bpcigoddmja_ != 0F) {
-      output.writeFloat(3, bpcigoddmja_);
+    if (rating_ != 0F) {
+      output.writeFloat(3, rating_);
     }
     unknownFields.writeTo(output);
   }
@@ -164,17 +164,17 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (mbjmbggodpa_ != 0) {
+    if (totalBattles_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(1, mbjmbggodpa_);
+        .computeInt32Size(1, totalBattles_);
     }
-    if (oclmbbphlgj_ != 0) {
+    if (wins_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, oclmbbphlgj_);
+        .computeInt32Size(2, wins_);
     }
-    if (bpcigoddmja_ != 0F) {
+    if (rating_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(3, bpcigoddmja_);
+        .computeFloatSize(3, rating_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -191,13 +191,13 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.CombatBaseStatsProto other = (POGOProtos.Rpc.CombatBaseStatsProto) obj;
 
-    if (getMbjmbggodpa()
-        != other.getMbjmbggodpa()) return false;
-    if (getOclmbbphlgj()
-        != other.getOclmbbphlgj()) return false;
-    if (java.lang.Float.floatToIntBits(getBpcigoddmja())
+    if (getTotalBattles()
+        != other.getTotalBattles()) return false;
+    if (getWins()
+        != other.getWins()) return false;
+    if (java.lang.Float.floatToIntBits(getRating())
         != java.lang.Float.floatToIntBits(
-            other.getBpcigoddmja())) return false;
+            other.getRating())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -209,13 +209,13 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + MBJMBGGODPA_FIELD_NUMBER;
-    hash = (53 * hash) + getMbjmbggodpa();
-    hash = (37 * hash) + OCLMBBPHLGJ_FIELD_NUMBER;
-    hash = (53 * hash) + getOclmbbphlgj();
-    hash = (37 * hash) + BPCIGODDMJA_FIELD_NUMBER;
+    hash = (37 * hash) + TOTAL_BATTLES_FIELD_NUMBER;
+    hash = (53 * hash) + getTotalBattles();
+    hash = (37 * hash) + WINS_FIELD_NUMBER;
+    hash = (53 * hash) + getWins();
+    hash = (37 * hash) + RATING_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getBpcigoddmja());
+        getRating());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -353,11 +353,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      mbjmbggodpa_ = 0;
+      totalBattles_ = 0;
 
-      oclmbbphlgj_ = 0;
+      wins_ = 0;
 
-      bpcigoddmja_ = 0F;
+      rating_ = 0F;
 
       return this;
     }
@@ -385,9 +385,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.CombatBaseStatsProto buildPartial() {
       POGOProtos.Rpc.CombatBaseStatsProto result = new POGOProtos.Rpc.CombatBaseStatsProto(this);
-      result.mbjmbggodpa_ = mbjmbggodpa_;
-      result.oclmbbphlgj_ = oclmbbphlgj_;
-      result.bpcigoddmja_ = bpcigoddmja_;
+      result.totalBattles_ = totalBattles_;
+      result.wins_ = wins_;
+      result.rating_ = rating_;
       onBuilt();
       return result;
     }
@@ -436,14 +436,14 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.CombatBaseStatsProto other) {
       if (other == POGOProtos.Rpc.CombatBaseStatsProto.getDefaultInstance()) return this;
-      if (other.getMbjmbggodpa() != 0) {
-        setMbjmbggodpa(other.getMbjmbggodpa());
+      if (other.getTotalBattles() != 0) {
+        setTotalBattles(other.getTotalBattles());
       }
-      if (other.getOclmbbphlgj() != 0) {
-        setOclmbbphlgj(other.getOclmbbphlgj());
+      if (other.getWins() != 0) {
+        setWins(other.getWins());
       }
-      if (other.getBpcigoddmja() != 0F) {
-        setBpcigoddmja(other.getBpcigoddmja());
+      if (other.getRating() != 0F) {
+        setRating(other.getRating());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -474,95 +474,95 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int mbjmbggodpa_ ;
+    private int totalBattles_ ;
     /**
-     * <code>int32 mbjmbggodpa = 1;</code>
-     * @return The mbjmbggodpa.
+     * <code>int32 total_battles = 1;</code>
+     * @return The totalBattles.
      */
     @java.lang.Override
-    public int getMbjmbggodpa() {
-      return mbjmbggodpa_;
+    public int getTotalBattles() {
+      return totalBattles_;
     }
     /**
-     * <code>int32 mbjmbggodpa = 1;</code>
-     * @param value The mbjmbggodpa to set.
+     * <code>int32 total_battles = 1;</code>
+     * @param value The totalBattles to set.
      * @return This builder for chaining.
      */
-    public Builder setMbjmbggodpa(int value) {
+    public Builder setTotalBattles(int value) {
       
-      mbjmbggodpa_ = value;
+      totalBattles_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 mbjmbggodpa = 1;</code>
+     * <code>int32 total_battles = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearMbjmbggodpa() {
+    public Builder clearTotalBattles() {
       
-      mbjmbggodpa_ = 0;
+      totalBattles_ = 0;
       onChanged();
       return this;
     }
 
-    private int oclmbbphlgj_ ;
+    private int wins_ ;
     /**
-     * <code>int32 oclmbbphlgj = 2;</code>
-     * @return The oclmbbphlgj.
+     * <code>int32 wins = 2;</code>
+     * @return The wins.
      */
     @java.lang.Override
-    public int getOclmbbphlgj() {
-      return oclmbbphlgj_;
+    public int getWins() {
+      return wins_;
     }
     /**
-     * <code>int32 oclmbbphlgj = 2;</code>
-     * @param value The oclmbbphlgj to set.
+     * <code>int32 wins = 2;</code>
+     * @param value The wins to set.
      * @return This builder for chaining.
      */
-    public Builder setOclmbbphlgj(int value) {
+    public Builder setWins(int value) {
       
-      oclmbbphlgj_ = value;
+      wins_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 oclmbbphlgj = 2;</code>
+     * <code>int32 wins = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearOclmbbphlgj() {
+    public Builder clearWins() {
       
-      oclmbbphlgj_ = 0;
+      wins_ = 0;
       onChanged();
       return this;
     }
 
-    private float bpcigoddmja_ ;
+    private float rating_ ;
     /**
-     * <code>float bpcigoddmja = 3;</code>
-     * @return The bpcigoddmja.
+     * <code>float rating = 3;</code>
+     * @return The rating.
      */
     @java.lang.Override
-    public float getBpcigoddmja() {
-      return bpcigoddmja_;
+    public float getRating() {
+      return rating_;
     }
     /**
-     * <code>float bpcigoddmja = 3;</code>
-     * @param value The bpcigoddmja to set.
+     * <code>float rating = 3;</code>
+     * @param value The rating to set.
      * @return This builder for chaining.
      */
-    public Builder setBpcigoddmja(float value) {
+    public Builder setRating(float value) {
       
-      bpcigoddmja_ = value;
+      rating_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float bpcigoddmja = 3;</code>
+     * <code>float rating = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBpcigoddmja() {
+    public Builder clearRating() {
       
-      bpcigoddmja_ = 0F;
+      rating_ = 0F;
       onChanged();
       return this;
     }

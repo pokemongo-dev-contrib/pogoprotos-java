@@ -8,115 +8,115 @@ public interface CombatProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
-   * @return The enum numeric value on the wire for eihblpligfa.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatState combat_state = 1;</code>
+   * @return The enum numeric value on the wire for combatState.
    */
-  int getEihblpligfaValue();
+  int getCombatStateValue();
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
-   * @return The eihblpligfa.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatState combat_state = 1;</code>
+   * @return The combatState.
    */
-  POGOProtos.Rpc.CombatProto.CombatState getEihblpligfa();
+  POGOProtos.Rpc.CombatProto.CombatState getCombatState();
 
   /**
-   * <code>string hdegllgmeih = 2;</code>
-   * @return The hdegllgmeih.
+   * <code>string combat_id = 2;</code>
+   * @return The combatId.
    */
-  java.lang.String getHdegllgmeih();
+  java.lang.String getCombatId();
   /**
-   * <code>string hdegllgmeih = 2;</code>
-   * @return The bytes for hdegllgmeih.
+   * <code>string combat_id = 2;</code>
+   * @return The bytes for combatId.
    */
   com.google.protobuf.ByteString
-      getHdegllgmeihBytes();
+      getCombatIdBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
-   * @return Whether the ekinggfmndg field is set.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
+   * @return Whether the player field is set.
    */
-  boolean hasEkinggfmndg();
+  boolean hasPlayer();
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
-   * @return The ekinggfmndg.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
+   * @return The player.
    */
-  POGOProtos.Rpc.CombatProto.CombatPlayerProto getEkinggfmndg();
+  POGOProtos.Rpc.CombatProto.CombatPlayerProto getPlayer();
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
    */
-  POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getEkinggfmndgOrBuilder();
+  POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getPlayerOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
-   * @return Whether the hlpfmbellom field is set.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
+   * @return Whether the opponent field is set.
    */
-  boolean hasHlpfmbellom();
+  boolean hasOpponent();
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
-   * @return The hlpfmbellom.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
+   * @return The opponent.
    */
-  POGOProtos.Rpc.CombatProto.CombatPlayerProto getHlpfmbellom();
+  POGOProtos.Rpc.CombatProto.CombatPlayerProto getOpponent();
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
    */
-  POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getHlpfmbellomOrBuilder();
+  POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getOpponentOrBuilder();
 
   /**
-   * <code>int64 ibbcgicfalh = 5;</code>
-   * @return The ibbcgicfalh.
+   * <code>int64 combat_start_ms = 5;</code>
+   * @return The combatStartMs.
    */
-  long getIbbcgicfalh();
+  long getCombatStartMs();
 
   /**
-   * <code>int64 ndfohhnjkka = 6;</code>
-   * @return The ndfohhnjkka.
+   * <code>int64 combat_end_ms = 6;</code>
+   * @return The combatEndMs.
    */
-  long getNdfohhnjkka();
+  long getCombatEndMs();
 
   /**
-   * <code>int64 dikaifhaigb = 7;</code>
-   * @return The dikaifhaigb.
+   * <code>int64 server_ms = 7;</code>
+   * @return The serverMs.
    */
-  long getDikaifhaigb();
+  long getServerMs();
 
   /**
-   * <code>int32 didegcjnmpl = 8;</code>
-   * @return The didegcjnmpl.
+   * <code>int32 current_turn = 8;</code>
+   * @return The currentTurn.
    */
-  int getDidegcjnmpl();
+  int getCurrentTurn();
 
   /**
-   * <code>int64 lcoheelaocd = 9;</code>
-   * @return The lcoheelaocd.
+   * <code>int64 turn_start_ms = 9;</code>
+   * @return The turnStartMs.
    */
-  long getLcoheelaocd();
+  long getTurnStartMs();
 
   /**
-   * <code>int64 pigoecpdfgc = 10;</code>
-   * @return The pigoecpdfgc.
+   * <code>int64 minigame_end_ms = 10;</code>
+   * @return The minigameEndMs.
    */
-  long getPigoecpdfgc();
+  long getMinigameEndMs();
 
   /**
-   * <code>int64 niibnpojdek = 11;</code>
-   * @return The niibnpojdek.
+   * <code>int64 minigame_submit_score_end_ms = 11;</code>
+   * @return The minigameSubmitScoreEndMs.
    */
-  long getNiibnpojdek();
+  long getMinigameSubmitScoreEndMs();
 
   /**
-   * <code>int64 goelpbehckl = 12;</code>
-   * @return The goelpbehckl.
+   * <code>int64 change_pokemon_end_ms = 12;</code>
+   * @return The changePokemonEndMs.
    */
-  long getGoelpbehckl();
+  long getChangePokemonEndMs();
 
   /**
-   * <code>int64 jeneikajhel = 13;</code>
-   * @return The jeneikajhel.
+   * <code>int64 quick_swap_cooldown_duration_ms = 13;</code>
+   * @return The quickSwapCooldownDurationMs.
    */
-  long getJeneikajhel();
+  long getQuickSwapCooldownDurationMs();
 
   /**
-   * <code>int64 dmjeiagkjlo = 14;</code>
-   * @return The dmjeiagkjlo.
+   * <code>int64 state_change_delay_until_turn = 14;</code>
+   * @return The stateChangeDelayUntilTurn.
    */
-  long getDmjeiagkjlo();
+  long getStateChangeDelayUntilTurn();
 }

@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private BattlePartyTelemetry() {
-    jfjdkdhppdd_ = 0;
+    battlePartyClickId_ = 0;
   }
 
   @java.lang.Override
@@ -56,17 +56,17 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            jfjdkdhppdd_ = rawValue;
+            battlePartyClickId_ = rawValue;
             break;
           }
           case 16: {
 
-            efbgmldiemp_ = input.readInt32();
+            battlePartyCount_ = input.readInt32();
             break;
           }
           case 24: {
 
-            kokkgoimcbo_ = input.readInt32();
+            battlePartyNumber_ = input.readInt32();
             break;
           }
           default: {
@@ -101,45 +101,45 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.BattlePartyTelemetry.class, POGOProtos.Rpc.BattlePartyTelemetry.Builder.class);
   }
 
-  public static final int JFJDKDHPPDD_FIELD_NUMBER = 1;
-  private int jfjdkdhppdd_;
+  public static final int BATTLE_PARTY_CLICK_ID_FIELD_NUMBER = 1;
+  private int battlePartyClickId_;
   /**
-   * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds jfjdkdhppdd = 1;</code>
-   * @return The enum numeric value on the wire for jfjdkdhppdd.
+   * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds battle_party_click_id = 1;</code>
+   * @return The enum numeric value on the wire for battlePartyClickId.
    */
-  @java.lang.Override public int getJfjdkdhppddValue() {
-    return jfjdkdhppdd_;
+  @java.lang.Override public int getBattlePartyClickIdValue() {
+    return battlePartyClickId_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds jfjdkdhppdd = 1;</code>
-   * @return The jfjdkdhppdd.
+   * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds battle_party_click_id = 1;</code>
+   * @return The battlePartyClickId.
    */
-  @java.lang.Override public POGOProtos.Rpc.BattlePartyTelemetryIds getJfjdkdhppdd() {
+  @java.lang.Override public POGOProtos.Rpc.BattlePartyTelemetryIds getBattlePartyClickId() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.BattlePartyTelemetryIds result = POGOProtos.Rpc.BattlePartyTelemetryIds.valueOf(jfjdkdhppdd_);
+    POGOProtos.Rpc.BattlePartyTelemetryIds result = POGOProtos.Rpc.BattlePartyTelemetryIds.valueOf(battlePartyClickId_);
     return result == null ? POGOProtos.Rpc.BattlePartyTelemetryIds.UNRECOGNIZED : result;
   }
 
-  public static final int EFBGMLDIEMP_FIELD_NUMBER = 2;
-  private int efbgmldiemp_;
+  public static final int BATTLE_PARTY_COUNT_FIELD_NUMBER = 2;
+  private int battlePartyCount_;
   /**
-   * <code>int32 efbgmldiemp = 2;</code>
-   * @return The efbgmldiemp.
+   * <code>int32 battle_party_count = 2;</code>
+   * @return The battlePartyCount.
    */
   @java.lang.Override
-  public int getEfbgmldiemp() {
-    return efbgmldiemp_;
+  public int getBattlePartyCount() {
+    return battlePartyCount_;
   }
 
-  public static final int KOKKGOIMCBO_FIELD_NUMBER = 3;
-  private int kokkgoimcbo_;
+  public static final int BATTLE_PARTY_NUMBER_FIELD_NUMBER = 3;
+  private int battlePartyNumber_;
   /**
-   * <code>int32 kokkgoimcbo = 3;</code>
-   * @return The kokkgoimcbo.
+   * <code>int32 battle_party_number = 3;</code>
+   * @return The battlePartyNumber.
    */
   @java.lang.Override
-  public int getKokkgoimcbo() {
-    return kokkgoimcbo_;
+  public int getBattlePartyNumber() {
+    return battlePartyNumber_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -156,14 +156,14 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (jfjdkdhppdd_ != POGOProtos.Rpc.BattlePartyTelemetryIds.BATTLE_PARTY_TELEMETRY_IDS_UNDEFINED_BATTLE_PARTY_EVENT.getNumber()) {
-      output.writeEnum(1, jfjdkdhppdd_);
+    if (battlePartyClickId_ != POGOProtos.Rpc.BattlePartyTelemetryIds.BATTLE_PARTY_TELEMETRY_IDS_UNDEFINED_BATTLE_PARTY_EVENT.getNumber()) {
+      output.writeEnum(1, battlePartyClickId_);
     }
-    if (efbgmldiemp_ != 0) {
-      output.writeInt32(2, efbgmldiemp_);
+    if (battlePartyCount_ != 0) {
+      output.writeInt32(2, battlePartyCount_);
     }
-    if (kokkgoimcbo_ != 0) {
-      output.writeInt32(3, kokkgoimcbo_);
+    if (battlePartyNumber_ != 0) {
+      output.writeInt32(3, battlePartyNumber_);
     }
     unknownFields.writeTo(output);
   }
@@ -174,17 +174,17 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (jfjdkdhppdd_ != POGOProtos.Rpc.BattlePartyTelemetryIds.BATTLE_PARTY_TELEMETRY_IDS_UNDEFINED_BATTLE_PARTY_EVENT.getNumber()) {
+    if (battlePartyClickId_ != POGOProtos.Rpc.BattlePartyTelemetryIds.BATTLE_PARTY_TELEMETRY_IDS_UNDEFINED_BATTLE_PARTY_EVENT.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, jfjdkdhppdd_);
+        .computeEnumSize(1, battlePartyClickId_);
     }
-    if (efbgmldiemp_ != 0) {
+    if (battlePartyCount_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, efbgmldiemp_);
+        .computeInt32Size(2, battlePartyCount_);
     }
-    if (kokkgoimcbo_ != 0) {
+    if (battlePartyNumber_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, kokkgoimcbo_);
+        .computeInt32Size(3, battlePartyNumber_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -201,11 +201,11 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BattlePartyTelemetry other = (POGOProtos.Rpc.BattlePartyTelemetry) obj;
 
-    if (jfjdkdhppdd_ != other.jfjdkdhppdd_) return false;
-    if (getEfbgmldiemp()
-        != other.getEfbgmldiemp()) return false;
-    if (getKokkgoimcbo()
-        != other.getKokkgoimcbo()) return false;
+    if (battlePartyClickId_ != other.battlePartyClickId_) return false;
+    if (getBattlePartyCount()
+        != other.getBattlePartyCount()) return false;
+    if (getBattlePartyNumber()
+        != other.getBattlePartyNumber()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -217,12 +217,12 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + JFJDKDHPPDD_FIELD_NUMBER;
-    hash = (53 * hash) + jfjdkdhppdd_;
-    hash = (37 * hash) + EFBGMLDIEMP_FIELD_NUMBER;
-    hash = (53 * hash) + getEfbgmldiemp();
-    hash = (37 * hash) + KOKKGOIMCBO_FIELD_NUMBER;
-    hash = (53 * hash) + getKokkgoimcbo();
+    hash = (37 * hash) + BATTLE_PARTY_CLICK_ID_FIELD_NUMBER;
+    hash = (53 * hash) + battlePartyClickId_;
+    hash = (37 * hash) + BATTLE_PARTY_COUNT_FIELD_NUMBER;
+    hash = (53 * hash) + getBattlePartyCount();
+    hash = (37 * hash) + BATTLE_PARTY_NUMBER_FIELD_NUMBER;
+    hash = (53 * hash) + getBattlePartyNumber();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -360,11 +360,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      jfjdkdhppdd_ = 0;
+      battlePartyClickId_ = 0;
 
-      efbgmldiemp_ = 0;
+      battlePartyCount_ = 0;
 
-      kokkgoimcbo_ = 0;
+      battlePartyNumber_ = 0;
 
       return this;
     }
@@ -392,9 +392,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.BattlePartyTelemetry buildPartial() {
       POGOProtos.Rpc.BattlePartyTelemetry result = new POGOProtos.Rpc.BattlePartyTelemetry(this);
-      result.jfjdkdhppdd_ = jfjdkdhppdd_;
-      result.efbgmldiemp_ = efbgmldiemp_;
-      result.kokkgoimcbo_ = kokkgoimcbo_;
+      result.battlePartyClickId_ = battlePartyClickId_;
+      result.battlePartyCount_ = battlePartyCount_;
+      result.battlePartyNumber_ = battlePartyNumber_;
       onBuilt();
       return result;
     }
@@ -443,14 +443,14 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BattlePartyTelemetry other) {
       if (other == POGOProtos.Rpc.BattlePartyTelemetry.getDefaultInstance()) return this;
-      if (other.jfjdkdhppdd_ != 0) {
-        setJfjdkdhppddValue(other.getJfjdkdhppddValue());
+      if (other.battlePartyClickId_ != 0) {
+        setBattlePartyClickIdValue(other.getBattlePartyClickIdValue());
       }
-      if (other.getEfbgmldiemp() != 0) {
-        setEfbgmldiemp(other.getEfbgmldiemp());
+      if (other.getBattlePartyCount() != 0) {
+        setBattlePartyCount(other.getBattlePartyCount());
       }
-      if (other.getKokkgoimcbo() != 0) {
-        setKokkgoimcbo(other.getKokkgoimcbo());
+      if (other.getBattlePartyNumber() != 0) {
+        setBattlePartyNumber(other.getBattlePartyNumber());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -481,118 +481,118 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int jfjdkdhppdd_ = 0;
+    private int battlePartyClickId_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds jfjdkdhppdd = 1;</code>
-     * @return The enum numeric value on the wire for jfjdkdhppdd.
+     * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds battle_party_click_id = 1;</code>
+     * @return The enum numeric value on the wire for battlePartyClickId.
      */
-    @java.lang.Override public int getJfjdkdhppddValue() {
-      return jfjdkdhppdd_;
+    @java.lang.Override public int getBattlePartyClickIdValue() {
+      return battlePartyClickId_;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds jfjdkdhppdd = 1;</code>
-     * @param value The enum numeric value on the wire for jfjdkdhppdd to set.
+     * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds battle_party_click_id = 1;</code>
+     * @param value The enum numeric value on the wire for battlePartyClickId to set.
      * @return This builder for chaining.
      */
-    public Builder setJfjdkdhppddValue(int value) {
+    public Builder setBattlePartyClickIdValue(int value) {
       
-      jfjdkdhppdd_ = value;
+      battlePartyClickId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds jfjdkdhppdd = 1;</code>
-     * @return The jfjdkdhppdd.
+     * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds battle_party_click_id = 1;</code>
+     * @return The battlePartyClickId.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BattlePartyTelemetryIds getJfjdkdhppdd() {
+    public POGOProtos.Rpc.BattlePartyTelemetryIds getBattlePartyClickId() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.BattlePartyTelemetryIds result = POGOProtos.Rpc.BattlePartyTelemetryIds.valueOf(jfjdkdhppdd_);
+      POGOProtos.Rpc.BattlePartyTelemetryIds result = POGOProtos.Rpc.BattlePartyTelemetryIds.valueOf(battlePartyClickId_);
       return result == null ? POGOProtos.Rpc.BattlePartyTelemetryIds.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds jfjdkdhppdd = 1;</code>
-     * @param value The jfjdkdhppdd to set.
+     * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds battle_party_click_id = 1;</code>
+     * @param value The battlePartyClickId to set.
      * @return This builder for chaining.
      */
-    public Builder setJfjdkdhppdd(POGOProtos.Rpc.BattlePartyTelemetryIds value) {
+    public Builder setBattlePartyClickId(POGOProtos.Rpc.BattlePartyTelemetryIds value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      jfjdkdhppdd_ = value.getNumber();
+      battlePartyClickId_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds jfjdkdhppdd = 1;</code>
+     * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds battle_party_click_id = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJfjdkdhppdd() {
+    public Builder clearBattlePartyClickId() {
       
-      jfjdkdhppdd_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private int efbgmldiemp_ ;
-    /**
-     * <code>int32 efbgmldiemp = 2;</code>
-     * @return The efbgmldiemp.
-     */
-    @java.lang.Override
-    public int getEfbgmldiemp() {
-      return efbgmldiemp_;
-    }
-    /**
-     * <code>int32 efbgmldiemp = 2;</code>
-     * @param value The efbgmldiemp to set.
-     * @return This builder for chaining.
-     */
-    public Builder setEfbgmldiemp(int value) {
-      
-      efbgmldiemp_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 efbgmldiemp = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearEfbgmldiemp() {
-      
-      efbgmldiemp_ = 0;
+      battlePartyClickId_ = 0;
       onChanged();
       return this;
     }
 
-    private int kokkgoimcbo_ ;
+    private int battlePartyCount_ ;
     /**
-     * <code>int32 kokkgoimcbo = 3;</code>
-     * @return The kokkgoimcbo.
+     * <code>int32 battle_party_count = 2;</code>
+     * @return The battlePartyCount.
      */
     @java.lang.Override
-    public int getKokkgoimcbo() {
-      return kokkgoimcbo_;
+    public int getBattlePartyCount() {
+      return battlePartyCount_;
     }
     /**
-     * <code>int32 kokkgoimcbo = 3;</code>
-     * @param value The kokkgoimcbo to set.
+     * <code>int32 battle_party_count = 2;</code>
+     * @param value The battlePartyCount to set.
      * @return This builder for chaining.
      */
-    public Builder setKokkgoimcbo(int value) {
+    public Builder setBattlePartyCount(int value) {
       
-      kokkgoimcbo_ = value;
+      battlePartyCount_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 kokkgoimcbo = 3;</code>
+     * <code>int32 battle_party_count = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearKokkgoimcbo() {
+    public Builder clearBattlePartyCount() {
       
-      kokkgoimcbo_ = 0;
+      battlePartyCount_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int battlePartyNumber_ ;
+    /**
+     * <code>int32 battle_party_number = 3;</code>
+     * @return The battlePartyNumber.
+     */
+    @java.lang.Override
+    public int getBattlePartyNumber() {
+      return battlePartyNumber_;
+    }
+    /**
+     * <code>int32 battle_party_number = 3;</code>
+     * @param value The battlePartyNumber to set.
+     * @return This builder for chaining.
+     */
+    public Builder setBattlePartyNumber(int value) {
+      
+      battlePartyNumber_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 battle_party_number = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearBattlePartyNumber() {
+      
+      battlePartyNumber_ = 0;
       onChanged();
       return this;
     }

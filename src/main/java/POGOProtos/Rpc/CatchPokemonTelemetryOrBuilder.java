@@ -20,41 +20,41 @@ public interface CatchPokemonTelemetryOrBuilder extends
       getStatusBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
-   * @return Whether the obpljimiogi field is set.
+   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
+   * @return Whether the encounterPokemonTelemetry field is set.
    */
-  boolean hasObpljimiogi();
+  boolean hasEncounterPokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
-   * @return The obpljimiogi.
+   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
+   * @return The encounterPokemonTelemetry.
    */
-  POGOProtos.Rpc.EncounterPokemonTelemetry getObpljimiogi();
+  POGOProtos.Rpc.EncounterPokemonTelemetry getEncounterPokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
+   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
    */
-  POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder getObpljimiogiOrBuilder();
+  POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder getEncounterPokemonTelemetryOrBuilder();
 
   /**
-   * <code>int32 djiekgjhkdg = 3;</code>
-   * @return The djiekgjhkdg.
+   * <code>int32 balltype = 3;</code>
+   * @return The balltype.
    */
-  int getDjiekgjhkdg();
+  int getBalltype();
 
   /**
-   * <code>int32 fanngcfnojm = 4;</code>
-   * @return The fanngcfnojm.
+   * <code>int32 hit_grade = 4;</code>
+   * @return The hitGrade.
    */
-  int getFanngcfnojm();
+  int getHitGrade();
 
   /**
-   * <code>bool fflmlnpidfb = 5;</code>
-   * @return The fflmlnpidfb.
+   * <code>bool curve_ball = 5;</code>
+   * @return The curveBall.
    */
-  boolean getFflmlnpidfb();
+  boolean getCurveBall();
 
   /**
-   * <code>double kckbhmcliga = 6;</code>
-   * @return The kckbhmcliga.
+   * <code>double miss_percent = 6;</code>
+   * @return The missPercent.
    */
-  double getKckbhmcliga();
+  double getMissPercent();
 }

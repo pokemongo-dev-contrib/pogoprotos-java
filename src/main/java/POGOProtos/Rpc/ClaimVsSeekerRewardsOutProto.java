@@ -61,13 +61,13 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             POGOProtos.Rpc.LootProto.Builder subBuilder = null;
-            if (nldndpcfdmh_ != null) {
-              subBuilder = nldndpcfdmh_.toBuilder();
+            if (rewards_ != null) {
+              subBuilder = rewards_.toBuilder();
             }
-            nldndpcfdmh_ = input.readMessage(POGOProtos.Rpc.LootProto.parser(), extensionRegistry);
+            rewards_ = input.readMessage(POGOProtos.Rpc.LootProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(nldndpcfdmh_);
-              nldndpcfdmh_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(rewards_);
+              rewards_ = subBuilder.buildPartial();
             }
 
             break;
@@ -271,30 +271,30 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.ClaimVsSeekerRewardsOutProto.Result.UNRECOGNIZED : result;
   }
 
-  public static final int NLDNDPCFDMH_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.LootProto nldndpcfdmh_;
+  public static final int REWARDS_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.LootProto rewards_;
   /**
-   * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
-   * @return Whether the nldndpcfdmh field is set.
+   * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
+   * @return Whether the rewards field is set.
    */
   @java.lang.Override
-  public boolean hasNldndpcfdmh() {
-    return nldndpcfdmh_ != null;
+  public boolean hasRewards() {
+    return rewards_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
-   * @return The nldndpcfdmh.
+   * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
+   * @return The rewards.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.LootProto getNldndpcfdmh() {
-    return nldndpcfdmh_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : nldndpcfdmh_;
+  public POGOProtos.Rpc.LootProto getRewards() {
+    return rewards_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : rewards_;
   }
   /**
-   * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
+   * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.LootProtoOrBuilder getNldndpcfdmhOrBuilder() {
-    return getNldndpcfdmh();
+  public POGOProtos.Rpc.LootProtoOrBuilder getRewardsOrBuilder() {
+    return getRewards();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -314,8 +314,8 @@ private static final long serialVersionUID = 0L;
     if (result_ != POGOProtos.Rpc.ClaimVsSeekerRewardsOutProto.Result.UNSET.getNumber()) {
       output.writeEnum(1, result_);
     }
-    if (nldndpcfdmh_ != null) {
-      output.writeMessage(2, getNldndpcfdmh());
+    if (rewards_ != null) {
+      output.writeMessage(2, getRewards());
     }
     unknownFields.writeTo(output);
   }
@@ -330,9 +330,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }
-    if (nldndpcfdmh_ != null) {
+    if (rewards_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getNldndpcfdmh());
+        .computeMessageSize(2, getRewards());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -350,10 +350,10 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.ClaimVsSeekerRewardsOutProto other = (POGOProtos.Rpc.ClaimVsSeekerRewardsOutProto) obj;
 
     if (result_ != other.result_) return false;
-    if (hasNldndpcfdmh() != other.hasNldndpcfdmh()) return false;
-    if (hasNldndpcfdmh()) {
-      if (!getNldndpcfdmh()
-          .equals(other.getNldndpcfdmh())) return false;
+    if (hasRewards() != other.hasRewards()) return false;
+    if (hasRewards()) {
+      if (!getRewards()
+          .equals(other.getRewards())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -368,9 +368,9 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + RESULT_FIELD_NUMBER;
     hash = (53 * hash) + result_;
-    if (hasNldndpcfdmh()) {
-      hash = (37 * hash) + NLDNDPCFDMH_FIELD_NUMBER;
-      hash = (53 * hash) + getNldndpcfdmh().hashCode();
+    if (hasRewards()) {
+      hash = (37 * hash) + REWARDS_FIELD_NUMBER;
+      hash = (53 * hash) + getRewards().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -511,11 +511,11 @@ private static final long serialVersionUID = 0L;
       super.clear();
       result_ = 0;
 
-      if (nldndpcfdmhBuilder_ == null) {
-        nldndpcfdmh_ = null;
+      if (rewardsBuilder_ == null) {
+        rewards_ = null;
       } else {
-        nldndpcfdmh_ = null;
-        nldndpcfdmhBuilder_ = null;
+        rewards_ = null;
+        rewardsBuilder_ = null;
       }
       return this;
     }
@@ -544,10 +544,10 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.ClaimVsSeekerRewardsOutProto buildPartial() {
       POGOProtos.Rpc.ClaimVsSeekerRewardsOutProto result = new POGOProtos.Rpc.ClaimVsSeekerRewardsOutProto(this);
       result.result_ = result_;
-      if (nldndpcfdmhBuilder_ == null) {
-        result.nldndpcfdmh_ = nldndpcfdmh_;
+      if (rewardsBuilder_ == null) {
+        result.rewards_ = rewards_;
       } else {
-        result.nldndpcfdmh_ = nldndpcfdmhBuilder_.build();
+        result.rewards_ = rewardsBuilder_.build();
       }
       onBuilt();
       return result;
@@ -600,8 +600,8 @@ private static final long serialVersionUID = 0L;
       if (other.result_ != 0) {
         setResultValue(other.getResultValue());
       }
-      if (other.hasNldndpcfdmh()) {
-        mergeNldndpcfdmh(other.getNldndpcfdmh());
+      if (other.hasRewards()) {
+        mergeRewards(other.getRewards());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -686,123 +686,123 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.LootProto nldndpcfdmh_;
+    private POGOProtos.Rpc.LootProto rewards_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> nldndpcfdmhBuilder_;
+        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> rewardsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
-     * @return Whether the nldndpcfdmh field is set.
+     * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
+     * @return Whether the rewards field is set.
      */
-    public boolean hasNldndpcfdmh() {
-      return nldndpcfdmhBuilder_ != null || nldndpcfdmh_ != null;
+    public boolean hasRewards() {
+      return rewardsBuilder_ != null || rewards_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
-     * @return The nldndpcfdmh.
+     * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
+     * @return The rewards.
      */
-    public POGOProtos.Rpc.LootProto getNldndpcfdmh() {
-      if (nldndpcfdmhBuilder_ == null) {
-        return nldndpcfdmh_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : nldndpcfdmh_;
+    public POGOProtos.Rpc.LootProto getRewards() {
+      if (rewardsBuilder_ == null) {
+        return rewards_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : rewards_;
       } else {
-        return nldndpcfdmhBuilder_.getMessage();
+        return rewardsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
      */
-    public Builder setNldndpcfdmh(POGOProtos.Rpc.LootProto value) {
-      if (nldndpcfdmhBuilder_ == null) {
+    public Builder setRewards(POGOProtos.Rpc.LootProto value) {
+      if (rewardsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        nldndpcfdmh_ = value;
+        rewards_ = value;
         onChanged();
       } else {
-        nldndpcfdmhBuilder_.setMessage(value);
+        rewardsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
      */
-    public Builder setNldndpcfdmh(
+    public Builder setRewards(
         POGOProtos.Rpc.LootProto.Builder builderForValue) {
-      if (nldndpcfdmhBuilder_ == null) {
-        nldndpcfdmh_ = builderForValue.build();
+      if (rewardsBuilder_ == null) {
+        rewards_ = builderForValue.build();
         onChanged();
       } else {
-        nldndpcfdmhBuilder_.setMessage(builderForValue.build());
+        rewardsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
      */
-    public Builder mergeNldndpcfdmh(POGOProtos.Rpc.LootProto value) {
-      if (nldndpcfdmhBuilder_ == null) {
-        if (nldndpcfdmh_ != null) {
-          nldndpcfdmh_ =
-            POGOProtos.Rpc.LootProto.newBuilder(nldndpcfdmh_).mergeFrom(value).buildPartial();
+    public Builder mergeRewards(POGOProtos.Rpc.LootProto value) {
+      if (rewardsBuilder_ == null) {
+        if (rewards_ != null) {
+          rewards_ =
+            POGOProtos.Rpc.LootProto.newBuilder(rewards_).mergeFrom(value).buildPartial();
         } else {
-          nldndpcfdmh_ = value;
+          rewards_ = value;
         }
         onChanged();
       } else {
-        nldndpcfdmhBuilder_.mergeFrom(value);
+        rewardsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
      */
-    public Builder clearNldndpcfdmh() {
-      if (nldndpcfdmhBuilder_ == null) {
-        nldndpcfdmh_ = null;
+    public Builder clearRewards() {
+      if (rewardsBuilder_ == null) {
+        rewards_ = null;
         onChanged();
       } else {
-        nldndpcfdmh_ = null;
-        nldndpcfdmhBuilder_ = null;
+        rewards_ = null;
+        rewardsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
      */
-    public POGOProtos.Rpc.LootProto.Builder getNldndpcfdmhBuilder() {
+    public POGOProtos.Rpc.LootProto.Builder getRewardsBuilder() {
       
       onChanged();
-      return getNldndpcfdmhFieldBuilder().getBuilder();
+      return getRewardsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
      */
-    public POGOProtos.Rpc.LootProtoOrBuilder getNldndpcfdmhOrBuilder() {
-      if (nldndpcfdmhBuilder_ != null) {
-        return nldndpcfdmhBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.LootProtoOrBuilder getRewardsOrBuilder() {
+      if (rewardsBuilder_ != null) {
+        return rewardsBuilder_.getMessageOrBuilder();
       } else {
-        return nldndpcfdmh_ == null ?
-            POGOProtos.Rpc.LootProto.getDefaultInstance() : nldndpcfdmh_;
+        return rewards_ == null ?
+            POGOProtos.Rpc.LootProto.getDefaultInstance() : rewards_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> 
-        getNldndpcfdmhFieldBuilder() {
-      if (nldndpcfdmhBuilder_ == null) {
-        nldndpcfdmhBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getRewardsFieldBuilder() {
+      if (rewardsBuilder_ == null) {
+        rewardsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder>(
-                getNldndpcfdmh(),
+                getRewards(),
                 getParentForChildren(),
                 isClean());
-        nldndpcfdmh_ = null;
+        rewards_ = null;
       }
-      return nldndpcfdmhBuilder_;
+      return rewardsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

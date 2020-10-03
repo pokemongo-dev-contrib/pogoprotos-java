@@ -60,11 +60,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.AccountSettingsProto.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformAccountSettingsProto.Builder subBuilder = null;
             if (settings_ != null) {
               subBuilder = settings_.toBuilder();
             }
-            settings_ = input.readMessage(POGOProtos.Rpc.AccountSettingsProto.parser(), extensionRegistry);
+            settings_ = input.readMessage(POGOProtos.Rpc.PlatformAccountSettingsProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(settings_);
               settings_ = subBuilder.buildPartial();
@@ -245,9 +245,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SETTINGS_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.AccountSettingsProto settings_;
+  private POGOProtos.Rpc.PlatformAccountSettingsProto settings_;
   /**
-   * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
    * @return Whether the settings field is set.
    */
   @java.lang.Override
@@ -255,18 +255,18 @@ private static final long serialVersionUID = 0L;
     return settings_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
    * @return The settings.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AccountSettingsProto getSettings() {
-    return settings_ == null ? POGOProtos.Rpc.AccountSettingsProto.getDefaultInstance() : settings_;
+  public POGOProtos.Rpc.PlatformAccountSettingsProto getSettings() {
+    return settings_ == null ? POGOProtos.Rpc.PlatformAccountSettingsProto.getDefaultInstance() : settings_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AccountSettingsProtoOrBuilder getSettingsOrBuilder() {
+  public POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder getSettingsOrBuilder() {
     return getSettings();
   }
 
@@ -659,31 +659,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.AccountSettingsProto settings_;
+    private POGOProtos.Rpc.PlatformAccountSettingsProto settings_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AccountSettingsProto, POGOProtos.Rpc.AccountSettingsProto.Builder, POGOProtos.Rpc.AccountSettingsProtoOrBuilder> settingsBuilder_;
+        POGOProtos.Rpc.PlatformAccountSettingsProto, POGOProtos.Rpc.PlatformAccountSettingsProto.Builder, POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder> settingsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
      * @return Whether the settings field is set.
      */
     public boolean hasSettings() {
       return settingsBuilder_ != null || settings_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
      * @return The settings.
      */
-    public POGOProtos.Rpc.AccountSettingsProto getSettings() {
+    public POGOProtos.Rpc.PlatformAccountSettingsProto getSettings() {
       if (settingsBuilder_ == null) {
-        return settings_ == null ? POGOProtos.Rpc.AccountSettingsProto.getDefaultInstance() : settings_;
+        return settings_ == null ? POGOProtos.Rpc.PlatformAccountSettingsProto.getDefaultInstance() : settings_;
       } else {
         return settingsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
      */
-    public Builder setSettings(POGOProtos.Rpc.AccountSettingsProto value) {
+    public Builder setSettings(POGOProtos.Rpc.PlatformAccountSettingsProto value) {
       if (settingsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -697,10 +697,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
      */
     public Builder setSettings(
-        POGOProtos.Rpc.AccountSettingsProto.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformAccountSettingsProto.Builder builderForValue) {
       if (settingsBuilder_ == null) {
         settings_ = builderForValue.build();
         onChanged();
@@ -711,13 +711,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
      */
-    public Builder mergeSettings(POGOProtos.Rpc.AccountSettingsProto value) {
+    public Builder mergeSettings(POGOProtos.Rpc.PlatformAccountSettingsProto value) {
       if (settingsBuilder_ == null) {
         if (settings_ != null) {
           settings_ =
-            POGOProtos.Rpc.AccountSettingsProto.newBuilder(settings_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformAccountSettingsProto.newBuilder(settings_).mergeFrom(value).buildPartial();
         } else {
           settings_ = value;
         }
@@ -729,7 +729,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
      */
     public Builder clearSettings() {
       if (settingsBuilder_ == null) {
@@ -743,33 +743,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
      */
-    public POGOProtos.Rpc.AccountSettingsProto.Builder getSettingsBuilder() {
+    public POGOProtos.Rpc.PlatformAccountSettingsProto.Builder getSettingsBuilder() {
       
       onChanged();
       return getSettingsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
      */
-    public POGOProtos.Rpc.AccountSettingsProtoOrBuilder getSettingsOrBuilder() {
+    public POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder getSettingsOrBuilder() {
       if (settingsBuilder_ != null) {
         return settingsBuilder_.getMessageOrBuilder();
       } else {
         return settings_ == null ?
-            POGOProtos.Rpc.AccountSettingsProto.getDefaultInstance() : settings_;
+            POGOProtos.Rpc.PlatformAccountSettingsProto.getDefaultInstance() : settings_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AccountSettingsProto, POGOProtos.Rpc.AccountSettingsProto.Builder, POGOProtos.Rpc.AccountSettingsProtoOrBuilder> 
+        POGOProtos.Rpc.PlatformAccountSettingsProto, POGOProtos.Rpc.PlatformAccountSettingsProto.Builder, POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder> 
         getSettingsFieldBuilder() {
       if (settingsBuilder_ == null) {
         settingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.AccountSettingsProto, POGOProtos.Rpc.AccountSettingsProto.Builder, POGOProtos.Rpc.AccountSettingsProtoOrBuilder>(
+            POGOProtos.Rpc.PlatformAccountSettingsProto, POGOProtos.Rpc.PlatformAccountSettingsProto.Builder, POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder>(
                 getSettings(),
                 getParentForChildren(),
                 isClean());

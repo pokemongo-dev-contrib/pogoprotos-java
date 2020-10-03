@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AppliedItemsProto() {
-    ekpohjfklal_ = java.util.Collections.emptyList();
+    item_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -56,10 +56,10 @@ private static final long serialVersionUID = 0L;
             break;
           case 34: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              ekpohjfklal_ = new java.util.ArrayList<POGOProtos.Rpc.AppliedItemProto>();
+              item_ = new java.util.ArrayList<POGOProtos.Rpc.AppliedItemProto>();
               mutable_bitField0_ |= 0x00000001;
             }
-            ekpohjfklal_.add(
+            item_.add(
                 input.readMessage(POGOProtos.Rpc.AppliedItemProto.parser(), extensionRegistry));
             break;
           }
@@ -79,7 +79,7 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        ekpohjfklal_ = java.util.Collections.unmodifiableList(ekpohjfklal_);
+        item_ = java.util.Collections.unmodifiableList(item_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -98,44 +98,44 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.AppliedItemsProto.class, POGOProtos.Rpc.AppliedItemsProto.Builder.class);
   }
 
-  public static final int EKPOHJFKLAL_FIELD_NUMBER = 4;
-  private java.util.List<POGOProtos.Rpc.AppliedItemProto> ekpohjfklal_;
+  public static final int ITEM_FIELD_NUMBER = 4;
+  private java.util.List<POGOProtos.Rpc.AppliedItemProto> item_;
   /**
-   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.AppliedItemProto> getEkpohjfklalList() {
-    return ekpohjfklal_;
+  public java.util.List<POGOProtos.Rpc.AppliedItemProto> getItemList() {
+    return item_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
    */
   @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.AppliedItemProtoOrBuilder> 
-      getEkpohjfklalOrBuilderList() {
-    return ekpohjfklal_;
+      getItemOrBuilderList() {
+    return item_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
    */
   @java.lang.Override
-  public int getEkpohjfklalCount() {
-    return ekpohjfklal_.size();
+  public int getItemCount() {
+    return item_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AppliedItemProto getEkpohjfklal(int index) {
-    return ekpohjfklal_.get(index);
+  public POGOProtos.Rpc.AppliedItemProto getItem(int index) {
+    return item_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AppliedItemProtoOrBuilder getEkpohjfklalOrBuilder(
+  public POGOProtos.Rpc.AppliedItemProtoOrBuilder getItemOrBuilder(
       int index) {
-    return ekpohjfklal_.get(index);
+    return item_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
@@ -152,8 +152,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    for (int i = 0; i < ekpohjfklal_.size(); i++) {
-      output.writeMessage(4, ekpohjfklal_.get(i));
+    for (int i = 0; i < item_.size(); i++) {
+      output.writeMessage(4, item_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -164,9 +164,9 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    for (int i = 0; i < ekpohjfklal_.size(); i++) {
+    for (int i = 0; i < item_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, ekpohjfklal_.get(i));
+        .computeMessageSize(4, item_.get(i));
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -183,8 +183,8 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.AppliedItemsProto other = (POGOProtos.Rpc.AppliedItemsProto) obj;
 
-    if (!getEkpohjfklalList()
-        .equals(other.getEkpohjfklalList())) return false;
+    if (!getItemList()
+        .equals(other.getItemList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -196,9 +196,9 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (getEkpohjfklalCount() > 0) {
-      hash = (37 * hash) + EKPOHJFKLAL_FIELD_NUMBER;
-      hash = (53 * hash) + getEkpohjfklalList().hashCode();
+    if (getItemCount() > 0) {
+      hash = (37 * hash) + ITEM_FIELD_NUMBER;
+      hash = (53 * hash) + getItemList().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -332,17 +332,17 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
-        getEkpohjfklalFieldBuilder();
+        getItemFieldBuilder();
       }
     }
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (ekpohjfklalBuilder_ == null) {
-        ekpohjfklal_ = java.util.Collections.emptyList();
+      if (itemBuilder_ == null) {
+        item_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
       } else {
-        ekpohjfklalBuilder_.clear();
+        itemBuilder_.clear();
       }
       return this;
     }
@@ -371,14 +371,14 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.AppliedItemsProto buildPartial() {
       POGOProtos.Rpc.AppliedItemsProto result = new POGOProtos.Rpc.AppliedItemsProto(this);
       int from_bitField0_ = bitField0_;
-      if (ekpohjfklalBuilder_ == null) {
+      if (itemBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
-          ekpohjfklal_ = java.util.Collections.unmodifiableList(ekpohjfklal_);
+          item_ = java.util.Collections.unmodifiableList(item_);
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.ekpohjfklal_ = ekpohjfklal_;
+        result.item_ = item_;
       } else {
-        result.ekpohjfklal_ = ekpohjfklalBuilder_.build();
+        result.item_ = itemBuilder_.build();
       }
       onBuilt();
       return result;
@@ -428,29 +428,29 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.AppliedItemsProto other) {
       if (other == POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance()) return this;
-      if (ekpohjfklalBuilder_ == null) {
-        if (!other.ekpohjfklal_.isEmpty()) {
-          if (ekpohjfklal_.isEmpty()) {
-            ekpohjfklal_ = other.ekpohjfklal_;
+      if (itemBuilder_ == null) {
+        if (!other.item_.isEmpty()) {
+          if (item_.isEmpty()) {
+            item_ = other.item_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureEkpohjfklalIsMutable();
-            ekpohjfklal_.addAll(other.ekpohjfklal_);
+            ensureItemIsMutable();
+            item_.addAll(other.item_);
           }
           onChanged();
         }
       } else {
-        if (!other.ekpohjfklal_.isEmpty()) {
-          if (ekpohjfklalBuilder_.isEmpty()) {
-            ekpohjfklalBuilder_.dispose();
-            ekpohjfklalBuilder_ = null;
-            ekpohjfklal_ = other.ekpohjfklal_;
+        if (!other.item_.isEmpty()) {
+          if (itemBuilder_.isEmpty()) {
+            itemBuilder_.dispose();
+            itemBuilder_ = null;
+            item_ = other.item_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            ekpohjfklalBuilder_ = 
+            itemBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getEkpohjfklalFieldBuilder() : null;
+                 getItemFieldBuilder() : null;
           } else {
-            ekpohjfklalBuilder_.addAllMessages(other.ekpohjfklal_);
+            itemBuilder_.addAllMessages(other.item_);
           }
         }
       }
@@ -484,244 +484,244 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<POGOProtos.Rpc.AppliedItemProto> ekpohjfklal_ =
+    private java.util.List<POGOProtos.Rpc.AppliedItemProto> item_ =
       java.util.Collections.emptyList();
-    private void ensureEkpohjfklalIsMutable() {
+    private void ensureItemIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        ekpohjfklal_ = new java.util.ArrayList<POGOProtos.Rpc.AppliedItemProto>(ekpohjfklal_);
+        item_ = new java.util.ArrayList<POGOProtos.Rpc.AppliedItemProto>(item_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.AppliedItemProto, POGOProtos.Rpc.AppliedItemProto.Builder, POGOProtos.Rpc.AppliedItemProtoOrBuilder> ekpohjfklalBuilder_;
+        POGOProtos.Rpc.AppliedItemProto, POGOProtos.Rpc.AppliedItemProto.Builder, POGOProtos.Rpc.AppliedItemProtoOrBuilder> itemBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public java.util.List<POGOProtos.Rpc.AppliedItemProto> getEkpohjfklalList() {
-      if (ekpohjfklalBuilder_ == null) {
-        return java.util.Collections.unmodifiableList(ekpohjfklal_);
+    public java.util.List<POGOProtos.Rpc.AppliedItemProto> getItemList() {
+      if (itemBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(item_);
       } else {
-        return ekpohjfklalBuilder_.getMessageList();
+        return itemBuilder_.getMessageList();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public int getEkpohjfklalCount() {
-      if (ekpohjfklalBuilder_ == null) {
-        return ekpohjfklal_.size();
+    public int getItemCount() {
+      if (itemBuilder_ == null) {
+        return item_.size();
       } else {
-        return ekpohjfklalBuilder_.getCount();
+        return itemBuilder_.getCount();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public POGOProtos.Rpc.AppliedItemProto getEkpohjfklal(int index) {
-      if (ekpohjfklalBuilder_ == null) {
-        return ekpohjfklal_.get(index);
+    public POGOProtos.Rpc.AppliedItemProto getItem(int index) {
+      if (itemBuilder_ == null) {
+        return item_.get(index);
       } else {
-        return ekpohjfklalBuilder_.getMessage(index);
+        return itemBuilder_.getMessage(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public Builder setEkpohjfklal(
+    public Builder setItem(
         int index, POGOProtos.Rpc.AppliedItemProto value) {
-      if (ekpohjfklalBuilder_ == null) {
+      if (itemBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureEkpohjfklalIsMutable();
-        ekpohjfklal_.set(index, value);
+        ensureItemIsMutable();
+        item_.set(index, value);
         onChanged();
       } else {
-        ekpohjfklalBuilder_.setMessage(index, value);
+        itemBuilder_.setMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public Builder setEkpohjfklal(
+    public Builder setItem(
         int index, POGOProtos.Rpc.AppliedItemProto.Builder builderForValue) {
-      if (ekpohjfklalBuilder_ == null) {
-        ensureEkpohjfklalIsMutable();
-        ekpohjfklal_.set(index, builderForValue.build());
+      if (itemBuilder_ == null) {
+        ensureItemIsMutable();
+        item_.set(index, builderForValue.build());
         onChanged();
       } else {
-        ekpohjfklalBuilder_.setMessage(index, builderForValue.build());
+        itemBuilder_.setMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public Builder addEkpohjfklal(POGOProtos.Rpc.AppliedItemProto value) {
-      if (ekpohjfklalBuilder_ == null) {
+    public Builder addItem(POGOProtos.Rpc.AppliedItemProto value) {
+      if (itemBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureEkpohjfklalIsMutable();
-        ekpohjfklal_.add(value);
+        ensureItemIsMutable();
+        item_.add(value);
         onChanged();
       } else {
-        ekpohjfklalBuilder_.addMessage(value);
+        itemBuilder_.addMessage(value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public Builder addEkpohjfklal(
+    public Builder addItem(
         int index, POGOProtos.Rpc.AppliedItemProto value) {
-      if (ekpohjfklalBuilder_ == null) {
+      if (itemBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureEkpohjfklalIsMutable();
-        ekpohjfklal_.add(index, value);
+        ensureItemIsMutable();
+        item_.add(index, value);
         onChanged();
       } else {
-        ekpohjfklalBuilder_.addMessage(index, value);
+        itemBuilder_.addMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public Builder addEkpohjfklal(
+    public Builder addItem(
         POGOProtos.Rpc.AppliedItemProto.Builder builderForValue) {
-      if (ekpohjfklalBuilder_ == null) {
-        ensureEkpohjfklalIsMutable();
-        ekpohjfklal_.add(builderForValue.build());
+      if (itemBuilder_ == null) {
+        ensureItemIsMutable();
+        item_.add(builderForValue.build());
         onChanged();
       } else {
-        ekpohjfklalBuilder_.addMessage(builderForValue.build());
+        itemBuilder_.addMessage(builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public Builder addEkpohjfklal(
+    public Builder addItem(
         int index, POGOProtos.Rpc.AppliedItemProto.Builder builderForValue) {
-      if (ekpohjfklalBuilder_ == null) {
-        ensureEkpohjfklalIsMutable();
-        ekpohjfklal_.add(index, builderForValue.build());
+      if (itemBuilder_ == null) {
+        ensureItemIsMutable();
+        item_.add(index, builderForValue.build());
         onChanged();
       } else {
-        ekpohjfklalBuilder_.addMessage(index, builderForValue.build());
+        itemBuilder_.addMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public Builder addAllEkpohjfklal(
+    public Builder addAllItem(
         java.lang.Iterable<? extends POGOProtos.Rpc.AppliedItemProto> values) {
-      if (ekpohjfklalBuilder_ == null) {
-        ensureEkpohjfklalIsMutable();
+      if (itemBuilder_ == null) {
+        ensureItemIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, ekpohjfklal_);
+            values, item_);
         onChanged();
       } else {
-        ekpohjfklalBuilder_.addAllMessages(values);
+        itemBuilder_.addAllMessages(values);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public Builder clearEkpohjfklal() {
-      if (ekpohjfklalBuilder_ == null) {
-        ekpohjfklal_ = java.util.Collections.emptyList();
+    public Builder clearItem() {
+      if (itemBuilder_ == null) {
+        item_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
-        ekpohjfklalBuilder_.clear();
+        itemBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public Builder removeEkpohjfklal(int index) {
-      if (ekpohjfklalBuilder_ == null) {
-        ensureEkpohjfklalIsMutable();
-        ekpohjfklal_.remove(index);
+    public Builder removeItem(int index) {
+      if (itemBuilder_ == null) {
+        ensureItemIsMutable();
+        item_.remove(index);
         onChanged();
       } else {
-        ekpohjfklalBuilder_.remove(index);
+        itemBuilder_.remove(index);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public POGOProtos.Rpc.AppliedItemProto.Builder getEkpohjfklalBuilder(
+    public POGOProtos.Rpc.AppliedItemProto.Builder getItemBuilder(
         int index) {
-      return getEkpohjfklalFieldBuilder().getBuilder(index);
+      return getItemFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public POGOProtos.Rpc.AppliedItemProtoOrBuilder getEkpohjfklalOrBuilder(
+    public POGOProtos.Rpc.AppliedItemProtoOrBuilder getItemOrBuilder(
         int index) {
-      if (ekpohjfklalBuilder_ == null) {
-        return ekpohjfklal_.get(index);  } else {
-        return ekpohjfklalBuilder_.getMessageOrBuilder(index);
+      if (itemBuilder_ == null) {
+        return item_.get(index);  } else {
+        return itemBuilder_.getMessageOrBuilder(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.AppliedItemProtoOrBuilder> 
-         getEkpohjfklalOrBuilderList() {
-      if (ekpohjfklalBuilder_ != null) {
-        return ekpohjfklalBuilder_.getMessageOrBuilderList();
+         getItemOrBuilderList() {
+      if (itemBuilder_ != null) {
+        return itemBuilder_.getMessageOrBuilderList();
       } else {
-        return java.util.Collections.unmodifiableList(ekpohjfklal_);
+        return java.util.Collections.unmodifiableList(item_);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public POGOProtos.Rpc.AppliedItemProto.Builder addEkpohjfklalBuilder() {
-      return getEkpohjfklalFieldBuilder().addBuilder(
+    public POGOProtos.Rpc.AppliedItemProto.Builder addItemBuilder() {
+      return getItemFieldBuilder().addBuilder(
           POGOProtos.Rpc.AppliedItemProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
-    public POGOProtos.Rpc.AppliedItemProto.Builder addEkpohjfklalBuilder(
+    public POGOProtos.Rpc.AppliedItemProto.Builder addItemBuilder(
         int index) {
-      return getEkpohjfklalFieldBuilder().addBuilder(
+      return getItemFieldBuilder().addBuilder(
           index, POGOProtos.Rpc.AppliedItemProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
      */
     public java.util.List<POGOProtos.Rpc.AppliedItemProto.Builder> 
-         getEkpohjfklalBuilderList() {
-      return getEkpohjfklalFieldBuilder().getBuilderList();
+         getItemBuilderList() {
+      return getItemFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
         POGOProtos.Rpc.AppliedItemProto, POGOProtos.Rpc.AppliedItemProto.Builder, POGOProtos.Rpc.AppliedItemProtoOrBuilder> 
-        getEkpohjfklalFieldBuilder() {
-      if (ekpohjfklalBuilder_ == null) {
-        ekpohjfklalBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+        getItemFieldBuilder() {
+      if (itemBuilder_ == null) {
+        itemBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             POGOProtos.Rpc.AppliedItemProto, POGOProtos.Rpc.AppliedItemProto.Builder, POGOProtos.Rpc.AppliedItemProtoOrBuilder>(
-                ekpohjfklal_,
+                item_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
-        ekpohjfklal_ = null;
+        item_ = null;
       }
-      return ekpohjfklalBuilder_;
+      return itemBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

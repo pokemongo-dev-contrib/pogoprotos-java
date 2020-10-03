@@ -8,19 +8,19 @@ public interface PushNotificationRegistryProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
    * @return Whether the apnToken field is set.
    */
   boolean hasApnToken();
   /**
-   * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
    * @return The apnToken.
    */
-  POGOProtos.Rpc.ApnToken getApnToken();
+  POGOProtos.Rpc.PlatformApnToken getApnToken();
   /**
-   * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
    */
-  POGOProtos.Rpc.ApnTokenOrBuilder getApnTokenOrBuilder();
+  POGOProtos.Rpc.PlatformApnTokenOrBuilder getApnTokenOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.GcmToken gcm_token = 2;</code>

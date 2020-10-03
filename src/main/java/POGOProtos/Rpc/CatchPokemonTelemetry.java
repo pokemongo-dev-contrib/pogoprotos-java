@@ -61,35 +61,35 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             POGOProtos.Rpc.EncounterPokemonTelemetry.Builder subBuilder = null;
-            if (obpljimiogi_ != null) {
-              subBuilder = obpljimiogi_.toBuilder();
+            if (encounterPokemonTelemetry_ != null) {
+              subBuilder = encounterPokemonTelemetry_.toBuilder();
             }
-            obpljimiogi_ = input.readMessage(POGOProtos.Rpc.EncounterPokemonTelemetry.parser(), extensionRegistry);
+            encounterPokemonTelemetry_ = input.readMessage(POGOProtos.Rpc.EncounterPokemonTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(obpljimiogi_);
-              obpljimiogi_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(encounterPokemonTelemetry_);
+              encounterPokemonTelemetry_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 24: {
 
-            djiekgjhkdg_ = input.readInt32();
+            balltype_ = input.readInt32();
             break;
           }
           case 32: {
 
-            fanngcfnojm_ = input.readInt32();
+            hitGrade_ = input.readInt32();
             break;
           }
           case 40: {
 
-            fflmlnpidfb_ = input.readBool();
+            curveBall_ = input.readBool();
             break;
           }
           case 49: {
 
-            kckbhmcliga_ = input.readDouble();
+            missPercent_ = input.readDouble();
             break;
           }
           default: {
@@ -162,74 +162,74 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int OBPLJIMIOGI_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi_;
+  public static final int ENCOUNTER_POKEMON_TELEMETRY_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.EncounterPokemonTelemetry encounterPokemonTelemetry_;
   /**
-   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
-   * @return Whether the obpljimiogi field is set.
+   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
+   * @return Whether the encounterPokemonTelemetry field is set.
    */
   @java.lang.Override
-  public boolean hasObpljimiogi() {
-    return obpljimiogi_ != null;
+  public boolean hasEncounterPokemonTelemetry() {
+    return encounterPokemonTelemetry_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
-   * @return The obpljimiogi.
+   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
+   * @return The encounterPokemonTelemetry.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EncounterPokemonTelemetry getObpljimiogi() {
-    return obpljimiogi_ == null ? POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance() : obpljimiogi_;
+  public POGOProtos.Rpc.EncounterPokemonTelemetry getEncounterPokemonTelemetry() {
+    return encounterPokemonTelemetry_ == null ? POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance() : encounterPokemonTelemetry_;
   }
   /**
-   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
+   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder getObpljimiogiOrBuilder() {
-    return getObpljimiogi();
-  }
-
-  public static final int DJIEKGJHKDG_FIELD_NUMBER = 3;
-  private int djiekgjhkdg_;
-  /**
-   * <code>int32 djiekgjhkdg = 3;</code>
-   * @return The djiekgjhkdg.
-   */
-  @java.lang.Override
-  public int getDjiekgjhkdg() {
-    return djiekgjhkdg_;
+  public POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder getEncounterPokemonTelemetryOrBuilder() {
+    return getEncounterPokemonTelemetry();
   }
 
-  public static final int FANNGCFNOJM_FIELD_NUMBER = 4;
-  private int fanngcfnojm_;
+  public static final int BALLTYPE_FIELD_NUMBER = 3;
+  private int balltype_;
   /**
-   * <code>int32 fanngcfnojm = 4;</code>
-   * @return The fanngcfnojm.
+   * <code>int32 balltype = 3;</code>
+   * @return The balltype.
    */
   @java.lang.Override
-  public int getFanngcfnojm() {
-    return fanngcfnojm_;
+  public int getBalltype() {
+    return balltype_;
   }
 
-  public static final int FFLMLNPIDFB_FIELD_NUMBER = 5;
-  private boolean fflmlnpidfb_;
+  public static final int HIT_GRADE_FIELD_NUMBER = 4;
+  private int hitGrade_;
   /**
-   * <code>bool fflmlnpidfb = 5;</code>
-   * @return The fflmlnpidfb.
+   * <code>int32 hit_grade = 4;</code>
+   * @return The hitGrade.
    */
   @java.lang.Override
-  public boolean getFflmlnpidfb() {
-    return fflmlnpidfb_;
+  public int getHitGrade() {
+    return hitGrade_;
   }
 
-  public static final int KCKBHMCLIGA_FIELD_NUMBER = 6;
-  private double kckbhmcliga_;
+  public static final int CURVE_BALL_FIELD_NUMBER = 5;
+  private boolean curveBall_;
   /**
-   * <code>double kckbhmcliga = 6;</code>
-   * @return The kckbhmcliga.
+   * <code>bool curve_ball = 5;</code>
+   * @return The curveBall.
    */
   @java.lang.Override
-  public double getKckbhmcliga() {
-    return kckbhmcliga_;
+  public boolean getCurveBall() {
+    return curveBall_;
+  }
+
+  public static final int MISS_PERCENT_FIELD_NUMBER = 6;
+  private double missPercent_;
+  /**
+   * <code>double miss_percent = 6;</code>
+   * @return The missPercent.
+   */
+  @java.lang.Override
+  public double getMissPercent() {
+    return missPercent_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -249,20 +249,20 @@ private static final long serialVersionUID = 0L;
     if (!getStatusBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, status_);
     }
-    if (obpljimiogi_ != null) {
-      output.writeMessage(2, getObpljimiogi());
+    if (encounterPokemonTelemetry_ != null) {
+      output.writeMessage(2, getEncounterPokemonTelemetry());
     }
-    if (djiekgjhkdg_ != 0) {
-      output.writeInt32(3, djiekgjhkdg_);
+    if (balltype_ != 0) {
+      output.writeInt32(3, balltype_);
     }
-    if (fanngcfnojm_ != 0) {
-      output.writeInt32(4, fanngcfnojm_);
+    if (hitGrade_ != 0) {
+      output.writeInt32(4, hitGrade_);
     }
-    if (fflmlnpidfb_ != false) {
-      output.writeBool(5, fflmlnpidfb_);
+    if (curveBall_ != false) {
+      output.writeBool(5, curveBall_);
     }
-    if (kckbhmcliga_ != 0D) {
-      output.writeDouble(6, kckbhmcliga_);
+    if (missPercent_ != 0D) {
+      output.writeDouble(6, missPercent_);
     }
     unknownFields.writeTo(output);
   }
@@ -276,25 +276,25 @@ private static final long serialVersionUID = 0L;
     if (!getStatusBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, status_);
     }
-    if (obpljimiogi_ != null) {
+    if (encounterPokemonTelemetry_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getObpljimiogi());
+        .computeMessageSize(2, getEncounterPokemonTelemetry());
     }
-    if (djiekgjhkdg_ != 0) {
+    if (balltype_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, djiekgjhkdg_);
+        .computeInt32Size(3, balltype_);
     }
-    if (fanngcfnojm_ != 0) {
+    if (hitGrade_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(4, fanngcfnojm_);
+        .computeInt32Size(4, hitGrade_);
     }
-    if (fflmlnpidfb_ != false) {
+    if (curveBall_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(5, fflmlnpidfb_);
+        .computeBoolSize(5, curveBall_);
     }
-    if (kckbhmcliga_ != 0D) {
+    if (missPercent_ != 0D) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(6, kckbhmcliga_);
+        .computeDoubleSize(6, missPercent_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -313,20 +313,20 @@ private static final long serialVersionUID = 0L;
 
     if (!getStatus()
         .equals(other.getStatus())) return false;
-    if (hasObpljimiogi() != other.hasObpljimiogi()) return false;
-    if (hasObpljimiogi()) {
-      if (!getObpljimiogi()
-          .equals(other.getObpljimiogi())) return false;
+    if (hasEncounterPokemonTelemetry() != other.hasEncounterPokemonTelemetry()) return false;
+    if (hasEncounterPokemonTelemetry()) {
+      if (!getEncounterPokemonTelemetry()
+          .equals(other.getEncounterPokemonTelemetry())) return false;
     }
-    if (getDjiekgjhkdg()
-        != other.getDjiekgjhkdg()) return false;
-    if (getFanngcfnojm()
-        != other.getFanngcfnojm()) return false;
-    if (getFflmlnpidfb()
-        != other.getFflmlnpidfb()) return false;
-    if (java.lang.Double.doubleToLongBits(getKckbhmcliga())
+    if (getBalltype()
+        != other.getBalltype()) return false;
+    if (getHitGrade()
+        != other.getHitGrade()) return false;
+    if (getCurveBall()
+        != other.getCurveBall()) return false;
+    if (java.lang.Double.doubleToLongBits(getMissPercent())
         != java.lang.Double.doubleToLongBits(
-            other.getKckbhmcliga())) return false;
+            other.getMissPercent())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -340,20 +340,20 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + STATUS_FIELD_NUMBER;
     hash = (53 * hash) + getStatus().hashCode();
-    if (hasObpljimiogi()) {
-      hash = (37 * hash) + OBPLJIMIOGI_FIELD_NUMBER;
-      hash = (53 * hash) + getObpljimiogi().hashCode();
+    if (hasEncounterPokemonTelemetry()) {
+      hash = (37 * hash) + ENCOUNTER_POKEMON_TELEMETRY_FIELD_NUMBER;
+      hash = (53 * hash) + getEncounterPokemonTelemetry().hashCode();
     }
-    hash = (37 * hash) + DJIEKGJHKDG_FIELD_NUMBER;
-    hash = (53 * hash) + getDjiekgjhkdg();
-    hash = (37 * hash) + FANNGCFNOJM_FIELD_NUMBER;
-    hash = (53 * hash) + getFanngcfnojm();
-    hash = (37 * hash) + FFLMLNPIDFB_FIELD_NUMBER;
+    hash = (37 * hash) + BALLTYPE_FIELD_NUMBER;
+    hash = (53 * hash) + getBalltype();
+    hash = (37 * hash) + HIT_GRADE_FIELD_NUMBER;
+    hash = (53 * hash) + getHitGrade();
+    hash = (37 * hash) + CURVE_BALL_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getFflmlnpidfb());
-    hash = (37 * hash) + KCKBHMCLIGA_FIELD_NUMBER;
+        getCurveBall());
+    hash = (37 * hash) + MISS_PERCENT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getKckbhmcliga()));
+        java.lang.Double.doubleToLongBits(getMissPercent()));
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -493,19 +493,19 @@ private static final long serialVersionUID = 0L;
       super.clear();
       status_ = "";
 
-      if (obpljimiogiBuilder_ == null) {
-        obpljimiogi_ = null;
+      if (encounterPokemonTelemetryBuilder_ == null) {
+        encounterPokemonTelemetry_ = null;
       } else {
-        obpljimiogi_ = null;
-        obpljimiogiBuilder_ = null;
+        encounterPokemonTelemetry_ = null;
+        encounterPokemonTelemetryBuilder_ = null;
       }
-      djiekgjhkdg_ = 0;
+      balltype_ = 0;
 
-      fanngcfnojm_ = 0;
+      hitGrade_ = 0;
 
-      fflmlnpidfb_ = false;
+      curveBall_ = false;
 
-      kckbhmcliga_ = 0D;
+      missPercent_ = 0D;
 
       return this;
     }
@@ -534,15 +534,15 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.CatchPokemonTelemetry buildPartial() {
       POGOProtos.Rpc.CatchPokemonTelemetry result = new POGOProtos.Rpc.CatchPokemonTelemetry(this);
       result.status_ = status_;
-      if (obpljimiogiBuilder_ == null) {
-        result.obpljimiogi_ = obpljimiogi_;
+      if (encounterPokemonTelemetryBuilder_ == null) {
+        result.encounterPokemonTelemetry_ = encounterPokemonTelemetry_;
       } else {
-        result.obpljimiogi_ = obpljimiogiBuilder_.build();
+        result.encounterPokemonTelemetry_ = encounterPokemonTelemetryBuilder_.build();
       }
-      result.djiekgjhkdg_ = djiekgjhkdg_;
-      result.fanngcfnojm_ = fanngcfnojm_;
-      result.fflmlnpidfb_ = fflmlnpidfb_;
-      result.kckbhmcliga_ = kckbhmcliga_;
+      result.balltype_ = balltype_;
+      result.hitGrade_ = hitGrade_;
+      result.curveBall_ = curveBall_;
+      result.missPercent_ = missPercent_;
       onBuilt();
       return result;
     }
@@ -595,20 +595,20 @@ private static final long serialVersionUID = 0L;
         status_ = other.status_;
         onChanged();
       }
-      if (other.hasObpljimiogi()) {
-        mergeObpljimiogi(other.getObpljimiogi());
+      if (other.hasEncounterPokemonTelemetry()) {
+        mergeEncounterPokemonTelemetry(other.getEncounterPokemonTelemetry());
       }
-      if (other.getDjiekgjhkdg() != 0) {
-        setDjiekgjhkdg(other.getDjiekgjhkdg());
+      if (other.getBalltype() != 0) {
+        setBalltype(other.getBalltype());
       }
-      if (other.getFanngcfnojm() != 0) {
-        setFanngcfnojm(other.getFanngcfnojm());
+      if (other.getHitGrade() != 0) {
+        setHitGrade(other.getHitGrade());
       }
-      if (other.getFflmlnpidfb() != false) {
-        setFflmlnpidfb(other.getFflmlnpidfb());
+      if (other.getCurveBall() != false) {
+        setCurveBall(other.getCurveBall());
       }
-      if (other.getKckbhmcliga() != 0D) {
-        setKckbhmcliga(other.getKckbhmcliga());
+      if (other.getMissPercent() != 0D) {
+        setMissPercent(other.getMissPercent());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -715,245 +715,245 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi_;
+    private POGOProtos.Rpc.EncounterPokemonTelemetry encounterPokemonTelemetry_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.EncounterPokemonTelemetry, POGOProtos.Rpc.EncounterPokemonTelemetry.Builder, POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder> obpljimiogiBuilder_;
+        POGOProtos.Rpc.EncounterPokemonTelemetry, POGOProtos.Rpc.EncounterPokemonTelemetry.Builder, POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder> encounterPokemonTelemetryBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
-     * @return Whether the obpljimiogi field is set.
+     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
+     * @return Whether the encounterPokemonTelemetry field is set.
      */
-    public boolean hasObpljimiogi() {
-      return obpljimiogiBuilder_ != null || obpljimiogi_ != null;
+    public boolean hasEncounterPokemonTelemetry() {
+      return encounterPokemonTelemetryBuilder_ != null || encounterPokemonTelemetry_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
-     * @return The obpljimiogi.
+     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
+     * @return The encounterPokemonTelemetry.
      */
-    public POGOProtos.Rpc.EncounterPokemonTelemetry getObpljimiogi() {
-      if (obpljimiogiBuilder_ == null) {
-        return obpljimiogi_ == null ? POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance() : obpljimiogi_;
+    public POGOProtos.Rpc.EncounterPokemonTelemetry getEncounterPokemonTelemetry() {
+      if (encounterPokemonTelemetryBuilder_ == null) {
+        return encounterPokemonTelemetry_ == null ? POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance() : encounterPokemonTelemetry_;
       } else {
-        return obpljimiogiBuilder_.getMessage();
+        return encounterPokemonTelemetryBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
+     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
      */
-    public Builder setObpljimiogi(POGOProtos.Rpc.EncounterPokemonTelemetry value) {
-      if (obpljimiogiBuilder_ == null) {
+    public Builder setEncounterPokemonTelemetry(POGOProtos.Rpc.EncounterPokemonTelemetry value) {
+      if (encounterPokemonTelemetryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        obpljimiogi_ = value;
+        encounterPokemonTelemetry_ = value;
         onChanged();
       } else {
-        obpljimiogiBuilder_.setMessage(value);
+        encounterPokemonTelemetryBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
+     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
      */
-    public Builder setObpljimiogi(
+    public Builder setEncounterPokemonTelemetry(
         POGOProtos.Rpc.EncounterPokemonTelemetry.Builder builderForValue) {
-      if (obpljimiogiBuilder_ == null) {
-        obpljimiogi_ = builderForValue.build();
+      if (encounterPokemonTelemetryBuilder_ == null) {
+        encounterPokemonTelemetry_ = builderForValue.build();
         onChanged();
       } else {
-        obpljimiogiBuilder_.setMessage(builderForValue.build());
+        encounterPokemonTelemetryBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
+     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
      */
-    public Builder mergeObpljimiogi(POGOProtos.Rpc.EncounterPokemonTelemetry value) {
-      if (obpljimiogiBuilder_ == null) {
-        if (obpljimiogi_ != null) {
-          obpljimiogi_ =
-            POGOProtos.Rpc.EncounterPokemonTelemetry.newBuilder(obpljimiogi_).mergeFrom(value).buildPartial();
+    public Builder mergeEncounterPokemonTelemetry(POGOProtos.Rpc.EncounterPokemonTelemetry value) {
+      if (encounterPokemonTelemetryBuilder_ == null) {
+        if (encounterPokemonTelemetry_ != null) {
+          encounterPokemonTelemetry_ =
+            POGOProtos.Rpc.EncounterPokemonTelemetry.newBuilder(encounterPokemonTelemetry_).mergeFrom(value).buildPartial();
         } else {
-          obpljimiogi_ = value;
+          encounterPokemonTelemetry_ = value;
         }
         onChanged();
       } else {
-        obpljimiogiBuilder_.mergeFrom(value);
+        encounterPokemonTelemetryBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
+     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
      */
-    public Builder clearObpljimiogi() {
-      if (obpljimiogiBuilder_ == null) {
-        obpljimiogi_ = null;
+    public Builder clearEncounterPokemonTelemetry() {
+      if (encounterPokemonTelemetryBuilder_ == null) {
+        encounterPokemonTelemetry_ = null;
         onChanged();
       } else {
-        obpljimiogi_ = null;
-        obpljimiogiBuilder_ = null;
+        encounterPokemonTelemetry_ = null;
+        encounterPokemonTelemetryBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
+     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
      */
-    public POGOProtos.Rpc.EncounterPokemonTelemetry.Builder getObpljimiogiBuilder() {
+    public POGOProtos.Rpc.EncounterPokemonTelemetry.Builder getEncounterPokemonTelemetryBuilder() {
       
       onChanged();
-      return getObpljimiogiFieldBuilder().getBuilder();
+      return getEncounterPokemonTelemetryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
+     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
      */
-    public POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder getObpljimiogiOrBuilder() {
-      if (obpljimiogiBuilder_ != null) {
-        return obpljimiogiBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder getEncounterPokemonTelemetryOrBuilder() {
+      if (encounterPokemonTelemetryBuilder_ != null) {
+        return encounterPokemonTelemetryBuilder_.getMessageOrBuilder();
       } else {
-        return obpljimiogi_ == null ?
-            POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance() : obpljimiogi_;
+        return encounterPokemonTelemetry_ == null ?
+            POGOProtos.Rpc.EncounterPokemonTelemetry.getDefaultInstance() : encounterPokemonTelemetry_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry obpljimiogi = 2;</code>
+     * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.EncounterPokemonTelemetry, POGOProtos.Rpc.EncounterPokemonTelemetry.Builder, POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder> 
-        getObpljimiogiFieldBuilder() {
-      if (obpljimiogiBuilder_ == null) {
-        obpljimiogiBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getEncounterPokemonTelemetryFieldBuilder() {
+      if (encounterPokemonTelemetryBuilder_ == null) {
+        encounterPokemonTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.EncounterPokemonTelemetry, POGOProtos.Rpc.EncounterPokemonTelemetry.Builder, POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder>(
-                getObpljimiogi(),
+                getEncounterPokemonTelemetry(),
                 getParentForChildren(),
                 isClean());
-        obpljimiogi_ = null;
+        encounterPokemonTelemetry_ = null;
       }
-      return obpljimiogiBuilder_;
+      return encounterPokemonTelemetryBuilder_;
     }
 
-    private int djiekgjhkdg_ ;
+    private int balltype_ ;
     /**
-     * <code>int32 djiekgjhkdg = 3;</code>
-     * @return The djiekgjhkdg.
+     * <code>int32 balltype = 3;</code>
+     * @return The balltype.
      */
     @java.lang.Override
-    public int getDjiekgjhkdg() {
-      return djiekgjhkdg_;
+    public int getBalltype() {
+      return balltype_;
     }
     /**
-     * <code>int32 djiekgjhkdg = 3;</code>
-     * @param value The djiekgjhkdg to set.
+     * <code>int32 balltype = 3;</code>
+     * @param value The balltype to set.
      * @return This builder for chaining.
      */
-    public Builder setDjiekgjhkdg(int value) {
+    public Builder setBalltype(int value) {
       
-      djiekgjhkdg_ = value;
+      balltype_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 djiekgjhkdg = 3;</code>
+     * <code>int32 balltype = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDjiekgjhkdg() {
+    public Builder clearBalltype() {
       
-      djiekgjhkdg_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private int fanngcfnojm_ ;
-    /**
-     * <code>int32 fanngcfnojm = 4;</code>
-     * @return The fanngcfnojm.
-     */
-    @java.lang.Override
-    public int getFanngcfnojm() {
-      return fanngcfnojm_;
-    }
-    /**
-     * <code>int32 fanngcfnojm = 4;</code>
-     * @param value The fanngcfnojm to set.
-     * @return This builder for chaining.
-     */
-    public Builder setFanngcfnojm(int value) {
-      
-      fanngcfnojm_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 fanngcfnojm = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearFanngcfnojm() {
-      
-      fanngcfnojm_ = 0;
+      balltype_ = 0;
       onChanged();
       return this;
     }
 
-    private boolean fflmlnpidfb_ ;
+    private int hitGrade_ ;
     /**
-     * <code>bool fflmlnpidfb = 5;</code>
-     * @return The fflmlnpidfb.
+     * <code>int32 hit_grade = 4;</code>
+     * @return The hitGrade.
      */
     @java.lang.Override
-    public boolean getFflmlnpidfb() {
-      return fflmlnpidfb_;
+    public int getHitGrade() {
+      return hitGrade_;
     }
     /**
-     * <code>bool fflmlnpidfb = 5;</code>
-     * @param value The fflmlnpidfb to set.
+     * <code>int32 hit_grade = 4;</code>
+     * @param value The hitGrade to set.
      * @return This builder for chaining.
      */
-    public Builder setFflmlnpidfb(boolean value) {
+    public Builder setHitGrade(int value) {
       
-      fflmlnpidfb_ = value;
+      hitGrade_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool fflmlnpidfb = 5;</code>
+     * <code>int32 hit_grade = 4;</code>
      * @return This builder for chaining.
      */
-    public Builder clearFflmlnpidfb() {
+    public Builder clearHitGrade() {
       
-      fflmlnpidfb_ = false;
+      hitGrade_ = 0;
       onChanged();
       return this;
     }
 
-    private double kckbhmcliga_ ;
+    private boolean curveBall_ ;
     /**
-     * <code>double kckbhmcliga = 6;</code>
-     * @return The kckbhmcliga.
+     * <code>bool curve_ball = 5;</code>
+     * @return The curveBall.
      */
     @java.lang.Override
-    public double getKckbhmcliga() {
-      return kckbhmcliga_;
+    public boolean getCurveBall() {
+      return curveBall_;
     }
     /**
-     * <code>double kckbhmcliga = 6;</code>
-     * @param value The kckbhmcliga to set.
+     * <code>bool curve_ball = 5;</code>
+     * @param value The curveBall to set.
      * @return This builder for chaining.
      */
-    public Builder setKckbhmcliga(double value) {
+    public Builder setCurveBall(boolean value) {
       
-      kckbhmcliga_ = value;
+      curveBall_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>double kckbhmcliga = 6;</code>
+     * <code>bool curve_ball = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearKckbhmcliga() {
+    public Builder clearCurveBall() {
       
-      kckbhmcliga_ = 0D;
+      curveBall_ = false;
+      onChanged();
+      return this;
+    }
+
+    private double missPercent_ ;
+    /**
+     * <code>double miss_percent = 6;</code>
+     * @return The missPercent.
+     */
+    @java.lang.Override
+    public double getMissPercent() {
+      return missPercent_;
+    }
+    /**
+     * <code>double miss_percent = 6;</code>
+     * @param value The missPercent to set.
+     * @return This builder for chaining.
+     */
+    public Builder setMissPercent(double value) {
+      
+      missPercent_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>double miss_percent = 6;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearMissPercent() {
+      
+      missPercent_ = 0D;
       onChanged();
       return this;
     }

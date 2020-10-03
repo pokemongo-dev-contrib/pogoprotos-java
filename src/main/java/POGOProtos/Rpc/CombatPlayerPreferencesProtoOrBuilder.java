@@ -8,14 +8,14 @@ public interface CombatPlayerPreferencesProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>bool lnnmkppfcbk = 1;</code>
-   * @return The lnnmkppfcbk.
+   * <code>bool friends_combat_opt_out = 1;</code>
+   * @return The friendsCombatOptOut.
    */
-  boolean getLnnmkppfcbk();
+  boolean getFriendsCombatOptOut();
 
   /**
-   * <code>bool dhapjjaddjc = 2;</code>
-   * @return The dhapjjaddjc.
+   * <code>bool nearby_combat_opt_in = 2;</code>
+   * @return The nearbyCombatOptIn.
    */
-  boolean getDhapjjaddjc();
+  boolean getNearbyCombatOptIn();
 }

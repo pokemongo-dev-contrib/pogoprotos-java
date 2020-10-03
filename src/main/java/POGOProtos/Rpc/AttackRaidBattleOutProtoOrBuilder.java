@@ -19,32 +19,32 @@ public interface AttackRaidBattleOutProtoOrBuilder extends
   POGOProtos.Rpc.AttackRaidBattleOutProto.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
-   * @return Whether the mifmmmlipdf field is set.
+   * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
+   * @return Whether the imageTextCreative field is set.
    */
-  boolean hasMifmmmlipdf();
+  boolean hasImageTextCreative();
   /**
-   * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
-   * @return The mifmmmlipdf.
+   * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
+   * @return The imageTextCreative.
    */
-  POGOProtos.Rpc.BattleUpdateProto getMifmmmlipdf();
+  POGOProtos.Rpc.BattleUpdateProto getImageTextCreative();
   /**
-   * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
+   * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
    */
-  POGOProtos.Rpc.BattleUpdateProtoOrBuilder getMifmmmlipdfOrBuilder();
+  POGOProtos.Rpc.BattleUpdateProtoOrBuilder getImageTextCreativeOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
-   * @return Whether the fofagloikmg field is set.
+   * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
+   * @return Whether the encryptedAdToken field is set.
    */
-  boolean hasFofagloikmg();
+  boolean hasEncryptedAdToken();
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
-   * @return The fofagloikmg.
+   * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
+   * @return The encryptedAdToken.
    */
-  POGOProtos.Rpc.AdDetails getFofagloikmg();
+  POGOProtos.Rpc.AdDetails getEncryptedAdToken();
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
+   * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
    */
-  POGOProtos.Rpc.AdDetailsOrBuilder getFofagloikmgOrBuilder();
+  POGOProtos.Rpc.AdDetailsOrBuilder getEncryptedAdTokenOrBuilder();
 }

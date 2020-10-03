@@ -19,27 +19,27 @@ public interface GetAvailableSkusAndBalancesOutProtoOrBuilder extends
   POGOProtos.Rpc.GetAvailableSkusAndBalancesOutProto.Status getStatus();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.AvailableSkuProto> 
+  java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto> 
       getAvailableSkuList();
   /**
-   * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
-  POGOProtos.Rpc.AvailableSkuProto getAvailableSku(int index);
+  POGOProtos.Rpc.PlatformAvailableSkuProto getAvailableSku(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   int getAvailableSkuCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.AvailableSkuProtoOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder> 
       getAvailableSkuOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
-  POGOProtos.Rpc.AvailableSkuProtoOrBuilder getAvailableSkuOrBuilder(
+  POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder getAvailableSkuOrBuilder(
       int index);
 
   /**

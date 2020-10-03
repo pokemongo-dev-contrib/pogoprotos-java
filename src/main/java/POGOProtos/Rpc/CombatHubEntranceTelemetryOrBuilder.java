@@ -8,13 +8,13 @@ public interface CombatHubEntranceTelemetryOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds iakbebdcjpf = 1;</code>
-   * @return The enum numeric value on the wire for iakbebdcjpf.
+   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;</code>
+   * @return The enum numeric value on the wire for combatHubTelemetryId.
    */
-  int getIakbebdcjpfValue();
+  int getCombatHubTelemetryIdValue();
   /**
-   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds iakbebdcjpf = 1;</code>
-   * @return The iakbebdcjpf.
+   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;</code>
+   * @return The combatHubTelemetryId.
    */
-  POGOProtos.Rpc.CombatHubEntranceTelemetryIds getIakbebdcjpf();
+  POGOProtos.Rpc.CombatHubEntranceTelemetryIds getCombatHubTelemetryId();
 }

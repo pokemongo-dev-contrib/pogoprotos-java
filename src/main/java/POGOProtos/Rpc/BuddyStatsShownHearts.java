@@ -55,31 +55,31 @@ private static final long serialVersionUID = 0L;
             break;
           case 13: {
 
-            hbbidigfcnm_ = input.readFloat();
+            buddyAffectionKmInProgress_ = input.readFloat();
             break;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              jikdopmmlag_ = com.google.protobuf.MapField.newMapField(
-                  JikdopmmlagDefaultEntryHolder.defaultEntry);
+              buddyShownHeartsPerCategory_ = com.google.protobuf.MapField.newMapField(
+                  BuddyShownHeartsPerCategoryDefaultEntryHolder.defaultEntry);
               mutable_bitField0_ |= 0x00000001;
             }
-            com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA>
-            jikdopmmlag__ = input.readMessage(
-                JikdopmmlagDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-            jikdopmmlag_.getMutableMap().put(
-                jikdopmmlag__.getKey(), jikdopmmlag__.getValue());
+            com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList>
+            buddyShownHeartsPerCategory__ = input.readMessage(
+                BuddyShownHeartsPerCategoryDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+            buddyShownHeartsPerCategory_.getMutableMap().put(
+                buddyShownHeartsPerCategory__.getKey(), buddyShownHeartsPerCategory__.getValue());
             break;
           }
           case 26: {
             POGOProtos.Rpc.PEKJNHJPJIB.Builder subBuilder = null;
-            if (dalfiomenog_ != null) {
-              subBuilder = dalfiomenog_.toBuilder();
+            if (field1_ != null) {
+              subBuilder = field1_.toBuilder();
             }
-            dalfiomenog_ = input.readMessage(POGOProtos.Rpc.PEKJNHJPJIB.parser(), extensionRegistry);
+            field1_ = input.readMessage(POGOProtos.Rpc.PEKJNHJPJIB.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(dalfiomenog_);
-              dalfiomenog_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(field1_);
+              field1_ = subBuilder.buildPartial();
             }
 
             break;
@@ -114,7 +114,7 @@ private static final long serialVersionUID = 0L;
       int number) {
     switch (number) {
       case 2:
-        return internalGetJikdopmmlag();
+        return internalGetBuddyShownHeartsPerCategory();
       default:
         throw new RuntimeException(
             "Invalid map field number: " + number);
@@ -249,64 +249,64 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType)
   }
 
-  public interface DAPPDAAFDIAOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA)
+  public interface BuddyShownHeartsListOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-     * @return A list containing the fjebkkbjeaa.
+     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+     * @return A list containing the buddyShownHeartTypes.
      */
-    java.util.List<POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType> getFjebkkbjeaaList();
+    java.util.List<POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType> getBuddyShownHeartTypesList();
     /**
-     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-     * @return The count of fjebkkbjeaa.
+     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+     * @return The count of buddyShownHeartTypes.
      */
-    int getFjebkkbjeaaCount();
+    int getBuddyShownHeartTypesCount();
     /**
-     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
      * @param index The index of the element to return.
-     * @return The fjebkkbjeaa at the given index.
+     * @return The buddyShownHeartTypes at the given index.
      */
-    POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType getFjebkkbjeaa(int index);
+    POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType getBuddyShownHeartTypes(int index);
     /**
-     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-     * @return A list containing the enum numeric values on the wire for fjebkkbjeaa.
+     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+     * @return A list containing the enum numeric values on the wire for buddyShownHeartTypes.
      */
     java.util.List<java.lang.Integer>
-    getFjebkkbjeaaValueList();
+    getBuddyShownHeartTypesValueList();
     /**
-     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
      * @param index The index of the value to return.
-     * @return The enum numeric value on the wire of fjebkkbjeaa at the given index.
+     * @return The enum numeric value on the wire of buddyShownHeartTypes at the given index.
      */
-    int getFjebkkbjeaaValue(int index);
+    int getBuddyShownHeartTypesValue(int index);
   }
   /**
    * <pre>
    * ref: NNEIKBCFGPD/EDAKBLEDJOB/DAPPDAAFDIA
    * </pre>
    *
-   * Protobuf type {@code POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA}
+   * Protobuf type {@code POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList}
    */
-  public static final class DAPPDAAFDIA extends
+  public static final class BuddyShownHeartsList extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA)
-      DAPPDAAFDIAOrBuilder {
+      // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList)
+      BuddyShownHeartsListOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use DAPPDAAFDIA.newBuilder() to construct.
-    private DAPPDAAFDIA(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use BuddyShownHeartsList.newBuilder() to construct.
+    private BuddyShownHeartsList(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private DAPPDAAFDIA() {
-      fjebkkbjeaa_ = java.util.Collections.emptyList();
+    private BuddyShownHeartsList() {
+      buddyShownHeartTypes_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new DAPPDAAFDIA();
+      return new BuddyShownHeartsList();
     }
 
     @java.lang.Override
@@ -314,7 +314,7 @@ private static final long serialVersionUID = 0L;
     getUnknownFields() {
       return this.unknownFields;
     }
-    private DAPPDAAFDIA(
+    private BuddyShownHeartsList(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -336,10 +336,10 @@ private static final long serialVersionUID = 0L;
             case 8: {
               int rawValue = input.readEnum();
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                fjebkkbjeaa_ = new java.util.ArrayList<java.lang.Integer>();
+                buddyShownHeartTypes_ = new java.util.ArrayList<java.lang.Integer>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              fjebkkbjeaa_.add(rawValue);
+              buddyShownHeartTypes_.add(rawValue);
               break;
             }
             case 10: {
@@ -348,10 +348,10 @@ private static final long serialVersionUID = 0L;
               while(input.getBytesUntilLimit() > 0) {
                 int rawValue = input.readEnum();
                 if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                  fjebkkbjeaa_ = new java.util.ArrayList<java.lang.Integer>();
+                  buddyShownHeartTypes_ = new java.util.ArrayList<java.lang.Integer>();
                   mutable_bitField0_ |= 0x00000001;
                 }
-                fjebkkbjeaa_.add(rawValue);
+                buddyShownHeartTypes_.add(rawValue);
               }
               input.popLimit(oldLimit);
               break;
@@ -372,7 +372,7 @@ private static final long serialVersionUID = 0L;
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          fjebkkbjeaa_ = java.util.Collections.unmodifiableList(fjebkkbjeaa_);
+          buddyShownHeartTypes_ = java.util.Collections.unmodifiableList(buddyShownHeartTypes_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -380,21 +380,21 @@ private static final long serialVersionUID = 0L;
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_DAPPDAAFDIA_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_BuddyShownHeartsList_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_DAPPDAAFDIA_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_BuddyShownHeartsList_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA.class, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA.Builder.class);
+              POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList.class, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList.Builder.class);
     }
 
-    public static final int FJEBKKBJEAA_FIELD_NUMBER = 1;
-    private java.util.List<java.lang.Integer> fjebkkbjeaa_;
+    public static final int BUDDY_SHOWN_HEART_TYPES_FIELD_NUMBER = 1;
+    private java.util.List<java.lang.Integer> buddyShownHeartTypes_;
     private static final com.google.protobuf.Internal.ListAdapter.Converter<
-        java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType> fjebkkbjeaa_converter_ =
+        java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType> buddyShownHeartTypes_converter_ =
             new com.google.protobuf.Internal.ListAdapter.Converter<
                 java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType>() {
               public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType convert(java.lang.Integer from) {
@@ -404,50 +404,50 @@ private static final long serialVersionUID = 0L;
               }
             };
     /**
-     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-     * @return A list containing the fjebkkbjeaa.
+     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+     * @return A list containing the buddyShownHeartTypes.
      */
     @java.lang.Override
-    public java.util.List<POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType> getFjebkkbjeaaList() {
+    public java.util.List<POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType> getBuddyShownHeartTypesList() {
       return new com.google.protobuf.Internal.ListAdapter<
-          java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType>(fjebkkbjeaa_, fjebkkbjeaa_converter_);
+          java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType>(buddyShownHeartTypes_, buddyShownHeartTypes_converter_);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-     * @return The count of fjebkkbjeaa.
+     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+     * @return The count of buddyShownHeartTypes.
      */
     @java.lang.Override
-    public int getFjebkkbjeaaCount() {
-      return fjebkkbjeaa_.size();
+    public int getBuddyShownHeartTypesCount() {
+      return buddyShownHeartTypes_.size();
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
      * @param index The index of the element to return.
-     * @return The fjebkkbjeaa at the given index.
+     * @return The buddyShownHeartTypes at the given index.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType getFjebkkbjeaa(int index) {
-      return fjebkkbjeaa_converter_.convert(fjebkkbjeaa_.get(index));
+    public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType getBuddyShownHeartTypes(int index) {
+      return buddyShownHeartTypes_converter_.convert(buddyShownHeartTypes_.get(index));
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-     * @return A list containing the enum numeric values on the wire for fjebkkbjeaa.
+     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+     * @return A list containing the enum numeric values on the wire for buddyShownHeartTypes.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-    getFjebkkbjeaaValueList() {
-      return fjebkkbjeaa_;
+    getBuddyShownHeartTypesValueList() {
+      return buddyShownHeartTypes_;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
      * @param index The index of the value to return.
-     * @return The enum numeric value on the wire of fjebkkbjeaa at the given index.
+     * @return The enum numeric value on the wire of buddyShownHeartTypes at the given index.
      */
     @java.lang.Override
-    public int getFjebkkbjeaaValue(int index) {
-      return fjebkkbjeaa_.get(index);
+    public int getBuddyShownHeartTypesValue(int index) {
+      return buddyShownHeartTypes_.get(index);
     }
-    private int fjebkkbjeaaMemoizedSerializedSize;
+    private int buddyShownHeartTypesMemoizedSerializedSize;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -464,12 +464,12 @@ private static final long serialVersionUID = 0L;
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getFjebkkbjeaaList().size() > 0) {
+      if (getBuddyShownHeartTypesList().size() > 0) {
         output.writeUInt32NoTag(10);
-        output.writeUInt32NoTag(fjebkkbjeaaMemoizedSerializedSize);
+        output.writeUInt32NoTag(buddyShownHeartTypesMemoizedSerializedSize);
       }
-      for (int i = 0; i < fjebkkbjeaa_.size(); i++) {
-        output.writeEnumNoTag(fjebkkbjeaa_.get(i));
+      for (int i = 0; i < buddyShownHeartTypes_.size(); i++) {
+        output.writeEnumNoTag(buddyShownHeartTypes_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -482,15 +482,15 @@ private static final long serialVersionUID = 0L;
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < fjebkkbjeaa_.size(); i++) {
+        for (int i = 0; i < buddyShownHeartTypes_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeEnumSizeNoTag(fjebkkbjeaa_.get(i));
+            .computeEnumSizeNoTag(buddyShownHeartTypes_.get(i));
         }
         size += dataSize;
-        if (!getFjebkkbjeaaList().isEmpty()) {  size += 1;
+        if (!getBuddyShownHeartTypesList().isEmpty()) {  size += 1;
           size += com.google.protobuf.CodedOutputStream
             .computeUInt32SizeNoTag(dataSize);
-        }fjebkkbjeaaMemoizedSerializedSize = dataSize;
+        }buddyShownHeartTypesMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -502,12 +502,12 @@ private static final long serialVersionUID = 0L;
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA)) {
+      if (!(obj instanceof POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList)) {
         return super.equals(obj);
       }
-      POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA other = (POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA) obj;
+      POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList other = (POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList) obj;
 
-      if (!fjebkkbjeaa_.equals(other.fjebkkbjeaa_)) return false;
+      if (!buddyShownHeartTypes_.equals(other.buddyShownHeartTypes_)) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -519,78 +519,78 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getFjebkkbjeaaCount() > 0) {
-        hash = (37 * hash) + FJEBKKBJEAA_FIELD_NUMBER;
-        hash = (53 * hash) + fjebkkbjeaa_.hashCode();
+      if (getBuddyShownHeartTypesCount() > 0) {
+        hash = (37 * hash) + BUDDY_SHOWN_HEART_TYPES_FIELD_NUMBER;
+        hash = (53 * hash) + buddyShownHeartTypes_.hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseFrom(
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseFrom(
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseFrom(
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseFrom(
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseFrom(byte[] data)
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseFrom(
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseFrom(
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseDelimitedFrom(java.io.InputStream input)
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseDelimitedFrom(
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseFrom(
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parseFrom(
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -603,7 +603,7 @@ private static final long serialVersionUID = 0L;
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA prototype) {
+    public static Builder newBuilder(POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -623,26 +623,26 @@ private static final long serialVersionUID = 0L;
      * ref: NNEIKBCFGPD/EDAKBLEDJOB/DAPPDAAFDIA
      * </pre>
      *
-     * Protobuf type {@code POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA}
+     * Protobuf type {@code POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA)
-        POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIAOrBuilder {
+        // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList)
+        POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsListOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_DAPPDAAFDIA_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_BuddyShownHeartsList_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_DAPPDAAFDIA_fieldAccessorTable
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_BuddyShownHeartsList_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA.class, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA.Builder.class);
+                POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList.class, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList.Builder.class);
       }
 
-      // Construct using POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA.newBuilder()
+      // Construct using POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -660,7 +660,7 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        fjebkkbjeaa_ = java.util.Collections.emptyList();
+        buddyShownHeartTypes_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
@@ -668,17 +668,17 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_DAPPDAAFDIA_descriptor;
+        return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_BuddyShownHeartsList_descriptor;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA getDefaultInstanceForType() {
-        return POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA.getDefaultInstance();
+      public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList getDefaultInstanceForType() {
+        return POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList.getDefaultInstance();
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA build() {
-        POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA result = buildPartial();
+      public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList build() {
+        POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -686,14 +686,14 @@ private static final long serialVersionUID = 0L;
       }
 
       @java.lang.Override
-      public POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA buildPartial() {
-        POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA result = new POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA(this);
+      public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList buildPartial() {
+        POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList result = new POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          fjebkkbjeaa_ = java.util.Collections.unmodifiableList(fjebkkbjeaa_);
+          buddyShownHeartTypes_ = java.util.Collections.unmodifiableList(buddyShownHeartTypes_);
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.fjebkkbjeaa_ = fjebkkbjeaa_;
+        result.buddyShownHeartTypes_ = buddyShownHeartTypes_;
         onBuilt();
         return result;
       }
@@ -732,23 +732,23 @@ private static final long serialVersionUID = 0L;
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA) {
-          return mergeFrom((POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA)other);
+        if (other instanceof POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList) {
+          return mergeFrom((POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA other) {
-        if (other == POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA.getDefaultInstance()) return this;
-        if (!other.fjebkkbjeaa_.isEmpty()) {
-          if (fjebkkbjeaa_.isEmpty()) {
-            fjebkkbjeaa_ = other.fjebkkbjeaa_;
+      public Builder mergeFrom(POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList other) {
+        if (other == POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList.getDefaultInstance()) return this;
+        if (!other.buddyShownHeartTypes_.isEmpty()) {
+          if (buddyShownHeartTypes_.isEmpty()) {
+            buddyShownHeartTypes_ = other.buddyShownHeartTypes_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureFjebkkbjeaaIsMutable();
-            fjebkkbjeaa_.addAll(other.fjebkkbjeaa_);
+            ensureBuddyShownHeartTypesIsMutable();
+            buddyShownHeartTypes_.addAll(other.buddyShownHeartTypes_);
           }
           onChanged();
         }
@@ -767,11 +767,11 @@ private static final long serialVersionUID = 0L;
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA parsedMessage = null;
+        POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA) e.getUnfinishedMessage();
+          parsedMessage = (POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -782,141 +782,141 @@ private static final long serialVersionUID = 0L;
       }
       private int bitField0_;
 
-      private java.util.List<java.lang.Integer> fjebkkbjeaa_ =
+      private java.util.List<java.lang.Integer> buddyShownHeartTypes_ =
         java.util.Collections.emptyList();
-      private void ensureFjebkkbjeaaIsMutable() {
+      private void ensureBuddyShownHeartTypesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          fjebkkbjeaa_ = new java.util.ArrayList<java.lang.Integer>(fjebkkbjeaa_);
+          buddyShownHeartTypes_ = new java.util.ArrayList<java.lang.Integer>(buddyShownHeartTypes_);
           bitField0_ |= 0x00000001;
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-       * @return A list containing the fjebkkbjeaa.
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+       * @return A list containing the buddyShownHeartTypes.
        */
-      public java.util.List<POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType> getFjebkkbjeaaList() {
+      public java.util.List<POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType> getBuddyShownHeartTypesList() {
         return new com.google.protobuf.Internal.ListAdapter<
-            java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType>(fjebkkbjeaa_, fjebkkbjeaa_converter_);
+            java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType>(buddyShownHeartTypes_, buddyShownHeartTypes_converter_);
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-       * @return The count of fjebkkbjeaa.
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+       * @return The count of buddyShownHeartTypes.
        */
-      public int getFjebkkbjeaaCount() {
-        return fjebkkbjeaa_.size();
+      public int getBuddyShownHeartTypesCount() {
+        return buddyShownHeartTypes_.size();
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
        * @param index The index of the element to return.
-       * @return The fjebkkbjeaa at the given index.
+       * @return The buddyShownHeartTypes at the given index.
        */
-      public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType getFjebkkbjeaa(int index) {
-        return fjebkkbjeaa_converter_.convert(fjebkkbjeaa_.get(index));
+      public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType getBuddyShownHeartTypes(int index) {
+        return buddyShownHeartTypes_converter_.convert(buddyShownHeartTypes_.get(index));
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
        * @param index The index to set the value at.
-       * @param value The fjebkkbjeaa to set.
+       * @param value The buddyShownHeartTypes to set.
        * @return This builder for chaining.
        */
-      public Builder setFjebkkbjeaa(
+      public Builder setBuddyShownHeartTypes(
           int index, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureFjebkkbjeaaIsMutable();
-        fjebkkbjeaa_.set(index, value.getNumber());
+        ensureBuddyShownHeartTypesIsMutable();
+        buddyShownHeartTypes_.set(index, value.getNumber());
         onChanged();
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-       * @param value The fjebkkbjeaa to add.
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+       * @param value The buddyShownHeartTypes to add.
        * @return This builder for chaining.
        */
-      public Builder addFjebkkbjeaa(POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType value) {
+      public Builder addBuddyShownHeartTypes(POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType value) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureFjebkkbjeaaIsMutable();
-        fjebkkbjeaa_.add(value.getNumber());
+        ensureBuddyShownHeartTypesIsMutable();
+        buddyShownHeartTypes_.add(value.getNumber());
         onChanged();
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-       * @param values The fjebkkbjeaa to add.
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+       * @param values The buddyShownHeartTypes to add.
        * @return This builder for chaining.
        */
-      public Builder addAllFjebkkbjeaa(
+      public Builder addAllBuddyShownHeartTypes(
           java.lang.Iterable<? extends POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType> values) {
-        ensureFjebkkbjeaaIsMutable();
+        ensureBuddyShownHeartTypesIsMutable();
         for (POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType value : values) {
-          fjebkkbjeaa_.add(value.getNumber());
+          buddyShownHeartTypes_.add(value.getNumber());
         }
         onChanged();
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFjebkkbjeaa() {
-        fjebkkbjeaa_ = java.util.Collections.emptyList();
+      public Builder clearBuddyShownHeartTypes() {
+        buddyShownHeartTypes_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-       * @return A list containing the enum numeric values on the wire for fjebkkbjeaa.
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+       * @return A list containing the enum numeric values on the wire for buddyShownHeartTypes.
        */
       public java.util.List<java.lang.Integer>
-      getFjebkkbjeaaValueList() {
-        return java.util.Collections.unmodifiableList(fjebkkbjeaa_);
+      getBuddyShownHeartTypesValueList() {
+        return java.util.Collections.unmodifiableList(buddyShownHeartTypes_);
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
        * @param index The index of the value to return.
-       * @return The enum numeric value on the wire of fjebkkbjeaa at the given index.
+       * @return The enum numeric value on the wire of buddyShownHeartTypes at the given index.
        */
-      public int getFjebkkbjeaaValue(int index) {
-        return fjebkkbjeaa_.get(index);
+      public int getBuddyShownHeartTypesValue(int index) {
+        return buddyShownHeartTypes_.get(index);
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
        * @param index The index of the value to return.
-       * @return The enum numeric value on the wire of fjebkkbjeaa at the given index.
+       * @return The enum numeric value on the wire of buddyShownHeartTypes at the given index.
        * @return This builder for chaining.
        */
-      public Builder setFjebkkbjeaaValue(
+      public Builder setBuddyShownHeartTypesValue(
           int index, int value) {
-        ensureFjebkkbjeaaIsMutable();
-        fjebkkbjeaa_.set(index, value);
+        ensureBuddyShownHeartTypesIsMutable();
+        buddyShownHeartTypes_.set(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-       * @param value The enum numeric value on the wire for fjebkkbjeaa to add.
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+       * @param value The enum numeric value on the wire for buddyShownHeartTypes to add.
        * @return This builder for chaining.
        */
-      public Builder addFjebkkbjeaaValue(int value) {
-        ensureFjebkkbjeaaIsMutable();
-        fjebkkbjeaa_.add(value);
+      public Builder addBuddyShownHeartTypesValue(int value) {
+        ensureBuddyShownHeartTypesIsMutable();
+        buddyShownHeartTypes_.add(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType fjebkkbjeaa = 1;</code>
-       * @param values The enum numeric values on the wire for fjebkkbjeaa to add.
+       * <code>repeated .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType buddy_shown_heart_types = 1;</code>
+       * @param values The enum numeric values on the wire for buddyShownHeartTypes to add.
        * @return This builder for chaining.
        */
-      public Builder addAllFjebkkbjeaaValue(
+      public Builder addAllBuddyShownHeartTypesValue(
           java.lang.Iterable<java.lang.Integer> values) {
-        ensureFjebkkbjeaaIsMutable();
+        ensureBuddyShownHeartTypesIsMutable();
         for (int value : values) {
-          fjebkkbjeaa_.add(value);
+          buddyShownHeartTypes_.add(value);
         }
         onChanged();
         return this;
@@ -934,162 +934,162 @@ private static final long serialVersionUID = 0L;
       }
 
 
-      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA)
+      // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList)
     }
 
-    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA)
-    private static final POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList)
+    private static final POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA();
+      DEFAULT_INSTANCE = new POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList();
     }
 
-    public static POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA getDefaultInstance() {
+    public static POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<DAPPDAAFDIA>
-        PARSER = new com.google.protobuf.AbstractParser<DAPPDAAFDIA>() {
+    private static final com.google.protobuf.Parser<BuddyShownHeartsList>
+        PARSER = new com.google.protobuf.AbstractParser<BuddyShownHeartsList>() {
       @java.lang.Override
-      public DAPPDAAFDIA parsePartialFrom(
+      public BuddyShownHeartsList parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new DAPPDAAFDIA(input, extensionRegistry);
+        return new BuddyShownHeartsList(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<DAPPDAAFDIA> parser() {
+    public static com.google.protobuf.Parser<BuddyShownHeartsList> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<DAPPDAAFDIA> getParserForType() {
+    public com.google.protobuf.Parser<BuddyShownHeartsList> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA getDefaultInstanceForType() {
+    public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public static final int HBBIDIGFCNM_FIELD_NUMBER = 1;
-  private float hbbidigfcnm_;
+  public static final int BUDDY_AFFECTION_KM_IN_PROGRESS_FIELD_NUMBER = 1;
+  private float buddyAffectionKmInProgress_;
   /**
-   * <code>float hbbidigfcnm = 1;</code>
-   * @return The hbbidigfcnm.
+   * <code>float buddy_affection_km_in_progress = 1;</code>
+   * @return The buddyAffectionKmInProgress.
    */
   @java.lang.Override
-  public float getHbbidigfcnm() {
-    return hbbidigfcnm_;
+  public float getBuddyAffectionKmInProgress() {
+    return buddyAffectionKmInProgress_;
   }
 
-  public static final int JIKDOPMMLAG_FIELD_NUMBER = 2;
-  private static final class JikdopmmlagDefaultEntryHolder {
+  public static final int BUDDY_SHOWN_HEARTS_PER_CATEGORY_FIELD_NUMBER = 2;
+  private static final class BuddyShownHeartsPerCategoryDefaultEntryHolder {
     static final com.google.protobuf.MapEntry<
-        java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> defaultEntry =
+        java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> defaultEntry =
             com.google.protobuf.MapEntry
-            .<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA>newDefaultInstance(
-                POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_JikdopmmlagEntry_descriptor, 
+            .<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList>newDefaultInstance(
+                POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyStatsShownHearts_BuddyShownHeartsPerCategoryEntry_descriptor, 
                 com.google.protobuf.WireFormat.FieldType.INT32,
                 0,
                 com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA.getDefaultInstance());
+                POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList.getDefaultInstance());
   }
   private com.google.protobuf.MapField<
-      java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> jikdopmmlag_;
-  private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA>
-  internalGetJikdopmmlag() {
-    if (jikdopmmlag_ == null) {
+      java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> buddyShownHeartsPerCategory_;
+  private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList>
+  internalGetBuddyShownHeartsPerCategory() {
+    if (buddyShownHeartsPerCategory_ == null) {
       return com.google.protobuf.MapField.emptyMapField(
-          JikdopmmlagDefaultEntryHolder.defaultEntry);
+          BuddyShownHeartsPerCategoryDefaultEntryHolder.defaultEntry);
     }
-    return jikdopmmlag_;
+    return buddyShownHeartsPerCategory_;
   }
 
-  public int getJikdopmmlagCount() {
-    return internalGetJikdopmmlag().getMap().size();
+  public int getBuddyShownHeartsPerCategoryCount() {
+    return internalGetBuddyShownHeartsPerCategory().getMap().size();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
    */
 
   @java.lang.Override
-  public boolean containsJikdopmmlag(
+  public boolean containsBuddyShownHeartsPerCategory(
       int key) {
     
-    return internalGetJikdopmmlag().getMap().containsKey(key);
+    return internalGetBuddyShownHeartsPerCategory().getMap().containsKey(key);
   }
   /**
-   * Use {@link #getJikdopmmlagMap()} instead.
+   * Use {@link #getBuddyShownHeartsPerCategoryMap()} instead.
    */
   @java.lang.Override
   @java.lang.Deprecated
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> getJikdopmmlag() {
-    return getJikdopmmlagMap();
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> getBuddyShownHeartsPerCategory() {
+    return getBuddyShownHeartsPerCategoryMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
    */
   @java.lang.Override
 
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> getJikdopmmlagMap() {
-    return internalGetJikdopmmlag().getMap();
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> getBuddyShownHeartsPerCategoryMap() {
+    return internalGetBuddyShownHeartsPerCategory().getMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA getJikdopmmlagOrDefault(
+  public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList getBuddyShownHeartsPerCategoryOrDefault(
       int key,
-      POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA defaultValue) {
+      POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList defaultValue) {
     
-    java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> map =
-        internalGetJikdopmmlag().getMap();
+    java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> map =
+        internalGetBuddyShownHeartsPerCategory().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA getJikdopmmlagOrThrow(
+  public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList getBuddyShownHeartsPerCategoryOrThrow(
       int key) {
     
-    java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> map =
-        internalGetJikdopmmlag().getMap();
+    java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> map =
+        internalGetBuddyShownHeartsPerCategory().getMap();
     if (!map.containsKey(key)) {
       throw new java.lang.IllegalArgumentException();
     }
     return map.get(key);
   }
 
-  public static final int DALFIOMENOG_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog_;
+  public static final int FIELD1_FIELD_NUMBER = 3;
+  private POGOProtos.Rpc.PEKJNHJPJIB field1_;
   /**
-   * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
-   * @return Whether the dalfiomenog field is set.
+   * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
+   * @return Whether the field1 field is set.
    */
   @java.lang.Override
-  public boolean hasDalfiomenog() {
-    return dalfiomenog_ != null;
+  public boolean hasField1() {
+    return field1_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
-   * @return The dalfiomenog.
+   * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
+   * @return The field1.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PEKJNHJPJIB getDalfiomenog() {
-    return dalfiomenog_ == null ? POGOProtos.Rpc.PEKJNHJPJIB.getDefaultInstance() : dalfiomenog_;
+  public POGOProtos.Rpc.PEKJNHJPJIB getField1() {
+    return field1_ == null ? POGOProtos.Rpc.PEKJNHJPJIB.getDefaultInstance() : field1_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
+   * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PEKJNHJPJIBOrBuilder getDalfiomenogOrBuilder() {
-    return getDalfiomenog();
+  public POGOProtos.Rpc.PEKJNHJPJIBOrBuilder getField1OrBuilder() {
+    return getField1();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -1106,17 +1106,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (hbbidigfcnm_ != 0F) {
-      output.writeFloat(1, hbbidigfcnm_);
+    if (buddyAffectionKmInProgress_ != 0F) {
+      output.writeFloat(1, buddyAffectionKmInProgress_);
     }
     com.google.protobuf.GeneratedMessageV3
       .serializeIntegerMapTo(
         output,
-        internalGetJikdopmmlag(),
-        JikdopmmlagDefaultEntryHolder.defaultEntry,
+        internalGetBuddyShownHeartsPerCategory(),
+        BuddyShownHeartsPerCategoryDefaultEntryHolder.defaultEntry,
         2);
-    if (dalfiomenog_ != null) {
-      output.writeMessage(3, getDalfiomenog());
+    if (field1_ != null) {
+      output.writeMessage(3, getField1());
     }
     unknownFields.writeTo(output);
   }
@@ -1127,23 +1127,23 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (hbbidigfcnm_ != 0F) {
+    if (buddyAffectionKmInProgress_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(1, hbbidigfcnm_);
+        .computeFloatSize(1, buddyAffectionKmInProgress_);
     }
-    for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> entry
-         : internalGetJikdopmmlag().getMap().entrySet()) {
-      com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA>
-      jikdopmmlag__ = JikdopmmlagDefaultEntryHolder.defaultEntry.newBuilderForType()
+    for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> entry
+         : internalGetBuddyShownHeartsPerCategory().getMap().entrySet()) {
+      com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList>
+      buddyShownHeartsPerCategory__ = BuddyShownHeartsPerCategoryDefaultEntryHolder.defaultEntry.newBuilderForType()
           .setKey(entry.getKey())
           .setValue(entry.getValue())
           .build();
       size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, jikdopmmlag__);
+          .computeMessageSize(2, buddyShownHeartsPerCategory__);
     }
-    if (dalfiomenog_ != null) {
+    if (field1_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getDalfiomenog());
+        .computeMessageSize(3, getField1());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1160,15 +1160,15 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BuddyStatsShownHearts other = (POGOProtos.Rpc.BuddyStatsShownHearts) obj;
 
-    if (java.lang.Float.floatToIntBits(getHbbidigfcnm())
+    if (java.lang.Float.floatToIntBits(getBuddyAffectionKmInProgress())
         != java.lang.Float.floatToIntBits(
-            other.getHbbidigfcnm())) return false;
-    if (!internalGetJikdopmmlag().equals(
-        other.internalGetJikdopmmlag())) return false;
-    if (hasDalfiomenog() != other.hasDalfiomenog()) return false;
-    if (hasDalfiomenog()) {
-      if (!getDalfiomenog()
-          .equals(other.getDalfiomenog())) return false;
+            other.getBuddyAffectionKmInProgress())) return false;
+    if (!internalGetBuddyShownHeartsPerCategory().equals(
+        other.internalGetBuddyShownHeartsPerCategory())) return false;
+    if (hasField1() != other.hasField1()) return false;
+    if (hasField1()) {
+      if (!getField1()
+          .equals(other.getField1())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -1181,16 +1181,16 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + HBBIDIGFCNM_FIELD_NUMBER;
+    hash = (37 * hash) + BUDDY_AFFECTION_KM_IN_PROGRESS_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getHbbidigfcnm());
-    if (!internalGetJikdopmmlag().getMap().isEmpty()) {
-      hash = (37 * hash) + JIKDOPMMLAG_FIELD_NUMBER;
-      hash = (53 * hash) + internalGetJikdopmmlag().hashCode();
+        getBuddyAffectionKmInProgress());
+    if (!internalGetBuddyShownHeartsPerCategory().getMap().isEmpty()) {
+      hash = (37 * hash) + BUDDY_SHOWN_HEARTS_PER_CATEGORY_FIELD_NUMBER;
+      hash = (53 * hash) + internalGetBuddyShownHeartsPerCategory().hashCode();
     }
-    if (hasDalfiomenog()) {
-      hash = (37 * hash) + DALFIOMENOG_FIELD_NUMBER;
-      hash = (53 * hash) + getDalfiomenog().hashCode();
+    if (hasField1()) {
+      hash = (37 * hash) + FIELD1_FIELD_NUMBER;
+      hash = (53 * hash) + getField1().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -1308,7 +1308,7 @@ private static final long serialVersionUID = 0L;
         int number) {
       switch (number) {
         case 2:
-          return internalGetJikdopmmlag();
+          return internalGetBuddyShownHeartsPerCategory();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -1319,7 +1319,7 @@ private static final long serialVersionUID = 0L;
         int number) {
       switch (number) {
         case 2:
-          return internalGetMutableJikdopmmlag();
+          return internalGetMutableBuddyShownHeartsPerCategory();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -1351,14 +1351,14 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      hbbidigfcnm_ = 0F;
+      buddyAffectionKmInProgress_ = 0F;
 
-      internalGetMutableJikdopmmlag().clear();
-      if (dalfiomenogBuilder_ == null) {
-        dalfiomenog_ = null;
+      internalGetMutableBuddyShownHeartsPerCategory().clear();
+      if (field1Builder_ == null) {
+        field1_ = null;
       } else {
-        dalfiomenog_ = null;
-        dalfiomenogBuilder_ = null;
+        field1_ = null;
+        field1Builder_ = null;
       }
       return this;
     }
@@ -1387,13 +1387,13 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.BuddyStatsShownHearts buildPartial() {
       POGOProtos.Rpc.BuddyStatsShownHearts result = new POGOProtos.Rpc.BuddyStatsShownHearts(this);
       int from_bitField0_ = bitField0_;
-      result.hbbidigfcnm_ = hbbidigfcnm_;
-      result.jikdopmmlag_ = internalGetJikdopmmlag();
-      result.jikdopmmlag_.makeImmutable();
-      if (dalfiomenogBuilder_ == null) {
-        result.dalfiomenog_ = dalfiomenog_;
+      result.buddyAffectionKmInProgress_ = buddyAffectionKmInProgress_;
+      result.buddyShownHeartsPerCategory_ = internalGetBuddyShownHeartsPerCategory();
+      result.buddyShownHeartsPerCategory_.makeImmutable();
+      if (field1Builder_ == null) {
+        result.field1_ = field1_;
       } else {
-        result.dalfiomenog_ = dalfiomenogBuilder_.build();
+        result.field1_ = field1Builder_.build();
       }
       onBuilt();
       return result;
@@ -1443,13 +1443,13 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BuddyStatsShownHearts other) {
       if (other == POGOProtos.Rpc.BuddyStatsShownHearts.getDefaultInstance()) return this;
-      if (other.getHbbidigfcnm() != 0F) {
-        setHbbidigfcnm(other.getHbbidigfcnm());
+      if (other.getBuddyAffectionKmInProgress() != 0F) {
+        setBuddyAffectionKmInProgress(other.getBuddyAffectionKmInProgress());
       }
-      internalGetMutableJikdopmmlag().mergeFrom(
-          other.internalGetJikdopmmlag());
-      if (other.hasDalfiomenog()) {
-        mergeDalfiomenog(other.getDalfiomenog());
+      internalGetMutableBuddyShownHeartsPerCategory().mergeFrom(
+          other.internalGetBuddyShownHeartsPerCategory());
+      if (other.hasField1()) {
+        mergeField1(other.getField1());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1481,131 +1481,131 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private float hbbidigfcnm_ ;
+    private float buddyAffectionKmInProgress_ ;
     /**
-     * <code>float hbbidigfcnm = 1;</code>
-     * @return The hbbidigfcnm.
+     * <code>float buddy_affection_km_in_progress = 1;</code>
+     * @return The buddyAffectionKmInProgress.
      */
     @java.lang.Override
-    public float getHbbidigfcnm() {
-      return hbbidigfcnm_;
+    public float getBuddyAffectionKmInProgress() {
+      return buddyAffectionKmInProgress_;
     }
     /**
-     * <code>float hbbidigfcnm = 1;</code>
-     * @param value The hbbidigfcnm to set.
+     * <code>float buddy_affection_km_in_progress = 1;</code>
+     * @param value The buddyAffectionKmInProgress to set.
      * @return This builder for chaining.
      */
-    public Builder setHbbidigfcnm(float value) {
+    public Builder setBuddyAffectionKmInProgress(float value) {
       
-      hbbidigfcnm_ = value;
+      buddyAffectionKmInProgress_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float hbbidigfcnm = 1;</code>
+     * <code>float buddy_affection_km_in_progress = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearHbbidigfcnm() {
+    public Builder clearBuddyAffectionKmInProgress() {
       
-      hbbidigfcnm_ = 0F;
+      buddyAffectionKmInProgress_ = 0F;
       onChanged();
       return this;
     }
 
     private com.google.protobuf.MapField<
-        java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> jikdopmmlag_;
-    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA>
-    internalGetJikdopmmlag() {
-      if (jikdopmmlag_ == null) {
+        java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> buddyShownHeartsPerCategory_;
+    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList>
+    internalGetBuddyShownHeartsPerCategory() {
+      if (buddyShownHeartsPerCategory_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            JikdopmmlagDefaultEntryHolder.defaultEntry);
+            BuddyShownHeartsPerCategoryDefaultEntryHolder.defaultEntry);
       }
-      return jikdopmmlag_;
+      return buddyShownHeartsPerCategory_;
     }
-    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA>
-    internalGetMutableJikdopmmlag() {
+    private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList>
+    internalGetMutableBuddyShownHeartsPerCategory() {
       onChanged();;
-      if (jikdopmmlag_ == null) {
-        jikdopmmlag_ = com.google.protobuf.MapField.newMapField(
-            JikdopmmlagDefaultEntryHolder.defaultEntry);
+      if (buddyShownHeartsPerCategory_ == null) {
+        buddyShownHeartsPerCategory_ = com.google.protobuf.MapField.newMapField(
+            BuddyShownHeartsPerCategoryDefaultEntryHolder.defaultEntry);
       }
-      if (!jikdopmmlag_.isMutable()) {
-        jikdopmmlag_ = jikdopmmlag_.copy();
+      if (!buddyShownHeartsPerCategory_.isMutable()) {
+        buddyShownHeartsPerCategory_ = buddyShownHeartsPerCategory_.copy();
       }
-      return jikdopmmlag_;
+      return buddyShownHeartsPerCategory_;
     }
 
-    public int getJikdopmmlagCount() {
-      return internalGetJikdopmmlag().getMap().size();
+    public int getBuddyShownHeartsPerCategoryCount() {
+      return internalGetBuddyShownHeartsPerCategory().getMap().size();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
      */
 
     @java.lang.Override
-    public boolean containsJikdopmmlag(
+    public boolean containsBuddyShownHeartsPerCategory(
         int key) {
       
-      return internalGetJikdopmmlag().getMap().containsKey(key);
+      return internalGetBuddyShownHeartsPerCategory().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getJikdopmmlagMap()} instead.
+     * Use {@link #getBuddyShownHeartsPerCategoryMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> getJikdopmmlag() {
-      return getJikdopmmlagMap();
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> getBuddyShownHeartsPerCategory() {
+      return getBuddyShownHeartsPerCategoryMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> getJikdopmmlagMap() {
-      return internalGetJikdopmmlag().getMap();
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> getBuddyShownHeartsPerCategoryMap() {
+      return internalGetBuddyShownHeartsPerCategory().getMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA getJikdopmmlagOrDefault(
+    public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList getBuddyShownHeartsPerCategoryOrDefault(
         int key,
-        POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA defaultValue) {
+        POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList defaultValue) {
       
-      java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> map =
-          internalGetJikdopmmlag().getMap();
+      java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> map =
+          internalGetBuddyShownHeartsPerCategory().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA getJikdopmmlagOrThrow(
+    public POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList getBuddyShownHeartsPerCategoryOrThrow(
         int key) {
       
-      java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> map =
-          internalGetJikdopmmlag().getMap();
+      java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> map =
+          internalGetBuddyShownHeartsPerCategory().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public Builder clearJikdopmmlag() {
-      internalGetMutableJikdopmmlag().getMutableMap()
+    public Builder clearBuddyShownHeartsPerCategory() {
+      internalGetMutableBuddyShownHeartsPerCategory().getMutableMap()
           .clear();
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
      */
 
-    public Builder removeJikdopmmlag(
+    public Builder removeBuddyShownHeartsPerCategory(
         int key) {
       
-      internalGetMutableJikdopmmlag().getMutableMap()
+      internalGetMutableBuddyShownHeartsPerCategory().getMutableMap()
           .remove(key);
       return this;
     }
@@ -1613,150 +1613,150 @@ private static final long serialVersionUID = 0L;
      * Use alternate mutation accessors instead.
      */
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA>
-    getMutableJikdopmmlag() {
-      return internalGetMutableJikdopmmlag().getMutableMap();
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList>
+    getMutableBuddyShownHeartsPerCategory() {
+      return internalGetMutableBuddyShownHeartsPerCategory().getMutableMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
      */
-    public Builder putJikdopmmlag(
+    public Builder putBuddyShownHeartsPerCategory(
         int key,
-        POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA value) {
+        POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList value) {
       
       if (value == null) { throw new java.lang.NullPointerException(); }
-      internalGetMutableJikdopmmlag().getMutableMap()
+      internalGetMutableBuddyShownHeartsPerCategory().getMutableMap()
           .put(key, value);
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
      */
 
-    public Builder putAllJikdopmmlag(
-        java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA> values) {
-      internalGetMutableJikdopmmlag().getMutableMap()
+    public Builder putAllBuddyShownHeartsPerCategory(
+        java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList> values) {
+      internalGetMutableBuddyShownHeartsPerCategory().getMutableMap()
           .putAll(values);
       return this;
     }
 
-    private POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog_;
+    private POGOProtos.Rpc.PEKJNHJPJIB field1_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PEKJNHJPJIB, POGOProtos.Rpc.PEKJNHJPJIB.Builder, POGOProtos.Rpc.PEKJNHJPJIBOrBuilder> dalfiomenogBuilder_;
+        POGOProtos.Rpc.PEKJNHJPJIB, POGOProtos.Rpc.PEKJNHJPJIB.Builder, POGOProtos.Rpc.PEKJNHJPJIBOrBuilder> field1Builder_;
     /**
-     * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
-     * @return Whether the dalfiomenog field is set.
+     * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
+     * @return Whether the field1 field is set.
      */
-    public boolean hasDalfiomenog() {
-      return dalfiomenogBuilder_ != null || dalfiomenog_ != null;
+    public boolean hasField1() {
+      return field1Builder_ != null || field1_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
-     * @return The dalfiomenog.
+     * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
+     * @return The field1.
      */
-    public POGOProtos.Rpc.PEKJNHJPJIB getDalfiomenog() {
-      if (dalfiomenogBuilder_ == null) {
-        return dalfiomenog_ == null ? POGOProtos.Rpc.PEKJNHJPJIB.getDefaultInstance() : dalfiomenog_;
+    public POGOProtos.Rpc.PEKJNHJPJIB getField1() {
+      if (field1Builder_ == null) {
+        return field1_ == null ? POGOProtos.Rpc.PEKJNHJPJIB.getDefaultInstance() : field1_;
       } else {
-        return dalfiomenogBuilder_.getMessage();
+        return field1Builder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
+     * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
      */
-    public Builder setDalfiomenog(POGOProtos.Rpc.PEKJNHJPJIB value) {
-      if (dalfiomenogBuilder_ == null) {
+    public Builder setField1(POGOProtos.Rpc.PEKJNHJPJIB value) {
+      if (field1Builder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        dalfiomenog_ = value;
+        field1_ = value;
         onChanged();
       } else {
-        dalfiomenogBuilder_.setMessage(value);
+        field1Builder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
+     * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
      */
-    public Builder setDalfiomenog(
+    public Builder setField1(
         POGOProtos.Rpc.PEKJNHJPJIB.Builder builderForValue) {
-      if (dalfiomenogBuilder_ == null) {
-        dalfiomenog_ = builderForValue.build();
+      if (field1Builder_ == null) {
+        field1_ = builderForValue.build();
         onChanged();
       } else {
-        dalfiomenogBuilder_.setMessage(builderForValue.build());
+        field1Builder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
+     * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
      */
-    public Builder mergeDalfiomenog(POGOProtos.Rpc.PEKJNHJPJIB value) {
-      if (dalfiomenogBuilder_ == null) {
-        if (dalfiomenog_ != null) {
-          dalfiomenog_ =
-            POGOProtos.Rpc.PEKJNHJPJIB.newBuilder(dalfiomenog_).mergeFrom(value).buildPartial();
+    public Builder mergeField1(POGOProtos.Rpc.PEKJNHJPJIB value) {
+      if (field1Builder_ == null) {
+        if (field1_ != null) {
+          field1_ =
+            POGOProtos.Rpc.PEKJNHJPJIB.newBuilder(field1_).mergeFrom(value).buildPartial();
         } else {
-          dalfiomenog_ = value;
+          field1_ = value;
         }
         onChanged();
       } else {
-        dalfiomenogBuilder_.mergeFrom(value);
+        field1Builder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
+     * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
      */
-    public Builder clearDalfiomenog() {
-      if (dalfiomenogBuilder_ == null) {
-        dalfiomenog_ = null;
+    public Builder clearField1() {
+      if (field1Builder_ == null) {
+        field1_ = null;
         onChanged();
       } else {
-        dalfiomenog_ = null;
-        dalfiomenogBuilder_ = null;
+        field1_ = null;
+        field1Builder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
+     * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
      */
-    public POGOProtos.Rpc.PEKJNHJPJIB.Builder getDalfiomenogBuilder() {
+    public POGOProtos.Rpc.PEKJNHJPJIB.Builder getField1Builder() {
       
       onChanged();
-      return getDalfiomenogFieldBuilder().getBuilder();
+      return getField1FieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
+     * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
      */
-    public POGOProtos.Rpc.PEKJNHJPJIBOrBuilder getDalfiomenogOrBuilder() {
-      if (dalfiomenogBuilder_ != null) {
-        return dalfiomenogBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.PEKJNHJPJIBOrBuilder getField1OrBuilder() {
+      if (field1Builder_ != null) {
+        return field1Builder_.getMessageOrBuilder();
       } else {
-        return dalfiomenog_ == null ?
-            POGOProtos.Rpc.PEKJNHJPJIB.getDefaultInstance() : dalfiomenog_;
+        return field1_ == null ?
+            POGOProtos.Rpc.PEKJNHJPJIB.getDefaultInstance() : field1_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
+     * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PEKJNHJPJIB, POGOProtos.Rpc.PEKJNHJPJIB.Builder, POGOProtos.Rpc.PEKJNHJPJIBOrBuilder> 
-        getDalfiomenogFieldBuilder() {
-      if (dalfiomenogBuilder_ == null) {
-        dalfiomenogBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getField1FieldBuilder() {
+      if (field1Builder_ == null) {
+        field1Builder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PEKJNHJPJIB, POGOProtos.Rpc.PEKJNHJPJIB.Builder, POGOProtos.Rpc.PEKJNHJPJIBOrBuilder>(
-                getDalfiomenog(),
+                getField1(),
                 getParentForChildren(),
                 isClean());
-        dalfiomenog_ = null;
+        field1_ = null;
       }
-      return dalfiomenogBuilder_;
+      return field1Builder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

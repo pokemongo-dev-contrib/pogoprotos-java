@@ -20,8 +20,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AppliedItemProto() {
-    ekpohjfklal_ = 0;
-    afbaginffej_ = 0;
+    item_ = 0;
+    itemType_ = 0;
   }
 
   @java.lang.Override
@@ -57,23 +57,23 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            ekpohjfklal_ = rawValue;
+            item_ = rawValue;
             break;
           }
           case 16: {
             int rawValue = input.readEnum();
 
-            afbaginffej_ = rawValue;
+            itemType_ = rawValue;
             break;
           }
           case 24: {
 
-            hklepofbgjd_ = input.readInt64();
+            expirationMs_ = input.readInt64();
             break;
           }
           case 32: {
 
-            depkjhhebkb_ = input.readInt64();
+            appliedMs_ = input.readInt64();
             break;
           }
           default: {
@@ -108,64 +108,64 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.AppliedItemProto.class, POGOProtos.Rpc.AppliedItemProto.Builder.class);
   }
 
-  public static final int EKPOHJFKLAL_FIELD_NUMBER = 1;
-  private int ekpohjfklal_;
+  public static final int ITEM_FIELD_NUMBER = 1;
+  private int item_;
   /**
-   * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-   * @return The enum numeric value on the wire for ekpohjfklal.
+   * <code>.POGOProtos.Rpc.Item item = 1;</code>
+   * @return The enum numeric value on the wire for item.
    */
-  @java.lang.Override public int getEkpohjfklalValue() {
-    return ekpohjfklal_;
+  @java.lang.Override public int getItemValue() {
+    return item_;
   }
   /**
-   * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-   * @return The ekpohjfklal.
+   * <code>.POGOProtos.Rpc.Item item = 1;</code>
+   * @return The item.
    */
-  @java.lang.Override public POGOProtos.Rpc.Item getEkpohjfklal() {
+  @java.lang.Override public POGOProtos.Rpc.Item getItem() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(ekpohjfklal_);
+    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(item_);
     return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
   }
 
-  public static final int AFBAGINFFEJ_FIELD_NUMBER = 2;
-  private int afbaginffej_;
+  public static final int ITEM_TYPE_FIELD_NUMBER = 2;
+  private int itemType_;
   /**
-   * <code>.POGOProtos.Rpc.HoloItemType afbaginffej = 2;</code>
-   * @return The enum numeric value on the wire for afbaginffej.
+   * <code>.POGOProtos.Rpc.HoloItemType item_type = 2;</code>
+   * @return The enum numeric value on the wire for itemType.
    */
-  @java.lang.Override public int getAfbaginffejValue() {
-    return afbaginffej_;
+  @java.lang.Override public int getItemTypeValue() {
+    return itemType_;
   }
   /**
-   * <code>.POGOProtos.Rpc.HoloItemType afbaginffej = 2;</code>
-   * @return The afbaginffej.
+   * <code>.POGOProtos.Rpc.HoloItemType item_type = 2;</code>
+   * @return The itemType.
    */
-  @java.lang.Override public POGOProtos.Rpc.HoloItemType getAfbaginffej() {
+  @java.lang.Override public POGOProtos.Rpc.HoloItemType getItemType() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.HoloItemType result = POGOProtos.Rpc.HoloItemType.valueOf(afbaginffej_);
+    POGOProtos.Rpc.HoloItemType result = POGOProtos.Rpc.HoloItemType.valueOf(itemType_);
     return result == null ? POGOProtos.Rpc.HoloItemType.UNRECOGNIZED : result;
   }
 
-  public static final int HKLEPOFBGJD_FIELD_NUMBER = 3;
-  private long hklepofbgjd_;
+  public static final int EXPIRATION_MS_FIELD_NUMBER = 3;
+  private long expirationMs_;
   /**
-   * <code>int64 hklepofbgjd = 3;</code>
-   * @return The hklepofbgjd.
+   * <code>int64 expiration_ms = 3;</code>
+   * @return The expirationMs.
    */
   @java.lang.Override
-  public long getHklepofbgjd() {
-    return hklepofbgjd_;
+  public long getExpirationMs() {
+    return expirationMs_;
   }
 
-  public static final int DEPKJHHEBKB_FIELD_NUMBER = 4;
-  private long depkjhhebkb_;
+  public static final int APPLIED_MS_FIELD_NUMBER = 4;
+  private long appliedMs_;
   /**
-   * <code>int64 depkjhhebkb = 4;</code>
-   * @return The depkjhhebkb.
+   * <code>int64 applied_ms = 4;</code>
+   * @return The appliedMs.
    */
   @java.lang.Override
-  public long getDepkjhhebkb() {
-    return depkjhhebkb_;
+  public long getAppliedMs() {
+    return appliedMs_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -182,17 +182,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (ekpohjfklal_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
-      output.writeEnum(1, ekpohjfklal_);
+    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+      output.writeEnum(1, item_);
     }
-    if (afbaginffej_ != POGOProtos.Rpc.HoloItemType.HOLO_ITEM_TYPE_ITEM_TYPE_NONE.getNumber()) {
-      output.writeEnum(2, afbaginffej_);
+    if (itemType_ != POGOProtos.Rpc.HoloItemType.HOLO_ITEM_TYPE_ITEM_TYPE_NONE.getNumber()) {
+      output.writeEnum(2, itemType_);
     }
-    if (hklepofbgjd_ != 0L) {
-      output.writeInt64(3, hklepofbgjd_);
+    if (expirationMs_ != 0L) {
+      output.writeInt64(3, expirationMs_);
     }
-    if (depkjhhebkb_ != 0L) {
-      output.writeInt64(4, depkjhhebkb_);
+    if (appliedMs_ != 0L) {
+      output.writeInt64(4, appliedMs_);
     }
     unknownFields.writeTo(output);
   }
@@ -203,21 +203,21 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (ekpohjfklal_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, ekpohjfklal_);
+        .computeEnumSize(1, item_);
     }
-    if (afbaginffej_ != POGOProtos.Rpc.HoloItemType.HOLO_ITEM_TYPE_ITEM_TYPE_NONE.getNumber()) {
+    if (itemType_ != POGOProtos.Rpc.HoloItemType.HOLO_ITEM_TYPE_ITEM_TYPE_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, afbaginffej_);
+        .computeEnumSize(2, itemType_);
     }
-    if (hklepofbgjd_ != 0L) {
+    if (expirationMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(3, hklepofbgjd_);
+        .computeInt64Size(3, expirationMs_);
     }
-    if (depkjhhebkb_ != 0L) {
+    if (appliedMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(4, depkjhhebkb_);
+        .computeInt64Size(4, appliedMs_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -234,12 +234,12 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.AppliedItemProto other = (POGOProtos.Rpc.AppliedItemProto) obj;
 
-    if (ekpohjfklal_ != other.ekpohjfklal_) return false;
-    if (afbaginffej_ != other.afbaginffej_) return false;
-    if (getHklepofbgjd()
-        != other.getHklepofbgjd()) return false;
-    if (getDepkjhhebkb()
-        != other.getDepkjhhebkb()) return false;
+    if (item_ != other.item_) return false;
+    if (itemType_ != other.itemType_) return false;
+    if (getExpirationMs()
+        != other.getExpirationMs()) return false;
+    if (getAppliedMs()
+        != other.getAppliedMs()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -251,16 +251,16 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + EKPOHJFKLAL_FIELD_NUMBER;
-    hash = (53 * hash) + ekpohjfklal_;
-    hash = (37 * hash) + AFBAGINFFEJ_FIELD_NUMBER;
-    hash = (53 * hash) + afbaginffej_;
-    hash = (37 * hash) + HKLEPOFBGJD_FIELD_NUMBER;
+    hash = (37 * hash) + ITEM_FIELD_NUMBER;
+    hash = (53 * hash) + item_;
+    hash = (37 * hash) + ITEM_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + itemType_;
+    hash = (37 * hash) + EXPIRATION_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getHklepofbgjd());
-    hash = (37 * hash) + DEPKJHHEBKB_FIELD_NUMBER;
+        getExpirationMs());
+    hash = (37 * hash) + APPLIED_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getDepkjhhebkb());
+        getAppliedMs());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -398,13 +398,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      ekpohjfklal_ = 0;
+      item_ = 0;
 
-      afbaginffej_ = 0;
+      itemType_ = 0;
 
-      hklepofbgjd_ = 0L;
+      expirationMs_ = 0L;
 
-      depkjhhebkb_ = 0L;
+      appliedMs_ = 0L;
 
       return this;
     }
@@ -432,10 +432,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.AppliedItemProto buildPartial() {
       POGOProtos.Rpc.AppliedItemProto result = new POGOProtos.Rpc.AppliedItemProto(this);
-      result.ekpohjfklal_ = ekpohjfklal_;
-      result.afbaginffej_ = afbaginffej_;
-      result.hklepofbgjd_ = hklepofbgjd_;
-      result.depkjhhebkb_ = depkjhhebkb_;
+      result.item_ = item_;
+      result.itemType_ = itemType_;
+      result.expirationMs_ = expirationMs_;
+      result.appliedMs_ = appliedMs_;
       onBuilt();
       return result;
     }
@@ -484,17 +484,17 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.AppliedItemProto other) {
       if (other == POGOProtos.Rpc.AppliedItemProto.getDefaultInstance()) return this;
-      if (other.ekpohjfklal_ != 0) {
-        setEkpohjfklalValue(other.getEkpohjfklalValue());
+      if (other.item_ != 0) {
+        setItemValue(other.getItemValue());
       }
-      if (other.afbaginffej_ != 0) {
-        setAfbaginffejValue(other.getAfbaginffejValue());
+      if (other.itemType_ != 0) {
+        setItemTypeValue(other.getItemTypeValue());
       }
-      if (other.getHklepofbgjd() != 0L) {
-        setHklepofbgjd(other.getHklepofbgjd());
+      if (other.getExpirationMs() != 0L) {
+        setExpirationMs(other.getExpirationMs());
       }
-      if (other.getDepkjhhebkb() != 0L) {
-        setDepkjhhebkb(other.getDepkjhhebkb());
+      if (other.getAppliedMs() != 0L) {
+        setAppliedMs(other.getAppliedMs());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -525,172 +525,172 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int ekpohjfklal_ = 0;
+    private int item_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-     * @return The enum numeric value on the wire for ekpohjfklal.
+     * <code>.POGOProtos.Rpc.Item item = 1;</code>
+     * @return The enum numeric value on the wire for item.
      */
-    @java.lang.Override public int getEkpohjfklalValue() {
-      return ekpohjfklal_;
+    @java.lang.Override public int getItemValue() {
+      return item_;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-     * @param value The enum numeric value on the wire for ekpohjfklal to set.
+     * <code>.POGOProtos.Rpc.Item item = 1;</code>
+     * @param value The enum numeric value on the wire for item to set.
      * @return This builder for chaining.
      */
-    public Builder setEkpohjfklalValue(int value) {
+    public Builder setItemValue(int value) {
       
-      ekpohjfklal_ = value;
+      item_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-     * @return The ekpohjfklal.
+     * <code>.POGOProtos.Rpc.Item item = 1;</code>
+     * @return The item.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.Item getEkpohjfklal() {
+    public POGOProtos.Rpc.Item getItem() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(ekpohjfklal_);
+      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(item_);
       return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-     * @param value The ekpohjfklal to set.
+     * <code>.POGOProtos.Rpc.Item item = 1;</code>
+     * @param value The item to set.
      * @return This builder for chaining.
      */
-    public Builder setEkpohjfklal(POGOProtos.Rpc.Item value) {
+    public Builder setItem(POGOProtos.Rpc.Item value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      ekpohjfklal_ = value.getNumber();
+      item_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
+     * <code>.POGOProtos.Rpc.Item item = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearEkpohjfklal() {
+    public Builder clearItem() {
       
-      ekpohjfklal_ = 0;
+      item_ = 0;
       onChanged();
       return this;
     }
 
-    private int afbaginffej_ = 0;
+    private int itemType_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.HoloItemType afbaginffej = 2;</code>
-     * @return The enum numeric value on the wire for afbaginffej.
+     * <code>.POGOProtos.Rpc.HoloItemType item_type = 2;</code>
+     * @return The enum numeric value on the wire for itemType.
      */
-    @java.lang.Override public int getAfbaginffejValue() {
-      return afbaginffej_;
+    @java.lang.Override public int getItemTypeValue() {
+      return itemType_;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloItemType afbaginffej = 2;</code>
-     * @param value The enum numeric value on the wire for afbaginffej to set.
+     * <code>.POGOProtos.Rpc.HoloItemType item_type = 2;</code>
+     * @param value The enum numeric value on the wire for itemType to set.
      * @return This builder for chaining.
      */
-    public Builder setAfbaginffejValue(int value) {
+    public Builder setItemTypeValue(int value) {
       
-      afbaginffej_ = value;
+      itemType_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloItemType afbaginffej = 2;</code>
-     * @return The afbaginffej.
+     * <code>.POGOProtos.Rpc.HoloItemType item_type = 2;</code>
+     * @return The itemType.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.HoloItemType getAfbaginffej() {
+    public POGOProtos.Rpc.HoloItemType getItemType() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.HoloItemType result = POGOProtos.Rpc.HoloItemType.valueOf(afbaginffej_);
+      POGOProtos.Rpc.HoloItemType result = POGOProtos.Rpc.HoloItemType.valueOf(itemType_);
       return result == null ? POGOProtos.Rpc.HoloItemType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloItemType afbaginffej = 2;</code>
-     * @param value The afbaginffej to set.
+     * <code>.POGOProtos.Rpc.HoloItemType item_type = 2;</code>
+     * @param value The itemType to set.
      * @return This builder for chaining.
      */
-    public Builder setAfbaginffej(POGOProtos.Rpc.HoloItemType value) {
+    public Builder setItemType(POGOProtos.Rpc.HoloItemType value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      afbaginffej_ = value.getNumber();
+      itemType_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloItemType afbaginffej = 2;</code>
+     * <code>.POGOProtos.Rpc.HoloItemType item_type = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAfbaginffej() {
+    public Builder clearItemType() {
       
-      afbaginffej_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private long hklepofbgjd_ ;
-    /**
-     * <code>int64 hklepofbgjd = 3;</code>
-     * @return The hklepofbgjd.
-     */
-    @java.lang.Override
-    public long getHklepofbgjd() {
-      return hklepofbgjd_;
-    }
-    /**
-     * <code>int64 hklepofbgjd = 3;</code>
-     * @param value The hklepofbgjd to set.
-     * @return This builder for chaining.
-     */
-    public Builder setHklepofbgjd(long value) {
-      
-      hklepofbgjd_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 hklepofbgjd = 3;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearHklepofbgjd() {
-      
-      hklepofbgjd_ = 0L;
+      itemType_ = 0;
       onChanged();
       return this;
     }
 
-    private long depkjhhebkb_ ;
+    private long expirationMs_ ;
     /**
-     * <code>int64 depkjhhebkb = 4;</code>
-     * @return The depkjhhebkb.
+     * <code>int64 expiration_ms = 3;</code>
+     * @return The expirationMs.
      */
     @java.lang.Override
-    public long getDepkjhhebkb() {
-      return depkjhhebkb_;
+    public long getExpirationMs() {
+      return expirationMs_;
     }
     /**
-     * <code>int64 depkjhhebkb = 4;</code>
-     * @param value The depkjhhebkb to set.
+     * <code>int64 expiration_ms = 3;</code>
+     * @param value The expirationMs to set.
      * @return This builder for chaining.
      */
-    public Builder setDepkjhhebkb(long value) {
+    public Builder setExpirationMs(long value) {
       
-      depkjhhebkb_ = value;
+      expirationMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 depkjhhebkb = 4;</code>
+     * <code>int64 expiration_ms = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDepkjhhebkb() {
+    public Builder clearExpirationMs() {
       
-      depkjhhebkb_ = 0L;
+      expirationMs_ = 0L;
+      onChanged();
+      return this;
+    }
+
+    private long appliedMs_ ;
+    /**
+     * <code>int64 applied_ms = 4;</code>
+     * @return The appliedMs.
+     */
+    @java.lang.Override
+    public long getAppliedMs() {
+      return appliedMs_;
+    }
+    /**
+     * <code>int64 applied_ms = 4;</code>
+     * @param value The appliedMs to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAppliedMs(long value) {
+      
+      appliedMs_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int64 applied_ms = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAppliedMs() {
+      
+      appliedMs_ = 0L;
       onChanged();
       return this;
     }

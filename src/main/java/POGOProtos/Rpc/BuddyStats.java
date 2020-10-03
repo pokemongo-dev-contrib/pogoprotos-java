@@ -54,32 +54,32 @@ private static final long serialVersionUID = 0L;
             break;
           case 13: {
 
-            ofofmblglkf_ = input.readFloat();
+            kmWalked_ = input.readFloat();
             break;
           }
           case 16: {
 
-            cpnaojfjeni_ = input.readInt32();
+            berriesFed_ = input.readInt32();
             break;
           }
           case 24: {
 
-            hbifodjbjil_ = input.readInt32();
+            communication_ = input.readInt32();
             break;
           }
           case 32: {
 
-            ibokhlaeioc_ = input.readInt32();
+            battles_ = input.readInt32();
             break;
           }
           case 40: {
 
-            mjfofaedecg_ = input.readInt32();
+            photos_ = input.readInt32();
             break;
           }
           case 48: {
 
-            plnblkcoaen_ = input.readInt32();
+            newVisits_ = input.readInt32();
             break;
           }
           default: {
@@ -114,70 +114,70 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.BuddyStats.class, POGOProtos.Rpc.BuddyStats.Builder.class);
   }
 
-  public static final int OFOFMBLGLKF_FIELD_NUMBER = 1;
-  private float ofofmblglkf_;
+  public static final int KM_WALKED_FIELD_NUMBER = 1;
+  private float kmWalked_;
   /**
-   * <code>float ofofmblglkf = 1;</code>
-   * @return The ofofmblglkf.
+   * <code>float km_walked = 1;</code>
+   * @return The kmWalked.
    */
   @java.lang.Override
-  public float getOfofmblglkf() {
-    return ofofmblglkf_;
+  public float getKmWalked() {
+    return kmWalked_;
   }
 
-  public static final int CPNAOJFJENI_FIELD_NUMBER = 2;
-  private int cpnaojfjeni_;
+  public static final int BERRIES_FED_FIELD_NUMBER = 2;
+  private int berriesFed_;
   /**
-   * <code>int32 cpnaojfjeni = 2;</code>
-   * @return The cpnaojfjeni.
+   * <code>int32 berries_fed = 2;</code>
+   * @return The berriesFed.
    */
   @java.lang.Override
-  public int getCpnaojfjeni() {
-    return cpnaojfjeni_;
+  public int getBerriesFed() {
+    return berriesFed_;
   }
 
-  public static final int HBIFODJBJIL_FIELD_NUMBER = 3;
-  private int hbifodjbjil_;
+  public static final int COMMUNICATION_FIELD_NUMBER = 3;
+  private int communication_;
   /**
-   * <code>int32 hbifodjbjil = 3;</code>
-   * @return The hbifodjbjil.
+   * <code>int32 communication = 3;</code>
+   * @return The communication.
    */
   @java.lang.Override
-  public int getHbifodjbjil() {
-    return hbifodjbjil_;
+  public int getCommunication() {
+    return communication_;
   }
 
-  public static final int IBOKHLAEIOC_FIELD_NUMBER = 4;
-  private int ibokhlaeioc_;
+  public static final int BATTLES_FIELD_NUMBER = 4;
+  private int battles_;
   /**
-   * <code>int32 ibokhlaeioc = 4;</code>
-   * @return The ibokhlaeioc.
+   * <code>int32 battles = 4;</code>
+   * @return The battles.
    */
   @java.lang.Override
-  public int getIbokhlaeioc() {
-    return ibokhlaeioc_;
+  public int getBattles() {
+    return battles_;
   }
 
-  public static final int MJFOFAEDECG_FIELD_NUMBER = 5;
-  private int mjfofaedecg_;
+  public static final int PHOTOS_FIELD_NUMBER = 5;
+  private int photos_;
   /**
-   * <code>int32 mjfofaedecg = 5;</code>
-   * @return The mjfofaedecg.
+   * <code>int32 photos = 5;</code>
+   * @return The photos.
    */
   @java.lang.Override
-  public int getMjfofaedecg() {
-    return mjfofaedecg_;
+  public int getPhotos() {
+    return photos_;
   }
 
-  public static final int PLNBLKCOAEN_FIELD_NUMBER = 6;
-  private int plnblkcoaen_;
+  public static final int NEW_VISITS_FIELD_NUMBER = 6;
+  private int newVisits_;
   /**
-   * <code>int32 plnblkcoaen = 6;</code>
-   * @return The plnblkcoaen.
+   * <code>int32 new_visits = 6;</code>
+   * @return The newVisits.
    */
   @java.lang.Override
-  public int getPlnblkcoaen() {
-    return plnblkcoaen_;
+  public int getNewVisits() {
+    return newVisits_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -194,23 +194,23 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (ofofmblglkf_ != 0F) {
-      output.writeFloat(1, ofofmblglkf_);
+    if (kmWalked_ != 0F) {
+      output.writeFloat(1, kmWalked_);
     }
-    if (cpnaojfjeni_ != 0) {
-      output.writeInt32(2, cpnaojfjeni_);
+    if (berriesFed_ != 0) {
+      output.writeInt32(2, berriesFed_);
     }
-    if (hbifodjbjil_ != 0) {
-      output.writeInt32(3, hbifodjbjil_);
+    if (communication_ != 0) {
+      output.writeInt32(3, communication_);
     }
-    if (ibokhlaeioc_ != 0) {
-      output.writeInt32(4, ibokhlaeioc_);
+    if (battles_ != 0) {
+      output.writeInt32(4, battles_);
     }
-    if (mjfofaedecg_ != 0) {
-      output.writeInt32(5, mjfofaedecg_);
+    if (photos_ != 0) {
+      output.writeInt32(5, photos_);
     }
-    if (plnblkcoaen_ != 0) {
-      output.writeInt32(6, plnblkcoaen_);
+    if (newVisits_ != 0) {
+      output.writeInt32(6, newVisits_);
     }
     unknownFields.writeTo(output);
   }
@@ -221,29 +221,29 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (ofofmblglkf_ != 0F) {
+    if (kmWalked_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(1, ofofmblglkf_);
+        .computeFloatSize(1, kmWalked_);
     }
-    if (cpnaojfjeni_ != 0) {
+    if (berriesFed_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, cpnaojfjeni_);
+        .computeInt32Size(2, berriesFed_);
     }
-    if (hbifodjbjil_ != 0) {
+    if (communication_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, hbifodjbjil_);
+        .computeInt32Size(3, communication_);
     }
-    if (ibokhlaeioc_ != 0) {
+    if (battles_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(4, ibokhlaeioc_);
+        .computeInt32Size(4, battles_);
     }
-    if (mjfofaedecg_ != 0) {
+    if (photos_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(5, mjfofaedecg_);
+        .computeInt32Size(5, photos_);
     }
-    if (plnblkcoaen_ != 0) {
+    if (newVisits_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(6, plnblkcoaen_);
+        .computeInt32Size(6, newVisits_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -260,19 +260,19 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BuddyStats other = (POGOProtos.Rpc.BuddyStats) obj;
 
-    if (java.lang.Float.floatToIntBits(getOfofmblglkf())
+    if (java.lang.Float.floatToIntBits(getKmWalked())
         != java.lang.Float.floatToIntBits(
-            other.getOfofmblglkf())) return false;
-    if (getCpnaojfjeni()
-        != other.getCpnaojfjeni()) return false;
-    if (getHbifodjbjil()
-        != other.getHbifodjbjil()) return false;
-    if (getIbokhlaeioc()
-        != other.getIbokhlaeioc()) return false;
-    if (getMjfofaedecg()
-        != other.getMjfofaedecg()) return false;
-    if (getPlnblkcoaen()
-        != other.getPlnblkcoaen()) return false;
+            other.getKmWalked())) return false;
+    if (getBerriesFed()
+        != other.getBerriesFed()) return false;
+    if (getCommunication()
+        != other.getCommunication()) return false;
+    if (getBattles()
+        != other.getBattles()) return false;
+    if (getPhotos()
+        != other.getPhotos()) return false;
+    if (getNewVisits()
+        != other.getNewVisits()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -284,19 +284,19 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + OFOFMBLGLKF_FIELD_NUMBER;
+    hash = (37 * hash) + KM_WALKED_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getOfofmblglkf());
-    hash = (37 * hash) + CPNAOJFJENI_FIELD_NUMBER;
-    hash = (53 * hash) + getCpnaojfjeni();
-    hash = (37 * hash) + HBIFODJBJIL_FIELD_NUMBER;
-    hash = (53 * hash) + getHbifodjbjil();
-    hash = (37 * hash) + IBOKHLAEIOC_FIELD_NUMBER;
-    hash = (53 * hash) + getIbokhlaeioc();
-    hash = (37 * hash) + MJFOFAEDECG_FIELD_NUMBER;
-    hash = (53 * hash) + getMjfofaedecg();
-    hash = (37 * hash) + PLNBLKCOAEN_FIELD_NUMBER;
-    hash = (53 * hash) + getPlnblkcoaen();
+        getKmWalked());
+    hash = (37 * hash) + BERRIES_FED_FIELD_NUMBER;
+    hash = (53 * hash) + getBerriesFed();
+    hash = (37 * hash) + COMMUNICATION_FIELD_NUMBER;
+    hash = (53 * hash) + getCommunication();
+    hash = (37 * hash) + BATTLES_FIELD_NUMBER;
+    hash = (53 * hash) + getBattles();
+    hash = (37 * hash) + PHOTOS_FIELD_NUMBER;
+    hash = (53 * hash) + getPhotos();
+    hash = (37 * hash) + NEW_VISITS_FIELD_NUMBER;
+    hash = (53 * hash) + getNewVisits();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -434,17 +434,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      ofofmblglkf_ = 0F;
+      kmWalked_ = 0F;
 
-      cpnaojfjeni_ = 0;
+      berriesFed_ = 0;
 
-      hbifodjbjil_ = 0;
+      communication_ = 0;
 
-      ibokhlaeioc_ = 0;
+      battles_ = 0;
 
-      mjfofaedecg_ = 0;
+      photos_ = 0;
 
-      plnblkcoaen_ = 0;
+      newVisits_ = 0;
 
       return this;
     }
@@ -472,12 +472,12 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.BuddyStats buildPartial() {
       POGOProtos.Rpc.BuddyStats result = new POGOProtos.Rpc.BuddyStats(this);
-      result.ofofmblglkf_ = ofofmblglkf_;
-      result.cpnaojfjeni_ = cpnaojfjeni_;
-      result.hbifodjbjil_ = hbifodjbjil_;
-      result.ibokhlaeioc_ = ibokhlaeioc_;
-      result.mjfofaedecg_ = mjfofaedecg_;
-      result.plnblkcoaen_ = plnblkcoaen_;
+      result.kmWalked_ = kmWalked_;
+      result.berriesFed_ = berriesFed_;
+      result.communication_ = communication_;
+      result.battles_ = battles_;
+      result.photos_ = photos_;
+      result.newVisits_ = newVisits_;
       onBuilt();
       return result;
     }
@@ -526,23 +526,23 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BuddyStats other) {
       if (other == POGOProtos.Rpc.BuddyStats.getDefaultInstance()) return this;
-      if (other.getOfofmblglkf() != 0F) {
-        setOfofmblglkf(other.getOfofmblglkf());
+      if (other.getKmWalked() != 0F) {
+        setKmWalked(other.getKmWalked());
       }
-      if (other.getCpnaojfjeni() != 0) {
-        setCpnaojfjeni(other.getCpnaojfjeni());
+      if (other.getBerriesFed() != 0) {
+        setBerriesFed(other.getBerriesFed());
       }
-      if (other.getHbifodjbjil() != 0) {
-        setHbifodjbjil(other.getHbifodjbjil());
+      if (other.getCommunication() != 0) {
+        setCommunication(other.getCommunication());
       }
-      if (other.getIbokhlaeioc() != 0) {
-        setIbokhlaeioc(other.getIbokhlaeioc());
+      if (other.getBattles() != 0) {
+        setBattles(other.getBattles());
       }
-      if (other.getMjfofaedecg() != 0) {
-        setMjfofaedecg(other.getMjfofaedecg());
+      if (other.getPhotos() != 0) {
+        setPhotos(other.getPhotos());
       }
-      if (other.getPlnblkcoaen() != 0) {
-        setPlnblkcoaen(other.getPlnblkcoaen());
+      if (other.getNewVisits() != 0) {
+        setNewVisits(other.getNewVisits());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -573,188 +573,188 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private float ofofmblglkf_ ;
+    private float kmWalked_ ;
     /**
-     * <code>float ofofmblglkf = 1;</code>
-     * @return The ofofmblglkf.
+     * <code>float km_walked = 1;</code>
+     * @return The kmWalked.
      */
     @java.lang.Override
-    public float getOfofmblglkf() {
-      return ofofmblglkf_;
+    public float getKmWalked() {
+      return kmWalked_;
     }
     /**
-     * <code>float ofofmblglkf = 1;</code>
-     * @param value The ofofmblglkf to set.
+     * <code>float km_walked = 1;</code>
+     * @param value The kmWalked to set.
      * @return This builder for chaining.
      */
-    public Builder setOfofmblglkf(float value) {
+    public Builder setKmWalked(float value) {
       
-      ofofmblglkf_ = value;
+      kmWalked_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float ofofmblglkf = 1;</code>
+     * <code>float km_walked = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearOfofmblglkf() {
+    public Builder clearKmWalked() {
       
-      ofofmblglkf_ = 0F;
+      kmWalked_ = 0F;
       onChanged();
       return this;
     }
 
-    private int cpnaojfjeni_ ;
+    private int berriesFed_ ;
     /**
-     * <code>int32 cpnaojfjeni = 2;</code>
-     * @return The cpnaojfjeni.
+     * <code>int32 berries_fed = 2;</code>
+     * @return The berriesFed.
      */
     @java.lang.Override
-    public int getCpnaojfjeni() {
-      return cpnaojfjeni_;
+    public int getBerriesFed() {
+      return berriesFed_;
     }
     /**
-     * <code>int32 cpnaojfjeni = 2;</code>
-     * @param value The cpnaojfjeni to set.
+     * <code>int32 berries_fed = 2;</code>
+     * @param value The berriesFed to set.
      * @return This builder for chaining.
      */
-    public Builder setCpnaojfjeni(int value) {
+    public Builder setBerriesFed(int value) {
       
-      cpnaojfjeni_ = value;
+      berriesFed_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 cpnaojfjeni = 2;</code>
+     * <code>int32 berries_fed = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearCpnaojfjeni() {
+    public Builder clearBerriesFed() {
       
-      cpnaojfjeni_ = 0;
+      berriesFed_ = 0;
       onChanged();
       return this;
     }
 
-    private int hbifodjbjil_ ;
+    private int communication_ ;
     /**
-     * <code>int32 hbifodjbjil = 3;</code>
-     * @return The hbifodjbjil.
+     * <code>int32 communication = 3;</code>
+     * @return The communication.
      */
     @java.lang.Override
-    public int getHbifodjbjil() {
-      return hbifodjbjil_;
+    public int getCommunication() {
+      return communication_;
     }
     /**
-     * <code>int32 hbifodjbjil = 3;</code>
-     * @param value The hbifodjbjil to set.
+     * <code>int32 communication = 3;</code>
+     * @param value The communication to set.
      * @return This builder for chaining.
      */
-    public Builder setHbifodjbjil(int value) {
+    public Builder setCommunication(int value) {
       
-      hbifodjbjil_ = value;
+      communication_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 hbifodjbjil = 3;</code>
+     * <code>int32 communication = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearHbifodjbjil() {
+    public Builder clearCommunication() {
       
-      hbifodjbjil_ = 0;
+      communication_ = 0;
       onChanged();
       return this;
     }
 
-    private int ibokhlaeioc_ ;
+    private int battles_ ;
     /**
-     * <code>int32 ibokhlaeioc = 4;</code>
-     * @return The ibokhlaeioc.
+     * <code>int32 battles = 4;</code>
+     * @return The battles.
      */
     @java.lang.Override
-    public int getIbokhlaeioc() {
-      return ibokhlaeioc_;
+    public int getBattles() {
+      return battles_;
     }
     /**
-     * <code>int32 ibokhlaeioc = 4;</code>
-     * @param value The ibokhlaeioc to set.
+     * <code>int32 battles = 4;</code>
+     * @param value The battles to set.
      * @return This builder for chaining.
      */
-    public Builder setIbokhlaeioc(int value) {
+    public Builder setBattles(int value) {
       
-      ibokhlaeioc_ = value;
+      battles_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 ibokhlaeioc = 4;</code>
+     * <code>int32 battles = 4;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIbokhlaeioc() {
+    public Builder clearBattles() {
       
-      ibokhlaeioc_ = 0;
+      battles_ = 0;
       onChanged();
       return this;
     }
 
-    private int mjfofaedecg_ ;
+    private int photos_ ;
     /**
-     * <code>int32 mjfofaedecg = 5;</code>
-     * @return The mjfofaedecg.
+     * <code>int32 photos = 5;</code>
+     * @return The photos.
      */
     @java.lang.Override
-    public int getMjfofaedecg() {
-      return mjfofaedecg_;
+    public int getPhotos() {
+      return photos_;
     }
     /**
-     * <code>int32 mjfofaedecg = 5;</code>
-     * @param value The mjfofaedecg to set.
+     * <code>int32 photos = 5;</code>
+     * @param value The photos to set.
      * @return This builder for chaining.
      */
-    public Builder setMjfofaedecg(int value) {
+    public Builder setPhotos(int value) {
       
-      mjfofaedecg_ = value;
+      photos_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 mjfofaedecg = 5;</code>
+     * <code>int32 photos = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearMjfofaedecg() {
+    public Builder clearPhotos() {
       
-      mjfofaedecg_ = 0;
+      photos_ = 0;
       onChanged();
       return this;
     }
 
-    private int plnblkcoaen_ ;
+    private int newVisits_ ;
     /**
-     * <code>int32 plnblkcoaen = 6;</code>
-     * @return The plnblkcoaen.
+     * <code>int32 new_visits = 6;</code>
+     * @return The newVisits.
      */
     @java.lang.Override
-    public int getPlnblkcoaen() {
-      return plnblkcoaen_;
+    public int getNewVisits() {
+      return newVisits_;
     }
     /**
-     * <code>int32 plnblkcoaen = 6;</code>
-     * @param value The plnblkcoaen to set.
+     * <code>int32 new_visits = 6;</code>
+     * @param value The newVisits to set.
      * @return This builder for chaining.
      */
-    public Builder setPlnblkcoaen(int value) {
+    public Builder setNewVisits(int value) {
       
-      plnblkcoaen_ = value;
+      newVisits_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 plnblkcoaen = 6;</code>
+     * <code>int32 new_visits = 6;</code>
      * @return This builder for chaining.
      */
-    public Builder clearPlnblkcoaen() {
+    public Builder clearNewVisits() {
       
-      plnblkcoaen_ = 0;
+      newVisits_ = 0;
       onChanged();
       return this;
     }

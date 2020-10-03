@@ -74,11 +74,11 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              okdclnadodk_ = new java.util.ArrayList<POGOProtos.Rpc.GGDLKHNFFFL>();
+              okdclnadodk_ = new java.util.ArrayList<POGOProtos.Rpc.QuestDialogProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             okdclnadodk_.add(
-                input.readMessage(POGOProtos.Rpc.GGDLKHNFFFL.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.QuestDialogProto.parser(), extensionRegistry));
             break;
           }
           case 26: {
@@ -242,41 +242,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int OKDCLNADODK_FIELD_NUMBER = 2;
-  private java.util.List<POGOProtos.Rpc.GGDLKHNFFFL> okdclnadodk_;
+  private java.util.List<POGOProtos.Rpc.QuestDialogProto> okdclnadodk_;
   /**
-   * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.GGDLKHNFFFL> getOkdclnadodkList() {
+  public java.util.List<POGOProtos.Rpc.QuestDialogProto> getOkdclnadodkList() {
     return okdclnadodk_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.GGDLKHNFFFLOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.QuestDialogProtoOrBuilder> 
       getOkdclnadodkOrBuilderList() {
     return okdclnadodk_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
    */
   @java.lang.Override
   public int getOkdclnadodkCount() {
     return okdclnadodk_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GGDLKHNFFFL getOkdclnadodk(int index) {
+  public POGOProtos.Rpc.QuestDialogProto getOkdclnadodk(int index) {
     return okdclnadodk_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GGDLKHNFFFLOrBuilder getOkdclnadodkOrBuilder(
+  public POGOProtos.Rpc.QuestDialogProtoOrBuilder getOkdclnadodkOrBuilder(
       int index) {
     return okdclnadodk_.get(index);
   }
@@ -1450,22 +1450,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.GGDLKHNFFFL> okdclnadodk_ =
+    private java.util.List<POGOProtos.Rpc.QuestDialogProto> okdclnadodk_ =
       java.util.Collections.emptyList();
     private void ensureOkdclnadodkIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        okdclnadodk_ = new java.util.ArrayList<POGOProtos.Rpc.GGDLKHNFFFL>(okdclnadodk_);
+        okdclnadodk_ = new java.util.ArrayList<POGOProtos.Rpc.QuestDialogProto>(okdclnadodk_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.GGDLKHNFFFL, POGOProtos.Rpc.GGDLKHNFFFL.Builder, POGOProtos.Rpc.GGDLKHNFFFLOrBuilder> okdclnadodkBuilder_;
+        POGOProtos.Rpc.QuestDialogProto, POGOProtos.Rpc.QuestDialogProto.Builder, POGOProtos.Rpc.QuestDialogProtoOrBuilder> okdclnadodkBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.GGDLKHNFFFL> getOkdclnadodkList() {
+    public java.util.List<POGOProtos.Rpc.QuestDialogProto> getOkdclnadodkList() {
       if (okdclnadodkBuilder_ == null) {
         return java.util.Collections.unmodifiableList(okdclnadodk_);
       } else {
@@ -1473,7 +1473,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
     public int getOkdclnadodkCount() {
       if (okdclnadodkBuilder_ == null) {
@@ -1483,9 +1483,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
-    public POGOProtos.Rpc.GGDLKHNFFFL getOkdclnadodk(int index) {
+    public POGOProtos.Rpc.QuestDialogProto getOkdclnadodk(int index) {
       if (okdclnadodkBuilder_ == null) {
         return okdclnadodk_.get(index);
       } else {
@@ -1493,10 +1493,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
     public Builder setOkdclnadodk(
-        int index, POGOProtos.Rpc.GGDLKHNFFFL value) {
+        int index, POGOProtos.Rpc.QuestDialogProto value) {
       if (okdclnadodkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1510,10 +1510,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
     public Builder setOkdclnadodk(
-        int index, POGOProtos.Rpc.GGDLKHNFFFL.Builder builderForValue) {
+        int index, POGOProtos.Rpc.QuestDialogProto.Builder builderForValue) {
       if (okdclnadodkBuilder_ == null) {
         ensureOkdclnadodkIsMutable();
         okdclnadodk_.set(index, builderForValue.build());
@@ -1524,9 +1524,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
-    public Builder addOkdclnadodk(POGOProtos.Rpc.GGDLKHNFFFL value) {
+    public Builder addOkdclnadodk(POGOProtos.Rpc.QuestDialogProto value) {
       if (okdclnadodkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1540,10 +1540,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
     public Builder addOkdclnadodk(
-        int index, POGOProtos.Rpc.GGDLKHNFFFL value) {
+        int index, POGOProtos.Rpc.QuestDialogProto value) {
       if (okdclnadodkBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1557,10 +1557,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
     public Builder addOkdclnadodk(
-        POGOProtos.Rpc.GGDLKHNFFFL.Builder builderForValue) {
+        POGOProtos.Rpc.QuestDialogProto.Builder builderForValue) {
       if (okdclnadodkBuilder_ == null) {
         ensureOkdclnadodkIsMutable();
         okdclnadodk_.add(builderForValue.build());
@@ -1571,10 +1571,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
     public Builder addOkdclnadodk(
-        int index, POGOProtos.Rpc.GGDLKHNFFFL.Builder builderForValue) {
+        int index, POGOProtos.Rpc.QuestDialogProto.Builder builderForValue) {
       if (okdclnadodkBuilder_ == null) {
         ensureOkdclnadodkIsMutable();
         okdclnadodk_.add(index, builderForValue.build());
@@ -1585,10 +1585,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
     public Builder addAllOkdclnadodk(
-        java.lang.Iterable<? extends POGOProtos.Rpc.GGDLKHNFFFL> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.QuestDialogProto> values) {
       if (okdclnadodkBuilder_ == null) {
         ensureOkdclnadodkIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1600,7 +1600,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
     public Builder clearOkdclnadodk() {
       if (okdclnadodkBuilder_ == null) {
@@ -1613,7 +1613,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
     public Builder removeOkdclnadodk(int index) {
       if (okdclnadodkBuilder_ == null) {
@@ -1626,16 +1626,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
-    public POGOProtos.Rpc.GGDLKHNFFFL.Builder getOkdclnadodkBuilder(
+    public POGOProtos.Rpc.QuestDialogProto.Builder getOkdclnadodkBuilder(
         int index) {
       return getOkdclnadodkFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
-    public POGOProtos.Rpc.GGDLKHNFFFLOrBuilder getOkdclnadodkOrBuilder(
+    public POGOProtos.Rpc.QuestDialogProtoOrBuilder getOkdclnadodkOrBuilder(
         int index) {
       if (okdclnadodkBuilder_ == null) {
         return okdclnadodk_.get(index);  } else {
@@ -1643,9 +1643,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.GGDLKHNFFFLOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.QuestDialogProtoOrBuilder> 
          getOkdclnadodkOrBuilderList() {
       if (okdclnadodkBuilder_ != null) {
         return okdclnadodkBuilder_.getMessageOrBuilderList();
@@ -1654,33 +1654,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
-    public POGOProtos.Rpc.GGDLKHNFFFL.Builder addOkdclnadodkBuilder() {
+    public POGOProtos.Rpc.QuestDialogProto.Builder addOkdclnadodkBuilder() {
       return getOkdclnadodkFieldBuilder().addBuilder(
-          POGOProtos.Rpc.GGDLKHNFFFL.getDefaultInstance());
+          POGOProtos.Rpc.QuestDialogProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
-    public POGOProtos.Rpc.GGDLKHNFFFL.Builder addOkdclnadodkBuilder(
+    public POGOProtos.Rpc.QuestDialogProto.Builder addOkdclnadodkBuilder(
         int index) {
       return getOkdclnadodkFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.GGDLKHNFFFL.getDefaultInstance());
+          index, POGOProtos.Rpc.QuestDialogProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.GGDLKHNFFFL.Builder> 
+    public java.util.List<POGOProtos.Rpc.QuestDialogProto.Builder> 
          getOkdclnadodkBuilderList() {
       return getOkdclnadodkFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.GGDLKHNFFFL, POGOProtos.Rpc.GGDLKHNFFFL.Builder, POGOProtos.Rpc.GGDLKHNFFFLOrBuilder> 
+        POGOProtos.Rpc.QuestDialogProto, POGOProtos.Rpc.QuestDialogProto.Builder, POGOProtos.Rpc.QuestDialogProtoOrBuilder> 
         getOkdclnadodkFieldBuilder() {
       if (okdclnadodkBuilder_ == null) {
         okdclnadodkBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.GGDLKHNFFFL, POGOProtos.Rpc.GGDLKHNFFFL.Builder, POGOProtos.Rpc.GGDLKHNFFFLOrBuilder>(
+            POGOProtos.Rpc.QuestDialogProto, POGOProtos.Rpc.QuestDialogProto.Builder, POGOProtos.Rpc.QuestDialogProtoOrBuilder>(
                 okdclnadodk_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

@@ -14,27 +14,27 @@ public interface RemoveLoginActionOutProtoOrBuilder extends
   boolean getSuccess();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.LoginDetail> 
+  java.util.List<POGOProtos.Rpc.PlatformLoginDetail> 
       getLoginDetailList();
   /**
-   * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
    */
-  POGOProtos.Rpc.LoginDetail getLoginDetail(int index);
+  POGOProtos.Rpc.PlatformLoginDetail getLoginDetail(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
    */
   int getLoginDetailCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.LoginDetailOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.PlatformLoginDetailOrBuilder> 
       getLoginDetailOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
    */
-  POGOProtos.Rpc.LoginDetailOrBuilder getLoginDetailOrBuilder(
+  POGOProtos.Rpc.PlatformLoginDetailOrBuilder getLoginDetailOrBuilder(
       int index);
 
   /**

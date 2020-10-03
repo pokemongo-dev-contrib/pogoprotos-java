@@ -7,7 +7,7 @@ import org.junit.*;
 import java.io.*;
 
 public class AssetsDigestDecodeTest {
-	//0.187.1 binary
+	//0.187.2 binary
 	@Test
 	public void TestAssetsDigestDecode() throws Exception {
 		try (InputStream is = getClass().getResourceAsStream("/ASSET_DIGEST"))

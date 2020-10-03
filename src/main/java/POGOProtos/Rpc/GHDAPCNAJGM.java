@@ -60,11 +60,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.PFGPOIKPJFF.Builder subBuilder = null;
+            POGOProtos.Rpc.QuestGoalProto.Builder subBuilder = null;
             if (ogphejplgea_ != null) {
               subBuilder = ogphejplgea_.toBuilder();
             }
-            ogphejplgea_ = input.readMessage(POGOProtos.Rpc.PFGPOIKPJFF.parser(), extensionRegistry);
+            ogphejplgea_ = input.readMessage(POGOProtos.Rpc.QuestGoalProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(ogphejplgea_);
               ogphejplgea_ = subBuilder.buildPartial();
@@ -124,9 +124,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int OGPHEJPLGEA_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea_;
+  private POGOProtos.Rpc.QuestGoalProto ogphejplgea_;
   /**
-   * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
    * @return Whether the ogphejplgea field is set.
    */
   @java.lang.Override
@@ -134,18 +134,18 @@ private static final long serialVersionUID = 0L;
     return ogphejplgea_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
    * @return The ogphejplgea.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PFGPOIKPJFF getOgphejplgea() {
-    return ogphejplgea_ == null ? POGOProtos.Rpc.PFGPOIKPJFF.getDefaultInstance() : ogphejplgea_;
+  public POGOProtos.Rpc.QuestGoalProto getOgphejplgea() {
+    return ogphejplgea_ == null ? POGOProtos.Rpc.QuestGoalProto.getDefaultInstance() : ogphejplgea_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PFGPOIKPJFFOrBuilder getOgphejplgeaOrBuilder() {
+  public POGOProtos.Rpc.QuestGoalProtoOrBuilder getOgphejplgeaOrBuilder() {
     return getOgphejplgea();
   }
 
@@ -538,31 +538,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea_;
+    private POGOProtos.Rpc.QuestGoalProto ogphejplgea_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PFGPOIKPJFF, POGOProtos.Rpc.PFGPOIKPJFF.Builder, POGOProtos.Rpc.PFGPOIKPJFFOrBuilder> ogphejplgeaBuilder_;
+        POGOProtos.Rpc.QuestGoalProto, POGOProtos.Rpc.QuestGoalProto.Builder, POGOProtos.Rpc.QuestGoalProtoOrBuilder> ogphejplgeaBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
      * @return Whether the ogphejplgea field is set.
      */
     public boolean hasOgphejplgea() {
       return ogphejplgeaBuilder_ != null || ogphejplgea_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
      * @return The ogphejplgea.
      */
-    public POGOProtos.Rpc.PFGPOIKPJFF getOgphejplgea() {
+    public POGOProtos.Rpc.QuestGoalProto getOgphejplgea() {
       if (ogphejplgeaBuilder_ == null) {
-        return ogphejplgea_ == null ? POGOProtos.Rpc.PFGPOIKPJFF.getDefaultInstance() : ogphejplgea_;
+        return ogphejplgea_ == null ? POGOProtos.Rpc.QuestGoalProto.getDefaultInstance() : ogphejplgea_;
       } else {
         return ogphejplgeaBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
      */
-    public Builder setOgphejplgea(POGOProtos.Rpc.PFGPOIKPJFF value) {
+    public Builder setOgphejplgea(POGOProtos.Rpc.QuestGoalProto value) {
       if (ogphejplgeaBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -576,10 +576,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
      */
     public Builder setOgphejplgea(
-        POGOProtos.Rpc.PFGPOIKPJFF.Builder builderForValue) {
+        POGOProtos.Rpc.QuestGoalProto.Builder builderForValue) {
       if (ogphejplgeaBuilder_ == null) {
         ogphejplgea_ = builderForValue.build();
         onChanged();
@@ -590,13 +590,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
      */
-    public Builder mergeOgphejplgea(POGOProtos.Rpc.PFGPOIKPJFF value) {
+    public Builder mergeOgphejplgea(POGOProtos.Rpc.QuestGoalProto value) {
       if (ogphejplgeaBuilder_ == null) {
         if (ogphejplgea_ != null) {
           ogphejplgea_ =
-            POGOProtos.Rpc.PFGPOIKPJFF.newBuilder(ogphejplgea_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.QuestGoalProto.newBuilder(ogphejplgea_).mergeFrom(value).buildPartial();
         } else {
           ogphejplgea_ = value;
         }
@@ -608,7 +608,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
      */
     public Builder clearOgphejplgea() {
       if (ogphejplgeaBuilder_ == null) {
@@ -622,33 +622,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
      */
-    public POGOProtos.Rpc.PFGPOIKPJFF.Builder getOgphejplgeaBuilder() {
+    public POGOProtos.Rpc.QuestGoalProto.Builder getOgphejplgeaBuilder() {
       
       onChanged();
       return getOgphejplgeaFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
      */
-    public POGOProtos.Rpc.PFGPOIKPJFFOrBuilder getOgphejplgeaOrBuilder() {
+    public POGOProtos.Rpc.QuestGoalProtoOrBuilder getOgphejplgeaOrBuilder() {
       if (ogphejplgeaBuilder_ != null) {
         return ogphejplgeaBuilder_.getMessageOrBuilder();
       } else {
         return ogphejplgea_ == null ?
-            POGOProtos.Rpc.PFGPOIKPJFF.getDefaultInstance() : ogphejplgea_;
+            POGOProtos.Rpc.QuestGoalProto.getDefaultInstance() : ogphejplgea_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PFGPOIKPJFF, POGOProtos.Rpc.PFGPOIKPJFF.Builder, POGOProtos.Rpc.PFGPOIKPJFFOrBuilder> 
+        POGOProtos.Rpc.QuestGoalProto, POGOProtos.Rpc.QuestGoalProto.Builder, POGOProtos.Rpc.QuestGoalProtoOrBuilder> 
         getOgphejplgeaFieldBuilder() {
       if (ogphejplgeaBuilder_ == null) {
         ogphejplgeaBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PFGPOIKPJFF, POGOProtos.Rpc.PFGPOIKPJFF.Builder, POGOProtos.Rpc.PFGPOIKPJFFOrBuilder>(
+            POGOProtos.Rpc.QuestGoalProto, POGOProtos.Rpc.QuestGoalProto.Builder, POGOProtos.Rpc.QuestGoalProtoOrBuilder>(
                 getOgphejplgea(),
                 getParentForChildren(),
                 isClean());

@@ -60,11 +60,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.BackgroundToken.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformBackgroundToken.Builder subBuilder = null;
             if (token_ != null) {
               subBuilder = token_.toBuilder();
             }
-            token_ = input.readMessage(POGOProtos.Rpc.BackgroundToken.parser(), extensionRegistry);
+            token_ = input.readMessage(POGOProtos.Rpc.PlatformBackgroundToken.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(token_);
               token_ = subBuilder.buildPartial();
@@ -245,9 +245,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int TOKEN_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.BackgroundToken token_;
+  private POGOProtos.Rpc.PlatformBackgroundToken token_;
   /**
-   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
    * @return Whether the token field is set.
    */
   @java.lang.Override
@@ -255,18 +255,18 @@ private static final long serialVersionUID = 0L;
     return token_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
    * @return The token.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BackgroundToken getToken() {
-    return token_ == null ? POGOProtos.Rpc.BackgroundToken.getDefaultInstance() : token_;
+  public POGOProtos.Rpc.PlatformBackgroundToken getToken() {
+    return token_ == null ? POGOProtos.Rpc.PlatformBackgroundToken.getDefaultInstance() : token_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BackgroundTokenOrBuilder getTokenOrBuilder() {
+  public POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder getTokenOrBuilder() {
     return getToken();
   }
 
@@ -659,31 +659,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.BackgroundToken token_;
+    private POGOProtos.Rpc.PlatformBackgroundToken token_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BackgroundToken, POGOProtos.Rpc.BackgroundToken.Builder, POGOProtos.Rpc.BackgroundTokenOrBuilder> tokenBuilder_;
+        POGOProtos.Rpc.PlatformBackgroundToken, POGOProtos.Rpc.PlatformBackgroundToken.Builder, POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder> tokenBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
      * @return Whether the token field is set.
      */
     public boolean hasToken() {
       return tokenBuilder_ != null || token_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
      * @return The token.
      */
-    public POGOProtos.Rpc.BackgroundToken getToken() {
+    public POGOProtos.Rpc.PlatformBackgroundToken getToken() {
       if (tokenBuilder_ == null) {
-        return token_ == null ? POGOProtos.Rpc.BackgroundToken.getDefaultInstance() : token_;
+        return token_ == null ? POGOProtos.Rpc.PlatformBackgroundToken.getDefaultInstance() : token_;
       } else {
         return tokenBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
      */
-    public Builder setToken(POGOProtos.Rpc.BackgroundToken value) {
+    public Builder setToken(POGOProtos.Rpc.PlatformBackgroundToken value) {
       if (tokenBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -697,10 +697,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
      */
     public Builder setToken(
-        POGOProtos.Rpc.BackgroundToken.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformBackgroundToken.Builder builderForValue) {
       if (tokenBuilder_ == null) {
         token_ = builderForValue.build();
         onChanged();
@@ -711,13 +711,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
      */
-    public Builder mergeToken(POGOProtos.Rpc.BackgroundToken value) {
+    public Builder mergeToken(POGOProtos.Rpc.PlatformBackgroundToken value) {
       if (tokenBuilder_ == null) {
         if (token_ != null) {
           token_ =
-            POGOProtos.Rpc.BackgroundToken.newBuilder(token_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformBackgroundToken.newBuilder(token_).mergeFrom(value).buildPartial();
         } else {
           token_ = value;
         }
@@ -729,7 +729,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
      */
     public Builder clearToken() {
       if (tokenBuilder_ == null) {
@@ -743,33 +743,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
      */
-    public POGOProtos.Rpc.BackgroundToken.Builder getTokenBuilder() {
+    public POGOProtos.Rpc.PlatformBackgroundToken.Builder getTokenBuilder() {
       
       onChanged();
       return getTokenFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
      */
-    public POGOProtos.Rpc.BackgroundTokenOrBuilder getTokenOrBuilder() {
+    public POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder getTokenOrBuilder() {
       if (tokenBuilder_ != null) {
         return tokenBuilder_.getMessageOrBuilder();
       } else {
         return token_ == null ?
-            POGOProtos.Rpc.BackgroundToken.getDefaultInstance() : token_;
+            POGOProtos.Rpc.PlatformBackgroundToken.getDefaultInstance() : token_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BackgroundToken token = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformBackgroundToken token = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BackgroundToken, POGOProtos.Rpc.BackgroundToken.Builder, POGOProtos.Rpc.BackgroundTokenOrBuilder> 
+        POGOProtos.Rpc.PlatformBackgroundToken, POGOProtos.Rpc.PlatformBackgroundToken.Builder, POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder> 
         getTokenFieldBuilder() {
       if (tokenBuilder_ == null) {
         tokenBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.BackgroundToken, POGOProtos.Rpc.BackgroundToken.Builder, POGOProtos.Rpc.BackgroundTokenOrBuilder>(
+            POGOProtos.Rpc.PlatformBackgroundToken, POGOProtos.Rpc.PlatformBackgroundToken.Builder, POGOProtos.Rpc.PlatformBackgroundTokenOrBuilder>(
                 getToken(),
                 getParentForChildren(),
                 isClean());

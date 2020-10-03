@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private BootTime() {
-    bpebfhonkmg_ = 0;
+    bootPhase_ = 0;
   }
 
   @java.lang.Override
@@ -55,13 +55,13 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             POGOProtos.Rpc.PlatformMetricData.Builder subBuilder = null;
-            if (ephppddioph_ != null) {
-              subBuilder = ephppddioph_.toBuilder();
+            if (duration_ != null) {
+              subBuilder = duration_.toBuilder();
             }
-            ephppddioph_ = input.readMessage(POGOProtos.Rpc.PlatformMetricData.parser(), extensionRegistry);
+            duration_ = input.readMessage(POGOProtos.Rpc.PlatformMetricData.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(ephppddioph_);
-              ephppddioph_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(duration_);
+              duration_ = subBuilder.buildPartial();
             }
 
             break;
@@ -69,7 +69,7 @@ private static final long serialVersionUID = 0L;
           case 16: {
             int rawValue = input.readEnum();
 
-            bpebfhonkmg_ = rawValue;
+            bootPhase_ = rawValue;
             break;
           }
           default: {
@@ -109,9 +109,9 @@ private static final long serialVersionUID = 0L;
    * ref: KGDMAGOFKCE/FHPOAMLOAJG/CLIIACAJEIG
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.BootTime.CLIIACAJEIG}
+   * Protobuf enum {@code POGOProtos.Rpc.BootTime.BootPhase}
    */
-  public enum CLIIACAJEIG
+  public enum BootPhase
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNDEFINED = 0;</code>
@@ -276,7 +276,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static CLIIACAJEIG valueOf(int value) {
+    public static BootPhase valueOf(int value) {
       return forNumber(value);
     }
 
@@ -284,7 +284,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static CLIIACAJEIG forNumber(int value) {
+    public static BootPhase forNumber(int value) {
       switch (value) {
         case 0: return UNDEFINED;
         case 1: return TIME_TO_MAP;
@@ -308,15 +308,15 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<CLIIACAJEIG>
+    public static com.google.protobuf.Internal.EnumLiteMap<BootPhase>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        CLIIACAJEIG> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<CLIIACAJEIG>() {
-            public CLIIACAJEIG findValueByNumber(int number) {
-              return CLIIACAJEIG.forNumber(number);
+        BootPhase> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<BootPhase>() {
+            public BootPhase findValueByNumber(int number) {
+              return BootPhase.forNumber(number);
             }
           };
 
@@ -337,9 +337,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.BootTime.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final CLIIACAJEIG[] VALUES = values();
+    private static final BootPhase[] VALUES = values();
 
-    public static CLIIACAJEIG valueOf(
+    public static BootPhase valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -353,56 +353,56 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private CLIIACAJEIG(int value) {
+    private BootPhase(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.BootTime.CLIIACAJEIG)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.BootTime.BootPhase)
   }
 
-  public static final int EPHPPDDIOPH_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.PlatformMetricData ephppddioph_;
+  public static final int DURATION_FIELD_NUMBER = 1;
+  private POGOProtos.Rpc.PlatformMetricData duration_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
-   * @return Whether the ephppddioph field is set.
+   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+   * @return Whether the duration field is set.
    */
   @java.lang.Override
-  public boolean hasEphppddioph() {
-    return ephppddioph_ != null;
+  public boolean hasDuration() {
+    return duration_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
-   * @return The ephppddioph.
+   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+   * @return The duration.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformMetricData getEphppddioph() {
-    return ephppddioph_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : ephppddioph_;
+  public POGOProtos.Rpc.PlatformMetricData getDuration() {
+    return duration_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : duration_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformMetricDataOrBuilder getEphppddiophOrBuilder() {
-    return getEphppddioph();
+  public POGOProtos.Rpc.PlatformMetricDataOrBuilder getDurationOrBuilder() {
+    return getDuration();
   }
 
-  public static final int BPEBFHONKMG_FIELD_NUMBER = 2;
-  private int bpebfhonkmg_;
+  public static final int BOOT_PHASE_FIELD_NUMBER = 2;
+  private int bootPhase_;
   /**
-   * <code>.POGOProtos.Rpc.BootTime.CLIIACAJEIG bpebfhonkmg = 2;</code>
-   * @return The enum numeric value on the wire for bpebfhonkmg.
+   * <code>.POGOProtos.Rpc.BootTime.BootPhase boot_phase = 2;</code>
+   * @return The enum numeric value on the wire for bootPhase.
    */
-  @java.lang.Override public int getBpebfhonkmgValue() {
-    return bpebfhonkmg_;
+  @java.lang.Override public int getBootPhaseValue() {
+    return bootPhase_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BootTime.CLIIACAJEIG bpebfhonkmg = 2;</code>
-   * @return The bpebfhonkmg.
+   * <code>.POGOProtos.Rpc.BootTime.BootPhase boot_phase = 2;</code>
+   * @return The bootPhase.
    */
-  @java.lang.Override public POGOProtos.Rpc.BootTime.CLIIACAJEIG getBpebfhonkmg() {
+  @java.lang.Override public POGOProtos.Rpc.BootTime.BootPhase getBootPhase() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.BootTime.CLIIACAJEIG result = POGOProtos.Rpc.BootTime.CLIIACAJEIG.valueOf(bpebfhonkmg_);
-    return result == null ? POGOProtos.Rpc.BootTime.CLIIACAJEIG.UNRECOGNIZED : result;
+    POGOProtos.Rpc.BootTime.BootPhase result = POGOProtos.Rpc.BootTime.BootPhase.valueOf(bootPhase_);
+    return result == null ? POGOProtos.Rpc.BootTime.BootPhase.UNRECOGNIZED : result;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -419,11 +419,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (ephppddioph_ != null) {
-      output.writeMessage(1, getEphppddioph());
+    if (duration_ != null) {
+      output.writeMessage(1, getDuration());
     }
-    if (bpebfhonkmg_ != POGOProtos.Rpc.BootTime.CLIIACAJEIG.UNDEFINED.getNumber()) {
-      output.writeEnum(2, bpebfhonkmg_);
+    if (bootPhase_ != POGOProtos.Rpc.BootTime.BootPhase.UNDEFINED.getNumber()) {
+      output.writeEnum(2, bootPhase_);
     }
     unknownFields.writeTo(output);
   }
@@ -434,13 +434,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (ephppddioph_ != null) {
+    if (duration_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getEphppddioph());
+        .computeMessageSize(1, getDuration());
     }
-    if (bpebfhonkmg_ != POGOProtos.Rpc.BootTime.CLIIACAJEIG.UNDEFINED.getNumber()) {
+    if (bootPhase_ != POGOProtos.Rpc.BootTime.BootPhase.UNDEFINED.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, bpebfhonkmg_);
+        .computeEnumSize(2, bootPhase_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -457,12 +457,12 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BootTime other = (POGOProtos.Rpc.BootTime) obj;
 
-    if (hasEphppddioph() != other.hasEphppddioph()) return false;
-    if (hasEphppddioph()) {
-      if (!getEphppddioph()
-          .equals(other.getEphppddioph())) return false;
+    if (hasDuration() != other.hasDuration()) return false;
+    if (hasDuration()) {
+      if (!getDuration()
+          .equals(other.getDuration())) return false;
     }
-    if (bpebfhonkmg_ != other.bpebfhonkmg_) return false;
+    if (bootPhase_ != other.bootPhase_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -474,12 +474,12 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasEphppddioph()) {
-      hash = (37 * hash) + EPHPPDDIOPH_FIELD_NUMBER;
-      hash = (53 * hash) + getEphppddioph().hashCode();
+    if (hasDuration()) {
+      hash = (37 * hash) + DURATION_FIELD_NUMBER;
+      hash = (53 * hash) + getDuration().hashCode();
     }
-    hash = (37 * hash) + BPEBFHONKMG_FIELD_NUMBER;
-    hash = (53 * hash) + bpebfhonkmg_;
+    hash = (37 * hash) + BOOT_PHASE_FIELD_NUMBER;
+    hash = (53 * hash) + bootPhase_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -617,13 +617,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (ephppddiophBuilder_ == null) {
-        ephppddioph_ = null;
+      if (durationBuilder_ == null) {
+        duration_ = null;
       } else {
-        ephppddioph_ = null;
-        ephppddiophBuilder_ = null;
+        duration_ = null;
+        durationBuilder_ = null;
       }
-      bpebfhonkmg_ = 0;
+      bootPhase_ = 0;
 
       return this;
     }
@@ -651,12 +651,12 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.BootTime buildPartial() {
       POGOProtos.Rpc.BootTime result = new POGOProtos.Rpc.BootTime(this);
-      if (ephppddiophBuilder_ == null) {
-        result.ephppddioph_ = ephppddioph_;
+      if (durationBuilder_ == null) {
+        result.duration_ = duration_;
       } else {
-        result.ephppddioph_ = ephppddiophBuilder_.build();
+        result.duration_ = durationBuilder_.build();
       }
-      result.bpebfhonkmg_ = bpebfhonkmg_;
+      result.bootPhase_ = bootPhase_;
       onBuilt();
       return result;
     }
@@ -705,11 +705,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BootTime other) {
       if (other == POGOProtos.Rpc.BootTime.getDefaultInstance()) return this;
-      if (other.hasEphppddioph()) {
-        mergeEphppddioph(other.getEphppddioph());
+      if (other.hasDuration()) {
+        mergeDuration(other.getDuration());
       }
-      if (other.bpebfhonkmg_ != 0) {
-        setBpebfhonkmgValue(other.getBpebfhonkmgValue());
+      if (other.bootPhase_ != 0) {
+        setBootPhaseValue(other.getBootPhaseValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -740,175 +740,175 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.PlatformMetricData ephppddioph_;
+    private POGOProtos.Rpc.PlatformMetricData duration_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> ephppddiophBuilder_;
+        POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> durationBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
-     * @return Whether the ephppddioph field is set.
+     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * @return Whether the duration field is set.
      */
-    public boolean hasEphppddioph() {
-      return ephppddiophBuilder_ != null || ephppddioph_ != null;
+    public boolean hasDuration() {
+      return durationBuilder_ != null || duration_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
-     * @return The ephppddioph.
+     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+     * @return The duration.
      */
-    public POGOProtos.Rpc.PlatformMetricData getEphppddioph() {
-      if (ephppddiophBuilder_ == null) {
-        return ephppddioph_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : ephppddioph_;
+    public POGOProtos.Rpc.PlatformMetricData getDuration() {
+      if (durationBuilder_ == null) {
+        return duration_ == null ? POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : duration_;
       } else {
-        return ephppddiophBuilder_.getMessage();
+        return durationBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
      */
-    public Builder setEphppddioph(POGOProtos.Rpc.PlatformMetricData value) {
-      if (ephppddiophBuilder_ == null) {
+    public Builder setDuration(POGOProtos.Rpc.PlatformMetricData value) {
+      if (durationBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ephppddioph_ = value;
+        duration_ = value;
         onChanged();
       } else {
-        ephppddiophBuilder_.setMessage(value);
+        durationBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
      */
-    public Builder setEphppddioph(
+    public Builder setDuration(
         POGOProtos.Rpc.PlatformMetricData.Builder builderForValue) {
-      if (ephppddiophBuilder_ == null) {
-        ephppddioph_ = builderForValue.build();
+      if (durationBuilder_ == null) {
+        duration_ = builderForValue.build();
         onChanged();
       } else {
-        ephppddiophBuilder_.setMessage(builderForValue.build());
+        durationBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
      */
-    public Builder mergeEphppddioph(POGOProtos.Rpc.PlatformMetricData value) {
-      if (ephppddiophBuilder_ == null) {
-        if (ephppddioph_ != null) {
-          ephppddioph_ =
-            POGOProtos.Rpc.PlatformMetricData.newBuilder(ephppddioph_).mergeFrom(value).buildPartial();
+    public Builder mergeDuration(POGOProtos.Rpc.PlatformMetricData value) {
+      if (durationBuilder_ == null) {
+        if (duration_ != null) {
+          duration_ =
+            POGOProtos.Rpc.PlatformMetricData.newBuilder(duration_).mergeFrom(value).buildPartial();
         } else {
-          ephppddioph_ = value;
+          duration_ = value;
         }
         onChanged();
       } else {
-        ephppddiophBuilder_.mergeFrom(value);
+        durationBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
      */
-    public Builder clearEphppddioph() {
-      if (ephppddiophBuilder_ == null) {
-        ephppddioph_ = null;
+    public Builder clearDuration() {
+      if (durationBuilder_ == null) {
+        duration_ = null;
         onChanged();
       } else {
-        ephppddioph_ = null;
-        ephppddiophBuilder_ = null;
+        duration_ = null;
+        durationBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
      */
-    public POGOProtos.Rpc.PlatformMetricData.Builder getEphppddiophBuilder() {
+    public POGOProtos.Rpc.PlatformMetricData.Builder getDurationBuilder() {
       
       onChanged();
-      return getEphppddiophFieldBuilder().getBuilder();
+      return getDurationFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
      */
-    public POGOProtos.Rpc.PlatformMetricDataOrBuilder getEphppddiophOrBuilder() {
-      if (ephppddiophBuilder_ != null) {
-        return ephppddiophBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.PlatformMetricDataOrBuilder getDurationOrBuilder() {
+      if (durationBuilder_ != null) {
+        return durationBuilder_.getMessageOrBuilder();
       } else {
-        return ephppddioph_ == null ?
-            POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : ephppddioph_;
+        return duration_ == null ?
+            POGOProtos.Rpc.PlatformMetricData.getDefaultInstance() : duration_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder> 
-        getEphppddiophFieldBuilder() {
-      if (ephppddiophBuilder_ == null) {
-        ephppddiophBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getDurationFieldBuilder() {
+      if (durationBuilder_ == null) {
+        durationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PlatformMetricData, POGOProtos.Rpc.PlatformMetricData.Builder, POGOProtos.Rpc.PlatformMetricDataOrBuilder>(
-                getEphppddioph(),
+                getDuration(),
                 getParentForChildren(),
                 isClean());
-        ephppddioph_ = null;
+        duration_ = null;
       }
-      return ephppddiophBuilder_;
+      return durationBuilder_;
     }
 
-    private int bpebfhonkmg_ = 0;
+    private int bootPhase_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.BootTime.CLIIACAJEIG bpebfhonkmg = 2;</code>
-     * @return The enum numeric value on the wire for bpebfhonkmg.
+     * <code>.POGOProtos.Rpc.BootTime.BootPhase boot_phase = 2;</code>
+     * @return The enum numeric value on the wire for bootPhase.
      */
-    @java.lang.Override public int getBpebfhonkmgValue() {
-      return bpebfhonkmg_;
+    @java.lang.Override public int getBootPhaseValue() {
+      return bootPhase_;
     }
     /**
-     * <code>.POGOProtos.Rpc.BootTime.CLIIACAJEIG bpebfhonkmg = 2;</code>
-     * @param value The enum numeric value on the wire for bpebfhonkmg to set.
+     * <code>.POGOProtos.Rpc.BootTime.BootPhase boot_phase = 2;</code>
+     * @param value The enum numeric value on the wire for bootPhase to set.
      * @return This builder for chaining.
      */
-    public Builder setBpebfhonkmgValue(int value) {
+    public Builder setBootPhaseValue(int value) {
       
-      bpebfhonkmg_ = value;
+      bootPhase_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BootTime.CLIIACAJEIG bpebfhonkmg = 2;</code>
-     * @return The bpebfhonkmg.
+     * <code>.POGOProtos.Rpc.BootTime.BootPhase boot_phase = 2;</code>
+     * @return The bootPhase.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BootTime.CLIIACAJEIG getBpebfhonkmg() {
+    public POGOProtos.Rpc.BootTime.BootPhase getBootPhase() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.BootTime.CLIIACAJEIG result = POGOProtos.Rpc.BootTime.CLIIACAJEIG.valueOf(bpebfhonkmg_);
-      return result == null ? POGOProtos.Rpc.BootTime.CLIIACAJEIG.UNRECOGNIZED : result;
+      POGOProtos.Rpc.BootTime.BootPhase result = POGOProtos.Rpc.BootTime.BootPhase.valueOf(bootPhase_);
+      return result == null ? POGOProtos.Rpc.BootTime.BootPhase.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.BootTime.CLIIACAJEIG bpebfhonkmg = 2;</code>
-     * @param value The bpebfhonkmg to set.
+     * <code>.POGOProtos.Rpc.BootTime.BootPhase boot_phase = 2;</code>
+     * @param value The bootPhase to set.
      * @return This builder for chaining.
      */
-    public Builder setBpebfhonkmg(POGOProtos.Rpc.BootTime.CLIIACAJEIG value) {
+    public Builder setBootPhase(POGOProtos.Rpc.BootTime.BootPhase value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      bpebfhonkmg_ = value.getNumber();
+      bootPhase_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BootTime.CLIIACAJEIG bpebfhonkmg = 2;</code>
+     * <code>.POGOProtos.Rpc.BootTime.BootPhase boot_phase = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBpebfhonkmg() {
+    public Builder clearBootPhase() {
       
-      bpebfhonkmg_ = 0;
+      bootPhase_ = 0;
       onChanged();
       return this;
     }

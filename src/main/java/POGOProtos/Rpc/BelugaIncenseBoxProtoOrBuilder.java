@@ -8,14 +8,14 @@ public interface BelugaIncenseBoxProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>bool apbjiikojoo = 1;</code>
-   * @return The apbjiikojoo.
+   * <code>bool is_usable = 1;</code>
+   * @return The isUsable.
    */
-  boolean getApbjiikojoo();
+  boolean getIsUsable();
 
   /**
-   * <code>int64 jgdmeadlnpg = 2;</code>
-   * @return The jgdmeadlnpg.
+   * <code>int64 cool_down_finished_timestamp_ms = 2;</code>
+   * @return The coolDownFinishedTimestampMs.
    */
-  long getJgdmeadlnpg();
+  long getCoolDownFinishedTimestampMs();
 }

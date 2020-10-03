@@ -19,26 +19,26 @@ public interface PGBOLEFLDPIOrBuilder extends
   POGOProtos.Rpc.PGBOLEFLDPI.Result getResult();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.GKODOJLKFHB ioghbpknjbd = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ActionLogEntry ioghbpknjbd = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.GKODOJLKFHB> 
+  java.util.List<POGOProtos.Rpc.ActionLogEntry> 
       getIoghbpknjbdList();
   /**
-   * <code>repeated .POGOProtos.Rpc.GKODOJLKFHB ioghbpknjbd = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ActionLogEntry ioghbpknjbd = 2;</code>
    */
-  POGOProtos.Rpc.GKODOJLKFHB getIoghbpknjbd(int index);
+  POGOProtos.Rpc.ActionLogEntry getIoghbpknjbd(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.GKODOJLKFHB ioghbpknjbd = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ActionLogEntry ioghbpknjbd = 2;</code>
    */
   int getIoghbpknjbdCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.GKODOJLKFHB ioghbpknjbd = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ActionLogEntry ioghbpknjbd = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.GKODOJLKFHBOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.ActionLogEntryOrBuilder> 
       getIoghbpknjbdOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.GKODOJLKFHB ioghbpknjbd = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.ActionLogEntry ioghbpknjbd = 2;</code>
    */
-  POGOProtos.Rpc.GKODOJLKFHBOrBuilder getIoghbpknjbdOrBuilder(
+  POGOProtos.Rpc.ActionLogEntryOrBuilder getIoghbpknjbdOrBuilder(
       int index);
 }

@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AwardItemProto() {
-    ekpohjfklal_ = 0;
+    item_ = 0;
   }
 
   @java.lang.Override
@@ -56,17 +56,17 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            ekpohjfklal_ = rawValue;
+            item_ = rawValue;
             break;
           }
           case 16: {
 
-            mhpodigefok_ = input.readInt32();
+            itemCount_ = input.readInt32();
             break;
           }
           case 24: {
 
-            igfkafiiaen_ = input.readInt32();
+            bonusCount_ = input.readInt32();
             break;
           }
           default: {
@@ -101,45 +101,45 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.AwardItemProto.class, POGOProtos.Rpc.AwardItemProto.Builder.class);
   }
 
-  public static final int EKPOHJFKLAL_FIELD_NUMBER = 1;
-  private int ekpohjfklal_;
+  public static final int ITEM_FIELD_NUMBER = 1;
+  private int item_;
   /**
-   * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-   * @return The enum numeric value on the wire for ekpohjfklal.
+   * <code>.POGOProtos.Rpc.Item item = 1;</code>
+   * @return The enum numeric value on the wire for item.
    */
-  @java.lang.Override public int getEkpohjfklalValue() {
-    return ekpohjfklal_;
+  @java.lang.Override public int getItemValue() {
+    return item_;
   }
   /**
-   * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-   * @return The ekpohjfklal.
+   * <code>.POGOProtos.Rpc.Item item = 1;</code>
+   * @return The item.
    */
-  @java.lang.Override public POGOProtos.Rpc.Item getEkpohjfklal() {
+  @java.lang.Override public POGOProtos.Rpc.Item getItem() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(ekpohjfklal_);
+    POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(item_);
     return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
   }
 
-  public static final int MHPODIGEFOK_FIELD_NUMBER = 2;
-  private int mhpodigefok_;
+  public static final int ITEM_COUNT_FIELD_NUMBER = 2;
+  private int itemCount_;
   /**
-   * <code>int32 mhpodigefok = 2;</code>
-   * @return The mhpodigefok.
+   * <code>int32 item_count = 2;</code>
+   * @return The itemCount.
    */
   @java.lang.Override
-  public int getMhpodigefok() {
-    return mhpodigefok_;
+  public int getItemCount() {
+    return itemCount_;
   }
 
-  public static final int IGFKAFIIAEN_FIELD_NUMBER = 3;
-  private int igfkafiiaen_;
+  public static final int BONUS_COUNT_FIELD_NUMBER = 3;
+  private int bonusCount_;
   /**
-   * <code>int32 igfkafiiaen = 3;</code>
-   * @return The igfkafiiaen.
+   * <code>int32 bonus_count = 3;</code>
+   * @return The bonusCount.
    */
   @java.lang.Override
-  public int getIgfkafiiaen() {
-    return igfkafiiaen_;
+  public int getBonusCount() {
+    return bonusCount_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -156,14 +156,14 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (ekpohjfklal_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
-      output.writeEnum(1, ekpohjfklal_);
+    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+      output.writeEnum(1, item_);
     }
-    if (mhpodigefok_ != 0) {
-      output.writeInt32(2, mhpodigefok_);
+    if (itemCount_ != 0) {
+      output.writeInt32(2, itemCount_);
     }
-    if (igfkafiiaen_ != 0) {
-      output.writeInt32(3, igfkafiiaen_);
+    if (bonusCount_ != 0) {
+      output.writeInt32(3, bonusCount_);
     }
     unknownFields.writeTo(output);
   }
@@ -174,17 +174,17 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (ekpohjfklal_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (item_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, ekpohjfklal_);
+        .computeEnumSize(1, item_);
     }
-    if (mhpodigefok_ != 0) {
+    if (itemCount_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, mhpodigefok_);
+        .computeInt32Size(2, itemCount_);
     }
-    if (igfkafiiaen_ != 0) {
+    if (bonusCount_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, igfkafiiaen_);
+        .computeInt32Size(3, bonusCount_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -201,11 +201,11 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.AwardItemProto other = (POGOProtos.Rpc.AwardItemProto) obj;
 
-    if (ekpohjfklal_ != other.ekpohjfklal_) return false;
-    if (getMhpodigefok()
-        != other.getMhpodigefok()) return false;
-    if (getIgfkafiiaen()
-        != other.getIgfkafiiaen()) return false;
+    if (item_ != other.item_) return false;
+    if (getItemCount()
+        != other.getItemCount()) return false;
+    if (getBonusCount()
+        != other.getBonusCount()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -217,12 +217,12 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + EKPOHJFKLAL_FIELD_NUMBER;
-    hash = (53 * hash) + ekpohjfklal_;
-    hash = (37 * hash) + MHPODIGEFOK_FIELD_NUMBER;
-    hash = (53 * hash) + getMhpodigefok();
-    hash = (37 * hash) + IGFKAFIIAEN_FIELD_NUMBER;
-    hash = (53 * hash) + getIgfkafiiaen();
+    hash = (37 * hash) + ITEM_FIELD_NUMBER;
+    hash = (53 * hash) + item_;
+    hash = (37 * hash) + ITEM_COUNT_FIELD_NUMBER;
+    hash = (53 * hash) + getItemCount();
+    hash = (37 * hash) + BONUS_COUNT_FIELD_NUMBER;
+    hash = (53 * hash) + getBonusCount();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -360,11 +360,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      ekpohjfklal_ = 0;
+      item_ = 0;
 
-      mhpodigefok_ = 0;
+      itemCount_ = 0;
 
-      igfkafiiaen_ = 0;
+      bonusCount_ = 0;
 
       return this;
     }
@@ -392,9 +392,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.AwardItemProto buildPartial() {
       POGOProtos.Rpc.AwardItemProto result = new POGOProtos.Rpc.AwardItemProto(this);
-      result.ekpohjfklal_ = ekpohjfklal_;
-      result.mhpodigefok_ = mhpodigefok_;
-      result.igfkafiiaen_ = igfkafiiaen_;
+      result.item_ = item_;
+      result.itemCount_ = itemCount_;
+      result.bonusCount_ = bonusCount_;
       onBuilt();
       return result;
     }
@@ -443,14 +443,14 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.AwardItemProto other) {
       if (other == POGOProtos.Rpc.AwardItemProto.getDefaultInstance()) return this;
-      if (other.ekpohjfklal_ != 0) {
-        setEkpohjfklalValue(other.getEkpohjfklalValue());
+      if (other.item_ != 0) {
+        setItemValue(other.getItemValue());
       }
-      if (other.getMhpodigefok() != 0) {
-        setMhpodigefok(other.getMhpodigefok());
+      if (other.getItemCount() != 0) {
+        setItemCount(other.getItemCount());
       }
-      if (other.getIgfkafiiaen() != 0) {
-        setIgfkafiiaen(other.getIgfkafiiaen());
+      if (other.getBonusCount() != 0) {
+        setBonusCount(other.getBonusCount());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -481,118 +481,118 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int ekpohjfklal_ = 0;
+    private int item_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-     * @return The enum numeric value on the wire for ekpohjfklal.
+     * <code>.POGOProtos.Rpc.Item item = 1;</code>
+     * @return The enum numeric value on the wire for item.
      */
-    @java.lang.Override public int getEkpohjfklalValue() {
-      return ekpohjfklal_;
+    @java.lang.Override public int getItemValue() {
+      return item_;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-     * @param value The enum numeric value on the wire for ekpohjfklal to set.
+     * <code>.POGOProtos.Rpc.Item item = 1;</code>
+     * @param value The enum numeric value on the wire for item to set.
      * @return This builder for chaining.
      */
-    public Builder setEkpohjfklalValue(int value) {
+    public Builder setItemValue(int value) {
       
-      ekpohjfklal_ = value;
+      item_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-     * @return The ekpohjfklal.
+     * <code>.POGOProtos.Rpc.Item item = 1;</code>
+     * @return The item.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.Item getEkpohjfklal() {
+    public POGOProtos.Rpc.Item getItem() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(ekpohjfklal_);
+      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(item_);
       return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-     * @param value The ekpohjfklal to set.
+     * <code>.POGOProtos.Rpc.Item item = 1;</code>
+     * @param value The item to set.
      * @return This builder for chaining.
      */
-    public Builder setEkpohjfklal(POGOProtos.Rpc.Item value) {
+    public Builder setItem(POGOProtos.Rpc.Item value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      ekpohjfklal_ = value.getNumber();
+      item_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
+     * <code>.POGOProtos.Rpc.Item item = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearEkpohjfklal() {
+    public Builder clearItem() {
       
-      ekpohjfklal_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private int mhpodigefok_ ;
-    /**
-     * <code>int32 mhpodigefok = 2;</code>
-     * @return The mhpodigefok.
-     */
-    @java.lang.Override
-    public int getMhpodigefok() {
-      return mhpodigefok_;
-    }
-    /**
-     * <code>int32 mhpodigefok = 2;</code>
-     * @param value The mhpodigefok to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMhpodigefok(int value) {
-      
-      mhpodigefok_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 mhpodigefok = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearMhpodigefok() {
-      
-      mhpodigefok_ = 0;
+      item_ = 0;
       onChanged();
       return this;
     }
 
-    private int igfkafiiaen_ ;
+    private int itemCount_ ;
     /**
-     * <code>int32 igfkafiiaen = 3;</code>
-     * @return The igfkafiiaen.
+     * <code>int32 item_count = 2;</code>
+     * @return The itemCount.
      */
     @java.lang.Override
-    public int getIgfkafiiaen() {
-      return igfkafiiaen_;
+    public int getItemCount() {
+      return itemCount_;
     }
     /**
-     * <code>int32 igfkafiiaen = 3;</code>
-     * @param value The igfkafiiaen to set.
+     * <code>int32 item_count = 2;</code>
+     * @param value The itemCount to set.
      * @return This builder for chaining.
      */
-    public Builder setIgfkafiiaen(int value) {
+    public Builder setItemCount(int value) {
       
-      igfkafiiaen_ = value;
+      itemCount_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 igfkafiiaen = 3;</code>
+     * <code>int32 item_count = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIgfkafiiaen() {
+    public Builder clearItemCount() {
       
-      igfkafiiaen_ = 0;
+      itemCount_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private int bonusCount_ ;
+    /**
+     * <code>int32 bonus_count = 3;</code>
+     * @return The bonusCount.
+     */
+    @java.lang.Override
+    public int getBonusCount() {
+      return bonusCount_;
+    }
+    /**
+     * <code>int32 bonus_count = 3;</code>
+     * @param value The bonusCount to set.
+     * @return This builder for chaining.
+     */
+    public Builder setBonusCount(int value) {
+      
+      bonusCount_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 bonus_count = 3;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearBonusCount() {
+      
+      bonusCount_ = 0;
       onChanged();
       return this;
     }

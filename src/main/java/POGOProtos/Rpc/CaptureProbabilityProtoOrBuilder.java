@@ -8,54 +8,54 @@ public interface CaptureProbabilityProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-   * @return A list containing the blkbkkfpiio.
+   * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+   * @return A list containing the pokeballType.
    */
-  java.util.List<POGOProtos.Rpc.Item> getBlkbkkfpiioList();
+  java.util.List<POGOProtos.Rpc.Item> getPokeballTypeList();
   /**
-   * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-   * @return The count of blkbkkfpiio.
+   * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+   * @return The count of pokeballType.
    */
-  int getBlkbkkfpiioCount();
+  int getPokeballTypeCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
    * @param index The index of the element to return.
-   * @return The blkbkkfpiio at the given index.
+   * @return The pokeballType at the given index.
    */
-  POGOProtos.Rpc.Item getBlkbkkfpiio(int index);
+  POGOProtos.Rpc.Item getPokeballType(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-   * @return A list containing the enum numeric values on the wire for blkbkkfpiio.
+   * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+   * @return A list containing the enum numeric values on the wire for pokeballType.
    */
   java.util.List<java.lang.Integer>
-  getBlkbkkfpiioValueList();
+  getPokeballTypeValueList();
   /**
-   * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
    * @param index The index of the value to return.
-   * @return The enum numeric value on the wire of blkbkkfpiio at the given index.
+   * @return The enum numeric value on the wire of pokeballType at the given index.
    */
-  int getBlkbkkfpiioValue(int index);
+  int getPokeballTypeValue(int index);
 
   /**
-   * <code>repeated float dbianmbmnch = 2;</code>
-   * @return A list containing the dbianmbmnch.
+   * <code>repeated float capture_probability = 2;</code>
+   * @return A list containing the captureProbability.
    */
-  java.util.List<java.lang.Float> getDbianmbmnchList();
+  java.util.List<java.lang.Float> getCaptureProbabilityList();
   /**
-   * <code>repeated float dbianmbmnch = 2;</code>
-   * @return The count of dbianmbmnch.
+   * <code>repeated float capture_probability = 2;</code>
+   * @return The count of captureProbability.
    */
-  int getDbianmbmnchCount();
+  int getCaptureProbabilityCount();
   /**
-   * <code>repeated float dbianmbmnch = 2;</code>
+   * <code>repeated float capture_probability = 2;</code>
    * @param index The index of the element to return.
-   * @return The dbianmbmnch at the given index.
+   * @return The captureProbability at the given index.
    */
-  float getDbianmbmnch(int index);
+  float getCaptureProbability(int index);
 
   /**
-   * <code>double agbccfadhfo = 12;</code>
-   * @return The agbccfadhfo.
+   * <code>double reticle_difficulty_scale = 12;</code>
+   * @return The reticleDifficultyScale.
    */
-  double getAgbccfadhfo();
+  double getReticleDifficultyScale();
 }

@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private CombatHubEntranceTelemetry() {
-    iakbebdcjpf_ = 0;
+    combatHubTelemetryId_ = 0;
   }
 
   @java.lang.Override
@@ -56,7 +56,7 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            iakbebdcjpf_ = rawValue;
+            combatHubTelemetryId_ = rawValue;
             break;
           }
           default: {
@@ -91,22 +91,22 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.CombatHubEntranceTelemetry.class, POGOProtos.Rpc.CombatHubEntranceTelemetry.Builder.class);
   }
 
-  public static final int IAKBEBDCJPF_FIELD_NUMBER = 1;
-  private int iakbebdcjpf_;
+  public static final int COMBAT_HUB_TELEMETRY_ID_FIELD_NUMBER = 1;
+  private int combatHubTelemetryId_;
   /**
-   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds iakbebdcjpf = 1;</code>
-   * @return The enum numeric value on the wire for iakbebdcjpf.
+   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;</code>
+   * @return The enum numeric value on the wire for combatHubTelemetryId.
    */
-  @java.lang.Override public int getIakbebdcjpfValue() {
-    return iakbebdcjpf_;
+  @java.lang.Override public int getCombatHubTelemetryIdValue() {
+    return combatHubTelemetryId_;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds iakbebdcjpf = 1;</code>
-   * @return The iakbebdcjpf.
+   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;</code>
+   * @return The combatHubTelemetryId.
    */
-  @java.lang.Override public POGOProtos.Rpc.CombatHubEntranceTelemetryIds getIakbebdcjpf() {
+  @java.lang.Override public POGOProtos.Rpc.CombatHubEntranceTelemetryIds getCombatHubTelemetryId() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.CombatHubEntranceTelemetryIds result = POGOProtos.Rpc.CombatHubEntranceTelemetryIds.valueOf(iakbebdcjpf_);
+    POGOProtos.Rpc.CombatHubEntranceTelemetryIds result = POGOProtos.Rpc.CombatHubEntranceTelemetryIds.valueOf(combatHubTelemetryId_);
     return result == null ? POGOProtos.Rpc.CombatHubEntranceTelemetryIds.UNRECOGNIZED : result;
   }
 
@@ -124,8 +124,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (iakbebdcjpf_ != POGOProtos.Rpc.CombatHubEntranceTelemetryIds.COMBAT_HUB_ENTRANCE_TELEMETRY_IDS_UNDEFINED_EVENT.getNumber()) {
-      output.writeEnum(1, iakbebdcjpf_);
+    if (combatHubTelemetryId_ != POGOProtos.Rpc.CombatHubEntranceTelemetryIds.COMBAT_HUB_ENTRANCE_TELEMETRY_IDS_UNDEFINED_EVENT.getNumber()) {
+      output.writeEnum(1, combatHubTelemetryId_);
     }
     unknownFields.writeTo(output);
   }
@@ -136,9 +136,9 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (iakbebdcjpf_ != POGOProtos.Rpc.CombatHubEntranceTelemetryIds.COMBAT_HUB_ENTRANCE_TELEMETRY_IDS_UNDEFINED_EVENT.getNumber()) {
+    if (combatHubTelemetryId_ != POGOProtos.Rpc.CombatHubEntranceTelemetryIds.COMBAT_HUB_ENTRANCE_TELEMETRY_IDS_UNDEFINED_EVENT.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, iakbebdcjpf_);
+        .computeEnumSize(1, combatHubTelemetryId_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -155,7 +155,7 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.CombatHubEntranceTelemetry other = (POGOProtos.Rpc.CombatHubEntranceTelemetry) obj;
 
-    if (iakbebdcjpf_ != other.iakbebdcjpf_) return false;
+    if (combatHubTelemetryId_ != other.combatHubTelemetryId_) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -167,8 +167,8 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + IAKBEBDCJPF_FIELD_NUMBER;
-    hash = (53 * hash) + iakbebdcjpf_;
+    hash = (37 * hash) + COMBAT_HUB_TELEMETRY_ID_FIELD_NUMBER;
+    hash = (53 * hash) + combatHubTelemetryId_;
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -306,7 +306,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      iakbebdcjpf_ = 0;
+      combatHubTelemetryId_ = 0;
 
       return this;
     }
@@ -334,7 +334,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.CombatHubEntranceTelemetry buildPartial() {
       POGOProtos.Rpc.CombatHubEntranceTelemetry result = new POGOProtos.Rpc.CombatHubEntranceTelemetry(this);
-      result.iakbebdcjpf_ = iakbebdcjpf_;
+      result.combatHubTelemetryId_ = combatHubTelemetryId_;
       onBuilt();
       return result;
     }
@@ -383,8 +383,8 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.CombatHubEntranceTelemetry other) {
       if (other == POGOProtos.Rpc.CombatHubEntranceTelemetry.getDefaultInstance()) return this;
-      if (other.iakbebdcjpf_ != 0) {
-        setIakbebdcjpfValue(other.getIakbebdcjpfValue());
+      if (other.combatHubTelemetryId_ != 0) {
+        setCombatHubTelemetryIdValue(other.getCombatHubTelemetryIdValue());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -415,56 +415,56 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int iakbebdcjpf_ = 0;
+    private int combatHubTelemetryId_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds iakbebdcjpf = 1;</code>
-     * @return The enum numeric value on the wire for iakbebdcjpf.
+     * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;</code>
+     * @return The enum numeric value on the wire for combatHubTelemetryId.
      */
-    @java.lang.Override public int getIakbebdcjpfValue() {
-      return iakbebdcjpf_;
+    @java.lang.Override public int getCombatHubTelemetryIdValue() {
+      return combatHubTelemetryId_;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds iakbebdcjpf = 1;</code>
-     * @param value The enum numeric value on the wire for iakbebdcjpf to set.
+     * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;</code>
+     * @param value The enum numeric value on the wire for combatHubTelemetryId to set.
      * @return This builder for chaining.
      */
-    public Builder setIakbebdcjpfValue(int value) {
+    public Builder setCombatHubTelemetryIdValue(int value) {
       
-      iakbebdcjpf_ = value;
+      combatHubTelemetryId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds iakbebdcjpf = 1;</code>
-     * @return The iakbebdcjpf.
+     * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;</code>
+     * @return The combatHubTelemetryId.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatHubEntranceTelemetryIds getIakbebdcjpf() {
+    public POGOProtos.Rpc.CombatHubEntranceTelemetryIds getCombatHubTelemetryId() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.CombatHubEntranceTelemetryIds result = POGOProtos.Rpc.CombatHubEntranceTelemetryIds.valueOf(iakbebdcjpf_);
+      POGOProtos.Rpc.CombatHubEntranceTelemetryIds result = POGOProtos.Rpc.CombatHubEntranceTelemetryIds.valueOf(combatHubTelemetryId_);
       return result == null ? POGOProtos.Rpc.CombatHubEntranceTelemetryIds.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds iakbebdcjpf = 1;</code>
-     * @param value The iakbebdcjpf to set.
+     * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;</code>
+     * @param value The combatHubTelemetryId to set.
      * @return This builder for chaining.
      */
-    public Builder setIakbebdcjpf(POGOProtos.Rpc.CombatHubEntranceTelemetryIds value) {
+    public Builder setCombatHubTelemetryId(POGOProtos.Rpc.CombatHubEntranceTelemetryIds value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      iakbebdcjpf_ = value.getNumber();
+      combatHubTelemetryId_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds iakbebdcjpf = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetryIds combat_hub_telemetry_id = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIakbebdcjpf() {
+    public Builder clearCombatHubTelemetryId() {
       
-      iakbebdcjpf_ = 0;
+      combatHubTelemetryId_ = 0;
       onChanged();
       return this;
     }

@@ -54,7 +54,7 @@ private static final long serialVersionUID = 0L;
             break;
           case 13: {
 
-            dolfdlbhkfp_ = input.readFloat();
+            fullRotationsForMaxScore_ = input.readFloat();
             break;
           }
           default: {
@@ -89,15 +89,15 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.CombatDefensiveInputChallengeSettings.class, POGOProtos.Rpc.CombatDefensiveInputChallengeSettings.Builder.class);
   }
 
-  public static final int DOLFDLBHKFP_FIELD_NUMBER = 1;
-  private float dolfdlbhkfp_;
+  public static final int FULL_ROTATIONS_FOR_MAX_SCORE_FIELD_NUMBER = 1;
+  private float fullRotationsForMaxScore_;
   /**
-   * <code>float dolfdlbhkfp = 1;</code>
-   * @return The dolfdlbhkfp.
+   * <code>float full_rotations_for_max_score = 1;</code>
+   * @return The fullRotationsForMaxScore.
    */
   @java.lang.Override
-  public float getDolfdlbhkfp() {
-    return dolfdlbhkfp_;
+  public float getFullRotationsForMaxScore() {
+    return fullRotationsForMaxScore_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -114,8 +114,8 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (dolfdlbhkfp_ != 0F) {
-      output.writeFloat(1, dolfdlbhkfp_);
+    if (fullRotationsForMaxScore_ != 0F) {
+      output.writeFloat(1, fullRotationsForMaxScore_);
     }
     unknownFields.writeTo(output);
   }
@@ -126,9 +126,9 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (dolfdlbhkfp_ != 0F) {
+    if (fullRotationsForMaxScore_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(1, dolfdlbhkfp_);
+        .computeFloatSize(1, fullRotationsForMaxScore_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -145,9 +145,9 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.CombatDefensiveInputChallengeSettings other = (POGOProtos.Rpc.CombatDefensiveInputChallengeSettings) obj;
 
-    if (java.lang.Float.floatToIntBits(getDolfdlbhkfp())
+    if (java.lang.Float.floatToIntBits(getFullRotationsForMaxScore())
         != java.lang.Float.floatToIntBits(
-            other.getDolfdlbhkfp())) return false;
+            other.getFullRotationsForMaxScore())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -159,9 +159,9 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + DOLFDLBHKFP_FIELD_NUMBER;
+    hash = (37 * hash) + FULL_ROTATIONS_FOR_MAX_SCORE_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getDolfdlbhkfp());
+        getFullRotationsForMaxScore());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -299,7 +299,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      dolfdlbhkfp_ = 0F;
+      fullRotationsForMaxScore_ = 0F;
 
       return this;
     }
@@ -327,7 +327,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.CombatDefensiveInputChallengeSettings buildPartial() {
       POGOProtos.Rpc.CombatDefensiveInputChallengeSettings result = new POGOProtos.Rpc.CombatDefensiveInputChallengeSettings(this);
-      result.dolfdlbhkfp_ = dolfdlbhkfp_;
+      result.fullRotationsForMaxScore_ = fullRotationsForMaxScore_;
       onBuilt();
       return result;
     }
@@ -376,8 +376,8 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.CombatDefensiveInputChallengeSettings other) {
       if (other == POGOProtos.Rpc.CombatDefensiveInputChallengeSettings.getDefaultInstance()) return this;
-      if (other.getDolfdlbhkfp() != 0F) {
-        setDolfdlbhkfp(other.getDolfdlbhkfp());
+      if (other.getFullRotationsForMaxScore() != 0F) {
+        setFullRotationsForMaxScore(other.getFullRotationsForMaxScore());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -408,33 +408,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private float dolfdlbhkfp_ ;
+    private float fullRotationsForMaxScore_ ;
     /**
-     * <code>float dolfdlbhkfp = 1;</code>
-     * @return The dolfdlbhkfp.
+     * <code>float full_rotations_for_max_score = 1;</code>
+     * @return The fullRotationsForMaxScore.
      */
     @java.lang.Override
-    public float getDolfdlbhkfp() {
-      return dolfdlbhkfp_;
+    public float getFullRotationsForMaxScore() {
+      return fullRotationsForMaxScore_;
     }
     /**
-     * <code>float dolfdlbhkfp = 1;</code>
-     * @param value The dolfdlbhkfp to set.
+     * <code>float full_rotations_for_max_score = 1;</code>
+     * @param value The fullRotationsForMaxScore to set.
      * @return This builder for chaining.
      */
-    public Builder setDolfdlbhkfp(float value) {
+    public Builder setFullRotationsForMaxScore(float value) {
       
-      dolfdlbhkfp_ = value;
+      fullRotationsForMaxScore_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float dolfdlbhkfp = 1;</code>
+     * <code>float full_rotations_for_max_score = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDolfdlbhkfp() {
+    public Builder clearFullRotationsForMaxScore() {
       
-      dolfdlbhkfp_ = 0F;
+      fullRotationsForMaxScore_ = 0F;
       onChanged();
       return this;
     }

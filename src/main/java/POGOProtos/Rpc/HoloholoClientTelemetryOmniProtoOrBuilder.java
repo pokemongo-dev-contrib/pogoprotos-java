@@ -473,19 +473,19 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
   POGOProtos.Rpc.PokemonGoPlusTelemetryOrBuilder getPokemonGoPlusTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+   * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
    * @return Whether the rpcTimingTelemetry field is set.
    */
   boolean hasRpcTimingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+   * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
    * @return The rpcTimingTelemetry.
    */
-  POGOProtos.Rpc.RpcTimingTelemetry getRpcTimingTelemetry();
+  POGOProtos.Rpc.RpcResponseTelemetry getRpcTimingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+   * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
    */
-  POGOProtos.Rpc.RpcTimingTelemetryOrBuilder getRpcTimingTelemetryOrBuilder();
+  POGOProtos.Rpc.RpcResponseTelemetryOrBuilder getRpcTimingTelemetryOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
@@ -563,19 +563,19 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
   POGOProtos.Rpc.AssetStreamCacheCulledTelemetryOrBuilder getAssetStreamCacheCulledTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+   * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
    * @return Whether the rpcSocketTimingTelemetry field is set.
    */
   boolean hasRpcSocketTimingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+   * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
    * @return The rpcSocketTimingTelemetry.
    */
-  POGOProtos.Rpc.RpcSocketTimingTelemetry getRpcSocketTimingTelemetry();
+  POGOProtos.Rpc.RpcSocketResponseTelemetry getRpcSocketTimingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+   * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
    */
-  POGOProtos.Rpc.RpcSocketTimingTelemetryOrBuilder getRpcSocketTimingTelemetryOrBuilder();
+  POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder getRpcSocketTimingTelemetryOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.PermissionsFlowTelemetry permissions_flow = 39;</code>
@@ -623,19 +623,19 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
   POGOProtos.Rpc.BootTelemetryOrBuilder getBootTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+   * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
    * @return Whether the userAttributes field is set.
    */
   boolean hasUserAttributes();
   /**
-   * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+   * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
    * @return The userAttributes.
    */
-  POGOProtos.Rpc.UserAttributes getUserAttributes();
+  POGOProtos.Rpc.UserAttributesProto getUserAttributes();
   /**
-   * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+   * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
    */
-  POGOProtos.Rpc.UserAttributesOrBuilder getUserAttributesOrBuilder();
+  POGOProtos.Rpc.UserAttributesProtoOrBuilder getUserAttributesOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.OnboardingTelemetry onboarding_telemetry = 43;</code>
@@ -848,49 +848,49 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
   POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
    * @return Whether the buddyMultiplayerConnectionFailedTelemetry field is set.
    */
   boolean hasBuddyMultiplayerConnectionFailedTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
    * @return The buddyMultiplayerConnectionFailedTelemetry.
    */
-  POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry getBuddyMultiplayerConnectionFailedTelemetry();
+  POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto getBuddyMultiplayerConnectionFailedTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
    */
-  POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetryOrBuilder getBuddyMultiplayerConnectionFailedTelemetryOrBuilder();
+  POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder getBuddyMultiplayerConnectionFailedTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    * @return Whether the buddyMultiplayerConnectionSucceededTelemetry field is set.
    */
   boolean hasBuddyMultiplayerConnectionSucceededTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    * @return The buddyMultiplayerConnectionSucceededTelemetry.
    */
-  POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry getBuddyMultiplayerConnectionSucceededTelemetry();
+  POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto getBuddyMultiplayerConnectionSucceededTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    */
-  POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetryOrBuilder getBuddyMultiplayerConnectionSucceededTelemetryOrBuilder();
+  POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder getBuddyMultiplayerConnectionSucceededTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    * @return Whether the buddyMultiplayerTimeToGetSessionTelemetry field is set.
    */
   boolean hasBuddyMultiplayerTimeToGetSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    * @return The buddyMultiplayerTimeToGetSessionTelemetry.
    */
-  POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry getBuddyMultiplayerTimeToGetSessionTelemetry();
+  POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto getBuddyMultiplayerTimeToGetSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    */
-  POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetryOrBuilder getBuddyMultiplayerTimeToGetSessionTelemetryOrBuilder();
+  POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder getBuddyMultiplayerTimeToGetSessionTelemetryOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;</code>
@@ -923,19 +923,19 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
   POGOProtos.Rpc.MonodepthDownloadTelemetryOrBuilder getMonodepthDownloadTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+   * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
    * @return Whether the arMappingTelemetry field is set.
    */
   boolean hasArMappingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+   * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
    * @return The arMappingTelemetry.
    */
-  POGOProtos.Rpc.ArMappingTelemetry getArMappingTelemetry();
+  POGOProtos.Rpc.ArMappingTelemetryProto getArMappingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+   * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
    */
-  POGOProtos.Rpc.ArMappingTelemetryOrBuilder getArMappingTelemetryOrBuilder();
+  POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder getArMappingTelemetryOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.RemoteRaidTelemetry remote_raid_telemetry = 63;</code>
@@ -998,34 +998,34 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
   POGOProtos.Rpc.ChangeOnlineStatusTelemetryOrBuilder getChangeOnlineStatusTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
    * @return Whether the serverData field is set.
    */
   boolean hasServerData();
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
    * @return The serverData.
    */
-  POGOProtos.Rpc.PlatformServerData getServerData();
+  POGOProtos.Rpc.PlatformPlatformServerData getServerData();
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
    */
-  POGOProtos.Rpc.PlatformServerDataOrBuilder getServerDataOrBuilder();
+  POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getServerDataOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
    * @return Whether the commonFilters field is set.
    */
   boolean hasCommonFilters();
   /**
-   * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
    * @return The commonFilters.
    */
-  POGOProtos.Rpc.PlatformCommonFilterProto getCommonFilters();
+  POGOProtos.Rpc.PlatformPlatformCommonFilterProto getCommonFilters();
   /**
-   * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
    */
-  POGOProtos.Rpc.PlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder();
+  POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder();
 
   public POGOProtos.Rpc.HoloholoClientTelemetryOmniProto.TelemetryDataCase getTelemetryDataCase();
 }

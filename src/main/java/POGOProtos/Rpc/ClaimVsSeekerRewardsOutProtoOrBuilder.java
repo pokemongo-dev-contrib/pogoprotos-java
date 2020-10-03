@@ -19,17 +19,17 @@ public interface ClaimVsSeekerRewardsOutProtoOrBuilder extends
   POGOProtos.Rpc.ClaimVsSeekerRewardsOutProto.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
-   * @return Whether the nldndpcfdmh field is set.
+   * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
+   * @return Whether the rewards field is set.
    */
-  boolean hasNldndpcfdmh();
+  boolean hasRewards();
   /**
-   * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
-   * @return The nldndpcfdmh.
+   * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
+   * @return The rewards.
    */
-  POGOProtos.Rpc.LootProto getNldndpcfdmh();
+  POGOProtos.Rpc.LootProto getRewards();
   /**
-   * <code>.POGOProtos.Rpc.LootProto nldndpcfdmh = 2;</code>
+   * <code>.POGOProtos.Rpc.LootProto rewards = 2;</code>
    */
-  POGOProtos.Rpc.LootProtoOrBuilder getNldndpcfdmhOrBuilder();
+  POGOProtos.Rpc.LootProtoOrBuilder getRewardsOrBuilder();
 }

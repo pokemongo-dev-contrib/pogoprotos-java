@@ -54,22 +54,22 @@ private static final long serialVersionUID = 0L;
             break;
           case 13: {
 
-            mopajblfilb_ = input.readFloat();
+            staPercent_ = input.readFloat();
             break;
           }
           case 21: {
 
-            ekgmjpdbpcg_ = input.readFloat();
+            atkPercent_ = input.readFloat();
             break;
           }
           case 29: {
 
-            hdpfooknanf_ = input.readFloat();
+            defPercent_ = input.readFloat();
             break;
           }
           case 37: {
 
-            adbcjmkmpnn_ = input.readFloat();
+            durationS_ = input.readFloat();
             break;
           }
           default: {
@@ -104,48 +104,48 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.BattleAttributesProto.class, POGOProtos.Rpc.BattleAttributesProto.Builder.class);
   }
 
-  public static final int MOPAJBLFILB_FIELD_NUMBER = 1;
-  private float mopajblfilb_;
+  public static final int STA_PERCENT_FIELD_NUMBER = 1;
+  private float staPercent_;
   /**
-   * <code>float mopajblfilb = 1;</code>
-   * @return The mopajblfilb.
+   * <code>float sta_percent = 1;</code>
+   * @return The staPercent.
    */
   @java.lang.Override
-  public float getMopajblfilb() {
-    return mopajblfilb_;
+  public float getStaPercent() {
+    return staPercent_;
   }
 
-  public static final int EKGMJPDBPCG_FIELD_NUMBER = 2;
-  private float ekgmjpdbpcg_;
+  public static final int ATK_PERCENT_FIELD_NUMBER = 2;
+  private float atkPercent_;
   /**
-   * <code>float ekgmjpdbpcg = 2;</code>
-   * @return The ekgmjpdbpcg.
+   * <code>float atk_percent = 2;</code>
+   * @return The atkPercent.
    */
   @java.lang.Override
-  public float getEkgmjpdbpcg() {
-    return ekgmjpdbpcg_;
+  public float getAtkPercent() {
+    return atkPercent_;
   }
 
-  public static final int HDPFOOKNANF_FIELD_NUMBER = 3;
-  private float hdpfooknanf_;
+  public static final int DEF_PERCENT_FIELD_NUMBER = 3;
+  private float defPercent_;
   /**
-   * <code>float hdpfooknanf = 3;</code>
-   * @return The hdpfooknanf.
+   * <code>float def_percent = 3;</code>
+   * @return The defPercent.
    */
   @java.lang.Override
-  public float getHdpfooknanf() {
-    return hdpfooknanf_;
+  public float getDefPercent() {
+    return defPercent_;
   }
 
-  public static final int ADBCJMKMPNN_FIELD_NUMBER = 4;
-  private float adbcjmkmpnn_;
+  public static final int DURATION_S_FIELD_NUMBER = 4;
+  private float durationS_;
   /**
-   * <code>float adbcjmkmpnn = 4;</code>
-   * @return The adbcjmkmpnn.
+   * <code>float duration_s = 4;</code>
+   * @return The durationS.
    */
   @java.lang.Override
-  public float getAdbcjmkmpnn() {
-    return adbcjmkmpnn_;
+  public float getDurationS() {
+    return durationS_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -162,17 +162,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (mopajblfilb_ != 0F) {
-      output.writeFloat(1, mopajblfilb_);
+    if (staPercent_ != 0F) {
+      output.writeFloat(1, staPercent_);
     }
-    if (ekgmjpdbpcg_ != 0F) {
-      output.writeFloat(2, ekgmjpdbpcg_);
+    if (atkPercent_ != 0F) {
+      output.writeFloat(2, atkPercent_);
     }
-    if (hdpfooknanf_ != 0F) {
-      output.writeFloat(3, hdpfooknanf_);
+    if (defPercent_ != 0F) {
+      output.writeFloat(3, defPercent_);
     }
-    if (adbcjmkmpnn_ != 0F) {
-      output.writeFloat(4, adbcjmkmpnn_);
+    if (durationS_ != 0F) {
+      output.writeFloat(4, durationS_);
     }
     unknownFields.writeTo(output);
   }
@@ -183,21 +183,21 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (mopajblfilb_ != 0F) {
+    if (staPercent_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(1, mopajblfilb_);
+        .computeFloatSize(1, staPercent_);
     }
-    if (ekgmjpdbpcg_ != 0F) {
+    if (atkPercent_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(2, ekgmjpdbpcg_);
+        .computeFloatSize(2, atkPercent_);
     }
-    if (hdpfooknanf_ != 0F) {
+    if (defPercent_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(3, hdpfooknanf_);
+        .computeFloatSize(3, defPercent_);
     }
-    if (adbcjmkmpnn_ != 0F) {
+    if (durationS_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(4, adbcjmkmpnn_);
+        .computeFloatSize(4, durationS_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -214,18 +214,18 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BattleAttributesProto other = (POGOProtos.Rpc.BattleAttributesProto) obj;
 
-    if (java.lang.Float.floatToIntBits(getMopajblfilb())
+    if (java.lang.Float.floatToIntBits(getStaPercent())
         != java.lang.Float.floatToIntBits(
-            other.getMopajblfilb())) return false;
-    if (java.lang.Float.floatToIntBits(getEkgmjpdbpcg())
+            other.getStaPercent())) return false;
+    if (java.lang.Float.floatToIntBits(getAtkPercent())
         != java.lang.Float.floatToIntBits(
-            other.getEkgmjpdbpcg())) return false;
-    if (java.lang.Float.floatToIntBits(getHdpfooknanf())
+            other.getAtkPercent())) return false;
+    if (java.lang.Float.floatToIntBits(getDefPercent())
         != java.lang.Float.floatToIntBits(
-            other.getHdpfooknanf())) return false;
-    if (java.lang.Float.floatToIntBits(getAdbcjmkmpnn())
+            other.getDefPercent())) return false;
+    if (java.lang.Float.floatToIntBits(getDurationS())
         != java.lang.Float.floatToIntBits(
-            other.getAdbcjmkmpnn())) return false;
+            other.getDurationS())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -237,18 +237,18 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + MOPAJBLFILB_FIELD_NUMBER;
+    hash = (37 * hash) + STA_PERCENT_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getMopajblfilb());
-    hash = (37 * hash) + EKGMJPDBPCG_FIELD_NUMBER;
+        getStaPercent());
+    hash = (37 * hash) + ATK_PERCENT_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getEkgmjpdbpcg());
-    hash = (37 * hash) + HDPFOOKNANF_FIELD_NUMBER;
+        getAtkPercent());
+    hash = (37 * hash) + DEF_PERCENT_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getHdpfooknanf());
-    hash = (37 * hash) + ADBCJMKMPNN_FIELD_NUMBER;
+        getDefPercent());
+    hash = (37 * hash) + DURATION_S_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getAdbcjmkmpnn());
+        getDurationS());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -386,13 +386,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      mopajblfilb_ = 0F;
+      staPercent_ = 0F;
 
-      ekgmjpdbpcg_ = 0F;
+      atkPercent_ = 0F;
 
-      hdpfooknanf_ = 0F;
+      defPercent_ = 0F;
 
-      adbcjmkmpnn_ = 0F;
+      durationS_ = 0F;
 
       return this;
     }
@@ -420,10 +420,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.BattleAttributesProto buildPartial() {
       POGOProtos.Rpc.BattleAttributesProto result = new POGOProtos.Rpc.BattleAttributesProto(this);
-      result.mopajblfilb_ = mopajblfilb_;
-      result.ekgmjpdbpcg_ = ekgmjpdbpcg_;
-      result.hdpfooknanf_ = hdpfooknanf_;
-      result.adbcjmkmpnn_ = adbcjmkmpnn_;
+      result.staPercent_ = staPercent_;
+      result.atkPercent_ = atkPercent_;
+      result.defPercent_ = defPercent_;
+      result.durationS_ = durationS_;
       onBuilt();
       return result;
     }
@@ -472,17 +472,17 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BattleAttributesProto other) {
       if (other == POGOProtos.Rpc.BattleAttributesProto.getDefaultInstance()) return this;
-      if (other.getMopajblfilb() != 0F) {
-        setMopajblfilb(other.getMopajblfilb());
+      if (other.getStaPercent() != 0F) {
+        setStaPercent(other.getStaPercent());
       }
-      if (other.getEkgmjpdbpcg() != 0F) {
-        setEkgmjpdbpcg(other.getEkgmjpdbpcg());
+      if (other.getAtkPercent() != 0F) {
+        setAtkPercent(other.getAtkPercent());
       }
-      if (other.getHdpfooknanf() != 0F) {
-        setHdpfooknanf(other.getHdpfooknanf());
+      if (other.getDefPercent() != 0F) {
+        setDefPercent(other.getDefPercent());
       }
-      if (other.getAdbcjmkmpnn() != 0F) {
-        setAdbcjmkmpnn(other.getAdbcjmkmpnn());
+      if (other.getDurationS() != 0F) {
+        setDurationS(other.getDurationS());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -513,126 +513,126 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private float mopajblfilb_ ;
+    private float staPercent_ ;
     /**
-     * <code>float mopajblfilb = 1;</code>
-     * @return The mopajblfilb.
+     * <code>float sta_percent = 1;</code>
+     * @return The staPercent.
      */
     @java.lang.Override
-    public float getMopajblfilb() {
-      return mopajblfilb_;
+    public float getStaPercent() {
+      return staPercent_;
     }
     /**
-     * <code>float mopajblfilb = 1;</code>
-     * @param value The mopajblfilb to set.
+     * <code>float sta_percent = 1;</code>
+     * @param value The staPercent to set.
      * @return This builder for chaining.
      */
-    public Builder setMopajblfilb(float value) {
+    public Builder setStaPercent(float value) {
       
-      mopajblfilb_ = value;
+      staPercent_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float mopajblfilb = 1;</code>
+     * <code>float sta_percent = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearMopajblfilb() {
+    public Builder clearStaPercent() {
       
-      mopajblfilb_ = 0F;
+      staPercent_ = 0F;
       onChanged();
       return this;
     }
 
-    private float ekgmjpdbpcg_ ;
+    private float atkPercent_ ;
     /**
-     * <code>float ekgmjpdbpcg = 2;</code>
-     * @return The ekgmjpdbpcg.
+     * <code>float atk_percent = 2;</code>
+     * @return The atkPercent.
      */
     @java.lang.Override
-    public float getEkgmjpdbpcg() {
-      return ekgmjpdbpcg_;
+    public float getAtkPercent() {
+      return atkPercent_;
     }
     /**
-     * <code>float ekgmjpdbpcg = 2;</code>
-     * @param value The ekgmjpdbpcg to set.
+     * <code>float atk_percent = 2;</code>
+     * @param value The atkPercent to set.
      * @return This builder for chaining.
      */
-    public Builder setEkgmjpdbpcg(float value) {
+    public Builder setAtkPercent(float value) {
       
-      ekgmjpdbpcg_ = value;
+      atkPercent_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float ekgmjpdbpcg = 2;</code>
+     * <code>float atk_percent = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearEkgmjpdbpcg() {
+    public Builder clearAtkPercent() {
       
-      ekgmjpdbpcg_ = 0F;
+      atkPercent_ = 0F;
       onChanged();
       return this;
     }
 
-    private float hdpfooknanf_ ;
+    private float defPercent_ ;
     /**
-     * <code>float hdpfooknanf = 3;</code>
-     * @return The hdpfooknanf.
+     * <code>float def_percent = 3;</code>
+     * @return The defPercent.
      */
     @java.lang.Override
-    public float getHdpfooknanf() {
-      return hdpfooknanf_;
+    public float getDefPercent() {
+      return defPercent_;
     }
     /**
-     * <code>float hdpfooknanf = 3;</code>
-     * @param value The hdpfooknanf to set.
+     * <code>float def_percent = 3;</code>
+     * @param value The defPercent to set.
      * @return This builder for chaining.
      */
-    public Builder setHdpfooknanf(float value) {
+    public Builder setDefPercent(float value) {
       
-      hdpfooknanf_ = value;
+      defPercent_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float hdpfooknanf = 3;</code>
+     * <code>float def_percent = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearHdpfooknanf() {
+    public Builder clearDefPercent() {
       
-      hdpfooknanf_ = 0F;
+      defPercent_ = 0F;
       onChanged();
       return this;
     }
 
-    private float adbcjmkmpnn_ ;
+    private float durationS_ ;
     /**
-     * <code>float adbcjmkmpnn = 4;</code>
-     * @return The adbcjmkmpnn.
+     * <code>float duration_s = 4;</code>
+     * @return The durationS.
      */
     @java.lang.Override
-    public float getAdbcjmkmpnn() {
-      return adbcjmkmpnn_;
+    public float getDurationS() {
+      return durationS_;
     }
     /**
-     * <code>float adbcjmkmpnn = 4;</code>
-     * @param value The adbcjmkmpnn to set.
+     * <code>float duration_s = 4;</code>
+     * @param value The durationS to set.
      * @return This builder for chaining.
      */
-    public Builder setAdbcjmkmpnn(float value) {
+    public Builder setDurationS(float value) {
       
-      adbcjmkmpnn_ = value;
+      durationS_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float adbcjmkmpnn = 4;</code>
+     * <code>float duration_s = 4;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAdbcjmkmpnn() {
+    public Builder clearDurationS() {
       
-      adbcjmkmpnn_ = 0F;
+      durationS_ = 0F;
       onChanged();
       return this;
     }

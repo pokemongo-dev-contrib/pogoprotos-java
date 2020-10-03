@@ -54,12 +54,12 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
 
-            apbjiikojoo_ = input.readBool();
+            isUsable_ = input.readBool();
             break;
           }
           case 16: {
 
-            jgdmeadlnpg_ = input.readInt64();
+            coolDownFinishedTimestampMs_ = input.readInt64();
             break;
           }
           default: {
@@ -94,26 +94,26 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.BelugaIncenseBoxProto.class, POGOProtos.Rpc.BelugaIncenseBoxProto.Builder.class);
   }
 
-  public static final int APBJIIKOJOO_FIELD_NUMBER = 1;
-  private boolean apbjiikojoo_;
+  public static final int IS_USABLE_FIELD_NUMBER = 1;
+  private boolean isUsable_;
   /**
-   * <code>bool apbjiikojoo = 1;</code>
-   * @return The apbjiikojoo.
+   * <code>bool is_usable = 1;</code>
+   * @return The isUsable.
    */
   @java.lang.Override
-  public boolean getApbjiikojoo() {
-    return apbjiikojoo_;
+  public boolean getIsUsable() {
+    return isUsable_;
   }
 
-  public static final int JGDMEADLNPG_FIELD_NUMBER = 2;
-  private long jgdmeadlnpg_;
+  public static final int COOL_DOWN_FINISHED_TIMESTAMP_MS_FIELD_NUMBER = 2;
+  private long coolDownFinishedTimestampMs_;
   /**
-   * <code>int64 jgdmeadlnpg = 2;</code>
-   * @return The jgdmeadlnpg.
+   * <code>int64 cool_down_finished_timestamp_ms = 2;</code>
+   * @return The coolDownFinishedTimestampMs.
    */
   @java.lang.Override
-  public long getJgdmeadlnpg() {
-    return jgdmeadlnpg_;
+  public long getCoolDownFinishedTimestampMs() {
+    return coolDownFinishedTimestampMs_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -130,11 +130,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (apbjiikojoo_ != false) {
-      output.writeBool(1, apbjiikojoo_);
+    if (isUsable_ != false) {
+      output.writeBool(1, isUsable_);
     }
-    if (jgdmeadlnpg_ != 0L) {
-      output.writeInt64(2, jgdmeadlnpg_);
+    if (coolDownFinishedTimestampMs_ != 0L) {
+      output.writeInt64(2, coolDownFinishedTimestampMs_);
     }
     unknownFields.writeTo(output);
   }
@@ -145,13 +145,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (apbjiikojoo_ != false) {
+    if (isUsable_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(1, apbjiikojoo_);
+        .computeBoolSize(1, isUsable_);
     }
-    if (jgdmeadlnpg_ != 0L) {
+    if (coolDownFinishedTimestampMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(2, jgdmeadlnpg_);
+        .computeInt64Size(2, coolDownFinishedTimestampMs_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -168,10 +168,10 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BelugaIncenseBoxProto other = (POGOProtos.Rpc.BelugaIncenseBoxProto) obj;
 
-    if (getApbjiikojoo()
-        != other.getApbjiikojoo()) return false;
-    if (getJgdmeadlnpg()
-        != other.getJgdmeadlnpg()) return false;
+    if (getIsUsable()
+        != other.getIsUsable()) return false;
+    if (getCoolDownFinishedTimestampMs()
+        != other.getCoolDownFinishedTimestampMs()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -183,12 +183,12 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + APBJIIKOJOO_FIELD_NUMBER;
+    hash = (37 * hash) + IS_USABLE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getApbjiikojoo());
-    hash = (37 * hash) + JGDMEADLNPG_FIELD_NUMBER;
+        getIsUsable());
+    hash = (37 * hash) + COOL_DOWN_FINISHED_TIMESTAMP_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getJgdmeadlnpg());
+        getCoolDownFinishedTimestampMs());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -326,9 +326,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      apbjiikojoo_ = false;
+      isUsable_ = false;
 
-      jgdmeadlnpg_ = 0L;
+      coolDownFinishedTimestampMs_ = 0L;
 
       return this;
     }
@@ -356,8 +356,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.BelugaIncenseBoxProto buildPartial() {
       POGOProtos.Rpc.BelugaIncenseBoxProto result = new POGOProtos.Rpc.BelugaIncenseBoxProto(this);
-      result.apbjiikojoo_ = apbjiikojoo_;
-      result.jgdmeadlnpg_ = jgdmeadlnpg_;
+      result.isUsable_ = isUsable_;
+      result.coolDownFinishedTimestampMs_ = coolDownFinishedTimestampMs_;
       onBuilt();
       return result;
     }
@@ -406,11 +406,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BelugaIncenseBoxProto other) {
       if (other == POGOProtos.Rpc.BelugaIncenseBoxProto.getDefaultInstance()) return this;
-      if (other.getApbjiikojoo() != false) {
-        setApbjiikojoo(other.getApbjiikojoo());
+      if (other.getIsUsable() != false) {
+        setIsUsable(other.getIsUsable());
       }
-      if (other.getJgdmeadlnpg() != 0L) {
-        setJgdmeadlnpg(other.getJgdmeadlnpg());
+      if (other.getCoolDownFinishedTimestampMs() != 0L) {
+        setCoolDownFinishedTimestampMs(other.getCoolDownFinishedTimestampMs());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -441,64 +441,64 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private boolean apbjiikojoo_ ;
+    private boolean isUsable_ ;
     /**
-     * <code>bool apbjiikojoo = 1;</code>
-     * @return The apbjiikojoo.
+     * <code>bool is_usable = 1;</code>
+     * @return The isUsable.
      */
     @java.lang.Override
-    public boolean getApbjiikojoo() {
-      return apbjiikojoo_;
+    public boolean getIsUsable() {
+      return isUsable_;
     }
     /**
-     * <code>bool apbjiikojoo = 1;</code>
-     * @param value The apbjiikojoo to set.
+     * <code>bool is_usable = 1;</code>
+     * @param value The isUsable to set.
      * @return This builder for chaining.
      */
-    public Builder setApbjiikojoo(boolean value) {
+    public Builder setIsUsable(boolean value) {
       
-      apbjiikojoo_ = value;
+      isUsable_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool apbjiikojoo = 1;</code>
+     * <code>bool is_usable = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearApbjiikojoo() {
+    public Builder clearIsUsable() {
       
-      apbjiikojoo_ = false;
+      isUsable_ = false;
       onChanged();
       return this;
     }
 
-    private long jgdmeadlnpg_ ;
+    private long coolDownFinishedTimestampMs_ ;
     /**
-     * <code>int64 jgdmeadlnpg = 2;</code>
-     * @return The jgdmeadlnpg.
+     * <code>int64 cool_down_finished_timestamp_ms = 2;</code>
+     * @return The coolDownFinishedTimestampMs.
      */
     @java.lang.Override
-    public long getJgdmeadlnpg() {
-      return jgdmeadlnpg_;
+    public long getCoolDownFinishedTimestampMs() {
+      return coolDownFinishedTimestampMs_;
     }
     /**
-     * <code>int64 jgdmeadlnpg = 2;</code>
-     * @param value The jgdmeadlnpg to set.
+     * <code>int64 cool_down_finished_timestamp_ms = 2;</code>
+     * @param value The coolDownFinishedTimestampMs to set.
      * @return This builder for chaining.
      */
-    public Builder setJgdmeadlnpg(long value) {
+    public Builder setCoolDownFinishedTimestampMs(long value) {
       
-      jgdmeadlnpg_ = value;
+      coolDownFinishedTimestampMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 jgdmeadlnpg = 2;</code>
+     * <code>int64 cool_down_finished_timestamp_ms = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJgdmeadlnpg() {
+    public Builder clearCoolDownFinishedTimestampMs() {
       
-      jgdmeadlnpg_ = 0L;
+      coolDownFinishedTimestampMs_ = 0L;
       onChanged();
       return this;
     }

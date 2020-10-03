@@ -8,28 +8,28 @@ public interface BootTimeOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
-   * @return Whether the ephppddioph field is set.
+   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+   * @return Whether the duration field is set.
    */
-  boolean hasEphppddioph();
+  boolean hasDuration();
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
-   * @return The ephppddioph.
+   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
+   * @return The duration.
    */
-  POGOProtos.Rpc.PlatformMetricData getEphppddioph();
+  POGOProtos.Rpc.PlatformMetricData getDuration();
   /**
-   * <code>.POGOProtos.Rpc.PlatformMetricData ephppddioph = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformMetricData duration = 1;</code>
    */
-  POGOProtos.Rpc.PlatformMetricDataOrBuilder getEphppddiophOrBuilder();
+  POGOProtos.Rpc.PlatformMetricDataOrBuilder getDurationOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BootTime.CLIIACAJEIG bpebfhonkmg = 2;</code>
-   * @return The enum numeric value on the wire for bpebfhonkmg.
+   * <code>.POGOProtos.Rpc.BootTime.BootPhase boot_phase = 2;</code>
+   * @return The enum numeric value on the wire for bootPhase.
    */
-  int getBpebfhonkmgValue();
+  int getBootPhaseValue();
   /**
-   * <code>.POGOProtos.Rpc.BootTime.CLIIACAJEIG bpebfhonkmg = 2;</code>
-   * @return The bpebfhonkmg.
+   * <code>.POGOProtos.Rpc.BootTime.BootPhase boot_phase = 2;</code>
+   * @return The bootPhase.
    */
-  POGOProtos.Rpc.BootTime.CLIIACAJEIG getBpebfhonkmg();
+  POGOProtos.Rpc.BootTime.BootPhase getBootPhase();
 }

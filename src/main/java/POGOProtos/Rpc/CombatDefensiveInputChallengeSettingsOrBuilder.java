@@ -8,8 +8,8 @@ public interface CombatDefensiveInputChallengeSettingsOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>float dolfdlbhkfp = 1;</code>
-   * @return The dolfdlbhkfp.
+   * <code>float full_rotations_for_max_score = 1;</code>
+   * @return The fullRotationsForMaxScore.
    */
-  float getDolfdlbhkfp();
+  float getFullRotationsForMaxScore();
 }

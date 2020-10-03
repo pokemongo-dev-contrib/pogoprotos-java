@@ -65,11 +65,11 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              availableSku_ = new java.util.ArrayList<POGOProtos.Rpc.AvailableSkuProto>();
+              availableSku_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformAvailableSkuProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             availableSku_.add(
-                input.readMessage(POGOProtos.Rpc.AvailableSkuProto.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.PlatformAvailableSkuProto.parser(), extensionRegistry));
             break;
           }
           case 26: {
@@ -266,41 +266,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int AVAILABLE_SKU_FIELD_NUMBER = 2;
-  private java.util.List<POGOProtos.Rpc.AvailableSkuProto> availableSku_;
+  private java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto> availableSku_;
   /**
-   * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.AvailableSkuProto> getAvailableSkuList() {
+  public java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto> getAvailableSkuList() {
     return availableSku_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.AvailableSkuProtoOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder> 
       getAvailableSkuOrBuilderList() {
     return availableSku_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   @java.lang.Override
   public int getAvailableSkuCount() {
     return availableSku_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AvailableSkuProto getAvailableSku(int index) {
+  public POGOProtos.Rpc.PlatformAvailableSkuProto getAvailableSku(int index) {
     return availableSku_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AvailableSkuProtoOrBuilder getAvailableSkuOrBuilder(
+  public POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder getAvailableSkuOrBuilder(
       int index) {
     return availableSku_.get(index);
   }
@@ -871,22 +871,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.AvailableSkuProto> availableSku_ =
+    private java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto> availableSku_ =
       java.util.Collections.emptyList();
     private void ensureAvailableSkuIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        availableSku_ = new java.util.ArrayList<POGOProtos.Rpc.AvailableSkuProto>(availableSku_);
+        availableSku_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformAvailableSkuProto>(availableSku_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.AvailableSkuProto, POGOProtos.Rpc.AvailableSkuProto.Builder, POGOProtos.Rpc.AvailableSkuProtoOrBuilder> availableSkuBuilder_;
+        POGOProtos.Rpc.PlatformAvailableSkuProto, POGOProtos.Rpc.PlatformAvailableSkuProto.Builder, POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder> availableSkuBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.AvailableSkuProto> getAvailableSkuList() {
+    public java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto> getAvailableSkuList() {
       if (availableSkuBuilder_ == null) {
         return java.util.Collections.unmodifiableList(availableSku_);
       } else {
@@ -894,7 +894,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public int getAvailableSkuCount() {
       if (availableSkuBuilder_ == null) {
@@ -904,9 +904,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
-    public POGOProtos.Rpc.AvailableSkuProto getAvailableSku(int index) {
+    public POGOProtos.Rpc.PlatformAvailableSkuProto getAvailableSku(int index) {
       if (availableSkuBuilder_ == null) {
         return availableSku_.get(index);
       } else {
@@ -914,10 +914,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder setAvailableSku(
-        int index, POGOProtos.Rpc.AvailableSkuProto value) {
+        int index, POGOProtos.Rpc.PlatformAvailableSkuProto value) {
       if (availableSkuBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -931,10 +931,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder setAvailableSku(
-        int index, POGOProtos.Rpc.AvailableSkuProto.Builder builderForValue) {
+        int index, POGOProtos.Rpc.PlatformAvailableSkuProto.Builder builderForValue) {
       if (availableSkuBuilder_ == null) {
         ensureAvailableSkuIsMutable();
         availableSku_.set(index, builderForValue.build());
@@ -945,9 +945,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
-    public Builder addAvailableSku(POGOProtos.Rpc.AvailableSkuProto value) {
+    public Builder addAvailableSku(POGOProtos.Rpc.PlatformAvailableSkuProto value) {
       if (availableSkuBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -961,10 +961,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder addAvailableSku(
-        int index, POGOProtos.Rpc.AvailableSkuProto value) {
+        int index, POGOProtos.Rpc.PlatformAvailableSkuProto value) {
       if (availableSkuBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -978,10 +978,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder addAvailableSku(
-        POGOProtos.Rpc.AvailableSkuProto.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformAvailableSkuProto.Builder builderForValue) {
       if (availableSkuBuilder_ == null) {
         ensureAvailableSkuIsMutable();
         availableSku_.add(builderForValue.build());
@@ -992,10 +992,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder addAvailableSku(
-        int index, POGOProtos.Rpc.AvailableSkuProto.Builder builderForValue) {
+        int index, POGOProtos.Rpc.PlatformAvailableSkuProto.Builder builderForValue) {
       if (availableSkuBuilder_ == null) {
         ensureAvailableSkuIsMutable();
         availableSku_.add(index, builderForValue.build());
@@ -1006,10 +1006,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder addAllAvailableSku(
-        java.lang.Iterable<? extends POGOProtos.Rpc.AvailableSkuProto> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.PlatformAvailableSkuProto> values) {
       if (availableSkuBuilder_ == null) {
         ensureAvailableSkuIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1021,7 +1021,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder clearAvailableSku() {
       if (availableSkuBuilder_ == null) {
@@ -1034,7 +1034,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
     public Builder removeAvailableSku(int index) {
       if (availableSkuBuilder_ == null) {
@@ -1047,16 +1047,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
-    public POGOProtos.Rpc.AvailableSkuProto.Builder getAvailableSkuBuilder(
+    public POGOProtos.Rpc.PlatformAvailableSkuProto.Builder getAvailableSkuBuilder(
         int index) {
       return getAvailableSkuFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
-    public POGOProtos.Rpc.AvailableSkuProtoOrBuilder getAvailableSkuOrBuilder(
+    public POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder getAvailableSkuOrBuilder(
         int index) {
       if (availableSkuBuilder_ == null) {
         return availableSku_.get(index);  } else {
@@ -1064,9 +1064,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.AvailableSkuProtoOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder> 
          getAvailableSkuOrBuilderList() {
       if (availableSkuBuilder_ != null) {
         return availableSkuBuilder_.getMessageOrBuilderList();
@@ -1075,33 +1075,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
-    public POGOProtos.Rpc.AvailableSkuProto.Builder addAvailableSkuBuilder() {
+    public POGOProtos.Rpc.PlatformAvailableSkuProto.Builder addAvailableSkuBuilder() {
       return getAvailableSkuFieldBuilder().addBuilder(
-          POGOProtos.Rpc.AvailableSkuProto.getDefaultInstance());
+          POGOProtos.Rpc.PlatformAvailableSkuProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
-    public POGOProtos.Rpc.AvailableSkuProto.Builder addAvailableSkuBuilder(
+    public POGOProtos.Rpc.PlatformAvailableSkuProto.Builder addAvailableSkuBuilder(
         int index) {
       return getAvailableSkuFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.AvailableSkuProto.getDefaultInstance());
+          index, POGOProtos.Rpc.PlatformAvailableSkuProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AvailableSkuProto available_sku = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformAvailableSkuProto available_sku = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.AvailableSkuProto.Builder> 
+    public java.util.List<POGOProtos.Rpc.PlatformAvailableSkuProto.Builder> 
          getAvailableSkuBuilderList() {
       return getAvailableSkuFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.AvailableSkuProto, POGOProtos.Rpc.AvailableSkuProto.Builder, POGOProtos.Rpc.AvailableSkuProtoOrBuilder> 
+        POGOProtos.Rpc.PlatformAvailableSkuProto, POGOProtos.Rpc.PlatformAvailableSkuProto.Builder, POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder> 
         getAvailableSkuFieldBuilder() {
       if (availableSkuBuilder_ == null) {
         availableSkuBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.AvailableSkuProto, POGOProtos.Rpc.AvailableSkuProto.Builder, POGOProtos.Rpc.AvailableSkuProtoOrBuilder>(
+            POGOProtos.Rpc.PlatformAvailableSkuProto, POGOProtos.Rpc.PlatformAvailableSkuProto.Builder, POGOProtos.Rpc.PlatformAvailableSkuProtoOrBuilder>(
                 availableSku_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

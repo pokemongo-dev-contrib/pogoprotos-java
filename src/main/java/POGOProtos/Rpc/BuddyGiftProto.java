@@ -54,26 +54,26 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             POGOProtos.Rpc.SouvenirProto.Builder subBuilder = null;
-            if (bohgjjmmpfd_ != null) {
-              subBuilder = bohgjjmmpfd_.toBuilder();
+            if (souvenir_ != null) {
+              subBuilder = souvenir_.toBuilder();
             }
-            bohgjjmmpfd_ = input.readMessage(POGOProtos.Rpc.SouvenirProto.parser(), extensionRegistry);
+            souvenir_ = input.readMessage(POGOProtos.Rpc.SouvenirProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(bohgjjmmpfd_);
-              bohgjjmmpfd_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(souvenir_);
+              souvenir_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 18: {
             POGOProtos.Rpc.LootProto.Builder subBuilder = null;
-            if (jbejbaggpfa_ != null) {
-              subBuilder = jbejbaggpfa_.toBuilder();
+            if (lootProto_ != null) {
+              subBuilder = lootProto_.toBuilder();
             }
-            jbejbaggpfa_ = input.readMessage(POGOProtos.Rpc.LootProto.parser(), extensionRegistry);
+            lootProto_ = input.readMessage(POGOProtos.Rpc.LootProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(jbejbaggpfa_);
-              jbejbaggpfa_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(lootProto_);
+              lootProto_ = subBuilder.buildPartial();
             }
 
             break;
@@ -110,56 +110,56 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.BuddyGiftProto.class, POGOProtos.Rpc.BuddyGiftProto.Builder.class);
   }
 
-  public static final int BOHGJJMMPFD_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.SouvenirProto bohgjjmmpfd_;
+  public static final int SOUVENIR_FIELD_NUMBER = 1;
+  private POGOProtos.Rpc.SouvenirProto souvenir_;
   /**
-   * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
-   * @return Whether the bohgjjmmpfd field is set.
+   * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
+   * @return Whether the souvenir field is set.
    */
   @java.lang.Override
-  public boolean hasBohgjjmmpfd() {
-    return bohgjjmmpfd_ != null;
+  public boolean hasSouvenir() {
+    return souvenir_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
-   * @return The bohgjjmmpfd.
+   * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
+   * @return The souvenir.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.SouvenirProto getBohgjjmmpfd() {
-    return bohgjjmmpfd_ == null ? POGOProtos.Rpc.SouvenirProto.getDefaultInstance() : bohgjjmmpfd_;
+  public POGOProtos.Rpc.SouvenirProto getSouvenir() {
+    return souvenir_ == null ? POGOProtos.Rpc.SouvenirProto.getDefaultInstance() : souvenir_;
   }
   /**
-   * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
+   * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.SouvenirProtoOrBuilder getBohgjjmmpfdOrBuilder() {
-    return getBohgjjmmpfd();
+  public POGOProtos.Rpc.SouvenirProtoOrBuilder getSouvenirOrBuilder() {
+    return getSouvenir();
   }
 
-  public static final int JBEJBAGGPFA_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.LootProto jbejbaggpfa_;
+  public static final int LOOT_PROTO_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.LootProto lootProto_;
   /**
-   * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
-   * @return Whether the jbejbaggpfa field is set.
+   * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
+   * @return Whether the lootProto field is set.
    */
   @java.lang.Override
-  public boolean hasJbejbaggpfa() {
-    return jbejbaggpfa_ != null;
+  public boolean hasLootProto() {
+    return lootProto_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
-   * @return The jbejbaggpfa.
+   * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
+   * @return The lootProto.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.LootProto getJbejbaggpfa() {
-    return jbejbaggpfa_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : jbejbaggpfa_;
+  public POGOProtos.Rpc.LootProto getLootProto() {
+    return lootProto_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : lootProto_;
   }
   /**
-   * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
+   * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.LootProtoOrBuilder getJbejbaggpfaOrBuilder() {
-    return getJbejbaggpfa();
+  public POGOProtos.Rpc.LootProtoOrBuilder getLootProtoOrBuilder() {
+    return getLootProto();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -176,11 +176,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (bohgjjmmpfd_ != null) {
-      output.writeMessage(1, getBohgjjmmpfd());
+    if (souvenir_ != null) {
+      output.writeMessage(1, getSouvenir());
     }
-    if (jbejbaggpfa_ != null) {
-      output.writeMessage(2, getJbejbaggpfa());
+    if (lootProto_ != null) {
+      output.writeMessage(2, getLootProto());
     }
     unknownFields.writeTo(output);
   }
@@ -191,13 +191,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (bohgjjmmpfd_ != null) {
+    if (souvenir_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getBohgjjmmpfd());
+        .computeMessageSize(1, getSouvenir());
     }
-    if (jbejbaggpfa_ != null) {
+    if (lootProto_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getJbejbaggpfa());
+        .computeMessageSize(2, getLootProto());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -214,15 +214,15 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BuddyGiftProto other = (POGOProtos.Rpc.BuddyGiftProto) obj;
 
-    if (hasBohgjjmmpfd() != other.hasBohgjjmmpfd()) return false;
-    if (hasBohgjjmmpfd()) {
-      if (!getBohgjjmmpfd()
-          .equals(other.getBohgjjmmpfd())) return false;
+    if (hasSouvenir() != other.hasSouvenir()) return false;
+    if (hasSouvenir()) {
+      if (!getSouvenir()
+          .equals(other.getSouvenir())) return false;
     }
-    if (hasJbejbaggpfa() != other.hasJbejbaggpfa()) return false;
-    if (hasJbejbaggpfa()) {
-      if (!getJbejbaggpfa()
-          .equals(other.getJbejbaggpfa())) return false;
+    if (hasLootProto() != other.hasLootProto()) return false;
+    if (hasLootProto()) {
+      if (!getLootProto()
+          .equals(other.getLootProto())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -235,13 +235,13 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasBohgjjmmpfd()) {
-      hash = (37 * hash) + BOHGJJMMPFD_FIELD_NUMBER;
-      hash = (53 * hash) + getBohgjjmmpfd().hashCode();
+    if (hasSouvenir()) {
+      hash = (37 * hash) + SOUVENIR_FIELD_NUMBER;
+      hash = (53 * hash) + getSouvenir().hashCode();
     }
-    if (hasJbejbaggpfa()) {
-      hash = (37 * hash) + JBEJBAGGPFA_FIELD_NUMBER;
-      hash = (53 * hash) + getJbejbaggpfa().hashCode();
+    if (hasLootProto()) {
+      hash = (37 * hash) + LOOT_PROTO_FIELD_NUMBER;
+      hash = (53 * hash) + getLootProto().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -380,17 +380,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (bohgjjmmpfdBuilder_ == null) {
-        bohgjjmmpfd_ = null;
+      if (souvenirBuilder_ == null) {
+        souvenir_ = null;
       } else {
-        bohgjjmmpfd_ = null;
-        bohgjjmmpfdBuilder_ = null;
+        souvenir_ = null;
+        souvenirBuilder_ = null;
       }
-      if (jbejbaggpfaBuilder_ == null) {
-        jbejbaggpfa_ = null;
+      if (lootProtoBuilder_ == null) {
+        lootProto_ = null;
       } else {
-        jbejbaggpfa_ = null;
-        jbejbaggpfaBuilder_ = null;
+        lootProto_ = null;
+        lootProtoBuilder_ = null;
       }
       return this;
     }
@@ -418,15 +418,15 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.BuddyGiftProto buildPartial() {
       POGOProtos.Rpc.BuddyGiftProto result = new POGOProtos.Rpc.BuddyGiftProto(this);
-      if (bohgjjmmpfdBuilder_ == null) {
-        result.bohgjjmmpfd_ = bohgjjmmpfd_;
+      if (souvenirBuilder_ == null) {
+        result.souvenir_ = souvenir_;
       } else {
-        result.bohgjjmmpfd_ = bohgjjmmpfdBuilder_.build();
+        result.souvenir_ = souvenirBuilder_.build();
       }
-      if (jbejbaggpfaBuilder_ == null) {
-        result.jbejbaggpfa_ = jbejbaggpfa_;
+      if (lootProtoBuilder_ == null) {
+        result.lootProto_ = lootProto_;
       } else {
-        result.jbejbaggpfa_ = jbejbaggpfaBuilder_.build();
+        result.lootProto_ = lootProtoBuilder_.build();
       }
       onBuilt();
       return result;
@@ -476,11 +476,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BuddyGiftProto other) {
       if (other == POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance()) return this;
-      if (other.hasBohgjjmmpfd()) {
-        mergeBohgjjmmpfd(other.getBohgjjmmpfd());
+      if (other.hasSouvenir()) {
+        mergeSouvenir(other.getSouvenir());
       }
-      if (other.hasJbejbaggpfa()) {
-        mergeJbejbaggpfa(other.getJbejbaggpfa());
+      if (other.hasLootProto()) {
+        mergeLootProto(other.getLootProto());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -511,242 +511,242 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.SouvenirProto bohgjjmmpfd_;
+    private POGOProtos.Rpc.SouvenirProto souvenir_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.SouvenirProto, POGOProtos.Rpc.SouvenirProto.Builder, POGOProtos.Rpc.SouvenirProtoOrBuilder> bohgjjmmpfdBuilder_;
+        POGOProtos.Rpc.SouvenirProto, POGOProtos.Rpc.SouvenirProto.Builder, POGOProtos.Rpc.SouvenirProtoOrBuilder> souvenirBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
-     * @return Whether the bohgjjmmpfd field is set.
+     * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
+     * @return Whether the souvenir field is set.
      */
-    public boolean hasBohgjjmmpfd() {
-      return bohgjjmmpfdBuilder_ != null || bohgjjmmpfd_ != null;
+    public boolean hasSouvenir() {
+      return souvenirBuilder_ != null || souvenir_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
-     * @return The bohgjjmmpfd.
+     * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
+     * @return The souvenir.
      */
-    public POGOProtos.Rpc.SouvenirProto getBohgjjmmpfd() {
-      if (bohgjjmmpfdBuilder_ == null) {
-        return bohgjjmmpfd_ == null ? POGOProtos.Rpc.SouvenirProto.getDefaultInstance() : bohgjjmmpfd_;
+    public POGOProtos.Rpc.SouvenirProto getSouvenir() {
+      if (souvenirBuilder_ == null) {
+        return souvenir_ == null ? POGOProtos.Rpc.SouvenirProto.getDefaultInstance() : souvenir_;
       } else {
-        return bohgjjmmpfdBuilder_.getMessage();
+        return souvenirBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
+     * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
      */
-    public Builder setBohgjjmmpfd(POGOProtos.Rpc.SouvenirProto value) {
-      if (bohgjjmmpfdBuilder_ == null) {
+    public Builder setSouvenir(POGOProtos.Rpc.SouvenirProto value) {
+      if (souvenirBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        bohgjjmmpfd_ = value;
+        souvenir_ = value;
         onChanged();
       } else {
-        bohgjjmmpfdBuilder_.setMessage(value);
+        souvenirBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
+     * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
      */
-    public Builder setBohgjjmmpfd(
+    public Builder setSouvenir(
         POGOProtos.Rpc.SouvenirProto.Builder builderForValue) {
-      if (bohgjjmmpfdBuilder_ == null) {
-        bohgjjmmpfd_ = builderForValue.build();
+      if (souvenirBuilder_ == null) {
+        souvenir_ = builderForValue.build();
         onChanged();
       } else {
-        bohgjjmmpfdBuilder_.setMessage(builderForValue.build());
+        souvenirBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
+     * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
      */
-    public Builder mergeBohgjjmmpfd(POGOProtos.Rpc.SouvenirProto value) {
-      if (bohgjjmmpfdBuilder_ == null) {
-        if (bohgjjmmpfd_ != null) {
-          bohgjjmmpfd_ =
-            POGOProtos.Rpc.SouvenirProto.newBuilder(bohgjjmmpfd_).mergeFrom(value).buildPartial();
+    public Builder mergeSouvenir(POGOProtos.Rpc.SouvenirProto value) {
+      if (souvenirBuilder_ == null) {
+        if (souvenir_ != null) {
+          souvenir_ =
+            POGOProtos.Rpc.SouvenirProto.newBuilder(souvenir_).mergeFrom(value).buildPartial();
         } else {
-          bohgjjmmpfd_ = value;
+          souvenir_ = value;
         }
         onChanged();
       } else {
-        bohgjjmmpfdBuilder_.mergeFrom(value);
+        souvenirBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
+     * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
      */
-    public Builder clearBohgjjmmpfd() {
-      if (bohgjjmmpfdBuilder_ == null) {
-        bohgjjmmpfd_ = null;
+    public Builder clearSouvenir() {
+      if (souvenirBuilder_ == null) {
+        souvenir_ = null;
         onChanged();
       } else {
-        bohgjjmmpfd_ = null;
-        bohgjjmmpfdBuilder_ = null;
+        souvenir_ = null;
+        souvenirBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
+     * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
      */
-    public POGOProtos.Rpc.SouvenirProto.Builder getBohgjjmmpfdBuilder() {
+    public POGOProtos.Rpc.SouvenirProto.Builder getSouvenirBuilder() {
       
       onChanged();
-      return getBohgjjmmpfdFieldBuilder().getBuilder();
+      return getSouvenirFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
+     * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
      */
-    public POGOProtos.Rpc.SouvenirProtoOrBuilder getBohgjjmmpfdOrBuilder() {
-      if (bohgjjmmpfdBuilder_ != null) {
-        return bohgjjmmpfdBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.SouvenirProtoOrBuilder getSouvenirOrBuilder() {
+      if (souvenirBuilder_ != null) {
+        return souvenirBuilder_.getMessageOrBuilder();
       } else {
-        return bohgjjmmpfd_ == null ?
-            POGOProtos.Rpc.SouvenirProto.getDefaultInstance() : bohgjjmmpfd_;
+        return souvenir_ == null ?
+            POGOProtos.Rpc.SouvenirProto.getDefaultInstance() : souvenir_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
+     * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.SouvenirProto, POGOProtos.Rpc.SouvenirProto.Builder, POGOProtos.Rpc.SouvenirProtoOrBuilder> 
-        getBohgjjmmpfdFieldBuilder() {
-      if (bohgjjmmpfdBuilder_ == null) {
-        bohgjjmmpfdBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getSouvenirFieldBuilder() {
+      if (souvenirBuilder_ == null) {
+        souvenirBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.SouvenirProto, POGOProtos.Rpc.SouvenirProto.Builder, POGOProtos.Rpc.SouvenirProtoOrBuilder>(
-                getBohgjjmmpfd(),
+                getSouvenir(),
                 getParentForChildren(),
                 isClean());
-        bohgjjmmpfd_ = null;
+        souvenir_ = null;
       }
-      return bohgjjmmpfdBuilder_;
+      return souvenirBuilder_;
     }
 
-    private POGOProtos.Rpc.LootProto jbejbaggpfa_;
+    private POGOProtos.Rpc.LootProto lootProto_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> jbejbaggpfaBuilder_;
+        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> lootProtoBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
-     * @return Whether the jbejbaggpfa field is set.
+     * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
+     * @return Whether the lootProto field is set.
      */
-    public boolean hasJbejbaggpfa() {
-      return jbejbaggpfaBuilder_ != null || jbejbaggpfa_ != null;
+    public boolean hasLootProto() {
+      return lootProtoBuilder_ != null || lootProto_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
-     * @return The jbejbaggpfa.
+     * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
+     * @return The lootProto.
      */
-    public POGOProtos.Rpc.LootProto getJbejbaggpfa() {
-      if (jbejbaggpfaBuilder_ == null) {
-        return jbejbaggpfa_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : jbejbaggpfa_;
+    public POGOProtos.Rpc.LootProto getLootProto() {
+      if (lootProtoBuilder_ == null) {
+        return lootProto_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : lootProto_;
       } else {
-        return jbejbaggpfaBuilder_.getMessage();
+        return lootProtoBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
      */
-    public Builder setJbejbaggpfa(POGOProtos.Rpc.LootProto value) {
-      if (jbejbaggpfaBuilder_ == null) {
+    public Builder setLootProto(POGOProtos.Rpc.LootProto value) {
+      if (lootProtoBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        jbejbaggpfa_ = value;
+        lootProto_ = value;
         onChanged();
       } else {
-        jbejbaggpfaBuilder_.setMessage(value);
+        lootProtoBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
      */
-    public Builder setJbejbaggpfa(
+    public Builder setLootProto(
         POGOProtos.Rpc.LootProto.Builder builderForValue) {
-      if (jbejbaggpfaBuilder_ == null) {
-        jbejbaggpfa_ = builderForValue.build();
+      if (lootProtoBuilder_ == null) {
+        lootProto_ = builderForValue.build();
         onChanged();
       } else {
-        jbejbaggpfaBuilder_.setMessage(builderForValue.build());
+        lootProtoBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
      */
-    public Builder mergeJbejbaggpfa(POGOProtos.Rpc.LootProto value) {
-      if (jbejbaggpfaBuilder_ == null) {
-        if (jbejbaggpfa_ != null) {
-          jbejbaggpfa_ =
-            POGOProtos.Rpc.LootProto.newBuilder(jbejbaggpfa_).mergeFrom(value).buildPartial();
+    public Builder mergeLootProto(POGOProtos.Rpc.LootProto value) {
+      if (lootProtoBuilder_ == null) {
+        if (lootProto_ != null) {
+          lootProto_ =
+            POGOProtos.Rpc.LootProto.newBuilder(lootProto_).mergeFrom(value).buildPartial();
         } else {
-          jbejbaggpfa_ = value;
+          lootProto_ = value;
         }
         onChanged();
       } else {
-        jbejbaggpfaBuilder_.mergeFrom(value);
+        lootProtoBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
      */
-    public Builder clearJbejbaggpfa() {
-      if (jbejbaggpfaBuilder_ == null) {
-        jbejbaggpfa_ = null;
+    public Builder clearLootProto() {
+      if (lootProtoBuilder_ == null) {
+        lootProto_ = null;
         onChanged();
       } else {
-        jbejbaggpfa_ = null;
-        jbejbaggpfaBuilder_ = null;
+        lootProto_ = null;
+        lootProtoBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
      */
-    public POGOProtos.Rpc.LootProto.Builder getJbejbaggpfaBuilder() {
+    public POGOProtos.Rpc.LootProto.Builder getLootProtoBuilder() {
       
       onChanged();
-      return getJbejbaggpfaFieldBuilder().getBuilder();
+      return getLootProtoFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
      */
-    public POGOProtos.Rpc.LootProtoOrBuilder getJbejbaggpfaOrBuilder() {
-      if (jbejbaggpfaBuilder_ != null) {
-        return jbejbaggpfaBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.LootProtoOrBuilder getLootProtoOrBuilder() {
+      if (lootProtoBuilder_ != null) {
+        return lootProtoBuilder_.getMessageOrBuilder();
       } else {
-        return jbejbaggpfa_ == null ?
-            POGOProtos.Rpc.LootProto.getDefaultInstance() : jbejbaggpfa_;
+        return lootProto_ == null ?
+            POGOProtos.Rpc.LootProto.getDefaultInstance() : lootProto_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
+     * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> 
-        getJbejbaggpfaFieldBuilder() {
-      if (jbejbaggpfaBuilder_ == null) {
-        jbejbaggpfaBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getLootProtoFieldBuilder() {
+      if (lootProtoBuilder_ == null) {
+        lootProtoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder>(
-                getJbejbaggpfa(),
+                getLootProto(),
                 getParentForChildren(),
                 isClean());
-        jbejbaggpfa_ = null;
+        lootProto_ = null;
       }
-      return jbejbaggpfaBuilder_;
+      return lootProtoBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

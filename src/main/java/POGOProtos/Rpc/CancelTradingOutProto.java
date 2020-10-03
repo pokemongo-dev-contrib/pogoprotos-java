@@ -61,13 +61,13 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             POGOProtos.Rpc.TradingProto.Builder subBuilder = null;
-            if (jikkdljggho_ != null) {
-              subBuilder = jikkdljggho_.toBuilder();
+            if (trading_ != null) {
+              subBuilder = trading_.toBuilder();
             }
-            jikkdljggho_ = input.readMessage(POGOProtos.Rpc.TradingProto.parser(), extensionRegistry);
+            trading_ = input.readMessage(POGOProtos.Rpc.TradingProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(jikkdljggho_);
-              jikkdljggho_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(trading_);
+              trading_ = subBuilder.buildPartial();
             }
 
             break;
@@ -280,30 +280,30 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.CancelTradingOutProto.Result.UNRECOGNIZED : result;
   }
 
-  public static final int JIKKDLJGGHO_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.TradingProto jikkdljggho_;
+  public static final int TRADING_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.TradingProto trading_;
   /**
-   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
-   * @return Whether the jikkdljggho field is set.
+   * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
+   * @return Whether the trading field is set.
    */
   @java.lang.Override
-  public boolean hasJikkdljggho() {
-    return jikkdljggho_ != null;
+  public boolean hasTrading() {
+    return trading_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
-   * @return The jikkdljggho.
+   * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
+   * @return The trading.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.TradingProto getJikkdljggho() {
-    return jikkdljggho_ == null ? POGOProtos.Rpc.TradingProto.getDefaultInstance() : jikkdljggho_;
+  public POGOProtos.Rpc.TradingProto getTrading() {
+    return trading_ == null ? POGOProtos.Rpc.TradingProto.getDefaultInstance() : trading_;
   }
   /**
-   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
+   * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.TradingProtoOrBuilder getJikkdljgghoOrBuilder() {
-    return getJikkdljggho();
+  public POGOProtos.Rpc.TradingProtoOrBuilder getTradingOrBuilder() {
+    return getTrading();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -323,8 +323,8 @@ private static final long serialVersionUID = 0L;
     if (result_ != POGOProtos.Rpc.CancelTradingOutProto.Result.UNSET.getNumber()) {
       output.writeEnum(1, result_);
     }
-    if (jikkdljggho_ != null) {
-      output.writeMessage(2, getJikkdljggho());
+    if (trading_ != null) {
+      output.writeMessage(2, getTrading());
     }
     unknownFields.writeTo(output);
   }
@@ -339,9 +339,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }
-    if (jikkdljggho_ != null) {
+    if (trading_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getJikkdljggho());
+        .computeMessageSize(2, getTrading());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -359,10 +359,10 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.CancelTradingOutProto other = (POGOProtos.Rpc.CancelTradingOutProto) obj;
 
     if (result_ != other.result_) return false;
-    if (hasJikkdljggho() != other.hasJikkdljggho()) return false;
-    if (hasJikkdljggho()) {
-      if (!getJikkdljggho()
-          .equals(other.getJikkdljggho())) return false;
+    if (hasTrading() != other.hasTrading()) return false;
+    if (hasTrading()) {
+      if (!getTrading()
+          .equals(other.getTrading())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -377,9 +377,9 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + RESULT_FIELD_NUMBER;
     hash = (53 * hash) + result_;
-    if (hasJikkdljggho()) {
-      hash = (37 * hash) + JIKKDLJGGHO_FIELD_NUMBER;
-      hash = (53 * hash) + getJikkdljggho().hashCode();
+    if (hasTrading()) {
+      hash = (37 * hash) + TRADING_FIELD_NUMBER;
+      hash = (53 * hash) + getTrading().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -520,11 +520,11 @@ private static final long serialVersionUID = 0L;
       super.clear();
       result_ = 0;
 
-      if (jikkdljgghoBuilder_ == null) {
-        jikkdljggho_ = null;
+      if (tradingBuilder_ == null) {
+        trading_ = null;
       } else {
-        jikkdljggho_ = null;
-        jikkdljgghoBuilder_ = null;
+        trading_ = null;
+        tradingBuilder_ = null;
       }
       return this;
     }
@@ -553,10 +553,10 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.CancelTradingOutProto buildPartial() {
       POGOProtos.Rpc.CancelTradingOutProto result = new POGOProtos.Rpc.CancelTradingOutProto(this);
       result.result_ = result_;
-      if (jikkdljgghoBuilder_ == null) {
-        result.jikkdljggho_ = jikkdljggho_;
+      if (tradingBuilder_ == null) {
+        result.trading_ = trading_;
       } else {
-        result.jikkdljggho_ = jikkdljgghoBuilder_.build();
+        result.trading_ = tradingBuilder_.build();
       }
       onBuilt();
       return result;
@@ -609,8 +609,8 @@ private static final long serialVersionUID = 0L;
       if (other.result_ != 0) {
         setResultValue(other.getResultValue());
       }
-      if (other.hasJikkdljggho()) {
-        mergeJikkdljggho(other.getJikkdljggho());
+      if (other.hasTrading()) {
+        mergeTrading(other.getTrading());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -695,123 +695,123 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.TradingProto jikkdljggho_;
+    private POGOProtos.Rpc.TradingProto trading_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.TradingProto, POGOProtos.Rpc.TradingProto.Builder, POGOProtos.Rpc.TradingProtoOrBuilder> jikkdljgghoBuilder_;
+        POGOProtos.Rpc.TradingProto, POGOProtos.Rpc.TradingProto.Builder, POGOProtos.Rpc.TradingProtoOrBuilder> tradingBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
-     * @return Whether the jikkdljggho field is set.
+     * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
+     * @return Whether the trading field is set.
      */
-    public boolean hasJikkdljggho() {
-      return jikkdljgghoBuilder_ != null || jikkdljggho_ != null;
+    public boolean hasTrading() {
+      return tradingBuilder_ != null || trading_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
-     * @return The jikkdljggho.
+     * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
+     * @return The trading.
      */
-    public POGOProtos.Rpc.TradingProto getJikkdljggho() {
-      if (jikkdljgghoBuilder_ == null) {
-        return jikkdljggho_ == null ? POGOProtos.Rpc.TradingProto.getDefaultInstance() : jikkdljggho_;
+    public POGOProtos.Rpc.TradingProto getTrading() {
+      if (tradingBuilder_ == null) {
+        return trading_ == null ? POGOProtos.Rpc.TradingProto.getDefaultInstance() : trading_;
       } else {
-        return jikkdljgghoBuilder_.getMessage();
+        return tradingBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
      */
-    public Builder setJikkdljggho(POGOProtos.Rpc.TradingProto value) {
-      if (jikkdljgghoBuilder_ == null) {
+    public Builder setTrading(POGOProtos.Rpc.TradingProto value) {
+      if (tradingBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        jikkdljggho_ = value;
+        trading_ = value;
         onChanged();
       } else {
-        jikkdljgghoBuilder_.setMessage(value);
+        tradingBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
      */
-    public Builder setJikkdljggho(
+    public Builder setTrading(
         POGOProtos.Rpc.TradingProto.Builder builderForValue) {
-      if (jikkdljgghoBuilder_ == null) {
-        jikkdljggho_ = builderForValue.build();
+      if (tradingBuilder_ == null) {
+        trading_ = builderForValue.build();
         onChanged();
       } else {
-        jikkdljgghoBuilder_.setMessage(builderForValue.build());
+        tradingBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
      */
-    public Builder mergeJikkdljggho(POGOProtos.Rpc.TradingProto value) {
-      if (jikkdljgghoBuilder_ == null) {
-        if (jikkdljggho_ != null) {
-          jikkdljggho_ =
-            POGOProtos.Rpc.TradingProto.newBuilder(jikkdljggho_).mergeFrom(value).buildPartial();
+    public Builder mergeTrading(POGOProtos.Rpc.TradingProto value) {
+      if (tradingBuilder_ == null) {
+        if (trading_ != null) {
+          trading_ =
+            POGOProtos.Rpc.TradingProto.newBuilder(trading_).mergeFrom(value).buildPartial();
         } else {
-          jikkdljggho_ = value;
+          trading_ = value;
         }
         onChanged();
       } else {
-        jikkdljgghoBuilder_.mergeFrom(value);
+        tradingBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
      */
-    public Builder clearJikkdljggho() {
-      if (jikkdljgghoBuilder_ == null) {
-        jikkdljggho_ = null;
+    public Builder clearTrading() {
+      if (tradingBuilder_ == null) {
+        trading_ = null;
         onChanged();
       } else {
-        jikkdljggho_ = null;
-        jikkdljgghoBuilder_ = null;
+        trading_ = null;
+        tradingBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
      */
-    public POGOProtos.Rpc.TradingProto.Builder getJikkdljgghoBuilder() {
+    public POGOProtos.Rpc.TradingProto.Builder getTradingBuilder() {
       
       onChanged();
-      return getJikkdljgghoFieldBuilder().getBuilder();
+      return getTradingFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
      */
-    public POGOProtos.Rpc.TradingProtoOrBuilder getJikkdljgghoOrBuilder() {
-      if (jikkdljgghoBuilder_ != null) {
-        return jikkdljgghoBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.TradingProtoOrBuilder getTradingOrBuilder() {
+      if (tradingBuilder_ != null) {
+        return tradingBuilder_.getMessageOrBuilder();
       } else {
-        return jikkdljggho_ == null ?
-            POGOProtos.Rpc.TradingProto.getDefaultInstance() : jikkdljggho_;
+        return trading_ == null ?
+            POGOProtos.Rpc.TradingProto.getDefaultInstance() : trading_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
+     * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.TradingProto, POGOProtos.Rpc.TradingProto.Builder, POGOProtos.Rpc.TradingProtoOrBuilder> 
-        getJikkdljgghoFieldBuilder() {
-      if (jikkdljgghoBuilder_ == null) {
-        jikkdljgghoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getTradingFieldBuilder() {
+      if (tradingBuilder_ == null) {
+        tradingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.TradingProto, POGOProtos.Rpc.TradingProto.Builder, POGOProtos.Rpc.TradingProtoOrBuilder>(
-                getJikkdljggho(),
+                getTrading(),
                 getParentForChildren(),
                 isClean());
-        jikkdljggho_ = null;
+        trading_ = null;
       }
-      return jikkdljgghoBuilder_;
+      return tradingBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

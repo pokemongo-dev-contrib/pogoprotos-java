@@ -20,8 +20,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private CaptureProbabilityProto() {
-    blkbkkfpiio_ = java.util.Collections.emptyList();
-    dbianmbmnch_ = emptyFloatList();
+    pokeballType_ = java.util.Collections.emptyList();
+    captureProbability_ = emptyFloatList();
   }
 
   @java.lang.Override
@@ -58,10 +58,10 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              blkbkkfpiio_ = new java.util.ArrayList<java.lang.Integer>();
+              pokeballType_ = new java.util.ArrayList<java.lang.Integer>();
               mutable_bitField0_ |= 0x00000001;
             }
-            blkbkkfpiio_.add(rawValue);
+            pokeballType_.add(rawValue);
             break;
           }
           case 10: {
@@ -70,38 +70,38 @@ private static final long serialVersionUID = 0L;
             while(input.getBytesUntilLimit() > 0) {
               int rawValue = input.readEnum();
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                blkbkkfpiio_ = new java.util.ArrayList<java.lang.Integer>();
+                pokeballType_ = new java.util.ArrayList<java.lang.Integer>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              blkbkkfpiio_.add(rawValue);
+              pokeballType_.add(rawValue);
             }
             input.popLimit(oldLimit);
             break;
           }
           case 21: {
             if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-              dbianmbmnch_ = newFloatList();
+              captureProbability_ = newFloatList();
               mutable_bitField0_ |= 0x00000002;
             }
-            dbianmbmnch_.addFloat(input.readFloat());
+            captureProbability_.addFloat(input.readFloat());
             break;
           }
           case 18: {
             int length = input.readRawVarint32();
             int limit = input.pushLimit(length);
             if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-              dbianmbmnch_ = newFloatList();
+              captureProbability_ = newFloatList();
               mutable_bitField0_ |= 0x00000002;
             }
             while (input.getBytesUntilLimit() > 0) {
-              dbianmbmnch_.addFloat(input.readFloat());
+              captureProbability_.addFloat(input.readFloat());
             }
             input.popLimit(limit);
             break;
           }
           case 97: {
 
-            agbccfadhfo_ = input.readDouble();
+            reticleDifficultyScale_ = input.readDouble();
             break;
           }
           default: {
@@ -120,10 +120,10 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        blkbkkfpiio_ = java.util.Collections.unmodifiableList(blkbkkfpiio_);
+        pokeballType_ = java.util.Collections.unmodifiableList(pokeballType_);
       }
       if (((mutable_bitField0_ & 0x00000002) != 0)) {
-        dbianmbmnch_.makeImmutable(); // C
+        captureProbability_.makeImmutable(); // C
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -142,10 +142,10 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.CaptureProbabilityProto.class, POGOProtos.Rpc.CaptureProbabilityProto.Builder.class);
   }
 
-  public static final int BLKBKKFPIIO_FIELD_NUMBER = 1;
-  private java.util.List<java.lang.Integer> blkbkkfpiio_;
+  public static final int POKEBALL_TYPE_FIELD_NUMBER = 1;
+  private java.util.List<java.lang.Integer> pokeballType_;
   private static final com.google.protobuf.Internal.ListAdapter.Converter<
-      java.lang.Integer, POGOProtos.Rpc.Item> blkbkkfpiio_converter_ =
+      java.lang.Integer, POGOProtos.Rpc.Item> pokeballType_converter_ =
           new com.google.protobuf.Internal.ListAdapter.Converter<
               java.lang.Integer, POGOProtos.Rpc.Item>() {
             public POGOProtos.Rpc.Item convert(java.lang.Integer from) {
@@ -155,88 +155,88 @@ private static final long serialVersionUID = 0L;
             }
           };
   /**
-   * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-   * @return A list containing the blkbkkfpiio.
+   * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+   * @return A list containing the pokeballType.
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.Item> getBlkbkkfpiioList() {
+  public java.util.List<POGOProtos.Rpc.Item> getPokeballTypeList() {
     return new com.google.protobuf.Internal.ListAdapter<
-        java.lang.Integer, POGOProtos.Rpc.Item>(blkbkkfpiio_, blkbkkfpiio_converter_);
+        java.lang.Integer, POGOProtos.Rpc.Item>(pokeballType_, pokeballType_converter_);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-   * @return The count of blkbkkfpiio.
+   * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+   * @return The count of pokeballType.
    */
   @java.lang.Override
-  public int getBlkbkkfpiioCount() {
-    return blkbkkfpiio_.size();
+  public int getPokeballTypeCount() {
+    return pokeballType_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
    * @param index The index of the element to return.
-   * @return The blkbkkfpiio at the given index.
+   * @return The pokeballType at the given index.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.Item getBlkbkkfpiio(int index) {
-    return blkbkkfpiio_converter_.convert(blkbkkfpiio_.get(index));
+  public POGOProtos.Rpc.Item getPokeballType(int index) {
+    return pokeballType_converter_.convert(pokeballType_.get(index));
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-   * @return A list containing the enum numeric values on the wire for blkbkkfpiio.
+   * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+   * @return A list containing the enum numeric values on the wire for pokeballType.
    */
   @java.lang.Override
   public java.util.List<java.lang.Integer>
-  getBlkbkkfpiioValueList() {
-    return blkbkkfpiio_;
+  getPokeballTypeValueList() {
+    return pokeballType_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
+   * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
    * @param index The index of the value to return.
-   * @return The enum numeric value on the wire of blkbkkfpiio at the given index.
+   * @return The enum numeric value on the wire of pokeballType at the given index.
    */
   @java.lang.Override
-  public int getBlkbkkfpiioValue(int index) {
-    return blkbkkfpiio_.get(index);
+  public int getPokeballTypeValue(int index) {
+    return pokeballType_.get(index);
   }
-  private int blkbkkfpiioMemoizedSerializedSize;
+  private int pokeballTypeMemoizedSerializedSize;
 
-  public static final int DBIANMBMNCH_FIELD_NUMBER = 2;
-  private com.google.protobuf.Internal.FloatList dbianmbmnch_;
+  public static final int CAPTURE_PROBABILITY_FIELD_NUMBER = 2;
+  private com.google.protobuf.Internal.FloatList captureProbability_;
   /**
-   * <code>repeated float dbianmbmnch = 2;</code>
-   * @return A list containing the dbianmbmnch.
+   * <code>repeated float capture_probability = 2;</code>
+   * @return A list containing the captureProbability.
    */
   @java.lang.Override
   public java.util.List<java.lang.Float>
-      getDbianmbmnchList() {
-    return dbianmbmnch_;
+      getCaptureProbabilityList() {
+    return captureProbability_;
   }
   /**
-   * <code>repeated float dbianmbmnch = 2;</code>
-   * @return The count of dbianmbmnch.
+   * <code>repeated float capture_probability = 2;</code>
+   * @return The count of captureProbability.
    */
-  public int getDbianmbmnchCount() {
-    return dbianmbmnch_.size();
+  public int getCaptureProbabilityCount() {
+    return captureProbability_.size();
   }
   /**
-   * <code>repeated float dbianmbmnch = 2;</code>
+   * <code>repeated float capture_probability = 2;</code>
    * @param index The index of the element to return.
-   * @return The dbianmbmnch at the given index.
+   * @return The captureProbability at the given index.
    */
-  public float getDbianmbmnch(int index) {
-    return dbianmbmnch_.getFloat(index);
+  public float getCaptureProbability(int index) {
+    return captureProbability_.getFloat(index);
   }
-  private int dbianmbmnchMemoizedSerializedSize = -1;
+  private int captureProbabilityMemoizedSerializedSize = -1;
 
-  public static final int AGBCCFADHFO_FIELD_NUMBER = 12;
-  private double agbccfadhfo_;
+  public static final int RETICLE_DIFFICULTY_SCALE_FIELD_NUMBER = 12;
+  private double reticleDifficultyScale_;
   /**
-   * <code>double agbccfadhfo = 12;</code>
-   * @return The agbccfadhfo.
+   * <code>double reticle_difficulty_scale = 12;</code>
+   * @return The reticleDifficultyScale.
    */
   @java.lang.Override
-  public double getAgbccfadhfo() {
-    return agbccfadhfo_;
+  public double getReticleDifficultyScale() {
+    return reticleDifficultyScale_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -254,22 +254,22 @@ private static final long serialVersionUID = 0L;
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
     getSerializedSize();
-    if (getBlkbkkfpiioList().size() > 0) {
+    if (getPokeballTypeList().size() > 0) {
       output.writeUInt32NoTag(10);
-      output.writeUInt32NoTag(blkbkkfpiioMemoizedSerializedSize);
+      output.writeUInt32NoTag(pokeballTypeMemoizedSerializedSize);
     }
-    for (int i = 0; i < blkbkkfpiio_.size(); i++) {
-      output.writeEnumNoTag(blkbkkfpiio_.get(i));
+    for (int i = 0; i < pokeballType_.size(); i++) {
+      output.writeEnumNoTag(pokeballType_.get(i));
     }
-    if (getDbianmbmnchList().size() > 0) {
+    if (getCaptureProbabilityList().size() > 0) {
       output.writeUInt32NoTag(18);
-      output.writeUInt32NoTag(dbianmbmnchMemoizedSerializedSize);
+      output.writeUInt32NoTag(captureProbabilityMemoizedSerializedSize);
     }
-    for (int i = 0; i < dbianmbmnch_.size(); i++) {
-      output.writeFloatNoTag(dbianmbmnch_.getFloat(i));
+    for (int i = 0; i < captureProbability_.size(); i++) {
+      output.writeFloatNoTag(captureProbability_.getFloat(i));
     }
-    if (agbccfadhfo_ != 0D) {
-      output.writeDouble(12, agbccfadhfo_);
+    if (reticleDifficultyScale_ != 0D) {
+      output.writeDouble(12, reticleDifficultyScale_);
     }
     unknownFields.writeTo(output);
   }
@@ -282,30 +282,30 @@ private static final long serialVersionUID = 0L;
     size = 0;
     {
       int dataSize = 0;
-      for (int i = 0; i < blkbkkfpiio_.size(); i++) {
+      for (int i = 0; i < pokeballType_.size(); i++) {
         dataSize += com.google.protobuf.CodedOutputStream
-          .computeEnumSizeNoTag(blkbkkfpiio_.get(i));
+          .computeEnumSizeNoTag(pokeballType_.get(i));
       }
       size += dataSize;
-      if (!getBlkbkkfpiioList().isEmpty()) {  size += 1;
+      if (!getPokeballTypeList().isEmpty()) {  size += 1;
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32SizeNoTag(dataSize);
-      }blkbkkfpiioMemoizedSerializedSize = dataSize;
+      }pokeballTypeMemoizedSerializedSize = dataSize;
     }
     {
       int dataSize = 0;
-      dataSize = 4 * getDbianmbmnchList().size();
+      dataSize = 4 * getCaptureProbabilityList().size();
       size += dataSize;
-      if (!getDbianmbmnchList().isEmpty()) {
+      if (!getCaptureProbabilityList().isEmpty()) {
         size += 1;
         size += com.google.protobuf.CodedOutputStream
             .computeInt32SizeNoTag(dataSize);
       }
-      dbianmbmnchMemoizedSerializedSize = dataSize;
+      captureProbabilityMemoizedSerializedSize = dataSize;
     }
-    if (agbccfadhfo_ != 0D) {
+    if (reticleDifficultyScale_ != 0D) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(12, agbccfadhfo_);
+        .computeDoubleSize(12, reticleDifficultyScale_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -322,12 +322,12 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.CaptureProbabilityProto other = (POGOProtos.Rpc.CaptureProbabilityProto) obj;
 
-    if (!blkbkkfpiio_.equals(other.blkbkkfpiio_)) return false;
-    if (!getDbianmbmnchList()
-        .equals(other.getDbianmbmnchList())) return false;
-    if (java.lang.Double.doubleToLongBits(getAgbccfadhfo())
+    if (!pokeballType_.equals(other.pokeballType_)) return false;
+    if (!getCaptureProbabilityList()
+        .equals(other.getCaptureProbabilityList())) return false;
+    if (java.lang.Double.doubleToLongBits(getReticleDifficultyScale())
         != java.lang.Double.doubleToLongBits(
-            other.getAgbccfadhfo())) return false;
+            other.getReticleDifficultyScale())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -339,17 +339,17 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (getBlkbkkfpiioCount() > 0) {
-      hash = (37 * hash) + BLKBKKFPIIO_FIELD_NUMBER;
-      hash = (53 * hash) + blkbkkfpiio_.hashCode();
+    if (getPokeballTypeCount() > 0) {
+      hash = (37 * hash) + POKEBALL_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + pokeballType_.hashCode();
     }
-    if (getDbianmbmnchCount() > 0) {
-      hash = (37 * hash) + DBIANMBMNCH_FIELD_NUMBER;
-      hash = (53 * hash) + getDbianmbmnchList().hashCode();
+    if (getCaptureProbabilityCount() > 0) {
+      hash = (37 * hash) + CAPTURE_PROBABILITY_FIELD_NUMBER;
+      hash = (53 * hash) + getCaptureProbabilityList().hashCode();
     }
-    hash = (37 * hash) + AGBCCFADHFO_FIELD_NUMBER;
+    hash = (37 * hash) + RETICLE_DIFFICULTY_SCALE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getAgbccfadhfo()));
+        java.lang.Double.doubleToLongBits(getReticleDifficultyScale()));
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -487,11 +487,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      blkbkkfpiio_ = java.util.Collections.emptyList();
+      pokeballType_ = java.util.Collections.emptyList();
       bitField0_ = (bitField0_ & ~0x00000001);
-      dbianmbmnch_ = emptyFloatList();
+      captureProbability_ = emptyFloatList();
       bitField0_ = (bitField0_ & ~0x00000002);
-      agbccfadhfo_ = 0D;
+      reticleDifficultyScale_ = 0D;
 
       return this;
     }
@@ -521,16 +521,16 @@ private static final long serialVersionUID = 0L;
       POGOProtos.Rpc.CaptureProbabilityProto result = new POGOProtos.Rpc.CaptureProbabilityProto(this);
       int from_bitField0_ = bitField0_;
       if (((bitField0_ & 0x00000001) != 0)) {
-        blkbkkfpiio_ = java.util.Collections.unmodifiableList(blkbkkfpiio_);
+        pokeballType_ = java.util.Collections.unmodifiableList(pokeballType_);
         bitField0_ = (bitField0_ & ~0x00000001);
       }
-      result.blkbkkfpiio_ = blkbkkfpiio_;
+      result.pokeballType_ = pokeballType_;
       if (((bitField0_ & 0x00000002) != 0)) {
-        dbianmbmnch_.makeImmutable();
+        captureProbability_.makeImmutable();
         bitField0_ = (bitField0_ & ~0x00000002);
       }
-      result.dbianmbmnch_ = dbianmbmnch_;
-      result.agbccfadhfo_ = agbccfadhfo_;
+      result.captureProbability_ = captureProbability_;
+      result.reticleDifficultyScale_ = reticleDifficultyScale_;
       onBuilt();
       return result;
     }
@@ -579,28 +579,28 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.CaptureProbabilityProto other) {
       if (other == POGOProtos.Rpc.CaptureProbabilityProto.getDefaultInstance()) return this;
-      if (!other.blkbkkfpiio_.isEmpty()) {
-        if (blkbkkfpiio_.isEmpty()) {
-          blkbkkfpiio_ = other.blkbkkfpiio_;
+      if (!other.pokeballType_.isEmpty()) {
+        if (pokeballType_.isEmpty()) {
+          pokeballType_ = other.pokeballType_;
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          ensureBlkbkkfpiioIsMutable();
-          blkbkkfpiio_.addAll(other.blkbkkfpiio_);
+          ensurePokeballTypeIsMutable();
+          pokeballType_.addAll(other.pokeballType_);
         }
         onChanged();
       }
-      if (!other.dbianmbmnch_.isEmpty()) {
-        if (dbianmbmnch_.isEmpty()) {
-          dbianmbmnch_ = other.dbianmbmnch_;
+      if (!other.captureProbability_.isEmpty()) {
+        if (captureProbability_.isEmpty()) {
+          captureProbability_ = other.captureProbability_;
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          ensureDbianmbmnchIsMutable();
-          dbianmbmnch_.addAll(other.dbianmbmnch_);
+          ensureCaptureProbabilityIsMutable();
+          captureProbability_.addAll(other.captureProbability_);
         }
         onChanged();
       }
-      if (other.getAgbccfadhfo() != 0D) {
-        setAgbccfadhfo(other.getAgbccfadhfo());
+      if (other.getReticleDifficultyScale() != 0D) {
+        setReticleDifficultyScale(other.getReticleDifficultyScale());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -632,252 +632,252 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.util.List<java.lang.Integer> blkbkkfpiio_ =
+    private java.util.List<java.lang.Integer> pokeballType_ =
       java.util.Collections.emptyList();
-    private void ensureBlkbkkfpiioIsMutable() {
+    private void ensurePokeballTypeIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        blkbkkfpiio_ = new java.util.ArrayList<java.lang.Integer>(blkbkkfpiio_);
+        pokeballType_ = new java.util.ArrayList<java.lang.Integer>(pokeballType_);
         bitField0_ |= 0x00000001;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-     * @return A list containing the blkbkkfpiio.
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+     * @return A list containing the pokeballType.
      */
-    public java.util.List<POGOProtos.Rpc.Item> getBlkbkkfpiioList() {
+    public java.util.List<POGOProtos.Rpc.Item> getPokeballTypeList() {
       return new com.google.protobuf.Internal.ListAdapter<
-          java.lang.Integer, POGOProtos.Rpc.Item>(blkbkkfpiio_, blkbkkfpiio_converter_);
+          java.lang.Integer, POGOProtos.Rpc.Item>(pokeballType_, pokeballType_converter_);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-     * @return The count of blkbkkfpiio.
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+     * @return The count of pokeballType.
      */
-    public int getBlkbkkfpiioCount() {
-      return blkbkkfpiio_.size();
+    public int getPokeballTypeCount() {
+      return pokeballType_.size();
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
      * @param index The index of the element to return.
-     * @return The blkbkkfpiio at the given index.
+     * @return The pokeballType at the given index.
      */
-    public POGOProtos.Rpc.Item getBlkbkkfpiio(int index) {
-      return blkbkkfpiio_converter_.convert(blkbkkfpiio_.get(index));
+    public POGOProtos.Rpc.Item getPokeballType(int index) {
+      return pokeballType_converter_.convert(pokeballType_.get(index));
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
      * @param index The index to set the value at.
-     * @param value The blkbkkfpiio to set.
+     * @param value The pokeballType to set.
      * @return This builder for chaining.
      */
-    public Builder setBlkbkkfpiio(
+    public Builder setPokeballType(
         int index, POGOProtos.Rpc.Item value) {
       if (value == null) {
         throw new NullPointerException();
       }
-      ensureBlkbkkfpiioIsMutable();
-      blkbkkfpiio_.set(index, value.getNumber());
+      ensurePokeballTypeIsMutable();
+      pokeballType_.set(index, value.getNumber());
       onChanged();
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-     * @param value The blkbkkfpiio to add.
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+     * @param value The pokeballType to add.
      * @return This builder for chaining.
      */
-    public Builder addBlkbkkfpiio(POGOProtos.Rpc.Item value) {
+    public Builder addPokeballType(POGOProtos.Rpc.Item value) {
       if (value == null) {
         throw new NullPointerException();
       }
-      ensureBlkbkkfpiioIsMutable();
-      blkbkkfpiio_.add(value.getNumber());
+      ensurePokeballTypeIsMutable();
+      pokeballType_.add(value.getNumber());
       onChanged();
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-     * @param values The blkbkkfpiio to add.
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+     * @param values The pokeballType to add.
      * @return This builder for chaining.
      */
-    public Builder addAllBlkbkkfpiio(
+    public Builder addAllPokeballType(
         java.lang.Iterable<? extends POGOProtos.Rpc.Item> values) {
-      ensureBlkbkkfpiioIsMutable();
+      ensurePokeballTypeIsMutable();
       for (POGOProtos.Rpc.Item value : values) {
-        blkbkkfpiio_.add(value.getNumber());
+        pokeballType_.add(value.getNumber());
       }
       onChanged();
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBlkbkkfpiio() {
-      blkbkkfpiio_ = java.util.Collections.emptyList();
+    public Builder clearPokeballType() {
+      pokeballType_ = java.util.Collections.emptyList();
       bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-     * @return A list containing the enum numeric values on the wire for blkbkkfpiio.
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+     * @return A list containing the enum numeric values on the wire for pokeballType.
      */
     public java.util.List<java.lang.Integer>
-    getBlkbkkfpiioValueList() {
-      return java.util.Collections.unmodifiableList(blkbkkfpiio_);
+    getPokeballTypeValueList() {
+      return java.util.Collections.unmodifiableList(pokeballType_);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
      * @param index The index of the value to return.
-     * @return The enum numeric value on the wire of blkbkkfpiio at the given index.
+     * @return The enum numeric value on the wire of pokeballType at the given index.
      */
-    public int getBlkbkkfpiioValue(int index) {
-      return blkbkkfpiio_.get(index);
+    public int getPokeballTypeValue(int index) {
+      return pokeballType_.get(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
      * @param index The index of the value to return.
-     * @return The enum numeric value on the wire of blkbkkfpiio at the given index.
+     * @return The enum numeric value on the wire of pokeballType at the given index.
      * @return This builder for chaining.
      */
-    public Builder setBlkbkkfpiioValue(
+    public Builder setPokeballTypeValue(
         int index, int value) {
-      ensureBlkbkkfpiioIsMutable();
-      blkbkkfpiio_.set(index, value);
+      ensurePokeballTypeIsMutable();
+      pokeballType_.set(index, value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-     * @param value The enum numeric value on the wire for blkbkkfpiio to add.
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+     * @param value The enum numeric value on the wire for pokeballType to add.
      * @return This builder for chaining.
      */
-    public Builder addBlkbkkfpiioValue(int value) {
-      ensureBlkbkkfpiioIsMutable();
-      blkbkkfpiio_.add(value);
+    public Builder addPokeballTypeValue(int value) {
+      ensurePokeballTypeIsMutable();
+      pokeballType_.add(value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.Item blkbkkfpiio = 1;</code>
-     * @param values The enum numeric values on the wire for blkbkkfpiio to add.
+     * <code>repeated .POGOProtos.Rpc.Item pokeball_type = 1;</code>
+     * @param values The enum numeric values on the wire for pokeballType to add.
      * @return This builder for chaining.
      */
-    public Builder addAllBlkbkkfpiioValue(
+    public Builder addAllPokeballTypeValue(
         java.lang.Iterable<java.lang.Integer> values) {
-      ensureBlkbkkfpiioIsMutable();
+      ensurePokeballTypeIsMutable();
       for (int value : values) {
-        blkbkkfpiio_.add(value);
+        pokeballType_.add(value);
       }
       onChanged();
       return this;
     }
 
-    private com.google.protobuf.Internal.FloatList dbianmbmnch_ = emptyFloatList();
-    private void ensureDbianmbmnchIsMutable() {
+    private com.google.protobuf.Internal.FloatList captureProbability_ = emptyFloatList();
+    private void ensureCaptureProbabilityIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        dbianmbmnch_ = mutableCopy(dbianmbmnch_);
+        captureProbability_ = mutableCopy(captureProbability_);
         bitField0_ |= 0x00000002;
        }
     }
     /**
-     * <code>repeated float dbianmbmnch = 2;</code>
-     * @return A list containing the dbianmbmnch.
+     * <code>repeated float capture_probability = 2;</code>
+     * @return A list containing the captureProbability.
      */
     public java.util.List<java.lang.Float>
-        getDbianmbmnchList() {
+        getCaptureProbabilityList() {
       return ((bitField0_ & 0x00000002) != 0) ?
-               java.util.Collections.unmodifiableList(dbianmbmnch_) : dbianmbmnch_;
+               java.util.Collections.unmodifiableList(captureProbability_) : captureProbability_;
     }
     /**
-     * <code>repeated float dbianmbmnch = 2;</code>
-     * @return The count of dbianmbmnch.
+     * <code>repeated float capture_probability = 2;</code>
+     * @return The count of captureProbability.
      */
-    public int getDbianmbmnchCount() {
-      return dbianmbmnch_.size();
+    public int getCaptureProbabilityCount() {
+      return captureProbability_.size();
     }
     /**
-     * <code>repeated float dbianmbmnch = 2;</code>
+     * <code>repeated float capture_probability = 2;</code>
      * @param index The index of the element to return.
-     * @return The dbianmbmnch at the given index.
+     * @return The captureProbability at the given index.
      */
-    public float getDbianmbmnch(int index) {
-      return dbianmbmnch_.getFloat(index);
+    public float getCaptureProbability(int index) {
+      return captureProbability_.getFloat(index);
     }
     /**
-     * <code>repeated float dbianmbmnch = 2;</code>
+     * <code>repeated float capture_probability = 2;</code>
      * @param index The index to set the value at.
-     * @param value The dbianmbmnch to set.
+     * @param value The captureProbability to set.
      * @return This builder for chaining.
      */
-    public Builder setDbianmbmnch(
+    public Builder setCaptureProbability(
         int index, float value) {
-      ensureDbianmbmnchIsMutable();
-      dbianmbmnch_.setFloat(index, value);
+      ensureCaptureProbabilityIsMutable();
+      captureProbability_.setFloat(index, value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float dbianmbmnch = 2;</code>
-     * @param value The dbianmbmnch to add.
+     * <code>repeated float capture_probability = 2;</code>
+     * @param value The captureProbability to add.
      * @return This builder for chaining.
      */
-    public Builder addDbianmbmnch(float value) {
-      ensureDbianmbmnchIsMutable();
-      dbianmbmnch_.addFloat(value);
+    public Builder addCaptureProbability(float value) {
+      ensureCaptureProbabilityIsMutable();
+      captureProbability_.addFloat(value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float dbianmbmnch = 2;</code>
-     * @param values The dbianmbmnch to add.
+     * <code>repeated float capture_probability = 2;</code>
+     * @param values The captureProbability to add.
      * @return This builder for chaining.
      */
-    public Builder addAllDbianmbmnch(
+    public Builder addAllCaptureProbability(
         java.lang.Iterable<? extends java.lang.Float> values) {
-      ensureDbianmbmnchIsMutable();
+      ensureCaptureProbabilityIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-          values, dbianmbmnch_);
+          values, captureProbability_);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float dbianmbmnch = 2;</code>
+     * <code>repeated float capture_probability = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDbianmbmnch() {
-      dbianmbmnch_ = emptyFloatList();
+    public Builder clearCaptureProbability() {
+      captureProbability_ = emptyFloatList();
       bitField0_ = (bitField0_ & ~0x00000002);
       onChanged();
       return this;
     }
 
-    private double agbccfadhfo_ ;
+    private double reticleDifficultyScale_ ;
     /**
-     * <code>double agbccfadhfo = 12;</code>
-     * @return The agbccfadhfo.
+     * <code>double reticle_difficulty_scale = 12;</code>
+     * @return The reticleDifficultyScale.
      */
     @java.lang.Override
-    public double getAgbccfadhfo() {
-      return agbccfadhfo_;
+    public double getReticleDifficultyScale() {
+      return reticleDifficultyScale_;
     }
     /**
-     * <code>double agbccfadhfo = 12;</code>
-     * @param value The agbccfadhfo to set.
+     * <code>double reticle_difficulty_scale = 12;</code>
+     * @param value The reticleDifficultyScale to set.
      * @return This builder for chaining.
      */
-    public Builder setAgbccfadhfo(double value) {
+    public Builder setReticleDifficultyScale(double value) {
       
-      agbccfadhfo_ = value;
+      reticleDifficultyScale_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>double agbccfadhfo = 12;</code>
+     * <code>double reticle_difficulty_scale = 12;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAgbccfadhfo() {
+    public Builder clearReticleDifficultyScale() {
       
-      agbccfadhfo_ = 0D;
+      reticleDifficultyScale_ = 0D;
       onChanged();
       return this;
     }

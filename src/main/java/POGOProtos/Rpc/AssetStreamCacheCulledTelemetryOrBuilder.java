@@ -8,19 +8,19 @@ public interface AssetStreamCacheCulledTelemetryOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-   * @return The enum numeric value on the wire for hiijbokbgde.
+   * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+   * @return The enum numeric value on the wire for assetEventId.
    */
-  int getHiijbokbgdeValue();
+  int getAssetEventIdValue();
   /**
-   * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-   * @return The hiijbokbgde.
+   * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+   * @return The assetEventId.
    */
-  POGOProtos.Rpc.AssetTelemetryIds getHiijbokbgde();
+  POGOProtos.Rpc.AssetTelemetryIds getAssetEventId();
 
   /**
-   * <code>uint32 amelmiapbic = 2;</code>
-   * @return The amelmiapbic.
+   * <code>uint32 space_released = 2;</code>
+   * @return The spaceReleased.
    */
-  int getAmelmiapbic();
+  int getSpaceReleased();
 }

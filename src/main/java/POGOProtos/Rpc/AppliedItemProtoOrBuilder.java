@@ -8,36 +8,36 @@ public interface AppliedItemProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-   * @return The enum numeric value on the wire for ekpohjfklal.
+   * <code>.POGOProtos.Rpc.Item item = 1;</code>
+   * @return The enum numeric value on the wire for item.
    */
-  int getEkpohjfklalValue();
+  int getItemValue();
   /**
-   * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-   * @return The ekpohjfklal.
+   * <code>.POGOProtos.Rpc.Item item = 1;</code>
+   * @return The item.
    */
-  POGOProtos.Rpc.Item getEkpohjfklal();
+  POGOProtos.Rpc.Item getItem();
 
   /**
-   * <code>.POGOProtos.Rpc.HoloItemType afbaginffej = 2;</code>
-   * @return The enum numeric value on the wire for afbaginffej.
+   * <code>.POGOProtos.Rpc.HoloItemType item_type = 2;</code>
+   * @return The enum numeric value on the wire for itemType.
    */
-  int getAfbaginffejValue();
+  int getItemTypeValue();
   /**
-   * <code>.POGOProtos.Rpc.HoloItemType afbaginffej = 2;</code>
-   * @return The afbaginffej.
+   * <code>.POGOProtos.Rpc.HoloItemType item_type = 2;</code>
+   * @return The itemType.
    */
-  POGOProtos.Rpc.HoloItemType getAfbaginffej();
+  POGOProtos.Rpc.HoloItemType getItemType();
 
   /**
-   * <code>int64 hklepofbgjd = 3;</code>
-   * @return The hklepofbgjd.
+   * <code>int64 expiration_ms = 3;</code>
+   * @return The expirationMs.
    */
-  long getHklepofbgjd();
+  long getExpirationMs();
 
   /**
-   * <code>int64 depkjhhebkb = 4;</code>
-   * @return The depkjhhebkb.
+   * <code>int64 applied_ms = 4;</code>
+   * @return The appliedMs.
    */
-  long getDepkjhhebkb();
+  long getAppliedMs();
 }

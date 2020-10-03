@@ -38,26 +38,26 @@ public interface GymBadgeStatsOrBuilder extends
   int getPnaekdcnnmk();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
    */
-  java.util.List<POGOProtos.Rpc.JOHEPGOFODD> 
+  java.util.List<POGOProtos.Rpc.GymBattleProto> 
       getFdhnjelbilfList();
   /**
-   * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
    */
-  POGOProtos.Rpc.JOHEPGOFODD getFdhnjelbilf(int index);
+  POGOProtos.Rpc.GymBattleProto getFdhnjelbilf(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
    */
   int getFdhnjelbilfCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.JOHEPGOFODDOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.GymBattleProtoOrBuilder> 
       getFdhnjelbilfOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.JOHEPGOFODD fdhnjelbilf = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.GymBattleProto fdhnjelbilf = 17;</code>
    */
-  POGOProtos.Rpc.JOHEPGOFODDOrBuilder getFdhnjelbilfOrBuilder(
+  POGOProtos.Rpc.GymBattleProtoOrBuilder getFdhnjelbilfOrBuilder(
       int index);
 }

@@ -19,40 +19,40 @@ public interface BuddyPokemonLogEntryOrBuilder extends
   POGOProtos.Rpc.BuddyPokemonLogEntry.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonId bgdcaommfao = 2;</code>
-   * @return The enum numeric value on the wire for bgdcaommfao.
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type = 2;</code>
+   * @return The enum numeric value on the wire for pokemonType.
    */
-  int getBgdcaommfaoValue();
+  int getPokemonTypeValue();
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonId bgdcaommfao = 2;</code>
-   * @return The bgdcaommfao.
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type = 2;</code>
+   * @return The pokemonType.
    */
-  POGOProtos.Rpc.HoloPokemonId getBgdcaommfao();
+  POGOProtos.Rpc.HoloPokemonId getPokemonType();
 
   /**
-   * <code>int32 ligbfceekdo = 3;</code>
-   * @return The ligbfceekdo.
+   * <code>int32 amount = 3;</code>
+   * @return The amount.
    */
-  int getLigbfceekdo();
+  int getAmount();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
-   * @return Whether the efpknnlchbc field is set.
+   * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
+   * @return Whether the pokemonDisplay field is set.
    */
-  boolean hasEfpknnlchbc();
+  boolean hasPokemonDisplay();
   /**
-   * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
-   * @return The efpknnlchbc.
+   * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
+   * @return The pokemonDisplay.
    */
-  POGOProtos.Rpc.PokemonDisplayProto getEfpknnlchbc();
+  POGOProtos.Rpc.PokemonDisplayProto getPokemonDisplay();
   /**
-   * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
+   * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
    */
-  POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getEfpknnlchbcOrBuilder();
+  POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getPokemonDisplayOrBuilder();
 
   /**
-   * <code>uint64 mfkgkhdmbpb = 5;</code>
-   * @return The mfkgkhdmbpb.
+   * <code>fixed64 pokemon_id = 5;</code>
+   * @return The pokemonId.
    */
-  long getMfkgkhdmbpb();
+  long getPokemonId();
 }

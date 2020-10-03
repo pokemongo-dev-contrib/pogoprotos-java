@@ -52,42 +52,42 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 8: {
+          case 9: {
 
-            jkenapdnljb_ = input.readUInt64();
+            buddyPokemonId_ = input.readFixed64();
             break;
           }
           case 17: {
 
-            gcnhojkbghp_ = input.readDouble();
+            startKmWalked_ = input.readDouble();
             break;
           }
           case 25: {
 
-            aphbdljdccf_ = input.readDouble();
+            lastKmAwarded_ = input.readDouble();
             break;
           }
           case 34: {
             POGOProtos.Rpc.DailyCounterProto.Builder subBuilder = null;
-            if (bfhhnfniilo_ != null) {
-              subBuilder = bfhhnfniilo_.toBuilder();
+            if (dailyBuddySwaps_ != null) {
+              subBuilder = dailyBuddySwaps_.toBuilder();
             }
-            bfhhnfniilo_ = input.readMessage(POGOProtos.Rpc.DailyCounterProto.parser(), extensionRegistry);
+            dailyBuddySwaps_ = input.readMessage(POGOProtos.Rpc.DailyCounterProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(bfhhnfniilo_);
-              bfhhnfniilo_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(dailyBuddySwaps_);
+              dailyBuddySwaps_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 40: {
 
-            focomgejgnj_ = input.readInt64();
+            lastKmAwardedMs_ = input.readInt64();
             break;
           }
           case 48: {
 
-            agdodlmbfng_ = input.readBool();
+            bestBuddiesBackfilled_ = input.readBool();
             break;
           }
           default: {
@@ -122,85 +122,85 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.BuddyPokemonProto.class, POGOProtos.Rpc.BuddyPokemonProto.Builder.class);
   }
 
-  public static final int JKENAPDNLJB_FIELD_NUMBER = 1;
-  private long jkenapdnljb_;
+  public static final int BUDDY_POKEMON_ID_FIELD_NUMBER = 1;
+  private long buddyPokemonId_;
   /**
-   * <code>uint64 jkenapdnljb = 1;</code>
-   * @return The jkenapdnljb.
+   * <code>fixed64 buddy_pokemon_id = 1;</code>
+   * @return The buddyPokemonId.
    */
   @java.lang.Override
-  public long getJkenapdnljb() {
-    return jkenapdnljb_;
+  public long getBuddyPokemonId() {
+    return buddyPokemonId_;
   }
 
-  public static final int GCNHOJKBGHP_FIELD_NUMBER = 2;
-  private double gcnhojkbghp_;
+  public static final int START_KM_WALKED_FIELD_NUMBER = 2;
+  private double startKmWalked_;
   /**
-   * <code>double gcnhojkbghp = 2;</code>
-   * @return The gcnhojkbghp.
+   * <code>double start_km_walked = 2;</code>
+   * @return The startKmWalked.
    */
   @java.lang.Override
-  public double getGcnhojkbghp() {
-    return gcnhojkbghp_;
+  public double getStartKmWalked() {
+    return startKmWalked_;
   }
 
-  public static final int APHBDLJDCCF_FIELD_NUMBER = 3;
-  private double aphbdljdccf_;
+  public static final int LAST_KM_AWARDED_FIELD_NUMBER = 3;
+  private double lastKmAwarded_;
   /**
-   * <code>double aphbdljdccf = 3;</code>
-   * @return The aphbdljdccf.
+   * <code>double last_km_awarded = 3;</code>
+   * @return The lastKmAwarded.
    */
   @java.lang.Override
-  public double getAphbdljdccf() {
-    return aphbdljdccf_;
+  public double getLastKmAwarded() {
+    return lastKmAwarded_;
   }
 
-  public static final int BFHHNFNIILO_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.DailyCounterProto bfhhnfniilo_;
+  public static final int DAILY_BUDDY_SWAPS_FIELD_NUMBER = 4;
+  private POGOProtos.Rpc.DailyCounterProto dailyBuddySwaps_;
   /**
-   * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
-   * @return Whether the bfhhnfniilo field is set.
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
+   * @return Whether the dailyBuddySwaps field is set.
    */
   @java.lang.Override
-  public boolean hasBfhhnfniilo() {
-    return bfhhnfniilo_ != null;
+  public boolean hasDailyBuddySwaps() {
+    return dailyBuddySwaps_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
-   * @return The bfhhnfniilo.
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
+   * @return The dailyBuddySwaps.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DailyCounterProto getBfhhnfniilo() {
-    return bfhhnfniilo_ == null ? POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : bfhhnfniilo_;
+  public POGOProtos.Rpc.DailyCounterProto getDailyBuddySwaps() {
+    return dailyBuddySwaps_ == null ? POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : dailyBuddySwaps_;
   }
   /**
-   * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
+   * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.DailyCounterProtoOrBuilder getBfhhnfniiloOrBuilder() {
-    return getBfhhnfniilo();
-  }
-
-  public static final int FOCOMGEJGNJ_FIELD_NUMBER = 5;
-  private long focomgejgnj_;
-  /**
-   * <code>int64 focomgejgnj = 5;</code>
-   * @return The focomgejgnj.
-   */
-  @java.lang.Override
-  public long getFocomgejgnj() {
-    return focomgejgnj_;
+  public POGOProtos.Rpc.DailyCounterProtoOrBuilder getDailyBuddySwapsOrBuilder() {
+    return getDailyBuddySwaps();
   }
 
-  public static final int AGDODLMBFNG_FIELD_NUMBER = 6;
-  private boolean agdodlmbfng_;
+  public static final int LAST_KM_AWARDED_MS_FIELD_NUMBER = 5;
+  private long lastKmAwardedMs_;
   /**
-   * <code>bool agdodlmbfng = 6;</code>
-   * @return The agdodlmbfng.
+   * <code>int64 last_km_awarded_ms = 5;</code>
+   * @return The lastKmAwardedMs.
    */
   @java.lang.Override
-  public boolean getAgdodlmbfng() {
-    return agdodlmbfng_;
+  public long getLastKmAwardedMs() {
+    return lastKmAwardedMs_;
+  }
+
+  public static final int BEST_BUDDIES_BACKFILLED_FIELD_NUMBER = 6;
+  private boolean bestBuddiesBackfilled_;
+  /**
+   * <code>bool best_buddies_backfilled = 6;</code>
+   * @return The bestBuddiesBackfilled.
+   */
+  @java.lang.Override
+  public boolean getBestBuddiesBackfilled() {
+    return bestBuddiesBackfilled_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -217,23 +217,23 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (jkenapdnljb_ != 0L) {
-      output.writeUInt64(1, jkenapdnljb_);
+    if (buddyPokemonId_ != 0L) {
+      output.writeFixed64(1, buddyPokemonId_);
     }
-    if (gcnhojkbghp_ != 0D) {
-      output.writeDouble(2, gcnhojkbghp_);
+    if (startKmWalked_ != 0D) {
+      output.writeDouble(2, startKmWalked_);
     }
-    if (aphbdljdccf_ != 0D) {
-      output.writeDouble(3, aphbdljdccf_);
+    if (lastKmAwarded_ != 0D) {
+      output.writeDouble(3, lastKmAwarded_);
     }
-    if (bfhhnfniilo_ != null) {
-      output.writeMessage(4, getBfhhnfniilo());
+    if (dailyBuddySwaps_ != null) {
+      output.writeMessage(4, getDailyBuddySwaps());
     }
-    if (focomgejgnj_ != 0L) {
-      output.writeInt64(5, focomgejgnj_);
+    if (lastKmAwardedMs_ != 0L) {
+      output.writeInt64(5, lastKmAwardedMs_);
     }
-    if (agdodlmbfng_ != false) {
-      output.writeBool(6, agdodlmbfng_);
+    if (bestBuddiesBackfilled_ != false) {
+      output.writeBool(6, bestBuddiesBackfilled_);
     }
     unknownFields.writeTo(output);
   }
@@ -244,29 +244,29 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (jkenapdnljb_ != 0L) {
+    if (buddyPokemonId_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt64Size(1, jkenapdnljb_);
+        .computeFixed64Size(1, buddyPokemonId_);
     }
-    if (gcnhojkbghp_ != 0D) {
+    if (startKmWalked_ != 0D) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(2, gcnhojkbghp_);
+        .computeDoubleSize(2, startKmWalked_);
     }
-    if (aphbdljdccf_ != 0D) {
+    if (lastKmAwarded_ != 0D) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(3, aphbdljdccf_);
+        .computeDoubleSize(3, lastKmAwarded_);
     }
-    if (bfhhnfniilo_ != null) {
+    if (dailyBuddySwaps_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getBfhhnfniilo());
+        .computeMessageSize(4, getDailyBuddySwaps());
     }
-    if (focomgejgnj_ != 0L) {
+    if (lastKmAwardedMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(5, focomgejgnj_);
+        .computeInt64Size(5, lastKmAwardedMs_);
     }
-    if (agdodlmbfng_ != false) {
+    if (bestBuddiesBackfilled_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(6, agdodlmbfng_);
+        .computeBoolSize(6, bestBuddiesBackfilled_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -283,23 +283,23 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BuddyPokemonProto other = (POGOProtos.Rpc.BuddyPokemonProto) obj;
 
-    if (getJkenapdnljb()
-        != other.getJkenapdnljb()) return false;
-    if (java.lang.Double.doubleToLongBits(getGcnhojkbghp())
+    if (getBuddyPokemonId()
+        != other.getBuddyPokemonId()) return false;
+    if (java.lang.Double.doubleToLongBits(getStartKmWalked())
         != java.lang.Double.doubleToLongBits(
-            other.getGcnhojkbghp())) return false;
-    if (java.lang.Double.doubleToLongBits(getAphbdljdccf())
+            other.getStartKmWalked())) return false;
+    if (java.lang.Double.doubleToLongBits(getLastKmAwarded())
         != java.lang.Double.doubleToLongBits(
-            other.getAphbdljdccf())) return false;
-    if (hasBfhhnfniilo() != other.hasBfhhnfniilo()) return false;
-    if (hasBfhhnfniilo()) {
-      if (!getBfhhnfniilo()
-          .equals(other.getBfhhnfniilo())) return false;
+            other.getLastKmAwarded())) return false;
+    if (hasDailyBuddySwaps() != other.hasDailyBuddySwaps()) return false;
+    if (hasDailyBuddySwaps()) {
+      if (!getDailyBuddySwaps()
+          .equals(other.getDailyBuddySwaps())) return false;
     }
-    if (getFocomgejgnj()
-        != other.getFocomgejgnj()) return false;
-    if (getAgdodlmbfng()
-        != other.getAgdodlmbfng()) return false;
+    if (getLastKmAwardedMs()
+        != other.getLastKmAwardedMs()) return false;
+    if (getBestBuddiesBackfilled()
+        != other.getBestBuddiesBackfilled()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -311,25 +311,25 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + JKENAPDNLJB_FIELD_NUMBER;
+    hash = (37 * hash) + BUDDY_POKEMON_ID_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getJkenapdnljb());
-    hash = (37 * hash) + GCNHOJKBGHP_FIELD_NUMBER;
+        getBuddyPokemonId());
+    hash = (37 * hash) + START_KM_WALKED_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getGcnhojkbghp()));
-    hash = (37 * hash) + APHBDLJDCCF_FIELD_NUMBER;
+        java.lang.Double.doubleToLongBits(getStartKmWalked()));
+    hash = (37 * hash) + LAST_KM_AWARDED_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getAphbdljdccf()));
-    if (hasBfhhnfniilo()) {
-      hash = (37 * hash) + BFHHNFNIILO_FIELD_NUMBER;
-      hash = (53 * hash) + getBfhhnfniilo().hashCode();
+        java.lang.Double.doubleToLongBits(getLastKmAwarded()));
+    if (hasDailyBuddySwaps()) {
+      hash = (37 * hash) + DAILY_BUDDY_SWAPS_FIELD_NUMBER;
+      hash = (53 * hash) + getDailyBuddySwaps().hashCode();
     }
-    hash = (37 * hash) + FOCOMGEJGNJ_FIELD_NUMBER;
+    hash = (37 * hash) + LAST_KM_AWARDED_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getFocomgejgnj());
-    hash = (37 * hash) + AGDODLMBFNG_FIELD_NUMBER;
+        getLastKmAwardedMs());
+    hash = (37 * hash) + BEST_BUDDIES_BACKFILLED_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getAgdodlmbfng());
+        getBestBuddiesBackfilled());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -467,21 +467,21 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      jkenapdnljb_ = 0L;
+      buddyPokemonId_ = 0L;
 
-      gcnhojkbghp_ = 0D;
+      startKmWalked_ = 0D;
 
-      aphbdljdccf_ = 0D;
+      lastKmAwarded_ = 0D;
 
-      if (bfhhnfniiloBuilder_ == null) {
-        bfhhnfniilo_ = null;
+      if (dailyBuddySwapsBuilder_ == null) {
+        dailyBuddySwaps_ = null;
       } else {
-        bfhhnfniilo_ = null;
-        bfhhnfniiloBuilder_ = null;
+        dailyBuddySwaps_ = null;
+        dailyBuddySwapsBuilder_ = null;
       }
-      focomgejgnj_ = 0L;
+      lastKmAwardedMs_ = 0L;
 
-      agdodlmbfng_ = false;
+      bestBuddiesBackfilled_ = false;
 
       return this;
     }
@@ -509,16 +509,16 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.BuddyPokemonProto buildPartial() {
       POGOProtos.Rpc.BuddyPokemonProto result = new POGOProtos.Rpc.BuddyPokemonProto(this);
-      result.jkenapdnljb_ = jkenapdnljb_;
-      result.gcnhojkbghp_ = gcnhojkbghp_;
-      result.aphbdljdccf_ = aphbdljdccf_;
-      if (bfhhnfniiloBuilder_ == null) {
-        result.bfhhnfniilo_ = bfhhnfniilo_;
+      result.buddyPokemonId_ = buddyPokemonId_;
+      result.startKmWalked_ = startKmWalked_;
+      result.lastKmAwarded_ = lastKmAwarded_;
+      if (dailyBuddySwapsBuilder_ == null) {
+        result.dailyBuddySwaps_ = dailyBuddySwaps_;
       } else {
-        result.bfhhnfniilo_ = bfhhnfniiloBuilder_.build();
+        result.dailyBuddySwaps_ = dailyBuddySwapsBuilder_.build();
       }
-      result.focomgejgnj_ = focomgejgnj_;
-      result.agdodlmbfng_ = agdodlmbfng_;
+      result.lastKmAwardedMs_ = lastKmAwardedMs_;
+      result.bestBuddiesBackfilled_ = bestBuddiesBackfilled_;
       onBuilt();
       return result;
     }
@@ -567,23 +567,23 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BuddyPokemonProto other) {
       if (other == POGOProtos.Rpc.BuddyPokemonProto.getDefaultInstance()) return this;
-      if (other.getJkenapdnljb() != 0L) {
-        setJkenapdnljb(other.getJkenapdnljb());
+      if (other.getBuddyPokemonId() != 0L) {
+        setBuddyPokemonId(other.getBuddyPokemonId());
       }
-      if (other.getGcnhojkbghp() != 0D) {
-        setGcnhojkbghp(other.getGcnhojkbghp());
+      if (other.getStartKmWalked() != 0D) {
+        setStartKmWalked(other.getStartKmWalked());
       }
-      if (other.getAphbdljdccf() != 0D) {
-        setAphbdljdccf(other.getAphbdljdccf());
+      if (other.getLastKmAwarded() != 0D) {
+        setLastKmAwarded(other.getLastKmAwarded());
       }
-      if (other.hasBfhhnfniilo()) {
-        mergeBfhhnfniilo(other.getBfhhnfniilo());
+      if (other.hasDailyBuddySwaps()) {
+        mergeDailyBuddySwaps(other.getDailyBuddySwaps());
       }
-      if (other.getFocomgejgnj() != 0L) {
-        setFocomgejgnj(other.getFocomgejgnj());
+      if (other.getLastKmAwardedMs() != 0L) {
+        setLastKmAwardedMs(other.getLastKmAwardedMs());
       }
-      if (other.getAgdodlmbfng() != false) {
-        setAgdodlmbfng(other.getAgdodlmbfng());
+      if (other.getBestBuddiesBackfilled() != false) {
+        setBestBuddiesBackfilled(other.getBestBuddiesBackfilled());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -614,276 +614,276 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private long jkenapdnljb_ ;
+    private long buddyPokemonId_ ;
     /**
-     * <code>uint64 jkenapdnljb = 1;</code>
-     * @return The jkenapdnljb.
+     * <code>fixed64 buddy_pokemon_id = 1;</code>
+     * @return The buddyPokemonId.
      */
     @java.lang.Override
-    public long getJkenapdnljb() {
-      return jkenapdnljb_;
+    public long getBuddyPokemonId() {
+      return buddyPokemonId_;
     }
     /**
-     * <code>uint64 jkenapdnljb = 1;</code>
-     * @param value The jkenapdnljb to set.
+     * <code>fixed64 buddy_pokemon_id = 1;</code>
+     * @param value The buddyPokemonId to set.
      * @return This builder for chaining.
      */
-    public Builder setJkenapdnljb(long value) {
+    public Builder setBuddyPokemonId(long value) {
       
-      jkenapdnljb_ = value;
+      buddyPokemonId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>uint64 jkenapdnljb = 1;</code>
+     * <code>fixed64 buddy_pokemon_id = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJkenapdnljb() {
+    public Builder clearBuddyPokemonId() {
       
-      jkenapdnljb_ = 0L;
+      buddyPokemonId_ = 0L;
       onChanged();
       return this;
     }
 
-    private double gcnhojkbghp_ ;
+    private double startKmWalked_ ;
     /**
-     * <code>double gcnhojkbghp = 2;</code>
-     * @return The gcnhojkbghp.
+     * <code>double start_km_walked = 2;</code>
+     * @return The startKmWalked.
      */
     @java.lang.Override
-    public double getGcnhojkbghp() {
-      return gcnhojkbghp_;
+    public double getStartKmWalked() {
+      return startKmWalked_;
     }
     /**
-     * <code>double gcnhojkbghp = 2;</code>
-     * @param value The gcnhojkbghp to set.
+     * <code>double start_km_walked = 2;</code>
+     * @param value The startKmWalked to set.
      * @return This builder for chaining.
      */
-    public Builder setGcnhojkbghp(double value) {
+    public Builder setStartKmWalked(double value) {
       
-      gcnhojkbghp_ = value;
+      startKmWalked_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>double gcnhojkbghp = 2;</code>
+     * <code>double start_km_walked = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearGcnhojkbghp() {
+    public Builder clearStartKmWalked() {
       
-      gcnhojkbghp_ = 0D;
+      startKmWalked_ = 0D;
       onChanged();
       return this;
     }
 
-    private double aphbdljdccf_ ;
+    private double lastKmAwarded_ ;
     /**
-     * <code>double aphbdljdccf = 3;</code>
-     * @return The aphbdljdccf.
+     * <code>double last_km_awarded = 3;</code>
+     * @return The lastKmAwarded.
      */
     @java.lang.Override
-    public double getAphbdljdccf() {
-      return aphbdljdccf_;
+    public double getLastKmAwarded() {
+      return lastKmAwarded_;
     }
     /**
-     * <code>double aphbdljdccf = 3;</code>
-     * @param value The aphbdljdccf to set.
+     * <code>double last_km_awarded = 3;</code>
+     * @param value The lastKmAwarded to set.
      * @return This builder for chaining.
      */
-    public Builder setAphbdljdccf(double value) {
+    public Builder setLastKmAwarded(double value) {
       
-      aphbdljdccf_ = value;
+      lastKmAwarded_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>double aphbdljdccf = 3;</code>
+     * <code>double last_km_awarded = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAphbdljdccf() {
+    public Builder clearLastKmAwarded() {
       
-      aphbdljdccf_ = 0D;
+      lastKmAwarded_ = 0D;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.DailyCounterProto bfhhnfniilo_;
+    private POGOProtos.Rpc.DailyCounterProto dailyBuddySwaps_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DailyCounterProto, POGOProtos.Rpc.DailyCounterProto.Builder, POGOProtos.Rpc.DailyCounterProtoOrBuilder> bfhhnfniiloBuilder_;
+        POGOProtos.Rpc.DailyCounterProto, POGOProtos.Rpc.DailyCounterProto.Builder, POGOProtos.Rpc.DailyCounterProtoOrBuilder> dailyBuddySwapsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
-     * @return Whether the bfhhnfniilo field is set.
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
+     * @return Whether the dailyBuddySwaps field is set.
      */
-    public boolean hasBfhhnfniilo() {
-      return bfhhnfniiloBuilder_ != null || bfhhnfniilo_ != null;
+    public boolean hasDailyBuddySwaps() {
+      return dailyBuddySwapsBuilder_ != null || dailyBuddySwaps_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
-     * @return The bfhhnfniilo.
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
+     * @return The dailyBuddySwaps.
      */
-    public POGOProtos.Rpc.DailyCounterProto getBfhhnfniilo() {
-      if (bfhhnfniiloBuilder_ == null) {
-        return bfhhnfniilo_ == null ? POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : bfhhnfniilo_;
+    public POGOProtos.Rpc.DailyCounterProto getDailyBuddySwaps() {
+      if (dailyBuddySwapsBuilder_ == null) {
+        return dailyBuddySwaps_ == null ? POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : dailyBuddySwaps_;
       } else {
-        return bfhhnfniiloBuilder_.getMessage();
+        return dailyBuddySwapsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
      */
-    public Builder setBfhhnfniilo(POGOProtos.Rpc.DailyCounterProto value) {
-      if (bfhhnfniiloBuilder_ == null) {
+    public Builder setDailyBuddySwaps(POGOProtos.Rpc.DailyCounterProto value) {
+      if (dailyBuddySwapsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        bfhhnfniilo_ = value;
+        dailyBuddySwaps_ = value;
         onChanged();
       } else {
-        bfhhnfniiloBuilder_.setMessage(value);
+        dailyBuddySwapsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
      */
-    public Builder setBfhhnfniilo(
+    public Builder setDailyBuddySwaps(
         POGOProtos.Rpc.DailyCounterProto.Builder builderForValue) {
-      if (bfhhnfniiloBuilder_ == null) {
-        bfhhnfniilo_ = builderForValue.build();
+      if (dailyBuddySwapsBuilder_ == null) {
+        dailyBuddySwaps_ = builderForValue.build();
         onChanged();
       } else {
-        bfhhnfniiloBuilder_.setMessage(builderForValue.build());
+        dailyBuddySwapsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
      */
-    public Builder mergeBfhhnfniilo(POGOProtos.Rpc.DailyCounterProto value) {
-      if (bfhhnfniiloBuilder_ == null) {
-        if (bfhhnfniilo_ != null) {
-          bfhhnfniilo_ =
-            POGOProtos.Rpc.DailyCounterProto.newBuilder(bfhhnfniilo_).mergeFrom(value).buildPartial();
+    public Builder mergeDailyBuddySwaps(POGOProtos.Rpc.DailyCounterProto value) {
+      if (dailyBuddySwapsBuilder_ == null) {
+        if (dailyBuddySwaps_ != null) {
+          dailyBuddySwaps_ =
+            POGOProtos.Rpc.DailyCounterProto.newBuilder(dailyBuddySwaps_).mergeFrom(value).buildPartial();
         } else {
-          bfhhnfniilo_ = value;
+          dailyBuddySwaps_ = value;
         }
         onChanged();
       } else {
-        bfhhnfniiloBuilder_.mergeFrom(value);
+        dailyBuddySwapsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
      */
-    public Builder clearBfhhnfniilo() {
-      if (bfhhnfniiloBuilder_ == null) {
-        bfhhnfniilo_ = null;
+    public Builder clearDailyBuddySwaps() {
+      if (dailyBuddySwapsBuilder_ == null) {
+        dailyBuddySwaps_ = null;
         onChanged();
       } else {
-        bfhhnfniilo_ = null;
-        bfhhnfniiloBuilder_ = null;
+        dailyBuddySwaps_ = null;
+        dailyBuddySwapsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
      */
-    public POGOProtos.Rpc.DailyCounterProto.Builder getBfhhnfniiloBuilder() {
+    public POGOProtos.Rpc.DailyCounterProto.Builder getDailyBuddySwapsBuilder() {
       
       onChanged();
-      return getBfhhnfniiloFieldBuilder().getBuilder();
+      return getDailyBuddySwapsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
      */
-    public POGOProtos.Rpc.DailyCounterProtoOrBuilder getBfhhnfniiloOrBuilder() {
-      if (bfhhnfniiloBuilder_ != null) {
-        return bfhhnfniiloBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.DailyCounterProtoOrBuilder getDailyBuddySwapsOrBuilder() {
+      if (dailyBuddySwapsBuilder_ != null) {
+        return dailyBuddySwapsBuilder_.getMessageOrBuilder();
       } else {
-        return bfhhnfniilo_ == null ?
-            POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : bfhhnfniilo_;
+        return dailyBuddySwaps_ == null ?
+            POGOProtos.Rpc.DailyCounterProto.getDefaultInstance() : dailyBuddySwaps_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.DailyCounterProto bfhhnfniilo = 4;</code>
+     * <code>.POGOProtos.Rpc.DailyCounterProto daily_buddy_swaps = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.DailyCounterProto, POGOProtos.Rpc.DailyCounterProto.Builder, POGOProtos.Rpc.DailyCounterProtoOrBuilder> 
-        getBfhhnfniiloFieldBuilder() {
-      if (bfhhnfniiloBuilder_ == null) {
-        bfhhnfniiloBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getDailyBuddySwapsFieldBuilder() {
+      if (dailyBuddySwapsBuilder_ == null) {
+        dailyBuddySwapsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.DailyCounterProto, POGOProtos.Rpc.DailyCounterProto.Builder, POGOProtos.Rpc.DailyCounterProtoOrBuilder>(
-                getBfhhnfniilo(),
+                getDailyBuddySwaps(),
                 getParentForChildren(),
                 isClean());
-        bfhhnfniilo_ = null;
+        dailyBuddySwaps_ = null;
       }
-      return bfhhnfniiloBuilder_;
+      return dailyBuddySwapsBuilder_;
     }
 
-    private long focomgejgnj_ ;
+    private long lastKmAwardedMs_ ;
     /**
-     * <code>int64 focomgejgnj = 5;</code>
-     * @return The focomgejgnj.
+     * <code>int64 last_km_awarded_ms = 5;</code>
+     * @return The lastKmAwardedMs.
      */
     @java.lang.Override
-    public long getFocomgejgnj() {
-      return focomgejgnj_;
+    public long getLastKmAwardedMs() {
+      return lastKmAwardedMs_;
     }
     /**
-     * <code>int64 focomgejgnj = 5;</code>
-     * @param value The focomgejgnj to set.
+     * <code>int64 last_km_awarded_ms = 5;</code>
+     * @param value The lastKmAwardedMs to set.
      * @return This builder for chaining.
      */
-    public Builder setFocomgejgnj(long value) {
+    public Builder setLastKmAwardedMs(long value) {
       
-      focomgejgnj_ = value;
+      lastKmAwardedMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 focomgejgnj = 5;</code>
+     * <code>int64 last_km_awarded_ms = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearFocomgejgnj() {
+    public Builder clearLastKmAwardedMs() {
       
-      focomgejgnj_ = 0L;
+      lastKmAwardedMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private boolean agdodlmbfng_ ;
+    private boolean bestBuddiesBackfilled_ ;
     /**
-     * <code>bool agdodlmbfng = 6;</code>
-     * @return The agdodlmbfng.
+     * <code>bool best_buddies_backfilled = 6;</code>
+     * @return The bestBuddiesBackfilled.
      */
     @java.lang.Override
-    public boolean getAgdodlmbfng() {
-      return agdodlmbfng_;
+    public boolean getBestBuddiesBackfilled() {
+      return bestBuddiesBackfilled_;
     }
     /**
-     * <code>bool agdodlmbfng = 6;</code>
-     * @param value The agdodlmbfng to set.
+     * <code>bool best_buddies_backfilled = 6;</code>
+     * @param value The bestBuddiesBackfilled to set.
      * @return This builder for chaining.
      */
-    public Builder setAgdodlmbfng(boolean value) {
+    public Builder setBestBuddiesBackfilled(boolean value) {
       
-      agdodlmbfng_ = value;
+      bestBuddiesBackfilled_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool agdodlmbfng = 6;</code>
+     * <code>bool best_buddies_backfilled = 6;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAgdodlmbfng() {
+    public Builder clearBestBuddiesBackfilled() {
       
-      agdodlmbfng_ = false;
+      bestBuddiesBackfilled_ = false;
       onChanged();
       return this;
     }

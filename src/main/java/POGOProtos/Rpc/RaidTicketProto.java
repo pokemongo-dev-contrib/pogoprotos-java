@@ -67,11 +67,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 34: {
-            POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.Builder subBuilder = null;
+            POGOProtos.Rpc.ExclusiveTicketInfoProto.Builder subBuilder = null;
             if (aoleolaciee_ != null) {
               subBuilder = aoleolaciee_.toBuilder();
             }
-            aoleolaciee_ = input.readMessage(POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.parser(), extensionRegistry);
+            aoleolaciee_ = input.readMessage(POGOProtos.Rpc.ExclusiveTicketInfoProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(aoleolaciee_);
               aoleolaciee_ = subBuilder.buildPartial();
@@ -169,9 +169,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int AOLEOLACIEE_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee_;
+  private POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee_;
   /**
-   * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+   * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
    * @return Whether the aoleolaciee field is set.
    */
   @java.lang.Override
@@ -179,18 +179,18 @@ private static final long serialVersionUID = 0L;
     return aoleolaciee_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+   * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
    * @return The aoleolaciee.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo getAoleolaciee() {
-    return aoleolaciee_ == null ? POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.getDefaultInstance() : aoleolaciee_;
+  public POGOProtos.Rpc.ExclusiveTicketInfoProto getAoleolaciee() {
+    return aoleolaciee_ == null ? POGOProtos.Rpc.ExclusiveTicketInfoProto.getDefaultInstance() : aoleolaciee_;
   }
   /**
-   * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+   * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.SharedExclusiveTicketTrainerInfoOrBuilder getAoleolacieeOrBuilder() {
+  public POGOProtos.Rpc.ExclusiveTicketInfoProtoOrBuilder getAoleolacieeOrBuilder() {
     return getAoleolaciee();
   }
 
@@ -676,31 +676,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee_;
+    private POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo, POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.Builder, POGOProtos.Rpc.SharedExclusiveTicketTrainerInfoOrBuilder> aoleolacieeBuilder_;
+        POGOProtos.Rpc.ExclusiveTicketInfoProto, POGOProtos.Rpc.ExclusiveTicketInfoProto.Builder, POGOProtos.Rpc.ExclusiveTicketInfoProtoOrBuilder> aoleolacieeBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+     * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
      * @return Whether the aoleolaciee field is set.
      */
     public boolean hasAoleolaciee() {
       return aoleolacieeBuilder_ != null || aoleolaciee_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+     * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
      * @return The aoleolaciee.
      */
-    public POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo getAoleolaciee() {
+    public POGOProtos.Rpc.ExclusiveTicketInfoProto getAoleolaciee() {
       if (aoleolacieeBuilder_ == null) {
-        return aoleolaciee_ == null ? POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.getDefaultInstance() : aoleolaciee_;
+        return aoleolaciee_ == null ? POGOProtos.Rpc.ExclusiveTicketInfoProto.getDefaultInstance() : aoleolaciee_;
       } else {
         return aoleolacieeBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+     * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
      */
-    public Builder setAoleolaciee(POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo value) {
+    public Builder setAoleolaciee(POGOProtos.Rpc.ExclusiveTicketInfoProto value) {
       if (aoleolacieeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -714,10 +714,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+     * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
      */
     public Builder setAoleolaciee(
-        POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.Builder builderForValue) {
+        POGOProtos.Rpc.ExclusiveTicketInfoProto.Builder builderForValue) {
       if (aoleolacieeBuilder_ == null) {
         aoleolaciee_ = builderForValue.build();
         onChanged();
@@ -728,13 +728,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+     * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
      */
-    public Builder mergeAoleolaciee(POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo value) {
+    public Builder mergeAoleolaciee(POGOProtos.Rpc.ExclusiveTicketInfoProto value) {
       if (aoleolacieeBuilder_ == null) {
         if (aoleolaciee_ != null) {
           aoleolaciee_ =
-            POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.newBuilder(aoleolaciee_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.ExclusiveTicketInfoProto.newBuilder(aoleolaciee_).mergeFrom(value).buildPartial();
         } else {
           aoleolaciee_ = value;
         }
@@ -746,7 +746,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+     * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
      */
     public Builder clearAoleolaciee() {
       if (aoleolacieeBuilder_ == null) {
@@ -760,33 +760,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+     * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
      */
-    public POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.Builder getAoleolacieeBuilder() {
+    public POGOProtos.Rpc.ExclusiveTicketInfoProto.Builder getAoleolacieeBuilder() {
       
       onChanged();
       return getAoleolacieeFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+     * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
      */
-    public POGOProtos.Rpc.SharedExclusiveTicketTrainerInfoOrBuilder getAoleolacieeOrBuilder() {
+    public POGOProtos.Rpc.ExclusiveTicketInfoProtoOrBuilder getAoleolacieeOrBuilder() {
       if (aoleolacieeBuilder_ != null) {
         return aoleolacieeBuilder_.getMessageOrBuilder();
       } else {
         return aoleolaciee_ == null ?
-            POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.getDefaultInstance() : aoleolaciee_;
+            POGOProtos.Rpc.ExclusiveTicketInfoProto.getDefaultInstance() : aoleolaciee_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo aoleolaciee = 4;</code>
+     * <code>.POGOProtos.Rpc.ExclusiveTicketInfoProto aoleolaciee = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo, POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.Builder, POGOProtos.Rpc.SharedExclusiveTicketTrainerInfoOrBuilder> 
+        POGOProtos.Rpc.ExclusiveTicketInfoProto, POGOProtos.Rpc.ExclusiveTicketInfoProto.Builder, POGOProtos.Rpc.ExclusiveTicketInfoProtoOrBuilder> 
         getAoleolacieeFieldBuilder() {
       if (aoleolacieeBuilder_ == null) {
         aoleolacieeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo, POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.Builder, POGOProtos.Rpc.SharedExclusiveTicketTrainerInfoOrBuilder>(
+            POGOProtos.Rpc.ExclusiveTicketInfoProto, POGOProtos.Rpc.ExclusiveTicketInfoProto.Builder, POGOProtos.Rpc.ExclusiveTicketInfoProtoOrBuilder>(
                 getAoleolaciee(),
                 getParentForChildren(),
                 isClean());

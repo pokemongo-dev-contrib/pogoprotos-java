@@ -20,8 +20,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AssetPoiDownloadTelemetry() {
-    hiijbokbgde_ = 0;
-    lndigkkjfml_ = "";
+    assetEventId_ = 0;
+    fortId_ = "";
   }
 
   @java.lang.Override
@@ -57,18 +57,18 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            hiijbokbgde_ = rawValue;
+            assetEventId_ = rawValue;
             break;
           }
           case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            lndigkkjfml_ = s;
+            fortId_ = s;
             break;
           }
           case 24: {
 
-            djkelmocljo_ = input.readUInt32();
+            size_ = input.readUInt32();
             break;
           }
           default: {
@@ -103,72 +103,72 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.AssetPoiDownloadTelemetry.class, POGOProtos.Rpc.AssetPoiDownloadTelemetry.Builder.class);
   }
 
-  public static final int HIIJBOKBGDE_FIELD_NUMBER = 1;
-  private int hiijbokbgde_;
+  public static final int ASSET_EVENT_ID_FIELD_NUMBER = 1;
+  private int assetEventId_;
   /**
-   * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-   * @return The enum numeric value on the wire for hiijbokbgde.
+   * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+   * @return The enum numeric value on the wire for assetEventId.
    */
-  @java.lang.Override public int getHiijbokbgdeValue() {
-    return hiijbokbgde_;
+  @java.lang.Override public int getAssetEventIdValue() {
+    return assetEventId_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-   * @return The hiijbokbgde.
+   * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+   * @return The assetEventId.
    */
-  @java.lang.Override public POGOProtos.Rpc.AssetTelemetryIds getHiijbokbgde() {
+  @java.lang.Override public POGOProtos.Rpc.AssetTelemetryIds getAssetEventId() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.AssetTelemetryIds result = POGOProtos.Rpc.AssetTelemetryIds.valueOf(hiijbokbgde_);
+    POGOProtos.Rpc.AssetTelemetryIds result = POGOProtos.Rpc.AssetTelemetryIds.valueOf(assetEventId_);
     return result == null ? POGOProtos.Rpc.AssetTelemetryIds.UNRECOGNIZED : result;
   }
 
-  public static final int LNDIGKKJFML_FIELD_NUMBER = 2;
-  private volatile java.lang.Object lndigkkjfml_;
+  public static final int FORT_ID_FIELD_NUMBER = 2;
+  private volatile java.lang.Object fortId_;
   /**
-   * <code>string lndigkkjfml = 2;</code>
-   * @return The lndigkkjfml.
+   * <code>string fort_id = 2;</code>
+   * @return The fortId.
    */
   @java.lang.Override
-  public java.lang.String getLndigkkjfml() {
-    java.lang.Object ref = lndigkkjfml_;
+  public java.lang.String getFortId() {
+    java.lang.Object ref = fortId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      lndigkkjfml_ = s;
+      fortId_ = s;
       return s;
     }
   }
   /**
-   * <code>string lndigkkjfml = 2;</code>
-   * @return The bytes for lndigkkjfml.
+   * <code>string fort_id = 2;</code>
+   * @return The bytes for fortId.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getLndigkkjfmlBytes() {
-    java.lang.Object ref = lndigkkjfml_;
+      getFortIdBytes() {
+    java.lang.Object ref = fortId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      lndigkkjfml_ = b;
+      fortId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int DJKELMOCLJO_FIELD_NUMBER = 3;
-  private int djkelmocljo_;
+  public static final int SIZE_FIELD_NUMBER = 3;
+  private int size_;
   /**
-   * <code>uint32 djkelmocljo = 3;</code>
-   * @return The djkelmocljo.
+   * <code>uint32 size = 3;</code>
+   * @return The size.
    */
   @java.lang.Override
-  public int getDjkelmocljo() {
-    return djkelmocljo_;
+  public int getSize() {
+    return size_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -185,14 +185,14 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (hiijbokbgde_ != POGOProtos.Rpc.AssetTelemetryIds.ASSET_TELEMETRY_IDS_UNDEFINED_ASSET_EVENT.getNumber()) {
-      output.writeEnum(1, hiijbokbgde_);
+    if (assetEventId_ != POGOProtos.Rpc.AssetTelemetryIds.ASSET_TELEMETRY_IDS_UNDEFINED_ASSET_EVENT.getNumber()) {
+      output.writeEnum(1, assetEventId_);
     }
-    if (!getLndigkkjfmlBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, lndigkkjfml_);
+    if (!getFortIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, fortId_);
     }
-    if (djkelmocljo_ != 0) {
-      output.writeUInt32(3, djkelmocljo_);
+    if (size_ != 0) {
+      output.writeUInt32(3, size_);
     }
     unknownFields.writeTo(output);
   }
@@ -203,16 +203,16 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (hiijbokbgde_ != POGOProtos.Rpc.AssetTelemetryIds.ASSET_TELEMETRY_IDS_UNDEFINED_ASSET_EVENT.getNumber()) {
+    if (assetEventId_ != POGOProtos.Rpc.AssetTelemetryIds.ASSET_TELEMETRY_IDS_UNDEFINED_ASSET_EVENT.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, hiijbokbgde_);
+        .computeEnumSize(1, assetEventId_);
     }
-    if (!getLndigkkjfmlBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, lndigkkjfml_);
+    if (!getFortIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, fortId_);
     }
-    if (djkelmocljo_ != 0) {
+    if (size_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt32Size(3, djkelmocljo_);
+        .computeUInt32Size(3, size_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -229,11 +229,11 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.AssetPoiDownloadTelemetry other = (POGOProtos.Rpc.AssetPoiDownloadTelemetry) obj;
 
-    if (hiijbokbgde_ != other.hiijbokbgde_) return false;
-    if (!getLndigkkjfml()
-        .equals(other.getLndigkkjfml())) return false;
-    if (getDjkelmocljo()
-        != other.getDjkelmocljo()) return false;
+    if (assetEventId_ != other.assetEventId_) return false;
+    if (!getFortId()
+        .equals(other.getFortId())) return false;
+    if (getSize()
+        != other.getSize()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -245,12 +245,12 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + HIIJBOKBGDE_FIELD_NUMBER;
-    hash = (53 * hash) + hiijbokbgde_;
-    hash = (37 * hash) + LNDIGKKJFML_FIELD_NUMBER;
-    hash = (53 * hash) + getLndigkkjfml().hashCode();
-    hash = (37 * hash) + DJKELMOCLJO_FIELD_NUMBER;
-    hash = (53 * hash) + getDjkelmocljo();
+    hash = (37 * hash) + ASSET_EVENT_ID_FIELD_NUMBER;
+    hash = (53 * hash) + assetEventId_;
+    hash = (37 * hash) + FORT_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getFortId().hashCode();
+    hash = (37 * hash) + SIZE_FIELD_NUMBER;
+    hash = (53 * hash) + getSize();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -388,11 +388,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      hiijbokbgde_ = 0;
+      assetEventId_ = 0;
 
-      lndigkkjfml_ = "";
+      fortId_ = "";
 
-      djkelmocljo_ = 0;
+      size_ = 0;
 
       return this;
     }
@@ -420,9 +420,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.AssetPoiDownloadTelemetry buildPartial() {
       POGOProtos.Rpc.AssetPoiDownloadTelemetry result = new POGOProtos.Rpc.AssetPoiDownloadTelemetry(this);
-      result.hiijbokbgde_ = hiijbokbgde_;
-      result.lndigkkjfml_ = lndigkkjfml_;
-      result.djkelmocljo_ = djkelmocljo_;
+      result.assetEventId_ = assetEventId_;
+      result.fortId_ = fortId_;
+      result.size_ = size_;
       onBuilt();
       return result;
     }
@@ -471,15 +471,15 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.AssetPoiDownloadTelemetry other) {
       if (other == POGOProtos.Rpc.AssetPoiDownloadTelemetry.getDefaultInstance()) return this;
-      if (other.hiijbokbgde_ != 0) {
-        setHiijbokbgdeValue(other.getHiijbokbgdeValue());
+      if (other.assetEventId_ != 0) {
+        setAssetEventIdValue(other.getAssetEventIdValue());
       }
-      if (!other.getLndigkkjfml().isEmpty()) {
-        lndigkkjfml_ = other.lndigkkjfml_;
+      if (!other.getFortId().isEmpty()) {
+        fortId_ = other.fortId_;
         onChanged();
       }
-      if (other.getDjkelmocljo() != 0) {
-        setDjkelmocljo(other.getDjkelmocljo());
+      if (other.getSize() != 0) {
+        setSize(other.getSize());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -510,163 +510,163 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int hiijbokbgde_ = 0;
+    private int assetEventId_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-     * @return The enum numeric value on the wire for hiijbokbgde.
+     * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+     * @return The enum numeric value on the wire for assetEventId.
      */
-    @java.lang.Override public int getHiijbokbgdeValue() {
-      return hiijbokbgde_;
+    @java.lang.Override public int getAssetEventIdValue() {
+      return assetEventId_;
     }
     /**
-     * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-     * @param value The enum numeric value on the wire for hiijbokbgde to set.
+     * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+     * @param value The enum numeric value on the wire for assetEventId to set.
      * @return This builder for chaining.
      */
-    public Builder setHiijbokbgdeValue(int value) {
+    public Builder setAssetEventIdValue(int value) {
       
-      hiijbokbgde_ = value;
+      assetEventId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-     * @return The hiijbokbgde.
+     * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+     * @return The assetEventId.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.AssetTelemetryIds getHiijbokbgde() {
+    public POGOProtos.Rpc.AssetTelemetryIds getAssetEventId() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.AssetTelemetryIds result = POGOProtos.Rpc.AssetTelemetryIds.valueOf(hiijbokbgde_);
+      POGOProtos.Rpc.AssetTelemetryIds result = POGOProtos.Rpc.AssetTelemetryIds.valueOf(assetEventId_);
       return result == null ? POGOProtos.Rpc.AssetTelemetryIds.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-     * @param value The hiijbokbgde to set.
+     * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+     * @param value The assetEventId to set.
      * @return This builder for chaining.
      */
-    public Builder setHiijbokbgde(POGOProtos.Rpc.AssetTelemetryIds value) {
+    public Builder setAssetEventId(POGOProtos.Rpc.AssetTelemetryIds value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      hiijbokbgde_ = value.getNumber();
+      assetEventId_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
+     * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearHiijbokbgde() {
+    public Builder clearAssetEventId() {
       
-      hiijbokbgde_ = 0;
+      assetEventId_ = 0;
       onChanged();
       return this;
     }
 
-    private java.lang.Object lndigkkjfml_ = "";
+    private java.lang.Object fortId_ = "";
     /**
-     * <code>string lndigkkjfml = 2;</code>
-     * @return The lndigkkjfml.
+     * <code>string fort_id = 2;</code>
+     * @return The fortId.
      */
-    public java.lang.String getLndigkkjfml() {
-      java.lang.Object ref = lndigkkjfml_;
+    public java.lang.String getFortId() {
+      java.lang.Object ref = fortId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        lndigkkjfml_ = s;
+        fortId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string lndigkkjfml = 2;</code>
-     * @return The bytes for lndigkkjfml.
+     * <code>string fort_id = 2;</code>
+     * @return The bytes for fortId.
      */
     public com.google.protobuf.ByteString
-        getLndigkkjfmlBytes() {
-      java.lang.Object ref = lndigkkjfml_;
+        getFortIdBytes() {
+      java.lang.Object ref = fortId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        lndigkkjfml_ = b;
+        fortId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string lndigkkjfml = 2;</code>
-     * @param value The lndigkkjfml to set.
+     * <code>string fort_id = 2;</code>
+     * @param value The fortId to set.
      * @return This builder for chaining.
      */
-    public Builder setLndigkkjfml(
+    public Builder setFortId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      lndigkkjfml_ = value;
+      fortId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string lndigkkjfml = 2;</code>
+     * <code>string fort_id = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLndigkkjfml() {
+    public Builder clearFortId() {
       
-      lndigkkjfml_ = getDefaultInstance().getLndigkkjfml();
+      fortId_ = getDefaultInstance().getFortId();
       onChanged();
       return this;
     }
     /**
-     * <code>string lndigkkjfml = 2;</code>
-     * @param value The bytes for lndigkkjfml to set.
+     * <code>string fort_id = 2;</code>
+     * @param value The bytes for fortId to set.
      * @return This builder for chaining.
      */
-    public Builder setLndigkkjfmlBytes(
+    public Builder setFortIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      lndigkkjfml_ = value;
+      fortId_ = value;
       onChanged();
       return this;
     }
 
-    private int djkelmocljo_ ;
+    private int size_ ;
     /**
-     * <code>uint32 djkelmocljo = 3;</code>
-     * @return The djkelmocljo.
+     * <code>uint32 size = 3;</code>
+     * @return The size.
      */
     @java.lang.Override
-    public int getDjkelmocljo() {
-      return djkelmocljo_;
+    public int getSize() {
+      return size_;
     }
     /**
-     * <code>uint32 djkelmocljo = 3;</code>
-     * @param value The djkelmocljo to set.
+     * <code>uint32 size = 3;</code>
+     * @param value The size to set.
      * @return This builder for chaining.
      */
-    public Builder setDjkelmocljo(int value) {
+    public Builder setSize(int value) {
       
-      djkelmocljo_ = value;
+      size_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>uint32 djkelmocljo = 3;</code>
+     * <code>uint32 size = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDjkelmocljo() {
+    public Builder clearSize() {
       
-      djkelmocljo_ = 0;
+      size_ = 0;
       onChanged();
       return this;
     }

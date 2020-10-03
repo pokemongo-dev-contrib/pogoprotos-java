@@ -60,11 +60,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.ClientInbox.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformClientInbox.Builder subBuilder = null;
             if (inbox_ != null) {
               subBuilder = inbox_.toBuilder();
             }
-            inbox_ = input.readMessage(POGOProtos.Rpc.ClientInbox.parser(), extensionRegistry);
+            inbox_ = input.readMessage(POGOProtos.Rpc.PlatformClientInbox.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(inbox_);
               inbox_ = subBuilder.buildPartial();
@@ -245,9 +245,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int INBOX_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.ClientInbox inbox_;
+  private POGOProtos.Rpc.PlatformClientInbox inbox_;
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
    * @return Whether the inbox field is set.
    */
   @java.lang.Override
@@ -255,18 +255,18 @@ private static final long serialVersionUID = 0L;
     return inbox_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
    * @return The inbox.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ClientInbox getInbox() {
-    return inbox_ == null ? POGOProtos.Rpc.ClientInbox.getDefaultInstance() : inbox_;
+  public POGOProtos.Rpc.PlatformClientInbox getInbox() {
+    return inbox_ == null ? POGOProtos.Rpc.PlatformClientInbox.getDefaultInstance() : inbox_;
   }
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ClientInboxOrBuilder getInboxOrBuilder() {
+  public POGOProtos.Rpc.PlatformClientInboxOrBuilder getInboxOrBuilder() {
     return getInbox();
   }
 
@@ -659,31 +659,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.ClientInbox inbox_;
+    private POGOProtos.Rpc.PlatformClientInbox inbox_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ClientInbox, POGOProtos.Rpc.ClientInbox.Builder, POGOProtos.Rpc.ClientInboxOrBuilder> inboxBuilder_;
+        POGOProtos.Rpc.PlatformClientInbox, POGOProtos.Rpc.PlatformClientInbox.Builder, POGOProtos.Rpc.PlatformClientInboxOrBuilder> inboxBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
      * @return Whether the inbox field is set.
      */
     public boolean hasInbox() {
       return inboxBuilder_ != null || inbox_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
      * @return The inbox.
      */
-    public POGOProtos.Rpc.ClientInbox getInbox() {
+    public POGOProtos.Rpc.PlatformClientInbox getInbox() {
       if (inboxBuilder_ == null) {
-        return inbox_ == null ? POGOProtos.Rpc.ClientInbox.getDefaultInstance() : inbox_;
+        return inbox_ == null ? POGOProtos.Rpc.PlatformClientInbox.getDefaultInstance() : inbox_;
       } else {
         return inboxBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
      */
-    public Builder setInbox(POGOProtos.Rpc.ClientInbox value) {
+    public Builder setInbox(POGOProtos.Rpc.PlatformClientInbox value) {
       if (inboxBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -697,10 +697,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
      */
     public Builder setInbox(
-        POGOProtos.Rpc.ClientInbox.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformClientInbox.Builder builderForValue) {
       if (inboxBuilder_ == null) {
         inbox_ = builderForValue.build();
         onChanged();
@@ -711,13 +711,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
      */
-    public Builder mergeInbox(POGOProtos.Rpc.ClientInbox value) {
+    public Builder mergeInbox(POGOProtos.Rpc.PlatformClientInbox value) {
       if (inboxBuilder_ == null) {
         if (inbox_ != null) {
           inbox_ =
-            POGOProtos.Rpc.ClientInbox.newBuilder(inbox_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformClientInbox.newBuilder(inbox_).mergeFrom(value).buildPartial();
         } else {
           inbox_ = value;
         }
@@ -729,7 +729,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
      */
     public Builder clearInbox() {
       if (inboxBuilder_ == null) {
@@ -743,33 +743,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
      */
-    public POGOProtos.Rpc.ClientInbox.Builder getInboxBuilder() {
+    public POGOProtos.Rpc.PlatformClientInbox.Builder getInboxBuilder() {
       
       onChanged();
       return getInboxFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
      */
-    public POGOProtos.Rpc.ClientInboxOrBuilder getInboxOrBuilder() {
+    public POGOProtos.Rpc.PlatformClientInboxOrBuilder getInboxOrBuilder() {
       if (inboxBuilder_ != null) {
         return inboxBuilder_.getMessageOrBuilder();
       } else {
         return inbox_ == null ?
-            POGOProtos.Rpc.ClientInbox.getDefaultInstance() : inbox_;
+            POGOProtos.Rpc.PlatformClientInbox.getDefaultInstance() : inbox_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ClientInbox, POGOProtos.Rpc.ClientInbox.Builder, POGOProtos.Rpc.ClientInboxOrBuilder> 
+        POGOProtos.Rpc.PlatformClientInbox, POGOProtos.Rpc.PlatformClientInbox.Builder, POGOProtos.Rpc.PlatformClientInboxOrBuilder> 
         getInboxFieldBuilder() {
       if (inboxBuilder_ == null) {
         inboxBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ClientInbox, POGOProtos.Rpc.ClientInbox.Builder, POGOProtos.Rpc.ClientInboxOrBuilder>(
+            POGOProtos.Rpc.PlatformClientInbox, POGOProtos.Rpc.PlatformClientInbox.Builder, POGOProtos.Rpc.PlatformClientInboxOrBuilder>(
                 getInbox(),
                 getParentForChildren(),
                 isClean());

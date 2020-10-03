@@ -23,19 +23,19 @@ public interface JABKHBFHHGNOrBuilder extends
   POGOProtos.Rpc.AwardedGymBadgeOrBuilder getHdinlbkpielOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>.POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    * @return Whether the mkfdbndkecj field is set.
    */
   boolean hasMkfdbndkecj();
   /**
-   * <code>.POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>.POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    * @return The mkfdbndkecj.
    */
-  POGOProtos.Rpc.JLMFGIOLPCM getMkfdbndkecj();
+  POGOProtos.Rpc.GymDefenderProto getMkfdbndkecj();
   /**
-   * <code>.POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>.POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
-  POGOProtos.Rpc.JLMFGIOLPCMOrBuilder getMkfdbndkecjOrBuilder();
+  POGOProtos.Rpc.GymDefenderProtoOrBuilder getMkfdbndkecjOrBuilder();
 
   /**
    * <code>bool pkdofmmahaj = 3;</code>

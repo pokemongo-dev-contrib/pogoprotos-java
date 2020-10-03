@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AnimationOverrideProto() {
-    bdiceomajhl_ = 0;
+    animation_ = 0;
   }
 
   @java.lang.Override
@@ -56,22 +56,22 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            bdiceomajhl_ = rawValue;
+            animation_ = rawValue;
             break;
           }
           case 16: {
 
-            mgojhjjaopi_ = input.readBool();
+            blacklist_ = input.readBool();
             break;
           }
           case 29: {
 
-            akkaelodadh_ = input.readFloat();
+            animMin_ = input.readFloat();
             break;
           }
           case 37: {
 
-            aiojnfepehp_ = input.readFloat();
+            animMax_ = input.readFloat();
             break;
           }
           default: {
@@ -111,9 +111,9 @@ private static final long serialVersionUID = 0L;
    * ref: HBKBLDILKGL/EFJDKNMFMHC/KGFBJMBNAFF
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF}
+   * Protobuf enum {@code POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim}
    */
-  public enum KGFBJMBNAFF
+  public enum PokemonAnim
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>NONE = 0;</code>
@@ -206,7 +206,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static KGFBJMBNAFF valueOf(int value) {
+    public static PokemonAnim valueOf(int value) {
       return forNumber(value);
     }
 
@@ -214,7 +214,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static KGFBJMBNAFF forNumber(int value) {
+    public static PokemonAnim forNumber(int value) {
       switch (value) {
         case 0: return NONE;
         case 1: return IDLE_01;
@@ -229,15 +229,15 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<KGFBJMBNAFF>
+    public static com.google.protobuf.Internal.EnumLiteMap<PokemonAnim>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        KGFBJMBNAFF> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<KGFBJMBNAFF>() {
-            public KGFBJMBNAFF findValueByNumber(int number) {
-              return KGFBJMBNAFF.forNumber(number);
+        PokemonAnim> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<PokemonAnim>() {
+            public PokemonAnim findValueByNumber(int number) {
+              return PokemonAnim.forNumber(number);
             }
           };
 
@@ -258,9 +258,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.AnimationOverrideProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final KGFBJMBNAFF[] VALUES = values();
+    private static final PokemonAnim[] VALUES = values();
 
-    public static KGFBJMBNAFF valueOf(
+    public static PokemonAnim valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -274,63 +274,63 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private KGFBJMBNAFF(int value) {
+    private PokemonAnim(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim)
   }
 
-  public static final int BDICEOMAJHL_FIELD_NUMBER = 1;
-  private int bdiceomajhl_;
+  public static final int ANIMATION_FIELD_NUMBER = 1;
+  private int animation_;
   /**
-   * <code>.POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF bdiceomajhl = 1;</code>
-   * @return The enum numeric value on the wire for bdiceomajhl.
+   * <code>.POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim animation = 1;</code>
+   * @return The enum numeric value on the wire for animation.
    */
-  @java.lang.Override public int getBdiceomajhlValue() {
-    return bdiceomajhl_;
+  @java.lang.Override public int getAnimationValue() {
+    return animation_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF bdiceomajhl = 1;</code>
-   * @return The bdiceomajhl.
+   * <code>.POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim animation = 1;</code>
+   * @return The animation.
    */
-  @java.lang.Override public POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF getBdiceomajhl() {
+  @java.lang.Override public POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim getAnimation() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF result = POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF.valueOf(bdiceomajhl_);
-    return result == null ? POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF.UNRECOGNIZED : result;
+    POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim result = POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim.valueOf(animation_);
+    return result == null ? POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim.UNRECOGNIZED : result;
   }
 
-  public static final int MGOJHJJAOPI_FIELD_NUMBER = 2;
-  private boolean mgojhjjaopi_;
+  public static final int BLACKLIST_FIELD_NUMBER = 2;
+  private boolean blacklist_;
   /**
-   * <code>bool mgojhjjaopi = 2;</code>
-   * @return The mgojhjjaopi.
+   * <code>bool blacklist = 2;</code>
+   * @return The blacklist.
    */
   @java.lang.Override
-  public boolean getMgojhjjaopi() {
-    return mgojhjjaopi_;
+  public boolean getBlacklist() {
+    return blacklist_;
   }
 
-  public static final int AKKAELODADH_FIELD_NUMBER = 3;
-  private float akkaelodadh_;
+  public static final int ANIM_MIN_FIELD_NUMBER = 3;
+  private float animMin_;
   /**
-   * <code>float akkaelodadh = 3;</code>
-   * @return The akkaelodadh.
+   * <code>float anim_min = 3;</code>
+   * @return The animMin.
    */
   @java.lang.Override
-  public float getAkkaelodadh() {
-    return akkaelodadh_;
+  public float getAnimMin() {
+    return animMin_;
   }
 
-  public static final int AIOJNFEPEHP_FIELD_NUMBER = 4;
-  private float aiojnfepehp_;
+  public static final int ANIM_MAX_FIELD_NUMBER = 4;
+  private float animMax_;
   /**
-   * <code>float aiojnfepehp = 4;</code>
-   * @return The aiojnfepehp.
+   * <code>float anim_max = 4;</code>
+   * @return The animMax.
    */
   @java.lang.Override
-  public float getAiojnfepehp() {
-    return aiojnfepehp_;
+  public float getAnimMax() {
+    return animMax_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -347,17 +347,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (bdiceomajhl_ != POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF.NONE.getNumber()) {
-      output.writeEnum(1, bdiceomajhl_);
+    if (animation_ != POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim.NONE.getNumber()) {
+      output.writeEnum(1, animation_);
     }
-    if (mgojhjjaopi_ != false) {
-      output.writeBool(2, mgojhjjaopi_);
+    if (blacklist_ != false) {
+      output.writeBool(2, blacklist_);
     }
-    if (akkaelodadh_ != 0F) {
-      output.writeFloat(3, akkaelodadh_);
+    if (animMin_ != 0F) {
+      output.writeFloat(3, animMin_);
     }
-    if (aiojnfepehp_ != 0F) {
-      output.writeFloat(4, aiojnfepehp_);
+    if (animMax_ != 0F) {
+      output.writeFloat(4, animMax_);
     }
     unknownFields.writeTo(output);
   }
@@ -368,21 +368,21 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (bdiceomajhl_ != POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF.NONE.getNumber()) {
+    if (animation_ != POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim.NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, bdiceomajhl_);
+        .computeEnumSize(1, animation_);
     }
-    if (mgojhjjaopi_ != false) {
+    if (blacklist_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(2, mgojhjjaopi_);
+        .computeBoolSize(2, blacklist_);
     }
-    if (akkaelodadh_ != 0F) {
+    if (animMin_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(3, akkaelodadh_);
+        .computeFloatSize(3, animMin_);
     }
-    if (aiojnfepehp_ != 0F) {
+    if (animMax_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(4, aiojnfepehp_);
+        .computeFloatSize(4, animMax_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -399,15 +399,15 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.AnimationOverrideProto other = (POGOProtos.Rpc.AnimationOverrideProto) obj;
 
-    if (bdiceomajhl_ != other.bdiceomajhl_) return false;
-    if (getMgojhjjaopi()
-        != other.getMgojhjjaopi()) return false;
-    if (java.lang.Float.floatToIntBits(getAkkaelodadh())
+    if (animation_ != other.animation_) return false;
+    if (getBlacklist()
+        != other.getBlacklist()) return false;
+    if (java.lang.Float.floatToIntBits(getAnimMin())
         != java.lang.Float.floatToIntBits(
-            other.getAkkaelodadh())) return false;
-    if (java.lang.Float.floatToIntBits(getAiojnfepehp())
+            other.getAnimMin())) return false;
+    if (java.lang.Float.floatToIntBits(getAnimMax())
         != java.lang.Float.floatToIntBits(
-            other.getAiojnfepehp())) return false;
+            other.getAnimMax())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -419,17 +419,17 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + BDICEOMAJHL_FIELD_NUMBER;
-    hash = (53 * hash) + bdiceomajhl_;
-    hash = (37 * hash) + MGOJHJJAOPI_FIELD_NUMBER;
+    hash = (37 * hash) + ANIMATION_FIELD_NUMBER;
+    hash = (53 * hash) + animation_;
+    hash = (37 * hash) + BLACKLIST_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getMgojhjjaopi());
-    hash = (37 * hash) + AKKAELODADH_FIELD_NUMBER;
+        getBlacklist());
+    hash = (37 * hash) + ANIM_MIN_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getAkkaelodadh());
-    hash = (37 * hash) + AIOJNFEPEHP_FIELD_NUMBER;
+        getAnimMin());
+    hash = (37 * hash) + ANIM_MAX_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getAiojnfepehp());
+        getAnimMax());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -567,13 +567,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      bdiceomajhl_ = 0;
+      animation_ = 0;
 
-      mgojhjjaopi_ = false;
+      blacklist_ = false;
 
-      akkaelodadh_ = 0F;
+      animMin_ = 0F;
 
-      aiojnfepehp_ = 0F;
+      animMax_ = 0F;
 
       return this;
     }
@@ -601,10 +601,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.AnimationOverrideProto buildPartial() {
       POGOProtos.Rpc.AnimationOverrideProto result = new POGOProtos.Rpc.AnimationOverrideProto(this);
-      result.bdiceomajhl_ = bdiceomajhl_;
-      result.mgojhjjaopi_ = mgojhjjaopi_;
-      result.akkaelodadh_ = akkaelodadh_;
-      result.aiojnfepehp_ = aiojnfepehp_;
+      result.animation_ = animation_;
+      result.blacklist_ = blacklist_;
+      result.animMin_ = animMin_;
+      result.animMax_ = animMax_;
       onBuilt();
       return result;
     }
@@ -653,17 +653,17 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.AnimationOverrideProto other) {
       if (other == POGOProtos.Rpc.AnimationOverrideProto.getDefaultInstance()) return this;
-      if (other.bdiceomajhl_ != 0) {
-        setBdiceomajhlValue(other.getBdiceomajhlValue());
+      if (other.animation_ != 0) {
+        setAnimationValue(other.getAnimationValue());
       }
-      if (other.getMgojhjjaopi() != false) {
-        setMgojhjjaopi(other.getMgojhjjaopi());
+      if (other.getBlacklist() != false) {
+        setBlacklist(other.getBlacklist());
       }
-      if (other.getAkkaelodadh() != 0F) {
-        setAkkaelodadh(other.getAkkaelodadh());
+      if (other.getAnimMin() != 0F) {
+        setAnimMin(other.getAnimMin());
       }
-      if (other.getAiojnfepehp() != 0F) {
-        setAiojnfepehp(other.getAiojnfepehp());
+      if (other.getAnimMax() != 0F) {
+        setAnimMax(other.getAnimMax());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -694,149 +694,149 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int bdiceomajhl_ = 0;
+    private int animation_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF bdiceomajhl = 1;</code>
-     * @return The enum numeric value on the wire for bdiceomajhl.
+     * <code>.POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim animation = 1;</code>
+     * @return The enum numeric value on the wire for animation.
      */
-    @java.lang.Override public int getBdiceomajhlValue() {
-      return bdiceomajhl_;
+    @java.lang.Override public int getAnimationValue() {
+      return animation_;
     }
     /**
-     * <code>.POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF bdiceomajhl = 1;</code>
-     * @param value The enum numeric value on the wire for bdiceomajhl to set.
+     * <code>.POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim animation = 1;</code>
+     * @param value The enum numeric value on the wire for animation to set.
      * @return This builder for chaining.
      */
-    public Builder setBdiceomajhlValue(int value) {
+    public Builder setAnimationValue(int value) {
       
-      bdiceomajhl_ = value;
+      animation_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF bdiceomajhl = 1;</code>
-     * @return The bdiceomajhl.
+     * <code>.POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim animation = 1;</code>
+     * @return The animation.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF getBdiceomajhl() {
+    public POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim getAnimation() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF result = POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF.valueOf(bdiceomajhl_);
-      return result == null ? POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF.UNRECOGNIZED : result;
+      POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim result = POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim.valueOf(animation_);
+      return result == null ? POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF bdiceomajhl = 1;</code>
-     * @param value The bdiceomajhl to set.
+     * <code>.POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim animation = 1;</code>
+     * @param value The animation to set.
      * @return This builder for chaining.
      */
-    public Builder setBdiceomajhl(POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF value) {
+    public Builder setAnimation(POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      bdiceomajhl_ = value.getNumber();
+      animation_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AnimationOverrideProto.KGFBJMBNAFF bdiceomajhl = 1;</code>
+     * <code>.POGOProtos.Rpc.AnimationOverrideProto.PokemonAnim animation = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBdiceomajhl() {
+    public Builder clearAnimation() {
       
-      bdiceomajhl_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private boolean mgojhjjaopi_ ;
-    /**
-     * <code>bool mgojhjjaopi = 2;</code>
-     * @return The mgojhjjaopi.
-     */
-    @java.lang.Override
-    public boolean getMgojhjjaopi() {
-      return mgojhjjaopi_;
-    }
-    /**
-     * <code>bool mgojhjjaopi = 2;</code>
-     * @param value The mgojhjjaopi to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMgojhjjaopi(boolean value) {
-      
-      mgojhjjaopi_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>bool mgojhjjaopi = 2;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearMgojhjjaopi() {
-      
-      mgojhjjaopi_ = false;
+      animation_ = 0;
       onChanged();
       return this;
     }
 
-    private float akkaelodadh_ ;
+    private boolean blacklist_ ;
     /**
-     * <code>float akkaelodadh = 3;</code>
-     * @return The akkaelodadh.
+     * <code>bool blacklist = 2;</code>
+     * @return The blacklist.
      */
     @java.lang.Override
-    public float getAkkaelodadh() {
-      return akkaelodadh_;
+    public boolean getBlacklist() {
+      return blacklist_;
     }
     /**
-     * <code>float akkaelodadh = 3;</code>
-     * @param value The akkaelodadh to set.
+     * <code>bool blacklist = 2;</code>
+     * @param value The blacklist to set.
      * @return This builder for chaining.
      */
-    public Builder setAkkaelodadh(float value) {
+    public Builder setBlacklist(boolean value) {
       
-      akkaelodadh_ = value;
+      blacklist_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float akkaelodadh = 3;</code>
+     * <code>bool blacklist = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAkkaelodadh() {
+    public Builder clearBlacklist() {
       
-      akkaelodadh_ = 0F;
+      blacklist_ = false;
       onChanged();
       return this;
     }
 
-    private float aiojnfepehp_ ;
+    private float animMin_ ;
     /**
-     * <code>float aiojnfepehp = 4;</code>
-     * @return The aiojnfepehp.
+     * <code>float anim_min = 3;</code>
+     * @return The animMin.
      */
     @java.lang.Override
-    public float getAiojnfepehp() {
-      return aiojnfepehp_;
+    public float getAnimMin() {
+      return animMin_;
     }
     /**
-     * <code>float aiojnfepehp = 4;</code>
-     * @param value The aiojnfepehp to set.
+     * <code>float anim_min = 3;</code>
+     * @param value The animMin to set.
      * @return This builder for chaining.
      */
-    public Builder setAiojnfepehp(float value) {
+    public Builder setAnimMin(float value) {
       
-      aiojnfepehp_ = value;
+      animMin_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float aiojnfepehp = 4;</code>
+     * <code>float anim_min = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAiojnfepehp() {
+    public Builder clearAnimMin() {
       
-      aiojnfepehp_ = 0F;
+      animMin_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private float animMax_ ;
+    /**
+     * <code>float anim_max = 4;</code>
+     * @return The animMax.
+     */
+    @java.lang.Override
+    public float getAnimMax() {
+      return animMax_;
+    }
+    /**
+     * <code>float anim_max = 4;</code>
+     * @param value The animMax to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAnimMax(float value) {
+      
+      animMax_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>float anim_max = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAnimMax() {
+      
+      animMax_ = 0F;
       onChanged();
       return this;
     }

@@ -8,38 +8,38 @@ public interface BuddyStatsOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>float ofofmblglkf = 1;</code>
-   * @return The ofofmblglkf.
+   * <code>float km_walked = 1;</code>
+   * @return The kmWalked.
    */
-  float getOfofmblglkf();
+  float getKmWalked();
 
   /**
-   * <code>int32 cpnaojfjeni = 2;</code>
-   * @return The cpnaojfjeni.
+   * <code>int32 berries_fed = 2;</code>
+   * @return The berriesFed.
    */
-  int getCpnaojfjeni();
+  int getBerriesFed();
 
   /**
-   * <code>int32 hbifodjbjil = 3;</code>
-   * @return The hbifodjbjil.
+   * <code>int32 communication = 3;</code>
+   * @return The communication.
    */
-  int getHbifodjbjil();
+  int getCommunication();
 
   /**
-   * <code>int32 ibokhlaeioc = 4;</code>
-   * @return The ibokhlaeioc.
+   * <code>int32 battles = 4;</code>
+   * @return The battles.
    */
-  int getIbokhlaeioc();
+  int getBattles();
 
   /**
-   * <code>int32 mjfofaedecg = 5;</code>
-   * @return The mjfofaedecg.
+   * <code>int32 photos = 5;</code>
+   * @return The photos.
    */
-  int getMjfofaedecg();
+  int getPhotos();
 
   /**
-   * <code>int32 plnblkcoaen = 6;</code>
-   * @return The plnblkcoaen.
+   * <code>int32 new_visits = 6;</code>
+   * @return The newVisits.
    */
-  int getPlnblkcoaen();
+  int getNewVisits();
 }

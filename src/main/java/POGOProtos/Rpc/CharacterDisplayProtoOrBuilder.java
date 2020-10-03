@@ -8,24 +8,24 @@ public interface CharacterDisplayProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle adbhjffoedg = 1;</code>
-   * @return The enum numeric value on the wire for adbhjffoedg.
+   * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle style = 1;</code>
+   * @return The enum numeric value on the wire for style.
    */
-  int getAdbhjffoedgValue();
+  int getStyleValue();
   /**
-   * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle adbhjffoedg = 1;</code>
-   * @return The adbhjffoedg.
+   * <code>.POGOProtos.Rpc.EnumWrapper.PokestopStyle style = 1;</code>
+   * @return The style.
    */
-  POGOProtos.Rpc.EnumWrapper.PokestopStyle getAdbhjffoedg();
+  POGOProtos.Rpc.EnumWrapper.PokestopStyle getStyle();
 
   /**
-   * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter jfindmcpnim = 2;</code>
-   * @return The enum numeric value on the wire for jfindmcpnim.
+   * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter character = 2;</code>
+   * @return The enum numeric value on the wire for character.
    */
-  int getJfindmcpnimValue();
+  int getCharacterValue();
   /**
-   * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter jfindmcpnim = 2;</code>
-   * @return The jfindmcpnim.
+   * <code>.POGOProtos.Rpc.EnumWrapper.InvasionCharacter character = 2;</code>
+   * @return The character.
    */
-  POGOProtos.Rpc.EnumWrapper.InvasionCharacter getJfindmcpnim();
+  POGOProtos.Rpc.EnumWrapper.InvasionCharacter getCharacter();
 }

@@ -20,9 +20,9 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private BattleLogProto() {
-    jlnijhmemnj_ = 0;
-    dbecogechda_ = 0;
-    ncilckfpfoe_ = java.util.Collections.emptyList();
+    state_ = 0;
+    battleType_ = 0;
+    battleActions_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -59,37 +59,37 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            jlnijhmemnj_ = rawValue;
+            state_ = rawValue;
             break;
           }
           case 16: {
             int rawValue = input.readEnum();
 
-            dbecogechda_ = rawValue;
+            battleType_ = rawValue;
             break;
           }
           case 24: {
 
-            dikaifhaigb_ = input.readInt64();
+            serverMs_ = input.readInt64();
             break;
           }
           case 34: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              ncilckfpfoe_ = new java.util.ArrayList<POGOProtos.Rpc.BattleActionProto>();
+              battleActions_ = new java.util.ArrayList<POGOProtos.Rpc.BattleActionProto>();
               mutable_bitField0_ |= 0x00000001;
             }
-            ncilckfpfoe_.add(
+            battleActions_.add(
                 input.readMessage(POGOProtos.Rpc.BattleActionProto.parser(), extensionRegistry));
             break;
           }
           case 40: {
 
-            llocahndhdn_ = input.readInt64();
+            battleStartMs_ = input.readInt64();
             break;
           }
           case 48: {
 
-            kkfifghaonk_ = input.readInt64();
+            battleEndMs_ = input.readInt64();
             break;
           }
           default: {
@@ -108,7 +108,7 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        ncilckfpfoe_ = java.util.Collections.unmodifiableList(ncilckfpfoe_);
+        battleActions_ = java.util.Collections.unmodifiableList(battleActions_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -396,115 +396,115 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.BattleLogProto.State)
   }
 
-  public static final int JLNIJHMEMNJ_FIELD_NUMBER = 1;
-  private int jlnijhmemnj_;
+  public static final int STATE_FIELD_NUMBER = 1;
+  private int state_;
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
-   * @return The enum numeric value on the wire for jlnijhmemnj.
+   * <code>.POGOProtos.Rpc.BattleLogProto.State state = 1;</code>
+   * @return The enum numeric value on the wire for state.
    */
-  @java.lang.Override public int getJlnijhmemnjValue() {
-    return jlnijhmemnj_;
+  @java.lang.Override public int getStateValue() {
+    return state_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
-   * @return The jlnijhmemnj.
+   * <code>.POGOProtos.Rpc.BattleLogProto.State state = 1;</code>
+   * @return The state.
    */
-  @java.lang.Override public POGOProtos.Rpc.BattleLogProto.State getJlnijhmemnj() {
+  @java.lang.Override public POGOProtos.Rpc.BattleLogProto.State getState() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.BattleLogProto.State result = POGOProtos.Rpc.BattleLogProto.State.valueOf(jlnijhmemnj_);
+    POGOProtos.Rpc.BattleLogProto.State result = POGOProtos.Rpc.BattleLogProto.State.valueOf(state_);
     return result == null ? POGOProtos.Rpc.BattleLogProto.State.UNRECOGNIZED : result;
   }
 
-  public static final int DBECOGECHDA_FIELD_NUMBER = 2;
-  private int dbecogechda_;
+  public static final int BATTLE_TYPE_FIELD_NUMBER = 2;
+  private int battleType_;
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
-   * @return The enum numeric value on the wire for dbecogechda.
+   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType battle_type = 2;</code>
+   * @return The enum numeric value on the wire for battleType.
    */
-  @java.lang.Override public int getDbecogechdaValue() {
-    return dbecogechda_;
+  @java.lang.Override public int getBattleTypeValue() {
+    return battleType_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
-   * @return The dbecogechda.
+   * <code>.POGOProtos.Rpc.BattleLogProto.BattleType battle_type = 2;</code>
+   * @return The battleType.
    */
-  @java.lang.Override public POGOProtos.Rpc.BattleLogProto.BattleType getDbecogechda() {
+  @java.lang.Override public POGOProtos.Rpc.BattleLogProto.BattleType getBattleType() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.BattleLogProto.BattleType result = POGOProtos.Rpc.BattleLogProto.BattleType.valueOf(dbecogechda_);
+    POGOProtos.Rpc.BattleLogProto.BattleType result = POGOProtos.Rpc.BattleLogProto.BattleType.valueOf(battleType_);
     return result == null ? POGOProtos.Rpc.BattleLogProto.BattleType.UNRECOGNIZED : result;
   }
 
-  public static final int DIKAIFHAIGB_FIELD_NUMBER = 3;
-  private long dikaifhaigb_;
+  public static final int SERVER_MS_FIELD_NUMBER = 3;
+  private long serverMs_;
   /**
-   * <code>int64 dikaifhaigb = 3;</code>
-   * @return The dikaifhaigb.
+   * <code>int64 server_ms = 3;</code>
+   * @return The serverMs.
    */
   @java.lang.Override
-  public long getDikaifhaigb() {
-    return dikaifhaigb_;
+  public long getServerMs() {
+    return serverMs_;
   }
 
-  public static final int NCILCKFPFOE_FIELD_NUMBER = 4;
-  private java.util.List<POGOProtos.Rpc.BattleActionProto> ncilckfpfoe_;
+  public static final int BATTLE_ACTIONS_FIELD_NUMBER = 4;
+  private java.util.List<POGOProtos.Rpc.BattleActionProto> battleActions_;
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.BattleActionProto> getNcilckfpfoeList() {
-    return ncilckfpfoe_;
+  public java.util.List<POGOProtos.Rpc.BattleActionProto> getBattleActionsList() {
+    return battleActions_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
    */
   @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.BattleActionProtoOrBuilder> 
-      getNcilckfpfoeOrBuilderList() {
-    return ncilckfpfoe_;
+      getBattleActionsOrBuilderList() {
+    return battleActions_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
    */
   @java.lang.Override
-  public int getNcilckfpfoeCount() {
-    return ncilckfpfoe_.size();
+  public int getBattleActionsCount() {
+    return battleActions_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BattleActionProto getNcilckfpfoe(int index) {
-    return ncilckfpfoe_.get(index);
+  public POGOProtos.Rpc.BattleActionProto getBattleActions(int index) {
+    return battleActions_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BattleActionProtoOrBuilder getNcilckfpfoeOrBuilder(
+  public POGOProtos.Rpc.BattleActionProtoOrBuilder getBattleActionsOrBuilder(
       int index) {
-    return ncilckfpfoe_.get(index);
+    return battleActions_.get(index);
   }
 
-  public static final int LLOCAHNDHDN_FIELD_NUMBER = 5;
-  private long llocahndhdn_;
+  public static final int BATTLE_START_MS_FIELD_NUMBER = 5;
+  private long battleStartMs_;
   /**
-   * <code>int64 llocahndhdn = 5;</code>
-   * @return The llocahndhdn.
+   * <code>int64 battle_start_ms = 5;</code>
+   * @return The battleStartMs.
    */
   @java.lang.Override
-  public long getLlocahndhdn() {
-    return llocahndhdn_;
+  public long getBattleStartMs() {
+    return battleStartMs_;
   }
 
-  public static final int KKFIFGHAONK_FIELD_NUMBER = 6;
-  private long kkfifghaonk_;
+  public static final int BATTLE_END_MS_FIELD_NUMBER = 6;
+  private long battleEndMs_;
   /**
-   * <code>int64 kkfifghaonk = 6;</code>
-   * @return The kkfifghaonk.
+   * <code>int64 battle_end_ms = 6;</code>
+   * @return The battleEndMs.
    */
   @java.lang.Override
-  public long getKkfifghaonk() {
-    return kkfifghaonk_;
+  public long getBattleEndMs() {
+    return battleEndMs_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -521,23 +521,23 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (jlnijhmemnj_ != POGOProtos.Rpc.BattleLogProto.State.STATE_UNSET.getNumber()) {
-      output.writeEnum(1, jlnijhmemnj_);
+    if (state_ != POGOProtos.Rpc.BattleLogProto.State.STATE_UNSET.getNumber()) {
+      output.writeEnum(1, state_);
     }
-    if (dbecogechda_ != POGOProtos.Rpc.BattleLogProto.BattleType.BATTLE_TYPE_UNSET.getNumber()) {
-      output.writeEnum(2, dbecogechda_);
+    if (battleType_ != POGOProtos.Rpc.BattleLogProto.BattleType.BATTLE_TYPE_UNSET.getNumber()) {
+      output.writeEnum(2, battleType_);
     }
-    if (dikaifhaigb_ != 0L) {
-      output.writeInt64(3, dikaifhaigb_);
+    if (serverMs_ != 0L) {
+      output.writeInt64(3, serverMs_);
     }
-    for (int i = 0; i < ncilckfpfoe_.size(); i++) {
-      output.writeMessage(4, ncilckfpfoe_.get(i));
+    for (int i = 0; i < battleActions_.size(); i++) {
+      output.writeMessage(4, battleActions_.get(i));
     }
-    if (llocahndhdn_ != 0L) {
-      output.writeInt64(5, llocahndhdn_);
+    if (battleStartMs_ != 0L) {
+      output.writeInt64(5, battleStartMs_);
     }
-    if (kkfifghaonk_ != 0L) {
-      output.writeInt64(6, kkfifghaonk_);
+    if (battleEndMs_ != 0L) {
+      output.writeInt64(6, battleEndMs_);
     }
     unknownFields.writeTo(output);
   }
@@ -548,29 +548,29 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (jlnijhmemnj_ != POGOProtos.Rpc.BattleLogProto.State.STATE_UNSET.getNumber()) {
+    if (state_ != POGOProtos.Rpc.BattleLogProto.State.STATE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, jlnijhmemnj_);
+        .computeEnumSize(1, state_);
     }
-    if (dbecogechda_ != POGOProtos.Rpc.BattleLogProto.BattleType.BATTLE_TYPE_UNSET.getNumber()) {
+    if (battleType_ != POGOProtos.Rpc.BattleLogProto.BattleType.BATTLE_TYPE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, dbecogechda_);
+        .computeEnumSize(2, battleType_);
     }
-    if (dikaifhaigb_ != 0L) {
+    if (serverMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(3, dikaifhaigb_);
+        .computeInt64Size(3, serverMs_);
     }
-    for (int i = 0; i < ncilckfpfoe_.size(); i++) {
+    for (int i = 0; i < battleActions_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, ncilckfpfoe_.get(i));
+        .computeMessageSize(4, battleActions_.get(i));
     }
-    if (llocahndhdn_ != 0L) {
+    if (battleStartMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(5, llocahndhdn_);
+        .computeInt64Size(5, battleStartMs_);
     }
-    if (kkfifghaonk_ != 0L) {
+    if (battleEndMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(6, kkfifghaonk_);
+        .computeInt64Size(6, battleEndMs_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -587,16 +587,16 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BattleLogProto other = (POGOProtos.Rpc.BattleLogProto) obj;
 
-    if (jlnijhmemnj_ != other.jlnijhmemnj_) return false;
-    if (dbecogechda_ != other.dbecogechda_) return false;
-    if (getDikaifhaigb()
-        != other.getDikaifhaigb()) return false;
-    if (!getNcilckfpfoeList()
-        .equals(other.getNcilckfpfoeList())) return false;
-    if (getLlocahndhdn()
-        != other.getLlocahndhdn()) return false;
-    if (getKkfifghaonk()
-        != other.getKkfifghaonk()) return false;
+    if (state_ != other.state_) return false;
+    if (battleType_ != other.battleType_) return false;
+    if (getServerMs()
+        != other.getServerMs()) return false;
+    if (!getBattleActionsList()
+        .equals(other.getBattleActionsList())) return false;
+    if (getBattleStartMs()
+        != other.getBattleStartMs()) return false;
+    if (getBattleEndMs()
+        != other.getBattleEndMs()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -608,23 +608,23 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + JLNIJHMEMNJ_FIELD_NUMBER;
-    hash = (53 * hash) + jlnijhmemnj_;
-    hash = (37 * hash) + DBECOGECHDA_FIELD_NUMBER;
-    hash = (53 * hash) + dbecogechda_;
-    hash = (37 * hash) + DIKAIFHAIGB_FIELD_NUMBER;
+    hash = (37 * hash) + STATE_FIELD_NUMBER;
+    hash = (53 * hash) + state_;
+    hash = (37 * hash) + BATTLE_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + battleType_;
+    hash = (37 * hash) + SERVER_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getDikaifhaigb());
-    if (getNcilckfpfoeCount() > 0) {
-      hash = (37 * hash) + NCILCKFPFOE_FIELD_NUMBER;
-      hash = (53 * hash) + getNcilckfpfoeList().hashCode();
+        getServerMs());
+    if (getBattleActionsCount() > 0) {
+      hash = (37 * hash) + BATTLE_ACTIONS_FIELD_NUMBER;
+      hash = (53 * hash) + getBattleActionsList().hashCode();
     }
-    hash = (37 * hash) + LLOCAHNDHDN_FIELD_NUMBER;
+    hash = (37 * hash) + BATTLE_START_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getLlocahndhdn());
-    hash = (37 * hash) + KKFIFGHAONK_FIELD_NUMBER;
+        getBattleStartMs());
+    hash = (37 * hash) + BATTLE_END_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getKkfifghaonk());
+        getBattleEndMs());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -757,27 +757,27 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
-        getNcilckfpfoeFieldBuilder();
+        getBattleActionsFieldBuilder();
       }
     }
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      jlnijhmemnj_ = 0;
+      state_ = 0;
 
-      dbecogechda_ = 0;
+      battleType_ = 0;
 
-      dikaifhaigb_ = 0L;
+      serverMs_ = 0L;
 
-      if (ncilckfpfoeBuilder_ == null) {
-        ncilckfpfoe_ = java.util.Collections.emptyList();
+      if (battleActionsBuilder_ == null) {
+        battleActions_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
       } else {
-        ncilckfpfoeBuilder_.clear();
+        battleActionsBuilder_.clear();
       }
-      llocahndhdn_ = 0L;
+      battleStartMs_ = 0L;
 
-      kkfifghaonk_ = 0L;
+      battleEndMs_ = 0L;
 
       return this;
     }
@@ -806,20 +806,20 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.BattleLogProto buildPartial() {
       POGOProtos.Rpc.BattleLogProto result = new POGOProtos.Rpc.BattleLogProto(this);
       int from_bitField0_ = bitField0_;
-      result.jlnijhmemnj_ = jlnijhmemnj_;
-      result.dbecogechda_ = dbecogechda_;
-      result.dikaifhaigb_ = dikaifhaigb_;
-      if (ncilckfpfoeBuilder_ == null) {
+      result.state_ = state_;
+      result.battleType_ = battleType_;
+      result.serverMs_ = serverMs_;
+      if (battleActionsBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
-          ncilckfpfoe_ = java.util.Collections.unmodifiableList(ncilckfpfoe_);
+          battleActions_ = java.util.Collections.unmodifiableList(battleActions_);
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.ncilckfpfoe_ = ncilckfpfoe_;
+        result.battleActions_ = battleActions_;
       } else {
-        result.ncilckfpfoe_ = ncilckfpfoeBuilder_.build();
+        result.battleActions_ = battleActionsBuilder_.build();
       }
-      result.llocahndhdn_ = llocahndhdn_;
-      result.kkfifghaonk_ = kkfifghaonk_;
+      result.battleStartMs_ = battleStartMs_;
+      result.battleEndMs_ = battleEndMs_;
       onBuilt();
       return result;
     }
@@ -868,46 +868,46 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BattleLogProto other) {
       if (other == POGOProtos.Rpc.BattleLogProto.getDefaultInstance()) return this;
-      if (other.jlnijhmemnj_ != 0) {
-        setJlnijhmemnjValue(other.getJlnijhmemnjValue());
+      if (other.state_ != 0) {
+        setStateValue(other.getStateValue());
       }
-      if (other.dbecogechda_ != 0) {
-        setDbecogechdaValue(other.getDbecogechdaValue());
+      if (other.battleType_ != 0) {
+        setBattleTypeValue(other.getBattleTypeValue());
       }
-      if (other.getDikaifhaigb() != 0L) {
-        setDikaifhaigb(other.getDikaifhaigb());
+      if (other.getServerMs() != 0L) {
+        setServerMs(other.getServerMs());
       }
-      if (ncilckfpfoeBuilder_ == null) {
-        if (!other.ncilckfpfoe_.isEmpty()) {
-          if (ncilckfpfoe_.isEmpty()) {
-            ncilckfpfoe_ = other.ncilckfpfoe_;
+      if (battleActionsBuilder_ == null) {
+        if (!other.battleActions_.isEmpty()) {
+          if (battleActions_.isEmpty()) {
+            battleActions_ = other.battleActions_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureNcilckfpfoeIsMutable();
-            ncilckfpfoe_.addAll(other.ncilckfpfoe_);
+            ensureBattleActionsIsMutable();
+            battleActions_.addAll(other.battleActions_);
           }
           onChanged();
         }
       } else {
-        if (!other.ncilckfpfoe_.isEmpty()) {
-          if (ncilckfpfoeBuilder_.isEmpty()) {
-            ncilckfpfoeBuilder_.dispose();
-            ncilckfpfoeBuilder_ = null;
-            ncilckfpfoe_ = other.ncilckfpfoe_;
+        if (!other.battleActions_.isEmpty()) {
+          if (battleActionsBuilder_.isEmpty()) {
+            battleActionsBuilder_.dispose();
+            battleActionsBuilder_ = null;
+            battleActions_ = other.battleActions_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            ncilckfpfoeBuilder_ = 
+            battleActionsBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getNcilckfpfoeFieldBuilder() : null;
+                 getBattleActionsFieldBuilder() : null;
           } else {
-            ncilckfpfoeBuilder_.addAllMessages(other.ncilckfpfoe_);
+            battleActionsBuilder_.addAllMessages(other.battleActions_);
           }
         }
       }
-      if (other.getLlocahndhdn() != 0L) {
-        setLlocahndhdn(other.getLlocahndhdn());
+      if (other.getBattleStartMs() != 0L) {
+        setBattleStartMs(other.getBattleStartMs());
       }
-      if (other.getKkfifghaonk() != 0L) {
-        setKkfifghaonk(other.getKkfifghaonk());
+      if (other.getBattleEndMs() != 0L) {
+        setBattleEndMs(other.getBattleEndMs());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -939,443 +939,443 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private int jlnijhmemnj_ = 0;
+    private int state_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
-     * @return The enum numeric value on the wire for jlnijhmemnj.
+     * <code>.POGOProtos.Rpc.BattleLogProto.State state = 1;</code>
+     * @return The enum numeric value on the wire for state.
      */
-    @java.lang.Override public int getJlnijhmemnjValue() {
-      return jlnijhmemnj_;
+    @java.lang.Override public int getStateValue() {
+      return state_;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
-     * @param value The enum numeric value on the wire for jlnijhmemnj to set.
+     * <code>.POGOProtos.Rpc.BattleLogProto.State state = 1;</code>
+     * @param value The enum numeric value on the wire for state to set.
      * @return This builder for chaining.
      */
-    public Builder setJlnijhmemnjValue(int value) {
+    public Builder setStateValue(int value) {
       
-      jlnijhmemnj_ = value;
+      state_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
-     * @return The jlnijhmemnj.
+     * <code>.POGOProtos.Rpc.BattleLogProto.State state = 1;</code>
+     * @return The state.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BattleLogProto.State getJlnijhmemnj() {
+    public POGOProtos.Rpc.BattleLogProto.State getState() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.BattleLogProto.State result = POGOProtos.Rpc.BattleLogProto.State.valueOf(jlnijhmemnj_);
+      POGOProtos.Rpc.BattleLogProto.State result = POGOProtos.Rpc.BattleLogProto.State.valueOf(state_);
       return result == null ? POGOProtos.Rpc.BattleLogProto.State.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
-     * @param value The jlnijhmemnj to set.
+     * <code>.POGOProtos.Rpc.BattleLogProto.State state = 1;</code>
+     * @param value The state to set.
      * @return This builder for chaining.
      */
-    public Builder setJlnijhmemnj(POGOProtos.Rpc.BattleLogProto.State value) {
+    public Builder setState(POGOProtos.Rpc.BattleLogProto.State value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      jlnijhmemnj_ = value.getNumber();
+      state_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.State jlnijhmemnj = 1;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.State state = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJlnijhmemnj() {
+    public Builder clearState() {
       
-      jlnijhmemnj_ = 0;
+      state_ = 0;
       onChanged();
       return this;
     }
 
-    private int dbecogechda_ = 0;
+    private int battleType_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
-     * @return The enum numeric value on the wire for dbecogechda.
+     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType battle_type = 2;</code>
+     * @return The enum numeric value on the wire for battleType.
      */
-    @java.lang.Override public int getDbecogechdaValue() {
-      return dbecogechda_;
+    @java.lang.Override public int getBattleTypeValue() {
+      return battleType_;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
-     * @param value The enum numeric value on the wire for dbecogechda to set.
+     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType battle_type = 2;</code>
+     * @param value The enum numeric value on the wire for battleType to set.
      * @return This builder for chaining.
      */
-    public Builder setDbecogechdaValue(int value) {
+    public Builder setBattleTypeValue(int value) {
       
-      dbecogechda_ = value;
+      battleType_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
-     * @return The dbecogechda.
+     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType battle_type = 2;</code>
+     * @return The battleType.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BattleLogProto.BattleType getDbecogechda() {
+    public POGOProtos.Rpc.BattleLogProto.BattleType getBattleType() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.BattleLogProto.BattleType result = POGOProtos.Rpc.BattleLogProto.BattleType.valueOf(dbecogechda_);
+      POGOProtos.Rpc.BattleLogProto.BattleType result = POGOProtos.Rpc.BattleLogProto.BattleType.valueOf(battleType_);
       return result == null ? POGOProtos.Rpc.BattleLogProto.BattleType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
-     * @param value The dbecogechda to set.
+     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType battle_type = 2;</code>
+     * @param value The battleType to set.
      * @return This builder for chaining.
      */
-    public Builder setDbecogechda(POGOProtos.Rpc.BattleLogProto.BattleType value) {
+    public Builder setBattleType(POGOProtos.Rpc.BattleLogProto.BattleType value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      dbecogechda_ = value.getNumber();
+      battleType_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType dbecogechda = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleLogProto.BattleType battle_type = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDbecogechda() {
+    public Builder clearBattleType() {
       
-      dbecogechda_ = 0;
+      battleType_ = 0;
       onChanged();
       return this;
     }
 
-    private long dikaifhaigb_ ;
+    private long serverMs_ ;
     /**
-     * <code>int64 dikaifhaigb = 3;</code>
-     * @return The dikaifhaigb.
+     * <code>int64 server_ms = 3;</code>
+     * @return The serverMs.
      */
     @java.lang.Override
-    public long getDikaifhaigb() {
-      return dikaifhaigb_;
+    public long getServerMs() {
+      return serverMs_;
     }
     /**
-     * <code>int64 dikaifhaigb = 3;</code>
-     * @param value The dikaifhaigb to set.
+     * <code>int64 server_ms = 3;</code>
+     * @param value The serverMs to set.
      * @return This builder for chaining.
      */
-    public Builder setDikaifhaigb(long value) {
+    public Builder setServerMs(long value) {
       
-      dikaifhaigb_ = value;
+      serverMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 dikaifhaigb = 3;</code>
+     * <code>int64 server_ms = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDikaifhaigb() {
+    public Builder clearServerMs() {
       
-      dikaifhaigb_ = 0L;
+      serverMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.BattleActionProto> ncilckfpfoe_ =
+    private java.util.List<POGOProtos.Rpc.BattleActionProto> battleActions_ =
       java.util.Collections.emptyList();
-    private void ensureNcilckfpfoeIsMutable() {
+    private void ensureBattleActionsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        ncilckfpfoe_ = new java.util.ArrayList<POGOProtos.Rpc.BattleActionProto>(ncilckfpfoe_);
+        battleActions_ = new java.util.ArrayList<POGOProtos.Rpc.BattleActionProto>(battleActions_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.BattleActionProto, POGOProtos.Rpc.BattleActionProto.Builder, POGOProtos.Rpc.BattleActionProtoOrBuilder> ncilckfpfoeBuilder_;
+        POGOProtos.Rpc.BattleActionProto, POGOProtos.Rpc.BattleActionProto.Builder, POGOProtos.Rpc.BattleActionProtoOrBuilder> battleActionsBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public java.util.List<POGOProtos.Rpc.BattleActionProto> getNcilckfpfoeList() {
-      if (ncilckfpfoeBuilder_ == null) {
-        return java.util.Collections.unmodifiableList(ncilckfpfoe_);
+    public java.util.List<POGOProtos.Rpc.BattleActionProto> getBattleActionsList() {
+      if (battleActionsBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(battleActions_);
       } else {
-        return ncilckfpfoeBuilder_.getMessageList();
+        return battleActionsBuilder_.getMessageList();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public int getNcilckfpfoeCount() {
-      if (ncilckfpfoeBuilder_ == null) {
-        return ncilckfpfoe_.size();
+    public int getBattleActionsCount() {
+      if (battleActionsBuilder_ == null) {
+        return battleActions_.size();
       } else {
-        return ncilckfpfoeBuilder_.getCount();
+        return battleActionsBuilder_.getCount();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public POGOProtos.Rpc.BattleActionProto getNcilckfpfoe(int index) {
-      if (ncilckfpfoeBuilder_ == null) {
-        return ncilckfpfoe_.get(index);
+    public POGOProtos.Rpc.BattleActionProto getBattleActions(int index) {
+      if (battleActionsBuilder_ == null) {
+        return battleActions_.get(index);
       } else {
-        return ncilckfpfoeBuilder_.getMessage(index);
+        return battleActionsBuilder_.getMessage(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public Builder setNcilckfpfoe(
+    public Builder setBattleActions(
         int index, POGOProtos.Rpc.BattleActionProto value) {
-      if (ncilckfpfoeBuilder_ == null) {
+      if (battleActionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureNcilckfpfoeIsMutable();
-        ncilckfpfoe_.set(index, value);
+        ensureBattleActionsIsMutable();
+        battleActions_.set(index, value);
         onChanged();
       } else {
-        ncilckfpfoeBuilder_.setMessage(index, value);
+        battleActionsBuilder_.setMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public Builder setNcilckfpfoe(
+    public Builder setBattleActions(
         int index, POGOProtos.Rpc.BattleActionProto.Builder builderForValue) {
-      if (ncilckfpfoeBuilder_ == null) {
-        ensureNcilckfpfoeIsMutable();
-        ncilckfpfoe_.set(index, builderForValue.build());
+      if (battleActionsBuilder_ == null) {
+        ensureBattleActionsIsMutable();
+        battleActions_.set(index, builderForValue.build());
         onChanged();
       } else {
-        ncilckfpfoeBuilder_.setMessage(index, builderForValue.build());
+        battleActionsBuilder_.setMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public Builder addNcilckfpfoe(POGOProtos.Rpc.BattleActionProto value) {
-      if (ncilckfpfoeBuilder_ == null) {
+    public Builder addBattleActions(POGOProtos.Rpc.BattleActionProto value) {
+      if (battleActionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureNcilckfpfoeIsMutable();
-        ncilckfpfoe_.add(value);
+        ensureBattleActionsIsMutable();
+        battleActions_.add(value);
         onChanged();
       } else {
-        ncilckfpfoeBuilder_.addMessage(value);
+        battleActionsBuilder_.addMessage(value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public Builder addNcilckfpfoe(
+    public Builder addBattleActions(
         int index, POGOProtos.Rpc.BattleActionProto value) {
-      if (ncilckfpfoeBuilder_ == null) {
+      if (battleActionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureNcilckfpfoeIsMutable();
-        ncilckfpfoe_.add(index, value);
+        ensureBattleActionsIsMutable();
+        battleActions_.add(index, value);
         onChanged();
       } else {
-        ncilckfpfoeBuilder_.addMessage(index, value);
+        battleActionsBuilder_.addMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public Builder addNcilckfpfoe(
+    public Builder addBattleActions(
         POGOProtos.Rpc.BattleActionProto.Builder builderForValue) {
-      if (ncilckfpfoeBuilder_ == null) {
-        ensureNcilckfpfoeIsMutable();
-        ncilckfpfoe_.add(builderForValue.build());
+      if (battleActionsBuilder_ == null) {
+        ensureBattleActionsIsMutable();
+        battleActions_.add(builderForValue.build());
         onChanged();
       } else {
-        ncilckfpfoeBuilder_.addMessage(builderForValue.build());
+        battleActionsBuilder_.addMessage(builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public Builder addNcilckfpfoe(
+    public Builder addBattleActions(
         int index, POGOProtos.Rpc.BattleActionProto.Builder builderForValue) {
-      if (ncilckfpfoeBuilder_ == null) {
-        ensureNcilckfpfoeIsMutable();
-        ncilckfpfoe_.add(index, builderForValue.build());
+      if (battleActionsBuilder_ == null) {
+        ensureBattleActionsIsMutable();
+        battleActions_.add(index, builderForValue.build());
         onChanged();
       } else {
-        ncilckfpfoeBuilder_.addMessage(index, builderForValue.build());
+        battleActionsBuilder_.addMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public Builder addAllNcilckfpfoe(
+    public Builder addAllBattleActions(
         java.lang.Iterable<? extends POGOProtos.Rpc.BattleActionProto> values) {
-      if (ncilckfpfoeBuilder_ == null) {
-        ensureNcilckfpfoeIsMutable();
+      if (battleActionsBuilder_ == null) {
+        ensureBattleActionsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, ncilckfpfoe_);
+            values, battleActions_);
         onChanged();
       } else {
-        ncilckfpfoeBuilder_.addAllMessages(values);
+        battleActionsBuilder_.addAllMessages(values);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public Builder clearNcilckfpfoe() {
-      if (ncilckfpfoeBuilder_ == null) {
-        ncilckfpfoe_ = java.util.Collections.emptyList();
+    public Builder clearBattleActions() {
+      if (battleActionsBuilder_ == null) {
+        battleActions_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
-        ncilckfpfoeBuilder_.clear();
+        battleActionsBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public Builder removeNcilckfpfoe(int index) {
-      if (ncilckfpfoeBuilder_ == null) {
-        ensureNcilckfpfoeIsMutable();
-        ncilckfpfoe_.remove(index);
+    public Builder removeBattleActions(int index) {
+      if (battleActionsBuilder_ == null) {
+        ensureBattleActionsIsMutable();
+        battleActions_.remove(index);
         onChanged();
       } else {
-        ncilckfpfoeBuilder_.remove(index);
+        battleActionsBuilder_.remove(index);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public POGOProtos.Rpc.BattleActionProto.Builder getNcilckfpfoeBuilder(
+    public POGOProtos.Rpc.BattleActionProto.Builder getBattleActionsBuilder(
         int index) {
-      return getNcilckfpfoeFieldBuilder().getBuilder(index);
+      return getBattleActionsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public POGOProtos.Rpc.BattleActionProtoOrBuilder getNcilckfpfoeOrBuilder(
+    public POGOProtos.Rpc.BattleActionProtoOrBuilder getBattleActionsOrBuilder(
         int index) {
-      if (ncilckfpfoeBuilder_ == null) {
-        return ncilckfpfoe_.get(index);  } else {
-        return ncilckfpfoeBuilder_.getMessageOrBuilder(index);
+      if (battleActionsBuilder_ == null) {
+        return battleActions_.get(index);  } else {
+        return battleActionsBuilder_.getMessageOrBuilder(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.BattleActionProtoOrBuilder> 
-         getNcilckfpfoeOrBuilderList() {
-      if (ncilckfpfoeBuilder_ != null) {
-        return ncilckfpfoeBuilder_.getMessageOrBuilderList();
+         getBattleActionsOrBuilderList() {
+      if (battleActionsBuilder_ != null) {
+        return battleActionsBuilder_.getMessageOrBuilderList();
       } else {
-        return java.util.Collections.unmodifiableList(ncilckfpfoe_);
+        return java.util.Collections.unmodifiableList(battleActions_);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public POGOProtos.Rpc.BattleActionProto.Builder addNcilckfpfoeBuilder() {
-      return getNcilckfpfoeFieldBuilder().addBuilder(
+    public POGOProtos.Rpc.BattleActionProto.Builder addBattleActionsBuilder() {
+      return getBattleActionsFieldBuilder().addBuilder(
           POGOProtos.Rpc.BattleActionProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
-    public POGOProtos.Rpc.BattleActionProto.Builder addNcilckfpfoeBuilder(
+    public POGOProtos.Rpc.BattleActionProto.Builder addBattleActionsBuilder(
         int index) {
-      return getNcilckfpfoeFieldBuilder().addBuilder(
+      return getBattleActionsFieldBuilder().addBuilder(
           index, POGOProtos.Rpc.BattleActionProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.BattleActionProto ncilckfpfoe = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.BattleActionProto battle_actions = 4;</code>
      */
     public java.util.List<POGOProtos.Rpc.BattleActionProto.Builder> 
-         getNcilckfpfoeBuilderList() {
-      return getNcilckfpfoeFieldBuilder().getBuilderList();
+         getBattleActionsBuilderList() {
+      return getBattleActionsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
         POGOProtos.Rpc.BattleActionProto, POGOProtos.Rpc.BattleActionProto.Builder, POGOProtos.Rpc.BattleActionProtoOrBuilder> 
-        getNcilckfpfoeFieldBuilder() {
-      if (ncilckfpfoeBuilder_ == null) {
-        ncilckfpfoeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+        getBattleActionsFieldBuilder() {
+      if (battleActionsBuilder_ == null) {
+        battleActionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             POGOProtos.Rpc.BattleActionProto, POGOProtos.Rpc.BattleActionProto.Builder, POGOProtos.Rpc.BattleActionProtoOrBuilder>(
-                ncilckfpfoe_,
+                battleActions_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
-        ncilckfpfoe_ = null;
+        battleActions_ = null;
       }
-      return ncilckfpfoeBuilder_;
+      return battleActionsBuilder_;
     }
 
-    private long llocahndhdn_ ;
+    private long battleStartMs_ ;
     /**
-     * <code>int64 llocahndhdn = 5;</code>
-     * @return The llocahndhdn.
+     * <code>int64 battle_start_ms = 5;</code>
+     * @return The battleStartMs.
      */
     @java.lang.Override
-    public long getLlocahndhdn() {
-      return llocahndhdn_;
+    public long getBattleStartMs() {
+      return battleStartMs_;
     }
     /**
-     * <code>int64 llocahndhdn = 5;</code>
-     * @param value The llocahndhdn to set.
+     * <code>int64 battle_start_ms = 5;</code>
+     * @param value The battleStartMs to set.
      * @return This builder for chaining.
      */
-    public Builder setLlocahndhdn(long value) {
+    public Builder setBattleStartMs(long value) {
       
-      llocahndhdn_ = value;
+      battleStartMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 llocahndhdn = 5;</code>
+     * <code>int64 battle_start_ms = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLlocahndhdn() {
+    public Builder clearBattleStartMs() {
       
-      llocahndhdn_ = 0L;
+      battleStartMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private long kkfifghaonk_ ;
+    private long battleEndMs_ ;
     /**
-     * <code>int64 kkfifghaonk = 6;</code>
-     * @return The kkfifghaonk.
+     * <code>int64 battle_end_ms = 6;</code>
+     * @return The battleEndMs.
      */
     @java.lang.Override
-    public long getKkfifghaonk() {
-      return kkfifghaonk_;
+    public long getBattleEndMs() {
+      return battleEndMs_;
     }
     /**
-     * <code>int64 kkfifghaonk = 6;</code>
-     * @param value The kkfifghaonk to set.
+     * <code>int64 battle_end_ms = 6;</code>
+     * @param value The battleEndMs to set.
      * @return This builder for chaining.
      */
-    public Builder setKkfifghaonk(long value) {
+    public Builder setBattleEndMs(long value) {
       
-      kkfifghaonk_ = value;
+      battleEndMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 kkfifghaonk = 6;</code>
+     * <code>int64 battle_end_ms = 6;</code>
      * @return This builder for chaining.
      */
-    public Builder clearKkfifghaonk() {
+    public Builder clearBattleEndMs() {
       
-      kkfifghaonk_ = 0L;
+      battleEndMs_ = 0L;
       onChanged();
       return this;
     }

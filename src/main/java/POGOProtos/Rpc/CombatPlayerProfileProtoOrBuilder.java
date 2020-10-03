@@ -8,31 +8,31 @@ public interface CombatPlayerProfileProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string pegfachkbdd = 1;</code>
-   * @return The pegfachkbdd.
+   * <code>string player_id = 1;</code>
+   * @return The playerId.
    */
-  java.lang.String getPegfachkbdd();
+  java.lang.String getPlayerId();
   /**
-   * <code>string pegfachkbdd = 1;</code>
-   * @return The bytes for pegfachkbdd.
+   * <code>string player_id = 1;</code>
+   * @return The bytes for playerId.
    */
   com.google.protobuf.ByteString
-      getPegfachkbddBytes();
+      getPlayerIdBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 2;</code>
-   * @return Whether the jeenccbbffk field is set.
+   * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 2;</code>
+   * @return Whether the publicProfile field is set.
    */
-  boolean hasJeenccbbffk();
+  boolean hasPublicProfile();
   /**
-   * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 2;</code>
-   * @return The jeenccbbffk.
+   * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 2;</code>
+   * @return The publicProfile.
    */
-  POGOProtos.Rpc.PlayerPublicProfileProto getJeenccbbffk();
+  POGOProtos.Rpc.PlayerPublicProfileProto getPublicProfile();
   /**
-   * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 2;</code>
+   * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 2;</code>
    */
-  POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder getJeenccbbffkOrBuilder();
+  POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder getPublicProfileOrBuilder();
 
   /**
    * <code>repeated string combat_league_template_id = 3;</code>
@@ -60,38 +60,38 @@ public interface CombatPlayerProfileProtoOrBuilder extends
       getCombatLeagueTemplateIdBytes(int index);
 
   /**
-   * <code>uint64 jkenapdnljb = 4;</code>
-   * @return The jkenapdnljb.
+   * <code>fixed64 buddy_pokemon_id = 4;</code>
+   * @return The buddyPokemonId.
    */
-  long getJkenapdnljb();
+  long getBuddyPokemonId();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatPlayerProfileProto.JOAFFEHFBLB cocmjnjboed = 5;</code>
-   * @return Whether the cocmjnjboed field is set.
+   * <code>.POGOProtos.Rpc.CombatPlayerProfileProto.Location location = 5;</code>
+   * @return Whether the location field is set.
    */
-  boolean hasCocmjnjboed();
+  boolean hasLocation();
   /**
-   * <code>.POGOProtos.Rpc.CombatPlayerProfileProto.JOAFFEHFBLB cocmjnjboed = 5;</code>
-   * @return The cocmjnjboed.
+   * <code>.POGOProtos.Rpc.CombatPlayerProfileProto.Location location = 5;</code>
+   * @return The location.
    */
-  POGOProtos.Rpc.CombatPlayerProfileProto.JOAFFEHFBLB getCocmjnjboed();
+  POGOProtos.Rpc.CombatPlayerProfileProto.Location getLocation();
   /**
-   * <code>.POGOProtos.Rpc.CombatPlayerProfileProto.JOAFFEHFBLB cocmjnjboed = 5;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerProfileProto.Location location = 5;</code>
    */
-  POGOProtos.Rpc.CombatPlayerProfileProto.JOAFFEHFBLBOrBuilder getCocmjnjboedOrBuilder();
+  POGOProtos.Rpc.CombatPlayerProfileProto.LocationOrBuilder getLocationOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto jnoillflbkb = 6;</code>
-   * @return Whether the jnoillflbkb field is set.
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto combat_player_preferences = 6;</code>
+   * @return Whether the combatPlayerPreferences field is set.
    */
-  boolean hasJnoillflbkb();
+  boolean hasCombatPlayerPreferences();
   /**
-   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto jnoillflbkb = 6;</code>
-   * @return The jnoillflbkb.
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto combat_player_preferences = 6;</code>
+   * @return The combatPlayerPreferences.
    */
-  POGOProtos.Rpc.CombatPlayerPreferencesProto getJnoillflbkb();
+  POGOProtos.Rpc.CombatPlayerPreferencesProto getCombatPlayerPreferences();
   /**
-   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto jnoillflbkb = 6;</code>
+   * <code>.POGOProtos.Rpc.CombatPlayerPreferencesProto combat_player_preferences = 6;</code>
    */
-  POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder getJnoillflbkbOrBuilder();
+  POGOProtos.Rpc.CombatPlayerPreferencesProtoOrBuilder getCombatPlayerPreferencesOrBuilder();
 }

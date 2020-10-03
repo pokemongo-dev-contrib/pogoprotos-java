@@ -71,11 +71,11 @@ private static final long serialVersionUID = 0L;
           }
           case 26: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              field3_ = new java.util.ArrayList<POGOProtos.Rpc.PFGPOIKPJFF>();
+              field3_ = new java.util.ArrayList<POGOProtos.Rpc.QuestGoalProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             field3_.add(
-                input.readMessage(POGOProtos.Rpc.PFGPOIKPJFF.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.QuestGoalProto.parser(), extensionRegistry));
             break;
           }
           case 32: {
@@ -190,41 +190,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FIELD3_FIELD_NUMBER = 3;
-  private java.util.List<POGOProtos.Rpc.PFGPOIKPJFF> field3_;
+  private java.util.List<POGOProtos.Rpc.QuestGoalProto> field3_;
   /**
-   * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.PFGPOIKPJFF> getField3List() {
+  public java.util.List<POGOProtos.Rpc.QuestGoalProto> getField3List() {
     return field3_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.PFGPOIKPJFFOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.QuestGoalProtoOrBuilder> 
       getField3OrBuilderList() {
     return field3_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
    */
   @java.lang.Override
   public int getField3Count() {
     return field3_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PFGPOIKPJFF getField3(int index) {
+  public POGOProtos.Rpc.QuestGoalProto getField3(int index) {
     return field3_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PFGPOIKPJFFOrBuilder getField3OrBuilder(
+  public POGOProtos.Rpc.QuestGoalProtoOrBuilder getField3OrBuilder(
       int index) {
     return field3_.get(index);
   }
@@ -829,22 +829,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.PFGPOIKPJFF> field3_ =
+    private java.util.List<POGOProtos.Rpc.QuestGoalProto> field3_ =
       java.util.Collections.emptyList();
     private void ensureField3IsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        field3_ = new java.util.ArrayList<POGOProtos.Rpc.PFGPOIKPJFF>(field3_);
+        field3_ = new java.util.ArrayList<POGOProtos.Rpc.QuestGoalProto>(field3_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PFGPOIKPJFF, POGOProtos.Rpc.PFGPOIKPJFF.Builder, POGOProtos.Rpc.PFGPOIKPJFFOrBuilder> field3Builder_;
+        POGOProtos.Rpc.QuestGoalProto, POGOProtos.Rpc.QuestGoalProto.Builder, POGOProtos.Rpc.QuestGoalProtoOrBuilder> field3Builder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PFGPOIKPJFF> getField3List() {
+    public java.util.List<POGOProtos.Rpc.QuestGoalProto> getField3List() {
       if (field3Builder_ == null) {
         return java.util.Collections.unmodifiableList(field3_);
       } else {
@@ -852,7 +852,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
     public int getField3Count() {
       if (field3Builder_ == null) {
@@ -862,9 +862,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
-    public POGOProtos.Rpc.PFGPOIKPJFF getField3(int index) {
+    public POGOProtos.Rpc.QuestGoalProto getField3(int index) {
       if (field3Builder_ == null) {
         return field3_.get(index);
       } else {
@@ -872,10 +872,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
     public Builder setField3(
-        int index, POGOProtos.Rpc.PFGPOIKPJFF value) {
+        int index, POGOProtos.Rpc.QuestGoalProto value) {
       if (field3Builder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -889,10 +889,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
     public Builder setField3(
-        int index, POGOProtos.Rpc.PFGPOIKPJFF.Builder builderForValue) {
+        int index, POGOProtos.Rpc.QuestGoalProto.Builder builderForValue) {
       if (field3Builder_ == null) {
         ensureField3IsMutable();
         field3_.set(index, builderForValue.build());
@@ -903,9 +903,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
-    public Builder addField3(POGOProtos.Rpc.PFGPOIKPJFF value) {
+    public Builder addField3(POGOProtos.Rpc.QuestGoalProto value) {
       if (field3Builder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -919,10 +919,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
     public Builder addField3(
-        int index, POGOProtos.Rpc.PFGPOIKPJFF value) {
+        int index, POGOProtos.Rpc.QuestGoalProto value) {
       if (field3Builder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -936,10 +936,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
     public Builder addField3(
-        POGOProtos.Rpc.PFGPOIKPJFF.Builder builderForValue) {
+        POGOProtos.Rpc.QuestGoalProto.Builder builderForValue) {
       if (field3Builder_ == null) {
         ensureField3IsMutable();
         field3_.add(builderForValue.build());
@@ -950,10 +950,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
     public Builder addField3(
-        int index, POGOProtos.Rpc.PFGPOIKPJFF.Builder builderForValue) {
+        int index, POGOProtos.Rpc.QuestGoalProto.Builder builderForValue) {
       if (field3Builder_ == null) {
         ensureField3IsMutable();
         field3_.add(index, builderForValue.build());
@@ -964,10 +964,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
     public Builder addAllField3(
-        java.lang.Iterable<? extends POGOProtos.Rpc.PFGPOIKPJFF> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.QuestGoalProto> values) {
       if (field3Builder_ == null) {
         ensureField3IsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -979,7 +979,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
     public Builder clearField3() {
       if (field3Builder_ == null) {
@@ -992,7 +992,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
     public Builder removeField3(int index) {
       if (field3Builder_ == null) {
@@ -1005,16 +1005,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
-    public POGOProtos.Rpc.PFGPOIKPJFF.Builder getField3Builder(
+    public POGOProtos.Rpc.QuestGoalProto.Builder getField3Builder(
         int index) {
       return getField3FieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
-    public POGOProtos.Rpc.PFGPOIKPJFFOrBuilder getField3OrBuilder(
+    public POGOProtos.Rpc.QuestGoalProtoOrBuilder getField3OrBuilder(
         int index) {
       if (field3Builder_ == null) {
         return field3_.get(index);  } else {
@@ -1022,9 +1022,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.PFGPOIKPJFFOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.QuestGoalProtoOrBuilder> 
          getField3OrBuilderList() {
       if (field3Builder_ != null) {
         return field3Builder_.getMessageOrBuilderList();
@@ -1033,33 +1033,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
-    public POGOProtos.Rpc.PFGPOIKPJFF.Builder addField3Builder() {
+    public POGOProtos.Rpc.QuestGoalProto.Builder addField3Builder() {
       return getField3FieldBuilder().addBuilder(
-          POGOProtos.Rpc.PFGPOIKPJFF.getDefaultInstance());
+          POGOProtos.Rpc.QuestGoalProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
-    public POGOProtos.Rpc.PFGPOIKPJFF.Builder addField3Builder(
+    public POGOProtos.Rpc.QuestGoalProto.Builder addField3Builder(
         int index) {
       return getField3FieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.PFGPOIKPJFF.getDefaultInstance());
+          index, POGOProtos.Rpc.QuestGoalProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PFGPOIKPJFF.Builder> 
+    public java.util.List<POGOProtos.Rpc.QuestGoalProto.Builder> 
          getField3BuilderList() {
       return getField3FieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PFGPOIKPJFF, POGOProtos.Rpc.PFGPOIKPJFF.Builder, POGOProtos.Rpc.PFGPOIKPJFFOrBuilder> 
+        POGOProtos.Rpc.QuestGoalProto, POGOProtos.Rpc.QuestGoalProto.Builder, POGOProtos.Rpc.QuestGoalProtoOrBuilder> 
         getField3FieldBuilder() {
       if (field3Builder_ == null) {
         field3Builder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.PFGPOIKPJFF, POGOProtos.Rpc.PFGPOIKPJFF.Builder, POGOProtos.Rpc.PFGPOIKPJFFOrBuilder>(
+            POGOProtos.Rpc.QuestGoalProto, POGOProtos.Rpc.QuestGoalProto.Builder, POGOProtos.Rpc.QuestGoalProtoOrBuilder>(
                 field3_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

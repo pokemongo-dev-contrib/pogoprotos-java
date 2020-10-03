@@ -282,19 +282,19 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProtoOrBuilder getPlayerStatusOrBuilder();
 
     /**
-     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
      * @return Whether the callingGameData field is set.
      */
     boolean hasCallingGameData();
     /**
-     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
      * @return The callingGameData.
      */
-    POGOProtos.Rpc.FriendDetailsProto getCallingGameData();
+    POGOProtos.Rpc.PlatformFriendDetailsProto getCallingGameData();
     /**
-     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
      */
-    POGOProtos.Rpc.FriendDetailsProtoOrBuilder getCallingGameDataOrBuilder();
+    POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder getCallingGameDataOrBuilder();
 
     /**
      * <code>.POGOProtos.Rpc.SocialV2Enum.InvitationStatus invitation_status = 5;</code>
@@ -391,11 +391,11 @@ private static final long serialVersionUID = 0L;
               break;
             }
             case 34: {
-              POGOProtos.Rpc.FriendDetailsProto.Builder subBuilder = null;
+              POGOProtos.Rpc.PlatformFriendDetailsProto.Builder subBuilder = null;
               if (callingGameData_ != null) {
                 subBuilder = callingGameData_.toBuilder();
               }
-              callingGameData_ = input.readMessage(POGOProtos.Rpc.FriendDetailsProto.parser(), extensionRegistry);
+              callingGameData_ = input.readMessage(POGOProtos.Rpc.PlatformFriendDetailsProto.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(callingGameData_);
                 callingGameData_ = subBuilder.buildPartial();
@@ -532,9 +532,9 @@ private static final long serialVersionUID = 0L;
     }
 
     public static final int CALLING_GAME_DATA_FIELD_NUMBER = 4;
-    private POGOProtos.Rpc.FriendDetailsProto callingGameData_;
+    private POGOProtos.Rpc.PlatformFriendDetailsProto callingGameData_;
     /**
-     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
      * @return Whether the callingGameData field is set.
      */
     @java.lang.Override
@@ -542,18 +542,18 @@ private static final long serialVersionUID = 0L;
       return callingGameData_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
      * @return The callingGameData.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.FriendDetailsProto getCallingGameData() {
-      return callingGameData_ == null ? POGOProtos.Rpc.FriendDetailsProto.getDefaultInstance() : callingGameData_;
+    public POGOProtos.Rpc.PlatformFriendDetailsProto getCallingGameData() {
+      return callingGameData_ == null ? POGOProtos.Rpc.PlatformFriendDetailsProto.getDefaultInstance() : callingGameData_;
     }
     /**
-     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.FriendDetailsProtoOrBuilder getCallingGameDataOrBuilder() {
+    public POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder getCallingGameDataOrBuilder() {
       return getCallingGameData();
     }
 
@@ -1302,31 +1302,31 @@ private static final long serialVersionUID = 0L;
         return playerStatusBuilder_;
       }
 
-      private POGOProtos.Rpc.FriendDetailsProto callingGameData_;
+      private POGOProtos.Rpc.PlatformFriendDetailsProto callingGameData_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.FriendDetailsProto, POGOProtos.Rpc.FriendDetailsProto.Builder, POGOProtos.Rpc.FriendDetailsProtoOrBuilder> callingGameDataBuilder_;
+          POGOProtos.Rpc.PlatformFriendDetailsProto, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder, POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder> callingGameDataBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
        * @return Whether the callingGameData field is set.
        */
       public boolean hasCallingGameData() {
         return callingGameDataBuilder_ != null || callingGameData_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
        * @return The callingGameData.
        */
-      public POGOProtos.Rpc.FriendDetailsProto getCallingGameData() {
+      public POGOProtos.Rpc.PlatformFriendDetailsProto getCallingGameData() {
         if (callingGameDataBuilder_ == null) {
-          return callingGameData_ == null ? POGOProtos.Rpc.FriendDetailsProto.getDefaultInstance() : callingGameData_;
+          return callingGameData_ == null ? POGOProtos.Rpc.PlatformFriendDetailsProto.getDefaultInstance() : callingGameData_;
         } else {
           return callingGameDataBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
        */
-      public Builder setCallingGameData(POGOProtos.Rpc.FriendDetailsProto value) {
+      public Builder setCallingGameData(POGOProtos.Rpc.PlatformFriendDetailsProto value) {
         if (callingGameDataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1340,10 +1340,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
        */
       public Builder setCallingGameData(
-          POGOProtos.Rpc.FriendDetailsProto.Builder builderForValue) {
+          POGOProtos.Rpc.PlatformFriendDetailsProto.Builder builderForValue) {
         if (callingGameDataBuilder_ == null) {
           callingGameData_ = builderForValue.build();
           onChanged();
@@ -1354,13 +1354,13 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
        */
-      public Builder mergeCallingGameData(POGOProtos.Rpc.FriendDetailsProto value) {
+      public Builder mergeCallingGameData(POGOProtos.Rpc.PlatformFriendDetailsProto value) {
         if (callingGameDataBuilder_ == null) {
           if (callingGameData_ != null) {
             callingGameData_ =
-              POGOProtos.Rpc.FriendDetailsProto.newBuilder(callingGameData_).mergeFrom(value).buildPartial();
+              POGOProtos.Rpc.PlatformFriendDetailsProto.newBuilder(callingGameData_).mergeFrom(value).buildPartial();
           } else {
             callingGameData_ = value;
           }
@@ -1372,7 +1372,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
        */
       public Builder clearCallingGameData() {
         if (callingGameDataBuilder_ == null) {
@@ -1386,33 +1386,33 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
        */
-      public POGOProtos.Rpc.FriendDetailsProto.Builder getCallingGameDataBuilder() {
+      public POGOProtos.Rpc.PlatformFriendDetailsProto.Builder getCallingGameDataBuilder() {
         
         onChanged();
         return getCallingGameDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
        */
-      public POGOProtos.Rpc.FriendDetailsProtoOrBuilder getCallingGameDataOrBuilder() {
+      public POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder getCallingGameDataOrBuilder() {
         if (callingGameDataBuilder_ != null) {
           return callingGameDataBuilder_.getMessageOrBuilder();
         } else {
           return callingGameData_ == null ?
-              POGOProtos.Rpc.FriendDetailsProto.getDefaultInstance() : callingGameData_;
+              POGOProtos.Rpc.PlatformFriendDetailsProto.getDefaultInstance() : callingGameData_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.FriendDetailsProto, POGOProtos.Rpc.FriendDetailsProto.Builder, POGOProtos.Rpc.FriendDetailsProtoOrBuilder> 
+          POGOProtos.Rpc.PlatformFriendDetailsProto, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder, POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder> 
           getCallingGameDataFieldBuilder() {
         if (callingGameDataBuilder_ == null) {
           callingGameDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.FriendDetailsProto, POGOProtos.Rpc.FriendDetailsProto.Builder, POGOProtos.Rpc.FriendDetailsProtoOrBuilder>(
+              POGOProtos.Rpc.PlatformFriendDetailsProto, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder, POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder>(
                   getCallingGameData(),
                   getParentForChildren(),
                   isClean());

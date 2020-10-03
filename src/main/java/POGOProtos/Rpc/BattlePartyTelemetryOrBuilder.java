@@ -8,25 +8,25 @@ public interface BattlePartyTelemetryOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds jfjdkdhppdd = 1;</code>
-   * @return The enum numeric value on the wire for jfjdkdhppdd.
+   * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds battle_party_click_id = 1;</code>
+   * @return The enum numeric value on the wire for battlePartyClickId.
    */
-  int getJfjdkdhppddValue();
+  int getBattlePartyClickIdValue();
   /**
-   * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds jfjdkdhppdd = 1;</code>
-   * @return The jfjdkdhppdd.
+   * <code>.POGOProtos.Rpc.BattlePartyTelemetryIds battle_party_click_id = 1;</code>
+   * @return The battlePartyClickId.
    */
-  POGOProtos.Rpc.BattlePartyTelemetryIds getJfjdkdhppdd();
+  POGOProtos.Rpc.BattlePartyTelemetryIds getBattlePartyClickId();
 
   /**
-   * <code>int32 efbgmldiemp = 2;</code>
-   * @return The efbgmldiemp.
+   * <code>int32 battle_party_count = 2;</code>
+   * @return The battlePartyCount.
    */
-  int getEfbgmldiemp();
+  int getBattlePartyCount();
 
   /**
-   * <code>int32 kokkgoimcbo = 3;</code>
-   * @return The kokkgoimcbo.
+   * <code>int32 battle_party_number = 3;</code>
+   * @return The battlePartyNumber.
    */
-  int getKokkgoimcbo();
+  int getBattlePartyNumber();
 }

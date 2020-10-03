@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AdDetails() {
-    dbfmaclhflp_ = com.google.protobuf.ByteString.EMPTY;
+    encryptedAdToken_ = com.google.protobuf.ByteString.EMPTY;
   }
 
   @java.lang.Override
@@ -55,20 +55,20 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             POGOProtos.Rpc.ImageTextCreativeProto.Builder subBuilder = null;
-            if (emdpeilkhki_ != null) {
-              subBuilder = emdpeilkhki_.toBuilder();
+            if (imageTextCreative_ != null) {
+              subBuilder = imageTextCreative_.toBuilder();
             }
-            emdpeilkhki_ = input.readMessage(POGOProtos.Rpc.ImageTextCreativeProto.parser(), extensionRegistry);
+            imageTextCreative_ = input.readMessage(POGOProtos.Rpc.ImageTextCreativeProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(emdpeilkhki_);
-              emdpeilkhki_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(imageTextCreative_);
+              imageTextCreative_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 18: {
 
-            dbfmaclhflp_ = input.readBytes();
+            encryptedAdToken_ = input.readBytes();
             break;
           }
           default: {
@@ -103,41 +103,41 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.AdDetails.class, POGOProtos.Rpc.AdDetails.Builder.class);
   }
 
-  public static final int EMDPEILKHKI_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki_;
+  public static final int IMAGE_TEXT_CREATIVE_FIELD_NUMBER = 1;
+  private POGOProtos.Rpc.ImageTextCreativeProto imageTextCreative_;
   /**
-   * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
-   * @return Whether the emdpeilkhki field is set.
+   * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
+   * @return Whether the imageTextCreative field is set.
    */
   @java.lang.Override
-  public boolean hasEmdpeilkhki() {
-    return emdpeilkhki_ != null;
+  public boolean hasImageTextCreative() {
+    return imageTextCreative_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
-   * @return The emdpeilkhki.
+   * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
+   * @return The imageTextCreative.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ImageTextCreativeProto getEmdpeilkhki() {
-    return emdpeilkhki_ == null ? POGOProtos.Rpc.ImageTextCreativeProto.getDefaultInstance() : emdpeilkhki_;
+  public POGOProtos.Rpc.ImageTextCreativeProto getImageTextCreative() {
+    return imageTextCreative_ == null ? POGOProtos.Rpc.ImageTextCreativeProto.getDefaultInstance() : imageTextCreative_;
   }
   /**
-   * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
+   * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ImageTextCreativeProtoOrBuilder getEmdpeilkhkiOrBuilder() {
-    return getEmdpeilkhki();
+  public POGOProtos.Rpc.ImageTextCreativeProtoOrBuilder getImageTextCreativeOrBuilder() {
+    return getImageTextCreative();
   }
 
-  public static final int DBFMACLHFLP_FIELD_NUMBER = 2;
-  private com.google.protobuf.ByteString dbfmaclhflp_;
+  public static final int ENCRYPTED_AD_TOKEN_FIELD_NUMBER = 2;
+  private com.google.protobuf.ByteString encryptedAdToken_;
   /**
-   * <code>bytes dbfmaclhflp = 2;</code>
-   * @return The dbfmaclhflp.
+   * <code>bytes encrypted_ad_token = 2;</code>
+   * @return The encryptedAdToken.
    */
   @java.lang.Override
-  public com.google.protobuf.ByteString getDbfmaclhflp() {
-    return dbfmaclhflp_;
+  public com.google.protobuf.ByteString getEncryptedAdToken() {
+    return encryptedAdToken_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -154,11 +154,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (emdpeilkhki_ != null) {
-      output.writeMessage(1, getEmdpeilkhki());
+    if (imageTextCreative_ != null) {
+      output.writeMessage(1, getImageTextCreative());
     }
-    if (!dbfmaclhflp_.isEmpty()) {
-      output.writeBytes(2, dbfmaclhflp_);
+    if (!encryptedAdToken_.isEmpty()) {
+      output.writeBytes(2, encryptedAdToken_);
     }
     unknownFields.writeTo(output);
   }
@@ -169,13 +169,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (emdpeilkhki_ != null) {
+    if (imageTextCreative_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getEmdpeilkhki());
+        .computeMessageSize(1, getImageTextCreative());
     }
-    if (!dbfmaclhflp_.isEmpty()) {
+    if (!encryptedAdToken_.isEmpty()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBytesSize(2, dbfmaclhflp_);
+        .computeBytesSize(2, encryptedAdToken_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -192,13 +192,13 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.AdDetails other = (POGOProtos.Rpc.AdDetails) obj;
 
-    if (hasEmdpeilkhki() != other.hasEmdpeilkhki()) return false;
-    if (hasEmdpeilkhki()) {
-      if (!getEmdpeilkhki()
-          .equals(other.getEmdpeilkhki())) return false;
+    if (hasImageTextCreative() != other.hasImageTextCreative()) return false;
+    if (hasImageTextCreative()) {
+      if (!getImageTextCreative()
+          .equals(other.getImageTextCreative())) return false;
     }
-    if (!getDbfmaclhflp()
-        .equals(other.getDbfmaclhflp())) return false;
+    if (!getEncryptedAdToken()
+        .equals(other.getEncryptedAdToken())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -210,12 +210,12 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasEmdpeilkhki()) {
-      hash = (37 * hash) + EMDPEILKHKI_FIELD_NUMBER;
-      hash = (53 * hash) + getEmdpeilkhki().hashCode();
+    if (hasImageTextCreative()) {
+      hash = (37 * hash) + IMAGE_TEXT_CREATIVE_FIELD_NUMBER;
+      hash = (53 * hash) + getImageTextCreative().hashCode();
     }
-    hash = (37 * hash) + DBFMACLHFLP_FIELD_NUMBER;
-    hash = (53 * hash) + getDbfmaclhflp().hashCode();
+    hash = (37 * hash) + ENCRYPTED_AD_TOKEN_FIELD_NUMBER;
+    hash = (53 * hash) + getEncryptedAdToken().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -353,13 +353,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (emdpeilkhkiBuilder_ == null) {
-        emdpeilkhki_ = null;
+      if (imageTextCreativeBuilder_ == null) {
+        imageTextCreative_ = null;
       } else {
-        emdpeilkhki_ = null;
-        emdpeilkhkiBuilder_ = null;
+        imageTextCreative_ = null;
+        imageTextCreativeBuilder_ = null;
       }
-      dbfmaclhflp_ = com.google.protobuf.ByteString.EMPTY;
+      encryptedAdToken_ = com.google.protobuf.ByteString.EMPTY;
 
       return this;
     }
@@ -387,12 +387,12 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.AdDetails buildPartial() {
       POGOProtos.Rpc.AdDetails result = new POGOProtos.Rpc.AdDetails(this);
-      if (emdpeilkhkiBuilder_ == null) {
-        result.emdpeilkhki_ = emdpeilkhki_;
+      if (imageTextCreativeBuilder_ == null) {
+        result.imageTextCreative_ = imageTextCreative_;
       } else {
-        result.emdpeilkhki_ = emdpeilkhkiBuilder_.build();
+        result.imageTextCreative_ = imageTextCreativeBuilder_.build();
       }
-      result.dbfmaclhflp_ = dbfmaclhflp_;
+      result.encryptedAdToken_ = encryptedAdToken_;
       onBuilt();
       return result;
     }
@@ -441,11 +441,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.AdDetails other) {
       if (other == POGOProtos.Rpc.AdDetails.getDefaultInstance()) return this;
-      if (other.hasEmdpeilkhki()) {
-        mergeEmdpeilkhki(other.getEmdpeilkhki());
+      if (other.hasImageTextCreative()) {
+        mergeImageTextCreative(other.getImageTextCreative());
       }
-      if (other.getDbfmaclhflp() != com.google.protobuf.ByteString.EMPTY) {
-        setDbfmaclhflp(other.getDbfmaclhflp());
+      if (other.getEncryptedAdToken() != com.google.protobuf.ByteString.EMPTY) {
+        setEncryptedAdToken(other.getEncryptedAdToken());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -476,155 +476,155 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki_;
+    private POGOProtos.Rpc.ImageTextCreativeProto imageTextCreative_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ImageTextCreativeProto, POGOProtos.Rpc.ImageTextCreativeProto.Builder, POGOProtos.Rpc.ImageTextCreativeProtoOrBuilder> emdpeilkhkiBuilder_;
+        POGOProtos.Rpc.ImageTextCreativeProto, POGOProtos.Rpc.ImageTextCreativeProto.Builder, POGOProtos.Rpc.ImageTextCreativeProtoOrBuilder> imageTextCreativeBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
-     * @return Whether the emdpeilkhki field is set.
+     * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
+     * @return Whether the imageTextCreative field is set.
      */
-    public boolean hasEmdpeilkhki() {
-      return emdpeilkhkiBuilder_ != null || emdpeilkhki_ != null;
+    public boolean hasImageTextCreative() {
+      return imageTextCreativeBuilder_ != null || imageTextCreative_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
-     * @return The emdpeilkhki.
+     * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
+     * @return The imageTextCreative.
      */
-    public POGOProtos.Rpc.ImageTextCreativeProto getEmdpeilkhki() {
-      if (emdpeilkhkiBuilder_ == null) {
-        return emdpeilkhki_ == null ? POGOProtos.Rpc.ImageTextCreativeProto.getDefaultInstance() : emdpeilkhki_;
+    public POGOProtos.Rpc.ImageTextCreativeProto getImageTextCreative() {
+      if (imageTextCreativeBuilder_ == null) {
+        return imageTextCreative_ == null ? POGOProtos.Rpc.ImageTextCreativeProto.getDefaultInstance() : imageTextCreative_;
       } else {
-        return emdpeilkhkiBuilder_.getMessage();
+        return imageTextCreativeBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
+     * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
      */
-    public Builder setEmdpeilkhki(POGOProtos.Rpc.ImageTextCreativeProto value) {
-      if (emdpeilkhkiBuilder_ == null) {
+    public Builder setImageTextCreative(POGOProtos.Rpc.ImageTextCreativeProto value) {
+      if (imageTextCreativeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        emdpeilkhki_ = value;
+        imageTextCreative_ = value;
         onChanged();
       } else {
-        emdpeilkhkiBuilder_.setMessage(value);
+        imageTextCreativeBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
+     * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
      */
-    public Builder setEmdpeilkhki(
+    public Builder setImageTextCreative(
         POGOProtos.Rpc.ImageTextCreativeProto.Builder builderForValue) {
-      if (emdpeilkhkiBuilder_ == null) {
-        emdpeilkhki_ = builderForValue.build();
+      if (imageTextCreativeBuilder_ == null) {
+        imageTextCreative_ = builderForValue.build();
         onChanged();
       } else {
-        emdpeilkhkiBuilder_.setMessage(builderForValue.build());
+        imageTextCreativeBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
+     * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
      */
-    public Builder mergeEmdpeilkhki(POGOProtos.Rpc.ImageTextCreativeProto value) {
-      if (emdpeilkhkiBuilder_ == null) {
-        if (emdpeilkhki_ != null) {
-          emdpeilkhki_ =
-            POGOProtos.Rpc.ImageTextCreativeProto.newBuilder(emdpeilkhki_).mergeFrom(value).buildPartial();
+    public Builder mergeImageTextCreative(POGOProtos.Rpc.ImageTextCreativeProto value) {
+      if (imageTextCreativeBuilder_ == null) {
+        if (imageTextCreative_ != null) {
+          imageTextCreative_ =
+            POGOProtos.Rpc.ImageTextCreativeProto.newBuilder(imageTextCreative_).mergeFrom(value).buildPartial();
         } else {
-          emdpeilkhki_ = value;
+          imageTextCreative_ = value;
         }
         onChanged();
       } else {
-        emdpeilkhkiBuilder_.mergeFrom(value);
+        imageTextCreativeBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
+     * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
      */
-    public Builder clearEmdpeilkhki() {
-      if (emdpeilkhkiBuilder_ == null) {
-        emdpeilkhki_ = null;
+    public Builder clearImageTextCreative() {
+      if (imageTextCreativeBuilder_ == null) {
+        imageTextCreative_ = null;
         onChanged();
       } else {
-        emdpeilkhki_ = null;
-        emdpeilkhkiBuilder_ = null;
+        imageTextCreative_ = null;
+        imageTextCreativeBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
+     * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
      */
-    public POGOProtos.Rpc.ImageTextCreativeProto.Builder getEmdpeilkhkiBuilder() {
+    public POGOProtos.Rpc.ImageTextCreativeProto.Builder getImageTextCreativeBuilder() {
       
       onChanged();
-      return getEmdpeilkhkiFieldBuilder().getBuilder();
+      return getImageTextCreativeFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
+     * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
      */
-    public POGOProtos.Rpc.ImageTextCreativeProtoOrBuilder getEmdpeilkhkiOrBuilder() {
-      if (emdpeilkhkiBuilder_ != null) {
-        return emdpeilkhkiBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.ImageTextCreativeProtoOrBuilder getImageTextCreativeOrBuilder() {
+      if (imageTextCreativeBuilder_ != null) {
+        return imageTextCreativeBuilder_.getMessageOrBuilder();
       } else {
-        return emdpeilkhki_ == null ?
-            POGOProtos.Rpc.ImageTextCreativeProto.getDefaultInstance() : emdpeilkhki_;
+        return imageTextCreative_ == null ?
+            POGOProtos.Rpc.ImageTextCreativeProto.getDefaultInstance() : imageTextCreative_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
+     * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.ImageTextCreativeProto, POGOProtos.Rpc.ImageTextCreativeProto.Builder, POGOProtos.Rpc.ImageTextCreativeProtoOrBuilder> 
-        getEmdpeilkhkiFieldBuilder() {
-      if (emdpeilkhkiBuilder_ == null) {
-        emdpeilkhkiBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getImageTextCreativeFieldBuilder() {
+      if (imageTextCreativeBuilder_ == null) {
+        imageTextCreativeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.ImageTextCreativeProto, POGOProtos.Rpc.ImageTextCreativeProto.Builder, POGOProtos.Rpc.ImageTextCreativeProtoOrBuilder>(
-                getEmdpeilkhki(),
+                getImageTextCreative(),
                 getParentForChildren(),
                 isClean());
-        emdpeilkhki_ = null;
+        imageTextCreative_ = null;
       }
-      return emdpeilkhkiBuilder_;
+      return imageTextCreativeBuilder_;
     }
 
-    private com.google.protobuf.ByteString dbfmaclhflp_ = com.google.protobuf.ByteString.EMPTY;
+    private com.google.protobuf.ByteString encryptedAdToken_ = com.google.protobuf.ByteString.EMPTY;
     /**
-     * <code>bytes dbfmaclhflp = 2;</code>
-     * @return The dbfmaclhflp.
+     * <code>bytes encrypted_ad_token = 2;</code>
+     * @return The encryptedAdToken.
      */
     @java.lang.Override
-    public com.google.protobuf.ByteString getDbfmaclhflp() {
-      return dbfmaclhflp_;
+    public com.google.protobuf.ByteString getEncryptedAdToken() {
+      return encryptedAdToken_;
     }
     /**
-     * <code>bytes dbfmaclhflp = 2;</code>
-     * @param value The dbfmaclhflp to set.
+     * <code>bytes encrypted_ad_token = 2;</code>
+     * @param value The encryptedAdToken to set.
      * @return This builder for chaining.
      */
-    public Builder setDbfmaclhflp(com.google.protobuf.ByteString value) {
+    public Builder setEncryptedAdToken(com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      dbfmaclhflp_ = value;
+      encryptedAdToken_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bytes dbfmaclhflp = 2;</code>
+     * <code>bytes encrypted_ad_token = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDbfmaclhflp() {
+    public Builder clearEncryptedAdToken() {
       
-      dbfmaclhflp_ = getDefaultInstance().getDbfmaclhflp();
+      encryptedAdToken_ = getDefaultInstance().getEncryptedAdToken();
       onChanged();
       return this;
     }

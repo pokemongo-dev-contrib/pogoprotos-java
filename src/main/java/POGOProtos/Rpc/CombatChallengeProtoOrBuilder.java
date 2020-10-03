@@ -96,14 +96,14 @@ public interface CombatChallengeProtoOrBuilder extends
   long getExpirationTimestampMs();
 
   /**
-   * <code>string field1 = 20;</code>
-   * @return The field1.
+   * <code>string combat_id = 20;</code>
+   * @return The combatId.
    */
-  java.lang.String getField1();
+  java.lang.String getCombatId();
   /**
-   * <code>string field1 = 20;</code>
-   * @return The bytes for field1.
+   * <code>string combat_id = 20;</code>
+   * @return The bytes for combatId.
    */
   com.google.protobuf.ByteString
-      getField1Bytes();
+      getCombatIdBytes();
 }

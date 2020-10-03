@@ -20,8 +20,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private CombatProto() {
-    eihblpligfa_ = 0;
-    hdegllgmeih_ = "";
+    combatState_ = 0;
+    combatId_ = "";
   }
 
   @java.lang.Override
@@ -57,89 +57,89 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            eihblpligfa_ = rawValue;
+            combatState_ = rawValue;
             break;
           }
           case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            hdegllgmeih_ = s;
+            combatId_ = s;
             break;
           }
           case 26: {
             POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder subBuilder = null;
-            if (ekinggfmndg_ != null) {
-              subBuilder = ekinggfmndg_.toBuilder();
+            if (player_ != null) {
+              subBuilder = player_.toBuilder();
             }
-            ekinggfmndg_ = input.readMessage(POGOProtos.Rpc.CombatProto.CombatPlayerProto.parser(), extensionRegistry);
+            player_ = input.readMessage(POGOProtos.Rpc.CombatProto.CombatPlayerProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(ekinggfmndg_);
-              ekinggfmndg_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(player_);
+              player_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 34: {
             POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder subBuilder = null;
-            if (hlpfmbellom_ != null) {
-              subBuilder = hlpfmbellom_.toBuilder();
+            if (opponent_ != null) {
+              subBuilder = opponent_.toBuilder();
             }
-            hlpfmbellom_ = input.readMessage(POGOProtos.Rpc.CombatProto.CombatPlayerProto.parser(), extensionRegistry);
+            opponent_ = input.readMessage(POGOProtos.Rpc.CombatProto.CombatPlayerProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(hlpfmbellom_);
-              hlpfmbellom_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(opponent_);
+              opponent_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 40: {
 
-            ibbcgicfalh_ = input.readInt64();
+            combatStartMs_ = input.readInt64();
             break;
           }
           case 48: {
 
-            ndfohhnjkka_ = input.readInt64();
+            combatEndMs_ = input.readInt64();
             break;
           }
           case 56: {
 
-            dikaifhaigb_ = input.readInt64();
+            serverMs_ = input.readInt64();
             break;
           }
           case 64: {
 
-            didegcjnmpl_ = input.readInt32();
+            currentTurn_ = input.readInt32();
             break;
           }
           case 72: {
 
-            lcoheelaocd_ = input.readInt64();
+            turnStartMs_ = input.readInt64();
             break;
           }
           case 80: {
 
-            pigoecpdfgc_ = input.readInt64();
+            minigameEndMs_ = input.readInt64();
             break;
           }
           case 88: {
 
-            niibnpojdek_ = input.readInt64();
+            minigameSubmitScoreEndMs_ = input.readInt64();
             break;
           }
           case 96: {
 
-            goelpbehckl_ = input.readInt64();
+            changePokemonEndMs_ = input.readInt64();
             break;
           }
           case 104: {
 
-            jeneikajhel_ = input.readInt64();
+            quickSwapCooldownDurationMs_ = input.readInt64();
             break;
           }
           case 112: {
 
-            dmjeiagkjlo_ = input.readInt64();
+            stateChangeDelayUntilTurn_ = input.readInt64();
             break;
           }
           default: {
@@ -354,166 +354,166 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
-     * @return Whether the jeenccbbffk field is set.
+     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
+     * @return Whether the publicProfile field is set.
      */
-    boolean hasJeenccbbffk();
+    boolean hasPublicProfile();
     /**
-     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
-     * @return The jeenccbbffk.
+     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
+     * @return The publicProfile.
      */
-    POGOProtos.Rpc.PlayerPublicProfileProto getJeenccbbffk();
+    POGOProtos.Rpc.PlayerPublicProfileProto getPublicProfile();
     /**
-     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
      */
-    POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder getJeenccbbffkOrBuilder();
+    POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder getPublicProfileOrBuilder();
 
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
-     * @return Whether the jjjmbcihbli field is set.
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
+     * @return Whether the activePokemon field is set.
      */
-    boolean hasJjjmbcihbli();
+    boolean hasActivePokemon();
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
-     * @return The jjjmbcihbli.
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
+     * @return The activePokemon.
      */
-    POGOProtos.Rpc.CombatProto.CombatPokemonProto getJjjmbcihbli();
+    POGOProtos.Rpc.CombatProto.CombatPokemonProto getActivePokemon();
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
      */
-    POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getJjjmbcihbliOrBuilder();
+    POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getActivePokemonOrBuilder();
 
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
      */
     java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> 
-        getMnnafnmiaafList();
+        getReservePokemonList();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
      */
-    POGOProtos.Rpc.CombatProto.CombatPokemonProto getMnnafnmiaaf(int index);
+    POGOProtos.Rpc.CombatProto.CombatPokemonProto getReservePokemon(int index);
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
      */
-    int getMnnafnmiaafCount();
+    int getReservePokemonCount();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
      */
     java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
-        getMnnafnmiaafOrBuilderList();
+        getReservePokemonOrBuilderList();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
      */
-    POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMnnafnmiaafOrBuilder(
+    POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getReservePokemonOrBuilder(
         int index);
 
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
      */
     java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> 
-        getMhnodplodjhList();
+        getFaintedPokemonList();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
      */
-    POGOProtos.Rpc.CombatProto.CombatPokemonProto getMhnodplodjh(int index);
+    POGOProtos.Rpc.CombatProto.CombatPokemonProto getFaintedPokemon(int index);
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
      */
-    int getMhnodplodjhCount();
+    int getFaintedPokemonCount();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
      */
     java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
-        getMhnodplodjhOrBuilderList();
+        getFaintedPokemonOrBuilderList();
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
      */
-    POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMhnodplodjhOrBuilder(
+    POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getFaintedPokemonOrBuilder(
         int index);
 
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
-     * @return Whether the bjmjpbndeil field is set.
+     * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
+     * @return Whether the currentAction field is set.
      */
-    boolean hasBjmjpbndeil();
+    boolean hasCurrentAction();
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
-     * @return The bjmjpbndeil.
+     * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
+     * @return The currentAction.
      */
-    POGOProtos.Rpc.CombatActionProto getBjmjpbndeil();
+    POGOProtos.Rpc.CombatActionProto getCurrentAction();
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
      */
-    POGOProtos.Rpc.CombatActionProtoOrBuilder getBjmjpbndeilOrBuilder();
+    POGOProtos.Rpc.CombatActionProtoOrBuilder getCurrentActionOrBuilder();
 
     /**
-     * <code>bool jkdlhblamma = 6;</code>
-     * @return The jkdlhblamma.
+     * <code>bool lockstep_ack = 6;</code>
+     * @return The lockstepAck.
      */
-    boolean getJkdlhblamma();
+    boolean getLockstepAck();
 
     /**
-     * <code>int32 gageimmlnbj = 7;</code>
-     * @return The gageimmlnbj.
+     * <code>int32 last_updated_turn = 7;</code>
+     * @return The lastUpdatedTurn.
      */
-    int getGageimmlnbj();
+    int getLastUpdatedTurn();
 
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
-     * @return Whether the ififhafklnk field is set.
+     * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
+     * @return Whether the minigameAction field is set.
      */
-    boolean hasIfifhafklnk();
+    boolean hasMinigameAction();
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
-     * @return The ififhafklnk.
+     * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
+     * @return The minigameAction.
      */
-    POGOProtos.Rpc.CombatActionProto getIfifhafklnk();
+    POGOProtos.Rpc.CombatActionProto getMinigameAction();
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
      */
-    POGOProtos.Rpc.CombatActionProtoOrBuilder getIfifhafklnkOrBuilder();
+    POGOProtos.Rpc.CombatActionProtoOrBuilder getMinigameActionOrBuilder();
 
     /**
-     * <code>int64 jmcnhebeepn = 9;</code>
-     * @return The jmcnhebeepn.
+     * <code>int64 quick_swap_available_ms = 9;</code>
+     * @return The quickSwapAvailableMs.
      */
-    long getJmcnhebeepn();
+    long getQuickSwapAvailableMs();
 
     /**
-     * <code>int32 jojoifnmopa = 10;</code>
-     * @return The jojoifnmopa.
+     * <code>int32 minigame_defense_chances_left = 10;</code>
+     * @return The minigameDefenseChancesLeft.
      */
-    int getJojoifnmopa();
+    int getMinigameDefenseChancesLeft();
 
     /**
-     * <code>string kabdkaelnce = 11;</code>
-     * @return The kabdkaelnce.
+     * <code>string combat_npc_personality_id = 11;</code>
+     * @return The combatNpcPersonalityId.
      */
-    java.lang.String getKabdkaelnce();
+    java.lang.String getCombatNpcPersonalityId();
     /**
-     * <code>string kabdkaelnce = 11;</code>
-     * @return The bytes for kabdkaelnce.
+     * <code>string combat_npc_personality_id = 11;</code>
+     * @return The bytes for combatNpcPersonalityId.
      */
     com.google.protobuf.ByteString
-        getKabdkaelnceBytes();
+        getCombatNpcPersonalityIdBytes();
 
     /**
-     * <code>int32 pmhidaplcnm = 12;</code>
-     * @return The pmhidaplcnm.
+     * <code>int32 times_combat_actions_called = 12;</code>
+     * @return The timesCombatActionsCalled.
      */
-    int getPmhidaplcnm();
+    int getTimesCombatActionsCalled();
 
     /**
-     * <code>int64 dmmcbhcceml = 13;</code>
-     * @return The dmmcbhcceml.
+     * <code>int64 field1 = 13;</code>
+     * @return The field1.
      */
-    long getDmmcbhcceml();
+    long getField1();
 
     /**
-     * <code>int32 mljngmnekij = 14;</code>
-     * @return The mljngmnekij.
+     * <code>int32 field2 = 14;</code>
+     * @return The field2.
      */
-    int getMljngmnekij();
+    int getField2();
   }
   /**
    * <pre>
@@ -532,9 +532,9 @@ private static final long serialVersionUID = 0L;
       super(builder);
     }
     private CombatPlayerProto() {
-      mnnafnmiaaf_ = java.util.Collections.emptyList();
-      mhnodplodjh_ = java.util.Collections.emptyList();
-      kabdkaelnce_ = "";
+      reservePokemon_ = java.util.Collections.emptyList();
+      faintedPokemon_ = java.util.Collections.emptyList();
+      combatNpcPersonalityId_ = "";
     }
 
     @java.lang.Override
@@ -570,113 +570,113 @@ private static final long serialVersionUID = 0L;
               break;
             case 10: {
               POGOProtos.Rpc.PlayerPublicProfileProto.Builder subBuilder = null;
-              if (jeenccbbffk_ != null) {
-                subBuilder = jeenccbbffk_.toBuilder();
+              if (publicProfile_ != null) {
+                subBuilder = publicProfile_.toBuilder();
               }
-              jeenccbbffk_ = input.readMessage(POGOProtos.Rpc.PlayerPublicProfileProto.parser(), extensionRegistry);
+              publicProfile_ = input.readMessage(POGOProtos.Rpc.PlayerPublicProfileProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(jeenccbbffk_);
-                jeenccbbffk_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(publicProfile_);
+                publicProfile_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 18: {
               POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder subBuilder = null;
-              if (jjjmbcihbli_ != null) {
-                subBuilder = jjjmbcihbli_.toBuilder();
+              if (activePokemon_ != null) {
+                subBuilder = activePokemon_.toBuilder();
               }
-              jjjmbcihbli_ = input.readMessage(POGOProtos.Rpc.CombatProto.CombatPokemonProto.parser(), extensionRegistry);
+              activePokemon_ = input.readMessage(POGOProtos.Rpc.CombatProto.CombatPokemonProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(jjjmbcihbli_);
-                jjjmbcihbli_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(activePokemon_);
+                activePokemon_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                mnnafnmiaaf_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>();
+                reservePokemon_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              mnnafnmiaaf_.add(
+              reservePokemon_.add(
                   input.readMessage(POGOProtos.Rpc.CombatProto.CombatPokemonProto.parser(), extensionRegistry));
               break;
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                mhnodplodjh_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>();
+                faintedPokemon_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>();
                 mutable_bitField0_ |= 0x00000002;
               }
-              mhnodplodjh_.add(
+              faintedPokemon_.add(
                   input.readMessage(POGOProtos.Rpc.CombatProto.CombatPokemonProto.parser(), extensionRegistry));
               break;
             }
             case 42: {
               POGOProtos.Rpc.CombatActionProto.Builder subBuilder = null;
-              if (bjmjpbndeil_ != null) {
-                subBuilder = bjmjpbndeil_.toBuilder();
+              if (currentAction_ != null) {
+                subBuilder = currentAction_.toBuilder();
               }
-              bjmjpbndeil_ = input.readMessage(POGOProtos.Rpc.CombatActionProto.parser(), extensionRegistry);
+              currentAction_ = input.readMessage(POGOProtos.Rpc.CombatActionProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(bjmjpbndeil_);
-                bjmjpbndeil_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(currentAction_);
+                currentAction_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 48: {
 
-              jkdlhblamma_ = input.readBool();
+              lockstepAck_ = input.readBool();
               break;
             }
             case 56: {
 
-              gageimmlnbj_ = input.readInt32();
+              lastUpdatedTurn_ = input.readInt32();
               break;
             }
             case 66: {
               POGOProtos.Rpc.CombatActionProto.Builder subBuilder = null;
-              if (ififhafklnk_ != null) {
-                subBuilder = ififhafklnk_.toBuilder();
+              if (minigameAction_ != null) {
+                subBuilder = minigameAction_.toBuilder();
               }
-              ififhafklnk_ = input.readMessage(POGOProtos.Rpc.CombatActionProto.parser(), extensionRegistry);
+              minigameAction_ = input.readMessage(POGOProtos.Rpc.CombatActionProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(ififhafklnk_);
-                ififhafklnk_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(minigameAction_);
+                minigameAction_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 72: {
 
-              jmcnhebeepn_ = input.readInt64();
+              quickSwapAvailableMs_ = input.readInt64();
               break;
             }
             case 80: {
 
-              jojoifnmopa_ = input.readInt32();
+              minigameDefenseChancesLeft_ = input.readInt32();
               break;
             }
             case 90: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              kabdkaelnce_ = s;
+              combatNpcPersonalityId_ = s;
               break;
             }
             case 96: {
 
-              pmhidaplcnm_ = input.readInt32();
+              timesCombatActionsCalled_ = input.readInt32();
               break;
             }
             case 104: {
 
-              dmmcbhcceml_ = input.readInt64();
+              field1_ = input.readInt64();
               break;
             }
             case 112: {
 
-              mljngmnekij_ = input.readInt32();
+              field2_ = input.readInt32();
               break;
             }
             default: {
@@ -695,10 +695,10 @@ private static final long serialVersionUID = 0L;
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          mnnafnmiaaf_ = java.util.Collections.unmodifiableList(mnnafnmiaaf_);
+          reservePokemon_ = java.util.Collections.unmodifiableList(reservePokemon_);
         }
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          mhnodplodjh_ = java.util.Collections.unmodifiableList(mhnodplodjh_);
+          faintedPokemon_ = java.util.Collections.unmodifiableList(faintedPokemon_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -717,303 +717,303 @@ private static final long serialVersionUID = 0L;
               POGOProtos.Rpc.CombatProto.CombatPlayerProto.class, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder.class);
     }
 
-    public static final int JEENCCBBFFK_FIELD_NUMBER = 1;
-    private POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk_;
+    public static final int PUBLIC_PROFILE_FIELD_NUMBER = 1;
+    private POGOProtos.Rpc.PlayerPublicProfileProto publicProfile_;
     /**
-     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
-     * @return Whether the jeenccbbffk field is set.
+     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
+     * @return Whether the publicProfile field is set.
      */
     @java.lang.Override
-    public boolean hasJeenccbbffk() {
-      return jeenccbbffk_ != null;
+    public boolean hasPublicProfile() {
+      return publicProfile_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
-     * @return The jeenccbbffk.
+     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
+     * @return The publicProfile.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.PlayerPublicProfileProto getJeenccbbffk() {
-      return jeenccbbffk_ == null ? POGOProtos.Rpc.PlayerPublicProfileProto.getDefaultInstance() : jeenccbbffk_;
+    public POGOProtos.Rpc.PlayerPublicProfileProto getPublicProfile() {
+      return publicProfile_ == null ? POGOProtos.Rpc.PlayerPublicProfileProto.getDefaultInstance() : publicProfile_;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder getJeenccbbffkOrBuilder() {
-      return getJeenccbbffk();
-    }
-
-    public static final int JJJMBCIHBLI_FIELD_NUMBER = 2;
-    private POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli_;
-    /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
-     * @return Whether the jjjmbcihbli field is set.
-     */
-    @java.lang.Override
-    public boolean hasJjjmbcihbli() {
-      return jjjmbcihbli_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
-     * @return The jjjmbcihbli.
-     */
-    @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.CombatPokemonProto getJjjmbcihbli() {
-      return jjjmbcihbli_ == null ? POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance() : jjjmbcihbli_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
-     */
-    @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getJjjmbcihbliOrBuilder() {
-      return getJjjmbcihbli();
+    public POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder getPublicProfileOrBuilder() {
+      return getPublicProfile();
     }
 
-    public static final int MNNAFNMIAAF_FIELD_NUMBER = 3;
-    private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> mnnafnmiaaf_;
+    public static final int ACTIVE_POKEMON_FIELD_NUMBER = 2;
+    private POGOProtos.Rpc.CombatProto.CombatPokemonProto activePokemon_;
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
+     * @return Whether the activePokemon field is set.
      */
     @java.lang.Override
-    public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getMnnafnmiaafList() {
-      return mnnafnmiaaf_;
+    public boolean hasActivePokemon() {
+      return activePokemon_ != null;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
+     * @return The activePokemon.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProto getActivePokemon() {
+      return activePokemon_ == null ? POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance() : activePokemon_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getActivePokemonOrBuilder() {
+      return getActivePokemon();
+    }
+
+    public static final int RESERVE_POKEMON_FIELD_NUMBER = 3;
+    private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> reservePokemon_;
+    /**
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
+     */
+    @java.lang.Override
+    public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getReservePokemonList() {
+      return reservePokemon_;
+    }
+    /**
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
      */
     @java.lang.Override
     public java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
-        getMnnafnmiaafOrBuilderList() {
-      return mnnafnmiaaf_;
+        getReservePokemonOrBuilderList() {
+      return reservePokemon_;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
      */
     @java.lang.Override
-    public int getMnnafnmiaafCount() {
-      return mnnafnmiaaf_.size();
+    public int getReservePokemonCount() {
+      return reservePokemon_.size();
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.CombatPokemonProto getMnnafnmiaaf(int index) {
-      return mnnafnmiaaf_.get(index);
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProto getReservePokemon(int index) {
+      return reservePokemon_.get(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMnnafnmiaafOrBuilder(
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getReservePokemonOrBuilder(
         int index) {
-      return mnnafnmiaaf_.get(index);
+      return reservePokemon_.get(index);
     }
 
-    public static final int MHNODPLODJH_FIELD_NUMBER = 4;
-    private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> mhnodplodjh_;
+    public static final int FAINTED_POKEMON_FIELD_NUMBER = 4;
+    private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> faintedPokemon_;
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
      */
     @java.lang.Override
-    public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getMhnodplodjhList() {
-      return mhnodplodjh_;
+    public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getFaintedPokemonList() {
+      return faintedPokemon_;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
      */
     @java.lang.Override
     public java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
-        getMhnodplodjhOrBuilderList() {
-      return mhnodplodjh_;
+        getFaintedPokemonOrBuilderList() {
+      return faintedPokemon_;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
      */
     @java.lang.Override
-    public int getMhnodplodjhCount() {
-      return mhnodplodjh_.size();
+    public int getFaintedPokemonCount() {
+      return faintedPokemon_.size();
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.CombatPokemonProto getMhnodplodjh(int index) {
-      return mhnodplodjh_.get(index);
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProto getFaintedPokemon(int index) {
+      return faintedPokemon_.get(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+     * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMhnodplodjhOrBuilder(
+    public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getFaintedPokemonOrBuilder(
         int index) {
-      return mhnodplodjh_.get(index);
+      return faintedPokemon_.get(index);
     }
 
-    public static final int BJMJPBNDEIL_FIELD_NUMBER = 5;
-    private POGOProtos.Rpc.CombatActionProto bjmjpbndeil_;
+    public static final int CURRENT_ACTION_FIELD_NUMBER = 5;
+    private POGOProtos.Rpc.CombatActionProto currentAction_;
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
-     * @return Whether the bjmjpbndeil field is set.
+     * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
+     * @return Whether the currentAction field is set.
      */
     @java.lang.Override
-    public boolean hasBjmjpbndeil() {
-      return bjmjpbndeil_ != null;
+    public boolean hasCurrentAction() {
+      return currentAction_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
-     * @return The bjmjpbndeil.
+     * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
+     * @return The currentAction.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatActionProto getBjmjpbndeil() {
-      return bjmjpbndeil_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : bjmjpbndeil_;
+    public POGOProtos.Rpc.CombatActionProto getCurrentAction() {
+      return currentAction_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : currentAction_;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatActionProtoOrBuilder getBjmjpbndeilOrBuilder() {
-      return getBjmjpbndeil();
-    }
-
-    public static final int JKDLHBLAMMA_FIELD_NUMBER = 6;
-    private boolean jkdlhblamma_;
-    /**
-     * <code>bool jkdlhblamma = 6;</code>
-     * @return The jkdlhblamma.
-     */
-    @java.lang.Override
-    public boolean getJkdlhblamma() {
-      return jkdlhblamma_;
+    public POGOProtos.Rpc.CombatActionProtoOrBuilder getCurrentActionOrBuilder() {
+      return getCurrentAction();
     }
 
-    public static final int GAGEIMMLNBJ_FIELD_NUMBER = 7;
-    private int gageimmlnbj_;
+    public static final int LOCKSTEP_ACK_FIELD_NUMBER = 6;
+    private boolean lockstepAck_;
     /**
-     * <code>int32 gageimmlnbj = 7;</code>
-     * @return The gageimmlnbj.
+     * <code>bool lockstep_ack = 6;</code>
+     * @return The lockstepAck.
      */
     @java.lang.Override
-    public int getGageimmlnbj() {
-      return gageimmlnbj_;
+    public boolean getLockstepAck() {
+      return lockstepAck_;
     }
 
-    public static final int IFIFHAFKLNK_FIELD_NUMBER = 8;
-    private POGOProtos.Rpc.CombatActionProto ififhafklnk_;
+    public static final int LAST_UPDATED_TURN_FIELD_NUMBER = 7;
+    private int lastUpdatedTurn_;
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
-     * @return Whether the ififhafklnk field is set.
+     * <code>int32 last_updated_turn = 7;</code>
+     * @return The lastUpdatedTurn.
      */
     @java.lang.Override
-    public boolean hasIfifhafklnk() {
-      return ififhafklnk_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
-     * @return The ififhafklnk.
-     */
-    @java.lang.Override
-    public POGOProtos.Rpc.CombatActionProto getIfifhafklnk() {
-      return ififhafklnk_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : ififhafklnk_;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
-     */
-    @java.lang.Override
-    public POGOProtos.Rpc.CombatActionProtoOrBuilder getIfifhafklnkOrBuilder() {
-      return getIfifhafklnk();
+    public int getLastUpdatedTurn() {
+      return lastUpdatedTurn_;
     }
 
-    public static final int JMCNHEBEEPN_FIELD_NUMBER = 9;
-    private long jmcnhebeepn_;
+    public static final int MINIGAME_ACTION_FIELD_NUMBER = 8;
+    private POGOProtos.Rpc.CombatActionProto minigameAction_;
     /**
-     * <code>int64 jmcnhebeepn = 9;</code>
-     * @return The jmcnhebeepn.
+     * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
+     * @return Whether the minigameAction field is set.
      */
     @java.lang.Override
-    public long getJmcnhebeepn() {
-      return jmcnhebeepn_;
+    public boolean hasMinigameAction() {
+      return minigameAction_ != null;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
+     * @return The minigameAction.
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.CombatActionProto getMinigameAction() {
+      return minigameAction_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : minigameAction_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
+     */
+    @java.lang.Override
+    public POGOProtos.Rpc.CombatActionProtoOrBuilder getMinigameActionOrBuilder() {
+      return getMinigameAction();
     }
 
-    public static final int JOJOIFNMOPA_FIELD_NUMBER = 10;
-    private int jojoifnmopa_;
+    public static final int QUICK_SWAP_AVAILABLE_MS_FIELD_NUMBER = 9;
+    private long quickSwapAvailableMs_;
     /**
-     * <code>int32 jojoifnmopa = 10;</code>
-     * @return The jojoifnmopa.
+     * <code>int64 quick_swap_available_ms = 9;</code>
+     * @return The quickSwapAvailableMs.
      */
     @java.lang.Override
-    public int getJojoifnmopa() {
-      return jojoifnmopa_;
+    public long getQuickSwapAvailableMs() {
+      return quickSwapAvailableMs_;
     }
 
-    public static final int KABDKAELNCE_FIELD_NUMBER = 11;
-    private volatile java.lang.Object kabdkaelnce_;
+    public static final int MINIGAME_DEFENSE_CHANCES_LEFT_FIELD_NUMBER = 10;
+    private int minigameDefenseChancesLeft_;
     /**
-     * <code>string kabdkaelnce = 11;</code>
-     * @return The kabdkaelnce.
+     * <code>int32 minigame_defense_chances_left = 10;</code>
+     * @return The minigameDefenseChancesLeft.
      */
     @java.lang.Override
-    public java.lang.String getKabdkaelnce() {
-      java.lang.Object ref = kabdkaelnce_;
+    public int getMinigameDefenseChancesLeft() {
+      return minigameDefenseChancesLeft_;
+    }
+
+    public static final int COMBAT_NPC_PERSONALITY_ID_FIELD_NUMBER = 11;
+    private volatile java.lang.Object combatNpcPersonalityId_;
+    /**
+     * <code>string combat_npc_personality_id = 11;</code>
+     * @return The combatNpcPersonalityId.
+     */
+    @java.lang.Override
+    public java.lang.String getCombatNpcPersonalityId() {
+      java.lang.Object ref = combatNpcPersonalityId_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        kabdkaelnce_ = s;
+        combatNpcPersonalityId_ = s;
         return s;
       }
     }
     /**
-     * <code>string kabdkaelnce = 11;</code>
-     * @return The bytes for kabdkaelnce.
+     * <code>string combat_npc_personality_id = 11;</code>
+     * @return The bytes for combatNpcPersonalityId.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getKabdkaelnceBytes() {
-      java.lang.Object ref = kabdkaelnce_;
+        getCombatNpcPersonalityIdBytes() {
+      java.lang.Object ref = combatNpcPersonalityId_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        kabdkaelnce_ = b;
+        combatNpcPersonalityId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int PMHIDAPLCNM_FIELD_NUMBER = 12;
-    private int pmhidaplcnm_;
+    public static final int TIMES_COMBAT_ACTIONS_CALLED_FIELD_NUMBER = 12;
+    private int timesCombatActionsCalled_;
     /**
-     * <code>int32 pmhidaplcnm = 12;</code>
-     * @return The pmhidaplcnm.
+     * <code>int32 times_combat_actions_called = 12;</code>
+     * @return The timesCombatActionsCalled.
      */
     @java.lang.Override
-    public int getPmhidaplcnm() {
-      return pmhidaplcnm_;
+    public int getTimesCombatActionsCalled() {
+      return timesCombatActionsCalled_;
     }
 
-    public static final int DMMCBHCCEML_FIELD_NUMBER = 13;
-    private long dmmcbhcceml_;
+    public static final int FIELD1_FIELD_NUMBER = 13;
+    private long field1_;
     /**
-     * <code>int64 dmmcbhcceml = 13;</code>
-     * @return The dmmcbhcceml.
+     * <code>int64 field1 = 13;</code>
+     * @return The field1.
      */
     @java.lang.Override
-    public long getDmmcbhcceml() {
-      return dmmcbhcceml_;
+    public long getField1() {
+      return field1_;
     }
 
-    public static final int MLJNGMNEKIJ_FIELD_NUMBER = 14;
-    private int mljngmnekij_;
+    public static final int FIELD2_FIELD_NUMBER = 14;
+    private int field2_;
     /**
-     * <code>int32 mljngmnekij = 14;</code>
-     * @return The mljngmnekij.
+     * <code>int32 field2 = 14;</code>
+     * @return The field2.
      */
     @java.lang.Override
-    public int getMljngmnekij() {
-      return mljngmnekij_;
+    public int getField2() {
+      return field2_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1030,47 +1030,47 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (jeenccbbffk_ != null) {
-        output.writeMessage(1, getJeenccbbffk());
+      if (publicProfile_ != null) {
+        output.writeMessage(1, getPublicProfile());
       }
-      if (jjjmbcihbli_ != null) {
-        output.writeMessage(2, getJjjmbcihbli());
+      if (activePokemon_ != null) {
+        output.writeMessage(2, getActivePokemon());
       }
-      for (int i = 0; i < mnnafnmiaaf_.size(); i++) {
-        output.writeMessage(3, mnnafnmiaaf_.get(i));
+      for (int i = 0; i < reservePokemon_.size(); i++) {
+        output.writeMessage(3, reservePokemon_.get(i));
       }
-      for (int i = 0; i < mhnodplodjh_.size(); i++) {
-        output.writeMessage(4, mhnodplodjh_.get(i));
+      for (int i = 0; i < faintedPokemon_.size(); i++) {
+        output.writeMessage(4, faintedPokemon_.get(i));
       }
-      if (bjmjpbndeil_ != null) {
-        output.writeMessage(5, getBjmjpbndeil());
+      if (currentAction_ != null) {
+        output.writeMessage(5, getCurrentAction());
       }
-      if (jkdlhblamma_ != false) {
-        output.writeBool(6, jkdlhblamma_);
+      if (lockstepAck_ != false) {
+        output.writeBool(6, lockstepAck_);
       }
-      if (gageimmlnbj_ != 0) {
-        output.writeInt32(7, gageimmlnbj_);
+      if (lastUpdatedTurn_ != 0) {
+        output.writeInt32(7, lastUpdatedTurn_);
       }
-      if (ififhafklnk_ != null) {
-        output.writeMessage(8, getIfifhafklnk());
+      if (minigameAction_ != null) {
+        output.writeMessage(8, getMinigameAction());
       }
-      if (jmcnhebeepn_ != 0L) {
-        output.writeInt64(9, jmcnhebeepn_);
+      if (quickSwapAvailableMs_ != 0L) {
+        output.writeInt64(9, quickSwapAvailableMs_);
       }
-      if (jojoifnmopa_ != 0) {
-        output.writeInt32(10, jojoifnmopa_);
+      if (minigameDefenseChancesLeft_ != 0) {
+        output.writeInt32(10, minigameDefenseChancesLeft_);
       }
-      if (!getKabdkaelnceBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, kabdkaelnce_);
+      if (!getCombatNpcPersonalityIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, combatNpcPersonalityId_);
       }
-      if (pmhidaplcnm_ != 0) {
-        output.writeInt32(12, pmhidaplcnm_);
+      if (timesCombatActionsCalled_ != 0) {
+        output.writeInt32(12, timesCombatActionsCalled_);
       }
-      if (dmmcbhcceml_ != 0L) {
-        output.writeInt64(13, dmmcbhcceml_);
+      if (field1_ != 0L) {
+        output.writeInt64(13, field1_);
       }
-      if (mljngmnekij_ != 0) {
-        output.writeInt32(14, mljngmnekij_);
+      if (field2_ != 0) {
+        output.writeInt32(14, field2_);
       }
       unknownFields.writeTo(output);
     }
@@ -1081,60 +1081,60 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (jeenccbbffk_ != null) {
+      if (publicProfile_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getJeenccbbffk());
+          .computeMessageSize(1, getPublicProfile());
       }
-      if (jjjmbcihbli_ != null) {
+      if (activePokemon_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getJjjmbcihbli());
+          .computeMessageSize(2, getActivePokemon());
       }
-      for (int i = 0; i < mnnafnmiaaf_.size(); i++) {
+      for (int i = 0; i < reservePokemon_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, mnnafnmiaaf_.get(i));
+          .computeMessageSize(3, reservePokemon_.get(i));
       }
-      for (int i = 0; i < mhnodplodjh_.size(); i++) {
+      for (int i = 0; i < faintedPokemon_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, mhnodplodjh_.get(i));
+          .computeMessageSize(4, faintedPokemon_.get(i));
       }
-      if (bjmjpbndeil_ != null) {
+      if (currentAction_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, getBjmjpbndeil());
+          .computeMessageSize(5, getCurrentAction());
       }
-      if (jkdlhblamma_ != false) {
+      if (lockstepAck_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, jkdlhblamma_);
+          .computeBoolSize(6, lockstepAck_);
       }
-      if (gageimmlnbj_ != 0) {
+      if (lastUpdatedTurn_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, gageimmlnbj_);
+          .computeInt32Size(7, lastUpdatedTurn_);
       }
-      if (ififhafklnk_ != null) {
+      if (minigameAction_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getIfifhafklnk());
+          .computeMessageSize(8, getMinigameAction());
       }
-      if (jmcnhebeepn_ != 0L) {
+      if (quickSwapAvailableMs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(9, jmcnhebeepn_);
+          .computeInt64Size(9, quickSwapAvailableMs_);
       }
-      if (jojoifnmopa_ != 0) {
+      if (minigameDefenseChancesLeft_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, jojoifnmopa_);
+          .computeInt32Size(10, minigameDefenseChancesLeft_);
       }
-      if (!getKabdkaelnceBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, kabdkaelnce_);
+      if (!getCombatNpcPersonalityIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, combatNpcPersonalityId_);
       }
-      if (pmhidaplcnm_ != 0) {
+      if (timesCombatActionsCalled_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, pmhidaplcnm_);
+          .computeInt32Size(12, timesCombatActionsCalled_);
       }
-      if (dmmcbhcceml_ != 0L) {
+      if (field1_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(13, dmmcbhcceml_);
+          .computeInt64Size(13, field1_);
       }
-      if (mljngmnekij_ != 0) {
+      if (field2_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, mljngmnekij_);
+          .computeInt32Size(14, field2_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1151,46 +1151,46 @@ private static final long serialVersionUID = 0L;
       }
       POGOProtos.Rpc.CombatProto.CombatPlayerProto other = (POGOProtos.Rpc.CombatProto.CombatPlayerProto) obj;
 
-      if (hasJeenccbbffk() != other.hasJeenccbbffk()) return false;
-      if (hasJeenccbbffk()) {
-        if (!getJeenccbbffk()
-            .equals(other.getJeenccbbffk())) return false;
+      if (hasPublicProfile() != other.hasPublicProfile()) return false;
+      if (hasPublicProfile()) {
+        if (!getPublicProfile()
+            .equals(other.getPublicProfile())) return false;
       }
-      if (hasJjjmbcihbli() != other.hasJjjmbcihbli()) return false;
-      if (hasJjjmbcihbli()) {
-        if (!getJjjmbcihbli()
-            .equals(other.getJjjmbcihbli())) return false;
+      if (hasActivePokemon() != other.hasActivePokemon()) return false;
+      if (hasActivePokemon()) {
+        if (!getActivePokemon()
+            .equals(other.getActivePokemon())) return false;
       }
-      if (!getMnnafnmiaafList()
-          .equals(other.getMnnafnmiaafList())) return false;
-      if (!getMhnodplodjhList()
-          .equals(other.getMhnodplodjhList())) return false;
-      if (hasBjmjpbndeil() != other.hasBjmjpbndeil()) return false;
-      if (hasBjmjpbndeil()) {
-        if (!getBjmjpbndeil()
-            .equals(other.getBjmjpbndeil())) return false;
+      if (!getReservePokemonList()
+          .equals(other.getReservePokemonList())) return false;
+      if (!getFaintedPokemonList()
+          .equals(other.getFaintedPokemonList())) return false;
+      if (hasCurrentAction() != other.hasCurrentAction()) return false;
+      if (hasCurrentAction()) {
+        if (!getCurrentAction()
+            .equals(other.getCurrentAction())) return false;
       }
-      if (getJkdlhblamma()
-          != other.getJkdlhblamma()) return false;
-      if (getGageimmlnbj()
-          != other.getGageimmlnbj()) return false;
-      if (hasIfifhafklnk() != other.hasIfifhafklnk()) return false;
-      if (hasIfifhafklnk()) {
-        if (!getIfifhafklnk()
-            .equals(other.getIfifhafklnk())) return false;
+      if (getLockstepAck()
+          != other.getLockstepAck()) return false;
+      if (getLastUpdatedTurn()
+          != other.getLastUpdatedTurn()) return false;
+      if (hasMinigameAction() != other.hasMinigameAction()) return false;
+      if (hasMinigameAction()) {
+        if (!getMinigameAction()
+            .equals(other.getMinigameAction())) return false;
       }
-      if (getJmcnhebeepn()
-          != other.getJmcnhebeepn()) return false;
-      if (getJojoifnmopa()
-          != other.getJojoifnmopa()) return false;
-      if (!getKabdkaelnce()
-          .equals(other.getKabdkaelnce())) return false;
-      if (getPmhidaplcnm()
-          != other.getPmhidaplcnm()) return false;
-      if (getDmmcbhcceml()
-          != other.getDmmcbhcceml()) return false;
-      if (getMljngmnekij()
-          != other.getMljngmnekij()) return false;
+      if (getQuickSwapAvailableMs()
+          != other.getQuickSwapAvailableMs()) return false;
+      if (getMinigameDefenseChancesLeft()
+          != other.getMinigameDefenseChancesLeft()) return false;
+      if (!getCombatNpcPersonalityId()
+          .equals(other.getCombatNpcPersonalityId())) return false;
+      if (getTimesCombatActionsCalled()
+          != other.getTimesCombatActionsCalled()) return false;
+      if (getField1()
+          != other.getField1()) return false;
+      if (getField2()
+          != other.getField2()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1202,49 +1202,49 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasJeenccbbffk()) {
-        hash = (37 * hash) + JEENCCBBFFK_FIELD_NUMBER;
-        hash = (53 * hash) + getJeenccbbffk().hashCode();
+      if (hasPublicProfile()) {
+        hash = (37 * hash) + PUBLIC_PROFILE_FIELD_NUMBER;
+        hash = (53 * hash) + getPublicProfile().hashCode();
       }
-      if (hasJjjmbcihbli()) {
-        hash = (37 * hash) + JJJMBCIHBLI_FIELD_NUMBER;
-        hash = (53 * hash) + getJjjmbcihbli().hashCode();
+      if (hasActivePokemon()) {
+        hash = (37 * hash) + ACTIVE_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getActivePokemon().hashCode();
       }
-      if (getMnnafnmiaafCount() > 0) {
-        hash = (37 * hash) + MNNAFNMIAAF_FIELD_NUMBER;
-        hash = (53 * hash) + getMnnafnmiaafList().hashCode();
+      if (getReservePokemonCount() > 0) {
+        hash = (37 * hash) + RESERVE_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getReservePokemonList().hashCode();
       }
-      if (getMhnodplodjhCount() > 0) {
-        hash = (37 * hash) + MHNODPLODJH_FIELD_NUMBER;
-        hash = (53 * hash) + getMhnodplodjhList().hashCode();
+      if (getFaintedPokemonCount() > 0) {
+        hash = (37 * hash) + FAINTED_POKEMON_FIELD_NUMBER;
+        hash = (53 * hash) + getFaintedPokemonList().hashCode();
       }
-      if (hasBjmjpbndeil()) {
-        hash = (37 * hash) + BJMJPBNDEIL_FIELD_NUMBER;
-        hash = (53 * hash) + getBjmjpbndeil().hashCode();
+      if (hasCurrentAction()) {
+        hash = (37 * hash) + CURRENT_ACTION_FIELD_NUMBER;
+        hash = (53 * hash) + getCurrentAction().hashCode();
       }
-      hash = (37 * hash) + JKDLHBLAMMA_FIELD_NUMBER;
+      hash = (37 * hash) + LOCKSTEP_ACK_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getJkdlhblamma());
-      hash = (37 * hash) + GAGEIMMLNBJ_FIELD_NUMBER;
-      hash = (53 * hash) + getGageimmlnbj();
-      if (hasIfifhafklnk()) {
-        hash = (37 * hash) + IFIFHAFKLNK_FIELD_NUMBER;
-        hash = (53 * hash) + getIfifhafklnk().hashCode();
+          getLockstepAck());
+      hash = (37 * hash) + LAST_UPDATED_TURN_FIELD_NUMBER;
+      hash = (53 * hash) + getLastUpdatedTurn();
+      if (hasMinigameAction()) {
+        hash = (37 * hash) + MINIGAME_ACTION_FIELD_NUMBER;
+        hash = (53 * hash) + getMinigameAction().hashCode();
       }
-      hash = (37 * hash) + JMCNHEBEEPN_FIELD_NUMBER;
+      hash = (37 * hash) + QUICK_SWAP_AVAILABLE_MS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getJmcnhebeepn());
-      hash = (37 * hash) + JOJOIFNMOPA_FIELD_NUMBER;
-      hash = (53 * hash) + getJojoifnmopa();
-      hash = (37 * hash) + KABDKAELNCE_FIELD_NUMBER;
-      hash = (53 * hash) + getKabdkaelnce().hashCode();
-      hash = (37 * hash) + PMHIDAPLCNM_FIELD_NUMBER;
-      hash = (53 * hash) + getPmhidaplcnm();
-      hash = (37 * hash) + DMMCBHCCEML_FIELD_NUMBER;
+          getQuickSwapAvailableMs());
+      hash = (37 * hash) + MINIGAME_DEFENSE_CHANCES_LEFT_FIELD_NUMBER;
+      hash = (53 * hash) + getMinigameDefenseChancesLeft();
+      hash = (37 * hash) + COMBAT_NPC_PERSONALITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCombatNpcPersonalityId().hashCode();
+      hash = (37 * hash) + TIMES_COMBAT_ACTIONS_CALLED_FIELD_NUMBER;
+      hash = (53 * hash) + getTimesCombatActionsCalled();
+      hash = (37 * hash) + FIELD1_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getDmmcbhcceml());
-      hash = (37 * hash) + MLJNGMNEKIJ_FIELD_NUMBER;
-      hash = (53 * hash) + getMljngmnekij();
+          getField1());
+      hash = (37 * hash) + FIELD2_FIELD_NUMBER;
+      hash = (53 * hash) + getField2();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1377,64 +1377,64 @@ private static final long serialVersionUID = 0L;
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getMnnafnmiaafFieldBuilder();
-          getMhnodplodjhFieldBuilder();
+          getReservePokemonFieldBuilder();
+          getFaintedPokemonFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (jeenccbbffkBuilder_ == null) {
-          jeenccbbffk_ = null;
+        if (publicProfileBuilder_ == null) {
+          publicProfile_ = null;
         } else {
-          jeenccbbffk_ = null;
-          jeenccbbffkBuilder_ = null;
+          publicProfile_ = null;
+          publicProfileBuilder_ = null;
         }
-        if (jjjmbcihbliBuilder_ == null) {
-          jjjmbcihbli_ = null;
+        if (activePokemonBuilder_ == null) {
+          activePokemon_ = null;
         } else {
-          jjjmbcihbli_ = null;
-          jjjmbcihbliBuilder_ = null;
+          activePokemon_ = null;
+          activePokemonBuilder_ = null;
         }
-        if (mnnafnmiaafBuilder_ == null) {
-          mnnafnmiaaf_ = java.util.Collections.emptyList();
+        if (reservePokemonBuilder_ == null) {
+          reservePokemon_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          mnnafnmiaafBuilder_.clear();
+          reservePokemonBuilder_.clear();
         }
-        if (mhnodplodjhBuilder_ == null) {
-          mhnodplodjh_ = java.util.Collections.emptyList();
+        if (faintedPokemonBuilder_ == null) {
+          faintedPokemon_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          mhnodplodjhBuilder_.clear();
+          faintedPokemonBuilder_.clear();
         }
-        if (bjmjpbndeilBuilder_ == null) {
-          bjmjpbndeil_ = null;
+        if (currentActionBuilder_ == null) {
+          currentAction_ = null;
         } else {
-          bjmjpbndeil_ = null;
-          bjmjpbndeilBuilder_ = null;
+          currentAction_ = null;
+          currentActionBuilder_ = null;
         }
-        jkdlhblamma_ = false;
+        lockstepAck_ = false;
 
-        gageimmlnbj_ = 0;
+        lastUpdatedTurn_ = 0;
 
-        if (ififhafklnkBuilder_ == null) {
-          ififhafklnk_ = null;
+        if (minigameActionBuilder_ == null) {
+          minigameAction_ = null;
         } else {
-          ififhafklnk_ = null;
-          ififhafklnkBuilder_ = null;
+          minigameAction_ = null;
+          minigameActionBuilder_ = null;
         }
-        jmcnhebeepn_ = 0L;
+        quickSwapAvailableMs_ = 0L;
 
-        jojoifnmopa_ = 0;
+        minigameDefenseChancesLeft_ = 0;
 
-        kabdkaelnce_ = "";
+        combatNpcPersonalityId_ = "";
 
-        pmhidaplcnm_ = 0;
+        timesCombatActionsCalled_ = 0;
 
-        dmmcbhcceml_ = 0L;
+        field1_ = 0L;
 
-        mljngmnekij_ = 0;
+        field2_ = 0;
 
         return this;
       }
@@ -1463,52 +1463,52 @@ private static final long serialVersionUID = 0L;
       public POGOProtos.Rpc.CombatProto.CombatPlayerProto buildPartial() {
         POGOProtos.Rpc.CombatProto.CombatPlayerProto result = new POGOProtos.Rpc.CombatProto.CombatPlayerProto(this);
         int from_bitField0_ = bitField0_;
-        if (jeenccbbffkBuilder_ == null) {
-          result.jeenccbbffk_ = jeenccbbffk_;
+        if (publicProfileBuilder_ == null) {
+          result.publicProfile_ = publicProfile_;
         } else {
-          result.jeenccbbffk_ = jeenccbbffkBuilder_.build();
+          result.publicProfile_ = publicProfileBuilder_.build();
         }
-        if (jjjmbcihbliBuilder_ == null) {
-          result.jjjmbcihbli_ = jjjmbcihbli_;
+        if (activePokemonBuilder_ == null) {
+          result.activePokemon_ = activePokemon_;
         } else {
-          result.jjjmbcihbli_ = jjjmbcihbliBuilder_.build();
+          result.activePokemon_ = activePokemonBuilder_.build();
         }
-        if (mnnafnmiaafBuilder_ == null) {
+        if (reservePokemonBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            mnnafnmiaaf_ = java.util.Collections.unmodifiableList(mnnafnmiaaf_);
+            reservePokemon_ = java.util.Collections.unmodifiableList(reservePokemon_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.mnnafnmiaaf_ = mnnafnmiaaf_;
+          result.reservePokemon_ = reservePokemon_;
         } else {
-          result.mnnafnmiaaf_ = mnnafnmiaafBuilder_.build();
+          result.reservePokemon_ = reservePokemonBuilder_.build();
         }
-        if (mhnodplodjhBuilder_ == null) {
+        if (faintedPokemonBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0)) {
-            mhnodplodjh_ = java.util.Collections.unmodifiableList(mhnodplodjh_);
+            faintedPokemon_ = java.util.Collections.unmodifiableList(faintedPokemon_);
             bitField0_ = (bitField0_ & ~0x00000002);
           }
-          result.mhnodplodjh_ = mhnodplodjh_;
+          result.faintedPokemon_ = faintedPokemon_;
         } else {
-          result.mhnodplodjh_ = mhnodplodjhBuilder_.build();
+          result.faintedPokemon_ = faintedPokemonBuilder_.build();
         }
-        if (bjmjpbndeilBuilder_ == null) {
-          result.bjmjpbndeil_ = bjmjpbndeil_;
+        if (currentActionBuilder_ == null) {
+          result.currentAction_ = currentAction_;
         } else {
-          result.bjmjpbndeil_ = bjmjpbndeilBuilder_.build();
+          result.currentAction_ = currentActionBuilder_.build();
         }
-        result.jkdlhblamma_ = jkdlhblamma_;
-        result.gageimmlnbj_ = gageimmlnbj_;
-        if (ififhafklnkBuilder_ == null) {
-          result.ififhafklnk_ = ififhafklnk_;
+        result.lockstepAck_ = lockstepAck_;
+        result.lastUpdatedTurn_ = lastUpdatedTurn_;
+        if (minigameActionBuilder_ == null) {
+          result.minigameAction_ = minigameAction_;
         } else {
-          result.ififhafklnk_ = ififhafklnkBuilder_.build();
+          result.minigameAction_ = minigameActionBuilder_.build();
         }
-        result.jmcnhebeepn_ = jmcnhebeepn_;
-        result.jojoifnmopa_ = jojoifnmopa_;
-        result.kabdkaelnce_ = kabdkaelnce_;
-        result.pmhidaplcnm_ = pmhidaplcnm_;
-        result.dmmcbhcceml_ = dmmcbhcceml_;
-        result.mljngmnekij_ = mljngmnekij_;
+        result.quickSwapAvailableMs_ = quickSwapAvailableMs_;
+        result.minigameDefenseChancesLeft_ = minigameDefenseChancesLeft_;
+        result.combatNpcPersonalityId_ = combatNpcPersonalityId_;
+        result.timesCombatActionsCalled_ = timesCombatActionsCalled_;
+        result.field1_ = field1_;
+        result.field2_ = field2_;
         onBuilt();
         return result;
       }
@@ -1557,94 +1557,94 @@ private static final long serialVersionUID = 0L;
 
       public Builder mergeFrom(POGOProtos.Rpc.CombatProto.CombatPlayerProto other) {
         if (other == POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance()) return this;
-        if (other.hasJeenccbbffk()) {
-          mergeJeenccbbffk(other.getJeenccbbffk());
+        if (other.hasPublicProfile()) {
+          mergePublicProfile(other.getPublicProfile());
         }
-        if (other.hasJjjmbcihbli()) {
-          mergeJjjmbcihbli(other.getJjjmbcihbli());
+        if (other.hasActivePokemon()) {
+          mergeActivePokemon(other.getActivePokemon());
         }
-        if (mnnafnmiaafBuilder_ == null) {
-          if (!other.mnnafnmiaaf_.isEmpty()) {
-            if (mnnafnmiaaf_.isEmpty()) {
-              mnnafnmiaaf_ = other.mnnafnmiaaf_;
+        if (reservePokemonBuilder_ == null) {
+          if (!other.reservePokemon_.isEmpty()) {
+            if (reservePokemon_.isEmpty()) {
+              reservePokemon_ = other.reservePokemon_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureMnnafnmiaafIsMutable();
-              mnnafnmiaaf_.addAll(other.mnnafnmiaaf_);
+              ensureReservePokemonIsMutable();
+              reservePokemon_.addAll(other.reservePokemon_);
             }
             onChanged();
           }
         } else {
-          if (!other.mnnafnmiaaf_.isEmpty()) {
-            if (mnnafnmiaafBuilder_.isEmpty()) {
-              mnnafnmiaafBuilder_.dispose();
-              mnnafnmiaafBuilder_ = null;
-              mnnafnmiaaf_ = other.mnnafnmiaaf_;
+          if (!other.reservePokemon_.isEmpty()) {
+            if (reservePokemonBuilder_.isEmpty()) {
+              reservePokemonBuilder_.dispose();
+              reservePokemonBuilder_ = null;
+              reservePokemon_ = other.reservePokemon_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              mnnafnmiaafBuilder_ = 
+              reservePokemonBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getMnnafnmiaafFieldBuilder() : null;
+                   getReservePokemonFieldBuilder() : null;
             } else {
-              mnnafnmiaafBuilder_.addAllMessages(other.mnnafnmiaaf_);
+              reservePokemonBuilder_.addAllMessages(other.reservePokemon_);
             }
           }
         }
-        if (mhnodplodjhBuilder_ == null) {
-          if (!other.mhnodplodjh_.isEmpty()) {
-            if (mhnodplodjh_.isEmpty()) {
-              mhnodplodjh_ = other.mhnodplodjh_;
+        if (faintedPokemonBuilder_ == null) {
+          if (!other.faintedPokemon_.isEmpty()) {
+            if (faintedPokemon_.isEmpty()) {
+              faintedPokemon_ = other.faintedPokemon_;
               bitField0_ = (bitField0_ & ~0x00000002);
             } else {
-              ensureMhnodplodjhIsMutable();
-              mhnodplodjh_.addAll(other.mhnodplodjh_);
+              ensureFaintedPokemonIsMutable();
+              faintedPokemon_.addAll(other.faintedPokemon_);
             }
             onChanged();
           }
         } else {
-          if (!other.mhnodplodjh_.isEmpty()) {
-            if (mhnodplodjhBuilder_.isEmpty()) {
-              mhnodplodjhBuilder_.dispose();
-              mhnodplodjhBuilder_ = null;
-              mhnodplodjh_ = other.mhnodplodjh_;
+          if (!other.faintedPokemon_.isEmpty()) {
+            if (faintedPokemonBuilder_.isEmpty()) {
+              faintedPokemonBuilder_.dispose();
+              faintedPokemonBuilder_ = null;
+              faintedPokemon_ = other.faintedPokemon_;
               bitField0_ = (bitField0_ & ~0x00000002);
-              mhnodplodjhBuilder_ = 
+              faintedPokemonBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getMhnodplodjhFieldBuilder() : null;
+                   getFaintedPokemonFieldBuilder() : null;
             } else {
-              mhnodplodjhBuilder_.addAllMessages(other.mhnodplodjh_);
+              faintedPokemonBuilder_.addAllMessages(other.faintedPokemon_);
             }
           }
         }
-        if (other.hasBjmjpbndeil()) {
-          mergeBjmjpbndeil(other.getBjmjpbndeil());
+        if (other.hasCurrentAction()) {
+          mergeCurrentAction(other.getCurrentAction());
         }
-        if (other.getJkdlhblamma() != false) {
-          setJkdlhblamma(other.getJkdlhblamma());
+        if (other.getLockstepAck() != false) {
+          setLockstepAck(other.getLockstepAck());
         }
-        if (other.getGageimmlnbj() != 0) {
-          setGageimmlnbj(other.getGageimmlnbj());
+        if (other.getLastUpdatedTurn() != 0) {
+          setLastUpdatedTurn(other.getLastUpdatedTurn());
         }
-        if (other.hasIfifhafklnk()) {
-          mergeIfifhafklnk(other.getIfifhafklnk());
+        if (other.hasMinigameAction()) {
+          mergeMinigameAction(other.getMinigameAction());
         }
-        if (other.getJmcnhebeepn() != 0L) {
-          setJmcnhebeepn(other.getJmcnhebeepn());
+        if (other.getQuickSwapAvailableMs() != 0L) {
+          setQuickSwapAvailableMs(other.getQuickSwapAvailableMs());
         }
-        if (other.getJojoifnmopa() != 0) {
-          setJojoifnmopa(other.getJojoifnmopa());
+        if (other.getMinigameDefenseChancesLeft() != 0) {
+          setMinigameDefenseChancesLeft(other.getMinigameDefenseChancesLeft());
         }
-        if (!other.getKabdkaelnce().isEmpty()) {
-          kabdkaelnce_ = other.kabdkaelnce_;
+        if (!other.getCombatNpcPersonalityId().isEmpty()) {
+          combatNpcPersonalityId_ = other.combatNpcPersonalityId_;
           onChanged();
         }
-        if (other.getPmhidaplcnm() != 0) {
-          setPmhidaplcnm(other.getPmhidaplcnm());
+        if (other.getTimesCombatActionsCalled() != 0) {
+          setTimesCombatActionsCalled(other.getTimesCombatActionsCalled());
         }
-        if (other.getDmmcbhcceml() != 0L) {
-          setDmmcbhcceml(other.getDmmcbhcceml());
+        if (other.getField1() != 0L) {
+          setField1(other.getField1());
         }
-        if (other.getMljngmnekij() != 0) {
-          setMljngmnekij(other.getMljngmnekij());
+        if (other.getField2() != 0) {
+          setField2(other.getField2());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1676,1251 +1676,1251 @@ private static final long serialVersionUID = 0L;
       }
       private int bitField0_;
 
-      private POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk_;
+      private POGOProtos.Rpc.PlayerPublicProfileProto publicProfile_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.PlayerPublicProfileProto, POGOProtos.Rpc.PlayerPublicProfileProto.Builder, POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder> jeenccbbffkBuilder_;
+          POGOProtos.Rpc.PlayerPublicProfileProto, POGOProtos.Rpc.PlayerPublicProfileProto.Builder, POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder> publicProfileBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
-       * @return Whether the jeenccbbffk field is set.
+       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
+       * @return Whether the publicProfile field is set.
        */
-      public boolean hasJeenccbbffk() {
-        return jeenccbbffkBuilder_ != null || jeenccbbffk_ != null;
+      public boolean hasPublicProfile() {
+        return publicProfileBuilder_ != null || publicProfile_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
-       * @return The jeenccbbffk.
+       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
+       * @return The publicProfile.
        */
-      public POGOProtos.Rpc.PlayerPublicProfileProto getJeenccbbffk() {
-        if (jeenccbbffkBuilder_ == null) {
-          return jeenccbbffk_ == null ? POGOProtos.Rpc.PlayerPublicProfileProto.getDefaultInstance() : jeenccbbffk_;
+      public POGOProtos.Rpc.PlayerPublicProfileProto getPublicProfile() {
+        if (publicProfileBuilder_ == null) {
+          return publicProfile_ == null ? POGOProtos.Rpc.PlayerPublicProfileProto.getDefaultInstance() : publicProfile_;
         } else {
-          return jeenccbbffkBuilder_.getMessage();
+          return publicProfileBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
        */
-      public Builder setJeenccbbffk(POGOProtos.Rpc.PlayerPublicProfileProto value) {
-        if (jeenccbbffkBuilder_ == null) {
+      public Builder setPublicProfile(POGOProtos.Rpc.PlayerPublicProfileProto value) {
+        if (publicProfileBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          jeenccbbffk_ = value;
+          publicProfile_ = value;
           onChanged();
         } else {
-          jeenccbbffkBuilder_.setMessage(value);
+          publicProfileBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
        */
-      public Builder setJeenccbbffk(
+      public Builder setPublicProfile(
           POGOProtos.Rpc.PlayerPublicProfileProto.Builder builderForValue) {
-        if (jeenccbbffkBuilder_ == null) {
-          jeenccbbffk_ = builderForValue.build();
+        if (publicProfileBuilder_ == null) {
+          publicProfile_ = builderForValue.build();
           onChanged();
         } else {
-          jeenccbbffkBuilder_.setMessage(builderForValue.build());
+          publicProfileBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
        */
-      public Builder mergeJeenccbbffk(POGOProtos.Rpc.PlayerPublicProfileProto value) {
-        if (jeenccbbffkBuilder_ == null) {
-          if (jeenccbbffk_ != null) {
-            jeenccbbffk_ =
-              POGOProtos.Rpc.PlayerPublicProfileProto.newBuilder(jeenccbbffk_).mergeFrom(value).buildPartial();
+      public Builder mergePublicProfile(POGOProtos.Rpc.PlayerPublicProfileProto value) {
+        if (publicProfileBuilder_ == null) {
+          if (publicProfile_ != null) {
+            publicProfile_ =
+              POGOProtos.Rpc.PlayerPublicProfileProto.newBuilder(publicProfile_).mergeFrom(value).buildPartial();
           } else {
-            jeenccbbffk_ = value;
+            publicProfile_ = value;
           }
           onChanged();
         } else {
-          jeenccbbffkBuilder_.mergeFrom(value);
+          publicProfileBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
        */
-      public Builder clearJeenccbbffk() {
-        if (jeenccbbffkBuilder_ == null) {
-          jeenccbbffk_ = null;
+      public Builder clearPublicProfile() {
+        if (publicProfileBuilder_ == null) {
+          publicProfile_ = null;
           onChanged();
         } else {
-          jeenccbbffk_ = null;
-          jeenccbbffkBuilder_ = null;
+          publicProfile_ = null;
+          publicProfileBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
        */
-      public POGOProtos.Rpc.PlayerPublicProfileProto.Builder getJeenccbbffkBuilder() {
+      public POGOProtos.Rpc.PlayerPublicProfileProto.Builder getPublicProfileBuilder() {
         
         onChanged();
-        return getJeenccbbffkFieldBuilder().getBuilder();
+        return getPublicProfileFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
        */
-      public POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder getJeenccbbffkOrBuilder() {
-        if (jeenccbbffkBuilder_ != null) {
-          return jeenccbbffkBuilder_.getMessageOrBuilder();
+      public POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder getPublicProfileOrBuilder() {
+        if (publicProfileBuilder_ != null) {
+          return publicProfileBuilder_.getMessageOrBuilder();
         } else {
-          return jeenccbbffk_ == null ?
-              POGOProtos.Rpc.PlayerPublicProfileProto.getDefaultInstance() : jeenccbbffk_;
+          return publicProfile_ == null ?
+              POGOProtos.Rpc.PlayerPublicProfileProto.getDefaultInstance() : publicProfile_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto jeenccbbffk = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerPublicProfileProto public_profile = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.PlayerPublicProfileProto, POGOProtos.Rpc.PlayerPublicProfileProto.Builder, POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder> 
-          getJeenccbbffkFieldBuilder() {
-        if (jeenccbbffkBuilder_ == null) {
-          jeenccbbffkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getPublicProfileFieldBuilder() {
+        if (publicProfileBuilder_ == null) {
+          publicProfileBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.PlayerPublicProfileProto, POGOProtos.Rpc.PlayerPublicProfileProto.Builder, POGOProtos.Rpc.PlayerPublicProfileProtoOrBuilder>(
-                  getJeenccbbffk(),
+                  getPublicProfile(),
                   getParentForChildren(),
                   isClean());
-          jeenccbbffk_ = null;
+          publicProfile_ = null;
         }
-        return jeenccbbffkBuilder_;
+        return publicProfileBuilder_;
       }
 
-      private POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli_;
+      private POGOProtos.Rpc.CombatProto.CombatPokemonProto activePokemon_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> jjjmbcihbliBuilder_;
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> activePokemonBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
-       * @return Whether the jjjmbcihbli field is set.
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
+       * @return Whether the activePokemon field is set.
        */
-      public boolean hasJjjmbcihbli() {
-        return jjjmbcihbliBuilder_ != null || jjjmbcihbli_ != null;
+      public boolean hasActivePokemon() {
+        return activePokemonBuilder_ != null || activePokemon_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
-       * @return The jjjmbcihbli.
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
+       * @return The activePokemon.
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProto getJjjmbcihbli() {
-        if (jjjmbcihbliBuilder_ == null) {
-          return jjjmbcihbli_ == null ? POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance() : jjjmbcihbli_;
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto getActivePokemon() {
+        if (activePokemonBuilder_ == null) {
+          return activePokemon_ == null ? POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance() : activePokemon_;
         } else {
-          return jjjmbcihbliBuilder_.getMessage();
+          return activePokemonBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
        */
-      public Builder setJjjmbcihbli(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
-        if (jjjmbcihbliBuilder_ == null) {
+      public Builder setActivePokemon(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
+        if (activePokemonBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          jjjmbcihbli_ = value;
+          activePokemon_ = value;
           onChanged();
         } else {
-          jjjmbcihbliBuilder_.setMessage(value);
+          activePokemonBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
        */
-      public Builder setJjjmbcihbli(
+      public Builder setActivePokemon(
           POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
-        if (jjjmbcihbliBuilder_ == null) {
-          jjjmbcihbli_ = builderForValue.build();
+        if (activePokemonBuilder_ == null) {
+          activePokemon_ = builderForValue.build();
           onChanged();
         } else {
-          jjjmbcihbliBuilder_.setMessage(builderForValue.build());
+          activePokemonBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
        */
-      public Builder mergeJjjmbcihbli(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
-        if (jjjmbcihbliBuilder_ == null) {
-          if (jjjmbcihbli_ != null) {
-            jjjmbcihbli_ =
-              POGOProtos.Rpc.CombatProto.CombatPokemonProto.newBuilder(jjjmbcihbli_).mergeFrom(value).buildPartial();
+      public Builder mergeActivePokemon(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
+        if (activePokemonBuilder_ == null) {
+          if (activePokemon_ != null) {
+            activePokemon_ =
+              POGOProtos.Rpc.CombatProto.CombatPokemonProto.newBuilder(activePokemon_).mergeFrom(value).buildPartial();
           } else {
-            jjjmbcihbli_ = value;
+            activePokemon_ = value;
           }
           onChanged();
         } else {
-          jjjmbcihbliBuilder_.mergeFrom(value);
+          activePokemonBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
        */
-      public Builder clearJjjmbcihbli() {
-        if (jjjmbcihbliBuilder_ == null) {
-          jjjmbcihbli_ = null;
+      public Builder clearActivePokemon() {
+        if (activePokemonBuilder_ == null) {
+          activePokemon_ = null;
           onChanged();
         } else {
-          jjjmbcihbli_ = null;
-          jjjmbcihbliBuilder_ = null;
+          activePokemon_ = null;
+          activePokemonBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder getJjjmbcihbliBuilder() {
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder getActivePokemonBuilder() {
         
         onChanged();
-        return getJjjmbcihbliFieldBuilder().getBuilder();
+        return getActivePokemonFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getJjjmbcihbliOrBuilder() {
-        if (jjjmbcihbliBuilder_ != null) {
-          return jjjmbcihbliBuilder_.getMessageOrBuilder();
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getActivePokemonOrBuilder() {
+        if (activePokemonBuilder_ != null) {
+          return activePokemonBuilder_.getMessageOrBuilder();
         } else {
-          return jjjmbcihbli_ == null ?
-              POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance() : jjjmbcihbli_;
+          return activePokemon_ == null ?
+              POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance() : activePokemon_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto jjjmbcihbli = 2;</code>
+       * <code>.POGOProtos.Rpc.CombatProto.CombatPokemonProto active_pokemon = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
-          getJjjmbcihbliFieldBuilder() {
-        if (jjjmbcihbliBuilder_ == null) {
-          jjjmbcihbliBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getActivePokemonFieldBuilder() {
+        if (activePokemonBuilder_ == null) {
+          activePokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder>(
-                  getJjjmbcihbli(),
+                  getActivePokemon(),
                   getParentForChildren(),
                   isClean());
-          jjjmbcihbli_ = null;
+          activePokemon_ = null;
         }
-        return jjjmbcihbliBuilder_;
+        return activePokemonBuilder_;
       }
 
-      private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> mnnafnmiaaf_ =
+      private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> reservePokemon_ =
         java.util.Collections.emptyList();
-      private void ensureMnnafnmiaafIsMutable() {
+      private void ensureReservePokemonIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          mnnafnmiaaf_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>(mnnafnmiaaf_);
+          reservePokemon_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>(reservePokemon_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> mnnafnmiaafBuilder_;
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> reservePokemonBuilder_;
 
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getMnnafnmiaafList() {
-        if (mnnafnmiaafBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(mnnafnmiaaf_);
+      public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getReservePokemonList() {
+        if (reservePokemonBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(reservePokemon_);
         } else {
-          return mnnafnmiaafBuilder_.getMessageList();
+          return reservePokemonBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public int getMnnafnmiaafCount() {
-        if (mnnafnmiaafBuilder_ == null) {
-          return mnnafnmiaaf_.size();
+      public int getReservePokemonCount() {
+        if (reservePokemonBuilder_ == null) {
+          return reservePokemon_.size();
         } else {
-          return mnnafnmiaafBuilder_.getCount();
+          return reservePokemonBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProto getMnnafnmiaaf(int index) {
-        if (mnnafnmiaafBuilder_ == null) {
-          return mnnafnmiaaf_.get(index);
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto getReservePokemon(int index) {
+        if (reservePokemonBuilder_ == null) {
+          return reservePokemon_.get(index);
         } else {
-          return mnnafnmiaafBuilder_.getMessage(index);
+          return reservePokemonBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public Builder setMnnafnmiaaf(
+      public Builder setReservePokemon(
           int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
-        if (mnnafnmiaafBuilder_ == null) {
+        if (reservePokemonBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMnnafnmiaafIsMutable();
-          mnnafnmiaaf_.set(index, value);
+          ensureReservePokemonIsMutable();
+          reservePokemon_.set(index, value);
           onChanged();
         } else {
-          mnnafnmiaafBuilder_.setMessage(index, value);
+          reservePokemonBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public Builder setMnnafnmiaaf(
+      public Builder setReservePokemon(
           int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
-        if (mnnafnmiaafBuilder_ == null) {
-          ensureMnnafnmiaafIsMutable();
-          mnnafnmiaaf_.set(index, builderForValue.build());
+        if (reservePokemonBuilder_ == null) {
+          ensureReservePokemonIsMutable();
+          reservePokemon_.set(index, builderForValue.build());
           onChanged();
         } else {
-          mnnafnmiaafBuilder_.setMessage(index, builderForValue.build());
+          reservePokemonBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public Builder addMnnafnmiaaf(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
-        if (mnnafnmiaafBuilder_ == null) {
+      public Builder addReservePokemon(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
+        if (reservePokemonBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMnnafnmiaafIsMutable();
-          mnnafnmiaaf_.add(value);
+          ensureReservePokemonIsMutable();
+          reservePokemon_.add(value);
           onChanged();
         } else {
-          mnnafnmiaafBuilder_.addMessage(value);
+          reservePokemonBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public Builder addMnnafnmiaaf(
+      public Builder addReservePokemon(
           int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
-        if (mnnafnmiaafBuilder_ == null) {
+        if (reservePokemonBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMnnafnmiaafIsMutable();
-          mnnafnmiaaf_.add(index, value);
+          ensureReservePokemonIsMutable();
+          reservePokemon_.add(index, value);
           onChanged();
         } else {
-          mnnafnmiaafBuilder_.addMessage(index, value);
+          reservePokemonBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public Builder addMnnafnmiaaf(
+      public Builder addReservePokemon(
           POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
-        if (mnnafnmiaafBuilder_ == null) {
-          ensureMnnafnmiaafIsMutable();
-          mnnafnmiaaf_.add(builderForValue.build());
+        if (reservePokemonBuilder_ == null) {
+          ensureReservePokemonIsMutable();
+          reservePokemon_.add(builderForValue.build());
           onChanged();
         } else {
-          mnnafnmiaafBuilder_.addMessage(builderForValue.build());
+          reservePokemonBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public Builder addMnnafnmiaaf(
+      public Builder addReservePokemon(
           int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
-        if (mnnafnmiaafBuilder_ == null) {
-          ensureMnnafnmiaafIsMutable();
-          mnnafnmiaaf_.add(index, builderForValue.build());
+        if (reservePokemonBuilder_ == null) {
+          ensureReservePokemonIsMutable();
+          reservePokemon_.add(index, builderForValue.build());
           onChanged();
         } else {
-          mnnafnmiaafBuilder_.addMessage(index, builderForValue.build());
+          reservePokemonBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public Builder addAllMnnafnmiaaf(
+      public Builder addAllReservePokemon(
           java.lang.Iterable<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProto> values) {
-        if (mnnafnmiaafBuilder_ == null) {
-          ensureMnnafnmiaafIsMutable();
+        if (reservePokemonBuilder_ == null) {
+          ensureReservePokemonIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, mnnafnmiaaf_);
+              values, reservePokemon_);
           onChanged();
         } else {
-          mnnafnmiaafBuilder_.addAllMessages(values);
+          reservePokemonBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public Builder clearMnnafnmiaaf() {
-        if (mnnafnmiaafBuilder_ == null) {
-          mnnafnmiaaf_ = java.util.Collections.emptyList();
+      public Builder clearReservePokemon() {
+        if (reservePokemonBuilder_ == null) {
+          reservePokemon_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          mnnafnmiaafBuilder_.clear();
+          reservePokemonBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public Builder removeMnnafnmiaaf(int index) {
-        if (mnnafnmiaafBuilder_ == null) {
-          ensureMnnafnmiaafIsMutable();
-          mnnafnmiaaf_.remove(index);
+      public Builder removeReservePokemon(int index) {
+        if (reservePokemonBuilder_ == null) {
+          ensureReservePokemonIsMutable();
+          reservePokemon_.remove(index);
           onChanged();
         } else {
-          mnnafnmiaafBuilder_.remove(index);
+          reservePokemonBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder getMnnafnmiaafBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder getReservePokemonBuilder(
           int index) {
-        return getMnnafnmiaafFieldBuilder().getBuilder(index);
+        return getReservePokemonFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMnnafnmiaafOrBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getReservePokemonOrBuilder(
           int index) {
-        if (mnnafnmiaafBuilder_ == null) {
-          return mnnafnmiaaf_.get(index);  } else {
-          return mnnafnmiaafBuilder_.getMessageOrBuilder(index);
+        if (reservePokemonBuilder_ == null) {
+          return reservePokemon_.get(index);  } else {
+          return reservePokemonBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
       public java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
-           getMnnafnmiaafOrBuilderList() {
-        if (mnnafnmiaafBuilder_ != null) {
-          return mnnafnmiaafBuilder_.getMessageOrBuilderList();
+           getReservePokemonOrBuilderList() {
+        if (reservePokemonBuilder_ != null) {
+          return reservePokemonBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(mnnafnmiaaf_);
+          return java.util.Collections.unmodifiableList(reservePokemon_);
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addMnnafnmiaafBuilder() {
-        return getMnnafnmiaafFieldBuilder().addBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addReservePokemonBuilder() {
+        return getReservePokemonFieldBuilder().addBuilder(
             POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance());
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addMnnafnmiaafBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addReservePokemonBuilder(
           int index) {
-        return getMnnafnmiaafFieldBuilder().addBuilder(
+        return getReservePokemonFieldBuilder().addBuilder(
             index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance());
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mnnafnmiaaf = 3;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto reserve_pokemon = 3;</code>
        */
       public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder> 
-           getMnnafnmiaafBuilderList() {
-        return getMnnafnmiaafFieldBuilder().getBuilderList();
+           getReservePokemonBuilderList() {
+        return getReservePokemonFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
-          getMnnafnmiaafFieldBuilder() {
-        if (mnnafnmiaafBuilder_ == null) {
-          mnnafnmiaafBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getReservePokemonFieldBuilder() {
+        if (reservePokemonBuilder_ == null) {
+          reservePokemonBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder>(
-                  mnnafnmiaaf_,
+                  reservePokemon_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          mnnafnmiaaf_ = null;
+          reservePokemon_ = null;
         }
-        return mnnafnmiaafBuilder_;
+        return reservePokemonBuilder_;
       }
 
-      private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> mhnodplodjh_ =
+      private java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> faintedPokemon_ =
         java.util.Collections.emptyList();
-      private void ensureMhnodplodjhIsMutable() {
+      private void ensureFaintedPokemonIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          mhnodplodjh_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>(mhnodplodjh_);
+          faintedPokemon_ = new java.util.ArrayList<POGOProtos.Rpc.CombatProto.CombatPokemonProto>(faintedPokemon_);
           bitField0_ |= 0x00000002;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> mhnodplodjhBuilder_;
+          POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> faintedPokemonBuilder_;
 
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getMhnodplodjhList() {
-        if (mhnodplodjhBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(mhnodplodjh_);
+      public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto> getFaintedPokemonList() {
+        if (faintedPokemonBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(faintedPokemon_);
         } else {
-          return mhnodplodjhBuilder_.getMessageList();
+          return faintedPokemonBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public int getMhnodplodjhCount() {
-        if (mhnodplodjhBuilder_ == null) {
-          return mhnodplodjh_.size();
+      public int getFaintedPokemonCount() {
+        if (faintedPokemonBuilder_ == null) {
+          return faintedPokemon_.size();
         } else {
-          return mhnodplodjhBuilder_.getCount();
+          return faintedPokemonBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProto getMhnodplodjh(int index) {
-        if (mhnodplodjhBuilder_ == null) {
-          return mhnodplodjh_.get(index);
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto getFaintedPokemon(int index) {
+        if (faintedPokemonBuilder_ == null) {
+          return faintedPokemon_.get(index);
         } else {
-          return mhnodplodjhBuilder_.getMessage(index);
+          return faintedPokemonBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public Builder setMhnodplodjh(
+      public Builder setFaintedPokemon(
           int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
-        if (mhnodplodjhBuilder_ == null) {
+        if (faintedPokemonBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMhnodplodjhIsMutable();
-          mhnodplodjh_.set(index, value);
+          ensureFaintedPokemonIsMutable();
+          faintedPokemon_.set(index, value);
           onChanged();
         } else {
-          mhnodplodjhBuilder_.setMessage(index, value);
+          faintedPokemonBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public Builder setMhnodplodjh(
+      public Builder setFaintedPokemon(
           int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
-        if (mhnodplodjhBuilder_ == null) {
-          ensureMhnodplodjhIsMutable();
-          mhnodplodjh_.set(index, builderForValue.build());
+        if (faintedPokemonBuilder_ == null) {
+          ensureFaintedPokemonIsMutable();
+          faintedPokemon_.set(index, builderForValue.build());
           onChanged();
         } else {
-          mhnodplodjhBuilder_.setMessage(index, builderForValue.build());
+          faintedPokemonBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public Builder addMhnodplodjh(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
-        if (mhnodplodjhBuilder_ == null) {
+      public Builder addFaintedPokemon(POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
+        if (faintedPokemonBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMhnodplodjhIsMutable();
-          mhnodplodjh_.add(value);
+          ensureFaintedPokemonIsMutable();
+          faintedPokemon_.add(value);
           onChanged();
         } else {
-          mhnodplodjhBuilder_.addMessage(value);
+          faintedPokemonBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public Builder addMhnodplodjh(
+      public Builder addFaintedPokemon(
           int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto value) {
-        if (mhnodplodjhBuilder_ == null) {
+        if (faintedPokemonBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMhnodplodjhIsMutable();
-          mhnodplodjh_.add(index, value);
+          ensureFaintedPokemonIsMutable();
+          faintedPokemon_.add(index, value);
           onChanged();
         } else {
-          mhnodplodjhBuilder_.addMessage(index, value);
+          faintedPokemonBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public Builder addMhnodplodjh(
+      public Builder addFaintedPokemon(
           POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
-        if (mhnodplodjhBuilder_ == null) {
-          ensureMhnodplodjhIsMutable();
-          mhnodplodjh_.add(builderForValue.build());
+        if (faintedPokemonBuilder_ == null) {
+          ensureFaintedPokemonIsMutable();
+          faintedPokemon_.add(builderForValue.build());
           onChanged();
         } else {
-          mhnodplodjhBuilder_.addMessage(builderForValue.build());
+          faintedPokemonBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public Builder addMhnodplodjh(
+      public Builder addFaintedPokemon(
           int index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder builderForValue) {
-        if (mhnodplodjhBuilder_ == null) {
-          ensureMhnodplodjhIsMutable();
-          mhnodplodjh_.add(index, builderForValue.build());
+        if (faintedPokemonBuilder_ == null) {
+          ensureFaintedPokemonIsMutable();
+          faintedPokemon_.add(index, builderForValue.build());
           onChanged();
         } else {
-          mhnodplodjhBuilder_.addMessage(index, builderForValue.build());
+          faintedPokemonBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public Builder addAllMhnodplodjh(
+      public Builder addAllFaintedPokemon(
           java.lang.Iterable<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProto> values) {
-        if (mhnodplodjhBuilder_ == null) {
-          ensureMhnodplodjhIsMutable();
+        if (faintedPokemonBuilder_ == null) {
+          ensureFaintedPokemonIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, mhnodplodjh_);
+              values, faintedPokemon_);
           onChanged();
         } else {
-          mhnodplodjhBuilder_.addAllMessages(values);
+          faintedPokemonBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public Builder clearMhnodplodjh() {
-        if (mhnodplodjhBuilder_ == null) {
-          mhnodplodjh_ = java.util.Collections.emptyList();
+      public Builder clearFaintedPokemon() {
+        if (faintedPokemonBuilder_ == null) {
+          faintedPokemon_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
-          mhnodplodjhBuilder_.clear();
+          faintedPokemonBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public Builder removeMhnodplodjh(int index) {
-        if (mhnodplodjhBuilder_ == null) {
-          ensureMhnodplodjhIsMutable();
-          mhnodplodjh_.remove(index);
+      public Builder removeFaintedPokemon(int index) {
+        if (faintedPokemonBuilder_ == null) {
+          ensureFaintedPokemonIsMutable();
+          faintedPokemon_.remove(index);
           onChanged();
         } else {
-          mhnodplodjhBuilder_.remove(index);
+          faintedPokemonBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder getMhnodplodjhBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder getFaintedPokemonBuilder(
           int index) {
-        return getMhnodplodjhFieldBuilder().getBuilder(index);
+        return getFaintedPokemonFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getMhnodplodjhOrBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder getFaintedPokemonOrBuilder(
           int index) {
-        if (mhnodplodjhBuilder_ == null) {
-          return mhnodplodjh_.get(index);  } else {
-          return mhnodplodjhBuilder_.getMessageOrBuilder(index);
+        if (faintedPokemonBuilder_ == null) {
+          return faintedPokemon_.get(index);  } else {
+          return faintedPokemonBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
       public java.util.List<? extends POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
-           getMhnodplodjhOrBuilderList() {
-        if (mhnodplodjhBuilder_ != null) {
-          return mhnodplodjhBuilder_.getMessageOrBuilderList();
+           getFaintedPokemonOrBuilderList() {
+        if (faintedPokemonBuilder_ != null) {
+          return faintedPokemonBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(mhnodplodjh_);
+          return java.util.Collections.unmodifiableList(faintedPokemon_);
         }
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addMhnodplodjhBuilder() {
-        return getMhnodplodjhFieldBuilder().addBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addFaintedPokemonBuilder() {
+        return getFaintedPokemonFieldBuilder().addBuilder(
             POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance());
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
-      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addMhnodplodjhBuilder(
+      public POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder addFaintedPokemonBuilder(
           int index) {
-        return getMhnodplodjhFieldBuilder().addBuilder(
+        return getFaintedPokemonFieldBuilder().addBuilder(
             index, POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance());
       }
       /**
-       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto mhnodplodjh = 4;</code>
+       * <code>repeated .POGOProtos.Rpc.CombatProto.CombatPokemonProto fainted_pokemon = 4;</code>
        */
       public java.util.List<POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder> 
-           getMhnodplodjhBuilderList() {
-        return getMhnodplodjhFieldBuilder().getBuilderList();
+           getFaintedPokemonBuilderList() {
+        return getFaintedPokemonFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
           POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder> 
-          getMhnodplodjhFieldBuilder() {
-        if (mhnodplodjhBuilder_ == null) {
-          mhnodplodjhBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+          getFaintedPokemonFieldBuilder() {
+        if (faintedPokemonBuilder_ == null) {
+          faintedPokemonBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               POGOProtos.Rpc.CombatProto.CombatPokemonProto, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder, POGOProtos.Rpc.CombatProto.CombatPokemonProtoOrBuilder>(
-                  mhnodplodjh_,
+                  faintedPokemon_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
-          mhnodplodjh_ = null;
+          faintedPokemon_ = null;
         }
-        return mhnodplodjhBuilder_;
+        return faintedPokemonBuilder_;
       }
 
-      private POGOProtos.Rpc.CombatActionProto bjmjpbndeil_;
+      private POGOProtos.Rpc.CombatActionProto currentAction_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> bjmjpbndeilBuilder_;
+          POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> currentActionBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
-       * @return Whether the bjmjpbndeil field is set.
+       * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
+       * @return Whether the currentAction field is set.
        */
-      public boolean hasBjmjpbndeil() {
-        return bjmjpbndeilBuilder_ != null || bjmjpbndeil_ != null;
+      public boolean hasCurrentAction() {
+        return currentActionBuilder_ != null || currentAction_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
-       * @return The bjmjpbndeil.
+       * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
+       * @return The currentAction.
        */
-      public POGOProtos.Rpc.CombatActionProto getBjmjpbndeil() {
-        if (bjmjpbndeilBuilder_ == null) {
-          return bjmjpbndeil_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : bjmjpbndeil_;
+      public POGOProtos.Rpc.CombatActionProto getCurrentAction() {
+        if (currentActionBuilder_ == null) {
+          return currentAction_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : currentAction_;
         } else {
-          return bjmjpbndeilBuilder_.getMessage();
+          return currentActionBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
        */
-      public Builder setBjmjpbndeil(POGOProtos.Rpc.CombatActionProto value) {
-        if (bjmjpbndeilBuilder_ == null) {
+      public Builder setCurrentAction(POGOProtos.Rpc.CombatActionProto value) {
+        if (currentActionBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          bjmjpbndeil_ = value;
+          currentAction_ = value;
           onChanged();
         } else {
-          bjmjpbndeilBuilder_.setMessage(value);
+          currentActionBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
        */
-      public Builder setBjmjpbndeil(
+      public Builder setCurrentAction(
           POGOProtos.Rpc.CombatActionProto.Builder builderForValue) {
-        if (bjmjpbndeilBuilder_ == null) {
-          bjmjpbndeil_ = builderForValue.build();
+        if (currentActionBuilder_ == null) {
+          currentAction_ = builderForValue.build();
           onChanged();
         } else {
-          bjmjpbndeilBuilder_.setMessage(builderForValue.build());
+          currentActionBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
        */
-      public Builder mergeBjmjpbndeil(POGOProtos.Rpc.CombatActionProto value) {
-        if (bjmjpbndeilBuilder_ == null) {
-          if (bjmjpbndeil_ != null) {
-            bjmjpbndeil_ =
-              POGOProtos.Rpc.CombatActionProto.newBuilder(bjmjpbndeil_).mergeFrom(value).buildPartial();
+      public Builder mergeCurrentAction(POGOProtos.Rpc.CombatActionProto value) {
+        if (currentActionBuilder_ == null) {
+          if (currentAction_ != null) {
+            currentAction_ =
+              POGOProtos.Rpc.CombatActionProto.newBuilder(currentAction_).mergeFrom(value).buildPartial();
           } else {
-            bjmjpbndeil_ = value;
+            currentAction_ = value;
           }
           onChanged();
         } else {
-          bjmjpbndeilBuilder_.mergeFrom(value);
+          currentActionBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
        */
-      public Builder clearBjmjpbndeil() {
-        if (bjmjpbndeilBuilder_ == null) {
-          bjmjpbndeil_ = null;
+      public Builder clearCurrentAction() {
+        if (currentActionBuilder_ == null) {
+          currentAction_ = null;
           onChanged();
         } else {
-          bjmjpbndeil_ = null;
-          bjmjpbndeilBuilder_ = null;
+          currentAction_ = null;
+          currentActionBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
        */
-      public POGOProtos.Rpc.CombatActionProto.Builder getBjmjpbndeilBuilder() {
+      public POGOProtos.Rpc.CombatActionProto.Builder getCurrentActionBuilder() {
         
         onChanged();
-        return getBjmjpbndeilFieldBuilder().getBuilder();
+        return getCurrentActionFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
        */
-      public POGOProtos.Rpc.CombatActionProtoOrBuilder getBjmjpbndeilOrBuilder() {
-        if (bjmjpbndeilBuilder_ != null) {
-          return bjmjpbndeilBuilder_.getMessageOrBuilder();
+      public POGOProtos.Rpc.CombatActionProtoOrBuilder getCurrentActionOrBuilder() {
+        if (currentActionBuilder_ != null) {
+          return currentActionBuilder_.getMessageOrBuilder();
         } else {
-          return bjmjpbndeil_ == null ?
-              POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : bjmjpbndeil_;
+          return currentAction_ == null ?
+              POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : currentAction_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto bjmjpbndeil = 5;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto current_action = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> 
-          getBjmjpbndeilFieldBuilder() {
-        if (bjmjpbndeilBuilder_ == null) {
-          bjmjpbndeilBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getCurrentActionFieldBuilder() {
+        if (currentActionBuilder_ == null) {
+          currentActionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder>(
-                  getBjmjpbndeil(),
+                  getCurrentAction(),
                   getParentForChildren(),
                   isClean());
-          bjmjpbndeil_ = null;
+          currentAction_ = null;
         }
-        return bjmjpbndeilBuilder_;
+        return currentActionBuilder_;
       }
 
-      private boolean jkdlhblamma_ ;
+      private boolean lockstepAck_ ;
       /**
-       * <code>bool jkdlhblamma = 6;</code>
-       * @return The jkdlhblamma.
+       * <code>bool lockstep_ack = 6;</code>
+       * @return The lockstepAck.
        */
       @java.lang.Override
-      public boolean getJkdlhblamma() {
-        return jkdlhblamma_;
+      public boolean getLockstepAck() {
+        return lockstepAck_;
       }
       /**
-       * <code>bool jkdlhblamma = 6;</code>
-       * @param value The jkdlhblamma to set.
+       * <code>bool lockstep_ack = 6;</code>
+       * @param value The lockstepAck to set.
        * @return This builder for chaining.
        */
-      public Builder setJkdlhblamma(boolean value) {
+      public Builder setLockstepAck(boolean value) {
         
-        jkdlhblamma_ = value;
+        lockstepAck_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool jkdlhblamma = 6;</code>
+       * <code>bool lockstep_ack = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJkdlhblamma() {
+      public Builder clearLockstepAck() {
         
-        jkdlhblamma_ = false;
+        lockstepAck_ = false;
         onChanged();
         return this;
       }
 
-      private int gageimmlnbj_ ;
+      private int lastUpdatedTurn_ ;
       /**
-       * <code>int32 gageimmlnbj = 7;</code>
-       * @return The gageimmlnbj.
+       * <code>int32 last_updated_turn = 7;</code>
+       * @return The lastUpdatedTurn.
        */
       @java.lang.Override
-      public int getGageimmlnbj() {
-        return gageimmlnbj_;
+      public int getLastUpdatedTurn() {
+        return lastUpdatedTurn_;
       }
       /**
-       * <code>int32 gageimmlnbj = 7;</code>
-       * @param value The gageimmlnbj to set.
+       * <code>int32 last_updated_turn = 7;</code>
+       * @param value The lastUpdatedTurn to set.
        * @return This builder for chaining.
        */
-      public Builder setGageimmlnbj(int value) {
+      public Builder setLastUpdatedTurn(int value) {
         
-        gageimmlnbj_ = value;
+        lastUpdatedTurn_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 gageimmlnbj = 7;</code>
+       * <code>int32 last_updated_turn = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGageimmlnbj() {
+      public Builder clearLastUpdatedTurn() {
         
-        gageimmlnbj_ = 0;
+        lastUpdatedTurn_ = 0;
         onChanged();
         return this;
       }
 
-      private POGOProtos.Rpc.CombatActionProto ififhafklnk_;
+      private POGOProtos.Rpc.CombatActionProto minigameAction_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> ififhafklnkBuilder_;
+          POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> minigameActionBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
-       * @return Whether the ififhafklnk field is set.
+       * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
+       * @return Whether the minigameAction field is set.
        */
-      public boolean hasIfifhafklnk() {
-        return ififhafklnkBuilder_ != null || ififhafklnk_ != null;
+      public boolean hasMinigameAction() {
+        return minigameActionBuilder_ != null || minigameAction_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
-       * @return The ififhafklnk.
+       * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
+       * @return The minigameAction.
        */
-      public POGOProtos.Rpc.CombatActionProto getIfifhafklnk() {
-        if (ififhafklnkBuilder_ == null) {
-          return ififhafklnk_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : ififhafklnk_;
+      public POGOProtos.Rpc.CombatActionProto getMinigameAction() {
+        if (minigameActionBuilder_ == null) {
+          return minigameAction_ == null ? POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : minigameAction_;
         } else {
-          return ififhafklnkBuilder_.getMessage();
+          return minigameActionBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
        */
-      public Builder setIfifhafklnk(POGOProtos.Rpc.CombatActionProto value) {
-        if (ififhafklnkBuilder_ == null) {
+      public Builder setMinigameAction(POGOProtos.Rpc.CombatActionProto value) {
+        if (minigameActionBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ififhafklnk_ = value;
+          minigameAction_ = value;
           onChanged();
         } else {
-          ififhafklnkBuilder_.setMessage(value);
+          minigameActionBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
        */
-      public Builder setIfifhafklnk(
+      public Builder setMinigameAction(
           POGOProtos.Rpc.CombatActionProto.Builder builderForValue) {
-        if (ififhafklnkBuilder_ == null) {
-          ififhafklnk_ = builderForValue.build();
+        if (minigameActionBuilder_ == null) {
+          minigameAction_ = builderForValue.build();
           onChanged();
         } else {
-          ififhafklnkBuilder_.setMessage(builderForValue.build());
+          minigameActionBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
        */
-      public Builder mergeIfifhafklnk(POGOProtos.Rpc.CombatActionProto value) {
-        if (ififhafklnkBuilder_ == null) {
-          if (ififhafklnk_ != null) {
-            ififhafklnk_ =
-              POGOProtos.Rpc.CombatActionProto.newBuilder(ififhafklnk_).mergeFrom(value).buildPartial();
+      public Builder mergeMinigameAction(POGOProtos.Rpc.CombatActionProto value) {
+        if (minigameActionBuilder_ == null) {
+          if (minigameAction_ != null) {
+            minigameAction_ =
+              POGOProtos.Rpc.CombatActionProto.newBuilder(minigameAction_).mergeFrom(value).buildPartial();
           } else {
-            ififhafklnk_ = value;
+            minigameAction_ = value;
           }
           onChanged();
         } else {
-          ififhafklnkBuilder_.mergeFrom(value);
+          minigameActionBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
        */
-      public Builder clearIfifhafklnk() {
-        if (ififhafklnkBuilder_ == null) {
-          ififhafklnk_ = null;
+      public Builder clearMinigameAction() {
+        if (minigameActionBuilder_ == null) {
+          minigameAction_ = null;
           onChanged();
         } else {
-          ififhafklnk_ = null;
-          ififhafklnkBuilder_ = null;
+          minigameAction_ = null;
+          minigameActionBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
        */
-      public POGOProtos.Rpc.CombatActionProto.Builder getIfifhafklnkBuilder() {
+      public POGOProtos.Rpc.CombatActionProto.Builder getMinigameActionBuilder() {
         
         onChanged();
-        return getIfifhafklnkFieldBuilder().getBuilder();
+        return getMinigameActionFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
        */
-      public POGOProtos.Rpc.CombatActionProtoOrBuilder getIfifhafklnkOrBuilder() {
-        if (ififhafklnkBuilder_ != null) {
-          return ififhafklnkBuilder_.getMessageOrBuilder();
+      public POGOProtos.Rpc.CombatActionProtoOrBuilder getMinigameActionOrBuilder() {
+        if (minigameActionBuilder_ != null) {
+          return minigameActionBuilder_.getMessageOrBuilder();
         } else {
-          return ififhafklnk_ == null ?
-              POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : ififhafklnk_;
+          return minigameAction_ == null ?
+              POGOProtos.Rpc.CombatActionProto.getDefaultInstance() : minigameAction_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.CombatActionProto ififhafklnk = 8;</code>
+       * <code>.POGOProtos.Rpc.CombatActionProto minigame_action = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder> 
-          getIfifhafklnkFieldBuilder() {
-        if (ififhafklnkBuilder_ == null) {
-          ififhafklnkBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getMinigameActionFieldBuilder() {
+        if (minigameActionBuilder_ == null) {
+          minigameActionBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.CombatActionProto, POGOProtos.Rpc.CombatActionProto.Builder, POGOProtos.Rpc.CombatActionProtoOrBuilder>(
-                  getIfifhafklnk(),
+                  getMinigameAction(),
                   getParentForChildren(),
                   isClean());
-          ififhafklnk_ = null;
+          minigameAction_ = null;
         }
-        return ififhafklnkBuilder_;
+        return minigameActionBuilder_;
       }
 
-      private long jmcnhebeepn_ ;
+      private long quickSwapAvailableMs_ ;
       /**
-       * <code>int64 jmcnhebeepn = 9;</code>
-       * @return The jmcnhebeepn.
+       * <code>int64 quick_swap_available_ms = 9;</code>
+       * @return The quickSwapAvailableMs.
        */
       @java.lang.Override
-      public long getJmcnhebeepn() {
-        return jmcnhebeepn_;
+      public long getQuickSwapAvailableMs() {
+        return quickSwapAvailableMs_;
       }
       /**
-       * <code>int64 jmcnhebeepn = 9;</code>
-       * @param value The jmcnhebeepn to set.
+       * <code>int64 quick_swap_available_ms = 9;</code>
+       * @param value The quickSwapAvailableMs to set.
        * @return This builder for chaining.
        */
-      public Builder setJmcnhebeepn(long value) {
+      public Builder setQuickSwapAvailableMs(long value) {
         
-        jmcnhebeepn_ = value;
+        quickSwapAvailableMs_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 jmcnhebeepn = 9;</code>
+       * <code>int64 quick_swap_available_ms = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJmcnhebeepn() {
+      public Builder clearQuickSwapAvailableMs() {
         
-        jmcnhebeepn_ = 0L;
+        quickSwapAvailableMs_ = 0L;
         onChanged();
         return this;
       }
 
-      private int jojoifnmopa_ ;
+      private int minigameDefenseChancesLeft_ ;
       /**
-       * <code>int32 jojoifnmopa = 10;</code>
-       * @return The jojoifnmopa.
+       * <code>int32 minigame_defense_chances_left = 10;</code>
+       * @return The minigameDefenseChancesLeft.
        */
       @java.lang.Override
-      public int getJojoifnmopa() {
-        return jojoifnmopa_;
+      public int getMinigameDefenseChancesLeft() {
+        return minigameDefenseChancesLeft_;
       }
       /**
-       * <code>int32 jojoifnmopa = 10;</code>
-       * @param value The jojoifnmopa to set.
+       * <code>int32 minigame_defense_chances_left = 10;</code>
+       * @param value The minigameDefenseChancesLeft to set.
        * @return This builder for chaining.
        */
-      public Builder setJojoifnmopa(int value) {
+      public Builder setMinigameDefenseChancesLeft(int value) {
         
-        jojoifnmopa_ = value;
+        minigameDefenseChancesLeft_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 jojoifnmopa = 10;</code>
+       * <code>int32 minigame_defense_chances_left = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJojoifnmopa() {
+      public Builder clearMinigameDefenseChancesLeft() {
         
-        jojoifnmopa_ = 0;
+        minigameDefenseChancesLeft_ = 0;
         onChanged();
         return this;
       }
 
-      private java.lang.Object kabdkaelnce_ = "";
+      private java.lang.Object combatNpcPersonalityId_ = "";
       /**
-       * <code>string kabdkaelnce = 11;</code>
-       * @return The kabdkaelnce.
+       * <code>string combat_npc_personality_id = 11;</code>
+       * @return The combatNpcPersonalityId.
        */
-      public java.lang.String getKabdkaelnce() {
-        java.lang.Object ref = kabdkaelnce_;
+      public java.lang.String getCombatNpcPersonalityId() {
+        java.lang.Object ref = combatNpcPersonalityId_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          kabdkaelnce_ = s;
+          combatNpcPersonalityId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string kabdkaelnce = 11;</code>
-       * @return The bytes for kabdkaelnce.
+       * <code>string combat_npc_personality_id = 11;</code>
+       * @return The bytes for combatNpcPersonalityId.
        */
       public com.google.protobuf.ByteString
-          getKabdkaelnceBytes() {
-        java.lang.Object ref = kabdkaelnce_;
+          getCombatNpcPersonalityIdBytes() {
+        java.lang.Object ref = combatNpcPersonalityId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          kabdkaelnce_ = b;
+          combatNpcPersonalityId_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string kabdkaelnce = 11;</code>
-       * @param value The kabdkaelnce to set.
+       * <code>string combat_npc_personality_id = 11;</code>
+       * @param value The combatNpcPersonalityId to set.
        * @return This builder for chaining.
        */
-      public Builder setKabdkaelnce(
+      public Builder setCombatNpcPersonalityId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        kabdkaelnce_ = value;
+        combatNpcPersonalityId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string kabdkaelnce = 11;</code>
+       * <code>string combat_npc_personality_id = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKabdkaelnce() {
+      public Builder clearCombatNpcPersonalityId() {
         
-        kabdkaelnce_ = getDefaultInstance().getKabdkaelnce();
+        combatNpcPersonalityId_ = getDefaultInstance().getCombatNpcPersonalityId();
         onChanged();
         return this;
       }
       /**
-       * <code>string kabdkaelnce = 11;</code>
-       * @param value The bytes for kabdkaelnce to set.
+       * <code>string combat_npc_personality_id = 11;</code>
+       * @param value The bytes for combatNpcPersonalityId to set.
        * @return This builder for chaining.
        */
-      public Builder setKabdkaelnceBytes(
+      public Builder setCombatNpcPersonalityIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        kabdkaelnce_ = value;
+        combatNpcPersonalityId_ = value;
         onChanged();
         return this;
       }
 
-      private int pmhidaplcnm_ ;
+      private int timesCombatActionsCalled_ ;
       /**
-       * <code>int32 pmhidaplcnm = 12;</code>
-       * @return The pmhidaplcnm.
+       * <code>int32 times_combat_actions_called = 12;</code>
+       * @return The timesCombatActionsCalled.
        */
       @java.lang.Override
-      public int getPmhidaplcnm() {
-        return pmhidaplcnm_;
+      public int getTimesCombatActionsCalled() {
+        return timesCombatActionsCalled_;
       }
       /**
-       * <code>int32 pmhidaplcnm = 12;</code>
-       * @param value The pmhidaplcnm to set.
+       * <code>int32 times_combat_actions_called = 12;</code>
+       * @param value The timesCombatActionsCalled to set.
        * @return This builder for chaining.
        */
-      public Builder setPmhidaplcnm(int value) {
+      public Builder setTimesCombatActionsCalled(int value) {
         
-        pmhidaplcnm_ = value;
+        timesCombatActionsCalled_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 pmhidaplcnm = 12;</code>
+       * <code>int32 times_combat_actions_called = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPmhidaplcnm() {
+      public Builder clearTimesCombatActionsCalled() {
         
-        pmhidaplcnm_ = 0;
+        timesCombatActionsCalled_ = 0;
         onChanged();
         return this;
       }
 
-      private long dmmcbhcceml_ ;
+      private long field1_ ;
       /**
-       * <code>int64 dmmcbhcceml = 13;</code>
-       * @return The dmmcbhcceml.
+       * <code>int64 field1 = 13;</code>
+       * @return The field1.
        */
       @java.lang.Override
-      public long getDmmcbhcceml() {
-        return dmmcbhcceml_;
+      public long getField1() {
+        return field1_;
       }
       /**
-       * <code>int64 dmmcbhcceml = 13;</code>
-       * @param value The dmmcbhcceml to set.
+       * <code>int64 field1 = 13;</code>
+       * @param value The field1 to set.
        * @return This builder for chaining.
        */
-      public Builder setDmmcbhcceml(long value) {
+      public Builder setField1(long value) {
         
-        dmmcbhcceml_ = value;
+        field1_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 dmmcbhcceml = 13;</code>
+       * <code>int64 field1 = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDmmcbhcceml() {
+      public Builder clearField1() {
         
-        dmmcbhcceml_ = 0L;
+        field1_ = 0L;
         onChanged();
         return this;
       }
 
-      private int mljngmnekij_ ;
+      private int field2_ ;
       /**
-       * <code>int32 mljngmnekij = 14;</code>
-       * @return The mljngmnekij.
+       * <code>int32 field2 = 14;</code>
+       * @return The field2.
        */
       @java.lang.Override
-      public int getMljngmnekij() {
-        return mljngmnekij_;
+      public int getField2() {
+        return field2_;
       }
       /**
-       * <code>int32 mljngmnekij = 14;</code>
-       * @param value The mljngmnekij to set.
+       * <code>int32 field2 = 14;</code>
+       * @param value The field2 to set.
        * @return This builder for chaining.
        */
-      public Builder setMljngmnekij(int value) {
+      public Builder setField2(int value) {
         
-        mljngmnekij_ = value;
+        field2_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 mljngmnekij = 14;</code>
+       * <code>int32 field2 = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMljngmnekij() {
+      public Builder clearField2() {
         
-        mljngmnekij_ = 0;
+        field2_ = 0;
         onChanged();
         return this;
       }
@@ -2982,144 +2982,144 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 mfkgkhdmbpb = 1;</code>
-     * @return The mfkgkhdmbpb.
+     * <code>fixed64 pokemon_id = 1;</code>
+     * @return The pokemonId.
      */
-    long getMfkgkhdmbpb();
+    long getPokemonId();
 
     /**
-     * <code>int32 kcbcpdfdkel = 2;</code>
-     * @return The kcbcpdfdkel.
+     * <code>int32 pokedex_id = 2;</code>
+     * @return The pokedexId.
      */
-    int getKcbcpdfdkel();
+    int getPokedexId();
 
     /**
-     * <code>int32 fgeliggeohb = 3;</code>
-     * @return The fgeliggeohb.
+     * <code>int32 cp = 3;</code>
+     * @return The cp.
      */
-    int getFgeliggeohb();
+    int getCp();
 
     /**
-     * <code>float maacbjpdnoi = 4;</code>
-     * @return The maacbjpdnoi.
+     * <code>float cp_multiplier = 4;</code>
+     * @return The cpMultiplier.
      */
-    float getMaacbjpdnoi();
+    float getCpMultiplier();
 
     /**
-     * <code>int32 lhpockkkeea = 5;</code>
-     * @return The lhpockkkeea.
+     * <code>int32 stamina = 5;</code>
+     * @return The stamina.
      */
-    int getLhpockkkeea();
+    int getStamina();
 
     /**
-     * <code>int32 nieieblomfi = 6;</code>
-     * @return The nieieblomfi.
+     * <code>int32 max_stamina = 6;</code>
+     * @return The maxStamina.
      */
-    int getNieieblomfi();
+    int getMaxStamina();
 
     /**
-     * <code>int32 gpohdhbnacg = 7;</code>
-     * @return The gpohdhbnacg.
+     * <code>int32 move1 = 7;</code>
+     * @return The move1.
      */
-    int getGpohdhbnacg();
+    int getMove1();
 
     /**
-     * <code>int32 kndopccmkin = 8;</code>
-     * @return The kndopccmkin.
+     * <code>int32 move2 = 8;</code>
+     * @return The move2.
      */
-    int getKndopccmkin();
+    int getMove2();
 
     /**
-     * <code>int32 agdlchgaokn = 9;</code>
-     * @return The agdlchgaokn.
+     * <code>int32 move3 = 9;</code>
+     * @return The move3.
      */
-    int getAgdlchgaokn();
+    int getMove3();
 
     /**
-     * <code>int32 kpegaeemkia = 10;</code>
-     * @return The kpegaeemkia.
+     * <code>int32 energy = 10;</code>
+     * @return The energy.
      */
-    int getKpegaeemkia();
+    int getEnergy();
 
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
-     * @return Whether the efpknnlchbc field is set.
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
+     * @return Whether the pokemonDisplay field is set.
      */
-    boolean hasEfpknnlchbc();
+    boolean hasPokemonDisplay();
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
-     * @return The efpknnlchbc.
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
+     * @return The pokemonDisplay.
      */
-    POGOProtos.Rpc.PokemonDisplayProto getEfpknnlchbc();
+    POGOProtos.Rpc.PokemonDisplayProto getPokemonDisplay();
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
      */
-    POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getEfpknnlchbcOrBuilder();
+    POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getPokemonDisplayOrBuilder();
 
     /**
-     * <code>int32 gijnbmdfmog = 12;</code>
-     * @return The gijnbmdfmog.
+     * <code>int32 individual_attack = 12;</code>
+     * @return The individualAttack.
      */
-    int getGijnbmdfmog();
+    int getIndividualAttack();
 
     /**
-     * <code>int32 jlcebfglean = 13;</code>
-     * @return The jlcebfglean.
+     * <code>int32 individual_defense = 13;</code>
+     * @return The individualDefense.
      */
-    int getJlcebfglean();
+    int getIndividualDefense();
 
     /**
-     * <code>int32 meakfplpbof = 14;</code>
-     * @return The meakfplpbof.
+     * <code>int32 individual_stamina = 14;</code>
+     * @return The individualStamina.
      */
-    int getMeakfplpbof();
+    int getIndividualStamina();
 
     /**
-     * <code>int32 dlnhmligjbh = 15;</code>
-     * @return The dlnhmligjbh.
+     * <code>int32 attack_stat_stage = 15;</code>
+     * @return The attackStatStage.
      */
-    int getDlnhmligjbh();
+    int getAttackStatStage();
 
     /**
-     * <code>int32 akdganpkjfl = 16;</code>
-     * @return The akdganpkjfl.
+     * <code>int32 defense_stat_stage = 16;</code>
+     * @return The defenseStatStage.
      */
-    int getAkdganpkjfl();
+    int getDefenseStatStage();
 
     /**
-     * <code>int32 ffolmgblfik = 17;</code>
-     * @return The ffolmgblfik.
+     * <code>int32 battles_won = 17;</code>
+     * @return The battlesWon.
      */
-    int getFfolmgblfik();
+    int getBattlesWon();
 
     /**
-     * <code>int32 ahifombjill = 18;</code>
-     * @return The ahifombjill.
+     * <code>int32 battles_lost = 18;</code>
+     * @return The battlesLost.
      */
-    int getAhifombjill();
+    int getBattlesLost();
 
     /**
-     * <code>string lecobcejkpk = 19;</code>
-     * @return The lecobcejkpk.
+     * <code>string nickname = 19;</code>
+     * @return The nickname.
      */
-    java.lang.String getLecobcejkpk();
+    java.lang.String getNickname();
     /**
-     * <code>string lecobcejkpk = 19;</code>
-     * @return The bytes for lecobcejkpk.
+     * <code>string nickname = 19;</code>
+     * @return The bytes for nickname.
      */
     com.google.protobuf.ByteString
-        getLecobcejkpkBytes();
+        getNicknameBytes();
 
     /**
-     * <code>.POGOProtos.Rpc.Item eajohpjbknk = 20;</code>
-     * @return The enum numeric value on the wire for eajohpjbknk.
+     * <code>.POGOProtos.Rpc.Item pokeball = 20;</code>
+     * @return The enum numeric value on the wire for pokeball.
      */
-    int getEajohpjbknkValue();
+    int getPokeballValue();
     /**
-     * <code>.POGOProtos.Rpc.Item eajohpjbknk = 20;</code>
-     * @return The eajohpjbknk.
+     * <code>.POGOProtos.Rpc.Item pokeball = 20;</code>
+     * @return The pokeball.
      */
-    POGOProtos.Rpc.Item getEajohpjbknk();
+    POGOProtos.Rpc.Item getPokeball();
   }
   /**
    * <pre>
@@ -3138,8 +3138,8 @@ private static final long serialVersionUID = 0L;
       super(builder);
     }
     private CombatPokemonProto() {
-      lecobcejkpk_ = "";
-      eajohpjbknk_ = 0;
+      nickname_ = "";
+      pokeball_ = 0;
     }
 
     @java.lang.Override
@@ -3172,114 +3172,114 @@ private static final long serialVersionUID = 0L;
             case 0:
               done = true;
               break;
-            case 8: {
+            case 9: {
 
-              mfkgkhdmbpb_ = input.readUInt64();
+              pokemonId_ = input.readFixed64();
               break;
             }
             case 16: {
 
-              kcbcpdfdkel_ = input.readInt32();
+              pokedexId_ = input.readInt32();
               break;
             }
             case 24: {
 
-              fgeliggeohb_ = input.readInt32();
+              cp_ = input.readInt32();
               break;
             }
             case 37: {
 
-              maacbjpdnoi_ = input.readFloat();
+              cpMultiplier_ = input.readFloat();
               break;
             }
             case 40: {
 
-              lhpockkkeea_ = input.readInt32();
+              stamina_ = input.readInt32();
               break;
             }
             case 48: {
 
-              nieieblomfi_ = input.readInt32();
+              maxStamina_ = input.readInt32();
               break;
             }
             case 56: {
 
-              gpohdhbnacg_ = input.readInt32();
+              move1_ = input.readInt32();
               break;
             }
             case 64: {
 
-              kndopccmkin_ = input.readInt32();
+              move2_ = input.readInt32();
               break;
             }
             case 72: {
 
-              agdlchgaokn_ = input.readInt32();
+              move3_ = input.readInt32();
               break;
             }
             case 80: {
 
-              kpegaeemkia_ = input.readInt32();
+              energy_ = input.readInt32();
               break;
             }
             case 90: {
               POGOProtos.Rpc.PokemonDisplayProto.Builder subBuilder = null;
-              if (efpknnlchbc_ != null) {
-                subBuilder = efpknnlchbc_.toBuilder();
+              if (pokemonDisplay_ != null) {
+                subBuilder = pokemonDisplay_.toBuilder();
               }
-              efpknnlchbc_ = input.readMessage(POGOProtos.Rpc.PokemonDisplayProto.parser(), extensionRegistry);
+              pokemonDisplay_ = input.readMessage(POGOProtos.Rpc.PokemonDisplayProto.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(efpknnlchbc_);
-                efpknnlchbc_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(pokemonDisplay_);
+                pokemonDisplay_ = subBuilder.buildPartial();
               }
 
               break;
             }
             case 96: {
 
-              gijnbmdfmog_ = input.readInt32();
+              individualAttack_ = input.readInt32();
               break;
             }
             case 104: {
 
-              jlcebfglean_ = input.readInt32();
+              individualDefense_ = input.readInt32();
               break;
             }
             case 112: {
 
-              meakfplpbof_ = input.readInt32();
+              individualStamina_ = input.readInt32();
               break;
             }
             case 120: {
 
-              dlnhmligjbh_ = input.readInt32();
+              attackStatStage_ = input.readInt32();
               break;
             }
             case 128: {
 
-              akdganpkjfl_ = input.readInt32();
+              defenseStatStage_ = input.readInt32();
               break;
             }
             case 136: {
 
-              ffolmgblfik_ = input.readInt32();
+              battlesWon_ = input.readInt32();
               break;
             }
             case 144: {
 
-              ahifombjill_ = input.readInt32();
+              battlesLost_ = input.readInt32();
               break;
             }
             case 154: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              lecobcejkpk_ = s;
+              nickname_ = s;
               break;
             }
             case 160: {
               int rawValue = input.readEnum();
 
-              eajohpjbknk_ = rawValue;
+              pokeball_ = rawValue;
               break;
             }
             default: {
@@ -3314,273 +3314,273 @@ private static final long serialVersionUID = 0L;
               POGOProtos.Rpc.CombatProto.CombatPokemonProto.class, POGOProtos.Rpc.CombatProto.CombatPokemonProto.Builder.class);
     }
 
-    public static final int MFKGKHDMBPB_FIELD_NUMBER = 1;
-    private long mfkgkhdmbpb_;
+    public static final int POKEMON_ID_FIELD_NUMBER = 1;
+    private long pokemonId_;
     /**
-     * <code>uint64 mfkgkhdmbpb = 1;</code>
-     * @return The mfkgkhdmbpb.
+     * <code>fixed64 pokemon_id = 1;</code>
+     * @return The pokemonId.
      */
     @java.lang.Override
-    public long getMfkgkhdmbpb() {
-      return mfkgkhdmbpb_;
+    public long getPokemonId() {
+      return pokemonId_;
     }
 
-    public static final int KCBCPDFDKEL_FIELD_NUMBER = 2;
-    private int kcbcpdfdkel_;
+    public static final int POKEDEX_ID_FIELD_NUMBER = 2;
+    private int pokedexId_;
     /**
-     * <code>int32 kcbcpdfdkel = 2;</code>
-     * @return The kcbcpdfdkel.
+     * <code>int32 pokedex_id = 2;</code>
+     * @return The pokedexId.
      */
     @java.lang.Override
-    public int getKcbcpdfdkel() {
-      return kcbcpdfdkel_;
+    public int getPokedexId() {
+      return pokedexId_;
     }
 
-    public static final int FGELIGGEOHB_FIELD_NUMBER = 3;
-    private int fgeliggeohb_;
+    public static final int CP_FIELD_NUMBER = 3;
+    private int cp_;
     /**
-     * <code>int32 fgeliggeohb = 3;</code>
-     * @return The fgeliggeohb.
+     * <code>int32 cp = 3;</code>
+     * @return The cp.
      */
     @java.lang.Override
-    public int getFgeliggeohb() {
-      return fgeliggeohb_;
+    public int getCp() {
+      return cp_;
     }
 
-    public static final int MAACBJPDNOI_FIELD_NUMBER = 4;
-    private float maacbjpdnoi_;
+    public static final int CP_MULTIPLIER_FIELD_NUMBER = 4;
+    private float cpMultiplier_;
     /**
-     * <code>float maacbjpdnoi = 4;</code>
-     * @return The maacbjpdnoi.
+     * <code>float cp_multiplier = 4;</code>
+     * @return The cpMultiplier.
      */
     @java.lang.Override
-    public float getMaacbjpdnoi() {
-      return maacbjpdnoi_;
+    public float getCpMultiplier() {
+      return cpMultiplier_;
     }
 
-    public static final int LHPOCKKKEEA_FIELD_NUMBER = 5;
-    private int lhpockkkeea_;
+    public static final int STAMINA_FIELD_NUMBER = 5;
+    private int stamina_;
     /**
-     * <code>int32 lhpockkkeea = 5;</code>
-     * @return The lhpockkkeea.
+     * <code>int32 stamina = 5;</code>
+     * @return The stamina.
      */
     @java.lang.Override
-    public int getLhpockkkeea() {
-      return lhpockkkeea_;
+    public int getStamina() {
+      return stamina_;
     }
 
-    public static final int NIEIEBLOMFI_FIELD_NUMBER = 6;
-    private int nieieblomfi_;
+    public static final int MAX_STAMINA_FIELD_NUMBER = 6;
+    private int maxStamina_;
     /**
-     * <code>int32 nieieblomfi = 6;</code>
-     * @return The nieieblomfi.
+     * <code>int32 max_stamina = 6;</code>
+     * @return The maxStamina.
      */
     @java.lang.Override
-    public int getNieieblomfi() {
-      return nieieblomfi_;
+    public int getMaxStamina() {
+      return maxStamina_;
     }
 
-    public static final int GPOHDHBNACG_FIELD_NUMBER = 7;
-    private int gpohdhbnacg_;
+    public static final int MOVE1_FIELD_NUMBER = 7;
+    private int move1_;
     /**
-     * <code>int32 gpohdhbnacg = 7;</code>
-     * @return The gpohdhbnacg.
+     * <code>int32 move1 = 7;</code>
+     * @return The move1.
      */
     @java.lang.Override
-    public int getGpohdhbnacg() {
-      return gpohdhbnacg_;
+    public int getMove1() {
+      return move1_;
     }
 
-    public static final int KNDOPCCMKIN_FIELD_NUMBER = 8;
-    private int kndopccmkin_;
+    public static final int MOVE2_FIELD_NUMBER = 8;
+    private int move2_;
     /**
-     * <code>int32 kndopccmkin = 8;</code>
-     * @return The kndopccmkin.
+     * <code>int32 move2 = 8;</code>
+     * @return The move2.
      */
     @java.lang.Override
-    public int getKndopccmkin() {
-      return kndopccmkin_;
+    public int getMove2() {
+      return move2_;
     }
 
-    public static final int AGDLCHGAOKN_FIELD_NUMBER = 9;
-    private int agdlchgaokn_;
+    public static final int MOVE3_FIELD_NUMBER = 9;
+    private int move3_;
     /**
-     * <code>int32 agdlchgaokn = 9;</code>
-     * @return The agdlchgaokn.
+     * <code>int32 move3 = 9;</code>
+     * @return The move3.
      */
     @java.lang.Override
-    public int getAgdlchgaokn() {
-      return agdlchgaokn_;
+    public int getMove3() {
+      return move3_;
     }
 
-    public static final int KPEGAEEMKIA_FIELD_NUMBER = 10;
-    private int kpegaeemkia_;
+    public static final int ENERGY_FIELD_NUMBER = 10;
+    private int energy_;
     /**
-     * <code>int32 kpegaeemkia = 10;</code>
-     * @return The kpegaeemkia.
+     * <code>int32 energy = 10;</code>
+     * @return The energy.
      */
     @java.lang.Override
-    public int getKpegaeemkia() {
-      return kpegaeemkia_;
+    public int getEnergy() {
+      return energy_;
     }
 
-    public static final int EFPKNNLCHBC_FIELD_NUMBER = 11;
-    private POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc_;
+    public static final int POKEMON_DISPLAY_FIELD_NUMBER = 11;
+    private POGOProtos.Rpc.PokemonDisplayProto pokemonDisplay_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
-     * @return Whether the efpknnlchbc field is set.
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
+     * @return Whether the pokemonDisplay field is set.
      */
     @java.lang.Override
-    public boolean hasEfpknnlchbc() {
-      return efpknnlchbc_ != null;
+    public boolean hasPokemonDisplay() {
+      return pokemonDisplay_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
-     * @return The efpknnlchbc.
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
+     * @return The pokemonDisplay.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.PokemonDisplayProto getEfpknnlchbc() {
-      return efpknnlchbc_ == null ? POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : efpknnlchbc_;
+    public POGOProtos.Rpc.PokemonDisplayProto getPokemonDisplay() {
+      return pokemonDisplay_ == null ? POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : pokemonDisplay_;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getEfpknnlchbcOrBuilder() {
-      return getEfpknnlchbc();
-    }
-
-    public static final int GIJNBMDFMOG_FIELD_NUMBER = 12;
-    private int gijnbmdfmog_;
-    /**
-     * <code>int32 gijnbmdfmog = 12;</code>
-     * @return The gijnbmdfmog.
-     */
-    @java.lang.Override
-    public int getGijnbmdfmog() {
-      return gijnbmdfmog_;
+    public POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getPokemonDisplayOrBuilder() {
+      return getPokemonDisplay();
     }
 
-    public static final int JLCEBFGLEAN_FIELD_NUMBER = 13;
-    private int jlcebfglean_;
+    public static final int INDIVIDUAL_ATTACK_FIELD_NUMBER = 12;
+    private int individualAttack_;
     /**
-     * <code>int32 jlcebfglean = 13;</code>
-     * @return The jlcebfglean.
+     * <code>int32 individual_attack = 12;</code>
+     * @return The individualAttack.
      */
     @java.lang.Override
-    public int getJlcebfglean() {
-      return jlcebfglean_;
+    public int getIndividualAttack() {
+      return individualAttack_;
     }
 
-    public static final int MEAKFPLPBOF_FIELD_NUMBER = 14;
-    private int meakfplpbof_;
+    public static final int INDIVIDUAL_DEFENSE_FIELD_NUMBER = 13;
+    private int individualDefense_;
     /**
-     * <code>int32 meakfplpbof = 14;</code>
-     * @return The meakfplpbof.
+     * <code>int32 individual_defense = 13;</code>
+     * @return The individualDefense.
      */
     @java.lang.Override
-    public int getMeakfplpbof() {
-      return meakfplpbof_;
+    public int getIndividualDefense() {
+      return individualDefense_;
     }
 
-    public static final int DLNHMLIGJBH_FIELD_NUMBER = 15;
-    private int dlnhmligjbh_;
+    public static final int INDIVIDUAL_STAMINA_FIELD_NUMBER = 14;
+    private int individualStamina_;
     /**
-     * <code>int32 dlnhmligjbh = 15;</code>
-     * @return The dlnhmligjbh.
+     * <code>int32 individual_stamina = 14;</code>
+     * @return The individualStamina.
      */
     @java.lang.Override
-    public int getDlnhmligjbh() {
-      return dlnhmligjbh_;
+    public int getIndividualStamina() {
+      return individualStamina_;
     }
 
-    public static final int AKDGANPKJFL_FIELD_NUMBER = 16;
-    private int akdganpkjfl_;
+    public static final int ATTACK_STAT_STAGE_FIELD_NUMBER = 15;
+    private int attackStatStage_;
     /**
-     * <code>int32 akdganpkjfl = 16;</code>
-     * @return The akdganpkjfl.
+     * <code>int32 attack_stat_stage = 15;</code>
+     * @return The attackStatStage.
      */
     @java.lang.Override
-    public int getAkdganpkjfl() {
-      return akdganpkjfl_;
+    public int getAttackStatStage() {
+      return attackStatStage_;
     }
 
-    public static final int FFOLMGBLFIK_FIELD_NUMBER = 17;
-    private int ffolmgblfik_;
+    public static final int DEFENSE_STAT_STAGE_FIELD_NUMBER = 16;
+    private int defenseStatStage_;
     /**
-     * <code>int32 ffolmgblfik = 17;</code>
-     * @return The ffolmgblfik.
+     * <code>int32 defense_stat_stage = 16;</code>
+     * @return The defenseStatStage.
      */
     @java.lang.Override
-    public int getFfolmgblfik() {
-      return ffolmgblfik_;
+    public int getDefenseStatStage() {
+      return defenseStatStage_;
     }
 
-    public static final int AHIFOMBJILL_FIELD_NUMBER = 18;
-    private int ahifombjill_;
+    public static final int BATTLES_WON_FIELD_NUMBER = 17;
+    private int battlesWon_;
     /**
-     * <code>int32 ahifombjill = 18;</code>
-     * @return The ahifombjill.
+     * <code>int32 battles_won = 17;</code>
+     * @return The battlesWon.
      */
     @java.lang.Override
-    public int getAhifombjill() {
-      return ahifombjill_;
+    public int getBattlesWon() {
+      return battlesWon_;
     }
 
-    public static final int LECOBCEJKPK_FIELD_NUMBER = 19;
-    private volatile java.lang.Object lecobcejkpk_;
+    public static final int BATTLES_LOST_FIELD_NUMBER = 18;
+    private int battlesLost_;
     /**
-     * <code>string lecobcejkpk = 19;</code>
-     * @return The lecobcejkpk.
+     * <code>int32 battles_lost = 18;</code>
+     * @return The battlesLost.
      */
     @java.lang.Override
-    public java.lang.String getLecobcejkpk() {
-      java.lang.Object ref = lecobcejkpk_;
+    public int getBattlesLost() {
+      return battlesLost_;
+    }
+
+    public static final int NICKNAME_FIELD_NUMBER = 19;
+    private volatile java.lang.Object nickname_;
+    /**
+     * <code>string nickname = 19;</code>
+     * @return The nickname.
+     */
+    @java.lang.Override
+    public java.lang.String getNickname() {
+      java.lang.Object ref = nickname_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        lecobcejkpk_ = s;
+        nickname_ = s;
         return s;
       }
     }
     /**
-     * <code>string lecobcejkpk = 19;</code>
-     * @return The bytes for lecobcejkpk.
+     * <code>string nickname = 19;</code>
+     * @return The bytes for nickname.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getLecobcejkpkBytes() {
-      java.lang.Object ref = lecobcejkpk_;
+        getNicknameBytes() {
+      java.lang.Object ref = nickname_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        lecobcejkpk_ = b;
+        nickname_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int EAJOHPJBKNK_FIELD_NUMBER = 20;
-    private int eajohpjbknk_;
+    public static final int POKEBALL_FIELD_NUMBER = 20;
+    private int pokeball_;
     /**
-     * <code>.POGOProtos.Rpc.Item eajohpjbknk = 20;</code>
-     * @return The enum numeric value on the wire for eajohpjbknk.
+     * <code>.POGOProtos.Rpc.Item pokeball = 20;</code>
+     * @return The enum numeric value on the wire for pokeball.
      */
-    @java.lang.Override public int getEajohpjbknkValue() {
-      return eajohpjbknk_;
+    @java.lang.Override public int getPokeballValue() {
+      return pokeball_;
     }
     /**
-     * <code>.POGOProtos.Rpc.Item eajohpjbknk = 20;</code>
-     * @return The eajohpjbknk.
+     * <code>.POGOProtos.Rpc.Item pokeball = 20;</code>
+     * @return The pokeball.
      */
-    @java.lang.Override public POGOProtos.Rpc.Item getEajohpjbknk() {
+    @java.lang.Override public POGOProtos.Rpc.Item getPokeball() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(eajohpjbknk_);
+      POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(pokeball_);
       return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
     }
 
@@ -3598,65 +3598,65 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (mfkgkhdmbpb_ != 0L) {
-        output.writeUInt64(1, mfkgkhdmbpb_);
+      if (pokemonId_ != 0L) {
+        output.writeFixed64(1, pokemonId_);
       }
-      if (kcbcpdfdkel_ != 0) {
-        output.writeInt32(2, kcbcpdfdkel_);
+      if (pokedexId_ != 0) {
+        output.writeInt32(2, pokedexId_);
       }
-      if (fgeliggeohb_ != 0) {
-        output.writeInt32(3, fgeliggeohb_);
+      if (cp_ != 0) {
+        output.writeInt32(3, cp_);
       }
-      if (maacbjpdnoi_ != 0F) {
-        output.writeFloat(4, maacbjpdnoi_);
+      if (cpMultiplier_ != 0F) {
+        output.writeFloat(4, cpMultiplier_);
       }
-      if (lhpockkkeea_ != 0) {
-        output.writeInt32(5, lhpockkkeea_);
+      if (stamina_ != 0) {
+        output.writeInt32(5, stamina_);
       }
-      if (nieieblomfi_ != 0) {
-        output.writeInt32(6, nieieblomfi_);
+      if (maxStamina_ != 0) {
+        output.writeInt32(6, maxStamina_);
       }
-      if (gpohdhbnacg_ != 0) {
-        output.writeInt32(7, gpohdhbnacg_);
+      if (move1_ != 0) {
+        output.writeInt32(7, move1_);
       }
-      if (kndopccmkin_ != 0) {
-        output.writeInt32(8, kndopccmkin_);
+      if (move2_ != 0) {
+        output.writeInt32(8, move2_);
       }
-      if (agdlchgaokn_ != 0) {
-        output.writeInt32(9, agdlchgaokn_);
+      if (move3_ != 0) {
+        output.writeInt32(9, move3_);
       }
-      if (kpegaeemkia_ != 0) {
-        output.writeInt32(10, kpegaeemkia_);
+      if (energy_ != 0) {
+        output.writeInt32(10, energy_);
       }
-      if (efpknnlchbc_ != null) {
-        output.writeMessage(11, getEfpknnlchbc());
+      if (pokemonDisplay_ != null) {
+        output.writeMessage(11, getPokemonDisplay());
       }
-      if (gijnbmdfmog_ != 0) {
-        output.writeInt32(12, gijnbmdfmog_);
+      if (individualAttack_ != 0) {
+        output.writeInt32(12, individualAttack_);
       }
-      if (jlcebfglean_ != 0) {
-        output.writeInt32(13, jlcebfglean_);
+      if (individualDefense_ != 0) {
+        output.writeInt32(13, individualDefense_);
       }
-      if (meakfplpbof_ != 0) {
-        output.writeInt32(14, meakfplpbof_);
+      if (individualStamina_ != 0) {
+        output.writeInt32(14, individualStamina_);
       }
-      if (dlnhmligjbh_ != 0) {
-        output.writeInt32(15, dlnhmligjbh_);
+      if (attackStatStage_ != 0) {
+        output.writeInt32(15, attackStatStage_);
       }
-      if (akdganpkjfl_ != 0) {
-        output.writeInt32(16, akdganpkjfl_);
+      if (defenseStatStage_ != 0) {
+        output.writeInt32(16, defenseStatStage_);
       }
-      if (ffolmgblfik_ != 0) {
-        output.writeInt32(17, ffolmgblfik_);
+      if (battlesWon_ != 0) {
+        output.writeInt32(17, battlesWon_);
       }
-      if (ahifombjill_ != 0) {
-        output.writeInt32(18, ahifombjill_);
+      if (battlesLost_ != 0) {
+        output.writeInt32(18, battlesLost_);
       }
-      if (!getLecobcejkpkBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 19, lecobcejkpk_);
+      if (!getNicknameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 19, nickname_);
       }
-      if (eajohpjbknk_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
-        output.writeEnum(20, eajohpjbknk_);
+      if (pokeball_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+        output.writeEnum(20, pokeball_);
       }
       unknownFields.writeTo(output);
     }
@@ -3667,84 +3667,84 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (mfkgkhdmbpb_ != 0L) {
+      if (pokemonId_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(1, mfkgkhdmbpb_);
+          .computeFixed64Size(1, pokemonId_);
       }
-      if (kcbcpdfdkel_ != 0) {
+      if (pokedexId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, kcbcpdfdkel_);
+          .computeInt32Size(2, pokedexId_);
       }
-      if (fgeliggeohb_ != 0) {
+      if (cp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(3, fgeliggeohb_);
+          .computeInt32Size(3, cp_);
       }
-      if (maacbjpdnoi_ != 0F) {
+      if (cpMultiplier_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(4, maacbjpdnoi_);
+          .computeFloatSize(4, cpMultiplier_);
       }
-      if (lhpockkkeea_ != 0) {
+      if (stamina_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, lhpockkkeea_);
+          .computeInt32Size(5, stamina_);
       }
-      if (nieieblomfi_ != 0) {
+      if (maxStamina_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, nieieblomfi_);
+          .computeInt32Size(6, maxStamina_);
       }
-      if (gpohdhbnacg_ != 0) {
+      if (move1_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, gpohdhbnacg_);
+          .computeInt32Size(7, move1_);
       }
-      if (kndopccmkin_ != 0) {
+      if (move2_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, kndopccmkin_);
+          .computeInt32Size(8, move2_);
       }
-      if (agdlchgaokn_ != 0) {
+      if (move3_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, agdlchgaokn_);
+          .computeInt32Size(9, move3_);
       }
-      if (kpegaeemkia_ != 0) {
+      if (energy_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, kpegaeemkia_);
+          .computeInt32Size(10, energy_);
       }
-      if (efpknnlchbc_ != null) {
+      if (pokemonDisplay_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, getEfpknnlchbc());
+          .computeMessageSize(11, getPokemonDisplay());
       }
-      if (gijnbmdfmog_ != 0) {
+      if (individualAttack_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, gijnbmdfmog_);
+          .computeInt32Size(12, individualAttack_);
       }
-      if (jlcebfglean_ != 0) {
+      if (individualDefense_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, jlcebfglean_);
+          .computeInt32Size(13, individualDefense_);
       }
-      if (meakfplpbof_ != 0) {
+      if (individualStamina_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(14, meakfplpbof_);
+          .computeInt32Size(14, individualStamina_);
       }
-      if (dlnhmligjbh_ != 0) {
+      if (attackStatStage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, dlnhmligjbh_);
+          .computeInt32Size(15, attackStatStage_);
       }
-      if (akdganpkjfl_ != 0) {
+      if (defenseStatStage_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(16, akdganpkjfl_);
+          .computeInt32Size(16, defenseStatStage_);
       }
-      if (ffolmgblfik_ != 0) {
+      if (battlesWon_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(17, ffolmgblfik_);
+          .computeInt32Size(17, battlesWon_);
       }
-      if (ahifombjill_ != 0) {
+      if (battlesLost_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(18, ahifombjill_);
+          .computeInt32Size(18, battlesLost_);
       }
-      if (!getLecobcejkpkBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(19, lecobcejkpk_);
+      if (!getNicknameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(19, nickname_);
       }
-      if (eajohpjbknk_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+      if (pokeball_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(20, eajohpjbknk_);
+          .computeEnumSize(20, pokeball_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3761,49 +3761,49 @@ private static final long serialVersionUID = 0L;
       }
       POGOProtos.Rpc.CombatProto.CombatPokemonProto other = (POGOProtos.Rpc.CombatProto.CombatPokemonProto) obj;
 
-      if (getMfkgkhdmbpb()
-          != other.getMfkgkhdmbpb()) return false;
-      if (getKcbcpdfdkel()
-          != other.getKcbcpdfdkel()) return false;
-      if (getFgeliggeohb()
-          != other.getFgeliggeohb()) return false;
-      if (java.lang.Float.floatToIntBits(getMaacbjpdnoi())
+      if (getPokemonId()
+          != other.getPokemonId()) return false;
+      if (getPokedexId()
+          != other.getPokedexId()) return false;
+      if (getCp()
+          != other.getCp()) return false;
+      if (java.lang.Float.floatToIntBits(getCpMultiplier())
           != java.lang.Float.floatToIntBits(
-              other.getMaacbjpdnoi())) return false;
-      if (getLhpockkkeea()
-          != other.getLhpockkkeea()) return false;
-      if (getNieieblomfi()
-          != other.getNieieblomfi()) return false;
-      if (getGpohdhbnacg()
-          != other.getGpohdhbnacg()) return false;
-      if (getKndopccmkin()
-          != other.getKndopccmkin()) return false;
-      if (getAgdlchgaokn()
-          != other.getAgdlchgaokn()) return false;
-      if (getKpegaeemkia()
-          != other.getKpegaeemkia()) return false;
-      if (hasEfpknnlchbc() != other.hasEfpknnlchbc()) return false;
-      if (hasEfpknnlchbc()) {
-        if (!getEfpknnlchbc()
-            .equals(other.getEfpknnlchbc())) return false;
+              other.getCpMultiplier())) return false;
+      if (getStamina()
+          != other.getStamina()) return false;
+      if (getMaxStamina()
+          != other.getMaxStamina()) return false;
+      if (getMove1()
+          != other.getMove1()) return false;
+      if (getMove2()
+          != other.getMove2()) return false;
+      if (getMove3()
+          != other.getMove3()) return false;
+      if (getEnergy()
+          != other.getEnergy()) return false;
+      if (hasPokemonDisplay() != other.hasPokemonDisplay()) return false;
+      if (hasPokemonDisplay()) {
+        if (!getPokemonDisplay()
+            .equals(other.getPokemonDisplay())) return false;
       }
-      if (getGijnbmdfmog()
-          != other.getGijnbmdfmog()) return false;
-      if (getJlcebfglean()
-          != other.getJlcebfglean()) return false;
-      if (getMeakfplpbof()
-          != other.getMeakfplpbof()) return false;
-      if (getDlnhmligjbh()
-          != other.getDlnhmligjbh()) return false;
-      if (getAkdganpkjfl()
-          != other.getAkdganpkjfl()) return false;
-      if (getFfolmgblfik()
-          != other.getFfolmgblfik()) return false;
-      if (getAhifombjill()
-          != other.getAhifombjill()) return false;
-      if (!getLecobcejkpk()
-          .equals(other.getLecobcejkpk())) return false;
-      if (eajohpjbknk_ != other.eajohpjbknk_) return false;
+      if (getIndividualAttack()
+          != other.getIndividualAttack()) return false;
+      if (getIndividualDefense()
+          != other.getIndividualDefense()) return false;
+      if (getIndividualStamina()
+          != other.getIndividualStamina()) return false;
+      if (getAttackStatStage()
+          != other.getAttackStatStage()) return false;
+      if (getDefenseStatStage()
+          != other.getDefenseStatStage()) return false;
+      if (getBattlesWon()
+          != other.getBattlesWon()) return false;
+      if (getBattlesLost()
+          != other.getBattlesLost()) return false;
+      if (!getNickname()
+          .equals(other.getNickname())) return false;
+      if (pokeball_ != other.pokeball_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -3815,50 +3815,50 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MFKGKHDMBPB_FIELD_NUMBER;
+      hash = (37 * hash) + POKEMON_ID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getMfkgkhdmbpb());
-      hash = (37 * hash) + KCBCPDFDKEL_FIELD_NUMBER;
-      hash = (53 * hash) + getKcbcpdfdkel();
-      hash = (37 * hash) + FGELIGGEOHB_FIELD_NUMBER;
-      hash = (53 * hash) + getFgeliggeohb();
-      hash = (37 * hash) + MAACBJPDNOI_FIELD_NUMBER;
+          getPokemonId());
+      hash = (37 * hash) + POKEDEX_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPokedexId();
+      hash = (37 * hash) + CP_FIELD_NUMBER;
+      hash = (53 * hash) + getCp();
+      hash = (37 * hash) + CP_MULTIPLIER_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getMaacbjpdnoi());
-      hash = (37 * hash) + LHPOCKKKEEA_FIELD_NUMBER;
-      hash = (53 * hash) + getLhpockkkeea();
-      hash = (37 * hash) + NIEIEBLOMFI_FIELD_NUMBER;
-      hash = (53 * hash) + getNieieblomfi();
-      hash = (37 * hash) + GPOHDHBNACG_FIELD_NUMBER;
-      hash = (53 * hash) + getGpohdhbnacg();
-      hash = (37 * hash) + KNDOPCCMKIN_FIELD_NUMBER;
-      hash = (53 * hash) + getKndopccmkin();
-      hash = (37 * hash) + AGDLCHGAOKN_FIELD_NUMBER;
-      hash = (53 * hash) + getAgdlchgaokn();
-      hash = (37 * hash) + KPEGAEEMKIA_FIELD_NUMBER;
-      hash = (53 * hash) + getKpegaeemkia();
-      if (hasEfpknnlchbc()) {
-        hash = (37 * hash) + EFPKNNLCHBC_FIELD_NUMBER;
-        hash = (53 * hash) + getEfpknnlchbc().hashCode();
+          getCpMultiplier());
+      hash = (37 * hash) + STAMINA_FIELD_NUMBER;
+      hash = (53 * hash) + getStamina();
+      hash = (37 * hash) + MAX_STAMINA_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxStamina();
+      hash = (37 * hash) + MOVE1_FIELD_NUMBER;
+      hash = (53 * hash) + getMove1();
+      hash = (37 * hash) + MOVE2_FIELD_NUMBER;
+      hash = (53 * hash) + getMove2();
+      hash = (37 * hash) + MOVE3_FIELD_NUMBER;
+      hash = (53 * hash) + getMove3();
+      hash = (37 * hash) + ENERGY_FIELD_NUMBER;
+      hash = (53 * hash) + getEnergy();
+      if (hasPokemonDisplay()) {
+        hash = (37 * hash) + POKEMON_DISPLAY_FIELD_NUMBER;
+        hash = (53 * hash) + getPokemonDisplay().hashCode();
       }
-      hash = (37 * hash) + GIJNBMDFMOG_FIELD_NUMBER;
-      hash = (53 * hash) + getGijnbmdfmog();
-      hash = (37 * hash) + JLCEBFGLEAN_FIELD_NUMBER;
-      hash = (53 * hash) + getJlcebfglean();
-      hash = (37 * hash) + MEAKFPLPBOF_FIELD_NUMBER;
-      hash = (53 * hash) + getMeakfplpbof();
-      hash = (37 * hash) + DLNHMLIGJBH_FIELD_NUMBER;
-      hash = (53 * hash) + getDlnhmligjbh();
-      hash = (37 * hash) + AKDGANPKJFL_FIELD_NUMBER;
-      hash = (53 * hash) + getAkdganpkjfl();
-      hash = (37 * hash) + FFOLMGBLFIK_FIELD_NUMBER;
-      hash = (53 * hash) + getFfolmgblfik();
-      hash = (37 * hash) + AHIFOMBJILL_FIELD_NUMBER;
-      hash = (53 * hash) + getAhifombjill();
-      hash = (37 * hash) + LECOBCEJKPK_FIELD_NUMBER;
-      hash = (53 * hash) + getLecobcejkpk().hashCode();
-      hash = (37 * hash) + EAJOHPJBKNK_FIELD_NUMBER;
-      hash = (53 * hash) + eajohpjbknk_;
+      hash = (37 * hash) + INDIVIDUAL_ATTACK_FIELD_NUMBER;
+      hash = (53 * hash) + getIndividualAttack();
+      hash = (37 * hash) + INDIVIDUAL_DEFENSE_FIELD_NUMBER;
+      hash = (53 * hash) + getIndividualDefense();
+      hash = (37 * hash) + INDIVIDUAL_STAMINA_FIELD_NUMBER;
+      hash = (53 * hash) + getIndividualStamina();
+      hash = (37 * hash) + ATTACK_STAT_STAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getAttackStatStage();
+      hash = (37 * hash) + DEFENSE_STAT_STAGE_FIELD_NUMBER;
+      hash = (53 * hash) + getDefenseStatStage();
+      hash = (37 * hash) + BATTLES_WON_FIELD_NUMBER;
+      hash = (53 * hash) + getBattlesWon();
+      hash = (37 * hash) + BATTLES_LOST_FIELD_NUMBER;
+      hash = (53 * hash) + getBattlesLost();
+      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getNickname().hashCode();
+      hash = (37 * hash) + POKEBALL_FIELD_NUMBER;
+      hash = (53 * hash) + pokeball_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -3996,49 +3996,49 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        mfkgkhdmbpb_ = 0L;
+        pokemonId_ = 0L;
 
-        kcbcpdfdkel_ = 0;
+        pokedexId_ = 0;
 
-        fgeliggeohb_ = 0;
+        cp_ = 0;
 
-        maacbjpdnoi_ = 0F;
+        cpMultiplier_ = 0F;
 
-        lhpockkkeea_ = 0;
+        stamina_ = 0;
 
-        nieieblomfi_ = 0;
+        maxStamina_ = 0;
 
-        gpohdhbnacg_ = 0;
+        move1_ = 0;
 
-        kndopccmkin_ = 0;
+        move2_ = 0;
 
-        agdlchgaokn_ = 0;
+        move3_ = 0;
 
-        kpegaeemkia_ = 0;
+        energy_ = 0;
 
-        if (efpknnlchbcBuilder_ == null) {
-          efpknnlchbc_ = null;
+        if (pokemonDisplayBuilder_ == null) {
+          pokemonDisplay_ = null;
         } else {
-          efpknnlchbc_ = null;
-          efpknnlchbcBuilder_ = null;
+          pokemonDisplay_ = null;
+          pokemonDisplayBuilder_ = null;
         }
-        gijnbmdfmog_ = 0;
+        individualAttack_ = 0;
 
-        jlcebfglean_ = 0;
+        individualDefense_ = 0;
 
-        meakfplpbof_ = 0;
+        individualStamina_ = 0;
 
-        dlnhmligjbh_ = 0;
+        attackStatStage_ = 0;
 
-        akdganpkjfl_ = 0;
+        defenseStatStage_ = 0;
 
-        ffolmgblfik_ = 0;
+        battlesWon_ = 0;
 
-        ahifombjill_ = 0;
+        battlesLost_ = 0;
 
-        lecobcejkpk_ = "";
+        nickname_ = "";
 
-        eajohpjbknk_ = 0;
+        pokeball_ = 0;
 
         return this;
       }
@@ -4066,30 +4066,30 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public POGOProtos.Rpc.CombatProto.CombatPokemonProto buildPartial() {
         POGOProtos.Rpc.CombatProto.CombatPokemonProto result = new POGOProtos.Rpc.CombatProto.CombatPokemonProto(this);
-        result.mfkgkhdmbpb_ = mfkgkhdmbpb_;
-        result.kcbcpdfdkel_ = kcbcpdfdkel_;
-        result.fgeliggeohb_ = fgeliggeohb_;
-        result.maacbjpdnoi_ = maacbjpdnoi_;
-        result.lhpockkkeea_ = lhpockkkeea_;
-        result.nieieblomfi_ = nieieblomfi_;
-        result.gpohdhbnacg_ = gpohdhbnacg_;
-        result.kndopccmkin_ = kndopccmkin_;
-        result.agdlchgaokn_ = agdlchgaokn_;
-        result.kpegaeemkia_ = kpegaeemkia_;
-        if (efpknnlchbcBuilder_ == null) {
-          result.efpknnlchbc_ = efpknnlchbc_;
+        result.pokemonId_ = pokemonId_;
+        result.pokedexId_ = pokedexId_;
+        result.cp_ = cp_;
+        result.cpMultiplier_ = cpMultiplier_;
+        result.stamina_ = stamina_;
+        result.maxStamina_ = maxStamina_;
+        result.move1_ = move1_;
+        result.move2_ = move2_;
+        result.move3_ = move3_;
+        result.energy_ = energy_;
+        if (pokemonDisplayBuilder_ == null) {
+          result.pokemonDisplay_ = pokemonDisplay_;
         } else {
-          result.efpknnlchbc_ = efpknnlchbcBuilder_.build();
+          result.pokemonDisplay_ = pokemonDisplayBuilder_.build();
         }
-        result.gijnbmdfmog_ = gijnbmdfmog_;
-        result.jlcebfglean_ = jlcebfglean_;
-        result.meakfplpbof_ = meakfplpbof_;
-        result.dlnhmligjbh_ = dlnhmligjbh_;
-        result.akdganpkjfl_ = akdganpkjfl_;
-        result.ffolmgblfik_ = ffolmgblfik_;
-        result.ahifombjill_ = ahifombjill_;
-        result.lecobcejkpk_ = lecobcejkpk_;
-        result.eajohpjbknk_ = eajohpjbknk_;
+        result.individualAttack_ = individualAttack_;
+        result.individualDefense_ = individualDefense_;
+        result.individualStamina_ = individualStamina_;
+        result.attackStatStage_ = attackStatStage_;
+        result.defenseStatStage_ = defenseStatStage_;
+        result.battlesWon_ = battlesWon_;
+        result.battlesLost_ = battlesLost_;
+        result.nickname_ = nickname_;
+        result.pokeball_ = pokeball_;
         onBuilt();
         return result;
       }
@@ -4138,66 +4138,66 @@ private static final long serialVersionUID = 0L;
 
       public Builder mergeFrom(POGOProtos.Rpc.CombatProto.CombatPokemonProto other) {
         if (other == POGOProtos.Rpc.CombatProto.CombatPokemonProto.getDefaultInstance()) return this;
-        if (other.getMfkgkhdmbpb() != 0L) {
-          setMfkgkhdmbpb(other.getMfkgkhdmbpb());
+        if (other.getPokemonId() != 0L) {
+          setPokemonId(other.getPokemonId());
         }
-        if (other.getKcbcpdfdkel() != 0) {
-          setKcbcpdfdkel(other.getKcbcpdfdkel());
+        if (other.getPokedexId() != 0) {
+          setPokedexId(other.getPokedexId());
         }
-        if (other.getFgeliggeohb() != 0) {
-          setFgeliggeohb(other.getFgeliggeohb());
+        if (other.getCp() != 0) {
+          setCp(other.getCp());
         }
-        if (other.getMaacbjpdnoi() != 0F) {
-          setMaacbjpdnoi(other.getMaacbjpdnoi());
+        if (other.getCpMultiplier() != 0F) {
+          setCpMultiplier(other.getCpMultiplier());
         }
-        if (other.getLhpockkkeea() != 0) {
-          setLhpockkkeea(other.getLhpockkkeea());
+        if (other.getStamina() != 0) {
+          setStamina(other.getStamina());
         }
-        if (other.getNieieblomfi() != 0) {
-          setNieieblomfi(other.getNieieblomfi());
+        if (other.getMaxStamina() != 0) {
+          setMaxStamina(other.getMaxStamina());
         }
-        if (other.getGpohdhbnacg() != 0) {
-          setGpohdhbnacg(other.getGpohdhbnacg());
+        if (other.getMove1() != 0) {
+          setMove1(other.getMove1());
         }
-        if (other.getKndopccmkin() != 0) {
-          setKndopccmkin(other.getKndopccmkin());
+        if (other.getMove2() != 0) {
+          setMove2(other.getMove2());
         }
-        if (other.getAgdlchgaokn() != 0) {
-          setAgdlchgaokn(other.getAgdlchgaokn());
+        if (other.getMove3() != 0) {
+          setMove3(other.getMove3());
         }
-        if (other.getKpegaeemkia() != 0) {
-          setKpegaeemkia(other.getKpegaeemkia());
+        if (other.getEnergy() != 0) {
+          setEnergy(other.getEnergy());
         }
-        if (other.hasEfpknnlchbc()) {
-          mergeEfpknnlchbc(other.getEfpknnlchbc());
+        if (other.hasPokemonDisplay()) {
+          mergePokemonDisplay(other.getPokemonDisplay());
         }
-        if (other.getGijnbmdfmog() != 0) {
-          setGijnbmdfmog(other.getGijnbmdfmog());
+        if (other.getIndividualAttack() != 0) {
+          setIndividualAttack(other.getIndividualAttack());
         }
-        if (other.getJlcebfglean() != 0) {
-          setJlcebfglean(other.getJlcebfglean());
+        if (other.getIndividualDefense() != 0) {
+          setIndividualDefense(other.getIndividualDefense());
         }
-        if (other.getMeakfplpbof() != 0) {
-          setMeakfplpbof(other.getMeakfplpbof());
+        if (other.getIndividualStamina() != 0) {
+          setIndividualStamina(other.getIndividualStamina());
         }
-        if (other.getDlnhmligjbh() != 0) {
-          setDlnhmligjbh(other.getDlnhmligjbh());
+        if (other.getAttackStatStage() != 0) {
+          setAttackStatStage(other.getAttackStatStage());
         }
-        if (other.getAkdganpkjfl() != 0) {
-          setAkdganpkjfl(other.getAkdganpkjfl());
+        if (other.getDefenseStatStage() != 0) {
+          setDefenseStatStage(other.getDefenseStatStage());
         }
-        if (other.getFfolmgblfik() != 0) {
-          setFfolmgblfik(other.getFfolmgblfik());
+        if (other.getBattlesWon() != 0) {
+          setBattlesWon(other.getBattlesWon());
         }
-        if (other.getAhifombjill() != 0) {
-          setAhifombjill(other.getAhifombjill());
+        if (other.getBattlesLost() != 0) {
+          setBattlesLost(other.getBattlesLost());
         }
-        if (!other.getLecobcejkpk().isEmpty()) {
-          lecobcejkpk_ = other.lecobcejkpk_;
+        if (!other.getNickname().isEmpty()) {
+          nickname_ = other.nickname_;
           onChanged();
         }
-        if (other.eajohpjbknk_ != 0) {
-          setEajohpjbknkValue(other.getEajohpjbknkValue());
+        if (other.pokeball_ != 0) {
+          setPokeballValue(other.getPokeballValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -4228,778 +4228,778 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      private long mfkgkhdmbpb_ ;
+      private long pokemonId_ ;
       /**
-       * <code>uint64 mfkgkhdmbpb = 1;</code>
-       * @return The mfkgkhdmbpb.
+       * <code>fixed64 pokemon_id = 1;</code>
+       * @return The pokemonId.
        */
       @java.lang.Override
-      public long getMfkgkhdmbpb() {
-        return mfkgkhdmbpb_;
+      public long getPokemonId() {
+        return pokemonId_;
       }
       /**
-       * <code>uint64 mfkgkhdmbpb = 1;</code>
-       * @param value The mfkgkhdmbpb to set.
+       * <code>fixed64 pokemon_id = 1;</code>
+       * @param value The pokemonId to set.
        * @return This builder for chaining.
        */
-      public Builder setMfkgkhdmbpb(long value) {
+      public Builder setPokemonId(long value) {
         
-        mfkgkhdmbpb_ = value;
+        pokemonId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 mfkgkhdmbpb = 1;</code>
+       * <code>fixed64 pokemon_id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMfkgkhdmbpb() {
+      public Builder clearPokemonId() {
         
-        mfkgkhdmbpb_ = 0L;
+        pokemonId_ = 0L;
         onChanged();
         return this;
       }
 
-      private int kcbcpdfdkel_ ;
+      private int pokedexId_ ;
       /**
-       * <code>int32 kcbcpdfdkel = 2;</code>
-       * @return The kcbcpdfdkel.
+       * <code>int32 pokedex_id = 2;</code>
+       * @return The pokedexId.
        */
       @java.lang.Override
-      public int getKcbcpdfdkel() {
-        return kcbcpdfdkel_;
+      public int getPokedexId() {
+        return pokedexId_;
       }
       /**
-       * <code>int32 kcbcpdfdkel = 2;</code>
-       * @param value The kcbcpdfdkel to set.
+       * <code>int32 pokedex_id = 2;</code>
+       * @param value The pokedexId to set.
        * @return This builder for chaining.
        */
-      public Builder setKcbcpdfdkel(int value) {
+      public Builder setPokedexId(int value) {
         
-        kcbcpdfdkel_ = value;
+        pokedexId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 kcbcpdfdkel = 2;</code>
+       * <code>int32 pokedex_id = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKcbcpdfdkel() {
+      public Builder clearPokedexId() {
         
-        kcbcpdfdkel_ = 0;
+        pokedexId_ = 0;
         onChanged();
         return this;
       }
 
-      private int fgeliggeohb_ ;
+      private int cp_ ;
       /**
-       * <code>int32 fgeliggeohb = 3;</code>
-       * @return The fgeliggeohb.
+       * <code>int32 cp = 3;</code>
+       * @return The cp.
        */
       @java.lang.Override
-      public int getFgeliggeohb() {
-        return fgeliggeohb_;
+      public int getCp() {
+        return cp_;
       }
       /**
-       * <code>int32 fgeliggeohb = 3;</code>
-       * @param value The fgeliggeohb to set.
+       * <code>int32 cp = 3;</code>
+       * @param value The cp to set.
        * @return This builder for chaining.
        */
-      public Builder setFgeliggeohb(int value) {
+      public Builder setCp(int value) {
         
-        fgeliggeohb_ = value;
+        cp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 fgeliggeohb = 3;</code>
+       * <code>int32 cp = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFgeliggeohb() {
+      public Builder clearCp() {
         
-        fgeliggeohb_ = 0;
+        cp_ = 0;
         onChanged();
         return this;
       }
 
-      private float maacbjpdnoi_ ;
+      private float cpMultiplier_ ;
       /**
-       * <code>float maacbjpdnoi = 4;</code>
-       * @return The maacbjpdnoi.
+       * <code>float cp_multiplier = 4;</code>
+       * @return The cpMultiplier.
        */
       @java.lang.Override
-      public float getMaacbjpdnoi() {
-        return maacbjpdnoi_;
+      public float getCpMultiplier() {
+        return cpMultiplier_;
       }
       /**
-       * <code>float maacbjpdnoi = 4;</code>
-       * @param value The maacbjpdnoi to set.
+       * <code>float cp_multiplier = 4;</code>
+       * @param value The cpMultiplier to set.
        * @return This builder for chaining.
        */
-      public Builder setMaacbjpdnoi(float value) {
+      public Builder setCpMultiplier(float value) {
         
-        maacbjpdnoi_ = value;
+        cpMultiplier_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float maacbjpdnoi = 4;</code>
+       * <code>float cp_multiplier = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMaacbjpdnoi() {
+      public Builder clearCpMultiplier() {
         
-        maacbjpdnoi_ = 0F;
+        cpMultiplier_ = 0F;
         onChanged();
         return this;
       }
 
-      private int lhpockkkeea_ ;
+      private int stamina_ ;
       /**
-       * <code>int32 lhpockkkeea = 5;</code>
-       * @return The lhpockkkeea.
+       * <code>int32 stamina = 5;</code>
+       * @return The stamina.
        */
       @java.lang.Override
-      public int getLhpockkkeea() {
-        return lhpockkkeea_;
+      public int getStamina() {
+        return stamina_;
       }
       /**
-       * <code>int32 lhpockkkeea = 5;</code>
-       * @param value The lhpockkkeea to set.
+       * <code>int32 stamina = 5;</code>
+       * @param value The stamina to set.
        * @return This builder for chaining.
        */
-      public Builder setLhpockkkeea(int value) {
+      public Builder setStamina(int value) {
         
-        lhpockkkeea_ = value;
+        stamina_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 lhpockkkeea = 5;</code>
+       * <code>int32 stamina = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLhpockkkeea() {
+      public Builder clearStamina() {
         
-        lhpockkkeea_ = 0;
+        stamina_ = 0;
         onChanged();
         return this;
       }
 
-      private int nieieblomfi_ ;
+      private int maxStamina_ ;
       /**
-       * <code>int32 nieieblomfi = 6;</code>
-       * @return The nieieblomfi.
+       * <code>int32 max_stamina = 6;</code>
+       * @return The maxStamina.
        */
       @java.lang.Override
-      public int getNieieblomfi() {
-        return nieieblomfi_;
+      public int getMaxStamina() {
+        return maxStamina_;
       }
       /**
-       * <code>int32 nieieblomfi = 6;</code>
-       * @param value The nieieblomfi to set.
+       * <code>int32 max_stamina = 6;</code>
+       * @param value The maxStamina to set.
        * @return This builder for chaining.
        */
-      public Builder setNieieblomfi(int value) {
+      public Builder setMaxStamina(int value) {
         
-        nieieblomfi_ = value;
+        maxStamina_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 nieieblomfi = 6;</code>
+       * <code>int32 max_stamina = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNieieblomfi() {
+      public Builder clearMaxStamina() {
         
-        nieieblomfi_ = 0;
+        maxStamina_ = 0;
         onChanged();
         return this;
       }
 
-      private int gpohdhbnacg_ ;
+      private int move1_ ;
       /**
-       * <code>int32 gpohdhbnacg = 7;</code>
-       * @return The gpohdhbnacg.
+       * <code>int32 move1 = 7;</code>
+       * @return The move1.
        */
       @java.lang.Override
-      public int getGpohdhbnacg() {
-        return gpohdhbnacg_;
+      public int getMove1() {
+        return move1_;
       }
       /**
-       * <code>int32 gpohdhbnacg = 7;</code>
-       * @param value The gpohdhbnacg to set.
+       * <code>int32 move1 = 7;</code>
+       * @param value The move1 to set.
        * @return This builder for chaining.
        */
-      public Builder setGpohdhbnacg(int value) {
+      public Builder setMove1(int value) {
         
-        gpohdhbnacg_ = value;
+        move1_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 gpohdhbnacg = 7;</code>
+       * <code>int32 move1 = 7;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGpohdhbnacg() {
+      public Builder clearMove1() {
         
-        gpohdhbnacg_ = 0;
+        move1_ = 0;
         onChanged();
         return this;
       }
 
-      private int kndopccmkin_ ;
+      private int move2_ ;
       /**
-       * <code>int32 kndopccmkin = 8;</code>
-       * @return The kndopccmkin.
+       * <code>int32 move2 = 8;</code>
+       * @return The move2.
        */
       @java.lang.Override
-      public int getKndopccmkin() {
-        return kndopccmkin_;
+      public int getMove2() {
+        return move2_;
       }
       /**
-       * <code>int32 kndopccmkin = 8;</code>
-       * @param value The kndopccmkin to set.
+       * <code>int32 move2 = 8;</code>
+       * @param value The move2 to set.
        * @return This builder for chaining.
        */
-      public Builder setKndopccmkin(int value) {
+      public Builder setMove2(int value) {
         
-        kndopccmkin_ = value;
+        move2_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 kndopccmkin = 8;</code>
+       * <code>int32 move2 = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKndopccmkin() {
+      public Builder clearMove2() {
         
-        kndopccmkin_ = 0;
+        move2_ = 0;
         onChanged();
         return this;
       }
 
-      private int agdlchgaokn_ ;
+      private int move3_ ;
       /**
-       * <code>int32 agdlchgaokn = 9;</code>
-       * @return The agdlchgaokn.
+       * <code>int32 move3 = 9;</code>
+       * @return The move3.
        */
       @java.lang.Override
-      public int getAgdlchgaokn() {
-        return agdlchgaokn_;
+      public int getMove3() {
+        return move3_;
       }
       /**
-       * <code>int32 agdlchgaokn = 9;</code>
-       * @param value The agdlchgaokn to set.
+       * <code>int32 move3 = 9;</code>
+       * @param value The move3 to set.
        * @return This builder for chaining.
        */
-      public Builder setAgdlchgaokn(int value) {
+      public Builder setMove3(int value) {
         
-        agdlchgaokn_ = value;
+        move3_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 agdlchgaokn = 9;</code>
+       * <code>int32 move3 = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAgdlchgaokn() {
+      public Builder clearMove3() {
         
-        agdlchgaokn_ = 0;
+        move3_ = 0;
         onChanged();
         return this;
       }
 
-      private int kpegaeemkia_ ;
+      private int energy_ ;
       /**
-       * <code>int32 kpegaeemkia = 10;</code>
-       * @return The kpegaeemkia.
+       * <code>int32 energy = 10;</code>
+       * @return The energy.
        */
       @java.lang.Override
-      public int getKpegaeemkia() {
-        return kpegaeemkia_;
+      public int getEnergy() {
+        return energy_;
       }
       /**
-       * <code>int32 kpegaeemkia = 10;</code>
-       * @param value The kpegaeemkia to set.
+       * <code>int32 energy = 10;</code>
+       * @param value The energy to set.
        * @return This builder for chaining.
        */
-      public Builder setKpegaeemkia(int value) {
+      public Builder setEnergy(int value) {
         
-        kpegaeemkia_ = value;
+        energy_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 kpegaeemkia = 10;</code>
+       * <code>int32 energy = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKpegaeemkia() {
+      public Builder clearEnergy() {
         
-        kpegaeemkia_ = 0;
+        energy_ = 0;
         onChanged();
         return this;
       }
 
-      private POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc_;
+      private POGOProtos.Rpc.PokemonDisplayProto pokemonDisplay_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.PokemonDisplayProto, POGOProtos.Rpc.PokemonDisplayProto.Builder, POGOProtos.Rpc.PokemonDisplayProtoOrBuilder> efpknnlchbcBuilder_;
+          POGOProtos.Rpc.PokemonDisplayProto, POGOProtos.Rpc.PokemonDisplayProto.Builder, POGOProtos.Rpc.PokemonDisplayProtoOrBuilder> pokemonDisplayBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
-       * @return Whether the efpknnlchbc field is set.
+       * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
+       * @return Whether the pokemonDisplay field is set.
        */
-      public boolean hasEfpknnlchbc() {
-        return efpknnlchbcBuilder_ != null || efpknnlchbc_ != null;
+      public boolean hasPokemonDisplay() {
+        return pokemonDisplayBuilder_ != null || pokemonDisplay_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
-       * @return The efpknnlchbc.
+       * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
+       * @return The pokemonDisplay.
        */
-      public POGOProtos.Rpc.PokemonDisplayProto getEfpknnlchbc() {
-        if (efpknnlchbcBuilder_ == null) {
-          return efpknnlchbc_ == null ? POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : efpknnlchbc_;
+      public POGOProtos.Rpc.PokemonDisplayProto getPokemonDisplay() {
+        if (pokemonDisplayBuilder_ == null) {
+          return pokemonDisplay_ == null ? POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : pokemonDisplay_;
         } else {
-          return efpknnlchbcBuilder_.getMessage();
+          return pokemonDisplayBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
+       * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
        */
-      public Builder setEfpknnlchbc(POGOProtos.Rpc.PokemonDisplayProto value) {
-        if (efpknnlchbcBuilder_ == null) {
+      public Builder setPokemonDisplay(POGOProtos.Rpc.PokemonDisplayProto value) {
+        if (pokemonDisplayBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          efpknnlchbc_ = value;
+          pokemonDisplay_ = value;
           onChanged();
         } else {
-          efpknnlchbcBuilder_.setMessage(value);
+          pokemonDisplayBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
+       * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
        */
-      public Builder setEfpknnlchbc(
+      public Builder setPokemonDisplay(
           POGOProtos.Rpc.PokemonDisplayProto.Builder builderForValue) {
-        if (efpknnlchbcBuilder_ == null) {
-          efpknnlchbc_ = builderForValue.build();
+        if (pokemonDisplayBuilder_ == null) {
+          pokemonDisplay_ = builderForValue.build();
           onChanged();
         } else {
-          efpknnlchbcBuilder_.setMessage(builderForValue.build());
+          pokemonDisplayBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
+       * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
        */
-      public Builder mergeEfpknnlchbc(POGOProtos.Rpc.PokemonDisplayProto value) {
-        if (efpknnlchbcBuilder_ == null) {
-          if (efpknnlchbc_ != null) {
-            efpknnlchbc_ =
-              POGOProtos.Rpc.PokemonDisplayProto.newBuilder(efpknnlchbc_).mergeFrom(value).buildPartial();
+      public Builder mergePokemonDisplay(POGOProtos.Rpc.PokemonDisplayProto value) {
+        if (pokemonDisplayBuilder_ == null) {
+          if (pokemonDisplay_ != null) {
+            pokemonDisplay_ =
+              POGOProtos.Rpc.PokemonDisplayProto.newBuilder(pokemonDisplay_).mergeFrom(value).buildPartial();
           } else {
-            efpknnlchbc_ = value;
+            pokemonDisplay_ = value;
           }
           onChanged();
         } else {
-          efpknnlchbcBuilder_.mergeFrom(value);
+          pokemonDisplayBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
+       * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
        */
-      public Builder clearEfpknnlchbc() {
-        if (efpknnlchbcBuilder_ == null) {
-          efpknnlchbc_ = null;
+      public Builder clearPokemonDisplay() {
+        if (pokemonDisplayBuilder_ == null) {
+          pokemonDisplay_ = null;
           onChanged();
         } else {
-          efpknnlchbc_ = null;
-          efpknnlchbcBuilder_ = null;
+          pokemonDisplay_ = null;
+          pokemonDisplayBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
+       * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
        */
-      public POGOProtos.Rpc.PokemonDisplayProto.Builder getEfpknnlchbcBuilder() {
+      public POGOProtos.Rpc.PokemonDisplayProto.Builder getPokemonDisplayBuilder() {
         
         onChanged();
-        return getEfpknnlchbcFieldBuilder().getBuilder();
+        return getPokemonDisplayFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
+       * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
        */
-      public POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getEfpknnlchbcOrBuilder() {
-        if (efpknnlchbcBuilder_ != null) {
-          return efpknnlchbcBuilder_.getMessageOrBuilder();
+      public POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getPokemonDisplayOrBuilder() {
+        if (pokemonDisplayBuilder_ != null) {
+          return pokemonDisplayBuilder_.getMessageOrBuilder();
         } else {
-          return efpknnlchbc_ == null ?
-              POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : efpknnlchbc_;
+          return pokemonDisplay_ == null ?
+              POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : pokemonDisplay_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 11;</code>
+       * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           POGOProtos.Rpc.PokemonDisplayProto, POGOProtos.Rpc.PokemonDisplayProto.Builder, POGOProtos.Rpc.PokemonDisplayProtoOrBuilder> 
-          getEfpknnlchbcFieldBuilder() {
-        if (efpknnlchbcBuilder_ == null) {
-          efpknnlchbcBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          getPokemonDisplayFieldBuilder() {
+        if (pokemonDisplayBuilder_ == null) {
+          pokemonDisplayBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               POGOProtos.Rpc.PokemonDisplayProto, POGOProtos.Rpc.PokemonDisplayProto.Builder, POGOProtos.Rpc.PokemonDisplayProtoOrBuilder>(
-                  getEfpknnlchbc(),
+                  getPokemonDisplay(),
                   getParentForChildren(),
                   isClean());
-          efpknnlchbc_ = null;
+          pokemonDisplay_ = null;
         }
-        return efpknnlchbcBuilder_;
+        return pokemonDisplayBuilder_;
       }
 
-      private int gijnbmdfmog_ ;
+      private int individualAttack_ ;
       /**
-       * <code>int32 gijnbmdfmog = 12;</code>
-       * @return The gijnbmdfmog.
+       * <code>int32 individual_attack = 12;</code>
+       * @return The individualAttack.
        */
       @java.lang.Override
-      public int getGijnbmdfmog() {
-        return gijnbmdfmog_;
+      public int getIndividualAttack() {
+        return individualAttack_;
       }
       /**
-       * <code>int32 gijnbmdfmog = 12;</code>
-       * @param value The gijnbmdfmog to set.
+       * <code>int32 individual_attack = 12;</code>
+       * @param value The individualAttack to set.
        * @return This builder for chaining.
        */
-      public Builder setGijnbmdfmog(int value) {
+      public Builder setIndividualAttack(int value) {
         
-        gijnbmdfmog_ = value;
+        individualAttack_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 gijnbmdfmog = 12;</code>
+       * <code>int32 individual_attack = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGijnbmdfmog() {
+      public Builder clearIndividualAttack() {
         
-        gijnbmdfmog_ = 0;
+        individualAttack_ = 0;
         onChanged();
         return this;
       }
 
-      private int jlcebfglean_ ;
+      private int individualDefense_ ;
       /**
-       * <code>int32 jlcebfglean = 13;</code>
-       * @return The jlcebfglean.
+       * <code>int32 individual_defense = 13;</code>
+       * @return The individualDefense.
        */
       @java.lang.Override
-      public int getJlcebfglean() {
-        return jlcebfglean_;
+      public int getIndividualDefense() {
+        return individualDefense_;
       }
       /**
-       * <code>int32 jlcebfglean = 13;</code>
-       * @param value The jlcebfglean to set.
+       * <code>int32 individual_defense = 13;</code>
+       * @param value The individualDefense to set.
        * @return This builder for chaining.
        */
-      public Builder setJlcebfglean(int value) {
+      public Builder setIndividualDefense(int value) {
         
-        jlcebfglean_ = value;
+        individualDefense_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 jlcebfglean = 13;</code>
+       * <code>int32 individual_defense = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJlcebfglean() {
+      public Builder clearIndividualDefense() {
         
-        jlcebfglean_ = 0;
+        individualDefense_ = 0;
         onChanged();
         return this;
       }
 
-      private int meakfplpbof_ ;
+      private int individualStamina_ ;
       /**
-       * <code>int32 meakfplpbof = 14;</code>
-       * @return The meakfplpbof.
+       * <code>int32 individual_stamina = 14;</code>
+       * @return The individualStamina.
        */
       @java.lang.Override
-      public int getMeakfplpbof() {
-        return meakfplpbof_;
+      public int getIndividualStamina() {
+        return individualStamina_;
       }
       /**
-       * <code>int32 meakfplpbof = 14;</code>
-       * @param value The meakfplpbof to set.
+       * <code>int32 individual_stamina = 14;</code>
+       * @param value The individualStamina to set.
        * @return This builder for chaining.
        */
-      public Builder setMeakfplpbof(int value) {
+      public Builder setIndividualStamina(int value) {
         
-        meakfplpbof_ = value;
+        individualStamina_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 meakfplpbof = 14;</code>
+       * <code>int32 individual_stamina = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMeakfplpbof() {
+      public Builder clearIndividualStamina() {
         
-        meakfplpbof_ = 0;
+        individualStamina_ = 0;
         onChanged();
         return this;
       }
 
-      private int dlnhmligjbh_ ;
+      private int attackStatStage_ ;
       /**
-       * <code>int32 dlnhmligjbh = 15;</code>
-       * @return The dlnhmligjbh.
+       * <code>int32 attack_stat_stage = 15;</code>
+       * @return The attackStatStage.
        */
       @java.lang.Override
-      public int getDlnhmligjbh() {
-        return dlnhmligjbh_;
+      public int getAttackStatStage() {
+        return attackStatStage_;
       }
       /**
-       * <code>int32 dlnhmligjbh = 15;</code>
-       * @param value The dlnhmligjbh to set.
+       * <code>int32 attack_stat_stage = 15;</code>
+       * @param value The attackStatStage to set.
        * @return This builder for chaining.
        */
-      public Builder setDlnhmligjbh(int value) {
+      public Builder setAttackStatStage(int value) {
         
-        dlnhmligjbh_ = value;
+        attackStatStage_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 dlnhmligjbh = 15;</code>
+       * <code>int32 attack_stat_stage = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDlnhmligjbh() {
+      public Builder clearAttackStatStage() {
         
-        dlnhmligjbh_ = 0;
+        attackStatStage_ = 0;
         onChanged();
         return this;
       }
 
-      private int akdganpkjfl_ ;
+      private int defenseStatStage_ ;
       /**
-       * <code>int32 akdganpkjfl = 16;</code>
-       * @return The akdganpkjfl.
+       * <code>int32 defense_stat_stage = 16;</code>
+       * @return The defenseStatStage.
        */
       @java.lang.Override
-      public int getAkdganpkjfl() {
-        return akdganpkjfl_;
+      public int getDefenseStatStage() {
+        return defenseStatStage_;
       }
       /**
-       * <code>int32 akdganpkjfl = 16;</code>
-       * @param value The akdganpkjfl to set.
+       * <code>int32 defense_stat_stage = 16;</code>
+       * @param value The defenseStatStage to set.
        * @return This builder for chaining.
        */
-      public Builder setAkdganpkjfl(int value) {
+      public Builder setDefenseStatStage(int value) {
         
-        akdganpkjfl_ = value;
+        defenseStatStage_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 akdganpkjfl = 16;</code>
+       * <code>int32 defense_stat_stage = 16;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAkdganpkjfl() {
+      public Builder clearDefenseStatStage() {
         
-        akdganpkjfl_ = 0;
+        defenseStatStage_ = 0;
         onChanged();
         return this;
       }
 
-      private int ffolmgblfik_ ;
+      private int battlesWon_ ;
       /**
-       * <code>int32 ffolmgblfik = 17;</code>
-       * @return The ffolmgblfik.
+       * <code>int32 battles_won = 17;</code>
+       * @return The battlesWon.
        */
       @java.lang.Override
-      public int getFfolmgblfik() {
-        return ffolmgblfik_;
+      public int getBattlesWon() {
+        return battlesWon_;
       }
       /**
-       * <code>int32 ffolmgblfik = 17;</code>
-       * @param value The ffolmgblfik to set.
+       * <code>int32 battles_won = 17;</code>
+       * @param value The battlesWon to set.
        * @return This builder for chaining.
        */
-      public Builder setFfolmgblfik(int value) {
+      public Builder setBattlesWon(int value) {
         
-        ffolmgblfik_ = value;
+        battlesWon_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 ffolmgblfik = 17;</code>
+       * <code>int32 battles_won = 17;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFfolmgblfik() {
+      public Builder clearBattlesWon() {
         
-        ffolmgblfik_ = 0;
+        battlesWon_ = 0;
         onChanged();
         return this;
       }
 
-      private int ahifombjill_ ;
+      private int battlesLost_ ;
       /**
-       * <code>int32 ahifombjill = 18;</code>
-       * @return The ahifombjill.
+       * <code>int32 battles_lost = 18;</code>
+       * @return The battlesLost.
        */
       @java.lang.Override
-      public int getAhifombjill() {
-        return ahifombjill_;
+      public int getBattlesLost() {
+        return battlesLost_;
       }
       /**
-       * <code>int32 ahifombjill = 18;</code>
-       * @param value The ahifombjill to set.
+       * <code>int32 battles_lost = 18;</code>
+       * @param value The battlesLost to set.
        * @return This builder for chaining.
        */
-      public Builder setAhifombjill(int value) {
+      public Builder setBattlesLost(int value) {
         
-        ahifombjill_ = value;
+        battlesLost_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 ahifombjill = 18;</code>
+       * <code>int32 battles_lost = 18;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAhifombjill() {
+      public Builder clearBattlesLost() {
         
-        ahifombjill_ = 0;
+        battlesLost_ = 0;
         onChanged();
         return this;
       }
 
-      private java.lang.Object lecobcejkpk_ = "";
+      private java.lang.Object nickname_ = "";
       /**
-       * <code>string lecobcejkpk = 19;</code>
-       * @return The lecobcejkpk.
+       * <code>string nickname = 19;</code>
+       * @return The nickname.
        */
-      public java.lang.String getLecobcejkpk() {
-        java.lang.Object ref = lecobcejkpk_;
+      public java.lang.String getNickname() {
+        java.lang.Object ref = nickname_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          lecobcejkpk_ = s;
+          nickname_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string lecobcejkpk = 19;</code>
-       * @return The bytes for lecobcejkpk.
+       * <code>string nickname = 19;</code>
+       * @return The bytes for nickname.
        */
       public com.google.protobuf.ByteString
-          getLecobcejkpkBytes() {
-        java.lang.Object ref = lecobcejkpk_;
+          getNicknameBytes() {
+        java.lang.Object ref = nickname_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          lecobcejkpk_ = b;
+          nickname_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string lecobcejkpk = 19;</code>
-       * @param value The lecobcejkpk to set.
+       * <code>string nickname = 19;</code>
+       * @param value The nickname to set.
        * @return This builder for chaining.
        */
-      public Builder setLecobcejkpk(
+      public Builder setNickname(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        lecobcejkpk_ = value;
+        nickname_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string lecobcejkpk = 19;</code>
+       * <code>string nickname = 19;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLecobcejkpk() {
+      public Builder clearNickname() {
         
-        lecobcejkpk_ = getDefaultInstance().getLecobcejkpk();
+        nickname_ = getDefaultInstance().getNickname();
         onChanged();
         return this;
       }
       /**
-       * <code>string lecobcejkpk = 19;</code>
-       * @param value The bytes for lecobcejkpk to set.
+       * <code>string nickname = 19;</code>
+       * @param value The bytes for nickname to set.
        * @return This builder for chaining.
        */
-      public Builder setLecobcejkpkBytes(
+      public Builder setNicknameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        lecobcejkpk_ = value;
+        nickname_ = value;
         onChanged();
         return this;
       }
 
-      private int eajohpjbknk_ = 0;
+      private int pokeball_ = 0;
       /**
-       * <code>.POGOProtos.Rpc.Item eajohpjbknk = 20;</code>
-       * @return The enum numeric value on the wire for eajohpjbknk.
+       * <code>.POGOProtos.Rpc.Item pokeball = 20;</code>
+       * @return The enum numeric value on the wire for pokeball.
        */
-      @java.lang.Override public int getEajohpjbknkValue() {
-        return eajohpjbknk_;
+      @java.lang.Override public int getPokeballValue() {
+        return pokeball_;
       }
       /**
-       * <code>.POGOProtos.Rpc.Item eajohpjbknk = 20;</code>
-       * @param value The enum numeric value on the wire for eajohpjbknk to set.
+       * <code>.POGOProtos.Rpc.Item pokeball = 20;</code>
+       * @param value The enum numeric value on the wire for pokeball to set.
        * @return This builder for chaining.
        */
-      public Builder setEajohpjbknkValue(int value) {
+      public Builder setPokeballValue(int value) {
         
-        eajohpjbknk_ = value;
+        pokeball_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Item eajohpjbknk = 20;</code>
-       * @return The eajohpjbknk.
+       * <code>.POGOProtos.Rpc.Item pokeball = 20;</code>
+       * @return The pokeball.
        */
       @java.lang.Override
-      public POGOProtos.Rpc.Item getEajohpjbknk() {
+      public POGOProtos.Rpc.Item getPokeball() {
         @SuppressWarnings("deprecation")
-        POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(eajohpjbknk_);
+        POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(pokeball_);
         return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
       }
       /**
-       * <code>.POGOProtos.Rpc.Item eajohpjbknk = 20;</code>
-       * @param value The eajohpjbknk to set.
+       * <code>.POGOProtos.Rpc.Item pokeball = 20;</code>
+       * @param value The pokeball to set.
        * @return This builder for chaining.
        */
-      public Builder setEajohpjbknk(POGOProtos.Rpc.Item value) {
+      public Builder setPokeball(POGOProtos.Rpc.Item value) {
         if (value == null) {
           throw new NullPointerException();
         }
         
-        eajohpjbknk_ = value.getNumber();
+        pokeball_ = value.getNumber();
         onChanged();
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.Item eajohpjbknk = 20;</code>
+       * <code>.POGOProtos.Rpc.Item pokeball = 20;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEajohpjbknk() {
+      public Builder clearPokeball() {
         
-        eajohpjbknk_ = 0;
+        pokeball_ = 0;
         onChanged();
         return this;
       }
@@ -5056,223 +5056,223 @@ private static final long serialVersionUID = 0L;
 
   }
 
-  public static final int EIHBLPLIGFA_FIELD_NUMBER = 1;
-  private int eihblpligfa_;
+  public static final int COMBAT_STATE_FIELD_NUMBER = 1;
+  private int combatState_;
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
-   * @return The enum numeric value on the wire for eihblpligfa.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatState combat_state = 1;</code>
+   * @return The enum numeric value on the wire for combatState.
    */
-  @java.lang.Override public int getEihblpligfaValue() {
-    return eihblpligfa_;
+  @java.lang.Override public int getCombatStateValue() {
+    return combatState_;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
-   * @return The eihblpligfa.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatState combat_state = 1;</code>
+   * @return The combatState.
    */
-  @java.lang.Override public POGOProtos.Rpc.CombatProto.CombatState getEihblpligfa() {
+  @java.lang.Override public POGOProtos.Rpc.CombatProto.CombatState getCombatState() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.CombatProto.CombatState result = POGOProtos.Rpc.CombatProto.CombatState.valueOf(eihblpligfa_);
+    POGOProtos.Rpc.CombatProto.CombatState result = POGOProtos.Rpc.CombatProto.CombatState.valueOf(combatState_);
     return result == null ? POGOProtos.Rpc.CombatProto.CombatState.UNRECOGNIZED : result;
   }
 
-  public static final int HDEGLLGMEIH_FIELD_NUMBER = 2;
-  private volatile java.lang.Object hdegllgmeih_;
+  public static final int COMBAT_ID_FIELD_NUMBER = 2;
+  private volatile java.lang.Object combatId_;
   /**
-   * <code>string hdegllgmeih = 2;</code>
-   * @return The hdegllgmeih.
+   * <code>string combat_id = 2;</code>
+   * @return The combatId.
    */
   @java.lang.Override
-  public java.lang.String getHdegllgmeih() {
-    java.lang.Object ref = hdegllgmeih_;
+  public java.lang.String getCombatId() {
+    java.lang.Object ref = combatId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      hdegllgmeih_ = s;
+      combatId_ = s;
       return s;
     }
   }
   /**
-   * <code>string hdegllgmeih = 2;</code>
-   * @return The bytes for hdegllgmeih.
+   * <code>string combat_id = 2;</code>
+   * @return The bytes for combatId.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getHdegllgmeihBytes() {
-    java.lang.Object ref = hdegllgmeih_;
+      getCombatIdBytes() {
+    java.lang.Object ref = combatId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      hdegllgmeih_ = b;
+      combatId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int EKINGGFMNDG_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg_;
+  public static final int PLAYER_FIELD_NUMBER = 3;
+  private POGOProtos.Rpc.CombatProto.CombatPlayerProto player_;
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
-   * @return Whether the ekinggfmndg field is set.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
+   * @return Whether the player field is set.
    */
   @java.lang.Override
-  public boolean hasEkinggfmndg() {
-    return ekinggfmndg_ != null;
+  public boolean hasPlayer() {
+    return player_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
-   * @return The ekinggfmndg.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
+   * @return The player.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CombatProto.CombatPlayerProto getEkinggfmndg() {
-    return ekinggfmndg_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : ekinggfmndg_;
+  public POGOProtos.Rpc.CombatProto.CombatPlayerProto getPlayer() {
+    return player_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : player_;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getEkinggfmndgOrBuilder() {
-    return getEkinggfmndg();
-  }
-
-  public static final int HLPFMBELLOM_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom_;
-  /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
-   * @return Whether the hlpfmbellom field is set.
-   */
-  @java.lang.Override
-  public boolean hasHlpfmbellom() {
-    return hlpfmbellom_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
-   * @return The hlpfmbellom.
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.CombatProto.CombatPlayerProto getHlpfmbellom() {
-    return hlpfmbellom_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : hlpfmbellom_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getHlpfmbellomOrBuilder() {
-    return getHlpfmbellom();
+  public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getPlayerOrBuilder() {
+    return getPlayer();
   }
 
-  public static final int IBBCGICFALH_FIELD_NUMBER = 5;
-  private long ibbcgicfalh_;
+  public static final int OPPONENT_FIELD_NUMBER = 4;
+  private POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent_;
   /**
-   * <code>int64 ibbcgicfalh = 5;</code>
-   * @return The ibbcgicfalh.
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
+   * @return Whether the opponent field is set.
    */
   @java.lang.Override
-  public long getIbbcgicfalh() {
-    return ibbcgicfalh_;
+  public boolean hasOpponent() {
+    return opponent_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
+   * @return The opponent.
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.CombatProto.CombatPlayerProto getOpponent() {
+    return opponent_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : opponent_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getOpponentOrBuilder() {
+    return getOpponent();
   }
 
-  public static final int NDFOHHNJKKA_FIELD_NUMBER = 6;
-  private long ndfohhnjkka_;
+  public static final int COMBAT_START_MS_FIELD_NUMBER = 5;
+  private long combatStartMs_;
   /**
-   * <code>int64 ndfohhnjkka = 6;</code>
-   * @return The ndfohhnjkka.
+   * <code>int64 combat_start_ms = 5;</code>
+   * @return The combatStartMs.
    */
   @java.lang.Override
-  public long getNdfohhnjkka() {
-    return ndfohhnjkka_;
+  public long getCombatStartMs() {
+    return combatStartMs_;
   }
 
-  public static final int DIKAIFHAIGB_FIELD_NUMBER = 7;
-  private long dikaifhaigb_;
+  public static final int COMBAT_END_MS_FIELD_NUMBER = 6;
+  private long combatEndMs_;
   /**
-   * <code>int64 dikaifhaigb = 7;</code>
-   * @return The dikaifhaigb.
+   * <code>int64 combat_end_ms = 6;</code>
+   * @return The combatEndMs.
    */
   @java.lang.Override
-  public long getDikaifhaigb() {
-    return dikaifhaigb_;
+  public long getCombatEndMs() {
+    return combatEndMs_;
   }
 
-  public static final int DIDEGCJNMPL_FIELD_NUMBER = 8;
-  private int didegcjnmpl_;
+  public static final int SERVER_MS_FIELD_NUMBER = 7;
+  private long serverMs_;
   /**
-   * <code>int32 didegcjnmpl = 8;</code>
-   * @return The didegcjnmpl.
+   * <code>int64 server_ms = 7;</code>
+   * @return The serverMs.
    */
   @java.lang.Override
-  public int getDidegcjnmpl() {
-    return didegcjnmpl_;
+  public long getServerMs() {
+    return serverMs_;
   }
 
-  public static final int LCOHEELAOCD_FIELD_NUMBER = 9;
-  private long lcoheelaocd_;
+  public static final int CURRENT_TURN_FIELD_NUMBER = 8;
+  private int currentTurn_;
   /**
-   * <code>int64 lcoheelaocd = 9;</code>
-   * @return The lcoheelaocd.
+   * <code>int32 current_turn = 8;</code>
+   * @return The currentTurn.
    */
   @java.lang.Override
-  public long getLcoheelaocd() {
-    return lcoheelaocd_;
+  public int getCurrentTurn() {
+    return currentTurn_;
   }
 
-  public static final int PIGOECPDFGC_FIELD_NUMBER = 10;
-  private long pigoecpdfgc_;
+  public static final int TURN_START_MS_FIELD_NUMBER = 9;
+  private long turnStartMs_;
   /**
-   * <code>int64 pigoecpdfgc = 10;</code>
-   * @return The pigoecpdfgc.
+   * <code>int64 turn_start_ms = 9;</code>
+   * @return The turnStartMs.
    */
   @java.lang.Override
-  public long getPigoecpdfgc() {
-    return pigoecpdfgc_;
+  public long getTurnStartMs() {
+    return turnStartMs_;
   }
 
-  public static final int NIIBNPOJDEK_FIELD_NUMBER = 11;
-  private long niibnpojdek_;
+  public static final int MINIGAME_END_MS_FIELD_NUMBER = 10;
+  private long minigameEndMs_;
   /**
-   * <code>int64 niibnpojdek = 11;</code>
-   * @return The niibnpojdek.
+   * <code>int64 minigame_end_ms = 10;</code>
+   * @return The minigameEndMs.
    */
   @java.lang.Override
-  public long getNiibnpojdek() {
-    return niibnpojdek_;
+  public long getMinigameEndMs() {
+    return minigameEndMs_;
   }
 
-  public static final int GOELPBEHCKL_FIELD_NUMBER = 12;
-  private long goelpbehckl_;
+  public static final int MINIGAME_SUBMIT_SCORE_END_MS_FIELD_NUMBER = 11;
+  private long minigameSubmitScoreEndMs_;
   /**
-   * <code>int64 goelpbehckl = 12;</code>
-   * @return The goelpbehckl.
+   * <code>int64 minigame_submit_score_end_ms = 11;</code>
+   * @return The minigameSubmitScoreEndMs.
    */
   @java.lang.Override
-  public long getGoelpbehckl() {
-    return goelpbehckl_;
+  public long getMinigameSubmitScoreEndMs() {
+    return minigameSubmitScoreEndMs_;
   }
 
-  public static final int JENEIKAJHEL_FIELD_NUMBER = 13;
-  private long jeneikajhel_;
+  public static final int CHANGE_POKEMON_END_MS_FIELD_NUMBER = 12;
+  private long changePokemonEndMs_;
   /**
-   * <code>int64 jeneikajhel = 13;</code>
-   * @return The jeneikajhel.
+   * <code>int64 change_pokemon_end_ms = 12;</code>
+   * @return The changePokemonEndMs.
    */
   @java.lang.Override
-  public long getJeneikajhel() {
-    return jeneikajhel_;
+  public long getChangePokemonEndMs() {
+    return changePokemonEndMs_;
   }
 
-  public static final int DMJEIAGKJLO_FIELD_NUMBER = 14;
-  private long dmjeiagkjlo_;
+  public static final int QUICK_SWAP_COOLDOWN_DURATION_MS_FIELD_NUMBER = 13;
+  private long quickSwapCooldownDurationMs_;
   /**
-   * <code>int64 dmjeiagkjlo = 14;</code>
-   * @return The dmjeiagkjlo.
+   * <code>int64 quick_swap_cooldown_duration_ms = 13;</code>
+   * @return The quickSwapCooldownDurationMs.
    */
   @java.lang.Override
-  public long getDmjeiagkjlo() {
-    return dmjeiagkjlo_;
+  public long getQuickSwapCooldownDurationMs() {
+    return quickSwapCooldownDurationMs_;
+  }
+
+  public static final int STATE_CHANGE_DELAY_UNTIL_TURN_FIELD_NUMBER = 14;
+  private long stateChangeDelayUntilTurn_;
+  /**
+   * <code>int64 state_change_delay_until_turn = 14;</code>
+   * @return The stateChangeDelayUntilTurn.
+   */
+  @java.lang.Override
+  public long getStateChangeDelayUntilTurn() {
+    return stateChangeDelayUntilTurn_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -5289,47 +5289,47 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (eihblpligfa_ != POGOProtos.Rpc.CombatProto.CombatState.UNSET.getNumber()) {
-      output.writeEnum(1, eihblpligfa_);
+    if (combatState_ != POGOProtos.Rpc.CombatProto.CombatState.UNSET.getNumber()) {
+      output.writeEnum(1, combatState_);
     }
-    if (!getHdegllgmeihBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, hdegllgmeih_);
+    if (!getCombatIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, combatId_);
     }
-    if (ekinggfmndg_ != null) {
-      output.writeMessage(3, getEkinggfmndg());
+    if (player_ != null) {
+      output.writeMessage(3, getPlayer());
     }
-    if (hlpfmbellom_ != null) {
-      output.writeMessage(4, getHlpfmbellom());
+    if (opponent_ != null) {
+      output.writeMessage(4, getOpponent());
     }
-    if (ibbcgicfalh_ != 0L) {
-      output.writeInt64(5, ibbcgicfalh_);
+    if (combatStartMs_ != 0L) {
+      output.writeInt64(5, combatStartMs_);
     }
-    if (ndfohhnjkka_ != 0L) {
-      output.writeInt64(6, ndfohhnjkka_);
+    if (combatEndMs_ != 0L) {
+      output.writeInt64(6, combatEndMs_);
     }
-    if (dikaifhaigb_ != 0L) {
-      output.writeInt64(7, dikaifhaigb_);
+    if (serverMs_ != 0L) {
+      output.writeInt64(7, serverMs_);
     }
-    if (didegcjnmpl_ != 0) {
-      output.writeInt32(8, didegcjnmpl_);
+    if (currentTurn_ != 0) {
+      output.writeInt32(8, currentTurn_);
     }
-    if (lcoheelaocd_ != 0L) {
-      output.writeInt64(9, lcoheelaocd_);
+    if (turnStartMs_ != 0L) {
+      output.writeInt64(9, turnStartMs_);
     }
-    if (pigoecpdfgc_ != 0L) {
-      output.writeInt64(10, pigoecpdfgc_);
+    if (minigameEndMs_ != 0L) {
+      output.writeInt64(10, minigameEndMs_);
     }
-    if (niibnpojdek_ != 0L) {
-      output.writeInt64(11, niibnpojdek_);
+    if (minigameSubmitScoreEndMs_ != 0L) {
+      output.writeInt64(11, minigameSubmitScoreEndMs_);
     }
-    if (goelpbehckl_ != 0L) {
-      output.writeInt64(12, goelpbehckl_);
+    if (changePokemonEndMs_ != 0L) {
+      output.writeInt64(12, changePokemonEndMs_);
     }
-    if (jeneikajhel_ != 0L) {
-      output.writeInt64(13, jeneikajhel_);
+    if (quickSwapCooldownDurationMs_ != 0L) {
+      output.writeInt64(13, quickSwapCooldownDurationMs_);
     }
-    if (dmjeiagkjlo_ != 0L) {
-      output.writeInt64(14, dmjeiagkjlo_);
+    if (stateChangeDelayUntilTurn_ != 0L) {
+      output.writeInt64(14, stateChangeDelayUntilTurn_);
     }
     unknownFields.writeTo(output);
   }
@@ -5340,60 +5340,60 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (eihblpligfa_ != POGOProtos.Rpc.CombatProto.CombatState.UNSET.getNumber()) {
+    if (combatState_ != POGOProtos.Rpc.CombatProto.CombatState.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, eihblpligfa_);
+        .computeEnumSize(1, combatState_);
     }
-    if (!getHdegllgmeihBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, hdegllgmeih_);
+    if (!getCombatIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, combatId_);
     }
-    if (ekinggfmndg_ != null) {
+    if (player_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getEkinggfmndg());
+        .computeMessageSize(3, getPlayer());
     }
-    if (hlpfmbellom_ != null) {
+    if (opponent_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getHlpfmbellom());
+        .computeMessageSize(4, getOpponent());
     }
-    if (ibbcgicfalh_ != 0L) {
+    if (combatStartMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(5, ibbcgicfalh_);
+        .computeInt64Size(5, combatStartMs_);
     }
-    if (ndfohhnjkka_ != 0L) {
+    if (combatEndMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(6, ndfohhnjkka_);
+        .computeInt64Size(6, combatEndMs_);
     }
-    if (dikaifhaigb_ != 0L) {
+    if (serverMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(7, dikaifhaigb_);
+        .computeInt64Size(7, serverMs_);
     }
-    if (didegcjnmpl_ != 0) {
+    if (currentTurn_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(8, didegcjnmpl_);
+        .computeInt32Size(8, currentTurn_);
     }
-    if (lcoheelaocd_ != 0L) {
+    if (turnStartMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(9, lcoheelaocd_);
+        .computeInt64Size(9, turnStartMs_);
     }
-    if (pigoecpdfgc_ != 0L) {
+    if (minigameEndMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(10, pigoecpdfgc_);
+        .computeInt64Size(10, minigameEndMs_);
     }
-    if (niibnpojdek_ != 0L) {
+    if (minigameSubmitScoreEndMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(11, niibnpojdek_);
+        .computeInt64Size(11, minigameSubmitScoreEndMs_);
     }
-    if (goelpbehckl_ != 0L) {
+    if (changePokemonEndMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(12, goelpbehckl_);
+        .computeInt64Size(12, changePokemonEndMs_);
     }
-    if (jeneikajhel_ != 0L) {
+    if (quickSwapCooldownDurationMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(13, jeneikajhel_);
+        .computeInt64Size(13, quickSwapCooldownDurationMs_);
     }
-    if (dmjeiagkjlo_ != 0L) {
+    if (stateChangeDelayUntilTurn_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(14, dmjeiagkjlo_);
+        .computeInt64Size(14, stateChangeDelayUntilTurn_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -5410,39 +5410,39 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.CombatProto other = (POGOProtos.Rpc.CombatProto) obj;
 
-    if (eihblpligfa_ != other.eihblpligfa_) return false;
-    if (!getHdegllgmeih()
-        .equals(other.getHdegllgmeih())) return false;
-    if (hasEkinggfmndg() != other.hasEkinggfmndg()) return false;
-    if (hasEkinggfmndg()) {
-      if (!getEkinggfmndg()
-          .equals(other.getEkinggfmndg())) return false;
+    if (combatState_ != other.combatState_) return false;
+    if (!getCombatId()
+        .equals(other.getCombatId())) return false;
+    if (hasPlayer() != other.hasPlayer()) return false;
+    if (hasPlayer()) {
+      if (!getPlayer()
+          .equals(other.getPlayer())) return false;
     }
-    if (hasHlpfmbellom() != other.hasHlpfmbellom()) return false;
-    if (hasHlpfmbellom()) {
-      if (!getHlpfmbellom()
-          .equals(other.getHlpfmbellom())) return false;
+    if (hasOpponent() != other.hasOpponent()) return false;
+    if (hasOpponent()) {
+      if (!getOpponent()
+          .equals(other.getOpponent())) return false;
     }
-    if (getIbbcgicfalh()
-        != other.getIbbcgicfalh()) return false;
-    if (getNdfohhnjkka()
-        != other.getNdfohhnjkka()) return false;
-    if (getDikaifhaigb()
-        != other.getDikaifhaigb()) return false;
-    if (getDidegcjnmpl()
-        != other.getDidegcjnmpl()) return false;
-    if (getLcoheelaocd()
-        != other.getLcoheelaocd()) return false;
-    if (getPigoecpdfgc()
-        != other.getPigoecpdfgc()) return false;
-    if (getNiibnpojdek()
-        != other.getNiibnpojdek()) return false;
-    if (getGoelpbehckl()
-        != other.getGoelpbehckl()) return false;
-    if (getJeneikajhel()
-        != other.getJeneikajhel()) return false;
-    if (getDmjeiagkjlo()
-        != other.getDmjeiagkjlo()) return false;
+    if (getCombatStartMs()
+        != other.getCombatStartMs()) return false;
+    if (getCombatEndMs()
+        != other.getCombatEndMs()) return false;
+    if (getServerMs()
+        != other.getServerMs()) return false;
+    if (getCurrentTurn()
+        != other.getCurrentTurn()) return false;
+    if (getTurnStartMs()
+        != other.getTurnStartMs()) return false;
+    if (getMinigameEndMs()
+        != other.getMinigameEndMs()) return false;
+    if (getMinigameSubmitScoreEndMs()
+        != other.getMinigameSubmitScoreEndMs()) return false;
+    if (getChangePokemonEndMs()
+        != other.getChangePokemonEndMs()) return false;
+    if (getQuickSwapCooldownDurationMs()
+        != other.getQuickSwapCooldownDurationMs()) return false;
+    if (getStateChangeDelayUntilTurn()
+        != other.getStateChangeDelayUntilTurn()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -5454,47 +5454,47 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + EIHBLPLIGFA_FIELD_NUMBER;
-    hash = (53 * hash) + eihblpligfa_;
-    hash = (37 * hash) + HDEGLLGMEIH_FIELD_NUMBER;
-    hash = (53 * hash) + getHdegllgmeih().hashCode();
-    if (hasEkinggfmndg()) {
-      hash = (37 * hash) + EKINGGFMNDG_FIELD_NUMBER;
-      hash = (53 * hash) + getEkinggfmndg().hashCode();
+    hash = (37 * hash) + COMBAT_STATE_FIELD_NUMBER;
+    hash = (53 * hash) + combatState_;
+    hash = (37 * hash) + COMBAT_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getCombatId().hashCode();
+    if (hasPlayer()) {
+      hash = (37 * hash) + PLAYER_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayer().hashCode();
     }
-    if (hasHlpfmbellom()) {
-      hash = (37 * hash) + HLPFMBELLOM_FIELD_NUMBER;
-      hash = (53 * hash) + getHlpfmbellom().hashCode();
+    if (hasOpponent()) {
+      hash = (37 * hash) + OPPONENT_FIELD_NUMBER;
+      hash = (53 * hash) + getOpponent().hashCode();
     }
-    hash = (37 * hash) + IBBCGICFALH_FIELD_NUMBER;
+    hash = (37 * hash) + COMBAT_START_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getIbbcgicfalh());
-    hash = (37 * hash) + NDFOHHNJKKA_FIELD_NUMBER;
+        getCombatStartMs());
+    hash = (37 * hash) + COMBAT_END_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getNdfohhnjkka());
-    hash = (37 * hash) + DIKAIFHAIGB_FIELD_NUMBER;
+        getCombatEndMs());
+    hash = (37 * hash) + SERVER_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getDikaifhaigb());
-    hash = (37 * hash) + DIDEGCJNMPL_FIELD_NUMBER;
-    hash = (53 * hash) + getDidegcjnmpl();
-    hash = (37 * hash) + LCOHEELAOCD_FIELD_NUMBER;
+        getServerMs());
+    hash = (37 * hash) + CURRENT_TURN_FIELD_NUMBER;
+    hash = (53 * hash) + getCurrentTurn();
+    hash = (37 * hash) + TURN_START_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getLcoheelaocd());
-    hash = (37 * hash) + PIGOECPDFGC_FIELD_NUMBER;
+        getTurnStartMs());
+    hash = (37 * hash) + MINIGAME_END_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getPigoecpdfgc());
-    hash = (37 * hash) + NIIBNPOJDEK_FIELD_NUMBER;
+        getMinigameEndMs());
+    hash = (37 * hash) + MINIGAME_SUBMIT_SCORE_END_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getNiibnpojdek());
-    hash = (37 * hash) + GOELPBEHCKL_FIELD_NUMBER;
+        getMinigameSubmitScoreEndMs());
+    hash = (37 * hash) + CHANGE_POKEMON_END_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getGoelpbehckl());
-    hash = (37 * hash) + JENEIKAJHEL_FIELD_NUMBER;
+        getChangePokemonEndMs());
+    hash = (37 * hash) + QUICK_SWAP_COOLDOWN_DURATION_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getJeneikajhel());
-    hash = (37 * hash) + DMJEIAGKJLO_FIELD_NUMBER;
+        getQuickSwapCooldownDurationMs());
+    hash = (37 * hash) + STATE_CHANGE_DELAY_UNTIL_TURN_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getDmjeiagkjlo());
+        getStateChangeDelayUntilTurn());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -5632,41 +5632,41 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      eihblpligfa_ = 0;
+      combatState_ = 0;
 
-      hdegllgmeih_ = "";
+      combatId_ = "";
 
-      if (ekinggfmndgBuilder_ == null) {
-        ekinggfmndg_ = null;
+      if (playerBuilder_ == null) {
+        player_ = null;
       } else {
-        ekinggfmndg_ = null;
-        ekinggfmndgBuilder_ = null;
+        player_ = null;
+        playerBuilder_ = null;
       }
-      if (hlpfmbellomBuilder_ == null) {
-        hlpfmbellom_ = null;
+      if (opponentBuilder_ == null) {
+        opponent_ = null;
       } else {
-        hlpfmbellom_ = null;
-        hlpfmbellomBuilder_ = null;
+        opponent_ = null;
+        opponentBuilder_ = null;
       }
-      ibbcgicfalh_ = 0L;
+      combatStartMs_ = 0L;
 
-      ndfohhnjkka_ = 0L;
+      combatEndMs_ = 0L;
 
-      dikaifhaigb_ = 0L;
+      serverMs_ = 0L;
 
-      didegcjnmpl_ = 0;
+      currentTurn_ = 0;
 
-      lcoheelaocd_ = 0L;
+      turnStartMs_ = 0L;
 
-      pigoecpdfgc_ = 0L;
+      minigameEndMs_ = 0L;
 
-      niibnpojdek_ = 0L;
+      minigameSubmitScoreEndMs_ = 0L;
 
-      goelpbehckl_ = 0L;
+      changePokemonEndMs_ = 0L;
 
-      jeneikajhel_ = 0L;
+      quickSwapCooldownDurationMs_ = 0L;
 
-      dmjeiagkjlo_ = 0L;
+      stateChangeDelayUntilTurn_ = 0L;
 
       return this;
     }
@@ -5694,28 +5694,28 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.CombatProto buildPartial() {
       POGOProtos.Rpc.CombatProto result = new POGOProtos.Rpc.CombatProto(this);
-      result.eihblpligfa_ = eihblpligfa_;
-      result.hdegllgmeih_ = hdegllgmeih_;
-      if (ekinggfmndgBuilder_ == null) {
-        result.ekinggfmndg_ = ekinggfmndg_;
+      result.combatState_ = combatState_;
+      result.combatId_ = combatId_;
+      if (playerBuilder_ == null) {
+        result.player_ = player_;
       } else {
-        result.ekinggfmndg_ = ekinggfmndgBuilder_.build();
+        result.player_ = playerBuilder_.build();
       }
-      if (hlpfmbellomBuilder_ == null) {
-        result.hlpfmbellom_ = hlpfmbellom_;
+      if (opponentBuilder_ == null) {
+        result.opponent_ = opponent_;
       } else {
-        result.hlpfmbellom_ = hlpfmbellomBuilder_.build();
+        result.opponent_ = opponentBuilder_.build();
       }
-      result.ibbcgicfalh_ = ibbcgicfalh_;
-      result.ndfohhnjkka_ = ndfohhnjkka_;
-      result.dikaifhaigb_ = dikaifhaigb_;
-      result.didegcjnmpl_ = didegcjnmpl_;
-      result.lcoheelaocd_ = lcoheelaocd_;
-      result.pigoecpdfgc_ = pigoecpdfgc_;
-      result.niibnpojdek_ = niibnpojdek_;
-      result.goelpbehckl_ = goelpbehckl_;
-      result.jeneikajhel_ = jeneikajhel_;
-      result.dmjeiagkjlo_ = dmjeiagkjlo_;
+      result.combatStartMs_ = combatStartMs_;
+      result.combatEndMs_ = combatEndMs_;
+      result.serverMs_ = serverMs_;
+      result.currentTurn_ = currentTurn_;
+      result.turnStartMs_ = turnStartMs_;
+      result.minigameEndMs_ = minigameEndMs_;
+      result.minigameSubmitScoreEndMs_ = minigameSubmitScoreEndMs_;
+      result.changePokemonEndMs_ = changePokemonEndMs_;
+      result.quickSwapCooldownDurationMs_ = quickSwapCooldownDurationMs_;
+      result.stateChangeDelayUntilTurn_ = stateChangeDelayUntilTurn_;
       onBuilt();
       return result;
     }
@@ -5764,48 +5764,48 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.CombatProto other) {
       if (other == POGOProtos.Rpc.CombatProto.getDefaultInstance()) return this;
-      if (other.eihblpligfa_ != 0) {
-        setEihblpligfaValue(other.getEihblpligfaValue());
+      if (other.combatState_ != 0) {
+        setCombatStateValue(other.getCombatStateValue());
       }
-      if (!other.getHdegllgmeih().isEmpty()) {
-        hdegllgmeih_ = other.hdegllgmeih_;
+      if (!other.getCombatId().isEmpty()) {
+        combatId_ = other.combatId_;
         onChanged();
       }
-      if (other.hasEkinggfmndg()) {
-        mergeEkinggfmndg(other.getEkinggfmndg());
+      if (other.hasPlayer()) {
+        mergePlayer(other.getPlayer());
       }
-      if (other.hasHlpfmbellom()) {
-        mergeHlpfmbellom(other.getHlpfmbellom());
+      if (other.hasOpponent()) {
+        mergeOpponent(other.getOpponent());
       }
-      if (other.getIbbcgicfalh() != 0L) {
-        setIbbcgicfalh(other.getIbbcgicfalh());
+      if (other.getCombatStartMs() != 0L) {
+        setCombatStartMs(other.getCombatStartMs());
       }
-      if (other.getNdfohhnjkka() != 0L) {
-        setNdfohhnjkka(other.getNdfohhnjkka());
+      if (other.getCombatEndMs() != 0L) {
+        setCombatEndMs(other.getCombatEndMs());
       }
-      if (other.getDikaifhaigb() != 0L) {
-        setDikaifhaigb(other.getDikaifhaigb());
+      if (other.getServerMs() != 0L) {
+        setServerMs(other.getServerMs());
       }
-      if (other.getDidegcjnmpl() != 0) {
-        setDidegcjnmpl(other.getDidegcjnmpl());
+      if (other.getCurrentTurn() != 0) {
+        setCurrentTurn(other.getCurrentTurn());
       }
-      if (other.getLcoheelaocd() != 0L) {
-        setLcoheelaocd(other.getLcoheelaocd());
+      if (other.getTurnStartMs() != 0L) {
+        setTurnStartMs(other.getTurnStartMs());
       }
-      if (other.getPigoecpdfgc() != 0L) {
-        setPigoecpdfgc(other.getPigoecpdfgc());
+      if (other.getMinigameEndMs() != 0L) {
+        setMinigameEndMs(other.getMinigameEndMs());
       }
-      if (other.getNiibnpojdek() != 0L) {
-        setNiibnpojdek(other.getNiibnpojdek());
+      if (other.getMinigameSubmitScoreEndMs() != 0L) {
+        setMinigameSubmitScoreEndMs(other.getMinigameSubmitScoreEndMs());
       }
-      if (other.getGoelpbehckl() != 0L) {
-        setGoelpbehckl(other.getGoelpbehckl());
+      if (other.getChangePokemonEndMs() != 0L) {
+        setChangePokemonEndMs(other.getChangePokemonEndMs());
       }
-      if (other.getJeneikajhel() != 0L) {
-        setJeneikajhel(other.getJeneikajhel());
+      if (other.getQuickSwapCooldownDurationMs() != 0L) {
+        setQuickSwapCooldownDurationMs(other.getQuickSwapCooldownDurationMs());
       }
-      if (other.getDmjeiagkjlo() != 0L) {
-        setDmjeiagkjlo(other.getDmjeiagkjlo());
+      if (other.getStateChangeDelayUntilTurn() != 0L) {
+        setStateChangeDelayUntilTurn(other.getStateChangeDelayUntilTurn());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -5836,680 +5836,680 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int eihblpligfa_ = 0;
+    private int combatState_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
-     * @return The enum numeric value on the wire for eihblpligfa.
+     * <code>.POGOProtos.Rpc.CombatProto.CombatState combat_state = 1;</code>
+     * @return The enum numeric value on the wire for combatState.
      */
-    @java.lang.Override public int getEihblpligfaValue() {
-      return eihblpligfa_;
+    @java.lang.Override public int getCombatStateValue() {
+      return combatState_;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
-     * @param value The enum numeric value on the wire for eihblpligfa to set.
+     * <code>.POGOProtos.Rpc.CombatProto.CombatState combat_state = 1;</code>
+     * @param value The enum numeric value on the wire for combatState to set.
      * @return This builder for chaining.
      */
-    public Builder setEihblpligfaValue(int value) {
+    public Builder setCombatStateValue(int value) {
       
-      eihblpligfa_ = value;
+      combatState_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
-     * @return The eihblpligfa.
+     * <code>.POGOProtos.Rpc.CombatProto.CombatState combat_state = 1;</code>
+     * @return The combatState.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatProto.CombatState getEihblpligfa() {
+    public POGOProtos.Rpc.CombatProto.CombatState getCombatState() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.CombatProto.CombatState result = POGOProtos.Rpc.CombatProto.CombatState.valueOf(eihblpligfa_);
+      POGOProtos.Rpc.CombatProto.CombatState result = POGOProtos.Rpc.CombatProto.CombatState.valueOf(combatState_);
       return result == null ? POGOProtos.Rpc.CombatProto.CombatState.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
-     * @param value The eihblpligfa to set.
+     * <code>.POGOProtos.Rpc.CombatProto.CombatState combat_state = 1;</code>
+     * @param value The combatState to set.
      * @return This builder for chaining.
      */
-    public Builder setEihblpligfa(POGOProtos.Rpc.CombatProto.CombatState value) {
+    public Builder setCombatState(POGOProtos.Rpc.CombatProto.CombatState value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      eihblpligfa_ = value.getNumber();
+      combatState_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatState eihblpligfa = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatState combat_state = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearEihblpligfa() {
+    public Builder clearCombatState() {
       
-      eihblpligfa_ = 0;
+      combatState_ = 0;
       onChanged();
       return this;
     }
 
-    private java.lang.Object hdegllgmeih_ = "";
+    private java.lang.Object combatId_ = "";
     /**
-     * <code>string hdegllgmeih = 2;</code>
-     * @return The hdegllgmeih.
+     * <code>string combat_id = 2;</code>
+     * @return The combatId.
      */
-    public java.lang.String getHdegllgmeih() {
-      java.lang.Object ref = hdegllgmeih_;
+    public java.lang.String getCombatId() {
+      java.lang.Object ref = combatId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        hdegllgmeih_ = s;
+        combatId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string hdegllgmeih = 2;</code>
-     * @return The bytes for hdegllgmeih.
+     * <code>string combat_id = 2;</code>
+     * @return The bytes for combatId.
      */
     public com.google.protobuf.ByteString
-        getHdegllgmeihBytes() {
-      java.lang.Object ref = hdegllgmeih_;
+        getCombatIdBytes() {
+      java.lang.Object ref = combatId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        hdegllgmeih_ = b;
+        combatId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string hdegllgmeih = 2;</code>
-     * @param value The hdegllgmeih to set.
+     * <code>string combat_id = 2;</code>
+     * @param value The combatId to set.
      * @return This builder for chaining.
      */
-    public Builder setHdegllgmeih(
+    public Builder setCombatId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      hdegllgmeih_ = value;
+      combatId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string hdegllgmeih = 2;</code>
+     * <code>string combat_id = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearHdegllgmeih() {
+    public Builder clearCombatId() {
       
-      hdegllgmeih_ = getDefaultInstance().getHdegllgmeih();
+      combatId_ = getDefaultInstance().getCombatId();
       onChanged();
       return this;
     }
     /**
-     * <code>string hdegllgmeih = 2;</code>
-     * @param value The bytes for hdegllgmeih to set.
+     * <code>string combat_id = 2;</code>
+     * @param value The bytes for combatId to set.
      * @return This builder for chaining.
      */
-    public Builder setHdegllgmeihBytes(
+    public Builder setCombatIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      hdegllgmeih_ = value;
+      combatId_ = value;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg_;
+    private POGOProtos.Rpc.CombatProto.CombatPlayerProto player_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder> ekinggfmndgBuilder_;
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder> playerBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
-     * @return Whether the ekinggfmndg field is set.
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
+     * @return Whether the player field is set.
      */
-    public boolean hasEkinggfmndg() {
-      return ekinggfmndgBuilder_ != null || ekinggfmndg_ != null;
+    public boolean hasPlayer() {
+      return playerBuilder_ != null || player_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
-     * @return The ekinggfmndg.
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
+     * @return The player.
      */
-    public POGOProtos.Rpc.CombatProto.CombatPlayerProto getEkinggfmndg() {
-      if (ekinggfmndgBuilder_ == null) {
-        return ekinggfmndg_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : ekinggfmndg_;
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProto getPlayer() {
+      if (playerBuilder_ == null) {
+        return player_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : player_;
       } else {
-        return ekinggfmndgBuilder_.getMessage();
+        return playerBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
      */
-    public Builder setEkinggfmndg(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
-      if (ekinggfmndgBuilder_ == null) {
+    public Builder setPlayer(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
+      if (playerBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ekinggfmndg_ = value;
+        player_ = value;
         onChanged();
       } else {
-        ekinggfmndgBuilder_.setMessage(value);
+        playerBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
      */
-    public Builder setEkinggfmndg(
+    public Builder setPlayer(
         POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder builderForValue) {
-      if (ekinggfmndgBuilder_ == null) {
-        ekinggfmndg_ = builderForValue.build();
+      if (playerBuilder_ == null) {
+        player_ = builderForValue.build();
         onChanged();
       } else {
-        ekinggfmndgBuilder_.setMessage(builderForValue.build());
+        playerBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
      */
-    public Builder mergeEkinggfmndg(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
-      if (ekinggfmndgBuilder_ == null) {
-        if (ekinggfmndg_ != null) {
-          ekinggfmndg_ =
-            POGOProtos.Rpc.CombatProto.CombatPlayerProto.newBuilder(ekinggfmndg_).mergeFrom(value).buildPartial();
+    public Builder mergePlayer(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
+      if (playerBuilder_ == null) {
+        if (player_ != null) {
+          player_ =
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto.newBuilder(player_).mergeFrom(value).buildPartial();
         } else {
-          ekinggfmndg_ = value;
+          player_ = value;
         }
         onChanged();
       } else {
-        ekinggfmndgBuilder_.mergeFrom(value);
+        playerBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
      */
-    public Builder clearEkinggfmndg() {
-      if (ekinggfmndgBuilder_ == null) {
-        ekinggfmndg_ = null;
+    public Builder clearPlayer() {
+      if (playerBuilder_ == null) {
+        player_ = null;
         onChanged();
       } else {
-        ekinggfmndg_ = null;
-        ekinggfmndgBuilder_ = null;
+        player_ = null;
+        playerBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
      */
-    public POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder getEkinggfmndgBuilder() {
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder getPlayerBuilder() {
       
       onChanged();
-      return getEkinggfmndgFieldBuilder().getBuilder();
+      return getPlayerFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
      */
-    public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getEkinggfmndgOrBuilder() {
-      if (ekinggfmndgBuilder_ != null) {
-        return ekinggfmndgBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getPlayerOrBuilder() {
+      if (playerBuilder_ != null) {
+        return playerBuilder_.getMessageOrBuilder();
       } else {
-        return ekinggfmndg_ == null ?
-            POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : ekinggfmndg_;
+        return player_ == null ?
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : player_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto ekinggfmndg = 3;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto player = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder> 
-        getEkinggfmndgFieldBuilder() {
-      if (ekinggfmndgBuilder_ == null) {
-        ekinggfmndgBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getPlayerFieldBuilder() {
+      if (playerBuilder_ == null) {
+        playerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder>(
-                getEkinggfmndg(),
+                getPlayer(),
                 getParentForChildren(),
                 isClean());
-        ekinggfmndg_ = null;
+        player_ = null;
       }
-      return ekinggfmndgBuilder_;
+      return playerBuilder_;
     }
 
-    private POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom_;
+    private POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder> hlpfmbellomBuilder_;
+        POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder> opponentBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
-     * @return Whether the hlpfmbellom field is set.
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
+     * @return Whether the opponent field is set.
      */
-    public boolean hasHlpfmbellom() {
-      return hlpfmbellomBuilder_ != null || hlpfmbellom_ != null;
+    public boolean hasOpponent() {
+      return opponentBuilder_ != null || opponent_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
-     * @return The hlpfmbellom.
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
+     * @return The opponent.
      */
-    public POGOProtos.Rpc.CombatProto.CombatPlayerProto getHlpfmbellom() {
-      if (hlpfmbellomBuilder_ == null) {
-        return hlpfmbellom_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : hlpfmbellom_;
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProto getOpponent() {
+      if (opponentBuilder_ == null) {
+        return opponent_ == null ? POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : opponent_;
       } else {
-        return hlpfmbellomBuilder_.getMessage();
+        return opponentBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
      */
-    public Builder setHlpfmbellom(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
-      if (hlpfmbellomBuilder_ == null) {
+    public Builder setOpponent(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
+      if (opponentBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        hlpfmbellom_ = value;
+        opponent_ = value;
         onChanged();
       } else {
-        hlpfmbellomBuilder_.setMessage(value);
+        opponentBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
      */
-    public Builder setHlpfmbellom(
+    public Builder setOpponent(
         POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder builderForValue) {
-      if (hlpfmbellomBuilder_ == null) {
-        hlpfmbellom_ = builderForValue.build();
+      if (opponentBuilder_ == null) {
+        opponent_ = builderForValue.build();
         onChanged();
       } else {
-        hlpfmbellomBuilder_.setMessage(builderForValue.build());
+        opponentBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
      */
-    public Builder mergeHlpfmbellom(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
-      if (hlpfmbellomBuilder_ == null) {
-        if (hlpfmbellom_ != null) {
-          hlpfmbellom_ =
-            POGOProtos.Rpc.CombatProto.CombatPlayerProto.newBuilder(hlpfmbellom_).mergeFrom(value).buildPartial();
+    public Builder mergeOpponent(POGOProtos.Rpc.CombatProto.CombatPlayerProto value) {
+      if (opponentBuilder_ == null) {
+        if (opponent_ != null) {
+          opponent_ =
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto.newBuilder(opponent_).mergeFrom(value).buildPartial();
         } else {
-          hlpfmbellom_ = value;
+          opponent_ = value;
         }
         onChanged();
       } else {
-        hlpfmbellomBuilder_.mergeFrom(value);
+        opponentBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
      */
-    public Builder clearHlpfmbellom() {
-      if (hlpfmbellomBuilder_ == null) {
-        hlpfmbellom_ = null;
+    public Builder clearOpponent() {
+      if (opponentBuilder_ == null) {
+        opponent_ = null;
         onChanged();
       } else {
-        hlpfmbellom_ = null;
-        hlpfmbellomBuilder_ = null;
+        opponent_ = null;
+        opponentBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
      */
-    public POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder getHlpfmbellomBuilder() {
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder getOpponentBuilder() {
       
       onChanged();
-      return getHlpfmbellomFieldBuilder().getBuilder();
+      return getOpponentFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
      */
-    public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getHlpfmbellomOrBuilder() {
-      if (hlpfmbellomBuilder_ != null) {
-        return hlpfmbellomBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder getOpponentOrBuilder() {
+      if (opponentBuilder_ != null) {
+        return opponentBuilder_.getMessageOrBuilder();
       } else {
-        return hlpfmbellom_ == null ?
-            POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : hlpfmbellom_;
+        return opponent_ == null ?
+            POGOProtos.Rpc.CombatProto.CombatPlayerProto.getDefaultInstance() : opponent_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto hlpfmbellom = 4;</code>
+     * <code>.POGOProtos.Rpc.CombatProto.CombatPlayerProto opponent = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder> 
-        getHlpfmbellomFieldBuilder() {
-      if (hlpfmbellomBuilder_ == null) {
-        hlpfmbellomBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getOpponentFieldBuilder() {
+      if (opponentBuilder_ == null) {
+        opponentBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.CombatProto.CombatPlayerProto, POGOProtos.Rpc.CombatProto.CombatPlayerProto.Builder, POGOProtos.Rpc.CombatProto.CombatPlayerProtoOrBuilder>(
-                getHlpfmbellom(),
+                getOpponent(),
                 getParentForChildren(),
                 isClean());
-        hlpfmbellom_ = null;
+        opponent_ = null;
       }
-      return hlpfmbellomBuilder_;
+      return opponentBuilder_;
     }
 
-    private long ibbcgicfalh_ ;
+    private long combatStartMs_ ;
     /**
-     * <code>int64 ibbcgicfalh = 5;</code>
-     * @return The ibbcgicfalh.
+     * <code>int64 combat_start_ms = 5;</code>
+     * @return The combatStartMs.
      */
     @java.lang.Override
-    public long getIbbcgicfalh() {
-      return ibbcgicfalh_;
+    public long getCombatStartMs() {
+      return combatStartMs_;
     }
     /**
-     * <code>int64 ibbcgicfalh = 5;</code>
-     * @param value The ibbcgicfalh to set.
+     * <code>int64 combat_start_ms = 5;</code>
+     * @param value The combatStartMs to set.
      * @return This builder for chaining.
      */
-    public Builder setIbbcgicfalh(long value) {
+    public Builder setCombatStartMs(long value) {
       
-      ibbcgicfalh_ = value;
+      combatStartMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 ibbcgicfalh = 5;</code>
+     * <code>int64 combat_start_ms = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIbbcgicfalh() {
+    public Builder clearCombatStartMs() {
       
-      ibbcgicfalh_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private long ndfohhnjkka_ ;
-    /**
-     * <code>int64 ndfohhnjkka = 6;</code>
-     * @return The ndfohhnjkka.
-     */
-    @java.lang.Override
-    public long getNdfohhnjkka() {
-      return ndfohhnjkka_;
-    }
-    /**
-     * <code>int64 ndfohhnjkka = 6;</code>
-     * @param value The ndfohhnjkka to set.
-     * @return This builder for chaining.
-     */
-    public Builder setNdfohhnjkka(long value) {
-      
-      ndfohhnjkka_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 ndfohhnjkka = 6;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearNdfohhnjkka() {
-      
-      ndfohhnjkka_ = 0L;
+      combatStartMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private long dikaifhaigb_ ;
+    private long combatEndMs_ ;
     /**
-     * <code>int64 dikaifhaigb = 7;</code>
-     * @return The dikaifhaigb.
+     * <code>int64 combat_end_ms = 6;</code>
+     * @return The combatEndMs.
      */
     @java.lang.Override
-    public long getDikaifhaigb() {
-      return dikaifhaigb_;
+    public long getCombatEndMs() {
+      return combatEndMs_;
     }
     /**
-     * <code>int64 dikaifhaigb = 7;</code>
-     * @param value The dikaifhaigb to set.
+     * <code>int64 combat_end_ms = 6;</code>
+     * @param value The combatEndMs to set.
      * @return This builder for chaining.
      */
-    public Builder setDikaifhaigb(long value) {
+    public Builder setCombatEndMs(long value) {
       
-      dikaifhaigb_ = value;
+      combatEndMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 dikaifhaigb = 7;</code>
+     * <code>int64 combat_end_ms = 6;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDikaifhaigb() {
+    public Builder clearCombatEndMs() {
       
-      dikaifhaigb_ = 0L;
+      combatEndMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private int didegcjnmpl_ ;
+    private long serverMs_ ;
     /**
-     * <code>int32 didegcjnmpl = 8;</code>
-     * @return The didegcjnmpl.
+     * <code>int64 server_ms = 7;</code>
+     * @return The serverMs.
      */
     @java.lang.Override
-    public int getDidegcjnmpl() {
-      return didegcjnmpl_;
+    public long getServerMs() {
+      return serverMs_;
     }
     /**
-     * <code>int32 didegcjnmpl = 8;</code>
-     * @param value The didegcjnmpl to set.
+     * <code>int64 server_ms = 7;</code>
+     * @param value The serverMs to set.
      * @return This builder for chaining.
      */
-    public Builder setDidegcjnmpl(int value) {
+    public Builder setServerMs(long value) {
       
-      didegcjnmpl_ = value;
+      serverMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 didegcjnmpl = 8;</code>
+     * <code>int64 server_ms = 7;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDidegcjnmpl() {
+    public Builder clearServerMs() {
       
-      didegcjnmpl_ = 0;
+      serverMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private long lcoheelaocd_ ;
+    private int currentTurn_ ;
     /**
-     * <code>int64 lcoheelaocd = 9;</code>
-     * @return The lcoheelaocd.
+     * <code>int32 current_turn = 8;</code>
+     * @return The currentTurn.
      */
     @java.lang.Override
-    public long getLcoheelaocd() {
-      return lcoheelaocd_;
+    public int getCurrentTurn() {
+      return currentTurn_;
     }
     /**
-     * <code>int64 lcoheelaocd = 9;</code>
-     * @param value The lcoheelaocd to set.
+     * <code>int32 current_turn = 8;</code>
+     * @param value The currentTurn to set.
      * @return This builder for chaining.
      */
-    public Builder setLcoheelaocd(long value) {
+    public Builder setCurrentTurn(int value) {
       
-      lcoheelaocd_ = value;
+      currentTurn_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 lcoheelaocd = 9;</code>
+     * <code>int32 current_turn = 8;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLcoheelaocd() {
+    public Builder clearCurrentTurn() {
       
-      lcoheelaocd_ = 0L;
+      currentTurn_ = 0;
       onChanged();
       return this;
     }
 
-    private long pigoecpdfgc_ ;
+    private long turnStartMs_ ;
     /**
-     * <code>int64 pigoecpdfgc = 10;</code>
-     * @return The pigoecpdfgc.
+     * <code>int64 turn_start_ms = 9;</code>
+     * @return The turnStartMs.
      */
     @java.lang.Override
-    public long getPigoecpdfgc() {
-      return pigoecpdfgc_;
+    public long getTurnStartMs() {
+      return turnStartMs_;
     }
     /**
-     * <code>int64 pigoecpdfgc = 10;</code>
-     * @param value The pigoecpdfgc to set.
+     * <code>int64 turn_start_ms = 9;</code>
+     * @param value The turnStartMs to set.
      * @return This builder for chaining.
      */
-    public Builder setPigoecpdfgc(long value) {
+    public Builder setTurnStartMs(long value) {
       
-      pigoecpdfgc_ = value;
+      turnStartMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 pigoecpdfgc = 10;</code>
+     * <code>int64 turn_start_ms = 9;</code>
      * @return This builder for chaining.
      */
-    public Builder clearPigoecpdfgc() {
+    public Builder clearTurnStartMs() {
       
-      pigoecpdfgc_ = 0L;
+      turnStartMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private long niibnpojdek_ ;
+    private long minigameEndMs_ ;
     /**
-     * <code>int64 niibnpojdek = 11;</code>
-     * @return The niibnpojdek.
+     * <code>int64 minigame_end_ms = 10;</code>
+     * @return The minigameEndMs.
      */
     @java.lang.Override
-    public long getNiibnpojdek() {
-      return niibnpojdek_;
+    public long getMinigameEndMs() {
+      return minigameEndMs_;
     }
     /**
-     * <code>int64 niibnpojdek = 11;</code>
-     * @param value The niibnpojdek to set.
+     * <code>int64 minigame_end_ms = 10;</code>
+     * @param value The minigameEndMs to set.
      * @return This builder for chaining.
      */
-    public Builder setNiibnpojdek(long value) {
+    public Builder setMinigameEndMs(long value) {
       
-      niibnpojdek_ = value;
+      minigameEndMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 niibnpojdek = 11;</code>
+     * <code>int64 minigame_end_ms = 10;</code>
      * @return This builder for chaining.
      */
-    public Builder clearNiibnpojdek() {
+    public Builder clearMinigameEndMs() {
       
-      niibnpojdek_ = 0L;
+      minigameEndMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private long goelpbehckl_ ;
+    private long minigameSubmitScoreEndMs_ ;
     /**
-     * <code>int64 goelpbehckl = 12;</code>
-     * @return The goelpbehckl.
+     * <code>int64 minigame_submit_score_end_ms = 11;</code>
+     * @return The minigameSubmitScoreEndMs.
      */
     @java.lang.Override
-    public long getGoelpbehckl() {
-      return goelpbehckl_;
+    public long getMinigameSubmitScoreEndMs() {
+      return minigameSubmitScoreEndMs_;
     }
     /**
-     * <code>int64 goelpbehckl = 12;</code>
-     * @param value The goelpbehckl to set.
+     * <code>int64 minigame_submit_score_end_ms = 11;</code>
+     * @param value The minigameSubmitScoreEndMs to set.
      * @return This builder for chaining.
      */
-    public Builder setGoelpbehckl(long value) {
+    public Builder setMinigameSubmitScoreEndMs(long value) {
       
-      goelpbehckl_ = value;
+      minigameSubmitScoreEndMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 goelpbehckl = 12;</code>
+     * <code>int64 minigame_submit_score_end_ms = 11;</code>
      * @return This builder for chaining.
      */
-    public Builder clearGoelpbehckl() {
+    public Builder clearMinigameSubmitScoreEndMs() {
       
-      goelpbehckl_ = 0L;
+      minigameSubmitScoreEndMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private long jeneikajhel_ ;
+    private long changePokemonEndMs_ ;
     /**
-     * <code>int64 jeneikajhel = 13;</code>
-     * @return The jeneikajhel.
+     * <code>int64 change_pokemon_end_ms = 12;</code>
+     * @return The changePokemonEndMs.
      */
     @java.lang.Override
-    public long getJeneikajhel() {
-      return jeneikajhel_;
+    public long getChangePokemonEndMs() {
+      return changePokemonEndMs_;
     }
     /**
-     * <code>int64 jeneikajhel = 13;</code>
-     * @param value The jeneikajhel to set.
+     * <code>int64 change_pokemon_end_ms = 12;</code>
+     * @param value The changePokemonEndMs to set.
      * @return This builder for chaining.
      */
-    public Builder setJeneikajhel(long value) {
+    public Builder setChangePokemonEndMs(long value) {
       
-      jeneikajhel_ = value;
+      changePokemonEndMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 jeneikajhel = 13;</code>
+     * <code>int64 change_pokemon_end_ms = 12;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJeneikajhel() {
+    public Builder clearChangePokemonEndMs() {
       
-      jeneikajhel_ = 0L;
+      changePokemonEndMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private long dmjeiagkjlo_ ;
+    private long quickSwapCooldownDurationMs_ ;
     /**
-     * <code>int64 dmjeiagkjlo = 14;</code>
-     * @return The dmjeiagkjlo.
+     * <code>int64 quick_swap_cooldown_duration_ms = 13;</code>
+     * @return The quickSwapCooldownDurationMs.
      */
     @java.lang.Override
-    public long getDmjeiagkjlo() {
-      return dmjeiagkjlo_;
+    public long getQuickSwapCooldownDurationMs() {
+      return quickSwapCooldownDurationMs_;
     }
     /**
-     * <code>int64 dmjeiagkjlo = 14;</code>
-     * @param value The dmjeiagkjlo to set.
+     * <code>int64 quick_swap_cooldown_duration_ms = 13;</code>
+     * @param value The quickSwapCooldownDurationMs to set.
      * @return This builder for chaining.
      */
-    public Builder setDmjeiagkjlo(long value) {
+    public Builder setQuickSwapCooldownDurationMs(long value) {
       
-      dmjeiagkjlo_ = value;
+      quickSwapCooldownDurationMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 dmjeiagkjlo = 14;</code>
+     * <code>int64 quick_swap_cooldown_duration_ms = 13;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDmjeiagkjlo() {
+    public Builder clearQuickSwapCooldownDurationMs() {
       
-      dmjeiagkjlo_ = 0L;
+      quickSwapCooldownDurationMs_ = 0L;
+      onChanged();
+      return this;
+    }
+
+    private long stateChangeDelayUntilTurn_ ;
+    /**
+     * <code>int64 state_change_delay_until_turn = 14;</code>
+     * @return The stateChangeDelayUntilTurn.
+     */
+    @java.lang.Override
+    public long getStateChangeDelayUntilTurn() {
+      return stateChangeDelayUntilTurn_;
+    }
+    /**
+     * <code>int64 state_change_delay_until_turn = 14;</code>
+     * @param value The stateChangeDelayUntilTurn to set.
+     * @return This builder for chaining.
+     */
+    public Builder setStateChangeDelayUntilTurn(long value) {
+      
+      stateChangeDelayUntilTurn_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int64 state_change_delay_until_turn = 14;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearStateChangeDelayUntilTurn() {
+      
+      stateChangeDelayUntilTurn_ = 0L;
       onChanged();
       return this;
     }

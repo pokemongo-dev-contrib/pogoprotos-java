@@ -8,25 +8,25 @@ public interface AwardItemProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-   * @return The enum numeric value on the wire for ekpohjfklal.
+   * <code>.POGOProtos.Rpc.Item item = 1;</code>
+   * @return The enum numeric value on the wire for item.
    */
-  int getEkpohjfklalValue();
+  int getItemValue();
   /**
-   * <code>.POGOProtos.Rpc.Item ekpohjfklal = 1;</code>
-   * @return The ekpohjfklal.
+   * <code>.POGOProtos.Rpc.Item item = 1;</code>
+   * @return The item.
    */
-  POGOProtos.Rpc.Item getEkpohjfklal();
+  POGOProtos.Rpc.Item getItem();
 
   /**
-   * <code>int32 mhpodigefok = 2;</code>
-   * @return The mhpodigefok.
+   * <code>int32 item_count = 2;</code>
+   * @return The itemCount.
    */
-  int getMhpodigefok();
+  int getItemCount();
 
   /**
-   * <code>int32 igfkafiiaen = 3;</code>
-   * @return The igfkafiiaen.
+   * <code>int32 bonus_count = 3;</code>
+   * @return The bonusCount.
    */
-  int getIgfkafiiaen();
+  int getBonusCount();
 }

@@ -23,26 +23,26 @@ public interface GymStatusAndDefendersProtoOrBuilder extends
   POGOProtos.Rpc.PokemonFortProtoOrBuilder getMcjepnnlcfoOrBuilder();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.JLMFGIOLPCM> 
+  java.util.List<POGOProtos.Rpc.GymDefenderProto> 
       getMkfdbndkecjList();
   /**
-   * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
-  POGOProtos.Rpc.JLMFGIOLPCM getMkfdbndkecj(int index);
+  POGOProtos.Rpc.GymDefenderProto getMkfdbndkecj(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
   int getMkfdbndkecjCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.JLMFGIOLPCMOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.GymDefenderProtoOrBuilder> 
       getMkfdbndkecjOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
-  POGOProtos.Rpc.JLMFGIOLPCMOrBuilder getMkfdbndkecjOrBuilder(
+  POGOProtos.Rpc.GymDefenderProtoOrBuilder getMkfdbndkecjOrBuilder(
       int index);
 }

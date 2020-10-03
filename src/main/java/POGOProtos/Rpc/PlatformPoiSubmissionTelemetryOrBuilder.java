@@ -19,15 +19,15 @@ public interface PlatformPoiSubmissionTelemetryOrBuilder extends
   POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiSubmissionGuiEventId getGuiEventId();
 
   /**
-   * <code>.POGOProtos.Rpc.TitanPoiImageType image_type = 2;</code>
+   * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
    * @return The enum numeric value on the wire for imageType.
    */
   int getImageTypeValue();
   /**
-   * <code>.POGOProtos.Rpc.TitanPoiImageType image_type = 2;</code>
+   * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
    * @return The imageType.
    */
-  POGOProtos.Rpc.TitanPoiImageType getImageType();
+  POGOProtos.Rpc.PoiImageType getImageType();
 
   /**
    * <code>.POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiCameraStepIds camera_step_id = 3;</code>

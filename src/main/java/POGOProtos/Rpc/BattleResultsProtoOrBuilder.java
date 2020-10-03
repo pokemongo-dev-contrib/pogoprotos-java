@@ -8,211 +8,211 @@ public interface BattleResultsProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.GymStateProto dgcfpgedhba = 1;</code>
-   * @return Whether the dgcfpgedhba field is set.
+   * <code>.POGOProtos.Rpc.GymStateProto gym_state = 1;</code>
+   * @return Whether the gymState field is set.
    */
-  boolean hasDgcfpgedhba();
+  boolean hasGymState();
   /**
-   * <code>.POGOProtos.Rpc.GymStateProto dgcfpgedhba = 1;</code>
-   * @return The dgcfpgedhba.
+   * <code>.POGOProtos.Rpc.GymStateProto gym_state = 1;</code>
+   * @return The gymState.
    */
-  POGOProtos.Rpc.GymStateProto getDgcfpgedhba();
+  POGOProtos.Rpc.GymStateProto getGymState();
   /**
-   * <code>.POGOProtos.Rpc.GymStateProto dgcfpgedhba = 1;</code>
+   * <code>.POGOProtos.Rpc.GymStateProto gym_state = 1;</code>
    */
-  POGOProtos.Rpc.GymStateProtoOrBuilder getDgcfpgedhbaOrBuilder();
+  POGOProtos.Rpc.GymStateProtoOrBuilder getGymStateOrBuilder();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleParticipantProto hlafiinkicf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleParticipantProto attackers = 2;</code>
    */
   java.util.List<POGOProtos.Rpc.BattleParticipantProto> 
-      getHlafiinkicfList();
+      getAttackersList();
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleParticipantProto hlafiinkicf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleParticipantProto attackers = 2;</code>
    */
-  POGOProtos.Rpc.BattleParticipantProto getHlafiinkicf(int index);
+  POGOProtos.Rpc.BattleParticipantProto getAttackers(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleParticipantProto hlafiinkicf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleParticipantProto attackers = 2;</code>
    */
-  int getHlafiinkicfCount();
+  int getAttackersCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleParticipantProto hlafiinkicf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleParticipantProto attackers = 2;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.BattleParticipantProtoOrBuilder> 
-      getHlafiinkicfOrBuilderList();
+      getAttackersOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.BattleParticipantProto hlafiinkicf = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.BattleParticipantProto attackers = 2;</code>
    */
-  POGOProtos.Rpc.BattleParticipantProtoOrBuilder getHlafiinkicfOrBuilder(
+  POGOProtos.Rpc.BattleParticipantProtoOrBuilder getAttackersOrBuilder(
       int index);
 
   /**
-   * <code>repeated int32 aonlmambjdk = 3;</code>
-   * @return A list containing the aonlmambjdk.
+   * <code>repeated int32 player_xp_awarded = 3;</code>
+   * @return A list containing the playerXpAwarded.
    */
-  java.util.List<java.lang.Integer> getAonlmambjdkList();
+  java.util.List<java.lang.Integer> getPlayerXpAwardedList();
   /**
-   * <code>repeated int32 aonlmambjdk = 3;</code>
-   * @return The count of aonlmambjdk.
+   * <code>repeated int32 player_xp_awarded = 3;</code>
+   * @return The count of playerXpAwarded.
    */
-  int getAonlmambjdkCount();
+  int getPlayerXpAwardedCount();
   /**
-   * <code>repeated int32 aonlmambjdk = 3;</code>
+   * <code>repeated int32 player_xp_awarded = 3;</code>
    * @param index The index of the element to return.
-   * @return The aonlmambjdk at the given index.
+   * @return The playerXpAwarded at the given index.
    */
-  int getAonlmambjdk(int index);
+  int getPlayerXpAwarded(int index);
 
   /**
-   * <code>int64 ghnamckmnok = 4;</code>
-   * @return The ghnamckmnok.
+   * <code>int64 next_defender_pokemon_id = 4;</code>
+   * @return The nextDefenderPokemonId.
    */
-  long getGhnamckmnok();
+  long getNextDefenderPokemonId();
 
   /**
-   * <code>int32 dnfohjmcbgo = 5;</code>
-   * @return The dnfohjmcbgo.
+   * <code>int32 gym_points_delta = 5;</code>
+   * @return The gymPointsDelta.
    */
-  int getDnfohjmcbgo();
+  int getGymPointsDelta();
 
   /**
-   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto chffneobbag = 6;</code>
-   * @return Whether the chffneobbag field is set.
+   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto gym_status = 6;</code>
+   * @return Whether the gymStatus field is set.
    */
-  boolean hasChffneobbag();
+  boolean hasGymStatus();
   /**
-   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto chffneobbag = 6;</code>
-   * @return The chffneobbag.
+   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto gym_status = 6;</code>
+   * @return The gymStatus.
    */
-  POGOProtos.Rpc.GymStatusAndDefendersProto getChffneobbag();
+  POGOProtos.Rpc.GymStatusAndDefendersProto getGymStatus();
   /**
-   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto chffneobbag = 6;</code>
+   * <code>.POGOProtos.Rpc.GymStatusAndDefendersProto gym_status = 6;</code>
    */
-  POGOProtos.Rpc.GymStatusAndDefendersProtoOrBuilder getChffneobbagOrBuilder();
+  POGOProtos.Rpc.GymStatusAndDefendersProtoOrBuilder getGymStatusOrBuilder();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.MOFNDEGLFNI mchnofleihe = 7;</code>
+   * <code>repeated .POGOProtos.Rpc.ParticipationProto participation = 7;</code>
    */
-  java.util.List<POGOProtos.Rpc.MOFNDEGLFNI> 
-      getMchnofleiheList();
+  java.util.List<POGOProtos.Rpc.ParticipationProto> 
+      getParticipationList();
   /**
-   * <code>repeated .POGOProtos.Rpc.MOFNDEGLFNI mchnofleihe = 7;</code>
+   * <code>repeated .POGOProtos.Rpc.ParticipationProto participation = 7;</code>
    */
-  POGOProtos.Rpc.MOFNDEGLFNI getMchnofleihe(int index);
+  POGOProtos.Rpc.ParticipationProto getParticipation(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.MOFNDEGLFNI mchnofleihe = 7;</code>
+   * <code>repeated .POGOProtos.Rpc.ParticipationProto participation = 7;</code>
    */
-  int getMchnofleiheCount();
+  int getParticipationCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.MOFNDEGLFNI mchnofleihe = 7;</code>
+   * <code>repeated .POGOProtos.Rpc.ParticipationProto participation = 7;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.MOFNDEGLFNIOrBuilder> 
-      getMchnofleiheOrBuilderList();
+  java.util.List<? extends POGOProtos.Rpc.ParticipationProtoOrBuilder> 
+      getParticipationOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.MOFNDEGLFNI mchnofleihe = 7;</code>
+   * <code>repeated .POGOProtos.Rpc.ParticipationProto participation = 7;</code>
    */
-  POGOProtos.Rpc.MOFNDEGLFNIOrBuilder getMchnofleiheOrBuilder(
+  POGOProtos.Rpc.ParticipationProtoOrBuilder getParticipationOrBuilder(
       int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.LootProto ejpdanjlapf = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.LootProto raid_item_rewards = 8;</code>
    */
   java.util.List<POGOProtos.Rpc.LootProto> 
-      getEjpdanjlapfList();
+      getRaidItemRewardsList();
   /**
-   * <code>repeated .POGOProtos.Rpc.LootProto ejpdanjlapf = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.LootProto raid_item_rewards = 8;</code>
    */
-  POGOProtos.Rpc.LootProto getEjpdanjlapf(int index);
+  POGOProtos.Rpc.LootProto getRaidItemRewards(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.LootProto ejpdanjlapf = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.LootProto raid_item_rewards = 8;</code>
    */
-  int getEjpdanjlapfCount();
+  int getRaidItemRewardsCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.LootProto ejpdanjlapf = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.LootProto raid_item_rewards = 8;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.LootProtoOrBuilder> 
-      getEjpdanjlapfOrBuilderList();
+      getRaidItemRewardsOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.LootProto ejpdanjlapf = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.LootProto raid_item_rewards = 8;</code>
    */
-  POGOProtos.Rpc.LootProtoOrBuilder getEjpdanjlapfOrBuilder(
+  POGOProtos.Rpc.LootProtoOrBuilder getRaidItemRewardsOrBuilder(
       int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.KAKMNFOLLOA pfnocphbhhl = 9;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidEncounterProto post_raid_encounter = 9;</code>
    */
-  java.util.List<POGOProtos.Rpc.KAKMNFOLLOA> 
-      getPfnocphbhhlList();
+  java.util.List<POGOProtos.Rpc.RaidEncounterProto> 
+      getPostRaidEncounterList();
   /**
-   * <code>repeated .POGOProtos.Rpc.KAKMNFOLLOA pfnocphbhhl = 9;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidEncounterProto post_raid_encounter = 9;</code>
    */
-  POGOProtos.Rpc.KAKMNFOLLOA getPfnocphbhhl(int index);
+  POGOProtos.Rpc.RaidEncounterProto getPostRaidEncounter(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.KAKMNFOLLOA pfnocphbhhl = 9;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidEncounterProto post_raid_encounter = 9;</code>
    */
-  int getPfnocphbhhlCount();
+  int getPostRaidEncounterCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.KAKMNFOLLOA pfnocphbhhl = 9;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidEncounterProto post_raid_encounter = 9;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.KAKMNFOLLOAOrBuilder> 
-      getPfnocphbhhlOrBuilderList();
+  java.util.List<? extends POGOProtos.Rpc.RaidEncounterProtoOrBuilder> 
+      getPostRaidEncounterOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.KAKMNFOLLOA pfnocphbhhl = 9;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidEncounterProto post_raid_encounter = 9;</code>
    */
-  POGOProtos.Rpc.KAKMNFOLLOAOrBuilder getPfnocphbhhlOrBuilder(
+  POGOProtos.Rpc.RaidEncounterProtoOrBuilder getPostRaidEncounterOrBuilder(
       int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge gym_badge = 10;</code>
    */
   java.util.List<POGOProtos.Rpc.AwardedGymBadge> 
-      getHdinlbkpielList();
+      getGymBadgeList();
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge gym_badge = 10;</code>
    */
-  POGOProtos.Rpc.AwardedGymBadge getHdinlbkpiel(int index);
+  POGOProtos.Rpc.AwardedGymBadge getGymBadge(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge gym_badge = 10;</code>
    */
-  int getHdinlbkpielCount();
+  int getGymBadgeCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge gym_badge = 10;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.AwardedGymBadgeOrBuilder> 
-      getHdinlbkpielOrBuilderList();
+      getGymBadgeOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge hdinlbkpiel = 10;</code>
+   * <code>repeated .POGOProtos.Rpc.AwardedGymBadge gym_badge = 10;</code>
    */
-  POGOProtos.Rpc.AwardedGymBadgeOrBuilder getHdinlbkpielOrBuilder(
+  POGOProtos.Rpc.AwardedGymBadgeOrBuilder getGymBadgeOrBuilder(
       int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.LootProto hfkdompoacl = 11;</code>
+   * <code>repeated .POGOProtos.Rpc.LootProto default_raid_item_rewards = 11;</code>
    */
   java.util.List<POGOProtos.Rpc.LootProto> 
-      getHfkdompoaclList();
+      getDefaultRaidItemRewardsList();
   /**
-   * <code>repeated .POGOProtos.Rpc.LootProto hfkdompoacl = 11;</code>
+   * <code>repeated .POGOProtos.Rpc.LootProto default_raid_item_rewards = 11;</code>
    */
-  POGOProtos.Rpc.LootProto getHfkdompoacl(int index);
+  POGOProtos.Rpc.LootProto getDefaultRaidItemRewards(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.LootProto hfkdompoacl = 11;</code>
+   * <code>repeated .POGOProtos.Rpc.LootProto default_raid_item_rewards = 11;</code>
    */
-  int getHfkdompoaclCount();
+  int getDefaultRaidItemRewardsCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.LootProto hfkdompoacl = 11;</code>
+   * <code>repeated .POGOProtos.Rpc.LootProto default_raid_item_rewards = 11;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.LootProtoOrBuilder> 
-      getHfkdompoaclOrBuilderList();
+      getDefaultRaidItemRewardsOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.LootProto hfkdompoacl = 11;</code>
+   * <code>repeated .POGOProtos.Rpc.LootProto default_raid_item_rewards = 11;</code>
    */
-  POGOProtos.Rpc.LootProtoOrBuilder getHfkdompoaclOrBuilder(
+  POGOProtos.Rpc.LootProtoOrBuilder getDefaultRaidItemRewardsOrBuilder(
       int index);
 
   /**
-   * <code>int64 bepbccahahc = 12;</code>
-   * @return The bepbccahahc.
+   * <code>int64 field1 = 12;</code>
+   * @return The field1.
    */
-  long getBepbccahahc();
+  long getField1();
 }

@@ -8,23 +8,23 @@ public interface AdDetailsOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
-   * @return Whether the emdpeilkhki field is set.
+   * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
+   * @return Whether the imageTextCreative field is set.
    */
-  boolean hasEmdpeilkhki();
+  boolean hasImageTextCreative();
   /**
-   * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
-   * @return The emdpeilkhki.
+   * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
+   * @return The imageTextCreative.
    */
-  POGOProtos.Rpc.ImageTextCreativeProto getEmdpeilkhki();
+  POGOProtos.Rpc.ImageTextCreativeProto getImageTextCreative();
   /**
-   * <code>.POGOProtos.Rpc.ImageTextCreativeProto emdpeilkhki = 1;</code>
+   * <code>.POGOProtos.Rpc.ImageTextCreativeProto image_text_creative = 1;</code>
    */
-  POGOProtos.Rpc.ImageTextCreativeProtoOrBuilder getEmdpeilkhkiOrBuilder();
+  POGOProtos.Rpc.ImageTextCreativeProtoOrBuilder getImageTextCreativeOrBuilder();
 
   /**
-   * <code>bytes dbfmaclhflp = 2;</code>
-   * @return The dbfmaclhflp.
+   * <code>bytes encrypted_ad_token = 2;</code>
+   * @return The encryptedAdToken.
    */
-  com.google.protobuf.ByteString getDbfmaclhflp();
+  com.google.protobuf.ByteString getEncryptedAdToken();
 }

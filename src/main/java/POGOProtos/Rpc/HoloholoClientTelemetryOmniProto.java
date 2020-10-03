@@ -487,14 +487,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 258: {
-            POGOProtos.Rpc.RpcTimingTelemetry.Builder subBuilder = null;
+            POGOProtos.Rpc.RpcResponseTelemetry.Builder subBuilder = null;
             if (telemetryDataCase_ == 32) {
-              subBuilder = ((POGOProtos.Rpc.RpcTimingTelemetry) telemetryData_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_).toBuilder();
             }
             telemetryData_ =
-                input.readMessage(POGOProtos.Rpc.RpcTimingTelemetry.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.RpcResponseTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.RpcTimingTelemetry) telemetryData_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_);
               telemetryData_ = subBuilder.buildPartial();
             }
             telemetryDataCase_ = 32;
@@ -571,14 +571,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 306: {
-            POGOProtos.Rpc.RpcSocketTimingTelemetry.Builder subBuilder = null;
+            POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder subBuilder = null;
             if (telemetryDataCase_ == 38) {
-              subBuilder = ((POGOProtos.Rpc.RpcSocketTimingTelemetry) telemetryData_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_).toBuilder();
             }
             telemetryData_ =
-                input.readMessage(POGOProtos.Rpc.RpcSocketTimingTelemetry.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.RpcSocketResponseTelemetry.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.RpcSocketTimingTelemetry) telemetryData_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_);
               telemetryData_ = subBuilder.buildPartial();
             }
             telemetryDataCase_ = 38;
@@ -627,14 +627,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 338: {
-            POGOProtos.Rpc.UserAttributes.Builder subBuilder = null;
+            POGOProtos.Rpc.UserAttributesProto.Builder subBuilder = null;
             if (telemetryDataCase_ == 42) {
-              subBuilder = ((POGOProtos.Rpc.UserAttributes) telemetryData_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.UserAttributesProto) telemetryData_).toBuilder();
             }
             telemetryData_ =
-                input.readMessage(POGOProtos.Rpc.UserAttributes.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.UserAttributesProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.UserAttributes) telemetryData_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.UserAttributesProto) telemetryData_);
               telemetryData_ = subBuilder.buildPartial();
             }
             telemetryDataCase_ = 42;
@@ -837,42 +837,42 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 458: {
-            POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.Builder subBuilder = null;
+            POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder subBuilder = null;
             if (telemetryDataCase_ == 57) {
-              subBuilder = ((POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_).toBuilder();
             }
             telemetryData_ =
-                input.readMessage(POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_);
               telemetryData_ = subBuilder.buildPartial();
             }
             telemetryDataCase_ = 57;
             break;
           }
           case 466: {
-            POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.Builder subBuilder = null;
+            POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder subBuilder = null;
             if (telemetryDataCase_ == 58) {
-              subBuilder = ((POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry) telemetryData_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_).toBuilder();
             }
             telemetryData_ =
-                input.readMessage(POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry) telemetryData_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_);
               telemetryData_ = subBuilder.buildPartial();
             }
             telemetryDataCase_ = 58;
             break;
           }
           case 474: {
-            POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.Builder subBuilder = null;
+            POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder subBuilder = null;
             if (telemetryDataCase_ == 59) {
-              subBuilder = ((POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry) telemetryData_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_).toBuilder();
             }
             telemetryData_ =
-                input.readMessage(POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry) telemetryData_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_);
               telemetryData_ = subBuilder.buildPartial();
             }
             telemetryDataCase_ = 59;
@@ -907,14 +907,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 498: {
-            POGOProtos.Rpc.ArMappingTelemetry.Builder subBuilder = null;
+            POGOProtos.Rpc.ArMappingTelemetryProto.Builder subBuilder = null;
             if (telemetryDataCase_ == 62) {
-              subBuilder = ((POGOProtos.Rpc.ArMappingTelemetry) telemetryData_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_).toBuilder();
             }
             telemetryData_ =
-                input.readMessage(POGOProtos.Rpc.ArMappingTelemetry.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.ArMappingTelemetryProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.ArMappingTelemetry) telemetryData_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_);
               telemetryData_ = subBuilder.buildPartial();
             }
             telemetryDataCase_ = 62;
@@ -977,11 +977,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 8010: {
-            POGOProtos.Rpc.PlatformServerData.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformPlatformServerData.Builder subBuilder = null;
             if (serverData_ != null) {
               subBuilder = serverData_.toBuilder();
             }
-            serverData_ = input.readMessage(POGOProtos.Rpc.PlatformServerData.parser(), extensionRegistry);
+            serverData_ = input.readMessage(POGOProtos.Rpc.PlatformPlatformServerData.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(serverData_);
               serverData_ = subBuilder.buildPartial();
@@ -990,11 +990,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 8018: {
-            POGOProtos.Rpc.PlatformCommonFilterProto.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder subBuilder = null;
             if (commonFilters_ != null) {
               subBuilder = commonFilters_.toBuilder();
             }
-            commonFilters_ = input.readMessage(POGOProtos.Rpc.PlatformCommonFilterProto.parser(), extensionRegistry);
+            commonFilters_ = input.readMessage(POGOProtos.Rpc.PlatformPlatformCommonFilterProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(commonFilters_);
               commonFilters_ = subBuilder.buildPartial();
@@ -2166,7 +2166,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int RPC_TIMING_TELEMETRY_FIELD_NUMBER = 32;
   /**
-   * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+   * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
    * @return Whether the rpcTimingTelemetry field is set.
    */
   @java.lang.Override
@@ -2174,25 +2174,25 @@ private static final long serialVersionUID = 0L;
     return telemetryDataCase_ == 32;
   }
   /**
-   * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+   * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
    * @return The rpcTimingTelemetry.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.RpcTimingTelemetry getRpcTimingTelemetry() {
+  public POGOProtos.Rpc.RpcResponseTelemetry getRpcTimingTelemetry() {
     if (telemetryDataCase_ == 32) {
-       return (POGOProtos.Rpc.RpcTimingTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_;
     }
-    return POGOProtos.Rpc.RpcTimingTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+   * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.RpcTimingTelemetryOrBuilder getRpcTimingTelemetryOrBuilder() {
+  public POGOProtos.Rpc.RpcResponseTelemetryOrBuilder getRpcTimingTelemetryOrBuilder() {
     if (telemetryDataCase_ == 32) {
-       return (POGOProtos.Rpc.RpcTimingTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_;
     }
-    return POGOProtos.Rpc.RpcTimingTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
   }
 
   public static final int SOCIAL_GIFT_COUNT_TELEMETRY_FIELD_NUMBER = 33;
@@ -2352,7 +2352,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int RPC_SOCKET_TIMING_TELEMETRY_FIELD_NUMBER = 38;
   /**
-   * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+   * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
    * @return Whether the rpcSocketTimingTelemetry field is set.
    */
   @java.lang.Override
@@ -2360,25 +2360,25 @@ private static final long serialVersionUID = 0L;
     return telemetryDataCase_ == 38;
   }
   /**
-   * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+   * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
    * @return The rpcSocketTimingTelemetry.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.RpcSocketTimingTelemetry getRpcSocketTimingTelemetry() {
+  public POGOProtos.Rpc.RpcSocketResponseTelemetry getRpcSocketTimingTelemetry() {
     if (telemetryDataCase_ == 38) {
-       return (POGOProtos.Rpc.RpcSocketTimingTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_;
     }
-    return POGOProtos.Rpc.RpcSocketTimingTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+   * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.RpcSocketTimingTelemetryOrBuilder getRpcSocketTimingTelemetryOrBuilder() {
+  public POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder getRpcSocketTimingTelemetryOrBuilder() {
     if (telemetryDataCase_ == 38) {
-       return (POGOProtos.Rpc.RpcSocketTimingTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_;
     }
-    return POGOProtos.Rpc.RpcSocketTimingTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
   }
 
   public static final int PERMISSIONS_FLOW_FIELD_NUMBER = 39;
@@ -2476,7 +2476,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int USER_ATTRIBUTES_FIELD_NUMBER = 42;
   /**
-   * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+   * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
    * @return Whether the userAttributes field is set.
    */
   @java.lang.Override
@@ -2484,25 +2484,25 @@ private static final long serialVersionUID = 0L;
     return telemetryDataCase_ == 42;
   }
   /**
-   * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+   * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
    * @return The userAttributes.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.UserAttributes getUserAttributes() {
+  public POGOProtos.Rpc.UserAttributesProto getUserAttributes() {
     if (telemetryDataCase_ == 42) {
-       return (POGOProtos.Rpc.UserAttributes) telemetryData_;
+       return (POGOProtos.Rpc.UserAttributesProto) telemetryData_;
     }
-    return POGOProtos.Rpc.UserAttributes.getDefaultInstance();
+    return POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+   * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.UserAttributesOrBuilder getUserAttributesOrBuilder() {
+  public POGOProtos.Rpc.UserAttributesProtoOrBuilder getUserAttributesOrBuilder() {
     if (telemetryDataCase_ == 42) {
-       return (POGOProtos.Rpc.UserAttributes) telemetryData_;
+       return (POGOProtos.Rpc.UserAttributesProto) telemetryData_;
     }
-    return POGOProtos.Rpc.UserAttributes.getDefaultInstance();
+    return POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
   }
 
   public static final int ONBOARDING_TELEMETRY_FIELD_NUMBER = 43;
@@ -2941,7 +2941,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int BUDDY_MULTIPLAYER_CONNECTION_FAILED_TELEMETRY_FIELD_NUMBER = 57;
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
    * @return Whether the buddyMultiplayerConnectionFailedTelemetry field is set.
    */
   @java.lang.Override
@@ -2949,30 +2949,30 @@ private static final long serialVersionUID = 0L;
     return telemetryDataCase_ == 57;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
    * @return The buddyMultiplayerConnectionFailedTelemetry.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry getBuddyMultiplayerConnectionFailedTelemetry() {
+  public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto getBuddyMultiplayerConnectionFailedTelemetry() {
     if (telemetryDataCase_ == 57) {
-       return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_;
     }
-    return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetryOrBuilder getBuddyMultiplayerConnectionFailedTelemetryOrBuilder() {
+  public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder getBuddyMultiplayerConnectionFailedTelemetryOrBuilder() {
     if (telemetryDataCase_ == 57) {
-       return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_;
     }
-    return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
   }
 
   public static final int BUDDY_MULTIPLAYER_CONNECTION_SUCCEEDED_TELEMETRY_FIELD_NUMBER = 58;
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    * @return Whether the buddyMultiplayerConnectionSucceededTelemetry field is set.
    */
   @java.lang.Override
@@ -2980,30 +2980,30 @@ private static final long serialVersionUID = 0L;
     return telemetryDataCase_ == 58;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    * @return The buddyMultiplayerConnectionSucceededTelemetry.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry getBuddyMultiplayerConnectionSucceededTelemetry() {
+  public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto getBuddyMultiplayerConnectionSucceededTelemetry() {
     if (telemetryDataCase_ == 58) {
-       return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_;
     }
-    return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetryOrBuilder getBuddyMultiplayerConnectionSucceededTelemetryOrBuilder() {
+  public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder getBuddyMultiplayerConnectionSucceededTelemetryOrBuilder() {
     if (telemetryDataCase_ == 58) {
-       return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_;
     }
-    return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
   }
 
   public static final int BUDDY_MULTIPLAYER_TIME_TO_GET_SESSION_TELEMETRY_FIELD_NUMBER = 59;
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    * @return Whether the buddyMultiplayerTimeToGetSessionTelemetry field is set.
    */
   @java.lang.Override
@@ -3011,25 +3011,25 @@ private static final long serialVersionUID = 0L;
     return telemetryDataCase_ == 59;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    * @return The buddyMultiplayerTimeToGetSessionTelemetry.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry getBuddyMultiplayerTimeToGetSessionTelemetry() {
+  public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto getBuddyMultiplayerTimeToGetSessionTelemetry() {
     if (telemetryDataCase_ == 59) {
-       return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_;
     }
-    return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetryOrBuilder getBuddyMultiplayerTimeToGetSessionTelemetryOrBuilder() {
+  public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder getBuddyMultiplayerTimeToGetSessionTelemetryOrBuilder() {
     if (telemetryDataCase_ == 59) {
-       return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_;
     }
-    return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
   }
 
   public static final int PLAYER_HUD_NOTIFICATION_CLICK_TELEMETRY_FIELD_NUMBER = 60;
@@ -3096,7 +3096,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int AR_MAPPING_TELEMETRY_FIELD_NUMBER = 62;
   /**
-   * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+   * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
    * @return Whether the arMappingTelemetry field is set.
    */
   @java.lang.Override
@@ -3104,25 +3104,25 @@ private static final long serialVersionUID = 0L;
     return telemetryDataCase_ == 62;
   }
   /**
-   * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+   * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
    * @return The arMappingTelemetry.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ArMappingTelemetry getArMappingTelemetry() {
+  public POGOProtos.Rpc.ArMappingTelemetryProto getArMappingTelemetry() {
     if (telemetryDataCase_ == 62) {
-       return (POGOProtos.Rpc.ArMappingTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_;
     }
-    return POGOProtos.Rpc.ArMappingTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+   * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ArMappingTelemetryOrBuilder getArMappingTelemetryOrBuilder() {
+  public POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder getArMappingTelemetryOrBuilder() {
     if (telemetryDataCase_ == 62) {
-       return (POGOProtos.Rpc.ArMappingTelemetry) telemetryData_;
+       return (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_;
     }
-    return POGOProtos.Rpc.ArMappingTelemetry.getDefaultInstance();
+    return POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
   }
 
   public static final int REMOTE_RAID_TELEMETRY_FIELD_NUMBER = 63;
@@ -3250,9 +3250,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int SERVER_DATA_FIELD_NUMBER = 1001;
-  private POGOProtos.Rpc.PlatformServerData serverData_;
+  private POGOProtos.Rpc.PlatformPlatformServerData serverData_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
    * @return Whether the serverData field is set.
    */
   @java.lang.Override
@@ -3260,25 +3260,25 @@ private static final long serialVersionUID = 0L;
     return serverData_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
    * @return The serverData.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformServerData getServerData() {
-    return serverData_ == null ? POGOProtos.Rpc.PlatformServerData.getDefaultInstance() : serverData_;
+  public POGOProtos.Rpc.PlatformPlatformServerData getServerData() {
+    return serverData_ == null ? POGOProtos.Rpc.PlatformPlatformServerData.getDefaultInstance() : serverData_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformServerDataOrBuilder getServerDataOrBuilder() {
+  public POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getServerDataOrBuilder() {
     return getServerData();
   }
 
   public static final int COMMON_FILTERS_FIELD_NUMBER = 1002;
-  private POGOProtos.Rpc.PlatformCommonFilterProto commonFilters_;
+  private POGOProtos.Rpc.PlatformPlatformCommonFilterProto commonFilters_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
    * @return Whether the commonFilters field is set.
    */
   @java.lang.Override
@@ -3286,18 +3286,18 @@ private static final long serialVersionUID = 0L;
     return commonFilters_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
    * @return The commonFilters.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformCommonFilterProto getCommonFilters() {
-    return commonFilters_ == null ? POGOProtos.Rpc.PlatformCommonFilterProto.getDefaultInstance() : commonFilters_;
+  public POGOProtos.Rpc.PlatformPlatformCommonFilterProto getCommonFilters() {
+    return commonFilters_ == null ? POGOProtos.Rpc.PlatformPlatformCommonFilterProto.getDefaultInstance() : commonFilters_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder() {
+  public POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder() {
     return getCommonFilters();
   }
 
@@ -3409,7 +3409,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(31, (POGOProtos.Rpc.PokemonGoPlusTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 32) {
-      output.writeMessage(32, (POGOProtos.Rpc.RpcTimingTelemetry) telemetryData_);
+      output.writeMessage(32, (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 33) {
       output.writeMessage(33, (POGOProtos.Rpc.SocialGiftCountTelemetry) telemetryData_);
@@ -3427,7 +3427,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(37, (POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 38) {
-      output.writeMessage(38, (POGOProtos.Rpc.RpcSocketTimingTelemetry) telemetryData_);
+      output.writeMessage(38, (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 39) {
       output.writeMessage(39, (POGOProtos.Rpc.PermissionsFlowTelemetry) telemetryData_);
@@ -3439,7 +3439,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(41, (POGOProtos.Rpc.BootTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 42) {
-      output.writeMessage(42, (POGOProtos.Rpc.UserAttributes) telemetryData_);
+      output.writeMessage(42, (POGOProtos.Rpc.UserAttributesProto) telemetryData_);
     }
     if (telemetryDataCase_ == 43) {
       output.writeMessage(43, (POGOProtos.Rpc.OnboardingTelemetry) telemetryData_);
@@ -3484,13 +3484,13 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(56, (POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 57) {
-      output.writeMessage(57, (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_);
+      output.writeMessage(57, (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_);
     }
     if (telemetryDataCase_ == 58) {
-      output.writeMessage(58, (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry) telemetryData_);
+      output.writeMessage(58, (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_);
     }
     if (telemetryDataCase_ == 59) {
-      output.writeMessage(59, (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry) telemetryData_);
+      output.writeMessage(59, (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_);
     }
     if (telemetryDataCase_ == 60) {
       output.writeMessage(60, (POGOProtos.Rpc.PlayerHudNotificationClickTelemetry) telemetryData_);
@@ -3499,7 +3499,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(61, (POGOProtos.Rpc.MonodepthDownloadTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 62) {
-      output.writeMessage(62, (POGOProtos.Rpc.ArMappingTelemetry) telemetryData_);
+      output.writeMessage(62, (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_);
     }
     if (telemetryDataCase_ == 63) {
       output.writeMessage(63, (POGOProtos.Rpc.RemoteRaidTelemetry) telemetryData_);
@@ -3654,7 +3654,7 @@ private static final long serialVersionUID = 0L;
     }
     if (telemetryDataCase_ == 32) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(32, (POGOProtos.Rpc.RpcTimingTelemetry) telemetryData_);
+        .computeMessageSize(32, (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 33) {
       size += com.google.protobuf.CodedOutputStream
@@ -3678,7 +3678,7 @@ private static final long serialVersionUID = 0L;
     }
     if (telemetryDataCase_ == 38) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(38, (POGOProtos.Rpc.RpcSocketTimingTelemetry) telemetryData_);
+        .computeMessageSize(38, (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_);
     }
     if (telemetryDataCase_ == 39) {
       size += com.google.protobuf.CodedOutputStream
@@ -3694,7 +3694,7 @@ private static final long serialVersionUID = 0L;
     }
     if (telemetryDataCase_ == 42) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(42, (POGOProtos.Rpc.UserAttributes) telemetryData_);
+        .computeMessageSize(42, (POGOProtos.Rpc.UserAttributesProto) telemetryData_);
     }
     if (telemetryDataCase_ == 43) {
       size += com.google.protobuf.CodedOutputStream
@@ -3754,15 +3754,15 @@ private static final long serialVersionUID = 0L;
     }
     if (telemetryDataCase_ == 57) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(57, (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_);
+        .computeMessageSize(57, (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_);
     }
     if (telemetryDataCase_ == 58) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(58, (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry) telemetryData_);
+        .computeMessageSize(58, (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_);
     }
     if (telemetryDataCase_ == 59) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(59, (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry) telemetryData_);
+        .computeMessageSize(59, (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_);
     }
     if (telemetryDataCase_ == 60) {
       size += com.google.protobuf.CodedOutputStream
@@ -3774,7 +3774,7 @@ private static final long serialVersionUID = 0L;
     }
     if (telemetryDataCase_ == 62) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(62, (POGOProtos.Rpc.ArMappingTelemetry) telemetryData_);
+        .computeMessageSize(62, (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_);
     }
     if (telemetryDataCase_ == 63) {
       size += com.google.protobuf.CodedOutputStream
@@ -9770,9 +9770,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.RpcTimingTelemetry, POGOProtos.Rpc.RpcTimingTelemetry.Builder, POGOProtos.Rpc.RpcTimingTelemetryOrBuilder> rpcTimingTelemetryBuilder_;
+        POGOProtos.Rpc.RpcResponseTelemetry, POGOProtos.Rpc.RpcResponseTelemetry.Builder, POGOProtos.Rpc.RpcResponseTelemetryOrBuilder> rpcTimingTelemetryBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+     * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      * @return Whether the rpcTimingTelemetry field is set.
      */
     @java.lang.Override
@@ -9780,27 +9780,27 @@ private static final long serialVersionUID = 0L;
       return telemetryDataCase_ == 32;
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+     * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      * @return The rpcTimingTelemetry.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.RpcTimingTelemetry getRpcTimingTelemetry() {
+    public POGOProtos.Rpc.RpcResponseTelemetry getRpcTimingTelemetry() {
       if (rpcTimingTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 32) {
-          return (POGOProtos.Rpc.RpcTimingTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_;
         }
-        return POGOProtos.Rpc.RpcTimingTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
       } else {
         if (telemetryDataCase_ == 32) {
           return rpcTimingTelemetryBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.RpcTimingTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+     * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      */
-    public Builder setRpcTimingTelemetry(POGOProtos.Rpc.RpcTimingTelemetry value) {
+    public Builder setRpcTimingTelemetry(POGOProtos.Rpc.RpcResponseTelemetry value) {
       if (rpcTimingTelemetryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -9814,10 +9814,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+     * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      */
     public Builder setRpcTimingTelemetry(
-        POGOProtos.Rpc.RpcTimingTelemetry.Builder builderForValue) {
+        POGOProtos.Rpc.RpcResponseTelemetry.Builder builderForValue) {
       if (rpcTimingTelemetryBuilder_ == null) {
         telemetryData_ = builderForValue.build();
         onChanged();
@@ -9828,13 +9828,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+     * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      */
-    public Builder mergeRpcTimingTelemetry(POGOProtos.Rpc.RpcTimingTelemetry value) {
+    public Builder mergeRpcTimingTelemetry(POGOProtos.Rpc.RpcResponseTelemetry value) {
       if (rpcTimingTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 32 &&
-            telemetryData_ != POGOProtos.Rpc.RpcTimingTelemetry.getDefaultInstance()) {
-          telemetryData_ = POGOProtos.Rpc.RpcTimingTelemetry.newBuilder((POGOProtos.Rpc.RpcTimingTelemetry) telemetryData_)
+            telemetryData_ != POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.RpcResponseTelemetry.newBuilder((POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_)
               .mergeFrom(value).buildPartial();
         } else {
           telemetryData_ = value;
@@ -9850,7 +9850,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+     * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      */
     public Builder clearRpcTimingTelemetry() {
       if (rpcTimingTelemetryBuilder_ == null) {
@@ -9869,38 +9869,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+     * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      */
-    public POGOProtos.Rpc.RpcTimingTelemetry.Builder getRpcTimingTelemetryBuilder() {
+    public POGOProtos.Rpc.RpcResponseTelemetry.Builder getRpcTimingTelemetryBuilder() {
       return getRpcTimingTelemetryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+     * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.RpcTimingTelemetryOrBuilder getRpcTimingTelemetryOrBuilder() {
+    public POGOProtos.Rpc.RpcResponseTelemetryOrBuilder getRpcTimingTelemetryOrBuilder() {
       if ((telemetryDataCase_ == 32) && (rpcTimingTelemetryBuilder_ != null)) {
         return rpcTimingTelemetryBuilder_.getMessageOrBuilder();
       } else {
         if (telemetryDataCase_ == 32) {
-          return (POGOProtos.Rpc.RpcTimingTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_;
         }
-        return POGOProtos.Rpc.RpcTimingTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcTimingTelemetry rpc_timing_telemetry = 32;</code>
+     * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.RpcTimingTelemetry, POGOProtos.Rpc.RpcTimingTelemetry.Builder, POGOProtos.Rpc.RpcTimingTelemetryOrBuilder> 
+        POGOProtos.Rpc.RpcResponseTelemetry, POGOProtos.Rpc.RpcResponseTelemetry.Builder, POGOProtos.Rpc.RpcResponseTelemetryOrBuilder> 
         getRpcTimingTelemetryFieldBuilder() {
       if (rpcTimingTelemetryBuilder_ == null) {
         if (!(telemetryDataCase_ == 32)) {
-          telemetryData_ = POGOProtos.Rpc.RpcTimingTelemetry.getDefaultInstance();
+          telemetryData_ = POGOProtos.Rpc.RpcResponseTelemetry.getDefaultInstance();
         }
         rpcTimingTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.RpcTimingTelemetry, POGOProtos.Rpc.RpcTimingTelemetry.Builder, POGOProtos.Rpc.RpcTimingTelemetryOrBuilder>(
-                (POGOProtos.Rpc.RpcTimingTelemetry) telemetryData_,
+            POGOProtos.Rpc.RpcResponseTelemetry, POGOProtos.Rpc.RpcResponseTelemetry.Builder, POGOProtos.Rpc.RpcResponseTelemetryOrBuilder>(
+                (POGOProtos.Rpc.RpcResponseTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
         telemetryData_ = null;
@@ -10616,9 +10616,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.RpcSocketTimingTelemetry, POGOProtos.Rpc.RpcSocketTimingTelemetry.Builder, POGOProtos.Rpc.RpcSocketTimingTelemetryOrBuilder> rpcSocketTimingTelemetryBuilder_;
+        POGOProtos.Rpc.RpcSocketResponseTelemetry, POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder, POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder> rpcSocketTimingTelemetryBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+     * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      * @return Whether the rpcSocketTimingTelemetry field is set.
      */
     @java.lang.Override
@@ -10626,27 +10626,27 @@ private static final long serialVersionUID = 0L;
       return telemetryDataCase_ == 38;
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+     * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      * @return The rpcSocketTimingTelemetry.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.RpcSocketTimingTelemetry getRpcSocketTimingTelemetry() {
+    public POGOProtos.Rpc.RpcSocketResponseTelemetry getRpcSocketTimingTelemetry() {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 38) {
-          return (POGOProtos.Rpc.RpcSocketTimingTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_;
         }
-        return POGOProtos.Rpc.RpcSocketTimingTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
       } else {
         if (telemetryDataCase_ == 38) {
           return rpcSocketTimingTelemetryBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.RpcSocketTimingTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+     * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      */
-    public Builder setRpcSocketTimingTelemetry(POGOProtos.Rpc.RpcSocketTimingTelemetry value) {
+    public Builder setRpcSocketTimingTelemetry(POGOProtos.Rpc.RpcSocketResponseTelemetry value) {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -10660,10 +10660,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+     * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      */
     public Builder setRpcSocketTimingTelemetry(
-        POGOProtos.Rpc.RpcSocketTimingTelemetry.Builder builderForValue) {
+        POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder builderForValue) {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
         telemetryData_ = builderForValue.build();
         onChanged();
@@ -10674,13 +10674,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+     * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      */
-    public Builder mergeRpcSocketTimingTelemetry(POGOProtos.Rpc.RpcSocketTimingTelemetry value) {
+    public Builder mergeRpcSocketTimingTelemetry(POGOProtos.Rpc.RpcSocketResponseTelemetry value) {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 38 &&
-            telemetryData_ != POGOProtos.Rpc.RpcSocketTimingTelemetry.getDefaultInstance()) {
-          telemetryData_ = POGOProtos.Rpc.RpcSocketTimingTelemetry.newBuilder((POGOProtos.Rpc.RpcSocketTimingTelemetry) telemetryData_)
+            telemetryData_ != POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.RpcSocketResponseTelemetry.newBuilder((POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_)
               .mergeFrom(value).buildPartial();
         } else {
           telemetryData_ = value;
@@ -10696,7 +10696,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+     * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      */
     public Builder clearRpcSocketTimingTelemetry() {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
@@ -10715,38 +10715,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+     * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      */
-    public POGOProtos.Rpc.RpcSocketTimingTelemetry.Builder getRpcSocketTimingTelemetryBuilder() {
+    public POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder getRpcSocketTimingTelemetryBuilder() {
       return getRpcSocketTimingTelemetryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+     * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.RpcSocketTimingTelemetryOrBuilder getRpcSocketTimingTelemetryOrBuilder() {
+    public POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder getRpcSocketTimingTelemetryOrBuilder() {
       if ((telemetryDataCase_ == 38) && (rpcSocketTimingTelemetryBuilder_ != null)) {
         return rpcSocketTimingTelemetryBuilder_.getMessageOrBuilder();
       } else {
         if (telemetryDataCase_ == 38) {
-          return (POGOProtos.Rpc.RpcSocketTimingTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_;
         }
-        return POGOProtos.Rpc.RpcSocketTimingTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.RpcSocketTimingTelemetry rpc_socket_timing_telemetry = 38;</code>
+     * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.RpcSocketTimingTelemetry, POGOProtos.Rpc.RpcSocketTimingTelemetry.Builder, POGOProtos.Rpc.RpcSocketTimingTelemetryOrBuilder> 
+        POGOProtos.Rpc.RpcSocketResponseTelemetry, POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder, POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder> 
         getRpcSocketTimingTelemetryFieldBuilder() {
       if (rpcSocketTimingTelemetryBuilder_ == null) {
         if (!(telemetryDataCase_ == 38)) {
-          telemetryData_ = POGOProtos.Rpc.RpcSocketTimingTelemetry.getDefaultInstance();
+          telemetryData_ = POGOProtos.Rpc.RpcSocketResponseTelemetry.getDefaultInstance();
         }
         rpcSocketTimingTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.RpcSocketTimingTelemetry, POGOProtos.Rpc.RpcSocketTimingTelemetry.Builder, POGOProtos.Rpc.RpcSocketTimingTelemetryOrBuilder>(
-                (POGOProtos.Rpc.RpcSocketTimingTelemetry) telemetryData_,
+            POGOProtos.Rpc.RpcSocketResponseTelemetry, POGOProtos.Rpc.RpcSocketResponseTelemetry.Builder, POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder>(
+                (POGOProtos.Rpc.RpcSocketResponseTelemetry) telemetryData_,
                 getParentForChildren(),
                 isClean());
         telemetryData_ = null;
@@ -11180,9 +11180,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.UserAttributes, POGOProtos.Rpc.UserAttributes.Builder, POGOProtos.Rpc.UserAttributesOrBuilder> userAttributesBuilder_;
+        POGOProtos.Rpc.UserAttributesProto, POGOProtos.Rpc.UserAttributesProto.Builder, POGOProtos.Rpc.UserAttributesProtoOrBuilder> userAttributesBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+     * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      * @return Whether the userAttributes field is set.
      */
     @java.lang.Override
@@ -11190,27 +11190,27 @@ private static final long serialVersionUID = 0L;
       return telemetryDataCase_ == 42;
     }
     /**
-     * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+     * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      * @return The userAttributes.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.UserAttributes getUserAttributes() {
+    public POGOProtos.Rpc.UserAttributesProto getUserAttributes() {
       if (userAttributesBuilder_ == null) {
         if (telemetryDataCase_ == 42) {
-          return (POGOProtos.Rpc.UserAttributes) telemetryData_;
+          return (POGOProtos.Rpc.UserAttributesProto) telemetryData_;
         }
-        return POGOProtos.Rpc.UserAttributes.getDefaultInstance();
+        return POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
       } else {
         if (telemetryDataCase_ == 42) {
           return userAttributesBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.UserAttributes.getDefaultInstance();
+        return POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+     * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      */
-    public Builder setUserAttributes(POGOProtos.Rpc.UserAttributes value) {
+    public Builder setUserAttributes(POGOProtos.Rpc.UserAttributesProto value) {
       if (userAttributesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -11224,10 +11224,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+     * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      */
     public Builder setUserAttributes(
-        POGOProtos.Rpc.UserAttributes.Builder builderForValue) {
+        POGOProtos.Rpc.UserAttributesProto.Builder builderForValue) {
       if (userAttributesBuilder_ == null) {
         telemetryData_ = builderForValue.build();
         onChanged();
@@ -11238,13 +11238,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+     * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      */
-    public Builder mergeUserAttributes(POGOProtos.Rpc.UserAttributes value) {
+    public Builder mergeUserAttributes(POGOProtos.Rpc.UserAttributesProto value) {
       if (userAttributesBuilder_ == null) {
         if (telemetryDataCase_ == 42 &&
-            telemetryData_ != POGOProtos.Rpc.UserAttributes.getDefaultInstance()) {
-          telemetryData_ = POGOProtos.Rpc.UserAttributes.newBuilder((POGOProtos.Rpc.UserAttributes) telemetryData_)
+            telemetryData_ != POGOProtos.Rpc.UserAttributesProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.UserAttributesProto.newBuilder((POGOProtos.Rpc.UserAttributesProto) telemetryData_)
               .mergeFrom(value).buildPartial();
         } else {
           telemetryData_ = value;
@@ -11260,7 +11260,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+     * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      */
     public Builder clearUserAttributes() {
       if (userAttributesBuilder_ == null) {
@@ -11279,38 +11279,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+     * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      */
-    public POGOProtos.Rpc.UserAttributes.Builder getUserAttributesBuilder() {
+    public POGOProtos.Rpc.UserAttributesProto.Builder getUserAttributesBuilder() {
       return getUserAttributesFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+     * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.UserAttributesOrBuilder getUserAttributesOrBuilder() {
+    public POGOProtos.Rpc.UserAttributesProtoOrBuilder getUserAttributesOrBuilder() {
       if ((telemetryDataCase_ == 42) && (userAttributesBuilder_ != null)) {
         return userAttributesBuilder_.getMessageOrBuilder();
       } else {
         if (telemetryDataCase_ == 42) {
-          return (POGOProtos.Rpc.UserAttributes) telemetryData_;
+          return (POGOProtos.Rpc.UserAttributesProto) telemetryData_;
         }
-        return POGOProtos.Rpc.UserAttributes.getDefaultInstance();
+        return POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.UserAttributes user_attributes = 42;</code>
+     * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.UserAttributes, POGOProtos.Rpc.UserAttributes.Builder, POGOProtos.Rpc.UserAttributesOrBuilder> 
+        POGOProtos.Rpc.UserAttributesProto, POGOProtos.Rpc.UserAttributesProto.Builder, POGOProtos.Rpc.UserAttributesProtoOrBuilder> 
         getUserAttributesFieldBuilder() {
       if (userAttributesBuilder_ == null) {
         if (!(telemetryDataCase_ == 42)) {
-          telemetryData_ = POGOProtos.Rpc.UserAttributes.getDefaultInstance();
+          telemetryData_ = POGOProtos.Rpc.UserAttributesProto.getDefaultInstance();
         }
         userAttributesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.UserAttributes, POGOProtos.Rpc.UserAttributes.Builder, POGOProtos.Rpc.UserAttributesOrBuilder>(
-                (POGOProtos.Rpc.UserAttributes) telemetryData_,
+            POGOProtos.Rpc.UserAttributesProto, POGOProtos.Rpc.UserAttributesProto.Builder, POGOProtos.Rpc.UserAttributesProtoOrBuilder>(
+                (POGOProtos.Rpc.UserAttributesProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
         telemetryData_ = null;
@@ -13295,9 +13295,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetryOrBuilder> buddyMultiplayerConnectionFailedTelemetryBuilder_;
+        POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder> buddyMultiplayerConnectionFailedTelemetryBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      * @return Whether the buddyMultiplayerConnectionFailedTelemetry field is set.
      */
     @java.lang.Override
@@ -13305,27 +13305,27 @@ private static final long serialVersionUID = 0L;
       return telemetryDataCase_ == 57;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      * @return The buddyMultiplayerConnectionFailedTelemetry.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry getBuddyMultiplayerConnectionFailedTelemetry() {
+    public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto getBuddyMultiplayerConnectionFailedTelemetry() {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 57) {
-          return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_;
         }
-        return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
       } else {
         if (telemetryDataCase_ == 57) {
           return buddyMultiplayerConnectionFailedTelemetryBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      */
-    public Builder setBuddyMultiplayerConnectionFailedTelemetry(POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry value) {
+    public Builder setBuddyMultiplayerConnectionFailedTelemetry(POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto value) {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -13339,10 +13339,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      */
     public Builder setBuddyMultiplayerConnectionFailedTelemetry(
-        POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.Builder builderForValue) {
+        POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder builderForValue) {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
         telemetryData_ = builderForValue.build();
         onChanged();
@@ -13353,13 +13353,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      */
-    public Builder mergeBuddyMultiplayerConnectionFailedTelemetry(POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry value) {
+    public Builder mergeBuddyMultiplayerConnectionFailedTelemetry(POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto value) {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 57 &&
-            telemetryData_ != POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.getDefaultInstance()) {
-          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.newBuilder((POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_)
+            telemetryData_ != POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.newBuilder((POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_)
               .mergeFrom(value).buildPartial();
         } else {
           telemetryData_ = value;
@@ -13375,7 +13375,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      */
     public Builder clearBuddyMultiplayerConnectionFailedTelemetry() {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
@@ -13394,38 +13394,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      */
-    public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.Builder getBuddyMultiplayerConnectionFailedTelemetryBuilder() {
+    public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder getBuddyMultiplayerConnectionFailedTelemetryBuilder() {
       return getBuddyMultiplayerConnectionFailedTelemetryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetryOrBuilder getBuddyMultiplayerConnectionFailedTelemetryOrBuilder() {
+    public POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder getBuddyMultiplayerConnectionFailedTelemetryOrBuilder() {
       if ((telemetryDataCase_ == 57) && (buddyMultiplayerConnectionFailedTelemetryBuilder_ != null)) {
         return buddyMultiplayerConnectionFailedTelemetryBuilder_.getMessageOrBuilder();
       } else {
         if (telemetryDataCase_ == 57) {
-          return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_;
         }
-        return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry buddy_multiplayer_connection_failed_telemetry = 57;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetryOrBuilder> 
+        POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder> 
         getBuddyMultiplayerConnectionFailedTelemetryFieldBuilder() {
       if (buddyMultiplayerConnectionFailedTelemetryBuilder_ == null) {
         if (!(telemetryDataCase_ == 57)) {
-          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.getDefaultInstance();
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.getDefaultInstance();
         }
         buddyMultiplayerConnectionFailedTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetryOrBuilder>(
-                (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedTelemetry) telemetryData_,
+            POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder>(
+                (POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
         telemetryData_ = null;
@@ -13436,9 +13436,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetryOrBuilder> buddyMultiplayerConnectionSucceededTelemetryBuilder_;
+        POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder> buddyMultiplayerConnectionSucceededTelemetryBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      * @return Whether the buddyMultiplayerConnectionSucceededTelemetry field is set.
      */
     @java.lang.Override
@@ -13446,27 +13446,27 @@ private static final long serialVersionUID = 0L;
       return telemetryDataCase_ == 58;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      * @return The buddyMultiplayerConnectionSucceededTelemetry.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry getBuddyMultiplayerConnectionSucceededTelemetry() {
+    public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto getBuddyMultiplayerConnectionSucceededTelemetry() {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 58) {
-          return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_;
         }
-        return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
       } else {
         if (telemetryDataCase_ == 58) {
           return buddyMultiplayerConnectionSucceededTelemetryBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      */
-    public Builder setBuddyMultiplayerConnectionSucceededTelemetry(POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry value) {
+    public Builder setBuddyMultiplayerConnectionSucceededTelemetry(POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto value) {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -13480,10 +13480,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      */
     public Builder setBuddyMultiplayerConnectionSucceededTelemetry(
-        POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.Builder builderForValue) {
+        POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder builderForValue) {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
         telemetryData_ = builderForValue.build();
         onChanged();
@@ -13494,13 +13494,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      */
-    public Builder mergeBuddyMultiplayerConnectionSucceededTelemetry(POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry value) {
+    public Builder mergeBuddyMultiplayerConnectionSucceededTelemetry(POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto value) {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 58 &&
-            telemetryData_ != POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.getDefaultInstance()) {
-          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.newBuilder((POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry) telemetryData_)
+            telemetryData_ != POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.newBuilder((POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_)
               .mergeFrom(value).buildPartial();
         } else {
           telemetryData_ = value;
@@ -13516,7 +13516,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      */
     public Builder clearBuddyMultiplayerConnectionSucceededTelemetry() {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
@@ -13535,38 +13535,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      */
-    public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.Builder getBuddyMultiplayerConnectionSucceededTelemetryBuilder() {
+    public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder getBuddyMultiplayerConnectionSucceededTelemetryBuilder() {
       return getBuddyMultiplayerConnectionSucceededTelemetryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetryOrBuilder getBuddyMultiplayerConnectionSucceededTelemetryOrBuilder() {
+    public POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder getBuddyMultiplayerConnectionSucceededTelemetryOrBuilder() {
       if ((telemetryDataCase_ == 58) && (buddyMultiplayerConnectionSucceededTelemetryBuilder_ != null)) {
         return buddyMultiplayerConnectionSucceededTelemetryBuilder_.getMessageOrBuilder();
       } else {
         if (telemetryDataCase_ == 58) {
-          return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_;
         }
-        return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetryOrBuilder> 
+        POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder> 
         getBuddyMultiplayerConnectionSucceededTelemetryFieldBuilder() {
       if (buddyMultiplayerConnectionSucceededTelemetryBuilder_ == null) {
         if (!(telemetryDataCase_ == 58)) {
-          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.getDefaultInstance();
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.getDefaultInstance();
         }
         buddyMultiplayerConnectionSucceededTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetryOrBuilder>(
-                (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededTelemetry) telemetryData_,
+            POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto.Builder, POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder>(
+                (POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
         telemetryData_ = null;
@@ -13577,9 +13577,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.Builder, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetryOrBuilder> buddyMultiplayerTimeToGetSessionTelemetryBuilder_;
+        POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder> buddyMultiplayerTimeToGetSessionTelemetryBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      * @return Whether the buddyMultiplayerTimeToGetSessionTelemetry field is set.
      */
     @java.lang.Override
@@ -13587,27 +13587,27 @@ private static final long serialVersionUID = 0L;
       return telemetryDataCase_ == 59;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      * @return The buddyMultiplayerTimeToGetSessionTelemetry.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry getBuddyMultiplayerTimeToGetSessionTelemetry() {
+    public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto getBuddyMultiplayerTimeToGetSessionTelemetry() {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 59) {
-          return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_;
         }
-        return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
       } else {
         if (telemetryDataCase_ == 59) {
           return buddyMultiplayerTimeToGetSessionTelemetryBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      */
-    public Builder setBuddyMultiplayerTimeToGetSessionTelemetry(POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry value) {
+    public Builder setBuddyMultiplayerTimeToGetSessionTelemetry(POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto value) {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -13621,10 +13621,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      */
     public Builder setBuddyMultiplayerTimeToGetSessionTelemetry(
-        POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.Builder builderForValue) {
+        POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder builderForValue) {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
         telemetryData_ = builderForValue.build();
         onChanged();
@@ -13635,13 +13635,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      */
-    public Builder mergeBuddyMultiplayerTimeToGetSessionTelemetry(POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry value) {
+    public Builder mergeBuddyMultiplayerTimeToGetSessionTelemetry(POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto value) {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 59 &&
-            telemetryData_ != POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.getDefaultInstance()) {
-          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.newBuilder((POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry) telemetryData_)
+            telemetryData_ != POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.newBuilder((POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_)
               .mergeFrom(value).buildPartial();
         } else {
           telemetryData_ = value;
@@ -13657,7 +13657,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      */
     public Builder clearBuddyMultiplayerTimeToGetSessionTelemetry() {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
@@ -13676,38 +13676,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      */
-    public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.Builder getBuddyMultiplayerTimeToGetSessionTelemetryBuilder() {
+    public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder getBuddyMultiplayerTimeToGetSessionTelemetryBuilder() {
       return getBuddyMultiplayerTimeToGetSessionTelemetryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetryOrBuilder getBuddyMultiplayerTimeToGetSessionTelemetryOrBuilder() {
+    public POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder getBuddyMultiplayerTimeToGetSessionTelemetryOrBuilder() {
       if ((telemetryDataCase_ == 59) && (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ != null)) {
         return buddyMultiplayerTimeToGetSessionTelemetryBuilder_.getMessageOrBuilder();
       } else {
         if (telemetryDataCase_ == 59) {
-          return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_;
         }
-        return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+     * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.Builder, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetryOrBuilder> 
+        POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder> 
         getBuddyMultiplayerTimeToGetSessionTelemetryFieldBuilder() {
       if (buddyMultiplayerTimeToGetSessionTelemetryBuilder_ == null) {
         if (!(telemetryDataCase_ == 59)) {
-          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.getDefaultInstance();
+          telemetryData_ = POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.getDefaultInstance();
         }
         buddyMultiplayerTimeToGetSessionTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry.Builder, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetryOrBuilder>(
-                (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionTelemetry) telemetryData_,
+            POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto.Builder, POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder>(
+                (POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
         telemetryData_ = null;
@@ -14000,9 +14000,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ArMappingTelemetry, POGOProtos.Rpc.ArMappingTelemetry.Builder, POGOProtos.Rpc.ArMappingTelemetryOrBuilder> arMappingTelemetryBuilder_;
+        POGOProtos.Rpc.ArMappingTelemetryProto, POGOProtos.Rpc.ArMappingTelemetryProto.Builder, POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder> arMappingTelemetryBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+     * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      * @return Whether the arMappingTelemetry field is set.
      */
     @java.lang.Override
@@ -14010,27 +14010,27 @@ private static final long serialVersionUID = 0L;
       return telemetryDataCase_ == 62;
     }
     /**
-     * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+     * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      * @return The arMappingTelemetry.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.ArMappingTelemetry getArMappingTelemetry() {
+    public POGOProtos.Rpc.ArMappingTelemetryProto getArMappingTelemetry() {
       if (arMappingTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 62) {
-          return (POGOProtos.Rpc.ArMappingTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_;
         }
-        return POGOProtos.Rpc.ArMappingTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
       } else {
         if (telemetryDataCase_ == 62) {
           return arMappingTelemetryBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.ArMappingTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+     * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      */
-    public Builder setArMappingTelemetry(POGOProtos.Rpc.ArMappingTelemetry value) {
+    public Builder setArMappingTelemetry(POGOProtos.Rpc.ArMappingTelemetryProto value) {
       if (arMappingTelemetryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -14044,10 +14044,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+     * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      */
     public Builder setArMappingTelemetry(
-        POGOProtos.Rpc.ArMappingTelemetry.Builder builderForValue) {
+        POGOProtos.Rpc.ArMappingTelemetryProto.Builder builderForValue) {
       if (arMappingTelemetryBuilder_ == null) {
         telemetryData_ = builderForValue.build();
         onChanged();
@@ -14058,13 +14058,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+     * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      */
-    public Builder mergeArMappingTelemetry(POGOProtos.Rpc.ArMappingTelemetry value) {
+    public Builder mergeArMappingTelemetry(POGOProtos.Rpc.ArMappingTelemetryProto value) {
       if (arMappingTelemetryBuilder_ == null) {
         if (telemetryDataCase_ == 62 &&
-            telemetryData_ != POGOProtos.Rpc.ArMappingTelemetry.getDefaultInstance()) {
-          telemetryData_ = POGOProtos.Rpc.ArMappingTelemetry.newBuilder((POGOProtos.Rpc.ArMappingTelemetry) telemetryData_)
+            telemetryData_ != POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance()) {
+          telemetryData_ = POGOProtos.Rpc.ArMappingTelemetryProto.newBuilder((POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_)
               .mergeFrom(value).buildPartial();
         } else {
           telemetryData_ = value;
@@ -14080,7 +14080,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+     * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      */
     public Builder clearArMappingTelemetry() {
       if (arMappingTelemetryBuilder_ == null) {
@@ -14099,38 +14099,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+     * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      */
-    public POGOProtos.Rpc.ArMappingTelemetry.Builder getArMappingTelemetryBuilder() {
+    public POGOProtos.Rpc.ArMappingTelemetryProto.Builder getArMappingTelemetryBuilder() {
       return getArMappingTelemetryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+     * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.ArMappingTelemetryOrBuilder getArMappingTelemetryOrBuilder() {
+    public POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder getArMappingTelemetryOrBuilder() {
       if ((telemetryDataCase_ == 62) && (arMappingTelemetryBuilder_ != null)) {
         return arMappingTelemetryBuilder_.getMessageOrBuilder();
       } else {
         if (telemetryDataCase_ == 62) {
-          return (POGOProtos.Rpc.ArMappingTelemetry) telemetryData_;
+          return (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_;
         }
-        return POGOProtos.Rpc.ArMappingTelemetry.getDefaultInstance();
+        return POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ArMappingTelemetry ar_mapping_telemetry = 62;</code>
+     * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ArMappingTelemetry, POGOProtos.Rpc.ArMappingTelemetry.Builder, POGOProtos.Rpc.ArMappingTelemetryOrBuilder> 
+        POGOProtos.Rpc.ArMappingTelemetryProto, POGOProtos.Rpc.ArMappingTelemetryProto.Builder, POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder> 
         getArMappingTelemetryFieldBuilder() {
       if (arMappingTelemetryBuilder_ == null) {
         if (!(telemetryDataCase_ == 62)) {
-          telemetryData_ = POGOProtos.Rpc.ArMappingTelemetry.getDefaultInstance();
+          telemetryData_ = POGOProtos.Rpc.ArMappingTelemetryProto.getDefaultInstance();
         }
         arMappingTelemetryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ArMappingTelemetry, POGOProtos.Rpc.ArMappingTelemetry.Builder, POGOProtos.Rpc.ArMappingTelemetryOrBuilder>(
-                (POGOProtos.Rpc.ArMappingTelemetry) telemetryData_,
+            POGOProtos.Rpc.ArMappingTelemetryProto, POGOProtos.Rpc.ArMappingTelemetryProto.Builder, POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder>(
+                (POGOProtos.Rpc.ArMappingTelemetryProto) telemetryData_,
                 getParentForChildren(),
                 isClean());
         telemetryData_ = null;
@@ -14704,31 +14704,31 @@ private static final long serialVersionUID = 0L;
       return changeOnlineStatusTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformServerData serverData_;
+    private POGOProtos.Rpc.PlatformPlatformServerData serverData_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformServerData, POGOProtos.Rpc.PlatformServerData.Builder, POGOProtos.Rpc.PlatformServerDataOrBuilder> serverDataBuilder_;
+        POGOProtos.Rpc.PlatformPlatformServerData, POGOProtos.Rpc.PlatformPlatformServerData.Builder, POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder> serverDataBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
      * @return Whether the serverData field is set.
      */
     public boolean hasServerData() {
       return serverDataBuilder_ != null || serverData_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
      * @return The serverData.
      */
-    public POGOProtos.Rpc.PlatformServerData getServerData() {
+    public POGOProtos.Rpc.PlatformPlatformServerData getServerData() {
       if (serverDataBuilder_ == null) {
-        return serverData_ == null ? POGOProtos.Rpc.PlatformServerData.getDefaultInstance() : serverData_;
+        return serverData_ == null ? POGOProtos.Rpc.PlatformPlatformServerData.getDefaultInstance() : serverData_;
       } else {
         return serverDataBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
      */
-    public Builder setServerData(POGOProtos.Rpc.PlatformServerData value) {
+    public Builder setServerData(POGOProtos.Rpc.PlatformPlatformServerData value) {
       if (serverDataBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -14742,10 +14742,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
      */
     public Builder setServerData(
-        POGOProtos.Rpc.PlatformServerData.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformPlatformServerData.Builder builderForValue) {
       if (serverDataBuilder_ == null) {
         serverData_ = builderForValue.build();
         onChanged();
@@ -14756,13 +14756,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
      */
-    public Builder mergeServerData(POGOProtos.Rpc.PlatformServerData value) {
+    public Builder mergeServerData(POGOProtos.Rpc.PlatformPlatformServerData value) {
       if (serverDataBuilder_ == null) {
         if (serverData_ != null) {
           serverData_ =
-            POGOProtos.Rpc.PlatformServerData.newBuilder(serverData_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformPlatformServerData.newBuilder(serverData_).mergeFrom(value).buildPartial();
         } else {
           serverData_ = value;
         }
@@ -14774,7 +14774,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
      */
     public Builder clearServerData() {
       if (serverDataBuilder_ == null) {
@@ -14788,33 +14788,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
      */
-    public POGOProtos.Rpc.PlatformServerData.Builder getServerDataBuilder() {
+    public POGOProtos.Rpc.PlatformPlatformServerData.Builder getServerDataBuilder() {
       
       onChanged();
       return getServerDataFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
      */
-    public POGOProtos.Rpc.PlatformServerDataOrBuilder getServerDataOrBuilder() {
+    public POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getServerDataOrBuilder() {
       if (serverDataBuilder_ != null) {
         return serverDataBuilder_.getMessageOrBuilder();
       } else {
         return serverData_ == null ?
-            POGOProtos.Rpc.PlatformServerData.getDefaultInstance() : serverData_;
+            POGOProtos.Rpc.PlatformPlatformServerData.getDefaultInstance() : serverData_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData server_data = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformServerData, POGOProtos.Rpc.PlatformServerData.Builder, POGOProtos.Rpc.PlatformServerDataOrBuilder> 
+        POGOProtos.Rpc.PlatformPlatformServerData, POGOProtos.Rpc.PlatformPlatformServerData.Builder, POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder> 
         getServerDataFieldBuilder() {
       if (serverDataBuilder_ == null) {
         serverDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformServerData, POGOProtos.Rpc.PlatformServerData.Builder, POGOProtos.Rpc.PlatformServerDataOrBuilder>(
+            POGOProtos.Rpc.PlatformPlatformServerData, POGOProtos.Rpc.PlatformPlatformServerData.Builder, POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder>(
                 getServerData(),
                 getParentForChildren(),
                 isClean());
@@ -14823,31 +14823,31 @@ private static final long serialVersionUID = 0L;
       return serverDataBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformCommonFilterProto commonFilters_;
+    private POGOProtos.Rpc.PlatformPlatformCommonFilterProto commonFilters_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformCommonFilterProto, POGOProtos.Rpc.PlatformCommonFilterProto.Builder, POGOProtos.Rpc.PlatformCommonFilterProtoOrBuilder> commonFiltersBuilder_;
+        POGOProtos.Rpc.PlatformPlatformCommonFilterProto, POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder, POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder> commonFiltersBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
      * @return Whether the commonFilters field is set.
      */
     public boolean hasCommonFilters() {
       return commonFiltersBuilder_ != null || commonFilters_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
      * @return The commonFilters.
      */
-    public POGOProtos.Rpc.PlatformCommonFilterProto getCommonFilters() {
+    public POGOProtos.Rpc.PlatformPlatformCommonFilterProto getCommonFilters() {
       if (commonFiltersBuilder_ == null) {
-        return commonFilters_ == null ? POGOProtos.Rpc.PlatformCommonFilterProto.getDefaultInstance() : commonFilters_;
+        return commonFilters_ == null ? POGOProtos.Rpc.PlatformPlatformCommonFilterProto.getDefaultInstance() : commonFilters_;
       } else {
         return commonFiltersBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
      */
-    public Builder setCommonFilters(POGOProtos.Rpc.PlatformCommonFilterProto value) {
+    public Builder setCommonFilters(POGOProtos.Rpc.PlatformPlatformCommonFilterProto value) {
       if (commonFiltersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -14861,10 +14861,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
      */
     public Builder setCommonFilters(
-        POGOProtos.Rpc.PlatformCommonFilterProto.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder builderForValue) {
       if (commonFiltersBuilder_ == null) {
         commonFilters_ = builderForValue.build();
         onChanged();
@@ -14875,13 +14875,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
      */
-    public Builder mergeCommonFilters(POGOProtos.Rpc.PlatformCommonFilterProto value) {
+    public Builder mergeCommonFilters(POGOProtos.Rpc.PlatformPlatformCommonFilterProto value) {
       if (commonFiltersBuilder_ == null) {
         if (commonFilters_ != null) {
           commonFilters_ =
-            POGOProtos.Rpc.PlatformCommonFilterProto.newBuilder(commonFilters_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformPlatformCommonFilterProto.newBuilder(commonFilters_).mergeFrom(value).buildPartial();
         } else {
           commonFilters_ = value;
         }
@@ -14893,7 +14893,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
      */
     public Builder clearCommonFilters() {
       if (commonFiltersBuilder_ == null) {
@@ -14907,33 +14907,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
      */
-    public POGOProtos.Rpc.PlatformCommonFilterProto.Builder getCommonFiltersBuilder() {
+    public POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder getCommonFiltersBuilder() {
       
       onChanged();
       return getCommonFiltersFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
      */
-    public POGOProtos.Rpc.PlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder() {
+    public POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder() {
       if (commonFiltersBuilder_ != null) {
         return commonFiltersBuilder_.getMessageOrBuilder();
       } else {
         return commonFilters_ == null ?
-            POGOProtos.Rpc.PlatformCommonFilterProto.getDefaultInstance() : commonFilters_;
+            POGOProtos.Rpc.PlatformPlatformCommonFilterProto.getDefaultInstance() : commonFilters_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformCommonFilterProto common_filters = 1002;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformCommonFilterProto, POGOProtos.Rpc.PlatformCommonFilterProto.Builder, POGOProtos.Rpc.PlatformCommonFilterProtoOrBuilder> 
+        POGOProtos.Rpc.PlatformPlatformCommonFilterProto, POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder, POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder> 
         getCommonFiltersFieldBuilder() {
       if (commonFiltersBuilder_ == null) {
         commonFiltersBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformCommonFilterProto, POGOProtos.Rpc.PlatformCommonFilterProto.Builder, POGOProtos.Rpc.PlatformCommonFilterProtoOrBuilder>(
+            POGOProtos.Rpc.PlatformPlatformCommonFilterProto, POGOProtos.Rpc.PlatformPlatformCommonFilterProto.Builder, POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder>(
                 getCommonFilters(),
                 getParentForChildren(),
                 isClean());

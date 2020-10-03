@@ -8,26 +8,26 @@ public interface BattleAttributesProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>float mopajblfilb = 1;</code>
-   * @return The mopajblfilb.
+   * <code>float sta_percent = 1;</code>
+   * @return The staPercent.
    */
-  float getMopajblfilb();
+  float getStaPercent();
 
   /**
-   * <code>float ekgmjpdbpcg = 2;</code>
-   * @return The ekgmjpdbpcg.
+   * <code>float atk_percent = 2;</code>
+   * @return The atkPercent.
    */
-  float getEkgmjpdbpcg();
+  float getAtkPercent();
 
   /**
-   * <code>float hdpfooknanf = 3;</code>
-   * @return The hdpfooknanf.
+   * <code>float def_percent = 3;</code>
+   * @return The defPercent.
    */
-  float getHdpfooknanf();
+  float getDefPercent();
 
   /**
-   * <code>float adbcjmkmpnn = 4;</code>
-   * @return The adbcjmkmpnn.
+   * <code>float duration_s = 4;</code>
+   * @return The durationS.
    */
-  float getAdbcjmkmpnn();
+  float getDurationS();
 }

@@ -19,17 +19,17 @@ public interface CancelTradingOutProtoOrBuilder extends
   POGOProtos.Rpc.CancelTradingOutProto.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
-   * @return Whether the jikkdljggho field is set.
+   * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
+   * @return Whether the trading field is set.
    */
-  boolean hasJikkdljggho();
+  boolean hasTrading();
   /**
-   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
-   * @return The jikkdljggho.
+   * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
+   * @return The trading.
    */
-  POGOProtos.Rpc.TradingProto getJikkdljggho();
+  POGOProtos.Rpc.TradingProto getTrading();
   /**
-   * <code>.POGOProtos.Rpc.TradingProto jikkdljggho = 2;</code>
+   * <code>.POGOProtos.Rpc.TradingProto trading = 2;</code>
    */
-  POGOProtos.Rpc.TradingProtoOrBuilder getJikkdljgghoOrBuilder();
+  POGOProtos.Rpc.TradingProtoOrBuilder getTradingOrBuilder();
 }

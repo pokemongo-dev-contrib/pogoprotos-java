@@ -8,61 +8,61 @@ public interface CombatActionProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB gnkgaimjkch = 1;</code>
-   * @return The enum numeric value on the wire for gnkgaimjkch.
+   * <code>.POGOProtos.Rpc.CombatActionProto.ActionType type = 1;</code>
+   * @return The enum numeric value on the wire for type.
    */
-  int getGnkgaimjkchValue();
+  int getTypeValue();
   /**
-   * <code>.POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB gnkgaimjkch = 1;</code>
-   * @return The gnkgaimjkch.
+   * <code>.POGOProtos.Rpc.CombatActionProto.ActionType type = 1;</code>
+   * @return The type.
    */
-  POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB getGnkgaimjkch();
+  POGOProtos.Rpc.CombatActionProto.ActionType getType();
 
   /**
-   * <code>int32 inchanehmfa = 3;</code>
-   * @return The inchanehmfa.
+   * <code>int32 action_start_turn = 3;</code>
+   * @return The actionStartTurn.
    */
-  int getInchanehmfa();
+  int getActionStartTurn();
 
   /**
-   * <code>int32 dmdcnoefklc = 5;</code>
-   * @return The dmdcnoefklc.
+   * <code>int32 duration_turns = 5;</code>
+   * @return The durationTurns.
    */
-  int getDmdcnoefklc();
+  int getDurationTurns();
 
   /**
-   * <code>int32 fpinkpobima = 6;</code>
-   * @return The fpinkpobima.
+   * <code>int32 attacker_index = 6;</code>
+   * @return The attackerIndex.
    */
-  int getFpinkpobima();
+  int getAttackerIndex();
 
   /**
-   * <code>int32 dhbchblnmec = 7;</code>
-   * @return The dhbchblnmec.
+   * <code>int32 target_index = 7;</code>
+   * @return The targetIndex.
    */
-  int getDhbchblnmec();
+  int getTargetIndex();
 
   /**
-   * <code>uint64 mcmcjgaiaec = 8;</code>
-   * @return The mcmcjgaiaec.
+   * <code>fixed64 active_pokemon_id = 8;</code>
+   * @return The activePokemonId.
    */
-  long getMcmcjgaiaec();
+  long getActivePokemonId();
 
   /**
-   * <code>uint64 dlgdgnjagoo = 14;</code>
-   * @return The dlgdgnjagoo.
+   * <code>fixed64 target_pokemon_id = 14;</code>
+   * @return The targetPokemonId.
    */
-  long getDlgdgnjagoo();
+  long getTargetPokemonId();
 
   /**
-   * <code>float fcfempciffe = 15;</code>
-   * @return The fcfempciffe.
+   * <code>float minigame_score = 15;</code>
+   * @return The minigameScore.
    */
-  float getFcfempciffe();
+  float getMinigameScore();
 
   /**
-   * <code>int32 lnjjofibmfe = 16;</code>
-   * @return The lnjjofibmfe.
+   * <code>int32 move = 16;</code>
+   * @return The move.
    */
-  int getLnjjofibmfe();
+  int getMove();
 }

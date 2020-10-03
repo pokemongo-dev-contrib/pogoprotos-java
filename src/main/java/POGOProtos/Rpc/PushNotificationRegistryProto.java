@@ -53,11 +53,11 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.ApnToken.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformApnToken.Builder subBuilder = null;
             if (apnToken_ != null) {
               subBuilder = apnToken_.toBuilder();
             }
-            apnToken_ = input.readMessage(POGOProtos.Rpc.ApnToken.parser(), extensionRegistry);
+            apnToken_ = input.readMessage(POGOProtos.Rpc.PlatformApnToken.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(apnToken_);
               apnToken_ = subBuilder.buildPartial();
@@ -111,9 +111,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int APN_TOKEN_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.ApnToken apnToken_;
+  private POGOProtos.Rpc.PlatformApnToken apnToken_;
   /**
-   * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
    * @return Whether the apnToken field is set.
    */
   @java.lang.Override
@@ -121,18 +121,18 @@ private static final long serialVersionUID = 0L;
     return apnToken_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
    * @return The apnToken.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ApnToken getApnToken() {
-    return apnToken_ == null ? POGOProtos.Rpc.ApnToken.getDefaultInstance() : apnToken_;
+  public POGOProtos.Rpc.PlatformApnToken getApnToken() {
+    return apnToken_ == null ? POGOProtos.Rpc.PlatformApnToken.getDefaultInstance() : apnToken_;
   }
   /**
-   * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+   * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ApnTokenOrBuilder getApnTokenOrBuilder() {
+  public POGOProtos.Rpc.PlatformApnTokenOrBuilder getApnTokenOrBuilder() {
     return getApnToken();
   }
 
@@ -511,31 +511,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.ApnToken apnToken_;
+    private POGOProtos.Rpc.PlatformApnToken apnToken_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ApnToken, POGOProtos.Rpc.ApnToken.Builder, POGOProtos.Rpc.ApnTokenOrBuilder> apnTokenBuilder_;
+        POGOProtos.Rpc.PlatformApnToken, POGOProtos.Rpc.PlatformApnToken.Builder, POGOProtos.Rpc.PlatformApnTokenOrBuilder> apnTokenBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
      * @return Whether the apnToken field is set.
      */
     public boolean hasApnToken() {
       return apnTokenBuilder_ != null || apnToken_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
      * @return The apnToken.
      */
-    public POGOProtos.Rpc.ApnToken getApnToken() {
+    public POGOProtos.Rpc.PlatformApnToken getApnToken() {
       if (apnTokenBuilder_ == null) {
-        return apnToken_ == null ? POGOProtos.Rpc.ApnToken.getDefaultInstance() : apnToken_;
+        return apnToken_ == null ? POGOProtos.Rpc.PlatformApnToken.getDefaultInstance() : apnToken_;
       } else {
         return apnTokenBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
      */
-    public Builder setApnToken(POGOProtos.Rpc.ApnToken value) {
+    public Builder setApnToken(POGOProtos.Rpc.PlatformApnToken value) {
       if (apnTokenBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -549,10 +549,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
      */
     public Builder setApnToken(
-        POGOProtos.Rpc.ApnToken.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformApnToken.Builder builderForValue) {
       if (apnTokenBuilder_ == null) {
         apnToken_ = builderForValue.build();
         onChanged();
@@ -563,13 +563,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
      */
-    public Builder mergeApnToken(POGOProtos.Rpc.ApnToken value) {
+    public Builder mergeApnToken(POGOProtos.Rpc.PlatformApnToken value) {
       if (apnTokenBuilder_ == null) {
         if (apnToken_ != null) {
           apnToken_ =
-            POGOProtos.Rpc.ApnToken.newBuilder(apnToken_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformApnToken.newBuilder(apnToken_).mergeFrom(value).buildPartial();
         } else {
           apnToken_ = value;
         }
@@ -581,7 +581,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
      */
     public Builder clearApnToken() {
       if (apnTokenBuilder_ == null) {
@@ -595,33 +595,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
      */
-    public POGOProtos.Rpc.ApnToken.Builder getApnTokenBuilder() {
+    public POGOProtos.Rpc.PlatformApnToken.Builder getApnTokenBuilder() {
       
       onChanged();
       return getApnTokenFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
      */
-    public POGOProtos.Rpc.ApnTokenOrBuilder getApnTokenOrBuilder() {
+    public POGOProtos.Rpc.PlatformApnTokenOrBuilder getApnTokenOrBuilder() {
       if (apnTokenBuilder_ != null) {
         return apnTokenBuilder_.getMessageOrBuilder();
       } else {
         return apnToken_ == null ?
-            POGOProtos.Rpc.ApnToken.getDefaultInstance() : apnToken_;
+            POGOProtos.Rpc.PlatformApnToken.getDefaultInstance() : apnToken_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ApnToken apn_token = 1;</code>
+     * <code>.POGOProtos.Rpc.PlatformApnToken apn_token = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ApnToken, POGOProtos.Rpc.ApnToken.Builder, POGOProtos.Rpc.ApnTokenOrBuilder> 
+        POGOProtos.Rpc.PlatformApnToken, POGOProtos.Rpc.PlatformApnToken.Builder, POGOProtos.Rpc.PlatformApnTokenOrBuilder> 
         getApnTokenFieldBuilder() {
       if (apnTokenBuilder_ == null) {
         apnTokenBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ApnToken, POGOProtos.Rpc.ApnToken.Builder, POGOProtos.Rpc.ApnTokenOrBuilder>(
+            POGOProtos.Rpc.PlatformApnToken, POGOProtos.Rpc.PlatformApnToken.Builder, POGOProtos.Rpc.PlatformApnTokenOrBuilder>(
                 getApnToken(),
                 getParentForChildren(),
                 isClean());

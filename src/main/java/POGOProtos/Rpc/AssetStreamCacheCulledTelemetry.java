@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AssetStreamCacheCulledTelemetry() {
-    hiijbokbgde_ = 0;
+    assetEventId_ = 0;
   }
 
   @java.lang.Override
@@ -56,12 +56,12 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            hiijbokbgde_ = rawValue;
+            assetEventId_ = rawValue;
             break;
           }
           case 16: {
 
-            amelmiapbic_ = input.readUInt32();
+            spaceReleased_ = input.readUInt32();
             break;
           }
           default: {
@@ -96,34 +96,34 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.class, POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.Builder.class);
   }
 
-  public static final int HIIJBOKBGDE_FIELD_NUMBER = 1;
-  private int hiijbokbgde_;
+  public static final int ASSET_EVENT_ID_FIELD_NUMBER = 1;
+  private int assetEventId_;
   /**
-   * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-   * @return The enum numeric value on the wire for hiijbokbgde.
+   * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+   * @return The enum numeric value on the wire for assetEventId.
    */
-  @java.lang.Override public int getHiijbokbgdeValue() {
-    return hiijbokbgde_;
+  @java.lang.Override public int getAssetEventIdValue() {
+    return assetEventId_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-   * @return The hiijbokbgde.
+   * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+   * @return The assetEventId.
    */
-  @java.lang.Override public POGOProtos.Rpc.AssetTelemetryIds getHiijbokbgde() {
+  @java.lang.Override public POGOProtos.Rpc.AssetTelemetryIds getAssetEventId() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.AssetTelemetryIds result = POGOProtos.Rpc.AssetTelemetryIds.valueOf(hiijbokbgde_);
+    POGOProtos.Rpc.AssetTelemetryIds result = POGOProtos.Rpc.AssetTelemetryIds.valueOf(assetEventId_);
     return result == null ? POGOProtos.Rpc.AssetTelemetryIds.UNRECOGNIZED : result;
   }
 
-  public static final int AMELMIAPBIC_FIELD_NUMBER = 2;
-  private int amelmiapbic_;
+  public static final int SPACE_RELEASED_FIELD_NUMBER = 2;
+  private int spaceReleased_;
   /**
-   * <code>uint32 amelmiapbic = 2;</code>
-   * @return The amelmiapbic.
+   * <code>uint32 space_released = 2;</code>
+   * @return The spaceReleased.
    */
   @java.lang.Override
-  public int getAmelmiapbic() {
-    return amelmiapbic_;
+  public int getSpaceReleased() {
+    return spaceReleased_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -140,11 +140,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (hiijbokbgde_ != POGOProtos.Rpc.AssetTelemetryIds.ASSET_TELEMETRY_IDS_UNDEFINED_ASSET_EVENT.getNumber()) {
-      output.writeEnum(1, hiijbokbgde_);
+    if (assetEventId_ != POGOProtos.Rpc.AssetTelemetryIds.ASSET_TELEMETRY_IDS_UNDEFINED_ASSET_EVENT.getNumber()) {
+      output.writeEnum(1, assetEventId_);
     }
-    if (amelmiapbic_ != 0) {
-      output.writeUInt32(2, amelmiapbic_);
+    if (spaceReleased_ != 0) {
+      output.writeUInt32(2, spaceReleased_);
     }
     unknownFields.writeTo(output);
   }
@@ -155,13 +155,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (hiijbokbgde_ != POGOProtos.Rpc.AssetTelemetryIds.ASSET_TELEMETRY_IDS_UNDEFINED_ASSET_EVENT.getNumber()) {
+    if (assetEventId_ != POGOProtos.Rpc.AssetTelemetryIds.ASSET_TELEMETRY_IDS_UNDEFINED_ASSET_EVENT.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, hiijbokbgde_);
+        .computeEnumSize(1, assetEventId_);
     }
-    if (amelmiapbic_ != 0) {
+    if (spaceReleased_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt32Size(2, amelmiapbic_);
+        .computeUInt32Size(2, spaceReleased_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -178,9 +178,9 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.AssetStreamCacheCulledTelemetry other = (POGOProtos.Rpc.AssetStreamCacheCulledTelemetry) obj;
 
-    if (hiijbokbgde_ != other.hiijbokbgde_) return false;
-    if (getAmelmiapbic()
-        != other.getAmelmiapbic()) return false;
+    if (assetEventId_ != other.assetEventId_) return false;
+    if (getSpaceReleased()
+        != other.getSpaceReleased()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -192,10 +192,10 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + HIIJBOKBGDE_FIELD_NUMBER;
-    hash = (53 * hash) + hiijbokbgde_;
-    hash = (37 * hash) + AMELMIAPBIC_FIELD_NUMBER;
-    hash = (53 * hash) + getAmelmiapbic();
+    hash = (37 * hash) + ASSET_EVENT_ID_FIELD_NUMBER;
+    hash = (53 * hash) + assetEventId_;
+    hash = (37 * hash) + SPACE_RELEASED_FIELD_NUMBER;
+    hash = (53 * hash) + getSpaceReleased();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -333,9 +333,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      hiijbokbgde_ = 0;
+      assetEventId_ = 0;
 
-      amelmiapbic_ = 0;
+      spaceReleased_ = 0;
 
       return this;
     }
@@ -363,8 +363,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.AssetStreamCacheCulledTelemetry buildPartial() {
       POGOProtos.Rpc.AssetStreamCacheCulledTelemetry result = new POGOProtos.Rpc.AssetStreamCacheCulledTelemetry(this);
-      result.hiijbokbgde_ = hiijbokbgde_;
-      result.amelmiapbic_ = amelmiapbic_;
+      result.assetEventId_ = assetEventId_;
+      result.spaceReleased_ = spaceReleased_;
       onBuilt();
       return result;
     }
@@ -413,11 +413,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.AssetStreamCacheCulledTelemetry other) {
       if (other == POGOProtos.Rpc.AssetStreamCacheCulledTelemetry.getDefaultInstance()) return this;
-      if (other.hiijbokbgde_ != 0) {
-        setHiijbokbgdeValue(other.getHiijbokbgdeValue());
+      if (other.assetEventId_ != 0) {
+        setAssetEventIdValue(other.getAssetEventIdValue());
       }
-      if (other.getAmelmiapbic() != 0) {
-        setAmelmiapbic(other.getAmelmiapbic());
+      if (other.getSpaceReleased() != 0) {
+        setSpaceReleased(other.getSpaceReleased());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -448,87 +448,87 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int hiijbokbgde_ = 0;
+    private int assetEventId_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-     * @return The enum numeric value on the wire for hiijbokbgde.
+     * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+     * @return The enum numeric value on the wire for assetEventId.
      */
-    @java.lang.Override public int getHiijbokbgdeValue() {
-      return hiijbokbgde_;
+    @java.lang.Override public int getAssetEventIdValue() {
+      return assetEventId_;
     }
     /**
-     * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-     * @param value The enum numeric value on the wire for hiijbokbgde to set.
+     * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+     * @param value The enum numeric value on the wire for assetEventId to set.
      * @return This builder for chaining.
      */
-    public Builder setHiijbokbgdeValue(int value) {
+    public Builder setAssetEventIdValue(int value) {
       
-      hiijbokbgde_ = value;
+      assetEventId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-     * @return The hiijbokbgde.
+     * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+     * @return The assetEventId.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.AssetTelemetryIds getHiijbokbgde() {
+    public POGOProtos.Rpc.AssetTelemetryIds getAssetEventId() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.AssetTelemetryIds result = POGOProtos.Rpc.AssetTelemetryIds.valueOf(hiijbokbgde_);
+      POGOProtos.Rpc.AssetTelemetryIds result = POGOProtos.Rpc.AssetTelemetryIds.valueOf(assetEventId_);
       return result == null ? POGOProtos.Rpc.AssetTelemetryIds.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
-     * @param value The hiijbokbgde to set.
+     * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
+     * @param value The assetEventId to set.
      * @return This builder for chaining.
      */
-    public Builder setHiijbokbgde(POGOProtos.Rpc.AssetTelemetryIds value) {
+    public Builder setAssetEventId(POGOProtos.Rpc.AssetTelemetryIds value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      hiijbokbgde_ = value.getNumber();
+      assetEventId_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AssetTelemetryIds hiijbokbgde = 1;</code>
+     * <code>.POGOProtos.Rpc.AssetTelemetryIds asset_event_id = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearHiijbokbgde() {
+    public Builder clearAssetEventId() {
       
-      hiijbokbgde_ = 0;
+      assetEventId_ = 0;
       onChanged();
       return this;
     }
 
-    private int amelmiapbic_ ;
+    private int spaceReleased_ ;
     /**
-     * <code>uint32 amelmiapbic = 2;</code>
-     * @return The amelmiapbic.
+     * <code>uint32 space_released = 2;</code>
+     * @return The spaceReleased.
      */
     @java.lang.Override
-    public int getAmelmiapbic() {
-      return amelmiapbic_;
+    public int getSpaceReleased() {
+      return spaceReleased_;
     }
     /**
-     * <code>uint32 amelmiapbic = 2;</code>
-     * @param value The amelmiapbic to set.
+     * <code>uint32 space_released = 2;</code>
+     * @param value The spaceReleased to set.
      * @return This builder for chaining.
      */
-    public Builder setAmelmiapbic(int value) {
+    public Builder setSpaceReleased(int value) {
       
-      amelmiapbic_ = value;
+      spaceReleased_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>uint32 amelmiapbic = 2;</code>
+     * <code>uint32 space_released = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAmelmiapbic() {
+    public Builder clearSpaceReleased() {
       
-      amelmiapbic_ = 0;
+      spaceReleased_ = 0;
       onChanged();
       return this;
     }

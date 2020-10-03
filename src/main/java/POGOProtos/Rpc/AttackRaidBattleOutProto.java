@@ -61,26 +61,26 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             POGOProtos.Rpc.BattleUpdateProto.Builder subBuilder = null;
-            if (mifmmmlipdf_ != null) {
-              subBuilder = mifmmmlipdf_.toBuilder();
+            if (imageTextCreative_ != null) {
+              subBuilder = imageTextCreative_.toBuilder();
             }
-            mifmmmlipdf_ = input.readMessage(POGOProtos.Rpc.BattleUpdateProto.parser(), extensionRegistry);
+            imageTextCreative_ = input.readMessage(POGOProtos.Rpc.BattleUpdateProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(mifmmmlipdf_);
-              mifmmmlipdf_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(imageTextCreative_);
+              imageTextCreative_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 26: {
             POGOProtos.Rpc.AdDetails.Builder subBuilder = null;
-            if (fofagloikmg_ != null) {
-              subBuilder = fofagloikmg_.toBuilder();
+            if (encryptedAdToken_ != null) {
+              subBuilder = encryptedAdToken_.toBuilder();
             }
-            fofagloikmg_ = input.readMessage(POGOProtos.Rpc.AdDetails.parser(), extensionRegistry);
+            encryptedAdToken_ = input.readMessage(POGOProtos.Rpc.AdDetails.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(fofagloikmg_);
-              fofagloikmg_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(encryptedAdToken_);
+              encryptedAdToken_ = subBuilder.buildPartial();
             }
 
             break;
@@ -293,56 +293,56 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.AttackRaidBattleOutProto.Result.UNRECOGNIZED : result;
   }
 
-  public static final int MIFMMMLIPDF_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf_;
+  public static final int IMAGE_TEXT_CREATIVE_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.BattleUpdateProto imageTextCreative_;
   /**
-   * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
-   * @return Whether the mifmmmlipdf field is set.
+   * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
+   * @return Whether the imageTextCreative field is set.
    */
   @java.lang.Override
-  public boolean hasMifmmmlipdf() {
-    return mifmmmlipdf_ != null;
+  public boolean hasImageTextCreative() {
+    return imageTextCreative_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
-   * @return The mifmmmlipdf.
+   * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
+   * @return The imageTextCreative.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BattleUpdateProto getMifmmmlipdf() {
-    return mifmmmlipdf_ == null ? POGOProtos.Rpc.BattleUpdateProto.getDefaultInstance() : mifmmmlipdf_;
+  public POGOProtos.Rpc.BattleUpdateProto getImageTextCreative() {
+    return imageTextCreative_ == null ? POGOProtos.Rpc.BattleUpdateProto.getDefaultInstance() : imageTextCreative_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
+   * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BattleUpdateProtoOrBuilder getMifmmmlipdfOrBuilder() {
-    return getMifmmmlipdf();
+  public POGOProtos.Rpc.BattleUpdateProtoOrBuilder getImageTextCreativeOrBuilder() {
+    return getImageTextCreative();
   }
 
-  public static final int FOFAGLOIKMG_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.AdDetails fofagloikmg_;
+  public static final int ENCRYPTED_AD_TOKEN_FIELD_NUMBER = 3;
+  private POGOProtos.Rpc.AdDetails encryptedAdToken_;
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
-   * @return Whether the fofagloikmg field is set.
+   * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
+   * @return Whether the encryptedAdToken field is set.
    */
   @java.lang.Override
-  public boolean hasFofagloikmg() {
-    return fofagloikmg_ != null;
+  public boolean hasEncryptedAdToken() {
+    return encryptedAdToken_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
-   * @return The fofagloikmg.
+   * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
+   * @return The encryptedAdToken.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AdDetails getFofagloikmg() {
-    return fofagloikmg_ == null ? POGOProtos.Rpc.AdDetails.getDefaultInstance() : fofagloikmg_;
+  public POGOProtos.Rpc.AdDetails getEncryptedAdToken() {
+    return encryptedAdToken_ == null ? POGOProtos.Rpc.AdDetails.getDefaultInstance() : encryptedAdToken_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
+   * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.AdDetailsOrBuilder getFofagloikmgOrBuilder() {
-    return getFofagloikmg();
+  public POGOProtos.Rpc.AdDetailsOrBuilder getEncryptedAdTokenOrBuilder() {
+    return getEncryptedAdToken();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -362,11 +362,11 @@ private static final long serialVersionUID = 0L;
     if (result_ != POGOProtos.Rpc.AttackRaidBattleOutProto.Result.UNSET.getNumber()) {
       output.writeEnum(1, result_);
     }
-    if (mifmmmlipdf_ != null) {
-      output.writeMessage(2, getMifmmmlipdf());
+    if (imageTextCreative_ != null) {
+      output.writeMessage(2, getImageTextCreative());
     }
-    if (fofagloikmg_ != null) {
-      output.writeMessage(3, getFofagloikmg());
+    if (encryptedAdToken_ != null) {
+      output.writeMessage(3, getEncryptedAdToken());
     }
     unknownFields.writeTo(output);
   }
@@ -381,13 +381,13 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }
-    if (mifmmmlipdf_ != null) {
+    if (imageTextCreative_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getMifmmmlipdf());
+        .computeMessageSize(2, getImageTextCreative());
     }
-    if (fofagloikmg_ != null) {
+    if (encryptedAdToken_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getFofagloikmg());
+        .computeMessageSize(3, getEncryptedAdToken());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -405,15 +405,15 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.AttackRaidBattleOutProto other = (POGOProtos.Rpc.AttackRaidBattleOutProto) obj;
 
     if (result_ != other.result_) return false;
-    if (hasMifmmmlipdf() != other.hasMifmmmlipdf()) return false;
-    if (hasMifmmmlipdf()) {
-      if (!getMifmmmlipdf()
-          .equals(other.getMifmmmlipdf())) return false;
+    if (hasImageTextCreative() != other.hasImageTextCreative()) return false;
+    if (hasImageTextCreative()) {
+      if (!getImageTextCreative()
+          .equals(other.getImageTextCreative())) return false;
     }
-    if (hasFofagloikmg() != other.hasFofagloikmg()) return false;
-    if (hasFofagloikmg()) {
-      if (!getFofagloikmg()
-          .equals(other.getFofagloikmg())) return false;
+    if (hasEncryptedAdToken() != other.hasEncryptedAdToken()) return false;
+    if (hasEncryptedAdToken()) {
+      if (!getEncryptedAdToken()
+          .equals(other.getEncryptedAdToken())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -428,13 +428,13 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + RESULT_FIELD_NUMBER;
     hash = (53 * hash) + result_;
-    if (hasMifmmmlipdf()) {
-      hash = (37 * hash) + MIFMMMLIPDF_FIELD_NUMBER;
-      hash = (53 * hash) + getMifmmmlipdf().hashCode();
+    if (hasImageTextCreative()) {
+      hash = (37 * hash) + IMAGE_TEXT_CREATIVE_FIELD_NUMBER;
+      hash = (53 * hash) + getImageTextCreative().hashCode();
     }
-    if (hasFofagloikmg()) {
-      hash = (37 * hash) + FOFAGLOIKMG_FIELD_NUMBER;
-      hash = (53 * hash) + getFofagloikmg().hashCode();
+    if (hasEncryptedAdToken()) {
+      hash = (37 * hash) + ENCRYPTED_AD_TOKEN_FIELD_NUMBER;
+      hash = (53 * hash) + getEncryptedAdToken().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -575,17 +575,17 @@ private static final long serialVersionUID = 0L;
       super.clear();
       result_ = 0;
 
-      if (mifmmmlipdfBuilder_ == null) {
-        mifmmmlipdf_ = null;
+      if (imageTextCreativeBuilder_ == null) {
+        imageTextCreative_ = null;
       } else {
-        mifmmmlipdf_ = null;
-        mifmmmlipdfBuilder_ = null;
+        imageTextCreative_ = null;
+        imageTextCreativeBuilder_ = null;
       }
-      if (fofagloikmgBuilder_ == null) {
-        fofagloikmg_ = null;
+      if (encryptedAdTokenBuilder_ == null) {
+        encryptedAdToken_ = null;
       } else {
-        fofagloikmg_ = null;
-        fofagloikmgBuilder_ = null;
+        encryptedAdToken_ = null;
+        encryptedAdTokenBuilder_ = null;
       }
       return this;
     }
@@ -614,15 +614,15 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.AttackRaidBattleOutProto buildPartial() {
       POGOProtos.Rpc.AttackRaidBattleOutProto result = new POGOProtos.Rpc.AttackRaidBattleOutProto(this);
       result.result_ = result_;
-      if (mifmmmlipdfBuilder_ == null) {
-        result.mifmmmlipdf_ = mifmmmlipdf_;
+      if (imageTextCreativeBuilder_ == null) {
+        result.imageTextCreative_ = imageTextCreative_;
       } else {
-        result.mifmmmlipdf_ = mifmmmlipdfBuilder_.build();
+        result.imageTextCreative_ = imageTextCreativeBuilder_.build();
       }
-      if (fofagloikmgBuilder_ == null) {
-        result.fofagloikmg_ = fofagloikmg_;
+      if (encryptedAdTokenBuilder_ == null) {
+        result.encryptedAdToken_ = encryptedAdToken_;
       } else {
-        result.fofagloikmg_ = fofagloikmgBuilder_.build();
+        result.encryptedAdToken_ = encryptedAdTokenBuilder_.build();
       }
       onBuilt();
       return result;
@@ -675,11 +675,11 @@ private static final long serialVersionUID = 0L;
       if (other.result_ != 0) {
         setResultValue(other.getResultValue());
       }
-      if (other.hasMifmmmlipdf()) {
-        mergeMifmmmlipdf(other.getMifmmmlipdf());
+      if (other.hasImageTextCreative()) {
+        mergeImageTextCreative(other.getImageTextCreative());
       }
-      if (other.hasFofagloikmg()) {
-        mergeFofagloikmg(other.getFofagloikmg());
+      if (other.hasEncryptedAdToken()) {
+        mergeEncryptedAdToken(other.getEncryptedAdToken());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -764,242 +764,242 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf_;
+    private POGOProtos.Rpc.BattleUpdateProto imageTextCreative_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BattleUpdateProto, POGOProtos.Rpc.BattleUpdateProto.Builder, POGOProtos.Rpc.BattleUpdateProtoOrBuilder> mifmmmlipdfBuilder_;
+        POGOProtos.Rpc.BattleUpdateProto, POGOProtos.Rpc.BattleUpdateProto.Builder, POGOProtos.Rpc.BattleUpdateProtoOrBuilder> imageTextCreativeBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
-     * @return Whether the mifmmmlipdf field is set.
+     * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
+     * @return Whether the imageTextCreative field is set.
      */
-    public boolean hasMifmmmlipdf() {
-      return mifmmmlipdfBuilder_ != null || mifmmmlipdf_ != null;
+    public boolean hasImageTextCreative() {
+      return imageTextCreativeBuilder_ != null || imageTextCreative_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
-     * @return The mifmmmlipdf.
+     * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
+     * @return The imageTextCreative.
      */
-    public POGOProtos.Rpc.BattleUpdateProto getMifmmmlipdf() {
-      if (mifmmmlipdfBuilder_ == null) {
-        return mifmmmlipdf_ == null ? POGOProtos.Rpc.BattleUpdateProto.getDefaultInstance() : mifmmmlipdf_;
+    public POGOProtos.Rpc.BattleUpdateProto getImageTextCreative() {
+      if (imageTextCreativeBuilder_ == null) {
+        return imageTextCreative_ == null ? POGOProtos.Rpc.BattleUpdateProto.getDefaultInstance() : imageTextCreative_;
       } else {
-        return mifmmmlipdfBuilder_.getMessage();
+        return imageTextCreativeBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
      */
-    public Builder setMifmmmlipdf(POGOProtos.Rpc.BattleUpdateProto value) {
-      if (mifmmmlipdfBuilder_ == null) {
+    public Builder setImageTextCreative(POGOProtos.Rpc.BattleUpdateProto value) {
+      if (imageTextCreativeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        mifmmmlipdf_ = value;
+        imageTextCreative_ = value;
         onChanged();
       } else {
-        mifmmmlipdfBuilder_.setMessage(value);
+        imageTextCreativeBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
      */
-    public Builder setMifmmmlipdf(
+    public Builder setImageTextCreative(
         POGOProtos.Rpc.BattleUpdateProto.Builder builderForValue) {
-      if (mifmmmlipdfBuilder_ == null) {
-        mifmmmlipdf_ = builderForValue.build();
+      if (imageTextCreativeBuilder_ == null) {
+        imageTextCreative_ = builderForValue.build();
         onChanged();
       } else {
-        mifmmmlipdfBuilder_.setMessage(builderForValue.build());
+        imageTextCreativeBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
      */
-    public Builder mergeMifmmmlipdf(POGOProtos.Rpc.BattleUpdateProto value) {
-      if (mifmmmlipdfBuilder_ == null) {
-        if (mifmmmlipdf_ != null) {
-          mifmmmlipdf_ =
-            POGOProtos.Rpc.BattleUpdateProto.newBuilder(mifmmmlipdf_).mergeFrom(value).buildPartial();
+    public Builder mergeImageTextCreative(POGOProtos.Rpc.BattleUpdateProto value) {
+      if (imageTextCreativeBuilder_ == null) {
+        if (imageTextCreative_ != null) {
+          imageTextCreative_ =
+            POGOProtos.Rpc.BattleUpdateProto.newBuilder(imageTextCreative_).mergeFrom(value).buildPartial();
         } else {
-          mifmmmlipdf_ = value;
+          imageTextCreative_ = value;
         }
         onChanged();
       } else {
-        mifmmmlipdfBuilder_.mergeFrom(value);
+        imageTextCreativeBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
      */
-    public Builder clearMifmmmlipdf() {
-      if (mifmmmlipdfBuilder_ == null) {
-        mifmmmlipdf_ = null;
+    public Builder clearImageTextCreative() {
+      if (imageTextCreativeBuilder_ == null) {
+        imageTextCreative_ = null;
         onChanged();
       } else {
-        mifmmmlipdf_ = null;
-        mifmmmlipdfBuilder_ = null;
+        imageTextCreative_ = null;
+        imageTextCreativeBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
      */
-    public POGOProtos.Rpc.BattleUpdateProto.Builder getMifmmmlipdfBuilder() {
+    public POGOProtos.Rpc.BattleUpdateProto.Builder getImageTextCreativeBuilder() {
       
       onChanged();
-      return getMifmmmlipdfFieldBuilder().getBuilder();
+      return getImageTextCreativeFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
      */
-    public POGOProtos.Rpc.BattleUpdateProtoOrBuilder getMifmmmlipdfOrBuilder() {
-      if (mifmmmlipdfBuilder_ != null) {
-        return mifmmmlipdfBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.BattleUpdateProtoOrBuilder getImageTextCreativeOrBuilder() {
+      if (imageTextCreativeBuilder_ != null) {
+        return imageTextCreativeBuilder_.getMessageOrBuilder();
       } else {
-        return mifmmmlipdf_ == null ?
-            POGOProtos.Rpc.BattleUpdateProto.getDefaultInstance() : mifmmmlipdf_;
+        return imageTextCreative_ == null ?
+            POGOProtos.Rpc.BattleUpdateProto.getDefaultInstance() : imageTextCreative_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BattleUpdateProto mifmmmlipdf = 2;</code>
+     * <code>.POGOProtos.Rpc.BattleUpdateProto image_text_creative = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BattleUpdateProto, POGOProtos.Rpc.BattleUpdateProto.Builder, POGOProtos.Rpc.BattleUpdateProtoOrBuilder> 
-        getMifmmmlipdfFieldBuilder() {
-      if (mifmmmlipdfBuilder_ == null) {
-        mifmmmlipdfBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getImageTextCreativeFieldBuilder() {
+      if (imageTextCreativeBuilder_ == null) {
+        imageTextCreativeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BattleUpdateProto, POGOProtos.Rpc.BattleUpdateProto.Builder, POGOProtos.Rpc.BattleUpdateProtoOrBuilder>(
-                getMifmmmlipdf(),
+                getImageTextCreative(),
                 getParentForChildren(),
                 isClean());
-        mifmmmlipdf_ = null;
+        imageTextCreative_ = null;
       }
-      return mifmmmlipdfBuilder_;
+      return imageTextCreativeBuilder_;
     }
 
-    private POGOProtos.Rpc.AdDetails fofagloikmg_;
+    private POGOProtos.Rpc.AdDetails encryptedAdToken_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AdDetails, POGOProtos.Rpc.AdDetails.Builder, POGOProtos.Rpc.AdDetailsOrBuilder> fofagloikmgBuilder_;
+        POGOProtos.Rpc.AdDetails, POGOProtos.Rpc.AdDetails.Builder, POGOProtos.Rpc.AdDetailsOrBuilder> encryptedAdTokenBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
-     * @return Whether the fofagloikmg field is set.
+     * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
+     * @return Whether the encryptedAdToken field is set.
      */
-    public boolean hasFofagloikmg() {
-      return fofagloikmgBuilder_ != null || fofagloikmg_ != null;
+    public boolean hasEncryptedAdToken() {
+      return encryptedAdTokenBuilder_ != null || encryptedAdToken_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
-     * @return The fofagloikmg.
+     * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
+     * @return The encryptedAdToken.
      */
-    public POGOProtos.Rpc.AdDetails getFofagloikmg() {
-      if (fofagloikmgBuilder_ == null) {
-        return fofagloikmg_ == null ? POGOProtos.Rpc.AdDetails.getDefaultInstance() : fofagloikmg_;
+    public POGOProtos.Rpc.AdDetails getEncryptedAdToken() {
+      if (encryptedAdTokenBuilder_ == null) {
+        return encryptedAdToken_ == null ? POGOProtos.Rpc.AdDetails.getDefaultInstance() : encryptedAdToken_;
       } else {
-        return fofagloikmgBuilder_.getMessage();
+        return encryptedAdTokenBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
+     * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
      */
-    public Builder setFofagloikmg(POGOProtos.Rpc.AdDetails value) {
-      if (fofagloikmgBuilder_ == null) {
+    public Builder setEncryptedAdToken(POGOProtos.Rpc.AdDetails value) {
+      if (encryptedAdTokenBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        fofagloikmg_ = value;
+        encryptedAdToken_ = value;
         onChanged();
       } else {
-        fofagloikmgBuilder_.setMessage(value);
+        encryptedAdTokenBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
+     * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
      */
-    public Builder setFofagloikmg(
+    public Builder setEncryptedAdToken(
         POGOProtos.Rpc.AdDetails.Builder builderForValue) {
-      if (fofagloikmgBuilder_ == null) {
-        fofagloikmg_ = builderForValue.build();
+      if (encryptedAdTokenBuilder_ == null) {
+        encryptedAdToken_ = builderForValue.build();
         onChanged();
       } else {
-        fofagloikmgBuilder_.setMessage(builderForValue.build());
+        encryptedAdTokenBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
+     * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
      */
-    public Builder mergeFofagloikmg(POGOProtos.Rpc.AdDetails value) {
-      if (fofagloikmgBuilder_ == null) {
-        if (fofagloikmg_ != null) {
-          fofagloikmg_ =
-            POGOProtos.Rpc.AdDetails.newBuilder(fofagloikmg_).mergeFrom(value).buildPartial();
+    public Builder mergeEncryptedAdToken(POGOProtos.Rpc.AdDetails value) {
+      if (encryptedAdTokenBuilder_ == null) {
+        if (encryptedAdToken_ != null) {
+          encryptedAdToken_ =
+            POGOProtos.Rpc.AdDetails.newBuilder(encryptedAdToken_).mergeFrom(value).buildPartial();
         } else {
-          fofagloikmg_ = value;
+          encryptedAdToken_ = value;
         }
         onChanged();
       } else {
-        fofagloikmgBuilder_.mergeFrom(value);
+        encryptedAdTokenBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
+     * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
      */
-    public Builder clearFofagloikmg() {
-      if (fofagloikmgBuilder_ == null) {
-        fofagloikmg_ = null;
+    public Builder clearEncryptedAdToken() {
+      if (encryptedAdTokenBuilder_ == null) {
+        encryptedAdToken_ = null;
         onChanged();
       } else {
-        fofagloikmg_ = null;
-        fofagloikmgBuilder_ = null;
+        encryptedAdToken_ = null;
+        encryptedAdTokenBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
+     * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
      */
-    public POGOProtos.Rpc.AdDetails.Builder getFofagloikmgBuilder() {
+    public POGOProtos.Rpc.AdDetails.Builder getEncryptedAdTokenBuilder() {
       
       onChanged();
-      return getFofagloikmgFieldBuilder().getBuilder();
+      return getEncryptedAdTokenFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
+     * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
      */
-    public POGOProtos.Rpc.AdDetailsOrBuilder getFofagloikmgOrBuilder() {
-      if (fofagloikmgBuilder_ != null) {
-        return fofagloikmgBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.AdDetailsOrBuilder getEncryptedAdTokenOrBuilder() {
+      if (encryptedAdTokenBuilder_ != null) {
+        return encryptedAdTokenBuilder_.getMessageOrBuilder();
       } else {
-        return fofagloikmg_ == null ?
-            POGOProtos.Rpc.AdDetails.getDefaultInstance() : fofagloikmg_;
+        return encryptedAdToken_ == null ?
+            POGOProtos.Rpc.AdDetails.getDefaultInstance() : encryptedAdToken_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 3;</code>
+     * <code>.POGOProtos.Rpc.AdDetails encrypted_ad_token = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.AdDetails, POGOProtos.Rpc.AdDetails.Builder, POGOProtos.Rpc.AdDetailsOrBuilder> 
-        getFofagloikmgFieldBuilder() {
-      if (fofagloikmgBuilder_ == null) {
-        fofagloikmgBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getEncryptedAdTokenFieldBuilder() {
+      if (encryptedAdTokenBuilder_ == null) {
+        encryptedAdTokenBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.AdDetails, POGOProtos.Rpc.AdDetails.Builder, POGOProtos.Rpc.AdDetailsOrBuilder>(
-                getFofagloikmg(),
+                getEncryptedAdToken(),
                 getParentForChildren(),
                 isClean());
-        fofagloikmg_ = null;
+        encryptedAdToken_ = null;
       }
-      return fofagloikmgBuilder_;
+      return encryptedAdTokenBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

@@ -19,28 +19,28 @@ public interface BuddyFeedingOutProtoOrBuilder extends
   POGOProtos.Rpc.BuddyFeedingOutProto.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData cfncokpnoeg = 3;</code>
-   * @return Whether the cfncokpnoeg field is set.
+   * <code>.POGOProtos.Rpc.BuddyObservedData observed_data = 3;</code>
+   * @return Whether the observedData field is set.
    */
-  boolean hasCfncokpnoeg();
+  boolean hasObservedData();
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData cfncokpnoeg = 3;</code>
-   * @return The cfncokpnoeg.
+   * <code>.POGOProtos.Rpc.BuddyObservedData observed_data = 3;</code>
+   * @return The observedData.
    */
-  POGOProtos.Rpc.BuddyObservedData getCfncokpnoeg();
+  POGOProtos.Rpc.BuddyObservedData getObservedData();
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData cfncokpnoeg = 3;</code>
+   * <code>.POGOProtos.Rpc.BuddyObservedData observed_data = 3;</code>
    */
-  POGOProtos.Rpc.BuddyObservedDataOrBuilder getCfncokpnoegOrBuilder();
+  POGOProtos.Rpc.BuddyObservedDataOrBuilder getObservedDataOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType ecenmhkdegj = 4;</code>
-   * @return The enum numeric value on the wire for ecenmhkdegj.
+   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType shown_hearts = 4;</code>
+   * @return The enum numeric value on the wire for shownHearts.
    */
-  int getEcenmhkdegjValue();
+  int getShownHeartsValue();
   /**
-   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType ecenmhkdegj = 4;</code>
-   * @return The ecenmhkdegj.
+   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType shown_hearts = 4;</code>
+   * @return The shownHearts.
    */
-  POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType getEcenmhkdegj();
+  POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartType getShownHearts();
 }

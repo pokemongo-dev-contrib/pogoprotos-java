@@ -8,32 +8,32 @@ public interface BuddyGiftProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
-   * @return Whether the bohgjjmmpfd field is set.
+   * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
+   * @return Whether the souvenir field is set.
    */
-  boolean hasBohgjjmmpfd();
+  boolean hasSouvenir();
   /**
-   * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
-   * @return The bohgjjmmpfd.
+   * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
+   * @return The souvenir.
    */
-  POGOProtos.Rpc.SouvenirProto getBohgjjmmpfd();
+  POGOProtos.Rpc.SouvenirProto getSouvenir();
   /**
-   * <code>.POGOProtos.Rpc.SouvenirProto bohgjjmmpfd = 1;</code>
+   * <code>.POGOProtos.Rpc.SouvenirProto souvenir = 1;</code>
    */
-  POGOProtos.Rpc.SouvenirProtoOrBuilder getBohgjjmmpfdOrBuilder();
+  POGOProtos.Rpc.SouvenirProtoOrBuilder getSouvenirOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
-   * @return Whether the jbejbaggpfa field is set.
+   * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
+   * @return Whether the lootProto field is set.
    */
-  boolean hasJbejbaggpfa();
+  boolean hasLootProto();
   /**
-   * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
-   * @return The jbejbaggpfa.
+   * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
+   * @return The lootProto.
    */
-  POGOProtos.Rpc.LootProto getJbejbaggpfa();
+  POGOProtos.Rpc.LootProto getLootProto();
   /**
-   * <code>.POGOProtos.Rpc.LootProto jbejbaggpfa = 2;</code>
+   * <code>.POGOProtos.Rpc.LootProto loot_proto = 2;</code>
    */
-  POGOProtos.Rpc.LootProtoOrBuilder getJbejbaggpfaOrBuilder();
+  POGOProtos.Rpc.LootProtoOrBuilder getLootProtoOrBuilder();
 }

@@ -19,17 +19,17 @@ public interface FIEDOCFLFHNOrBuilder extends
   POGOProtos.Rpc.FIEDOCFLFHN.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
    * @return Whether the gphemncenno field is set.
    */
   boolean hasGphemncenno();
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
    * @return The gphemncenno.
    */
-  POGOProtos.Rpc.ClientInbox getGphemncenno();
+  POGOProtos.Rpc.PlatformClientInbox getGphemncenno();
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
    */
-  POGOProtos.Rpc.ClientInboxOrBuilder getGphemncennoOrBuilder();
+  POGOProtos.Rpc.PlatformClientInboxOrBuilder getGphemncennoOrBuilder();
 }

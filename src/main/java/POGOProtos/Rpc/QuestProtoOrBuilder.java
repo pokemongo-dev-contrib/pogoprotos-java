@@ -8,124 +8,124 @@ public interface QuestProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.ICMNINHKABC daily_quest = 2;</code>
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
    * @return Whether the dailyQuest field is set.
    */
   boolean hasDailyQuest();
   /**
-   * <code>.POGOProtos.Rpc.ICMNINHKABC daily_quest = 2;</code>
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
    * @return The dailyQuest.
    */
-  POGOProtos.Rpc.ICMNINHKABC getDailyQuest();
+  POGOProtos.Rpc.DailyQuestProto getDailyQuest();
   /**
-   * <code>.POGOProtos.Rpc.ICMNINHKABC daily_quest = 2;</code>
+   * <code>.POGOProtos.Rpc.DailyQuestProto daily_quest = 2;</code>
    */
-  POGOProtos.Rpc.ICMNINHKABCOrBuilder getDailyQuestOrBuilder();
+  POGOProtos.Rpc.DailyQuestProtoOrBuilder getDailyQuestOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.HIEINPEPDPJ multi_part = 3;</code>
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
    * @return Whether the multiPart field is set.
    */
   boolean hasMultiPart();
   /**
-   * <code>.POGOProtos.Rpc.HIEINPEPDPJ multi_part = 3;</code>
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
    * @return The multiPart.
    */
-  POGOProtos.Rpc.HIEINPEPDPJ getMultiPart();
+  POGOProtos.Rpc.MultiPartQuestProto getMultiPart();
   /**
-   * <code>.POGOProtos.Rpc.HIEINPEPDPJ multi_part = 3;</code>
+   * <code>.POGOProtos.Rpc.MultiPartQuestProto multi_part = 3;</code>
    */
-  POGOProtos.Rpc.HIEINPEPDPJOrBuilder getMultiPartOrBuilder();
+  POGOProtos.Rpc.MultiPartQuestProtoOrBuilder getMultiPartOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.DJJBEOFKIJD catch_pokemon = 4;</code>
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
    * @return Whether the catchPokemon field is set.
    */
   boolean hasCatchPokemon();
   /**
-   * <code>.POGOProtos.Rpc.DJJBEOFKIJD catch_pokemon = 4;</code>
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
    * @return The catchPokemon.
    */
-  POGOProtos.Rpc.DJJBEOFKIJD getCatchPokemon();
+  POGOProtos.Rpc.CatchPokemonQuestProto getCatchPokemon();
   /**
-   * <code>.POGOProtos.Rpc.DJJBEOFKIJD catch_pokemon = 4;</code>
+   * <code>.POGOProtos.Rpc.CatchPokemonQuestProto catch_pokemon = 4;</code>
    */
-  POGOProtos.Rpc.DJJBEOFKIJDOrBuilder getCatchPokemonOrBuilder();
+  POGOProtos.Rpc.CatchPokemonQuestProtoOrBuilder getCatchPokemonOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.DMFFJCIHOFA add_friend = 5;</code>
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
    * @return Whether the addFriend field is set.
    */
   boolean hasAddFriend();
   /**
-   * <code>.POGOProtos.Rpc.DMFFJCIHOFA add_friend = 5;</code>
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
    * @return The addFriend.
    */
-  POGOProtos.Rpc.DMFFJCIHOFA getAddFriend();
+  POGOProtos.Rpc.AddFriendQuestProto getAddFriend();
   /**
-   * <code>.POGOProtos.Rpc.DMFFJCIHOFA add_friend = 5;</code>
+   * <code>.POGOProtos.Rpc.AddFriendQuestProto add_friend = 5;</code>
    */
-  POGOProtos.Rpc.DMFFJCIHOFAOrBuilder getAddFriendOrBuilder();
+  POGOProtos.Rpc.AddFriendQuestProtoOrBuilder getAddFriendOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.KDKIHJAJPEK trade_pokemon = 6;</code>
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
    * @return Whether the tradePokemon field is set.
    */
   boolean hasTradePokemon();
   /**
-   * <code>.POGOProtos.Rpc.KDKIHJAJPEK trade_pokemon = 6;</code>
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
    * @return The tradePokemon.
    */
-  POGOProtos.Rpc.KDKIHJAJPEK getTradePokemon();
+  POGOProtos.Rpc.TradePokemonQuestProto getTradePokemon();
   /**
-   * <code>.POGOProtos.Rpc.KDKIHJAJPEK trade_pokemon = 6;</code>
+   * <code>.POGOProtos.Rpc.TradePokemonQuestProto trade_pokemon = 6;</code>
    */
-  POGOProtos.Rpc.KDKIHJAJPEKOrBuilder getTradePokemonOrBuilder();
+  POGOProtos.Rpc.TradePokemonQuestProtoOrBuilder getTradePokemonOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PJGLLOGJJGG daily_buddy_affection = 7;</code>
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
    * @return Whether the dailyBuddyAffection field is set.
    */
   boolean hasDailyBuddyAffection();
   /**
-   * <code>.POGOProtos.Rpc.PJGLLOGJJGG daily_buddy_affection = 7;</code>
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
    * @return The dailyBuddyAffection.
    */
-  POGOProtos.Rpc.PJGLLOGJJGG getDailyBuddyAffection();
+  POGOProtos.Rpc.DailyBuddyAffectionQuestProto getDailyBuddyAffection();
   /**
-   * <code>.POGOProtos.Rpc.PJGLLOGJJGG daily_buddy_affection = 7;</code>
+   * <code>.POGOProtos.Rpc.DailyBuddyAffectionQuestProto daily_buddy_affection = 7;</code>
    */
-  POGOProtos.Rpc.PJGLLOGJJGGOrBuilder getDailyBuddyAffectionOrBuilder();
+  POGOProtos.Rpc.DailyBuddyAffectionQuestProtoOrBuilder getDailyBuddyAffectionOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.IKKCPIKAGBM quest_walk = 8;</code>
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
    * @return Whether the questWalk field is set.
    */
   boolean hasQuestWalk();
   /**
-   * <code>.POGOProtos.Rpc.IKKCPIKAGBM quest_walk = 8;</code>
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
    * @return The questWalk.
    */
-  POGOProtos.Rpc.IKKCPIKAGBM getQuestWalk();
+  POGOProtos.Rpc.QuestWalkProto getQuestWalk();
   /**
-   * <code>.POGOProtos.Rpc.IKKCPIKAGBM quest_walk = 8;</code>
+   * <code>.POGOProtos.Rpc.QuestWalkProto quest_walk = 8;</code>
    */
-  POGOProtos.Rpc.IKKCPIKAGBMOrBuilder getQuestWalkOrBuilder();
+  POGOProtos.Rpc.QuestWalkProtoOrBuilder getQuestWalkOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.IHFOFDLNNBA evolve_into_pokemon = 9;</code>
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
    * @return Whether the evolveIntoPokemon field is set.
    */
   boolean hasEvolveIntoPokemon();
   /**
-   * <code>.POGOProtos.Rpc.IHFOFDLNNBA evolve_into_pokemon = 9;</code>
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
    * @return The evolveIntoPokemon.
    */
-  POGOProtos.Rpc.IHFOFDLNNBA getEvolveIntoPokemon();
+  POGOProtos.Rpc.EvolveIntoPokemonQuestProto getEvolveIntoPokemon();
   /**
-   * <code>.POGOProtos.Rpc.IHFOFDLNNBA evolve_into_pokemon = 9;</code>
+   * <code>.POGOProtos.Rpc.EvolveIntoPokemonQuestProto evolve_into_pokemon = 9;</code>
    */
-  POGOProtos.Rpc.IHFOFDLNNBAOrBuilder getEvolveIntoPokemonOrBuilder();
+  POGOProtos.Rpc.EvolveIntoPokemonQuestProtoOrBuilder getEvolveIntoPokemonOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.QuestType ifjdeaplamo = 1;</code>
@@ -139,19 +139,19 @@ public interface QuestProtoOrBuilder extends
   POGOProtos.Rpc.QuestType getIfjdeaplamo();
 
   /**
-   * <code>.POGOProtos.Rpc.MDBNBCLBDIF ioplaplknhi = 99;</code>
+   * <code>.POGOProtos.Rpc.DaysWithARowQuestProto ioplaplknhi = 99;</code>
    * @return Whether the ioplaplknhi field is set.
    */
   boolean hasIoplaplknhi();
   /**
-   * <code>.POGOProtos.Rpc.MDBNBCLBDIF ioplaplknhi = 99;</code>
+   * <code>.POGOProtos.Rpc.DaysWithARowQuestProto ioplaplknhi = 99;</code>
    * @return The ioplaplknhi.
    */
-  POGOProtos.Rpc.MDBNBCLBDIF getIoplaplknhi();
+  POGOProtos.Rpc.DaysWithARowQuestProto getIoplaplknhi();
   /**
-   * <code>.POGOProtos.Rpc.MDBNBCLBDIF ioplaplknhi = 99;</code>
+   * <code>.POGOProtos.Rpc.DaysWithARowQuestProto ioplaplknhi = 99;</code>
    */
-  POGOProtos.Rpc.MDBNBCLBDIFOrBuilder getIoplaplknhiOrBuilder();
+  POGOProtos.Rpc.DaysWithARowQuestProtoOrBuilder getIoplaplknhiOrBuilder();
 
   /**
    * <code>string clgdnpihbdn = 100;</code>
@@ -201,19 +201,19 @@ public interface QuestProtoOrBuilder extends
   int getGflfaledbio();
 
   /**
-   * <code>.POGOProtos.Rpc.PFGPOIKPJFF obpcpobeice = 105;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto obpcpobeice = 105;</code>
    * @return Whether the obpcpobeice field is set.
    */
   boolean hasObpcpobeice();
   /**
-   * <code>.POGOProtos.Rpc.PFGPOIKPJFF obpcpobeice = 105;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto obpcpobeice = 105;</code>
    * @return The obpcpobeice.
    */
-  POGOProtos.Rpc.PFGPOIKPJFF getObpcpobeice();
+  POGOProtos.Rpc.QuestGoalProto getObpcpobeice();
   /**
-   * <code>.POGOProtos.Rpc.PFGPOIKPJFF obpcpobeice = 105;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto obpcpobeice = 105;</code>
    */
-  POGOProtos.Rpc.PFGPOIKPJFFOrBuilder getObpcpobeiceOrBuilder();
+  POGOProtos.Rpc.QuestGoalProtoOrBuilder getObpcpobeiceOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.QuestProto.Status status = 106;</code>
@@ -343,5 +343,5 @@ public interface QuestProtoOrBuilder extends
    */
   long getPnjconbhdlc();
 
-  public POGOProtos.Rpc.QuestProto.DataCase getDataCase();
+  public POGOProtos.Rpc.QuestProto.QuestCase getQuestCase();
 }

@@ -270,19 +270,19 @@ public interface PlayerStatsProtoOrBuilder extends
   long getNbpkpbipbbo();
 
   /**
-   * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+   * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
    * @return Whether the ifkgplhgmji field is set.
    */
   boolean hasIfkgplhgmji();
   /**
-   * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+   * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
    * @return The ifkgplhgmji.
    */
-  POGOProtos.Rpc.IMNEFMNHMNA getIfkgplhgmji();
+  POGOProtos.Rpc.PlayerCombatStatsProto getIfkgplhgmji();
   /**
-   * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+   * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
    */
-  POGOProtos.Rpc.IMNEFMNHMNAOrBuilder getIfkgplhgmjiOrBuilder();
+  POGOProtos.Rpc.PlayerCombatStatsProtoOrBuilder getIfkgplhgmjiOrBuilder();
 
   /**
    * <code>int32 ngnifpacngg = 40;</code>

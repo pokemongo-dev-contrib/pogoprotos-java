@@ -495,20 +495,20 @@ private static final long serialVersionUID = 0L;
   public static final int IMAGE_TYPE_FIELD_NUMBER = 2;
   private int imageType_;
   /**
-   * <code>.POGOProtos.Rpc.TitanPoiImageType image_type = 2;</code>
+   * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
    * @return The enum numeric value on the wire for imageType.
    */
   @java.lang.Override public int getImageTypeValue() {
     return imageType_;
   }
   /**
-   * <code>.POGOProtos.Rpc.TitanPoiImageType image_type = 2;</code>
+   * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
    * @return The imageType.
    */
-  @java.lang.Override public POGOProtos.Rpc.TitanPoiImageType getImageType() {
+  @java.lang.Override public POGOProtos.Rpc.PoiImageType getImageType() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.TitanPoiImageType result = POGOProtos.Rpc.TitanPoiImageType.valueOf(imageType_);
-    return result == null ? POGOProtos.Rpc.TitanPoiImageType.UNRECOGNIZED : result;
+    POGOProtos.Rpc.PoiImageType result = POGOProtos.Rpc.PoiImageType.valueOf(imageType_);
+    return result == null ? POGOProtos.Rpc.PoiImageType.UNRECOGNIZED : result;
   }
 
   public static final int CAMERA_STEP_ID_FIELD_NUMBER = 3;
@@ -547,7 +547,7 @@ private static final long serialVersionUID = 0L;
     if (guiEventId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiSubmissionGuiEventId.UNKNOWN.getNumber()) {
       output.writeEnum(1, guiEventId_);
     }
-    if (imageType_ != POGOProtos.Rpc.TitanPoiImageType.TITAN_POI_IMAGE_TYPE_UNSET.getNumber()) {
+    if (imageType_ != POGOProtos.Rpc.PoiImageType.POI_IMAGE_TYPE_UNSET.getNumber()) {
       output.writeEnum(2, imageType_);
     }
     if (cameraStepId_ != POGOProtos.Rpc.PlatformPoiSubmissionTelemetry.PoiCameraStepIds.UNSET.getNumber()) {
@@ -566,7 +566,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, guiEventId_);
     }
-    if (imageType_ != POGOProtos.Rpc.TitanPoiImageType.TITAN_POI_IMAGE_TYPE_UNSET.getNumber()) {
+    if (imageType_ != POGOProtos.Rpc.PoiImageType.POI_IMAGE_TYPE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, imageType_);
     }
@@ -923,14 +923,14 @@ private static final long serialVersionUID = 0L;
 
     private int imageType_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.TitanPoiImageType image_type = 2;</code>
+     * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
      * @return The enum numeric value on the wire for imageType.
      */
     @java.lang.Override public int getImageTypeValue() {
       return imageType_;
     }
     /**
-     * <code>.POGOProtos.Rpc.TitanPoiImageType image_type = 2;</code>
+     * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
      * @param value The enum numeric value on the wire for imageType to set.
      * @return This builder for chaining.
      */
@@ -941,21 +941,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.TitanPoiImageType image_type = 2;</code>
+     * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
      * @return The imageType.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.TitanPoiImageType getImageType() {
+    public POGOProtos.Rpc.PoiImageType getImageType() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.TitanPoiImageType result = POGOProtos.Rpc.TitanPoiImageType.valueOf(imageType_);
-      return result == null ? POGOProtos.Rpc.TitanPoiImageType.UNRECOGNIZED : result;
+      POGOProtos.Rpc.PoiImageType result = POGOProtos.Rpc.PoiImageType.valueOf(imageType_);
+      return result == null ? POGOProtos.Rpc.PoiImageType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.TitanPoiImageType image_type = 2;</code>
+     * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
      * @param value The imageType to set.
      * @return This builder for chaining.
      */
-    public Builder setImageType(POGOProtos.Rpc.TitanPoiImageType value) {
+    public Builder setImageType(POGOProtos.Rpc.PoiImageType value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -965,7 +965,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.TitanPoiImageType image_type = 2;</code>
+     * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearImageType() {

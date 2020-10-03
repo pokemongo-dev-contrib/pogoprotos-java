@@ -20,8 +20,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private BuddyObservedData() {
-    pecaginmfan_ = 0;
-    jpneiholigi_ = "";
+    buddyValidationResult_ = 0;
+    attractivePoiId_ = "";
   }
 
   @java.lang.Override
@@ -57,81 +57,81 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
 
-            cppkjnmpbkb_ = input.readInt32();
+            currentPointsEarned_ = input.readInt32();
             break;
           }
           case 26: {
             POGOProtos.Rpc.BuddyStats.Builder subBuilder = null;
-            if (bcnfhogkjfj_ != null) {
-              subBuilder = bcnfhogkjfj_.toBuilder();
+            if (totalStats_ != null) {
+              subBuilder = totalStats_.toBuilder();
             }
-            bcnfhogkjfj_ = input.readMessage(POGOProtos.Rpc.BuddyStats.parser(), extensionRegistry);
+            totalStats_ = input.readMessage(POGOProtos.Rpc.BuddyStats.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(bcnfhogkjfj_);
-              bcnfhogkjfj_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(totalStats_);
+              totalStats_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 50: {
             POGOProtos.Rpc.BuddyGiftProto.Builder subBuilder = null;
-            if (nchennmhggm_ != null) {
-              subBuilder = nchennmhggm_.toBuilder();
+            if (buddyGiftPickedUp_ != null) {
+              subBuilder = buddyGiftPickedUp_.toBuilder();
             }
-            nchennmhggm_ = input.readMessage(POGOProtos.Rpc.BuddyGiftProto.parser(), extensionRegistry);
+            buddyGiftPickedUp_ = input.readMessage(POGOProtos.Rpc.BuddyGiftProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(nchennmhggm_);
-              nchennmhggm_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(buddyGiftPickedUp_);
+              buddyGiftPickedUp_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 56: {
 
-            nkhenfnjjge_ = input.readInt32();
+            currentEmotionPoints_ = input.readInt32();
             break;
           }
           case 64: {
             int rawValue = input.readEnum();
 
-            pecaginmfan_ = rawValue;
+            buddyValidationResult_ = rawValue;
             break;
           }
           case 74: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              oegphmcaenb_ = com.google.protobuf.MapField.newMapField(
-                  OegphmcaenbDefaultEntryHolder.defaultEntry);
+              souvenirsCollected_ = com.google.protobuf.MapField.newMapField(
+                  SouvenirsCollectedDefaultEntryHolder.defaultEntry);
               mutable_bitField0_ |= 0x00000001;
             }
             com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
-            oegphmcaenb__ = input.readMessage(
-                OegphmcaenbDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-            oegphmcaenb_.getMutableMap().put(
-                oegphmcaenb__.getKey(), oegphmcaenb__.getValue());
+            souvenirsCollected__ = input.readMessage(
+                SouvenirsCollectedDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+            souvenirsCollected_.getMutableMap().put(
+                souvenirsCollected__.getKey(), souvenirsCollected__.getValue());
             break;
           }
           case 82: {
             POGOProtos.Rpc.BuddyStatsShownHearts.Builder subBuilder = null;
-            if (enjffacophd_ != null) {
-              subBuilder = enjffacophd_.toBuilder();
+            if (todayStatsShownHearts_ != null) {
+              subBuilder = todayStatsShownHearts_.toBuilder();
             }
-            enjffacophd_ = input.readMessage(POGOProtos.Rpc.BuddyStatsShownHearts.parser(), extensionRegistry);
+            todayStatsShownHearts_ = input.readMessage(POGOProtos.Rpc.BuddyStatsShownHearts.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(enjffacophd_);
-              enjffacophd_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(todayStatsShownHearts_);
+              todayStatsShownHearts_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 90: {
             POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder subBuilder = null;
-            if (cncabapaflc_ != null) {
-              subBuilder = cncabapaflc_.toBuilder();
+            if (buddyFeedStats_ != null) {
+              subBuilder = buddyFeedStats_.toBuilder();
             }
-            cncabapaflc_ = input.readMessage(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.parser(), extensionRegistry);
+            buddyFeedStats_ = input.readMessage(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(cncabapaflc_);
-              cncabapaflc_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(buddyFeedStats_);
+              buddyFeedStats_ = subBuilder.buildPartial();
             }
 
             break;
@@ -139,17 +139,17 @@ private static final long serialVersionUID = 0L;
           case 98: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            jpneiholigi_ = s;
+            attractivePoiId_ = s;
             break;
           }
           case 104: {
 
-            ahojbebbjah_ = input.readInt64();
+            attractivePoiExpirationTimeMs_ = input.readInt64();
             break;
           }
           case 112: {
 
-            klakafabbeh_ = input.readInt32();
+            numDaysSpentWithBuddy_ = input.readInt32();
             break;
           }
           default: {
@@ -182,7 +182,7 @@ private static final long serialVersionUID = 0L;
       int number) {
     switch (number) {
       case 9:
-        return internalGetOegphmcaenb();
+        return internalGetSouvenirsCollected();
       default:
         throw new RuntimeException(
             "Invalid map field number: " + number);
@@ -358,28 +358,28 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int64 pbmdmjcdlno = 1;</code>
-     * @return The pbmdmjcdlno.
+     * <code>int64 map_expiration_ms = 1;</code>
+     * @return The mapExpirationMs.
      */
-    long getPbmdmjcdlno();
+    long getMapExpirationMs();
 
     /**
-     * <code>float bmlkehlgdem = 2;</code>
-     * @return The bmlkehlgdem.
+     * <code>float pre_map_fullness_percentage = 2;</code>
+     * @return The preMapFullnessPercentage.
      */
-    float getBmlkehlgdem();
+    float getPreMapFullnessPercentage();
 
     /**
-     * <code>int64 afmodaneioo = 3;</code>
-     * @return The afmodaneioo.
+     * <code>int64 fullness_expiration_ms = 3;</code>
+     * @return The fullnessExpirationMs.
      */
-    long getAfmodaneioo();
+    long getFullnessExpirationMs();
 
     /**
-     * <code>int64 pfflicakohk = 4;</code>
-     * @return The pfflicakohk.
+     * <code>int64 poffin_expiration_ms = 4;</code>
+     * @return The poffinExpirationMs.
      */
-    long getPfflicakohk();
+    long getPoffinExpirationMs();
   }
   /**
    * <pre>
@@ -432,22 +432,22 @@ private static final long serialVersionUID = 0L;
               break;
             case 8: {
 
-              pbmdmjcdlno_ = input.readInt64();
+              mapExpirationMs_ = input.readInt64();
               break;
             }
             case 21: {
 
-              bmlkehlgdem_ = input.readFloat();
+              preMapFullnessPercentage_ = input.readFloat();
               break;
             }
             case 24: {
 
-              afmodaneioo_ = input.readInt64();
+              fullnessExpirationMs_ = input.readInt64();
               break;
             }
             case 32: {
 
-              pfflicakohk_ = input.readInt64();
+              poffinExpirationMs_ = input.readInt64();
               break;
             }
             default: {
@@ -482,48 +482,48 @@ private static final long serialVersionUID = 0L;
               POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.class, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder.class);
     }
 
-    public static final int PBMDMJCDLNO_FIELD_NUMBER = 1;
-    private long pbmdmjcdlno_;
+    public static final int MAP_EXPIRATION_MS_FIELD_NUMBER = 1;
+    private long mapExpirationMs_;
     /**
-     * <code>int64 pbmdmjcdlno = 1;</code>
-     * @return The pbmdmjcdlno.
+     * <code>int64 map_expiration_ms = 1;</code>
+     * @return The mapExpirationMs.
      */
     @java.lang.Override
-    public long getPbmdmjcdlno() {
-      return pbmdmjcdlno_;
+    public long getMapExpirationMs() {
+      return mapExpirationMs_;
     }
 
-    public static final int BMLKEHLGDEM_FIELD_NUMBER = 2;
-    private float bmlkehlgdem_;
+    public static final int PRE_MAP_FULLNESS_PERCENTAGE_FIELD_NUMBER = 2;
+    private float preMapFullnessPercentage_;
     /**
-     * <code>float bmlkehlgdem = 2;</code>
-     * @return The bmlkehlgdem.
+     * <code>float pre_map_fullness_percentage = 2;</code>
+     * @return The preMapFullnessPercentage.
      */
     @java.lang.Override
-    public float getBmlkehlgdem() {
-      return bmlkehlgdem_;
+    public float getPreMapFullnessPercentage() {
+      return preMapFullnessPercentage_;
     }
 
-    public static final int AFMODANEIOO_FIELD_NUMBER = 3;
-    private long afmodaneioo_;
+    public static final int FULLNESS_EXPIRATION_MS_FIELD_NUMBER = 3;
+    private long fullnessExpirationMs_;
     /**
-     * <code>int64 afmodaneioo = 3;</code>
-     * @return The afmodaneioo.
+     * <code>int64 fullness_expiration_ms = 3;</code>
+     * @return The fullnessExpirationMs.
      */
     @java.lang.Override
-    public long getAfmodaneioo() {
-      return afmodaneioo_;
+    public long getFullnessExpirationMs() {
+      return fullnessExpirationMs_;
     }
 
-    public static final int PFFLICAKOHK_FIELD_NUMBER = 4;
-    private long pfflicakohk_;
+    public static final int POFFIN_EXPIRATION_MS_FIELD_NUMBER = 4;
+    private long poffinExpirationMs_;
     /**
-     * <code>int64 pfflicakohk = 4;</code>
-     * @return The pfflicakohk.
+     * <code>int64 poffin_expiration_ms = 4;</code>
+     * @return The poffinExpirationMs.
      */
     @java.lang.Override
-    public long getPfflicakohk() {
-      return pfflicakohk_;
+    public long getPoffinExpirationMs() {
+      return poffinExpirationMs_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -540,17 +540,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (pbmdmjcdlno_ != 0L) {
-        output.writeInt64(1, pbmdmjcdlno_);
+      if (mapExpirationMs_ != 0L) {
+        output.writeInt64(1, mapExpirationMs_);
       }
-      if (bmlkehlgdem_ != 0F) {
-        output.writeFloat(2, bmlkehlgdem_);
+      if (preMapFullnessPercentage_ != 0F) {
+        output.writeFloat(2, preMapFullnessPercentage_);
       }
-      if (afmodaneioo_ != 0L) {
-        output.writeInt64(3, afmodaneioo_);
+      if (fullnessExpirationMs_ != 0L) {
+        output.writeInt64(3, fullnessExpirationMs_);
       }
-      if (pfflicakohk_ != 0L) {
-        output.writeInt64(4, pfflicakohk_);
+      if (poffinExpirationMs_ != 0L) {
+        output.writeInt64(4, poffinExpirationMs_);
       }
       unknownFields.writeTo(output);
     }
@@ -561,21 +561,21 @@ private static final long serialVersionUID = 0L;
       if (size != -1) return size;
 
       size = 0;
-      if (pbmdmjcdlno_ != 0L) {
+      if (mapExpirationMs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, pbmdmjcdlno_);
+          .computeInt64Size(1, mapExpirationMs_);
       }
-      if (bmlkehlgdem_ != 0F) {
+      if (preMapFullnessPercentage_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2, bmlkehlgdem_);
+          .computeFloatSize(2, preMapFullnessPercentage_);
       }
-      if (afmodaneioo_ != 0L) {
+      if (fullnessExpirationMs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(3, afmodaneioo_);
+          .computeInt64Size(3, fullnessExpirationMs_);
       }
-      if (pfflicakohk_ != 0L) {
+      if (poffinExpirationMs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(4, pfflicakohk_);
+          .computeInt64Size(4, poffinExpirationMs_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -592,15 +592,15 @@ private static final long serialVersionUID = 0L;
       }
       POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats other = (POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats) obj;
 
-      if (getPbmdmjcdlno()
-          != other.getPbmdmjcdlno()) return false;
-      if (java.lang.Float.floatToIntBits(getBmlkehlgdem())
+      if (getMapExpirationMs()
+          != other.getMapExpirationMs()) return false;
+      if (java.lang.Float.floatToIntBits(getPreMapFullnessPercentage())
           != java.lang.Float.floatToIntBits(
-              other.getBmlkehlgdem())) return false;
-      if (getAfmodaneioo()
-          != other.getAfmodaneioo()) return false;
-      if (getPfflicakohk()
-          != other.getPfflicakohk()) return false;
+              other.getPreMapFullnessPercentage())) return false;
+      if (getFullnessExpirationMs()
+          != other.getFullnessExpirationMs()) return false;
+      if (getPoffinExpirationMs()
+          != other.getPoffinExpirationMs()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -612,18 +612,18 @@ private static final long serialVersionUID = 0L;
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PBMDMJCDLNO_FIELD_NUMBER;
+      hash = (37 * hash) + MAP_EXPIRATION_MS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getPbmdmjcdlno());
-      hash = (37 * hash) + BMLKEHLGDEM_FIELD_NUMBER;
+          getMapExpirationMs());
+      hash = (37 * hash) + PRE_MAP_FULLNESS_PERCENTAGE_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getBmlkehlgdem());
-      hash = (37 * hash) + AFMODANEIOO_FIELD_NUMBER;
+          getPreMapFullnessPercentage());
+      hash = (37 * hash) + FULLNESS_EXPIRATION_MS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getAfmodaneioo());
-      hash = (37 * hash) + PFFLICAKOHK_FIELD_NUMBER;
+          getFullnessExpirationMs());
+      hash = (37 * hash) + POFFIN_EXPIRATION_MS_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getPfflicakohk());
+          getPoffinExpirationMs());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -761,13 +761,13 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        pbmdmjcdlno_ = 0L;
+        mapExpirationMs_ = 0L;
 
-        bmlkehlgdem_ = 0F;
+        preMapFullnessPercentage_ = 0F;
 
-        afmodaneioo_ = 0L;
+        fullnessExpirationMs_ = 0L;
 
-        pfflicakohk_ = 0L;
+        poffinExpirationMs_ = 0L;
 
         return this;
       }
@@ -795,10 +795,10 @@ private static final long serialVersionUID = 0L;
       @java.lang.Override
       public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buildPartial() {
         POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats result = new POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats(this);
-        result.pbmdmjcdlno_ = pbmdmjcdlno_;
-        result.bmlkehlgdem_ = bmlkehlgdem_;
-        result.afmodaneioo_ = afmodaneioo_;
-        result.pfflicakohk_ = pfflicakohk_;
+        result.mapExpirationMs_ = mapExpirationMs_;
+        result.preMapFullnessPercentage_ = preMapFullnessPercentage_;
+        result.fullnessExpirationMs_ = fullnessExpirationMs_;
+        result.poffinExpirationMs_ = poffinExpirationMs_;
         onBuilt();
         return result;
       }
@@ -847,17 +847,17 @@ private static final long serialVersionUID = 0L;
 
       public Builder mergeFrom(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats other) {
         if (other == POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance()) return this;
-        if (other.getPbmdmjcdlno() != 0L) {
-          setPbmdmjcdlno(other.getPbmdmjcdlno());
+        if (other.getMapExpirationMs() != 0L) {
+          setMapExpirationMs(other.getMapExpirationMs());
         }
-        if (other.getBmlkehlgdem() != 0F) {
-          setBmlkehlgdem(other.getBmlkehlgdem());
+        if (other.getPreMapFullnessPercentage() != 0F) {
+          setPreMapFullnessPercentage(other.getPreMapFullnessPercentage());
         }
-        if (other.getAfmodaneioo() != 0L) {
-          setAfmodaneioo(other.getAfmodaneioo());
+        if (other.getFullnessExpirationMs() != 0L) {
+          setFullnessExpirationMs(other.getFullnessExpirationMs());
         }
-        if (other.getPfflicakohk() != 0L) {
-          setPfflicakohk(other.getPfflicakohk());
+        if (other.getPoffinExpirationMs() != 0L) {
+          setPoffinExpirationMs(other.getPoffinExpirationMs());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -888,126 +888,126 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      private long pbmdmjcdlno_ ;
+      private long mapExpirationMs_ ;
       /**
-       * <code>int64 pbmdmjcdlno = 1;</code>
-       * @return The pbmdmjcdlno.
+       * <code>int64 map_expiration_ms = 1;</code>
+       * @return The mapExpirationMs.
        */
       @java.lang.Override
-      public long getPbmdmjcdlno() {
-        return pbmdmjcdlno_;
+      public long getMapExpirationMs() {
+        return mapExpirationMs_;
       }
       /**
-       * <code>int64 pbmdmjcdlno = 1;</code>
-       * @param value The pbmdmjcdlno to set.
+       * <code>int64 map_expiration_ms = 1;</code>
+       * @param value The mapExpirationMs to set.
        * @return This builder for chaining.
        */
-      public Builder setPbmdmjcdlno(long value) {
+      public Builder setMapExpirationMs(long value) {
         
-        pbmdmjcdlno_ = value;
+        mapExpirationMs_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 pbmdmjcdlno = 1;</code>
+       * <code>int64 map_expiration_ms = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPbmdmjcdlno() {
+      public Builder clearMapExpirationMs() {
         
-        pbmdmjcdlno_ = 0L;
+        mapExpirationMs_ = 0L;
         onChanged();
         return this;
       }
 
-      private float bmlkehlgdem_ ;
+      private float preMapFullnessPercentage_ ;
       /**
-       * <code>float bmlkehlgdem = 2;</code>
-       * @return The bmlkehlgdem.
+       * <code>float pre_map_fullness_percentage = 2;</code>
+       * @return The preMapFullnessPercentage.
        */
       @java.lang.Override
-      public float getBmlkehlgdem() {
-        return bmlkehlgdem_;
+      public float getPreMapFullnessPercentage() {
+        return preMapFullnessPercentage_;
       }
       /**
-       * <code>float bmlkehlgdem = 2;</code>
-       * @param value The bmlkehlgdem to set.
+       * <code>float pre_map_fullness_percentage = 2;</code>
+       * @param value The preMapFullnessPercentage to set.
        * @return This builder for chaining.
        */
-      public Builder setBmlkehlgdem(float value) {
+      public Builder setPreMapFullnessPercentage(float value) {
         
-        bmlkehlgdem_ = value;
+        preMapFullnessPercentage_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float bmlkehlgdem = 2;</code>
+       * <code>float pre_map_fullness_percentage = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBmlkehlgdem() {
+      public Builder clearPreMapFullnessPercentage() {
         
-        bmlkehlgdem_ = 0F;
+        preMapFullnessPercentage_ = 0F;
         onChanged();
         return this;
       }
 
-      private long afmodaneioo_ ;
+      private long fullnessExpirationMs_ ;
       /**
-       * <code>int64 afmodaneioo = 3;</code>
-       * @return The afmodaneioo.
+       * <code>int64 fullness_expiration_ms = 3;</code>
+       * @return The fullnessExpirationMs.
        */
       @java.lang.Override
-      public long getAfmodaneioo() {
-        return afmodaneioo_;
+      public long getFullnessExpirationMs() {
+        return fullnessExpirationMs_;
       }
       /**
-       * <code>int64 afmodaneioo = 3;</code>
-       * @param value The afmodaneioo to set.
+       * <code>int64 fullness_expiration_ms = 3;</code>
+       * @param value The fullnessExpirationMs to set.
        * @return This builder for chaining.
        */
-      public Builder setAfmodaneioo(long value) {
+      public Builder setFullnessExpirationMs(long value) {
         
-        afmodaneioo_ = value;
+        fullnessExpirationMs_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 afmodaneioo = 3;</code>
+       * <code>int64 fullness_expiration_ms = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAfmodaneioo() {
+      public Builder clearFullnessExpirationMs() {
         
-        afmodaneioo_ = 0L;
+        fullnessExpirationMs_ = 0L;
         onChanged();
         return this;
       }
 
-      private long pfflicakohk_ ;
+      private long poffinExpirationMs_ ;
       /**
-       * <code>int64 pfflicakohk = 4;</code>
-       * @return The pfflicakohk.
+       * <code>int64 poffin_expiration_ms = 4;</code>
+       * @return The poffinExpirationMs.
        */
       @java.lang.Override
-      public long getPfflicakohk() {
-        return pfflicakohk_;
+      public long getPoffinExpirationMs() {
+        return poffinExpirationMs_;
       }
       /**
-       * <code>int64 pfflicakohk = 4;</code>
-       * @param value The pfflicakohk to set.
+       * <code>int64 poffin_expiration_ms = 4;</code>
+       * @param value The poffinExpirationMs to set.
        * @return This builder for chaining.
        */
-      public Builder setPfflicakohk(long value) {
+      public Builder setPoffinExpirationMs(long value) {
         
-        pfflicakohk_ = value;
+        poffinExpirationMs_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 pfflicakohk = 4;</code>
+       * <code>int64 poffin_expiration_ms = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPfflicakohk() {
+      public Builder clearPoffinExpirationMs() {
         
-        pfflicakohk_ = 0L;
+        poffinExpirationMs_ = 0L;
         onChanged();
         return this;
       }
@@ -1064,290 +1064,290 @@ private static final long serialVersionUID = 0L;
 
   }
 
-  public static final int CPPKJNMPBKB_FIELD_NUMBER = 1;
-  private int cppkjnmpbkb_;
+  public static final int CURRENT_POINTS_EARNED_FIELD_NUMBER = 1;
+  private int currentPointsEarned_;
   /**
-   * <code>int32 cppkjnmpbkb = 1;</code>
-   * @return The cppkjnmpbkb.
+   * <code>int32 current_points_earned = 1;</code>
+   * @return The currentPointsEarned.
    */
   @java.lang.Override
-  public int getCppkjnmpbkb() {
-    return cppkjnmpbkb_;
+  public int getCurrentPointsEarned() {
+    return currentPointsEarned_;
   }
 
-  public static final int BCNFHOGKJFJ_FIELD_NUMBER = 3;
-  private POGOProtos.Rpc.BuddyStats bcnfhogkjfj_;
+  public static final int TOTAL_STATS_FIELD_NUMBER = 3;
+  private POGOProtos.Rpc.BuddyStats totalStats_;
   /**
-   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
-   * @return Whether the bcnfhogkjfj field is set.
+   * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
+   * @return Whether the totalStats field is set.
    */
   @java.lang.Override
-  public boolean hasBcnfhogkjfj() {
-    return bcnfhogkjfj_ != null;
+  public boolean hasTotalStats() {
+    return totalStats_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
-   * @return The bcnfhogkjfj.
+   * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
+   * @return The totalStats.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyStats getBcnfhogkjfj() {
-    return bcnfhogkjfj_ == null ? POGOProtos.Rpc.BuddyStats.getDefaultInstance() : bcnfhogkjfj_;
+  public POGOProtos.Rpc.BuddyStats getTotalStats() {
+    return totalStats_ == null ? POGOProtos.Rpc.BuddyStats.getDefaultInstance() : totalStats_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
+   * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyStatsOrBuilder getBcnfhogkjfjOrBuilder() {
-    return getBcnfhogkjfj();
+  public POGOProtos.Rpc.BuddyStatsOrBuilder getTotalStatsOrBuilder() {
+    return getTotalStats();
   }
 
-  public static final int NCHENNMHGGM_FIELD_NUMBER = 6;
-  private POGOProtos.Rpc.BuddyGiftProto nchennmhggm_;
+  public static final int BUDDY_GIFT_PICKED_UP_FIELD_NUMBER = 6;
+  private POGOProtos.Rpc.BuddyGiftProto buddyGiftPickedUp_;
   /**
-   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
-   * @return Whether the nchennmhggm field is set.
+   * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
+   * @return Whether the buddyGiftPickedUp field is set.
    */
   @java.lang.Override
-  public boolean hasNchennmhggm() {
-    return nchennmhggm_ != null;
+  public boolean hasBuddyGiftPickedUp() {
+    return buddyGiftPickedUp_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
-   * @return The nchennmhggm.
+   * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
+   * @return The buddyGiftPickedUp.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyGiftProto getNchennmhggm() {
-    return nchennmhggm_ == null ? POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : nchennmhggm_;
+  public POGOProtos.Rpc.BuddyGiftProto getBuddyGiftPickedUp() {
+    return buddyGiftPickedUp_ == null ? POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : buddyGiftPickedUp_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
+   * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyGiftProtoOrBuilder getNchennmhggmOrBuilder() {
-    return getNchennmhggm();
+  public POGOProtos.Rpc.BuddyGiftProtoOrBuilder getBuddyGiftPickedUpOrBuilder() {
+    return getBuddyGiftPickedUp();
   }
 
-  public static final int NKHENFNJJGE_FIELD_NUMBER = 7;
-  private int nkhenfnjjge_;
+  public static final int CURRENT_EMOTION_POINTS_FIELD_NUMBER = 7;
+  private int currentEmotionPoints_;
   /**
-   * <code>int32 nkhenfnjjge = 7;</code>
-   * @return The nkhenfnjjge.
+   * <code>int32 current_emotion_points = 7;</code>
+   * @return The currentEmotionPoints.
    */
   @java.lang.Override
-  public int getNkhenfnjjge() {
-    return nkhenfnjjge_;
+  public int getCurrentEmotionPoints() {
+    return currentEmotionPoints_;
   }
 
-  public static final int PECAGINMFAN_FIELD_NUMBER = 8;
-  private int pecaginmfan_;
+  public static final int BUDDY_VALIDATION_RESULT_FIELD_NUMBER = 8;
+  private int buddyValidationResult_;
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
-   * @return The enum numeric value on the wire for pecaginmfan.
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult buddy_validation_result = 8;</code>
+   * @return The enum numeric value on the wire for buddyValidationResult.
    */
-  @java.lang.Override public int getPecaginmfanValue() {
-    return pecaginmfan_;
+  @java.lang.Override public int getBuddyValidationResultValue() {
+    return buddyValidationResult_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
-   * @return The pecaginmfan.
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult buddy_validation_result = 8;</code>
+   * @return The buddyValidationResult.
    */
-  @java.lang.Override public POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult getPecaginmfan() {
+  @java.lang.Override public POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult getBuddyValidationResult() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult result = POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.valueOf(pecaginmfan_);
+    POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult result = POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.valueOf(buddyValidationResult_);
     return result == null ? POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.UNRECOGNIZED : result;
   }
 
-  public static final int OEGPHMCAENB_FIELD_NUMBER = 9;
-  private static final class OegphmcaenbDefaultEntryHolder {
+  public static final int SOUVENIRS_COLLECTED_FIELD_NUMBER = 9;
+  private static final class SouvenirsCollectedDefaultEntryHolder {
     static final com.google.protobuf.MapEntry<
         java.lang.Integer, POGOProtos.Rpc.SouvenirProto> defaultEntry =
             com.google.protobuf.MapEntry
             .<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>newDefaultInstance(
-                POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_OegphmcaenbEntry_descriptor, 
+                POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_BuddyObservedData_SouvenirsCollectedEntry_descriptor, 
                 com.google.protobuf.WireFormat.FieldType.INT32,
                 0,
                 com.google.protobuf.WireFormat.FieldType.MESSAGE,
                 POGOProtos.Rpc.SouvenirProto.getDefaultInstance());
   }
   private com.google.protobuf.MapField<
-      java.lang.Integer, POGOProtos.Rpc.SouvenirProto> oegphmcaenb_;
+      java.lang.Integer, POGOProtos.Rpc.SouvenirProto> souvenirsCollected_;
   private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
-  internalGetOegphmcaenb() {
-    if (oegphmcaenb_ == null) {
+  internalGetSouvenirsCollected() {
+    if (souvenirsCollected_ == null) {
       return com.google.protobuf.MapField.emptyMapField(
-          OegphmcaenbDefaultEntryHolder.defaultEntry);
+          SouvenirsCollectedDefaultEntryHolder.defaultEntry);
     }
-    return oegphmcaenb_;
+    return souvenirsCollected_;
   }
 
-  public int getOegphmcaenbCount() {
-    return internalGetOegphmcaenb().getMap().size();
+  public int getSouvenirsCollectedCount() {
+    return internalGetSouvenirsCollected().getMap().size();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
    */
 
   @java.lang.Override
-  public boolean containsOegphmcaenb(
+  public boolean containsSouvenirsCollected(
       int key) {
     
-    return internalGetOegphmcaenb().getMap().containsKey(key);
+    return internalGetSouvenirsCollected().getMap().containsKey(key);
   }
   /**
-   * Use {@link #getOegphmcaenbMap()} instead.
+   * Use {@link #getSouvenirsCollectedMap()} instead.
    */
   @java.lang.Override
   @java.lang.Deprecated
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenb() {
-    return getOegphmcaenbMap();
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getSouvenirsCollected() {
+    return getSouvenirsCollectedMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
    */
   @java.lang.Override
 
-  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenbMap() {
-    return internalGetOegphmcaenb().getMap();
+  public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getSouvenirsCollectedMap() {
+    return internalGetSouvenirsCollected().getMap();
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrDefault(
+  public POGOProtos.Rpc.SouvenirProto getSouvenirsCollectedOrDefault(
       int key,
       POGOProtos.Rpc.SouvenirProto defaultValue) {
     
     java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
-        internalGetOegphmcaenb().getMap();
+        internalGetSouvenirsCollected().getMap();
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
    */
   @java.lang.Override
 
-  public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrThrow(
+  public POGOProtos.Rpc.SouvenirProto getSouvenirsCollectedOrThrow(
       int key) {
     
     java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
-        internalGetOegphmcaenb().getMap();
+        internalGetSouvenirsCollected().getMap();
     if (!map.containsKey(key)) {
       throw new java.lang.IllegalArgumentException();
     }
     return map.get(key);
   }
 
-  public static final int ENJFFACOPHD_FIELD_NUMBER = 10;
-  private POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd_;
+  public static final int TODAY_STATS_SHOWN_HEARTS_FIELD_NUMBER = 10;
+  private POGOProtos.Rpc.BuddyStatsShownHearts todayStatsShownHearts_;
   /**
-   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
-   * @return Whether the enjffacophd field is set.
+   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
+   * @return Whether the todayStatsShownHearts field is set.
    */
   @java.lang.Override
-  public boolean hasEnjffacophd() {
-    return enjffacophd_ != null;
+  public boolean hasTodayStatsShownHearts() {
+    return todayStatsShownHearts_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
-   * @return The enjffacophd.
+   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
+   * @return The todayStatsShownHearts.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyStatsShownHearts getEnjffacophd() {
-    return enjffacophd_ == null ? POGOProtos.Rpc.BuddyStatsShownHearts.getDefaultInstance() : enjffacophd_;
+  public POGOProtos.Rpc.BuddyStatsShownHearts getTodayStatsShownHearts() {
+    return todayStatsShownHearts_ == null ? POGOProtos.Rpc.BuddyStatsShownHearts.getDefaultInstance() : todayStatsShownHearts_;
   }
   /**
-   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
+   * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder getEnjffacophdOrBuilder() {
-    return getEnjffacophd();
-  }
-
-  public static final int CNCABAPAFLC_FIELD_NUMBER = 11;
-  private POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc_;
-  /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
-   * @return Whether the cncabapaflc field is set.
-   */
-  @java.lang.Override
-  public boolean hasCncabapaflc() {
-    return cncabapaflc_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
-   * @return The cncabapaflc.
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getCncabapaflc() {
-    return cncabapaflc_ == null ? POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance() : cncabapaflc_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder getCncabapaflcOrBuilder() {
-    return getCncabapaflc();
+  public POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder getTodayStatsShownHeartsOrBuilder() {
+    return getTodayStatsShownHearts();
   }
 
-  public static final int JPNEIHOLIGI_FIELD_NUMBER = 12;
-  private volatile java.lang.Object jpneiholigi_;
+  public static final int BUDDY_FEED_STATS_FIELD_NUMBER = 11;
+  private POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddyFeedStats_;
   /**
-   * <code>string jpneiholigi = 12;</code>
-   * @return The jpneiholigi.
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
+   * @return Whether the buddyFeedStats field is set.
    */
   @java.lang.Override
-  public java.lang.String getJpneiholigi() {
-    java.lang.Object ref = jpneiholigi_;
+  public boolean hasBuddyFeedStats() {
+    return buddyFeedStats_ != null;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
+   * @return The buddyFeedStats.
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getBuddyFeedStats() {
+    return buddyFeedStats_ == null ? POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance() : buddyFeedStats_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder getBuddyFeedStatsOrBuilder() {
+    return getBuddyFeedStats();
+  }
+
+  public static final int ATTRACTIVE_POI_ID_FIELD_NUMBER = 12;
+  private volatile java.lang.Object attractivePoiId_;
+  /**
+   * <code>string attractive_poi_id = 12;</code>
+   * @return The attractivePoiId.
+   */
+  @java.lang.Override
+  public java.lang.String getAttractivePoiId() {
+    java.lang.Object ref = attractivePoiId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      jpneiholigi_ = s;
+      attractivePoiId_ = s;
       return s;
     }
   }
   /**
-   * <code>string jpneiholigi = 12;</code>
-   * @return The bytes for jpneiholigi.
+   * <code>string attractive_poi_id = 12;</code>
+   * @return The bytes for attractivePoiId.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getJpneiholigiBytes() {
-    java.lang.Object ref = jpneiholigi_;
+      getAttractivePoiIdBytes() {
+    java.lang.Object ref = attractivePoiId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      jpneiholigi_ = b;
+      attractivePoiId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int AHOJBEBBJAH_FIELD_NUMBER = 13;
-  private long ahojbebbjah_;
+  public static final int ATTRACTIVE_POI_EXPIRATION_TIME_MS_FIELD_NUMBER = 13;
+  private long attractivePoiExpirationTimeMs_;
   /**
-   * <code>int64 ahojbebbjah = 13;</code>
-   * @return The ahojbebbjah.
+   * <code>int64 attractive_poi_expiration_time_ms = 13;</code>
+   * @return The attractivePoiExpirationTimeMs.
    */
   @java.lang.Override
-  public long getAhojbebbjah() {
-    return ahojbebbjah_;
+  public long getAttractivePoiExpirationTimeMs() {
+    return attractivePoiExpirationTimeMs_;
   }
 
-  public static final int KLAKAFABBEH_FIELD_NUMBER = 14;
-  private int klakafabbeh_;
+  public static final int NUM_DAYS_SPENT_WITH_BUDDY_FIELD_NUMBER = 14;
+  private int numDaysSpentWithBuddy_;
   /**
-   * <code>int32 klakafabbeh = 14;</code>
-   * @return The klakafabbeh.
+   * <code>int32 num_days_spent_with_buddy = 14;</code>
+   * @return The numDaysSpentWithBuddy.
    */
   @java.lang.Override
-  public int getKlakafabbeh() {
-    return klakafabbeh_;
+  public int getNumDaysSpentWithBuddy() {
+    return numDaysSpentWithBuddy_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -1364,41 +1364,41 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (cppkjnmpbkb_ != 0) {
-      output.writeInt32(1, cppkjnmpbkb_);
+    if (currentPointsEarned_ != 0) {
+      output.writeInt32(1, currentPointsEarned_);
     }
-    if (bcnfhogkjfj_ != null) {
-      output.writeMessage(3, getBcnfhogkjfj());
+    if (totalStats_ != null) {
+      output.writeMessage(3, getTotalStats());
     }
-    if (nchennmhggm_ != null) {
-      output.writeMessage(6, getNchennmhggm());
+    if (buddyGiftPickedUp_ != null) {
+      output.writeMessage(6, getBuddyGiftPickedUp());
     }
-    if (nkhenfnjjge_ != 0) {
-      output.writeInt32(7, nkhenfnjjge_);
+    if (currentEmotionPoints_ != 0) {
+      output.writeInt32(7, currentEmotionPoints_);
     }
-    if (pecaginmfan_ != POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.UNSET.getNumber()) {
-      output.writeEnum(8, pecaginmfan_);
+    if (buddyValidationResult_ != POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.UNSET.getNumber()) {
+      output.writeEnum(8, buddyValidationResult_);
     }
     com.google.protobuf.GeneratedMessageV3
       .serializeIntegerMapTo(
         output,
-        internalGetOegphmcaenb(),
-        OegphmcaenbDefaultEntryHolder.defaultEntry,
+        internalGetSouvenirsCollected(),
+        SouvenirsCollectedDefaultEntryHolder.defaultEntry,
         9);
-    if (enjffacophd_ != null) {
-      output.writeMessage(10, getEnjffacophd());
+    if (todayStatsShownHearts_ != null) {
+      output.writeMessage(10, getTodayStatsShownHearts());
     }
-    if (cncabapaflc_ != null) {
-      output.writeMessage(11, getCncabapaflc());
+    if (buddyFeedStats_ != null) {
+      output.writeMessage(11, getBuddyFeedStats());
     }
-    if (!getJpneiholigiBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 12, jpneiholigi_);
+    if (!getAttractivePoiIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 12, attractivePoiId_);
     }
-    if (ahojbebbjah_ != 0L) {
-      output.writeInt64(13, ahojbebbjah_);
+    if (attractivePoiExpirationTimeMs_ != 0L) {
+      output.writeInt64(13, attractivePoiExpirationTimeMs_);
     }
-    if (klakafabbeh_ != 0) {
-      output.writeInt32(14, klakafabbeh_);
+    if (numDaysSpentWithBuddy_ != 0) {
+      output.writeInt32(14, numDaysSpentWithBuddy_);
     }
     unknownFields.writeTo(output);
   }
@@ -1409,54 +1409,54 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (cppkjnmpbkb_ != 0) {
+    if (currentPointsEarned_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(1, cppkjnmpbkb_);
+        .computeInt32Size(1, currentPointsEarned_);
     }
-    if (bcnfhogkjfj_ != null) {
+    if (totalStats_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getBcnfhogkjfj());
+        .computeMessageSize(3, getTotalStats());
     }
-    if (nchennmhggm_ != null) {
+    if (buddyGiftPickedUp_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getNchennmhggm());
+        .computeMessageSize(6, getBuddyGiftPickedUp());
     }
-    if (nkhenfnjjge_ != 0) {
+    if (currentEmotionPoints_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(7, nkhenfnjjge_);
+        .computeInt32Size(7, currentEmotionPoints_);
     }
-    if (pecaginmfan_ != POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.UNSET.getNumber()) {
+    if (buddyValidationResult_ != POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(8, pecaginmfan_);
+        .computeEnumSize(8, buddyValidationResult_);
     }
     for (java.util.Map.Entry<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> entry
-         : internalGetOegphmcaenb().getMap().entrySet()) {
+         : internalGetSouvenirsCollected().getMap().entrySet()) {
       com.google.protobuf.MapEntry<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
-      oegphmcaenb__ = OegphmcaenbDefaultEntryHolder.defaultEntry.newBuilderForType()
+      souvenirsCollected__ = SouvenirsCollectedDefaultEntryHolder.defaultEntry.newBuilderForType()
           .setKey(entry.getKey())
           .setValue(entry.getValue())
           .build();
       size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, oegphmcaenb__);
+          .computeMessageSize(9, souvenirsCollected__);
     }
-    if (enjffacophd_ != null) {
+    if (todayStatsShownHearts_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, getEnjffacophd());
+        .computeMessageSize(10, getTodayStatsShownHearts());
     }
-    if (cncabapaflc_ != null) {
+    if (buddyFeedStats_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(11, getCncabapaflc());
+        .computeMessageSize(11, getBuddyFeedStats());
     }
-    if (!getJpneiholigiBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, jpneiholigi_);
+    if (!getAttractivePoiIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, attractivePoiId_);
     }
-    if (ahojbebbjah_ != 0L) {
+    if (attractivePoiExpirationTimeMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(13, ahojbebbjah_);
+        .computeInt64Size(13, attractivePoiExpirationTimeMs_);
     }
-    if (klakafabbeh_ != 0) {
+    if (numDaysSpentWithBuddy_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(14, klakafabbeh_);
+        .computeInt32Size(14, numDaysSpentWithBuddy_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1473,39 +1473,39 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BuddyObservedData other = (POGOProtos.Rpc.BuddyObservedData) obj;
 
-    if (getCppkjnmpbkb()
-        != other.getCppkjnmpbkb()) return false;
-    if (hasBcnfhogkjfj() != other.hasBcnfhogkjfj()) return false;
-    if (hasBcnfhogkjfj()) {
-      if (!getBcnfhogkjfj()
-          .equals(other.getBcnfhogkjfj())) return false;
+    if (getCurrentPointsEarned()
+        != other.getCurrentPointsEarned()) return false;
+    if (hasTotalStats() != other.hasTotalStats()) return false;
+    if (hasTotalStats()) {
+      if (!getTotalStats()
+          .equals(other.getTotalStats())) return false;
     }
-    if (hasNchennmhggm() != other.hasNchennmhggm()) return false;
-    if (hasNchennmhggm()) {
-      if (!getNchennmhggm()
-          .equals(other.getNchennmhggm())) return false;
+    if (hasBuddyGiftPickedUp() != other.hasBuddyGiftPickedUp()) return false;
+    if (hasBuddyGiftPickedUp()) {
+      if (!getBuddyGiftPickedUp()
+          .equals(other.getBuddyGiftPickedUp())) return false;
     }
-    if (getNkhenfnjjge()
-        != other.getNkhenfnjjge()) return false;
-    if (pecaginmfan_ != other.pecaginmfan_) return false;
-    if (!internalGetOegphmcaenb().equals(
-        other.internalGetOegphmcaenb())) return false;
-    if (hasEnjffacophd() != other.hasEnjffacophd()) return false;
-    if (hasEnjffacophd()) {
-      if (!getEnjffacophd()
-          .equals(other.getEnjffacophd())) return false;
+    if (getCurrentEmotionPoints()
+        != other.getCurrentEmotionPoints()) return false;
+    if (buddyValidationResult_ != other.buddyValidationResult_) return false;
+    if (!internalGetSouvenirsCollected().equals(
+        other.internalGetSouvenirsCollected())) return false;
+    if (hasTodayStatsShownHearts() != other.hasTodayStatsShownHearts()) return false;
+    if (hasTodayStatsShownHearts()) {
+      if (!getTodayStatsShownHearts()
+          .equals(other.getTodayStatsShownHearts())) return false;
     }
-    if (hasCncabapaflc() != other.hasCncabapaflc()) return false;
-    if (hasCncabapaflc()) {
-      if (!getCncabapaflc()
-          .equals(other.getCncabapaflc())) return false;
+    if (hasBuddyFeedStats() != other.hasBuddyFeedStats()) return false;
+    if (hasBuddyFeedStats()) {
+      if (!getBuddyFeedStats()
+          .equals(other.getBuddyFeedStats())) return false;
     }
-    if (!getJpneiholigi()
-        .equals(other.getJpneiholigi())) return false;
-    if (getAhojbebbjah()
-        != other.getAhojbebbjah()) return false;
-    if (getKlakafabbeh()
-        != other.getKlakafabbeh()) return false;
+    if (!getAttractivePoiId()
+        .equals(other.getAttractivePoiId())) return false;
+    if (getAttractivePoiExpirationTimeMs()
+        != other.getAttractivePoiExpirationTimeMs()) return false;
+    if (getNumDaysSpentWithBuddy()
+        != other.getNumDaysSpentWithBuddy()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -1517,39 +1517,39 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + CPPKJNMPBKB_FIELD_NUMBER;
-    hash = (53 * hash) + getCppkjnmpbkb();
-    if (hasBcnfhogkjfj()) {
-      hash = (37 * hash) + BCNFHOGKJFJ_FIELD_NUMBER;
-      hash = (53 * hash) + getBcnfhogkjfj().hashCode();
+    hash = (37 * hash) + CURRENT_POINTS_EARNED_FIELD_NUMBER;
+    hash = (53 * hash) + getCurrentPointsEarned();
+    if (hasTotalStats()) {
+      hash = (37 * hash) + TOTAL_STATS_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalStats().hashCode();
     }
-    if (hasNchennmhggm()) {
-      hash = (37 * hash) + NCHENNMHGGM_FIELD_NUMBER;
-      hash = (53 * hash) + getNchennmhggm().hashCode();
+    if (hasBuddyGiftPickedUp()) {
+      hash = (37 * hash) + BUDDY_GIFT_PICKED_UP_FIELD_NUMBER;
+      hash = (53 * hash) + getBuddyGiftPickedUp().hashCode();
     }
-    hash = (37 * hash) + NKHENFNJJGE_FIELD_NUMBER;
-    hash = (53 * hash) + getNkhenfnjjge();
-    hash = (37 * hash) + PECAGINMFAN_FIELD_NUMBER;
-    hash = (53 * hash) + pecaginmfan_;
-    if (!internalGetOegphmcaenb().getMap().isEmpty()) {
-      hash = (37 * hash) + OEGPHMCAENB_FIELD_NUMBER;
-      hash = (53 * hash) + internalGetOegphmcaenb().hashCode();
+    hash = (37 * hash) + CURRENT_EMOTION_POINTS_FIELD_NUMBER;
+    hash = (53 * hash) + getCurrentEmotionPoints();
+    hash = (37 * hash) + BUDDY_VALIDATION_RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + buddyValidationResult_;
+    if (!internalGetSouvenirsCollected().getMap().isEmpty()) {
+      hash = (37 * hash) + SOUVENIRS_COLLECTED_FIELD_NUMBER;
+      hash = (53 * hash) + internalGetSouvenirsCollected().hashCode();
     }
-    if (hasEnjffacophd()) {
-      hash = (37 * hash) + ENJFFACOPHD_FIELD_NUMBER;
-      hash = (53 * hash) + getEnjffacophd().hashCode();
+    if (hasTodayStatsShownHearts()) {
+      hash = (37 * hash) + TODAY_STATS_SHOWN_HEARTS_FIELD_NUMBER;
+      hash = (53 * hash) + getTodayStatsShownHearts().hashCode();
     }
-    if (hasCncabapaflc()) {
-      hash = (37 * hash) + CNCABAPAFLC_FIELD_NUMBER;
-      hash = (53 * hash) + getCncabapaflc().hashCode();
+    if (hasBuddyFeedStats()) {
+      hash = (37 * hash) + BUDDY_FEED_STATS_FIELD_NUMBER;
+      hash = (53 * hash) + getBuddyFeedStats().hashCode();
     }
-    hash = (37 * hash) + JPNEIHOLIGI_FIELD_NUMBER;
-    hash = (53 * hash) + getJpneiholigi().hashCode();
-    hash = (37 * hash) + AHOJBEBBJAH_FIELD_NUMBER;
+    hash = (37 * hash) + ATTRACTIVE_POI_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getAttractivePoiId().hashCode();
+    hash = (37 * hash) + ATTRACTIVE_POI_EXPIRATION_TIME_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getAhojbebbjah());
-    hash = (37 * hash) + KLAKAFABBEH_FIELD_NUMBER;
-    hash = (53 * hash) + getKlakafabbeh();
+        getAttractivePoiExpirationTimeMs());
+    hash = (37 * hash) + NUM_DAYS_SPENT_WITH_BUDDY_FIELD_NUMBER;
+    hash = (53 * hash) + getNumDaysSpentWithBuddy();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1666,7 +1666,7 @@ private static final long serialVersionUID = 0L;
         int number) {
       switch (number) {
         case 9:
-          return internalGetOegphmcaenb();
+          return internalGetSouvenirsCollected();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -1677,7 +1677,7 @@ private static final long serialVersionUID = 0L;
         int number) {
       switch (number) {
         case 9:
-          return internalGetMutableOegphmcaenb();
+          return internalGetMutableSouvenirsCollected();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -1709,42 +1709,42 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      cppkjnmpbkb_ = 0;
+      currentPointsEarned_ = 0;
 
-      if (bcnfhogkjfjBuilder_ == null) {
-        bcnfhogkjfj_ = null;
+      if (totalStatsBuilder_ == null) {
+        totalStats_ = null;
       } else {
-        bcnfhogkjfj_ = null;
-        bcnfhogkjfjBuilder_ = null;
+        totalStats_ = null;
+        totalStatsBuilder_ = null;
       }
-      if (nchennmhggmBuilder_ == null) {
-        nchennmhggm_ = null;
+      if (buddyGiftPickedUpBuilder_ == null) {
+        buddyGiftPickedUp_ = null;
       } else {
-        nchennmhggm_ = null;
-        nchennmhggmBuilder_ = null;
+        buddyGiftPickedUp_ = null;
+        buddyGiftPickedUpBuilder_ = null;
       }
-      nkhenfnjjge_ = 0;
+      currentEmotionPoints_ = 0;
 
-      pecaginmfan_ = 0;
+      buddyValidationResult_ = 0;
 
-      internalGetMutableOegphmcaenb().clear();
-      if (enjffacophdBuilder_ == null) {
-        enjffacophd_ = null;
+      internalGetMutableSouvenirsCollected().clear();
+      if (todayStatsShownHeartsBuilder_ == null) {
+        todayStatsShownHearts_ = null;
       } else {
-        enjffacophd_ = null;
-        enjffacophdBuilder_ = null;
+        todayStatsShownHearts_ = null;
+        todayStatsShownHeartsBuilder_ = null;
       }
-      if (cncabapaflcBuilder_ == null) {
-        cncabapaflc_ = null;
+      if (buddyFeedStatsBuilder_ == null) {
+        buddyFeedStats_ = null;
       } else {
-        cncabapaflc_ = null;
-        cncabapaflcBuilder_ = null;
+        buddyFeedStats_ = null;
+        buddyFeedStatsBuilder_ = null;
       }
-      jpneiholigi_ = "";
+      attractivePoiId_ = "";
 
-      ahojbebbjah_ = 0L;
+      attractivePoiExpirationTimeMs_ = 0L;
 
-      klakafabbeh_ = 0;
+      numDaysSpentWithBuddy_ = 0;
 
       return this;
     }
@@ -1773,34 +1773,34 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.BuddyObservedData buildPartial() {
       POGOProtos.Rpc.BuddyObservedData result = new POGOProtos.Rpc.BuddyObservedData(this);
       int from_bitField0_ = bitField0_;
-      result.cppkjnmpbkb_ = cppkjnmpbkb_;
-      if (bcnfhogkjfjBuilder_ == null) {
-        result.bcnfhogkjfj_ = bcnfhogkjfj_;
+      result.currentPointsEarned_ = currentPointsEarned_;
+      if (totalStatsBuilder_ == null) {
+        result.totalStats_ = totalStats_;
       } else {
-        result.bcnfhogkjfj_ = bcnfhogkjfjBuilder_.build();
+        result.totalStats_ = totalStatsBuilder_.build();
       }
-      if (nchennmhggmBuilder_ == null) {
-        result.nchennmhggm_ = nchennmhggm_;
+      if (buddyGiftPickedUpBuilder_ == null) {
+        result.buddyGiftPickedUp_ = buddyGiftPickedUp_;
       } else {
-        result.nchennmhggm_ = nchennmhggmBuilder_.build();
+        result.buddyGiftPickedUp_ = buddyGiftPickedUpBuilder_.build();
       }
-      result.nkhenfnjjge_ = nkhenfnjjge_;
-      result.pecaginmfan_ = pecaginmfan_;
-      result.oegphmcaenb_ = internalGetOegphmcaenb();
-      result.oegphmcaenb_.makeImmutable();
-      if (enjffacophdBuilder_ == null) {
-        result.enjffacophd_ = enjffacophd_;
+      result.currentEmotionPoints_ = currentEmotionPoints_;
+      result.buddyValidationResult_ = buddyValidationResult_;
+      result.souvenirsCollected_ = internalGetSouvenirsCollected();
+      result.souvenirsCollected_.makeImmutable();
+      if (todayStatsShownHeartsBuilder_ == null) {
+        result.todayStatsShownHearts_ = todayStatsShownHearts_;
       } else {
-        result.enjffacophd_ = enjffacophdBuilder_.build();
+        result.todayStatsShownHearts_ = todayStatsShownHeartsBuilder_.build();
       }
-      if (cncabapaflcBuilder_ == null) {
-        result.cncabapaflc_ = cncabapaflc_;
+      if (buddyFeedStatsBuilder_ == null) {
+        result.buddyFeedStats_ = buddyFeedStats_;
       } else {
-        result.cncabapaflc_ = cncabapaflcBuilder_.build();
+        result.buddyFeedStats_ = buddyFeedStatsBuilder_.build();
       }
-      result.jpneiholigi_ = jpneiholigi_;
-      result.ahojbebbjah_ = ahojbebbjah_;
-      result.klakafabbeh_ = klakafabbeh_;
+      result.attractivePoiId_ = attractivePoiId_;
+      result.attractivePoiExpirationTimeMs_ = attractivePoiExpirationTimeMs_;
+      result.numDaysSpentWithBuddy_ = numDaysSpentWithBuddy_;
       onBuilt();
       return result;
     }
@@ -1849,38 +1849,38 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BuddyObservedData other) {
       if (other == POGOProtos.Rpc.BuddyObservedData.getDefaultInstance()) return this;
-      if (other.getCppkjnmpbkb() != 0) {
-        setCppkjnmpbkb(other.getCppkjnmpbkb());
+      if (other.getCurrentPointsEarned() != 0) {
+        setCurrentPointsEarned(other.getCurrentPointsEarned());
       }
-      if (other.hasBcnfhogkjfj()) {
-        mergeBcnfhogkjfj(other.getBcnfhogkjfj());
+      if (other.hasTotalStats()) {
+        mergeTotalStats(other.getTotalStats());
       }
-      if (other.hasNchennmhggm()) {
-        mergeNchennmhggm(other.getNchennmhggm());
+      if (other.hasBuddyGiftPickedUp()) {
+        mergeBuddyGiftPickedUp(other.getBuddyGiftPickedUp());
       }
-      if (other.getNkhenfnjjge() != 0) {
-        setNkhenfnjjge(other.getNkhenfnjjge());
+      if (other.getCurrentEmotionPoints() != 0) {
+        setCurrentEmotionPoints(other.getCurrentEmotionPoints());
       }
-      if (other.pecaginmfan_ != 0) {
-        setPecaginmfanValue(other.getPecaginmfanValue());
+      if (other.buddyValidationResult_ != 0) {
+        setBuddyValidationResultValue(other.getBuddyValidationResultValue());
       }
-      internalGetMutableOegphmcaenb().mergeFrom(
-          other.internalGetOegphmcaenb());
-      if (other.hasEnjffacophd()) {
-        mergeEnjffacophd(other.getEnjffacophd());
+      internalGetMutableSouvenirsCollected().mergeFrom(
+          other.internalGetSouvenirsCollected());
+      if (other.hasTodayStatsShownHearts()) {
+        mergeTodayStatsShownHearts(other.getTodayStatsShownHearts());
       }
-      if (other.hasCncabapaflc()) {
-        mergeCncabapaflc(other.getCncabapaflc());
+      if (other.hasBuddyFeedStats()) {
+        mergeBuddyFeedStats(other.getBuddyFeedStats());
       }
-      if (!other.getJpneiholigi().isEmpty()) {
-        jpneiholigi_ = other.jpneiholigi_;
+      if (!other.getAttractivePoiId().isEmpty()) {
+        attractivePoiId_ = other.attractivePoiId_;
         onChanged();
       }
-      if (other.getAhojbebbjah() != 0L) {
-        setAhojbebbjah(other.getAhojbebbjah());
+      if (other.getAttractivePoiExpirationTimeMs() != 0L) {
+        setAttractivePoiExpirationTimeMs(other.getAttractivePoiExpirationTimeMs());
       }
-      if (other.getKlakafabbeh() != 0) {
-        setKlakafabbeh(other.getKlakafabbeh());
+      if (other.getNumDaysSpentWithBuddy() != 0) {
+        setNumDaysSpentWithBuddy(other.getNumDaysSpentWithBuddy());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1912,454 +1912,454 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private int cppkjnmpbkb_ ;
+    private int currentPointsEarned_ ;
     /**
-     * <code>int32 cppkjnmpbkb = 1;</code>
-     * @return The cppkjnmpbkb.
+     * <code>int32 current_points_earned = 1;</code>
+     * @return The currentPointsEarned.
      */
     @java.lang.Override
-    public int getCppkjnmpbkb() {
-      return cppkjnmpbkb_;
+    public int getCurrentPointsEarned() {
+      return currentPointsEarned_;
     }
     /**
-     * <code>int32 cppkjnmpbkb = 1;</code>
-     * @param value The cppkjnmpbkb to set.
+     * <code>int32 current_points_earned = 1;</code>
+     * @param value The currentPointsEarned to set.
      * @return This builder for chaining.
      */
-    public Builder setCppkjnmpbkb(int value) {
+    public Builder setCurrentPointsEarned(int value) {
       
-      cppkjnmpbkb_ = value;
+      currentPointsEarned_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 cppkjnmpbkb = 1;</code>
+     * <code>int32 current_points_earned = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearCppkjnmpbkb() {
+    public Builder clearCurrentPointsEarned() {
       
-      cppkjnmpbkb_ = 0;
+      currentPointsEarned_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.BuddyStats bcnfhogkjfj_;
+    private POGOProtos.Rpc.BuddyStats totalStats_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyStats, POGOProtos.Rpc.BuddyStats.Builder, POGOProtos.Rpc.BuddyStatsOrBuilder> bcnfhogkjfjBuilder_;
+        POGOProtos.Rpc.BuddyStats, POGOProtos.Rpc.BuddyStats.Builder, POGOProtos.Rpc.BuddyStatsOrBuilder> totalStatsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
-     * @return Whether the bcnfhogkjfj field is set.
+     * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
+     * @return Whether the totalStats field is set.
      */
-    public boolean hasBcnfhogkjfj() {
-      return bcnfhogkjfjBuilder_ != null || bcnfhogkjfj_ != null;
+    public boolean hasTotalStats() {
+      return totalStatsBuilder_ != null || totalStats_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
-     * @return The bcnfhogkjfj.
+     * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
+     * @return The totalStats.
      */
-    public POGOProtos.Rpc.BuddyStats getBcnfhogkjfj() {
-      if (bcnfhogkjfjBuilder_ == null) {
-        return bcnfhogkjfj_ == null ? POGOProtos.Rpc.BuddyStats.getDefaultInstance() : bcnfhogkjfj_;
+    public POGOProtos.Rpc.BuddyStats getTotalStats() {
+      if (totalStatsBuilder_ == null) {
+        return totalStats_ == null ? POGOProtos.Rpc.BuddyStats.getDefaultInstance() : totalStats_;
       } else {
-        return bcnfhogkjfjBuilder_.getMessage();
+        return totalStatsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
      */
-    public Builder setBcnfhogkjfj(POGOProtos.Rpc.BuddyStats value) {
-      if (bcnfhogkjfjBuilder_ == null) {
+    public Builder setTotalStats(POGOProtos.Rpc.BuddyStats value) {
+      if (totalStatsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        bcnfhogkjfj_ = value;
+        totalStats_ = value;
         onChanged();
       } else {
-        bcnfhogkjfjBuilder_.setMessage(value);
+        totalStatsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
      */
-    public Builder setBcnfhogkjfj(
+    public Builder setTotalStats(
         POGOProtos.Rpc.BuddyStats.Builder builderForValue) {
-      if (bcnfhogkjfjBuilder_ == null) {
-        bcnfhogkjfj_ = builderForValue.build();
+      if (totalStatsBuilder_ == null) {
+        totalStats_ = builderForValue.build();
         onChanged();
       } else {
-        bcnfhogkjfjBuilder_.setMessage(builderForValue.build());
+        totalStatsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
      */
-    public Builder mergeBcnfhogkjfj(POGOProtos.Rpc.BuddyStats value) {
-      if (bcnfhogkjfjBuilder_ == null) {
-        if (bcnfhogkjfj_ != null) {
-          bcnfhogkjfj_ =
-            POGOProtos.Rpc.BuddyStats.newBuilder(bcnfhogkjfj_).mergeFrom(value).buildPartial();
+    public Builder mergeTotalStats(POGOProtos.Rpc.BuddyStats value) {
+      if (totalStatsBuilder_ == null) {
+        if (totalStats_ != null) {
+          totalStats_ =
+            POGOProtos.Rpc.BuddyStats.newBuilder(totalStats_).mergeFrom(value).buildPartial();
         } else {
-          bcnfhogkjfj_ = value;
+          totalStats_ = value;
         }
         onChanged();
       } else {
-        bcnfhogkjfjBuilder_.mergeFrom(value);
+        totalStatsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
      */
-    public Builder clearBcnfhogkjfj() {
-      if (bcnfhogkjfjBuilder_ == null) {
-        bcnfhogkjfj_ = null;
+    public Builder clearTotalStats() {
+      if (totalStatsBuilder_ == null) {
+        totalStats_ = null;
         onChanged();
       } else {
-        bcnfhogkjfj_ = null;
-        bcnfhogkjfjBuilder_ = null;
+        totalStats_ = null;
+        totalStatsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
      */
-    public POGOProtos.Rpc.BuddyStats.Builder getBcnfhogkjfjBuilder() {
+    public POGOProtos.Rpc.BuddyStats.Builder getTotalStatsBuilder() {
       
       onChanged();
-      return getBcnfhogkjfjFieldBuilder().getBuilder();
+      return getTotalStatsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
      */
-    public POGOProtos.Rpc.BuddyStatsOrBuilder getBcnfhogkjfjOrBuilder() {
-      if (bcnfhogkjfjBuilder_ != null) {
-        return bcnfhogkjfjBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.BuddyStatsOrBuilder getTotalStatsOrBuilder() {
+      if (totalStatsBuilder_ != null) {
+        return totalStatsBuilder_.getMessageOrBuilder();
       } else {
-        return bcnfhogkjfj_ == null ?
-            POGOProtos.Rpc.BuddyStats.getDefaultInstance() : bcnfhogkjfj_;
+        return totalStats_ == null ?
+            POGOProtos.Rpc.BuddyStats.getDefaultInstance() : totalStats_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStats bcnfhogkjfj = 3;</code>
+     * <code>.POGOProtos.Rpc.BuddyStats total_stats = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BuddyStats, POGOProtos.Rpc.BuddyStats.Builder, POGOProtos.Rpc.BuddyStatsOrBuilder> 
-        getBcnfhogkjfjFieldBuilder() {
-      if (bcnfhogkjfjBuilder_ == null) {
-        bcnfhogkjfjBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getTotalStatsFieldBuilder() {
+      if (totalStatsBuilder_ == null) {
+        totalStatsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BuddyStats, POGOProtos.Rpc.BuddyStats.Builder, POGOProtos.Rpc.BuddyStatsOrBuilder>(
-                getBcnfhogkjfj(),
+                getTotalStats(),
                 getParentForChildren(),
                 isClean());
-        bcnfhogkjfj_ = null;
+        totalStats_ = null;
       }
-      return bcnfhogkjfjBuilder_;
+      return totalStatsBuilder_;
     }
 
-    private POGOProtos.Rpc.BuddyGiftProto nchennmhggm_;
+    private POGOProtos.Rpc.BuddyGiftProto buddyGiftPickedUp_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder> nchennmhggmBuilder_;
+        POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder> buddyGiftPickedUpBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
-     * @return Whether the nchennmhggm field is set.
+     * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
+     * @return Whether the buddyGiftPickedUp field is set.
      */
-    public boolean hasNchennmhggm() {
-      return nchennmhggmBuilder_ != null || nchennmhggm_ != null;
+    public boolean hasBuddyGiftPickedUp() {
+      return buddyGiftPickedUpBuilder_ != null || buddyGiftPickedUp_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
-     * @return The nchennmhggm.
+     * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
+     * @return The buddyGiftPickedUp.
      */
-    public POGOProtos.Rpc.BuddyGiftProto getNchennmhggm() {
-      if (nchennmhggmBuilder_ == null) {
-        return nchennmhggm_ == null ? POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : nchennmhggm_;
+    public POGOProtos.Rpc.BuddyGiftProto getBuddyGiftPickedUp() {
+      if (buddyGiftPickedUpBuilder_ == null) {
+        return buddyGiftPickedUp_ == null ? POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : buddyGiftPickedUp_;
       } else {
-        return nchennmhggmBuilder_.getMessage();
+        return buddyGiftPickedUpBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
      */
-    public Builder setNchennmhggm(POGOProtos.Rpc.BuddyGiftProto value) {
-      if (nchennmhggmBuilder_ == null) {
+    public Builder setBuddyGiftPickedUp(POGOProtos.Rpc.BuddyGiftProto value) {
+      if (buddyGiftPickedUpBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        nchennmhggm_ = value;
+        buddyGiftPickedUp_ = value;
         onChanged();
       } else {
-        nchennmhggmBuilder_.setMessage(value);
+        buddyGiftPickedUpBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
      */
-    public Builder setNchennmhggm(
+    public Builder setBuddyGiftPickedUp(
         POGOProtos.Rpc.BuddyGiftProto.Builder builderForValue) {
-      if (nchennmhggmBuilder_ == null) {
-        nchennmhggm_ = builderForValue.build();
+      if (buddyGiftPickedUpBuilder_ == null) {
+        buddyGiftPickedUp_ = builderForValue.build();
         onChanged();
       } else {
-        nchennmhggmBuilder_.setMessage(builderForValue.build());
+        buddyGiftPickedUpBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
      */
-    public Builder mergeNchennmhggm(POGOProtos.Rpc.BuddyGiftProto value) {
-      if (nchennmhggmBuilder_ == null) {
-        if (nchennmhggm_ != null) {
-          nchennmhggm_ =
-            POGOProtos.Rpc.BuddyGiftProto.newBuilder(nchennmhggm_).mergeFrom(value).buildPartial();
+    public Builder mergeBuddyGiftPickedUp(POGOProtos.Rpc.BuddyGiftProto value) {
+      if (buddyGiftPickedUpBuilder_ == null) {
+        if (buddyGiftPickedUp_ != null) {
+          buddyGiftPickedUp_ =
+            POGOProtos.Rpc.BuddyGiftProto.newBuilder(buddyGiftPickedUp_).mergeFrom(value).buildPartial();
         } else {
-          nchennmhggm_ = value;
+          buddyGiftPickedUp_ = value;
         }
         onChanged();
       } else {
-        nchennmhggmBuilder_.mergeFrom(value);
+        buddyGiftPickedUpBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
      */
-    public Builder clearNchennmhggm() {
-      if (nchennmhggmBuilder_ == null) {
-        nchennmhggm_ = null;
+    public Builder clearBuddyGiftPickedUp() {
+      if (buddyGiftPickedUpBuilder_ == null) {
+        buddyGiftPickedUp_ = null;
         onChanged();
       } else {
-        nchennmhggm_ = null;
-        nchennmhggmBuilder_ = null;
+        buddyGiftPickedUp_ = null;
+        buddyGiftPickedUpBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
      */
-    public POGOProtos.Rpc.BuddyGiftProto.Builder getNchennmhggmBuilder() {
+    public POGOProtos.Rpc.BuddyGiftProto.Builder getBuddyGiftPickedUpBuilder() {
       
       onChanged();
-      return getNchennmhggmFieldBuilder().getBuilder();
+      return getBuddyGiftPickedUpFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
      */
-    public POGOProtos.Rpc.BuddyGiftProtoOrBuilder getNchennmhggmOrBuilder() {
-      if (nchennmhggmBuilder_ != null) {
-        return nchennmhggmBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.BuddyGiftProtoOrBuilder getBuddyGiftPickedUpOrBuilder() {
+      if (buddyGiftPickedUpBuilder_ != null) {
+        return buddyGiftPickedUpBuilder_.getMessageOrBuilder();
       } else {
-        return nchennmhggm_ == null ?
-            POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : nchennmhggm_;
+        return buddyGiftPickedUp_ == null ?
+            POGOProtos.Rpc.BuddyGiftProto.getDefaultInstance() : buddyGiftPickedUp_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyGiftProto nchennmhggm = 6;</code>
+     * <code>.POGOProtos.Rpc.BuddyGiftProto buddy_gift_picked_up = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder> 
-        getNchennmhggmFieldBuilder() {
-      if (nchennmhggmBuilder_ == null) {
-        nchennmhggmBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getBuddyGiftPickedUpFieldBuilder() {
+      if (buddyGiftPickedUpBuilder_ == null) {
+        buddyGiftPickedUpBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BuddyGiftProto, POGOProtos.Rpc.BuddyGiftProto.Builder, POGOProtos.Rpc.BuddyGiftProtoOrBuilder>(
-                getNchennmhggm(),
+                getBuddyGiftPickedUp(),
                 getParentForChildren(),
                 isClean());
-        nchennmhggm_ = null;
+        buddyGiftPickedUp_ = null;
       }
-      return nchennmhggmBuilder_;
+      return buddyGiftPickedUpBuilder_;
     }
 
-    private int nkhenfnjjge_ ;
+    private int currentEmotionPoints_ ;
     /**
-     * <code>int32 nkhenfnjjge = 7;</code>
-     * @return The nkhenfnjjge.
+     * <code>int32 current_emotion_points = 7;</code>
+     * @return The currentEmotionPoints.
      */
     @java.lang.Override
-    public int getNkhenfnjjge() {
-      return nkhenfnjjge_;
+    public int getCurrentEmotionPoints() {
+      return currentEmotionPoints_;
     }
     /**
-     * <code>int32 nkhenfnjjge = 7;</code>
-     * @param value The nkhenfnjjge to set.
+     * <code>int32 current_emotion_points = 7;</code>
+     * @param value The currentEmotionPoints to set.
      * @return This builder for chaining.
      */
-    public Builder setNkhenfnjjge(int value) {
+    public Builder setCurrentEmotionPoints(int value) {
       
-      nkhenfnjjge_ = value;
+      currentEmotionPoints_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 nkhenfnjjge = 7;</code>
+     * <code>int32 current_emotion_points = 7;</code>
      * @return This builder for chaining.
      */
-    public Builder clearNkhenfnjjge() {
+    public Builder clearCurrentEmotionPoints() {
       
-      nkhenfnjjge_ = 0;
+      currentEmotionPoints_ = 0;
       onChanged();
       return this;
     }
 
-    private int pecaginmfan_ = 0;
+    private int buddyValidationResult_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
-     * @return The enum numeric value on the wire for pecaginmfan.
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult buddy_validation_result = 8;</code>
+     * @return The enum numeric value on the wire for buddyValidationResult.
      */
-    @java.lang.Override public int getPecaginmfanValue() {
-      return pecaginmfan_;
+    @java.lang.Override public int getBuddyValidationResultValue() {
+      return buddyValidationResult_;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
-     * @param value The enum numeric value on the wire for pecaginmfan to set.
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult buddy_validation_result = 8;</code>
+     * @param value The enum numeric value on the wire for buddyValidationResult to set.
      * @return This builder for chaining.
      */
-    public Builder setPecaginmfanValue(int value) {
+    public Builder setBuddyValidationResultValue(int value) {
       
-      pecaginmfan_ = value;
+      buddyValidationResult_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
-     * @return The pecaginmfan.
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult buddy_validation_result = 8;</code>
+     * @return The buddyValidationResult.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult getPecaginmfan() {
+    public POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult getBuddyValidationResult() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult result = POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.valueOf(pecaginmfan_);
+      POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult result = POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.valueOf(buddyValidationResult_);
       return result == null ? POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
-     * @param value The pecaginmfan to set.
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult buddy_validation_result = 8;</code>
+     * @param value The buddyValidationResult to set.
      * @return This builder for chaining.
      */
-    public Builder setPecaginmfan(POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult value) {
+    public Builder setBuddyValidationResult(POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      pecaginmfan_ = value.getNumber();
+      buddyValidationResult_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult pecaginmfan = 8;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyValidationResult buddy_validation_result = 8;</code>
      * @return This builder for chaining.
      */
-    public Builder clearPecaginmfan() {
+    public Builder clearBuddyValidationResult() {
       
-      pecaginmfan_ = 0;
+      buddyValidationResult_ = 0;
       onChanged();
       return this;
     }
 
     private com.google.protobuf.MapField<
-        java.lang.Integer, POGOProtos.Rpc.SouvenirProto> oegphmcaenb_;
+        java.lang.Integer, POGOProtos.Rpc.SouvenirProto> souvenirsCollected_;
     private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
-    internalGetOegphmcaenb() {
-      if (oegphmcaenb_ == null) {
+    internalGetSouvenirsCollected() {
+      if (souvenirsCollected_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            OegphmcaenbDefaultEntryHolder.defaultEntry);
+            SouvenirsCollectedDefaultEntryHolder.defaultEntry);
       }
-      return oegphmcaenb_;
+      return souvenirsCollected_;
     }
     private com.google.protobuf.MapField<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
-    internalGetMutableOegphmcaenb() {
+    internalGetMutableSouvenirsCollected() {
       onChanged();;
-      if (oegphmcaenb_ == null) {
-        oegphmcaenb_ = com.google.protobuf.MapField.newMapField(
-            OegphmcaenbDefaultEntryHolder.defaultEntry);
+      if (souvenirsCollected_ == null) {
+        souvenirsCollected_ = com.google.protobuf.MapField.newMapField(
+            SouvenirsCollectedDefaultEntryHolder.defaultEntry);
       }
-      if (!oegphmcaenb_.isMutable()) {
-        oegphmcaenb_ = oegphmcaenb_.copy();
+      if (!souvenirsCollected_.isMutable()) {
+        souvenirsCollected_ = souvenirsCollected_.copy();
       }
-      return oegphmcaenb_;
+      return souvenirsCollected_;
     }
 
-    public int getOegphmcaenbCount() {
-      return internalGetOegphmcaenb().getMap().size();
+    public int getSouvenirsCollectedCount() {
+      return internalGetSouvenirsCollected().getMap().size();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
      */
 
     @java.lang.Override
-    public boolean containsOegphmcaenb(
+    public boolean containsSouvenirsCollected(
         int key) {
       
-      return internalGetOegphmcaenb().getMap().containsKey(key);
+      return internalGetSouvenirsCollected().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getOegphmcaenbMap()} instead.
+     * Use {@link #getSouvenirsCollectedMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenb() {
-      return getOegphmcaenbMap();
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getSouvenirsCollected() {
+      return getSouvenirsCollectedMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getOegphmcaenbMap() {
-      return internalGetOegphmcaenb().getMap();
+    public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> getSouvenirsCollectedMap() {
+      return internalGetSouvenirsCollected().getMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrDefault(
+    public POGOProtos.Rpc.SouvenirProto getSouvenirsCollectedOrDefault(
         int key,
         POGOProtos.Rpc.SouvenirProto defaultValue) {
       
       java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
-          internalGetOegphmcaenb().getMap();
+          internalGetSouvenirsCollected().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
      */
     @java.lang.Override
 
-    public POGOProtos.Rpc.SouvenirProto getOegphmcaenbOrThrow(
+    public POGOProtos.Rpc.SouvenirProto getSouvenirsCollectedOrThrow(
         int key) {
       
       java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> map =
-          internalGetOegphmcaenb().getMap();
+          internalGetSouvenirsCollected().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public Builder clearOegphmcaenb() {
-      internalGetMutableOegphmcaenb().getMutableMap()
+    public Builder clearSouvenirsCollected() {
+      internalGetMutableSouvenirsCollected().getMutableMap()
           .clear();
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
      */
 
-    public Builder removeOegphmcaenb(
+    public Builder removeSouvenirsCollected(
         int key) {
       
-      internalGetMutableOegphmcaenb().getMutableMap()
+      internalGetMutableSouvenirsCollected().getMutableMap()
           .remove(key);
       return this;
     }
@@ -2368,404 +2368,404 @@ private static final long serialVersionUID = 0L;
      */
     @java.lang.Deprecated
     public java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto>
-    getMutableOegphmcaenb() {
-      return internalGetMutableOegphmcaenb().getMutableMap();
+    getMutableSouvenirsCollected() {
+      return internalGetMutableSouvenirsCollected().getMutableMap();
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
      */
-    public Builder putOegphmcaenb(
+    public Builder putSouvenirsCollected(
         int key,
         POGOProtos.Rpc.SouvenirProto value) {
       
       if (value == null) { throw new java.lang.NullPointerException(); }
-      internalGetMutableOegphmcaenb().getMutableMap()
+      internalGetMutableSouvenirsCollected().getMutableMap()
           .put(key, value);
       return this;
     }
     /**
-     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; oegphmcaenb = 9;</code>
+     * <code>map&lt;int32, .POGOProtos.Rpc.SouvenirProto&gt; souvenirs_collected = 9;</code>
      */
 
-    public Builder putAllOegphmcaenb(
+    public Builder putAllSouvenirsCollected(
         java.util.Map<java.lang.Integer, POGOProtos.Rpc.SouvenirProto> values) {
-      internalGetMutableOegphmcaenb().getMutableMap()
+      internalGetMutableSouvenirsCollected().getMutableMap()
           .putAll(values);
       return this;
     }
 
-    private POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd_;
+    private POGOProtos.Rpc.BuddyStatsShownHearts todayStatsShownHearts_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyStatsShownHearts, POGOProtos.Rpc.BuddyStatsShownHearts.Builder, POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder> enjffacophdBuilder_;
+        POGOProtos.Rpc.BuddyStatsShownHearts, POGOProtos.Rpc.BuddyStatsShownHearts.Builder, POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder> todayStatsShownHeartsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
-     * @return Whether the enjffacophd field is set.
+     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
+     * @return Whether the todayStatsShownHearts field is set.
      */
-    public boolean hasEnjffacophd() {
-      return enjffacophdBuilder_ != null || enjffacophd_ != null;
+    public boolean hasTodayStatsShownHearts() {
+      return todayStatsShownHeartsBuilder_ != null || todayStatsShownHearts_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
-     * @return The enjffacophd.
+     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
+     * @return The todayStatsShownHearts.
      */
-    public POGOProtos.Rpc.BuddyStatsShownHearts getEnjffacophd() {
-      if (enjffacophdBuilder_ == null) {
-        return enjffacophd_ == null ? POGOProtos.Rpc.BuddyStatsShownHearts.getDefaultInstance() : enjffacophd_;
+    public POGOProtos.Rpc.BuddyStatsShownHearts getTodayStatsShownHearts() {
+      if (todayStatsShownHeartsBuilder_ == null) {
+        return todayStatsShownHearts_ == null ? POGOProtos.Rpc.BuddyStatsShownHearts.getDefaultInstance() : todayStatsShownHearts_;
       } else {
-        return enjffacophdBuilder_.getMessage();
+        return todayStatsShownHeartsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
+     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
      */
-    public Builder setEnjffacophd(POGOProtos.Rpc.BuddyStatsShownHearts value) {
-      if (enjffacophdBuilder_ == null) {
+    public Builder setTodayStatsShownHearts(POGOProtos.Rpc.BuddyStatsShownHearts value) {
+      if (todayStatsShownHeartsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        enjffacophd_ = value;
+        todayStatsShownHearts_ = value;
         onChanged();
       } else {
-        enjffacophdBuilder_.setMessage(value);
+        todayStatsShownHeartsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
+     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
      */
-    public Builder setEnjffacophd(
+    public Builder setTodayStatsShownHearts(
         POGOProtos.Rpc.BuddyStatsShownHearts.Builder builderForValue) {
-      if (enjffacophdBuilder_ == null) {
-        enjffacophd_ = builderForValue.build();
+      if (todayStatsShownHeartsBuilder_ == null) {
+        todayStatsShownHearts_ = builderForValue.build();
         onChanged();
       } else {
-        enjffacophdBuilder_.setMessage(builderForValue.build());
+        todayStatsShownHeartsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
+     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
      */
-    public Builder mergeEnjffacophd(POGOProtos.Rpc.BuddyStatsShownHearts value) {
-      if (enjffacophdBuilder_ == null) {
-        if (enjffacophd_ != null) {
-          enjffacophd_ =
-            POGOProtos.Rpc.BuddyStatsShownHearts.newBuilder(enjffacophd_).mergeFrom(value).buildPartial();
+    public Builder mergeTodayStatsShownHearts(POGOProtos.Rpc.BuddyStatsShownHearts value) {
+      if (todayStatsShownHeartsBuilder_ == null) {
+        if (todayStatsShownHearts_ != null) {
+          todayStatsShownHearts_ =
+            POGOProtos.Rpc.BuddyStatsShownHearts.newBuilder(todayStatsShownHearts_).mergeFrom(value).buildPartial();
         } else {
-          enjffacophd_ = value;
+          todayStatsShownHearts_ = value;
         }
         onChanged();
       } else {
-        enjffacophdBuilder_.mergeFrom(value);
+        todayStatsShownHeartsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
+     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
      */
-    public Builder clearEnjffacophd() {
-      if (enjffacophdBuilder_ == null) {
-        enjffacophd_ = null;
+    public Builder clearTodayStatsShownHearts() {
+      if (todayStatsShownHeartsBuilder_ == null) {
+        todayStatsShownHearts_ = null;
         onChanged();
       } else {
-        enjffacophd_ = null;
-        enjffacophdBuilder_ = null;
+        todayStatsShownHearts_ = null;
+        todayStatsShownHeartsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
+     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
      */
-    public POGOProtos.Rpc.BuddyStatsShownHearts.Builder getEnjffacophdBuilder() {
+    public POGOProtos.Rpc.BuddyStatsShownHearts.Builder getTodayStatsShownHeartsBuilder() {
       
       onChanged();
-      return getEnjffacophdFieldBuilder().getBuilder();
+      return getTodayStatsShownHeartsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
+     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
      */
-    public POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder getEnjffacophdOrBuilder() {
-      if (enjffacophdBuilder_ != null) {
-        return enjffacophdBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder getTodayStatsShownHeartsOrBuilder() {
+      if (todayStatsShownHeartsBuilder_ != null) {
+        return todayStatsShownHeartsBuilder_.getMessageOrBuilder();
       } else {
-        return enjffacophd_ == null ?
-            POGOProtos.Rpc.BuddyStatsShownHearts.getDefaultInstance() : enjffacophd_;
+        return todayStatsShownHearts_ == null ?
+            POGOProtos.Rpc.BuddyStatsShownHearts.getDefaultInstance() : todayStatsShownHearts_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts enjffacophd = 10;</code>
+     * <code>.POGOProtos.Rpc.BuddyStatsShownHearts today_stats_shown_hearts = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BuddyStatsShownHearts, POGOProtos.Rpc.BuddyStatsShownHearts.Builder, POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder> 
-        getEnjffacophdFieldBuilder() {
-      if (enjffacophdBuilder_ == null) {
-        enjffacophdBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getTodayStatsShownHeartsFieldBuilder() {
+      if (todayStatsShownHeartsBuilder_ == null) {
+        todayStatsShownHeartsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BuddyStatsShownHearts, POGOProtos.Rpc.BuddyStatsShownHearts.Builder, POGOProtos.Rpc.BuddyStatsShownHeartsOrBuilder>(
-                getEnjffacophd(),
+                getTodayStatsShownHearts(),
                 getParentForChildren(),
                 isClean());
-        enjffacophd_ = null;
+        todayStatsShownHearts_ = null;
       }
-      return enjffacophdBuilder_;
+      return todayStatsShownHeartsBuilder_;
     }
 
-    private POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc_;
+    private POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddyFeedStats_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder> cncabapaflcBuilder_;
+        POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder> buddyFeedStatsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
-     * @return Whether the cncabapaflc field is set.
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
+     * @return Whether the buddyFeedStats field is set.
      */
-    public boolean hasCncabapaflc() {
-      return cncabapaflcBuilder_ != null || cncabapaflc_ != null;
+    public boolean hasBuddyFeedStats() {
+      return buddyFeedStatsBuilder_ != null || buddyFeedStats_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
-     * @return The cncabapaflc.
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
+     * @return The buddyFeedStats.
      */
-    public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getCncabapaflc() {
-      if (cncabapaflcBuilder_ == null) {
-        return cncabapaflc_ == null ? POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance() : cncabapaflc_;
+    public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats getBuddyFeedStats() {
+      if (buddyFeedStatsBuilder_ == null) {
+        return buddyFeedStats_ == null ? POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance() : buddyFeedStats_;
       } else {
-        return cncabapaflcBuilder_.getMessage();
+        return buddyFeedStatsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
      */
-    public Builder setCncabapaflc(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats value) {
-      if (cncabapaflcBuilder_ == null) {
+    public Builder setBuddyFeedStats(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats value) {
+      if (buddyFeedStatsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        cncabapaflc_ = value;
+        buddyFeedStats_ = value;
         onChanged();
       } else {
-        cncabapaflcBuilder_.setMessage(value);
+        buddyFeedStatsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
      */
-    public Builder setCncabapaflc(
+    public Builder setBuddyFeedStats(
         POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder builderForValue) {
-      if (cncabapaflcBuilder_ == null) {
-        cncabapaflc_ = builderForValue.build();
+      if (buddyFeedStatsBuilder_ == null) {
+        buddyFeedStats_ = builderForValue.build();
         onChanged();
       } else {
-        cncabapaflcBuilder_.setMessage(builderForValue.build());
+        buddyFeedStatsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
      */
-    public Builder mergeCncabapaflc(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats value) {
-      if (cncabapaflcBuilder_ == null) {
-        if (cncabapaflc_ != null) {
-          cncabapaflc_ =
-            POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.newBuilder(cncabapaflc_).mergeFrom(value).buildPartial();
+    public Builder mergeBuddyFeedStats(POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats value) {
+      if (buddyFeedStatsBuilder_ == null) {
+        if (buddyFeedStats_ != null) {
+          buddyFeedStats_ =
+            POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.newBuilder(buddyFeedStats_).mergeFrom(value).buildPartial();
         } else {
-          cncabapaflc_ = value;
+          buddyFeedStats_ = value;
         }
         onChanged();
       } else {
-        cncabapaflcBuilder_.mergeFrom(value);
+        buddyFeedStatsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
      */
-    public Builder clearCncabapaflc() {
-      if (cncabapaflcBuilder_ == null) {
-        cncabapaflc_ = null;
+    public Builder clearBuddyFeedStats() {
+      if (buddyFeedStatsBuilder_ == null) {
+        buddyFeedStats_ = null;
         onChanged();
       } else {
-        cncabapaflc_ = null;
-        cncabapaflcBuilder_ = null;
+        buddyFeedStats_ = null;
+        buddyFeedStatsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
      */
-    public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder getCncabapaflcBuilder() {
+    public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder getBuddyFeedStatsBuilder() {
       
       onChanged();
-      return getCncabapaflcFieldBuilder().getBuilder();
+      return getBuddyFeedStatsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
      */
-    public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder getCncabapaflcOrBuilder() {
-      if (cncabapaflcBuilder_ != null) {
-        return cncabapaflcBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder getBuddyFeedStatsOrBuilder() {
+      if (buddyFeedStatsBuilder_ != null) {
+        return buddyFeedStatsBuilder_.getMessageOrBuilder();
       } else {
-        return cncabapaflc_ == null ?
-            POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance() : cncabapaflc_;
+        return buddyFeedStats_ == null ?
+            POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.getDefaultInstance() : buddyFeedStats_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats cncabapaflc = 11;</code>
+     * <code>.POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats buddy_feed_stats = 11;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder> 
-        getCncabapaflcFieldBuilder() {
-      if (cncabapaflcBuilder_ == null) {
-        cncabapaflcBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getBuddyFeedStatsFieldBuilder() {
+      if (buddyFeedStatsBuilder_ == null) {
+        buddyFeedStatsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStats.Builder, POGOProtos.Rpc.BuddyObservedData.BuddyFeedStatsOrBuilder>(
-                getCncabapaflc(),
+                getBuddyFeedStats(),
                 getParentForChildren(),
                 isClean());
-        cncabapaflc_ = null;
+        buddyFeedStats_ = null;
       }
-      return cncabapaflcBuilder_;
+      return buddyFeedStatsBuilder_;
     }
 
-    private java.lang.Object jpneiholigi_ = "";
+    private java.lang.Object attractivePoiId_ = "";
     /**
-     * <code>string jpneiholigi = 12;</code>
-     * @return The jpneiholigi.
+     * <code>string attractive_poi_id = 12;</code>
+     * @return The attractivePoiId.
      */
-    public java.lang.String getJpneiholigi() {
-      java.lang.Object ref = jpneiholigi_;
+    public java.lang.String getAttractivePoiId() {
+      java.lang.Object ref = attractivePoiId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        jpneiholigi_ = s;
+        attractivePoiId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string jpneiholigi = 12;</code>
-     * @return The bytes for jpneiholigi.
+     * <code>string attractive_poi_id = 12;</code>
+     * @return The bytes for attractivePoiId.
      */
     public com.google.protobuf.ByteString
-        getJpneiholigiBytes() {
-      java.lang.Object ref = jpneiholigi_;
+        getAttractivePoiIdBytes() {
+      java.lang.Object ref = attractivePoiId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        jpneiholigi_ = b;
+        attractivePoiId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string jpneiholigi = 12;</code>
-     * @param value The jpneiholigi to set.
+     * <code>string attractive_poi_id = 12;</code>
+     * @param value The attractivePoiId to set.
      * @return This builder for chaining.
      */
-    public Builder setJpneiholigi(
+    public Builder setAttractivePoiId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      jpneiholigi_ = value;
+      attractivePoiId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string jpneiholigi = 12;</code>
+     * <code>string attractive_poi_id = 12;</code>
      * @return This builder for chaining.
      */
-    public Builder clearJpneiholigi() {
+    public Builder clearAttractivePoiId() {
       
-      jpneiholigi_ = getDefaultInstance().getJpneiholigi();
+      attractivePoiId_ = getDefaultInstance().getAttractivePoiId();
       onChanged();
       return this;
     }
     /**
-     * <code>string jpneiholigi = 12;</code>
-     * @param value The bytes for jpneiholigi to set.
+     * <code>string attractive_poi_id = 12;</code>
+     * @param value The bytes for attractivePoiId to set.
      * @return This builder for chaining.
      */
-    public Builder setJpneiholigiBytes(
+    public Builder setAttractivePoiIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      jpneiholigi_ = value;
+      attractivePoiId_ = value;
       onChanged();
       return this;
     }
 
-    private long ahojbebbjah_ ;
+    private long attractivePoiExpirationTimeMs_ ;
     /**
-     * <code>int64 ahojbebbjah = 13;</code>
-     * @return The ahojbebbjah.
+     * <code>int64 attractive_poi_expiration_time_ms = 13;</code>
+     * @return The attractivePoiExpirationTimeMs.
      */
     @java.lang.Override
-    public long getAhojbebbjah() {
-      return ahojbebbjah_;
+    public long getAttractivePoiExpirationTimeMs() {
+      return attractivePoiExpirationTimeMs_;
     }
     /**
-     * <code>int64 ahojbebbjah = 13;</code>
-     * @param value The ahojbebbjah to set.
+     * <code>int64 attractive_poi_expiration_time_ms = 13;</code>
+     * @param value The attractivePoiExpirationTimeMs to set.
      * @return This builder for chaining.
      */
-    public Builder setAhojbebbjah(long value) {
+    public Builder setAttractivePoiExpirationTimeMs(long value) {
       
-      ahojbebbjah_ = value;
+      attractivePoiExpirationTimeMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 ahojbebbjah = 13;</code>
+     * <code>int64 attractive_poi_expiration_time_ms = 13;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAhojbebbjah() {
+    public Builder clearAttractivePoiExpirationTimeMs() {
       
-      ahojbebbjah_ = 0L;
+      attractivePoiExpirationTimeMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private int klakafabbeh_ ;
+    private int numDaysSpentWithBuddy_ ;
     /**
-     * <code>int32 klakafabbeh = 14;</code>
-     * @return The klakafabbeh.
+     * <code>int32 num_days_spent_with_buddy = 14;</code>
+     * @return The numDaysSpentWithBuddy.
      */
     @java.lang.Override
-    public int getKlakafabbeh() {
-      return klakafabbeh_;
+    public int getNumDaysSpentWithBuddy() {
+      return numDaysSpentWithBuddy_;
     }
     /**
-     * <code>int32 klakafabbeh = 14;</code>
-     * @param value The klakafabbeh to set.
+     * <code>int32 num_days_spent_with_buddy = 14;</code>
+     * @param value The numDaysSpentWithBuddy to set.
      * @return This builder for chaining.
      */
-    public Builder setKlakafabbeh(int value) {
+    public Builder setNumDaysSpentWithBuddy(int value) {
       
-      klakafabbeh_ = value;
+      numDaysSpentWithBuddy_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 klakafabbeh = 14;</code>
+     * <code>int32 num_days_spent_with_buddy = 14;</code>
      * @return This builder for chaining.
      */
-    public Builder clearKlakafabbeh() {
+    public Builder clearNumDaysSpentWithBuddy() {
       
-      klakafabbeh_ = 0;
+      numDaysSpentWithBuddy_ = 0;
       onChanged();
       return this;
     }

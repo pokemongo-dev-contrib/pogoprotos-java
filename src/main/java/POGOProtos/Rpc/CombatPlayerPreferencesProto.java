@@ -54,12 +54,12 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
 
-            lnnmkppfcbk_ = input.readBool();
+            friendsCombatOptOut_ = input.readBool();
             break;
           }
           case 16: {
 
-            dhapjjaddjc_ = input.readBool();
+            nearbyCombatOptIn_ = input.readBool();
             break;
           }
           default: {
@@ -94,26 +94,26 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.CombatPlayerPreferencesProto.class, POGOProtos.Rpc.CombatPlayerPreferencesProto.Builder.class);
   }
 
-  public static final int LNNMKPPFCBK_FIELD_NUMBER = 1;
-  private boolean lnnmkppfcbk_;
+  public static final int FRIENDS_COMBAT_OPT_OUT_FIELD_NUMBER = 1;
+  private boolean friendsCombatOptOut_;
   /**
-   * <code>bool lnnmkppfcbk = 1;</code>
-   * @return The lnnmkppfcbk.
+   * <code>bool friends_combat_opt_out = 1;</code>
+   * @return The friendsCombatOptOut.
    */
   @java.lang.Override
-  public boolean getLnnmkppfcbk() {
-    return lnnmkppfcbk_;
+  public boolean getFriendsCombatOptOut() {
+    return friendsCombatOptOut_;
   }
 
-  public static final int DHAPJJADDJC_FIELD_NUMBER = 2;
-  private boolean dhapjjaddjc_;
+  public static final int NEARBY_COMBAT_OPT_IN_FIELD_NUMBER = 2;
+  private boolean nearbyCombatOptIn_;
   /**
-   * <code>bool dhapjjaddjc = 2;</code>
-   * @return The dhapjjaddjc.
+   * <code>bool nearby_combat_opt_in = 2;</code>
+   * @return The nearbyCombatOptIn.
    */
   @java.lang.Override
-  public boolean getDhapjjaddjc() {
-    return dhapjjaddjc_;
+  public boolean getNearbyCombatOptIn() {
+    return nearbyCombatOptIn_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -130,11 +130,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (lnnmkppfcbk_ != false) {
-      output.writeBool(1, lnnmkppfcbk_);
+    if (friendsCombatOptOut_ != false) {
+      output.writeBool(1, friendsCombatOptOut_);
     }
-    if (dhapjjaddjc_ != false) {
-      output.writeBool(2, dhapjjaddjc_);
+    if (nearbyCombatOptIn_ != false) {
+      output.writeBool(2, nearbyCombatOptIn_);
     }
     unknownFields.writeTo(output);
   }
@@ -145,13 +145,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (lnnmkppfcbk_ != false) {
+    if (friendsCombatOptOut_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(1, lnnmkppfcbk_);
+        .computeBoolSize(1, friendsCombatOptOut_);
     }
-    if (dhapjjaddjc_ != false) {
+    if (nearbyCombatOptIn_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(2, dhapjjaddjc_);
+        .computeBoolSize(2, nearbyCombatOptIn_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -168,10 +168,10 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.CombatPlayerPreferencesProto other = (POGOProtos.Rpc.CombatPlayerPreferencesProto) obj;
 
-    if (getLnnmkppfcbk()
-        != other.getLnnmkppfcbk()) return false;
-    if (getDhapjjaddjc()
-        != other.getDhapjjaddjc()) return false;
+    if (getFriendsCombatOptOut()
+        != other.getFriendsCombatOptOut()) return false;
+    if (getNearbyCombatOptIn()
+        != other.getNearbyCombatOptIn()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -183,12 +183,12 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + LNNMKPPFCBK_FIELD_NUMBER;
+    hash = (37 * hash) + FRIENDS_COMBAT_OPT_OUT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getLnnmkppfcbk());
-    hash = (37 * hash) + DHAPJJADDJC_FIELD_NUMBER;
+        getFriendsCombatOptOut());
+    hash = (37 * hash) + NEARBY_COMBAT_OPT_IN_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getDhapjjaddjc());
+        getNearbyCombatOptIn());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -326,9 +326,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      lnnmkppfcbk_ = false;
+      friendsCombatOptOut_ = false;
 
-      dhapjjaddjc_ = false;
+      nearbyCombatOptIn_ = false;
 
       return this;
     }
@@ -356,8 +356,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.CombatPlayerPreferencesProto buildPartial() {
       POGOProtos.Rpc.CombatPlayerPreferencesProto result = new POGOProtos.Rpc.CombatPlayerPreferencesProto(this);
-      result.lnnmkppfcbk_ = lnnmkppfcbk_;
-      result.dhapjjaddjc_ = dhapjjaddjc_;
+      result.friendsCombatOptOut_ = friendsCombatOptOut_;
+      result.nearbyCombatOptIn_ = nearbyCombatOptIn_;
       onBuilt();
       return result;
     }
@@ -406,11 +406,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.CombatPlayerPreferencesProto other) {
       if (other == POGOProtos.Rpc.CombatPlayerPreferencesProto.getDefaultInstance()) return this;
-      if (other.getLnnmkppfcbk() != false) {
-        setLnnmkppfcbk(other.getLnnmkppfcbk());
+      if (other.getFriendsCombatOptOut() != false) {
+        setFriendsCombatOptOut(other.getFriendsCombatOptOut());
       }
-      if (other.getDhapjjaddjc() != false) {
-        setDhapjjaddjc(other.getDhapjjaddjc());
+      if (other.getNearbyCombatOptIn() != false) {
+        setNearbyCombatOptIn(other.getNearbyCombatOptIn());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -441,64 +441,64 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private boolean lnnmkppfcbk_ ;
+    private boolean friendsCombatOptOut_ ;
     /**
-     * <code>bool lnnmkppfcbk = 1;</code>
-     * @return The lnnmkppfcbk.
+     * <code>bool friends_combat_opt_out = 1;</code>
+     * @return The friendsCombatOptOut.
      */
     @java.lang.Override
-    public boolean getLnnmkppfcbk() {
-      return lnnmkppfcbk_;
+    public boolean getFriendsCombatOptOut() {
+      return friendsCombatOptOut_;
     }
     /**
-     * <code>bool lnnmkppfcbk = 1;</code>
-     * @param value The lnnmkppfcbk to set.
+     * <code>bool friends_combat_opt_out = 1;</code>
+     * @param value The friendsCombatOptOut to set.
      * @return This builder for chaining.
      */
-    public Builder setLnnmkppfcbk(boolean value) {
+    public Builder setFriendsCombatOptOut(boolean value) {
       
-      lnnmkppfcbk_ = value;
+      friendsCombatOptOut_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool lnnmkppfcbk = 1;</code>
+     * <code>bool friends_combat_opt_out = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLnnmkppfcbk() {
+    public Builder clearFriendsCombatOptOut() {
       
-      lnnmkppfcbk_ = false;
+      friendsCombatOptOut_ = false;
       onChanged();
       return this;
     }
 
-    private boolean dhapjjaddjc_ ;
+    private boolean nearbyCombatOptIn_ ;
     /**
-     * <code>bool dhapjjaddjc = 2;</code>
-     * @return The dhapjjaddjc.
+     * <code>bool nearby_combat_opt_in = 2;</code>
+     * @return The nearbyCombatOptIn.
      */
     @java.lang.Override
-    public boolean getDhapjjaddjc() {
-      return dhapjjaddjc_;
+    public boolean getNearbyCombatOptIn() {
+      return nearbyCombatOptIn_;
     }
     /**
-     * <code>bool dhapjjaddjc = 2;</code>
-     * @param value The dhapjjaddjc to set.
+     * <code>bool nearby_combat_opt_in = 2;</code>
+     * @param value The nearbyCombatOptIn to set.
      * @return This builder for chaining.
      */
-    public Builder setDhapjjaddjc(boolean value) {
+    public Builder setNearbyCombatOptIn(boolean value) {
       
-      dhapjjaddjc_ = value;
+      nearbyCombatOptIn_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool dhapjjaddjc = 2;</code>
+     * <code>bool nearby_combat_opt_in = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDhapjjaddjc() {
+    public Builder clearNearbyCombatOptIn() {
       
-      dhapjjaddjc_ = false;
+      nearbyCombatOptIn_ = false;
       onChanged();
       return this;
     }

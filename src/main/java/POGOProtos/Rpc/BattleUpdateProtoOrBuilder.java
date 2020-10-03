@@ -8,70 +8,70 @@ public interface BattleUpdateProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto pnoglnfphgl = 1;</code>
-   * @return Whether the pnoglnfphgl field is set.
+   * <code>.POGOProtos.Rpc.BattleLogProto battle_log = 1;</code>
+   * @return Whether the battleLog field is set.
    */
-  boolean hasPnoglnfphgl();
+  boolean hasBattleLog();
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto pnoglnfphgl = 1;</code>
-   * @return The pnoglnfphgl.
+   * <code>.POGOProtos.Rpc.BattleLogProto battle_log = 1;</code>
+   * @return The battleLog.
    */
-  POGOProtos.Rpc.BattleLogProto getPnoglnfphgl();
+  POGOProtos.Rpc.BattleLogProto getBattleLog();
   /**
-   * <code>.POGOProtos.Rpc.BattleLogProto pnoglnfphgl = 1;</code>
+   * <code>.POGOProtos.Rpc.BattleLogProto battle_log = 1;</code>
    */
-  POGOProtos.Rpc.BattleLogProtoOrBuilder getPnoglnfphglOrBuilder();
+  POGOProtos.Rpc.BattleLogProtoOrBuilder getBattleLogOrBuilder();
 
   /**
-   * <code>string ganccamkoba = 2;</code>
-   * @return The ganccamkoba.
+   * <code>string battle_id = 2;</code>
+   * @return The battleId.
    */
-  java.lang.String getGanccamkoba();
+  java.lang.String getBattleId();
   /**
-   * <code>string ganccamkoba = 2;</code>
-   * @return The bytes for ganccamkoba.
+   * <code>string battle_id = 2;</code>
+   * @return The bytes for battleId.
    */
   com.google.protobuf.ByteString
-      getGanccamkobaBytes();
+      getBattleIdBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonInfo jbkhphopgal = 3;</code>
-   * @return Whether the jbkhphopgal field is set.
+   * <code>.POGOProtos.Rpc.PokemonInfo active_defender = 3;</code>
+   * @return Whether the activeDefender field is set.
    */
-  boolean hasJbkhphopgal();
+  boolean hasActiveDefender();
   /**
-   * <code>.POGOProtos.Rpc.PokemonInfo jbkhphopgal = 3;</code>
-   * @return The jbkhphopgal.
+   * <code>.POGOProtos.Rpc.PokemonInfo active_defender = 3;</code>
+   * @return The activeDefender.
    */
-  POGOProtos.Rpc.PokemonInfo getJbkhphopgal();
+  POGOProtos.Rpc.PokemonInfo getActiveDefender();
   /**
-   * <code>.POGOProtos.Rpc.PokemonInfo jbkhphopgal = 3;</code>
+   * <code>.POGOProtos.Rpc.PokemonInfo active_defender = 3;</code>
    */
-  POGOProtos.Rpc.PokemonInfoOrBuilder getJbkhphopgalOrBuilder();
+  POGOProtos.Rpc.PokemonInfoOrBuilder getActiveDefenderOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonInfo loniljadbml = 4;</code>
-   * @return Whether the loniljadbml field is set.
+   * <code>.POGOProtos.Rpc.PokemonInfo active_attacker = 4;</code>
+   * @return Whether the activeAttacker field is set.
    */
-  boolean hasLoniljadbml();
+  boolean hasActiveAttacker();
   /**
-   * <code>.POGOProtos.Rpc.PokemonInfo loniljadbml = 4;</code>
-   * @return The loniljadbml.
+   * <code>.POGOProtos.Rpc.PokemonInfo active_attacker = 4;</code>
+   * @return The activeAttacker.
    */
-  POGOProtos.Rpc.PokemonInfo getLoniljadbml();
+  POGOProtos.Rpc.PokemonInfo getActiveAttacker();
   /**
-   * <code>.POGOProtos.Rpc.PokemonInfo loniljadbml = 4;</code>
+   * <code>.POGOProtos.Rpc.PokemonInfo active_attacker = 4;</code>
    */
-  POGOProtos.Rpc.PokemonInfoOrBuilder getLoniljadbmlOrBuilder();
+  POGOProtos.Rpc.PokemonInfoOrBuilder getActiveAttackerOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.FriendshipLevelMilestone gmfmholhdcg = 5;</code>
-   * @return The enum numeric value on the wire for gmfmholhdcg.
+   * <code>.POGOProtos.Rpc.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
+   * @return The enum numeric value on the wire for highestFriendshipMilestone.
    */
-  int getGmfmholhdcgValue();
+  int getHighestFriendshipMilestoneValue();
   /**
-   * <code>.POGOProtos.Rpc.FriendshipLevelMilestone gmfmholhdcg = 5;</code>
-   * @return The gmfmholhdcg.
+   * <code>.POGOProtos.Rpc.FriendshipLevelMilestone highest_friendship_milestone = 5;</code>
+   * @return The highestFriendshipMilestone.
    */
-  POGOProtos.Rpc.FriendshipLevelMilestone getGmfmholhdcg();
+  POGOProtos.Rpc.FriendshipLevelMilestone getHighestFriendshipMilestone();
 }

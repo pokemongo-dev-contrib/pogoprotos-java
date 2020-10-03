@@ -61,13 +61,13 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             POGOProtos.Rpc.CombatChallengeProto.Builder subBuilder = null;
-            if (oafocnchncd_ != null) {
-              subBuilder = oafocnchncd_.toBuilder();
+            if (challenge_ != null) {
+              subBuilder = challenge_.toBuilder();
             }
-            oafocnchncd_ = input.readMessage(POGOProtos.Rpc.CombatChallengeProto.parser(), extensionRegistry);
+            challenge_ = input.readMessage(POGOProtos.Rpc.CombatChallengeProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(oafocnchncd_);
-              oafocnchncd_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(challenge_);
+              challenge_ = subBuilder.buildPartial();
             }
 
             break;
@@ -316,30 +316,30 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.AcceptCombatChallengeOutProto.Result.UNRECOGNIZED : result;
   }
 
-  public static final int OAFOCNCHNCD_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.CombatChallengeProto oafocnchncd_;
+  public static final int CHALLENGE_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.CombatChallengeProto challenge_;
   /**
-   * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
-   * @return Whether the oafocnchncd field is set.
+   * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
+   * @return Whether the challenge field is set.
    */
   @java.lang.Override
-  public boolean hasOafocnchncd() {
-    return oafocnchncd_ != null;
+  public boolean hasChallenge() {
+    return challenge_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
-   * @return The oafocnchncd.
+   * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
+   * @return The challenge.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CombatChallengeProto getOafocnchncd() {
-    return oafocnchncd_ == null ? POGOProtos.Rpc.CombatChallengeProto.getDefaultInstance() : oafocnchncd_;
+  public POGOProtos.Rpc.CombatChallengeProto getChallenge() {
+    return challenge_ == null ? POGOProtos.Rpc.CombatChallengeProto.getDefaultInstance() : challenge_;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
+   * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.CombatChallengeProtoOrBuilder getOafocnchncdOrBuilder() {
-    return getOafocnchncd();
+  public POGOProtos.Rpc.CombatChallengeProtoOrBuilder getChallengeOrBuilder() {
+    return getChallenge();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -359,8 +359,8 @@ private static final long serialVersionUID = 0L;
     if (result_ != POGOProtos.Rpc.AcceptCombatChallengeOutProto.Result.UNSET.getNumber()) {
       output.writeEnum(1, result_);
     }
-    if (oafocnchncd_ != null) {
-      output.writeMessage(2, getOafocnchncd());
+    if (challenge_ != null) {
+      output.writeMessage(2, getChallenge());
     }
     unknownFields.writeTo(output);
   }
@@ -375,9 +375,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }
-    if (oafocnchncd_ != null) {
+    if (challenge_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getOafocnchncd());
+        .computeMessageSize(2, getChallenge());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -395,10 +395,10 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.AcceptCombatChallengeOutProto other = (POGOProtos.Rpc.AcceptCombatChallengeOutProto) obj;
 
     if (result_ != other.result_) return false;
-    if (hasOafocnchncd() != other.hasOafocnchncd()) return false;
-    if (hasOafocnchncd()) {
-      if (!getOafocnchncd()
-          .equals(other.getOafocnchncd())) return false;
+    if (hasChallenge() != other.hasChallenge()) return false;
+    if (hasChallenge()) {
+      if (!getChallenge()
+          .equals(other.getChallenge())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -413,9 +413,9 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + RESULT_FIELD_NUMBER;
     hash = (53 * hash) + result_;
-    if (hasOafocnchncd()) {
-      hash = (37 * hash) + OAFOCNCHNCD_FIELD_NUMBER;
-      hash = (53 * hash) + getOafocnchncd().hashCode();
+    if (hasChallenge()) {
+      hash = (37 * hash) + CHALLENGE_FIELD_NUMBER;
+      hash = (53 * hash) + getChallenge().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -556,11 +556,11 @@ private static final long serialVersionUID = 0L;
       super.clear();
       result_ = 0;
 
-      if (oafocnchncdBuilder_ == null) {
-        oafocnchncd_ = null;
+      if (challengeBuilder_ == null) {
+        challenge_ = null;
       } else {
-        oafocnchncd_ = null;
-        oafocnchncdBuilder_ = null;
+        challenge_ = null;
+        challengeBuilder_ = null;
       }
       return this;
     }
@@ -589,10 +589,10 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.AcceptCombatChallengeOutProto buildPartial() {
       POGOProtos.Rpc.AcceptCombatChallengeOutProto result = new POGOProtos.Rpc.AcceptCombatChallengeOutProto(this);
       result.result_ = result_;
-      if (oafocnchncdBuilder_ == null) {
-        result.oafocnchncd_ = oafocnchncd_;
+      if (challengeBuilder_ == null) {
+        result.challenge_ = challenge_;
       } else {
-        result.oafocnchncd_ = oafocnchncdBuilder_.build();
+        result.challenge_ = challengeBuilder_.build();
       }
       onBuilt();
       return result;
@@ -645,8 +645,8 @@ private static final long serialVersionUID = 0L;
       if (other.result_ != 0) {
         setResultValue(other.getResultValue());
       }
-      if (other.hasOafocnchncd()) {
-        mergeOafocnchncd(other.getOafocnchncd());
+      if (other.hasChallenge()) {
+        mergeChallenge(other.getChallenge());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -731,123 +731,123 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.CombatChallengeProto oafocnchncd_;
+    private POGOProtos.Rpc.CombatChallengeProto challenge_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.CombatChallengeProto, POGOProtos.Rpc.CombatChallengeProto.Builder, POGOProtos.Rpc.CombatChallengeProtoOrBuilder> oafocnchncdBuilder_;
+        POGOProtos.Rpc.CombatChallengeProto, POGOProtos.Rpc.CombatChallengeProto.Builder, POGOProtos.Rpc.CombatChallengeProtoOrBuilder> challengeBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
-     * @return Whether the oafocnchncd field is set.
+     * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
+     * @return Whether the challenge field is set.
      */
-    public boolean hasOafocnchncd() {
-      return oafocnchncdBuilder_ != null || oafocnchncd_ != null;
+    public boolean hasChallenge() {
+      return challengeBuilder_ != null || challenge_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
-     * @return The oafocnchncd.
+     * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
+     * @return The challenge.
      */
-    public POGOProtos.Rpc.CombatChallengeProto getOafocnchncd() {
-      if (oafocnchncdBuilder_ == null) {
-        return oafocnchncd_ == null ? POGOProtos.Rpc.CombatChallengeProto.getDefaultInstance() : oafocnchncd_;
+    public POGOProtos.Rpc.CombatChallengeProto getChallenge() {
+      if (challengeBuilder_ == null) {
+        return challenge_ == null ? POGOProtos.Rpc.CombatChallengeProto.getDefaultInstance() : challenge_;
       } else {
-        return oafocnchncdBuilder_.getMessage();
+        return challengeBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
      */
-    public Builder setOafocnchncd(POGOProtos.Rpc.CombatChallengeProto value) {
-      if (oafocnchncdBuilder_ == null) {
+    public Builder setChallenge(POGOProtos.Rpc.CombatChallengeProto value) {
+      if (challengeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        oafocnchncd_ = value;
+        challenge_ = value;
         onChanged();
       } else {
-        oafocnchncdBuilder_.setMessage(value);
+        challengeBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
      */
-    public Builder setOafocnchncd(
+    public Builder setChallenge(
         POGOProtos.Rpc.CombatChallengeProto.Builder builderForValue) {
-      if (oafocnchncdBuilder_ == null) {
-        oafocnchncd_ = builderForValue.build();
+      if (challengeBuilder_ == null) {
+        challenge_ = builderForValue.build();
         onChanged();
       } else {
-        oafocnchncdBuilder_.setMessage(builderForValue.build());
+        challengeBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
      */
-    public Builder mergeOafocnchncd(POGOProtos.Rpc.CombatChallengeProto value) {
-      if (oafocnchncdBuilder_ == null) {
-        if (oafocnchncd_ != null) {
-          oafocnchncd_ =
-            POGOProtos.Rpc.CombatChallengeProto.newBuilder(oafocnchncd_).mergeFrom(value).buildPartial();
+    public Builder mergeChallenge(POGOProtos.Rpc.CombatChallengeProto value) {
+      if (challengeBuilder_ == null) {
+        if (challenge_ != null) {
+          challenge_ =
+            POGOProtos.Rpc.CombatChallengeProto.newBuilder(challenge_).mergeFrom(value).buildPartial();
         } else {
-          oafocnchncd_ = value;
+          challenge_ = value;
         }
         onChanged();
       } else {
-        oafocnchncdBuilder_.mergeFrom(value);
+        challengeBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
      */
-    public Builder clearOafocnchncd() {
-      if (oafocnchncdBuilder_ == null) {
-        oafocnchncd_ = null;
+    public Builder clearChallenge() {
+      if (challengeBuilder_ == null) {
+        challenge_ = null;
         onChanged();
       } else {
-        oafocnchncd_ = null;
-        oafocnchncdBuilder_ = null;
+        challenge_ = null;
+        challengeBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
      */
-    public POGOProtos.Rpc.CombatChallengeProto.Builder getOafocnchncdBuilder() {
+    public POGOProtos.Rpc.CombatChallengeProto.Builder getChallengeBuilder() {
       
       onChanged();
-      return getOafocnchncdFieldBuilder().getBuilder();
+      return getChallengeFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
      */
-    public POGOProtos.Rpc.CombatChallengeProtoOrBuilder getOafocnchncdOrBuilder() {
-      if (oafocnchncdBuilder_ != null) {
-        return oafocnchncdBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.CombatChallengeProtoOrBuilder getChallengeOrBuilder() {
+      if (challengeBuilder_ != null) {
+        return challengeBuilder_.getMessageOrBuilder();
       } else {
-        return oafocnchncd_ == null ?
-            POGOProtos.Rpc.CombatChallengeProto.getDefaultInstance() : oafocnchncd_;
+        return challenge_ == null ?
+            POGOProtos.Rpc.CombatChallengeProto.getDefaultInstance() : challenge_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatChallengeProto oafocnchncd = 2;</code>
+     * <code>.POGOProtos.Rpc.CombatChallengeProto challenge = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.CombatChallengeProto, POGOProtos.Rpc.CombatChallengeProto.Builder, POGOProtos.Rpc.CombatChallengeProtoOrBuilder> 
-        getOafocnchncdFieldBuilder() {
-      if (oafocnchncdBuilder_ == null) {
-        oafocnchncdBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getChallengeFieldBuilder() {
+      if (challengeBuilder_ == null) {
+        challengeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.CombatChallengeProto, POGOProtos.Rpc.CombatChallengeProto.Builder, POGOProtos.Rpc.CombatChallengeProtoOrBuilder>(
-                getOafocnchncd(),
+                getChallenge(),
                 getParentForChildren(),
                 isClean());
-        oafocnchncd_ = null;
+        challenge_ = null;
       }
-      return oafocnchncdBuilder_;
+      return challengeBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

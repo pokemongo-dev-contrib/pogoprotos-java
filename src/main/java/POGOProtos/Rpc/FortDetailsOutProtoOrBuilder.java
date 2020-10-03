@@ -140,27 +140,27 @@ public interface FortDetailsOutProtoOrBuilder extends
       getLcdegoaaeaoBytes();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
    */
-  java.util.List<POGOProtos.Rpc.OOLKFIOELFG> 
+  java.util.List<POGOProtos.Rpc.ClientFortModifierProto> 
       getBemfemnleomList();
   /**
-   * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
    */
-  POGOProtos.Rpc.OOLKFIOELFG getBemfemnleom(int index);
+  POGOProtos.Rpc.ClientFortModifierProto getBemfemnleom(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
    */
   int getBemfemnleomCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.OOLKFIOELFGOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.ClientFortModifierProtoOrBuilder> 
       getBemfemnleomOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
    */
-  POGOProtos.Rpc.OOLKFIOELFGOrBuilder getBemfemnleomOrBuilder(
+  POGOProtos.Rpc.ClientFortModifierProtoOrBuilder getBemfemnleomOrBuilder(
       int index);
 
   /**

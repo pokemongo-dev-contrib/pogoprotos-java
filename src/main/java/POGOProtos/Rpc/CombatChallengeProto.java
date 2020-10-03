@@ -24,7 +24,7 @@ private static final long serialVersionUID = 0L;
     type_ = 0;
     combatLeagueTemplateId_ = "";
     state_ = 0;
-    field1_ = "";
+    combatId_ = "";
   }
 
   @java.lang.Override
@@ -120,7 +120,7 @@ private static final long serialVersionUID = 0L;
           case 162: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            field1_ = s;
+            combatId_ = s;
             break;
           }
           default: {
@@ -1756,38 +1756,38 @@ private static final long serialVersionUID = 0L;
     return expirationTimestampMs_;
   }
 
-  public static final int FIELD1_FIELD_NUMBER = 20;
-  private volatile java.lang.Object field1_;
+  public static final int COMBAT_ID_FIELD_NUMBER = 20;
+  private volatile java.lang.Object combatId_;
   /**
-   * <code>string field1 = 20;</code>
-   * @return The field1.
+   * <code>string combat_id = 20;</code>
+   * @return The combatId.
    */
   @java.lang.Override
-  public java.lang.String getField1() {
-    java.lang.Object ref = field1_;
+  public java.lang.String getCombatId() {
+    java.lang.Object ref = combatId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      field1_ = s;
+      combatId_ = s;
       return s;
     }
   }
   /**
-   * <code>string field1 = 20;</code>
-   * @return The bytes for field1.
+   * <code>string combat_id = 20;</code>
+   * @return The bytes for combatId.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getField1Bytes() {
-    java.lang.Object ref = field1_;
+      getCombatIdBytes() {
+    java.lang.Object ref = combatId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      field1_ = b;
+      combatId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -1832,8 +1832,8 @@ private static final long serialVersionUID = 0L;
     if (expirationTimestampMs_ != 0L) {
       output.writeInt64(19, expirationTimestampMs_);
     }
-    if (!getField1Bytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 20, field1_);
+    if (!getCombatIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 20, combatId_);
     }
     unknownFields.writeTo(output);
   }
@@ -1874,8 +1874,8 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(19, expirationTimestampMs_);
     }
-    if (!getField1Bytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(20, field1_);
+    if (!getCombatIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(20, combatId_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1912,8 +1912,8 @@ private static final long serialVersionUID = 0L;
         != other.getCreatedTimestampMs()) return false;
     if (getExpirationTimestampMs()
         != other.getExpirationTimestampMs()) return false;
-    if (!getField1()
-        .equals(other.getField1())) return false;
+    if (!getCombatId()
+        .equals(other.getCombatId())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -1947,8 +1947,8 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + EXPIRATION_TIMESTAMP_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getExpirationTimestampMs());
-    hash = (37 * hash) + FIELD1_FIELD_NUMBER;
-    hash = (53 * hash) + getField1().hashCode();
+    hash = (37 * hash) + COMBAT_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getCombatId().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -2110,7 +2110,7 @@ private static final long serialVersionUID = 0L;
 
       expirationTimestampMs_ = 0L;
 
-      field1_ = "";
+      combatId_ = "";
 
       return this;
     }
@@ -2154,7 +2154,7 @@ private static final long serialVersionUID = 0L;
       result.state_ = state_;
       result.createdTimestampMs_ = createdTimestampMs_;
       result.expirationTimestampMs_ = expirationTimestampMs_;
-      result.field1_ = field1_;
+      result.combatId_ = combatId_;
       onBuilt();
       return result;
     }
@@ -2229,8 +2229,8 @@ private static final long serialVersionUID = 0L;
       if (other.getExpirationTimestampMs() != 0L) {
         setExpirationTimestampMs(other.getExpirationTimestampMs());
       }
-      if (!other.getField1().isEmpty()) {
-        field1_ = other.field1_;
+      if (!other.getCombatId().isEmpty()) {
+        combatId_ = other.combatId_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -2822,78 +2822,78 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object field1_ = "";
+    private java.lang.Object combatId_ = "";
     /**
-     * <code>string field1 = 20;</code>
-     * @return The field1.
+     * <code>string combat_id = 20;</code>
+     * @return The combatId.
      */
-    public java.lang.String getField1() {
-      java.lang.Object ref = field1_;
+    public java.lang.String getCombatId() {
+      java.lang.Object ref = combatId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        field1_ = s;
+        combatId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string field1 = 20;</code>
-     * @return The bytes for field1.
+     * <code>string combat_id = 20;</code>
+     * @return The bytes for combatId.
      */
     public com.google.protobuf.ByteString
-        getField1Bytes() {
-      java.lang.Object ref = field1_;
+        getCombatIdBytes() {
+      java.lang.Object ref = combatId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        field1_ = b;
+        combatId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string field1 = 20;</code>
-     * @param value The field1 to set.
+     * <code>string combat_id = 20;</code>
+     * @param value The combatId to set.
      * @return This builder for chaining.
      */
-    public Builder setField1(
+    public Builder setCombatId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      field1_ = value;
+      combatId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string field1 = 20;</code>
+     * <code>string combat_id = 20;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField1() {
+    public Builder clearCombatId() {
       
-      field1_ = getDefaultInstance().getField1();
+      combatId_ = getDefaultInstance().getCombatId();
       onChanged();
       return this;
     }
     /**
-     * <code>string field1 = 20;</code>
-     * @param value The bytes for field1 to set.
+     * <code>string combat_id = 20;</code>
+     * @param value The bytes for combatId to set.
      * @return This builder for chaining.
      */
-    public Builder setField1Bytes(
+    public Builder setCombatIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      field1_ = value;
+      combatId_ = value;
       onChanged();
       return this;
     }

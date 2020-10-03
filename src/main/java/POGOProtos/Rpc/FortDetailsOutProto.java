@@ -137,11 +137,11 @@ private static final long serialVersionUID = 0L;
           }
           case 106: {
             if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-              bemfemnleom_ = new java.util.ArrayList<POGOProtos.Rpc.OOLKFIOELFG>();
+              bemfemnleom_ = new java.util.ArrayList<POGOProtos.Rpc.ClientFortModifierProto>();
               mutable_bitField0_ |= 0x00000004;
             }
             bemfemnleom_.add(
-                input.readMessage(POGOProtos.Rpc.OOLKFIOELFG.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.ClientFortModifierProto.parser(), extensionRegistry));
             break;
           }
           case 112: {
@@ -515,41 +515,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int BEMFEMNLEOM_FIELD_NUMBER = 13;
-  private java.util.List<POGOProtos.Rpc.OOLKFIOELFG> bemfemnleom_;
+  private java.util.List<POGOProtos.Rpc.ClientFortModifierProto> bemfemnleom_;
   /**
-   * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.OOLKFIOELFG> getBemfemnleomList() {
+  public java.util.List<POGOProtos.Rpc.ClientFortModifierProto> getBemfemnleomList() {
     return bemfemnleom_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.OOLKFIOELFGOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.ClientFortModifierProtoOrBuilder> 
       getBemfemnleomOrBuilderList() {
     return bemfemnleom_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
    */
   @java.lang.Override
   public int getBemfemnleomCount() {
     return bemfemnleom_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.OOLKFIOELFG getBemfemnleom(int index) {
+  public POGOProtos.Rpc.ClientFortModifierProto getBemfemnleom(int index) {
     return bemfemnleom_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.OOLKFIOELFGOrBuilder getBemfemnleomOrBuilder(
+  public POGOProtos.Rpc.ClientFortModifierProtoOrBuilder getBemfemnleomOrBuilder(
       int index) {
     return bemfemnleom_.get(index);
   }
@@ -2300,22 +2300,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.OOLKFIOELFG> bemfemnleom_ =
+    private java.util.List<POGOProtos.Rpc.ClientFortModifierProto> bemfemnleom_ =
       java.util.Collections.emptyList();
     private void ensureBemfemnleomIsMutable() {
       if (!((bitField0_ & 0x00000004) != 0)) {
-        bemfemnleom_ = new java.util.ArrayList<POGOProtos.Rpc.OOLKFIOELFG>(bemfemnleom_);
+        bemfemnleom_ = new java.util.ArrayList<POGOProtos.Rpc.ClientFortModifierProto>(bemfemnleom_);
         bitField0_ |= 0x00000004;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.OOLKFIOELFG, POGOProtos.Rpc.OOLKFIOELFG.Builder, POGOProtos.Rpc.OOLKFIOELFGOrBuilder> bemfemnleomBuilder_;
+        POGOProtos.Rpc.ClientFortModifierProto, POGOProtos.Rpc.ClientFortModifierProto.Builder, POGOProtos.Rpc.ClientFortModifierProtoOrBuilder> bemfemnleomBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
-    public java.util.List<POGOProtos.Rpc.OOLKFIOELFG> getBemfemnleomList() {
+    public java.util.List<POGOProtos.Rpc.ClientFortModifierProto> getBemfemnleomList() {
       if (bemfemnleomBuilder_ == null) {
         return java.util.Collections.unmodifiableList(bemfemnleom_);
       } else {
@@ -2323,7 +2323,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
     public int getBemfemnleomCount() {
       if (bemfemnleomBuilder_ == null) {
@@ -2333,9 +2333,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
-    public POGOProtos.Rpc.OOLKFIOELFG getBemfemnleom(int index) {
+    public POGOProtos.Rpc.ClientFortModifierProto getBemfemnleom(int index) {
       if (bemfemnleomBuilder_ == null) {
         return bemfemnleom_.get(index);
       } else {
@@ -2343,10 +2343,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
     public Builder setBemfemnleom(
-        int index, POGOProtos.Rpc.OOLKFIOELFG value) {
+        int index, POGOProtos.Rpc.ClientFortModifierProto value) {
       if (bemfemnleomBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2360,10 +2360,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
     public Builder setBemfemnleom(
-        int index, POGOProtos.Rpc.OOLKFIOELFG.Builder builderForValue) {
+        int index, POGOProtos.Rpc.ClientFortModifierProto.Builder builderForValue) {
       if (bemfemnleomBuilder_ == null) {
         ensureBemfemnleomIsMutable();
         bemfemnleom_.set(index, builderForValue.build());
@@ -2374,9 +2374,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
-    public Builder addBemfemnleom(POGOProtos.Rpc.OOLKFIOELFG value) {
+    public Builder addBemfemnleom(POGOProtos.Rpc.ClientFortModifierProto value) {
       if (bemfemnleomBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2390,10 +2390,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
     public Builder addBemfemnleom(
-        int index, POGOProtos.Rpc.OOLKFIOELFG value) {
+        int index, POGOProtos.Rpc.ClientFortModifierProto value) {
       if (bemfemnleomBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2407,10 +2407,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
     public Builder addBemfemnleom(
-        POGOProtos.Rpc.OOLKFIOELFG.Builder builderForValue) {
+        POGOProtos.Rpc.ClientFortModifierProto.Builder builderForValue) {
       if (bemfemnleomBuilder_ == null) {
         ensureBemfemnleomIsMutable();
         bemfemnleom_.add(builderForValue.build());
@@ -2421,10 +2421,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
     public Builder addBemfemnleom(
-        int index, POGOProtos.Rpc.OOLKFIOELFG.Builder builderForValue) {
+        int index, POGOProtos.Rpc.ClientFortModifierProto.Builder builderForValue) {
       if (bemfemnleomBuilder_ == null) {
         ensureBemfemnleomIsMutable();
         bemfemnleom_.add(index, builderForValue.build());
@@ -2435,10 +2435,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
     public Builder addAllBemfemnleom(
-        java.lang.Iterable<? extends POGOProtos.Rpc.OOLKFIOELFG> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.ClientFortModifierProto> values) {
       if (bemfemnleomBuilder_ == null) {
         ensureBemfemnleomIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2450,7 +2450,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
     public Builder clearBemfemnleom() {
       if (bemfemnleomBuilder_ == null) {
@@ -2463,7 +2463,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
     public Builder removeBemfemnleom(int index) {
       if (bemfemnleomBuilder_ == null) {
@@ -2476,16 +2476,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
-    public POGOProtos.Rpc.OOLKFIOELFG.Builder getBemfemnleomBuilder(
+    public POGOProtos.Rpc.ClientFortModifierProto.Builder getBemfemnleomBuilder(
         int index) {
       return getBemfemnleomFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
-    public POGOProtos.Rpc.OOLKFIOELFGOrBuilder getBemfemnleomOrBuilder(
+    public POGOProtos.Rpc.ClientFortModifierProtoOrBuilder getBemfemnleomOrBuilder(
         int index) {
       if (bemfemnleomBuilder_ == null) {
         return bemfemnleom_.get(index);  } else {
@@ -2493,9 +2493,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.OOLKFIOELFGOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.ClientFortModifierProtoOrBuilder> 
          getBemfemnleomOrBuilderList() {
       if (bemfemnleomBuilder_ != null) {
         return bemfemnleomBuilder_.getMessageOrBuilderList();
@@ -2504,33 +2504,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
-    public POGOProtos.Rpc.OOLKFIOELFG.Builder addBemfemnleomBuilder() {
+    public POGOProtos.Rpc.ClientFortModifierProto.Builder addBemfemnleomBuilder() {
       return getBemfemnleomFieldBuilder().addBuilder(
-          POGOProtos.Rpc.OOLKFIOELFG.getDefaultInstance());
+          POGOProtos.Rpc.ClientFortModifierProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
-    public POGOProtos.Rpc.OOLKFIOELFG.Builder addBemfemnleomBuilder(
+    public POGOProtos.Rpc.ClientFortModifierProto.Builder addBemfemnleomBuilder(
         int index) {
       return getBemfemnleomFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.OOLKFIOELFG.getDefaultInstance());
+          index, POGOProtos.Rpc.ClientFortModifierProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.OOLKFIOELFG bemfemnleom = 13;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientFortModifierProto bemfemnleom = 13;</code>
      */
-    public java.util.List<POGOProtos.Rpc.OOLKFIOELFG.Builder> 
+    public java.util.List<POGOProtos.Rpc.ClientFortModifierProto.Builder> 
          getBemfemnleomBuilderList() {
       return getBemfemnleomFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.OOLKFIOELFG, POGOProtos.Rpc.OOLKFIOELFG.Builder, POGOProtos.Rpc.OOLKFIOELFGOrBuilder> 
+        POGOProtos.Rpc.ClientFortModifierProto, POGOProtos.Rpc.ClientFortModifierProto.Builder, POGOProtos.Rpc.ClientFortModifierProtoOrBuilder> 
         getBemfemnleomFieldBuilder() {
       if (bemfemnleomBuilder_ == null) {
         bemfemnleomBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.OOLKFIOELFG, POGOProtos.Rpc.OOLKFIOELFG.Builder, POGOProtos.Rpc.OOLKFIOELFGOrBuilder>(
+            POGOProtos.Rpc.ClientFortModifierProto, POGOProtos.Rpc.ClientFortModifierProto.Builder, POGOProtos.Rpc.ClientFortModifierProtoOrBuilder>(
                 bemfemnleom_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),

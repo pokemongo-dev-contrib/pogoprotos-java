@@ -20,26 +20,26 @@ public interface PlayerRaidInfoProtoOrBuilder extends
   int getOjlloeimljd();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
    */
-  java.util.List<POGOProtos.Rpc.IOKGECIIAMP> 
+  java.util.List<POGOProtos.Rpc.RaidProto> 
       getBilabhihdjnList();
   /**
-   * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
    */
-  POGOProtos.Rpc.IOKGECIIAMP getBilabhihdjn(int index);
+  POGOProtos.Rpc.RaidProto getBilabhihdjn(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
    */
   int getBilabhihdjnCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.IOKGECIIAMPOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.RaidProtoOrBuilder> 
       getBilabhihdjnOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.IOKGECIIAMP bilabhihdjn = 5;</code>
+   * <code>repeated .POGOProtos.Rpc.RaidProto bilabhihdjn = 5;</code>
    */
-  POGOProtos.Rpc.IOKGECIIAMPOrBuilder getBilabhihdjnOrBuilder(
+  POGOProtos.Rpc.RaidProtoOrBuilder getBilabhihdjnOrBuilder(
       int index);
 }

@@ -26,26 +26,26 @@ public interface ICOGKMMELDHOrBuilder extends
       getPegfachkbddBytes();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
    */
-  java.util.List<POGOProtos.Rpc.MDJDKBIAJBL> 
+  java.util.List<POGOProtos.Rpc.StickerSentProto> 
       getGifoejepgidList();
   /**
-   * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
    */
-  POGOProtos.Rpc.MDJDKBIAJBL getGifoejepgid(int index);
+  POGOProtos.Rpc.StickerSentProto getGifoejepgid(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
    */
   int getGifoejepgidCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.MDJDKBIAJBLOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.StickerSentProtoOrBuilder> 
       getGifoejepgidOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
    */
-  POGOProtos.Rpc.MDJDKBIAJBLOrBuilder getGifoejepgidOrBuilder(
+  POGOProtos.Rpc.StickerSentProtoOrBuilder getGifoejepgidOrBuilder(
       int index);
 }

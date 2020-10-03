@@ -21,7 +21,7 @@ private static final long serialVersionUID = 0L;
   }
   private BuddyPokemonLogEntry() {
     result_ = 0;
-    bgdcaommfao_ = 0;
+    pokemonType_ = 0;
   }
 
   @java.lang.Override
@@ -63,30 +63,30 @@ private static final long serialVersionUID = 0L;
           case 16: {
             int rawValue = input.readEnum();
 
-            bgdcaommfao_ = rawValue;
+            pokemonType_ = rawValue;
             break;
           }
           case 24: {
 
-            ligbfceekdo_ = input.readInt32();
+            amount_ = input.readInt32();
             break;
           }
           case 34: {
             POGOProtos.Rpc.PokemonDisplayProto.Builder subBuilder = null;
-            if (efpknnlchbc_ != null) {
-              subBuilder = efpknnlchbc_.toBuilder();
+            if (pokemonDisplay_ != null) {
+              subBuilder = pokemonDisplay_.toBuilder();
             }
-            efpknnlchbc_ = input.readMessage(POGOProtos.Rpc.PokemonDisplayProto.parser(), extensionRegistry);
+            pokemonDisplay_ = input.readMessage(POGOProtos.Rpc.PokemonDisplayProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(efpknnlchbc_);
-              efpknnlchbc_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(pokemonDisplay_);
+              pokemonDisplay_ = subBuilder.buildPartial();
             }
 
             break;
           }
-          case 40: {
+          case 41: {
 
-            mfkgkhdmbpb_ = input.readUInt64();
+            pokemonId_ = input.readFixed64();
             break;
           }
           default: {
@@ -252,71 +252,71 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.BuddyPokemonLogEntry.Result.UNRECOGNIZED : result;
   }
 
-  public static final int BGDCAOMMFAO_FIELD_NUMBER = 2;
-  private int bgdcaommfao_;
+  public static final int POKEMON_TYPE_FIELD_NUMBER = 2;
+  private int pokemonType_;
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonId bgdcaommfao = 2;</code>
-   * @return The enum numeric value on the wire for bgdcaommfao.
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type = 2;</code>
+   * @return The enum numeric value on the wire for pokemonType.
    */
-  @java.lang.Override public int getBgdcaommfaoValue() {
-    return bgdcaommfao_;
+  @java.lang.Override public int getPokemonTypeValue() {
+    return pokemonType_;
   }
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonId bgdcaommfao = 2;</code>
-   * @return The bgdcaommfao.
+   * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type = 2;</code>
+   * @return The pokemonType.
    */
-  @java.lang.Override public POGOProtos.Rpc.HoloPokemonId getBgdcaommfao() {
+  @java.lang.Override public POGOProtos.Rpc.HoloPokemonId getPokemonType() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(bgdcaommfao_);
+    POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(pokemonType_);
     return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
   }
 
-  public static final int LIGBFCEEKDO_FIELD_NUMBER = 3;
-  private int ligbfceekdo_;
+  public static final int AMOUNT_FIELD_NUMBER = 3;
+  private int amount_;
   /**
-   * <code>int32 ligbfceekdo = 3;</code>
-   * @return The ligbfceekdo.
+   * <code>int32 amount = 3;</code>
+   * @return The amount.
    */
   @java.lang.Override
-  public int getLigbfceekdo() {
-    return ligbfceekdo_;
+  public int getAmount() {
+    return amount_;
   }
 
-  public static final int EFPKNNLCHBC_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc_;
+  public static final int POKEMON_DISPLAY_FIELD_NUMBER = 4;
+  private POGOProtos.Rpc.PokemonDisplayProto pokemonDisplay_;
   /**
-   * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
-   * @return Whether the efpknnlchbc field is set.
+   * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
+   * @return Whether the pokemonDisplay field is set.
    */
   @java.lang.Override
-  public boolean hasEfpknnlchbc() {
-    return efpknnlchbc_ != null;
+  public boolean hasPokemonDisplay() {
+    return pokemonDisplay_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
-   * @return The efpknnlchbc.
+   * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
+   * @return The pokemonDisplay.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonDisplayProto getEfpknnlchbc() {
-    return efpknnlchbc_ == null ? POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : efpknnlchbc_;
+  public POGOProtos.Rpc.PokemonDisplayProto getPokemonDisplay() {
+    return pokemonDisplay_ == null ? POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : pokemonDisplay_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
+   * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getEfpknnlchbcOrBuilder() {
-    return getEfpknnlchbc();
+  public POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getPokemonDisplayOrBuilder() {
+    return getPokemonDisplay();
   }
 
-  public static final int MFKGKHDMBPB_FIELD_NUMBER = 5;
-  private long mfkgkhdmbpb_;
+  public static final int POKEMON_ID_FIELD_NUMBER = 5;
+  private long pokemonId_;
   /**
-   * <code>uint64 mfkgkhdmbpb = 5;</code>
-   * @return The mfkgkhdmbpb.
+   * <code>fixed64 pokemon_id = 5;</code>
+   * @return The pokemonId.
    */
   @java.lang.Override
-  public long getMfkgkhdmbpb() {
-    return mfkgkhdmbpb_;
+  public long getPokemonId() {
+    return pokemonId_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -336,17 +336,17 @@ private static final long serialVersionUID = 0L;
     if (result_ != POGOProtos.Rpc.BuddyPokemonLogEntry.Result.UNSET.getNumber()) {
       output.writeEnum(1, result_);
     }
-    if (bgdcaommfao_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
-      output.writeEnum(2, bgdcaommfao_);
+    if (pokemonType_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+      output.writeEnum(2, pokemonType_);
     }
-    if (ligbfceekdo_ != 0) {
-      output.writeInt32(3, ligbfceekdo_);
+    if (amount_ != 0) {
+      output.writeInt32(3, amount_);
     }
-    if (efpknnlchbc_ != null) {
-      output.writeMessage(4, getEfpknnlchbc());
+    if (pokemonDisplay_ != null) {
+      output.writeMessage(4, getPokemonDisplay());
     }
-    if (mfkgkhdmbpb_ != 0L) {
-      output.writeUInt64(5, mfkgkhdmbpb_);
+    if (pokemonId_ != 0L) {
+      output.writeFixed64(5, pokemonId_);
     }
     unknownFields.writeTo(output);
   }
@@ -361,21 +361,21 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, result_);
     }
-    if (bgdcaommfao_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokemonType_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, bgdcaommfao_);
+        .computeEnumSize(2, pokemonType_);
     }
-    if (ligbfceekdo_ != 0) {
+    if (amount_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, ligbfceekdo_);
+        .computeInt32Size(3, amount_);
     }
-    if (efpknnlchbc_ != null) {
+    if (pokemonDisplay_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getEfpknnlchbc());
+        .computeMessageSize(4, getPokemonDisplay());
     }
-    if (mfkgkhdmbpb_ != 0L) {
+    if (pokemonId_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt64Size(5, mfkgkhdmbpb_);
+        .computeFixed64Size(5, pokemonId_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -393,16 +393,16 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.BuddyPokemonLogEntry other = (POGOProtos.Rpc.BuddyPokemonLogEntry) obj;
 
     if (result_ != other.result_) return false;
-    if (bgdcaommfao_ != other.bgdcaommfao_) return false;
-    if (getLigbfceekdo()
-        != other.getLigbfceekdo()) return false;
-    if (hasEfpknnlchbc() != other.hasEfpknnlchbc()) return false;
-    if (hasEfpknnlchbc()) {
-      if (!getEfpknnlchbc()
-          .equals(other.getEfpknnlchbc())) return false;
+    if (pokemonType_ != other.pokemonType_) return false;
+    if (getAmount()
+        != other.getAmount()) return false;
+    if (hasPokemonDisplay() != other.hasPokemonDisplay()) return false;
+    if (hasPokemonDisplay()) {
+      if (!getPokemonDisplay()
+          .equals(other.getPokemonDisplay())) return false;
     }
-    if (getMfkgkhdmbpb()
-        != other.getMfkgkhdmbpb()) return false;
+    if (getPokemonId()
+        != other.getPokemonId()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -416,17 +416,17 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + RESULT_FIELD_NUMBER;
     hash = (53 * hash) + result_;
-    hash = (37 * hash) + BGDCAOMMFAO_FIELD_NUMBER;
-    hash = (53 * hash) + bgdcaommfao_;
-    hash = (37 * hash) + LIGBFCEEKDO_FIELD_NUMBER;
-    hash = (53 * hash) + getLigbfceekdo();
-    if (hasEfpknnlchbc()) {
-      hash = (37 * hash) + EFPKNNLCHBC_FIELD_NUMBER;
-      hash = (53 * hash) + getEfpknnlchbc().hashCode();
+    hash = (37 * hash) + POKEMON_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + pokemonType_;
+    hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
+    hash = (53 * hash) + getAmount();
+    if (hasPokemonDisplay()) {
+      hash = (37 * hash) + POKEMON_DISPLAY_FIELD_NUMBER;
+      hash = (53 * hash) + getPokemonDisplay().hashCode();
     }
-    hash = (37 * hash) + MFKGKHDMBPB_FIELD_NUMBER;
+    hash = (37 * hash) + POKEMON_ID_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getMfkgkhdmbpb());
+        getPokemonId());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -566,17 +566,17 @@ private static final long serialVersionUID = 0L;
       super.clear();
       result_ = 0;
 
-      bgdcaommfao_ = 0;
+      pokemonType_ = 0;
 
-      ligbfceekdo_ = 0;
+      amount_ = 0;
 
-      if (efpknnlchbcBuilder_ == null) {
-        efpknnlchbc_ = null;
+      if (pokemonDisplayBuilder_ == null) {
+        pokemonDisplay_ = null;
       } else {
-        efpknnlchbc_ = null;
-        efpknnlchbcBuilder_ = null;
+        pokemonDisplay_ = null;
+        pokemonDisplayBuilder_ = null;
       }
-      mfkgkhdmbpb_ = 0L;
+      pokemonId_ = 0L;
 
       return this;
     }
@@ -605,14 +605,14 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.BuddyPokemonLogEntry buildPartial() {
       POGOProtos.Rpc.BuddyPokemonLogEntry result = new POGOProtos.Rpc.BuddyPokemonLogEntry(this);
       result.result_ = result_;
-      result.bgdcaommfao_ = bgdcaommfao_;
-      result.ligbfceekdo_ = ligbfceekdo_;
-      if (efpknnlchbcBuilder_ == null) {
-        result.efpknnlchbc_ = efpknnlchbc_;
+      result.pokemonType_ = pokemonType_;
+      result.amount_ = amount_;
+      if (pokemonDisplayBuilder_ == null) {
+        result.pokemonDisplay_ = pokemonDisplay_;
       } else {
-        result.efpknnlchbc_ = efpknnlchbcBuilder_.build();
+        result.pokemonDisplay_ = pokemonDisplayBuilder_.build();
       }
-      result.mfkgkhdmbpb_ = mfkgkhdmbpb_;
+      result.pokemonId_ = pokemonId_;
       onBuilt();
       return result;
     }
@@ -664,17 +664,17 @@ private static final long serialVersionUID = 0L;
       if (other.result_ != 0) {
         setResultValue(other.getResultValue());
       }
-      if (other.bgdcaommfao_ != 0) {
-        setBgdcaommfaoValue(other.getBgdcaommfaoValue());
+      if (other.pokemonType_ != 0) {
+        setPokemonTypeValue(other.getPokemonTypeValue());
       }
-      if (other.getLigbfceekdo() != 0) {
-        setLigbfceekdo(other.getLigbfceekdo());
+      if (other.getAmount() != 0) {
+        setAmount(other.getAmount());
       }
-      if (other.hasEfpknnlchbc()) {
-        mergeEfpknnlchbc(other.getEfpknnlchbc());
+      if (other.hasPokemonDisplay()) {
+        mergePokemonDisplay(other.getPokemonDisplay());
       }
-      if (other.getMfkgkhdmbpb() != 0L) {
-        setMfkgkhdmbpb(other.getMfkgkhdmbpb());
+      if (other.getPokemonId() != 0L) {
+        setPokemonId(other.getPokemonId());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -759,237 +759,237 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int bgdcaommfao_ = 0;
+    private int pokemonType_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonId bgdcaommfao = 2;</code>
-     * @return The enum numeric value on the wire for bgdcaommfao.
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type = 2;</code>
+     * @return The enum numeric value on the wire for pokemonType.
      */
-    @java.lang.Override public int getBgdcaommfaoValue() {
-      return bgdcaommfao_;
+    @java.lang.Override public int getPokemonTypeValue() {
+      return pokemonType_;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonId bgdcaommfao = 2;</code>
-     * @param value The enum numeric value on the wire for bgdcaommfao to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type = 2;</code>
+     * @param value The enum numeric value on the wire for pokemonType to set.
      * @return This builder for chaining.
      */
-    public Builder setBgdcaommfaoValue(int value) {
+    public Builder setPokemonTypeValue(int value) {
       
-      bgdcaommfao_ = value;
+      pokemonType_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonId bgdcaommfao = 2;</code>
-     * @return The bgdcaommfao.
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type = 2;</code>
+     * @return The pokemonType.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.HoloPokemonId getBgdcaommfao() {
+    public POGOProtos.Rpc.HoloPokemonId getPokemonType() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(bgdcaommfao_);
+      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(pokemonType_);
       return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonId bgdcaommfao = 2;</code>
-     * @param value The bgdcaommfao to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type = 2;</code>
+     * @param value The pokemonType to set.
      * @return This builder for chaining.
      */
-    public Builder setBgdcaommfao(POGOProtos.Rpc.HoloPokemonId value) {
+    public Builder setPokemonType(POGOProtos.Rpc.HoloPokemonId value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      bgdcaommfao_ = value.getNumber();
+      pokemonType_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonId bgdcaommfao = 2;</code>
+     * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_type = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBgdcaommfao() {
+    public Builder clearPokemonType() {
       
-      bgdcaommfao_ = 0;
+      pokemonType_ = 0;
       onChanged();
       return this;
     }
 
-    private int ligbfceekdo_ ;
+    private int amount_ ;
     /**
-     * <code>int32 ligbfceekdo = 3;</code>
-     * @return The ligbfceekdo.
+     * <code>int32 amount = 3;</code>
+     * @return The amount.
      */
     @java.lang.Override
-    public int getLigbfceekdo() {
-      return ligbfceekdo_;
+    public int getAmount() {
+      return amount_;
     }
     /**
-     * <code>int32 ligbfceekdo = 3;</code>
-     * @param value The ligbfceekdo to set.
+     * <code>int32 amount = 3;</code>
+     * @param value The amount to set.
      * @return This builder for chaining.
      */
-    public Builder setLigbfceekdo(int value) {
+    public Builder setAmount(int value) {
       
-      ligbfceekdo_ = value;
+      amount_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 ligbfceekdo = 3;</code>
+     * <code>int32 amount = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLigbfceekdo() {
+    public Builder clearAmount() {
       
-      ligbfceekdo_ = 0;
+      amount_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc_;
+    private POGOProtos.Rpc.PokemonDisplayProto pokemonDisplay_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonDisplayProto, POGOProtos.Rpc.PokemonDisplayProto.Builder, POGOProtos.Rpc.PokemonDisplayProtoOrBuilder> efpknnlchbcBuilder_;
+        POGOProtos.Rpc.PokemonDisplayProto, POGOProtos.Rpc.PokemonDisplayProto.Builder, POGOProtos.Rpc.PokemonDisplayProtoOrBuilder> pokemonDisplayBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
-     * @return Whether the efpknnlchbc field is set.
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
+     * @return Whether the pokemonDisplay field is set.
      */
-    public boolean hasEfpknnlchbc() {
-      return efpknnlchbcBuilder_ != null || efpknnlchbc_ != null;
+    public boolean hasPokemonDisplay() {
+      return pokemonDisplayBuilder_ != null || pokemonDisplay_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
-     * @return The efpknnlchbc.
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
+     * @return The pokemonDisplay.
      */
-    public POGOProtos.Rpc.PokemonDisplayProto getEfpknnlchbc() {
-      if (efpknnlchbcBuilder_ == null) {
-        return efpknnlchbc_ == null ? POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : efpknnlchbc_;
+    public POGOProtos.Rpc.PokemonDisplayProto getPokemonDisplay() {
+      if (pokemonDisplayBuilder_ == null) {
+        return pokemonDisplay_ == null ? POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : pokemonDisplay_;
       } else {
-        return efpknnlchbcBuilder_.getMessage();
+        return pokemonDisplayBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
      */
-    public Builder setEfpknnlchbc(POGOProtos.Rpc.PokemonDisplayProto value) {
-      if (efpknnlchbcBuilder_ == null) {
+    public Builder setPokemonDisplay(POGOProtos.Rpc.PokemonDisplayProto value) {
+      if (pokemonDisplayBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        efpknnlchbc_ = value;
+        pokemonDisplay_ = value;
         onChanged();
       } else {
-        efpknnlchbcBuilder_.setMessage(value);
+        pokemonDisplayBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
      */
-    public Builder setEfpknnlchbc(
+    public Builder setPokemonDisplay(
         POGOProtos.Rpc.PokemonDisplayProto.Builder builderForValue) {
-      if (efpknnlchbcBuilder_ == null) {
-        efpknnlchbc_ = builderForValue.build();
+      if (pokemonDisplayBuilder_ == null) {
+        pokemonDisplay_ = builderForValue.build();
         onChanged();
       } else {
-        efpknnlchbcBuilder_.setMessage(builderForValue.build());
+        pokemonDisplayBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
      */
-    public Builder mergeEfpknnlchbc(POGOProtos.Rpc.PokemonDisplayProto value) {
-      if (efpknnlchbcBuilder_ == null) {
-        if (efpknnlchbc_ != null) {
-          efpknnlchbc_ =
-            POGOProtos.Rpc.PokemonDisplayProto.newBuilder(efpknnlchbc_).mergeFrom(value).buildPartial();
+    public Builder mergePokemonDisplay(POGOProtos.Rpc.PokemonDisplayProto value) {
+      if (pokemonDisplayBuilder_ == null) {
+        if (pokemonDisplay_ != null) {
+          pokemonDisplay_ =
+            POGOProtos.Rpc.PokemonDisplayProto.newBuilder(pokemonDisplay_).mergeFrom(value).buildPartial();
         } else {
-          efpknnlchbc_ = value;
+          pokemonDisplay_ = value;
         }
         onChanged();
       } else {
-        efpknnlchbcBuilder_.mergeFrom(value);
+        pokemonDisplayBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
      */
-    public Builder clearEfpknnlchbc() {
-      if (efpknnlchbcBuilder_ == null) {
-        efpknnlchbc_ = null;
+    public Builder clearPokemonDisplay() {
+      if (pokemonDisplayBuilder_ == null) {
+        pokemonDisplay_ = null;
         onChanged();
       } else {
-        efpknnlchbc_ = null;
-        efpknnlchbcBuilder_ = null;
+        pokemonDisplay_ = null;
+        pokemonDisplayBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
      */
-    public POGOProtos.Rpc.PokemonDisplayProto.Builder getEfpknnlchbcBuilder() {
+    public POGOProtos.Rpc.PokemonDisplayProto.Builder getPokemonDisplayBuilder() {
       
       onChanged();
-      return getEfpknnlchbcFieldBuilder().getBuilder();
+      return getPokemonDisplayFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
      */
-    public POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getEfpknnlchbcOrBuilder() {
-      if (efpknnlchbcBuilder_ != null) {
-        return efpknnlchbcBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.PokemonDisplayProtoOrBuilder getPokemonDisplayOrBuilder() {
+      if (pokemonDisplayBuilder_ != null) {
+        return pokemonDisplayBuilder_.getMessageOrBuilder();
       } else {
-        return efpknnlchbc_ == null ?
-            POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : efpknnlchbc_;
+        return pokemonDisplay_ == null ?
+            POGOProtos.Rpc.PokemonDisplayProto.getDefaultInstance() : pokemonDisplay_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonDisplayProto efpknnlchbc = 4;</code>
+     * <code>.POGOProtos.Rpc.PokemonDisplayProto pokemon_display = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PokemonDisplayProto, POGOProtos.Rpc.PokemonDisplayProto.Builder, POGOProtos.Rpc.PokemonDisplayProtoOrBuilder> 
-        getEfpknnlchbcFieldBuilder() {
-      if (efpknnlchbcBuilder_ == null) {
-        efpknnlchbcBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getPokemonDisplayFieldBuilder() {
+      if (pokemonDisplayBuilder_ == null) {
+        pokemonDisplayBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PokemonDisplayProto, POGOProtos.Rpc.PokemonDisplayProto.Builder, POGOProtos.Rpc.PokemonDisplayProtoOrBuilder>(
-                getEfpknnlchbc(),
+                getPokemonDisplay(),
                 getParentForChildren(),
                 isClean());
-        efpknnlchbc_ = null;
+        pokemonDisplay_ = null;
       }
-      return efpknnlchbcBuilder_;
+      return pokemonDisplayBuilder_;
     }
 
-    private long mfkgkhdmbpb_ ;
+    private long pokemonId_ ;
     /**
-     * <code>uint64 mfkgkhdmbpb = 5;</code>
-     * @return The mfkgkhdmbpb.
+     * <code>fixed64 pokemon_id = 5;</code>
+     * @return The pokemonId.
      */
     @java.lang.Override
-    public long getMfkgkhdmbpb() {
-      return mfkgkhdmbpb_;
+    public long getPokemonId() {
+      return pokemonId_;
     }
     /**
-     * <code>uint64 mfkgkhdmbpb = 5;</code>
-     * @param value The mfkgkhdmbpb to set.
+     * <code>fixed64 pokemon_id = 5;</code>
+     * @param value The pokemonId to set.
      * @return This builder for chaining.
      */
-    public Builder setMfkgkhdmbpb(long value) {
+    public Builder setPokemonId(long value) {
       
-      mfkgkhdmbpb_ = value;
+      pokemonId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>uint64 mfkgkhdmbpb = 5;</code>
+     * <code>fixed64 pokemon_id = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearMfkgkhdmbpb() {
+    public Builder clearPokemonId() {
       
-      mfkgkhdmbpb_ = 0L;
+      pokemonId_ = 0L;
       onChanged();
       return this;
     }

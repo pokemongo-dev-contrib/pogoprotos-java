@@ -69,11 +69,11 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              mkfdbndkecj_ = new java.util.ArrayList<POGOProtos.Rpc.JLMFGIOLPCM>();
+              mkfdbndkecj_ = new java.util.ArrayList<POGOProtos.Rpc.GymDefenderProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             mkfdbndkecj_.add(
-                input.readMessage(POGOProtos.Rpc.JLMFGIOLPCM.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.GymDefenderProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -138,41 +138,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int MKFDBNDKECJ_FIELD_NUMBER = 2;
-  private java.util.List<POGOProtos.Rpc.JLMFGIOLPCM> mkfdbndkecj_;
+  private java.util.List<POGOProtos.Rpc.GymDefenderProto> mkfdbndkecj_;
   /**
-   * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.JLMFGIOLPCM> getMkfdbndkecjList() {
+  public java.util.List<POGOProtos.Rpc.GymDefenderProto> getMkfdbndkecjList() {
     return mkfdbndkecj_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.JLMFGIOLPCMOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.GymDefenderProtoOrBuilder> 
       getMkfdbndkecjOrBuilderList() {
     return mkfdbndkecj_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
   @java.lang.Override
   public int getMkfdbndkecjCount() {
     return mkfdbndkecj_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.JLMFGIOLPCM getMkfdbndkecj(int index) {
+  public POGOProtos.Rpc.GymDefenderProto getMkfdbndkecj(int index) {
     return mkfdbndkecj_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.JLMFGIOLPCMOrBuilder getMkfdbndkecjOrBuilder(
+  public POGOProtos.Rpc.GymDefenderProtoOrBuilder getMkfdbndkecjOrBuilder(
       int index) {
     return mkfdbndkecj_.get(index);
   }
@@ -672,22 +672,22 @@ private static final long serialVersionUID = 0L;
       return mcjepnnlcfoBuilder_;
     }
 
-    private java.util.List<POGOProtos.Rpc.JLMFGIOLPCM> mkfdbndkecj_ =
+    private java.util.List<POGOProtos.Rpc.GymDefenderProto> mkfdbndkecj_ =
       java.util.Collections.emptyList();
     private void ensureMkfdbndkecjIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        mkfdbndkecj_ = new java.util.ArrayList<POGOProtos.Rpc.JLMFGIOLPCM>(mkfdbndkecj_);
+        mkfdbndkecj_ = new java.util.ArrayList<POGOProtos.Rpc.GymDefenderProto>(mkfdbndkecj_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.JLMFGIOLPCM, POGOProtos.Rpc.JLMFGIOLPCM.Builder, POGOProtos.Rpc.JLMFGIOLPCMOrBuilder> mkfdbndkecjBuilder_;
+        POGOProtos.Rpc.GymDefenderProto, POGOProtos.Rpc.GymDefenderProto.Builder, POGOProtos.Rpc.GymDefenderProtoOrBuilder> mkfdbndkecjBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.JLMFGIOLPCM> getMkfdbndkecjList() {
+    public java.util.List<POGOProtos.Rpc.GymDefenderProto> getMkfdbndkecjList() {
       if (mkfdbndkecjBuilder_ == null) {
         return java.util.Collections.unmodifiableList(mkfdbndkecj_);
       } else {
@@ -695,7 +695,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
     public int getMkfdbndkecjCount() {
       if (mkfdbndkecjBuilder_ == null) {
@@ -705,9 +705,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
-    public POGOProtos.Rpc.JLMFGIOLPCM getMkfdbndkecj(int index) {
+    public POGOProtos.Rpc.GymDefenderProto getMkfdbndkecj(int index) {
       if (mkfdbndkecjBuilder_ == null) {
         return mkfdbndkecj_.get(index);
       } else {
@@ -715,10 +715,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
     public Builder setMkfdbndkecj(
-        int index, POGOProtos.Rpc.JLMFGIOLPCM value) {
+        int index, POGOProtos.Rpc.GymDefenderProto value) {
       if (mkfdbndkecjBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -732,10 +732,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
     public Builder setMkfdbndkecj(
-        int index, POGOProtos.Rpc.JLMFGIOLPCM.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GymDefenderProto.Builder builderForValue) {
       if (mkfdbndkecjBuilder_ == null) {
         ensureMkfdbndkecjIsMutable();
         mkfdbndkecj_.set(index, builderForValue.build());
@@ -746,9 +746,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
-    public Builder addMkfdbndkecj(POGOProtos.Rpc.JLMFGIOLPCM value) {
+    public Builder addMkfdbndkecj(POGOProtos.Rpc.GymDefenderProto value) {
       if (mkfdbndkecjBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -762,10 +762,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
     public Builder addMkfdbndkecj(
-        int index, POGOProtos.Rpc.JLMFGIOLPCM value) {
+        int index, POGOProtos.Rpc.GymDefenderProto value) {
       if (mkfdbndkecjBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -779,10 +779,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
     public Builder addMkfdbndkecj(
-        POGOProtos.Rpc.JLMFGIOLPCM.Builder builderForValue) {
+        POGOProtos.Rpc.GymDefenderProto.Builder builderForValue) {
       if (mkfdbndkecjBuilder_ == null) {
         ensureMkfdbndkecjIsMutable();
         mkfdbndkecj_.add(builderForValue.build());
@@ -793,10 +793,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
     public Builder addMkfdbndkecj(
-        int index, POGOProtos.Rpc.JLMFGIOLPCM.Builder builderForValue) {
+        int index, POGOProtos.Rpc.GymDefenderProto.Builder builderForValue) {
       if (mkfdbndkecjBuilder_ == null) {
         ensureMkfdbndkecjIsMutable();
         mkfdbndkecj_.add(index, builderForValue.build());
@@ -807,10 +807,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
     public Builder addAllMkfdbndkecj(
-        java.lang.Iterable<? extends POGOProtos.Rpc.JLMFGIOLPCM> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.GymDefenderProto> values) {
       if (mkfdbndkecjBuilder_ == null) {
         ensureMkfdbndkecjIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -822,7 +822,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
     public Builder clearMkfdbndkecj() {
       if (mkfdbndkecjBuilder_ == null) {
@@ -835,7 +835,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
     public Builder removeMkfdbndkecj(int index) {
       if (mkfdbndkecjBuilder_ == null) {
@@ -848,16 +848,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
-    public POGOProtos.Rpc.JLMFGIOLPCM.Builder getMkfdbndkecjBuilder(
+    public POGOProtos.Rpc.GymDefenderProto.Builder getMkfdbndkecjBuilder(
         int index) {
       return getMkfdbndkecjFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
-    public POGOProtos.Rpc.JLMFGIOLPCMOrBuilder getMkfdbndkecjOrBuilder(
+    public POGOProtos.Rpc.GymDefenderProtoOrBuilder getMkfdbndkecjOrBuilder(
         int index) {
       if (mkfdbndkecjBuilder_ == null) {
         return mkfdbndkecj_.get(index);  } else {
@@ -865,9 +865,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.JLMFGIOLPCMOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.GymDefenderProtoOrBuilder> 
          getMkfdbndkecjOrBuilderList() {
       if (mkfdbndkecjBuilder_ != null) {
         return mkfdbndkecjBuilder_.getMessageOrBuilderList();
@@ -876,33 +876,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
-    public POGOProtos.Rpc.JLMFGIOLPCM.Builder addMkfdbndkecjBuilder() {
+    public POGOProtos.Rpc.GymDefenderProto.Builder addMkfdbndkecjBuilder() {
       return getMkfdbndkecjFieldBuilder().addBuilder(
-          POGOProtos.Rpc.JLMFGIOLPCM.getDefaultInstance());
+          POGOProtos.Rpc.GymDefenderProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
-    public POGOProtos.Rpc.JLMFGIOLPCM.Builder addMkfdbndkecjBuilder(
+    public POGOProtos.Rpc.GymDefenderProto.Builder addMkfdbndkecjBuilder(
         int index) {
       return getMkfdbndkecjFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.JLMFGIOLPCM.getDefaultInstance());
+          index, POGOProtos.Rpc.GymDefenderProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.JLMFGIOLPCM mkfdbndkecj = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.GymDefenderProto mkfdbndkecj = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.JLMFGIOLPCM.Builder> 
+    public java.util.List<POGOProtos.Rpc.GymDefenderProto.Builder> 
          getMkfdbndkecjBuilderList() {
       return getMkfdbndkecjFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.JLMFGIOLPCM, POGOProtos.Rpc.JLMFGIOLPCM.Builder, POGOProtos.Rpc.JLMFGIOLPCMOrBuilder> 
+        POGOProtos.Rpc.GymDefenderProto, POGOProtos.Rpc.GymDefenderProto.Builder, POGOProtos.Rpc.GymDefenderProtoOrBuilder> 
         getMkfdbndkecjFieldBuilder() {
       if (mkfdbndkecjBuilder_ == null) {
         mkfdbndkecjBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.JLMFGIOLPCM, POGOProtos.Rpc.JLMFGIOLPCM.Builder, POGOProtos.Rpc.JLMFGIOLPCMOrBuilder>(
+            POGOProtos.Rpc.GymDefenderProto, POGOProtos.Rpc.GymDefenderProto.Builder, POGOProtos.Rpc.GymDefenderProtoOrBuilder>(
                 mkfdbndkecj_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

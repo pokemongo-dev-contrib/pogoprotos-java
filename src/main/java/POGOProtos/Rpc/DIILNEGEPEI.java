@@ -95,11 +95,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 8010: {
-            POGOProtos.Rpc.PlatformServerData.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformPlatformServerData.Builder subBuilder = null;
             if (ckboefenjcf_ != null) {
               subBuilder = ckboefenjcf_.toBuilder();
             }
-            ckboefenjcf_ = input.readMessage(POGOProtos.Rpc.PlatformServerData.parser(), extensionRegistry);
+            ckboefenjcf_ = input.readMessage(POGOProtos.Rpc.PlatformPlatformServerData.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(ckboefenjcf_);
               ckboefenjcf_ = subBuilder.buildPartial();
@@ -276,9 +276,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int CKBOEFENJCF_FIELD_NUMBER = 1001;
-  private POGOProtos.Rpc.PlatformServerData ckboefenjcf_;
+  private POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
    * @return Whether the ckboefenjcf field is set.
    */
   @java.lang.Override
@@ -286,18 +286,18 @@ private static final long serialVersionUID = 0L;
     return ckboefenjcf_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
    * @return The ckboefenjcf.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformServerData getCkboefenjcf() {
-    return ckboefenjcf_ == null ? POGOProtos.Rpc.PlatformServerData.getDefaultInstance() : ckboefenjcf_;
+  public POGOProtos.Rpc.PlatformPlatformServerData getCkboefenjcf() {
+    return ckboefenjcf_ == null ? POGOProtos.Rpc.PlatformPlatformServerData.getDefaultInstance() : ckboefenjcf_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+   * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlatformServerDataOrBuilder getCkboefenjcfOrBuilder() {
+  public POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getCkboefenjcfOrBuilder() {
     return getCkboefenjcf();
   }
 
@@ -1153,31 +1153,31 @@ private static final long serialVersionUID = 0L;
       return playerMetadataTelemetryBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformServerData ckboefenjcf_;
+    private POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformServerData, POGOProtos.Rpc.PlatformServerData.Builder, POGOProtos.Rpc.PlatformServerDataOrBuilder> ckboefenjcfBuilder_;
+        POGOProtos.Rpc.PlatformPlatformServerData, POGOProtos.Rpc.PlatformPlatformServerData.Builder, POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder> ckboefenjcfBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
      * @return Whether the ckboefenjcf field is set.
      */
     public boolean hasCkboefenjcf() {
       return ckboefenjcfBuilder_ != null || ckboefenjcf_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
      * @return The ckboefenjcf.
      */
-    public POGOProtos.Rpc.PlatformServerData getCkboefenjcf() {
+    public POGOProtos.Rpc.PlatformPlatformServerData getCkboefenjcf() {
       if (ckboefenjcfBuilder_ == null) {
-        return ckboefenjcf_ == null ? POGOProtos.Rpc.PlatformServerData.getDefaultInstance() : ckboefenjcf_;
+        return ckboefenjcf_ == null ? POGOProtos.Rpc.PlatformPlatformServerData.getDefaultInstance() : ckboefenjcf_;
       } else {
         return ckboefenjcfBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
      */
-    public Builder setCkboefenjcf(POGOProtos.Rpc.PlatformServerData value) {
+    public Builder setCkboefenjcf(POGOProtos.Rpc.PlatformPlatformServerData value) {
       if (ckboefenjcfBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1191,10 +1191,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
      */
     public Builder setCkboefenjcf(
-        POGOProtos.Rpc.PlatformServerData.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformPlatformServerData.Builder builderForValue) {
       if (ckboefenjcfBuilder_ == null) {
         ckboefenjcf_ = builderForValue.build();
         onChanged();
@@ -1205,13 +1205,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
      */
-    public Builder mergeCkboefenjcf(POGOProtos.Rpc.PlatformServerData value) {
+    public Builder mergeCkboefenjcf(POGOProtos.Rpc.PlatformPlatformServerData value) {
       if (ckboefenjcfBuilder_ == null) {
         if (ckboefenjcf_ != null) {
           ckboefenjcf_ =
-            POGOProtos.Rpc.PlatformServerData.newBuilder(ckboefenjcf_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformPlatformServerData.newBuilder(ckboefenjcf_).mergeFrom(value).buildPartial();
         } else {
           ckboefenjcf_ = value;
         }
@@ -1223,7 +1223,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
      */
     public Builder clearCkboefenjcf() {
       if (ckboefenjcfBuilder_ == null) {
@@ -1237,33 +1237,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
      */
-    public POGOProtos.Rpc.PlatformServerData.Builder getCkboefenjcfBuilder() {
+    public POGOProtos.Rpc.PlatformPlatformServerData.Builder getCkboefenjcfBuilder() {
       
       onChanged();
       return getCkboefenjcfFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
      */
-    public POGOProtos.Rpc.PlatformServerDataOrBuilder getCkboefenjcfOrBuilder() {
+    public POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getCkboefenjcfOrBuilder() {
       if (ckboefenjcfBuilder_ != null) {
         return ckboefenjcfBuilder_.getMessageOrBuilder();
       } else {
         return ckboefenjcf_ == null ?
-            POGOProtos.Rpc.PlatformServerData.getDefaultInstance() : ckboefenjcf_;
+            POGOProtos.Rpc.PlatformPlatformServerData.getDefaultInstance() : ckboefenjcf_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformServerData ckboefenjcf = 1001;</code>
+     * <code>.POGOProtos.Rpc.PlatformPlatformServerData ckboefenjcf = 1001;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformServerData, POGOProtos.Rpc.PlatformServerData.Builder, POGOProtos.Rpc.PlatformServerDataOrBuilder> 
+        POGOProtos.Rpc.PlatformPlatformServerData, POGOProtos.Rpc.PlatformPlatformServerData.Builder, POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder> 
         getCkboefenjcfFieldBuilder() {
       if (ckboefenjcfBuilder_ == null) {
         ckboefenjcfBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformServerData, POGOProtos.Rpc.PlatformServerData.Builder, POGOProtos.Rpc.PlatformServerDataOrBuilder>(
+            POGOProtos.Rpc.PlatformPlatformServerData, POGOProtos.Rpc.PlatformPlatformServerData.Builder, POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder>(
                 getCkboefenjcf(),
                 getParentForChildren(),
                 isClean());

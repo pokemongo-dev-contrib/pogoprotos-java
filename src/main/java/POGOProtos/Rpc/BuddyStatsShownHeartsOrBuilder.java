@@ -8,57 +8,57 @@ public interface BuddyStatsShownHeartsOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>float hbbidigfcnm = 1;</code>
-   * @return The hbbidigfcnm.
+   * <code>float buddy_affection_km_in_progress = 1;</code>
+   * @return The buddyAffectionKmInProgress.
    */
-  float getHbbidigfcnm();
+  float getBuddyAffectionKmInProgress();
 
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
    */
-  int getJikdopmmlagCount();
+  int getBuddyShownHeartsPerCategoryCount();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
    */
-  boolean containsJikdopmmlag(
+  boolean containsBuddyShownHeartsPerCategory(
       int key);
   /**
-   * Use {@link #getJikdopmmlagMap()} instead.
+   * Use {@link #getBuddyShownHeartsPerCategoryMap()} instead.
    */
   @java.lang.Deprecated
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA>
-  getJikdopmmlag();
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList>
+  getBuddyShownHeartsPerCategory();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
    */
-  java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA>
-  getJikdopmmlagMap();
+  java.util.Map<java.lang.Integer, POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList>
+  getBuddyShownHeartsPerCategoryMap();
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
    */
 
-  POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA getJikdopmmlagOrDefault(
+  POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList getBuddyShownHeartsPerCategoryOrDefault(
       int key,
-      POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA defaultValue);
+      POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList defaultValue);
   /**
-   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA&gt; jikdopmmlag = 2;</code>
+   * <code>map&lt;int32, .POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList&gt; buddy_shown_hearts_per_category = 2;</code>
    */
 
-  POGOProtos.Rpc.BuddyStatsShownHearts.DAPPDAAFDIA getJikdopmmlagOrThrow(
+  POGOProtos.Rpc.BuddyStatsShownHearts.BuddyShownHeartsList getBuddyShownHeartsPerCategoryOrThrow(
       int key);
 
   /**
-   * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
-   * @return Whether the dalfiomenog field is set.
+   * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
+   * @return Whether the field1 field is set.
    */
-  boolean hasDalfiomenog();
+  boolean hasField1();
   /**
-   * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
-   * @return The dalfiomenog.
+   * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
+   * @return The field1.
    */
-  POGOProtos.Rpc.PEKJNHJPJIB getDalfiomenog();
+  POGOProtos.Rpc.PEKJNHJPJIB getField1();
   /**
-   * <code>.POGOProtos.Rpc.PEKJNHJPJIB dalfiomenog = 3;</code>
+   * <code>.POGOProtos.Rpc.PEKJNHJPJIB field1 = 3;</code>
    */
-  POGOProtos.Rpc.PEKJNHJPJIBOrBuilder getDalfiomenogOrBuilder();
+  POGOProtos.Rpc.PEKJNHJPJIBOrBuilder getField1OrBuilder();
 }

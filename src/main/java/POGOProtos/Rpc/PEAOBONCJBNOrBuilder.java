@@ -19,15 +19,15 @@ public interface PEAOBONCJBNOrBuilder extends
   POGOProtos.Rpc.PEAOBONCJBN.FCMLGPGMGNJ getHncojddbiio();
 
   /**
-   * <code>.POGOProtos.Rpc.TitanPoiImageType kbfoamgjigc = 2;</code>
+   * <code>.POGOProtos.Rpc.PoiImageType kbfoamgjigc = 2;</code>
    * @return The enum numeric value on the wire for kbfoamgjigc.
    */
   int getKbfoamgjigcValue();
   /**
-   * <code>.POGOProtos.Rpc.TitanPoiImageType kbfoamgjigc = 2;</code>
+   * <code>.POGOProtos.Rpc.PoiImageType kbfoamgjigc = 2;</code>
    * @return The kbfoamgjigc.
    */
-  POGOProtos.Rpc.TitanPoiImageType getKbfoamgjigc();
+  POGOProtos.Rpc.PoiImageType getKbfoamgjigc();
 
   /**
    * <code>string nobaoihmgln = 3;</code>

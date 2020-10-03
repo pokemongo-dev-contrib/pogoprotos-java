@@ -20,27 +20,27 @@ public interface QuestDisplayProtoOrBuilder extends
       getClgdnpihbdnBytes();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.GGDLKHNFFFL> 
+  java.util.List<POGOProtos.Rpc.QuestDialogProto> 
       getOkdclnadodkList();
   /**
-   * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
    */
-  POGOProtos.Rpc.GGDLKHNFFFL getOkdclnadodk(int index);
+  POGOProtos.Rpc.QuestDialogProto getOkdclnadodk(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
    */
   int getOkdclnadodkCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.GGDLKHNFFFLOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.QuestDialogProtoOrBuilder> 
       getOkdclnadodkOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.GGDLKHNFFFL okdclnadodk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestDialogProto okdclnadodk = 2;</code>
    */
-  POGOProtos.Rpc.GGDLKHNFFFLOrBuilder getOkdclnadodkOrBuilder(
+  POGOProtos.Rpc.QuestDialogProtoOrBuilder getOkdclnadodkOrBuilder(
       int index);
 
   /**

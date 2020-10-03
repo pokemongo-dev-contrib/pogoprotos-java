@@ -5,7 +5,7 @@ package POGOProtos.Rpc;
 
 /**
  * <pre>
- * ref: APBADONLEGM
+ * ref: DJLDMHBHCFG
  * </pre>
  *
  * Protobuf type {@code POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo}
@@ -20,9 +20,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private SharedExclusiveTicketTrainerInfo() {
-    lndigkkjfml_ = "";
-    ipfnaapigeh_ = "";
-    mghkaalhkoo_ = "";
+    bemkenlenhj_ = "";
+    pegfachkbdd_ = "";
   }
 
   @java.lang.Override
@@ -55,96 +54,16 @@ private static final long serialVersionUID = 0L;
           case 0:
             done = true;
             break;
-          case 8: {
+          case 10: {
+            java.lang.String s = input.readStringRequireUtf8();
 
-            pdaldoafaaj_ = input.readInt64();
+            bemkenlenhj_ = s;
             break;
           }
           case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            lndigkkjfml_ = s;
-            break;
-          }
-          case 32: {
-
-            liggmklanog_ = input.readInt64();
-            break;
-          }
-          case 40: {
-
-            hejngmkeobl_ = input.readInt64();
-            break;
-          }
-          case 50: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            ipfnaapigeh_ = s;
-            break;
-          }
-          case 57: {
-
-            phiabghihcc_ = input.readDouble();
-            break;
-          }
-          case 65: {
-
-            icmnhajccaa_ = input.readDouble();
-            break;
-          }
-          case 74: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            mghkaalhkoo_ = s;
-            break;
-          }
-          case 80: {
-
-            kdllpajbffo_ = input.readInt64();
-            break;
-          }
-          case 88: {
-
-            gigmimkmdep_ = input.readBool();
-            break;
-          }
-          case 98: {
-            POGOProtos.Rpc.PokemonProto.Builder subBuilder = null;
-            if (jmobphmmoef_ != null) {
-              subBuilder = jmobphmmoef_.toBuilder();
-            }
-            jmobphmmoef_ = input.readMessage(POGOProtos.Rpc.PokemonProto.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(jmobphmmoef_);
-              jmobphmmoef_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 106: {
-            POGOProtos.Rpc.DJLDMHBHCFG.Builder subBuilder = null;
-            if (idjplgfpimf_ != null) {
-              subBuilder = idjplgfpimf_.toBuilder();
-            }
-            idjplgfpimf_ = input.readMessage(POGOProtos.Rpc.DJLDMHBHCFG.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(idjplgfpimf_);
-              idjplgfpimf_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 114: {
-            POGOProtos.Rpc.DJLDMHBHCFG.Builder subBuilder = null;
-            if (bejppidpieg_ != null) {
-              subBuilder = bejppidpieg_.toBuilder();
-            }
-            bejppidpieg_ = input.readMessage(POGOProtos.Rpc.DJLDMHBHCFG.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(bejppidpieg_);
-              bejppidpieg_ = subBuilder.buildPartial();
-            }
-
+            pegfachkbdd_ = s;
             break;
           }
           default: {
@@ -179,273 +98,80 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.class, POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.Builder.class);
   }
 
-  public static final int PDALDOAFAAJ_FIELD_NUMBER = 1;
-  private long pdaldoafaaj_;
+  public static final int BEMKENLENHJ_FIELD_NUMBER = 1;
+  private volatile java.lang.Object bemkenlenhj_;
   /**
-   * <code>int64 pdaldoafaaj = 1;</code>
-   * @return The pdaldoafaaj.
+   * <code>string bemkenlenhj = 1;</code>
+   * @return The bemkenlenhj.
    */
   @java.lang.Override
-  public long getPdaldoafaaj() {
-    return pdaldoafaaj_;
-  }
-
-  public static final int LNDIGKKJFML_FIELD_NUMBER = 2;
-  private volatile java.lang.Object lndigkkjfml_;
-  /**
-   * <code>string lndigkkjfml = 2;</code>
-   * @return The lndigkkjfml.
-   */
-  @java.lang.Override
-  public java.lang.String getLndigkkjfml() {
-    java.lang.Object ref = lndigkkjfml_;
+  public java.lang.String getBemkenlenhj() {
+    java.lang.Object ref = bemkenlenhj_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      lndigkkjfml_ = s;
+      bemkenlenhj_ = s;
       return s;
     }
   }
   /**
-   * <code>string lndigkkjfml = 2;</code>
-   * @return The bytes for lndigkkjfml.
+   * <code>string bemkenlenhj = 1;</code>
+   * @return The bytes for bemkenlenhj.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getLndigkkjfmlBytes() {
-    java.lang.Object ref = lndigkkjfml_;
+      getBemkenlenhjBytes() {
+    java.lang.Object ref = bemkenlenhj_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      lndigkkjfml_ = b;
+      bemkenlenhj_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int LIGGMKLANOG_FIELD_NUMBER = 4;
-  private long liggmklanog_;
+  public static final int PEGFACHKBDD_FIELD_NUMBER = 2;
+  private volatile java.lang.Object pegfachkbdd_;
   /**
-   * <code>int64 liggmklanog = 4;</code>
-   * @return The liggmklanog.
+   * <code>string pegfachkbdd = 2;</code>
+   * @return The pegfachkbdd.
    */
   @java.lang.Override
-  public long getLiggmklanog() {
-    return liggmklanog_;
-  }
-
-  public static final int HEJNGMKEOBL_FIELD_NUMBER = 5;
-  private long hejngmkeobl_;
-  /**
-   * <code>int64 hejngmkeobl = 5;</code>
-   * @return The hejngmkeobl.
-   */
-  @java.lang.Override
-  public long getHejngmkeobl() {
-    return hejngmkeobl_;
-  }
-
-  public static final int IPFNAAPIGEH_FIELD_NUMBER = 6;
-  private volatile java.lang.Object ipfnaapigeh_;
-  /**
-   * <code>string ipfnaapigeh = 6;</code>
-   * @return The ipfnaapigeh.
-   */
-  @java.lang.Override
-  public java.lang.String getIpfnaapigeh() {
-    java.lang.Object ref = ipfnaapigeh_;
+  public java.lang.String getPegfachkbdd() {
+    java.lang.Object ref = pegfachkbdd_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      ipfnaapigeh_ = s;
+      pegfachkbdd_ = s;
       return s;
     }
   }
   /**
-   * <code>string ipfnaapigeh = 6;</code>
-   * @return The bytes for ipfnaapigeh.
+   * <code>string pegfachkbdd = 2;</code>
+   * @return The bytes for pegfachkbdd.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getIpfnaapigehBytes() {
-    java.lang.Object ref = ipfnaapigeh_;
+      getPegfachkbddBytes() {
+    java.lang.Object ref = pegfachkbdd_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      ipfnaapigeh_ = b;
+      pegfachkbdd_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
-  }
-
-  public static final int PHIABGHIHCC_FIELD_NUMBER = 7;
-  private double phiabghihcc_;
-  /**
-   * <code>double phiabghihcc = 7;</code>
-   * @return The phiabghihcc.
-   */
-  @java.lang.Override
-  public double getPhiabghihcc() {
-    return phiabghihcc_;
-  }
-
-  public static final int ICMNHAJCCAA_FIELD_NUMBER = 8;
-  private double icmnhajccaa_;
-  /**
-   * <code>double icmnhajccaa = 8;</code>
-   * @return The icmnhajccaa.
-   */
-  @java.lang.Override
-  public double getIcmnhajccaa() {
-    return icmnhajccaa_;
-  }
-
-  public static final int MGHKAALHKOO_FIELD_NUMBER = 9;
-  private volatile java.lang.Object mghkaalhkoo_;
-  /**
-   * <code>string mghkaalhkoo = 9;</code>
-   * @return The mghkaalhkoo.
-   */
-  @java.lang.Override
-  public java.lang.String getMghkaalhkoo() {
-    java.lang.Object ref = mghkaalhkoo_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      mghkaalhkoo_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string mghkaalhkoo = 9;</code>
-   * @return The bytes for mghkaalhkoo.
-   */
-  @java.lang.Override
-  public com.google.protobuf.ByteString
-      getMghkaalhkooBytes() {
-    java.lang.Object ref = mghkaalhkoo_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      mghkaalhkoo_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int KDLLPAJBFFO_FIELD_NUMBER = 10;
-  private long kdllpajbffo_;
-  /**
-   * <code>int64 kdllpajbffo = 10;</code>
-   * @return The kdllpajbffo.
-   */
-  @java.lang.Override
-  public long getKdllpajbffo() {
-    return kdllpajbffo_;
-  }
-
-  public static final int GIGMIMKMDEP_FIELD_NUMBER = 11;
-  private boolean gigmimkmdep_;
-  /**
-   * <code>bool gigmimkmdep = 11;</code>
-   * @return The gigmimkmdep.
-   */
-  @java.lang.Override
-  public boolean getGigmimkmdep() {
-    return gigmimkmdep_;
-  }
-
-  public static final int JMOBPHMMOEF_FIELD_NUMBER = 12;
-  private POGOProtos.Rpc.PokemonProto jmobphmmoef_;
-  /**
-   * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-   * @return Whether the jmobphmmoef field is set.
-   */
-  @java.lang.Override
-  public boolean hasJmobphmmoef() {
-    return jmobphmmoef_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-   * @return The jmobphmmoef.
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonProto getJmobphmmoef() {
-    return jmobphmmoef_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : jmobphmmoef_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonProtoOrBuilder getJmobphmmoefOrBuilder() {
-    return getJmobphmmoef();
-  }
-
-  public static final int IDJPLGFPIMF_FIELD_NUMBER = 13;
-  private POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf_;
-  /**
-   * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-   * @return Whether the idjplgfpimf field is set.
-   */
-  @java.lang.Override
-  public boolean hasIdjplgfpimf() {
-    return idjplgfpimf_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-   * @return The idjplgfpimf.
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.DJLDMHBHCFG getIdjplgfpimf() {
-    return idjplgfpimf_ == null ? POGOProtos.Rpc.DJLDMHBHCFG.getDefaultInstance() : idjplgfpimf_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.DJLDMHBHCFGOrBuilder getIdjplgfpimfOrBuilder() {
-    return getIdjplgfpimf();
-  }
-
-  public static final int BEJPPIDPIEG_FIELD_NUMBER = 14;
-  private POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg_;
-  /**
-   * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-   * @return Whether the bejppidpieg field is set.
-   */
-  @java.lang.Override
-  public boolean hasBejppidpieg() {
-    return bejppidpieg_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-   * @return The bejppidpieg.
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.DJLDMHBHCFG getBejppidpieg() {
-    return bejppidpieg_ == null ? POGOProtos.Rpc.DJLDMHBHCFG.getDefaultInstance() : bejppidpieg_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.DJLDMHBHCFGOrBuilder getBejppidpiegOrBuilder() {
-    return getBejppidpieg();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -462,44 +188,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (pdaldoafaaj_ != 0L) {
-      output.writeInt64(1, pdaldoafaaj_);
+    if (!getBemkenlenhjBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, bemkenlenhj_);
     }
-    if (!getLndigkkjfmlBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, lndigkkjfml_);
-    }
-    if (liggmklanog_ != 0L) {
-      output.writeInt64(4, liggmklanog_);
-    }
-    if (hejngmkeobl_ != 0L) {
-      output.writeInt64(5, hejngmkeobl_);
-    }
-    if (!getIpfnaapigehBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 6, ipfnaapigeh_);
-    }
-    if (phiabghihcc_ != 0D) {
-      output.writeDouble(7, phiabghihcc_);
-    }
-    if (icmnhajccaa_ != 0D) {
-      output.writeDouble(8, icmnhajccaa_);
-    }
-    if (!getMghkaalhkooBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, mghkaalhkoo_);
-    }
-    if (kdllpajbffo_ != 0L) {
-      output.writeInt64(10, kdllpajbffo_);
-    }
-    if (gigmimkmdep_ != false) {
-      output.writeBool(11, gigmimkmdep_);
-    }
-    if (jmobphmmoef_ != null) {
-      output.writeMessage(12, getJmobphmmoef());
-    }
-    if (idjplgfpimf_ != null) {
-      output.writeMessage(13, getIdjplgfpimf());
-    }
-    if (bejppidpieg_ != null) {
-      output.writeMessage(14, getBejppidpieg());
+    if (!getPegfachkbddBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, pegfachkbdd_);
     }
     unknownFields.writeTo(output);
   }
@@ -510,54 +203,11 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (pdaldoafaaj_ != 0L) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(1, pdaldoafaaj_);
+    if (!getBemkenlenhjBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, bemkenlenhj_);
     }
-    if (!getLndigkkjfmlBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, lndigkkjfml_);
-    }
-    if (liggmklanog_ != 0L) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(4, liggmklanog_);
-    }
-    if (hejngmkeobl_ != 0L) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(5, hejngmkeobl_);
-    }
-    if (!getIpfnaapigehBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, ipfnaapigeh_);
-    }
-    if (phiabghihcc_ != 0D) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(7, phiabghihcc_);
-    }
-    if (icmnhajccaa_ != 0D) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(8, icmnhajccaa_);
-    }
-    if (!getMghkaalhkooBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, mghkaalhkoo_);
-    }
-    if (kdllpajbffo_ != 0L) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(10, kdllpajbffo_);
-    }
-    if (gigmimkmdep_ != false) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(11, gigmimkmdep_);
-    }
-    if (jmobphmmoef_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, getJmobphmmoef());
-    }
-    if (idjplgfpimf_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(13, getIdjplgfpimf());
-    }
-    if (bejppidpieg_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(14, getBejppidpieg());
+    if (!getPegfachkbddBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, pegfachkbdd_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -574,43 +224,10 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo other = (POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo) obj;
 
-    if (getPdaldoafaaj()
-        != other.getPdaldoafaaj()) return false;
-    if (!getLndigkkjfml()
-        .equals(other.getLndigkkjfml())) return false;
-    if (getLiggmklanog()
-        != other.getLiggmklanog()) return false;
-    if (getHejngmkeobl()
-        != other.getHejngmkeobl()) return false;
-    if (!getIpfnaapigeh()
-        .equals(other.getIpfnaapigeh())) return false;
-    if (java.lang.Double.doubleToLongBits(getPhiabghihcc())
-        != java.lang.Double.doubleToLongBits(
-            other.getPhiabghihcc())) return false;
-    if (java.lang.Double.doubleToLongBits(getIcmnhajccaa())
-        != java.lang.Double.doubleToLongBits(
-            other.getIcmnhajccaa())) return false;
-    if (!getMghkaalhkoo()
-        .equals(other.getMghkaalhkoo())) return false;
-    if (getKdllpajbffo()
-        != other.getKdllpajbffo()) return false;
-    if (getGigmimkmdep()
-        != other.getGigmimkmdep()) return false;
-    if (hasJmobphmmoef() != other.hasJmobphmmoef()) return false;
-    if (hasJmobphmmoef()) {
-      if (!getJmobphmmoef()
-          .equals(other.getJmobphmmoef())) return false;
-    }
-    if (hasIdjplgfpimf() != other.hasIdjplgfpimf()) return false;
-    if (hasIdjplgfpimf()) {
-      if (!getIdjplgfpimf()
-          .equals(other.getIdjplgfpimf())) return false;
-    }
-    if (hasBejppidpieg() != other.hasBejppidpieg()) return false;
-    if (hasBejppidpieg()) {
-      if (!getBejppidpieg()
-          .equals(other.getBejppidpieg())) return false;
-    }
+    if (!getBemkenlenhj()
+        .equals(other.getBemkenlenhj())) return false;
+    if (!getPegfachkbdd()
+        .equals(other.getPegfachkbdd())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -622,45 +239,10 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + PDALDOAFAAJ_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getPdaldoafaaj());
-    hash = (37 * hash) + LNDIGKKJFML_FIELD_NUMBER;
-    hash = (53 * hash) + getLndigkkjfml().hashCode();
-    hash = (37 * hash) + LIGGMKLANOG_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getLiggmklanog());
-    hash = (37 * hash) + HEJNGMKEOBL_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getHejngmkeobl());
-    hash = (37 * hash) + IPFNAAPIGEH_FIELD_NUMBER;
-    hash = (53 * hash) + getIpfnaapigeh().hashCode();
-    hash = (37 * hash) + PHIABGHIHCC_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getPhiabghihcc()));
-    hash = (37 * hash) + ICMNHAJCCAA_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getIcmnhajccaa()));
-    hash = (37 * hash) + MGHKAALHKOO_FIELD_NUMBER;
-    hash = (53 * hash) + getMghkaalhkoo().hashCode();
-    hash = (37 * hash) + KDLLPAJBFFO_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getKdllpajbffo());
-    hash = (37 * hash) + GIGMIMKMDEP_FIELD_NUMBER;
-    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getGigmimkmdep());
-    if (hasJmobphmmoef()) {
-      hash = (37 * hash) + JMOBPHMMOEF_FIELD_NUMBER;
-      hash = (53 * hash) + getJmobphmmoef().hashCode();
-    }
-    if (hasIdjplgfpimf()) {
-      hash = (37 * hash) + IDJPLGFPIMF_FIELD_NUMBER;
-      hash = (53 * hash) + getIdjplgfpimf().hashCode();
-    }
-    if (hasBejppidpieg()) {
-      hash = (37 * hash) + BEJPPIDPIEG_FIELD_NUMBER;
-      hash = (53 * hash) + getBejppidpieg().hashCode();
-    }
+    hash = (37 * hash) + BEMKENLENHJ_FIELD_NUMBER;
+    hash = (53 * hash) + getBemkenlenhj().hashCode();
+    hash = (37 * hash) + PEGFACHKBDD_FIELD_NUMBER;
+    hash = (53 * hash) + getPegfachkbdd().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -758,7 +340,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: APBADONLEGM
+   * ref: DJLDMHBHCFG
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo}
@@ -798,44 +380,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      pdaldoafaaj_ = 0L;
+      bemkenlenhj_ = "";
 
-      lndigkkjfml_ = "";
+      pegfachkbdd_ = "";
 
-      liggmklanog_ = 0L;
-
-      hejngmkeobl_ = 0L;
-
-      ipfnaapigeh_ = "";
-
-      phiabghihcc_ = 0D;
-
-      icmnhajccaa_ = 0D;
-
-      mghkaalhkoo_ = "";
-
-      kdllpajbffo_ = 0L;
-
-      gigmimkmdep_ = false;
-
-      if (jmobphmmoefBuilder_ == null) {
-        jmobphmmoef_ = null;
-      } else {
-        jmobphmmoef_ = null;
-        jmobphmmoefBuilder_ = null;
-      }
-      if (idjplgfpimfBuilder_ == null) {
-        idjplgfpimf_ = null;
-      } else {
-        idjplgfpimf_ = null;
-        idjplgfpimfBuilder_ = null;
-      }
-      if (bejppidpiegBuilder_ == null) {
-        bejppidpieg_ = null;
-      } else {
-        bejppidpieg_ = null;
-        bejppidpiegBuilder_ = null;
-      }
       return this;
     }
 
@@ -862,31 +410,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo buildPartial() {
       POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo result = new POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo(this);
-      result.pdaldoafaaj_ = pdaldoafaaj_;
-      result.lndigkkjfml_ = lndigkkjfml_;
-      result.liggmklanog_ = liggmklanog_;
-      result.hejngmkeobl_ = hejngmkeobl_;
-      result.ipfnaapigeh_ = ipfnaapigeh_;
-      result.phiabghihcc_ = phiabghihcc_;
-      result.icmnhajccaa_ = icmnhajccaa_;
-      result.mghkaalhkoo_ = mghkaalhkoo_;
-      result.kdllpajbffo_ = kdllpajbffo_;
-      result.gigmimkmdep_ = gigmimkmdep_;
-      if (jmobphmmoefBuilder_ == null) {
-        result.jmobphmmoef_ = jmobphmmoef_;
-      } else {
-        result.jmobphmmoef_ = jmobphmmoefBuilder_.build();
-      }
-      if (idjplgfpimfBuilder_ == null) {
-        result.idjplgfpimf_ = idjplgfpimf_;
-      } else {
-        result.idjplgfpimf_ = idjplgfpimfBuilder_.build();
-      }
-      if (bejppidpiegBuilder_ == null) {
-        result.bejppidpieg_ = bejppidpieg_;
-      } else {
-        result.bejppidpieg_ = bejppidpiegBuilder_.build();
-      }
+      result.bemkenlenhj_ = bemkenlenhj_;
+      result.pegfachkbdd_ = pegfachkbdd_;
       onBuilt();
       return result;
     }
@@ -935,47 +460,13 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo other) {
       if (other == POGOProtos.Rpc.SharedExclusiveTicketTrainerInfo.getDefaultInstance()) return this;
-      if (other.getPdaldoafaaj() != 0L) {
-        setPdaldoafaaj(other.getPdaldoafaaj());
-      }
-      if (!other.getLndigkkjfml().isEmpty()) {
-        lndigkkjfml_ = other.lndigkkjfml_;
+      if (!other.getBemkenlenhj().isEmpty()) {
+        bemkenlenhj_ = other.bemkenlenhj_;
         onChanged();
       }
-      if (other.getLiggmklanog() != 0L) {
-        setLiggmklanog(other.getLiggmklanog());
-      }
-      if (other.getHejngmkeobl() != 0L) {
-        setHejngmkeobl(other.getHejngmkeobl());
-      }
-      if (!other.getIpfnaapigeh().isEmpty()) {
-        ipfnaapigeh_ = other.ipfnaapigeh_;
+      if (!other.getPegfachkbdd().isEmpty()) {
+        pegfachkbdd_ = other.pegfachkbdd_;
         onChanged();
-      }
-      if (other.getPhiabghihcc() != 0D) {
-        setPhiabghihcc(other.getPhiabghihcc());
-      }
-      if (other.getIcmnhajccaa() != 0D) {
-        setIcmnhajccaa(other.getIcmnhajccaa());
-      }
-      if (!other.getMghkaalhkoo().isEmpty()) {
-        mghkaalhkoo_ = other.mghkaalhkoo_;
-        onChanged();
-      }
-      if (other.getKdllpajbffo() != 0L) {
-        setKdllpajbffo(other.getKdllpajbffo());
-      }
-      if (other.getGigmimkmdep() != false) {
-        setGigmimkmdep(other.getGigmimkmdep());
-      }
-      if (other.hasJmobphmmoef()) {
-        mergeJmobphmmoef(other.getJmobphmmoef());
-      }
-      if (other.hasIdjplgfpimf()) {
-        mergeIdjplgfpimf(other.getIdjplgfpimf());
-      }
-      if (other.hasBejppidpieg()) {
-        mergeBejppidpieg(other.getBejppidpieg());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1006,806 +497,156 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private long pdaldoafaaj_ ;
+    private java.lang.Object bemkenlenhj_ = "";
     /**
-     * <code>int64 pdaldoafaaj = 1;</code>
-     * @return The pdaldoafaaj.
+     * <code>string bemkenlenhj = 1;</code>
+     * @return The bemkenlenhj.
      */
-    @java.lang.Override
-    public long getPdaldoafaaj() {
-      return pdaldoafaaj_;
-    }
-    /**
-     * <code>int64 pdaldoafaaj = 1;</code>
-     * @param value The pdaldoafaaj to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPdaldoafaaj(long value) {
-      
-      pdaldoafaaj_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 pdaldoafaaj = 1;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPdaldoafaaj() {
-      
-      pdaldoafaaj_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private java.lang.Object lndigkkjfml_ = "";
-    /**
-     * <code>string lndigkkjfml = 2;</code>
-     * @return The lndigkkjfml.
-     */
-    public java.lang.String getLndigkkjfml() {
-      java.lang.Object ref = lndigkkjfml_;
+    public java.lang.String getBemkenlenhj() {
+      java.lang.Object ref = bemkenlenhj_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        lndigkkjfml_ = s;
+        bemkenlenhj_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string lndigkkjfml = 2;</code>
-     * @return The bytes for lndigkkjfml.
+     * <code>string bemkenlenhj = 1;</code>
+     * @return The bytes for bemkenlenhj.
      */
     public com.google.protobuf.ByteString
-        getLndigkkjfmlBytes() {
-      java.lang.Object ref = lndigkkjfml_;
+        getBemkenlenhjBytes() {
+      java.lang.Object ref = bemkenlenhj_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        lndigkkjfml_ = b;
+        bemkenlenhj_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string lndigkkjfml = 2;</code>
-     * @param value The lndigkkjfml to set.
+     * <code>string bemkenlenhj = 1;</code>
+     * @param value The bemkenlenhj to set.
      * @return This builder for chaining.
      */
-    public Builder setLndigkkjfml(
+    public Builder setBemkenlenhj(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      lndigkkjfml_ = value;
+      bemkenlenhj_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string lndigkkjfml = 2;</code>
+     * <code>string bemkenlenhj = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLndigkkjfml() {
+    public Builder clearBemkenlenhj() {
       
-      lndigkkjfml_ = getDefaultInstance().getLndigkkjfml();
+      bemkenlenhj_ = getDefaultInstance().getBemkenlenhj();
       onChanged();
       return this;
     }
     /**
-     * <code>string lndigkkjfml = 2;</code>
-     * @param value The bytes for lndigkkjfml to set.
+     * <code>string bemkenlenhj = 1;</code>
+     * @param value The bytes for bemkenlenhj to set.
      * @return This builder for chaining.
      */
-    public Builder setLndigkkjfmlBytes(
+    public Builder setBemkenlenhjBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      lndigkkjfml_ = value;
+      bemkenlenhj_ = value;
       onChanged();
       return this;
     }
 
-    private long liggmklanog_ ;
+    private java.lang.Object pegfachkbdd_ = "";
     /**
-     * <code>int64 liggmklanog = 4;</code>
-     * @return The liggmklanog.
+     * <code>string pegfachkbdd = 2;</code>
+     * @return The pegfachkbdd.
      */
-    @java.lang.Override
-    public long getLiggmklanog() {
-      return liggmklanog_;
-    }
-    /**
-     * <code>int64 liggmklanog = 4;</code>
-     * @param value The liggmklanog to set.
-     * @return This builder for chaining.
-     */
-    public Builder setLiggmklanog(long value) {
-      
-      liggmklanog_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 liggmklanog = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearLiggmklanog() {
-      
-      liggmklanog_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private long hejngmkeobl_ ;
-    /**
-     * <code>int64 hejngmkeobl = 5;</code>
-     * @return The hejngmkeobl.
-     */
-    @java.lang.Override
-    public long getHejngmkeobl() {
-      return hejngmkeobl_;
-    }
-    /**
-     * <code>int64 hejngmkeobl = 5;</code>
-     * @param value The hejngmkeobl to set.
-     * @return This builder for chaining.
-     */
-    public Builder setHejngmkeobl(long value) {
-      
-      hejngmkeobl_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 hejngmkeobl = 5;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearHejngmkeobl() {
-      
-      hejngmkeobl_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private java.lang.Object ipfnaapigeh_ = "";
-    /**
-     * <code>string ipfnaapigeh = 6;</code>
-     * @return The ipfnaapigeh.
-     */
-    public java.lang.String getIpfnaapigeh() {
-      java.lang.Object ref = ipfnaapigeh_;
+    public java.lang.String getPegfachkbdd() {
+      java.lang.Object ref = pegfachkbdd_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        ipfnaapigeh_ = s;
+        pegfachkbdd_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string ipfnaapigeh = 6;</code>
-     * @return The bytes for ipfnaapigeh.
+     * <code>string pegfachkbdd = 2;</code>
+     * @return The bytes for pegfachkbdd.
      */
     public com.google.protobuf.ByteString
-        getIpfnaapigehBytes() {
-      java.lang.Object ref = ipfnaapigeh_;
+        getPegfachkbddBytes() {
+      java.lang.Object ref = pegfachkbdd_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        ipfnaapigeh_ = b;
+        pegfachkbdd_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string ipfnaapigeh = 6;</code>
-     * @param value The ipfnaapigeh to set.
+     * <code>string pegfachkbdd = 2;</code>
+     * @param value The pegfachkbdd to set.
      * @return This builder for chaining.
      */
-    public Builder setIpfnaapigeh(
+    public Builder setPegfachkbdd(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      ipfnaapigeh_ = value;
+      pegfachkbdd_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string ipfnaapigeh = 6;</code>
+     * <code>string pegfachkbdd = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIpfnaapigeh() {
+    public Builder clearPegfachkbdd() {
       
-      ipfnaapigeh_ = getDefaultInstance().getIpfnaapigeh();
+      pegfachkbdd_ = getDefaultInstance().getPegfachkbdd();
       onChanged();
       return this;
     }
     /**
-     * <code>string ipfnaapigeh = 6;</code>
-     * @param value The bytes for ipfnaapigeh to set.
+     * <code>string pegfachkbdd = 2;</code>
+     * @param value The bytes for pegfachkbdd to set.
      * @return This builder for chaining.
      */
-    public Builder setIpfnaapigehBytes(
+    public Builder setPegfachkbddBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      ipfnaapigeh_ = value;
+      pegfachkbdd_ = value;
       onChanged();
       return this;
-    }
-
-    private double phiabghihcc_ ;
-    /**
-     * <code>double phiabghihcc = 7;</code>
-     * @return The phiabghihcc.
-     */
-    @java.lang.Override
-    public double getPhiabghihcc() {
-      return phiabghihcc_;
-    }
-    /**
-     * <code>double phiabghihcc = 7;</code>
-     * @param value The phiabghihcc to set.
-     * @return This builder for chaining.
-     */
-    public Builder setPhiabghihcc(double value) {
-      
-      phiabghihcc_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>double phiabghihcc = 7;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearPhiabghihcc() {
-      
-      phiabghihcc_ = 0D;
-      onChanged();
-      return this;
-    }
-
-    private double icmnhajccaa_ ;
-    /**
-     * <code>double icmnhajccaa = 8;</code>
-     * @return The icmnhajccaa.
-     */
-    @java.lang.Override
-    public double getIcmnhajccaa() {
-      return icmnhajccaa_;
-    }
-    /**
-     * <code>double icmnhajccaa = 8;</code>
-     * @param value The icmnhajccaa to set.
-     * @return This builder for chaining.
-     */
-    public Builder setIcmnhajccaa(double value) {
-      
-      icmnhajccaa_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>double icmnhajccaa = 8;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearIcmnhajccaa() {
-      
-      icmnhajccaa_ = 0D;
-      onChanged();
-      return this;
-    }
-
-    private java.lang.Object mghkaalhkoo_ = "";
-    /**
-     * <code>string mghkaalhkoo = 9;</code>
-     * @return The mghkaalhkoo.
-     */
-    public java.lang.String getMghkaalhkoo() {
-      java.lang.Object ref = mghkaalhkoo_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        mghkaalhkoo_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string mghkaalhkoo = 9;</code>
-     * @return The bytes for mghkaalhkoo.
-     */
-    public com.google.protobuf.ByteString
-        getMghkaalhkooBytes() {
-      java.lang.Object ref = mghkaalhkoo_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        mghkaalhkoo_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string mghkaalhkoo = 9;</code>
-     * @param value The mghkaalhkoo to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMghkaalhkoo(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      mghkaalhkoo_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string mghkaalhkoo = 9;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearMghkaalhkoo() {
-      
-      mghkaalhkoo_ = getDefaultInstance().getMghkaalhkoo();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string mghkaalhkoo = 9;</code>
-     * @param value The bytes for mghkaalhkoo to set.
-     * @return This builder for chaining.
-     */
-    public Builder setMghkaalhkooBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      mghkaalhkoo_ = value;
-      onChanged();
-      return this;
-    }
-
-    private long kdllpajbffo_ ;
-    /**
-     * <code>int64 kdllpajbffo = 10;</code>
-     * @return The kdllpajbffo.
-     */
-    @java.lang.Override
-    public long getKdllpajbffo() {
-      return kdllpajbffo_;
-    }
-    /**
-     * <code>int64 kdllpajbffo = 10;</code>
-     * @param value The kdllpajbffo to set.
-     * @return This builder for chaining.
-     */
-    public Builder setKdllpajbffo(long value) {
-      
-      kdllpajbffo_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 kdllpajbffo = 10;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearKdllpajbffo() {
-      
-      kdllpajbffo_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private boolean gigmimkmdep_ ;
-    /**
-     * <code>bool gigmimkmdep = 11;</code>
-     * @return The gigmimkmdep.
-     */
-    @java.lang.Override
-    public boolean getGigmimkmdep() {
-      return gigmimkmdep_;
-    }
-    /**
-     * <code>bool gigmimkmdep = 11;</code>
-     * @param value The gigmimkmdep to set.
-     * @return This builder for chaining.
-     */
-    public Builder setGigmimkmdep(boolean value) {
-      
-      gigmimkmdep_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>bool gigmimkmdep = 11;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearGigmimkmdep() {
-      
-      gigmimkmdep_ = false;
-      onChanged();
-      return this;
-    }
-
-    private POGOProtos.Rpc.PokemonProto jmobphmmoef_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> jmobphmmoefBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-     * @return Whether the jmobphmmoef field is set.
-     */
-    public boolean hasJmobphmmoef() {
-      return jmobphmmoefBuilder_ != null || jmobphmmoef_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-     * @return The jmobphmmoef.
-     */
-    public POGOProtos.Rpc.PokemonProto getJmobphmmoef() {
-      if (jmobphmmoefBuilder_ == null) {
-        return jmobphmmoef_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : jmobphmmoef_;
-      } else {
-        return jmobphmmoefBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-     */
-    public Builder setJmobphmmoef(POGOProtos.Rpc.PokemonProto value) {
-      if (jmobphmmoefBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        jmobphmmoef_ = value;
-        onChanged();
-      } else {
-        jmobphmmoefBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-     */
-    public Builder setJmobphmmoef(
-        POGOProtos.Rpc.PokemonProto.Builder builderForValue) {
-      if (jmobphmmoefBuilder_ == null) {
-        jmobphmmoef_ = builderForValue.build();
-        onChanged();
-      } else {
-        jmobphmmoefBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-     */
-    public Builder mergeJmobphmmoef(POGOProtos.Rpc.PokemonProto value) {
-      if (jmobphmmoefBuilder_ == null) {
-        if (jmobphmmoef_ != null) {
-          jmobphmmoef_ =
-            POGOProtos.Rpc.PokemonProto.newBuilder(jmobphmmoef_).mergeFrom(value).buildPartial();
-        } else {
-          jmobphmmoef_ = value;
-        }
-        onChanged();
-      } else {
-        jmobphmmoefBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-     */
-    public Builder clearJmobphmmoef() {
-      if (jmobphmmoefBuilder_ == null) {
-        jmobphmmoef_ = null;
-        onChanged();
-      } else {
-        jmobphmmoef_ = null;
-        jmobphmmoefBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-     */
-    public POGOProtos.Rpc.PokemonProto.Builder getJmobphmmoefBuilder() {
-      
-      onChanged();
-      return getJmobphmmoefFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-     */
-    public POGOProtos.Rpc.PokemonProtoOrBuilder getJmobphmmoefOrBuilder() {
-      if (jmobphmmoefBuilder_ != null) {
-        return jmobphmmoefBuilder_.getMessageOrBuilder();
-      } else {
-        return jmobphmmoef_ == null ?
-            POGOProtos.Rpc.PokemonProto.getDefaultInstance() : jmobphmmoef_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.PokemonProto jmobphmmoef = 12;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> 
-        getJmobphmmoefFieldBuilder() {
-      if (jmobphmmoefBuilder_ == null) {
-        jmobphmmoefBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder>(
-                getJmobphmmoef(),
-                getParentForChildren(),
-                isClean());
-        jmobphmmoef_ = null;
-      }
-      return jmobphmmoefBuilder_;
-    }
-
-    private POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DJLDMHBHCFG, POGOProtos.Rpc.DJLDMHBHCFG.Builder, POGOProtos.Rpc.DJLDMHBHCFGOrBuilder> idjplgfpimfBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-     * @return Whether the idjplgfpimf field is set.
-     */
-    public boolean hasIdjplgfpimf() {
-      return idjplgfpimfBuilder_ != null || idjplgfpimf_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-     * @return The idjplgfpimf.
-     */
-    public POGOProtos.Rpc.DJLDMHBHCFG getIdjplgfpimf() {
-      if (idjplgfpimfBuilder_ == null) {
-        return idjplgfpimf_ == null ? POGOProtos.Rpc.DJLDMHBHCFG.getDefaultInstance() : idjplgfpimf_;
-      } else {
-        return idjplgfpimfBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-     */
-    public Builder setIdjplgfpimf(POGOProtos.Rpc.DJLDMHBHCFG value) {
-      if (idjplgfpimfBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        idjplgfpimf_ = value;
-        onChanged();
-      } else {
-        idjplgfpimfBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-     */
-    public Builder setIdjplgfpimf(
-        POGOProtos.Rpc.DJLDMHBHCFG.Builder builderForValue) {
-      if (idjplgfpimfBuilder_ == null) {
-        idjplgfpimf_ = builderForValue.build();
-        onChanged();
-      } else {
-        idjplgfpimfBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-     */
-    public Builder mergeIdjplgfpimf(POGOProtos.Rpc.DJLDMHBHCFG value) {
-      if (idjplgfpimfBuilder_ == null) {
-        if (idjplgfpimf_ != null) {
-          idjplgfpimf_ =
-            POGOProtos.Rpc.DJLDMHBHCFG.newBuilder(idjplgfpimf_).mergeFrom(value).buildPartial();
-        } else {
-          idjplgfpimf_ = value;
-        }
-        onChanged();
-      } else {
-        idjplgfpimfBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-     */
-    public Builder clearIdjplgfpimf() {
-      if (idjplgfpimfBuilder_ == null) {
-        idjplgfpimf_ = null;
-        onChanged();
-      } else {
-        idjplgfpimf_ = null;
-        idjplgfpimfBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-     */
-    public POGOProtos.Rpc.DJLDMHBHCFG.Builder getIdjplgfpimfBuilder() {
-      
-      onChanged();
-      return getIdjplgfpimfFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-     */
-    public POGOProtos.Rpc.DJLDMHBHCFGOrBuilder getIdjplgfpimfOrBuilder() {
-      if (idjplgfpimfBuilder_ != null) {
-        return idjplgfpimfBuilder_.getMessageOrBuilder();
-      } else {
-        return idjplgfpimf_ == null ?
-            POGOProtos.Rpc.DJLDMHBHCFG.getDefaultInstance() : idjplgfpimf_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG idjplgfpimf = 13;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DJLDMHBHCFG, POGOProtos.Rpc.DJLDMHBHCFG.Builder, POGOProtos.Rpc.DJLDMHBHCFGOrBuilder> 
-        getIdjplgfpimfFieldBuilder() {
-      if (idjplgfpimfBuilder_ == null) {
-        idjplgfpimfBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.DJLDMHBHCFG, POGOProtos.Rpc.DJLDMHBHCFG.Builder, POGOProtos.Rpc.DJLDMHBHCFGOrBuilder>(
-                getIdjplgfpimf(),
-                getParentForChildren(),
-                isClean());
-        idjplgfpimf_ = null;
-      }
-      return idjplgfpimfBuilder_;
-    }
-
-    private POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg_;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DJLDMHBHCFG, POGOProtos.Rpc.DJLDMHBHCFG.Builder, POGOProtos.Rpc.DJLDMHBHCFGOrBuilder> bejppidpiegBuilder_;
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-     * @return Whether the bejppidpieg field is set.
-     */
-    public boolean hasBejppidpieg() {
-      return bejppidpiegBuilder_ != null || bejppidpieg_ != null;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-     * @return The bejppidpieg.
-     */
-    public POGOProtos.Rpc.DJLDMHBHCFG getBejppidpieg() {
-      if (bejppidpiegBuilder_ == null) {
-        return bejppidpieg_ == null ? POGOProtos.Rpc.DJLDMHBHCFG.getDefaultInstance() : bejppidpieg_;
-      } else {
-        return bejppidpiegBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-     */
-    public Builder setBejppidpieg(POGOProtos.Rpc.DJLDMHBHCFG value) {
-      if (bejppidpiegBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        bejppidpieg_ = value;
-        onChanged();
-      } else {
-        bejppidpiegBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-     */
-    public Builder setBejppidpieg(
-        POGOProtos.Rpc.DJLDMHBHCFG.Builder builderForValue) {
-      if (bejppidpiegBuilder_ == null) {
-        bejppidpieg_ = builderForValue.build();
-        onChanged();
-      } else {
-        bejppidpiegBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-     */
-    public Builder mergeBejppidpieg(POGOProtos.Rpc.DJLDMHBHCFG value) {
-      if (bejppidpiegBuilder_ == null) {
-        if (bejppidpieg_ != null) {
-          bejppidpieg_ =
-            POGOProtos.Rpc.DJLDMHBHCFG.newBuilder(bejppidpieg_).mergeFrom(value).buildPartial();
-        } else {
-          bejppidpieg_ = value;
-        }
-        onChanged();
-      } else {
-        bejppidpiegBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-     */
-    public Builder clearBejppidpieg() {
-      if (bejppidpiegBuilder_ == null) {
-        bejppidpieg_ = null;
-        onChanged();
-      } else {
-        bejppidpieg_ = null;
-        bejppidpiegBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-     */
-    public POGOProtos.Rpc.DJLDMHBHCFG.Builder getBejppidpiegBuilder() {
-      
-      onChanged();
-      return getBejppidpiegFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-     */
-    public POGOProtos.Rpc.DJLDMHBHCFGOrBuilder getBejppidpiegOrBuilder() {
-      if (bejppidpiegBuilder_ != null) {
-        return bejppidpiegBuilder_.getMessageOrBuilder();
-      } else {
-        return bejppidpieg_ == null ?
-            POGOProtos.Rpc.DJLDMHBHCFG.getDefaultInstance() : bejppidpieg_;
-      }
-    }
-    /**
-     * <code>.POGOProtos.Rpc.DJLDMHBHCFG bejppidpieg = 14;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.DJLDMHBHCFG, POGOProtos.Rpc.DJLDMHBHCFG.Builder, POGOProtos.Rpc.DJLDMHBHCFGOrBuilder> 
-        getBejppidpiegFieldBuilder() {
-      if (bejppidpiegBuilder_ == null) {
-        bejppidpiegBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.DJLDMHBHCFG, POGOProtos.Rpc.DJLDMHBHCFG.Builder, POGOProtos.Rpc.DJLDMHBHCFGOrBuilder>(
-                getBejppidpieg(),
-                getParentForChildren(),
-                isClean());
-        bejppidpieg_ = null;
-      }
-      return bejppidpiegBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

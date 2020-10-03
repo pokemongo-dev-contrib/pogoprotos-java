@@ -8,26 +8,26 @@ public interface AppliedItemsProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
    */
   java.util.List<POGOProtos.Rpc.AppliedItemProto> 
-      getEkpohjfklalList();
+      getItemList();
   /**
-   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
    */
-  POGOProtos.Rpc.AppliedItemProto getEkpohjfklal(int index);
+  POGOProtos.Rpc.AppliedItemProto getItem(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
    */
-  int getEkpohjfklalCount();
+  int getItemCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.AppliedItemProtoOrBuilder> 
-      getEkpohjfklalOrBuilderList();
+      getItemOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.AppliedItemProto ekpohjfklal = 4;</code>
+   * <code>repeated .POGOProtos.Rpc.AppliedItemProto item = 4;</code>
    */
-  POGOProtos.Rpc.AppliedItemProtoOrBuilder getEkpohjfklalOrBuilder(
+  POGOProtos.Rpc.AppliedItemProtoOrBuilder getItemOrBuilder(
       int index);
 }

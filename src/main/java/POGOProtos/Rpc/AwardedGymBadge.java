@@ -20,11 +20,11 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private AwardedGymBadge() {
-    lndigkkjfml_ = "";
-    pkgelpgpohg_ = 0;
-    fgmkglfgljh_ = "";
-    ipfnaapigeh_ = "";
-    lcdegoaaeao_ = "";
+    fortId_ = "";
+    gymBadgeType_ = 0;
+    name_ = "";
+    imageUrl_ = "";
+    description_ = "";
   }
 
   @java.lang.Override
@@ -60,95 +60,95 @@ private static final long serialVersionUID = 0L;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            lndigkkjfml_ = s;
+            fortId_ = s;
             break;
           }
           case 16: {
             int rawValue = input.readEnum();
 
-            pkgelpgpohg_ = rawValue;
+            gymBadgeType_ = rawValue;
             break;
           }
           case 24: {
 
-            hobhbkgonlk_ = input.readUInt32();
+            score_ = input.readUInt32();
             break;
           }
           case 34: {
             POGOProtos.Rpc.GymBadgeStats.Builder subBuilder = null;
-            if (hibekaijkho_ != null) {
-              subBuilder = hibekaijkho_.toBuilder();
+            if (gymBadgeStats_ != null) {
+              subBuilder = gymBadgeStats_.toBuilder();
             }
-            hibekaijkho_ = input.readMessage(POGOProtos.Rpc.GymBadgeStats.parser(), extensionRegistry);
+            gymBadgeStats_ = input.readMessage(POGOProtos.Rpc.GymBadgeStats.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(hibekaijkho_);
-              hibekaijkho_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(gymBadgeStats_);
+              gymBadgeStats_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 40: {
 
-            ggcajdfaibl_ = input.readUInt64();
+            lastUpdateTimestampMs_ = input.readUInt64();
             break;
           }
           case 88: {
 
-            bdmpfipljfk_ = input.readUInt64();
+            lastCheckTimestampMs_ = input.readUInt64();
             break;
           }
           case 96: {
 
-            bgechkcgoah_ = input.readUInt32();
+            earnedPoints_ = input.readUInt32();
             break;
           }
           case 109: {
 
-            gflfaledbio_ = input.readFloat();
+            progress_ = input.readFloat();
             break;
           }
           case 112: {
 
-            linmfjlkkcm_ = input.readBool();
+            levelUp_ = input.readBool();
             break;
           }
           case 122: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            fgmkglfgljh_ = s;
+            name_ = s;
             break;
           }
           case 130: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            ipfnaapigeh_ = s;
+            imageUrl_ = s;
             break;
           }
           case 138: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            lcdegoaaeao_ = s;
+            description_ = s;
             break;
           }
           case 145: {
 
-            phiabghihcc_ = input.readDouble();
+            latitude_ = input.readDouble();
             break;
           }
           case 153: {
 
-            icmnhajccaa_ = input.readDouble();
+            longitude_ = input.readDouble();
             break;
           }
           case 162: {
             POGOProtos.Rpc.PlayerRaidInfoProto.Builder subBuilder = null;
-            if (bilabhihdjn_ != null) {
-              subBuilder = bilabhihdjn_.toBuilder();
+            if (raids_ != null) {
+              subBuilder = raids_.toBuilder();
             }
-            bilabhihdjn_ = input.readMessage(POGOProtos.Rpc.PlayerRaidInfoProto.parser(), extensionRegistry);
+            raids_ = input.readMessage(POGOProtos.Rpc.PlayerRaidInfoProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(bilabhihdjn_);
-              bilabhihdjn_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(raids_);
+              raids_ = subBuilder.buildPartial();
             }
 
             break;
@@ -185,315 +185,315 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.AwardedGymBadge.class, POGOProtos.Rpc.AwardedGymBadge.Builder.class);
   }
 
-  public static final int LNDIGKKJFML_FIELD_NUMBER = 1;
-  private volatile java.lang.Object lndigkkjfml_;
+  public static final int FORT_ID_FIELD_NUMBER = 1;
+  private volatile java.lang.Object fortId_;
   /**
-   * <code>string lndigkkjfml = 1;</code>
-   * @return The lndigkkjfml.
+   * <code>string fort_id = 1;</code>
+   * @return The fortId.
    */
   @java.lang.Override
-  public java.lang.String getLndigkkjfml() {
-    java.lang.Object ref = lndigkkjfml_;
+  public java.lang.String getFortId() {
+    java.lang.Object ref = fortId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      lndigkkjfml_ = s;
+      fortId_ = s;
       return s;
     }
   }
   /**
-   * <code>string lndigkkjfml = 1;</code>
-   * @return The bytes for lndigkkjfml.
+   * <code>string fort_id = 1;</code>
+   * @return The bytes for fortId.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getLndigkkjfmlBytes() {
-    java.lang.Object ref = lndigkkjfml_;
+      getFortIdBytes() {
+    java.lang.Object ref = fortId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      lndigkkjfml_ = b;
+      fortId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int PKGELPGPOHG_FIELD_NUMBER = 2;
-  private int pkgelpgpohg_;
+  public static final int GYM_BADGE_TYPE_FIELD_NUMBER = 2;
+  private int gymBadgeType_;
   /**
-   * <code>.POGOProtos.Rpc.GymBadgeType pkgelpgpohg = 2;</code>
-   * @return The enum numeric value on the wire for pkgelpgpohg.
+   * <code>.POGOProtos.Rpc.GymBadgeType gym_badge_type = 2;</code>
+   * @return The enum numeric value on the wire for gymBadgeType.
    */
-  @java.lang.Override public int getPkgelpgpohgValue() {
-    return pkgelpgpohg_;
+  @java.lang.Override public int getGymBadgeTypeValue() {
+    return gymBadgeType_;
   }
   /**
-   * <code>.POGOProtos.Rpc.GymBadgeType pkgelpgpohg = 2;</code>
-   * @return The pkgelpgpohg.
+   * <code>.POGOProtos.Rpc.GymBadgeType gym_badge_type = 2;</code>
+   * @return The gymBadgeType.
    */
-  @java.lang.Override public POGOProtos.Rpc.GymBadgeType getPkgelpgpohg() {
+  @java.lang.Override public POGOProtos.Rpc.GymBadgeType getGymBadgeType() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.GymBadgeType result = POGOProtos.Rpc.GymBadgeType.valueOf(pkgelpgpohg_);
+    POGOProtos.Rpc.GymBadgeType result = POGOProtos.Rpc.GymBadgeType.valueOf(gymBadgeType_);
     return result == null ? POGOProtos.Rpc.GymBadgeType.UNRECOGNIZED : result;
   }
 
-  public static final int HOBHBKGONLK_FIELD_NUMBER = 3;
-  private int hobhbkgonlk_;
+  public static final int SCORE_FIELD_NUMBER = 3;
+  private int score_;
   /**
-   * <code>uint32 hobhbkgonlk = 3;</code>
-   * @return The hobhbkgonlk.
+   * <code>uint32 score = 3;</code>
+   * @return The score.
    */
   @java.lang.Override
-  public int getHobhbkgonlk() {
-    return hobhbkgonlk_;
+  public int getScore() {
+    return score_;
   }
 
-  public static final int HIBEKAIJKHO_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.GymBadgeStats hibekaijkho_;
+  public static final int GYM_BADGE_STATS_FIELD_NUMBER = 4;
+  private POGOProtos.Rpc.GymBadgeStats gymBadgeStats_;
   /**
-   * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
-   * @return Whether the hibekaijkho field is set.
+   * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
+   * @return Whether the gymBadgeStats field is set.
    */
   @java.lang.Override
-  public boolean hasHibekaijkho() {
-    return hibekaijkho_ != null;
+  public boolean hasGymBadgeStats() {
+    return gymBadgeStats_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
-   * @return The hibekaijkho.
+   * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
+   * @return The gymBadgeStats.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GymBadgeStats getHibekaijkho() {
-    return hibekaijkho_ == null ? POGOProtos.Rpc.GymBadgeStats.getDefaultInstance() : hibekaijkho_;
+  public POGOProtos.Rpc.GymBadgeStats getGymBadgeStats() {
+    return gymBadgeStats_ == null ? POGOProtos.Rpc.GymBadgeStats.getDefaultInstance() : gymBadgeStats_;
   }
   /**
-   * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
+   * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GymBadgeStatsOrBuilder getHibekaijkhoOrBuilder() {
-    return getHibekaijkho();
-  }
-
-  public static final int GGCAJDFAIBL_FIELD_NUMBER = 5;
-  private long ggcajdfaibl_;
-  /**
-   * <code>uint64 ggcajdfaibl = 5;</code>
-   * @return The ggcajdfaibl.
-   */
-  @java.lang.Override
-  public long getGgcajdfaibl() {
-    return ggcajdfaibl_;
+  public POGOProtos.Rpc.GymBadgeStatsOrBuilder getGymBadgeStatsOrBuilder() {
+    return getGymBadgeStats();
   }
 
-  public static final int BDMPFIPLJFK_FIELD_NUMBER = 11;
-  private long bdmpfipljfk_;
+  public static final int LAST_UPDATE_TIMESTAMP_MS_FIELD_NUMBER = 5;
+  private long lastUpdateTimestampMs_;
   /**
-   * <code>uint64 bdmpfipljfk = 11;</code>
-   * @return The bdmpfipljfk.
+   * <code>uint64 last_update_timestamp_ms = 5;</code>
+   * @return The lastUpdateTimestampMs.
    */
   @java.lang.Override
-  public long getBdmpfipljfk() {
-    return bdmpfipljfk_;
+  public long getLastUpdateTimestampMs() {
+    return lastUpdateTimestampMs_;
   }
 
-  public static final int BGECHKCGOAH_FIELD_NUMBER = 12;
-  private int bgechkcgoah_;
+  public static final int LAST_CHECK_TIMESTAMP_MS_FIELD_NUMBER = 11;
+  private long lastCheckTimestampMs_;
   /**
-   * <code>uint32 bgechkcgoah = 12;</code>
-   * @return The bgechkcgoah.
+   * <code>uint64 last_check_timestamp_ms = 11;</code>
+   * @return The lastCheckTimestampMs.
    */
   @java.lang.Override
-  public int getBgechkcgoah() {
-    return bgechkcgoah_;
+  public long getLastCheckTimestampMs() {
+    return lastCheckTimestampMs_;
   }
 
-  public static final int GFLFALEDBIO_FIELD_NUMBER = 13;
-  private float gflfaledbio_;
+  public static final int EARNED_POINTS_FIELD_NUMBER = 12;
+  private int earnedPoints_;
   /**
-   * <code>float gflfaledbio = 13;</code>
-   * @return The gflfaledbio.
+   * <code>uint32 earned_points = 12;</code>
+   * @return The earnedPoints.
    */
   @java.lang.Override
-  public float getGflfaledbio() {
-    return gflfaledbio_;
+  public int getEarnedPoints() {
+    return earnedPoints_;
   }
 
-  public static final int LINMFJLKKCM_FIELD_NUMBER = 14;
-  private boolean linmfjlkkcm_;
+  public static final int PROGRESS_FIELD_NUMBER = 13;
+  private float progress_;
   /**
-   * <code>bool linmfjlkkcm = 14;</code>
-   * @return The linmfjlkkcm.
+   * <code>float progress = 13;</code>
+   * @return The progress.
    */
   @java.lang.Override
-  public boolean getLinmfjlkkcm() {
-    return linmfjlkkcm_;
+  public float getProgress() {
+    return progress_;
   }
 
-  public static final int FGMKGLFGLJH_FIELD_NUMBER = 15;
-  private volatile java.lang.Object fgmkglfgljh_;
+  public static final int LEVEL_UP_FIELD_NUMBER = 14;
+  private boolean levelUp_;
   /**
-   * <code>string fgmkglfgljh = 15;</code>
-   * @return The fgmkglfgljh.
+   * <code>bool level_up = 14;</code>
+   * @return The levelUp.
    */
   @java.lang.Override
-  public java.lang.String getFgmkglfgljh() {
-    java.lang.Object ref = fgmkglfgljh_;
+  public boolean getLevelUp() {
+    return levelUp_;
+  }
+
+  public static final int NAME_FIELD_NUMBER = 15;
+  private volatile java.lang.Object name_;
+  /**
+   * <code>string name = 15;</code>
+   * @return The name.
+   */
+  @java.lang.Override
+  public java.lang.String getName() {
+    java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      fgmkglfgljh_ = s;
+      name_ = s;
       return s;
     }
   }
   /**
-   * <code>string fgmkglfgljh = 15;</code>
-   * @return The bytes for fgmkglfgljh.
+   * <code>string name = 15;</code>
+   * @return The bytes for name.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getFgmkglfgljhBytes() {
-    java.lang.Object ref = fgmkglfgljh_;
+      getNameBytes() {
+    java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      fgmkglfgljh_ = b;
+      name_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int IPFNAAPIGEH_FIELD_NUMBER = 16;
-  private volatile java.lang.Object ipfnaapigeh_;
+  public static final int IMAGE_URL_FIELD_NUMBER = 16;
+  private volatile java.lang.Object imageUrl_;
   /**
-   * <code>string ipfnaapigeh = 16;</code>
-   * @return The ipfnaapigeh.
+   * <code>string image_url = 16;</code>
+   * @return The imageUrl.
    */
   @java.lang.Override
-  public java.lang.String getIpfnaapigeh() {
-    java.lang.Object ref = ipfnaapigeh_;
+  public java.lang.String getImageUrl() {
+    java.lang.Object ref = imageUrl_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      ipfnaapigeh_ = s;
+      imageUrl_ = s;
       return s;
     }
   }
   /**
-   * <code>string ipfnaapigeh = 16;</code>
-   * @return The bytes for ipfnaapigeh.
+   * <code>string image_url = 16;</code>
+   * @return The bytes for imageUrl.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getIpfnaapigehBytes() {
-    java.lang.Object ref = ipfnaapigeh_;
+      getImageUrlBytes() {
+    java.lang.Object ref = imageUrl_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      ipfnaapigeh_ = b;
+      imageUrl_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int LCDEGOAAEAO_FIELD_NUMBER = 17;
-  private volatile java.lang.Object lcdegoaaeao_;
+  public static final int DESCRIPTION_FIELD_NUMBER = 17;
+  private volatile java.lang.Object description_;
   /**
-   * <code>string lcdegoaaeao = 17;</code>
-   * @return The lcdegoaaeao.
+   * <code>string description = 17;</code>
+   * @return The description.
    */
   @java.lang.Override
-  public java.lang.String getLcdegoaaeao() {
-    java.lang.Object ref = lcdegoaaeao_;
+  public java.lang.String getDescription() {
+    java.lang.Object ref = description_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      lcdegoaaeao_ = s;
+      description_ = s;
       return s;
     }
   }
   /**
-   * <code>string lcdegoaaeao = 17;</code>
-   * @return The bytes for lcdegoaaeao.
+   * <code>string description = 17;</code>
+   * @return The bytes for description.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getLcdegoaaeaoBytes() {
-    java.lang.Object ref = lcdegoaaeao_;
+      getDescriptionBytes() {
+    java.lang.Object ref = description_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      lcdegoaaeao_ = b;
+      description_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int PHIABGHIHCC_FIELD_NUMBER = 18;
-  private double phiabghihcc_;
+  public static final int LATITUDE_FIELD_NUMBER = 18;
+  private double latitude_;
   /**
-   * <code>double phiabghihcc = 18;</code>
-   * @return The phiabghihcc.
+   * <code>double latitude = 18;</code>
+   * @return The latitude.
    */
   @java.lang.Override
-  public double getPhiabghihcc() {
-    return phiabghihcc_;
+  public double getLatitude() {
+    return latitude_;
   }
 
-  public static final int ICMNHAJCCAA_FIELD_NUMBER = 19;
-  private double icmnhajccaa_;
+  public static final int LONGITUDE_FIELD_NUMBER = 19;
+  private double longitude_;
   /**
-   * <code>double icmnhajccaa = 19;</code>
-   * @return The icmnhajccaa.
+   * <code>double longitude = 19;</code>
+   * @return The longitude.
    */
   @java.lang.Override
-  public double getIcmnhajccaa() {
-    return icmnhajccaa_;
+  public double getLongitude() {
+    return longitude_;
   }
 
-  public static final int BILABHIHDJN_FIELD_NUMBER = 20;
-  private POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn_;
+  public static final int RAIDS_FIELD_NUMBER = 20;
+  private POGOProtos.Rpc.PlayerRaidInfoProto raids_;
   /**
-   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
-   * @return Whether the bilabhihdjn field is set.
+   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
+   * @return Whether the raids field is set.
    */
   @java.lang.Override
-  public boolean hasBilabhihdjn() {
-    return bilabhihdjn_ != null;
+  public boolean hasRaids() {
+    return raids_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
-   * @return The bilabhihdjn.
+   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
+   * @return The raids.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlayerRaidInfoProto getBilabhihdjn() {
-    return bilabhihdjn_ == null ? POGOProtos.Rpc.PlayerRaidInfoProto.getDefaultInstance() : bilabhihdjn_;
+  public POGOProtos.Rpc.PlayerRaidInfoProto getRaids() {
+    return raids_ == null ? POGOProtos.Rpc.PlayerRaidInfoProto.getDefaultInstance() : raids_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
+   * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PlayerRaidInfoProtoOrBuilder getBilabhihdjnOrBuilder() {
-    return getBilabhihdjn();
+  public POGOProtos.Rpc.PlayerRaidInfoProtoOrBuilder getRaidsOrBuilder() {
+    return getRaids();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -510,50 +510,50 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getLndigkkjfmlBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, lndigkkjfml_);
+    if (!getFortIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, fortId_);
     }
-    if (pkgelpgpohg_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_TYPE_GYM_BADGE_UNSET.getNumber()) {
-      output.writeEnum(2, pkgelpgpohg_);
+    if (gymBadgeType_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_TYPE_GYM_BADGE_UNSET.getNumber()) {
+      output.writeEnum(2, gymBadgeType_);
     }
-    if (hobhbkgonlk_ != 0) {
-      output.writeUInt32(3, hobhbkgonlk_);
+    if (score_ != 0) {
+      output.writeUInt32(3, score_);
     }
-    if (hibekaijkho_ != null) {
-      output.writeMessage(4, getHibekaijkho());
+    if (gymBadgeStats_ != null) {
+      output.writeMessage(4, getGymBadgeStats());
     }
-    if (ggcajdfaibl_ != 0L) {
-      output.writeUInt64(5, ggcajdfaibl_);
+    if (lastUpdateTimestampMs_ != 0L) {
+      output.writeUInt64(5, lastUpdateTimestampMs_);
     }
-    if (bdmpfipljfk_ != 0L) {
-      output.writeUInt64(11, bdmpfipljfk_);
+    if (lastCheckTimestampMs_ != 0L) {
+      output.writeUInt64(11, lastCheckTimestampMs_);
     }
-    if (bgechkcgoah_ != 0) {
-      output.writeUInt32(12, bgechkcgoah_);
+    if (earnedPoints_ != 0) {
+      output.writeUInt32(12, earnedPoints_);
     }
-    if (gflfaledbio_ != 0F) {
-      output.writeFloat(13, gflfaledbio_);
+    if (progress_ != 0F) {
+      output.writeFloat(13, progress_);
     }
-    if (linmfjlkkcm_ != false) {
-      output.writeBool(14, linmfjlkkcm_);
+    if (levelUp_ != false) {
+      output.writeBool(14, levelUp_);
     }
-    if (!getFgmkglfgljhBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 15, fgmkglfgljh_);
+    if (!getNameBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 15, name_);
     }
-    if (!getIpfnaapigehBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 16, ipfnaapigeh_);
+    if (!getImageUrlBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 16, imageUrl_);
     }
-    if (!getLcdegoaaeaoBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 17, lcdegoaaeao_);
+    if (!getDescriptionBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 17, description_);
     }
-    if (phiabghihcc_ != 0D) {
-      output.writeDouble(18, phiabghihcc_);
+    if (latitude_ != 0D) {
+      output.writeDouble(18, latitude_);
     }
-    if (icmnhajccaa_ != 0D) {
-      output.writeDouble(19, icmnhajccaa_);
+    if (longitude_ != 0D) {
+      output.writeDouble(19, longitude_);
     }
-    if (bilabhihdjn_ != null) {
-      output.writeMessage(20, getBilabhihdjn());
+    if (raids_ != null) {
+      output.writeMessage(20, getRaids());
     }
     unknownFields.writeTo(output);
   }
@@ -564,61 +564,61 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!getLndigkkjfmlBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, lndigkkjfml_);
+    if (!getFortIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, fortId_);
     }
-    if (pkgelpgpohg_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_TYPE_GYM_BADGE_UNSET.getNumber()) {
+    if (gymBadgeType_ != POGOProtos.Rpc.GymBadgeType.GYM_BADGE_TYPE_GYM_BADGE_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, pkgelpgpohg_);
+        .computeEnumSize(2, gymBadgeType_);
     }
-    if (hobhbkgonlk_ != 0) {
+    if (score_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt32Size(3, hobhbkgonlk_);
+        .computeUInt32Size(3, score_);
     }
-    if (hibekaijkho_ != null) {
+    if (gymBadgeStats_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getHibekaijkho());
+        .computeMessageSize(4, getGymBadgeStats());
     }
-    if (ggcajdfaibl_ != 0L) {
+    if (lastUpdateTimestampMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt64Size(5, ggcajdfaibl_);
+        .computeUInt64Size(5, lastUpdateTimestampMs_);
     }
-    if (bdmpfipljfk_ != 0L) {
+    if (lastCheckTimestampMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt64Size(11, bdmpfipljfk_);
+        .computeUInt64Size(11, lastCheckTimestampMs_);
     }
-    if (bgechkcgoah_ != 0) {
+    if (earnedPoints_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt32Size(12, bgechkcgoah_);
+        .computeUInt32Size(12, earnedPoints_);
     }
-    if (gflfaledbio_ != 0F) {
+    if (progress_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(13, gflfaledbio_);
+        .computeFloatSize(13, progress_);
     }
-    if (linmfjlkkcm_ != false) {
+    if (levelUp_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(14, linmfjlkkcm_);
+        .computeBoolSize(14, levelUp_);
     }
-    if (!getFgmkglfgljhBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, fgmkglfgljh_);
+    if (!getNameBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, name_);
     }
-    if (!getIpfnaapigehBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(16, ipfnaapigeh_);
+    if (!getImageUrlBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(16, imageUrl_);
     }
-    if (!getLcdegoaaeaoBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(17, lcdegoaaeao_);
+    if (!getDescriptionBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(17, description_);
     }
-    if (phiabghihcc_ != 0D) {
+    if (latitude_ != 0D) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(18, phiabghihcc_);
+        .computeDoubleSize(18, latitude_);
     }
-    if (icmnhajccaa_ != 0D) {
+    if (longitude_ != 0D) {
       size += com.google.protobuf.CodedOutputStream
-        .computeDoubleSize(19, icmnhajccaa_);
+        .computeDoubleSize(19, longitude_);
     }
-    if (bilabhihdjn_ != null) {
+    if (raids_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(20, getBilabhihdjn());
+        .computeMessageSize(20, getRaids());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -635,43 +635,43 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.AwardedGymBadge other = (POGOProtos.Rpc.AwardedGymBadge) obj;
 
-    if (!getLndigkkjfml()
-        .equals(other.getLndigkkjfml())) return false;
-    if (pkgelpgpohg_ != other.pkgelpgpohg_) return false;
-    if (getHobhbkgonlk()
-        != other.getHobhbkgonlk()) return false;
-    if (hasHibekaijkho() != other.hasHibekaijkho()) return false;
-    if (hasHibekaijkho()) {
-      if (!getHibekaijkho()
-          .equals(other.getHibekaijkho())) return false;
+    if (!getFortId()
+        .equals(other.getFortId())) return false;
+    if (gymBadgeType_ != other.gymBadgeType_) return false;
+    if (getScore()
+        != other.getScore()) return false;
+    if (hasGymBadgeStats() != other.hasGymBadgeStats()) return false;
+    if (hasGymBadgeStats()) {
+      if (!getGymBadgeStats()
+          .equals(other.getGymBadgeStats())) return false;
     }
-    if (getGgcajdfaibl()
-        != other.getGgcajdfaibl()) return false;
-    if (getBdmpfipljfk()
-        != other.getBdmpfipljfk()) return false;
-    if (getBgechkcgoah()
-        != other.getBgechkcgoah()) return false;
-    if (java.lang.Float.floatToIntBits(getGflfaledbio())
+    if (getLastUpdateTimestampMs()
+        != other.getLastUpdateTimestampMs()) return false;
+    if (getLastCheckTimestampMs()
+        != other.getLastCheckTimestampMs()) return false;
+    if (getEarnedPoints()
+        != other.getEarnedPoints()) return false;
+    if (java.lang.Float.floatToIntBits(getProgress())
         != java.lang.Float.floatToIntBits(
-            other.getGflfaledbio())) return false;
-    if (getLinmfjlkkcm()
-        != other.getLinmfjlkkcm()) return false;
-    if (!getFgmkglfgljh()
-        .equals(other.getFgmkglfgljh())) return false;
-    if (!getIpfnaapigeh()
-        .equals(other.getIpfnaapigeh())) return false;
-    if (!getLcdegoaaeao()
-        .equals(other.getLcdegoaaeao())) return false;
-    if (java.lang.Double.doubleToLongBits(getPhiabghihcc())
+            other.getProgress())) return false;
+    if (getLevelUp()
+        != other.getLevelUp()) return false;
+    if (!getName()
+        .equals(other.getName())) return false;
+    if (!getImageUrl()
+        .equals(other.getImageUrl())) return false;
+    if (!getDescription()
+        .equals(other.getDescription())) return false;
+    if (java.lang.Double.doubleToLongBits(getLatitude())
         != java.lang.Double.doubleToLongBits(
-            other.getPhiabghihcc())) return false;
-    if (java.lang.Double.doubleToLongBits(getIcmnhajccaa())
+            other.getLatitude())) return false;
+    if (java.lang.Double.doubleToLongBits(getLongitude())
         != java.lang.Double.doubleToLongBits(
-            other.getIcmnhajccaa())) return false;
-    if (hasBilabhihdjn() != other.hasBilabhihdjn()) return false;
-    if (hasBilabhihdjn()) {
-      if (!getBilabhihdjn()
-          .equals(other.getBilabhihdjn())) return false;
+            other.getLongitude())) return false;
+    if (hasRaids() != other.hasRaids()) return false;
+    if (hasRaids()) {
+      if (!getRaids()
+          .equals(other.getRaids())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -684,45 +684,45 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + LNDIGKKJFML_FIELD_NUMBER;
-    hash = (53 * hash) + getLndigkkjfml().hashCode();
-    hash = (37 * hash) + PKGELPGPOHG_FIELD_NUMBER;
-    hash = (53 * hash) + pkgelpgpohg_;
-    hash = (37 * hash) + HOBHBKGONLK_FIELD_NUMBER;
-    hash = (53 * hash) + getHobhbkgonlk();
-    if (hasHibekaijkho()) {
-      hash = (37 * hash) + HIBEKAIJKHO_FIELD_NUMBER;
-      hash = (53 * hash) + getHibekaijkho().hashCode();
+    hash = (37 * hash) + FORT_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getFortId().hashCode();
+    hash = (37 * hash) + GYM_BADGE_TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + gymBadgeType_;
+    hash = (37 * hash) + SCORE_FIELD_NUMBER;
+    hash = (53 * hash) + getScore();
+    if (hasGymBadgeStats()) {
+      hash = (37 * hash) + GYM_BADGE_STATS_FIELD_NUMBER;
+      hash = (53 * hash) + getGymBadgeStats().hashCode();
     }
-    hash = (37 * hash) + GGCAJDFAIBL_FIELD_NUMBER;
+    hash = (37 * hash) + LAST_UPDATE_TIMESTAMP_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getGgcajdfaibl());
-    hash = (37 * hash) + BDMPFIPLJFK_FIELD_NUMBER;
+        getLastUpdateTimestampMs());
+    hash = (37 * hash) + LAST_CHECK_TIMESTAMP_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getBdmpfipljfk());
-    hash = (37 * hash) + BGECHKCGOAH_FIELD_NUMBER;
-    hash = (53 * hash) + getBgechkcgoah();
-    hash = (37 * hash) + GFLFALEDBIO_FIELD_NUMBER;
+        getLastCheckTimestampMs());
+    hash = (37 * hash) + EARNED_POINTS_FIELD_NUMBER;
+    hash = (53 * hash) + getEarnedPoints();
+    hash = (37 * hash) + PROGRESS_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getGflfaledbio());
-    hash = (37 * hash) + LINMFJLKKCM_FIELD_NUMBER;
+        getProgress());
+    hash = (37 * hash) + LEVEL_UP_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getLinmfjlkkcm());
-    hash = (37 * hash) + FGMKGLFGLJH_FIELD_NUMBER;
-    hash = (53 * hash) + getFgmkglfgljh().hashCode();
-    hash = (37 * hash) + IPFNAAPIGEH_FIELD_NUMBER;
-    hash = (53 * hash) + getIpfnaapigeh().hashCode();
-    hash = (37 * hash) + LCDEGOAAEAO_FIELD_NUMBER;
-    hash = (53 * hash) + getLcdegoaaeao().hashCode();
-    hash = (37 * hash) + PHIABGHIHCC_FIELD_NUMBER;
+        getLevelUp());
+    hash = (37 * hash) + NAME_FIELD_NUMBER;
+    hash = (53 * hash) + getName().hashCode();
+    hash = (37 * hash) + IMAGE_URL_FIELD_NUMBER;
+    hash = (53 * hash) + getImageUrl().hashCode();
+    hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
+    hash = (53 * hash) + getDescription().hashCode();
+    hash = (37 * hash) + LATITUDE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getPhiabghihcc()));
-    hash = (37 * hash) + ICMNHAJCCAA_FIELD_NUMBER;
+        java.lang.Double.doubleToLongBits(getLatitude()));
+    hash = (37 * hash) + LONGITUDE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        java.lang.Double.doubleToLongBits(getIcmnhajccaa()));
-    if (hasBilabhihdjn()) {
-      hash = (37 * hash) + BILABHIHDJN_FIELD_NUMBER;
-      hash = (53 * hash) + getBilabhihdjn().hashCode();
+        java.lang.Double.doubleToLongBits(getLongitude()));
+    if (hasRaids()) {
+      hash = (37 * hash) + RAIDS_FIELD_NUMBER;
+      hash = (53 * hash) + getRaids().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -861,43 +861,43 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      lndigkkjfml_ = "";
+      fortId_ = "";
 
-      pkgelpgpohg_ = 0;
+      gymBadgeType_ = 0;
 
-      hobhbkgonlk_ = 0;
+      score_ = 0;
 
-      if (hibekaijkhoBuilder_ == null) {
-        hibekaijkho_ = null;
+      if (gymBadgeStatsBuilder_ == null) {
+        gymBadgeStats_ = null;
       } else {
-        hibekaijkho_ = null;
-        hibekaijkhoBuilder_ = null;
+        gymBadgeStats_ = null;
+        gymBadgeStatsBuilder_ = null;
       }
-      ggcajdfaibl_ = 0L;
+      lastUpdateTimestampMs_ = 0L;
 
-      bdmpfipljfk_ = 0L;
+      lastCheckTimestampMs_ = 0L;
 
-      bgechkcgoah_ = 0;
+      earnedPoints_ = 0;
 
-      gflfaledbio_ = 0F;
+      progress_ = 0F;
 
-      linmfjlkkcm_ = false;
+      levelUp_ = false;
 
-      fgmkglfgljh_ = "";
+      name_ = "";
 
-      ipfnaapigeh_ = "";
+      imageUrl_ = "";
 
-      lcdegoaaeao_ = "";
+      description_ = "";
 
-      phiabghihcc_ = 0D;
+      latitude_ = 0D;
 
-      icmnhajccaa_ = 0D;
+      longitude_ = 0D;
 
-      if (bilabhihdjnBuilder_ == null) {
-        bilabhihdjn_ = null;
+      if (raidsBuilder_ == null) {
+        raids_ = null;
       } else {
-        bilabhihdjn_ = null;
-        bilabhihdjnBuilder_ = null;
+        raids_ = null;
+        raidsBuilder_ = null;
       }
       return this;
     }
@@ -925,28 +925,28 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.AwardedGymBadge buildPartial() {
       POGOProtos.Rpc.AwardedGymBadge result = new POGOProtos.Rpc.AwardedGymBadge(this);
-      result.lndigkkjfml_ = lndigkkjfml_;
-      result.pkgelpgpohg_ = pkgelpgpohg_;
-      result.hobhbkgonlk_ = hobhbkgonlk_;
-      if (hibekaijkhoBuilder_ == null) {
-        result.hibekaijkho_ = hibekaijkho_;
+      result.fortId_ = fortId_;
+      result.gymBadgeType_ = gymBadgeType_;
+      result.score_ = score_;
+      if (gymBadgeStatsBuilder_ == null) {
+        result.gymBadgeStats_ = gymBadgeStats_;
       } else {
-        result.hibekaijkho_ = hibekaijkhoBuilder_.build();
+        result.gymBadgeStats_ = gymBadgeStatsBuilder_.build();
       }
-      result.ggcajdfaibl_ = ggcajdfaibl_;
-      result.bdmpfipljfk_ = bdmpfipljfk_;
-      result.bgechkcgoah_ = bgechkcgoah_;
-      result.gflfaledbio_ = gflfaledbio_;
-      result.linmfjlkkcm_ = linmfjlkkcm_;
-      result.fgmkglfgljh_ = fgmkglfgljh_;
-      result.ipfnaapigeh_ = ipfnaapigeh_;
-      result.lcdegoaaeao_ = lcdegoaaeao_;
-      result.phiabghihcc_ = phiabghihcc_;
-      result.icmnhajccaa_ = icmnhajccaa_;
-      if (bilabhihdjnBuilder_ == null) {
-        result.bilabhihdjn_ = bilabhihdjn_;
+      result.lastUpdateTimestampMs_ = lastUpdateTimestampMs_;
+      result.lastCheckTimestampMs_ = lastCheckTimestampMs_;
+      result.earnedPoints_ = earnedPoints_;
+      result.progress_ = progress_;
+      result.levelUp_ = levelUp_;
+      result.name_ = name_;
+      result.imageUrl_ = imageUrl_;
+      result.description_ = description_;
+      result.latitude_ = latitude_;
+      result.longitude_ = longitude_;
+      if (raidsBuilder_ == null) {
+        result.raids_ = raids_;
       } else {
-        result.bilabhihdjn_ = bilabhihdjnBuilder_.build();
+        result.raids_ = raidsBuilder_.build();
       }
       onBuilt();
       return result;
@@ -996,54 +996,54 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.AwardedGymBadge other) {
       if (other == POGOProtos.Rpc.AwardedGymBadge.getDefaultInstance()) return this;
-      if (!other.getLndigkkjfml().isEmpty()) {
-        lndigkkjfml_ = other.lndigkkjfml_;
+      if (!other.getFortId().isEmpty()) {
+        fortId_ = other.fortId_;
         onChanged();
       }
-      if (other.pkgelpgpohg_ != 0) {
-        setPkgelpgpohgValue(other.getPkgelpgpohgValue());
+      if (other.gymBadgeType_ != 0) {
+        setGymBadgeTypeValue(other.getGymBadgeTypeValue());
       }
-      if (other.getHobhbkgonlk() != 0) {
-        setHobhbkgonlk(other.getHobhbkgonlk());
+      if (other.getScore() != 0) {
+        setScore(other.getScore());
       }
-      if (other.hasHibekaijkho()) {
-        mergeHibekaijkho(other.getHibekaijkho());
+      if (other.hasGymBadgeStats()) {
+        mergeGymBadgeStats(other.getGymBadgeStats());
       }
-      if (other.getGgcajdfaibl() != 0L) {
-        setGgcajdfaibl(other.getGgcajdfaibl());
+      if (other.getLastUpdateTimestampMs() != 0L) {
+        setLastUpdateTimestampMs(other.getLastUpdateTimestampMs());
       }
-      if (other.getBdmpfipljfk() != 0L) {
-        setBdmpfipljfk(other.getBdmpfipljfk());
+      if (other.getLastCheckTimestampMs() != 0L) {
+        setLastCheckTimestampMs(other.getLastCheckTimestampMs());
       }
-      if (other.getBgechkcgoah() != 0) {
-        setBgechkcgoah(other.getBgechkcgoah());
+      if (other.getEarnedPoints() != 0) {
+        setEarnedPoints(other.getEarnedPoints());
       }
-      if (other.getGflfaledbio() != 0F) {
-        setGflfaledbio(other.getGflfaledbio());
+      if (other.getProgress() != 0F) {
+        setProgress(other.getProgress());
       }
-      if (other.getLinmfjlkkcm() != false) {
-        setLinmfjlkkcm(other.getLinmfjlkkcm());
+      if (other.getLevelUp() != false) {
+        setLevelUp(other.getLevelUp());
       }
-      if (!other.getFgmkglfgljh().isEmpty()) {
-        fgmkglfgljh_ = other.fgmkglfgljh_;
+      if (!other.getName().isEmpty()) {
+        name_ = other.name_;
         onChanged();
       }
-      if (!other.getIpfnaapigeh().isEmpty()) {
-        ipfnaapigeh_ = other.ipfnaapigeh_;
+      if (!other.getImageUrl().isEmpty()) {
+        imageUrl_ = other.imageUrl_;
         onChanged();
       }
-      if (!other.getLcdegoaaeao().isEmpty()) {
-        lcdegoaaeao_ = other.lcdegoaaeao_;
+      if (!other.getDescription().isEmpty()) {
+        description_ = other.description_;
         onChanged();
       }
-      if (other.getPhiabghihcc() != 0D) {
-        setPhiabghihcc(other.getPhiabghihcc());
+      if (other.getLatitude() != 0D) {
+        setLatitude(other.getLatitude());
       }
-      if (other.getIcmnhajccaa() != 0D) {
-        setIcmnhajccaa(other.getIcmnhajccaa());
+      if (other.getLongitude() != 0D) {
+        setLongitude(other.getLongitude());
       }
-      if (other.hasBilabhihdjn()) {
-        mergeBilabhihdjn(other.getBilabhihdjn());
+      if (other.hasRaids()) {
+        mergeRaids(other.getRaids());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1074,848 +1074,848 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.lang.Object lndigkkjfml_ = "";
+    private java.lang.Object fortId_ = "";
     /**
-     * <code>string lndigkkjfml = 1;</code>
-     * @return The lndigkkjfml.
+     * <code>string fort_id = 1;</code>
+     * @return The fortId.
      */
-    public java.lang.String getLndigkkjfml() {
-      java.lang.Object ref = lndigkkjfml_;
+    public java.lang.String getFortId() {
+      java.lang.Object ref = fortId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        lndigkkjfml_ = s;
+        fortId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string lndigkkjfml = 1;</code>
-     * @return The bytes for lndigkkjfml.
+     * <code>string fort_id = 1;</code>
+     * @return The bytes for fortId.
      */
     public com.google.protobuf.ByteString
-        getLndigkkjfmlBytes() {
-      java.lang.Object ref = lndigkkjfml_;
+        getFortIdBytes() {
+      java.lang.Object ref = fortId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        lndigkkjfml_ = b;
+        fortId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string lndigkkjfml = 1;</code>
-     * @param value The lndigkkjfml to set.
+     * <code>string fort_id = 1;</code>
+     * @param value The fortId to set.
      * @return This builder for chaining.
      */
-    public Builder setLndigkkjfml(
+    public Builder setFortId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      lndigkkjfml_ = value;
+      fortId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string lndigkkjfml = 1;</code>
+     * <code>string fort_id = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLndigkkjfml() {
+    public Builder clearFortId() {
       
-      lndigkkjfml_ = getDefaultInstance().getLndigkkjfml();
+      fortId_ = getDefaultInstance().getFortId();
       onChanged();
       return this;
     }
     /**
-     * <code>string lndigkkjfml = 1;</code>
-     * @param value The bytes for lndigkkjfml to set.
+     * <code>string fort_id = 1;</code>
+     * @param value The bytes for fortId to set.
      * @return This builder for chaining.
      */
-    public Builder setLndigkkjfmlBytes(
+    public Builder setFortIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      lndigkkjfml_ = value;
+      fortId_ = value;
       onChanged();
       return this;
     }
 
-    private int pkgelpgpohg_ = 0;
+    private int gymBadgeType_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeType pkgelpgpohg = 2;</code>
-     * @return The enum numeric value on the wire for pkgelpgpohg.
+     * <code>.POGOProtos.Rpc.GymBadgeType gym_badge_type = 2;</code>
+     * @return The enum numeric value on the wire for gymBadgeType.
      */
-    @java.lang.Override public int getPkgelpgpohgValue() {
-      return pkgelpgpohg_;
+    @java.lang.Override public int getGymBadgeTypeValue() {
+      return gymBadgeType_;
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeType pkgelpgpohg = 2;</code>
-     * @param value The enum numeric value on the wire for pkgelpgpohg to set.
+     * <code>.POGOProtos.Rpc.GymBadgeType gym_badge_type = 2;</code>
+     * @param value The enum numeric value on the wire for gymBadgeType to set.
      * @return This builder for chaining.
      */
-    public Builder setPkgelpgpohgValue(int value) {
+    public Builder setGymBadgeTypeValue(int value) {
       
-      pkgelpgpohg_ = value;
+      gymBadgeType_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeType pkgelpgpohg = 2;</code>
-     * @return The pkgelpgpohg.
+     * <code>.POGOProtos.Rpc.GymBadgeType gym_badge_type = 2;</code>
+     * @return The gymBadgeType.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.GymBadgeType getPkgelpgpohg() {
+    public POGOProtos.Rpc.GymBadgeType getGymBadgeType() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.GymBadgeType result = POGOProtos.Rpc.GymBadgeType.valueOf(pkgelpgpohg_);
+      POGOProtos.Rpc.GymBadgeType result = POGOProtos.Rpc.GymBadgeType.valueOf(gymBadgeType_);
       return result == null ? POGOProtos.Rpc.GymBadgeType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeType pkgelpgpohg = 2;</code>
-     * @param value The pkgelpgpohg to set.
+     * <code>.POGOProtos.Rpc.GymBadgeType gym_badge_type = 2;</code>
+     * @param value The gymBadgeType to set.
      * @return This builder for chaining.
      */
-    public Builder setPkgelpgpohg(POGOProtos.Rpc.GymBadgeType value) {
+    public Builder setGymBadgeType(POGOProtos.Rpc.GymBadgeType value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      pkgelpgpohg_ = value.getNumber();
+      gymBadgeType_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeType pkgelpgpohg = 2;</code>
+     * <code>.POGOProtos.Rpc.GymBadgeType gym_badge_type = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearPkgelpgpohg() {
+    public Builder clearGymBadgeType() {
       
-      pkgelpgpohg_ = 0;
+      gymBadgeType_ = 0;
       onChanged();
       return this;
     }
 
-    private int hobhbkgonlk_ ;
+    private int score_ ;
     /**
-     * <code>uint32 hobhbkgonlk = 3;</code>
-     * @return The hobhbkgonlk.
+     * <code>uint32 score = 3;</code>
+     * @return The score.
      */
     @java.lang.Override
-    public int getHobhbkgonlk() {
-      return hobhbkgonlk_;
+    public int getScore() {
+      return score_;
     }
     /**
-     * <code>uint32 hobhbkgonlk = 3;</code>
-     * @param value The hobhbkgonlk to set.
+     * <code>uint32 score = 3;</code>
+     * @param value The score to set.
      * @return This builder for chaining.
      */
-    public Builder setHobhbkgonlk(int value) {
+    public Builder setScore(int value) {
       
-      hobhbkgonlk_ = value;
+      score_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>uint32 hobhbkgonlk = 3;</code>
+     * <code>uint32 score = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearHobhbkgonlk() {
+    public Builder clearScore() {
       
-      hobhbkgonlk_ = 0;
+      score_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.GymBadgeStats hibekaijkho_;
+    private POGOProtos.Rpc.GymBadgeStats gymBadgeStats_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GymBadgeStats, POGOProtos.Rpc.GymBadgeStats.Builder, POGOProtos.Rpc.GymBadgeStatsOrBuilder> hibekaijkhoBuilder_;
+        POGOProtos.Rpc.GymBadgeStats, POGOProtos.Rpc.GymBadgeStats.Builder, POGOProtos.Rpc.GymBadgeStatsOrBuilder> gymBadgeStatsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
-     * @return Whether the hibekaijkho field is set.
+     * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
+     * @return Whether the gymBadgeStats field is set.
      */
-    public boolean hasHibekaijkho() {
-      return hibekaijkhoBuilder_ != null || hibekaijkho_ != null;
+    public boolean hasGymBadgeStats() {
+      return gymBadgeStatsBuilder_ != null || gymBadgeStats_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
-     * @return The hibekaijkho.
+     * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
+     * @return The gymBadgeStats.
      */
-    public POGOProtos.Rpc.GymBadgeStats getHibekaijkho() {
-      if (hibekaijkhoBuilder_ == null) {
-        return hibekaijkho_ == null ? POGOProtos.Rpc.GymBadgeStats.getDefaultInstance() : hibekaijkho_;
+    public POGOProtos.Rpc.GymBadgeStats getGymBadgeStats() {
+      if (gymBadgeStatsBuilder_ == null) {
+        return gymBadgeStats_ == null ? POGOProtos.Rpc.GymBadgeStats.getDefaultInstance() : gymBadgeStats_;
       } else {
-        return hibekaijkhoBuilder_.getMessage();
+        return gymBadgeStatsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
+     * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
      */
-    public Builder setHibekaijkho(POGOProtos.Rpc.GymBadgeStats value) {
-      if (hibekaijkhoBuilder_ == null) {
+    public Builder setGymBadgeStats(POGOProtos.Rpc.GymBadgeStats value) {
+      if (gymBadgeStatsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        hibekaijkho_ = value;
+        gymBadgeStats_ = value;
         onChanged();
       } else {
-        hibekaijkhoBuilder_.setMessage(value);
+        gymBadgeStatsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
+     * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
      */
-    public Builder setHibekaijkho(
+    public Builder setGymBadgeStats(
         POGOProtos.Rpc.GymBadgeStats.Builder builderForValue) {
-      if (hibekaijkhoBuilder_ == null) {
-        hibekaijkho_ = builderForValue.build();
+      if (gymBadgeStatsBuilder_ == null) {
+        gymBadgeStats_ = builderForValue.build();
         onChanged();
       } else {
-        hibekaijkhoBuilder_.setMessage(builderForValue.build());
+        gymBadgeStatsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
+     * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
      */
-    public Builder mergeHibekaijkho(POGOProtos.Rpc.GymBadgeStats value) {
-      if (hibekaijkhoBuilder_ == null) {
-        if (hibekaijkho_ != null) {
-          hibekaijkho_ =
-            POGOProtos.Rpc.GymBadgeStats.newBuilder(hibekaijkho_).mergeFrom(value).buildPartial();
+    public Builder mergeGymBadgeStats(POGOProtos.Rpc.GymBadgeStats value) {
+      if (gymBadgeStatsBuilder_ == null) {
+        if (gymBadgeStats_ != null) {
+          gymBadgeStats_ =
+            POGOProtos.Rpc.GymBadgeStats.newBuilder(gymBadgeStats_).mergeFrom(value).buildPartial();
         } else {
-          hibekaijkho_ = value;
+          gymBadgeStats_ = value;
         }
         onChanged();
       } else {
-        hibekaijkhoBuilder_.mergeFrom(value);
+        gymBadgeStatsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
+     * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
      */
-    public Builder clearHibekaijkho() {
-      if (hibekaijkhoBuilder_ == null) {
-        hibekaijkho_ = null;
+    public Builder clearGymBadgeStats() {
+      if (gymBadgeStatsBuilder_ == null) {
+        gymBadgeStats_ = null;
         onChanged();
       } else {
-        hibekaijkho_ = null;
-        hibekaijkhoBuilder_ = null;
+        gymBadgeStats_ = null;
+        gymBadgeStatsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
+     * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
      */
-    public POGOProtos.Rpc.GymBadgeStats.Builder getHibekaijkhoBuilder() {
+    public POGOProtos.Rpc.GymBadgeStats.Builder getGymBadgeStatsBuilder() {
       
       onChanged();
-      return getHibekaijkhoFieldBuilder().getBuilder();
+      return getGymBadgeStatsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
+     * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
      */
-    public POGOProtos.Rpc.GymBadgeStatsOrBuilder getHibekaijkhoOrBuilder() {
-      if (hibekaijkhoBuilder_ != null) {
-        return hibekaijkhoBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.GymBadgeStatsOrBuilder getGymBadgeStatsOrBuilder() {
+      if (gymBadgeStatsBuilder_ != null) {
+        return gymBadgeStatsBuilder_.getMessageOrBuilder();
       } else {
-        return hibekaijkho_ == null ?
-            POGOProtos.Rpc.GymBadgeStats.getDefaultInstance() : hibekaijkho_;
+        return gymBadgeStats_ == null ?
+            POGOProtos.Rpc.GymBadgeStats.getDefaultInstance() : gymBadgeStats_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GymBadgeStats hibekaijkho = 4;</code>
+     * <code>.POGOProtos.Rpc.GymBadgeStats gym_badge_stats = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.GymBadgeStats, POGOProtos.Rpc.GymBadgeStats.Builder, POGOProtos.Rpc.GymBadgeStatsOrBuilder> 
-        getHibekaijkhoFieldBuilder() {
-      if (hibekaijkhoBuilder_ == null) {
-        hibekaijkhoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getGymBadgeStatsFieldBuilder() {
+      if (gymBadgeStatsBuilder_ == null) {
+        gymBadgeStatsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.GymBadgeStats, POGOProtos.Rpc.GymBadgeStats.Builder, POGOProtos.Rpc.GymBadgeStatsOrBuilder>(
-                getHibekaijkho(),
+                getGymBadgeStats(),
                 getParentForChildren(),
                 isClean());
-        hibekaijkho_ = null;
+        gymBadgeStats_ = null;
       }
-      return hibekaijkhoBuilder_;
+      return gymBadgeStatsBuilder_;
     }
 
-    private long ggcajdfaibl_ ;
+    private long lastUpdateTimestampMs_ ;
     /**
-     * <code>uint64 ggcajdfaibl = 5;</code>
-     * @return The ggcajdfaibl.
+     * <code>uint64 last_update_timestamp_ms = 5;</code>
+     * @return The lastUpdateTimestampMs.
      */
     @java.lang.Override
-    public long getGgcajdfaibl() {
-      return ggcajdfaibl_;
+    public long getLastUpdateTimestampMs() {
+      return lastUpdateTimestampMs_;
     }
     /**
-     * <code>uint64 ggcajdfaibl = 5;</code>
-     * @param value The ggcajdfaibl to set.
+     * <code>uint64 last_update_timestamp_ms = 5;</code>
+     * @param value The lastUpdateTimestampMs to set.
      * @return This builder for chaining.
      */
-    public Builder setGgcajdfaibl(long value) {
+    public Builder setLastUpdateTimestampMs(long value) {
       
-      ggcajdfaibl_ = value;
+      lastUpdateTimestampMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>uint64 ggcajdfaibl = 5;</code>
+     * <code>uint64 last_update_timestamp_ms = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearGgcajdfaibl() {
+    public Builder clearLastUpdateTimestampMs() {
       
-      ggcajdfaibl_ = 0L;
+      lastUpdateTimestampMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private long bdmpfipljfk_ ;
+    private long lastCheckTimestampMs_ ;
     /**
-     * <code>uint64 bdmpfipljfk = 11;</code>
-     * @return The bdmpfipljfk.
+     * <code>uint64 last_check_timestamp_ms = 11;</code>
+     * @return The lastCheckTimestampMs.
      */
     @java.lang.Override
-    public long getBdmpfipljfk() {
-      return bdmpfipljfk_;
+    public long getLastCheckTimestampMs() {
+      return lastCheckTimestampMs_;
     }
     /**
-     * <code>uint64 bdmpfipljfk = 11;</code>
-     * @param value The bdmpfipljfk to set.
+     * <code>uint64 last_check_timestamp_ms = 11;</code>
+     * @param value The lastCheckTimestampMs to set.
      * @return This builder for chaining.
      */
-    public Builder setBdmpfipljfk(long value) {
+    public Builder setLastCheckTimestampMs(long value) {
       
-      bdmpfipljfk_ = value;
+      lastCheckTimestampMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>uint64 bdmpfipljfk = 11;</code>
+     * <code>uint64 last_check_timestamp_ms = 11;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBdmpfipljfk() {
+    public Builder clearLastCheckTimestampMs() {
       
-      bdmpfipljfk_ = 0L;
+      lastCheckTimestampMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private int bgechkcgoah_ ;
+    private int earnedPoints_ ;
     /**
-     * <code>uint32 bgechkcgoah = 12;</code>
-     * @return The bgechkcgoah.
+     * <code>uint32 earned_points = 12;</code>
+     * @return The earnedPoints.
      */
     @java.lang.Override
-    public int getBgechkcgoah() {
-      return bgechkcgoah_;
+    public int getEarnedPoints() {
+      return earnedPoints_;
     }
     /**
-     * <code>uint32 bgechkcgoah = 12;</code>
-     * @param value The bgechkcgoah to set.
+     * <code>uint32 earned_points = 12;</code>
+     * @param value The earnedPoints to set.
      * @return This builder for chaining.
      */
-    public Builder setBgechkcgoah(int value) {
+    public Builder setEarnedPoints(int value) {
       
-      bgechkcgoah_ = value;
+      earnedPoints_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>uint32 bgechkcgoah = 12;</code>
+     * <code>uint32 earned_points = 12;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBgechkcgoah() {
+    public Builder clearEarnedPoints() {
       
-      bgechkcgoah_ = 0;
+      earnedPoints_ = 0;
       onChanged();
       return this;
     }
 
-    private float gflfaledbio_ ;
+    private float progress_ ;
     /**
-     * <code>float gflfaledbio = 13;</code>
-     * @return The gflfaledbio.
+     * <code>float progress = 13;</code>
+     * @return The progress.
      */
     @java.lang.Override
-    public float getGflfaledbio() {
-      return gflfaledbio_;
+    public float getProgress() {
+      return progress_;
     }
     /**
-     * <code>float gflfaledbio = 13;</code>
-     * @param value The gflfaledbio to set.
+     * <code>float progress = 13;</code>
+     * @param value The progress to set.
      * @return This builder for chaining.
      */
-    public Builder setGflfaledbio(float value) {
+    public Builder setProgress(float value) {
       
-      gflfaledbio_ = value;
+      progress_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float gflfaledbio = 13;</code>
+     * <code>float progress = 13;</code>
      * @return This builder for chaining.
      */
-    public Builder clearGflfaledbio() {
+    public Builder clearProgress() {
       
-      gflfaledbio_ = 0F;
+      progress_ = 0F;
       onChanged();
       return this;
     }
 
-    private boolean linmfjlkkcm_ ;
+    private boolean levelUp_ ;
     /**
-     * <code>bool linmfjlkkcm = 14;</code>
-     * @return The linmfjlkkcm.
+     * <code>bool level_up = 14;</code>
+     * @return The levelUp.
      */
     @java.lang.Override
-    public boolean getLinmfjlkkcm() {
-      return linmfjlkkcm_;
+    public boolean getLevelUp() {
+      return levelUp_;
     }
     /**
-     * <code>bool linmfjlkkcm = 14;</code>
-     * @param value The linmfjlkkcm to set.
+     * <code>bool level_up = 14;</code>
+     * @param value The levelUp to set.
      * @return This builder for chaining.
      */
-    public Builder setLinmfjlkkcm(boolean value) {
+    public Builder setLevelUp(boolean value) {
       
-      linmfjlkkcm_ = value;
+      levelUp_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool linmfjlkkcm = 14;</code>
+     * <code>bool level_up = 14;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLinmfjlkkcm() {
+    public Builder clearLevelUp() {
       
-      linmfjlkkcm_ = false;
+      levelUp_ = false;
       onChanged();
       return this;
     }
 
-    private java.lang.Object fgmkglfgljh_ = "";
+    private java.lang.Object name_ = "";
     /**
-     * <code>string fgmkglfgljh = 15;</code>
-     * @return The fgmkglfgljh.
+     * <code>string name = 15;</code>
+     * @return The name.
      */
-    public java.lang.String getFgmkglfgljh() {
-      java.lang.Object ref = fgmkglfgljh_;
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        fgmkglfgljh_ = s;
+        name_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string fgmkglfgljh = 15;</code>
-     * @return The bytes for fgmkglfgljh.
+     * <code>string name = 15;</code>
+     * @return The bytes for name.
      */
     public com.google.protobuf.ByteString
-        getFgmkglfgljhBytes() {
-      java.lang.Object ref = fgmkglfgljh_;
+        getNameBytes() {
+      java.lang.Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        fgmkglfgljh_ = b;
+        name_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string fgmkglfgljh = 15;</code>
-     * @param value The fgmkglfgljh to set.
+     * <code>string name = 15;</code>
+     * @param value The name to set.
      * @return This builder for chaining.
      */
-    public Builder setFgmkglfgljh(
+    public Builder setName(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      fgmkglfgljh_ = value;
+      name_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string fgmkglfgljh = 15;</code>
+     * <code>string name = 15;</code>
      * @return This builder for chaining.
      */
-    public Builder clearFgmkglfgljh() {
+    public Builder clearName() {
       
-      fgmkglfgljh_ = getDefaultInstance().getFgmkglfgljh();
+      name_ = getDefaultInstance().getName();
       onChanged();
       return this;
     }
     /**
-     * <code>string fgmkglfgljh = 15;</code>
-     * @param value The bytes for fgmkglfgljh to set.
+     * <code>string name = 15;</code>
+     * @param value The bytes for name to set.
      * @return This builder for chaining.
      */
-    public Builder setFgmkglfgljhBytes(
+    public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      fgmkglfgljh_ = value;
+      name_ = value;
       onChanged();
       return this;
     }
 
-    private java.lang.Object ipfnaapigeh_ = "";
+    private java.lang.Object imageUrl_ = "";
     /**
-     * <code>string ipfnaapigeh = 16;</code>
-     * @return The ipfnaapigeh.
+     * <code>string image_url = 16;</code>
+     * @return The imageUrl.
      */
-    public java.lang.String getIpfnaapigeh() {
-      java.lang.Object ref = ipfnaapigeh_;
+    public java.lang.String getImageUrl() {
+      java.lang.Object ref = imageUrl_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        ipfnaapigeh_ = s;
+        imageUrl_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string ipfnaapigeh = 16;</code>
-     * @return The bytes for ipfnaapigeh.
+     * <code>string image_url = 16;</code>
+     * @return The bytes for imageUrl.
      */
     public com.google.protobuf.ByteString
-        getIpfnaapigehBytes() {
-      java.lang.Object ref = ipfnaapigeh_;
+        getImageUrlBytes() {
+      java.lang.Object ref = imageUrl_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        ipfnaapigeh_ = b;
+        imageUrl_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string ipfnaapigeh = 16;</code>
-     * @param value The ipfnaapigeh to set.
+     * <code>string image_url = 16;</code>
+     * @param value The imageUrl to set.
      * @return This builder for chaining.
      */
-    public Builder setIpfnaapigeh(
+    public Builder setImageUrl(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      ipfnaapigeh_ = value;
+      imageUrl_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string ipfnaapigeh = 16;</code>
+     * <code>string image_url = 16;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIpfnaapigeh() {
+    public Builder clearImageUrl() {
       
-      ipfnaapigeh_ = getDefaultInstance().getIpfnaapigeh();
+      imageUrl_ = getDefaultInstance().getImageUrl();
       onChanged();
       return this;
     }
     /**
-     * <code>string ipfnaapigeh = 16;</code>
-     * @param value The bytes for ipfnaapigeh to set.
+     * <code>string image_url = 16;</code>
+     * @param value The bytes for imageUrl to set.
      * @return This builder for chaining.
      */
-    public Builder setIpfnaapigehBytes(
+    public Builder setImageUrlBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      ipfnaapigeh_ = value;
+      imageUrl_ = value;
       onChanged();
       return this;
     }
 
-    private java.lang.Object lcdegoaaeao_ = "";
+    private java.lang.Object description_ = "";
     /**
-     * <code>string lcdegoaaeao = 17;</code>
-     * @return The lcdegoaaeao.
+     * <code>string description = 17;</code>
+     * @return The description.
      */
-    public java.lang.String getLcdegoaaeao() {
-      java.lang.Object ref = lcdegoaaeao_;
+    public java.lang.String getDescription() {
+      java.lang.Object ref = description_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        lcdegoaaeao_ = s;
+        description_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string lcdegoaaeao = 17;</code>
-     * @return The bytes for lcdegoaaeao.
+     * <code>string description = 17;</code>
+     * @return The bytes for description.
      */
     public com.google.protobuf.ByteString
-        getLcdegoaaeaoBytes() {
-      java.lang.Object ref = lcdegoaaeao_;
+        getDescriptionBytes() {
+      java.lang.Object ref = description_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        lcdegoaaeao_ = b;
+        description_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string lcdegoaaeao = 17;</code>
-     * @param value The lcdegoaaeao to set.
+     * <code>string description = 17;</code>
+     * @param value The description to set.
      * @return This builder for chaining.
      */
-    public Builder setLcdegoaaeao(
+    public Builder setDescription(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      lcdegoaaeao_ = value;
+      description_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string lcdegoaaeao = 17;</code>
+     * <code>string description = 17;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLcdegoaaeao() {
+    public Builder clearDescription() {
       
-      lcdegoaaeao_ = getDefaultInstance().getLcdegoaaeao();
+      description_ = getDefaultInstance().getDescription();
       onChanged();
       return this;
     }
     /**
-     * <code>string lcdegoaaeao = 17;</code>
-     * @param value The bytes for lcdegoaaeao to set.
+     * <code>string description = 17;</code>
+     * @param value The bytes for description to set.
      * @return This builder for chaining.
      */
-    public Builder setLcdegoaaeaoBytes(
+    public Builder setDescriptionBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      lcdegoaaeao_ = value;
+      description_ = value;
       onChanged();
       return this;
     }
 
-    private double phiabghihcc_ ;
+    private double latitude_ ;
     /**
-     * <code>double phiabghihcc = 18;</code>
-     * @return The phiabghihcc.
+     * <code>double latitude = 18;</code>
+     * @return The latitude.
      */
     @java.lang.Override
-    public double getPhiabghihcc() {
-      return phiabghihcc_;
+    public double getLatitude() {
+      return latitude_;
     }
     /**
-     * <code>double phiabghihcc = 18;</code>
-     * @param value The phiabghihcc to set.
+     * <code>double latitude = 18;</code>
+     * @param value The latitude to set.
      * @return This builder for chaining.
      */
-    public Builder setPhiabghihcc(double value) {
+    public Builder setLatitude(double value) {
       
-      phiabghihcc_ = value;
+      latitude_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>double phiabghihcc = 18;</code>
+     * <code>double latitude = 18;</code>
      * @return This builder for chaining.
      */
-    public Builder clearPhiabghihcc() {
+    public Builder clearLatitude() {
       
-      phiabghihcc_ = 0D;
+      latitude_ = 0D;
       onChanged();
       return this;
     }
 
-    private double icmnhajccaa_ ;
+    private double longitude_ ;
     /**
-     * <code>double icmnhajccaa = 19;</code>
-     * @return The icmnhajccaa.
+     * <code>double longitude = 19;</code>
+     * @return The longitude.
      */
     @java.lang.Override
-    public double getIcmnhajccaa() {
-      return icmnhajccaa_;
+    public double getLongitude() {
+      return longitude_;
     }
     /**
-     * <code>double icmnhajccaa = 19;</code>
-     * @param value The icmnhajccaa to set.
+     * <code>double longitude = 19;</code>
+     * @param value The longitude to set.
      * @return This builder for chaining.
      */
-    public Builder setIcmnhajccaa(double value) {
+    public Builder setLongitude(double value) {
       
-      icmnhajccaa_ = value;
+      longitude_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>double icmnhajccaa = 19;</code>
+     * <code>double longitude = 19;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIcmnhajccaa() {
+    public Builder clearLongitude() {
       
-      icmnhajccaa_ = 0D;
+      longitude_ = 0D;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn_;
+    private POGOProtos.Rpc.PlayerRaidInfoProto raids_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlayerRaidInfoProto, POGOProtos.Rpc.PlayerRaidInfoProto.Builder, POGOProtos.Rpc.PlayerRaidInfoProtoOrBuilder> bilabhihdjnBuilder_;
+        POGOProtos.Rpc.PlayerRaidInfoProto, POGOProtos.Rpc.PlayerRaidInfoProto.Builder, POGOProtos.Rpc.PlayerRaidInfoProtoOrBuilder> raidsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
-     * @return Whether the bilabhihdjn field is set.
+     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
+     * @return Whether the raids field is set.
      */
-    public boolean hasBilabhihdjn() {
-      return bilabhihdjnBuilder_ != null || bilabhihdjn_ != null;
+    public boolean hasRaids() {
+      return raidsBuilder_ != null || raids_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
-     * @return The bilabhihdjn.
+     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
+     * @return The raids.
      */
-    public POGOProtos.Rpc.PlayerRaidInfoProto getBilabhihdjn() {
-      if (bilabhihdjnBuilder_ == null) {
-        return bilabhihdjn_ == null ? POGOProtos.Rpc.PlayerRaidInfoProto.getDefaultInstance() : bilabhihdjn_;
+    public POGOProtos.Rpc.PlayerRaidInfoProto getRaids() {
+      if (raidsBuilder_ == null) {
+        return raids_ == null ? POGOProtos.Rpc.PlayerRaidInfoProto.getDefaultInstance() : raids_;
       } else {
-        return bilabhihdjnBuilder_.getMessage();
+        return raidsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
+     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
      */
-    public Builder setBilabhihdjn(POGOProtos.Rpc.PlayerRaidInfoProto value) {
-      if (bilabhihdjnBuilder_ == null) {
+    public Builder setRaids(POGOProtos.Rpc.PlayerRaidInfoProto value) {
+      if (raidsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        bilabhihdjn_ = value;
+        raids_ = value;
         onChanged();
       } else {
-        bilabhihdjnBuilder_.setMessage(value);
+        raidsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
+     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
      */
-    public Builder setBilabhihdjn(
+    public Builder setRaids(
         POGOProtos.Rpc.PlayerRaidInfoProto.Builder builderForValue) {
-      if (bilabhihdjnBuilder_ == null) {
-        bilabhihdjn_ = builderForValue.build();
+      if (raidsBuilder_ == null) {
+        raids_ = builderForValue.build();
         onChanged();
       } else {
-        bilabhihdjnBuilder_.setMessage(builderForValue.build());
+        raidsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
+     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
      */
-    public Builder mergeBilabhihdjn(POGOProtos.Rpc.PlayerRaidInfoProto value) {
-      if (bilabhihdjnBuilder_ == null) {
-        if (bilabhihdjn_ != null) {
-          bilabhihdjn_ =
-            POGOProtos.Rpc.PlayerRaidInfoProto.newBuilder(bilabhihdjn_).mergeFrom(value).buildPartial();
+    public Builder mergeRaids(POGOProtos.Rpc.PlayerRaidInfoProto value) {
+      if (raidsBuilder_ == null) {
+        if (raids_ != null) {
+          raids_ =
+            POGOProtos.Rpc.PlayerRaidInfoProto.newBuilder(raids_).mergeFrom(value).buildPartial();
         } else {
-          bilabhihdjn_ = value;
+          raids_ = value;
         }
         onChanged();
       } else {
-        bilabhihdjnBuilder_.mergeFrom(value);
+        raidsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
+     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
      */
-    public Builder clearBilabhihdjn() {
-      if (bilabhihdjnBuilder_ == null) {
-        bilabhihdjn_ = null;
+    public Builder clearRaids() {
+      if (raidsBuilder_ == null) {
+        raids_ = null;
         onChanged();
       } else {
-        bilabhihdjn_ = null;
-        bilabhihdjnBuilder_ = null;
+        raids_ = null;
+        raidsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
+     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
      */
-    public POGOProtos.Rpc.PlayerRaidInfoProto.Builder getBilabhihdjnBuilder() {
+    public POGOProtos.Rpc.PlayerRaidInfoProto.Builder getRaidsBuilder() {
       
       onChanged();
-      return getBilabhihdjnFieldBuilder().getBuilder();
+      return getRaidsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
+     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
      */
-    public POGOProtos.Rpc.PlayerRaidInfoProtoOrBuilder getBilabhihdjnOrBuilder() {
-      if (bilabhihdjnBuilder_ != null) {
-        return bilabhihdjnBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.PlayerRaidInfoProtoOrBuilder getRaidsOrBuilder() {
+      if (raidsBuilder_ != null) {
+        return raidsBuilder_.getMessageOrBuilder();
       } else {
-        return bilabhihdjn_ == null ?
-            POGOProtos.Rpc.PlayerRaidInfoProto.getDefaultInstance() : bilabhihdjn_;
+        return raids_ == null ?
+            POGOProtos.Rpc.PlayerRaidInfoProto.getDefaultInstance() : raids_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto bilabhihdjn = 20;</code>
+     * <code>.POGOProtos.Rpc.PlayerRaidInfoProto raids = 20;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PlayerRaidInfoProto, POGOProtos.Rpc.PlayerRaidInfoProto.Builder, POGOProtos.Rpc.PlayerRaidInfoProtoOrBuilder> 
-        getBilabhihdjnFieldBuilder() {
-      if (bilabhihdjnBuilder_ == null) {
-        bilabhihdjnBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getRaidsFieldBuilder() {
+      if (raidsBuilder_ == null) {
+        raidsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PlayerRaidInfoProto, POGOProtos.Rpc.PlayerRaidInfoProto.Builder, POGOProtos.Rpc.PlayerRaidInfoProtoOrBuilder>(
-                getBilabhihdjn(),
+                getRaids(),
                 getParentForChildren(),
                 isClean());
-        bilabhihdjn_ = null;
+        raids_ = null;
       }
-      return bilabhihdjnBuilder_;
+      return raidsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

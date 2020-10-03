@@ -8,33 +8,33 @@ public interface BadgeCaptureRewardOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>float fccpajmnogf = 1;</code>
-   * @return The fccpajmnogf.
+   * <code>float capture_reward_multiplier = 1;</code>
+   * @return The captureRewardMultiplier.
    */
-  float getFccpajmnogf();
+  float getCaptureRewardMultiplier();
 
   /**
-   * <code>repeated string ckkpmkmhgbg = 2;</code>
-   * @return A list containing the ckkpmkmhgbg.
+   * <code>repeated string avatar_template_ids = 2;</code>
+   * @return A list containing the avatarTemplateIds.
    */
   java.util.List<java.lang.String>
-      getCkkpmkmhgbgList();
+      getAvatarTemplateIdsList();
   /**
-   * <code>repeated string ckkpmkmhgbg = 2;</code>
-   * @return The count of ckkpmkmhgbg.
+   * <code>repeated string avatar_template_ids = 2;</code>
+   * @return The count of avatarTemplateIds.
    */
-  int getCkkpmkmhgbgCount();
+  int getAvatarTemplateIdsCount();
   /**
-   * <code>repeated string ckkpmkmhgbg = 2;</code>
+   * <code>repeated string avatar_template_ids = 2;</code>
    * @param index The index of the element to return.
-   * @return The ckkpmkmhgbg at the given index.
+   * @return The avatarTemplateIds at the given index.
    */
-  java.lang.String getCkkpmkmhgbg(int index);
+  java.lang.String getAvatarTemplateIds(int index);
   /**
-   * <code>repeated string ckkpmkmhgbg = 2;</code>
+   * <code>repeated string avatar_template_ids = 2;</code>
    * @param index The index of the value to return.
-   * @return The bytes of the ckkpmkmhgbg at the given index.
+   * @return The bytes of the avatarTemplateIds at the given index.
    */
   com.google.protobuf.ByteString
-      getCkkpmkmhgbgBytes(int index);
+      getAvatarTemplateIdsBytes(int index);
 }

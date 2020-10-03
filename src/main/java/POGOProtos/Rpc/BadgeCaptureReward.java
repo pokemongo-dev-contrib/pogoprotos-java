@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private BadgeCaptureReward() {
-    ckkpmkmhgbg_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    avatarTemplateIds_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
   @java.lang.Override
@@ -56,16 +56,16 @@ private static final long serialVersionUID = 0L;
             break;
           case 13: {
 
-            fccpajmnogf_ = input.readFloat();
+            captureRewardMultiplier_ = input.readFloat();
             break;
           }
           case 18: {
             java.lang.String s = input.readStringRequireUtf8();
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              ckkpmkmhgbg_ = new com.google.protobuf.LazyStringArrayList();
+              avatarTemplateIds_ = new com.google.protobuf.LazyStringArrayList();
               mutable_bitField0_ |= 0x00000001;
             }
-            ckkpmkmhgbg_.add(s);
+            avatarTemplateIds_.add(s);
             break;
           }
           default: {
@@ -84,7 +84,7 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        ckkpmkmhgbg_ = ckkpmkmhgbg_.getUnmodifiableView();
+        avatarTemplateIds_ = avatarTemplateIds_.getUnmodifiableView();
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -103,50 +103,50 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.BadgeCaptureReward.class, POGOProtos.Rpc.BadgeCaptureReward.Builder.class);
   }
 
-  public static final int FCCPAJMNOGF_FIELD_NUMBER = 1;
-  private float fccpajmnogf_;
+  public static final int CAPTURE_REWARD_MULTIPLIER_FIELD_NUMBER = 1;
+  private float captureRewardMultiplier_;
   /**
-   * <code>float fccpajmnogf = 1;</code>
-   * @return The fccpajmnogf.
+   * <code>float capture_reward_multiplier = 1;</code>
+   * @return The captureRewardMultiplier.
    */
   @java.lang.Override
-  public float getFccpajmnogf() {
-    return fccpajmnogf_;
+  public float getCaptureRewardMultiplier() {
+    return captureRewardMultiplier_;
   }
 
-  public static final int CKKPMKMHGBG_FIELD_NUMBER = 2;
-  private com.google.protobuf.LazyStringList ckkpmkmhgbg_;
+  public static final int AVATAR_TEMPLATE_IDS_FIELD_NUMBER = 2;
+  private com.google.protobuf.LazyStringList avatarTemplateIds_;
   /**
-   * <code>repeated string ckkpmkmhgbg = 2;</code>
-   * @return A list containing the ckkpmkmhgbg.
+   * <code>repeated string avatar_template_ids = 2;</code>
+   * @return A list containing the avatarTemplateIds.
    */
   public com.google.protobuf.ProtocolStringList
-      getCkkpmkmhgbgList() {
-    return ckkpmkmhgbg_;
+      getAvatarTemplateIdsList() {
+    return avatarTemplateIds_;
   }
   /**
-   * <code>repeated string ckkpmkmhgbg = 2;</code>
-   * @return The count of ckkpmkmhgbg.
+   * <code>repeated string avatar_template_ids = 2;</code>
+   * @return The count of avatarTemplateIds.
    */
-  public int getCkkpmkmhgbgCount() {
-    return ckkpmkmhgbg_.size();
+  public int getAvatarTemplateIdsCount() {
+    return avatarTemplateIds_.size();
   }
   /**
-   * <code>repeated string ckkpmkmhgbg = 2;</code>
+   * <code>repeated string avatar_template_ids = 2;</code>
    * @param index The index of the element to return.
-   * @return The ckkpmkmhgbg at the given index.
+   * @return The avatarTemplateIds at the given index.
    */
-  public java.lang.String getCkkpmkmhgbg(int index) {
-    return ckkpmkmhgbg_.get(index);
+  public java.lang.String getAvatarTemplateIds(int index) {
+    return avatarTemplateIds_.get(index);
   }
   /**
-   * <code>repeated string ckkpmkmhgbg = 2;</code>
+   * <code>repeated string avatar_template_ids = 2;</code>
    * @param index The index of the value to return.
-   * @return The bytes of the ckkpmkmhgbg at the given index.
+   * @return The bytes of the avatarTemplateIds at the given index.
    */
   public com.google.protobuf.ByteString
-      getCkkpmkmhgbgBytes(int index) {
-    return ckkpmkmhgbg_.getByteString(index);
+      getAvatarTemplateIdsBytes(int index) {
+    return avatarTemplateIds_.getByteString(index);
   }
 
   private byte memoizedIsInitialized = -1;
@@ -163,11 +163,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (fccpajmnogf_ != 0F) {
-      output.writeFloat(1, fccpajmnogf_);
+    if (captureRewardMultiplier_ != 0F) {
+      output.writeFloat(1, captureRewardMultiplier_);
     }
-    for (int i = 0; i < ckkpmkmhgbg_.size(); i++) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, ckkpmkmhgbg_.getRaw(i));
+    for (int i = 0; i < avatarTemplateIds_.size(); i++) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, avatarTemplateIds_.getRaw(i));
     }
     unknownFields.writeTo(output);
   }
@@ -178,17 +178,17 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (fccpajmnogf_ != 0F) {
+    if (captureRewardMultiplier_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(1, fccpajmnogf_);
+        .computeFloatSize(1, captureRewardMultiplier_);
     }
     {
       int dataSize = 0;
-      for (int i = 0; i < ckkpmkmhgbg_.size(); i++) {
-        dataSize += computeStringSizeNoTag(ckkpmkmhgbg_.getRaw(i));
+      for (int i = 0; i < avatarTemplateIds_.size(); i++) {
+        dataSize += computeStringSizeNoTag(avatarTemplateIds_.getRaw(i));
       }
       size += dataSize;
-      size += 1 * getCkkpmkmhgbgList().size();
+      size += 1 * getAvatarTemplateIdsList().size();
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -205,11 +205,11 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.BadgeCaptureReward other = (POGOProtos.Rpc.BadgeCaptureReward) obj;
 
-    if (java.lang.Float.floatToIntBits(getFccpajmnogf())
+    if (java.lang.Float.floatToIntBits(getCaptureRewardMultiplier())
         != java.lang.Float.floatToIntBits(
-            other.getFccpajmnogf())) return false;
-    if (!getCkkpmkmhgbgList()
-        .equals(other.getCkkpmkmhgbgList())) return false;
+            other.getCaptureRewardMultiplier())) return false;
+    if (!getAvatarTemplateIdsList()
+        .equals(other.getAvatarTemplateIdsList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -221,12 +221,12 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + FCCPAJMNOGF_FIELD_NUMBER;
+    hash = (37 * hash) + CAPTURE_REWARD_MULTIPLIER_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getFccpajmnogf());
-    if (getCkkpmkmhgbgCount() > 0) {
-      hash = (37 * hash) + CKKPMKMHGBG_FIELD_NUMBER;
-      hash = (53 * hash) + getCkkpmkmhgbgList().hashCode();
+        getCaptureRewardMultiplier());
+    if (getAvatarTemplateIdsCount() > 0) {
+      hash = (37 * hash) + AVATAR_TEMPLATE_IDS_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarTemplateIdsList().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -365,9 +365,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      fccpajmnogf_ = 0F;
+      captureRewardMultiplier_ = 0F;
 
-      ckkpmkmhgbg_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      avatarTemplateIds_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
@@ -396,12 +396,12 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.BadgeCaptureReward buildPartial() {
       POGOProtos.Rpc.BadgeCaptureReward result = new POGOProtos.Rpc.BadgeCaptureReward(this);
       int from_bitField0_ = bitField0_;
-      result.fccpajmnogf_ = fccpajmnogf_;
+      result.captureRewardMultiplier_ = captureRewardMultiplier_;
       if (((bitField0_ & 0x00000001) != 0)) {
-        ckkpmkmhgbg_ = ckkpmkmhgbg_.getUnmodifiableView();
+        avatarTemplateIds_ = avatarTemplateIds_.getUnmodifiableView();
         bitField0_ = (bitField0_ & ~0x00000001);
       }
-      result.ckkpmkmhgbg_ = ckkpmkmhgbg_;
+      result.avatarTemplateIds_ = avatarTemplateIds_;
       onBuilt();
       return result;
     }
@@ -450,16 +450,16 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.BadgeCaptureReward other) {
       if (other == POGOProtos.Rpc.BadgeCaptureReward.getDefaultInstance()) return this;
-      if (other.getFccpajmnogf() != 0F) {
-        setFccpajmnogf(other.getFccpajmnogf());
+      if (other.getCaptureRewardMultiplier() != 0F) {
+        setCaptureRewardMultiplier(other.getCaptureRewardMultiplier());
       }
-      if (!other.ckkpmkmhgbg_.isEmpty()) {
-        if (ckkpmkmhgbg_.isEmpty()) {
-          ckkpmkmhgbg_ = other.ckkpmkmhgbg_;
+      if (!other.avatarTemplateIds_.isEmpty()) {
+        if (avatarTemplateIds_.isEmpty()) {
+          avatarTemplateIds_ = other.avatarTemplateIds_;
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          ensureCkkpmkmhgbgIsMutable();
-          ckkpmkmhgbg_.addAll(other.ckkpmkmhgbg_);
+          ensureAvatarTemplateIdsIsMutable();
+          avatarTemplateIds_.addAll(other.avatarTemplateIds_);
         }
         onChanged();
       }
@@ -493,143 +493,143 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private float fccpajmnogf_ ;
+    private float captureRewardMultiplier_ ;
     /**
-     * <code>float fccpajmnogf = 1;</code>
-     * @return The fccpajmnogf.
+     * <code>float capture_reward_multiplier = 1;</code>
+     * @return The captureRewardMultiplier.
      */
     @java.lang.Override
-    public float getFccpajmnogf() {
-      return fccpajmnogf_;
+    public float getCaptureRewardMultiplier() {
+      return captureRewardMultiplier_;
     }
     /**
-     * <code>float fccpajmnogf = 1;</code>
-     * @param value The fccpajmnogf to set.
+     * <code>float capture_reward_multiplier = 1;</code>
+     * @param value The captureRewardMultiplier to set.
      * @return This builder for chaining.
      */
-    public Builder setFccpajmnogf(float value) {
+    public Builder setCaptureRewardMultiplier(float value) {
       
-      fccpajmnogf_ = value;
+      captureRewardMultiplier_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float fccpajmnogf = 1;</code>
+     * <code>float capture_reward_multiplier = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearFccpajmnogf() {
+    public Builder clearCaptureRewardMultiplier() {
       
-      fccpajmnogf_ = 0F;
+      captureRewardMultiplier_ = 0F;
       onChanged();
       return this;
     }
 
-    private com.google.protobuf.LazyStringList ckkpmkmhgbg_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-    private void ensureCkkpmkmhgbgIsMutable() {
+    private com.google.protobuf.LazyStringList avatarTemplateIds_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private void ensureAvatarTemplateIdsIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        ckkpmkmhgbg_ = new com.google.protobuf.LazyStringArrayList(ckkpmkmhgbg_);
+        avatarTemplateIds_ = new com.google.protobuf.LazyStringArrayList(avatarTemplateIds_);
         bitField0_ |= 0x00000001;
        }
     }
     /**
-     * <code>repeated string ckkpmkmhgbg = 2;</code>
-     * @return A list containing the ckkpmkmhgbg.
+     * <code>repeated string avatar_template_ids = 2;</code>
+     * @return A list containing the avatarTemplateIds.
      */
     public com.google.protobuf.ProtocolStringList
-        getCkkpmkmhgbgList() {
-      return ckkpmkmhgbg_.getUnmodifiableView();
+        getAvatarTemplateIdsList() {
+      return avatarTemplateIds_.getUnmodifiableView();
     }
     /**
-     * <code>repeated string ckkpmkmhgbg = 2;</code>
-     * @return The count of ckkpmkmhgbg.
+     * <code>repeated string avatar_template_ids = 2;</code>
+     * @return The count of avatarTemplateIds.
      */
-    public int getCkkpmkmhgbgCount() {
-      return ckkpmkmhgbg_.size();
+    public int getAvatarTemplateIdsCount() {
+      return avatarTemplateIds_.size();
     }
     /**
-     * <code>repeated string ckkpmkmhgbg = 2;</code>
+     * <code>repeated string avatar_template_ids = 2;</code>
      * @param index The index of the element to return.
-     * @return The ckkpmkmhgbg at the given index.
+     * @return The avatarTemplateIds at the given index.
      */
-    public java.lang.String getCkkpmkmhgbg(int index) {
-      return ckkpmkmhgbg_.get(index);
+    public java.lang.String getAvatarTemplateIds(int index) {
+      return avatarTemplateIds_.get(index);
     }
     /**
-     * <code>repeated string ckkpmkmhgbg = 2;</code>
+     * <code>repeated string avatar_template_ids = 2;</code>
      * @param index The index of the value to return.
-     * @return The bytes of the ckkpmkmhgbg at the given index.
+     * @return The bytes of the avatarTemplateIds at the given index.
      */
     public com.google.protobuf.ByteString
-        getCkkpmkmhgbgBytes(int index) {
-      return ckkpmkmhgbg_.getByteString(index);
+        getAvatarTemplateIdsBytes(int index) {
+      return avatarTemplateIds_.getByteString(index);
     }
     /**
-     * <code>repeated string ckkpmkmhgbg = 2;</code>
+     * <code>repeated string avatar_template_ids = 2;</code>
      * @param index The index to set the value at.
-     * @param value The ckkpmkmhgbg to set.
+     * @param value The avatarTemplateIds to set.
      * @return This builder for chaining.
      */
-    public Builder setCkkpmkmhgbg(
+    public Builder setAvatarTemplateIds(
         int index, java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
-  ensureCkkpmkmhgbgIsMutable();
-      ckkpmkmhgbg_.set(index, value);
+  ensureAvatarTemplateIdsIsMutable();
+      avatarTemplateIds_.set(index, value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string ckkpmkmhgbg = 2;</code>
-     * @param value The ckkpmkmhgbg to add.
+     * <code>repeated string avatar_template_ids = 2;</code>
+     * @param value The avatarTemplateIds to add.
      * @return This builder for chaining.
      */
-    public Builder addCkkpmkmhgbg(
+    public Builder addAvatarTemplateIds(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
-  ensureCkkpmkmhgbgIsMutable();
-      ckkpmkmhgbg_.add(value);
+  ensureAvatarTemplateIdsIsMutable();
+      avatarTemplateIds_.add(value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string ckkpmkmhgbg = 2;</code>
-     * @param values The ckkpmkmhgbg to add.
+     * <code>repeated string avatar_template_ids = 2;</code>
+     * @param values The avatarTemplateIds to add.
      * @return This builder for chaining.
      */
-    public Builder addAllCkkpmkmhgbg(
+    public Builder addAllAvatarTemplateIds(
         java.lang.Iterable<java.lang.String> values) {
-      ensureCkkpmkmhgbgIsMutable();
+      ensureAvatarTemplateIdsIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-          values, ckkpmkmhgbg_);
+          values, avatarTemplateIds_);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string ckkpmkmhgbg = 2;</code>
+     * <code>repeated string avatar_template_ids = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearCkkpmkmhgbg() {
-      ckkpmkmhgbg_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    public Builder clearAvatarTemplateIds() {
+      avatarTemplateIds_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string ckkpmkmhgbg = 2;</code>
-     * @param value The bytes of the ckkpmkmhgbg to add.
+     * <code>repeated string avatar_template_ids = 2;</code>
+     * @param value The bytes of the avatarTemplateIds to add.
      * @return This builder for chaining.
      */
-    public Builder addCkkpmkmhgbgBytes(
+    public Builder addAvatarTemplateIdsBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-      ensureCkkpmkmhgbgIsMutable();
-      ckkpmkmhgbg_.add(value);
+      ensureAvatarTemplateIdsIsMutable();
+      avatarTemplateIds_.add(value);
       onChanged();
       return this;
     }

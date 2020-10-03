@@ -280,11 +280,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 314: {
-            POGOProtos.Rpc.IMNEFMNHMNA.Builder subBuilder = null;
+            POGOProtos.Rpc.PlayerCombatStatsProto.Builder subBuilder = null;
             if (ifkgplhgmji_ != null) {
               subBuilder = ifkgplhgmji_.toBuilder();
             }
-            ifkgplhgmji_ = input.readMessage(POGOProtos.Rpc.IMNEFMNHMNA.parser(), extensionRegistry);
+            ifkgplhgmji_ = input.readMessage(POGOProtos.Rpc.PlayerCombatStatsProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(ifkgplhgmji_);
               ifkgplhgmji_ = subBuilder.buildPartial();
@@ -1512,9 +1512,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int IFKGPLHGMJI_FIELD_NUMBER = 39;
-  private POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji_;
+  private POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji_;
   /**
-   * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+   * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
    * @return Whether the ifkgplhgmji field is set.
    */
   @java.lang.Override
@@ -1522,18 +1522,18 @@ private static final long serialVersionUID = 0L;
     return ifkgplhgmji_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+   * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
    * @return The ifkgplhgmji.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.IMNEFMNHMNA getIfkgplhgmji() {
-    return ifkgplhgmji_ == null ? POGOProtos.Rpc.IMNEFMNHMNA.getDefaultInstance() : ifkgplhgmji_;
+  public POGOProtos.Rpc.PlayerCombatStatsProto getIfkgplhgmji() {
+    return ifkgplhgmji_ == null ? POGOProtos.Rpc.PlayerCombatStatsProto.getDefaultInstance() : ifkgplhgmji_;
   }
   /**
-   * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+   * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.IMNEFMNHMNAOrBuilder getIfkgplhgmjiOrBuilder() {
+  public POGOProtos.Rpc.PlayerCombatStatsProtoOrBuilder getIfkgplhgmjiOrBuilder() {
     return getIfkgplhgmji();
   }
 
@@ -4241,31 +4241,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji_;
+    private POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.IMNEFMNHMNA, POGOProtos.Rpc.IMNEFMNHMNA.Builder, POGOProtos.Rpc.IMNEFMNHMNAOrBuilder> ifkgplhgmjiBuilder_;
+        POGOProtos.Rpc.PlayerCombatStatsProto, POGOProtos.Rpc.PlayerCombatStatsProto.Builder, POGOProtos.Rpc.PlayerCombatStatsProtoOrBuilder> ifkgplhgmjiBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+     * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
      * @return Whether the ifkgplhgmji field is set.
      */
     public boolean hasIfkgplhgmji() {
       return ifkgplhgmjiBuilder_ != null || ifkgplhgmji_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+     * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
      * @return The ifkgplhgmji.
      */
-    public POGOProtos.Rpc.IMNEFMNHMNA getIfkgplhgmji() {
+    public POGOProtos.Rpc.PlayerCombatStatsProto getIfkgplhgmji() {
       if (ifkgplhgmjiBuilder_ == null) {
-        return ifkgplhgmji_ == null ? POGOProtos.Rpc.IMNEFMNHMNA.getDefaultInstance() : ifkgplhgmji_;
+        return ifkgplhgmji_ == null ? POGOProtos.Rpc.PlayerCombatStatsProto.getDefaultInstance() : ifkgplhgmji_;
       } else {
         return ifkgplhgmjiBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+     * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
      */
-    public Builder setIfkgplhgmji(POGOProtos.Rpc.IMNEFMNHMNA value) {
+    public Builder setIfkgplhgmji(POGOProtos.Rpc.PlayerCombatStatsProto value) {
       if (ifkgplhgmjiBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -4279,10 +4279,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+     * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
      */
     public Builder setIfkgplhgmji(
-        POGOProtos.Rpc.IMNEFMNHMNA.Builder builderForValue) {
+        POGOProtos.Rpc.PlayerCombatStatsProto.Builder builderForValue) {
       if (ifkgplhgmjiBuilder_ == null) {
         ifkgplhgmji_ = builderForValue.build();
         onChanged();
@@ -4293,13 +4293,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+     * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
      */
-    public Builder mergeIfkgplhgmji(POGOProtos.Rpc.IMNEFMNHMNA value) {
+    public Builder mergeIfkgplhgmji(POGOProtos.Rpc.PlayerCombatStatsProto value) {
       if (ifkgplhgmjiBuilder_ == null) {
         if (ifkgplhgmji_ != null) {
           ifkgplhgmji_ =
-            POGOProtos.Rpc.IMNEFMNHMNA.newBuilder(ifkgplhgmji_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlayerCombatStatsProto.newBuilder(ifkgplhgmji_).mergeFrom(value).buildPartial();
         } else {
           ifkgplhgmji_ = value;
         }
@@ -4311,7 +4311,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+     * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
      */
     public Builder clearIfkgplhgmji() {
       if (ifkgplhgmjiBuilder_ == null) {
@@ -4325,33 +4325,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+     * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
      */
-    public POGOProtos.Rpc.IMNEFMNHMNA.Builder getIfkgplhgmjiBuilder() {
+    public POGOProtos.Rpc.PlayerCombatStatsProto.Builder getIfkgplhgmjiBuilder() {
       
       onChanged();
       return getIfkgplhgmjiFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+     * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
      */
-    public POGOProtos.Rpc.IMNEFMNHMNAOrBuilder getIfkgplhgmjiOrBuilder() {
+    public POGOProtos.Rpc.PlayerCombatStatsProtoOrBuilder getIfkgplhgmjiOrBuilder() {
       if (ifkgplhgmjiBuilder_ != null) {
         return ifkgplhgmjiBuilder_.getMessageOrBuilder();
       } else {
         return ifkgplhgmji_ == null ?
-            POGOProtos.Rpc.IMNEFMNHMNA.getDefaultInstance() : ifkgplhgmji_;
+            POGOProtos.Rpc.PlayerCombatStatsProto.getDefaultInstance() : ifkgplhgmji_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.IMNEFMNHMNA ifkgplhgmji = 39;</code>
+     * <code>.POGOProtos.Rpc.PlayerCombatStatsProto ifkgplhgmji = 39;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.IMNEFMNHMNA, POGOProtos.Rpc.IMNEFMNHMNA.Builder, POGOProtos.Rpc.IMNEFMNHMNAOrBuilder> 
+        POGOProtos.Rpc.PlayerCombatStatsProto, POGOProtos.Rpc.PlayerCombatStatsProto.Builder, POGOProtos.Rpc.PlayerCombatStatsProtoOrBuilder> 
         getIfkgplhgmjiFieldBuilder() {
       if (ifkgplhgmjiBuilder_ == null) {
         ifkgplhgmjiBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.IMNEFMNHMNA, POGOProtos.Rpc.IMNEFMNHMNA.Builder, POGOProtos.Rpc.IMNEFMNHMNAOrBuilder>(
+            POGOProtos.Rpc.PlayerCombatStatsProto, POGOProtos.Rpc.PlayerCombatStatsProto.Builder, POGOProtos.Rpc.PlayerCombatStatsProtoOrBuilder>(
                 getIfkgplhgmji(),
                 getParentForChildren(),
                 isClean());

@@ -8,127 +8,127 @@ public interface BattleActionProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.BattleActionProto.ActionType gnkgaimjkch = 1;</code>
-   * @return The enum numeric value on the wire for gnkgaimjkch.
+   * <code>.POGOProtos.Rpc.BattleActionProto.ActionType type = 1;</code>
+   * @return The enum numeric value on the wire for type.
    */
-  int getGnkgaimjkchValue();
+  int getTypeValue();
   /**
-   * <code>.POGOProtos.Rpc.BattleActionProto.ActionType gnkgaimjkch = 1;</code>
-   * @return The gnkgaimjkch.
+   * <code>.POGOProtos.Rpc.BattleActionProto.ActionType type = 1;</code>
+   * @return The type.
    */
-  POGOProtos.Rpc.BattleActionProto.ActionType getGnkgaimjkch();
+  POGOProtos.Rpc.BattleActionProto.ActionType getType();
 
   /**
-   * <code>int64 bfdecmfknbn = 2;</code>
-   * @return The bfdecmfknbn.
+   * <code>int64 action_start_ms = 2;</code>
+   * @return The actionStartMs.
    */
-  long getBfdecmfknbn();
+  long getActionStartMs();
 
   /**
-   * <code>int32 pifklnodglf = 3;</code>
-   * @return The pifklnodglf.
+   * <code>int32 duration_ms = 3;</code>
+   * @return The durationMs.
    */
-  int getPifklnodglf();
+  int getDurationMs();
 
   /**
-   * <code>int32 jlpbgbgfoim = 5;</code>
-   * @return The jlpbgbgfoim.
+   * <code>int32 energy_delta = 5;</code>
+   * @return The energyDelta.
    */
-  int getJlpbgbgfoim();
+  int getEnergyDelta();
 
   /**
-   * <code>int32 fpinkpobima = 6;</code>
-   * @return The fpinkpobima.
+   * <code>int32 attacker_index = 6;</code>
+   * @return The attackerIndex.
    */
-  int getFpinkpobima();
+  int getAttackerIndex();
 
   /**
-   * <code>int32 dhbchblnmec = 7;</code>
-   * @return The dhbchblnmec.
+   * <code>int32 target_index = 7;</code>
+   * @return The targetIndex.
    */
-  int getDhbchblnmec();
+  int getTargetIndex();
 
   /**
-   * <code>uint64 mcmcjgaiaec = 8;</code>
-   * @return The mcmcjgaiaec.
+   * <code>fixed64 active_pokemon_id = 8;</code>
+   * @return The activePokemonId.
    */
-  long getMcmcjgaiaec();
+  long getActivePokemonId();
 
   /**
-   * <code>.POGOProtos.Rpc.BattleParticipantProto cejoiijjpgb = 9;</code>
-   * @return Whether the cejoiijjpgb field is set.
+   * <code>.POGOProtos.Rpc.BattleParticipantProto joined_player = 9;</code>
+   * @return Whether the joinedPlayer field is set.
    */
-  boolean hasCejoiijjpgb();
+  boolean hasJoinedPlayer();
   /**
-   * <code>.POGOProtos.Rpc.BattleParticipantProto cejoiijjpgb = 9;</code>
-   * @return The cejoiijjpgb.
+   * <code>.POGOProtos.Rpc.BattleParticipantProto joined_player = 9;</code>
+   * @return The joinedPlayer.
    */
-  POGOProtos.Rpc.BattleParticipantProto getCejoiijjpgb();
+  POGOProtos.Rpc.BattleParticipantProto getJoinedPlayer();
   /**
-   * <code>.POGOProtos.Rpc.BattleParticipantProto cejoiijjpgb = 9;</code>
+   * <code>.POGOProtos.Rpc.BattleParticipantProto joined_player = 9;</code>
    */
-  POGOProtos.Rpc.BattleParticipantProtoOrBuilder getCejoiijjpgbOrBuilder();
+  POGOProtos.Rpc.BattleParticipantProtoOrBuilder getJoinedPlayerOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BattleResultsProto bdaimiebpjh = 10;</code>
-   * @return Whether the bdaimiebpjh field is set.
+   * <code>.POGOProtos.Rpc.BattleResultsProto battle_results = 10;</code>
+   * @return Whether the battleResults field is set.
    */
-  boolean hasBdaimiebpjh();
+  boolean hasBattleResults();
   /**
-   * <code>.POGOProtos.Rpc.BattleResultsProto bdaimiebpjh = 10;</code>
-   * @return The bdaimiebpjh.
+   * <code>.POGOProtos.Rpc.BattleResultsProto battle_results = 10;</code>
+   * @return The battleResults.
    */
-  POGOProtos.Rpc.BattleResultsProto getBdaimiebpjh();
+  POGOProtos.Rpc.BattleResultsProto getBattleResults();
   /**
-   * <code>.POGOProtos.Rpc.BattleResultsProto bdaimiebpjh = 10;</code>
+   * <code>.POGOProtos.Rpc.BattleResultsProto battle_results = 10;</code>
    */
-  POGOProtos.Rpc.BattleResultsProtoOrBuilder getBdaimiebpjhOrBuilder();
+  POGOProtos.Rpc.BattleResultsProtoOrBuilder getBattleResultsOrBuilder();
 
   /**
-   * <code>int64 blhkmpmkced = 11;</code>
-   * @return The blhkmpmkced.
+   * <code>int64 damage_window_start_ms = 11;</code>
+   * @return The damageWindowStartMs.
    */
-  long getBlhkmpmkced();
+  long getDamageWindowStartMs();
 
   /**
-   * <code>int64 dndhpofaelj = 12;</code>
-   * @return The dndhpofaelj.
+   * <code>int64 damage_window_end_ms = 12;</code>
+   * @return The damageWindowEndMs.
    */
-  long getDndhpofaelj();
+  long getDamageWindowEndMs();
 
   /**
-   * <code>.POGOProtos.Rpc.BattleParticipantProto bdbbbdjbmbl = 13;</code>
-   * @return Whether the bdbbbdjbmbl field is set.
+   * <code>.POGOProtos.Rpc.BattleParticipantProto quit_player = 13;</code>
+   * @return Whether the quitPlayer field is set.
    */
-  boolean hasBdbbbdjbmbl();
+  boolean hasQuitPlayer();
   /**
-   * <code>.POGOProtos.Rpc.BattleParticipantProto bdbbbdjbmbl = 13;</code>
-   * @return The bdbbbdjbmbl.
+   * <code>.POGOProtos.Rpc.BattleParticipantProto quit_player = 13;</code>
+   * @return The quitPlayer.
    */
-  POGOProtos.Rpc.BattleParticipantProto getBdbbbdjbmbl();
+  POGOProtos.Rpc.BattleParticipantProto getQuitPlayer();
   /**
-   * <code>.POGOProtos.Rpc.BattleParticipantProto bdbbbdjbmbl = 13;</code>
+   * <code>.POGOProtos.Rpc.BattleParticipantProto quit_player = 13;</code>
    */
-  POGOProtos.Rpc.BattleParticipantProtoOrBuilder getBdbbbdjbmblOrBuilder();
+  POGOProtos.Rpc.BattleParticipantProtoOrBuilder getQuitPlayerOrBuilder();
 
   /**
-   * <code>uint64 dlgdgnjagoo = 14;</code>
-   * @return The dlgdgnjagoo.
+   * <code>fixed64 target_pokemon_id = 14;</code>
+   * @return The targetPokemonId.
    */
-  long getDlgdgnjagoo();
+  long getTargetPokemonId();
 
   /**
-   * <code>.POGOProtos.Rpc.LeveledUpFriendsProto flgmceonepp = 15;</code>
-   * @return Whether the flgmceonepp field is set.
+   * <code>.POGOProtos.Rpc.LeveledUpFriendsProto leveled_up_friends = 15;</code>
+   * @return Whether the leveledUpFriends field is set.
    */
-  boolean hasFlgmceonepp();
+  boolean hasLeveledUpFriends();
   /**
-   * <code>.POGOProtos.Rpc.LeveledUpFriendsProto flgmceonepp = 15;</code>
-   * @return The flgmceonepp.
+   * <code>.POGOProtos.Rpc.LeveledUpFriendsProto leveled_up_friends = 15;</code>
+   * @return The leveledUpFriends.
    */
-  POGOProtos.Rpc.LeveledUpFriendsProto getFlgmceonepp();
+  POGOProtos.Rpc.LeveledUpFriendsProto getLeveledUpFriends();
   /**
-   * <code>.POGOProtos.Rpc.LeveledUpFriendsProto flgmceonepp = 15;</code>
+   * <code>.POGOProtos.Rpc.LeveledUpFriendsProto leveled_up_friends = 15;</code>
    */
-  POGOProtos.Rpc.LeveledUpFriendsProtoOrBuilder getFlgmceoneppOrBuilder();
+  POGOProtos.Rpc.LeveledUpFriendsProtoOrBuilder getLeveledUpFriendsOrBuilder();
 }

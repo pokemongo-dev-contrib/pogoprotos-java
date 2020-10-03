@@ -68,11 +68,11 @@ private static final long serialVersionUID = 0L;
           }
           case 26: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              gifoejepgid_ = new java.util.ArrayList<POGOProtos.Rpc.MDJDKBIAJBL>();
+              gifoejepgid_ = new java.util.ArrayList<POGOProtos.Rpc.StickerSentProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             gifoejepgid_.add(
-                input.readMessage(POGOProtos.Rpc.MDJDKBIAJBL.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.StickerSentProto.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -160,41 +160,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GIFOEJEPGID_FIELD_NUMBER = 3;
-  private java.util.List<POGOProtos.Rpc.MDJDKBIAJBL> gifoejepgid_;
+  private java.util.List<POGOProtos.Rpc.StickerSentProto> gifoejepgid_;
   /**
-   * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.MDJDKBIAJBL> getGifoejepgidList() {
+  public java.util.List<POGOProtos.Rpc.StickerSentProto> getGifoejepgidList() {
     return gifoejepgid_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.MDJDKBIAJBLOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.StickerSentProtoOrBuilder> 
       getGifoejepgidOrBuilderList() {
     return gifoejepgid_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
    */
   @java.lang.Override
   public int getGifoejepgidCount() {
     return gifoejepgid_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.MDJDKBIAJBL getGifoejepgid(int index) {
+  public POGOProtos.Rpc.StickerSentProto getGifoejepgid(int index) {
     return gifoejepgid_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.MDJDKBIAJBLOrBuilder getGifoejepgidOrBuilder(
+  public POGOProtos.Rpc.StickerSentProtoOrBuilder getGifoejepgidOrBuilder(
       int index) {
     return gifoejepgid_.get(index);
   }
@@ -687,22 +687,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.MDJDKBIAJBL> gifoejepgid_ =
+    private java.util.List<POGOProtos.Rpc.StickerSentProto> gifoejepgid_ =
       java.util.Collections.emptyList();
     private void ensureGifoejepgidIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        gifoejepgid_ = new java.util.ArrayList<POGOProtos.Rpc.MDJDKBIAJBL>(gifoejepgid_);
+        gifoejepgid_ = new java.util.ArrayList<POGOProtos.Rpc.StickerSentProto>(gifoejepgid_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.MDJDKBIAJBL, POGOProtos.Rpc.MDJDKBIAJBL.Builder, POGOProtos.Rpc.MDJDKBIAJBLOrBuilder> gifoejepgidBuilder_;
+        POGOProtos.Rpc.StickerSentProto, POGOProtos.Rpc.StickerSentProto.Builder, POGOProtos.Rpc.StickerSentProtoOrBuilder> gifoejepgidBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
-    public java.util.List<POGOProtos.Rpc.MDJDKBIAJBL> getGifoejepgidList() {
+    public java.util.List<POGOProtos.Rpc.StickerSentProto> getGifoejepgidList() {
       if (gifoejepgidBuilder_ == null) {
         return java.util.Collections.unmodifiableList(gifoejepgid_);
       } else {
@@ -710,7 +710,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
     public int getGifoejepgidCount() {
       if (gifoejepgidBuilder_ == null) {
@@ -720,9 +720,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
-    public POGOProtos.Rpc.MDJDKBIAJBL getGifoejepgid(int index) {
+    public POGOProtos.Rpc.StickerSentProto getGifoejepgid(int index) {
       if (gifoejepgidBuilder_ == null) {
         return gifoejepgid_.get(index);
       } else {
@@ -730,10 +730,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
     public Builder setGifoejepgid(
-        int index, POGOProtos.Rpc.MDJDKBIAJBL value) {
+        int index, POGOProtos.Rpc.StickerSentProto value) {
       if (gifoejepgidBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -747,10 +747,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
     public Builder setGifoejepgid(
-        int index, POGOProtos.Rpc.MDJDKBIAJBL.Builder builderForValue) {
+        int index, POGOProtos.Rpc.StickerSentProto.Builder builderForValue) {
       if (gifoejepgidBuilder_ == null) {
         ensureGifoejepgidIsMutable();
         gifoejepgid_.set(index, builderForValue.build());
@@ -761,9 +761,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
-    public Builder addGifoejepgid(POGOProtos.Rpc.MDJDKBIAJBL value) {
+    public Builder addGifoejepgid(POGOProtos.Rpc.StickerSentProto value) {
       if (gifoejepgidBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -777,10 +777,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
     public Builder addGifoejepgid(
-        int index, POGOProtos.Rpc.MDJDKBIAJBL value) {
+        int index, POGOProtos.Rpc.StickerSentProto value) {
       if (gifoejepgidBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -794,10 +794,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
     public Builder addGifoejepgid(
-        POGOProtos.Rpc.MDJDKBIAJBL.Builder builderForValue) {
+        POGOProtos.Rpc.StickerSentProto.Builder builderForValue) {
       if (gifoejepgidBuilder_ == null) {
         ensureGifoejepgidIsMutable();
         gifoejepgid_.add(builderForValue.build());
@@ -808,10 +808,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
     public Builder addGifoejepgid(
-        int index, POGOProtos.Rpc.MDJDKBIAJBL.Builder builderForValue) {
+        int index, POGOProtos.Rpc.StickerSentProto.Builder builderForValue) {
       if (gifoejepgidBuilder_ == null) {
         ensureGifoejepgidIsMutable();
         gifoejepgid_.add(index, builderForValue.build());
@@ -822,10 +822,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
     public Builder addAllGifoejepgid(
-        java.lang.Iterable<? extends POGOProtos.Rpc.MDJDKBIAJBL> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.StickerSentProto> values) {
       if (gifoejepgidBuilder_ == null) {
         ensureGifoejepgidIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -837,7 +837,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
     public Builder clearGifoejepgid() {
       if (gifoejepgidBuilder_ == null) {
@@ -850,7 +850,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
     public Builder removeGifoejepgid(int index) {
       if (gifoejepgidBuilder_ == null) {
@@ -863,16 +863,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
-    public POGOProtos.Rpc.MDJDKBIAJBL.Builder getGifoejepgidBuilder(
+    public POGOProtos.Rpc.StickerSentProto.Builder getGifoejepgidBuilder(
         int index) {
       return getGifoejepgidFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
-    public POGOProtos.Rpc.MDJDKBIAJBLOrBuilder getGifoejepgidOrBuilder(
+    public POGOProtos.Rpc.StickerSentProtoOrBuilder getGifoejepgidOrBuilder(
         int index) {
       if (gifoejepgidBuilder_ == null) {
         return gifoejepgid_.get(index);  } else {
@@ -880,9 +880,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.MDJDKBIAJBLOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.StickerSentProtoOrBuilder> 
          getGifoejepgidOrBuilderList() {
       if (gifoejepgidBuilder_ != null) {
         return gifoejepgidBuilder_.getMessageOrBuilderList();
@@ -891,33 +891,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
-    public POGOProtos.Rpc.MDJDKBIAJBL.Builder addGifoejepgidBuilder() {
+    public POGOProtos.Rpc.StickerSentProto.Builder addGifoejepgidBuilder() {
       return getGifoejepgidFieldBuilder().addBuilder(
-          POGOProtos.Rpc.MDJDKBIAJBL.getDefaultInstance());
+          POGOProtos.Rpc.StickerSentProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
-    public POGOProtos.Rpc.MDJDKBIAJBL.Builder addGifoejepgidBuilder(
+    public POGOProtos.Rpc.StickerSentProto.Builder addGifoejepgidBuilder(
         int index) {
       return getGifoejepgidFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.MDJDKBIAJBL.getDefaultInstance());
+          index, POGOProtos.Rpc.StickerSentProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MDJDKBIAJBL gifoejepgid = 3;</code>
+     * <code>repeated .POGOProtos.Rpc.StickerSentProto gifoejepgid = 3;</code>
      */
-    public java.util.List<POGOProtos.Rpc.MDJDKBIAJBL.Builder> 
+    public java.util.List<POGOProtos.Rpc.StickerSentProto.Builder> 
          getGifoejepgidBuilderList() {
       return getGifoejepgidFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.MDJDKBIAJBL, POGOProtos.Rpc.MDJDKBIAJBL.Builder, POGOProtos.Rpc.MDJDKBIAJBLOrBuilder> 
+        POGOProtos.Rpc.StickerSentProto, POGOProtos.Rpc.StickerSentProto.Builder, POGOProtos.Rpc.StickerSentProtoOrBuilder> 
         getGifoejepgidFieldBuilder() {
       if (gifoejepgidBuilder_ == null) {
         gifoejepgidBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.MDJDKBIAJBL, POGOProtos.Rpc.MDJDKBIAJBL.Builder, POGOProtos.Rpc.MDJDKBIAJBLOrBuilder>(
+            POGOProtos.Rpc.StickerSentProto, POGOProtos.Rpc.StickerSentProto.Builder, POGOProtos.Rpc.StickerSentProtoOrBuilder>(
                 gifoejepgid_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

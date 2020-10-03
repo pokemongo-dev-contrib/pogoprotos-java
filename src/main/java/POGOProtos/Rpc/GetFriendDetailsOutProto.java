@@ -63,11 +63,11 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              friend_ = new java.util.ArrayList<POGOProtos.Rpc.FriendDetailsProto>();
+              friend_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformFriendDetailsProto>();
               mutable_bitField0_ |= 0x00000001;
             }
             friend_.add(
-                input.readMessage(POGOProtos.Rpc.FriendDetailsProto.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.PlatformFriendDetailsProto.parser(), extensionRegistry));
             break;
           }
           case 26: {
@@ -1690,41 +1690,41 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int FRIEND_FIELD_NUMBER = 2;
-  private java.util.List<POGOProtos.Rpc.FriendDetailsProto> friend_;
+  private java.util.List<POGOProtos.Rpc.PlatformFriendDetailsProto> friend_;
   /**
-   * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.FriendDetailsProto> getFriendList() {
+  public java.util.List<POGOProtos.Rpc.PlatformFriendDetailsProto> getFriendList() {
     return friend_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.FriendDetailsProtoOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder> 
       getFriendOrBuilderList() {
     return friend_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
   @java.lang.Override
   public int getFriendCount() {
     return friend_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.FriendDetailsProto getFriend(int index) {
+  public POGOProtos.Rpc.PlatformFriendDetailsProto getFriend(int index) {
     return friend_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.FriendDetailsProtoOrBuilder getFriendOrBuilder(
+  public POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder getFriendOrBuilder(
       int index) {
     return friend_.get(index);
   }
@@ -2201,22 +2201,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.FriendDetailsProto> friend_ =
+    private java.util.List<POGOProtos.Rpc.PlatformFriendDetailsProto> friend_ =
       java.util.Collections.emptyList();
     private void ensureFriendIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        friend_ = new java.util.ArrayList<POGOProtos.Rpc.FriendDetailsProto>(friend_);
+        friend_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformFriendDetailsProto>(friend_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.FriendDetailsProto, POGOProtos.Rpc.FriendDetailsProto.Builder, POGOProtos.Rpc.FriendDetailsProtoOrBuilder> friendBuilder_;
+        POGOProtos.Rpc.PlatformFriendDetailsProto, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder, POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder> friendBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.FriendDetailsProto> getFriendList() {
+    public java.util.List<POGOProtos.Rpc.PlatformFriendDetailsProto> getFriendList() {
       if (friendBuilder_ == null) {
         return java.util.Collections.unmodifiableList(friend_);
       } else {
@@ -2224,7 +2224,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
     public int getFriendCount() {
       if (friendBuilder_ == null) {
@@ -2234,9 +2234,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
-    public POGOProtos.Rpc.FriendDetailsProto getFriend(int index) {
+    public POGOProtos.Rpc.PlatformFriendDetailsProto getFriend(int index) {
       if (friendBuilder_ == null) {
         return friend_.get(index);
       } else {
@@ -2244,10 +2244,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
     public Builder setFriend(
-        int index, POGOProtos.Rpc.FriendDetailsProto value) {
+        int index, POGOProtos.Rpc.PlatformFriendDetailsProto value) {
       if (friendBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2261,10 +2261,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
     public Builder setFriend(
-        int index, POGOProtos.Rpc.FriendDetailsProto.Builder builderForValue) {
+        int index, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder builderForValue) {
       if (friendBuilder_ == null) {
         ensureFriendIsMutable();
         friend_.set(index, builderForValue.build());
@@ -2275,9 +2275,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
-    public Builder addFriend(POGOProtos.Rpc.FriendDetailsProto value) {
+    public Builder addFriend(POGOProtos.Rpc.PlatformFriendDetailsProto value) {
       if (friendBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2291,10 +2291,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
     public Builder addFriend(
-        int index, POGOProtos.Rpc.FriendDetailsProto value) {
+        int index, POGOProtos.Rpc.PlatformFriendDetailsProto value) {
       if (friendBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2308,10 +2308,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
     public Builder addFriend(
-        POGOProtos.Rpc.FriendDetailsProto.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformFriendDetailsProto.Builder builderForValue) {
       if (friendBuilder_ == null) {
         ensureFriendIsMutable();
         friend_.add(builderForValue.build());
@@ -2322,10 +2322,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
     public Builder addFriend(
-        int index, POGOProtos.Rpc.FriendDetailsProto.Builder builderForValue) {
+        int index, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder builderForValue) {
       if (friendBuilder_ == null) {
         ensureFriendIsMutable();
         friend_.add(index, builderForValue.build());
@@ -2336,10 +2336,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
     public Builder addAllFriend(
-        java.lang.Iterable<? extends POGOProtos.Rpc.FriendDetailsProto> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.PlatformFriendDetailsProto> values) {
       if (friendBuilder_ == null) {
         ensureFriendIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2351,7 +2351,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
     public Builder clearFriend() {
       if (friendBuilder_ == null) {
@@ -2364,7 +2364,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
     public Builder removeFriend(int index) {
       if (friendBuilder_ == null) {
@@ -2377,16 +2377,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
-    public POGOProtos.Rpc.FriendDetailsProto.Builder getFriendBuilder(
+    public POGOProtos.Rpc.PlatformFriendDetailsProto.Builder getFriendBuilder(
         int index) {
       return getFriendFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
-    public POGOProtos.Rpc.FriendDetailsProtoOrBuilder getFriendOrBuilder(
+    public POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder getFriendOrBuilder(
         int index) {
       if (friendBuilder_ == null) {
         return friend_.get(index);  } else {
@@ -2394,9 +2394,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.FriendDetailsProtoOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder> 
          getFriendOrBuilderList() {
       if (friendBuilder_ != null) {
         return friendBuilder_.getMessageOrBuilderList();
@@ -2405,33 +2405,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
-    public POGOProtos.Rpc.FriendDetailsProto.Builder addFriendBuilder() {
+    public POGOProtos.Rpc.PlatformFriendDetailsProto.Builder addFriendBuilder() {
       return getFriendFieldBuilder().addBuilder(
-          POGOProtos.Rpc.FriendDetailsProto.getDefaultInstance());
+          POGOProtos.Rpc.PlatformFriendDetailsProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
-    public POGOProtos.Rpc.FriendDetailsProto.Builder addFriendBuilder(
+    public POGOProtos.Rpc.PlatformFriendDetailsProto.Builder addFriendBuilder(
         int index) {
       return getFriendFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.FriendDetailsProto.getDefaultInstance());
+          index, POGOProtos.Rpc.PlatformFriendDetailsProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.FriendDetailsProto friend = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.PlatformFriendDetailsProto friend = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.FriendDetailsProto.Builder> 
+    public java.util.List<POGOProtos.Rpc.PlatformFriendDetailsProto.Builder> 
          getFriendBuilderList() {
       return getFriendFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.FriendDetailsProto, POGOProtos.Rpc.FriendDetailsProto.Builder, POGOProtos.Rpc.FriendDetailsProtoOrBuilder> 
+        POGOProtos.Rpc.PlatformFriendDetailsProto, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder, POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder> 
         getFriendFieldBuilder() {
       if (friendBuilder_ == null) {
         friendBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.FriendDetailsProto, POGOProtos.Rpc.FriendDetailsProto.Builder, POGOProtos.Rpc.FriendDetailsProtoOrBuilder>(
+            POGOProtos.Rpc.PlatformFriendDetailsProto, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder, POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder>(
                 friend_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),

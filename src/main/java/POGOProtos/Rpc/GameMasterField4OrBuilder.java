@@ -31,27 +31,27 @@ public interface GameMasterField4OrBuilder extends
   POGOProtos.Rpc.QuestType getField2();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
    */
-  java.util.List<POGOProtos.Rpc.PFGPOIKPJFF> 
+  java.util.List<POGOProtos.Rpc.QuestGoalProto> 
       getField3List();
   /**
-   * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
    */
-  POGOProtos.Rpc.PFGPOIKPJFF getField3(int index);
+  POGOProtos.Rpc.QuestGoalProto getField3(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
    */
   int getField3Count();
   /**
-   * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.PFGPOIKPJFFOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.QuestGoalProtoOrBuilder> 
       getField3OrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PFGPOIKPJFF field3 = 3;</code>
+   * <code>repeated .POGOProtos.Rpc.QuestGoalProto field3 = 3;</code>
    */
-  POGOProtos.Rpc.PFGPOIKPJFFOrBuilder getField3OrBuilder(
+  POGOProtos.Rpc.QuestGoalProtoOrBuilder getField3OrBuilder(
       int index);
 
   /**

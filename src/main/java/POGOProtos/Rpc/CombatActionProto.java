@@ -20,7 +20,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private CombatActionProto() {
-    gnkgaimjkch_ = 0;
+    type_ = 0;
   }
 
   @java.lang.Override
@@ -56,47 +56,47 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            gnkgaimjkch_ = rawValue;
+            type_ = rawValue;
             break;
           }
           case 24: {
 
-            inchanehmfa_ = input.readInt32();
+            actionStartTurn_ = input.readInt32();
             break;
           }
           case 40: {
 
-            dmdcnoefklc_ = input.readInt32();
+            durationTurns_ = input.readInt32();
             break;
           }
           case 48: {
 
-            fpinkpobima_ = input.readInt32();
+            attackerIndex_ = input.readInt32();
             break;
           }
           case 56: {
 
-            dhbchblnmec_ = input.readInt32();
+            targetIndex_ = input.readInt32();
             break;
           }
-          case 64: {
+          case 65: {
 
-            mcmcjgaiaec_ = input.readUInt64();
+            activePokemonId_ = input.readFixed64();
             break;
           }
-          case 112: {
+          case 113: {
 
-            dlgdgnjagoo_ = input.readUInt64();
+            targetPokemonId_ = input.readFixed64();
             break;
           }
           case 125: {
 
-            fcfempciffe_ = input.readFloat();
+            minigameScore_ = input.readFloat();
             break;
           }
           case 128: {
 
-            lnjjofibmfe_ = input.readInt32();
+            move_ = input.readInt32();
             break;
           }
           default: {
@@ -136,9 +136,9 @@ private static final long serialVersionUID = 0L;
    * ref: OANEOIOHADA/EKALMLJPGNI/KENEKEMIGDB
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB}
+   * Protobuf enum {@code POGOProtos.Rpc.CombatActionProto.ActionType}
    */
-  public enum KENEKEMIGDB
+  public enum ActionType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNSET = 0;</code>
@@ -239,7 +239,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static KENEKEMIGDB valueOf(int value) {
+    public static ActionType valueOf(int value) {
       return forNumber(value);
     }
 
@@ -247,7 +247,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static KENEKEMIGDB forNumber(int value) {
+    public static ActionType forNumber(int value) {
       switch (value) {
         case 0: return UNSET;
         case 1: return ATTACK;
@@ -263,15 +263,15 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<KENEKEMIGDB>
+    public static com.google.protobuf.Internal.EnumLiteMap<ActionType>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        KENEKEMIGDB> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<KENEKEMIGDB>() {
-            public KENEKEMIGDB findValueByNumber(int number) {
-              return KENEKEMIGDB.forNumber(number);
+        ActionType> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ActionType>() {
+            public ActionType findValueByNumber(int number) {
+              return ActionType.forNumber(number);
             }
           };
 
@@ -292,9 +292,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.CombatActionProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final KENEKEMIGDB[] VALUES = values();
+    private static final ActionType[] VALUES = values();
 
-    public static KENEKEMIGDB valueOf(
+    public static ActionType valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -308,118 +308,118 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private KENEKEMIGDB(int value) {
+    private ActionType(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.CombatActionProto.ActionType)
   }
 
-  public static final int GNKGAIMJKCH_FIELD_NUMBER = 1;
-  private int gnkgaimjkch_;
+  public static final int TYPE_FIELD_NUMBER = 1;
+  private int type_;
   /**
-   * <code>.POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB gnkgaimjkch = 1;</code>
-   * @return The enum numeric value on the wire for gnkgaimjkch.
+   * <code>.POGOProtos.Rpc.CombatActionProto.ActionType type = 1;</code>
+   * @return The enum numeric value on the wire for type.
    */
-  @java.lang.Override public int getGnkgaimjkchValue() {
-    return gnkgaimjkch_;
+  @java.lang.Override public int getTypeValue() {
+    return type_;
   }
   /**
-   * <code>.POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB gnkgaimjkch = 1;</code>
-   * @return The gnkgaimjkch.
+   * <code>.POGOProtos.Rpc.CombatActionProto.ActionType type = 1;</code>
+   * @return The type.
    */
-  @java.lang.Override public POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB getGnkgaimjkch() {
+  @java.lang.Override public POGOProtos.Rpc.CombatActionProto.ActionType getType() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB result = POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB.valueOf(gnkgaimjkch_);
-    return result == null ? POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB.UNRECOGNIZED : result;
+    POGOProtos.Rpc.CombatActionProto.ActionType result = POGOProtos.Rpc.CombatActionProto.ActionType.valueOf(type_);
+    return result == null ? POGOProtos.Rpc.CombatActionProto.ActionType.UNRECOGNIZED : result;
   }
 
-  public static final int INCHANEHMFA_FIELD_NUMBER = 3;
-  private int inchanehmfa_;
+  public static final int ACTION_START_TURN_FIELD_NUMBER = 3;
+  private int actionStartTurn_;
   /**
-   * <code>int32 inchanehmfa = 3;</code>
-   * @return The inchanehmfa.
+   * <code>int32 action_start_turn = 3;</code>
+   * @return The actionStartTurn.
    */
   @java.lang.Override
-  public int getInchanehmfa() {
-    return inchanehmfa_;
+  public int getActionStartTurn() {
+    return actionStartTurn_;
   }
 
-  public static final int DMDCNOEFKLC_FIELD_NUMBER = 5;
-  private int dmdcnoefklc_;
+  public static final int DURATION_TURNS_FIELD_NUMBER = 5;
+  private int durationTurns_;
   /**
-   * <code>int32 dmdcnoefklc = 5;</code>
-   * @return The dmdcnoefklc.
+   * <code>int32 duration_turns = 5;</code>
+   * @return The durationTurns.
    */
   @java.lang.Override
-  public int getDmdcnoefklc() {
-    return dmdcnoefklc_;
+  public int getDurationTurns() {
+    return durationTurns_;
   }
 
-  public static final int FPINKPOBIMA_FIELD_NUMBER = 6;
-  private int fpinkpobima_;
+  public static final int ATTACKER_INDEX_FIELD_NUMBER = 6;
+  private int attackerIndex_;
   /**
-   * <code>int32 fpinkpobima = 6;</code>
-   * @return The fpinkpobima.
+   * <code>int32 attacker_index = 6;</code>
+   * @return The attackerIndex.
    */
   @java.lang.Override
-  public int getFpinkpobima() {
-    return fpinkpobima_;
+  public int getAttackerIndex() {
+    return attackerIndex_;
   }
 
-  public static final int DHBCHBLNMEC_FIELD_NUMBER = 7;
-  private int dhbchblnmec_;
+  public static final int TARGET_INDEX_FIELD_NUMBER = 7;
+  private int targetIndex_;
   /**
-   * <code>int32 dhbchblnmec = 7;</code>
-   * @return The dhbchblnmec.
+   * <code>int32 target_index = 7;</code>
+   * @return The targetIndex.
    */
   @java.lang.Override
-  public int getDhbchblnmec() {
-    return dhbchblnmec_;
+  public int getTargetIndex() {
+    return targetIndex_;
   }
 
-  public static final int MCMCJGAIAEC_FIELD_NUMBER = 8;
-  private long mcmcjgaiaec_;
+  public static final int ACTIVE_POKEMON_ID_FIELD_NUMBER = 8;
+  private long activePokemonId_;
   /**
-   * <code>uint64 mcmcjgaiaec = 8;</code>
-   * @return The mcmcjgaiaec.
+   * <code>fixed64 active_pokemon_id = 8;</code>
+   * @return The activePokemonId.
    */
   @java.lang.Override
-  public long getMcmcjgaiaec() {
-    return mcmcjgaiaec_;
+  public long getActivePokemonId() {
+    return activePokemonId_;
   }
 
-  public static final int DLGDGNJAGOO_FIELD_NUMBER = 14;
-  private long dlgdgnjagoo_;
+  public static final int TARGET_POKEMON_ID_FIELD_NUMBER = 14;
+  private long targetPokemonId_;
   /**
-   * <code>uint64 dlgdgnjagoo = 14;</code>
-   * @return The dlgdgnjagoo.
+   * <code>fixed64 target_pokemon_id = 14;</code>
+   * @return The targetPokemonId.
    */
   @java.lang.Override
-  public long getDlgdgnjagoo() {
-    return dlgdgnjagoo_;
+  public long getTargetPokemonId() {
+    return targetPokemonId_;
   }
 
-  public static final int FCFEMPCIFFE_FIELD_NUMBER = 15;
-  private float fcfempciffe_;
+  public static final int MINIGAME_SCORE_FIELD_NUMBER = 15;
+  private float minigameScore_;
   /**
-   * <code>float fcfempciffe = 15;</code>
-   * @return The fcfempciffe.
+   * <code>float minigame_score = 15;</code>
+   * @return The minigameScore.
    */
   @java.lang.Override
-  public float getFcfempciffe() {
-    return fcfempciffe_;
+  public float getMinigameScore() {
+    return minigameScore_;
   }
 
-  public static final int LNJJOFIBMFE_FIELD_NUMBER = 16;
-  private int lnjjofibmfe_;
+  public static final int MOVE_FIELD_NUMBER = 16;
+  private int move_;
   /**
-   * <code>int32 lnjjofibmfe = 16;</code>
-   * @return The lnjjofibmfe.
+   * <code>int32 move = 16;</code>
+   * @return The move.
    */
   @java.lang.Override
-  public int getLnjjofibmfe() {
-    return lnjjofibmfe_;
+  public int getMove() {
+    return move_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -436,32 +436,32 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (gnkgaimjkch_ != POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB.UNSET.getNumber()) {
-      output.writeEnum(1, gnkgaimjkch_);
+    if (type_ != POGOProtos.Rpc.CombatActionProto.ActionType.UNSET.getNumber()) {
+      output.writeEnum(1, type_);
     }
-    if (inchanehmfa_ != 0) {
-      output.writeInt32(3, inchanehmfa_);
+    if (actionStartTurn_ != 0) {
+      output.writeInt32(3, actionStartTurn_);
     }
-    if (dmdcnoefklc_ != 0) {
-      output.writeInt32(5, dmdcnoefklc_);
+    if (durationTurns_ != 0) {
+      output.writeInt32(5, durationTurns_);
     }
-    if (fpinkpobima_ != 0) {
-      output.writeInt32(6, fpinkpobima_);
+    if (attackerIndex_ != 0) {
+      output.writeInt32(6, attackerIndex_);
     }
-    if (dhbchblnmec_ != 0) {
-      output.writeInt32(7, dhbchblnmec_);
+    if (targetIndex_ != 0) {
+      output.writeInt32(7, targetIndex_);
     }
-    if (mcmcjgaiaec_ != 0L) {
-      output.writeUInt64(8, mcmcjgaiaec_);
+    if (activePokemonId_ != 0L) {
+      output.writeFixed64(8, activePokemonId_);
     }
-    if (dlgdgnjagoo_ != 0L) {
-      output.writeUInt64(14, dlgdgnjagoo_);
+    if (targetPokemonId_ != 0L) {
+      output.writeFixed64(14, targetPokemonId_);
     }
-    if (fcfempciffe_ != 0F) {
-      output.writeFloat(15, fcfempciffe_);
+    if (minigameScore_ != 0F) {
+      output.writeFloat(15, minigameScore_);
     }
-    if (lnjjofibmfe_ != 0) {
-      output.writeInt32(16, lnjjofibmfe_);
+    if (move_ != 0) {
+      output.writeInt32(16, move_);
     }
     unknownFields.writeTo(output);
   }
@@ -472,41 +472,41 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (gnkgaimjkch_ != POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB.UNSET.getNumber()) {
+    if (type_ != POGOProtos.Rpc.CombatActionProto.ActionType.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, gnkgaimjkch_);
+        .computeEnumSize(1, type_);
     }
-    if (inchanehmfa_ != 0) {
+    if (actionStartTurn_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, inchanehmfa_);
+        .computeInt32Size(3, actionStartTurn_);
     }
-    if (dmdcnoefklc_ != 0) {
+    if (durationTurns_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(5, dmdcnoefklc_);
+        .computeInt32Size(5, durationTurns_);
     }
-    if (fpinkpobima_ != 0) {
+    if (attackerIndex_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(6, fpinkpobima_);
+        .computeInt32Size(6, attackerIndex_);
     }
-    if (dhbchblnmec_ != 0) {
+    if (targetIndex_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(7, dhbchblnmec_);
+        .computeInt32Size(7, targetIndex_);
     }
-    if (mcmcjgaiaec_ != 0L) {
+    if (activePokemonId_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt64Size(8, mcmcjgaiaec_);
+        .computeFixed64Size(8, activePokemonId_);
     }
-    if (dlgdgnjagoo_ != 0L) {
+    if (targetPokemonId_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeUInt64Size(14, dlgdgnjagoo_);
+        .computeFixed64Size(14, targetPokemonId_);
     }
-    if (fcfempciffe_ != 0F) {
+    if (minigameScore_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(15, fcfempciffe_);
+        .computeFloatSize(15, minigameScore_);
     }
-    if (lnjjofibmfe_ != 0) {
+    if (move_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(16, lnjjofibmfe_);
+        .computeInt32Size(16, move_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -523,24 +523,24 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.CombatActionProto other = (POGOProtos.Rpc.CombatActionProto) obj;
 
-    if (gnkgaimjkch_ != other.gnkgaimjkch_) return false;
-    if (getInchanehmfa()
-        != other.getInchanehmfa()) return false;
-    if (getDmdcnoefklc()
-        != other.getDmdcnoefklc()) return false;
-    if (getFpinkpobima()
-        != other.getFpinkpobima()) return false;
-    if (getDhbchblnmec()
-        != other.getDhbchblnmec()) return false;
-    if (getMcmcjgaiaec()
-        != other.getMcmcjgaiaec()) return false;
-    if (getDlgdgnjagoo()
-        != other.getDlgdgnjagoo()) return false;
-    if (java.lang.Float.floatToIntBits(getFcfempciffe())
+    if (type_ != other.type_) return false;
+    if (getActionStartTurn()
+        != other.getActionStartTurn()) return false;
+    if (getDurationTurns()
+        != other.getDurationTurns()) return false;
+    if (getAttackerIndex()
+        != other.getAttackerIndex()) return false;
+    if (getTargetIndex()
+        != other.getTargetIndex()) return false;
+    if (getActivePokemonId()
+        != other.getActivePokemonId()) return false;
+    if (getTargetPokemonId()
+        != other.getTargetPokemonId()) return false;
+    if (java.lang.Float.floatToIntBits(getMinigameScore())
         != java.lang.Float.floatToIntBits(
-            other.getFcfempciffe())) return false;
-    if (getLnjjofibmfe()
-        != other.getLnjjofibmfe()) return false;
+            other.getMinigameScore())) return false;
+    if (getMove()
+        != other.getMove()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -552,27 +552,27 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + GNKGAIMJKCH_FIELD_NUMBER;
-    hash = (53 * hash) + gnkgaimjkch_;
-    hash = (37 * hash) + INCHANEHMFA_FIELD_NUMBER;
-    hash = (53 * hash) + getInchanehmfa();
-    hash = (37 * hash) + DMDCNOEFKLC_FIELD_NUMBER;
-    hash = (53 * hash) + getDmdcnoefklc();
-    hash = (37 * hash) + FPINKPOBIMA_FIELD_NUMBER;
-    hash = (53 * hash) + getFpinkpobima();
-    hash = (37 * hash) + DHBCHBLNMEC_FIELD_NUMBER;
-    hash = (53 * hash) + getDhbchblnmec();
-    hash = (37 * hash) + MCMCJGAIAEC_FIELD_NUMBER;
+    hash = (37 * hash) + TYPE_FIELD_NUMBER;
+    hash = (53 * hash) + type_;
+    hash = (37 * hash) + ACTION_START_TURN_FIELD_NUMBER;
+    hash = (53 * hash) + getActionStartTurn();
+    hash = (37 * hash) + DURATION_TURNS_FIELD_NUMBER;
+    hash = (53 * hash) + getDurationTurns();
+    hash = (37 * hash) + ATTACKER_INDEX_FIELD_NUMBER;
+    hash = (53 * hash) + getAttackerIndex();
+    hash = (37 * hash) + TARGET_INDEX_FIELD_NUMBER;
+    hash = (53 * hash) + getTargetIndex();
+    hash = (37 * hash) + ACTIVE_POKEMON_ID_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getMcmcjgaiaec());
-    hash = (37 * hash) + DLGDGNJAGOO_FIELD_NUMBER;
+        getActivePokemonId());
+    hash = (37 * hash) + TARGET_POKEMON_ID_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getDlgdgnjagoo());
-    hash = (37 * hash) + FCFEMPCIFFE_FIELD_NUMBER;
+        getTargetPokemonId());
+    hash = (37 * hash) + MINIGAME_SCORE_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getFcfempciffe());
-    hash = (37 * hash) + LNJJOFIBMFE_FIELD_NUMBER;
-    hash = (53 * hash) + getLnjjofibmfe();
+        getMinigameScore());
+    hash = (37 * hash) + MOVE_FIELD_NUMBER;
+    hash = (53 * hash) + getMove();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -710,23 +710,23 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      gnkgaimjkch_ = 0;
+      type_ = 0;
 
-      inchanehmfa_ = 0;
+      actionStartTurn_ = 0;
 
-      dmdcnoefklc_ = 0;
+      durationTurns_ = 0;
 
-      fpinkpobima_ = 0;
+      attackerIndex_ = 0;
 
-      dhbchblnmec_ = 0;
+      targetIndex_ = 0;
 
-      mcmcjgaiaec_ = 0L;
+      activePokemonId_ = 0L;
 
-      dlgdgnjagoo_ = 0L;
+      targetPokemonId_ = 0L;
 
-      fcfempciffe_ = 0F;
+      minigameScore_ = 0F;
 
-      lnjjofibmfe_ = 0;
+      move_ = 0;
 
       return this;
     }
@@ -754,15 +754,15 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.CombatActionProto buildPartial() {
       POGOProtos.Rpc.CombatActionProto result = new POGOProtos.Rpc.CombatActionProto(this);
-      result.gnkgaimjkch_ = gnkgaimjkch_;
-      result.inchanehmfa_ = inchanehmfa_;
-      result.dmdcnoefklc_ = dmdcnoefklc_;
-      result.fpinkpobima_ = fpinkpobima_;
-      result.dhbchblnmec_ = dhbchblnmec_;
-      result.mcmcjgaiaec_ = mcmcjgaiaec_;
-      result.dlgdgnjagoo_ = dlgdgnjagoo_;
-      result.fcfempciffe_ = fcfempciffe_;
-      result.lnjjofibmfe_ = lnjjofibmfe_;
+      result.type_ = type_;
+      result.actionStartTurn_ = actionStartTurn_;
+      result.durationTurns_ = durationTurns_;
+      result.attackerIndex_ = attackerIndex_;
+      result.targetIndex_ = targetIndex_;
+      result.activePokemonId_ = activePokemonId_;
+      result.targetPokemonId_ = targetPokemonId_;
+      result.minigameScore_ = minigameScore_;
+      result.move_ = move_;
       onBuilt();
       return result;
     }
@@ -811,32 +811,32 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.CombatActionProto other) {
       if (other == POGOProtos.Rpc.CombatActionProto.getDefaultInstance()) return this;
-      if (other.gnkgaimjkch_ != 0) {
-        setGnkgaimjkchValue(other.getGnkgaimjkchValue());
+      if (other.type_ != 0) {
+        setTypeValue(other.getTypeValue());
       }
-      if (other.getInchanehmfa() != 0) {
-        setInchanehmfa(other.getInchanehmfa());
+      if (other.getActionStartTurn() != 0) {
+        setActionStartTurn(other.getActionStartTurn());
       }
-      if (other.getDmdcnoefklc() != 0) {
-        setDmdcnoefklc(other.getDmdcnoefklc());
+      if (other.getDurationTurns() != 0) {
+        setDurationTurns(other.getDurationTurns());
       }
-      if (other.getFpinkpobima() != 0) {
-        setFpinkpobima(other.getFpinkpobima());
+      if (other.getAttackerIndex() != 0) {
+        setAttackerIndex(other.getAttackerIndex());
       }
-      if (other.getDhbchblnmec() != 0) {
-        setDhbchblnmec(other.getDhbchblnmec());
+      if (other.getTargetIndex() != 0) {
+        setTargetIndex(other.getTargetIndex());
       }
-      if (other.getMcmcjgaiaec() != 0L) {
-        setMcmcjgaiaec(other.getMcmcjgaiaec());
+      if (other.getActivePokemonId() != 0L) {
+        setActivePokemonId(other.getActivePokemonId());
       }
-      if (other.getDlgdgnjagoo() != 0L) {
-        setDlgdgnjagoo(other.getDlgdgnjagoo());
+      if (other.getTargetPokemonId() != 0L) {
+        setTargetPokemonId(other.getTargetPokemonId());
       }
-      if (other.getFcfempciffe() != 0F) {
-        setFcfempciffe(other.getFcfempciffe());
+      if (other.getMinigameScore() != 0F) {
+        setMinigameScore(other.getMinigameScore());
       }
-      if (other.getLnjjofibmfe() != 0) {
-        setLnjjofibmfe(other.getLnjjofibmfe());
+      if (other.getMove() != 0) {
+        setMove(other.getMove());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -867,304 +867,304 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int gnkgaimjkch_ = 0;
+    private int type_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB gnkgaimjkch = 1;</code>
-     * @return The enum numeric value on the wire for gnkgaimjkch.
+     * <code>.POGOProtos.Rpc.CombatActionProto.ActionType type = 1;</code>
+     * @return The enum numeric value on the wire for type.
      */
-    @java.lang.Override public int getGnkgaimjkchValue() {
-      return gnkgaimjkch_;
+    @java.lang.Override public int getTypeValue() {
+      return type_;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB gnkgaimjkch = 1;</code>
-     * @param value The enum numeric value on the wire for gnkgaimjkch to set.
+     * <code>.POGOProtos.Rpc.CombatActionProto.ActionType type = 1;</code>
+     * @param value The enum numeric value on the wire for type to set.
      * @return This builder for chaining.
      */
-    public Builder setGnkgaimjkchValue(int value) {
+    public Builder setTypeValue(int value) {
       
-      gnkgaimjkch_ = value;
+      type_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB gnkgaimjkch = 1;</code>
-     * @return The gnkgaimjkch.
+     * <code>.POGOProtos.Rpc.CombatActionProto.ActionType type = 1;</code>
+     * @return The type.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB getGnkgaimjkch() {
+    public POGOProtos.Rpc.CombatActionProto.ActionType getType() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB result = POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB.valueOf(gnkgaimjkch_);
-      return result == null ? POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB.UNRECOGNIZED : result;
+      POGOProtos.Rpc.CombatActionProto.ActionType result = POGOProtos.Rpc.CombatActionProto.ActionType.valueOf(type_);
+      return result == null ? POGOProtos.Rpc.CombatActionProto.ActionType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB gnkgaimjkch = 1;</code>
-     * @param value The gnkgaimjkch to set.
+     * <code>.POGOProtos.Rpc.CombatActionProto.ActionType type = 1;</code>
+     * @param value The type to set.
      * @return This builder for chaining.
      */
-    public Builder setGnkgaimjkch(POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB value) {
+    public Builder setType(POGOProtos.Rpc.CombatActionProto.ActionType value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      gnkgaimjkch_ = value.getNumber();
+      type_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.CombatActionProto.KENEKEMIGDB gnkgaimjkch = 1;</code>
+     * <code>.POGOProtos.Rpc.CombatActionProto.ActionType type = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearGnkgaimjkch() {
+    public Builder clearType() {
       
-      gnkgaimjkch_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private int inchanehmfa_ ;
-    /**
-     * <code>int32 inchanehmfa = 3;</code>
-     * @return The inchanehmfa.
-     */
-    @java.lang.Override
-    public int getInchanehmfa() {
-      return inchanehmfa_;
-    }
-    /**
-     * <code>int32 inchanehmfa = 3;</code>
-     * @param value The inchanehmfa to set.
-     * @return This builder for chaining.
-     */
-    public Builder setInchanehmfa(int value) {
-      
-      inchanehmfa_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 inchanehmfa = 3;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearInchanehmfa() {
-      
-      inchanehmfa_ = 0;
+      type_ = 0;
       onChanged();
       return this;
     }
 
-    private int dmdcnoefklc_ ;
+    private int actionStartTurn_ ;
     /**
-     * <code>int32 dmdcnoefklc = 5;</code>
-     * @return The dmdcnoefklc.
+     * <code>int32 action_start_turn = 3;</code>
+     * @return The actionStartTurn.
      */
     @java.lang.Override
-    public int getDmdcnoefklc() {
-      return dmdcnoefklc_;
+    public int getActionStartTurn() {
+      return actionStartTurn_;
     }
     /**
-     * <code>int32 dmdcnoefklc = 5;</code>
-     * @param value The dmdcnoefklc to set.
+     * <code>int32 action_start_turn = 3;</code>
+     * @param value The actionStartTurn to set.
      * @return This builder for chaining.
      */
-    public Builder setDmdcnoefklc(int value) {
+    public Builder setActionStartTurn(int value) {
       
-      dmdcnoefklc_ = value;
+      actionStartTurn_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 dmdcnoefklc = 5;</code>
+     * <code>int32 action_start_turn = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDmdcnoefklc() {
+    public Builder clearActionStartTurn() {
       
-      dmdcnoefklc_ = 0;
+      actionStartTurn_ = 0;
       onChanged();
       return this;
     }
 
-    private int fpinkpobima_ ;
+    private int durationTurns_ ;
     /**
-     * <code>int32 fpinkpobima = 6;</code>
-     * @return The fpinkpobima.
+     * <code>int32 duration_turns = 5;</code>
+     * @return The durationTurns.
      */
     @java.lang.Override
-    public int getFpinkpobima() {
-      return fpinkpobima_;
+    public int getDurationTurns() {
+      return durationTurns_;
     }
     /**
-     * <code>int32 fpinkpobima = 6;</code>
-     * @param value The fpinkpobima to set.
+     * <code>int32 duration_turns = 5;</code>
+     * @param value The durationTurns to set.
      * @return This builder for chaining.
      */
-    public Builder setFpinkpobima(int value) {
+    public Builder setDurationTurns(int value) {
       
-      fpinkpobima_ = value;
+      durationTurns_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 fpinkpobima = 6;</code>
+     * <code>int32 duration_turns = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearFpinkpobima() {
+    public Builder clearDurationTurns() {
       
-      fpinkpobima_ = 0;
+      durationTurns_ = 0;
       onChanged();
       return this;
     }
 
-    private int dhbchblnmec_ ;
+    private int attackerIndex_ ;
     /**
-     * <code>int32 dhbchblnmec = 7;</code>
-     * @return The dhbchblnmec.
+     * <code>int32 attacker_index = 6;</code>
+     * @return The attackerIndex.
      */
     @java.lang.Override
-    public int getDhbchblnmec() {
-      return dhbchblnmec_;
+    public int getAttackerIndex() {
+      return attackerIndex_;
     }
     /**
-     * <code>int32 dhbchblnmec = 7;</code>
-     * @param value The dhbchblnmec to set.
+     * <code>int32 attacker_index = 6;</code>
+     * @param value The attackerIndex to set.
      * @return This builder for chaining.
      */
-    public Builder setDhbchblnmec(int value) {
+    public Builder setAttackerIndex(int value) {
       
-      dhbchblnmec_ = value;
+      attackerIndex_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 dhbchblnmec = 7;</code>
+     * <code>int32 attacker_index = 6;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDhbchblnmec() {
+    public Builder clearAttackerIndex() {
       
-      dhbchblnmec_ = 0;
+      attackerIndex_ = 0;
       onChanged();
       return this;
     }
 
-    private long mcmcjgaiaec_ ;
+    private int targetIndex_ ;
     /**
-     * <code>uint64 mcmcjgaiaec = 8;</code>
-     * @return The mcmcjgaiaec.
+     * <code>int32 target_index = 7;</code>
+     * @return The targetIndex.
      */
     @java.lang.Override
-    public long getMcmcjgaiaec() {
-      return mcmcjgaiaec_;
+    public int getTargetIndex() {
+      return targetIndex_;
     }
     /**
-     * <code>uint64 mcmcjgaiaec = 8;</code>
-     * @param value The mcmcjgaiaec to set.
+     * <code>int32 target_index = 7;</code>
+     * @param value The targetIndex to set.
      * @return This builder for chaining.
      */
-    public Builder setMcmcjgaiaec(long value) {
+    public Builder setTargetIndex(int value) {
       
-      mcmcjgaiaec_ = value;
+      targetIndex_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>uint64 mcmcjgaiaec = 8;</code>
+     * <code>int32 target_index = 7;</code>
      * @return This builder for chaining.
      */
-    public Builder clearMcmcjgaiaec() {
+    public Builder clearTargetIndex() {
       
-      mcmcjgaiaec_ = 0L;
+      targetIndex_ = 0;
       onChanged();
       return this;
     }
 
-    private long dlgdgnjagoo_ ;
+    private long activePokemonId_ ;
     /**
-     * <code>uint64 dlgdgnjagoo = 14;</code>
-     * @return The dlgdgnjagoo.
+     * <code>fixed64 active_pokemon_id = 8;</code>
+     * @return The activePokemonId.
      */
     @java.lang.Override
-    public long getDlgdgnjagoo() {
-      return dlgdgnjagoo_;
+    public long getActivePokemonId() {
+      return activePokemonId_;
     }
     /**
-     * <code>uint64 dlgdgnjagoo = 14;</code>
-     * @param value The dlgdgnjagoo to set.
+     * <code>fixed64 active_pokemon_id = 8;</code>
+     * @param value The activePokemonId to set.
      * @return This builder for chaining.
      */
-    public Builder setDlgdgnjagoo(long value) {
+    public Builder setActivePokemonId(long value) {
       
-      dlgdgnjagoo_ = value;
+      activePokemonId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>uint64 dlgdgnjagoo = 14;</code>
+     * <code>fixed64 active_pokemon_id = 8;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDlgdgnjagoo() {
+    public Builder clearActivePokemonId() {
       
-      dlgdgnjagoo_ = 0L;
+      activePokemonId_ = 0L;
       onChanged();
       return this;
     }
 
-    private float fcfempciffe_ ;
+    private long targetPokemonId_ ;
     /**
-     * <code>float fcfempciffe = 15;</code>
-     * @return The fcfempciffe.
+     * <code>fixed64 target_pokemon_id = 14;</code>
+     * @return The targetPokemonId.
      */
     @java.lang.Override
-    public float getFcfempciffe() {
-      return fcfempciffe_;
+    public long getTargetPokemonId() {
+      return targetPokemonId_;
     }
     /**
-     * <code>float fcfempciffe = 15;</code>
-     * @param value The fcfempciffe to set.
+     * <code>fixed64 target_pokemon_id = 14;</code>
+     * @param value The targetPokemonId to set.
      * @return This builder for chaining.
      */
-    public Builder setFcfempciffe(float value) {
+    public Builder setTargetPokemonId(long value) {
       
-      fcfempciffe_ = value;
+      targetPokemonId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float fcfempciffe = 15;</code>
+     * <code>fixed64 target_pokemon_id = 14;</code>
      * @return This builder for chaining.
      */
-    public Builder clearFcfempciffe() {
+    public Builder clearTargetPokemonId() {
       
-      fcfempciffe_ = 0F;
+      targetPokemonId_ = 0L;
       onChanged();
       return this;
     }
 
-    private int lnjjofibmfe_ ;
+    private float minigameScore_ ;
     /**
-     * <code>int32 lnjjofibmfe = 16;</code>
-     * @return The lnjjofibmfe.
+     * <code>float minigame_score = 15;</code>
+     * @return The minigameScore.
      */
     @java.lang.Override
-    public int getLnjjofibmfe() {
-      return lnjjofibmfe_;
+    public float getMinigameScore() {
+      return minigameScore_;
     }
     /**
-     * <code>int32 lnjjofibmfe = 16;</code>
-     * @param value The lnjjofibmfe to set.
+     * <code>float minigame_score = 15;</code>
+     * @param value The minigameScore to set.
      * @return This builder for chaining.
      */
-    public Builder setLnjjofibmfe(int value) {
+    public Builder setMinigameScore(float value) {
       
-      lnjjofibmfe_ = value;
+      minigameScore_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 lnjjofibmfe = 16;</code>
+     * <code>float minigame_score = 15;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLnjjofibmfe() {
+    public Builder clearMinigameScore() {
       
-      lnjjofibmfe_ = 0;
+      minigameScore_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private int move_ ;
+    /**
+     * <code>int32 move = 16;</code>
+     * @return The move.
+     */
+    @java.lang.Override
+    public int getMove() {
+      return move_;
+    }
+    /**
+     * <code>int32 move = 16;</code>
+     * @param value The move to set.
+     * @return This builder for chaining.
+     */
+    public Builder setMove(int value) {
+      
+      move_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 move = 16;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearMove() {
+      
+      move_ = 0;
       onChanged();
       return this;
     }

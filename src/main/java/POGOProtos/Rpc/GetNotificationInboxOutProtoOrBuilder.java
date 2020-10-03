@@ -19,17 +19,17 @@ public interface GetNotificationInboxOutProtoOrBuilder extends
   POGOProtos.Rpc.GetNotificationInboxOutProto.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
    * @return Whether the inbox field is set.
    */
   boolean hasInbox();
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
    * @return The inbox.
    */
-  POGOProtos.Rpc.ClientInbox getInbox();
+  POGOProtos.Rpc.PlatformClientInbox getInbox();
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox inbox = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox inbox = 2;</code>
    */
-  POGOProtos.Rpc.ClientInboxOrBuilder getInboxOrBuilder();
+  POGOProtos.Rpc.PlatformClientInboxOrBuilder getInboxOrBuilder();
 }

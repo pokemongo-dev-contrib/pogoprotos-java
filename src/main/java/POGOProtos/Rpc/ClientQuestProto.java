@@ -54,26 +54,26 @@ private static final long serialVersionUID = 0L;
             break;
           case 10: {
             POGOProtos.Rpc.QuestProto.Builder subBuilder = null;
-            if (iblilgjehdh_ != null) {
-              subBuilder = iblilgjehdh_.toBuilder();
+            if (quest_ != null) {
+              subBuilder = quest_.toBuilder();
             }
-            iblilgjehdh_ = input.readMessage(POGOProtos.Rpc.QuestProto.parser(), extensionRegistry);
+            quest_ = input.readMessage(POGOProtos.Rpc.QuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(iblilgjehdh_);
-              iblilgjehdh_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(quest_);
+              quest_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 18: {
             POGOProtos.Rpc.QuestDisplayProto.Builder subBuilder = null;
-            if (pbiankchnhp_ != null) {
-              subBuilder = pbiankchnhp_.toBuilder();
+            if (questDisplay_ != null) {
+              subBuilder = questDisplay_.toBuilder();
             }
-            pbiankchnhp_ = input.readMessage(POGOProtos.Rpc.QuestDisplayProto.parser(), extensionRegistry);
+            questDisplay_ = input.readMessage(POGOProtos.Rpc.QuestDisplayProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(pbiankchnhp_);
-              pbiankchnhp_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(questDisplay_);
+              questDisplay_ = subBuilder.buildPartial();
             }
 
             break;
@@ -110,56 +110,56 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.ClientQuestProto.class, POGOProtos.Rpc.ClientQuestProto.Builder.class);
   }
 
-  public static final int IBLILGJEHDH_FIELD_NUMBER = 1;
-  private POGOProtos.Rpc.QuestProto iblilgjehdh_;
+  public static final int QUEST_FIELD_NUMBER = 1;
+  private POGOProtos.Rpc.QuestProto quest_;
   /**
-   * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
-   * @return Whether the iblilgjehdh field is set.
+   * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
+   * @return Whether the quest field is set.
    */
   @java.lang.Override
-  public boolean hasIblilgjehdh() {
-    return iblilgjehdh_ != null;
+  public boolean hasQuest() {
+    return quest_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
-   * @return The iblilgjehdh.
+   * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
+   * @return The quest.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.QuestProto getIblilgjehdh() {
-    return iblilgjehdh_ == null ? POGOProtos.Rpc.QuestProto.getDefaultInstance() : iblilgjehdh_;
+  public POGOProtos.Rpc.QuestProto getQuest() {
+    return quest_ == null ? POGOProtos.Rpc.QuestProto.getDefaultInstance() : quest_;
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
+   * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.QuestProtoOrBuilder getIblilgjehdhOrBuilder() {
-    return getIblilgjehdh();
+  public POGOProtos.Rpc.QuestProtoOrBuilder getQuestOrBuilder() {
+    return getQuest();
   }
 
-  public static final int PBIANKCHNHP_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.QuestDisplayProto pbiankchnhp_;
+  public static final int QUEST_DISPLAY_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.QuestDisplayProto questDisplay_;
   /**
-   * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
-   * @return Whether the pbiankchnhp field is set.
+   * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
+   * @return Whether the questDisplay field is set.
    */
   @java.lang.Override
-  public boolean hasPbiankchnhp() {
-    return pbiankchnhp_ != null;
+  public boolean hasQuestDisplay() {
+    return questDisplay_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
-   * @return The pbiankchnhp.
+   * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
+   * @return The questDisplay.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.QuestDisplayProto getPbiankchnhp() {
-    return pbiankchnhp_ == null ? POGOProtos.Rpc.QuestDisplayProto.getDefaultInstance() : pbiankchnhp_;
+  public POGOProtos.Rpc.QuestDisplayProto getQuestDisplay() {
+    return questDisplay_ == null ? POGOProtos.Rpc.QuestDisplayProto.getDefaultInstance() : questDisplay_;
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
+   * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.QuestDisplayProtoOrBuilder getPbiankchnhpOrBuilder() {
-    return getPbiankchnhp();
+  public POGOProtos.Rpc.QuestDisplayProtoOrBuilder getQuestDisplayOrBuilder() {
+    return getQuestDisplay();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -176,11 +176,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (iblilgjehdh_ != null) {
-      output.writeMessage(1, getIblilgjehdh());
+    if (quest_ != null) {
+      output.writeMessage(1, getQuest());
     }
-    if (pbiankchnhp_ != null) {
-      output.writeMessage(2, getPbiankchnhp());
+    if (questDisplay_ != null) {
+      output.writeMessage(2, getQuestDisplay());
     }
     unknownFields.writeTo(output);
   }
@@ -191,13 +191,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (iblilgjehdh_ != null) {
+    if (quest_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getIblilgjehdh());
+        .computeMessageSize(1, getQuest());
     }
-    if (pbiankchnhp_ != null) {
+    if (questDisplay_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getPbiankchnhp());
+        .computeMessageSize(2, getQuestDisplay());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -214,15 +214,15 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.ClientQuestProto other = (POGOProtos.Rpc.ClientQuestProto) obj;
 
-    if (hasIblilgjehdh() != other.hasIblilgjehdh()) return false;
-    if (hasIblilgjehdh()) {
-      if (!getIblilgjehdh()
-          .equals(other.getIblilgjehdh())) return false;
+    if (hasQuest() != other.hasQuest()) return false;
+    if (hasQuest()) {
+      if (!getQuest()
+          .equals(other.getQuest())) return false;
     }
-    if (hasPbiankchnhp() != other.hasPbiankchnhp()) return false;
-    if (hasPbiankchnhp()) {
-      if (!getPbiankchnhp()
-          .equals(other.getPbiankchnhp())) return false;
+    if (hasQuestDisplay() != other.hasQuestDisplay()) return false;
+    if (hasQuestDisplay()) {
+      if (!getQuestDisplay()
+          .equals(other.getQuestDisplay())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -235,13 +235,13 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    if (hasIblilgjehdh()) {
-      hash = (37 * hash) + IBLILGJEHDH_FIELD_NUMBER;
-      hash = (53 * hash) + getIblilgjehdh().hashCode();
+    if (hasQuest()) {
+      hash = (37 * hash) + QUEST_FIELD_NUMBER;
+      hash = (53 * hash) + getQuest().hashCode();
     }
-    if (hasPbiankchnhp()) {
-      hash = (37 * hash) + PBIANKCHNHP_FIELD_NUMBER;
-      hash = (53 * hash) + getPbiankchnhp().hashCode();
+    if (hasQuestDisplay()) {
+      hash = (37 * hash) + QUEST_DISPLAY_FIELD_NUMBER;
+      hash = (53 * hash) + getQuestDisplay().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -380,17 +380,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      if (iblilgjehdhBuilder_ == null) {
-        iblilgjehdh_ = null;
+      if (questBuilder_ == null) {
+        quest_ = null;
       } else {
-        iblilgjehdh_ = null;
-        iblilgjehdhBuilder_ = null;
+        quest_ = null;
+        questBuilder_ = null;
       }
-      if (pbiankchnhpBuilder_ == null) {
-        pbiankchnhp_ = null;
+      if (questDisplayBuilder_ == null) {
+        questDisplay_ = null;
       } else {
-        pbiankchnhp_ = null;
-        pbiankchnhpBuilder_ = null;
+        questDisplay_ = null;
+        questDisplayBuilder_ = null;
       }
       return this;
     }
@@ -418,15 +418,15 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.ClientQuestProto buildPartial() {
       POGOProtos.Rpc.ClientQuestProto result = new POGOProtos.Rpc.ClientQuestProto(this);
-      if (iblilgjehdhBuilder_ == null) {
-        result.iblilgjehdh_ = iblilgjehdh_;
+      if (questBuilder_ == null) {
+        result.quest_ = quest_;
       } else {
-        result.iblilgjehdh_ = iblilgjehdhBuilder_.build();
+        result.quest_ = questBuilder_.build();
       }
-      if (pbiankchnhpBuilder_ == null) {
-        result.pbiankchnhp_ = pbiankchnhp_;
+      if (questDisplayBuilder_ == null) {
+        result.questDisplay_ = questDisplay_;
       } else {
-        result.pbiankchnhp_ = pbiankchnhpBuilder_.build();
+        result.questDisplay_ = questDisplayBuilder_.build();
       }
       onBuilt();
       return result;
@@ -476,11 +476,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.ClientQuestProto other) {
       if (other == POGOProtos.Rpc.ClientQuestProto.getDefaultInstance()) return this;
-      if (other.hasIblilgjehdh()) {
-        mergeIblilgjehdh(other.getIblilgjehdh());
+      if (other.hasQuest()) {
+        mergeQuest(other.getQuest());
       }
-      if (other.hasPbiankchnhp()) {
-        mergePbiankchnhp(other.getPbiankchnhp());
+      if (other.hasQuestDisplay()) {
+        mergeQuestDisplay(other.getQuestDisplay());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -511,242 +511,242 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.QuestProto iblilgjehdh_;
+    private POGOProtos.Rpc.QuestProto quest_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestProto, POGOProtos.Rpc.QuestProto.Builder, POGOProtos.Rpc.QuestProtoOrBuilder> iblilgjehdhBuilder_;
+        POGOProtos.Rpc.QuestProto, POGOProtos.Rpc.QuestProto.Builder, POGOProtos.Rpc.QuestProtoOrBuilder> questBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
-     * @return Whether the iblilgjehdh field is set.
+     * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
+     * @return Whether the quest field is set.
      */
-    public boolean hasIblilgjehdh() {
-      return iblilgjehdhBuilder_ != null || iblilgjehdh_ != null;
+    public boolean hasQuest() {
+      return questBuilder_ != null || quest_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
-     * @return The iblilgjehdh.
+     * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
+     * @return The quest.
      */
-    public POGOProtos.Rpc.QuestProto getIblilgjehdh() {
-      if (iblilgjehdhBuilder_ == null) {
-        return iblilgjehdh_ == null ? POGOProtos.Rpc.QuestProto.getDefaultInstance() : iblilgjehdh_;
+    public POGOProtos.Rpc.QuestProto getQuest() {
+      if (questBuilder_ == null) {
+        return quest_ == null ? POGOProtos.Rpc.QuestProto.getDefaultInstance() : quest_;
       } else {
-        return iblilgjehdhBuilder_.getMessage();
+        return questBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
+     * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
      */
-    public Builder setIblilgjehdh(POGOProtos.Rpc.QuestProto value) {
-      if (iblilgjehdhBuilder_ == null) {
+    public Builder setQuest(POGOProtos.Rpc.QuestProto value) {
+      if (questBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        iblilgjehdh_ = value;
+        quest_ = value;
         onChanged();
       } else {
-        iblilgjehdhBuilder_.setMessage(value);
+        questBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
+     * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
      */
-    public Builder setIblilgjehdh(
+    public Builder setQuest(
         POGOProtos.Rpc.QuestProto.Builder builderForValue) {
-      if (iblilgjehdhBuilder_ == null) {
-        iblilgjehdh_ = builderForValue.build();
+      if (questBuilder_ == null) {
+        quest_ = builderForValue.build();
         onChanged();
       } else {
-        iblilgjehdhBuilder_.setMessage(builderForValue.build());
+        questBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
+     * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
      */
-    public Builder mergeIblilgjehdh(POGOProtos.Rpc.QuestProto value) {
-      if (iblilgjehdhBuilder_ == null) {
-        if (iblilgjehdh_ != null) {
-          iblilgjehdh_ =
-            POGOProtos.Rpc.QuestProto.newBuilder(iblilgjehdh_).mergeFrom(value).buildPartial();
+    public Builder mergeQuest(POGOProtos.Rpc.QuestProto value) {
+      if (questBuilder_ == null) {
+        if (quest_ != null) {
+          quest_ =
+            POGOProtos.Rpc.QuestProto.newBuilder(quest_).mergeFrom(value).buildPartial();
         } else {
-          iblilgjehdh_ = value;
+          quest_ = value;
         }
         onChanged();
       } else {
-        iblilgjehdhBuilder_.mergeFrom(value);
+        questBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
+     * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
      */
-    public Builder clearIblilgjehdh() {
-      if (iblilgjehdhBuilder_ == null) {
-        iblilgjehdh_ = null;
+    public Builder clearQuest() {
+      if (questBuilder_ == null) {
+        quest_ = null;
         onChanged();
       } else {
-        iblilgjehdh_ = null;
-        iblilgjehdhBuilder_ = null;
+        quest_ = null;
+        questBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
+     * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
      */
-    public POGOProtos.Rpc.QuestProto.Builder getIblilgjehdhBuilder() {
+    public POGOProtos.Rpc.QuestProto.Builder getQuestBuilder() {
       
       onChanged();
-      return getIblilgjehdhFieldBuilder().getBuilder();
+      return getQuestFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
+     * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
      */
-    public POGOProtos.Rpc.QuestProtoOrBuilder getIblilgjehdhOrBuilder() {
-      if (iblilgjehdhBuilder_ != null) {
-        return iblilgjehdhBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.QuestProtoOrBuilder getQuestOrBuilder() {
+      if (questBuilder_ != null) {
+        return questBuilder_.getMessageOrBuilder();
       } else {
-        return iblilgjehdh_ == null ?
-            POGOProtos.Rpc.QuestProto.getDefaultInstance() : iblilgjehdh_;
+        return quest_ == null ?
+            POGOProtos.Rpc.QuestProto.getDefaultInstance() : quest_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestProto iblilgjehdh = 1;</code>
+     * <code>.POGOProtos.Rpc.QuestProto quest = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.QuestProto, POGOProtos.Rpc.QuestProto.Builder, POGOProtos.Rpc.QuestProtoOrBuilder> 
-        getIblilgjehdhFieldBuilder() {
-      if (iblilgjehdhBuilder_ == null) {
-        iblilgjehdhBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getQuestFieldBuilder() {
+      if (questBuilder_ == null) {
+        questBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.QuestProto, POGOProtos.Rpc.QuestProto.Builder, POGOProtos.Rpc.QuestProtoOrBuilder>(
-                getIblilgjehdh(),
+                getQuest(),
                 getParentForChildren(),
                 isClean());
-        iblilgjehdh_ = null;
+        quest_ = null;
       }
-      return iblilgjehdhBuilder_;
+      return questBuilder_;
     }
 
-    private POGOProtos.Rpc.QuestDisplayProto pbiankchnhp_;
+    private POGOProtos.Rpc.QuestDisplayProto questDisplay_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestDisplayProto, POGOProtos.Rpc.QuestDisplayProto.Builder, POGOProtos.Rpc.QuestDisplayProtoOrBuilder> pbiankchnhpBuilder_;
+        POGOProtos.Rpc.QuestDisplayProto, POGOProtos.Rpc.QuestDisplayProto.Builder, POGOProtos.Rpc.QuestDisplayProtoOrBuilder> questDisplayBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
-     * @return Whether the pbiankchnhp field is set.
+     * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
+     * @return Whether the questDisplay field is set.
      */
-    public boolean hasPbiankchnhp() {
-      return pbiankchnhpBuilder_ != null || pbiankchnhp_ != null;
+    public boolean hasQuestDisplay() {
+      return questDisplayBuilder_ != null || questDisplay_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
-     * @return The pbiankchnhp.
+     * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
+     * @return The questDisplay.
      */
-    public POGOProtos.Rpc.QuestDisplayProto getPbiankchnhp() {
-      if (pbiankchnhpBuilder_ == null) {
-        return pbiankchnhp_ == null ? POGOProtos.Rpc.QuestDisplayProto.getDefaultInstance() : pbiankchnhp_;
+    public POGOProtos.Rpc.QuestDisplayProto getQuestDisplay() {
+      if (questDisplayBuilder_ == null) {
+        return questDisplay_ == null ? POGOProtos.Rpc.QuestDisplayProto.getDefaultInstance() : questDisplay_;
       } else {
-        return pbiankchnhpBuilder_.getMessage();
+        return questDisplayBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
      */
-    public Builder setPbiankchnhp(POGOProtos.Rpc.QuestDisplayProto value) {
-      if (pbiankchnhpBuilder_ == null) {
+    public Builder setQuestDisplay(POGOProtos.Rpc.QuestDisplayProto value) {
+      if (questDisplayBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        pbiankchnhp_ = value;
+        questDisplay_ = value;
         onChanged();
       } else {
-        pbiankchnhpBuilder_.setMessage(value);
+        questDisplayBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
      */
-    public Builder setPbiankchnhp(
+    public Builder setQuestDisplay(
         POGOProtos.Rpc.QuestDisplayProto.Builder builderForValue) {
-      if (pbiankchnhpBuilder_ == null) {
-        pbiankchnhp_ = builderForValue.build();
+      if (questDisplayBuilder_ == null) {
+        questDisplay_ = builderForValue.build();
         onChanged();
       } else {
-        pbiankchnhpBuilder_.setMessage(builderForValue.build());
+        questDisplayBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
      */
-    public Builder mergePbiankchnhp(POGOProtos.Rpc.QuestDisplayProto value) {
-      if (pbiankchnhpBuilder_ == null) {
-        if (pbiankchnhp_ != null) {
-          pbiankchnhp_ =
-            POGOProtos.Rpc.QuestDisplayProto.newBuilder(pbiankchnhp_).mergeFrom(value).buildPartial();
+    public Builder mergeQuestDisplay(POGOProtos.Rpc.QuestDisplayProto value) {
+      if (questDisplayBuilder_ == null) {
+        if (questDisplay_ != null) {
+          questDisplay_ =
+            POGOProtos.Rpc.QuestDisplayProto.newBuilder(questDisplay_).mergeFrom(value).buildPartial();
         } else {
-          pbiankchnhp_ = value;
+          questDisplay_ = value;
         }
         onChanged();
       } else {
-        pbiankchnhpBuilder_.mergeFrom(value);
+        questDisplayBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
      */
-    public Builder clearPbiankchnhp() {
-      if (pbiankchnhpBuilder_ == null) {
-        pbiankchnhp_ = null;
+    public Builder clearQuestDisplay() {
+      if (questDisplayBuilder_ == null) {
+        questDisplay_ = null;
         onChanged();
       } else {
-        pbiankchnhp_ = null;
-        pbiankchnhpBuilder_ = null;
+        questDisplay_ = null;
+        questDisplayBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
      */
-    public POGOProtos.Rpc.QuestDisplayProto.Builder getPbiankchnhpBuilder() {
+    public POGOProtos.Rpc.QuestDisplayProto.Builder getQuestDisplayBuilder() {
       
       onChanged();
-      return getPbiankchnhpFieldBuilder().getBuilder();
+      return getQuestDisplayFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
      */
-    public POGOProtos.Rpc.QuestDisplayProtoOrBuilder getPbiankchnhpOrBuilder() {
-      if (pbiankchnhpBuilder_ != null) {
-        return pbiankchnhpBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.QuestDisplayProtoOrBuilder getQuestDisplayOrBuilder() {
+      if (questDisplayBuilder_ != null) {
+        return questDisplayBuilder_.getMessageOrBuilder();
       } else {
-        return pbiankchnhp_ == null ?
-            POGOProtos.Rpc.QuestDisplayProto.getDefaultInstance() : pbiankchnhp_;
+        return questDisplay_ == null ?
+            POGOProtos.Rpc.QuestDisplayProto.getDefaultInstance() : questDisplay_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestDisplayProto pbiankchnhp = 2;</code>
+     * <code>.POGOProtos.Rpc.QuestDisplayProto quest_display = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.QuestDisplayProto, POGOProtos.Rpc.QuestDisplayProto.Builder, POGOProtos.Rpc.QuestDisplayProtoOrBuilder> 
-        getPbiankchnhpFieldBuilder() {
-      if (pbiankchnhpBuilder_ == null) {
-        pbiankchnhpBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getQuestDisplayFieldBuilder() {
+      if (questDisplayBuilder_ == null) {
+        questDisplayBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.QuestDisplayProto, POGOProtos.Rpc.QuestDisplayProto.Builder, POGOProtos.Rpc.QuestDisplayProtoOrBuilder>(
-                getPbiankchnhp(),
+                getQuestDisplay(),
                 getParentForChildren(),
                 isClean());
-        pbiankchnhp_ = null;
+        questDisplay_ = null;
       }
-      return pbiankchnhpBuilder_;
+      return questDisplayBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

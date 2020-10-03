@@ -60,11 +60,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.ClientInbox.Builder subBuilder = null;
+            POGOProtos.Rpc.PlatformClientInbox.Builder subBuilder = null;
             if (gphemncenno_ != null) {
               subBuilder = gphemncenno_.toBuilder();
             }
-            gphemncenno_ = input.readMessage(POGOProtos.Rpc.ClientInbox.parser(), extensionRegistry);
+            gphemncenno_ = input.readMessage(POGOProtos.Rpc.PlatformClientInbox.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(gphemncenno_);
               gphemncenno_ = subBuilder.buildPartial();
@@ -254,9 +254,9 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GPHEMNCENNO_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.ClientInbox gphemncenno_;
+  private POGOProtos.Rpc.PlatformClientInbox gphemncenno_;
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
    * @return Whether the gphemncenno field is set.
    */
   @java.lang.Override
@@ -264,18 +264,18 @@ private static final long serialVersionUID = 0L;
     return gphemncenno_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
    * @return The gphemncenno.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ClientInbox getGphemncenno() {
-    return gphemncenno_ == null ? POGOProtos.Rpc.ClientInbox.getDefaultInstance() : gphemncenno_;
+  public POGOProtos.Rpc.PlatformClientInbox getGphemncenno() {
+    return gphemncenno_ == null ? POGOProtos.Rpc.PlatformClientInbox.getDefaultInstance() : gphemncenno_;
   }
   /**
-   * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+   * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.ClientInboxOrBuilder getGphemncennoOrBuilder() {
+  public POGOProtos.Rpc.PlatformClientInboxOrBuilder getGphemncennoOrBuilder() {
     return getGphemncenno();
   }
 
@@ -668,31 +668,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.ClientInbox gphemncenno_;
+    private POGOProtos.Rpc.PlatformClientInbox gphemncenno_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ClientInbox, POGOProtos.Rpc.ClientInbox.Builder, POGOProtos.Rpc.ClientInboxOrBuilder> gphemncennoBuilder_;
+        POGOProtos.Rpc.PlatformClientInbox, POGOProtos.Rpc.PlatformClientInbox.Builder, POGOProtos.Rpc.PlatformClientInboxOrBuilder> gphemncennoBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
      * @return Whether the gphemncenno field is set.
      */
     public boolean hasGphemncenno() {
       return gphemncennoBuilder_ != null || gphemncenno_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
      * @return The gphemncenno.
      */
-    public POGOProtos.Rpc.ClientInbox getGphemncenno() {
+    public POGOProtos.Rpc.PlatformClientInbox getGphemncenno() {
       if (gphemncennoBuilder_ == null) {
-        return gphemncenno_ == null ? POGOProtos.Rpc.ClientInbox.getDefaultInstance() : gphemncenno_;
+        return gphemncenno_ == null ? POGOProtos.Rpc.PlatformClientInbox.getDefaultInstance() : gphemncenno_;
       } else {
         return gphemncennoBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
      */
-    public Builder setGphemncenno(POGOProtos.Rpc.ClientInbox value) {
+    public Builder setGphemncenno(POGOProtos.Rpc.PlatformClientInbox value) {
       if (gphemncennoBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -706,10 +706,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
      */
     public Builder setGphemncenno(
-        POGOProtos.Rpc.ClientInbox.Builder builderForValue) {
+        POGOProtos.Rpc.PlatformClientInbox.Builder builderForValue) {
       if (gphemncennoBuilder_ == null) {
         gphemncenno_ = builderForValue.build();
         onChanged();
@@ -720,13 +720,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
      */
-    public Builder mergeGphemncenno(POGOProtos.Rpc.ClientInbox value) {
+    public Builder mergeGphemncenno(POGOProtos.Rpc.PlatformClientInbox value) {
       if (gphemncennoBuilder_ == null) {
         if (gphemncenno_ != null) {
           gphemncenno_ =
-            POGOProtos.Rpc.ClientInbox.newBuilder(gphemncenno_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlatformClientInbox.newBuilder(gphemncenno_).mergeFrom(value).buildPartial();
         } else {
           gphemncenno_ = value;
         }
@@ -738,7 +738,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
      */
     public Builder clearGphemncenno() {
       if (gphemncennoBuilder_ == null) {
@@ -752,33 +752,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
      */
-    public POGOProtos.Rpc.ClientInbox.Builder getGphemncennoBuilder() {
+    public POGOProtos.Rpc.PlatformClientInbox.Builder getGphemncennoBuilder() {
       
       onChanged();
       return getGphemncennoFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
      */
-    public POGOProtos.Rpc.ClientInboxOrBuilder getGphemncennoOrBuilder() {
+    public POGOProtos.Rpc.PlatformClientInboxOrBuilder getGphemncennoOrBuilder() {
       if (gphemncennoBuilder_ != null) {
         return gphemncennoBuilder_.getMessageOrBuilder();
       } else {
         return gphemncenno_ == null ?
-            POGOProtos.Rpc.ClientInbox.getDefaultInstance() : gphemncenno_;
+            POGOProtos.Rpc.PlatformClientInbox.getDefaultInstance() : gphemncenno_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientInbox gphemncenno = 2;</code>
+     * <code>.POGOProtos.Rpc.PlatformClientInbox gphemncenno = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ClientInbox, POGOProtos.Rpc.ClientInbox.Builder, POGOProtos.Rpc.ClientInboxOrBuilder> 
+        POGOProtos.Rpc.PlatformClientInbox, POGOProtos.Rpc.PlatformClientInbox.Builder, POGOProtos.Rpc.PlatformClientInboxOrBuilder> 
         getGphemncennoFieldBuilder() {
       if (gphemncennoBuilder_ == null) {
         gphemncennoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ClientInbox, POGOProtos.Rpc.ClientInbox.Builder, POGOProtos.Rpc.ClientInboxOrBuilder>(
+            POGOProtos.Rpc.PlatformClientInbox, POGOProtos.Rpc.PlatformClientInbox.Builder, POGOProtos.Rpc.PlatformClientInboxOrBuilder>(
                 getGphemncenno(),
                 getParentForChildren(),
                 isClean());

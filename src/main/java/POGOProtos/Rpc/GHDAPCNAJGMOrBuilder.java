@@ -19,17 +19,17 @@ public interface GHDAPCNAJGMOrBuilder extends
   POGOProtos.Rpc.QuestType getOpcibdfofmm();
 
   /**
-   * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
    * @return Whether the ogphejplgea field is set.
    */
   boolean hasOgphejplgea();
   /**
-   * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
    * @return The ogphejplgea.
    */
-  POGOProtos.Rpc.PFGPOIKPJFF getOgphejplgea();
+  POGOProtos.Rpc.QuestGoalProto getOgphejplgea();
   /**
-   * <code>.POGOProtos.Rpc.PFGPOIKPJFF ogphejplgea = 2;</code>
+   * <code>.POGOProtos.Rpc.QuestGoalProto ogphejplgea = 2;</code>
    */
-  POGOProtos.Rpc.PFGPOIKPJFFOrBuilder getOgphejplgeaOrBuilder();
+  POGOProtos.Rpc.QuestGoalProtoOrBuilder getOgphejplgeaOrBuilder();
 }
