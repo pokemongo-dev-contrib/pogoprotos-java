@@ -8,39 +8,39 @@ public interface VsSeekerClientSettingsProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string ihdadhjlfbo = 1;</code>
-   * @return The ihdadhjlfbo.
+   * <code>string upgrade_iap_sku_id = 1;</code>
+   * @return The upgradeIapSkuId.
    */
-  java.lang.String getIhdadhjlfbo();
+  java.lang.String getUpgradeIapSkuId();
   /**
-   * <code>string ihdadhjlfbo = 1;</code>
-   * @return The bytes for ihdadhjlfbo.
+   * <code>string upgrade_iap_sku_id = 1;</code>
+   * @return The bytes for upgradeIapSkuId.
    */
   com.google.protobuf.ByteString
-      getIhdadhjlfboBytes();
+      getUpgradeIapSkuIdBytes();
 
   /**
-   * <code>repeated string dkkjmmjijfl = 2;</code>
-   * @return A list containing the dkkjmmjijfl.
+   * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
+   * @return A list containing the allowedVsSeekerLeagueTemplateId.
    */
   java.util.List<java.lang.String>
-      getDkkjmmjijflList();
+      getAllowedVsSeekerLeagueTemplateIdList();
   /**
-   * <code>repeated string dkkjmmjijfl = 2;</code>
-   * @return The count of dkkjmmjijfl.
+   * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
+   * @return The count of allowedVsSeekerLeagueTemplateId.
    */
-  int getDkkjmmjijflCount();
+  int getAllowedVsSeekerLeagueTemplateIdCount();
   /**
-   * <code>repeated string dkkjmmjijfl = 2;</code>
+   * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
    * @param index The index of the element to return.
-   * @return The dkkjmmjijfl at the given index.
+   * @return The allowedVsSeekerLeagueTemplateId at the given index.
    */
-  java.lang.String getDkkjmmjijfl(int index);
+  java.lang.String getAllowedVsSeekerLeagueTemplateId(int index);
   /**
-   * <code>repeated string dkkjmmjijfl = 2;</code>
+   * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
    * @param index The index of the value to return.
-   * @return The bytes of the dkkjmmjijfl at the given index.
+   * @return The bytes of the allowedVsSeekerLeagueTemplateId at the given index.
    */
   com.google.protobuf.ByteString
-      getDkkjmmjijflBytes(int index);
+      getAllowedVsSeekerLeagueTemplateIdBytes(int index);
 }

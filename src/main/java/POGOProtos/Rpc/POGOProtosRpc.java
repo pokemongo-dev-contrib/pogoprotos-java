@@ -9857,7 +9857,7 @@ public final class POGOProtosRpc {
       "\003(\0132&.POGOProtos.Rpc.SpawnTablePokemonPr" +
       "oto\022\037\n\027spawn_table_probability\030\t \001(\002\"\"\n\013" +
       "HPONACGGFHJ\022\023\n\013alflaepafnn\030\001 \001(\t\"\r\n\013HPPD" +
-      "JNCBEOP\"\244\016\n\013CombatProto\022=\n\014combat_state\030" +
+      "JNCBEOP\"\207\017\n\013CombatProto\022=\n\014combat_state\030" +
       "\001 \001(\0162\'.POGOProtos.Rpc.CombatProto.Comba" +
       "tState\022\021\n\tcombat_id\030\002 \001(\t\022=\n\006player\030\003 \001(" +
       "\0132-.POGOProtos.Rpc.CombatProto.CombatPla" +
@@ -9886,7264 +9886,7267 @@ public final class POGOProtosRpc {
       "efense_chances_left\030\n \001(\005\022!\n\031combat_npc_" +
       "personality_id\030\013 \001(\t\022#\n\033times_combat_act" +
       "ions_called\030\014 \001(\005\022\016\n\006field1\030\r \001(\003\022\016\n\006fie" +
-      "ld2\030\016 \001(\005\032\357\003\n\022CombatPokemonProto\022\022\n\npoke" +
+      "ld2\030\016 \001(\005\032\322\004\n\022CombatPokemonProto\022\022\n\npoke" +
       "mon_id\030\001 \001(\006\022\022\n\npokedex_id\030\002 \001(\005\022\n\n\002cp\030\003" +
       " \001(\005\022\025\n\rcp_multiplier\030\004 \001(\002\022\017\n\007stamina\030\005" +
-      " \001(\005\022\023\n\013max_stamina\030\006 \001(\005\022\r\n\005move1\030\007 \001(\005" +
-      "\022\r\n\005move2\030\010 \001(\005\022\r\n\005move3\030\t \001(\005\022\016\n\006energy" +
-      "\030\n \001(\005\022<\n\017pokemon_display\030\013 \001(\0132#.POGOPr" +
-      "otos.Rpc.PokemonDisplayProto\022\031\n\021individu" +
-      "al_attack\030\014 \001(\005\022\032\n\022individual_defense\030\r " +
-      "\001(\005\022\032\n\022individual_stamina\030\016 \001(\005\022\031\n\021attac" +
-      "k_stat_stage\030\017 \001(\005\022\032\n\022defense_stat_stage" +
-      "\030\020 \001(\005\022\023\n\013battles_won\030\021 \001(\005\022\024\n\014battles_l" +
-      "ost\030\022 \001(\005\022\020\n\010nickname\030\023 \001(\t\022&\n\010pokeball\030" +
-      "\024 \001(\0162\024.POGOProtos.Rpc.Item\"\250\001\n\013CombatSt" +
-      "ate\022\t\n\005UNSET\020\000\022\027\n\023WAITING_FOR_PLAYERS\020\001\022" +
-      "\t\n\005READY\020\002\022\n\n\006ACTIVE\020\003\022\022\n\016SPECIAL_ATTACK" +
-      "\020\004\022\036\n\032WAITING_FOR_CHANGE_POKEMON\020\005\022\014\n\010FI" +
-      "NISHED\020\006\022\017\n\013PLAYER_QUIT\020\007\022\013\n\007TIMEOUT\020\010\"a",
-      "\n\013IBCBPKLGKOL\022\023\n\013dpnibkogejm\030\001 \001(\t\022=\n\013el" +
-      "hdenjcchn\030\002 \001(\0162(.POGOProtos.Rpc.Friends" +
-      "hipLevelMilestone\"H\n\027RaidTicketSettingsP" +
-      "roto\022-\n%consume_raid_ticket_upon_battle_" +
-      "start\030\001 \001(\010\"y\n\026PokemonGoPlusTelemetry\0225\n" +
-      "\013diokkmgkelj\030\001 \001(\0162 .POGOProtos.Rpc.Poke" +
-      "monGoPlusIds\022\023\n\013knbllicccna\030\002 \001(\005\022\023\n\013lio" +
-      "lpilecbj\030\003 \001(\005\"\340\002\n\023IapItemDisplayProto\022\013" +
-      "\n\003sku\030\001 \001(\t\0225\n\010category\030\002 \001(\0162#.POGOProt" +
-      "os.Rpc.HoloIapItemCategory\022\022\n\nsort_order" +
-      "\030\003 \001(\005\022\016\n\006hidden\030\006 \001(\010\022\014\n\004sale\030\007 \001(\010\022\021\n\t" +
-      "sprite_id\030\010 \001(\t\022\r\n\005title\030\t \001(\t\022\023\n\013descri" +
-      "ption\030\n \001(\t\022\027\n\017sku_enable_time\030\013 \001(\t\022\030\n\020" +
-      "sku_disable_time\030\014 \001(\t\022\036\n\026sku_enable_tim" +
-      "e_utc_ms\030\r \001(\003\022\037\n\027sku_disable_time_utc_m" +
-      "s\030\016 \001(\003\022\025\n\rsubcategories\030\017 \003(\t\022\021\n\timage_" +
-      "url\030\020 \001(\t\"7\n\013ICHEEJODKGK\022\023\n\013lndigkkjfml\030" +
-      "\001 \001(\t\022\023\n\013pdaldoafaaj\030\002 \001(\003\"]\n\032WithInvasi" +
-      "onCharacterProto\022?\n\010category\030\001 \003(\0162-.POG" +
-      "OProtos.Rpc.EnumWrapper.CharacterCategor" +
-      "y\";\n\017DailyQuestProto\022\023\n\013ipfjggpocpf\030\001 \001(" +
-      "\005\022\023\n\013ekchjondmob\030\002 \001(\005\"G\n\033VsSeekerClient" +
-      "SettingsProto\022\023\n\013ihdadhjlfbo\030\001 \001(\t\022\023\n\013dk" +
-      "kjmmjijfl\030\002 \003(\t\"n\n\013ICOGKMMELDH\022\023\n\013hpjgec" +
-      "pcgoj\030\001 \001(\004\022\023\n\013pegfachkbdd\030\002 \001(\t\0225\n\013gifo" +
-      "ejepgid\030\003 \003(\0132 .POGOProtos.Rpc.StickerSe" +
-      "ntProto\"a\n\013IDBAHAGEMIO\022\023\n\013lndigkkjfml\030\001 " +
-      "\001(\t\022\023\n\013mfkgkhdmbpb\030\002 \001(\004\022\023\n\013nlblgfioeic\030" +
-      "\003 \001(\001\022\023\n\013ojnmcebeede\030\004 \001(\001\"\375\001\n\013IDCGGGGEG" +
-      "MH\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.IDCG" +
-      "GGGEGMH.Result\"\271\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007" +
-      "SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\037\n\033ERROR_PL" +
-      "AYER_DOES_NOT_EXIST\020\003\022\034\n\030ERROR_GIFT_NOT_" +
-      "AVAILABLE\020\004\022!\n\035ERROR_GIFT_ALREADY_SENT_T" +
-      "ODAY\020\005\022\"\n\036ERROR_PLAYER_HAS_UNOPENED_GIFT" +
-      "\020\006\"\275\001\n\013IDKAOBICHCF\0222\n\006result\030\001 \001(\0162\".POG" +
-      "OProtos.Rpc.IDKAOBICHCF.Result\0229\n\013oafocn" +
-      "chncd\030\002 \001(\0132$.POGOProtos.Rpc.CombatChall" +
-      "engeProto\"?\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
-      "S\020\001\022\035\n\031ERROR_CHALLENGE_NOT_FOUND\020\002\"\207\002\n\013I" +
-      "ECABEFBCNA\0222\n\006result\030\001 \001(\0162\".POGOProtos." +
-      "Rpc.IECABEFBCNA.Result\0228\n\013hniaadbmmll\030\002 " +
-      "\001(\0132#.POGOProtos.Rpc.FortDetailsOutProto" +
-      "\"\211\001\n\006Result\022\021\n\rNO_RESULT_SET\020\000\022\013\n\007SUCCES" +
-      "S\020\001\022\035\n\031FORT_ALREADY_HAS_MODIFIER\020\002\022\020\n\014TO" +
-      "O_FAR_AWAY\020\003\022\030\n\024NO_ITEM_IN_INVENTORY\020\004\022\024" +
-      "\n\020POI_INACCESSIBLE\020\005\"\343\001\n\013IEFLNAKACDC\0222\n\006" +
-      "result\030\001 \001(\0162\".POGOProtos.Rpc.IEFLNAKACD" +
-      "C.Result\0225\n\013cnmhjlaehkl\030\002 \001(\0132 .POGOProt" +
-      "os.Rpc.AppliedItemProto\"i\n\006Result\022\013\n\007UNK" +
-      "NOWN\020\000\022\013\n\007SUCCESS\020\001\022\032\n\026INCENSE_ALREADY_A" +
-      "CTIVE\020\002\022\025\n\021NONE_IN_INVENTORY\020\003\022\022\n\016LOCATI" +
-      "ON_UNSET\020\004\"l\n\tAdDetails\022C\n\023image_text_cr" +
-      "eative\030\001 \001(\0132&.POGOProtos.Rpc.ImageTextC" +
-      "reativeProto\022\032\n\022encrypted_ad_token\030\002 \001(\014" +
-      "\"\257\013\n\nQuestProto\0226\n\013daily_quest\030\002 \001(\0132\037.P" +
-      "OGOProtos.Rpc.DailyQuestProtoH\000\0229\n\nmulti" +
-      "_part\030\003 \001(\0132#.POGOProtos.Rpc.MultiPartQu" +
-      "estProtoH\000\022?\n\rcatch_pokemon\030\004 \001(\0132&.POGO" +
-      "Protos.Rpc.CatchPokemonQuestProtoH\000\0229\n\na" +
-      "dd_friend\030\005 \001(\0132#.POGOProtos.Rpc.AddFrie" +
-      "ndQuestProtoH\000\022?\n\rtrade_pokemon\030\006 \001(\0132&." +
-      "POGOProtos.Rpc.TradePokemonQuestProtoH\000\022" +
-      "N\n\025daily_buddy_affection\030\007 \001(\0132-.POGOPro" +
-      "tos.Rpc.DailyBuddyAffectionQuestProtoH\000\022" +
-      "4\n\nquest_walk\030\010 \001(\0132\036.POGOProtos.Rpc.Que" +
-      "stWalkProtoH\000\022J\n\023evolve_into_pokemon\030\t \001" +
-      "(\0132+.POGOProtos.Rpc.EvolveIntoPokemonQue" +
-      "stProtoH\000\022.\n\013ifjdeaplamo\030\001 \001(\0162\031.POGOPro" +
-      "tos.Rpc.QuestType\022;\n\013ioplaplknhi\030c \001(\0132&" +
-      ".POGOProtos.Rpc.DaysWithARowQuestProto\022\023" +
-      "\n\013clgdnpihbdn\030d \001(\t\022\023\n\013bbpbajmeflp\030e \001(\003" +
-      "\0227\n\013heokhfmdgif\030f \001(\0162\".POGOProtos.Rpc.Q" +
-      "uestProto.Context\022\023\n\013kpkpbejeeod\030g \001(\t\022\023" +
-      "\n\013gflfaledbio\030h \001(\005\0223\n\013obpcpobeice\030i \001(\013" +
-      "2\036.POGOProtos.Rpc.QuestGoalProto\0221\n\006stat" +
-      "us\030j \001(\0162!.POGOProtos.Rpc.QuestProto.Sta" +
-      "tus\0225\n\013biaddapbaip\030k \003(\0132 .POGOProtos.Rp" +
-      "c.QuestRewardProto\022\023\n\013dpcmkifkoch\030l \001(\003\022" +
-      "\023\n\013ggcajdfaibl\030m \001(\003\022\023\n\013cbhabjpieik\030n \001(" +
-      "\003\022\023\n\013lndigkkjfml\030o \001(\t\022\023\n\013ghcpbbiafpg\030p " +
-      "\001(\010\022\023\n\013mfiglmdhhog\030q \001(\010\022\023\n\013hjfmcjjnoic\030" +
-      "r \001(\005\022\023\n\013kmkjcldecjg\030s \001(\003\022\023\n\013lpmmogciah" +
-      "p\030t \001(\005\0226\n\013bfpneflmdck\030u \001(\0132!.POGOProto" +
-      "s.Rpc.DailyCounterProto\022\023\n\013kfliciapahh\030v" +
-      " \001(\t\022\023\n\013pnjconbhdlc\030w \001(\003\"G\n\006Status\022\024\n\020S" +
-      "TATUS_UNDEFINED\020\000\022\021\n\rSTATUS_ACTIVE\020\001\022\024\n\020" +
-      "STATUS_COMPLETED\020\002\"\224\001\n\007Context\022\t\n\005UNSET\020" +
-      "\000\022\017\n\013STORY_QUEST\020\001\022\023\n\017CHALLENGE_QUEST\020\002\022" +
-      "\024\n\020DAILY_COIN_QUEST\020\003\022\025\n\021TIMED_STORY_QUE" +
-      "ST\020\004\022\026\n\022TGC_TRACKING_QUEST\020\007\022\023\n\017EVOLUTIO" +
-      "N_QUEST\020\010B\007\n\005Quest\"\230\003\n\013IFIEHOGGABH\0222\n\006re" +
-      "sult\030\001 \001(\0162\".POGOProtos.Rpc.IFIEHOGGABH." +
-      "Result\0222\n\013kcbcpdfdkel\030\002 \001(\0162\035.POGOProtos" +
-      ".Rpc.HoloPokemonId\022\023\n\013hgbcneaikee\030\003 \001(\001\022" +
-      "\023\n\013fgdfndjkioa\030\004 \001(\001\022\023\n\013adfnjbdncbj\030\005 \001(" +
-      "\t\022\023\n\013ckniekbneoe\030\006 \001(\004\022\023\n\013dchpmlfefme\030\007 " +
-      "\001(\003\0228\n\013efpknnlchbc\030\010 \001(\0132#.POGOProtos.Rp" +
-      "c.PokemonDisplayProto\"~\n\006Result\022\t\n\005UNSET" +
-      "\020\000\022\013\n\007SUCCESS\020\001\022\036\n\032ALREADY_FINISHED_FOR_" +
-      "TODAY\020\002\022\024\n\020MISSED_FOR_TODAY\020\003\022\030\n\024NO_POKE" +
-      "MON_AVAILABLE\020\004\022\014\n\010DISABLED\020\005\"\200\001\n\013IFJBLK" +
-      "OPCJL\022\023\n\013pkdofmmahaj\030\001 \001(\010\0222\n\013ippmdfnpah" +
-      "h\030\002 \003(\0162\035.POGOProtos.Rpc.HoloBadgeType\022\023" +
-      "\n\013pkfpgmmmbbd\030\003 \003(\005\022\023\n\013ckkpmkmhgbg\030\004 \003(\t" +
-      "\"\r\n\013IFNBPBNAFOM\"\223\002\n\013IGEBFLFNOLF\0222\n\006resul" +
-      "t\030\001 \001(\0162\".POGOProtos.Rpc.IGEBFLFNOLF.Res" +
-      "ult\"\317\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022!" +
-      "\n\035ERROR_INVALID_CHALLENGE_STATE\020\002\022\035\n\031ERR" +
-      "OR_CHALLENGE_NOT_FOUND\020\003\022\032\n\026ERROR_ALREAD" +
-      "Y_ACCEPTED\020\004\022\032\n\026ERROR_ALREADY_DECLINED\020\005" +
-      "\022\032\n\026ERROR_ALREADY_TIMEDOUT\020\006\022\027\n\023ERROR_AC" +
-      "CESS_DENIED\020\007\"\"\n\013IGHMHLJOAEM\022\023\n\013clgdnpih" +
-      "bdn\030\001 \001(\t\"\207\005\n\013IGIAHBOHKEI\022/\n\013fdanacihmef" +
-      "\030\001 \001(\0132\032.POGOProtos.Rpc.LobbyProto\0220\n\013cp" +
-      "iahbokfnf\030\002 \001(\0132\033.POGOProtos.Rpc.BattleP" +
-      "roto\022\023\n\013nebieamaoni\030\003 \001(\010\0222\n\006result\030\004 \001(" +
-      "\0162\".POGOProtos.Rpc.IGIAHBOHKEI.Result\0222\n" +
-      "\013hmcoddoifhd\030\005 \001(\0132\035.POGOProtos.Rpc.Raid" +
-      "InfoProto\022\023\n\013bddlljbfpaj\030\006 \001(\010\022\023\n\013kbjblk" +
-      "mhcfm\030\007 \001(\010\022\023\n\013melcgjnppdm\030\010 \001(\005\022\023\n\013pnel" +
-      "ibmipoh\030\t \001(\010\022\023\n\013jifpekkihca\030\n \001(\005\022\023\n\013di" +
-      "kaifhaigb\030\013 \001(\003\022\023\n\013lcmhjjfbekg\030\014 \001(\005\022\023\n\013" +
-      "llcikkneolj\030\r \001(\010\022\023\n\013fdihdjnebjp\030\016 \001(\005\022\023" +
-      "\n\013mclbmpbgecd\030\017 \001(\010\022\023\n\013bpijdcjhmcn\030\020 \001(\010" +
-      "\"\260\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\026\n\022E" +
-      "RROR_NOT_IN_RANGE\020\002\022\030\n\024ERROR_RAID_COMPLE" +
-      "TED\020\003\022\032\n\026ERROR_RAID_UNAVAILABLE\020\004\022$\n ERR" +
-      "OR_PLAYER_BELOW_MINIMUM_LEVEL\020\005\022\032\n\026ERROR" +
-      "_POI_INACCESSIBLE\020\006\"\232\003\n\013BattleProto\022\027\n\017b" +
-      "attle_start_ms\030\001 \001(\003\022\025\n\rbattle_end_ms\030\002 " +
-      "\001(\003\022\021\n\tbattle_id\030\003 \001(\t\0228\n\010defender\030\004 \001(\013" +
-      "2&.POGOProtos.Rpc.BattleParticipantProto" +
-      "\0222\n\nbattle_log\030\005 \001(\0132\036.POGOProtos.Rpc.Ba" +
-      "ttleLogProto\0228\n\010attacker\030\006 \001(\0132&.POGOPro" +
-      "tos.Rpc.BattleParticipantProto\022P\n\021weathe" +
-      "r_condition\030\007 \001(\01625.POGOProtos.Rpc.Gamep" +
-      "layWeatherProto.WeatherCondition\022N\n\034high" +
-      "est_friendship_milestone\030\010 \001(\0162(.POGOPro" +
-      "tos.Rpc.FriendshipLevelMilestone\"7\n\013IGNA" +
-      "CGOOBMB\022\023\n\013alflaepafnn\030\001 \001(\t\022\023\n\013dfiokhde" +
-      "idk\030\002 \001(\t\"L\n\022EggIncubatorsProto\0226\n\013gegep" +
-      "mhopch\030\001 \003(\0132!.POGOProtos.Rpc.EggIncubat" +
-      "orProto\"\277\010\n\013IHCDININCLE\022\023\n\013papehmmfcak\030\001" +
-      " \001(\t\022<\n\013okngmhgphdn\030\002 \001(\0162\'.POGOProtos.R" +
-      "pc.IHCDININCLE.IOJIGGKBFOC\022<\n\013nbgcpglgkj" +
-      "g\030\003 \001(\0162\'.POGOProtos.Rpc.IHCDININCLE.FCG" +
-      "HEHJADAC\022\023\n\013mhabbeephlg\030\004 \001(\005\022\023\n\013kcbcpdf" +
-      "dkel\030\005 \001(\005\022\023\n\013fgeliggeohb\030\006 \001(\005\022\023\n\013ekinl" +
-      "iohkgk\030\007 \001(\002\022\023\n\013ckhdlmjmmpg\030\010 \001(\005\022\023\n\013fle" +
-      "acmlehgp\030\t \001(\001\022\023\n\013eiefofalfcf\030\n \001(\001\022\023\n\013c" +
-      "lbehipfphe\030\013 \001(\002\022\023\n\013gbgpdefedmo\030\014 \001(\002\022\023\n" +
-      "\013gijnbmdfmog\030\r \001(\005\022\023\n\013jlcebfglean\030\016 \001(\005\022" +
-      "\023\n\013meakfplpbof\030\017 \001(\005\022\023\n\013gknikdopfbg\030\020 \001(" +
-      "\005\022\023\n\013fciefpaeflh\030\021 \001(\005\022\023\n\013pmkclgjgfpm\030\022 " +
-      "\001(\005\022\023\n\013lecobcejkpk\030\023 \001(\t\022<\n\013noplkfpolgg\030" +
-      "\024 \001(\0162\'.POGOProtos.Rpc.IHCDININCLE.GJJHK" +
-      "CMICBO\022<\n\013apdnbhngegf\030\025 \001(\0162\'.POGOProtos" +
-      ".Rpc.IHCDININCLE.NOPNIIDCJHA\022<\n\013kgpgpmhi" +
-      "njm\030\026 \001(\0162\'.POGOProtos.Rpc.IHCDININCLE.I" +
-      "DJBBENKMCG\022\023\n\013pcdmjghheek\030\027 \001(\010\022\023\n\013gpohd" +
-      "hbnacg\030\030 \001(\005\022\023\n\013kndopccmkin\030\031 \001(\005\"E\n\013FCG" +
-      "HEHJADAC\022\010\n\004NONE\020\000\022\r\n\tTEAM_BLUE\020\001\022\014\n\010TEA" +
-      "M_RED\020\002\022\017\n\013TEAM_YELLOW\020\003\"E\n\013GJJHKCMICBO\022" +
-      "\020\n\014GENDER_UNSET\020\000\022\010\n\004MALE\020\001\022\n\n\006FEMALE\020\002\022" +
-      "\016\n\nGENDERLESS\020\003\"(\n\013IDJBBENKMCG\022\016\n\nFORM_U" +
-      "NSET\020\000\022\t\n\005ALOLA\020\001\"3\n\013IOJIGGKBFOC\022\020\n\014TRAI" +
-      "NER_MALE\020\000\022\022\n\016TRAINER_FEMALE\020\001\"i\n\013NOPNII" +
-      "DCJHA\022\t\n\005UNSET\020\000\022\020\n\014HOLIDAY_2016\020\001\022\017\n\013AN" +
-      "NIVERSARY\020\002\022\030\n\024ONE_YEAR_ANNIVERSARY\020\003\022\022\n" +
-      "\016HALLOWEEN_2017\020\004\"\221\002\n\025BuddyActivitySetti" +
-      "ngs\022/\n\010activity\030\001 \001(\0162\035.POGOProtos.Rpc.B" +
-      "uddyActivity\022@\n\021activity_category\030\002 \001(\0162" +
-      "%.POGOProtos.Rpc.BuddyActivityCategory\022\031" +
-      "\n\021max_times_per_day\030\003 \001(\005\022\035\n\025num_points_" +
-      "per_action\030\004 \001(\005\022%\n\035num_emotion_points_p" +
-      "er_action\030\005 \001(\005\022$\n\034emotion_cooldown_dura" +
-      "tion_ms\030\006 \001(\003\"Q\n\033EvolveIntoPokemonQuestP" +
-      "roto\0222\n\013ggnacafcdmp\030\001 \003(\0162\035.POGOProtos.R" +
-      "pc.HoloPokemonId\"\232\001\n\013IHJDBOKBLPF\0222\n\006resu" +
-      "lt\030\001 \001(\0162\".POGOProtos.Rpc.IHJDBOKBLPF.Re" +
-      "sult\"W\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\033" +
-      "\n\027ERROR_POKEMON_NOT_FOUND\020\002\022\030\n\024ERROR_POK" +
-      "EMON_IS_EGG\020\003\"c\n\013IHKCFHOEMAC\0222\n\006status\030\001" +
-      " \001(\0162\".POGOProtos.Rpc.IHKCFHOEMAC.Status" +
-      "\" \n\006Status\022\013\n\007SUCCESS\020\000\022\t\n\005ERROR\020\001\"\245\002\n\013I" +
-      "HKPBOLNALC\0222\n\006status\030\001 \001(\0162\".POGOProtos." +
-      "Rpc.IHKPBOLNALC.Status\022<\n\013dbianmbmnch\030\002 " +
+      " \001(\005\022\023\n\013max_stamina\030\006 \001(\005\022.\n\005move1\030\007 \001(\016" +
+      "2\037.POGOProtos.Rpc.HoloPokemonMove\022.\n\005mov" +
+      "e2\030\010 \001(\0162\037.POGOProtos.Rpc.HoloPokemonMov" +
+      "e\022.\n\005move3\030\t \001(\0162\037.POGOProtos.Rpc.HoloPo" +
+      "kemonMove\022\016\n\006energy\030\n \001(\005\022<\n\017pokemon_dis" +
+      "play\030\013 \001(\0132#.POGOProtos.Rpc.PokemonDispl" +
+      "ayProto\022\031\n\021individual_attack\030\014 \001(\005\022\032\n\022in" +
+      "dividual_defense\030\r \001(\005\022\032\n\022individual_sta" +
+      "mina\030\016 \001(\005\022\031\n\021attack_stat_stage\030\017 \001(\005\022\032\n" +
+      "\022defense_stat_stage\030\020 \001(\005\022\023\n\013battles_won" +
+      "\030\021 \001(\005\022\024\n\014battles_lost\030\022 \001(\005\022\020\n\010nickname" +
+      "\030\023 \001(\t\022&\n\010pokeball\030\024 \001(\0162\024.POGOProtos.Rp" +
+      "c.Item\"\250\001\n\013CombatState\022\t\n\005UNSET\020\000\022\027\n\023WAI" +
+      "TING_FOR_PLAYERS\020\001\022\t\n\005READY\020\002\022\n\n\006ACTIVE\020",
+      "\003\022\022\n\016SPECIAL_ATTACK\020\004\022\036\n\032WAITING_FOR_CHA" +
+      "NGE_POKEMON\020\005\022\014\n\010FINISHED\020\006\022\017\n\013PLAYER_QU" +
+      "IT\020\007\022\013\n\007TIMEOUT\020\010\"a\n\013IBCBPKLGKOL\022\023\n\013dpni" +
+      "bkogejm\030\001 \001(\t\022=\n\013elhdenjcchn\030\002 \001(\0162(.POG" +
+      "OProtos.Rpc.FriendshipLevelMilestone\"H\n\027" +
+      "RaidTicketSettingsProto\022-\n%consume_raid_" +
+      "ticket_upon_battle_start\030\001 \001(\010\"y\n\026Pokemo" +
+      "nGoPlusTelemetry\0225\n\013diokkmgkelj\030\001 \001(\0162 ." +
+      "POGOProtos.Rpc.PokemonGoPlusIds\022\023\n\013knbll" +
+      "icccna\030\002 \001(\005\022\023\n\013liolpilecbj\030\003 \001(\005\"\340\002\n\023Ia" +
+      "pItemDisplayProto\022\013\n\003sku\030\001 \001(\t\0225\n\010catego" +
+      "ry\030\002 \001(\0162#.POGOProtos.Rpc.HoloIapItemCat" +
+      "egory\022\022\n\nsort_order\030\003 \001(\005\022\016\n\006hidden\030\006 \001(" +
+      "\010\022\014\n\004sale\030\007 \001(\010\022\021\n\tsprite_id\030\010 \001(\t\022\r\n\005ti" +
+      "tle\030\t \001(\t\022\023\n\013description\030\n \001(\t\022\027\n\017sku_en" +
+      "able_time\030\013 \001(\t\022\030\n\020sku_disable_time\030\014 \001(" +
+      "\t\022\036\n\026sku_enable_time_utc_ms\030\r \001(\003\022\037\n\027sku" +
+      "_disable_time_utc_ms\030\016 \001(\003\022\025\n\rsubcategor" +
+      "ies\030\017 \003(\t\022\021\n\timage_url\030\020 \001(\t\"7\n\013ICHEEJOD" +
+      "KGK\022\023\n\013lndigkkjfml\030\001 \001(\t\022\023\n\013pdaldoafaaj\030" +
+      "\002 \001(\003\"]\n\032WithInvasionCharacterProto\022?\n\010c" +
+      "ategory\030\001 \003(\0162-.POGOProtos.Rpc.EnumWrapp" +
+      "er.CharacterCategory\";\n\017DailyQuestProto\022" +
+      "\023\n\013ipfjggpocpf\030\001 \001(\005\022\023\n\013ekchjondmob\030\002 \001(" +
+      "\005\"g\n\033VsSeekerClientSettingsProto\022\032\n\022upgr" +
+      "ade_iap_sku_id\030\001 \001(\t\022,\n$allowed_vs_seeke" +
+      "r_league_template_id\030\002 \003(\t\"n\n\013ICOGKMMELD" +
+      "H\022\023\n\013hpjgecpcgoj\030\001 \001(\004\022\023\n\013pegfachkbdd\030\002 " +
+      "\001(\t\0225\n\013gifoejepgid\030\003 \003(\0132 .POGOProtos.Rp" +
+      "c.StickerSentProto\"a\n\013IDBAHAGEMIO\022\023\n\013lnd" +
+      "igkkjfml\030\001 \001(\t\022\023\n\013mfkgkhdmbpb\030\002 \001(\004\022\023\n\013n" +
+      "lblgfioeic\030\003 \001(\001\022\023\n\013ojnmcebeede\030\004 \001(\001\"\375\001" +
+      "\n\013IDCGGGGEGMH\0222\n\006result\030\001 \001(\0162\".POGOProt" +
+      "os.Rpc.IDCGGGGEGMH.Result\"\271\001\n\006Result\022\t\n\005" +
+      "UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022" +
+      "\037\n\033ERROR_PLAYER_DOES_NOT_EXIST\020\003\022\034\n\030ERRO" +
+      "R_GIFT_NOT_AVAILABLE\020\004\022!\n\035ERROR_GIFT_ALR" +
+      "EADY_SENT_TODAY\020\005\022\"\n\036ERROR_PLAYER_HAS_UN" +
+      "OPENED_GIFT\020\006\"\275\001\n\013IDKAOBICHCF\0222\n\006result\030" +
+      "\001 \001(\0162\".POGOProtos.Rpc.IDKAOBICHCF.Resul" +
+      "t\0229\n\013oafocnchncd\030\002 \001(\0132$.POGOProtos.Rpc." +
+      "CombatChallengeProto\"?\n\006Result\022\t\n\005UNSET\020" +
+      "\000\022\013\n\007SUCCESS\020\001\022\035\n\031ERROR_CHALLENGE_NOT_FO" +
+      "UND\020\002\"\207\002\n\013IECABEFBCNA\0222\n\006result\030\001 \001(\0162\"." +
+      "POGOProtos.Rpc.IECABEFBCNA.Result\0228\n\013hni" +
+      "aadbmmll\030\002 \001(\0132#.POGOProtos.Rpc.FortDeta" +
+      "ilsOutProto\"\211\001\n\006Result\022\021\n\rNO_RESULT_SET\020" +
+      "\000\022\013\n\007SUCCESS\020\001\022\035\n\031FORT_ALREADY_HAS_MODIF" +
+      "IER\020\002\022\020\n\014TOO_FAR_AWAY\020\003\022\030\n\024NO_ITEM_IN_IN" +
+      "VENTORY\020\004\022\024\n\020POI_INACCESSIBLE\020\005\"\343\001\n\013IEFL" +
+      "NAKACDC\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc" +
+      ".IEFLNAKACDC.Result\0225\n\013cnmhjlaehkl\030\002 \001(\013" +
+      "2 .POGOProtos.Rpc.AppliedItemProto\"i\n\006Re" +
+      "sult\022\013\n\007UNKNOWN\020\000\022\013\n\007SUCCESS\020\001\022\032\n\026INCENS" +
+      "E_ALREADY_ACTIVE\020\002\022\025\n\021NONE_IN_INVENTORY\020" +
+      "\003\022\022\n\016LOCATION_UNSET\020\004\"l\n\tAdDetails\022C\n\023im" +
+      "age_text_creative\030\001 \001(\0132&.POGOProtos.Rpc" +
+      ".ImageTextCreativeProto\022\032\n\022encrypted_ad_" +
+      "token\030\002 \001(\014\"\257\013\n\nQuestProto\0226\n\013daily_ques" +
+      "t\030\002 \001(\0132\037.POGOProtos.Rpc.DailyQuestProto" +
+      "H\000\0229\n\nmulti_part\030\003 \001(\0132#.POGOProtos.Rpc." +
+      "MultiPartQuestProtoH\000\022?\n\rcatch_pokemon\030\004" +
+      " \001(\0132&.POGOProtos.Rpc.CatchPokemonQuestP" +
+      "rotoH\000\0229\n\nadd_friend\030\005 \001(\0132#.POGOProtos." +
+      "Rpc.AddFriendQuestProtoH\000\022?\n\rtrade_pokem" +
+      "on\030\006 \001(\0132&.POGOProtos.Rpc.TradePokemonQu" +
+      "estProtoH\000\022N\n\025daily_buddy_affection\030\007 \001(" +
+      "\0132-.POGOProtos.Rpc.DailyBuddyAffectionQu" +
+      "estProtoH\000\0224\n\nquest_walk\030\010 \001(\0132\036.POGOPro" +
+      "tos.Rpc.QuestWalkProtoH\000\022J\n\023evolve_into_" +
+      "pokemon\030\t \001(\0132+.POGOProtos.Rpc.EvolveInt" +
+      "oPokemonQuestProtoH\000\022.\n\013ifjdeaplamo\030\001 \001(" +
+      "\0162\031.POGOProtos.Rpc.QuestType\022;\n\013ioplaplk" +
+      "nhi\030c \001(\0132&.POGOProtos.Rpc.DaysWithARowQ" +
+      "uestProto\022\023\n\013clgdnpihbdn\030d \001(\t\022\023\n\013bbpbaj" +
+      "meflp\030e \001(\003\0227\n\013heokhfmdgif\030f \001(\0162\".POGOP" +
+      "rotos.Rpc.QuestProto.Context\022\023\n\013kpkpbeje" +
+      "eod\030g \001(\t\022\023\n\013gflfaledbio\030h \001(\005\0223\n\013obpcpo" +
+      "beice\030i \001(\0132\036.POGOProtos.Rpc.QuestGoalPr" +
+      "oto\0221\n\006status\030j \001(\0162!.POGOProtos.Rpc.Que" +
+      "stProto.Status\0225\n\013biaddapbaip\030k \003(\0132 .PO" +
+      "GOProtos.Rpc.QuestRewardProto\022\023\n\013dpcmkif" +
+      "koch\030l \001(\003\022\023\n\013ggcajdfaibl\030m \001(\003\022\023\n\013cbhab" +
+      "jpieik\030n \001(\003\022\023\n\013lndigkkjfml\030o \001(\t\022\023\n\013ghc" +
+      "pbbiafpg\030p \001(\010\022\023\n\013mfiglmdhhog\030q \001(\010\022\023\n\013h" +
+      "jfmcjjnoic\030r \001(\005\022\023\n\013kmkjcldecjg\030s \001(\003\022\023\n" +
+      "\013lpmmogciahp\030t \001(\005\0226\n\013bfpneflmdck\030u \001(\0132" +
+      "!.POGOProtos.Rpc.DailyCounterProto\022\023\n\013kf" +
+      "liciapahh\030v \001(\t\022\023\n\013pnjconbhdlc\030w \001(\003\"G\n\006" +
+      "Status\022\024\n\020STATUS_UNDEFINED\020\000\022\021\n\rSTATUS_A" +
+      "CTIVE\020\001\022\024\n\020STATUS_COMPLETED\020\002\"\224\001\n\007Contex" +
+      "t\022\t\n\005UNSET\020\000\022\017\n\013STORY_QUEST\020\001\022\023\n\017CHALLEN" +
+      "GE_QUEST\020\002\022\024\n\020DAILY_COIN_QUEST\020\003\022\025\n\021TIME" +
+      "D_STORY_QUEST\020\004\022\026\n\022TGC_TRACKING_QUEST\020\007\022" +
+      "\023\n\017EVOLUTION_QUEST\020\010B\007\n\005Quest\"\230\003\n\013IFIEHO" +
+      "GGABH\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.I" +
+      "FIEHOGGABH.Result\0222\n\013kcbcpdfdkel\030\002 \001(\0162\035" +
+      ".POGOProtos.Rpc.HoloPokemonId\022\023\n\013hgbcnea" +
+      "ikee\030\003 \001(\001\022\023\n\013fgdfndjkioa\030\004 \001(\001\022\023\n\013adfnj" +
+      "bdncbj\030\005 \001(\t\022\023\n\013ckniekbneoe\030\006 \001(\004\022\023\n\013dch" +
+      "pmlfefme\030\007 \001(\003\0228\n\013efpknnlchbc\030\010 \001(\0132#.PO" +
+      "GOProtos.Rpc.PokemonDisplayProto\"~\n\006Resu" +
+      "lt\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\036\n\032ALREADY_FI" +
+      "NISHED_FOR_TODAY\020\002\022\024\n\020MISSED_FOR_TODAY\020\003" +
+      "\022\030\n\024NO_POKEMON_AVAILABLE\020\004\022\014\n\010DISABLED\020\005" +
+      "\"\200\001\n\013IFJBLKOPCJL\022\023\n\013pkdofmmahaj\030\001 \001(\010\0222\n" +
+      "\013ippmdfnpahh\030\002 \003(\0162\035.POGOProtos.Rpc.Holo" +
+      "BadgeType\022\023\n\013pkfpgmmmbbd\030\003 \003(\005\022\023\n\013ckkpmk" +
+      "mhgbg\030\004 \003(\t\"\r\n\013IFNBPBNAFOM\"\223\002\n\013IGEBFLFNO" +
+      "LF\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.IGEB" +
+      "FLFNOLF.Result\"\317\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007" +
+      "SUCCESS\020\001\022!\n\035ERROR_INVALID_CHALLENGE_STA" +
+      "TE\020\002\022\035\n\031ERROR_CHALLENGE_NOT_FOUND\020\003\022\032\n\026E" +
+      "RROR_ALREADY_ACCEPTED\020\004\022\032\n\026ERROR_ALREADY" +
+      "_DECLINED\020\005\022\032\n\026ERROR_ALREADY_TIMEDOUT\020\006\022" +
+      "\027\n\023ERROR_ACCESS_DENIED\020\007\"\"\n\013IGHMHLJOAEM\022" +
+      "\023\n\013clgdnpihbdn\030\001 \001(\t\"\207\005\n\013IGIAHBOHKEI\022/\n\013" +
+      "fdanacihmef\030\001 \001(\0132\032.POGOProtos.Rpc.Lobby" +
+      "Proto\0220\n\013cpiahbokfnf\030\002 \001(\0132\033.POGOProtos." +
+      "Rpc.BattleProto\022\023\n\013nebieamaoni\030\003 \001(\010\0222\n\006" +
+      "result\030\004 \001(\0162\".POGOProtos.Rpc.IGIAHBOHKE" +
+      "I.Result\0222\n\013hmcoddoifhd\030\005 \001(\0132\035.POGOProt" +
+      "os.Rpc.RaidInfoProto\022\023\n\013bddlljbfpaj\030\006 \001(" +
+      "\010\022\023\n\013kbjblkmhcfm\030\007 \001(\010\022\023\n\013melcgjnppdm\030\010 " +
+      "\001(\005\022\023\n\013pnelibmipoh\030\t \001(\010\022\023\n\013jifpekkihca\030" +
+      "\n \001(\005\022\023\n\013dikaifhaigb\030\013 \001(\003\022\023\n\013lcmhjjfbek" +
+      "g\030\014 \001(\005\022\023\n\013llcikkneolj\030\r \001(\010\022\023\n\013fdihdjne" +
+      "bjp\030\016 \001(\005\022\023\n\013mclbmpbgecd\030\017 \001(\010\022\023\n\013bpijdc" +
+      "jhmcn\030\020 \001(\010\"\260\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUC" +
+      "CESS\020\001\022\026\n\022ERROR_NOT_IN_RANGE\020\002\022\030\n\024ERROR_" +
+      "RAID_COMPLETED\020\003\022\032\n\026ERROR_RAID_UNAVAILAB" +
+      "LE\020\004\022$\n ERROR_PLAYER_BELOW_MINIMUM_LEVEL" +
+      "\020\005\022\032\n\026ERROR_POI_INACCESSIBLE\020\006\"\232\003\n\013Battl" +
+      "eProto\022\027\n\017battle_start_ms\030\001 \001(\003\022\025\n\rbattl" +
+      "e_end_ms\030\002 \001(\003\022\021\n\tbattle_id\030\003 \001(\t\0228\n\010def" +
+      "ender\030\004 \001(\0132&.POGOProtos.Rpc.BattleParti" +
+      "cipantProto\0222\n\nbattle_log\030\005 \001(\0132\036.POGOPr" +
+      "otos.Rpc.BattleLogProto\0228\n\010attacker\030\006 \001(" +
+      "\0132&.POGOProtos.Rpc.BattleParticipantProt" +
+      "o\022P\n\021weather_condition\030\007 \001(\01625.POGOProto" +
+      "s.Rpc.GameplayWeatherProto.WeatherCondit" +
+      "ion\022N\n\034highest_friendship_milestone\030\010 \001(" +
+      "\0162(.POGOProtos.Rpc.FriendshipLevelMilest" +
+      "one\"7\n\013IGNACGOOBMB\022\023\n\013alflaepafnn\030\001 \001(\t\022" +
+      "\023\n\013dfiokhdeidk\030\002 \001(\t\"L\n\022EggIncubatorsPro" +
+      "to\0226\n\013gegepmhopch\030\001 \003(\0132!.POGOProtos.Rpc" +
+      ".EggIncubatorProto\"\277\010\n\013IHCDININCLE\022\023\n\013pa" +
+      "pehmmfcak\030\001 \001(\t\022<\n\013okngmhgphdn\030\002 \001(\0162\'.P" +
+      "OGOProtos.Rpc.IHCDININCLE.IOJIGGKBFOC\022<\n" +
+      "\013nbgcpglgkjg\030\003 \001(\0162\'.POGOProtos.Rpc.IHCD" +
+      "ININCLE.FCGHEHJADAC\022\023\n\013mhabbeephlg\030\004 \001(\005" +
+      "\022\023\n\013kcbcpdfdkel\030\005 \001(\005\022\023\n\013fgeliggeohb\030\006 \001" +
+      "(\005\022\023\n\013ekinliohkgk\030\007 \001(\002\022\023\n\013ckhdlmjmmpg\030\010" +
+      " \001(\005\022\023\n\013fleacmlehgp\030\t \001(\001\022\023\n\013eiefofalfcf" +
+      "\030\n \001(\001\022\023\n\013clbehipfphe\030\013 \001(\002\022\023\n\013gbgpdefed" +
+      "mo\030\014 \001(\002\022\023\n\013gijnbmdfmog\030\r \001(\005\022\023\n\013jlcebfg" +
+      "lean\030\016 \001(\005\022\023\n\013meakfplpbof\030\017 \001(\005\022\023\n\013gknik" +
+      "dopfbg\030\020 \001(\005\022\023\n\013fciefpaeflh\030\021 \001(\005\022\023\n\013pmk" +
+      "clgjgfpm\030\022 \001(\005\022\023\n\013lecobcejkpk\030\023 \001(\t\022<\n\013n" +
+      "oplkfpolgg\030\024 \001(\0162\'.POGOProtos.Rpc.IHCDIN" +
+      "INCLE.GJJHKCMICBO\022<\n\013apdnbhngegf\030\025 \001(\0162\'" +
+      ".POGOProtos.Rpc.IHCDININCLE.NOPNIIDCJHA\022" +
+      "<\n\013kgpgpmhinjm\030\026 \001(\0162\'.POGOProtos.Rpc.IH" +
+      "CDININCLE.IDJBBENKMCG\022\023\n\013pcdmjghheek\030\027 \001" +
+      "(\010\022\023\n\013gpohdhbnacg\030\030 \001(\005\022\023\n\013kndopccmkin\030\031" +
+      " \001(\005\"E\n\013FCGHEHJADAC\022\010\n\004NONE\020\000\022\r\n\tTEAM_BL" +
+      "UE\020\001\022\014\n\010TEAM_RED\020\002\022\017\n\013TEAM_YELLOW\020\003\"E\n\013G" +
+      "JJHKCMICBO\022\020\n\014GENDER_UNSET\020\000\022\010\n\004MALE\020\001\022\n" +
+      "\n\006FEMALE\020\002\022\016\n\nGENDERLESS\020\003\"(\n\013IDJBBENKMC" +
+      "G\022\016\n\nFORM_UNSET\020\000\022\t\n\005ALOLA\020\001\"3\n\013IOJIGGKB" +
+      "FOC\022\020\n\014TRAINER_MALE\020\000\022\022\n\016TRAINER_FEMALE\020" +
+      "\001\"i\n\013NOPNIIDCJHA\022\t\n\005UNSET\020\000\022\020\n\014HOLIDAY_2" +
+      "016\020\001\022\017\n\013ANNIVERSARY\020\002\022\030\n\024ONE_YEAR_ANNIV" +
+      "ERSARY\020\003\022\022\n\016HALLOWEEN_2017\020\004\"\221\002\n\025BuddyAc" +
+      "tivitySettings\022/\n\010activity\030\001 \001(\0162\035.POGOP" +
+      "rotos.Rpc.BuddyActivity\022@\n\021activity_cate" +
+      "gory\030\002 \001(\0162%.POGOProtos.Rpc.BuddyActivit" +
+      "yCategory\022\031\n\021max_times_per_day\030\003 \001(\005\022\035\n\025" +
+      "num_points_per_action\030\004 \001(\005\022%\n\035num_emoti" +
+      "on_points_per_action\030\005 \001(\005\022$\n\034emotion_co" +
+      "oldown_duration_ms\030\006 \001(\003\"Q\n\033EvolveIntoPo" +
+      "kemonQuestProto\0222\n\013ggnacafcdmp\030\001 \003(\0162\035.P" +
+      "OGOProtos.Rpc.HoloPokemonId\"\232\001\n\013IHJDBOKB" +
+      "LPF\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.IHJ" +
+      "DBOKBLPF.Result\"W\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007" +
+      "SUCCESS\020\001\022\033\n\027ERROR_POKEMON_NOT_FOUND\020\002\022\030" +
+      "\n\024ERROR_POKEMON_IS_EGG\020\003\"c\n\013IHKCFHOEMAC\022" +
+      "2\n\006status\030\001 \001(\0162\".POGOProtos.Rpc.IHKCFHO" +
+      "EMAC.Status\" \n\006Status\022\013\n\007SUCCESS\020\000\022\t\n\005ER" +
+      "ROR\020\001\"\245\002\n\013IHKPBOLNALC\0222\n\006status\030\001 \001(\0162\"." +
+      "POGOProtos.Rpc.IHKPBOLNALC.Status\022<\n\013dbi" +
+      "anmbmnch\030\002 \001(\0132\'.POGOProtos.Rpc.CaptureP" +
+      "robabilityProto\022)\n\013iiadjbboilm\030\003 \001(\0162\024.P" +
+      "OGOProtos.Rpc.Item\"y\n\006Status\022\013\n\007SUCCESS\020" +
+      "\000\022\025\n\021ALREADY_COMPLETED\020\001\022\026\n\022ACTIVE_ITEM_" +
+      "EXISTS\020\002\022\030\n\024NO_ITEM_IN_INVENTORY\020\003\022\031\n\025IN" +
+      "VALID_ITEM_CATEGORY\020\004\"\211\007\n\031CombatGlobalSe" +
+      "ttingsProto\022\025\n\renable_combat\030\001 \001(\010\022&\n\036ma" +
+      "ximum_daily_rewarded_battles\030\002 \001(\005\022!\n\031en" +
+      "able_combat_stat_stages\030\003 \001(\010\022\034\n\024minimum" +
+      "_player_level\030\004 \001(\r\022*\n\"maximum_daily_npc" +
+      "_rewarded_battles\030\005 \001(\005\022(\n active_combat" +
+      "_update_interval_ms\030\006 \001(\005\022-\n%waiting_for" +
+      "_player_update_interval_ms\030\007 \001(\005\022+\n#read" +
+      "y_for_battle_update_interval_ms\030\010 \001(\005\022!\n" +
+      "\031pre_move_submit_window_ms\030\t \001(\005\022\"\n\032post" +
+      "_move_submit_window_ms\030\n \001(\005\022\026\n\016enable_s" +
+      "ockets\030\013 \001(\010\022\034\n\024enable_spin_minigame\030\014 \001" +
+      "(\010\022\034\n\024enable_quick_swap_v2\030\r \001(\010\022$\n\034depr" +
+      "ecated_vs_seeker_setting\030\016 \001(\010\022/\n\'vs_see" +
+      "ker_walking_dist_poll_duration_ms\030\017 \001(\005\022" +
+      "\"\n\032vs_seeker_player_min_level\030\020 \001(\005\022$\n\034m" +
+      "atchmaking_poll_duration_ms\030\021 \001(\005\022 \n\030ena" +
+      "ble_particle_minigame\030\022 \001(\010\022$\n\034enable_vs" +
+      "_seeker_upgrade_iap\030\023 \001(\010\022 \n\030enable_flyo" +
+      "ut_animations\030\024 \001(\010\022\031\n\021enable_battle_hub" +
+      "\030\025 \001(\010\022\'\n\037matchmaking_timeout_duration_m" +
+      "s\030\026 \001(\005\022%\n\035planned_downtime_timestamp_ms" +
+      "\030\027 \001(\003\022)\n!latency_compensation_threshold" +
+      "_ms\030\030 \001(\005\"\323\001\n\013IIKGKKLJJPA\022\023\n\013pkdofmmahaj" +
+      "\030\001 \001(\010\022\023\n\013mfkgkhdmbpb\030\002 \003(\004\022\023\n\013naliljbfo" +
+      "kd\030\003 \003(\005\022\023\n\013emmphdgkoej\030\004 \003(\005\022\023\n\013ndpgamp" +
+      "bpgo\030\005 \003(\005\022\023\n\013ocppklohdfe\030\006 \003(\002\0221\n\013almch" +
+      "blggce\030\007 \003(\0132\034.POGOProtos.Rpc.PokemonPro" +
+      "to\022\023\n\013edenehdmapg\030\010 \003(\005\"a\n\013IINLAKAIGMM\022\023" +
+      "\n\013bgabpioimcd\030\001 \003(\004\022\023\n\013hbaicflkilb\030\002 \003(\003" +
+      "\022\023\n\013nlcpffdacba\030\003 \001(\001\022\023\n\013jemecokoeib\030\004 \001" +
+      "(\001\"C\n\021AppliedItemsProto\022.\n\004item\030\004 \003(\0132 ." +
+      "POGOProtos.Rpc.AppliedItemProto\"^\n\034Invas" +
+      "ionFinishedDisplayProto\022>\n\013adbhjffoedg\030\001" +
+      " \001(\0162).POGOProtos.Rpc.EnumWrapper.Pokest" +
+      "opStyle\"\316\001\n\022EventSettingsProto\022!\n\031condol" +
+      "ence_ribbon_country\030\001 \003(\t\022\031\n\021enable_even" +
+      "t_link\030\002 \001(\010\022&\n\036enable_event_link_for_ch" +
+      "ildren\030\003 \001(\010\022!\n\031event_webtoken_server_ur" +
+      "l\030\004 \001(\t\022\030\n\020enable_event_lnt\030\005 \001(\010\022\025\n\reve" +
+      "nt_lnt_url\030\006 \001(\t\"\213\001\n\013IJLFJLLNNCE\022\023\n\013ckni" +
+      "ekbneoe\030\001 \001(\003\022\023\n\013lndigkkjfml\030\002 \001(\t\022\023\n\013nl" +
+      "blgfioeic\030\003 \001(\001\022\023\n\013ojnmcebeede\030\004 \001(\001\022\023\n\013" +
+      "olfnggmefal\030\005 \001(\001\022\023\n\013aocfljninfi\030\006 \001(\001\"L" +
+      "\n\013IJNKEFEBLLN\022\023\n\013bemkenlenhj\030\001 \001(\t\022\023\n\013pj" +
+      "bgnnaebae\030\002 \001(\010\022\023\n\013gdelciaphek\030\003 \001(\010\"R\n\020" +
+      "GmtSettingsProto\022\035\n\025enable_gmtdownload_v" +
+      "2\030\001 \001(\010\022\037\n\027download_poll_period_ms\030\002 \001(\005" +
+      "\"\252\001\n\013IKDJMAJMEFG\022\023\n\013mfkgkhdmbpb\030\001 \001(\005\022\023\n" +
+      "\013fgeliggeohb\030\002 \001(\005\022\023\n\013obajnkbnpmk\030\003 \001(\t\022" +
+      "\023\n\013fcidbdjkdih\030\004 \001(\010\022\023\n\013ffihlfcfcng\030\005 \001(" +
+      "\010\0222\n\013ianjodgkcmn\030\006 \001(\0162\035.POGOProtos.Rpc." +
+      "EncounterType\"\r\n\013IKIGOAPALHK\"%\n\016QuestWal" +
+      "kProto\022\023\n\013liojjogfgbd\030\001 \001(\002\"b\n\013ILAFEEOIC" +
+      "JL\022\023\n\013pfkhocicmjl\030\001 \001(\002\022\023\n\013ifdlgdpbpfg\030\002" +
+      " \001(\005\022)\n\013fklakmcbnfd\030\003 \001(\0162\024.POGOProtos.R" +
+      "pc.Item\"\331\004\n\030BuddyGlobalSettingsProto\022!\n\031" +
+      "buddy_v2_min_player_level\030\001 \001(\005\022*\n\"buddy" +
+      "_multiplayer_min_player_level\030\002 \001(\005\022\030\n\020e" +
+      "nable_monodepth\030\003 \001(\010\022\031\n\021monodepth_devic" +
+      "es\030\004 \003(\t\022(\n lobby_status_message_duratio" +
+      "n_ms\030\005 \001(\005\022\'\n\037mapping_instruction_durati" +
+      "on_ms\030\006 \001(\005\022/\n\'group_photo_leader_tracki" +
+      "ng_interval_ms\030\007 \001(\005\022 \n\030group_photo_coun" +
+      "tdown_ms\030\010 \001(\005\022\030\n\020lobby_timeout_ms\030\t \001(\005" +
+      "\022 \n\030enable_wallaby_telemetry\030\n \001(\010\022\037\n\027ma" +
+      "pping_hint_timeout_ms\030\013 \001(\005\022&\n\036group_pho" +
+      "to_simultaneous_shots\030\014 \001(\005\022 \n\030plfe_auth" +
+      "_tokens_enabled\030\r \001(\010\022$\n\034group_photo_sho" +
+      "t_interval_ms\030\016 \001(\005\022\031\n\021arbe_endpoint_url" +
+      "\030\017 \001(\t\022+\n#buddy_on_map_required_to_open_" +
+      "gifts\030\020 \001(\010\"_\n\031WithPokemonAlignmentProto" +
+      "\022B\n\013okjhilokpef\030\001 \003(\0162-.POGOProtos.Rpc.P" +
+      "okemonDisplayProto.Alignment\"M\n\013IMEGONKF" +
+      "AIK\022)\n\013ekpohjfklal\030\001 \001(\0162\024.POGOProtos.Rp" +
+      "c.Item\022\023\n\013mfkgkhdmbpb\030\002 \001(\004\"\r\n\013IMJEINMCM" +
+      "LP\"\r\n\013IMJFELJLEBM\"?\n\013IMMGHFBHOHJ\0220\n\013cneb" +
+      "dbnmgok\030\001 \001(\0132\033.POGOProtos.Rpc.LAKEAGGMI" +
+      "EH\"\225\001\n\025LeveledUpFriendsProto\022=\n\013mbmcfdhm" +
+      "gdc\030\001 \003(\0132(.POGOProtos.Rpc.PlayerPublicP" +
+      "rofileProto\022=\n\013cgbmeimppfc\030\002 \003(\0132(.POGOP" +
+      "rotos.Rpc.FriendshipLevelDataProto\"\267\001\n\026P" +
+      "layerCombatStatsProto\022L\n\013hjgemfpgmed\030\001 \003" +
+      "(\01327.POGOProtos.Rpc.PlayerCombatStatsPro" +
+      "to.HjgemfpgmedEntry\032O\n\020HjgemfpgmedEntry\022" +
+      "\013\n\003key\030\001 \001(\005\022*\n\005value\030\002 \001(\0132\033.POGOProtos" +
+      ".Rpc.LNGNLGBMPAG:\0028\001\"`\n\032PokemonGlobalSet" +
+      "tingsProto\022\032\n\022enable_camo_shader\030\001 \001(\010\022&" +
+      "\n\036display_pokemon_badge_on_model\030\002 \001(\010\"\310" +
+      "\001\n\037LimitedPurchaseSkuSettingsProto\022\026\n\016pu" +
+      "rchase_limit\030\001 \001(\005\022\017\n\007version\030\002 \001(\005\022M\n\013c" +
+      "hrono_unit\030\003 \001(\01628.POGOProtos.Rpc.Limite" +
+      "dPurchaseSkuRecordProto.ChronoUnit\022\026\n\016re" +
+      "set_interval\030\024 \001(\005\022\025\n\rloot_table_id\030\025 \001(" +
+      "\t\"\"\n\013INMGLKJBGIM\022\023\n\013pjgaobmjfla\030\001 \001(\010\"]\n" +
+      "\021ClientGenderProto\022\024\n\014male_percent\030\001 \001(\002" +
+      "\022\026\n\016female_percent\030\002 \001(\002\022\032\n\022genderless_p" +
+      "ercent\030\003 \001(\002\"\234\003\n\016BattleLogProto\0223\n\005state" +
+      "\030\001 \001(\0162$.POGOProtos.Rpc.BattleLogProto.S" +
+      "tate\022>\n\013battle_type\030\002 \001(\0162).POGOProtos.R" +
+      "pc.BattleLogProto.BattleType\022\021\n\tserver_m" +
+      "s\030\003 \001(\003\0229\n\016battle_actions\030\004 \003(\0132!.POGOPr" +
+      "otos.Rpc.BattleActionProto\022\027\n\017battle_sta" +
+      "rt_ms\030\005 \001(\003\022\025\n\rbattle_end_ms\030\006 \001(\003\"G\n\nBa" +
+      "ttleType\022\025\n\021BATTLE_TYPE_UNSET\020\000\022\n\n\006NORMA" +
+      "L\020\001\022\014\n\010TRAINING\020\002\022\010\n\004RAID\020\003\"N\n\005State\022\017\n\013" +
+      "STATE_UNSET\020\000\022\n\n\006ACTIVE\020\001\022\013\n\007VICTORY\020\002\022\014" +
+      "\n\010DEFEATED\020\003\022\r\n\tTIMED_OUT\020\004\"J\n\013IOEGOBEDB" +
+      "FL\022;\n\013bbnlhkefklc\030\001 \001(\0132&.POGOProtos.Rpc" +
+      ".PlayerPreferencesProto\"\221\002\n\tRaidProto\022\023\n" +
+      "\013pdaldoafaaj\030\001 \001(\003\022\023\n\013camohlklade\030\002 \001(\003\022" +
+      "\023\n\013kjoachgdnof\030\003 \001(\003\0222\n\013ogfianmlncn\030\004 \001(" +
+      "\0162\035.POGOProtos.Rpc.HoloPokemonId\022\023\n\013jnfh" +
+      "hbdpipe\030\005 \001(\010\022\023\n\013pnelibmipoh\030\006 \001(\010\022\023\n\013cj" +
+      "najlbpfhg\030\007 \001(\010\022\023\n\013bcolpogiebk\030\010 \001(\010\022\023\n\013" +
+      "pmgpdmiocfn\030\t \001(\010\022\023\n\013idonjaaknol\030\n \001(\003\022\023" +
+      "\n\013hljihbpnoli\030\014 \001(\010\"\265\001\n\025FestivalSettings" +
+      "Proto\022I\n\rfestival_type\030\001 \001(\01622.POGOProto" +
+      "s.Rpc.FestivalSettingsProto.FestivalType" +
+      "\022\013\n\003key\030\002 \001(\t\022\016\n\006vector\030\003 \001(\t\"4\n\014Festiva" +
+      "lType\022\010\n\004NONE\020\000\022\r\n\tHALLOWEEN\020\001\022\013\n\007HOLIDA" +
+      "Y\020\002\"7\n\013IONKIBPBNFC\022\023\n\013mfkgkhdmbpb\030\001 \001(\004\022" +
+      "\023\n\013clgdnpihbdn\030\002 \001(\t\"D\n\022WithRaidLevelPro" +
+      "to\022.\n\013kchphjadgne\030\001 \003(\0162\031.POGOProtos.Rpc" +
+      ".RaidLevel\"\"\n\013IPLFBOINOGJ\022\023\n\013pegfachkbdd" +
+      "\030\001 \001(\t\"\217\001\n\013JABKHBFHHGN\0224\n\013hdinlbkpiel\030\001 " +
+      "\001(\0132\037.POGOProtos.Rpc.AwardedGymBadge\0225\n\013" +
+      "mkfdbndkecj\030\002 \001(\0132 .POGOProtos.Rpc.GymDe" +
+      "fenderProto\022\023\n\013pkdofmmahaj\030\003 \001(\010\"\r\n\013JAFE" +
+      "PELPJKJ\"\206\001\n\026EvolvePokemonTelemetry\0225\n\013ba" +
+      "eglbmdifp\030\001 \001(\0132 .POGOProtos.Rpc.Pokemon" +
+      "Telemetry\0225\n\013jkaaniibbma\030\002 \001(\0132 .POGOPro" +
+      "tos.Rpc.PokemonTelemetry\"\234\010\n\021BuddyObserv" +
+      "edData\022\035\n\025current_points_earned\030\001 \001(\005\022/\n" +
+      "\013total_stats\030\003 \001(\0132\032.POGOProtos.Rpc.Budd" +
+      "yStats\022<\n\024buddy_gift_picked_up\030\006 \001(\0132\036.P" +
+      "OGOProtos.Rpc.BuddyGiftProto\022\036\n\026current_" +
+      "emotion_points\030\007 \001(\005\022X\n\027buddy_validation" +
+      "_result\030\010 \001(\01627.POGOProtos.Rpc.BuddyObse" +
+      "rvedData.BuddyValidationResult\022V\n\023souven" +
+      "irs_collected\030\t \003(\01329.POGOProtos.Rpc.Bud" +
+      "dyObservedData.SouvenirsCollectedEntry\022G" +
+      "\n\030today_stats_shown_hearts\030\n \001(\0132%.POGOP" +
+      "rotos.Rpc.BuddyStatsShownHearts\022J\n\020buddy" +
+      "_feed_stats\030\013 \001(\01320.POGOProtos.Rpc.Buddy" +
+      "ObservedData.BuddyFeedStats\022\031\n\021attractiv" +
+      "e_poi_id\030\014 \001(\t\022)\n!attractive_poi_expirat" +
+      "ion_time_ms\030\r \001(\003\022!\n\031num_days_spent_with" +
+      "_buddy\030\016 \001(\005\032\216\001\n\016BuddyFeedStats\022\031\n\021map_e" +
+      "xpiration_ms\030\001 \001(\003\022#\n\033pre_map_fullness_p" +
+      "ercentage\030\002 \001(\002\022\036\n\026fullness_expiration_m" +
+      "s\030\003 \001(\003\022\034\n\024poffin_expiration_ms\030\004 \001(\003\032X\n" +
+      "\027SouvenirsCollectedEntry\022\013\n\003key\030\001 \001(\005\022,\n" +
+      "\005value\030\002 \001(\0132\035.POGOProtos.Rpc.SouvenirPr" +
+      "oto:\0028\001\"\275\001\n\025BuddyValidationResult\022\t\n\005UNS" +
+      "ET\020\000\022\013\n\007SUCCESS\020\001\022\030\n\024FAILED_BUDDY_NOT_SE" +
+      "T\020\002\022\032\n\026FAILED_BUDDY_NOT_FOUND\020\003\022\024\n\020FAILE" +
+      "D_BAD_BUDDY\020\004\022\037\n\033FAILED_BUDDY_V2_NOT_ENA" +
+      "BLED\020\005\022\037\n\033FAILED_PLAYER_LEVEL_TOO_LOW\020\006\"" +
+      "\372\002\n\013JBLBFLKNFPL\022\023\n\013dofnddnkdgc\030\001 \001(\t\022\023\n\013" +
+      "clhhgpcpfal\030\002 \001(\014\022\023\n\013imhljmifgmk\030\003 \001(\003\022\023" +
+      "\n\013bjkpopehbak\030\004 \001(\005\0222\n\006result\030\005 \001(\0162\".PO" +
+      "GOProtos.Rpc.JBLBFLKNFPL.Result\"\342\001\n\006Resu" +
+      "lt\022\022\n\016CREATE_SUCCESS\020\000\022\030\n\024CREATE_BUDDY_N" +
+      "OT_SET\020\001\022\032\n\026CREATE_BUDDY_NOT_FOUND\020\002\022\024\n\020" +
+      "CREATE_BAD_BUDDY\020\003\022\037\n\033CREATE_BUDDY_V2_NO" +
+      "T_ENABLED\020\004\022\037\n\033CREATE_PLAYER_LEVEL_TOO_L" +
+      "OW\020\005\022\030\n\024CREATE_UNKNOWN_ERROR\020\006\022\034\n\030CREATE" +
+      "_U13_NO_PERMISSION\020\007\"\207\002\n\033IapItemCategory" +
+      "DisplayProto\0225\n\010category\030\001 \001(\0162#.POGOPro" +
+      "tos.Rpc.HoloIapItemCategory\022\014\n\004name\030\002 \001(" +
+      "\t\022\016\n\006hidden\030\003 \001(\010\022\022\n\nsort_order\030\004 \001(\005\022\026\n" +
+      "\016banner_enabled\030\005 \001(\010\022\024\n\014banner_title\030\006 " +
+      "\001(\t\022\021\n\timage_url\030\007 \001(\t\022\023\n\013description\030\010 " +
+      "\001(\t\022\024\n\014display_rows\030\t \001(\005\022\023\n\013subcategory" +
+      "\030\n \001(\t\"\r\n\013JDBFAMHIKNJ\"\260\001\n\013JDGMPPLFGGD\0220\n" +
+      "\tadd_entry\030\001 \001(\0132\033.POGOProtos.Rpc.KFHGOJ" +
+      "IHKGCH\000\0221\n\nread_entry\030\002 \001(\0132\033.POGOProtos" +
+      ".Rpc.CFJDHFMBGJHH\000\0223\n\014remove_entry\030\003 \001(\013" +
+      "2\033.POGOProtos.Rpc.NADKJKECNCPH\000B\007\n\005Entry" +
+      "\"7\n\013JECFCNLMCBE\022\023\n\013mfkgkhdmbpb\030\001 \001(\004\022\023\n\013" +
+      "bbmmceldebd\030\002 \001(\005\"l\n\013JEIMCAIBLDB\022\023\n\013mfkg" +
+      "khdmbpb\030\001 \001(\004\022H\n\026temporary_evolution_id\030" +
+      "\002 \001(\0162(.POGOProtos.Rpc.HoloTemporaryEvol" +
+      "utionId\"\"\n\013JEPEFMCPLEH\022\023\n\013mofmigiblmc\030\001 " +
+      "\001(\010\"\233\003\n\013JFGDKGLEJDK\0222\n\006result\030\001 \001(\0162\".PO" +
+      "GOProtos.Rpc.JFGDKGLEJDK.Result\022\023\n\013clhhg" +
+      "pcpfal\030\002 \001(\014\022\023\n\013imhljmifgmk\030\003 \001(\003\022\023\n\013bjk" +
+      "popehbak\030\004 \001(\005\"\230\002\n\006Result\022\020\n\014JOIN_SUCCES" +
+      "S\020\000\022\023\n\017JOIN_LOBBY_FULL\020\001\022\025\n\021JOIN_HOST_TO" +
+      "O_FAR\020\002\022\030\n\024JOIN_LOBBY_NOT_FOUND\020\003\022\026\n\022JOI" +
+      "N_BUDDY_NOT_SET\020\004\022\030\n\024JOIN_BUDDY_NOT_FOUN" +
+      "D\020\005\022\022\n\016JOIN_BAD_BUDDY\020\006\022\035\n\031JOIN_BUDDY_V2" +
+      "_NOT_ENABLED\020\007\022\035\n\031JOIN_PLAYER_LEVEL_TOO_" +
+      "LOW\020\010\022\026\n\022JOIN_UNKNOWN_ERROR\020\t\022\032\n\026JOIN_U1" +
+      "3_NO_PERMISSION\020\n\"\200\001\n\030BuddyInteractionSe" +
+      "ttings\0221\n\023feed_item_whitelist\030\001 \003(\0162\024.PO" +
+      "GOProtos.Rpc.Item\0221\n\023care_item_whitelist" +
+      "\030\002 \003(\0162\024.POGOProtos.Rpc.Item\"\252\001\n\013JFJENGM" +
+      "APLD\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.JF" +
+      "JENGMAPLD.Result\"g\n\006Result\022\021\n\rLEAVE_SUCC" +
+      "ESS\020\000\022\026\n\022LEAVE_NOT_IN_LOBBY\020\001\022\031\n\025LEAVE_L" +
+      "OBBY_NOT_FOUND\020\002\022\027\n\023LEAVE_UNKNOWN_ERROR\020" +
+      "\003\"7\n\013JFKOOLCMDGK\022\023\n\013pegfachkbdd\030\001 \001(\t\022\023\n",
+      "\013hpjgecpcgoj\030\002 \001(\004\"i\n\013JGGNAANFMKJ\0220\n\013jji" +
+      "oejkblge\030\001 \001(\0132\033.POGOProtos.Rpc.FJFOOCMH" +
+      "LBJ\022\023\n\013mjpeknofebo\030\002 \001(\014\022\023\n\013odoaokjbbni\030" +
+      "\003 \001(\014\"\201\002\n\013JGIHCBDKLOO\0222\n\006result\030\001 \001(\0162\"." +
+      "POGOProtos.Rpc.JGIHCBDKLOO.Result\0229\n\013oaf" +
+      "ocnchncd\030\002 \001(\0132$.POGOProtos.Rpc.CombatCh" +
+      "allengeProto\"\202\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SU" +
+      "CCESS\020\001\022!\n\035ERROR_INVALID_CHALLENGE_STATE" +
+      "\020\002\022$\n ERROR_PLAYER_BELOW_MINIMUM_LEVEL\020\003" +
+      "\022\027\n\023ERROR_ACCESS_DENIED\020\004\"\305\003\n\013JGKONFNEHF" +
+      "N\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.JGKON" +
+      "FNEHFN.Result\0220\n\013jpiinjpkhfb\030\002 \001(\0132\033.POG" +
+      "OProtos.Rpc.BattleProto\"\317\002\n\006Result\022\t\n\005UN" +
+      "SET\020\000\022\013\n\007SUCCESS\020\001\022\027\n\023ERROR_GYM_NOT_FOUN" +
+      "D\020\002\022\032\n\026ERROR_RAID_UNAVAILABLE\020\003\022\030\n\024ERROR" +
+      "_RAID_COMPLETED\020\004\022\033\n\027ERROR_INVALID_ATTAC" +
+      "KERS\020\005\022$\n ERROR_PLAYER_BELOW_MINIMUM_LEV" +
+      "EL\020\006\022\026\n\022ERROR_NOT_IN_RANGE\020\007\022\032\n\026ERROR_PO" +
+      "I_INACCESSIBLE\020\010\022\031\n\025ERROR_LOBBY_NOT_FOUN" +
+      "D\020\t\022\023\n\017ERROR_NO_TICKET\020\n\022\030\n\024ERROR_INVALI" +
+      "D_SERVER\020\013\022\035\n\031ERROR_NEVER_JOINED_BATTLE\020" +
+      "\014\"\034\n\032WithDailyCaptureBonusProto\"?\n\013JHBNF" +
+      "HCIJDK\0220\n\013kcmjmjighpb\030\001 \003(\0132\033.POGOProtos" +
+      ".Rpc.GJFHOGOMIAF\"j\n\034PlannedDowntimeSetti" +
+      "ngsProto\022\035\n\025downtime_timestamp_ms\030\001 \001(\003\022" +
+      "+\n#no_actions_window_sec_from_downtime\030\002" +
+      " \001(\003\"8\n\013JHMNNGGKODO\022)\n\013nbpfkgpfhpc\030\001 \001(\016" +
+      "2\024.POGOProtos.Rpc.Team\"\323\002\n\013JIBJDNMPLOD\0222" +
+      "\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.JIBJDNMP" +
+      "LOD.Result\022.\n\013jbejbaggpfa\030\002 \001(\0132\031.POGOPr" +
+      "otos.Rpc.LootProto\022\023\n\013mgfbndphaij\030\003 \001(\005\022" +
+      "\023\n\013bcieidchgpi\030\004 \001(\002\0227\n\013lhhilpcdjmd\030\005 \001(" +
+      "\0132\".POGOProtos.Rpc.CombatSeasonResult\022\023\n" +
+      "\013cpjnphdafik\030\006 \001(\010\"h\n\006Result\022\t\n\005UNSET\020\000\022" +
+      "\013\n\007SUCCESS\020\001\022!\n\035ERROR_PLAYER_HAS_NO_VS_S" +
+      "EEKER\020\002\022#\n\037ERROR_REWARDS_ALREADY_COLLECT" +
+      "ED\020\003\"3\n\025KangarooSettingsProto\022\032\n\022enable_" +
+      "kangaroo_v2\030\001 \001(\010\"2\n\033ChangeOnlineStatusT" +
+      "elemetry\022\023\n\013hecicbfbgel\030\001 \001(\010\"7\n\013JJEPJBI" +
+      "ANHM\022\023\n\013pegfachkbdd\030\001 \001(\t\022\023\n\013hpjgecpcgoj" +
+      "\030\002 \001(\004\"\231\003\n\013JKEMBPCIHMH\0220\n\013nikdphgligk\030\001 " +
+      "\003(\0132\033.POGOProtos.Rpc.KPLAFGNMHHH\0220\n\013laac" +
+      "oihldgf\030\002 \003(\0132\033.POGOProtos.Rpc.KLEGKEFFL" +
+      "GI\0221\n\013meokhcpofcc\030\003 \003(\0132\034.POGOProtos.Rpc" +
+      ".PokemonProto\0221\n\013baeglbmdifp\030\004 \003(\0132\034.POG" +
+      "OProtos.Rpc.PokemonProto\0220\n\013emegclohcif\030" +
+      "\005 \003(\0132\033.POGOProtos.Rpc.OIPAOFPLBIO\022\023\n\013bc" +
+      "jjgokmhaj\030\006 \001(\005\022\023\n\013hopbeejkkfa\030\007 \001(\005\0222\n\013" +
+      "hjgemfpgmed\030\010 \003(\0162\035.POGOProtos.Rpc.HoloB" +
+      "adgeType\0220\n\013iaikbaimnod\030\t \003(\0132\033.POGOProt" +
+      "os.Rpc.EHCOPDADFBK\"\227\001\n\013JKJHHNELKCG\0222\n\006st" +
+      "atus\030\001 \001(\0162\".POGOProtos.Rpc.JKJHHNELKCG." +
+      "Status\"T\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001" +
+      "\022\037\n\033ERROR_PHOTO_POKEMON_INVALID\020\002\022\021\n\rERR" +
+      "OR_UNKNOWN\020\003\"\262\001\n\035DeviceSpecificationsTel" +
+      "emetry\022\023\n\013gnnnekplmlj\030\001 \001(\005\022\023\n\013cgjmpdlfl" +
+      "al\030\002 \001(\005\022\023\n\013aibkealmjbm\030\003 \001(\005\022\023\n\013ahnllkc" +
+      "mfaf\030\004 \001(\005\022\023\n\013ipmjieciijm\030\005 \001(\002\022\023\n\013ciceh" +
+      "mmbfim\030\006 \001(\002\022\023\n\013kehjpgibinc\030\007 \001(\005\"\204\001\n\017Np" +
+      "cPokemonProto\0223\n\014pokemon_type\030\001 \001(\0162\035.PO" +
+      "GOProtos.Rpc.HoloPokemonId\022<\n\017pokemon_di" +
+      "splay\030\002 \001(\0132#.POGOProtos.Rpc.PokemonDisp" +
+      "layProto\"\311\001\n\020GymDefenderProto\022:\n\013ojnldgd" +
+      "delk\030\001 \001(\0132%.POGOProtos.Rpc.MotivatedPok" +
+      "emonProto\022:\n\013bnabafbglko\030\002 \001(\0132%.POGOPro" +
+      "tos.Rpc.DeploymentTotalsProto\022=\n\013mcmfmag" +
+      "ahod\030\003 \001(\0132(.POGOProtos.Rpc.PlayerPublic" +
+      "ProfileProto\"\r\n\013JLPKKJMHJCI\"-\n\031MoveSeque" +
+      "nceSettingsProto\022\020\n\010sequence\030\001 \003(\t\"\224\001\n\031D" +
+      "eclineExRaidPassLogEntry\022@\n\006result\030\001 \001(\016" +
+      "20.POGOProtos.Rpc.DeclineExRaidPassLogEn" +
+      "try.Result\022\023\n\013haklnomcbjp\030\002 \001(\t\" \n\006Resul" +
+      "t\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"\230\001\n\013JMPBNDAGID" +
+      "C\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.JMPBN" +
+      "DAGIDC.Result\"U\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SU" +
+      "CCESS\020\001\022 \n\034ERROR_EX_RAID_PASS_NOT_FOUND\020" +
+      "\002\022\021\n\rERROR_UNKNOWN\020\003\"\324\001\n\033BelugaDailyTran" +
+      "sferLogEntry\022B\n\006result\030\001 \001(\01622.POGOProto" +
+      "s.Rpc.BelugaDailyTransferLogEntry.Result" +
+      "\022\035\n\025includes_weekly_bonus\030\002 \001(\010\0220\n\ritems" +
+      "_awarded\030\003 \001(\0132\031.POGOProtos.Rpc.LootProt" +
+      "o\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"c\n\022P" +
+      "robeSettingsProto\022\032\n\022enable_sidechannel\030" +
+      "\001 \001(\010\022\024\n\014enable_adhoc\030\002 \001(\010\022\033\n\023adhoc_fre" +
+      "quency_sec\030\003 \001(\005\"\375\003\n\031SocialClientSetting" +
+      "sProto\022\025\n\renable_social\030\001 \001(\010\022\032\n\022max_fri" +
+      "end_details\030\002 \001(\005\022\031\n\021player_level_gate\030\003" +
+      " \001(\005\022\"\n\032max_friend_nickname_length\030\004 \001(\005" +
+      "\022%\n\035enable_add_friend_via_qr_code\030\005 \001(\010\022" +
+      "\034\n\024enable_share_ex_pass\030\006 \001(\010\022\037\n\027enable_" +
+      "facebook_friends\030\007 \001(\010\022)\n!facebook_frien" +
+      "d_limit_per_request\030\010 \001(\005\022/\n\'disable_fac" +
+      "ebook_friends_opening_prompt\030\t \001(\010\022\035\n\025en" +
+      "able_giftability_v2\030\013 \001(\010\022\035\n\025enable_remo" +
+      "te_gifting\030\014 \001(\010\022\026\n\016enable_sticker\030\r \001(\010" +
+      "\022V\n\032cross_game_social_settings\030\016 \001(\01322.P" +
+      "OGOProtos.Rpc.CrossGameSocialGlobalSetti" +
+      "ngsProto\"\302\001\n\013JOAAOEIEFLC\0226\n\017invasion_bat" +
+      "tle\030\001 \001(\0132\033.POGOProtos.Rpc.AHPMBGGINOEH\000" +
+      "\0229\n\022invasion_encounter\030\002 \001(\0132\033.POGOProto" +
+      "s.Rpc.JAFEPELPJKJH\000\0228\n\021pokestop_dialogue" +
+      "\030\003 \001(\0132\033.POGOProtos.Rpc.LIJIDLPCEDIH\000B\006\n" +
+      "\004Data\"\214\002\n\013JOBJDAGFDPF\0222\n\006status\030\001 \001(\0162\"." +
+      "POGOProtos.Rpc.JOBJDAGFDPF.Status\0221\n\013mcj" +
+      "cidlpbmg\030\002 \001(\0132\034.POGOProtos.Rpc.PokemonP" +
+      "roto\"\225\001\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022" +
+      "\034\n\030ERROR_INSUFFICIENT_FUNDS\020\003\022\032\n\026ERROR_P" +
+      "OKEMON_DEPLOYED\020\004\022\033\n\027ERROR_POKEMON_NOT_F" +
+      "OUND\020\005\022\034\n\030ERROR_POKEMON_NOT_SHADOW\020\006\"O\n\016" +
+      "GymBattleProto\022\023\n\013ganccamkoba\030\001 \001(\t\022\023\n\013k" +
+      "joachgdnof\030\002 \001(\003\022\023\n\013dlefnlpfhag\030\003 \001(\010\"\354\001" +
+      "\n\030FriendshipLevelDataProto\022\023\n\013nfcbjbgbga" +
+      "i\030\001 \001(\003\022\023\n\013fmilfokmeok\030\002 \001(\005\022=\n\013jnpobecf" +
+      "pbd\030\003 \001(\0162(.POGOProtos.Rpc.FriendshipLev" +
+      "elMilestone\022=\n\013abnpapilgke\030\004 \001(\0162(.POGOP" +
+      "rotos.Rpc.FriendshipLevelMilestone\022\023\n\013la" +
+      "niikegaco\030\005 \001(\001\022\023\n\013bhejjjopcfc\030\006 \001(\005\"Q\n\022" +
+      "WithTempEvoIdProto\022;\n\tmega_form\030\001 \003(\0162(." +
+      "POGOProtos.Rpc.HoloTemporaryEvolutionId\"" +
+      "o\n\013JPDNHFBAFHM\022\023\n\013hdegllgmeih\030\001 \001(\t\0226\n\013f" +
+      "cjhofhmeje\030\002 \001(\0132!.POGOProtos.Rpc.Combat" +
+      "ActionProto\022\023\n\013fnginpplknd\030\003 \001(\t\"\204\003\n\023Rai" +
+      "dRewardsLogEntry\022:\n\006result\030\001 \001(\0162*.POGOP" +
+      "rotos.Rpc.RaidRewardsLogEntry.Result\022\023\n\013" +
+      "jhfphdpjjjl\030\002 \001(\010\022.\n\013nikdphgligk\030\003 \003(\0132\031" +
+      ".POGOProtos.Rpc.ItemProto\022.\n\013njnmcpacdoh" +
+      "\030\004 \003(\0132\031.POGOProtos.Rpc.ItemProto\022\023\n\013bcj" +
+      "jgokmhaj\030\005 \001(\005\0222\n\013ndpchbinofo\030\006 \003(\0132\035.PO" +
+      "GOProtos.Rpc.LootItemProto\022\023\n\013gmchkmlefn" +
+      "m\030\007 \001(\010\022<\n\013acnahapkpgl\030\010 \001(\0132\'.POGOProto" +
+      "s.Rpc.PokemonCandyRewardProto\" \n\006Result\022" +
+      "\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"L\n\013JPICNIPDGLJ\022\023" +
+      "\n\013ibojchhbikc\030\001 \001(\t\022\023\n\013cebkcoodeca\030\002 \001(\t" +
+      "\022\023\n\013amgfpdgccfm\030\003 \001(\t\"w\n\020ClientQuestProt" +
+      "o\022)\n\005quest\030\001 \001(\0132\032.POGOProtos.Rpc.QuestP" +
+      "roto\0228\n\rquest_display\030\002 \001(\0132!.POGOProtos" +
+      ".Rpc.QuestDisplayProto\"\215\002\n\033BuddyEncounte" +
+      "rCameoSettings\0221\n)buddy_wild_encounter_c" +
+      "ameo_chance_percent\030\001 \001(\002\0222\n*buddy_quest" +
+      "_encounter_cameo_chance_percent\030\002 \001(\002\0221\n" +
+      ")buddy_raid_encounter_cameo_chance_perce" +
+      "nt\030\003 \001(\002\0225\n-buddy_invasion_encounter_cam" +
+      "eo_chance_percent\030\004 \001(\002\022\035\n\025buddy_on_map_" +
+      "required\030\005 \001(\010\"^\n\013KACEADFJNEB\022\020\n\010asset_i" +
+      "d\030\001 \001(\t\022\023\n\013hhnbfajichl\030\002 \001(\t\022\023\n\013djkelmoc" +
+      "ljo\030\003 \001(\005\022\023\n\013mdobnekifng\030\004 \001(\r\"\360\004\n\013KAFPK" +
+      "BHJECK\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc." +
+      "KAFPKBHJECK.Result\0221\n\013jikkdljggho\030\002 \001(\0132" +
+      "\034.POGOProtos.Rpc.TradingProto\"\371\003\n\006Result" +
+      "\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOW" +
+      "N\020\002\022\032\n\026ERROR_FRIEND_NOT_FOUND\020\003\022\033\n\027ERROR" +
+      "_INVALID_PLAYER_ID\020\004\022\027\n\023ERROR_INVALID_ST" +
+      "ATE\020\005\022\027\n\023ERROR_STATE_HANDLER\020\006\022\031\n\025ERROR_" +
+      "TRADING_EXPIRED\020\007\022\032\n\026ERROR_TRADING_COOLD" +
+      "OWN\020\010\022\037\n\033ERROR_PLAYER_ALREADY_OPENED\020\t\022\035" +
+      "\n\031ERROR_FRIEND_OUT_OF_RANGE\020\n\022$\n ERROR_P" +
+      "LAYER_BELOW_MINIMUM_LEVEL\020\013\022$\n ERROR_PLA" +
+      "YER_REACHED_DAILY_LIMIT\020\014\022$\n ERROR_FRIEN" +
+      "D_REACHED_DAILY_LIMIT\020\r\022$\n ERROR_PLAYER_" +
+      "NOT_ENOUGH_STARDUST\020\016\022$\n ERROR_FRIEND_NO" +
+      "T_ENOUGH_STARDUST\020\017\022$\n ERROR_FRIEND_BELO" +
+      "W_MINIMUM_LEVEL\020\020\"H\n\013KAHFAFPGIJL\0229\n\013aiif" +
+      "jelhmlm\030\001 \001(\0132$.POGOProtos.Rpc.ContactSe" +
+      "ttingsProto\"\213\001\n\013KAJLJCIJAGB\0222\n\006result\030\001 " +
+      "\001(\0162\".POGOProtos.Rpc.KAJLJCIJAGB.Result\022" +
+      "\023\n\013ldpjppdnhbn\030\002 \001(\003\"3\n\006Result\022\t\n\005UNSET\020" +
+      "\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\"\263\002\n\022Ra" +
+      "idEncounterProto\0221\n\013baeglbmdifp\030\001 \001(\0132\034." +
+      "POGOProtos.Rpc.PokemonProto\022\023\n\013ckniekbne" +
+      "oe\030\002 \001(\003\022\023\n\013aeoedfahjck\030\003 \001(\t\022<\n\013cbcpjcm" +
+      "bild\030\004 \001(\0132\'.POGOProtos.Rpc.CaptureProba" +
+      "bilityProto\022\023\n\013melcgjnppdm\030\005 \001(\005\022.\n\013kchp" +
+      "hjadgne\030\006 \001(\0162\031.POGOProtos.Rpc.RaidLevel" +
+      "\022\023\n\013lndigkkjfml\030\007 \001(\t\022\023\n\013jhfphdpjjjl\030\010 \001" +
+      "(\010\022\023\n\013beleobpcfeh\030\t \001(\010\"\230*\n HoloholoClie" +
+      "ntTelemetryOmniProto\022-\n\tboot_time\030\001 \001(\0132" +
+      "\030.POGOProtos.Rpc.BootTimeH\000\022/\n\nframe_rat" +
+      "e\030\002 \001(\0132\031.POGOProtos.Rpc.FrameRateH\000\022H\n\027" +
+      "generic_click_telemetry\030\003 \001(\0132%.POGOProt" +
+      "os.Rpc.GenericClickTelemetryH\000\022B\n\024map_ev" +
+      "ents_telemetry\030\004 \001(\0132\".POGOProtos.Rpc.Ma" +
+      "pEventsTelemetryH\000\022H\n\027spin_pokestop_tele" +
+      "metry\030\005 \001(\0132%.POGOProtos.Rpc.SpinPokesto" +
+      "pTelemetryH\000\022F\n\026profile_page_telemetry\030\006" +
+      " \001(\0132$.POGOProtos.Rpc.ProfilePageTelemet" +
+      "ryH\000\022H\n\027shopping_page_telemetry\030\007 \001(\0132%." +
+      "POGOProtos.Rpc.ShoppingPageTelemetryH\000\022P" +
+      "\n\033encounter_pokemon_telemetry\030\010 \001(\0132).PO" +
+      "GOProtos.Rpc.EncounterPokemonTelemetryH\000" +
+      "\022H\n\027catch_pokemon_telemetry\030\t \001(\0132%.POGO" +
+      "Protos.Rpc.CatchPokemonTelemetryH\000\022J\n\030de" +
+      "ploy_pokemon_telemetry\030\n \001(\0132&.POGOProto" +
+      "s.Rpc.DeployPokemonTelemetryH\000\022F\n\026feed_p" +
+      "okemon_telemetry\030\013 \001(\0132$.POGOProtos.Rpc." +
+      "FeedPokemonTelemetryH\000\022J\n\030evolve_pokemon" +
+      "_telemetry\030\014 \001(\0132&.POGOProtos.Rpc.Evolve" +
+      "PokemonTelemetryH\000\022L\n\031release_pokemon_te" +
+      "lemetry\030\r \001(\0132\'.POGOProtos.Rpc.ReleasePo" +
+      "kemonTelemetryH\000\022N\n\032nickname_pokemon_tel" +
+      "emetry\030\016 \001(\0132(.POGOProtos.Rpc.NicknamePo" +
+      "kemonTelemetryH\000\022@\n\023news_page_telemetry\030" +
+      "\017 \001(\0132!.POGOProtos.Rpc.NewsPageTelemetry" +
+      "H\000\0227\n\016item_telemetry\030\020 \001(\0132\035.POGOProtos." +
+      "Rpc.ItemTelemetryH\000\022F\n\026battle_party_tele" +
+      "metry\030\021 \001(\0132$.POGOProtos.Rpc.BattleParty" +
+      "TelemetryH\000\022L\n\031passcode_redeem_telemetry" +
+      "\030\022 \001(\0132\'.POGOProtos.Rpc.PasscodeRedeemTe" +
+      "lemetryH\000\022B\n\024link_login_telemetry\030\023 \001(\0132" +
+      "\".POGOProtos.Rpc.LinkLoginTelemetryH\000\0227\n" +
+      "\016raid_telemetry\030\024 \001(\0132\035.POGOProtos.Rpc.R" +
+      "aidTelemetryH\000\022P\n\033push_notification_tele" +
+      "metry\030\025 \001(\0132).POGOProtos.Rpc.PushNotific" +
+      "ationTelemetryH\000\022V\n\036avatar_customization" +
+      "_telemetry\030\026 \001(\0132,.POGOProtos.Rpc.Avatar" +
+      "CustomizationTelemetryH\000\022o\n,read_point_o" +
+      "f_interest_description_telemetry\030\027 \001(\01327" +
+      ".POGOProtos.Rpc.ReadPointOfInterestDescr" +
+      "iptionTelemetryH\000\0225\n\rweb_telemetry\030\030 \001(\013" +
+      "2\034.POGOProtos.Rpc.WebTelemetryH\000\022@\n\023chan" +
+      "ge_ar_telemetry\030\031 \001(\0132!.POGOProtos.Rpc.C" +
+      "hangeArTelemetryH\000\022U\n\036weather_detail_cli" +
+      "ck_telemetry\030\032 \001(\0132+.POGOProtos.Rpc.Weat" +
+      "herDetailClickTelemetryH\000\022K\n\031user_issue_" +
+      "weather_report\030\033 \001(\0132&.POGOProtos.Rpc.Us" +
+      "erIssueWeatherReportH\000\022P\n\033pokemon_invent" +
+      "ory_telemetry\030\034 \001(\0132).POGOProtos.Rpc.Pok" +
+      "emonInventoryTelemetryH\000\022;\n\020social_telem" +
+      "etry\030\035 \001(\0132\037.POGOProtos.Rpc.SocialTeleme" +
+      "tryH\000\022Y\n\036check_encounter_info_telemetry\030" +
+      "\036 \001(\0132/.POGOProtos.Rpc.CheckEncounterTra" +
+      "yInfoTelemetryH\000\022K\n\031pokemon_go_plus_tele" +
+      "metry\030\037 \001(\0132&.POGOProtos.Rpc.PokemonGoPl" +
+      "usTelemetryH\000\022D\n\024rpc_timing_telemetry\030  " +
+      "\001(\0132$.POGOProtos.Rpc.RpcResponseTelemetr" +
+      "yH\000\022O\n\033social_gift_count_telemetry\030! \001(\013" +
+      "2(.POGOProtos.Rpc.SocialGiftCountTelemet" +
+      "ryH\000\022N\n\026asset_bundle_telemetry\030\" \001(\0132,.P" +
+      "OGOProtos.Rpc.AssetBundleDownloadTelemet" +
+      "ryH\000\022Q\n\034asset_poi_download_telemetry\030# \001" +
+      "(\0132).POGOProtos.Rpc.AssetPoiDownloadTele" +
+      "metryH\000\022W\n\037asset_stream_download_telemet" +
+      "ry\030$ \001(\0132,.POGOProtos.Rpc.AssetStreamDow" +
+      "nloadTelemetryH\000\022^\n#asset_stream_cache_c" +
+      "ulled_telemetry\030% \001(\0132/.POGOProtos.Rpc.A" +
+      "ssetStreamCacheCulledTelemetryH\000\022Q\n\033rpc_" +
+      "socket_timing_telemetry\030& \001(\0132*.POGOProt" +
+      "os.Rpc.RpcSocketResponseTelemetryH\000\022D\n\020p" +
+      "ermissions_flow\030\' \001(\0132(.POGOProtos.Rpc.P" +
+      "ermissionsFlowTelemetryH\000\022M\n\025device_serv" +
+      "ice_toggle\030( \001(\0132,.POGOProtos.Rpc.Device" +
+      "ServiceToggleTelemetryH\000\0227\n\016boot_telemet" +
+      "ry\030) \001(\0132\035.POGOProtos.Rpc.BootTelemetryH" +
+      "\000\022>\n\017user_attributes\030* \001(\0132#.POGOProtos." +
+      "Rpc.UserAttributesProtoH\000\022C\n\024onboarding_" +
+      "telemetry\030+ \001(\0132#.POGOProtos.Rpc.Onboard" +
+      "ingTelemetryH\000\022F\n\026login_action_telemetry" +
+      "\030, \001(\0132$.POGOProtos.Rpc.LoginActionTelem" +
+      "etryH\000\022I\n\032ar_photo_session_telemetry\030- \001" +
+      "(\0132#.POGOProtos.Rpc.ArPhotoSessionProtoH" +
+      "\000\022?\n\022invasion_telemetry\030. \001(\0132!.POGOProt" +
+      "os.Rpc.InvasionTelemetryH\000\022L\n\031combat_min" +
+      "igame_telemetry\030/ \001(\0132\'.POGOProtos.Rpc.C" +
+      "ombatMinigameTelemetryH\000\022Z\n!leave_point_" +
+      "of_interest_telemetry\0300 \001(\0132-.POGOProtos" +
+      ".Rpc.LeavePointOfInterestTelemetryH\000\022c\n&" +
+      "view_point_of_interest_image_telemetry\0301" +
+      " \001(\01321.POGOProtos.Rpc.ViewPointOfInteres" +
+      "tImageTelemetryH\000\022S\n\035combat_hub_entrance" +
+      "_telemetry\0302 \001(\0132*.POGOProtos.Rpc.Combat" +
+      "HubEntranceTelemetryH\000\022[\n!leave_interact" +
+      "ion_range_telemetry\0303 \001(\0132..POGOProtos.R" +
+      "pc.LeaveInteractionRangeTelemetryH\000\022S\n\035s" +
+      "hopping_page_click_telemetry\0304 \001(\0132*.POG" +
+      "OProtos.Rpc.ShoppingPageClickTelemetryH\000" +
+      "\022U\n\036shopping_page_scroll_telemetry\0305 \001(\013" +
+      "2+.POGOProtos.Rpc.ShoppingPageScrollTele" +
+      "metryH\000\022X\n\037device_specifications_telemet" +
+      "ry\0306 \001(\0132-.POGOProtos.Rpc.DeviceSpecific" +
+      "ationsTelemetryH\000\022P\n\033screen_resolution_t" +
+      "elemetry\0307 \001(\0132).POGOProtos.Rpc.ScreenRe" +
+      "solutionTelemetryH\000\022d\n&ar_buddy_multipla" +
+      "yer_session_telemetry\0308 \001(\01322.POGOProtos" +
+      ".Rpc.ARBuddyMultiplayerSessionTelemetryH" +
+      "\000\022n\n-buddy_multiplayer_connection_failed" +
+      "_telemetry\0309 \001(\01325.POGOProtos.Rpc.BuddyM" +
+      "ultiplayerConnectionFailedProtoH\000\022t\n0bud" +
+      "dy_multiplayer_connection_succeeded_tele" +
+      "metry\030: \001(\01328.POGOProtos.Rpc.BuddyMultip" +
+      "layerConnectionSucceededProtoH\000\022p\n/buddy" +
+      "_multiplayer_time_to_get_session_telemet" +
+      "ry\030; \001(\01325.POGOProtos.Rpc.BuddyMultiplay" +
+      "erTimeToGetSessionProtoH\000\022f\n\'player_hud_" +
+      "notification_click_telemetry\030< \001(\01323.POG" +
+      "OProtos.Rpc.PlayerHudNotificationClickTe" +
+      "lemetryH\000\022R\n\034monodepth_download_telemetr" +
+      "y\030= \001(\0132*.POGOProtos.Rpc.MonodepthDownlo" +
+      "adTelemetryH\000\022G\n\024ar_mapping_telemetry\030> " +
+      "\001(\0132\'.POGOProtos.Rpc.ArMappingTelemetryP" +
+      "rotoH\000\022D\n\025remote_raid_telemetry\030? \001(\0132#." +
+      "POGOProtos.Rpc.RemoteRaidTelemetryH\000\022@\n\023" +
+      "device_os_telemetry\030@ \001(\0132!.POGOProtos.R" +
+      "pc.DeviceOSTelemetryH\000\022L\n\031niantic_profil" +
+      "e_telemetry\030A \001(\0132\'.POGOProtos.Rpc.Niant" +
+      "icProfileTelemetryH\000\022U\n\036change_online_st" +
+      "atus_telemetry\030B \001(\0132+.POGOProtos.Rpc.Ch" +
+      "angeOnlineStatusTelemetryH\000\022@\n\013server_da" +
+      "ta\030\351\007 \001(\0132*.POGOProtos.Rpc.PlatformPlatf" +
+      "ormServerData\022J\n\016common_filters\030\352\007 \001(\01321" +
+      ".POGOProtos.Rpc.PlatformPlatformCommonFi" +
+      "lterProtoB\017\n\rTelemetryData\"\355\002\n\027VsSeekerA" +
+      "ttributesProto\022H\n\013leoaenadmbf\030\001 \001(\01623.PO" +
+      "GOProtos.Rpc.VsSeekerAttributesProto.PKF" +
+      "AGEBOEID\022\023\n\013gcnhojkbghp\030\002 \001(\001\022\023\n\013fbeiepa" +
+      "kjdp\030\003 \001(\001\022\023\n\013jafmahenpif\030\004 \001(\005\022\023\n\013hnajl" +
+      "ghmafk\030\006 \001(\005\0228\n\013bdbhlmmbfec\030\007 \001(\0162#.POGO" +
+      "Protos.Rpc.VsSeekerRewardTrack\022\023\n\013ffebne" +
+      "niecl\030\010 \001(\t\022\023\n\013mmcbgidleaf\030\t \001(\010\"P\n\013PKFA" +
+      "GEBOEID\022\t\n\005UNSET\020\000\022\024\n\020STARTED_CHARGING\020\001" +
+      "\022\021\n\rFULLY_CHARGED\020\002\022\r\n\tACTIVATED\020\003\"\300\001\n\013K" +
+      "BLLKGPLLHD\0222\n\006result\030\001 \001(\0162\".POGOProtos." +
+      "Rpc.KBLLKGPLLHD.Result\022\023\n\013lhpockkkeea\030\002 " +
+      "\001(\005\"h\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\024\n" +
+      "\020ERROR_NO_POKEMON\020\002\022\024\n\020ERROR_CANNOT_USE\020" +
+      "\003\022\032\n\026ERROR_DEPLOYED_TO_FORT\020\004\"\"\n\013KCKOHGA" +
+      "BILA\022\023\n\013ncelfjmmhdj\030\001 \001(\t\"\333\001\n\032VsSeekerWi" +
+      "nRewardsLogEntry\022A\n\006result\030\001 \001(\01621.POGOP" +
+      "rotos.Rpc.VsSeekerWinRewardsLogEntry.Res" +
+      "ult\022.\n\013nldndpcfdmh\030\002 \001(\0132\031.POGOProtos.Rp" +
+      "c.LootProto\022\023\n\013nakgeefmied\030\003 \001(\005\022\023\n\013nljf" +
+      "jdgfejj\030\004 \001(\005\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SU" +
+      "CCESS\020\001\"\310\001\n\023BuddyHungerSettings\022+\n#num_h" +
+      "unger_points_required_for_full\030\001 \001(\005\022\037\n\027" +
+      "decay_points_per_bucket\030\002 \001(\005\022\037\n\027millise" +
+      "conds_per_bucket\030\003 \001(\003\022\034\n\024cooldown_durat" +
+      "ion_ms\030\004 \001(\003\022$\n\034decay_duration_after_ful" +
+      "l_ms\030\005 \001(\003\"-\n\026TradePokemonQuestProto\022\023\n\013" +
+      "dpnibkogejm\030\001 \003(\t\"T\n\024ProfilePageTelemetr" +
+      "y\022<\n\013hdkcbbhhjcj\030\001 \001(\0162\'.POGOProtos.Rpc." +
+      "ProfilePageTelemetryIds\"\207\003\n\013KECPDFAKAPG\022" +
+      "2\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.KECPDFA" +
+      "KAPG.Result\0221\n\013baeglbmdifp\030\002 \001(\0132\034.POGOP" +
+      "rotos.Rpc.PokemonProto\022<\n\013dbianmbmnch\030\003 " +
       "\001(\0132\'.POGOProtos.Rpc.CaptureProbabilityP" +
-      "roto\022)\n\013iiadjbboilm\030\003 \001(\0162\024.POGOProtos.R" +
-      "pc.Item\"y\n\006Status\022\013\n\007SUCCESS\020\000\022\025\n\021ALREAD" +
-      "Y_COMPLETED\020\001\022\026\n\022ACTIVE_ITEM_EXISTS\020\002\022\030\n" +
-      "\024NO_ITEM_IN_INVENTORY\020\003\022\031\n\025INVALID_ITEM_" +
-      "CATEGORY\020\004\"\211\007\n\031CombatGlobalSettingsProto" +
-      "\022\025\n\renable_combat\030\001 \001(\010\022&\n\036maximum_daily" +
-      "_rewarded_battles\030\002 \001(\005\022!\n\031enable_combat" +
-      "_stat_stages\030\003 \001(\010\022\034\n\024minimum_player_lev" +
-      "el\030\004 \001(\r\022*\n\"maximum_daily_npc_rewarded_b" +
-      "attles\030\005 \001(\005\022(\n active_combat_update_int" +
-      "erval_ms\030\006 \001(\005\022-\n%waiting_for_player_upd" +
-      "ate_interval_ms\030\007 \001(\005\022+\n#ready_for_battl" +
-      "e_update_interval_ms\030\010 \001(\005\022!\n\031pre_move_s" +
-      "ubmit_window_ms\030\t \001(\005\022\"\n\032post_move_submi" +
-      "t_window_ms\030\n \001(\005\022\026\n\016enable_sockets\030\013 \001(" +
-      "\010\022\034\n\024enable_spin_minigame\030\014 \001(\010\022\034\n\024enabl" +
-      "e_quick_swap_v2\030\r \001(\010\022$\n\034deprecated_vs_s" +
-      "eeker_setting\030\016 \001(\010\022/\n\'vs_seeker_walking" +
-      "_dist_poll_duration_ms\030\017 \001(\005\022\"\n\032vs_seeke" +
-      "r_player_min_level\030\020 \001(\005\022$\n\034matchmaking_" +
-      "poll_duration_ms\030\021 \001(\005\022 \n\030enable_particl" +
-      "e_minigame\030\022 \001(\010\022$\n\034enable_vs_seeker_upg" +
-      "rade_iap\030\023 \001(\010\022 \n\030enable_flyout_animatio" +
-      "ns\030\024 \001(\010\022\031\n\021enable_battle_hub\030\025 \001(\010\022\'\n\037m" +
-      "atchmaking_timeout_duration_ms\030\026 \001(\005\022%\n\035" +
-      "planned_downtime_timestamp_ms\030\027 \001(\003\022)\n!l" +
-      "atency_compensation_threshold_ms\030\030 \001(\005\"\323" +
-      "\001\n\013IIKGKKLJJPA\022\023\n\013pkdofmmahaj\030\001 \001(\010\022\023\n\013m" +
-      "fkgkhdmbpb\030\002 \003(\004\022\023\n\013naliljbfokd\030\003 \003(\005\022\023\n" +
-      "\013emmphdgkoej\030\004 \003(\005\022\023\n\013ndpgampbpgo\030\005 \003(\005\022" +
-      "\023\n\013ocppklohdfe\030\006 \003(\002\0221\n\013almchblggce\030\007 \003(" +
-      "\0132\034.POGOProtos.Rpc.PokemonProto\022\023\n\013edene" +
-      "hdmapg\030\010 \003(\005\"a\n\013IINLAKAIGMM\022\023\n\013bgabpioim" +
-      "cd\030\001 \003(\004\022\023\n\013hbaicflkilb\030\002 \003(\003\022\023\n\013nlcpffd" +
-      "acba\030\003 \001(\001\022\023\n\013jemecokoeib\030\004 \001(\001\"C\n\021Appli" +
-      "edItemsProto\022.\n\004item\030\004 \003(\0132 .POGOProtos." +
-      "Rpc.AppliedItemProto\"^\n\034InvasionFinished" +
-      "DisplayProto\022>\n\013adbhjffoedg\030\001 \001(\0162).POGO" +
-      "Protos.Rpc.EnumWrapper.PokestopStyle\"\316\001\n" +
-      "\022EventSettingsProto\022!\n\031condolence_ribbon" +
-      "_country\030\001 \003(\t\022\031\n\021enable_event_link\030\002 \001(" +
-      "\010\022&\n\036enable_event_link_for_children\030\003 \001(" +
-      "\010\022!\n\031event_webtoken_server_url\030\004 \001(\t\022\030\n\020" +
-      "enable_event_lnt\030\005 \001(\010\022\025\n\revent_lnt_url\030" +
-      "\006 \001(\t\"\213\001\n\013IJLFJLLNNCE\022\023\n\013ckniekbneoe\030\001 \001" +
-      "(\003\022\023\n\013lndigkkjfml\030\002 \001(\t\022\023\n\013nlblgfioeic\030\003" +
-      " \001(\001\022\023\n\013ojnmcebeede\030\004 \001(\001\022\023\n\013olfnggmefal" +
-      "\030\005 \001(\001\022\023\n\013aocfljninfi\030\006 \001(\001\"L\n\013IJNKEFEBL" +
-      "LN\022\023\n\013bemkenlenhj\030\001 \001(\t\022\023\n\013pjbgnnaebae\030\002" +
-      " \001(\010\022\023\n\013gdelciaphek\030\003 \001(\010\"R\n\020GmtSettings" +
-      "Proto\022\035\n\025enable_gmtdownload_v2\030\001 \001(\010\022\037\n\027" +
-      "download_poll_period_ms\030\002 \001(\005\"\252\001\n\013IKDJMA" +
-      "JMEFG\022\023\n\013mfkgkhdmbpb\030\001 \001(\005\022\023\n\013fgeliggeoh" +
-      "b\030\002 \001(\005\022\023\n\013obajnkbnpmk\030\003 \001(\t\022\023\n\013fcidbdjk" +
-      "dih\030\004 \001(\010\022\023\n\013ffihlfcfcng\030\005 \001(\010\0222\n\013ianjod" +
-      "gkcmn\030\006 \001(\0162\035.POGOProtos.Rpc.EncounterTy" +
-      "pe\"\r\n\013IKIGOAPALHK\"%\n\016QuestWalkProto\022\023\n\013l" +
-      "iojjogfgbd\030\001 \001(\002\"b\n\013ILAFEEOICJL\022\023\n\013pfkho" +
-      "cicmjl\030\001 \001(\002\022\023\n\013ifdlgdpbpfg\030\002 \001(\005\022)\n\013fkl" +
-      "akmcbnfd\030\003 \001(\0162\024.POGOProtos.Rpc.Item\"\331\004\n" +
-      "\030BuddyGlobalSettingsProto\022!\n\031buddy_v2_mi" +
-      "n_player_level\030\001 \001(\005\022*\n\"buddy_multiplaye" +
-      "r_min_player_level\030\002 \001(\005\022\030\n\020enable_monod" +
-      "epth\030\003 \001(\010\022\031\n\021monodepth_devices\030\004 \003(\t\022(\n" +
-      " lobby_status_message_duration_ms\030\005 \001(\005\022" +
-      "\'\n\037mapping_instruction_duration_ms\030\006 \001(\005" +
-      "\022/\n\'group_photo_leader_tracking_interval" +
-      "_ms\030\007 \001(\005\022 \n\030group_photo_countdown_ms\030\010 " +
-      "\001(\005\022\030\n\020lobby_timeout_ms\030\t \001(\005\022 \n\030enable_" +
-      "wallaby_telemetry\030\n \001(\010\022\037\n\027mapping_hint_" +
-      "timeout_ms\030\013 \001(\005\022&\n\036group_photo_simultan" +
-      "eous_shots\030\014 \001(\005\022 \n\030plfe_auth_tokens_ena" +
-      "bled\030\r \001(\010\022$\n\034group_photo_shot_interval_" +
-      "ms\030\016 \001(\005\022\031\n\021arbe_endpoint_url\030\017 \001(\t\022+\n#b" +
-      "uddy_on_map_required_to_open_gifts\030\020 \001(\010" +
-      "\"_\n\031WithPokemonAlignmentProto\022B\n\013okjhilo" +
-      "kpef\030\001 \003(\0162-.POGOProtos.Rpc.PokemonDispl" +
-      "ayProto.Alignment\"M\n\013IMEGONKFAIK\022)\n\013ekpo" +
-      "hjfklal\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022\023\n\013m" +
-      "fkgkhdmbpb\030\002 \001(\004\"\r\n\013IMJEINMCMLP\"\r\n\013IMJFE" +
-      "LJLEBM\"?\n\013IMMGHFBHOHJ\0220\n\013cnebdbnmgok\030\001 \001" +
-      "(\0132\033.POGOProtos.Rpc.LAKEAGGMIEH\"\225\001\n\025Leve" +
-      "ledUpFriendsProto\022=\n\013mbmcfdhmgdc\030\001 \003(\0132(" +
-      ".POGOProtos.Rpc.PlayerPublicProfileProto" +
-      "\022=\n\013cgbmeimppfc\030\002 \003(\0132(.POGOProtos.Rpc.F" +
-      "riendshipLevelDataProto\"\267\001\n\026PlayerCombat" +
-      "StatsProto\022L\n\013hjgemfpgmed\030\001 \003(\01327.POGOPr" +
-      "otos.Rpc.PlayerCombatStatsProto.Hjgemfpg" +
-      "medEntry\032O\n\020HjgemfpgmedEntry\022\013\n\003key\030\001 \001(" +
-      "\005\022*\n\005value\030\002 \001(\0132\033.POGOProtos.Rpc.LNGNLG" +
-      "BMPAG:\0028\001\"`\n\032PokemonGlobalSettingsProto\022" +
-      "\032\n\022enable_camo_shader\030\001 \001(\010\022&\n\036display_p" +
-      "okemon_badge_on_model\030\002 \001(\010\"\310\001\n\037LimitedP" +
-      "urchaseSkuSettingsProto\022\026\n\016purchase_limi" +
-      "t\030\001 \001(\005\022\017\n\007version\030\002 \001(\005\022M\n\013chrono_unit\030" +
-      "\003 \001(\01628.POGOProtos.Rpc.LimitedPurchaseSk" +
-      "uRecordProto.ChronoUnit\022\026\n\016reset_interva" +
-      "l\030\024 \001(\005\022\025\n\rloot_table_id\030\025 \001(\t\"\"\n\013INMGLK" +
-      "JBGIM\022\023\n\013pjgaobmjfla\030\001 \001(\010\"]\n\021ClientGend" +
-      "erProto\022\024\n\014male_percent\030\001 \001(\002\022\026\n\016female_" +
-      "percent\030\002 \001(\002\022\032\n\022genderless_percent\030\003 \001(" +
-      "\002\"\234\003\n\016BattleLogProto\0223\n\005state\030\001 \001(\0162$.PO" +
-      "GOProtos.Rpc.BattleLogProto.State\022>\n\013bat" +
-      "tle_type\030\002 \001(\0162).POGOProtos.Rpc.BattleLo" +
-      "gProto.BattleType\022\021\n\tserver_ms\030\003 \001(\003\0229\n\016" +
-      "battle_actions\030\004 \003(\0132!.POGOProtos.Rpc.Ba" +
-      "ttleActionProto\022\027\n\017battle_start_ms\030\005 \001(\003" +
-      "\022\025\n\rbattle_end_ms\030\006 \001(\003\"G\n\nBattleType\022\025\n" +
-      "\021BATTLE_TYPE_UNSET\020\000\022\n\n\006NORMAL\020\001\022\014\n\010TRAI" +
-      "NING\020\002\022\010\n\004RAID\020\003\"N\n\005State\022\017\n\013STATE_UNSET" +
-      "\020\000\022\n\n\006ACTIVE\020\001\022\013\n\007VICTORY\020\002\022\014\n\010DEFEATED\020" +
-      "\003\022\r\n\tTIMED_OUT\020\004\"J\n\013IOEGOBEDBFL\022;\n\013bbnlh" +
-      "kefklc\030\001 \001(\0132&.POGOProtos.Rpc.PlayerPref" +
-      "erencesProto\"\221\002\n\tRaidProto\022\023\n\013pdaldoafaa" +
-      "j\030\001 \001(\003\022\023\n\013camohlklade\030\002 \001(\003\022\023\n\013kjoachgd" +
-      "nof\030\003 \001(\003\0222\n\013ogfianmlncn\030\004 \001(\0162\035.POGOPro" +
-      "tos.Rpc.HoloPokemonId\022\023\n\013jnfhhbdpipe\030\005 \001" +
-      "(\010\022\023\n\013pnelibmipoh\030\006 \001(\010\022\023\n\013cjnajlbpfhg\030\007" +
-      " \001(\010\022\023\n\013bcolpogiebk\030\010 \001(\010\022\023\n\013pmgpdmiocfn" +
-      "\030\t \001(\010\022\023\n\013idonjaaknol\030\n \001(\003\022\023\n\013hljihbpno" +
-      "li\030\014 \001(\010\"\265\001\n\025FestivalSettingsProto\022I\n\rfe" +
-      "stival_type\030\001 \001(\01622.POGOProtos.Rpc.Festi" +
-      "valSettingsProto.FestivalType\022\013\n\003key\030\002 \001" +
-      "(\t\022\016\n\006vector\030\003 \001(\t\"4\n\014FestivalType\022\010\n\004NO" +
-      "NE\020\000\022\r\n\tHALLOWEEN\020\001\022\013\n\007HOLIDAY\020\002\"7\n\013IONK" +
-      "IBPBNFC\022\023\n\013mfkgkhdmbpb\030\001 \001(\004\022\023\n\013clgdnpih" +
-      "bdn\030\002 \001(\t\"D\n\022WithRaidLevelProto\022.\n\013kchph" +
-      "jadgne\030\001 \003(\0162\031.POGOProtos.Rpc.RaidLevel\"" +
-      "\"\n\013IPLFBOINOGJ\022\023\n\013pegfachkbdd\030\001 \001(\t\"\217\001\n\013" +
-      "JABKHBFHHGN\0224\n\013hdinlbkpiel\030\001 \001(\0132\037.POGOP" +
-      "rotos.Rpc.AwardedGymBadge\0225\n\013mkfdbndkecj" +
-      "\030\002 \001(\0132 .POGOProtos.Rpc.GymDefenderProto" +
-      "\022\023\n\013pkdofmmahaj\030\003 \001(\010\"\r\n\013JAFEPELPJKJ\"\206\001\n" +
-      "\026EvolvePokemonTelemetry\0225\n\013baeglbmdifp\030\001" +
-      " \001(\0132 .POGOProtos.Rpc.PokemonTelemetry\0225" +
-      "\n\013jkaaniibbma\030\002 \001(\0132 .POGOProtos.Rpc.Pok" +
-      "emonTelemetry\"\234\010\n\021BuddyObservedData\022\035\n\025c" +
-      "urrent_points_earned\030\001 \001(\005\022/\n\013total_stat" +
-      "s\030\003 \001(\0132\032.POGOProtos.Rpc.BuddyStats\022<\n\024b" +
-      "uddy_gift_picked_up\030\006 \001(\0132\036.POGOProtos.R" +
-      "pc.BuddyGiftProto\022\036\n\026current_emotion_poi" +
-      "nts\030\007 \001(\005\022X\n\027buddy_validation_result\030\010 \001" +
-      "(\01627.POGOProtos.Rpc.BuddyObservedData.Bu" +
-      "ddyValidationResult\022V\n\023souvenirs_collect" +
-      "ed\030\t \003(\01329.POGOProtos.Rpc.BuddyObservedD" +
-      "ata.SouvenirsCollectedEntry\022G\n\030today_sta" +
-      "ts_shown_hearts\030\n \001(\0132%.POGOProtos.Rpc.B" +
-      "uddyStatsShownHearts\022J\n\020buddy_feed_stats" +
-      "\030\013 \001(\01320.POGOProtos.Rpc.BuddyObservedDat" +
-      "a.BuddyFeedStats\022\031\n\021attractive_poi_id\030\014 " +
-      "\001(\t\022)\n!attractive_poi_expiration_time_ms" +
-      "\030\r \001(\003\022!\n\031num_days_spent_with_buddy\030\016 \001(" +
-      "\005\032\216\001\n\016BuddyFeedStats\022\031\n\021map_expiration_m" +
-      "s\030\001 \001(\003\022#\n\033pre_map_fullness_percentage\030\002" +
-      " \001(\002\022\036\n\026fullness_expiration_ms\030\003 \001(\003\022\034\n\024" +
-      "poffin_expiration_ms\030\004 \001(\003\032X\n\027SouvenirsC" +
-      "ollectedEntry\022\013\n\003key\030\001 \001(\005\022,\n\005value\030\002 \001(" +
-      "\0132\035.POGOProtos.Rpc.SouvenirProto:\0028\001\"\275\001\n" +
-      "\025BuddyValidationResult\022\t\n\005UNSET\020\000\022\013\n\007SUC" +
-      "CESS\020\001\022\030\n\024FAILED_BUDDY_NOT_SET\020\002\022\032\n\026FAIL" +
-      "ED_BUDDY_NOT_FOUND\020\003\022\024\n\020FAILED_BAD_BUDDY" +
-      "\020\004\022\037\n\033FAILED_BUDDY_V2_NOT_ENABLED\020\005\022\037\n\033F" +
-      "AILED_PLAYER_LEVEL_TOO_LOW\020\006\"\372\002\n\013JBLBFLK" +
-      "NFPL\022\023\n\013dofnddnkdgc\030\001 \001(\t\022\023\n\013clhhgpcpfal" +
-      "\030\002 \001(\014\022\023\n\013imhljmifgmk\030\003 \001(\003\022\023\n\013bjkpopehb" +
-      "ak\030\004 \001(\005\0222\n\006result\030\005 \001(\0162\".POGOProtos.Rp" +
-      "c.JBLBFLKNFPL.Result\"\342\001\n\006Result\022\022\n\016CREAT" +
-      "E_SUCCESS\020\000\022\030\n\024CREATE_BUDDY_NOT_SET\020\001\022\032\n" +
-      "\026CREATE_BUDDY_NOT_FOUND\020\002\022\024\n\020CREATE_BAD_" +
-      "BUDDY\020\003\022\037\n\033CREATE_BUDDY_V2_NOT_ENABLED\020\004" +
-      "\022\037\n\033CREATE_PLAYER_LEVEL_TOO_LOW\020\005\022\030\n\024CRE" +
-      "ATE_UNKNOWN_ERROR\020\006\022\034\n\030CREATE_U13_NO_PER" +
-      "MISSION\020\007\"\207\002\n\033IapItemCategoryDisplayProt" +
-      "o\0225\n\010category\030\001 \001(\0162#.POGOProtos.Rpc.Hol" +
-      "oIapItemCategory\022\014\n\004name\030\002 \001(\t\022\016\n\006hidden" +
-      "\030\003 \001(\010\022\022\n\nsort_order\030\004 \001(\005\022\026\n\016banner_ena" +
-      "bled\030\005 \001(\010\022\024\n\014banner_title\030\006 \001(\t\022\021\n\timag" +
-      "e_url\030\007 \001(\t\022\023\n\013description\030\010 \001(\t\022\024\n\014disp" +
-      "lay_rows\030\t \001(\005\022\023\n\013subcategory\030\n \001(\t\"\r\n\013J" +
-      "DBFAMHIKNJ\"\260\001\n\013JDGMPPLFGGD\0220\n\tadd_entry\030" +
-      "\001 \001(\0132\033.POGOProtos.Rpc.KFHGOJIHKGCH\000\0221\n\n" +
-      "read_entry\030\002 \001(\0132\033.POGOProtos.Rpc.CFJDHF" +
-      "MBGJHH\000\0223\n\014remove_entry\030\003 \001(\0132\033.POGOProt" +
-      "os.Rpc.NADKJKECNCPH\000B\007\n\005Entry\"7\n\013JECFCNL" +
-      "MCBE\022\023\n\013mfkgkhdmbpb\030\001 \001(\004\022\023\n\013bbmmceldebd" +
-      "\030\002 \001(\005\"l\n\013JEIMCAIBLDB\022\023\n\013mfkgkhdmbpb\030\001 \001" +
-      "(\004\022H\n\026temporary_evolution_id\030\002 \001(\0162(.POG" +
-      "OProtos.Rpc.HoloTemporaryEvolutionId\"\"\n\013" +
-      "JEPEFMCPLEH\022\023\n\013mofmigiblmc\030\001 \001(\010\"\233\003\n\013JFG" +
-      "DKGLEJDK\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rp" +
-      "c.JFGDKGLEJDK.Result\022\023\n\013clhhgpcpfal\030\002 \001(" +
-      "\014\022\023\n\013imhljmifgmk\030\003 \001(\003\022\023\n\013bjkpopehbak\030\004 " +
-      "\001(\005\"\230\002\n\006Result\022\020\n\014JOIN_SUCCESS\020\000\022\023\n\017JOIN" +
-      "_LOBBY_FULL\020\001\022\025\n\021JOIN_HOST_TOO_FAR\020\002\022\030\n\024" +
-      "JOIN_LOBBY_NOT_FOUND\020\003\022\026\n\022JOIN_BUDDY_NOT" +
-      "_SET\020\004\022\030\n\024JOIN_BUDDY_NOT_FOUND\020\005\022\022\n\016JOIN" +
-      "_BAD_BUDDY\020\006\022\035\n\031JOIN_BUDDY_V2_NOT_ENABLE" +
-      "D\020\007\022\035\n\031JOIN_PLAYER_LEVEL_TOO_LOW\020\010\022\026\n\022JO" +
-      "IN_UNKNOWN_ERROR\020\t\022\032\n\026JOIN_U13_NO_PERMIS" +
-      "SION\020\n\"\200\001\n\030BuddyInteractionSettings\0221\n\023f" +
-      "eed_item_whitelist\030\001 \003(\0162\024.POGOProtos.Rp" +
-      "c.Item\0221\n\023care_item_whitelist\030\002 \003(\0162\024.PO" +
-      "GOProtos.Rpc.Item\"\252\001\n\013JFJENGMAPLD\0222\n\006res" +
-      "ult\030\001 \001(\0162\".POGOProtos.Rpc.JFJENGMAPLD.R" +
-      "esult\"g\n\006Result\022\021\n\rLEAVE_SUCCESS\020\000\022\026\n\022LE" +
-      "AVE_NOT_IN_LOBBY\020\001\022\031\n\025LEAVE_LOBBY_NOT_FO" +
-      "UND\020\002\022\027\n\023LEAVE_UNKNOWN_ERROR\020\003\"7\n\013JFKOOL" +
-      "CMDGK\022\023\n\013pegfachkbdd\030\001 \001(\t\022\023\n\013hpjgecpcgo" +
-      "j\030\002 \001(\004\"i\n\013JGGNAANFMKJ\0220\n\013jjioejkblge\030\001 " +
-      "\001(\0132\033.POGOProtos.Rpc.FJFOOCMHLBJ\022\023\n\013mjpe" +
-      "knofebo\030\002 \001(\014\022\023\n\013odoaokjbbni\030\003 \001(\014\"\201\002\n\013J",
-      "GIHCBDKLOO\0222\n\006result\030\001 \001(\0162\".POGOProtos." +
-      "Rpc.JGIHCBDKLOO.Result\0229\n\013oafocnchncd\030\002 " +
-      "\001(\0132$.POGOProtos.Rpc.CombatChallengeProt" +
-      "o\"\202\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022!\n\035" +
-      "ERROR_INVALID_CHALLENGE_STATE\020\002\022$\n ERROR" +
-      "_PLAYER_BELOW_MINIMUM_LEVEL\020\003\022\027\n\023ERROR_A" +
-      "CCESS_DENIED\020\004\"\305\003\n\013JGKONFNEHFN\0222\n\006result" +
-      "\030\001 \001(\0162\".POGOProtos.Rpc.JGKONFNEHFN.Resu" +
-      "lt\0220\n\013jpiinjpkhfb\030\002 \001(\0132\033.POGOProtos.Rpc" +
-      ".BattleProto\"\317\002\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SU" +
-      "CCESS\020\001\022\027\n\023ERROR_GYM_NOT_FOUND\020\002\022\032\n\026ERRO" +
-      "R_RAID_UNAVAILABLE\020\003\022\030\n\024ERROR_RAID_COMPL" +
-      "ETED\020\004\022\033\n\027ERROR_INVALID_ATTACKERS\020\005\022$\n E" +
-      "RROR_PLAYER_BELOW_MINIMUM_LEVEL\020\006\022\026\n\022ERR" +
-      "OR_NOT_IN_RANGE\020\007\022\032\n\026ERROR_POI_INACCESSI" +
-      "BLE\020\010\022\031\n\025ERROR_LOBBY_NOT_FOUND\020\t\022\023\n\017ERRO" +
-      "R_NO_TICKET\020\n\022\030\n\024ERROR_INVALID_SERVER\020\013\022" +
-      "\035\n\031ERROR_NEVER_JOINED_BATTLE\020\014\"\034\n\032WithDa" +
-      "ilyCaptureBonusProto\"?\n\013JHBNFHCIJDK\0220\n\013k" +
-      "cmjmjighpb\030\001 \003(\0132\033.POGOProtos.Rpc.GJFHOG" +
-      "OMIAF\"j\n\034PlannedDowntimeSettingsProto\022\035\n" +
-      "\025downtime_timestamp_ms\030\001 \001(\003\022+\n#no_actio" +
-      "ns_window_sec_from_downtime\030\002 \001(\003\"8\n\013JHM" +
-      "NNGGKODO\022)\n\013nbpfkgpfhpc\030\001 \001(\0162\024.POGOProt" +
-      "os.Rpc.Team\"\323\002\n\013JIBJDNMPLOD\0222\n\006result\030\001 " +
-      "\001(\0162\".POGOProtos.Rpc.JIBJDNMPLOD.Result\022" +
-      ".\n\013jbejbaggpfa\030\002 \001(\0132\031.POGOProtos.Rpc.Lo" +
-      "otProto\022\023\n\013mgfbndphaij\030\003 \001(\005\022\023\n\013bcieidch" +
-      "gpi\030\004 \001(\002\0227\n\013lhhilpcdjmd\030\005 \001(\0132\".POGOPro" +
-      "tos.Rpc.CombatSeasonResult\022\023\n\013cpjnphdafi" +
-      "k\030\006 \001(\010\"h\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020" +
-      "\001\022!\n\035ERROR_PLAYER_HAS_NO_VS_SEEKER\020\002\022#\n\037" +
-      "ERROR_REWARDS_ALREADY_COLLECTED\020\003\"3\n\025Kan" +
-      "garooSettingsProto\022\032\n\022enable_kangaroo_v2" +
-      "\030\001 \001(\010\"2\n\033ChangeOnlineStatusTelemetry\022\023\n" +
-      "\013hecicbfbgel\030\001 \001(\010\"7\n\013JJEPJBIANHM\022\023\n\013peg" +
-      "fachkbdd\030\001 \001(\t\022\023\n\013hpjgecpcgoj\030\002 \001(\004\"\231\003\n\013" +
-      "JKEMBPCIHMH\0220\n\013nikdphgligk\030\001 \003(\0132\033.POGOP" +
-      "rotos.Rpc.KPLAFGNMHHH\0220\n\013laacoihldgf\030\002 \003" +
-      "(\0132\033.POGOProtos.Rpc.KLEGKEFFLGI\0221\n\013meokh" +
-      "cpofcc\030\003 \003(\0132\034.POGOProtos.Rpc.PokemonPro" +
-      "to\0221\n\013baeglbmdifp\030\004 \003(\0132\034.POGOProtos.Rpc" +
-      ".PokemonProto\0220\n\013emegclohcif\030\005 \003(\0132\033.POG" +
-      "OProtos.Rpc.OIPAOFPLBIO\022\023\n\013bcjjgokmhaj\030\006" +
-      " \001(\005\022\023\n\013hopbeejkkfa\030\007 \001(\005\0222\n\013hjgemfpgmed" +
-      "\030\010 \003(\0162\035.POGOProtos.Rpc.HoloBadgeType\0220\n" +
-      "\013iaikbaimnod\030\t \003(\0132\033.POGOProtos.Rpc.EHCO" +
-      "PDADFBK\"\227\001\n\013JKJHHNELKCG\0222\n\006status\030\001 \001(\0162" +
-      "\".POGOProtos.Rpc.JKJHHNELKCG.Status\"T\n\006S" +
-      "tatus\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\037\n\033ERROR_P" +
-      "HOTO_POKEMON_INVALID\020\002\022\021\n\rERROR_UNKNOWN\020" +
-      "\003\"\262\001\n\035DeviceSpecificationsTelemetry\022\023\n\013g" +
-      "nnnekplmlj\030\001 \001(\005\022\023\n\013cgjmpdlflal\030\002 \001(\005\022\023\n" +
-      "\013aibkealmjbm\030\003 \001(\005\022\023\n\013ahnllkcmfaf\030\004 \001(\005\022" +
-      "\023\n\013ipmjieciijm\030\005 \001(\002\022\023\n\013cicehmmbfim\030\006 \001(" +
-      "\002\022\023\n\013kehjpgibinc\030\007 \001(\005\"\204\001\n\017NpcPokemonPro" +
-      "to\0223\n\014pokemon_type\030\001 \001(\0162\035.POGOProtos.Rp" +
-      "c.HoloPokemonId\022<\n\017pokemon_display\030\002 \001(\013" +
-      "2#.POGOProtos.Rpc.PokemonDisplayProto\"\311\001" +
-      "\n\020GymDefenderProto\022:\n\013ojnldgddelk\030\001 \001(\0132" +
-      "%.POGOProtos.Rpc.MotivatedPokemonProto\022:" +
-      "\n\013bnabafbglko\030\002 \001(\0132%.POGOProtos.Rpc.Dep" +
-      "loymentTotalsProto\022=\n\013mcmfmagahod\030\003 \001(\0132" +
-      "(.POGOProtos.Rpc.PlayerPublicProfileProt" +
-      "o\"\r\n\013JLPKKJMHJCI\"-\n\031MoveSequenceSettings" +
-      "Proto\022\020\n\010sequence\030\001 \003(\t\"\224\001\n\031DeclineExRai" +
-      "dPassLogEntry\022@\n\006result\030\001 \001(\01620.POGOProt" +
-      "os.Rpc.DeclineExRaidPassLogEntry.Result\022" +
-      "\023\n\013haklnomcbjp\030\002 \001(\t\" \n\006Result\022\t\n\005UNSET\020" +
-      "\000\022\013\n\007SUCCESS\020\001\"\230\001\n\013JMPBNDAGIDC\0222\n\006result" +
-      "\030\001 \001(\0162\".POGOProtos.Rpc.JMPBNDAGIDC.Resu" +
-      "lt\"U\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022 \n\034" +
-      "ERROR_EX_RAID_PASS_NOT_FOUND\020\002\022\021\n\rERROR_" +
-      "UNKNOWN\020\003\"\324\001\n\033BelugaDailyTransferLogEntr" +
-      "y\022B\n\006result\030\001 \001(\01622.POGOProtos.Rpc.Belug" +
-      "aDailyTransferLogEntry.Result\022\035\n\025include" +
-      "s_weekly_bonus\030\002 \001(\010\0220\n\ritems_awarded\030\003 " +
-      "\001(\0132\031.POGOProtos.Rpc.LootProto\" \n\006Result" +
-      "\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"c\n\022ProbeSetting" +
-      "sProto\022\032\n\022enable_sidechannel\030\001 \001(\010\022\024\n\014en" +
-      "able_adhoc\030\002 \001(\010\022\033\n\023adhoc_frequency_sec\030" +
-      "\003 \001(\005\"\375\003\n\031SocialClientSettingsProto\022\025\n\re" +
-      "nable_social\030\001 \001(\010\022\032\n\022max_friend_details" +
-      "\030\002 \001(\005\022\031\n\021player_level_gate\030\003 \001(\005\022\"\n\032max" +
-      "_friend_nickname_length\030\004 \001(\005\022%\n\035enable_" +
-      "add_friend_via_qr_code\030\005 \001(\010\022\034\n\024enable_s" +
-      "hare_ex_pass\030\006 \001(\010\022\037\n\027enable_facebook_fr" +
-      "iends\030\007 \001(\010\022)\n!facebook_friend_limit_per" +
-      "_request\030\010 \001(\005\022/\n\'disable_facebook_frien" +
-      "ds_opening_prompt\030\t \001(\010\022\035\n\025enable_giftab" +
-      "ility_v2\030\013 \001(\010\022\035\n\025enable_remote_gifting\030" +
-      "\014 \001(\010\022\026\n\016enable_sticker\030\r \001(\010\022V\n\032cross_g" +
-      "ame_social_settings\030\016 \001(\01322.POGOProtos.R" +
-      "pc.CrossGameSocialGlobalSettingsProto\"\302\001" +
-      "\n\013JOAAOEIEFLC\0226\n\017invasion_battle\030\001 \001(\0132\033" +
-      ".POGOProtos.Rpc.AHPMBGGINOEH\000\0229\n\022invasio" +
-      "n_encounter\030\002 \001(\0132\033.POGOProtos.Rpc.JAFEP" +
-      "ELPJKJH\000\0228\n\021pokestop_dialogue\030\003 \001(\0132\033.PO" +
-      "GOProtos.Rpc.LIJIDLPCEDIH\000B\006\n\004Data\"\214\002\n\013J" +
-      "OBJDAGFDPF\0222\n\006status\030\001 \001(\0162\".POGOProtos." +
-      "Rpc.JOBJDAGFDPF.Status\0221\n\013mcjcidlpbmg\030\002 " +
-      "\001(\0132\034.POGOProtos.Rpc.PokemonProto\"\225\001\n\006St" +
-      "atus\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\034\n\030ERROR_IN" +
-      "SUFFICIENT_FUNDS\020\003\022\032\n\026ERROR_POKEMON_DEPL" +
-      "OYED\020\004\022\033\n\027ERROR_POKEMON_NOT_FOUND\020\005\022\034\n\030E" +
-      "RROR_POKEMON_NOT_SHADOW\020\006\"O\n\016GymBattlePr" +
-      "oto\022\023\n\013ganccamkoba\030\001 \001(\t\022\023\n\013kjoachgdnof\030" +
-      "\002 \001(\003\022\023\n\013dlefnlpfhag\030\003 \001(\010\"\354\001\n\030Friendshi" +
-      "pLevelDataProto\022\023\n\013nfcbjbgbgai\030\001 \001(\003\022\023\n\013" +
-      "fmilfokmeok\030\002 \001(\005\022=\n\013jnpobecfpbd\030\003 \001(\0162(" +
-      ".POGOProtos.Rpc.FriendshipLevelMilestone" +
-      "\022=\n\013abnpapilgke\030\004 \001(\0162(.POGOProtos.Rpc.F" +
-      "riendshipLevelMilestone\022\023\n\013laniikegaco\030\005" +
-      " \001(\001\022\023\n\013bhejjjopcfc\030\006 \001(\005\"Q\n\022WithTempEvo" +
-      "IdProto\022;\n\tmega_form\030\001 \003(\0162(.POGOProtos." +
-      "Rpc.HoloTemporaryEvolutionId\"o\n\013JPDNHFBA" +
-      "FHM\022\023\n\013hdegllgmeih\030\001 \001(\t\0226\n\013fcjhofhmeje\030" +
-      "\002 \001(\0132!.POGOProtos.Rpc.CombatActionProto" +
-      "\022\023\n\013fnginpplknd\030\003 \001(\t\"\204\003\n\023RaidRewardsLog" +
-      "Entry\022:\n\006result\030\001 \001(\0162*.POGOProtos.Rpc.R" +
-      "aidRewardsLogEntry.Result\022\023\n\013jhfphdpjjjl" +
-      "\030\002 \001(\010\022.\n\013nikdphgligk\030\003 \003(\0132\031.POGOProtos" +
-      ".Rpc.ItemProto\022.\n\013njnmcpacdoh\030\004 \003(\0132\031.PO" +
-      "GOProtos.Rpc.ItemProto\022\023\n\013bcjjgokmhaj\030\005 " +
-      "\001(\005\0222\n\013ndpchbinofo\030\006 \003(\0132\035.POGOProtos.Rp" +
-      "c.LootItemProto\022\023\n\013gmchkmlefnm\030\007 \001(\010\022<\n\013" +
-      "acnahapkpgl\030\010 \001(\0132\'.POGOProtos.Rpc.Pokem" +
-      "onCandyRewardProto\" \n\006Result\022\t\n\005UNSET\020\000\022" +
-      "\013\n\007SUCCESS\020\001\"L\n\013JPICNIPDGLJ\022\023\n\013ibojchhbi" +
-      "kc\030\001 \001(\t\022\023\n\013cebkcoodeca\030\002 \001(\t\022\023\n\013amgfpdg" +
-      "ccfm\030\003 \001(\t\"w\n\020ClientQuestProto\022)\n\005quest\030" +
-      "\001 \001(\0132\032.POGOProtos.Rpc.QuestProto\0228\n\rque" +
-      "st_display\030\002 \001(\0132!.POGOProtos.Rpc.QuestD" +
-      "isplayProto\"\215\002\n\033BuddyEncounterCameoSetti" +
-      "ngs\0221\n)buddy_wild_encounter_cameo_chance" +
-      "_percent\030\001 \001(\002\0222\n*buddy_quest_encounter_" +
-      "cameo_chance_percent\030\002 \001(\002\0221\n)buddy_raid" +
-      "_encounter_cameo_chance_percent\030\003 \001(\002\0225\n" +
-      "-buddy_invasion_encounter_cameo_chance_p" +
-      "ercent\030\004 \001(\002\022\035\n\025buddy_on_map_required\030\005 " +
-      "\001(\010\"^\n\013KACEADFJNEB\022\020\n\010asset_id\030\001 \001(\t\022\023\n\013" +
-      "hhnbfajichl\030\002 \001(\t\022\023\n\013djkelmocljo\030\003 \001(\005\022\023" +
-      "\n\013mdobnekifng\030\004 \001(\r\"\360\004\n\013KAFPKBHJECK\0222\n\006r" +
-      "esult\030\001 \001(\0162\".POGOProtos.Rpc.KAFPKBHJECK" +
-      ".Result\0221\n\013jikkdljggho\030\002 \001(\0132\034.POGOProto" +
-      "s.Rpc.TradingProto\"\371\003\n\006Result\022\t\n\005UNSET\020\000" +
-      "\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\032\n\026ERRO" +
-      "R_FRIEND_NOT_FOUND\020\003\022\033\n\027ERROR_INVALID_PL" +
-      "AYER_ID\020\004\022\027\n\023ERROR_INVALID_STATE\020\005\022\027\n\023ER" +
-      "ROR_STATE_HANDLER\020\006\022\031\n\025ERROR_TRADING_EXP" +
-      "IRED\020\007\022\032\n\026ERROR_TRADING_COOLDOWN\020\010\022\037\n\033ER" +
-      "ROR_PLAYER_ALREADY_OPENED\020\t\022\035\n\031ERROR_FRI" +
-      "END_OUT_OF_RANGE\020\n\022$\n ERROR_PLAYER_BELOW" +
-      "_MINIMUM_LEVEL\020\013\022$\n ERROR_PLAYER_REACHED" +
-      "_DAILY_LIMIT\020\014\022$\n ERROR_FRIEND_REACHED_D" +
-      "AILY_LIMIT\020\r\022$\n ERROR_PLAYER_NOT_ENOUGH_" +
-      "STARDUST\020\016\022$\n ERROR_FRIEND_NOT_ENOUGH_ST" +
-      "ARDUST\020\017\022$\n ERROR_FRIEND_BELOW_MINIMUM_L" +
-      "EVEL\020\020\"H\n\013KAHFAFPGIJL\0229\n\013aiifjelhmlm\030\001 \001" +
-      "(\0132$.POGOProtos.Rpc.ContactSettingsProto" +
-      "\"\213\001\n\013KAJLJCIJAGB\0222\n\006result\030\001 \001(\0162\".POGOP" +
-      "rotos.Rpc.KAJLJCIJAGB.Result\022\023\n\013ldpjppdn" +
-      "hbn\030\002 \001(\003\"3\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
-      "S\020\001\022\021\n\rERROR_UNKNOWN\020\002\"\263\002\n\022RaidEncounter" +
-      "Proto\0221\n\013baeglbmdifp\030\001 \001(\0132\034.POGOProtos." +
-      "Rpc.PokemonProto\022\023\n\013ckniekbneoe\030\002 \001(\003\022\023\n" +
-      "\013aeoedfahjck\030\003 \001(\t\022<\n\013cbcpjcmbild\030\004 \001(\0132" +
-      "\'.POGOProtos.Rpc.CaptureProbabilityProto" +
-      "\022\023\n\013melcgjnppdm\030\005 \001(\005\022.\n\013kchphjadgne\030\006 \001" +
-      "(\0162\031.POGOProtos.Rpc.RaidLevel\022\023\n\013lndigkk" +
-      "jfml\030\007 \001(\t\022\023\n\013jhfphdpjjjl\030\010 \001(\010\022\023\n\013beleo" +
-      "bpcfeh\030\t \001(\010\"\230*\n HoloholoClientTelemetry" +
-      "OmniProto\022-\n\tboot_time\030\001 \001(\0132\030.POGOProto" +
-      "s.Rpc.BootTimeH\000\022/\n\nframe_rate\030\002 \001(\0132\031.P" +
-      "OGOProtos.Rpc.FrameRateH\000\022H\n\027generic_cli" +
-      "ck_telemetry\030\003 \001(\0132%.POGOProtos.Rpc.Gene" +
-      "ricClickTelemetryH\000\022B\n\024map_events_teleme" +
-      "try\030\004 \001(\0132\".POGOProtos.Rpc.MapEventsTele" +
-      "metryH\000\022H\n\027spin_pokestop_telemetry\030\005 \001(\013" +
-      "2%.POGOProtos.Rpc.SpinPokestopTelemetryH" +
-      "\000\022F\n\026profile_page_telemetry\030\006 \001(\0132$.POGO" +
-      "Protos.Rpc.ProfilePageTelemetryH\000\022H\n\027sho" +
-      "pping_page_telemetry\030\007 \001(\0132%.POGOProtos." +
-      "Rpc.ShoppingPageTelemetryH\000\022P\n\033encounter" +
-      "_pokemon_telemetry\030\010 \001(\0132).POGOProtos.Rp" +
-      "c.EncounterPokemonTelemetryH\000\022H\n\027catch_p" +
-      "okemon_telemetry\030\t \001(\0132%.POGOProtos.Rpc." +
-      "CatchPokemonTelemetryH\000\022J\n\030deploy_pokemo" +
-      "n_telemetry\030\n \001(\0132&.POGOProtos.Rpc.Deplo" +
-      "yPokemonTelemetryH\000\022F\n\026feed_pokemon_tele" +
-      "metry\030\013 \001(\0132$.POGOProtos.Rpc.FeedPokemon" +
-      "TelemetryH\000\022J\n\030evolve_pokemon_telemetry\030" +
-      "\014 \001(\0132&.POGOProtos.Rpc.EvolvePokemonTele" +
-      "metryH\000\022L\n\031release_pokemon_telemetry\030\r \001" +
-      "(\0132\'.POGOProtos.Rpc.ReleasePokemonTeleme" +
-      "tryH\000\022N\n\032nickname_pokemon_telemetry\030\016 \001(" +
-      "\0132(.POGOProtos.Rpc.NicknamePokemonTeleme" +
-      "tryH\000\022@\n\023news_page_telemetry\030\017 \001(\0132!.POG" +
-      "OProtos.Rpc.NewsPageTelemetryH\000\0227\n\016item_" +
-      "telemetry\030\020 \001(\0132\035.POGOProtos.Rpc.ItemTel" +
-      "emetryH\000\022F\n\026battle_party_telemetry\030\021 \001(\013" +
-      "2$.POGOProtos.Rpc.BattlePartyTelemetryH\000" +
-      "\022L\n\031passcode_redeem_telemetry\030\022 \001(\0132\'.PO" +
-      "GOProtos.Rpc.PasscodeRedeemTelemetryH\000\022B" +
-      "\n\024link_login_telemetry\030\023 \001(\0132\".POGOProto" +
-      "s.Rpc.LinkLoginTelemetryH\000\0227\n\016raid_telem" +
-      "etry\030\024 \001(\0132\035.POGOProtos.Rpc.RaidTelemetr" +
-      "yH\000\022P\n\033push_notification_telemetry\030\025 \001(\013" +
-      "2).POGOProtos.Rpc.PushNotificationTeleme" +
-      "tryH\000\022V\n\036avatar_customization_telemetry\030" +
-      "\026 \001(\0132,.POGOProtos.Rpc.AvatarCustomizati" +
-      "onTelemetryH\000\022o\n,read_point_of_interest_" +
-      "description_telemetry\030\027 \001(\01327.POGOProtos" +
-      ".Rpc.ReadPointOfInterestDescriptionTelem" +
-      "etryH\000\0225\n\rweb_telemetry\030\030 \001(\0132\034.POGOProt" +
-      "os.Rpc.WebTelemetryH\000\022@\n\023change_ar_telem" +
-      "etry\030\031 \001(\0132!.POGOProtos.Rpc.ChangeArTele" +
-      "metryH\000\022U\n\036weather_detail_click_telemetr" +
-      "y\030\032 \001(\0132+.POGOProtos.Rpc.WeatherDetailCl" +
-      "ickTelemetryH\000\022K\n\031user_issue_weather_rep" +
-      "ort\030\033 \001(\0132&.POGOProtos.Rpc.UserIssueWeat" +
-      "herReportH\000\022P\n\033pokemon_inventory_telemet" +
-      "ry\030\034 \001(\0132).POGOProtos.Rpc.PokemonInvento" +
-      "ryTelemetryH\000\022;\n\020social_telemetry\030\035 \001(\0132" +
-      "\037.POGOProtos.Rpc.SocialTelemetryH\000\022Y\n\036ch" +
-      "eck_encounter_info_telemetry\030\036 \001(\0132/.POG" +
-      "OProtos.Rpc.CheckEncounterTrayInfoTeleme" +
-      "tryH\000\022K\n\031pokemon_go_plus_telemetry\030\037 \001(\013" +
-      "2&.POGOProtos.Rpc.PokemonGoPlusTelemetry" +
-      "H\000\022D\n\024rpc_timing_telemetry\030  \001(\0132$.POGOP" +
-      "rotos.Rpc.RpcResponseTelemetryH\000\022O\n\033soci" +
-      "al_gift_count_telemetry\030! \001(\0132(.POGOProt" +
-      "os.Rpc.SocialGiftCountTelemetryH\000\022N\n\026ass" +
-      "et_bundle_telemetry\030\" \001(\0132,.POGOProtos.R" +
-      "pc.AssetBundleDownloadTelemetryH\000\022Q\n\034ass" +
-      "et_poi_download_telemetry\030# \001(\0132).POGOPr" +
-      "otos.Rpc.AssetPoiDownloadTelemetryH\000\022W\n\037" +
-      "asset_stream_download_telemetry\030$ \001(\0132,." +
-      "POGOProtos.Rpc.AssetStreamDownloadTeleme" +
-      "tryH\000\022^\n#asset_stream_cache_culled_telem" +
-      "etry\030% \001(\0132/.POGOProtos.Rpc.AssetStreamC" +
-      "acheCulledTelemetryH\000\022Q\n\033rpc_socket_timi" +
-      "ng_telemetry\030& \001(\0132*.POGOProtos.Rpc.RpcS" +
-      "ocketResponseTelemetryH\000\022D\n\020permissions_" +
-      "flow\030\' \001(\0132(.POGOProtos.Rpc.PermissionsF" +
-      "lowTelemetryH\000\022M\n\025device_service_toggle\030" +
-      "( \001(\0132,.POGOProtos.Rpc.DeviceServiceTogg" +
-      "leTelemetryH\000\0227\n\016boot_telemetry\030) \001(\0132\035." +
-      "POGOProtos.Rpc.BootTelemetryH\000\022>\n\017user_a" +
-      "ttributes\030* \001(\0132#.POGOProtos.Rpc.UserAtt" +
-      "ributesProtoH\000\022C\n\024onboarding_telemetry\030+" +
-      " \001(\0132#.POGOProtos.Rpc.OnboardingTelemetr" +
-      "yH\000\022F\n\026login_action_telemetry\030, \001(\0132$.PO" +
-      "GOProtos.Rpc.LoginActionTelemetryH\000\022I\n\032a" +
-      "r_photo_session_telemetry\030- \001(\0132#.POGOPr" +
-      "otos.Rpc.ArPhotoSessionProtoH\000\022?\n\022invasi" +
-      "on_telemetry\030. \001(\0132!.POGOProtos.Rpc.Inva" +
-      "sionTelemetryH\000\022L\n\031combat_minigame_telem" +
-      "etry\030/ \001(\0132\'.POGOProtos.Rpc.CombatMiniga" +
-      "meTelemetryH\000\022Z\n!leave_point_of_interest" +
-      "_telemetry\0300 \001(\0132-.POGOProtos.Rpc.LeaveP" +
-      "ointOfInterestTelemetryH\000\022c\n&view_point_" +
-      "of_interest_image_telemetry\0301 \001(\01321.POGO" +
-      "Protos.Rpc.ViewPointOfInterestImageTelem" +
-      "etryH\000\022S\n\035combat_hub_entrance_telemetry\030" +
-      "2 \001(\0132*.POGOProtos.Rpc.CombatHubEntrance" +
-      "TelemetryH\000\022[\n!leave_interaction_range_t" +
-      "elemetry\0303 \001(\0132..POGOProtos.Rpc.LeaveInt" +
-      "eractionRangeTelemetryH\000\022S\n\035shopping_pag" +
-      "e_click_telemetry\0304 \001(\0132*.POGOProtos.Rpc" +
-      ".ShoppingPageClickTelemetryH\000\022U\n\036shoppin" +
-      "g_page_scroll_telemetry\0305 \001(\0132+.POGOProt" +
-      "os.Rpc.ShoppingPageScrollTelemetryH\000\022X\n\037" +
-      "device_specifications_telemetry\0306 \001(\0132-." +
-      "POGOProtos.Rpc.DeviceSpecificationsTelem" +
-      "etryH\000\022P\n\033screen_resolution_telemetry\0307 " +
-      "\001(\0132).POGOProtos.Rpc.ScreenResolutionTel" +
-      "emetryH\000\022d\n&ar_buddy_multiplayer_session" +
-      "_telemetry\0308 \001(\01322.POGOProtos.Rpc.ARBudd" +
-      "yMultiplayerSessionTelemetryH\000\022n\n-buddy_" +
-      "multiplayer_connection_failed_telemetry\030" +
-      "9 \001(\01325.POGOProtos.Rpc.BuddyMultiplayerC" +
-      "onnectionFailedProtoH\000\022t\n0buddy_multipla" +
-      "yer_connection_succeeded_telemetry\030: \001(\013" +
-      "28.POGOProtos.Rpc.BuddyMultiplayerConnec" +
-      "tionSucceededProtoH\000\022p\n/buddy_multiplaye" +
-      "r_time_to_get_session_telemetry\030; \001(\01325." +
-      "POGOProtos.Rpc.BuddyMultiplayerTimeToGet" +
-      "SessionProtoH\000\022f\n\'player_hud_notificatio" +
-      "n_click_telemetry\030< \001(\01323.POGOProtos.Rpc" +
-      ".PlayerHudNotificationClickTelemetryH\000\022R" +
-      "\n\034monodepth_download_telemetry\030= \001(\0132*.P" +
-      "OGOProtos.Rpc.MonodepthDownloadTelemetry" +
-      "H\000\022G\n\024ar_mapping_telemetry\030> \001(\0132\'.POGOP" +
-      "rotos.Rpc.ArMappingTelemetryProtoH\000\022D\n\025r" +
-      "emote_raid_telemetry\030? \001(\0132#.POGOProtos." +
-      "Rpc.RemoteRaidTelemetryH\000\022@\n\023device_os_t" +
-      "elemetry\030@ \001(\0132!.POGOProtos.Rpc.DeviceOS" +
-      "TelemetryH\000\022L\n\031niantic_profile_telemetry" +
-      "\030A \001(\0132\'.POGOProtos.Rpc.NianticProfileTe" +
-      "lemetryH\000\022U\n\036change_online_status_teleme" +
-      "try\030B \001(\0132+.POGOProtos.Rpc.ChangeOnlineS" +
-      "tatusTelemetryH\000\022@\n\013server_data\030\351\007 \001(\0132*" +
-      ".POGOProtos.Rpc.PlatformPlatformServerDa" +
-      "ta\022J\n\016common_filters\030\352\007 \001(\01321.POGOProtos" +
-      ".Rpc.PlatformPlatformCommonFilterProtoB\017" +
-      "\n\rTelemetryData\"\355\002\n\027VsSeekerAttributesPr" +
-      "oto\022H\n\013leoaenadmbf\030\001 \001(\01623.POGOProtos.Rp" +
-      "c.VsSeekerAttributesProto.PKFAGEBOEID\022\023\n" +
-      "\013gcnhojkbghp\030\002 \001(\001\022\023\n\013fbeiepakjdp\030\003 \001(\001\022" +
-      "\023\n\013jafmahenpif\030\004 \001(\005\022\023\n\013hnajlghmafk\030\006 \001(" +
-      "\005\0228\n\013bdbhlmmbfec\030\007 \001(\0162#.POGOProtos.Rpc." +
-      "VsSeekerRewardTrack\022\023\n\013ffebneniecl\030\010 \001(\t" +
-      "\022\023\n\013mmcbgidleaf\030\t \001(\010\"P\n\013PKFAGEBOEID\022\t\n\005" +
-      "UNSET\020\000\022\024\n\020STARTED_CHARGING\020\001\022\021\n\rFULLY_C" +
-      "HARGED\020\002\022\r\n\tACTIVATED\020\003\"\300\001\n\013KBLLKGPLLHD\022" +
-      "2\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.KBLLKGP" +
-      "LLHD.Result\022\023\n\013lhpockkkeea\030\002 \001(\005\"h\n\006Resu" +
-      "lt\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\024\n\020ERROR_NO_P" +
-      "OKEMON\020\002\022\024\n\020ERROR_CANNOT_USE\020\003\022\032\n\026ERROR_" +
-      "DEPLOYED_TO_FORT\020\004\"\"\n\013KCKOHGABILA\022\023\n\013nce" +
-      "lfjmmhdj\030\001 \001(\t\"\333\001\n\032VsSeekerWinRewardsLog" +
-      "Entry\022A\n\006result\030\001 \001(\01621.POGOProtos.Rpc.V" +
-      "sSeekerWinRewardsLogEntry.Result\022.\n\013nldn" +
-      "dpcfdmh\030\002 \001(\0132\031.POGOProtos.Rpc.LootProto" +
-      "\022\023\n\013nakgeefmied\030\003 \001(\005\022\023\n\013nljfjdgfejj\030\004 \001" +
-      "(\005\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"\310\001\n" +
-      "\023BuddyHungerSettings\022+\n#num_hunger_point" +
-      "s_required_for_full\030\001 \001(\005\022\037\n\027decay_point" +
-      "s_per_bucket\030\002 \001(\005\022\037\n\027milliseconds_per_b" +
-      "ucket\030\003 \001(\003\022\034\n\024cooldown_duration_ms\030\004 \001(" +
-      "\003\022$\n\034decay_duration_after_full_ms\030\005 \001(\003\"" +
-      "-\n\026TradePokemonQuestProto\022\023\n\013dpnibkogejm" +
-      "\030\001 \003(\t\"T\n\024ProfilePageTelemetry\022<\n\013hdkcbb" +
-      "hhjcj\030\001 \001(\0162\'.POGOProtos.Rpc.ProfilePage" +
-      "TelemetryIds\"\207\003\n\013KECPDFAKAPG\0222\n\006result\030\001" +
-      " \001(\0162\".POGOProtos.Rpc.KECPDFAKAPG.Result" +
-      "\0221\n\013baeglbmdifp\030\002 \001(\0132\034.POGOProtos.Rpc.P" +
-      "okemonProto\022<\n\013dbianmbmnch\030\003 \001(\0132\'.POGOP" +
-      "rotos.Rpc.CaptureProbabilityProto\022)\n\013iia" +
-      "djbboilm\030\004 \001(\0162\024.POGOProtos.Rpc.Item\"\247\001\n" +
-      "\006Result\022\033\n\027QUEST_ENCOUNTER_UNKNOWN\020\000\022\033\n\027" +
-      "QUEST_ENCOUNTER_SUCCESS\020\001\022!\n\035QUEST_ENCOU" +
-      "NTER_NOT_AVAILABLE\020\002\022$\n QUEST_ENCOUNTER_" +
-      "ALREADY_FINISHED\020\003\022\032\n\026POKEMON_INVENTORY_" +
-      "FULL\020\004\"\266\001\n\013KEKDMKONDBF\0222\n\006result\030\001 \001(\0162\"" +
-      ".POGOProtos.Rpc.KEKDMKONDBF.Result\0226\n\013cf" +
-      "ncokpnoeg\030\002 \001(\0132!.POGOProtos.Rpc.BuddyOb" +
-      "servedData\";\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCE" +
-      "SS\020\001\022\031\n\025ERROR_BUDDY_NOT_VALID\020\002\"y\n\020GameM" +
-      "asterField1\0221\n\npokemon_id\030\001 \001(\0162\035.POGOPr" +
-      "otos.Rpc.HoloPokemonId\0222\n\nevolutions\030\002 \003" +
-      "(\0132\036.POGOProtos.Rpc.MegaEvosField1\"\264\001\n\013K" +
-      "FGNOGPMDKA\022\023\n\013joajgniomff\030\001 \001(\t\022B\n\013jfind" +
-      "mcpnim\030\002 \001(\0162-.POGOProtos.Rpc.EnumWrappe" +
-      "r.InvasionCharacter\022L\n\013pecohpfigad\030\003 \001(\016" +
-      "27.POGOProtos.Rpc.EnumWrapper.InvasionCh" +
-      "aracterExpression\"T\n\013KFHGOJIHKGC\0220\n\013oabj" +
-      "dogklgo\030\001 \001(\0132\033.POGOProtos.Rpc.CHLLKNMFH" +
-      "LC\022\023\n\013jfolkededbj\030\002 \001(\003\"\"\n\013KFHJNLBDPMF\022\023" +
-      "\n\013lgaehpohdan\030\001 \003(\t\"\334\001\n\025ShadowAttributes" +
-      "Proto\022$\n\034purification_stardust_needed\030\001 " +
-      "\001(\r\022!\n\031purification_candy_needed\030\002 \001(\r\022=" +
-      "\n\024purified_charge_move\030\003 \001(\0162\037.POGOProto" +
-      "s.Rpc.HoloPokemonMove\022;\n\022shadow_charge_m" +
-      "ove\030\004 \001(\0162\037.POGOProtos.Rpc.HoloPokemonMo" +
-      "ve\"9\n\030SfidaGlobalSettingsProto\022\035\n\025low_ba" +
-      "ttery_threshold\030\001 \001(\002\"M\n\013KFMAFDJAAMF\022)\n\013" +
-      "ekpohjfklal\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022" +
-      "\023\n\013knbllicccna\030\002 \001(\005\"\"\n\013KFMPBNDFOOJ\022\023\n\013d" +
-      "bfmaclhflp\030\001 \001(\014\"\243\004\n\010BootTime\0224\n\010duratio" +
-      "n\030\001 \001(\0132\".POGOProtos.Rpc.PlatformMetricD" +
-      "ata\0226\n\nboot_phase\030\002 \001(\0162\".POGOProtos.Rpc" +
-      ".BootTime.BootPhase\"\250\003\n\tBootPhase\022\r\n\tUND" +
-      "EFINED\020\000\022\017\n\013TIME_TO_MAP\020\001\022\024\n\020LOGO_SCREEN" +
-      "_TIME\020\002\022\030\n\024MAIN_SCENE_LOAD_TIME\020\003\022\021\n\rWAI" +
-      "T_FOR_AUTH\020\004\022\037\n\033INIT_REMOTE_CONFIG_VERSI" +
-      "ONS\020\005\022\026\n\022INIT_BUNDLE_DIGEST\020\006\022\014\n\010INIT_GM" +
-      "T\020\007\022\021\n\rDOWNLOAD_I18N\020\010\022\032\n\026DOWNLOAD_GLOBA" +
-      "L_ASSETS\020\t\022\036\n\032REGISTER_PUSH_NOTIFICATION" +
-      "\020\n\022\026\n\022INITIALIZE_UPSIGHT\020\013\022\032\n\026INITIALIZE" +
-      "_CRITTERCISM\020\014\022\027\n\023LOGIN_VERSION_CHECK\020\r\022" +
-      "\024\n\020LOGIN_GET_PLAYER\020\016\022\030\n\024LOGIN_AUTHENTIC" +
-      "ATION\020\017\022\016\n\nMODAL_TIME\020\020\022\025\n\021INITIALIZE_AD" +
-      "JUST\020\021\"\"\n\013KHFMNGFEAME\022\023\n\013bhmdmkobdgn\030\001 \001" +
-      "(\t\"\351\003\n\013KHPLIBGIGAB\0222\n\006result\030\001 \001(\0162\".POG" +
-      "OProtos.Rpc.KHPLIBGIGAB.Result\0223\n\013opkdeg" +
-      "dijah\030\002 \001(\0132\036.POGOProtos.Rpc.BuddyGiftPr" +
-      "oto\0226\n\013cfncokpnoeg\030\004 \001(\0132!.POGOProtos.Rp" +
-      "c.BuddyObservedData\022N\n\013ecenmhkdegj\030\005 \001(\016" +
-      "29.POGOProtos.Rpc.BuddyStatsShownHearts." +
-      "BuddyShownHeartType\"\350\001\n\006Result\022\t\n\005UNSET\020" +
-      "\000\022\031\n\025ERROR_BUDDY_NOT_VALID\020\001\022#\n\037SUCCESS_" +
-      "ADDED_LOOT_TO_INVENTORY\020\002\022)\n%SUCCESS_ADD" +
-      "ED_SOUVENIR_TO_COLLECTIONS\020\003\022/\n+ERROR_BU" +
-      "DDY_HAS_NOT_PICKED_UP_ANY_SOUVENIRS\020\004\022\033\n" +
-      "\027ERROR_INVENTORY_IS_FULL\020\005\022\032\n\026ERROR_BUDD" +
-      "Y_NOT_ON_MAP\020\006\"\227\003\n\035LimitedPurchaseSkuRec" +
-      "ordProto\022S\n\013hlepgnjdgfp\030\001 \003(\0132>.POGOProt" +
-      "os.Rpc.LimitedPurchaseSkuRecordProto.Hle",
-      "pgnjdgfpEntry\032c\n\rPurchaseProto\022\023\n\013liolpi" +
-      "lecbj\030\001 \001(\005\022\023\n\013npdkoggalbe\030\002 \001(\005\022\023\n\013kaij" +
-      "hdfokll\030\004 \001(\003\022\023\n\013pmfdkoiopdh\030\005 \001(\005\032o\n\020Hl" +
-      "epgnjdgfpEntry\022\013\n\003key\030\001 \001(\t\022J\n\005value\030\002 \001" +
-      "(\0132;.POGOProtos.Rpc.LimitedPurchaseSkuRe" +
-      "cordProto.PurchaseProto:\0028\001\"K\n\nChronoUni" +
-      "t\022\t\n\005UNSET\020\000\022\n\n\006MINUTE\020\001\022\010\n\004HOUR\020\002\022\007\n\003DA" +
-      "Y\020\003\022\010\n\004WEEK\020\004\022\t\n\005MONTH\020\005\"l\n\032CombatHubEnt" +
-      "ranceTelemetry\022N\n\027combat_hub_telemetry_i" +
-      "d\030\001 \001(\0162-.POGOProtos.Rpc.CombatHubEntran" +
-      "ceTelemetryIds\"\"\n\013KJGOMCGJCBI\022\023\n\013pegfach" +
-      "kbdd\030\001 \001(\t\"a\n\013KKAIJDGILAL\022\023\n\013mfkgkhdmbpb" +
-      "\030\001 \001(\004\022\023\n\013ggldmdiojme\030\002 \001(\010\022\023\n\013ininllcbh" +
-      "ke\030\003 \001(\r\022\023\n\013lfmgckaaekh\030\004 \001(\005\"\250\001\n\013KKECDJ" +
-      "IDCJJ\0222\n\006status\030\001 \001(\0162\".POGOProtos.Rpc.K" +
-      "KECDJIDCJJ.Status\0226\n\013ekinggfmndg\030\002 \001(\0132!" +
-      ".POGOProtos.Rpc.ClientPlayerProto\"-\n\006Sta" +
-      "tus\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\013\n\007FAILURE\020\002" +
-      "\"V\n\037PokemonThirdMoveAttributesProto\022\032\n\022s" +
-      "tardust_to_unlock\030\001 \001(\005\022\027\n\017candy_to_unlo" +
-      "ck\030\002 \001(\005\"(\n\021WithDistanceProto\022\023\n\013kknfpim" +
-      "cjef\030\001 \001(\001\"\233\001\n\025SpinPokestopTelemetry\022\016\n\006" +
-      "result\030\001 \001(\t\022\023\n\013lndigkkjfml\030\002 \001(\t\022\023\n\013epe" +
-      "jamdemjg\030\003 \001(\005\0223\n\013lmdeimbgdac\030\004 \003(\0132\036.PO" +
-      "GOProtos.Rpc.PokestopReward\022\023\n\013kgakhdpol" +
-      "po\030\005 \001(\005\"7\n\013KLEGKEFFLGI\022\023\n\013lgaehpohdan\030\001" +
-      " \001(\t\022\023\n\013mhpodigefok\030\002 \001(\005\"\"\n\013KLFIOFJAPJE" +
-      "\022\023\n\013kinmgjioimb\030\001 \001(\t\"B\n\020PokemonField1Su" +
-      "b\022\016\n\006field1\030\001 \001(\t\022\016\n\006field2\030\002 \001(\t\022\016\n\006fie" +
-      "ld3\030\003 \001(\005\"\261\001\n!ViewPointOfInterestImageTe" +
+      "roto\022)\n\013iiadjbboilm\030\004 \001(\0162\024.POGOProtos.R" +
+      "pc.Item\"\247\001\n\006Result\022\033\n\027QUEST_ENCOUNTER_UN" +
+      "KNOWN\020\000\022\033\n\027QUEST_ENCOUNTER_SUCCESS\020\001\022!\n\035" +
+      "QUEST_ENCOUNTER_NOT_AVAILABLE\020\002\022$\n QUEST" +
+      "_ENCOUNTER_ALREADY_FINISHED\020\003\022\032\n\026POKEMON" +
+      "_INVENTORY_FULL\020\004\"\266\001\n\013KEKDMKONDBF\0222\n\006res" +
+      "ult\030\001 \001(\0162\".POGOProtos.Rpc.KEKDMKONDBF.R" +
+      "esult\0226\n\013cfncokpnoeg\030\002 \001(\0132!.POGOProtos." +
+      "Rpc.BuddyObservedData\";\n\006Result\022\t\n\005UNSET" +
+      "\020\000\022\013\n\007SUCCESS\020\001\022\031\n\025ERROR_BUDDY_NOT_VALID" +
+      "\020\002\"y\n\020GameMasterField1\0221\n\npokemon_id\030\001 \001" +
+      "(\0162\035.POGOProtos.Rpc.HoloPokemonId\0222\n\nevo" +
+      "lutions\030\002 \003(\0132\036.POGOProtos.Rpc.MegaEvosF" +
+      "ield1\"\264\001\n\013KFGNOGPMDKA\022\023\n\013joajgniomff\030\001 \001" +
+      "(\t\022B\n\013jfindmcpnim\030\002 \001(\0162-.POGOProtos.Rpc" +
+      ".EnumWrapper.InvasionCharacter\022L\n\013pecohp" +
+      "figad\030\003 \001(\01627.POGOProtos.Rpc.EnumWrapper" +
+      ".InvasionCharacterExpression\"T\n\013KFHGOJIH" +
+      "KGC\0220\n\013oabjdogklgo\030\001 \001(\0132\033.POGOProtos.Rp" +
+      "c.CHLLKNMFHLC\022\023\n\013jfolkededbj\030\002 \001(\003\"\"\n\013KF" +
+      "HJNLBDPMF\022\023\n\013lgaehpohdan\030\001 \003(\t\"\334\001\n\025Shado" +
+      "wAttributesProto\022$\n\034purification_stardus" +
+      "t_needed\030\001 \001(\r\022!\n\031purification_candy_nee" +
+      "ded\030\002 \001(\r\022=\n\024purified_charge_move\030\003 \001(\0162" +
+      "\037.POGOProtos.Rpc.HoloPokemonMove\022;\n\022shad" +
+      "ow_charge_move\030\004 \001(\0162\037.POGOProtos.Rpc.Ho" +
+      "loPokemonMove\"9\n\030SfidaGlobalSettingsProt" +
+      "o\022\035\n\025low_battery_threshold\030\001 \001(\002\"M\n\013KFMA" +
+      "FDJAAMF\022)\n\013ekpohjfklal\030\001 \001(\0162\024.POGOProto" +
+      "s.Rpc.Item\022\023\n\013knbllicccna\030\002 \001(\005\"\"\n\013KFMPB" +
+      "NDFOOJ\022\023\n\013dbfmaclhflp\030\001 \001(\014\"\243\004\n\010BootTime" +
+      "\0224\n\010duration\030\001 \001(\0132\".POGOProtos.Rpc.Plat" +
+      "formMetricData\0226\n\nboot_phase\030\002 \001(\0162\".POG" +
+      "OProtos.Rpc.BootTime.BootPhase\"\250\003\n\tBootP" +
+      "hase\022\r\n\tUNDEFINED\020\000\022\017\n\013TIME_TO_MAP\020\001\022\024\n\020" +
+      "LOGO_SCREEN_TIME\020\002\022\030\n\024MAIN_SCENE_LOAD_TI" +
+      "ME\020\003\022\021\n\rWAIT_FOR_AUTH\020\004\022\037\n\033INIT_REMOTE_C" +
+      "ONFIG_VERSIONS\020\005\022\026\n\022INIT_BUNDLE_DIGEST\020\006" +
+      "\022\014\n\010INIT_GMT\020\007\022\021\n\rDOWNLOAD_I18N\020\010\022\032\n\026DOW" +
+      "NLOAD_GLOBAL_ASSETS\020\t\022\036\n\032REGISTER_PUSH_N" +
+      "OTIFICATION\020\n\022\026\n\022INITIALIZE_UPSIGHT\020\013\022\032\n" +
+      "\026INITIALIZE_CRITTERCISM\020\014\022\027\n\023LOGIN_VERSI" +
+      "ON_CHECK\020\r\022\024\n\020LOGIN_GET_PLAYER\020\016\022\030\n\024LOGI" +
+      "N_AUTHENTICATION\020\017\022\016\n\nMODAL_TIME\020\020\022\025\n\021IN" +
+      "ITIALIZE_ADJUST\020\021\"\"\n\013KHFMNGFEAME\022\023\n\013bhmd" +
+      "mkobdgn\030\001 \001(\t\"\351\003\n\013KHPLIBGIGAB\0222\n\006result\030" +
+      "\001 \001(\0162\".POGOProtos.Rpc.KHPLIBGIGAB.Resul" +
+      "t\0223\n\013opkdegdijah\030\002 \001(\0132\036.POGOProtos.Rpc." +
+      "BuddyGiftProto\0226\n\013cfncokpnoeg\030\004 \001(\0132!.PO" +
+      "GOProtos.Rpc.BuddyObservedData\022N\n\013ecenmh" +
+      "kdegj\030\005 \001(\01629.POGOProtos.Rpc.BuddyStatsS" +
+      "hownHearts.BuddyShownHeartType\"\350\001\n\006Resul" +
+      "t\022\t\n\005UNSET\020\000\022\031\n\025ERROR_BUDDY_NOT_VALID\020\001\022" +
+      "#\n\037SUCCESS_ADDED_LOOT_TO_INVENTORY\020\002\022)\n%" +
+      "SUCCESS_ADDED_SOUVENIR_TO_COLLECTIONS\020\003\022" +
+      "/\n+ERROR_BUDDY_HAS_NOT_PICKED_UP_ANY_SOU" +
+      "VENIRS\020\004\022\033\n\027ERROR_INVENTORY_IS_FULL\020\005\022\032\n",
+      "\026ERROR_BUDDY_NOT_ON_MAP\020\006\"\227\003\n\035LimitedPur" +
+      "chaseSkuRecordProto\022S\n\013hlepgnjdgfp\030\001 \003(\013" +
+      "2>.POGOProtos.Rpc.LimitedPurchaseSkuReco" +
+      "rdProto.HlepgnjdgfpEntry\032c\n\rPurchaseProt" +
+      "o\022\023\n\013liolpilecbj\030\001 \001(\005\022\023\n\013npdkoggalbe\030\002 " +
+      "\001(\005\022\023\n\013kaijhdfokll\030\004 \001(\003\022\023\n\013pmfdkoiopdh\030" +
+      "\005 \001(\005\032o\n\020HlepgnjdgfpEntry\022\013\n\003key\030\001 \001(\t\022J" +
+      "\n\005value\030\002 \001(\0132;.POGOProtos.Rpc.LimitedPu" +
+      "rchaseSkuRecordProto.PurchaseProto:\0028\001\"K" +
+      "\n\nChronoUnit\022\t\n\005UNSET\020\000\022\n\n\006MINUTE\020\001\022\010\n\004H" +
+      "OUR\020\002\022\007\n\003DAY\020\003\022\010\n\004WEEK\020\004\022\t\n\005MONTH\020\005\"l\n\032C" +
+      "ombatHubEntranceTelemetry\022N\n\027combat_hub_" +
+      "telemetry_id\030\001 \001(\0162-.POGOProtos.Rpc.Comb" +
+      "atHubEntranceTelemetryIds\"\"\n\013KJGOMCGJCBI" +
+      "\022\023\n\013pegfachkbdd\030\001 \001(\t\"a\n\013KKAIJDGILAL\022\023\n\013" +
+      "mfkgkhdmbpb\030\001 \001(\004\022\023\n\013ggldmdiojme\030\002 \001(\010\022\023" +
+      "\n\013ininllcbhke\030\003 \001(\r\022\023\n\013lfmgckaaekh\030\004 \001(\005" +
+      "\"\250\001\n\013KKECDJIDCJJ\0222\n\006status\030\001 \001(\0162\".POGOP" +
+      "rotos.Rpc.KKECDJIDCJJ.Status\0226\n\013ekinggfm" +
+      "ndg\030\002 \001(\0132!.POGOProtos.Rpc.ClientPlayerP" +
+      "roto\"-\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\013" +
+      "\n\007FAILURE\020\002\"V\n\037PokemonThirdMoveAttribute" +
+      "sProto\022\032\n\022stardust_to_unlock\030\001 \001(\005\022\027\n\017ca" +
+      "ndy_to_unlock\030\002 \001(\005\"(\n\021WithDistanceProto" +
+      "\022\023\n\013kknfpimcjef\030\001 \001(\001\"\233\001\n\025SpinPokestopTe" +
       "lemetry\022\016\n\006result\030\001 \001(\t\022\023\n\013lndigkkjfml\030\002" +
-      " \001(\t\022\023\n\013epejamdemjg\030\003 \001(\005\022\023\n\013gnfnfbapkjg" +
-      "\030\004 \001(\010\022\023\n\013loapfciahbj\030\005 \001(\010\022\023\n\013jmjdhimbn" +
-      "md\030\006 \001(\t\022\023\n\013fihlhmkkocb\030\007 \001(\t\"V\n\034Stardus" +
-      "tBoostAttributesProto\022\033\n\023stardust_multip" +
-      "lier\030\001 \001(\002\022\031\n\021boost_duration_ms\030\002 \001(\005\"\"\n" +
-      "\013KLPONPHFNHF\022\023\n\013dpnibkogejm\030\001 \001(\t\"\213\001\n\013KM" +
-      "AIEOEJNJP\0222\n\006status\030\001 \001(\0162\".POGOProtos.R" +
-      "pc.KMAIEOEJNJP.Status\022\023\n\013mbopgfdlmol\030\002 \001" +
-      "(\t\"3\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\r" +
-      "ERROR_UNKNOWN\020\002\"u\n\031AssetPoiDownloadTelem" +
-      "etry\0229\n\016asset_event_id\030\001 \001(\0162!.POGOProto" +
-      "s.Rpc.AssetTelemetryIds\022\017\n\007fort_id\030\002 \001(\t" +
-      "\022\014\n\004size\030\003 \001(\r\"V\n\016WithBuddyProto\022/\n\013mnli" +
-      "iedpjon\030\001 \001(\0162\032.POGOProtos.Rpc.BuddyLeve" +
-      "l\022\023\n\013feajmfjclje\030\002 \001(\010\"\\\n\034CombatPlayerPr" +
-      "eferencesProto\022\036\n\026friends_combat_opt_out" +
-      "\030\001 \001(\010\022\034\n\024nearby_combat_opt_in\030\002 \001(\010\"\337\001\n" +
-      "\013KMLBKFBOINN\0222\n\006result\030\001 \001(\0162\".POGOProto" +
-      "s.Rpc.KMLBKFBOINN.Result\"\233\001\n\006Result\022\t\n\005U" +
-      "NSET\020\000\022\013\n\007SUCCESS\020\001\022!\n\035ERROR_INVALID_CHA" +
-      "LLENGE_STATE\020\002\022\035\n\031ERROR_CHALLENGE_NOT_FO" +
-      "UND\020\003\022\032\n\026ERROR_ALREADY_TIMEDOUT\020\004\022\033\n\027ERR" +
-      "OR_ALREADY_CANCELLED\020\005\"t\n\037AssetStreamCac" +
-      "heCulledTelemetry\0229\n\016asset_event_id\030\001 \001(" +
-      "\0162!.POGOProtos.Rpc.AssetTelemetryIds\022\026\n\016" +
-      "space_released\030\002 \001(\r\"\225\002\n\013KNBJCBMCKFC\0222\n\006" +
-      "result\030\001 \001(\0162\".POGOProtos.Rpc.KNBJCBMCKF" +
-      "C.Result\0221\n\013jikkdljggho\030\002 \001(\0132\034.POGOProt" +
-      "os.Rpc.TradingProto\"\236\001\n\006Result\022\t\n\005UNSET\020" +
-      "\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\032\n\026ERR" +
-      "OR_FRIEND_NOT_FOUND\020\003\022\033\n\027ERROR_INVALID_P" +
-      "LAYER_ID\020\004\022\027\n\023ERROR_INVALID_STATE\020\005\022\027\n\023E" +
-      "RROR_STATE_HANDLER\020\006\"\250\002\n\022BadgeSettingsPr" +
-      "oto\0221\n\nbadge_type\030\001 \001(\0162\035.POGOProtos.Rpc" +
-      ".HoloBadgeType\022\023\n\013badge_ranks\030\002 \001(\005\022\017\n\007t" +
-      "argets\030\003 \003(\005\022:\n\016capture_reward\030\004 \003(\0132\".P" +
-      "OGOProtos.Rpc.BadgeCaptureReward\022\023\n\013even" +
-      "t_badge\030\005 \001(\010\022E\n\024event_badge_settings\030\006 " +
-      "\001(\0132\'.POGOProtos.Rpc.EventBadgeSettingsP" +
-      "roto\022!\n\031combat_league_template_id\030\007 \001(\t\"" +
-      ".\n\034NewGlobalSettingsField2Proto\022\016\n\006field" +
-      "1\030\001 \001(\010\"\244\037\n\023GlobalSettingsProto\0228\n\rfort_" +
-      "settings\030\002 \001(\0132!.POGOProtos.Rpc.FortSett" +
-      "ingsProto\0226\n\014map_settings\030\003 \001(\0132 .POGOPr" +
-      "otos.Rpc.MapSettingsProto\022:\n\016level_setti" +
-      "ngs\030\004 \001(\0132\".POGOProtos.Rpc.LevelSettings" +
-      "Proto\022B\n\022inventory_settings\030\005 \001(\0132&.POGO" +
-      "Protos.Rpc.InventorySettingsProto\022\036\n\026min" +
-      "imum_client_version\030\006 \001(\t\0226\n\014gps_setting" +
-      "s\030\007 \001(\0132 .POGOProtos.Rpc.GpsSettingsProt" +
-      "o\022@\n\021festival_settings\030\010 \001(\0132%.POGOProto" +
-      "s.Rpc.FestivalSettingsProto\022:\n\016event_set" +
-      "tings\030\t \001(\0132\".POGOProtos.Rpc.EventSettin" +
-      "gsProto\022\031\n\021max_pokemon_types\030\n \001(\005\022@\n\016sf" +
-      "ida_settings\030\013 \001(\0132(.POGOProtos.Rpc.Sfid" +
-      "aGlobalSettingsProto\0227\n\rnews_settings\030\014 " +
-      "\001(\0132 .POGOProtos.Rpc.NewsSettingProto\022F\n" +
-      "\024translation_settings\030\r \001(\0132(.POGOProtos" +
-      ".Rpc.TranslationSettingsProto\022@\n\021passcod" +
-      "e_settings\030\016 \001(\0132%.POGOProtos.Rpc.Passco" +
-      "deSettingsProto\022H\n\025notification_settings" +
-      "\030\017 \001(\0132).POGOProtos.Rpc.NotificationSett" +
-      "ingsProto\022\034\n\024client_app_blacklist\030\020 \003(\t\022" +
-      "L\n\024client_perf_settings\030\021 \001(\0132..POGOProt" +
-      "os.Rpc.ClientPerformanceSettingsProto\022E\n" +
-      "\024news_global_settings\030\022 \001(\0132\'.POGOProtos" +
-      ".Rpc.NewsGlobalSettingsProto\022G\n\025quest_gl" +
-      "obal_settings\030\023 \001(\0132(.POGOProtos.Rpc.Que" +
-      "stGlobalSettingsProto\022I\n\026beluga_global_s" +
-      "ettings\030\024 \001(\0132).POGOProtos.Rpc.BelugaGlo" +
-      "balSettingsProto\022O\n\031telemetry_global_set" +
-      "tings\030\025 \001(\0132,.POGOProtos.Rpc.TelemetryGl" +
-      "obalSettingsProto\022:\n\016login_settings\030\026 \001(" +
-      "\0132\".POGOProtos.Rpc.LoginSettingsProto\022B\n" +
-      "\017social_settings\030\027 \001(\0132).POGOProtos.Rpc." +
-      "SocialClientSettingsProto\022K\n\027trading_glo" +
-      "bal_settings\030\030 \001(\0132*.POGOProtos.Rpc.Trad" +
-      "ingGlobalSettingsProto\022E\n\036additional_all" +
-      "owed_pokemon_ids\030\031 \003(\0162\035.POGOProtos.Rpc." +
-      "HoloPokemonId\022M\n\030upsight_logging_setting" +
-      "s\030\032 \001(\0132+.POGOProtos.Rpc.UpsightLoggingS" +
-      "ettingsProto\022I\n\026combat_global_settings\030\033" +
-      " \001(\0132).POGOProtos.Rpc.CombatGlobalSettin" +
-      "gsProto\022I\n\023third_move_settings\030\034 \001(\0132,.P" +
-      "OGOProtos.Rpc.ThirdMoveGlobalSettingsPro" +
-      "to\022\\\n combat_challenge_global_settings\030\035" +
-      " \001(\01322.POGOProtos.Rpc.CombatChallengeGlo" +
-      "balSettingsProto\022Q\n\026bgmode_global_settin" +
-      "gs\030\036 \001(\01321.POGOProtos.Rpc.BackgroundMode" +
-      "GlobalSettingsProto\022:\n\016probe_settings\030\037 " +
-      "\001(\0132\".POGOProtos.Rpc.ProbeSettingsProto\022" +
-      "P\n\022purchased_settings\030  \001(\01324.POGOProtos" +
-      ".Rpc.PokecoinPurchaseDisplaySettingsProt" +
-      "o\022B\n\022helpshift_settings\030! \001(\0132&.POGOProt" +
-      "os.Rpc.HelpshiftSettingsProto\022@\n\021ar_phot" +
-      "o_settings\030\" \001(\0132%.POGOProtos.Rpc.ArPhot" +
-      "oGlobalSettings\022<\n\014poi_settings\030# \001(\0132&." +
-      "POGOProtos.Rpc.PoiGlobalSettingsProto\022D\n" +
-      "\020pokemon_settings\030$ \001(\0132*.POGOProtos.Rpc" +
-      ".PokemonGlobalSettingsProto\022B\n\017avatar_se" +
-      "ttings\030% \001(\0132).POGOProtos.Rpc.AvatarGlob" +
-      "alSettingsProto\022G\n\025evolution_v2_settings" +
-      "\030& \001(\0132(.POGOProtos.Rpc.EvolutionV2Setti" +
-      "ngsProto\022F\n\021incident_settings\030\' \001(\0132+.PO" +
-      "GOProtos.Rpc.IncidentGlobalSettingsProto" +
-      "\022:\n\016koala_settings\030( \001(\0132\".POGOProtos.Rp" +
-      "c.KoalaSettingsProto\022@\n\021kangaroo_setting" +
-      "s\030) \001(\0132%.POGOProtos.Rpc.KangarooSetting" +
-      "sProto\022@\n\016buddy_settings\030+ \001(\0132(.POGOPro" +
-      "tos.Rpc.BuddyGlobalSettingsProto\022:\n\016inpu" +
-      "t_settings\030, \001(\0132\".POGOProtos.Rpc.InputS" +
-      "ettingsProto\0226\n\014gmt_settings\030- \001(\0132 .POG" +
-      "OProtos.Rpc.GmtSettingsProto\022\035\n\025use_loca" +
-      "l_time_action\030/ \001(\010\022E\n\024ardk_config_setti" +
-      "ngs\0300 \001(\0132\'.POGOProtos.Rpc.ArdkConfigSet" +
-      "tingsProto\022D\n\017enabled_pokemon\0301 \001(\0132+.PO" +
-      "GOProtos.Rpc.EnabledPokemonSettingsProto" +
-      "\022V\n\035pokemon_bulk_upgrade_settings\0302 \001(\0132" +
-      "/.POGOProtos.Rpc.PokemonBulkUpgradeSetti" +
-      "ngsProto\022O\n\031planned_downtime_settings\0303 " +
-      "\001(\0132,.POGOProtos.Rpc.PlannedDowntimeSett" +
-      "ingsProto\022C\n\023ar_mapping_settings\0304 \001(\0132&" +
-      ".POGOProtos.Rpc.ArMappingSettingsProto\022T" +
-      "\n\034raid_invite_friends_settings\0305 \001(\0132..P" +
-      "OGOProtos.Rpc.RaidInviteFriendsSettingsP" +
-      "roto\022S\n\030daily_encounter_settings\0306 \001(\01321" +
-      ".POGOProtos.Rpc.DailyEncounterGlobalSett" +
-      "ingsProto\022E\n\024raid_ticket_settings\0307 \001(\0132" +
-      "\'.POGOProtos.Rpc.RaidTicketSettingsProto" +
-      "\022Q\n\027rocket_balloon_settings\0308 \001(\01320.POGO" +
-      "Protos.Rpc.RocketBalloonGlobalSettingsPr" +
-      "oto\022X\n\036timed_group_challenge_settings\0309 " +
-      "\001(\01320.POGOProtos.Rpc.TimedGroupChallenge" +
-      "SettingsProto\022<\n\006field1\030: \001(\0132,.POGOProt" +
-      "os.Rpc.NewGlobalSettingsField1Proto\022G\n\025l" +
-      "obby_client_settings\030; \001(\0132(.POGOProtos." +
-      "Rpc.LobbyClientSettingsProto\022<\n\006field2\030=" +
-      " \001(\0132,.POGOProtos.Rpc.NewGlobalSettingsF" +
-      "ield2Proto\022<\n\006field3\030> \001(\0132,.POGOProtos." +
-      "Rpc.NewGlobalSettingsField3Proto\022<\n\006fiel" +
-      "d4\030@ \001(\0132,.POGOProtos.Rpc.NewGlobalSetti" +
-      "ngsField4Proto\"\255\010\n\030AvatarCustomizationPr" +
-      "oto\022\017\n\007enabled\030\001 \001(\010\0225\n\013avatar_type\030\002 \001(" +
-      "\0162 .POGOProtos.Rpc.PlayerAvatarType\022;\n\004s" +
-      "lot\030\003 \003(\0162-.POGOProtos.Rpc.AvatarCustomi" +
-      "zationProto.Slot\022\023\n\013bundle_name\030\004 \001(\t\022\022\n" +
-      "\nasset_name\030\005 \001(\t\022\022\n\ngroup_name\030\006 \001(\t\022\022\n" +
-      "\nsort_order\030\007 \001(\005\022[\n\013unlock_type\030\010 \001(\0162F" +
-      ".POGOProtos.Rpc.AvatarCustomizationProto" +
-      ".AvatarCustomizationUnlockType\022Y\n\npromo_" +
-      "type\030\t \003(\0162E.POGOProtos.Rpc.AvatarCustom" +
-      "izationProto.AvatarCustomizationPromoTyp" +
-      "e\0228\n\021unlock_badge_type\030\n \001(\0162\035.POGOProto" +
-      "s.Rpc.HoloBadgeType\022\017\n\007iap_sku\030\013 \001(\t\022\032\n\022" +
-      "unlock_badge_level\030\014 \001(\005\022\021\n\ticon_name\030\r " +
-      "\001(\t\022\033\n\023unlock_player_level\030\016 \001(\005\022\020\n\010set_" +
-      "name\030\017 \001(\t\022\026\n\016set_prime_item\030\020 \001(\010\022!\n\031in" +
-      "compatible_bundle_names\030\021 \003(\t\"\221\001\n\035Avatar" +
-      "CustomizationUnlockType\022\025\n\021UNSET_UNLOCK_" +
-      "TYPE\020\000\022\013\n\007DEFAULT\020\001\022\020\n\014MEDAL_REWARD\020\002\022\020\n" +
-      "\014IAP_CLOTHING\020\003\022\020\n\014LEVEL_REWARD\020\004\022\026\n\022COM" +
-      "BAT_RANK_REWARD\020\005\"\274\001\n\004Slot\022\016\n\nUNSET_SLOT" +
-      "\020\000\022\010\n\004HAIR\020\001\022\t\n\005SHIRT\020\002\022\t\n\005PANTS\020\003\022\007\n\003HA" +
-      "T\020\004\022\t\n\005SHOES\020\005\022\010\n\004EYES\020\006\022\014\n\010BACKPACK\020\007\022\n" +
-      "\n\006GLOVES\020\010\022\t\n\005SOCKS\020\t\022\010\n\004BELT\020\n\022\013\n\007GLASS" +
-      "ES\020\013\022\014\n\010NECKLACE\020\014\022\010\n\004SKIN\020\r\022\010\n\004POSE\020\016\022\010" +
-      "\n\004FACE\020\017\"L\n\034AvatarCustomizationPromoType" +
-      "\022\024\n\020UNSET_PROMO_TYPE\020\000\022\010\n\004SALE\020\001\022\014\n\010FEAT" +
-      "URED\020\002\"7\n\013KOCCEDPIKAD\022\023\n\013dolnddiebpn\030\001 \001" +
-      "(\003\022\023\n\013eehfodhamcl\030\002 \001(\003\"#\n!WithSuperEffe" +
-      "ctiveChargeMoveProto\"\354\001\n\013KOJIJOEBGON\0222\n\006" +
-      "status\030\001 \001(\0162\".POGOProtos.Rpc.KOJIJOEBGO" +
-      "N.Status\0225\n\013ajmbloldfdf\030\002 \003(\0132 .POGOProt" +
-      "os.Rpc.ClientQuestProto\0225\n\013idnaacklgjk\030\003" +
-      " \003(\0132 .POGOProtos.Rpc.ClientQuestProto\";" +
-      "\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\031\n\025ERRO" +
-      "R_INVALID_DISPLAY\020\002\"h\n\017RpcResponseTime\022+" +
-      "\n\013naeknbcofoi\030\001 \001(\0162\026.POGOProtos.Rpc.Met" +
-      "hod\022\023\n\013bhoahihfeog\030\002 \001(\005\022\023\n\013hjocokdcdal\030" +
-      "\003 \001(\002\"M\n\013KPLAFGNMHHH\022)\n\013ekpohjfklal\030\001 \001(" +
-      "\0162\024.POGOProtos.Rpc.Item\022\023\n\013mhpodigefok\030\002" +
-      " \001(\005\"\243\001\n\013LAKEAGGMIEH\022\023\n\013dcibfdjpcdo\030\001 \001(" +
-      "\t\022\023\n\013lndigkkjfml\030\002 \001(\t\022\023\n\013dfngpjpknmp\030\003 " +
-      "\001(\001\022\023\n\013nnenpbhjdgf\030\004 \001(\001\022@\n\013okillgigohn\030" +
-      "\005 \001(\0162+.POGOProtos.Rpc.EnumWrapper.Invas" +
-      "ionContext\"(\n\021PlayerCameraProto\022\023\n\013fddpk" +
-      "bidblg\030\001 \001(\010\"7\n\013LBKAOIOIJKC\022\023\n\013ckniekbne" +
-      "oe\030\001 \001(\003\022\023\n\013adfnjbdncbj\030\002 \001(\t\"j\n\025BattleA" +
-      "ttributesProto\022\023\n\013sta_percent\030\001 \001(\002\022\023\n\013a" +
-      "tk_percent\030\002 \001(\002\022\023\n\013def_percent\030\003 \001(\002\022\022\n" +
-      "\nduration_s\030\004 \001(\002\"\237\003\n\025DiskEncounterOutPr" +
-      "oto\022<\n\006result\030\001 \001(\0162,.POGOProtos.Rpc.Dis" +
-      "kEncounterOutProto.Result\022-\n\007pokemon\030\002 \001" +
-      "(\0132\034.POGOProtos.Rpc.PokemonProto\022D\n\023capt" +
-      "ure_probability\030\003 \001(\0132\'.POGOProtos.Rpc.C" +
-      "aptureProbabilityProto\022)\n\013active_item\030\004 " +
-      "\001(\0162\024.POGOProtos.Rpc.Item\022\"\n\032arplus_atte" +
-      "mpts_until_flee\030\005 \001(\005\"\203\001\n\006Result\022\013\n\007UNKN" +
-      "OWN\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rNOT_AVAILABLE\020\002\022\020\n" +
-      "\014NOT_IN_RANGE\020\003\022\036\n\032ENCOUNTER_ALREADY_FIN" +
-      "ISHED\020\004\022\032\n\026POKEMON_INVENTORY_FULL\020\005\"\317\001\n\022" +
-      "EquipBadgeOutProto\0229\n\006result\030\001 \001(\0162).POG" +
-      "OProtos.Rpc.EquipBadgeOutProto.Result\0224\n" +
-      "\010equipped\030\002 \001(\0132\".POGOProtos.Rpc.Equippe" +
-      "dBadgeProto\"H\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCC" +
-      "ESS\020\001\022\023\n\017COOLDOWN_ACTIVE\020\002\022\021\n\rNOT_QUALIF" +
-      "IED\020\003\"Q\n\013LCPGNLPCIAE\022B\n\013agldpnffeoo\030\001 \003(" +
-      "\0132-.POGOProtos.Rpc.GameMasterClientTempl" +
-      "ateProto\"v\n\013LDCPOPIKHAM\022\023\n\013dpgejbjfgge\030\001" +
-      " \003(\t\022\023\n\013fgonpfibkai\030\002 \001(\t\022\023\n\013jkpcajihcao" +
-      "\030\003 \003(\005\022\023\n\013olfnggmefal\030\004 \001(\001\022\023\n\013aocfljnin" +
-      "fi\030\005 \001(\001\"\223\001\n\013LDDMBFHHMFD\0220\n\013cjajikhdnil\030" +
-      "\001 \003(\0132\033.POGOProtos.Rpc.IHCDININCLE\022\023\n\013pj" +
-      "eachbanff\030\002 \001(\010\022\023\n\013ffkpnhjlidm\030\003 \001(\003\022\023\n\013" +
-      "npfkomnambb\030\004 \001(\t\022\023\n\013emodglnocmb\030\005 \001(\t\"\373" +
-      "\005\n\036PlatformPoiSubmissionTelemetry\022\\\n\014gui" +
-      "_event_id\030\001 \001(\0162F.POGOProtos.Rpc.Platfor" +
-      "mPoiSubmissionTelemetry.PoiSubmissionGui" +
-      "EventId\0220\n\nimage_type\030\002 \001(\0162\034.POGOProtos" +
-      ".Rpc.PoiImageType\022W\n\016camera_step_id\030\003 \001(" +
-      "\0162?.POGOProtos.Rpc.PlatformPoiSubmission" +
-      "Telemetry.PoiCameraStepIds\"K\n\020PoiCameraS" +
-      "tepIds\022\t\n\005UNSET\020\000\022\t\n\005ENTER\020\001\022\n\n\006RETAKE\020\002" +
-      "\022\013\n\007CONFIRM\020\003\022\010\n\004EXIT\020\004\"\242\003\n\027PoiSubmissio" +
-      "nGuiEventId\022\013\n\007UNKNOWN\020\000\022\030\n\024POI_NOMINATI" +
-      "ON_ENTER\020\001\022\031\n\025POI_TUTORIAL_COMPLETE\020\002\022\033\n" +
-      "\027POI_MAP_CHANGEDVIEW_MAP\020\003\022!\n\035POI_MAP_CH" +
-      "ANGEDVIEW_SATELLITE\020\004\022\033\n\027POI_MAP_CENTER_" +
-      "LOCATION\020\005\022\024\n\020POI_LOCATION_SET\020\006\022\032\n\026POI_" +
-      "PHOTO_CAMERA_ENTER\020\007\022\031\n\025POI_PHOTO_CAMERA" +
-      "_EXIT\020\010\022\025\n\021POI_TITLE_ENTERED\020\t\022\031\n\025POI_DE" +
-      "SCRIPTION_ENTER\020\n\022\027\n\023POI_DETAILS_CONFIRM" +
-      "\020\013\022\034\n\030POI_SUPPORTINGINFO_ENTER\020\014\022\031\n\025POI_" +
-      "SUBMIT_BUTTON_HIT\020\r\022\027\n\023POI_EXIT_BUTTON_H" +
-      "IT\020\016\"\r\n\013LDJMHBEABNN\"\215\003\n\033UseItemEggIncuba" +
-      "torOutProto\022B\n\006result\030\001 \001(\01622.POGOProtos" +
-      ".Rpc.UseItemEggIncubatorOutProto.Result\022" +
-      "8\n\regg_incubator\030\002 \001(\0132!.POGOProtos.Rpc." +
-      "EggIncubatorProto\"\357\001\n\006Result\022\t\n\005UNSET\020\000\022" +
-      "\013\n\007SUCCESS\020\001\022\035\n\031ERROR_INCUBATOR_NOT_FOUN" +
-      "D\020\002\022\037\n\033ERROR_POKEMON_EGG_NOT_FOUND\020\003\022\034\n\030" +
-      "ERROR_POKEMON_ID_NOT_EGG\020\004\022\"\n\036ERROR_INCU" +
-      "BATOR_ALREADY_IN_USE\020\005\022$\n ERROR_POKEMON_" +
-      "ALREADY_INCUBATING\020\006\022%\n!ERROR_INCUBATOR_" +
-      "NO_USES_REMAINING\020\007\"\212\003\n\031GetIncensePokemo" +
-      "nOutProto\022@\n\006result\030\001 \001(\01620.POGOProtos.R" +
-      "pc.GetIncensePokemonOutProto.Result\022\027\n\017p" +
-      "okemon_type_id\030\002 \001(\005\022\013\n\003lat\030\003 \001(\001\022\013\n\003lng" +
-      "\030\004 \001(\001\022\032\n\022encounter_location\030\005 \001(\t\022\024\n\014en" +
-      "counter_id\030\006 \001(\004\022\031\n\021disappear_time_ms\030\007 " +
-      "\001(\003\022<\n\017pokemon_display\030\010 \001(\0132#.POGOProto" +
-      "s.Rpc.PokemonDisplayProto\"m\n\006Result\022\035\n\031I" +
-      "NCENSE_ENCOUNTER_UNKNOWN\020\000\022\037\n\033INCENSE_EN" +
-      "COUNTER_AVAILABLE\020\001\022#\n\037INCENSE_ENCOUNTER" +
-      "_NOT_AVAILABLE\020\002\"L\n\013LDMPFNDGILP\022\023\n\013alfla" +
-      "epafnn\030\001 \001(\t\022\023\n\013jnojmednlil\030\002 \003(\004\022\023\n\013dmm" +
-      "cbhcceml\030\003 \001(\003\"b\n\027PokemonCandyRewardProt" +
-      "o\0222\n\013mfkgkhdmbpb\030\001 \001(\0162\035.POGOProtos.Rpc." +
-      "HoloPokemonId\022\023\n\013ligbfceekdo\030\002 \001(\005\"\317\001\n\013L" +
-      "EJIKNOPOEE\022-\n\013laihnnaljpj\030\001 \001(\0162\030.POGOPr" +
-      "otos.Rpc.Platform\022\023\n\013agjadkbcfpk\030\002 \001(\t\022\023" +
-      "\n\013dopmejpngoj\030\003 \001(\t\022\023\n\013ddhmpoicike\030\004 \001(\t" +
-      "\022\023\n\013hbjjgpclhnj\030\005 \001(\r\022\023\n\013kfnaalbpflm\030\006 \001" +
-      "(\010\022\023\n\013page_offset\030\007 \001(\005\022\023\n\013jmkkockkpbe\030\010" +
-      " \001(\004\"E\n\031ScreenResolutionTelemetry\022\023\n\013gnn" +
-      "nekplmlj\030\001 \001(\005\022\023\n\013cgjmpdlflal\030\002 \001(\005\"[\n\032E" +
-      "quippedBadgeSettingsProto\022\023\n\013ieedgcmpenm" +
-      "\030\001 \001(\003\022\023\n\013ocplkagjjmj\030\002 \003(\002\022\023\n\013bleophbaa" +
-      "mf\030\003 \003(\002\"\r\n\013LFKAMBNMOFP\"\r\n\013LGCMDJHIIPK\"7" +
-      "\n\013LGFHNAOEMGA\022\023\n\013mjlofidknme\030\001 \001(\t\022\023\n\013gk" +
-      "bagaidnki\030\002 \001(\t\"\260\001\n\013LGGCLGDMEMN\022\023\n\013alfla" +
-      "epafnn\030\001 \001(\t\0220\n\013amobkagpflm\030\002 \001(\0132\033.POGO" +
-      "Protos.Rpc.DDJCEAJBKBO\022\023\n\013mlhemdbiojc\030\003 " +
-      "\001(\003\022\023\n\013ocjiaacdnap\030\004 \001(\003\0220\n\013padagbanpff\030" +
-      "\005 \001(\0132\033.POGOProtos.Rpc.GHDAPCNAJGM\"\251\001\n\035A" +
-      "vatarGroupOrderSettingsProto\022R\n\005group\030\001 " +
-      "\003(\0132C.POGOProtos.Rpc.AvatarGroupOrderSet" +
-      "tingsProto.AvatarGroupOrderProto\0324\n\025Avat" +
-      "arGroupOrderProto\022\014\n\004name\030\001 \001(\t\022\r\n\005order" +
-      "\030\002 \001(\005\"\310\003\n\013LGOMBNEJMLL\022\023\n\013kmkjcldecjg\030\001 " +
-      "\001(\004\022\023\n\013ekldipabbak\030\002 \001(\003\0225\n\013fbdpjddippf\030" +
-      "\003 \003(\0132 .POGOProtos.Rpc.PokemonFortProto\022" +
-      "0\n\013abmkghdgfdl\030\004 \003(\0132\033.POGOProtos.Rpc.PN" +
-      "ONGDLKFAG\0220\n\013bmfefifmmno\030\005 \003(\0132\033.POGOPro" +
-      "tos.Rpc.EJEPBGFALFH\022\023\n\013iagoijhcnnh\030\006 \003(\t" +
-      "\022\023\n\013dclepfdkoah\030\007 \001(\010\0220\n\013mjiibgelagb\030\010 \003" +
-      "(\0132\033.POGOProtos.Rpc.MNHABHJMOFB\0220\n\013ffeji" +
-      "dfbgfk\030\t \003(\0132\033.POGOProtos.Rpc.PNONGDLKFA" +
-      "G\0224\n\013ojfgingnckd\030\n \003(\0132\037.POGOProtos.Rpc." +
-      "MapPokemonProto\0220\n\013kdaanaoafla\030\013 \003(\0132\033.P" +
-      "OGOProtos.Rpc.HNEPENBFNEA\"\327\002\n\020SendGiftOu" +
-      "tProto\0227\n\006result\030\001 \001(\0162\'.POGOProtos.Rpc." +
-      "SendGiftOutProto.Result\022\022\n\nawarded_xp\030\002 " +
-      "\001(\005\"\365\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021" +
-      "\n\rERROR_UNKNOWN\020\002\022\037\n\033ERROR_PLAYER_DOES_N" +
-      "OT_EXIST\020\003\022\035\n\031ERROR_GIFT_DOES_NOT_EXIST\020" +
-      "\004\022!\n\035ERROR_GIFT_ALREADY_SENT_TODAY\020\005\022\"\n\036" +
-      "ERROR_PLAYER_HAS_UNOPENED_GIFT\020\006\022\027\n\023ERRO" +
-      "R_FRIEND_UPDATE\020\007\022 \n\034ERROR_PLAYER_HAS_NO" +
-      "_STICKERS\020\010\"\222\001\n\020AppliedItemProto\022\"\n\004item" +
-      "\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022/\n\titem_typ" +
-      "e\030\002 \001(\0162\034.POGOProtos.Rpc.HoloItemType\022\025\n" +
-      "\rexpiration_ms\030\003 \001(\003\022\022\n\napplied_ms\030\004 \001(\003" +
-      "\"\233\002\n\024BuddyPettingOutProto\022;\n\006result\030\001 \001(" +
-      "\0162+.POGOProtos.Rpc.BuddyPettingOutProto." +
-      "Result\0228\n\robserved_data\030\002 \001(\0132!.POGOProt" +
-      "os.Rpc.BuddyObservedData\022O\n\014shown_hearts" +
-      "\030\003 \001(\01629.POGOProtos.Rpc.BuddyStatsShownH" +
-      "earts.BuddyShownHeartType\";\n\006Result\022\t\n\005U" +
-      "NSET\020\000\022\013\n\007SUCCESS\020\001\022\031\n\025ERROR_BUDDY_NOT_V" +
-      "ALID\020\002\"\352\001\n\013LHNKNIGLOCI\0228\n\013dofkbmpelpo\030\001 " +
-      "\001(\0132#.POGOProtos.Rpc.PokemonDisplayProto" +
-      "\022\023\n\013iljdfpdkmno\030\002 \001(\005\022\023\n\013bmcfcoflnde\030\003 \001" +
-      "(\t\0228\n\013poifncejdne\030\004 \001(\0132#.POGOProtos.Rpc" +
-      ".PokemonDisplayProto\022\023\n\013ajhinlegbod\030\005 \001(" +
-      "\005\022\023\n\013nckpcdcmpac\030\006 \001(\003\022\023\n\013kdiofnapfbg\030\007 " +
-      "\001(\005\"\035\n\033WithWinGymBattleStatusProto\"?\n\013LI" +
-      "JIDLPCEDI\0220\n\013kefnccanpgo\030\001 \003(\0132\033.POGOPro" +
-      "tos.Rpc.KFGNOGPMDKA\"\304\003\n%SubmitCombatChal" +
-      "lengePokemonsOutProto\022L\n\006result\030\001 \001(\0162<." +
-      "POGOProtos.Rpc.SubmitCombatChallengePoke" +
-      "monsOutProto.Result\0227\n\tchallenge\030\002 \001(\0132$" +
-      ".POGOProtos.Rpc.CombatChallengeProto\"\223\002\n" +
-      "\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022!\n\035ERROR" +
-      "_INVALID_CHALLENGE_STATE\020\002\022\035\n\031ERROR_CHAL" +
-      "LENGE_NOT_FOUND\020\003\022\"\n\036ERROR_POKEMON_NOT_I" +
-      "N_INVENTORY\020\004\022\035\n\031ERROR_NOT_ELIGIBLE_LEAG" +
-      "UE\020\005\022\032\n\026ERROR_ALREADY_TIMEDOUT\020\006\022\033\n\027ERRO" +
-      "R_ALREADY_CANCELLED\020\007\022\027\n\023ERROR_ACCESS_DE" +
-      "NIED\020\010\022\032\n\026ERROR_ALREADY_DECLINED\020\t\"\306\001\n\025C" +
-      "atchPokemonTelemetry\022\016\n\006status\030\001 \001(\t\022N\n\033" +
-      "encounter_pokemon_telemetry\030\002 \001(\0132).POGO" +
-      "Protos.Rpc.EncounterPokemonTelemetry\022\020\n\010" +
-      "balltype\030\003 \001(\005\022\021\n\thit_grade\030\004 \001(\005\022\022\n\ncur" +
-      "ve_ball\030\005 \001(\010\022\024\n\014miss_percent\030\006 \001(\001\"\311\001\n\017" +
-      "MapPokemonProto\022\023\n\013aeoedfahjck\030\001 \001(\t\022\023\n\013" +
-      "ckniekbneoe\030\002 \001(\004\022\023\n\013jogfiijbohp\030\003 \001(\005\022\023" +
-      "\n\013fdmckneabfk\030\004 \001(\003\022\023\n\013phiabghihcc\030\005 \001(\001" +
-      "\022\023\n\013icmnhajccaa\030\006 \001(\001\0228\n\013efpknnlchbc\030\007 \001" +
-      "(\0132#.POGOProtos.Rpc.PokemonDisplayProto\"" +
-      "\345\001\n\020OpenGiftLogEntry\0227\n\006result\030\001 \001(\0162\'.P" +
-      "OGOProtos.Rpc.OpenGiftLogEntry.Result\022\023\n" +
-      "\013haklnomcbjp\030\002 \001(\t\022.\n\013nikdphgligk\030\003 \001(\0132" +
-      "\031.POGOProtos.Rpc.LootProto\0221\n\013npejhkhkdj" +
-      "b\030\004 \003(\0132\034.POGOProtos.Rpc.PokemonProto\" \n" +
-      "\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"\236\n\n\021Clie" +
-      "ntPlayerProto\022\030\n\020creation_time_ms\030\001 \001(\003\022" +
-      "\014\n\004name\030\002 \001(\t\022\014\n\004team\030\005 \001(\005\022=\n\021tutorial_" +
-      "complete\030\007 \003(\0162\".POGOProtos.Rpc.Tutorial" +
-      "Completion\022>\n\023player_avatar_proto\030\010 \001(\0132" +
-      "!.POGOProtos.Rpc.PlayerAvatarProto\022\033\n\023ma" +
-      "x_pokemon_storage\030\t \001(\005\022\030\n\020max_item_stor" +
-      "age\030\n \001(\005\022:\n\021daily_bonus_proto\030\013 \001(\0132\037.P" +
-      "OGOProtos.Rpc.DailyBonusProto\022@\n\024equippe" +
-      "d_badge_proto\030\014 \001(\0132\".POGOProtos.Rpc.Equ" +
-      "ippedBadgeProto\022D\n\026contact_settings_prot" +
-      "o\030\r \001(\0132$.POGOProtos.Rpc.ContactSettings" +
-      "Proto\022G\n\020currency_balance\030\016 \003(\0132-.POGOPr" +
-      "otos.Rpc.PlatformCurrencyQuantityProto\022!" +
-      "\n\031remaining_codename_claims\030\017 \001(\005\022>\n\023bud" +
-      "dy_pokemon_proto\030\020 \001(\0132!.POGOProtos.Rpc." +
-      "BuddyPokemonProto\022\035\n\025battle_lockout_end_" +
-      "ms\030\021 \001(\003\022H\n\035secondary_player_avatar_prot" +
-      "o\030\022 \001(\0132!.POGOProtos.Rpc.PlayerAvatarPro" +
-      "to\022\033\n\023name_is_blacklisted\030\023 \001(\010\022I\n\026socia" +
-      "l_player_settings\030\024 \001(\0132).POGOProtos.Rpc" +
-      ".SocialPlayerSettingsProto\022O\n\031combat_pla" +
-      "yer_preferences\030\025 \001(\0132,.POGOProtos.Rpc.C" +
-      "ombatPlayerPreferencesProto\022\031\n\021player_su",
-      "pport_id\030\026 \001(\t\022=\n\020team_change_info\030\027 \001(\013" +
-      "2#.POGOProtos.Rpc.TeamChangeInfoProto\022A\n" +
-      "\032consumed_eevee_easter_eggs\030\030 \003(\0162\035.POGO" +
-      "Protos.Rpc.HoloPokemonId\0222\n\ncombat_log\030\031" +
-      " \001(\0132\036.POGOProtos.Rpc.CombatLogProto\022\033\n\023" +
-      "time_zone_offset_ms\030\032 \001(\003\022>\n\023buddy_obser" +
-      "ved_data\030\033 \001(\0132!.POGOProtos.Rpc.BuddyObs" +
-      "ervedData\022\031\n\021helpshift_user_id\030\034 \001(\t\022B\n\022" +
-      "player_preferences\030\035 \001(\0132&.POGOProtos.Rp" +
-      "c.PlayerPreferencesProto\"_\n\017SocialTeleme" +
-      "try\0227\n\013fmadfggpfjm\030\001 \001(\0162\".POGOProtos.Rp" +
-      "c.SocialTelemetryIds\022\023\n\013faeplcfnahk\030\002 \001(" +
-      "\005\"\340\002\n\020GpsSettingsProto\022/\n\'driving_warnin" +
-      "g_speed_meters_per_second\030\001 \001(\002\022(\n drivi" +
-      "ng_warning_cooldown_minutes\030\002 \001(\002\022-\n%dri" +
-      "ving_speed_sample_interval_seconds\030\003 \001(\002" +
-      "\022\"\n\032driving_speed_sample_count\030\004 \001(\005\022.\n&" +
-      "idle_threshold_speed_meters_per_second\030\005" +
-      " \001(\002\022\'\n\037idle_threshold_duration_seconds\030" +
-      "\006 \001(\005\022$\n\034idle_sample_interval_seconds\030\007 " +
-      "\001(\002\022\037\n\027idle_speed_sample_count\030\010 \001(\005\">\n\022" +
-      "WithNpcCombatProto\022\023\n\013cnkmgnahaog\030\001 \001(\010\022" +
-      "\023\n\013lpncaigkond\030\002 \003(\t\"\212\003\n\032SendRaidInvitat" +
-      "ionOutProto\022A\n\006result\030\001 \001(\01621.POGOProtos" +
-      ".Rpc.SendRaidInvitationOutProto.Result\022$" +
-      "\n\034num_friend_invites_remaining\030\002 \001(\005\"\202\002\n" +
-      "\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\027\n\023ERROR" +
-      "_NO_PERMISSION\020\002\022\027\n\023ERROR_GYM_NOT_FOUND\020" +
-      "\003\022\031\n\025ERROR_LOBBY_NOT_FOUND\020\004\022\033\n\027ERROR_PA" +
-      "ST_CUT_OFF_TIME\020\005\022\036\n\032ERROR_NO_INVITES_RE" +
-      "MAINING\020\006\022\024\n\020ERROR_LOBBY_FULL\020\007\022\033\n\027ERROR" +
-      "_INVITER_NOT_FOUND\020\010\022#\n\037ERROR_NO_REMOTE_" +
-      "SLOTS_REMAINING\020\t\"7\n\013LKPHMBPACNE\022\023\n\013alfl" +
-      "aepafnn\030\001 \001(\t\022\023\n\013gnfjabhnndo\030\002 \001(\t\"Q\n\013LL" +
-      "KJLEFDCNG\022B\n\013ndhnpojhjfj\030\001 \001(\0162-.POGOPro" +
-      "tos.Rpc.EnumWrapper.CharacterCategory\"a\n" +
-      "\013LLKLGDMGKIM\022\023\n\013dgnefoicngm\030\001 \001(\001\022\023\n\013icp" +
-      "lajlgmio\030\002 \001(\005\022\023\n\013cijfdojfkmk\030\003 \001(\001\022\023\n\013h" +
-      "kgefempbkb\030\004 \001(\003\"Y\n\013LLLCMIMDMJA\0225\n\013baegl" +
-      "bmdifp\030\001 \001(\0132 .POGOProtos.Rpc.PokemonTel" +
-      "emetry\022\023\n\013jddkbicpclm\030\002 \001(\010\"\327\002\n\025GetGymDe" +
-      "tailsOutProto\0220\n\tgym_state\030\001 \001(\0132\035.POGOP" +
-      "rotos.Rpc.GymStateProto\022\014\n\004name\030\002 \001(\t\022\013\n" +
-      "\003url\030\003 \003(\t\022<\n\006result\030\004 \001(\0162,.POGOProtos." +
-      "Rpc.GetGymDetailsOutProto.Result\022\023\n\013desc" +
-      "ription\030\005 \001(\t\022\025\n\rsecondary_url\030\006 \003(\t\022\031\n\021" +
-      "checkin_image_url\030\007 \001(\t\0222\n\nevent_info\030\010 " +
-      "\001(\0132\036.POGOProtos.Rpc.EventInfoProto\"8\n\006R" +
-      "esult\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\026\n\022ERROR_N" +
-      "OT_IN_RANGE\020\002\"\325\002\n\026CheckPhotobombOutProto" +
-      "\022=\n\006status\030\001 \001(\0162-.POGOProtos.Rpc.CheckP" +
-      "hotobombOutProto.Status\022;\n\024photobomb_pok" +
-      "emon_id\030\002 \001(\0162\035.POGOProtos.Rpc.HoloPokem" +
-      "onId\022F\n\031photobomb_pokemon_display\030\003 \001(\0132" +
-      "#.POGOProtos.Rpc.PokemonDisplayProto\022\024\n\014" +
-      "encounter_id\030\004 \001(\004\022\013\n\003uri\030\005 \001(\t\"T\n\006Statu" +
-      "s\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\037\n\033ERROR_PHOTO" +
-      "_POKEMON_INVALID\020\002\022\021\n\rERROR_UNKNOWN\020\003\"_\n" +
-      "\026PlayerPreferencesProto\022\023\n\013dboobfokocj\030\001" +
-      " \001(\010\0220\n\013kcmjmjighpb\030\002 \001(\0132\033.POGOProtos.R" +
-      "pc.JHBNFHCIJDK\"\227\001\n\034CombatStatStageSettin" +
-      "gsProto\022\032\n\022minimum_stat_stage\030\001 \001(\005\022\032\n\022m" +
-      "aximum_stat_stage\030\002 \001(\005\022\036\n\026attack_buff_m" +
-      "ultiplier\030\003 \003(\002\022\037\n\027defense_buff_multipli" +
-      "er\030\004 \003(\002\"P\n\027ReleasePokemonTelemetry\0225\n\013b" +
-      "aeglbmdifp\030\001 \001(\0132 .POGOProtos.Rpc.Pokemo" +
-      "nTelemetry\"7\n\013LNGNLGBMPAG\022\023\n\013ekaiopmhgkb" +
-      "\030\001 \001(\005\022\023\n\013cebfafgmdhp\030\002 \001(\005\"V\n(BuddyMult" +
-      "iplayerConnectionSucceededProto\022\023\n\013test_" +
-      "number\030\001 \001(\005\022\025\n\rresponse_time\030\002 \001(\003\"\314\004\n\023" +
-      "FortDetailsOutProto\022\023\n\013mjlofidknme\030\001 \001(\t" +
-      "\022\023\n\013nbpfkgpfhpc\030\002 \001(\005\0221\n\013baeglbmdifp\030\003 \003" +
-      "(\0132\034.POGOProtos.Rpc.PokemonProto\022\023\n\013fgmk" +
-      "glfgljh\030\004 \001(\t\022\023\n\013ipfnaapigeh\030\005 \003(\t\022\023\n\013nc" +
-      "ckaojhodf\030\006 \001(\005\022\023\n\013lhpockkkeea\030\007 \001(\005\022\023\n\013" +
-      "nieieblomfi\030\010 \001(\005\022-\n\013epejamdemjg\030\t \001(\0162\030" +
-      ".POGOProtos.Rpc.FortType\022\023\n\013phiabghihcc\030" +
-      "\n \001(\001\022\023\n\013icmnhajccaa\030\013 \001(\001\022\023\n\013lcdegoaaea" +
-      "o\030\014 \001(\t\022<\n\013bemfemnleom\030\r \003(\0132\'.POGOProto" +
-      "s.Rpc.ClientFortModifierProto\022\023\n\013fbbebhn" +
-      "jkii\030\016 \001(\010\022\023\n\013dbplmhjiehf\030\017 \001(\t\0223\n\013hgbaj" +
-      "ilhbak\030\020 \001(\0132\036.POGOProtos.Rpc.EventInfoP" +
-      "roto\022\023\n\013nehenfgafil\030\021 \003(\t\022\023\n\013lgkeacjeghp" +
-      "\030\022 \001(\t\022:\n\013cnpdpimfkbe\030\023 \001(\0132%.POGOProtos" +
-      ".Rpc.SponsoredDetailsProto\"7\n\013LNLCFEMIFL" +
-      "N\022\023\n\013mfkgkhdmbpb\030\001 \001(\004\022\023\n\013lecobcejkpk\030\002 " +
-      "\001(\t\"M\n\013LOAFCNLEHNA\022)\n\013ekpohjfklal\030\001 \001(\0162" +
-      "\024.POGOProtos.Rpc.Item\022\023\n\013knbllicccna\030\002 \001" +
-      "(\005\"\375\001\n\033AwardFreeRaidTicketOutProto\022B\n\006re" +
-      "sult\030\001 \001(\01622.POGOProtos.Rpc.AwardFreeRai" +
-      "dTicketOutProto.Result\"\231\001\n\006Result\022\021\n\rNO_" +
-      "RESULT_SET\020\000\022\013\n\007SUCCESS\020\001\022(\n$ERROR_PLAYE" +
-      "R_DOES_NOT_MEET_MIN_LEVEL\020\002\022&\n\"ERROR_DAI" +
-      "LY_TICKET_ALREADY_AWARDED\020\003\022\035\n\031ERROR_PLA" +
-      "YER_OUT_OF_RANGE\020\004\"\376\001\n\025MapBuddySettingsP" +
-      "roto\022\023\n\013jokccgjhani\030\001 \001(\005\022\023\n\013cbcppepegki" +
-      "\030\002 \001(\002\022\023\n\013onkpccfaaah\030\003 \001(\002\022\023\n\013gkgpacega" +
-      "gg\030\004 \001(\002\022\023\n\013behpmklpdgh\030\005 \001(\002\022\023\n\013bofpnmn" +
-      "nfmh\030\006 \001(\002\022\023\n\013bmbcfdllamd\030\007 \001(\002\022\023\n\013blfod" +
-      "abadcp\030\010 \001(\002\022\023\n\013nigahfmpnlp\030\t \001(\010\022\023\n\013lfh" +
-      "ndodagad\030\n \001(\002\022\023\n\013dildpdmbgng\030\013 \001(\002\"\032\n\030W" +
-      "ithWinBattleStatusProto\"\"\n\013LONEIDCGMDM\022\023" +
-      "\n\013hpjgecpcgoj\030\001 \003(\004\"\357\001\n\013LPCBFAKMMDJ\022=\n\013k" +
-      "gihoibciap\030\001 \001(\0132(.POGOProtos.Rpc.Friend" +
-      "shipLevelDataProto\0228\n\013affofpddmmp\030\002 \003(\0132" +
-      "#.POGOProtos.Rpc.GiftBoxDetailsProto\022\023\n\013" +
-      "bemkenlenhj\030\003 \001(\t\022\023\n\013lecobcejkpk\030\004 \001(\t\022\023" +
-      "\n\013mhcghpcbakp\030\005 \001(\003\022\023\n\013bgpkjlipecf\030\006 \001(\010" +
-      "\022\023\n\013nedmajefkbe\030\007 \001(\005\"D\n\037PokemonBulkUpgr" +
-      "adeSettingsProto\022!\n\031enable_client_side_c" +
-      "hange\030\001 \001(\010\"<\n RocketBalloonGlobalSettin" +
-      "gsProto\022\030\n\020min_player_level\030\001 \001(\005\"L\n\013MAI" +
-      "IINICDAA\022\023\n\013mfkgkhdmbpb\030\001 \001(\005\022\023\n\013nkhenfn" +
-      "jjge\030\002 \001(\005\022\023\n\013oekkdajjojn\030\003 \001(\005\"\270\005\n\022Fort" +
-      "DeployOutProto\0229\n\006result\030\001 \001(\0162).POGOPro" +
-      "tos.Rpc.FortDeployOutProto.Result\022C\n\026for" +
-      "t_details_out_proto\030\002 \001(\0132#.POGOProtos.R" +
-      "pc.FortDetailsOutProto\0221\n\013egg_pokemon\030\003 " +
-      "\001(\0132\034.POGOProtos.Rpc.PokemonProto\0226\n\017gym" +
-      "_state_proto\030\004 \001(\0132\035.POGOProtos.Rpc.GymS" +
-      "tateProto\"\266\003\n\006Result\022\021\n\rNO_RESULT_SET\020\000\022" +
-      "\013\n\007SUCCESS\020\001\022%\n!ERROR_ALREADY_HAS_POKEMO" +
-      "N_ON_FORT\020\002\022!\n\035ERROR_OPPOSING_TEAM_OWNS_" +
-      "FORT\020\003\022\026\n\022ERROR_FORT_IS_FULL\020\004\022\026\n\022ERROR_" +
-      "NOT_IN_RANGE\020\005\022\034\n\030ERROR_PLAYER_HAS_NO_TE" +
-      "AM\020\006\022\035\n\031ERROR_POKEMON_NOT_FULL_HP\020\007\022$\n E" +
-      "RROR_PLAYER_BELOW_MINIMUM_LEVEL\020\010\022\032\n\026ERR" +
-      "OR_POKEMON_IS_BUDDY\020\t\022\035\n\031ERROR_FORT_DEPL" +
-      "OY_LOCKOUT\020\n\022 \n\034ERROR_PLAYER_HAS_NO_NICK" +
-      "NAME\020\013\022\032\n\026ERROR_POI_INACCESSIBLE\020\014\022\033\n\027ER" +
-      "ROR_LEGENDARY_POKEMON\020\r\022\031\n\025ERROR_INVALID" +
-      "_POKEMON\020\016\"\200\001\n\025CurrencyQuantityProto\022\023\n\013" +
-      "efkjbabejfn\030\001 \001(\t\022\023\n\013ocdhchampmj\030\002 \001(\005\022\023" +
-      "\n\013oookdofmngg\030\003 \001(\005\022\023\n\013igapjkhefdc\030\004 \001(\t" +
-      "\022\023\n\013lfbeennjkoi\030\005 \001(\003\"G\n\033FortModifierAtt" +
-      "ributesProto\022\023\n\013glkomphbebe\030\001 \001(\005\022\023\n\013hkp" +
-      "dcajhdhe\030\002 \001(\005\"\357\t\n\020PlayerStatsProto\022\023\n\013g" +
-      "kpnheenjoj\030\001 \001(\005\022\023\n\013dmahiojgong\030\002 \001(\003\022\023\n" +
-      "\013pggbpohnbke\030\003 \001(\003\022\023\n\013mnmakddmbag\030\004 \001(\003\022" +
-      "\023\n\013ofofmblglkf\030\005 \001(\002\022\023\n\013komdcifbane\030\006 \001(" +
-      "\005\022\023\n\013kgkpdienjpj\030\007 \001(\005\022\023\n\013endkkopfgjn\030\010 " +
-      "\001(\005\022\023\n\013imcmcblbgon\030\t \001(\005\022\023\n\013bmmeginpdfb\030" +
-      "\n \001(\005\022\023\n\013glhhmimifhd\030\013 \001(\005\022\023\n\013gnkhjobabd" +
-      "g\030\014 \001(\005\022\023\n\013enmjmcdjgon\030\r \001(\005\022\023\n\013pkokdick" +
-      "jah\030\016 \001(\005\022\023\n\013ljaomminhon\030\017 \001(\005\022\023\n\013ipljhm" +
-      "eneji\030\020 \001(\005\022\023\n\013fefjollelbj\030\021 \001(\005\022\023\n\013jfce" +
-      "hhbcgjp\030\022 \001(\005\022\023\n\013nacigecgeoe\030\023 \001(\005\022\023\n\013ec" +
-      "jackdhhke\030\024 \001(\005\022\023\n\013kpocapgpacn\030\025 \001(\005\022\023\n\013" +
-      "dmgeabpifjo\030\026 \003(\005\022\023\n\013dlnmdopeeko\030\027 \001(\005\022\023" +
-      "\n\013kknlldilenb\030\030 \001(\001\022\023\n\013cedjjegommc\030\031 \001(\003" +
-      "\022\023\n\013hgfncacnemh\030\032 \001(\005\022\023\n\013bjmjnmhncpp\030\033 \001" +
-      "(\005\022\023\n\013ekpjalefnmp\030\034 \001(\005\022\023\n\013jkmcegmfngb\030\035" +
-      " \001(\005\022\023\n\013nklaonglfdm\030\036 \001(\005\022\023\n\013maielepphcn" +
-      "\030\037 \001(\003\0222\n\013dagnamgokpc\030  \003(\0162\035.POGOProtos" +
-      ".Rpc.HoloBadgeType\022\023\n\013gpbpdpfokgb\030! \001(\002\022" +
-      "\023\n\013pcehkfmjada\030\" \001(\005\022\023\n\013ghlojimopdf\030# \001(" +
-      "\005\022\023\n\013ibojpkminbe\030$ \001(\005\022\023\n\013mpibpfjlkmk\030% " +
-      "\001(\003\022\023\n\013nbpkpbipbbo\030& \001(\003\022;\n\013ifkgplhgmji\030" +
-      "\' \001(\0132&.POGOProtos.Rpc.PlayerCombatStats" +
-      "Proto\022\023\n\013ngnifpacngg\030( \001(\005\022\023\n\013phcicpnpog" +
-      "b\030) \001(\005\022\023\n\013kkigeokclbe\030* \001(\005\022\023\n\013ppihcoph" +
-      "cba\030+ \001(\005\022\023\n\013kojceccebmf\030, \001(\005\022\023\n\013bchcaa" +
-      "flpia\030/ \001(\005\022\023\n\013peoelhoibgp\0306 \001(\005\022\023\n\013mfil" +
-      "gkbkgoj\0307 \001(\003\022\023\n\013mfenhhciobk\0308 \001(\005\022\023\n\013me" +
-      "kimknhjej\0309 \001(\005\022A\n\013aegclidfeff\030: \001(\0132,.P" +
-      "OGOProtos.Rpc.PlayerStatsProto.JJFKKONEM" +
-      "AM\032L\n\013JJFKKONEMAM\022\023\n\013icplajlgmio\030\001 \001(\005\022\023" +
-      "\n\013dnfchiphndp\030\002 \001(\005\022\023\n\013cbhehhebhbp\030\003 \001(\005" +
-      "\"\337\001\n\024WeatherAffinityProto\022P\n\021weather_con" +
-      "dition\030\001 \001(\01625.POGOProtos.Rpc.GameplayWe" +
-      "atherProto.WeatherCondition\0225\n\014pokemon_t" +
-      "ype\030\002 \003(\0162\037.POGOProtos.Rpc.HoloPokemonTy" +
-      "pe\022>\n\025weakness_pokemon_type\030\003 \003(\0162\037.POGO" +
-      "Protos.Rpc.HoloPokemonType\"\202\003\n\031GetVsSeek" +
-      "erStatusOutProto\022@\n\006result\030\001 \001(\01620.POGOP" +
-      "rotos.Rpc.GetVsSeekerStatusOutProto.Resu" +
-      "lt\022:\n\tvs_seeker\030\002 \001(\0132\'.POGOProtos.Rpc.V" +
-      "sSeekerAttributesProto\022\024\n\014season_ended\030\003" +
-      " \001(\010\0222\n\ncombat_log\030\004 \001(\0132\036.POGOProtos.Rp" +
-      "c.CombatLogProto\"\234\001\n\006Result\022\t\n\005UNSET\020\000\022\031" +
-      "\n\025SUCCESS_FULLY_CHARGED\020\001\022!\n\035SUCCESS_NOT" +
-      "_FULLY_CHARGED_YET\020\002\022\035\n\031ERROR_VS_SEEKER_" +
-      "NOT_FOUND\020\003\022*\n&ERROR_VS_SEEKER_NEVER_STA" +
-      "RTED_CHARGING\020\004\"\247\016\n\013MCEAPJFBCFE\022\023\n\013jkena" +
-      "pdnljb\030\001 \001(\004\022\023\n\013ibgeeoapfoj\030\031 \001(\003\022\023\n\013lnb" +
-      "lklpibde\030\034 \001(\003\022\023\n\013dfidajgjdba\030\035 \001(\003\022\023\n\013k" +
-      "cfmjclhpmd\030\036 \001(\010\022\023\n\013klakafabbeh\030& \001(\005\022\023\n" +
-      "\013ffnpchcienm\030/ \001(\003\022\023\n\013cppkjnmpbkb\0303 \001(\005\022" +
-      "\023\n\013lblljmdbfgo\0304 \001(\005\022\023\n\013nkhenfnjjge\0305 \001(" +
-      "\005\022A\n\013kbfpdfljbig\0306 \003(\0132,.POGOProtos.Rpc." +
-      "MCEAPJFBCFE.KbfpdfljbigEntry\022\023\n\013eipoofej" +
-      "fpc\0307 \001(\003\022\023\n\013jldinacnnjg\0308 \001(\003\022\023\n\013gcegdo" +
-      "pjnea\0309 \001(\002\022\023\n\013felgdfcggdn\030: \001(\003\022\023\n\013gmdj" +
-      "fldmgil\030; \001(\003\022\023\n\013hnhdlffocfb\030< \001(\003\022\023\n\013pb" +
-      "mdmjcdlno\030= \001(\003\022\023\n\013bmdpmmigajj\030> \001(\005\022\023\n\013" +
-      "delmhcomblb\030? \001(\005\022\023\n\013iehiaoofapp\030@ \001(\003\022\023" +
-      "\n\013pebldijnfoc\030A \001(\002\022\023\n\013lolngiojfcm\030B \001(\002" +
-      "\0220\n\013omhbpdpcloj\030C \001(\0132\033.POGOProtos.Rpc.P" +
-      "LNICJBIDMN\0223\n\013nchennmhggm\030D \001(\0132\036.POGOPr" +
-      "otos.Rpc.BuddyGiftProto\022A\n\013oegphmcaenb\030E" +
-      " \003(\0132,.POGOProtos.Rpc.MCEAPJFBCFE.Oegphm" +
-      "caenbEntry\022A\n\013bmlaijcmoek\030F \003(\0132,.POGOPr" +
-      "otos.Rpc.MCEAPJFBCFE.BmlaijcmoekEntry\022A\n" +
-      "\013lhjekkeejha\030G \003(\0132,.POGOProtos.Rpc.MCEA" +
-      "PJFBCFE.LhjekkeejhaEntry\022<\n\013nmcfglckkkl\030" +
-      "H \001(\0132\'.POGOProtos.Rpc.MCEAPJFBCFE.CJLDE" +
-      "IIPBBJ\0228\n\013efpknnlchbc\030I \001(\0132#.POGOProtos" +
-      ".Rpc.PokemonDisplayProto\022\023\n\013oppgolmnndn\030" +
-      "J \001(\010\022\023\n\013lecobcejkpk\030K \001(\t\022\023\n\013hhmlhnefdb" +
-      "c\030L \001(\003\0222\n\013ojacddlcblo\030M \001(\0162\035.POGOProto" +
-      "s.Rpc.HoloPokemonId\022\023\n\013dpcmkifkoch\030N \001(\003" +
-      "\022)\n\013eajohpjbknk\030O \001(\0162\024.POGOProtos.Rpc.I" +
-      "tem\022\023\n\013oboiiljmifi\030P \001(\t\022\023\n\013mjomhbbbldm\030" +
-      "Q \001(\003\022\023\n\013jpneiholigi\030R \001(\t\022\023\n\013nkdadfljhg" +
-      "h\030S \001(\003\022\023\n\013alkclhfggmh\030T \001(\003\022\023\n\013iaeebmnf" +
-      "dic\030U \001(\010\022<\n\013geakgldnkai\030V \001(\0132\'.POGOPro" +
-      "tos.Rpc.MCEAPJFBCFE.CJLDEIIPBBJ\022\023\n\013joapl" +
-      "nmbhnk\030W \001(\005\032\245\001\n\013CJLDEIIPBBJ\022\023\n\013ffnpchci" +
-      "enm\030\001 \001(\003\022M\n\013efgnghnjnmf\030\002 \003(\01328.POGOPro" +
-      "tos.Rpc.MCEAPJFBCFE.CJLDEIIPBBJ.Efgnghnj" +
-      "nmfEntry\0322\n\020EfgnghnjnmfEntry\022\013\n\003key\030\001 \001(" +
-      "\005\022\r\n\005value\030\002 \001(\002:\0028\001\0322\n\020KbfpdfljbigEntry" +
-      "\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002 \001(\003:\0028\001\032Q\n\020Oegp" +
-      "hmcaenbEntry\022\013\n\003key\030\001 \001(\005\022,\n\005value\030\002 \001(\013" +
-      "2\035.POGOProtos.Rpc.SouvenirProto:\0028\001\032U\n\020B" +
-      "mlaijcmoekEntry\022\013\n\003key\030\001 \001(\005\0220\n\005value\030\002 " +
-      "\001(\0132!.POGOProtos.Rpc.DailyCounterProto:\002" +
-      "8\001\032U\n\020LhjekkeejhaEntry\022\013\n\003key\030\001 \001(\005\0220\n\005v" +
-      "alue\030\002 \001(\0132!.POGOProtos.Rpc.DailyCounter" +
-      "Proto:\0028\001\"\302\001\n\013MCKHHLOPEHI\022<\n\013ohdgbilifch" +
-      "\030\001 \001(\0162\'.POGOProtos.Rpc.MCKHHLOPEHI.BDCE" +
-      "NOCJKJB\022\023\n\013dopmejpngoj\030\002 \001(\t\022\023\n\013kpipndlh" +
-      "ghb\030\003 \001(\t\"K\n\013BDCENOCJKJB\022\024\n\020PLATFORM_UNK" +
-      "NOWN\020\000\022\024\n\020PLATFORM_ANDROID\020\001\022\020\n\014PLATFORM" +
-      "_IOS\020\002\"-\n\026DaysWithARowQuestProto\022\023\n\013omoa" +
-      "cbjmbjg\030\001 \001(\005\"7\n\013MDCFCHIHHCM\022\023\n\013hpjgecpc" +
-      "goj\030\001 \003(\004\022\023\n\013pegfachkbdd\030\002 \001(\t\"\'\n\020Sticke" +
-      "rSentProto\022\023\n\013kabbgadinia\030\001 \001(\t\"\"\n\013MDNJE" +
-      "CIJBHM\022\023\n\013pholndomfep\030\001 \001(\010\"\276\001\n\013MDPNLANG" +
-      "MNJ\0222\n\006status\030\001 \001(\0162\".POGOProtos.Rpc.MDP" +
-      "NLANGMNJ.Status\0226\n\013ekinggfmndg\030\002 \001(\0132!.P" +
-      "OGOProtos.Rpc.ClientPlayerProto\"C\n\006Statu" +
-      "s\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\024\n\020TEAM_ALREAD" +
-      "Y_SET\020\002\022\013\n\007FAILURE\020\003\"\"\n\013MEANDFLFKGL\022\023\n\013c" +
-      "lgdnpihbdn\030\001 \003(\t\"\274\001\n\013MECABEODCAI\022\023\n\013gafl" +
-      "lpacbdf\030\001 \001(\t\022<\n\013jhkojebcolb\030\002 \001(\0162\'.POG" +
-      "OProtos.Rpc.CombatPlayerFinishState\022\023\n\013j" +
-      "nojmednlil\030\003 \003(\004\022\023\n\013hdegllgmeih\030\004 \001(\t\0220\n" +
-      "\013ahfemdhnnfk\030\005 \001(\0132\033.POGOProtos.Rpc.HAKJ" +
-      "CJHHHJN\"\372\003\n\013MECGHHCIGAO\0222\n\006status\030\001 \001(\0162" +
-      "\".POGOProtos.Rpc.MECGHHCIGAO.Status\022\023\n\013i" +
-      "olfkfifdma\030\002 \001(\005\022<\n\013nldndpcfdmh\030\003 \003(\0132\'." +
-      "POGOProtos.Rpc.MECGHHCIGAO.JAHELMAJHJN\022\023" +
-      "\n\013eagimidbada\030\005 \001(\t\022\023\n\013apibanmfegp\030\006 \001(\014" +
-      "\0327\n\013JAHELMAJHJN\022\023\n\013ekpohjfklal\030\001 \001(\t\022\023\n\013" +
-      "knbllicccna\030\002 \001(\005\"\200\002\n\006Status\022\022\n\016STATUS_U" +
-      "NKNOWN\020\000\022\022\n\016STATUS_SUCCESS\020\001\022\033\n\027STATUS_A" +
-      "LREADY_REDEEMED\020\002\022!\n\035STATUS_FAILED_INVEN" +
-      "TORY_CHECK\020\003\022\027\n\023STATUS_OUT_OF_RANGE\020\004\022\031\n" +
-      "\025STATUS_WRONG_LOCATION\020\005\022\027\n\023STATUS_RATE_" +
-      "LIMITED\020\006\022\022\n\016STATUS_INVALID\020\007\022\031\n\025STATUS_" +
-      "FULLY_REDEEMED\020\010\022\022\n\016STATUS_EXPIRED\020\t\"7\n\013" +
-      "MFBHAIHCPFD\022\023\n\013mfkgkhdmbpb\030\001 \001(\003\022\023\n\013ohcb" +
-      "beiobnc\030\002 \001(\010\"\344\001\n\020GameMasterField4\022\016\n\006fi" +
-      "eld1\030\001 \001(\t\022)\n\006field2\030\002 \001(\0162\031.POGOProtos." +
-      "Rpc.QuestType\022.\n\006field3\030\003 \003(\0132\036.POGOProt" +
-      "os.Rpc.QuestGoalProto\0222\n\006field4\030\004 \001(\0162\"." +
-      "POGOProtos.Rpc.QuestProto.Context\0221\n\006fie" +
-      "ld5\030\005 \001(\0132!.POGOProtos.Rpc.QuestDisplayP" +
-      "roto\"\"\n\013MGDJCIFNHHB\022\023\n\013ddhpepnnmin\030\001 \001(\005" +
-      "\"\362\002\n\023GiftBoxDetailsProto\022\023\n\013hpjgecpcgoj\030" +
-      "\001 \001(\004\022\023\n\013manbemonlio\030\002 \001(\t\022\023\n\013jjacajcphj" +
-      "d\030\003 \001(\t\022\023\n\013mplnaggcakj\030\004 \001(\t\022\023\n\013focinckf" +
-      "cnb\030\005 \001(\t\022\023\n\013lndigkkjfml\030\006 \001(\t\022\023\n\013fjbfjm" +
-      "hmgom\030\007 \001(\t\022\023\n\013dfngpjpknmp\030\010 \001(\001\022\023\n\013nnen" +
-      "pbhjdgf\030\t \001(\001\022\023\n\013gjkkmmfeebl\030\n \001(\t\022\023\n\013dk" +
-      "jbagmmdjd\030\013 \001(\003\022\023\n\013mckblkfcfha\030\014 \001(\003\022\023\n\013" +
-      "hbpnlfjbmjo\030\r \001(\004\022\023\n\013ofdfiooccbl\030\016 \001(\010\0225" +
-      "\n\013gifoejepgid\030\017 \003(\0132 .POGOProtos.Rpc.Sti" +
-      "ckerSentProto\"\274\001\n\013MGGOBDFAEKK\022\023\n\013fgonpfi" +
-      "bkai\030\001 \001(\t\022\023\n\013ganccamkoba\030\002 \001(\t\0226\n\013fnblb" +
-      "nflejd\030\003 \003(\0132!.POGOProtos.Rpc.BattleActi" +
-      "onProto\0226\n\013jononjhoped\030\004 \001(\0132!.POGOProto" +
-      "s.Rpc.BattleActionProto\022\023\n\013hencndffkoi\030\005" +
-      " \001(\003\"\255\005\n\026GymBattleSettingsProto\022\026\n\016energ" +
-      "y_per_sec\030\001 \001(\002\022\031\n\021dodge_energy_cost\030\002 \001" +
-      "(\002\022\030\n\020retarget_seconds\030\003 \001(\002\022\035\n\025enemy_at" +
-      "tack_interval\030\004 \001(\002\022\036\n\026attack_server_int" +
-      "erval\030\005 \001(\002\022\036\n\026round_duration_seconds\030\006 " +
-      "\001(\002\022#\n\033bonus_time_per_ally_seconds\030\007 \001(\002" +
-      "\022$\n\034maximum_attackers_per_battle\030\010 \001(\005\022)" +
-      "\n!same_type_attack_bonus_multiplier\030\t \001(" +
-      "\002\022\026\n\016maximum_energy\030\n \001(\005\022$\n\034energy_delt" +
-      "a_per_health_lost\030\013 \001(\002\022\031\n\021dodge_duratio" +
-      "n_ms\030\014 \001(\005\022\034\n\024minimum_player_level\030\r \001(\005" +
-      "\022\030\n\020swap_duration_ms\030\016 \001(\005\022&\n\036dodge_dama" +
-      "ge_reduction_percent\030\017 \001(\002\022!\n\031minimum_ra" +
-      "id_player_level\030\020 \001(\005\022.\n&shadow_pokemon_" +
-      "attack_bonus_multiplier\030\021 \001(\002\022/\n\'shadow_" +
-      "pokemon_defense_bonus_multiplier\030\022 \001(\002\0224" +
-      "\n,purified_pokemon_attack_multiplier_vs_" +
-      "shadow\030\023 \001(\002\"\275\001\n\024LoginActionTelemetry\022<\n" +
-      "\013gjdidbfclmn\030\001 \001(\0162\'.POGOProtos.Rpc.Logi" +
-      "nActionTelemetryIds\022\023\n\013cobmdgfbbko\030\002 \001(\010" +
-      "\022\023\n\013pkdofmmahaj\030\003 \001(\010\022\023\n\013eohnbmhpjbe\030\004 \001" +
-      "(\010\022\023\n\013gifeijkgaap\030\005 \001(\t\022\023\n\013fjepflepana\030\006" +
-      " \001(\t\"f\n\030NicknamePokemonTelemetry\0225\n\013baeg" +
-      "lbmdifp\030\001 \001(\0132 .POGOProtos.Rpc.PokemonTe" +
-      "lemetry\022\023\n\013lecobcejkpk\030\002 \001(\t\"A\n\025MegaEvol" +
-      "eSpeciesProto\022\023\n\013keeolgndmfd\030\001 \001(\005\022\023\n\013if" +
-      "hlcjbnopa\030\002 \001(\005\"j\n\013PokemonInfo\0221\n\013baeglb" +
-      "mdifp\030\001 \001(\0132\034.POGOProtos.Rpc.PokemonProt" +
-      "o\022\023\n\013dbfgjppnlgn\030\002 \001(\005\022\023\n\013kjaphihadoa\030\003 " +
-      "\001(\005\":\n\037PokecoinPurchaseDisplayGmtProto\022\027" +
-      "\n\017feature_enabled\030\001 \001(\010\"o\n\033UpsightLoggin" +
-      "gSettingsProto\022\033\n\023use_verbose_logging\030\001 " +
-      "\001(\010\022\032\n\022logging_percentage\030\002 \001(\005\022\027\n\017disab" +
-      "le_logging\030\003 \001(\010\"\213\001\n\013MHNEIDDBNGC\0227\n\006stat" +
-      "us\030\001 \001(\0162\'.POGOProtos.Rpc.DFJBGELCPOL.HB" +
-      "IHKKBLENC\022.\n\013nldndpcfdmh\030\002 \001(\0132\031.POGOPro" +
-      "tos.Rpc.LootProto\022\023\n\013endlkcenbpd\030\003 \001(\010\"\233" +
-      "\001\n\037TemporaryEvolutionResourceProto\022H\n\026te" +
-      "mporary_evolution_id\030\001 \001(\0162(.POGOProtos." +
-      "Rpc.HoloTemporaryEvolutionId\022\024\n\014energy_c" +
-      "ount\030\002 \001(\005\022\030\n\020max_energy_count\030\003 \001(\005\"R\n\036" +
-      "ExperienceBoostAttributesProto\022\025\n\rxp_mul" +
-      "tiplier\030\001 \001(\002\022\031\n\021boost_duration_ms\030\002 \001(\005" +
-      "\"\354\003\n\030PlayerPublicProfileProto\022\014\n\004name\030\001 " +
-      "\001(\t\022\r\n\005level\030\002 \001(\005\0221\n\006avatar\030\003 \001(\0132!.POG" +
-      "OProtos.Rpc.PlayerAvatarProto\022\"\n\004team\030\004 " +
-      "\001(\0162\024.POGOProtos.Rpc.Team\022\023\n\013battles_won" +
-      "\030\005 \001(\005\022\021\n\tkm_walked\030\006 \001(\002\022\026\n\016caught_poke" +
-      "mon\030\007 \001(\005\0224\n\016gym_badge_type\030\010 \001(\0162\034.POGO" +
-      "Protos.Rpc.GymBadgeType\0220\n\006badges\030\t \003(\0132" +
-      " .POGOProtos.Rpc.PlayerBadgeProto\022\022\n\nexp" +
-      "erience\030\n \001(\003\022\032\n\022has_shared_ex_pass\030\013 \001(" +
-      "\010\022\023\n\013combat_rank\030\014 \001(\005\022\025\n\rcombat_rating\030" +
-      "\r \001(\002\022X\n\033timed_group_challenge_stats\030\016 \001" +
-      "(\01323.POGOProtos.Rpc.TimedGroupChallengeP" +
-      "layerStatsProto\"\224\001\n\rGymStateProto\0225\n\013ajg" +
-      "hbigoedn\030\001 \001(\0132 .POGOProtos.Rpc.PokemonF" +
-      "ortProto\0227\n\013naeplcmlgjk\030\002 \003(\0132\".POGOProt" +
-      "os.Rpc.GymMembershipProto\022\023\n\013gegpmijglma" +
-      "\030\003 \001(\010\"\317\001\n\013MJIHINBNKHB\0222\n\006result\030\001 \001(\0162\"" +
-      ".POGOProtos.Rpc.MJIHINBNKHB.Result\022\023\n\013ef" +
-      "kjbabejfn\030\002 \003(\t\022\023\n\013gnohbeajlfj\030\003 \003(\005\022\023\n\013" +
-      "egmjgaaipfn\030\004 \001(\005\"M\n\006Result\022\t\n\005UNSET\020\000\022\013" +
-      "\n\007SUCCESS\020\001\022\013\n\007FAILURE\020\002\022\014\n\010TOO_SOON\020\003\022\020" +
-      "\n\014NO_DEFENDERS\020\004\"\r\n\013MJOGPJFFFML\"\205\004\n\027Mega" +
-      "EvolutionAttributes\022H\n\026temporary_evoluti" +
-      "on_id\030\001 \001(\0162(.POGOProtos.Rpc.HoloTempora" +
-      "ryEvolutionId\022;\n\006field1\030\002 \001(\0132+.POGOProt" +
-      "os.Rpc.PokemonStatsAttributesProto\022\016\n\006fi" +
-      "eld2\030\003 \001(\002\022\016\n\006field3\030\004 \001(\002\022/\n\006field4\030\005 \001" +
-      "(\0162\037.POGOProtos.Rpc.HoloPokemonType\022/\n\006f" +
-      "ield5\030\006 \001(\0162\037.POGOProtos.Rpc.HoloPokemon" +
-      "Type\022\016\n\006field6\030\007 \001(\002\022<\n\006field7\030\010 \001(\0132,.P" +
-      "OGOProtos.Rpc.PokemonCameraAttributesPro" +
-      "to\022?\n\006field8\030\t \001(\0132/.POGOProtos.Rpc.Poke" +
-      "monEncounterAttributesProto\022\016\n\006field9\030\n " +
-      "\001(\002\022\017\n\007field10\030\013 \001(\002\022\017\n\007field11\030\014 \003(\002\022\017\n" +
-      "\007field12\030\r \003(\002\022\017\n\007field13\030\016 \003(\002\"\r\n\013MKIDE" +
-      "AHMDDI\"\225\001\n\013MKIDOABNLJM\0222\n\006result\030\001 \001(\0162\"" +
-      ".POGOProtos.Rpc.MKIDOABNLJM.Result\"R\n\006Re" +
-      "sult\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UN" +
-      "KNOWN\020\002\022\035\n\031ERROR_GIFT_DOES_NOT_EXIST\020\003\"\256" +
-      "\001\n\036LeaveInteractionRangeTelemetry\022\016\n\006res" +
-      "ult\030\001 \001(\t\022\023\n\013lndigkkjfml\030\002 \001(\t\022\023\n\013epejam" +
-      "demjg\030\003 \001(\005\022\023\n\013hnjfcoheadf\030\004 \001(\003\022\023\n\013jmjd" +
-      "himbnmd\030\005 \001(\t\022\023\n\013ebflhicdcnl\030\006 \001(\003\022\023\n\013fi" +
-      "hlhmkkocb\030\007 \001(\t\"\220\002\n$GetGameMasterClientT" +
-      "emplatesOutProto\022K\n\006result\030\001 \001(\0162;.POGOP" +
-      "rotos.Rpc.GetGameMasterClientTemplatesOu" +
-      "tProto.Result\022<\n\005items\030\002 \003(\0132-.POGOProto" +
-      "s.Rpc.GameMasterClientTemplateProto\022\021\n\tt" +
-      "imestamp\030\003 \001(\004\022\023\n\013page_offset\030\004 \001(\005\"5\n\006R" +
-      "esult\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\010\n\004PAGE\020\002\022" +
-      "\t\n\005RETRY\020\003\"\267\001\n\013MLCHGEMGLHO\0222\n\006status\030\001 \001" +
-      "(\0162\".POGOProtos.Rpc.MLCHGEMGLHO.Status\0225" +
-      "\n\013ekfidinfbdd\030\002 \003(\0132 .POGOProtos.Rpc.Que" +
-      "stRewardProto\"=\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SU" +
-      "CCESS\020\001\022\033\n\027ERROR_STILL_IN_PROGRESS\020\002\"\321\004\n" +
-      "\037PokemonEncounterAttributesProto\022\031\n\021base" +
-      "_capture_rate\030\001 \001(\002\022\026\n\016base_flee_rate\030\002 " +
-      "\001(\002\022\032\n\022collision_radius_m\030\003 \001(\002\022\032\n\022colli" +
-      "sion_height_m\030\004 \001(\002\022\037\n\027collision_head_ra" +
-      "dius_m\030\005 \001(\002\022>\n\rmovement_type\030\006 \001(\0162\'.PO" +
-      "GOProtos.Rpc.HoloPokemonMovementType\022\030\n\020" +
-      "movement_timer_s\030\007 \001(\002\022\023\n\013jump_time_s\030\010 " +
-      "\001(\002\022\026\n\016attack_timer_s\030\t \001(\002\022\"\n\032bonus_can" +
-      "dy_capture_reward\030\n \001(\005\022%\n\035bonus_stardus" +
-      "t_capture_reward\030\013 \001(\005\022\032\n\022attack_probabi" +
-      "lity\030\014 \001(\002\022\031\n\021dodge_probability\030\r \001(\002\022\030\n" +
-      "\020dodge_duration_s\030\016 \001(\002\022\026\n\016dodge_distanc" +
-      "e\030\017 \001(\002\022\027\n\017camera_distance\030\020 \001(\002\022&\n\036min_" +
-      "pokemon_action_frequency_s\030\021 \001(\002\022&\n\036max_" +
-      "pokemon_action_frequency_s\030\022 \001(\002\"o\n\013MLKA" +
-      "KFPEEAA\022\023\n\013hdegllgmeih\030\001 \001(\t\022\023\n\013jnojmedn" +
-      "lil\030\002 \003(\004\022!\n\031combat_league_template_id\030\003" +
-      " \001(\t\022\023\n\013dmmcbhcceml\030\004 \001(\003\"x\n\013MLLLPEELHLJ",
-      "\0222\n\006status\030\001 \001(\0162\".POGOProtos.Rpc.MLLLPE" +
-      "ELHLJ.Status\022\023\n\013kgdmpjffpaa\030\002 \001(\003\" \n\006Sta" +
-      "tus\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"\210\001\n\017MegaEvoS" +
-      "ettings\022\"\n\032ob_mega_evolve_duration_ms\030\001 " +
-      "\001(\003\022\025\n\rob_mega_boost\030\002 \001(\002\022\037\n\027ob_mega_sa" +
-      "me_type_boost\030\003 \001(\002\022\031\n\021ob_mega_max_candy" +
-      "\030\004 \001(\005\"?\n\023TeamChangeInfoProto\022\023\n\013fijjckf" +
-      "nbpd\030\001 \001(\003\022\023\n\013hjgjbbiklnl\030\002 \001(\005\"\311\001\n\013MMIF" +
-      "ILDJJNI\022<\n\013jjpcbbceoan\030\001 \003(\0132\'.POGOProto" +
-      "s.Rpc.MMIFILDJJNI.CKFHPPEELBK\032|\n\013CKFHPPE" +
-      "ELBK\022.\n\013ifjdeaplamo\030\001 \001(\0162\031.POGOProtos.R" +
-      "pc.QuestType\022\023\n\013knbllicccna\030\002 \001(\005\022\023\n\013hea" +
-      "eepoemki\030\003 \001(\005\022\023\n\013bgjelpddfej\030\004 \001(\005\"p\n\013M" +
-      "MLENDPLHNA\0227\n\013bambfakddab\030\001 \003(\0162\".POGOPr" +
-      "otos.Rpc.TutorialCompletion\022\023\n\013adapogmoh" +
-      "pd\030\002 \001(\010\022\023\n\013cnpkhiaehpb\030\003 \001(\010\"\241\002\n\023VsSeek" +
-      "erSetLogEntry\022:\n\006result\030\001 \001(\0162*.POGOProt" +
-      "os.Rpc.VsSeekerSetLogEntry.Result\022.\n\013nld" +
-      "ndpcfdmh\030\002 \001(\0132\031.POGOProtos.Rpc.LootProt" +
-      "o\022\023\n\013mgfbndphaij\030\003 \001(\005\022\023\n\013bcieidchgpi\030\004 " +
-      "\001(\002\022\023\n\013dlpjojfhjbf\030\005 \001(\005\022\023\n\013bffonlogccd\030" +
-      "\006 \001(\002\022\023\n\013dofhdajpbnd\030\007 \001(\005\022\023\n\013bfmllpobpc" +
-      "b\030\010 \001(\005\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020" +
-      "\001\"a\n\013MNHABHJMOFB\022\023\n\013dckmpdbdgca\030\001 \001(\t\022\023\n" +
-      "\013jhnakgfohgd\030\002 \001(\003\022\023\n\013phiabghihcc\030\003 \001(\001\022" +
-      "\023\n\013icmnhajccaa\030\004 \001(\001\"\337\002\n\013MNJKKBCBNCJ\0222\n\006" +
-      "result\030\001 \001(\0162\".POGOProtos.Rpc.MNJKKBCBNC" +
-      "J.Result\0221\n\013baeglbmdifp\030\002 \001(\0132\034.POGOProt" +
-      "os.Rpc.PokemonProto\022<\n\013dbianmbmnch\030\003 \001(\013" +
-      "2\'.POGOProtos.Rpc.CaptureProbabilityProt" +
-      "o\022)\n\013iiadjbboilm\030\004 \001(\0162\024.POGOProtos.Rpc." +
-      "Item\022\023\n\013bleeccpijbi\030\005 \001(\005\"k\n\006Result\022\t\n\005U" +
-      "NSET\020\000\022\013\n\007SUCCESS\020\001\022\032\n\026NO_ENCOUNTER_AVAI" +
-      "LABLE\020\002\022\032\n\026POKEMON_INVENTORY_FULL\020\003\022\021\n\rE" +
-      "RROR_UNKNOWN\020\004\"\237\001\n\023QuestStampCardProto\0224" +
-      "\n\013phcdogbllok\030\001 \003(\0132\037.POGOProtos.Rpc.Que" +
-      "stStampProto\022\023\n\013heaeepoemki\030\002 \001(\005\022\023\n\013efm" +
-      "loggmbic\030\003 \001(\005\022\023\n\013mjlofidknme\030\004 \001(\t\022\023\n\013p" +
-      "ekopdofdpi\030\005 \001(\t\"w\n\013MOCEFKIMKND\022)\n\013pgknp" +
-      "daambd\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022\023\n\013ln" +
-      "digkkjfml\030\002 \001(\t\022\023\n\013nlblgfioeic\030\003 \001(\001\022\023\n\013" +
-      "ojnmcebeede\030\004 \001(\001\"B\n\020NewsSettingProto\022.\n" +
-      "\013news_protos\030\001 \003(\0132\031.POGOProtos.Rpc.News" +
-      "Proto\"8\n\013MOELCGCALLH\022)\n\013jakcnoogihe\030\001 \001(" +
-      "\0162\024.POGOProtos.Rpc.Item\"\317\002\n\022Participatio" +
-      "nProto\022\023\n\013pmbpnlogogp\030\001 \001(\005\022\023\n\013ckikbiaoe" +
-      "kn\030\002 \001(\005\022\023\n\013mncohkoobgg\030\003 \001(\005\022\023\n\013ibifpgc" +
-      "hdnb\030\004 \001(\005\022\023\n\013nokiepcepjj\030\005 \001(\001\022\023\n\013chdli" +
-      "fcfhnf\030\006 \001(\001\022\023\n\013gbaeccojknk\030\007 \001(\001\022\023\n\013leb" +
-      "peihlioa\030\010 \001(\002\022=\n\013gmfmholhdcg\030\t \001(\0162(.PO" +
-      "GOProtos.Rpc.FriendshipLevelMilestone\022\023\n" +
-      "\013bfmbhagnmlk\030\n \001(\005\022\023\n\013dacpijoliaa\030\013 \001(\005\022" +
-      "\023\n\013kginnakkjem\030\014 \001(\005\022\023\n\013logngdbhagp\030\r \001(" +
-      "\010\"N\n\032TradingGlobalSettingsProto\022\026\n\016enabl" +
-      "e_trading\030\001 \001(\010\022\030\n\020min_player_level\030\002 \001(" +
-      "\r\"\244\004\n\022FortSearchLogEntry\0229\n\006result\030\001 \001(\016" +
-      "2).POGOProtos.Rpc.FortSearchLogEntry.Res" +
-      "ult\022\023\n\013lndigkkjfml\030\002 \001(\t\022.\n\013nikdphgligk\030" +
-      "\003 \003(\0132\031.POGOProtos.Rpc.ItemProto\022\023\n\013melp" +
-      "oanpbfo\030\004 \001(\005\0221\n\013npejhkhkdjb\030\005 \003(\0132\034.POG" +
-      "OProtos.Rpc.PokemonProto\022-\n\013epejamdemjg\030" +
-      "\006 \001(\0162\030.POGOProtos.Rpc.FortType\022.\n\013pfcgf" +
-      "ghpdej\030\007 \003(\0132\031.POGOProtos.Rpc.ItemProto\022" +
-      ".\n\013efihohfandk\030\010 \003(\0132\031.POGOProtos.Rpc.It" +
-      "emProto\022.\n\013lbplolgfmgl\030\t \003(\0132\031.POGOProto" +
-      "s.Rpc.ItemProto\0221\n\013acoaapjfnmf\030\n \003(\0132\034.P" +
-      "OGOProtos.Rpc.GiftBoxProto\0222\n\013ndpchbinof" +
-      "o\030\013 \003(\0132\035.POGOProtos.Rpc.LootItemProto\" " +
-      "\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"\375\002\n\027Map" +
-      "DisplaySettingsProto\022H\n\013ebmfdpicopk\030\001 \001(" +
-      "\01623.POGOProtos.Rpc.MapDisplaySettingsPro" +
-      "to.BJHCLHNPAHC\022\023\n\013hjdoikolepc\030\002 \001(\t\"\202\002\n\013" +
-      "BJHCLHNPAHC\022\017\n\013EFFECT_NONE\020\000\022\031\n\025EFFECT_C" +
-      "ONFETTI_BASIC\020\001\022\030\n\024EFFECT_CONFETTI_FIRE\020" +
-      "\002\022\031\n\025EFFECT_CONFETTI_WATER\020\003\022\031\n\025EFFECT_C" +
-      "ONFETTI_GRASS\020\004\022\037\n\033EFFECT_CONFETTI_RAID_" +
-      "BATTLE\020\005\022\036\n\032EFFECT_CONFETTI_FRIENDSHIP\020\006" +
-      "\022\032\n\026EFFECT_CONFETTI_ROCKET\020\007\022\032\n\026EFFECT_F" +
-      "IREWORKS_PLAIN\020\010\"\"\n\013MPFODCPMPNG\022\023\n\013cjkog" +
-      "hlphmo\030\001 \001(\004\"\367\002\n\027ArdkConfigSettingsProto" +
-      "\022\025\n\rorb_vocab_url\030\001 \001(\t\022\033\n\023monodpeth_mod" +
-      "el_url\030\002 \001(\t\022\031\n\021monodepth_devices\030\003 \003(\t\022" +
-      "M\n\022monodepth_contexts\030\004 \003(\01621.POGOProtos" +
-      ".Rpc.ArdkConfigSettingsProto.ArContext\022\037" +
-      "\n\027ios_monodepth_model_url\030\005 \001(\t\022#\n\033andro" +
-      "id_monodepth_model_url\030\006 \001(\t\022\016\n\006field1\030\007" +
-      " \001(\t\"h\n\tArContext\022\t\n\005UNSET\020\000\022\020\n\014AR_ENCOU" +
-      "NTER\020\001\022\017\n\013AR_SNAPSHOT\020\002\022\026\n\022SINGLEPLAYER_" +
-      "BUDDY\020\003\022\025\n\021MULTIPLAYER_BUDDY\020\004\"?\n\013NADKJK" +
-      "ECNCP\0220\n\013oabjdogklgo\030\001 \001(\0132\033.POGOProtos." +
-      "Rpc.CHLLKNMFHLC\"\234\001\n\027PokeBallAttributesPr" +
-      "oto\0223\n\013item_effect\030\001 \001(\0162\036.POGOProtos.Rp" +
-      "c.HoloItemEffect\022\025\n\rcapture_multi\030\002 \001(\002\022" +
-      "\034\n\024capture_multi_effect\030\003 \001(\002\022\027\n\017item_ef" +
-      "fect_mod\030\004 \001(\002\"d\n\023ExRaidSettingsProto\022M\n" +
-      "\033minimum_ex_raid_share_level\030\001 \001(\0162(.POG" +
-      "OProtos.Rpc.FriendshipLevelMilestone\"\304\002\n" +
-      "\rRaidInfoProto\022\023\n\013pdaldoafaaj\030\001 \001(\003\022\023\n\013d" +
-      "kdibbicjlc\030\002 \001(\003\022\023\n\013jnjolgjodki\030\003 \001(\003\022\023\n" +
-      "\013malnooknokf\030\004 \001(\003\0221\n\013jmobphmmoef\030\005 \001(\0132" +
-      "\034.POGOProtos.Rpc.PokemonProto\022.\n\013kchphja" +
-      "dgne\030\006 \001(\0162\031.POGOProtos.Rpc.RaidLevel\022\023\n" +
-      "\013mlpcljceecg\030\007 \001(\010\022\023\n\013jhfphdpjjjl\030\010 \001(\010\022" +
-      "\023\n\013gcgdmmcgpkh\030\t \001(\010\022\023\n\013jccngbnbjhh\030\n \001(" +
-      "\010\022\023\n\013ndkpcpdfejj\030\013 \001(\010\022\023\n\013fihlhmkkocb\030\014 " +
-      "\001(\t\"7\n\013NCCLGHGDLBD\022\023\n\013fpodljnbpbo\030\001 \001(\010\022" +
-      "\023\n\013dhdmbahehko\030\002 \001(\010\"\377\001\n\"CombatChallenge" +
-      "GlobalSettingsProto\022Z\n(distance_check_ov" +
-      "erride_friendship_level\030\001 \001(\0162(.POGOProt" +
-      "os.Rpc.FriendshipLevelMilestone\0221\n)get_c" +
-      "ombat_challenge_polling_interval_sec\030\002 \001" +
-      "(\005\022\"\n\032enable_downstream_dispatch\030\003 \001(\010\022&" +
-      "\n\036enable_challenge_notifications\030\004 \001(\010\"\355" +
-      "\001\n\013NCGMJHIKGBJ\0222\n\006result\030\001 \001(\0162\".POGOPro" +
-      "tos.Rpc.NCGMJHIKGBJ.Result\0223\n\013nikdphglig" +
-      "k\030\002 \003(\0132\036.POGOProtos.Rpc.AwardItemProto\022" +
-      ")\n\013gkgamkdfegl\030\004 \003(\0162\024.POGOProtos.Rpc.It" +
-      "em\022\023\n\013ckkpmkmhgbg\030\005 \003(\t\"5\n\006Result\022\t\n\005UNS" +
-      "ET\020\000\022\013\n\007SUCCESS\020\001\022\023\n\017AWARDED_ALREADY\020\002\"\215" +
-      "\001\n\'ReadPointOfInterestDescriptionTelemet" +
-      "ry\022\016\n\006result\030\001 \001(\t\022\023\n\013lndigkkjfml\030\002 \001(\t\022" +
-      "\023\n\013epejamdemjg\030\003 \001(\005\022\023\n\013jmjdhimbnmd\030\004 \001(" +
-      "\t\022\023\n\013fihlhmkkocb\030\005 \001(\t\"\254\003\n\017AwardedGymBad" +
-      "ge\022\017\n\007fort_id\030\001 \001(\t\0224\n\016gym_badge_type\030\002 " +
-      "\001(\0162\034.POGOProtos.Rpc.GymBadgeType\022\r\n\005sco" +
-      "re\030\003 \001(\r\0226\n\017gym_badge_stats\030\004 \001(\0132\035.POGO" +
-      "Protos.Rpc.GymBadgeStats\022 \n\030last_update_" +
-      "timestamp_ms\030\005 \001(\004\022\037\n\027last_check_timesta" +
-      "mp_ms\030\013 \001(\004\022\025\n\rearned_points\030\014 \001(\r\022\020\n\010pr" +
-      "ogress\030\r \001(\002\022\020\n\010level_up\030\016 \001(\010\022\014\n\004name\030\017" +
-      " \001(\t\022\021\n\timage_url\030\020 \001(\t\022\023\n\013description\030\021" +
-      " \001(\t\022\020\n\010latitude\030\022 \001(\001\022\021\n\tlongitude\030\023 \001(" +
-      "\001\0222\n\005raids\030\024 \001(\0132#.POGOProtos.Rpc.Player" +
-      "RaidInfoProto\"L\n\013NDMMCIHLLDK\022\023\n\013mjlofidk" +
-      "nme\030\001 \001(\t\022\023\n\013phiabghihcc\030\002 \001(\001\022\023\n\013icmnha" +
-      "jccaa\030\003 \001(\001\"\321\001\n\013NDPMJGJPEGP\022-\n\013laihnnalj" +
-      "pj\030\001 \001(\0162\030.POGOProtos.Rpc.Platform\022\023\n\013ag" +
-      "jadkbcfpk\030\002 \001(\t\022\023\n\013dopmejpngoj\030\003 \001(\t\022\023\n\013" +
-      "ddhmpoicike\030\004 \001(\t\022\023\n\013hbjjgpclhnj\030\005 \001(\r\022*" +
-      "\n\013mkdeggcnlmj\030\006 \001(\0162\025.POGOProtos.Rpc.Sto" +
-      "re\022\023\n\013kpipndlhghb\030\007 \001(\t\"\272\005\n\013NDPPOEGFDEO\022" +
-      "\023\n\013fnigehkhdok\030\001 \001(\t\022<\n\013oncfelcoobg\030\003 \001(" +
-      "\0132\'.POGOProtos.Rpc.PHKHKKDLIND.ONDPNMCPB" +
-      "FN\022\023\n\013giapmbkabee\030\004 \001(\t\022<\n\013bieiipenjan\030\005" +
-      " \003(\0132\'.POGOProtos.Rpc.NDPPOEGFDEO.CEDAMJ" +
-      "OFHJJ\032\204\004\n\013CEDAMJOFHJJ\022\023\n\013joajgniomff\030\001 \001" +
-      "(\t\022H\n\013odfhmadechp\030\002 \001(\01623.POGOProtos.Rpc" +
-      ".NDPPOEGFDEO.CEDAMJOFHJJ.BPAAGHBABHD\"\225\003\n" +
-      "\013BPAAGHBABHD\022\t\n\005UNSET\020\000\022\022\n\016ADVENTURE_SYN" +
-      "C\020\001\022\t\n\005BUDDY\020\002\022\021\n\rCANDY_GENERAL\020\003\022\007\n\003EGG" +
-      "\020\004\022\021\n\rEGG_INCUBATOR\020\005\022\016\n\nEVENT_MOVE\020\006\022\r\n" +
-      "\tEVOLUTION\020\007\022\022\n\016FIELD_RESEARCH\020\010\022\016\n\nFRIE" +
-      "NDSHIP\020\t\022\010\n\004GIFT\020\n\022\013\n\007INCENSE\020\013\022\r\n\tLUCKY" +
-      "_EGG\020\014\022\017\n\013LURE_MODULE\020\r\022\r\n\tPHOTOBOMB\020\016\022\014" +
-      "\n\010POKESTOP\020\017\022\010\n\004RAID\020\020\022\r\n\tRAID_PASS\020\021\022\021\n" +
-      "\rSPAWN_UNKNOWN\020\022\022\016\n\nSTAR_PIECE\020\023\022\014\n\010STAR" +
-      "DUST\020\024\022\017\n\013TEAM_ROCKET\020\025\022\t\n\005TRADE\020\026\022\022\n\016TR" +
-      "ANSFER_CANDY\020\027\022\n\n\006BATTLE\020\030\022\006\n\002XP\020\031\022\010\n\004SH" +
-      "OP\020\032\"c\n\013NEIMPPILPLC\022)\n\013ekpohjfklal\030\001 \001(\016" +
-      "2\024.POGOProtos.Rpc.Item\022)\n\013nbpfkgpfhpc\030\002 " +
-      "\001(\0162\024.POGOProtos.Rpc.Team\"E\n\013NEKEEHDNPDL" +
-      "\022!\n\031combat_league_template_id\030\001 \001(\t\022\023\n\013j" +
-      "nojmednlil\030\002 \003(\004\"\r\n\013NEKHHLJGNCG\"\"\n\013NENCG" +
-      "NDEOOF\022\023\n\013liolpilecbj\030\001 \001(\005\"\265\001\n\013NEODGFME" +
-      "IIK\022\023\n\013pdaldoafaaj\030\001 \001(\003\022\023\n\013fgonpfibkai\030" +
-      "\002 \001(\t\022\023\n\013jkpcajihcao\030\003 \003(\005\022\023\n\013nlblgfioei" +
-      "c\030\004 \001(\001\022\023\n\013ojnmcebeede\030\005 \001(\001\022\023\n\013olfnggme" +
-      "fal\030\006 \001(\001\022\023\n\013aocfljninfi\030\007 \001(\001\022\023\n\013jkgpgg" +
-      "hegjl\030\010 \001(\t\"S\n%BuddyMultiplayerConnectio" +
-      "nFailedProto\022\023\n\013test_number\030\001 \001(\005\022\025\n\rres" +
-      "ponse_time\030\002 \001(\003\"8\n\013NFCEMINHDFC\022)\n\013ekpoh" +
-      "jfklal\030\001 \001(\0162\024.POGOProtos.Rpc.Item\"\374\002\n\013N" +
-      "FFAMDHEHBD\0222\n\006result\030\001 \001(\0162\".POGOProtos." +
-      "Rpc.NFFAMDHEHBD.Result\0221\n\013baeglbmdifp\030\002 " +
-      "\001(\0132\034.POGOProtos.Rpc.PokemonProto\022<\n\013dbi" +
-      "anmbmnch\030\003 \001(\0132\'.POGOProtos.Rpc.CaptureP" +
-      "robabilityProto\022)\n\013iiadjbboilm\030\004 \001(\0162\024.P" +
-      "OGOProtos.Rpc.Item\022\023\n\013bleeccpijbi\030\005 \001(\005\"" +
-      "\207\001\n\006Result\022\035\n\031INCENSE_ENCOUNTER_UNKNOWN\020" +
-      "\000\022\035\n\031INCENSE_ENCOUNTER_SUCCESS\020\001\022#\n\037INCE" +
-      "NSE_ENCOUNTER_NOT_AVAILABLE\020\002\022\032\n\026POKEMON" +
-      "_INVENTORY_FULL\020\003\"\332\004\n\027RaidClientSettings" +
-      "Proto\022\033\n\023remote_raid_enabled\030\001 \001(\010\022\036\n\026ma" +
-      "x_remote_raid_passes\030\002 \001(\005\022\036\n\026remote_dam" +
-      "age_modifier\030\003 \001(\002\022%\n\035remote_raids_min_p" +
-      "layer_level\030\004 \001(\005\022\036\n\026max_num_friend_invi" +
-      "tes\030\005 \001(\005\022%\n\035friend_invite_cutoff_time_s" +
-      "ec\030\006 \001(\005\022$\n\034can_invite_friends_in_person" +
-      "\030\007 \001(\010\022#\n\033can_invite_friends_remotely\030\010 " +
-      "\001(\010\022\035\n\025max_players_per_lobby\030\t \001(\005\022$\n\034ma" +
-      "x_remote_players_per_lobby\030\n \001(\005\022\'\n\037invi" +
-      "te_cooldown_duration_millis\030\013 \001(\003\022)\n!max" +
-      "_num_friend_invites_per_action\030\014 \001(\005\022M\n*" +
-      "unsupported_raid_levels_for_friend_invit" +
-      "es\030\r \003(\0162\031.POGOProtos.Rpc.RaidLevel\022A\n\036u" +
-      "nsupported_remote_raid_levels\030\016 \003(\0162\031.PO" +
-      "GOProtos.Rpc.RaidLevel\"\"\n\013NFKCBMCFLAG\022\023\n" +
-      "\013hdegllgmeih\030\001 \001(\t\"\304\001\n\013NGABJFEGLFB\0222\n\006re" +
-      "sult\030\001 \001(\0162\".POGOProtos.Rpc.NGABJFEGLFB." +
-      "Result\"\200\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020" +
-      "\001\022\026\n\022STILL_IN_COOL_DOWN\020\002\022\021\n\rBUDDY_NOT_S" +
-      "ET\020\003\022\030\n\024ERROR_INVENTORY_FULL\020\004\022\031\n\025ERROR_" +
-      "NO_REMOTE_GIFTS\020\005\"\\\n\013NGGKKLCENMI\022\023\n\013pkdo" +
-      "fmmahaj\030\001 \001(\010\0228\n\013hmalajofklh\030\002 \001(\0132#.POG" +
-      "OProtos.Rpc.InventoryDeltaProto\"+\n\024Proje" +
-      "ctVacationProto\022\023\n\013ifdecpmcmal\030\001 \001(\010\"\223\006\n" +
-      "\013NIEDDLOEAAN\0222\n\006result\030\001 \001(\0162\".POGOProto" +
-      "s.Rpc.NIEDDLOEAAN.Result\022?\n\013oknapplbpbk\030" +
-      "\002 \001(\0132*.POGOProtos.Rpc.GymStatusAndDefen" +
-      "dersProto\0224\n\013eoilecekhdn\030\003 \001(\0132\037.POGOPro" +
-      "tos.Rpc.AwardedGymBadge\022\023\n\013nimjbiippjj\030\004" +
-      " \001(\003\"\303\004\n\006Result\022\021\n\rNO_RESULT_SET\020\000\022\013\n\007SU" +
-      "CCESS\020\001\022%\n!ERROR_ALREADY_HAS_POKEMON_ON_" +
-      "FORT\020\002\022!\n\035ERROR_OPPOSING_TEAM_OWNS_FORT\020" +
-      "\003\022\026\n\022ERROR_FORT_IS_FULL\020\004\022\026\n\022ERROR_NOT_I" +
-      "N_RANGE\020\005\022\034\n\030ERROR_PLAYER_HAS_NO_TEAM\020\006\022" +
-      "\035\n\031ERROR_POKEMON_NOT_FULL_HP\020\007\022$\n ERROR_" +
-      "PLAYER_BELOW_MINIMUM_LEVEL\020\010\022\032\n\026ERROR_PO" +
-      "KEMON_IS_BUDDY\020\t\022\035\n\031ERROR_FORT_DEPLOY_LO" +
-      "CKOUT\020\n\022 \n\034ERROR_PLAYER_HAS_NO_NICKNAME\020" +
-      "\013\022\032\n\026ERROR_POI_INACCESSIBLE\020\014\022\027\n\023ERROR_N" +
-      "OT_A_POKEMON\020\r\022\037\n\033ERROR_TOO_MANY_OF_SAME" +
-      "_KIND\020\016\022\033\n\027ERROR_TOO_MANY_DEPLOYED\020\017\022\035\n\031" +
-      "ERROR_TEAM_DEPLOY_LOCKOUT\020\020\022\033\n\027ERROR_LEG" +
-      "ENDARY_POKEMON\020\021\022\031\n\025ERROR_INVALID_POKEMO" +
-      "N\020\022\022\025\n\021ERROR_RAID_ACTIVE\020\023\"\262\003\n\023CameraSet" +
-      "tingsProto\022\023\n\013next_camera\030\001 \001(\t\022:\n\rinter" +
-      "polation\030\002 \003(\0162#.POGOProtos.Rpc.CameraIn" +
-      "terpolation\0221\n\013target_type\030\003 \003(\0162\034.POGOP" +
-      "rotos.Rpc.CameraTarget\022\025\n\rease_in_speed\030" +
-      "\004 \003(\002\022\026\n\016ease_out_speed\030\005 \003(\002\022\022\n\nduratio" +
-      "n_s\030\006 \003(\002\022\016\n\006wait_s\030\007 \003(\002\022\024\n\014transition_" +
-      "s\030\010 \003(\002\022\021\n\tangle_deg\030\t \003(\002\022\030\n\020angle_offs" +
-      "et_deg\030\n \003(\002\022\021\n\tpitch_deg\030\013 \003(\002\022\030\n\020pitch" +
-      "_offset_deg\030\014 \003(\002\022\020\n\010roll_deg\030\r \003(\002\022\022\n\nd" +
-      "istance_m\030\016 \003(\002\022\026\n\016height_percent\030\017 \003(\002\022" +
-      "\026\n\016vert_ctr_ratio\030\020 \003(\002\"Z\n\013NJFCCKPILHH\022\023" +
-      "\n\013pkdofmmahaj\030\001 \001(\010\0226\n\013ekinggfmndg\030\002 \001(\013" +
-      "2!.POGOProtos.Rpc.ClientPlayerProto\"C\n\027P" +
-      "okemonCombatStatsProto\022\023\n\013ekaiopmhgkb\030\001 " +
-      "\001(\005\022\023\n\013cebfafgmdhp\030\002 \001(\005\"\"\n\013NJMIBDMILHG\022" +
-      "\023\n\013hbolnchnlli\030\001 \003(\t\"p\n\016BuddyGiftProto\022/" +
-      "\n\010souvenir\030\001 \001(\0132\035.POGOProtos.Rpc.Souven" +
-      "irProto\022-\n\nloot_proto\030\002 \001(\0132\031.POGOProtos" +
-      ".Rpc.LootProto\"\376\003\n\013NMENNOCENFN\0222\n\006result" +
-      "\030\001 \001(\0162\".POGOProtos.Rpc.NMENNOCENFN.Resu" +
-      "lt\0229\n\013oafocnchncd\030\002 \001(\0132$.POGOProtos.Rpc" +
-      ".CombatChallengeProto\"\377\002\n\006Result\022\t\n\005UNSE" +
-      "T\020\000\022\013\n\007SUCCESS\020\001\022!\n\035ERROR_INVALID_CHALLE" +
-      "NGE_STATE\020\002\022\035\n\031ERROR_CHALLENGE_NOT_FOUND" +
-      "\020\003\022\"\n\036ERROR_POKEMON_NOT_IN_INVENTORY\020\004\022\035" +
-      "\n\031ERROR_NOT_ELIGIBLE_LEAGUE\020\005\022$\n ERROR_P" +
-      "LAYER_BELOW_MINIMUM_LEVEL\020\006\022\032\n\026ERROR_ALR" +
-      "EADY_TIMEDOUT\020\010\022\033\n\027ERROR_ALREADY_CANCELL" +
-      "ED\020\t\022\032\n\026ERROR_FRIEND_NOT_FOUND\020\n\022%\n!ERRO" +
-      "R_FAILED_TO_SEND_NOTIFICATION\020\013\022\027\n\023ERROR" +
-      "_ACCESS_DENIED\020\014\022\035\n\031ERROR_INELIGIBLE_OPP" +
-      "ONENT\020\r\"s\n\031PokemonInventoryTelemetry\022A\n\013" +
-      "eomdlpijolk\030\001 \001(\0162,.POGOProtos.Rpc.Pokem" +
-      "onInventoryTelemetryIds\022\023\n\013lhjpgpjpgpd\030\002" +
-      " \001(\t\"\205\t\n\027ArMappingTelemetryProto\022Y\n\027ar_m" +
-      "apping_telemetry_id\030\001 \001(\01628.POGOProtos.R" +
-      "pc.ArMappingTelemetryProto.ArMappingEven" +
-      "tId\022K\n\006source\030\002 \001(\0162;.POGOProtos.Rpc.ArM" +
-      "appingTelemetryProto.ArMappingEntryPoint" +
-      "\022 \n\030recording_length_seconds\030\003 \001(\002\022\034\n\024ti" +
-      "me_elapsed_seconds\030\004 \001(\002\022\027\n\017percent_enco" +
-      "ded\030\005 \001(\002\022\027\n\017data_size_bytes\030\006 \001(\003\022>\n\006re" +
-      "ason\030\007 \001(\0162..POGOProtos.Rpc.ArMappingTel" +
-      "emetryProto.Reason\"\247\001\n\023ArMappingEntryPoi" +
-      "nt\022\021\n\rUNKNOWN_ENTRY\020\000\022\021\n\rPOI_EDIT_MENU\020\001" +
-      "\022\022\n\016POI_EDIT_TITLE\020\002\022\030\n\024POI_EDIT_DESCRIP" +
-      "TION\020\003\022\021\n\rPOI_ADD_PHOTO\020\004\022\025\n\021POI_EDIT_LO" +
-      "CATION\020\005\022\022\n\016POI_NOMINATION\020\006\"F\n\006Reason\022\022" +
-      "\n\016UNKNOWN_REASON\020\000\022\014\n\010TOO_FAST\020\001\022\014\n\010TOO_" +
-      "SLOW\020\002\022\014\n\010TOO_DARK\020\003\"\235\004\n\020ArMappingEventI" +
-      "d\022\013\n\007UNKNOWN\020\000\022\017\n\013ENTER_STATE\020\001\022\021\n\rOPT_I" +
-      "N_ACCEPT\020\002\022\017\n\013OPT_IN_DENY\020\003\022\023\n\017OPT_IN_SE" +
-      "TTINGS\020\004\022\024\n\020OPT_OUT_SETTINGS\020\005\022\027\n\023EXIT_F" +
-      "ROM_RECORDING\020\006\022\023\n\017START_RECORDING\020\007\022\022\n\016" +
-      "STOP_RECORDING\020\010\022\023\n\017CANCEL_ENCODING\020\t\022\016\n" +
-      "\nUPLOAD_NOW\020\n\022\020\n\014UPLOAD_LATER\020\013\022\021\n\rCANCE" +
-      "L_UPLOAD\020\014\022\031\n\025START_UPLOAD_SETTINGS\020\r\022\022\n" +
-      "\016UPLOAD_SUCCESS\020\016\022\025\n\021OPT_IN_LEARN_MORE\020\017" +
-      "\022\025\n\021EXIT_FROM_PREVIEW\020\020\022%\n!SUBMIT_POI_AR" +
-      "_VIDEO_METADATA_FAIL\020\021\022\022\n\016UPLOAD_FAILURE" +
-      "\020\022\022\034\n\030UPLOAD_LATER_WIFI_PROMPT\020\023\022\017\n\013CLEA" +
-      "R_SCANS\020\024\022\023\n\017OPEN_INFO_PANEL\020\025\022\027\n\023RESCAN" +
-      "_FROM_PREVIEW\020\026\022\033\n\027SCAN_VALIDATION_FAILU" +
-      "RE\020\027\"|\n\022QuestSettingsProto\022-\n\nquest_type" +
-      "\030\001 \001(\0162\031.POGOProtos.Rpc.QuestType\0227\n\013dai" +
-      "ly_quest\030\002 \001(\0132\".POGOProtos.Rpc.DailyQue" +
-      "stSettings\"\257\004\n\025BuddyStatsShownHearts\022&\n\036" +
-      "buddy_affection_km_in_progress\030\001 \001(\002\022o\n\037" +
-      "buddy_shown_hearts_per_category\030\002 \003(\0132F." +
-      "POGOProtos.Rpc.BuddyStatsShownHearts.Bud" +
-      "dyShownHeartsPerCategoryEntry\022+\n\006field1\030" +
-      "\003 \001(\0132\033.POGOProtos.Rpc.PEKJNHJPJIB\032r\n\024Bu" +
-      "ddyShownHeartsList\022Z\n\027buddy_shown_heart_" +
-      "types\030\001 \003(\01629.POGOProtos.Rpc.BuddyStatsS" +
-      "hownHearts.BuddyShownHeartType\032~\n BuddyS" +
-      "hownHeartsPerCategoryEntry\022\013\n\003key\030\001 \001(\005\022" +
-      "I\n\005value\030\002 \001(\0132:.POGOProtos.Rpc.BuddySta" +
-      "tsShownHearts.BuddyShownHeartsList:\0028\001\"\\" +
-      "\n\023BuddyShownHeartType\022\025\n\021BUDDY_HEART_UNS" +
-      "ET\020\000\022\026\n\022BUDDY_HEART_SINGLE\020\001\022\026\n\022BUDDY_HE" +
-      "ART_DOUBLE\020\002\"L\n\013NNHPOEPICBH\022\023\n\013higpjcjkk" +
-      "np\030\001 \001(\002\022\023\n\013deblblfgnci\030\002 \001(\002\022\023\n\013jknoafe" +
-      "fdma\030\003 \001(\010\"\330\005\n\026EncounterSettingsProto\022\034\n" +
-      "\024spin_bonus_threshold\030\001 \001(\002\022!\n\031excellent" +
-      "_throw_threshold\030\002 \001(\002\022\035\n\025great_throw_th" +
-      "reshold\030\003 \001(\002\022\034\n\024nice_throw_threshold\030\004 " +
-      "\001(\002\022\033\n\023milestone_threshold\030\005 \001(\005\022\034\n\024ar_p" +
-      "lus_mode_enabled\030\006 \001(\010\022$\n\034ar_close_proxi" +
-      "mity_threshold\030\007 \001(\002\022\"\n\032ar_low_awareness" +
-      "_threshold\030\010 \001(\002\022%\n\035ar_close_proximity_m" +
-      "ultiplier\030\t \001(\002\022&\n\036ar_awareness_penalty_" +
-      "threshold\030\n \001(\002\022\'\n\037ar_low_awareness_max_" +
-      "multiplier\030\013 \001(\002\0220\n(ar_high_awareness_mi" +
-      "n_penalty_multiplier\030\014 \001(\002\022\'\n\037ar_plus_at" +
-      "tempts_until_flee_max\030\r \001(\005\022,\n$ar_plus_a" +
-      "ttempts_until_flee_infinite\030\016 \001(\005\022$\n\034esc" +
-      "aped_bonus_multiplier_max\030\017 \001(\002\0223\n+escap" +
-      "ed_bonus_multiplier_by_excellent_throw\030\020" +
-      " \001(\002\022/\n\'escaped_bonus_multiplier_by_grea" +
-      "t_throw\030\021 \001(\002\022.\n&escaped_bonus_multiplie" +
-      "r_by_nice_throw\030\022 \001(\002\"\240\001\n\013NOGKCBLADHN\022/\n" +
-      "\013gnkgaimjkch\030\001 \001(\0162\032.POGOProtos.Rpc.Comb" +
-      "atType\022\023\n\013alflaepafnn\030\002 \001(\t\022!\n\031combat_le" +
-      "ague_template_id\030\003 \001(\t\022\023\n\013ibmcmgndmha\030\004 " +
-      "\001(\t\022\023\n\013jnojmednlil\030\005 \003(\004\"m\n\032RpcSocketRes" +
-      "ponseTelemetry\022\023\n\013hiieifaflgl\030\001 \001(\002\022:\n\013d" +
-      "lhoflgdgip\030\002 \003(\0132%.POGOProtos.Rpc.RpcSoc" +
-      "ketResponseTime\"S\n\031NotificationSettingsP" +
-      "roto\022\032\n\022pull_notifications\030\001 \001(\010\022\032\n\022show" +
-      "_notifications\030\002 \001(\010\"\255\001\n\rGymBadgeStats\022\023" +
-      "\n\013eolaajofkdj\030\001 \001(\004\022\023\n\013hchkhnldmbh\030\002 \001(\r" +
-      "\022\023\n\013kpkbmolbiki\030\005 \001(\r\022\023\n\013nklaonglfdm\030\017 \001" +
-      "(\r\022\023\n\013pnaekdcnnmk\030\020 \001(\r\0223\n\013fdhnjelbilf\030\021" +
-      " \003(\0132\036.POGOProtos.Rpc.GymBattleProto\".\n\021" +
-      "BuddySwapSettings\022\031\n\021max_swaps_per_day\030\001" +
-      " \001(\005\"\300\001\n\036CompleteQuestStampCardLogEntry\022" +
-      "E\n\006result\030\001 \001(\01625.POGOProtos.Rpc.Complet" +
-      "eQuestStampCardLogEntry.Result\0225\n\013ekfidi" +
-      "nfbdd\030\002 \003(\0132 .POGOProtos.Rpc.QuestReward" +
-      "Proto\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"" +
-      "\314\004\n\022BattleResultsProto\0220\n\tgym_state\030\001 \001(" +
-      "\0132\035.POGOProtos.Rpc.GymStateProto\0229\n\tatta" +
-      "ckers\030\002 \003(\0132&.POGOProtos.Rpc.BattleParti" +
-      "cipantProto\022\031\n\021player_xp_awarded\030\003 \003(\005\022 " +
-      "\n\030next_defender_pokemon_id\030\004 \001(\003\022\030\n\020gym_" +
-      "points_delta\030\005 \001(\005\022>\n\ngym_status\030\006 \001(\0132*" +
-      ".POGOProtos.Rpc.GymStatusAndDefendersPro" +
-      "to\0229\n\rparticipation\030\007 \003(\0132\".POGOProtos.R" +
-      "pc.ParticipationProto\0224\n\021raid_item_rewar" +
-      "ds\030\010 \003(\0132\031.POGOProtos.Rpc.LootProto\022?\n\023p" +
-      "ost_raid_encounter\030\t \003(\0132\".POGOProtos.Rp" +
-      "c.RaidEncounterProto\0222\n\tgym_badge\030\n \003(\0132" +
-      "\037.POGOProtos.Rpc.AwardedGymBadge\022<\n\031defa" +
-      "ult_raid_item_rewards\030\013 \003(\0132\031.POGOProtos" +
-      ".Rpc.LootProto\022\016\n\006field1\030\014 \001(\003\"\"\n\013OAJAOJ" +
-      "GAAOH\022\023\n\013kcbcpdfdkel\030\001 \001(\005\"\217\002\n\034Telemetry" +
-      "GlobalSettingsProto\022\017\n\007enabled\030\001 \001(\010\022!\n\031" +
-      "session_sampling_fraction\030\002 \001(\001\022\032\n\022max_b" +
-      "uffer_size_kb\030\003 \001(\005\022\022\n\nbatch_size\030\004 \001(\005\022" +
-      "\032\n\022update_interval_ms\030\005 \001(\003\022%\n\035frame_rat" +
-      "e_sample_interval_ms\030\006 \001(\003\022#\n\033frame_rate" +
-      "_sample_period_ms\030\007 \001(\003\022#\n\033enable_omni_w" +
-      "rapper_sending\030\010 \001(\010\"\357\003\n\021CombatActionPro" +
-      "to\022:\n\004type\030\001 \001(\0162,.POGOProtos.Rpc.Combat" +
-      "ActionProto.ActionType\022\031\n\021action_start_t" +
-      "urn\030\003 \001(\005\022\026\n\016duration_turns\030\005 \001(\005\022\026\n\016att" +
-      "acker_index\030\006 \001(\005\022\024\n\014target_index\030\007 \001(\005\022" +
-      "\031\n\021active_pokemon_id\030\010 \001(\006\022\031\n\021target_pok" +
-      "emon_id\030\016 \001(\006\022\026\n\016minigame_score\030\017 \001(\002\022\014\n" +
-      "\004move\030\020 \001(\005\"\340\001\n\nActionType\022\t\n\005UNSET\020\000\022\n\n" +
-      "\006ATTACK\020\001\022\022\n\016SPECIAL_ATTACK\020\002\022\024\n\020SPECIAL" +
-      "_ATTACK_2\020\003\022\035\n\031MINIGAME_OFFENSIVE_FINISH" +
-      "\020\004\022\034\n\030MINIGAME_DEFENSIVE_START\020\005\022\035\n\031MINI" +
-      "GAME_DEFENSIVE_FINISH\020\006\022\t\n\005FAINT\020\007\022\022\n\016CH" +
-      "ANGE_POKEMON\020\010\022\026\n\022QUICK_SWAP_POKEMON\020\t\"\251" +
-      "\001\n\034CrossGameSocialSettingsProto\022,\n$onlin" +
-      "e_status_enabled_override_level\030\001 \001(\010\022.\n" +
-      "&niantic_profile_enabled_override_level\030" +
-      "\002 \001(\010\022+\n#friends_list_enabled_override_l" +
-      "evel\030\003 \001(\010\"\266\017\n\014TradingProto\022>\n\013jlnijhmem" +
-      "nj\030\001 \001(\0162).POGOProtos.Rpc.TradingProto.T" +
-      "radingState\022\023\n\013hklepofbgjd\030\002 \001(\004\022D\n\013ekin" +
-      "ggfmndg\030\003 \001(\0132/.POGOProtos.Rpc.TradingPr" +
-      "oto.TradingPlayerProto\022D\n\013hbiplhopbem\030\004 " +
-      "\001(\0132/.POGOProtos.Rpc.TradingProto.Tradin" +
-      "gPlayerProto\022\023\n\013kedajlomokb\030\005 \001(\003\022\023\n\013dak" +
-      "cmdojgah\030\006 \001(\t\022=\n\013kgihoibciap\030\007 \001(\0132(.PO" +
-      "GOProtos.Rpc.FriendshipLevelDataProto\022\023\n" +
-      "\013ffnjcpogkfo\030\010 \001(\010\022=\n\013canjjmlgidn\030\t \001(\0132" +
-      "(.POGOProtos.Rpc.FriendshipLevelDataProt" +
-      "o\032\352\006\n\022TradingPlayerProto\022\023\n\013pegfachkbdd\030" +
-      "\001 \001(\t\022=\n\013jeenccbbffk\030\002 \001(\0132(.POGOProtos." +
-      "Rpc.PlayerPublicProfileProto\022T\n\013bejmgpni" +
-      "hjo\030\003 \003(\0132?.POGOProtos.Rpc.TradingProto.",
-      "TradingPlayerProto.ExcludedPokemon\022E\n\013oh" +
-      "lneacoaal\030\004 \001(\01320.POGOProtos.Rpc.Trading" +
-      "Proto.TradingPokemonProto\022.\n\013jmklabelhpa" +
-      "\030\005 \001(\0132\031.POGOProtos.Rpc.LootProto\022.\n\013jff" +
-      "pmhjafhi\030\006 \001(\0132\031.POGOProtos.Rpc.LootProt" +
-      "o\022\023\n\013jdfomocafmo\030\007 \001(\010\022\023\n\013jmhkolaoonl\030\010 " +
-      "\001(\010\032\330\003\n\017ExcludedPokemon\022\023\n\013mfkgkhdmbpb\030\001" +
-      " \001(\004\022d\n\013oikmnkppcpe\030\002 \001(\0162O.POGOProtos.R" +
-      "pc.TradingProto.TradingPlayerProto.Exclu" +
-      "dedPokemon.ExclusionReason\"\311\002\n\017Exclusion" +
-      "Reason\022\t\n\005UNSET\020\000\022\024\n\020MYTHICAL_POKEMON\020\001\022" +
-      "\013\n\007SLASHED\020\002\022\020\n\014GYM_DEPLOYED\020\003\022\t\n\005BUDDY\020" +
-      "\004\022\024\n\020STAMINA_NOT_FULL\020\005\022\023\n\017EGG_NOT_HATCH" +
-      "ED\020\006\022\030\n\024FRIENDSHIP_LEVEL_LOW\020\007\022\030\n\024FRIEND" +
-      "_CANNOT_AFFORD\020\010\022\036\n\032FRIEND_REACHED_DAILY" +
-      "_LIMIT\020\t\022\022\n\016ALREADY_TRADED\020\n\022\030\n\024PLAYER_C" +
-      "ANNOT_AFFORD\020\013\022\036\n\032PLAYER_REACHED_DAILY_L" +
-      "IMIT\020\014\022\014\n\010FAVORITE\020\r\022\020\n\014TEMP_EVOLVED\020\016\032\274" +
-      "\004\n\023TradingPokemonProto\022\023\n\013mfkgkhdmbpb\030\001 " +
-      "\001(\004\022\023\n\013ojacddlcblo\030\002 \001(\005\022\023\n\013bekadmipkjo\030" +
-      "\003 \001(\005\022\023\n\013aejalgbbcnb\030\004 \001(\005\022\023\n\013jnhdglogal" +
-      "a\030\005 \001(\005\022\023\n\013ocndmiddgbe\030\006 \001(\005\022\023\n\013kanpgdme" +
-      "ijo\030\007 \001(\005\022\023\n\013ddlapfkfgmb\030\010 \001(\005\022\023\n\013hgmcan" +
-      "nfhoh\030\t \001(\010\022\023\n\013gpohdhbnacg\030\n \001(\005\022\023\n\013kndo" +
-      "pccmkin\030\013 \001(\005\0228\n\013efpknnlchbc\030\014 \001(\0132#.POG" +
-      "OProtos.Rpc.PokemonDisplayProto\022\023\n\013hhmlh" +
-      "nefdbc\030\r \001(\003\0221\n\013dlaabmcgeno\030\016 \001(\0132\034.POGO" +
-      "Protos.Rpc.PokemonProto\022)\n\013eajohpjbknk\030\017" +
-      " \001(\0162\024.POGOProtos.Rpc.Item\022\023\n\013gijnbmdfmo" +
-      "g\030\020 \001(\005\022\023\n\013jlcebfglean\030\021 \001(\005\022\023\n\013meakfplp" +
-      "bof\030\022 \001(\005\022\023\n\013lecobcejkpk\030\023 \001(\t\022\023\n\013dghbbd" +
-      "inbed\030\024 \001(\010\022\023\n\013agdlchgaokn\030\025 \001(\005\022\023\n\013ppgh" +
-      "khaiopn\030\026 \001(\003\"\\\n\014TradingState\022\t\n\005UNSET\020\000" +
-      "\022\016\n\nPRIMORDIAL\020\001\022\010\n\004WAIT\020\002\022\n\n\006ACTIVE\020\003\022\r" +
-      "\n\tCONFIRMED\020\004\022\014\n\010FINISHED\020\005\"7\n\013OBFACMAML" +
-      "GJ\022\023\n\013dpnibkogejm\030\001 \001(\t\022\023\n\013pfckmcdejid\030\002" +
-      " \001(\t\"\347\004\n\013OBFGGMFMJDB\022B\n\017view_impression\030" +
-      "\005 \001(\0132\'.POGOProtos.Rpc.OBFGGMFMJDB.BGHJD" +
-      "DLHGGIH\000\022B\n\017view_fullscreen\030\006 \001(\0132\'.POGO" +
-      "Protos.Rpc.OBFGGMFMJDB.IHKIGNHEDIFH\000\022I\n\026" +
-      "fullscreen_interaction\030\007 \001(\0132\'.POGOProto" +
-      "s.Rpc.OBFGGMFMJDB.GHOJJMMAHHHH\000\022>\n\013cta_c" +
-      "licked\030\010 \001(\0132\'.POGOProtos.Rpc.OBFGGMFMJD" +
-      "B.KCDEHFBMGFOH\000\022\023\n\013ofbemkhhaej\030\001 \001(\t\022\023\n\013" +
-      "fhpekmphfng\030\002 \001(\t\022\023\n\013mnlpnfkiiji\030\003 \001(\t\022\023" +
-      "\n\013dbfmaclhflp\030\004 \001(\014\0327\n\013BGHJDDLHGGI\022\023\n\013gp" +
-      "cifiialcg\030\001 \001(\t\022\023\n\013nodmahnlblm\030\002 \001(\010\032a\n\013" +
-      "GHOJJMMAHHH\022\023\n\013kcjofcekfmc\030\001 \001(\t\022\023\n\013gjij" +
-      "bihggda\030\002 \001(\003\022\023\n\013aglmndomcmp\030\003 \001(\003\022\023\n\013np" +
-      "fhggdiafk\030\004 \001(\010\032\"\n\013IHKIGNHEDIF\022\023\n\013kcjofc" +
-      "ekfmc\030\001 \001(\t\032\"\n\013KCDEHFBMGFO\022\023\n\013beejcmmcjb" +
-      "j\030\006 \001(\tB\r\n\013KADFOKKBPAE\"9\n\027WithPokemonCpL" +
-      "imitProto\022\016\n\006min_cp\030\001 \001(\005\022\016\n\006max_cp\030\002 \001(" +
-      "\005\".\n\034NewGlobalSettingsField1Proto\022\016\n\006fie" +
-      "ld1\030\001 \001(\010\"a\n\013OCEHPKFLIDM\022\023\n\013nbdceigglkm\030" +
-      "\001 \001(\t\022\023\n\013pegfachkbdd\030\002 \001(\t\022\023\n\013efiibeicbo" +
-      "b\030\003 \001(\t\022\023\n\013fmidiibcmlp\030\004 \001(\t\"\213\001\n\013OCFODHN" +
-      "MCGA\022\023\n\013fgonpfibkai\030\001 \001(\t\022\023\n\013jnojmednlil" +
-      "\030\002 \003(\004\022\023\n\013hmafiedcjfn\030\003 \001(\004\022\023\n\013nlblgfioe" +
-      "ic\030\004 \001(\001\022\023\n\013ojnmcebeede\030\005 \001(\001\022\023\n\013dmmcbhc" +
-      "ceml\030\006 \001(\003\"\205\002\n\013OCOCAJGAGHE\0222\n\006result\030\001 \001" +
-      "(\0162\".POGOProtos.Rpc.OCOCAJGAGHE.Result\0222" +
-      "\n\013mfkgkhdmbpb\030\002 \001(\0162\035.POGOProtos.Rpc.Hol" +
-      "oPokemonId\"\215\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCC" +
-      "ESS\020\001\022\026\n\022INVALID_POKEMON_ID\020\002\022\r\n\tNO_PLAY" +
-      "ER\020\003\022\023\n\017WRONG_ITEM_TYPE\020\004\022\031\n\025ITEM_NOT_IN" +
-      "_INVENTORY\020\005\022\024\n\020NOT_ENOUGH_ITEMS\020\006\"\320\001\n\023R" +
-      "emoteRaidTelemetry\022;\n\013bddmbaphdbd\030\001 \001(\0162" +
-      "&.POGOProtos.Rpc.RemoteRaidTelemetryIds\022" +
-      "9\n\013cielkbcdjkp\030\002 \001(\0162$.POGOProtos.Rpc.Re" +
-      "moteRaidJoinSource\022A\n\013bjofhgjbphc\030\003 \001(\0162" +
-      ",.POGOProtos.Rpc.RemoteRaidInviteAcceptS" +
-      "ource\"\236\001\n\013ODENGIIEGNB\022<\n\013bklinghmhki\030\001 \001" +
-      "(\0162\'.POGOProtos.Rpc.ODENGIIEGNB.FKIEEGMA" +
-      "KNA\022\023\n\013gkbagaidnki\030\002 \001(\014\"<\n\013FKIEEGMAKNA\022" +
-      "\t\n\005UNSET\020\000\022\n\n\006STAGE1\020\001\022\n\n\006STAGE2\020\002\022\n\n\006ST" +
-      "AGE3\020\003\"A\n\013ODMCOONGGLN\0222\n\013ccllgcclgof\030\001 \001" +
-      "(\0162\035.POGOProtos.Rpc.HoloBadgeType\"D\n\013ODO" +
-      "FIDFCDGP\0225\n\006result\030\001 \001(\0162%.POGOProtos.Rp" +
-      "c.ShareExRaidPassResult\"~\n\013OEFEGPKJFFO\0220" +
-      "\n\013ppeddbekbbk\030\001 \001(\0132\033.POGOProtos.Rpc.LDD" +
-      "MBFHHMFD\022\023\n\013mlghifehoah\030\002 \001(\014\022\023\n\013aknjeke" +
-      "fdol\030\003 \003(\t\022\023\n\013cebkcoodeca\030\004 \001(\t\"\243\001\n\013OEJH" +
-      "BCPHJEA\0222\n\006status\030\001 \001(\0162\".POGOProtos.Rpc" +
-      ".OEJHBCPHJEA.Status\"`\n\006Status\022\t\n\005UNSET\020\000" +
-      "\022\013\n\007SUCCESS\020\001\022\031\n\025ERROR_QUEST_NOT_FOUND\020\002" +
-      "\022#\n\037ERROR_STORY_QUEST_NOT_REMOVABLE\020\003\"T\n" +
-      "\026PoiGlobalSettingsProto\022\022\n\nis_enabled\030\001 " +
-      "\001(\010\022&\n\036player_submission_type_enabled\030\002 " +
-      "\003(\t\"\344\002\n\013OFINDDKNDGB\0220\n\013cnebdbnmgok\030\001 \001(\013" +
-      "2\033.POGOProtos.Rpc.LAKEAGGMIEH\022\023\n\013mnmgifh" +
-      "ddom\030\002 \001(\005\0220\n\013ngeinljamhn\030\003 \003(\0132\033.POGOPr" +
-      "otos.Rpc.JECFCNLMCBE\022\023\n\013bhjkkgagklk\030\004 \001(" +
-      "\010\022<\n\013mdlogobnbgi\030\005 \001(\0162\'.POGOProtos.Rpc." +
-      "OFINDDKNDGB.IJCCEGIKHNL\022\023\n\013dmmcbhcceml\030\006" +
-      " \001(\003\0220\n\013ahfemdhnnfk\030\007 \001(\0132\033.POGOProtos.R" +
-      "pc.HAKJCJHHHJN\"B\n\013IJCCEGIKHNL\022\022\n\016POKEMON" +
-      "_HEALTH\020\000\022\016\n\nWIN_BATTLE\020\001\022\017\n\013LOSE_BATTLE" +
-      "\020\002\"\"\n\013OGAGADHKAFO\022\023\n\013pegfachkbdd\030\001 \001(\t\"X" +
-      "\n\033IncidentGlobalSettingsProto\022\030\n\020min_pla" +
-      "yer_level\030\001 \001(\005\022\037\n\027min_player_level_for_" +
-      "v2\030\002 \001(\005\"\376\004\n\013OGCCIGDOBBD\022\023\n\013mfkgkhdmbpb\030" +
-      "\001 \001(\004\0222\n\013kcbcpdfdkel\030\002 \001(\0162\035.POGOProtos." +
-      "Rpc.HoloPokemonId\0228\n\013efpknnlchbc\030\003 \001(\0132#" +
-      ".POGOProtos.Rpc.PokemonDisplayProto\022\023\n\013o" +
-      "ppgolmnndn\030\004 \001(\010\022\023\n\013lecobcejkpk\030\005 \001(\t\022\023\n" +
-      "\013hhmlhnefdbc\030\006 \001(\003\022\023\n\013dpcmkifkoch\030\007 \001(\003\022" +
-      ")\n\013eajohpjbknk\030\010 \001(\0162\024.POGOProtos.Rpc.It" +
-      "em\022/\n\013bcnfhogkjfj\030\t \001(\0132\032.POGOProtos.Rpc" +
-      ".BuddyStats\022\023\n\013cppkjnmpbkb\030\n \001(\005\022\023\n\013lnbl" +
-      "klpibde\030\013 \001(\003\022\023\n\013dfidajgjdba\030\014 \001(\003\022\023\n\013kl" +
-      "akafabbeh\030\r \001(\005\022\023\n\013kcfmjclhpmd\030\016 \001(\010\022\023\n\013" +
-      "oboiiljmifi\030\017 \001(\t\022\023\n\013mjomhbbbldm\030\020 \001(\003\022A" +
-      "\n\013oegphmcaenb\030\021 \003(\0132,.POGOProtos.Rpc.OGC" +
-      "CIGDOBBD.OegphmcaenbEntry\022\023\n\013hiclhmgkeef" +
-      "\030\022 \001(\002\032Q\n\020OegphmcaenbEntry\022\013\n\003key\030\001 \001(\005\022" +
-      ",\n\005value\030\002 \001(\0132\035.POGOProtos.Rpc.Souvenir" +
-      "Proto:\0028\001\"\300\002\n\013OGGPBLLLJMD\0222\n\006result\030\001 \001(" +
-      "\0162\".POGOProtos.Rpc.OGGPBLLLJMD.Result\0226\n" +
-      "\013mifmmmlipdf\030\002 \001(\0132!.POGOProtos.Rpc.Batt" +
-      "leUpdateProto\0224\n\013hdinlbkpiel\030\003 \001(\0132\037.POG" +
-      "OProtos.Rpc.AwardedGymBadge\"\216\001\n\006Result\022\t" +
-      "\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022 \n\034ERROR_INVALID_" +
-      "ATTACK_ACTIONS\020\002\022\026\n\022ERROR_NOT_IN_RANGE\020\003" +
-      "\022\033\n\027ERROR_WRONG_BATTLE_TYPE\020\004\022\025\n\021ERROR_R" +
-      "AID_ACTIVE\020\005\"T\n\013OGOCDKMPPHG\0220\n\013aipjokjmb" +
-      "ne\030\001 \001(\0132\033.POGOProtos.Rpc.JPICNIPDGLJ\022\023\n" +
-      "\013jcclegeojij\030\002 \001(\010\"b\n\013OGOEPHICKMB\022)\n\013ekp" +
-      "ohjfklal\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022\023\n\013" +
-      "ckniekbneoe\030\002 \001(\004\022\023\n\013jemhdponkih\030\003 \001(\t\"\321" +
-      "\001\n\013OHALDJNFOEM\022\023\n\013fgonpfibkai\030\001 \001(\t\022\023\n\013g" +
-      "anccamkoba\030\002 \001(\t\0226\n\013fnblbnflejd\030\003 \003(\0132!." +
-      "POGOProtos.Rpc.BattleActionProto\0226\n\013jono" +
-      "njhoped\030\004 \001(\0132!.POGOProtos.Rpc.BattleAct" +
-      "ionProto\022\023\n\013nlblgfioeic\030\005 \001(\001\022\023\n\013ojnmceb" +
-      "eede\030\006 \001(\001\"\315\002\n\013OHIJOMIHHJO\0222\n\006result\030\001 \001" +
-      "(\0162\".POGOProtos.Rpc.OHIJOMIHHJO.Result\0229" +
-      "\n\013oafocnchncd\030\002 \001(\0132$.POGOProtos.Rpc.Com" +
-      "batChallengeProto\022\023\n\013ncelfjmmhdj\030\003 \001(\t\"\271" +
-      "\001\n\006Result\022\t\n\005UNSET\020\000\022\032\n\026SUCCESS_OPPONENT" +
-      "_FOUND\020\001\022\022\n\016SUCCESS_QUEUED\020\002\022\037\n\033SUCCESS_" +
-      "NOT_MATCHED_EXPIRED\020\003\022\032\n\026ERROR_PLAYER_NO" +
-      "T_FOUND\020\004\022\031\n\025ERROR_QUEUE_NOT_FOUND\020\005\022\034\n\030" +
-      "ERROR_RETRY_UNSUCCESSFUL\020\006\"S\n\025BelugaInce" +
-      "nseBoxProto\022\021\n\tis_usable\030\001 \001(\010\022\'\n\037cool_d" +
-      "own_finished_timestamp_ms\030\002 \001(\003\"T\n\013OHKPH" +
-      "LGMBCC\0220\n\013cnebdbnmgok\030\001 \001(\0132\033.POGOProtos" +
-      ".Rpc.LAKEAGGMIEH\022\023\n\013mnmgifhddom\030\002 \001(\005\"@\n" +
-      "\024ContactSettingsProto\022\023\n\013adapogmohpd\030\001 \001" +
-      "(\010\022\023\n\013cnpkhiaehpb\030\002 \001(\010\"\207\003\n\013OIAKMNKAFEK\022" +
-      "2\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.OIAKMNK" +
-      "AFEK.Result\0221\n\013jikkdljggho\030\002 \001(\0132\034.POGOP" +
-      "rotos.Rpc.TradingProto\"\220\002\n\006Result\022\t\n\005UNS" +
-      "ET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\032\n\026" +
-      "ERROR_FRIEND_NOT_FOUND\020\003\022\033\n\027ERROR_INVALI" +
-      "D_PLAYER_ID\020\004\022\027\n\023ERROR_INVALID_STATE\020\005\022\027" +
-      "\n\023ERROR_STATE_HANDLER\020\006\022\031\n\025ERROR_INVALID" +
-      "_POKEMON\020\007\022\036\n\032ERROR_INSUFFICIENT_PAYMENT" +
-      "\020\010\022\031\n\025ERROR_TRADING_EXPIRED\020\t\022\032\n\026ERROR_T" +
-      "RADING_FINISHED\020\n\"2\n\027AdventureSyncV2GmtP" +
-      "roto\022\027\n\017feature_enabled\030\001 \001(\010\"\027\n\025WithWea" +
-      "therBoostProto\"\240\001\n\013OIMPBKKLILD\0222\n\006result" +
-      "\030\001 \001(\0162\".POGOProtos.Rpc.OIMPBKKLILD.Resu" +
-      "lt\0220\n\013kkcmdhieakn\030\002 \003(\0132\033.POGOProtos.Rpc" +
-      ".OGCCIGDOBBD\"+\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUC" +
-      "CESS\020\001\022\t\n\005ERROR\020\002\"m\n\021FormSettingsProto\022." +
-      "\n\007pokemon\030\001 \001(\0162\035.POGOProtos.Rpc.HoloPok" +
-      "emonId\022(\n\005forms\030\002 \003(\0132\031.POGOProtos.Rpc.F" +
-      "ormProto\".\n\030EvolutionV2SettingsProto\022\022\n\n" +
-      "is_enabled\030\001 \001(\010\"7\n\013OIPAOFPLBIO\022\023\n\013mfkgk" +
-      "hdmbpb\030\001 \001(\004\022\023\n\013lnijopfoind\030\002 \001(\005\"\222\001\n\025In" +
-      "ventoryUpgradeProto\022)\n\013ekpohjfklal\030\001 \001(\016" +
-      "2\024.POGOProtos.Rpc.Item\0229\n\013gfckejncokb\030\002 " +
-      "\001(\0162$.POGOProtos.Rpc.InventoryUpgradeTyp" +
-      "e\022\023\n\013bmkcaloggjo\030\003 \001(\005\"T\n\022BadgeCaptureRe" +
-      "ward\022!\n\031capture_reward_multiplier\030\001 \001(\002\022" +
-      "\033\n\023avatar_template_ids\030\002 \003(\t\"\370\002\n\030CombatP" +
-      "layerProfileProto\022\021\n\tplayer_id\030\001 \001(\t\022@\n\016" +
-      "public_profile\030\002 \001(\0132(.POGOProtos.Rpc.Pl" +
-      "ayerPublicProfileProto\022!\n\031combat_league_" +
-      "template_id\030\003 \003(\t\022\030\n\020buddy_pokemon_id\030\004 " +
-      "\001(\006\022C\n\010location\030\005 \001(\01321.POGOProtos.Rpc.C" +
-      "ombatPlayerProfileProto.Location\022O\n\031comb" +
-      "at_player_preferences\030\006 \001(\0132,.POGOProtos" +
-      ".Rpc.CombatPlayerPreferencesProto\0324\n\010Loc" +
-      "ation\022\023\n\013nehgecafhii\030\001 \001(\001\022\023\n\013agpcbldpoj" +
-      "i\030\002 \001(\001\"L\n\013OJOAONNAPCJ\022\023\n\013hencndffkoi\030\001 " +
-      "\001(\003\022\023\n\013ieflaighpgg\030\002 \001(\001\022\023\n\013mmggfpheimi\030" +
-      "\003 \001(\001\"D\n\tFrameRate\0227\n\013keanhoahmim\030\001 \001(\0132" +
-      "\".POGOProtos.Rpc.PlatformMetricData\"\030\n\026W" +
-      "ithUniquePokemonProto\"L\n\013OLHJKHLKFEK\022\023\n\013" +
-      "pdaldoafaaj\030\001 \001(\003\022\023\n\013fgonpfibkai\030\002 \001(\t\022\023" +
-      "\n\013jkpcajihcao\030\003 \003(\005\"\265\003\n\013OMBADCOPDMD\0222\n\006s" +
-      "tatus\030\001 \001(\0162\".POGOProtos.Rpc.OMBADCOPDMD" +
-      ".Status\022\023\n\013emmphdgkoej\030\002 \001(\005\022.\n\013hphkghmn" +
-      "kdf\030\003 \001(\0132\031.POGOProtos.Rpc.LootProto\0220\n\013" +
-      "elhmhoimejk\030\004 \001(\0132\033.POGOProtos.Rpc.PFPJG" +
-      "DJKEKH\022\023\n\013plhmmjhfkfp\030\005 \001(\005\"\345\001\n\006Status\022\t" +
-      "\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\n\n\006FAILED\020\002\022\034\n\030ER" +
-      "ROR_INVALID_POKEMON_ID\020\003\022\032\n\026ERROR_POKEMO" +
-      "N_DEPLOYED\020\004\022\035\n\031ERROR_POKEMON_NOT_ALLOWE" +
-      "D\020\005\022\032\n\026ERROR_POKEMON_IS_BUDDY\020\006\022 \n\034ERROR" +
-      "_INVALID_TRANSACTION_ID\020\007\022 \n\034ERROR_MISSI" +
-      "NG_TRANSACTION_ID\020\010\"\"\n\013OMELPMNEODN\022\023\n\013mb" +
-      "opgfdlmol\030\001 \001(\014\"\r\n\013OMEMJPLFBLE\"s\n\020Curren" +
-      "tNewsProto\0225\n\013mikebichmmb\030\001 \003(\0132 .POGOPr" +
-      "otos.Rpc.NewsArticleProto\022\023\n\013mnbiflmoefh" +
-      "\030\002 \001(\t\022\023\n\013jkieikflajk\030\003 \001(\003\"\226\002\n\021BattleUp" +
-      "dateProto\0222\n\nbattle_log\030\001 \001(\0132\036.POGOProt" +
-      "os.Rpc.BattleLogProto\022\021\n\tbattle_id\030\002 \001(\t" +
-      "\0224\n\017active_defender\030\003 \001(\0132\033.POGOProtos.R" +
-      "pc.PokemonInfo\0224\n\017active_attacker\030\004 \001(\0132" +
-      "\033.POGOProtos.Rpc.PokemonInfo\022N\n\034highest_" +
-      "friendship_milestone\030\005 \001(\0162(.POGOProtos." +
-      "Rpc.FriendshipLevelMilestone\"M\n\013ONICENHD" +
-      "NKM\022\023\n\013kejgnkefgpc\030\001 \001(\003\022)\n\013iinabpngfcm\030" +
-      "\002 \003(\0162\024.POGOProtos.Rpc.Item\"\245\001\n\026Monodept" +
-      "hSettingsProto\022\031\n\021enable_occlusions\030\001 \001(" +
-      "\010\022\035\n\025occlusions_default_on\030\002 \001(\010\022!\n\031occl" +
-      "usions_toggle_visible\030\003 \001(\010\022\016\n\006field1\030\004 " +
-      "\001(\010\022\016\n\006field2\030\005 \001(\002\022\016\n\006field3\030\006 \001(\r\"\236\003\n\023" +
-      "PokemonCreateDetail\0222\n\013wild_detail\030\001 \001(\013" +
-      "2\033.POGOProtos.Rpc.MDNJECIJBHMH\000\0221\n\negg_d" +
-      "etail\030\002 \001(\0132\033.POGOProtos.Rpc.KOCCEDPIKAD" +
-      "H\000\0222\n\013raid_detail\030\003 \001(\0132\033.POGOProtos.Rpc" +
-      ".DMJDGCPJFEGH\000\0223\n\014quest_detail\030\004 \001(\0132\033.P" +
-      "OGOProtos.Rpc.DJIAFGGJDGNH\000\0227\n\020vs_seeker" +
-      "_detail\030\005 \001(\0132\033.POGOProtos.Rpc.HKLINPIJI" +
-      "JOH\000\0226\n\017invasion_detail\030\006 \001(\0132\033.POGOProt" +
-      "os.Rpc.LLKJLEFDCNGH\000\0227\n\020photobomb_detail" +
-      "\030\007 \001(\0132\033.POGOProtos.Rpc.EBJNDCLKJJEH\000B\r\n" +
-      "\013BHGJNIPEFOI\"\205\001\n\027ClientFortModifierProto" +
-      "\022+\n\rmodifier_type\030\001 \001(\0162\024.POGOProtos.Rpc" +
-      ".Item\022\032\n\022expiration_time_ms\030\002 \001(\003\022!\n\031dep" +
-      "loying_player_codename\030\003 \001(\t\"N\n\021NewsPage" +
-      "Telemetry\0229\n\013bodbbafheak\030\001 \001(\0162$.POGOPro" +
-      "tos.Rpc.NewsPageTelemetryIds\"\"\n\013OOODGJKB" +
-      "FHL\022\023\n\013hbilofnlfja\030\001 \003(\t\"\"\n\013OPGFAKMGJEI\022" +
-      "\023\n\013hdegllgmeih\030\001 \001(\t\"F\n\013OPJDIJGJLLE\0227\n\006s" +
-      "tatus\030\001 \001(\0162\'.POGOProtos.Rpc.DFJBGELCPOL" +
-      ".HBIHKKBLENC\"\233\001\n\013PAANHAEGNCN\022\023\n\013pkdofmma" +
-      "haj\030\001 \001(\010\0228\n\013pphpjibhjce\030\002 \001(\0162#.POGOPro" +
-      "tos.Rpc.HoloPokemonFamilyId\022\023\n\013kmhcmofld" +
-      "pi\030\003 \001(\005\022\023\n\013cakieelioki\030\004 \001(\001\022\023\n\013aphbdlj" +
-      "dccf\030\005 \001(\001\"v\n\013PAECIPMMKEE\022\023\n\013fgonpfibkai" +
-      "\030\001 \001(\t\022\023\n\013jnojmednlil\030\002 \003(\004\022\023\n\013hmafiedcj" +
-      "fn\030\003 \001(\004\022\023\n\013nlblgfioeic\030\004 \001(\001\022\023\n\013ojnmceb" +
-      "eede\030\005 \001(\001\"\227\002\n\013PBAKFPGGAEC\0222\n\006status\030\001 \001" +
-      "(\0162\".POGOProtos.Rpc.PBAKFPGGAEC.Status\0220" +
-      "\n\013jfoojdpjjei\030\002 \001(\0132\033.POGOProtos.Rpc.ADH" +
-      "JCLFLGEP\"\241\001\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
-      "S\020\001\022\026\n\022ERROR_NOT_IN_RANGE\020\002\022\034\n\030ERROR_INC" +
-      "IDENT_COMPLETED\020\003\022\034\n\030ERROR_INCIDENT_NOT_" +
-      "FOUND\020\004\022 \n\034ERROR_PLAYER_BELOW_MIN_LEVEL\020" +
-      "\005\022\t\n\005ERROR\020\006\"n\n\013PBANGHILBEL\0222\n\006result\030\001 " +
-      "\001(\0162\".POGOProtos.Rpc.PBANGHILBEL.Result\"" +
-      "+\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\t\n\005ERR" +
-      "OR\020\002\"L\n\013PCDOMMOHALD\022\023\n\013aohfihankjc\030\001 \001(\014" +
-      "\022\023\n\013aiilfjofigj\030\002 \001(\003\022\023\n\013demnjojbgli\030\003 \001" +
-      "(\014\"\307\004\n\013PCGKBBIDAPK\0222\n\006result\030\001 \001(\0162\".POG" +
-      "OProtos.Rpc.PCGKBBIDAPK.Result\0221\n\013kgfcdh" +
-      "nibdp\030\002 \001(\0132\034.POGOProtos.Rpc.PokemonProt" +
-      "o\0221\n\013nchjaghhjel\030\003 \001(\0132\034.POGOProtos.Rpc." +
-      "PokemonProto\022<\n\013ebobjkejack\030\004 \003(\0132\'.POGO" +
-      "Protos.Rpc.PCGKBBIDAPK.IENFGDGKEMB\032\240\001\n\013I" +
-      "ENFGDGKEMB\022\023\n\013ininllcbhke\030\001 \001(\005\022\023\n\013ekinl" +
-      "iohkgk\030\002 \001(\005\022\023\n\013fnapjpnccdp\030\003 \001(\005\022\023\n\013eji" +
-      "mngdcckf\030\004 \001(\005\022\023\n\013fjncaoklfgl\030\005 \001(\005\022\023\n\013f" +
-      "fmboekkclo\030\006 \001(\002\022\023\n\013hgjcfdajnpj\030\007 \001(\005\"\274\001" +
-      "\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\033\n\027ERRO" +
-      "R_POKEMON_NOT_FOUND\020\002\022 \n\034ERROR_INSUFFICI" +
-      "ENT_RESOURCES\020\003\022\037\n\033ERROR_UPGRADE_NOT_AVA" +
-      "ILABLE\020\004\022\035\n\031ERROR_POKEMON_IS_DEPLOYED\020\005\022" +
-      "\033\n\027ERROR_DUPLICATE_REQUEST\020\006\"a\n\013PCIBILJB" +
-      "KMD\022\023\n\013ckniekbneoe\030\001 \001(\004\022\023\n\013aeoedfahjck\030" +
-      "\002 \001(\t\022\023\n\013nlblgfioeic\030\003 \001(\001\022\023\n\013ojnmcebeed" +
-      "e\030\004 \001(\001\"o\n\023PlayerRaidInfoProto\022\023\n\013lonpko" +
-      "ahoib\030\003 \001(\005\022\023\n\013ojlloeimljd\030\004 \001(\005\022.\n\013bila" +
-      "bhihdjn\030\005 \003(\0132\031.POGOProtos.Rpc.RaidProto" +
-      "\"\240\001\n\017CombatTypeProto\022-\n\004type\030\001 \001(\0162\037.POG" +
-      "OProtos.Rpc.HoloPokemonType\022\034\n\024nice_leve" +
-      "l_threshold\030\002 \001(\002\022\035\n\025great_level_thresho" +
-      "ld\030\003 \001(\002\022!\n\031excellent_level_threshold\030\004 " +
-      "\001(\002\"\r\n\013PDMPFBOEIOF\"\322\001\n\rSouvenirProto\0223\n\013" +
-      "danacpehlmo\030\001 \001(\0162\036.POGOProtos.Rpc.Souve" +
-      "nirTypeId\022>\n\013pmnbjpflbnp\030\002 \003(\0132).POGOPro" +
-      "tos.Rpc.SouvenirProto.OPGOKPNBNLI\032L\n\013OPG" +
-      "OKPNBNLI\022\023\n\013igeafoidcdk\030\001 \001(\003\022\023\n\013phiabgh" +
-      "ihcc\030\003 \001(\001\022\023\n\013icmnhajccaa\030\004 \001(\001\"\340\001\n\032Ques" +
-      "tPokemonEncounterProto\022\023\n\013clgdnpihbdn\030\001 " +
-      "\001(\t\0221\n\013baeglbmdifp\030\002 \001(\0132\034.POGOProtos.Rp" +
-      "c.PokemonProto\0222\n\013obajnkbnpmk\030\003 \001(\0162\035.PO" +
-      "GOProtos.Rpc.EncounterType\022\023\n\013kfhmgngkge" +
-      "a\030\004 \001(\010\0221\n\013odobbjehbpa\030\005 \001(\0132\034.POGOProto" +
-      "s.Rpc.PokemonProto\"\347\001\n\013PEAOBONCJBN\022<\n\013hn" +
-      "cojddbiio\030\001 \001(\0162\'.POGOProtos.Rpc.PEAOBON" +
-      "CJBN.FCMLGPGMGNJ\0221\n\013kbfoamgjigc\030\002 \001(\0162\034." +
-      "POGOProtos.Rpc.PoiImageType\022\023\n\013nobaoihmg" +
-      "ln\030\003 \001(\t\"R\n\013FCMLGPGMGNJ\022\t\n\005UNSET\020\000\022\032\n\026PO" +
-      "I_PHOTO_UPLOAD_ERROR\020\001\022\034\n\030POI_PHOTO_UPLO" +
-      "AD_TIMEOUT\020\002\"?\n\tLootProto\0222\n\013nnfbldeigkl" +
-      "\030\001 \003(\0132\035.POGOProtos.Rpc.LootItemProto\"\312," +
-      "\n\035GameMasterClientTemplateProto\022\023\n\013templ" +
-      "ate_id\030\001 \001(\t\0225\n\007pokemon\030\002 \001(\0132$.POGOProt" +
-      "os.Rpc.PokemonSettingsProto\022/\n\004item\030\003 \001(" +
-      "\0132!.POGOProtos.Rpc.ItemSettingsProto\022/\n\004" +
-      "move\030\004 \001(\0132!.POGOProtos.Rpc.MoveSettings" +
-      "Proto\022@\n\rmove_sequence\030\005 \001(\0132).POGOProto" +
-      "s.Rpc.MoveSequenceSettingsProto\022B\n\016type_" +
-      "effective\030\010 \001(\0132*.POGOProtos.Rpc.TypeEff" +
-      "ectiveSettingsProto\0221\n\005badge\030\n \001(\0132\".POG" +
-      "OProtos.Rpc.BadgeSettingsProto\0223\n\006camera" +
-      "\030\013 \001(\0132#.POGOProtos.Rpc.CameraSettingsPr" +
-      "oto\022>\n\014player_level\030\014 \001(\0132(.POGOProtos.R" +
-      "pc.PlayerLevelSettingsProto\0228\n\tgym_level" +
-      "\030\r \001(\0132%.POGOProtos.Rpc.GymLevelSettings" +
-      "Proto\022?\n\017battle_settings\030\016 \001(\0132&.POGOPro" +
-      "tos.Rpc.GymBattleSettingsProto\022B\n\022encoun" +
-      "ter_settings\030\017 \001(\0132&.POGOProtos.Rpc.Enco" +
-      "unterSettingsProto\022=\n\020iap_item_display\030\020" +
-      " \001(\0132#.POGOProtos.Rpc.IapItemDisplayProt" +
-      "o\0226\n\014iap_settings\030\021 \001(\0132 .POGOProtos.Rpc" +
-      ".IapSettingsProto\022E\n\020pokemon_upgrades\030\022 " +
-      "\001(\0132+.POGOProtos.Rpc.PokemonUpgradeSetti" +
-      "ngsProto\022C\n\017equipped_badges\030\023 \001(\0132*.POGO" +
-      "Protos.Rpc.EquippedBadgeSettingsProto\022:\n" +
-      "\016quest_settings\030\024 \001(\0132\".POGOProtos.Rpc.Q" +
-      "uestSettingsProto\022F\n\024avatar_customizatio" +
-      "n\030\025 \001(\0132(.POGOProtos.Rpc.AvatarCustomiza" +
-      "tionProto\0228\n\rform_settings\030\026 \001(\0132!.POGOP" +
-      "rotos.Rpc.FormSettingsProto\022B\n\017gender_se" +
-      "ttings\030\027 \001(\0132).POGOProtos.Rpc.ClientGend" +
-      "erSettingsProto\022D\n\022gym_badge_settings\030\030 " +
-      "\001(\0132(.POGOProtos.Rpc.GymBadgeGmtSettings" +
-      "Proto\022@\n\022weather_affinities\030\031 \001(\0132$.POGO" +
-      "Protos.Rpc.WeatherAffinityProto\022A\n\026weath" +
-      "er_bonus_settings\030\032 \001(\0132!.POGOProtos.Rpc" +
-      ".WeatherBonusProto\022H\n\026pokemon_scale_sett" +
-      "ings\030\033 \001(\0132(.POGOProtos.Rpc.PokemonScale" +
-      "SettingProto\022I\n\024iap_category_display\030\034 \001" +
-      "(\0132+.POGOProtos.Rpc.IapItemCategoryDispl" +
-      "ayProto\022H\n\030beluga_pokemon_whitelist\030\035 \001(" +
-      "\0132&.POGOProtos.Rpc.BelugaPokemonWhitelis" +
-      "t\022D\n\023onboarding_settings\030\036 \001(\0132\'.POGOPro" +
-      "tos.Rpc.OnboardingSettingsProto\022\\\n\035frien" +
-      "dship_milestone_settings\030\037 \001(\01325.POGOPro" +
-      "tos.Rpc.FriendshipLevelMilestoneSettings" +
-      "Proto\022I\n\026lucky_pokemon_settings\030  \001(\0132)." +
-      "POGOProtos.Rpc.LuckyPokemonSettingsProto" +
-      "\022<\n\017combat_settings\030! \001(\0132#.POGOProtos.R" +
-      "pc.CombatSettingsProto\022I\n\026combat_league_" +
-      "settings\030\" \001(\0132).POGOProtos.Rpc.CombatLe" +
-      "agueSettingsProto\0228\n\rcombat_league\030# \001(\013" +
-      "2!.POGOProtos.Rpc.CombatLeagueProto\022=\n\020e" +
-      "x_raid_settings\030$ \001(\0132#.POGOProtos.Rpc.E" +
-      "xRaidSettingsProto\022<\n\013combat_move\030% \001(\0132" +
-      "\'.POGOProtos.Rpc.CombatMoveSettingsProto" +
-      "\022M\n\030background_mode_settings\030& \001(\0132+.POG" +
-      "OProtos.Rpc.BackgroundModeSettingsProto\022" +
-      "P\n\032combat_stat_stage_settings\030\' \001(\0132,.PO" +
-      "GOProtos.Rpc.CombatStatStageSettingsProt" +
-      "o\022A\n\022combat_npc_trainer\030( \001(\0132%.POGOProt" +
-      "os.Rpc.CombatNpcTrainerProto\022I\n\026combat_n" +
-      "pc_personality\030) \001(\0132).POGOProtos.Rpc.Co" +
-      "mbatNpcPersonalityProto\022I\n\026onboarding_v2" +
-      "_settings\030* \001(\0132).POGOProtos.Rpc.Onboard" +
-      "ingV2SettingsProto\022W\n\035party_recommendati" +
-      "on_settings\030+ \001(\01320.POGOProtos.Rpc.Party" +
-      "RecommendationSettingsProto\022K\n\027smeargle_" +
-      "moves_settings\030, \001(\0132*.POGOProtos.Rpc.Sm" +
-      "eargleMovesSettingsProto\022V\n\035pokecoin_pur" +
-      "chase_display_gmt\030- \001(\0132/.POGOProtos.Rpc" +
-      ".PokecoinPurchaseDisplayGmtProto\022F\n\025adve" +
-      "nture_sync_v2_gmt\030. \001(\0132\'.POGOProtos.Rpc" +
-      ".AdventureSyncV2GmtProto\022C\n\027loading_scre" +
-      "en_settings\030/ \001(\0132\".POGOProtos.Rpc.Loadi" +
-      "ngScreenProto\022V\n\035invasion_npc_display_se" +
-      "ttings\0300 \001(\0132/.POGOProtos.Rpc.InvasionNp" +
-      "cDisplaySettingsProto\022`\n\"combat_competit" +
-      "ive_season_settings\0301 \001(\01324.POGOProtos.R" +
-      "pc.CombatCompetitiveSeasonSettingsProto\022" +
-      "Q\n\035combat_ranking_proto_settings\0302 \001(\0132*" +
-      ".POGOProtos.Rpc.CombatRankingSettingsPro" +
-      "to\0224\n\013combat_type\0303 \001(\0132\037.POGOProtos.Rpc" +
-      ".CombatTypeProto\022@\n\024buddy_level_settings" +
-      "\0304 \001(\0132\".POGOProtos.Rpc.BuddyLevelSettin" +
-      "gs\022W\n buddy_activity_category_settings\0305" +
-      " \001(\0132-.POGOProtos.Rpc.BuddyActivityCateg" +
-      "orySettings\022F\n\027buddy_activity_settings\0306" +
-      " \001(\0132%.POGOProtos.Rpc.BuddyActivitySetti" +
-      "ngs\022>\n\023buddy_swap_settings\0308 \001(\0132!.POGOP" +
-      "rotos.Rpc.BuddySwapSettings\022N\n\031vs_seeker" +
-      "_client_settings\030: \001(\0132+.POGOProtos.Rpc." +
-      "VsSeekerClientSettingsProto\022S\n\036buddy_enc" +
-      "ounter_cameo_settings\030; \001(\0132+.POGOProtos" +
-      ".Rpc.BuddyEncounterCameoSettings\022V\n\035limi" +
-      "ted_purchase_sku_settings\030< \001(\0132/.POGOPr" +
-      "otos.Rpc.LimitedPurchaseSkuSettingsProto" +
-      "\022O\n\034buddy_emotion_level_settings\030= \001(\0132)" +
-      ".POGOProtos.Rpc.BuddyEmotionLevelSetting",
-      "s\022b\n\'pokestop_invasion_availability_sett" +
-      "ings\030> \001(\01321.POGOProtos.Rpc.InvasionAvai" +
-      "labilitySettingsProto\022L\n\032buddy_interacti" +
-      "on_settings\030? \001(\0132(.POGOProtos.Rpc.Buddy" +
-      "InteractionSettings\022?\n\024vs_seeker_loot_pr" +
-      "oto\030@ \001(\0132!.POGOProtos.Rpc.VsSeekerLootP" +
-      "roto\022N\n\031vs_seeker_pokemon_rewards\030A \001(\0132" +
-      "+.POGOProtos.Rpc.VsSeekerPokemonRewardsP" +
-      "roto\022I\n\031battle_hub_order_settings\030B \001(\0132" +
-      "&.POGOProtos.Rpc.BattleHubOrderSettings\022" +
-      "I\n\031battle_hub_badge_settings\030C \001(\0132&.POG" +
-      "OProtos.Rpc.BattleHubBadgeSettings\022A\n\022ma" +
-      "p_buddy_settings\030D \001(\0132%.POGOProtos.Rpc." +
-      "MapBuddySettingsProto\022>\n\023buddy_walk_sett" +
-      "ings\030E \001(\0132!.POGOProtos.Rpc.BuddyWalkSet" +
-      "tings\022O\n\031platypus_rollout_settings\030F \001(\013" +
-      "2,.POGOProtos.Rpc.PlatypusRolloutSetting" +
-      "sProto\022B\n\025buddy_hunger_settings\030H \001(\0132#." +
-      "POGOProtos.Rpc.BuddyHungerSettings\022>\n\020pr" +
-      "oject_vacation\030I \001(\0132$.POGOProtos.Rpc.Pr" +
-      "ojectVacationProto\022:\n\021mega_evo_settings\030" +
-      "J \001(\0132\037.POGOProtos.Rpc.MegaEvoSettings\0222" +
-      "\n\010mega_evo\030K \001(\0132 .POGOProtos.Rpc.GameMa" +
-      "sterField1\022R\n\033avatar_group_order_setting" +
-      "s\030L \001(\0132-.POGOProtos.Rpc.AvatarGroupOrde" +
-      "rSettingsProto\022B\n\022monodepth_settings\030N \001" +
-      "(\0132&.POGOProtos.Rpc.MonodepthSettingsPro" +
-      "to\022D\n\023raid_settings_proto\030Q \001(\0132\'.POGOPr" +
-      "otos.Rpc.RaidClientSettingsProto\022\\\n spon" +
-      "sored_geofence_gift_settings\030T \001(\01322.POG" +
-      "OProtos.Rpc.SponsoredGeofenceGiftSetting" +
-      "sProto\022>\n\020sticker_metadata\030U \001(\0132$.POGOP" +
-      "rotos.Rpc.StickerMetadataProto\022P\n\032cross_" +
-      "game_social_settings\030V \001(\0132,.POGOProtos." +
-      "Rpc.CrossGameSocialSettingsProto\022E\n\024map_" +
-      "display_settings\030W \001(\0132\'.POGOProtos.Rpc." +
-      "MapDisplaySettingsProto\022G\n\025ar_telemetry_" +
-      "settings\030Z \001(\0132(.POGOProtos.Rpc.ArTeleme" +
-      "trySettingsProto\0220\n\006field1\030[ \001(\0132 .POGOP" +
-      "rotos.Rpc.GameMasterField2\0220\n\006field2\030] \001" +
-      "(\0132 .POGOProtos.Rpc.GameMasterField3\0220\n\006" +
-      "field3\030a \001(\0132 .POGOProtos.Rpc.GameMaster" +
-      "Field4\0220\n\006field4\030b \001(\0132 .POGOProtos.Rpc." +
-      "GameMasterField5\0220\n\006field5\030c \001(\0132 .POGOP" +
-      "rotos.Rpc.GameMasterField6\"\276\001\n\013PEKJNHJPJ" +
-      "IB\022\030\n\016km_in_progress\030\002 \001(\002H\000\022\032\n\020step_in_" +
-      "progress\030\003 \001(\005H\000\022\027\n\rkm_for_reward\030\004 \001(\002H" +
-      "\001\022\031\n\017step_for_reward\030\005 \001(\005H\001\022/\n\013jlbhegip" +
-      "jml\030\001 \001(\0162\032.POGOProtos.Rpc.MetricTypeB\n\n" +
-      "\010ProgressB\010\n\006Reward\"0\n\031AvatarGlobalSetti" +
-      "ngsProto\022\023\n\013enable_pose\030\001 \001(\010\"\327\001\n\rPokemo" +
-      "nField1\022)\n\005quest\030\001 \001(\0132\032.POGOProtos.Rpc." +
-      "QuestProto\0220\n\006field1\030\002 \001(\0132 .POGOProtos." +
-      "Rpc.PokemonField1Sub\0221\n\npokemon_id\030\003 \001(\016" +
-      "2\035.POGOProtos.Rpc.HoloPokemonId\0226\n\004form\030" +
-      "\004 \001(\0162(.POGOProtos.Rpc.PokemonDisplayPro" +
-      "to.Form\"_\n\016QuestGoalProto\0228\n\013gdoolemfnpl" +
-      "\030\001 \003(\0132#.POGOProtos.Rpc.QuestConditionPr" +
-      "oto\022\023\n\013heaeepoemki\030\002 \001(\005\"T\n\013PFPJGDJKEKH\022" +
-      "0\n\013ndpcmkigeci\030\001 \001(\0132\033.POGOProtos.Rpc.PL" +
-      "PBKPABGMK\022\023\n\013mlghifehoah\030\002 \001(\014\"\230\001\n\013PGBOL" +
-      "EFLDPI\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc." +
-      "PGBOLEFLDPI.Result\0223\n\013ioghbpknjbd\030\002 \003(\0132" +
-      "\036.POGOProtos.Rpc.ActionLogEntry\" \n\006Resul" +
-      "t\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"\322\001\n\013PGCPOAOCFG" +
-      "I\022\023\n\013ckniekbneoe\030\001 \001(\004\022\023\n\013eajohpjbknk\030\002 " +
-      "\001(\005\022\023\n\013opbdacclchl\030\003 \001(\001\022\023\n\013jemhdponkih\030" +
-      "\004 \001(\t\022\023\n\013anoooaccgio\030\005 \001(\010\022\023\n\013dmekfancob" +
-      "g\030\006 \001(\001\022\023\n\013npdoaggpibo\030\007 \001(\001\0220\n\013blpglfkk" +
-      "jeo\030\010 \001(\0132\033.POGOProtos.Rpc.NNHPOEPICBH\"\226" +
-      "\003\n\013PHKHKKDLIND\0222\n\006status\030\001 \001(\0162\".POGOPro" +
-      "tos.Rpc.PHKHKKDLIND.Status\022<\n\013hhamdkofim" +
-      "c\030\002 \003(\0132\'.POGOProtos.Rpc.PHKHKKDLIND.OND" +
-      "PNMCPBFN\032\337\001\n\013ONDPNMCPBFN\022\023\n\013hencndffkoi\030" +
-      "\001 \001(\003\022\023\n\013ghjoipidjgh\030\002 \001(\005\022\023\n\013ifpmojmjml" +
-      "h\030\003 \001(\005\022\023\n\013hoipalfbnhe\030\004 \001(\005\022\023\n\013gcmenhbh" +
-      "gmg\030\005 \001(\005\022\023\n\013blpppekjfeo\030\006 \001(\005\022\023\n\013ikfgch" +
-      "kdanf\030\007 \001(\005\022\023\n\013jopmlmbgnif\030\010 \001(\005\022\023\n\013nmbd" +
-      "caenpbj\030\t \001(\005\022\023\n\013eekgfcflbkm\030\n \001(\t\"3\n\006St" +
-      "atus\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UN" +
-      "KNOWN\020\002\"\"\n\013PHKMKLAMCBN\022\023\n\013ckniekbneoe\030\001 " +
-      "\001(\003\"]\n\016AwardItemProto\022\"\n\004item\030\001 \001(\0162\024.PO" +
-      "GOProtos.Rpc.Item\022\022\n\nitem_count\030\002 \001(\005\022\023\n" +
-      "\013bonus_count\030\003 \001(\005\"\242\002\n\033PokemonEncounterR" +
-      "ewardProto\0223\n\npokemon_id\030\001 \001(\0162\035.POGOPro" +
-      "tos.Rpc.HoloPokemonIdH\000\0223\n)use_quest_pok" +
-      "emon_encounter_distribuition\030\002 \001(\010H\000\022<\n\017" +
-      "pokemon_display\030\003 \001(\0132#.POGOProtos.Rpc.P" +
-      "okemonDisplayProto\022\027\n\017is_hidden_ditto\030\004 " +
-      "\001(\010\022:\n\rditto_display\030\005 \001(\0132#.POGOProtos." +
-      "Rpc.PokemonDisplayProtoB\006\n\004Type\"W\n\035Daily" +
-      "BuddyAffectionQuestProto\0226\n\013gdadpcnldha\030" +
-      "\001 \001(\0132!.POGOProtos.Rpc.DailyCounterProto" +
-      "\"\r\n\013PJNNFGFBNFJ\"P\n\025PasscodeSettingsProto" +
-      "\022\036\n\026show_passcode_in_store\030\001 \001(\010\022\027\n\017use_" +
-      "passcode_v2\030\002 \001(\010\"\255\035\n\013EnumWrapper\"\265\001\n\033In" +
-      "vasionCharacterExpression\022\024\n\020EXPRESSION_" +
-      "UNSET\020\000\022\021\n\rPLACEHOLDER_1\020\001\022\021\n\rPLACEHOLDE" +
-      "R_2\020\002\022\021\n\rPLACEHOLDER_3\020\003\022\021\n\rPLACEHOLDER_" +
-      "4\020\004\022\014\n\010GREETING\020\005\022\r\n\tCHALLENGE\020\006\022\013\n\007VICT" +
-      "ORY\020\007\022\n\n\006DEFEAT\020\010\"\203\001\n\021CharacterCategory\022" +
-      "\t\n\005UNSET\020\000\022\017\n\013TEAM_LEADER\020\001\022\t\n\005GRUNT\020\002\022\010" +
-      "\n\004ARLO\020\003\022\t\n\005CLIFF\020\004\022\n\n\006SIERRA\020\005\022\014\n\010GIOVA" +
-      "NNI\020\006\022\013\n\007GRUNTBF\020\007\022\013\n\007GRUNTBM\020\010\"<\n\017Invas" +
-      "ionContext\022\025\n\021POKESTOP_INCIDENT\020\000\022\022\n\016ROC" +
-      "KET_BALLOON\020\001\"\300\031\n\021InvasionCharacter\022\023\n\017C" +
-      "HARACTER_UNSET\020\000\022\025\n\021CHARACTER_BLANCHE\020\001\022" +
-      "\025\n\021CHARACTER_CANDELA\020\002\022\023\n\017CHARACTER_SPAR" +
-      "K\020\003\022\030\n\024CHARACTER_GRUNT_MALE\020\004\022\032\n\026CHARACT" +
-      "ER_GRUNT_FEMALE\020\005\022\036\n\032CHARACTER_BUG_GRUNT" +
-      "_FEMALE\020\006\022\034\n\030CHARACTER_BUG_GRUNT_MALE\020\007\022" +
-      "#\n\037CHARACTER_DARKNESS_GRUNT_FEMALE\020\010\022!\n\035" +
-      "CHARACTER_DARKNESS_GRUNT_MALE\020\t\022\037\n\033CHARA" +
-      "CTER_DARK_GRUNT_FEMALE\020\n\022\035\n\031CHARACTER_DA" +
-      "RK_GRUNT_MALE\020\013\022!\n\035CHARACTER_DRAGON_GRUN" +
-      "T_FEMALE\020\014\022\037\n\033CHARACTER_DRAGON_GRUNT_MAL" +
-      "E\020\r\022 \n\034CHARACTER_FAIRY_GRUNT_FEMALE\020\016\022\036\n" +
-      "\032CHARACTER_FAIRY_GRUNT_MALE\020\017\022#\n\037CHARACT" +
-      "ER_FIGHTING_GRUNT_FEMALE\020\020\022!\n\035CHARACTER_" +
-      "FIGHTING_GRUNT_MALE\020\021\022\037\n\033CHARACTER_FIRE_" +
-      "GRUNT_FEMALE\020\022\022\035\n\031CHARACTER_FIRE_GRUNT_M" +
-      "ALE\020\023\022!\n\035CHARACTER_FLYING_GRUNT_FEMALE\020\024" +
-      "\022\037\n\033CHARACTER_FLYING_GRUNT_MALE\020\025\022 \n\034CHA" +
-      "RACTER_GRASS_GRUNT_FEMALE\020\026\022\036\n\032CHARACTER" +
-      "_GRASS_GRUNT_MALE\020\027\022!\n\035CHARACTER_GROUND_" +
-      "GRUNT_FEMALE\020\030\022\037\n\033CHARACTER_GROUND_GRUNT" +
-      "_MALE\020\031\022\036\n\032CHARACTER_ICE_GRUNT_FEMALE\020\032\022" +
-      "\034\n\030CHARACTER_ICE_GRUNT_MALE\020\033\022 \n\034CHARACT" +
-      "ER_METAL_GRUNT_FEMALE\020\034\022\036\n\032CHARACTER_MET" +
-      "AL_GRUNT_MALE\020\035\022!\n\035CHARACTER_NORMAL_GRUN" +
-      "T_FEMALE\020\036\022\037\n\033CHARACTER_NORMAL_GRUNT_MAL" +
-      "E\020\037\022!\n\035CHARACTER_POISON_GRUNT_FEMALE\020 \022\037" +
-      "\n\033CHARACTER_POISON_GRUNT_MALE\020!\022\"\n\036CHARA" +
-      "CTER_PSYCHIC_GRUNT_FEMALE\020\"\022 \n\034CHARACTER" +
-      "_PSYCHIC_GRUNT_MALE\020#\022\037\n\033CHARACTER_ROCK_" +
-      "GRUNT_FEMALE\020$\022\035\n\031CHARACTER_ROCK_GRUNT_M" +
-      "ALE\020%\022 \n\034CHARACTER_WATER_GRUNT_FEMALE\020&\022" +
-      "\036\n\032CHARACTER_WATER_GRUNT_MALE\020\'\022 \n\034CHARA" +
-      "CTER_PLAYER_TEAM_LEADER\020(\022\035\n\031CHARACTER_E" +
-      "XECUTIVE_CLIFF\020)\022\034\n\030CHARACTER_EXECUTIVE_" +
-      "ARLO\020*\022\036\n\032CHARACTER_EXECUTIVE_SIERRA\020+\022\026" +
-      "\n\022CHARACTER_GIOVANNI\020,\022\036\n\032CHARACTER_DECO" +
-      "Y_GRUNT_MALE\020-\022 \n\034CHARACTER_DECOY_GRUNT_" +
-      "FEMALE\020.\022 \n\034CHARACTER_GHOST_GRUNT_FEMALE" +
-      "\020/\022\036\n\032CHARACTER_GHOST_GRUNT_MALE\0200\022#\n\037CH" +
-      "ARACTER_ELECTRIC_GRUNT_FEMALE\0201\022!\n\035CHARA" +
-      "CTER_ELECTRIC_GRUNT_MALE\0202\022\"\n\036CHARACTER_" +
-      "BALLOON_GRUNT_FEMALE\0203\022 \n\034CHARACTER_BALL" +
-      "OON_GRUNT_MALE\0204\022\033\n\027CHARACTER_GRUNTB_FEM" +
-      "ALE\0205\022\031\n\025CHARACTER_GRUNTB_MALE\0206\022&\n\"CHAR" +
-      "ACTER_BUG_BALLOON_GRUNT_FEMALE\0207\022$\n CHAR" +
-      "ACTER_BUG_BALLOON_GRUNT_MALE\0208\022\'\n#CHARAC" +
-      "TER_DARK_BALLOON_GRUNT_FEMALE\0209\022%\n!CHARA" +
-      "CTER_DARK_BALLOON_GRUNT_MALE\020:\022)\n%CHARAC" +
-      "TER_DRAGON_BALLOON_GRUNT_FEMALE\020;\022\'\n#CHA" +
-      "RACTER_DRAGON_BALLOON_GRUNT_MALE\020<\022(\n$CH" +
-      "ARACTER_FAIRY_BALLOON_GRUNT_FEMALE\020=\022&\n\"" +
-      "CHARACTER_FAIRY_BALLOON_GRUNT_MALE\020>\022+\n\'" +
-      "CHARACTER_FIGHTING_BALLOON_GRUNT_FEMALE\020" +
-      "?\022)\n%CHARACTER_FIGHTING_BALLOON_GRUNT_MA" +
-      "LE\020@\022\'\n#CHARACTER_FIRE_BALLOON_GRUNT_FEM" +
-      "ALE\020A\022%\n!CHARACTER_FIRE_BALLOON_GRUNT_MA" +
-      "LE\020B\022)\n%CHARACTER_FLYING_BALLOON_GRUNT_F" +
-      "EMALE\020C\022\'\n#CHARACTER_FLYING_BALLOON_GRUN" +
-      "T_MALE\020D\022(\n$CHARACTER_GRASS_BALLOON_GRUN" +
-      "T_FEMALE\020E\022&\n\"CHARACTER_GRASS_BALLOON_GR" +
-      "UNT_MALE\020F\022)\n%CHARACTER_GROUND_BALLOON_G" +
-      "RUNT_FEMALE\020G\022\'\n#CHARACTER_GROUND_BALLOO" +
-      "N_GRUNT_MALE\020H\022&\n\"CHARACTER_ICE_BALLOON_" +
-      "GRUNT_FEMALE\020I\022$\n CHARACTER_ICE_BALLOON_" +
-      "GRUNT_MALE\020J\022(\n$CHARACTER_METAL_BALLOON_" +
-      "GRUNT_FEMALE\020K\022&\n\"CHARACTER_METAL_BALLOO" +
-      "N_GRUNT_MALE\020L\022)\n%CHARACTER_NORMAL_BALLO" +
-      "ON_GRUNT_FEMALE\020M\022\'\n#CHARACTER_NORMAL_BA" +
-      "LLOON_GRUNT_MALE\020N\022)\n%CHARACTER_POISON_B" +
-      "ALLOON_GRUNT_FEMALE\020O\022\'\n#CHARACTER_POISO" +
-      "N_BALLOON_GRUNT_MALE\020P\022*\n&CHARACTER_PSYC" +
-      "HIC_BALLOON_GRUNT_FEMALE\020Q\022(\n$CHARACTER_" +
-      "PSYCHIC_BALLOON_GRUNT_MALE\020R\022\'\n#CHARACTE" +
-      "R_ROCK_BALLOON_GRUNT_FEMALE\020S\022%\n!CHARACT" +
-      "ER_ROCK_BALLOON_GRUNT_MALE\020T\022(\n$CHARACTE" +
-      "R_WATER_BALLOON_GRUNT_FEMALE\020U\022&\n\"CHARAC" +
-      "TER_WATER_BALLOON_GRUNT_MALE\020V\022(\n$CHARAC" +
-      "TER_GHOST_BALLOON_GRUNT_FEMALE\020W\022&\n\"CHAR" +
-      "ACTER_GHOST_BALLOON_GRUNT_MALE\020X\022+\n\'CHAR" +
-      "ACTER_ELECTRIC_BALLOON_GRUNT_FEMALE\020Y\022)\n" +
-      "%CHARACTER_ELECTRIC_BALLOON_GRUNT_MALE\020Z" +
-      "\"_\n\rPokestopStyle\022\023\n\017POKESTOP_NORMAL\020\000\022\034" +
-      "\n\030POKESTOP_ROCKET_INVASION\020\001\022\033\n\027POKESTOP" +
-      "_ROCKET_VICTORY\020\002\"P\n\013PKNPEKDPGBP\022A\n\013oije" +
-      "oejhgbo\030\001 \001(\0132,.POGOProtos.Rpc.CombatPla" +
-      "yerPreferencesProto\"Y\n\036PlatformClientApi" +
-      "SettingsProto\022\017\n\007payload\030\001 \001(\014\"&\n\014Settin" +
-      "gsType\022\r\n\tUNDEFINED\020\000\022\007\n\003MAP\020\001\"P\n\031Platfo" +
-      "rmPlayerLocaleProto\022\017\n\007country\030\001 \001(\t\022\020\n\010" +
-      "language\030\002 \001(\t\022\020\n\010timezone\030\003 \001(\t\"\"\n\013PLGI" +
-      "JEEBAID\022\023\n\013cnfblmcfgkk\030\001 \001(\010\"r\n\013PLNICJBI" +
-      "DMN\022\023\n\tkm_walked\030\002 \001(\002H\000\022\024\n\nstep_count\030\003" +
-      " \001(\005H\000\022/\n\013jlbhegipjml\030\001 \001(\0162\032.POGOProtos" +
-      ".Rpc.MetricTypeB\007\n\005Value\"7\n\013PLPBKPABGMK\022" +
-      "\023\n\013emodglnocmb\030\001 \001(\t\022\023\n\013npfkomnambb\030\002 \001(" +
-      "\t\"L\n\013PMAHAKCLOCP\022\023\n\013jbinlkojlng\030\001 \001(\010\022\023\n" +
-      "\013gicljepfjmm\030\002 \001(\010\022\023\n\013gakpkpgefih\030\003 \001(\003\"" +
-      "\206\001\n\021LobbyPokemonProto\022\023\n\013mjlofidknme\030\001 \001" +
-      "(\003\0222\n\013kcbcpdfdkel\030\002 \001(\0162\035.POGOProtos.Rpc" +
-      ".HoloPokemonId\022\023\n\013fgeliggeohb\030\003 \001(\005\022\023\n\013h" +
-      "omeghafodj\030\004 \001(\002\"Q\n\017ItemRewardProto\022)\n\013e" +
-      "kpohjfklal\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022\023" +
-      "\n\013ligbfceekdo\030\002 \001(\005\"7\n\013PNEKLMMDFBJ\022\023\n\013al" +
-      "flaepafnn\030\001 \001(\t\022\023\n\013jnojmednlil\030\006 \003(\004\"\365\001\n" +
-      "\013PNFLKEIDCJK\0222\n\006result\030\001 \001(\0162\".POGOProto" +
-      "s.Rpc.PNFLKEIDCJK.Result\"\261\001\n\006Result\022\t\n\005U" +
-      "NSET\020\000\022\013\n\007SUCCESS\020\001\022\032\n\026ERROR_INVALID_NIC" +
-      "KNAME\020\002\022\033\n\027ERROR_POKEMON_NOT_FOUND\020\003\022\030\n\024" +
-      "ERROR_POKEMON_IS_EGG\020\004\022\033\n\027ERROR_FILTERED" +
-      "_NICKNAME\020\005\022\037\n\033ERROR_EXCEEDED_CHANGE_LIM" +
-      "IT\020\006\"\"\n\013PNJMFHKGMAC\022\023\n\013ldaocjncphe\030\001 \001(\t" +
-      "\"7\n\013PNONGDLKFAG\022\023\n\013phiabghihcc\030\002 \001(\001\022\023\n\013" +
-      "icmnhajccaa\030\003 \001(\001\"\250\003\n\021QuestDisplayProto\022" +
-      "\023\n\013clgdnpihbdn\030\001 \001(\t\0225\n\013okdclnadodk\030\002 \003(" +
-      "\0132 .POGOProtos.Rpc.QuestDialogProto\022\023\n\013l" +
-      "cdegoaaeao\030\003 \001(\t\022\023\n\013dahllofeaic\030\004 \001(\t\022\023\n" +
-      "\013ihfjmmjjlph\030\005 \001(\005\0226\n\013pfjdidpmnpn\030\006 \003(\0132" +
-      "!.POGOProtos.Rpc.QuestDisplayProto\022\023\n\013no" +
-      "kmlangmnp\030\007 \001(\010\022\023\n\013hiknoonlmbe\030\010 \001(\t\022\023\n\013" +
-      "eaehaaiioac\030\t \001(\t\022\023\n\013igdbljfhhge\030\n \001(\t\022\023" +
-      "\n\013jafbefoialn\030\013 \001(\t\022\023\n\013jmjdhimbnmd\030\014 \001(\t" +
-      "\022\023\n\013nfaipdkocnf\030\r \001(\t\022\023\n\013glnpipoehpc\030\016 \001" +
-      "(\t\022\023\n\013kkameffjhfe\030\017 \001(\t\022\023\n\013pcnkjjhmean\030\020" +
-      " \001(\005\"L\n\013POIIFFIBIFL\022\023\n\013dpnibkogejm\030\001 \001(\t" +
-      "\022\023\n\013lndigkkjfml\030\002 \001(\t\022\023\n\013pdaldoafaaj\030\003 \001" +
-      "(\003\"\242\002\n\013POKONEGNFDO\022<\n\013mhdiijjhcpl\030\001 \003(\0132" +
-      "\'.POGOProtos.Rpc.POKONEGNFDO.AEMMNNINAEB" +
-      "\032\227\001\n\013AEMMNNINAEB\0227\n\006result\030\001 \001(\0162\'.POGOP" +
-      "rotos.Rpc.POKONEGNFDO.ECLMOHMFLEF\022:\n\013nia" +
-      "ppnoleno\030\002 \001(\0132%.POGOProtos.Rpc.AssetDig" +
-      "estEntryProto\022\023\n\013hhnbfajichl\030\003 \001(\t\";\n\013EC" +
-      "LMOHMFLEF\022\t\n\005UNSET\020\000\022\t\n\005ERROR\020\001\022\t\n\005VALID" +
-      "\020\002\022\013\n\007EXPIRED\020\003\"m\n\021BuddyWalkSettings\022\'\n\037" +
-      "km_required_per_affection_point\030\001 \001(\002\022/\n" +
-      "\013metric_type\030\002 \001(\0162\032.POGOProtos.Rpc.Metr" +
-      "icType\"\255\001\n\"CrossGameSocialGlobalSettings" +
-      "Proto\022\037\n\027online_status_min_level\030\001 \001(\005\022!" +
-      "\n\031niantic_profile_min_level\030\002 \001(\005\022\036\n\026fri" +
-      "ends_list_min_level\030\003 \001(\005\022#\n\033max_friends" +
-      "_per_detail_page\030\004 \001(\005\"z\n\016MegaEvosField1" +
-      "\022H\n\026temporary_evolution_id\030\001 \001(\0162(.POGOP" +
-      "rotos.Rpc.HoloTemporaryEvolutionId\022\016\n\006fi" +
-      "eld1\030\002 \001(\005\022\016\n\006field2\030\003 \001(\t\".\n\032RedeemPass" +
-      "codeRequestProto\022\020\n\010passcode\030\001 \001(\t\"\227\003\n\033R" +
-      "edeemPasscodeResponseProto\022B\n\006result\030\001 \001" +
-      "(\01622.POGOProtos.Rpc.RedeemPasscodeRespon" +
-      "seProto.Result\022O\n\racquired_item\030\002 \003(\01328." +
-      "POGOProtos.Rpc.RedeemPasscodeResponsePro" +
-      "to.AcquiredItem\022\034\n\024acquired_items_proto\030" +
-      "\003 \001(\014\022\020\n\010passcode\030\004 \001(\t\032+\n\014AcquiredItem\022" +
-      "\014\n\004item\030\001 \001(\t\022\r\n\005count\030\002 \001(\003\"\205\001\n\006Result\022" +
-      "\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rNOT_AVAILABLE" +
-      "\020\002\022\030\n\024OVER_INVENTORY_LIMIT\020\003\022\024\n\020ALREADY_" +
-      "REDEEMED\020\004\022 \n\034OVER_PLAYER_REDEMPTION_LIM" +
-      "IT\020\005\"\256\001\n\'UpdateAdventureSyncFitnessRespo" +
-      "nseProto\022N\n\006status\030\001 \001(\0162>.POGOProtos.Rp" +
-      "c.UpdateAdventureSyncFitnessResponseProt" +
-      "o.Status\"3\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS" +
-      "\020\001\022\021\n\rERROR_UNKNOWN\020\002\"v\n\'UpdateAdventure" +
-      "SyncSettingsRequestProto\022K\n\027adventure_sy" +
-      "nc_settings\030\001 \001(\0132*.POGOProtos.Rpc.Adven" +
-      "tureSyncSettingsProto\"\232\003\n\"PlatformAccept" +
-      "FriendInviteOutProto\022I\n\006result\030\001 \001(\01629.P" +
-      "OGOProtos.Rpc.PlatformAcceptFriendInvite" +
-      "OutProto.Result\022:\n\006friend\030\002 \001(\0132*.POGOPr" +
-      "otos.Rpc.PlatformPlayerSummaryProto\"\354\001\n\006" +
-      "Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_" +
-      "UNKNOWN\020\002\022\037\n\033ERROR_INVITE_DOES_NOT_EXIST" +
-      "\020\003\022+\n\'ERROR_MAX_FRIENDS_LIMIT_REACHED_DE" +
-      "LETED\020\004\022#\n\037ERROR_INVITE_HAS_BEEN_CANCELL" +
-      "ED\020\005\022 \n\034ERROR_SENDER_HAS_MAX_FRIENDS\020\006\022\"" +
-      "\n\036ERROR_RECEIVER_HAS_MAX_FRIENDS\020\007\"4\n\037Pl" +
-      "atformAcceptFriendInviteProto\022\021\n\tplayer_" +
-      "id\030\001 \001(\t\"\300\002\n\034PlatformAccountSettingsProt" +
-      "o\022#\n\033opt_out_social_graph_import\030\001 \001(\010\022S" +
-      "\n\025online_status_consent\030\002 \001(\01624.POGOProt" +
-      "os.Rpc.PlatformSocialSettings.ConsentSta" +
-      "tus\022V\n\030last_played_date_consent\030\003 \001(\01624." +
-      "POGOProtos.Rpc.PlatformSocialSettings.Co" +
-      "nsentStatus\022N\n\020codename_consent\030\004 \001(\01624." +
-      "POGOProtos.Rpc.PlatformSocialSettings.Co" +
-      "nsentStatus\"\353\001\n\036PlatformAddLoginActionOu" +
-      "tProto\022\017\n\007success\030\001 \001(\010\0229\n\014login_detail\030" +
-      "\002 \003(\0132#.POGOProtos.Rpc.PlatformLoginDeta" +
-      "il\022E\n\006status\030\003 \001(\01625.POGOProtos.Rpc.Plat" +
-      "formAddLoginActionOutProto.Status\"6\n\006Sta" +
-      "tus\022\t\n\005UNSET\020\000\022\020\n\014AUTH_FAILURE\020\001\022\017\n\013LOGI" +
-      "N_TAKEN\020\002\"\213\001\n\033PlatformAddLoginActionProt" +
-      "o\022;\n\021identity_provider\030\001 \001(\0162 .POGOProto" +
-      "s.Rpc.IdentityProvider\022\025\n\rinner_message\030" +
-      "\002 \001(\014\022\030\n\020auth_provider_id\030\003 \001(\t\"a\n\020Platf" +
-      "ormApnToken\022\027\n\017registration_id\030\001 \001(\t\022\031\n\021" +
-      "bundle_identifier\030\002 \001(\t\022\031\n\021payload_byte_" +
-      "size\030\003 \001(\005\"\230\003\n\023PlatformClientInbox\022G\n\rno" +
-      "tifications\030\001 \003(\01320.POGOProtos.Rpc.Platf" +
-      "ormClientInbox.Notification\032\371\001\n\014Notifica" +
-      "tion\022\027\n\017notification_id\030\001 \001(\t\022\021\n\ttitle_k" +
-      "ey\030\002 \001(\t\022\020\n\010category\030\003 \001(\t\022\033\n\023create_tim" +
-      "estamp_ms\030\004 \001(\003\022;\n\tvariables\030\005 \003(\0132(.POG" +
-      "OProtos.Rpc.PlatformTemplateVariable\0229\n\006" +
-      "labels\030\006 \003(\0162).POGOProtos.Rpc.PlatformCl" +
-      "ientInbox.Label\022\026\n\016expire_time_ms\030\007 \001(\003\"" +
-      "<\n\005Label\022\017\n\013UNSET_LABEL\020\000\022\n\n\006UNREAD\020\001\022\007\n" +
-      "\003NEW\020\002\022\r\n\tIMMEDIATE\020\003\"\352\001\n#PlatformDeclin" +
-      "eFriendInviteOutProto\022J\n\006result\030\001 \001(\0162:." +
-      "POGOProtos.Rpc.PlatformDeclineFriendInvi" +
-      "teOutProto.Result\"w\n\006Result\022\t\n\005UNSET\020\000\022\013" +
-      "\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\037\n\033ERROR_" +
-      "INVITE_DOES_NOT_EXIST\020\003\022!\n\035ERROR_INVITE_" +
-      "ALREADY_DECLINED\020\004\"5\n PlatformDeclineFri" +
-      "endInviteProto\022\021\n\tplayer_id\030\001 \001(\t\"3\n#Pla" +
-      "tformDownloadSettingsActionProto\022\014\n\004sha1" +
-      "\030\001 \001(\t\"y\n%PlatformDownloadSettingsRespon" +
-      "seProto\022\r\n\005error\030\001 \001(\t\022\014\n\004sha1\030\002 \001(\t\0223\n\006" +
-      "values\030\003 \001(\0132#.POGOProtos.Rpc.GlobalSett" +
-      "ingsProto\"\300\002\n\032PlatformFriendDetailsProto" +
-      "\022:\n\006player\030\001 \001(\0132*.POGOProtos.Rpc.Platfo" +
-      "rmPlayerSummaryProto\022\033\n\023friend_visible_d" +
-      "ata\030\002 \001(\014\022\r\n\005score\030\003 \001(\005\022\024\n\014data_with_me" +
-      "\030\004 \001(\014\022N\n\ronline_status\030\005 \001(\01627.POGOProt" +
-      "os.Rpc.PlatformFriendDetailsProto.Online" +
-      "Status\"T\n\014OnlineStatus\022\t\n\005UNSET\020\000\022\022\n\016STA" +
-      "TUS_UNKNOWN\020\001\022\021\n\rSTATUS_ONLINE\020\002\022\022\n\016STAT" +
-      "US_OFFLINE\020\003\"#\n\010GcmToken\022\027\n\017registration" +
-      "_id\030\001 \001(\t\"\374\001\n\035GenerateGmapSignedUrlOutPr" +
-      "oto\022D\n\006result\030\001 \001(\01624.POGOProtos.Rpc.Gen" +
-      "erateGmapSignedUrlOutProto.Result\022\022\n\nsig" +
-      "ned_url\030\002 \001(\t\"\200\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007S" +
-      "UCCESS\020\001\022\032\n\026ERROR_PLAYER_NOT_VALID\020\002\022\026\n\022" +
-      "ERROR_RATE_LIMITED\020\003\022\027\n\023ERROR_MISSING_IN" +
-      "PUT\020\004\022\021\n\rERROR_UNKNOWN\020\005\"\325\001\n\032GenerateGma" +
-      "pSignedUrlProto\022\020\n\010latitude\030\001 \001(\001\022\021\n\tlon" +
-      "gitude\030\002 \001(\001\022\r\n\005width\030\003 \001(\005\022\016\n\006height\030\004 " +
-      "\001(\005\022\014\n\004zoom\030\005 \001(\005\022\025\n\rlanguage_code\030\006 \001(\t" +
-      "\022\024\n\014country_code\030\007 \001(\t\022\021\n\tmap_style\030\010 \001(" +
-      "\t\022\020\n\010map_type\030\t \001(\t\022\023\n\013icon_params\030\n \001(\t" +
-      "\"\324\001\n\032GetAccountSettingsOutProto\022A\n\006resul" +
-      "t\030\001 \001(\01621.POGOProtos.Rpc.GetAccountSetti" +
-      "ngsOutProto.Result\022>\n\010settings\030\002 \001(\0132,.P" +
-      "OGOProtos.Rpc.PlatformAccountSettingsPro" +
-      "to\"3\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\r" +
-      "ERROR_UNKNOWN\020\002\"\031\n\027GetAccountSettingsPro" +
-      "to\"\036\n\034GetClientFeatureFlagsRequest\"\241\001\n\035G" +
-      "etClientFeatureFlagsResponse\022;\n\rfeature_" +
-      "flags\030\001 \001(\0132$.POGOProtos.Rpc.SocialClien" +
-      "tFeatures\022C\n\017global_settings\030\002 \001(\0132*.POG" +
-      "OProtos.Rpc.SocialClientGlobalSettings\"\327" +
-      "\003\n\035GetFacebookFriendListOutProto\022D\n\006resu" +
-      "lt\030\001 \001(\01624.POGOProtos.Rpc.GetFacebookFri" +
-      "endListOutProto.Result\022Q\n\006friend\030\002 \003(\0132A" +
-      ".POGOProtos.Rpc.GetFacebookFriendListOut" +
-      "Proto.FacebookFriendProto\022\023\n\013next_cursor" +
-      "\030\003 \001(\t\032d\n\023FacebookFriendProto\022:\n\006player\030" +
-      "\001 \001(\0132*.POGOProtos.Rpc.PlatformPlayerSum" +
-      "maryProto\022\021\n\tfull_name\030\002 \001(\t\"\241\001\n\006Result\022" +
-      "\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN" +
-      "\020\002\022\026\n\022ERROR_FACEBOOK_API\020\003\022\036\n\032ERROR_FACE" +
-      "BOOK_PERMISSIONS\020\004\022\030\n\024ERROR_NO_FACEBOOK_" +
-      "ID\020\005\022\032\n\026ERROR_PLAYER_NOT_FOUND\020\006\"T\n\032GetF" +
-      "acebookFriendListProto\022\027\n\017fb_access_toke" +
-      "n\030\001 \001(\t\022\r\n\005limit\030\002 \001(\005\022\016\n\006cursor\030\003 \001(\t\"\214" +
-      "\001\n\025GetFriendCodeOutProto\022<\n\006result\030\001 \001(\016" +
-      "2,.POGOProtos.Rpc.GetFriendCodeOutProto." +
-      "Result\022\023\n\013friend_code\030\002 \001(\t\" \n\006Result\022\t\n" +
-      "\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"1\n\022GetFriendCodePr" +
-      "oto\022\033\n\023force_generate_code\030\001 \001(\010\"\265\004\n\030Get" +
-      "FriendDetailsOutProto\022?\n\006result\030\001 \001(\0162/." +
-      "POGOProtos.Rpc.GetFriendDetailsOutProto." +
-      "Result\022:\n\006friend\030\002 \003(\0132*.POGOProtos.Rpc." +
-      "PlatformFriendDetailsProto\022V\n\031friend_det" +
-      "ails_debug_info\030\003 \001(\01323.POGOProtos.Rpc.G" +
-      "etFriendDetailsOutProto.DebugProto\032\353\001\n\nD" +
-      "ebugProto\022\027\n\017fetched_from_db\030\001 \001(\005\022\033\n\023fe" +
-      "tched_from_fanout\030\002 \001(\005\022\"\n\032fetched_from_" +
-      "player_mapper\030\003 \001(\005\022!\n\031fetched_from_stat" +
-      "us_cache\030\004 \001(\005\022\027\n\017failed_to_fetch\030\005 \001(\005\022" +
-      "*\n\"fetched_from_same_server_as_player\030\007 " +
-      "\001(\005\032\033\n\006Callee\022\021\n\tplayer_id\030\002 \001(\t\"V\n\006Resu" +
-      "lt\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKN" +
-      "OWN\020\002\022!\n\035EXCEEDS_MAX_PLAYERS_PER_QUERY\020\003" +
-      "\"*\n\025GetFriendDetailsProto\022\021\n\tplayer_id\030\001" +
-      " \003(\t\"\331\007\n\030GetFriendDetailsResponse\022?\n\006res" +
-      "ult\030\001 \001(\0162/.POGOProtos.Rpc.GetFriendDeta" +
-      "ilsResponse.Result\022X\n\016friend_details\030\002 \003" +
-      "(\0132@.POGOProtos.Rpc.GetFriendDetailsResp" +
-      "onse.FriendDetailsEntryProto\032\315\002\n\027FriendD" +
-      "etailsEntryProto\022\021\n\tplayer_id\030\001 \001(\t\0224\n\007p" +
-      "rofile\030\002 \001(\0132#.POGOProtos.Rpc.ProfileDet" +
-      "ailsProto\022X\n\rplayer_status\030\003 \001(\0132A.POGOP" +
-      "rotos.Rpc.GetFriendDetailsResponse.Playe" +
-      "rStatusDetailsProto\022E\n\021calling_game_data" +
-      "\030\004 \001(\0132*.POGOProtos.Rpc.PlatformFriendDe" +
-      "tailsProto\022H\n\021invitation_status\030\005 \001(\0162-." +
-      "POGOProtos.Rpc.SocialV2Enum.InvitationSt",
-      "atus\032\363\002\n\030PlayerStatusDetailsProto\022X\n\006res" +
-      "ult\030\001 \001(\0162H.POGOProtos.Rpc.GetFriendDeta" +
-      "ilsResponse.PlayerStatusDetailsProto.Res" +
-      "ult\0229\n\006locale\030\002 \001(\0132).POGOProtos.Rpc.Pla" +
-      "tformPlayerLocaleProto\022@\n\ronline_status\030" +
-      "\003 \001(\0162).POGOProtos.Rpc.SocialV2Enum.Onli" +
-      "neStatus\022\033\n\023last_played_app_key\030\004 \001(\t\"c\n" +
-      "\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR" +
-      "_UNKNOWN\020\002\022\030\n\024ERROR_STATUS_UNKNOWN\020\003\022\024\n\020" +
-      "ERROR_STALE_DATA\020\004\"\\\n\006Result\022\t\n\005UNSET\020\000\022" +
-      "\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\'\n#ERROR" +
-      "_EXCEEDS_MAX_FRIENDS_PER_QUERY\020\003\"\373\005\n\026Get" +
-      "FriendsListOutProto\022=\n\006result\030\001 \001(\0162-.PO" +
-      "GOProtos.Rpc.GetFriendsListOutProto.Resu" +
-      "lt\022B\n\006friend\030\002 \003(\01322.POGOProtos.Rpc.GetF" +
-      "riendsListOutProto.FriendProto\032\277\003\n\013Frien" +
-      "dProto\022\021\n\tplayer_id\030\001 \001(\t\022\020\n\010codename\030\002 " +
-      "\001(\t\022\014\n\004team\030\003 \001(\t\022\r\n\005score\030\004 \001(\005\022\024\n\014data" +
-      "_with_me\030\005 \001(\014\022\017\n\007version\030\006 \001(\003\022\022\n\ncreat" +
-      "ed_ms\030\007 \001(\003\022\022\n\nfb_user_id\030\010 \001(\t\022\036\n\026is_fa" +
-      "cebook_friendship\030\t \001(\010\022Q\n\013shared_data\030\n" +
-      " \001(\0132<.POGOProtos.Rpc.GetFriendsListOutP" +
-      "roto.SharedFriendshipProto\022V\n\ronline_sta" +
-      "tus\030\013 \001(\0162?.POGOProtos.Rpc.GetFriendsLis" +
-      "tOutProto.FriendProto.OnlineStatus\"T\n\014On" +
-      "lineStatus\022\t\n\005UNSET\020\000\022\022\n\016STATUS_UNKNOWN\020" +
-      "\001\022\021\n\rSTATUS_ONLINE\020\002\022\022\n\016STATUS_OFFLINE\020\003" +
-      "\032g\n\025SharedFriendshipProto\022\023\n\013shared_data" +
-      "\030\001 \001(\014\022\017\n\007version\030\002 \001(\003\022\024\n\014data_from_me\030" +
-      "\003 \001(\014\022\022\n\ndata_to_me\030\004 \001(\014\"3\n\006Result\022\t\n\005U" +
-      "NSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\"\025" +
-      "\n\023GetFriendsListProto\"P\n\017GetInboxV2Proto" +
-      "\022\022\n\nis_history\030\001 \001(\010\022\022\n\nis_reverse\030\002 \001(\010" +
-      "\022\025\n\rnot_before_ms\030\003 \001(\003\"\343\001\n GetIncomingF" +
-      "riendInvitesOutProto\022G\n\006result\030\001 \001(\01627.P" +
-      "OGOProtos.Rpc.GetIncomingFriendInvitesOu" +
-      "tProto.Result\022A\n\007invites\030\002 \003(\01320.POGOPro" +
-      "tos.Rpc.IncomingFriendInviteDisplayProto" +
-      "\"3\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rER" +
-      "ROR_UNKNOWN\020\002\"\037\n\035GetIncomingFriendInvite" +
-      "sProto\"\306\001\n\034GetNotificationInboxOutProto\022" +
-      "C\n\006result\030\001 \001(\01623.POGOProtos.Rpc.GetNoti" +
-      "ficationInboxOutProto.Result\0222\n\005inbox\030\002 " +
-      "\001(\0132#.POGOProtos.Rpc.PlatformClientInbox" +
-      "\"-\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\013\n\007FA" +
-      "ILURE\020\002\"\345\001\n\031GetPlayerSettingsOutProto\022@\n" +
-      "\006result\030\001 \001(\01620.POGOProtos.Rpc.GetPlayer" +
-      "SettingsOutProto.Result\0225\n\010settings\030\002 \001(" +
-      "\0132#.POGOProtos.Rpc.PlayerSettingsProto\"O" +
-      "\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERRO" +
-      "R_UNKNOWN\020\002\022\032\n\026ERROR_PLAYER_NOT_FOUND\020\003\"" +
-      "\030\n\026GetPlayerSettingsProto\"&\n\021GetProfileR" +
-      "equest\022\021\n\tplayer_id\030\001 \001(\t\"\213\004\n\022GetProfile" +
-      "Response\0229\n\006result\030\001 \001(\0162).POGOProtos.Rp" +
-      "c.GetProfileResponse.Result\022<\n\017profile_d" +
-      "etails\030\002 \001(\0132#.POGOProtos.Rpc.ProfileDet" +
-      "ailsProto\022\\\n\026player_profile_details\030\003 \003(" +
-      "\0132<.POGOProtos.Rpc.GetProfileResponse.Pl" +
-      "ayerProfileDetailsProto\032\322\001\n\031PlayerProfil" +
-      "eDetailsProto\022\017\n\007app_key\030\001 \001(\t\022\020\n\010codena" +
-      "me\030\002 \001(\t\022\017\n\007faction\030\003 \001(\t\022\r\n\005level\030\004 \001(\005" +
-      "\022\022\n\nexperience\030\005 \001(\003\022\036\n\026signed_up_timest" +
-      "amp_ms\030\006 \001(\003\022 \n\030last_played_timestamp_ms" +
-      "\030\007 \001(\003\022\034\n\024player_total_walk_km\030\010 \001(\001\"I\n\006" +
-      "Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_" +
-      "UNKNOWN\020\002\022\024\n\020ERROR_NOT_FRIEND\020\003\"\231\001\n Inco" +
-      "mingFriendInviteDisplayProto\0229\n\006invite\030\001" +
-      " \001(\0132).POGOProtos.Rpc.IncomingFriendInvi" +
-      "teProto\022:\n\006player\030\002 \001(\0132*.POGOProtos.Rpc" +
-      ".PlatformPlayerSummaryProto\"\326\001\n\031Incoming" +
-      "FriendInviteProto\022@\n\006status\030\001 \001(\01620.POGO" +
-      "Protos.Rpc.IncomingFriendInviteProto.Sta" +
-      "tus\022\021\n\tplayer_id\030\002 \001(\t\022\022\n\ncreated_ms\030\003 \001" +
-      "(\003\022\021\n\tfull_name\030\005 \001(\t\"=\n\006Status\022\t\n\005UNSET" +
-      "\020\000\022\013\n\007PENDING\020\001\022\014\n\010DECLINED\020\002\022\r\n\tCANCELL" +
-      "ED\020\003\"\242\004\n\034InviteFacebookFriendOutProto\022C\n" +
-      "\006result\030\001 \001(\01623.POGOProtos.Rpc.InviteFac" +
-      "ebookFriendOutProto.Result\"\274\003\n\006Result\022\t\n" +
-      "\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002" +
-      "\022\032\n\026ERROR_PLAYER_NOT_FOUND\020\003\022\034\n\030ERROR_PL" +
-      "AYER_OUTBOX_FULL\020\004\022\033\n\027ERROR_PLAYER_INBOX" +
-      "_FULL\020\005\022 \n\034ERROR_SENDER_HAS_MAX_FRIENDS\020" +
-      "\006\022\"\n\036ERROR_RECEIVER_HAS_MAX_FRIENDS\020\007\022\032\n" +
-      "\026ERROR_ALREADY_A_FRIEND\020\010\022\035\n\031ERROR_INVIT" +
-      "E_ALREADY_SENT\020\t\022!\n\035ERROR_INVITE_ALREADY" +
-      "_RECEIVED\020\n\022)\n%ERROR_CANNOT_SEND_INVITES" +
-      "_TO_YOURSELF\020\013\022\036\n\032ERROR_FRIEND_CACHE_EXP" +
-      "IRED\020\014\022\033\n\027ERROR_FRIEND_NOT_CACHED\020\r\022$\n E" +
-      "RROR_INVALID_SENDER_FACEBOOK_ID\020\016\"O\n\031Inv" +
-      "iteFacebookFriendProto\022\027\n\017fb_access_toke" +
-      "n\030\001 \001(\t\022\031\n\021friend_fb_user_id\030\002 \001(\t\"e\n\027Li" +
-      "stLoginActionOutProto\022\017\n\007success\030\001 \001(\010\0229" +
-      "\n\014login_detail\030\002 \003(\0132#.POGOProtos.Rpc.Pl" +
-      "atformLoginDetail\"<\n\017LocationE6Proto\022\023\n\013" +
-      "latitude_e6\030\001 \001(\005\022\024\n\014longitude_e6\030\002 \001(\005\"" +
-      "{\n\023PlatformLoginDetail\022;\n\021identity_provi" +
-      "der\030\001 \001(\0162 .POGOProtos.Rpc.IdentityProvi" +
-      "der\022\r\n\005email\030\002 \001(\t\022\030\n\020auth_provider_id\030\003" +
-      " \001(\t\"!\n\013OptOutProto\022\022\n\ncategories\030\001 \003(\t\"" +
-      "\206\001\n\023PlayerSettingsProto\022\035\n\025opt_out_onlin" +
-      "e_status\030\001 \001(\010\022P\n\023completed_tutorials\030\002 " +
-      "\003(\01623.POGOProtos.Rpc.PlatformSocialSetti" +
-      "ngs.TutorialType\"\233\001\n\032PlatformPlayerSumma" +
-      "ryProto\022\021\n\tplayer_id\030\001 \001(\t\022\020\n\010codename\030\002" +
-      " \001(\t\022\023\n\013public_data\030\003 \001(\014\022\014\n\004team\030\004 \001(\t\022" +
-      "\022\n\nfb_user_id\030\005 \001(\t\022\r\n\005level\030\006 \001(\005\022\022\n\nex" +
-      "perience\030\007 \001(\003\"[\n\023ProfileDetailsProto\022\034\n" +
-      "\024profile_name_app_key\030\001 \001(\t\022\020\n\010nickname\030" +
-      "\002 \001(\t\022\024\n\014profile_name\030\003 \001(\t\"\234\001\n PushNoti" +
-      "ficationRegistryOutProto\022G\n\006result\030\001 \001(\016" +
-      "27.POGOProtos.Rpc.PushNotificationRegist" +
-      "ryOutProto.Result\"/\n\006Result\022\t\n\005UNSET\020\000\022\013" +
-      "\n\007SUCCESS\020\001\022\r\n\tNO_CHANGE\020\002\"\201\001\n\035PushNotif" +
-      "icationRegistryProto\0223\n\tapn_token\030\001 \001(\0132" +
-      " .POGOProtos.Rpc.PlatformApnToken\022+\n\tgcm" +
-      "_token\030\002 \001(\0132\030.POGOProtos.Rpc.GcmToken\"\275" +
-      "\001\n\024RemoveFriendOutProto\022;\n\006result\030\001 \001(\0162" +
-      "+.POGOProtos.Rpc.RemoveFriendOutProto.Re" +
-      "sult\"h\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\'" +
-      "\n#ERROR_PLAYER_DOES_NOT_EXIST_DELETED\020\002\022" +
-      "\035\n\031ERROR_PLAYER_NOT_A_FRIEND\020\003\"&\n\021Remove" +
-      "FriendProto\022\021\n\tplayer_id\030\001 \001(\t\"\327\001\n\031Remov" +
-      "eLoginActionOutProto\022\017\n\007success\030\001 \001(\010\0229\n" +
-      "\014login_detail\030\002 \003(\0132#.POGOProtos.Rpc.Pla" +
-      "tformLoginDetail\022@\n\006status\030\003 \001(\01620.POGOP" +
-      "rotos.Rpc.RemoveLoginActionOutProto.Stat" +
-      "us\",\n\006Status\022\t\n\005UNSET\020\000\022\027\n\023LOGIN_NOT_REM" +
-      "OVABLE\020\001\"o\n\026RemoveLoginActionProto\022;\n\021id" +
-      "entity_provider\030\001 \001(\0162 .POGOProtos.Rpc.I" +
-      "dentityProvider\022\030\n\020auth_provider_id\030\002 \001(" +
-      "\t\"\224\001\n\032SavePlayerSettingsOutProto\022A\n\006resu" +
-      "lt\030\001 \001(\01621.POGOProtos.Rpc.SavePlayerSett" +
-      "ingsOutProto.Result\"3\n\006Result\022\t\n\005UNSET\020\000" +
-      "\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\"P\n\027Save" +
-      "PlayerSettingsProto\0225\n\010settings\030\001 \001(\0132#." +
-      "POGOProtos.Rpc.PlayerSettingsProto\"\340\001\n\024S" +
-      "earchPlayerOutProto\022;\n\006result\030\001 \001(\0162+.PO" +
-      "GOProtos.Rpc.SearchPlayerOutProto.Result" +
-      "\022:\n\006player\030\002 \001(\0132*.POGOProtos.Rpc.Platfo" +
-      "rmPlayerSummaryProto\"O\n\006Result\022\t\n\005UNSET\020" +
-      "\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\032\n\026ERR" +
-      "OR_PLAYER_NOT_FOUND\020\003\"(\n\021SearchPlayerPro" +
-      "to\022\023\n\013friend_code\030\001 \001(\t\"\304\003\n\030SendFriendIn" +
-      "viteOutProto\022?\n\006result\030\001 \001(\0162/.POGOProto" +
-      "s.Rpc.SendFriendInviteOutProto.Result\"\346\002" +
-      "\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERRO" +
-      "R_UNKNOWN\020\002\022\032\n\026ERROR_ALREADY_A_FRIEND\020\003\022" +
-      "\'\n#ERROR_PLAYER_DOES_NOT_EXIST_DELETED\020\004" +
-      "\022\033\n\027ERROR_PLAYER_INBOX_FULL\020\005\022\034\n\030ERROR_P" +
-      "LAYER_OUTBOX_FULL\020\006\022 \n\034ERROR_SENDER_HAS_" +
-      "MAX_FRIENDS\020\007\022\035\n\031ERROR_INVITE_ALREADY_SE" +
-      "NT\020\010\022)\n%ERROR_CANNOT_SEND_INVITES_TO_YOU" +
-      "RSELF\020\t\022!\n\035ERROR_INVITE_ALREADY_RECEIVED" +
-      "\020\n\022\"\n\036ERROR_RECEIVER_HAS_MAX_FRIENDS\020\013\"?" +
-      "\n\025SendFriendInviteProto\022\021\n\tplayer_id\030\001 \001" +
-      "(\t\022\023\n\013friend_code\030\002 \001(\t\"\224\001\n\032SetAccountSe" +
-      "ttingsOutProto\022A\n\006result\030\001 \001(\01621.POGOPro" +
-      "tos.Rpc.SetAccountSettingsOutProto.Resul" +
-      "t\"3\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rE" +
-      "RROR_UNKNOWN\020\002\"Y\n\027SetAccountSettingsProt" +
-      "o\022>\n\010settings\030\001 \001(\0132,.POGOProtos.Rpc.Pla" +
-      "tformAccountSettingsProto\"\222\004\n\024SocialClie" +
-      "ntFeatures\022k\n\032cross_game_social_settings" +
-      "\030\001 \001(\0132G.POGOProtos.Rpc.SocialClientFeat" +
-      "ures.CrossGameSocialClientSettingsProto\032" +
-      "\214\003\n\"CrossGameSocialClientSettingsProto\022n" +
-      "\n\021disabled_features\030\001 \003(\0162S.POGOProtos.R" +
-      "pc.SocialClientFeatures.CrossGameSocialC" +
-      "lientSettingsProto.FeatureType\022e\n\010app_li" +
-      "nk\030\002 \001(\0162S.POGOProtos.Rpc.SocialClientFe" +
-      "atures.CrossGameSocialClientSettingsProt" +
-      "o.AppLinkType\"<\n\013AppLinkType\022\013\n\007NO_LINK\020" +
-      "\000\022\014\n\010WEB_LINK\020\001\022\022\n\016APP_STORE_LINK\020\002\"Q\n\013F" +
-      "eatureType\022\t\n\005UNSET\020\000\022\023\n\017NIANTIC_PROFILE" +
-      "\020\001\022\021\n\rONLINE_STATUS\020\002\022\017\n\013FRIEND_LIST\020\003\"\333" +
-      "\001\n\032SocialClientGlobalSettings\022k\n\032cross_g" +
-      "ame_social_settings\030\001 \001(\0132G.POGOProtos.R" +
-      "pc.SocialClientGlobalSettings.CrossGameS" +
-      "ocialSettingsProto\032P\n\034CrossGameSocialSet" +
-      "tingsProto\0220\n(niantic_profile_codename_o" +
-      "pt_out_enabled\030\001 \001(\010\"d\n\013SocialProto\"U\n\006A" +
-      "ppKey\022\013\n\007INVALID\020\000\022\023\n\017INGRESS_DELETED\020\001\022" +
-      "\024\n\020HOLOHOLO_DELETED\020\002\022\023\n\017LEXICON_DELETED" +
-      "\020\003\"\301\001\n\026PlatformSocialSettings\"5\n\rConsent" +
-      "Status\022\013\n\007UNKNOWN\020\000\022\n\n\006OPT_IN\020\001\022\013\n\007OPT_O" +
-      "UT\020\002\"p\n\014TutorialType\022\t\n\005UNSET\020\000\022\013\n\007PROFI" +
-      "LE\020\001\022\022\n\016FRIEND_LIST_V2\020\002\022\032\n\026ONLINE_STATU" +
-      "S_OVERVIEW\020\003\022\030\n\024ONLINE_STATUS_TOGGLE\020\004\"\251" +
-      "\001\n\014SocialV2Enum\"<\n\020InvitationStatus\022\033\n\027I" +
-      "NVITATION_STATUS_UNSET\020\000\022\013\n\007INVITED\020\001\"[\n" +
-      "\014OnlineStatus\022\020\n\014STATUS_UNSET\020\000\022\022\n\016STATU" +
-      "S_UNKNOWN\020\001\022\021\n\rSTATUS_ONLINE\020\002\022\022\n\016STATUS" +
-      "_OFFLINE\020\003\"p\n\030PlatformTemplateVariable\022\014" +
-      "\n\004name\030\001 \001(\t\022\017\n\007literal\030\002 \001(\t\022\013\n\003key\030\003 \001" +
-      "(\t\022\024\n\014lookup_table\030\004 \001(\t\022\022\n\nbyte_value\030\005" +
-      " \001(\014\"\347\001\n\034UpdateFacebookStatusOutProto\022C\n" +
-      "\006result\030\001 \001(\01623.POGOProtos.Rpc.UpdateFac" +
-      "ebookStatusOutProto.Result\"\201\001\n\006Result\022\t\n" +
-      "\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002" +
-      "\022\032\n\026ERROR_PLAYER_NOT_FOUND\020\003\022\026\n\022ERROR_FA" +
-      "CEBOOK_API\020\004\022\030\n\024ERROR_ALREADY_EXISTS\020\005\"J" +
-      "\n\031UpdateFacebookStatusProto\022\027\n\017fb_access" +
-      "_token\030\001 \001(\t\022\024\n\014force_update\030\002 \001(\010\"\206\002\n\030U" +
-      "pdateFriendshipResponse\022?\n\006result\030\001 \001(\0162" +
-      "/.POGOProtos.Rpc.UpdateFriendshipRespons" +
-      "e.Result\"\250\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
-      "S\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\024\n\020ERROR_NOT_FRIE" +
-      "ND\020\003\022\037\n\033ERROR_NICKNAME_WRONG_FORMAT\020\004\022\033\n" +
-      "\027ERROR_FILTERED_NICKNAME\020\005\022\037\n\033ERROR_EXCE" +
-      "EDED_CHANGE_LIMIT\020\006\"\034\n\032UpdateNotificatio" +
-      "nOutProto\"\202\001\n\027UpdateNotificationProto\022\030\n" +
-      "\020notification_ids\030\001 \003(\t\022\033\n\023create_timest" +
-      "amp_ms\030\002 \003(\003\0220\n\005state\030\003 \001(\0162!.POGOProtos" +
-      ".Rpc.NotificationState\"\210\001\n\024UpdateProfile" +
-      "Request\022B\n\007profile\030\001 \001(\01321.POGOProtos.Rp" +
-      "c.UpdateProfileRequest.ProfileProto\032,\n\014P" +
-      "rofileProto\022\034\n\024profile_name_app_key\030\001 \001(" +
-      "\t\"\212\001\n\025UpdateProfileResponse\022<\n\006result\030\001 " +
-      "\001(\0162,.POGOProtos.Rpc.UpdateProfileRespon" +
-      "se.Result\"3\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
-      "S\020\001\022\021\n\rERROR_UNKNOWN\020\002\"\323\002\n$TitanAsyncFil" +
-      "eUploadCompleteOutProto\022O\n\005error\030\001 \001(\0162@" +
-      ".POGOProtos.Rpc.TitanAsyncFileUploadComp" +
-      "leteOutProto.ErrorStatus\022B\n\017submission_t" +
-      "ype\030\002 \001(\0162).POGOProtos.Rpc.PlayerSubmiss" +
-      "ionTypeProto\022\016\n\006poi_id\030\003 \001(\t\"\205\001\n\013ErrorSt" +
-      "atus\022\t\n\005UNSET\020\000\022\030\n\024SERVER_UPDATE_FAILED\020" +
-      "\001\022\031\n\025MISSING_SUBMISSION_ID\020\002\022\033\n\027MISSING_" +
-      "SUBMISSION_TYPE\020\003\022\031\n\025MISSING_UPLOAD_STAT" +
-      "US\020\004\"\304\001\n!TitanAsyncFileUploadCompletePro" +
-      "to\022\025\n\rsubmission_id\030\001 \001(\t\022O\n\rupload_stat" +
-      "us\030\003 \001(\01628.POGOProtos.Rpc.TitanAsyncFile" +
-      "UploadCompleteProto.Status\"7\n\006Status\022\t\n\005" +
-      "UNSET\020\000\022\017\n\013UPLOAD_DONE\020\001\022\021\n\rUPLOAD_FAILE" +
-      "D\020\002\"\355\002\n*TitanAvailableSubmissionsPerSubm" +
-      "issionType\022I\n\026player_submission_type\030\001 \001" +
-      "(\0162).POGOProtos.Rpc.PlayerSubmissionType" +
-      "Proto\022\030\n\020submissions_left\030\002 \001(\005\022\030\n\020min_p" +
-      "layer_level\030\003 \001(\005\022\032\n\022is_feature_enabled\030" +
-      "\004 \001(\010\022,\n$time_window_for_submissions_lim" +
-      "it_ms\030\005 \001(\003\022\"\n\032max_poi_distance_in_meter" +
-      "s\030\006 \001(\005\022\026\n\016blacklisted_os\030\007 \003(\t\022\035\n\025black" +
-      "listed_device_id\030\010 \003(\t\022\033\n\023is_whitelisted" +
-      "_user\030\t \001(\010\"\314\001\n#GameClientPhotoGalleryPo" +
-      "iImageProto\022\020\n\010image_id\030\001 \001(\t\022\016\n\006poi_id\030" +
-      "\002 \001(\t\022\032\n\022submitter_codename\030\003 \001(\t\022\021\n\tima" +
-      "ge_url\030\004 \001(\t\022\035\n\025creation_timestamp_ms\030\005 " +
-      "\001(\003\022\030\n\020has_player_voted\030\006 \001(\010\022\033\n\023num_vot" +
-      "es_from_game\030\007 \001(\005\"\206\002\n\"TitanGenerateGmap" +
-      "SignedUrlOutProto\022I\n\006result\030\001 \001(\01629.POGO" +
-      "Protos.Rpc.TitanGenerateGmapSignedUrlOut" +
-      "Proto.Result\022\022\n\nsigned_url\030\002 \001(\t\"\200\001\n\006Res" +
-      "ult\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\032\n\026ERROR_PLA" +
-      "YER_NOT_VALID\020\002\022\026\n\022ERROR_RATE_LIMITED\020\003\022" +
-      "\027\n\023ERROR_MISSING_INPUT\020\004\022\021\n\rERROR_UNKNOW" +
-      "N\020\005\"\332\001\n\037TitanGenerateGmapSignedUrlProto\022" +
-      "\020\n\010latitude\030\001 \001(\001\022\021\n\tlongitude\030\002 \001(\001\022\r\n\005" +
-      "width\030\003 \001(\005\022\016\n\006height\030\004 \001(\005\022\014\n\004zoom\030\005 \001(" +
-      "\005\022\025\n\rlanguage_code\030\006 \001(\t\022\024\n\014country_code" +
-      "\030\007 \001(\t\022\021\n\tmap_style\030\010 \001(\t\022\020\n\010map_type\030\t " +
-      "\001(\t\022\023\n\013icon_params\030\n \001(\t\"\246\001\n\034GetARMappin" +
-      "gSettingsOutProto\022)\n!is_client_scan_vali" +
-      "dation_enabled\030\001 \001(\010\022)\n!client_scan_vali" +
-      "dation_blocked_os\030\002 \003(\t\0220\n(client_scan_v" +
-      "alidation_blocked_device_id\030\003 \003(\t\"\033\n\031Get" +
-      "ARMappingSettingsProto\"\251\003\n\037GetAvailableS" +
-      "ubmissionsOutProto\022\030\n\020submissions_left\030\001" +
-      " \001(\005\022\030\n\020min_player_level\030\002 \001(\005\022\027\n\017has_va" +
-      "lid_email\030\003 \001(\010\022\032\n\022is_feature_enabled\030\004 " +
-      "\001(\010\022,\n$time_window_for_submissions_limit" +
-      "_ms\030\005 \001(\003\022\"\n\032max_poi_distance_in_meters\030" +
-      "\006 \001(\005\022\026\n\016blacklisted_os\030\007 \003(\t\022`\n\034availab" +
-      "ility_result_per_type\030\010 \003(\0132:.POGOProtos" +
-      ".Rpc.TitanAvailableSubmissionsPerSubmiss" +
-      "ionType\022\035\n\025blacklisted_device_id\030\t \003(\t\0222" +
-      "\n*max_poi_location_edit_move_distance_me" +
-      "ters\030\n \001(\005\"\247\001\n\034GetAvailableSubmissionsPr" +
-      "oto\022B\n\017submission_type\030\001 \001(\0162).POGOProto" +
-      "s.Rpc.PlayerSubmissionTypeProto\022C\n\020submi" +
-      "ssion_types\030\002 \003(\0162).POGOProtos.Rpc.Playe" +
-      "rSubmissionTypeProto\"\377\001\n\027GetGmapSettings" +
-      "OutProto\022>\n\006result\030\001 \001(\0162..POGOProtos.Rp" +
-      "c.GetGmapSettingsOutProto.Result\022\031\n\021gmap" +
-      "_template_url\030\002 \001(\t\022\"\n\032max_poi_distance_" +
-      "in_meters\030\003 \001(\005\"e\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007" +
-      "SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\030\n\024ERROR_MI" +
-      "SSING_CONFIG\020\003\022\026\n\022ERROR_NO_UNIQUE_ID\020\004\"\026" +
-      "\n\024GetGmapSettingsProto\"\353\003\n\035GetGrapeshotU" +
-      "ploadUrlOutProto\022D\n\006status\030\001 \001(\01624.POGOP" +
-      "rotos.Rpc.GetGrapeshotUploadUrlOutProto." +
-      "Status\022u\n\036file_context_to_grapeshot_data" +
-      "\030\004 \003(\0132M.POGOProtos.Rpc.GetGrapeshotUplo" +
-      "adUrlOutProto.FileContextToGrapeshotData" +
-      "Entry\032n\n\037FileContextToGrapeshotDataEntry" +
-      "\022\013\n\003key\030\001 \001(\t\022:\n\005value\030\002 \001(\0132+.POGOProto" +
-      "s.Rpc.GrapeshotUploadingDataProto:\0028\001\"\234\001" +
-      "\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007FAILURE\020\001\022\013\n\007SUCC" +
-      "ESS\020\002\022\031\n\025MISSING_FILE_CONTEXTS\020\003\022\032\n\026DUPL" +
-      "ICATE_FILE_CONTEXT\020\004\022\033\n\027MISSING_SUBMISSI" +
-      "ON_TYPE\020\005\022\031\n\025MISSING_SUBMISSION_ID\020\006\"\224\001\n" +
-      "\032GetGrapeshotUploadUrlProto\022B\n\017submissio" +
-      "n_type\030\001 \001(\0162).POGOProtos.Rpc.PlayerSubm" +
-      "issionTypeProto\022\025\n\rsubmission_id\030\002 \001(\t\022\033" +
-      "\n\023file_upload_context\030\003 \003(\t\"\372\001\n\027GetImage" +
-      "sForPoiOutProto\022>\n\006status\030\001 \001(\0162..POGOPr" +
-      "otos.Rpc.GetImagesForPoiOutProto.Status\022" +
-      "U\n\030photo_gallery_poi_images\030\002 \003(\01323.POGO" +
-      "Protos.Rpc.GameClientPhotoGalleryPoiImag" +
-      "eProto\"H\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001" +
-      "\022\021\n\rPOI_NOT_FOUND\020\002\022\023\n\017INVALID_REQUEST\020\003" +
-      "\"&\n\024GetImagesForPoiProto\022\016\n\006poi_id\030\001 \001(\t" +
-      "\"M\n-GetPlayerSubmissionValidationSetting" +
-      "sOutProto\022\034\n\024banned_metadata_text\030\001 \003(\t\"" +
-      ",\n*GetPlayerSubmissionValidationSettings" +
-      "Proto\"\212\003\n\024GetUploadUrlOutProto\022;\n\006status" +
-      "\030\001 \001(\0162+.POGOProtos.Rpc.GetUploadUrlOutP" +
-      "roto.Status\022\022\n\nsigned_url\030\002 \001(\t\022#\n\033suppo" +
-      "rting_image_signed_url\030\003 \001(\t\022X\n\023context_" +
-      "signed_urls\030\004 \003(\0132;.POGOProtos.Rpc.GetUp" +
-      "loadUrlOutProto.ContextSignedUrlsEntry\0328" +
-      "\n\026ContextSignedUrlsEntry\022\013\n\003key\030\001 \001(\t\022\r\n" +
-      "\005value\030\002 \001(\t:\0028\001\"h\n\006Status\022\t\n\005UNSET\020\000\022\014\n" +
-      "\010FAILURES\020\001\022\013\n\007SUCCESS\020\002\022\032\n\026MISSING_IMAG" +
-      "E_CONTEXTS\020\003\022\034\n\030DUPLICATE_IMAGE_CONTEXTS" +
-      "\020\004\"\257\001\n\021GetUploadUrlProto\022\017\n\007user_id\030\001 \001(" +
-      "\t\022\026\n\016game_unique_id\030\002 \001(\t\022B\n\017submission_" +
-      "type\030\003 \001(\0162).POGOProtos.Rpc.PlayerSubmis" +
-      "sionTypeProto\022\025\n\rsubmission_id\030\004 \001(\t\022\026\n\016" +
-      "image_contexts\030\005 \003(\t\"G\n GrapeshotAuthent" +
-      "icationDataProto\022\025\n\rauthorization\030\001 \001(\t\022" +
-      "\014\n\004date\030\002 \001(\t\"\352\001\n\027GrapeshotChunkDataProt" +
-      "o\022\027\n\017chunk_file_path\030\001 \001(\t\022\024\n\014chunk_numb" +
-      "er\030\002 \001(\r\022O\n\025upload_authentication\030\003 \001(\0132" +
-      "0.POGOProtos.Rpc.GrapeshotAuthentication" +
-      "DataProto\022O\n\025delete_authentication\030\004 \001(\013" +
-      "20.POGOProtos.Rpc.GrapeshotAuthenticatio" +
-      "nDataProto\"\215\001\n\031GrapeshotComposeDataProto" +
-      "\022\030\n\020target_file_path\030\001 \001(\t\022H\n\016authentica" +
-      "tion\030\002 \001(\01320.POGOProtos.Rpc.GrapeshotAut" +
-      "henticationDataProto\022\014\n\004hash\030\003 \001(\t\"\311\001\n\033G" +
-      "rapeshotUploadingDataProto\022;\n\nchunk_data" +
-      "\030\001 \003(\0132\'.POGOProtos.Rpc.GrapeshotChunkDa" +
-      "taProto\022?\n\014compose_data\030\002 \001(\0132).POGOProt" +
-      "os.Rpc.GrapeshotComposeDataProto\022\022\n\ngcs_" +
-      "bucket\030\003 \001(\t\022\030\n\020number_of_chunks\030\004 \001(\005\"A" +
-      "\n\035IsImageGalleryEnabledOutProto\022 \n\030is_im" +
-      "age_gallery_enabled\030\001 \001(\010\"\034\n\032IsImageGall" +
-      "eryEnabledProto\"\327\002\n\035PlayerSubmissionResp" +
-      "onseProto\022D\n\006status\030\001 \001(\01624.POGOProtos.R" +
-      "pc.PlayerSubmissionResponseProto.Status\022" +
-      "\025\n\rsubmission_id\030\002 \001(\t\022\020\n\010messages\030\003 \003(\t" +
-      "\"\306\001\n\006Status\022\026\n\022STATUS_UNSPECIFIED\020\000\022\013\n\007S" +
-      "UCCESS\020\001\022\022\n\016INTERNAL_ERROR\020\002\022\037\n\033TOO_MANY" +
-      "_RECENT_SUBMISSIONS\020\003\022\t\n\005MINOR\020\004\022\021\n\rNOT_" +
-      "AVAILABLE\020\005\022\021\n\rINVALID_INPUT\020\006\022\021\n\rMISSIN" +
-      "G_IMAGE\020\007\022\036\n\032DISTANCE_VALIDATION_FAILED\020" +
-      "\010\"z\n\037PoiVideoSubmissionMetadataProto\022\016\n\006" +
-      "poi_id\030\001 \001(\t\0221\n\010location\030\002 \001(\0132\037.POGOPro" +
-      "tos.Rpc.LocationE6Proto\022\024\n\014player_level\030" +
-      "\003 \001(\005\"\300\001\n\031PortalCurationImageResult\"\242\001\n\006" +
-      "Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\024\n\020FEATUR" +
-      "E_DISABLED\020\002\022\024\n\020ALREADY_UPLOADED\020\003\022\023\n\017IM" +
-      "AGE_NOT_FOUND\020\004\022\021\n\rIMAGE_TOO_BIG\020\005\022\026\n\022IM" +
-      "AGE_NOT_SERVABLE\020\006\022\024\n\020PORTAL_NOT_FOUND\020\007" +
-      "\"\222\002\n\024SubmitNewPoiOutProto\022;\n\006status\030\001 \001(" +
-      "\0162+.POGOProtos.Rpc.SubmitNewPoiOutProto." +
-      "Status\022\025\n\rsubmission_id\030\002 \001(\t\022\020\n\010message" +
-      "s\030\003 \003(\t\"\223\001\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS" +
-      "\020\001\022\013\n\007FAILURE\020\002\022\022\n\016INTERNAL_ERROR\020\003\022\037\n\033T" +
-      "OO_MANY_RECENT_SUBMISSIONS\020\004\022\021\n\rINVALID_" +
-      "INPUT\020\005\022\t\n\005MINOR\020\006\022\021\n\rNOT_AVAILABLE\020\007\"\225\001" +
-      "\n\021SubmitNewPoiProto\022\r\n\005title\030\001 \001(\t\022\030\n\020lo" +
-      "ng_description\030\002 \001(\t\022\016\n\006lat_e6\030\004 \001(\005\022\016\n\006" +
-      "lng_e6\030\005 \001(\005\022\034\n\024supporting_statement\030\016 \001" +
-      "(\t\022\031\n\021async_file_upload\030\022 \001(\010\"\324\001\n#Submit" +
-      "PlayerImageVoteForPoiOutProto\022J\n\006status\030" +
-      "\001 \001(\0162:.POGOProtos.Rpc.SubmitPlayerImage" +
-      "VoteForPoiOutProto.Status\"a\n\006Status\022\t\n\005U" +
-      "NSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rPOI_NOT_FOUND\020\002\022\027" +
-      "\n\023POI_IMAGE_NOT_FOUND\020\003\022\023\n\017INVALID_REQUE" +
-      "ST\020\006\"n\n SubmitPlayerImageVoteForPoiProto" +
-      "\022\035\n\025image_ids_to_vote_for\030\001 \003(\t\022\033\n\023image" +
-      "_ids_to_unvote\030\002 \003(\t\022\016\n\006poi_id\030\003 \001(\t\"@\n\023" +
-      "SubmitPoiImageProto\022\016\n\006poi_id\030\001 \001(\t\022\031\n\021a" +
-      "sync_file_upload\030\002 \001(\010\"a\n\034SubmitPoiLocat" +
-      "ionUpdateProto\022\016\n\006poi_id\030\001 \001(\t\0221\n\010locati" +
-      "on\030\002 \001(\0132\037.POGOProtos.Rpc.LocationE6Prot" +
-      "o\"i\n\035SubmitPoiTakedownRequestProto\022\016\n\006po" +
-      "i_id\030\001 \001(\t\0228\n\016invalid_reason\030\002 \001(\0162 .POG" +
-      "OProtos.Rpc.PoiInvalidReason\"V\n SubmitPo" +
-      "iTextMetadataUpdateProto\022\016\n\006poi_id\030\001 \001(\t" +
-      "\022\r\n\005title\030\002 \001(\t\022\023\n\013description\030\003 \001(\t\"h\n#" +
-      "SubmitSponsorPoiLocationUpdateProto\022\016\n\006p" +
-      "oi_id\030\001 \001(\t\0221\n\010location\030\002 \001(\0132\037.POGOProt" +
-      "os.Rpc.LocationE6Proto\"\212\001\n\033SubmitSponsor" +
-      "PoiReportProto\022\016\n\006poi_id\030\001 \001(\t\022?\n\016invali" +
-      "d_reason\030\002 \001(\0162\'.POGOProtos.Rpc.SponsorP" +
-      "oiInvalidReason\022\032\n\022additional_details\030\003 " +
-      "\001(\t\"_\n\033UploadPoiPhotoByUrlOutProto\022@\n\006st" +
-      "atus\030\001 \001(\01620.POGOProtos.Rpc.PortalCurati",
-      "onImageResult.Result\"A\n\030UploadPoiPhotoBy" +
-      "UrlProto\022\022\n\nrequest_id\030\001 \001(\t\022\021\n\timage_ur" +
-      "l\030\002 \001(\t\"\356\002\n\031PlatformAvailableSkuProto\022\n\n" +
-      "\002id\030\001 \001(\t\022\"\n\032is_third_party_vendor_item\030" +
-      "\002 \001(\010\022<\n\005price\030\003 \003(\0132-.POGOProtos.Rpc.Pl" +
-      "atformCurrencyQuantityProto\022G\n\020currency_" +
-      "granted\030\004 \003(\0132-.POGOProtos.Rpc.PlatformC" +
-      "urrencyQuantityProto\022?\n\021game_item_conten" +
-      "t\030\005 \003(\0132$.POGOProtos.Rpc.GameItemContent" +
-      "Proto\022?\n\021presentation_data\030\006 \003(\0132$.POGOP" +
-      "rotos.Rpc.SkuPresentationProto\022\030\n\020can_be" +
-      "_purchased\030\007 \001(\010\"H\n\035PlatformCurrencyQuan" +
-      "tityProto\022\025\n\rcurrency_type\030\001 \001(\t\022\020\n\010quan" +
-      "tity\030\002 \001(\005\"\206\001\n\033PlatformCurrencyUpdatePro" +
-      "to\022\025\n\rcurrency_name\030\001 \001(\t\022\026\n\016currency_de" +
-      "lta\030\002 \001(\005\022\030\n\020currency_balance\030\003 \001(\005\022\036\n\026f" +
-      "iat_purchased_balance\030\004 \001(\005\"6\n\024GameItemC" +
-      "ontentProto\022\014\n\004type\030\001 \001(\t\022\020\n\010quantity\030\002 " +
-      "\001(\005\"\270\002\n#GetAvailableSkusAndBalancesOutPr" +
-      "oto\022J\n\006status\030\001 \001(\0162:.POGOProtos.Rpc.Get" +
-      "AvailableSkusAndBalancesOutProto.Status\022" +
-      "@\n\ravailable_sku\030\002 \003(\0132).POGOProtos.Rpc." +
-      "PlatformAvailableSkuProto\022>\n\007balance\030\003 \003" +
+      " \001(\t\022\023\n\013epejamdemjg\030\003 \001(\005\0223\n\013lmdeimbgdac" +
+      "\030\004 \003(\0132\036.POGOProtos.Rpc.PokestopReward\022\023" +
+      "\n\013kgakhdpolpo\030\005 \001(\005\"7\n\013KLEGKEFFLGI\022\023\n\013lg" +
+      "aehpohdan\030\001 \001(\t\022\023\n\013mhpodigefok\030\002 \001(\005\"\"\n\013" +
+      "KLFIOFJAPJE\022\023\n\013kinmgjioimb\030\001 \001(\t\"B\n\020Poke" +
+      "monField1Sub\022\016\n\006field1\030\001 \001(\t\022\016\n\006field2\030\002" +
+      " \001(\t\022\016\n\006field3\030\003 \001(\005\"\261\001\n!ViewPointOfInte" +
+      "restImageTelemetry\022\016\n\006result\030\001 \001(\t\022\023\n\013ln" +
+      "digkkjfml\030\002 \001(\t\022\023\n\013epejamdemjg\030\003 \001(\005\022\023\n\013" +
+      "gnfnfbapkjg\030\004 \001(\010\022\023\n\013loapfciahbj\030\005 \001(\010\022\023" +
+      "\n\013jmjdhimbnmd\030\006 \001(\t\022\023\n\013fihlhmkkocb\030\007 \001(\t" +
+      "\"V\n\034StardustBoostAttributesProto\022\033\n\023star" +
+      "dust_multiplier\030\001 \001(\002\022\031\n\021boost_duration_" +
+      "ms\030\002 \001(\005\"\"\n\013KLPONPHFNHF\022\023\n\013dpnibkogejm\030\001" +
+      " \001(\t\"\213\001\n\013KMAIEOEJNJP\0222\n\006status\030\001 \001(\0162\".P" +
+      "OGOProtos.Rpc.KMAIEOEJNJP.Status\022\023\n\013mbop" +
+      "gfdlmol\030\002 \001(\t\"3\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SU" +
+      "CCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\"u\n\031AssetPoiDo" +
+      "wnloadTelemetry\0229\n\016asset_event_id\030\001 \001(\0162" +
+      "!.POGOProtos.Rpc.AssetTelemetryIds\022\017\n\007fo" +
+      "rt_id\030\002 \001(\t\022\014\n\004size\030\003 \001(\r\"V\n\016WithBuddyPr" +
+      "oto\022/\n\013mnliiedpjon\030\001 \001(\0162\032.POGOProtos.Rp" +
+      "c.BuddyLevel\022\023\n\013feajmfjclje\030\002 \001(\010\"\\\n\034Com" +
+      "batPlayerPreferencesProto\022\036\n\026friends_com" +
+      "bat_opt_out\030\001 \001(\010\022\034\n\024nearby_combat_opt_i" +
+      "n\030\002 \001(\010\"\337\001\n\013KMLBKFBOINN\0222\n\006result\030\001 \001(\0162" +
+      "\".POGOProtos.Rpc.KMLBKFBOINN.Result\"\233\001\n\006" +
+      "Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022!\n\035ERROR_" +
+      "INVALID_CHALLENGE_STATE\020\002\022\035\n\031ERROR_CHALL" +
+      "ENGE_NOT_FOUND\020\003\022\032\n\026ERROR_ALREADY_TIMEDO" +
+      "UT\020\004\022\033\n\027ERROR_ALREADY_CANCELLED\020\005\"t\n\037Ass" +
+      "etStreamCacheCulledTelemetry\0229\n\016asset_ev" +
+      "ent_id\030\001 \001(\0162!.POGOProtos.Rpc.AssetTelem" +
+      "etryIds\022\026\n\016space_released\030\002 \001(\r\"\225\002\n\013KNBJ" +
+      "CBMCKFC\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc" +
+      ".KNBJCBMCKFC.Result\0221\n\013jikkdljggho\030\002 \001(\013" +
+      "2\034.POGOProtos.Rpc.TradingProto\"\236\001\n\006Resul" +
+      "t\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNO" +
+      "WN\020\002\022\032\n\026ERROR_FRIEND_NOT_FOUND\020\003\022\033\n\027ERRO" +
+      "R_INVALID_PLAYER_ID\020\004\022\027\n\023ERROR_INVALID_S" +
+      "TATE\020\005\022\027\n\023ERROR_STATE_HANDLER\020\006\"\250\002\n\022Badg" +
+      "eSettingsProto\0221\n\nbadge_type\030\001 \001(\0162\035.POG" +
+      "OProtos.Rpc.HoloBadgeType\022\023\n\013badge_ranks" +
+      "\030\002 \001(\005\022\017\n\007targets\030\003 \003(\005\022:\n\016capture_rewar" +
+      "d\030\004 \003(\0132\".POGOProtos.Rpc.BadgeCaptureRew" +
+      "ard\022\023\n\013event_badge\030\005 \001(\010\022E\n\024event_badge_" +
+      "settings\030\006 \001(\0132\'.POGOProtos.Rpc.EventBad" +
+      "geSettingsProto\022!\n\031combat_league_templat" +
+      "e_id\030\007 \001(\t\".\n\034NewGlobalSettingsField2Pro" +
+      "to\022\016\n\006field1\030\001 \001(\010\"\244\037\n\023GlobalSettingsPro" +
+      "to\0228\n\rfort_settings\030\002 \001(\0132!.POGOProtos.R" +
+      "pc.FortSettingsProto\0226\n\014map_settings\030\003 \001" +
+      "(\0132 .POGOProtos.Rpc.MapSettingsProto\022:\n\016" +
+      "level_settings\030\004 \001(\0132\".POGOProtos.Rpc.Le" +
+      "velSettingsProto\022B\n\022inventory_settings\030\005" +
+      " \001(\0132&.POGOProtos.Rpc.InventorySettingsP" +
+      "roto\022\036\n\026minimum_client_version\030\006 \001(\t\0226\n\014" +
+      "gps_settings\030\007 \001(\0132 .POGOProtos.Rpc.GpsS" +
+      "ettingsProto\022@\n\021festival_settings\030\010 \001(\0132" +
+      "%.POGOProtos.Rpc.FestivalSettingsProto\022:" +
+      "\n\016event_settings\030\t \001(\0132\".POGOProtos.Rpc." +
+      "EventSettingsProto\022\031\n\021max_pokemon_types\030" +
+      "\n \001(\005\022@\n\016sfida_settings\030\013 \001(\0132(.POGOProt" +
+      "os.Rpc.SfidaGlobalSettingsProto\0227\n\rnews_" +
+      "settings\030\014 \001(\0132 .POGOProtos.Rpc.NewsSett" +
+      "ingProto\022F\n\024translation_settings\030\r \001(\0132(" +
+      ".POGOProtos.Rpc.TranslationSettingsProto" +
+      "\022@\n\021passcode_settings\030\016 \001(\0132%.POGOProtos" +
+      ".Rpc.PasscodeSettingsProto\022H\n\025notificati" +
+      "on_settings\030\017 \001(\0132).POGOProtos.Rpc.Notif" +
+      "icationSettingsProto\022\034\n\024client_app_black" +
+      "list\030\020 \003(\t\022L\n\024client_perf_settings\030\021 \001(\013" +
+      "2..POGOProtos.Rpc.ClientPerformanceSetti" +
+      "ngsProto\022E\n\024news_global_settings\030\022 \001(\0132\'" +
+      ".POGOProtos.Rpc.NewsGlobalSettingsProto\022" +
+      "G\n\025quest_global_settings\030\023 \001(\0132(.POGOPro" +
+      "tos.Rpc.QuestGlobalSettingsProto\022I\n\026belu" +
+      "ga_global_settings\030\024 \001(\0132).POGOProtos.Rp" +
+      "c.BelugaGlobalSettingsProto\022O\n\031telemetry" +
+      "_global_settings\030\025 \001(\0132,.POGOProtos.Rpc." +
+      "TelemetryGlobalSettingsProto\022:\n\016login_se" +
+      "ttings\030\026 \001(\0132\".POGOProtos.Rpc.LoginSetti" +
+      "ngsProto\022B\n\017social_settings\030\027 \001(\0132).POGO" +
+      "Protos.Rpc.SocialClientSettingsProto\022K\n\027" +
+      "trading_global_settings\030\030 \001(\0132*.POGOProt" +
+      "os.Rpc.TradingGlobalSettingsProto\022E\n\036add" +
+      "itional_allowed_pokemon_ids\030\031 \003(\0162\035.POGO" +
+      "Protos.Rpc.HoloPokemonId\022M\n\030upsight_logg" +
+      "ing_settings\030\032 \001(\0132+.POGOProtos.Rpc.Upsi" +
+      "ghtLoggingSettingsProto\022I\n\026combat_global" +
+      "_settings\030\033 \001(\0132).POGOProtos.Rpc.CombatG" +
+      "lobalSettingsProto\022I\n\023third_move_setting" +
+      "s\030\034 \001(\0132,.POGOProtos.Rpc.ThirdMoveGlobal" +
+      "SettingsProto\022\\\n combat_challenge_global" +
+      "_settings\030\035 \001(\01322.POGOProtos.Rpc.CombatC" +
+      "hallengeGlobalSettingsProto\022Q\n\026bgmode_gl" +
+      "obal_settings\030\036 \001(\01321.POGOProtos.Rpc.Bac" +
+      "kgroundModeGlobalSettingsProto\022:\n\016probe_" +
+      "settings\030\037 \001(\0132\".POGOProtos.Rpc.ProbeSet" +
+      "tingsProto\022P\n\022purchased_settings\030  \001(\01324" +
+      ".POGOProtos.Rpc.PokecoinPurchaseDisplayS" +
+      "ettingsProto\022B\n\022helpshift_settings\030! \001(\013" +
+      "2&.POGOProtos.Rpc.HelpshiftSettingsProto" +
+      "\022@\n\021ar_photo_settings\030\" \001(\0132%.POGOProtos" +
+      ".Rpc.ArPhotoGlobalSettings\022<\n\014poi_settin" +
+      "gs\030# \001(\0132&.POGOProtos.Rpc.PoiGlobalSetti" +
+      "ngsProto\022D\n\020pokemon_settings\030$ \001(\0132*.POG" +
+      "OProtos.Rpc.PokemonGlobalSettingsProto\022B" +
+      "\n\017avatar_settings\030% \001(\0132).POGOProtos.Rpc" +
+      ".AvatarGlobalSettingsProto\022G\n\025evolution_" +
+      "v2_settings\030& \001(\0132(.POGOProtos.Rpc.Evolu" +
+      "tionV2SettingsProto\022F\n\021incident_settings" +
+      "\030\' \001(\0132+.POGOProtos.Rpc.IncidentGlobalSe" +
+      "ttingsProto\022:\n\016koala_settings\030( \001(\0132\".PO" +
+      "GOProtos.Rpc.KoalaSettingsProto\022@\n\021kanga" +
+      "roo_settings\030) \001(\0132%.POGOProtos.Rpc.Kang" +
+      "arooSettingsProto\022@\n\016buddy_settings\030+ \001(" +
+      "\0132(.POGOProtos.Rpc.BuddyGlobalSettingsPr" +
+      "oto\022:\n\016input_settings\030, \001(\0132\".POGOProtos" +
+      ".Rpc.InputSettingsProto\0226\n\014gmt_settings\030" +
+      "- \001(\0132 .POGOProtos.Rpc.GmtSettingsProto\022" +
+      "\035\n\025use_local_time_action\030/ \001(\010\022E\n\024ardk_c" +
+      "onfig_settings\0300 \001(\0132\'.POGOProtos.Rpc.Ar" +
+      "dkConfigSettingsProto\022D\n\017enabled_pokemon" +
+      "\0301 \001(\0132+.POGOProtos.Rpc.EnabledPokemonSe" +
+      "ttingsProto\022V\n\035pokemon_bulk_upgrade_sett" +
+      "ings\0302 \001(\0132/.POGOProtos.Rpc.PokemonBulkU" +
+      "pgradeSettingsProto\022O\n\031planned_downtime_" +
+      "settings\0303 \001(\0132,.POGOProtos.Rpc.PlannedD" +
+      "owntimeSettingsProto\022C\n\023ar_mapping_setti" +
+      "ngs\0304 \001(\0132&.POGOProtos.Rpc.ArMappingSett" +
+      "ingsProto\022T\n\034raid_invite_friends_setting" +
+      "s\0305 \001(\0132..POGOProtos.Rpc.RaidInviteFrien" +
+      "dsSettingsProto\022S\n\030daily_encounter_setti" +
+      "ngs\0306 \001(\01321.POGOProtos.Rpc.DailyEncounte" +
+      "rGlobalSettingsProto\022E\n\024raid_ticket_sett" +
+      "ings\0307 \001(\0132\'.POGOProtos.Rpc.RaidTicketSe" +
+      "ttingsProto\022Q\n\027rocket_balloon_settings\0308" +
+      " \001(\01320.POGOProtos.Rpc.RocketBalloonGloba" +
+      "lSettingsProto\022X\n\036timed_group_challenge_" +
+      "settings\0309 \001(\01320.POGOProtos.Rpc.TimedGro" +
+      "upChallengeSettingsProto\022<\n\006field1\030: \001(\013" +
+      "2,.POGOProtos.Rpc.NewGlobalSettingsField" +
+      "1Proto\022G\n\025lobby_client_settings\030; \001(\0132(." +
+      "POGOProtos.Rpc.LobbyClientSettingsProto\022" +
+      "<\n\006field2\030= \001(\0132,.POGOProtos.Rpc.NewGlob" +
+      "alSettingsField2Proto\022<\n\006field3\030> \001(\0132,." +
+      "POGOProtos.Rpc.NewGlobalSettingsField3Pr" +
+      "oto\022<\n\006field4\030@ \001(\0132,.POGOProtos.Rpc.New" +
+      "GlobalSettingsField4Proto\"\255\010\n\030AvatarCust" +
+      "omizationProto\022\017\n\007enabled\030\001 \001(\010\0225\n\013avata" +
+      "r_type\030\002 \001(\0162 .POGOProtos.Rpc.PlayerAvat" +
+      "arType\022;\n\004slot\030\003 \003(\0162-.POGOProtos.Rpc.Av" +
+      "atarCustomizationProto.Slot\022\023\n\013bundle_na" +
+      "me\030\004 \001(\t\022\022\n\nasset_name\030\005 \001(\t\022\022\n\ngroup_na" +
+      "me\030\006 \001(\t\022\022\n\nsort_order\030\007 \001(\005\022[\n\013unlock_t" +
+      "ype\030\010 \001(\0162F.POGOProtos.Rpc.AvatarCustomi" +
+      "zationProto.AvatarCustomizationUnlockTyp" +
+      "e\022Y\n\npromo_type\030\t \003(\0162E.POGOProtos.Rpc.A" +
+      "vatarCustomizationProto.AvatarCustomizat" +
+      "ionPromoType\0228\n\021unlock_badge_type\030\n \001(\0162" +
+      "\035.POGOProtos.Rpc.HoloBadgeType\022\017\n\007iap_sk" +
+      "u\030\013 \001(\t\022\032\n\022unlock_badge_level\030\014 \001(\005\022\021\n\ti" +
+      "con_name\030\r \001(\t\022\033\n\023unlock_player_level\030\016 " +
+      "\001(\005\022\020\n\010set_name\030\017 \001(\t\022\026\n\016set_prime_item\030" +
+      "\020 \001(\010\022!\n\031incompatible_bundle_names\030\021 \003(\t" +
+      "\"\221\001\n\035AvatarCustomizationUnlockType\022\025\n\021UN" +
+      "SET_UNLOCK_TYPE\020\000\022\013\n\007DEFAULT\020\001\022\020\n\014MEDAL_" +
+      "REWARD\020\002\022\020\n\014IAP_CLOTHING\020\003\022\020\n\014LEVEL_REWA" +
+      "RD\020\004\022\026\n\022COMBAT_RANK_REWARD\020\005\"\274\001\n\004Slot\022\016\n" +
+      "\nUNSET_SLOT\020\000\022\010\n\004HAIR\020\001\022\t\n\005SHIRT\020\002\022\t\n\005PA" +
+      "NTS\020\003\022\007\n\003HAT\020\004\022\t\n\005SHOES\020\005\022\010\n\004EYES\020\006\022\014\n\010B" +
+      "ACKPACK\020\007\022\n\n\006GLOVES\020\010\022\t\n\005SOCKS\020\t\022\010\n\004BELT" +
+      "\020\n\022\013\n\007GLASSES\020\013\022\014\n\010NECKLACE\020\014\022\010\n\004SKIN\020\r\022" +
+      "\010\n\004POSE\020\016\022\010\n\004FACE\020\017\"L\n\034AvatarCustomizati" +
+      "onPromoType\022\024\n\020UNSET_PROMO_TYPE\020\000\022\010\n\004SAL" +
+      "E\020\001\022\014\n\010FEATURED\020\002\"7\n\013KOCCEDPIKAD\022\023\n\013doln" +
+      "ddiebpn\030\001 \001(\003\022\023\n\013eehfodhamcl\030\002 \001(\003\"#\n!Wi" +
+      "thSuperEffectiveChargeMoveProto\"\354\001\n\013KOJI" +
+      "JOEBGON\0222\n\006status\030\001 \001(\0162\".POGOProtos.Rpc" +
+      ".KOJIJOEBGON.Status\0225\n\013ajmbloldfdf\030\002 \003(\013" +
+      "2 .POGOProtos.Rpc.ClientQuestProto\0225\n\013id" +
+      "naacklgjk\030\003 \003(\0132 .POGOProtos.Rpc.ClientQ" +
+      "uestProto\";\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
+      "S\020\001\022\031\n\025ERROR_INVALID_DISPLAY\020\002\"h\n\017RpcRes" +
+      "ponseTime\022+\n\013naeknbcofoi\030\001 \001(\0162\026.POGOPro" +
+      "tos.Rpc.Method\022\023\n\013bhoahihfeog\030\002 \001(\005\022\023\n\013h" +
+      "jocokdcdal\030\003 \001(\002\"M\n\013KPLAFGNMHHH\022)\n\013ekpoh" +
+      "jfklal\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022\023\n\013mh" +
+      "podigefok\030\002 \001(\005\"\243\001\n\013LAKEAGGMIEH\022\023\n\013dcibf" +
+      "djpcdo\030\001 \001(\t\022\023\n\013lndigkkjfml\030\002 \001(\t\022\023\n\013dfn" +
+      "gpjpknmp\030\003 \001(\001\022\023\n\013nnenpbhjdgf\030\004 \001(\001\022@\n\013o" +
+      "killgigohn\030\005 \001(\0162+.POGOProtos.Rpc.EnumWr" +
+      "apper.InvasionContext\"(\n\021PlayerCameraPro" +
+      "to\022\023\n\013fddpkbidblg\030\001 \001(\010\"7\n\013LBKAOIOIJKC\022\023" +
+      "\n\013ckniekbneoe\030\001 \001(\003\022\023\n\013adfnjbdncbj\030\002 \001(\t" +
+      "\"j\n\025BattleAttributesProto\022\023\n\013sta_percent" +
+      "\030\001 \001(\002\022\023\n\013atk_percent\030\002 \001(\002\022\023\n\013def_perce" +
+      "nt\030\003 \001(\002\022\022\n\nduration_s\030\004 \001(\002\"\237\003\n\025DiskEnc" +
+      "ounterOutProto\022<\n\006result\030\001 \001(\0162,.POGOPro" +
+      "tos.Rpc.DiskEncounterOutProto.Result\022-\n\007" +
+      "pokemon\030\002 \001(\0132\034.POGOProtos.Rpc.PokemonPr" +
+      "oto\022D\n\023capture_probability\030\003 \001(\0132\'.POGOP" +
+      "rotos.Rpc.CaptureProbabilityProto\022)\n\013act" +
+      "ive_item\030\004 \001(\0162\024.POGOProtos.Rpc.Item\022\"\n\032" +
+      "arplus_attempts_until_flee\030\005 \001(\005\"\203\001\n\006Res" +
+      "ult\022\013\n\007UNKNOWN\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rNOT_AVA" +
+      "ILABLE\020\002\022\020\n\014NOT_IN_RANGE\020\003\022\036\n\032ENCOUNTER_" +
+      "ALREADY_FINISHED\020\004\022\032\n\026POKEMON_INVENTORY_" +
+      "FULL\020\005\"\317\001\n\022EquipBadgeOutProto\0229\n\006result\030" +
+      "\001 \001(\0162).POGOProtos.Rpc.EquipBadgeOutProt" +
+      "o.Result\0224\n\010equipped\030\002 \001(\0132\".POGOProtos." +
+      "Rpc.EquippedBadgeProto\"H\n\006Result\022\t\n\005UNSE" +
+      "T\020\000\022\013\n\007SUCCESS\020\001\022\023\n\017COOLDOWN_ACTIVE\020\002\022\021\n" +
+      "\rNOT_QUALIFIED\020\003\"Q\n\013LCPGNLPCIAE\022B\n\013agldp" +
+      "nffeoo\030\001 \003(\0132-.POGOProtos.Rpc.GameMaster" +
+      "ClientTemplateProto\"v\n\013LDCPOPIKHAM\022\023\n\013dp" +
+      "gejbjfgge\030\001 \003(\t\022\023\n\013fgonpfibkai\030\002 \001(\t\022\023\n\013" +
+      "jkpcajihcao\030\003 \003(\005\022\023\n\013olfnggmefal\030\004 \001(\001\022\023" +
+      "\n\013aocfljninfi\030\005 \001(\001\"\223\001\n\013LDDMBFHHMFD\0220\n\013c" +
+      "jajikhdnil\030\001 \003(\0132\033.POGOProtos.Rpc.IHCDIN" +
+      "INCLE\022\023\n\013pjeachbanff\030\002 \001(\010\022\023\n\013ffkpnhjlid" +
+      "m\030\003 \001(\003\022\023\n\013npfkomnambb\030\004 \001(\t\022\023\n\013emodglno" +
+      "cmb\030\005 \001(\t\"\373\005\n\036PlatformPoiSubmissionTelem" +
+      "etry\022\\\n\014gui_event_id\030\001 \001(\0162F.POGOProtos." +
+      "Rpc.PlatformPoiSubmissionTelemetry.PoiSu" +
+      "bmissionGuiEventId\0220\n\nimage_type\030\002 \001(\0162\034" +
+      ".POGOProtos.Rpc.PoiImageType\022W\n\016camera_s" +
+      "tep_id\030\003 \001(\0162?.POGOProtos.Rpc.PlatformPo" +
+      "iSubmissionTelemetry.PoiCameraStepIds\"K\n" +
+      "\020PoiCameraStepIds\022\t\n\005UNSET\020\000\022\t\n\005ENTER\020\001\022" +
+      "\n\n\006RETAKE\020\002\022\013\n\007CONFIRM\020\003\022\010\n\004EXIT\020\004\"\242\003\n\027P" +
+      "oiSubmissionGuiEventId\022\013\n\007UNKNOWN\020\000\022\030\n\024P" +
+      "OI_NOMINATION_ENTER\020\001\022\031\n\025POI_TUTORIAL_CO" +
+      "MPLETE\020\002\022\033\n\027POI_MAP_CHANGEDVIEW_MAP\020\003\022!\n" +
+      "\035POI_MAP_CHANGEDVIEW_SATELLITE\020\004\022\033\n\027POI_" +
+      "MAP_CENTER_LOCATION\020\005\022\024\n\020POI_LOCATION_SE" +
+      "T\020\006\022\032\n\026POI_PHOTO_CAMERA_ENTER\020\007\022\031\n\025POI_P" +
+      "HOTO_CAMERA_EXIT\020\010\022\025\n\021POI_TITLE_ENTERED\020" +
+      "\t\022\031\n\025POI_DESCRIPTION_ENTER\020\n\022\027\n\023POI_DETA" +
+      "ILS_CONFIRM\020\013\022\034\n\030POI_SUPPORTINGINFO_ENTE" +
+      "R\020\014\022\031\n\025POI_SUBMIT_BUTTON_HIT\020\r\022\027\n\023POI_EX" +
+      "IT_BUTTON_HIT\020\016\"\r\n\013LDJMHBEABNN\"\215\003\n\033UseIt" +
+      "emEggIncubatorOutProto\022B\n\006result\030\001 \001(\01622" +
+      ".POGOProtos.Rpc.UseItemEggIncubatorOutPr" +
+      "oto.Result\0228\n\regg_incubator\030\002 \001(\0132!.POGO" +
+      "Protos.Rpc.EggIncubatorProto\"\357\001\n\006Result\022" +
+      "\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\035\n\031ERROR_INCUBAT" +
+      "OR_NOT_FOUND\020\002\022\037\n\033ERROR_POKEMON_EGG_NOT_" +
+      "FOUND\020\003\022\034\n\030ERROR_POKEMON_ID_NOT_EGG\020\004\022\"\n" +
+      "\036ERROR_INCUBATOR_ALREADY_IN_USE\020\005\022$\n ERR" +
+      "OR_POKEMON_ALREADY_INCUBATING\020\006\022%\n!ERROR" +
+      "_INCUBATOR_NO_USES_REMAINING\020\007\"\212\003\n\031GetIn" +
+      "censePokemonOutProto\022@\n\006result\030\001 \001(\01620.P" +
+      "OGOProtos.Rpc.GetIncensePokemonOutProto." +
+      "Result\022\027\n\017pokemon_type_id\030\002 \001(\005\022\013\n\003lat\030\003" +
+      " \001(\001\022\013\n\003lng\030\004 \001(\001\022\032\n\022encounter_location\030" +
+      "\005 \001(\t\022\024\n\014encounter_id\030\006 \001(\004\022\031\n\021disappear" +
+      "_time_ms\030\007 \001(\003\022<\n\017pokemon_display\030\010 \001(\0132" +
+      "#.POGOProtos.Rpc.PokemonDisplayProto\"m\n\006" +
+      "Result\022\035\n\031INCENSE_ENCOUNTER_UNKNOWN\020\000\022\037\n" +
+      "\033INCENSE_ENCOUNTER_AVAILABLE\020\001\022#\n\037INCENS" +
+      "E_ENCOUNTER_NOT_AVAILABLE\020\002\"L\n\013LDMPFNDGI" +
+      "LP\022\023\n\013alflaepafnn\030\001 \001(\t\022\023\n\013jnojmednlil\030\002" +
+      " \003(\004\022\023\n\013dmmcbhcceml\030\003 \001(\003\"b\n\027PokemonCand" +
+      "yRewardProto\0222\n\013mfkgkhdmbpb\030\001 \001(\0162\035.POGO" +
+      "Protos.Rpc.HoloPokemonId\022\023\n\013ligbfceekdo\030" +
+      "\002 \001(\005\"\317\001\n\013LEJIKNOPOEE\022-\n\013laihnnaljpj\030\001 \001" +
+      "(\0162\030.POGOProtos.Rpc.Platform\022\023\n\013agjadkbc" +
+      "fpk\030\002 \001(\t\022\023\n\013dopmejpngoj\030\003 \001(\t\022\023\n\013ddhmpo" +
+      "icike\030\004 \001(\t\022\023\n\013hbjjgpclhnj\030\005 \001(\r\022\023\n\013kfna" +
+      "albpflm\030\006 \001(\010\022\023\n\013page_offset\030\007 \001(\005\022\023\n\013jm" +
+      "kkockkpbe\030\010 \001(\004\"E\n\031ScreenResolutionTelem" +
+      "etry\022\023\n\013gnnnekplmlj\030\001 \001(\005\022\023\n\013cgjmpdlflal" +
+      "\030\002 \001(\005\"[\n\032EquippedBadgeSettingsProto\022\023\n\013" +
+      "ieedgcmpenm\030\001 \001(\003\022\023\n\013ocplkagjjmj\030\002 \003(\002\022\023" +
+      "\n\013bleophbaamf\030\003 \003(\002\"\r\n\013LFKAMBNMOFP\"\r\n\013LG" +
+      "CMDJHIIPK\"7\n\013LGFHNAOEMGA\022\023\n\013mjlofidknme\030" +
+      "\001 \001(\t\022\023\n\013gkbagaidnki\030\002 \001(\t\"\260\001\n\013LGGCLGDME" +
+      "MN\022\023\n\013alflaepafnn\030\001 \001(\t\0220\n\013amobkagpflm\030\002" +
+      " \001(\0132\033.POGOProtos.Rpc.DDJCEAJBKBO\022\023\n\013mlh" +
+      "emdbiojc\030\003 \001(\003\022\023\n\013ocjiaacdnap\030\004 \001(\003\0220\n\013p" +
+      "adagbanpff\030\005 \001(\0132\033.POGOProtos.Rpc.GHDAPC" +
+      "NAJGM\"\251\001\n\035AvatarGroupOrderSettingsProto\022" +
+      "R\n\005group\030\001 \003(\0132C.POGOProtos.Rpc.AvatarGr" +
+      "oupOrderSettingsProto.AvatarGroupOrderPr" +
+      "oto\0324\n\025AvatarGroupOrderProto\022\014\n\004name\030\001 \001" +
+      "(\t\022\r\n\005order\030\002 \001(\005\"\310\003\n\013LGOMBNEJMLL\022\023\n\013kmk" +
+      "jcldecjg\030\001 \001(\004\022\023\n\013ekldipabbak\030\002 \001(\003\0225\n\013f" +
+      "bdpjddippf\030\003 \003(\0132 .POGOProtos.Rpc.Pokemo" +
+      "nFortProto\0220\n\013abmkghdgfdl\030\004 \003(\0132\033.POGOPr" +
+      "otos.Rpc.PNONGDLKFAG\0220\n\013bmfefifmmno\030\005 \003(" +
+      "\0132\033.POGOProtos.Rpc.EJEPBGFALFH\022\023\n\013iagoij" +
+      "hcnnh\030\006 \003(\t\022\023\n\013dclepfdkoah\030\007 \001(\010\0220\n\013mjii" +
+      "bgelagb\030\010 \003(\0132\033.POGOProtos.Rpc.MNHABHJMO" +
+      "FB\0220\n\013ffejidfbgfk\030\t \003(\0132\033.POGOProtos.Rpc" +
+      ".PNONGDLKFAG\0224\n\013ojfgingnckd\030\n \003(\0132\037.POGO" +
+      "Protos.Rpc.MapPokemonProto\0220\n\013kdaanaoafl" +
+      "a\030\013 \003(\0132\033.POGOProtos.Rpc.HNEPENBFNEA\"\327\002\n" +
+      "\020SendGiftOutProto\0227\n\006result\030\001 \001(\0162\'.POGO" +
+      "Protos.Rpc.SendGiftOutProto.Result\022\022\n\naw" +
+      "arded_xp\030\002 \001(\005\"\365\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007" +
+      "SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\037\n\033ERROR_PL" +
+      "AYER_DOES_NOT_EXIST\020\003\022\035\n\031ERROR_GIFT_DOES" +
+      "_NOT_EXIST\020\004\022!\n\035ERROR_GIFT_ALREADY_SENT_" +
+      "TODAY\020\005\022\"\n\036ERROR_PLAYER_HAS_UNOPENED_GIF" +
+      "T\020\006\022\027\n\023ERROR_FRIEND_UPDATE\020\007\022 \n\034ERROR_PL" +
+      "AYER_HAS_NO_STICKERS\020\010\"\222\001\n\020AppliedItemPr" +
+      "oto\022\"\n\004item\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022" +
+      "/\n\titem_type\030\002 \001(\0162\034.POGOProtos.Rpc.Holo" +
+      "ItemType\022\025\n\rexpiration_ms\030\003 \001(\003\022\022\n\nappli" +
+      "ed_ms\030\004 \001(\003\"\233\002\n\024BuddyPettingOutProto\022;\n\006" +
+      "result\030\001 \001(\0162+.POGOProtos.Rpc.BuddyPetti" +
+      "ngOutProto.Result\0228\n\robserved_data\030\002 \001(\013" +
+      "2!.POGOProtos.Rpc.BuddyObservedData\022O\n\014s" +
+      "hown_hearts\030\003 \001(\01629.POGOProtos.Rpc.Buddy" +
+      "StatsShownHearts.BuddyShownHeartType\";\n\006" +
+      "Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\031\n\025ERROR_" +
+      "BUDDY_NOT_VALID\020\002\"\352\001\n\013LHNKNIGLOCI\0228\n\013dof" +
+      "kbmpelpo\030\001 \001(\0132#.POGOProtos.Rpc.PokemonD" +
+      "isplayProto\022\023\n\013iljdfpdkmno\030\002 \001(\005\022\023\n\013bmcf" +
+      "coflnde\030\003 \001(\t\0228\n\013poifncejdne\030\004 \001(\0132#.POG" +
+      "OProtos.Rpc.PokemonDisplayProto\022\023\n\013ajhin" +
+      "legbod\030\005 \001(\005\022\023\n\013nckpcdcmpac\030\006 \001(\003\022\023\n\013kdi" +
+      "ofnapfbg\030\007 \001(\005\"\035\n\033WithWinGymBattleStatus" +
+      "Proto\"?\n\013LIJIDLPCEDI\0220\n\013kefnccanpgo\030\001 \003(" +
+      "\0132\033.POGOProtos.Rpc.KFGNOGPMDKA\"\304\003\n%Submi" +
+      "tCombatChallengePokemonsOutProto\022L\n\006resu" +
+      "lt\030\001 \001(\0162<.POGOProtos.Rpc.SubmitCombatCh" +
+      "allengePokemonsOutProto.Result\0227\n\tchalle" +
+      "nge\030\002 \001(\0132$.POGOProtos.Rpc.CombatChallen" +
+      "geProto\"\223\002\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS" +
+      "\020\001\022!\n\035ERROR_INVALID_CHALLENGE_STATE\020\002\022\035\n" +
+      "\031ERROR_CHALLENGE_NOT_FOUND\020\003\022\"\n\036ERROR_PO" +
+      "KEMON_NOT_IN_INVENTORY\020\004\022\035\n\031ERROR_NOT_EL" +
+      "IGIBLE_LEAGUE\020\005\022\032\n\026ERROR_ALREADY_TIMEDOU" +
+      "T\020\006\022\033\n\027ERROR_ALREADY_CANCELLED\020\007\022\027\n\023ERRO" +
+      "R_ACCESS_DENIED\020\010\022\032\n\026ERROR_ALREADY_DECLI" +
+      "NED\020\t\"\306\001\n\025CatchPokemonTelemetry\022\016\n\006statu" +
+      "s\030\001 \001(\t\022N\n\033encounter_pokemon_telemetry\030\002" +
+      " \001(\0132).POGOProtos.Rpc.EncounterPokemonTe" +
+      "lemetry\022\020\n\010balltype\030\003 \001(\005\022\021\n\thit_grade\030\004" +
+      " \001(\005\022\022\n\ncurve_ball\030\005 \001(\010\022\024\n\014miss_percent" +
+      "\030\006 \001(\001\"\311\001\n\017MapPokemonProto\022\023\n\013aeoedfahjc" +
+      "k\030\001 \001(\t\022\023\n\013ckniekbneoe\030\002 \001(\004\022\023\n\013jogfiijb" +
+      "ohp\030\003 \001(\005\022\023\n\013fdmckneabfk\030\004 \001(\003\022\023\n\013phiabg" +
+      "hihcc\030\005 \001(\001\022\023\n\013icmnhajccaa\030\006 \001(\001\0228\n\013efpk" +
+      "nnlchbc\030\007 \001(\0132#.POGOProtos.Rpc.PokemonDi" +
+      "splayProto\"\345\001\n\020OpenGiftLogEntry\0227\n\006resul" +
+      "t\030\001 \001(\0162\'.POGOProtos.Rpc.OpenGiftLogEntr" +
+      "y.Result\022\023\n\013haklnomcbjp\030\002 \001(\t\022.\n\013nikdphg" +
+      "ligk\030\003 \001(\0132\031.POGOProtos.Rpc.LootProto\0221\n" +
+      "\013npejhkhkdjb\030\004 \003(\0132\034.POGOProtos.Rpc.Poke" +
+      "monProto\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS" +
+      "\020\001\"\236\n\n\021ClientPlayerProto\022\030\n\020creation_tim" +
+      "e_ms\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004team\030\005 \001(\005\022=" +
+      "\n\021tutorial_complete\030\007 \003(\0162\".POGOProtos.R" +
+      "pc.TutorialCompletion\022>\n\023player_avatar_p" +
+      "roto\030\010 \001(\0132!.POGOProtos.Rpc.PlayerAvatar" +
+      "Proto\022\033\n\023max_pokemon_storage\030\t \001(\005\022\030\n\020ma" +
+      "x_item_storage\030\n \001(\005\022:\n\021daily_bonus_prot" +
+      "o\030\013 \001(\0132\037.POGOProtos.Rpc.DailyBonusProto" +
+      "\022@\n\024equipped_badge_proto\030\014 \001(\0132\".POGOPro" +
+      "tos.Rpc.EquippedBadgeProto\022D\n\026contact_se" +
+      "ttings_proto\030\r \001(\0132$.POGOProtos.Rpc.Cont" +
+      "actSettingsProto\022G\n\020currency_balance\030\016 \003" +
       "(\0132-.POGOProtos.Rpc.PlatformCurrencyQuan" +
-      "tityProto\022\024\n\014player_token\030\004 \001(\t\"-\n\006Statu" +
-      "s\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\013\n\007FAILURE\020\002\"\"" +
-      "\n GetAvailableSkusAndBalancesProto\"\306\001\n\023P" +
-      "urchaseSkuOutProto\022:\n\006status\030\001 \001(\0162*.POG" +
-      "OProtos.Rpc.PurchaseSkuOutProto.Status\"s" +
-      "\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\013\n\007FAIL" +
-      "URE\020\002\022\023\n\017BALANCE_TOO_LOW\020\003\022\025\n\021SKU_NOT_AV" +
-      "AILABLE\020\004\022\030\n\024OVER_INVENTORY_LIMIT\020\005\"\"\n\020P" +
-      "urchaseSkuProto\022\016\n\006sku_id\030\001 \001(\t\"\253\001\n\033Rede" +
-      "emGoogleReceiptOutProto\022B\n\006status\030\001 \001(\0162" +
-      "2.POGOProtos.Rpc.RedeemGoogleReceiptOutP" +
-      "roto.Status\022\031\n\021transaction_token\030\002 \001(\t\"-" +
-      "\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\013\n\007FAIL" +
-      "URE\020\002\"\224\001\n\030RedeemGoogleReceiptProto\022\017\n\007re" +
-      "ceipt\030\001 \001(\t\022\031\n\021receipt_signature\030\002 \001(\t\022\031" +
-      "\n\021purchase_currency\030\003 \001(\t\022\025\n\rprice_paid_" +
-      "e6\030\004 \001(\005\022\032\n\022price_paid_e6_long\030\005 \001(\003\"2\n\024" +
-      "SkuPresentationProto\022\013\n\003key\030\001 \001(\t\022\r\n\005val" +
-      "ue\030\002 \001(\t\"\331\001\n\022ClientWeatherProto\022\022\n\ns2_ce" +
-      "ll_id\030\001 \001(\003\022<\n\017display_weather\030\002 \001(\0132#.P" +
-      "OGOProtos.Rpc.DisplayWeatherProto\022>\n\020gam" +
-      "eplay_weather\030\003 \001(\0132$.POGOProtos.Rpc.Gam" +
-      "eplayWeatherProto\0221\n\006alerts\030\004 \003(\0132!.POGO" +
-      "Protos.Rpc.WeatherAlertProto\"\237\004\n\023Display" +
-      "WeatherProto\022E\n\013cloud_level\030\001 \001(\01620.POGO" +
-      "Protos.Rpc.DisplayWeatherProto.DisplayLe" +
-      "vel\022D\n\nrain_level\030\002 \001(\01620.POGOProtos.Rpc" +
-      ".DisplayWeatherProto.DisplayLevel\022D\n\nwin" +
-      "d_level\030\003 \001(\01620.POGOProtos.Rpc.DisplayWe" +
-      "atherProto.DisplayLevel\022D\n\nsnow_level\030\004 " +
+      "tityProto\022!\n\031remaining_codename_claims\030\017" +
+      " \001(\005\022>\n\023buddy_pokemon_proto\030\020 \001(\0132!.POGO" +
+      "Protos.Rpc.BuddyPokemonProto\022\035\n\025battle_l" +
+      "ockout_end_ms\030\021 \001(\003\022H\n\035secondary_player_" +
+      "avatar_proto\030\022 \001(\0132!.POGOProtos.Rpc.Play" +
+      "erAvatarProto\022\033\n\023name_is_blacklisted\030\023 \001" +
+      "(\010\022I\n\026social_player_settings\030\024 \001(\0132).POG",
+      "OProtos.Rpc.SocialPlayerSettingsProto\022O\n" +
+      "\031combat_player_preferences\030\025 \001(\0132,.POGOP" +
+      "rotos.Rpc.CombatPlayerPreferencesProto\022\031" +
+      "\n\021player_support_id\030\026 \001(\t\022=\n\020team_change" +
+      "_info\030\027 \001(\0132#.POGOProtos.Rpc.TeamChangeI" +
+      "nfoProto\022A\n\032consumed_eevee_easter_eggs\030\030" +
+      " \003(\0162\035.POGOProtos.Rpc.HoloPokemonId\0222\n\nc" +
+      "ombat_log\030\031 \001(\0132\036.POGOProtos.Rpc.CombatL" +
+      "ogProto\022\033\n\023time_zone_offset_ms\030\032 \001(\003\022>\n\023" +
+      "buddy_observed_data\030\033 \001(\0132!.POGOProtos.R" +
+      "pc.BuddyObservedData\022\031\n\021helpshift_user_i" +
+      "d\030\034 \001(\t\022B\n\022player_preferences\030\035 \001(\0132&.PO" +
+      "GOProtos.Rpc.PlayerPreferencesProto\"_\n\017S" +
+      "ocialTelemetry\0227\n\013fmadfggpfjm\030\001 \001(\0162\".PO" +
+      "GOProtos.Rpc.SocialTelemetryIds\022\023\n\013faepl" +
+      "cfnahk\030\002 \001(\005\"\340\002\n\020GpsSettingsProto\022/\n\'dri" +
+      "ving_warning_speed_meters_per_second\030\001 \001" +
+      "(\002\022(\n driving_warning_cooldown_minutes\030\002" +
+      " \001(\002\022-\n%driving_speed_sample_interval_se" +
+      "conds\030\003 \001(\002\022\"\n\032driving_speed_sample_coun" +
+      "t\030\004 \001(\005\022.\n&idle_threshold_speed_meters_p" +
+      "er_second\030\005 \001(\002\022\'\n\037idle_threshold_durati" +
+      "on_seconds\030\006 \001(\005\022$\n\034idle_sample_interval" +
+      "_seconds\030\007 \001(\002\022\037\n\027idle_speed_sample_coun" +
+      "t\030\010 \001(\005\">\n\022WithNpcCombatProto\022\023\n\013cnkmgna" +
+      "haog\030\001 \001(\010\022\023\n\013lpncaigkond\030\002 \003(\t\"\212\003\n\032Send" +
+      "RaidInvitationOutProto\022A\n\006result\030\001 \001(\01621" +
+      ".POGOProtos.Rpc.SendRaidInvitationOutPro" +
+      "to.Result\022$\n\034num_friend_invites_remainin" +
+      "g\030\002 \001(\005\"\202\002\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS" +
+      "\020\001\022\027\n\023ERROR_NO_PERMISSION\020\002\022\027\n\023ERROR_GYM" +
+      "_NOT_FOUND\020\003\022\031\n\025ERROR_LOBBY_NOT_FOUND\020\004\022" +
+      "\033\n\027ERROR_PAST_CUT_OFF_TIME\020\005\022\036\n\032ERROR_NO" +
+      "_INVITES_REMAINING\020\006\022\024\n\020ERROR_LOBBY_FULL" +
+      "\020\007\022\033\n\027ERROR_INVITER_NOT_FOUND\020\010\022#\n\037ERROR" +
+      "_NO_REMOTE_SLOTS_REMAINING\020\t\"7\n\013LKPHMBPA" +
+      "CNE\022\023\n\013alflaepafnn\030\001 \001(\t\022\023\n\013gnfjabhnndo\030" +
+      "\002 \001(\t\"Q\n\013LLKJLEFDCNG\022B\n\013ndhnpojhjfj\030\001 \001(" +
+      "\0162-.POGOProtos.Rpc.EnumWrapper.Character" +
+      "Category\"a\n\013LLKLGDMGKIM\022\023\n\013dgnefoicngm\030\001" +
+      " \001(\001\022\023\n\013icplajlgmio\030\002 \001(\005\022\023\n\013cijfdojfkmk" +
+      "\030\003 \001(\001\022\023\n\013hkgefempbkb\030\004 \001(\003\"Y\n\013LLLCMIMDM" +
+      "JA\0225\n\013baeglbmdifp\030\001 \001(\0132 .POGOProtos.Rpc" +
+      ".PokemonTelemetry\022\023\n\013jddkbicpclm\030\002 \001(\010\"\327" +
+      "\002\n\025GetGymDetailsOutProto\0220\n\tgym_state\030\001 " +
+      "\001(\0132\035.POGOProtos.Rpc.GymStateProto\022\014\n\004na" +
+      "me\030\002 \001(\t\022\013\n\003url\030\003 \003(\t\022<\n\006result\030\004 \001(\0162,." +
+      "POGOProtos.Rpc.GetGymDetailsOutProto.Res" +
+      "ult\022\023\n\013description\030\005 \001(\t\022\025\n\rsecondary_ur" +
+      "l\030\006 \003(\t\022\031\n\021checkin_image_url\030\007 \001(\t\0222\n\nev" +
+      "ent_info\030\010 \001(\0132\036.POGOProtos.Rpc.EventInf" +
+      "oProto\"8\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001" +
+      "\022\026\n\022ERROR_NOT_IN_RANGE\020\002\"\325\002\n\026CheckPhotob" +
+      "ombOutProto\022=\n\006status\030\001 \001(\0162-.POGOProtos" +
+      ".Rpc.CheckPhotobombOutProto.Status\022;\n\024ph" +
+      "otobomb_pokemon_id\030\002 \001(\0162\035.POGOProtos.Rp" +
+      "c.HoloPokemonId\022F\n\031photobomb_pokemon_dis" +
+      "play\030\003 \001(\0132#.POGOProtos.Rpc.PokemonDispl" +
+      "ayProto\022\024\n\014encounter_id\030\004 \001(\004\022\013\n\003uri\030\005 \001" +
+      "(\t\"T\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\037\n\033" +
+      "ERROR_PHOTO_POKEMON_INVALID\020\002\022\021\n\rERROR_U" +
+      "NKNOWN\020\003\"_\n\026PlayerPreferencesProto\022\023\n\013db" +
+      "oobfokocj\030\001 \001(\010\0220\n\013kcmjmjighpb\030\002 \001(\0132\033.P" +
+      "OGOProtos.Rpc.JHBNFHCIJDK\"\227\001\n\034CombatStat" +
+      "StageSettingsProto\022\032\n\022minimum_stat_stage" +
+      "\030\001 \001(\005\022\032\n\022maximum_stat_stage\030\002 \001(\005\022\036\n\026at" +
+      "tack_buff_multiplier\030\003 \003(\002\022\037\n\027defense_bu" +
+      "ff_multiplier\030\004 \003(\002\"P\n\027ReleasePokemonTel" +
+      "emetry\0225\n\013baeglbmdifp\030\001 \001(\0132 .POGOProtos" +
+      ".Rpc.PokemonTelemetry\"7\n\013LNGNLGBMPAG\022\023\n\013" +
+      "ekaiopmhgkb\030\001 \001(\005\022\023\n\013cebfafgmdhp\030\002 \001(\005\"V" +
+      "\n(BuddyMultiplayerConnectionSucceededPro" +
+      "to\022\023\n\013test_number\030\001 \001(\005\022\025\n\rresponse_time" +
+      "\030\002 \001(\003\"\314\004\n\023FortDetailsOutProto\022\023\n\013mjlofi" +
+      "dknme\030\001 \001(\t\022\023\n\013nbpfkgpfhpc\030\002 \001(\005\0221\n\013baeg" +
+      "lbmdifp\030\003 \003(\0132\034.POGOProtos.Rpc.PokemonPr" +
+      "oto\022\023\n\013fgmkglfgljh\030\004 \001(\t\022\023\n\013ipfnaapigeh\030" +
+      "\005 \003(\t\022\023\n\013ncckaojhodf\030\006 \001(\005\022\023\n\013lhpockkkee" +
+      "a\030\007 \001(\005\022\023\n\013nieieblomfi\030\010 \001(\005\022-\n\013epejamde" +
+      "mjg\030\t \001(\0162\030.POGOProtos.Rpc.FortType\022\023\n\013p" +
+      "hiabghihcc\030\n \001(\001\022\023\n\013icmnhajccaa\030\013 \001(\001\022\023\n" +
+      "\013lcdegoaaeao\030\014 \001(\t\022<\n\013bemfemnleom\030\r \003(\0132" +
+      "\'.POGOProtos.Rpc.ClientFortModifierProto" +
+      "\022\023\n\013fbbebhnjkii\030\016 \001(\010\022\023\n\013dbplmhjiehf\030\017 \001" +
+      "(\t\0223\n\013hgbajilhbak\030\020 \001(\0132\036.POGOProtos.Rpc" +
+      ".EventInfoProto\022\023\n\013nehenfgafil\030\021 \003(\t\022\023\n\013" +
+      "lgkeacjeghp\030\022 \001(\t\022:\n\013cnpdpimfkbe\030\023 \001(\0132%" +
+      ".POGOProtos.Rpc.SponsoredDetailsProto\"7\n" +
+      "\013LNLCFEMIFLN\022\023\n\013mfkgkhdmbpb\030\001 \001(\004\022\023\n\013lec" +
+      "obcejkpk\030\002 \001(\t\"M\n\013LOAFCNLEHNA\022)\n\013ekpohjf" +
+      "klal\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022\023\n\013knbl" +
+      "licccna\030\002 \001(\005\"\375\001\n\033AwardFreeRaidTicketOut" +
+      "Proto\022B\n\006result\030\001 \001(\01622.POGOProtos.Rpc.A" +
+      "wardFreeRaidTicketOutProto.Result\"\231\001\n\006Re" +
+      "sult\022\021\n\rNO_RESULT_SET\020\000\022\013\n\007SUCCESS\020\001\022(\n$" +
+      "ERROR_PLAYER_DOES_NOT_MEET_MIN_LEVEL\020\002\022&" +
+      "\n\"ERROR_DAILY_TICKET_ALREADY_AWARDED\020\003\022\035" +
+      "\n\031ERROR_PLAYER_OUT_OF_RANGE\020\004\"\376\001\n\025MapBud" +
+      "dySettingsProto\022\023\n\013jokccgjhani\030\001 \001(\005\022\023\n\013" +
+      "cbcppepegki\030\002 \001(\002\022\023\n\013onkpccfaaah\030\003 \001(\002\022\023" +
+      "\n\013gkgpacegagg\030\004 \001(\002\022\023\n\013behpmklpdgh\030\005 \001(\002" +
+      "\022\023\n\013bofpnmnnfmh\030\006 \001(\002\022\023\n\013bmbcfdllamd\030\007 \001" +
+      "(\002\022\023\n\013blfodabadcp\030\010 \001(\002\022\023\n\013nigahfmpnlp\030\t" +
+      " \001(\010\022\023\n\013lfhndodagad\030\n \001(\002\022\023\n\013dildpdmbgng" +
+      "\030\013 \001(\002\"\032\n\030WithWinBattleStatusProto\"\"\n\013LO" +
+      "NEIDCGMDM\022\023\n\013hpjgecpcgoj\030\001 \003(\004\"\357\001\n\013LPCBF" +
+      "AKMMDJ\022=\n\013kgihoibciap\030\001 \001(\0132(.POGOProtos" +
+      ".Rpc.FriendshipLevelDataProto\0228\n\013affofpd" +
+      "dmmp\030\002 \003(\0132#.POGOProtos.Rpc.GiftBoxDetai" +
+      "lsProto\022\023\n\013bemkenlenhj\030\003 \001(\t\022\023\n\013lecobcej" +
+      "kpk\030\004 \001(\t\022\023\n\013mhcghpcbakp\030\005 \001(\003\022\023\n\013bgpkjl" +
+      "ipecf\030\006 \001(\010\022\023\n\013nedmajefkbe\030\007 \001(\005\"D\n\037Poke" +
+      "monBulkUpgradeSettingsProto\022!\n\031enable_cl" +
+      "ient_side_change\030\001 \001(\010\"<\n RocketBalloonG" +
+      "lobalSettingsProto\022\030\n\020min_player_level\030\001" +
+      " \001(\005\"L\n\013MAIIINICDAA\022\023\n\013mfkgkhdmbpb\030\001 \001(\005" +
+      "\022\023\n\013nkhenfnjjge\030\002 \001(\005\022\023\n\013oekkdajjojn\030\003 \001" +
+      "(\005\"\270\005\n\022FortDeployOutProto\0229\n\006result\030\001 \001(" +
+      "\0162).POGOProtos.Rpc.FortDeployOutProto.Re" +
+      "sult\022C\n\026fort_details_out_proto\030\002 \001(\0132#.P" +
+      "OGOProtos.Rpc.FortDetailsOutProto\0221\n\013egg" +
+      "_pokemon\030\003 \001(\0132\034.POGOProtos.Rpc.PokemonP" +
+      "roto\0226\n\017gym_state_proto\030\004 \001(\0132\035.POGOProt" +
+      "os.Rpc.GymStateProto\"\266\003\n\006Result\022\021\n\rNO_RE" +
+      "SULT_SET\020\000\022\013\n\007SUCCESS\020\001\022%\n!ERROR_ALREADY" +
+      "_HAS_POKEMON_ON_FORT\020\002\022!\n\035ERROR_OPPOSING" +
+      "_TEAM_OWNS_FORT\020\003\022\026\n\022ERROR_FORT_IS_FULL\020" +
+      "\004\022\026\n\022ERROR_NOT_IN_RANGE\020\005\022\034\n\030ERROR_PLAYE" +
+      "R_HAS_NO_TEAM\020\006\022\035\n\031ERROR_POKEMON_NOT_FUL" +
+      "L_HP\020\007\022$\n ERROR_PLAYER_BELOW_MINIMUM_LEV" +
+      "EL\020\010\022\032\n\026ERROR_POKEMON_IS_BUDDY\020\t\022\035\n\031ERRO" +
+      "R_FORT_DEPLOY_LOCKOUT\020\n\022 \n\034ERROR_PLAYER_" +
+      "HAS_NO_NICKNAME\020\013\022\032\n\026ERROR_POI_INACCESSI" +
+      "BLE\020\014\022\033\n\027ERROR_LEGENDARY_POKEMON\020\r\022\031\n\025ER" +
+      "ROR_INVALID_POKEMON\020\016\"\200\001\n\025CurrencyQuanti" +
+      "tyProto\022\023\n\013efkjbabejfn\030\001 \001(\t\022\023\n\013ocdhcham" +
+      "pmj\030\002 \001(\005\022\023\n\013oookdofmngg\030\003 \001(\005\022\023\n\013igapjk" +
+      "hefdc\030\004 \001(\t\022\023\n\013lfbeennjkoi\030\005 \001(\003\"G\n\033Fort" +
+      "ModifierAttributesProto\022\023\n\013glkomphbebe\030\001" +
+      " \001(\005\022\023\n\013hkpdcajhdhe\030\002 \001(\005\"\357\t\n\020PlayerStat" +
+      "sProto\022\023\n\013gkpnheenjoj\030\001 \001(\005\022\023\n\013dmahiojgo" +
+      "ng\030\002 \001(\003\022\023\n\013pggbpohnbke\030\003 \001(\003\022\023\n\013mnmakdd" +
+      "mbag\030\004 \001(\003\022\023\n\013ofofmblglkf\030\005 \001(\002\022\023\n\013komdc" +
+      "ifbane\030\006 \001(\005\022\023\n\013kgkpdienjpj\030\007 \001(\005\022\023\n\013end" +
+      "kkopfgjn\030\010 \001(\005\022\023\n\013imcmcblbgon\030\t \001(\005\022\023\n\013b" +
+      "mmeginpdfb\030\n \001(\005\022\023\n\013glhhmimifhd\030\013 \001(\005\022\023\n" +
+      "\013gnkhjobabdg\030\014 \001(\005\022\023\n\013enmjmcdjgon\030\r \001(\005\022" +
+      "\023\n\013pkokdickjah\030\016 \001(\005\022\023\n\013ljaomminhon\030\017 \001(" +
+      "\005\022\023\n\013ipljhmeneji\030\020 \001(\005\022\023\n\013fefjollelbj\030\021 " +
+      "\001(\005\022\023\n\013jfcehhbcgjp\030\022 \001(\005\022\023\n\013nacigecgeoe\030" +
+      "\023 \001(\005\022\023\n\013ecjackdhhke\030\024 \001(\005\022\023\n\013kpocapgpac" +
+      "n\030\025 \001(\005\022\023\n\013dmgeabpifjo\030\026 \003(\005\022\023\n\013dlnmdope" +
+      "eko\030\027 \001(\005\022\023\n\013kknlldilenb\030\030 \001(\001\022\023\n\013cedjje" +
+      "gommc\030\031 \001(\003\022\023\n\013hgfncacnemh\030\032 \001(\005\022\023\n\013bjmj" +
+      "nmhncpp\030\033 \001(\005\022\023\n\013ekpjalefnmp\030\034 \001(\005\022\023\n\013jk" +
+      "mcegmfngb\030\035 \001(\005\022\023\n\013nklaonglfdm\030\036 \001(\005\022\023\n\013" +
+      "maielepphcn\030\037 \001(\003\0222\n\013dagnamgokpc\030  \003(\0162\035" +
+      ".POGOProtos.Rpc.HoloBadgeType\022\023\n\013gpbpdpf" +
+      "okgb\030! \001(\002\022\023\n\013pcehkfmjada\030\" \001(\005\022\023\n\013ghloj" +
+      "imopdf\030# \001(\005\022\023\n\013ibojpkminbe\030$ \001(\005\022\023\n\013mpi" +
+      "bpfjlkmk\030% \001(\003\022\023\n\013nbpkpbipbbo\030& \001(\003\022;\n\013i" +
+      "fkgplhgmji\030\' \001(\0132&.POGOProtos.Rpc.Player" +
+      "CombatStatsProto\022\023\n\013ngnifpacngg\030( \001(\005\022\023\n" +
+      "\013phcicpnpogb\030) \001(\005\022\023\n\013kkigeokclbe\030* \001(\005\022" +
+      "\023\n\013ppihcophcba\030+ \001(\005\022\023\n\013kojceccebmf\030, \001(" +
+      "\005\022\023\n\013bchcaaflpia\030/ \001(\005\022\023\n\013peoelhoibgp\0306 " +
+      "\001(\005\022\023\n\013mfilgkbkgoj\0307 \001(\003\022\023\n\013mfenhhciobk\030" +
+      "8 \001(\005\022\023\n\013mekimknhjej\0309 \001(\005\022A\n\013aegclidfef" +
+      "f\030: \001(\0132,.POGOProtos.Rpc.PlayerStatsProt" +
+      "o.JJFKKONEMAM\032L\n\013JJFKKONEMAM\022\023\n\013icplajlg" +
+      "mio\030\001 \001(\005\022\023\n\013dnfchiphndp\030\002 \001(\005\022\023\n\013cbhehh" +
+      "ebhbp\030\003 \001(\005\"\337\001\n\024WeatherAffinityProto\022P\n\021" +
+      "weather_condition\030\001 \001(\01625.POGOProtos.Rpc" +
+      ".GameplayWeatherProto.WeatherCondition\0225" +
+      "\n\014pokemon_type\030\002 \003(\0162\037.POGOProtos.Rpc.Ho" +
+      "loPokemonType\022>\n\025weakness_pokemon_type\030\003" +
+      " \003(\0162\037.POGOProtos.Rpc.HoloPokemonType\"\202\003" +
+      "\n\031GetVsSeekerStatusOutProto\022@\n\006result\030\001 " +
+      "\001(\01620.POGOProtos.Rpc.GetVsSeekerStatusOu" +
+      "tProto.Result\022:\n\tvs_seeker\030\002 \001(\0132\'.POGOP" +
+      "rotos.Rpc.VsSeekerAttributesProto\022\024\n\014sea" +
+      "son_ended\030\003 \001(\010\0222\n\ncombat_log\030\004 \001(\0132\036.PO" +
+      "GOProtos.Rpc.CombatLogProto\"\234\001\n\006Result\022\t" +
+      "\n\005UNSET\020\000\022\031\n\025SUCCESS_FULLY_CHARGED\020\001\022!\n\035" +
+      "SUCCESS_NOT_FULLY_CHARGED_YET\020\002\022\035\n\031ERROR" +
+      "_VS_SEEKER_NOT_FOUND\020\003\022*\n&ERROR_VS_SEEKE" +
+      "R_NEVER_STARTED_CHARGING\020\004\"\247\016\n\013MCEAPJFBC" +
+      "FE\022\023\n\013jkenapdnljb\030\001 \001(\004\022\023\n\013ibgeeoapfoj\030\031" +
+      " \001(\003\022\023\n\013lnblklpibde\030\034 \001(\003\022\023\n\013dfidajgjdba" +
+      "\030\035 \001(\003\022\023\n\013kcfmjclhpmd\030\036 \001(\010\022\023\n\013klakafabb" +
+      "eh\030& \001(\005\022\023\n\013ffnpchcienm\030/ \001(\003\022\023\n\013cppkjnm" +
+      "pbkb\0303 \001(\005\022\023\n\013lblljmdbfgo\0304 \001(\005\022\023\n\013nkhen" +
+      "fnjjge\0305 \001(\005\022A\n\013kbfpdfljbig\0306 \003(\0132,.POGO" +
+      "Protos.Rpc.MCEAPJFBCFE.KbfpdfljbigEntry\022" +
+      "\023\n\013eipoofejfpc\0307 \001(\003\022\023\n\013jldinacnnjg\0308 \001(" +
+      "\003\022\023\n\013gcegdopjnea\0309 \001(\002\022\023\n\013felgdfcggdn\030: " +
+      "\001(\003\022\023\n\013gmdjfldmgil\030; \001(\003\022\023\n\013hnhdlffocfb\030" +
+      "< \001(\003\022\023\n\013pbmdmjcdlno\030= \001(\003\022\023\n\013bmdpmmigaj" +
+      "j\030> \001(\005\022\023\n\013delmhcomblb\030? \001(\005\022\023\n\013iehiaoof" +
+      "app\030@ \001(\003\022\023\n\013pebldijnfoc\030A \001(\002\022\023\n\013lolngi" +
+      "ojfcm\030B \001(\002\0220\n\013omhbpdpcloj\030C \001(\0132\033.POGOP" +
+      "rotos.Rpc.PLNICJBIDMN\0223\n\013nchennmhggm\030D \001" +
+      "(\0132\036.POGOProtos.Rpc.BuddyGiftProto\022A\n\013oe" +
+      "gphmcaenb\030E \003(\0132,.POGOProtos.Rpc.MCEAPJF" +
+      "BCFE.OegphmcaenbEntry\022A\n\013bmlaijcmoek\030F \003" +
+      "(\0132,.POGOProtos.Rpc.MCEAPJFBCFE.Bmlaijcm" +
+      "oekEntry\022A\n\013lhjekkeejha\030G \003(\0132,.POGOProt" +
+      "os.Rpc.MCEAPJFBCFE.LhjekkeejhaEntry\022<\n\013n" +
+      "mcfglckkkl\030H \001(\0132\'.POGOProtos.Rpc.MCEAPJ" +
+      "FBCFE.CJLDEIIPBBJ\0228\n\013efpknnlchbc\030I \001(\0132#" +
+      ".POGOProtos.Rpc.PokemonDisplayProto\022\023\n\013o" +
+      "ppgolmnndn\030J \001(\010\022\023\n\013lecobcejkpk\030K \001(\t\022\023\n" +
+      "\013hhmlhnefdbc\030L \001(\003\0222\n\013ojacddlcblo\030M \001(\0162" +
+      "\035.POGOProtos.Rpc.HoloPokemonId\022\023\n\013dpcmki" +
+      "fkoch\030N \001(\003\022)\n\013eajohpjbknk\030O \001(\0162\024.POGOP" +
+      "rotos.Rpc.Item\022\023\n\013oboiiljmifi\030P \001(\t\022\023\n\013m" +
+      "jomhbbbldm\030Q \001(\003\022\023\n\013jpneiholigi\030R \001(\t\022\023\n" +
+      "\013nkdadfljhgh\030S \001(\003\022\023\n\013alkclhfggmh\030T \001(\003\022" +
+      "\023\n\013iaeebmnfdic\030U \001(\010\022<\n\013geakgldnkai\030V \001(" +
+      "\0132\'.POGOProtos.Rpc.MCEAPJFBCFE.CJLDEIIPB" +
+      "BJ\022\023\n\013joaplnmbhnk\030W \001(\005\032\245\001\n\013CJLDEIIPBBJ\022" +
+      "\023\n\013ffnpchcienm\030\001 \001(\003\022M\n\013efgnghnjnmf\030\002 \003(" +
+      "\01328.POGOProtos.Rpc.MCEAPJFBCFE.CJLDEIIPB" +
+      "BJ.EfgnghnjnmfEntry\0322\n\020EfgnghnjnmfEntry\022" +
+      "\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002 \001(\002:\0028\001\0322\n\020Kbfpd" +
+      "fljbigEntry\022\013\n\003key\030\001 \001(\005\022\r\n\005value\030\002 \001(\003:" +
+      "\0028\001\032Q\n\020OegphmcaenbEntry\022\013\n\003key\030\001 \001(\005\022,\n\005" +
+      "value\030\002 \001(\0132\035.POGOProtos.Rpc.SouvenirPro" +
+      "to:\0028\001\032U\n\020BmlaijcmoekEntry\022\013\n\003key\030\001 \001(\005\022" +
+      "0\n\005value\030\002 \001(\0132!.POGOProtos.Rpc.DailyCou" +
+      "nterProto:\0028\001\032U\n\020LhjekkeejhaEntry\022\013\n\003key" +
+      "\030\001 \001(\005\0220\n\005value\030\002 \001(\0132!.POGOProtos.Rpc.D" +
+      "ailyCounterProto:\0028\001\"\302\001\n\013MCKHHLOPEHI\022<\n\013" +
+      "ohdgbilifch\030\001 \001(\0162\'.POGOProtos.Rpc.MCKHH" +
+      "LOPEHI.BDCENOCJKJB\022\023\n\013dopmejpngoj\030\002 \001(\t\022" +
+      "\023\n\013kpipndlhghb\030\003 \001(\t\"K\n\013BDCENOCJKJB\022\024\n\020P" +
+      "LATFORM_UNKNOWN\020\000\022\024\n\020PLATFORM_ANDROID\020\001\022" +
+      "\020\n\014PLATFORM_IOS\020\002\"-\n\026DaysWithARowQuestPr" +
+      "oto\022\023\n\013omoacbjmbjg\030\001 \001(\005\"7\n\013MDCFCHIHHCM\022" +
+      "\023\n\013hpjgecpcgoj\030\001 \003(\004\022\023\n\013pegfachkbdd\030\002 \001(" +
+      "\t\"\'\n\020StickerSentProto\022\023\n\013kabbgadinia\030\001 \001" +
+      "(\t\"\"\n\013MDNJECIJBHM\022\023\n\013pholndomfep\030\001 \001(\010\"\276" +
+      "\001\n\013MDPNLANGMNJ\0222\n\006status\030\001 \001(\0162\".POGOPro" +
+      "tos.Rpc.MDPNLANGMNJ.Status\0226\n\013ekinggfmnd" +
+      "g\030\002 \001(\0132!.POGOProtos.Rpc.ClientPlayerPro" +
+      "to\"C\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\024\n\020" +
+      "TEAM_ALREADY_SET\020\002\022\013\n\007FAILURE\020\003\"\"\n\013MEAND" +
+      "FLFKGL\022\023\n\013clgdnpihbdn\030\001 \003(\t\"\274\001\n\013MECABEOD" +
+      "CAI\022\023\n\013gafllpacbdf\030\001 \001(\t\022<\n\013jhkojebcolb\030" +
+      "\002 \001(\0162\'.POGOProtos.Rpc.CombatPlayerFinis" +
+      "hState\022\023\n\013jnojmednlil\030\003 \003(\004\022\023\n\013hdegllgme" +
+      "ih\030\004 \001(\t\0220\n\013ahfemdhnnfk\030\005 \001(\0132\033.POGOProt" +
+      "os.Rpc.HAKJCJHHHJN\"\372\003\n\013MECGHHCIGAO\0222\n\006st" +
+      "atus\030\001 \001(\0162\".POGOProtos.Rpc.MECGHHCIGAO." +
+      "Status\022\023\n\013iolfkfifdma\030\002 \001(\005\022<\n\013nldndpcfd" +
+      "mh\030\003 \003(\0132\'.POGOProtos.Rpc.MECGHHCIGAO.JA" +
+      "HELMAJHJN\022\023\n\013eagimidbada\030\005 \001(\t\022\023\n\013apiban" +
+      "mfegp\030\006 \001(\014\0327\n\013JAHELMAJHJN\022\023\n\013ekpohjfkla" +
+      "l\030\001 \001(\t\022\023\n\013knbllicccna\030\002 \001(\005\"\200\002\n\006Status\022" +
+      "\022\n\016STATUS_UNKNOWN\020\000\022\022\n\016STATUS_SUCCESS\020\001\022" +
+      "\033\n\027STATUS_ALREADY_REDEEMED\020\002\022!\n\035STATUS_F" +
+      "AILED_INVENTORY_CHECK\020\003\022\027\n\023STATUS_OUT_OF" +
+      "_RANGE\020\004\022\031\n\025STATUS_WRONG_LOCATION\020\005\022\027\n\023S" +
+      "TATUS_RATE_LIMITED\020\006\022\022\n\016STATUS_INVALID\020\007" +
+      "\022\031\n\025STATUS_FULLY_REDEEMED\020\010\022\022\n\016STATUS_EX" +
+      "PIRED\020\t\"7\n\013MFBHAIHCPFD\022\023\n\013mfkgkhdmbpb\030\001 " +
+      "\001(\003\022\023\n\013ohcbbeiobnc\030\002 \001(\010\"\344\001\n\020GameMasterF" +
+      "ield4\022\016\n\006field1\030\001 \001(\t\022)\n\006field2\030\002 \001(\0162\031." +
+      "POGOProtos.Rpc.QuestType\022.\n\006field3\030\003 \003(\013" +
+      "2\036.POGOProtos.Rpc.QuestGoalProto\0222\n\006fiel" +
+      "d4\030\004 \001(\0162\".POGOProtos.Rpc.QuestProto.Con" +
+      "text\0221\n\006field5\030\005 \001(\0132!.POGOProtos.Rpc.Qu" +
+      "estDisplayProto\"\"\n\013MGDJCIFNHHB\022\023\n\013ddhpep" +
+      "nnmin\030\001 \001(\005\"\362\002\n\023GiftBoxDetailsProto\022\023\n\013h" +
+      "pjgecpcgoj\030\001 \001(\004\022\023\n\013manbemonlio\030\002 \001(\t\022\023\n" +
+      "\013jjacajcphjd\030\003 \001(\t\022\023\n\013mplnaggcakj\030\004 \001(\t\022" +
+      "\023\n\013focinckfcnb\030\005 \001(\t\022\023\n\013lndigkkjfml\030\006 \001(" +
+      "\t\022\023\n\013fjbfjmhmgom\030\007 \001(\t\022\023\n\013dfngpjpknmp\030\010 " +
+      "\001(\001\022\023\n\013nnenpbhjdgf\030\t \001(\001\022\023\n\013gjkkmmfeebl\030" +
+      "\n \001(\t\022\023\n\013dkjbagmmdjd\030\013 \001(\003\022\023\n\013mckblkfcfh" +
+      "a\030\014 \001(\003\022\023\n\013hbpnlfjbmjo\030\r \001(\004\022\023\n\013ofdfiooc" +
+      "cbl\030\016 \001(\010\0225\n\013gifoejepgid\030\017 \003(\0132 .POGOPro" +
+      "tos.Rpc.StickerSentProto\"\274\001\n\013MGGOBDFAEKK" +
+      "\022\023\n\013fgonpfibkai\030\001 \001(\t\022\023\n\013ganccamkoba\030\002 \001" +
+      "(\t\0226\n\013fnblbnflejd\030\003 \003(\0132!.POGOProtos.Rpc" +
+      ".BattleActionProto\0226\n\013jononjhoped\030\004 \001(\0132" +
+      "!.POGOProtos.Rpc.BattleActionProto\022\023\n\013he" +
+      "ncndffkoi\030\005 \001(\003\"\255\005\n\026GymBattleSettingsPro" +
+      "to\022\026\n\016energy_per_sec\030\001 \001(\002\022\031\n\021dodge_ener" +
+      "gy_cost\030\002 \001(\002\022\030\n\020retarget_seconds\030\003 \001(\002\022" +
+      "\035\n\025enemy_attack_interval\030\004 \001(\002\022\036\n\026attack" +
+      "_server_interval\030\005 \001(\002\022\036\n\026round_duration" +
+      "_seconds\030\006 \001(\002\022#\n\033bonus_time_per_ally_se" +
+      "conds\030\007 \001(\002\022$\n\034maximum_attackers_per_bat" +
+      "tle\030\010 \001(\005\022)\n!same_type_attack_bonus_mult" +
+      "iplier\030\t \001(\002\022\026\n\016maximum_energy\030\n \001(\005\022$\n\034" +
+      "energy_delta_per_health_lost\030\013 \001(\002\022\031\n\021do" +
+      "dge_duration_ms\030\014 \001(\005\022\034\n\024minimum_player_" +
+      "level\030\r \001(\005\022\030\n\020swap_duration_ms\030\016 \001(\005\022&\n" +
+      "\036dodge_damage_reduction_percent\030\017 \001(\002\022!\n" +
+      "\031minimum_raid_player_level\030\020 \001(\005\022.\n&shad" +
+      "ow_pokemon_attack_bonus_multiplier\030\021 \001(\002" +
+      "\022/\n\'shadow_pokemon_defense_bonus_multipl" +
+      "ier\030\022 \001(\002\0224\n,purified_pokemon_attack_mul" +
+      "tiplier_vs_shadow\030\023 \001(\002\"\275\001\n\024LoginActionT" +
+      "elemetry\022<\n\013gjdidbfclmn\030\001 \001(\0162\'.POGOProt" +
+      "os.Rpc.LoginActionTelemetryIds\022\023\n\013cobmdg" +
+      "fbbko\030\002 \001(\010\022\023\n\013pkdofmmahaj\030\003 \001(\010\022\023\n\013eohn" +
+      "bmhpjbe\030\004 \001(\010\022\023\n\013gifeijkgaap\030\005 \001(\t\022\023\n\013fj" +
+      "epflepana\030\006 \001(\t\"f\n\030NicknamePokemonTeleme" +
+      "try\0225\n\013baeglbmdifp\030\001 \001(\0132 .POGOProtos.Rp" +
+      "c.PokemonTelemetry\022\023\n\013lecobcejkpk\030\002 \001(\t\"" +
+      "A\n\025MegaEvoleSpeciesProto\022\023\n\013keeolgndmfd\030" +
+      "\001 \001(\005\022\023\n\013ifhlcjbnopa\030\002 \001(\005\"j\n\013PokemonInf" +
+      "o\0221\n\013baeglbmdifp\030\001 \001(\0132\034.POGOProtos.Rpc." +
+      "PokemonProto\022\023\n\013dbfgjppnlgn\030\002 \001(\005\022\023\n\013kja" +
+      "phihadoa\030\003 \001(\005\":\n\037PokecoinPurchaseDispla" +
+      "yGmtProto\022\027\n\017feature_enabled\030\001 \001(\010\"o\n\033Up" +
+      "sightLoggingSettingsProto\022\033\n\023use_verbose" +
+      "_logging\030\001 \001(\010\022\032\n\022logging_percentage\030\002 \001" +
+      "(\005\022\027\n\017disable_logging\030\003 \001(\010\"\213\001\n\013MHNEIDDB" +
+      "NGC\0227\n\006status\030\001 \001(\0162\'.POGOProtos.Rpc.DFJ" +
+      "BGELCPOL.HBIHKKBLENC\022.\n\013nldndpcfdmh\030\002 \001(" +
+      "\0132\031.POGOProtos.Rpc.LootProto\022\023\n\013endlkcen" +
+      "bpd\030\003 \001(\010\"\233\001\n\037TemporaryEvolutionResource" +
+      "Proto\022H\n\026temporary_evolution_id\030\001 \001(\0162(." +
+      "POGOProtos.Rpc.HoloTemporaryEvolutionId\022" +
+      "\024\n\014energy_count\030\002 \001(\005\022\030\n\020max_energy_coun" +
+      "t\030\003 \001(\005\"R\n\036ExperienceBoostAttributesProt" +
+      "o\022\025\n\rxp_multiplier\030\001 \001(\002\022\031\n\021boost_durati" +
+      "on_ms\030\002 \001(\005\"\354\003\n\030PlayerPublicProfileProto" +
+      "\022\014\n\004name\030\001 \001(\t\022\r\n\005level\030\002 \001(\005\0221\n\006avatar\030" +
+      "\003 \001(\0132!.POGOProtos.Rpc.PlayerAvatarProto" +
+      "\022\"\n\004team\030\004 \001(\0162\024.POGOProtos.Rpc.Team\022\023\n\013" +
+      "battles_won\030\005 \001(\005\022\021\n\tkm_walked\030\006 \001(\002\022\026\n\016" +
+      "caught_pokemon\030\007 \001(\005\0224\n\016gym_badge_type\030\010" +
+      " \001(\0162\034.POGOProtos.Rpc.GymBadgeType\0220\n\006ba" +
+      "dges\030\t \003(\0132 .POGOProtos.Rpc.PlayerBadgeP" +
+      "roto\022\022\n\nexperience\030\n \001(\003\022\032\n\022has_shared_e" +
+      "x_pass\030\013 \001(\010\022\023\n\013combat_rank\030\014 \001(\005\022\025\n\rcom" +
+      "bat_rating\030\r \001(\002\022X\n\033timed_group_challeng" +
+      "e_stats\030\016 \001(\01323.POGOProtos.Rpc.TimedGrou" +
+      "pChallengePlayerStatsProto\"\224\001\n\rGymStateP" +
+      "roto\0225\n\013ajghbigoedn\030\001 \001(\0132 .POGOProtos.R" +
+      "pc.PokemonFortProto\0227\n\013naeplcmlgjk\030\002 \003(\013" +
+      "2\".POGOProtos.Rpc.GymMembershipProto\022\023\n\013" +
+      "gegpmijglma\030\003 \001(\010\"\317\001\n\013MJIHINBNKHB\0222\n\006res" +
+      "ult\030\001 \001(\0162\".POGOProtos.Rpc.MJIHINBNKHB.R" +
+      "esult\022\023\n\013efkjbabejfn\030\002 \003(\t\022\023\n\013gnohbeajlf" +
+      "j\030\003 \003(\005\022\023\n\013egmjgaaipfn\030\004 \001(\005\"M\n\006Result\022\t" +
+      "\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\013\n\007FAILURE\020\002\022\014\n\010T" +
+      "OO_SOON\020\003\022\020\n\014NO_DEFENDERS\020\004\"\r\n\013MJOGPJFFF" +
+      "ML\"\205\004\n\027MegaEvolutionAttributes\022H\n\026tempor" +
+      "ary_evolution_id\030\001 \001(\0162(.POGOProtos.Rpc." +
+      "HoloTemporaryEvolutionId\022;\n\006field1\030\002 \001(\013" +
+      "2+.POGOProtos.Rpc.PokemonStatsAttributes" +
+      "Proto\022\016\n\006field2\030\003 \001(\002\022\016\n\006field3\030\004 \001(\002\022/\n" +
+      "\006field4\030\005 \001(\0162\037.POGOProtos.Rpc.HoloPokem" +
+      "onType\022/\n\006field5\030\006 \001(\0162\037.POGOProtos.Rpc." +
+      "HoloPokemonType\022\016\n\006field6\030\007 \001(\002\022<\n\006field" +
+      "7\030\010 \001(\0132,.POGOProtos.Rpc.PokemonCameraAt" +
+      "tributesProto\022?\n\006field8\030\t \001(\0132/.POGOProt" +
+      "os.Rpc.PokemonEncounterAttributesProto\022\016" +
+      "\n\006field9\030\n \001(\002\022\017\n\007field10\030\013 \001(\002\022\017\n\007field" +
+      "11\030\014 \003(\002\022\017\n\007field12\030\r \003(\002\022\017\n\007field13\030\016 \003" +
+      "(\002\"\r\n\013MKIDEAHMDDI\"\225\001\n\013MKIDOABNLJM\0222\n\006res" +
+      "ult\030\001 \001(\0162\".POGOProtos.Rpc.MKIDOABNLJM.R" +
+      "esult\"R\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022" +
+      "\021\n\rERROR_UNKNOWN\020\002\022\035\n\031ERROR_GIFT_DOES_NO" +
+      "T_EXIST\020\003\"\256\001\n\036LeaveInteractionRangeTelem" +
+      "etry\022\016\n\006result\030\001 \001(\t\022\023\n\013lndigkkjfml\030\002 \001(" +
+      "\t\022\023\n\013epejamdemjg\030\003 \001(\005\022\023\n\013hnjfcoheadf\030\004 " +
+      "\001(\003\022\023\n\013jmjdhimbnmd\030\005 \001(\t\022\023\n\013ebflhicdcnl\030" +
+      "\006 \001(\003\022\023\n\013fihlhmkkocb\030\007 \001(\t\"\220\002\n$GetGameMa" +
+      "sterClientTemplatesOutProto\022K\n\006result\030\001 " +
+      "\001(\0162;.POGOProtos.Rpc.GetGameMasterClient" +
+      "TemplatesOutProto.Result\022<\n\005items\030\002 \003(\0132" +
+      "-.POGOProtos.Rpc.GameMasterClientTemplat" +
+      "eProto\022\021\n\ttimestamp\030\003 \001(\004\022\023\n\013page_offset" +
+      "\030\004 \001(\005\"5\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001" +
+      "\022\010\n\004PAGE\020\002\022\t\n\005RETRY\020\003\"\267\001\n\013MLCHGEMGLHO\0222\n" +
+      "\006status\030\001 \001(\0162\".POGOProtos.Rpc.MLCHGEMGL" +
+      "HO.Status\0225\n\013ekfidinfbdd\030\002 \003(\0132 .POGOPro" +
+      "tos.Rpc.QuestRewardProto\"=\n\006Status\022\t\n\005UN" +
+      "SET\020\000\022\013\n\007SUCCESS\020\001\022\033\n\027ERROR_STILL_IN_PRO" +
+      "GRESS\020\002\"\321\004\n\037PokemonEncounterAttributesPr" +
+      "oto\022\031\n\021base_capture_rate\030\001 \001(\002\022\026\n\016base_f" +
+      "lee_rate\030\002 \001(\002\022\032\n\022collision_radius_m\030\003 \001" +
+      "(\002\022\032\n\022collision_height_m\030\004 \001(\002\022\037\n\027collis" +
+      "ion_head_radius_m\030\005 \001(\002\022>\n\rmovement_type" +
+      "\030\006 \001(\0162\'.POGOProtos.Rpc.HoloPokemonMovem" +
+      "entType\022\030\n\020movement_timer_s\030\007 \001(\002\022\023\n\013jum" +
+      "p_time_s\030\010 \001(\002\022\026\n\016attack_timer_s\030\t \001(\002\022\"" +
+      "\n\032bonus_candy_capture_reward\030\n \001(\005\022%\n\035bo" +
+      "nus_stardust_capture_reward\030\013 \001(\005\022\032\n\022att" +
+      "ack_probability\030\014 \001(\002\022\031\n\021dodge_probabili" +
+      "ty\030\r \001(\002\022\030\n\020dodge_duration_s\030\016 \001(\002\022\026\n\016do" +
+      "dge_distance\030\017 \001(\002\022\027\n\017camera_distance\030\020 " +
+      "\001(\002\022&\n\036min_pokemon_action_frequency_s\030\021 " +
+      "\001(\002\022&\n\036max_pokemon_action_frequency_s\030\022 ",
+      "\001(\002\"o\n\013MLKAKFPEEAA\022\023\n\013hdegllgmeih\030\001 \001(\t\022" +
+      "\023\n\013jnojmednlil\030\002 \003(\004\022!\n\031combat_league_te" +
+      "mplate_id\030\003 \001(\t\022\023\n\013dmmcbhcceml\030\004 \001(\003\"x\n\013" +
+      "MLLLPEELHLJ\0222\n\006status\030\001 \001(\0162\".POGOProtos" +
+      ".Rpc.MLLLPEELHLJ.Status\022\023\n\013kgdmpjffpaa\030\002" +
+      " \001(\003\" \n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"\210" +
+      "\001\n\017MegaEvoSettings\022\"\n\032ob_mega_evolve_dur" +
+      "ation_ms\030\001 \001(\003\022\025\n\rob_mega_boost\030\002 \001(\002\022\037\n" +
+      "\027ob_mega_same_type_boost\030\003 \001(\002\022\031\n\021ob_meg" +
+      "a_max_candy\030\004 \001(\005\"?\n\023TeamChangeInfoProto" +
+      "\022\023\n\013fijjckfnbpd\030\001 \001(\003\022\023\n\013hjgjbbiklnl\030\002 \001" +
+      "(\005\"\311\001\n\013MMIFILDJJNI\022<\n\013jjpcbbceoan\030\001 \003(\0132" +
+      "\'.POGOProtos.Rpc.MMIFILDJJNI.CKFHPPEELBK" +
+      "\032|\n\013CKFHPPEELBK\022.\n\013ifjdeaplamo\030\001 \001(\0162\031.P" +
+      "OGOProtos.Rpc.QuestType\022\023\n\013knbllicccna\030\002" +
+      " \001(\005\022\023\n\013heaeepoemki\030\003 \001(\005\022\023\n\013bgjelpddfej" +
+      "\030\004 \001(\005\"p\n\013MMLENDPLHNA\0227\n\013bambfakddab\030\001 \003" +
+      "(\0162\".POGOProtos.Rpc.TutorialCompletion\022\023" +
+      "\n\013adapogmohpd\030\002 \001(\010\022\023\n\013cnpkhiaehpb\030\003 \001(\010" +
+      "\"\241\002\n\023VsSeekerSetLogEntry\022:\n\006result\030\001 \001(\016" +
+      "2*.POGOProtos.Rpc.VsSeekerSetLogEntry.Re" +
+      "sult\022.\n\013nldndpcfdmh\030\002 \001(\0132\031.POGOProtos.R" +
+      "pc.LootProto\022\023\n\013mgfbndphaij\030\003 \001(\005\022\023\n\013bci" +
+      "eidchgpi\030\004 \001(\002\022\023\n\013dlpjojfhjbf\030\005 \001(\005\022\023\n\013b" +
+      "ffonlogccd\030\006 \001(\002\022\023\n\013dofhdajpbnd\030\007 \001(\005\022\023\n" +
+      "\013bfmllpobpcb\030\010 \001(\005\" \n\006Result\022\t\n\005UNSET\020\000\022" +
+      "\013\n\007SUCCESS\020\001\"a\n\013MNHABHJMOFB\022\023\n\013dckmpdbdg" +
+      "ca\030\001 \001(\t\022\023\n\013jhnakgfohgd\030\002 \001(\003\022\023\n\013phiabgh" +
+      "ihcc\030\003 \001(\001\022\023\n\013icmnhajccaa\030\004 \001(\001\"\337\002\n\013MNJK" +
+      "KBCBNCJ\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc" +
+      ".MNJKKBCBNCJ.Result\0221\n\013baeglbmdifp\030\002 \001(\013" +
+      "2\034.POGOProtos.Rpc.PokemonProto\022<\n\013dbianm" +
+      "bmnch\030\003 \001(\0132\'.POGOProtos.Rpc.CaptureProb" +
+      "abilityProto\022)\n\013iiadjbboilm\030\004 \001(\0162\024.POGO" +
+      "Protos.Rpc.Item\022\023\n\013bleeccpijbi\030\005 \001(\005\"k\n\006" +
+      "Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\032\n\026NO_ENC" +
+      "OUNTER_AVAILABLE\020\002\022\032\n\026POKEMON_INVENTORY_" +
+      "FULL\020\003\022\021\n\rERROR_UNKNOWN\020\004\"\237\001\n\023QuestStamp" +
+      "CardProto\0224\n\013phcdogbllok\030\001 \003(\0132\037.POGOPro" +
+      "tos.Rpc.QuestStampProto\022\023\n\013heaeepoemki\030\002" +
+      " \001(\005\022\023\n\013efmloggmbic\030\003 \001(\005\022\023\n\013mjlofidknme" +
+      "\030\004 \001(\t\022\023\n\013pekopdofdpi\030\005 \001(\t\"w\n\013MOCEFKIMK" +
+      "ND\022)\n\013pgknpdaambd\030\001 \001(\0162\024.POGOProtos.Rpc" +
+      ".Item\022\023\n\013lndigkkjfml\030\002 \001(\t\022\023\n\013nlblgfioei" +
+      "c\030\003 \001(\001\022\023\n\013ojnmcebeede\030\004 \001(\001\"B\n\020NewsSett" +
+      "ingProto\022.\n\013news_protos\030\001 \003(\0132\031.POGOProt" +
+      "os.Rpc.NewsProto\"8\n\013MOELCGCALLH\022)\n\013jakcn" +
+      "oogihe\030\001 \001(\0162\024.POGOProtos.Rpc.Item\"\317\002\n\022P" +
+      "articipationProto\022\023\n\013pmbpnlogogp\030\001 \001(\005\022\023" +
+      "\n\013ckikbiaoekn\030\002 \001(\005\022\023\n\013mncohkoobgg\030\003 \001(\005" +
+      "\022\023\n\013ibifpgchdnb\030\004 \001(\005\022\023\n\013nokiepcepjj\030\005 \001" +
+      "(\001\022\023\n\013chdlifcfhnf\030\006 \001(\001\022\023\n\013gbaeccojknk\030\007" +
+      " \001(\001\022\023\n\013lebpeihlioa\030\010 \001(\002\022=\n\013gmfmholhdcg" +
+      "\030\t \001(\0162(.POGOProtos.Rpc.FriendshipLevelM" +
+      "ilestone\022\023\n\013bfmbhagnmlk\030\n \001(\005\022\023\n\013dacpijo" +
+      "liaa\030\013 \001(\005\022\023\n\013kginnakkjem\030\014 \001(\005\022\023\n\013logng" +
+      "dbhagp\030\r \001(\010\"N\n\032TradingGlobalSettingsPro" +
+      "to\022\026\n\016enable_trading\030\001 \001(\010\022\030\n\020min_player" +
+      "_level\030\002 \001(\r\"\244\004\n\022FortSearchLogEntry\0229\n\006r" +
+      "esult\030\001 \001(\0162).POGOProtos.Rpc.FortSearchL" +
+      "ogEntry.Result\022\023\n\013lndigkkjfml\030\002 \001(\t\022.\n\013n" +
+      "ikdphgligk\030\003 \003(\0132\031.POGOProtos.Rpc.ItemPr" +
+      "oto\022\023\n\013melpoanpbfo\030\004 \001(\005\0221\n\013npejhkhkdjb\030" +
+      "\005 \003(\0132\034.POGOProtos.Rpc.PokemonProto\022-\n\013e" +
+      "pejamdemjg\030\006 \001(\0162\030.POGOProtos.Rpc.FortTy" +
+      "pe\022.\n\013pfcgfghpdej\030\007 \003(\0132\031.POGOProtos.Rpc" +
+      ".ItemProto\022.\n\013efihohfandk\030\010 \003(\0132\031.POGOPr" +
+      "otos.Rpc.ItemProto\022.\n\013lbplolgfmgl\030\t \003(\0132" +
+      "\031.POGOProtos.Rpc.ItemProto\0221\n\013acoaapjfnm" +
+      "f\030\n \003(\0132\034.POGOProtos.Rpc.GiftBoxProto\0222\n" +
+      "\013ndpchbinofo\030\013 \003(\0132\035.POGOProtos.Rpc.Loot" +
+      "ItemProto\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
+      "S\020\001\"\375\002\n\027MapDisplaySettingsProto\022H\n\013ebmfd" +
+      "picopk\030\001 \001(\01623.POGOProtos.Rpc.MapDisplay" +
+      "SettingsProto.BJHCLHNPAHC\022\023\n\013hjdoikolepc" +
+      "\030\002 \001(\t\"\202\002\n\013BJHCLHNPAHC\022\017\n\013EFFECT_NONE\020\000\022" +
+      "\031\n\025EFFECT_CONFETTI_BASIC\020\001\022\030\n\024EFFECT_CON" +
+      "FETTI_FIRE\020\002\022\031\n\025EFFECT_CONFETTI_WATER\020\003\022" +
+      "\031\n\025EFFECT_CONFETTI_GRASS\020\004\022\037\n\033EFFECT_CON" +
+      "FETTI_RAID_BATTLE\020\005\022\036\n\032EFFECT_CONFETTI_F" +
+      "RIENDSHIP\020\006\022\032\n\026EFFECT_CONFETTI_ROCKET\020\007\022" +
+      "\032\n\026EFFECT_FIREWORKS_PLAIN\020\010\"\"\n\013MPFODCPMP" +
+      "NG\022\023\n\013cjkoghlphmo\030\001 \001(\004\"\367\002\n\027ArdkConfigSe" +
+      "ttingsProto\022\025\n\rorb_vocab_url\030\001 \001(\t\022\033\n\023mo" +
+      "nodpeth_model_url\030\002 \001(\t\022\031\n\021monodepth_dev" +
+      "ices\030\003 \003(\t\022M\n\022monodepth_contexts\030\004 \003(\01621" +
+      ".POGOProtos.Rpc.ArdkConfigSettingsProto." +
+      "ArContext\022\037\n\027ios_monodepth_model_url\030\005 \001" +
+      "(\t\022#\n\033android_monodepth_model_url\030\006 \001(\t\022" +
+      "\016\n\006field1\030\007 \001(\t\"h\n\tArContext\022\t\n\005UNSET\020\000\022" +
+      "\020\n\014AR_ENCOUNTER\020\001\022\017\n\013AR_SNAPSHOT\020\002\022\026\n\022SI" +
+      "NGLEPLAYER_BUDDY\020\003\022\025\n\021MULTIPLAYER_BUDDY\020" +
+      "\004\"?\n\013NADKJKECNCP\0220\n\013oabjdogklgo\030\001 \001(\0132\033." +
+      "POGOProtos.Rpc.CHLLKNMFHLC\"\234\001\n\027PokeBallA" +
+      "ttributesProto\0223\n\013item_effect\030\001 \001(\0162\036.PO" +
+      "GOProtos.Rpc.HoloItemEffect\022\025\n\rcapture_m" +
+      "ulti\030\002 \001(\002\022\034\n\024capture_multi_effect\030\003 \001(\002" +
+      "\022\027\n\017item_effect_mod\030\004 \001(\002\"d\n\023ExRaidSetti" +
+      "ngsProto\022M\n\033minimum_ex_raid_share_level\030" +
+      "\001 \001(\0162(.POGOProtos.Rpc.FriendshipLevelMi" +
+      "lestone\"\304\002\n\rRaidInfoProto\022\023\n\013pdaldoafaaj" +
+      "\030\001 \001(\003\022\023\n\013dkdibbicjlc\030\002 \001(\003\022\023\n\013jnjolgjod" +
+      "ki\030\003 \001(\003\022\023\n\013malnooknokf\030\004 \001(\003\0221\n\013jmobphm" +
+      "moef\030\005 \001(\0132\034.POGOProtos.Rpc.PokemonProto" +
+      "\022.\n\013kchphjadgne\030\006 \001(\0162\031.POGOProtos.Rpc.R" +
+      "aidLevel\022\023\n\013mlpcljceecg\030\007 \001(\010\022\023\n\013jhfphdp" +
+      "jjjl\030\010 \001(\010\022\023\n\013gcgdmmcgpkh\030\t \001(\010\022\023\n\013jccng" +
+      "bnbjhh\030\n \001(\010\022\023\n\013ndkpcpdfejj\030\013 \001(\010\022\023\n\013fih" +
+      "lhmkkocb\030\014 \001(\t\"7\n\013NCCLGHGDLBD\022\023\n\013fpodljn" +
+      "bpbo\030\001 \001(\010\022\023\n\013dhdmbahehko\030\002 \001(\010\"\377\001\n\"Comb" +
+      "atChallengeGlobalSettingsProto\022Z\n(distan" +
+      "ce_check_override_friendship_level\030\001 \001(\016" +
+      "2(.POGOProtos.Rpc.FriendshipLevelMilesto" +
+      "ne\0221\n)get_combat_challenge_polling_inter" +
+      "val_sec\030\002 \001(\005\022\"\n\032enable_downstream_dispa" +
+      "tch\030\003 \001(\010\022&\n\036enable_challenge_notificati" +
+      "ons\030\004 \001(\010\"\355\001\n\013NCGMJHIKGBJ\0222\n\006result\030\001 \001(" +
+      "\0162\".POGOProtos.Rpc.NCGMJHIKGBJ.Result\0223\n" +
+      "\013nikdphgligk\030\002 \003(\0132\036.POGOProtos.Rpc.Awar" +
+      "dItemProto\022)\n\013gkgamkdfegl\030\004 \003(\0162\024.POGOPr" +
+      "otos.Rpc.Item\022\023\n\013ckkpmkmhgbg\030\005 \003(\t\"5\n\006Re" +
+      "sult\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\023\n\017AWARDED_" +
+      "ALREADY\020\002\"\215\001\n\'ReadPointOfInterestDescrip" +
+      "tionTelemetry\022\016\n\006result\030\001 \001(\t\022\023\n\013lndigkk" +
+      "jfml\030\002 \001(\t\022\023\n\013epejamdemjg\030\003 \001(\005\022\023\n\013jmjdh" +
+      "imbnmd\030\004 \001(\t\022\023\n\013fihlhmkkocb\030\005 \001(\t\"\254\003\n\017Aw" +
+      "ardedGymBadge\022\017\n\007fort_id\030\001 \001(\t\0224\n\016gym_ba" +
+      "dge_type\030\002 \001(\0162\034.POGOProtos.Rpc.GymBadge" +
+      "Type\022\r\n\005score\030\003 \001(\r\0226\n\017gym_badge_stats\030\004" +
+      " \001(\0132\035.POGOProtos.Rpc.GymBadgeStats\022 \n\030l" +
+      "ast_update_timestamp_ms\030\005 \001(\004\022\037\n\027last_ch" +
+      "eck_timestamp_ms\030\013 \001(\004\022\025\n\rearned_points\030" +
+      "\014 \001(\r\022\020\n\010progress\030\r \001(\002\022\020\n\010level_up\030\016 \001(" +
+      "\010\022\014\n\004name\030\017 \001(\t\022\021\n\timage_url\030\020 \001(\t\022\023\n\013de" +
+      "scription\030\021 \001(\t\022\020\n\010latitude\030\022 \001(\001\022\021\n\tlon" +
+      "gitude\030\023 \001(\001\0222\n\005raids\030\024 \001(\0132#.POGOProtos" +
+      ".Rpc.PlayerRaidInfoProto\"L\n\013NDMMCIHLLDK\022" +
+      "\023\n\013mjlofidknme\030\001 \001(\t\022\023\n\013phiabghihcc\030\002 \001(" +
+      "\001\022\023\n\013icmnhajccaa\030\003 \001(\001\"\321\001\n\013NDPMJGJPEGP\022-" +
+      "\n\013laihnnaljpj\030\001 \001(\0162\030.POGOProtos.Rpc.Pla" +
+      "tform\022\023\n\013agjadkbcfpk\030\002 \001(\t\022\023\n\013dopmejpngo" +
+      "j\030\003 \001(\t\022\023\n\013ddhmpoicike\030\004 \001(\t\022\023\n\013hbjjgpcl" +
+      "hnj\030\005 \001(\r\022*\n\013mkdeggcnlmj\030\006 \001(\0162\025.POGOPro" +
+      "tos.Rpc.Store\022\023\n\013kpipndlhghb\030\007 \001(\t\"\272\005\n\013N" +
+      "DPPOEGFDEO\022\023\n\013fnigehkhdok\030\001 \001(\t\022<\n\013oncfe" +
+      "lcoobg\030\003 \001(\0132\'.POGOProtos.Rpc.PHKHKKDLIN" +
+      "D.ONDPNMCPBFN\022\023\n\013giapmbkabee\030\004 \001(\t\022<\n\013bi" +
+      "eiipenjan\030\005 \003(\0132\'.POGOProtos.Rpc.NDPPOEG" +
+      "FDEO.CEDAMJOFHJJ\032\204\004\n\013CEDAMJOFHJJ\022\023\n\013joaj" +
+      "gniomff\030\001 \001(\t\022H\n\013odfhmadechp\030\002 \001(\01623.POG" +
+      "OProtos.Rpc.NDPPOEGFDEO.CEDAMJOFHJJ.BPAA" +
+      "GHBABHD\"\225\003\n\013BPAAGHBABHD\022\t\n\005UNSET\020\000\022\022\n\016AD" +
+      "VENTURE_SYNC\020\001\022\t\n\005BUDDY\020\002\022\021\n\rCANDY_GENER" +
+      "AL\020\003\022\007\n\003EGG\020\004\022\021\n\rEGG_INCUBATOR\020\005\022\016\n\nEVEN" +
+      "T_MOVE\020\006\022\r\n\tEVOLUTION\020\007\022\022\n\016FIELD_RESEARC" +
+      "H\020\010\022\016\n\nFRIENDSHIP\020\t\022\010\n\004GIFT\020\n\022\013\n\007INCENSE" +
+      "\020\013\022\r\n\tLUCKY_EGG\020\014\022\017\n\013LURE_MODULE\020\r\022\r\n\tPH" +
+      "OTOBOMB\020\016\022\014\n\010POKESTOP\020\017\022\010\n\004RAID\020\020\022\r\n\tRAI" +
+      "D_PASS\020\021\022\021\n\rSPAWN_UNKNOWN\020\022\022\016\n\nSTAR_PIEC" +
+      "E\020\023\022\014\n\010STARDUST\020\024\022\017\n\013TEAM_ROCKET\020\025\022\t\n\005TR" +
+      "ADE\020\026\022\022\n\016TRANSFER_CANDY\020\027\022\n\n\006BATTLE\020\030\022\006\n" +
+      "\002XP\020\031\022\010\n\004SHOP\020\032\"c\n\013NEIMPPILPLC\022)\n\013ekpohj" +
+      "fklal\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022)\n\013nbp" +
+      "fkgpfhpc\030\002 \001(\0162\024.POGOProtos.Rpc.Team\"E\n\013" +
+      "NEKEEHDNPDL\022!\n\031combat_league_template_id" +
+      "\030\001 \001(\t\022\023\n\013jnojmednlil\030\002 \003(\004\"\r\n\013NEKHHLJGN" +
+      "CG\"\"\n\013NENCGNDEOOF\022\023\n\013liolpilecbj\030\001 \001(\005\"\265" +
+      "\001\n\013NEODGFMEIIK\022\023\n\013pdaldoafaaj\030\001 \001(\003\022\023\n\013f" +
+      "gonpfibkai\030\002 \001(\t\022\023\n\013jkpcajihcao\030\003 \003(\005\022\023\n" +
+      "\013nlblgfioeic\030\004 \001(\001\022\023\n\013ojnmcebeede\030\005 \001(\001\022" +
+      "\023\n\013olfnggmefal\030\006 \001(\001\022\023\n\013aocfljninfi\030\007 \001(" +
+      "\001\022\023\n\013jkgpgghegjl\030\010 \001(\t\"S\n%BuddyMultiplay" +
+      "erConnectionFailedProto\022\023\n\013test_number\030\001" +
+      " \001(\005\022\025\n\rresponse_time\030\002 \001(\003\"8\n\013NFCEMINHD" +
+      "FC\022)\n\013ekpohjfklal\030\001 \001(\0162\024.POGOProtos.Rpc" +
+      ".Item\"\374\002\n\013NFFAMDHEHBD\0222\n\006result\030\001 \001(\0162\"." +
+      "POGOProtos.Rpc.NFFAMDHEHBD.Result\0221\n\013bae" +
+      "glbmdifp\030\002 \001(\0132\034.POGOProtos.Rpc.PokemonP" +
+      "roto\022<\n\013dbianmbmnch\030\003 \001(\0132\'.POGOProtos.R" +
+      "pc.CaptureProbabilityProto\022)\n\013iiadjbboil" +
+      "m\030\004 \001(\0162\024.POGOProtos.Rpc.Item\022\023\n\013bleeccp" +
+      "ijbi\030\005 \001(\005\"\207\001\n\006Result\022\035\n\031INCENSE_ENCOUNT" +
+      "ER_UNKNOWN\020\000\022\035\n\031INCENSE_ENCOUNTER_SUCCES" +
+      "S\020\001\022#\n\037INCENSE_ENCOUNTER_NOT_AVAILABLE\020\002" +
+      "\022\032\n\026POKEMON_INVENTORY_FULL\020\003\"\332\004\n\027RaidCli" +
+      "entSettingsProto\022\033\n\023remote_raid_enabled\030" +
+      "\001 \001(\010\022\036\n\026max_remote_raid_passes\030\002 \001(\005\022\036\n" +
+      "\026remote_damage_modifier\030\003 \001(\002\022%\n\035remote_" +
+      "raids_min_player_level\030\004 \001(\005\022\036\n\026max_num_" +
+      "friend_invites\030\005 \001(\005\022%\n\035friend_invite_cu" +
+      "toff_time_sec\030\006 \001(\005\022$\n\034can_invite_friend" +
+      "s_in_person\030\007 \001(\010\022#\n\033can_invite_friends_" +
+      "remotely\030\010 \001(\010\022\035\n\025max_players_per_lobby\030" +
+      "\t \001(\005\022$\n\034max_remote_players_per_lobby\030\n " +
+      "\001(\005\022\'\n\037invite_cooldown_duration_millis\030\013" +
+      " \001(\003\022)\n!max_num_friend_invites_per_actio" +
+      "n\030\014 \001(\005\022M\n*unsupported_raid_levels_for_f" +
+      "riend_invites\030\r \003(\0162\031.POGOProtos.Rpc.Rai" +
+      "dLevel\022A\n\036unsupported_remote_raid_levels" +
+      "\030\016 \003(\0162\031.POGOProtos.Rpc.RaidLevel\"\"\n\013NFK" +
+      "CBMCFLAG\022\023\n\013hdegllgmeih\030\001 \001(\t\"\304\001\n\013NGABJF" +
+      "EGLFB\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.N" +
+      "GABJFEGLFB.Result\"\200\001\n\006Result\022\t\n\005UNSET\020\000\022" +
+      "\013\n\007SUCCESS\020\001\022\026\n\022STILL_IN_COOL_DOWN\020\002\022\021\n\r" +
+      "BUDDY_NOT_SET\020\003\022\030\n\024ERROR_INVENTORY_FULL\020" +
+      "\004\022\031\n\025ERROR_NO_REMOTE_GIFTS\020\005\"\\\n\013NGGKKLCE" +
+      "NMI\022\023\n\013pkdofmmahaj\030\001 \001(\010\0228\n\013hmalajofklh\030" +
+      "\002 \001(\0132#.POGOProtos.Rpc.InventoryDeltaPro" +
+      "to\"+\n\024ProjectVacationProto\022\023\n\013ifdecpmcma" +
+      "l\030\001 \001(\010\"\223\006\n\013NIEDDLOEAAN\0222\n\006result\030\001 \001(\0162" +
+      "\".POGOProtos.Rpc.NIEDDLOEAAN.Result\022?\n\013o" +
+      "knapplbpbk\030\002 \001(\0132*.POGOProtos.Rpc.GymSta" +
+      "tusAndDefendersProto\0224\n\013eoilecekhdn\030\003 \001(" +
+      "\0132\037.POGOProtos.Rpc.AwardedGymBadge\022\023\n\013ni" +
+      "mjbiippjj\030\004 \001(\003\"\303\004\n\006Result\022\021\n\rNO_RESULT_" +
+      "SET\020\000\022\013\n\007SUCCESS\020\001\022%\n!ERROR_ALREADY_HAS_" +
+      "POKEMON_ON_FORT\020\002\022!\n\035ERROR_OPPOSING_TEAM" +
+      "_OWNS_FORT\020\003\022\026\n\022ERROR_FORT_IS_FULL\020\004\022\026\n\022" +
+      "ERROR_NOT_IN_RANGE\020\005\022\034\n\030ERROR_PLAYER_HAS" +
+      "_NO_TEAM\020\006\022\035\n\031ERROR_POKEMON_NOT_FULL_HP\020" +
+      "\007\022$\n ERROR_PLAYER_BELOW_MINIMUM_LEVEL\020\010\022" +
+      "\032\n\026ERROR_POKEMON_IS_BUDDY\020\t\022\035\n\031ERROR_FOR" +
+      "T_DEPLOY_LOCKOUT\020\n\022 \n\034ERROR_PLAYER_HAS_N" +
+      "O_NICKNAME\020\013\022\032\n\026ERROR_POI_INACCESSIBLE\020\014" +
+      "\022\027\n\023ERROR_NOT_A_POKEMON\020\r\022\037\n\033ERROR_TOO_M" +
+      "ANY_OF_SAME_KIND\020\016\022\033\n\027ERROR_TOO_MANY_DEP" +
+      "LOYED\020\017\022\035\n\031ERROR_TEAM_DEPLOY_LOCKOUT\020\020\022\033" +
+      "\n\027ERROR_LEGENDARY_POKEMON\020\021\022\031\n\025ERROR_INV" +
+      "ALID_POKEMON\020\022\022\025\n\021ERROR_RAID_ACTIVE\020\023\"\262\003" +
+      "\n\023CameraSettingsProto\022\023\n\013next_camera\030\001 \001" +
+      "(\t\022:\n\rinterpolation\030\002 \003(\0162#.POGOProtos.R" +
+      "pc.CameraInterpolation\0221\n\013target_type\030\003 " +
+      "\003(\0162\034.POGOProtos.Rpc.CameraTarget\022\025\n\reas" +
+      "e_in_speed\030\004 \003(\002\022\026\n\016ease_out_speed\030\005 \003(\002" +
+      "\022\022\n\nduration_s\030\006 \003(\002\022\016\n\006wait_s\030\007 \003(\002\022\024\n\014" +
+      "transition_s\030\010 \003(\002\022\021\n\tangle_deg\030\t \003(\002\022\030\n" +
+      "\020angle_offset_deg\030\n \003(\002\022\021\n\tpitch_deg\030\013 \003" +
+      "(\002\022\030\n\020pitch_offset_deg\030\014 \003(\002\022\020\n\010roll_deg" +
+      "\030\r \003(\002\022\022\n\ndistance_m\030\016 \003(\002\022\026\n\016height_per" +
+      "cent\030\017 \003(\002\022\026\n\016vert_ctr_ratio\030\020 \003(\002\"Z\n\013NJ" +
+      "FCCKPILHH\022\023\n\013pkdofmmahaj\030\001 \001(\010\0226\n\013ekingg" +
+      "fmndg\030\002 \001(\0132!.POGOProtos.Rpc.ClientPlaye" +
+      "rProto\"C\n\027PokemonCombatStatsProto\022\023\n\013eka" +
+      "iopmhgkb\030\001 \001(\005\022\023\n\013cebfafgmdhp\030\002 \001(\005\"\"\n\013N" +
+      "JMIBDMILHG\022\023\n\013hbolnchnlli\030\001 \003(\t\"p\n\016Buddy" +
+      "GiftProto\022/\n\010souvenir\030\001 \001(\0132\035.POGOProtos" +
+      ".Rpc.SouvenirProto\022-\n\nloot_proto\030\002 \001(\0132\031" +
+      ".POGOProtos.Rpc.LootProto\"\376\003\n\013NMENNOCENF" +
+      "N\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.NMENN" +
+      "OCENFN.Result\0229\n\013oafocnchncd\030\002 \001(\0132$.POG" +
+      "OProtos.Rpc.CombatChallengeProto\"\377\002\n\006Res" +
+      "ult\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022!\n\035ERROR_INV" +
+      "ALID_CHALLENGE_STATE\020\002\022\035\n\031ERROR_CHALLENG" +
+      "E_NOT_FOUND\020\003\022\"\n\036ERROR_POKEMON_NOT_IN_IN" +
+      "VENTORY\020\004\022\035\n\031ERROR_NOT_ELIGIBLE_LEAGUE\020\005" +
+      "\022$\n ERROR_PLAYER_BELOW_MINIMUM_LEVEL\020\006\022\032" +
+      "\n\026ERROR_ALREADY_TIMEDOUT\020\010\022\033\n\027ERROR_ALRE" +
+      "ADY_CANCELLED\020\t\022\032\n\026ERROR_FRIEND_NOT_FOUN" +
+      "D\020\n\022%\n!ERROR_FAILED_TO_SEND_NOTIFICATION" +
+      "\020\013\022\027\n\023ERROR_ACCESS_DENIED\020\014\022\035\n\031ERROR_INE" +
+      "LIGIBLE_OPPONENT\020\r\"s\n\031PokemonInventoryTe" +
+      "lemetry\022A\n\013eomdlpijolk\030\001 \001(\0162,.POGOProto" +
+      "s.Rpc.PokemonInventoryTelemetryIds\022\023\n\013lh" +
+      "jpgpjpgpd\030\002 \001(\t\"\205\t\n\027ArMappingTelemetryPr" +
+      "oto\022Y\n\027ar_mapping_telemetry_id\030\001 \001(\01628.P" +
+      "OGOProtos.Rpc.ArMappingTelemetryProto.Ar" +
+      "MappingEventId\022K\n\006source\030\002 \001(\0162;.POGOPro" +
+      "tos.Rpc.ArMappingTelemetryProto.ArMappin" +
+      "gEntryPoint\022 \n\030recording_length_seconds\030" +
+      "\003 \001(\002\022\034\n\024time_elapsed_seconds\030\004 \001(\002\022\027\n\017p" +
+      "ercent_encoded\030\005 \001(\002\022\027\n\017data_size_bytes\030" +
+      "\006 \001(\003\022>\n\006reason\030\007 \001(\0162..POGOProtos.Rpc.A" +
+      "rMappingTelemetryProto.Reason\"\247\001\n\023ArMapp" +
+      "ingEntryPoint\022\021\n\rUNKNOWN_ENTRY\020\000\022\021\n\rPOI_" +
+      "EDIT_MENU\020\001\022\022\n\016POI_EDIT_TITLE\020\002\022\030\n\024POI_E" +
+      "DIT_DESCRIPTION\020\003\022\021\n\rPOI_ADD_PHOTO\020\004\022\025\n\021" +
+      "POI_EDIT_LOCATION\020\005\022\022\n\016POI_NOMINATION\020\006\"" +
+      "F\n\006Reason\022\022\n\016UNKNOWN_REASON\020\000\022\014\n\010TOO_FAS" +
+      "T\020\001\022\014\n\010TOO_SLOW\020\002\022\014\n\010TOO_DARK\020\003\"\235\004\n\020ArMa" +
+      "ppingEventId\022\013\n\007UNKNOWN\020\000\022\017\n\013ENTER_STATE" +
+      "\020\001\022\021\n\rOPT_IN_ACCEPT\020\002\022\017\n\013OPT_IN_DENY\020\003\022\023" +
+      "\n\017OPT_IN_SETTINGS\020\004\022\024\n\020OPT_OUT_SETTINGS\020" +
+      "\005\022\027\n\023EXIT_FROM_RECORDING\020\006\022\023\n\017START_RECO" +
+      "RDING\020\007\022\022\n\016STOP_RECORDING\020\010\022\023\n\017CANCEL_EN" +
+      "CODING\020\t\022\016\n\nUPLOAD_NOW\020\n\022\020\n\014UPLOAD_LATER" +
+      "\020\013\022\021\n\rCANCEL_UPLOAD\020\014\022\031\n\025START_UPLOAD_SE" +
+      "TTINGS\020\r\022\022\n\016UPLOAD_SUCCESS\020\016\022\025\n\021OPT_IN_L" +
+      "EARN_MORE\020\017\022\025\n\021EXIT_FROM_PREVIEW\020\020\022%\n!SU" +
+      "BMIT_POI_AR_VIDEO_METADATA_FAIL\020\021\022\022\n\016UPL" +
+      "OAD_FAILURE\020\022\022\034\n\030UPLOAD_LATER_WIFI_PROMP" +
+      "T\020\023\022\017\n\013CLEAR_SCANS\020\024\022\023\n\017OPEN_INFO_PANEL\020" +
+      "\025\022\027\n\023RESCAN_FROM_PREVIEW\020\026\022\033\n\027SCAN_VALID" +
+      "ATION_FAILURE\020\027\"|\n\022QuestSettingsProto\022-\n" +
+      "\nquest_type\030\001 \001(\0162\031.POGOProtos.Rpc.Quest" +
+      "Type\0227\n\013daily_quest\030\002 \001(\0132\".POGOProtos.R" +
+      "pc.DailyQuestSettings\"\257\004\n\025BuddyStatsShow" +
+      "nHearts\022&\n\036buddy_affection_km_in_progres" +
+      "s\030\001 \001(\002\022o\n\037buddy_shown_hearts_per_catego" +
+      "ry\030\002 \003(\0132F.POGOProtos.Rpc.BuddyStatsShow" +
+      "nHearts.BuddyShownHeartsPerCategoryEntry" +
+      "\022+\n\006field1\030\003 \001(\0132\033.POGOProtos.Rpc.PEKJNH" +
+      "JPJIB\032r\n\024BuddyShownHeartsList\022Z\n\027buddy_s" +
+      "hown_heart_types\030\001 \003(\01629.POGOProtos.Rpc." +
+      "BuddyStatsShownHearts.BuddyShownHeartTyp" +
+      "e\032~\n BuddyShownHeartsPerCategoryEntry\022\013\n" +
+      "\003key\030\001 \001(\005\022I\n\005value\030\002 \001(\0132:.POGOProtos.R" +
+      "pc.BuddyStatsShownHearts.BuddyShownHeart" +
+      "sList:\0028\001\"\\\n\023BuddyShownHeartType\022\025\n\021BUDD" +
+      "Y_HEART_UNSET\020\000\022\026\n\022BUDDY_HEART_SINGLE\020\001\022" +
+      "\026\n\022BUDDY_HEART_DOUBLE\020\002\"L\n\013NNHPOEPICBH\022\023" +
+      "\n\013higpjcjkknp\030\001 \001(\002\022\023\n\013deblblfgnci\030\002 \001(\002" +
+      "\022\023\n\013jknoafefdma\030\003 \001(\010\"\330\005\n\026EncounterSetti" +
+      "ngsProto\022\034\n\024spin_bonus_threshold\030\001 \001(\002\022!" +
+      "\n\031excellent_throw_threshold\030\002 \001(\002\022\035\n\025gre" +
+      "at_throw_threshold\030\003 \001(\002\022\034\n\024nice_throw_t" +
+      "hreshold\030\004 \001(\002\022\033\n\023milestone_threshold\030\005 " +
+      "\001(\005\022\034\n\024ar_plus_mode_enabled\030\006 \001(\010\022$\n\034ar_" +
+      "close_proximity_threshold\030\007 \001(\002\022\"\n\032ar_lo" +
+      "w_awareness_threshold\030\010 \001(\002\022%\n\035ar_close_" +
+      "proximity_multiplier\030\t \001(\002\022&\n\036ar_awarene" +
+      "ss_penalty_threshold\030\n \001(\002\022\'\n\037ar_low_awa" +
+      "reness_max_multiplier\030\013 \001(\002\0220\n(ar_high_a" +
+      "wareness_min_penalty_multiplier\030\014 \001(\002\022\'\n" +
+      "\037ar_plus_attempts_until_flee_max\030\r \001(\005\022," +
+      "\n$ar_plus_attempts_until_flee_infinite\030\016" +
+      " \001(\005\022$\n\034escaped_bonus_multiplier_max\030\017 \001" +
+      "(\002\0223\n+escaped_bonus_multiplier_by_excell" +
+      "ent_throw\030\020 \001(\002\022/\n\'escaped_bonus_multipl" +
+      "ier_by_great_throw\030\021 \001(\002\022.\n&escaped_bonu" +
+      "s_multiplier_by_nice_throw\030\022 \001(\002\"\240\001\n\013NOG" +
+      "KCBLADHN\022/\n\013gnkgaimjkch\030\001 \001(\0162\032.POGOProt" +
+      "os.Rpc.CombatType\022\023\n\013alflaepafnn\030\002 \001(\t\022!" +
+      "\n\031combat_league_template_id\030\003 \001(\t\022\023\n\013ibm" +
+      "cmgndmha\030\004 \001(\t\022\023\n\013jnojmednlil\030\005 \003(\004\"m\n\032R" +
+      "pcSocketResponseTelemetry\022\023\n\013hiieifaflgl" +
+      "\030\001 \001(\002\022:\n\013dlhoflgdgip\030\002 \003(\0132%.POGOProtos" +
+      ".Rpc.RpcSocketResponseTime\"S\n\031Notificati" +
+      "onSettingsProto\022\032\n\022pull_notifications\030\001 " +
+      "\001(\010\022\032\n\022show_notifications\030\002 \001(\010\"\255\001\n\rGymB" +
+      "adgeStats\022\023\n\013eolaajofkdj\030\001 \001(\004\022\023\n\013hchkhn" +
+      "ldmbh\030\002 \001(\r\022\023\n\013kpkbmolbiki\030\005 \001(\r\022\023\n\013nkla" +
+      "onglfdm\030\017 \001(\r\022\023\n\013pnaekdcnnmk\030\020 \001(\r\0223\n\013fd" +
+      "hnjelbilf\030\021 \003(\0132\036.POGOProtos.Rpc.GymBatt" +
+      "leProto\".\n\021BuddySwapSettings\022\031\n\021max_swap" +
+      "s_per_day\030\001 \001(\005\"\300\001\n\036CompleteQuestStampCa" +
+      "rdLogEntry\022E\n\006result\030\001 \001(\01625.POGOProtos." +
+      "Rpc.CompleteQuestStampCardLogEntry.Resul" +
+      "t\0225\n\013ekfidinfbdd\030\002 \003(\0132 .POGOProtos.Rpc." +
+      "QuestRewardProto\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n" +
+      "\007SUCCESS\020\001\"\314\004\n\022BattleResultsProto\0220\n\tgym" +
+      "_state\030\001 \001(\0132\035.POGOProtos.Rpc.GymStatePr" +
+      "oto\0229\n\tattackers\030\002 \003(\0132&.POGOProtos.Rpc." +
+      "BattleParticipantProto\022\031\n\021player_xp_awar" +
+      "ded\030\003 \003(\005\022 \n\030next_defender_pokemon_id\030\004 " +
+      "\001(\003\022\030\n\020gym_points_delta\030\005 \001(\005\022>\n\ngym_sta" +
+      "tus\030\006 \001(\0132*.POGOProtos.Rpc.GymStatusAndD" +
+      "efendersProto\0229\n\rparticipation\030\007 \003(\0132\".P" +
+      "OGOProtos.Rpc.ParticipationProto\0224\n\021raid" +
+      "_item_rewards\030\010 \003(\0132\031.POGOProtos.Rpc.Loo" +
+      "tProto\022?\n\023post_raid_encounter\030\t \003(\0132\".PO" +
+      "GOProtos.Rpc.RaidEncounterProto\0222\n\tgym_b" +
+      "adge\030\n \003(\0132\037.POGOProtos.Rpc.AwardedGymBa" +
+      "dge\022<\n\031default_raid_item_rewards\030\013 \003(\0132\031" +
+      ".POGOProtos.Rpc.LootProto\022\016\n\006field1\030\014 \001(" +
+      "\003\"\"\n\013OAJAOJGAAOH\022\023\n\013kcbcpdfdkel\030\001 \001(\005\"\217\002" +
+      "\n\034TelemetryGlobalSettingsProto\022\017\n\007enable" +
+      "d\030\001 \001(\010\022!\n\031session_sampling_fraction\030\002 \001" +
+      "(\001\022\032\n\022max_buffer_size_kb\030\003 \001(\005\022\022\n\nbatch_" +
+      "size\030\004 \001(\005\022\032\n\022update_interval_ms\030\005 \001(\003\022%" +
+      "\n\035frame_rate_sample_interval_ms\030\006 \001(\003\022#\n" +
+      "\033frame_rate_sample_period_ms\030\007 \001(\003\022#\n\033en" +
+      "able_omni_wrapper_sending\030\010 \001(\010\"\357\003\n\021Comb" +
+      "atActionProto\022:\n\004type\030\001 \001(\0162,.POGOProtos" +
+      ".Rpc.CombatActionProto.ActionType\022\031\n\021act" +
+      "ion_start_turn\030\003 \001(\005\022\026\n\016duration_turns\030\005" +
+      " \001(\005\022\026\n\016attacker_index\030\006 \001(\005\022\024\n\014target_i" +
+      "ndex\030\007 \001(\005\022\031\n\021active_pokemon_id\030\010 \001(\006\022\031\n" +
+      "\021target_pokemon_id\030\016 \001(\006\022\026\n\016minigame_sco" +
+      "re\030\017 \001(\002\022\014\n\004move\030\020 \001(\005\"\340\001\n\nActionType\022\t\n" +
+      "\005UNSET\020\000\022\n\n\006ATTACK\020\001\022\022\n\016SPECIAL_ATTACK\020\002" +
+      "\022\024\n\020SPECIAL_ATTACK_2\020\003\022\035\n\031MINIGAME_OFFEN" +
+      "SIVE_FINISH\020\004\022\034\n\030MINIGAME_DEFENSIVE_STAR" +
+      "T\020\005\022\035\n\031MINIGAME_DEFENSIVE_FINISH\020\006\022\t\n\005FA" +
+      "INT\020\007\022\022\n\016CHANGE_POKEMON\020\010\022\026\n\022QUICK_SWAP_" +
+      "POKEMON\020\t\"\251\001\n\034CrossGameSocialSettingsPro" +
+      "to\022,\n$online_status_enabled_override_lev" +
+      "el\030\001 \001(\010\022.\n&niantic_profile_enabled_over" +
+      "ride_level\030\002 \001(\010\022+\n#friends_list_enabled" +
+      "_override_level\030\003 \001(\010\"\266\017\n\014TradingProto\022>" +
+      "\n\013jlnijhmemnj\030\001 \001(\0162).POGOProtos.Rpc.Tra" +
+      "dingProto.TradingState\022\023\n\013hklepofbgjd\030\002 " +
+      "\001(\004\022D\n\013ekinggfmndg\030\003 \001(\0132/.POGOProtos.Rp" +
+      "c.TradingProto.TradingPlayerProto\022D\n\013hbi" +
+      "plhopbem\030\004 \001(\0132/.POGOProtos.Rpc.TradingP" +
+      "roto.TradingPlayerProto\022\023\n\013kedajlomokb\030\005" +
+      " \001(\003\022\023\n\013dakcmdojgah\030\006 \001(\t\022=\n\013kgihoibciap" +
+      "\030\007 \001(\0132(.POGOProtos.Rpc.FriendshipLevelD" +
+      "ataProto\022\023\n\013ffnjcpogkfo\030\010 \001(\010\022=\n\013canjjml" +
+      "gidn\030\t \001(\0132(.POGOProtos.Rpc.FriendshipLe" +
+      "velDataProto\032\352\006\n\022TradingPlayerProto\022\023\n\013p",
+      "egfachkbdd\030\001 \001(\t\022=\n\013jeenccbbffk\030\002 \001(\0132(." +
+      "POGOProtos.Rpc.PlayerPublicProfileProto\022" +
+      "T\n\013bejmgpnihjo\030\003 \003(\0132?.POGOProtos.Rpc.Tr" +
+      "adingProto.TradingPlayerProto.ExcludedPo" +
+      "kemon\022E\n\013ohlneacoaal\030\004 \001(\01320.POGOProtos." +
+      "Rpc.TradingProto.TradingPokemonProto\022.\n\013" +
+      "jmklabelhpa\030\005 \001(\0132\031.POGOProtos.Rpc.LootP" +
+      "roto\022.\n\013jffpmhjafhi\030\006 \001(\0132\031.POGOProtos.R" +
+      "pc.LootProto\022\023\n\013jdfomocafmo\030\007 \001(\010\022\023\n\013jmh" +
+      "kolaoonl\030\010 \001(\010\032\330\003\n\017ExcludedPokemon\022\023\n\013mf" +
+      "kgkhdmbpb\030\001 \001(\004\022d\n\013oikmnkppcpe\030\002 \001(\0162O.P" +
+      "OGOProtos.Rpc.TradingProto.TradingPlayer" +
+      "Proto.ExcludedPokemon.ExclusionReason\"\311\002" +
+      "\n\017ExclusionReason\022\t\n\005UNSET\020\000\022\024\n\020MYTHICAL" +
+      "_POKEMON\020\001\022\013\n\007SLASHED\020\002\022\020\n\014GYM_DEPLOYED\020" +
+      "\003\022\t\n\005BUDDY\020\004\022\024\n\020STAMINA_NOT_FULL\020\005\022\023\n\017EG" +
+      "G_NOT_HATCHED\020\006\022\030\n\024FRIENDSHIP_LEVEL_LOW\020" +
+      "\007\022\030\n\024FRIEND_CANNOT_AFFORD\020\010\022\036\n\032FRIEND_RE" +
+      "ACHED_DAILY_LIMIT\020\t\022\022\n\016ALREADY_TRADED\020\n\022" +
+      "\030\n\024PLAYER_CANNOT_AFFORD\020\013\022\036\n\032PLAYER_REAC" +
+      "HED_DAILY_LIMIT\020\014\022\014\n\010FAVORITE\020\r\022\020\n\014TEMP_" +
+      "EVOLVED\020\016\032\274\004\n\023TradingPokemonProto\022\023\n\013mfk" +
+      "gkhdmbpb\030\001 \001(\004\022\023\n\013ojacddlcblo\030\002 \001(\005\022\023\n\013b" +
+      "ekadmipkjo\030\003 \001(\005\022\023\n\013aejalgbbcnb\030\004 \001(\005\022\023\n" +
+      "\013jnhdglogala\030\005 \001(\005\022\023\n\013ocndmiddgbe\030\006 \001(\005\022" +
+      "\023\n\013kanpgdmeijo\030\007 \001(\005\022\023\n\013ddlapfkfgmb\030\010 \001(" +
+      "\005\022\023\n\013hgmcannfhoh\030\t \001(\010\022\023\n\013gpohdhbnacg\030\n " +
+      "\001(\005\022\023\n\013kndopccmkin\030\013 \001(\005\0228\n\013efpknnlchbc\030" +
+      "\014 \001(\0132#.POGOProtos.Rpc.PokemonDisplayPro" +
+      "to\022\023\n\013hhmlhnefdbc\030\r \001(\003\0221\n\013dlaabmcgeno\030\016" +
+      " \001(\0132\034.POGOProtos.Rpc.PokemonProto\022)\n\013ea" +
+      "johpjbknk\030\017 \001(\0162\024.POGOProtos.Rpc.Item\022\023\n" +
+      "\013gijnbmdfmog\030\020 \001(\005\022\023\n\013jlcebfglean\030\021 \001(\005\022" +
+      "\023\n\013meakfplpbof\030\022 \001(\005\022\023\n\013lecobcejkpk\030\023 \001(" +
+      "\t\022\023\n\013dghbbdinbed\030\024 \001(\010\022\023\n\013agdlchgaokn\030\025 " +
+      "\001(\005\022\023\n\013ppghkhaiopn\030\026 \001(\003\"\\\n\014TradingState" +
+      "\022\t\n\005UNSET\020\000\022\016\n\nPRIMORDIAL\020\001\022\010\n\004WAIT\020\002\022\n\n" +
+      "\006ACTIVE\020\003\022\r\n\tCONFIRMED\020\004\022\014\n\010FINISHED\020\005\"7" +
+      "\n\013OBFACMAMLGJ\022\023\n\013dpnibkogejm\030\001 \001(\t\022\023\n\013pf" +
+      "ckmcdejid\030\002 \001(\t\"\347\004\n\013OBFGGMFMJDB\022B\n\017view_" +
+      "impression\030\005 \001(\0132\'.POGOProtos.Rpc.OBFGGM" +
+      "FMJDB.BGHJDDLHGGIH\000\022B\n\017view_fullscreen\030\006" +
+      " \001(\0132\'.POGOProtos.Rpc.OBFGGMFMJDB.IHKIGN" +
+      "HEDIFH\000\022I\n\026fullscreen_interaction\030\007 \001(\0132" +
+      "\'.POGOProtos.Rpc.OBFGGMFMJDB.GHOJJMMAHHH" +
+      "H\000\022>\n\013cta_clicked\030\010 \001(\0132\'.POGOProtos.Rpc" +
+      ".OBFGGMFMJDB.KCDEHFBMGFOH\000\022\023\n\013ofbemkhhae" +
+      "j\030\001 \001(\t\022\023\n\013fhpekmphfng\030\002 \001(\t\022\023\n\013mnlpnfki" +
+      "iji\030\003 \001(\t\022\023\n\013dbfmaclhflp\030\004 \001(\014\0327\n\013BGHJDD" +
+      "LHGGI\022\023\n\013gpcifiialcg\030\001 \001(\t\022\023\n\013nodmahnlbl" +
+      "m\030\002 \001(\010\032a\n\013GHOJJMMAHHH\022\023\n\013kcjofcekfmc\030\001 " +
+      "\001(\t\022\023\n\013gjijbihggda\030\002 \001(\003\022\023\n\013aglmndomcmp\030" +
+      "\003 \001(\003\022\023\n\013npfhggdiafk\030\004 \001(\010\032\"\n\013IHKIGNHEDI" +
+      "F\022\023\n\013kcjofcekfmc\030\001 \001(\t\032\"\n\013KCDEHFBMGFO\022\023\n" +
+      "\013beejcmmcjbj\030\006 \001(\tB\r\n\013KADFOKKBPAE\"9\n\027Wit" +
+      "hPokemonCpLimitProto\022\016\n\006min_cp\030\001 \001(\005\022\016\n\006" +
+      "max_cp\030\002 \001(\005\".\n\034NewGlobalSettingsField1P" +
+      "roto\022\016\n\006field1\030\001 \001(\010\"a\n\013OCEHPKFLIDM\022\023\n\013n" +
+      "bdceigglkm\030\001 \001(\t\022\023\n\013pegfachkbdd\030\002 \001(\t\022\023\n" +
+      "\013efiibeicbob\030\003 \001(\t\022\023\n\013fmidiibcmlp\030\004 \001(\t\"" +
+      "\213\001\n\013OCFODHNMCGA\022\023\n\013fgonpfibkai\030\001 \001(\t\022\023\n\013" +
+      "jnojmednlil\030\002 \003(\004\022\023\n\013hmafiedcjfn\030\003 \001(\004\022\023" +
+      "\n\013nlblgfioeic\030\004 \001(\001\022\023\n\013ojnmcebeede\030\005 \001(\001" +
+      "\022\023\n\013dmmcbhcceml\030\006 \001(\003\"\205\002\n\013OCOCAJGAGHE\0222\n" +
+      "\006result\030\001 \001(\0162\".POGOProtos.Rpc.OCOCAJGAG" +
+      "HE.Result\0222\n\013mfkgkhdmbpb\030\002 \001(\0162\035.POGOPro" +
+      "tos.Rpc.HoloPokemonId\"\215\001\n\006Result\022\t\n\005UNSE" +
+      "T\020\000\022\013\n\007SUCCESS\020\001\022\026\n\022INVALID_POKEMON_ID\020\002" +
+      "\022\r\n\tNO_PLAYER\020\003\022\023\n\017WRONG_ITEM_TYPE\020\004\022\031\n\025" +
+      "ITEM_NOT_IN_INVENTORY\020\005\022\024\n\020NOT_ENOUGH_IT" +
+      "EMS\020\006\"\320\001\n\023RemoteRaidTelemetry\022;\n\013bddmbap" +
+      "hdbd\030\001 \001(\0162&.POGOProtos.Rpc.RemoteRaidTe" +
+      "lemetryIds\0229\n\013cielkbcdjkp\030\002 \001(\0162$.POGOPr" +
+      "otos.Rpc.RemoteRaidJoinSource\022A\n\013bjofhgj" +
+      "bphc\030\003 \001(\0162,.POGOProtos.Rpc.RemoteRaidIn" +
+      "viteAcceptSource\"\236\001\n\013ODENGIIEGNB\022<\n\013bkli" +
+      "nghmhki\030\001 \001(\0162\'.POGOProtos.Rpc.ODENGIIEG" +
+      "NB.FKIEEGMAKNA\022\023\n\013gkbagaidnki\030\002 \001(\014\"<\n\013F" +
+      "KIEEGMAKNA\022\t\n\005UNSET\020\000\022\n\n\006STAGE1\020\001\022\n\n\006STA" +
+      "GE2\020\002\022\n\n\006STAGE3\020\003\"A\n\013ODMCOONGGLN\0222\n\013ccll" +
+      "gcclgof\030\001 \001(\0162\035.POGOProtos.Rpc.HoloBadge" +
+      "Type\"D\n\013ODOFIDFCDGP\0225\n\006result\030\001 \001(\0162%.PO" +
+      "GOProtos.Rpc.ShareExRaidPassResult\"~\n\013OE" +
+      "FEGPKJFFO\0220\n\013ppeddbekbbk\030\001 \001(\0132\033.POGOPro" +
+      "tos.Rpc.LDDMBFHHMFD\022\023\n\013mlghifehoah\030\002 \001(\014" +
+      "\022\023\n\013aknjekefdol\030\003 \003(\t\022\023\n\013cebkcoodeca\030\004 \001" +
+      "(\t\"\243\001\n\013OEJHBCPHJEA\0222\n\006status\030\001 \001(\0162\".POG" +
+      "OProtos.Rpc.OEJHBCPHJEA.Status\"`\n\006Status" +
+      "\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\031\n\025ERROR_QUEST_" +
+      "NOT_FOUND\020\002\022#\n\037ERROR_STORY_QUEST_NOT_REM" +
+      "OVABLE\020\003\"T\n\026PoiGlobalSettingsProto\022\022\n\nis" +
+      "_enabled\030\001 \001(\010\022&\n\036player_submission_type" +
+      "_enabled\030\002 \003(\t\"\344\002\n\013OFINDDKNDGB\0220\n\013cnebdb" +
+      "nmgok\030\001 \001(\0132\033.POGOProtos.Rpc.LAKEAGGMIEH" +
+      "\022\023\n\013mnmgifhddom\030\002 \001(\005\0220\n\013ngeinljamhn\030\003 \003" +
+      "(\0132\033.POGOProtos.Rpc.JECFCNLMCBE\022\023\n\013bhjkk" +
+      "gagklk\030\004 \001(\010\022<\n\013mdlogobnbgi\030\005 \001(\0162\'.POGO" +
+      "Protos.Rpc.OFINDDKNDGB.IJCCEGIKHNL\022\023\n\013dm" +
+      "mcbhcceml\030\006 \001(\003\0220\n\013ahfemdhnnfk\030\007 \001(\0132\033.P" +
+      "OGOProtos.Rpc.HAKJCJHHHJN\"B\n\013IJCCEGIKHNL" +
+      "\022\022\n\016POKEMON_HEALTH\020\000\022\016\n\nWIN_BATTLE\020\001\022\017\n\013" +
+      "LOSE_BATTLE\020\002\"\"\n\013OGAGADHKAFO\022\023\n\013pegfachk" +
+      "bdd\030\001 \001(\t\"X\n\033IncidentGlobalSettingsProto" +
+      "\022\030\n\020min_player_level\030\001 \001(\005\022\037\n\027min_player" +
+      "_level_for_v2\030\002 \001(\005\"\376\004\n\013OGCCIGDOBBD\022\023\n\013m" +
+      "fkgkhdmbpb\030\001 \001(\004\0222\n\013kcbcpdfdkel\030\002 \001(\0162\035." +
+      "POGOProtos.Rpc.HoloPokemonId\0228\n\013efpknnlc" +
+      "hbc\030\003 \001(\0132#.POGOProtos.Rpc.PokemonDispla" +
+      "yProto\022\023\n\013oppgolmnndn\030\004 \001(\010\022\023\n\013lecobcejk" +
+      "pk\030\005 \001(\t\022\023\n\013hhmlhnefdbc\030\006 \001(\003\022\023\n\013dpcmkif" +
+      "koch\030\007 \001(\003\022)\n\013eajohpjbknk\030\010 \001(\0162\024.POGOPr" +
+      "otos.Rpc.Item\022/\n\013bcnfhogkjfj\030\t \001(\0132\032.POG" +
+      "OProtos.Rpc.BuddyStats\022\023\n\013cppkjnmpbkb\030\n " +
+      "\001(\005\022\023\n\013lnblklpibde\030\013 \001(\003\022\023\n\013dfidajgjdba\030" +
+      "\014 \001(\003\022\023\n\013klakafabbeh\030\r \001(\005\022\023\n\013kcfmjclhpm" +
+      "d\030\016 \001(\010\022\023\n\013oboiiljmifi\030\017 \001(\t\022\023\n\013mjomhbbb" +
+      "ldm\030\020 \001(\003\022A\n\013oegphmcaenb\030\021 \003(\0132,.POGOPro" +
+      "tos.Rpc.OGCCIGDOBBD.OegphmcaenbEntry\022\023\n\013" +
+      "hiclhmgkeef\030\022 \001(\002\032Q\n\020OegphmcaenbEntry\022\013\n" +
+      "\003key\030\001 \001(\005\022,\n\005value\030\002 \001(\0132\035.POGOProtos.R" +
+      "pc.SouvenirProto:\0028\001\"\300\002\n\013OGGPBLLLJMD\0222\n\006" +
+      "result\030\001 \001(\0162\".POGOProtos.Rpc.OGGPBLLLJM" +
+      "D.Result\0226\n\013mifmmmlipdf\030\002 \001(\0132!.POGOProt" +
+      "os.Rpc.BattleUpdateProto\0224\n\013hdinlbkpiel\030" +
+      "\003 \001(\0132\037.POGOProtos.Rpc.AwardedGymBadge\"\216" +
+      "\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022 \n\034ERR" +
+      "OR_INVALID_ATTACK_ACTIONS\020\002\022\026\n\022ERROR_NOT" +
+      "_IN_RANGE\020\003\022\033\n\027ERROR_WRONG_BATTLE_TYPE\020\004" +
+      "\022\025\n\021ERROR_RAID_ACTIVE\020\005\"T\n\013OGOCDKMPPHG\0220" +
+      "\n\013aipjokjmbne\030\001 \001(\0132\033.POGOProtos.Rpc.JPI" +
+      "CNIPDGLJ\022\023\n\013jcclegeojij\030\002 \001(\010\"b\n\013OGOEPHI" +
+      "CKMB\022)\n\013ekpohjfklal\030\001 \001(\0162\024.POGOProtos.R" +
+      "pc.Item\022\023\n\013ckniekbneoe\030\002 \001(\004\022\023\n\013jemhdpon" +
+      "kih\030\003 \001(\t\"\321\001\n\013OHALDJNFOEM\022\023\n\013fgonpfibkai" +
+      "\030\001 \001(\t\022\023\n\013ganccamkoba\030\002 \001(\t\0226\n\013fnblbnfle" +
+      "jd\030\003 \003(\0132!.POGOProtos.Rpc.BattleActionPr" +
+      "oto\0226\n\013jononjhoped\030\004 \001(\0132!.POGOProtos.Rp" +
+      "c.BattleActionProto\022\023\n\013nlblgfioeic\030\005 \001(\001" +
+      "\022\023\n\013ojnmcebeede\030\006 \001(\001\"\315\002\n\013OHIJOMIHHJO\0222\n" +
+      "\006result\030\001 \001(\0162\".POGOProtos.Rpc.OHIJOMIHH" +
+      "JO.Result\0229\n\013oafocnchncd\030\002 \001(\0132$.POGOPro" +
+      "tos.Rpc.CombatChallengeProto\022\023\n\013ncelfjmm" +
+      "hdj\030\003 \001(\t\"\271\001\n\006Result\022\t\n\005UNSET\020\000\022\032\n\026SUCCE" +
+      "SS_OPPONENT_FOUND\020\001\022\022\n\016SUCCESS_QUEUED\020\002\022" +
+      "\037\n\033SUCCESS_NOT_MATCHED_EXPIRED\020\003\022\032\n\026ERRO" +
+      "R_PLAYER_NOT_FOUND\020\004\022\031\n\025ERROR_QUEUE_NOT_" +
+      "FOUND\020\005\022\034\n\030ERROR_RETRY_UNSUCCESSFUL\020\006\"S\n" +
+      "\025BelugaIncenseBoxProto\022\021\n\tis_usable\030\001 \001(" +
+      "\010\022\'\n\037cool_down_finished_timestamp_ms\030\002 \001" +
+      "(\003\"T\n\013OHKPHLGMBCC\0220\n\013cnebdbnmgok\030\001 \001(\0132\033" +
+      ".POGOProtos.Rpc.LAKEAGGMIEH\022\023\n\013mnmgifhdd" +
+      "om\030\002 \001(\005\"@\n\024ContactSettingsProto\022\023\n\013adap" +
+      "ogmohpd\030\001 \001(\010\022\023\n\013cnpkhiaehpb\030\002 \001(\010\"\207\003\n\013O" +
+      "IAKMNKAFEK\0222\n\006result\030\001 \001(\0162\".POGOProtos." +
+      "Rpc.OIAKMNKAFEK.Result\0221\n\013jikkdljggho\030\002 " +
+      "\001(\0132\034.POGOProtos.Rpc.TradingProto\"\220\002\n\006Re" +
+      "sult\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UN" +
+      "KNOWN\020\002\022\032\n\026ERROR_FRIEND_NOT_FOUND\020\003\022\033\n\027E" +
+      "RROR_INVALID_PLAYER_ID\020\004\022\027\n\023ERROR_INVALI" +
+      "D_STATE\020\005\022\027\n\023ERROR_STATE_HANDLER\020\006\022\031\n\025ER" +
+      "ROR_INVALID_POKEMON\020\007\022\036\n\032ERROR_INSUFFICI" +
+      "ENT_PAYMENT\020\010\022\031\n\025ERROR_TRADING_EXPIRED\020\t" +
+      "\022\032\n\026ERROR_TRADING_FINISHED\020\n\"2\n\027Adventur" +
+      "eSyncV2GmtProto\022\027\n\017feature_enabled\030\001 \001(\010" +
+      "\"\027\n\025WithWeatherBoostProto\"\240\001\n\013OIMPBKKLIL" +
+      "D\0222\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.OIMPB" +
+      "KKLILD.Result\0220\n\013kkcmdhieakn\030\002 \003(\0132\033.POG" +
+      "OProtos.Rpc.OGCCIGDOBBD\"+\n\006Result\022\t\n\005UNS" +
+      "ET\020\000\022\013\n\007SUCCESS\020\001\022\t\n\005ERROR\020\002\"m\n\021FormSett" +
+      "ingsProto\022.\n\007pokemon\030\001 \001(\0162\035.POGOProtos." +
+      "Rpc.HoloPokemonId\022(\n\005forms\030\002 \003(\0132\031.POGOP" +
+      "rotos.Rpc.FormProto\".\n\030EvolutionV2Settin" +
+      "gsProto\022\022\n\nis_enabled\030\001 \001(\010\"7\n\013OIPAOFPLB" +
+      "IO\022\023\n\013mfkgkhdmbpb\030\001 \001(\004\022\023\n\013lnijopfoind\030\002" +
+      " \001(\005\"\222\001\n\025InventoryUpgradeProto\022)\n\013ekpohj" +
+      "fklal\030\001 \001(\0162\024.POGOProtos.Rpc.Item\0229\n\013gfc" +
+      "kejncokb\030\002 \001(\0162$.POGOProtos.Rpc.Inventor" +
+      "yUpgradeType\022\023\n\013bmkcaloggjo\030\003 \001(\005\"T\n\022Bad" +
+      "geCaptureReward\022!\n\031capture_reward_multip" +
+      "lier\030\001 \001(\002\022\033\n\023avatar_template_ids\030\002 \003(\t\"" +
+      "\370\002\n\030CombatPlayerProfileProto\022\021\n\tplayer_i" +
+      "d\030\001 \001(\t\022@\n\016public_profile\030\002 \001(\0132(.POGOPr" +
+      "otos.Rpc.PlayerPublicProfileProto\022!\n\031com" +
+      "bat_league_template_id\030\003 \003(\t\022\030\n\020buddy_po" +
+      "kemon_id\030\004 \001(\006\022C\n\010location\030\005 \001(\01321.POGOP" +
+      "rotos.Rpc.CombatPlayerProfileProto.Locat" +
+      "ion\022O\n\031combat_player_preferences\030\006 \001(\0132," +
+      ".POGOProtos.Rpc.CombatPlayerPreferencesP" +
+      "roto\0324\n\010Location\022\023\n\013nehgecafhii\030\001 \001(\001\022\023\n" +
+      "\013agpcbldpoji\030\002 \001(\001\"L\n\013OJOAONNAPCJ\022\023\n\013hen" +
+      "cndffkoi\030\001 \001(\003\022\023\n\013ieflaighpgg\030\002 \001(\001\022\023\n\013m" +
+      "mggfpheimi\030\003 \001(\001\"D\n\tFrameRate\0227\n\013keanhoa" +
+      "hmim\030\001 \001(\0132\".POGOProtos.Rpc.PlatformMetr" +
+      "icData\"\030\n\026WithUniquePokemonProto\"L\n\013OLHJ" +
+      "KHLKFEK\022\023\n\013pdaldoafaaj\030\001 \001(\003\022\023\n\013fgonpfib" +
+      "kai\030\002 \001(\t\022\023\n\013jkpcajihcao\030\003 \003(\005\"\265\003\n\013OMBAD" +
+      "COPDMD\0222\n\006status\030\001 \001(\0162\".POGOProtos.Rpc." +
+      "OMBADCOPDMD.Status\022\023\n\013emmphdgkoej\030\002 \001(\005\022" +
+      ".\n\013hphkghmnkdf\030\003 \001(\0132\031.POGOProtos.Rpc.Lo" +
+      "otProto\0220\n\013elhmhoimejk\030\004 \001(\0132\033.POGOProto" +
+      "s.Rpc.PFPJGDJKEKH\022\023\n\013plhmmjhfkfp\030\005 \001(\005\"\345" +
+      "\001\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\n\n\006FAI" +
+      "LED\020\002\022\034\n\030ERROR_INVALID_POKEMON_ID\020\003\022\032\n\026E" +
+      "RROR_POKEMON_DEPLOYED\020\004\022\035\n\031ERROR_POKEMON" +
+      "_NOT_ALLOWED\020\005\022\032\n\026ERROR_POKEMON_IS_BUDDY" +
+      "\020\006\022 \n\034ERROR_INVALID_TRANSACTION_ID\020\007\022 \n\034" +
+      "ERROR_MISSING_TRANSACTION_ID\020\010\"\"\n\013OMELPM" +
+      "NEODN\022\023\n\013mbopgfdlmol\030\001 \001(\014\"\r\n\013OMEMJPLFBL" +
+      "E\"s\n\020CurrentNewsProto\0225\n\013mikebichmmb\030\001 \003" +
+      "(\0132 .POGOProtos.Rpc.NewsArticleProto\022\023\n\013" +
+      "mnbiflmoefh\030\002 \001(\t\022\023\n\013jkieikflajk\030\003 \001(\003\"\226" +
+      "\002\n\021BattleUpdateProto\0222\n\nbattle_log\030\001 \001(\013" +
+      "2\036.POGOProtos.Rpc.BattleLogProto\022\021\n\tbatt" +
+      "le_id\030\002 \001(\t\0224\n\017active_defender\030\003 \001(\0132\033.P" +
+      "OGOProtos.Rpc.PokemonInfo\0224\n\017active_atta" +
+      "cker\030\004 \001(\0132\033.POGOProtos.Rpc.PokemonInfo\022" +
+      "N\n\034highest_friendship_milestone\030\005 \001(\0162(." +
+      "POGOProtos.Rpc.FriendshipLevelMilestone\"" +
+      "M\n\013ONICENHDNKM\022\023\n\013kejgnkefgpc\030\001 \001(\003\022)\n\013i" +
+      "inabpngfcm\030\002 \003(\0162\024.POGOProtos.Rpc.Item\"\245" +
+      "\001\n\026MonodepthSettingsProto\022\031\n\021enable_occl" +
+      "usions\030\001 \001(\010\022\035\n\025occlusions_default_on\030\002 " +
+      "\001(\010\022!\n\031occlusions_toggle_visible\030\003 \001(\010\022\016" +
+      "\n\006field1\030\004 \001(\010\022\016\n\006field2\030\005 \001(\002\022\016\n\006field3" +
+      "\030\006 \001(\r\"\236\003\n\023PokemonCreateDetail\0222\n\013wild_d" +
+      "etail\030\001 \001(\0132\033.POGOProtos.Rpc.MDNJECIJBHM" +
+      "H\000\0221\n\negg_detail\030\002 \001(\0132\033.POGOProtos.Rpc." +
+      "KOCCEDPIKADH\000\0222\n\013raid_detail\030\003 \001(\0132\033.POG" +
+      "OProtos.Rpc.DMJDGCPJFEGH\000\0223\n\014quest_detai" +
+      "l\030\004 \001(\0132\033.POGOProtos.Rpc.DJIAFGGJDGNH\000\0227" +
+      "\n\020vs_seeker_detail\030\005 \001(\0132\033.POGOProtos.Rp" +
+      "c.HKLINPIJIJOH\000\0226\n\017invasion_detail\030\006 \001(\013" +
+      "2\033.POGOProtos.Rpc.LLKJLEFDCNGH\000\0227\n\020photo" +
+      "bomb_detail\030\007 \001(\0132\033.POGOProtos.Rpc.EBJND" +
+      "CLKJJEH\000B\r\n\013BHGJNIPEFOI\"\205\001\n\027ClientFortMo" +
+      "difierProto\022+\n\rmodifier_type\030\001 \001(\0162\024.POG" +
+      "OProtos.Rpc.Item\022\032\n\022expiration_time_ms\030\002" +
+      " \001(\003\022!\n\031deploying_player_codename\030\003 \001(\t\"" +
+      "N\n\021NewsPageTelemetry\0229\n\013bodbbafheak\030\001 \001(" +
+      "\0162$.POGOProtos.Rpc.NewsPageTelemetryIds\"" +
+      "\"\n\013OOODGJKBFHL\022\023\n\013hbilofnlfja\030\001 \003(\t\"\"\n\013O" +
+      "PGFAKMGJEI\022\023\n\013hdegllgmeih\030\001 \001(\t\"F\n\013OPJDI" +
+      "JGJLLE\0227\n\006status\030\001 \001(\0162\'.POGOProtos.Rpc." +
+      "DFJBGELCPOL.HBIHKKBLENC\"\233\001\n\013PAANHAEGNCN\022" +
+      "\023\n\013pkdofmmahaj\030\001 \001(\010\0228\n\013pphpjibhjce\030\002 \001(" +
+      "\0162#.POGOProtos.Rpc.HoloPokemonFamilyId\022\023" +
+      "\n\013kmhcmofldpi\030\003 \001(\005\022\023\n\013cakieelioki\030\004 \001(\001" +
+      "\022\023\n\013aphbdljdccf\030\005 \001(\001\"v\n\013PAECIPMMKEE\022\023\n\013" +
+      "fgonpfibkai\030\001 \001(\t\022\023\n\013jnojmednlil\030\002 \003(\004\022\023" +
+      "\n\013hmafiedcjfn\030\003 \001(\004\022\023\n\013nlblgfioeic\030\004 \001(\001" +
+      "\022\023\n\013ojnmcebeede\030\005 \001(\001\"\227\002\n\013PBAKFPGGAEC\0222\n" +
+      "\006status\030\001 \001(\0162\".POGOProtos.Rpc.PBAKFPGGA" +
+      "EC.Status\0220\n\013jfoojdpjjei\030\002 \001(\0132\033.POGOPro" +
+      "tos.Rpc.ADHJCLFLGEP\"\241\001\n\006Status\022\t\n\005UNSET\020" +
+      "\000\022\013\n\007SUCCESS\020\001\022\026\n\022ERROR_NOT_IN_RANGE\020\002\022\034" +
+      "\n\030ERROR_INCIDENT_COMPLETED\020\003\022\034\n\030ERROR_IN" +
+      "CIDENT_NOT_FOUND\020\004\022 \n\034ERROR_PLAYER_BELOW" +
+      "_MIN_LEVEL\020\005\022\t\n\005ERROR\020\006\"n\n\013PBANGHILBEL\0222" +
+      "\n\006result\030\001 \001(\0162\".POGOProtos.Rpc.PBANGHIL" +
+      "BEL.Result\"+\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCE" +
+      "SS\020\001\022\t\n\005ERROR\020\002\"L\n\013PCDOMMOHALD\022\023\n\013aohfih" +
+      "ankjc\030\001 \001(\014\022\023\n\013aiilfjofigj\030\002 \001(\003\022\023\n\013demn" +
+      "jojbgli\030\003 \001(\014\"\307\004\n\013PCGKBBIDAPK\0222\n\006result\030" +
+      "\001 \001(\0162\".POGOProtos.Rpc.PCGKBBIDAPK.Resul" +
+      "t\0221\n\013kgfcdhnibdp\030\002 \001(\0132\034.POGOProtos.Rpc." +
+      "PokemonProto\0221\n\013nchjaghhjel\030\003 \001(\0132\034.POGO" +
+      "Protos.Rpc.PokemonProto\022<\n\013ebobjkejack\030\004" +
+      " \003(\0132\'.POGOProtos.Rpc.PCGKBBIDAPK.IENFGD" +
+      "GKEMB\032\240\001\n\013IENFGDGKEMB\022\023\n\013ininllcbhke\030\001 \001" +
+      "(\005\022\023\n\013ekinliohkgk\030\002 \001(\005\022\023\n\013fnapjpnccdp\030\003" +
+      " \001(\005\022\023\n\013ejimngdcckf\030\004 \001(\005\022\023\n\013fjncaoklfgl" +
+      "\030\005 \001(\005\022\023\n\013ffmboekkclo\030\006 \001(\002\022\023\n\013hgjcfdajn" +
+      "pj\030\007 \001(\005\"\274\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
+      "S\020\001\022\033\n\027ERROR_POKEMON_NOT_FOUND\020\002\022 \n\034ERRO" +
+      "R_INSUFFICIENT_RESOURCES\020\003\022\037\n\033ERROR_UPGR" +
+      "ADE_NOT_AVAILABLE\020\004\022\035\n\031ERROR_POKEMON_IS_" +
+      "DEPLOYED\020\005\022\033\n\027ERROR_DUPLICATE_REQUEST\020\006\"" +
+      "a\n\013PCIBILJBKMD\022\023\n\013ckniekbneoe\030\001 \001(\004\022\023\n\013a" +
+      "eoedfahjck\030\002 \001(\t\022\023\n\013nlblgfioeic\030\003 \001(\001\022\023\n" +
+      "\013ojnmcebeede\030\004 \001(\001\"o\n\023PlayerRaidInfoProt" +
+      "o\022\023\n\013lonpkoahoib\030\003 \001(\005\022\023\n\013ojlloeimljd\030\004 " +
+      "\001(\005\022.\n\013bilabhihdjn\030\005 \003(\0132\031.POGOProtos.Rp" +
+      "c.RaidProto\"\240\001\n\017CombatTypeProto\022-\n\004type\030" +
+      "\001 \001(\0162\037.POGOProtos.Rpc.HoloPokemonType\022\034" +
+      "\n\024nice_level_threshold\030\002 \001(\002\022\035\n\025great_le" +
+      "vel_threshold\030\003 \001(\002\022!\n\031excellent_level_t" +
+      "hreshold\030\004 \001(\002\"\r\n\013PDMPFBOEIOF\"\322\001\n\rSouven" +
+      "irProto\0223\n\013danacpehlmo\030\001 \001(\0162\036.POGOProto" +
+      "s.Rpc.SouvenirTypeId\022>\n\013pmnbjpflbnp\030\002 \003(" +
+      "\0132).POGOProtos.Rpc.SouvenirProto.OPGOKPN" +
+      "BNLI\032L\n\013OPGOKPNBNLI\022\023\n\013igeafoidcdk\030\001 \001(\003" +
+      "\022\023\n\013phiabghihcc\030\003 \001(\001\022\023\n\013icmnhajccaa\030\004 \001" +
+      "(\001\"\340\001\n\032QuestPokemonEncounterProto\022\023\n\013clg" +
+      "dnpihbdn\030\001 \001(\t\0221\n\013baeglbmdifp\030\002 \001(\0132\034.PO" +
+      "GOProtos.Rpc.PokemonProto\0222\n\013obajnkbnpmk" +
+      "\030\003 \001(\0162\035.POGOProtos.Rpc.EncounterType\022\023\n" +
+      "\013kfhmgngkgea\030\004 \001(\010\0221\n\013odobbjehbpa\030\005 \001(\0132" +
+      "\034.POGOProtos.Rpc.PokemonProto\"\347\001\n\013PEAOBO" +
+      "NCJBN\022<\n\013hncojddbiio\030\001 \001(\0162\'.POGOProtos." +
+      "Rpc.PEAOBONCJBN.FCMLGPGMGNJ\0221\n\013kbfoamgji" +
+      "gc\030\002 \001(\0162\034.POGOProtos.Rpc.PoiImageType\022\023" +
+      "\n\013nobaoihmgln\030\003 \001(\t\"R\n\013FCMLGPGMGNJ\022\t\n\005UN" +
+      "SET\020\000\022\032\n\026POI_PHOTO_UPLOAD_ERROR\020\001\022\034\n\030POI" +
+      "_PHOTO_UPLOAD_TIMEOUT\020\002\"?\n\tLootProto\0222\n\013" +
+      "nnfbldeigkl\030\001 \003(\0132\035.POGOProtos.Rpc.LootI" +
+      "temProto\"\312,\n\035GameMasterClientTemplatePro" +
+      "to\022\023\n\013template_id\030\001 \001(\t\0225\n\007pokemon\030\002 \001(\013" +
+      "2$.POGOProtos.Rpc.PokemonSettingsProto\022/" +
+      "\n\004item\030\003 \001(\0132!.POGOProtos.Rpc.ItemSettin" +
+      "gsProto\022/\n\004move\030\004 \001(\0132!.POGOProtos.Rpc.M" +
+      "oveSettingsProto\022@\n\rmove_sequence\030\005 \001(\0132" +
+      ").POGOProtos.Rpc.MoveSequenceSettingsPro" +
+      "to\022B\n\016type_effective\030\010 \001(\0132*.POGOProtos." +
+      "Rpc.TypeEffectiveSettingsProto\0221\n\005badge\030" +
+      "\n \001(\0132\".POGOProtos.Rpc.BadgeSettingsProt" +
+      "o\0223\n\006camera\030\013 \001(\0132#.POGOProtos.Rpc.Camer" +
+      "aSettingsProto\022>\n\014player_level\030\014 \001(\0132(.P" +
+      "OGOProtos.Rpc.PlayerLevelSettingsProto\0228" +
+      "\n\tgym_level\030\r \001(\0132%.POGOProtos.Rpc.GymLe" +
+      "velSettingsProto\022?\n\017battle_settings\030\016 \001(" +
+      "\0132&.POGOProtos.Rpc.GymBattleSettingsProt" +
+      "o\022B\n\022encounter_settings\030\017 \001(\0132&.POGOProt" +
+      "os.Rpc.EncounterSettingsProto\022=\n\020iap_ite" +
+      "m_display\030\020 \001(\0132#.POGOProtos.Rpc.IapItem" +
+      "DisplayProto\0226\n\014iap_settings\030\021 \001(\0132 .POG" +
+      "OProtos.Rpc.IapSettingsProto\022E\n\020pokemon_" +
+      "upgrades\030\022 \001(\0132+.POGOProtos.Rpc.PokemonU" +
+      "pgradeSettingsProto\022C\n\017equipped_badges\030\023" +
+      " \001(\0132*.POGOProtos.Rpc.EquippedBadgeSetti" +
+      "ngsProto\022:\n\016quest_settings\030\024 \001(\0132\".POGOP" +
+      "rotos.Rpc.QuestSettingsProto\022F\n\024avatar_c" +
+      "ustomization\030\025 \001(\0132(.POGOProtos.Rpc.Avat" +
+      "arCustomizationProto\0228\n\rform_settings\030\026 " +
+      "\001(\0132!.POGOProtos.Rpc.FormSettingsProto\022B" +
+      "\n\017gender_settings\030\027 \001(\0132).POGOProtos.Rpc" +
+      ".ClientGenderSettingsProto\022D\n\022gym_badge_" +
+      "settings\030\030 \001(\0132(.POGOProtos.Rpc.GymBadge" +
+      "GmtSettingsProto\022@\n\022weather_affinities\030\031" +
+      " \001(\0132$.POGOProtos.Rpc.WeatherAffinityPro" +
+      "to\022A\n\026weather_bonus_settings\030\032 \001(\0132!.POG" +
+      "OProtos.Rpc.WeatherBonusProto\022H\n\026pokemon" +
+      "_scale_settings\030\033 \001(\0132(.POGOProtos.Rpc.P" +
+      "okemonScaleSettingProto\022I\n\024iap_category_" +
+      "display\030\034 \001(\0132+.POGOProtos.Rpc.IapItemCa" +
+      "tegoryDisplayProto\022H\n\030beluga_pokemon_whi" +
+      "telist\030\035 \001(\0132&.POGOProtos.Rpc.BelugaPoke" +
+      "monWhitelist\022D\n\023onboarding_settings\030\036 \001(" +
+      "\0132\'.POGOProtos.Rpc.OnboardingSettingsPro" +
+      "to\022\\\n\035friendship_milestone_settings\030\037 \001(" +
+      "\01325.POGOProtos.Rpc.FriendshipLevelMilest" +
+      "oneSettingsProto\022I\n\026lucky_pokemon_settin" +
+      "gs\030  \001(\0132).POGOProtos.Rpc.LuckyPokemonSe" +
+      "ttingsProto\022<\n\017combat_settings\030! \001(\0132#.P" +
+      "OGOProtos.Rpc.CombatSettingsProto\022I\n\026com" +
+      "bat_league_settings\030\" \001(\0132).POGOProtos.R" +
+      "pc.CombatLeagueSettingsProto\0228\n\rcombat_l" +
+      "eague\030# \001(\0132!.POGOProtos.Rpc.CombatLeagu" +
+      "eProto\022=\n\020ex_raid_settings\030$ \001(\0132#.POGOP" +
+      "rotos.Rpc.ExRaidSettingsProto\022<\n\013combat_" +
+      "move\030% \001(\0132\'.POGOProtos.Rpc.CombatMoveSe" +
+      "ttingsProto\022M\n\030background_mode_settings\030" +
+      "& \001(\0132+.POGOProtos.Rpc.BackgroundModeSet" +
+      "tingsProto\022P\n\032combat_stat_stage_settings" +
+      "\030\' \001(\0132,.POGOProtos.Rpc.CombatStatStageS" +
+      "ettingsProto\022A\n\022combat_npc_trainer\030( \001(\013" +
+      "2%.POGOProtos.Rpc.CombatNpcTrainerProto\022" +
+      "I\n\026combat_npc_personality\030) \001(\0132).POGOPr" +
+      "otos.Rpc.CombatNpcPersonalityProto\022I\n\026on" +
+      "boarding_v2_settings\030* \001(\0132).POGOProtos." +
+      "Rpc.OnboardingV2SettingsProto\022W\n\035party_r" +
+      "ecommendation_settings\030+ \001(\01320.POGOProto" +
+      "s.Rpc.PartyRecommendationSettingsProto\022K" +
+      "\n\027smeargle_moves_settings\030, \001(\0132*.POGOPr" +
+      "otos.Rpc.SmeargleMovesSettingsProto\022V\n\035p" +
+      "okecoin_purchase_display_gmt\030- \001(\0132/.POG" +
+      "OProtos.Rpc.PokecoinPurchaseDisplayGmtPr" +
+      "oto\022F\n\025adventure_sync_v2_gmt\030. \001(\0132\'.POG" +
+      "OProtos.Rpc.AdventureSyncV2GmtProto\022C\n\027l" +
+      "oading_screen_settings\030/ \001(\0132\".POGOProto" +
+      "s.Rpc.LoadingScreenProto\022V\n\035invasion_npc" +
+      "_display_settings\0300 \001(\0132/.POGOProtos.Rpc" +
+      ".InvasionNpcDisplaySettingsProto\022`\n\"comb" +
+      "at_competitive_season_settings\0301 \001(\01324.P" +
+      "OGOProtos.Rpc.CombatCompetitiveSeasonSet" +
+      "tingsProto\022Q\n\035combat_ranking_proto_setti" +
+      "ngs\0302 \001(\0132*.POGOProtos.Rpc.CombatRanking" +
+      "SettingsProto\0224\n\013combat_type\0303 \001(\0132\037.POG" +
+      "OProtos.Rpc.CombatTypeProto\022@\n\024buddy_lev" +
+      "el_settings\0304 \001(\0132\".POGOProtos.Rpc.Buddy" +
+      "LevelSettings\022W\n buddy_activity_category" +
+      "_settings\0305 \001(\0132-.POGOProtos.Rpc.BuddyAc" +
+      "tivityCategorySettings\022F\n\027buddy_activity" +
+      "_settings\0306 \001(\0132%.POGOProtos.Rpc.BuddyAc" +
+      "tivitySettings\022>\n\023buddy_swap_settings\0308 " +
+      "\001(\0132!.POGOProtos.Rpc.BuddySwapSettings\022N" +
+      "\n\031vs_seeker_client_settings\030: \001(\0132+.POGO" +
+      "Protos.Rpc.VsSeekerClientSettingsProto\022S" +
+      "\n\036buddy_encounter_cameo_settings\030; \001(\0132+" +
+      ".POGOProtos.Rpc.BuddyEncounterCameoSetti" +
+      "ngs\022V\n\035limited_purchase_sku_settings\030< \001",
+      "(\0132/.POGOProtos.Rpc.LimitedPurchaseSkuSe" +
+      "ttingsProto\022O\n\034buddy_emotion_level_setti" +
+      "ngs\030= \001(\0132).POGOProtos.Rpc.BuddyEmotionL" +
+      "evelSettings\022b\n\'pokestop_invasion_availa" +
+      "bility_settings\030> \001(\01321.POGOProtos.Rpc.I" +
+      "nvasionAvailabilitySettingsProto\022L\n\032budd" +
+      "y_interaction_settings\030? \001(\0132(.POGOProto" +
+      "s.Rpc.BuddyInteractionSettings\022?\n\024vs_see" +
+      "ker_loot_proto\030@ \001(\0132!.POGOProtos.Rpc.Vs" +
+      "SeekerLootProto\022N\n\031vs_seeker_pokemon_rew" +
+      "ards\030A \001(\0132+.POGOProtos.Rpc.VsSeekerPoke" +
+      "monRewardsProto\022I\n\031battle_hub_order_sett" +
+      "ings\030B \001(\0132&.POGOProtos.Rpc.BattleHubOrd" +
+      "erSettings\022I\n\031battle_hub_badge_settings\030" +
+      "C \001(\0132&.POGOProtos.Rpc.BattleHubBadgeSet" +
+      "tings\022A\n\022map_buddy_settings\030D \001(\0132%.POGO" +
+      "Protos.Rpc.MapBuddySettingsProto\022>\n\023budd" +
+      "y_walk_settings\030E \001(\0132!.POGOProtos.Rpc.B" +
+      "uddyWalkSettings\022O\n\031platypus_rollout_set" +
+      "tings\030F \001(\0132,.POGOProtos.Rpc.PlatypusRol" +
+      "loutSettingsProto\022B\n\025buddy_hunger_settin" +
+      "gs\030H \001(\0132#.POGOProtos.Rpc.BuddyHungerSet" +
+      "tings\022>\n\020project_vacation\030I \001(\0132$.POGOPr" +
+      "otos.Rpc.ProjectVacationProto\022:\n\021mega_ev" +
+      "o_settings\030J \001(\0132\037.POGOProtos.Rpc.MegaEv" +
+      "oSettings\0222\n\010mega_evo\030K \001(\0132 .POGOProtos" +
+      ".Rpc.GameMasterField1\022R\n\033avatar_group_or" +
+      "der_settings\030L \001(\0132-.POGOProtos.Rpc.Avat" +
+      "arGroupOrderSettingsProto\022B\n\022monodepth_s" +
+      "ettings\030N \001(\0132&.POGOProtos.Rpc.Monodepth" +
+      "SettingsProto\022D\n\023raid_settings_proto\030Q \001" +
+      "(\0132\'.POGOProtos.Rpc.RaidClientSettingsPr" +
+      "oto\022\\\n sponsored_geofence_gift_settings\030" +
+      "T \001(\01322.POGOProtos.Rpc.SponsoredGeofence" +
+      "GiftSettingsProto\022>\n\020sticker_metadata\030U " +
+      "\001(\0132$.POGOProtos.Rpc.StickerMetadataProt" +
+      "o\022P\n\032cross_game_social_settings\030V \001(\0132,." +
+      "POGOProtos.Rpc.CrossGameSocialSettingsPr" +
+      "oto\022E\n\024map_display_settings\030W \001(\0132\'.POGO" +
+      "Protos.Rpc.MapDisplaySettingsProto\022G\n\025ar" +
+      "_telemetry_settings\030Z \001(\0132(.POGOProtos.R" +
+      "pc.ArTelemetrySettingsProto\0220\n\006field1\030[ " +
+      "\001(\0132 .POGOProtos.Rpc.GameMasterField2\0220\n" +
+      "\006field2\030] \001(\0132 .POGOProtos.Rpc.GameMaste" +
+      "rField3\0220\n\006field3\030a \001(\0132 .POGOProtos.Rpc" +
+      ".GameMasterField4\0220\n\006field4\030b \001(\0132 .POGO" +
+      "Protos.Rpc.GameMasterField5\0220\n\006field5\030c " +
+      "\001(\0132 .POGOProtos.Rpc.GameMasterField6\"\276\001" +
+      "\n\013PEKJNHJPJIB\022\030\n\016km_in_progress\030\002 \001(\002H\000\022" +
+      "\032\n\020step_in_progress\030\003 \001(\005H\000\022\027\n\rkm_for_re" +
+      "ward\030\004 \001(\002H\001\022\031\n\017step_for_reward\030\005 \001(\005H\001\022" +
+      "/\n\013jlbhegipjml\030\001 \001(\0162\032.POGOProtos.Rpc.Me" +
+      "tricTypeB\n\n\010ProgressB\010\n\006Reward\"0\n\031Avatar" +
+      "GlobalSettingsProto\022\023\n\013enable_pose\030\001 \001(\010" +
+      "\"\327\001\n\rPokemonField1\022)\n\005quest\030\001 \001(\0132\032.POGO" +
+      "Protos.Rpc.QuestProto\0220\n\006field1\030\002 \001(\0132 ." +
+      "POGOProtos.Rpc.PokemonField1Sub\0221\n\npokem" +
+      "on_id\030\003 \001(\0162\035.POGOProtos.Rpc.HoloPokemon" +
+      "Id\0226\n\004form\030\004 \001(\0162(.POGOProtos.Rpc.Pokemo" +
+      "nDisplayProto.Form\"_\n\016QuestGoalProto\0228\n\013" +
+      "gdoolemfnpl\030\001 \003(\0132#.POGOProtos.Rpc.Quest" +
+      "ConditionProto\022\023\n\013heaeepoemki\030\002 \001(\005\"T\n\013P" +
+      "FPJGDJKEKH\0220\n\013ndpcmkigeci\030\001 \001(\0132\033.POGOPr" +
+      "otos.Rpc.PLPBKPABGMK\022\023\n\013mlghifehoah\030\002 \001(" +
+      "\014\"\230\001\n\013PGBOLEFLDPI\0222\n\006result\030\001 \001(\0162\".POGO" +
+      "Protos.Rpc.PGBOLEFLDPI.Result\0223\n\013ioghbpk" +
+      "njbd\030\002 \003(\0132\036.POGOProtos.Rpc.ActionLogEnt" +
+      "ry\" \n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"\322\001\n" +
+      "\013PGCPOAOCFGI\022\023\n\013ckniekbneoe\030\001 \001(\004\022\023\n\013eaj" +
+      "ohpjbknk\030\002 \001(\005\022\023\n\013opbdacclchl\030\003 \001(\001\022\023\n\013j" +
+      "emhdponkih\030\004 \001(\t\022\023\n\013anoooaccgio\030\005 \001(\010\022\023\n" +
+      "\013dmekfancobg\030\006 \001(\001\022\023\n\013npdoaggpibo\030\007 \001(\001\022" +
+      "0\n\013blpglfkkjeo\030\010 \001(\0132\033.POGOProtos.Rpc.NN" +
+      "HPOEPICBH\"\226\003\n\013PHKHKKDLIND\0222\n\006status\030\001 \001(" +
+      "\0162\".POGOProtos.Rpc.PHKHKKDLIND.Status\022<\n" +
+      "\013hhamdkofimc\030\002 \003(\0132\'.POGOProtos.Rpc.PHKH" +
+      "KKDLIND.ONDPNMCPBFN\032\337\001\n\013ONDPNMCPBFN\022\023\n\013h" +
+      "encndffkoi\030\001 \001(\003\022\023\n\013ghjoipidjgh\030\002 \001(\005\022\023\n" +
+      "\013ifpmojmjmlh\030\003 \001(\005\022\023\n\013hoipalfbnhe\030\004 \001(\005\022" +
+      "\023\n\013gcmenhbhgmg\030\005 \001(\005\022\023\n\013blpppekjfeo\030\006 \001(" +
+      "\005\022\023\n\013ikfgchkdanf\030\007 \001(\005\022\023\n\013jopmlmbgnif\030\010 " +
+      "\001(\005\022\023\n\013nmbdcaenpbj\030\t \001(\005\022\023\n\013eekgfcflbkm\030" +
+      "\n \001(\t\"3\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022" +
+      "\021\n\rERROR_UNKNOWN\020\002\"\"\n\013PHKMKLAMCBN\022\023\n\013ckn" +
+      "iekbneoe\030\001 \001(\003\"]\n\016AwardItemProto\022\"\n\004item" +
+      "\030\001 \001(\0162\024.POGOProtos.Rpc.Item\022\022\n\nitem_cou" +
+      "nt\030\002 \001(\005\022\023\n\013bonus_count\030\003 \001(\005\"\242\002\n\033Pokemo" +
+      "nEncounterRewardProto\0223\n\npokemon_id\030\001 \001(" +
+      "\0162\035.POGOProtos.Rpc.HoloPokemonIdH\000\0223\n)us" +
+      "e_quest_pokemon_encounter_distribuition\030" +
+      "\002 \001(\010H\000\022<\n\017pokemon_display\030\003 \001(\0132#.POGOP" +
+      "rotos.Rpc.PokemonDisplayProto\022\027\n\017is_hidd" +
+      "en_ditto\030\004 \001(\010\022:\n\rditto_display\030\005 \001(\0132#." +
+      "POGOProtos.Rpc.PokemonDisplayProtoB\006\n\004Ty" +
+      "pe\"W\n\035DailyBuddyAffectionQuestProto\0226\n\013g" +
+      "dadpcnldha\030\001 \001(\0132!.POGOProtos.Rpc.DailyC" +
+      "ounterProto\"\r\n\013PJNNFGFBNFJ\"P\n\025PasscodeSe" +
+      "ttingsProto\022\036\n\026show_passcode_in_store\030\001 " +
+      "\001(\010\022\027\n\017use_passcode_v2\030\002 \001(\010\"\255\035\n\013EnumWra" +
+      "pper\"\265\001\n\033InvasionCharacterExpression\022\024\n\020" +
+      "EXPRESSION_UNSET\020\000\022\021\n\rPLACEHOLDER_1\020\001\022\021\n" +
+      "\rPLACEHOLDER_2\020\002\022\021\n\rPLACEHOLDER_3\020\003\022\021\n\rP" +
+      "LACEHOLDER_4\020\004\022\014\n\010GREETING\020\005\022\r\n\tCHALLENG" +
+      "E\020\006\022\013\n\007VICTORY\020\007\022\n\n\006DEFEAT\020\010\"\203\001\n\021Charact" +
+      "erCategory\022\t\n\005UNSET\020\000\022\017\n\013TEAM_LEADER\020\001\022\t" +
+      "\n\005GRUNT\020\002\022\010\n\004ARLO\020\003\022\t\n\005CLIFF\020\004\022\n\n\006SIERRA" +
+      "\020\005\022\014\n\010GIOVANNI\020\006\022\013\n\007GRUNTBF\020\007\022\013\n\007GRUNTBM" +
+      "\020\010\"<\n\017InvasionContext\022\025\n\021POKESTOP_INCIDE" +
+      "NT\020\000\022\022\n\016ROCKET_BALLOON\020\001\"\300\031\n\021InvasionCha" +
+      "racter\022\023\n\017CHARACTER_UNSET\020\000\022\025\n\021CHARACTER" +
+      "_BLANCHE\020\001\022\025\n\021CHARACTER_CANDELA\020\002\022\023\n\017CHA" +
+      "RACTER_SPARK\020\003\022\030\n\024CHARACTER_GRUNT_MALE\020\004" +
+      "\022\032\n\026CHARACTER_GRUNT_FEMALE\020\005\022\036\n\032CHARACTE" +
+      "R_BUG_GRUNT_FEMALE\020\006\022\034\n\030CHARACTER_BUG_GR" +
+      "UNT_MALE\020\007\022#\n\037CHARACTER_DARKNESS_GRUNT_F" +
+      "EMALE\020\010\022!\n\035CHARACTER_DARKNESS_GRUNT_MALE" +
+      "\020\t\022\037\n\033CHARACTER_DARK_GRUNT_FEMALE\020\n\022\035\n\031C" +
+      "HARACTER_DARK_GRUNT_MALE\020\013\022!\n\035CHARACTER_" +
+      "DRAGON_GRUNT_FEMALE\020\014\022\037\n\033CHARACTER_DRAGO" +
+      "N_GRUNT_MALE\020\r\022 \n\034CHARACTER_FAIRY_GRUNT_" +
+      "FEMALE\020\016\022\036\n\032CHARACTER_FAIRY_GRUNT_MALE\020\017" +
+      "\022#\n\037CHARACTER_FIGHTING_GRUNT_FEMALE\020\020\022!\n" +
+      "\035CHARACTER_FIGHTING_GRUNT_MALE\020\021\022\037\n\033CHAR" +
+      "ACTER_FIRE_GRUNT_FEMALE\020\022\022\035\n\031CHARACTER_F" +
+      "IRE_GRUNT_MALE\020\023\022!\n\035CHARACTER_FLYING_GRU" +
+      "NT_FEMALE\020\024\022\037\n\033CHARACTER_FLYING_GRUNT_MA" +
+      "LE\020\025\022 \n\034CHARACTER_GRASS_GRUNT_FEMALE\020\026\022\036" +
+      "\n\032CHARACTER_GRASS_GRUNT_MALE\020\027\022!\n\035CHARAC" +
+      "TER_GROUND_GRUNT_FEMALE\020\030\022\037\n\033CHARACTER_G" +
+      "ROUND_GRUNT_MALE\020\031\022\036\n\032CHARACTER_ICE_GRUN" +
+      "T_FEMALE\020\032\022\034\n\030CHARACTER_ICE_GRUNT_MALE\020\033" +
+      "\022 \n\034CHARACTER_METAL_GRUNT_FEMALE\020\034\022\036\n\032CH" +
+      "ARACTER_METAL_GRUNT_MALE\020\035\022!\n\035CHARACTER_" +
+      "NORMAL_GRUNT_FEMALE\020\036\022\037\n\033CHARACTER_NORMA" +
+      "L_GRUNT_MALE\020\037\022!\n\035CHARACTER_POISON_GRUNT" +
+      "_FEMALE\020 \022\037\n\033CHARACTER_POISON_GRUNT_MALE" +
+      "\020!\022\"\n\036CHARACTER_PSYCHIC_GRUNT_FEMALE\020\"\022 " +
+      "\n\034CHARACTER_PSYCHIC_GRUNT_MALE\020#\022\037\n\033CHAR" +
+      "ACTER_ROCK_GRUNT_FEMALE\020$\022\035\n\031CHARACTER_R" +
+      "OCK_GRUNT_MALE\020%\022 \n\034CHARACTER_WATER_GRUN" +
+      "T_FEMALE\020&\022\036\n\032CHARACTER_WATER_GRUNT_MALE" +
+      "\020\'\022 \n\034CHARACTER_PLAYER_TEAM_LEADER\020(\022\035\n\031" +
+      "CHARACTER_EXECUTIVE_CLIFF\020)\022\034\n\030CHARACTER" +
+      "_EXECUTIVE_ARLO\020*\022\036\n\032CHARACTER_EXECUTIVE" +
+      "_SIERRA\020+\022\026\n\022CHARACTER_GIOVANNI\020,\022\036\n\032CHA" +
+      "RACTER_DECOY_GRUNT_MALE\020-\022 \n\034CHARACTER_D" +
+      "ECOY_GRUNT_FEMALE\020.\022 \n\034CHARACTER_GHOST_G" +
+      "RUNT_FEMALE\020/\022\036\n\032CHARACTER_GHOST_GRUNT_M" +
+      "ALE\0200\022#\n\037CHARACTER_ELECTRIC_GRUNT_FEMALE" +
+      "\0201\022!\n\035CHARACTER_ELECTRIC_GRUNT_MALE\0202\022\"\n" +
+      "\036CHARACTER_BALLOON_GRUNT_FEMALE\0203\022 \n\034CHA" +
+      "RACTER_BALLOON_GRUNT_MALE\0204\022\033\n\027CHARACTER" +
+      "_GRUNTB_FEMALE\0205\022\031\n\025CHARACTER_GRUNTB_MAL" +
+      "E\0206\022&\n\"CHARACTER_BUG_BALLOON_GRUNT_FEMAL" +
+      "E\0207\022$\n CHARACTER_BUG_BALLOON_GRUNT_MALE\020" +
+      "8\022\'\n#CHARACTER_DARK_BALLOON_GRUNT_FEMALE" +
+      "\0209\022%\n!CHARACTER_DARK_BALLOON_GRUNT_MALE\020" +
+      ":\022)\n%CHARACTER_DRAGON_BALLOON_GRUNT_FEMA" +
+      "LE\020;\022\'\n#CHARACTER_DRAGON_BALLOON_GRUNT_M" +
+      "ALE\020<\022(\n$CHARACTER_FAIRY_BALLOON_GRUNT_F" +
+      "EMALE\020=\022&\n\"CHARACTER_FAIRY_BALLOON_GRUNT" +
+      "_MALE\020>\022+\n\'CHARACTER_FIGHTING_BALLOON_GR" +
+      "UNT_FEMALE\020?\022)\n%CHARACTER_FIGHTING_BALLO" +
+      "ON_GRUNT_MALE\020@\022\'\n#CHARACTER_FIRE_BALLOO" +
+      "N_GRUNT_FEMALE\020A\022%\n!CHARACTER_FIRE_BALLO" +
+      "ON_GRUNT_MALE\020B\022)\n%CHARACTER_FLYING_BALL" +
+      "OON_GRUNT_FEMALE\020C\022\'\n#CHARACTER_FLYING_B" +
+      "ALLOON_GRUNT_MALE\020D\022(\n$CHARACTER_GRASS_B" +
+      "ALLOON_GRUNT_FEMALE\020E\022&\n\"CHARACTER_GRASS" +
+      "_BALLOON_GRUNT_MALE\020F\022)\n%CHARACTER_GROUN" +
+      "D_BALLOON_GRUNT_FEMALE\020G\022\'\n#CHARACTER_GR" +
+      "OUND_BALLOON_GRUNT_MALE\020H\022&\n\"CHARACTER_I" +
+      "CE_BALLOON_GRUNT_FEMALE\020I\022$\n CHARACTER_I" +
+      "CE_BALLOON_GRUNT_MALE\020J\022(\n$CHARACTER_MET" +
+      "AL_BALLOON_GRUNT_FEMALE\020K\022&\n\"CHARACTER_M" +
+      "ETAL_BALLOON_GRUNT_MALE\020L\022)\n%CHARACTER_N" +
+      "ORMAL_BALLOON_GRUNT_FEMALE\020M\022\'\n#CHARACTE" +
+      "R_NORMAL_BALLOON_GRUNT_MALE\020N\022)\n%CHARACT" +
+      "ER_POISON_BALLOON_GRUNT_FEMALE\020O\022\'\n#CHAR" +
+      "ACTER_POISON_BALLOON_GRUNT_MALE\020P\022*\n&CHA" +
+      "RACTER_PSYCHIC_BALLOON_GRUNT_FEMALE\020Q\022(\n" +
+      "$CHARACTER_PSYCHIC_BALLOON_GRUNT_MALE\020R\022" +
+      "\'\n#CHARACTER_ROCK_BALLOON_GRUNT_FEMALE\020S" +
+      "\022%\n!CHARACTER_ROCK_BALLOON_GRUNT_MALE\020T\022" +
+      "(\n$CHARACTER_WATER_BALLOON_GRUNT_FEMALE\020" +
+      "U\022&\n\"CHARACTER_WATER_BALLOON_GRUNT_MALE\020" +
+      "V\022(\n$CHARACTER_GHOST_BALLOON_GRUNT_FEMAL" +
+      "E\020W\022&\n\"CHARACTER_GHOST_BALLOON_GRUNT_MAL" +
+      "E\020X\022+\n\'CHARACTER_ELECTRIC_BALLOON_GRUNT_" +
+      "FEMALE\020Y\022)\n%CHARACTER_ELECTRIC_BALLOON_G" +
+      "RUNT_MALE\020Z\"_\n\rPokestopStyle\022\023\n\017POKESTOP" +
+      "_NORMAL\020\000\022\034\n\030POKESTOP_ROCKET_INVASION\020\001\022" +
+      "\033\n\027POKESTOP_ROCKET_VICTORY\020\002\"P\n\013PKNPEKDP" +
+      "GBP\022A\n\013oijeoejhgbo\030\001 \001(\0132,.POGOProtos.Rp" +
+      "c.CombatPlayerPreferencesProto\"Y\n\036Platfo" +
+      "rmClientApiSettingsProto\022\017\n\007payload\030\001 \001(" +
+      "\014\"&\n\014SettingsType\022\r\n\tUNDEFINED\020\000\022\007\n\003MAP\020" +
+      "\001\"P\n\031PlatformPlayerLocaleProto\022\017\n\007countr" +
+      "y\030\001 \001(\t\022\020\n\010language\030\002 \001(\t\022\020\n\010timezone\030\003 " +
+      "\001(\t\"\"\n\013PLGIJEEBAID\022\023\n\013cnfblmcfgkk\030\001 \001(\010\"" +
+      "r\n\013PLNICJBIDMN\022\023\n\tkm_walked\030\002 \001(\002H\000\022\024\n\ns" +
+      "tep_count\030\003 \001(\005H\000\022/\n\013jlbhegipjml\030\001 \001(\0162\032" +
+      ".POGOProtos.Rpc.MetricTypeB\007\n\005Value\"7\n\013P" +
+      "LPBKPABGMK\022\023\n\013emodglnocmb\030\001 \001(\t\022\023\n\013npfko" +
+      "mnambb\030\002 \001(\t\"L\n\013PMAHAKCLOCP\022\023\n\013jbinlkojl" +
+      "ng\030\001 \001(\010\022\023\n\013gicljepfjmm\030\002 \001(\010\022\023\n\013gakpkpg" +
+      "efih\030\003 \001(\003\"\206\001\n\021LobbyPokemonProto\022\023\n\013mjlo" +
+      "fidknme\030\001 \001(\003\0222\n\013kcbcpdfdkel\030\002 \001(\0162\035.POG" +
+      "OProtos.Rpc.HoloPokemonId\022\023\n\013fgeliggeohb" +
+      "\030\003 \001(\005\022\023\n\013homeghafodj\030\004 \001(\002\"Q\n\017ItemRewar" +
+      "dProto\022)\n\013ekpohjfklal\030\001 \001(\0162\024.POGOProtos" +
+      ".Rpc.Item\022\023\n\013ligbfceekdo\030\002 \001(\005\"7\n\013PNEKLM" +
+      "MDFBJ\022\023\n\013alflaepafnn\030\001 \001(\t\022\023\n\013jnojmednli" +
+      "l\030\006 \003(\004\"\365\001\n\013PNFLKEIDCJK\0222\n\006result\030\001 \001(\0162" +
+      "\".POGOProtos.Rpc.PNFLKEIDCJK.Result\"\261\001\n\006" +
+      "Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\032\n\026ERROR_" +
+      "INVALID_NICKNAME\020\002\022\033\n\027ERROR_POKEMON_NOT_" +
+      "FOUND\020\003\022\030\n\024ERROR_POKEMON_IS_EGG\020\004\022\033\n\027ERR" +
+      "OR_FILTERED_NICKNAME\020\005\022\037\n\033ERROR_EXCEEDED" +
+      "_CHANGE_LIMIT\020\006\"\"\n\013PNJMFHKGMAC\022\023\n\013ldaocj" +
+      "ncphe\030\001 \001(\t\"7\n\013PNONGDLKFAG\022\023\n\013phiabghihc" +
+      "c\030\002 \001(\001\022\023\n\013icmnhajccaa\030\003 \001(\001\"\250\003\n\021QuestDi" +
+      "splayProto\022\023\n\013clgdnpihbdn\030\001 \001(\t\0225\n\013okdcl" +
+      "nadodk\030\002 \003(\0132 .POGOProtos.Rpc.QuestDialo" +
+      "gProto\022\023\n\013lcdegoaaeao\030\003 \001(\t\022\023\n\013dahllofea" +
+      "ic\030\004 \001(\t\022\023\n\013ihfjmmjjlph\030\005 \001(\005\0226\n\013pfjdidp" +
+      "mnpn\030\006 \003(\0132!.POGOProtos.Rpc.QuestDisplay" +
+      "Proto\022\023\n\013nokmlangmnp\030\007 \001(\010\022\023\n\013hiknoonlmb" +
+      "e\030\010 \001(\t\022\023\n\013eaehaaiioac\030\t \001(\t\022\023\n\013igdbljfh" +
+      "hge\030\n \001(\t\022\023\n\013jafbefoialn\030\013 \001(\t\022\023\n\013jmjdhi" +
+      "mbnmd\030\014 \001(\t\022\023\n\013nfaipdkocnf\030\r \001(\t\022\023\n\013glnp" +
+      "ipoehpc\030\016 \001(\t\022\023\n\013kkameffjhfe\030\017 \001(\t\022\023\n\013pc" +
+      "nkjjhmean\030\020 \001(\005\"L\n\013POIIFFIBIFL\022\023\n\013dpnibk" +
+      "ogejm\030\001 \001(\t\022\023\n\013lndigkkjfml\030\002 \001(\t\022\023\n\013pdal" +
+      "doafaaj\030\003 \001(\003\"\242\002\n\013POKONEGNFDO\022<\n\013mhdiijj" +
+      "hcpl\030\001 \003(\0132\'.POGOProtos.Rpc.POKONEGNFDO." +
+      "AEMMNNINAEB\032\227\001\n\013AEMMNNINAEB\0227\n\006result\030\001 " +
+      "\001(\0162\'.POGOProtos.Rpc.POKONEGNFDO.ECLMOHM" +
+      "FLEF\022:\n\013niappnoleno\030\002 \001(\0132%.POGOProtos.R" +
+      "pc.AssetDigestEntryProto\022\023\n\013hhnbfajichl\030" +
+      "\003 \001(\t\";\n\013ECLMOHMFLEF\022\t\n\005UNSET\020\000\022\t\n\005ERROR" +
+      "\020\001\022\t\n\005VALID\020\002\022\013\n\007EXPIRED\020\003\"m\n\021BuddyWalkS" +
+      "ettings\022\'\n\037km_required_per_affection_poi" +
+      "nt\030\001 \001(\002\022/\n\013metric_type\030\002 \001(\0162\032.POGOProt" +
+      "os.Rpc.MetricType\"\255\001\n\"CrossGameSocialGlo" +
+      "balSettingsProto\022\037\n\027online_status_min_le" +
+      "vel\030\001 \001(\005\022!\n\031niantic_profile_min_level\030\002" +
+      " \001(\005\022\036\n\026friends_list_min_level\030\003 \001(\005\022#\n\033" +
+      "max_friends_per_detail_page\030\004 \001(\005\"z\n\016Meg" +
+      "aEvosField1\022H\n\026temporary_evolution_id\030\001 " +
+      "\001(\0162(.POGOProtos.Rpc.HoloTemporaryEvolut" +
+      "ionId\022\016\n\006field1\030\002 \001(\005\022\016\n\006field2\030\003 \001(\t\".\n" +
+      "\032RedeemPasscodeRequestProto\022\020\n\010passcode\030" +
+      "\001 \001(\t\"\227\003\n\033RedeemPasscodeResponseProto\022B\n" +
+      "\006result\030\001 \001(\01622.POGOProtos.Rpc.RedeemPas" +
+      "scodeResponseProto.Result\022O\n\racquired_it" +
+      "em\030\002 \003(\01328.POGOProtos.Rpc.RedeemPasscode" +
+      "ResponseProto.AcquiredItem\022\034\n\024acquired_i" +
+      "tems_proto\030\003 \001(\014\022\020\n\010passcode\030\004 \001(\t\032+\n\014Ac" +
+      "quiredItem\022\014\n\004item\030\001 \001(\t\022\r\n\005count\030\002 \001(\003\"" +
+      "\205\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rNO" +
+      "T_AVAILABLE\020\002\022\030\n\024OVER_INVENTORY_LIMIT\020\003\022" +
+      "\024\n\020ALREADY_REDEEMED\020\004\022 \n\034OVER_PLAYER_RED" +
+      "EMPTION_LIMIT\020\005\"\256\001\n\'UpdateAdventureSyncF" +
+      "itnessResponseProto\022N\n\006status\030\001 \001(\0162>.PO" +
+      "GOProtos.Rpc.UpdateAdventureSyncFitnessR" +
+      "esponseProto.Status\"3\n\006Status\022\t\n\005UNSET\020\000" +
+      "\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\"v\n\'Upda" +
+      "teAdventureSyncSettingsRequestProto\022K\n\027a" +
+      "dventure_sync_settings\030\001 \001(\0132*.POGOProto" +
+      "s.Rpc.AdventureSyncSettingsProto\"\232\003\n\"Pla" +
+      "tformAcceptFriendInviteOutProto\022I\n\006resul" +
+      "t\030\001 \001(\01629.POGOProtos.Rpc.PlatformAcceptF" +
+      "riendInviteOutProto.Result\022:\n\006friend\030\002 \001" +
+      "(\0132*.POGOProtos.Rpc.PlatformPlayerSummar" +
+      "yProto\"\354\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020" +
+      "\001\022\021\n\rERROR_UNKNOWN\020\002\022\037\n\033ERROR_INVITE_DOE" +
+      "S_NOT_EXIST\020\003\022+\n\'ERROR_MAX_FRIENDS_LIMIT" +
+      "_REACHED_DELETED\020\004\022#\n\037ERROR_INVITE_HAS_B" +
+      "EEN_CANCELLED\020\005\022 \n\034ERROR_SENDER_HAS_MAX_" +
+      "FRIENDS\020\006\022\"\n\036ERROR_RECEIVER_HAS_MAX_FRIE" +
+      "NDS\020\007\"4\n\037PlatformAcceptFriendInviteProto" +
+      "\022\021\n\tplayer_id\030\001 \001(\t\"\300\002\n\034PlatformAccountS" +
+      "ettingsProto\022#\n\033opt_out_social_graph_imp" +
+      "ort\030\001 \001(\010\022S\n\025online_status_consent\030\002 \001(\016" +
+      "24.POGOProtos.Rpc.PlatformSocialSettings" +
+      ".ConsentStatus\022V\n\030last_played_date_conse" +
+      "nt\030\003 \001(\01624.POGOProtos.Rpc.PlatformSocial" +
+      "Settings.ConsentStatus\022N\n\020codename_conse" +
+      "nt\030\004 \001(\01624.POGOProtos.Rpc.PlatformSocial" +
+      "Settings.ConsentStatus\"\353\001\n\036PlatformAddLo" +
+      "ginActionOutProto\022\017\n\007success\030\001 \001(\010\0229\n\014lo" +
+      "gin_detail\030\002 \003(\0132#.POGOProtos.Rpc.Platfo" +
+      "rmLoginDetail\022E\n\006status\030\003 \001(\01625.POGOProt" +
+      "os.Rpc.PlatformAddLoginActionOutProto.St" +
+      "atus\"6\n\006Status\022\t\n\005UNSET\020\000\022\020\n\014AUTH_FAILUR" +
+      "E\020\001\022\017\n\013LOGIN_TAKEN\020\002\"\213\001\n\033PlatformAddLogi" +
+      "nActionProto\022;\n\021identity_provider\030\001 \001(\0162" +
+      " .POGOProtos.Rpc.IdentityProvider\022\025\n\rinn" +
+      "er_message\030\002 \001(\014\022\030\n\020auth_provider_id\030\003 \001" +
+      "(\t\"a\n\020PlatformApnToken\022\027\n\017registration_i" +
+      "d\030\001 \001(\t\022\031\n\021bundle_identifier\030\002 \001(\t\022\031\n\021pa" +
+      "yload_byte_size\030\003 \001(\005\"\230\003\n\023PlatformClient" +
+      "Inbox\022G\n\rnotifications\030\001 \003(\01320.POGOProto" +
+      "s.Rpc.PlatformClientInbox.Notification\032\371" +
+      "\001\n\014Notification\022\027\n\017notification_id\030\001 \001(\t" +
+      "\022\021\n\ttitle_key\030\002 \001(\t\022\020\n\010category\030\003 \001(\t\022\033\n" +
+      "\023create_timestamp_ms\030\004 \001(\003\022;\n\tvariables\030" +
+      "\005 \003(\0132(.POGOProtos.Rpc.PlatformTemplateV" +
+      "ariable\0229\n\006labels\030\006 \003(\0162).POGOProtos.Rpc" +
+      ".PlatformClientInbox.Label\022\026\n\016expire_tim" +
+      "e_ms\030\007 \001(\003\"<\n\005Label\022\017\n\013UNSET_LABEL\020\000\022\n\n\006" +
+      "UNREAD\020\001\022\007\n\003NEW\020\002\022\r\n\tIMMEDIATE\020\003\"\352\001\n#Pla" +
+      "tformDeclineFriendInviteOutProto\022J\n\006resu" +
+      "lt\030\001 \001(\0162:.POGOProtos.Rpc.PlatformDeclin" +
+      "eFriendInviteOutProto.Result\"w\n\006Result\022\t" +
+      "\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020" +
+      "\002\022\037\n\033ERROR_INVITE_DOES_NOT_EXIST\020\003\022!\n\035ER" +
+      "ROR_INVITE_ALREADY_DECLINED\020\004\"5\n Platfor" +
+      "mDeclineFriendInviteProto\022\021\n\tplayer_id\030\001" +
+      " \001(\t\"3\n#PlatformDownloadSettingsActionPr" +
+      "oto\022\014\n\004sha1\030\001 \001(\t\"y\n%PlatformDownloadSet" +
+      "tingsResponseProto\022\r\n\005error\030\001 \001(\t\022\014\n\004sha" +
+      "1\030\002 \001(\t\0223\n\006values\030\003 \001(\0132#.POGOProtos.Rpc" +
+      ".GlobalSettingsProto\"\300\002\n\032PlatformFriendD" +
+      "etailsProto\022:\n\006player\030\001 \001(\0132*.POGOProtos" +
+      ".Rpc.PlatformPlayerSummaryProto\022\033\n\023frien" +
+      "d_visible_data\030\002 \001(\014\022\r\n\005score\030\003 \001(\005\022\024\n\014d" +
+      "ata_with_me\030\004 \001(\014\022N\n\ronline_status\030\005 \001(\016" +
+      "27.POGOProtos.Rpc.PlatformFriendDetailsP" +
+      "roto.OnlineStatus\"T\n\014OnlineStatus\022\t\n\005UNS" +
+      "ET\020\000\022\022\n\016STATUS_UNKNOWN\020\001\022\021\n\rSTATUS_ONLIN" +
+      "E\020\002\022\022\n\016STATUS_OFFLINE\020\003\"#\n\010GcmToken\022\027\n\017r" +
+      "egistration_id\030\001 \001(\t\"\374\001\n\035GenerateGmapSig" +
+      "nedUrlOutProto\022D\n\006result\030\001 \001(\01624.POGOPro" +
+      "tos.Rpc.GenerateGmapSignedUrlOutProto.Re" +
+      "sult\022\022\n\nsigned_url\030\002 \001(\t\"\200\001\n\006Result\022\t\n\005U" +
+      "NSET\020\000\022\013\n\007SUCCESS\020\001\022\032\n\026ERROR_PLAYER_NOT_" +
+      "VALID\020\002\022\026\n\022ERROR_RATE_LIMITED\020\003\022\027\n\023ERROR" +
+      "_MISSING_INPUT\020\004\022\021\n\rERROR_UNKNOWN\020\005\"\325\001\n\032" +
+      "GenerateGmapSignedUrlProto\022\020\n\010latitude\030\001" +
+      " \001(\001\022\021\n\tlongitude\030\002 \001(\001\022\r\n\005width\030\003 \001(\005\022\016" +
+      "\n\006height\030\004 \001(\005\022\014\n\004zoom\030\005 \001(\005\022\025\n\rlanguage" +
+      "_code\030\006 \001(\t\022\024\n\014country_code\030\007 \001(\t\022\021\n\tmap" +
+      "_style\030\010 \001(\t\022\020\n\010map_type\030\t \001(\t\022\023\n\013icon_p" +
+      "arams\030\n \001(\t\"\324\001\n\032GetAccountSettingsOutPro" +
+      "to\022A\n\006result\030\001 \001(\01621.POGOProtos.Rpc.GetA" +
+      "ccountSettingsOutProto.Result\022>\n\010setting" +
+      "s\030\002 \001(\0132,.POGOProtos.Rpc.PlatformAccount" +
+      "SettingsProto\"3\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SU" +
+      "CCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\"\031\n\027GetAccount" +
+      "SettingsProto\"\036\n\034GetClientFeatureFlagsRe" +
+      "quest\"\241\001\n\035GetClientFeatureFlagsResponse\022" +
+      ";\n\rfeature_flags\030\001 \001(\0132$.POGOProtos.Rpc." +
+      "SocialClientFeatures\022C\n\017global_settings\030" +
+      "\002 \001(\0132*.POGOProtos.Rpc.SocialClientGloba" +
+      "lSettings\"\327\003\n\035GetFacebookFriendListOutPr" +
+      "oto\022D\n\006result\030\001 \001(\01624.POGOProtos.Rpc.Get" +
+      "FacebookFriendListOutProto.Result\022Q\n\006fri" +
+      "end\030\002 \003(\0132A.POGOProtos.Rpc.GetFacebookFr" +
+      "iendListOutProto.FacebookFriendProto\022\023\n\013" +
+      "next_cursor\030\003 \001(\t\032d\n\023FacebookFriendProto" +
+      "\022:\n\006player\030\001 \001(\0132*.POGOProtos.Rpc.Platfo" +
+      "rmPlayerSummaryProto\022\021\n\tfull_name\030\002 \001(\t\"" +
+      "\241\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rER" +
+      "ROR_UNKNOWN\020\002\022\026\n\022ERROR_FACEBOOK_API\020\003\022\036\n" +
+      "\032ERROR_FACEBOOK_PERMISSIONS\020\004\022\030\n\024ERROR_N" +
+      "O_FACEBOOK_ID\020\005\022\032\n\026ERROR_PLAYER_NOT_FOUN" +
+      "D\020\006\"T\n\032GetFacebookFriendListProto\022\027\n\017fb_" +
+      "access_token\030\001 \001(\t\022\r\n\005limit\030\002 \001(\005\022\016\n\006cur" +
+      "sor\030\003 \001(\t\"\214\001\n\025GetFriendCodeOutProto\022<\n\006r" +
+      "esult\030\001 \001(\0162,.POGOProtos.Rpc.GetFriendCo" +
+      "deOutProto.Result\022\023\n\013friend_code\030\002 \001(\t\" " +
+      "\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\"1\n\022GetF" +
+      "riendCodeProto\022\033\n\023force_generate_code\030\001 " +
+      "\001(\010\"\265\004\n\030GetFriendDetailsOutProto\022?\n\006resu" +
+      "lt\030\001 \001(\0162/.POGOProtos.Rpc.GetFriendDetai" +
+      "lsOutProto.Result\022:\n\006friend\030\002 \003(\0132*.POGO" +
+      "Protos.Rpc.PlatformFriendDetailsProto\022V\n" +
+      "\031friend_details_debug_info\030\003 \001(\01323.POGOP" +
+      "rotos.Rpc.GetFriendDetailsOutProto.Debug" +
+      "Proto\032\353\001\n\nDebugProto\022\027\n\017fetched_from_db\030" +
+      "\001 \001(\005\022\033\n\023fetched_from_fanout\030\002 \001(\005\022\"\n\032fe" +
+      "tched_from_player_mapper\030\003 \001(\005\022!\n\031fetche" +
+      "d_from_status_cache\030\004 \001(\005\022\027\n\017failed_to_f" +
+      "etch\030\005 \001(\005\022*\n\"fetched_from_same_server_a" +
+      "s_player\030\007 \001(\005\032\033\n\006Callee\022\021\n\tplayer_id\030\002 " +
+      "\001(\t\"V\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n" +
+      "\rERROR_UNKNOWN\020\002\022!\n\035EXCEEDS_MAX_PLAYERS_" +
+      "PER_QUERY\020\003\"*\n\025GetFriendDetailsProto\022\021\n\t" +
+      "player_id\030\001 \003(\t\"\331\007\n\030GetFriendDetailsResp" +
+      "onse\022?\n\006result\030\001 \001(\0162/.POGOProtos.Rpc.Ge" +
+      "tFriendDetailsResponse.Result\022X\n\016friend_" +
+      "details\030\002 \003(\0132@.POGOProtos.Rpc.GetFriend" +
+      "DetailsResponse.FriendDetailsEntryProto\032" +
+      "\315\002\n\027FriendDetailsEntryProto\022\021\n\tplayer_id" +
+      "\030\001 \001(\t\0224\n\007profile\030\002 \001(\0132#.POGOProtos.Rpc" +
+      ".ProfileDetailsProto\022X\n\rplayer_status\030\003 " +
+      "\001(\0132A.POGOProtos.Rpc.GetFriendDetailsRes" +
+      "ponse.PlayerStatusDetailsProto\022E\n\021callin",
+      "g_game_data\030\004 \001(\0132*.POGOProtos.Rpc.Platf" +
+      "ormFriendDetailsProto\022H\n\021invitation_stat" +
+      "us\030\005 \001(\0162-.POGOProtos.Rpc.SocialV2Enum.I" +
+      "nvitationStatus\032\363\002\n\030PlayerStatusDetailsP" +
+      "roto\022X\n\006result\030\001 \001(\0162H.POGOProtos.Rpc.Ge" +
+      "tFriendDetailsResponse.PlayerStatusDetai" +
+      "lsProto.Result\0229\n\006locale\030\002 \001(\0132).POGOPro" +
+      "tos.Rpc.PlatformPlayerLocaleProto\022@\n\ronl" +
+      "ine_status\030\003 \001(\0162).POGOProtos.Rpc.Social" +
+      "V2Enum.OnlineStatus\022\033\n\023last_played_app_k" +
+      "ey\030\004 \001(\t\"c\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS" +
+      "\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\030\n\024ERROR_STATUS_UN" +
+      "KNOWN\020\003\022\024\n\020ERROR_STALE_DATA\020\004\"\\\n\006Result\022" +
+      "\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN" +
+      "\020\002\022\'\n#ERROR_EXCEEDS_MAX_FRIENDS_PER_QUER" +
+      "Y\020\003\"\373\005\n\026GetFriendsListOutProto\022=\n\006result" +
+      "\030\001 \001(\0162-.POGOProtos.Rpc.GetFriendsListOu" +
+      "tProto.Result\022B\n\006friend\030\002 \003(\01322.POGOProt" +
+      "os.Rpc.GetFriendsListOutProto.FriendProt" +
+      "o\032\277\003\n\013FriendProto\022\021\n\tplayer_id\030\001 \001(\t\022\020\n\010" +
+      "codename\030\002 \001(\t\022\014\n\004team\030\003 \001(\t\022\r\n\005score\030\004 " +
+      "\001(\005\022\024\n\014data_with_me\030\005 \001(\014\022\017\n\007version\030\006 \001" +
+      "(\003\022\022\n\ncreated_ms\030\007 \001(\003\022\022\n\nfb_user_id\030\010 \001" +
+      "(\t\022\036\n\026is_facebook_friendship\030\t \001(\010\022Q\n\013sh" +
+      "ared_data\030\n \001(\0132<.POGOProtos.Rpc.GetFrie" +
+      "ndsListOutProto.SharedFriendshipProto\022V\n" +
+      "\ronline_status\030\013 \001(\0162?.POGOProtos.Rpc.Ge" +
+      "tFriendsListOutProto.FriendProto.OnlineS" +
+      "tatus\"T\n\014OnlineStatus\022\t\n\005UNSET\020\000\022\022\n\016STAT" +
+      "US_UNKNOWN\020\001\022\021\n\rSTATUS_ONLINE\020\002\022\022\n\016STATU" +
+      "S_OFFLINE\020\003\032g\n\025SharedFriendshipProto\022\023\n\013" +
+      "shared_data\030\001 \001(\014\022\017\n\007version\030\002 \001(\003\022\024\n\014da" +
+      "ta_from_me\030\003 \001(\014\022\022\n\ndata_to_me\030\004 \001(\014\"3\n\006" +
+      "Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_" +
+      "UNKNOWN\020\002\"\025\n\023GetFriendsListProto\"P\n\017GetI" +
+      "nboxV2Proto\022\022\n\nis_history\030\001 \001(\010\022\022\n\nis_re" +
+      "verse\030\002 \001(\010\022\025\n\rnot_before_ms\030\003 \001(\003\"\343\001\n G" +
+      "etIncomingFriendInvitesOutProto\022G\n\006resul" +
+      "t\030\001 \001(\01627.POGOProtos.Rpc.GetIncomingFrie" +
+      "ndInvitesOutProto.Result\022A\n\007invites\030\002 \003(" +
+      "\01320.POGOProtos.Rpc.IncomingFriendInviteD" +
+      "isplayProto\"3\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCC" +
+      "ESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\"\037\n\035GetIncomingF" +
+      "riendInvitesProto\"\306\001\n\034GetNotificationInb" +
+      "oxOutProto\022C\n\006result\030\001 \001(\01623.POGOProtos." +
+      "Rpc.GetNotificationInboxOutProto.Result\022" +
+      "2\n\005inbox\030\002 \001(\0132#.POGOProtos.Rpc.Platform" +
+      "ClientInbox\"-\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCC" +
+      "ESS\020\001\022\013\n\007FAILURE\020\002\"\345\001\n\031GetPlayerSettings" +
+      "OutProto\022@\n\006result\030\001 \001(\01620.POGOProtos.Rp" +
+      "c.GetPlayerSettingsOutProto.Result\0225\n\010se" +
+      "ttings\030\002 \001(\0132#.POGOProtos.Rpc.PlayerSett" +
+      "ingsProto\"O\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
+      "S\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\032\n\026ERROR_PLAYER_N" +
+      "OT_FOUND\020\003\"\030\n\026GetPlayerSettingsProto\"&\n\021" +
+      "GetProfileRequest\022\021\n\tplayer_id\030\001 \001(\t\"\213\004\n" +
+      "\022GetProfileResponse\0229\n\006result\030\001 \001(\0162).PO" +
+      "GOProtos.Rpc.GetProfileResponse.Result\022<" +
+      "\n\017profile_details\030\002 \001(\0132#.POGOProtos.Rpc" +
+      ".ProfileDetailsProto\022\\\n\026player_profile_d" +
+      "etails\030\003 \003(\0132<.POGOProtos.Rpc.GetProfile" +
+      "Response.PlayerProfileDetailsProto\032\322\001\n\031P" +
+      "layerProfileDetailsProto\022\017\n\007app_key\030\001 \001(" +
+      "\t\022\020\n\010codename\030\002 \001(\t\022\017\n\007faction\030\003 \001(\t\022\r\n\005" +
+      "level\030\004 \001(\005\022\022\n\nexperience\030\005 \001(\003\022\036\n\026signe" +
+      "d_up_timestamp_ms\030\006 \001(\003\022 \n\030last_played_t" +
+      "imestamp_ms\030\007 \001(\003\022\034\n\024player_total_walk_k" +
+      "m\030\010 \001(\001\"I\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020" +
+      "\001\022\021\n\rERROR_UNKNOWN\020\002\022\024\n\020ERROR_NOT_FRIEND" +
+      "\020\003\"\231\001\n IncomingFriendInviteDisplayProto\022" +
+      "9\n\006invite\030\001 \001(\0132).POGOProtos.Rpc.Incomin" +
+      "gFriendInviteProto\022:\n\006player\030\002 \001(\0132*.POG" +
+      "OProtos.Rpc.PlatformPlayerSummaryProto\"\326" +
+      "\001\n\031IncomingFriendInviteProto\022@\n\006status\030\001" +
+      " \001(\01620.POGOProtos.Rpc.IncomingFriendInvi" +
+      "teProto.Status\022\021\n\tplayer_id\030\002 \001(\t\022\022\n\ncre" +
+      "ated_ms\030\003 \001(\003\022\021\n\tfull_name\030\005 \001(\t\"=\n\006Stat" +
+      "us\022\t\n\005UNSET\020\000\022\013\n\007PENDING\020\001\022\014\n\010DECLINED\020\002" +
+      "\022\r\n\tCANCELLED\020\003\"\242\004\n\034InviteFacebookFriend" +
+      "OutProto\022C\n\006result\030\001 \001(\01623.POGOProtos.Rp" +
+      "c.InviteFacebookFriendOutProto.Result\"\274\003" +
+      "\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERRO" +
+      "R_UNKNOWN\020\002\022\032\n\026ERROR_PLAYER_NOT_FOUND\020\003\022" +
+      "\034\n\030ERROR_PLAYER_OUTBOX_FULL\020\004\022\033\n\027ERROR_P" +
+      "LAYER_INBOX_FULL\020\005\022 \n\034ERROR_SENDER_HAS_M" +
+      "AX_FRIENDS\020\006\022\"\n\036ERROR_RECEIVER_HAS_MAX_F" +
+      "RIENDS\020\007\022\032\n\026ERROR_ALREADY_A_FRIEND\020\010\022\035\n\031" +
+      "ERROR_INVITE_ALREADY_SENT\020\t\022!\n\035ERROR_INV" +
+      "ITE_ALREADY_RECEIVED\020\n\022)\n%ERROR_CANNOT_S" +
+      "END_INVITES_TO_YOURSELF\020\013\022\036\n\032ERROR_FRIEN" +
+      "D_CACHE_EXPIRED\020\014\022\033\n\027ERROR_FRIEND_NOT_CA" +
+      "CHED\020\r\022$\n ERROR_INVALID_SENDER_FACEBOOK_" +
+      "ID\020\016\"O\n\031InviteFacebookFriendProto\022\027\n\017fb_" +
+      "access_token\030\001 \001(\t\022\031\n\021friend_fb_user_id\030" +
+      "\002 \001(\t\"e\n\027ListLoginActionOutProto\022\017\n\007succ" +
+      "ess\030\001 \001(\010\0229\n\014login_detail\030\002 \003(\0132#.POGOPr" +
+      "otos.Rpc.PlatformLoginDetail\"<\n\017Location" +
+      "E6Proto\022\023\n\013latitude_e6\030\001 \001(\005\022\024\n\014longitud" +
+      "e_e6\030\002 \001(\005\"{\n\023PlatformLoginDetail\022;\n\021ide" +
+      "ntity_provider\030\001 \001(\0162 .POGOProtos.Rpc.Id" +
+      "entityProvider\022\r\n\005email\030\002 \001(\t\022\030\n\020auth_pr" +
+      "ovider_id\030\003 \001(\t\"!\n\013OptOutProto\022\022\n\ncatego" +
+      "ries\030\001 \003(\t\"\206\001\n\023PlayerSettingsProto\022\035\n\025op" +
+      "t_out_online_status\030\001 \001(\010\022P\n\023completed_t" +
+      "utorials\030\002 \003(\01623.POGOProtos.Rpc.Platform" +
+      "SocialSettings.TutorialType\"\233\001\n\032Platform" +
+      "PlayerSummaryProto\022\021\n\tplayer_id\030\001 \001(\t\022\020\n" +
+      "\010codename\030\002 \001(\t\022\023\n\013public_data\030\003 \001(\014\022\014\n\004" +
+      "team\030\004 \001(\t\022\022\n\nfb_user_id\030\005 \001(\t\022\r\n\005level\030" +
+      "\006 \001(\005\022\022\n\nexperience\030\007 \001(\003\"[\n\023ProfileDeta" +
+      "ilsProto\022\034\n\024profile_name_app_key\030\001 \001(\t\022\020" +
+      "\n\010nickname\030\002 \001(\t\022\024\n\014profile_name\030\003 \001(\t\"\234" +
+      "\001\n PushNotificationRegistryOutProto\022G\n\006r" +
+      "esult\030\001 \001(\01627.POGOProtos.Rpc.PushNotific" +
+      "ationRegistryOutProto.Result\"/\n\006Result\022\t" +
+      "\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\r\n\tNO_CHANGE\020\002\"\201\001" +
+      "\n\035PushNotificationRegistryProto\0223\n\tapn_t" +
+      "oken\030\001 \001(\0132 .POGOProtos.Rpc.PlatformApnT" +
+      "oken\022+\n\tgcm_token\030\002 \001(\0132\030.POGOProtos.Rpc" +
+      ".GcmToken\"\275\001\n\024RemoveFriendOutProto\022;\n\006re" +
+      "sult\030\001 \001(\0162+.POGOProtos.Rpc.RemoveFriend" +
+      "OutProto.Result\"h\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007" +
+      "SUCCESS\020\001\022\'\n#ERROR_PLAYER_DOES_NOT_EXIST" +
+      "_DELETED\020\002\022\035\n\031ERROR_PLAYER_NOT_A_FRIEND\020" +
+      "\003\"&\n\021RemoveFriendProto\022\021\n\tplayer_id\030\001 \001(" +
+      "\t\"\327\001\n\031RemoveLoginActionOutProto\022\017\n\007succe" +
+      "ss\030\001 \001(\010\0229\n\014login_detail\030\002 \003(\0132#.POGOPro" +
+      "tos.Rpc.PlatformLoginDetail\022@\n\006status\030\003 " +
+      "\001(\01620.POGOProtos.Rpc.RemoveLoginActionOu" +
+      "tProto.Status\",\n\006Status\022\t\n\005UNSET\020\000\022\027\n\023LO" +
+      "GIN_NOT_REMOVABLE\020\001\"o\n\026RemoveLoginAction" +
+      "Proto\022;\n\021identity_provider\030\001 \001(\0162 .POGOP" +
+      "rotos.Rpc.IdentityProvider\022\030\n\020auth_provi" +
+      "der_id\030\002 \001(\t\"\224\001\n\032SavePlayerSettingsOutPr" +
+      "oto\022A\n\006result\030\001 \001(\01621.POGOProtos.Rpc.Sav" +
+      "ePlayerSettingsOutProto.Result\"3\n\006Result" +
+      "\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOW" +
+      "N\020\002\"P\n\027SavePlayerSettingsProto\0225\n\010settin" +
+      "gs\030\001 \001(\0132#.POGOProtos.Rpc.PlayerSettings" +
+      "Proto\"\340\001\n\024SearchPlayerOutProto\022;\n\006result" +
+      "\030\001 \001(\0162+.POGOProtos.Rpc.SearchPlayerOutP" +
+      "roto.Result\022:\n\006player\030\002 \001(\0132*.POGOProtos" +
+      ".Rpc.PlatformPlayerSummaryProto\"O\n\006Resul" +
+      "t\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNO" +
+      "WN\020\002\022\032\n\026ERROR_PLAYER_NOT_FOUND\020\003\"(\n\021Sear" +
+      "chPlayerProto\022\023\n\013friend_code\030\001 \001(\t\"\304\003\n\030S" +
+      "endFriendInviteOutProto\022?\n\006result\030\001 \001(\0162" +
+      "/.POGOProtos.Rpc.SendFriendInviteOutProt" +
+      "o.Result\"\346\002\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
+      "S\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\032\n\026ERROR_ALREADY_" +
+      "A_FRIEND\020\003\022\'\n#ERROR_PLAYER_DOES_NOT_EXIS" +
+      "T_DELETED\020\004\022\033\n\027ERROR_PLAYER_INBOX_FULL\020\005" +
+      "\022\034\n\030ERROR_PLAYER_OUTBOX_FULL\020\006\022 \n\034ERROR_" +
+      "SENDER_HAS_MAX_FRIENDS\020\007\022\035\n\031ERROR_INVITE" +
+      "_ALREADY_SENT\020\010\022)\n%ERROR_CANNOT_SEND_INV" +
+      "ITES_TO_YOURSELF\020\t\022!\n\035ERROR_INVITE_ALREA" +
+      "DY_RECEIVED\020\n\022\"\n\036ERROR_RECEIVER_HAS_MAX_" +
+      "FRIENDS\020\013\"?\n\025SendFriendInviteProto\022\021\n\tpl" +
+      "ayer_id\030\001 \001(\t\022\023\n\013friend_code\030\002 \001(\t\"\224\001\n\032S" +
+      "etAccountSettingsOutProto\022A\n\006result\030\001 \001(" +
+      "\01621.POGOProtos.Rpc.SetAccountSettingsOut" +
+      "Proto.Result\"3\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUC" +
+      "CESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\"Y\n\027SetAccountS" +
+      "ettingsProto\022>\n\010settings\030\001 \001(\0132,.POGOPro" +
+      "tos.Rpc.PlatformAccountSettingsProto\"\222\004\n" +
+      "\024SocialClientFeatures\022k\n\032cross_game_soci" +
+      "al_settings\030\001 \001(\0132G.POGOProtos.Rpc.Socia" +
+      "lClientFeatures.CrossGameSocialClientSet" +
+      "tingsProto\032\214\003\n\"CrossGameSocialClientSett" +
+      "ingsProto\022n\n\021disabled_features\030\001 \003(\0162S.P" +
+      "OGOProtos.Rpc.SocialClientFeatures.Cross" +
+      "GameSocialClientSettingsProto.FeatureTyp" +
+      "e\022e\n\010app_link\030\002 \001(\0162S.POGOProtos.Rpc.Soc" +
+      "ialClientFeatures.CrossGameSocialClientS" +
+      "ettingsProto.AppLinkType\"<\n\013AppLinkType\022" +
+      "\013\n\007NO_LINK\020\000\022\014\n\010WEB_LINK\020\001\022\022\n\016APP_STORE_" +
+      "LINK\020\002\"Q\n\013FeatureType\022\t\n\005UNSET\020\000\022\023\n\017NIAN" +
+      "TIC_PROFILE\020\001\022\021\n\rONLINE_STATUS\020\002\022\017\n\013FRIE" +
+      "ND_LIST\020\003\"\333\001\n\032SocialClientGlobalSettings" +
+      "\022k\n\032cross_game_social_settings\030\001 \001(\0132G.P" +
+      "OGOProtos.Rpc.SocialClientGlobalSettings" +
+      ".CrossGameSocialSettingsProto\032P\n\034CrossGa" +
+      "meSocialSettingsProto\0220\n(niantic_profile" +
+      "_codename_opt_out_enabled\030\001 \001(\010\"d\n\013Socia" +
+      "lProto\"U\n\006AppKey\022\013\n\007INVALID\020\000\022\023\n\017INGRESS" +
+      "_DELETED\020\001\022\024\n\020HOLOHOLO_DELETED\020\002\022\023\n\017LEXI" +
+      "CON_DELETED\020\003\"\301\001\n\026PlatformSocialSettings" +
+      "\"5\n\rConsentStatus\022\013\n\007UNKNOWN\020\000\022\n\n\006OPT_IN" +
+      "\020\001\022\013\n\007OPT_OUT\020\002\"p\n\014TutorialType\022\t\n\005UNSET" +
+      "\020\000\022\013\n\007PROFILE\020\001\022\022\n\016FRIEND_LIST_V2\020\002\022\032\n\026O" +
+      "NLINE_STATUS_OVERVIEW\020\003\022\030\n\024ONLINE_STATUS" +
+      "_TOGGLE\020\004\"\251\001\n\014SocialV2Enum\"<\n\020Invitation" +
+      "Status\022\033\n\027INVITATION_STATUS_UNSET\020\000\022\013\n\007I" +
+      "NVITED\020\001\"[\n\014OnlineStatus\022\020\n\014STATUS_UNSET" +
+      "\020\000\022\022\n\016STATUS_UNKNOWN\020\001\022\021\n\rSTATUS_ONLINE\020" +
+      "\002\022\022\n\016STATUS_OFFLINE\020\003\"p\n\030PlatformTemplat" +
+      "eVariable\022\014\n\004name\030\001 \001(\t\022\017\n\007literal\030\002 \001(\t" +
+      "\022\013\n\003key\030\003 \001(\t\022\024\n\014lookup_table\030\004 \001(\t\022\022\n\nb" +
+      "yte_value\030\005 \001(\014\"\347\001\n\034UpdateFacebookStatus" +
+      "OutProto\022C\n\006result\030\001 \001(\01623.POGOProtos.Rp" +
+      "c.UpdateFacebookStatusOutProto.Result\"\201\001" +
+      "\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERRO" +
+      "R_UNKNOWN\020\002\022\032\n\026ERROR_PLAYER_NOT_FOUND\020\003\022" +
+      "\026\n\022ERROR_FACEBOOK_API\020\004\022\030\n\024ERROR_ALREADY" +
+      "_EXISTS\020\005\"J\n\031UpdateFacebookStatusProto\022\027" +
+      "\n\017fb_access_token\030\001 \001(\t\022\024\n\014force_update\030" +
+      "\002 \001(\010\"\206\002\n\030UpdateFriendshipResponse\022?\n\006re" +
+      "sult\030\001 \001(\0162/.POGOProtos.Rpc.UpdateFriend" +
+      "shipResponse.Result\"\250\001\n\006Result\022\t\n\005UNSET\020" +
+      "\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022\024\n\020ERR" +
+      "OR_NOT_FRIEND\020\003\022\037\n\033ERROR_NICKNAME_WRONG_" +
+      "FORMAT\020\004\022\033\n\027ERROR_FILTERED_NICKNAME\020\005\022\037\n" +
+      "\033ERROR_EXCEEDED_CHANGE_LIMIT\020\006\"\034\n\032Update" +
+      "NotificationOutProto\"\202\001\n\027UpdateNotificat" +
+      "ionProto\022\030\n\020notification_ids\030\001 \003(\t\022\033\n\023cr" +
+      "eate_timestamp_ms\030\002 \003(\003\0220\n\005state\030\003 \001(\0162!" +
+      ".POGOProtos.Rpc.NotificationState\"\210\001\n\024Up" +
+      "dateProfileRequest\022B\n\007profile\030\001 \001(\01321.PO" +
+      "GOProtos.Rpc.UpdateProfileRequest.Profil" +
+      "eProto\032,\n\014ProfileProto\022\034\n\024profile_name_a" +
+      "pp_key\030\001 \001(\t\"\212\001\n\025UpdateProfileResponse\022<" +
+      "\n\006result\030\001 \001(\0162,.POGOProtos.Rpc.UpdatePr" +
+      "ofileResponse.Result\"3\n\006Result\022\t\n\005UNSET\020" +
+      "\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\"\323\002\n$Ti" +
+      "tanAsyncFileUploadCompleteOutProto\022O\n\005er" +
+      "ror\030\001 \001(\0162@.POGOProtos.Rpc.TitanAsyncFil" +
+      "eUploadCompleteOutProto.ErrorStatus\022B\n\017s" +
+      "ubmission_type\030\002 \001(\0162).POGOProtos.Rpc.Pl" +
+      "ayerSubmissionTypeProto\022\016\n\006poi_id\030\003 \001(\t\"" +
+      "\205\001\n\013ErrorStatus\022\t\n\005UNSET\020\000\022\030\n\024SERVER_UPD" +
+      "ATE_FAILED\020\001\022\031\n\025MISSING_SUBMISSION_ID\020\002\022" +
+      "\033\n\027MISSING_SUBMISSION_TYPE\020\003\022\031\n\025MISSING_" +
+      "UPLOAD_STATUS\020\004\"\304\001\n!TitanAsyncFileUpload" +
+      "CompleteProto\022\025\n\rsubmission_id\030\001 \001(\t\022O\n\r" +
+      "upload_status\030\003 \001(\01628.POGOProtos.Rpc.Tit" +
+      "anAsyncFileUploadCompleteProto.Status\"7\n" +
+      "\006Status\022\t\n\005UNSET\020\000\022\017\n\013UPLOAD_DONE\020\001\022\021\n\rU" +
+      "PLOAD_FAILED\020\002\"\355\002\n*TitanAvailableSubmiss" +
+      "ionsPerSubmissionType\022I\n\026player_submissi" +
+      "on_type\030\001 \001(\0162).POGOProtos.Rpc.PlayerSub" +
+      "missionTypeProto\022\030\n\020submissions_left\030\002 \001" +
+      "(\005\022\030\n\020min_player_level\030\003 \001(\005\022\032\n\022is_featu" +
+      "re_enabled\030\004 \001(\010\022,\n$time_window_for_subm" +
+      "issions_limit_ms\030\005 \001(\003\022\"\n\032max_poi_distan" +
+      "ce_in_meters\030\006 \001(\005\022\026\n\016blacklisted_os\030\007 \003" +
+      "(\t\022\035\n\025blacklisted_device_id\030\010 \003(\t\022\033\n\023is_" +
+      "whitelisted_user\030\t \001(\010\"\314\001\n#GameClientPho" +
+      "toGalleryPoiImageProto\022\020\n\010image_id\030\001 \001(\t" +
+      "\022\016\n\006poi_id\030\002 \001(\t\022\032\n\022submitter_codename\030\003" +
+      " \001(\t\022\021\n\timage_url\030\004 \001(\t\022\035\n\025creation_time" +
+      "stamp_ms\030\005 \001(\003\022\030\n\020has_player_voted\030\006 \001(\010" +
+      "\022\033\n\023num_votes_from_game\030\007 \001(\005\"\206\002\n\"TitanG" +
+      "enerateGmapSignedUrlOutProto\022I\n\006result\030\001" +
+      " \001(\01629.POGOProtos.Rpc.TitanGenerateGmapS" +
+      "ignedUrlOutProto.Result\022\022\n\nsigned_url\030\002 " +
+      "\001(\t\"\200\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\032" +
+      "\n\026ERROR_PLAYER_NOT_VALID\020\002\022\026\n\022ERROR_RATE" +
+      "_LIMITED\020\003\022\027\n\023ERROR_MISSING_INPUT\020\004\022\021\n\rE" +
+      "RROR_UNKNOWN\020\005\"\332\001\n\037TitanGenerateGmapSign" +
+      "edUrlProto\022\020\n\010latitude\030\001 \001(\001\022\021\n\tlongitud" +
+      "e\030\002 \001(\001\022\r\n\005width\030\003 \001(\005\022\016\n\006height\030\004 \001(\005\022\014" +
+      "\n\004zoom\030\005 \001(\005\022\025\n\rlanguage_code\030\006 \001(\t\022\024\n\014c" +
+      "ountry_code\030\007 \001(\t\022\021\n\tmap_style\030\010 \001(\t\022\020\n\010" +
+      "map_type\030\t \001(\t\022\023\n\013icon_params\030\n \001(\t\"\246\001\n\034" +
+      "GetARMappingSettingsOutProto\022)\n!is_clien" +
+      "t_scan_validation_enabled\030\001 \001(\010\022)\n!clien" +
+      "t_scan_validation_blocked_os\030\002 \003(\t\0220\n(cl" +
+      "ient_scan_validation_blocked_device_id\030\003" +
+      " \003(\t\"\033\n\031GetARMappingSettingsProto\"\251\003\n\037Ge" +
+      "tAvailableSubmissionsOutProto\022\030\n\020submiss" +
+      "ions_left\030\001 \001(\005\022\030\n\020min_player_level\030\002 \001(" +
+      "\005\022\027\n\017has_valid_email\030\003 \001(\010\022\032\n\022is_feature" +
+      "_enabled\030\004 \001(\010\022,\n$time_window_for_submis" +
+      "sions_limit_ms\030\005 \001(\003\022\"\n\032max_poi_distance" +
+      "_in_meters\030\006 \001(\005\022\026\n\016blacklisted_os\030\007 \003(\t" +
+      "\022`\n\034availability_result_per_type\030\010 \003(\0132:" +
+      ".POGOProtos.Rpc.TitanAvailableSubmission" +
+      "sPerSubmissionType\022\035\n\025blacklisted_device" +
+      "_id\030\t \003(\t\0222\n*max_poi_location_edit_move_" +
+      "distance_meters\030\n \001(\005\"\247\001\n\034GetAvailableSu" +
+      "bmissionsProto\022B\n\017submission_type\030\001 \001(\0162" +
+      ").POGOProtos.Rpc.PlayerSubmissionTypePro" +
+      "to\022C\n\020submission_types\030\002 \003(\0162).POGOProto" +
+      "s.Rpc.PlayerSubmissionTypeProto\"\377\001\n\027GetG" +
+      "mapSettingsOutProto\022>\n\006result\030\001 \001(\0162..PO" +
+      "GOProtos.Rpc.GetGmapSettingsOutProto.Res" +
+      "ult\022\031\n\021gmap_template_url\030\002 \001(\t\022\"\n\032max_po" +
+      "i_distance_in_meters\030\003 \001(\005\"e\n\006Result\022\t\n\005" +
+      "UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rERROR_UNKNOWN\020\002\022" +
+      "\030\n\024ERROR_MISSING_CONFIG\020\003\022\026\n\022ERROR_NO_UN" +
+      "IQUE_ID\020\004\"\026\n\024GetGmapSettingsProto\"\353\003\n\035Ge" +
+      "tGrapeshotUploadUrlOutProto\022D\n\006status\030\001 " +
+      "\001(\01624.POGOProtos.Rpc.GetGrapeshotUploadU" +
+      "rlOutProto.Status\022u\n\036file_context_to_gra" +
+      "peshot_data\030\004 \003(\0132M.POGOProtos.Rpc.GetGr" +
+      "apeshotUploadUrlOutProto.FileContextToGr" +
+      "apeshotDataEntry\032n\n\037FileContextToGrapesh" +
+      "otDataEntry\022\013\n\003key\030\001 \001(\t\022:\n\005value\030\002 \001(\0132" +
+      "+.POGOProtos.Rpc.GrapeshotUploadingDataP" +
+      "roto:\0028\001\"\234\001\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007FAILUR" +
+      "E\020\001\022\013\n\007SUCCESS\020\002\022\031\n\025MISSING_FILE_CONTEXT" +
+      "S\020\003\022\032\n\026DUPLICATE_FILE_CONTEXT\020\004\022\033\n\027MISSI" +
+      "NG_SUBMISSION_TYPE\020\005\022\031\n\025MISSING_SUBMISSI" +
+      "ON_ID\020\006\"\224\001\n\032GetGrapeshotUploadUrlProto\022B" +
+      "\n\017submission_type\030\001 \001(\0162).POGOProtos.Rpc" +
+      ".PlayerSubmissionTypeProto\022\025\n\rsubmission" +
+      "_id\030\002 \001(\t\022\033\n\023file_upload_context\030\003 \003(\t\"\372" +
+      "\001\n\027GetImagesForPoiOutProto\022>\n\006status\030\001 \001" +
+      "(\0162..POGOProtos.Rpc.GetImagesForPoiOutPr" +
+      "oto.Status\022U\n\030photo_gallery_poi_images\030\002" +
+      " \003(\01323.POGOProtos.Rpc.GameClientPhotoGal" +
+      "leryPoiImageProto\"H\n\006Status\022\t\n\005UNSET\020\000\022\013" +
+      "\n\007SUCCESS\020\001\022\021\n\rPOI_NOT_FOUND\020\002\022\023\n\017INVALI" +
+      "D_REQUEST\020\003\"&\n\024GetImagesForPoiProto\022\016\n\006p" +
+      "oi_id\030\001 \001(\t\"M\n-GetPlayerSubmissionValida" +
+      "tionSettingsOutProto\022\034\n\024banned_metadata_" +
+      "text\030\001 \003(\t\",\n*GetPlayerSubmissionValidat" +
+      "ionSettingsProto\"\212\003\n\024GetUploadUrlOutProt" +
+      "o\022;\n\006status\030\001 \001(\0162+.POGOProtos.Rpc.GetUp" +
+      "loadUrlOutProto.Status\022\022\n\nsigned_url\030\002 \001" +
+      "(\t\022#\n\033supporting_image_signed_url\030\003 \001(\t\022" +
+      "X\n\023context_signed_urls\030\004 \003(\0132;.POGOProto" +
+      "s.Rpc.GetUploadUrlOutProto.ContextSigned" +
+      "UrlsEntry\0328\n\026ContextSignedUrlsEntry\022\013\n\003k" +
+      "ey\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"h\n\006Status\022\t\n" +
+      "\005UNSET\020\000\022\014\n\010FAILURES\020\001\022\013\n\007SUCCESS\020\002\022\032\n\026M" +
+      "ISSING_IMAGE_CONTEXTS\020\003\022\034\n\030DUPLICATE_IMA" +
+      "GE_CONTEXTS\020\004\"\257\001\n\021GetUploadUrlProto\022\017\n\007u" +
+      "ser_id\030\001 \001(\t\022\026\n\016game_unique_id\030\002 \001(\t\022B\n\017" +
+      "submission_type\030\003 \001(\0162).POGOProtos.Rpc.P" +
+      "layerSubmissionTypeProto\022\025\n\rsubmission_i" +
+      "d\030\004 \001(\t\022\026\n\016image_contexts\030\005 \003(\t\"G\n Grape" +
+      "shotAuthenticationDataProto\022\025\n\rauthoriza" +
+      "tion\030\001 \001(\t\022\014\n\004date\030\002 \001(\t\"\352\001\n\027GrapeshotCh" +
+      "unkDataProto\022\027\n\017chunk_file_path\030\001 \001(\t\022\024\n" +
+      "\014chunk_number\030\002 \001(\r\022O\n\025upload_authentica" +
+      "tion\030\003 \001(\01320.POGOProtos.Rpc.GrapeshotAut" +
+      "henticationDataProto\022O\n\025delete_authentic" +
+      "ation\030\004 \001(\01320.POGOProtos.Rpc.GrapeshotAu" +
+      "thenticationDataProto\"\215\001\n\031GrapeshotCompo" +
+      "seDataProto\022\030\n\020target_file_path\030\001 \001(\t\022H\n" +
+      "\016authentication\030\002 \001(\01320.POGOProtos.Rpc.G" +
+      "rapeshotAuthenticationDataProto\022\014\n\004hash\030" +
+      "\003 \001(\t\"\311\001\n\033GrapeshotUploadingDataProto\022;\n" +
+      "\nchunk_data\030\001 \003(\0132\'.POGOProtos.Rpc.Grape" +
+      "shotChunkDataProto\022?\n\014compose_data\030\002 \001(\013" +
+      "2).POGOProtos.Rpc.GrapeshotComposeDataPr" +
+      "oto\022\022\n\ngcs_bucket\030\003 \001(\t\022\030\n\020number_of_chu" +
+      "nks\030\004 \001(\005\"A\n\035IsImageGalleryEnabledOutPro" +
+      "to\022 \n\030is_image_gallery_enabled\030\001 \001(\010\"\034\n\032" +
+      "IsImageGalleryEnabledProto\"\327\002\n\035PlayerSub" +
+      "missionResponseProto\022D\n\006status\030\001 \001(\01624.P" +
+      "OGOProtos.Rpc.PlayerSubmissionResponsePr" +
+      "oto.Status\022\025\n\rsubmission_id\030\002 \001(\t\022\020\n\010mes" +
+      "sages\030\003 \003(\t\"\306\001\n\006Status\022\026\n\022STATUS_UNSPECI" +
+      "FIED\020\000\022\013\n\007SUCCESS\020\001\022\022\n\016INTERNAL_ERROR\020\002\022" +
+      "\037\n\033TOO_MANY_RECENT_SUBMISSIONS\020\003\022\t\n\005MINO" +
+      "R\020\004\022\021\n\rNOT_AVAILABLE\020\005\022\021\n\rINVALID_INPUT\020" +
+      "\006\022\021\n\rMISSING_IMAGE\020\007\022\036\n\032DISTANCE_VALIDAT" +
+      "ION_FAILED\020\010\"z\n\037PoiVideoSubmissionMetada" +
+      "taProto\022\016\n\006poi_id\030\001 \001(\t\0221\n\010location\030\002 \001(" +
+      "\0132\037.POGOProtos.Rpc.LocationE6Proto\022\024\n\014pl" +
+      "ayer_level\030\003 \001(\005\"\300\001\n\031PortalCurationImage" +
+      "Result\"\242\001\n\006Result\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020" +
+      "\001\022\024\n\020FEATURE_DISABLED\020\002\022\024\n\020ALREADY_UPLOA" +
+      "DED\020\003\022\023\n\017IMAGE_NOT_FOUND\020\004\022\021\n\rIMAGE_TOO_" +
+      "BIG\020\005\022\026\n\022IMAGE_NOT_SERVABLE\020\006\022\024\n\020PORTAL_" +
+      "NOT_FOUND\020\007\"\222\002\n\024SubmitNewPoiOutProto\022;\n\006" +
+      "status\030\001 \001(\0162+.POGOProtos.Rpc.SubmitNewP" +
+      "oiOutProto.Status\022\025\n\rsubmission_id\030\002 \001(\t" +
+      "\022\020\n\010messages\030\003 \003(\t\"\223\001\n\006Status\022\t\n\005UNSET\020\000" +
+      "\022\013\n\007SUCCESS\020\001\022\013\n\007FAILURE\020\002\022\022\n\016INTERNAL_E" +
+      "RROR\020\003\022\037\n\033TOO_MANY_RECENT_SUBMISSIONS\020\004\022" +
+      "\021\n\rINVALID_INPUT\020\005\022\t\n\005MINOR\020\006\022\021\n\rNOT_AVA" +
+      "ILABLE\020\007\"\225\001\n\021SubmitNewPoiProto\022\r\n\005title\030" +
+      "\001 \001(\t\022\030\n\020long_description\030\002 \001(\t\022\016\n\006lat_e" +
+      "6\030\004 \001(\005\022\016\n\006lng_e6\030\005 \001(\005\022\034\n\024supporting_st" +
+      "atement\030\016 \001(\t\022\031\n\021async_file_upload\030\022 \001(\010" +
+      "\"\324\001\n#SubmitPlayerImageVoteForPoiOutProto" +
+      "\022J\n\006status\030\001 \001(\0162:.POGOProtos.Rpc.Submit" +
+      "PlayerImageVoteForPoiOutProto.Status\"a\n\006" +
+      "Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\021\n\rPOI_NO" +
+      "T_FOUND\020\002\022\027\n\023POI_IMAGE_NOT_FOUND\020\003\022\023\n\017IN" +
+      "VALID_REQUEST\020\006\"n\n SubmitPlayerImageVote" +
+      "ForPoiProto\022\035\n\025image_ids_to_vote_for\030\001 \003" +
+      "(\t\022\033\n\023image_ids_to_unvote\030\002 \003(\t\022\016\n\006poi_i" +
+      "d\030\003 \001(\t\"@\n\023SubmitPoiImageProto\022\016\n\006poi_id" +
+      "\030\001 \001(\t\022\031\n\021async_file_upload\030\002 \001(\010\"a\n\034Sub" +
+      "mitPoiLocationUpdateProto\022\016\n\006poi_id\030\001 \001(" +
+      "\t\0221\n\010location\030\002 \001(\0132\037.POGOProtos.Rpc.Loc" +
+      "ationE6Proto\"i\n\035SubmitPoiTakedownRequest" +
+      "Proto\022\016\n\006poi_id\030\001 \001(\t\0228\n\016invalid_reason\030" +
+      "\002 \001(\0162 .POGOProtos.Rpc.PoiInvalidReason\"" +
+      "V\n SubmitPoiTextMetadataUpdateProto\022\016\n\006p" +
+      "oi_id\030\001 \001(\t\022\r\n\005title\030\002 \001(\t\022\023\n\013descriptio" +
+      "n\030\003 \001(\t\"h\n#SubmitSponsorPoiLocationUpdat" +
+      "eProto\022\016\n\006poi_id\030\001 \001(\t\0221\n\010location\030\002 \001(\013" +
+      "2\037.POGOProtos.Rpc.LocationE6Proto\"\212\001\n\033Su" +
+      "bmitSponsorPoiReportProto\022\016\n\006poi_id\030\001 \001(" +
+      "\t\022?\n\016invalid_reason\030\002 \001(\0162\'.POGOProtos.R",
+      "pc.SponsorPoiInvalidReason\022\032\n\022additional" +
+      "_details\030\003 \001(\t\"_\n\033UploadPoiPhotoByUrlOut" +
+      "Proto\022@\n\006status\030\001 \001(\01620.POGOProtos.Rpc.P" +
+      "ortalCurationImageResult.Result\"A\n\030Uploa" +
+      "dPoiPhotoByUrlProto\022\022\n\nrequest_id\030\001 \001(\t\022" +
+      "\021\n\timage_url\030\002 \001(\t\"\356\002\n\031PlatformAvailable" +
+      "SkuProto\022\n\n\002id\030\001 \001(\t\022\"\n\032is_third_party_v" +
+      "endor_item\030\002 \001(\010\022<\n\005price\030\003 \003(\0132-.POGOPr" +
+      "otos.Rpc.PlatformCurrencyQuantityProto\022G" +
+      "\n\020currency_granted\030\004 \003(\0132-.POGOProtos.Rp" +
+      "c.PlatformCurrencyQuantityProto\022?\n\021game_" +
+      "item_content\030\005 \003(\0132$.POGOProtos.Rpc.Game" +
+      "ItemContentProto\022?\n\021presentation_data\030\006 " +
+      "\003(\0132$.POGOProtos.Rpc.SkuPresentationProt" +
+      "o\022\030\n\020can_be_purchased\030\007 \001(\010\"H\n\035PlatformC" +
+      "urrencyQuantityProto\022\025\n\rcurrency_type\030\001 " +
+      "\001(\t\022\020\n\010quantity\030\002 \001(\005\"\206\001\n\033PlatformCurren" +
+      "cyUpdateProto\022\025\n\rcurrency_name\030\001 \001(\t\022\026\n\016" +
+      "currency_delta\030\002 \001(\005\022\030\n\020currency_balance" +
+      "\030\003 \001(\005\022\036\n\026fiat_purchased_balance\030\004 \001(\005\"6" +
+      "\n\024GameItemContentProto\022\014\n\004type\030\001 \001(\t\022\020\n\010" +
+      "quantity\030\002 \001(\005\"\270\002\n#GetAvailableSkusAndBa" +
+      "lancesOutProto\022J\n\006status\030\001 \001(\0162:.POGOPro" +
+      "tos.Rpc.GetAvailableSkusAndBalancesOutPr" +
+      "oto.Status\022@\n\ravailable_sku\030\002 \003(\0132).POGO" +
+      "Protos.Rpc.PlatformAvailableSkuProto\022>\n\007" +
+      "balance\030\003 \003(\0132-.POGOProtos.Rpc.PlatformC" +
+      "urrencyQuantityProto\022\024\n\014player_token\030\004 \001" +
+      "(\t\"-\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCESS\020\001\022\013\n\007" +
+      "FAILURE\020\002\"\"\n GetAvailableSkusAndBalances" +
+      "Proto\"\306\001\n\023PurchaseSkuOutProto\022:\n\006status\030" +
+      "\001 \001(\0162*.POGOProtos.Rpc.PurchaseSkuOutPro" +
+      "to.Status\"s\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
+      "S\020\001\022\013\n\007FAILURE\020\002\022\023\n\017BALANCE_TOO_LOW\020\003\022\025\n" +
+      "\021SKU_NOT_AVAILABLE\020\004\022\030\n\024OVER_INVENTORY_L" +
+      "IMIT\020\005\"\"\n\020PurchaseSkuProto\022\016\n\006sku_id\030\001 \001" +
+      "(\t\"\253\001\n\033RedeemGoogleReceiptOutProto\022B\n\006st" +
+      "atus\030\001 \001(\01622.POGOProtos.Rpc.RedeemGoogle" +
+      "ReceiptOutProto.Status\022\031\n\021transaction_to" +
+      "ken\030\002 \001(\t\"-\n\006Status\022\t\n\005UNSET\020\000\022\013\n\007SUCCES" +
+      "S\020\001\022\013\n\007FAILURE\020\002\"\224\001\n\030RedeemGoogleReceipt" +
+      "Proto\022\017\n\007receipt\030\001 \001(\t\022\031\n\021receipt_signat" +
+      "ure\030\002 \001(\t\022\031\n\021purchase_currency\030\003 \001(\t\022\025\n\r" +
+      "price_paid_e6\030\004 \001(\005\022\032\n\022price_paid_e6_lon" +
+      "g\030\005 \001(\003\"2\n\024SkuPresentationProto\022\013\n\003key\030\001" +
+      " \001(\t\022\r\n\005value\030\002 \001(\t\"\331\001\n\022ClientWeatherPro" +
+      "to\022\022\n\ns2_cell_id\030\001 \001(\003\022<\n\017display_weathe" +
+      "r\030\002 \001(\0132#.POGOProtos.Rpc.DisplayWeatherP" +
+      "roto\022>\n\020gameplay_weather\030\003 \001(\0132$.POGOPro" +
+      "tos.Rpc.GameplayWeatherProto\0221\n\006alerts\030\004" +
+      " \003(\0132!.POGOProtos.Rpc.WeatherAlertProto\"" +
+      "\237\004\n\023DisplayWeatherProto\022E\n\013cloud_level\030\001" +
+      " \001(\01620.POGOProtos.Rpc.DisplayWeatherProt" +
+      "o.DisplayLevel\022D\n\nrain_level\030\002 \001(\01620.POG" +
+      "OProtos.Rpc.DisplayWeatherProto.DisplayL" +
+      "evel\022D\n\nwind_level\030\003 \001(\01620.POGOProtos.Rp" +
+      "c.DisplayWeatherProto.DisplayLevel\022D\n\nsn" +
+      "ow_level\030\004 \001(\01620.POGOProtos.Rpc.DisplayW" +
+      "eatherProto.DisplayLevel\022C\n\tfog_level\030\005 " +
       "\001(\01620.POGOProtos.Rpc.DisplayWeatherProto" +
-      ".DisplayLevel\022C\n\tfog_level\030\005 \001(\01620.POGOP" +
-      "rotos.Rpc.DisplayWeatherProto.DisplayLev" +
-      "el\022\026\n\016wind_direction\030\006 \001(\005\022N\n\024special_ef" +
-      "fect_level\030\007 \001(\01620.POGOProtos.Rpc.Displa" +
-      "yWeatherProto.DisplayLevel\"B\n\014DisplayLev" +
-      "el\022\013\n\007LEVEL_0\020\000\022\013\n\007LEVEL_1\020\001\022\013\n\007LEVEL_2\020" +
-      "\002\022\013\n\007LEVEL_3\020\003\"\211\001\n\024GameplayWeatherProto\"" +
-      "q\n\020WeatherCondition\022\010\n\004NONE\020\000\022\t\n\005CLEAR\020\001" +
-      "\022\t\n\005RAINY\020\002\022\021\n\rPARTLY_CLOUDY\020\003\022\014\n\010OVERCA" +
-      "ST\020\004\022\t\n\005WINDY\020\005\022\010\n\004SNOW\020\006\022\007\n\003FOG\020\007\"Z\n\021We" +
-      "atherAlertProto\022\024\n\014warn_weather\030\002 \001(\010\"/\n" +
-      "\010Severity\022\010\n\004NONE\020\000\022\014\n\010MODERATE\020\001\022\013\n\007EXT" +
-      "REME\020\002\"\223\005\n$PlatformApprovedCommonTelemet" +
-      "ryProto\022D\n\tboot_time\030\001 \001(\0132/.POGOProtos." +
-      "Rpc.PlatformCommonTelemetryBootTimeH\000\022F\n" +
-      "\nshop_click\030\002 \001(\01320.POGOProtos.Rpc.Platf" +
-      "ormCommonTelemetryShopClickH\000\022D\n\tshop_vi" +
-      "ew\030\003 \001(\0132/.POGOProtos.Rpc.PlatformCommon" +
-      "TelemetryShopViewH\000\022J\n\030poi_submission_te" +
-      "lemetry\030\004 \001(\0132&.POGOProtos.Rpc.PoiSubmis" +
-      "sionTelemetryH\000\022m\n+poi_submission_photo_" +
-      "upload_error_telemetry\030\005 \001(\01326.POGOProto" +
-      "s.Rpc.PoiSubmissionPhotoUploadErrorTelem" +
-      "etryH\000\022>\n\006log_in\030\006 \001(\0132,.POGOProtos.Rpc." +
-      "PlatformCommonTelemetryLogInH\000\0229\n\013server" +
-      "_data\030\007 \001(\0132$.POGOProtos.Rpc.ServerRecor" +
-      "dMetadata\022P\n\016common_filters\030\010 \001(\01328.POGO" +
-      "Protos.Rpc.PlatformClientTelemetryCommon" +
-      "FilterProtoB\017\n\rTelemetryData\"\205\003\n!Platfor" +
-      "mClientTelemetryBatchProto\022^\n\022telemetry_" +
-      "scope_id\030\001 \001(\0162B.POGOProtos.Rpc.Platform" +
-      "ClientTelemetryBatchProto.TelemetryScope" +
-      "Id\022B\n\006events\030\002 \003(\01322.POGOProtos.Rpc.Plat" +
-      "formClientTelemetryRecordProto\022C\n\007metric" +
-      "s\030\003 \003(\01322.POGOProtos.Rpc.PlatformClientT" +
-      "elemetryRecordProto\022\023\n\013api_version\030\004 \001(\t" +
-      "\022\027\n\017message_version\030\005 \001(\t\"I\n\020TelemetrySc" +
-      "opeId\022\t\n\005UNSET\020\000\022\t\n\005DITTO\020\001\022\010\n\004GAME\020\002\022\t\n" +
-      "\005TITAN\020\003\022\n\n\006COMMON\020\004\"\327\004\n*PlatformClientT" +
-      "elemetryClientSettingsProto\022\031\n\021is_upload" +
-      "_enabled\030\001 \001(\010\022 \n\030max_upload_size_in_byt" +
-      "es\030\002 \001(\003\022\036\n\026update_interval_in_sec\030\003 \001(\003" +
-      "\022\'\n\037settings_update_interval_in_sec\030\004 \001(" +
-      "\003\022\037\n\027max_envelope_queue_size\030\005 \001(\003\022\034\n\024sa" +
-      "mpling_probability\030\006 \001(\001\022!\n\031use_player_b" +
-      "ased_sampling\030\007 \001(\010\022\023\n\013player_hash\030\010 \001(\001" +
-      "\022\037\n\027player_external_omni_id\030\t \001(\t\022\034\n\024dis" +
-      "able_omni_sending\030\n \001(\010\022\207\001\n special_samp" +
-      "ling_probability_map\030\013 \003(\0132].POGOProtos." +
-      "Rpc.PlatformClientTelemetryClientSetting" +
-      "sProto.SpecialSamplingProbabilityMapEntr" +
-      "y\022\035\n\025player_external_ua_id\030\014 \001(\t\032D\n\"Spec" +
-      "ialSamplingProbabilityMapEntry\022\013\n\003key\030\001 " +
-      "\001(\t\022\r\n\005value\030\002 \001(\001:\0028\001\"\330\001\n(PlatformClien" +
-      "tTelemetryCommonFilterProto\022\036\n\026applicati" +
-      "on_identifier\030\001 \001(\t\022\035\n\025operating_system_" +
-      "name\030\002 \001(\t\022\024\n\014device_model\030\003 \001(\t\022\033\n\023loca" +
-      "le_country_code\030\004 \001(\t\022\034\n\024locale_language" +
-      "_code\030\005 \001(\t\022\034\n\024sampling_probability\030\006 \001(" +
-      "\001\"\322\001\n\"PlatformClientTelemetryRecordProto" +
-      "\022\021\n\trecord_id\030\001 \001(\t\022\027\n\017encoded_message\030\002" +
-      " \001(\014\022\033\n\023client_timestamp_ms\030\003 \001(\003\022\021\n\tmet" +
-      "ric_id\030\004 \001(\003\022P\n\016common_filters\030\005 \001(\01328.P" +
-      "OGOProtos.Rpc.PlatformClientTelemetryCom" +
-      "monFilterProto\"-\n+PlatformClientTelemetr" +
-      "ySettingsRequestProto\"J\n\037PlatformCommonT" +
-      "elemetryBootTime\022\022\n\nboot_phase\030\001 \001(\t\022\023\n\013" +
-      "duration_ms\030\002 \001(\003\"4\n\034PlatformCommonTelem" +
-      "etryLogIn\022\024\n\014timestamp_ms\030\001 \001(\003\"\343\004\n Plat" +
-      "formCommonTelemetryShopClick\022\036\n\026shopping" +
-      "_page_click_id\030\001 \001(\t\022\016\n\006sku_id\030\002 \001(\t\022\017\n\007" +
-      "item_id\030\003 \001(\t\022\034\n\024consolidated_item_id\030\004 " +
-      "\001(\t\022\020\n\010currency\030\005 \001(\t\022\022\n\nfiat_price\030\006 \001(" +
-      "\003\022G\n\030in_game_purchase_details\030\007 \003(\0132%.PO" +
-      "GOProtos.Rpc.InGamePurchaseDetails\022\031\n\021is" +
-      "_item_free_fiat\030\010 \001(\010\022\033\n\023is_item_free_in" +
-      "game\030\t \001(\010\022%\n\035time_elapsed_since_enter_p" +
-      "age\030\n \001(\003\022\"\n\032root_store_page_session_id\030" +
-      "\013 \001(\t\022\017\n\007pair_id\030\014 \001(\003\022\027\n\017store_page_nam" +
-      "e\030\r \001(\t\022\034\n\024root_store_page_name\030\016 \001(\t\022P\n" +
-      "\013access_type\030\017 \001(\0162;.POGOProtos.Rpc.Plat" +
-      "formCommonTelemetryShopClick.AccessType\022" +
-      "\034\n\024fiat_formatted_price\030\020 \001(\t\"6\n\nAccessT" +
-      "ype\022\017\n\013UNSPECIFIED\020\000\022\013\n\007PASSIVE\020\001\022\n\n\006ACT" +
-      "IVE\020\002\"\307\001\n\037PlatformCommonTelemetryShopVie" +
-      "w\022\"\n\032shopping_page_view_type_id\030\001 \001(\t\022\037\n" +
-      "\027view_start_timestamp_ms\030\002 \001(\003\022\035\n\025view_e" +
-      "nd_timestamp_ms\030\003 \001(\003\022\034\n\024consolidated_it" +
-      "em_id\030\004 \003(\t\022\"\n\032root_store_page_session_i" +
-      "d\030\005 \001(\t\"d\n\025InGamePurchaseDetails\022\023\n\013inga" +
-      "me_type\030\001 \001(\t\022\024\n\014ingame_price\030\002 \001(\003\022 \n\030r" +
-      "emaining_ingame_balance\030\003 \001(\003\"\321\001\n!Platfo" +
-      "rmPlatformCommonFilterProto\022\036\n\026applicati" +
-      "on_identifier\030\001 \001(\t\022\035\n\025operating_system_" +
-      "name\030\002 \001(\t\022\024\n\014device_model\030\003 \001(\t\022\033\n\023loca" +
-      "le_country_code\030\004 \001(\t\022\034\n\024locale_language" +
-      "_code\030\005 \001(\t\022\034\n\024sampling_probability\030\006 \001(" +
-      "\001\"\216\001\n\032PlatformPlatformServerData\022\017\n\007user" +
-      "_id\030\001 \001(\t\022\024\n\014telemetry_id\030\002 \001(\t\022\022\n\nsessi" +
-      "on_id\030\003 \001(\t\022\030\n\020event_request_id\030\004 \001(\t\022\033\n" +
-      "\023server_timestamp_ms\030\005 \001(\003\"\305\002\n&PoiSubmis" +
-      "sionPhotoUploadErrorTelemetry\022i\n\010error_i" +
-      "d\030\001 \001(\0162W.POGOProtos.Rpc.PoiSubmissionPh" +
-      "otoUploadErrorTelemetry.PoiSubmissionPho" +
-      "toUploadErrorIds\0220\n\nimage_type\030\002 \001(\0162\034.P" +
-      "OGOProtos.Rpc.PoiImageType\022\025\n\rerror_mess" +
-      "age\030\003 \001(\t\"g\n PoiSubmissionPhotoUploadErr" +
-      "orIds\022\t\n\005UNSET\020\000\022\032\n\026POI_PHOTO_UPLOAD_ERR" +
-      "OR\020\001\022\034\n\030POI_PHOTO_UPLOAD_TIMEOUT\020\002\"\206\006\n\026P" +
-      "oiSubmissionTelemetry\022T\n\014gui_event_id\030\001 " +
-      "\001(\0162>.POGOProtos.Rpc.PoiSubmissionTeleme" +
-      "try.PoiSubmissionGuiEventId\0220\n\nimage_typ" +
-      "e\030\002 \001(\0162\034.POGOProtos.Rpc.PoiImageType\022O\n" +
-      "\016camera_step_id\030\003 \001(\01627.POGOProtos.Rpc.P" +
-      "oiSubmissionTelemetry.PoiCameraStepIds\"K" +
-      "\n\020PoiCameraStepIds\022\t\n\005UNSET\020\000\022\t\n\005ENTER\020\001" +
-      "\022\n\n\006RETAKE\020\002\022\013\n\007CONFIRM\020\003\022\010\n\004EXIT\020\004\"\305\003\n\027" +
-      "PoiSubmissionGuiEventId\022\013\n\007UNKNOWN\020\000\022\030\n\024" +
-      "POI_NOMINATION_ENTER\020\001\022\031\n\025POI_TUTORIAL_C" +
-      "OMPLETE\020\002\022\033\n\027POI_MAP_CHANGEDVIEW_MAP\020\003\022!" +
-      "\n\035POI_MAP_CHANGEDVIEW_SATELLITE\020\004\022\033\n\027POI" +
-      "_MAP_CENTER_LOCATION\020\005\022\024\n\020POI_LOCATION_S" +
-      "ET\020\006\022\032\n\026POI_PHOTO_CAMERA_ENTER\020\007\022\031\n\025POI_" +
-      "PHOTO_CAMERA_EXIT\020\010\022\025\n\021POI_TITLE_ENTERED" +
-      "\020\t\022\031\n\025POI_DESCRIPTION_ENTER\020\n\022\027\n\023POI_DET" +
-      "AILS_CONFIRM\020\013\022\034\n\030POI_SUPPORTINGINFO_ENT" +
-      "ER\020\014\022\031\n\025POI_SUBMIT_BUTTON_HIT\020\r\022\027\n\023POI_E" +
-      "XIT_BUTTON_HIT\020\016\022!\n\035POI_NOMINATION_GUIDE" +
-      "LINES_HIT\020\017\"\204\001\n\024ServerRecordMetadata\022\017\n\007" +
-      "user_id\030\001 \001(\t\022\026\n\016telemetry_name\030\002 \001(\t\022\022\n" +
-      "\nsession_id\030\003 \001(\t\022\022\n\nrequest_id\030\004 \001(\t\022\033\n" +
-      "\023server_timestamp_ms\030\005 \001(\003\"H\n\014BoundingRe" +
-      "ct\022\r\n\005north\030\001 \001(\001\022\r\n\005south\030\002 \001(\001\022\014\n\004east" +
-      "\030\003 \001(\001\022\014\n\004west\030\004 \001(\001\"=\n\013GmmSettings\022.\n\013l" +
-      "ayer_rules\030\001 \003(\0132\031.POGOProtos.Rpc.LayerR" +
-      "ule\"\377\003\n\tLayerRule\0220\n\013fill_colors\030\001 \003(\0132\033" +
-      ".POGOProtos.Rpc.MaskedColor\022@\n\rroad_prio" +
-      "rity\030\002 \003(\0162).POGOProtos.Rpc.LayerRule.Gm" +
-      "mRoadPriority\022\037\n\027road_attribute_bitfield" +
-      "\030\003 \001(\r\"?\n\014GmmLayerType\022\010\n\004AREA\020\000\022\010\n\004ROAD" +
-      "\020\001\022\014\n\010BUILDING\020\002\022\r\n\tLINE_MESH\020\003\"\233\002\n\017GmmR" +
-      "oadPriority\022\021\n\rPRIORITY_NONE\020\000\022\025\n\021PRIORI" +
-      "TY_TERMINAL\020\001\022\022\n\016PRIORITY_LOCAL\020\002\022\033\n\027PRI" +
-      "ORITY_MINOR_ARTERIAL\020\003\022\033\n\027PRIORITY_MAJOR" +
-      "_ARTERIAL\020\004\022\033\n\027PRIORITY_SECONDARY_ROAD\020\005" +
-      "\022\034\n\030PRIORITY_PRIMARY_HIGHWAY\020\006\022\033\n\027PRIORI" +
-      "TY_LIMITED_ACCESS\020\007\022\036\n\032PRIORITY_CONTROLL" +
-      "ED_ACCESS\020\010\022\030\n\024PRIORITY_NON_TRAFFIC\020\t\"x\n" +
-      "\007MapArea\022\023\n\013description\030\001 \001(\t\022\r\n\005epoch\030\002" +
-      " \001(\005\022\024\n\014map_provider\030\003 \001(\t\0223\n\rbounding_r" +
-      "ect\030\004 \003(\0132\034.POGOProtos.Rpc.BoundingRect\"" +
-      "\260\001\n\022MapCompositionRoot\022)\n\010map_area\030\001 \003(\013" +
-      "2\027.POGOProtos.Rpc.MapArea\0221\n\014map_provide" +
-      "r\030\002 \003(\0132\033.POGOProtos.Rpc.MapProvider\022<\n\022" +
-      "named_map_settings\030\003 \003(\0132 .POGOProtos.Rp" +
-      "c.NamedMapSettings\"\375\003\n\013MapProvider\0223\n\014gm" +
-      "m_settings\030\004 \001(\0132\033.POGOProtos.Rpc.GmmSet" +
-      "tingsH\000\022\027\n\rsettings_name\030\005 \001(\tH\000\022\014\n\004name" +
-      "\030\001 \001(\t\022\020\n\010base_url\030\002 \001(\t\022\024\n\014query_format" +
-      "\030\003 \001(\t\0225\n\010map_type\030\006 \001(\0162#.POGOProtos.Rp" +
-      "c.MapProvider.MapType\022\030\n\020hide_attributio" +
-      "n\030\007 \001(\010\022\026\n\016min_tile_level\030\010 \001(\005\022\026\n\016max_t" +
-      "ile_level\030\t \001(\005\022F\n\021bundle_zoom_range\030\n \003" +
-      "(\0132+.POGOProtos.Rpc.MapProvider.BundleZo" +
-      "omRange\032R\n\017BundleZoomRange\022\020\n\010min_zoom\030\001" +
-      " \001(\005\022\020\n\010max_zoom\030\002 \001(\005\022\033\n\023request_zoom_o" +
-      "ffset\030\003 \001(\005\"A\n\007MapType\022\t\n\005UNSET\020\000\022\007\n\003GMM" +
-      "\020\001\022\007\n\003OSM\020\002\022\t\n\005BLANK\020\003\022\016\n\nGMM_BUNDLE\020\004B\n" +
-      "\n\010Settings\"C\n\rMapTileBundle\0222\n\010map_tile\030" +
-      "\001 \003(\0132 .POGOProtos.Rpc.MapTileDataProto\"" +
-      "y\n\020MapTileDataProto\022.\n\010map_tile\030\001 \001(\0132\034." +
-      "POGOProtos.Rpc.MapTileProto\0225\n\ttile_data" +
-      "\030\002 \001(\0132\".POGOProtos.Rpc.MapCompositionRo" +
-      "ot\"\212\004\n\014MapTileProto\022\024\n\014tile_variant\030\001 \001(" +
-      "\r\022\024\n\014tile_index_x\030\002 \001(\005\022\024\n\014tile_index_y\030" +
-      "\003 \001(\005\022\022\n\nzoom_level\030\004 \001(\005\022\027\n\017indoor_leve" +
-      "l_id\030\005 \001(\t\022\025\n\rpertile_epoch\030\006 \001(\005\"J\n\014Tex" +
-      "tSizeEnum\022\030\n\024TEXT_SIZE_ENUM_UNSET\020\000\022\t\n\005S" +
-      "MALL\020\001\022\n\n\006MEDIUM\020\002\022\t\n\005LARGE\020\003\"\247\002\n\014TileTy" +
-      "peEnum\022\030\n\024TILE_TYPE_ENUM_UNSET\020\000\022\r\n\tMAP_" +
-      "ATLAS\020\002\022\r\n\tSATELLITE\020\003\022\013\n\007TRAFFIC\020\004\022\r\n\tG" +
-      "IF_ATLAS\020\005\022\n\n\006HYBRID\020\006\022\013\n\007TERRAIN\020\007\022\023\n\017C" +
-      "LICKABLE_LAYER\020\010\022\017\n\013STREET_VIEW\020\t\022\020\n\014VEC" +
-      "TOR_ATLAS\020\n\022\016\n\nROAD_GRAPH\020\013\022\025\n\021TERRAIN_N" +
-      "O_LABELS\020\014\022\022\n\016VECTOR_TRANSIT\020\r\022\n\n\006INDOOR" +
-      "\020\016\022\017\n\013LABELS_ONLY\020\017\022\032\n\026PERSONALIZED_SMAR" +
-      "TMAPS\020\020\":\n\013MaskedColor\022\022\n\ncolor_argb\030\001 \001" +
-      "(\r\022\027\n\017color_mask_argb\030\002 \001(\r\"S\n\020NamedMapS" +
-      "ettings\022\014\n\004name\030\001 \001(\t\0221\n\014gmm_settings\030\002 " +
-      "\001(\0132\033.POGOProtos.Rpc.GmmSettings\"&\n\022Plat" +
-      "formAppleToken\022\020\n\010id_token\030\001 \001(\t\"\035\n\014FbTo" +
-      "kenProto\022\r\n\005token\030\001 \001(\t\"\037\n\013GoogleToken\022\020" +
-      "\n\010id_token\030\001 \001(\t\"\'\n\026SuperAwesomeTokenPro" +
-      "to\022\r\n\005token\030\001 \001(\t\"\375\002\n\027CollectAdIdRequest" +
-      "Proto\022\017\n\007user_id\030\001 \001(\t\022\r\n\005ad_id\030\002 \001(\t\022O\n" +
-      "\017device_platform\030\003 \001(\01626.POGOProtos.Rpc." +
-      "CollectAdIdRequestProto.DevicePlatform\022U" +
-      "\n\rfailed_reason\030\004 \001(\0162>.POGOProtos.Rpc.C" +
-      "ollectAdIdRequestProto.CollectionFailedR" +
-      "eason\022\024\n\014timestamp_ms\030\005 \001(\004\"F\n\026Collectio" +
-      "nFailedReason\022\022\n\016REASON_INVALID\020\000\022\030\n\024AD_" +
-      "TRACKING_DISABLED\020\001\"<\n\016DevicePlatform\022\024\n" +
-      "\020PLATFORM_INVALID\020\000\022\013\n\007ANDROID\020\001\022\007\n\003IOS\020" +
-      "\002\"\212\001\n\030CollectAdIdResponseProto\022?\n\006status" +
-      "\030\001 \001(\0162/.POGOProtos.Rpc.CollectAdIdRespo" +
-      "nseProto.Status\"-\n\006Status\022\013\n\007INVALID\020\000\022\013" +
-      "\n\007SUCCESS\020\001\022\t\n\005ERROR\020\002\"S\n\020VasaClientActi" +
-      "on\"?\n\nActionEnum\022\036\n\032INVALID_VASA_CLIENT_" +
-      "ACTION\020\000\022\021\n\014COLLECT_ADID\020\300>*\371\002\n\024ArMappin" +
-      "gEntrySource\022%\n!AR_MAPPING_ENTRY_SOURCE_" +
-      "EDIT_MENU\020\000\022&\n\"AR_MAPPING_ENTRY_SOURCE_E" +
-      "DIT_TITLE\020\001\022,\n(AR_MAPPING_ENTRY_SOURCE_E" +
-      "DIT_DESCRIPTION\020\002\022&\n\"AR_MAPPING_ENTRY_SO" +
-      "URCE_EDIT_PHOTO\020\003\022)\n%AR_MAPPING_ENTRY_SO" +
-      "URCE_EDIT_LOCATION\020\004\022*\n&AR_MAPPING_ENTRY" +
-      "_SOURCE_POI_SUBMISSION\020\005\0225\n1AR_MAPPING_E" +
-      "NTRY_SOURCE_POI_FULLSCREEN_INSPECTION\020\006\022" +
-      ".\n*AR_MAPPING_ENTRY_SOURCE_GEOTARGETED_Q" +
-      "UESTS\020\007*s\n\027PoiEditImageEntrySource\022)\n%PO" +
-      "I_EDIT_IMAGE_ENTRY_SOURCE_EDIT_MENU\020\000\022-\n" +
-      ")POI_EDIT_IMAGE_ENTRY_SOURCE_IMAGE_GALLE" +
-      "RY\020\001*D\n\025ArMappingTutorialPage\022+\n\'AR_MAPP" +
-      "ING_TUTORIAL_PAGE_RECORDING_TIPS\020\000*\301\003\n\020I" +
-      "dentityProvider\022-\n)IDENTITY_PROVIDER_UNS" +
-      "ET_IDENTITY_PROVIDER\020\000\022\034\n\030IDENTITY_PROVI" +
-      "DER_GOOGLE\020\001\022\031\n\025IDENTITY_PROVIDER_PTC\020\002\022" +
-      "\036\n\032IDENTITY_PROVIDER_FACEBOOK\020\003\022 \n\034IDENT" +
-      "ITY_PROVIDER_BACKGROUND\020\004\022\036\n\032IDENTITY_PR" +
-      "OVIDER_INTERNAL\020\005\022\033\n\027IDENTITY_PROVIDER_S" +
-      "FIDA\020\006\022#\n\037IDENTITY_PROVIDER_SUPER_AWESOM" +
-      "E\020\007\022\037\n\033IDENTITY_PROVIDER_DEVELOPER\020\010\022#\n\037" +
-      "IDENTITY_PROVIDER_SHARED_SECRET\020\t\022\036\n\032IDE" +
-      "NTITY_PROVIDER_POSEIDON\020\n\022\036\n\032IDENTITY_PR" +
-      "OVIDER_NINTENDO\020\013\022\033\n\027IDENTITY_PROVIDER_A" +
-      "PPLE\020\014*\206\001\n\013FeatureType\022\026\n\022FEATURE_TYPE_U" +
-      "NSET\020\000\022\036\n\032FEATURE_TYPE_ONLINE_STATUS\020\001\022 " +
-      "\n\034FEATURE_TYPE_NIANTIC_PROFILE\020\002\022\035\n\031FEAT" +
-      "URE_TYPE_FRIENDS_LIST\020\003*\302\001\n\016OnboardingTy" +
-      "pe\022\031\n\025ONBOARDING_TYPE_UNSET\020\000\022\033\n\027ONBOARD" +
-      "ING_TYPE_PROFILE\020\001\022\"\n\036ONBOARDING_TYPE_FR" +
-      "IEND_LIST_V2\020\002\022*\n&ONBOARDING_TYPE_ONLINE" +
-      "_STATUS_OVERVIEW\020\003\022(\n$ONBOARDING_TYPE_ON" +
-      "LINE_STATUS_TOGGLE\020\004*u\n\014ProviderType\022\026\n\022" +
-      "PROVIDER_TYPE_NONE\020\000\022\030\n\024PROVIDER_TYPE_GO" +
-      "OGLE\020\001\022\032\n\026PROVIDER_TYPE_FACEBOOK\020\002\022\027\n\023PR" +
-      "OVIDER_TYPE_APPLE\020\003*\220\020\n\017MapsFeatureKind\022" +
-      "\037\n\033MAPS_FEATURE_KIND_UNDEFINED\020\000\022\033\n\027MAPS" +
-      "_FEATURE_KIND_BASIN\020\001\022\033\n\027MAPS_FEATURE_KI" +
-      "ND_CANAL\020\002\022\036\n\032MAPS_FEATURE_KIND_CEMETERY" +
-      "\020\003\022\034\n\030MAPS_FEATURE_KIND_CINEMA\020\004\022\035\n\031MAPS" +
-      "_FEATURE_KIND_COLLEGE\020\005\022 \n\034MAPS_FEATURE_" +
-      "KIND_COMMERCIAL\020\006\022\034\n\030MAPS_FEATURE_KIND_C" +
-      "OMMON\020\007\022\031\n\025MAPS_FEATURE_KIND_DAM\020\010\022\033\n\027MA" +
-      "PS_FEATURE_KIND_DITCH\020\t\022\032\n\026MAPS_FEATURE_" +
-      "KIND_DOCK\020\n\022\033\n\027MAPS_FEATURE_KIND_DRAIN\020\013" +
-      "\022\032\n\026MAPS_FEATURE_KIND_FARM\020\014\022\036\n\032MAPS_FEA" +
-      "TURE_KIND_FARMLAND\020\r\022\036\n\032MAPS_FEATURE_KIN" +
-      "D_FARMYARD\020\016\022\035\n\031MAPS_FEATURE_KIND_FOOTWA" +
-      "Y\020\017\022\034\n\030MAPS_FEATURE_KIND_FOREST\020\020\022\034\n\030MAP" +
-      "S_FEATURE_KIND_GARDEN\020\021\022\035\n\031MAPS_FEATURE_" +
-      "KIND_GLACIER\020\022\022!\n\035MAPS_FEATURE_KIND_GOLF" +
-      "_COURSE\020\023\022\033\n\027MAPS_FEATURE_KIND_GRASS\020\024\022\035" +
-      "\n\031MAPS_FEATURE_KIND_HIGHWAY\020\025\022\036\n\032MAPS_FE" +
-      "ATURE_KIND_HOSPITAL\020\026\022\033\n\027MAPS_FEATURE_KI" +
-      "ND_HOTEL\020\027\022 \n\034MAPS_FEATURE_KIND_INDUSTRI" +
-      "AL\020\030\022\032\n\026MAPS_FEATURE_KIND_LAKE\020\031\022\032\n\026MAPS" +
-      "_FEATURE_KIND_LAND\020\032\022\035\n\031MAPS_FEATURE_KIN" +
-      "D_LIBRARY\020\033\022 \n\034MAPS_FEATURE_KIND_MAJOR_R" +
-      "OAD\020\034\022\034\n\030MAPS_FEATURE_KIND_MEADOW\020\035\022 \n\034M" +
-      "APS_FEATURE_KIND_MINOR_ROAD\020\036\022$\n MAPS_FE" +
-      "ATURE_KIND_NATURE_RESERVE\020\037\022\033\n\027MAPS_FEAT" +
-      "URE_KIND_OCEAN\020 \022\032\n\026MAPS_FEATURE_KIND_PA" +
-      "RK\020!\022\035\n\031MAPS_FEATURE_KIND_PARKING\020\"\022\032\n\026M" +
-      "APS_FEATURE_KIND_PATH\020#\022 \n\034MAPS_FEATURE_" +
-      "KIND_PEDESTRIAN\020$\022\033\n\027MAPS_FEATURE_KIND_P" +
-      "ITCH\020%\022&\n\"MAPS_FEATURE_KIND_PLACE_OF_WOR" +
-      "SHIP\020&\022\033\n\027MAPS_FEATURE_KIND_PLAYA\020\'\022 \n\034M" +
-      "APS_FEATURE_KIND_PLAYGROUND\020(\022\034\n\030MAPS_FE" +
-      "ATURE_KIND_QUARRY\020)\022\035\n\031MAPS_FEATURE_KIND" +
-      "_RAILWAY\020*\022%\n!MAPS_FEATURE_KIND_RECREATI" +
-      "ON_AREA\020+\022\037\n\033MAPS_FEATURE_KIND_RESERVOIR" +
-      "\020,\022!\n\035MAPS_FEATURE_KIND_RESIDENTIAL\020-\022\034\n" +
-      "\030MAPS_FEATURE_KIND_RETAIL\020.\022\033\n\027MAPS_FEAT" +
-      "URE_KIND_RIVER\020/\022\037\n\033MAPS_FEATURE_KIND_RI" +
-      "VERBANK\0200\022\034\n\030MAPS_FEATURE_KIND_RUNWAY\0201\022" +
-      "\034\n\030MAPS_FEATURE_KIND_SCHOOL\0202\022#\n\037MAPS_FE" +
-      "ATURE_KIND_SPORTS_CENTER\0203\022\035\n\031MAPS_FEATU" +
-      "RE_KIND_STADIUM\0204\022\034\n\030MAPS_FEATURE_KIND_S" +
-      "TREAM\0205\022\035\n\031MAPS_FEATURE_KIND_TAXIWAY\0206\022\035" +
-      "\n\031MAPS_FEATURE_KIND_THEATRE\0207\022 \n\034MAPS_FE" +
-      "ATURE_KIND_UNIVERSITY\0208\022 \n\034MAPS_FEATURE_" +
-      "KIND_URBAN_AREA\0209\022\033\n\027MAPS_FEATURE_KIND_W" +
-      "ATER\020:\022\035\n\031MAPS_FEATURE_KIND_WETLAND\020;\022\032\n" +
-      "\026MAPS_FEATURE_KIND_WOOD\020<\022(\n$MAPS_FEATUR" +
-      "E_KIND_DEBUG_TILE_OUTLINE\020=\022(\n$MAPS_FEAT" +
-      "URE_KIND_DEBUG_TILE_SURFACE\020>\022\033\n\027MAPS_FE" +
-      "ATURE_KIND_OTHER\020?\022\032\n\025MAPS_FEATURE_KIND_" +
-      "ANY\020\320\017*\320\002\n\014MapsMapLayer\022\034\n\030MAPS_MAP_LAYE" +
-      "R_UNDEFINED\020\000\022\035\n\031MAPS_MAP_LAYER_BOUNDARI" +
-      "ES\020\001\022\034\n\030MAPS_MAP_LAYER_BUILDINGS\020\002\022\033\n\027MA" +
-      "PS_MAP_LAYER_LANDMASS\020\003\022\032\n\026MAPS_MAP_LAYE" +
-      "R_LANDUSE\020\004\022\031\n\025MAPS_MAP_LAYER_PLACES\020\005\022\027" +
-      "\n\023MAPS_MAP_LAYER_POIS\020\006\022\030\n\024MAPS_MAP_LAYE" +
-      "R_ROADS\020\007\022\032\n\026MAPS_MAP_LAYER_TRANSIT\020\010\022\030\n" +
-      "\024MAPS_MAP_LAYER_WATER\020\t\022(\n$MAPS_MAP_LAYE" +
-      "R_DEBUG_TILE_BOUNDARIES\020\n*L\n\021GuiTransiti" +
-      "onType\022\032\n\026GUI_TRANSITION_TYPE_IN\020\000\022\033\n\027GU" +
-      "I_TRANSITION_TYPE_OUT\020\001*\215\001\n\032HelpshiftAut" +
-      "hFailureReason\0229\n5HELPSHIFT_AUTH_FAILURE" +
-      "_REASON_AUTH_TOKEN_NOT_PROVIDED\020\000\0224\n0HEL" +
-      "PSHIFT_AUTH_FAILURE_REASON_INVALID_AUTH_" +
-      "TOKEN\020\001*\322\020\n\020DittoFeatureKind\022 \n\034DITTO_FE" +
-      "ATURE_KIND_UNDEFINED\020\000\022\034\n\030DITTO_FEATURE_" +
-      "KIND_BASIN\020\001\022\034\n\030DITTO_FEATURE_KIND_CANAL" +
-      "\020\002\022\037\n\033DITTO_FEATURE_KIND_CEMETERY\020\003\022\035\n\031D" +
-      "ITTO_FEATURE_KIND_CINEMA\020\004\022\036\n\032DITTO_FEAT" +
-      "URE_KIND_COLLEGE\020\005\022!\n\035DITTO_FEATURE_KIND" +
-      "_COMMERCIAL\020\006\022\035\n\031DITTO_FEATURE_KIND_COMM" +
-      "ON\020\007\022\032\n\026DITTO_FEATURE_KIND_DAM\020\010\022\034\n\030DITT" +
-      "O_FEATURE_KIND_DITCH\020\t\022\033\n\027DITTO_FEATURE_" +
-      "KIND_DOCK\020\n\022\034\n\030DITTO_FEATURE_KIND_DRAIN\020" +
-      "\013\022\033\n\027DITTO_FEATURE_KIND_FARM\020\014\022\037\n\033DITTO_" +
-      "FEATURE_KIND_FARMLAND\020\r\022\037\n\033DITTO_FEATURE" +
-      "_KIND_FARMYARD\020\016\022\036\n\032DITTO_FEATURE_KIND_F" +
-      "OOTWAY\020\017\022\035\n\031DITTO_FEATURE_KIND_FOREST\020\020\022" +
-      "\035\n\031DITTO_FEATURE_KIND_GARDEN\020\021\022\036\n\032DITTO_" +
-      "FEATURE_KIND_GLACIER\020\022\022\"\n\036DITTO_FEATURE_" +
-      "KIND_GOLF_COURSE\020\023\022\034\n\030DITTO_FEATURE_KIND" +
-      "_GRASS\020\024\022\036\n\032DITTO_FEATURE_KIND_HIGHWAY\020\025" +
-      "\022\037\n\033DITTO_FEATURE_KIND_HOSPITAL\020\026\022\034\n\030DIT" +
-      "TO_FEATURE_KIND_HOTEL\020\027\022!\n\035DITTO_FEATURE" +
-      "_KIND_INDUSTRIAL\020\030\022\033\n\027DITTO_FEATURE_KIND" +
-      "_LAKE\020\031\022\033\n\027DITTO_FEATURE_KIND_LAND\020\032\022\036\n\032" +
-      "DITTO_FEATURE_KIND_LIBRARY\020\033\022!\n\035DITTO_FE" +
-      "ATURE_KIND_MAJOR_ROAD\020\034\022\035\n\031DITTO_FEATURE" +
-      "_KIND_MEADOW\020\035\022!\n\035DITTO_FEATURE_KIND_MIN" +
-      "OR_ROAD\020\036\022%\n!DITTO_FEATURE_KIND_NATURE_R" +
-      "ESERVE\020\037\022\034\n\030DITTO_FEATURE_KIND_OCEAN\020 \022\033" +
-      "\n\027DITTO_FEATURE_KIND_PARK\020!\022\036\n\032DITTO_FEA" +
-      "TURE_KIND_PARKING\020\"\022\033\n\027DITTO_FEATURE_KIN" +
-      "D_PATH\020#\022!\n\035DITTO_FEATURE_KIND_PEDESTRIA" +
-      "N\020$\022\034\n\030DITTO_FEATURE_KIND_PITCH\020%\022\'\n#DIT" +
-      "TO_FEATURE_KIND_PLACE_OF_WORSHIP\020&\022\034\n\030DI" +
-      "TTO_FEATURE_KIND_PLAYA\020\'\022!\n\035DITTO_FEATUR" +
-      "E_KIND_PLAYGROUND\020(\022\035\n\031DITTO_FEATURE_KIN",
-      "D_QUARRY\020)\022\036\n\032DITTO_FEATURE_KIND_RAILWAY" +
-      "\020*\022&\n\"DITTO_FEATURE_KIND_RECREATION_AREA" +
-      "\020+\022 \n\034DITTO_FEATURE_KIND_RESERVOIR\020,\022\"\n\036" +
-      "DITTO_FEATURE_KIND_RESIDENTIAL\020-\022\035\n\031DITT" +
-      "O_FEATURE_KIND_RETAIL\020.\022\034\n\030DITTO_FEATURE" +
-      "_KIND_RIVER\020/\022 \n\034DITTO_FEATURE_KIND_RIVE" +
-      "RBANK\0200\022\035\n\031DITTO_FEATURE_KIND_RUNWAY\0201\022\035" +
-      "\n\031DITTO_FEATURE_KIND_SCHOOL\0202\022$\n DITTO_F" +
-      "EATURE_KIND_SPORTS_CENTER\0203\022\036\n\032DITTO_FEA" +
-      "TURE_KIND_STADIUM\0204\022\035\n\031DITTO_FEATURE_KIN" +
-      "D_STREAM\0205\022\036\n\032DITTO_FEATURE_KIND_TAXIWAY" +
-      "\0206\022\036\n\032DITTO_FEATURE_KIND_THEATRE\0207\022!\n\035DI" +
-      "TTO_FEATURE_KIND_UNIVERSITY\0208\022!\n\035DITTO_F" +
-      "EATURE_KIND_URBAN_AREA\0209\022\034\n\030DITTO_FEATUR" +
-      "E_KIND_WATER\020:\022\036\n\032DITTO_FEATURE_KIND_WET" +
-      "LAND\020;\022\033\n\027DITTO_FEATURE_KIND_WOOD\020<\022)\n%D" +
-      "ITTO_FEATURE_KIND_DEBUG_TILE_OUTLINE\020=\022)" +
-      "\n%DITTO_FEATURE_KIND_DEBUG_TILE_SURFACE\020" +
-      ">\022\034\n\030DITTO_FEATURE_KIND_OTHER\020?\022\033\n\026DITTO" +
-      "_FEATURE_KIND_ANY\020\320\017*\334\002\n\rDittoMapLayer\022\035" +
-      "\n\031DITTO_MAP_LAYER_UNDEFINED\020\000\022\036\n\032DITTO_M" +
-      "AP_LAYER_BOUNDARIES\020\001\022\035\n\031DITTO_MAP_LAYER" +
-      "_BUILDINGS\020\002\022\034\n\030DITTO_MAP_LAYER_LANDMASS" +
-      "\020\003\022\033\n\027DITTO_MAP_LAYER_LANDUSE\020\004\022\032\n\026DITTO" +
-      "_MAP_LAYER_PLACES\020\005\022\030\n\024DITTO_MAP_LAYER_P" +
-      "OIS\020\006\022\031\n\025DITTO_MAP_LAYER_ROADS\020\007\022\033\n\027DITT" +
-      "O_MAP_LAYER_TRANSIT\020\010\022\031\n\025DITTO_MAP_LAYER" +
-      "_WATER\020\t\022)\n%DITTO_MAP_LAYER_DEBUG_TILE_B" +
-      "OUNDARIES\020\n*\276\001\n OmniNotificationSubscrip" +
-      "tionType\0220\n,OMNI_NOTIFICATION_SUBSCRIPTI" +
-      "ON_TYPE_OPTED_IN\020\000\0222\n.OMNI_NOTIFICATION_" +
-      "SUBSCRIPTION_TYPE_SUBSCRIBED\020\001\0224\n0OMNI_N" +
-      "OTIFICATION_SUBSCRIPTION_TYPE_UNSUBSCRIB" +
-      "ED\020\002*\302\001\n\014CentralState\022\031\n\025CENTRAL_STATE_U" +
-      "NKNOWN\020\000\022\033\n\027CENTRAL_STATE_RESETTING\020\001\022\035\n" +
-      "\031CENTRAL_STATE_UNSUPPORTED\020\002\022\036\n\032CENTRAL_" +
-      "STATE_UNAUTHORIZED\020\003\022\035\n\031CENTRAL_STATE_PO" +
-      "WERED_OFF\020\004\022\034\n\030CENTRAL_STATE_POWERED_ON\020" +
-      "\005*M\n\nDeviceKind\022\037\n\033DEVICE_KIND_POKEMON_G" +
-      "O_PLUS\020\000\022\036\n\032DEVICE_KIND_POKE_BALL_PLUS\020\001" +
-      "*\276\001\n\020NotificationType\022&\n\"NOTIFICATION_TY" +
-      "PE_NO_NOTIFICATIONS\020\000\022+\n\'NOTIFICATION_TY" +
-      "PE_POKEMON_NOTIFICATIONS\020\001\022,\n(NOTIFICATI" +
-      "ON_TYPE_POKESTOP_NOTIFICATIONS\020\002\022\'\n#NOTI" +
-      "FICATION_TYPE_ALL_NOTIFICATIONS\020\003*\307\001\n\013Pl" +
-      "uginState\022\030\n\024PLUGIN_STATE_UNKNOWN\020\000\022\034\n\030P" +
-      "LUGIN_STATE_INITIALIZED\020\001\022\031\n\025PLUGIN_STAT" +
-      "E_STARTING\020\002\022\030\n\024PLUGIN_STATE_STARTED\020\003\022\030" +
-      "\n\024PLUGIN_STATE_RESUMED\020\004\022\027\n\023PLUGIN_STATE" +
-      "_PAUSED\020\005\022\030\n\024PLUGIN_STATE_STOPPED\020\006*\267\002\n\021" +
-      "SfidaConnectState\022$\n SFIDA_CONNECT_STATE" +
-      "_DISCONNECTED\020\000\022%\n!SFIDA_CONNECT_STATE_D" +
-      "ISCONNECTING\020\001\022!\n\035SFIDA_CONNECT_STATE_CO" +
-      "NNECTED\020\002\022\"\n\036SFIDA_CONNECT_STATE_DISCOVE" +
-      "RED\020\003\022!\n\035SFIDA_CONNECT_STATE_CERTIFIED\020\004" +
-      "\022\'\n#SFIDA_CONNECT_STATE_SOFTWARE_UPDATE\020" +
-      "\005\022\036\n\032SFIDA_CONNECT_STATE_FAILED\020\006\022\"\n\036SFI" +
-      "DA_CONNECT_STATE_CONNECTING\020\007*\366\005\n\024Invasi" +
-      "onTelemetryIds\0223\n/INVASION_TELEMETRY_IDS" +
-      "_UNDEFINED_INVASION_EVENT\020\000\022+\n\'INVASION_" +
-      "TELEMETRY_IDS_INVASION_NPC_TAP\020\001\0222\n.INVA" +
-      "SION_TELEMETRY_IDS_INVASION_BATTLE_START" +
-      "ED\020\002\0223\n/INVASION_TELEMETRY_IDS_INVASION_" +
-      "BATTLE_FINISHED\020\003\0225\n1INVASION_TELEMETRY_" +
-      "IDS_INVASION_ENCOUNTER_STARTED\020\004\0226\n2INVA" +
-      "SION_TELEMETRY_IDS_INVASION_ENCOUNTER_FI" +
-      "NISHED\020\005\0224\n0INVASION_TELEMETRY_IDS_INVAS" +
-      "ION_POKEMON_PURIFIED\020\006\0224\n0INVASION_TELEM" +
-      "ETRY_IDS_INVASION_AFTER_POI_EXITED\020\007\0225\n1" +
-      "INVASION_TELEMETRY_IDS_INVASION_RADAR_VI" +
-      "EW_OPENED\020\010\0225\n1INVASION_TELEMETRY_IDS_IN" +
-      "VASION_RADAR_VIEW_CLOSED\020\t\0224\n0INVASION_T" +
-      "ELEMETRY_IDS_INVASION_RADAR_VIEW_EMPTY\020\n" +
-      "\022/\n+INVASION_TELEMETRY_IDS_INVASION_DECO" +
-      "Y_FOUND\020\013\0222\n.INVASION_TELEMETRY_IDS_INVA" +
-      "SION_GIOVANNI_FOUND\020\014\022/\n+INVASION_TELEME" +
-      "TRY_IDS_INVASION_BALLOON_TAP\020\r*\263\002\n\031Devic" +
-      "eServiceTelemetryIds\0229\n5DEVICE_SERVICE_T" +
-      "ELEMETRY_IDS_UNDEFINED_DEVICE_SERVICE\020\000\022" +
-      "(\n$DEVICE_SERVICE_TELEMETRY_IDS_FITNESS\020" +
-      "\001\022,\n(DEVICE_SERVICE_TELEMETRY_IDS_SMART_" +
-      "WATCH\020\002\022&\n\"DEVICE_SERVICE_TELEMETRY_IDS_" +
-      "SFIDA\020\003\022*\n&DEVICE_SERVICE_TELEMETRY_IDS_" +
-      "AWARENESS\020\004\022/\n+DEVICE_SERVICE_TELEMETRY_" +
-      "IDS_ADVENTURE_SYNC\020\005*\377\001\n\023CameraInterpola" +
-      "tion\022\'\n#CAMERA_INTERPOLATION_CAM_INTERP_" +
-      "CUT\020\000\022*\n&CAMERA_INTERPOLATION_CAM_INTERP" +
-      "_LINEAR\020\001\022*\n&CAMERA_INTERPOLATION_CAM_IN" +
-      "TERP_SMOOTH\020\002\022:\n6CAMERA_INTERPOLATION_CA" +
-      "M_INTERP_SMOOTH_ROT_LINEAR_MOVE\020\003\022+\n\'CAM" +
-      "ERA_INTERPOLATION_CAM_INTERP_DEPENDS\020\004*\357" +
-      "\003\n\027POIDecorationProperties\022#\n\037POI_DECORA" +
-      "TION_PROPERTIES_COLOR\020\000\022&\n\"POI_DECORATIO" +
-      "N_PROPERTIES_POSITION\020\001\022\"\n\036POI_DECORATIO" +
-      "N_PROPERTIES_SIZE\020\002\022\"\n\036POI_DECORATION_PR" +
-      "OPERTIES_TEXT\020\003\022$\n POI_DECORATION_PROPER" +
-      "TIES_ACTIVE\020\004\022\"\n\036POI_DECORATION_PROPERTI" +
-      "ES_ICON\020\005\022+\n\'POI_DECORATION_PROPERTIES_S" +
-      "ET_RAID_DATA\020\006\0223\n/POI_DECORATION_PROPERT" +
-      "IES_NEARBY_CARROT_VISIBLE\020\007\0223\n/POI_DECOR" +
-      "ATION_PROPERTIES_SET_LOWEST_MOTIVATION\020\010" +
-      "\0224\n0POI_DECORATION_PROPERTIES_SET_NPC_CL" +
-      "ICKED_ACTION\020\t\022(\n$POI_DECORATION_PROPERT" +
-      "IES_BEGIN_EXIT\020\n*\223\001\n\034PushNotificationTel" +
-      "emetryIds\022E\nAPUSH_NOTIFICATION_TELEMETRY" +
-      "_IDS_UNDEFINED_PUSH_NOTIFICATION_EVENT\020\000" +
-      "\022,\n(PUSH_NOTIFICATION_TELEMETRY_IDS_OPEN" +
-      "_APP\020\001*\204\006\n\020PokemonGoPlusIds\0227\n3POKEMON_G" +
-      "O_PLUS_IDS_UNDEFINED_POKEMON_GO_PLUS_EVE" +
-      "NT\020\000\022-\n)POKEMON_GO_PLUS_IDS_CANNOT_CONNE" +
-      "CT_TO_PGP\020\001\022.\n*POKEMON_GO_PLUS_IDS_REGIS" +
-      "TERING_PGP_FAILED\020\002\022)\n%POKEMON_GO_PLUS_I" +
-      "DS_REGISTERING_RETRY\020\003\022*\n&POKEMON_GO_PLU" +
-      "S_IDS_CONNECTION_SUCCESS\020\004\0220\n,POKEMON_GO" +
-      "_PLUS_IDS_PGP_DISCONNECTED_BY_USER\020\005\0223\n/" +
-      "POKEMON_GO_PLUS_IDS_PGP_DISCONNECTED_BY_" +
-      "TIMEOUT\020\006\0221\n-POKEMON_GO_PLUS_IDS_PGP_DIS" +
-      "CONNECTED_BY_ERROR\020\007\022\'\n#POKEMON_GO_PLUS_" +
-      "IDS_PGP_LOW_BATTERY\020\010\022,\n(POKEMON_GO_PLUS" +
-      "_IDS_BLUETOOTH_SENT_ERROR\020\t\022*\n&POKEMON_G" +
-      "O_PLUS_IDS_PGP_SEEN_BY_DEVICE\020\n\022&\n\"POKEM" +
-      "ON_GO_PLUS_IDS_POKEMON_CAUGHT\020\013\022*\n&POKEM" +
-      "ON_GO_PLUS_IDS_POKEMON_NOT_CAUGHT\020\014\0224\n0P" +
-      "OKEMON_GO_PLUS_IDS_POKEMON_NOT_CAUGHT_DU" +
-      "E_ERROR\020\r\022%\n!POKEMON_GO_PLUS_IDS_POKESTO" +
-      "P_SPUN\020\016\0223\n/POKEMON_GO_PLUS_IDS_POKESTOP" +
-      "_NOT_SPUN_DUE_ERROR\020\017*\276\001\n\010Platform\022\033\n\027PL" +
-      "ATFORM_PLATFORM_UNSET\020\000\022\031\n\025PLATFORM_PLAT" +
-      "FORM_IOS\020\001\022\035\n\031PLATFORM_PLATFORM_ANDROID\020" +
-      "\002\022\031\n\025PLATFORM_PLATFORM_OSX\020\003\022\035\n\031PLATFORM" +
-      "_PLATFORM_WINDOWS\020\004\022!\n\035PLATFORM_PLATFORM" +
-      "_APPLE_WATCH\020\005*\205\001\n\021BattleResultsExit\022!\n\035" +
-      "BATTLE_RESULTS_EXIT_LEAVE_GYM\020\000\022$\n BATTL" +
-      "E_RESULTS_EXIT_LEAVE_BATTLE\020\001\022\'\n#BATTLE_" +
-      "RESULTS_EXIT_CONTINUE_BATTLE\020\002*\363\001\n\031PoiSu" +
-      "bmissionTutorialPage\0221\n-POI_SUBMISSION_T" +
-      "UTORIAL_PAGE_WHAT_IS_POKESTOP\020\000\0222\n.POI_S" +
-      "UBMISSION_TUTORIAL_PAGE_SUBMIT_FOR_REVIE" +
-      "W\020\001\0229\n5POI_SUBMISSION_TUTORIAL_PAGE_HOW_" +
-      "TO_CHOOSE_A_LOCATION\020\002\0224\n0POI_SUBMISSION" +
-      "_TUTORIAL_PAGE_DESCRIBE_A_LOCATION\020\003*K\n\016" +
-      "ExitVfxContext\022\033\n\027EXIT_VFX_CONTEXT_NORMA" +
-      "L\020\000\022\034\n\030EXIT_VFX_CONTEXT_VICTORY\020\001*\252\003\n\025Bu" +
-      "ddyActivityCategory\0220\n,BUDDY_ACTIVITY_CA" +
-      "TEGORY_BUDDY_CATEGORY_UNSET\020\000\022/\n+BUDDY_A" +
-      "CTIVITY_CATEGORY_BUDDY_CATEGORY_FEED\020\001\022/" +
-      "\n+BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGORY" +
-      "_CARE\020\002\0223\n/BUDDY_ACTIVITY_CATEGORY_BUDDY" +
-      "_CATEGORY_SNAPSHOT\020\003\022/\n+BUDDY_ACTIVITY_C" +
-      "ATEGORY_BUDDY_CATEGORY_WALK\020\004\0221\n-BUDDY_A" +
-      "CTIVITY_CATEGORY_BUDDY_CATEGORY_BATTLE\020\005" +
-      "\0222\n.BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGO" +
-      "RY_EXPLORE\020\006\0220\n,BUDDY_ACTIVITY_CATEGORY_" +
-      "BUDDY_CATEGORY_BONUS\020\007*\217\003\n\021BuddyEmotionL" +
-      "evel\0221\n-BUDDY_EMOTION_LEVEL_BUDDY_EMOTIO" +
-      "N_LEVEL_UNSET\020\000\022-\n)BUDDY_EMOTION_LEVEL_B" +
-      "UDDY_EMOTION_LEVEL_0\020\001\022-\n)BUDDY_EMOTION_" +
-      "LEVEL_BUDDY_EMOTION_LEVEL_1\020\002\022-\n)BUDDY_E" +
-      "MOTION_LEVEL_BUDDY_EMOTION_LEVEL_2\020\003\022-\n)" +
-      "BUDDY_EMOTION_LEVEL_BUDDY_EMOTION_LEVEL_" +
-      "3\020\004\022-\n)BUDDY_EMOTION_LEVEL_BUDDY_EMOTION" +
-      "_LEVEL_4\020\005\022-\n)BUDDY_EMOTION_LEVEL_BUDDY_" +
-      "EMOTION_LEVEL_5\020\006\022-\n)BUDDY_EMOTION_LEVEL" +
-      "_BUDDY_EMOTION_LEVEL_6\020\007*a\n\014CurrencyType" +
-      "\022\031\n\025CURRENCY_TYPE_UNKNOWN\020\000\022\032\n\026CURRENCY_" +
-      "TYPE_POKECOIN\020\001\022\032\n\026CURRENCY_TYPE_STARDUS" +
-      "T\020\002*S\n\004Team\022\016\n\nTEAM_UNSET\020\000\022\022\n\016TEAM_TEAM" +
-      "_BLUE\020\001\022\021\n\rTEAM_TEAM_RED\020\002\022\024\n\020TEAM_TEAM_" +
-      "YELLOW\020\003*\235\024\n\032HoloholoClientTelemetryIds\022" +
-      "+\n\'HOLOHOLO_CLIENT_TELEMETRY_IDS_UNDEFIN" +
-      "ED\020\000\022+\n\'HOLOHOLO_CLIENT_TELEMETRY_IDS_BO" +
-      "OT_TIME\020\001\022,\n(HOLOHOLO_CLIENT_TELEMETRY_I" +
-      "DS_FRAME_RATE\020\002\022/\n+HOLOHOLO_CLIENT_TELEM" +
-      "ETRY_IDS_GENERIC_CLICK\020\003\022+\n\'HOLOHOLO_CLI" +
-      "ENT_TELEMETRY_IDS_MAP_EVENT\020\004\022/\n+HOLOHOL" +
-      "O_CLIENT_TELEMETRY_IDS_SPIN_POKESTOP\020\005\022." +
-      "\n*HOLOHOLO_CLIENT_TELEMETRY_IDS_PROFILE_" +
-      "PAGE\020\006\022/\n+HOLOHOLO_CLIENT_TELEMETRY_IDS_" +
-      "SHOPPING_PAGE\020\007\0223\n/HOLOHOLO_CLIENT_TELEM" +
-      "ETRY_IDS_ENCOUNTER_POKEMON\020\010\022/\n+HOLOHOLO" +
-      "_CLIENT_TELEMETRY_IDS_CATCH_POKEMON\020\t\0220\n" +
-      ",HOLOHOLO_CLIENT_TELEMETRY_IDS_DEPLOY_PO" +
-      "KEMON\020\n\022.\n*HOLOHOLO_CLIENT_TELEMETRY_IDS" +
-      "_FEED_POKEMON\020\013\0220\n,HOLOHOLO_CLIENT_TELEM" +
-      "ETRY_IDS_EVOLVE_POKEMON\020\014\0221\n-HOLOHOLO_CL" +
-      "IENT_TELEMETRY_IDS_RELEASE_POKEMON\020\r\0222\n." +
-      "HOLOHOLO_CLIENT_TELEMETRY_IDS_NICKNAME_P" +
-      "OKEMON\020\016\022+\n\'HOLOHOLO_CLIENT_TELEMETRY_ID" +
-      "S_NEWS_PAGE\020\017\022&\n\"HOLOHOLO_CLIENT_TELEMET" +
-      "RY_IDS_ITEM\020\020\022.\n*HOLOHOLO_CLIENT_TELEMET" +
-      "RY_IDS_BATTLE_PARTY\020\021\0221\n-HOLOHOLO_CLIENT" +
-      "_TELEMETRY_IDS_PASSCODE_REDEEM\020\022\022,\n(HOLO" +
-      "HOLO_CLIENT_TELEMETRY_IDS_LINK_LOGIN\020\023\022&" +
-      "\n\"HOLOHOLO_CLIENT_TELEMETRY_IDS_RAID\020\024\0223" +
-      "\n/HOLOHOLO_CLIENT_TELEMETRY_IDS_PUSH_NOT" +
-      "IFICATION\020\025\0226\n2HOLOHOLO_CLIENT_TELEMETRY" +
-      "_IDS_AVATAR_CUSTOMIZATION\020\026\022D\n@HOLOHOLO_" +
-      "CLIENT_TELEMETRY_IDS_READ_POINT_OF_INTER" +
-      "EST_DESCRIPTION\020\027\022%\n!HOLOHOLO_CLIENT_TEL" +
-      "EMETRY_IDS_WEB\020\030\022+\n\'HOLOHOLO_CLIENT_TELE" +
-      "METRY_IDS_CHANGE_AR\020\031\0226\n2HOLOHOLO_CLIENT" +
-      "_TELEMETRY_IDS_WEATHER_DETAIL_CLICK\020\032\022;\n" +
-      "7HOLOHOLO_CLIENT_TELEMETRY_IDS_USER_ISSU" +
-      "E_WEATHER_REPORT\020\033\0223\n/HOLOHOLO_CLIENT_TE" +
-      "LEMETRY_IDS_POKEMON_INVENTORY\020\034\022(\n$HOLOH" +
-      "OLO_CLIENT_TELEMETRY_IDS_SOCIAL\020\035\022;\n7HOL" +
-      "OHOLO_CLIENT_TELEMETRY_IDS_CHECK_ENCOUNT" +
-      "ER_TRAY_INFO\020\036\0221\n-HOLOHOLO_CLIENT_TELEME" +
-      "TRY_IDS_POKEMON_GO_PLUS\020\037\022,\n(HOLOHOLO_CL" +
-      "IENT_TELEMETRY_IDS_RPC_TIMING\020 \0223\n/HOLOH" +
-      "OLO_CLIENT_TELEMETRY_IDS_SOCIAL_GIFT_COU" +
-      "NT\020!\0227\n3HOLOHOLO_CLIENT_TELEMETRY_IDS_AS" +
-      "SET_BUNDLE_DOWNLOAD\020\"\0224\n0HOLOHOLO_CLIENT" +
-      "_TELEMETRY_IDS_ASSET_POI_DOWNLOAD\020#\0227\n3H" +
-      "OLOHOLO_CLIENT_TELEMETRY_IDS_ASSET_STREA" +
-      "M_DOWNLOAD\020$\022;\n7HOLOHOLO_CLIENT_TELEMETR" +
-      "Y_IDS_ASSET_STREAM_CACHE_CULLED\020%\0223\n/HOL" +
-      "OHOLO_CLIENT_TELEMETRY_IDS_RPC_SOCKET_TI" +
-      "MING\020&\0222\n.HOLOHOLO_CLIENT_TELEMETRY_IDS_" +
-      "PERMISSIONS_FLOW\020\'\0227\n3HOLOHOLO_CLIENT_TE" +
-      "LEMETRY_IDS_DEVICE_SERVICE_TOGGLE\020(\0220\n,H" +
-      "OLOHOLO_CLIENT_TELEMETRY_IDS_BOOT_TELEME" +
-      "TRY\020)\022<\n8HOLOHOLO_CLIENT_TELEMETRY_IDS_A" +
-      "R_PHOTO_SESSION_TELEMETRY\020*\0229\n5HOLOHOLO_" +
-      "CLIENT_TELEMETRY_IDS_LEAVE_POINT_OF_INTE" +
-      "REST\020+\022>\n:HOLOHOLO_CLIENT_TELEMETRY_IDS_" +
-      "VIEW_POINT_OF_INTEREST_IMAGE\020,\022?\n;HOLOHO" +
-      "LO_CLIENT_TELEMETRY_IDS_COMBAT_HUB_ENTRA" +
-      "NCE_TELEMETRY\020-\022A\n=HOLOHOLO_CLIENT_TELEM" +
-      "ETRY_IDS_DEVICE_SPECIFICATIONS_TELEMETRY" +
-      "\020.\022=\n9HOLOHOLO_CLIENT_TELEMETRY_IDS_SCRE" +
-      "EN_RESOLUTION_TELEMETRY\020/\0225\n1HOLOHOLO_CL" +
-      "IENT_TELEMETRY_IDS_DEVICE_OS_TELEMETRY\0200" +
-      "*u\n\010VfxLevel\022\022\n\016VFX_LEVEL_NONE\020\000\022\023\n\017VFX_" +
-      "LEVEL_START\020\001\022\022\n\016VFX_LEVEL_NICE\020\002\022\023\n\017VFX" +
-      "_LEVEL_GREAT\020\003\022\027\n\023VFX_LEVEL_EXCELLENT\020\004*" +
-      "\247\001\n\024InventoryUpgradeType\022(\n$INVENTORY_UP" +
-      "GRADE_TYPE_UPGRADE_UNSET\020\000\0220\n,INVENTORY_" +
-      "UPGRADE_TYPE_INCREASE_ITEM_STORAGE\020\001\0223\n/" +
-      "INVENTORY_UPGRADE_TYPE_INCREASE_POKEMON_" +
-      "STORAGE\020\002*\347\007\n\030ShoppingPageTelemetryIds\022=" +
-      "\n9SHOPPING_PAGE_TELEMETRY_IDS_UNDEFINED_" +
-      "SHOPPING_PAGE_EVENT\020\000\0226\n2SHOPPING_PAGE_T" +
-      "ELEMETRY_IDS_CLICK_CUSTOMIZE_AVATAR\020\001\022/\n" +
-      "+SHOPPING_PAGE_TELEMETRY_IDS_QUICK_SHOP_" +
-      "MORE\020\002\0223\n/SHOPPING_PAGE_TELEMETRY_IDS_QU" +
-      "ICK_SHOP_EXCHANGE\020\003\022*\n&SHOPPING_PAGE_TEL" +
-      "EMETRY_IDS_CLICK_SHOP\020\004\022)\n%SHOPPING_PAGE" +
-      "_TELEMETRY_IDS_QUIT_SHOP\020\005\022)\n%SHOPPING_P" +
-      "AGE_TELEMETRY_IDS_CLICK_SKU\020\006\022(\n$SHOPPIN" +
-      "G_PAGE_TELEMETRY_IDS_QUIT_SKU\020\007\0222\n.SHOPP" +
-      "ING_PAGE_TELEMETRY_IDS_CLICK_SKU_EXCHANG" +
-      "E\020\010\0221\n-SHOPPING_PAGE_TELEMETRY_IDS_CLICK" +
-      "_SHOP_AVATAR\020\t\0220\n,SHOPPING_PAGE_TELEMETR" +
-      "Y_IDS_QUIT_SHOP_AVATAR\020\n\0221\n-SHOPPING_PAG" +
-      "E_TELEMETRY_IDS_CLICK_AVATAR_TYPE\020\013\0220\n,S" +
-      "HOPPING_PAGE_TELEMETRY_IDS_QUIT_AVATAR_T" +
-      "YPE\020\014\0221\n-SHOPPING_PAGE_TELEMETRY_IDS_CLI" +
-      "CK_AVATAR_ITEM\020\r\0220\n,SHOPPING_PAGE_TELEME" +
-      "TRY_IDS_QUIT_AVATAR_ITEM\020\016\0223\n/SHOPPING_P" +
-      "AGE_TELEMETRY_IDS_CONFIRM_AVATAR_ITEM\020\017\022" +
-      "7\n3SHOPPING_PAGE_TELEMETRY_IDS_CLICK_AVA" +
-      "TAR_ITEM_COLOR\020\020\0226\n2SHOPPING_PAGE_TELEME" +
-      "TRY_IDS_QUIT_AVATAR_ITEM_COLOR\020\021\0229\n5SHOP" +
-      "PING_PAGE_TELEMETRY_IDS_CONFIRM_AVATAR_I" +
-      "TEM_COLOR\020\022*\361\003\n\031IncidentLeaderStringType" +
-      "s\0228\n4INCIDENT_LEADER_STRING_TYPES_ONBOAR" +
-      "DING_INTRODUCTION\020\000\0225\n1INCIDENT_LEADER_S" +
-      "TRING_TYPES_ONBOARDING_ENCOUNTER\020\001\0222\n.IN" +
-      "CIDENT_LEADER_STRING_TYPES_ONBOARDING_SH" +
-      "ADOW\020\002\0228\n4INCIDENT_LEADER_STRING_TYPES_O" +
-      "NBOARDING_MAP_FRAGMENT\020\003\0221\n-INCIDENT_LEA" +
-      "DER_STRING_TYPES_ONBOARDING_MAP_1\020\004\0221\n-I" +
+      ".DisplayLevel\022\026\n\016wind_direction\030\006 \001(\005\022N\n" +
+      "\024special_effect_level\030\007 \001(\01620.POGOProtos" +
+      ".Rpc.DisplayWeatherProto.DisplayLevel\"B\n" +
+      "\014DisplayLevel\022\013\n\007LEVEL_0\020\000\022\013\n\007LEVEL_1\020\001\022" +
+      "\013\n\007LEVEL_2\020\002\022\013\n\007LEVEL_3\020\003\"\211\001\n\024GameplayWe" +
+      "atherProto\"q\n\020WeatherCondition\022\010\n\004NONE\020\000" +
+      "\022\t\n\005CLEAR\020\001\022\t\n\005RAINY\020\002\022\021\n\rPARTLY_CLOUDY\020" +
+      "\003\022\014\n\010OVERCAST\020\004\022\t\n\005WINDY\020\005\022\010\n\004SNOW\020\006\022\007\n\003" +
+      "FOG\020\007\"Z\n\021WeatherAlertProto\022\024\n\014warn_weath" +
+      "er\030\002 \001(\010\"/\n\010Severity\022\010\n\004NONE\020\000\022\014\n\010MODERA" +
+      "TE\020\001\022\013\n\007EXTREME\020\002\"\223\005\n$PlatformApprovedCo" +
+      "mmonTelemetryProto\022D\n\tboot_time\030\001 \001(\0132/." +
+      "POGOProtos.Rpc.PlatformCommonTelemetryBo" +
+      "otTimeH\000\022F\n\nshop_click\030\002 \001(\01320.POGOProto" +
+      "s.Rpc.PlatformCommonTelemetryShopClickH\000" +
+      "\022D\n\tshop_view\030\003 \001(\0132/.POGOProtos.Rpc.Pla" +
+      "tformCommonTelemetryShopViewH\000\022J\n\030poi_su" +
+      "bmission_telemetry\030\004 \001(\0132&.POGOProtos.Rp" +
+      "c.PoiSubmissionTelemetryH\000\022m\n+poi_submis" +
+      "sion_photo_upload_error_telemetry\030\005 \001(\0132" +
+      "6.POGOProtos.Rpc.PoiSubmissionPhotoUploa" +
+      "dErrorTelemetryH\000\022>\n\006log_in\030\006 \001(\0132,.POGO" +
+      "Protos.Rpc.PlatformCommonTelemetryLogInH" +
+      "\000\0229\n\013server_data\030\007 \001(\0132$.POGOProtos.Rpc." +
+      "ServerRecordMetadata\022P\n\016common_filters\030\010" +
+      " \001(\01328.POGOProtos.Rpc.PlatformClientTele" +
+      "metryCommonFilterProtoB\017\n\rTelemetryData\"" +
+      "\205\003\n!PlatformClientTelemetryBatchProto\022^\n" +
+      "\022telemetry_scope_id\030\001 \001(\0162B.POGOProtos.R" +
+      "pc.PlatformClientTelemetryBatchProto.Tel" +
+      "emetryScopeId\022B\n\006events\030\002 \003(\01322.POGOProt" +
+      "os.Rpc.PlatformClientTelemetryRecordProt" +
+      "o\022C\n\007metrics\030\003 \003(\01322.POGOProtos.Rpc.Plat" +
+      "formClientTelemetryRecordProto\022\023\n\013api_ve" +
+      "rsion\030\004 \001(\t\022\027\n\017message_version\030\005 \001(\t\"I\n\020" +
+      "TelemetryScopeId\022\t\n\005UNSET\020\000\022\t\n\005DITTO\020\001\022\010" +
+      "\n\004GAME\020\002\022\t\n\005TITAN\020\003\022\n\n\006COMMON\020\004\"\327\004\n*Plat" +
+      "formClientTelemetryClientSettingsProto\022\031" +
+      "\n\021is_upload_enabled\030\001 \001(\010\022 \n\030max_upload_" +
+      "size_in_bytes\030\002 \001(\003\022\036\n\026update_interval_i" +
+      "n_sec\030\003 \001(\003\022\'\n\037settings_update_interval_" +
+      "in_sec\030\004 \001(\003\022\037\n\027max_envelope_queue_size\030" +
+      "\005 \001(\003\022\034\n\024sampling_probability\030\006 \001(\001\022!\n\031u" +
+      "se_player_based_sampling\030\007 \001(\010\022\023\n\013player" +
+      "_hash\030\010 \001(\001\022\037\n\027player_external_omni_id\030\t" +
+      " \001(\t\022\034\n\024disable_omni_sending\030\n \001(\010\022\207\001\n s" +
+      "pecial_sampling_probability_map\030\013 \003(\0132]." +
+      "POGOProtos.Rpc.PlatformClientTelemetryCl" +
+      "ientSettingsProto.SpecialSamplingProbabi" +
+      "lityMapEntry\022\035\n\025player_external_ua_id\030\014 " +
+      "\001(\t\032D\n\"SpecialSamplingProbabilityMapEntr" +
+      "y\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\001:\0028\001\"\330\001\n(Pl" +
+      "atformClientTelemetryCommonFilterProto\022\036" +
+      "\n\026application_identifier\030\001 \001(\t\022\035\n\025operat" +
+      "ing_system_name\030\002 \001(\t\022\024\n\014device_model\030\003 " +
+      "\001(\t\022\033\n\023locale_country_code\030\004 \001(\t\022\034\n\024loca" +
+      "le_language_code\030\005 \001(\t\022\034\n\024sampling_proba" +
+      "bility\030\006 \001(\001\"\322\001\n\"PlatformClientTelemetry" +
+      "RecordProto\022\021\n\trecord_id\030\001 \001(\t\022\027\n\017encode" +
+      "d_message\030\002 \001(\014\022\033\n\023client_timestamp_ms\030\003" +
+      " \001(\003\022\021\n\tmetric_id\030\004 \001(\003\022P\n\016common_filter" +
+      "s\030\005 \001(\01328.POGOProtos.Rpc.PlatformClientT" +
+      "elemetryCommonFilterProto\"-\n+PlatformCli" +
+      "entTelemetrySettingsRequestProto\"J\n\037Plat" +
+      "formCommonTelemetryBootTime\022\022\n\nboot_phas" +
+      "e\030\001 \001(\t\022\023\n\013duration_ms\030\002 \001(\003\"4\n\034Platform" +
+      "CommonTelemetryLogIn\022\024\n\014timestamp_ms\030\001 \001" +
+      "(\003\"\343\004\n PlatformCommonTelemetryShopClick\022" +
+      "\036\n\026shopping_page_click_id\030\001 \001(\t\022\016\n\006sku_i" +
+      "d\030\002 \001(\t\022\017\n\007item_id\030\003 \001(\t\022\034\n\024consolidated" +
+      "_item_id\030\004 \001(\t\022\020\n\010currency\030\005 \001(\t\022\022\n\nfiat" +
+      "_price\030\006 \001(\003\022G\n\030in_game_purchase_details" +
+      "\030\007 \003(\0132%.POGOProtos.Rpc.InGamePurchaseDe" +
+      "tails\022\031\n\021is_item_free_fiat\030\010 \001(\010\022\033\n\023is_i" +
+      "tem_free_ingame\030\t \001(\010\022%\n\035time_elapsed_si" +
+      "nce_enter_page\030\n \001(\003\022\"\n\032root_store_page_" +
+      "session_id\030\013 \001(\t\022\017\n\007pair_id\030\014 \001(\003\022\027\n\017sto" +
+      "re_page_name\030\r \001(\t\022\034\n\024root_store_page_na" +
+      "me\030\016 \001(\t\022P\n\013access_type\030\017 \001(\0162;.POGOProt" +
+      "os.Rpc.PlatformCommonTelemetryShopClick." +
+      "AccessType\022\034\n\024fiat_formatted_price\030\020 \001(\t" +
+      "\"6\n\nAccessType\022\017\n\013UNSPECIFIED\020\000\022\013\n\007PASSI" +
+      "VE\020\001\022\n\n\006ACTIVE\020\002\"\307\001\n\037PlatformCommonTelem" +
+      "etryShopView\022\"\n\032shopping_page_view_type_" +
+      "id\030\001 \001(\t\022\037\n\027view_start_timestamp_ms\030\002 \001(" +
+      "\003\022\035\n\025view_end_timestamp_ms\030\003 \001(\003\022\034\n\024cons" +
+      "olidated_item_id\030\004 \003(\t\022\"\n\032root_store_pag" +
+      "e_session_id\030\005 \001(\t\"d\n\025InGamePurchaseDeta" +
+      "ils\022\023\n\013ingame_type\030\001 \001(\t\022\024\n\014ingame_price" +
+      "\030\002 \001(\003\022 \n\030remaining_ingame_balance\030\003 \001(\003" +
+      "\"\321\001\n!PlatformPlatformCommonFilterProto\022\036" +
+      "\n\026application_identifier\030\001 \001(\t\022\035\n\025operat" +
+      "ing_system_name\030\002 \001(\t\022\024\n\014device_model\030\003 " +
+      "\001(\t\022\033\n\023locale_country_code\030\004 \001(\t\022\034\n\024loca" +
+      "le_language_code\030\005 \001(\t\022\034\n\024sampling_proba" +
+      "bility\030\006 \001(\001\"\216\001\n\032PlatformPlatformServerD" +
+      "ata\022\017\n\007user_id\030\001 \001(\t\022\024\n\014telemetry_id\030\002 \001" +
+      "(\t\022\022\n\nsession_id\030\003 \001(\t\022\030\n\020event_request_" +
+      "id\030\004 \001(\t\022\033\n\023server_timestamp_ms\030\005 \001(\003\"\305\002" +
+      "\n&PoiSubmissionPhotoUploadErrorTelemetry" +
+      "\022i\n\010error_id\030\001 \001(\0162W.POGOProtos.Rpc.PoiS" +
+      "ubmissionPhotoUploadErrorTelemetry.PoiSu" +
+      "bmissionPhotoUploadErrorIds\0220\n\nimage_typ" +
+      "e\030\002 \001(\0162\034.POGOProtos.Rpc.PoiImageType\022\025\n" +
+      "\rerror_message\030\003 \001(\t\"g\n PoiSubmissionPho" +
+      "toUploadErrorIds\022\t\n\005UNSET\020\000\022\032\n\026POI_PHOTO" +
+      "_UPLOAD_ERROR\020\001\022\034\n\030POI_PHOTO_UPLOAD_TIME" +
+      "OUT\020\002\"\206\006\n\026PoiSubmissionTelemetry\022T\n\014gui_" +
+      "event_id\030\001 \001(\0162>.POGOProtos.Rpc.PoiSubmi" +
+      "ssionTelemetry.PoiSubmissionGuiEventId\0220" +
+      "\n\nimage_type\030\002 \001(\0162\034.POGOProtos.Rpc.PoiI" +
+      "mageType\022O\n\016camera_step_id\030\003 \001(\01627.POGOP" +
+      "rotos.Rpc.PoiSubmissionTelemetry.PoiCame" +
+      "raStepIds\"K\n\020PoiCameraStepIds\022\t\n\005UNSET\020\000" +
+      "\022\t\n\005ENTER\020\001\022\n\n\006RETAKE\020\002\022\013\n\007CONFIRM\020\003\022\010\n\004" +
+      "EXIT\020\004\"\305\003\n\027PoiSubmissionGuiEventId\022\013\n\007UN" +
+      "KNOWN\020\000\022\030\n\024POI_NOMINATION_ENTER\020\001\022\031\n\025POI" +
+      "_TUTORIAL_COMPLETE\020\002\022\033\n\027POI_MAP_CHANGEDV" +
+      "IEW_MAP\020\003\022!\n\035POI_MAP_CHANGEDVIEW_SATELLI" +
+      "TE\020\004\022\033\n\027POI_MAP_CENTER_LOCATION\020\005\022\024\n\020POI" +
+      "_LOCATION_SET\020\006\022\032\n\026POI_PHOTO_CAMERA_ENTE" +
+      "R\020\007\022\031\n\025POI_PHOTO_CAMERA_EXIT\020\010\022\025\n\021POI_TI" +
+      "TLE_ENTERED\020\t\022\031\n\025POI_DESCRIPTION_ENTER\020\n" +
+      "\022\027\n\023POI_DETAILS_CONFIRM\020\013\022\034\n\030POI_SUPPORT" +
+      "INGINFO_ENTER\020\014\022\031\n\025POI_SUBMIT_BUTTON_HIT" +
+      "\020\r\022\027\n\023POI_EXIT_BUTTON_HIT\020\016\022!\n\035POI_NOMIN" +
+      "ATION_GUIDELINES_HIT\020\017\"\204\001\n\024ServerRecordM" +
+      "etadata\022\017\n\007user_id\030\001 \001(\t\022\026\n\016telemetry_na" +
+      "me\030\002 \001(\t\022\022\n\nsession_id\030\003 \001(\t\022\022\n\nrequest_" +
+      "id\030\004 \001(\t\022\033\n\023server_timestamp_ms\030\005 \001(\003\"H\n" +
+      "\014BoundingRect\022\r\n\005north\030\001 \001(\001\022\r\n\005south\030\002 " +
+      "\001(\001\022\014\n\004east\030\003 \001(\001\022\014\n\004west\030\004 \001(\001\"=\n\013GmmSe" +
+      "ttings\022.\n\013layer_rules\030\001 \003(\0132\031.POGOProtos" +
+      ".Rpc.LayerRule\"\377\003\n\tLayerRule\0220\n\013fill_col" +
+      "ors\030\001 \003(\0132\033.POGOProtos.Rpc.MaskedColor\022@" +
+      "\n\rroad_priority\030\002 \003(\0162).POGOProtos.Rpc.L" +
+      "ayerRule.GmmRoadPriority\022\037\n\027road_attribu" +
+      "te_bitfield\030\003 \001(\r\"?\n\014GmmLayerType\022\010\n\004ARE" +
+      "A\020\000\022\010\n\004ROAD\020\001\022\014\n\010BUILDING\020\002\022\r\n\tLINE_MESH" +
+      "\020\003\"\233\002\n\017GmmRoadPriority\022\021\n\rPRIORITY_NONE\020" +
+      "\000\022\025\n\021PRIORITY_TERMINAL\020\001\022\022\n\016PRIORITY_LOC" +
+      "AL\020\002\022\033\n\027PRIORITY_MINOR_ARTERIAL\020\003\022\033\n\027PRI" +
+      "ORITY_MAJOR_ARTERIAL\020\004\022\033\n\027PRIORITY_SECON" +
+      "DARY_ROAD\020\005\022\034\n\030PRIORITY_PRIMARY_HIGHWAY\020" +
+      "\006\022\033\n\027PRIORITY_LIMITED_ACCESS\020\007\022\036\n\032PRIORI" +
+      "TY_CONTROLLED_ACCESS\020\010\022\030\n\024PRIORITY_NON_T" +
+      "RAFFIC\020\t\"x\n\007MapArea\022\023\n\013description\030\001 \001(\t" +
+      "\022\r\n\005epoch\030\002 \001(\005\022\024\n\014map_provider\030\003 \001(\t\0223\n" +
+      "\rbounding_rect\030\004 \003(\0132\034.POGOProtos.Rpc.Bo" +
+      "undingRect\"\260\001\n\022MapCompositionRoot\022)\n\010map" +
+      "_area\030\001 \003(\0132\027.POGOProtos.Rpc.MapArea\0221\n\014" +
+      "map_provider\030\002 \003(\0132\033.POGOProtos.Rpc.MapP" +
+      "rovider\022<\n\022named_map_settings\030\003 \003(\0132 .PO" +
+      "GOProtos.Rpc.NamedMapSettings\"\375\003\n\013MapPro" +
+      "vider\0223\n\014gmm_settings\030\004 \001(\0132\033.POGOProtos" +
+      ".Rpc.GmmSettingsH\000\022\027\n\rsettings_name\030\005 \001(" +
+      "\tH\000\022\014\n\004name\030\001 \001(\t\022\020\n\010base_url\030\002 \001(\t\022\024\n\014q" +
+      "uery_format\030\003 \001(\t\0225\n\010map_type\030\006 \001(\0162#.PO" +
+      "GOProtos.Rpc.MapProvider.MapType\022\030\n\020hide" +
+      "_attribution\030\007 \001(\010\022\026\n\016min_tile_level\030\010 \001" +
+      "(\005\022\026\n\016max_tile_level\030\t \001(\005\022F\n\021bundle_zoo" +
+      "m_range\030\n \003(\0132+.POGOProtos.Rpc.MapProvid" +
+      "er.BundleZoomRange\032R\n\017BundleZoomRange\022\020\n" +
+      "\010min_zoom\030\001 \001(\005\022\020\n\010max_zoom\030\002 \001(\005\022\033\n\023req" +
+      "uest_zoom_offset\030\003 \001(\005\"A\n\007MapType\022\t\n\005UNS" +
+      "ET\020\000\022\007\n\003GMM\020\001\022\007\n\003OSM\020\002\022\t\n\005BLANK\020\003\022\016\n\nGMM" +
+      "_BUNDLE\020\004B\n\n\010Settings\"C\n\rMapTileBundle\0222" +
+      "\n\010map_tile\030\001 \003(\0132 .POGOProtos.Rpc.MapTil" +
+      "eDataProto\"y\n\020MapTileDataProto\022.\n\010map_ti" +
+      "le\030\001 \001(\0132\034.POGOProtos.Rpc.MapTileProto\0225" +
+      "\n\ttile_data\030\002 \001(\0132\".POGOProtos.Rpc.MapCo" +
+      "mpositionRoot\"\212\004\n\014MapTileProto\022\024\n\014tile_v" +
+      "ariant\030\001 \001(\r\022\024\n\014tile_index_x\030\002 \001(\005\022\024\n\014ti" +
+      "le_index_y\030\003 \001(\005\022\022\n\nzoom_level\030\004 \001(\005\022\027\n\017" +
+      "indoor_level_id\030\005 \001(\t\022\025\n\rpertile_epoch\030\006" +
+      " \001(\005\"J\n\014TextSizeEnum\022\030\n\024TEXT_SIZE_ENUM_U" +
+      "NSET\020\000\022\t\n\005SMALL\020\001\022\n\n\006MEDIUM\020\002\022\t\n\005LARGE\020\003" +
+      "\"\247\002\n\014TileTypeEnum\022\030\n\024TILE_TYPE_ENUM_UNSE" +
+      "T\020\000\022\r\n\tMAP_ATLAS\020\002\022\r\n\tSATELLITE\020\003\022\013\n\007TRA" +
+      "FFIC\020\004\022\r\n\tGIF_ATLAS\020\005\022\n\n\006HYBRID\020\006\022\013\n\007TER" +
+      "RAIN\020\007\022\023\n\017CLICKABLE_LAYER\020\010\022\017\n\013STREET_VI" +
+      "EW\020\t\022\020\n\014VECTOR_ATLAS\020\n\022\016\n\nROAD_GRAPH\020\013\022\025" +
+      "\n\021TERRAIN_NO_LABELS\020\014\022\022\n\016VECTOR_TRANSIT\020" +
+      "\r\022\n\n\006INDOOR\020\016\022\017\n\013LABELS_ONLY\020\017\022\032\n\026PERSON" +
+      "ALIZED_SMARTMAPS\020\020\":\n\013MaskedColor\022\022\n\ncol" +
+      "or_argb\030\001 \001(\r\022\027\n\017color_mask_argb\030\002 \001(\r\"S" +
+      "\n\020NamedMapSettings\022\014\n\004name\030\001 \001(\t\0221\n\014gmm_" +
+      "settings\030\002 \001(\0132\033.POGOProtos.Rpc.GmmSetti" +
+      "ngs\"&\n\022PlatformAppleToken\022\020\n\010id_token\030\001 " +
+      "\001(\t\"\035\n\014FbTokenProto\022\r\n\005token\030\001 \001(\t\"\037\n\013Go" +
+      "ogleToken\022\020\n\010id_token\030\001 \001(\t\"\'\n\026SuperAwes" +
+      "omeTokenProto\022\r\n\005token\030\001 \001(\t\"\375\002\n\027Collect" +
+      "AdIdRequestProto\022\017\n\007user_id\030\001 \001(\t\022\r\n\005ad_" +
+      "id\030\002 \001(\t\022O\n\017device_platform\030\003 \001(\01626.POGO" +
+      "Protos.Rpc.CollectAdIdRequestProto.Devic" +
+      "ePlatform\022U\n\rfailed_reason\030\004 \001(\0162>.POGOP" +
+      "rotos.Rpc.CollectAdIdRequestProto.Collec" +
+      "tionFailedReason\022\024\n\014timestamp_ms\030\005 \001(\004\"F" +
+      "\n\026CollectionFailedReason\022\022\n\016REASON_INVAL" +
+      "ID\020\000\022\030\n\024AD_TRACKING_DISABLED\020\001\"<\n\016Device" +
+      "Platform\022\024\n\020PLATFORM_INVALID\020\000\022\013\n\007ANDROI" +
+      "D\020\001\022\007\n\003IOS\020\002\"\212\001\n\030CollectAdIdResponseProt" +
+      "o\022?\n\006status\030\001 \001(\0162/.POGOProtos.Rpc.Colle" +
+      "ctAdIdResponseProto.Status\"-\n\006Status\022\013\n\007" +
+      "INVALID\020\000\022\013\n\007SUCCESS\020\001\022\t\n\005ERROR\020\002\"S\n\020Vas" +
+      "aClientAction\"?\n\nActionEnum\022\036\n\032INVALID_V" +
+      "ASA_CLIENT_ACTION\020\000\022\021\n\014COLLECT_ADID\020\300>*\371" +
+      "\002\n\024ArMappingEntrySource\022%\n!AR_MAPPING_EN" +
+      "TRY_SOURCE_EDIT_MENU\020\000\022&\n\"AR_MAPPING_ENT" +
+      "RY_SOURCE_EDIT_TITLE\020\001\022,\n(AR_MAPPING_ENT" +
+      "RY_SOURCE_EDIT_DESCRIPTION\020\002\022&\n\"AR_MAPPI" +
+      "NG_ENTRY_SOURCE_EDIT_PHOTO\020\003\022)\n%AR_MAPPI" +
+      "NG_ENTRY_SOURCE_EDIT_LOCATION\020\004\022*\n&AR_MA" +
+      "PPING_ENTRY_SOURCE_POI_SUBMISSION\020\005\0225\n1A" +
+      "R_MAPPING_ENTRY_SOURCE_POI_FULLSCREEN_IN" +
+      "SPECTION\020\006\022.\n*AR_MAPPING_ENTRY_SOURCE_GE" +
+      "OTARGETED_QUESTS\020\007*s\n\027PoiEditImageEntryS" +
+      "ource\022)\n%POI_EDIT_IMAGE_ENTRY_SOURCE_EDI" +
+      "T_MENU\020\000\022-\n)POI_EDIT_IMAGE_ENTRY_SOURCE_" +
+      "IMAGE_GALLERY\020\001*D\n\025ArMappingTutorialPage" +
+      "\022+\n\'AR_MAPPING_TUTORIAL_PAGE_RECORDING_T" +
+      "IPS\020\000*\301\003\n\020IdentityProvider\022-\n)IDENTITY_P" +
+      "ROVIDER_UNSET_IDENTITY_PROVIDER\020\000\022\034\n\030IDE" +
+      "NTITY_PROVIDER_GOOGLE\020\001\022\031\n\025IDENTITY_PROV" +
+      "IDER_PTC\020\002\022\036\n\032IDENTITY_PROVIDER_FACEBOOK" +
+      "\020\003\022 \n\034IDENTITY_PROVIDER_BACKGROUND\020\004\022\036\n\032" +
+      "IDENTITY_PROVIDER_INTERNAL\020\005\022\033\n\027IDENTITY" +
+      "_PROVIDER_SFIDA\020\006\022#\n\037IDENTITY_PROVIDER_S" +
+      "UPER_AWESOME\020\007\022\037\n\033IDENTITY_PROVIDER_DEVE" +
+      "LOPER\020\010\022#\n\037IDENTITY_PROVIDER_SHARED_SECR" +
+      "ET\020\t\022\036\n\032IDENTITY_PROVIDER_POSEIDON\020\n\022\036\n\032" +
+      "IDENTITY_PROVIDER_NINTENDO\020\013\022\033\n\027IDENTITY" +
+      "_PROVIDER_APPLE\020\014*\206\001\n\013FeatureType\022\026\n\022FEA" +
+      "TURE_TYPE_UNSET\020\000\022\036\n\032FEATURE_TYPE_ONLINE" +
+      "_STATUS\020\001\022 \n\034FEATURE_TYPE_NIANTIC_PROFIL" +
+      "E\020\002\022\035\n\031FEATURE_TYPE_FRIENDS_LIST\020\003*\302\001\n\016O" +
+      "nboardingType\022\031\n\025ONBOARDING_TYPE_UNSET\020\000" +
+      "\022\033\n\027ONBOARDING_TYPE_PROFILE\020\001\022\"\n\036ONBOARD" +
+      "ING_TYPE_FRIEND_LIST_V2\020\002\022*\n&ONBOARDING_" +
+      "TYPE_ONLINE_STATUS_OVERVIEW\020\003\022(\n$ONBOARD" +
+      "ING_TYPE_ONLINE_STATUS_TOGGLE\020\004*u\n\014Provi" +
+      "derType\022\026\n\022PROVIDER_TYPE_NONE\020\000\022\030\n\024PROVI" +
+      "DER_TYPE_GOOGLE\020\001\022\032\n\026PROVIDER_TYPE_FACEB" +
+      "OOK\020\002\022\027\n\023PROVIDER_TYPE_APPLE\020\003*\220\020\n\017MapsF" +
+      "eatureKind\022\037\n\033MAPS_FEATURE_KIND_UNDEFINE" +
+      "D\020\000\022\033\n\027MAPS_FEATURE_KIND_BASIN\020\001\022\033\n\027MAPS" +
+      "_FEATURE_KIND_CANAL\020\002\022\036\n\032MAPS_FEATURE_KI" +
+      "ND_CEMETERY\020\003\022\034\n\030MAPS_FEATURE_KIND_CINEM" +
+      "A\020\004\022\035\n\031MAPS_FEATURE_KIND_COLLEGE\020\005\022 \n\034MA" +
+      "PS_FEATURE_KIND_COMMERCIAL\020\006\022\034\n\030MAPS_FEA" +
+      "TURE_KIND_COMMON\020\007\022\031\n\025MAPS_FEATURE_KIND_" +
+      "DAM\020\010\022\033\n\027MAPS_FEATURE_KIND_DITCH\020\t\022\032\n\026MA" +
+      "PS_FEATURE_KIND_DOCK\020\n\022\033\n\027MAPS_FEATURE_K" +
+      "IND_DRAIN\020\013\022\032\n\026MAPS_FEATURE_KIND_FARM\020\014\022" +
+      "\036\n\032MAPS_FEATURE_KIND_FARMLAND\020\r\022\036\n\032MAPS_" +
+      "FEATURE_KIND_FARMYARD\020\016\022\035\n\031MAPS_FEATURE_" +
+      "KIND_FOOTWAY\020\017\022\034\n\030MAPS_FEATURE_KIND_FORE" +
+      "ST\020\020\022\034\n\030MAPS_FEATURE_KIND_GARDEN\020\021\022\035\n\031MA" +
+      "PS_FEATURE_KIND_GLACIER\020\022\022!\n\035MAPS_FEATUR" +
+      "E_KIND_GOLF_COURSE\020\023\022\033\n\027MAPS_FEATURE_KIN" +
+      "D_GRASS\020\024\022\035\n\031MAPS_FEATURE_KIND_HIGHWAY\020\025" +
+      "\022\036\n\032MAPS_FEATURE_KIND_HOSPITAL\020\026\022\033\n\027MAPS" +
+      "_FEATURE_KIND_HOTEL\020\027\022 \n\034MAPS_FEATURE_KI" +
+      "ND_INDUSTRIAL\020\030\022\032\n\026MAPS_FEATURE_KIND_LAK" +
+      "E\020\031\022\032\n\026MAPS_FEATURE_KIND_LAND\020\032\022\035\n\031MAPS_" +
+      "FEATURE_KIND_LIBRARY\020\033\022 \n\034MAPS_FEATURE_K" +
+      "IND_MAJOR_ROAD\020\034\022\034\n\030MAPS_FEATURE_KIND_ME" +
+      "ADOW\020\035\022 \n\034MAPS_FEATURE_KIND_MINOR_ROAD\020\036" +
+      "\022$\n MAPS_FEATURE_KIND_NATURE_RESERVE\020\037\022\033" +
+      "\n\027MAPS_FEATURE_KIND_OCEAN\020 \022\032\n\026MAPS_FEAT" +
+      "URE_KIND_PARK\020!\022\035\n\031MAPS_FEATURE_KIND_PAR" +
+      "KING\020\"\022\032\n\026MAPS_FEATURE_KIND_PATH\020#\022 \n\034MA" +
+      "PS_FEATURE_KIND_PEDESTRIAN\020$\022\033\n\027MAPS_FEA" +
+      "TURE_KIND_PITCH\020%\022&\n\"MAPS_FEATURE_KIND_P" +
+      "LACE_OF_WORSHIP\020&\022\033\n\027MAPS_FEATURE_KIND_P" +
+      "LAYA\020\'\022 \n\034MAPS_FEATURE_KIND_PLAYGROUND\020(" +
+      "\022\034\n\030MAPS_FEATURE_KIND_QUARRY\020)\022\035\n\031MAPS_F" +
+      "EATURE_KIND_RAILWAY\020*\022%\n!MAPS_FEATURE_KI" +
+      "ND_RECREATION_AREA\020+\022\037\n\033MAPS_FEATURE_KIN" +
+      "D_RESERVOIR\020,\022!\n\035MAPS_FEATURE_KIND_RESID" +
+      "ENTIAL\020-\022\034\n\030MAPS_FEATURE_KIND_RETAIL\020.\022\033" +
+      "\n\027MAPS_FEATURE_KIND_RIVER\020/\022\037\n\033MAPS_FEAT" +
+      "URE_KIND_RIVERBANK\0200\022\034\n\030MAPS_FEATURE_KIN" +
+      "D_RUNWAY\0201\022\034\n\030MAPS_FEATURE_KIND_SCHOOL\0202" +
+      "\022#\n\037MAPS_FEATURE_KIND_SPORTS_CENTER\0203\022\035\n" +
+      "\031MAPS_FEATURE_KIND_STADIUM\0204\022\034\n\030MAPS_FEA" +
+      "TURE_KIND_STREAM\0205\022\035\n\031MAPS_FEATURE_KIND_" +
+      "TAXIWAY\0206\022\035\n\031MAPS_FEATURE_KIND_THEATRE\0207" +
+      "\022 \n\034MAPS_FEATURE_KIND_UNIVERSITY\0208\022 \n\034MA" +
+      "PS_FEATURE_KIND_URBAN_AREA\0209\022\033\n\027MAPS_FEA" +
+      "TURE_KIND_WATER\020:\022\035\n\031MAPS_FEATURE_KIND_W" +
+      "ETLAND\020;\022\032\n\026MAPS_FEATURE_KIND_WOOD\020<\022(\n$" +
+      "MAPS_FEATURE_KIND_DEBUG_TILE_OUTLINE\020=\022(" +
+      "\n$MAPS_FEATURE_KIND_DEBUG_TILE_SURFACE\020>" +
+      "\022\033\n\027MAPS_FEATURE_KIND_OTHER\020?\022\032\n\025MAPS_FE" +
+      "ATURE_KIND_ANY\020\320\017*\320\002\n\014MapsMapLayer\022\034\n\030MA" +
+      "PS_MAP_LAYER_UNDEFINED\020\000\022\035\n\031MAPS_MAP_LAY" +
+      "ER_BOUNDARIES\020\001\022\034\n\030MAPS_MAP_LAYER_BUILDI" +
+      "NGS\020\002\022\033\n\027MAPS_MAP_LAYER_LANDMASS\020\003\022\032\n\026MA" +
+      "PS_MAP_LAYER_LANDUSE\020\004\022\031\n\025MAPS_MAP_LAYER" +
+      "_PLACES\020\005\022\027\n\023MAPS_MAP_LAYER_POIS\020\006\022\030\n\024MA" +
+      "PS_MAP_LAYER_ROADS\020\007\022\032\n\026MAPS_MAP_LAYER_T" +
+      "RANSIT\020\010\022\030\n\024MAPS_MAP_LAYER_WATER\020\t\022(\n$MA" +
+      "PS_MAP_LAYER_DEBUG_TILE_BOUNDARIES\020\n*L\n\021" +
+      "GuiTransitionType\022\032\n\026GUI_TRANSITION_TYPE" +
+      "_IN\020\000\022\033\n\027GUI_TRANSITION_TYPE_OUT\020\001*\215\001\n\032H" +
+      "elpshiftAuthFailureReason\0229\n5HELPSHIFT_A" +
+      "UTH_FAILURE_REASON_AUTH_TOKEN_NOT_PROVID" +
+      "ED\020\000\0224\n0HELPSHIFT_AUTH_FAILURE_REASON_IN" +
+      "VALID_AUTH_TOKEN\020\001*\322\020\n\020DittoFeatureKind\022" +
+      " \n\034DITTO_FEATURE_KIND_UNDEFINED\020\000\022\034\n\030DIT" +
+      "TO_FEATURE_KIND_BASIN\020\001\022\034\n\030DITTO_FEATURE" +
+      "_KIND_CANAL\020\002\022\037\n\033DITTO_FEATURE_KIND_CEME" +
+      "TERY\020\003\022\035\n\031DITTO_FEATURE_KIND_CINEMA\020\004\022\036\n" +
+      "\032DITTO_FEATURE_KIND_COLLEGE\020\005\022!\n\035DITTO_F" +
+      "EATURE_KIND_COMMERCIAL\020\006\022\035\n\031DITTO_FEATUR" +
+      "E_KIND_COMMON\020\007\022\032\n\026DITTO_FEATURE_KIND_DA" +
+      "M\020\010\022\034\n\030DITTO_FEATURE_KIND_DITCH\020\t\022\033\n\027DIT" +
+      "TO_FEATURE_KIND_DOCK\020\n\022\034\n\030DITTO_FEATURE_" +
+      "KIND_DRAIN\020\013\022\033\n\027DITTO_FEATURE_KIND_FARM\020" +
+      "\014\022\037\n\033DITTO_FEATURE_KIND_FARMLAND\020\r\022\037\n\033DI" +
+      "TTO_FEATURE_KIND_FARMYARD\020\016\022\036\n\032DITTO_FEA" +
+      "TURE_KIND_FOOTWAY\020\017\022\035\n\031DITTO_FEATURE_KIN" +
+      "D_FOREST\020\020\022\035\n\031DITTO_FEATURE_KIND_GARDEN\020" +
+      "\021\022\036\n\032DITTO_FEATURE_KIND_GLACIER\020\022\022\"\n\036DIT" +
+      "TO_FEATURE_KIND_GOLF_COURSE\020\023\022\034\n\030DITTO_F" +
+      "EATURE_KIND_GRASS\020\024\022\036\n\032DITTO_FEATURE_KIN" +
+      "D_HIGHWAY\020\025\022\037\n\033DITTO_FEATURE_KIND_HOSPIT" +
+      "AL\020\026\022\034\n\030DITTO_FEATURE_KIND_HOTEL\020\027\022!\n\035DI" +
+      "TTO_FEATURE_KIND_INDUSTRIAL\020\030\022\033\n\027DITTO_F" +
+      "EATURE_KIND_LAKE\020\031\022\033\n\027DITTO_FEATURE_KIND" +
+      "_LAND\020\032\022\036\n\032DITTO_FEATURE_KIND_LIBRARY\020\033\022" +
+      "!\n\035DITTO_FEATURE_KIND_MAJOR_ROAD\020\034\022\035\n\031DI" +
+      "TTO_FEATURE_KIND_MEADOW\020\035\022!\n\035DITTO_FEATU" +
+      "RE_KIND_MINOR_ROAD\020\036\022%\n!DITTO_FEATURE_KI" +
+      "ND_NATURE_RESERVE\020\037\022\034\n\030DITTO_FEATURE_KIN" +
+      "D_OCEAN\020 \022\033\n\027DITTO_FEATURE_KIND_PARK\020!\022\036" +
+      "\n\032DITTO_FEATURE_KIND_PARKING\020\"\022\033\n\027DITTO_" +
+      "FEATURE_KIND_PATH\020#\022!\n\035DITTO_FEATURE_KIN" +
+      "D_PEDESTRIAN\020$\022\034\n\030DITTO_FEATURE_KIND_PIT",
+      "CH\020%\022\'\n#DITTO_FEATURE_KIND_PLACE_OF_WORS" +
+      "HIP\020&\022\034\n\030DITTO_FEATURE_KIND_PLAYA\020\'\022!\n\035D" +
+      "ITTO_FEATURE_KIND_PLAYGROUND\020(\022\035\n\031DITTO_" +
+      "FEATURE_KIND_QUARRY\020)\022\036\n\032DITTO_FEATURE_K" +
+      "IND_RAILWAY\020*\022&\n\"DITTO_FEATURE_KIND_RECR" +
+      "EATION_AREA\020+\022 \n\034DITTO_FEATURE_KIND_RESE" +
+      "RVOIR\020,\022\"\n\036DITTO_FEATURE_KIND_RESIDENTIA" +
+      "L\020-\022\035\n\031DITTO_FEATURE_KIND_RETAIL\020.\022\034\n\030DI" +
+      "TTO_FEATURE_KIND_RIVER\020/\022 \n\034DITTO_FEATUR" +
+      "E_KIND_RIVERBANK\0200\022\035\n\031DITTO_FEATURE_KIND" +
+      "_RUNWAY\0201\022\035\n\031DITTO_FEATURE_KIND_SCHOOL\0202" +
+      "\022$\n DITTO_FEATURE_KIND_SPORTS_CENTER\0203\022\036" +
+      "\n\032DITTO_FEATURE_KIND_STADIUM\0204\022\035\n\031DITTO_" +
+      "FEATURE_KIND_STREAM\0205\022\036\n\032DITTO_FEATURE_K" +
+      "IND_TAXIWAY\0206\022\036\n\032DITTO_FEATURE_KIND_THEA" +
+      "TRE\0207\022!\n\035DITTO_FEATURE_KIND_UNIVERSITY\0208" +
+      "\022!\n\035DITTO_FEATURE_KIND_URBAN_AREA\0209\022\034\n\030D" +
+      "ITTO_FEATURE_KIND_WATER\020:\022\036\n\032DITTO_FEATU" +
+      "RE_KIND_WETLAND\020;\022\033\n\027DITTO_FEATURE_KIND_" +
+      "WOOD\020<\022)\n%DITTO_FEATURE_KIND_DEBUG_TILE_" +
+      "OUTLINE\020=\022)\n%DITTO_FEATURE_KIND_DEBUG_TI" +
+      "LE_SURFACE\020>\022\034\n\030DITTO_FEATURE_KIND_OTHER" +
+      "\020?\022\033\n\026DITTO_FEATURE_KIND_ANY\020\320\017*\334\002\n\rDitt" +
+      "oMapLayer\022\035\n\031DITTO_MAP_LAYER_UNDEFINED\020\000" +
+      "\022\036\n\032DITTO_MAP_LAYER_BOUNDARIES\020\001\022\035\n\031DITT" +
+      "O_MAP_LAYER_BUILDINGS\020\002\022\034\n\030DITTO_MAP_LAY" +
+      "ER_LANDMASS\020\003\022\033\n\027DITTO_MAP_LAYER_LANDUSE" +
+      "\020\004\022\032\n\026DITTO_MAP_LAYER_PLACES\020\005\022\030\n\024DITTO_" +
+      "MAP_LAYER_POIS\020\006\022\031\n\025DITTO_MAP_LAYER_ROAD" +
+      "S\020\007\022\033\n\027DITTO_MAP_LAYER_TRANSIT\020\010\022\031\n\025DITT" +
+      "O_MAP_LAYER_WATER\020\t\022)\n%DITTO_MAP_LAYER_D" +
+      "EBUG_TILE_BOUNDARIES\020\n*\276\001\n OmniNotificat" +
+      "ionSubscriptionType\0220\n,OMNI_NOTIFICATION" +
+      "_SUBSCRIPTION_TYPE_OPTED_IN\020\000\0222\n.OMNI_NO" +
+      "TIFICATION_SUBSCRIPTION_TYPE_SUBSCRIBED\020" +
+      "\001\0224\n0OMNI_NOTIFICATION_SUBSCRIPTION_TYPE" +
+      "_UNSUBSCRIBED\020\002*\302\001\n\014CentralState\022\031\n\025CENT" +
+      "RAL_STATE_UNKNOWN\020\000\022\033\n\027CENTRAL_STATE_RES" +
+      "ETTING\020\001\022\035\n\031CENTRAL_STATE_UNSUPPORTED\020\002\022" +
+      "\036\n\032CENTRAL_STATE_UNAUTHORIZED\020\003\022\035\n\031CENTR" +
+      "AL_STATE_POWERED_OFF\020\004\022\034\n\030CENTRAL_STATE_" +
+      "POWERED_ON\020\005*M\n\nDeviceKind\022\037\n\033DEVICE_KIN" +
+      "D_POKEMON_GO_PLUS\020\000\022\036\n\032DEVICE_KIND_POKE_" +
+      "BALL_PLUS\020\001*\276\001\n\020NotificationType\022&\n\"NOTI" +
+      "FICATION_TYPE_NO_NOTIFICATIONS\020\000\022+\n\'NOTI" +
+      "FICATION_TYPE_POKEMON_NOTIFICATIONS\020\001\022,\n" +
+      "(NOTIFICATION_TYPE_POKESTOP_NOTIFICATION" +
+      "S\020\002\022\'\n#NOTIFICATION_TYPE_ALL_NOTIFICATIO" +
+      "NS\020\003*\307\001\n\013PluginState\022\030\n\024PLUGIN_STATE_UNK" +
+      "NOWN\020\000\022\034\n\030PLUGIN_STATE_INITIALIZED\020\001\022\031\n\025" +
+      "PLUGIN_STATE_STARTING\020\002\022\030\n\024PLUGIN_STATE_" +
+      "STARTED\020\003\022\030\n\024PLUGIN_STATE_RESUMED\020\004\022\027\n\023P" +
+      "LUGIN_STATE_PAUSED\020\005\022\030\n\024PLUGIN_STATE_STO" +
+      "PPED\020\006*\267\002\n\021SfidaConnectState\022$\n SFIDA_CO" +
+      "NNECT_STATE_DISCONNECTED\020\000\022%\n!SFIDA_CONN" +
+      "ECT_STATE_DISCONNECTING\020\001\022!\n\035SFIDA_CONNE" +
+      "CT_STATE_CONNECTED\020\002\022\"\n\036SFIDA_CONNECT_ST" +
+      "ATE_DISCOVERED\020\003\022!\n\035SFIDA_CONNECT_STATE_" +
+      "CERTIFIED\020\004\022\'\n#SFIDA_CONNECT_STATE_SOFTW" +
+      "ARE_UPDATE\020\005\022\036\n\032SFIDA_CONNECT_STATE_FAIL" +
+      "ED\020\006\022\"\n\036SFIDA_CONNECT_STATE_CONNECTING\020\007" +
+      "*\366\005\n\024InvasionTelemetryIds\0223\n/INVASION_TE" +
+      "LEMETRY_IDS_UNDEFINED_INVASION_EVENT\020\000\022+" +
+      "\n\'INVASION_TELEMETRY_IDS_INVASION_NPC_TA" +
+      "P\020\001\0222\n.INVASION_TELEMETRY_IDS_INVASION_B" +
+      "ATTLE_STARTED\020\002\0223\n/INVASION_TELEMETRY_ID" +
+      "S_INVASION_BATTLE_FINISHED\020\003\0225\n1INVASION" +
+      "_TELEMETRY_IDS_INVASION_ENCOUNTER_STARTE" +
+      "D\020\004\0226\n2INVASION_TELEMETRY_IDS_INVASION_E" +
+      "NCOUNTER_FINISHED\020\005\0224\n0INVASION_TELEMETR" +
+      "Y_IDS_INVASION_POKEMON_PURIFIED\020\006\0224\n0INV" +
+      "ASION_TELEMETRY_IDS_INVASION_AFTER_POI_E" +
+      "XITED\020\007\0225\n1INVASION_TELEMETRY_IDS_INVASI" +
+      "ON_RADAR_VIEW_OPENED\020\010\0225\n1INVASION_TELEM" +
+      "ETRY_IDS_INVASION_RADAR_VIEW_CLOSED\020\t\0224\n" +
+      "0INVASION_TELEMETRY_IDS_INVASION_RADAR_V" +
+      "IEW_EMPTY\020\n\022/\n+INVASION_TELEMETRY_IDS_IN" +
+      "VASION_DECOY_FOUND\020\013\0222\n.INVASION_TELEMET" +
+      "RY_IDS_INVASION_GIOVANNI_FOUND\020\014\022/\n+INVA" +
+      "SION_TELEMETRY_IDS_INVASION_BALLOON_TAP\020" +
+      "\r*\263\002\n\031DeviceServiceTelemetryIds\0229\n5DEVIC" +
+      "E_SERVICE_TELEMETRY_IDS_UNDEFINED_DEVICE" +
+      "_SERVICE\020\000\022(\n$DEVICE_SERVICE_TELEMETRY_I" +
+      "DS_FITNESS\020\001\022,\n(DEVICE_SERVICE_TELEMETRY" +
+      "_IDS_SMART_WATCH\020\002\022&\n\"DEVICE_SERVICE_TEL" +
+      "EMETRY_IDS_SFIDA\020\003\022*\n&DEVICE_SERVICE_TEL" +
+      "EMETRY_IDS_AWARENESS\020\004\022/\n+DEVICE_SERVICE" +
+      "_TELEMETRY_IDS_ADVENTURE_SYNC\020\005*\377\001\n\023Came" +
+      "raInterpolation\022\'\n#CAMERA_INTERPOLATION_" +
+      "CAM_INTERP_CUT\020\000\022*\n&CAMERA_INTERPOLATION" +
+      "_CAM_INTERP_LINEAR\020\001\022*\n&CAMERA_INTERPOLA" +
+      "TION_CAM_INTERP_SMOOTH\020\002\022:\n6CAMERA_INTER" +
+      "POLATION_CAM_INTERP_SMOOTH_ROT_LINEAR_MO" +
+      "VE\020\003\022+\n\'CAMERA_INTERPOLATION_CAM_INTERP_" +
+      "DEPENDS\020\004*\357\003\n\027POIDecorationProperties\022#\n" +
+      "\037POI_DECORATION_PROPERTIES_COLOR\020\000\022&\n\"PO" +
+      "I_DECORATION_PROPERTIES_POSITION\020\001\022\"\n\036PO" +
+      "I_DECORATION_PROPERTIES_SIZE\020\002\022\"\n\036POI_DE" +
+      "CORATION_PROPERTIES_TEXT\020\003\022$\n POI_DECORA" +
+      "TION_PROPERTIES_ACTIVE\020\004\022\"\n\036POI_DECORATI" +
+      "ON_PROPERTIES_ICON\020\005\022+\n\'POI_DECORATION_P" +
+      "ROPERTIES_SET_RAID_DATA\020\006\0223\n/POI_DECORAT" +
+      "ION_PROPERTIES_NEARBY_CARROT_VISIBLE\020\007\0223" +
+      "\n/POI_DECORATION_PROPERTIES_SET_LOWEST_M" +
+      "OTIVATION\020\010\0224\n0POI_DECORATION_PROPERTIES" +
+      "_SET_NPC_CLICKED_ACTION\020\t\022(\n$POI_DECORAT" +
+      "ION_PROPERTIES_BEGIN_EXIT\020\n*\223\001\n\034PushNoti" +
+      "ficationTelemetryIds\022E\nAPUSH_NOTIFICATIO" +
+      "N_TELEMETRY_IDS_UNDEFINED_PUSH_NOTIFICAT" +
+      "ION_EVENT\020\000\022,\n(PUSH_NOTIFICATION_TELEMET" +
+      "RY_IDS_OPEN_APP\020\001*\204\006\n\020PokemonGoPlusIds\0227" +
+      "\n3POKEMON_GO_PLUS_IDS_UNDEFINED_POKEMON_" +
+      "GO_PLUS_EVENT\020\000\022-\n)POKEMON_GO_PLUS_IDS_C" +
+      "ANNOT_CONNECT_TO_PGP\020\001\022.\n*POKEMON_GO_PLU" +
+      "S_IDS_REGISTERING_PGP_FAILED\020\002\022)\n%POKEMO" +
+      "N_GO_PLUS_IDS_REGISTERING_RETRY\020\003\022*\n&POK" +
+      "EMON_GO_PLUS_IDS_CONNECTION_SUCCESS\020\004\0220\n" +
+      ",POKEMON_GO_PLUS_IDS_PGP_DISCONNECTED_BY" +
+      "_USER\020\005\0223\n/POKEMON_GO_PLUS_IDS_PGP_DISCO" +
+      "NNECTED_BY_TIMEOUT\020\006\0221\n-POKEMON_GO_PLUS_" +
+      "IDS_PGP_DISCONNECTED_BY_ERROR\020\007\022\'\n#POKEM" +
+      "ON_GO_PLUS_IDS_PGP_LOW_BATTERY\020\010\022,\n(POKE" +
+      "MON_GO_PLUS_IDS_BLUETOOTH_SENT_ERROR\020\t\022*" +
+      "\n&POKEMON_GO_PLUS_IDS_PGP_SEEN_BY_DEVICE" +
+      "\020\n\022&\n\"POKEMON_GO_PLUS_IDS_POKEMON_CAUGHT" +
+      "\020\013\022*\n&POKEMON_GO_PLUS_IDS_POKEMON_NOT_CA" +
+      "UGHT\020\014\0224\n0POKEMON_GO_PLUS_IDS_POKEMON_NO" +
+      "T_CAUGHT_DUE_ERROR\020\r\022%\n!POKEMON_GO_PLUS_" +
+      "IDS_POKESTOP_SPUN\020\016\0223\n/POKEMON_GO_PLUS_I" +
+      "DS_POKESTOP_NOT_SPUN_DUE_ERROR\020\017*\276\001\n\010Pla" +
+      "tform\022\033\n\027PLATFORM_PLATFORM_UNSET\020\000\022\031\n\025PL" +
+      "ATFORM_PLATFORM_IOS\020\001\022\035\n\031PLATFORM_PLATFO" +
+      "RM_ANDROID\020\002\022\031\n\025PLATFORM_PLATFORM_OSX\020\003\022" +
+      "\035\n\031PLATFORM_PLATFORM_WINDOWS\020\004\022!\n\035PLATFO" +
+      "RM_PLATFORM_APPLE_WATCH\020\005*\205\001\n\021BattleResu" +
+      "ltsExit\022!\n\035BATTLE_RESULTS_EXIT_LEAVE_GYM" +
+      "\020\000\022$\n BATTLE_RESULTS_EXIT_LEAVE_BATTLE\020\001" +
+      "\022\'\n#BATTLE_RESULTS_EXIT_CONTINUE_BATTLE\020" +
+      "\002*\363\001\n\031PoiSubmissionTutorialPage\0221\n-POI_S" +
+      "UBMISSION_TUTORIAL_PAGE_WHAT_IS_POKESTOP" +
+      "\020\000\0222\n.POI_SUBMISSION_TUTORIAL_PAGE_SUBMI" +
+      "T_FOR_REVIEW\020\001\0229\n5POI_SUBMISSION_TUTORIA" +
+      "L_PAGE_HOW_TO_CHOOSE_A_LOCATION\020\002\0224\n0POI" +
+      "_SUBMISSION_TUTORIAL_PAGE_DESCRIBE_A_LOC" +
+      "ATION\020\003*K\n\016ExitVfxContext\022\033\n\027EXIT_VFX_CO" +
+      "NTEXT_NORMAL\020\000\022\034\n\030EXIT_VFX_CONTEXT_VICTO" +
+      "RY\020\001*\252\003\n\025BuddyActivityCategory\0220\n,BUDDY_" +
+      "ACTIVITY_CATEGORY_BUDDY_CATEGORY_UNSET\020\000" +
+      "\022/\n+BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGO" +
+      "RY_FEED\020\001\022/\n+BUDDY_ACTIVITY_CATEGORY_BUD" +
+      "DY_CATEGORY_CARE\020\002\0223\n/BUDDY_ACTIVITY_CAT" +
+      "EGORY_BUDDY_CATEGORY_SNAPSHOT\020\003\022/\n+BUDDY" +
+      "_ACTIVITY_CATEGORY_BUDDY_CATEGORY_WALK\020\004" +
+      "\0221\n-BUDDY_ACTIVITY_CATEGORY_BUDDY_CATEGO" +
+      "RY_BATTLE\020\005\0222\n.BUDDY_ACTIVITY_CATEGORY_B" +
+      "UDDY_CATEGORY_EXPLORE\020\006\0220\n,BUDDY_ACTIVIT" +
+      "Y_CATEGORY_BUDDY_CATEGORY_BONUS\020\007*\217\003\n\021Bu" +
+      "ddyEmotionLevel\0221\n-BUDDY_EMOTION_LEVEL_B" +
+      "UDDY_EMOTION_LEVEL_UNSET\020\000\022-\n)BUDDY_EMOT" +
+      "ION_LEVEL_BUDDY_EMOTION_LEVEL_0\020\001\022-\n)BUD" +
+      "DY_EMOTION_LEVEL_BUDDY_EMOTION_LEVEL_1\020\002" +
+      "\022-\n)BUDDY_EMOTION_LEVEL_BUDDY_EMOTION_LE" +
+      "VEL_2\020\003\022-\n)BUDDY_EMOTION_LEVEL_BUDDY_EMO" +
+      "TION_LEVEL_3\020\004\022-\n)BUDDY_EMOTION_LEVEL_BU" +
+      "DDY_EMOTION_LEVEL_4\020\005\022-\n)BUDDY_EMOTION_L" +
+      "EVEL_BUDDY_EMOTION_LEVEL_5\020\006\022-\n)BUDDY_EM" +
+      "OTION_LEVEL_BUDDY_EMOTION_LEVEL_6\020\007*a\n\014C" +
+      "urrencyType\022\031\n\025CURRENCY_TYPE_UNKNOWN\020\000\022\032" +
+      "\n\026CURRENCY_TYPE_POKECOIN\020\001\022\032\n\026CURRENCY_T" +
+      "YPE_STARDUST\020\002*S\n\004Team\022\016\n\nTEAM_UNSET\020\000\022\022" +
+      "\n\016TEAM_TEAM_BLUE\020\001\022\021\n\rTEAM_TEAM_RED\020\002\022\024\n" +
+      "\020TEAM_TEAM_YELLOW\020\003*\235\024\n\032HoloholoClientTe" +
+      "lemetryIds\022+\n\'HOLOHOLO_CLIENT_TELEMETRY_" +
+      "IDS_UNDEFINED\020\000\022+\n\'HOLOHOLO_CLIENT_TELEM" +
+      "ETRY_IDS_BOOT_TIME\020\001\022,\n(HOLOHOLO_CLIENT_" +
+      "TELEMETRY_IDS_FRAME_RATE\020\002\022/\n+HOLOHOLO_C" +
+      "LIENT_TELEMETRY_IDS_GENERIC_CLICK\020\003\022+\n\'H" +
+      "OLOHOLO_CLIENT_TELEMETRY_IDS_MAP_EVENT\020\004" +
+      "\022/\n+HOLOHOLO_CLIENT_TELEMETRY_IDS_SPIN_P" +
+      "OKESTOP\020\005\022.\n*HOLOHOLO_CLIENT_TELEMETRY_I" +
+      "DS_PROFILE_PAGE\020\006\022/\n+HOLOHOLO_CLIENT_TEL" +
+      "EMETRY_IDS_SHOPPING_PAGE\020\007\0223\n/HOLOHOLO_C" +
+      "LIENT_TELEMETRY_IDS_ENCOUNTER_POKEMON\020\010\022" +
+      "/\n+HOLOHOLO_CLIENT_TELEMETRY_IDS_CATCH_P" +
+      "OKEMON\020\t\0220\n,HOLOHOLO_CLIENT_TELEMETRY_ID" +
+      "S_DEPLOY_POKEMON\020\n\022.\n*HOLOHOLO_CLIENT_TE" +
+      "LEMETRY_IDS_FEED_POKEMON\020\013\0220\n,HOLOHOLO_C" +
+      "LIENT_TELEMETRY_IDS_EVOLVE_POKEMON\020\014\0221\n-" +
+      "HOLOHOLO_CLIENT_TELEMETRY_IDS_RELEASE_PO" +
+      "KEMON\020\r\0222\n.HOLOHOLO_CLIENT_TELEMETRY_IDS" +
+      "_NICKNAME_POKEMON\020\016\022+\n\'HOLOHOLO_CLIENT_T" +
+      "ELEMETRY_IDS_NEWS_PAGE\020\017\022&\n\"HOLOHOLO_CLI" +
+      "ENT_TELEMETRY_IDS_ITEM\020\020\022.\n*HOLOHOLO_CLI" +
+      "ENT_TELEMETRY_IDS_BATTLE_PARTY\020\021\0221\n-HOLO" +
+      "HOLO_CLIENT_TELEMETRY_IDS_PASSCODE_REDEE" +
+      "M\020\022\022,\n(HOLOHOLO_CLIENT_TELEMETRY_IDS_LIN" +
+      "K_LOGIN\020\023\022&\n\"HOLOHOLO_CLIENT_TELEMETRY_I" +
+      "DS_RAID\020\024\0223\n/HOLOHOLO_CLIENT_TELEMETRY_I" +
+      "DS_PUSH_NOTIFICATION\020\025\0226\n2HOLOHOLO_CLIEN" +
+      "T_TELEMETRY_IDS_AVATAR_CUSTOMIZATION\020\026\022D" +
+      "\n@HOLOHOLO_CLIENT_TELEMETRY_IDS_READ_POI" +
+      "NT_OF_INTEREST_DESCRIPTION\020\027\022%\n!HOLOHOLO" +
+      "_CLIENT_TELEMETRY_IDS_WEB\020\030\022+\n\'HOLOHOLO_" +
+      "CLIENT_TELEMETRY_IDS_CHANGE_AR\020\031\0226\n2HOLO" +
+      "HOLO_CLIENT_TELEMETRY_IDS_WEATHER_DETAIL" +
+      "_CLICK\020\032\022;\n7HOLOHOLO_CLIENT_TELEMETRY_ID" +
+      "S_USER_ISSUE_WEATHER_REPORT\020\033\0223\n/HOLOHOL" +
+      "O_CLIENT_TELEMETRY_IDS_POKEMON_INVENTORY" +
+      "\020\034\022(\n$HOLOHOLO_CLIENT_TELEMETRY_IDS_SOCI" +
+      "AL\020\035\022;\n7HOLOHOLO_CLIENT_TELEMETRY_IDS_CH" +
+      "ECK_ENCOUNTER_TRAY_INFO\020\036\0221\n-HOLOHOLO_CL" +
+      "IENT_TELEMETRY_IDS_POKEMON_GO_PLUS\020\037\022,\n(" +
+      "HOLOHOLO_CLIENT_TELEMETRY_IDS_RPC_TIMING" +
+      "\020 \0223\n/HOLOHOLO_CLIENT_TELEMETRY_IDS_SOCI" +
+      "AL_GIFT_COUNT\020!\0227\n3HOLOHOLO_CLIENT_TELEM" +
+      "ETRY_IDS_ASSET_BUNDLE_DOWNLOAD\020\"\0224\n0HOLO" +
+      "HOLO_CLIENT_TELEMETRY_IDS_ASSET_POI_DOWN" +
+      "LOAD\020#\0227\n3HOLOHOLO_CLIENT_TELEMETRY_IDS_" +
+      "ASSET_STREAM_DOWNLOAD\020$\022;\n7HOLOHOLO_CLIE" +
+      "NT_TELEMETRY_IDS_ASSET_STREAM_CACHE_CULL" +
+      "ED\020%\0223\n/HOLOHOLO_CLIENT_TELEMETRY_IDS_RP" +
+      "C_SOCKET_TIMING\020&\0222\n.HOLOHOLO_CLIENT_TEL" +
+      "EMETRY_IDS_PERMISSIONS_FLOW\020\'\0227\n3HOLOHOL" +
+      "O_CLIENT_TELEMETRY_IDS_DEVICE_SERVICE_TO" +
+      "GGLE\020(\0220\n,HOLOHOLO_CLIENT_TELEMETRY_IDS_" +
+      "BOOT_TELEMETRY\020)\022<\n8HOLOHOLO_CLIENT_TELE" +
+      "METRY_IDS_AR_PHOTO_SESSION_TELEMETRY\020*\0229" +
+      "\n5HOLOHOLO_CLIENT_TELEMETRY_IDS_LEAVE_PO" +
+      "INT_OF_INTEREST\020+\022>\n:HOLOHOLO_CLIENT_TEL" +
+      "EMETRY_IDS_VIEW_POINT_OF_INTEREST_IMAGE\020" +
+      ",\022?\n;HOLOHOLO_CLIENT_TELEMETRY_IDS_COMBA" +
+      "T_HUB_ENTRANCE_TELEMETRY\020-\022A\n=HOLOHOLO_C" +
+      "LIENT_TELEMETRY_IDS_DEVICE_SPECIFICATION" +
+      "S_TELEMETRY\020.\022=\n9HOLOHOLO_CLIENT_TELEMET" +
+      "RY_IDS_SCREEN_RESOLUTION_TELEMETRY\020/\0225\n1" +
+      "HOLOHOLO_CLIENT_TELEMETRY_IDS_DEVICE_OS_" +
+      "TELEMETRY\0200*u\n\010VfxLevel\022\022\n\016VFX_LEVEL_NON" +
+      "E\020\000\022\023\n\017VFX_LEVEL_START\020\001\022\022\n\016VFX_LEVEL_NI" +
+      "CE\020\002\022\023\n\017VFX_LEVEL_GREAT\020\003\022\027\n\023VFX_LEVEL_E" +
+      "XCELLENT\020\004*\247\001\n\024InventoryUpgradeType\022(\n$I" +
+      "NVENTORY_UPGRADE_TYPE_UPGRADE_UNSET\020\000\0220\n" +
+      ",INVENTORY_UPGRADE_TYPE_INCREASE_ITEM_ST" +
+      "ORAGE\020\001\0223\n/INVENTORY_UPGRADE_TYPE_INCREA" +
+      "SE_POKEMON_STORAGE\020\002*\347\007\n\030ShoppingPageTel" +
+      "emetryIds\022=\n9SHOPPING_PAGE_TELEMETRY_IDS" +
+      "_UNDEFINED_SHOPPING_PAGE_EVENT\020\000\0226\n2SHOP" +
+      "PING_PAGE_TELEMETRY_IDS_CLICK_CUSTOMIZE_" +
+      "AVATAR\020\001\022/\n+SHOPPING_PAGE_TELEMETRY_IDS_" +
+      "QUICK_SHOP_MORE\020\002\0223\n/SHOPPING_PAGE_TELEM" +
+      "ETRY_IDS_QUICK_SHOP_EXCHANGE\020\003\022*\n&SHOPPI" +
+      "NG_PAGE_TELEMETRY_IDS_CLICK_SHOP\020\004\022)\n%SH" +
+      "OPPING_PAGE_TELEMETRY_IDS_QUIT_SHOP\020\005\022)\n" +
+      "%SHOPPING_PAGE_TELEMETRY_IDS_CLICK_SKU\020\006" +
+      "\022(\n$SHOPPING_PAGE_TELEMETRY_IDS_QUIT_SKU" +
+      "\020\007\0222\n.SHOPPING_PAGE_TELEMETRY_IDS_CLICK_" +
+      "SKU_EXCHANGE\020\010\0221\n-SHOPPING_PAGE_TELEMETR" +
+      "Y_IDS_CLICK_SHOP_AVATAR\020\t\0220\n,SHOPPING_PA" +
+      "GE_TELEMETRY_IDS_QUIT_SHOP_AVATAR\020\n\0221\n-S" +
+      "HOPPING_PAGE_TELEMETRY_IDS_CLICK_AVATAR_" +
+      "TYPE\020\013\0220\n,SHOPPING_PAGE_TELEMETRY_IDS_QU" +
+      "IT_AVATAR_TYPE\020\014\0221\n-SHOPPING_PAGE_TELEME" +
+      "TRY_IDS_CLICK_AVATAR_ITEM\020\r\0220\n,SHOPPING_" +
+      "PAGE_TELEMETRY_IDS_QUIT_AVATAR_ITEM\020\016\0223\n" +
+      "/SHOPPING_PAGE_TELEMETRY_IDS_CONFIRM_AVA" +
+      "TAR_ITEM\020\017\0227\n3SHOPPING_PAGE_TELEMETRY_ID" +
+      "S_CLICK_AVATAR_ITEM_COLOR\020\020\0226\n2SHOPPING_" +
+      "PAGE_TELEMETRY_IDS_QUIT_AVATAR_ITEM_COLO" +
+      "R\020\021\0229\n5SHOPPING_PAGE_TELEMETRY_IDS_CONFI" +
+      "RM_AVATAR_ITEM_COLOR\020\022*\361\003\n\031IncidentLeade" +
+      "rStringTypes\0228\n4INCIDENT_LEADER_STRING_T" +
+      "YPES_ONBOARDING_INTRODUCTION\020\000\0225\n1INCIDE" +
+      "NT_LEADER_STRING_TYPES_ONBOARDING_ENCOUN" +
+      "TER\020\001\0222\n.INCIDENT_LEADER_STRING_TYPES_ON" +
+      "BOARDING_SHADOW\020\002\0228\n4INCIDENT_LEADER_STR" +
+      "ING_TYPES_ONBOARDING_MAP_FRAGMENT\020\003\0221\n-I" +
       "NCIDENT_LEADER_STRING_TYPES_ONBOARDING_M" +
-      "AP_2\020\005\022(\n$INCIDENT_LEADER_STRING_TYPES_I" +
-      "NSPIRE\020\006\0221\n-INCIDENT_LEADER_STRING_TYPES" +
-      "_MAP_TIME_WARNING\020\007\0222\n.INCIDENT_LEADER_S" +
-      "TRING_TYPES_MAP_EMPTY_WARNING\020\010*\266\003\n\021Holo" +
-      "PokemonNature\022&\n\"HOLO_POKEMON_NATURE_NAT" +
-      "URE_UNKNOWN\020\000\0222\n.HOLO_POKEMON_NATURE_V00" +
-      "01_POKEMON_NATURE_STOIC\020\001\0225\n1HOLO_POKEMO" +
-      "N_NATURE_V0002_POKEMON_NATURE_ASSASSIN\020\002" +
-      "\0225\n1HOLO_POKEMON_NATURE_V0003_POKEMON_NA" +
-      "TURE_GUARDIAN\020\003\0223\n/HOLO_POKEMON_NATURE_V" +
-      "0004_POKEMON_NATURE_RAIDER\020\004\0226\n2HOLO_POK" +
-      "EMON_NATURE_V0005_POKEMON_NATURE_PROTECT" +
-      "OR\020\005\0223\n/HOLO_POKEMON_NATURE_V0006_POKEMO" +
-      "N_NATURE_SENTRY\020\006\0225\n1HOLO_POKEMON_NATURE" +
-      "_V0007_POKEMON_NATURE_CHAMPION\020\007*\267\002\n\026Rem" +
-      "oteRaidTelemetryIds\0229\n5REMOTE_RAID_TELEM" +
-      "ETRY_IDS_UNDEFINED_REMOTE_RAID_EVENT\020\000\0225" +
-      "\n1REMOTE_RAID_TELEMETRY_IDS_REMOTE_RAID_" +
-      "LOBBY_ENTER\020\001\0225\n1REMOTE_RAID_TELEMETRY_I" +
-      "DS_REMOTE_RAID_INVITE_SENT\020\002\0229\n5REMOTE_R" +
-      "AID_TELEMETRY_IDS_REMOTE_RAID_INVITE_ACC" +
-      "EPTED\020\003\0229\n5REMOTE_RAID_TELEMETRY_IDS_REM" +
-      "OTE_RAID_INVITE_REJECTED\020\004*\232\001\n\022Onboardin" +
-      "gArStatus\022\036\n\032ONBOARDING_AR_STATUS_UNSET\020" +
-      "\000\022\034\n\030ONBOARDING_AR_STATUS_OFF\020\001\022$\n ONBOA" +
-      "RDING_AR_STATUS_AR_STANDARD\020\002\022 \n\034ONBOARD" +
-      "ING_AR_STATUS_AR_PLUS\020\003*\217\017\n\014VariableName" +
-      "\022\027\n\023VARIABLE_NAME_UNSET\020\000\022\033\n\027VARIABLE_NA" +
-      "ME_CODE_NAME\020\001\022\026\n\022VARIABLE_NAME_TEAM\020\002\022\027" +
-      "\n\023VARIABLE_NAME_LEVEL\020\003\022\034\n\030VARIABLE_NAME" +
-      "_EXPERIENCE\020\004\022\"\n\036VARIABLE_NAME_POKECOIN_" +
-      "BALANCE\020\005\022\"\n\036VARIABLE_NAME_STARDUST_BALA" +
-      "NCE\020\006\022\027\n\023VARIABLE_NAME_EMAIL\020\007\022\036\n\032VARIAB" +
-      "LE_NAME_LOGIN_METHOD\020\010\022\031\n\024VARIABLE_NAME_" +
-      "GYM_ID\020\350\007\022\033\n\026VARIABLE_NAME_GYM_NAME\020\351\007\022\"" +
-      "\n\035VARIABLE_NAME_POKEMON_DISPLAY\020\352\007\022\'\n\"VA" +
-      "RIABLE_NAME_POKEDEX_ENTRY_NUMBER\020\353\007\022\035\n\030V" +
-      "ARIABLE_NAME_POKEMON_ID\020\354\007\022#\n\036VARIABLE_N" +
-      "AME_POKEMON_NICKNAME\020\355\007\022*\n%VARIABLE_NAME" +
-      "_GYM_BADGE_EARNED_POINTS\020\356\007\022%\n VARIABLE_" +
-      "NAME_GYM_BADGE_PROGRESS\020\357\007\022!\n\034VARIABLE_N" +
-      "AME_GYM_BADGE_RANK\020\360\007\022&\n!VARIABLE_NAME_G" +
-      "YM_BADGE_IMAGE_URL\020\361\007\022%\n VARIABLE_NAME_G" +
-      "YM_BADGE_LEVEL_UP\020\362\007\022#\n\036VARIABLE_NAME_PO" +
-      "KECOIN_AWARDED\020\363\007\022)\n$VARIABLE_NAME_POKEC" +
-      "OIN_AWARDED_TODAY\020\364\007\022%\n VARIABLE_NAME_MA" +
-      "X_DAILY_POKECOIN\020\365\007\022\036\n\031VARIABLE_NAME_BAT" +
-      "TLES_WON\020\366\007\022\037\n\032VARIABLE_NAME_BATTLES_LOS" +
-      "T\020\367\007\022\"\n\035VARIABLE_NAME_DEPLOYED_MILLIS\020\370\007" +
-      "\022\034\n\027VARIABLE_NAME_RAID_SEED\020\371\007\0223\n.VARIAB" +
-      "LE_NAME_EXCLUSIVE_RAID_CANCELLATION_INFO" +
-      "\020\372\007\022\"\n\035VARIABLE_NAME_GIFTBOX_DETAILS\020\373\007\022" +
-      " \n\033VARIABLE_NAME_FRIEND_AVATAR\020\374\007\022\036\n\031VAR" +
-      "IABLE_NAME_FRIEND_TEAM\020\375\007\022\"\n\035VARIABLE_NA" +
-      "ME_FRIEND_CODENAME\020\376\007\022\"\n\035VARIABLE_NAME_G" +
-      "IFT_LOOT_ITEMS\020\377\007\022\033\n\026VARIABLE_NAME_GIFT_" +
-      "EGG\020\200\010\0226\n1VARIABLE_NAME_FRIENDSHIP_MILES" +
-      "TONE_REWARD_DETAILS\020\201\010\022+\n&VARIABLE_NAME_" +
-      "FRIENDSHIP_LEVEL_DISPLAY\020\202\010\0220\n+VARIABLE_" +
-      "NAME_BGMODE_BUDDY_POKEMON_NICKNAME\020\203\010\022#\n" +
-      "\036VARIABLE_NAME_COMBAT_CHALLENGE\020\204\010\022-\n(VA" +
-      "RIABLE_NAME_COMBAT_CHALLENGER_CODENAME\020\205" +
-      "\010\0221\n,VARIABLE_NAME_BGMODE_OFF_SESSION_DI" +
-      "STANCE_KM\020\206\010\022\033\n\026VARIABLE_NAME_POI_NAME\020\207" +
-      "\010\022\034\n\027VARIABLE_NAME_FRIEND_ID\020\210\010\022)\n$VARIA" +
-      "BLE_NAME_BUDDY_SHOWN_HEART_TYPE\020\211\010\022\031\n\024VA" +
-      "RIABLE_NAME_POI_ID\020\212\010\022!\n\034VARIABLE_NAME_P" +
-      "OI_EXPIRATION\020\213\010\022\036\n\031VARIABLE_NAME_BUDDY_" +
-      "LEVEL\020\214\010\022(\n#VARIABLE_NAME_NUM_VS_SEEKER_" +
-      "CHARGES\020\215\010\022 \n\033VARIABLE_NAME_SEASON_NUMBE" +
-      "R\020\216\010\0223\n.VARIABLE_NAME_POI_PASSCODE_REDEM" +
-      "PTION_RESPONSE\020\217\010\022 \n\033VARIABLE_NAME_GIFTB" +
-      "OX_COUNT\020\220\010\022*\n%VARIABLE_NAME_RAID_INVITA" +
-      "TION_DETAILS\020\221\010\022\035\n\030VARIABLE_NAME_LOOT_IT" +
-      "EMS\020\222\010\022!\n\034VARIABLE_NAME_EVENT_ICON_URL\020\223" +
-      "\010*\335\001\n\tRaidLevel\022\037\n\033RAID_LEVEL_RAID_LEVEL" +
-      "_UNSET\020\000\022\033\n\027RAID_LEVEL_RAID_LEVEL_1\020\001\022\033\n" +
-      "\027RAID_LEVEL_RAID_LEVEL_2\020\002\022\033\n\027RAID_LEVEL" +
-      "_RAID_LEVEL_3\020\003\022\033\n\027RAID_LEVEL_RAID_LEVEL" +
-      "_4\020\004\022\033\n\027RAID_LEVEL_RAID_LEVEL_5\020\005\022\036\n\032RAI" +
-      "D_LEVEL_RAID_LEVEL_MEGA\020\006*\357\003\n\035Permission" +
-      "ContextTelemetryIds\022A\n=PERMISSION_CONTEX" +
-      "T_TELEMETRY_IDS_UNDEFINED_PERMISSION_CON" +
-      "TEXT\020\000\022.\n*PERMISSION_CONTEXT_TELEMETRY_I" +
-      "DS_EGG_HATCH\020\001\0226\n2PERMISSION_CONTEXT_TEL" +
-      "EMETRY_IDS_BUDDY_CANDY_FOUND\020\002\022;\n7PERMIS" +
-      "SION_CONTEXT_TELEMETRY_IDS_PLAYER_PROFIL" +
-      "E_CLICKED\020\003\022:\n6PERMISSION_CONTEXT_TELEME" +
-      "TRY_IDS_SMART_WATCH_INSTALLED\020\004\022:\n6PERMI" +
-      "SSION_CONTEXT_TELEMETRY_IDS_SFIDA_SESSIO" +
-      "N_STARTED\020\005\0224\n0PERMISSION_CONTEXT_TELEME" +
-      "TRY_IDS_SETTINGS_TOGGLE\020\006\0228\n4PERMISSION_" +
-      "CONTEXT_TELEMETRY_IDS_NEARBY_PANEL_OPENE" +
-      "D\020\007*\372\001\n\024NewsPageTelemetryIds\0220\n,NEWS_PAG" +
-      "E_TELEMETRY_IDS_UNDEFINED_NEWS_EVENT\020\000\022\'" +
-      "\n#NEWS_PAGE_TELEMETRY_IDS_NEWS_VIEWED\020\001\022" +
-      "*\n&NEWS_PAGE_TELEMETRY_IDS_NEWS_DISMISSE" +
-      "D\020\002\022-\n)NEWS_PAGE_TELEMETRY_IDS_NEWS_LINK" +
-      "_CLICKED\020\003\022,\n(NEWS_PAGE_TELEMETRY_IDS_NE" +
-      "WS_UPDATED_APP\020\004*\313\001\n\030POIDecorationFollow" +
-      "Flags\0221\n-POI_DECORATION_FOLLOW_FLAGS_NON" +
-      "E_AUTO_INVALID\020\000\022(\n$POI_DECORATION_FOLLO" +
-      "W_FLAGS_FOLLOW_X\020\001\022(\n$POI_DECORATION_FOL" +
-      "LOW_FLAGS_FOLLOW_Y\020\002\022(\n$POI_DECORATION_F" +
-      "OLLOW_FLAGS_FOLLOW_Z\020\004*\230\002\n\021AssetTelemetr" +
-      "yIds\022-\n)ASSET_TELEMETRY_IDS_UNDEFINED_AS" +
-      "SET_EVENT\020\000\022&\n\"ASSET_TELEMETRY_IDS_DOWNL" +
-      "OAD_START\020\001\022)\n%ASSET_TELEMETRY_IDS_DOWNL" +
-      "OAD_FINISHED\020\002\022\'\n#ASSET_TELEMETRY_IDS_DO" +
-      "WNLOAD_FAILED\020\003\0222\n.ASSET_TELEMETRY_IDS_A" +
-      "SSET_RETRIEVED_FROM_CACHE\020\004\022$\n ASSET_TEL" +
-      "EMETRY_IDS_CACHE_THRASH\020\005*\221\003\n\rEncounterT" +
-      "ype\022\036\n\032ENCOUNTER_TYPE_SPAWN_POINT\020\000\022\032\n\026E" +
-      "NCOUNTER_TYPE_INCENSE\020\001\022\027\n\023ENCOUNTER_TYP" +
-      "E_DISK\020\002\022\034\n\030ENCOUNTER_TYPE_POST_RAID\020\003\022\036" +
-      "\n\032ENCOUNTER_TYPE_STORY_QUEST\020\004\022#\n\037ENCOUN" +
-      "TER_TYPE_QUEST_STAMP_CARD\020\005\022\"\n\036ENCOUNTER" +
-      "_TYPE_CHALLENGE_QUEST\020\006\022\034\n\030ENCOUNTER_TYP" +
-      "E_PHOTOBOMB\020\007\022\033\n\027ENCOUNTER_TYPE_INVASION" +
-      "\020\010\022#\n\037ENCOUNTER_TYPE_VS_SEEKER_REWARD\020\t\022" +
-      "$\n ENCOUNTER_TYPE_TIMED_STORY_QUEST\020\n\022\036\n" +
-      "\032ENCOUNTER_TYPE_DAILY_BONUS\020\013*\324\002\n\024AdFeed" +
-      "backLikeReason\022;\n7AD_FEEDBACK_LIKE_REASO" +
-      "N_AD_FEEDBACK_LIKE_REASON_INVALID\020\000\022<\n8A" +
-      "D_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_" +
-      "REASON_CATEGORY\020\001\022<\n8AD_FEEDBACK_LIKE_RE",
-      "ASON_AD_FEEDBACK_LIKE_REASON_SEE_MORE\020\002\022" +
-      "H\nDAD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_L" +
-      "IKE_REASON_MORE_SPONSORED_GIFTS\020\003\0229\n5AD_" +
-      "FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_RE" +
-      "ASON_OTHER\020\004*\355\007\n\014HoloItemType\022!\n\035HOLO_IT" +
-      "EM_TYPE_ITEM_TYPE_NONE\020\000\022%\n!HOLO_ITEM_TY" +
-      "PE_ITEM_TYPE_POKEBALL\020\001\022#\n\037HOLO_ITEM_TYP" +
-      "E_ITEM_TYPE_POTION\020\002\022#\n\037HOLO_ITEM_TYPE_I" +
-      "TEM_TYPE_REVIVE\020\003\022 \n\034HOLO_ITEM_TYPE_ITEM" +
-      "_TYPE_MAP\020\004\022#\n\037HOLO_ITEM_TYPE_ITEM_TYPE_" +
-      "BATTLE\020\005\022!\n\035HOLO_ITEM_TYPE_ITEM_TYPE_FOO" +
-      "D\020\006\022#\n\037HOLO_ITEM_TYPE_ITEM_TYPE_CAMERA\020\007" +
-      "\022!\n\035HOLO_ITEM_TYPE_ITEM_TYPE_DISK\020\010\022&\n\"H" +
-      "OLO_ITEM_TYPE_ITEM_TYPE_INCUBATOR\020\t\022$\n H" +
-      "OLO_ITEM_TYPE_ITEM_TYPE_INCENSE\020\n\022%\n!HOL" +
-      "O_ITEM_TYPE_ITEM_TYPE_XP_BOOST\020\013\022.\n*HOLO" +
-      "_ITEM_TYPE_ITEM_TYPE_INVENTORY_UPGRADE\020\014" +
-      "\0222\n.HOLO_ITEM_TYPE_ITEM_TYPE_EVOLUTION_R" +
-      "EQUIREMENT\020\r\022(\n$HOLO_ITEM_TYPE_ITEM_TYPE" +
-      "_MOVE_REROLL\020\016\022\"\n\036HOLO_ITEM_TYPE_ITEM_TY" +
-      "PE_CANDY\020\017\022(\n$HOLO_ITEM_TYPE_ITEM_TYPE_R" +
-      "AID_TICKET\020\020\022+\n\'HOLO_ITEM_TYPE_ITEM_TYPE" +
-      "_STARDUST_BOOST\020\021\022,\n(HOLO_ITEM_TYPE_ITEM" +
-      "_TYPE_FRIEND_GIFT_BOX\020\022\022(\n$HOLO_ITEM_TYP" +
-      "E_ITEM_TYPE_TEAM_CHANGE\020\023\0221\n-HOLO_ITEM_T" +
-      "YPE_ITEM_TYPE_VS_SEEKER_BATTLE_NOW\020\025\022,\n(" +
-      "HOLO_ITEM_TYPE_ITEM_TYPE_INCIDENT_TICKET" +
-      "\020\026\0220\n,HOLO_ITEM_TYPE_ITEM_TYPE_GLOBAL_EV" +
-      "ENT_TICKET\020\027\022.\n*HOLO_ITEM_TYPE_ITEM_TYPE" +
-      "_STICKER_INVENTORY\020\030*i\n\022HoloPokemonEggTy" +
-      "pe\022(\n$HOLO_POKEMON_EGG_TYPE_EGG_TYPE_UNS" +
-      "ET\020\000\022)\n%HOLO_POKEMON_EGG_TYPE_EGG_TYPE_S" +
-      "HADOW\020\001*\305\002\n\013PokemonAnim\022\025\n\021POKEMON_ANIM_" +
-      "NONE\020\000\022\030\n\024POKEMON_ANIM_IDLE_01\020\001\022\030\n\024POKE" +
-      "MON_ANIM_IDLE_02\020\002\022\025\n\021POKEMON_ANIM_LAND\020" +
-      "\003\022\032\n\026POKEMON_ANIM_ATTACK_01\020\004\022\032\n\026POKEMON" +
-      "_ANIM_ATTACK_02\020\005\022\030\n\024POKEMON_ANIM_DAMAGE" +
-      "D\020\006\022\030\n\024POKEMON_ANIM_STUNNED\020\007\022\025\n\021POKEMON" +
-      "_ANIM_LOOP\020\010\022\031\n\025POKEMON_ANIM_SLEEP_01\020\t\022" +
-      "\031\n\025POKEMON_ANIM_SLEEP_02\020\n\022\033\n\027POKEMON_AN" +
-      "IM_SLEEP_WAIT\020\013*\302\003\n\027HoloPokemonMovementT" +
-      "ype\022:\n6HOLO_POKEMON_MOVEMENT_TYPE_POKEMO" +
-      "N_ENC_MOVEMENT_STATIC\020\000\0228\n4HOLO_POKEMON_" +
-      "MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_JUMP\020" +
-      "\001\022<\n8HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_" +
-      "ENC_MOVEMENT_VERTICAL\020\002\022;\n7HOLO_POKEMON_" +
-      "MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_PSYCH" +
-      "IC\020\003\022<\n8HOLO_POKEMON_MOVEMENT_TYPE_POKEM" +
-      "ON_ENC_MOVEMENT_ELECTRIC\020\004\022:\n6HOLO_POKEM" +
-      "ON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_FL" +
-      "YING\020\005\022<\n8HOLO_POKEMON_MOVEMENT_TYPE_POK" +
-      "EMON_ENC_MOVEMENT_HOVERING\020\006*\230\001\n\021CameraZ" +
-      "oomInLevel\022 \n\034CAMERA_ZOOM_IN_LEVEL_DEFAU" +
-      "LT\020\000\022\035\n\031CAMERA_ZOOM_IN_LEVEL_NICE\020\001\022\036\n\032C" +
-      "AMERA_ZOOM_IN_LEVEL_GREAT\020\002\022\"\n\036CAMERA_ZO" +
-      "OM_IN_LEVEL_EXCELLENT\020\003*\342\t\n\033ShoppingPage" +
-      "TelemetrySource\022A\n=SHOPPING_PAGE_TELEMET" +
-      "RY_SOURCE_UNDEFINED_SHOPPING_PAGE_SOURCE" +
-      "\020\000\0223\n/SHOPPING_PAGE_TELEMETRY_SOURCE_SOU" +
-      "RCE_MAIN_MENU\020\001\022:\n6SHOPPING_PAGE_TELEMET" +
-      "RY_SOURCE_SOURCE_POKEMON_BAG_FULL\020\002\022<\n8S" +
-      "HOPPING_PAGE_TELEMETRY_SOURCE_SOURCE_INC" +
-      "UBATOR_SELECTOR\020\003\022C\n?SHOPPING_PAGE_TELEM" +
-      "ETRY_SOURCE_SOURCE_POKESTOP_DISK_INTERAC" +
-      "TION\020\004\022<\n8SHOPPING_PAGE_TELEMETRY_SOURCE" +
-      "_SOURCE_OPEN_GIFT_BAG_FULL\020\005\022G\nCSHOPPING" +
-      "_PAGE_TELEMETRY_SOURCE_SOURCE_QUICK_SHOP" +
-      "_BAG_FULL_ENCOUNTER\020\006\022B\n>SHOPPING_PAGE_T" +
-      "ELEMETRY_SOURCE_SOURCE_QUICK_SHOP_BAG_FU" +
-      "LL_RAID\020\007\0229\n5SHOPPING_PAGE_TELEMETRY_SOU" +
-      "RCE_SOURCE_QUICK_SHOP_MORE\020\010\0225\n1SHOPPING" +
-      "_PAGE_TELEMETRY_SOURCE_SOURCE_AVATAR_ITE" +
-      "M\020\t\022;\n7SHOPPING_PAGE_TELEMETRY_SOURCE_SO" +
-      "URCE_POKEMON_ENCOUNTER\020\n\022=\n9SHOPPING_PAG" +
-      "E_TELEMETRY_SOURCE_SOURCE_PLAYER_PROFILE" +
-      "_PAGE\020\013\0225\n1SHOPPING_PAGE_TELEMETRY_SOURC" +
-      "E_SOURCE_STORE_FRONT\020\014\022D\n@SHOPPING_PAGE_" +
-      "TELEMETRY_SOURCE_SOURCE_AVATAR_CUSTOMIZA" +
-      "TION_AWARD\020\r\022>\n:SHOPPING_PAGE_TELEMETRY_" +
-      "SOURCE_SOURCE_FIRST_TIME_USER_FLOW\020\016\022D\n@" +
-      "SHOPPING_PAGE_TELEMETRY_SOURCE_SOURCE_BA" +
-      "DGE_DETAIL_AVATAR_REWARD\020\017\0223\n/SHOPPING_P" +
-      "AGE_TELEMETRY_SOURCE_SOURCE_DEEP_LINK\020\020\022" +
-      "M\nISHOPPING_PAGE_TELEMETRY_SOURCE_SOURCE" +
-      "_QUICK_SHOP_BUDDY_INTERACTION_POFFIN\020d\022L" +
-      "\nHSHOPPING_PAGE_TELEMETRY_SOURCE_SOURCE_" +
-      "QUICK_SHOP_BUDDY_QUICK_FEED_POFFIN\020e*h\n\030" +
-      "IncubatorSelectionResult\022\'\n#INCUBATOR_SE" +
-      "LECTION_RESULT_SELECTED\020\000\022#\n\037INCUBATOR_S" +
-      "ELECTION_RESULT_EXIT\020\001*\301\002\n\023BattleHubSubs" +
-      "ection\022*\n&BATTLE_HUB_SUBSECTION_SUBSECTI" +
-      "ON_UNSET\020\000\0220\n,BATTLE_HUB_SUBSECTION_SUBS" +
-      "ECTION_VS_CHARGING\020\001\022,\n(BATTLE_HUB_SUBSE" +
-      "CTION_SUBSECTION_VS_FREE\020\002\022/\n+BATTLE_HUB" +
-      "_SUBSECTION_SUBSECTION_VS_PREMIUM\020\003\0228\n4B" +
-      "ATTLE_HUB_SUBSECTION_SUBSECTION_NEARBY_T" +
-      "EAM_LEADERS\020\004\0223\n/BATTLE_HUB_SUBSECTION_S" +
-      "UBSECTION_NEARBY_QR_CODE\020\005*g\n\007Speaker\022\020\n" +
-      "\014SPEAKER_PROF\020\000\022\027\n\023SPEAKER_BLUE_LEADER\020\001" +
-      "\022\026\n\022SPEAKER_RED_LEADER\020\002\022\031\n\025SPEAKER_YELL" +
-      "OW_LEADER\020\003*f\n\005Store\022\025\n\021STORE_STORE_UNSE" +
-      "T\020\000\022\025\n\021STORE_STORE_APPLE\020\001\022\026\n\022STORE_STOR" +
-      "E_GOOGLE\020\002\022\027\n\023STORE_STORE_SAMSUNG\020\003*e\n\rA" +
-      "nimationTake\022\031\n\025ANIMATION_TAKE_SINGLE\020\000\022" +
-      "\034\n\030ANIMATION_TAKE_BRANCHING\020\001\022\033\n\027ANIMATI" +
-      "ON_TAKE_SEQUENCE\020\002*7\n\010FortType\022\021\n\rFORT_T" +
-      "YPE_GYM\020\000\022\030\n\024FORT_TYPE_CHECKPOINT\020\001*j\n\014O" +
-      "nlineStatus\022\034\n\030ONLINE_STATUS_NOT_ONLINE\020" +
-      "\000\022\"\n\036ONLINE_STATUS_ONLINE_ELSEWHERE\020\001\022\030\n" +
-      "\024ONLINE_STATUS_ONLINE\020\002*Z\n\023VsSeekerRewar" +
-      "dTrack\022\037\n\033VS_SEEKER_REWARD_TRACK_FREE\020\000\022" +
-      "\"\n\036VS_SEEKER_REWARD_TRACK_PREMIUM\020\001*\314\004\n\037" +
-      "AvatarCustomizationTelemetryIds\022E\nAAVATA" +
-      "R_CUSTOMIZATION_TELEMETRY_IDS_UNDEFINED_" +
-      "AVATAR_CUSTOMIZATION\020\000\0221\n-AVATAR_CUSTOMI" +
-      "ZATION_TELEMETRY_IDS_EQUIP_ITEM\020\001\0224\n0AVA" +
-      "TAR_CUSTOMIZATION_TELEMETRY_IDS_OPEN_FEA" +
-      "TURES\020\002\0221\n-AVATAR_CUSTOMIZATION_TELEMETR" +
-      "Y_IDS_OPEN_STORE\020\003\0224\n0AVATAR_CUSTOMIZATI" +
-      "ON_TELEMETRY_IDS_PURCHASE_ITEM\020\004\0225\n1AVAT" +
-      "AR_CUSTOMIZATION_TELEMETRY_IDS_PURCHASE_" +
-      "ERROR\020\005\0228\n4AVATAR_CUSTOMIZATION_TELEMETR" +
-      "Y_IDS_SELECT_ITEM_GROUP\020\006\0222\n.AVATAR_CUST" +
-      "OMIZATION_TELEMETRY_IDS_SELECT_SLOT\020\007\0223\n" +
-      "/AVATAR_CUSTOMIZATION_TELEMETRY_IDS_SELE" +
-      "CT_COLOR\020\010\0226\n2AVATAR_CUSTOMIZATION_TELEM" +
-      "ETRY_IDS_SHOW_QUICK_SHOP\020\t*\305\001\n\014GymBadgeT" +
-      "ype\022\"\n\036GYM_BADGE_TYPE_GYM_BADGE_UNSET\020\000\022" +
-      "$\n GYM_BADGE_TYPE_GYM_BADGE_VANILLA\020\001\022#\n" +
-      "\037GYM_BADGE_TYPE_GYM_BADGE_BRONZE\020\002\022#\n\037GY" +
-      "M_BADGE_TYPE_GYM_BADGE_SILVER\020\003\022!\n\035GYM_B" +
-      "ADGE_TYPE_GYM_BADGE_GOLD\020\004*P\n\020Incubation" +
-      "Result\022\035\n\031INCUBATION_RESULT_SUCCESS\020\000\022\035\n" +
-      "\031INCUBATION_RESULT_FAILURE\020\001*\365\001\n\030Generic" +
-      "ClickTelemetryIds\0227\n3GENERIC_CLICK_TELEM" +
-      "ETRY_IDS_UNDEFINED_GENERIC_EVENT\020\000\0222\n.GE" +
-      "NERIC_CLICK_TELEMETRY_IDS_SPEED_WARNING_" +
-      "SHOW\020\001\0227\n3GENERIC_CLICK_TELEMETRY_IDS_SP" +
-      "EED_WARNING_PASSENGER\020\002\0223\n/GENERIC_CLICK" +
-      "_TELEMETRY_IDS_CACHE_RESET_CLICKED\020\003*\236\002\n" +
-      "\035AdFeedbackNotInterestedReason\022O\nKAD_FEE" +
-      "DBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_" +
-      "NOT_INTERESTED_REASON_INVALID\020\000\022T\nPAD_FE" +
-      "EDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK" +
-      "_NOT_INTERESTED_REASON_NOT_RELEVANT\020\001\022V\n" +
-      "RAD_FEEDBACK_NOT_INTERESTED_REASON_AD_FE" +
-      "EDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OF" +
-      "TEN\020\002*2\n\017ArToggleContext\022\037\n\033AR_TOGGLE_CO" +
-      "NTEXT_ENCOUNTER\020\000*\264\006\n\017HoloPokemonType\022\'\n" +
-      "#HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE\020\000\022)" +
-      "\n%HOLO_POKEMON_TYPE_POKEMON_TYPE_NORMAL\020" +
-      "\001\022+\n\'HOLO_POKEMON_TYPE_POKEMON_TYPE_FIGH" +
-      "TING\020\002\022)\n%HOLO_POKEMON_TYPE_POKEMON_TYPE" +
-      "_FLYING\020\003\022)\n%HOLO_POKEMON_TYPE_POKEMON_T" +
-      "YPE_POISON\020\004\022)\n%HOLO_POKEMON_TYPE_POKEMO" +
-      "N_TYPE_GROUND\020\005\022\'\n#HOLO_POKEMON_TYPE_POK" +
-      "EMON_TYPE_ROCK\020\006\022&\n\"HOLO_POKEMON_TYPE_PO" +
-      "KEMON_TYPE_BUG\020\007\022(\n$HOLO_POKEMON_TYPE_PO" +
-      "KEMON_TYPE_GHOST\020\010\022(\n$HOLO_POKEMON_TYPE_" +
-      "POKEMON_TYPE_STEEL\020\t\022\'\n#HOLO_POKEMON_TYP" +
-      "E_POKEMON_TYPE_FIRE\020\n\022(\n$HOLO_POKEMON_TY" +
-      "PE_POKEMON_TYPE_WATER\020\013\022(\n$HOLO_POKEMON_" +
-      "TYPE_POKEMON_TYPE_GRASS\020\014\022+\n\'HOLO_POKEMO" +
-      "N_TYPE_POKEMON_TYPE_ELECTRIC\020\r\022*\n&HOLO_P" +
-      "OKEMON_TYPE_POKEMON_TYPE_PSYCHIC\020\016\022&\n\"HO" +
-      "LO_POKEMON_TYPE_POKEMON_TYPE_ICE\020\017\022)\n%HO" +
-      "LO_POKEMON_TYPE_POKEMON_TYPE_DRAGON\020\020\022\'\n" +
-      "#HOLO_POKEMON_TYPE_POKEMON_TYPE_DARK\020\021\022(" +
-      "\n$HOLO_POKEMON_TYPE_POKEMON_TYPE_FAIRY\020\022" +
-      "*\366\001\n\024RemoteRaidJoinSource\022=\n9REMOTE_RAID" +
-      "_JOIN_SOURCE_UNDEFINED_REMOTE_RAID_JOIN_" +
-      "SOURCE\020\000\0220\n,REMOTE_RAID_JOIN_SOURCE_REMO" +
-      "TE_RAID_USED_MAP\020\001\0222\n.REMOTE_RAID_JOIN_S" +
-      "OURCE_REMOTE_RAID_NEARBY_GUI\020\002\0229\n5REMOTE" +
-      "_RAID_JOIN_SOURCE_REMOTE_RAID_INVITED_BY" +
-      "_FRIEND\020\003*\201\002\n\027ProfilePageTelemetryIds\0225\n" +
-      "1PROFILE_PAGE_TELEMETRY_IDS_UNDEFINED_PR" +
-      "OFILE_PAGE\020\000\0220\n,PROFILE_PAGE_TELEMETRY_I" +
-      "DS_SHOP_FROM_PROFILE\020\001\022\"\n\036PROFILE_PAGE_T" +
-      "ELEMETRY_IDS_LOG\020\002\022(\n$PROFILE_PAGE_TELEM" +
-      "ETRY_IDS_SET_BUDDY\020\003\022/\n+PROFILE_PAGE_TEL" +
-      "EMETRY_IDS_CUSTOMIZE_AVATAR\020\004*\331\201\001\n\023HoloP" +
-      "okemonFamilyId\022\'\n#HOLO_POKEMON_FAMILY_ID" +
-      "_FAMILY_UNSET\020\000\0221\n-HOLO_POKEMON_FAMILY_I" +
-      "D_V0001_FAMILY_BULBASAUR\020\001\0222\n.HOLO_POKEM" +
-      "ON_FAMILY_ID_V0004_FAMILY_CHARMANDER\020\004\0220" +
-      "\n,HOLO_POKEMON_FAMILY_ID_V0007_FAMILY_SQ" +
-      "UIRTLE\020\007\0220\n,HOLO_POKEMON_FAMILY_ID_V0010" +
-      "_FAMILY_CATERPIE\020\n\022.\n*HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0013_FAMILY_WEEDLE\020\r\022.\n*HOLO_POKEM" +
-      "ON_FAMILY_ID_V0016_FAMILY_PIDGEY\020\020\022/\n+HO" +
-      "LO_POKEMON_FAMILY_ID_V0019_FAMILY_RATTAT" +
-      "A\020\023\022/\n+HOLO_POKEMON_FAMILY_ID_V0021_FAMI" +
-      "LY_SPEAROW\020\025\022-\n)HOLO_POKEMON_FAMILY_ID_V" +
-      "0023_FAMILY_EKANS\020\027\022/\n+HOLO_POKEMON_FAMI" +
-      "LY_ID_V0025_FAMILY_PIKACHU\020\031\0221\n-HOLO_POK" +
-      "EMON_FAMILY_ID_V0027_FAMILY_SANDSHREW\020\033\022" +
-      "/\n+HOLO_POKEMON_FAMILY_ID_V0029_FAMILY_N" +
-      "IDORAN\020\035\022/\n+HOLO_POKEMON_FAMILY_ID_V0032" +
-      "_FAMILY_NIDORAN\020 \0220\n,HOLO_POKEMON_FAMILY" +
-      "_ID_V0035_FAMILY_CLEFAIRY\020#\022.\n*HOLO_POKE" +
-      "MON_FAMILY_ID_V0037_FAMILY_VULPIX\020%\0222\n.H" +
-      "OLO_POKEMON_FAMILY_ID_V0039_FAMILY_JIGGL" +
-      "YPUFF\020\'\022-\n)HOLO_POKEMON_FAMILY_ID_V0041_" +
-      "FAMILY_ZUBAT\020)\022.\n*HOLO_POKEMON_FAMILY_ID" +
-      "_V0043_FAMILY_ODDISH\020+\022-\n)HOLO_POKEMON_F" +
-      "AMILY_ID_V0046_FAMILY_PARAS\020.\022/\n+HOLO_PO" +
-      "KEMON_FAMILY_ID_V0048_FAMILY_VENONAT\0200\022/" +
-      "\n+HOLO_POKEMON_FAMILY_ID_V0050_FAMILY_DI" +
-      "GLETT\0202\022.\n*HOLO_POKEMON_FAMILY_ID_V0052_" +
-      "FAMILY_MEOWTH\0204\022/\n+HOLO_POKEMON_FAMILY_I" +
-      "D_V0054_FAMILY_PSYDUCK\0206\022.\n*HOLO_POKEMON" +
-      "_FAMILY_ID_V0056_FAMILY_MANKEY\0208\0221\n-HOLO" +
-      "_POKEMON_FAMILY_ID_V0058_FAMILY_GROWLITH" +
-      "E\020:\022/\n+HOLO_POKEMON_FAMILY_ID_V0060_FAMI" +
-      "LY_POLIWAG\020<\022,\n(HOLO_POKEMON_FAMILY_ID_V" +
-      "0063_FAMILY_ABRA\020?\022.\n*HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0066_FAMILY_MACHOP\020B\0222\n.HOLO_POKEM" +
-      "ON_FAMILY_ID_V0069_FAMILY_BELLSPROUT\020E\0221" +
-      "\n-HOLO_POKEMON_FAMILY_ID_V0072_FAMILY_TE" +
-      "NTACOOL\020H\022/\n+HOLO_POKEMON_FAMILY_ID_V007" +
-      "4_FAMILY_GEODUDE\020J\022.\n*HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0077_FAMILY_PONYTA\020M\0220\n,HOLO_POKEM" +
-      "ON_FAMILY_ID_V0079_FAMILY_SLOWPOKE\020O\0221\n-" +
-      "HOLO_POKEMON_FAMILY_ID_V0081_FAMILY_MAGN" +
-      "EMITE\020Q\0221\n-HOLO_POKEMON_FAMILY_ID_V0083_" +
-      "FAMILY_FARFETCHD\020S\022-\n)HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0084_FAMILY_DODUO\020T\022,\n(HOLO_POKEMO" +
-      "N_FAMILY_ID_V0086_FAMILY_SEEL\020V\022.\n*HOLO_" +
-      "POKEMON_FAMILY_ID_V0088_FAMILY_GRIMER\020X\022" +
-      "0\n,HOLO_POKEMON_FAMILY_ID_V0090_FAMILY_S" +
-      "HELLDER\020Z\022.\n*HOLO_POKEMON_FAMILY_ID_V009" +
-      "2_FAMILY_GASTLY\020\\\022,\n(HOLO_POKEMON_FAMILY" +
-      "_ID_V0095_FAMILY_ONIX\020_\022/\n+HOLO_POKEMON_" +
-      "FAMILY_ID_V0096_FAMILY_DROWZEE\020`\022.\n*HOLO" +
-      "_POKEMON_FAMILY_ID_V0098_FAMILY_KRABBY\020b" +
-      "\022/\n+HOLO_POKEMON_FAMILY_ID_V0100_FAMILY_" +
-      "VOLTORB\020d\0221\n-HOLO_POKEMON_FAMILY_ID_V010" +
-      "2_FAMILY_EXEGGCUTE\020f\022.\n*HOLO_POKEMON_FAM" +
-      "ILY_ID_V0104_FAMILY_CUBONE\020h\0221\n-HOLO_POK" +
-      "EMON_FAMILY_ID_V0106_FAMILY_HITMONLEE\020j\022" +
-      "2\n.HOLO_POKEMON_FAMILY_ID_V0107_FAMILY_H" +
-      "ITMONCHAN\020k\0221\n-HOLO_POKEMON_FAMILY_ID_V0" +
-      "108_FAMILY_LICKITUNG\020l\022/\n+HOLO_POKEMON_F" +
-      "AMILY_ID_V0109_FAMILY_KOFFING\020m\022/\n+HOLO_" +
-      "POKEMON_FAMILY_ID_V0111_FAMILY_RHYHORN\020o" +
-      "\022/\n+HOLO_POKEMON_FAMILY_ID_V0113_FAMILY_" +
-      "CHANSEY\020q\022/\n+HOLO_POKEMON_FAMILY_ID_V011" +
-      "4_FAMILY_TANGELA\020r\0222\n.HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0115_FAMILY_KANGASKHAN\020s\022.\n*HOLO_P" +
-      "OKEMON_FAMILY_ID_V0116_FAMILY_HORSEA\020t\022/" +
-      "\n+HOLO_POKEMON_FAMILY_ID_V0118_FAMILY_GO" +
-      "LDEEN\020v\022.\n*HOLO_POKEMON_FAMILY_ID_V0120_" +
-      "FAMILY_STARYU\020x\022/\n+HOLO_POKEMON_FAMILY_I" +
-      "D_V0122_FAMILY_MR_MIME\020z\022/\n+HOLO_POKEMON" +
-      "_FAMILY_ID_V0123_FAMILY_SCYTHER\020{\022,\n(HOL" +
-      "O_POKEMON_FAMILY_ID_V0124_FAMILY_JYNX\020|\022" +
-      "2\n.HOLO_POKEMON_FAMILY_ID_V0125_FAMILY_E" +
-      "LECTABUZZ\020}\022.\n*HOLO_POKEMON_FAMILY_ID_V0" +
-      "126_FAMILY_MAGMAR\020~\022.\n*HOLO_POKEMON_FAMI" +
-      "LY_ID_V0127_FAMILY_PINSIR\020\177\022/\n*HOLO_POKE" +
-      "MON_FAMILY_ID_V0128_FAMILY_TAUROS\020\200\001\0221\n," +
-      "HOLO_POKEMON_FAMILY_ID_V0129_FAMILY_MAGI" +
-      "KARP\020\201\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0131_" +
-      "FAMILY_LAPRAS\020\203\001\022.\n)HOLO_POKEMON_FAMILY_" +
-      "ID_V0132_FAMILY_DITTO\020\204\001\022.\n)HOLO_POKEMON" +
-      "_FAMILY_ID_V0133_FAMILY_EEVEE\020\205\001\0220\n+HOLO" +
-      "_POKEMON_FAMILY_ID_V0137_FAMILY_PORYGON\020" +
-      "\211\001\0220\n+HOLO_POKEMON_FAMILY_ID_V0138_FAMIL" +
-      "Y_OMANYTE\020\212\001\022/\n*HOLO_POKEMON_FAMILY_ID_V" +
-      "0140_FAMILY_KABUTO\020\214\001\0223\n.HOLO_POKEMON_FA" +
-      "MILY_ID_V0142_FAMILY_AERODACTYL\020\216\001\0220\n+HO" +
-      "LO_POKEMON_FAMILY_ID_V0143_FAMILY_SNORLA" +
-      "X\020\217\001\0221\n,HOLO_POKEMON_FAMILY_ID_V0144_FAM" +
-      "ILY_ARTICUNO\020\220\001\022/\n*HOLO_POKEMON_FAMILY_I" +
-      "D_V0145_FAMILY_ZAPDOS\020\221\001\0220\n+HOLO_POKEMON" +
-      "_FAMILY_ID_V0146_FAMILY_MOLTRES\020\222\001\0220\n+HO" +
-      "LO_POKEMON_FAMILY_ID_V0147_FAMILY_DRATIN" +
-      "I\020\223\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0150_FAM" +
-      "ILY_MEWTWO\020\226\001\022,\n\'HOLO_POKEMON_FAMILY_ID_" +
-      "V0151_FAMILY_MEW\020\227\001\0222\n-HOLO_POKEMON_FAMI" +
-      "LY_ID_V0152_FAMILY_CHIKORITA\020\230\001\0222\n-HOLO_" +
-      "POKEMON_FAMILY_ID_V0155_FAMILY_CYNDAQUIL" +
-      "\020\233\001\0221\n,HOLO_POKEMON_FAMILY_ID_V0158_FAMI" +
-      "LY_TOTODILE\020\236\001\0220\n+HOLO_POKEMON_FAMILY_ID" +
-      "_V0161_FAMILY_SENTRET\020\241\001\0221\n,HOLO_POKEMON" +
-      "_FAMILY_ID_V0163_FAMILY_HOOTHOOT\020\243\001\022/\n*H" +
-      "OLO_POKEMON_FAMILY_ID_V0165_FAMILY_LEDYB" +
-      "A\020\245\001\0221\n,HOLO_POKEMON_FAMILY_ID_V0167_FAM" +
-      "ILY_SPINARAK\020\247\001\0221\n,HOLO_POKEMON_FAMILY_I" +
-      "D_V0170_FAMILY_CHINCHOU\020\252\001\022/\n*HOLO_POKEM" +
-      "ON_FAMILY_ID_V0175_FAMILY_TOGEPI\020\257\001\022-\n(H" +
-      "OLO_POKEMON_FAMILY_ID_V0177_FAMILY_NATU\020" +
-      "\261\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0179_FAMIL" +
-      "Y_MAREEP\020\263\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0" +
-      "183_FAMILY_MARILL\020\267\001\0222\n-HOLO_POKEMON_FAM" +
-      "ILY_ID_V0185_FAMILY_SUDOWOODO\020\271\001\022/\n*HOLO" +
-      "_POKEMON_FAMILY_ID_V0187_FAMILY_HOPPIP\020\273" +
-      "\001\022.\n)HOLO_POKEMON_FAMILY_ID_V0190_FAMILY" +
-      "_AIPOM\020\276\001\0220\n+HOLO_POKEMON_FAMILY_ID_V019" +
-      "1_FAMILY_SUNKERN\020\277\001\022.\n)HOLO_POKEMON_FAMI" +
-      "LY_ID_V0193_FAMILY_YANMA\020\301\001\022/\n*HOLO_POKE" +
-      "MON_FAMILY_ID_V0194_FAMILY_WOOPER\020\302\001\0220\n+" +
-      "HOLO_POKEMON_FAMILY_ID_V0198_FAMILY_MURK" +
-      "ROW\020\306\001\0223\n.HOLO_POKEMON_FAMILY_ID_V0200_F" +
-      "AMILY_MISDREAVUS\020\310\001\022.\n)HOLO_POKEMON_FAMI" +
-      "LY_ID_V0201_FAMILY_UNOWN\020\311\001\0222\n-HOLO_POKE" +
-      "MON_FAMILY_ID_V0202_FAMILY_WOBBUFFET\020\312\001\022" +
-      "2\n-HOLO_POKEMON_FAMILY_ID_V0203_FAMILY_G" +
-      "IRAFARIG\020\313\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0" +
-      "204_FAMILY_PINECO\020\314\001\0222\n-HOLO_POKEMON_FAM" +
-      "ILY_ID_V0206_FAMILY_DUNSPARCE\020\316\001\022/\n*HOLO" +
-      "_POKEMON_FAMILY_ID_V0207_FAMILY_GLIGAR\020\317" +
-      "\001\0221\n,HOLO_POKEMON_FAMILY_ID_V0209_FAMILY" +
-      "_SNUBBULL\020\321\001\0221\n,HOLO_POKEMON_FAMILY_ID_V" +
-      "0211_FAMILY_QWILFISH\020\323\001\0220\n+HOLO_POKEMON_" +
-      "FAMILY_ID_V0213_FAMILY_SHUCKLE\020\325\001\0222\n-HOL" +
-      "O_POKEMON_FAMILY_ID_V0214_FAMILY_HERACRO" +
-      "SS\020\326\001\0220\n+HOLO_POKEMON_FAMILY_ID_V0215_FA" +
-      "MILY_SNEASEL\020\327\001\0222\n-HOLO_POKEMON_FAMILY_I" +
-      "D_V0216_FAMILY_TEDDIURSA\020\330\001\022/\n*HOLO_POKE" +
-      "MON_FAMILY_ID_V0218_FAMILY_SLUGMA\020\332\001\022/\n*" +
-      "HOLO_POKEMON_FAMILY_ID_V0220_FAMILY_SWIN" +
-      "UB\020\334\001\0220\n+HOLO_POKEMON_FAMILY_ID_V0222_FA" +
-      "MILY_CORSOLA\020\336\001\0221\n,HOLO_POKEMON_FAMILY_I" +
-      "D_V0223_FAMILY_REMORAID\020\337\001\0221\n,HOLO_POKEM" +
-      "ON_FAMILY_ID_V0225_FAMILY_DELIBIRD\020\341\001\0220\n" +
-      "+HOLO_POKEMON_FAMILY_ID_V0226_FAMILY_MAN" +
-      "TINE\020\342\001\0221\n,HOLO_POKEMON_FAMILY_ID_V0227_" +
-      "FAMILY_SKARMORY\020\343\001\0221\n,HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0228_FAMILY_HOUNDOUR\020\344\001\022/\n*HOLO_PO" +
-      "KEMON_FAMILY_ID_V0231_FAMILY_PHANPY\020\347\001\0221" +
-      "\n,HOLO_POKEMON_FAMILY_ID_V0234_FAMILY_ST" +
-      "ANTLER\020\352\001\0221\n,HOLO_POKEMON_FAMILY_ID_V023" +
-      "5_FAMILY_SMEARGLE\020\353\001\0220\n+HOLO_POKEMON_FAM" +
-      "ILY_ID_V0236_FAMILY_TYROGUE\020\354\001\0220\n+HOLO_P" +
-      "OKEMON_FAMILY_ID_V0241_FAMILY_MILTANK\020\361\001" +
-      "\022/\n*HOLO_POKEMON_FAMILY_ID_V0243_FAMILY_" +
-      "RAIKOU\020\363\001\022.\n)HOLO_POKEMON_FAMILY_ID_V024" +
-      "4_FAMILY_ENTEI\020\364\001\0220\n+HOLO_POKEMON_FAMILY" +
-      "_ID_V0245_FAMILY_SUICUNE\020\365\001\0221\n,HOLO_POKE" +
-      "MON_FAMILY_ID_V0246_FAMILY_LARVITAR\020\366\001\022." +
-      "\n)HOLO_POKEMON_FAMILY_ID_V0249_FAMILY_LU" +
-      "GIA\020\371\001\022.\n)HOLO_POKEMON_FAMILY_ID_V0250_F" +
-      "AMILY_HO_OH\020\372\001\022/\n*HOLO_POKEMON_FAMILY_ID" +
-      "_V0251_FAMILY_CELEBI\020\373\001\0220\n+HOLO_POKEMON_" +
-      "FAMILY_ID_V0252_FAMILY_TREECKO\020\374\001\0220\n+HOL" +
-      "O_POKEMON_FAMILY_ID_V0255_FAMILY_TORCHIC" +
-      "\020\377\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0258_FAMI" +
-      "LY_MUDKIP\020\202\002\0222\n-HOLO_POKEMON_FAMILY_ID_V" +
-      "0261_FAMILY_POOCHYENA\020\205\002\0222\n-HOLO_POKEMON" +
-      "_FAMILY_ID_V0263_FAMILY_ZIGZAGOON\020\207\002\0220\n+" +
-      "HOLO_POKEMON_FAMILY_ID_V0265_FAMILY_WURM" +
-      "PLE\020\211\002\022.\n)HOLO_POKEMON_FAMILY_ID_V0270_F" +
-      "AMILY_LOTAD\020\216\002\022/\n*HOLO_POKEMON_FAMILY_ID" +
-      "_V0273_FAMILY_SEEDOT\020\221\002\0220\n+HOLO_POKEMON_" +
-      "FAMILY_ID_V0276_FAMILY_TAILLOW\020\224\002\0220\n+HOL" +
-      "O_POKEMON_FAMILY_ID_V0278_FAMILY_WINGULL" +
-      "\020\226\002\022.\n)HOLO_POKEMON_FAMILY_ID_V0280_FAMI" +
-      "LY_RALTS\020\230\002\0220\n+HOLO_POKEMON_FAMILY_ID_V0" +
-      "283_FAMILY_SURSKIT\020\233\002\0222\n-HOLO_POKEMON_FA" +
-      "MILY_ID_V0285_FAMILY_SHROOMISH\020\235\002\0220\n+HOL" +
-      "O_POKEMON_FAMILY_ID_V0287_FAMILY_SLAKOTH" +
-      "\020\237\002\0220\n+HOLO_POKEMON_FAMILY_ID_V0290_FAMI" +
-      "LY_NINCADA\020\242\002\0220\n+HOLO_POKEMON_FAMILY_ID_" +
-      "V0293_FAMILY_WHISMUR\020\245\002\0221\n,HOLO_POKEMON_" +
-      "FAMILY_ID_V0296_FAMILY_MAKUHITA\020\250\002\0221\n,HO" +
-      "LO_POKEMON_FAMILY_ID_V0299_FAMILY_NOSEPA" +
-      "SS\020\253\002\022/\n*HOLO_POKEMON_FAMILY_ID_V0300_FA" +
-      "MILY_SKITTY\020\254\002\0220\n+HOLO_POKEMON_FAMILY_ID" +
-      "_V0302_FAMILY_SABLEYE\020\256\002\022/\n*HOLO_POKEMON" +
-      "_FAMILY_ID_V0303_FAMILY_MAWILE\020\257\002\022-\n(HOL" +
-      "O_POKEMON_FAMILY_ID_V0304_FAMILY_ARON\020\260\002" +
-      "\0221\n,HOLO_POKEMON_FAMILY_ID_V0307_FAMILY_" +
-      "MEDITITE\020\263\002\0222\n-HOLO_POKEMON_FAMILY_ID_V0" +
-      "309_FAMILY_ELECTRIKE\020\265\002\022/\n*HOLO_POKEMON_" +
-      "FAMILY_ID_V0311_FAMILY_PLUSLE\020\267\002\022.\n)HOLO" +
-      "_POKEMON_FAMILY_ID_V0312_FAMILY_MINUN\020\270\002" +
-      "\0220\n+HOLO_POKEMON_FAMILY_ID_V0313_FAMILY_" +
-      "VOLBEAT\020\271\002\0221\n,HOLO_POKEMON_FAMILY_ID_V03" +
-      "14_FAMILY_ILLUMISE\020\272\002\0220\n+HOLO_POKEMON_FA" +
-      "MILY_ID_V0315_FAMILY_ROSELIA\020\273\002\022/\n*HOLO_" +
-      "POKEMON_FAMILY_ID_V0316_FAMILY_GULPIN\020\274\002" +
-      "\0221\n,HOLO_POKEMON_FAMILY_ID_V0318_FAMILY_" +
-      "CARVANHA\020\276\002\0220\n+HOLO_POKEMON_FAMILY_ID_V0" +
-      "320_FAMILY_WAILMER\020\300\002\022.\n)HOLO_POKEMON_FA" +
-      "MILY_ID_V0322_FAMILY_NUMEL\020\302\002\0220\n+HOLO_PO" +
-      "KEMON_FAMILY_ID_V0324_FAMILY_TORKOAL\020\304\002\022" +
-      "/\n*HOLO_POKEMON_FAMILY_ID_V0325_FAMILY_S" +
-      "POINK\020\305\002\022/\n*HOLO_POKEMON_FAMILY_ID_V0327" +
-      "_FAMILY_SPINDA\020\307\002\0221\n,HOLO_POKEMON_FAMILY" +
-      "_ID_V0328_FAMILY_TRAPINCH\020\310\002\022/\n*HOLO_POK" +
-      "EMON_FAMILY_ID_V0331_FAMILY_CACNEA\020\313\002\022/\n" +
-      "*HOLO_POKEMON_FAMILY_ID_V0333_FAMILY_SWA" +
-      "BLU\020\315\002\0221\n,HOLO_POKEMON_FAMILY_ID_V0335_F" +
-      "AMILY_ZANGOOSE\020\317\002\0220\n+HOLO_POKEMON_FAMILY" +
-      "_ID_V0336_FAMILY_SEVIPER\020\320\002\0221\n,HOLO_POKE" +
-      "MON_FAMILY_ID_V0337_FAMILY_LUNATONE\020\321\002\0220" +
-      "\n+HOLO_POKEMON_FAMILY_ID_V0338_FAMILY_SO" +
-      "LROCK\020\322\002\0221\n,HOLO_POKEMON_FAMILY_ID_V0339",
-      "_FAMILY_BARBOACH\020\323\002\0221\n,HOLO_POKEMON_FAMI" +
-      "LY_ID_V0341_FAMILY_CORPHISH\020\325\002\022/\n*HOLO_P" +
-      "OKEMON_FAMILY_ID_V0343_FAMILY_BALTOY\020\327\002\022" +
-      "/\n*HOLO_POKEMON_FAMILY_ID_V0345_FAMILY_L" +
-      "ILEEP\020\331\002\0220\n+HOLO_POKEMON_FAMILY_ID_V0347" +
-      "_FAMILY_ANORITH\020\333\002\022/\n*HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0349_FAMILY_FEEBAS\020\335\002\0221\n,HOLO_POKE" +
-      "MON_FAMILY_ID_V0351_FAMILY_CASTFORM\020\337\002\0220" +
-      "\n+HOLO_POKEMON_FAMILY_ID_V0352_FAMILY_KE" +
-      "CLEON\020\340\002\0220\n+HOLO_POKEMON_FAMILY_ID_V0353" +
-      "_FAMILY_SHUPPET\020\341\002\0220\n+HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0355_FAMILY_DUSKULL\020\343\002\0220\n+HOLO_POK" +
-      "EMON_FAMILY_ID_V0357_FAMILY_TROPIUS\020\345\002\0221" +
-      "\n,HOLO_POKEMON_FAMILY_ID_V0358_FAMILY_CH" +
-      "IMECHO\020\346\002\022.\n)HOLO_POKEMON_FAMILY_ID_V035" +
-      "9_FAMILY_ABSOL\020\347\002\0220\n+HOLO_POKEMON_FAMILY" +
-      "_ID_V0361_FAMILY_SNORUNT\020\351\002\022/\n*HOLO_POKE" +
-      "MON_FAMILY_ID_V0363_FAMILY_SPHEAL\020\353\002\0221\n," +
-      "HOLO_POKEMON_FAMILY_ID_V0366_FAMILY_CLAM" +
-      "PERL\020\356\002\0222\n-HOLO_POKEMON_FAMILY_ID_V0369_" +
-      "FAMILY_RELICANTH\020\361\002\0220\n+HOLO_POKEMON_FAMI" +
-      "LY_ID_V0370_FAMILY_LUVDISC\020\362\002\022.\n)HOLO_PO" +
-      "KEMON_FAMILY_ID_V0371_FAMILY_BAGON\020\363\002\022/\n" +
-      "*HOLO_POKEMON_FAMILY_ID_V0374_FAMILY_BEL" +
-      "DUM\020\366\002\0221\n,HOLO_POKEMON_FAMILY_ID_V0377_F" +
-      "AMILY_REGIROCK\020\371\002\022/\n*HOLO_POKEMON_FAMILY" +
-      "_ID_V0378_FAMILY_REGICE\020\372\002\0222\n-HOLO_POKEM" +
-      "ON_FAMILY_ID_V0379_FAMILY_REGISTEEL\020\373\002\022/" +
-      "\n*HOLO_POKEMON_FAMILY_ID_V0380_FAMILY_LA" +
-      "TIAS\020\374\002\022/\n*HOLO_POKEMON_FAMILY_ID_V0381_" +
-      "FAMILY_LATIOS\020\375\002\022/\n*HOLO_POKEMON_FAMILY_" +
-      "ID_V0382_FAMILY_KYOGRE\020\376\002\0220\n+HOLO_POKEMO" +
-      "N_FAMILY_ID_V0383_FAMILY_GROUDON\020\377\002\0221\n,H" +
-      "OLO_POKEMON_FAMILY_ID_V0384_FAMILY_RAYQU" +
-      "AZA\020\200\003\0220\n+HOLO_POKEMON_FAMILY_ID_V0385_F" +
-      "AMILY_JIRACHI\020\201\003\022/\n*HOLO_POKEMON_FAMILY_" +
-      "ID_V0386_FAMILY_DEOXYS\020\202\003\0220\n+HOLO_POKEMO" +
-      "N_FAMILY_ID_V0387_FAMILY_TURTWIG\020\203\003\0221\n,H" +
-      "OLO_POKEMON_FAMILY_ID_V0390_FAMILY_CHIMC" +
-      "HAR\020\206\003\022/\n*HOLO_POKEMON_FAMILY_ID_V0393_F" +
-      "AMILY_PIPLUP\020\211\003\022/\n*HOLO_POKEMON_FAMILY_I" +
-      "D_V0396_FAMILY_STARLY\020\214\003\022/\n*HOLO_POKEMON" +
-      "_FAMILY_ID_V0399_FAMILY_BIDOOF\020\217\003\0222\n-HOL" +
-      "O_POKEMON_FAMILY_ID_V0401_FAMILY_KRICKET" +
-      "OT\020\221\003\022.\n)HOLO_POKEMON_FAMILY_ID_V0403_FA" +
-      "MILY_SHINX\020\223\003\0221\n,HOLO_POKEMON_FAMILY_ID_" +
-      "V0408_FAMILY_CRANIDOS\020\230\003\0221\n,HOLO_POKEMON" +
-      "_FAMILY_ID_V0410_FAMILY_SHIELDON\020\232\003\022.\n)H" +
-      "OLO_POKEMON_FAMILY_ID_V0412_FAMILY_BURMY" +
-      "\020\234\003\022/\n*HOLO_POKEMON_FAMILY_ID_V0415_FAMI" +
-      "LY_COMBEE\020\237\003\0222\n-HOLO_POKEMON_FAMILY_ID_V" +
-      "0417_FAMILY_PACHIRISU\020\241\003\022/\n*HOLO_POKEMON" +
-      "_FAMILY_ID_V0418_FAMILY_BUIZEL\020\242\003\0220\n+HOL" +
-      "O_POKEMON_FAMILY_ID_V0420_FAMILY_CHERUBI" +
-      "\020\244\003\0220\n+HOLO_POKEMON_FAMILY_ID_V0422_FAMI" +
-      "LY_SHELLOS\020\246\003\0221\n,HOLO_POKEMON_FAMILY_ID_" +
-      "V0425_FAMILY_DRIFLOON\020\251\003\0220\n+HOLO_POKEMON" +
-      "_FAMILY_ID_V0427_FAMILY_BUNEARY\020\253\003\0220\n+HO" +
-      "LO_POKEMON_FAMILY_ID_V0431_FAMILY_GLAMEO" +
-      "W\020\257\003\022/\n*HOLO_POKEMON_FAMILY_ID_V0434_FAM" +
-      "ILY_STUNKY\020\262\003\0220\n+HOLO_POKEMON_FAMILY_ID_" +
-      "V0436_FAMILY_BRONZOR\020\264\003\022/\n*HOLO_POKEMON_" +
-      "FAMILY_ID_V0441_FAMILY_CHATOT\020\271\003\0222\n-HOLO" +
-      "_POKEMON_FAMILY_ID_V0442_FAMILY_SPIRITOM" +
-      "B\020\272\003\022.\n)HOLO_POKEMON_FAMILY_ID_V0443_FAM" +
-      "ILY_GIBLE\020\273\003\0220\n+HOLO_POKEMON_FAMILY_ID_V" +
-      "0448_FAMILY_LUCARIO\020\300\003\0223\n.HOLO_POKEMON_F" +
-      "AMILY_ID_V0449_FAMILY_HIPPOPOTAS\020\301\003\0220\n+H" +
-      "OLO_POKEMON_FAMILY_ID_V0451_FAMILY_SKORU" +
-      "PI\020\303\003\0221\n,HOLO_POKEMON_FAMILY_ID_V0453_FA" +
-      "MILY_CROAGUNK\020\305\003\0222\n-HOLO_POKEMON_FAMILY_" +
-      "ID_V0455_FAMILY_CARNIVINE\020\307\003\0220\n+HOLO_POK" +
-      "EMON_FAMILY_ID_V0456_FAMILY_FINNEON\020\310\003\022/" +
-      "\n*HOLO_POKEMON_FAMILY_ID_V0459_FAMILY_SN" +
-      "OVER\020\313\003\022.\n)HOLO_POKEMON_FAMILY_ID_V0479_" +
-      "FAMILY_ROTOM\020\337\003\022-\n(HOLO_POKEMON_FAMILY_I" +
-      "D_V0480_FAMILY_UXIE\020\340\003\0220\n+HOLO_POKEMON_F" +
-      "AMILY_ID_V0481_FAMILY_MESPRIT\020\341\003\022.\n)HOLO" +
-      "_POKEMON_FAMILY_ID_V0482_FAMILY_AZELF\020\342\003" +
-      "\022/\n*HOLO_POKEMON_FAMILY_ID_V0483_FAMILY_" +
-      "DIALGA\020\343\003\022/\n*HOLO_POKEMON_FAMILY_ID_V048" +
-      "4_FAMILY_PALKIA\020\344\003\0220\n+HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0485_FAMILY_HEATRAN\020\345\003\0222\n-HOLO_POK" +
-      "EMON_FAMILY_ID_V0486_FAMILY_REGIGIGAS\020\346\003" +
-      "\0221\n,HOLO_POKEMON_FAMILY_ID_V0487_FAMILY_" +
-      "GIRATINA\020\347\003\0222\n-HOLO_POKEMON_FAMILY_ID_V0" +
-      "488_FAMILY_CRESSELIA\020\350\003\022/\n*HOLO_POKEMON_" +
-      "FAMILY_ID_V0489_FAMILY_PHIONE\020\351\003\0220\n+HOLO" +
-      "_POKEMON_FAMILY_ID_V0490_FAMILY_MANAPHY\020" +
-      "\352\003\0220\n+HOLO_POKEMON_FAMILY_ID_V0491_FAMIL" +
-      "Y_DARKRAI\020\353\003\0220\n+HOLO_POKEMON_FAMILY_ID_V" +
-      "0492_FAMILY_SHAYMIN\020\354\003\022/\n*HOLO_POKEMON_F" +
-      "AMILY_ID_V0493_FAMILY_ARCEUS\020\355\003\0220\n+HOLO_" +
-      "POKEMON_FAMILY_ID_V0494_FAMILY_VICTINI\020\356" +
-      "\003\022.\n)HOLO_POKEMON_FAMILY_ID_V0495_FAMILY" +
-      "_SNIVY\020\357\003\022.\n)HOLO_POKEMON_FAMILY_ID_V049" +
-      "8_FAMILY_TEPIG\020\362\003\0221\n,HOLO_POKEMON_FAMILY" +
-      "_ID_V0501_FAMILY_OSHAWOTT\020\365\003\022/\n*HOLO_POK" +
-      "EMON_FAMILY_ID_V0504_FAMILY_PATRAT\020\370\003\0221\n" +
-      ",HOLO_POKEMON_FAMILY_ID_V0506_FAMILY_LIL" +
-      "LIPUP\020\372\003\0221\n,HOLO_POKEMON_FAMILY_ID_V0509" +
-      "_FAMILY_PURRLOIN\020\375\003\0220\n+HOLO_POKEMON_FAMI" +
-      "LY_ID_V0511_FAMILY_PANSAGE\020\377\003\0220\n+HOLO_PO" +
-      "KEMON_FAMILY_ID_V0513_FAMILY_PANSEAR\020\201\004\022" +
-      "0\n+HOLO_POKEMON_FAMILY_ID_V0515_FAMILY_P" +
-      "ANPOUR\020\203\004\022.\n)HOLO_POKEMON_FAMILY_ID_V051" +
-      "7_FAMILY_MUNNA\020\205\004\022/\n*HOLO_POKEMON_FAMILY" +
-      "_ID_V0519_FAMILY_PIDOVE\020\207\004\0220\n+HOLO_POKEM" +
-      "ON_FAMILY_ID_V0522_FAMILY_BLITZLE\020\212\004\0223\n." +
-      "HOLO_POKEMON_FAMILY_ID_V0524_FAMILY_ROGG" +
-      "ENROLA\020\214\004\022/\n*HOLO_POKEMON_FAMILY_ID_V052" +
-      "7_FAMILY_WOOBAT\020\217\004\0220\n+HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0529_FAMILY_DRILBUR\020\221\004\022/\n*HOLO_POK" +
-      "EMON_FAMILY_ID_V0531_FAMILY_AUDINO\020\223\004\0220\n" +
-      "+HOLO_POKEMON_FAMILY_ID_V0532_FAMILY_TIM" +
-      "BURR\020\224\004\0220\n+HOLO_POKEMON_FAMILY_ID_V0535_" +
-      "FAMILY_TYMPOLE\020\227\004\022.\n)HOLO_POKEMON_FAMILY" +
-      "_ID_V0538_FAMILY_THROH\020\232\004\022-\n(HOLO_POKEMO" +
-      "N_FAMILY_ID_V0539_FAMILY_SAWK\020\233\004\0221\n,HOLO" +
-      "_POKEMON_FAMILY_ID_V0540_FAMILY_SEWADDLE" +
-      "\020\234\004\0221\n,HOLO_POKEMON_FAMILY_ID_V0543_FAMI" +
-      "LY_VENIPEDE\020\237\004\0221\n,HOLO_POKEMON_FAMILY_ID" +
-      "_V0546_FAMILY_COTTONEE\020\242\004\0220\n+HOLO_POKEMO" +
-      "N_FAMILY_ID_V0548_FAMILY_PETILIL\020\244\004\0221\n,H" +
-      "OLO_POKEMON_FAMILY_ID_V0550_FAMILY_BASCU" +
-      "LIN\020\246\004\0220\n+HOLO_POKEMON_FAMILY_ID_V0551_F" +
-      "AMILY_SANDILE\020\247\004\0221\n,HOLO_POKEMON_FAMILY_" +
-      "ID_V0554_FAMILY_DARUMAKA\020\252\004\0221\n,HOLO_POKE" +
-      "MON_FAMILY_ID_V0556_FAMILY_MARACTUS\020\254\004\0220" +
-      "\n+HOLO_POKEMON_FAMILY_ID_V0557_FAMILY_DW" +
-      "EBBLE\020\255\004\0220\n+HOLO_POKEMON_FAMILY_ID_V0559" +
-      "_FAMILY_SCRAGGY\020\257\004\0221\n,HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0561_FAMILY_SIGILYPH\020\261\004\022/\n*HOLO_PO" +
-      "KEMON_FAMILY_ID_V0562_FAMILY_YAMASK\020\262\004\0221" +
-      "\n,HOLO_POKEMON_FAMILY_ID_V0564_FAMILY_TI" +
-      "RTOUGA\020\264\004\022/\n*HOLO_POKEMON_FAMILY_ID_V056" +
-      "6_FAMILY_ARCHEN\020\266\004\0221\n,HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0568_FAMILY_TRUBBISH\020\270\004\022.\n)HOLO_PO" +
-      "KEMON_FAMILY_ID_V0570_FAMILY_ZORUA\020\272\004\0221\n" +
-      ",HOLO_POKEMON_FAMILY_ID_V0572_FAMILY_MIN" +
-      "CCINO\020\274\004\0220\n+HOLO_POKEMON_FAMILY_ID_V0574" +
-      "_FAMILY_GOTHITA\020\276\004\0220\n+HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0577_FAMILY_SOLOSIS\020\301\004\0221\n,HOLO_POK" +
-      "EMON_FAMILY_ID_V0580_FAMILY_DUCKLETT\020\304\004\022" +
-      "2\n-HOLO_POKEMON_FAMILY_ID_V0582_FAMILY_V" +
-      "ANILLITE\020\306\004\0221\n,HOLO_POKEMON_FAMILY_ID_V0" +
-      "585_FAMILY_DEERLING\020\311\004\022/\n*HOLO_POKEMON_F" +
-      "AMILY_ID_V0587_FAMILY_EMOLGA\020\313\004\0223\n.HOLO_" +
-      "POKEMON_FAMILY_ID_V0588_FAMILY_KARRABLAS" +
-      "T\020\314\004\0220\n+HOLO_POKEMON_FAMILY_ID_V0590_FAM" +
-      "ILY_FOONGUS\020\316\004\0221\n,HOLO_POKEMON_FAMILY_ID" +
-      "_V0592_FAMILY_FRILLISH\020\320\004\0222\n-HOLO_POKEMO" +
-      "N_FAMILY_ID_V0594_FAMILY_ALOMOMOLA\020\322\004\022/\n" +
-      "*HOLO_POKEMON_FAMILY_ID_V0595_FAMILY_JOL" +
-      "TIK\020\323\004\0222\n-HOLO_POKEMON_FAMILY_ID_V0597_F" +
-      "AMILY_FERROSEED\020\325\004\022.\n)HOLO_POKEMON_FAMIL" +
-      "Y_ID_V0599_FAMILY_KLINK\020\327\004\022/\n*HOLO_POKEM" +
-      "ON_FAMILY_ID_V0602_FAMILY_TYNAMO\020\332\004\022/\n*H" +
-      "OLO_POKEMON_FAMILY_ID_V0605_FAMILY_ELGYE" +
-      "M\020\335\004\0220\n+HOLO_POKEMON_FAMILY_ID_V0607_FAM" +
-      "ILY_LITWICK\020\337\004\022-\n(HOLO_POKEMON_FAMILY_ID" +
-      "_V0610_FAMILY_AXEW\020\342\004\0220\n+HOLO_POKEMON_FA" +
-      "MILY_ID_V0613_FAMILY_CUBCHOO\020\345\004\0222\n-HOLO_" +
-      "POKEMON_FAMILY_ID_V0615_FAMILY_CRYOGONAL" +
-      "\020\347\004\0220\n+HOLO_POKEMON_FAMILY_ID_V0616_FAMI" +
-      "LY_SHELMET\020\350\004\0221\n,HOLO_POKEMON_FAMILY_ID_" +
-      "V0618_FAMILY_STUNFISK\020\352\004\0220\n+HOLO_POKEMON" +
-      "_FAMILY_ID_V0619_FAMILY_MIENFOO\020\353\004\0222\n-HO" +
-      "LO_POKEMON_FAMILY_ID_V0621_FAMILY_DRUDDI" +
-      "GON\020\355\004\022/\n*HOLO_POKEMON_FAMILY_ID_V0622_F" +
-      "AMILY_GOLETT\020\356\004\0221\n,HOLO_POKEMON_FAMILY_I" +
-      "D_V0624_FAMILY_PAWNIARD\020\360\004\0223\n.HOLO_POKEM" +
-      "ON_FAMILY_ID_V0626_FAMILY_BOUFFALANT\020\362\004\022" +
-      "0\n+HOLO_POKEMON_FAMILY_ID_V0627_FAMILY_R" +
-      "UFFLET\020\363\004\0220\n+HOLO_POKEMON_FAMILY_ID_V062" +
-      "9_FAMILY_VULLABY\020\365\004\0220\n+HOLO_POKEMON_FAMI" +
-      "LY_ID_V0631_FAMILY_HEATMOR\020\367\004\022/\n*HOLO_PO" +
-      "KEMON_FAMILY_ID_V0632_FAMILY_DURANT\020\370\004\022." +
-      "\n)HOLO_POKEMON_FAMILY_ID_V0633_FAMILY_DE" +
-      "INO\020\371\004\0221\n,HOLO_POKEMON_FAMILY_ID_V0636_F" +
-      "AMILY_LARVESTA\020\374\004\0221\n,HOLO_POKEMON_FAMILY" +
-      "_ID_V0638_FAMILY_COBALION\020\376\004\0222\n-HOLO_POK" +
-      "EMON_FAMILY_ID_V0639_FAMILY_TERRAKION\020\377\004" +
-      "\0221\n,HOLO_POKEMON_FAMILY_ID_V0640_FAMILY_" +
-      "VIRIZION\020\200\005\0221\n,HOLO_POKEMON_FAMILY_ID_V0" +
-      "641_FAMILY_TORNADUS\020\201\005\0222\n-HOLO_POKEMON_F" +
-      "AMILY_ID_V0642_FAMILY_THUNDURUS\020\202\005\0221\n,HO" +
-      "LO_POKEMON_FAMILY_ID_V0643_FAMILY_RESHIR" +
-      "AM\020\203\005\022/\n*HOLO_POKEMON_FAMILY_ID_V0644_FA" +
-      "MILY_ZEKROM\020\204\005\0221\n,HOLO_POKEMON_FAMILY_ID" +
-      "_V0645_FAMILY_LANDORUS\020\205\005\022/\n*HOLO_POKEMO" +
-      "N_FAMILY_ID_V0646_FAMILY_KYUREM\020\206\005\022/\n*HO" +
-      "LO_POKEMON_FAMILY_ID_V0647_FAMILY_KELDEO" +
-      "\020\207\005\0221\n,HOLO_POKEMON_FAMILY_ID_V0648_FAMI" +
-      "LY_MELOETTA\020\210\005\0221\n,HOLO_POKEMON_FAMILY_ID" +
-      "_V0649_FAMILY_GENESECT\020\211\005\022/\n*HOLO_POKEMO" +
-      "N_FAMILY_ID_V0808_FAMILY_MELTAN\020\250\006*\346k\n\rH" +
-      "oloBadgeType\022\037\n\033HOLO_BADGE_TYPE_BADGE_UN" +
-      "SET\020\000\022#\n\037HOLO_BADGE_TYPE_BADGE_TRAVEL_KM" +
-      "\020\001\022)\n%HOLO_BADGE_TYPE_BADGE_POKEDEX_ENTR" +
-      "IES\020\002\022\'\n#HOLO_BADGE_TYPE_BADGE_CAPTURE_T" +
-      "OTAL\020\003\022\'\n#HOLO_BADGE_TYPE_BADGE_DEFEATED" +
-      "_FORT\020\004\022\'\n#HOLO_BADGE_TYPE_BADGE_EVOLVED" +
-      "_TOTAL\020\005\022\'\n#HOLO_BADGE_TYPE_BADGE_HATCHE" +
-      "D_TOTAL\020\006\022+\n\'HOLO_BADGE_TYPE_BADGE_ENCOU" +
-      "NTERED_TOTAL\020\007\022+\n\'HOLO_BADGE_TYPE_BADGE_" +
-      "POKESTOPS_VISITED\020\010\022*\n&HOLO_BADGE_TYPE_B" +
-      "ADGE_UNIQUE_POKESTOPS\020\t\022)\n%HOLO_BADGE_TY" +
-      "PE_BADGE_POKEBALL_THROWN\020\n\022&\n\"HOLO_BADGE" +
-      "_TYPE_BADGE_BIG_MAGIKARP\020\013\022(\n$HOLO_BADGE" +
-      "_TYPE_BADGE_DEPLOYED_TOTAL\020\014\022+\n\'HOLO_BAD" +
-      "GE_TYPE_BADGE_BATTLE_ATTACK_WON\020\r\022-\n)HOL" +
-      "O_BADGE_TYPE_BADGE_BATTLE_TRAINING_WON\020\016" +
-      "\022+\n\'HOLO_BADGE_TYPE_BADGE_BATTLE_DEFEND_" +
-      "WON\020\017\022)\n%HOLO_BADGE_TYPE_BADGE_PRESTIGE_" +
-      "RAISED\020\020\022*\n&HOLO_BADGE_TYPE_BADGE_PRESTI" +
-      "GE_DROPPED\020\021\022%\n!HOLO_BADGE_TYPE_BADGE_TY" +
-      "PE_NORMAL\020\022\022\'\n#HOLO_BADGE_TYPE_BADGE_TYP" +
-      "E_FIGHTING\020\023\022%\n!HOLO_BADGE_TYPE_BADGE_TY" +
-      "PE_FLYING\020\024\022%\n!HOLO_BADGE_TYPE_BADGE_TYP" +
-      "E_POISON\020\025\022%\n!HOLO_BADGE_TYPE_BADGE_TYPE" +
-      "_GROUND\020\026\022#\n\037HOLO_BADGE_TYPE_BADGE_TYPE_" +
-      "ROCK\020\027\022\"\n\036HOLO_BADGE_TYPE_BADGE_TYPE_BUG" +
-      "\020\030\022$\n HOLO_BADGE_TYPE_BADGE_TYPE_GHOST\020\031" +
-      "\022$\n HOLO_BADGE_TYPE_BADGE_TYPE_STEEL\020\032\022#" +
-      "\n\037HOLO_BADGE_TYPE_BADGE_TYPE_FIRE\020\033\022$\n H" +
-      "OLO_BADGE_TYPE_BADGE_TYPE_WATER\020\034\022$\n HOL" +
-      "O_BADGE_TYPE_BADGE_TYPE_GRASS\020\035\022\'\n#HOLO_" +
-      "BADGE_TYPE_BADGE_TYPE_ELECTRIC\020\036\022&\n\"HOLO" +
-      "_BADGE_TYPE_BADGE_TYPE_PSYCHIC\020\037\022\"\n\036HOLO" +
-      "_BADGE_TYPE_BADGE_TYPE_ICE\020 \022%\n!HOLO_BAD" +
-      "GE_TYPE_BADGE_TYPE_DRAGON\020!\022#\n\037HOLO_BADG" +
-      "E_TYPE_BADGE_TYPE_DARK\020\"\022$\n HOLO_BADGE_T" +
-      "YPE_BADGE_TYPE_FAIRY\020#\022\'\n#HOLO_BADGE_TYP" +
-      "E_BADGE_SMALL_RATTATA\020$\022!\n\035HOLO_BADGE_TY" +
-      "PE_BADGE_PIKACHU\020%\022\037\n\033HOLO_BADGE_TYPE_BA" +
-      "DGE_UNOWN\020&\022.\n*HOLO_BADGE_TYPE_BADGE_POK" +
-      "EDEX_ENTRIES_GEN2\020\'\022)\n%HOLO_BADGE_TYPE_B" +
-      "ADGE_RAID_BATTLE_WON\020(\022.\n*HOLO_BADGE_TYP" +
-      "E_BADGE_LEGENDARY_BATTLE_WON\020)\022%\n!HOLO_B" +
-      "ADGE_TYPE_BADGE_BERRIES_FED\020*\022(\n$HOLO_BA" +
-      "DGE_TYPE_BADGE_HOURS_DEFENDED\020+\022&\n\"HOLO_" +
-      "BADGE_TYPE_BADGE_PLACE_HOLDER\020,\022.\n*HOLO_" +
-      "BADGE_TYPE_BADGE_POKEDEX_ENTRIES_GEN3\020-\022" +
-      "*\n&HOLO_BADGE_TYPE_BADGE_CHALLENGE_QUEST" +
-      "S\020.\022\'\n#HOLO_BADGE_TYPE_BADGE_MEW_ENCOUNT" +
-      "ER\020/\022+\n\'HOLO_BADGE_TYPE_BADGE_MAX_LEVEL_" +
-      "FRIENDS\0200\022!\n\035HOLO_BADGE_TYPE_BADGE_TRADI" +
-      "NG\0201\022*\n&HOLO_BADGE_TYPE_BADGE_TRADING_DI" +
-      "STANCE\0202\022.\n*HOLO_BADGE_TYPE_BADGE_POKEDE" +
-      "X_ENTRIES_GEN4\0203\022&\n\"HOLO_BADGE_TYPE_BADG" +
-      "E_GREAT_LEAGUE\0204\022&\n\"HOLO_BADGE_TYPE_BADG" +
-      "E_ULTRA_LEAGUE\0205\022\'\n#HOLO_BADGE_TYPE_BADG" +
-      "E_MASTER_LEAGUE\0206\022#\n\037HOLO_BADGE_TYPE_BAD" +
-      "GE_PHOTOBOMB\0207\022.\n*HOLO_BADGE_TYPE_BADGE_" +
-      "POKEDEX_ENTRIES_GEN5\0208\022*\n&HOLO_BADGE_TYP" +
-      "E_BADGE_POKEMON_PURIFIED\0209\0220\n,HOLO_BADGE" +
-      "_TYPE_BADGE_ROCKET_GRUNTS_DEFEATED\020:\0222\n." +
-      "HOLO_BADGE_TYPE_BADGE_ROCKET_GIOVANNI_DE" +
-      "FEATED\020;\022$\n HOLO_BADGE_TYPE_BADGE_BUDDY_" +
-      "BEST\020<\022.\n*HOLO_BADGE_TYPE_BADGE_POKEDEX_" +
-      "ENTRIES_GEN6\020=\022.\n*HOLO_BADGE_TYPE_BADGE_" +
-      "POKEDEX_ENTRIES_GEN7\020>\022.\n*HOLO_BADGE_TYP" +
-      "E_BADGE_POKEDEX_ENTRIES_GEN8\020?\022\"\n\036HOLO_B" +
-      "ADGE_TYPE_BADGE_WAYFARER\020D\022)\n%HOLO_BADGE" +
-      "_TYPE_BADGE_TOTAL_MEGA_EVOS\020E\022*\n&HOLO_BA" +
-      "DGE_TYPE_BADGE_UNIQUE_MEGA_EVOS\020F\022$\n\037HOL" +
-      "O_BADGE_TYPE_BADGE_EVENT_MIN\020\320\017\0221\n,HOLO_" +
-      "BADGE_TYPE_BADGE_CHICAGO_FEST_JULY_2017\020" +
-      "\321\017\0229\n4HOLO_BADGE_TYPE_BADGE_PIKACHU_OUTB" +
-      "REAK_YOKOHAMA_2017\020\322\017\0222\n-HOLO_BADGE_TYPE" +
-      "_BADGE_SAFARI_ZONE_EUROPE_2017\020\323\017\0228\n3HOL" +
-      "O_BADGE_TYPE_BADGE_SAFARI_ZONE_EUROPE_20" +
-      "17_10_07\020\324\017\0228\n3HOLO_BADGE_TYPE_BADGE_SAF" +
-      "ARI_ZONE_EUROPE_2017_10_14\020\325\017\022;\n6HOLO_BA" +
-      "DGE_TYPE_BADGE_CHICAGO_FEST_JULY_2018_SA" +
-      "T_NORTH\020\326\017\022;\n6HOLO_BADGE_TYPE_BADGE_CHIC" +
-      "AGO_FEST_JULY_2018_SAT_SOUTH\020\327\017\022;\n6HOLO_" +
-      "BADGE_TYPE_BADGE_CHICAGO_FEST_JULY_2018_" +
-      "SUN_NORTH\020\330\017\022;\n6HOLO_BADGE_TYPE_BADGE_CH" +
-      "ICAGO_FEST_JULY_2018_SUN_SOUTH\020\331\017\0223\n.HOL" +
-      "O_BADGE_TYPE_BADGE_APAC_PARTNER_JULY_201" +
-      "8_0\020\332\017\0223\n.HOLO_BADGE_TYPE_BADGE_APAC_PAR" +
-      "TNER_JULY_2018_1\020\333\017\0223\n.HOLO_BADGE_TYPE_B" +
-      "ADGE_APAC_PARTNER_JULY_2018_2\020\334\017\0223\n.HOLO" +
-      "_BADGE_TYPE_BADGE_APAC_PARTNER_JULY_2018" +
-      "_3\020\335\017\0223\n.HOLO_BADGE_TYPE_BADGE_APAC_PART" +
-      "NER_JULY_2018_4\020\336\017\0223\n.HOLO_BADGE_TYPE_BA" +
-      "DGE_APAC_PARTNER_JULY_2018_5\020\337\017\0223\n.HOLO_" +
-      "BADGE_TYPE_BADGE_APAC_PARTNER_JULY_2018_" +
-      "6\020\340\017\0223\n.HOLO_BADGE_TYPE_BADGE_APAC_PARTN" +
-      "ER_JULY_2018_7\020\341\017\0223\n.HOLO_BADGE_TYPE_BAD" +
-      "GE_APAC_PARTNER_JULY_2018_8\020\342\017\0223\n.HOLO_B" +
-      "ADGE_TYPE_BADGE_APAC_PARTNER_JULY_2018_9" +
-      "\020\343\017\0226\n1HOLO_BADGE_TYPE_BADGE_YOKOSUKA_29" +
-      "_AUG_2018_MIKASA\020\344\017\0225\n0HOLO_BADGE_TYPE_B" +
-      "ADGE_YOKOSUKA_29_AUG_2018_VERNY\020\345\017\0228\n3HO" +
-      "LO_BADGE_TYPE_BADGE_YOKOSUKA_29_AUG_2018" +
-      "_KURIHAMA\020\346\017\0226\n1HOLO_BADGE_TYPE_BADGE_YO" +
-      "KOSUKA_30_AUG_2018_MIKASA\020\347\017\0225\n0HOLO_BAD" +
-      "GE_TYPE_BADGE_YOKOSUKA_30_AUG_2018_VERNY" +
-      "\020\350\017\0228\n3HOLO_BADGE_TYPE_BADGE_YOKOSUKA_30" +
-      "_AUG_2018_KURIHAMA\020\351\017\0226\n1HOLO_BADGE_TYPE" +
-      "_BADGE_YOKOSUKA_31_AUG_2018_MIKASA\020\352\017\0225\n" +
-      "0HOLO_BADGE_TYPE_BADGE_YOKOSUKA_31_AUG_2" +
-      "018_VERNY\020\353\017\0228\n3HOLO_BADGE_TYPE_BADGE_YO" +
-      "KOSUKA_31_AUG_2018_KURIHAMA\020\354\017\0225\n0HOLO_B" +
-      "ADGE_TYPE_BADGE_YOKOSUKA_1_SEP_2018_MIKA" +
-      "SA\020\355\017\0224\n/HOLO_BADGE_TYPE_BADGE_YOKOSUKA_" +
-      "1_SEP_2018_VERNY\020\356\017\0227\n2HOLO_BADGE_TYPE_B" +
-      "ADGE_YOKOSUKA_1_SEP_2018_KURIHAMA\020\357\017\0225\n0" +
+      "AP_1\020\004\0221\n-INCIDENT_LEADER_STRING_TYPES_O" +
+      "NBOARDING_MAP_2\020\005\022(\n$INCIDENT_LEADER_STR" +
+      "ING_TYPES_INSPIRE\020\006\0221\n-INCIDENT_LEADER_S" +
+      "TRING_TYPES_MAP_TIME_WARNING\020\007\0222\n.INCIDE" +
+      "NT_LEADER_STRING_TYPES_MAP_EMPTY_WARNING" +
+      "\020\010*\266\003\n\021HoloPokemonNature\022&\n\"HOLO_POKEMON" +
+      "_NATURE_NATURE_UNKNOWN\020\000\0222\n.HOLO_POKEMON" +
+      "_NATURE_V0001_POKEMON_NATURE_STOIC\020\001\0225\n1" +
+      "HOLO_POKEMON_NATURE_V0002_POKEMON_NATURE" +
+      "_ASSASSIN\020\002\0225\n1HOLO_POKEMON_NATURE_V0003" +
+      "_POKEMON_NATURE_GUARDIAN\020\003\0223\n/HOLO_POKEM" +
+      "ON_NATURE_V0004_POKEMON_NATURE_RAIDER\020\004\022" +
+      "6\n2HOLO_POKEMON_NATURE_V0005_POKEMON_NAT" +
+      "URE_PROTECTOR\020\005\0223\n/HOLO_POKEMON_NATURE_V" +
+      "0006_POKEMON_NATURE_SENTRY\020\006\0225\n1HOLO_POK" +
+      "EMON_NATURE_V0007_POKEMON_NATURE_CHAMPIO" +
+      "N\020\007*\267\002\n\026RemoteRaidTelemetryIds\0229\n5REMOTE" +
+      "_RAID_TELEMETRY_IDS_UNDEFINED_REMOTE_RAI" +
+      "D_EVENT\020\000\0225\n1REMOTE_RAID_TELEMETRY_IDS_R" +
+      "EMOTE_RAID_LOBBY_ENTER\020\001\0225\n1REMOTE_RAID_" +
+      "TELEMETRY_IDS_REMOTE_RAID_INVITE_SENT\020\002\022" +
+      "9\n5REMOTE_RAID_TELEMETRY_IDS_REMOTE_RAID" +
+      "_INVITE_ACCEPTED\020\003\0229\n5REMOTE_RAID_TELEME" +
+      "TRY_IDS_REMOTE_RAID_INVITE_REJECTED\020\004*\232\001" +
+      "\n\022OnboardingArStatus\022\036\n\032ONBOARDING_AR_ST" +
+      "ATUS_UNSET\020\000\022\034\n\030ONBOARDING_AR_STATUS_OFF" +
+      "\020\001\022$\n ONBOARDING_AR_STATUS_AR_STANDARD\020\002" +
+      "\022 \n\034ONBOARDING_AR_STATUS_AR_PLUS\020\003*\217\017\n\014V" +
+      "ariableName\022\027\n\023VARIABLE_NAME_UNSET\020\000\022\033\n\027" +
+      "VARIABLE_NAME_CODE_NAME\020\001\022\026\n\022VARIABLE_NA" +
+      "ME_TEAM\020\002\022\027\n\023VARIABLE_NAME_LEVEL\020\003\022\034\n\030VA" +
+      "RIABLE_NAME_EXPERIENCE\020\004\022\"\n\036VARIABLE_NAM" +
+      "E_POKECOIN_BALANCE\020\005\022\"\n\036VARIABLE_NAME_ST" +
+      "ARDUST_BALANCE\020\006\022\027\n\023VARIABLE_NAME_EMAIL\020" +
+      "\007\022\036\n\032VARIABLE_NAME_LOGIN_METHOD\020\010\022\031\n\024VAR" +
+      "IABLE_NAME_GYM_ID\020\350\007\022\033\n\026VARIABLE_NAME_GY" +
+      "M_NAME\020\351\007\022\"\n\035VARIABLE_NAME_POKEMON_DISPL" +
+      "AY\020\352\007\022\'\n\"VARIABLE_NAME_POKEDEX_ENTRY_NUM" +
+      "BER\020\353\007\022\035\n\030VARIABLE_NAME_POKEMON_ID\020\354\007\022#\n" +
+      "\036VARIABLE_NAME_POKEMON_NICKNAME\020\355\007\022*\n%VA" +
+      "RIABLE_NAME_GYM_BADGE_EARNED_POINTS\020\356\007\022%" +
+      "\n VARIABLE_NAME_GYM_BADGE_PROGRESS\020\357\007\022!\n" +
+      "\034VARIABLE_NAME_GYM_BADGE_RANK\020\360\007\022&\n!VARI" +
+      "ABLE_NAME_GYM_BADGE_IMAGE_URL\020\361\007\022%\n VARI" +
+      "ABLE_NAME_GYM_BADGE_LEVEL_UP\020\362\007\022#\n\036VARIA" +
+      "BLE_NAME_POKECOIN_AWARDED\020\363\007\022)\n$VARIABLE" +
+      "_NAME_POKECOIN_AWARDED_TODAY\020\364\007\022%\n VARIA" +
+      "BLE_NAME_MAX_DAILY_POKECOIN\020\365\007\022\036\n\031VARIAB" +
+      "LE_NAME_BATTLES_WON\020\366\007\022\037\n\032VARIABLE_NAME_" +
+      "BATTLES_LOST\020\367\007\022\"\n\035VARIABLE_NAME_DEPLOYE" +
+      "D_MILLIS\020\370\007\022\034\n\027VARIABLE_NAME_RAID_SEED\020\371" +
+      "\007\0223\n.VARIABLE_NAME_EXCLUSIVE_RAID_CANCEL" +
+      "LATION_INFO\020\372\007\022\"\n\035VARIABLE_NAME_GIFTBOX_" +
+      "DETAILS\020\373\007\022 \n\033VARIABLE_NAME_FRIEND_AVATA" +
+      "R\020\374\007\022\036\n\031VARIABLE_NAME_FRIEND_TEAM\020\375\007\022\"\n\035" +
+      "VARIABLE_NAME_FRIEND_CODENAME\020\376\007\022\"\n\035VARI" +
+      "ABLE_NAME_GIFT_LOOT_ITEMS\020\377\007\022\033\n\026VARIABLE" +
+      "_NAME_GIFT_EGG\020\200\010\0226\n1VARIABLE_NAME_FRIEN" +
+      "DSHIP_MILESTONE_REWARD_DETAILS\020\201\010\022+\n&VAR" +
+      "IABLE_NAME_FRIENDSHIP_LEVEL_DISPLAY\020\202\010\0220" +
+      "\n+VARIABLE_NAME_BGMODE_BUDDY_POKEMON_NIC" +
+      "KNAME\020\203\010\022#\n\036VARIABLE_NAME_COMBAT_CHALLEN" +
+      "GE\020\204\010\022-\n(VARIABLE_NAME_COMBAT_CHALLENGER" +
+      "_CODENAME\020\205\010\0221\n,VARIABLE_NAME_BGMODE_OFF" +
+      "_SESSION_DISTANCE_KM\020\206\010\022\033\n\026VARIABLE_NAME" +
+      "_POI_NAME\020\207\010\022\034\n\027VARIABLE_NAME_FRIEND_ID\020" +
+      "\210\010\022)\n$VARIABLE_NAME_BUDDY_SHOWN_HEART_TY" +
+      "PE\020\211\010\022\031\n\024VARIABLE_NAME_POI_ID\020\212\010\022!\n\034VARI" +
+      "ABLE_NAME_POI_EXPIRATION\020\213\010\022\036\n\031VARIABLE_" +
+      "NAME_BUDDY_LEVEL\020\214\010\022(\n#VARIABLE_NAME_NUM" +
+      "_VS_SEEKER_CHARGES\020\215\010\022 \n\033VARIABLE_NAME_S" +
+      "EASON_NUMBER\020\216\010\0223\n.VARIABLE_NAME_POI_PAS" +
+      "SCODE_REDEMPTION_RESPONSE\020\217\010\022 \n\033VARIABLE" +
+      "_NAME_GIFTBOX_COUNT\020\220\010\022*\n%VARIABLE_NAME_" +
+      "RAID_INVITATION_DETAILS\020\221\010\022\035\n\030VARIABLE_N" +
+      "AME_LOOT_ITEMS\020\222\010\022!\n\034VARIABLE_NAME_EVENT" +
+      "_ICON_URL\020\223\010*\335\001\n\tRaidLevel\022\037\n\033RAID_LEVEL" +
+      "_RAID_LEVEL_UNSET\020\000\022\033\n\027RAID_LEVEL_RAID_L" +
+      "EVEL_1\020\001\022\033\n\027RAID_LEVEL_RAID_LEVEL_2\020\002\022\033\n" +
+      "\027RAID_LEVEL_RAID_LEVEL_3\020\003\022\033\n\027RAID_LEVEL" +
+      "_RAID_LEVEL_4\020\004\022\033\n\027RAID_LEVEL_RAID_LEVEL" +
+      "_5\020\005\022\036\n\032RAID_LEVEL_RAID_LEVEL_MEGA\020\006*\357\003\n" +
+      "\035PermissionContextTelemetryIds\022A\n=PERMIS" +
+      "SION_CONTEXT_TELEMETRY_IDS_UNDEFINED_PER" +
+      "MISSION_CONTEXT\020\000\022.\n*PERMISSION_CONTEXT_" +
+      "TELEMETRY_IDS_EGG_HATCH\020\001\0226\n2PERMISSION_" +
+      "CONTEXT_TELEMETRY_IDS_BUDDY_CANDY_FOUND\020" +
+      "\002\022;\n7PERMISSION_CONTEXT_TELEMETRY_IDS_PL" +
+      "AYER_PROFILE_CLICKED\020\003\022:\n6PERMISSION_CON" +
+      "TEXT_TELEMETRY_IDS_SMART_WATCH_INSTALLED" +
+      "\020\004\022:\n6PERMISSION_CONTEXT_TELEMETRY_IDS_S" +
+      "FIDA_SESSION_STARTED\020\005\0224\n0PERMISSION_CON" +
+      "TEXT_TELEMETRY_IDS_SETTINGS_TOGGLE\020\006\0228\n4" +
+      "PERMISSION_CONTEXT_TELEMETRY_IDS_NEARBY_" +
+      "PANEL_OPENED\020\007*\372\001\n\024NewsPageTelemetryIds\022" +
+      "0\n,NEWS_PAGE_TELEMETRY_IDS_UNDEFINED_NEW" +
+      "S_EVENT\020\000\022\'\n#NEWS_PAGE_TELEMETRY_IDS_NEW" +
+      "S_VIEWED\020\001\022*\n&NEWS_PAGE_TELEMETRY_IDS_NE" +
+      "WS_DISMISSED\020\002\022-\n)NEWS_PAGE_TELEMETRY_ID" +
+      "S_NEWS_LINK_CLICKED\020\003\022,\n(NEWS_PAGE_TELEM" +
+      "ETRY_IDS_NEWS_UPDATED_APP\020\004*\313\001\n\030POIDecor" +
+      "ationFollowFlags\0221\n-POI_DECORATION_FOLLO" +
+      "W_FLAGS_NONE_AUTO_INVALID\020\000\022(\n$POI_DECOR" +
+      "ATION_FOLLOW_FLAGS_FOLLOW_X\020\001\022(\n$POI_DEC" +
+      "ORATION_FOLLOW_FLAGS_FOLLOW_Y\020\002\022(\n$POI_D" +
+      "ECORATION_FOLLOW_FLAGS_FOLLOW_Z\020\004*\230\002\n\021As" +
+      "setTelemetryIds\022-\n)ASSET_TELEMETRY_IDS_U" +
+      "NDEFINED_ASSET_EVENT\020\000\022&\n\"ASSET_TELEMETR" +
+      "Y_IDS_DOWNLOAD_START\020\001\022)\n%ASSET_TELEMETR" +
+      "Y_IDS_DOWNLOAD_FINISHED\020\002\022\'\n#ASSET_TELEM" +
+      "ETRY_IDS_DOWNLOAD_FAILED\020\003\0222\n.ASSET_TELE" +
+      "METRY_IDS_ASSET_RETRIEVED_FROM_CACHE\020\004\022$" +
+      "\n ASSET_TELEMETRY_IDS_CACHE_THRASH\020\005*\221\003\n" +
+      "\rEncounterType\022\036\n\032ENCOUNTER_TYPE_SPAWN_P" +
+      "OINT\020\000\022\032\n\026ENCOUNTER_TYPE_INCENSE\020\001\022\027\n\023EN" +
+      "COUNTER_TYPE_DISK\020\002\022\034\n\030ENCOUNTER_TYPE_PO" +
+      "ST_RAID\020\003\022\036\n\032ENCOUNTER_TYPE_STORY_QUEST\020" +
+      "\004\022#\n\037ENCOUNTER_TYPE_QUEST_STAMP_CARD\020\005\022\"" +
+      "\n\036ENCOUNTER_TYPE_CHALLENGE_QUEST\020\006\022\034\n\030EN" +
+      "COUNTER_TYPE_PHOTOBOMB\020\007\022\033\n\027ENCOUNTER_TY" +
+      "PE_INVASION\020\010\022#\n\037ENCOUNTER_TYPE_VS_SEEKE" +
+      "R_REWARD\020\t\022$\n ENCOUNTER_TYPE_TIMED_STORY" +
+      "_QUEST\020\n\022\036\n\032ENCOUNTER_TYPE_DAILY_BONUS\020\013" +
+      "*\324\002\n\024AdFeedbackLikeReason\022;\n7AD_FEEDBACK",
+      "_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_INV" +
+      "ALID\020\000\022<\n8AD_FEEDBACK_LIKE_REASON_AD_FEE" +
+      "DBACK_LIKE_REASON_CATEGORY\020\001\022<\n8AD_FEEDB" +
+      "ACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_" +
+      "SEE_MORE\020\002\022H\nDAD_FEEDBACK_LIKE_REASON_AD" +
+      "_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIF" +
+      "TS\020\003\0229\n5AD_FEEDBACK_LIKE_REASON_AD_FEEDB" +
+      "ACK_LIKE_REASON_OTHER\020\004*\355\007\n\014HoloItemType" +
+      "\022!\n\035HOLO_ITEM_TYPE_ITEM_TYPE_NONE\020\000\022%\n!H" +
+      "OLO_ITEM_TYPE_ITEM_TYPE_POKEBALL\020\001\022#\n\037HO" +
+      "LO_ITEM_TYPE_ITEM_TYPE_POTION\020\002\022#\n\037HOLO_" +
+      "ITEM_TYPE_ITEM_TYPE_REVIVE\020\003\022 \n\034HOLO_ITE" +
+      "M_TYPE_ITEM_TYPE_MAP\020\004\022#\n\037HOLO_ITEM_TYPE" +
+      "_ITEM_TYPE_BATTLE\020\005\022!\n\035HOLO_ITEM_TYPE_IT" +
+      "EM_TYPE_FOOD\020\006\022#\n\037HOLO_ITEM_TYPE_ITEM_TY" +
+      "PE_CAMERA\020\007\022!\n\035HOLO_ITEM_TYPE_ITEM_TYPE_" +
+      "DISK\020\010\022&\n\"HOLO_ITEM_TYPE_ITEM_TYPE_INCUB" +
+      "ATOR\020\t\022$\n HOLO_ITEM_TYPE_ITEM_TYPE_INCEN" +
+      "SE\020\n\022%\n!HOLO_ITEM_TYPE_ITEM_TYPE_XP_BOOS" +
+      "T\020\013\022.\n*HOLO_ITEM_TYPE_ITEM_TYPE_INVENTOR" +
+      "Y_UPGRADE\020\014\0222\n.HOLO_ITEM_TYPE_ITEM_TYPE_" +
+      "EVOLUTION_REQUIREMENT\020\r\022(\n$HOLO_ITEM_TYP" +
+      "E_ITEM_TYPE_MOVE_REROLL\020\016\022\"\n\036HOLO_ITEM_T" +
+      "YPE_ITEM_TYPE_CANDY\020\017\022(\n$HOLO_ITEM_TYPE_" +
+      "ITEM_TYPE_RAID_TICKET\020\020\022+\n\'HOLO_ITEM_TYP" +
+      "E_ITEM_TYPE_STARDUST_BOOST\020\021\022,\n(HOLO_ITE" +
+      "M_TYPE_ITEM_TYPE_FRIEND_GIFT_BOX\020\022\022(\n$HO" +
+      "LO_ITEM_TYPE_ITEM_TYPE_TEAM_CHANGE\020\023\0221\n-" +
+      "HOLO_ITEM_TYPE_ITEM_TYPE_VS_SEEKER_BATTL" +
+      "E_NOW\020\025\022,\n(HOLO_ITEM_TYPE_ITEM_TYPE_INCI" +
+      "DENT_TICKET\020\026\0220\n,HOLO_ITEM_TYPE_ITEM_TYP" +
+      "E_GLOBAL_EVENT_TICKET\020\027\022.\n*HOLO_ITEM_TYP" +
+      "E_ITEM_TYPE_STICKER_INVENTORY\020\030*i\n\022HoloP" +
+      "okemonEggType\022(\n$HOLO_POKEMON_EGG_TYPE_E" +
+      "GG_TYPE_UNSET\020\000\022)\n%HOLO_POKEMON_EGG_TYPE" +
+      "_EGG_TYPE_SHADOW\020\001*\305\002\n\013PokemonAnim\022\025\n\021PO" +
+      "KEMON_ANIM_NONE\020\000\022\030\n\024POKEMON_ANIM_IDLE_0" +
+      "1\020\001\022\030\n\024POKEMON_ANIM_IDLE_02\020\002\022\025\n\021POKEMON" +
+      "_ANIM_LAND\020\003\022\032\n\026POKEMON_ANIM_ATTACK_01\020\004" +
+      "\022\032\n\026POKEMON_ANIM_ATTACK_02\020\005\022\030\n\024POKEMON_" +
+      "ANIM_DAMAGED\020\006\022\030\n\024POKEMON_ANIM_STUNNED\020\007" +
+      "\022\025\n\021POKEMON_ANIM_LOOP\020\010\022\031\n\025POKEMON_ANIM_" +
+      "SLEEP_01\020\t\022\031\n\025POKEMON_ANIM_SLEEP_02\020\n\022\033\n" +
+      "\027POKEMON_ANIM_SLEEP_WAIT\020\013*\302\003\n\027HoloPokem" +
+      "onMovementType\022:\n6HOLO_POKEMON_MOVEMENT_" +
+      "TYPE_POKEMON_ENC_MOVEMENT_STATIC\020\000\0228\n4HO" +
+      "LO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOV" +
+      "EMENT_JUMP\020\001\022<\n8HOLO_POKEMON_MOVEMENT_TY" +
+      "PE_POKEMON_ENC_MOVEMENT_VERTICAL\020\002\022;\n7HO" +
+      "LO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOV" +
+      "EMENT_PSYCHIC\020\003\022<\n8HOLO_POKEMON_MOVEMENT" +
+      "_TYPE_POKEMON_ENC_MOVEMENT_ELECTRIC\020\004\022:\n" +
+      "6HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_" +
+      "MOVEMENT_FLYING\020\005\022<\n8HOLO_POKEMON_MOVEME" +
+      "NT_TYPE_POKEMON_ENC_MOVEMENT_HOVERING\020\006*" +
+      "\230\001\n\021CameraZoomInLevel\022 \n\034CAMERA_ZOOM_IN_" +
+      "LEVEL_DEFAULT\020\000\022\035\n\031CAMERA_ZOOM_IN_LEVEL_" +
+      "NICE\020\001\022\036\n\032CAMERA_ZOOM_IN_LEVEL_GREAT\020\002\022\"" +
+      "\n\036CAMERA_ZOOM_IN_LEVEL_EXCELLENT\020\003*\342\t\n\033S" +
+      "hoppingPageTelemetrySource\022A\n=SHOPPING_P" +
+      "AGE_TELEMETRY_SOURCE_UNDEFINED_SHOPPING_" +
+      "PAGE_SOURCE\020\000\0223\n/SHOPPING_PAGE_TELEMETRY" +
+      "_SOURCE_SOURCE_MAIN_MENU\020\001\022:\n6SHOPPING_P" +
+      "AGE_TELEMETRY_SOURCE_SOURCE_POKEMON_BAG_" +
+      "FULL\020\002\022<\n8SHOPPING_PAGE_TELEMETRY_SOURCE" +
+      "_SOURCE_INCUBATOR_SELECTOR\020\003\022C\n?SHOPPING" +
+      "_PAGE_TELEMETRY_SOURCE_SOURCE_POKESTOP_D" +
+      "ISK_INTERACTION\020\004\022<\n8SHOPPING_PAGE_TELEM" +
+      "ETRY_SOURCE_SOURCE_OPEN_GIFT_BAG_FULL\020\005\022" +
+      "G\nCSHOPPING_PAGE_TELEMETRY_SOURCE_SOURCE" +
+      "_QUICK_SHOP_BAG_FULL_ENCOUNTER\020\006\022B\n>SHOP" +
+      "PING_PAGE_TELEMETRY_SOURCE_SOURCE_QUICK_" +
+      "SHOP_BAG_FULL_RAID\020\007\0229\n5SHOPPING_PAGE_TE" +
+      "LEMETRY_SOURCE_SOURCE_QUICK_SHOP_MORE\020\010\022" +
+      "5\n1SHOPPING_PAGE_TELEMETRY_SOURCE_SOURCE" +
+      "_AVATAR_ITEM\020\t\022;\n7SHOPPING_PAGE_TELEMETR" +
+      "Y_SOURCE_SOURCE_POKEMON_ENCOUNTER\020\n\022=\n9S" +
+      "HOPPING_PAGE_TELEMETRY_SOURCE_SOURCE_PLA" +
+      "YER_PROFILE_PAGE\020\013\0225\n1SHOPPING_PAGE_TELE" +
+      "METRY_SOURCE_SOURCE_STORE_FRONT\020\014\022D\n@SHO" +
+      "PPING_PAGE_TELEMETRY_SOURCE_SOURCE_AVATA" +
+      "R_CUSTOMIZATION_AWARD\020\r\022>\n:SHOPPING_PAGE" +
+      "_TELEMETRY_SOURCE_SOURCE_FIRST_TIME_USER" +
+      "_FLOW\020\016\022D\n@SHOPPING_PAGE_TELEMETRY_SOURC" +
+      "E_SOURCE_BADGE_DETAIL_AVATAR_REWARD\020\017\0223\n" +
+      "/SHOPPING_PAGE_TELEMETRY_SOURCE_SOURCE_D" +
+      "EEP_LINK\020\020\022M\nISHOPPING_PAGE_TELEMETRY_SO" +
+      "URCE_SOURCE_QUICK_SHOP_BUDDY_INTERACTION" +
+      "_POFFIN\020d\022L\nHSHOPPING_PAGE_TELEMETRY_SOU" +
+      "RCE_SOURCE_QUICK_SHOP_BUDDY_QUICK_FEED_P" +
+      "OFFIN\020e*h\n\030IncubatorSelectionResult\022\'\n#I" +
+      "NCUBATOR_SELECTION_RESULT_SELECTED\020\000\022#\n\037" +
+      "INCUBATOR_SELECTION_RESULT_EXIT\020\001*\301\002\n\023Ba" +
+      "ttleHubSubsection\022*\n&BATTLE_HUB_SUBSECTI" +
+      "ON_SUBSECTION_UNSET\020\000\0220\n,BATTLE_HUB_SUBS" +
+      "ECTION_SUBSECTION_VS_CHARGING\020\001\022,\n(BATTL" +
+      "E_HUB_SUBSECTION_SUBSECTION_VS_FREE\020\002\022/\n" +
+      "+BATTLE_HUB_SUBSECTION_SUBSECTION_VS_PRE" +
+      "MIUM\020\003\0228\n4BATTLE_HUB_SUBSECTION_SUBSECTI" +
+      "ON_NEARBY_TEAM_LEADERS\020\004\0223\n/BATTLE_HUB_S" +
+      "UBSECTION_SUBSECTION_NEARBY_QR_CODE\020\005*g\n" +
+      "\007Speaker\022\020\n\014SPEAKER_PROF\020\000\022\027\n\023SPEAKER_BL" +
+      "UE_LEADER\020\001\022\026\n\022SPEAKER_RED_LEADER\020\002\022\031\n\025S" +
+      "PEAKER_YELLOW_LEADER\020\003*f\n\005Store\022\025\n\021STORE" +
+      "_STORE_UNSET\020\000\022\025\n\021STORE_STORE_APPLE\020\001\022\026\n" +
+      "\022STORE_STORE_GOOGLE\020\002\022\027\n\023STORE_STORE_SAM" +
+      "SUNG\020\003*e\n\rAnimationTake\022\031\n\025ANIMATION_TAK" +
+      "E_SINGLE\020\000\022\034\n\030ANIMATION_TAKE_BRANCHING\020\001" +
+      "\022\033\n\027ANIMATION_TAKE_SEQUENCE\020\002*7\n\010FortTyp" +
+      "e\022\021\n\rFORT_TYPE_GYM\020\000\022\030\n\024FORT_TYPE_CHECKP" +
+      "OINT\020\001*j\n\014OnlineStatus\022\034\n\030ONLINE_STATUS_" +
+      "NOT_ONLINE\020\000\022\"\n\036ONLINE_STATUS_ONLINE_ELS" +
+      "EWHERE\020\001\022\030\n\024ONLINE_STATUS_ONLINE\020\002*Z\n\023Vs" +
+      "SeekerRewardTrack\022\037\n\033VS_SEEKER_REWARD_TR" +
+      "ACK_FREE\020\000\022\"\n\036VS_SEEKER_REWARD_TRACK_PRE" +
+      "MIUM\020\001*\314\004\n\037AvatarCustomizationTelemetryI" +
+      "ds\022E\nAAVATAR_CUSTOMIZATION_TELEMETRY_IDS" +
+      "_UNDEFINED_AVATAR_CUSTOMIZATION\020\000\0221\n-AVA" +
+      "TAR_CUSTOMIZATION_TELEMETRY_IDS_EQUIP_IT" +
+      "EM\020\001\0224\n0AVATAR_CUSTOMIZATION_TELEMETRY_I" +
+      "DS_OPEN_FEATURES\020\002\0221\n-AVATAR_CUSTOMIZATI" +
+      "ON_TELEMETRY_IDS_OPEN_STORE\020\003\0224\n0AVATAR_" +
+      "CUSTOMIZATION_TELEMETRY_IDS_PURCHASE_ITE" +
+      "M\020\004\0225\n1AVATAR_CUSTOMIZATION_TELEMETRY_ID" +
+      "S_PURCHASE_ERROR\020\005\0228\n4AVATAR_CUSTOMIZATI" +
+      "ON_TELEMETRY_IDS_SELECT_ITEM_GROUP\020\006\0222\n." +
+      "AVATAR_CUSTOMIZATION_TELEMETRY_IDS_SELEC" +
+      "T_SLOT\020\007\0223\n/AVATAR_CUSTOMIZATION_TELEMET" +
+      "RY_IDS_SELECT_COLOR\020\010\0226\n2AVATAR_CUSTOMIZ" +
+      "ATION_TELEMETRY_IDS_SHOW_QUICK_SHOP\020\t*\305\001" +
+      "\n\014GymBadgeType\022\"\n\036GYM_BADGE_TYPE_GYM_BAD" +
+      "GE_UNSET\020\000\022$\n GYM_BADGE_TYPE_GYM_BADGE_V" +
+      "ANILLA\020\001\022#\n\037GYM_BADGE_TYPE_GYM_BADGE_BRO" +
+      "NZE\020\002\022#\n\037GYM_BADGE_TYPE_GYM_BADGE_SILVER" +
+      "\020\003\022!\n\035GYM_BADGE_TYPE_GYM_BADGE_GOLD\020\004*P\n" +
+      "\020IncubationResult\022\035\n\031INCUBATION_RESULT_S" +
+      "UCCESS\020\000\022\035\n\031INCUBATION_RESULT_FAILURE\020\001*" +
+      "\365\001\n\030GenericClickTelemetryIds\0227\n3GENERIC_" +
+      "CLICK_TELEMETRY_IDS_UNDEFINED_GENERIC_EV" +
+      "ENT\020\000\0222\n.GENERIC_CLICK_TELEMETRY_IDS_SPE" +
+      "ED_WARNING_SHOW\020\001\0227\n3GENERIC_CLICK_TELEM" +
+      "ETRY_IDS_SPEED_WARNING_PASSENGER\020\002\0223\n/GE" +
+      "NERIC_CLICK_TELEMETRY_IDS_CACHE_RESET_CL" +
+      "ICKED\020\003*\236\002\n\035AdFeedbackNotInterestedReaso" +
+      "n\022O\nKAD_FEEDBACK_NOT_INTERESTED_REASON_A" +
+      "D_FEEDBACK_NOT_INTERESTED_REASON_INVALID" +
+      "\020\000\022T\nPAD_FEEDBACK_NOT_INTERESTED_REASON_" +
+      "AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RE" +
+      "LEVANT\020\001\022V\nRAD_FEEDBACK_NOT_INTERESTED_R" +
+      "EASON_AD_FEEDBACK_NOT_INTERESTED_REASON_" +
+      "SEEN_TOO_OFTEN\020\002*2\n\017ArToggleContext\022\037\n\033A" +
+      "R_TOGGLE_CONTEXT_ENCOUNTER\020\000*\264\006\n\017HoloPok" +
+      "emonType\022\'\n#HOLO_POKEMON_TYPE_POKEMON_TY" +
+      "PE_NONE\020\000\022)\n%HOLO_POKEMON_TYPE_POKEMON_T" +
+      "YPE_NORMAL\020\001\022+\n\'HOLO_POKEMON_TYPE_POKEMO" +
+      "N_TYPE_FIGHTING\020\002\022)\n%HOLO_POKEMON_TYPE_P" +
+      "OKEMON_TYPE_FLYING\020\003\022)\n%HOLO_POKEMON_TYP" +
+      "E_POKEMON_TYPE_POISON\020\004\022)\n%HOLO_POKEMON_" +
+      "TYPE_POKEMON_TYPE_GROUND\020\005\022\'\n#HOLO_POKEM" +
+      "ON_TYPE_POKEMON_TYPE_ROCK\020\006\022&\n\"HOLO_POKE" +
+      "MON_TYPE_POKEMON_TYPE_BUG\020\007\022(\n$HOLO_POKE" +
+      "MON_TYPE_POKEMON_TYPE_GHOST\020\010\022(\n$HOLO_PO" +
+      "KEMON_TYPE_POKEMON_TYPE_STEEL\020\t\022\'\n#HOLO_" +
+      "POKEMON_TYPE_POKEMON_TYPE_FIRE\020\n\022(\n$HOLO" +
+      "_POKEMON_TYPE_POKEMON_TYPE_WATER\020\013\022(\n$HO" +
+      "LO_POKEMON_TYPE_POKEMON_TYPE_GRASS\020\014\022+\n\'" +
+      "HOLO_POKEMON_TYPE_POKEMON_TYPE_ELECTRIC\020" +
+      "\r\022*\n&HOLO_POKEMON_TYPE_POKEMON_TYPE_PSYC" +
+      "HIC\020\016\022&\n\"HOLO_POKEMON_TYPE_POKEMON_TYPE_" +
+      "ICE\020\017\022)\n%HOLO_POKEMON_TYPE_POKEMON_TYPE_" +
+      "DRAGON\020\020\022\'\n#HOLO_POKEMON_TYPE_POKEMON_TY" +
+      "PE_DARK\020\021\022(\n$HOLO_POKEMON_TYPE_POKEMON_T" +
+      "YPE_FAIRY\020\022*\366\001\n\024RemoteRaidJoinSource\022=\n9" +
+      "REMOTE_RAID_JOIN_SOURCE_UNDEFINED_REMOTE" +
+      "_RAID_JOIN_SOURCE\020\000\0220\n,REMOTE_RAID_JOIN_" +
+      "SOURCE_REMOTE_RAID_USED_MAP\020\001\0222\n.REMOTE_" +
+      "RAID_JOIN_SOURCE_REMOTE_RAID_NEARBY_GUI\020" +
+      "\002\0229\n5REMOTE_RAID_JOIN_SOURCE_REMOTE_RAID" +
+      "_INVITED_BY_FRIEND\020\003*\201\002\n\027ProfilePageTele" +
+      "metryIds\0225\n1PROFILE_PAGE_TELEMETRY_IDS_U" +
+      "NDEFINED_PROFILE_PAGE\020\000\0220\n,PROFILE_PAGE_" +
+      "TELEMETRY_IDS_SHOP_FROM_PROFILE\020\001\022\"\n\036PRO" +
+      "FILE_PAGE_TELEMETRY_IDS_LOG\020\002\022(\n$PROFILE" +
+      "_PAGE_TELEMETRY_IDS_SET_BUDDY\020\003\022/\n+PROFI" +
+      "LE_PAGE_TELEMETRY_IDS_CUSTOMIZE_AVATAR\020\004" +
+      "*\331\201\001\n\023HoloPokemonFamilyId\022\'\n#HOLO_POKEMO" +
+      "N_FAMILY_ID_FAMILY_UNSET\020\000\0221\n-HOLO_POKEM" +
+      "ON_FAMILY_ID_V0001_FAMILY_BULBASAUR\020\001\0222\n" +
+      ".HOLO_POKEMON_FAMILY_ID_V0004_FAMILY_CHA" +
+      "RMANDER\020\004\0220\n,HOLO_POKEMON_FAMILY_ID_V000" +
+      "7_FAMILY_SQUIRTLE\020\007\0220\n,HOLO_POKEMON_FAMI" +
+      "LY_ID_V0010_FAMILY_CATERPIE\020\n\022.\n*HOLO_PO" +
+      "KEMON_FAMILY_ID_V0013_FAMILY_WEEDLE\020\r\022.\n" +
+      "*HOLO_POKEMON_FAMILY_ID_V0016_FAMILY_PID" +
+      "GEY\020\020\022/\n+HOLO_POKEMON_FAMILY_ID_V0019_FA" +
+      "MILY_RATTATA\020\023\022/\n+HOLO_POKEMON_FAMILY_ID" +
+      "_V0021_FAMILY_SPEAROW\020\025\022-\n)HOLO_POKEMON_" +
+      "FAMILY_ID_V0023_FAMILY_EKANS\020\027\022/\n+HOLO_P" +
+      "OKEMON_FAMILY_ID_V0025_FAMILY_PIKACHU\020\031\022" +
+      "1\n-HOLO_POKEMON_FAMILY_ID_V0027_FAMILY_S" +
+      "ANDSHREW\020\033\022/\n+HOLO_POKEMON_FAMILY_ID_V00" +
+      "29_FAMILY_NIDORAN\020\035\022/\n+HOLO_POKEMON_FAMI" +
+      "LY_ID_V0032_FAMILY_NIDORAN\020 \0220\n,HOLO_POK" +
+      "EMON_FAMILY_ID_V0035_FAMILY_CLEFAIRY\020#\022." +
+      "\n*HOLO_POKEMON_FAMILY_ID_V0037_FAMILY_VU" +
+      "LPIX\020%\0222\n.HOLO_POKEMON_FAMILY_ID_V0039_F" +
+      "AMILY_JIGGLYPUFF\020\'\022-\n)HOLO_POKEMON_FAMIL" +
+      "Y_ID_V0041_FAMILY_ZUBAT\020)\022.\n*HOLO_POKEMO" +
+      "N_FAMILY_ID_V0043_FAMILY_ODDISH\020+\022-\n)HOL" +
+      "O_POKEMON_FAMILY_ID_V0046_FAMILY_PARAS\020." +
+      "\022/\n+HOLO_POKEMON_FAMILY_ID_V0048_FAMILY_" +
+      "VENONAT\0200\022/\n+HOLO_POKEMON_FAMILY_ID_V005" +
+      "0_FAMILY_DIGLETT\0202\022.\n*HOLO_POKEMON_FAMIL" +
+      "Y_ID_V0052_FAMILY_MEOWTH\0204\022/\n+HOLO_POKEM" +
+      "ON_FAMILY_ID_V0054_FAMILY_PSYDUCK\0206\022.\n*H" +
+      "OLO_POKEMON_FAMILY_ID_V0056_FAMILY_MANKE" +
+      "Y\0208\0221\n-HOLO_POKEMON_FAMILY_ID_V0058_FAMI" +
+      "LY_GROWLITHE\020:\022/\n+HOLO_POKEMON_FAMILY_ID" +
+      "_V0060_FAMILY_POLIWAG\020<\022,\n(HOLO_POKEMON_" +
+      "FAMILY_ID_V0063_FAMILY_ABRA\020?\022.\n*HOLO_PO" +
+      "KEMON_FAMILY_ID_V0066_FAMILY_MACHOP\020B\0222\n" +
+      ".HOLO_POKEMON_FAMILY_ID_V0069_FAMILY_BEL" +
+      "LSPROUT\020E\0221\n-HOLO_POKEMON_FAMILY_ID_V007" +
+      "2_FAMILY_TENTACOOL\020H\022/\n+HOLO_POKEMON_FAM" +
+      "ILY_ID_V0074_FAMILY_GEODUDE\020J\022.\n*HOLO_PO" +
+      "KEMON_FAMILY_ID_V0077_FAMILY_PONYTA\020M\0220\n" +
+      ",HOLO_POKEMON_FAMILY_ID_V0079_FAMILY_SLO" +
+      "WPOKE\020O\0221\n-HOLO_POKEMON_FAMILY_ID_V0081_" +
+      "FAMILY_MAGNEMITE\020Q\0221\n-HOLO_POKEMON_FAMIL" +
+      "Y_ID_V0083_FAMILY_FARFETCHD\020S\022-\n)HOLO_PO" +
+      "KEMON_FAMILY_ID_V0084_FAMILY_DODUO\020T\022,\n(" +
+      "HOLO_POKEMON_FAMILY_ID_V0086_FAMILY_SEEL" +
+      "\020V\022.\n*HOLO_POKEMON_FAMILY_ID_V0088_FAMIL" +
+      "Y_GRIMER\020X\0220\n,HOLO_POKEMON_FAMILY_ID_V00" +
+      "90_FAMILY_SHELLDER\020Z\022.\n*HOLO_POKEMON_FAM" +
+      "ILY_ID_V0092_FAMILY_GASTLY\020\\\022,\n(HOLO_POK" +
+      "EMON_FAMILY_ID_V0095_FAMILY_ONIX\020_\022/\n+HO" +
+      "LO_POKEMON_FAMILY_ID_V0096_FAMILY_DROWZE" +
+      "E\020`\022.\n*HOLO_POKEMON_FAMILY_ID_V0098_FAMI" +
+      "LY_KRABBY\020b\022/\n+HOLO_POKEMON_FAMILY_ID_V0" +
+      "100_FAMILY_VOLTORB\020d\0221\n-HOLO_POKEMON_FAM" +
+      "ILY_ID_V0102_FAMILY_EXEGGCUTE\020f\022.\n*HOLO_" +
+      "POKEMON_FAMILY_ID_V0104_FAMILY_CUBONE\020h\022" +
+      "1\n-HOLO_POKEMON_FAMILY_ID_V0106_FAMILY_H" +
+      "ITMONLEE\020j\0222\n.HOLO_POKEMON_FAMILY_ID_V01" +
+      "07_FAMILY_HITMONCHAN\020k\0221\n-HOLO_POKEMON_F" +
+      "AMILY_ID_V0108_FAMILY_LICKITUNG\020l\022/\n+HOL" +
+      "O_POKEMON_FAMILY_ID_V0109_FAMILY_KOFFING" +
+      "\020m\022/\n+HOLO_POKEMON_FAMILY_ID_V0111_FAMIL" +
+      "Y_RHYHORN\020o\022/\n+HOLO_POKEMON_FAMILY_ID_V0" +
+      "113_FAMILY_CHANSEY\020q\022/\n+HOLO_POKEMON_FAM" +
+      "ILY_ID_V0114_FAMILY_TANGELA\020r\0222\n.HOLO_PO" +
+      "KEMON_FAMILY_ID_V0115_FAMILY_KANGASKHAN\020" +
+      "s\022.\n*HOLO_POKEMON_FAMILY_ID_V0116_FAMILY" +
+      "_HORSEA\020t\022/\n+HOLO_POKEMON_FAMILY_ID_V011" +
+      "8_FAMILY_GOLDEEN\020v\022.\n*HOLO_POKEMON_FAMIL" +
+      "Y_ID_V0120_FAMILY_STARYU\020x\022/\n+HOLO_POKEM" +
+      "ON_FAMILY_ID_V0122_FAMILY_MR_MIME\020z\022/\n+H" +
+      "OLO_POKEMON_FAMILY_ID_V0123_FAMILY_SCYTH" +
+      "ER\020{\022,\n(HOLO_POKEMON_FAMILY_ID_V0124_FAM" +
+      "ILY_JYNX\020|\0222\n.HOLO_POKEMON_FAMILY_ID_V01" +
+      "25_FAMILY_ELECTABUZZ\020}\022.\n*HOLO_POKEMON_F" +
+      "AMILY_ID_V0126_FAMILY_MAGMAR\020~\022.\n*HOLO_P" +
+      "OKEMON_FAMILY_ID_V0127_FAMILY_PINSIR\020\177\022/" +
+      "\n*HOLO_POKEMON_FAMILY_ID_V0128_FAMILY_TA" +
+      "UROS\020\200\001\0221\n,HOLO_POKEMON_FAMILY_ID_V0129_" +
+      "FAMILY_MAGIKARP\020\201\001\022/\n*HOLO_POKEMON_FAMIL" +
+      "Y_ID_V0131_FAMILY_LAPRAS\020\203\001\022.\n)HOLO_POKE" +
+      "MON_FAMILY_ID_V0132_FAMILY_DITTO\020\204\001\022.\n)H" +
+      "OLO_POKEMON_FAMILY_ID_V0133_FAMILY_EEVEE" +
+      "\020\205\001\0220\n+HOLO_POKEMON_FAMILY_ID_V0137_FAMI" +
+      "LY_PORYGON\020\211\001\0220\n+HOLO_POKEMON_FAMILY_ID_" +
+      "V0138_FAMILY_OMANYTE\020\212\001\022/\n*HOLO_POKEMON_" +
+      "FAMILY_ID_V0140_FAMILY_KABUTO\020\214\001\0223\n.HOLO" +
+      "_POKEMON_FAMILY_ID_V0142_FAMILY_AERODACT" +
+      "YL\020\216\001\0220\n+HOLO_POKEMON_FAMILY_ID_V0143_FA" +
+      "MILY_SNORLAX\020\217\001\0221\n,HOLO_POKEMON_FAMILY_I" +
+      "D_V0144_FAMILY_ARTICUNO\020\220\001\022/\n*HOLO_POKEM" +
+      "ON_FAMILY_ID_V0145_FAMILY_ZAPDOS\020\221\001\0220\n+H" +
+      "OLO_POKEMON_FAMILY_ID_V0146_FAMILY_MOLTR" +
+      "ES\020\222\001\0220\n+HOLO_POKEMON_FAMILY_ID_V0147_FA" +
+      "MILY_DRATINI\020\223\001\022/\n*HOLO_POKEMON_FAMILY_I" +
+      "D_V0150_FAMILY_MEWTWO\020\226\001\022,\n\'HOLO_POKEMON" +
+      "_FAMILY_ID_V0151_FAMILY_MEW\020\227\001\0222\n-HOLO_P" +
+      "OKEMON_FAMILY_ID_V0152_FAMILY_CHIKORITA\020" +
+      "\230\001\0222\n-HOLO_POKEMON_FAMILY_ID_V0155_FAMIL" +
+      "Y_CYNDAQUIL\020\233\001\0221\n,HOLO_POKEMON_FAMILY_ID" +
+      "_V0158_FAMILY_TOTODILE\020\236\001\0220\n+HOLO_POKEMO" +
+      "N_FAMILY_ID_V0161_FAMILY_SENTRET\020\241\001\0221\n,H" +
+      "OLO_POKEMON_FAMILY_ID_V0163_FAMILY_HOOTH" +
+      "OOT\020\243\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0165_F" +
+      "AMILY_LEDYBA\020\245\001\0221\n,HOLO_POKEMON_FAMILY_I" +
+      "D_V0167_FAMILY_SPINARAK\020\247\001\0221\n,HOLO_POKEM" +
+      "ON_FAMILY_ID_V0170_FAMILY_CHINCHOU\020\252\001\022/\n" +
+      "*HOLO_POKEMON_FAMILY_ID_V0175_FAMILY_TOG" +
+      "EPI\020\257\001\022-\n(HOLO_POKEMON_FAMILY_ID_V0177_F" +
+      "AMILY_NATU\020\261\001\022/\n*HOLO_POKEMON_FAMILY_ID_" +
+      "V0179_FAMILY_MAREEP\020\263\001\022/\n*HOLO_POKEMON_F" +
+      "AMILY_ID_V0183_FAMILY_MARILL\020\267\001\0222\n-HOLO_" +
+      "POKEMON_FAMILY_ID_V0185_FAMILY_SUDOWOODO" +
+      "\020\271\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0187_FAMI" +
+      "LY_HOPPIP\020\273\001\022.\n)HOLO_POKEMON_FAMILY_ID_V" +
+      "0190_FAMILY_AIPOM\020\276\001\0220\n+HOLO_POKEMON_FAM" +
+      "ILY_ID_V0191_FAMILY_SUNKERN\020\277\001\022.\n)HOLO_P" +
+      "OKEMON_FAMILY_ID_V0193_FAMILY_YANMA\020\301\001\022/" +
+      "\n*HOLO_POKEMON_FAMILY_ID_V0194_FAMILY_WO" +
+      "OPER\020\302\001\0220\n+HOLO_POKEMON_FAMILY_ID_V0198_" +
+      "FAMILY_MURKROW\020\306\001\0223\n.HOLO_POKEMON_FAMILY" +
+      "_ID_V0200_FAMILY_MISDREAVUS\020\310\001\022.\n)HOLO_P" +
+      "OKEMON_FAMILY_ID_V0201_FAMILY_UNOWN\020\311\001\0222" +
+      "\n-HOLO_POKEMON_FAMILY_ID_V0202_FAMILY_WO" +
+      "BBUFFET\020\312\001\0222\n-HOLO_POKEMON_FAMILY_ID_V02" +
+      "03_FAMILY_GIRAFARIG\020\313\001\022/\n*HOLO_POKEMON_F" +
+      "AMILY_ID_V0204_FAMILY_PINECO\020\314\001\0222\n-HOLO_" +
+      "POKEMON_FAMILY_ID_V0206_FAMILY_DUNSPARCE" +
+      "\020\316\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0207_FAMI" +
+      "LY_GLIGAR\020\317\001\0221\n,HOLO_POKEMON_FAMILY_ID_V" +
+      "0209_FAMILY_SNUBBULL\020\321\001\0221\n,HOLO_POKEMON_" +
+      "FAMILY_ID_V0211_FAMILY_QWILFISH\020\323\001\0220\n+HO" +
+      "LO_POKEMON_FAMILY_ID_V0213_FAMILY_SHUCKL" +
+      "E\020\325\001\0222\n-HOLO_POKEMON_FAMILY_ID_V0214_FAM" +
+      "ILY_HERACROSS\020\326\001\0220\n+HOLO_POKEMON_FAMILY_" +
+      "ID_V0215_FAMILY_SNEASEL\020\327\001\0222\n-HOLO_POKEM" +
+      "ON_FAMILY_ID_V0216_FAMILY_TEDDIURSA\020\330\001\022/" +
+      "\n*HOLO_POKEMON_FAMILY_ID_V0218_FAMILY_SL" +
+      "UGMA\020\332\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0220_" +
+      "FAMILY_SWINUB\020\334\001\0220\n+HOLO_POKEMON_FAMILY_" +
+      "ID_V0222_FAMILY_CORSOLA\020\336\001\0221\n,HOLO_POKEM" +
+      "ON_FAMILY_ID_V0223_FAMILY_REMORAID\020\337\001\0221\n" +
+      ",HOLO_POKEMON_FAMILY_ID_V0225_FAMILY_DEL" +
+      "IBIRD\020\341\001\0220\n+HOLO_POKEMON_FAMILY_ID_V0226" +
+      "_FAMILY_MANTINE\020\342\001\0221\n,HOLO_POKEMON_FAMIL" +
+      "Y_ID_V0227_FAMILY_SKARMORY\020\343\001\0221\n,HOLO_PO" +
+      "KEMON_FAMILY_ID_V0228_FAMILY_HOUNDOUR\020\344\001" +
+      "\022/\n*HOLO_POKEMON_FAMILY_ID_V0231_FAMILY_" +
+      "PHANPY\020\347\001\0221\n,HOLO_POKEMON_FAMILY_ID_V023" +
+      "4_FAMILY_STANTLER\020\352\001\0221\n,HOLO_POKEMON_FAM" +
+      "ILY_ID_V0235_FAMILY_SMEARGLE\020\353\001\0220\n+HOLO_" +
+      "POKEMON_FAMILY_ID_V0236_FAMILY_TYROGUE\020\354" +
+      "\001\0220\n+HOLO_POKEMON_FAMILY_ID_V0241_FAMILY" +
+      "_MILTANK\020\361\001\022/\n*HOLO_POKEMON_FAMILY_ID_V0" +
+      "243_FAMILY_RAIKOU\020\363\001\022.\n)HOLO_POKEMON_FAM" +
+      "ILY_ID_V0244_FAMILY_ENTEI\020\364\001\0220\n+HOLO_POK" +
+      "EMON_FAMILY_ID_V0245_FAMILY_SUICUNE\020\365\001\0221" +
+      "\n,HOLO_POKEMON_FAMILY_ID_V0246_FAMILY_LA" +
+      "RVITAR\020\366\001\022.\n)HOLO_POKEMON_FAMILY_ID_V024" +
+      "9_FAMILY_LUGIA\020\371\001\022.\n)HOLO_POKEMON_FAMILY" +
+      "_ID_V0250_FAMILY_HO_OH\020\372\001\022/\n*HOLO_POKEMO" +
+      "N_FAMILY_ID_V0251_FAMILY_CELEBI\020\373\001\0220\n+HO" +
+      "LO_POKEMON_FAMILY_ID_V0252_FAMILY_TREECK" +
+      "O\020\374\001\0220\n+HOLO_POKEMON_FAMILY_ID_V0255_FAM" +
+      "ILY_TORCHIC\020\377\001\022/\n*HOLO_POKEMON_FAMILY_ID" +
+      "_V0258_FAMILY_MUDKIP\020\202\002\0222\n-HOLO_POKEMON_" +
+      "FAMILY_ID_V0261_FAMILY_POOCHYENA\020\205\002\0222\n-H" +
+      "OLO_POKEMON_FAMILY_ID_V0263_FAMILY_ZIGZA" +
+      "GOON\020\207\002\0220\n+HOLO_POKEMON_FAMILY_ID_V0265_" +
+      "FAMILY_WURMPLE\020\211\002\022.\n)HOLO_POKEMON_FAMILY" +
+      "_ID_V0270_FAMILY_LOTAD\020\216\002\022/\n*HOLO_POKEMO" +
+      "N_FAMILY_ID_V0273_FAMILY_SEEDOT\020\221\002\0220\n+HO" +
+      "LO_POKEMON_FAMILY_ID_V0276_FAMILY_TAILLO" +
+      "W\020\224\002\0220\n+HOLO_POKEMON_FAMILY_ID_V0278_FAM" +
+      "ILY_WINGULL\020\226\002\022.\n)HOLO_POKEMON_FAMILY_ID" +
+      "_V0280_FAMILY_RALTS\020\230\002\0220\n+HOLO_POKEMON_F" +
+      "AMILY_ID_V0283_FAMILY_SURSKIT\020\233\002\0222\n-HOLO" +
+      "_POKEMON_FAMILY_ID_V0285_FAMILY_SHROOMIS" +
+      "H\020\235\002\0220\n+HOLO_POKEMON_FAMILY_ID_V0287_FAM" +
+      "ILY_SLAKOTH\020\237\002\0220\n+HOLO_POKEMON_FAMILY_ID" +
+      "_V0290_FAMILY_NINCADA\020\242\002\0220\n+HOLO_POKEMON" +
+      "_FAMILY_ID_V0293_FAMILY_WHISMUR\020\245\002\0221\n,HO" +
+      "LO_POKEMON_FAMILY_ID_V0296_FAMILY_MAKUHI" +
+      "TA\020\250\002\0221\n,HOLO_POKEMON_FAMILY_ID_V0299_FA" +
+      "MILY_NOSEPASS\020\253\002\022/\n*HOLO_POKEMON_FAMILY_" +
+      "ID_V0300_FAMILY_SKITTY\020\254\002\0220\n+HOLO_POKEMO" +
+      "N_FAMILY_ID_V0302_FAMILY_SABLEYE\020\256\002\022/\n*H" +
+      "OLO_POKEMON_FAMILY_ID_V0303_FAMILY_MAWIL" +
+      "E\020\257\002\022-\n(HOLO_POKEMON_FAMILY_ID_V0304_FAM" +
+      "ILY_ARON\020\260\002\0221\n,HOLO_POKEMON_FAMILY_ID_V0" +
+      "307_FAMILY_MEDITITE\020\263\002\0222\n-HOLO_POKEMON_F" +
+      "AMILY_ID_V0309_FAMILY_ELECTRIKE\020\265\002\022/\n*HO" +
+      "LO_POKEMON_FAMILY_ID_V0311_FAMILY_PLUSLE" +
+      "\020\267\002\022.\n)HOLO_POKEMON_FAMILY_ID_V0312_FAMI" +
+      "LY_MINUN\020\270\002\0220\n+HOLO_POKEMON_FAMILY_ID_V0" +
+      "313_FAMILY_VOLBEAT\020\271\002\0221\n,HOLO_POKEMON_FA" +
+      "MILY_ID_V0314_FAMILY_ILLUMISE\020\272\002\0220\n+HOLO" +
+      "_POKEMON_FAMILY_ID_V0315_FAMILY_ROSELIA\020" +
+      "\273\002\022/\n*HOLO_POKEMON_FAMILY_ID_V0316_FAMIL" +
+      "Y_GULPIN\020\274\002\0221\n,HOLO_POKEMON_FAMILY_ID_V0" +
+      "318_FAMILY_CARVANHA\020\276\002\0220\n+HOLO_POKEMON_F" +
+      "AMILY_ID_V0320_FAMILY_WAILMER\020\300\002\022.\n)HOLO" +
+      "_POKEMON_FAMILY_ID_V0322_FAMILY_NUMEL\020\302\002" +
+      "\0220\n+HOLO_POKEMON_FAMILY_ID_V0324_FAMILY_" +
+      "TORKOAL\020\304\002\022/\n*HOLO_POKEMON_FAMILY_ID_V03" +
+      "25_FAMILY_SPOINK\020\305\002\022/\n*HOLO_POKEMON_FAMI" +
+      "LY_ID_V0327_FAMILY_SPINDA\020\307\002\0221\n,HOLO_POK" +
+      "EMON_FAMILY_ID_V0328_FAMILY_TRAPINCH\020\310\002\022" +
+      "/\n*HOLO_POKEMON_FAMILY_ID_V0331_FAMILY_C" +
+      "ACNEA\020\313\002\022/\n*HOLO_POKEMON_FAMILY_ID_V0333" +
+      "_FAMILY_SWABLU\020\315\002\0221\n,HOLO_POKEMON_FAMILY" +
+      "_ID_V0335_FAMILY_ZANGOOSE\020\317\002\0220\n+HOLO_POK" +
+      "EMON_FAMILY_ID_V0336_FAMILY_SEVIPER\020\320\002\0221",
+      "\n,HOLO_POKEMON_FAMILY_ID_V0337_FAMILY_LU" +
+      "NATONE\020\321\002\0220\n+HOLO_POKEMON_FAMILY_ID_V033" +
+      "8_FAMILY_SOLROCK\020\322\002\0221\n,HOLO_POKEMON_FAMI" +
+      "LY_ID_V0339_FAMILY_BARBOACH\020\323\002\0221\n,HOLO_P" +
+      "OKEMON_FAMILY_ID_V0341_FAMILY_CORPHISH\020\325" +
+      "\002\022/\n*HOLO_POKEMON_FAMILY_ID_V0343_FAMILY" +
+      "_BALTOY\020\327\002\022/\n*HOLO_POKEMON_FAMILY_ID_V03" +
+      "45_FAMILY_LILEEP\020\331\002\0220\n+HOLO_POKEMON_FAMI" +
+      "LY_ID_V0347_FAMILY_ANORITH\020\333\002\022/\n*HOLO_PO" +
+      "KEMON_FAMILY_ID_V0349_FAMILY_FEEBAS\020\335\002\0221" +
+      "\n,HOLO_POKEMON_FAMILY_ID_V0351_FAMILY_CA" +
+      "STFORM\020\337\002\0220\n+HOLO_POKEMON_FAMILY_ID_V035" +
+      "2_FAMILY_KECLEON\020\340\002\0220\n+HOLO_POKEMON_FAMI" +
+      "LY_ID_V0353_FAMILY_SHUPPET\020\341\002\0220\n+HOLO_PO" +
+      "KEMON_FAMILY_ID_V0355_FAMILY_DUSKULL\020\343\002\022" +
+      "0\n+HOLO_POKEMON_FAMILY_ID_V0357_FAMILY_T" +
+      "ROPIUS\020\345\002\0221\n,HOLO_POKEMON_FAMILY_ID_V035" +
+      "8_FAMILY_CHIMECHO\020\346\002\022.\n)HOLO_POKEMON_FAM" +
+      "ILY_ID_V0359_FAMILY_ABSOL\020\347\002\0220\n+HOLO_POK" +
+      "EMON_FAMILY_ID_V0361_FAMILY_SNORUNT\020\351\002\022/" +
+      "\n*HOLO_POKEMON_FAMILY_ID_V0363_FAMILY_SP" +
+      "HEAL\020\353\002\0221\n,HOLO_POKEMON_FAMILY_ID_V0366_" +
+      "FAMILY_CLAMPERL\020\356\002\0222\n-HOLO_POKEMON_FAMIL" +
+      "Y_ID_V0369_FAMILY_RELICANTH\020\361\002\0220\n+HOLO_P" +
+      "OKEMON_FAMILY_ID_V0370_FAMILY_LUVDISC\020\362\002" +
+      "\022.\n)HOLO_POKEMON_FAMILY_ID_V0371_FAMILY_" +
+      "BAGON\020\363\002\022/\n*HOLO_POKEMON_FAMILY_ID_V0374" +
+      "_FAMILY_BELDUM\020\366\002\0221\n,HOLO_POKEMON_FAMILY" +
+      "_ID_V0377_FAMILY_REGIROCK\020\371\002\022/\n*HOLO_POK" +
+      "EMON_FAMILY_ID_V0378_FAMILY_REGICE\020\372\002\0222\n" +
+      "-HOLO_POKEMON_FAMILY_ID_V0379_FAMILY_REG" +
+      "ISTEEL\020\373\002\022/\n*HOLO_POKEMON_FAMILY_ID_V038" +
+      "0_FAMILY_LATIAS\020\374\002\022/\n*HOLO_POKEMON_FAMIL" +
+      "Y_ID_V0381_FAMILY_LATIOS\020\375\002\022/\n*HOLO_POKE" +
+      "MON_FAMILY_ID_V0382_FAMILY_KYOGRE\020\376\002\0220\n+" +
+      "HOLO_POKEMON_FAMILY_ID_V0383_FAMILY_GROU" +
+      "DON\020\377\002\0221\n,HOLO_POKEMON_FAMILY_ID_V0384_F" +
+      "AMILY_RAYQUAZA\020\200\003\0220\n+HOLO_POKEMON_FAMILY" +
+      "_ID_V0385_FAMILY_JIRACHI\020\201\003\022/\n*HOLO_POKE" +
+      "MON_FAMILY_ID_V0386_FAMILY_DEOXYS\020\202\003\0220\n+" +
+      "HOLO_POKEMON_FAMILY_ID_V0387_FAMILY_TURT" +
+      "WIG\020\203\003\0221\n,HOLO_POKEMON_FAMILY_ID_V0390_F" +
+      "AMILY_CHIMCHAR\020\206\003\022/\n*HOLO_POKEMON_FAMILY" +
+      "_ID_V0393_FAMILY_PIPLUP\020\211\003\022/\n*HOLO_POKEM" +
+      "ON_FAMILY_ID_V0396_FAMILY_STARLY\020\214\003\022/\n*H" +
+      "OLO_POKEMON_FAMILY_ID_V0399_FAMILY_BIDOO" +
+      "F\020\217\003\0222\n-HOLO_POKEMON_FAMILY_ID_V0401_FAM" +
+      "ILY_KRICKETOT\020\221\003\022.\n)HOLO_POKEMON_FAMILY_" +
+      "ID_V0403_FAMILY_SHINX\020\223\003\0221\n,HOLO_POKEMON" +
+      "_FAMILY_ID_V0408_FAMILY_CRANIDOS\020\230\003\0221\n,H" +
+      "OLO_POKEMON_FAMILY_ID_V0410_FAMILY_SHIEL" +
+      "DON\020\232\003\022.\n)HOLO_POKEMON_FAMILY_ID_V0412_F" +
+      "AMILY_BURMY\020\234\003\022/\n*HOLO_POKEMON_FAMILY_ID" +
+      "_V0415_FAMILY_COMBEE\020\237\003\0222\n-HOLO_POKEMON_" +
+      "FAMILY_ID_V0417_FAMILY_PACHIRISU\020\241\003\022/\n*H" +
+      "OLO_POKEMON_FAMILY_ID_V0418_FAMILY_BUIZE" +
+      "L\020\242\003\0220\n+HOLO_POKEMON_FAMILY_ID_V0420_FAM" +
+      "ILY_CHERUBI\020\244\003\0220\n+HOLO_POKEMON_FAMILY_ID" +
+      "_V0422_FAMILY_SHELLOS\020\246\003\0221\n,HOLO_POKEMON" +
+      "_FAMILY_ID_V0425_FAMILY_DRIFLOON\020\251\003\0220\n+H" +
+      "OLO_POKEMON_FAMILY_ID_V0427_FAMILY_BUNEA" +
+      "RY\020\253\003\0220\n+HOLO_POKEMON_FAMILY_ID_V0431_FA" +
+      "MILY_GLAMEOW\020\257\003\022/\n*HOLO_POKEMON_FAMILY_I" +
+      "D_V0434_FAMILY_STUNKY\020\262\003\0220\n+HOLO_POKEMON" +
+      "_FAMILY_ID_V0436_FAMILY_BRONZOR\020\264\003\022/\n*HO" +
+      "LO_POKEMON_FAMILY_ID_V0441_FAMILY_CHATOT" +
+      "\020\271\003\0222\n-HOLO_POKEMON_FAMILY_ID_V0442_FAMI" +
+      "LY_SPIRITOMB\020\272\003\022.\n)HOLO_POKEMON_FAMILY_I" +
+      "D_V0443_FAMILY_GIBLE\020\273\003\0220\n+HOLO_POKEMON_" +
+      "FAMILY_ID_V0448_FAMILY_LUCARIO\020\300\003\0223\n.HOL" +
+      "O_POKEMON_FAMILY_ID_V0449_FAMILY_HIPPOPO" +
+      "TAS\020\301\003\0220\n+HOLO_POKEMON_FAMILY_ID_V0451_F" +
+      "AMILY_SKORUPI\020\303\003\0221\n,HOLO_POKEMON_FAMILY_" +
+      "ID_V0453_FAMILY_CROAGUNK\020\305\003\0222\n-HOLO_POKE" +
+      "MON_FAMILY_ID_V0455_FAMILY_CARNIVINE\020\307\003\022" +
+      "0\n+HOLO_POKEMON_FAMILY_ID_V0456_FAMILY_F" +
+      "INNEON\020\310\003\022/\n*HOLO_POKEMON_FAMILY_ID_V045" +
+      "9_FAMILY_SNOVER\020\313\003\022.\n)HOLO_POKEMON_FAMIL" +
+      "Y_ID_V0479_FAMILY_ROTOM\020\337\003\022-\n(HOLO_POKEM" +
+      "ON_FAMILY_ID_V0480_FAMILY_UXIE\020\340\003\0220\n+HOL" +
+      "O_POKEMON_FAMILY_ID_V0481_FAMILY_MESPRIT" +
+      "\020\341\003\022.\n)HOLO_POKEMON_FAMILY_ID_V0482_FAMI" +
+      "LY_AZELF\020\342\003\022/\n*HOLO_POKEMON_FAMILY_ID_V0" +
+      "483_FAMILY_DIALGA\020\343\003\022/\n*HOLO_POKEMON_FAM" +
+      "ILY_ID_V0484_FAMILY_PALKIA\020\344\003\0220\n+HOLO_PO" +
+      "KEMON_FAMILY_ID_V0485_FAMILY_HEATRAN\020\345\003\022" +
+      "2\n-HOLO_POKEMON_FAMILY_ID_V0486_FAMILY_R" +
+      "EGIGIGAS\020\346\003\0221\n,HOLO_POKEMON_FAMILY_ID_V0" +
+      "487_FAMILY_GIRATINA\020\347\003\0222\n-HOLO_POKEMON_F" +
+      "AMILY_ID_V0488_FAMILY_CRESSELIA\020\350\003\022/\n*HO" +
+      "LO_POKEMON_FAMILY_ID_V0489_FAMILY_PHIONE" +
+      "\020\351\003\0220\n+HOLO_POKEMON_FAMILY_ID_V0490_FAMI" +
+      "LY_MANAPHY\020\352\003\0220\n+HOLO_POKEMON_FAMILY_ID_" +
+      "V0491_FAMILY_DARKRAI\020\353\003\0220\n+HOLO_POKEMON_" +
+      "FAMILY_ID_V0492_FAMILY_SHAYMIN\020\354\003\022/\n*HOL" +
+      "O_POKEMON_FAMILY_ID_V0493_FAMILY_ARCEUS\020" +
+      "\355\003\0220\n+HOLO_POKEMON_FAMILY_ID_V0494_FAMIL" +
+      "Y_VICTINI\020\356\003\022.\n)HOLO_POKEMON_FAMILY_ID_V" +
+      "0495_FAMILY_SNIVY\020\357\003\022.\n)HOLO_POKEMON_FAM" +
+      "ILY_ID_V0498_FAMILY_TEPIG\020\362\003\0221\n,HOLO_POK" +
+      "EMON_FAMILY_ID_V0501_FAMILY_OSHAWOTT\020\365\003\022" +
+      "/\n*HOLO_POKEMON_FAMILY_ID_V0504_FAMILY_P" +
+      "ATRAT\020\370\003\0221\n,HOLO_POKEMON_FAMILY_ID_V0506" +
+      "_FAMILY_LILLIPUP\020\372\003\0221\n,HOLO_POKEMON_FAMI" +
+      "LY_ID_V0509_FAMILY_PURRLOIN\020\375\003\0220\n+HOLO_P" +
+      "OKEMON_FAMILY_ID_V0511_FAMILY_PANSAGE\020\377\003" +
+      "\0220\n+HOLO_POKEMON_FAMILY_ID_V0513_FAMILY_" +
+      "PANSEAR\020\201\004\0220\n+HOLO_POKEMON_FAMILY_ID_V05" +
+      "15_FAMILY_PANPOUR\020\203\004\022.\n)HOLO_POKEMON_FAM" +
+      "ILY_ID_V0517_FAMILY_MUNNA\020\205\004\022/\n*HOLO_POK" +
+      "EMON_FAMILY_ID_V0519_FAMILY_PIDOVE\020\207\004\0220\n" +
+      "+HOLO_POKEMON_FAMILY_ID_V0522_FAMILY_BLI" +
+      "TZLE\020\212\004\0223\n.HOLO_POKEMON_FAMILY_ID_V0524_" +
+      "FAMILY_ROGGENROLA\020\214\004\022/\n*HOLO_POKEMON_FAM" +
+      "ILY_ID_V0527_FAMILY_WOOBAT\020\217\004\0220\n+HOLO_PO" +
+      "KEMON_FAMILY_ID_V0529_FAMILY_DRILBUR\020\221\004\022" +
+      "/\n*HOLO_POKEMON_FAMILY_ID_V0531_FAMILY_A" +
+      "UDINO\020\223\004\0220\n+HOLO_POKEMON_FAMILY_ID_V0532" +
+      "_FAMILY_TIMBURR\020\224\004\0220\n+HOLO_POKEMON_FAMIL" +
+      "Y_ID_V0535_FAMILY_TYMPOLE\020\227\004\022.\n)HOLO_POK" +
+      "EMON_FAMILY_ID_V0538_FAMILY_THROH\020\232\004\022-\n(" +
+      "HOLO_POKEMON_FAMILY_ID_V0539_FAMILY_SAWK" +
+      "\020\233\004\0221\n,HOLO_POKEMON_FAMILY_ID_V0540_FAMI" +
+      "LY_SEWADDLE\020\234\004\0221\n,HOLO_POKEMON_FAMILY_ID" +
+      "_V0543_FAMILY_VENIPEDE\020\237\004\0221\n,HOLO_POKEMO" +
+      "N_FAMILY_ID_V0546_FAMILY_COTTONEE\020\242\004\0220\n+" +
+      "HOLO_POKEMON_FAMILY_ID_V0548_FAMILY_PETI" +
+      "LIL\020\244\004\0221\n,HOLO_POKEMON_FAMILY_ID_V0550_F" +
+      "AMILY_BASCULIN\020\246\004\0220\n+HOLO_POKEMON_FAMILY" +
+      "_ID_V0551_FAMILY_SANDILE\020\247\004\0221\n,HOLO_POKE" +
+      "MON_FAMILY_ID_V0554_FAMILY_DARUMAKA\020\252\004\0221" +
+      "\n,HOLO_POKEMON_FAMILY_ID_V0556_FAMILY_MA" +
+      "RACTUS\020\254\004\0220\n+HOLO_POKEMON_FAMILY_ID_V055" +
+      "7_FAMILY_DWEBBLE\020\255\004\0220\n+HOLO_POKEMON_FAMI" +
+      "LY_ID_V0559_FAMILY_SCRAGGY\020\257\004\0221\n,HOLO_PO" +
+      "KEMON_FAMILY_ID_V0561_FAMILY_SIGILYPH\020\261\004" +
+      "\022/\n*HOLO_POKEMON_FAMILY_ID_V0562_FAMILY_" +
+      "YAMASK\020\262\004\0221\n,HOLO_POKEMON_FAMILY_ID_V056" +
+      "4_FAMILY_TIRTOUGA\020\264\004\022/\n*HOLO_POKEMON_FAM" +
+      "ILY_ID_V0566_FAMILY_ARCHEN\020\266\004\0221\n,HOLO_PO" +
+      "KEMON_FAMILY_ID_V0568_FAMILY_TRUBBISH\020\270\004" +
+      "\022.\n)HOLO_POKEMON_FAMILY_ID_V0570_FAMILY_" +
+      "ZORUA\020\272\004\0221\n,HOLO_POKEMON_FAMILY_ID_V0572" +
+      "_FAMILY_MINCCINO\020\274\004\0220\n+HOLO_POKEMON_FAMI" +
+      "LY_ID_V0574_FAMILY_GOTHITA\020\276\004\0220\n+HOLO_PO" +
+      "KEMON_FAMILY_ID_V0577_FAMILY_SOLOSIS\020\301\004\022" +
+      "1\n,HOLO_POKEMON_FAMILY_ID_V0580_FAMILY_D" +
+      "UCKLETT\020\304\004\0222\n-HOLO_POKEMON_FAMILY_ID_V05" +
+      "82_FAMILY_VANILLITE\020\306\004\0221\n,HOLO_POKEMON_F" +
+      "AMILY_ID_V0585_FAMILY_DEERLING\020\311\004\022/\n*HOL" +
+      "O_POKEMON_FAMILY_ID_V0587_FAMILY_EMOLGA\020" +
+      "\313\004\0223\n.HOLO_POKEMON_FAMILY_ID_V0588_FAMIL" +
+      "Y_KARRABLAST\020\314\004\0220\n+HOLO_POKEMON_FAMILY_I" +
+      "D_V0590_FAMILY_FOONGUS\020\316\004\0221\n,HOLO_POKEMO" +
+      "N_FAMILY_ID_V0592_FAMILY_FRILLISH\020\320\004\0222\n-" +
+      "HOLO_POKEMON_FAMILY_ID_V0594_FAMILY_ALOM" +
+      "OMOLA\020\322\004\022/\n*HOLO_POKEMON_FAMILY_ID_V0595" +
+      "_FAMILY_JOLTIK\020\323\004\0222\n-HOLO_POKEMON_FAMILY" +
+      "_ID_V0597_FAMILY_FERROSEED\020\325\004\022.\n)HOLO_PO" +
+      "KEMON_FAMILY_ID_V0599_FAMILY_KLINK\020\327\004\022/\n" +
+      "*HOLO_POKEMON_FAMILY_ID_V0602_FAMILY_TYN" +
+      "AMO\020\332\004\022/\n*HOLO_POKEMON_FAMILY_ID_V0605_F" +
+      "AMILY_ELGYEM\020\335\004\0220\n+HOLO_POKEMON_FAMILY_I" +
+      "D_V0607_FAMILY_LITWICK\020\337\004\022-\n(HOLO_POKEMO" +
+      "N_FAMILY_ID_V0610_FAMILY_AXEW\020\342\004\0220\n+HOLO" +
+      "_POKEMON_FAMILY_ID_V0613_FAMILY_CUBCHOO\020" +
+      "\345\004\0222\n-HOLO_POKEMON_FAMILY_ID_V0615_FAMIL" +
+      "Y_CRYOGONAL\020\347\004\0220\n+HOLO_POKEMON_FAMILY_ID" +
+      "_V0616_FAMILY_SHELMET\020\350\004\0221\n,HOLO_POKEMON" +
+      "_FAMILY_ID_V0618_FAMILY_STUNFISK\020\352\004\0220\n+H" +
+      "OLO_POKEMON_FAMILY_ID_V0619_FAMILY_MIENF" +
+      "OO\020\353\004\0222\n-HOLO_POKEMON_FAMILY_ID_V0621_FA" +
+      "MILY_DRUDDIGON\020\355\004\022/\n*HOLO_POKEMON_FAMILY" +
+      "_ID_V0622_FAMILY_GOLETT\020\356\004\0221\n,HOLO_POKEM" +
+      "ON_FAMILY_ID_V0624_FAMILY_PAWNIARD\020\360\004\0223\n" +
+      ".HOLO_POKEMON_FAMILY_ID_V0626_FAMILY_BOU" +
+      "FFALANT\020\362\004\0220\n+HOLO_POKEMON_FAMILY_ID_V06" +
+      "27_FAMILY_RUFFLET\020\363\004\0220\n+HOLO_POKEMON_FAM" +
+      "ILY_ID_V0629_FAMILY_VULLABY\020\365\004\0220\n+HOLO_P" +
+      "OKEMON_FAMILY_ID_V0631_FAMILY_HEATMOR\020\367\004" +
+      "\022/\n*HOLO_POKEMON_FAMILY_ID_V0632_FAMILY_" +
+      "DURANT\020\370\004\022.\n)HOLO_POKEMON_FAMILY_ID_V063" +
+      "3_FAMILY_DEINO\020\371\004\0221\n,HOLO_POKEMON_FAMILY" +
+      "_ID_V0636_FAMILY_LARVESTA\020\374\004\0221\n,HOLO_POK" +
+      "EMON_FAMILY_ID_V0638_FAMILY_COBALION\020\376\004\022" +
+      "2\n-HOLO_POKEMON_FAMILY_ID_V0639_FAMILY_T" +
+      "ERRAKION\020\377\004\0221\n,HOLO_POKEMON_FAMILY_ID_V0" +
+      "640_FAMILY_VIRIZION\020\200\005\0221\n,HOLO_POKEMON_F" +
+      "AMILY_ID_V0641_FAMILY_TORNADUS\020\201\005\0222\n-HOL" +
+      "O_POKEMON_FAMILY_ID_V0642_FAMILY_THUNDUR" +
+      "US\020\202\005\0221\n,HOLO_POKEMON_FAMILY_ID_V0643_FA" +
+      "MILY_RESHIRAM\020\203\005\022/\n*HOLO_POKEMON_FAMILY_" +
+      "ID_V0644_FAMILY_ZEKROM\020\204\005\0221\n,HOLO_POKEMO" +
+      "N_FAMILY_ID_V0645_FAMILY_LANDORUS\020\205\005\022/\n*" +
+      "HOLO_POKEMON_FAMILY_ID_V0646_FAMILY_KYUR" +
+      "EM\020\206\005\022/\n*HOLO_POKEMON_FAMILY_ID_V0647_FA" +
+      "MILY_KELDEO\020\207\005\0221\n,HOLO_POKEMON_FAMILY_ID" +
+      "_V0648_FAMILY_MELOETTA\020\210\005\0221\n,HOLO_POKEMO" +
+      "N_FAMILY_ID_V0649_FAMILY_GENESECT\020\211\005\022/\n*" +
+      "HOLO_POKEMON_FAMILY_ID_V0808_FAMILY_MELT" +
+      "AN\020\250\006*\346k\n\rHoloBadgeType\022\037\n\033HOLO_BADGE_TY" +
+      "PE_BADGE_UNSET\020\000\022#\n\037HOLO_BADGE_TYPE_BADG" +
+      "E_TRAVEL_KM\020\001\022)\n%HOLO_BADGE_TYPE_BADGE_P" +
+      "OKEDEX_ENTRIES\020\002\022\'\n#HOLO_BADGE_TYPE_BADG" +
+      "E_CAPTURE_TOTAL\020\003\022\'\n#HOLO_BADGE_TYPE_BAD" +
+      "GE_DEFEATED_FORT\020\004\022\'\n#HOLO_BADGE_TYPE_BA" +
+      "DGE_EVOLVED_TOTAL\020\005\022\'\n#HOLO_BADGE_TYPE_B" +
+      "ADGE_HATCHED_TOTAL\020\006\022+\n\'HOLO_BADGE_TYPE_" +
+      "BADGE_ENCOUNTERED_TOTAL\020\007\022+\n\'HOLO_BADGE_" +
+      "TYPE_BADGE_POKESTOPS_VISITED\020\010\022*\n&HOLO_B" +
+      "ADGE_TYPE_BADGE_UNIQUE_POKESTOPS\020\t\022)\n%HO" +
+      "LO_BADGE_TYPE_BADGE_POKEBALL_THROWN\020\n\022&\n" +
+      "\"HOLO_BADGE_TYPE_BADGE_BIG_MAGIKARP\020\013\022(\n" +
+      "$HOLO_BADGE_TYPE_BADGE_DEPLOYED_TOTAL\020\014\022" +
+      "+\n\'HOLO_BADGE_TYPE_BADGE_BATTLE_ATTACK_W" +
+      "ON\020\r\022-\n)HOLO_BADGE_TYPE_BADGE_BATTLE_TRA" +
+      "INING_WON\020\016\022+\n\'HOLO_BADGE_TYPE_BADGE_BAT" +
+      "TLE_DEFEND_WON\020\017\022)\n%HOLO_BADGE_TYPE_BADG" +
+      "E_PRESTIGE_RAISED\020\020\022*\n&HOLO_BADGE_TYPE_B" +
+      "ADGE_PRESTIGE_DROPPED\020\021\022%\n!HOLO_BADGE_TY" +
+      "PE_BADGE_TYPE_NORMAL\020\022\022\'\n#HOLO_BADGE_TYP" +
+      "E_BADGE_TYPE_FIGHTING\020\023\022%\n!HOLO_BADGE_TY" +
+      "PE_BADGE_TYPE_FLYING\020\024\022%\n!HOLO_BADGE_TYP" +
+      "E_BADGE_TYPE_POISON\020\025\022%\n!HOLO_BADGE_TYPE" +
+      "_BADGE_TYPE_GROUND\020\026\022#\n\037HOLO_BADGE_TYPE_" +
+      "BADGE_TYPE_ROCK\020\027\022\"\n\036HOLO_BADGE_TYPE_BAD" +
+      "GE_TYPE_BUG\020\030\022$\n HOLO_BADGE_TYPE_BADGE_T" +
+      "YPE_GHOST\020\031\022$\n HOLO_BADGE_TYPE_BADGE_TYP" +
+      "E_STEEL\020\032\022#\n\037HOLO_BADGE_TYPE_BADGE_TYPE_" +
+      "FIRE\020\033\022$\n HOLO_BADGE_TYPE_BADGE_TYPE_WAT" +
+      "ER\020\034\022$\n HOLO_BADGE_TYPE_BADGE_TYPE_GRASS" +
+      "\020\035\022\'\n#HOLO_BADGE_TYPE_BADGE_TYPE_ELECTRI" +
+      "C\020\036\022&\n\"HOLO_BADGE_TYPE_BADGE_TYPE_PSYCHI" +
+      "C\020\037\022\"\n\036HOLO_BADGE_TYPE_BADGE_TYPE_ICE\020 \022" +
+      "%\n!HOLO_BADGE_TYPE_BADGE_TYPE_DRAGON\020!\022#" +
+      "\n\037HOLO_BADGE_TYPE_BADGE_TYPE_DARK\020\"\022$\n H" +
+      "OLO_BADGE_TYPE_BADGE_TYPE_FAIRY\020#\022\'\n#HOL" +
+      "O_BADGE_TYPE_BADGE_SMALL_RATTATA\020$\022!\n\035HO" +
+      "LO_BADGE_TYPE_BADGE_PIKACHU\020%\022\037\n\033HOLO_BA" +
+      "DGE_TYPE_BADGE_UNOWN\020&\022.\n*HOLO_BADGE_TYP" +
+      "E_BADGE_POKEDEX_ENTRIES_GEN2\020\'\022)\n%HOLO_B" +
+      "ADGE_TYPE_BADGE_RAID_BATTLE_WON\020(\022.\n*HOL" +
+      "O_BADGE_TYPE_BADGE_LEGENDARY_BATTLE_WON\020" +
+      ")\022%\n!HOLO_BADGE_TYPE_BADGE_BERRIES_FED\020*" +
+      "\022(\n$HOLO_BADGE_TYPE_BADGE_HOURS_DEFENDED" +
+      "\020+\022&\n\"HOLO_BADGE_TYPE_BADGE_PLACE_HOLDER" +
+      "\020,\022.\n*HOLO_BADGE_TYPE_BADGE_POKEDEX_ENTR" +
+      "IES_GEN3\020-\022*\n&HOLO_BADGE_TYPE_BADGE_CHAL" +
+      "LENGE_QUESTS\020.\022\'\n#HOLO_BADGE_TYPE_BADGE_" +
+      "MEW_ENCOUNTER\020/\022+\n\'HOLO_BADGE_TYPE_BADGE" +
+      "_MAX_LEVEL_FRIENDS\0200\022!\n\035HOLO_BADGE_TYPE_" +
+      "BADGE_TRADING\0201\022*\n&HOLO_BADGE_TYPE_BADGE" +
+      "_TRADING_DISTANCE\0202\022.\n*HOLO_BADGE_TYPE_B" +
+      "ADGE_POKEDEX_ENTRIES_GEN4\0203\022&\n\"HOLO_BADG" +
+      "E_TYPE_BADGE_GREAT_LEAGUE\0204\022&\n\"HOLO_BADG" +
+      "E_TYPE_BADGE_ULTRA_LEAGUE\0205\022\'\n#HOLO_BADG" +
+      "E_TYPE_BADGE_MASTER_LEAGUE\0206\022#\n\037HOLO_BAD" +
+      "GE_TYPE_BADGE_PHOTOBOMB\0207\022.\n*HOLO_BADGE_" +
+      "TYPE_BADGE_POKEDEX_ENTRIES_GEN5\0208\022*\n&HOL" +
+      "O_BADGE_TYPE_BADGE_POKEMON_PURIFIED\0209\0220\n" +
+      ",HOLO_BADGE_TYPE_BADGE_ROCKET_GRUNTS_DEF" +
+      "EATED\020:\0222\n.HOLO_BADGE_TYPE_BADGE_ROCKET_" +
+      "GIOVANNI_DEFEATED\020;\022$\n HOLO_BADGE_TYPE_B" +
+      "ADGE_BUDDY_BEST\020<\022.\n*HOLO_BADGE_TYPE_BAD" +
+      "GE_POKEDEX_ENTRIES_GEN6\020=\022.\n*HOLO_BADGE_" +
+      "TYPE_BADGE_POKEDEX_ENTRIES_GEN7\020>\022.\n*HOL" +
+      "O_BADGE_TYPE_BADGE_POKEDEX_ENTRIES_GEN8\020" +
+      "?\022\"\n\036HOLO_BADGE_TYPE_BADGE_WAYFARER\020D\022)\n" +
+      "%HOLO_BADGE_TYPE_BADGE_TOTAL_MEGA_EVOS\020E" +
+      "\022*\n&HOLO_BADGE_TYPE_BADGE_UNIQUE_MEGA_EV" +
+      "OS\020F\022$\n\037HOLO_BADGE_TYPE_BADGE_EVENT_MIN\020" +
+      "\320\017\0221\n,HOLO_BADGE_TYPE_BADGE_CHICAGO_FEST" +
+      "_JULY_2017\020\321\017\0229\n4HOLO_BADGE_TYPE_BADGE_P" +
+      "IKACHU_OUTBREAK_YOKOHAMA_2017\020\322\017\0222\n-HOLO" +
+      "_BADGE_TYPE_BADGE_SAFARI_ZONE_EUROPE_201" +
+      "7\020\323\017\0228\n3HOLO_BADGE_TYPE_BADGE_SAFARI_ZON" +
+      "E_EUROPE_2017_10_07\020\324\017\0228\n3HOLO_BADGE_TYP" +
+      "E_BADGE_SAFARI_ZONE_EUROPE_2017_10_14\020\325\017" +
+      "\022;\n6HOLO_BADGE_TYPE_BADGE_CHICAGO_FEST_J" +
+      "ULY_2018_SAT_NORTH\020\326\017\022;\n6HOLO_BADGE_TYPE" +
+      "_BADGE_CHICAGO_FEST_JULY_2018_SAT_SOUTH\020" +
+      "\327\017\022;\n6HOLO_BADGE_TYPE_BADGE_CHICAGO_FEST" +
+      "_JULY_2018_SUN_NORTH\020\330\017\022;\n6HOLO_BADGE_TY" +
+      "PE_BADGE_CHICAGO_FEST_JULY_2018_SUN_SOUT" +
+      "H\020\331\017\0223\n.HOLO_BADGE_TYPE_BADGE_APAC_PARTN" +
+      "ER_JULY_2018_0\020\332\017\0223\n.HOLO_BADGE_TYPE_BAD" +
+      "GE_APAC_PARTNER_JULY_2018_1\020\333\017\0223\n.HOLO_B" +
+      "ADGE_TYPE_BADGE_APAC_PARTNER_JULY_2018_2" +
+      "\020\334\017\0223\n.HOLO_BADGE_TYPE_BADGE_APAC_PARTNE" +
+      "R_JULY_2018_3\020\335\017\0223\n.HOLO_BADGE_TYPE_BADG" +
+      "E_APAC_PARTNER_JULY_2018_4\020\336\017\0223\n.HOLO_BA" +
+      "DGE_TYPE_BADGE_APAC_PARTNER_JULY_2018_5\020" +
+      "\337\017\0223\n.HOLO_BADGE_TYPE_BADGE_APAC_PARTNER" +
+      "_JULY_2018_6\020\340\017\0223\n.HOLO_BADGE_TYPE_BADGE" +
+      "_APAC_PARTNER_JULY_2018_7\020\341\017\0223\n.HOLO_BAD" +
+      "GE_TYPE_BADGE_APAC_PARTNER_JULY_2018_8\020\342" +
+      "\017\0223\n.HOLO_BADGE_TYPE_BADGE_APAC_PARTNER_" +
+      "JULY_2018_9\020\343\017\0226\n1HOLO_BADGE_TYPE_BADGE_" +
+      "YOKOSUKA_29_AUG_2018_MIKASA\020\344\017\0225\n0HOLO_B" +
+      "ADGE_TYPE_BADGE_YOKOSUKA_29_AUG_2018_VER" +
+      "NY\020\345\017\0228\n3HOLO_BADGE_TYPE_BADGE_YOKOSUKA_" +
+      "29_AUG_2018_KURIHAMA\020\346\017\0226\n1HOLO_BADGE_TY" +
+      "PE_BADGE_YOKOSUKA_30_AUG_2018_MIKASA\020\347\017\022" +
+      "5\n0HOLO_BADGE_TYPE_BADGE_YOKOSUKA_30_AUG" +
+      "_2018_VERNY\020\350\017\0228\n3HOLO_BADGE_TYPE_BADGE_" +
+      "YOKOSUKA_30_AUG_2018_KURIHAMA\020\351\017\0226\n1HOLO" +
+      "_BADGE_TYPE_BADGE_YOKOSUKA_31_AUG_2018_M" +
+      "IKASA\020\352\017\0225\n0HOLO_BADGE_TYPE_BADGE_YOKOSU" +
+      "KA_31_AUG_2018_VERNY\020\353\017\0228\n3HOLO_BADGE_TY" +
+      "PE_BADGE_YOKOSUKA_31_AUG_2018_KURIHAMA\020\354" +
+      "\017\0225\n0HOLO_BADGE_TYPE_BADGE_YOKOSUKA_1_SE" +
+      "P_2018_MIKASA\020\355\017\0224\n/HOLO_BADGE_TYPE_BADG" +
+      "E_YOKOSUKA_1_SEP_2018_VERNY\020\356\017\0227\n2HOLO_B" +
+      "ADGE_TYPE_BADGE_YOKOSUKA_1_SEP_2018_KURI" +
+      "HAMA\020\357\017\0225\n0HOLO_BADGE_TYPE_BADGE_YOKOSUK" +
+      "A_2_SEP_2018_MIKASA\020\360\017\0224\n/HOLO_BADGE_TYP" +
+      "E_BADGE_YOKOSUKA_2_SEP_2018_VERNY\020\361\017\0227\n2" +
       "HOLO_BADGE_TYPE_BADGE_YOKOSUKA_2_SEP_201" +
-      "8_MIKASA\020\360\017\0224\n/HOLO_BADGE_TYPE_BADGE_YOK" +
-      "OSUKA_2_SEP_2018_VERNY\020\361\017\0227\n2HOLO_BADGE_" +
-      "TYPE_BADGE_YOKOSUKA_2_SEP_2018_KURIHAMA\020" +
-      "\362\017\022\'\n\"HOLO_BADGE_TYPE_BADGE_TOP_BANANA_1" +
-      "\020\363\017\022\'\n\"HOLO_BADGE_TYPE_BADGE_TOP_BANANA_" +
-      "2\020\364\017\022\'\n\"HOLO_BADGE_TYPE_BADGE_TOP_BANANA" +
-      "_3\020\365\017\022/\n*HOLO_BADGE_TYPE_BADGE_PARTNER_E" +
-      "VENT_2019_0\020\366\017\022/\n*HOLO_BADGE_TYPE_BADGE_" +
-      "PARTNER_EVENT_2019_1\020\367\017\022/\n*HOLO_BADGE_TY" +
-      "PE_BADGE_PARTNER_EVENT_2019_2\020\370\017\022/\n*HOLO" +
-      "_BADGE_TYPE_BADGE_PARTNER_EVENT_2019_3\020\371" +
-      "\017\022/\n*HOLO_BADGE_TYPE_BADGE_PARTNER_EVENT" +
-      "_2019_4\020\372\017\022/\n*HOLO_BADGE_TYPE_BADGE_PART" +
-      "NER_EVENT_2019_5\020\373\017\022/\n*HOLO_BADGE_TYPE_B" +
-      "ADGE_PARTNER_EVENT_2019_6\020\374\017\022/\n*HOLO_BAD" +
-      "GE_TYPE_BADGE_PARTNER_EVENT_2019_7\020\375\017\022/\n" +
-      "*HOLO_BADGE_TYPE_BADGE_PARTNER_EVENT_201" +
-      "9_8\020\376\017\022/\n*HOLO_BADGE_TYPE_BADGE_PARTNER_" +
-      "EVENT_2019_9\020\377\017\022.\n)HOLO_BADGE_TYPE_BADGE" +
-      "_SENTOSA_18_APR_2019\020\200\020\022.\n)HOLO_BADGE_TY" +
-      "PE_BADGE_SENTOSA_19_APR_2019\020\201\020\022.\n)HOLO_" +
-      "BADGE_TYPE_BADGE_SENTOSA_20_APR_2019\020\202\020\022" +
-      ".\n)HOLO_BADGE_TYPE_BADGE_SENTOSA_21_APR_" +
-      "2019\020\203\020\022.\n)HOLO_BADGE_TYPE_BADGE_SENTOSA" +
-      "_22_APR_2019\020\204\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_00\020\205\020\0220\n+HOLO_BADGE_" +
-      "TYPE_BADGE_CITY_EXPLORER_PASS_01\020\206\020\0220\n+H" +
-      "OLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS_" +
-      "02\020\207\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXPL" +
-      "ORER_PASS_03\020\210\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_04\020\211\020\0220\n+HOLO_BADGE_" +
-      "TYPE_BADGE_CITY_EXPLORER_PASS_05\020\212\020\0220\n+H" +
-      "OLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS_" +
-      "06\020\213\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXPL" +
-      "ORER_PASS_07\020\214\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_08\020\215\020\0220\n+HOLO_BADGE_" +
-      "TYPE_BADGE_CITY_EXPLORER_PASS_09\020\216\020\0220\n+H" +
-      "OLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS_" +
-      "10\020\217\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXPL" +
-      "ORER_PASS_11\020\220\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_12\020\221\020\0220\n+HOLO_BADGE_" +
-      "TYPE_BADGE_CITY_EXPLORER_PASS_13\020\222\020\0220\n+H" +
-      "OLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS_" +
-      "14\020\223\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXPL" +
-      "ORER_PASS_15\020\224\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_16\020\225\020\0220\n+HOLO_BADGE_" +
-      "TYPE_BADGE_CITY_EXPLORER_PASS_17\020\226\020\0220\n+H" +
-      "OLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS_" +
-      "18\020\227\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXPL" +
-      "ORER_PASS_19\020\230\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_20\020\231\020\0220\n+HOLO_BADGE_" +
-      "TYPE_BADGE_CITY_EXPLORER_PASS_21\020\232\020\0220\n+H" +
-      "OLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS_" +
-      "22\020\233\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXPL" +
-      "ORER_PASS_23\020\234\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_24\020\235\020\0220\n+HOLO_BADGE_" +
-      "TYPE_BADGE_CITY_EXPLORER_PASS_25\020\236\020\0220\n+H" +
-      "OLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS_" +
-      "26\020\237\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXPL" +
-      "ORER_PASS_27\020\240\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_28\020\241\020\0220\n+HOLO_BADGE_" +
-      "TYPE_BADGE_CITY_EXPLORER_PASS_29\020\242\020\0220\n+H" +
-      "OLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS_" +
-      "30\020\243\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXPL" +
-      "ORER_PASS_31\020\244\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_32\020\245\020\0220\n+HOLO_BADGE_" +
-      "TYPE_BADGE_CITY_EXPLORER_PASS_33\020\246\020\0220\n+H" +
-      "OLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS_" +
-      "34\020\247\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXPL" +
-      "ORER_PASS_35\020\250\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_36\020\251\020\0220\n+HOLO_BADGE_" +
-      "TYPE_BADGE_CITY_EXPLORER_PASS_37\020\252\020\0220\n+H" +
-      "OLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS_" +
-      "38\020\253\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXPL" +
-      "ORER_PASS_39\020\254\020\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_CITY_EXPLORER_PASS_40\020\255\020\022,\n\'HOLO_BADGE_" +
-      "TYPE_BADGE_DYNAMIC_EVENT_MIN\020\210\'\022D\n?HOLO_" +
-      "BADGE_TYPE_BADGE_GOFEST_2019_AMERICAS_DA" +
-      "Y_00_NORTH_GENERAL\020\211\'\022H\nCHOLO_BADGE_TYPE" +
-      "_BADGE_GOFEST_2019_AMERICAS_DAY_00_NORTH" +
-      "_EARLYACCESS\020\212\'\022D\n?HOLO_BADGE_TYPE_BADGE" +
-      "_GOFEST_2019_AMERICAS_DAY_00_SOUTH_GENER" +
-      "AL\020\213\'\022H\nCHOLO_BADGE_TYPE_BADGE_GOFEST_20" +
-      "19_AMERICAS_DAY_00_SOUTH_EARLYACCESS\020\214\'\022" +
-      "D\n?HOLO_BADGE_TYPE_BADGE_GOFEST_2019_AME" +
-      "RICAS_DAY_01_NORTH_GENERAL\020\215\'\022H\nCHOLO_BA" +
-      "DGE_TYPE_BADGE_GOFEST_2019_AMERICAS_DAY_" +
-      "01_NORTH_EARLYACCESS\020\216\'\022D\n?HOLO_BADGE_TY",
-      "PE_BADGE_GOFEST_2019_AMERICAS_DAY_01_SOU" +
-      "TH_GENERAL\020\217\'\022H\nCHOLO_BADGE_TYPE_BADGE_G" +
-      "OFEST_2019_AMERICAS_DAY_01_SOUTH_EARLYAC" +
-      "CESS\020\220\'\022D\n?HOLO_BADGE_TYPE_BADGE_GOFEST_" +
-      "2019_AMERICAS_DAY_02_NORTH_GENERAL\020\221\'\022H\n" +
-      "CHOLO_BADGE_TYPE_BADGE_GOFEST_2019_AMERI" +
-      "CAS_DAY_02_NORTH_EARLYACCESS\020\222\'\022D\n?HOLO_" +
-      "BADGE_TYPE_BADGE_GOFEST_2019_AMERICAS_DA" +
-      "Y_02_SOUTH_GENERAL\020\223\'\022H\nCHOLO_BADGE_TYPE" +
-      "_BADGE_GOFEST_2019_AMERICAS_DAY_02_SOUTH" +
-      "_EARLYACCESS\020\224\'\022D\n?HOLO_BADGE_TYPE_BADGE" +
-      "_GOFEST_2019_AMERICAS_DAY_03_NORTH_GENER" +
-      "AL\020\225\'\022H\nCHOLO_BADGE_TYPE_BADGE_GOFEST_20" +
-      "19_AMERICAS_DAY_03_NORTH_EARLYACCESS\020\226\'\022" +
-      "D\n?HOLO_BADGE_TYPE_BADGE_GOFEST_2019_AME" +
-      "RICAS_DAY_03_SOUTH_GENERAL\020\227\'\022H\nCHOLO_BA" +
-      "DGE_TYPE_BADGE_GOFEST_2019_AMERICAS_DAY_" +
-      "03_SOUTH_EARLYACCESS\020\230\'\022D\n?HOLO_BADGE_TY" +
-      "PE_BADGE_GOFEST_2019_AMERICAS_DAY_04_NOR" +
-      "TH_GENERAL\020\231\'\022H\nCHOLO_BADGE_TYPE_BADGE_G" +
-      "OFEST_2019_AMERICAS_DAY_04_NORTH_EARLYAC" +
-      "CESS\020\232\'\022D\n?HOLO_BADGE_TYPE_BADGE_GOFEST_" +
-      "2019_AMERICAS_DAY_04_SOUTH_GENERAL\020\233\'\022H\n" +
-      "CHOLO_BADGE_TYPE_BADGE_GOFEST_2019_AMERI" +
-      "CAS_DAY_04_SOUTH_EARLYACCESS\020\234\'\022:\n5HOLO_" +
-      "BADGE_TYPE_BADGE_GOFEST_2019_EMEA_DAY_00" +
-      "_GENERAL\020\235\'\022>\n9HOLO_BADGE_TYPE_BADGE_GOF" +
-      "EST_2019_EMEA_DAY_00_EARLYACCESS\020\236\'\022:\n5H" +
-      "OLO_BADGE_TYPE_BADGE_GOFEST_2019_EMEA_DA" +
-      "Y_01_GENERAL\020\237\'\022>\n9HOLO_BADGE_TYPE_BADGE" +
-      "_GOFEST_2019_EMEA_DAY_01_EARLYACCESS\020\240\'\022" +
-      ":\n5HOLO_BADGE_TYPE_BADGE_GOFEST_2019_EME" +
-      "A_DAY_02_GENERAL\020\241\'\022>\n9HOLO_BADGE_TYPE_B" +
-      "ADGE_GOFEST_2019_EMEA_DAY_02_EARLYACCESS" +
-      "\020\242\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOFEST_2019" +
-      "_EMEA_DAY_03_GENERAL\020\243\'\022>\n9HOLO_BADGE_TY" +
-      "PE_BADGE_GOFEST_2019_EMEA_DAY_03_EARLYAC" +
-      "CESS\020\244\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOFEST_" +
-      "2019_EMEA_DAY_04_GENERAL\020\245\'\022>\n9HOLO_BADG" +
-      "E_TYPE_BADGE_GOFEST_2019_EMEA_DAY_04_EAR" +
-      "LYACCESS\020\246\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOF" +
-      "EST_2019_APAC_DAY_00_GENERAL\020\247\'\022:\n5HOLO_" +
-      "BADGE_TYPE_BADGE_GOFEST_2019_APAC_DAY_01" +
-      "_GENERAL\020\250\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOF" +
-      "EST_2019_APAC_DAY_02_GENERAL\020\251\'\022:\n5HOLO_" +
-      "BADGE_TYPE_BADGE_GOFEST_2019_APAC_DAY_03" +
-      "_GENERAL\020\252\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOF" +
-      "EST_2019_APAC_DAY_04_GENERAL\020\253\'\022:\n5HOLO_" +
-      "BADGE_TYPE_BADGE_GOFEST_2019_APAC_DAY_05" +
-      "_GENERAL\020\254\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOF" +
-      "EST_2019_APAC_DAY_06_GENERAL\020\255\'\022:\n5HOLO_" +
-      "BADGE_TYPE_BADGE_GOFEST_2019_APAC_DAY_07" +
-      "_GENERAL\020\256\'\022B\n=HOLO_BADGE_TYPE_BADGE_SAF" +
-      "ARIZONE_2019_MONTREAL_DAY_00_GENERAL\020\257\'\022" +
-      "F\nAHOLO_BADGE_TYPE_BADGE_SAFARIZONE_2019" +
-      "_MONTREAL_DAY_00_EARLYACCESS\020\260\'\022B\n=HOLO_" +
-      "BADGE_TYPE_BADGE_SAFARIZONE_2019_MONTREA" +
-      "L_DAY_01_GENERAL\020\261\'\022F\nAHOLO_BADGE_TYPE_B" +
-      "ADGE_SAFARIZONE_2019_MONTREAL_DAY_01_EAR" +
-      "LYACCESS\020\262\'\022B\n=HOLO_BADGE_TYPE_BADGE_SAF" +
-      "ARIZONE_2019_MONTREAL_DAY_02_GENERAL\020\263\'\022" +
-      "F\nAHOLO_BADGE_TYPE_BADGE_SAFARIZONE_2019" +
-      "_MONTREAL_DAY_02_EARLYACCESS\020\264\'\022B\n=HOLO_" +
-      "BADGE_TYPE_BADGE_SAFARIZONE_2019_MONTREA" +
-      "L_DAY_03_GENERAL\020\265\'\022F\nAHOLO_BADGE_TYPE_B" +
-      "ADGE_SAFARIZONE_2019_MONTREAL_DAY_03_EAR" +
-      "LYACCESS\020\266\'\022A\n<HOLO_BADGE_TYPE_BADGE_SAF" +
-      "ARIZONE_2020_STLOUIS_DAY_00_GENERAL\020\267\'\022E" +
-      "\n@HOLO_BADGE_TYPE_BADGE_SAFARIZONE_2020_" +
-      "STLOUIS_DAY_00_EARLYACCESS\020\270\'\022A\n<HOLO_BA" +
-      "DGE_TYPE_BADGE_SAFARIZONE_2020_STLOUIS_D" +
-      "AY_01_GENERAL\020\271\'\022E\n@HOLO_BADGE_TYPE_BADG" +
-      "E_SAFARIZONE_2020_STLOUIS_DAY_01_EARLYAC" +
-      "CESS\020\272\'\022A\n<HOLO_BADGE_TYPE_BADGE_SAFARIZ" +
-      "ONE_2020_STLOUIS_DAY_02_GENERAL\020\273\'\022E\n@HO" +
-      "LO_BADGE_TYPE_BADGE_SAFARIZONE_2020_STLO" +
-      "UIS_DAY_02_EARLYACCESS\020\274\'\022A\n<HOLO_BADGE_" +
-      "TYPE_BADGE_SAFARIZONE_2020_STLOUIS_DAY_0" +
-      "3_GENERAL\020\275\'\022E\n@HOLO_BADGE_TYPE_BADGE_SA" +
-      "FARIZONE_2020_STLOUIS_DAY_03_EARLYACCESS" +
-      "\020\276\'\022C\n>HOLO_BADGE_TYPE_BADGE_SAFARIZONE_" +
-      "2020_LIVERPOOL_DAY_00_GENERAL\020\277\'\022G\nBHOLO" +
-      "_BADGE_TYPE_BADGE_SAFARIZONE_2020_LIVERP" +
-      "OOL_DAY_00_EARLYACCESS\020\300\'\022C\n>HOLO_BADGE_" +
-      "TYPE_BADGE_SAFARIZONE_2020_LIVERPOOL_DAY" +
-      "_01_GENERAL\020\301\'\022G\nBHOLO_BADGE_TYPE_BADGE_" +
-      "SAFARIZONE_2020_LIVERPOOL_DAY_01_EARLYAC" +
-      "CESS\020\302\'\022C\n>HOLO_BADGE_TYPE_BADGE_SAFARIZ" +
-      "ONE_2020_LIVERPOOL_DAY_02_GENERAL\020\303\'\022G\nB" +
+      "8_KURIHAMA\020\362\017\022\'\n\"HOLO_BADGE_TYPE_BADGE_T" +
+      "OP_BANANA_1\020\363\017\022\'\n\"HOLO_BADGE_TYPE_BADGE_" +
+      "TOP_BANANA_2\020\364\017\022\'\n\"HOLO_BADGE_TYPE_BADGE" +
+      "_TOP_BANANA_3\020\365\017\022/\n*HOLO_BADGE_TYPE_BADG" +
+      "E_PARTNER_EVENT_2019_0\020\366\017\022/\n*HOLO_BADGE_" +
+      "TYPE_BADGE_PARTNER_EVENT_2019_1\020\367\017\022/\n*HO" +
+      "LO_BADGE_TYPE_BADGE_PARTNER_EVENT_2019_2" +
+      "\020\370\017\022/\n*HOLO_BADGE_TYPE_BADGE_PARTNER_EVE" +
+      "NT_2019_3\020\371\017\022/\n*HOLO_BADGE_TYPE_BADGE_PA" +
+      "RTNER_EVENT_2019_4\020\372\017\022/\n*HOLO_BADGE_TYPE" +
+      "_BADGE_PARTNER_EVENT_2019_5\020\373\017\022/\n*HOLO_B" +
+      "ADGE_TYPE_BADGE_PARTNER_EVENT_2019_6\020\374\017\022" +
+      "/\n*HOLO_BADGE_TYPE_BADGE_PARTNER_EVENT_2" +
+      "019_7\020\375\017\022/\n*HOLO_BADGE_TYPE_BADGE_PARTNE" +
+      "R_EVENT_2019_8\020\376\017\022/\n*HOLO_BADGE_TYPE_BAD" +
+      "GE_PARTNER_EVENT_2019_9\020\377\017\022.\n)HOLO_BADGE" +
+      "_TYPE_BADGE_SENTOSA_18_APR_2019\020\200\020\022.\n)HO" +
+      "LO_BADGE_TYPE_BADGE_SENTOSA_19_APR_2019\020" +
+      "\201\020\022.\n)HOLO_BADGE_TYPE_BADGE_SENTOSA_20_A" +
+      "PR_2019\020\202\020\022.\n)HOLO_BADGE_TYPE_BADGE_SENT" +
+      "OSA_21_APR_2019\020\203\020\022.\n)HOLO_BADGE_TYPE_BA" +
+      "DGE_SENTOSA_22_APR_2019\020\204\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_00\020\205\020\0220\n+" +
+      "HOLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS" +
+      "_01\020\206\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXP" +
+      "LORER_PASS_02\020\207\020\0220\n+HOLO_BADGE_TYPE_BADG" +
+      "E_CITY_EXPLORER_PASS_03\020\210\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_04\020\211\020\0220\n+" +
+      "HOLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS" +
+      "_05\020\212\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXP" +
+      "LORER_PASS_06\020\213\020\0220\n+HOLO_BADGE_TYPE_BADG" +
+      "E_CITY_EXPLORER_PASS_07\020\214\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_08\020\215\020\0220\n+" +
+      "HOLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS" +
+      "_09\020\216\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXP" +
+      "LORER_PASS_10\020\217\020\0220\n+HOLO_BADGE_TYPE_BADG" +
+      "E_CITY_EXPLORER_PASS_11\020\220\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_12\020\221\020\0220\n+" +
+      "HOLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS" +
+      "_13\020\222\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXP" +
+      "LORER_PASS_14\020\223\020\0220\n+HOLO_BADGE_TYPE_BADG" +
+      "E_CITY_EXPLORER_PASS_15\020\224\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_16\020\225\020\0220\n+" +
+      "HOLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS" +
+      "_17\020\226\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXP" +
+      "LORER_PASS_18\020\227\020\0220\n+HOLO_BADGE_TYPE_BADG" +
+      "E_CITY_EXPLORER_PASS_19\020\230\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_20\020\231\020\0220\n+" +
+      "HOLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS" +
+      "_21\020\232\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXP" +
+      "LORER_PASS_22\020\233\020\0220\n+HOLO_BADGE_TYPE_BADG" +
+      "E_CITY_EXPLORER_PASS_23\020\234\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_24\020\235\020\0220\n+" +
+      "HOLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS" +
+      "_25\020\236\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXP" +
+      "LORER_PASS_26\020\237\020\0220\n+HOLO_BADGE_TYPE_BADG" +
+      "E_CITY_EXPLORER_PASS_27\020\240\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_28\020\241\020\0220\n+" +
+      "HOLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS" +
+      "_29\020\242\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXP" +
+      "LORER_PASS_30\020\243\020\0220\n+HOLO_BADGE_TYPE_BADG" +
+      "E_CITY_EXPLORER_PASS_31\020\244\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_32\020\245\020\0220\n+" +
+      "HOLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS" +
+      "_33\020\246\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXP" +
+      "LORER_PASS_34\020\247\020\0220\n+HOLO_BADGE_TYPE_BADG" +
+      "E_CITY_EXPLORER_PASS_35\020\250\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_36\020\251\020\0220\n+" +
+      "HOLO_BADGE_TYPE_BADGE_CITY_EXPLORER_PASS" +
+      "_37\020\252\020\0220\n+HOLO_BADGE_TYPE_BADGE_CITY_EXP" +
+      "LORER_PASS_38\020\253\020\0220\n+HOLO_BADGE_TYPE_BADG" +
+      "E_CITY_EXPLORER_PASS_39\020\254\020\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_CITY_EXPLORER_PASS_40\020\255\020\022,\n\'" +
+      "HOLO_BADGE_TYPE_BADGE_DYNAMIC_EVENT_MIN\020" +
+      "\210\'\022D\n?HOLO_BADGE_TYPE_BADGE_GOFEST_2019_" +
+      "AMERICAS_DAY_00_NORTH_GENERAL\020\211\'\022H\nCHOLO" +
+      "_BADGE_TYPE_BADGE_GOFEST_2019_AMERICAS_D" +
+      "AY_00_NORTH_EARLYACCESS\020\212\'\022D\n?HOLO_BADGE" +
+      "_TYPE_BADGE_GOFEST_2019_AMERICAS_DAY_00_" +
+      "SOUTH_GENERAL\020\213\'\022H\nCHOLO_BADGE_TYPE_BADG" +
+      "E_GOFEST_2019_AMERICAS_DAY_00_SOUTH_EARL" +
+      "YACCESS\020\214\'\022D\n?HOLO_BADGE_TYPE_BADGE_GOFE",
+      "ST_2019_AMERICAS_DAY_01_NORTH_GENERAL\020\215\'" +
+      "\022H\nCHOLO_BADGE_TYPE_BADGE_GOFEST_2019_AM" +
+      "ERICAS_DAY_01_NORTH_EARLYACCESS\020\216\'\022D\n?HO" +
+      "LO_BADGE_TYPE_BADGE_GOFEST_2019_AMERICAS" +
+      "_DAY_01_SOUTH_GENERAL\020\217\'\022H\nCHOLO_BADGE_T" +
+      "YPE_BADGE_GOFEST_2019_AMERICAS_DAY_01_SO" +
+      "UTH_EARLYACCESS\020\220\'\022D\n?HOLO_BADGE_TYPE_BA" +
+      "DGE_GOFEST_2019_AMERICAS_DAY_02_NORTH_GE" +
+      "NERAL\020\221\'\022H\nCHOLO_BADGE_TYPE_BADGE_GOFEST" +
+      "_2019_AMERICAS_DAY_02_NORTH_EARLYACCESS\020" +
+      "\222\'\022D\n?HOLO_BADGE_TYPE_BADGE_GOFEST_2019_" +
+      "AMERICAS_DAY_02_SOUTH_GENERAL\020\223\'\022H\nCHOLO" +
+      "_BADGE_TYPE_BADGE_GOFEST_2019_AMERICAS_D" +
+      "AY_02_SOUTH_EARLYACCESS\020\224\'\022D\n?HOLO_BADGE" +
+      "_TYPE_BADGE_GOFEST_2019_AMERICAS_DAY_03_" +
+      "NORTH_GENERAL\020\225\'\022H\nCHOLO_BADGE_TYPE_BADG" +
+      "E_GOFEST_2019_AMERICAS_DAY_03_NORTH_EARL" +
+      "YACCESS\020\226\'\022D\n?HOLO_BADGE_TYPE_BADGE_GOFE" +
+      "ST_2019_AMERICAS_DAY_03_SOUTH_GENERAL\020\227\'" +
+      "\022H\nCHOLO_BADGE_TYPE_BADGE_GOFEST_2019_AM" +
+      "ERICAS_DAY_03_SOUTH_EARLYACCESS\020\230\'\022D\n?HO" +
+      "LO_BADGE_TYPE_BADGE_GOFEST_2019_AMERICAS" +
+      "_DAY_04_NORTH_GENERAL\020\231\'\022H\nCHOLO_BADGE_T" +
+      "YPE_BADGE_GOFEST_2019_AMERICAS_DAY_04_NO" +
+      "RTH_EARLYACCESS\020\232\'\022D\n?HOLO_BADGE_TYPE_BA" +
+      "DGE_GOFEST_2019_AMERICAS_DAY_04_SOUTH_GE" +
+      "NERAL\020\233\'\022H\nCHOLO_BADGE_TYPE_BADGE_GOFEST" +
+      "_2019_AMERICAS_DAY_04_SOUTH_EARLYACCESS\020" +
+      "\234\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOFEST_2019_" +
+      "EMEA_DAY_00_GENERAL\020\235\'\022>\n9HOLO_BADGE_TYP" +
+      "E_BADGE_GOFEST_2019_EMEA_DAY_00_EARLYACC" +
+      "ESS\020\236\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOFEST_2" +
+      "019_EMEA_DAY_01_GENERAL\020\237\'\022>\n9HOLO_BADGE" +
+      "_TYPE_BADGE_GOFEST_2019_EMEA_DAY_01_EARL" +
+      "YACCESS\020\240\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOFE" +
+      "ST_2019_EMEA_DAY_02_GENERAL\020\241\'\022>\n9HOLO_B" +
+      "ADGE_TYPE_BADGE_GOFEST_2019_EMEA_DAY_02_" +
+      "EARLYACCESS\020\242\'\022:\n5HOLO_BADGE_TYPE_BADGE_" +
+      "GOFEST_2019_EMEA_DAY_03_GENERAL\020\243\'\022>\n9HO" +
+      "LO_BADGE_TYPE_BADGE_GOFEST_2019_EMEA_DAY" +
+      "_03_EARLYACCESS\020\244\'\022:\n5HOLO_BADGE_TYPE_BA" +
+      "DGE_GOFEST_2019_EMEA_DAY_04_GENERAL\020\245\'\022>" +
+      "\n9HOLO_BADGE_TYPE_BADGE_GOFEST_2019_EMEA" +
+      "_DAY_04_EARLYACCESS\020\246\'\022:\n5HOLO_BADGE_TYP" +
+      "E_BADGE_GOFEST_2019_APAC_DAY_00_GENERAL\020" +
+      "\247\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOFEST_2019_" +
+      "APAC_DAY_01_GENERAL\020\250\'\022:\n5HOLO_BADGE_TYP" +
+      "E_BADGE_GOFEST_2019_APAC_DAY_02_GENERAL\020" +
+      "\251\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOFEST_2019_" +
+      "APAC_DAY_03_GENERAL\020\252\'\022:\n5HOLO_BADGE_TYP" +
+      "E_BADGE_GOFEST_2019_APAC_DAY_04_GENERAL\020" +
+      "\253\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOFEST_2019_" +
+      "APAC_DAY_05_GENERAL\020\254\'\022:\n5HOLO_BADGE_TYP" +
+      "E_BADGE_GOFEST_2019_APAC_DAY_06_GENERAL\020" +
+      "\255\'\022:\n5HOLO_BADGE_TYPE_BADGE_GOFEST_2019_" +
+      "APAC_DAY_07_GENERAL\020\256\'\022B\n=HOLO_BADGE_TYP" +
+      "E_BADGE_SAFARIZONE_2019_MONTREAL_DAY_00_" +
+      "GENERAL\020\257\'\022F\nAHOLO_BADGE_TYPE_BADGE_SAFA" +
+      "RIZONE_2019_MONTREAL_DAY_00_EARLYACCESS\020" +
+      "\260\'\022B\n=HOLO_BADGE_TYPE_BADGE_SAFARIZONE_2" +
+      "019_MONTREAL_DAY_01_GENERAL\020\261\'\022F\nAHOLO_B" +
+      "ADGE_TYPE_BADGE_SAFARIZONE_2019_MONTREAL" +
+      "_DAY_01_EARLYACCESS\020\262\'\022B\n=HOLO_BADGE_TYP" +
+      "E_BADGE_SAFARIZONE_2019_MONTREAL_DAY_02_" +
+      "GENERAL\020\263\'\022F\nAHOLO_BADGE_TYPE_BADGE_SAFA" +
+      "RIZONE_2019_MONTREAL_DAY_02_EARLYACCESS\020" +
+      "\264\'\022B\n=HOLO_BADGE_TYPE_BADGE_SAFARIZONE_2" +
+      "019_MONTREAL_DAY_03_GENERAL\020\265\'\022F\nAHOLO_B" +
+      "ADGE_TYPE_BADGE_SAFARIZONE_2019_MONTREAL" +
+      "_DAY_03_EARLYACCESS\020\266\'\022A\n<HOLO_BADGE_TYP" +
+      "E_BADGE_SAFARIZONE_2020_STLOUIS_DAY_00_G" +
+      "ENERAL\020\267\'\022E\n@HOLO_BADGE_TYPE_BADGE_SAFAR" +
+      "IZONE_2020_STLOUIS_DAY_00_EARLYACCESS\020\270\'" +
+      "\022A\n<HOLO_BADGE_TYPE_BADGE_SAFARIZONE_202" +
+      "0_STLOUIS_DAY_01_GENERAL\020\271\'\022E\n@HOLO_BADG" +
+      "E_TYPE_BADGE_SAFARIZONE_2020_STLOUIS_DAY" +
+      "_01_EARLYACCESS\020\272\'\022A\n<HOLO_BADGE_TYPE_BA" +
+      "DGE_SAFARIZONE_2020_STLOUIS_DAY_02_GENER" +
+      "AL\020\273\'\022E\n@HOLO_BADGE_TYPE_BADGE_SAFARIZON" +
+      "E_2020_STLOUIS_DAY_02_EARLYACCESS\020\274\'\022A\n<" +
+      "HOLO_BADGE_TYPE_BADGE_SAFARIZONE_2020_ST" +
+      "LOUIS_DAY_03_GENERAL\020\275\'\022E\n@HOLO_BADGE_TY" +
+      "PE_BADGE_SAFARIZONE_2020_STLOUIS_DAY_03_" +
+      "EARLYACCESS\020\276\'\022C\n>HOLO_BADGE_TYPE_BADGE_" +
+      "SAFARIZONE_2020_LIVERPOOL_DAY_00_GENERAL" +
+      "\020\277\'\022G\nBHOLO_BADGE_TYPE_BADGE_SAFARIZONE_" +
+      "2020_LIVERPOOL_DAY_00_EARLYACCESS\020\300\'\022C\n>" +
       "HOLO_BADGE_TYPE_BADGE_SAFARIZONE_2020_LI" +
-      "VERPOOL_DAY_02_EARLYACCESS\020\304\'\022C\n>HOLO_BA" +
+      "VERPOOL_DAY_01_GENERAL\020\301\'\022G\nBHOLO_BADGE_" +
+      "TYPE_BADGE_SAFARIZONE_2020_LIVERPOOL_DAY" +
+      "_01_EARLYACCESS\020\302\'\022C\n>HOLO_BADGE_TYPE_BA" +
+      "DGE_SAFARIZONE_2020_LIVERPOOL_DAY_02_GEN" +
+      "ERAL\020\303\'\022G\nBHOLO_BADGE_TYPE_BADGE_SAFARIZ" +
+      "ONE_2020_LIVERPOOL_DAY_02_EARLYACCESS\020\304\'" +
+      "\022C\n>HOLO_BADGE_TYPE_BADGE_SAFARIZONE_202" +
+      "0_LIVERPOOL_DAY_03_GENERAL\020\305\'\022G\nBHOLO_BA" +
       "DGE_TYPE_BADGE_SAFARIZONE_2020_LIVERPOOL" +
-      "_DAY_03_GENERAL\020\305\'\022G\nBHOLO_BADGE_TYPE_BA" +
-      "DGE_SAFARIZONE_2020_LIVERPOOL_DAY_03_EAR" +
-      "LYACCESS\020\306\'\022F\nAHOLO_BADGE_TYPE_BADGE_SAF" +
-      "ARIZONE_2020_PHILADELPHIA_DAY_00_GENERAL" +
-      "\020\307\'\022J\nEHOLO_BADGE_TYPE_BADGE_SAFARIZONE_" +
-      "2020_PHILADELPHIA_DAY_00_EARLYACCESS\020\310\'\022" +
-      "F\nAHOLO_BADGE_TYPE_BADGE_SAFARIZONE_2020" +
-      "_PHILADELPHIA_DAY_01_GENERAL\020\311\'\022J\nEHOLO_" +
-      "BADGE_TYPE_BADGE_SAFARIZONE_2020_PHILADE" +
-      "LPHIA_DAY_01_EARLYACCESS\020\312\'\022F\nAHOLO_BADG" +
-      "E_TYPE_BADGE_SAFARIZONE_2020_PHILADELPHI" +
-      "A_DAY_02_GENERAL\020\313\'\022J\nEHOLO_BADGE_TYPE_B" +
-      "ADGE_SAFARIZONE_2020_PHILADELPHIA_DAY_02" +
-      "_EARLYACCESS\020\314\'\022F\nAHOLO_BADGE_TYPE_BADGE" +
-      "_SAFARIZONE_2020_PHILADELPHIA_DAY_03_GEN" +
-      "ERAL\020\315\'\022J\nEHOLO_BADGE_TYPE_BADGE_SAFARIZ" +
-      "ONE_2020_PHILADELPHIA_DAY_03_EARLYACCESS" +
-      "\020\316\'\022+\n&HOLO_BADGE_TYPE_BADGE_GOFEST_2020" +
-      "_TEST\020\317\'\022-\n(HOLO_BADGE_TYPE_BADGE_GOFEST" +
-      "_2020_GLOBAL\020\320\'\0220\n+HOLO_BADGE_TYPE_BADGE" +
-      "_GLOBAL_TICKETED_EVENT\020\354\'\022%\n HOLO_BADGE_" +
-      "TYPE_BADGE_EVENT_0001\020\321(\022%\n HOLO_BADGE_T" +
-      "YPE_BADGE_EVENT_0002\020\322(\022%\n HOLO_BADGE_TY" +
-      "PE_BADGE_EVENT_0003\020\323(\022%\n HOLO_BADGE_TYP" +
-      "E_BADGE_EVENT_0004\020\324(\022%\n HOLO_BADGE_TYPE" +
-      "_BADGE_EVENT_0005\020\325(\022%\n HOLO_BADGE_TYPE_" +
-      "BADGE_EVENT_0006\020\326(\022%\n HOLO_BADGE_TYPE_B" +
-      "ADGE_EVENT_0007\020\327(\022%\n HOLO_BADGE_TYPE_BA" +
-      "DGE_EVENT_0008\020\330(\022%\n HOLO_BADGE_TYPE_BAD" +
-      "GE_EVENT_0009\020\331(\022%\n HOLO_BADGE_TYPE_BADG" +
-      "E_EVENT_0010\020\332(\022%\n HOLO_BADGE_TYPE_BADGE" +
-      "_EVENT_0011\020\333(\022%\n HOLO_BADGE_TYPE_BADGE_" +
-      "EVENT_0012\020\334(\022%\n HOLO_BADGE_TYPE_BADGE_E" +
-      "VENT_0013\020\335(\022%\n HOLO_BADGE_TYPE_BADGE_EV" +
-      "ENT_0014\020\336(\022%\n HOLO_BADGE_TYPE_BADGE_EVE" +
-      "NT_0015\020\337(\022%\n HOLO_BADGE_TYPE_BADGE_EVEN" +
-      "T_0016\020\340(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT" +
-      "_0017\020\341(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_" +
-      "0018\020\342(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_0" +
-      "019\020\343(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_00" +
-      "20\020\344(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_002" +
-      "1\020\345(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_0022" +
-      "\020\346(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_0023\020" +
-      "\347(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_0024\020\350" +
-      "(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_0025\020\351(" +
-      "\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_0026\020\352(\022" +
-      "%\n HOLO_BADGE_TYPE_BADGE_EVENT_0027\020\353(\022%" +
-      "\n HOLO_BADGE_TYPE_BADGE_EVENT_0028\020\354(\022%\n" +
-      " HOLO_BADGE_TYPE_BADGE_EVENT_0029\020\355(\022%\n " +
-      "HOLO_BADGE_TYPE_BADGE_EVENT_0030\020\356(*\221g\n\017" +
-      "HoloPokemonMove\022 \n\034HOLO_POKEMON_MOVE_MOV" +
-      "E_UNSET\020\000\022.\n*HOLO_POKEMON_MOVE_V0001_MOV" +
-      "E_THUNDER_SHOCK\020\001\022-\n)HOLO_POKEMON_MOVE_V" +
-      "0002_MOVE_QUICK_ATTACK\020\002\022(\n$HOLO_POKEMON" +
-      "_MOVE_V0003_MOVE_SCRATCH\020\003\022&\n\"HOLO_POKEM" +
-      "ON_MOVE_V0004_MOVE_EMBER\020\004\022*\n&HOLO_POKEM" +
-      "ON_MOVE_V0005_MOVE_VINE_WHIP\020\005\022\'\n#HOLO_P" +
-      "OKEMON_MOVE_V0006_MOVE_TACKLE\020\006\022+\n\'HOLO_" +
-      "POKEMON_MOVE_V0007_MOVE_RAZOR_LEAF\020\007\022*\n&" +
-      "HOLO_POKEMON_MOVE_V0008_MOVE_TAKE_DOWN\020\010" +
-      "\022*\n&HOLO_POKEMON_MOVE_V0009_MOVE_WATER_G" +
-      "UN\020\t\022%\n!HOLO_POKEMON_MOVE_V0010_MOVE_BIT" +
-      "E\020\n\022&\n\"HOLO_POKEMON_MOVE_V0011_MOVE_POUN" +
-      "D\020\013\022,\n(HOLO_POKEMON_MOVE_V0012_MOVE_DOUB" +
-      "LE_SLAP\020\014\022%\n!HOLO_POKEMON_MOVE_V0013_MOV" +
-      "E_WRAP\020\r\022+\n\'HOLO_POKEMON_MOVE_V0014_MOVE" +
-      "_HYPER_BEAM\020\016\022%\n!HOLO_POKEMON_MOVE_V0015" +
-      "_MOVE_LICK\020\017\022+\n\'HOLO_POKEMON_MOVE_V0016_" +
-      "MOVE_DARK_PULSE\020\020\022%\n!HOLO_POKEMON_MOVE_V" +
-      "0017_MOVE_SMOG\020\021\022\'\n#HOLO_POKEMON_MOVE_V0" +
-      "018_MOVE_SLUDGE\020\022\022+\n\'HOLO_POKEMON_MOVE_V" +
-      "0019_MOVE_METAL_CLAW\020\023\022*\n&HOLO_POKEMON_M" +
-      "OVE_V0020_MOVE_VICE_GRIP\020\024\022,\n(HOLO_POKEM" +
-      "ON_MOVE_V0021_MOVE_FLAME_WHEEL\020\025\022)\n%HOLO" +
-      "_POKEMON_MOVE_V0022_MOVE_MEGAHORN\020\026\022,\n(H" +
-      "OLO_POKEMON_MOVE_V0023_MOVE_WING_ATTACK\020" +
-      "\027\022-\n)HOLO_POKEMON_MOVE_V0024_MOVE_FLAMET" +
-      "HROWER\020\030\022-\n)HOLO_POKEMON_MOVE_V0025_MOVE" +
-      "_SUCKER_PUNCH\020\031\022$\n HOLO_POKEMON_MOVE_V00" +
-      "26_MOVE_DIG\020\032\022)\n%HOLO_POKEMON_MOVE_V0027" +
-      "_MOVE_LOW_KICK\020\033\022+\n\'HOLO_POKEMON_MOVE_V0" +
-      "028_MOVE_CROSS_CHOP\020\034\022+\n\'HOLO_POKEMON_MO" +
-      "VE_V0029_MOVE_PSYCHO_CUT\020\035\022(\n$HOLO_POKEM" +
-      "ON_MOVE_V0030_MOVE_PSYBEAM\020\036\022+\n\'HOLO_POK" +
-      "EMON_MOVE_V0031_MOVE_EARTHQUAKE\020\037\022+\n\'HOL" +
-      "O_POKEMON_MOVE_V0032_MOVE_STONE_EDGE\020 \022*" +
-      "\n&HOLO_POKEMON_MOVE_V0033_MOVE_ICE_PUNCH" +
-      "\020!\022,\n(HOLO_POKEMON_MOVE_V0034_MOVE_HEART" +
-      "_STAMP\020\"\022*\n&HOLO_POKEMON_MOVE_V0035_MOVE" +
-      "_DISCHARGE\020#\022-\n)HOLO_POKEMON_MOVE_V0036_" +
-      "MOVE_FLASH_CANNON\020$\022%\n!HOLO_POKEMON_MOVE" +
-      "_V0037_MOVE_PECK\020%\022+\n\'HOLO_POKEMON_MOVE_" +
-      "V0038_MOVE_DRILL_PECK\020&\022)\n%HOLO_POKEMON_" +
-      "MOVE_V0039_MOVE_ICE_BEAM\020\'\022)\n%HOLO_POKEM" +
-      "ON_MOVE_V0040_MOVE_BLIZZARD\020(\022*\n&HOLO_PO" +
-      "KEMON_MOVE_V0041_MOVE_AIR_SLASH\020)\022*\n&HOL" +
-      "O_POKEMON_MOVE_V0042_MOVE_HEAT_WAVE\020*\022*\n" +
-      "&HOLO_POKEMON_MOVE_V0043_MOVE_TWINEEDLE\020" +
-      "+\022+\n\'HOLO_POKEMON_MOVE_V0044_MOVE_POISON" +
-      "_JAB\020,\022+\n\'HOLO_POKEMON_MOVE_V0045_MOVE_A" +
-      "ERIAL_ACE\020-\022*\n&HOLO_POKEMON_MOVE_V0046_M" +
-      "OVE_DRILL_RUN\020.\022/\n+HOLO_POKEMON_MOVE_V00" +
-      "47_MOVE_PETAL_BLIZZARD\020/\022+\n\'HOLO_POKEMON" +
-      "_MOVE_V0048_MOVE_MEGA_DRAIN\0200\022)\n%HOLO_PO" +
-      "KEMON_MOVE_V0049_MOVE_BUG_BUZZ\0201\022,\n(HOLO" +
-      "_POKEMON_MOVE_V0050_MOVE_POISON_FANG\0202\022," +
-      "\n(HOLO_POKEMON_MOVE_V0051_MOVE_NIGHT_SLA" +
-      "SH\0203\022&\n\"HOLO_POKEMON_MOVE_V0052_MOVE_SLA" +
-      "SH\0204\022,\n(HOLO_POKEMON_MOVE_V0053_MOVE_BUB" +
-      "BLE_BEAM\0205\022+\n\'HOLO_POKEMON_MOVE_V0054_MO" +
-      "VE_SUBMISSION\0206\022,\n(HOLO_POKEMON_MOVE_V00" +
-      "55_MOVE_KARATE_CHOP\0207\022*\n&HOLO_POKEMON_MO" +
-      "VE_V0056_MOVE_LOW_SWEEP\0208\022)\n%HOLO_POKEMO" +
-      "N_MOVE_V0057_MOVE_AQUA_JET\0209\022*\n&HOLO_POK" +
-      "EMON_MOVE_V0058_MOVE_AQUA_TAIL\020:\022*\n&HOLO" +
-      "_POKEMON_MOVE_V0059_MOVE_SEED_BOMB\020;\022)\n%" +
-      "HOLO_POKEMON_MOVE_V0060_MOVE_PSYSHOCK\020<\022" +
-      "+\n\'HOLO_POKEMON_MOVE_V0061_MOVE_ROCK_THR" +
-      "OW\020=\022.\n*HOLO_POKEMON_MOVE_V0062_MOVE_ANC" +
-      "IENT_POWER\020>\022*\n&HOLO_POKEMON_MOVE_V0063_" +
-      "MOVE_ROCK_TOMB\020?\022+\n\'HOLO_POKEMON_MOVE_V0" +
-      "064_MOVE_ROCK_SLIDE\020@\022*\n&HOLO_POKEMON_MO" +
-      "VE_V0065_MOVE_POWER_GEM\020A\022-\n)HOLO_POKEMO" +
-      "N_MOVE_V0066_MOVE_SHADOW_SNEAK\020B\022-\n)HOLO" +
-      "_POKEMON_MOVE_V0067_MOVE_SHADOW_PUNCH\020C\022" +
-      ",\n(HOLO_POKEMON_MOVE_V0068_MOVE_SHADOW_C" +
-      "LAW\020D\022-\n)HOLO_POKEMON_MOVE_V0069_MOVE_OM" +
-      "INOUS_WIND\020E\022,\n(HOLO_POKEMON_MOVE_V0070_" +
-      "MOVE_SHADOW_BALL\020F\022-\n)HOLO_POKEMON_MOVE_" +
-      "V0071_MOVE_BULLET_PUNCH\020G\022,\n(HOLO_POKEMO" +
-      "N_MOVE_V0072_MOVE_MAGNET_BOMB\020H\022+\n\'HOLO_" +
-      "POKEMON_MOVE_V0073_MOVE_STEEL_WING\020I\022*\n&" +
-      "HOLO_POKEMON_MOVE_V0074_MOVE_IRON_HEAD\020J" +
-      "\0221\n-HOLO_POKEMON_MOVE_V0075_MOVE_PARABOL" +
-      "IC_CHARGE\020K\022&\n\"HOLO_POKEMON_MOVE_V0076_M" +
-      "OVE_SPARK\020L\022.\n*HOLO_POKEMON_MOVE_V0077_M" +
-      "OVE_THUNDER_PUNCH\020M\022(\n$HOLO_POKEMON_MOVE" +
-      "_V0078_MOVE_THUNDER\020N\022,\n(HOLO_POKEMON_MO" +
-      "VE_V0079_MOVE_THUNDERBOLT\020O\022(\n$HOLO_POKE" +
-      "MON_MOVE_V0080_MOVE_TWISTER\020P\022.\n*HOLO_PO" +
-      "KEMON_MOVE_V0081_MOVE_DRAGON_BREATH\020Q\022-\n" +
-      ")HOLO_POKEMON_MOVE_V0082_MOVE_DRAGON_PUL" +
-      "SE\020R\022,\n(HOLO_POKEMON_MOVE_V0083_MOVE_DRA" +
-      "GON_CLAW\020S\0220\n,HOLO_POKEMON_MOVE_V0084_MO" +
-      "VE_DISARMING_VOICE\020T\022.\n*HOLO_POKEMON_MOV" +
-      "E_V0085_MOVE_DRAINING_KISS\020U\022/\n+HOLO_POK" +
-      "EMON_MOVE_V0086_MOVE_DAZZLING_GLEAM\020V\022*\n" +
-      "&HOLO_POKEMON_MOVE_V0087_MOVE_MOONBLAST\020" +
-      "W\022+\n\'HOLO_POKEMON_MOVE_V0088_MOVE_PLAY_R" +
-      "OUGH\020X\022-\n)HOLO_POKEMON_MOVE_V0089_MOVE_C" +
-      "ROSS_POISON\020Y\022,\n(HOLO_POKEMON_MOVE_V0090" +
-      "_MOVE_SLUDGE_BOMB\020Z\022,\n(HOLO_POKEMON_MOVE" +
-      "_V0091_MOVE_SLUDGE_WAVE\020[\022*\n&HOLO_POKEMO" +
-      "N_MOVE_V0092_MOVE_GUNK_SHOT\020\\\022)\n%HOLO_PO" +
-      "KEMON_MOVE_V0093_MOVE_MUD_SHOT\020]\022*\n&HOLO" +
-      "_POKEMON_MOVE_V0094_MOVE_BONE_CLUB\020^\022)\n%" +
-      "HOLO_POKEMON_MOVE_V0095_MOVE_BULLDOZE\020_\022" +
-      ")\n%HOLO_POKEMON_MOVE_V0096_MOVE_MUD_BOMB" +
-      "\020`\022,\n(HOLO_POKEMON_MOVE_V0097_MOVE_FURY_" +
-      "CUTTER\020a\022)\n%HOLO_POKEMON_MOVE_V0098_MOVE" +
-      "_BUG_BITE\020b\022,\n(HOLO_POKEMON_MOVE_V0099_M" +
-      "OVE_SIGNAL_BEAM\020c\022*\n&HOLO_POKEMON_MOVE_V" +
-      "0100_MOVE_X_SCISSOR\020d\022-\n)HOLO_POKEMON_MO" +
-      "VE_V0101_MOVE_FLAME_CHARGE\020e\022,\n(HOLO_POK" +
-      "EMON_MOVE_V0102_MOVE_FLAME_BURST\020f\022+\n\'HO" +
-      "LO_POKEMON_MOVE_V0103_MOVE_FIRE_BLAST\020g\022" +
-      "&\n\"HOLO_POKEMON_MOVE_V0104_MOVE_BRINE\020h\022" +
-      ",\n(HOLO_POKEMON_MOVE_V0105_MOVE_WATER_PU" +
-      "LSE\020i\022&\n\"HOLO_POKEMON_MOVE_V0106_MOVE_SC" +
-      "ALD\020j\022+\n\'HOLO_POKEMON_MOVE_V0107_MOVE_HY" +
-      "DRO_PUMP\020k\022(\n$HOLO_POKEMON_MOVE_V0108_MO" +
-      "VE_PSYCHIC\020l\022*\n&HOLO_POKEMON_MOVE_V0109_" +
-      "MOVE_PSYSTRIKE\020m\022*\n&HOLO_POKEMON_MOVE_V0" +
-      "110_MOVE_ICE_SHARD\020n\022)\n%HOLO_POKEMON_MOV" +
-      "E_V0111_MOVE_ICY_WIND\020o\022-\n)HOLO_POKEMON_" +
-      "MOVE_V0112_MOVE_FROST_BREATH\020p\022\'\n#HOLO_P" +
-      "OKEMON_MOVE_V0113_MOVE_ABSORB\020q\022+\n\'HOLO_" +
-      "POKEMON_MOVE_V0114_MOVE_GIGA_DRAIN\020r\022+\n\'" +
-      "HOLO_POKEMON_MOVE_V0115_MOVE_FIRE_PUNCH\020" +
-      "s\022+\n\'HOLO_POKEMON_MOVE_V0116_MOVE_SOLAR_" +
-      "BEAM\020t\022+\n\'HOLO_POKEMON_MOVE_V0117_MOVE_L" +
-      "EAF_BLADE\020u\022+\n\'HOLO_POKEMON_MOVE_V0118_M" +
-      "OVE_POWER_WHIP\020v\022\'\n#HOLO_POKEMON_MOVE_V0" +
-      "119_MOVE_SPLASH\020w\022%\n!HOLO_POKEMON_MOVE_V" +
-      "0120_MOVE_ACID\020x\022+\n\'HOLO_POKEMON_MOVE_V0" +
-      "121_MOVE_AIR_CUTTER\020y\022*\n&HOLO_POKEMON_MO" +
-      "VE_V0122_MOVE_HURRICANE\020z\022,\n(HOLO_POKEMO" +
-      "N_MOVE_V0123_MOVE_BRICK_BREAK\020{\022$\n HOLO_" +
-      "POKEMON_MOVE_V0124_MOVE_CUT\020|\022&\n\"HOLO_PO" +
-      "KEMON_MOVE_V0125_MOVE_SWIFT\020}\022,\n(HOLO_PO" +
-      "KEMON_MOVE_V0126_MOVE_HORN_ATTACK\020~\022&\n\"H" +
-      "OLO_POKEMON_MOVE_V0127_MOVE_STOMP\020\177\022*\n%H" +
-      "OLO_POKEMON_MOVE_V0128_MOVE_HEADBUTT\020\200\001\022" +
-      ",\n\'HOLO_POKEMON_MOVE_V0129_MOVE_HYPER_FA" +
-      "NG\020\201\001\022&\n!HOLO_POKEMON_MOVE_V0130_MOVE_SL" +
-      "AM\020\202\001\022+\n&HOLO_POKEMON_MOVE_V0131_MOVE_BO" +
-      "DY_SLAM\020\203\001\022&\n!HOLO_POKEMON_MOVE_V0132_MO" +
-      "VE_REST\020\204\001\022*\n%HOLO_POKEMON_MOVE_V0133_MO" +
-      "VE_STRUGGLE\020\205\001\0221\n,HOLO_POKEMON_MOVE_V013" +
-      "4_MOVE_SCALD_BLASTOISE\020\206\001\0226\n1HOLO_POKEMO" +
-      "N_MOVE_V0135_MOVE_HYDRO_PUMP_BLASTOISE\020\207" +
-      "\001\022,\n\'HOLO_POKEMON_MOVE_V0136_MOVE_WRAP_G" +
-      "REEN\020\210\001\022+\n&HOLO_POKEMON_MOVE_V0137_MOVE_" +
-      "WRAP_PINK\020\211\001\0222\n-HOLO_POKEMON_MOVE_V0200_" +
-      "MOVE_FURY_CUTTER_FAST\020\310\001\022/\n*HOLO_POKEMON" +
-      "_MOVE_V0201_MOVE_BUG_BITE_FAST\020\311\001\022+\n&HOL" +
-      "O_POKEMON_MOVE_V0202_MOVE_BITE_FAST\020\312\001\0223" +
-      "\n.HOLO_POKEMON_MOVE_V0203_MOVE_SUCKER_PU" +
-      "NCH_FAST\020\313\001\0224\n/HOLO_POKEMON_MOVE_V0204_M" +
-      "OVE_DRAGON_BREATH_FAST\020\314\001\0224\n/HOLO_POKEMO" +
-      "N_MOVE_V0205_MOVE_THUNDER_SHOCK_FAST\020\315\001\022" +
-      ",\n\'HOLO_POKEMON_MOVE_V0206_MOVE_SPARK_FA" +
-      "ST\020\316\001\022/\n*HOLO_POKEMON_MOVE_V0207_MOVE_LO" +
-      "W_KICK_FAST\020\317\001\0222\n-HOLO_POKEMON_MOVE_V020" +
-      "8_MOVE_KARATE_CHOP_FAST\020\320\001\022,\n\'HOLO_POKEM" +
-      "ON_MOVE_V0209_MOVE_EMBER_FAST\020\321\001\0222\n-HOLO" +
-      "_POKEMON_MOVE_V0210_MOVE_WING_ATTACK_FAS" +
-      "T\020\322\001\022+\n&HOLO_POKEMON_MOVE_V0211_MOVE_PEC" +
-      "K_FAST\020\323\001\022+\n&HOLO_POKEMON_MOVE_V0212_MOV" +
-      "E_LICK_FAST\020\324\001\0222\n-HOLO_POKEMON_MOVE_V021" +
-      "3_MOVE_SHADOW_CLAW_FAST\020\325\001\0220\n+HOLO_POKEM" +
-      "ON_MOVE_V0214_MOVE_VINE_WHIP_FAST\020\326\001\0221\n," +
-      "HOLO_POKEMON_MOVE_V0215_MOVE_RAZOR_LEAF_" +
-      "FAST\020\327\001\022/\n*HOLO_POKEMON_MOVE_V0216_MOVE_" +
-      "MUD_SHOT_FAST\020\330\001\0220\n+HOLO_POKEMON_MOVE_V0" +
-      "217_MOVE_ICE_SHARD_FAST\020\331\001\0223\n.HOLO_POKEM" +
-      "ON_MOVE_V0218_MOVE_FROST_BREATH_FAST\020\332\001\022" +
-      "3\n.HOLO_POKEMON_MOVE_V0219_MOVE_QUICK_AT" +
-      "TACK_FAST\020\333\001\022.\n)HOLO_POKEMON_MOVE_V0220_" +
-      "MOVE_SCRATCH_FAST\020\334\001\022-\n(HOLO_POKEMON_MOV" +
-      "E_V0221_MOVE_TACKLE_FAST\020\335\001\022,\n\'HOLO_POKE" +
-      "MON_MOVE_V0222_MOVE_POUND_FAST\020\336\001\022*\n%HOL" +
-      "O_POKEMON_MOVE_V0223_MOVE_CUT_FAST\020\337\001\0221\n" +
-      ",HOLO_POKEMON_MOVE_V0224_MOVE_POISON_JAB" +
-      "_FAST\020\340\001\022+\n&HOLO_POKEMON_MOVE_V0225_MOVE" +
-      "_ACID_FAST\020\341\001\0221\n,HOLO_POKEMON_MOVE_V0226" +
-      "_MOVE_PSYCHO_CUT_FAST\020\342\001\0221\n,HOLO_POKEMON" +
-      "_MOVE_V0227_MOVE_ROCK_THROW_FAST\020\343\001\0221\n,H" +
-      "OLO_POKEMON_MOVE_V0228_MOVE_METAL_CLAW_F" +
-      "AST\020\344\001\0223\n.HOLO_POKEMON_MOVE_V0229_MOVE_B" +
-      "ULLET_PUNCH_FAST\020\345\001\0220\n+HOLO_POKEMON_MOVE" +
-      "_V0230_MOVE_WATER_GUN_FAST\020\346\001\022-\n(HOLO_PO" +
-      "KEMON_MOVE_V0231_MOVE_SPLASH_FAST\020\347\001\022:\n5" +
-      "HOLO_POKEMON_MOVE_V0232_MOVE_WATER_GUN_F" +
-      "AST_BLASTOISE\020\350\001\022/\n*HOLO_POKEMON_MOVE_V0" +
-      "233_MOVE_MUD_SLAP_FAST\020\351\001\0223\n.HOLO_POKEMO" +
-      "N_MOVE_V0234_MOVE_ZEN_HEADBUTT_FAST\020\352\001\0220" +
-      "\n+HOLO_POKEMON_MOVE_V0235_MOVE_CONFUSION" +
-      "_FAST\020\353\001\0223\n.HOLO_POKEMON_MOVE_V0236_MOVE" +
-      "_POISON_STING_FAST\020\354\001\022-\n(HOLO_POKEMON_MO" +
-      "VE_V0237_MOVE_BUBBLE_FAST\020\355\001\0223\n.HOLO_POK" +
-      "EMON_MOVE_V0238_MOVE_FEINT_ATTACK_FAST\020\356" +
-      "\001\0221\n,HOLO_POKEMON_MOVE_V0239_MOVE_STEEL_" +
-      "WING_FAST\020\357\001\0220\n+HOLO_POKEMON_MOVE_V0240_" +
-      "MOVE_FIRE_FANG_FAST\020\360\001\0221\n,HOLO_POKEMON_M" +
-      "OVE_V0241_MOVE_ROCK_SMASH_FAST\020\361\001\0220\n+HOL" +
-      "O_POKEMON_MOVE_V0242_MOVE_TRANSFORM_FAST" +
-      "\020\362\001\022.\n)HOLO_POKEMON_MOVE_V0243_MOVE_COUN" +
-      "TER_FAST\020\363\001\0222\n-HOLO_POKEMON_MOVE_V0244_M" +
-      "OVE_POWDER_SNOW_FAST\020\364\001\022.\n)HOLO_POKEMON_" +
-      "MOVE_V0245_MOVE_CLOSE_COMBAT\020\365\001\022/\n*HOLO_" +
-      "POKEMON_MOVE_V0246_MOVE_DYNAMIC_PUNCH\020\366\001" +
-      "\022-\n(HOLO_POKEMON_MOVE_V0247_MOVE_FOCUS_B" +
-      "LAST\020\367\001\022-\n(HOLO_POKEMON_MOVE_V0248_MOVE_" +
-      "AURORA_BEAM\020\370\001\0222\n-HOLO_POKEMON_MOVE_V024" +
-      "9_MOVE_CHARGE_BEAM_FAST\020\371\001\0222\n-HOLO_POKEM" +
-      "ON_MOVE_V0250_MOVE_VOLT_SWITCH_FAST\020\372\001\022-" +
-      "\n(HOLO_POKEMON_MOVE_V0251_MOVE_WILD_CHAR" +
-      "GE\020\373\001\022,\n\'HOLO_POKEMON_MOVE_V0252_MOVE_ZA" +
-      "P_CANNON\020\374\001\0222\n-HOLO_POKEMON_MOVE_V0253_M" +
-      "OVE_DRAGON_TAIL_FAST\020\375\001\022+\n&HOLO_POKEMON_" +
-      "MOVE_V0254_MOVE_AVALANCHE\020\376\001\0220\n+HOLO_POK" +
-      "EMON_MOVE_V0255_MOVE_AIR_SLASH_FAST\020\377\001\022," +
-      "\n\'HOLO_POKEMON_MOVE_V0256_MOVE_BRAVE_BIR" +
-      "D\020\200\002\022,\n\'HOLO_POKEMON_MOVE_V0257_MOVE_SKY" +
-      "_ATTACK\020\201\002\022+\n&HOLO_POKEMON_MOVE_V0258_MO" +
-      "VE_SAND_TOMB\020\202\002\022,\n\'HOLO_POKEMON_MOVE_V02" +
-      "59_MOVE_ROCK_BLAST\020\203\002\0222\n-HOLO_POKEMON_MO" +
-      "VE_V0260_MOVE_INFESTATION_FAST\020\204\002\0223\n.HOL" +
-      "O_POKEMON_MOVE_V0261_MOVE_STRUGGLE_BUG_F" +
-      "AST\020\205\002\022-\n(HOLO_POKEMON_MOVE_V0262_MOVE_S" +
-      "ILVER_WIND\020\206\002\022/\n*HOLO_POKEMON_MOVE_V0263" +
-      "_MOVE_ASTONISH_FAST\020\207\002\022*\n%HOLO_POKEMON_M" +
-      "OVE_V0264_MOVE_HEX_FAST\020\210\002\022-\n(HOLO_POKEM" +
-      "ON_MOVE_V0265_MOVE_NIGHT_SHADE\020\211\002\0220\n+HOL" +
-      "O_POKEMON_MOVE_V0266_MOVE_IRON_TAIL_FAST" +
-      "\020\212\002\022+\n&HOLO_POKEMON_MOVE_V0267_MOVE_GYRO" +
-      "_BALL\020\213\002\022,\n\'HOLO_POKEMON_MOVE_V0268_MOVE" +
-      "_HEAVY_SLAM\020\214\002\0220\n+HOLO_POKEMON_MOVE_V026" +
-      "9_MOVE_FIRE_SPIN_FAST\020\215\002\022*\n%HOLO_POKEMON" +
-      "_MOVE_V0270_MOVE_OVERHEAT\020\216\002\0222\n-HOLO_POK" +
-      "EMON_MOVE_V0271_MOVE_BULLET_SEED_FAST\020\217\002" +
-      "\022,\n\'HOLO_POKEMON_MOVE_V0272_MOVE_GRASS_K" +
-      "NOT\020\220\002\022-\n(HOLO_POKEMON_MOVE_V0273_MOVE_E" +
-      "NERGY_BALL\020\221\002\0223\n.HOLO_POKEMON_MOVE_V0274" +
-      "_MOVE_EXTRASENSORY_FAST\020\222\002\022-\n(HOLO_POKEM" +
-      "ON_MOVE_V0275_MOVE_FUTURESIGHT\020\223\002\022-\n(HOL" +
-      "O_POKEMON_MOVE_V0276_MOVE_MIRROR_COAT\020\224\002" +
-      "\022)\n$HOLO_POKEMON_MOVE_V0277_MOVE_OUTRAGE" +
-      "\020\225\002\022,\n\'HOLO_POKEMON_MOVE_V0278_MOVE_SNAR" +
-      "L_FAST\020\226\002\022(\n#HOLO_POKEMON_MOVE_V0279_MOV" +
-      "E_CRUNCH\020\227\002\022+\n&HOLO_POKEMON_MOVE_V0280_M" +
-      "OVE_FOUL_PLAY\020\230\002\0223\n.HOLO_POKEMON_MOVE_V0" +
-      "281_MOVE_HIDDEN_POWER_FAST\020\231\002\0220\n+HOLO_PO" +
-      "KEMON_MOVE_V0282_MOVE_TAKE_DOWN_FAST\020\232\002\022" +
-      "0\n+HOLO_POKEMON_MOVE_V0283_MOVE_WATERFAL" +
-      "L_FAST\020\233\002\022&\n!HOLO_POKEMON_MOVE_V0284_MOV" +
-      "E_SURF\020\234\002\022.\n)HOLO_POKEMON_MOVE_V0285_MOV",
-      "E_DRACO_METEOR\020\235\002\022-\n(HOLO_POKEMON_MOVE_V" +
-      "0286_MOVE_DOOM_DESIRE\020\236\002\022+\n&HOLO_POKEMON" +
-      "_MOVE_V0287_MOVE_YAWN_FAST\020\237\002\022.\n)HOLO_PO" +
-      "KEMON_MOVE_V0288_MOVE_PSYCHO_BOOST\020\240\002\022.\n" +
-      ")HOLO_POKEMON_MOVE_V0289_MOVE_ORIGIN_PUL" +
-      "SE\020\241\002\0222\n-HOLO_POKEMON_MOVE_V0290_MOVE_PR" +
-      "ECIPICE_BLADES\020\242\002\022.\n)HOLO_POKEMON_MOVE_V" +
-      "0291_MOVE_PRESENT_FAST\020\243\002\0223\n.HOLO_POKEMO" +
-      "N_MOVE_V0292_MOVE_WEATHER_BALL_FIRE\020\244\002\0222" +
-      "\n-HOLO_POKEMON_MOVE_V0293_MOVE_WEATHER_B" +
-      "ALL_ICE\020\245\002\0223\n.HOLO_POKEMON_MOVE_V0294_MO" +
-      "VE_WEATHER_BALL_ROCK\020\246\002\0224\n/HOLO_POKEMON_" +
-      "MOVE_V0295_MOVE_WEATHER_BALL_WATER\020\247\002\022.\n" +
-      ")HOLO_POKEMON_MOVE_V0296_MOVE_FRENZY_PLA" +
-      "NT\020\250\002\0221\n,HOLO_POKEMON_MOVE_V0297_MOVE_SM" +
-      "ACK_DOWN_FAST\020\251\002\022,\n\'HOLO_POKEMON_MOVE_V0" +
-      "298_MOVE_BLAST_BURN\020\252\002\022.\n)HOLO_POKEMON_M" +
-      "OVE_V0299_MOVE_HYDRO_CANNON\020\253\002\022-\n(HOLO_P" +
-      "OKEMON_MOVE_V0300_MOVE_LAST_RESORT\020\254\002\022-\n" +
-      "(HOLO_POKEMON_MOVE_V0301_MOVE_METEOR_MAS" +
-      "H\020\255\002\022,\n\'HOLO_POKEMON_MOVE_V0302_MOVE_SKU" +
-      "LL_BASH\020\256\002\022,\n\'HOLO_POKEMON_MOVE_V0303_MO" +
-      "VE_ACID_SPRAY\020\257\002\022-\n(HOLO_POKEMON_MOVE_V0" +
-      "304_MOVE_EARTH_POWER\020\260\002\022,\n\'HOLO_POKEMON_" +
-      "MOVE_V0305_MOVE_CRABHAMMER\020\261\002\022\'\n\"HOLO_PO" +
-      "KEMON_MOVE_V0306_MOVE_LUNGE\020\262\002\022,\n\'HOLO_P" +
-      "OKEMON_MOVE_V0307_MOVE_CRUSH_CLAW\020\263\002\022+\n&" +
-      "HOLO_POKEMON_MOVE_V0308_MOVE_OCTAZOOKA\020\264" +
-      "\002\022-\n(HOLO_POKEMON_MOVE_V0309_MOVE_MIRROR" +
-      "_SHOT\020\265\002\022-\n(HOLO_POKEMON_MOVE_V0310_MOVE" +
-      "_SUPER_POWER\020\266\002\022.\n)HOLO_POKEMON_MOVE_V03" +
-      "11_MOVE_FELL_STINGER\020\267\002\022.\n)HOLO_POKEMON_" +
-      "MOVE_V0312_MOVE_LEAF_TORNADO\020\270\002\022,\n\'HOLO_" +
-      "POKEMON_MOVE_V0313_MOVE_LEECH_LIFE\020\271\002\022-\n" +
-      "(HOLO_POKEMON_MOVE_V0314_MOVE_DRAIN_PUNC" +
-      "H\020\272\002\022-\n(HOLO_POKEMON_MOVE_V0315_MOVE_SHA" +
-      "DOW_BONE\020\273\002\022-\n(HOLO_POKEMON_MOVE_V0316_M" +
-      "OVE_MUDDY_WATER\020\274\002\022,\n\'HOLO_POKEMON_MOVE_" +
-      "V0317_MOVE_BLAZE_KICK\020\275\002\022-\n(HOLO_POKEMON" +
-      "_MOVE_V0318_MOVE_RAZOR_SHELL\020\276\002\0220\n+HOLO_" +
-      "POKEMON_MOVE_V0319_MOVE_POWER_UP_PUNCH\020\277" +
-      "\002\022,\n\'HOLO_POKEMON_MOVE_V0320_MOVE_CHARM_" +
-      "FAST\020\300\002\022-\n(HOLO_POKEMON_MOVE_V0321_MOVE_" +
-      "GIGA_IMPACT\020\301\002\022-\n(HOLO_POKEMON_MOVE_V032" +
-      "2_MOVE_FRUSTRATION\020\302\002\022(\n#HOLO_POKEMON_MO" +
-      "VE_V0323_MOVE_RETURN\020\303\002\022.\n)HOLO_POKEMON_" +
-      "MOVE_V0324_MOVE_SYNCHRONOISE\020\304\002\022.\n)HOLO_" +
-      "POKEMON_MOVE_V0325_MOVE_LOCK_ON_FAST\020\305\002\022" +
-      "3\n.HOLO_POKEMON_MOVE_V0326_MOVE_THUNDER_" +
-      "FANG_FAST\020\306\002\022/\n*HOLO_POKEMON_MOVE_V0327_" +
-      "MOVE_ICE_FANG_FAST\020\307\002\022,\n\'HOLO_POKEMON_MO" +
-      "VE_V0328_MOVE_HORN_DRILL\020\310\002\022)\n$HOLO_POKE" +
-      "MON_MOVE_V0329_MOVE_FISSURE\020\311\002\022.\n)HOLO_P" +
-      "OKEMON_MOVE_V0330_MOVE_SACRED_SWORD\020\312\002\022." +
-      "\n)HOLO_POKEMON_MOVE_V0331_MOVE_FLYING_PR" +
-      "ESS\020\313\002\022-\n(HOLO_POKEMON_MOVE_V0332_MOVE_A" +
-      "URA_SPHERE\020\314\002\022)\n$HOLO_POKEMON_MOVE_V0333" +
-      "_MOVE_PAYBACK\020\315\002\022.\n)HOLO_POKEMON_MOVE_V0" +
-      "334_MOVE_ROCK_WRECKER\020\316\002\022+\n&HOLO_POKEMON" +
-      "_MOVE_V0335_MOVE_AEROBLAST\020\317\002\0225\n0HOLO_PO" +
-      "KEMON_MOVE_V0336_MOVE_TECHNO_BLAST_NORMA" +
-      "L\020\320\002\0223\n.HOLO_POKEMON_MOVE_V0337_MOVE_TEC" +
-      "HNO_BLAST_BURN\020\321\002\0224\n/HOLO_POKEMON_MOVE_V" +
-      "0338_MOVE_TECHNO_BLAST_CHILL\020\322\002\0224\n/HOLO_" +
-      "POKEMON_MOVE_V0339_MOVE_TECHNO_BLAST_WAT" +
-      "ER\020\323\002\0224\n/HOLO_POKEMON_MOVE_V0340_MOVE_TE" +
-      "CHNO_BLAST_SHOCK\020\324\002\022%\n HOLO_POKEMON_MOVE" +
-      "_V0341_MOVE_FLY\020\325\002\022*\n%HOLO_POKEMON_MOVE_" +
-      "V0342_MOVE_V_CREATE\020\326\002\022,\n\'HOLO_POKEMON_M" +
-      "OVE_V0343_MOVE_LEAF_STORM\020\327\002\022,\n\'HOLO_POK" +
-      "EMON_MOVE_V0344_MOVE_TRI_ATTACK\020\330\002\022+\n&HO" +
-      "LO_POKEMON_MOVE_V0345_MOVE_GUST_FAST\020\331\002*" +
-      "\326\013\n\027LoginActionTelemetryIds\0225\n1LOGIN_ACT" +
-      "ION_TELEMETRY_IDS_UNDEFINED_LOGIN_ACTION" +
-      "\020\000\022-\n)LOGIN_ACTION_TELEMETRY_IDS_CLICK_A" +
-      "GE_GATE\020\001\022/\n+LOGIN_ACTION_TELEMETRY_IDS_" +
-      "CLICK_NEW_PLAYER\020\002\0224\n0LOGIN_ACTION_TELEM" +
-      "ETRY_IDS_CLICK_EXISTING_PLAYER\020\003\022+\n\'LOGI" +
-      "N_ACTION_TELEMETRY_IDS_CLICK_GOOGLE\020\004\022.\n" +
-      "*LOGIN_ACTION_TELEMETRY_IDS_COMPLETE_GOO" +
-      "GLE\020\005\022,\n(LOGIN_ACTION_TELEMETRY_IDS_CANC" +
-      "EL_GOOGLE\020\006\022-\n)LOGIN_ACTION_TELEMETRY_ID" +
-      "S_CLICK_FACEBOOK\020\007\0220\n,LOGIN_ACTION_TELEM" +
-      "ETRY_IDS_COMPLETE_FACEBOOK\020\010\022.\n*LOGIN_AC" +
-      "TION_TELEMETRY_IDS_CANCEL_FACEBOOK\020\t\022(\n$" +
-      "LOGIN_ACTION_TELEMETRY_IDS_CLICK_PTC\020\n\022\'" +
-      "\n#LOGIN_ACTION_TELEMETRY_IDS_EXIT_PTC\020\013\022" +
-      "1\n-LOGIN_ACTION_TELEMETRY_IDS_CLICK_PTC_" +
-      "REGISTER\020\014\0220\n,LOGIN_ACTION_TELEMETRY_IDS" +
-      "_CLICK_PTC_SIGN_IN\020\r\0221\n-LOGIN_ACTION_TEL" +
-      "EMETRY_IDS_CANCEL_PTC_SIGN_IN\020\016\0223\n/LOGIN" +
-      "_ACTION_TELEMETRY_IDS_COMPLETE_PTC_SIGN_" +
-      "IN\020\017\0221\n-LOGIN_ACTION_TELEMETRY_IDS_CLICK" +
-      "_SUPERAWESOME\020\020\0220\n,LOGIN_ACTION_TELEMETR" +
-      "Y_IDS_EXIT_SUPERAWESOME\020\021\022:\n6LOGIN_ACTIO" +
-      "N_TELEMETRY_IDS_CLICK_SUPERAWESOME_REGIS" +
-      "TER\020\022\022A\n=LOGIN_ACTION_TELEMETRY_IDS_CLIC" +
-      "K_SUPERAWESOME_FORGOT_PASSWORD\020\023\0229\n5LOGI" +
-      "N_ACTION_TELEMETRY_IDS_CLICK_SUPERAWESOM" +
-      "E_SIGN_IN\020\024\022:\n6LOGIN_ACTION_TELEMETRY_ID" +
-      "S_CANCEL_SUPERAWESOME_SIGN_IN\020\025\022<\n8LOGIN" +
-      "_ACTION_TELEMETRY_IDS_COMPLETE_SUPERAWES" +
-      "OME_SIGN_IN\020\026\022.\n*LOGIN_ACTION_TELEMETRY_" +
-      "IDS_EXIT_NEW_PLAYER\020\027\0223\n/LOGIN_ACTION_TE" +
-      "LEMETRY_IDS_EXIT_EXISTING_PLAYER\020\030\022,\n(LO" +
-      "GIN_ACTION_TELEMETRY_IDS_LOGIN_STARTED\020\031" +
-      "\022*\n&LOGIN_ACTION_TELEMETRY_IDS_CLICK_APP" +
-      "LE\020\032\022-\n)LOGIN_ACTION_TELEMETRY_IDS_COMPL" +
-      "ETE_APPLE\020\033\022+\n\'LOGIN_ACTION_TELEMETRY_ID" +
-      "S_CANCEL_APPLE\020\034*\202\005\n\020RaidTelemetryIds\022+\n" +
-      "\'RAID_TELEMETRY_IDS_UNDEFINED_RAID_EVENT" +
-      "\020\000\022%\n!RAID_TELEMETRY_IDS_APPROACH_ENTER\020" +
-      "\001\022-\n)RAID_TELEMETRY_IDS_APPROACH_CLICK_S" +
-      "PINNER\020\002\022$\n RAID_TELEMETRY_IDS_APPROACH_" +
-      "JOIN\020\003\0223\n/RAID_TELEMETRY_IDS_APPROACH_TI" +
-      "CKET_CONFIRMATION\020\004\022.\n*RAID_TELEMETRY_ID" +
-      "S_APPROACH_CLICK_TUTORIAL\020\005\022*\n&RAID_TELE" +
-      "METRY_IDS_APPROACH_CLICK_SHOP\020\006\022-\n)RAID_" +
-      "TELEMETRY_IDS_APPROACH_CLICK_INSPECT\020\007\022\"" +
-      "\n\036RAID_TELEMETRY_IDS_LOBBY_ENTER\020\010\022,\n(RA" +
-      "ID_TELEMETRY_IDS_LOBBY_CLICK_INVENTORY\020\t" +
-      "\022\'\n#RAID_TELEMETRY_IDS_LOBBY_CLICK_EXIT\020" +
-      "\n\022\'\n#RAID_TELEMETRY_IDS_LOBBY_TAP_AVATAR" +
-      "\020\013\0220\n,RAID_TELEMETRY_IDS_LOBBY_CLICK_REJ" +
-      "OIN_BATTLE\020\014\022/\n+RAID_TELEMETRY_IDS_LOBBY" +
-      "_CLICK_LOBBY_PUBLIC\020\r*F\n\006ArMode\022\020\n\014AR_MO" +
-      "DE_NONE\020\000\022\026\n\022AR_MODE_ARSTANDARD\020\001\022\022\n\016AR_" +
-      "MODE_ARPLUS\020\002*\310\023\n\024NotificationCategory\0226" +
-      "\n2NOTIFICATION_CATEGORY_unset__notificat" +
-      "ion_category\020\000\022%\n!NOTIFICATION_CATEGORY_" +
-      "GYM_REMOVAL\020\001\022(\n$NOTIFICATION_CATEGORY_P" +
-      "OKEMON_HUNGRY\020\002\022%\n!NOTIFICATION_CATEGORY" +
-      "_POKEMON_WON\020\003\022/\n+NOTIFICATION_CATEGORY_" +
-      "EXCLUSIVE_RAID_INVITE\020\004\0225\n1NOTIFICATION_" +
-      "CATEGORY_EXCLUSIVE_RAID_CANCELLATION\020\005\022*" +
-      "\n&NOTIFICATION_CATEGORY_GIFTBOX_INCOMING" +
-      "\020\006\022+\n\'NOTIFICATION_CATEGORY_GIFTBOX_DELI" +
-      "VERED\020\007\0225\n1NOTIFICATION_CATEGORY_FRIENDS" +
-      "HIP_MILESTONE_REWARD\020\010\0229\n5NOTIFICATION_C" +
-      "ATEGORY_GYM_BATTLE_FRIENDSHIP_INCREMENT\020" +
-      "\t\0226\n2NOTIFICATION_CATEGORY_SHARED_EXCLUS" +
-      "IVE_RAID_INVITE\020\n\022*\n&NOTIFICATION_CATEGO" +
-      "RY_BGMODE_EGG_HATCH\020\013\022,\n(NOTIFICATION_CA" +
-      "TEGORY_BGMODE_BUDDY_CANDY\020\014\0226\n2NOTIFICAT" +
-      "ION_CATEGORY_BGMODE_WEEKLY_FITNESS_REPOR" +
-      "T\020\r\0221\n-NOTIFICATION_CATEGORY_COMBAT_CHAL" +
-      "LENGE_OPENED\020\016\0225\n1NOTIFICATION_CATEGORY_" +
-      "BGMODE_OFF_SESSION_DISTANCE\020\017\022.\n*NOTIFIC" +
-      "ATION_CATEGORY_BGMODE_POI_PROXIMITY\020\020\022&\n" +
-      "\"NOTIFICATION_CATEGORY_LUCKY_FRIEND\020\021\0222\n" +
-      ".NOTIFICATION_CATEGORY_BGMODE_NAMED_BUDD" +
-      "Y_CANDY\020\022\022(\n$NOTIFICATION_CATEGORY_APP_B" +
-      "ADGE_ONLY\020\023\0222\n.NOTIFICATION_CATEGORY_COM" +
-      "BAT_VS_SEEKER_CHARGED\020\024\0227\n3NOTIFICATION_" +
-      "CATEGORY_COMBAT_COMPETITIVE_SEASON_END\020\025" +
-      "\022&\n\"NOTIFICATION_CATEGORY_BUDDY_HUNGRY\020\026" +
-      "\022*\n&NOTIFICATION_CATEGORY_BUDDY_FOUND_GI" +
-      "FT\020\030\0229\n5NOTIFICATION_CATEGORY_BUDDY_AFFE" +
-      "CTION_LEVEL_MILESTONE\020\031\0221\n-NOTIFICATION_" +
-      "CATEGORY_BUDDY_AFFECTION_WALKING\020\032\022.\n*NO" +
-      "TIFICATION_CATEGORY_BUDDY_AFFECTION_CARE" +
-      "\020\033\0220\n,NOTIFICATION_CATEGORY_BUDDY_AFFECT" +
-      "ION_BATTLE\020\034\022/\n+NOTIFICATION_CATEGORY_BU" +
-      "DDY_AFFECTION_PHOTO\020\035\022-\n)NOTIFICATION_CA" +
-      "TEGORY_BUDDY_AFFECTION_POI\020\036\0221\n-NOTIFICA" +
-      "TION_CATEGORY_BGMODE_BUDDY_FOUND_GIFT\020\037\022" +
-      ".\n*NOTIFICATION_CATEGORY_BUDDY_ATTRACTIV" +
-      "E_POI\020 \0225\n1NOTIFICATION_CATEGORY_BGMODE_" +
-      "BUDDY_ATTRACTIVE_POI\020!\0228\n4NOTIFICATION_C" +
-      "ATEGORY_BUDDY_AFFECTION_ATTRACTIVE_POI\020$" +
-      "\022/\n+NOTIFICATION_CATEGORY_POI_PASSCODE_R" +
-      "EDEEMED\020%\022,\n(NOTIFICATION_CATEGORY_NO_EG" +
-      "GS_INCUBATING\020&\0222\n.NOTIFICATION_CATEGORY" +
-      "_RETENTION_UNOPENED_GIFTS\020\'\022-\n)NOTIFICAT" +
-      "ION_CATEGORY_RETENTION_STARPIECE\020(\022+\n\'NO" +
-      "TIFICATION_CATEGORY_RETENTION_INCENSE\020)\022" +
-      "-\n)NOTIFICATION_CATEGORY_RETENTION_LUCKY" +
-      "_EGG\020*\0223\n/NOTIFICATION_CATEGORY_RETENTIO" +
-      "N_ADVSYNC_REWARDS\020+\0227\n3NOTIFICATION_CATE" +
-      "GORY_RETENTION_EGGS_NOT_INCUBATING\020,\022.\n*" +
-      "NOTIFICATION_CATEGORY_RETENTION_POWER_WA" +
-      "LK\020-\0224\n0NOTIFICATION_CATEGORY_RETENTION_" +
-      "FUN_WITH_FRIENDS\020.\022+\n\'NOTIFICATION_CATEG" +
-      "ORY_BUDDY_REMOTE_GIFT\020/\0222\n.NOTIFICATION_" +
-      "CATEGORY_BGMODE_BUDDY_REMOTE_GIFT\0200\0220\n,N" +
-      "OTIFICATION_CATEGORY_REMOTE_RAID_INVITAT" +
-      "ION\0201\022&\n\"NOTIFICATION_CATEGORY_ITEM_REWA" +
-      "RDS\0202\0227\n3NOTIFICATION_CATEGORY_TIMED_GRO" +
-      "UP_CHALLENGE_STARTED\0203\0228\n4NOTIFICATION_C" +
-      "ATEGORY_TIMED_GROUP_CHALLENGE_GOAL_MET\0204" +
-      "*\257\005\n\032IncidentDynamicStringTypes\022*\n&INCID" +
-      "ENT_DYNAMIC_STRING_TYPES_GREETING\020\000\022+\n\'I" +
-      "NCIDENT_DYNAMIC_STRING_TYPES_CHALLENGE\020\001" +
-      "\022(\n$INCIDENT_DYNAMIC_STRING_TYPES_DEFEAT" +
-      "\020\002\022)\n%INCIDENT_DYNAMIC_STRING_TYPES_VICT" +
-      "ORY\020\003\022,\n(INCIDENT_DYNAMIC_STRING_TYPES_P" +
-      "RE_BATTLE\020\004\022-\n)INCIDENT_DYNAMIC_STRING_T" +
-      "YPES_POST_BATTLE\020\005\022.\n*INCIDENT_DYNAMIC_S" +
-      "TRING_TYPES_ITEMS_STOLEN\020\006\022*\n&INCIDENT_D" +
-      "YNAMIC_STRING_TYPES_TUTORIAL\020\007\022.\n*INCIDE" +
-      "NT_DYNAMIC_STRING_TYPES_COMBAT_QUOTE\020\010\0221" +
-      "\n-INCIDENT_DYNAMIC_STRING_TYPES_CANDELA_" +
-      "INSPIRE\020\t\0221\n-INCIDENT_DYNAMIC_STRING_TYP" +
-      "ES_BLANCHE_INSPIRE\020\n\022/\n+INCIDENT_DYNAMIC" +
-      "_STRING_TYPES_SPARK_INSPIRE\020\013\022-\n)INCIDEN" +
-      "T_DYNAMIC_STRING_TYPES_GRUNT_DECOY\020\014\0224\n0" +
-      "INCIDENT_DYNAMIC_STRING_TYPES_COMBAT_DEC" +
-      "OY_QUOTE\020\r*\363\001\n\030HoloTemporaryEvolutionId\022" +
-      "4\n0HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOL" +
-      "UTION_UNSET\020\000\0223\n/HOLO_TEMPORARY_EVOLUTIO" +
-      "N_ID_TEMP_EVOLUTION_MEGA\020\001\0225\n1HOLO_TEMPO" +
-      "RARY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA_X\020" +
-      "\002\0225\n1HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EV" +
-      "OLUTION_MEGA_Y\020\003*\232\001\n\032PhoneBoothPresentat" +
-      "ionMode\022&\n\"PHONE_BOOTH_PRESENTATION_MODE" +
-      "_NONE\020\000\022*\n&PHONE_BOOTH_PRESENTATION_MODE" +
-      "_PORTRAIT\020\001\022(\n$PHONE_BOOTH_PRESENTATION_" +
-      "MODE_DIALOG\020\002*\254\005\n\023HoloIapItemCategory\022,\n" +
-      "(HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_NON" +
-      "E\020\000\022.\n*HOLO_IAP_ITEM_CATEGORY_IAP_CATEGO" +
-      "RY_BUNDLE\020\001\022-\n)HOLO_IAP_ITEM_CATEGORY_IA" +
-      "P_CATEGORY_ITEMS\020\002\0220\n,HOLO_IAP_ITEM_CATE" +
-      "GORY_IAP_CATEGORY_UPGRADES\020\003\0221\n-HOLO_IAP" +
-      "_ITEM_CATEGORY_IAP_CATEGORY_POKECOINS\020\004\022" +
-      ".\n*HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_A" +
-      "VATAR\020\005\0229\n5HOLO_IAP_ITEM_CATEGORY_IAP_CA" +
-      "TEGORY_AVATAR_STORE_LINK\020\006\0223\n/HOLO_IAP_I" +
-      "TEM_CATEGORY_IAP_CATEGORY_TEAM_CHANGE\020\007\022" +
-      ";\n7HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_G" +
-      "LOBAL_EVENT_TICKET\020\n\0221\n-HOLO_IAP_ITEM_CA" +
-      "TEGORY_IAP_CATEGORY_VS_SEEKER\020\013\022/\n+HOLO_" +
-      "IAP_ITEM_CATEGORY_IAP_CATEGORY_STICKER\020\014" +
-      "\022,\n(HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_" +
-      "FREE\020\r\0224\n0HOLO_IAP_ITEM_CATEGORY_IAP_CAT" +
-      "EGORY_SUBSCRIPTION\020\016*\311\001\n\nCombatType\022!\n\035C" +
-      "OMBAT_TYPE_COMBAT_TYPE_UNSET\020\000\022\024\n\020COMBAT" +
-      "_TYPE_SOLO\020\001\022\027\n\023COMBAT_TYPE_QR_CODE\020\002\022\027\n" +
-      "\023COMBAT_TYPE_FRIENDS\020\003\022\026\n\022COMBAT_TYPE_NE" +
-      "ARBY\020\004\022\035\n\031COMBAT_TYPE_SOLO_INVASION\020\005\022\031\n" +
-      "\025COMBAT_TYPE_VS_SEEKER\020\006*\227\001\n\035CombatHubEn" +
-      "tranceTelemetryIds\0225\n1COMBAT_HUB_ENTRANC" +
-      "E_TELEMETRY_IDS_UNDEFINED_EVENT\020\000\022?\n;COM" +
-      "BAT_HUB_ENTRANCE_TELEMETRY_IDS_CLICKED_C" +
-      "OMBAT_HUB_BUTTON\020\001*\232\006\n\016SouvenirTypeId\022#\n" +
-      "\037SOUVENIR_TYPE_ID_SOUVENIR_UNSET\020\000\022*\n&SO" +
-      "UVENIR_TYPE_ID_SOUVENIR_LONE_EARRING\020\001\022+" +
-      "\n\'SOUVENIR_TYPE_ID_SOUVENIR_SMALL_BOUQUE" +
-      "T\020\002\022,\n(SOUVENIR_TYPE_ID_SOUVENIR_SKIPPIN" +
-      "G_STONE\020\003\022)\n%SOUVENIR_TYPE_ID_SOUVENIR_B" +
-      "EACH_GLASS\020\004\022,\n(SOUVENIR_TYPE_ID_SOUVENI" +
-      "R_TROPICAL_SHELL\020\005\022&\n\"SOUVENIR_TYPE_ID_S" +
-      "OUVENIR_MUSHROOM\020\006\022*\n&SOUVENIR_TYPE_ID_S" +
-      "OUVENIR_CHALKY_STONE\020\007\022&\n\"SOUVENIR_TYPE_" +
-      "ID_SOUVENIR_PINECONE\020\010\022-\n)SOUVENIR_TYPE_" +
-      "ID_SOUVENIR_TROPICAL_FLOWER\020\t\022+\n\'SOUVENI" +
-      "R_TYPE_ID_SOUVENIR_FLOWER_FRUITS\020\n\022+\n\'SO" +
-      "UVENIR_TYPE_ID_SOUVENIR_CACTUS_FLOWER\020\013\022" +
-      "-\n)SOUVENIR_TYPE_ID_SOUVENIR_STRETCHY_SP" +
-      "RING\020\014\022$\n SOUVENIR_TYPE_ID_SOUVENIR_MARB" +
-      "LE\020\r\022)\n%SOUVENIR_TYPE_ID_SOUVENIR_TORN_T" +
-      "ICKET\020\016\022)\n%SOUVENIR_TYPE_ID_SOUVENIR_PRE" +
-      "TTY_LEAF\020\017\022&\n\"SOUVENIR_TYPE_ID_SOUVENIR_" +
-      "CONFETTI\020\020\022+\n\'SOUVENIR_TYPE_ID_SOUVENIR_" +
-      "PIKACHU_VISOR\020\021*\220\001\n\016BuddyAnimation\022)\n%BU" +
-      "DDY_ANIMATION_BUDDY_ANIMATION_UNSET\020\000\022)\n" +
-      "%BUDDY_ANIMATION_BUDDY_ANIMATION_HAPPY\020\001" +
-      "\022(\n$BUDDY_ANIMATION_BUDDY_ANIMATION_HATE" +
-      "\020\002*j\n\020PlayerAvatarType\022)\n%PLAYER_AVATAR_" +
-      "TYPE_PLAYER_AVATAR_MALE\020\000\022+\n\'PLAYER_AVAT" +
-      "AR_TYPE_PLAYER_AVATAR_FEMALE\020\001*\247\001\n\024Pokem" +
-      "onCreateContext\022.\n*POKEMON_CREATE_CONTEX" +
-      "T_CREATE_CONTEXT_WILD\020\000\022-\n)POKEMON_CREAT" +
-      "E_CONTEXT_CREATE_CONTEXT_EGG\020\001\0220\n,POKEMO" +
-      "N_CREATE_CONTEXT_CREATE_CONTEXT_EVOLVE\020\002" +
-      "*\342\001\n\023IncidentDisplayType\022\036\n\032INCIDENT_DIS" +
-      "PLAY_TYPE_NONE\020\000\022(\n$INCIDENT_DISPLAY_TYP" +
-      "E_INVASION_GRUNT\020\001\022)\n%INCIDENT_DISPLAY_T" +
-      "YPE_INVASION_LEADER\020\002\022+\n\'INCIDENT_DISPLA" +
-      "Y_TYPE_INVASION_GIOVANNI\020\003\022)\n%INCIDENT_D" +
-      "ISPLAY_TYPE_INVASION_GRUNTB\020\004*\177\n\024Inciden" +
-      "tStartContext\022\036\n\032INCIDENT_START_CONTEXT_" +
-      "NPC\020\000\022#\n\037INCIDENT_START_CONTEXT_POKESTOP" +
-      "\020\001\022\"\n\036INCIDENT_START_CONTEXT_BALLOON\020\002*a" +
-      "\n\026IncidentFinishSequence\022!\n\035INCIDENT_FIN" +
-      "ISH_SEQUENCE_NONE\020\000\022$\n INCIDENT_FINISH_S" +
-      "EQUENCE_VICTORY\020\001*\333\026\n\020HoloActivityType\022\'" +
-      "\n#HOLO_ACTIVITY_TYPE_ACTIVITY_UNKNOWN\020\000\022" +
-      "-\n)HOLO_ACTIVITY_TYPE_ACTIVITY_CATCH_POK" +
-      "EMON\020\001\0224\n0HOLO_ACTIVITY_TYPE_ACTIVITY_CA" +
-      "TCH_LEGEND_POKEMON\020\002\022,\n(HOLO_ACTIVITY_TY" +
-      "PE_ACTIVITY_FLEE_POKEMON\020\003\022+\n\'HOLO_ACTIV" +
-      "ITY_TYPE_ACTIVITY_DEFEAT_FORT\020\004\022.\n*HOLO_" +
-      "ACTIVITY_TYPE_ACTIVITY_EVOLVE_POKEMON\020\005\022" +
-      ")\n%HOLO_ACTIVITY_TYPE_ACTIVITY_HATCH_EGG" +
-      "\020\006\022\'\n#HOLO_ACTIVITY_TYPE_ACTIVITY_WALK_K" +
-      "M\020\007\0221\n-HOLO_ACTIVITY_TYPE_ACTIVITY_POKED" +
-      "EX_ENTRY_NEW\020\010\0221\n-HOLO_ACTIVITY_TYPE_ACT" +
-      "IVITY_CATCH_FIRST_THROW\020\t\0220\n,HOLO_ACTIVI" +
-      "TY_TYPE_ACTIVITY_CATCH_NICE_THROW\020\n\0221\n-H" +
-      "OLO_ACTIVITY_TYPE_ACTIVITY_CATCH_GREAT_T" +
-      "HROW\020\013\0225\n1HOLO_ACTIVITY_TYPE_ACTIVITY_CA" +
-      "TCH_EXCELLENT_THROW\020\014\022/\n+HOLO_ACTIVITY_T" +
-      "YPE_ACTIVITY_CATCH_CURVEBALL\020\r\0228\n4HOLO_A" +
-      "CTIVITY_TYPE_ACTIVITY_CATCH_FIRST_CATCH_" +
-      "OF_DAY\020\016\022/\n+HOLO_ACTIVITY_TYPE_ACTIVITY_" +
-      "CATCH_MILESTONE\020\017\022-\n)HOLO_ACTIVITY_TYPE_" +
-      "ACTIVITY_TRAIN_POKEMON\020\020\022+\n\'HOLO_ACTIVIT" +
-      "Y_TYPE_ACTIVITY_SEARCH_FORT\020\021\022/\n+HOLO_AC" +
-      "TIVITY_TYPE_ACTIVITY_RELEASE_POKEMON\020\022\0225" +
-      "\n1HOLO_ACTIVITY_TYPE_ACTIVITY_HATCH_EGG_" +
-      "SMALL_BONUS\020\023\0226\n2HOLO_ACTIVITY_TYPE_ACTI" +
-      "VITY_HATCH_EGG_MEDIUM_BONUS\020\024\0225\n1HOLO_AC" +
-      "TIVITY_TYPE_ACTIVITY_HATCH_EGG_LARGE_BON" +
-      "US\020\025\0223\n/HOLO_ACTIVITY_TYPE_ACTIVITY_DEFE" +
-      "AT_GYM_DEFENDER\020\026\0221\n-HOLO_ACTIVITY_TYPE_" +
-      "ACTIVITY_DEFEAT_GYM_LEADER\020\027\022>\n:HOLO_ACT" +
-      "IVITY_TYPE_ACTIVITY_CATCH_FIRST_CATCH_ST" +
-      "REAK_BONUS\020\030\022<\n8HOLO_ACTIVITY_TYPE_ACTIV" +
-      "ITY_SEARCH_FORT_FIRST_OF_THE_DAY\020\031\0228\n4HO" +
-      "LO_ACTIVITY_TYPE_ACTIVITY_SEARCH_FORT_ST" +
-      "REAK_BONUS\020\032\0223\n/HOLO_ACTIVITY_TYPE_ACTIV" +
-      "ITY_DEFEAT_RAID_POKEMON\020\033\022*\n&HOLO_ACTIVI" +
-      "TY_TYPE_ACTIVITY_FEED_BERRY\020\034\022*\n&HOLO_AC" +
-      "TIVITY_TYPE_ACTIVITY_SEARCH_GYM\020\035\022,\n(HOL" +
-      "O_ACTIVITY_TYPE_ACTIVITY_NEW_POKESTOP\020\036\022" +
-      "/\n+HOLO_ACTIVITY_TYPE_ACTIVITY_GYM_BATTL" +
-      "E_LOSS\020\037\0223\n/HOLO_ACTIVITY_TYPE_ACTIVITY_" +
-      "CATCH_AR_PLUS_BONUS\020 \022=\n9HOLO_ACTIVITY_T" +
-      "YPE_ACTIVITY_CATCH_QUEST_POKEMON_ENCOUNT" +
-      "ER\020!\0225\n1HOLO_ACTIVITY_TYPE_ACTIVITY_FRIE" +
-      "NDSHIP_LEVEL_UP_0\020#\0225\n1HOLO_ACTIVITY_TYP" +
-      "E_ACTIVITY_FRIENDSHIP_LEVEL_UP_1\020$\0225\n1HO" +
-      "LO_ACTIVITY_TYPE_ACTIVITY_FRIENDSHIP_LEV" +
-      "EL_UP_2\020%\0225\n1HOLO_ACTIVITY_TYPE_ACTIVITY" +
-      "_FRIENDSHIP_LEVEL_UP_3\020&\0225\n1HOLO_ACTIVIT" +
-      "Y_TYPE_ACTIVITY_FRIENDSHIP_LEVEL_UP_4\020\'\022" +
-      ")\n%HOLO_ACTIVITY_TYPE_ACTIVITY_SEND_GIFT" +
-      "\020(\0222\n.HOLO_ACTIVITY_TYPE_ACTIVITY_SHARE_" +
-      "EX_RAID_PASS\020)\022:\n6HOLO_ACTIVITY_TYPE_ACT" +
-      "IVITY_RAID_LEVEL_1_ADDITIONAL_XP\020*\022:\n6HO" +
-      "LO_ACTIVITY_TYPE_ACTIVITY_RAID_LEVEL_2_A" +
-      "DDITIONAL_XP\020+\022:\n6HOLO_ACTIVITY_TYPE_ACT" +
-      "IVITY_RAID_LEVEL_3_ADDITIONAL_XP\020,\022:\n6HO" +
-      "LO_ACTIVITY_TYPE_ACTIVITY_RAID_LEVEL_4_A" +
-      "DDITIONAL_XP\020-\022:\n6HOLO_ACTIVITY_TYPE_ACT" +
-      "IVITY_RAID_LEVEL_5_ADDITIONAL_XP\020.\0220\n,HO" +
-      "LO_ACTIVITY_TYPE_ACTIVITY_HATCH_EGG_SHAD" +
-      "OW\020/\022.\n*HOLO_ACTIVITY_TYPE_ACTIVITY_HATC" +
-      "H_EGG_GIFT\0200\022:\n6HOLO_ACTIVITY_TYPE_ACTIV" +
-      "ITY_REMOTE_DEFEAT_RAID_POKEMON\0201\022A\n=HOLO" +
-      "_ACTIVITY_TYPE_ACTIVITY_REMOTE_RAID_LEVE" +
-      "L_1_ADDITIONAL_XP\0202\022A\n=HOLO_ACTIVITY_TYP" +
-      "E_ACTIVITY_REMOTE_RAID_LEVEL_2_ADDITIONA" +
-      "L_XP\0203\022A\n=HOLO_ACTIVITY_TYPE_ACTIVITY_RE" +
-      "MOTE_RAID_LEVEL_3_ADDITIONAL_XP\0204\022A\n=HOL" +
-      "O_ACTIVITY_TYPE_ACTIVITY_REMOTE_RAID_LEV" +
-      "EL_4_ADDITIONAL_XP\0205\022A\n=HOLO_ACTIVITY_TY" +
-      "PE_ACTIVITY_REMOTE_RAID_LEVEL_5_ADDITION" +
-      "AL_XP\0206*\362\005\n\rBuddyActivity\022\'\n#BUDDY_ACTIV" +
-      "ITY_BUDDY_ACTIVITY_UNSET\020\000\022&\n\"BUDDY_ACTI" +
-      "VITY_BUDDY_ACTIVITY_FEED\020\001\022%\n!BUDDY_ACTI" +
-      "VITY_BUDDY_ACTIVITY_PET\020\002\022*\n&BUDDY_ACTIV" +
-      "ITY_BUDDY_ACTIVITY_SNAPSHOT\020\003\022&\n\"BUDDY_A" +
-      "CTIVITY_BUDDY_ACTIVITY_WALK\020\004\022*\n&BUDDY_A" +
-      "CTIVITY_BUDDY_ACTIVITY_NEW_POIS\020\005\022,\n(BUD" +
-      "DY_ACTIVITY_BUDDY_ACTIVITY_GYM_BATTLE\020\006\022" +
-      "-\n)BUDDY_ACTIVITY_BUDDY_ACTIVITY_RAID_BA" +
-      "TTLE\020\007\022,\n(BUDDY_ACTIVITY_BUDDY_ACTIVITY_" +
-      "NPC_BATTLE\020\010\022,\n(BUDDY_ACTIVITY_BUDDY_ACT" +
-      "IVITY_PVP_BATTLE\020\t\0220\n,BUDDY_ACTIVITY_BUD" +
-      "DY_ACTIVITY_OPEN_SOUVENIRS\020\n\0222\n.BUDDY_AC" +
-      "TIVITY_BUDDY_ACTIVITY_OPEN_CONSUMABLES\020\013" +
-      "\0220\n,BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASI" +
-      "ON_GRUNT\020\014\0221\n-BUDDY_ACTIVITY_BUDDY_ACTIV" +
-      "ITY_INVASION_LEADER\020\r\0223\n/BUDDY_ACTIVITY_" +
-      "BUDDY_ACTIVITY_INVASION_GIOVANNI\020\016\0220\n,BU" +
-      "DDY_ACTIVITY_BUDDY_ACTIVITY_ATTRACTIVE_P" +
-      "OI\020\017*\267\001\n\022BannedPlayerReason\022\037\n\033BANNED_PL" +
-      "AYER_REASON_BANNED\020\000\022,\n(BANNED_PLAYER_RE" +
-      "ASON_UNAUTHORIZED_DEVICE\020\001\022\"\n\036BANNED_PLA" +
-      "YER_REASON_SUSPENDED\020\002\022.\n*BANNED_PLAYER_" +
-      "REASON_RESTRICTION_VIOLATION\020\003*\266\004\n\031AdFee" +
-      "dbackComplaintReason\022E\nAAD_FEEDBACK_COMP" +
-      "LAINT_REASON_AD_FEEDBACK_COMPLAINT_REASO" +
-      "N_INVALID\020\000\022G\nCAD_FEEDBACK_COMPLAINT_REA" +
-      "SON_AD_FEEDBACK_COMPLAINT_REASON_OFFENSI" +
-      "VE\020\001\022B\n>AD_FEEDBACK_COMPLAINT_REASON_AD_" +
-      "FEEDBACK_COMPLAINT_REASON_SPAM\020\002\022T\nPAD_F" +
-      "EEDBACK_COMPLAINT_REASON_AD_FEEDBACK_COM" +
-      "PLAINT_REASON_SEXUALLY_INAPPROPRIATE\020\003\022P" +
-      "\nLAD_FEEDBACK_COMPLAINT_REASON_AD_FEEDBA" +
-      "CK_COMPLAINT_REASON_SCAM_OR_MISLEADING\020\004" +
-      "\022T\nPAD_FEEDBACK_COMPLAINT_REASON_AD_FEED" +
-      "BACK_COMPLAINT_REASON_VIOLENCE_OR_PROHIB" +
-      "ITED\020\005\022G\nCAD_FEEDBACK_COMPLAINT_REASON_A" +
-      "D_FEEDBACK_COMPLAINT_REASON_POLITICAL\020\006*" +
-      "\254\001\n\025ShoppingPageScrollIds\022@\n<SHOPPING_PA" +
-      "GE_SCROLL_IDS_UNDEFINED_SHOPPING_PAGE_SC" +
-      "ROLL_TYPE\020\000\022(\n$SHOPPING_PAGE_SCROLL_IDS_" +
-      "LAST_SCROLL\020\001\022\'\n#SHOPPING_PAGE_SCROLL_ID",
-      "S_MAX_SCROLL\020\002*\357\005\n\025ShareExRaidPassResult" +
-      "\0226\n2SHARE_EX_RAID_PASS_RESULT_SHARE_EX_R" +
-      "AID_PASS_UNSET\020\000\0228\n4SHARE_EX_RAID_PASS_R" +
-      "ESULT_SHARE_EX_RAID_PASS_SUCCESS\020\001\022G\nCSH" +
-      "ARE_EX_RAID_PASS_RESULT_ERROR_FRIEND_ALR" +
-      "EADY_INVITED_TO_SAME_RAID\020\002\022?\n;SHARE_EX_" +
-      "RAID_PASS_RESULT_ERROR_EX_RAID_PASS_ALRE" +
-      "ADY_SHARED\020\003\022R\nNSHARE_EX_RAID_PASS_RESUL" +
-      "T_ERROR_FRIEND_ALREADY_HAS_SHARED_EX_PAS" +
-      "S_IN_INVENTORY\020\004\022<\n8SHARE_EX_RAID_PASS_R" +
-      "ESULT_ERROR_TOO_LOW_FRIENDSHIP_LEVEL\020\005\0224" +
-      "\n0SHARE_EX_RAID_PASS_RESULT_ERROR_FRIEND" +
-      "_NOT_FOUND\020\006\022;\n7SHARE_EX_RAID_PASS_RESUL" +
-      "T_ERROR_EX_RAID_ALREADY_STARTED\020\007\0223\n/SHA" +
-      "RE_EX_RAID_PASS_RESULT_ERROR_EX_RAID_INV" +
-      "ALID\020\010\022:\n6SHARE_EX_RAID_PASS_RESULT_ERRO" +
-      "R_EX_RAID_PASS_NOT_FOUND\020\t\022+\n\'SHARE_EX_R" +
-      "AID_PASS_RESULT_ERROR_UNKNOWN\020\n\0227\n3SHARE" +
-      "_EX_RAID_PASS_RESULT_ERROR_FRIEND_NOT_EL" +
-      "IGIBLE\020\013*\266\001\n\020PresentationType\022\035\n\031PRESENT" +
-      "ATION_TYPE_UNKNOWN\020\000\022\036\n\032PRESENTATION_TYP" +
-      "E_CATEGORY\020\001\022\032\n\026PRESENTATION_TYPE_SORT\020\002" +
-      "\022\032\n\026PRESENTATION_TYPE_SALE\020\003\022+\n\'PRESENTA" +
-      "TION_TYPE_ML_BUNDLE_TRACKING_ID\020\004*\257\002\n\027Ba" +
-      "ttlePartyTelemetryIds\022;\n7BATTLE_PARTY_TE" +
-      "LEMETRY_IDS_UNDEFINED_BATTLE_PARTY_EVENT" +
-      "\020\000\022\"\n\036BATTLE_PARTY_TELEMETRY_IDS_ADD\020\001\022%" +
-      "\n!BATTLE_PARTY_TELEMETRY_IDS_REMOVE\020\002\022)\n" +
-      "%BATTLE_PARTY_TELEMETRY_IDS_GYM_BATTLE\020\003" +
-      "\022*\n&BATTLE_PARTY_TELEMETRY_IDS_RAID_BATT" +
-      "LE\020\004\0225\n1BATTLE_PARTY_TELEMETRY_IDS_BATTL" +
-      "E_POKEMON_CHANGED\020\005*\260\t\n\020HoloItemCategory" +
-      "\022)\n%HOLO_ITEM_CATEGORY_ITEM_CATEGORY_NON" +
-      "E\020\000\022-\n)HOLO_ITEM_CATEGORY_ITEM_CATEGORY_" +
-      "POKEBALL\020\001\022)\n%HOLO_ITEM_CATEGORY_ITEM_CA" +
-      "TEGORY_FOOD\020\002\022-\n)HOLO_ITEM_CATEGORY_ITEM" +
-      "_CATEGORY_MEDICINE\020\003\022*\n&HOLO_ITEM_CATEGO" +
-      "RY_ITEM_CATEGORY_BOOST\020\004\022-\n)HOLO_ITEM_CA" +
-      "TEGORY_ITEM_CATEGORY_UTILITES\020\005\022+\n\'HOLO_" +
-      "ITEM_CATEGORY_ITEM_CATEGORY_CAMERA\020\006\022)\n%" +
-      "HOLO_ITEM_CATEGORY_ITEM_CATEGORY_DISK\020\007\022" +
-      ".\n*HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCU" +
-      "BATOR\020\010\022,\n(HOLO_ITEM_CATEGORY_ITEM_CATEG" +
-      "ORY_INCENSE\020\t\022-\n)HOLO_ITEM_CATEGORY_ITEM" +
-      "_CATEGORY_XP_BOOST\020\n\0226\n2HOLO_ITEM_CATEGO" +
-      "RY_ITEM_CATEGORY_INVENTORY_UPGRADE\020\013\022:\n6" +
-      "HOLO_ITEM_CATEGORY_ITEM_CATEGORY_EVOLUTI" +
-      "ON_REQUIREMENT\020\014\0220\n,HOLO_ITEM_CATEGORY_I" +
-      "TEM_CATEGORY_MOVE_REROLL\020\r\022*\n&HOLO_ITEM_" +
-      "CATEGORY_ITEM_CATEGORY_CANDY\020\016\0220\n,HOLO_I" +
-      "TEM_CATEGORY_ITEM_CATEGORY_RAID_TICKET\020\017" +
-      "\0223\n/HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STA" +
-      "RDUST_BOOST\020\020\0224\n0HOLO_ITEM_CATEGORY_ITEM" +
-      "_CATEGORY_FRIEND_GIFT_BOX\020\021\0220\n,HOLO_ITEM" +
-      "_CATEGORY_ITEM_CATEGORY_TEAM_CHANGE\020\022\022.\n" +
-      "*HOLO_ITEM_CATEGORY_ITEM_CATEGORY_VS_SEE" +
-      "KER\020\024\0224\n0HOLO_ITEM_CATEGORY_ITEM_CATEGOR" +
-      "Y_INCIDENT_TICKET\020\025\0228\n4HOLO_ITEM_CATEGOR" +
-      "Y_ITEM_CATEGORY_GLOBAL_EVENT_TICKET\020\026\0229\n" +
-      "5HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BUDDY_" +
-      "EXCLUSIVE_FOOD\020\027\022,\n(HOLO_ITEM_CATEGORY_I" +
-      "TEM_CATEGORY_STICKER\020\030*K\n\021OnboardingPath" +
-      "Ids\022\032\n\026ONBOARDING_PATH_IDS_V1\020\000\022\032\n\026ONBOA" +
-      "RDING_PATH_IDS_V2\020\001*\305\001\n\023ItemUseTelemetry" +
-      "Ids\022/\n+ITEM_USE_TELEMETRY_IDS_UNDEFINED_" +
-      "ITEM_EVENT\020\000\022#\n\037ITEM_USE_TELEMETRY_IDS_U" +
-      "SE_ITEM\020\001\022\'\n#ITEM_USE_TELEMETRY_IDS_RECY" +
-      "CLE_ITEM\020\002\022/\n+ITEM_USE_TELEMETRY_IDS_UPD" +
-      "ATE_ITEM_EQUIPPED\020\003*\341\017\n\004Item\022\025\n\021ITEM_ITE" +
-      "M_UNKNOWN\020\000\022\027\n\023ITEM_ITEM_POKE_BALL\020\001\022\030\n\024" +
-      "ITEM_ITEM_GREAT_BALL\020\002\022\030\n\024ITEM_ITEM_ULTR" +
-      "A_BALL\020\003\022\031\n\025ITEM_ITEM_MASTER_BALL\020\004\022\032\n\026I" +
-      "TEM_ITEM_PREMIER_BALL\020\005\022\024\n\020ITEM_ITEM_POT" +
-      "ION\020e\022\032\n\026ITEM_ITEM_SUPER_POTION\020f\022\032\n\026ITE" +
-      "M_ITEM_HYPER_POTION\020g\022\030\n\024ITEM_ITEM_MAX_P" +
-      "OTION\020h\022\025\n\020ITEM_ITEM_REVIVE\020\311\001\022\031\n\024ITEM_I" +
-      "TEM_MAX_REVIVE\020\312\001\022\030\n\023ITEM_ITEM_LUCKY_EGG" +
-      "\020\255\002\022\037\n\032ITEM_ITEM_INCENSE_ORDINARY\020\221\003\022\034\n\027" +
-      "ITEM_ITEM_INCENSE_SPICY\020\222\003\022\033\n\026ITEM_ITEM_" +
-      "INCENSE_COOL\020\223\003\022\035\n\030ITEM_ITEM_INCENSE_FLO" +
-      "RAL\020\224\003\022!\n\034ITEM_ITEM_INCENSE_BELUGA_BOX\020\225" +
-      "\003\022\030\n\023ITEM_ITEM_TROY_DISK\020\365\003\022 \n\033ITEM_ITEM" +
-      "_TROY_DISK_GLACIAL\020\366\003\022\036\n\031ITEM_ITEM_TROY_" +
-      "DISK_MOSSY\020\367\003\022!\n\034ITEM_ITEM_TROY_DISK_MAG" +
-      "NETIC\020\370\003\022\027\n\022ITEM_ITEM_X_ATTACK\020\332\004\022\030\n\023ITE" +
-      "M_ITEM_X_DEFENSE\020\333\004\022\030\n\023ITEM_ITEM_X_MIRAC" +
-      "LE\020\334\004\022\031\n\024ITEM_ITEM_RAZZ_BERRY\020\275\005\022\031\n\024ITEM" +
-      "_ITEM_BLUK_BERRY\020\276\005\022\032\n\025ITEM_ITEM_NANAB_B" +
-      "ERRY\020\277\005\022\032\n\025ITEM_ITEM_WEPAR_BERRY\020\300\005\022\032\n\025I" +
-      "TEM_ITEM_PINAP_BERRY\020\301\005\022 \n\033ITEM_ITEM_GOL" +
-      "DEN_RAZZ_BERRY\020\302\005\022!\n\034ITEM_ITEM_GOLDEN_NA" +
-      "NAB_BERRY\020\303\005\022!\n\034ITEM_ITEM_GOLDEN_PINAP_B" +
-      "ERRY\020\304\005\022\025\n\020ITEM_ITEM_POFFIN\020\305\005\022\035\n\030ITEM_I" +
-      "TEM_SPECIAL_CAMERA\020\241\006\022 \n\033ITEM_ITEM_STICK" +
-      "ER_INVENTORY\020\242\006\022(\n#ITEM_ITEM_INCUBATOR_B" +
-      "ASIC_UNLIMITED\020\205\007\022\036\n\031ITEM_ITEM_INCUBATOR" +
-      "_BASIC\020\206\007\022\036\n\031ITEM_ITEM_INCUBATOR_SUPER\020\207" +
-      "\007\022&\n!ITEM_ITEM_POKEMON_STORAGE_UPGRADE\020\351" +
-      "\007\022#\n\036ITEM_ITEM_ITEM_STORAGE_UPGRADE\020\352\007\022\030" +
-      "\n\023ITEM_ITEM_SUN_STONE\020\315\010\022\031\n\024ITEM_ITEM_KI" +
-      "NGS_ROCK\020\316\010\022\031\n\024ITEM_ITEM_METAL_COAT\020\317\010\022\033" +
-      "\n\026ITEM_ITEM_DRAGON_SCALE\020\320\010\022\027\n\022ITEM_ITEM" +
-      "_UP_GRADE\020\321\010\022#\n\036ITEM_ITEM_GEN4_EVOLUTION" +
-      "_STONE\020\322\010\022#\n\036ITEM_ITEM_GEN5_EVOLUTION_ST" +
-      "ONE\020\323\010\022&\n!ITEM_ITEM_MOVE_REROLL_FAST_ATT" +
-      "ACK\020\261\t\022)\n$ITEM_ITEM_MOVE_REROLL_SPECIAL_" +
-      "ATTACK\020\262\t\022,\n\'ITEM_ITEM_MOVE_REROLL_ELITE" +
-      "_FAST_ATTACK\020\263\t\022/\n*ITEM_ITEM_MOVE_REROLL" +
-      "_ELITE_SPECIAL_ATTACK\020\264\t\022\031\n\024ITEM_ITEM_RA" +
-      "RE_CANDY\020\225\n\022\037\n\032ITEM_ITEM_FREE_RAID_TICKE" +
-      "T\020\371\n\022\037\n\032ITEM_ITEM_PAID_RAID_TICKET\020\372\n\022$\n" +
-      "\037ITEM_ITEM_LEGENDARY_RAID_TICKET\020\373\n\022\031\n\024I" +
-      "TEM_ITEM_STAR_PIECE\020\374\n\022\036\n\031ITEM_ITEM_FRIE" +
-      "ND_GIFT_BOX\020\375\n\022\032\n\025ITEM_ITEM_TEAM_CHANGE\020" +
-      "\376\n\022!\n\034ITEM_ITEM_REMOTE_RAID_TICKET\020\200\013\022\"\n" +
-      "\035ITEM_ITEM_LEADER_MAP_FRAGMENT\020\335\013\022\031\n\024ITE" +
-      "M_ITEM_LEADER_MAP\020\336\013\022\033\n\026ITEM_ITEM_GIOVAN" +
-      "NI_MAP\020\337\013\022\"\n\035ITEM_ITEM_GLOBAL_EVENT_TICK" +
-      "ET\020\300\014\022 \n\033ITEM_ITEM_EVENT_TICKET_PINK\020\301\014*" +
-      "\335\001\n\nUpdateType\022\023\n\017UPDATE_TYPE_ADD\020\000\022\026\n\022U" +
-      "PDATE_TYPE_MODIFY\020\001\022\026\n\022UPDATE_TYPE_REMOV" +
-      "E\020\002\022 \n\034UPDATE_TYPE_PREDICTED_MODIFY\020\003\022 \n" +
-      "\034UPDATE_TYPE_PREDICTED_REMOVE\020\004\022\"\n\036UPDAT" +
-      "E_TYPE_ROLLED_BACK_MODIFY\020\005\022\"\n\036UPDATE_TY" +
-      "PE_ROLLED_BACK_REMOVE\020\006*\206\001\n\nCameraType\022\027" +
-      "\n\023CAMERA_TYPE_DEFAULT\020\000\022\030\n\024CAMERA_TYPE_S" +
-      "HOULDER\020\001\022#\n\037CAMERA_TYPE_ENEMY_POKEMON_F" +
-      "OCUS\020\002\022 \n\034CAMERA_TYPE_MY_POKEMON_FOCUS\020\003" +
-      "*\207\003\n\022SocialTelemetryIds\022)\n%SOCIAL_TELEME" +
-      "TRY_IDS_UNDEFINED_SOCIAL\020\000\022#\n\037SOCIAL_TEL" +
-      "EMETRY_IDS_FRIEND_TAB\020\001\022)\n%SOCIAL_TELEME" +
-      "TRY_IDS_NOTIFICATION_TAB\020\002\022\'\n#SOCIAL_TEL" +
-      "EMETRY_IDS_FRIEND_PROFILE\020\003\0226\n2SOCIAL_TE" +
-      "LEMETRY_IDS_OPEN_FRIEND_SHIP_LEVEL_DETAI" +
-      "L\020\004\0225\n1SOCIAL_TELEMETRY_IDS_CLOSE_OPEN_G" +
-      "IFT_CONFIRMATION\020\005\0221\n-SOCIAL_TELEMETRY_I" +
-      "DS_FRIEND_LIST_SORT_CHANGED\020\006\022+\n\'SOCIAL_" +
-      "TELEMETRY_IDS_FRIEND_LIST_CLOSED\020\007*\351\001\n\nB" +
-      "uddyLevel\022!\n\035BUDDY_LEVEL_BUDDY_LEVEL_UNS" +
-      "ET\020\000\022\035\n\031BUDDY_LEVEL_BUDDY_LEVEL_0\020\001\022\035\n\031B" +
-      "UDDY_LEVEL_BUDDY_LEVEL_1\020\002\022\035\n\031BUDDY_LEVE" +
-      "L_BUDDY_LEVEL_2\020\003\022\035\n\031BUDDY_LEVEL_BUDDY_L" +
-      "EVEL_3\020\004\022\035\n\031BUDDY_LEVEL_BUDDY_LEVEL_4\020\005\022" +
-      "\035\n\031BUDDY_LEVEL_BUDDY_LEVEL_5\020\006*\362\003\n\025MapEv" +
-      "entsTelemetryIds\0220\n,MAP_EVENTS_TELEMETRY" +
-      "_IDS_UNDEFINED_MAP_EVENT\020\000\022%\n!MAP_EVENTS" +
-      "_TELEMETRY_IDS_ITEM_BAG\020\001\022&\n\"MAP_EVENTS_" +
-      "TELEMETRY_IDS_MAIN_MENU\020\002\022$\n MAP_EVENTS_" +
-      "TELEMETRY_IDS_POKEDEX\020\003\022$\n MAP_EVENTS_TE" +
-      "LEMETRY_IDS_PROFILE\020\004\022%\n!MAP_EVENTS_TELE" +
-      "METRY_IDS_SETTINGS\020\005\022*\n&MAP_EVENTS_TELEM" +
-      "ETRY_IDS_SHOP_FROM_MAP\020\006\022 \n\034MAP_EVENTS_T" +
-      "ELEMETRY_IDS_GYM\020\007\022%\n!MAP_EVENTS_TELEMET" +
-      "RY_IDS_POKESTOP\020\010\022%\n!MAP_EVENTS_TELEMETR" +
-      "Y_IDS_RESEARCH\020\t\022$\n MAP_EVENTS_TELEMETRY" +
-      "_IDS_COMPASS\020\n\022#\n\037MAP_EVENTS_TELEMETRY_I" +
-      "DS_NEARBY\020\013*a\n\014PokemonBadge\022%\n!POKEMON_B" +
-      "ADGE_POKEMON_BADGE_UNSET\020\000\022*\n&POKEMON_BA" +
-      "DGE_POKEMON_BADGE_BEST_BUDDY\020\001*\322\002\n\036Permi" +
-      "ssionFlowStepTelemetryIds\022E\nAPERMISSION_" +
-      "FLOW_STEP_TELEMETRY_IDS_UNDEFINED_PERMIS" +
-      "SION_FLOW_STEP\020\000\0225\n1PERMISSION_FLOW_STEP" +
-      "_TELEMETRY_IDS_INITIAL_PROMPT\020\001\0229\n5PERMI" +
-      "SSION_FLOW_STEP_TELEMETRY_IDS_FITNESS_PE" +
-      "RMISSION\020\002\022:\n6PERMISSION_FLOW_STEP_TELEM" +
-      "ETRY_IDS_LOCATION_PERMISSION\020\003\022;\n7PERMIS" +
-      "SION_FLOW_STEP_TELEMETRY_IDS_ACTIVITY_PE" +
-      "RMISSIONS\020\004*{\n\017WebTelemetryIds\022)\n%WEB_TE" +
-      "LEMETRY_IDS_UNDEFINED_WEB_EVENT\020\000\022=\n9WEB" +
-      "_TELEMETRY_IDS_POINT_OF_INTEREST_DESCRIP" +
-      "TION_WEB_CLICK\020\001*\226\001\n\021AssetBundleStatus\022 " +
-      "\n\034ASSET_BUNDLE_STATUS_UNLOADED\020\000\022\037\n\033ASSE" +
-      "T_BUNDLE_STATUS_LOADING\020\001\022\036\n\032ASSET_BUNDL" +
-      "E_STATUS_LOADED\020\002\022\036\n\032ASSET_BUNDLE_STATUS" +
-      "_FAILED\020\003*v\n\024PlayerOnboardingPath\022 \n\034PLA" +
-      "YER_ONBOARDING_PATH_UNSET\020\000\022\035\n\031PLAYER_ON" +
-      "BOARDING_PATH_V1\020\001\022\035\n\031PLAYER_ONBOARDING_" +
-      "PATH_V2\020\002*\261\020\n\022TutorialCompletion\022$\n TUTO" +
-      "RIAL_COMPLETION_LEGAL_SCREEN\020\000\022(\n$TUTORI" +
-      "AL_COMPLETION_AVATAR_SELECTION\020\001\022(\n$TUTO" +
-      "RIAL_COMPLETION_ACCOUNT_CREATION\020\002\022\'\n#TU" +
-      "TORIAL_COMPLETION_POKEMON_CAPTURE\020\003\022&\n\"T" +
-      "UTORIAL_COMPLETION_NAME_SELECTION\020\004\022%\n!T" +
-      "UTORIAL_COMPLETION_POKEMON_BERRY\020\005\022 \n\034TU" +
-      "TORIAL_COMPLETION_USE_ITEM\020\006\0226\n2TUTORIAL" +
-      "_COMPLETION_FIRST_TIME_EXPERIENCE_COMPLE" +
-      "TE\020\007\022)\n%TUTORIAL_COMPLETION_POKESTOP_TUT" +
-      "ORIAL\020\010\022$\n TUTORIAL_COMPLETION_GYM_TUTOR" +
-      "IAL\020\t\0220\n,TUTORIAL_COMPLETION_CHALLENGE_Q" +
-      "UEST_TUTORIAL\020\n\0223\n/TUTORIAL_COMPLETION_P" +
-      "RIVACY_POLICY_CONFIRMATION\020\013\022(\n$TUTORIAL" +
-      "_COMPLETION_TRADING_TUTORIAL\020\014\022/\n+TUTORI" +
-      "AL_COMPLETION_POI_SUBMISSION_TUTORIAL\020\r\022" +
-      ")\n%TUTORIAL_COMPLETION_V1_START_TUTORIAL" +
-      "\020\016\022)\n%TUTORIAL_COMPLETION_V2_START_TUTOR" +
-      "IAL\020\017\022,\n(TUTORIAL_COMPLETION_V2_CUSTOMIZ" +
-      "ED_AVATAR\020\020\022,\n(TUTORIAL_COMPLETION_V2_CA" +
-      "UGHT_FIRST_WILD\020\021\0224\n0TUTORIAL_COMPLETION" +
-      "_V2_FINISHED_TUTORIAL_CATCHES\020\022\022)\n%TUTOR" +
-      "IAL_COMPLETION_V2_NAME_SELECTION\020\023\022$\n TU" +
-      "TORIAL_COMPLETION_V2_EGG_GIVEN\020\024\022-\n)TUTO" +
-      "RIAL_COMPLETION_V2_START_EGG_TUTORIAL\020\025\022" +
-      "1\n-TUTORIAL_COMPLETION_V2_COMPLETED_EGG_" +
-      "TUTORIAL\020\026\022)\n%TUTORIAL_COMPLETION_AR_PHO" +
-      "TO_TUTORIAL\020\027\0220\n,TUTORIAL_COMPLETION_STA" +
-      "RTER_POKEMON_CAPTURED\020\030\0222\n.TUTORIAL_COMP" +
-      "LETION_AR_PHOTO_FIRST_TIME_DIALOG\020\031\0221\n-T" +
-      "UTORIAL_COMPLETION_AR_CLASSIC_PHOTO_TUTO" +
-      "RIAL\020\032\022.\n*TUTORIAL_COMPLETION_AR_PLUS_PH" +
-      "OTO_TUTORIAL\020\033\0224\n0TUTORIAL_COMPLETION_IN" +
-      "VASION_INTRODUCTION_DIALOG\020\035\0221\n-TUTORIAL" +
-      "_COMPLETION_INVASION_ENCOUNTER_DIALOG\020\036\022" +
-      "6\n2TUTORIAL_COMPLETION_INVASION_SHADOW_P" +
-      "OKEMON_DIALOG\020\037\0224\n0TUTORIAL_COMPLETION_I" +
-      "NVASION_MAP_FRAGMENT_DIALOG\020!\0224\n0TUTORIA" +
-      "L_COMPLETION_INVASION_MAP_RECEIVED_DIALO" +
-      "G\020\"\0226\n2TUTORIAL_COMPLETION_INVASION_MAP_" +
-      "2_RECEIVED_DIALOG\020#\022,\n(TUTORIAL_COMPLETI" +
-      "ON_BUDDY_WELCOME_PROMPT\020$\022.\n*TUTORIAL_CO" +
-      "MPLETION_BUDDY_AR_PLUS_TUTORIAL\020%\022+\n\'TUT" +
-      "ORIAL_COMPLETION_BUDDY_FEED_TUTORIAL\020&\022+" +
-      "\n\'TUTORIAL_COMPLETION_BUDDY_ON_MAP_PROMP" +
-      "T\020\'\0223\n/TUTORIAL_COMPLETION_BATTLE_LEAGUE" +
-      "_HELP_TUTORIAL\020(\022-\n)TUTORIAL_COMPLETION_" +
-      "ARMP_TOS_CONFIRMATION\020)\0222\n.TUTORIAL_COMP" +
-      "LETION_BUDDY_REMOTE_GIFT_TUTORIAL\020*\0226\n2T" +
-      "UTORIAL_COMPLETION_DAILY_BONUS_ENCOUNTER" +
-      "_TUTORIAL\020-\022/\n+TUTORIAL_COMPLETION_SPONS" +
-      "ORED_GIFT_TUTORIAL\020.\022/\n+TUTORIAL_COMPLET" +
-      "ION_XGS_ONLINE_CONSENT_NOTE\020/*\320\002\n\030Friend" +
-      "shipLevelMilestone\0225\n1FRIENDSHIP_LEVEL_M" +
-      "ILESTONE_FRIENDSHIP_LEVEL_UNSET\020\000\0221\n-FRI" +
-      "ENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL" +
-      "_0\020\001\0221\n-FRIENDSHIP_LEVEL_MILESTONE_FRIEN" +
-      "DSHIP_LEVEL_1\020\002\0221\n-FRIENDSHIP_LEVEL_MILE" +
-      "STONE_FRIENDSHIP_LEVEL_2\020\003\0221\n-FRIENDSHIP" +
-      "_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_3\020\004\0221\n" +
+      "_DAY_03_EARLYACCESS\020\306\'\022F\nAHOLO_BADGE_TYP" +
+      "E_BADGE_SAFARIZONE_2020_PHILADELPHIA_DAY" +
+      "_00_GENERAL\020\307\'\022J\nEHOLO_BADGE_TYPE_BADGE_" +
+      "SAFARIZONE_2020_PHILADELPHIA_DAY_00_EARL" +
+      "YACCESS\020\310\'\022F\nAHOLO_BADGE_TYPE_BADGE_SAFA" +
+      "RIZONE_2020_PHILADELPHIA_DAY_01_GENERAL\020" +
+      "\311\'\022J\nEHOLO_BADGE_TYPE_BADGE_SAFARIZONE_2" +
+      "020_PHILADELPHIA_DAY_01_EARLYACCESS\020\312\'\022F" +
+      "\nAHOLO_BADGE_TYPE_BADGE_SAFARIZONE_2020_" +
+      "PHILADELPHIA_DAY_02_GENERAL\020\313\'\022J\nEHOLO_B" +
+      "ADGE_TYPE_BADGE_SAFARIZONE_2020_PHILADEL" +
+      "PHIA_DAY_02_EARLYACCESS\020\314\'\022F\nAHOLO_BADGE" +
+      "_TYPE_BADGE_SAFARIZONE_2020_PHILADELPHIA" +
+      "_DAY_03_GENERAL\020\315\'\022J\nEHOLO_BADGE_TYPE_BA" +
+      "DGE_SAFARIZONE_2020_PHILADELPHIA_DAY_03_" +
+      "EARLYACCESS\020\316\'\022+\n&HOLO_BADGE_TYPE_BADGE_" +
+      "GOFEST_2020_TEST\020\317\'\022-\n(HOLO_BADGE_TYPE_B" +
+      "ADGE_GOFEST_2020_GLOBAL\020\320\'\0220\n+HOLO_BADGE" +
+      "_TYPE_BADGE_GLOBAL_TICKETED_EVENT\020\354\'\022%\n " +
+      "HOLO_BADGE_TYPE_BADGE_EVENT_0001\020\321(\022%\n H" +
+      "OLO_BADGE_TYPE_BADGE_EVENT_0002\020\322(\022%\n HO" +
+      "LO_BADGE_TYPE_BADGE_EVENT_0003\020\323(\022%\n HOL" +
+      "O_BADGE_TYPE_BADGE_EVENT_0004\020\324(\022%\n HOLO" +
+      "_BADGE_TYPE_BADGE_EVENT_0005\020\325(\022%\n HOLO_" +
+      "BADGE_TYPE_BADGE_EVENT_0006\020\326(\022%\n HOLO_B" +
+      "ADGE_TYPE_BADGE_EVENT_0007\020\327(\022%\n HOLO_BA" +
+      "DGE_TYPE_BADGE_EVENT_0008\020\330(\022%\n HOLO_BAD" +
+      "GE_TYPE_BADGE_EVENT_0009\020\331(\022%\n HOLO_BADG" +
+      "E_TYPE_BADGE_EVENT_0010\020\332(\022%\n HOLO_BADGE" +
+      "_TYPE_BADGE_EVENT_0011\020\333(\022%\n HOLO_BADGE_" +
+      "TYPE_BADGE_EVENT_0012\020\334(\022%\n HOLO_BADGE_T" +
+      "YPE_BADGE_EVENT_0013\020\335(\022%\n HOLO_BADGE_TY" +
+      "PE_BADGE_EVENT_0014\020\336(\022%\n HOLO_BADGE_TYP" +
+      "E_BADGE_EVENT_0015\020\337(\022%\n HOLO_BADGE_TYPE" +
+      "_BADGE_EVENT_0016\020\340(\022%\n HOLO_BADGE_TYPE_" +
+      "BADGE_EVENT_0017\020\341(\022%\n HOLO_BADGE_TYPE_B" +
+      "ADGE_EVENT_0018\020\342(\022%\n HOLO_BADGE_TYPE_BA" +
+      "DGE_EVENT_0019\020\343(\022%\n HOLO_BADGE_TYPE_BAD" +
+      "GE_EVENT_0020\020\344(\022%\n HOLO_BADGE_TYPE_BADG" +
+      "E_EVENT_0021\020\345(\022%\n HOLO_BADGE_TYPE_BADGE" +
+      "_EVENT_0022\020\346(\022%\n HOLO_BADGE_TYPE_BADGE_" +
+      "EVENT_0023\020\347(\022%\n HOLO_BADGE_TYPE_BADGE_E" +
+      "VENT_0024\020\350(\022%\n HOLO_BADGE_TYPE_BADGE_EV" +
+      "ENT_0025\020\351(\022%\n HOLO_BADGE_TYPE_BADGE_EVE" +
+      "NT_0026\020\352(\022%\n HOLO_BADGE_TYPE_BADGE_EVEN" +
+      "T_0027\020\353(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT" +
+      "_0028\020\354(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_" +
+      "0029\020\355(\022%\n HOLO_BADGE_TYPE_BADGE_EVENT_0" +
+      "030\020\356(*\221g\n\017HoloPokemonMove\022 \n\034HOLO_POKEM" +
+      "ON_MOVE_MOVE_UNSET\020\000\022.\n*HOLO_POKEMON_MOV" +
+      "E_V0001_MOVE_THUNDER_SHOCK\020\001\022-\n)HOLO_POK" +
+      "EMON_MOVE_V0002_MOVE_QUICK_ATTACK\020\002\022(\n$H" +
+      "OLO_POKEMON_MOVE_V0003_MOVE_SCRATCH\020\003\022&\n" +
+      "\"HOLO_POKEMON_MOVE_V0004_MOVE_EMBER\020\004\022*\n" +
+      "&HOLO_POKEMON_MOVE_V0005_MOVE_VINE_WHIP\020" +
+      "\005\022\'\n#HOLO_POKEMON_MOVE_V0006_MOVE_TACKLE" +
+      "\020\006\022+\n\'HOLO_POKEMON_MOVE_V0007_MOVE_RAZOR" +
+      "_LEAF\020\007\022*\n&HOLO_POKEMON_MOVE_V0008_MOVE_" +
+      "TAKE_DOWN\020\010\022*\n&HOLO_POKEMON_MOVE_V0009_M" +
+      "OVE_WATER_GUN\020\t\022%\n!HOLO_POKEMON_MOVE_V00" +
+      "10_MOVE_BITE\020\n\022&\n\"HOLO_POKEMON_MOVE_V001" +
+      "1_MOVE_POUND\020\013\022,\n(HOLO_POKEMON_MOVE_V001" +
+      "2_MOVE_DOUBLE_SLAP\020\014\022%\n!HOLO_POKEMON_MOV" +
+      "E_V0013_MOVE_WRAP\020\r\022+\n\'HOLO_POKEMON_MOVE" +
+      "_V0014_MOVE_HYPER_BEAM\020\016\022%\n!HOLO_POKEMON" +
+      "_MOVE_V0015_MOVE_LICK\020\017\022+\n\'HOLO_POKEMON_" +
+      "MOVE_V0016_MOVE_DARK_PULSE\020\020\022%\n!HOLO_POK" +
+      "EMON_MOVE_V0017_MOVE_SMOG\020\021\022\'\n#HOLO_POKE" +
+      "MON_MOVE_V0018_MOVE_SLUDGE\020\022\022+\n\'HOLO_POK" +
+      "EMON_MOVE_V0019_MOVE_METAL_CLAW\020\023\022*\n&HOL" +
+      "O_POKEMON_MOVE_V0020_MOVE_VICE_GRIP\020\024\022,\n" +
+      "(HOLO_POKEMON_MOVE_V0021_MOVE_FLAME_WHEE" +
+      "L\020\025\022)\n%HOLO_POKEMON_MOVE_V0022_MOVE_MEGA" +
+      "HORN\020\026\022,\n(HOLO_POKEMON_MOVE_V0023_MOVE_W" +
+      "ING_ATTACK\020\027\022-\n)HOLO_POKEMON_MOVE_V0024_" +
+      "MOVE_FLAMETHROWER\020\030\022-\n)HOLO_POKEMON_MOVE" +
+      "_V0025_MOVE_SUCKER_PUNCH\020\031\022$\n HOLO_POKEM" +
+      "ON_MOVE_V0026_MOVE_DIG\020\032\022)\n%HOLO_POKEMON" +
+      "_MOVE_V0027_MOVE_LOW_KICK\020\033\022+\n\'HOLO_POKE" +
+      "MON_MOVE_V0028_MOVE_CROSS_CHOP\020\034\022+\n\'HOLO" +
+      "_POKEMON_MOVE_V0029_MOVE_PSYCHO_CUT\020\035\022(\n" +
+      "$HOLO_POKEMON_MOVE_V0030_MOVE_PSYBEAM\020\036\022" +
+      "+\n\'HOLO_POKEMON_MOVE_V0031_MOVE_EARTHQUA" +
+      "KE\020\037\022+\n\'HOLO_POKEMON_MOVE_V0032_MOVE_STO" +
+      "NE_EDGE\020 \022*\n&HOLO_POKEMON_MOVE_V0033_MOV" +
+      "E_ICE_PUNCH\020!\022,\n(HOLO_POKEMON_MOVE_V0034" +
+      "_MOVE_HEART_STAMP\020\"\022*\n&HOLO_POKEMON_MOVE" +
+      "_V0035_MOVE_DISCHARGE\020#\022-\n)HOLO_POKEMON_" +
+      "MOVE_V0036_MOVE_FLASH_CANNON\020$\022%\n!HOLO_P" +
+      "OKEMON_MOVE_V0037_MOVE_PECK\020%\022+\n\'HOLO_PO" +
+      "KEMON_MOVE_V0038_MOVE_DRILL_PECK\020&\022)\n%HO" +
+      "LO_POKEMON_MOVE_V0039_MOVE_ICE_BEAM\020\'\022)\n" +
+      "%HOLO_POKEMON_MOVE_V0040_MOVE_BLIZZARD\020(" +
+      "\022*\n&HOLO_POKEMON_MOVE_V0041_MOVE_AIR_SLA" +
+      "SH\020)\022*\n&HOLO_POKEMON_MOVE_V0042_MOVE_HEA" +
+      "T_WAVE\020*\022*\n&HOLO_POKEMON_MOVE_V0043_MOVE" +
+      "_TWINEEDLE\020+\022+\n\'HOLO_POKEMON_MOVE_V0044_" +
+      "MOVE_POISON_JAB\020,\022+\n\'HOLO_POKEMON_MOVE_V" +
+      "0045_MOVE_AERIAL_ACE\020-\022*\n&HOLO_POKEMON_M" +
+      "OVE_V0046_MOVE_DRILL_RUN\020.\022/\n+HOLO_POKEM" +
+      "ON_MOVE_V0047_MOVE_PETAL_BLIZZARD\020/\022+\n\'H" +
+      "OLO_POKEMON_MOVE_V0048_MOVE_MEGA_DRAIN\0200" +
+      "\022)\n%HOLO_POKEMON_MOVE_V0049_MOVE_BUG_BUZ" +
+      "Z\0201\022,\n(HOLO_POKEMON_MOVE_V0050_MOVE_POIS" +
+      "ON_FANG\0202\022,\n(HOLO_POKEMON_MOVE_V0051_MOV" +
+      "E_NIGHT_SLASH\0203\022&\n\"HOLO_POKEMON_MOVE_V00" +
+      "52_MOVE_SLASH\0204\022,\n(HOLO_POKEMON_MOVE_V00" +
+      "53_MOVE_BUBBLE_BEAM\0205\022+\n\'HOLO_POKEMON_MO" +
+      "VE_V0054_MOVE_SUBMISSION\0206\022,\n(HOLO_POKEM" +
+      "ON_MOVE_V0055_MOVE_KARATE_CHOP\0207\022*\n&HOLO" +
+      "_POKEMON_MOVE_V0056_MOVE_LOW_SWEEP\0208\022)\n%" +
+      "HOLO_POKEMON_MOVE_V0057_MOVE_AQUA_JET\0209\022" +
+      "*\n&HOLO_POKEMON_MOVE_V0058_MOVE_AQUA_TAI" +
+      "L\020:\022*\n&HOLO_POKEMON_MOVE_V0059_MOVE_SEED" +
+      "_BOMB\020;\022)\n%HOLO_POKEMON_MOVE_V0060_MOVE_" +
+      "PSYSHOCK\020<\022+\n\'HOLO_POKEMON_MOVE_V0061_MO" +
+      "VE_ROCK_THROW\020=\022.\n*HOLO_POKEMON_MOVE_V00" +
+      "62_MOVE_ANCIENT_POWER\020>\022*\n&HOLO_POKEMON_" +
+      "MOVE_V0063_MOVE_ROCK_TOMB\020?\022+\n\'HOLO_POKE" +
+      "MON_MOVE_V0064_MOVE_ROCK_SLIDE\020@\022*\n&HOLO" +
+      "_POKEMON_MOVE_V0065_MOVE_POWER_GEM\020A\022-\n)" +
+      "HOLO_POKEMON_MOVE_V0066_MOVE_SHADOW_SNEA" +
+      "K\020B\022-\n)HOLO_POKEMON_MOVE_V0067_MOVE_SHAD" +
+      "OW_PUNCH\020C\022,\n(HOLO_POKEMON_MOVE_V0068_MO" +
+      "VE_SHADOW_CLAW\020D\022-\n)HOLO_POKEMON_MOVE_V0" +
+      "069_MOVE_OMINOUS_WIND\020E\022,\n(HOLO_POKEMON_" +
+      "MOVE_V0070_MOVE_SHADOW_BALL\020F\022-\n)HOLO_PO" +
+      "KEMON_MOVE_V0071_MOVE_BULLET_PUNCH\020G\022,\n(" +
+      "HOLO_POKEMON_MOVE_V0072_MOVE_MAGNET_BOMB" +
+      "\020H\022+\n\'HOLO_POKEMON_MOVE_V0073_MOVE_STEEL" +
+      "_WING\020I\022*\n&HOLO_POKEMON_MOVE_V0074_MOVE_" +
+      "IRON_HEAD\020J\0221\n-HOLO_POKEMON_MOVE_V0075_M" +
+      "OVE_PARABOLIC_CHARGE\020K\022&\n\"HOLO_POKEMON_M" +
+      "OVE_V0076_MOVE_SPARK\020L\022.\n*HOLO_POKEMON_M" +
+      "OVE_V0077_MOVE_THUNDER_PUNCH\020M\022(\n$HOLO_P" +
+      "OKEMON_MOVE_V0078_MOVE_THUNDER\020N\022,\n(HOLO" +
+      "_POKEMON_MOVE_V0079_MOVE_THUNDERBOLT\020O\022(" +
+      "\n$HOLO_POKEMON_MOVE_V0080_MOVE_TWISTER\020P" +
+      "\022.\n*HOLO_POKEMON_MOVE_V0081_MOVE_DRAGON_" +
+      "BREATH\020Q\022-\n)HOLO_POKEMON_MOVE_V0082_MOVE" +
+      "_DRAGON_PULSE\020R\022,\n(HOLO_POKEMON_MOVE_V00" +
+      "83_MOVE_DRAGON_CLAW\020S\0220\n,HOLO_POKEMON_MO" +
+      "VE_V0084_MOVE_DISARMING_VOICE\020T\022.\n*HOLO_" +
+      "POKEMON_MOVE_V0085_MOVE_DRAINING_KISS\020U\022" +
+      "/\n+HOLO_POKEMON_MOVE_V0086_MOVE_DAZZLING" +
+      "_GLEAM\020V\022*\n&HOLO_POKEMON_MOVE_V0087_MOVE" +
+      "_MOONBLAST\020W\022+\n\'HOLO_POKEMON_MOVE_V0088_" +
+      "MOVE_PLAY_ROUGH\020X\022-\n)HOLO_POKEMON_MOVE_V" +
+      "0089_MOVE_CROSS_POISON\020Y\022,\n(HOLO_POKEMON" +
+      "_MOVE_V0090_MOVE_SLUDGE_BOMB\020Z\022,\n(HOLO_P" +
+      "OKEMON_MOVE_V0091_MOVE_SLUDGE_WAVE\020[\022*\n&" +
+      "HOLO_POKEMON_MOVE_V0092_MOVE_GUNK_SHOT\020\\" +
+      "\022)\n%HOLO_POKEMON_MOVE_V0093_MOVE_MUD_SHO" +
+      "T\020]\022*\n&HOLO_POKEMON_MOVE_V0094_MOVE_BONE" +
+      "_CLUB\020^\022)\n%HOLO_POKEMON_MOVE_V0095_MOVE_" +
+      "BULLDOZE\020_\022)\n%HOLO_POKEMON_MOVE_V0096_MO" +
+      "VE_MUD_BOMB\020`\022,\n(HOLO_POKEMON_MOVE_V0097" +
+      "_MOVE_FURY_CUTTER\020a\022)\n%HOLO_POKEMON_MOVE" +
+      "_V0098_MOVE_BUG_BITE\020b\022,\n(HOLO_POKEMON_M" +
+      "OVE_V0099_MOVE_SIGNAL_BEAM\020c\022*\n&HOLO_POK" +
+      "EMON_MOVE_V0100_MOVE_X_SCISSOR\020d\022-\n)HOLO" +
+      "_POKEMON_MOVE_V0101_MOVE_FLAME_CHARGE\020e\022" +
+      ",\n(HOLO_POKEMON_MOVE_V0102_MOVE_FLAME_BU" +
+      "RST\020f\022+\n\'HOLO_POKEMON_MOVE_V0103_MOVE_FI" +
+      "RE_BLAST\020g\022&\n\"HOLO_POKEMON_MOVE_V0104_MO" +
+      "VE_BRINE\020h\022,\n(HOLO_POKEMON_MOVE_V0105_MO" +
+      "VE_WATER_PULSE\020i\022&\n\"HOLO_POKEMON_MOVE_V0" +
+      "106_MOVE_SCALD\020j\022+\n\'HOLO_POKEMON_MOVE_V0" +
+      "107_MOVE_HYDRO_PUMP\020k\022(\n$HOLO_POKEMON_MO" +
+      "VE_V0108_MOVE_PSYCHIC\020l\022*\n&HOLO_POKEMON_" +
+      "MOVE_V0109_MOVE_PSYSTRIKE\020m\022*\n&HOLO_POKE" +
+      "MON_MOVE_V0110_MOVE_ICE_SHARD\020n\022)\n%HOLO_" +
+      "POKEMON_MOVE_V0111_MOVE_ICY_WIND\020o\022-\n)HO" +
+      "LO_POKEMON_MOVE_V0112_MOVE_FROST_BREATH\020" +
+      "p\022\'\n#HOLO_POKEMON_MOVE_V0113_MOVE_ABSORB" +
+      "\020q\022+\n\'HOLO_POKEMON_MOVE_V0114_MOVE_GIGA_" +
+      "DRAIN\020r\022+\n\'HOLO_POKEMON_MOVE_V0115_MOVE_" +
+      "FIRE_PUNCH\020s\022+\n\'HOLO_POKEMON_MOVE_V0116_" +
+      "MOVE_SOLAR_BEAM\020t\022+\n\'HOLO_POKEMON_MOVE_V" +
+      "0117_MOVE_LEAF_BLADE\020u\022+\n\'HOLO_POKEMON_M" +
+      "OVE_V0118_MOVE_POWER_WHIP\020v\022\'\n#HOLO_POKE" +
+      "MON_MOVE_V0119_MOVE_SPLASH\020w\022%\n!HOLO_POK" +
+      "EMON_MOVE_V0120_MOVE_ACID\020x\022+\n\'HOLO_POKE" +
+      "MON_MOVE_V0121_MOVE_AIR_CUTTER\020y\022*\n&HOLO" +
+      "_POKEMON_MOVE_V0122_MOVE_HURRICANE\020z\022,\n(" +
+      "HOLO_POKEMON_MOVE_V0123_MOVE_BRICK_BREAK" +
+      "\020{\022$\n HOLO_POKEMON_MOVE_V0124_MOVE_CUT\020|" +
+      "\022&\n\"HOLO_POKEMON_MOVE_V0125_MOVE_SWIFT\020}" +
+      "\022,\n(HOLO_POKEMON_MOVE_V0126_MOVE_HORN_AT" +
+      "TACK\020~\022&\n\"HOLO_POKEMON_MOVE_V0127_MOVE_S" +
+      "TOMP\020\177\022*\n%HOLO_POKEMON_MOVE_V0128_MOVE_H" +
+      "EADBUTT\020\200\001\022,\n\'HOLO_POKEMON_MOVE_V0129_MO" +
+      "VE_HYPER_FANG\020\201\001\022&\n!HOLO_POKEMON_MOVE_V0" +
+      "130_MOVE_SLAM\020\202\001\022+\n&HOLO_POKEMON_MOVE_V0" +
+      "131_MOVE_BODY_SLAM\020\203\001\022&\n!HOLO_POKEMON_MO" +
+      "VE_V0132_MOVE_REST\020\204\001\022*\n%HOLO_POKEMON_MO" +
+      "VE_V0133_MOVE_STRUGGLE\020\205\001\0221\n,HOLO_POKEMO" +
+      "N_MOVE_V0134_MOVE_SCALD_BLASTOISE\020\206\001\0226\n1" +
+      "HOLO_POKEMON_MOVE_V0135_MOVE_HYDRO_PUMP_" +
+      "BLASTOISE\020\207\001\022,\n\'HOLO_POKEMON_MOVE_V0136_" +
+      "MOVE_WRAP_GREEN\020\210\001\022+\n&HOLO_POKEMON_MOVE_" +
+      "V0137_MOVE_WRAP_PINK\020\211\001\0222\n-HOLO_POKEMON_" +
+      "MOVE_V0200_MOVE_FURY_CUTTER_FAST\020\310\001\022/\n*H" +
+      "OLO_POKEMON_MOVE_V0201_MOVE_BUG_BITE_FAS" +
+      "T\020\311\001\022+\n&HOLO_POKEMON_MOVE_V0202_MOVE_BIT" +
+      "E_FAST\020\312\001\0223\n.HOLO_POKEMON_MOVE_V0203_MOV" +
+      "E_SUCKER_PUNCH_FAST\020\313\001\0224\n/HOLO_POKEMON_M" +
+      "OVE_V0204_MOVE_DRAGON_BREATH_FAST\020\314\001\0224\n/" +
+      "HOLO_POKEMON_MOVE_V0205_MOVE_THUNDER_SHO" +
+      "CK_FAST\020\315\001\022,\n\'HOLO_POKEMON_MOVE_V0206_MO" +
+      "VE_SPARK_FAST\020\316\001\022/\n*HOLO_POKEMON_MOVE_V0" +
+      "207_MOVE_LOW_KICK_FAST\020\317\001\0222\n-HOLO_POKEMO" +
+      "N_MOVE_V0208_MOVE_KARATE_CHOP_FAST\020\320\001\022,\n" +
+      "\'HOLO_POKEMON_MOVE_V0209_MOVE_EMBER_FAST" +
+      "\020\321\001\0222\n-HOLO_POKEMON_MOVE_V0210_MOVE_WING" +
+      "_ATTACK_FAST\020\322\001\022+\n&HOLO_POKEMON_MOVE_V02" +
+      "11_MOVE_PECK_FAST\020\323\001\022+\n&HOLO_POKEMON_MOV" +
+      "E_V0212_MOVE_LICK_FAST\020\324\001\0222\n-HOLO_POKEMO" +
+      "N_MOVE_V0213_MOVE_SHADOW_CLAW_FAST\020\325\001\0220\n" +
+      "+HOLO_POKEMON_MOVE_V0214_MOVE_VINE_WHIP_" +
+      "FAST\020\326\001\0221\n,HOLO_POKEMON_MOVE_V0215_MOVE_" +
+      "RAZOR_LEAF_FAST\020\327\001\022/\n*HOLO_POKEMON_MOVE_" +
+      "V0216_MOVE_MUD_SHOT_FAST\020\330\001\0220\n+HOLO_POKE" +
+      "MON_MOVE_V0217_MOVE_ICE_SHARD_FAST\020\331\001\0223\n" +
+      ".HOLO_POKEMON_MOVE_V0218_MOVE_FROST_BREA" +
+      "TH_FAST\020\332\001\0223\n.HOLO_POKEMON_MOVE_V0219_MO" +
+      "VE_QUICK_ATTACK_FAST\020\333\001\022.\n)HOLO_POKEMON_" +
+      "MOVE_V0220_MOVE_SCRATCH_FAST\020\334\001\022-\n(HOLO_" +
+      "POKEMON_MOVE_V0221_MOVE_TACKLE_FAST\020\335\001\022," +
+      "\n\'HOLO_POKEMON_MOVE_V0222_MOVE_POUND_FAS" +
+      "T\020\336\001\022*\n%HOLO_POKEMON_MOVE_V0223_MOVE_CUT" +
+      "_FAST\020\337\001\0221\n,HOLO_POKEMON_MOVE_V0224_MOVE" +
+      "_POISON_JAB_FAST\020\340\001\022+\n&HOLO_POKEMON_MOVE" +
+      "_V0225_MOVE_ACID_FAST\020\341\001\0221\n,HOLO_POKEMON" +
+      "_MOVE_V0226_MOVE_PSYCHO_CUT_FAST\020\342\001\0221\n,H" +
+      "OLO_POKEMON_MOVE_V0227_MOVE_ROCK_THROW_F" +
+      "AST\020\343\001\0221\n,HOLO_POKEMON_MOVE_V0228_MOVE_M" +
+      "ETAL_CLAW_FAST\020\344\001\0223\n.HOLO_POKEMON_MOVE_V" +
+      "0229_MOVE_BULLET_PUNCH_FAST\020\345\001\0220\n+HOLO_P" +
+      "OKEMON_MOVE_V0230_MOVE_WATER_GUN_FAST\020\346\001" +
+      "\022-\n(HOLO_POKEMON_MOVE_V0231_MOVE_SPLASH_" +
+      "FAST\020\347\001\022:\n5HOLO_POKEMON_MOVE_V0232_MOVE_" +
+      "WATER_GUN_FAST_BLASTOISE\020\350\001\022/\n*HOLO_POKE" +
+      "MON_MOVE_V0233_MOVE_MUD_SLAP_FAST\020\351\001\0223\n." +
+      "HOLO_POKEMON_MOVE_V0234_MOVE_ZEN_HEADBUT" +
+      "T_FAST\020\352\001\0220\n+HOLO_POKEMON_MOVE_V0235_MOV" +
+      "E_CONFUSION_FAST\020\353\001\0223\n.HOLO_POKEMON_MOVE" +
+      "_V0236_MOVE_POISON_STING_FAST\020\354\001\022-\n(HOLO" +
+      "_POKEMON_MOVE_V0237_MOVE_BUBBLE_FAST\020\355\001\022" +
+      "3\n.HOLO_POKEMON_MOVE_V0238_MOVE_FEINT_AT" +
+      "TACK_FAST\020\356\001\0221\n,HOLO_POKEMON_MOVE_V0239_" +
+      "MOVE_STEEL_WING_FAST\020\357\001\0220\n+HOLO_POKEMON_" +
+      "MOVE_V0240_MOVE_FIRE_FANG_FAST\020\360\001\0221\n,HOL" +
+      "O_POKEMON_MOVE_V0241_MOVE_ROCK_SMASH_FAS" +
+      "T\020\361\001\0220\n+HOLO_POKEMON_MOVE_V0242_MOVE_TRA" +
+      "NSFORM_FAST\020\362\001\022.\n)HOLO_POKEMON_MOVE_V024" +
+      "3_MOVE_COUNTER_FAST\020\363\001\0222\n-HOLO_POKEMON_M" +
+      "OVE_V0244_MOVE_POWDER_SNOW_FAST\020\364\001\022.\n)HO" +
+      "LO_POKEMON_MOVE_V0245_MOVE_CLOSE_COMBAT\020" +
+      "\365\001\022/\n*HOLO_POKEMON_MOVE_V0246_MOVE_DYNAM" +
+      "IC_PUNCH\020\366\001\022-\n(HOLO_POKEMON_MOVE_V0247_M" +
+      "OVE_FOCUS_BLAST\020\367\001\022-\n(HOLO_POKEMON_MOVE_" +
+      "V0248_MOVE_AURORA_BEAM\020\370\001\0222\n-HOLO_POKEMO" +
+      "N_MOVE_V0249_MOVE_CHARGE_BEAM_FAST\020\371\001\0222\n" +
+      "-HOLO_POKEMON_MOVE_V0250_MOVE_VOLT_SWITC" +
+      "H_FAST\020\372\001\022-\n(HOLO_POKEMON_MOVE_V0251_MOV" +
+      "E_WILD_CHARGE\020\373\001\022,\n\'HOLO_POKEMON_MOVE_V0" +
+      "252_MOVE_ZAP_CANNON\020\374\001\0222\n-HOLO_POKEMON_M" +
+      "OVE_V0253_MOVE_DRAGON_TAIL_FAST\020\375\001\022+\n&HO" +
+      "LO_POKEMON_MOVE_V0254_MOVE_AVALANCHE\020\376\001\022" +
+      "0\n+HOLO_POKEMON_MOVE_V0255_MOVE_AIR_SLAS" +
+      "H_FAST\020\377\001\022,\n\'HOLO_POKEMON_MOVE_V0256_MOV" +
+      "E_BRAVE_BIRD\020\200\002\022,\n\'HOLO_POKEMON_MOVE_V02" +
+      "57_MOVE_SKY_ATTACK\020\201\002\022+\n&HOLO_POKEMON_MO" +
+      "VE_V0258_MOVE_SAND_TOMB\020\202\002\022,\n\'HOLO_POKEM" +
+      "ON_MOVE_V0259_MOVE_ROCK_BLAST\020\203\002\0222\n-HOLO" +
+      "_POKEMON_MOVE_V0260_MOVE_INFESTATION_FAS" +
+      "T\020\204\002\0223\n.HOLO_POKEMON_MOVE_V0261_MOVE_STR" +
+      "UGGLE_BUG_FAST\020\205\002\022-\n(HOLO_POKEMON_MOVE_V" +
+      "0262_MOVE_SILVER_WIND\020\206\002\022/\n*HOLO_POKEMON" +
+      "_MOVE_V0263_MOVE_ASTONISH_FAST\020\207\002\022*\n%HOL" +
+      "O_POKEMON_MOVE_V0264_MOVE_HEX_FAST\020\210\002\022-\n" +
+      "(HOLO_POKEMON_MOVE_V0265_MOVE_NIGHT_SHAD" +
+      "E\020\211\002\0220\n+HOLO_POKEMON_MOVE_V0266_MOVE_IRO" +
+      "N_TAIL_FAST\020\212\002\022+\n&HOLO_POKEMON_MOVE_V026" +
+      "7_MOVE_GYRO_BALL\020\213\002\022,\n\'HOLO_POKEMON_MOVE" +
+      "_V0268_MOVE_HEAVY_SLAM\020\214\002\0220\n+HOLO_POKEMO" +
+      "N_MOVE_V0269_MOVE_FIRE_SPIN_FAST\020\215\002\022*\n%H" +
+      "OLO_POKEMON_MOVE_V0270_MOVE_OVERHEAT\020\216\002\022" +
+      "2\n-HOLO_POKEMON_MOVE_V0271_MOVE_BULLET_S" +
+      "EED_FAST\020\217\002\022,\n\'HOLO_POKEMON_MOVE_V0272_M" +
+      "OVE_GRASS_KNOT\020\220\002\022-\n(HOLO_POKEMON_MOVE_V" +
+      "0273_MOVE_ENERGY_BALL\020\221\002\0223\n.HOLO_POKEMON" +
+      "_MOVE_V0274_MOVE_EXTRASENSORY_FAST\020\222\002\022-\n" +
+      "(HOLO_POKEMON_MOVE_V0275_MOVE_FUTURESIGH" +
+      "T\020\223\002\022-\n(HOLO_POKEMON_MOVE_V0276_MOVE_MIR" +
+      "ROR_COAT\020\224\002\022)\n$HOLO_POKEMON_MOVE_V0277_M" +
+      "OVE_OUTRAGE\020\225\002\022,\n\'HOLO_POKEMON_MOVE_V027" +
+      "8_MOVE_SNARL_FAST\020\226\002\022(\n#HOLO_POKEMON_MOV" +
+      "E_V0279_MOVE_CRUNCH\020\227\002\022+\n&HOLO_POKEMON_M" +
+      "OVE_V0280_MOVE_FOUL_PLAY\020\230\002\0223\n.HOLO_POKE" +
+      "MON_MOVE_V0281_MOVE_HIDDEN_POWER_FAST\020\231\002" +
+      "\0220\n+HOLO_POKEMON_MOVE_V0282_MOVE_TAKE_DO",
+      "WN_FAST\020\232\002\0220\n+HOLO_POKEMON_MOVE_V0283_MO" +
+      "VE_WATERFALL_FAST\020\233\002\022&\n!HOLO_POKEMON_MOV" +
+      "E_V0284_MOVE_SURF\020\234\002\022.\n)HOLO_POKEMON_MOV" +
+      "E_V0285_MOVE_DRACO_METEOR\020\235\002\022-\n(HOLO_POK" +
+      "EMON_MOVE_V0286_MOVE_DOOM_DESIRE\020\236\002\022+\n&H" +
+      "OLO_POKEMON_MOVE_V0287_MOVE_YAWN_FAST\020\237\002" +
+      "\022.\n)HOLO_POKEMON_MOVE_V0288_MOVE_PSYCHO_" +
+      "BOOST\020\240\002\022.\n)HOLO_POKEMON_MOVE_V0289_MOVE" +
+      "_ORIGIN_PULSE\020\241\002\0222\n-HOLO_POKEMON_MOVE_V0" +
+      "290_MOVE_PRECIPICE_BLADES\020\242\002\022.\n)HOLO_POK" +
+      "EMON_MOVE_V0291_MOVE_PRESENT_FAST\020\243\002\0223\n." +
+      "HOLO_POKEMON_MOVE_V0292_MOVE_WEATHER_BAL" +
+      "L_FIRE\020\244\002\0222\n-HOLO_POKEMON_MOVE_V0293_MOV" +
+      "E_WEATHER_BALL_ICE\020\245\002\0223\n.HOLO_POKEMON_MO" +
+      "VE_V0294_MOVE_WEATHER_BALL_ROCK\020\246\002\0224\n/HO" +
+      "LO_POKEMON_MOVE_V0295_MOVE_WEATHER_BALL_" +
+      "WATER\020\247\002\022.\n)HOLO_POKEMON_MOVE_V0296_MOVE" +
+      "_FRENZY_PLANT\020\250\002\0221\n,HOLO_POKEMON_MOVE_V0" +
+      "297_MOVE_SMACK_DOWN_FAST\020\251\002\022,\n\'HOLO_POKE" +
+      "MON_MOVE_V0298_MOVE_BLAST_BURN\020\252\002\022.\n)HOL" +
+      "O_POKEMON_MOVE_V0299_MOVE_HYDRO_CANNON\020\253" +
+      "\002\022-\n(HOLO_POKEMON_MOVE_V0300_MOVE_LAST_R" +
+      "ESORT\020\254\002\022-\n(HOLO_POKEMON_MOVE_V0301_MOVE" +
+      "_METEOR_MASH\020\255\002\022,\n\'HOLO_POKEMON_MOVE_V03" +
+      "02_MOVE_SKULL_BASH\020\256\002\022,\n\'HOLO_POKEMON_MO" +
+      "VE_V0303_MOVE_ACID_SPRAY\020\257\002\022-\n(HOLO_POKE" +
+      "MON_MOVE_V0304_MOVE_EARTH_POWER\020\260\002\022,\n\'HO" +
+      "LO_POKEMON_MOVE_V0305_MOVE_CRABHAMMER\020\261\002" +
+      "\022\'\n\"HOLO_POKEMON_MOVE_V0306_MOVE_LUNGE\020\262" +
+      "\002\022,\n\'HOLO_POKEMON_MOVE_V0307_MOVE_CRUSH_" +
+      "CLAW\020\263\002\022+\n&HOLO_POKEMON_MOVE_V0308_MOVE_" +
+      "OCTAZOOKA\020\264\002\022-\n(HOLO_POKEMON_MOVE_V0309_" +
+      "MOVE_MIRROR_SHOT\020\265\002\022-\n(HOLO_POKEMON_MOVE" +
+      "_V0310_MOVE_SUPER_POWER\020\266\002\022.\n)HOLO_POKEM" +
+      "ON_MOVE_V0311_MOVE_FELL_STINGER\020\267\002\022.\n)HO" +
+      "LO_POKEMON_MOVE_V0312_MOVE_LEAF_TORNADO\020" +
+      "\270\002\022,\n\'HOLO_POKEMON_MOVE_V0313_MOVE_LEECH" +
+      "_LIFE\020\271\002\022-\n(HOLO_POKEMON_MOVE_V0314_MOVE" +
+      "_DRAIN_PUNCH\020\272\002\022-\n(HOLO_POKEMON_MOVE_V03" +
+      "15_MOVE_SHADOW_BONE\020\273\002\022-\n(HOLO_POKEMON_M" +
+      "OVE_V0316_MOVE_MUDDY_WATER\020\274\002\022,\n\'HOLO_PO" +
+      "KEMON_MOVE_V0317_MOVE_BLAZE_KICK\020\275\002\022-\n(H" +
+      "OLO_POKEMON_MOVE_V0318_MOVE_RAZOR_SHELL\020" +
+      "\276\002\0220\n+HOLO_POKEMON_MOVE_V0319_MOVE_POWER" +
+      "_UP_PUNCH\020\277\002\022,\n\'HOLO_POKEMON_MOVE_V0320_" +
+      "MOVE_CHARM_FAST\020\300\002\022-\n(HOLO_POKEMON_MOVE_" +
+      "V0321_MOVE_GIGA_IMPACT\020\301\002\022-\n(HOLO_POKEMO" +
+      "N_MOVE_V0322_MOVE_FRUSTRATION\020\302\002\022(\n#HOLO" +
+      "_POKEMON_MOVE_V0323_MOVE_RETURN\020\303\002\022.\n)HO" +
+      "LO_POKEMON_MOVE_V0324_MOVE_SYNCHRONOISE\020" +
+      "\304\002\022.\n)HOLO_POKEMON_MOVE_V0325_MOVE_LOCK_" +
+      "ON_FAST\020\305\002\0223\n.HOLO_POKEMON_MOVE_V0326_MO" +
+      "VE_THUNDER_FANG_FAST\020\306\002\022/\n*HOLO_POKEMON_" +
+      "MOVE_V0327_MOVE_ICE_FANG_FAST\020\307\002\022,\n\'HOLO" +
+      "_POKEMON_MOVE_V0328_MOVE_HORN_DRILL\020\310\002\022)" +
+      "\n$HOLO_POKEMON_MOVE_V0329_MOVE_FISSURE\020\311" +
+      "\002\022.\n)HOLO_POKEMON_MOVE_V0330_MOVE_SACRED" +
+      "_SWORD\020\312\002\022.\n)HOLO_POKEMON_MOVE_V0331_MOV" +
+      "E_FLYING_PRESS\020\313\002\022-\n(HOLO_POKEMON_MOVE_V" +
+      "0332_MOVE_AURA_SPHERE\020\314\002\022)\n$HOLO_POKEMON" +
+      "_MOVE_V0333_MOVE_PAYBACK\020\315\002\022.\n)HOLO_POKE" +
+      "MON_MOVE_V0334_MOVE_ROCK_WRECKER\020\316\002\022+\n&H" +
+      "OLO_POKEMON_MOVE_V0335_MOVE_AEROBLAST\020\317\002" +
+      "\0225\n0HOLO_POKEMON_MOVE_V0336_MOVE_TECHNO_" +
+      "BLAST_NORMAL\020\320\002\0223\n.HOLO_POKEMON_MOVE_V03" +
+      "37_MOVE_TECHNO_BLAST_BURN\020\321\002\0224\n/HOLO_POK" +
+      "EMON_MOVE_V0338_MOVE_TECHNO_BLAST_CHILL\020" +
+      "\322\002\0224\n/HOLO_POKEMON_MOVE_V0339_MOVE_TECHN" +
+      "O_BLAST_WATER\020\323\002\0224\n/HOLO_POKEMON_MOVE_V0" +
+      "340_MOVE_TECHNO_BLAST_SHOCK\020\324\002\022%\n HOLO_P" +
+      "OKEMON_MOVE_V0341_MOVE_FLY\020\325\002\022*\n%HOLO_PO" +
+      "KEMON_MOVE_V0342_MOVE_V_CREATE\020\326\002\022,\n\'HOL" +
+      "O_POKEMON_MOVE_V0343_MOVE_LEAF_STORM\020\327\002\022" +
+      ",\n\'HOLO_POKEMON_MOVE_V0344_MOVE_TRI_ATTA" +
+      "CK\020\330\002\022+\n&HOLO_POKEMON_MOVE_V0345_MOVE_GU" +
+      "ST_FAST\020\331\002*\326\013\n\027LoginActionTelemetryIds\0225" +
+      "\n1LOGIN_ACTION_TELEMETRY_IDS_UNDEFINED_L" +
+      "OGIN_ACTION\020\000\022-\n)LOGIN_ACTION_TELEMETRY_" +
+      "IDS_CLICK_AGE_GATE\020\001\022/\n+LOGIN_ACTION_TEL" +
+      "EMETRY_IDS_CLICK_NEW_PLAYER\020\002\0224\n0LOGIN_A" +
+      "CTION_TELEMETRY_IDS_CLICK_EXISTING_PLAYE" +
+      "R\020\003\022+\n\'LOGIN_ACTION_TELEMETRY_IDS_CLICK_" +
+      "GOOGLE\020\004\022.\n*LOGIN_ACTION_TELEMETRY_IDS_C" +
+      "OMPLETE_GOOGLE\020\005\022,\n(LOGIN_ACTION_TELEMET" +
+      "RY_IDS_CANCEL_GOOGLE\020\006\022-\n)LOGIN_ACTION_T" +
+      "ELEMETRY_IDS_CLICK_FACEBOOK\020\007\0220\n,LOGIN_A" +
+      "CTION_TELEMETRY_IDS_COMPLETE_FACEBOOK\020\010\022" +
+      ".\n*LOGIN_ACTION_TELEMETRY_IDS_CANCEL_FAC" +
+      "EBOOK\020\t\022(\n$LOGIN_ACTION_TELEMETRY_IDS_CL" +
+      "ICK_PTC\020\n\022\'\n#LOGIN_ACTION_TELEMETRY_IDS_" +
+      "EXIT_PTC\020\013\0221\n-LOGIN_ACTION_TELEMETRY_IDS" +
+      "_CLICK_PTC_REGISTER\020\014\0220\n,LOGIN_ACTION_TE" +
+      "LEMETRY_IDS_CLICK_PTC_SIGN_IN\020\r\0221\n-LOGIN" +
+      "_ACTION_TELEMETRY_IDS_CANCEL_PTC_SIGN_IN" +
+      "\020\016\0223\n/LOGIN_ACTION_TELEMETRY_IDS_COMPLET" +
+      "E_PTC_SIGN_IN\020\017\0221\n-LOGIN_ACTION_TELEMETR" +
+      "Y_IDS_CLICK_SUPERAWESOME\020\020\0220\n,LOGIN_ACTI" +
+      "ON_TELEMETRY_IDS_EXIT_SUPERAWESOME\020\021\022:\n6" +
+      "LOGIN_ACTION_TELEMETRY_IDS_CLICK_SUPERAW" +
+      "ESOME_REGISTER\020\022\022A\n=LOGIN_ACTION_TELEMET" +
+      "RY_IDS_CLICK_SUPERAWESOME_FORGOT_PASSWOR" +
+      "D\020\023\0229\n5LOGIN_ACTION_TELEMETRY_IDS_CLICK_" +
+      "SUPERAWESOME_SIGN_IN\020\024\022:\n6LOGIN_ACTION_T" +
+      "ELEMETRY_IDS_CANCEL_SUPERAWESOME_SIGN_IN" +
+      "\020\025\022<\n8LOGIN_ACTION_TELEMETRY_IDS_COMPLET" +
+      "E_SUPERAWESOME_SIGN_IN\020\026\022.\n*LOGIN_ACTION" +
+      "_TELEMETRY_IDS_EXIT_NEW_PLAYER\020\027\0223\n/LOGI" +
+      "N_ACTION_TELEMETRY_IDS_EXIT_EXISTING_PLA" +
+      "YER\020\030\022,\n(LOGIN_ACTION_TELEMETRY_IDS_LOGI" +
+      "N_STARTED\020\031\022*\n&LOGIN_ACTION_TELEMETRY_ID" +
+      "S_CLICK_APPLE\020\032\022-\n)LOGIN_ACTION_TELEMETR" +
+      "Y_IDS_COMPLETE_APPLE\020\033\022+\n\'LOGIN_ACTION_T" +
+      "ELEMETRY_IDS_CANCEL_APPLE\020\034*\202\005\n\020RaidTele" +
+      "metryIds\022+\n\'RAID_TELEMETRY_IDS_UNDEFINED" +
+      "_RAID_EVENT\020\000\022%\n!RAID_TELEMETRY_IDS_APPR" +
+      "OACH_ENTER\020\001\022-\n)RAID_TELEMETRY_IDS_APPRO" +
+      "ACH_CLICK_SPINNER\020\002\022$\n RAID_TELEMETRY_ID" +
+      "S_APPROACH_JOIN\020\003\0223\n/RAID_TELEMETRY_IDS_" +
+      "APPROACH_TICKET_CONFIRMATION\020\004\022.\n*RAID_T" +
+      "ELEMETRY_IDS_APPROACH_CLICK_TUTORIAL\020\005\022*" +
+      "\n&RAID_TELEMETRY_IDS_APPROACH_CLICK_SHOP" +
+      "\020\006\022-\n)RAID_TELEMETRY_IDS_APPROACH_CLICK_" +
+      "INSPECT\020\007\022\"\n\036RAID_TELEMETRY_IDS_LOBBY_EN" +
+      "TER\020\010\022,\n(RAID_TELEMETRY_IDS_LOBBY_CLICK_" +
+      "INVENTORY\020\t\022\'\n#RAID_TELEMETRY_IDS_LOBBY_" +
+      "CLICK_EXIT\020\n\022\'\n#RAID_TELEMETRY_IDS_LOBBY" +
+      "_TAP_AVATAR\020\013\0220\n,RAID_TELEMETRY_IDS_LOBB" +
+      "Y_CLICK_REJOIN_BATTLE\020\014\022/\n+RAID_TELEMETR" +
+      "Y_IDS_LOBBY_CLICK_LOBBY_PUBLIC\020\r*F\n\006ArMo" +
+      "de\022\020\n\014AR_MODE_NONE\020\000\022\026\n\022AR_MODE_ARSTANDA" +
+      "RD\020\001\022\022\n\016AR_MODE_ARPLUS\020\002*\310\023\n\024Notificatio" +
+      "nCategory\0226\n2NOTIFICATION_CATEGORY_unset" +
+      "__notification_category\020\000\022%\n!NOTIFICATIO" +
+      "N_CATEGORY_GYM_REMOVAL\020\001\022(\n$NOTIFICATION" +
+      "_CATEGORY_POKEMON_HUNGRY\020\002\022%\n!NOTIFICATI" +
+      "ON_CATEGORY_POKEMON_WON\020\003\022/\n+NOTIFICATIO" +
+      "N_CATEGORY_EXCLUSIVE_RAID_INVITE\020\004\0225\n1NO" +
+      "TIFICATION_CATEGORY_EXCLUSIVE_RAID_CANCE" +
+      "LLATION\020\005\022*\n&NOTIFICATION_CATEGORY_GIFTB" +
+      "OX_INCOMING\020\006\022+\n\'NOTIFICATION_CATEGORY_G" +
+      "IFTBOX_DELIVERED\020\007\0225\n1NOTIFICATION_CATEG" +
+      "ORY_FRIENDSHIP_MILESTONE_REWARD\020\010\0229\n5NOT" +
+      "IFICATION_CATEGORY_GYM_BATTLE_FRIENDSHIP" +
+      "_INCREMENT\020\t\0226\n2NOTIFICATION_CATEGORY_SH" +
+      "ARED_EXCLUSIVE_RAID_INVITE\020\n\022*\n&NOTIFICA" +
+      "TION_CATEGORY_BGMODE_EGG_HATCH\020\013\022,\n(NOTI" +
+      "FICATION_CATEGORY_BGMODE_BUDDY_CANDY\020\014\0226" +
+      "\n2NOTIFICATION_CATEGORY_BGMODE_WEEKLY_FI" +
+      "TNESS_REPORT\020\r\0221\n-NOTIFICATION_CATEGORY_" +
+      "COMBAT_CHALLENGE_OPENED\020\016\0225\n1NOTIFICATIO" +
+      "N_CATEGORY_BGMODE_OFF_SESSION_DISTANCE\020\017" +
+      "\022.\n*NOTIFICATION_CATEGORY_BGMODE_POI_PRO" +
+      "XIMITY\020\020\022&\n\"NOTIFICATION_CATEGORY_LUCKY_" +
+      "FRIEND\020\021\0222\n.NOTIFICATION_CATEGORY_BGMODE" +
+      "_NAMED_BUDDY_CANDY\020\022\022(\n$NOTIFICATION_CAT" +
+      "EGORY_APP_BADGE_ONLY\020\023\0222\n.NOTIFICATION_C" +
+      "ATEGORY_COMBAT_VS_SEEKER_CHARGED\020\024\0227\n3NO" +
+      "TIFICATION_CATEGORY_COMBAT_COMPETITIVE_S" +
+      "EASON_END\020\025\022&\n\"NOTIFICATION_CATEGORY_BUD" +
+      "DY_HUNGRY\020\026\022*\n&NOTIFICATION_CATEGORY_BUD" +
+      "DY_FOUND_GIFT\020\030\0229\n5NOTIFICATION_CATEGORY" +
+      "_BUDDY_AFFECTION_LEVEL_MILESTONE\020\031\0221\n-NO" +
+      "TIFICATION_CATEGORY_BUDDY_AFFECTION_WALK" +
+      "ING\020\032\022.\n*NOTIFICATION_CATEGORY_BUDDY_AFF" +
+      "ECTION_CARE\020\033\0220\n,NOTIFICATION_CATEGORY_B" +
+      "UDDY_AFFECTION_BATTLE\020\034\022/\n+NOTIFICATION_" +
+      "CATEGORY_BUDDY_AFFECTION_PHOTO\020\035\022-\n)NOTI" +
+      "FICATION_CATEGORY_BUDDY_AFFECTION_POI\020\036\022" +
+      "1\n-NOTIFICATION_CATEGORY_BGMODE_BUDDY_FO" +
+      "UND_GIFT\020\037\022.\n*NOTIFICATION_CATEGORY_BUDD" +
+      "Y_ATTRACTIVE_POI\020 \0225\n1NOTIFICATION_CATEG" +
+      "ORY_BGMODE_BUDDY_ATTRACTIVE_POI\020!\0228\n4NOT" +
+      "IFICATION_CATEGORY_BUDDY_AFFECTION_ATTRA" +
+      "CTIVE_POI\020$\022/\n+NOTIFICATION_CATEGORY_POI" +
+      "_PASSCODE_REDEEMED\020%\022,\n(NOTIFICATION_CAT" +
+      "EGORY_NO_EGGS_INCUBATING\020&\0222\n.NOTIFICATI" +
+      "ON_CATEGORY_RETENTION_UNOPENED_GIFTS\020\'\022-" +
+      "\n)NOTIFICATION_CATEGORY_RETENTION_STARPI" +
+      "ECE\020(\022+\n\'NOTIFICATION_CATEGORY_RETENTION" +
+      "_INCENSE\020)\022-\n)NOTIFICATION_CATEGORY_RETE" +
+      "NTION_LUCKY_EGG\020*\0223\n/NOTIFICATION_CATEGO" +
+      "RY_RETENTION_ADVSYNC_REWARDS\020+\0227\n3NOTIFI" +
+      "CATION_CATEGORY_RETENTION_EGGS_NOT_INCUB" +
+      "ATING\020,\022.\n*NOTIFICATION_CATEGORY_RETENTI" +
+      "ON_POWER_WALK\020-\0224\n0NOTIFICATION_CATEGORY" +
+      "_RETENTION_FUN_WITH_FRIENDS\020.\022+\n\'NOTIFIC" +
+      "ATION_CATEGORY_BUDDY_REMOTE_GIFT\020/\0222\n.NO" +
+      "TIFICATION_CATEGORY_BGMODE_BUDDY_REMOTE_" +
+      "GIFT\0200\0220\n,NOTIFICATION_CATEGORY_REMOTE_R" +
+      "AID_INVITATION\0201\022&\n\"NOTIFICATION_CATEGOR" +
+      "Y_ITEM_REWARDS\0202\0227\n3NOTIFICATION_CATEGOR" +
+      "Y_TIMED_GROUP_CHALLENGE_STARTED\0203\0228\n4NOT" +
+      "IFICATION_CATEGORY_TIMED_GROUP_CHALLENGE" +
+      "_GOAL_MET\0204*\257\005\n\032IncidentDynamicStringTyp" +
+      "es\022*\n&INCIDENT_DYNAMIC_STRING_TYPES_GREE" +
+      "TING\020\000\022+\n\'INCIDENT_DYNAMIC_STRING_TYPES_" +
+      "CHALLENGE\020\001\022(\n$INCIDENT_DYNAMIC_STRING_T" +
+      "YPES_DEFEAT\020\002\022)\n%INCIDENT_DYNAMIC_STRING" +
+      "_TYPES_VICTORY\020\003\022,\n(INCIDENT_DYNAMIC_STR" +
+      "ING_TYPES_PRE_BATTLE\020\004\022-\n)INCIDENT_DYNAM" +
+      "IC_STRING_TYPES_POST_BATTLE\020\005\022.\n*INCIDEN" +
+      "T_DYNAMIC_STRING_TYPES_ITEMS_STOLEN\020\006\022*\n" +
+      "&INCIDENT_DYNAMIC_STRING_TYPES_TUTORIAL\020" +
+      "\007\022.\n*INCIDENT_DYNAMIC_STRING_TYPES_COMBA" +
+      "T_QUOTE\020\010\0221\n-INCIDENT_DYNAMIC_STRING_TYP" +
+      "ES_CANDELA_INSPIRE\020\t\0221\n-INCIDENT_DYNAMIC" +
+      "_STRING_TYPES_BLANCHE_INSPIRE\020\n\022/\n+INCID" +
+      "ENT_DYNAMIC_STRING_TYPES_SPARK_INSPIRE\020\013" +
+      "\022-\n)INCIDENT_DYNAMIC_STRING_TYPES_GRUNT_" +
+      "DECOY\020\014\0224\n0INCIDENT_DYNAMIC_STRING_TYPES" +
+      "_COMBAT_DECOY_QUOTE\020\r*\363\001\n\030HoloTemporaryE" +
+      "volutionId\0224\n0HOLO_TEMPORARY_EVOLUTION_I" +
+      "D_TEMP_EVOLUTION_UNSET\020\000\0223\n/HOLO_TEMPORA" +
+      "RY_EVOLUTION_ID_TEMP_EVOLUTION_MEGA\020\001\0225\n" +
+      "1HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUT" +
+      "ION_MEGA_X\020\002\0225\n1HOLO_TEMPORARY_EVOLUTION" +
+      "_ID_TEMP_EVOLUTION_MEGA_Y\020\003*\232\001\n\032PhoneBoo" +
+      "thPresentationMode\022&\n\"PHONE_BOOTH_PRESEN" +
+      "TATION_MODE_NONE\020\000\022*\n&PHONE_BOOTH_PRESEN" +
+      "TATION_MODE_PORTRAIT\020\001\022(\n$PHONE_BOOTH_PR" +
+      "ESENTATION_MODE_DIALOG\020\002*\254\005\n\023HoloIapItem" +
+      "Category\022,\n(HOLO_IAP_ITEM_CATEGORY_IAP_C" +
+      "ATEGORY_NONE\020\000\022.\n*HOLO_IAP_ITEM_CATEGORY" +
+      "_IAP_CATEGORY_BUNDLE\020\001\022-\n)HOLO_IAP_ITEM_" +
+      "CATEGORY_IAP_CATEGORY_ITEMS\020\002\0220\n,HOLO_IA" +
+      "P_ITEM_CATEGORY_IAP_CATEGORY_UPGRADES\020\003\022" +
+      "1\n-HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_P" +
+      "OKECOINS\020\004\022.\n*HOLO_IAP_ITEM_CATEGORY_IAP" +
+      "_CATEGORY_AVATAR\020\005\0229\n5HOLO_IAP_ITEM_CATE" +
+      "GORY_IAP_CATEGORY_AVATAR_STORE_LINK\020\006\0223\n" +
+      "/HOLO_IAP_ITEM_CATEGORY_IAP_CATEGORY_TEA" +
+      "M_CHANGE\020\007\022;\n7HOLO_IAP_ITEM_CATEGORY_IAP" +
+      "_CATEGORY_GLOBAL_EVENT_TICKET\020\n\0221\n-HOLO_" +
+      "IAP_ITEM_CATEGORY_IAP_CATEGORY_VS_SEEKER" +
+      "\020\013\022/\n+HOLO_IAP_ITEM_CATEGORY_IAP_CATEGOR" +
+      "Y_STICKER\020\014\022,\n(HOLO_IAP_ITEM_CATEGORY_IA" +
+      "P_CATEGORY_FREE\020\r\0224\n0HOLO_IAP_ITEM_CATEG" +
+      "ORY_IAP_CATEGORY_SUBSCRIPTION\020\016*\311\001\n\nComb" +
+      "atType\022!\n\035COMBAT_TYPE_COMBAT_TYPE_UNSET\020" +
+      "\000\022\024\n\020COMBAT_TYPE_SOLO\020\001\022\027\n\023COMBAT_TYPE_Q" +
+      "R_CODE\020\002\022\027\n\023COMBAT_TYPE_FRIENDS\020\003\022\026\n\022COM" +
+      "BAT_TYPE_NEARBY\020\004\022\035\n\031COMBAT_TYPE_SOLO_IN" +
+      "VASION\020\005\022\031\n\025COMBAT_TYPE_VS_SEEKER\020\006*\227\001\n\035" +
+      "CombatHubEntranceTelemetryIds\0225\n1COMBAT_" +
+      "HUB_ENTRANCE_TELEMETRY_IDS_UNDEFINED_EVE" +
+      "NT\020\000\022?\n;COMBAT_HUB_ENTRANCE_TELEMETRY_ID" +
+      "S_CLICKED_COMBAT_HUB_BUTTON\020\001*\232\006\n\016Souven" +
+      "irTypeId\022#\n\037SOUVENIR_TYPE_ID_SOUVENIR_UN" +
+      "SET\020\000\022*\n&SOUVENIR_TYPE_ID_SOUVENIR_LONE_" +
+      "EARRING\020\001\022+\n\'SOUVENIR_TYPE_ID_SOUVENIR_S" +
+      "MALL_BOUQUET\020\002\022,\n(SOUVENIR_TYPE_ID_SOUVE" +
+      "NIR_SKIPPING_STONE\020\003\022)\n%SOUVENIR_TYPE_ID" +
+      "_SOUVENIR_BEACH_GLASS\020\004\022,\n(SOUVENIR_TYPE" +
+      "_ID_SOUVENIR_TROPICAL_SHELL\020\005\022&\n\"SOUVENI" +
+      "R_TYPE_ID_SOUVENIR_MUSHROOM\020\006\022*\n&SOUVENI" +
+      "R_TYPE_ID_SOUVENIR_CHALKY_STONE\020\007\022&\n\"SOU" +
+      "VENIR_TYPE_ID_SOUVENIR_PINECONE\020\010\022-\n)SOU" +
+      "VENIR_TYPE_ID_SOUVENIR_TROPICAL_FLOWER\020\t" +
+      "\022+\n\'SOUVENIR_TYPE_ID_SOUVENIR_FLOWER_FRU" +
+      "ITS\020\n\022+\n\'SOUVENIR_TYPE_ID_SOUVENIR_CACTU" +
+      "S_FLOWER\020\013\022-\n)SOUVENIR_TYPE_ID_SOUVENIR_" +
+      "STRETCHY_SPRING\020\014\022$\n SOUVENIR_TYPE_ID_SO" +
+      "UVENIR_MARBLE\020\r\022)\n%SOUVENIR_TYPE_ID_SOUV" +
+      "ENIR_TORN_TICKET\020\016\022)\n%SOUVENIR_TYPE_ID_S" +
+      "OUVENIR_PRETTY_LEAF\020\017\022&\n\"SOUVENIR_TYPE_I" +
+      "D_SOUVENIR_CONFETTI\020\020\022+\n\'SOUVENIR_TYPE_I" +
+      "D_SOUVENIR_PIKACHU_VISOR\020\021*\220\001\n\016BuddyAnim" +
+      "ation\022)\n%BUDDY_ANIMATION_BUDDY_ANIMATION" +
+      "_UNSET\020\000\022)\n%BUDDY_ANIMATION_BUDDY_ANIMAT" +
+      "ION_HAPPY\020\001\022(\n$BUDDY_ANIMATION_BUDDY_ANI" +
+      "MATION_HATE\020\002*j\n\020PlayerAvatarType\022)\n%PLA" +
+      "YER_AVATAR_TYPE_PLAYER_AVATAR_MALE\020\000\022+\n\'" +
+      "PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE\020" +
+      "\001*\247\001\n\024PokemonCreateContext\022.\n*POKEMON_CR" +
+      "EATE_CONTEXT_CREATE_CONTEXT_WILD\020\000\022-\n)PO" +
+      "KEMON_CREATE_CONTEXT_CREATE_CONTEXT_EGG\020" +
+      "\001\0220\n,POKEMON_CREATE_CONTEXT_CREATE_CONTE" +
+      "XT_EVOLVE\020\002*\342\001\n\023IncidentDisplayType\022\036\n\032I" +
+      "NCIDENT_DISPLAY_TYPE_NONE\020\000\022(\n$INCIDENT_" +
+      "DISPLAY_TYPE_INVASION_GRUNT\020\001\022)\n%INCIDEN" +
+      "T_DISPLAY_TYPE_INVASION_LEADER\020\002\022+\n\'INCI" +
+      "DENT_DISPLAY_TYPE_INVASION_GIOVANNI\020\003\022)\n" +
+      "%INCIDENT_DISPLAY_TYPE_INVASION_GRUNTB\020\004" +
+      "*\177\n\024IncidentStartContext\022\036\n\032INCIDENT_STA" +
+      "RT_CONTEXT_NPC\020\000\022#\n\037INCIDENT_START_CONTE" +
+      "XT_POKESTOP\020\001\022\"\n\036INCIDENT_START_CONTEXT_" +
+      "BALLOON\020\002*a\n\026IncidentFinishSequence\022!\n\035I" +
+      "NCIDENT_FINISH_SEQUENCE_NONE\020\000\022$\n INCIDE" +
+      "NT_FINISH_SEQUENCE_VICTORY\020\001*\333\026\n\020HoloAct" +
+      "ivityType\022\'\n#HOLO_ACTIVITY_TYPE_ACTIVITY" +
+      "_UNKNOWN\020\000\022-\n)HOLO_ACTIVITY_TYPE_ACTIVIT" +
+      "Y_CATCH_POKEMON\020\001\0224\n0HOLO_ACTIVITY_TYPE_" +
+      "ACTIVITY_CATCH_LEGEND_POKEMON\020\002\022,\n(HOLO_" +
+      "ACTIVITY_TYPE_ACTIVITY_FLEE_POKEMON\020\003\022+\n" +
+      "\'HOLO_ACTIVITY_TYPE_ACTIVITY_DEFEAT_FORT" +
+      "\020\004\022.\n*HOLO_ACTIVITY_TYPE_ACTIVITY_EVOLVE" +
+      "_POKEMON\020\005\022)\n%HOLO_ACTIVITY_TYPE_ACTIVIT" +
+      "Y_HATCH_EGG\020\006\022\'\n#HOLO_ACTIVITY_TYPE_ACTI" +
+      "VITY_WALK_KM\020\007\0221\n-HOLO_ACTIVITY_TYPE_ACT" +
+      "IVITY_POKEDEX_ENTRY_NEW\020\010\0221\n-HOLO_ACTIVI" +
+      "TY_TYPE_ACTIVITY_CATCH_FIRST_THROW\020\t\0220\n," +
+      "HOLO_ACTIVITY_TYPE_ACTIVITY_CATCH_NICE_T" +
+      "HROW\020\n\0221\n-HOLO_ACTIVITY_TYPE_ACTIVITY_CA" +
+      "TCH_GREAT_THROW\020\013\0225\n1HOLO_ACTIVITY_TYPE_" +
+      "ACTIVITY_CATCH_EXCELLENT_THROW\020\014\022/\n+HOLO" +
+      "_ACTIVITY_TYPE_ACTIVITY_CATCH_CURVEBALL\020" +
+      "\r\0228\n4HOLO_ACTIVITY_TYPE_ACTIVITY_CATCH_F" +
+      "IRST_CATCH_OF_DAY\020\016\022/\n+HOLO_ACTIVITY_TYP" +
+      "E_ACTIVITY_CATCH_MILESTONE\020\017\022-\n)HOLO_ACT" +
+      "IVITY_TYPE_ACTIVITY_TRAIN_POKEMON\020\020\022+\n\'H" +
+      "OLO_ACTIVITY_TYPE_ACTIVITY_SEARCH_FORT\020\021" +
+      "\022/\n+HOLO_ACTIVITY_TYPE_ACTIVITY_RELEASE_" +
+      "POKEMON\020\022\0225\n1HOLO_ACTIVITY_TYPE_ACTIVITY" +
+      "_HATCH_EGG_SMALL_BONUS\020\023\0226\n2HOLO_ACTIVIT" +
+      "Y_TYPE_ACTIVITY_HATCH_EGG_MEDIUM_BONUS\020\024" +
+      "\0225\n1HOLO_ACTIVITY_TYPE_ACTIVITY_HATCH_EG" +
+      "G_LARGE_BONUS\020\025\0223\n/HOLO_ACTIVITY_TYPE_AC" +
+      "TIVITY_DEFEAT_GYM_DEFENDER\020\026\0221\n-HOLO_ACT" +
+      "IVITY_TYPE_ACTIVITY_DEFEAT_GYM_LEADER\020\027\022" +
+      ">\n:HOLO_ACTIVITY_TYPE_ACTIVITY_CATCH_FIR" +
+      "ST_CATCH_STREAK_BONUS\020\030\022<\n8HOLO_ACTIVITY" +
+      "_TYPE_ACTIVITY_SEARCH_FORT_FIRST_OF_THE_" +
+      "DAY\020\031\0228\n4HOLO_ACTIVITY_TYPE_ACTIVITY_SEA" +
+      "RCH_FORT_STREAK_BONUS\020\032\0223\n/HOLO_ACTIVITY" +
+      "_TYPE_ACTIVITY_DEFEAT_RAID_POKEMON\020\033\022*\n&" +
+      "HOLO_ACTIVITY_TYPE_ACTIVITY_FEED_BERRY\020\034" +
+      "\022*\n&HOLO_ACTIVITY_TYPE_ACTIVITY_SEARCH_G" +
+      "YM\020\035\022,\n(HOLO_ACTIVITY_TYPE_ACTIVITY_NEW_" +
+      "POKESTOP\020\036\022/\n+HOLO_ACTIVITY_TYPE_ACTIVIT" +
+      "Y_GYM_BATTLE_LOSS\020\037\0223\n/HOLO_ACTIVITY_TYP" +
+      "E_ACTIVITY_CATCH_AR_PLUS_BONUS\020 \022=\n9HOLO" +
+      "_ACTIVITY_TYPE_ACTIVITY_CATCH_QUEST_POKE" +
+      "MON_ENCOUNTER\020!\0225\n1HOLO_ACTIVITY_TYPE_AC" +
+      "TIVITY_FRIENDSHIP_LEVEL_UP_0\020#\0225\n1HOLO_A" +
+      "CTIVITY_TYPE_ACTIVITY_FRIENDSHIP_LEVEL_U" +
+      "P_1\020$\0225\n1HOLO_ACTIVITY_TYPE_ACTIVITY_FRI" +
+      "ENDSHIP_LEVEL_UP_2\020%\0225\n1HOLO_ACTIVITY_TY" +
+      "PE_ACTIVITY_FRIENDSHIP_LEVEL_UP_3\020&\0225\n1H" +
+      "OLO_ACTIVITY_TYPE_ACTIVITY_FRIENDSHIP_LE" +
+      "VEL_UP_4\020\'\022)\n%HOLO_ACTIVITY_TYPE_ACTIVIT" +
+      "Y_SEND_GIFT\020(\0222\n.HOLO_ACTIVITY_TYPE_ACTI" +
+      "VITY_SHARE_EX_RAID_PASS\020)\022:\n6HOLO_ACTIVI" +
+      "TY_TYPE_ACTIVITY_RAID_LEVEL_1_ADDITIONAL" +
+      "_XP\020*\022:\n6HOLO_ACTIVITY_TYPE_ACTIVITY_RAI" +
+      "D_LEVEL_2_ADDITIONAL_XP\020+\022:\n6HOLO_ACTIVI" +
+      "TY_TYPE_ACTIVITY_RAID_LEVEL_3_ADDITIONAL" +
+      "_XP\020,\022:\n6HOLO_ACTIVITY_TYPE_ACTIVITY_RAI" +
+      "D_LEVEL_4_ADDITIONAL_XP\020-\022:\n6HOLO_ACTIVI" +
+      "TY_TYPE_ACTIVITY_RAID_LEVEL_5_ADDITIONAL" +
+      "_XP\020.\0220\n,HOLO_ACTIVITY_TYPE_ACTIVITY_HAT" +
+      "CH_EGG_SHADOW\020/\022.\n*HOLO_ACTIVITY_TYPE_AC" +
+      "TIVITY_HATCH_EGG_GIFT\0200\022:\n6HOLO_ACTIVITY" +
+      "_TYPE_ACTIVITY_REMOTE_DEFEAT_RAID_POKEMO" +
+      "N\0201\022A\n=HOLO_ACTIVITY_TYPE_ACTIVITY_REMOT" +
+      "E_RAID_LEVEL_1_ADDITIONAL_XP\0202\022A\n=HOLO_A" +
+      "CTIVITY_TYPE_ACTIVITY_REMOTE_RAID_LEVEL_" +
+      "2_ADDITIONAL_XP\0203\022A\n=HOLO_ACTIVITY_TYPE_" +
+      "ACTIVITY_REMOTE_RAID_LEVEL_3_ADDITIONAL_" +
+      "XP\0204\022A\n=HOLO_ACTIVITY_TYPE_ACTIVITY_REMO" +
+      "TE_RAID_LEVEL_4_ADDITIONAL_XP\0205\022A\n=HOLO_" +
+      "ACTIVITY_TYPE_ACTIVITY_REMOTE_RAID_LEVEL" +
+      "_5_ADDITIONAL_XP\0206*\362\005\n\rBuddyActivity\022\'\n#" +
+      "BUDDY_ACTIVITY_BUDDY_ACTIVITY_UNSET\020\000\022&\n" +
+      "\"BUDDY_ACTIVITY_BUDDY_ACTIVITY_FEED\020\001\022%\n" +
+      "!BUDDY_ACTIVITY_BUDDY_ACTIVITY_PET\020\002\022*\n&" +
+      "BUDDY_ACTIVITY_BUDDY_ACTIVITY_SNAPSHOT\020\003" +
+      "\022&\n\"BUDDY_ACTIVITY_BUDDY_ACTIVITY_WALK\020\004" +
+      "\022*\n&BUDDY_ACTIVITY_BUDDY_ACTIVITY_NEW_PO" +
+      "IS\020\005\022,\n(BUDDY_ACTIVITY_BUDDY_ACTIVITY_GY" +
+      "M_BATTLE\020\006\022-\n)BUDDY_ACTIVITY_BUDDY_ACTIV" +
+      "ITY_RAID_BATTLE\020\007\022,\n(BUDDY_ACTIVITY_BUDD" +
+      "Y_ACTIVITY_NPC_BATTLE\020\010\022,\n(BUDDY_ACTIVIT" +
+      "Y_BUDDY_ACTIVITY_PVP_BATTLE\020\t\0220\n,BUDDY_A" +
+      "CTIVITY_BUDDY_ACTIVITY_OPEN_SOUVENIRS\020\n\022" +
+      "2\n.BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_CO" +
+      "NSUMABLES\020\013\0220\n,BUDDY_ACTIVITY_BUDDY_ACTI" +
+      "VITY_INVASION_GRUNT\020\014\0221\n-BUDDY_ACTIVITY_" +
+      "BUDDY_ACTIVITY_INVASION_LEADER\020\r\0223\n/BUDD" +
+      "Y_ACTIVITY_BUDDY_ACTIVITY_INVASION_GIOVA" +
+      "NNI\020\016\0220\n,BUDDY_ACTIVITY_BUDDY_ACTIVITY_A" +
+      "TTRACTIVE_POI\020\017*\267\001\n\022BannedPlayerReason\022\037" +
+      "\n\033BANNED_PLAYER_REASON_BANNED\020\000\022,\n(BANNE" +
+      "D_PLAYER_REASON_UNAUTHORIZED_DEVICE\020\001\022\"\n" +
+      "\036BANNED_PLAYER_REASON_SUSPENDED\020\002\022.\n*BAN" +
+      "NED_PLAYER_REASON_RESTRICTION_VIOLATION\020" +
+      "\003*\266\004\n\031AdFeedbackComplaintReason\022E\nAAD_FE" +
+      "EDBACK_COMPLAINT_REASON_AD_FEEDBACK_COMP" +
+      "LAINT_REASON_INVALID\020\000\022G\nCAD_FEEDBACK_CO" +
+      "MPLAINT_REASON_AD_FEEDBACK_COMPLAINT_REA" +
+      "SON_OFFENSIVE\020\001\022B\n>AD_FEEDBACK_COMPLAINT" +
+      "_REASON_AD_FEEDBACK_COMPLAINT_REASON_SPA" +
+      "M\020\002\022T\nPAD_FEEDBACK_COMPLAINT_REASON_AD_F" +
+      "EEDBACK_COMPLAINT_REASON_SEXUALLY_INAPPR" +
+      "OPRIATE\020\003\022P\nLAD_FEEDBACK_COMPLAINT_REASO" +
+      "N_AD_FEEDBACK_COMPLAINT_REASON_SCAM_OR_M" +
+      "ISLEADING\020\004\022T\nPAD_FEEDBACK_COMPLAINT_REA" +
+      "SON_AD_FEEDBACK_COMPLAINT_REASON_VIOLENC" +
+      "E_OR_PROHIBITED\020\005\022G\nCAD_FEEDBACK_COMPLAI" +
+      "NT_REASON_AD_FEEDBACK_COMPLAINT_REASON_P" +
+      "OLITICAL\020\006*\254\001\n\025ShoppingPageScrollIds\022@\n<",
+      "SHOPPING_PAGE_SCROLL_IDS_UNDEFINED_SHOPP" +
+      "ING_PAGE_SCROLL_TYPE\020\000\022(\n$SHOPPING_PAGE_" +
+      "SCROLL_IDS_LAST_SCROLL\020\001\022\'\n#SHOPPING_PAG" +
+      "E_SCROLL_IDS_MAX_SCROLL\020\002*\357\005\n\025ShareExRai" +
+      "dPassResult\0226\n2SHARE_EX_RAID_PASS_RESULT" +
+      "_SHARE_EX_RAID_PASS_UNSET\020\000\0228\n4SHARE_EX_" +
+      "RAID_PASS_RESULT_SHARE_EX_RAID_PASS_SUCC" +
+      "ESS\020\001\022G\nCSHARE_EX_RAID_PASS_RESULT_ERROR" +
+      "_FRIEND_ALREADY_INVITED_TO_SAME_RAID\020\002\022?" +
+      "\n;SHARE_EX_RAID_PASS_RESULT_ERROR_EX_RAI" +
+      "D_PASS_ALREADY_SHARED\020\003\022R\nNSHARE_EX_RAID" +
+      "_PASS_RESULT_ERROR_FRIEND_ALREADY_HAS_SH" +
+      "ARED_EX_PASS_IN_INVENTORY\020\004\022<\n8SHARE_EX_" +
+      "RAID_PASS_RESULT_ERROR_TOO_LOW_FRIENDSHI" +
+      "P_LEVEL\020\005\0224\n0SHARE_EX_RAID_PASS_RESULT_E" +
+      "RROR_FRIEND_NOT_FOUND\020\006\022;\n7SHARE_EX_RAID" +
+      "_PASS_RESULT_ERROR_EX_RAID_ALREADY_START" +
+      "ED\020\007\0223\n/SHARE_EX_RAID_PASS_RESULT_ERROR_" +
+      "EX_RAID_INVALID\020\010\022:\n6SHARE_EX_RAID_PASS_" +
+      "RESULT_ERROR_EX_RAID_PASS_NOT_FOUND\020\t\022+\n" +
+      "\'SHARE_EX_RAID_PASS_RESULT_ERROR_UNKNOWN" +
+      "\020\n\0227\n3SHARE_EX_RAID_PASS_RESULT_ERROR_FR" +
+      "IEND_NOT_ELIGIBLE\020\013*\266\001\n\020PresentationType" +
+      "\022\035\n\031PRESENTATION_TYPE_UNKNOWN\020\000\022\036\n\032PRESE" +
+      "NTATION_TYPE_CATEGORY\020\001\022\032\n\026PRESENTATION_" +
+      "TYPE_SORT\020\002\022\032\n\026PRESENTATION_TYPE_SALE\020\003\022" +
+      "+\n\'PRESENTATION_TYPE_ML_BUNDLE_TRACKING_" +
+      "ID\020\004*\257\002\n\027BattlePartyTelemetryIds\022;\n7BATT" +
+      "LE_PARTY_TELEMETRY_IDS_UNDEFINED_BATTLE_" +
+      "PARTY_EVENT\020\000\022\"\n\036BATTLE_PARTY_TELEMETRY_" +
+      "IDS_ADD\020\001\022%\n!BATTLE_PARTY_TELEMETRY_IDS_" +
+      "REMOVE\020\002\022)\n%BATTLE_PARTY_TELEMETRY_IDS_G" +
+      "YM_BATTLE\020\003\022*\n&BATTLE_PARTY_TELEMETRY_ID" +
+      "S_RAID_BATTLE\020\004\0225\n1BATTLE_PARTY_TELEMETR" +
+      "Y_IDS_BATTLE_POKEMON_CHANGED\020\005*\260\t\n\020HoloI" +
+      "temCategory\022)\n%HOLO_ITEM_CATEGORY_ITEM_C" +
+      "ATEGORY_NONE\020\000\022-\n)HOLO_ITEM_CATEGORY_ITE" +
+      "M_CATEGORY_POKEBALL\020\001\022)\n%HOLO_ITEM_CATEG" +
+      "ORY_ITEM_CATEGORY_FOOD\020\002\022-\n)HOLO_ITEM_CA" +
+      "TEGORY_ITEM_CATEGORY_MEDICINE\020\003\022*\n&HOLO_" +
+      "ITEM_CATEGORY_ITEM_CATEGORY_BOOST\020\004\022-\n)H" +
+      "OLO_ITEM_CATEGORY_ITEM_CATEGORY_UTILITES" +
+      "\020\005\022+\n\'HOLO_ITEM_CATEGORY_ITEM_CATEGORY_C" +
+      "AMERA\020\006\022)\n%HOLO_ITEM_CATEGORY_ITEM_CATEG" +
+      "ORY_DISK\020\007\022.\n*HOLO_ITEM_CATEGORY_ITEM_CA" +
+      "TEGORY_INCUBATOR\020\010\022,\n(HOLO_ITEM_CATEGORY" +
+      "_ITEM_CATEGORY_INCENSE\020\t\022-\n)HOLO_ITEM_CA" +
+      "TEGORY_ITEM_CATEGORY_XP_BOOST\020\n\0226\n2HOLO_" +
+      "ITEM_CATEGORY_ITEM_CATEGORY_INVENTORY_UP" +
+      "GRADE\020\013\022:\n6HOLO_ITEM_CATEGORY_ITEM_CATEG" +
+      "ORY_EVOLUTION_REQUIREMENT\020\014\0220\n,HOLO_ITEM" +
+      "_CATEGORY_ITEM_CATEGORY_MOVE_REROLL\020\r\022*\n" +
+      "&HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CANDY\020" +
+      "\016\0220\n,HOLO_ITEM_CATEGORY_ITEM_CATEGORY_RA" +
+      "ID_TICKET\020\017\0223\n/HOLO_ITEM_CATEGORY_ITEM_C" +
+      "ATEGORY_STARDUST_BOOST\020\020\0224\n0HOLO_ITEM_CA" +
+      "TEGORY_ITEM_CATEGORY_FRIEND_GIFT_BOX\020\021\0220" +
+      "\n,HOLO_ITEM_CATEGORY_ITEM_CATEGORY_TEAM_" +
+      "CHANGE\020\022\022.\n*HOLO_ITEM_CATEGORY_ITEM_CATE" +
+      "GORY_VS_SEEKER\020\024\0224\n0HOLO_ITEM_CATEGORY_I" +
+      "TEM_CATEGORY_INCIDENT_TICKET\020\025\0228\n4HOLO_I" +
+      "TEM_CATEGORY_ITEM_CATEGORY_GLOBAL_EVENT_" +
+      "TICKET\020\026\0229\n5HOLO_ITEM_CATEGORY_ITEM_CATE" +
+      "GORY_BUDDY_EXCLUSIVE_FOOD\020\027\022,\n(HOLO_ITEM" +
+      "_CATEGORY_ITEM_CATEGORY_STICKER\020\030*K\n\021Onb" +
+      "oardingPathIds\022\032\n\026ONBOARDING_PATH_IDS_V1" +
+      "\020\000\022\032\n\026ONBOARDING_PATH_IDS_V2\020\001*\305\001\n\023ItemU" +
+      "seTelemetryIds\022/\n+ITEM_USE_TELEMETRY_IDS" +
+      "_UNDEFINED_ITEM_EVENT\020\000\022#\n\037ITEM_USE_TELE" +
+      "METRY_IDS_USE_ITEM\020\001\022\'\n#ITEM_USE_TELEMET" +
+      "RY_IDS_RECYCLE_ITEM\020\002\022/\n+ITEM_USE_TELEME" +
+      "TRY_IDS_UPDATE_ITEM_EQUIPPED\020\003*\341\017\n\004Item\022" +
+      "\025\n\021ITEM_ITEM_UNKNOWN\020\000\022\027\n\023ITEM_ITEM_POKE" +
+      "_BALL\020\001\022\030\n\024ITEM_ITEM_GREAT_BALL\020\002\022\030\n\024ITE" +
+      "M_ITEM_ULTRA_BALL\020\003\022\031\n\025ITEM_ITEM_MASTER_" +
+      "BALL\020\004\022\032\n\026ITEM_ITEM_PREMIER_BALL\020\005\022\024\n\020IT" +
+      "EM_ITEM_POTION\020e\022\032\n\026ITEM_ITEM_SUPER_POTI" +
+      "ON\020f\022\032\n\026ITEM_ITEM_HYPER_POTION\020g\022\030\n\024ITEM" +
+      "_ITEM_MAX_POTION\020h\022\025\n\020ITEM_ITEM_REVIVE\020\311" +
+      "\001\022\031\n\024ITEM_ITEM_MAX_REVIVE\020\312\001\022\030\n\023ITEM_ITE" +
+      "M_LUCKY_EGG\020\255\002\022\037\n\032ITEM_ITEM_INCENSE_ORDI" +
+      "NARY\020\221\003\022\034\n\027ITEM_ITEM_INCENSE_SPICY\020\222\003\022\033\n" +
+      "\026ITEM_ITEM_INCENSE_COOL\020\223\003\022\035\n\030ITEM_ITEM_" +
+      "INCENSE_FLORAL\020\224\003\022!\n\034ITEM_ITEM_INCENSE_B" +
+      "ELUGA_BOX\020\225\003\022\030\n\023ITEM_ITEM_TROY_DISK\020\365\003\022 " +
+      "\n\033ITEM_ITEM_TROY_DISK_GLACIAL\020\366\003\022\036\n\031ITEM" +
+      "_ITEM_TROY_DISK_MOSSY\020\367\003\022!\n\034ITEM_ITEM_TR" +
+      "OY_DISK_MAGNETIC\020\370\003\022\027\n\022ITEM_ITEM_X_ATTAC" +
+      "K\020\332\004\022\030\n\023ITEM_ITEM_X_DEFENSE\020\333\004\022\030\n\023ITEM_I" +
+      "TEM_X_MIRACLE\020\334\004\022\031\n\024ITEM_ITEM_RAZZ_BERRY" +
+      "\020\275\005\022\031\n\024ITEM_ITEM_BLUK_BERRY\020\276\005\022\032\n\025ITEM_I" +
+      "TEM_NANAB_BERRY\020\277\005\022\032\n\025ITEM_ITEM_WEPAR_BE" +
+      "RRY\020\300\005\022\032\n\025ITEM_ITEM_PINAP_BERRY\020\301\005\022 \n\033IT" +
+      "EM_ITEM_GOLDEN_RAZZ_BERRY\020\302\005\022!\n\034ITEM_ITE" +
+      "M_GOLDEN_NANAB_BERRY\020\303\005\022!\n\034ITEM_ITEM_GOL" +
+      "DEN_PINAP_BERRY\020\304\005\022\025\n\020ITEM_ITEM_POFFIN\020\305" +
+      "\005\022\035\n\030ITEM_ITEM_SPECIAL_CAMERA\020\241\006\022 \n\033ITEM" +
+      "_ITEM_STICKER_INVENTORY\020\242\006\022(\n#ITEM_ITEM_" +
+      "INCUBATOR_BASIC_UNLIMITED\020\205\007\022\036\n\031ITEM_ITE" +
+      "M_INCUBATOR_BASIC\020\206\007\022\036\n\031ITEM_ITEM_INCUBA" +
+      "TOR_SUPER\020\207\007\022&\n!ITEM_ITEM_POKEMON_STORAG" +
+      "E_UPGRADE\020\351\007\022#\n\036ITEM_ITEM_ITEM_STORAGE_U" +
+      "PGRADE\020\352\007\022\030\n\023ITEM_ITEM_SUN_STONE\020\315\010\022\031\n\024I" +
+      "TEM_ITEM_KINGS_ROCK\020\316\010\022\031\n\024ITEM_ITEM_META" +
+      "L_COAT\020\317\010\022\033\n\026ITEM_ITEM_DRAGON_SCALE\020\320\010\022\027" +
+      "\n\022ITEM_ITEM_UP_GRADE\020\321\010\022#\n\036ITEM_ITEM_GEN" +
+      "4_EVOLUTION_STONE\020\322\010\022#\n\036ITEM_ITEM_GEN5_E" +
+      "VOLUTION_STONE\020\323\010\022&\n!ITEM_ITEM_MOVE_RERO" +
+      "LL_FAST_ATTACK\020\261\t\022)\n$ITEM_ITEM_MOVE_RERO" +
+      "LL_SPECIAL_ATTACK\020\262\t\022,\n\'ITEM_ITEM_MOVE_R" +
+      "EROLL_ELITE_FAST_ATTACK\020\263\t\022/\n*ITEM_ITEM_" +
+      "MOVE_REROLL_ELITE_SPECIAL_ATTACK\020\264\t\022\031\n\024I" +
+      "TEM_ITEM_RARE_CANDY\020\225\n\022\037\n\032ITEM_ITEM_FREE" +
+      "_RAID_TICKET\020\371\n\022\037\n\032ITEM_ITEM_PAID_RAID_T" +
+      "ICKET\020\372\n\022$\n\037ITEM_ITEM_LEGENDARY_RAID_TIC" +
+      "KET\020\373\n\022\031\n\024ITEM_ITEM_STAR_PIECE\020\374\n\022\036\n\031ITE" +
+      "M_ITEM_FRIEND_GIFT_BOX\020\375\n\022\032\n\025ITEM_ITEM_T" +
+      "EAM_CHANGE\020\376\n\022!\n\034ITEM_ITEM_REMOTE_RAID_T" +
+      "ICKET\020\200\013\022\"\n\035ITEM_ITEM_LEADER_MAP_FRAGMEN" +
+      "T\020\335\013\022\031\n\024ITEM_ITEM_LEADER_MAP\020\336\013\022\033\n\026ITEM_" +
+      "ITEM_GIOVANNI_MAP\020\337\013\022\"\n\035ITEM_ITEM_GLOBAL" +
+      "_EVENT_TICKET\020\300\014\022 \n\033ITEM_ITEM_EVENT_TICK" +
+      "ET_PINK\020\301\014*\335\001\n\nUpdateType\022\023\n\017UPDATE_TYPE" +
+      "_ADD\020\000\022\026\n\022UPDATE_TYPE_MODIFY\020\001\022\026\n\022UPDATE" +
+      "_TYPE_REMOVE\020\002\022 \n\034UPDATE_TYPE_PREDICTED_" +
+      "MODIFY\020\003\022 \n\034UPDATE_TYPE_PREDICTED_REMOVE" +
+      "\020\004\022\"\n\036UPDATE_TYPE_ROLLED_BACK_MODIFY\020\005\022\"" +
+      "\n\036UPDATE_TYPE_ROLLED_BACK_REMOVE\020\006*\206\001\n\nC" +
+      "ameraType\022\027\n\023CAMERA_TYPE_DEFAULT\020\000\022\030\n\024CA" +
+      "MERA_TYPE_SHOULDER\020\001\022#\n\037CAMERA_TYPE_ENEM" +
+      "Y_POKEMON_FOCUS\020\002\022 \n\034CAMERA_TYPE_MY_POKE" +
+      "MON_FOCUS\020\003*\207\003\n\022SocialTelemetryIds\022)\n%SO" +
+      "CIAL_TELEMETRY_IDS_UNDEFINED_SOCIAL\020\000\022#\n" +
+      "\037SOCIAL_TELEMETRY_IDS_FRIEND_TAB\020\001\022)\n%SO" +
+      "CIAL_TELEMETRY_IDS_NOTIFICATION_TAB\020\002\022\'\n" +
+      "#SOCIAL_TELEMETRY_IDS_FRIEND_PROFILE\020\003\0226" +
+      "\n2SOCIAL_TELEMETRY_IDS_OPEN_FRIEND_SHIP_" +
+      "LEVEL_DETAIL\020\004\0225\n1SOCIAL_TELEMETRY_IDS_C" +
+      "LOSE_OPEN_GIFT_CONFIRMATION\020\005\0221\n-SOCIAL_" +
+      "TELEMETRY_IDS_FRIEND_LIST_SORT_CHANGED\020\006" +
+      "\022+\n\'SOCIAL_TELEMETRY_IDS_FRIEND_LIST_CLO" +
+      "SED\020\007*\351\001\n\nBuddyLevel\022!\n\035BUDDY_LEVEL_BUDD" +
+      "Y_LEVEL_UNSET\020\000\022\035\n\031BUDDY_LEVEL_BUDDY_LEV" +
+      "EL_0\020\001\022\035\n\031BUDDY_LEVEL_BUDDY_LEVEL_1\020\002\022\035\n" +
+      "\031BUDDY_LEVEL_BUDDY_LEVEL_2\020\003\022\035\n\031BUDDY_LE" +
+      "VEL_BUDDY_LEVEL_3\020\004\022\035\n\031BUDDY_LEVEL_BUDDY" +
+      "_LEVEL_4\020\005\022\035\n\031BUDDY_LEVEL_BUDDY_LEVEL_5\020" +
+      "\006*\362\003\n\025MapEventsTelemetryIds\0220\n,MAP_EVENT" +
+      "S_TELEMETRY_IDS_UNDEFINED_MAP_EVENT\020\000\022%\n" +
+      "!MAP_EVENTS_TELEMETRY_IDS_ITEM_BAG\020\001\022&\n\"" +
+      "MAP_EVENTS_TELEMETRY_IDS_MAIN_MENU\020\002\022$\n " +
+      "MAP_EVENTS_TELEMETRY_IDS_POKEDEX\020\003\022$\n MA" +
+      "P_EVENTS_TELEMETRY_IDS_PROFILE\020\004\022%\n!MAP_" +
+      "EVENTS_TELEMETRY_IDS_SETTINGS\020\005\022*\n&MAP_E" +
+      "VENTS_TELEMETRY_IDS_SHOP_FROM_MAP\020\006\022 \n\034M" +
+      "AP_EVENTS_TELEMETRY_IDS_GYM\020\007\022%\n!MAP_EVE" +
+      "NTS_TELEMETRY_IDS_POKESTOP\020\010\022%\n!MAP_EVEN" +
+      "TS_TELEMETRY_IDS_RESEARCH\020\t\022$\n MAP_EVENT" +
+      "S_TELEMETRY_IDS_COMPASS\020\n\022#\n\037MAP_EVENTS_" +
+      "TELEMETRY_IDS_NEARBY\020\013*a\n\014PokemonBadge\022%" +
+      "\n!POKEMON_BADGE_POKEMON_BADGE_UNSET\020\000\022*\n" +
+      "&POKEMON_BADGE_POKEMON_BADGE_BEST_BUDDY\020" +
+      "\001*\322\002\n\036PermissionFlowStepTelemetryIds\022E\nA" +
+      "PERMISSION_FLOW_STEP_TELEMETRY_IDS_UNDEF" +
+      "INED_PERMISSION_FLOW_STEP\020\000\0225\n1PERMISSIO" +
+      "N_FLOW_STEP_TELEMETRY_IDS_INITIAL_PROMPT" +
+      "\020\001\0229\n5PERMISSION_FLOW_STEP_TELEMETRY_IDS" +
+      "_FITNESS_PERMISSION\020\002\022:\n6PERMISSION_FLOW" +
+      "_STEP_TELEMETRY_IDS_LOCATION_PERMISSION\020" +
+      "\003\022;\n7PERMISSION_FLOW_STEP_TELEMETRY_IDS_" +
+      "ACTIVITY_PERMISSIONS\020\004*{\n\017WebTelemetryId" +
+      "s\022)\n%WEB_TELEMETRY_IDS_UNDEFINED_WEB_EVE" +
+      "NT\020\000\022=\n9WEB_TELEMETRY_IDS_POINT_OF_INTER" +
+      "EST_DESCRIPTION_WEB_CLICK\020\001*\226\001\n\021AssetBun" +
+      "dleStatus\022 \n\034ASSET_BUNDLE_STATUS_UNLOADE" +
+      "D\020\000\022\037\n\033ASSET_BUNDLE_STATUS_LOADING\020\001\022\036\n\032" +
+      "ASSET_BUNDLE_STATUS_LOADED\020\002\022\036\n\032ASSET_BU" +
+      "NDLE_STATUS_FAILED\020\003*v\n\024PlayerOnboarding" +
+      "Path\022 \n\034PLAYER_ONBOARDING_PATH_UNSET\020\000\022\035" +
+      "\n\031PLAYER_ONBOARDING_PATH_V1\020\001\022\035\n\031PLAYER_" +
+      "ONBOARDING_PATH_V2\020\002*\261\020\n\022TutorialComplet" +
+      "ion\022$\n TUTORIAL_COMPLETION_LEGAL_SCREEN\020" +
+      "\000\022(\n$TUTORIAL_COMPLETION_AVATAR_SELECTIO" +
+      "N\020\001\022(\n$TUTORIAL_COMPLETION_ACCOUNT_CREAT" +
+      "ION\020\002\022\'\n#TUTORIAL_COMPLETION_POKEMON_CAP" +
+      "TURE\020\003\022&\n\"TUTORIAL_COMPLETION_NAME_SELEC" +
+      "TION\020\004\022%\n!TUTORIAL_COMPLETION_POKEMON_BE" +
+      "RRY\020\005\022 \n\034TUTORIAL_COMPLETION_USE_ITEM\020\006\022" +
+      "6\n2TUTORIAL_COMPLETION_FIRST_TIME_EXPERI" +
+      "ENCE_COMPLETE\020\007\022)\n%TUTORIAL_COMPLETION_P" +
+      "OKESTOP_TUTORIAL\020\010\022$\n TUTORIAL_COMPLETIO" +
+      "N_GYM_TUTORIAL\020\t\0220\n,TUTORIAL_COMPLETION_" +
+      "CHALLENGE_QUEST_TUTORIAL\020\n\0223\n/TUTORIAL_C" +
+      "OMPLETION_PRIVACY_POLICY_CONFIRMATION\020\013\022" +
+      "(\n$TUTORIAL_COMPLETION_TRADING_TUTORIAL\020" +
+      "\014\022/\n+TUTORIAL_COMPLETION_POI_SUBMISSION_" +
+      "TUTORIAL\020\r\022)\n%TUTORIAL_COMPLETION_V1_STA" +
+      "RT_TUTORIAL\020\016\022)\n%TUTORIAL_COMPLETION_V2_" +
+      "START_TUTORIAL\020\017\022,\n(TUTORIAL_COMPLETION_" +
+      "V2_CUSTOMIZED_AVATAR\020\020\022,\n(TUTORIAL_COMPL" +
+      "ETION_V2_CAUGHT_FIRST_WILD\020\021\0224\n0TUTORIAL" +
+      "_COMPLETION_V2_FINISHED_TUTORIAL_CATCHES" +
+      "\020\022\022)\n%TUTORIAL_COMPLETION_V2_NAME_SELECT" +
+      "ION\020\023\022$\n TUTORIAL_COMPLETION_V2_EGG_GIVE" +
+      "N\020\024\022-\n)TUTORIAL_COMPLETION_V2_START_EGG_" +
+      "TUTORIAL\020\025\0221\n-TUTORIAL_COMPLETION_V2_COM" +
+      "PLETED_EGG_TUTORIAL\020\026\022)\n%TUTORIAL_COMPLE" +
+      "TION_AR_PHOTO_TUTORIAL\020\027\0220\n,TUTORIAL_COM" +
+      "PLETION_STARTER_POKEMON_CAPTURED\020\030\0222\n.TU" +
+      "TORIAL_COMPLETION_AR_PHOTO_FIRST_TIME_DI" +
+      "ALOG\020\031\0221\n-TUTORIAL_COMPLETION_AR_CLASSIC" +
+      "_PHOTO_TUTORIAL\020\032\022.\n*TUTORIAL_COMPLETION" +
+      "_AR_PLUS_PHOTO_TUTORIAL\020\033\0224\n0TUTORIAL_CO" +
+      "MPLETION_INVASION_INTRODUCTION_DIALOG\020\035\022" +
+      "1\n-TUTORIAL_COMPLETION_INVASION_ENCOUNTE" +
+      "R_DIALOG\020\036\0226\n2TUTORIAL_COMPLETION_INVASI" +
+      "ON_SHADOW_POKEMON_DIALOG\020\037\0224\n0TUTORIAL_C" +
+      "OMPLETION_INVASION_MAP_FRAGMENT_DIALOG\020!" +
+      "\0224\n0TUTORIAL_COMPLETION_INVASION_MAP_REC" +
+      "EIVED_DIALOG\020\"\0226\n2TUTORIAL_COMPLETION_IN" +
+      "VASION_MAP_2_RECEIVED_DIALOG\020#\022,\n(TUTORI" +
+      "AL_COMPLETION_BUDDY_WELCOME_PROMPT\020$\022.\n*" +
+      "TUTORIAL_COMPLETION_BUDDY_AR_PLUS_TUTORI" +
+      "AL\020%\022+\n\'TUTORIAL_COMPLETION_BUDDY_FEED_T" +
+      "UTORIAL\020&\022+\n\'TUTORIAL_COMPLETION_BUDDY_O" +
+      "N_MAP_PROMPT\020\'\0223\n/TUTORIAL_COMPLETION_BA" +
+      "TTLE_LEAGUE_HELP_TUTORIAL\020(\022-\n)TUTORIAL_" +
+      "COMPLETION_ARMP_TOS_CONFIRMATION\020)\0222\n.TU" +
+      "TORIAL_COMPLETION_BUDDY_REMOTE_GIFT_TUTO" +
+      "RIAL\020*\0226\n2TUTORIAL_COMPLETION_DAILY_BONU" +
+      "S_ENCOUNTER_TUTORIAL\020-\022/\n+TUTORIAL_COMPL" +
+      "ETION_SPONSORED_GIFT_TUTORIAL\020.\022/\n+TUTOR" +
+      "IAL_COMPLETION_XGS_ONLINE_CONSENT_NOTE\020/" +
+      "*\320\002\n\030FriendshipLevelMilestone\0225\n1FRIENDS" +
+      "HIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNS" +
+      "ET\020\000\0221\n-FRIENDSHIP_LEVEL_MILESTONE_FRIEN" +
+      "DSHIP_LEVEL_0\020\001\0221\n-FRIENDSHIP_LEVEL_MILE" +
+      "STONE_FRIENDSHIP_LEVEL_1\020\002\0221\n-FRIENDSHIP" +
+      "_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_2\020\003\0221\n" +
       "-FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_L" +
-      "EVEL_4\020\005*\266\002\n\020BattleHubSection\022$\n BATTLE_" +
-      "HUB_SECTION_SECTION_UNSET\020\000\022(\n$BATTLE_HU" +
-      "B_SECTION_SECTION_VS_SEEKER\020\001\022*\n&BATTLE_" +
-      "HUB_SECTION_SECTION_CURR_SEASON\020\002\022*\n&BAT" +
-      "TLE_HUB_SECTION_SECTION_LAST_SEASON\020\003\022%\n" +
-      "!BATTLE_HUB_SECTION_SECTION_NEARBY\020\004\022+\n\'" +
-      "BATTLE_HUB_SECTION_SECTION_TEAM_LEADERS\020" +
-      "\005\022&\n\"BATTLE_HUB_SECTION_SECTION_QR_CODE\020" +
-      "\006*n\n\022WarnedPlayerReason\022&\n\"WARNED_PLAYER" +
-      "_REASON_CHEAT_WARNING\020\000\0220\n,WARNED_PLAYER" +
-      "_REASON_POST_SUSPENSION_WARNING\020\001*e\n\020Egg" +
-      "IncubatorType\022&\n\"EGG_INCUBATOR_TYPE_INCU" +
-      "BATOR_UNSET\020\000\022)\n%EGG_INCUBATOR_TYPE_INCU" +
-      "BATOR_DISTANCE\020\001*\357\001\n\034PokemonInventoryTel" +
-      "emetryIds\022E\nAPOKEMON_INVENTORY_TELEMETRY" +
-      "_IDS_UNDEFINED_POKEMON_INVENTORY_EVENT\020\000" +
-      "\022(\n$POKEMON_INVENTORY_TELEMETRY_IDS_OPEN" +
-      "\020\001\0222\n.POKEMON_INVENTORY_TELEMETRY_IDS_SO" +
-      "RTING_CHANGE\020\002\022*\n&POKEMON_INVENTORY_TELE" +
-      "METRY_IDS_FILTER\020\003*\247/\n\006Method\022\027\n\023METHOD_" +
-      "METHOD_UNSET\020\000\022\025\n\021METHOD_GET_PLAYER\020\002\022!\n" +
-      "\035METHOD_GET_HOLOHOLO_INVENTORY\020\004\022\034\n\030METH" +
-      "OD_DOWNLOAD_SETTINGS\020\005\022\"\n\036METHOD_DOWNLOA" +
-      "D_ITEM_TEMPLATES\020\006\022)\n%METHOD_DOWNLOAD_RE" +
-      "MOTE_CONFIG_VERSION\020\007\022%\n!METHOD_REGISTER" +
-      "_BACKGROUND_DEVICE\020\010\022\031\n\025METHOD_GET_PLAYE" +
-      "R_DAY\020\t\022!\n\035METHOD_ACKNOWLEDGE_PUNISHMENT" +
-      "\020\n\022\032\n\026METHOD_GET_SERVER_TIME\020\013\022\031\n\025METHOD" +
-      "_GET_LOCAL_TIME\020\014\022\026\n\022METHOD_FORT_SEARCH\020" +
-      "e\022\024\n\020METHOD_ENCOUNTER\020f\022\030\n\024METHOD_CATCH_" +
-      "POKEMON\020g\022\027\n\023METHOD_FORT_DETAILS\020h\022\032\n\026ME" +
-      "THOD_GET_MAP_OBJECTS\020j\022\036\n\032METHOD_FORT_DE" +
-      "PLOY_POKEMON\020n\022\036\n\032METHOD_FORT_RECALL_POK" +
-      "EMON\020o\022\032\n\026METHOD_RELEASE_POKEMON\020p\022\032\n\026ME" +
-      "THOD_USE_ITEM_POTION\020q\022\033\n\027METHOD_USE_ITE" +
-      "M_CAPTURE\020r\022\030\n\024METHOD_USE_ITEM_FLEE\020s\022\032\n" +
-      "\026METHOD_USE_ITEM_REVIVE\020t\022\035\n\031METHOD_GET_" +
-      "PLAYER_PROFILE\020y\022\031\n\025METHOD_EVOLVE_POKEMO" +
-      "N\020}\022\033\n\027METHOD_GET_HATCHED_EGGS\020~\022&\n\"METH" +
-      "OD_ENCOUNTER_TUTORIAL_COMPLETE\020\177\022\034\n\027METH" +
-      "OD_LEVEL_UP_REWARDS\020\200\001\022 \n\033METHOD_CHECK_A" +
-      "WARDED_BADGES\020\201\001\022\"\n\035METHOD_RECYCLE_INVEN" +
-      "TORY_ITEM\020\211\001\022\037\n\032METHOD_COLLECT_DAILY_BON" +
-      "US\020\212\001\022\035\n\030METHOD_USE_ITEM_XP_BOOST\020\213\001\022\"\n\035" +
-      "METHOD_USE_ITEM_EGG_INCUBATOR\020\214\001\022\027\n\022METH" +
-      "OD_USE_INCENSE\020\215\001\022\037\n\032METHOD_GET_INCENSE_" +
-      "POKEMON\020\216\001\022\035\n\030METHOD_INCENSE_ENCOUNTER\020\217" +
-      "\001\022\035\n\030METHOD_ADD_FORT_MODIFIER\020\220\001\022\032\n\025METH" +
-      "OD_DISK_ENCOUNTER\020\221\001\022\033\n\026METHOD_UPGRADE_P" +
-      "OKEMON\020\223\001\022 \n\033METHOD_SET_FAVORITE_POKEMON" +
-      "\020\224\001\022\034\n\027METHOD_NICKNAME_POKEMON\020\225\001\022\027\n\022MET" +
-      "HOD_EQUIP_BADGE\020\226\001\022 \n\033METHOD_SET_CONTACT" +
-      "_SETTINGS\020\227\001\022\035\n\030METHOD_SET_BUDDY_POKEMON" +
-      "\020\230\001\022\034\n\027METHOD_GET_BUDDY_WALKED\020\231\001\022\036\n\031MET" +
-      "HOD_USE_ITEM_ENCOUNTER\020\232\001\022\026\n\021METHOD_GYM_" +
-      "DEPLOY\020\233\001\022\030\n\023METHOD_GYM_GET_INFO\020\234\001\022\035\n\030M" +
-      "ETHOD_GYM_START_SESSION\020\235\001\022\035\n\030METHOD_GYM" +
-      "_BATTLE_ATTACK\020\236\001\022\026\n\021METHOD_JOIN_LOBBY\020\237" +
-      "\001\022\027\n\022METHOD_LEAVE_LOBBY\020\240\001\022 \n\033METHOD_SET" +
-      "_LOBBY_VISIBILITY\020\241\001\022\035\n\030METHOD_SET_LOBBY" +
-      "_POKEMON\020\242\001\022\034\n\027METHOD_GET_RAID_DETAILS\020\243" +
-      "\001\022\034\n\027METHOD_GYM_FEED_POKEMON\020\244\001\022\035\n\030METHO" +
-      "D_START_RAID_BATTLE\020\245\001\022\027\n\022METHOD_ATTACK_" +
-      "RAID\020\246\001\022\032\n\025METHOD_AWARD_POKECOIN\020\247\001\022#\n\036M" +
-      "ETHOD_USE_ITEM_STARDUST_BOOST\020\250\001\022\033\n\026METH" +
-      "OD_REASSIGN_PLAYER\020\251\001\022\037\n\032METHOD_REDEEM_P" +
-      "OI_PASSCODE\020\252\001\022\034\n\027METHOD_IS_SKU_AVAILABL" +
-      "E\020\254\001\022\034\n\027METHOD_GET_ASSET_DIGEST\020\254\002\022\035\n\030ME" +
-      "THOD_GET_DOWNLOAD_URLS\020\255\002\022\035\n\030METHOD_GET_" +
-      "ASSET_VERSION\020\256\002\022\032\n\025METHOD_CLAIM_CODENAM" +
-      "E\020\223\003\022\026\n\021METHOD_SET_AVATAR\020\224\003\022\033\n\026METHOD_S" +
-      "ET_PLAYER_TEAM\020\225\003\022\"\n\035METHOD_MARK_TUTORIA" +
-      "L_COMPLETE\020\226\003\022&\n!METHOD_UPDATE_PERFORMAN" +
-      "CE_METRICS\020\227\003\022\033\n\026METHOD_CHECK_CHALLENGE\020" +
-      "\330\004\022\034\n\027METHOD_VERIFY_CHALLENGE\020\331\004\022\020\n\013METH" +
-      "OD_ECHO\020\232\005\022\036\n\031METHOD_SFIDA_REGISTRATION\020" +
-      "\240\006\022\034\n\027METHOD_SFIDA_ACTION_LOG\020\241\006\022\037\n\032METH" +
-      "OD_SFIDA_CERTIFICATION\020\242\006\022\030\n\023METHOD_SFID" +
-      "A_UPDATE\020\243\006\022\030\n\023METHOD_SFIDA_ACTION\020\244\006\022\030\n" +
-      "\023METHOD_SFIDA_DOWSER\020\245\006\022\031\n\024METHOD_SFIDA_" +
-      "CAPTURE\020\246\006\022&\n!METHOD_LIST_AVATAR_CUSTOMI" +
-      "ZATIONS\020\247\006\022%\n METHOD_SET_AVATAR_ITEM_AS_" +
-      "VIEWED\020\250\006\022\025\n\020METHOD_GET_INBOX\020\251\006\022\033\n\026METH" +
-      "OD_LIST_GYM_BADGES\020\253\006\022!\n\034METHOD_GET_GYM_" +
-      "BADGE_DETAILS\020\254\006\022 \n\033METHOD_USE_ITEM_MOVE" +
-      "_REROLL\020\255\006\022\037\n\032METHOD_USE_ITEM_RARE_CANDY" +
-      "\020\256\006\022\"\n\035METHOD_AWARD_FREE_RAID_TICKET\020\257\006\022" +
-      "\032\n\025METHOD_FETCH_ALL_NEWS\020\260\006\022\"\n\035METHOD_MA" +
-      "RK_READ_NEWS_ARTICLE\020\261\006\022#\n\036METHOD_GET_PL" +
-      "AYER_DISPLAY_INFO\020\262\006\022$\n\037METHOD_BELUGA_TR" +
-      "ANSACTION_START\020\263\006\022\'\n\"METHOD_BELUGA_TRAN" +
-      "SACTION_COMPLETE\020\264\006\022\032\n\025METHOD_GET_NEW_QU" +
-      "ESTS\020\204\007\022\035\n\030METHOD_GET_QUEST_DETAILS\020\205\007\022\032" +
-      "\n\025METHOD_COMPLETE_QUEST\020\206\007\022\030\n\023METHOD_REM" +
-      "OVE_QUEST\020\207\007\022\033\n\026METHOD_QUEST_ENCOUNTER\020\210" +
-      "\007\022%\n METHOD_COMPLETE_QUEST_STAMP_CARD\020\211\007" +
-      "\022\025\n\020METHOD_SEND_GIFT\020\266\007\022\025\n\020METHOD_OPEN_G" +
-      "IFT\020\267\007\022\030\n\023METHOD_GIFT_DETAILS\020\270\007\022\027\n\022METH" +
-      "OD_DELETE_GIFT\020\271\007\022 \n\033METHOD_SAVE_PLAYER_" +
-      "SNAPSHOT\020\272\007\022,\n\'METHOD_GET_FRIENDSHIP_MIL" +
-      "ESTONE_REWARDS\020\273\007\022\033\n\026METHOD_CHECK_SEND_G" +
-      "IFT\020\274\007\022\037\n\032METHOD_SET_FRIEND_NICKNAME\020\275\007\022" +
-      "&\n!METHOD_DELETE_GIFT_FROM_INVENTORY\020\276\007\022" +
-      "\'\n\"METHOD_SAVE_SOCIAL_PLAYER_SETTINGS\020\277\007" +
-      "\022\036\n\031METHOD_SHARE_EX_RAID_PASS\020\300\007\022$\n\037METH" +
-      "OD_CHECK_SHARE_EX_RAID_PASS\020\301\007\022\'\n\"METHOD" +
-      "_DECLINE_SHARED_EX_RAID_PASS\020\302\007\022\030\n\023METHO" +
-      "D_OPEN_TRADING\020\312\007\022\032\n\025METHOD_UPDATE_TRADI" +
-      "NG\020\313\007\022\033\n\026METHOD_CONFIRM_TRADING\020\314\007\022\032\n\025ME" +
-      "THOD_CANCEL_TRADING\020\315\007\022\027\n\022METHOD_GET_TRA" +
-      "DING\020\316\007\022\037\n\032METHOD_GET_FITNESS_REWARDS\020\324\007" +
-      "\022%\n METHOD_GET_COMBAT_PLAYER_PROFILE\020\336\007\022" +
-      "(\n#METHOD_GENERATE_COMBAT_CHALLENGE_ID\020\337" +
-      "\007\022#\n\036METHOD_CREATE_COMBAT_CHALLENGE\020\340\007\022!" +
-      "\n\034METHOD_OPEN_COMBAT_CHALLENGE\020\341\007\022 \n\033MET" +
-      "HOD_GET_COMBAT_CHALLENGE\020\342\007\022#\n\036METHOD_AC" +
-      "CEPT_COMBAT_CHALLENGE\020\343\007\022$\n\037METHOD_DECLI" +
-      "NE_COMBAT_CHALLENGE\020\344\007\022#\n\036METHOD_CANCEL_" +
-      "COMBAT_CHALLENGE\020\345\007\022,\n\'METHOD_SUBMIT_COM" +
-      "BAT_CHALLENGE_POKEMONS\020\346\007\022*\n%METHOD_SAVE" +
-      "_COMBAT_PLAYER_PREFERENCES\020\347\007\022\037\n\032METHOD_" +
-      "OPEN_COMBAT_SESSION\020\350\007\022\031\n\024METHOD_UPDATE_" +
-      "COMBAT\020\351\007\022\027\n\022METHOD_QUIT_COMBAT\020\352\007\022\036\n\031ME" +
-      "THOD_GET_COMBAT_RESULTS\020\353\007\022\037\n\032METHOD_UNL" +
-      "OCK_SPECIAL_MOVE\020\354\007\022\"\n\035METHOD_GET_NPC_CO" +
-      "MBAT_REWARDS\020\355\007\022!\n\034METHOD_COMBAT_FRIEND_" +
-      "REQUEST\020\356\007\022#\n\036METHOD_OPEN_NPC_COMBAT_SES" +
-      "SION\020\357\007\022!\n\034METHOD_START_TUTORIAL_ACTION\020" +
-      "\360\007\022#\n\036METHOD_GET_TUTORIAL_EGG_ACTION\020\361\007\022" +
-      "\026\n\021METHOD_SEND_PROBE\020\374\007\022\026\n\021METHOD_PROBE_" +
-      "DATA\020\375\007\022\027\n\022METHOD_COMBAT_DATA\020\376\007\022!\n\034METH" +
-      "OD_COMBAT_CHALLENGE_DATA\020\377\007\022\033\n\026METHOD_CH" +
-      "ECK_PHOTOBOMB\020\315\010\022\035\n\030METHOD_CONFIRM_PHOTO" +
-      "BOMB\020\316\010\022\031\n\024METHOD_GET_PHOTOBOMB\020\317\010\022\037\n\032ME" +
-      "THOD_ENCOUNTER_PHOTOBOMB\020\320\010\022*\n%METHOD_GE" +
-      "T_SIGNED_GMAP_URL_DEPRECATED\020\321\010\022\027\n\022METHO" +
-      "D_CHANGE_TEAM\020\322\010\022\031\n\024METHOD_GET_WEB_TOKEN" +
-      "\020\323\010\022%\n METHOD_COMPLETE_SNAPSHOT_SESSION\020" +
-      "\326\010\022\032\n\025METHOD_START_INCIDENT\020\260\t\022&\n!METHOD" +
-      "_INVASION_COMPLETE_DIALOGUE\020\261\t\022(\n#METHOD" +
-      "_INVASION_OPEN_COMBAT_SESSION\020\262\t\022\"\n\035METH" +
-      "OD_INVASION_BATTLE_UPDATE\020\263\t\022\036\n\031METHOD_I" +
-      "NVASION_ENCOUNTER\020\264\t\022\032\n\025METHOD_PURIFY_PO" +
-      "KEMON\020\265\t\022\036\n\031METHOD_GET_ROCKET_BALLOON\020\266\t" +
-      "\022)\n$METHOD_START_ROCKET_BALLOON_INCIDENT" +
-      "\020\267\t\022\'\n\"METHOD_VS_SEEKER_START_MATCHMAKIN" +
-      "G\020\224\n\022\036\n\031METHOD_CANCEL_MATCHMAKING\020\225\n\022\"\n\035" +
-      "METHOD_GET_MATCHMAKING_STATUS\020\226\n\0223\n.METH" +
-      "OD_COMPLETE_VS_SEEKER_AND_RESTART_CHARGI" +
-      "NG\020\227\n\022 \n\033METHOD_GET_VS_SEEKER_STATUS\020\230\n\022" +
-      "5\n0METHOD_COMPLETE_COMBAT_COMPETITIVE_SE" +
-      "ASON_ACTION\020\231\n\022#\n\036METHOD_CLAIM_VS_SEEKER" +
-      "_REWARDS\020\232\n\022&\n!METHOD_VS_SEEKER_REWARD_E" +
-      "NCOUNTER\020\233\n\022\036\n\031METHOD_ACTIVATE_VS_SEEKER" +
-      "\020\234\n\022\031\n\024METHOD_GET_BUDDY_MAP\020\306\n\022\033\n\026METHOD" +
-      "_GET_BUDDY_STATS\020\307\n\022\026\n\021METHOD_FEED_BUDDY" +
-      "\020\310\n\022\033\n\026METHOD_OPEN_BUDDY_GIFT\020\311\n\022\025\n\020METH" +
-      "OD_PET_BUDDY\020\312\n\022\035\n\030METHOD_GET_BUDDY_HIST" +
-      "ORY\020\313\n\022,\n\'METHOD_CREATE_BUDDY_MUTLIPLAYE" +
-      "R_SESSION\020\260\013\022*\n%METHOD_JOIN_BUDDY_MULTIP" +
-      "LAYER_SESSION\020\261\013\022+\n&METHOD_LEAVE_BUDDY_M" +
-      "ULTIPLAYER_SESSION\020\262\013\022\032\n\025METHOD_GET_TODA",
-      "Y_VIEW\020\335\013\022\037\n\032METHOD_MEGA_EVOLVE_POKEMON\020" +
-      "\336\013\022\034\n\027METHOD_REMOTE_GIFT_PING\020\337\013\022 \n\033METH" +
-      "OD_SEND_RAID_INVITATION\020\340\013\022\037\n\032METHOD_GET" +
-      "_DAILY_ENCOUNTER\020\301\014\022\033\n\026METHOD_DAILY_ENCO" +
-      "UNTER\020\302\014\022\037\n\032METHOD_OPEN_SPONSORED_GIFT\020\362" +
-      "\014\022-\n(METHOD_SPONSORED_GIFT_REPORT_INTERA" +
-      "CTION\020\363\014\022#\n\036METHOD_SAVE_PLAYER_PREFERENC" +
-      "ES\020\364\014\022%\n METHOD_GET_TIMED_GROUP_CHALLENG" +
-      "E\020\244\r\022\036\n\031METHOD_REPORT_AD_FEEDBACK\020\264\r*\340\013\n" +
-      "\tQuestType\022\032\n\026QUEST_TYPE_QUEST_UNSET\020\000\022+" +
-      "\n\'QUEST_TYPE_QUEST_FIRST_CATCH_OF_THE_DA" +
-      "Y\020\001\022.\n*QUEST_TYPE_QUEST_FIRST_POKESTOP_O" +
-      "F_THE_DAY\020\002\022\037\n\033QUEST_TYPE_QUEST_MULTI_PA" +
-      "RT\020\003\022\"\n\036QUEST_TYPE_QUEST_CATCH_POKEMON\020\004" +
-      "\022\"\n\036QUEST_TYPE_QUEST_SPIN_POKESTOP\020\005\022\036\n\032" +
-      "QUEST_TYPE_QUEST_HATCH_EGG\020\006\022(\n$QUEST_TY" +
-      "PE_QUEST_COMPLETE_GYM_BATTLE\020\007\022)\n%QUEST_" +
-      "TYPE_QUEST_COMPLETE_RAID_BATTLE\020\010\022#\n\037QUE" +
-      "ST_TYPE_QUEST_COMPLETE_QUEST\020\t\022%\n!QUEST_" +
-      "TYPE_QUEST_TRANSFER_POKEMON\020\n\022%\n!QUEST_T" +
-      "YPE_QUEST_FAVORITE_POKEMON\020\013\022!\n\035QUEST_TY" +
-      "PE_QUEST_AUTOCOMPLETE\020\014\022+\n\'QUEST_TYPE_QU" +
-      "EST_USE_BERRY_IN_ENCOUNTER\020\r\022$\n QUEST_TY" +
-      "PE_QUEST_UPGRADE_POKEMON\020\016\022#\n\037QUEST_TYPE" +
-      "_QUEST_EVOLVE_POKEMON\020\017\022\037\n\033QUEST_TYPE_QU" +
-      "EST_LAND_THROW\020\020\022$\n QUEST_TYPE_QUEST_GET" +
-      "_BUDDY_CANDY\020\021\022\037\n\033QUEST_TYPE_QUEST_BADGE" +
-      "_RANK\020\022\022!\n\035QUEST_TYPE_QUEST_PLAYER_LEVEL" +
-      "\020\023\022\036\n\032QUEST_TYPE_QUEST_JOIN_RAID\020\024\022$\n QU" +
-      "EST_TYPE_QUEST_COMPLETE_BATTLE\020\025\022\037\n\033QUES" +
-      "T_TYPE_QUEST_ADD_FRIEND\020\026\022\"\n\036QUEST_TYPE_" +
-      "QUEST_TRADE_POKEMON\020\027\022\036\n\032QUEST_TYPE_QUES" +
-      "T_SEND_GIFT\020\030\022(\n$QUEST_TYPE_QUEST_EVOLVE" +
-      "_INTO_POKEMON\020\031\022$\n QUEST_TYPE_QUEST_COMP" +
-      "LETE_COMBAT\020\033\022\"\n\036QUEST_TYPE_QUEST_TAKE_S" +
-      "NAPSHOT\020\034\022\'\n#QUEST_TYPE_QUEST_BATTLE_TEA" +
-      "M_ROCKET\020\035\022#\n\037QUEST_TYPE_QUEST_PURIFY_PO" +
-      "KEMON\020\036\022%\n!QUEST_TYPE_QUEST_FIND_TEAM_RO" +
-      "CKET\020\037\022+\n\'QUEST_TYPE_QUEST_FIRST_GRUNT_O" +
-      "F_THE_DAY\020 \022\037\n\033QUEST_TYPE_QUEST_BUDDY_FE" +
-      "ED\020!\0220\n,QUEST_TYPE_QUEST_BUDDY_EARN_AFFE" +
-      "CTION_POINTS\020\"\022\036\n\032QUEST_TYPE_QUEST_BUDDY" +
-      "_PET\020#\022 \n\034QUEST_TYPE_QUEST_BUDDY_LEVEL\020$" +
-      "\022\037\n\033QUEST_TYPE_QUEST_BUDDY_WALK\020%\022 \n\034QUE" +
-      "ST_TYPE_QUEST_BUDDY_YATTA\020&\022 \n\034QUEST_TYP" +
-      "E_QUEST_USE_INCENSE\020\'\022(\n$QUEST_TYPE_QUES" +
-      "T_MEGA_EVOLVE_POKEMON\020+*D\n\nMetricType\022\031\n" +
-      "\025METRIC_TYPE_METRIC_KM\020\000\022\033\n\027METRIC_TYPE_" +
-      "METRIC_STEP\020\001*\376\t\n\022OnboardingEventIds\022%\n!" +
-      "ONBOARDING_EVENT_IDS_TOS_ACCEPTED\020\000\022)\n%O" +
-      "NBOARDING_EVENT_IDS_PRIVACY_ACCEPTED\020\001\022%" +
-      "\n!ONBOARDING_EVENT_IDS_CONVERSATION\020\002\022(\n" +
-      "$ONBOARDING_EVENT_IDS_ENCOUNTER_ENTER\020\003\022" +
-      "(\n$ONBOARDING_EVENT_IDS_ENCOUNTER_LEAVE\020" +
-      "\004\022)\n%ONBOARDING_EVENT_IDS_AVATAR_SELECTI" +
-      "ON\020\005\022&\n\"ONBOARDING_EVENT_IDS_AVATAR_GEND" +
-      "ER\020\006\022-\n)ONBOARDING_EVENT_IDS_AVATAR_GEND" +
-      "ER_CHOSEN\020\007\022+\n\'ONBOARDING_EVENT_IDS_AVAT" +
-      "AR_HEAD_CHOSEN\020\010\022+\n\'ONBOARDING_EVENT_IDS" +
-      "_AVATAR_BODY_CHOSEN\020\t\022)\n%ONBOARDING_EVEN" +
-      "T_IDS_AVATAR_TRY_AGAIN\020\n\022(\n$ONBOARDING_E" +
-      "VENT_IDS_AVATAR_ACCEPTED\020\013\022#\n\037ONBOARDING" +
-      "_EVENT_IDS_NAME_ENTRY\020\014\022)\n%ONBOARDING_EV" +
-      "ENT_IDS_NAME_UNAVAILABLE\020\r\022&\n\"ONBOARDING" +
-      "_EVENT_IDS_NAME_ACCEPTED\020\016\0221\n-ONBOARDING" +
-      "_EVENT_IDS_POKEDEX_TUTORIAL_STARTED\020\017\022A\n" +
-      "=ONBOARDING_EVENT_IDS_POKEDEX_TUTORIAL_I" +
-      "NFO_PANEL_EXIT_PRESSED\020\020\022-\n)ONBOARDING_E" +
-      "VENT_IDS_POKEDEX_EXIT_PRESSED\020\021\022-\n)ONBOA" +
-      "RDING_EVENT_IDS_EGG_TUTORIAL_STARTED\020\022\022+" +
-      "\n\'ONBOARDING_EVENT_IDS_EGG_TUTORIAL_PRES" +
-      "S\020\023\022.\n*ONBOARDING_EVENT_IDS_EGG_TUTORIAL" +
-      "_FINISHED\020\024\022(\n$ONBOARDING_EVENT_IDS_POKE" +
-      "STOP_LETSGO\020\025\0227\n3ONBOARDING_EVENT_IDS_WI" +
-      "LD_POKEMON_ENCOUNTER_ENTERED\020\026\022,\n(ONBOAR" +
-      "DING_EVENT_IDS_WILD_POKEMON_CAUGHT\020\027\022,\n(" +
-      "ONBOARDING_EVENT_IDS_AR_STANDARD_ENABLED" +
-      "\020\030\022-\n)ONBOARDING_EVENT_IDS_AR_STANDARD_R" +
-      "EJECTED\020\031\022(\n$ONBOARDING_EVENT_IDS_AR_PLU" +
-      "S_ENABLED\020\032\022)\n%ONBOARDING_EVENT_IDS_AR_P" +
-      "LUS_REJECTED\020\033*\300\005\n\014CameraTarget\022%\n!CAMER" +
-      "A_TARGET_CAM_TARGET_ATTACKER\020\000\022*\n&CAMERA" +
-      "_TARGET_CAM_TARGET_ATTACKER_EDGE\020\001\022,\n(CA" +
-      "MERA_TARGET_CAM_TARGET_ATTACKER_GROUND\020\002" +
-      "\022%\n!CAMERA_TARGET_CAM_TARGET_DEFENDER\020\003\022" +
-      "*\n&CAMERA_TARGET_CAM_TARGET_DEFENDER_EDG" +
-      "E\020\004\022,\n(CAMERA_TARGET_CAM_TARGET_DEFENDER" +
-      "_GROUND\020\005\022.\n*CAMERA_TARGET_CAM_TARGET_AT" +
-      "TACKER_DEFENDER\020\006\0223\n/CAMERA_TARGET_CAM_T" +
-      "ARGET_ATTACKER_DEFENDER_EDGE\020\007\022.\n*CAMERA" +
-      "_TARGET_CAM_TARGET_DEFENDER_ATTACKER\020\010\0223" +
-      "\n/CAMERA_TARGET_CAM_TARGET_DEFENDER_ATTA" +
-      "CKER_EDGE\020\t\0225\n1CAMERA_TARGET_CAM_TARGET_" +
-      "ATTACKER_DEFENDER_MIRROR\020\013\0227\n3CAMERA_TAR" +
-      "GET_CAM_TARGET_SHOULDER_ATTACKER_DEFENDE" +
-      "R\020\014\022>\n:CAMERA_TARGET_CAM_TARGET_SHOULDER" +
-      "_ATTACKER_DEFENDER_MIRROR\020\r\0224\n0CAMERA_TA" +
-      "RGET_CAM_TARGET_ATTACKER_DEFENDER_WORLD\020" +
-      "\016*M\n\020AvatarCompletion\022\035\n\031AVATAR_COMPLETI" +
-      "ON_SUCCESS\020\000\022\032\n\026AVATAR_COMPLETION_QUIT\020\001" +
-      "*\375\006\n\016HoloItemEffect\022%\n!HOLO_ITEM_EFFECT_" +
-      "ITEM_EFFECT_NONE\020\000\022-\n(HOLO_ITEM_EFFECT_I" +
-      "TEM_EFFECT_CAP_NO_FLEE\020\350\007\0221\n,HOLO_ITEM_E" +
-      "FFECT_ITEM_EFFECT_CAP_NO_MOVEMENT\020\352\007\022/\n*" +
-      "HOLO_ITEM_EFFECT_ITEM_EFFECT_CAP_NO_THRE" +
-      "AT\020\353\007\0220\n+HOLO_ITEM_EFFECT_ITEM_EFFECT_CA" +
-      "P_TARGET_MAX\020\354\007\0221\n,HOLO_ITEM_EFFECT_ITEM" +
-      "_EFFECT_CAP_TARGET_SLOW\020\355\007\0222\n-HOLO_ITEM_" +
-      "EFFECT_ITEM_EFFECT_CAP_CHANCE_NIGHT\020\356\007\0224" +
-      "\n/HOLO_ITEM_EFFECT_ITEM_EFFECT_CAP_CHANC" +
-      "E_TRAINER\020\357\007\0228\n3HOLO_ITEM_EFFECT_ITEM_EF" +
-      "FECT_CAP_CHANCE_FIRST_THROW\020\360\007\0223\n.HOLO_I" +
-      "TEM_EFFECT_ITEM_EFFECT_CAP_CHANCE_LEGEND" +
-      "\020\361\007\0222\n-HOLO_ITEM_EFFECT_ITEM_EFFECT_CAP_" +
-      "CHANCE_HEAVY\020\362\007\0223\n.HOLO_ITEM_EFFECT_ITEM" +
-      "_EFFECT_CAP_CHANCE_REPEAT\020\363\007\0228\n3HOLO_ITE" +
-      "M_EFFECT_ITEM_EFFECT_CAP_CHANCE_MULTI_TH" +
-      "ROW\020\364\007\0223\n.HOLO_ITEM_EFFECT_ITEM_EFFECT_C" +
-      "AP_CHANCE_ALWAYS\020\365\007\0229\n4HOLO_ITEM_EFFECT_" +
-      "ITEM_EFFECT_CAP_CHANCE_SINGLE_THROW\020\366\007\022-" +
-      "\n(HOLO_ITEM_EFFECT_ITEM_EFFECT_CANDY_AWA" +
-      "RD\020\367\007\0221\n,HOLO_ITEM_EFFECT_ITEM_EFFECT_FU" +
-      "LL_MOTIVATION\020\370\007*\254\002\n\034RemoteRaidInviteAcc" +
-      "eptSource\022O\nKREMOTE_RAID_INVITE_ACCEPT_S" +
-      "OURCE_UNDEFINED_REMOTE_RAID_INVITE_ACCEP" +
-      "T_SOURCE\020\000\0227\n3REMOTE_RAID_INVITE_ACCEPT_" +
-      "SOURCE_REMOTE_RAID_IN_APP\020\001\022B\n>REMOTE_RA" +
-      "ID_INVITE_ACCEPT_SOURCE_REMOTE_RAID_PUSH" +
-      "_NOTIFICATION\020\002\022>\n:REMOTE_RAID_INVITE_AC" +
-      "CEPT_SOURCE_REMOTE_RAID_NEARBY_WINDOW\020\003*" +
-      "\352\001\n\022CombatRewardStatus\022,\n(COMBAT_REWARD_" +
-      "STATUS_UNSET_REWARD_STATUS\020\000\022(\n$COMBAT_R" +
-      "EWARD_STATUS_REWARDS_GRANTED\020\001\022-\n)COMBAT" +
-      "_REWARD_STATUS_MAX_REWARDS_RECEIVED\020\002\022(\n" +
-      "$COMBAT_REWARD_STATUS_PLAYER_BAG_FULL\020\003\022" +
-      "#\n\037COMBAT_REWARD_STATUS_NO_REWARDS\020\004*a\n\014" +
-      "PoiImageType\022\030\n\024POI_IMAGE_TYPE_UNSET\020\000\022\027" +
-      "\n\023POI_IMAGE_TYPE_MAIN\020\001\022\036\n\032POI_IMAGE_TYP" +
-      "E_SURROUNDING\020\002*\374\002\n\023PokedexGenerationId\022" +
-      "\036\n\032POKEDEX_GENERATION_ID_GEN1\020\000\022\036\n\032POKED" +
-      "EX_GENERATION_ID_GEN2\020\001\022\036\n\032POKEDEX_GENER" +
-      "ATION_ID_GEN3\020\002\022\036\n\032POKEDEX_GENERATION_ID" +
-      "_GEN4\020\003\022\036\n\032POKEDEX_GENERATION_ID_GEN5\020\004\022" +
-      "\036\n\032POKEDEX_GENERATION_ID_GEN6\020\005\022\036\n\032POKED" +
-      "EX_GENERATION_ID_GEN7\020\006\022\036\n\032POKEDEX_GENER" +
-      "ATION_ID_GEN8\020\007\022!\n\034POKEDEX_GENERATION_ID" +
-      "_MELTAN\020\351\007\022\"\n\035POKEDEX_GENERATION_ID_MEGA" +
-      "EVO\020\352\007\022\036\n\031POKEDEX_GENERATION_ID_ALL\020\211\'*\226" +
-      "\342\001\n\rHoloPokemonId\022!\n\035HOLO_POKEMON_ID_POK" +
-      "EMON_UNSET\020\000\022+\n\'HOLO_POKEMON_ID_V0001_PO" +
-      "KEMON_BULBASAUR\020\001\022)\n%HOLO_POKEMON_ID_V00" +
-      "02_POKEMON_IVYSAUR\020\002\022*\n&HOLO_POKEMON_ID_" +
-      "V0003_POKEMON_VENUSAUR\020\003\022,\n(HOLO_POKEMON" +
-      "_ID_V0004_POKEMON_CHARMANDER\020\004\022,\n(HOLO_P" +
-      "OKEMON_ID_V0005_POKEMON_CHARMELEON\020\005\022+\n\'" +
-      "HOLO_POKEMON_ID_V0006_POKEMON_CHARIZARD\020" +
-      "\006\022*\n&HOLO_POKEMON_ID_V0007_POKEMON_SQUIR" +
-      "TLE\020\007\022+\n\'HOLO_POKEMON_ID_V0008_POKEMON_W" +
-      "ARTORTLE\020\010\022+\n\'HOLO_POKEMON_ID_V0009_POKE" +
-      "MON_BLASTOISE\020\t\022*\n&HOLO_POKEMON_ID_V0010" +
-      "_POKEMON_CATERPIE\020\n\022)\n%HOLO_POKEMON_ID_V" +
-      "0011_POKEMON_METAPOD\020\013\022,\n(HOLO_POKEMON_I" +
-      "D_V0012_POKEMON_BUTTERFREE\020\014\022(\n$HOLO_POK" +
-      "EMON_ID_V0013_POKEMON_WEEDLE\020\r\022(\n$HOLO_P" +
-      "OKEMON_ID_V0014_POKEMON_KAKUNA\020\016\022*\n&HOLO" +
-      "_POKEMON_ID_V0015_POKEMON_BEEDRILL\020\017\022(\n$" +
-      "HOLO_POKEMON_ID_V0016_POKEMON_PIDGEY\020\020\022+" +
-      "\n\'HOLO_POKEMON_ID_V0017_POKEMON_PIDGEOTT" +
-      "O\020\021\022)\n%HOLO_POKEMON_ID_V0018_POKEMON_PID" +
-      "GEOT\020\022\022)\n%HOLO_POKEMON_ID_V0019_POKEMON_" +
-      "RATTATA\020\023\022*\n&HOLO_POKEMON_ID_V0020_POKEM" +
-      "ON_RATICATE\020\024\022)\n%HOLO_POKEMON_ID_V0021_P" +
-      "OKEMON_SPEAROW\020\025\022(\n$HOLO_POKEMON_ID_V002" +
-      "2_POKEMON_FEAROW\020\026\022\'\n#HOLO_POKEMON_ID_V0" +
-      "023_POKEMON_EKANS\020\027\022\'\n#HOLO_POKEMON_ID_V" +
-      "0024_POKEMON_ARBOK\020\030\022)\n%HOLO_POKEMON_ID_" +
-      "V0025_POKEMON_PIKACHU\020\031\022(\n$HOLO_POKEMON_" +
-      "ID_V0026_POKEMON_RAICHU\020\032\022+\n\'HOLO_POKEMO" +
-      "N_ID_V0027_POKEMON_SANDSHREW\020\033\022+\n\'HOLO_P" +
-      "OKEMON_ID_V0028_POKEMON_SANDSLASH\020\034\022)\n%H" +
-      "OLO_POKEMON_ID_V0029_POKEMON_NIDORAN\020\035\022*" +
-      "\n&HOLO_POKEMON_ID_V0030_POKEMON_NIDORINA" +
-      "\020\036\022+\n\'HOLO_POKEMON_ID_V0031_POKEMON_NIDO" +
-      "QUEEN\020\037\022)\n%HOLO_POKEMON_ID_V0032_POKEMON" +
-      "_NIDORAN\020 \022*\n&HOLO_POKEMON_ID_V0033_POKE" +
-      "MON_NIDORINO\020!\022*\n&HOLO_POKEMON_ID_V0034_" +
-      "POKEMON_NIDOKING\020\"\022*\n&HOLO_POKEMON_ID_V0" +
-      "035_POKEMON_CLEFAIRY\020#\022*\n&HOLO_POKEMON_I" +
-      "D_V0036_POKEMON_CLEFABLE\020$\022(\n$HOLO_POKEM" +
-      "ON_ID_V0037_POKEMON_VULPIX\020%\022+\n\'HOLO_POK" +
-      "EMON_ID_V0038_POKEMON_NINETALES\020&\022,\n(HOL" +
-      "O_POKEMON_ID_V0039_POKEMON_JIGGLYPUFF\020\'\022" +
-      ",\n(HOLO_POKEMON_ID_V0040_POKEMON_WIGGLYT" +
-      "UFF\020(\022\'\n#HOLO_POKEMON_ID_V0041_POKEMON_Z" +
-      "UBAT\020)\022(\n$HOLO_POKEMON_ID_V0042_POKEMON_" +
-      "GOLBAT\020*\022(\n$HOLO_POKEMON_ID_V0043_POKEMO" +
-      "N_ODDISH\020+\022\'\n#HOLO_POKEMON_ID_V0044_POKE" +
-      "MON_GLOOM\020,\022+\n\'HOLO_POKEMON_ID_V0045_POK" +
-      "EMON_VILEPLUME\020-\022\'\n#HOLO_POKEMON_ID_V004" +
-      "6_POKEMON_PARAS\020.\022*\n&HOLO_POKEMON_ID_V00" +
-      "47_POKEMON_PARASECT\020/\022)\n%HOLO_POKEMON_ID" +
-      "_V0048_POKEMON_VENONAT\0200\022*\n&HOLO_POKEMON" +
-      "_ID_V0049_POKEMON_VENOMOTH\0201\022)\n%HOLO_POK" +
-      "EMON_ID_V0050_POKEMON_DIGLETT\0202\022)\n%HOLO_" +
-      "POKEMON_ID_V0051_POKEMON_DUGTRIO\0203\022(\n$HO" +
-      "LO_POKEMON_ID_V0052_POKEMON_MEOWTH\0204\022)\n%" +
-      "HOLO_POKEMON_ID_V0053_POKEMON_PERSIAN\0205\022" +
-      ")\n%HOLO_POKEMON_ID_V0054_POKEMON_PSYDUCK" +
-      "\0206\022)\n%HOLO_POKEMON_ID_V0055_POKEMON_GOLD" +
-      "UCK\0207\022(\n$HOLO_POKEMON_ID_V0056_POKEMON_M" +
-      "ANKEY\0208\022*\n&HOLO_POKEMON_ID_V0057_POKEMON" +
-      "_PRIMEAPE\0209\022+\n\'HOLO_POKEMON_ID_V0058_POK" +
-      "EMON_GROWLITHE\020:\022*\n&HOLO_POKEMON_ID_V005" +
-      "9_POKEMON_ARCANINE\020;\022)\n%HOLO_POKEMON_ID_" +
-      "V0060_POKEMON_POLIWAG\020<\022+\n\'HOLO_POKEMON_" +
-      "ID_V0061_POKEMON_POLIWHIRL\020=\022+\n\'HOLO_POK" +
-      "EMON_ID_V0062_POKEMON_POLIWRATH\020>\022&\n\"HOL" +
-      "O_POKEMON_ID_V0063_POKEMON_ABRA\020?\022)\n%HOL" +
-      "O_POKEMON_ID_V0064_POKEMON_KADABRA\020@\022*\n&" +
-      "HOLO_POKEMON_ID_V0065_POKEMON_ALAKAZAM\020A" +
-      "\022(\n$HOLO_POKEMON_ID_V0066_POKEMON_MACHOP" +
-      "\020B\022)\n%HOLO_POKEMON_ID_V0067_POKEMON_MACH" +
-      "OKE\020C\022)\n%HOLO_POKEMON_ID_V0068_POKEMON_M" +
-      "ACHAMP\020D\022,\n(HOLO_POKEMON_ID_V0069_POKEMO" +
-      "N_BELLSPROUT\020E\022,\n(HOLO_POKEMON_ID_V0070_" +
-      "POKEMON_WEEPINBELL\020F\022,\n(HOLO_POKEMON_ID_" +
-      "V0071_POKEMON_VICTREEBEL\020G\022+\n\'HOLO_POKEM" +
-      "ON_ID_V0072_POKEMON_TENTACOOL\020H\022,\n(HOLO_" +
-      "POKEMON_ID_V0073_POKEMON_TENTACRUEL\020I\022)\n" +
-      "%HOLO_POKEMON_ID_V0074_POKEMON_GEODUDE\020J" +
-      "\022*\n&HOLO_POKEMON_ID_V0075_POKEMON_GRAVEL" +
-      "ER\020K\022\'\n#HOLO_POKEMON_ID_V0076_POKEMON_GO" +
-      "LEM\020L\022(\n$HOLO_POKEMON_ID_V0077_POKEMON_P" +
-      "ONYTA\020M\022*\n&HOLO_POKEMON_ID_V0078_POKEMON" +
-      "_RAPIDASH\020N\022*\n&HOLO_POKEMON_ID_V0079_POK" +
-      "EMON_SLOWPOKE\020O\022)\n%HOLO_POKEMON_ID_V0080" +
-      "_POKEMON_SLOWBRO\020P\022+\n\'HOLO_POKEMON_ID_V0" +
-      "081_POKEMON_MAGNEMITE\020Q\022*\n&HOLO_POKEMON_" +
-      "ID_V0082_POKEMON_MAGNETON\020R\022+\n\'HOLO_POKE" +
-      "MON_ID_V0083_POKEMON_FARFETCHD\020S\022\'\n#HOLO" +
-      "_POKEMON_ID_V0084_POKEMON_DODUO\020T\022(\n$HOL" +
-      "O_POKEMON_ID_V0085_POKEMON_DODRIO\020U\022&\n\"H" +
-      "OLO_POKEMON_ID_V0086_POKEMON_SEEL\020V\022)\n%H" +
-      "OLO_POKEMON_ID_V0087_POKEMON_DEWGONG\020W\022(" +
-      "\n$HOLO_POKEMON_ID_V0088_POKEMON_GRIMER\020X" +
-      "\022%\n!HOLO_POKEMON_ID_V0089_POKEMON_MUK\020Y\022" +
-      "*\n&HOLO_POKEMON_ID_V0090_POKEMON_SHELLDE" +
-      "R\020Z\022*\n&HOLO_POKEMON_ID_V0091_POKEMON_CLO" +
-      "YSTER\020[\022(\n$HOLO_POKEMON_ID_V0092_POKEMON" +
-      "_GASTLY\020\\\022)\n%HOLO_POKEMON_ID_V0093_POKEM" +
-      "ON_HAUNTER\020]\022(\n$HOLO_POKEMON_ID_V0094_PO" +
-      "KEMON_GENGAR\020^\022&\n\"HOLO_POKEMON_ID_V0095_" +
-      "POKEMON_ONIX\020_\022)\n%HOLO_POKEMON_ID_V0096_" +
-      "POKEMON_DROWZEE\020`\022\'\n#HOLO_POKEMON_ID_V00" +
-      "97_POKEMON_HYPNO\020a\022(\n$HOLO_POKEMON_ID_V0" +
-      "098_POKEMON_KRABBY\020b\022)\n%HOLO_POKEMON_ID_" +
-      "V0099_POKEMON_KINGLER\020c\022)\n%HOLO_POKEMON_" +
-      "ID_V0100_POKEMON_VOLTORB\020d\022+\n\'HOLO_POKEM" +
-      "ON_ID_V0101_POKEMON_ELECTRODE\020e\022+\n\'HOLO_" +
-      "POKEMON_ID_V0102_POKEMON_EXEGGCUTE\020f\022+\n\'" +
-      "HOLO_POKEMON_ID_V0103_POKEMON_EXEGGUTOR\020" +
-      "g\022(\n$HOLO_POKEMON_ID_V0104_POKEMON_CUBON" +
-      "E\020h\022)\n%HOLO_POKEMON_ID_V0105_POKEMON_MAR" +
-      "OWAK\020i\022+\n\'HOLO_POKEMON_ID_V0106_POKEMON_" +
-      "HITMONLEE\020j\022,\n(HOLO_POKEMON_ID_V0107_POK" +
-      "EMON_HITMONCHAN\020k\022+\n\'HOLO_POKEMON_ID_V01" +
-      "08_POKEMON_LICKITUNG\020l\022)\n%HOLO_POKEMON_I" +
-      "D_V0109_POKEMON_KOFFING\020m\022)\n%HOLO_POKEMO" +
-      "N_ID_V0110_POKEMON_WEEZING\020n\022)\n%HOLO_POK" +
-      "EMON_ID_V0111_POKEMON_RHYHORN\020o\022(\n$HOLO_" +
-      "POKEMON_ID_V0112_POKEMON_RHYDON\020p\022)\n%HOL" +
-      "O_POKEMON_ID_V0113_POKEMON_CHANSEY\020q\022)\n%" +
-      "HOLO_POKEMON_ID_V0114_POKEMON_TANGELA\020r\022" +
-      ",\n(HOLO_POKEMON_ID_V0115_POKEMON_KANGASK" +
-      "HAN\020s\022(\n$HOLO_POKEMON_ID_V0116_POKEMON_H" +
-      "ORSEA\020t\022(\n$HOLO_POKEMON_ID_V0117_POKEMON" +
-      "_SEADRA\020u\022)\n%HOLO_POKEMON_ID_V0118_POKEM" +
-      "ON_GOLDEEN\020v\022)\n%HOLO_POKEMON_ID_V0119_PO" +
-      "KEMON_SEAKING\020w\022(\n$HOLO_POKEMON_ID_V0120" +
-      "_POKEMON_STARYU\020x\022)\n%HOLO_POKEMON_ID_V01" +
-      "21_POKEMON_STARMIE\020y\022)\n%HOLO_POKEMON_ID_" +
-      "V0122_POKEMON_MR_MIME\020z\022)\n%HOLO_POKEMON_" +
-      "ID_V0123_POKEMON_SCYTHER\020{\022&\n\"HOLO_POKEM" +
-      "ON_ID_V0124_POKEMON_JYNX\020|\022,\n(HOLO_POKEM" +
-      "ON_ID_V0125_POKEMON_ELECTABUZZ\020}\022(\n$HOLO" +
-      "_POKEMON_ID_V0126_POKEMON_MAGMAR\020~\022(\n$HO" +
-      "LO_POKEMON_ID_V0127_POKEMON_PINSIR\020\177\022)\n$" +
-      "HOLO_POKEMON_ID_V0128_POKEMON_TAUROS\020\200\001\022" +
-      "+\n&HOLO_POKEMON_ID_V0129_POKEMON_MAGIKAR" +
-      "P\020\201\001\022+\n&HOLO_POKEMON_ID_V0130_POKEMON_GY" +
-      "ARADOS\020\202\001\022)\n$HOLO_POKEMON_ID_V0131_POKEM" +
-      "ON_LAPRAS\020\203\001\022(\n#HOLO_POKEMON_ID_V0132_PO" +
-      "KEMON_DITTO\020\204\001\022(\n#HOLO_POKEMON_ID_V0133_" +
-      "POKEMON_EEVEE\020\205\001\022+\n&HOLO_POKEMON_ID_V013" +
-      "4_POKEMON_VAPOREON\020\206\001\022*\n%HOLO_POKEMON_ID" +
-      "_V0135_POKEMON_JOLTEON\020\207\001\022*\n%HOLO_POKEMO" +
-      "N_ID_V0136_POKEMON_FLAREON\020\210\001\022*\n%HOLO_PO" +
-      "KEMON_ID_V0137_POKEMON_PORYGON\020\211\001\022*\n%HOL" +
-      "O_POKEMON_ID_V0138_POKEMON_OMANYTE\020\212\001\022*\n" +
-      "%HOLO_POKEMON_ID_V0139_POKEMON_OMASTAR\020\213" +
-      "\001\022)\n$HOLO_POKEMON_ID_V0140_POKEMON_KABUT" +
-      "O\020\214\001\022+\n&HOLO_POKEMON_ID_V0141_POKEMON_KA" +
-      "BUTOPS\020\215\001\022-\n(HOLO_POKEMON_ID_V0142_POKEM" +
-      "ON_AERODACTYL\020\216\001\022*\n%HOLO_POKEMON_ID_V014" +
-      "3_POKEMON_SNORLAX\020\217\001\022+\n&HOLO_POKEMON_ID_" +
-      "V0144_POKEMON_ARTICUNO\020\220\001\022)\n$HOLO_POKEMO" +
-      "N_ID_V0145_POKEMON_ZAPDOS\020\221\001\022*\n%HOLO_POK" +
-      "EMON_ID_V0146_POKEMON_MOLTRES\020\222\001\022*\n%HOLO" +
-      "_POKEMON_ID_V0147_POKEMON_DRATINI\020\223\001\022,\n\'" +
-      "HOLO_POKEMON_ID_V0148_POKEMON_DRAGONAIR\020" +
-      "\224\001\022,\n\'HOLO_POKEMON_ID_V0149_POKEMON_DRAG" +
-      "ONITE\020\225\001\022)\n$HOLO_POKEMON_ID_V0150_POKEMO" +
-      "N_MEWTWO\020\226\001\022&\n!HOLO_POKEMON_ID_V0151_POK" +
-      "EMON_MEW\020\227\001\022,\n\'HOLO_POKEMON_ID_V0152_POK" +
-      "EMON_CHIKORITA\020\230\001\022*\n%HOLO_POKEMON_ID_V01" +
-      "53_POKEMON_BAYLEEF\020\231\001\022+\n&HOLO_POKEMON_ID" +
-      "_V0154_POKEMON_MEGANIUM\020\232\001\022,\n\'HOLO_POKEM" +
-      "ON_ID_V0155_POKEMON_CYNDAQUIL\020\233\001\022*\n%HOLO" +
-      "_POKEMON_ID_V0156_POKEMON_QUILAVA\020\234\001\022-\n(" +
-      "HOLO_POKEMON_ID_V0157_POKEMON_TYPHLOSION" +
-      "\020\235\001\022+\n&HOLO_POKEMON_ID_V0158_POKEMON_TOT" +
-      "ODILE\020\236\001\022+\n&HOLO_POKEMON_ID_V0159_POKEMO" +
-      "N_CROCONAW\020\237\001\022-\n(HOLO_POKEMON_ID_V0160_P" +
-      "OKEMON_FERALIGATR\020\240\001\022*\n%HOLO_POKEMON_ID_" +
-      "V0161_POKEMON_SENTRET\020\241\001\022)\n$HOLO_POKEMON" +
-      "_ID_V0162_POKEMON_FURRET\020\242\001\022+\n&HOLO_POKE" +
-      "MON_ID_V0163_POKEMON_HOOTHOOT\020\243\001\022*\n%HOLO" +
-      "_POKEMON_ID_V0164_POKEMON_NOCTOWL\020\244\001\022)\n$" +
-      "HOLO_POKEMON_ID_V0165_POKEMON_LEDYBA\020\245\001\022" +
-      ")\n$HOLO_POKEMON_ID_V0166_POKEMON_LEDIAN\020" +
-      "\246\001\022+\n&HOLO_POKEMON_ID_V0167_POKEMON_SPIN" +
-      "ARAK\020\247\001\022*\n%HOLO_POKEMON_ID_V0168_POKEMON" +
-      "_ARIADOS\020\250\001\022)\n$HOLO_POKEMON_ID_V0169_POK" +
-      "EMON_CROBAT\020\251\001\022+\n&HOLO_POKEMON_ID_V0170_" +
-      "POKEMON_CHINCHOU\020\252\001\022*\n%HOLO_POKEMON_ID_V" +
-      "0171_POKEMON_LANTURN\020\253\001\022(\n#HOLO_POKEMON_" +
-      "ID_V0172_POKEMON_PICHU\020\254\001\022)\n$HOLO_POKEMO" +
-      "N_ID_V0173_POKEMON_CLEFFA\020\255\001\022,\n\'HOLO_POK" +
-      "EMON_ID_V0174_POKEMON_IGGLYBUFF\020\256\001\022)\n$HO" +
-      "LO_POKEMON_ID_V0175_POKEMON_TOGEPI\020\257\001\022*\n" +
-      "%HOLO_POKEMON_ID_V0176_POKEMON_TOGETIC\020\260" +
-      "\001\022\'\n\"HOLO_POKEMON_ID_V0177_POKEMON_NATU\020" +
-      "\261\001\022\'\n\"HOLO_POKEMON_ID_V0178_POKEMON_XATU" +
-      "\020\262\001\022)\n$HOLO_POKEMON_ID_V0179_POKEMON_MAR" +
-      "EEP\020\263\001\022*\n%HOLO_POKEMON_ID_V0180_POKEMON_" +
-      "FLAAFFY\020\264\001\022+\n&HOLO_POKEMON_ID_V0181_POKE" +
-      "MON_AMPHAROS\020\265\001\022,\n\'HOLO_POKEMON_ID_V0182" +
-      "_POKEMON_BELLOSSOM\020\266\001\022)\n$HOLO_POKEMON_ID" +
-      "_V0183_POKEMON_MARILL\020\267\001\022,\n\'HOLO_POKEMON" +
-      "_ID_V0184_POKEMON_AZUMARILL\020\270\001\022,\n\'HOLO_P" +
-      "OKEMON_ID_V0185_POKEMON_SUDOWOODO\020\271\001\022+\n&" +
-      "HOLO_POKEMON_ID_V0186_POKEMON_POLITOED\020\272" +
-      "\001\022)\n$HOLO_POKEMON_ID_V0187_POKEMON_HOPPI" +
-      "P\020\273\001\022+\n&HOLO_POKEMON_ID_V0188_POKEMON_SK" +
-      "IPLOOM\020\274\001\022+\n&HOLO_POKEMON_ID_V0189_POKEM" +
-      "ON_JUMPLUFF\020\275\001\022(\n#HOLO_POKEMON_ID_V0190_" +
-      "POKEMON_AIPOM\020\276\001\022*\n%HOLO_POKEMON_ID_V019" +
-      "1_POKEMON_SUNKERN\020\277\001\022+\n&HOLO_POKEMON_ID_" +
-      "V0192_POKEMON_SUNFLORA\020\300\001\022(\n#HOLO_POKEMO" +
-      "N_ID_V0193_POKEMON_YANMA\020\301\001\022)\n$HOLO_POKE" +
-      "MON_ID_V0194_POKEMON_WOOPER\020\302\001\022+\n&HOLO_P" +
-      "OKEMON_ID_V0195_POKEMON_QUAGSIRE\020\303\001\022)\n$H" +
-      "OLO_POKEMON_ID_V0196_POKEMON_ESPEON\020\304\001\022*" +
-      "\n%HOLO_POKEMON_ID_V0197_POKEMON_UMBREON\020" +
-      "\305\001\022*\n%HOLO_POKEMON_ID_V0198_POKEMON_MURK" +
-      "ROW\020\306\001\022+\n&HOLO_POKEMON_ID_V0199_POKEMON_" +
-      "SLOWKING\020\307\001\022-\n(HOLO_POKEMON_ID_V0200_POK" +
-      "EMON_MISDREAVUS\020\310\001\022(\n#HOLO_POKEMON_ID_V0" +
-      "201_POKEMON_UNOWN\020\311\001\022,\n\'HOLO_POKEMON_ID_" +
-      "V0202_POKEMON_WOBBUFFET\020\312\001\022,\n\'HOLO_POKEM" +
-      "ON_ID_V0203_POKEMON_GIRAFARIG\020\313\001\022)\n$HOLO" +
-      "_POKEMON_ID_V0204_POKEMON_PINECO\020\314\001\022-\n(H" +
-      "OLO_POKEMON_ID_V0205_POKEMON_FORRETRESS\020" +
-      "\315\001\022,\n\'HOLO_POKEMON_ID_V0206_POKEMON_DUNS" +
-      "PARCE\020\316\001\022)\n$HOLO_POKEMON_ID_V0207_POKEMO" +
-      "N_GLIGAR\020\317\001\022*\n%HOLO_POKEMON_ID_V0208_POK" +
-      "EMON_STEELIX\020\320\001\022+\n&HOLO_POKEMON_ID_V0209" +
-      "_POKEMON_SNUBBULL\020\321\001\022+\n&HOLO_POKEMON_ID_" +
-      "V0210_POKEMON_GRANBULL\020\322\001\022+\n&HOLO_POKEMO" +
-      "N_ID_V0211_POKEMON_QWILFISH\020\323\001\022)\n$HOLO_P" +
-      "OKEMON_ID_V0212_POKEMON_SCIZOR\020\324\001\022*\n%HOL" +
-      "O_POKEMON_ID_V0213_POKEMON_SHUCKLE\020\325\001\022,\n" +
-      "\'HOLO_POKEMON_ID_V0214_POKEMON_HERACROSS" +
-      "\020\326\001\022*\n%HOLO_POKEMON_ID_V0215_POKEMON_SNE" +
-      "ASEL\020\327\001\022,\n\'HOLO_POKEMON_ID_V0216_POKEMON" +
-      "_TEDDIURSA\020\330\001\022+\n&HOLO_POKEMON_ID_V0217_P" +
-      "OKEMON_URSARING\020\331\001\022)\n$HOLO_POKEMON_ID_V0" +
-      "218_POKEMON_SLUGMA\020\332\001\022+\n&HOLO_POKEMON_ID" +
-      "_V0219_POKEMON_MAGCARGO\020\333\001\022)\n$HOLO_POKEM" +
-      "ON_ID_V0220_POKEMON_SWINUB\020\334\001\022,\n\'HOLO_PO" +
-      "KEMON_ID_V0221_POKEMON_PILOSWINE\020\335\001\022*\n%H" +
-      "OLO_POKEMON_ID_V0222_POKEMON_CORSOLA\020\336\001\022" +
-      "+\n&HOLO_POKEMON_ID_V0223_POKEMON_REMORAI" +
-      "D\020\337\001\022,\n\'HOLO_POKEMON_ID_V0224_POKEMON_OC" +
-      "TILLERY\020\340\001\022+\n&HOLO_POKEMON_ID_V0225_POKE" +
-      "MON_DELIBIRD\020\341\001\022*\n%HOLO_POKEMON_ID_V0226" +
-      "_POKEMON_MANTINE\020\342\001\022+\n&HOLO_POKEMON_ID_V" +
-      "0227_POKEMON_SKARMORY\020\343\001\022+\n&HOLO_POKEMON" +
-      "_ID_V0228_POKEMON_HOUNDOUR\020\344\001\022+\n&HOLO_PO" +
-      "KEMON_ID_V0229_POKEMON_HOUNDOOM\020\345\001\022*\n%HO",
-      "LO_POKEMON_ID_V0230_POKEMON_KINGDRA\020\346\001\022)" +
-      "\n$HOLO_POKEMON_ID_V0231_POKEMON_PHANPY\020\347" +
-      "\001\022*\n%HOLO_POKEMON_ID_V0232_POKEMON_DONPH" +
-      "AN\020\350\001\022+\n&HOLO_POKEMON_ID_V0233_POKEMON_P" +
-      "ORYGON2\020\351\001\022+\n&HOLO_POKEMON_ID_V0234_POKE" +
-      "MON_STANTLER\020\352\001\022+\n&HOLO_POKEMON_ID_V0235" +
-      "_POKEMON_SMEARGLE\020\353\001\022*\n%HOLO_POKEMON_ID_" +
-      "V0236_POKEMON_TYROGUE\020\354\001\022,\n\'HOLO_POKEMON" +
-      "_ID_V0237_POKEMON_HITMONTOP\020\355\001\022+\n&HOLO_P" +
-      "OKEMON_ID_V0238_POKEMON_SMOOCHUM\020\356\001\022)\n$H" +
-      "OLO_POKEMON_ID_V0239_POKEMON_ELEKID\020\357\001\022(" +
-      "\n#HOLO_POKEMON_ID_V0240_POKEMON_MAGBY\020\360\001" +
-      "\022*\n%HOLO_POKEMON_ID_V0241_POKEMON_MILTAN" +
-      "K\020\361\001\022*\n%HOLO_POKEMON_ID_V0242_POKEMON_BL" +
-      "ISSEY\020\362\001\022)\n$HOLO_POKEMON_ID_V0243_POKEMO" +
-      "N_RAIKOU\020\363\001\022(\n#HOLO_POKEMON_ID_V0244_POK" +
-      "EMON_ENTEI\020\364\001\022*\n%HOLO_POKEMON_ID_V0245_P" +
-      "OKEMON_SUICUNE\020\365\001\022+\n&HOLO_POKEMON_ID_V02" +
-      "46_POKEMON_LARVITAR\020\366\001\022*\n%HOLO_POKEMON_I" +
-      "D_V0247_POKEMON_PUPITAR\020\367\001\022,\n\'HOLO_POKEM" +
-      "ON_ID_V0248_POKEMON_TYRANITAR\020\370\001\022(\n#HOLO" +
-      "_POKEMON_ID_V0249_POKEMON_LUGIA\020\371\001\022(\n#HO" +
-      "LO_POKEMON_ID_V0250_POKEMON_HO_OH\020\372\001\022)\n$" +
-      "HOLO_POKEMON_ID_V0251_POKEMON_CELEBI\020\373\001\022" +
-      "*\n%HOLO_POKEMON_ID_V0252_POKEMON_TREECKO" +
-      "\020\374\001\022*\n%HOLO_POKEMON_ID_V0253_POKEMON_GRO" +
-      "VYLE\020\375\001\022+\n&HOLO_POKEMON_ID_V0254_POKEMON" +
-      "_SCEPTILE\020\376\001\022*\n%HOLO_POKEMON_ID_V0255_PO" +
-      "KEMON_TORCHIC\020\377\001\022,\n\'HOLO_POKEMON_ID_V025" +
-      "6_POKEMON_COMBUSKEN\020\200\002\022+\n&HOLO_POKEMON_I" +
-      "D_V0257_POKEMON_BLAZIKEN\020\201\002\022)\n$HOLO_POKE" +
-      "MON_ID_V0258_POKEMON_MUDKIP\020\202\002\022,\n\'HOLO_P" +
-      "OKEMON_ID_V0259_POKEMON_MARSHTOMP\020\203\002\022+\n&" +
-      "HOLO_POKEMON_ID_V0260_POKEMON_SWAMPERT\020\204" +
-      "\002\022,\n\'HOLO_POKEMON_ID_V0261_POKEMON_POOCH" +
-      "YENA\020\205\002\022,\n\'HOLO_POKEMON_ID_V0262_POKEMON" +
-      "_MIGHTYENA\020\206\002\022,\n\'HOLO_POKEMON_ID_V0263_P" +
-      "OKEMON_ZIGZAGOON\020\207\002\022*\n%HOLO_POKEMON_ID_V" +
-      "0264_POKEMON_LINOONE\020\210\002\022*\n%HOLO_POKEMON_" +
-      "ID_V0265_POKEMON_WURMPLE\020\211\002\022*\n%HOLO_POKE" +
-      "MON_ID_V0266_POKEMON_SILCOON\020\212\002\022,\n\'HOLO_" +
-      "POKEMON_ID_V0267_POKEMON_BEAUTIFLY\020\213\002\022*\n" +
-      "%HOLO_POKEMON_ID_V0268_POKEMON_CASCOON\020\214" +
-      "\002\022)\n$HOLO_POKEMON_ID_V0269_POKEMON_DUSTO" +
-      "X\020\215\002\022(\n#HOLO_POKEMON_ID_V0270_POKEMON_LO" +
-      "TAD\020\216\002\022)\n$HOLO_POKEMON_ID_V0271_POKEMON_" +
-      "LOMBRE\020\217\002\022+\n&HOLO_POKEMON_ID_V0272_POKEM" +
-      "ON_LUDICOLO\020\220\002\022)\n$HOLO_POKEMON_ID_V0273_" +
-      "POKEMON_SEEDOT\020\221\002\022*\n%HOLO_POKEMON_ID_V02" +
-      "74_POKEMON_NUZLEAF\020\222\002\022*\n%HOLO_POKEMON_ID" +
-      "_V0275_POKEMON_SHIFTRY\020\223\002\022*\n%HOLO_POKEMO" +
-      "N_ID_V0276_POKEMON_TAILLOW\020\224\002\022*\n%HOLO_PO" +
-      "KEMON_ID_V0277_POKEMON_SWELLOW\020\225\002\022*\n%HOL" +
-      "O_POKEMON_ID_V0278_POKEMON_WINGULL\020\226\002\022+\n" +
-      "&HOLO_POKEMON_ID_V0279_POKEMON_PELIPPER\020" +
-      "\227\002\022(\n#HOLO_POKEMON_ID_V0280_POKEMON_RALT" +
-      "S\020\230\002\022)\n$HOLO_POKEMON_ID_V0281_POKEMON_KI" +
-      "RLIA\020\231\002\022,\n\'HOLO_POKEMON_ID_V0282_POKEMON" +
-      "_GARDEVOIR\020\232\002\022*\n%HOLO_POKEMON_ID_V0283_P" +
-      "OKEMON_SURSKIT\020\233\002\022-\n(HOLO_POKEMON_ID_V02" +
-      "84_POKEMON_MASQUERAIN\020\234\002\022,\n\'HOLO_POKEMON" +
-      "_ID_V0285_POKEMON_SHROOMISH\020\235\002\022*\n%HOLO_P" +
-      "OKEMON_ID_V0286_POKEMON_BRELOOM\020\236\002\022*\n%HO" +
-      "LO_POKEMON_ID_V0287_POKEMON_SLAKOTH\020\237\002\022+" +
-      "\n&HOLO_POKEMON_ID_V0288_POKEMON_VIGOROTH" +
-      "\020\240\002\022*\n%HOLO_POKEMON_ID_V0289_POKEMON_SLA" +
-      "KING\020\241\002\022*\n%HOLO_POKEMON_ID_V0290_POKEMON" +
-      "_NINCADA\020\242\002\022*\n%HOLO_POKEMON_ID_V0291_POK" +
-      "EMON_NINJASK\020\243\002\022+\n&HOLO_POKEMON_ID_V0292" +
-      "_POKEMON_SHEDINJA\020\244\002\022*\n%HOLO_POKEMON_ID_" +
-      "V0293_POKEMON_WHISMUR\020\245\002\022*\n%HOLO_POKEMON" +
-      "_ID_V0294_POKEMON_LOUDRED\020\246\002\022*\n%HOLO_POK" +
-      "EMON_ID_V0295_POKEMON_EXPLOUD\020\247\002\022+\n&HOLO" +
-      "_POKEMON_ID_V0296_POKEMON_MAKUHITA\020\250\002\022+\n" +
-      "&HOLO_POKEMON_ID_V0297_POKEMON_HARIYAMA\020" +
-      "\251\002\022*\n%HOLO_POKEMON_ID_V0298_POKEMON_AZUR" +
-      "ILL\020\252\002\022+\n&HOLO_POKEMON_ID_V0299_POKEMON_" +
-      "NOSEPASS\020\253\002\022)\n$HOLO_POKEMON_ID_V0300_POK" +
-      "EMON_SKITTY\020\254\002\022+\n&HOLO_POKEMON_ID_V0301_" +
-      "POKEMON_DELCATTY\020\255\002\022*\n%HOLO_POKEMON_ID_V" +
-      "0302_POKEMON_SABLEYE\020\256\002\022)\n$HOLO_POKEMON_" +
-      "ID_V0303_POKEMON_MAWILE\020\257\002\022\'\n\"HOLO_POKEM" +
-      "ON_ID_V0304_POKEMON_ARON\020\260\002\022)\n$HOLO_POKE" +
-      "MON_ID_V0305_POKEMON_LAIRON\020\261\002\022)\n$HOLO_P" +
-      "OKEMON_ID_V0306_POKEMON_AGGRON\020\262\002\022+\n&HOL" +
-      "O_POKEMON_ID_V0307_POKEMON_MEDITITE\020\263\002\022+" +
-      "\n&HOLO_POKEMON_ID_V0308_POKEMON_MEDICHAM" +
-      "\020\264\002\022,\n\'HOLO_POKEMON_ID_V0309_POKEMON_ELE" +
-      "CTRIKE\020\265\002\022,\n\'HOLO_POKEMON_ID_V0310_POKEM" +
-      "ON_MANECTRIC\020\266\002\022)\n$HOLO_POKEMON_ID_V0311" +
-      "_POKEMON_PLUSLE\020\267\002\022(\n#HOLO_POKEMON_ID_V0" +
-      "312_POKEMON_MINUN\020\270\002\022*\n%HOLO_POKEMON_ID_" +
-      "V0313_POKEMON_VOLBEAT\020\271\002\022+\n&HOLO_POKEMON" +
-      "_ID_V0314_POKEMON_ILLUMISE\020\272\002\022*\n%HOLO_PO" +
-      "KEMON_ID_V0315_POKEMON_ROSELIA\020\273\002\022)\n$HOL" +
-      "O_POKEMON_ID_V0316_POKEMON_GULPIN\020\274\002\022)\n$" +
-      "HOLO_POKEMON_ID_V0317_POKEMON_SWALOT\020\275\002\022" +
-      "+\n&HOLO_POKEMON_ID_V0318_POKEMON_CARVANH" +
-      "A\020\276\002\022+\n&HOLO_POKEMON_ID_V0319_POKEMON_SH" +
-      "ARPEDO\020\277\002\022*\n%HOLO_POKEMON_ID_V0320_POKEM" +
-      "ON_WAILMER\020\300\002\022*\n%HOLO_POKEMON_ID_V0321_P" +
-      "OKEMON_WAILORD\020\301\002\022(\n#HOLO_POKEMON_ID_V03" +
-      "22_POKEMON_NUMEL\020\302\002\022+\n&HOLO_POKEMON_ID_V" +
-      "0323_POKEMON_CAMERUPT\020\303\002\022*\n%HOLO_POKEMON" +
-      "_ID_V0324_POKEMON_TORKOAL\020\304\002\022)\n$HOLO_POK" +
-      "EMON_ID_V0325_POKEMON_SPOINK\020\305\002\022*\n%HOLO_" +
-      "POKEMON_ID_V0326_POKEMON_GRUMPIG\020\306\002\022)\n$H" +
-      "OLO_POKEMON_ID_V0327_POKEMON_SPINDA\020\307\002\022+" +
-      "\n&HOLO_POKEMON_ID_V0328_POKEMON_TRAPINCH" +
-      "\020\310\002\022*\n%HOLO_POKEMON_ID_V0329_POKEMON_VIB" +
-      "RAVA\020\311\002\022)\n$HOLO_POKEMON_ID_V0330_POKEMON" +
-      "_FLYGON\020\312\002\022)\n$HOLO_POKEMON_ID_V0331_POKE" +
-      "MON_CACNEA\020\313\002\022+\n&HOLO_POKEMON_ID_V0332_P" +
-      "OKEMON_CACTURNE\020\314\002\022)\n$HOLO_POKEMON_ID_V0" +
-      "333_POKEMON_SWABLU\020\315\002\022*\n%HOLO_POKEMON_ID" +
-      "_V0334_POKEMON_ALTARIA\020\316\002\022+\n&HOLO_POKEMO" +
-      "N_ID_V0335_POKEMON_ZANGOOSE\020\317\002\022*\n%HOLO_P" +
-      "OKEMON_ID_V0336_POKEMON_SEVIPER\020\320\002\022+\n&HO" +
-      "LO_POKEMON_ID_V0337_POKEMON_LUNATONE\020\321\002\022" +
-      "*\n%HOLO_POKEMON_ID_V0338_POKEMON_SOLROCK" +
-      "\020\322\002\022+\n&HOLO_POKEMON_ID_V0339_POKEMON_BAR" +
-      "BOACH\020\323\002\022+\n&HOLO_POKEMON_ID_V0340_POKEMO" +
-      "N_WHISCASH\020\324\002\022+\n&HOLO_POKEMON_ID_V0341_P" +
-      "OKEMON_CORPHISH\020\325\002\022,\n\'HOLO_POKEMON_ID_V0" +
-      "342_POKEMON_CRAWDAUNT\020\326\002\022)\n$HOLO_POKEMON" +
-      "_ID_V0343_POKEMON_BALTOY\020\327\002\022*\n%HOLO_POKE" +
-      "MON_ID_V0344_POKEMON_CLAYDOL\020\330\002\022)\n$HOLO_" +
-      "POKEMON_ID_V0345_POKEMON_LILEEP\020\331\002\022*\n%HO" +
-      "LO_POKEMON_ID_V0346_POKEMON_CRADILY\020\332\002\022*" +
-      "\n%HOLO_POKEMON_ID_V0347_POKEMON_ANORITH\020" +
-      "\333\002\022*\n%HOLO_POKEMON_ID_V0348_POKEMON_ARMA" +
-      "LDO\020\334\002\022)\n$HOLO_POKEMON_ID_V0349_POKEMON_" +
-      "FEEBAS\020\335\002\022*\n%HOLO_POKEMON_ID_V0350_POKEM" +
-      "ON_MILOTIC\020\336\002\022+\n&HOLO_POKEMON_ID_V0351_P" +
-      "OKEMON_CASTFORM\020\337\002\022*\n%HOLO_POKEMON_ID_V0" +
-      "352_POKEMON_KECLEON\020\340\002\022*\n%HOLO_POKEMON_I" +
-      "D_V0353_POKEMON_SHUPPET\020\341\002\022*\n%HOLO_POKEM" +
-      "ON_ID_V0354_POKEMON_BANETTE\020\342\002\022*\n%HOLO_P" +
-      "OKEMON_ID_V0355_POKEMON_DUSKULL\020\343\002\022+\n&HO" +
-      "LO_POKEMON_ID_V0356_POKEMON_DUSCLOPS\020\344\002\022" +
-      "*\n%HOLO_POKEMON_ID_V0357_POKEMON_TROPIUS" +
-      "\020\345\002\022+\n&HOLO_POKEMON_ID_V0358_POKEMON_CHI" +
-      "MECHO\020\346\002\022(\n#HOLO_POKEMON_ID_V0359_POKEMO" +
-      "N_ABSOL\020\347\002\022)\n$HOLO_POKEMON_ID_V0360_POKE" +
-      "MON_WYNAUT\020\350\002\022*\n%HOLO_POKEMON_ID_V0361_P" +
-      "OKEMON_SNORUNT\020\351\002\022)\n$HOLO_POKEMON_ID_V03" +
-      "62_POKEMON_GLALIE\020\352\002\022)\n$HOLO_POKEMON_ID_" +
-      "V0363_POKEMON_SPHEAL\020\353\002\022)\n$HOLO_POKEMON_" +
-      "ID_V0364_POKEMON_SEALEO\020\354\002\022*\n%HOLO_POKEM" +
-      "ON_ID_V0365_POKEMON_WALREIN\020\355\002\022+\n&HOLO_P" +
-      "OKEMON_ID_V0366_POKEMON_CLAMPERL\020\356\002\022*\n%H" +
-      "OLO_POKEMON_ID_V0367_POKEMON_HUNTAIL\020\357\002\022" +
-      "+\n&HOLO_POKEMON_ID_V0368_POKEMON_GOREBYS" +
-      "S\020\360\002\022,\n\'HOLO_POKEMON_ID_V0369_POKEMON_RE" +
-      "LICANTH\020\361\002\022*\n%HOLO_POKEMON_ID_V0370_POKE" +
-      "MON_LUVDISC\020\362\002\022(\n#HOLO_POKEMON_ID_V0371_" +
-      "POKEMON_BAGON\020\363\002\022*\n%HOLO_POKEMON_ID_V037" +
-      "2_POKEMON_SHELGON\020\364\002\022,\n\'HOLO_POKEMON_ID_" +
-      "V0373_POKEMON_SALAMENCE\020\365\002\022)\n$HOLO_POKEM" +
-      "ON_ID_V0374_POKEMON_BELDUM\020\366\002\022)\n$HOLO_PO" +
-      "KEMON_ID_V0375_POKEMON_METANG\020\367\002\022,\n\'HOLO" +
-      "_POKEMON_ID_V0376_POKEMON_METAGROSS\020\370\002\022+" +
-      "\n&HOLO_POKEMON_ID_V0377_POKEMON_REGIROCK" +
-      "\020\371\002\022)\n$HOLO_POKEMON_ID_V0378_POKEMON_REG" +
-      "ICE\020\372\002\022,\n\'HOLO_POKEMON_ID_V0379_POKEMON_" +
-      "REGISTEEL\020\373\002\022)\n$HOLO_POKEMON_ID_V0380_PO" +
-      "KEMON_LATIAS\020\374\002\022)\n$HOLO_POKEMON_ID_V0381" +
-      "_POKEMON_LATIOS\020\375\002\022)\n$HOLO_POKEMON_ID_V0" +
-      "382_POKEMON_KYOGRE\020\376\002\022*\n%HOLO_POKEMON_ID" +
-      "_V0383_POKEMON_GROUDON\020\377\002\022+\n&HOLO_POKEMO" +
-      "N_ID_V0384_POKEMON_RAYQUAZA\020\200\003\022*\n%HOLO_P" +
-      "OKEMON_ID_V0385_POKEMON_JIRACHI\020\201\003\022)\n$HO" +
-      "LO_POKEMON_ID_V0386_POKEMON_DEOXYS\020\202\003\022*\n" +
-      "%HOLO_POKEMON_ID_V0387_POKEMON_TURTWIG\020\203" +
-      "\003\022)\n$HOLO_POKEMON_ID_V0388_POKEMON_GROTL" +
-      "E\020\204\003\022+\n&HOLO_POKEMON_ID_V0389_POKEMON_TO" +
-      "RTERRA\020\205\003\022+\n&HOLO_POKEMON_ID_V0390_POKEM" +
-      "ON_CHIMCHAR\020\206\003\022+\n&HOLO_POKEMON_ID_V0391_" +
-      "POKEMON_MONFERNO\020\207\003\022,\n\'HOLO_POKEMON_ID_V" +
-      "0392_POKEMON_INFERNAPE\020\210\003\022)\n$HOLO_POKEMO" +
-      "N_ID_V0393_POKEMON_PIPLUP\020\211\003\022+\n&HOLO_POK" +
-      "EMON_ID_V0394_POKEMON_PRINPLUP\020\212\003\022+\n&HOL" +
-      "O_POKEMON_ID_V0395_POKEMON_EMPOLEON\020\213\003\022)" +
-      "\n$HOLO_POKEMON_ID_V0396_POKEMON_STARLY\020\214" +
-      "\003\022+\n&HOLO_POKEMON_ID_V0397_POKEMON_STARA" +
-      "VIA\020\215\003\022,\n\'HOLO_POKEMON_ID_V0398_POKEMON_" +
-      "STARAPTOR\020\216\003\022)\n$HOLO_POKEMON_ID_V0399_PO" +
-      "KEMON_BIDOOF\020\217\003\022*\n%HOLO_POKEMON_ID_V0400" +
-      "_POKEMON_BIBAREL\020\220\003\022,\n\'HOLO_POKEMON_ID_V" +
-      "0401_POKEMON_KRICKETOT\020\221\003\022-\n(HOLO_POKEMO" +
-      "N_ID_V0402_POKEMON_KRICKETUNE\020\222\003\022(\n#HOLO" +
-      "_POKEMON_ID_V0403_POKEMON_SHINX\020\223\003\022(\n#HO" +
-      "LO_POKEMON_ID_V0404_POKEMON_LUXIO\020\224\003\022)\n$" +
-      "HOLO_POKEMON_ID_V0405_POKEMON_LUXRAY\020\225\003\022" +
-      "(\n#HOLO_POKEMON_ID_V0406_POKEMON_BUDEW\020\226" +
-      "\003\022+\n&HOLO_POKEMON_ID_V0407_POKEMON_ROSER" +
-      "ADE\020\227\003\022+\n&HOLO_POKEMON_ID_V0408_POKEMON_" +
-      "CRANIDOS\020\230\003\022,\n\'HOLO_POKEMON_ID_V0409_POK" +
-      "EMON_RAMPARDOS\020\231\003\022+\n&HOLO_POKEMON_ID_V04" +
-      "10_POKEMON_SHIELDON\020\232\003\022,\n\'HOLO_POKEMON_I" +
-      "D_V0411_POKEMON_BASTIODON\020\233\003\022(\n#HOLO_POK" +
-      "EMON_ID_V0412_POKEMON_BURMY\020\234\003\022+\n&HOLO_P" +
-      "OKEMON_ID_V0413_POKEMON_WORMADAM\020\235\003\022)\n$H" +
-      "OLO_POKEMON_ID_V0414_POKEMON_MOTHIM\020\236\003\022)" +
-      "\n$HOLO_POKEMON_ID_V0415_POKEMON_COMBEE\020\237" +
-      "\003\022,\n\'HOLO_POKEMON_ID_V0416_POKEMON_VESPI" +
-      "QUEN\020\240\003\022,\n\'HOLO_POKEMON_ID_V0417_POKEMON" +
-      "_PACHIRISU\020\241\003\022)\n$HOLO_POKEMON_ID_V0418_P" +
-      "OKEMON_BUIZEL\020\242\003\022+\n&HOLO_POKEMON_ID_V041" +
-      "9_POKEMON_FLOATZEL\020\243\003\022*\n%HOLO_POKEMON_ID" +
-      "_V0420_POKEMON_CHERUBI\020\244\003\022*\n%HOLO_POKEMO" +
-      "N_ID_V0421_POKEMON_CHERRIM\020\245\003\022*\n%HOLO_PO" +
-      "KEMON_ID_V0422_POKEMON_SHELLOS\020\246\003\022,\n\'HOL" +
-      "O_POKEMON_ID_V0423_POKEMON_GASTRODON\020\247\003\022" +
-      "*\n%HOLO_POKEMON_ID_V0424_POKEMON_AMBIPOM" +
-      "\020\250\003\022+\n&HOLO_POKEMON_ID_V0425_POKEMON_DRI" +
-      "FLOON\020\251\003\022+\n&HOLO_POKEMON_ID_V0426_POKEMO" +
-      "N_DRIFBLIM\020\252\003\022*\n%HOLO_POKEMON_ID_V0427_P" +
-      "OKEMON_BUNEARY\020\253\003\022*\n%HOLO_POKEMON_ID_V04" +
-      "28_POKEMON_LOPUNNY\020\254\003\022,\n\'HOLO_POKEMON_ID" +
-      "_V0429_POKEMON_MISMAGIUS\020\255\003\022,\n\'HOLO_POKE" +
-      "MON_ID_V0430_POKEMON_HONCHKROW\020\256\003\022*\n%HOL" +
-      "O_POKEMON_ID_V0431_POKEMON_GLAMEOW\020\257\003\022*\n" +
-      "%HOLO_POKEMON_ID_V0432_POKEMON_PURUGLY\020\260" +
-      "\003\022,\n\'HOLO_POKEMON_ID_V0433_POKEMON_CHING" +
-      "LING\020\261\003\022)\n$HOLO_POKEMON_ID_V0434_POKEMON" +
-      "_STUNKY\020\262\003\022+\n&HOLO_POKEMON_ID_V0435_POKE" +
-      "MON_SKUNTANK\020\263\003\022*\n%HOLO_POKEMON_ID_V0436" +
-      "_POKEMON_BRONZOR\020\264\003\022+\n&HOLO_POKEMON_ID_V" +
-      "0437_POKEMON_BRONZONG\020\265\003\022)\n$HOLO_POKEMON" +
-      "_ID_V0438_POKEMON_BONSLY\020\266\003\022*\n%HOLO_POKE" +
-      "MON_ID_V0439_POKEMON_MIME_JR\020\267\003\022*\n%HOLO_" +
-      "POKEMON_ID_V0440_POKEMON_HAPPINY\020\270\003\022)\n$H" +
-      "OLO_POKEMON_ID_V0441_POKEMON_CHATOT\020\271\003\022," +
-      "\n\'HOLO_POKEMON_ID_V0442_POKEMON_SPIRITOM" +
-      "B\020\272\003\022(\n#HOLO_POKEMON_ID_V0443_POKEMON_GI" +
-      "BLE\020\273\003\022)\n$HOLO_POKEMON_ID_V0444_POKEMON_" +
-      "GABITE\020\274\003\022+\n&HOLO_POKEMON_ID_V0445_POKEM" +
-      "ON_GARCHOMP\020\275\003\022+\n&HOLO_POKEMON_ID_V0446_" +
-      "POKEMON_MUNCHLAX\020\276\003\022(\n#HOLO_POKEMON_ID_V" +
-      "0447_POKEMON_RIOLU\020\277\003\022*\n%HOLO_POKEMON_ID" +
-      "_V0448_POKEMON_LUCARIO\020\300\003\022-\n(HOLO_POKEMO" +
-      "N_ID_V0449_POKEMON_HIPPOPOTAS\020\301\003\022,\n\'HOLO" +
-      "_POKEMON_ID_V0450_POKEMON_HIPPOWDON\020\302\003\022*" +
-      "\n%HOLO_POKEMON_ID_V0451_POKEMON_SKORUPI\020" +
-      "\303\003\022*\n%HOLO_POKEMON_ID_V0452_POKEMON_DRAP" +
-      "ION\020\304\003\022+\n&HOLO_POKEMON_ID_V0453_POKEMON_" +
-      "CROAGUNK\020\305\003\022,\n\'HOLO_POKEMON_ID_V0454_POK" +
-      "EMON_TOXICROAK\020\306\003\022,\n\'HOLO_POKEMON_ID_V04" +
-      "55_POKEMON_CARNIVINE\020\307\003\022*\n%HOLO_POKEMON_" +
-      "ID_V0456_POKEMON_FINNEON\020\310\003\022+\n&HOLO_POKE" +
-      "MON_ID_V0457_POKEMON_LUMINEON\020\311\003\022*\n%HOLO" +
-      "_POKEMON_ID_V0458_POKEMON_MANTYKE\020\312\003\022)\n$" +
-      "HOLO_POKEMON_ID_V0459_POKEMON_SNOVER\020\313\003\022" +
-      ",\n\'HOLO_POKEMON_ID_V0460_POKEMON_ABOMASN" +
-      "OW\020\314\003\022*\n%HOLO_POKEMON_ID_V0461_POKEMON_W" +
-      "EAVILE\020\315\003\022,\n\'HOLO_POKEMON_ID_V0462_POKEM" +
-      "ON_MAGNEZONE\020\316\003\022-\n(HOLO_POKEMON_ID_V0463" +
-      "_POKEMON_LICKILICKY\020\317\003\022,\n\'HOLO_POKEMON_I" +
-      "D_V0464_POKEMON_RHYPERIOR\020\320\003\022,\n\'HOLO_POK" +
-      "EMON_ID_V0465_POKEMON_TANGROWTH\020\321\003\022-\n(HO" +
-      "LO_POKEMON_ID_V0466_POKEMON_ELECTIVIRE\020\322" +
-      "\003\022,\n\'HOLO_POKEMON_ID_V0467_POKEMON_MAGMO" +
-      "RTAR\020\323\003\022+\n&HOLO_POKEMON_ID_V0468_POKEMON" +
-      "_TOGEKISS\020\324\003\022*\n%HOLO_POKEMON_ID_V0469_PO" +
-      "KEMON_YANMEGA\020\325\003\022*\n%HOLO_POKEMON_ID_V047" +
-      "0_POKEMON_LEAFEON\020\326\003\022*\n%HOLO_POKEMON_ID_" +
-      "V0471_POKEMON_GLACEON\020\327\003\022*\n%HOLO_POKEMON" +
-      "_ID_V0472_POKEMON_GLISCOR\020\330\003\022,\n\'HOLO_POK" +
-      "EMON_ID_V0473_POKEMON_MAMOSWINE\020\331\003\022,\n\'HO" +
-      "LO_POKEMON_ID_V0474_POKEMON_PORYGON_Z\020\332\003" +
-      "\022*\n%HOLO_POKEMON_ID_V0475_POKEMON_GALLAD" +
-      "E\020\333\003\022,\n\'HOLO_POKEMON_ID_V0476_POKEMON_PR" +
-      "OBOPASS\020\334\003\022+\n&HOLO_POKEMON_ID_V0477_POKE" +
-      "MON_DUSKNOIR\020\335\003\022+\n&HOLO_POKEMON_ID_V0478" +
-      "_POKEMON_FROSLASS\020\336\003\022(\n#HOLO_POKEMON_ID_" +
-      "V0479_POKEMON_ROTOM\020\337\003\022\'\n\"HOLO_POKEMON_I" +
-      "D_V0480_POKEMON_UXIE\020\340\003\022*\n%HOLO_POKEMON_" +
-      "ID_V0481_POKEMON_MESPRIT\020\341\003\022(\n#HOLO_POKE" +
-      "MON_ID_V0482_POKEMON_AZELF\020\342\003\022)\n$HOLO_PO" +
-      "KEMON_ID_V0483_POKEMON_DIALGA\020\343\003\022)\n$HOLO" +
-      "_POKEMON_ID_V0484_POKEMON_PALKIA\020\344\003\022*\n%H" +
-      "OLO_POKEMON_ID_V0485_POKEMON_HEATRAN\020\345\003\022" +
-      ",\n\'HOLO_POKEMON_ID_V0486_POKEMON_REGIGIG" +
-      "AS\020\346\003\022+\n&HOLO_POKEMON_ID_V0487_POKEMON_G" +
-      "IRATINA\020\347\003\022,\n\'HOLO_POKEMON_ID_V0488_POKE" +
-      "MON_CRESSELIA\020\350\003\022)\n$HOLO_POKEMON_ID_V048" +
-      "9_POKEMON_PHIONE\020\351\003\022*\n%HOLO_POKEMON_ID_V" +
-      "0490_POKEMON_MANAPHY\020\352\003\022*\n%HOLO_POKEMON_" +
-      "ID_V0491_POKEMON_DARKRAI\020\353\003\022*\n%HOLO_POKE" +
-      "MON_ID_V0492_POKEMON_SHAYMIN\020\354\003\022)\n$HOLO_" +
-      "POKEMON_ID_V0493_POKEMON_ARCEUS\020\355\003\022*\n%HO" +
-      "LO_POKEMON_ID_V0494_POKEMON_VICTINI\020\356\003\022(" +
-      "\n#HOLO_POKEMON_ID_V0495_POKEMON_SNIVY\020\357\003" +
-      "\022*\n%HOLO_POKEMON_ID_V0496_POKEMON_SERVIN" +
-      "E\020\360\003\022,\n\'HOLO_POKEMON_ID_V0497_POKEMON_SE" +
-      "RPERIOR\020\361\003\022(\n#HOLO_POKEMON_ID_V0498_POKE" +
-      "MON_TEPIG\020\362\003\022*\n%HOLO_POKEMON_ID_V0499_PO" +
-      "KEMON_PIGNITE\020\363\003\022)\n$HOLO_POKEMON_ID_V050" +
-      "0_POKEMON_EMBOAR\020\364\003\022+\n&HOLO_POKEMON_ID_V" +
-      "0501_POKEMON_OSHAWOTT\020\365\003\022)\n$HOLO_POKEMON" +
-      "_ID_V0502_POKEMON_DEWOTT\020\366\003\022+\n&HOLO_POKE" +
-      "MON_ID_V0503_POKEMON_SAMUROTT\020\367\003\022)\n$HOLO" +
-      "_POKEMON_ID_V0504_POKEMON_PATRAT\020\370\003\022*\n%H" +
-      "OLO_POKEMON_ID_V0505_POKEMON_WATCHOG\020\371\003\022" +
-      "+\n&HOLO_POKEMON_ID_V0506_POKEMON_LILLIPU" +
-      "P\020\372\003\022*\n%HOLO_POKEMON_ID_V0507_POKEMON_HE" +
-      "RDIER\020\373\003\022,\n\'HOLO_POKEMON_ID_V0508_POKEMO" +
-      "N_STOUTLAND\020\374\003\022+\n&HOLO_POKEMON_ID_V0509_" +
-      "POKEMON_PURRLOIN\020\375\003\022*\n%HOLO_POKEMON_ID_V" +
-      "0510_POKEMON_LIEPARD\020\376\003\022*\n%HOLO_POKEMON_" +
-      "ID_V0511_POKEMON_PANSAGE\020\377\003\022+\n&HOLO_POKE" +
-      "MON_ID_V0512_POKEMON_SIMISAGE\020\200\004\022*\n%HOLO" +
-      "_POKEMON_ID_V0513_POKEMON_PANSEAR\020\201\004\022+\n&" +
-      "HOLO_POKEMON_ID_V0514_POKEMON_SIMISEAR\020\202" +
-      "\004\022*\n%HOLO_POKEMON_ID_V0515_POKEMON_PANPO" +
-      "UR\020\203\004\022+\n&HOLO_POKEMON_ID_V0516_POKEMON_S" +
-      "IMIPOUR\020\204\004\022(\n#HOLO_POKEMON_ID_V0517_POKE" +
-      "MON_MUNNA\020\205\004\022+\n&HOLO_POKEMON_ID_V0518_PO" +
-      "KEMON_MUSHARNA\020\206\004\022)\n$HOLO_POKEMON_ID_V05" +
-      "19_POKEMON_PIDOVE\020\207\004\022,\n\'HOLO_POKEMON_ID_" +
-      "V0520_POKEMON_TRANQUILL\020\210\004\022+\n&HOLO_POKEM" +
-      "ON_ID_V0521_POKEMON_UNFEZANT\020\211\004\022*\n%HOLO_" +
-      "POKEMON_ID_V0522_POKEMON_BLITZLE\020\212\004\022,\n\'H" +
-      "OLO_POKEMON_ID_V0523_POKEMON_ZEBSTRIKA\020\213" +
-      "\004\022-\n(HOLO_POKEMON_ID_V0524_POKEMON_ROGGE" +
-      "NROLA\020\214\004\022*\n%HOLO_POKEMON_ID_V0525_POKEMO" +
-      "N_BOLDORE\020\215\004\022+\n&HOLO_POKEMON_ID_V0526_PO" +
-      "KEMON_GIGALITH\020\216\004\022)\n$HOLO_POKEMON_ID_V05" +
-      "27_POKEMON_WOOBAT\020\217\004\022*\n%HOLO_POKEMON_ID_" +
-      "V0528_POKEMON_SWOOBAT\020\220\004\022*\n%HOLO_POKEMON" +
-      "_ID_V0529_POKEMON_DRILBUR\020\221\004\022,\n\'HOLO_POK" +
-      "EMON_ID_V0530_POKEMON_EXCADRILL\020\222\004\022)\n$HO" +
-      "LO_POKEMON_ID_V0531_POKEMON_AUDINO\020\223\004\022*\n" +
-      "%HOLO_POKEMON_ID_V0532_POKEMON_TIMBURR\020\224" +
-      "\004\022*\n%HOLO_POKEMON_ID_V0533_POKEMON_GURDU" +
-      "RR\020\225\004\022-\n(HOLO_POKEMON_ID_V0534_POKEMON_C" +
-      "ONKELDURR\020\226\004\022*\n%HOLO_POKEMON_ID_V0535_PO" +
-      "KEMON_TYMPOLE\020\227\004\022,\n\'HOLO_POKEMON_ID_V053" +
-      "6_POKEMON_PALPITOAD\020\230\004\022-\n(HOLO_POKEMON_I" +
-      "D_V0537_POKEMON_SEISMITOAD\020\231\004\022(\n#HOLO_PO" +
-      "KEMON_ID_V0538_POKEMON_THROH\020\232\004\022\'\n\"HOLO_" +
-      "POKEMON_ID_V0539_POKEMON_SAWK\020\233\004\022+\n&HOLO" +
-      "_POKEMON_ID_V0540_POKEMON_SEWADDLE\020\234\004\022+\n" +
-      "&HOLO_POKEMON_ID_V0541_POKEMON_SWADLOON\020" +
-      "\235\004\022+\n&HOLO_POKEMON_ID_V0542_POKEMON_LEAV" +
-      "ANNY\020\236\004\022+\n&HOLO_POKEMON_ID_V0543_POKEMON" +
-      "_VENIPEDE\020\237\004\022-\n(HOLO_POKEMON_ID_V0544_PO" +
-      "KEMON_WHIRLIPEDE\020\240\004\022,\n\'HOLO_POKEMON_ID_V" +
-      "0545_POKEMON_SCOLIPEDE\020\241\004\022+\n&HOLO_POKEMO" +
-      "N_ID_V0546_POKEMON_COTTONEE\020\242\004\022-\n(HOLO_P" +
-      "OKEMON_ID_V0547_POKEMON_WHIMSICOTT\020\243\004\022*\n" +
-      "%HOLO_POKEMON_ID_V0548_POKEMON_PETILIL\020\244" +
-      "\004\022,\n\'HOLO_POKEMON_ID_V0549_POKEMON_LILLI" +
-      "GANT\020\245\004\022+\n&HOLO_POKEMON_ID_V0550_POKEMON" +
-      "_BASCULIN\020\246\004\022*\n%HOLO_POKEMON_ID_V0551_PO" +
-      "KEMON_SANDILE\020\247\004\022+\n&HOLO_POKEMON_ID_V055" +
-      "2_POKEMON_KROKOROK\020\250\004\022-\n(HOLO_POKEMON_ID" +
-      "_V0553_POKEMON_KROOKODILE\020\251\004\022+\n&HOLO_POK" +
-      "EMON_ID_V0554_POKEMON_DARUMAKA\020\252\004\022-\n(HOL" +
-      "O_POKEMON_ID_V0555_POKEMON_DARMANITAN\020\253\004" +
-      "\022+\n&HOLO_POKEMON_ID_V0556_POKEMON_MARACT" +
-      "US\020\254\004\022*\n%HOLO_POKEMON_ID_V0557_POKEMON_D" +
-      "WEBBLE\020\255\004\022*\n%HOLO_POKEMON_ID_V0558_POKEM" +
-      "ON_CRUSTLE\020\256\004\022*\n%HOLO_POKEMON_ID_V0559_P" +
-      "OKEMON_SCRAGGY\020\257\004\022*\n%HOLO_POKEMON_ID_V05" +
-      "60_POKEMON_SCRAFTY\020\260\004\022+\n&HOLO_POKEMON_ID" +
-      "_V0561_POKEMON_SIGILYPH\020\261\004\022)\n$HOLO_POKEM" +
-      "ON_ID_V0562_POKEMON_YAMASK\020\262\004\022-\n(HOLO_PO" +
-      "KEMON_ID_V0563_POKEMON_COFAGRIGUS\020\263\004\022+\n&" +
-      "HOLO_POKEMON_ID_V0564_POKEMON_TIRTOUGA\020\264" +
-      "\004\022-\n(HOLO_POKEMON_ID_V0565_POKEMON_CARRA" +
-      "COSTA\020\265\004\022)\n$HOLO_POKEMON_ID_V0566_POKEMO" +
-      "N_ARCHEN\020\266\004\022+\n&HOLO_POKEMON_ID_V0567_POK" +
-      "EMON_ARCHEOPS\020\267\004\022+\n&HOLO_POKEMON_ID_V056" +
-      "8_POKEMON_TRUBBISH\020\270\004\022+\n&HOLO_POKEMON_ID" +
-      "_V0569_POKEMON_GARBODOR\020\271\004\022(\n#HOLO_POKEM" +
-      "ON_ID_V0570_POKEMON_ZORUA\020\272\004\022*\n%HOLO_POK" +
-      "EMON_ID_V0571_POKEMON_ZOROARK\020\273\004\022+\n&HOLO" +
-      "_POKEMON_ID_V0572_POKEMON_MINCCINO\020\274\004\022+\n" +
-      "&HOLO_POKEMON_ID_V0573_POKEMON_CINCCINO\020" +
-      "\275\004\022*\n%HOLO_POKEMON_ID_V0574_POKEMON_GOTH" +
-      "ITA\020\276\004\022,\n\'HOLO_POKEMON_ID_V0575_POKEMON_" +
-      "GOTHORITA\020\277\004\022-\n(HOLO_POKEMON_ID_V0576_PO" +
-      "KEMON_GOTHITELLE\020\300\004\022*\n%HOLO_POKEMON_ID_V" +
-      "0577_POKEMON_SOLOSIS\020\301\004\022*\n%HOLO_POKEMON_" +
-      "ID_V0578_POKEMON_DUOSION\020\302\004\022,\n\'HOLO_POKE" +
-      "MON_ID_V0579_POKEMON_REUNICLUS\020\303\004\022+\n&HOL" +
-      "O_POKEMON_ID_V0580_POKEMON_DUCKLETT\020\304\004\022)" +
-      "\n$HOLO_POKEMON_ID_V0581_POKEMON_SWANNA\020\305" +
-      "\004\022,\n\'HOLO_POKEMON_ID_V0582_POKEMON_VANIL" +
-      "LITE\020\306\004\022,\n\'HOLO_POKEMON_ID_V0583_POKEMON" +
-      "_VANILLISH\020\307\004\022,\n\'HOLO_POKEMON_ID_V0584_P" +
-      "OKEMON_VANILLUXE\020\310\004\022+\n&HOLO_POKEMON_ID_V" +
-      "0585_POKEMON_DEERLING\020\311\004\022+\n&HOLO_POKEMON" +
-      "_ID_V0586_POKEMON_SAWSBUCK\020\312\004\022)\n$HOLO_PO" +
-      "KEMON_ID_V0587_POKEMON_EMOLGA\020\313\004\022-\n(HOLO" +
-      "_POKEMON_ID_V0588_POKEMON_KARRABLAST\020\314\004\022" +
-      "-\n(HOLO_POKEMON_ID_V0589_POKEMON_ESCAVAL" +
-      "IER\020\315\004\022*\n%HOLO_POKEMON_ID_V0590_POKEMON_",
-      "FOONGUS\020\316\004\022,\n\'HOLO_POKEMON_ID_V0591_POKE" +
-      "MON_AMOONGUSS\020\317\004\022+\n&HOLO_POKEMON_ID_V059" +
-      "2_POKEMON_FRILLISH\020\320\004\022,\n\'HOLO_POKEMON_ID" +
-      "_V0593_POKEMON_JELLICENT\020\321\004\022,\n\'HOLO_POKE" +
-      "MON_ID_V0594_POKEMON_ALOMOMOLA\020\322\004\022)\n$HOL" +
-      "O_POKEMON_ID_V0595_POKEMON_JOLTIK\020\323\004\022-\n(" +
-      "HOLO_POKEMON_ID_V0596_POKEMON_GALVANTULA" +
-      "\020\324\004\022,\n\'HOLO_POKEMON_ID_V0597_POKEMON_FER" +
-      "ROSEED\020\325\004\022-\n(HOLO_POKEMON_ID_V0598_POKEM" +
-      "ON_FERROTHORN\020\326\004\022(\n#HOLO_POKEMON_ID_V059" +
-      "9_POKEMON_KLINK\020\327\004\022(\n#HOLO_POKEMON_ID_V0" +
-      "600_POKEMON_KLANG\020\330\004\022,\n\'HOLO_POKEMON_ID_" +
-      "V0601_POKEMON_KLINKLANG\020\331\004\022)\n$HOLO_POKEM" +
-      "ON_ID_V0602_POKEMON_TYNAMO\020\332\004\022,\n\'HOLO_PO" +
-      "KEMON_ID_V0603_POKEMON_EELEKTRIK\020\333\004\022-\n(H" +
-      "OLO_POKEMON_ID_V0604_POKEMON_EELEKTROSS\020" +
-      "\334\004\022)\n$HOLO_POKEMON_ID_V0605_POKEMON_ELGY" +
-      "EM\020\335\004\022+\n&HOLO_POKEMON_ID_V0606_POKEMON_B" +
-      "EHEEYEM\020\336\004\022*\n%HOLO_POKEMON_ID_V0607_POKE" +
-      "MON_LITWICK\020\337\004\022*\n%HOLO_POKEMON_ID_V0608_" +
-      "POKEMON_LAMPENT\020\340\004\022-\n(HOLO_POKEMON_ID_V0" +
-      "609_POKEMON_CHANDELURE\020\341\004\022\'\n\"HOLO_POKEMO" +
-      "N_ID_V0610_POKEMON_AXEW\020\342\004\022*\n%HOLO_POKEM" +
-      "ON_ID_V0611_POKEMON_FRAXURE\020\343\004\022*\n%HOLO_P" +
-      "OKEMON_ID_V0612_POKEMON_HAXORUS\020\344\004\022*\n%HO" +
-      "LO_POKEMON_ID_V0613_POKEMON_CUBCHOO\020\345\004\022*" +
-      "\n%HOLO_POKEMON_ID_V0614_POKEMON_BEARTIC\020" +
-      "\346\004\022,\n\'HOLO_POKEMON_ID_V0615_POKEMON_CRYO" +
-      "GONAL\020\347\004\022*\n%HOLO_POKEMON_ID_V0616_POKEMO" +
-      "N_SHELMET\020\350\004\022+\n&HOLO_POKEMON_ID_V0617_PO" +
-      "KEMON_ACCELGOR\020\351\004\022+\n&HOLO_POKEMON_ID_V06" +
-      "18_POKEMON_STUNFISK\020\352\004\022*\n%HOLO_POKEMON_I" +
-      "D_V0619_POKEMON_MIENFOO\020\353\004\022+\n&HOLO_POKEM" +
-      "ON_ID_V0620_POKEMON_MIENSHAO\020\354\004\022,\n\'HOLO_" +
-      "POKEMON_ID_V0621_POKEMON_DRUDDIGON\020\355\004\022)\n" +
-      "$HOLO_POKEMON_ID_V0622_POKEMON_GOLETT\020\356\004" +
-      "\022)\n$HOLO_POKEMON_ID_V0623_POKEMON_GOLURK" +
-      "\020\357\004\022+\n&HOLO_POKEMON_ID_V0624_POKEMON_PAW" +
-      "NIARD\020\360\004\022*\n%HOLO_POKEMON_ID_V0625_POKEMO" +
-      "N_BISHARP\020\361\004\022-\n(HOLO_POKEMON_ID_V0626_PO" +
-      "KEMON_BOUFFALANT\020\362\004\022*\n%HOLO_POKEMON_ID_V" +
-      "0627_POKEMON_RUFFLET\020\363\004\022+\n&HOLO_POKEMON_" +
-      "ID_V0628_POKEMON_BRAVIARY\020\364\004\022*\n%HOLO_POK" +
-      "EMON_ID_V0629_POKEMON_VULLABY\020\365\004\022,\n\'HOLO" +
-      "_POKEMON_ID_V0630_POKEMON_MANDIBUZZ\020\366\004\022*" +
-      "\n%HOLO_POKEMON_ID_V0631_POKEMON_HEATMOR\020" +
-      "\367\004\022)\n$HOLO_POKEMON_ID_V0632_POKEMON_DURA" +
-      "NT\020\370\004\022(\n#HOLO_POKEMON_ID_V0633_POKEMON_D" +
-      "EINO\020\371\004\022+\n&HOLO_POKEMON_ID_V0634_POKEMON" +
-      "_ZWEILOUS\020\372\004\022,\n\'HOLO_POKEMON_ID_V0635_PO" +
-      "KEMON_HYDREIGON\020\373\004\022+\n&HOLO_POKEMON_ID_V0" +
-      "636_POKEMON_LARVESTA\020\374\004\022,\n\'HOLO_POKEMON_" +
-      "ID_V0637_POKEMON_VOLCARONA\020\375\004\022+\n&HOLO_PO" +
-      "KEMON_ID_V0638_POKEMON_COBALION\020\376\004\022,\n\'HO" +
-      "LO_POKEMON_ID_V0639_POKEMON_TERRAKION\020\377\004" +
-      "\022+\n&HOLO_POKEMON_ID_V0640_POKEMON_VIRIZI" +
-      "ON\020\200\005\022+\n&HOLO_POKEMON_ID_V0641_POKEMON_T" +
-      "ORNADUS\020\201\005\022,\n\'HOLO_POKEMON_ID_V0642_POKE" +
-      "MON_THUNDURUS\020\202\005\022+\n&HOLO_POKEMON_ID_V064" +
-      "3_POKEMON_RESHIRAM\020\203\005\022)\n$HOLO_POKEMON_ID" +
-      "_V0644_POKEMON_ZEKROM\020\204\005\022+\n&HOLO_POKEMON" +
-      "_ID_V0645_POKEMON_LANDORUS\020\205\005\022)\n$HOLO_PO" +
-      "KEMON_ID_V0646_POKEMON_KYUREM\020\206\005\022)\n$HOLO" +
-      "_POKEMON_ID_V0647_POKEMON_KELDEO\020\207\005\022+\n&H" +
-      "OLO_POKEMON_ID_V0648_POKEMON_MELOETTA\020\210\005" +
-      "\022+\n&HOLO_POKEMON_ID_V0649_POKEMON_GENESE" +
-      "CT\020\211\005\022)\n$HOLO_POKEMON_ID_V0808_POKEMON_M" +
-      "ELTAN\020\250\006\022+\n&HOLO_POKEMON_ID_V0809_POKEMO" +
-      "N_MELMETAL\020\251\006\022,\n\'HOLO_POKEMON_ID_V0862_P" +
-      "OKEMON_OBSTAGOON\020\336\006\022-\n(HOLO_POKEMON_ID_V" +
-      "0863_POKEMON_PERRSERKER\020\337\006\022,\n\'HOLO_POKEM" +
-      "ON_ID_V0865_POKEMON_SIRFETCHD\020\341\006*\232\033\n&Cli" +
-      "entInboxServiceNotificationCategory\0223\n/C" +
+      "EVEL_3\020\004\0221\n-FRIENDSHIP_LEVEL_MILESTONE_F" +
+      "RIENDSHIP_LEVEL_4\020\005*\266\002\n\020BattleHubSection" +
+      "\022$\n BATTLE_HUB_SECTION_SECTION_UNSET\020\000\022(" +
+      "\n$BATTLE_HUB_SECTION_SECTION_VS_SEEKER\020\001" +
+      "\022*\n&BATTLE_HUB_SECTION_SECTION_CURR_SEAS" +
+      "ON\020\002\022*\n&BATTLE_HUB_SECTION_SECTION_LAST_" +
+      "SEASON\020\003\022%\n!BATTLE_HUB_SECTION_SECTION_N" +
+      "EARBY\020\004\022+\n\'BATTLE_HUB_SECTION_SECTION_TE" +
+      "AM_LEADERS\020\005\022&\n\"BATTLE_HUB_SECTION_SECTI" +
+      "ON_QR_CODE\020\006*n\n\022WarnedPlayerReason\022&\n\"WA" +
+      "RNED_PLAYER_REASON_CHEAT_WARNING\020\000\0220\n,WA" +
+      "RNED_PLAYER_REASON_POST_SUSPENSION_WARNI" +
+      "NG\020\001*e\n\020EggIncubatorType\022&\n\"EGG_INCUBATO" +
+      "R_TYPE_INCUBATOR_UNSET\020\000\022)\n%EGG_INCUBATO" +
+      "R_TYPE_INCUBATOR_DISTANCE\020\001*\357\001\n\034PokemonI" +
+      "nventoryTelemetryIds\022E\nAPOKEMON_INVENTOR" +
+      "Y_TELEMETRY_IDS_UNDEFINED_POKEMON_INVENT" +
+      "ORY_EVENT\020\000\022(\n$POKEMON_INVENTORY_TELEMET" +
+      "RY_IDS_OPEN\020\001\0222\n.POKEMON_INVENTORY_TELEM" +
+      "ETRY_IDS_SORTING_CHANGE\020\002\022*\n&POKEMON_INV" +
+      "ENTORY_TELEMETRY_IDS_FILTER\020\003*\247/\n\006Method" +
+      "\022\027\n\023METHOD_METHOD_UNSET\020\000\022\025\n\021METHOD_GET_" +
+      "PLAYER\020\002\022!\n\035METHOD_GET_HOLOHOLO_INVENTOR" +
+      "Y\020\004\022\034\n\030METHOD_DOWNLOAD_SETTINGS\020\005\022\"\n\036MET" +
+      "HOD_DOWNLOAD_ITEM_TEMPLATES\020\006\022)\n%METHOD_" +
+      "DOWNLOAD_REMOTE_CONFIG_VERSION\020\007\022%\n!METH" +
+      "OD_REGISTER_BACKGROUND_DEVICE\020\010\022\031\n\025METHO" +
+      "D_GET_PLAYER_DAY\020\t\022!\n\035METHOD_ACKNOWLEDGE" +
+      "_PUNISHMENT\020\n\022\032\n\026METHOD_GET_SERVER_TIME\020" +
+      "\013\022\031\n\025METHOD_GET_LOCAL_TIME\020\014\022\026\n\022METHOD_F" +
+      "ORT_SEARCH\020e\022\024\n\020METHOD_ENCOUNTER\020f\022\030\n\024ME" +
+      "THOD_CATCH_POKEMON\020g\022\027\n\023METHOD_FORT_DETA" +
+      "ILS\020h\022\032\n\026METHOD_GET_MAP_OBJECTS\020j\022\036\n\032MET" +
+      "HOD_FORT_DEPLOY_POKEMON\020n\022\036\n\032METHOD_FORT" +
+      "_RECALL_POKEMON\020o\022\032\n\026METHOD_RELEASE_POKE" +
+      "MON\020p\022\032\n\026METHOD_USE_ITEM_POTION\020q\022\033\n\027MET" +
+      "HOD_USE_ITEM_CAPTURE\020r\022\030\n\024METHOD_USE_ITE" +
+      "M_FLEE\020s\022\032\n\026METHOD_USE_ITEM_REVIVE\020t\022\035\n\031" +
+      "METHOD_GET_PLAYER_PROFILE\020y\022\031\n\025METHOD_EV" +
+      "OLVE_POKEMON\020}\022\033\n\027METHOD_GET_HATCHED_EGG" +
+      "S\020~\022&\n\"METHOD_ENCOUNTER_TUTORIAL_COMPLET" +
+      "E\020\177\022\034\n\027METHOD_LEVEL_UP_REWARDS\020\200\001\022 \n\033MET" +
+      "HOD_CHECK_AWARDED_BADGES\020\201\001\022\"\n\035METHOD_RE" +
+      "CYCLE_INVENTORY_ITEM\020\211\001\022\037\n\032METHOD_COLLEC" +
+      "T_DAILY_BONUS\020\212\001\022\035\n\030METHOD_USE_ITEM_XP_B" +
+      "OOST\020\213\001\022\"\n\035METHOD_USE_ITEM_EGG_INCUBATOR" +
+      "\020\214\001\022\027\n\022METHOD_USE_INCENSE\020\215\001\022\037\n\032METHOD_G" +
+      "ET_INCENSE_POKEMON\020\216\001\022\035\n\030METHOD_INCENSE_" +
+      "ENCOUNTER\020\217\001\022\035\n\030METHOD_ADD_FORT_MODIFIER" +
+      "\020\220\001\022\032\n\025METHOD_DISK_ENCOUNTER\020\221\001\022\033\n\026METHO" +
+      "D_UPGRADE_POKEMON\020\223\001\022 \n\033METHOD_SET_FAVOR" +
+      "ITE_POKEMON\020\224\001\022\034\n\027METHOD_NICKNAME_POKEMO" +
+      "N\020\225\001\022\027\n\022METHOD_EQUIP_BADGE\020\226\001\022 \n\033METHOD_" +
+      "SET_CONTACT_SETTINGS\020\227\001\022\035\n\030METHOD_SET_BU" +
+      "DDY_POKEMON\020\230\001\022\034\n\027METHOD_GET_BUDDY_WALKE" +
+      "D\020\231\001\022\036\n\031METHOD_USE_ITEM_ENCOUNTER\020\232\001\022\026\n\021" +
+      "METHOD_GYM_DEPLOY\020\233\001\022\030\n\023METHOD_GYM_GET_I" +
+      "NFO\020\234\001\022\035\n\030METHOD_GYM_START_SESSION\020\235\001\022\035\n" +
+      "\030METHOD_GYM_BATTLE_ATTACK\020\236\001\022\026\n\021METHOD_J" +
+      "OIN_LOBBY\020\237\001\022\027\n\022METHOD_LEAVE_LOBBY\020\240\001\022 \n" +
+      "\033METHOD_SET_LOBBY_VISIBILITY\020\241\001\022\035\n\030METHO" +
+      "D_SET_LOBBY_POKEMON\020\242\001\022\034\n\027METHOD_GET_RAI" +
+      "D_DETAILS\020\243\001\022\034\n\027METHOD_GYM_FEED_POKEMON\020" +
+      "\244\001\022\035\n\030METHOD_START_RAID_BATTLE\020\245\001\022\027\n\022MET" +
+      "HOD_ATTACK_RAID\020\246\001\022\032\n\025METHOD_AWARD_POKEC" +
+      "OIN\020\247\001\022#\n\036METHOD_USE_ITEM_STARDUST_BOOST" +
+      "\020\250\001\022\033\n\026METHOD_REASSIGN_PLAYER\020\251\001\022\037\n\032METH" +
+      "OD_REDEEM_POI_PASSCODE\020\252\001\022\034\n\027METHOD_IS_S" +
+      "KU_AVAILABLE\020\254\001\022\034\n\027METHOD_GET_ASSET_DIGE" +
+      "ST\020\254\002\022\035\n\030METHOD_GET_DOWNLOAD_URLS\020\255\002\022\035\n\030" +
+      "METHOD_GET_ASSET_VERSION\020\256\002\022\032\n\025METHOD_CL" +
+      "AIM_CODENAME\020\223\003\022\026\n\021METHOD_SET_AVATAR\020\224\003\022" +
+      "\033\n\026METHOD_SET_PLAYER_TEAM\020\225\003\022\"\n\035METHOD_M" +
+      "ARK_TUTORIAL_COMPLETE\020\226\003\022&\n!METHOD_UPDAT" +
+      "E_PERFORMANCE_METRICS\020\227\003\022\033\n\026METHOD_CHECK" +
+      "_CHALLENGE\020\330\004\022\034\n\027METHOD_VERIFY_CHALLENGE" +
+      "\020\331\004\022\020\n\013METHOD_ECHO\020\232\005\022\036\n\031METHOD_SFIDA_RE" +
+      "GISTRATION\020\240\006\022\034\n\027METHOD_SFIDA_ACTION_LOG" +
+      "\020\241\006\022\037\n\032METHOD_SFIDA_CERTIFICATION\020\242\006\022\030\n\023" +
+      "METHOD_SFIDA_UPDATE\020\243\006\022\030\n\023METHOD_SFIDA_A" +
+      "CTION\020\244\006\022\030\n\023METHOD_SFIDA_DOWSER\020\245\006\022\031\n\024ME" +
+      "THOD_SFIDA_CAPTURE\020\246\006\022&\n!METHOD_LIST_AVA" +
+      "TAR_CUSTOMIZATIONS\020\247\006\022%\n METHOD_SET_AVAT" +
+      "AR_ITEM_AS_VIEWED\020\250\006\022\025\n\020METHOD_GET_INBOX" +
+      "\020\251\006\022\033\n\026METHOD_LIST_GYM_BADGES\020\253\006\022!\n\034METH" +
+      "OD_GET_GYM_BADGE_DETAILS\020\254\006\022 \n\033METHOD_US" +
+      "E_ITEM_MOVE_REROLL\020\255\006\022\037\n\032METHOD_USE_ITEM" +
+      "_RARE_CANDY\020\256\006\022\"\n\035METHOD_AWARD_FREE_RAID" +
+      "_TICKET\020\257\006\022\032\n\025METHOD_FETCH_ALL_NEWS\020\260\006\022\"" +
+      "\n\035METHOD_MARK_READ_NEWS_ARTICLE\020\261\006\022#\n\036ME" +
+      "THOD_GET_PLAYER_DISPLAY_INFO\020\262\006\022$\n\037METHO" +
+      "D_BELUGA_TRANSACTION_START\020\263\006\022\'\n\"METHOD_" +
+      "BELUGA_TRANSACTION_COMPLETE\020\264\006\022\032\n\025METHOD" +
+      "_GET_NEW_QUESTS\020\204\007\022\035\n\030METHOD_GET_QUEST_D" +
+      "ETAILS\020\205\007\022\032\n\025METHOD_COMPLETE_QUEST\020\206\007\022\030\n" +
+      "\023METHOD_REMOVE_QUEST\020\207\007\022\033\n\026METHOD_QUEST_" +
+      "ENCOUNTER\020\210\007\022%\n METHOD_COMPLETE_QUEST_ST" +
+      "AMP_CARD\020\211\007\022\025\n\020METHOD_SEND_GIFT\020\266\007\022\025\n\020ME" +
+      "THOD_OPEN_GIFT\020\267\007\022\030\n\023METHOD_GIFT_DETAILS" +
+      "\020\270\007\022\027\n\022METHOD_DELETE_GIFT\020\271\007\022 \n\033METHOD_S" +
+      "AVE_PLAYER_SNAPSHOT\020\272\007\022,\n\'METHOD_GET_FRI" +
+      "ENDSHIP_MILESTONE_REWARDS\020\273\007\022\033\n\026METHOD_C" +
+      "HECK_SEND_GIFT\020\274\007\022\037\n\032METHOD_SET_FRIEND_N" +
+      "ICKNAME\020\275\007\022&\n!METHOD_DELETE_GIFT_FROM_IN" +
+      "VENTORY\020\276\007\022\'\n\"METHOD_SAVE_SOCIAL_PLAYER_" +
+      "SETTINGS\020\277\007\022\036\n\031METHOD_SHARE_EX_RAID_PASS" +
+      "\020\300\007\022$\n\037METHOD_CHECK_SHARE_EX_RAID_PASS\020\301" +
+      "\007\022\'\n\"METHOD_DECLINE_SHARED_EX_RAID_PASS\020" +
+      "\302\007\022\030\n\023METHOD_OPEN_TRADING\020\312\007\022\032\n\025METHOD_U" +
+      "PDATE_TRADING\020\313\007\022\033\n\026METHOD_CONFIRM_TRADI" +
+      "NG\020\314\007\022\032\n\025METHOD_CANCEL_TRADING\020\315\007\022\027\n\022MET" +
+      "HOD_GET_TRADING\020\316\007\022\037\n\032METHOD_GET_FITNESS" +
+      "_REWARDS\020\324\007\022%\n METHOD_GET_COMBAT_PLAYER_" +
+      "PROFILE\020\336\007\022(\n#METHOD_GENERATE_COMBAT_CHA" +
+      "LLENGE_ID\020\337\007\022#\n\036METHOD_CREATE_COMBAT_CHA" +
+      "LLENGE\020\340\007\022!\n\034METHOD_OPEN_COMBAT_CHALLENG" +
+      "E\020\341\007\022 \n\033METHOD_GET_COMBAT_CHALLENGE\020\342\007\022#" +
+      "\n\036METHOD_ACCEPT_COMBAT_CHALLENGE\020\343\007\022$\n\037M" +
+      "ETHOD_DECLINE_COMBAT_CHALLENGE\020\344\007\022#\n\036MET" +
+      "HOD_CANCEL_COMBAT_CHALLENGE\020\345\007\022,\n\'METHOD" +
+      "_SUBMIT_COMBAT_CHALLENGE_POKEMONS\020\346\007\022*\n%" +
+      "METHOD_SAVE_COMBAT_PLAYER_PREFERENCES\020\347\007" +
+      "\022\037\n\032METHOD_OPEN_COMBAT_SESSION\020\350\007\022\031\n\024MET" +
+      "HOD_UPDATE_COMBAT\020\351\007\022\027\n\022METHOD_QUIT_COMB" +
+      "AT\020\352\007\022\036\n\031METHOD_GET_COMBAT_RESULTS\020\353\007\022\037\n" +
+      "\032METHOD_UNLOCK_SPECIAL_MOVE\020\354\007\022\"\n\035METHOD" +
+      "_GET_NPC_COMBAT_REWARDS\020\355\007\022!\n\034METHOD_COM" +
+      "BAT_FRIEND_REQUEST\020\356\007\022#\n\036METHOD_OPEN_NPC" +
+      "_COMBAT_SESSION\020\357\007\022!\n\034METHOD_START_TUTOR" +
+      "IAL_ACTION\020\360\007\022#\n\036METHOD_GET_TUTORIAL_EGG" +
+      "_ACTION\020\361\007\022\026\n\021METHOD_SEND_PROBE\020\374\007\022\026\n\021ME" +
+      "THOD_PROBE_DATA\020\375\007\022\027\n\022METHOD_COMBAT_DATA" +
+      "\020\376\007\022!\n\034METHOD_COMBAT_CHALLENGE_DATA\020\377\007\022\033" +
+      "\n\026METHOD_CHECK_PHOTOBOMB\020\315\010\022\035\n\030METHOD_CO" +
+      "NFIRM_PHOTOBOMB\020\316\010\022\031\n\024METHOD_GET_PHOTOBO" +
+      "MB\020\317\010\022\037\n\032METHOD_ENCOUNTER_PHOTOBOMB\020\320\010\022*" +
+      "\n%METHOD_GET_SIGNED_GMAP_URL_DEPRECATED\020" +
+      "\321\010\022\027\n\022METHOD_CHANGE_TEAM\020\322\010\022\031\n\024METHOD_GE" +
+      "T_WEB_TOKEN\020\323\010\022%\n METHOD_COMPLETE_SNAPSH" +
+      "OT_SESSION\020\326\010\022\032\n\025METHOD_START_INCIDENT\020\260" +
+      "\t\022&\n!METHOD_INVASION_COMPLETE_DIALOGUE\020\261" +
+      "\t\022(\n#METHOD_INVASION_OPEN_COMBAT_SESSION" +
+      "\020\262\t\022\"\n\035METHOD_INVASION_BATTLE_UPDATE\020\263\t\022" +
+      "\036\n\031METHOD_INVASION_ENCOUNTER\020\264\t\022\032\n\025METHO" +
+      "D_PURIFY_POKEMON\020\265\t\022\036\n\031METHOD_GET_ROCKET" +
+      "_BALLOON\020\266\t\022)\n$METHOD_START_ROCKET_BALLO" +
+      "ON_INCIDENT\020\267\t\022\'\n\"METHOD_VS_SEEKER_START" +
+      "_MATCHMAKING\020\224\n\022\036\n\031METHOD_CANCEL_MATCHMA" +
+      "KING\020\225\n\022\"\n\035METHOD_GET_MATCHMAKING_STATUS" +
+      "\020\226\n\0223\n.METHOD_COMPLETE_VS_SEEKER_AND_RES" +
+      "TART_CHARGING\020\227\n\022 \n\033METHOD_GET_VS_SEEKER" +
+      "_STATUS\020\230\n\0225\n0METHOD_COMPLETE_COMBAT_COM" +
+      "PETITIVE_SEASON_ACTION\020\231\n\022#\n\036METHOD_CLAI" +
+      "M_VS_SEEKER_REWARDS\020\232\n\022&\n!METHOD_VS_SEEK" +
+      "ER_REWARD_ENCOUNTER\020\233\n\022\036\n\031METHOD_ACTIVAT" +
+      "E_VS_SEEKER\020\234\n\022\031\n\024METHOD_GET_BUDDY_MAP\020\306" +
+      "\n\022\033\n\026METHOD_GET_BUDDY_STATS\020\307\n\022\026\n\021METHOD" +
+      "_FEED_BUDDY\020\310\n\022\033\n\026METHOD_OPEN_BUDDY_GIFT" +
+      "\020\311\n\022\025\n\020METHOD_PET_BUDDY\020\312\n\022\035\n\030METHOD_GET" +
+      "_BUDDY_HISTORY\020\313\n\022,\n\'METHOD_CREATE_BUDDY",
+      "_MUTLIPLAYER_SESSION\020\260\013\022*\n%METHOD_JOIN_B" +
+      "UDDY_MULTIPLAYER_SESSION\020\261\013\022+\n&METHOD_LE" +
+      "AVE_BUDDY_MULTIPLAYER_SESSION\020\262\013\022\032\n\025METH" +
+      "OD_GET_TODAY_VIEW\020\335\013\022\037\n\032METHOD_MEGA_EVOL" +
+      "VE_POKEMON\020\336\013\022\034\n\027METHOD_REMOTE_GIFT_PING" +
+      "\020\337\013\022 \n\033METHOD_SEND_RAID_INVITATION\020\340\013\022\037\n" +
+      "\032METHOD_GET_DAILY_ENCOUNTER\020\301\014\022\033\n\026METHOD" +
+      "_DAILY_ENCOUNTER\020\302\014\022\037\n\032METHOD_OPEN_SPONS" +
+      "ORED_GIFT\020\362\014\022-\n(METHOD_SPONSORED_GIFT_RE" +
+      "PORT_INTERACTION\020\363\014\022#\n\036METHOD_SAVE_PLAYE" +
+      "R_PREFERENCES\020\364\014\022%\n METHOD_GET_TIMED_GRO" +
+      "UP_CHALLENGE\020\244\r\022\036\n\031METHOD_REPORT_AD_FEED" +
+      "BACK\020\264\r*\340\013\n\tQuestType\022\032\n\026QUEST_TYPE_QUES" +
+      "T_UNSET\020\000\022+\n\'QUEST_TYPE_QUEST_FIRST_CATC" +
+      "H_OF_THE_DAY\020\001\022.\n*QUEST_TYPE_QUEST_FIRST" +
+      "_POKESTOP_OF_THE_DAY\020\002\022\037\n\033QUEST_TYPE_QUE" +
+      "ST_MULTI_PART\020\003\022\"\n\036QUEST_TYPE_QUEST_CATC" +
+      "H_POKEMON\020\004\022\"\n\036QUEST_TYPE_QUEST_SPIN_POK" +
+      "ESTOP\020\005\022\036\n\032QUEST_TYPE_QUEST_HATCH_EGG\020\006\022" +
+      "(\n$QUEST_TYPE_QUEST_COMPLETE_GYM_BATTLE\020" +
+      "\007\022)\n%QUEST_TYPE_QUEST_COMPLETE_RAID_BATT" +
+      "LE\020\010\022#\n\037QUEST_TYPE_QUEST_COMPLETE_QUEST\020" +
+      "\t\022%\n!QUEST_TYPE_QUEST_TRANSFER_POKEMON\020\n" +
+      "\022%\n!QUEST_TYPE_QUEST_FAVORITE_POKEMON\020\013\022" +
+      "!\n\035QUEST_TYPE_QUEST_AUTOCOMPLETE\020\014\022+\n\'QU" +
+      "EST_TYPE_QUEST_USE_BERRY_IN_ENCOUNTER\020\r\022" +
+      "$\n QUEST_TYPE_QUEST_UPGRADE_POKEMON\020\016\022#\n" +
+      "\037QUEST_TYPE_QUEST_EVOLVE_POKEMON\020\017\022\037\n\033QU" +
+      "EST_TYPE_QUEST_LAND_THROW\020\020\022$\n QUEST_TYP" +
+      "E_QUEST_GET_BUDDY_CANDY\020\021\022\037\n\033QUEST_TYPE_" +
+      "QUEST_BADGE_RANK\020\022\022!\n\035QUEST_TYPE_QUEST_P" +
+      "LAYER_LEVEL\020\023\022\036\n\032QUEST_TYPE_QUEST_JOIN_R" +
+      "AID\020\024\022$\n QUEST_TYPE_QUEST_COMPLETE_BATTL" +
+      "E\020\025\022\037\n\033QUEST_TYPE_QUEST_ADD_FRIEND\020\026\022\"\n\036" +
+      "QUEST_TYPE_QUEST_TRADE_POKEMON\020\027\022\036\n\032QUES" +
+      "T_TYPE_QUEST_SEND_GIFT\020\030\022(\n$QUEST_TYPE_Q" +
+      "UEST_EVOLVE_INTO_POKEMON\020\031\022$\n QUEST_TYPE" +
+      "_QUEST_COMPLETE_COMBAT\020\033\022\"\n\036QUEST_TYPE_Q" +
+      "UEST_TAKE_SNAPSHOT\020\034\022\'\n#QUEST_TYPE_QUEST" +
+      "_BATTLE_TEAM_ROCKET\020\035\022#\n\037QUEST_TYPE_QUES" +
+      "T_PURIFY_POKEMON\020\036\022%\n!QUEST_TYPE_QUEST_F" +
+      "IND_TEAM_ROCKET\020\037\022+\n\'QUEST_TYPE_QUEST_FI" +
+      "RST_GRUNT_OF_THE_DAY\020 \022\037\n\033QUEST_TYPE_QUE" +
+      "ST_BUDDY_FEED\020!\0220\n,QUEST_TYPE_QUEST_BUDD" +
+      "Y_EARN_AFFECTION_POINTS\020\"\022\036\n\032QUEST_TYPE_" +
+      "QUEST_BUDDY_PET\020#\022 \n\034QUEST_TYPE_QUEST_BU" +
+      "DDY_LEVEL\020$\022\037\n\033QUEST_TYPE_QUEST_BUDDY_WA" +
+      "LK\020%\022 \n\034QUEST_TYPE_QUEST_BUDDY_YATTA\020&\022 " +
+      "\n\034QUEST_TYPE_QUEST_USE_INCENSE\020\'\022(\n$QUES" +
+      "T_TYPE_QUEST_MEGA_EVOLVE_POKEMON\020+*D\n\nMe" +
+      "tricType\022\031\n\025METRIC_TYPE_METRIC_KM\020\000\022\033\n\027M" +
+      "ETRIC_TYPE_METRIC_STEP\020\001*\376\t\n\022OnboardingE" +
+      "ventIds\022%\n!ONBOARDING_EVENT_IDS_TOS_ACCE" +
+      "PTED\020\000\022)\n%ONBOARDING_EVENT_IDS_PRIVACY_A" +
+      "CCEPTED\020\001\022%\n!ONBOARDING_EVENT_IDS_CONVER" +
+      "SATION\020\002\022(\n$ONBOARDING_EVENT_IDS_ENCOUNT" +
+      "ER_ENTER\020\003\022(\n$ONBOARDING_EVENT_IDS_ENCOU" +
+      "NTER_LEAVE\020\004\022)\n%ONBOARDING_EVENT_IDS_AVA" +
+      "TAR_SELECTION\020\005\022&\n\"ONBOARDING_EVENT_IDS_" +
+      "AVATAR_GENDER\020\006\022-\n)ONBOARDING_EVENT_IDS_" +
+      "AVATAR_GENDER_CHOSEN\020\007\022+\n\'ONBOARDING_EVE" +
+      "NT_IDS_AVATAR_HEAD_CHOSEN\020\010\022+\n\'ONBOARDIN" +
+      "G_EVENT_IDS_AVATAR_BODY_CHOSEN\020\t\022)\n%ONBO" +
+      "ARDING_EVENT_IDS_AVATAR_TRY_AGAIN\020\n\022(\n$O" +
+      "NBOARDING_EVENT_IDS_AVATAR_ACCEPTED\020\013\022#\n" +
+      "\037ONBOARDING_EVENT_IDS_NAME_ENTRY\020\014\022)\n%ON" +
+      "BOARDING_EVENT_IDS_NAME_UNAVAILABLE\020\r\022&\n" +
+      "\"ONBOARDING_EVENT_IDS_NAME_ACCEPTED\020\016\0221\n" +
+      "-ONBOARDING_EVENT_IDS_POKEDEX_TUTORIAL_S" +
+      "TARTED\020\017\022A\n=ONBOARDING_EVENT_IDS_POKEDEX" +
+      "_TUTORIAL_INFO_PANEL_EXIT_PRESSED\020\020\022-\n)O" +
+      "NBOARDING_EVENT_IDS_POKEDEX_EXIT_PRESSED" +
+      "\020\021\022-\n)ONBOARDING_EVENT_IDS_EGG_TUTORIAL_" +
+      "STARTED\020\022\022+\n\'ONBOARDING_EVENT_IDS_EGG_TU" +
+      "TORIAL_PRESS\020\023\022.\n*ONBOARDING_EVENT_IDS_E" +
+      "GG_TUTORIAL_FINISHED\020\024\022(\n$ONBOARDING_EVE" +
+      "NT_IDS_POKESTOP_LETSGO\020\025\0227\n3ONBOARDING_E" +
+      "VENT_IDS_WILD_POKEMON_ENCOUNTER_ENTERED\020" +
+      "\026\022,\n(ONBOARDING_EVENT_IDS_WILD_POKEMON_C" +
+      "AUGHT\020\027\022,\n(ONBOARDING_EVENT_IDS_AR_STAND" +
+      "ARD_ENABLED\020\030\022-\n)ONBOARDING_EVENT_IDS_AR" +
+      "_STANDARD_REJECTED\020\031\022(\n$ONBOARDING_EVENT" +
+      "_IDS_AR_PLUS_ENABLED\020\032\022)\n%ONBOARDING_EVE" +
+      "NT_IDS_AR_PLUS_REJECTED\020\033*\300\005\n\014CameraTarg" +
+      "et\022%\n!CAMERA_TARGET_CAM_TARGET_ATTACKER\020" +
+      "\000\022*\n&CAMERA_TARGET_CAM_TARGET_ATTACKER_E" +
+      "DGE\020\001\022,\n(CAMERA_TARGET_CAM_TARGET_ATTACK" +
+      "ER_GROUND\020\002\022%\n!CAMERA_TARGET_CAM_TARGET_" +
+      "DEFENDER\020\003\022*\n&CAMERA_TARGET_CAM_TARGET_D" +
+      "EFENDER_EDGE\020\004\022,\n(CAMERA_TARGET_CAM_TARG" +
+      "ET_DEFENDER_GROUND\020\005\022.\n*CAMERA_TARGET_CA" +
+      "M_TARGET_ATTACKER_DEFENDER\020\006\0223\n/CAMERA_T" +
+      "ARGET_CAM_TARGET_ATTACKER_DEFENDER_EDGE\020" +
+      "\007\022.\n*CAMERA_TARGET_CAM_TARGET_DEFENDER_A" +
+      "TTACKER\020\010\0223\n/CAMERA_TARGET_CAM_TARGET_DE" +
+      "FENDER_ATTACKER_EDGE\020\t\0225\n1CAMERA_TARGET_" +
+      "CAM_TARGET_ATTACKER_DEFENDER_MIRROR\020\013\0227\n" +
+      "3CAMERA_TARGET_CAM_TARGET_SHOULDER_ATTAC" +
+      "KER_DEFENDER\020\014\022>\n:CAMERA_TARGET_CAM_TARG" +
+      "ET_SHOULDER_ATTACKER_DEFENDER_MIRROR\020\r\0224" +
+      "\n0CAMERA_TARGET_CAM_TARGET_ATTACKER_DEFE" +
+      "NDER_WORLD\020\016*M\n\020AvatarCompletion\022\035\n\031AVAT" +
+      "AR_COMPLETION_SUCCESS\020\000\022\032\n\026AVATAR_COMPLE" +
+      "TION_QUIT\020\001*\375\006\n\016HoloItemEffect\022%\n!HOLO_I" +
+      "TEM_EFFECT_ITEM_EFFECT_NONE\020\000\022-\n(HOLO_IT" +
+      "EM_EFFECT_ITEM_EFFECT_CAP_NO_FLEE\020\350\007\0221\n," +
+      "HOLO_ITEM_EFFECT_ITEM_EFFECT_CAP_NO_MOVE" +
+      "MENT\020\352\007\022/\n*HOLO_ITEM_EFFECT_ITEM_EFFECT_" +
+      "CAP_NO_THREAT\020\353\007\0220\n+HOLO_ITEM_EFFECT_ITE" +
+      "M_EFFECT_CAP_TARGET_MAX\020\354\007\0221\n,HOLO_ITEM_" +
+      "EFFECT_ITEM_EFFECT_CAP_TARGET_SLOW\020\355\007\0222\n" +
+      "-HOLO_ITEM_EFFECT_ITEM_EFFECT_CAP_CHANCE" +
+      "_NIGHT\020\356\007\0224\n/HOLO_ITEM_EFFECT_ITEM_EFFEC" +
+      "T_CAP_CHANCE_TRAINER\020\357\007\0228\n3HOLO_ITEM_EFF" +
+      "ECT_ITEM_EFFECT_CAP_CHANCE_FIRST_THROW\020\360" +
+      "\007\0223\n.HOLO_ITEM_EFFECT_ITEM_EFFECT_CAP_CH" +
+      "ANCE_LEGEND\020\361\007\0222\n-HOLO_ITEM_EFFECT_ITEM_" +
+      "EFFECT_CAP_CHANCE_HEAVY\020\362\007\0223\n.HOLO_ITEM_" +
+      "EFFECT_ITEM_EFFECT_CAP_CHANCE_REPEAT\020\363\007\022" +
+      "8\n3HOLO_ITEM_EFFECT_ITEM_EFFECT_CAP_CHAN" +
+      "CE_MULTI_THROW\020\364\007\0223\n.HOLO_ITEM_EFFECT_IT" +
+      "EM_EFFECT_CAP_CHANCE_ALWAYS\020\365\007\0229\n4HOLO_I" +
+      "TEM_EFFECT_ITEM_EFFECT_CAP_CHANCE_SINGLE" +
+      "_THROW\020\366\007\022-\n(HOLO_ITEM_EFFECT_ITEM_EFFEC" +
+      "T_CANDY_AWARD\020\367\007\0221\n,HOLO_ITEM_EFFECT_ITE" +
+      "M_EFFECT_FULL_MOTIVATION\020\370\007*\254\002\n\034RemoteRa" +
+      "idInviteAcceptSource\022O\nKREMOTE_RAID_INVI" +
+      "TE_ACCEPT_SOURCE_UNDEFINED_REMOTE_RAID_I" +
+      "NVITE_ACCEPT_SOURCE\020\000\0227\n3REMOTE_RAID_INV" +
+      "ITE_ACCEPT_SOURCE_REMOTE_RAID_IN_APP\020\001\022B" +
+      "\n>REMOTE_RAID_INVITE_ACCEPT_SOURCE_REMOT" +
+      "E_RAID_PUSH_NOTIFICATION\020\002\022>\n:REMOTE_RAI" +
+      "D_INVITE_ACCEPT_SOURCE_REMOTE_RAID_NEARB" +
+      "Y_WINDOW\020\003*\352\001\n\022CombatRewardStatus\022,\n(COM" +
+      "BAT_REWARD_STATUS_UNSET_REWARD_STATUS\020\000\022" +
+      "(\n$COMBAT_REWARD_STATUS_REWARDS_GRANTED\020" +
+      "\001\022-\n)COMBAT_REWARD_STATUS_MAX_REWARDS_RE" +
+      "CEIVED\020\002\022(\n$COMBAT_REWARD_STATUS_PLAYER_" +
+      "BAG_FULL\020\003\022#\n\037COMBAT_REWARD_STATUS_NO_RE" +
+      "WARDS\020\004*a\n\014PoiImageType\022\030\n\024POI_IMAGE_TYP" +
+      "E_UNSET\020\000\022\027\n\023POI_IMAGE_TYPE_MAIN\020\001\022\036\n\032PO" +
+      "I_IMAGE_TYPE_SURROUNDING\020\002*\374\002\n\023PokedexGe" +
+      "nerationId\022\036\n\032POKEDEX_GENERATION_ID_GEN1" +
+      "\020\000\022\036\n\032POKEDEX_GENERATION_ID_GEN2\020\001\022\036\n\032PO" +
+      "KEDEX_GENERATION_ID_GEN3\020\002\022\036\n\032POKEDEX_GE" +
+      "NERATION_ID_GEN4\020\003\022\036\n\032POKEDEX_GENERATION" +
+      "_ID_GEN5\020\004\022\036\n\032POKEDEX_GENERATION_ID_GEN6" +
+      "\020\005\022\036\n\032POKEDEX_GENERATION_ID_GEN7\020\006\022\036\n\032PO" +
+      "KEDEX_GENERATION_ID_GEN8\020\007\022!\n\034POKEDEX_GE" +
+      "NERATION_ID_MELTAN\020\351\007\022\"\n\035POKEDEX_GENERAT" +
+      "ION_ID_MEGAEVO\020\352\007\022\036\n\031POKEDEX_GENERATION_" +
+      "ID_ALL\020\211\'*\226\342\001\n\rHoloPokemonId\022!\n\035HOLO_POK" +
+      "EMON_ID_POKEMON_UNSET\020\000\022+\n\'HOLO_POKEMON_" +
+      "ID_V0001_POKEMON_BULBASAUR\020\001\022)\n%HOLO_POK" +
+      "EMON_ID_V0002_POKEMON_IVYSAUR\020\002\022*\n&HOLO_" +
+      "POKEMON_ID_V0003_POKEMON_VENUSAUR\020\003\022,\n(H" +
+      "OLO_POKEMON_ID_V0004_POKEMON_CHARMANDER\020" +
+      "\004\022,\n(HOLO_POKEMON_ID_V0005_POKEMON_CHARM" +
+      "ELEON\020\005\022+\n\'HOLO_POKEMON_ID_V0006_POKEMON" +
+      "_CHARIZARD\020\006\022*\n&HOLO_POKEMON_ID_V0007_PO" +
+      "KEMON_SQUIRTLE\020\007\022+\n\'HOLO_POKEMON_ID_V000" +
+      "8_POKEMON_WARTORTLE\020\010\022+\n\'HOLO_POKEMON_ID" +
+      "_V0009_POKEMON_BLASTOISE\020\t\022*\n&HOLO_POKEM" +
+      "ON_ID_V0010_POKEMON_CATERPIE\020\n\022)\n%HOLO_P" +
+      "OKEMON_ID_V0011_POKEMON_METAPOD\020\013\022,\n(HOL" +
+      "O_POKEMON_ID_V0012_POKEMON_BUTTERFREE\020\014\022" +
+      "(\n$HOLO_POKEMON_ID_V0013_POKEMON_WEEDLE\020" +
+      "\r\022(\n$HOLO_POKEMON_ID_V0014_POKEMON_KAKUN" +
+      "A\020\016\022*\n&HOLO_POKEMON_ID_V0015_POKEMON_BEE" +
+      "DRILL\020\017\022(\n$HOLO_POKEMON_ID_V0016_POKEMON" +
+      "_PIDGEY\020\020\022+\n\'HOLO_POKEMON_ID_V0017_POKEM" +
+      "ON_PIDGEOTTO\020\021\022)\n%HOLO_POKEMON_ID_V0018_" +
+      "POKEMON_PIDGEOT\020\022\022)\n%HOLO_POKEMON_ID_V00" +
+      "19_POKEMON_RATTATA\020\023\022*\n&HOLO_POKEMON_ID_" +
+      "V0020_POKEMON_RATICATE\020\024\022)\n%HOLO_POKEMON" +
+      "_ID_V0021_POKEMON_SPEAROW\020\025\022(\n$HOLO_POKE" +
+      "MON_ID_V0022_POKEMON_FEAROW\020\026\022\'\n#HOLO_PO" +
+      "KEMON_ID_V0023_POKEMON_EKANS\020\027\022\'\n#HOLO_P" +
+      "OKEMON_ID_V0024_POKEMON_ARBOK\020\030\022)\n%HOLO_" +
+      "POKEMON_ID_V0025_POKEMON_PIKACHU\020\031\022(\n$HO" +
+      "LO_POKEMON_ID_V0026_POKEMON_RAICHU\020\032\022+\n\'" +
+      "HOLO_POKEMON_ID_V0027_POKEMON_SANDSHREW\020" +
+      "\033\022+\n\'HOLO_POKEMON_ID_V0028_POKEMON_SANDS" +
+      "LASH\020\034\022)\n%HOLO_POKEMON_ID_V0029_POKEMON_" +
+      "NIDORAN\020\035\022*\n&HOLO_POKEMON_ID_V0030_POKEM" +
+      "ON_NIDORINA\020\036\022+\n\'HOLO_POKEMON_ID_V0031_P" +
+      "OKEMON_NIDOQUEEN\020\037\022)\n%HOLO_POKEMON_ID_V0" +
+      "032_POKEMON_NIDORAN\020 \022*\n&HOLO_POKEMON_ID" +
+      "_V0033_POKEMON_NIDORINO\020!\022*\n&HOLO_POKEMO" +
+      "N_ID_V0034_POKEMON_NIDOKING\020\"\022*\n&HOLO_PO" +
+      "KEMON_ID_V0035_POKEMON_CLEFAIRY\020#\022*\n&HOL" +
+      "O_POKEMON_ID_V0036_POKEMON_CLEFABLE\020$\022(\n" +
+      "$HOLO_POKEMON_ID_V0037_POKEMON_VULPIX\020%\022" +
+      "+\n\'HOLO_POKEMON_ID_V0038_POKEMON_NINETAL" +
+      "ES\020&\022,\n(HOLO_POKEMON_ID_V0039_POKEMON_JI" +
+      "GGLYPUFF\020\'\022,\n(HOLO_POKEMON_ID_V0040_POKE" +
+      "MON_WIGGLYTUFF\020(\022\'\n#HOLO_POKEMON_ID_V004" +
+      "1_POKEMON_ZUBAT\020)\022(\n$HOLO_POKEMON_ID_V00" +
+      "42_POKEMON_GOLBAT\020*\022(\n$HOLO_POKEMON_ID_V" +
+      "0043_POKEMON_ODDISH\020+\022\'\n#HOLO_POKEMON_ID" +
+      "_V0044_POKEMON_GLOOM\020,\022+\n\'HOLO_POKEMON_I" +
+      "D_V0045_POKEMON_VILEPLUME\020-\022\'\n#HOLO_POKE" +
+      "MON_ID_V0046_POKEMON_PARAS\020.\022*\n&HOLO_POK" +
+      "EMON_ID_V0047_POKEMON_PARASECT\020/\022)\n%HOLO" +
+      "_POKEMON_ID_V0048_POKEMON_VENONAT\0200\022*\n&H" +
+      "OLO_POKEMON_ID_V0049_POKEMON_VENOMOTH\0201\022" +
+      ")\n%HOLO_POKEMON_ID_V0050_POKEMON_DIGLETT" +
+      "\0202\022)\n%HOLO_POKEMON_ID_V0051_POKEMON_DUGT" +
+      "RIO\0203\022(\n$HOLO_POKEMON_ID_V0052_POKEMON_M" +
+      "EOWTH\0204\022)\n%HOLO_POKEMON_ID_V0053_POKEMON" +
+      "_PERSIAN\0205\022)\n%HOLO_POKEMON_ID_V0054_POKE" +
+      "MON_PSYDUCK\0206\022)\n%HOLO_POKEMON_ID_V0055_P" +
+      "OKEMON_GOLDUCK\0207\022(\n$HOLO_POKEMON_ID_V005" +
+      "6_POKEMON_MANKEY\0208\022*\n&HOLO_POKEMON_ID_V0" +
+      "057_POKEMON_PRIMEAPE\0209\022+\n\'HOLO_POKEMON_I" +
+      "D_V0058_POKEMON_GROWLITHE\020:\022*\n&HOLO_POKE" +
+      "MON_ID_V0059_POKEMON_ARCANINE\020;\022)\n%HOLO_" +
+      "POKEMON_ID_V0060_POKEMON_POLIWAG\020<\022+\n\'HO" +
+      "LO_POKEMON_ID_V0061_POKEMON_POLIWHIRL\020=\022" +
+      "+\n\'HOLO_POKEMON_ID_V0062_POKEMON_POLIWRA" +
+      "TH\020>\022&\n\"HOLO_POKEMON_ID_V0063_POKEMON_AB" +
+      "RA\020?\022)\n%HOLO_POKEMON_ID_V0064_POKEMON_KA" +
+      "DABRA\020@\022*\n&HOLO_POKEMON_ID_V0065_POKEMON" +
+      "_ALAKAZAM\020A\022(\n$HOLO_POKEMON_ID_V0066_POK" +
+      "EMON_MACHOP\020B\022)\n%HOLO_POKEMON_ID_V0067_P" +
+      "OKEMON_MACHOKE\020C\022)\n%HOLO_POKEMON_ID_V006" +
+      "8_POKEMON_MACHAMP\020D\022,\n(HOLO_POKEMON_ID_V" +
+      "0069_POKEMON_BELLSPROUT\020E\022,\n(HOLO_POKEMO" +
+      "N_ID_V0070_POKEMON_WEEPINBELL\020F\022,\n(HOLO_" +
+      "POKEMON_ID_V0071_POKEMON_VICTREEBEL\020G\022+\n" +
+      "\'HOLO_POKEMON_ID_V0072_POKEMON_TENTACOOL" +
+      "\020H\022,\n(HOLO_POKEMON_ID_V0073_POKEMON_TENT" +
+      "ACRUEL\020I\022)\n%HOLO_POKEMON_ID_V0074_POKEMO" +
+      "N_GEODUDE\020J\022*\n&HOLO_POKEMON_ID_V0075_POK" +
+      "EMON_GRAVELER\020K\022\'\n#HOLO_POKEMON_ID_V0076" +
+      "_POKEMON_GOLEM\020L\022(\n$HOLO_POKEMON_ID_V007" +
+      "7_POKEMON_PONYTA\020M\022*\n&HOLO_POKEMON_ID_V0" +
+      "078_POKEMON_RAPIDASH\020N\022*\n&HOLO_POKEMON_I" +
+      "D_V0079_POKEMON_SLOWPOKE\020O\022)\n%HOLO_POKEM" +
+      "ON_ID_V0080_POKEMON_SLOWBRO\020P\022+\n\'HOLO_PO" +
+      "KEMON_ID_V0081_POKEMON_MAGNEMITE\020Q\022*\n&HO" +
+      "LO_POKEMON_ID_V0082_POKEMON_MAGNETON\020R\022+" +
+      "\n\'HOLO_POKEMON_ID_V0083_POKEMON_FARFETCH" +
+      "D\020S\022\'\n#HOLO_POKEMON_ID_V0084_POKEMON_DOD" +
+      "UO\020T\022(\n$HOLO_POKEMON_ID_V0085_POKEMON_DO" +
+      "DRIO\020U\022&\n\"HOLO_POKEMON_ID_V0086_POKEMON_" +
+      "SEEL\020V\022)\n%HOLO_POKEMON_ID_V0087_POKEMON_" +
+      "DEWGONG\020W\022(\n$HOLO_POKEMON_ID_V0088_POKEM" +
+      "ON_GRIMER\020X\022%\n!HOLO_POKEMON_ID_V0089_POK" +
+      "EMON_MUK\020Y\022*\n&HOLO_POKEMON_ID_V0090_POKE" +
+      "MON_SHELLDER\020Z\022*\n&HOLO_POKEMON_ID_V0091_" +
+      "POKEMON_CLOYSTER\020[\022(\n$HOLO_POKEMON_ID_V0" +
+      "092_POKEMON_GASTLY\020\\\022)\n%HOLO_POKEMON_ID_" +
+      "V0093_POKEMON_HAUNTER\020]\022(\n$HOLO_POKEMON_" +
+      "ID_V0094_POKEMON_GENGAR\020^\022&\n\"HOLO_POKEMO" +
+      "N_ID_V0095_POKEMON_ONIX\020_\022)\n%HOLO_POKEMO" +
+      "N_ID_V0096_POKEMON_DROWZEE\020`\022\'\n#HOLO_POK" +
+      "EMON_ID_V0097_POKEMON_HYPNO\020a\022(\n$HOLO_PO" +
+      "KEMON_ID_V0098_POKEMON_KRABBY\020b\022)\n%HOLO_" +
+      "POKEMON_ID_V0099_POKEMON_KINGLER\020c\022)\n%HO" +
+      "LO_POKEMON_ID_V0100_POKEMON_VOLTORB\020d\022+\n" +
+      "\'HOLO_POKEMON_ID_V0101_POKEMON_ELECTRODE" +
+      "\020e\022+\n\'HOLO_POKEMON_ID_V0102_POKEMON_EXEG" +
+      "GCUTE\020f\022+\n\'HOLO_POKEMON_ID_V0103_POKEMON" +
+      "_EXEGGUTOR\020g\022(\n$HOLO_POKEMON_ID_V0104_PO" +
+      "KEMON_CUBONE\020h\022)\n%HOLO_POKEMON_ID_V0105_" +
+      "POKEMON_MAROWAK\020i\022+\n\'HOLO_POKEMON_ID_V01" +
+      "06_POKEMON_HITMONLEE\020j\022,\n(HOLO_POKEMON_I" +
+      "D_V0107_POKEMON_HITMONCHAN\020k\022+\n\'HOLO_POK" +
+      "EMON_ID_V0108_POKEMON_LICKITUNG\020l\022)\n%HOL" +
+      "O_POKEMON_ID_V0109_POKEMON_KOFFING\020m\022)\n%" +
+      "HOLO_POKEMON_ID_V0110_POKEMON_WEEZING\020n\022" +
+      ")\n%HOLO_POKEMON_ID_V0111_POKEMON_RHYHORN" +
+      "\020o\022(\n$HOLO_POKEMON_ID_V0112_POKEMON_RHYD" +
+      "ON\020p\022)\n%HOLO_POKEMON_ID_V0113_POKEMON_CH" +
+      "ANSEY\020q\022)\n%HOLO_POKEMON_ID_V0114_POKEMON" +
+      "_TANGELA\020r\022,\n(HOLO_POKEMON_ID_V0115_POKE" +
+      "MON_KANGASKHAN\020s\022(\n$HOLO_POKEMON_ID_V011" +
+      "6_POKEMON_HORSEA\020t\022(\n$HOLO_POKEMON_ID_V0" +
+      "117_POKEMON_SEADRA\020u\022)\n%HOLO_POKEMON_ID_" +
+      "V0118_POKEMON_GOLDEEN\020v\022)\n%HOLO_POKEMON_" +
+      "ID_V0119_POKEMON_SEAKING\020w\022(\n$HOLO_POKEM" +
+      "ON_ID_V0120_POKEMON_STARYU\020x\022)\n%HOLO_POK" +
+      "EMON_ID_V0121_POKEMON_STARMIE\020y\022)\n%HOLO_" +
+      "POKEMON_ID_V0122_POKEMON_MR_MIME\020z\022)\n%HO" +
+      "LO_POKEMON_ID_V0123_POKEMON_SCYTHER\020{\022&\n" +
+      "\"HOLO_POKEMON_ID_V0124_POKEMON_JYNX\020|\022,\n" +
+      "(HOLO_POKEMON_ID_V0125_POKEMON_ELECTABUZ" +
+      "Z\020}\022(\n$HOLO_POKEMON_ID_V0126_POKEMON_MAG" +
+      "MAR\020~\022(\n$HOLO_POKEMON_ID_V0127_POKEMON_P" +
+      "INSIR\020\177\022)\n$HOLO_POKEMON_ID_V0128_POKEMON" +
+      "_TAUROS\020\200\001\022+\n&HOLO_POKEMON_ID_V0129_POKE" +
+      "MON_MAGIKARP\020\201\001\022+\n&HOLO_POKEMON_ID_V0130" +
+      "_POKEMON_GYARADOS\020\202\001\022)\n$HOLO_POKEMON_ID_" +
+      "V0131_POKEMON_LAPRAS\020\203\001\022(\n#HOLO_POKEMON_" +
+      "ID_V0132_POKEMON_DITTO\020\204\001\022(\n#HOLO_POKEMO" +
+      "N_ID_V0133_POKEMON_EEVEE\020\205\001\022+\n&HOLO_POKE" +
+      "MON_ID_V0134_POKEMON_VAPOREON\020\206\001\022*\n%HOLO" +
+      "_POKEMON_ID_V0135_POKEMON_JOLTEON\020\207\001\022*\n%" +
+      "HOLO_POKEMON_ID_V0136_POKEMON_FLAREON\020\210\001" +
+      "\022*\n%HOLO_POKEMON_ID_V0137_POKEMON_PORYGO" +
+      "N\020\211\001\022*\n%HOLO_POKEMON_ID_V0138_POKEMON_OM" +
+      "ANYTE\020\212\001\022*\n%HOLO_POKEMON_ID_V0139_POKEMO" +
+      "N_OMASTAR\020\213\001\022)\n$HOLO_POKEMON_ID_V0140_PO" +
+      "KEMON_KABUTO\020\214\001\022+\n&HOLO_POKEMON_ID_V0141" +
+      "_POKEMON_KABUTOPS\020\215\001\022-\n(HOLO_POKEMON_ID_" +
+      "V0142_POKEMON_AERODACTYL\020\216\001\022*\n%HOLO_POKE" +
+      "MON_ID_V0143_POKEMON_SNORLAX\020\217\001\022+\n&HOLO_" +
+      "POKEMON_ID_V0144_POKEMON_ARTICUNO\020\220\001\022)\n$" +
+      "HOLO_POKEMON_ID_V0145_POKEMON_ZAPDOS\020\221\001\022" +
+      "*\n%HOLO_POKEMON_ID_V0146_POKEMON_MOLTRES" +
+      "\020\222\001\022*\n%HOLO_POKEMON_ID_V0147_POKEMON_DRA" +
+      "TINI\020\223\001\022,\n\'HOLO_POKEMON_ID_V0148_POKEMON" +
+      "_DRAGONAIR\020\224\001\022,\n\'HOLO_POKEMON_ID_V0149_P" +
+      "OKEMON_DRAGONITE\020\225\001\022)\n$HOLO_POKEMON_ID_V" +
+      "0150_POKEMON_MEWTWO\020\226\001\022&\n!HOLO_POKEMON_I" +
+      "D_V0151_POKEMON_MEW\020\227\001\022,\n\'HOLO_POKEMON_I" +
+      "D_V0152_POKEMON_CHIKORITA\020\230\001\022*\n%HOLO_POK" +
+      "EMON_ID_V0153_POKEMON_BAYLEEF\020\231\001\022+\n&HOLO" +
+      "_POKEMON_ID_V0154_POKEMON_MEGANIUM\020\232\001\022,\n" +
+      "\'HOLO_POKEMON_ID_V0155_POKEMON_CYNDAQUIL" +
+      "\020\233\001\022*\n%HOLO_POKEMON_ID_V0156_POKEMON_QUI" +
+      "LAVA\020\234\001\022-\n(HOLO_POKEMON_ID_V0157_POKEMON" +
+      "_TYPHLOSION\020\235\001\022+\n&HOLO_POKEMON_ID_V0158_" +
+      "POKEMON_TOTODILE\020\236\001\022+\n&HOLO_POKEMON_ID_V" +
+      "0159_POKEMON_CROCONAW\020\237\001\022-\n(HOLO_POKEMON" +
+      "_ID_V0160_POKEMON_FERALIGATR\020\240\001\022*\n%HOLO_" +
+      "POKEMON_ID_V0161_POKEMON_SENTRET\020\241\001\022)\n$H" +
+      "OLO_POKEMON_ID_V0162_POKEMON_FURRET\020\242\001\022+" +
+      "\n&HOLO_POKEMON_ID_V0163_POKEMON_HOOTHOOT" +
+      "\020\243\001\022*\n%HOLO_POKEMON_ID_V0164_POKEMON_NOC" +
+      "TOWL\020\244\001\022)\n$HOLO_POKEMON_ID_V0165_POKEMON" +
+      "_LEDYBA\020\245\001\022)\n$HOLO_POKEMON_ID_V0166_POKE" +
+      "MON_LEDIAN\020\246\001\022+\n&HOLO_POKEMON_ID_V0167_P" +
+      "OKEMON_SPINARAK\020\247\001\022*\n%HOLO_POKEMON_ID_V0" +
+      "168_POKEMON_ARIADOS\020\250\001\022)\n$HOLO_POKEMON_I" +
+      "D_V0169_POKEMON_CROBAT\020\251\001\022+\n&HOLO_POKEMO" +
+      "N_ID_V0170_POKEMON_CHINCHOU\020\252\001\022*\n%HOLO_P" +
+      "OKEMON_ID_V0171_POKEMON_LANTURN\020\253\001\022(\n#HO" +
+      "LO_POKEMON_ID_V0172_POKEMON_PICHU\020\254\001\022)\n$" +
+      "HOLO_POKEMON_ID_V0173_POKEMON_CLEFFA\020\255\001\022" +
+      ",\n\'HOLO_POKEMON_ID_V0174_POKEMON_IGGLYBU" +
+      "FF\020\256\001\022)\n$HOLO_POKEMON_ID_V0175_POKEMON_T" +
+      "OGEPI\020\257\001\022*\n%HOLO_POKEMON_ID_V0176_POKEMO" +
+      "N_TOGETIC\020\260\001\022\'\n\"HOLO_POKEMON_ID_V0177_PO" +
+      "KEMON_NATU\020\261\001\022\'\n\"HOLO_POKEMON_ID_V0178_P" +
+      "OKEMON_XATU\020\262\001\022)\n$HOLO_POKEMON_ID_V0179_" +
+      "POKEMON_MAREEP\020\263\001\022*\n%HOLO_POKEMON_ID_V01" +
+      "80_POKEMON_FLAAFFY\020\264\001\022+\n&HOLO_POKEMON_ID" +
+      "_V0181_POKEMON_AMPHAROS\020\265\001\022,\n\'HOLO_POKEM" +
+      "ON_ID_V0182_POKEMON_BELLOSSOM\020\266\001\022)\n$HOLO" +
+      "_POKEMON_ID_V0183_POKEMON_MARILL\020\267\001\022,\n\'H" +
+      "OLO_POKEMON_ID_V0184_POKEMON_AZUMARILL\020\270" +
+      "\001\022,\n\'HOLO_POKEMON_ID_V0185_POKEMON_SUDOW" +
+      "OODO\020\271\001\022+\n&HOLO_POKEMON_ID_V0186_POKEMON" +
+      "_POLITOED\020\272\001\022)\n$HOLO_POKEMON_ID_V0187_PO" +
+      "KEMON_HOPPIP\020\273\001\022+\n&HOLO_POKEMON_ID_V0188" +
+      "_POKEMON_SKIPLOOM\020\274\001\022+\n&HOLO_POKEMON_ID_" +
+      "V0189_POKEMON_JUMPLUFF\020\275\001\022(\n#HOLO_POKEMO" +
+      "N_ID_V0190_POKEMON_AIPOM\020\276\001\022*\n%HOLO_POKE" +
+      "MON_ID_V0191_POKEMON_SUNKERN\020\277\001\022+\n&HOLO_" +
+      "POKEMON_ID_V0192_POKEMON_SUNFLORA\020\300\001\022(\n#" +
+      "HOLO_POKEMON_ID_V0193_POKEMON_YANMA\020\301\001\022)" +
+      "\n$HOLO_POKEMON_ID_V0194_POKEMON_WOOPER\020\302" +
+      "\001\022+\n&HOLO_POKEMON_ID_V0195_POKEMON_QUAGS" +
+      "IRE\020\303\001\022)\n$HOLO_POKEMON_ID_V0196_POKEMON_" +
+      "ESPEON\020\304\001\022*\n%HOLO_POKEMON_ID_V0197_POKEM" +
+      "ON_UMBREON\020\305\001\022*\n%HOLO_POKEMON_ID_V0198_P" +
+      "OKEMON_MURKROW\020\306\001\022+\n&HOLO_POKEMON_ID_V01" +
+      "99_POKEMON_SLOWKING\020\307\001\022-\n(HOLO_POKEMON_I" +
+      "D_V0200_POKEMON_MISDREAVUS\020\310\001\022(\n#HOLO_PO" +
+      "KEMON_ID_V0201_POKEMON_UNOWN\020\311\001\022,\n\'HOLO_" +
+      "POKEMON_ID_V0202_POKEMON_WOBBUFFET\020\312\001\022,\n" +
+      "\'HOLO_POKEMON_ID_V0203_POKEMON_GIRAFARIG" +
+      "\020\313\001\022)\n$HOLO_POKEMON_ID_V0204_POKEMON_PIN" +
+      "ECO\020\314\001\022-\n(HOLO_POKEMON_ID_V0205_POKEMON_" +
+      "FORRETRESS\020\315\001\022,\n\'HOLO_POKEMON_ID_V0206_P" +
+      "OKEMON_DUNSPARCE\020\316\001\022)\n$HOLO_POKEMON_ID_V" +
+      "0207_POKEMON_GLIGAR\020\317\001\022*\n%HOLO_POKEMON_I" +
+      "D_V0208_POKEMON_STEELIX\020\320\001\022+\n&HOLO_POKEM" +
+      "ON_ID_V0209_POKEMON_SNUBBULL\020\321\001\022+\n&HOLO_" +
+      "POKEMON_ID_V0210_POKEMON_GRANBULL\020\322\001\022+\n&" +
+      "HOLO_POKEMON_ID_V0211_POKEMON_QWILFISH\020\323" +
+      "\001\022)\n$HOLO_POKEMON_ID_V0212_POKEMON_SCIZO" +
+      "R\020\324\001\022*\n%HOLO_POKEMON_ID_V0213_POKEMON_SH" +
+      "UCKLE\020\325\001\022,\n\'HOLO_POKEMON_ID_V0214_POKEMO" +
+      "N_HERACROSS\020\326\001\022*\n%HOLO_POKEMON_ID_V0215_" +
+      "POKEMON_SNEASEL\020\327\001\022,\n\'HOLO_POKEMON_ID_V0" +
+      "216_POKEMON_TEDDIURSA\020\330\001\022+\n&HOLO_POKEMON" +
+      "_ID_V0217_POKEMON_URSARING\020\331\001\022)\n$HOLO_PO" +
+      "KEMON_ID_V0218_POKEMON_SLUGMA\020\332\001\022+\n&HOLO" +
+      "_POKEMON_ID_V0219_POKEMON_MAGCARGO\020\333\001\022)\n" +
+      "$HOLO_POKEMON_ID_V0220_POKEMON_SWINUB\020\334\001" +
+      "\022,\n\'HOLO_POKEMON_ID_V0221_POKEMON_PILOSW" +
+      "INE\020\335\001\022*\n%HOLO_POKEMON_ID_V0222_POKEMON_" +
+      "CORSOLA\020\336\001\022+\n&HOLO_POKEMON_ID_V0223_POKE" +
+      "MON_REMORAID\020\337\001\022,\n\'HOLO_POKEMON_ID_V0224" +
+      "_POKEMON_OCTILLERY\020\340\001\022+\n&HOLO_POKEMON_ID" +
+      "_V0225_POKEMON_DELIBIRD\020\341\001\022*\n%HOLO_POKEM" +
+      "ON_ID_V0226_POKEMON_MANTINE\020\342\001\022+\n&HOLO_P",
+      "OKEMON_ID_V0227_POKEMON_SKARMORY\020\343\001\022+\n&H" +
+      "OLO_POKEMON_ID_V0228_POKEMON_HOUNDOUR\020\344\001" +
+      "\022+\n&HOLO_POKEMON_ID_V0229_POKEMON_HOUNDO" +
+      "OM\020\345\001\022*\n%HOLO_POKEMON_ID_V0230_POKEMON_K" +
+      "INGDRA\020\346\001\022)\n$HOLO_POKEMON_ID_V0231_POKEM" +
+      "ON_PHANPY\020\347\001\022*\n%HOLO_POKEMON_ID_V0232_PO" +
+      "KEMON_DONPHAN\020\350\001\022+\n&HOLO_POKEMON_ID_V023" +
+      "3_POKEMON_PORYGON2\020\351\001\022+\n&HOLO_POKEMON_ID" +
+      "_V0234_POKEMON_STANTLER\020\352\001\022+\n&HOLO_POKEM" +
+      "ON_ID_V0235_POKEMON_SMEARGLE\020\353\001\022*\n%HOLO_" +
+      "POKEMON_ID_V0236_POKEMON_TYROGUE\020\354\001\022,\n\'H" +
+      "OLO_POKEMON_ID_V0237_POKEMON_HITMONTOP\020\355" +
+      "\001\022+\n&HOLO_POKEMON_ID_V0238_POKEMON_SMOOC" +
+      "HUM\020\356\001\022)\n$HOLO_POKEMON_ID_V0239_POKEMON_" +
+      "ELEKID\020\357\001\022(\n#HOLO_POKEMON_ID_V0240_POKEM" +
+      "ON_MAGBY\020\360\001\022*\n%HOLO_POKEMON_ID_V0241_POK" +
+      "EMON_MILTANK\020\361\001\022*\n%HOLO_POKEMON_ID_V0242" +
+      "_POKEMON_BLISSEY\020\362\001\022)\n$HOLO_POKEMON_ID_V" +
+      "0243_POKEMON_RAIKOU\020\363\001\022(\n#HOLO_POKEMON_I" +
+      "D_V0244_POKEMON_ENTEI\020\364\001\022*\n%HOLO_POKEMON" +
+      "_ID_V0245_POKEMON_SUICUNE\020\365\001\022+\n&HOLO_POK" +
+      "EMON_ID_V0246_POKEMON_LARVITAR\020\366\001\022*\n%HOL" +
+      "O_POKEMON_ID_V0247_POKEMON_PUPITAR\020\367\001\022,\n" +
+      "\'HOLO_POKEMON_ID_V0248_POKEMON_TYRANITAR" +
+      "\020\370\001\022(\n#HOLO_POKEMON_ID_V0249_POKEMON_LUG" +
+      "IA\020\371\001\022(\n#HOLO_POKEMON_ID_V0250_POKEMON_H" +
+      "O_OH\020\372\001\022)\n$HOLO_POKEMON_ID_V0251_POKEMON" +
+      "_CELEBI\020\373\001\022*\n%HOLO_POKEMON_ID_V0252_POKE" +
+      "MON_TREECKO\020\374\001\022*\n%HOLO_POKEMON_ID_V0253_" +
+      "POKEMON_GROVYLE\020\375\001\022+\n&HOLO_POKEMON_ID_V0" +
+      "254_POKEMON_SCEPTILE\020\376\001\022*\n%HOLO_POKEMON_" +
+      "ID_V0255_POKEMON_TORCHIC\020\377\001\022,\n\'HOLO_POKE" +
+      "MON_ID_V0256_POKEMON_COMBUSKEN\020\200\002\022+\n&HOL" +
+      "O_POKEMON_ID_V0257_POKEMON_BLAZIKEN\020\201\002\022)" +
+      "\n$HOLO_POKEMON_ID_V0258_POKEMON_MUDKIP\020\202" +
+      "\002\022,\n\'HOLO_POKEMON_ID_V0259_POKEMON_MARSH" +
+      "TOMP\020\203\002\022+\n&HOLO_POKEMON_ID_V0260_POKEMON" +
+      "_SWAMPERT\020\204\002\022,\n\'HOLO_POKEMON_ID_V0261_PO" +
+      "KEMON_POOCHYENA\020\205\002\022,\n\'HOLO_POKEMON_ID_V0" +
+      "262_POKEMON_MIGHTYENA\020\206\002\022,\n\'HOLO_POKEMON" +
+      "_ID_V0263_POKEMON_ZIGZAGOON\020\207\002\022*\n%HOLO_P" +
+      "OKEMON_ID_V0264_POKEMON_LINOONE\020\210\002\022*\n%HO" +
+      "LO_POKEMON_ID_V0265_POKEMON_WURMPLE\020\211\002\022*" +
+      "\n%HOLO_POKEMON_ID_V0266_POKEMON_SILCOON\020" +
+      "\212\002\022,\n\'HOLO_POKEMON_ID_V0267_POKEMON_BEAU" +
+      "TIFLY\020\213\002\022*\n%HOLO_POKEMON_ID_V0268_POKEMO" +
+      "N_CASCOON\020\214\002\022)\n$HOLO_POKEMON_ID_V0269_PO" +
+      "KEMON_DUSTOX\020\215\002\022(\n#HOLO_POKEMON_ID_V0270" +
+      "_POKEMON_LOTAD\020\216\002\022)\n$HOLO_POKEMON_ID_V02" +
+      "71_POKEMON_LOMBRE\020\217\002\022+\n&HOLO_POKEMON_ID_" +
+      "V0272_POKEMON_LUDICOLO\020\220\002\022)\n$HOLO_POKEMO" +
+      "N_ID_V0273_POKEMON_SEEDOT\020\221\002\022*\n%HOLO_POK" +
+      "EMON_ID_V0274_POKEMON_NUZLEAF\020\222\002\022*\n%HOLO" +
+      "_POKEMON_ID_V0275_POKEMON_SHIFTRY\020\223\002\022*\n%" +
+      "HOLO_POKEMON_ID_V0276_POKEMON_TAILLOW\020\224\002" +
+      "\022*\n%HOLO_POKEMON_ID_V0277_POKEMON_SWELLO" +
+      "W\020\225\002\022*\n%HOLO_POKEMON_ID_V0278_POKEMON_WI" +
+      "NGULL\020\226\002\022+\n&HOLO_POKEMON_ID_V0279_POKEMO" +
+      "N_PELIPPER\020\227\002\022(\n#HOLO_POKEMON_ID_V0280_P" +
+      "OKEMON_RALTS\020\230\002\022)\n$HOLO_POKEMON_ID_V0281" +
+      "_POKEMON_KIRLIA\020\231\002\022,\n\'HOLO_POKEMON_ID_V0" +
+      "282_POKEMON_GARDEVOIR\020\232\002\022*\n%HOLO_POKEMON" +
+      "_ID_V0283_POKEMON_SURSKIT\020\233\002\022-\n(HOLO_POK" +
+      "EMON_ID_V0284_POKEMON_MASQUERAIN\020\234\002\022,\n\'H" +
+      "OLO_POKEMON_ID_V0285_POKEMON_SHROOMISH\020\235" +
+      "\002\022*\n%HOLO_POKEMON_ID_V0286_POKEMON_BRELO" +
+      "OM\020\236\002\022*\n%HOLO_POKEMON_ID_V0287_POKEMON_S" +
+      "LAKOTH\020\237\002\022+\n&HOLO_POKEMON_ID_V0288_POKEM" +
+      "ON_VIGOROTH\020\240\002\022*\n%HOLO_POKEMON_ID_V0289_" +
+      "POKEMON_SLAKING\020\241\002\022*\n%HOLO_POKEMON_ID_V0" +
+      "290_POKEMON_NINCADA\020\242\002\022*\n%HOLO_POKEMON_I" +
+      "D_V0291_POKEMON_NINJASK\020\243\002\022+\n&HOLO_POKEM" +
+      "ON_ID_V0292_POKEMON_SHEDINJA\020\244\002\022*\n%HOLO_" +
+      "POKEMON_ID_V0293_POKEMON_WHISMUR\020\245\002\022*\n%H" +
+      "OLO_POKEMON_ID_V0294_POKEMON_LOUDRED\020\246\002\022" +
+      "*\n%HOLO_POKEMON_ID_V0295_POKEMON_EXPLOUD" +
+      "\020\247\002\022+\n&HOLO_POKEMON_ID_V0296_POKEMON_MAK" +
+      "UHITA\020\250\002\022+\n&HOLO_POKEMON_ID_V0297_POKEMO" +
+      "N_HARIYAMA\020\251\002\022*\n%HOLO_POKEMON_ID_V0298_P" +
+      "OKEMON_AZURILL\020\252\002\022+\n&HOLO_POKEMON_ID_V02" +
+      "99_POKEMON_NOSEPASS\020\253\002\022)\n$HOLO_POKEMON_I" +
+      "D_V0300_POKEMON_SKITTY\020\254\002\022+\n&HOLO_POKEMO" +
+      "N_ID_V0301_POKEMON_DELCATTY\020\255\002\022*\n%HOLO_P" +
+      "OKEMON_ID_V0302_POKEMON_SABLEYE\020\256\002\022)\n$HO" +
+      "LO_POKEMON_ID_V0303_POKEMON_MAWILE\020\257\002\022\'\n" +
+      "\"HOLO_POKEMON_ID_V0304_POKEMON_ARON\020\260\002\022)" +
+      "\n$HOLO_POKEMON_ID_V0305_POKEMON_LAIRON\020\261" +
+      "\002\022)\n$HOLO_POKEMON_ID_V0306_POKEMON_AGGRO" +
+      "N\020\262\002\022+\n&HOLO_POKEMON_ID_V0307_POKEMON_ME" +
+      "DITITE\020\263\002\022+\n&HOLO_POKEMON_ID_V0308_POKEM" +
+      "ON_MEDICHAM\020\264\002\022,\n\'HOLO_POKEMON_ID_V0309_" +
+      "POKEMON_ELECTRIKE\020\265\002\022,\n\'HOLO_POKEMON_ID_" +
+      "V0310_POKEMON_MANECTRIC\020\266\002\022)\n$HOLO_POKEM" +
+      "ON_ID_V0311_POKEMON_PLUSLE\020\267\002\022(\n#HOLO_PO" +
+      "KEMON_ID_V0312_POKEMON_MINUN\020\270\002\022*\n%HOLO_" +
+      "POKEMON_ID_V0313_POKEMON_VOLBEAT\020\271\002\022+\n&H" +
+      "OLO_POKEMON_ID_V0314_POKEMON_ILLUMISE\020\272\002" +
+      "\022*\n%HOLO_POKEMON_ID_V0315_POKEMON_ROSELI" +
+      "A\020\273\002\022)\n$HOLO_POKEMON_ID_V0316_POKEMON_GU" +
+      "LPIN\020\274\002\022)\n$HOLO_POKEMON_ID_V0317_POKEMON" +
+      "_SWALOT\020\275\002\022+\n&HOLO_POKEMON_ID_V0318_POKE" +
+      "MON_CARVANHA\020\276\002\022+\n&HOLO_POKEMON_ID_V0319" +
+      "_POKEMON_SHARPEDO\020\277\002\022*\n%HOLO_POKEMON_ID_" +
+      "V0320_POKEMON_WAILMER\020\300\002\022*\n%HOLO_POKEMON" +
+      "_ID_V0321_POKEMON_WAILORD\020\301\002\022(\n#HOLO_POK" +
+      "EMON_ID_V0322_POKEMON_NUMEL\020\302\002\022+\n&HOLO_P" +
+      "OKEMON_ID_V0323_POKEMON_CAMERUPT\020\303\002\022*\n%H" +
+      "OLO_POKEMON_ID_V0324_POKEMON_TORKOAL\020\304\002\022" +
+      ")\n$HOLO_POKEMON_ID_V0325_POKEMON_SPOINK\020" +
+      "\305\002\022*\n%HOLO_POKEMON_ID_V0326_POKEMON_GRUM" +
+      "PIG\020\306\002\022)\n$HOLO_POKEMON_ID_V0327_POKEMON_" +
+      "SPINDA\020\307\002\022+\n&HOLO_POKEMON_ID_V0328_POKEM" +
+      "ON_TRAPINCH\020\310\002\022*\n%HOLO_POKEMON_ID_V0329_" +
+      "POKEMON_VIBRAVA\020\311\002\022)\n$HOLO_POKEMON_ID_V0" +
+      "330_POKEMON_FLYGON\020\312\002\022)\n$HOLO_POKEMON_ID" +
+      "_V0331_POKEMON_CACNEA\020\313\002\022+\n&HOLO_POKEMON" +
+      "_ID_V0332_POKEMON_CACTURNE\020\314\002\022)\n$HOLO_PO" +
+      "KEMON_ID_V0333_POKEMON_SWABLU\020\315\002\022*\n%HOLO" +
+      "_POKEMON_ID_V0334_POKEMON_ALTARIA\020\316\002\022+\n&" +
+      "HOLO_POKEMON_ID_V0335_POKEMON_ZANGOOSE\020\317" +
+      "\002\022*\n%HOLO_POKEMON_ID_V0336_POKEMON_SEVIP" +
+      "ER\020\320\002\022+\n&HOLO_POKEMON_ID_V0337_POKEMON_L" +
+      "UNATONE\020\321\002\022*\n%HOLO_POKEMON_ID_V0338_POKE" +
+      "MON_SOLROCK\020\322\002\022+\n&HOLO_POKEMON_ID_V0339_" +
+      "POKEMON_BARBOACH\020\323\002\022+\n&HOLO_POKEMON_ID_V" +
+      "0340_POKEMON_WHISCASH\020\324\002\022+\n&HOLO_POKEMON" +
+      "_ID_V0341_POKEMON_CORPHISH\020\325\002\022,\n\'HOLO_PO" +
+      "KEMON_ID_V0342_POKEMON_CRAWDAUNT\020\326\002\022)\n$H" +
+      "OLO_POKEMON_ID_V0343_POKEMON_BALTOY\020\327\002\022*" +
+      "\n%HOLO_POKEMON_ID_V0344_POKEMON_CLAYDOL\020" +
+      "\330\002\022)\n$HOLO_POKEMON_ID_V0345_POKEMON_LILE" +
+      "EP\020\331\002\022*\n%HOLO_POKEMON_ID_V0346_POKEMON_C" +
+      "RADILY\020\332\002\022*\n%HOLO_POKEMON_ID_V0347_POKEM" +
+      "ON_ANORITH\020\333\002\022*\n%HOLO_POKEMON_ID_V0348_P" +
+      "OKEMON_ARMALDO\020\334\002\022)\n$HOLO_POKEMON_ID_V03" +
+      "49_POKEMON_FEEBAS\020\335\002\022*\n%HOLO_POKEMON_ID_" +
+      "V0350_POKEMON_MILOTIC\020\336\002\022+\n&HOLO_POKEMON" +
+      "_ID_V0351_POKEMON_CASTFORM\020\337\002\022*\n%HOLO_PO" +
+      "KEMON_ID_V0352_POKEMON_KECLEON\020\340\002\022*\n%HOL" +
+      "O_POKEMON_ID_V0353_POKEMON_SHUPPET\020\341\002\022*\n" +
+      "%HOLO_POKEMON_ID_V0354_POKEMON_BANETTE\020\342" +
+      "\002\022*\n%HOLO_POKEMON_ID_V0355_POKEMON_DUSKU" +
+      "LL\020\343\002\022+\n&HOLO_POKEMON_ID_V0356_POKEMON_D" +
+      "USCLOPS\020\344\002\022*\n%HOLO_POKEMON_ID_V0357_POKE" +
+      "MON_TROPIUS\020\345\002\022+\n&HOLO_POKEMON_ID_V0358_" +
+      "POKEMON_CHIMECHO\020\346\002\022(\n#HOLO_POKEMON_ID_V" +
+      "0359_POKEMON_ABSOL\020\347\002\022)\n$HOLO_POKEMON_ID" +
+      "_V0360_POKEMON_WYNAUT\020\350\002\022*\n%HOLO_POKEMON" +
+      "_ID_V0361_POKEMON_SNORUNT\020\351\002\022)\n$HOLO_POK" +
+      "EMON_ID_V0362_POKEMON_GLALIE\020\352\002\022)\n$HOLO_" +
+      "POKEMON_ID_V0363_POKEMON_SPHEAL\020\353\002\022)\n$HO" +
+      "LO_POKEMON_ID_V0364_POKEMON_SEALEO\020\354\002\022*\n" +
+      "%HOLO_POKEMON_ID_V0365_POKEMON_WALREIN\020\355" +
+      "\002\022+\n&HOLO_POKEMON_ID_V0366_POKEMON_CLAMP" +
+      "ERL\020\356\002\022*\n%HOLO_POKEMON_ID_V0367_POKEMON_" +
+      "HUNTAIL\020\357\002\022+\n&HOLO_POKEMON_ID_V0368_POKE" +
+      "MON_GOREBYSS\020\360\002\022,\n\'HOLO_POKEMON_ID_V0369" +
+      "_POKEMON_RELICANTH\020\361\002\022*\n%HOLO_POKEMON_ID" +
+      "_V0370_POKEMON_LUVDISC\020\362\002\022(\n#HOLO_POKEMO" +
+      "N_ID_V0371_POKEMON_BAGON\020\363\002\022*\n%HOLO_POKE" +
+      "MON_ID_V0372_POKEMON_SHELGON\020\364\002\022,\n\'HOLO_" +
+      "POKEMON_ID_V0373_POKEMON_SALAMENCE\020\365\002\022)\n" +
+      "$HOLO_POKEMON_ID_V0374_POKEMON_BELDUM\020\366\002" +
+      "\022)\n$HOLO_POKEMON_ID_V0375_POKEMON_METANG" +
+      "\020\367\002\022,\n\'HOLO_POKEMON_ID_V0376_POKEMON_MET" +
+      "AGROSS\020\370\002\022+\n&HOLO_POKEMON_ID_V0377_POKEM" +
+      "ON_REGIROCK\020\371\002\022)\n$HOLO_POKEMON_ID_V0378_" +
+      "POKEMON_REGICE\020\372\002\022,\n\'HOLO_POKEMON_ID_V03" +
+      "79_POKEMON_REGISTEEL\020\373\002\022)\n$HOLO_POKEMON_" +
+      "ID_V0380_POKEMON_LATIAS\020\374\002\022)\n$HOLO_POKEM" +
+      "ON_ID_V0381_POKEMON_LATIOS\020\375\002\022)\n$HOLO_PO" +
+      "KEMON_ID_V0382_POKEMON_KYOGRE\020\376\002\022*\n%HOLO" +
+      "_POKEMON_ID_V0383_POKEMON_GROUDON\020\377\002\022+\n&" +
+      "HOLO_POKEMON_ID_V0384_POKEMON_RAYQUAZA\020\200" +
+      "\003\022*\n%HOLO_POKEMON_ID_V0385_POKEMON_JIRAC" +
+      "HI\020\201\003\022)\n$HOLO_POKEMON_ID_V0386_POKEMON_D" +
+      "EOXYS\020\202\003\022*\n%HOLO_POKEMON_ID_V0387_POKEMO" +
+      "N_TURTWIG\020\203\003\022)\n$HOLO_POKEMON_ID_V0388_PO" +
+      "KEMON_GROTLE\020\204\003\022+\n&HOLO_POKEMON_ID_V0389" +
+      "_POKEMON_TORTERRA\020\205\003\022+\n&HOLO_POKEMON_ID_" +
+      "V0390_POKEMON_CHIMCHAR\020\206\003\022+\n&HOLO_POKEMO" +
+      "N_ID_V0391_POKEMON_MONFERNO\020\207\003\022,\n\'HOLO_P" +
+      "OKEMON_ID_V0392_POKEMON_INFERNAPE\020\210\003\022)\n$" +
+      "HOLO_POKEMON_ID_V0393_POKEMON_PIPLUP\020\211\003\022" +
+      "+\n&HOLO_POKEMON_ID_V0394_POKEMON_PRINPLU" +
+      "P\020\212\003\022+\n&HOLO_POKEMON_ID_V0395_POKEMON_EM" +
+      "POLEON\020\213\003\022)\n$HOLO_POKEMON_ID_V0396_POKEM" +
+      "ON_STARLY\020\214\003\022+\n&HOLO_POKEMON_ID_V0397_PO" +
+      "KEMON_STARAVIA\020\215\003\022,\n\'HOLO_POKEMON_ID_V03" +
+      "98_POKEMON_STARAPTOR\020\216\003\022)\n$HOLO_POKEMON_" +
+      "ID_V0399_POKEMON_BIDOOF\020\217\003\022*\n%HOLO_POKEM" +
+      "ON_ID_V0400_POKEMON_BIBAREL\020\220\003\022,\n\'HOLO_P" +
+      "OKEMON_ID_V0401_POKEMON_KRICKETOT\020\221\003\022-\n(" +
+      "HOLO_POKEMON_ID_V0402_POKEMON_KRICKETUNE" +
+      "\020\222\003\022(\n#HOLO_POKEMON_ID_V0403_POKEMON_SHI" +
+      "NX\020\223\003\022(\n#HOLO_POKEMON_ID_V0404_POKEMON_L" +
+      "UXIO\020\224\003\022)\n$HOLO_POKEMON_ID_V0405_POKEMON" +
+      "_LUXRAY\020\225\003\022(\n#HOLO_POKEMON_ID_V0406_POKE" +
+      "MON_BUDEW\020\226\003\022+\n&HOLO_POKEMON_ID_V0407_PO" +
+      "KEMON_ROSERADE\020\227\003\022+\n&HOLO_POKEMON_ID_V04" +
+      "08_POKEMON_CRANIDOS\020\230\003\022,\n\'HOLO_POKEMON_I" +
+      "D_V0409_POKEMON_RAMPARDOS\020\231\003\022+\n&HOLO_POK" +
+      "EMON_ID_V0410_POKEMON_SHIELDON\020\232\003\022,\n\'HOL" +
+      "O_POKEMON_ID_V0411_POKEMON_BASTIODON\020\233\003\022" +
+      "(\n#HOLO_POKEMON_ID_V0412_POKEMON_BURMY\020\234" +
+      "\003\022+\n&HOLO_POKEMON_ID_V0413_POKEMON_WORMA" +
+      "DAM\020\235\003\022)\n$HOLO_POKEMON_ID_V0414_POKEMON_" +
+      "MOTHIM\020\236\003\022)\n$HOLO_POKEMON_ID_V0415_POKEM" +
+      "ON_COMBEE\020\237\003\022,\n\'HOLO_POKEMON_ID_V0416_PO" +
+      "KEMON_VESPIQUEN\020\240\003\022,\n\'HOLO_POKEMON_ID_V0" +
+      "417_POKEMON_PACHIRISU\020\241\003\022)\n$HOLO_POKEMON" +
+      "_ID_V0418_POKEMON_BUIZEL\020\242\003\022+\n&HOLO_POKE" +
+      "MON_ID_V0419_POKEMON_FLOATZEL\020\243\003\022*\n%HOLO" +
+      "_POKEMON_ID_V0420_POKEMON_CHERUBI\020\244\003\022*\n%" +
+      "HOLO_POKEMON_ID_V0421_POKEMON_CHERRIM\020\245\003" +
+      "\022*\n%HOLO_POKEMON_ID_V0422_POKEMON_SHELLO" +
+      "S\020\246\003\022,\n\'HOLO_POKEMON_ID_V0423_POKEMON_GA" +
+      "STRODON\020\247\003\022*\n%HOLO_POKEMON_ID_V0424_POKE" +
+      "MON_AMBIPOM\020\250\003\022+\n&HOLO_POKEMON_ID_V0425_" +
+      "POKEMON_DRIFLOON\020\251\003\022+\n&HOLO_POKEMON_ID_V" +
+      "0426_POKEMON_DRIFBLIM\020\252\003\022*\n%HOLO_POKEMON" +
+      "_ID_V0427_POKEMON_BUNEARY\020\253\003\022*\n%HOLO_POK" +
+      "EMON_ID_V0428_POKEMON_LOPUNNY\020\254\003\022,\n\'HOLO" +
+      "_POKEMON_ID_V0429_POKEMON_MISMAGIUS\020\255\003\022," +
+      "\n\'HOLO_POKEMON_ID_V0430_POKEMON_HONCHKRO" +
+      "W\020\256\003\022*\n%HOLO_POKEMON_ID_V0431_POKEMON_GL" +
+      "AMEOW\020\257\003\022*\n%HOLO_POKEMON_ID_V0432_POKEMO" +
+      "N_PURUGLY\020\260\003\022,\n\'HOLO_POKEMON_ID_V0433_PO" +
+      "KEMON_CHINGLING\020\261\003\022)\n$HOLO_POKEMON_ID_V0" +
+      "434_POKEMON_STUNKY\020\262\003\022+\n&HOLO_POKEMON_ID" +
+      "_V0435_POKEMON_SKUNTANK\020\263\003\022*\n%HOLO_POKEM" +
+      "ON_ID_V0436_POKEMON_BRONZOR\020\264\003\022+\n&HOLO_P" +
+      "OKEMON_ID_V0437_POKEMON_BRONZONG\020\265\003\022)\n$H" +
+      "OLO_POKEMON_ID_V0438_POKEMON_BONSLY\020\266\003\022*" +
+      "\n%HOLO_POKEMON_ID_V0439_POKEMON_MIME_JR\020" +
+      "\267\003\022*\n%HOLO_POKEMON_ID_V0440_POKEMON_HAPP" +
+      "INY\020\270\003\022)\n$HOLO_POKEMON_ID_V0441_POKEMON_" +
+      "CHATOT\020\271\003\022,\n\'HOLO_POKEMON_ID_V0442_POKEM" +
+      "ON_SPIRITOMB\020\272\003\022(\n#HOLO_POKEMON_ID_V0443" +
+      "_POKEMON_GIBLE\020\273\003\022)\n$HOLO_POKEMON_ID_V04" +
+      "44_POKEMON_GABITE\020\274\003\022+\n&HOLO_POKEMON_ID_" +
+      "V0445_POKEMON_GARCHOMP\020\275\003\022+\n&HOLO_POKEMO" +
+      "N_ID_V0446_POKEMON_MUNCHLAX\020\276\003\022(\n#HOLO_P" +
+      "OKEMON_ID_V0447_POKEMON_RIOLU\020\277\003\022*\n%HOLO" +
+      "_POKEMON_ID_V0448_POKEMON_LUCARIO\020\300\003\022-\n(" +
+      "HOLO_POKEMON_ID_V0449_POKEMON_HIPPOPOTAS" +
+      "\020\301\003\022,\n\'HOLO_POKEMON_ID_V0450_POKEMON_HIP" +
+      "POWDON\020\302\003\022*\n%HOLO_POKEMON_ID_V0451_POKEM" +
+      "ON_SKORUPI\020\303\003\022*\n%HOLO_POKEMON_ID_V0452_P" +
+      "OKEMON_DRAPION\020\304\003\022+\n&HOLO_POKEMON_ID_V04" +
+      "53_POKEMON_CROAGUNK\020\305\003\022,\n\'HOLO_POKEMON_I" +
+      "D_V0454_POKEMON_TOXICROAK\020\306\003\022,\n\'HOLO_POK" +
+      "EMON_ID_V0455_POKEMON_CARNIVINE\020\307\003\022*\n%HO" +
+      "LO_POKEMON_ID_V0456_POKEMON_FINNEON\020\310\003\022+" +
+      "\n&HOLO_POKEMON_ID_V0457_POKEMON_LUMINEON" +
+      "\020\311\003\022*\n%HOLO_POKEMON_ID_V0458_POKEMON_MAN" +
+      "TYKE\020\312\003\022)\n$HOLO_POKEMON_ID_V0459_POKEMON" +
+      "_SNOVER\020\313\003\022,\n\'HOLO_POKEMON_ID_V0460_POKE" +
+      "MON_ABOMASNOW\020\314\003\022*\n%HOLO_POKEMON_ID_V046" +
+      "1_POKEMON_WEAVILE\020\315\003\022,\n\'HOLO_POKEMON_ID_" +
+      "V0462_POKEMON_MAGNEZONE\020\316\003\022-\n(HOLO_POKEM" +
+      "ON_ID_V0463_POKEMON_LICKILICKY\020\317\003\022,\n\'HOL" +
+      "O_POKEMON_ID_V0464_POKEMON_RHYPERIOR\020\320\003\022" +
+      ",\n\'HOLO_POKEMON_ID_V0465_POKEMON_TANGROW" +
+      "TH\020\321\003\022-\n(HOLO_POKEMON_ID_V0466_POKEMON_E" +
+      "LECTIVIRE\020\322\003\022,\n\'HOLO_POKEMON_ID_V0467_PO" +
+      "KEMON_MAGMORTAR\020\323\003\022+\n&HOLO_POKEMON_ID_V0" +
+      "468_POKEMON_TOGEKISS\020\324\003\022*\n%HOLO_POKEMON_" +
+      "ID_V0469_POKEMON_YANMEGA\020\325\003\022*\n%HOLO_POKE" +
+      "MON_ID_V0470_POKEMON_LEAFEON\020\326\003\022*\n%HOLO_" +
+      "POKEMON_ID_V0471_POKEMON_GLACEON\020\327\003\022*\n%H" +
+      "OLO_POKEMON_ID_V0472_POKEMON_GLISCOR\020\330\003\022" +
+      ",\n\'HOLO_POKEMON_ID_V0473_POKEMON_MAMOSWI" +
+      "NE\020\331\003\022,\n\'HOLO_POKEMON_ID_V0474_POKEMON_P" +
+      "ORYGON_Z\020\332\003\022*\n%HOLO_POKEMON_ID_V0475_POK" +
+      "EMON_GALLADE\020\333\003\022,\n\'HOLO_POKEMON_ID_V0476" +
+      "_POKEMON_PROBOPASS\020\334\003\022+\n&HOLO_POKEMON_ID" +
+      "_V0477_POKEMON_DUSKNOIR\020\335\003\022+\n&HOLO_POKEM" +
+      "ON_ID_V0478_POKEMON_FROSLASS\020\336\003\022(\n#HOLO_" +
+      "POKEMON_ID_V0479_POKEMON_ROTOM\020\337\003\022\'\n\"HOL" +
+      "O_POKEMON_ID_V0480_POKEMON_UXIE\020\340\003\022*\n%HO" +
+      "LO_POKEMON_ID_V0481_POKEMON_MESPRIT\020\341\003\022(" +
+      "\n#HOLO_POKEMON_ID_V0482_POKEMON_AZELF\020\342\003" +
+      "\022)\n$HOLO_POKEMON_ID_V0483_POKEMON_DIALGA" +
+      "\020\343\003\022)\n$HOLO_POKEMON_ID_V0484_POKEMON_PAL" +
+      "KIA\020\344\003\022*\n%HOLO_POKEMON_ID_V0485_POKEMON_" +
+      "HEATRAN\020\345\003\022,\n\'HOLO_POKEMON_ID_V0486_POKE" +
+      "MON_REGIGIGAS\020\346\003\022+\n&HOLO_POKEMON_ID_V048" +
+      "7_POKEMON_GIRATINA\020\347\003\022,\n\'HOLO_POKEMON_ID" +
+      "_V0488_POKEMON_CRESSELIA\020\350\003\022)\n$HOLO_POKE" +
+      "MON_ID_V0489_POKEMON_PHIONE\020\351\003\022*\n%HOLO_P" +
+      "OKEMON_ID_V0490_POKEMON_MANAPHY\020\352\003\022*\n%HO" +
+      "LO_POKEMON_ID_V0491_POKEMON_DARKRAI\020\353\003\022*" +
+      "\n%HOLO_POKEMON_ID_V0492_POKEMON_SHAYMIN\020" +
+      "\354\003\022)\n$HOLO_POKEMON_ID_V0493_POKEMON_ARCE" +
+      "US\020\355\003\022*\n%HOLO_POKEMON_ID_V0494_POKEMON_V" +
+      "ICTINI\020\356\003\022(\n#HOLO_POKEMON_ID_V0495_POKEM" +
+      "ON_SNIVY\020\357\003\022*\n%HOLO_POKEMON_ID_V0496_POK" +
+      "EMON_SERVINE\020\360\003\022,\n\'HOLO_POKEMON_ID_V0497" +
+      "_POKEMON_SERPERIOR\020\361\003\022(\n#HOLO_POKEMON_ID" +
+      "_V0498_POKEMON_TEPIG\020\362\003\022*\n%HOLO_POKEMON_" +
+      "ID_V0499_POKEMON_PIGNITE\020\363\003\022)\n$HOLO_POKE" +
+      "MON_ID_V0500_POKEMON_EMBOAR\020\364\003\022+\n&HOLO_P" +
+      "OKEMON_ID_V0501_POKEMON_OSHAWOTT\020\365\003\022)\n$H" +
+      "OLO_POKEMON_ID_V0502_POKEMON_DEWOTT\020\366\003\022+" +
+      "\n&HOLO_POKEMON_ID_V0503_POKEMON_SAMUROTT" +
+      "\020\367\003\022)\n$HOLO_POKEMON_ID_V0504_POKEMON_PAT" +
+      "RAT\020\370\003\022*\n%HOLO_POKEMON_ID_V0505_POKEMON_" +
+      "WATCHOG\020\371\003\022+\n&HOLO_POKEMON_ID_V0506_POKE" +
+      "MON_LILLIPUP\020\372\003\022*\n%HOLO_POKEMON_ID_V0507" +
+      "_POKEMON_HERDIER\020\373\003\022,\n\'HOLO_POKEMON_ID_V" +
+      "0508_POKEMON_STOUTLAND\020\374\003\022+\n&HOLO_POKEMO" +
+      "N_ID_V0509_POKEMON_PURRLOIN\020\375\003\022*\n%HOLO_P" +
+      "OKEMON_ID_V0510_POKEMON_LIEPARD\020\376\003\022*\n%HO" +
+      "LO_POKEMON_ID_V0511_POKEMON_PANSAGE\020\377\003\022+" +
+      "\n&HOLO_POKEMON_ID_V0512_POKEMON_SIMISAGE" +
+      "\020\200\004\022*\n%HOLO_POKEMON_ID_V0513_POKEMON_PAN" +
+      "SEAR\020\201\004\022+\n&HOLO_POKEMON_ID_V0514_POKEMON" +
+      "_SIMISEAR\020\202\004\022*\n%HOLO_POKEMON_ID_V0515_PO" +
+      "KEMON_PANPOUR\020\203\004\022+\n&HOLO_POKEMON_ID_V051" +
+      "6_POKEMON_SIMIPOUR\020\204\004\022(\n#HOLO_POKEMON_ID" +
+      "_V0517_POKEMON_MUNNA\020\205\004\022+\n&HOLO_POKEMON_" +
+      "ID_V0518_POKEMON_MUSHARNA\020\206\004\022)\n$HOLO_POK" +
+      "EMON_ID_V0519_POKEMON_PIDOVE\020\207\004\022,\n\'HOLO_" +
+      "POKEMON_ID_V0520_POKEMON_TRANQUILL\020\210\004\022+\n" +
+      "&HOLO_POKEMON_ID_V0521_POKEMON_UNFEZANT\020" +
+      "\211\004\022*\n%HOLO_POKEMON_ID_V0522_POKEMON_BLIT" +
+      "ZLE\020\212\004\022,\n\'HOLO_POKEMON_ID_V0523_POKEMON_" +
+      "ZEBSTRIKA\020\213\004\022-\n(HOLO_POKEMON_ID_V0524_PO" +
+      "KEMON_ROGGENROLA\020\214\004\022*\n%HOLO_POKEMON_ID_V" +
+      "0525_POKEMON_BOLDORE\020\215\004\022+\n&HOLO_POKEMON_" +
+      "ID_V0526_POKEMON_GIGALITH\020\216\004\022)\n$HOLO_POK" +
+      "EMON_ID_V0527_POKEMON_WOOBAT\020\217\004\022*\n%HOLO_" +
+      "POKEMON_ID_V0528_POKEMON_SWOOBAT\020\220\004\022*\n%H" +
+      "OLO_POKEMON_ID_V0529_POKEMON_DRILBUR\020\221\004\022" +
+      ",\n\'HOLO_POKEMON_ID_V0530_POKEMON_EXCADRI" +
+      "LL\020\222\004\022)\n$HOLO_POKEMON_ID_V0531_POKEMON_A" +
+      "UDINO\020\223\004\022*\n%HOLO_POKEMON_ID_V0532_POKEMO" +
+      "N_TIMBURR\020\224\004\022*\n%HOLO_POKEMON_ID_V0533_PO" +
+      "KEMON_GURDURR\020\225\004\022-\n(HOLO_POKEMON_ID_V053" +
+      "4_POKEMON_CONKELDURR\020\226\004\022*\n%HOLO_POKEMON_" +
+      "ID_V0535_POKEMON_TYMPOLE\020\227\004\022,\n\'HOLO_POKE" +
+      "MON_ID_V0536_POKEMON_PALPITOAD\020\230\004\022-\n(HOL" +
+      "O_POKEMON_ID_V0537_POKEMON_SEISMITOAD\020\231\004" +
+      "\022(\n#HOLO_POKEMON_ID_V0538_POKEMON_THROH\020" +
+      "\232\004\022\'\n\"HOLO_POKEMON_ID_V0539_POKEMON_SAWK" +
+      "\020\233\004\022+\n&HOLO_POKEMON_ID_V0540_POKEMON_SEW" +
+      "ADDLE\020\234\004\022+\n&HOLO_POKEMON_ID_V0541_POKEMO" +
+      "N_SWADLOON\020\235\004\022+\n&HOLO_POKEMON_ID_V0542_P" +
+      "OKEMON_LEAVANNY\020\236\004\022+\n&HOLO_POKEMON_ID_V0" +
+      "543_POKEMON_VENIPEDE\020\237\004\022-\n(HOLO_POKEMON_" +
+      "ID_V0544_POKEMON_WHIRLIPEDE\020\240\004\022,\n\'HOLO_P" +
+      "OKEMON_ID_V0545_POKEMON_SCOLIPEDE\020\241\004\022+\n&" +
+      "HOLO_POKEMON_ID_V0546_POKEMON_COTTONEE\020\242" +
+      "\004\022-\n(HOLO_POKEMON_ID_V0547_POKEMON_WHIMS" +
+      "ICOTT\020\243\004\022*\n%HOLO_POKEMON_ID_V0548_POKEMO" +
+      "N_PETILIL\020\244\004\022,\n\'HOLO_POKEMON_ID_V0549_PO" +
+      "KEMON_LILLIGANT\020\245\004\022+\n&HOLO_POKEMON_ID_V0" +
+      "550_POKEMON_BASCULIN\020\246\004\022*\n%HOLO_POKEMON_" +
+      "ID_V0551_POKEMON_SANDILE\020\247\004\022+\n&HOLO_POKE" +
+      "MON_ID_V0552_POKEMON_KROKOROK\020\250\004\022-\n(HOLO" +
+      "_POKEMON_ID_V0553_POKEMON_KROOKODILE\020\251\004\022" +
+      "+\n&HOLO_POKEMON_ID_V0554_POKEMON_DARUMAK" +
+      "A\020\252\004\022-\n(HOLO_POKEMON_ID_V0555_POKEMON_DA" +
+      "RMANITAN\020\253\004\022+\n&HOLO_POKEMON_ID_V0556_POK" +
+      "EMON_MARACTUS\020\254\004\022*\n%HOLO_POKEMON_ID_V055" +
+      "7_POKEMON_DWEBBLE\020\255\004\022*\n%HOLO_POKEMON_ID_" +
+      "V0558_POKEMON_CRUSTLE\020\256\004\022*\n%HOLO_POKEMON" +
+      "_ID_V0559_POKEMON_SCRAGGY\020\257\004\022*\n%HOLO_POK" +
+      "EMON_ID_V0560_POKEMON_SCRAFTY\020\260\004\022+\n&HOLO" +
+      "_POKEMON_ID_V0561_POKEMON_SIGILYPH\020\261\004\022)\n" +
+      "$HOLO_POKEMON_ID_V0562_POKEMON_YAMASK\020\262\004" +
+      "\022-\n(HOLO_POKEMON_ID_V0563_POKEMON_COFAGR" +
+      "IGUS\020\263\004\022+\n&HOLO_POKEMON_ID_V0564_POKEMON" +
+      "_TIRTOUGA\020\264\004\022-\n(HOLO_POKEMON_ID_V0565_PO" +
+      "KEMON_CARRACOSTA\020\265\004\022)\n$HOLO_POKEMON_ID_V" +
+      "0566_POKEMON_ARCHEN\020\266\004\022+\n&HOLO_POKEMON_I" +
+      "D_V0567_POKEMON_ARCHEOPS\020\267\004\022+\n&HOLO_POKE" +
+      "MON_ID_V0568_POKEMON_TRUBBISH\020\270\004\022+\n&HOLO" +
+      "_POKEMON_ID_V0569_POKEMON_GARBODOR\020\271\004\022(\n" +
+      "#HOLO_POKEMON_ID_V0570_POKEMON_ZORUA\020\272\004\022" +
+      "*\n%HOLO_POKEMON_ID_V0571_POKEMON_ZOROARK" +
+      "\020\273\004\022+\n&HOLO_POKEMON_ID_V0572_POKEMON_MIN" +
+      "CCINO\020\274\004\022+\n&HOLO_POKEMON_ID_V0573_POKEMO" +
+      "N_CINCCINO\020\275\004\022*\n%HOLO_POKEMON_ID_V0574_P" +
+      "OKEMON_GOTHITA\020\276\004\022,\n\'HOLO_POKEMON_ID_V05" +
+      "75_POKEMON_GOTHORITA\020\277\004\022-\n(HOLO_POKEMON_" +
+      "ID_V0576_POKEMON_GOTHITELLE\020\300\004\022*\n%HOLO_P" +
+      "OKEMON_ID_V0577_POKEMON_SOLOSIS\020\301\004\022*\n%HO" +
+      "LO_POKEMON_ID_V0578_POKEMON_DUOSION\020\302\004\022," +
+      "\n\'HOLO_POKEMON_ID_V0579_POKEMON_REUNICLU" +
+      "S\020\303\004\022+\n&HOLO_POKEMON_ID_V0580_POKEMON_DU" +
+      "CKLETT\020\304\004\022)\n$HOLO_POKEMON_ID_V0581_POKEM" +
+      "ON_SWANNA\020\305\004\022,\n\'HOLO_POKEMON_ID_V0582_PO" +
+      "KEMON_VANILLITE\020\306\004\022,\n\'HOLO_POKEMON_ID_V0" +
+      "583_POKEMON_VANILLISH\020\307\004\022,\n\'HOLO_POKEMON" +
+      "_ID_V0584_POKEMON_VANILLUXE\020\310\004\022+\n&HOLO_P" +
+      "OKEMON_ID_V0585_POKEMON_DEERLING\020\311\004\022+\n&H" +
+      "OLO_POKEMON_ID_V0586_POKEMON_SAWSBUCK\020\312\004" +
+      "\022)\n$HOLO_POKEMON_ID_V0587_POKEMON_EMOLGA",
+      "\020\313\004\022-\n(HOLO_POKEMON_ID_V0588_POKEMON_KAR" +
+      "RABLAST\020\314\004\022-\n(HOLO_POKEMON_ID_V0589_POKE" +
+      "MON_ESCAVALIER\020\315\004\022*\n%HOLO_POKEMON_ID_V05" +
+      "90_POKEMON_FOONGUS\020\316\004\022,\n\'HOLO_POKEMON_ID" +
+      "_V0591_POKEMON_AMOONGUSS\020\317\004\022+\n&HOLO_POKE" +
+      "MON_ID_V0592_POKEMON_FRILLISH\020\320\004\022,\n\'HOLO" +
+      "_POKEMON_ID_V0593_POKEMON_JELLICENT\020\321\004\022," +
+      "\n\'HOLO_POKEMON_ID_V0594_POKEMON_ALOMOMOL" +
+      "A\020\322\004\022)\n$HOLO_POKEMON_ID_V0595_POKEMON_JO" +
+      "LTIK\020\323\004\022-\n(HOLO_POKEMON_ID_V0596_POKEMON" +
+      "_GALVANTULA\020\324\004\022,\n\'HOLO_POKEMON_ID_V0597_" +
+      "POKEMON_FERROSEED\020\325\004\022-\n(HOLO_POKEMON_ID_" +
+      "V0598_POKEMON_FERROTHORN\020\326\004\022(\n#HOLO_POKE" +
+      "MON_ID_V0599_POKEMON_KLINK\020\327\004\022(\n#HOLO_PO" +
+      "KEMON_ID_V0600_POKEMON_KLANG\020\330\004\022,\n\'HOLO_" +
+      "POKEMON_ID_V0601_POKEMON_KLINKLANG\020\331\004\022)\n" +
+      "$HOLO_POKEMON_ID_V0602_POKEMON_TYNAMO\020\332\004" +
+      "\022,\n\'HOLO_POKEMON_ID_V0603_POKEMON_EELEKT" +
+      "RIK\020\333\004\022-\n(HOLO_POKEMON_ID_V0604_POKEMON_" +
+      "EELEKTROSS\020\334\004\022)\n$HOLO_POKEMON_ID_V0605_P" +
+      "OKEMON_ELGYEM\020\335\004\022+\n&HOLO_POKEMON_ID_V060" +
+      "6_POKEMON_BEHEEYEM\020\336\004\022*\n%HOLO_POKEMON_ID" +
+      "_V0607_POKEMON_LITWICK\020\337\004\022*\n%HOLO_POKEMO" +
+      "N_ID_V0608_POKEMON_LAMPENT\020\340\004\022-\n(HOLO_PO" +
+      "KEMON_ID_V0609_POKEMON_CHANDELURE\020\341\004\022\'\n\"" +
+      "HOLO_POKEMON_ID_V0610_POKEMON_AXEW\020\342\004\022*\n" +
+      "%HOLO_POKEMON_ID_V0611_POKEMON_FRAXURE\020\343" +
+      "\004\022*\n%HOLO_POKEMON_ID_V0612_POKEMON_HAXOR" +
+      "US\020\344\004\022*\n%HOLO_POKEMON_ID_V0613_POKEMON_C" +
+      "UBCHOO\020\345\004\022*\n%HOLO_POKEMON_ID_V0614_POKEM" +
+      "ON_BEARTIC\020\346\004\022,\n\'HOLO_POKEMON_ID_V0615_P" +
+      "OKEMON_CRYOGONAL\020\347\004\022*\n%HOLO_POKEMON_ID_V" +
+      "0616_POKEMON_SHELMET\020\350\004\022+\n&HOLO_POKEMON_" +
+      "ID_V0617_POKEMON_ACCELGOR\020\351\004\022+\n&HOLO_POK" +
+      "EMON_ID_V0618_POKEMON_STUNFISK\020\352\004\022*\n%HOL" +
+      "O_POKEMON_ID_V0619_POKEMON_MIENFOO\020\353\004\022+\n" +
+      "&HOLO_POKEMON_ID_V0620_POKEMON_MIENSHAO\020" +
+      "\354\004\022,\n\'HOLO_POKEMON_ID_V0621_POKEMON_DRUD" +
+      "DIGON\020\355\004\022)\n$HOLO_POKEMON_ID_V0622_POKEMO" +
+      "N_GOLETT\020\356\004\022)\n$HOLO_POKEMON_ID_V0623_POK" +
+      "EMON_GOLURK\020\357\004\022+\n&HOLO_POKEMON_ID_V0624_" +
+      "POKEMON_PAWNIARD\020\360\004\022*\n%HOLO_POKEMON_ID_V" +
+      "0625_POKEMON_BISHARP\020\361\004\022-\n(HOLO_POKEMON_" +
+      "ID_V0626_POKEMON_BOUFFALANT\020\362\004\022*\n%HOLO_P" +
+      "OKEMON_ID_V0627_POKEMON_RUFFLET\020\363\004\022+\n&HO" +
+      "LO_POKEMON_ID_V0628_POKEMON_BRAVIARY\020\364\004\022" +
+      "*\n%HOLO_POKEMON_ID_V0629_POKEMON_VULLABY" +
+      "\020\365\004\022,\n\'HOLO_POKEMON_ID_V0630_POKEMON_MAN" +
+      "DIBUZZ\020\366\004\022*\n%HOLO_POKEMON_ID_V0631_POKEM" +
+      "ON_HEATMOR\020\367\004\022)\n$HOLO_POKEMON_ID_V0632_P" +
+      "OKEMON_DURANT\020\370\004\022(\n#HOLO_POKEMON_ID_V063" +
+      "3_POKEMON_DEINO\020\371\004\022+\n&HOLO_POKEMON_ID_V0" +
+      "634_POKEMON_ZWEILOUS\020\372\004\022,\n\'HOLO_POKEMON_" +
+      "ID_V0635_POKEMON_HYDREIGON\020\373\004\022+\n&HOLO_PO" +
+      "KEMON_ID_V0636_POKEMON_LARVESTA\020\374\004\022,\n\'HO" +
+      "LO_POKEMON_ID_V0637_POKEMON_VOLCARONA\020\375\004" +
+      "\022+\n&HOLO_POKEMON_ID_V0638_POKEMON_COBALI" +
+      "ON\020\376\004\022,\n\'HOLO_POKEMON_ID_V0639_POKEMON_T" +
+      "ERRAKION\020\377\004\022+\n&HOLO_POKEMON_ID_V0640_POK" +
+      "EMON_VIRIZION\020\200\005\022+\n&HOLO_POKEMON_ID_V064" +
+      "1_POKEMON_TORNADUS\020\201\005\022,\n\'HOLO_POKEMON_ID" +
+      "_V0642_POKEMON_THUNDURUS\020\202\005\022+\n&HOLO_POKE" +
+      "MON_ID_V0643_POKEMON_RESHIRAM\020\203\005\022)\n$HOLO" +
+      "_POKEMON_ID_V0644_POKEMON_ZEKROM\020\204\005\022+\n&H" +
+      "OLO_POKEMON_ID_V0645_POKEMON_LANDORUS\020\205\005" +
+      "\022)\n$HOLO_POKEMON_ID_V0646_POKEMON_KYUREM" +
+      "\020\206\005\022)\n$HOLO_POKEMON_ID_V0647_POKEMON_KEL" +
+      "DEO\020\207\005\022+\n&HOLO_POKEMON_ID_V0648_POKEMON_" +
+      "MELOETTA\020\210\005\022+\n&HOLO_POKEMON_ID_V0649_POK" +
+      "EMON_GENESECT\020\211\005\022)\n$HOLO_POKEMON_ID_V080" +
+      "8_POKEMON_MELTAN\020\250\006\022+\n&HOLO_POKEMON_ID_V" +
+      "0809_POKEMON_MELMETAL\020\251\006\022,\n\'HOLO_POKEMON" +
+      "_ID_V0862_POKEMON_OBSTAGOON\020\336\006\022-\n(HOLO_P" +
+      "OKEMON_ID_V0863_POKEMON_PERRSERKER\020\337\006\022,\n" +
+      "\'HOLO_POKEMON_ID_V0865_POKEMON_SIRFETCHD" +
+      "\020\341\006*\232\033\n&ClientInboxServiceNotificationCa" +
+      "tegory\0223\n/CLIENT_INBOX_SERVICE_NOTIFICAT" +
+      "ION_CATEGORY_NONE\020\000\022:\n6CLIENT_INBOX_SERV" +
+      "ICE_NOTIFICATION_CATEGORY_GYM_REMOVAL\020\001\022" +
+      "=\n9CLIENT_INBOX_SERVICE_NOTIFICATION_CAT" +
+      "EGORY_POKEMON_HUNGRY\020\002\022D\n@CLIENT_INBOX_S" +
+      "ERVICE_NOTIFICATION_CATEGORY_EXCLUSIVE_R" +
+      "AID_INVITE\020\003\022J\nFCLIENT_INBOX_SERVICE_NOT" +
+      "IFICATION_CATEGORY_EXCLUSIVE_RAID_CANCEL" +
+      "LATION\020\004\022K\nGCLIENT_INBOX_SERVICE_NOTIFIC" +
+      "ATION_CATEGORY_SHARED_EXCLUSIVE_RAID_INV" +
+      "ITE\020\005\022?\n;CLIENT_INBOX_SERVICE_NOTIFICATI" +
+      "ON_CATEGORY_GIFTBOX_INCOMING\020\006\022@\n<CLIENT" +
+      "_INBOX_SERVICE_NOTIFICATION_CATEGORY_GIF" +
+      "TBOX_DELIVERED\020\007\022J\nFCLIENT_INBOX_SERVICE" +
+      "_NOTIFICATION_CATEGORY_FRIENDSHIP_MILEST" +
+      "ONE_REWARD\020\010\022N\nJCLIENT_INBOX_SERVICE_NOT" +
+      "IFICATION_CATEGORY_GYM_BATTLE_FRIENDSHIP" +
+      "_INCREMENT\020\t\022?\n;CLIENT_INBOX_SERVICE_NOT" +
+      "IFICATION_CATEGORY_BGMODE_EGG_HATCH\020\n\022A\n" +
+      "=CLIENT_INBOX_SERVICE_NOTIFICATION_CATEG" +
+      "ORY_BGMODE_BUDDY_CANDY\020\013\022K\nGCLIENT_INBOX" +
+      "_SERVICE_NOTIFICATION_CATEGORY_BGMODE_WE" +
+      "EKLY_FITNESS_REPORT\020\014\022J\nFCLIENT_INBOX_SE" +
+      "RVICE_NOTIFICATION_CATEGORY_BGMODE_OFF_S" +
+      "ESSION_DISTANCE\020\r\022C\n?CLIENT_INBOX_SERVIC" +
+      "E_NOTIFICATION_CATEGORY_BGMODE_POI_PROXI" +
+      "MITY\020\016\022G\nCCLIENT_INBOX_SERVICE_NOTIFICAT" +
+      "ION_CATEGORY_BGMODE_NAMED_BUDDY_CANDY\020\017\022" +
+      "=\n9CLIENT_INBOX_SERVICE_NOTIFICATION_CAT" +
+      "EGORY_APP_BADGE_ONLY\020\020\022F\nBCLIENT_INBOX_S" +
+      "ERVICE_NOTIFICATION_CATEGORY_COMBAT_CHAL" +
+      "LENGE_OPENED\020\021\022;\n7CLIENT_INBOX_SERVICE_N" +
+      "OTIFICATION_CATEGORY_LUCKY_FRIEND\020\022\022;\n7C" +
       "LIENT_INBOX_SERVICE_NOTIFICATION_CATEGOR" +
-      "Y_NONE\020\000\022:\n6CLIENT_INBOX_SERVICE_NOTIFIC" +
-      "ATION_CATEGORY_GYM_REMOVAL\020\001\022=\n9CLIENT_I" +
-      "NBOX_SERVICE_NOTIFICATION_CATEGORY_POKEM" +
-      "ON_HUNGRY\020\002\022D\n@CLIENT_INBOX_SERVICE_NOTI" +
-      "FICATION_CATEGORY_EXCLUSIVE_RAID_INVITE\020" +
-      "\003\022J\nFCLIENT_INBOX_SERVICE_NOTIFICATION_C" +
-      "ATEGORY_EXCLUSIVE_RAID_CANCELLATION\020\004\022K\n" +
-      "GCLIENT_INBOX_SERVICE_NOTIFICATION_CATEG" +
-      "ORY_SHARED_EXCLUSIVE_RAID_INVITE\020\005\022?\n;CL" +
-      "IENT_INBOX_SERVICE_NOTIFICATION_CATEGORY" +
-      "_GIFTBOX_INCOMING\020\006\022@\n<CLIENT_INBOX_SERV" +
-      "ICE_NOTIFICATION_CATEGORY_GIFTBOX_DELIVE" +
-      "RED\020\007\022J\nFCLIENT_INBOX_SERVICE_NOTIFICATI" +
-      "ON_CATEGORY_FRIENDSHIP_MILESTONE_REWARD\020" +
-      "\010\022N\nJCLIENT_INBOX_SERVICE_NOTIFICATION_C" +
-      "ATEGORY_GYM_BATTLE_FRIENDSHIP_INCREMENT\020" +
-      "\t\022?\n;CLIENT_INBOX_SERVICE_NOTIFICATION_C" +
-      "ATEGORY_BGMODE_EGG_HATCH\020\n\022A\n=CLIENT_INB" +
-      "OX_SERVICE_NOTIFICATION_CATEGORY_BGMODE_" +
-      "BUDDY_CANDY\020\013\022K\nGCLIENT_INBOX_SERVICE_NO" +
-      "TIFICATION_CATEGORY_BGMODE_WEEKLY_FITNES" +
-      "S_REPORT\020\014\022J\nFCLIENT_INBOX_SERVICE_NOTIF" +
-      "ICATION_CATEGORY_BGMODE_OFF_SESSION_DIST" +
-      "ANCE\020\r\022C\n?CLIENT_INBOX_SERVICE_NOTIFICAT" +
-      "ION_CATEGORY_BGMODE_POI_PROXIMITY\020\016\022G\nCC" +
-      "LIENT_INBOX_SERVICE_NOTIFICATION_CATEGOR" +
-      "Y_BGMODE_NAMED_BUDDY_CANDY\020\017\022=\n9CLIENT_I" +
-      "NBOX_SERVICE_NOTIFICATION_CATEGORY_APP_B" +
-      "ADGE_ONLY\020\020\022F\nBCLIENT_INBOX_SERVICE_NOTI" +
-      "FICATION_CATEGORY_COMBAT_CHALLENGE_OPENE" +
-      "D\020\021\022;\n7CLIENT_INBOX_SERVICE_NOTIFICATION" +
-      "_CATEGORY_LUCKY_FRIEND\020\022\022;\n7CLIENT_INBOX" +
-      "_SERVICE_NOTIFICATION_CATEGORY_BUDDY_HUN" +
-      "GRY\020\023\022?\n;CLIENT_INBOX_SERVICE_NOTIFICATI" +
-      "ON_CATEGORY_BUDDY_FOUND_GIFT\020\024\022N\nJCLIENT" +
-      "_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUD" +
-      "DY_AFFECTION_LEVEL_MILESTONE\020\025\022F\nBCLIENT" +
-      "_INBOX_SERVICE_NOTIFICATION_CATEGORY_BUD" +
-      "DY_AFFECTION_WALKING\020\026\022C\n?CLIENT_INBOX_S" +
-      "ERVICE_NOTIFICATION_CATEGORY_BUDDY_AFFEC" +
-      "TION_CARE\020\027\022E\nACLIENT_INBOX_SERVICE_NOTI" +
-      "FICATION_CATEGORY_BUDDY_AFFECTION_BATTLE" +
-      "\020\030\022D\n@CLIENT_INBOX_SERVICE_NOTIFICATION_" +
-      "CATEGORY_BUDDY_AFFECTION_PHOTO\020\031\022B\n>CLIE" +
-      "NT_INBOX_SERVICE_NOTIFICATION_CATEGORY_B" +
-      "UDDY_AFFECTION_POI\020\032\022C\n?CLIENT_INBOX_SER" +
-      "VICE_NOTIFICATION_CATEGORY_BUDDY_ATTRACT" +
-      "IVE_POI\020\033\022E\nACLIENT_INBOX_SERVICE_NOTIFI" +
-      "CATION_CATEGORY_FRIEND_INVITE_RECEIVED\020\034" +
-      "\022E\nACLIENT_INBOX_SERVICE_NOTIFICATION_CA" +
-      "TEGORY_FRIEND_INVITE_ACCEPTED\020\035\022G\nCCLIEN" +
-      "T_INBOX_SERVICE_NOTIFICATION_CATEGORY_CO" +
-      "MBAT_VS_SEEKER_CHARGED\020\036\022L\nHCLIENT_INBOX" +
-      "_SERVICE_NOTIFICATION_CATEGORY_COMBAT_CO" +
-      "MPETITIVE_SEASON_END\020\037\022M\nICLIENT_INBOX_S" +
-      "ERVICE_NOTIFICATION_CATEGORY_BUDDY_AFFEC" +
-      "TION_ATTRACTIVE_POI\020 \022D\n@CLIENT_INBOX_SE" +
-      "RVICE_NOTIFICATION_CATEGORY_POI_PASSCODE" +
-      "_REDEEMED\020!\022A\n=CLIENT_INBOX_SERVICE_NOTI" +
-      "FICATION_CATEGORY_NO_EGGS_INCUBATING\020\"\022G" +
-      "\nCCLIENT_INBOX_SERVICE_NOTIFICATION_CATE" +
-      "GORY_RETENTION_UNOPENED_GIFTS\020\'\022B\n>CLIEN" +
-      "T_INBOX_SERVICE_NOTIFICATION_CATEGORY_RE" +
-      "TENTION_STARPIECE\020(\022@\n<CLIENT_INBOX_SERV" +
-      "ICE_NOTIFICATION_CATEGORY_RETENTION_INCE" +
-      "NSE\020)\022B\n>CLIENT_INBOX_SERVICE_NOTIFICATI" +
-      "ON_CATEGORY_RETENTION_LUCKY_EGG\020*\022H\nDCLI" +
+      "Y_BUDDY_HUNGRY\020\023\022?\n;CLIENT_INBOX_SERVICE" +
+      "_NOTIFICATION_CATEGORY_BUDDY_FOUND_GIFT\020" +
+      "\024\022N\nJCLIENT_INBOX_SERVICE_NOTIFICATION_C" +
+      "ATEGORY_BUDDY_AFFECTION_LEVEL_MILESTONE\020" +
+      "\025\022F\nBCLIENT_INBOX_SERVICE_NOTIFICATION_C" +
+      "ATEGORY_BUDDY_AFFECTION_WALKING\020\026\022C\n?CLI" +
       "ENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_" +
-      "RETENTION_ADVSYNC_REWARDS\020+\022L\nHCLIENT_IN" +
-      "BOX_SERVICE_NOTIFICATION_CATEGORY_RETENT" +
-      "ION_EGGS_NOT_INCUBATING\020,\022C\n?CLIENT_INBO" +
-      "X_SERVICE_NOTIFICATION_CATEGORY_RETENTIO" +
-      "N_POWER_WALK\020-\022I\nECLIENT_INBOX_SERVICE_N" +
-      "OTIFICATION_CATEGORY_RETENTION_FUN_WITH_" +
-      "FRIENDS\020.\022@\n<CLIENT_INBOX_SERVICE_NOTIFI" +
-      "CATION_CATEGORY_BUDDY_REMOTE_GIFT\020/\022G\nCC" +
+      "BUDDY_AFFECTION_CARE\020\027\022E\nACLIENT_INBOX_S" +
+      "ERVICE_NOTIFICATION_CATEGORY_BUDDY_AFFEC" +
+      "TION_BATTLE\020\030\022D\n@CLIENT_INBOX_SERVICE_NO" +
+      "TIFICATION_CATEGORY_BUDDY_AFFECTION_PHOT" +
+      "O\020\031\022B\n>CLIENT_INBOX_SERVICE_NOTIFICATION" +
+      "_CATEGORY_BUDDY_AFFECTION_POI\020\032\022C\n?CLIEN" +
+      "T_INBOX_SERVICE_NOTIFICATION_CATEGORY_BU" +
+      "DDY_ATTRACTIVE_POI\020\033\022E\nACLIENT_INBOX_SER" +
+      "VICE_NOTIFICATION_CATEGORY_FRIEND_INVITE" +
+      "_RECEIVED\020\034\022E\nACLIENT_INBOX_SERVICE_NOTI" +
+      "FICATION_CATEGORY_FRIEND_INVITE_ACCEPTED" +
+      "\020\035\022G\nCCLIENT_INBOX_SERVICE_NOTIFICATION_" +
+      "CATEGORY_COMBAT_VS_SEEKER_CHARGED\020\036\022L\nHC" +
       "LIENT_INBOX_SERVICE_NOTIFICATION_CATEGOR" +
-      "Y_BGMODE_BUDDY_REMOTE_GIFT\0200\022E\nACLIENT_I" +
-      "NBOX_SERVICE_NOTIFICATION_CATEGORY_REMOT" +
-      "E_RAID_INVITATION\0201\022;\n7CLIENT_INBOX_SERV" +
-      "ICE_NOTIFICATION_CATEGORY_ITEM_REWARDS\0202" +
-      "\022L\nHCLIENT_INBOX_SERVICE_NOTIFICATION_CA" +
-      "TEGORY_TIMED_GROUP_CHALLENGE_STARTED\0203\022M" +
-      "\nICLIENT_INBOX_SERVICE_NOTIFICATION_CATE" +
-      "GORY_TIMED_GROUP_CHALLENGE_GOAL_MET\0204*\234\001" +
-      "\n\020HoloPokemonClass\022+\n\'HOLO_POKEMON_CLASS" +
-      "_POKEMON_CLASS_NORMAL\020\000\022.\n*HOLO_POKEMON_" +
-      "CLASS_POKEMON_CLASS_LEGENDARY\020\001\022+\n\'HOLO_" +
-      "POKEMON_CLASS_POKEMON_CLASS_MYTHIC\020\002*\213\001\n" +
-      "\027CombatPlayerFinishState\022%\n!COMBAT_PLAYE" +
-      "R_FINISH_STATE_WINNER\020\000\022$\n COMBAT_PLAYER" +
-      "_FINISH_STATE_LOSER\020\001\022#\n\037COMBAT_PLAYER_F" +
-      "INISH_STATE_DRAW\020\002*\243\n\n\013TweenAction\022\027\n\023TW" +
-      "EEN_ACTION_MOVE_X\020\000\022\027\n\023TWEEN_ACTION_MOVE" +
-      "_Y\020\001\022\027\n\023TWEEN_ACTION_MOVE_Z\020\002\022\035\n\031TWEEN_A" +
-      "CTION_MOVE_LOCAL_X\020\003\022\035\n\031TWEEN_ACTION_MOV" +
-      "E_LOCAL_Y\020\004\022\035\n\031TWEEN_ACTION_MOVE_LOCAL_Z" +
-      "\020\005\022\034\n\030TWEEN_ACTION_MOVE_CURVED\020\006\022\"\n\036TWEE" +
-      "N_ACTION_MOVE_CURVED_LOCAL\020\007\022\034\n\030TWEEN_AC" +
-      "TION_MOVE_SPLINE\020\010\022\"\n\036TWEEN_ACTION_MOVE_" +
-      "SPLINE_LOCAL\020\t\022\030\n\024TWEEN_ACTION_SCALE_X\020\n" +
-      "\022\030\n\024TWEEN_ACTION_SCALE_Y\020\013\022\030\n\024TWEEN_ACTI" +
-      "ON_SCALE_Z\020\014\022\031\n\025TWEEN_ACTION_ROTATE_X\020\r\022" +
-      "\031\n\025TWEEN_ACTION_ROTATE_Y\020\016\022\031\n\025TWEEN_ACTI" +
-      "ON_ROTATE_Z\020\017\022\036\n\032TWEEN_ACTION_ROTATE_ARO" +
-      "UND\020\020\022$\n TWEEN_ACTION_ROTATE_AROUND_LOCA" +
-      "L\020\021\022$\n TWEEN_ACTION_CANVAS_ROTATEAROUND\020" +
-      "\022\022*\n&TWEEN_ACTION_CANVAS_ROTATEAROUND_LO" +
-      "CAL\020\023\022\"\n\036TWEEN_ACTION_CANVAS_PLAYSPRITE\020" +
-      "\024\022\026\n\022TWEEN_ACTION_ALPHA\020\025\022\033\n\027TWEEN_ACTIO" +
-      "N_TEXT_ALPHA\020\026\022\035\n\031TWEEN_ACTION_CANVAS_AL" +
-      "PHA\020\027\022\035\n\031TWEEN_ACTION_ALPHA_VERTEX\020\030\022\026\n\022" +
-      "TWEEN_ACTION_COLOR\020\031\022\037\n\033TWEEN_ACTION_CAL" +
-      "LBACK_COLOR\020\032\022\033\n\027TWEEN_ACTION_TEXT_COLOR" +
-      "\020\033\022\035\n\031TWEEN_ACTION_CANVAS_COLOR\020\034\022\031\n\025TWE" +
-      "EN_ACTION_CALLBACK\020\035\022\025\n\021TWEEN_ACTION_MOV" +
-      "E\020\036\022\033\n\027TWEEN_ACTION_MOVE_LOCAL\020\037\022\027\n\023TWEE" +
-      "N_ACTION_ROTATE\020 \022\035\n\031TWEEN_ACTION_ROTATE" +
-      "_LOCAL\020!\022\026\n\022TWEEN_ACTION_SCALE\020\"\022\027\n\023TWEE" +
-      "N_ACTION_VALUE3\020#\022\031\n\025TWEEN_ACTION_GUI_MO" +
-      "VE\020$\022 \n\034TWEEN_ACTION_GUI_MOVE_MARGIN\020%\022\032" +
-      "\n\026TWEEN_ACTION_GUI_SCALE\020&\022\032\n\026TWEEN_ACTI" +
-      "ON_GUI_ALPHA\020\'\022\033\n\027TWEEN_ACTION_GUI_ROTAT" +
-      "E\020(\022\036\n\032TWEEN_ACTION_DELAYED_SOUND\020)\022\034\n\030T" +
-      "WEEN_ACTION_CANVAS_MOVE\020*\022\035\n\031TWEEN_ACTIO" +
-      "N_CANVAS_SCALE\020+*\201\002\n\016InvitationType\022)\n%I" +
-      "NVITATION_TYPE_INVITATION_TYPE_UNSET\020\000\022(" +
-      "\n$INVITATION_TYPE_INVITATION_TYPE_CODE\020\001" +
-      "\022,\n(INVITATION_TYPE_INVITATION_TYPE_FACE" +
-      "BOOK\020\002\0222\n.INVITATION_TYPE_INVITATION_TYP" +
-      "E_SERVER_REQUEST\020\003\0228\n4INVITATION_TYPE_IN" +
-      "VITATION_TYPE_NIANTIC_SOCIAL_GRAPH\020\004*V\n\021" +
-      "NotificationState\022\"\n\036NOTIFICATION_STATE_" +
-      "UNSET_STATE\020\000\022\035\n\031NOTIFICATION_STATE_VIEW" +
-      "ED\020\001*\352\023\n\024PlatformClientAction\0229\n5PLATFOR" +
-      "M_CLIENT_ACTION_UNKNOWN_PLATFORM_CLIENT_" +
-      "ACTION\020\000\0226\n1PLATFORM_CLIENT_ACTION_REGIS" +
-      "TER_PUSH_NOTIFICATION\020\210\'\0228\n3PLATFORM_CLI" +
-      "ENT_ACTION_UNREGISTER_PUSH_NOTIFICATION\020" +
-      "\211\'\0226\n1PLATFORM_CLIENT_ACTION_UPDATE_NOTI" +
-      "FICATION_STATUS\020\212\'\022>\n9PLATFORM_CLIENT_AC" +
-      "TION_OPT_OUT_PUSH_NOTIFICATION_CATEGORY\020" +
-      "\213\'\022:\n5PLATFORM_CLIENT_ACTION_DOWNLOAD_GA" +
-      "ME_MASTER_TEMPLATES\020\214\'\022)\n$PLATFORM_CLIEN" +
-      "T_ACTION_GET_INVENTORY\020\215\'\022+\n&PLATFORM_CL" +
-      "IENT_ACTION_REDEEM_PASSCODE\020\216\'\022 \n\033PLATFO" +
-      "RM_CLIENT_ACTION_PING\020\217\'\022,\n\'PLATFORM_CLI" +
-      "ENT_ACTION_ADD_LOGIN_ACTION\020\220\'\022/\n*PLATFO" +
-      "RM_CLIENT_ACTION_REMOVE_LOGIN_ACTION\020\221\'\022" +
-      "-\n(PLATFORM_CLIENT_ACTION_LIST_LOGIN_ACT" +
-      "ION\020\222\'\022\'\n\"PLATFORM_CLIENT_ACTION_ADD_NEW" +
-      "_POI\020\223\'\022/\n*PLATFORM_CLIENT_ACTION_PROXY_" +
-      "SOCIAL_ACTION\020\224\'\0227\n2PLATFORM_CLIENT_ACTI" +
-      "ON_DEPRECATED_CLIENT_TELEMETRY\020\225\'\0225\n0PLA" +
-      "TFORM_CLIENT_ACTION_GET_AVAILABLE_SUBMIS" +
-      "SIONS\020\226\'\022;\n6PLATFORM_CLIENT_ACTION_GET_S" +
-      "IGNED_URL_FOR_PHOTO_UPLOAD\020\227\'\0220\n+PLATFOR" +
-      "M_CLIENT_ACTION_REPLACE_LOGIN_ACTION\020\230\'\022" +
-      "<\n7PLATFORM_CLIENT_ACTION_PROXY_SOCIAL_S" +
-      "IDE_CHANNEL_ACTION\020\231\'\0224\n/PLATFORM_CLIENT" +
-      "_ACTION_COLLECT_CLIENT_TELEMETRY\020\232\'\022(\n#P" +
-      "LATFORM_CLIENT_ACTION_PURCHASE_SKU\020\233\'\022;\n" +
-      "6PLATFORM_CLIENT_ACTION_GET_AVAILABLE_SK" +
-      "US_AND_BALANCES\020\234\'\0221\n,PLATFORM_CLIENT_AC" +
-      "TION_REDEEM_GOOGLE_RECEIPT\020\235\'\0220\n+PLATFOR" +
-      "M_CLIENT_ACTION_REDEEM_APPLE_RECEIPT\020\236\'\022" +
-      "2\n-PLATFORM_CLIENT_ACTION_REDEEM_DESKTOP" +
-      "_RECEIPT\020\237\'\0222\n-PLATFORM_CLIENT_ACTION_UP" +
-      "DATE_FITNESS_METRICS\020\240\'\022.\n)PLATFORM_CLIE" +
-      "NT_ACTION_GET_FITNESS_REPORT\020\241\'\0229\n4PLATF" +
-      "ORM_CLIENT_ACTION_GET_CLIENT_TELEMETRY_S" +
-      "ETTINGS\020\242\'\022&\n!PLATFORM_CLIENT_ACTION_PIN" +
-      "G_ASYNC\020\243\'\0227\n2PLATFORM_CLIENT_ACTION_REG" +
-      "ISTER_BACKGROUND_SERVICE\020\244\'\0226\n1PLATFORM_" +
-      "CLIENT_ACTION_GET_CLIENT_BGMODE_SETTINGS" +
-      "\020\245\'\022+\n&PLATFORM_CLIENT_ACTION_PING_DOWNS" +
-      "TREAM\020\246\'\022>\n9PLATFORM_CLIENT_ACTION_SET_I" +
-      "N_GAME_CURRENCY_EXCHANGE_RATE\020\250\'\0224\n/PLAT" +
-      "FORM_CLIENT_ACTION_REQUEST_GEOFENCE_UPDA" +
-      "TES\020\251\'\0222\n-PLATFORM_CLIENT_ACTION_UPDATE_" +
-      "PLAYER_LOCATION\020\252\'\0224\n/PLATFORM_CLIENT_AC" +
-      "TION_GENERATE_GMAP_SIGNED_URL\020\253\'\022-\n(PLAT" +
-      "FORM_CLIENT_ACTION_GET_GMAP_SETTINGS\020\254\'\022" +
-      "2\n-PLATFORM_CLIENT_ACTION_REDEEM_SAMSUNG" +
-      "_RECEIPT\020\255\'\022)\n$PLATFORM_CLIENT_ACTION_AD" +
-      "D_NEW_ROUTE\020\256\'\0224\n/PLATFORM_CLIENT_ACTION" +
-      "_GET_OUTSTANDING_WARNINGS\020\257\'\0220\n+PLATFORM" +
-      "_CLIENT_ACTION_ACKNOWLEDGE_WARNINGS\020\260\'\022," +
-      "\n\'PLATFORM_CLIENT_ACTION_SUBMIT_POI_IMAG" +
-      "E\020\261\'\022;\n6PLATFORM_CLIENT_ACTION_SUBMIT_PO" +
-      "I_TEXT_METADATA_UPDATE\020\262\'\0226\n1PLATFORM_CL" +
-      "IENT_ACTION_SUBMIT_POI_LOCATION_UPDATE\020\263" +
-      "\'\0227\n2PLATFORM_CLIENT_ACTION_SUBMIT_POI_T" +
-      "AKEDOWN_REQUEST\020\264\'\0220\n+PLATFORM_CLIENT_AC" +
-      "TION_GET_WEB_TOKEN_ACTION\020\265\'\0227\n2PLATFORM" +
-      "_CLIENT_ACTION_GET_ADVENTURE_SYNC_SETTIN" +
-      "GS\020\266\'\022:\n5PLATFORM_CLIENT_ACTION_UPDATE_A" +
-      "DVENTURE_SYNC_SETTINGS\020\267\'*\276\004\n\031PlayerSubm" +
-      "issionTypeProto\0221\n-PLAYER_SUBMISSION_TYP" +
-      "E_PROTO_TYPE_UNSPECIFIED\020\000\022/\n+PLAYER_SUB" +
-      "MISSION_TYPE_PROTO_POI_SUBMISSION\020\001\0221\n-P" +
-      "LAYER_SUBMISSION_TYPE_PROTO_ROUTE_SUBMIS" +
-      "SION\020\002\0225\n1PLAYER_SUBMISSION_TYPE_PROTO_P" +
-      "OI_IMAGE_SUBMISSION\020\003\0229\n5PLAYER_SUBMISSI" +
-      "ON_TYPE_PROTO_POI_TEXT_METADATA_UPDATE\020\004" +
-      "\0224\n0PLAYER_SUBMISSION_TYPE_PROTO_POI_LOC" +
-      "ATION_UPDATE\020\005\0225\n1PLAYER_SUBMISSION_TYPE" +
-      "_PROTO_POI_TAKEDOWN_REQUEST\020\006\0228\n4PLAYER_" +
-      "SUBMISSION_TYPE_PROTO_POI_AR_VIDEO_SUBMI" +
-      "SSION\020\007\0223\n/PLAYER_SUBMISSION_TYPE_PROTO_" +
-      "SPONSOR_POI_REPORT\020\010\022<\n8PLAYER_SUBMISSIO" +
-      "N_TYPE_PROTO_SPONSOR_POI_LOCATION_UPDATE" +
-      "\020\t*\311\002\n\020PoiInvalidReason\0221\n-POI_INVALID_R" +
-      "EASON_INVALID_REASON_UNSPECIFIED\020\000\022+\n\'PO" +
-      "I_INVALID_REASON_NO_PEDESTRIAN_ACCESS\020\001\022" +
-      "3\n/POI_INVALID_REASON_OBSTRUCTS_EMERGENC" +
-      "Y_SERVICES\020\002\0223\n/POI_INVALID_REASON_PRIVA" +
-      "TE_RESIDENTIAL_PROPERTY\020\003\022\035\n\031POI_INVALID" +
-      "_REASON_SCHOOL\020\004\022*\n&POI_INVALID_REASON_P" +
-      "ERMANENTLY_REMOVED\020\005\022 \n\034POI_INVALID_REAS" +
-      "ON_DUPLICATE\020\006*\242\003\n\027SponsorPoiInvalidReas" +
-      "on\022=\n9SPONSOR_POI_INVALID_REASON_SPONSOR" +
-      "_POI_REASON_UNSPECIFIED\020\000\022@\n<SPONSOR_POI" +
-      "_INVALID_REASON_SPONSOR_POI_REASON_DOES_" +
-      "NOT_EXIST\020\001\022:\n6SPONSOR_POI_INVALID_REASO" +
-      "N_SPONSOR_POI_REASON_NOT_SAFE\020\002\022>\n:SPONS" +
-      "OR_POI_INVALID_REASON_SPONSOR_POI_REASON" +
-      "_NOT_TRUTHFUL\020\003\022E\nASPONSOR_POI_INVALID_R" +
-      "EASON_SPONSOR_POI_REASON_NOT_FAMILY_FRIE" +
-      "NDLY\020\004\022C\n?SPONSOR_POI_INVALID_REASON_SPO" +
-      "NSOR_POI_REASON_OFFENSIVE_CONTENT\020\005*\327\t\n\026" +
-      "PlayerSubmissionAction\0224\n0PLAYER_SUBMISS" +
-      "ION_ACTION_UNKNOWN_GAME_POI_ACTION\020\000\022*\n$" +
-      "PLAYER_SUBMISSION_ACTION_ADD_NEW_POI\020\340\353%" +
-      "\0228\n2PLAYER_SUBMISSION_ACTION_GET_AVAILAB" +
-      "LE_SUBMISSIONS\020\341\353%\022>\n8PLAYER_SUBMISSION_" +
-      "ACTION_GET_SIGNED_URL_FOR_PHOTO_UPLOAD\020\342" +
-      "\353%\022H\nBPLAYER_SUBMISSION_ACTION_GET_PLAYE" +
-      "R_SUBMISSION_VALIDATION_SETTINGS\020\343\353%\022/\n)" +
-      "PLAYER_SUBMISSION_ACTION_SUBMIT_POI_IMAG" +
-      "E\020\304\354%\022>\n8PLAYER_SUBMISSION_ACTION_SUBMIT" +
-      "_POI_TEXT_METADATA_UPDATE\020\305\354%\0229\n3PLAYER_" +
-      "SUBMISSION_ACTION_SUBMIT_POI_LOCATION_UP" +
-      "DATE\020\306\354%\022:\n4PLAYER_SUBMISSION_ACTION_SUB" +
-      "MIT_POI_TAKEDOWN_REQUEST\020\307\354%\0228\n2PLAYER_S" +
-      "UBMISSION_ACTION_SUBMIT_SPONSOR_POI_REPO" +
-      "RT\020\310\354%\022A\n;PLAYER_SUBMISSION_ACTION_SUBMI" +
-      "T_SPONSOR_POI_LOCATION_UPDATE\020\311\354%\022,\n&PLA" +
-      "YER_SUBMISSION_ACTION_ADD_NEW_ROUTE\020\250\355%\022" +
-      "7\n1PLAYER_SUBMISSION_ACTION_GENERATE_GMA" +
-      "P_SIGNED_URL\020\214\356%\0220\n*PLAYER_SUBMISSION_AC" +
-      "TION_GET_GMAP_SETTINGS\020\215\356%\022;\n5PLAYER_SUB" +
-      "MISSION_ACTION_SUBMIT_POI_AR_VIDEO_METAD" +
-      "ATA\020\360\356%\022<\n6PLAYER_SUBMISSION_ACTION_GET_" +
-      "GRAPESHOT_FILE_UPLOAD_URL\020\361\356%\0229\n3PLAYER_" +
-      "SUBMISSION_ACTION_ASYNC_FILE_UPLOAD_COMP" +
-      "LETE\020\362\356%\0226\n0PLAYER_SUBMISSION_ACTION_GET" +
-      "_AR_MAPPING_SETTINGS\020\363\356%\0221\n+PLAYER_SUBMI" +
-      "SSION_ACTION_GET_IMAGES_FOR_POI\020\324\357%\022?\n9P" +
-      "LAYER_SUBMISSION_ACTION_SUBMIT_PLAYER_IM" +
-      "AGE_VOTE_FOR_POI\020\325\357%\0227\n1PLAYER_SUBMISSIO" +
-      "N_ACTION_IS_IMAGE_GALLERY_ENABLED\020\326\357%*\203\r" +
-      "\n\014SocialAction\022\'\n#SOCIAL_ACTION_UNKNOWN_" +
-      "SOCIAL_ACTION\020\000\022 \n\033SOCIAL_ACTION_SEARCH_" +
-      "PLAYER\020\220N\022%\n SOCIAL_ACTION_SEND_FRIEND_I" +
-      "NVITE\020\222N\022\'\n\"SOCIAL_ACTION_CANCEL_FRIEND_" +
-      "INVITE\020\223N\022\'\n\"SOCIAL_ACTION_ACCEPT_FRIEND" +
-      "_INVITE\020\224N\022(\n#SOCIAL_ACTION_DECLINE_FRIE" +
-      "ND_INVITE\020\225N\022\037\n\032SOCIAL_ACTION_LIST_FRIEN" +
-      "DS\020\226N\022/\n*SOCIAL_ACTION_LIST_OUTGOING_FRI" +
-      "END_INVITES\020\227N\022/\n*SOCIAL_ACTION_LIST_INC" +
-      "OMING_FRIEND_INVITES\020\230N\022 \n\033SOCIAL_ACTION" +
-      "_REMOVE_FRIEND\020\231N\022%\n SOCIAL_ACTION_LIST_" +
-      "FRIEND_STATUS\020\232N\022.\n)SOCIAL_ACTION_SEND_F" +
-      "ACEBOOK_FRIEND_INVITE\020\233N\022\037\n\032SOCIAL_ACTIO" +
-      "N_IS_MY_FRIEND\020\234N\022%\n SOCIAL_ACTION_CREAT" +
-      "E_INVITE_CODE\020\235N\022+\n&SOCIAL_ACTION_GET_FA" +
-      "CEBOOK_FRIEND_LIST\020\236N\022)\n$SOCIAL_ACTION_U" +
-      "PDATE_FACEBOOK_STATUS\020\237N\022\'\n\"SOCIAL_ACTIO" +
-      "N_SAVE_PLAYER_SETTINGS\020\240N\022&\n!SOCIAL_ACTI" +
-      "ON_GET_PLAYER_SETTINGS\020\241N\0222\n-SOCIAL_ACTI" +
-      "ON_GET_NIANTIC_FRIEND_LIST_DELETED\020\242N\0225\n" +
-      "0SOCIAL_ACTION_GET_NIANTIC_FRIEND_DETAIL" +
-      "S_DELETED\020\243N\0225\n0SOCIAL_ACTION_SEND_NIANT" +
-      "IC_FRIEND_INVITE_DELETED\020\244N\022\'\n\"SOCIAL_AC" +
-      "TION_SET_ACCOUNT_SETTINGS\020\245N\022\'\n\"SOCIAL_A" +
-      "CTION_GET_ACCOUNT_SETTINGS\020\246N\022-\n(SOCIAL_" +
-      "ACTION_REGISTER_PUSH_NOTIFICATION\020\365N\022/\n*" +
-      "SOCIAL_ACTION_UNREGISTER_PUSH_NOTIFICATI" +
-      "ON\020\366N\022&\n!SOCIAL_ACTION_UPDATE_NOTIFICATI" +
-      "ON\020\367N\0225\n0SOCIAL_ACTION_OPT_OUT_PUSH_NOTI" +
-      "FICATION_CATEGORY\020\370N\022\034\n\027SOCIAL_ACTION_GE" +
-      "T_INBOX\020\371N\022!\n\034SOCIAL_ACTION_GET_SIGNED_U" +
-      "RL\020\331O\022\037\n\032SOCIAL_ACTION_SUBMIT_IMAGE\020\332O\022\035" +
-      "\n\030SOCIAL_ACTION_GET_PHOTOS\020\333O\022\037\n\032SOCIAL_" +
-      "ACTION_DELETE_PHOTO\020\334O\022%\n\037SOCIAL_ACTION_" +
-      "UPDATE_PROFILE_V2\020\241\234\001\022(\n\"SOCIAL_ACTION_U" +
-      "PDATE_FRIENDSHIP_V2\020\242\234\001\022\"\n\034SOCIAL_ACTION" +
-      "_GET_PROFILE_V2\020\243\234\001\022\"\n\034SOCIAL_ACTION_INV" +
-      "ITE_GAME_V2\020\244\234\001\022)\n#SOCIAL_ACTION_SEND_FR" +
-      "IEND_INVITE_V2\020\245\234\001\022#\n\035SOCIAL_ACTION_LIST" +
-      "_FRIENDS_V2\020\246\234\001\022)\n#SOCIAL_ACTION_GET_FRI" +
-      "END_DETAILS_V2\020\247\234\001\022/\n)SOCIAL_ACTION_GET_" +
-      "CLIENT_FEATURE_FLAGS_V2\020\250\234\001*x\n\021TitanPoiI" +
-      "mageType\022\036\n\032TITAN_POI_IMAGE_TYPE_UNSET\020\000" +
-      "\022\035\n\031TITAN_POI_IMAGE_TYPE_MAIN\020\001\022$\n TITAN" +
-      "_POI_IMAGE_TYPE_SURROUNDING\020\002*\360\017\n\013Featur" +
-      "eKind\022\037\n\033FEATURE_KIND_KIND_UNDEFINED\020\000\022\033" +
-      "\n\027FEATURE_KIND_KIND_BASIN\020\001\022\033\n\027FEATURE_K" +
-      "IND_KIND_CANAL\020\002\022\036\n\032FEATURE_KIND_KIND_CE" +
-      "METERY\020\003\022\034\n\030FEATURE_KIND_KIND_CINEMA\020\004\022\035" +
-      "\n\031FEATURE_KIND_KIND_COLLEGE\020\005\022 \n\034FEATURE" +
-      "_KIND_KIND_COMMERCIAL\020\006\022\034\n\030FEATURE_KIND_" +
-      "KIND_COMMON\020\007\022\031\n\025FEATURE_KIND_KIND_DAM\020\010" +
-      "\022\033\n\027FEATURE_KIND_KIND_DITCH\020\t\022\032\n\026FEATURE" +
-      "_KIND_KIND_DOCK\020\n\022\033\n\027FEATURE_KIND_KIND_D" +
-      "RAIN\020\013\022\032\n\026FEATURE_KIND_KIND_FARM\020\014\022\036\n\032FE" +
-      "ATURE_KIND_KIND_FARMLAND\020\r\022\036\n\032FEATURE_KI" +
-      "ND_KIND_FARMYARD\020\016\022\035\n\031FEATURE_KIND_KIND_" +
-      "FOOTWAY\020\017\022\034\n\030FEATURE_KIND_KIND_FOREST\020\020\022" +
-      "\034\n\030FEATURE_KIND_KIND_GARDEN\020\021\022\035\n\031FEATURE" +
-      "_KIND_KIND_GLACIER\020\022\022!\n\035FEATURE_KIND_KIN" +
-      "D_GOLF_COURSE\020\023\022\033\n\027FEATURE_KIND_KIND_GRA" +
-      "SS\020\024\022\035\n\031FEATURE_KIND_KIND_HIGHWAY\020\025\022\036\n\032F" +
-      "EATURE_KIND_KIND_HOSPITAL\020\026\022\033\n\027FEATURE_K" +
-      "IND_KIND_HOTEL\020\027\022 \n\034FEATURE_KIND_KIND_IN",
-      "DUSTRIAL\020\030\022\032\n\026FEATURE_KIND_KIND_LAKE\020\031\022\032" +
-      "\n\026FEATURE_KIND_KIND_LAND\020\032\022\035\n\031FEATURE_KI" +
-      "ND_KIND_LIBRARY\020\033\022 \n\034FEATURE_KIND_KIND_M" +
-      "AJOR_ROAD\020\034\022\034\n\030FEATURE_KIND_KIND_MEADOW\020" +
-      "\035\022 \n\034FEATURE_KIND_KIND_MINOR_ROAD\020\036\022$\n F" +
-      "EATURE_KIND_KIND_NATURE_RESERVE\020\037\022\033\n\027FEA" +
-      "TURE_KIND_KIND_OCEAN\020 \022\032\n\026FEATURE_KIND_K" +
-      "IND_PARK\020!\022\035\n\031FEATURE_KIND_KIND_PARKING\020" +
-      "\"\022\032\n\026FEATURE_KIND_KIND_PATH\020#\022 \n\034FEATURE" +
-      "_KIND_KIND_PEDESTRIAN\020$\022\033\n\027FEATURE_KIND_" +
-      "KIND_PITCH\020%\022&\n\"FEATURE_KIND_KIND_PLACE_" +
-      "OF_WORSHIP\020&\022\033\n\027FEATURE_KIND_KIND_PLAYA\020" +
-      "\'\022 \n\034FEATURE_KIND_KIND_PLAYGROUND\020(\022\034\n\030F" +
-      "EATURE_KIND_KIND_QUARRY\020)\022\035\n\031FEATURE_KIN" +
-      "D_KIND_RAILWAY\020*\022%\n!FEATURE_KIND_KIND_RE" +
-      "CREATION_AREA\020+\022\037\n\033FEATURE_KIND_KIND_RES" +
-      "ERVOIR\020,\022!\n\035FEATURE_KIND_KIND_RESIDENTIA" +
-      "L\020-\022\034\n\030FEATURE_KIND_KIND_RETAIL\020.\022\033\n\027FEA" +
-      "TURE_KIND_KIND_RIVER\020/\022\037\n\033FEATURE_KIND_K" +
-      "IND_RIVERBANK\0200\022\034\n\030FEATURE_KIND_KIND_RUN" +
-      "WAY\0201\022\034\n\030FEATURE_KIND_KIND_SCHOOL\0202\022#\n\037F" +
-      "EATURE_KIND_KIND_SPORTS_CENTER\0203\022\035\n\031FEAT" +
-      "URE_KIND_KIND_STADIUM\0204\022\034\n\030FEATURE_KIND_" +
-      "KIND_STREAM\0205\022\035\n\031FEATURE_KIND_KIND_TAXIW" +
-      "AY\0206\022\035\n\031FEATURE_KIND_KIND_THEATRE\0207\022 \n\034F" +
-      "EATURE_KIND_KIND_UNIVERSITY\0208\022 \n\034FEATURE" +
-      "_KIND_KIND_URBAN_AREA\0209\022\033\n\027FEATURE_KIND_" +
-      "KIND_WATER\020:\022\035\n\031FEATURE_KIND_KIND_WETLAN" +
-      "D\020;\022\032\n\026FEATURE_KIND_KIND_WOOD\020<\022(\n$FEATU" +
-      "RE_KIND_KIND_DEBUG_TILE_OUTLINE\020=\022(\n$FEA" +
-      "TURE_KIND_KIND_DEBUG_TILE_SURFACE\020>\022\033\n\027F" +
-      "EATURE_KIND_KIND_OTHER\020?*\327\002\n\010MapLayer\022\035\n" +
-      "\031MAP_LAYER_LAYER_UNDEFINED\020\000\022\036\n\032MAP_LAYE" +
-      "R_LAYER_BOUNDARIES\020\001\022\035\n\031MAP_LAYER_LAYER_" +
-      "BUILDINGS\020\002\022\034\n\030MAP_LAYER_LAYER_LANDMASS\020" +
-      "\003\022\033\n\027MAP_LAYER_LAYER_LANDUSE\020\004\022\032\n\026MAP_LA" +
-      "YER_LAYER_PLACES\020\005\022\030\n\024MAP_LAYER_LAYER_PO" +
-      "IS\020\006\022\031\n\025MAP_LAYER_LAYER_ROADS\020\007\022\033\n\027MAP_L" +
-      "AYER_LAYER_TRANSIT\020\010\022\031\n\025MAP_LAYER_LAYER_" +
-      "WATER\020\t\022)\n%MAP_LAYER_LAYER_DEBUG_TILE_BO" +
-      "UNDARIES\020\nB\002P\001b\006proto3"
+      "Y_COMBAT_COMPETITIVE_SEASON_END\020\037\022M\nICLI" +
+      "ENT_INBOX_SERVICE_NOTIFICATION_CATEGORY_" +
+      "BUDDY_AFFECTION_ATTRACTIVE_POI\020 \022D\n@CLIE" +
+      "NT_INBOX_SERVICE_NOTIFICATION_CATEGORY_P" +
+      "OI_PASSCODE_REDEEMED\020!\022A\n=CLIENT_INBOX_S" +
+      "ERVICE_NOTIFICATION_CATEGORY_NO_EGGS_INC" +
+      "UBATING\020\"\022G\nCCLIENT_INBOX_SERVICE_NOTIFI" +
+      "CATION_CATEGORY_RETENTION_UNOPENED_GIFTS" +
+      "\020\'\022B\n>CLIENT_INBOX_SERVICE_NOTIFICATION_" +
+      "CATEGORY_RETENTION_STARPIECE\020(\022@\n<CLIENT" +
+      "_INBOX_SERVICE_NOTIFICATION_CATEGORY_RET" +
+      "ENTION_INCENSE\020)\022B\n>CLIENT_INBOX_SERVICE" +
+      "_NOTIFICATION_CATEGORY_RETENTION_LUCKY_E" +
+      "GG\020*\022H\nDCLIENT_INBOX_SERVICE_NOTIFICATIO" +
+      "N_CATEGORY_RETENTION_ADVSYNC_REWARDS\020+\022L" +
+      "\nHCLIENT_INBOX_SERVICE_NOTIFICATION_CATE" +
+      "GORY_RETENTION_EGGS_NOT_INCUBATING\020,\022C\n?" +
+      "CLIENT_INBOX_SERVICE_NOTIFICATION_CATEGO" +
+      "RY_RETENTION_POWER_WALK\020-\022I\nECLIENT_INBO" +
+      "X_SERVICE_NOTIFICATION_CATEGORY_RETENTIO" +
+      "N_FUN_WITH_FRIENDS\020.\022@\n<CLIENT_INBOX_SER" +
+      "VICE_NOTIFICATION_CATEGORY_BUDDY_REMOTE_" +
+      "GIFT\020/\022G\nCCLIENT_INBOX_SERVICE_NOTIFICAT" +
+      "ION_CATEGORY_BGMODE_BUDDY_REMOTE_GIFT\0200\022" +
+      "E\nACLIENT_INBOX_SERVICE_NOTIFICATION_CAT" +
+      "EGORY_REMOTE_RAID_INVITATION\0201\022;\n7CLIENT" +
+      "_INBOX_SERVICE_NOTIFICATION_CATEGORY_ITE" +
+      "M_REWARDS\0202\022L\nHCLIENT_INBOX_SERVICE_NOTI" +
+      "FICATION_CATEGORY_TIMED_GROUP_CHALLENGE_" +
+      "STARTED\0203\022M\nICLIENT_INBOX_SERVICE_NOTIFI" +
+      "CATION_CATEGORY_TIMED_GROUP_CHALLENGE_GO" +
+      "AL_MET\0204*\234\001\n\020HoloPokemonClass\022+\n\'HOLO_PO" +
+      "KEMON_CLASS_POKEMON_CLASS_NORMAL\020\000\022.\n*HO" +
+      "LO_POKEMON_CLASS_POKEMON_CLASS_LEGENDARY" +
+      "\020\001\022+\n\'HOLO_POKEMON_CLASS_POKEMON_CLASS_M" +
+      "YTHIC\020\002*\213\001\n\027CombatPlayerFinishState\022%\n!C" +
+      "OMBAT_PLAYER_FINISH_STATE_WINNER\020\000\022$\n CO" +
+      "MBAT_PLAYER_FINISH_STATE_LOSER\020\001\022#\n\037COMB" +
+      "AT_PLAYER_FINISH_STATE_DRAW\020\002*\243\n\n\013TweenA" +
+      "ction\022\027\n\023TWEEN_ACTION_MOVE_X\020\000\022\027\n\023TWEEN_" +
+      "ACTION_MOVE_Y\020\001\022\027\n\023TWEEN_ACTION_MOVE_Z\020\002" +
+      "\022\035\n\031TWEEN_ACTION_MOVE_LOCAL_X\020\003\022\035\n\031TWEEN" +
+      "_ACTION_MOVE_LOCAL_Y\020\004\022\035\n\031TWEEN_ACTION_M" +
+      "OVE_LOCAL_Z\020\005\022\034\n\030TWEEN_ACTION_MOVE_CURVE" +
+      "D\020\006\022\"\n\036TWEEN_ACTION_MOVE_CURVED_LOCAL\020\007\022" +
+      "\034\n\030TWEEN_ACTION_MOVE_SPLINE\020\010\022\"\n\036TWEEN_A" +
+      "CTION_MOVE_SPLINE_LOCAL\020\t\022\030\n\024TWEEN_ACTIO" +
+      "N_SCALE_X\020\n\022\030\n\024TWEEN_ACTION_SCALE_Y\020\013\022\030\n" +
+      "\024TWEEN_ACTION_SCALE_Z\020\014\022\031\n\025TWEEN_ACTION_" +
+      "ROTATE_X\020\r\022\031\n\025TWEEN_ACTION_ROTATE_Y\020\016\022\031\n" +
+      "\025TWEEN_ACTION_ROTATE_Z\020\017\022\036\n\032TWEEN_ACTION" +
+      "_ROTATE_AROUND\020\020\022$\n TWEEN_ACTION_ROTATE_" +
+      "AROUND_LOCAL\020\021\022$\n TWEEN_ACTION_CANVAS_RO" +
+      "TATEAROUND\020\022\022*\n&TWEEN_ACTION_CANVAS_ROTA" +
+      "TEAROUND_LOCAL\020\023\022\"\n\036TWEEN_ACTION_CANVAS_" +
+      "PLAYSPRITE\020\024\022\026\n\022TWEEN_ACTION_ALPHA\020\025\022\033\n\027" +
+      "TWEEN_ACTION_TEXT_ALPHA\020\026\022\035\n\031TWEEN_ACTIO" +
+      "N_CANVAS_ALPHA\020\027\022\035\n\031TWEEN_ACTION_ALPHA_V" +
+      "ERTEX\020\030\022\026\n\022TWEEN_ACTION_COLOR\020\031\022\037\n\033TWEEN" +
+      "_ACTION_CALLBACK_COLOR\020\032\022\033\n\027TWEEN_ACTION" +
+      "_TEXT_COLOR\020\033\022\035\n\031TWEEN_ACTION_CANVAS_COL" +
+      "OR\020\034\022\031\n\025TWEEN_ACTION_CALLBACK\020\035\022\025\n\021TWEEN" +
+      "_ACTION_MOVE\020\036\022\033\n\027TWEEN_ACTION_MOVE_LOCA" +
+      "L\020\037\022\027\n\023TWEEN_ACTION_ROTATE\020 \022\035\n\031TWEEN_AC" +
+      "TION_ROTATE_LOCAL\020!\022\026\n\022TWEEN_ACTION_SCAL" +
+      "E\020\"\022\027\n\023TWEEN_ACTION_VALUE3\020#\022\031\n\025TWEEN_AC" +
+      "TION_GUI_MOVE\020$\022 \n\034TWEEN_ACTION_GUI_MOVE" +
+      "_MARGIN\020%\022\032\n\026TWEEN_ACTION_GUI_SCALE\020&\022\032\n" +
+      "\026TWEEN_ACTION_GUI_ALPHA\020\'\022\033\n\027TWEEN_ACTIO" +
+      "N_GUI_ROTATE\020(\022\036\n\032TWEEN_ACTION_DELAYED_S" +
+      "OUND\020)\022\034\n\030TWEEN_ACTION_CANVAS_MOVE\020*\022\035\n\031" +
+      "TWEEN_ACTION_CANVAS_SCALE\020+*\201\002\n\016Invitati" +
+      "onType\022)\n%INVITATION_TYPE_INVITATION_TYP" +
+      "E_UNSET\020\000\022(\n$INVITATION_TYPE_INVITATION_" +
+      "TYPE_CODE\020\001\022,\n(INVITATION_TYPE_INVITATIO" +
+      "N_TYPE_FACEBOOK\020\002\0222\n.INVITATION_TYPE_INV" +
+      "ITATION_TYPE_SERVER_REQUEST\020\003\0228\n4INVITAT" +
+      "ION_TYPE_INVITATION_TYPE_NIANTIC_SOCIAL_" +
+      "GRAPH\020\004*V\n\021NotificationState\022\"\n\036NOTIFICA" +
+      "TION_STATE_UNSET_STATE\020\000\022\035\n\031NOTIFICATION" +
+      "_STATE_VIEWED\020\001*\352\023\n\024PlatformClientAction" +
+      "\0229\n5PLATFORM_CLIENT_ACTION_UNKNOWN_PLATF" +
+      "ORM_CLIENT_ACTION\020\000\0226\n1PLATFORM_CLIENT_A" +
+      "CTION_REGISTER_PUSH_NOTIFICATION\020\210\'\0228\n3P" +
+      "LATFORM_CLIENT_ACTION_UNREGISTER_PUSH_NO" +
+      "TIFICATION\020\211\'\0226\n1PLATFORM_CLIENT_ACTION_" +
+      "UPDATE_NOTIFICATION_STATUS\020\212\'\022>\n9PLATFOR" +
+      "M_CLIENT_ACTION_OPT_OUT_PUSH_NOTIFICATIO" +
+      "N_CATEGORY\020\213\'\022:\n5PLATFORM_CLIENT_ACTION_" +
+      "DOWNLOAD_GAME_MASTER_TEMPLATES\020\214\'\022)\n$PLA" +
+      "TFORM_CLIENT_ACTION_GET_INVENTORY\020\215\'\022+\n&" +
+      "PLATFORM_CLIENT_ACTION_REDEEM_PASSCODE\020\216" +
+      "\'\022 \n\033PLATFORM_CLIENT_ACTION_PING\020\217\'\022,\n\'P" +
+      "LATFORM_CLIENT_ACTION_ADD_LOGIN_ACTION\020\220" +
+      "\'\022/\n*PLATFORM_CLIENT_ACTION_REMOVE_LOGIN" +
+      "_ACTION\020\221\'\022-\n(PLATFORM_CLIENT_ACTION_LIS" +
+      "T_LOGIN_ACTION\020\222\'\022\'\n\"PLATFORM_CLIENT_ACT" +
+      "ION_ADD_NEW_POI\020\223\'\022/\n*PLATFORM_CLIENT_AC" +
+      "TION_PROXY_SOCIAL_ACTION\020\224\'\0227\n2PLATFORM_" +
+      "CLIENT_ACTION_DEPRECATED_CLIENT_TELEMETR" +
+      "Y\020\225\'\0225\n0PLATFORM_CLIENT_ACTION_GET_AVAIL" +
+      "ABLE_SUBMISSIONS\020\226\'\022;\n6PLATFORM_CLIENT_A" +
+      "CTION_GET_SIGNED_URL_FOR_PHOTO_UPLOAD\020\227\'" +
+      "\0220\n+PLATFORM_CLIENT_ACTION_REPLACE_LOGIN" +
+      "_ACTION\020\230\'\022<\n7PLATFORM_CLIENT_ACTION_PRO" +
+      "XY_SOCIAL_SIDE_CHANNEL_ACTION\020\231\'\0224\n/PLAT" +
+      "FORM_CLIENT_ACTION_COLLECT_CLIENT_TELEME" +
+      "TRY\020\232\'\022(\n#PLATFORM_CLIENT_ACTION_PURCHAS" +
+      "E_SKU\020\233\'\022;\n6PLATFORM_CLIENT_ACTION_GET_A" +
+      "VAILABLE_SKUS_AND_BALANCES\020\234\'\0221\n,PLATFOR" +
+      "M_CLIENT_ACTION_REDEEM_GOOGLE_RECEIPT\020\235\'" +
+      "\0220\n+PLATFORM_CLIENT_ACTION_REDEEM_APPLE_" +
+      "RECEIPT\020\236\'\0222\n-PLATFORM_CLIENT_ACTION_RED" +
+      "EEM_DESKTOP_RECEIPT\020\237\'\0222\n-PLATFORM_CLIEN" +
+      "T_ACTION_UPDATE_FITNESS_METRICS\020\240\'\022.\n)PL" +
+      "ATFORM_CLIENT_ACTION_GET_FITNESS_REPORT\020" +
+      "\241\'\0229\n4PLATFORM_CLIENT_ACTION_GET_CLIENT_" +
+      "TELEMETRY_SETTINGS\020\242\'\022&\n!PLATFORM_CLIENT" +
+      "_ACTION_PING_ASYNC\020\243\'\0227\n2PLATFORM_CLIENT" +
+      "_ACTION_REGISTER_BACKGROUND_SERVICE\020\244\'\0226" +
+      "\n1PLATFORM_CLIENT_ACTION_GET_CLIENT_BGMO" +
+      "DE_SETTINGS\020\245\'\022+\n&PLATFORM_CLIENT_ACTION" +
+      "_PING_DOWNSTREAM\020\246\'\022>\n9PLATFORM_CLIENT_A" +
+      "CTION_SET_IN_GAME_CURRENCY_EXCHANGE_RATE" +
+      "\020\250\'\0224\n/PLATFORM_CLIENT_ACTION_REQUEST_GE" +
+      "OFENCE_UPDATES\020\251\'\0222\n-PLATFORM_CLIENT_ACT" +
+      "ION_UPDATE_PLAYER_LOCATION\020\252\'\0224\n/PLATFOR" +
+      "M_CLIENT_ACTION_GENERATE_GMAP_SIGNED_URL" +
+      "\020\253\'\022-\n(PLATFORM_CLIENT_ACTION_GET_GMAP_S" +
+      "ETTINGS\020\254\'\0222\n-PLATFORM_CLIENT_ACTION_RED" +
+      "EEM_SAMSUNG_RECEIPT\020\255\'\022)\n$PLATFORM_CLIEN" +
+      "T_ACTION_ADD_NEW_ROUTE\020\256\'\0224\n/PLATFORM_CL" +
+      "IENT_ACTION_GET_OUTSTANDING_WARNINGS\020\257\'\022" +
+      "0\n+PLATFORM_CLIENT_ACTION_ACKNOWLEDGE_WA" +
+      "RNINGS\020\260\'\022,\n\'PLATFORM_CLIENT_ACTION_SUBM" +
+      "IT_POI_IMAGE\020\261\'\022;\n6PLATFORM_CLIENT_ACTIO" +
+      "N_SUBMIT_POI_TEXT_METADATA_UPDATE\020\262\'\0226\n1" +
+      "PLATFORM_CLIENT_ACTION_SUBMIT_POI_LOCATI" +
+      "ON_UPDATE\020\263\'\0227\n2PLATFORM_CLIENT_ACTION_S" +
+      "UBMIT_POI_TAKEDOWN_REQUEST\020\264\'\0220\n+PLATFOR" +
+      "M_CLIENT_ACTION_GET_WEB_TOKEN_ACTION\020\265\'\022" +
+      "7\n2PLATFORM_CLIENT_ACTION_GET_ADVENTURE_" +
+      "SYNC_SETTINGS\020\266\'\022:\n5PLATFORM_CLIENT_ACTI" +
+      "ON_UPDATE_ADVENTURE_SYNC_SETTINGS\020\267\'*\276\004\n" +
+      "\031PlayerSubmissionTypeProto\0221\n-PLAYER_SUB" +
+      "MISSION_TYPE_PROTO_TYPE_UNSPECIFIED\020\000\022/\n" +
+      "+PLAYER_SUBMISSION_TYPE_PROTO_POI_SUBMIS" +
+      "SION\020\001\0221\n-PLAYER_SUBMISSION_TYPE_PROTO_R" +
+      "OUTE_SUBMISSION\020\002\0225\n1PLAYER_SUBMISSION_T" +
+      "YPE_PROTO_POI_IMAGE_SUBMISSION\020\003\0229\n5PLAY" +
+      "ER_SUBMISSION_TYPE_PROTO_POI_TEXT_METADA" +
+      "TA_UPDATE\020\004\0224\n0PLAYER_SUBMISSION_TYPE_PR" +
+      "OTO_POI_LOCATION_UPDATE\020\005\0225\n1PLAYER_SUBM" +
+      "ISSION_TYPE_PROTO_POI_TAKEDOWN_REQUEST\020\006" +
+      "\0228\n4PLAYER_SUBMISSION_TYPE_PROTO_POI_AR_" +
+      "VIDEO_SUBMISSION\020\007\0223\n/PLAYER_SUBMISSION_" +
+      "TYPE_PROTO_SPONSOR_POI_REPORT\020\010\022<\n8PLAYE" +
+      "R_SUBMISSION_TYPE_PROTO_SPONSOR_POI_LOCA" +
+      "TION_UPDATE\020\t*\311\002\n\020PoiInvalidReason\0221\n-PO" +
+      "I_INVALID_REASON_INVALID_REASON_UNSPECIF" +
+      "IED\020\000\022+\n\'POI_INVALID_REASON_NO_PEDESTRIA" +
+      "N_ACCESS\020\001\0223\n/POI_INVALID_REASON_OBSTRUC" +
+      "TS_EMERGENCY_SERVICES\020\002\0223\n/POI_INVALID_R" +
+      "EASON_PRIVATE_RESIDENTIAL_PROPERTY\020\003\022\035\n\031" +
+      "POI_INVALID_REASON_SCHOOL\020\004\022*\n&POI_INVAL" +
+      "ID_REASON_PERMANENTLY_REMOVED\020\005\022 \n\034POI_I" +
+      "NVALID_REASON_DUPLICATE\020\006*\242\003\n\027SponsorPoi" +
+      "InvalidReason\022=\n9SPONSOR_POI_INVALID_REA" +
+      "SON_SPONSOR_POI_REASON_UNSPECIFIED\020\000\022@\n<" +
+      "SPONSOR_POI_INVALID_REASON_SPONSOR_POI_R" +
+      "EASON_DOES_NOT_EXIST\020\001\022:\n6SPONSOR_POI_IN" +
+      "VALID_REASON_SPONSOR_POI_REASON_NOT_SAFE" +
+      "\020\002\022>\n:SPONSOR_POI_INVALID_REASON_SPONSOR" +
+      "_POI_REASON_NOT_TRUTHFUL\020\003\022E\nASPONSOR_PO" +
+      "I_INVALID_REASON_SPONSOR_POI_REASON_NOT_" +
+      "FAMILY_FRIENDLY\020\004\022C\n?SPONSOR_POI_INVALID" +
+      "_REASON_SPONSOR_POI_REASON_OFFENSIVE_CON" +
+      "TENT\020\005*\327\t\n\026PlayerSubmissionAction\0224\n0PLA" +
+      "YER_SUBMISSION_ACTION_UNKNOWN_GAME_POI_A" +
+      "CTION\020\000\022*\n$PLAYER_SUBMISSION_ACTION_ADD_" +
+      "NEW_POI\020\340\353%\0228\n2PLAYER_SUBMISSION_ACTION_" +
+      "GET_AVAILABLE_SUBMISSIONS\020\341\353%\022>\n8PLAYER_" +
+      "SUBMISSION_ACTION_GET_SIGNED_URL_FOR_PHO" +
+      "TO_UPLOAD\020\342\353%\022H\nBPLAYER_SUBMISSION_ACTIO" +
+      "N_GET_PLAYER_SUBMISSION_VALIDATION_SETTI" +
+      "NGS\020\343\353%\022/\n)PLAYER_SUBMISSION_ACTION_SUBM" +
+      "IT_POI_IMAGE\020\304\354%\022>\n8PLAYER_SUBMISSION_AC" +
+      "TION_SUBMIT_POI_TEXT_METADATA_UPDATE\020\305\354%" +
+      "\0229\n3PLAYER_SUBMISSION_ACTION_SUBMIT_POI_" +
+      "LOCATION_UPDATE\020\306\354%\022:\n4PLAYER_SUBMISSION" +
+      "_ACTION_SUBMIT_POI_TAKEDOWN_REQUEST\020\307\354%\022" +
+      "8\n2PLAYER_SUBMISSION_ACTION_SUBMIT_SPONS" +
+      "OR_POI_REPORT\020\310\354%\022A\n;PLAYER_SUBMISSION_A" +
+      "CTION_SUBMIT_SPONSOR_POI_LOCATION_UPDATE" +
+      "\020\311\354%\022,\n&PLAYER_SUBMISSION_ACTION_ADD_NEW" +
+      "_ROUTE\020\250\355%\0227\n1PLAYER_SUBMISSION_ACTION_G" +
+      "ENERATE_GMAP_SIGNED_URL\020\214\356%\0220\n*PLAYER_SU" +
+      "BMISSION_ACTION_GET_GMAP_SETTINGS\020\215\356%\022;\n" +
+      "5PLAYER_SUBMISSION_ACTION_SUBMIT_POI_AR_" +
+      "VIDEO_METADATA\020\360\356%\022<\n6PLAYER_SUBMISSION_" +
+      "ACTION_GET_GRAPESHOT_FILE_UPLOAD_URL\020\361\356%" +
+      "\0229\n3PLAYER_SUBMISSION_ACTION_ASYNC_FILE_" +
+      "UPLOAD_COMPLETE\020\362\356%\0226\n0PLAYER_SUBMISSION" +
+      "_ACTION_GET_AR_MAPPING_SETTINGS\020\363\356%\0221\n+P" +
+      "LAYER_SUBMISSION_ACTION_GET_IMAGES_FOR_P" +
+      "OI\020\324\357%\022?\n9PLAYER_SUBMISSION_ACTION_SUBMI" +
+      "T_PLAYER_IMAGE_VOTE_FOR_POI\020\325\357%\0227\n1PLAYE" +
+      "R_SUBMISSION_ACTION_IS_IMAGE_GALLERY_ENA" +
+      "BLED\020\326\357%*\203\r\n\014SocialAction\022\'\n#SOCIAL_ACTI" +
+      "ON_UNKNOWN_SOCIAL_ACTION\020\000\022 \n\033SOCIAL_ACT" +
+      "ION_SEARCH_PLAYER\020\220N\022%\n SOCIAL_ACTION_SE" +
+      "ND_FRIEND_INVITE\020\222N\022\'\n\"SOCIAL_ACTION_CAN" +
+      "CEL_FRIEND_INVITE\020\223N\022\'\n\"SOCIAL_ACTION_AC" +
+      "CEPT_FRIEND_INVITE\020\224N\022(\n#SOCIAL_ACTION_D" +
+      "ECLINE_FRIEND_INVITE\020\225N\022\037\n\032SOCIAL_ACTION" +
+      "_LIST_FRIENDS\020\226N\022/\n*SOCIAL_ACTION_LIST_O" +
+      "UTGOING_FRIEND_INVITES\020\227N\022/\n*SOCIAL_ACTI" +
+      "ON_LIST_INCOMING_FRIEND_INVITES\020\230N\022 \n\033SO" +
+      "CIAL_ACTION_REMOVE_FRIEND\020\231N\022%\n SOCIAL_A" +
+      "CTION_LIST_FRIEND_STATUS\020\232N\022.\n)SOCIAL_AC" +
+      "TION_SEND_FACEBOOK_FRIEND_INVITE\020\233N\022\037\n\032S" +
+      "OCIAL_ACTION_IS_MY_FRIEND\020\234N\022%\n SOCIAL_A" +
+      "CTION_CREATE_INVITE_CODE\020\235N\022+\n&SOCIAL_AC" +
+      "TION_GET_FACEBOOK_FRIEND_LIST\020\236N\022)\n$SOCI" +
+      "AL_ACTION_UPDATE_FACEBOOK_STATUS\020\237N\022\'\n\"S" +
+      "OCIAL_ACTION_SAVE_PLAYER_SETTINGS\020\240N\022&\n!" +
+      "SOCIAL_ACTION_GET_PLAYER_SETTINGS\020\241N\0222\n-" +
+      "SOCIAL_ACTION_GET_NIANTIC_FRIEND_LIST_DE" +
+      "LETED\020\242N\0225\n0SOCIAL_ACTION_GET_NIANTIC_FR" +
+      "IEND_DETAILS_DELETED\020\243N\0225\n0SOCIAL_ACTION" +
+      "_SEND_NIANTIC_FRIEND_INVITE_DELETED\020\244N\022\'" +
+      "\n\"SOCIAL_ACTION_SET_ACCOUNT_SETTINGS\020\245N\022" +
+      "\'\n\"SOCIAL_ACTION_GET_ACCOUNT_SETTINGS\020\246N" +
+      "\022-\n(SOCIAL_ACTION_REGISTER_PUSH_NOTIFICA" +
+      "TION\020\365N\022/\n*SOCIAL_ACTION_UNREGISTER_PUSH" +
+      "_NOTIFICATION\020\366N\022&\n!SOCIAL_ACTION_UPDATE" +
+      "_NOTIFICATION\020\367N\0225\n0SOCIAL_ACTION_OPT_OU" +
+      "T_PUSH_NOTIFICATION_CATEGORY\020\370N\022\034\n\027SOCIA" +
+      "L_ACTION_GET_INBOX\020\371N\022!\n\034SOCIAL_ACTION_G" +
+      "ET_SIGNED_URL\020\331O\022\037\n\032SOCIAL_ACTION_SUBMIT" +
+      "_IMAGE\020\332O\022\035\n\030SOCIAL_ACTION_GET_PHOTOS\020\333O" +
+      "\022\037\n\032SOCIAL_ACTION_DELETE_PHOTO\020\334O\022%\n\037SOC" +
+      "IAL_ACTION_UPDATE_PROFILE_V2\020\241\234\001\022(\n\"SOCI" +
+      "AL_ACTION_UPDATE_FRIENDSHIP_V2\020\242\234\001\022\"\n\034SO" +
+      "CIAL_ACTION_GET_PROFILE_V2\020\243\234\001\022\"\n\034SOCIAL" +
+      "_ACTION_INVITE_GAME_V2\020\244\234\001\022)\n#SOCIAL_ACT" +
+      "ION_SEND_FRIEND_INVITE_V2\020\245\234\001\022#\n\035SOCIAL_" +
+      "ACTION_LIST_FRIENDS_V2\020\246\234\001\022)\n#SOCIAL_ACT" +
+      "ION_GET_FRIEND_DETAILS_V2\020\247\234\001\022/\n)SOCIAL_" +
+      "ACTION_GET_CLIENT_FEATURE_FLAGS_V2\020\250\234\001*x" +
+      "\n\021TitanPoiImageType\022\036\n\032TITAN_POI_IMAGE_T" +
+      "YPE_UNSET\020\000\022\035\n\031TITAN_POI_IMAGE_TYPE_MAIN" +
+      "\020\001\022$\n TITAN_POI_IMAGE_TYPE_SURROUNDING\020\002" +
+      "*\360\017\n\013FeatureKind\022\037\n\033FEATURE_KIND_KIND_UN" +
+      "DEFINED\020\000\022\033\n\027FEATURE_KIND_KIND_BASIN\020\001\022\033" +
+      "\n\027FEATURE_KIND_KIND_CANAL\020\002\022\036\n\032FEATURE_K" +
+      "IND_KIND_CEMETERY\020\003\022\034\n\030FEATURE_KIND_KIND" +
+      "_CINEMA\020\004\022\035\n\031FEATURE_KIND_KIND_COLLEGE\020\005" +
+      "\022 \n\034FEATURE_KIND_KIND_COMMERCIAL\020\006\022\034\n\030FE" +
+      "ATURE_KIND_KIND_COMMON\020\007\022\031\n\025FEATURE_KIND" +
+      "_KIND_DAM\020\010\022\033\n\027FEATURE_KIND_KIND_DITCH\020\t" +
+      "\022\032\n\026FEATURE_KIND_KIND_DOCK\020\n\022\033\n\027FEATURE_" +
+      "KIND_KIND_DRAIN\020\013\022\032\n\026FEATURE_KIND_KIND_F" +
+      "ARM\020\014\022\036\n\032FEATURE_KIND_KIND_FARMLAND\020\r\022\036\n" +
+      "\032FEATURE_KIND_KIND_FARMYARD\020\016\022\035\n\031FEATURE" +
+      "_KIND_KIND_FOOTWAY\020\017\022\034\n\030FEATURE_KIND_KIN" +
+      "D_FOREST\020\020\022\034\n\030FEATURE_KIND_KIND_GARDEN\020\021" +
+      "\022\035\n\031FEATURE_KIND_KIND_GLACIER\020\022\022!\n\035FEATU" +
+      "RE_KIND_KIND_GOLF_COURSE\020\023\022\033\n\027FEATURE_KI",
+      "ND_KIND_GRASS\020\024\022\035\n\031FEATURE_KIND_KIND_HIG" +
+      "HWAY\020\025\022\036\n\032FEATURE_KIND_KIND_HOSPITAL\020\026\022\033" +
+      "\n\027FEATURE_KIND_KIND_HOTEL\020\027\022 \n\034FEATURE_K" +
+      "IND_KIND_INDUSTRIAL\020\030\022\032\n\026FEATURE_KIND_KI" +
+      "ND_LAKE\020\031\022\032\n\026FEATURE_KIND_KIND_LAND\020\032\022\035\n" +
+      "\031FEATURE_KIND_KIND_LIBRARY\020\033\022 \n\034FEATURE_" +
+      "KIND_KIND_MAJOR_ROAD\020\034\022\034\n\030FEATURE_KIND_K" +
+      "IND_MEADOW\020\035\022 \n\034FEATURE_KIND_KIND_MINOR_" +
+      "ROAD\020\036\022$\n FEATURE_KIND_KIND_NATURE_RESER" +
+      "VE\020\037\022\033\n\027FEATURE_KIND_KIND_OCEAN\020 \022\032\n\026FEA" +
+      "TURE_KIND_KIND_PARK\020!\022\035\n\031FEATURE_KIND_KI" +
+      "ND_PARKING\020\"\022\032\n\026FEATURE_KIND_KIND_PATH\020#" +
+      "\022 \n\034FEATURE_KIND_KIND_PEDESTRIAN\020$\022\033\n\027FE" +
+      "ATURE_KIND_KIND_PITCH\020%\022&\n\"FEATURE_KIND_" +
+      "KIND_PLACE_OF_WORSHIP\020&\022\033\n\027FEATURE_KIND_" +
+      "KIND_PLAYA\020\'\022 \n\034FEATURE_KIND_KIND_PLAYGR" +
+      "OUND\020(\022\034\n\030FEATURE_KIND_KIND_QUARRY\020)\022\035\n\031" +
+      "FEATURE_KIND_KIND_RAILWAY\020*\022%\n!FEATURE_K" +
+      "IND_KIND_RECREATION_AREA\020+\022\037\n\033FEATURE_KI" +
+      "ND_KIND_RESERVOIR\020,\022!\n\035FEATURE_KIND_KIND" +
+      "_RESIDENTIAL\020-\022\034\n\030FEATURE_KIND_KIND_RETA" +
+      "IL\020.\022\033\n\027FEATURE_KIND_KIND_RIVER\020/\022\037\n\033FEA" +
+      "TURE_KIND_KIND_RIVERBANK\0200\022\034\n\030FEATURE_KI" +
+      "ND_KIND_RUNWAY\0201\022\034\n\030FEATURE_KIND_KIND_SC" +
+      "HOOL\0202\022#\n\037FEATURE_KIND_KIND_SPORTS_CENTE" +
+      "R\0203\022\035\n\031FEATURE_KIND_KIND_STADIUM\0204\022\034\n\030FE" +
+      "ATURE_KIND_KIND_STREAM\0205\022\035\n\031FEATURE_KIND" +
+      "_KIND_TAXIWAY\0206\022\035\n\031FEATURE_KIND_KIND_THE" +
+      "ATRE\0207\022 \n\034FEATURE_KIND_KIND_UNIVERSITY\0208" +
+      "\022 \n\034FEATURE_KIND_KIND_URBAN_AREA\0209\022\033\n\027FE" +
+      "ATURE_KIND_KIND_WATER\020:\022\035\n\031FEATURE_KIND_" +
+      "KIND_WETLAND\020;\022\032\n\026FEATURE_KIND_KIND_WOOD" +
+      "\020<\022(\n$FEATURE_KIND_KIND_DEBUG_TILE_OUTLI" +
+      "NE\020=\022(\n$FEATURE_KIND_KIND_DEBUG_TILE_SUR" +
+      "FACE\020>\022\033\n\027FEATURE_KIND_KIND_OTHER\020?*\327\002\n\010" +
+      "MapLayer\022\035\n\031MAP_LAYER_LAYER_UNDEFINED\020\000\022" +
+      "\036\n\032MAP_LAYER_LAYER_BOUNDARIES\020\001\022\035\n\031MAP_L" +
+      "AYER_LAYER_BUILDINGS\020\002\022\034\n\030MAP_LAYER_LAYE" +
+      "R_LANDMASS\020\003\022\033\n\027MAP_LAYER_LAYER_LANDUSE\020" +
+      "\004\022\032\n\026MAP_LAYER_LAYER_PLACES\020\005\022\030\n\024MAP_LAY" +
+      "ER_LAYER_POIS\020\006\022\031\n\025MAP_LAYER_LAYER_ROADS" +
+      "\020\007\022\033\n\027MAP_LAYER_LAYER_TRANSIT\020\010\022\031\n\025MAP_L" +
+      "AYER_LAYER_WATER\020\t\022)\n%MAP_LAYER_LAYER_DE" +
+      "BUG_TILE_BOUNDARIES\020\nB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -20313,7 +20316,7 @@ public final class POGOProtosRpc {
     internal_static_POGOProtos_Rpc_VsSeekerClientSettingsProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_POGOProtos_Rpc_VsSeekerClientSettingsProto_descriptor,
-        new java.lang.String[] { "Ihdadhjlfbo", "Dkkjmmjijfl", });
+        new java.lang.String[] { "UpgradeIapSkuId", "AllowedVsSeekerLeagueTemplateId", });
     internal_static_POGOProtos_Rpc_ICOGKMMELDH_descriptor =
       getDescriptor().getMessageTypes().get(486);
     internal_static_POGOProtos_Rpc_ICOGKMMELDH_fieldAccessorTable = new

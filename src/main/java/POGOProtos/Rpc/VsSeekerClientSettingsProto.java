@@ -20,8 +20,8 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private VsSeekerClientSettingsProto() {
-    ihdadhjlfbo_ = "";
-    dkkjmmjijfl_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    upgradeIapSkuId_ = "";
+    allowedVsSeekerLeagueTemplateId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
   }
 
   @java.lang.Override
@@ -58,16 +58,16 @@ private static final long serialVersionUID = 0L;
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            ihdadhjlfbo_ = s;
+            upgradeIapSkuId_ = s;
             break;
           }
           case 18: {
             java.lang.String s = input.readStringRequireUtf8();
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              dkkjmmjijfl_ = new com.google.protobuf.LazyStringArrayList();
+              allowedVsSeekerLeagueTemplateId_ = new com.google.protobuf.LazyStringArrayList();
               mutable_bitField0_ |= 0x00000001;
             }
-            dkkjmmjijfl_.add(s);
+            allowedVsSeekerLeagueTemplateId_.add(s);
             break;
           }
           default: {
@@ -86,7 +86,7 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        dkkjmmjijfl_ = dkkjmmjijfl_.getUnmodifiableView();
+        allowedVsSeekerLeagueTemplateId_ = allowedVsSeekerLeagueTemplateId_.getUnmodifiableView();
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -105,77 +105,77 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.VsSeekerClientSettingsProto.class, POGOProtos.Rpc.VsSeekerClientSettingsProto.Builder.class);
   }
 
-  public static final int IHDADHJLFBO_FIELD_NUMBER = 1;
-  private volatile java.lang.Object ihdadhjlfbo_;
+  public static final int UPGRADE_IAP_SKU_ID_FIELD_NUMBER = 1;
+  private volatile java.lang.Object upgradeIapSkuId_;
   /**
-   * <code>string ihdadhjlfbo = 1;</code>
-   * @return The ihdadhjlfbo.
+   * <code>string upgrade_iap_sku_id = 1;</code>
+   * @return The upgradeIapSkuId.
    */
   @java.lang.Override
-  public java.lang.String getIhdadhjlfbo() {
-    java.lang.Object ref = ihdadhjlfbo_;
+  public java.lang.String getUpgradeIapSkuId() {
+    java.lang.Object ref = upgradeIapSkuId_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      ihdadhjlfbo_ = s;
+      upgradeIapSkuId_ = s;
       return s;
     }
   }
   /**
-   * <code>string ihdadhjlfbo = 1;</code>
-   * @return The bytes for ihdadhjlfbo.
+   * <code>string upgrade_iap_sku_id = 1;</code>
+   * @return The bytes for upgradeIapSkuId.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getIhdadhjlfboBytes() {
-    java.lang.Object ref = ihdadhjlfbo_;
+      getUpgradeIapSkuIdBytes() {
+    java.lang.Object ref = upgradeIapSkuId_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      ihdadhjlfbo_ = b;
+      upgradeIapSkuId_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int DKKJMMJIJFL_FIELD_NUMBER = 2;
-  private com.google.protobuf.LazyStringList dkkjmmjijfl_;
+  public static final int ALLOWED_VS_SEEKER_LEAGUE_TEMPLATE_ID_FIELD_NUMBER = 2;
+  private com.google.protobuf.LazyStringList allowedVsSeekerLeagueTemplateId_;
   /**
-   * <code>repeated string dkkjmmjijfl = 2;</code>
-   * @return A list containing the dkkjmmjijfl.
+   * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
+   * @return A list containing the allowedVsSeekerLeagueTemplateId.
    */
   public com.google.protobuf.ProtocolStringList
-      getDkkjmmjijflList() {
-    return dkkjmmjijfl_;
+      getAllowedVsSeekerLeagueTemplateIdList() {
+    return allowedVsSeekerLeagueTemplateId_;
   }
   /**
-   * <code>repeated string dkkjmmjijfl = 2;</code>
-   * @return The count of dkkjmmjijfl.
+   * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
+   * @return The count of allowedVsSeekerLeagueTemplateId.
    */
-  public int getDkkjmmjijflCount() {
-    return dkkjmmjijfl_.size();
+  public int getAllowedVsSeekerLeagueTemplateIdCount() {
+    return allowedVsSeekerLeagueTemplateId_.size();
   }
   /**
-   * <code>repeated string dkkjmmjijfl = 2;</code>
+   * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
    * @param index The index of the element to return.
-   * @return The dkkjmmjijfl at the given index.
+   * @return The allowedVsSeekerLeagueTemplateId at the given index.
    */
-  public java.lang.String getDkkjmmjijfl(int index) {
-    return dkkjmmjijfl_.get(index);
+  public java.lang.String getAllowedVsSeekerLeagueTemplateId(int index) {
+    return allowedVsSeekerLeagueTemplateId_.get(index);
   }
   /**
-   * <code>repeated string dkkjmmjijfl = 2;</code>
+   * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
    * @param index The index of the value to return.
-   * @return The bytes of the dkkjmmjijfl at the given index.
+   * @return The bytes of the allowedVsSeekerLeagueTemplateId at the given index.
    */
   public com.google.protobuf.ByteString
-      getDkkjmmjijflBytes(int index) {
-    return dkkjmmjijfl_.getByteString(index);
+      getAllowedVsSeekerLeagueTemplateIdBytes(int index) {
+    return allowedVsSeekerLeagueTemplateId_.getByteString(index);
   }
 
   private byte memoizedIsInitialized = -1;
@@ -192,11 +192,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getIhdadhjlfboBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, ihdadhjlfbo_);
+    if (!getUpgradeIapSkuIdBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, upgradeIapSkuId_);
     }
-    for (int i = 0; i < dkkjmmjijfl_.size(); i++) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, dkkjmmjijfl_.getRaw(i));
+    for (int i = 0; i < allowedVsSeekerLeagueTemplateId_.size(); i++) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, allowedVsSeekerLeagueTemplateId_.getRaw(i));
     }
     unknownFields.writeTo(output);
   }
@@ -207,16 +207,16 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (!getIhdadhjlfboBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, ihdadhjlfbo_);
+    if (!getUpgradeIapSkuIdBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, upgradeIapSkuId_);
     }
     {
       int dataSize = 0;
-      for (int i = 0; i < dkkjmmjijfl_.size(); i++) {
-        dataSize += computeStringSizeNoTag(dkkjmmjijfl_.getRaw(i));
+      for (int i = 0; i < allowedVsSeekerLeagueTemplateId_.size(); i++) {
+        dataSize += computeStringSizeNoTag(allowedVsSeekerLeagueTemplateId_.getRaw(i));
       }
       size += dataSize;
-      size += 1 * getDkkjmmjijflList().size();
+      size += 1 * getAllowedVsSeekerLeagueTemplateIdList().size();
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -233,10 +233,10 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.VsSeekerClientSettingsProto other = (POGOProtos.Rpc.VsSeekerClientSettingsProto) obj;
 
-    if (!getIhdadhjlfbo()
-        .equals(other.getIhdadhjlfbo())) return false;
-    if (!getDkkjmmjijflList()
-        .equals(other.getDkkjmmjijflList())) return false;
+    if (!getUpgradeIapSkuId()
+        .equals(other.getUpgradeIapSkuId())) return false;
+    if (!getAllowedVsSeekerLeagueTemplateIdList()
+        .equals(other.getAllowedVsSeekerLeagueTemplateIdList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -248,11 +248,11 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + IHDADHJLFBO_FIELD_NUMBER;
-    hash = (53 * hash) + getIhdadhjlfbo().hashCode();
-    if (getDkkjmmjijflCount() > 0) {
-      hash = (37 * hash) + DKKJMMJIJFL_FIELD_NUMBER;
-      hash = (53 * hash) + getDkkjmmjijflList().hashCode();
+    hash = (37 * hash) + UPGRADE_IAP_SKU_ID_FIELD_NUMBER;
+    hash = (53 * hash) + getUpgradeIapSkuId().hashCode();
+    if (getAllowedVsSeekerLeagueTemplateIdCount() > 0) {
+      hash = (37 * hash) + ALLOWED_VS_SEEKER_LEAGUE_TEMPLATE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getAllowedVsSeekerLeagueTemplateIdList().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -391,9 +391,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      ihdadhjlfbo_ = "";
+      upgradeIapSkuId_ = "";
 
-      dkkjmmjijfl_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      allowedVsSeekerLeagueTemplateId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
@@ -422,12 +422,12 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.VsSeekerClientSettingsProto buildPartial() {
       POGOProtos.Rpc.VsSeekerClientSettingsProto result = new POGOProtos.Rpc.VsSeekerClientSettingsProto(this);
       int from_bitField0_ = bitField0_;
-      result.ihdadhjlfbo_ = ihdadhjlfbo_;
+      result.upgradeIapSkuId_ = upgradeIapSkuId_;
       if (((bitField0_ & 0x00000001) != 0)) {
-        dkkjmmjijfl_ = dkkjmmjijfl_.getUnmodifiableView();
+        allowedVsSeekerLeagueTemplateId_ = allowedVsSeekerLeagueTemplateId_.getUnmodifiableView();
         bitField0_ = (bitField0_ & ~0x00000001);
       }
-      result.dkkjmmjijfl_ = dkkjmmjijfl_;
+      result.allowedVsSeekerLeagueTemplateId_ = allowedVsSeekerLeagueTemplateId_;
       onBuilt();
       return result;
     }
@@ -476,17 +476,17 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.VsSeekerClientSettingsProto other) {
       if (other == POGOProtos.Rpc.VsSeekerClientSettingsProto.getDefaultInstance()) return this;
-      if (!other.getIhdadhjlfbo().isEmpty()) {
-        ihdadhjlfbo_ = other.ihdadhjlfbo_;
+      if (!other.getUpgradeIapSkuId().isEmpty()) {
+        upgradeIapSkuId_ = other.upgradeIapSkuId_;
         onChanged();
       }
-      if (!other.dkkjmmjijfl_.isEmpty()) {
-        if (dkkjmmjijfl_.isEmpty()) {
-          dkkjmmjijfl_ = other.dkkjmmjijfl_;
+      if (!other.allowedVsSeekerLeagueTemplateId_.isEmpty()) {
+        if (allowedVsSeekerLeagueTemplateId_.isEmpty()) {
+          allowedVsSeekerLeagueTemplateId_ = other.allowedVsSeekerLeagueTemplateId_;
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          ensureDkkjmmjijflIsMutable();
-          dkkjmmjijfl_.addAll(other.dkkjmmjijfl_);
+          ensureAllowedVsSeekerLeagueTemplateIdIsMutable();
+          allowedVsSeekerLeagueTemplateId_.addAll(other.allowedVsSeekerLeagueTemplateId_);
         }
         onChanged();
       }
@@ -520,188 +520,188 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private java.lang.Object ihdadhjlfbo_ = "";
+    private java.lang.Object upgradeIapSkuId_ = "";
     /**
-     * <code>string ihdadhjlfbo = 1;</code>
-     * @return The ihdadhjlfbo.
+     * <code>string upgrade_iap_sku_id = 1;</code>
+     * @return The upgradeIapSkuId.
      */
-    public java.lang.String getIhdadhjlfbo() {
-      java.lang.Object ref = ihdadhjlfbo_;
+    public java.lang.String getUpgradeIapSkuId() {
+      java.lang.Object ref = upgradeIapSkuId_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        ihdadhjlfbo_ = s;
+        upgradeIapSkuId_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string ihdadhjlfbo = 1;</code>
-     * @return The bytes for ihdadhjlfbo.
+     * <code>string upgrade_iap_sku_id = 1;</code>
+     * @return The bytes for upgradeIapSkuId.
      */
     public com.google.protobuf.ByteString
-        getIhdadhjlfboBytes() {
-      java.lang.Object ref = ihdadhjlfbo_;
+        getUpgradeIapSkuIdBytes() {
+      java.lang.Object ref = upgradeIapSkuId_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        ihdadhjlfbo_ = b;
+        upgradeIapSkuId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string ihdadhjlfbo = 1;</code>
-     * @param value The ihdadhjlfbo to set.
+     * <code>string upgrade_iap_sku_id = 1;</code>
+     * @param value The upgradeIapSkuId to set.
      * @return This builder for chaining.
      */
-    public Builder setIhdadhjlfbo(
+    public Builder setUpgradeIapSkuId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      ihdadhjlfbo_ = value;
+      upgradeIapSkuId_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string ihdadhjlfbo = 1;</code>
+     * <code>string upgrade_iap_sku_id = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearIhdadhjlfbo() {
+    public Builder clearUpgradeIapSkuId() {
       
-      ihdadhjlfbo_ = getDefaultInstance().getIhdadhjlfbo();
+      upgradeIapSkuId_ = getDefaultInstance().getUpgradeIapSkuId();
       onChanged();
       return this;
     }
     /**
-     * <code>string ihdadhjlfbo = 1;</code>
-     * @param value The bytes for ihdadhjlfbo to set.
+     * <code>string upgrade_iap_sku_id = 1;</code>
+     * @param value The bytes for upgradeIapSkuId to set.
      * @return This builder for chaining.
      */
-    public Builder setIhdadhjlfboBytes(
+    public Builder setUpgradeIapSkuIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      ihdadhjlfbo_ = value;
+      upgradeIapSkuId_ = value;
       onChanged();
       return this;
     }
 
-    private com.google.protobuf.LazyStringList dkkjmmjijfl_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-    private void ensureDkkjmmjijflIsMutable() {
+    private com.google.protobuf.LazyStringList allowedVsSeekerLeagueTemplateId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    private void ensureAllowedVsSeekerLeagueTemplateIdIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        dkkjmmjijfl_ = new com.google.protobuf.LazyStringArrayList(dkkjmmjijfl_);
+        allowedVsSeekerLeagueTemplateId_ = new com.google.protobuf.LazyStringArrayList(allowedVsSeekerLeagueTemplateId_);
         bitField0_ |= 0x00000001;
        }
     }
     /**
-     * <code>repeated string dkkjmmjijfl = 2;</code>
-     * @return A list containing the dkkjmmjijfl.
+     * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
+     * @return A list containing the allowedVsSeekerLeagueTemplateId.
      */
     public com.google.protobuf.ProtocolStringList
-        getDkkjmmjijflList() {
-      return dkkjmmjijfl_.getUnmodifiableView();
+        getAllowedVsSeekerLeagueTemplateIdList() {
+      return allowedVsSeekerLeagueTemplateId_.getUnmodifiableView();
     }
     /**
-     * <code>repeated string dkkjmmjijfl = 2;</code>
-     * @return The count of dkkjmmjijfl.
+     * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
+     * @return The count of allowedVsSeekerLeagueTemplateId.
      */
-    public int getDkkjmmjijflCount() {
-      return dkkjmmjijfl_.size();
+    public int getAllowedVsSeekerLeagueTemplateIdCount() {
+      return allowedVsSeekerLeagueTemplateId_.size();
     }
     /**
-     * <code>repeated string dkkjmmjijfl = 2;</code>
+     * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
      * @param index The index of the element to return.
-     * @return The dkkjmmjijfl at the given index.
+     * @return The allowedVsSeekerLeagueTemplateId at the given index.
      */
-    public java.lang.String getDkkjmmjijfl(int index) {
-      return dkkjmmjijfl_.get(index);
+    public java.lang.String getAllowedVsSeekerLeagueTemplateId(int index) {
+      return allowedVsSeekerLeagueTemplateId_.get(index);
     }
     /**
-     * <code>repeated string dkkjmmjijfl = 2;</code>
+     * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
      * @param index The index of the value to return.
-     * @return The bytes of the dkkjmmjijfl at the given index.
+     * @return The bytes of the allowedVsSeekerLeagueTemplateId at the given index.
      */
     public com.google.protobuf.ByteString
-        getDkkjmmjijflBytes(int index) {
-      return dkkjmmjijfl_.getByteString(index);
+        getAllowedVsSeekerLeagueTemplateIdBytes(int index) {
+      return allowedVsSeekerLeagueTemplateId_.getByteString(index);
     }
     /**
-     * <code>repeated string dkkjmmjijfl = 2;</code>
+     * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
      * @param index The index to set the value at.
-     * @param value The dkkjmmjijfl to set.
+     * @param value The allowedVsSeekerLeagueTemplateId to set.
      * @return This builder for chaining.
      */
-    public Builder setDkkjmmjijfl(
+    public Builder setAllowedVsSeekerLeagueTemplateId(
         int index, java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
-  ensureDkkjmmjijflIsMutable();
-      dkkjmmjijfl_.set(index, value);
+  ensureAllowedVsSeekerLeagueTemplateIdIsMutable();
+      allowedVsSeekerLeagueTemplateId_.set(index, value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string dkkjmmjijfl = 2;</code>
-     * @param value The dkkjmmjijfl to add.
+     * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
+     * @param value The allowedVsSeekerLeagueTemplateId to add.
      * @return This builder for chaining.
      */
-    public Builder addDkkjmmjijfl(
+    public Builder addAllowedVsSeekerLeagueTemplateId(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
-  ensureDkkjmmjijflIsMutable();
-      dkkjmmjijfl_.add(value);
+  ensureAllowedVsSeekerLeagueTemplateIdIsMutable();
+      allowedVsSeekerLeagueTemplateId_.add(value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string dkkjmmjijfl = 2;</code>
-     * @param values The dkkjmmjijfl to add.
+     * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
+     * @param values The allowedVsSeekerLeagueTemplateId to add.
      * @return This builder for chaining.
      */
-    public Builder addAllDkkjmmjijfl(
+    public Builder addAllAllowedVsSeekerLeagueTemplateId(
         java.lang.Iterable<java.lang.String> values) {
-      ensureDkkjmmjijflIsMutable();
+      ensureAllowedVsSeekerLeagueTemplateIdIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-          values, dkkjmmjijfl_);
+          values, allowedVsSeekerLeagueTemplateId_);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string dkkjmmjijfl = 2;</code>
+     * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearDkkjmmjijfl() {
-      dkkjmmjijfl_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    public Builder clearAllowedVsSeekerLeagueTemplateId() {
+      allowedVsSeekerLeagueTemplateId_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string dkkjmmjijfl = 2;</code>
-     * @param value The bytes of the dkkjmmjijfl to add.
+     * <code>repeated string allowed_vs_seeker_league_template_id = 2;</code>
+     * @param value The bytes of the allowedVsSeekerLeagueTemplateId to add.
      * @return This builder for chaining.
      */
-    public Builder addDkkjmmjijflBytes(
+    public Builder addAllowedVsSeekerLeagueTemplateIdBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-      ensureDkkjmmjijflIsMutable();
-      dkkjmmjijfl_.add(value);
+      ensureAllowedVsSeekerLeagueTemplateIdIsMutable();
+      allowedVsSeekerLeagueTemplateId_.add(value);
       onChanged();
       return this;
     }
