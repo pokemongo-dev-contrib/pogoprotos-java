@@ -239,7 +239,7 @@ private static final long serialVersionUID = 0L;
     if (maxCount_ != 0) {
       output.writeInt32(3, maxCount_);
     }
-    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       output.writeEnum(4, pokemonId_);
     }
     unknownFields.writeTo(output);
@@ -261,7 +261,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(3, maxCount_);
     }
-    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(4, pokemonId_);
     }

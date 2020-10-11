@@ -411,7 +411,7 @@ private static final long serialVersionUID = 0L;
     if (collisionHeadRadiusM_ != 0F) {
       output.writeFloat(5, collisionHeadRadiusM_);
     }
-    if (movementType_ != POGOProtos.Rpc.HoloPokemonMovementType.HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_STATIC.getNumber()) {
+    if (movementType_ != POGOProtos.Rpc.HoloPokemonMovementType.POKEMON_ENC_MOVEMENT_STATIC.getNumber()) {
       output.writeEnum(6, movementType_);
     }
     if (movementTimerS_ != 0F) {
@@ -479,7 +479,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeFloatSize(5, collisionHeadRadiusM_);
     }
-    if (movementType_ != POGOProtos.Rpc.HoloPokemonMovementType.HOLO_POKEMON_MOVEMENT_TYPE_POKEMON_ENC_MOVEMENT_STATIC.getNumber()) {
+    if (movementType_ != POGOProtos.Rpc.HoloPokemonMovementType.POKEMON_ENC_MOVEMENT_STATIC.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(6, movementType_);
     }

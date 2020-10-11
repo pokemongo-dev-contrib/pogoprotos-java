@@ -604,7 +604,7 @@ private static final long serialVersionUID = 0L;
     if (mfkgkhdmbpb_ != 0L) {
       output.writeUInt64(1, mfkgkhdmbpb_);
     }
-    if (kcbcpdfdkel_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (kcbcpdfdkel_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       output.writeEnum(2, kcbcpdfdkel_);
     }
     if (efpknnlchbc_ != null) {
@@ -622,7 +622,7 @@ private static final long serialVersionUID = 0L;
     if (dpcmkifkoch_ != 0L) {
       output.writeInt64(7, dpcmkifkoch_);
     }
-    if (eajohpjbknk_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (eajohpjbknk_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       output.writeEnum(8, eajohpjbknk_);
     }
     if (bcnfhogkjfj_ != null) {
@@ -671,7 +671,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeUInt64Size(1, mfkgkhdmbpb_);
     }
-    if (kcbcpdfdkel_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (kcbcpdfdkel_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, kcbcpdfdkel_);
     }
@@ -694,7 +694,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(7, dpcmkifkoch_);
     }
-    if (eajohpjbknk_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (eajohpjbknk_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(8, eajohpjbknk_);
     }

@@ -217,7 +217,7 @@ private static final long serialVersionUID = 0L;
           (java.lang.Integer) type_);
       return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN;
+    return POGOProtos.Rpc.Item.UNKNOWN;
   }
 
   public static final int STARDUST_FIELD_NUMBER = 2;
@@ -268,7 +268,7 @@ private static final long serialVersionUID = 0L;
           (java.lang.Integer) type_);
       return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET;
+    return POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET;
   }
 
   public static final int EXPERIENCE_FIELD_NUMBER = 6;
@@ -979,7 +979,7 @@ private static final long serialVersionUID = 0L;
             (java.lang.Integer) type_);
         return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN;
+      return POGOProtos.Rpc.Item.UNKNOWN;
     }
     /**
      * <code>.POGOProtos.Rpc.Item item = 1;</code>
@@ -1110,7 +1110,7 @@ private static final long serialVersionUID = 0L;
             (java.lang.Integer) type_);
         return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET;
+      return POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET;
     }
     /**
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_candy = 4;</code>

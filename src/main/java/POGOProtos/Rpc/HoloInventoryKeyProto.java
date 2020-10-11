@@ -300,7 +300,7 @@ private static final long serialVersionUID = 0L;
           (java.lang.Integer) type_);
       return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN;
+    return POGOProtos.Rpc.Item.UNKNOWN;
   }
 
   public static final int POKEDEX_ENTRY_ID_FIELD_NUMBER = 3;
@@ -1489,7 +1489,7 @@ private static final long serialVersionUID = 0L;
             (java.lang.Integer) type_);
         return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN;
+      return POGOProtos.Rpc.Item.UNKNOWN;
     }
     /**
      * <code>.POGOProtos.Rpc.Item item = 2;</code>

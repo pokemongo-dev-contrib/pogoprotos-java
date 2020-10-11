@@ -3655,7 +3655,7 @@ private static final long serialVersionUID = 0L;
       if (!getNicknameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 19, nickname_);
       }
-      if (pokeball_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+      if (pokeball_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
         output.writeEnum(20, pokeball_);
       }
       unknownFields.writeTo(output);
@@ -3742,7 +3742,7 @@ private static final long serialVersionUID = 0L;
       if (!getNicknameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(19, nickname_);
       }
-      if (pokeball_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+      if (pokeball_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(20, pokeball_);
       }

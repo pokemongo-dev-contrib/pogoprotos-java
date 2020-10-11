@@ -124,7 +124,7 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (jakcnoogihe_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (jakcnoogihe_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       output.writeEnum(1, jakcnoogihe_);
     }
     unknownFields.writeTo(output);
@@ -136,7 +136,7 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (jakcnoogihe_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (jakcnoogihe_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, jakcnoogihe_);
     }

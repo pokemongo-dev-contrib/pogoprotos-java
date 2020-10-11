@@ -13,24 +13,24 @@ package POGOProtos.Rpc;
 public enum PlayerAvatarType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE = 0;</code>
+   * <code>PLAYER_AVATAR_MALE = 0;</code>
    */
-  PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE(0),
+  PLAYER_AVATAR_MALE(0),
   /**
-   * <code>PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE = 1;</code>
+   * <code>PLAYER_AVATAR_FEMALE = 1;</code>
    */
-  PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE(1),
+  PLAYER_AVATAR_FEMALE(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE = 0;</code>
+   * <code>PLAYER_AVATAR_MALE = 0;</code>
    */
-  public static final int PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE_VALUE = 0;
+  public static final int PLAYER_AVATAR_MALE_VALUE = 0;
   /**
-   * <code>PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE = 1;</code>
+   * <code>PLAYER_AVATAR_FEMALE = 1;</code>
    */
-  public static final int PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE_VALUE = 1;
+  public static final int PLAYER_AVATAR_FEMALE_VALUE = 1;
 
 
   public final int getNumber() {
@@ -57,8 +57,8 @@ public enum PlayerAvatarType
    */
   public static PlayerAvatarType forNumber(int value) {
     switch (value) {
-      case 0: return PLAYER_AVATAR_TYPE_PLAYER_AVATAR_MALE;
-      case 1: return PLAYER_AVATAR_TYPE_PLAYER_AVATAR_FEMALE;
+      case 0: return PLAYER_AVATAR_MALE;
+      case 1: return PLAYER_AVATAR_FEMALE;
       default: return null;
     }
   }

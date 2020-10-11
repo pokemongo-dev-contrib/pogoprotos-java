@@ -166,10 +166,10 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (ekpohjfklal_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (ekpohjfklal_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       output.writeEnum(1, ekpohjfklal_);
     }
-    if (mfkgkhdmbpb_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (mfkgkhdmbpb_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       output.writeEnum(2, mfkgkhdmbpb_);
     }
     if (lnijopfoind_ != 0) {
@@ -184,11 +184,11 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (ekpohjfklal_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (ekpohjfklal_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, ekpohjfklal_);
     }
-    if (mfkgkhdmbpb_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (mfkgkhdmbpb_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, mfkgkhdmbpb_);
     }

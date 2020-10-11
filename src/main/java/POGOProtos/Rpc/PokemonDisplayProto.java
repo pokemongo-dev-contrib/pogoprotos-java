@@ -20080,7 +20080,7 @@ private static final long serialVersionUID = 0L;
     if (pokemonBadge_ != POGOProtos.Rpc.PokemonBadge.POKEMON_BADGE_POKEMON_BADGE_UNSET.getNumber()) {
       output.writeEnum(7, pokemonBadge_);
     }
-    if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(8, temporaryEvolutionId_);
     }
     if (field2_ != 0L) {
@@ -20089,7 +20089,7 @@ private static final long serialVersionUID = 0L;
     if (field3_ != false) {
       output.writeBool(10, field3_);
     }
-    if (megaForm_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (megaForm_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(11, megaForm_);
     }
     if (field5_ != POGOProtos.Rpc.PokemonDisplayProto.Costume.UNSET.getNumber()) {
@@ -20135,7 +20135,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(7, pokemonBadge_);
     }
-    if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(8, temporaryEvolutionId_);
     }
@@ -20147,7 +20147,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(10, field3_);
     }
-    if (megaForm_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (megaForm_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(11, megaForm_);
     }

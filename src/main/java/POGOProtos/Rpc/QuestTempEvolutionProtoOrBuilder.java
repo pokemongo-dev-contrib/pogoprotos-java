@@ -3,8 +3,8 @@
 
 package POGOProtos.Rpc;
 
-public interface PokemonField1OrBuilder extends
-    // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.PokemonField1)
+public interface QuestTempEvolutionProtoOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.QuestTempEvolutionProto)
     com.google.protobuf.MessageOrBuilder {
 
   /**

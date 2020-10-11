@@ -8,18 +8,18 @@ package POGOProtos.Rpc;
  * ref: PFDANLJNIFO
  * </pre>
  *
- * Protobuf type {@code POGOProtos.Rpc.PokemonField1}
+ * Protobuf type {@code POGOProtos.Rpc.QuestTempEvolutionProto}
  */
-public final class PokemonField1 extends
+public final class QuestTempEvolutionProto extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PokemonField1)
-    PokemonField1OrBuilder {
+    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.QuestTempEvolutionProto)
+    QuestTempEvolutionProtoOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use PokemonField1.newBuilder() to construct.
-  private PokemonField1(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use QuestTempEvolutionProto.newBuilder() to construct.
+  private QuestTempEvolutionProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private PokemonField1() {
+  private QuestTempEvolutionProto() {
     pokemonId_ = 0;
     form_ = 0;
   }
@@ -28,7 +28,7 @@ private static final long serialVersionUID = 0L;
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new PokemonField1();
+    return new QuestTempEvolutionProto();
   }
 
   @java.lang.Override
@@ -36,7 +36,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private PokemonField1(
+  private QuestTempEvolutionProto(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -113,15 +113,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PokemonField1_descriptor;
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_QuestTempEvolutionProto_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PokemonField1_fieldAccessorTable
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_QuestTempEvolutionProto_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            POGOProtos.Rpc.PokemonField1.class, POGOProtos.Rpc.PokemonField1.Builder.class);
+            POGOProtos.Rpc.QuestTempEvolutionProto.class, POGOProtos.Rpc.QuestTempEvolutionProto.Builder.class);
   }
 
   public static final int QUEST_FIELD_NUMBER = 1;
@@ -234,7 +234,7 @@ private static final long serialVersionUID = 0L;
     if (field1_ != null) {
       output.writeMessage(2, getField1());
     }
-    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       output.writeEnum(3, pokemonId_);
     }
     if (form_ != POGOProtos.Rpc.PokemonDisplayProto.Form.FORM_UNSET.getNumber()) {
@@ -257,7 +257,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getField1());
     }
-    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (pokemonId_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, pokemonId_);
     }
@@ -275,10 +275,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof POGOProtos.Rpc.PokemonField1)) {
+    if (!(obj instanceof POGOProtos.Rpc.QuestTempEvolutionProto)) {
       return super.equals(obj);
     }
-    POGOProtos.Rpc.PokemonField1 other = (POGOProtos.Rpc.PokemonField1) obj;
+    POGOProtos.Rpc.QuestTempEvolutionProto other = (POGOProtos.Rpc.QuestTempEvolutionProto) obj;
 
     if (hasQuest() != other.hasQuest()) return false;
     if (hasQuest()) {
@@ -320,69 +320,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static POGOProtos.Rpc.PokemonField1 parseFrom(
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseFrom(
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseFrom(
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseFrom(
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseFrom(byte[] data)
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseFrom(
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseFrom(
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseDelimitedFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseDelimitedFrom(
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseFrom(
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.PokemonField1 parseFrom(
+  public static POGOProtos.Rpc.QuestTempEvolutionProto parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -395,7 +395,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(POGOProtos.Rpc.PokemonField1 prototype) {
+  public static Builder newBuilder(POGOProtos.Rpc.QuestTempEvolutionProto prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -415,26 +415,26 @@ private static final long serialVersionUID = 0L;
    * ref: PFDANLJNIFO
    * </pre>
    *
-   * Protobuf type {@code POGOProtos.Rpc.PokemonField1}
+   * Protobuf type {@code POGOProtos.Rpc.QuestTempEvolutionProto}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.PokemonField1)
-      POGOProtos.Rpc.PokemonField1OrBuilder {
+      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.QuestTempEvolutionProto)
+      POGOProtos.Rpc.QuestTempEvolutionProtoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PokemonField1_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_QuestTempEvolutionProto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PokemonField1_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_QuestTempEvolutionProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.PokemonField1.class, POGOProtos.Rpc.PokemonField1.Builder.class);
+              POGOProtos.Rpc.QuestTempEvolutionProto.class, POGOProtos.Rpc.QuestTempEvolutionProto.Builder.class);
     }
 
-    // Construct using POGOProtos.Rpc.PokemonField1.newBuilder()
+    // Construct using POGOProtos.Rpc.QuestTempEvolutionProto.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -474,17 +474,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_PokemonField1_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_QuestTempEvolutionProto_descriptor;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.PokemonField1 getDefaultInstanceForType() {
-      return POGOProtos.Rpc.PokemonField1.getDefaultInstance();
+    public POGOProtos.Rpc.QuestTempEvolutionProto getDefaultInstanceForType() {
+      return POGOProtos.Rpc.QuestTempEvolutionProto.getDefaultInstance();
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.PokemonField1 build() {
-      POGOProtos.Rpc.PokemonField1 result = buildPartial();
+    public POGOProtos.Rpc.QuestTempEvolutionProto build() {
+      POGOProtos.Rpc.QuestTempEvolutionProto result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -492,8 +492,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.PokemonField1 buildPartial() {
-      POGOProtos.Rpc.PokemonField1 result = new POGOProtos.Rpc.PokemonField1(this);
+    public POGOProtos.Rpc.QuestTempEvolutionProto buildPartial() {
+      POGOProtos.Rpc.QuestTempEvolutionProto result = new POGOProtos.Rpc.QuestTempEvolutionProto(this);
       if (questBuilder_ == null) {
         result.quest_ = quest_;
       } else {
@@ -544,16 +544,16 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof POGOProtos.Rpc.PokemonField1) {
-        return mergeFrom((POGOProtos.Rpc.PokemonField1)other);
+      if (other instanceof POGOProtos.Rpc.QuestTempEvolutionProto) {
+        return mergeFrom((POGOProtos.Rpc.QuestTempEvolutionProto)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(POGOProtos.Rpc.PokemonField1 other) {
-      if (other == POGOProtos.Rpc.PokemonField1.getDefaultInstance()) return this;
+    public Builder mergeFrom(POGOProtos.Rpc.QuestTempEvolutionProto other) {
+      if (other == POGOProtos.Rpc.QuestTempEvolutionProto.getDefaultInstance()) return this;
       if (other.hasQuest()) {
         mergeQuest(other.getQuest());
       }
@@ -581,11 +581,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      POGOProtos.Rpc.PokemonField1 parsedMessage = null;
+      POGOProtos.Rpc.QuestTempEvolutionProto parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (POGOProtos.Rpc.PokemonField1) e.getUnfinishedMessage();
+        parsedMessage = (POGOProtos.Rpc.QuestTempEvolutionProto) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -953,41 +953,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.PokemonField1)
+    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.QuestTempEvolutionProto)
   }
 
-  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.PokemonField1)
-  private static final POGOProtos.Rpc.PokemonField1 DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.QuestTempEvolutionProto)
+  private static final POGOProtos.Rpc.QuestTempEvolutionProto DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new POGOProtos.Rpc.PokemonField1();
+    DEFAULT_INSTANCE = new POGOProtos.Rpc.QuestTempEvolutionProto();
   }
 
-  public static POGOProtos.Rpc.PokemonField1 getDefaultInstance() {
+  public static POGOProtos.Rpc.QuestTempEvolutionProto getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<PokemonField1>
-      PARSER = new com.google.protobuf.AbstractParser<PokemonField1>() {
+  private static final com.google.protobuf.Parser<QuestTempEvolutionProto>
+      PARSER = new com.google.protobuf.AbstractParser<QuestTempEvolutionProto>() {
     @java.lang.Override
-    public PokemonField1 parsePartialFrom(
+    public QuestTempEvolutionProto parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new PokemonField1(input, extensionRegistry);
+      return new QuestTempEvolutionProto(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<PokemonField1> parser() {
+  public static com.google.protobuf.Parser<QuestTempEvolutionProto> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<PokemonField1> getParserForType() {
+  public com.google.protobuf.Parser<QuestTempEvolutionProto> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonField1 getDefaultInstanceForType() {
+  public POGOProtos.Rpc.QuestTempEvolutionProto getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

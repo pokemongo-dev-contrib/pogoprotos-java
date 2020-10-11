@@ -253,7 +253,7 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < pokedexId_.size(); i++) {
       output.writeEnumNoTag(pokedexId_.get(i));
     }
-    if (onboardingEggPokemon_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (onboardingEggPokemon_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       output.writeEnum(3, onboardingEggPokemon_);
     }
     if (eggKmUntilHatch_ != 0) {
@@ -284,7 +284,7 @@ private static final long serialVersionUID = 0L;
           .computeUInt32SizeNoTag(dataSize);
       }pokedexIdMemoizedSerializedSize = dataSize;
     }
-    if (onboardingEggPokemon_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (onboardingEggPokemon_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(3, onboardingEggPokemon_);
     }

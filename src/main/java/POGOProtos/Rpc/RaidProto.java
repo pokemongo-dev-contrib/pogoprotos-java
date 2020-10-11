@@ -293,7 +293,7 @@ private static final long serialVersionUID = 0L;
     if (kjoachgdnof_ != 0L) {
       output.writeInt64(3, kjoachgdnof_);
     }
-    if (ogfianmlncn_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (ogfianmlncn_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       output.writeEnum(4, ogfianmlncn_);
     }
     if (jnfhhbdpipe_ != false) {
@@ -338,7 +338,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(3, kjoachgdnof_);
     }
-    if (ogfianmlncn_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (ogfianmlncn_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(4, ogfianmlncn_);
     }

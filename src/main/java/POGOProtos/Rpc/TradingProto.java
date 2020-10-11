@@ -3790,7 +3790,7 @@ private static final long serialVersionUID = 0L;
       if (dlaabmcgeno_ != null) {
         output.writeMessage(14, getDlaabmcgeno());
       }
-      if (eajohpjbknk_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+      if (eajohpjbknk_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
         output.writeEnum(15, eajohpjbknk_);
       }
       if (gijnbmdfmog_ != 0) {
@@ -3879,7 +3879,7 @@ private static final long serialVersionUID = 0L;
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(14, getDlaabmcgeno());
       }
-      if (eajohpjbknk_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+      if (eajohpjbknk_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(15, eajohpjbknk_);
       }

@@ -452,10 +452,10 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (evolution_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (evolution_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       output.writeEnum(1, evolution_);
     }
-    if (evolutionItemRequirement_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (evolutionItemRequirement_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       output.writeEnum(2, evolutionItemRequirement_);
     }
     if (candyCost_ != 0) {
@@ -470,7 +470,7 @@ private static final long serialVersionUID = 0L;
     if (genderRequirement_ != POGOProtos.Rpc.PokemonDisplayProto.Gender.GENDER_UNSET.getNumber()) {
       output.writeEnum(6, genderRequirement_);
     }
-    if (lureItemRequirement_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (lureItemRequirement_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       output.writeEnum(8, lureItemRequirement_);
     }
     if (mustBeBuddy_ != false) {
@@ -488,7 +488,7 @@ private static final long serialVersionUID = 0L;
     if (noCandyCostViaTrade_ != false) {
       output.writeBool(13, noCandyCostViaTrade_);
     }
-    if (tempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (tempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(14, tempEvolution_);
     }
     if (firstTempEvolutionCandyCost_ != 0) {
@@ -509,11 +509,11 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (evolution_ != POGOProtos.Rpc.HoloPokemonId.HOLO_POKEMON_ID_POKEMON_UNSET.getNumber()) {
+    if (evolution_ != POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, evolution_);
     }
-    if (evolutionItemRequirement_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (evolutionItemRequirement_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, evolutionItemRequirement_);
     }
@@ -533,7 +533,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(6, genderRequirement_);
     }
-    if (lureItemRequirement_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (lureItemRequirement_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(8, lureItemRequirement_);
     }
@@ -557,7 +557,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(13, noCandyCostViaTrade_);
     }
-    if (tempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (tempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(14, tempEvolution_);
     }

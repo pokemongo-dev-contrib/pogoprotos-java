@@ -13,528 +13,528 @@ package POGOProtos.Rpc;
 public enum Item
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>ITEM_ITEM_UNKNOWN = 0;</code>
+   * <code>UNKNOWN = 0;</code>
    */
-  ITEM_ITEM_UNKNOWN(0),
+  UNKNOWN(0),
   /**
-   * <code>ITEM_ITEM_POKE_BALL = 1;</code>
+   * <code>POKE_BALL = 1;</code>
    */
-  ITEM_ITEM_POKE_BALL(1),
+  POKE_BALL(1),
   /**
-   * <code>ITEM_ITEM_GREAT_BALL = 2;</code>
+   * <code>GREAT_BALL = 2;</code>
    */
-  ITEM_ITEM_GREAT_BALL(2),
+  GREAT_BALL(2),
   /**
-   * <code>ITEM_ITEM_ULTRA_BALL = 3;</code>
+   * <code>ULTRA_BALL = 3;</code>
    */
-  ITEM_ITEM_ULTRA_BALL(3),
+  ULTRA_BALL(3),
   /**
-   * <code>ITEM_ITEM_MASTER_BALL = 4;</code>
+   * <code>MASTER_BALL = 4;</code>
    */
-  ITEM_ITEM_MASTER_BALL(4),
+  MASTER_BALL(4),
   /**
-   * <code>ITEM_ITEM_PREMIER_BALL = 5;</code>
+   * <code>PREMIER_BALL = 5;</code>
    */
-  ITEM_ITEM_PREMIER_BALL(5),
+  PREMIER_BALL(5),
   /**
-   * <code>ITEM_ITEM_POTION = 101;</code>
+   * <code>POTION = 101;</code>
    */
-  ITEM_ITEM_POTION(101),
+  POTION(101),
   /**
-   * <code>ITEM_ITEM_SUPER_POTION = 102;</code>
+   * <code>SUPER_POTION = 102;</code>
    */
-  ITEM_ITEM_SUPER_POTION(102),
+  SUPER_POTION(102),
   /**
-   * <code>ITEM_ITEM_HYPER_POTION = 103;</code>
+   * <code>HYPER_POTION = 103;</code>
    */
-  ITEM_ITEM_HYPER_POTION(103),
+  HYPER_POTION(103),
   /**
-   * <code>ITEM_ITEM_MAX_POTION = 104;</code>
+   * <code>MAX_POTION = 104;</code>
    */
-  ITEM_ITEM_MAX_POTION(104),
+  MAX_POTION(104),
   /**
-   * <code>ITEM_ITEM_REVIVE = 201;</code>
+   * <code>REVIVE = 201;</code>
    */
-  ITEM_ITEM_REVIVE(201),
+  REVIVE(201),
   /**
-   * <code>ITEM_ITEM_MAX_REVIVE = 202;</code>
+   * <code>MAX_REVIVE = 202;</code>
    */
-  ITEM_ITEM_MAX_REVIVE(202),
+  MAX_REVIVE(202),
   /**
-   * <code>ITEM_ITEM_LUCKY_EGG = 301;</code>
+   * <code>LUCKY_EGG = 301;</code>
    */
-  ITEM_ITEM_LUCKY_EGG(301),
+  LUCKY_EGG(301),
   /**
-   * <code>ITEM_ITEM_INCENSE_ORDINARY = 401;</code>
+   * <code>INCENSE_ORDINARY = 401;</code>
    */
-  ITEM_ITEM_INCENSE_ORDINARY(401),
+  INCENSE_ORDINARY(401),
   /**
-   * <code>ITEM_ITEM_INCENSE_SPICY = 402;</code>
+   * <code>INCENSE_SPICY = 402;</code>
    */
-  ITEM_ITEM_INCENSE_SPICY(402),
+  INCENSE_SPICY(402),
   /**
-   * <code>ITEM_ITEM_INCENSE_COOL = 403;</code>
+   * <code>INCENSE_COOL = 403;</code>
    */
-  ITEM_ITEM_INCENSE_COOL(403),
+  INCENSE_COOL(403),
   /**
-   * <code>ITEM_ITEM_INCENSE_FLORAL = 404;</code>
+   * <code>INCENSE_FLORAL = 404;</code>
    */
-  ITEM_ITEM_INCENSE_FLORAL(404),
+  INCENSE_FLORAL(404),
   /**
-   * <code>ITEM_ITEM_INCENSE_BELUGA_BOX = 405;</code>
+   * <code>INCENSE_BELUGA_BOX = 405;</code>
    */
-  ITEM_ITEM_INCENSE_BELUGA_BOX(405),
+  INCENSE_BELUGA_BOX(405),
   /**
-   * <code>ITEM_ITEM_TROY_DISK = 501;</code>
+   * <code>TROY_DISK = 501;</code>
    */
-  ITEM_ITEM_TROY_DISK(501),
+  TROY_DISK(501),
   /**
-   * <code>ITEM_ITEM_TROY_DISK_GLACIAL = 502;</code>
+   * <code>TROY_DISK_GLACIAL = 502;</code>
    */
-  ITEM_ITEM_TROY_DISK_GLACIAL(502),
+  TROY_DISK_GLACIAL(502),
   /**
-   * <code>ITEM_ITEM_TROY_DISK_MOSSY = 503;</code>
+   * <code>TROY_DISK_MOSSY = 503;</code>
    */
-  ITEM_ITEM_TROY_DISK_MOSSY(503),
+  TROY_DISK_MOSSY(503),
   /**
-   * <code>ITEM_ITEM_TROY_DISK_MAGNETIC = 504;</code>
+   * <code>TROY_DISK_MAGNETIC = 504;</code>
    */
-  ITEM_ITEM_TROY_DISK_MAGNETIC(504),
+  TROY_DISK_MAGNETIC(504),
   /**
-   * <code>ITEM_ITEM_X_ATTACK = 602;</code>
+   * <code>X_ATTACK = 602;</code>
    */
-  ITEM_ITEM_X_ATTACK(602),
+  X_ATTACK(602),
   /**
-   * <code>ITEM_ITEM_X_DEFENSE = 603;</code>
+   * <code>X_DEFENSE = 603;</code>
    */
-  ITEM_ITEM_X_DEFENSE(603),
+  X_DEFENSE(603),
   /**
-   * <code>ITEM_ITEM_X_MIRACLE = 604;</code>
+   * <code>X_MIRACLE = 604;</code>
    */
-  ITEM_ITEM_X_MIRACLE(604),
+  X_MIRACLE(604),
   /**
-   * <code>ITEM_ITEM_RAZZ_BERRY = 701;</code>
+   * <code>RAZZ_BERRY = 701;</code>
    */
-  ITEM_ITEM_RAZZ_BERRY(701),
+  RAZZ_BERRY(701),
   /**
-   * <code>ITEM_ITEM_BLUK_BERRY = 702;</code>
+   * <code>BLUK_BERRY = 702;</code>
    */
-  ITEM_ITEM_BLUK_BERRY(702),
+  BLUK_BERRY(702),
   /**
-   * <code>ITEM_ITEM_NANAB_BERRY = 703;</code>
+   * <code>NANAB_BERRY = 703;</code>
    */
-  ITEM_ITEM_NANAB_BERRY(703),
+  NANAB_BERRY(703),
   /**
-   * <code>ITEM_ITEM_WEPAR_BERRY = 704;</code>
+   * <code>WEPAR_BERRY = 704;</code>
    */
-  ITEM_ITEM_WEPAR_BERRY(704),
+  WEPAR_BERRY(704),
   /**
-   * <code>ITEM_ITEM_PINAP_BERRY = 705;</code>
+   * <code>PINAP_BERRY = 705;</code>
    */
-  ITEM_ITEM_PINAP_BERRY(705),
+  PINAP_BERRY(705),
   /**
-   * <code>ITEM_ITEM_GOLDEN_RAZZ_BERRY = 706;</code>
+   * <code>GOLDEN_RAZZ_BERRY = 706;</code>
    */
-  ITEM_ITEM_GOLDEN_RAZZ_BERRY(706),
+  GOLDEN_RAZZ_BERRY(706),
   /**
-   * <code>ITEM_ITEM_GOLDEN_NANAB_BERRY = 707;</code>
+   * <code>GOLDEN_NANAB_BERRY = 707;</code>
    */
-  ITEM_ITEM_GOLDEN_NANAB_BERRY(707),
+  GOLDEN_NANAB_BERRY(707),
   /**
-   * <code>ITEM_ITEM_GOLDEN_PINAP_BERRY = 708;</code>
+   * <code>GOLDEN_PINAP_BERRY = 708;</code>
    */
-  ITEM_ITEM_GOLDEN_PINAP_BERRY(708),
+  GOLDEN_PINAP_BERRY(708),
   /**
-   * <code>ITEM_ITEM_POFFIN = 709;</code>
+   * <code>POFFIN = 709;</code>
    */
-  ITEM_ITEM_POFFIN(709),
+  POFFIN(709),
   /**
-   * <code>ITEM_ITEM_SPECIAL_CAMERA = 801;</code>
+   * <code>SPECIAL_CAMERA = 801;</code>
    */
-  ITEM_ITEM_SPECIAL_CAMERA(801),
+  SPECIAL_CAMERA(801),
   /**
-   * <code>ITEM_ITEM_STICKER_INVENTORY = 802;</code>
+   * <code>STICKER_INVENTORY = 802;</code>
    */
-  ITEM_ITEM_STICKER_INVENTORY(802),
+  STICKER_INVENTORY(802),
   /**
-   * <code>ITEM_ITEM_INCUBATOR_BASIC_UNLIMITED = 901;</code>
+   * <code>INCUBATOR_BASIC_UNLIMITED = 901;</code>
    */
-  ITEM_ITEM_INCUBATOR_BASIC_UNLIMITED(901),
+  INCUBATOR_BASIC_UNLIMITED(901),
   /**
-   * <code>ITEM_ITEM_INCUBATOR_BASIC = 902;</code>
+   * <code>INCUBATOR_BASIC = 902;</code>
    */
-  ITEM_ITEM_INCUBATOR_BASIC(902),
+  INCUBATOR_BASIC(902),
   /**
-   * <code>ITEM_ITEM_INCUBATOR_SUPER = 903;</code>
+   * <code>INCUBATOR_SUPER = 903;</code>
    */
-  ITEM_ITEM_INCUBATOR_SUPER(903),
+  INCUBATOR_SUPER(903),
   /**
-   * <code>ITEM_ITEM_POKEMON_STORAGE_UPGRADE = 1001;</code>
+   * <code>POKEMON_STORAGE_UPGRADE = 1001;</code>
    */
-  ITEM_ITEM_POKEMON_STORAGE_UPGRADE(1001),
+  POKEMON_STORAGE_UPGRADE(1001),
   /**
-   * <code>ITEM_ITEM_ITEM_STORAGE_UPGRADE = 1002;</code>
+   * <code>STORAGE_UPGRADE = 1002;</code>
    */
-  ITEM_ITEM_ITEM_STORAGE_UPGRADE(1002),
+  STORAGE_UPGRADE(1002),
   /**
-   * <code>ITEM_ITEM_SUN_STONE = 1101;</code>
+   * <code>SUN_STONE = 1101;</code>
    */
-  ITEM_ITEM_SUN_STONE(1101),
+  SUN_STONE(1101),
   /**
-   * <code>ITEM_ITEM_KINGS_ROCK = 1102;</code>
+   * <code>KINGS_ROCK = 1102;</code>
    */
-  ITEM_ITEM_KINGS_ROCK(1102),
+  KINGS_ROCK(1102),
   /**
-   * <code>ITEM_ITEM_METAL_COAT = 1103;</code>
+   * <code>METAL_COAT = 1103;</code>
    */
-  ITEM_ITEM_METAL_COAT(1103),
+  METAL_COAT(1103),
   /**
-   * <code>ITEM_ITEM_DRAGON_SCALE = 1104;</code>
+   * <code>DRAGON_SCALE = 1104;</code>
    */
-  ITEM_ITEM_DRAGON_SCALE(1104),
+  DRAGON_SCALE(1104),
   /**
-   * <code>ITEM_ITEM_UP_GRADE = 1105;</code>
+   * <code>UP_GRADE = 1105;</code>
    */
-  ITEM_ITEM_UP_GRADE(1105),
+  UP_GRADE(1105),
   /**
-   * <code>ITEM_ITEM_GEN4_EVOLUTION_STONE = 1106;</code>
+   * <code>GEN4_EVOLUTION_STONE = 1106;</code>
    */
-  ITEM_ITEM_GEN4_EVOLUTION_STONE(1106),
+  GEN4_EVOLUTION_STONE(1106),
   /**
-   * <code>ITEM_ITEM_GEN5_EVOLUTION_STONE = 1107;</code>
+   * <code>GEN5_EVOLUTION_STONE = 1107;</code>
    */
-  ITEM_ITEM_GEN5_EVOLUTION_STONE(1107),
+  GEN5_EVOLUTION_STONE(1107),
   /**
-   * <code>ITEM_ITEM_MOVE_REROLL_FAST_ATTACK = 1201;</code>
+   * <code>MOVE_REROLL_FAST_ATTACK = 1201;</code>
    */
-  ITEM_ITEM_MOVE_REROLL_FAST_ATTACK(1201),
+  MOVE_REROLL_FAST_ATTACK(1201),
   /**
-   * <code>ITEM_ITEM_MOVE_REROLL_SPECIAL_ATTACK = 1202;</code>
+   * <code>MOVE_REROLL_SPECIAL_ATTACK = 1202;</code>
    */
-  ITEM_ITEM_MOVE_REROLL_SPECIAL_ATTACK(1202),
+  MOVE_REROLL_SPECIAL_ATTACK(1202),
   /**
-   * <code>ITEM_ITEM_MOVE_REROLL_ELITE_FAST_ATTACK = 1203;</code>
+   * <code>MOVE_REROLL_ELITE_FAST_ATTACK = 1203;</code>
    */
-  ITEM_ITEM_MOVE_REROLL_ELITE_FAST_ATTACK(1203),
+  MOVE_REROLL_ELITE_FAST_ATTACK(1203),
   /**
-   * <code>ITEM_ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK = 1204;</code>
+   * <code>MOVE_REROLL_ELITE_SPECIAL_ATTACK = 1204;</code>
    */
-  ITEM_ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK(1204),
+  MOVE_REROLL_ELITE_SPECIAL_ATTACK(1204),
   /**
-   * <code>ITEM_ITEM_RARE_CANDY = 1301;</code>
+   * <code>RARE_CANDY = 1301;</code>
    */
-  ITEM_ITEM_RARE_CANDY(1301),
+  RARE_CANDY(1301),
   /**
-   * <code>ITEM_ITEM_FREE_RAID_TICKET = 1401;</code>
+   * <code>FREE_RAID_TICKET = 1401;</code>
    */
-  ITEM_ITEM_FREE_RAID_TICKET(1401),
+  FREE_RAID_TICKET(1401),
   /**
-   * <code>ITEM_ITEM_PAID_RAID_TICKET = 1402;</code>
+   * <code>PAID_RAID_TICKET = 1402;</code>
    */
-  ITEM_ITEM_PAID_RAID_TICKET(1402),
+  PAID_RAID_TICKET(1402),
   /**
-   * <code>ITEM_ITEM_LEGENDARY_RAID_TICKET = 1403;</code>
+   * <code>LEGENDARY_RAID_TICKET = 1403;</code>
    */
-  ITEM_ITEM_LEGENDARY_RAID_TICKET(1403),
+  LEGENDARY_RAID_TICKET(1403),
   /**
-   * <code>ITEM_ITEM_STAR_PIECE = 1404;</code>
+   * <code>STAR_PIECE = 1404;</code>
    */
-  ITEM_ITEM_STAR_PIECE(1404),
+  STAR_PIECE(1404),
   /**
-   * <code>ITEM_ITEM_FRIEND_GIFT_BOX = 1405;</code>
+   * <code>FRIEND_GIFT_BOX = 1405;</code>
    */
-  ITEM_ITEM_FRIEND_GIFT_BOX(1405),
+  FRIEND_GIFT_BOX(1405),
   /**
-   * <code>ITEM_ITEM_TEAM_CHANGE = 1406;</code>
+   * <code>TEAM_CHANGE = 1406;</code>
    */
-  ITEM_ITEM_TEAM_CHANGE(1406),
+  TEAM_CHANGE(1406),
   /**
-   * <code>ITEM_ITEM_REMOTE_RAID_TICKET = 1408;</code>
+   * <code>REMOTE_RAID_TICKET = 1408;</code>
    */
-  ITEM_ITEM_REMOTE_RAID_TICKET(1408),
+  REMOTE_RAID_TICKET(1408),
   /**
-   * <code>ITEM_ITEM_LEADER_MAP_FRAGMENT = 1501;</code>
+   * <code>LEADER_MAP_FRAGMENT = 1501;</code>
    */
-  ITEM_ITEM_LEADER_MAP_FRAGMENT(1501),
+  LEADER_MAP_FRAGMENT(1501),
   /**
-   * <code>ITEM_ITEM_LEADER_MAP = 1502;</code>
+   * <code>LEADER_MAP = 1502;</code>
    */
-  ITEM_ITEM_LEADER_MAP(1502),
+  LEADER_MAP(1502),
   /**
-   * <code>ITEM_ITEM_GIOVANNI_MAP = 1503;</code>
+   * <code>GIOVANNI_MAP = 1503;</code>
    */
-  ITEM_ITEM_GIOVANNI_MAP(1503),
+  GIOVANNI_MAP(1503),
   /**
-   * <code>ITEM_ITEM_GLOBAL_EVENT_TICKET = 1600;</code>
+   * <code>GLOBAL_EVENT_TICKET = 1600;</code>
    */
-  ITEM_ITEM_GLOBAL_EVENT_TICKET(1600),
+  GLOBAL_EVENT_TICKET(1600),
   /**
-   * <code>ITEM_ITEM_EVENT_TICKET_PINK = 1601;</code>
+   * <code>EVENT_TICKET_PINK = 1601;</code>
    */
-  ITEM_ITEM_EVENT_TICKET_PINK(1601),
+  EVENT_TICKET_PINK(1601),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>ITEM_ITEM_UNKNOWN = 0;</code>
+   * <code>UNKNOWN = 0;</code>
    */
-  public static final int ITEM_ITEM_UNKNOWN_VALUE = 0;
+  public static final int UNKNOWN_VALUE = 0;
   /**
-   * <code>ITEM_ITEM_POKE_BALL = 1;</code>
+   * <code>POKE_BALL = 1;</code>
    */
-  public static final int ITEM_ITEM_POKE_BALL_VALUE = 1;
+  public static final int POKE_BALL_VALUE = 1;
   /**
-   * <code>ITEM_ITEM_GREAT_BALL = 2;</code>
+   * <code>GREAT_BALL = 2;</code>
    */
-  public static final int ITEM_ITEM_GREAT_BALL_VALUE = 2;
+  public static final int GREAT_BALL_VALUE = 2;
   /**
-   * <code>ITEM_ITEM_ULTRA_BALL = 3;</code>
+   * <code>ULTRA_BALL = 3;</code>
    */
-  public static final int ITEM_ITEM_ULTRA_BALL_VALUE = 3;
+  public static final int ULTRA_BALL_VALUE = 3;
   /**
-   * <code>ITEM_ITEM_MASTER_BALL = 4;</code>
+   * <code>MASTER_BALL = 4;</code>
    */
-  public static final int ITEM_ITEM_MASTER_BALL_VALUE = 4;
+  public static final int MASTER_BALL_VALUE = 4;
   /**
-   * <code>ITEM_ITEM_PREMIER_BALL = 5;</code>
+   * <code>PREMIER_BALL = 5;</code>
    */
-  public static final int ITEM_ITEM_PREMIER_BALL_VALUE = 5;
+  public static final int PREMIER_BALL_VALUE = 5;
   /**
-   * <code>ITEM_ITEM_POTION = 101;</code>
+   * <code>POTION = 101;</code>
    */
-  public static final int ITEM_ITEM_POTION_VALUE = 101;
+  public static final int POTION_VALUE = 101;
   /**
-   * <code>ITEM_ITEM_SUPER_POTION = 102;</code>
+   * <code>SUPER_POTION = 102;</code>
    */
-  public static final int ITEM_ITEM_SUPER_POTION_VALUE = 102;
+  public static final int SUPER_POTION_VALUE = 102;
   /**
-   * <code>ITEM_ITEM_HYPER_POTION = 103;</code>
+   * <code>HYPER_POTION = 103;</code>
    */
-  public static final int ITEM_ITEM_HYPER_POTION_VALUE = 103;
+  public static final int HYPER_POTION_VALUE = 103;
   /**
-   * <code>ITEM_ITEM_MAX_POTION = 104;</code>
+   * <code>MAX_POTION = 104;</code>
    */
-  public static final int ITEM_ITEM_MAX_POTION_VALUE = 104;
+  public static final int MAX_POTION_VALUE = 104;
   /**
-   * <code>ITEM_ITEM_REVIVE = 201;</code>
+   * <code>REVIVE = 201;</code>
    */
-  public static final int ITEM_ITEM_REVIVE_VALUE = 201;
+  public static final int REVIVE_VALUE = 201;
   /**
-   * <code>ITEM_ITEM_MAX_REVIVE = 202;</code>
+   * <code>MAX_REVIVE = 202;</code>
    */
-  public static final int ITEM_ITEM_MAX_REVIVE_VALUE = 202;
+  public static final int MAX_REVIVE_VALUE = 202;
   /**
-   * <code>ITEM_ITEM_LUCKY_EGG = 301;</code>
+   * <code>LUCKY_EGG = 301;</code>
    */
-  public static final int ITEM_ITEM_LUCKY_EGG_VALUE = 301;
+  public static final int LUCKY_EGG_VALUE = 301;
   /**
-   * <code>ITEM_ITEM_INCENSE_ORDINARY = 401;</code>
+   * <code>INCENSE_ORDINARY = 401;</code>
    */
-  public static final int ITEM_ITEM_INCENSE_ORDINARY_VALUE = 401;
+  public static final int INCENSE_ORDINARY_VALUE = 401;
   /**
-   * <code>ITEM_ITEM_INCENSE_SPICY = 402;</code>
+   * <code>INCENSE_SPICY = 402;</code>
    */
-  public static final int ITEM_ITEM_INCENSE_SPICY_VALUE = 402;
+  public static final int INCENSE_SPICY_VALUE = 402;
   /**
-   * <code>ITEM_ITEM_INCENSE_COOL = 403;</code>
+   * <code>INCENSE_COOL = 403;</code>
    */
-  public static final int ITEM_ITEM_INCENSE_COOL_VALUE = 403;
+  public static final int INCENSE_COOL_VALUE = 403;
   /**
-   * <code>ITEM_ITEM_INCENSE_FLORAL = 404;</code>
+   * <code>INCENSE_FLORAL = 404;</code>
    */
-  public static final int ITEM_ITEM_INCENSE_FLORAL_VALUE = 404;
+  public static final int INCENSE_FLORAL_VALUE = 404;
   /**
-   * <code>ITEM_ITEM_INCENSE_BELUGA_BOX = 405;</code>
+   * <code>INCENSE_BELUGA_BOX = 405;</code>
    */
-  public static final int ITEM_ITEM_INCENSE_BELUGA_BOX_VALUE = 405;
+  public static final int INCENSE_BELUGA_BOX_VALUE = 405;
   /**
-   * <code>ITEM_ITEM_TROY_DISK = 501;</code>
+   * <code>TROY_DISK = 501;</code>
    */
-  public static final int ITEM_ITEM_TROY_DISK_VALUE = 501;
+  public static final int TROY_DISK_VALUE = 501;
   /**
-   * <code>ITEM_ITEM_TROY_DISK_GLACIAL = 502;</code>
+   * <code>TROY_DISK_GLACIAL = 502;</code>
    */
-  public static final int ITEM_ITEM_TROY_DISK_GLACIAL_VALUE = 502;
+  public static final int TROY_DISK_GLACIAL_VALUE = 502;
   /**
-   * <code>ITEM_ITEM_TROY_DISK_MOSSY = 503;</code>
+   * <code>TROY_DISK_MOSSY = 503;</code>
    */
-  public static final int ITEM_ITEM_TROY_DISK_MOSSY_VALUE = 503;
+  public static final int TROY_DISK_MOSSY_VALUE = 503;
   /**
-   * <code>ITEM_ITEM_TROY_DISK_MAGNETIC = 504;</code>
+   * <code>TROY_DISK_MAGNETIC = 504;</code>
    */
-  public static final int ITEM_ITEM_TROY_DISK_MAGNETIC_VALUE = 504;
+  public static final int TROY_DISK_MAGNETIC_VALUE = 504;
   /**
-   * <code>ITEM_ITEM_X_ATTACK = 602;</code>
+   * <code>X_ATTACK = 602;</code>
    */
-  public static final int ITEM_ITEM_X_ATTACK_VALUE = 602;
+  public static final int X_ATTACK_VALUE = 602;
   /**
-   * <code>ITEM_ITEM_X_DEFENSE = 603;</code>
+   * <code>X_DEFENSE = 603;</code>
    */
-  public static final int ITEM_ITEM_X_DEFENSE_VALUE = 603;
+  public static final int X_DEFENSE_VALUE = 603;
   /**
-   * <code>ITEM_ITEM_X_MIRACLE = 604;</code>
+   * <code>X_MIRACLE = 604;</code>
    */
-  public static final int ITEM_ITEM_X_MIRACLE_VALUE = 604;
+  public static final int X_MIRACLE_VALUE = 604;
   /**
-   * <code>ITEM_ITEM_RAZZ_BERRY = 701;</code>
+   * <code>RAZZ_BERRY = 701;</code>
    */
-  public static final int ITEM_ITEM_RAZZ_BERRY_VALUE = 701;
+  public static final int RAZZ_BERRY_VALUE = 701;
   /**
-   * <code>ITEM_ITEM_BLUK_BERRY = 702;</code>
+   * <code>BLUK_BERRY = 702;</code>
    */
-  public static final int ITEM_ITEM_BLUK_BERRY_VALUE = 702;
+  public static final int BLUK_BERRY_VALUE = 702;
   /**
-   * <code>ITEM_ITEM_NANAB_BERRY = 703;</code>
+   * <code>NANAB_BERRY = 703;</code>
    */
-  public static final int ITEM_ITEM_NANAB_BERRY_VALUE = 703;
+  public static final int NANAB_BERRY_VALUE = 703;
   /**
-   * <code>ITEM_ITEM_WEPAR_BERRY = 704;</code>
+   * <code>WEPAR_BERRY = 704;</code>
    */
-  public static final int ITEM_ITEM_WEPAR_BERRY_VALUE = 704;
+  public static final int WEPAR_BERRY_VALUE = 704;
   /**
-   * <code>ITEM_ITEM_PINAP_BERRY = 705;</code>
+   * <code>PINAP_BERRY = 705;</code>
    */
-  public static final int ITEM_ITEM_PINAP_BERRY_VALUE = 705;
+  public static final int PINAP_BERRY_VALUE = 705;
   /**
-   * <code>ITEM_ITEM_GOLDEN_RAZZ_BERRY = 706;</code>
+   * <code>GOLDEN_RAZZ_BERRY = 706;</code>
    */
-  public static final int ITEM_ITEM_GOLDEN_RAZZ_BERRY_VALUE = 706;
+  public static final int GOLDEN_RAZZ_BERRY_VALUE = 706;
   /**
-   * <code>ITEM_ITEM_GOLDEN_NANAB_BERRY = 707;</code>
+   * <code>GOLDEN_NANAB_BERRY = 707;</code>
    */
-  public static final int ITEM_ITEM_GOLDEN_NANAB_BERRY_VALUE = 707;
+  public static final int GOLDEN_NANAB_BERRY_VALUE = 707;
   /**
-   * <code>ITEM_ITEM_GOLDEN_PINAP_BERRY = 708;</code>
+   * <code>GOLDEN_PINAP_BERRY = 708;</code>
    */
-  public static final int ITEM_ITEM_GOLDEN_PINAP_BERRY_VALUE = 708;
+  public static final int GOLDEN_PINAP_BERRY_VALUE = 708;
   /**
-   * <code>ITEM_ITEM_POFFIN = 709;</code>
+   * <code>POFFIN = 709;</code>
    */
-  public static final int ITEM_ITEM_POFFIN_VALUE = 709;
+  public static final int POFFIN_VALUE = 709;
   /**
-   * <code>ITEM_ITEM_SPECIAL_CAMERA = 801;</code>
+   * <code>SPECIAL_CAMERA = 801;</code>
    */
-  public static final int ITEM_ITEM_SPECIAL_CAMERA_VALUE = 801;
+  public static final int SPECIAL_CAMERA_VALUE = 801;
   /**
-   * <code>ITEM_ITEM_STICKER_INVENTORY = 802;</code>
+   * <code>STICKER_INVENTORY = 802;</code>
    */
-  public static final int ITEM_ITEM_STICKER_INVENTORY_VALUE = 802;
+  public static final int STICKER_INVENTORY_VALUE = 802;
   /**
-   * <code>ITEM_ITEM_INCUBATOR_BASIC_UNLIMITED = 901;</code>
+   * <code>INCUBATOR_BASIC_UNLIMITED = 901;</code>
    */
-  public static final int ITEM_ITEM_INCUBATOR_BASIC_UNLIMITED_VALUE = 901;
+  public static final int INCUBATOR_BASIC_UNLIMITED_VALUE = 901;
   /**
-   * <code>ITEM_ITEM_INCUBATOR_BASIC = 902;</code>
+   * <code>INCUBATOR_BASIC = 902;</code>
    */
-  public static final int ITEM_ITEM_INCUBATOR_BASIC_VALUE = 902;
+  public static final int INCUBATOR_BASIC_VALUE = 902;
   /**
-   * <code>ITEM_ITEM_INCUBATOR_SUPER = 903;</code>
+   * <code>INCUBATOR_SUPER = 903;</code>
    */
-  public static final int ITEM_ITEM_INCUBATOR_SUPER_VALUE = 903;
+  public static final int INCUBATOR_SUPER_VALUE = 903;
   /**
-   * <code>ITEM_ITEM_POKEMON_STORAGE_UPGRADE = 1001;</code>
+   * <code>POKEMON_STORAGE_UPGRADE = 1001;</code>
    */
-  public static final int ITEM_ITEM_POKEMON_STORAGE_UPGRADE_VALUE = 1001;
+  public static final int POKEMON_STORAGE_UPGRADE_VALUE = 1001;
   /**
-   * <code>ITEM_ITEM_ITEM_STORAGE_UPGRADE = 1002;</code>
+   * <code>STORAGE_UPGRADE = 1002;</code>
    */
-  public static final int ITEM_ITEM_ITEM_STORAGE_UPGRADE_VALUE = 1002;
+  public static final int STORAGE_UPGRADE_VALUE = 1002;
   /**
-   * <code>ITEM_ITEM_SUN_STONE = 1101;</code>
+   * <code>SUN_STONE = 1101;</code>
    */
-  public static final int ITEM_ITEM_SUN_STONE_VALUE = 1101;
+  public static final int SUN_STONE_VALUE = 1101;
   /**
-   * <code>ITEM_ITEM_KINGS_ROCK = 1102;</code>
+   * <code>KINGS_ROCK = 1102;</code>
    */
-  public static final int ITEM_ITEM_KINGS_ROCK_VALUE = 1102;
+  public static final int KINGS_ROCK_VALUE = 1102;
   /**
-   * <code>ITEM_ITEM_METAL_COAT = 1103;</code>
+   * <code>METAL_COAT = 1103;</code>
    */
-  public static final int ITEM_ITEM_METAL_COAT_VALUE = 1103;
+  public static final int METAL_COAT_VALUE = 1103;
   /**
-   * <code>ITEM_ITEM_DRAGON_SCALE = 1104;</code>
+   * <code>DRAGON_SCALE = 1104;</code>
    */
-  public static final int ITEM_ITEM_DRAGON_SCALE_VALUE = 1104;
+  public static final int DRAGON_SCALE_VALUE = 1104;
   /**
-   * <code>ITEM_ITEM_UP_GRADE = 1105;</code>
+   * <code>UP_GRADE = 1105;</code>
    */
-  public static final int ITEM_ITEM_UP_GRADE_VALUE = 1105;
+  public static final int UP_GRADE_VALUE = 1105;
   /**
-   * <code>ITEM_ITEM_GEN4_EVOLUTION_STONE = 1106;</code>
+   * <code>GEN4_EVOLUTION_STONE = 1106;</code>
    */
-  public static final int ITEM_ITEM_GEN4_EVOLUTION_STONE_VALUE = 1106;
+  public static final int GEN4_EVOLUTION_STONE_VALUE = 1106;
   /**
-   * <code>ITEM_ITEM_GEN5_EVOLUTION_STONE = 1107;</code>
+   * <code>GEN5_EVOLUTION_STONE = 1107;</code>
    */
-  public static final int ITEM_ITEM_GEN5_EVOLUTION_STONE_VALUE = 1107;
+  public static final int GEN5_EVOLUTION_STONE_VALUE = 1107;
   /**
-   * <code>ITEM_ITEM_MOVE_REROLL_FAST_ATTACK = 1201;</code>
+   * <code>MOVE_REROLL_FAST_ATTACK = 1201;</code>
    */
-  public static final int ITEM_ITEM_MOVE_REROLL_FAST_ATTACK_VALUE = 1201;
+  public static final int MOVE_REROLL_FAST_ATTACK_VALUE = 1201;
   /**
-   * <code>ITEM_ITEM_MOVE_REROLL_SPECIAL_ATTACK = 1202;</code>
+   * <code>MOVE_REROLL_SPECIAL_ATTACK = 1202;</code>
    */
-  public static final int ITEM_ITEM_MOVE_REROLL_SPECIAL_ATTACK_VALUE = 1202;
+  public static final int MOVE_REROLL_SPECIAL_ATTACK_VALUE = 1202;
   /**
-   * <code>ITEM_ITEM_MOVE_REROLL_ELITE_FAST_ATTACK = 1203;</code>
+   * <code>MOVE_REROLL_ELITE_FAST_ATTACK = 1203;</code>
    */
-  public static final int ITEM_ITEM_MOVE_REROLL_ELITE_FAST_ATTACK_VALUE = 1203;
+  public static final int MOVE_REROLL_ELITE_FAST_ATTACK_VALUE = 1203;
   /**
-   * <code>ITEM_ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK = 1204;</code>
+   * <code>MOVE_REROLL_ELITE_SPECIAL_ATTACK = 1204;</code>
    */
-  public static final int ITEM_ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK_VALUE = 1204;
+  public static final int MOVE_REROLL_ELITE_SPECIAL_ATTACK_VALUE = 1204;
   /**
-   * <code>ITEM_ITEM_RARE_CANDY = 1301;</code>
+   * <code>RARE_CANDY = 1301;</code>
    */
-  public static final int ITEM_ITEM_RARE_CANDY_VALUE = 1301;
+  public static final int RARE_CANDY_VALUE = 1301;
   /**
-   * <code>ITEM_ITEM_FREE_RAID_TICKET = 1401;</code>
+   * <code>FREE_RAID_TICKET = 1401;</code>
    */
-  public static final int ITEM_ITEM_FREE_RAID_TICKET_VALUE = 1401;
+  public static final int FREE_RAID_TICKET_VALUE = 1401;
   /**
-   * <code>ITEM_ITEM_PAID_RAID_TICKET = 1402;</code>
+   * <code>PAID_RAID_TICKET = 1402;</code>
    */
-  public static final int ITEM_ITEM_PAID_RAID_TICKET_VALUE = 1402;
+  public static final int PAID_RAID_TICKET_VALUE = 1402;
   /**
-   * <code>ITEM_ITEM_LEGENDARY_RAID_TICKET = 1403;</code>
+   * <code>LEGENDARY_RAID_TICKET = 1403;</code>
    */
-  public static final int ITEM_ITEM_LEGENDARY_RAID_TICKET_VALUE = 1403;
+  public static final int LEGENDARY_RAID_TICKET_VALUE = 1403;
   /**
-   * <code>ITEM_ITEM_STAR_PIECE = 1404;</code>
+   * <code>STAR_PIECE = 1404;</code>
    */
-  public static final int ITEM_ITEM_STAR_PIECE_VALUE = 1404;
+  public static final int STAR_PIECE_VALUE = 1404;
   /**
-   * <code>ITEM_ITEM_FRIEND_GIFT_BOX = 1405;</code>
+   * <code>FRIEND_GIFT_BOX = 1405;</code>
    */
-  public static final int ITEM_ITEM_FRIEND_GIFT_BOX_VALUE = 1405;
+  public static final int FRIEND_GIFT_BOX_VALUE = 1405;
   /**
-   * <code>ITEM_ITEM_TEAM_CHANGE = 1406;</code>
+   * <code>TEAM_CHANGE = 1406;</code>
    */
-  public static final int ITEM_ITEM_TEAM_CHANGE_VALUE = 1406;
+  public static final int TEAM_CHANGE_VALUE = 1406;
   /**
-   * <code>ITEM_ITEM_REMOTE_RAID_TICKET = 1408;</code>
+   * <code>REMOTE_RAID_TICKET = 1408;</code>
    */
-  public static final int ITEM_ITEM_REMOTE_RAID_TICKET_VALUE = 1408;
+  public static final int REMOTE_RAID_TICKET_VALUE = 1408;
   /**
-   * <code>ITEM_ITEM_LEADER_MAP_FRAGMENT = 1501;</code>
+   * <code>LEADER_MAP_FRAGMENT = 1501;</code>
    */
-  public static final int ITEM_ITEM_LEADER_MAP_FRAGMENT_VALUE = 1501;
+  public static final int LEADER_MAP_FRAGMENT_VALUE = 1501;
   /**
-   * <code>ITEM_ITEM_LEADER_MAP = 1502;</code>
+   * <code>LEADER_MAP = 1502;</code>
    */
-  public static final int ITEM_ITEM_LEADER_MAP_VALUE = 1502;
+  public static final int LEADER_MAP_VALUE = 1502;
   /**
-   * <code>ITEM_ITEM_GIOVANNI_MAP = 1503;</code>
+   * <code>GIOVANNI_MAP = 1503;</code>
    */
-  public static final int ITEM_ITEM_GIOVANNI_MAP_VALUE = 1503;
+  public static final int GIOVANNI_MAP_VALUE = 1503;
   /**
-   * <code>ITEM_ITEM_GLOBAL_EVENT_TICKET = 1600;</code>
+   * <code>GLOBAL_EVENT_TICKET = 1600;</code>
    */
-  public static final int ITEM_ITEM_GLOBAL_EVENT_TICKET_VALUE = 1600;
+  public static final int GLOBAL_EVENT_TICKET_VALUE = 1600;
   /**
-   * <code>ITEM_ITEM_EVENT_TICKET_PINK = 1601;</code>
+   * <code>EVENT_TICKET_PINK = 1601;</code>
    */
-  public static final int ITEM_ITEM_EVENT_TICKET_PINK_VALUE = 1601;
+  public static final int EVENT_TICKET_PINK_VALUE = 1601;
 
 
   public final int getNumber() {
@@ -561,71 +561,71 @@ public enum Item
    */
   public static Item forNumber(int value) {
     switch (value) {
-      case 0: return ITEM_ITEM_UNKNOWN;
-      case 1: return ITEM_ITEM_POKE_BALL;
-      case 2: return ITEM_ITEM_GREAT_BALL;
-      case 3: return ITEM_ITEM_ULTRA_BALL;
-      case 4: return ITEM_ITEM_MASTER_BALL;
-      case 5: return ITEM_ITEM_PREMIER_BALL;
-      case 101: return ITEM_ITEM_POTION;
-      case 102: return ITEM_ITEM_SUPER_POTION;
-      case 103: return ITEM_ITEM_HYPER_POTION;
-      case 104: return ITEM_ITEM_MAX_POTION;
-      case 201: return ITEM_ITEM_REVIVE;
-      case 202: return ITEM_ITEM_MAX_REVIVE;
-      case 301: return ITEM_ITEM_LUCKY_EGG;
-      case 401: return ITEM_ITEM_INCENSE_ORDINARY;
-      case 402: return ITEM_ITEM_INCENSE_SPICY;
-      case 403: return ITEM_ITEM_INCENSE_COOL;
-      case 404: return ITEM_ITEM_INCENSE_FLORAL;
-      case 405: return ITEM_ITEM_INCENSE_BELUGA_BOX;
-      case 501: return ITEM_ITEM_TROY_DISK;
-      case 502: return ITEM_ITEM_TROY_DISK_GLACIAL;
-      case 503: return ITEM_ITEM_TROY_DISK_MOSSY;
-      case 504: return ITEM_ITEM_TROY_DISK_MAGNETIC;
-      case 602: return ITEM_ITEM_X_ATTACK;
-      case 603: return ITEM_ITEM_X_DEFENSE;
-      case 604: return ITEM_ITEM_X_MIRACLE;
-      case 701: return ITEM_ITEM_RAZZ_BERRY;
-      case 702: return ITEM_ITEM_BLUK_BERRY;
-      case 703: return ITEM_ITEM_NANAB_BERRY;
-      case 704: return ITEM_ITEM_WEPAR_BERRY;
-      case 705: return ITEM_ITEM_PINAP_BERRY;
-      case 706: return ITEM_ITEM_GOLDEN_RAZZ_BERRY;
-      case 707: return ITEM_ITEM_GOLDEN_NANAB_BERRY;
-      case 708: return ITEM_ITEM_GOLDEN_PINAP_BERRY;
-      case 709: return ITEM_ITEM_POFFIN;
-      case 801: return ITEM_ITEM_SPECIAL_CAMERA;
-      case 802: return ITEM_ITEM_STICKER_INVENTORY;
-      case 901: return ITEM_ITEM_INCUBATOR_BASIC_UNLIMITED;
-      case 902: return ITEM_ITEM_INCUBATOR_BASIC;
-      case 903: return ITEM_ITEM_INCUBATOR_SUPER;
-      case 1001: return ITEM_ITEM_POKEMON_STORAGE_UPGRADE;
-      case 1002: return ITEM_ITEM_ITEM_STORAGE_UPGRADE;
-      case 1101: return ITEM_ITEM_SUN_STONE;
-      case 1102: return ITEM_ITEM_KINGS_ROCK;
-      case 1103: return ITEM_ITEM_METAL_COAT;
-      case 1104: return ITEM_ITEM_DRAGON_SCALE;
-      case 1105: return ITEM_ITEM_UP_GRADE;
-      case 1106: return ITEM_ITEM_GEN4_EVOLUTION_STONE;
-      case 1107: return ITEM_ITEM_GEN5_EVOLUTION_STONE;
-      case 1201: return ITEM_ITEM_MOVE_REROLL_FAST_ATTACK;
-      case 1202: return ITEM_ITEM_MOVE_REROLL_SPECIAL_ATTACK;
-      case 1203: return ITEM_ITEM_MOVE_REROLL_ELITE_FAST_ATTACK;
-      case 1204: return ITEM_ITEM_MOVE_REROLL_ELITE_SPECIAL_ATTACK;
-      case 1301: return ITEM_ITEM_RARE_CANDY;
-      case 1401: return ITEM_ITEM_FREE_RAID_TICKET;
-      case 1402: return ITEM_ITEM_PAID_RAID_TICKET;
-      case 1403: return ITEM_ITEM_LEGENDARY_RAID_TICKET;
-      case 1404: return ITEM_ITEM_STAR_PIECE;
-      case 1405: return ITEM_ITEM_FRIEND_GIFT_BOX;
-      case 1406: return ITEM_ITEM_TEAM_CHANGE;
-      case 1408: return ITEM_ITEM_REMOTE_RAID_TICKET;
-      case 1501: return ITEM_ITEM_LEADER_MAP_FRAGMENT;
-      case 1502: return ITEM_ITEM_LEADER_MAP;
-      case 1503: return ITEM_ITEM_GIOVANNI_MAP;
-      case 1600: return ITEM_ITEM_GLOBAL_EVENT_TICKET;
-      case 1601: return ITEM_ITEM_EVENT_TICKET_PINK;
+      case 0: return UNKNOWN;
+      case 1: return POKE_BALL;
+      case 2: return GREAT_BALL;
+      case 3: return ULTRA_BALL;
+      case 4: return MASTER_BALL;
+      case 5: return PREMIER_BALL;
+      case 101: return POTION;
+      case 102: return SUPER_POTION;
+      case 103: return HYPER_POTION;
+      case 104: return MAX_POTION;
+      case 201: return REVIVE;
+      case 202: return MAX_REVIVE;
+      case 301: return LUCKY_EGG;
+      case 401: return INCENSE_ORDINARY;
+      case 402: return INCENSE_SPICY;
+      case 403: return INCENSE_COOL;
+      case 404: return INCENSE_FLORAL;
+      case 405: return INCENSE_BELUGA_BOX;
+      case 501: return TROY_DISK;
+      case 502: return TROY_DISK_GLACIAL;
+      case 503: return TROY_DISK_MOSSY;
+      case 504: return TROY_DISK_MAGNETIC;
+      case 602: return X_ATTACK;
+      case 603: return X_DEFENSE;
+      case 604: return X_MIRACLE;
+      case 701: return RAZZ_BERRY;
+      case 702: return BLUK_BERRY;
+      case 703: return NANAB_BERRY;
+      case 704: return WEPAR_BERRY;
+      case 705: return PINAP_BERRY;
+      case 706: return GOLDEN_RAZZ_BERRY;
+      case 707: return GOLDEN_NANAB_BERRY;
+      case 708: return GOLDEN_PINAP_BERRY;
+      case 709: return POFFIN;
+      case 801: return SPECIAL_CAMERA;
+      case 802: return STICKER_INVENTORY;
+      case 901: return INCUBATOR_BASIC_UNLIMITED;
+      case 902: return INCUBATOR_BASIC;
+      case 903: return INCUBATOR_SUPER;
+      case 1001: return POKEMON_STORAGE_UPGRADE;
+      case 1002: return STORAGE_UPGRADE;
+      case 1101: return SUN_STONE;
+      case 1102: return KINGS_ROCK;
+      case 1103: return METAL_COAT;
+      case 1104: return DRAGON_SCALE;
+      case 1105: return UP_GRADE;
+      case 1106: return GEN4_EVOLUTION_STONE;
+      case 1107: return GEN5_EVOLUTION_STONE;
+      case 1201: return MOVE_REROLL_FAST_ATTACK;
+      case 1202: return MOVE_REROLL_SPECIAL_ATTACK;
+      case 1203: return MOVE_REROLL_ELITE_FAST_ATTACK;
+      case 1204: return MOVE_REROLL_ELITE_SPECIAL_ATTACK;
+      case 1301: return RARE_CANDY;
+      case 1401: return FREE_RAID_TICKET;
+      case 1402: return PAID_RAID_TICKET;
+      case 1403: return LEGENDARY_RAID_TICKET;
+      case 1404: return STAR_PIECE;
+      case 1405: return FRIEND_GIFT_BOX;
+      case 1406: return TEAM_CHANGE;
+      case 1408: return REMOTE_RAID_TICKET;
+      case 1501: return LEADER_MAP_FRAGMENT;
+      case 1502: return LEADER_MAP;
+      case 1503: return GIOVANNI_MAP;
+      case 1600: return GLOBAL_EVENT_TICKET;
+      case 1601: return EVENT_TICKET_PINK;
       default: return null;
     }
   }

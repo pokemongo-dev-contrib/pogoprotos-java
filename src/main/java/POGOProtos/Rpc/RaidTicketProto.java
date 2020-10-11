@@ -211,7 +211,7 @@ private static final long serialVersionUID = 0L;
     if (!getJanonjmkhnoBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, janonjmkhno_);
     }
-    if (ekpohjfklal_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (ekpohjfklal_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       output.writeEnum(2, ekpohjfklal_);
     }
     if (aoleolaciee_ != null) {
@@ -229,7 +229,7 @@ private static final long serialVersionUID = 0L;
     if (!getJanonjmkhnoBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, janonjmkhno_);
     }
-    if (ekpohjfklal_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (ekpohjfklal_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(2, ekpohjfklal_);
     }

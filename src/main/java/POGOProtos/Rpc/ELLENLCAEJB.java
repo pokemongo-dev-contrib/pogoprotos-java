@@ -560,7 +560,7 @@ private static final long serialVersionUID = 0L;
     if (dbianmbmnch_ != null) {
       output.writeMessage(4, getDbianmbmnch());
     }
-    if (iiadjbboilm_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (iiadjbboilm_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       output.writeEnum(5, iiadjbboilm_);
     }
     if (bleeccpijbi_ != 0) {
@@ -591,7 +591,7 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(4, getDbianmbmnch());
     }
-    if (iiadjbboilm_ != POGOProtos.Rpc.Item.ITEM_ITEM_UNKNOWN.getNumber()) {
+    if (iiadjbboilm_ != POGOProtos.Rpc.Item.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(5, iiadjbboilm_);
     }
