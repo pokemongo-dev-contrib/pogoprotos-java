@@ -235,14 +235,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 114: {
-            POGOProtos.Rpc.QuestsProto.Builder subBuilder = null;
+            POGOProtos.Rpc.PokemonField1.Builder subBuilder = null;
             if (typeCase_ == 14) {
-              subBuilder = ((POGOProtos.Rpc.QuestsProto) type_).toBuilder();
+              subBuilder = ((POGOProtos.Rpc.PokemonField1) type_).toBuilder();
             }
             type_ =
-                input.readMessage(POGOProtos.Rpc.QuestsProto.parser(), extensionRegistry);
+                input.readMessage(POGOProtos.Rpc.PokemonField1.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.QuestsProto) type_);
+              subBuilder.mergeFrom((POGOProtos.Rpc.PokemonField1) type_);
               type_ = subBuilder.buildPartial();
             }
             typeCase_ = 14;
@@ -830,7 +830,7 @@ private static final long serialVersionUID = 0L;
 
   public static final int QUESTS_FIELD_NUMBER = 14;
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
    * @return Whether the quests field is set.
    */
   @java.lang.Override
@@ -838,25 +838,25 @@ private static final long serialVersionUID = 0L;
     return typeCase_ == 14;
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
    * @return The quests.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.QuestsProto getQuests() {
+  public POGOProtos.Rpc.PokemonField1 getQuests() {
     if (typeCase_ == 14) {
-       return (POGOProtos.Rpc.QuestsProto) type_;
+       return (POGOProtos.Rpc.PokemonField1) type_;
     }
-    return POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+    return POGOProtos.Rpc.PokemonField1.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.QuestsProtoOrBuilder getQuestsOrBuilder() {
+  public POGOProtos.Rpc.PokemonField1OrBuilder getQuestsOrBuilder() {
     if (typeCase_ == 14) {
-       return (POGOProtos.Rpc.QuestsProto) type_;
+       return (POGOProtos.Rpc.PokemonField1) type_;
     }
-    return POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+    return POGOProtos.Rpc.PokemonField1.getDefaultInstance();
   }
 
   public static final int GIFT_BOXES_FIELD_NUMBER = 15;
@@ -1068,7 +1068,7 @@ private static final long serialVersionUID = 0L;
       output.writeMessage(13, (POGOProtos.Rpc.RaidTicketsProto) type_);
     }
     if (typeCase_ == 14) {
-      output.writeMessage(14, (POGOProtos.Rpc.QuestsProto) type_);
+      output.writeMessage(14, (POGOProtos.Rpc.PokemonField1) type_);
     }
     if (typeCase_ == 15) {
       output.writeMessage(15, (POGOProtos.Rpc.GiftBoxesProto) type_);
@@ -1148,7 +1148,7 @@ private static final long serialVersionUID = 0L;
     }
     if (typeCase_ == 14) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(14, (POGOProtos.Rpc.QuestsProto) type_);
+        .computeMessageSize(14, (POGOProtos.Rpc.PokemonField1) type_);
     }
     if (typeCase_ == 15) {
       size += com.google.protobuf.CodedOutputStream
@@ -3663,9 +3663,9 @@ private static final long serialVersionUID = 0L;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestsProto, POGOProtos.Rpc.QuestsProto.Builder, POGOProtos.Rpc.QuestsProtoOrBuilder> questsBuilder_;
+        POGOProtos.Rpc.PokemonField1, POGOProtos.Rpc.PokemonField1.Builder, POGOProtos.Rpc.PokemonField1OrBuilder> questsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
      * @return Whether the quests field is set.
      */
     @java.lang.Override
@@ -3673,27 +3673,27 @@ private static final long serialVersionUID = 0L;
       return typeCase_ == 14;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
      * @return The quests.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.QuestsProto getQuests() {
+    public POGOProtos.Rpc.PokemonField1 getQuests() {
       if (questsBuilder_ == null) {
         if (typeCase_ == 14) {
-          return (POGOProtos.Rpc.QuestsProto) type_;
+          return (POGOProtos.Rpc.PokemonField1) type_;
         }
-        return POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+        return POGOProtos.Rpc.PokemonField1.getDefaultInstance();
       } else {
         if (typeCase_ == 14) {
           return questsBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+        return POGOProtos.Rpc.PokemonField1.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
      */
-    public Builder setQuests(POGOProtos.Rpc.QuestsProto value) {
+    public Builder setQuests(POGOProtos.Rpc.PokemonField1 value) {
       if (questsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -3707,10 +3707,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
      */
     public Builder setQuests(
-        POGOProtos.Rpc.QuestsProto.Builder builderForValue) {
+        POGOProtos.Rpc.PokemonField1.Builder builderForValue) {
       if (questsBuilder_ == null) {
         type_ = builderForValue.build();
         onChanged();
@@ -3721,13 +3721,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
      */
-    public Builder mergeQuests(POGOProtos.Rpc.QuestsProto value) {
+    public Builder mergeQuests(POGOProtos.Rpc.PokemonField1 value) {
       if (questsBuilder_ == null) {
         if (typeCase_ == 14 &&
-            type_ != POGOProtos.Rpc.QuestsProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.QuestsProto.newBuilder((POGOProtos.Rpc.QuestsProto) type_)
+            type_ != POGOProtos.Rpc.PokemonField1.getDefaultInstance()) {
+          type_ = POGOProtos.Rpc.PokemonField1.newBuilder((POGOProtos.Rpc.PokemonField1) type_)
               .mergeFrom(value).buildPartial();
         } else {
           type_ = value;
@@ -3743,7 +3743,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
      */
     public Builder clearQuests() {
       if (questsBuilder_ == null) {
@@ -3762,38 +3762,38 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
      */
-    public POGOProtos.Rpc.QuestsProto.Builder getQuestsBuilder() {
+    public POGOProtos.Rpc.PokemonField1.Builder getQuestsBuilder() {
       return getQuestsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
      */
     @java.lang.Override
-    public POGOProtos.Rpc.QuestsProtoOrBuilder getQuestsOrBuilder() {
+    public POGOProtos.Rpc.PokemonField1OrBuilder getQuestsOrBuilder() {
       if ((typeCase_ == 14) && (questsBuilder_ != null)) {
         return questsBuilder_.getMessageOrBuilder();
       } else {
         if (typeCase_ == 14) {
-          return (POGOProtos.Rpc.QuestsProto) type_;
+          return (POGOProtos.Rpc.PokemonField1) type_;
         }
-        return POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+        return POGOProtos.Rpc.PokemonField1.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestsProto, POGOProtos.Rpc.QuestsProto.Builder, POGOProtos.Rpc.QuestsProtoOrBuilder> 
+        POGOProtos.Rpc.PokemonField1, POGOProtos.Rpc.PokemonField1.Builder, POGOProtos.Rpc.PokemonField1OrBuilder> 
         getQuestsFieldBuilder() {
       if (questsBuilder_ == null) {
         if (!(typeCase_ == 14)) {
-          type_ = POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+          type_ = POGOProtos.Rpc.PokemonField1.getDefaultInstance();
         }
         questsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.QuestsProto, POGOProtos.Rpc.QuestsProto.Builder, POGOProtos.Rpc.QuestsProtoOrBuilder>(
-                (POGOProtos.Rpc.QuestsProto) type_,
+            POGOProtos.Rpc.PokemonField1, POGOProtos.Rpc.PokemonField1.Builder, POGOProtos.Rpc.PokemonField1OrBuilder>(
+                (POGOProtos.Rpc.PokemonField1) type_,
                 getParentForChildren(),
                 isClean());
         type_ = null;

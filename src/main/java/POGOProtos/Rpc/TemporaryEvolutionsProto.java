@@ -8,27 +8,27 @@ package POGOProtos.Rpc;
  * ref: PPOELDLEAPI
  * </pre>
  *
- * Protobuf type {@code POGOProtos.Rpc.MegaEvosField1}
+ * Protobuf type {@code POGOProtos.Rpc.TemporaryEvolutionsProto}
  */
-public final class MegaEvosField1 extends
+public final class TemporaryEvolutionsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.MegaEvosField1)
-    MegaEvosField1OrBuilder {
+    // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.TemporaryEvolutionsProto)
+    TemporaryEvolutionsProtoOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use MegaEvosField1.newBuilder() to construct.
-  private MegaEvosField1(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use TemporaryEvolutionsProto.newBuilder() to construct.
+  private TemporaryEvolutionsProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private MegaEvosField1() {
+  private TemporaryEvolutionsProto() {
     temporaryEvolutionId_ = 0;
-    field2_ = "";
+    assetBunbleName_ = "";
   }
 
   @java.lang.Override
   @SuppressWarnings({"unused"})
   protected java.lang.Object newInstance(
       UnusedPrivateParameter unused) {
-    return new MegaEvosField1();
+    return new TemporaryEvolutionsProto();
   }
 
   @java.lang.Override
@@ -36,7 +36,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private MegaEvosField1(
+  private TemporaryEvolutionsProto(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -62,13 +62,13 @@ private static final long serialVersionUID = 0L;
           }
           case 16: {
 
-            field1_ = input.readInt32();
+            assetBunbleValue_ = input.readInt32();
             break;
           }
           case 26: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            field2_ = s;
+            assetBunbleName_ = s;
             break;
           }
           default: {
@@ -92,15 +92,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_MegaEvosField1_descriptor;
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_TemporaryEvolutionsProto_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_MegaEvosField1_fieldAccessorTable
+    return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_TemporaryEvolutionsProto_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            POGOProtos.Rpc.MegaEvosField1.class, POGOProtos.Rpc.MegaEvosField1.Builder.class);
+            POGOProtos.Rpc.TemporaryEvolutionsProto.class, POGOProtos.Rpc.TemporaryEvolutionsProto.Builder.class);
   }
 
   public static final int TEMPORARY_EVOLUTION_ID_FIELD_NUMBER = 1;
@@ -122,49 +122,49 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.HoloTemporaryEvolutionId.UNRECOGNIZED : result;
   }
 
-  public static final int FIELD1_FIELD_NUMBER = 2;
-  private int field1_;
+  public static final int ASSET_BUNBLE_VALUE_FIELD_NUMBER = 2;
+  private int assetBunbleValue_;
   /**
-   * <code>int32 field1 = 2;</code>
-   * @return The field1.
+   * <code>int32 asset_bunble_value = 2;</code>
+   * @return The assetBunbleValue.
    */
   @java.lang.Override
-  public int getField1() {
-    return field1_;
+  public int getAssetBunbleValue() {
+    return assetBunbleValue_;
   }
 
-  public static final int FIELD2_FIELD_NUMBER = 3;
-  private volatile java.lang.Object field2_;
+  public static final int ASSET_BUNBLE_NAME_FIELD_NUMBER = 3;
+  private volatile java.lang.Object assetBunbleName_;
   /**
-   * <code>string field2 = 3;</code>
-   * @return The field2.
+   * <code>string asset_bunble_name = 3;</code>
+   * @return The assetBunbleName.
    */
   @java.lang.Override
-  public java.lang.String getField2() {
-    java.lang.Object ref = field2_;
+  public java.lang.String getAssetBunbleName() {
+    java.lang.Object ref = assetBunbleName_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      field2_ = s;
+      assetBunbleName_ = s;
       return s;
     }
   }
   /**
-   * <code>string field2 = 3;</code>
-   * @return The bytes for field2.
+   * <code>string asset_bunble_name = 3;</code>
+   * @return The bytes for assetBunbleName.
    */
   @java.lang.Override
   public com.google.protobuf.ByteString
-      getField2Bytes() {
-    java.lang.Object ref = field2_;
+      getAssetBunbleNameBytes() {
+    java.lang.Object ref = assetBunbleName_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      field2_ = b;
+      assetBunbleName_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -188,11 +188,11 @@ private static final long serialVersionUID = 0L;
     if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(1, temporaryEvolutionId_);
     }
-    if (field1_ != 0) {
-      output.writeInt32(2, field1_);
+    if (assetBunbleValue_ != 0) {
+      output.writeInt32(2, assetBunbleValue_);
     }
-    if (!getField2Bytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, field2_);
+    if (!getAssetBunbleNameBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, assetBunbleName_);
     }
     unknownFields.writeTo(output);
   }
@@ -207,12 +207,12 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, temporaryEvolutionId_);
     }
-    if (field1_ != 0) {
+    if (assetBunbleValue_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, field1_);
+        .computeInt32Size(2, assetBunbleValue_);
     }
-    if (!getField2Bytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, field2_);
+    if (!getAssetBunbleNameBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, assetBunbleName_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -224,16 +224,16 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof POGOProtos.Rpc.MegaEvosField1)) {
+    if (!(obj instanceof POGOProtos.Rpc.TemporaryEvolutionsProto)) {
       return super.equals(obj);
     }
-    POGOProtos.Rpc.MegaEvosField1 other = (POGOProtos.Rpc.MegaEvosField1) obj;
+    POGOProtos.Rpc.TemporaryEvolutionsProto other = (POGOProtos.Rpc.TemporaryEvolutionsProto) obj;
 
     if (temporaryEvolutionId_ != other.temporaryEvolutionId_) return false;
-    if (getField1()
-        != other.getField1()) return false;
-    if (!getField2()
-        .equals(other.getField2())) return false;
+    if (getAssetBunbleValue()
+        != other.getAssetBunbleValue()) return false;
+    if (!getAssetBunbleName()
+        .equals(other.getAssetBunbleName())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -247,78 +247,78 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TEMPORARY_EVOLUTION_ID_FIELD_NUMBER;
     hash = (53 * hash) + temporaryEvolutionId_;
-    hash = (37 * hash) + FIELD1_FIELD_NUMBER;
-    hash = (53 * hash) + getField1();
-    hash = (37 * hash) + FIELD2_FIELD_NUMBER;
-    hash = (53 * hash) + getField2().hashCode();
+    hash = (37 * hash) + ASSET_BUNBLE_VALUE_FIELD_NUMBER;
+    hash = (53 * hash) + getAssetBunbleValue();
+    hash = (37 * hash) + ASSET_BUNBLE_NAME_FIELD_NUMBER;
+    hash = (53 * hash) + getAssetBunbleName().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static POGOProtos.Rpc.MegaEvosField1 parseFrom(
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseFrom(
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseFrom(
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseFrom(
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseFrom(byte[] data)
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseFrom(
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseFrom(
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseDelimitedFrom(java.io.InputStream input)
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseDelimitedFrom(
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseFrom(
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static POGOProtos.Rpc.MegaEvosField1 parseFrom(
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -331,7 +331,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(POGOProtos.Rpc.MegaEvosField1 prototype) {
+  public static Builder newBuilder(POGOProtos.Rpc.TemporaryEvolutionsProto prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -351,26 +351,26 @@ private static final long serialVersionUID = 0L;
    * ref: PPOELDLEAPI
    * </pre>
    *
-   * Protobuf type {@code POGOProtos.Rpc.MegaEvosField1}
+   * Protobuf type {@code POGOProtos.Rpc.TemporaryEvolutionsProto}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.MegaEvosField1)
-      POGOProtos.Rpc.MegaEvosField1OrBuilder {
+      // @@protoc_insertion_point(builder_implements:POGOProtos.Rpc.TemporaryEvolutionsProto)
+      POGOProtos.Rpc.TemporaryEvolutionsProtoOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_MegaEvosField1_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_TemporaryEvolutionsProto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_MegaEvosField1_fieldAccessorTable
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_TemporaryEvolutionsProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              POGOProtos.Rpc.MegaEvosField1.class, POGOProtos.Rpc.MegaEvosField1.Builder.class);
+              POGOProtos.Rpc.TemporaryEvolutionsProto.class, POGOProtos.Rpc.TemporaryEvolutionsProto.Builder.class);
     }
 
-    // Construct using POGOProtos.Rpc.MegaEvosField1.newBuilder()
+    // Construct using POGOProtos.Rpc.TemporaryEvolutionsProto.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -390,9 +390,9 @@ private static final long serialVersionUID = 0L;
       super.clear();
       temporaryEvolutionId_ = 0;
 
-      field1_ = 0;
+      assetBunbleValue_ = 0;
 
-      field2_ = "";
+      assetBunbleName_ = "";
 
       return this;
     }
@@ -400,17 +400,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_MegaEvosField1_descriptor;
+      return POGOProtos.Rpc.POGOProtosRpc.internal_static_POGOProtos_Rpc_TemporaryEvolutionsProto_descriptor;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.MegaEvosField1 getDefaultInstanceForType() {
-      return POGOProtos.Rpc.MegaEvosField1.getDefaultInstance();
+    public POGOProtos.Rpc.TemporaryEvolutionsProto getDefaultInstanceForType() {
+      return POGOProtos.Rpc.TemporaryEvolutionsProto.getDefaultInstance();
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.MegaEvosField1 build() {
-      POGOProtos.Rpc.MegaEvosField1 result = buildPartial();
+    public POGOProtos.Rpc.TemporaryEvolutionsProto build() {
+      POGOProtos.Rpc.TemporaryEvolutionsProto result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -418,11 +418,11 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public POGOProtos.Rpc.MegaEvosField1 buildPartial() {
-      POGOProtos.Rpc.MegaEvosField1 result = new POGOProtos.Rpc.MegaEvosField1(this);
+    public POGOProtos.Rpc.TemporaryEvolutionsProto buildPartial() {
+      POGOProtos.Rpc.TemporaryEvolutionsProto result = new POGOProtos.Rpc.TemporaryEvolutionsProto(this);
       result.temporaryEvolutionId_ = temporaryEvolutionId_;
-      result.field1_ = field1_;
-      result.field2_ = field2_;
+      result.assetBunbleValue_ = assetBunbleValue_;
+      result.assetBunbleName_ = assetBunbleName_;
       onBuilt();
       return result;
     }
@@ -461,24 +461,24 @@ private static final long serialVersionUID = 0L;
     }
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof POGOProtos.Rpc.MegaEvosField1) {
-        return mergeFrom((POGOProtos.Rpc.MegaEvosField1)other);
+      if (other instanceof POGOProtos.Rpc.TemporaryEvolutionsProto) {
+        return mergeFrom((POGOProtos.Rpc.TemporaryEvolutionsProto)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(POGOProtos.Rpc.MegaEvosField1 other) {
-      if (other == POGOProtos.Rpc.MegaEvosField1.getDefaultInstance()) return this;
+    public Builder mergeFrom(POGOProtos.Rpc.TemporaryEvolutionsProto other) {
+      if (other == POGOProtos.Rpc.TemporaryEvolutionsProto.getDefaultInstance()) return this;
       if (other.temporaryEvolutionId_ != 0) {
         setTemporaryEvolutionIdValue(other.getTemporaryEvolutionIdValue());
       }
-      if (other.getField1() != 0) {
-        setField1(other.getField1());
+      if (other.getAssetBunbleValue() != 0) {
+        setAssetBunbleValue(other.getAssetBunbleValue());
       }
-      if (!other.getField2().isEmpty()) {
-        field2_ = other.field2_;
+      if (!other.getAssetBunbleName().isEmpty()) {
+        assetBunbleName_ = other.assetBunbleName_;
         onChanged();
       }
       this.mergeUnknownFields(other.unknownFields);
@@ -496,11 +496,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      POGOProtos.Rpc.MegaEvosField1 parsedMessage = null;
+      POGOProtos.Rpc.TemporaryEvolutionsProto parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (POGOProtos.Rpc.MegaEvosField1) e.getUnfinishedMessage();
+        parsedMessage = (POGOProtos.Rpc.TemporaryEvolutionsProto) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -564,109 +564,109 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int field1_ ;
+    private int assetBunbleValue_ ;
     /**
-     * <code>int32 field1 = 2;</code>
-     * @return The field1.
+     * <code>int32 asset_bunble_value = 2;</code>
+     * @return The assetBunbleValue.
      */
     @java.lang.Override
-    public int getField1() {
-      return field1_;
+    public int getAssetBunbleValue() {
+      return assetBunbleValue_;
     }
     /**
-     * <code>int32 field1 = 2;</code>
-     * @param value The field1 to set.
+     * <code>int32 asset_bunble_value = 2;</code>
+     * @param value The assetBunbleValue to set.
      * @return This builder for chaining.
      */
-    public Builder setField1(int value) {
+    public Builder setAssetBunbleValue(int value) {
       
-      field1_ = value;
+      assetBunbleValue_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 field1 = 2;</code>
+     * <code>int32 asset_bunble_value = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField1() {
+    public Builder clearAssetBunbleValue() {
       
-      field1_ = 0;
+      assetBunbleValue_ = 0;
       onChanged();
       return this;
     }
 
-    private java.lang.Object field2_ = "";
+    private java.lang.Object assetBunbleName_ = "";
     /**
-     * <code>string field2 = 3;</code>
-     * @return The field2.
+     * <code>string asset_bunble_name = 3;</code>
+     * @return The assetBunbleName.
      */
-    public java.lang.String getField2() {
-      java.lang.Object ref = field2_;
+    public java.lang.String getAssetBunbleName() {
+      java.lang.Object ref = assetBunbleName_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        field2_ = s;
+        assetBunbleName_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string field2 = 3;</code>
-     * @return The bytes for field2.
+     * <code>string asset_bunble_name = 3;</code>
+     * @return The bytes for assetBunbleName.
      */
     public com.google.protobuf.ByteString
-        getField2Bytes() {
-      java.lang.Object ref = field2_;
+        getAssetBunbleNameBytes() {
+      java.lang.Object ref = assetBunbleName_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        field2_ = b;
+        assetBunbleName_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string field2 = 3;</code>
-     * @param value The field2 to set.
+     * <code>string asset_bunble_name = 3;</code>
+     * @param value The assetBunbleName to set.
      * @return This builder for chaining.
      */
-    public Builder setField2(
+    public Builder setAssetBunbleName(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      field2_ = value;
+      assetBunbleName_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string field2 = 3;</code>
+     * <code>string asset_bunble_name = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField2() {
+    public Builder clearAssetBunbleName() {
       
-      field2_ = getDefaultInstance().getField2();
+      assetBunbleName_ = getDefaultInstance().getAssetBunbleName();
       onChanged();
       return this;
     }
     /**
-     * <code>string field2 = 3;</code>
-     * @param value The bytes for field2 to set.
+     * <code>string asset_bunble_name = 3;</code>
+     * @param value The bytes for assetBunbleName to set.
      * @return This builder for chaining.
      */
-    public Builder setField2Bytes(
+    public Builder setAssetBunbleNameBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      field2_ = value;
+      assetBunbleName_ = value;
       onChanged();
       return this;
     }
@@ -683,41 +683,41 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.MegaEvosField1)
+    // @@protoc_insertion_point(builder_scope:POGOProtos.Rpc.TemporaryEvolutionsProto)
   }
 
-  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.MegaEvosField1)
-  private static final POGOProtos.Rpc.MegaEvosField1 DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:POGOProtos.Rpc.TemporaryEvolutionsProto)
+  private static final POGOProtos.Rpc.TemporaryEvolutionsProto DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new POGOProtos.Rpc.MegaEvosField1();
+    DEFAULT_INSTANCE = new POGOProtos.Rpc.TemporaryEvolutionsProto();
   }
 
-  public static POGOProtos.Rpc.MegaEvosField1 getDefaultInstance() {
+  public static POGOProtos.Rpc.TemporaryEvolutionsProto getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<MegaEvosField1>
-      PARSER = new com.google.protobuf.AbstractParser<MegaEvosField1>() {
+  private static final com.google.protobuf.Parser<TemporaryEvolutionsProto>
+      PARSER = new com.google.protobuf.AbstractParser<TemporaryEvolutionsProto>() {
     @java.lang.Override
-    public MegaEvosField1 parsePartialFrom(
+    public TemporaryEvolutionsProto parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new MegaEvosField1(input, extensionRegistry);
+      return new TemporaryEvolutionsProto(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<MegaEvosField1> parser() {
+  public static com.google.protobuf.Parser<TemporaryEvolutionsProto> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<MegaEvosField1> getParserForType() {
+  public com.google.protobuf.Parser<TemporaryEvolutionsProto> getParserForType() {
     return PARSER;
   }
 
   @java.lang.Override
-  public POGOProtos.Rpc.MegaEvosField1 getDefaultInstanceForType() {
+  public POGOProtos.Rpc.TemporaryEvolutionsProto getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

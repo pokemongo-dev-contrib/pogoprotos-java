@@ -25,8 +25,8 @@ private static final long serialVersionUID = 0L;
     form_ = 0;
     genderRequirement_ = 0;
     lureItemRequirement_ = 0;
-    temporaryEvolutionId_ = 0;
-    field3_ = java.util.Collections.emptyList();
+    tempEvolution_ = 0;
+    evoBranchField1_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -128,25 +128,25 @@ private static final long serialVersionUID = 0L;
           case 112: {
             int rawValue = input.readEnum();
 
-            temporaryEvolutionId_ = rawValue;
+            tempEvolution_ = rawValue;
             break;
           }
           case 120: {
 
-            field1_ = input.readInt32();
+            firstTempEvolutionCandyCost_ = input.readInt32();
             break;
           }
           case 128: {
 
-            field2_ = input.readInt32();
+            subsequentTempEvolutionCandyCost_ = input.readInt32();
             break;
           }
           case 138: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              field3_ = new java.util.ArrayList<POGOProtos.Rpc.PokemonField1Sub>();
+              evoBranchField1_ = new java.util.ArrayList<POGOProtos.Rpc.PokemonField1Sub>();
               mutable_bitField0_ |= 0x00000001;
             }
-            field3_.add(
+            evoBranchField1_.add(
                 input.readMessage(POGOProtos.Rpc.PokemonField1Sub.parser(), extensionRegistry));
             break;
           }
@@ -166,7 +166,7 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        field3_ = java.util.Collections.unmodifiableList(field3_);
+        evoBranchField1_ = java.util.Collections.unmodifiableList(evoBranchField1_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -357,85 +357,85 @@ private static final long serialVersionUID = 0L;
     return noCandyCostViaTrade_;
   }
 
-  public static final int TEMPORARY_EVOLUTION_ID_FIELD_NUMBER = 14;
-  private int temporaryEvolutionId_;
+  public static final int TEMP_EVOLUTION_FIELD_NUMBER = 14;
+  private int tempEvolution_;
   /**
-   * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temporary_evolution_id = 14;</code>
-   * @return The enum numeric value on the wire for temporaryEvolutionId.
+   * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temp_evolution = 14;</code>
+   * @return The enum numeric value on the wire for tempEvolution.
    */
-  @java.lang.Override public int getTemporaryEvolutionIdValue() {
-    return temporaryEvolutionId_;
+  @java.lang.Override public int getTempEvolutionValue() {
+    return tempEvolution_;
   }
   /**
-   * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temporary_evolution_id = 14;</code>
-   * @return The temporaryEvolutionId.
+   * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temp_evolution = 14;</code>
+   * @return The tempEvolution.
    */
-  @java.lang.Override public POGOProtos.Rpc.HoloTemporaryEvolutionId getTemporaryEvolutionId() {
+  @java.lang.Override public POGOProtos.Rpc.HoloTemporaryEvolutionId getTempEvolution() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.HoloTemporaryEvolutionId result = POGOProtos.Rpc.HoloTemporaryEvolutionId.valueOf(temporaryEvolutionId_);
+    POGOProtos.Rpc.HoloTemporaryEvolutionId result = POGOProtos.Rpc.HoloTemporaryEvolutionId.valueOf(tempEvolution_);
     return result == null ? POGOProtos.Rpc.HoloTemporaryEvolutionId.UNRECOGNIZED : result;
   }
 
-  public static final int FIELD1_FIELD_NUMBER = 15;
-  private int field1_;
+  public static final int FIRST_TEMP_EVOLUTION_CANDY_COST_FIELD_NUMBER = 15;
+  private int firstTempEvolutionCandyCost_;
   /**
-   * <code>int32 field1 = 15;</code>
-   * @return The field1.
+   * <code>int32 first_temp_evolution_candy_cost = 15;</code>
+   * @return The firstTempEvolutionCandyCost.
    */
   @java.lang.Override
-  public int getField1() {
-    return field1_;
+  public int getFirstTempEvolutionCandyCost() {
+    return firstTempEvolutionCandyCost_;
   }
 
-  public static final int FIELD2_FIELD_NUMBER = 16;
-  private int field2_;
+  public static final int SUBSEQUENT_TEMP_EVOLUTION_CANDY_COST_FIELD_NUMBER = 16;
+  private int subsequentTempEvolutionCandyCost_;
   /**
-   * <code>int32 field2 = 16;</code>
-   * @return The field2.
+   * <code>int32 subsequent_temp_evolution_candy_cost = 16;</code>
+   * @return The subsequentTempEvolutionCandyCost.
    */
   @java.lang.Override
-  public int getField2() {
-    return field2_;
+  public int getSubsequentTempEvolutionCandyCost() {
+    return subsequentTempEvolutionCandyCost_;
   }
 
-  public static final int FIELD3_FIELD_NUMBER = 17;
-  private java.util.List<POGOProtos.Rpc.PokemonField1Sub> field3_;
+  public static final int EVO_BRANCH_FIELD1_FIELD_NUMBER = 17;
+  private java.util.List<POGOProtos.Rpc.PokemonField1Sub> evoBranchField1_;
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.PokemonField1Sub> getField3List() {
-    return field3_;
+  public java.util.List<POGOProtos.Rpc.PokemonField1Sub> getEvoBranchField1List() {
+    return evoBranchField1_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
    */
   @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.PokemonField1SubOrBuilder> 
-      getField3OrBuilderList() {
-    return field3_;
+      getEvoBranchField1OrBuilderList() {
+    return evoBranchField1_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
    */
   @java.lang.Override
-  public int getField3Count() {
-    return field3_.size();
+  public int getEvoBranchField1Count() {
+    return evoBranchField1_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonField1Sub getField3(int index) {
-    return field3_.get(index);
+  public POGOProtos.Rpc.PokemonField1Sub getEvoBranchField1(int index) {
+    return evoBranchField1_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonField1SubOrBuilder getField3OrBuilder(
+  public POGOProtos.Rpc.PokemonField1SubOrBuilder getEvoBranchField1OrBuilder(
       int index) {
-    return field3_.get(index);
+    return evoBranchField1_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
@@ -488,17 +488,17 @@ private static final long serialVersionUID = 0L;
     if (noCandyCostViaTrade_ != false) {
       output.writeBool(13, noCandyCostViaTrade_);
     }
-    if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
-      output.writeEnum(14, temporaryEvolutionId_);
+    if (tempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+      output.writeEnum(14, tempEvolution_);
     }
-    if (field1_ != 0) {
-      output.writeInt32(15, field1_);
+    if (firstTempEvolutionCandyCost_ != 0) {
+      output.writeInt32(15, firstTempEvolutionCandyCost_);
     }
-    if (field2_ != 0) {
-      output.writeInt32(16, field2_);
+    if (subsequentTempEvolutionCandyCost_ != 0) {
+      output.writeInt32(16, subsequentTempEvolutionCandyCost_);
     }
-    for (int i = 0; i < field3_.size(); i++) {
-      output.writeMessage(17, field3_.get(i));
+    for (int i = 0; i < evoBranchField1_.size(); i++) {
+      output.writeMessage(17, evoBranchField1_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -557,21 +557,21 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(13, noCandyCostViaTrade_);
     }
-    if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
+    if (tempEvolution_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(14, temporaryEvolutionId_);
+        .computeEnumSize(14, tempEvolution_);
     }
-    if (field1_ != 0) {
+    if (firstTempEvolutionCandyCost_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(15, field1_);
+        .computeInt32Size(15, firstTempEvolutionCandyCost_);
     }
-    if (field2_ != 0) {
+    if (subsequentTempEvolutionCandyCost_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(16, field2_);
+        .computeInt32Size(16, subsequentTempEvolutionCandyCost_);
     }
-    for (int i = 0; i < field3_.size(); i++) {
+    for (int i = 0; i < evoBranchField1_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(17, field3_.get(i));
+        .computeMessageSize(17, evoBranchField1_.get(i));
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -608,13 +608,13 @@ private static final long serialVersionUID = 0L;
         != other.getPriority()) return false;
     if (getNoCandyCostViaTrade()
         != other.getNoCandyCostViaTrade()) return false;
-    if (temporaryEvolutionId_ != other.temporaryEvolutionId_) return false;
-    if (getField1()
-        != other.getField1()) return false;
-    if (getField2()
-        != other.getField2()) return false;
-    if (!getField3List()
-        .equals(other.getField3List())) return false;
+    if (tempEvolution_ != other.tempEvolution_) return false;
+    if (getFirstTempEvolutionCandyCost()
+        != other.getFirstTempEvolutionCandyCost()) return false;
+    if (getSubsequentTempEvolutionCandyCost()
+        != other.getSubsequentTempEvolutionCandyCost()) return false;
+    if (!getEvoBranchField1List()
+        .equals(other.getEvoBranchField1List())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -655,15 +655,15 @@ private static final long serialVersionUID = 0L;
     hash = (37 * hash) + NO_CANDY_COST_VIA_TRADE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getNoCandyCostViaTrade());
-    hash = (37 * hash) + TEMPORARY_EVOLUTION_ID_FIELD_NUMBER;
-    hash = (53 * hash) + temporaryEvolutionId_;
-    hash = (37 * hash) + FIELD1_FIELD_NUMBER;
-    hash = (53 * hash) + getField1();
-    hash = (37 * hash) + FIELD2_FIELD_NUMBER;
-    hash = (53 * hash) + getField2();
-    if (getField3Count() > 0) {
-      hash = (37 * hash) + FIELD3_FIELD_NUMBER;
-      hash = (53 * hash) + getField3List().hashCode();
+    hash = (37 * hash) + TEMP_EVOLUTION_FIELD_NUMBER;
+    hash = (53 * hash) + tempEvolution_;
+    hash = (37 * hash) + FIRST_TEMP_EVOLUTION_CANDY_COST_FIELD_NUMBER;
+    hash = (53 * hash) + getFirstTempEvolutionCandyCost();
+    hash = (37 * hash) + SUBSEQUENT_TEMP_EVOLUTION_CANDY_COST_FIELD_NUMBER;
+    hash = (53 * hash) + getSubsequentTempEvolutionCandyCost();
+    if (getEvoBranchField1Count() > 0) {
+      hash = (37 * hash) + EVO_BRANCH_FIELD1_FIELD_NUMBER;
+      hash = (53 * hash) + getEvoBranchField1List().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -797,7 +797,7 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
-        getField3FieldBuilder();
+        getEvoBranchField1FieldBuilder();
       }
     }
     @java.lang.Override
@@ -827,17 +827,17 @@ private static final long serialVersionUID = 0L;
 
       noCandyCostViaTrade_ = false;
 
-      temporaryEvolutionId_ = 0;
+      tempEvolution_ = 0;
 
-      field1_ = 0;
+      firstTempEvolutionCandyCost_ = 0;
 
-      field2_ = 0;
+      subsequentTempEvolutionCandyCost_ = 0;
 
-      if (field3Builder_ == null) {
-        field3_ = java.util.Collections.emptyList();
+      if (evoBranchField1Builder_ == null) {
+        evoBranchField1_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
       } else {
-        field3Builder_.clear();
+        evoBranchField1Builder_.clear();
       }
       return this;
     }
@@ -878,17 +878,17 @@ private static final long serialVersionUID = 0L;
       result.onlyNighttime_ = onlyNighttime_;
       result.priority_ = priority_;
       result.noCandyCostViaTrade_ = noCandyCostViaTrade_;
-      result.temporaryEvolutionId_ = temporaryEvolutionId_;
-      result.field1_ = field1_;
-      result.field2_ = field2_;
-      if (field3Builder_ == null) {
+      result.tempEvolution_ = tempEvolution_;
+      result.firstTempEvolutionCandyCost_ = firstTempEvolutionCandyCost_;
+      result.subsequentTempEvolutionCandyCost_ = subsequentTempEvolutionCandyCost_;
+      if (evoBranchField1Builder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
-          field3_ = java.util.Collections.unmodifiableList(field3_);
+          evoBranchField1_ = java.util.Collections.unmodifiableList(evoBranchField1_);
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.field3_ = field3_;
+        result.evoBranchField1_ = evoBranchField1_;
       } else {
-        result.field3_ = field3Builder_.build();
+        result.evoBranchField1_ = evoBranchField1Builder_.build();
       }
       onBuilt();
       return result;
@@ -974,38 +974,38 @@ private static final long serialVersionUID = 0L;
       if (other.getNoCandyCostViaTrade() != false) {
         setNoCandyCostViaTrade(other.getNoCandyCostViaTrade());
       }
-      if (other.temporaryEvolutionId_ != 0) {
-        setTemporaryEvolutionIdValue(other.getTemporaryEvolutionIdValue());
+      if (other.tempEvolution_ != 0) {
+        setTempEvolutionValue(other.getTempEvolutionValue());
       }
-      if (other.getField1() != 0) {
-        setField1(other.getField1());
+      if (other.getFirstTempEvolutionCandyCost() != 0) {
+        setFirstTempEvolutionCandyCost(other.getFirstTempEvolutionCandyCost());
       }
-      if (other.getField2() != 0) {
-        setField2(other.getField2());
+      if (other.getSubsequentTempEvolutionCandyCost() != 0) {
+        setSubsequentTempEvolutionCandyCost(other.getSubsequentTempEvolutionCandyCost());
       }
-      if (field3Builder_ == null) {
-        if (!other.field3_.isEmpty()) {
-          if (field3_.isEmpty()) {
-            field3_ = other.field3_;
+      if (evoBranchField1Builder_ == null) {
+        if (!other.evoBranchField1_.isEmpty()) {
+          if (evoBranchField1_.isEmpty()) {
+            evoBranchField1_ = other.evoBranchField1_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureField3IsMutable();
-            field3_.addAll(other.field3_);
+            ensureEvoBranchField1IsMutable();
+            evoBranchField1_.addAll(other.evoBranchField1_);
           }
           onChanged();
         }
       } else {
-        if (!other.field3_.isEmpty()) {
-          if (field3Builder_.isEmpty()) {
-            field3Builder_.dispose();
-            field3Builder_ = null;
-            field3_ = other.field3_;
+        if (!other.evoBranchField1_.isEmpty()) {
+          if (evoBranchField1Builder_.isEmpty()) {
+            evoBranchField1Builder_.dispose();
+            evoBranchField1Builder_ = null;
+            evoBranchField1_ = other.evoBranchField1_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            field3Builder_ = 
+            evoBranchField1Builder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getField3FieldBuilder() : null;
+                 getEvoBranchField1FieldBuilder() : null;
           } else {
-            field3Builder_.addAllMessages(other.field3_);
+            evoBranchField1Builder_.addAllMessages(other.evoBranchField1_);
           }
         }
       }
@@ -1526,360 +1526,360 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int temporaryEvolutionId_ = 0;
+    private int tempEvolution_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temporary_evolution_id = 14;</code>
-     * @return The enum numeric value on the wire for temporaryEvolutionId.
+     * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temp_evolution = 14;</code>
+     * @return The enum numeric value on the wire for tempEvolution.
      */
-    @java.lang.Override public int getTemporaryEvolutionIdValue() {
-      return temporaryEvolutionId_;
+    @java.lang.Override public int getTempEvolutionValue() {
+      return tempEvolution_;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temporary_evolution_id = 14;</code>
-     * @param value The enum numeric value on the wire for temporaryEvolutionId to set.
+     * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temp_evolution = 14;</code>
+     * @param value The enum numeric value on the wire for tempEvolution to set.
      * @return This builder for chaining.
      */
-    public Builder setTemporaryEvolutionIdValue(int value) {
+    public Builder setTempEvolutionValue(int value) {
       
-      temporaryEvolutionId_ = value;
+      tempEvolution_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temporary_evolution_id = 14;</code>
-     * @return The temporaryEvolutionId.
+     * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temp_evolution = 14;</code>
+     * @return The tempEvolution.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.HoloTemporaryEvolutionId getTemporaryEvolutionId() {
+    public POGOProtos.Rpc.HoloTemporaryEvolutionId getTempEvolution() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.HoloTemporaryEvolutionId result = POGOProtos.Rpc.HoloTemporaryEvolutionId.valueOf(temporaryEvolutionId_);
+      POGOProtos.Rpc.HoloTemporaryEvolutionId result = POGOProtos.Rpc.HoloTemporaryEvolutionId.valueOf(tempEvolution_);
       return result == null ? POGOProtos.Rpc.HoloTemporaryEvolutionId.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temporary_evolution_id = 14;</code>
-     * @param value The temporaryEvolutionId to set.
+     * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temp_evolution = 14;</code>
+     * @param value The tempEvolution to set.
      * @return This builder for chaining.
      */
-    public Builder setTemporaryEvolutionId(POGOProtos.Rpc.HoloTemporaryEvolutionId value) {
+    public Builder setTempEvolution(POGOProtos.Rpc.HoloTemporaryEvolutionId value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      temporaryEvolutionId_ = value.getNumber();
+      tempEvolution_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temporary_evolution_id = 14;</code>
+     * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temp_evolution = 14;</code>
      * @return This builder for chaining.
      */
-    public Builder clearTemporaryEvolutionId() {
+    public Builder clearTempEvolution() {
       
-      temporaryEvolutionId_ = 0;
+      tempEvolution_ = 0;
       onChanged();
       return this;
     }
 
-    private int field1_ ;
+    private int firstTempEvolutionCandyCost_ ;
     /**
-     * <code>int32 field1 = 15;</code>
-     * @return The field1.
+     * <code>int32 first_temp_evolution_candy_cost = 15;</code>
+     * @return The firstTempEvolutionCandyCost.
      */
     @java.lang.Override
-    public int getField1() {
-      return field1_;
+    public int getFirstTempEvolutionCandyCost() {
+      return firstTempEvolutionCandyCost_;
     }
     /**
-     * <code>int32 field1 = 15;</code>
-     * @param value The field1 to set.
+     * <code>int32 first_temp_evolution_candy_cost = 15;</code>
+     * @param value The firstTempEvolutionCandyCost to set.
      * @return This builder for chaining.
      */
-    public Builder setField1(int value) {
+    public Builder setFirstTempEvolutionCandyCost(int value) {
       
-      field1_ = value;
+      firstTempEvolutionCandyCost_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 field1 = 15;</code>
+     * <code>int32 first_temp_evolution_candy_cost = 15;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField1() {
+    public Builder clearFirstTempEvolutionCandyCost() {
       
-      field1_ = 0;
+      firstTempEvolutionCandyCost_ = 0;
       onChanged();
       return this;
     }
 
-    private int field2_ ;
+    private int subsequentTempEvolutionCandyCost_ ;
     /**
-     * <code>int32 field2 = 16;</code>
-     * @return The field2.
+     * <code>int32 subsequent_temp_evolution_candy_cost = 16;</code>
+     * @return The subsequentTempEvolutionCandyCost.
      */
     @java.lang.Override
-    public int getField2() {
-      return field2_;
+    public int getSubsequentTempEvolutionCandyCost() {
+      return subsequentTempEvolutionCandyCost_;
     }
     /**
-     * <code>int32 field2 = 16;</code>
-     * @param value The field2 to set.
+     * <code>int32 subsequent_temp_evolution_candy_cost = 16;</code>
+     * @param value The subsequentTempEvolutionCandyCost to set.
      * @return This builder for chaining.
      */
-    public Builder setField2(int value) {
+    public Builder setSubsequentTempEvolutionCandyCost(int value) {
       
-      field2_ = value;
+      subsequentTempEvolutionCandyCost_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 field2 = 16;</code>
+     * <code>int32 subsequent_temp_evolution_candy_cost = 16;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField2() {
+    public Builder clearSubsequentTempEvolutionCandyCost() {
       
-      field2_ = 0;
+      subsequentTempEvolutionCandyCost_ = 0;
       onChanged();
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.PokemonField1Sub> field3_ =
+    private java.util.List<POGOProtos.Rpc.PokemonField1Sub> evoBranchField1_ =
       java.util.Collections.emptyList();
-    private void ensureField3IsMutable() {
+    private void ensureEvoBranchField1IsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        field3_ = new java.util.ArrayList<POGOProtos.Rpc.PokemonField1Sub>(field3_);
+        evoBranchField1_ = new java.util.ArrayList<POGOProtos.Rpc.PokemonField1Sub>(evoBranchField1_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PokemonField1Sub, POGOProtos.Rpc.PokemonField1Sub.Builder, POGOProtos.Rpc.PokemonField1SubOrBuilder> field3Builder_;
+        POGOProtos.Rpc.PokemonField1Sub, POGOProtos.Rpc.PokemonField1Sub.Builder, POGOProtos.Rpc.PokemonField1SubOrBuilder> evoBranchField1Builder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PokemonField1Sub> getField3List() {
-      if (field3Builder_ == null) {
-        return java.util.Collections.unmodifiableList(field3_);
+    public java.util.List<POGOProtos.Rpc.PokemonField1Sub> getEvoBranchField1List() {
+      if (evoBranchField1Builder_ == null) {
+        return java.util.Collections.unmodifiableList(evoBranchField1_);
       } else {
-        return field3Builder_.getMessageList();
+        return evoBranchField1Builder_.getMessageList();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public int getField3Count() {
-      if (field3Builder_ == null) {
-        return field3_.size();
+    public int getEvoBranchField1Count() {
+      if (evoBranchField1Builder_ == null) {
+        return evoBranchField1_.size();
       } else {
-        return field3Builder_.getCount();
+        return evoBranchField1Builder_.getCount();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public POGOProtos.Rpc.PokemonField1Sub getField3(int index) {
-      if (field3Builder_ == null) {
-        return field3_.get(index);
+    public POGOProtos.Rpc.PokemonField1Sub getEvoBranchField1(int index) {
+      if (evoBranchField1Builder_ == null) {
+        return evoBranchField1_.get(index);
       } else {
-        return field3Builder_.getMessage(index);
+        return evoBranchField1Builder_.getMessage(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public Builder setField3(
+    public Builder setEvoBranchField1(
         int index, POGOProtos.Rpc.PokemonField1Sub value) {
-      if (field3Builder_ == null) {
+      if (evoBranchField1Builder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureField3IsMutable();
-        field3_.set(index, value);
+        ensureEvoBranchField1IsMutable();
+        evoBranchField1_.set(index, value);
         onChanged();
       } else {
-        field3Builder_.setMessage(index, value);
+        evoBranchField1Builder_.setMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public Builder setField3(
+    public Builder setEvoBranchField1(
         int index, POGOProtos.Rpc.PokemonField1Sub.Builder builderForValue) {
-      if (field3Builder_ == null) {
-        ensureField3IsMutable();
-        field3_.set(index, builderForValue.build());
+      if (evoBranchField1Builder_ == null) {
+        ensureEvoBranchField1IsMutable();
+        evoBranchField1_.set(index, builderForValue.build());
         onChanged();
       } else {
-        field3Builder_.setMessage(index, builderForValue.build());
+        evoBranchField1Builder_.setMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public Builder addField3(POGOProtos.Rpc.PokemonField1Sub value) {
-      if (field3Builder_ == null) {
+    public Builder addEvoBranchField1(POGOProtos.Rpc.PokemonField1Sub value) {
+      if (evoBranchField1Builder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureField3IsMutable();
-        field3_.add(value);
+        ensureEvoBranchField1IsMutable();
+        evoBranchField1_.add(value);
         onChanged();
       } else {
-        field3Builder_.addMessage(value);
+        evoBranchField1Builder_.addMessage(value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public Builder addField3(
+    public Builder addEvoBranchField1(
         int index, POGOProtos.Rpc.PokemonField1Sub value) {
-      if (field3Builder_ == null) {
+      if (evoBranchField1Builder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureField3IsMutable();
-        field3_.add(index, value);
+        ensureEvoBranchField1IsMutable();
+        evoBranchField1_.add(index, value);
         onChanged();
       } else {
-        field3Builder_.addMessage(index, value);
+        evoBranchField1Builder_.addMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public Builder addField3(
+    public Builder addEvoBranchField1(
         POGOProtos.Rpc.PokemonField1Sub.Builder builderForValue) {
-      if (field3Builder_ == null) {
-        ensureField3IsMutable();
-        field3_.add(builderForValue.build());
+      if (evoBranchField1Builder_ == null) {
+        ensureEvoBranchField1IsMutable();
+        evoBranchField1_.add(builderForValue.build());
         onChanged();
       } else {
-        field3Builder_.addMessage(builderForValue.build());
+        evoBranchField1Builder_.addMessage(builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public Builder addField3(
+    public Builder addEvoBranchField1(
         int index, POGOProtos.Rpc.PokemonField1Sub.Builder builderForValue) {
-      if (field3Builder_ == null) {
-        ensureField3IsMutable();
-        field3_.add(index, builderForValue.build());
+      if (evoBranchField1Builder_ == null) {
+        ensureEvoBranchField1IsMutable();
+        evoBranchField1_.add(index, builderForValue.build());
         onChanged();
       } else {
-        field3Builder_.addMessage(index, builderForValue.build());
+        evoBranchField1Builder_.addMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public Builder addAllField3(
+    public Builder addAllEvoBranchField1(
         java.lang.Iterable<? extends POGOProtos.Rpc.PokemonField1Sub> values) {
-      if (field3Builder_ == null) {
-        ensureField3IsMutable();
+      if (evoBranchField1Builder_ == null) {
+        ensureEvoBranchField1IsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, field3_);
+            values, evoBranchField1_);
         onChanged();
       } else {
-        field3Builder_.addAllMessages(values);
+        evoBranchField1Builder_.addAllMessages(values);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public Builder clearField3() {
-      if (field3Builder_ == null) {
-        field3_ = java.util.Collections.emptyList();
+    public Builder clearEvoBranchField1() {
+      if (evoBranchField1Builder_ == null) {
+        evoBranchField1_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
-        field3Builder_.clear();
+        evoBranchField1Builder_.clear();
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public Builder removeField3(int index) {
-      if (field3Builder_ == null) {
-        ensureField3IsMutable();
-        field3_.remove(index);
+    public Builder removeEvoBranchField1(int index) {
+      if (evoBranchField1Builder_ == null) {
+        ensureEvoBranchField1IsMutable();
+        evoBranchField1_.remove(index);
         onChanged();
       } else {
-        field3Builder_.remove(index);
+        evoBranchField1Builder_.remove(index);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public POGOProtos.Rpc.PokemonField1Sub.Builder getField3Builder(
+    public POGOProtos.Rpc.PokemonField1Sub.Builder getEvoBranchField1Builder(
         int index) {
-      return getField3FieldBuilder().getBuilder(index);
+      return getEvoBranchField1FieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public POGOProtos.Rpc.PokemonField1SubOrBuilder getField3OrBuilder(
+    public POGOProtos.Rpc.PokemonField1SubOrBuilder getEvoBranchField1OrBuilder(
         int index) {
-      if (field3Builder_ == null) {
-        return field3_.get(index);  } else {
-        return field3Builder_.getMessageOrBuilder(index);
+      if (evoBranchField1Builder_ == null) {
+        return evoBranchField1_.get(index);  } else {
+        return evoBranchField1Builder_.getMessageOrBuilder(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.PokemonField1SubOrBuilder> 
-         getField3OrBuilderList() {
-      if (field3Builder_ != null) {
-        return field3Builder_.getMessageOrBuilderList();
+         getEvoBranchField1OrBuilderList() {
+      if (evoBranchField1Builder_ != null) {
+        return evoBranchField1Builder_.getMessageOrBuilderList();
       } else {
-        return java.util.Collections.unmodifiableList(field3_);
+        return java.util.Collections.unmodifiableList(evoBranchField1_);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public POGOProtos.Rpc.PokemonField1Sub.Builder addField3Builder() {
-      return getField3FieldBuilder().addBuilder(
+    public POGOProtos.Rpc.PokemonField1Sub.Builder addEvoBranchField1Builder() {
+      return getEvoBranchField1FieldBuilder().addBuilder(
           POGOProtos.Rpc.PokemonField1Sub.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
-    public POGOProtos.Rpc.PokemonField1Sub.Builder addField3Builder(
+    public POGOProtos.Rpc.PokemonField1Sub.Builder addEvoBranchField1Builder(
         int index) {
-      return getField3FieldBuilder().addBuilder(
+      return getEvoBranchField1FieldBuilder().addBuilder(
           index, POGOProtos.Rpc.PokemonField1Sub.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+     * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
      */
     public java.util.List<POGOProtos.Rpc.PokemonField1Sub.Builder> 
-         getField3BuilderList() {
-      return getField3FieldBuilder().getBuilderList();
+         getEvoBranchField1BuilderList() {
+      return getEvoBranchField1FieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
         POGOProtos.Rpc.PokemonField1Sub, POGOProtos.Rpc.PokemonField1Sub.Builder, POGOProtos.Rpc.PokemonField1SubOrBuilder> 
-        getField3FieldBuilder() {
-      if (field3Builder_ == null) {
-        field3Builder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+        getEvoBranchField1FieldBuilder() {
+      if (evoBranchField1Builder_ == null) {
+        evoBranchField1Builder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             POGOProtos.Rpc.PokemonField1Sub, POGOProtos.Rpc.PokemonField1Sub.Builder, POGOProtos.Rpc.PokemonField1SubOrBuilder>(
-                field3_,
+                evoBranchField1_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
-        field3_ = null;
+        evoBranchField1_ = null;
       }
-      return field3Builder_;
+      return evoBranchField1Builder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

@@ -484,27 +484,27 @@ public interface PokemonProtoOrBuilder extends
   int getMegaEvolvedFormsValue(int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
    */
-  java.util.List<POGOProtos.Rpc.PokemonField1> 
-      getField1List();
+  java.util.List<POGOProtos.Rpc.ClientQuestProto> 
+      getQuestBuddyEvolutionRequirementList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
    */
-  POGOProtos.Rpc.PokemonField1 getField1(int index);
+  POGOProtos.Rpc.ClientQuestProto getQuestBuddyEvolutionRequirement(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
    */
-  int getField1Count();
+  int getQuestBuddyEvolutionRequirementCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.PokemonField1OrBuilder> 
-      getField1OrBuilderList();
+  java.util.List<? extends POGOProtos.Rpc.ClientQuestProtoOrBuilder> 
+      getQuestBuddyEvolutionRequirementOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
    */
-  POGOProtos.Rpc.PokemonField1OrBuilder getField1OrBuilder(
+  POGOProtos.Rpc.ClientQuestProtoOrBuilder getQuestBuddyEvolutionRequirementOrBuilder(
       int index);
 
   /**

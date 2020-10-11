@@ -21,11 +21,11 @@ private static final long serialVersionUID = 0L;
   }
   private MegaEvolutionAttributes() {
     temporaryEvolutionId_ = 0;
-    field4_ = 0;
-    field5_ = 0;
-    field11_ = emptyFloatList();
-    field12_ = emptyFloatList();
-    field13_ = emptyFloatList();
+    type1_ = 0;
+    type2_ = 0;
+    buddyOffsetMale_ = emptyFloatList();
+    buddyOffsetFemale_ = emptyFloatList();
+    buddyPortraitOffset_ = emptyFloatList();
   }
 
   @java.lang.Override
@@ -67,139 +67,139 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             POGOProtos.Rpc.PokemonStatsAttributesProto.Builder subBuilder = null;
-            if (field1_ != null) {
-              subBuilder = field1_.toBuilder();
+            if (stats_ != null) {
+              subBuilder = stats_.toBuilder();
             }
-            field1_ = input.readMessage(POGOProtos.Rpc.PokemonStatsAttributesProto.parser(), extensionRegistry);
+            stats_ = input.readMessage(POGOProtos.Rpc.PokemonStatsAttributesProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(field1_);
-              field1_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(stats_);
+              stats_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 29: {
 
-            field2_ = input.readFloat();
+            pokedexHeightM_ = input.readFloat();
             break;
           }
           case 37: {
 
-            field3_ = input.readFloat();
+            pokedexWeightK_ = input.readFloat();
             break;
           }
           case 40: {
             int rawValue = input.readEnum();
 
-            field4_ = rawValue;
+            type1_ = rawValue;
             break;
           }
           case 48: {
             int rawValue = input.readEnum();
 
-            field5_ = rawValue;
+            type2_ = rawValue;
             break;
           }
           case 61: {
 
-            field6_ = input.readFloat();
+            buddyScale_ = input.readFloat();
             break;
           }
           case 66: {
             POGOProtos.Rpc.PokemonCameraAttributesProto.Builder subBuilder = null;
-            if (field7_ != null) {
-              subBuilder = field7_.toBuilder();
+            if (camera_ != null) {
+              subBuilder = camera_.toBuilder();
             }
-            field7_ = input.readMessage(POGOProtos.Rpc.PokemonCameraAttributesProto.parser(), extensionRegistry);
+            camera_ = input.readMessage(POGOProtos.Rpc.PokemonCameraAttributesProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(field7_);
-              field7_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(camera_);
+              camera_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 74: {
             POGOProtos.Rpc.PokemonEncounterAttributesProto.Builder subBuilder = null;
-            if (field8_ != null) {
-              subBuilder = field8_.toBuilder();
+            if (encounter_ != null) {
+              subBuilder = encounter_.toBuilder();
             }
-            field8_ = input.readMessage(POGOProtos.Rpc.PokemonEncounterAttributesProto.parser(), extensionRegistry);
+            encounter_ = input.readMessage(POGOProtos.Rpc.PokemonEncounterAttributesProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(field8_);
-              field8_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(encounter_);
+              encounter_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 85: {
 
-            field9_ = input.readFloat();
+            modelScaleV2_ = input.readFloat();
             break;
           }
           case 93: {
 
-            field10_ = input.readFloat();
+            modelHeigh_ = input.readFloat();
             break;
           }
           case 101: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              field11_ = newFloatList();
+              buddyOffsetMale_ = newFloatList();
               mutable_bitField0_ |= 0x00000001;
             }
-            field11_.addFloat(input.readFloat());
+            buddyOffsetMale_.addFloat(input.readFloat());
             break;
           }
           case 98: {
             int length = input.readRawVarint32();
             int limit = input.pushLimit(length);
             if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-              field11_ = newFloatList();
+              buddyOffsetMale_ = newFloatList();
               mutable_bitField0_ |= 0x00000001;
             }
             while (input.getBytesUntilLimit() > 0) {
-              field11_.addFloat(input.readFloat());
+              buddyOffsetMale_.addFloat(input.readFloat());
             }
             input.popLimit(limit);
             break;
           }
           case 109: {
             if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-              field12_ = newFloatList();
+              buddyOffsetFemale_ = newFloatList();
               mutable_bitField0_ |= 0x00000002;
             }
-            field12_.addFloat(input.readFloat());
+            buddyOffsetFemale_.addFloat(input.readFloat());
             break;
           }
           case 106: {
             int length = input.readRawVarint32();
             int limit = input.pushLimit(length);
             if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-              field12_ = newFloatList();
+              buddyOffsetFemale_ = newFloatList();
               mutable_bitField0_ |= 0x00000002;
             }
             while (input.getBytesUntilLimit() > 0) {
-              field12_.addFloat(input.readFloat());
+              buddyOffsetFemale_.addFloat(input.readFloat());
             }
             input.popLimit(limit);
             break;
           }
           case 117: {
             if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-              field13_ = newFloatList();
+              buddyPortraitOffset_ = newFloatList();
               mutable_bitField0_ |= 0x00000004;
             }
-            field13_.addFloat(input.readFloat());
+            buddyPortraitOffset_.addFloat(input.readFloat());
             break;
           }
           case 114: {
             int length = input.readRawVarint32();
             int limit = input.pushLimit(length);
             if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-              field13_ = newFloatList();
+              buddyPortraitOffset_ = newFloatList();
               mutable_bitField0_ |= 0x00000004;
             }
             while (input.getBytesUntilLimit() > 0) {
-              field13_.addFloat(input.readFloat());
+              buddyPortraitOffset_.addFloat(input.readFloat());
             }
             input.popLimit(limit);
             break;
@@ -220,13 +220,13 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        field11_.makeImmutable(); // C
+        buddyOffsetMale_.makeImmutable(); // C
       }
       if (((mutable_bitField0_ & 0x00000002) != 0)) {
-        field12_.makeImmutable(); // C
+        buddyOffsetFemale_.makeImmutable(); // C
       }
       if (((mutable_bitField0_ & 0x00000004) != 0)) {
-        field13_.makeImmutable(); // C
+        buddyPortraitOffset_.makeImmutable(); // C
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -264,260 +264,260 @@ private static final long serialVersionUID = 0L;
     return result == null ? POGOProtos.Rpc.HoloTemporaryEvolutionId.UNRECOGNIZED : result;
   }
 
-  public static final int FIELD1_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.PokemonStatsAttributesProto field1_;
+  public static final int STATS_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.PokemonStatsAttributesProto stats_;
   /**
-   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
-   * @return Whether the field1 field is set.
+   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
+   * @return Whether the stats field is set.
    */
   @java.lang.Override
-  public boolean hasField1() {
-    return field1_ != null;
+  public boolean hasStats() {
+    return stats_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
-   * @return The field1.
+   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
+   * @return The stats.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonStatsAttributesProto getField1() {
-    return field1_ == null ? POGOProtos.Rpc.PokemonStatsAttributesProto.getDefaultInstance() : field1_;
+  public POGOProtos.Rpc.PokemonStatsAttributesProto getStats() {
+    return stats_ == null ? POGOProtos.Rpc.PokemonStatsAttributesProto.getDefaultInstance() : stats_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
+   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonStatsAttributesProtoOrBuilder getField1OrBuilder() {
-    return getField1();
+  public POGOProtos.Rpc.PokemonStatsAttributesProtoOrBuilder getStatsOrBuilder() {
+    return getStats();
   }
 
-  public static final int FIELD2_FIELD_NUMBER = 3;
-  private float field2_;
+  public static final int POKEDEX_HEIGHT_M_FIELD_NUMBER = 3;
+  private float pokedexHeightM_;
   /**
-   * <code>float field2 = 3;</code>
-   * @return The field2.
+   * <code>float pokedex_height_m = 3;</code>
+   * @return The pokedexHeightM.
    */
   @java.lang.Override
-  public float getField2() {
-    return field2_;
+  public float getPokedexHeightM() {
+    return pokedexHeightM_;
   }
 
-  public static final int FIELD3_FIELD_NUMBER = 4;
-  private float field3_;
+  public static final int POKEDEX_WEIGHT_K_FIELD_NUMBER = 4;
+  private float pokedexWeightK_;
   /**
-   * <code>float field3 = 4;</code>
-   * @return The field3.
+   * <code>float pokedex_weight_k = 4;</code>
+   * @return The pokedexWeightK.
    */
   @java.lang.Override
-  public float getField3() {
-    return field3_;
+  public float getPokedexWeightK() {
+    return pokedexWeightK_;
   }
 
-  public static final int FIELD4_FIELD_NUMBER = 5;
-  private int field4_;
+  public static final int TYPE_1_FIELD_NUMBER = 5;
+  private int type1_;
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonType field4 = 5;</code>
-   * @return The enum numeric value on the wire for field4.
+   * <code>.POGOProtos.Rpc.HoloPokemonType type_1 = 5;</code>
+   * @return The enum numeric value on the wire for type1.
    */
-  @java.lang.Override public int getField4Value() {
-    return field4_;
+  @java.lang.Override public int getType1Value() {
+    return type1_;
   }
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonType field4 = 5;</code>
-   * @return The field4.
+   * <code>.POGOProtos.Rpc.HoloPokemonType type_1 = 5;</code>
+   * @return The type1.
    */
-  @java.lang.Override public POGOProtos.Rpc.HoloPokemonType getField4() {
+  @java.lang.Override public POGOProtos.Rpc.HoloPokemonType getType1() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.HoloPokemonType result = POGOProtos.Rpc.HoloPokemonType.valueOf(field4_);
+    POGOProtos.Rpc.HoloPokemonType result = POGOProtos.Rpc.HoloPokemonType.valueOf(type1_);
     return result == null ? POGOProtos.Rpc.HoloPokemonType.UNRECOGNIZED : result;
   }
 
-  public static final int FIELD5_FIELD_NUMBER = 6;
-  private int field5_;
+  public static final int TYPE_2_FIELD_NUMBER = 6;
+  private int type2_;
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonType field5 = 6;</code>
-   * @return The enum numeric value on the wire for field5.
+   * <code>.POGOProtos.Rpc.HoloPokemonType type_2 = 6;</code>
+   * @return The enum numeric value on the wire for type2.
    */
-  @java.lang.Override public int getField5Value() {
-    return field5_;
+  @java.lang.Override public int getType2Value() {
+    return type2_;
   }
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonType field5 = 6;</code>
-   * @return The field5.
+   * <code>.POGOProtos.Rpc.HoloPokemonType type_2 = 6;</code>
+   * @return The type2.
    */
-  @java.lang.Override public POGOProtos.Rpc.HoloPokemonType getField5() {
+  @java.lang.Override public POGOProtos.Rpc.HoloPokemonType getType2() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.HoloPokemonType result = POGOProtos.Rpc.HoloPokemonType.valueOf(field5_);
+    POGOProtos.Rpc.HoloPokemonType result = POGOProtos.Rpc.HoloPokemonType.valueOf(type2_);
     return result == null ? POGOProtos.Rpc.HoloPokemonType.UNRECOGNIZED : result;
   }
 
-  public static final int FIELD6_FIELD_NUMBER = 7;
-  private float field6_;
+  public static final int BUDDY_SCALE_FIELD_NUMBER = 7;
+  private float buddyScale_;
   /**
-   * <code>float field6 = 7;</code>
-   * @return The field6.
+   * <code>float buddy_scale = 7;</code>
+   * @return The buddyScale.
    */
   @java.lang.Override
-  public float getField6() {
-    return field6_;
+  public float getBuddyScale() {
+    return buddyScale_;
   }
 
-  public static final int FIELD7_FIELD_NUMBER = 8;
-  private POGOProtos.Rpc.PokemonCameraAttributesProto field7_;
+  public static final int CAMERA_FIELD_NUMBER = 8;
+  private POGOProtos.Rpc.PokemonCameraAttributesProto camera_;
   /**
-   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
-   * @return Whether the field7 field is set.
+   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
+   * @return Whether the camera field is set.
    */
   @java.lang.Override
-  public boolean hasField7() {
-    return field7_ != null;
+  public boolean hasCamera() {
+    return camera_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
-   * @return The field7.
+   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
+   * @return The camera.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonCameraAttributesProto getField7() {
-    return field7_ == null ? POGOProtos.Rpc.PokemonCameraAttributesProto.getDefaultInstance() : field7_;
+  public POGOProtos.Rpc.PokemonCameraAttributesProto getCamera() {
+    return camera_ == null ? POGOProtos.Rpc.PokemonCameraAttributesProto.getDefaultInstance() : camera_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
+   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonCameraAttributesProtoOrBuilder getField7OrBuilder() {
-    return getField7();
-  }
-
-  public static final int FIELD8_FIELD_NUMBER = 9;
-  private POGOProtos.Rpc.PokemonEncounterAttributesProto field8_;
-  /**
-   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
-   * @return Whether the field8 field is set.
-   */
-  @java.lang.Override
-  public boolean hasField8() {
-    return field8_ != null;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
-   * @return The field8.
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonEncounterAttributesProto getField8() {
-    return field8_ == null ? POGOProtos.Rpc.PokemonEncounterAttributesProto.getDefaultInstance() : field8_;
-  }
-  /**
-   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
-   */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonEncounterAttributesProtoOrBuilder getField8OrBuilder() {
-    return getField8();
+  public POGOProtos.Rpc.PokemonCameraAttributesProtoOrBuilder getCameraOrBuilder() {
+    return getCamera();
   }
 
-  public static final int FIELD9_FIELD_NUMBER = 10;
-  private float field9_;
+  public static final int ENCOUNTER_FIELD_NUMBER = 9;
+  private POGOProtos.Rpc.PokemonEncounterAttributesProto encounter_;
   /**
-   * <code>float field9 = 10;</code>
-   * @return The field9.
+   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
+   * @return Whether the encounter field is set.
    */
   @java.lang.Override
-  public float getField9() {
-    return field9_;
+  public boolean hasEncounter() {
+    return encounter_ != null;
   }
-
-  public static final int FIELD10_FIELD_NUMBER = 11;
-  private float field10_;
   /**
-   * <code>float field10 = 11;</code>
-   * @return The field10.
+   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
+   * @return The encounter.
    */
   @java.lang.Override
-  public float getField10() {
-    return field10_;
+  public POGOProtos.Rpc.PokemonEncounterAttributesProto getEncounter() {
+    return encounter_ == null ? POGOProtos.Rpc.PokemonEncounterAttributesProto.getDefaultInstance() : encounter_;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
+   */
+  @java.lang.Override
+  public POGOProtos.Rpc.PokemonEncounterAttributesProtoOrBuilder getEncounterOrBuilder() {
+    return getEncounter();
   }
 
-  public static final int FIELD11_FIELD_NUMBER = 12;
-  private com.google.protobuf.Internal.FloatList field11_;
+  public static final int MODEL_SCALE_V2_FIELD_NUMBER = 10;
+  private float modelScaleV2_;
   /**
-   * <code>repeated float field11 = 12;</code>
-   * @return A list containing the field11.
+   * <code>float model_scale_v2 = 10;</code>
+   * @return The modelScaleV2.
+   */
+  @java.lang.Override
+  public float getModelScaleV2() {
+    return modelScaleV2_;
+  }
+
+  public static final int MODEL_HEIGH_FIELD_NUMBER = 11;
+  private float modelHeigh_;
+  /**
+   * <code>float model_heigh = 11;</code>
+   * @return The modelHeigh.
+   */
+  @java.lang.Override
+  public float getModelHeigh() {
+    return modelHeigh_;
+  }
+
+  public static final int BUDDY_OFFSET_MALE_FIELD_NUMBER = 12;
+  private com.google.protobuf.Internal.FloatList buddyOffsetMale_;
+  /**
+   * <code>repeated float buddy_offset_male = 12;</code>
+   * @return A list containing the buddyOffsetMale.
    */
   @java.lang.Override
   public java.util.List<java.lang.Float>
-      getField11List() {
-    return field11_;
+      getBuddyOffsetMaleList() {
+    return buddyOffsetMale_;
   }
   /**
-   * <code>repeated float field11 = 12;</code>
-   * @return The count of field11.
+   * <code>repeated float buddy_offset_male = 12;</code>
+   * @return The count of buddyOffsetMale.
    */
-  public int getField11Count() {
-    return field11_.size();
+  public int getBuddyOffsetMaleCount() {
+    return buddyOffsetMale_.size();
   }
   /**
-   * <code>repeated float field11 = 12;</code>
+   * <code>repeated float buddy_offset_male = 12;</code>
    * @param index The index of the element to return.
-   * @return The field11 at the given index.
+   * @return The buddyOffsetMale at the given index.
    */
-  public float getField11(int index) {
-    return field11_.getFloat(index);
+  public float getBuddyOffsetMale(int index) {
+    return buddyOffsetMale_.getFloat(index);
   }
-  private int field11MemoizedSerializedSize = -1;
+  private int buddyOffsetMaleMemoizedSerializedSize = -1;
 
-  public static final int FIELD12_FIELD_NUMBER = 13;
-  private com.google.protobuf.Internal.FloatList field12_;
+  public static final int BUDDY_OFFSET_FEMALE_FIELD_NUMBER = 13;
+  private com.google.protobuf.Internal.FloatList buddyOffsetFemale_;
   /**
-   * <code>repeated float field12 = 13;</code>
-   * @return A list containing the field12.
+   * <code>repeated float buddy_offset_female = 13;</code>
+   * @return A list containing the buddyOffsetFemale.
    */
   @java.lang.Override
   public java.util.List<java.lang.Float>
-      getField12List() {
-    return field12_;
+      getBuddyOffsetFemaleList() {
+    return buddyOffsetFemale_;
   }
   /**
-   * <code>repeated float field12 = 13;</code>
-   * @return The count of field12.
+   * <code>repeated float buddy_offset_female = 13;</code>
+   * @return The count of buddyOffsetFemale.
    */
-  public int getField12Count() {
-    return field12_.size();
+  public int getBuddyOffsetFemaleCount() {
+    return buddyOffsetFemale_.size();
   }
   /**
-   * <code>repeated float field12 = 13;</code>
+   * <code>repeated float buddy_offset_female = 13;</code>
    * @param index The index of the element to return.
-   * @return The field12 at the given index.
+   * @return The buddyOffsetFemale at the given index.
    */
-  public float getField12(int index) {
-    return field12_.getFloat(index);
+  public float getBuddyOffsetFemale(int index) {
+    return buddyOffsetFemale_.getFloat(index);
   }
-  private int field12MemoizedSerializedSize = -1;
+  private int buddyOffsetFemaleMemoizedSerializedSize = -1;
 
-  public static final int FIELD13_FIELD_NUMBER = 14;
-  private com.google.protobuf.Internal.FloatList field13_;
+  public static final int BUDDY_PORTRAIT_OFFSET_FIELD_NUMBER = 14;
+  private com.google.protobuf.Internal.FloatList buddyPortraitOffset_;
   /**
-   * <code>repeated float field13 = 14;</code>
-   * @return A list containing the field13.
+   * <code>repeated float buddy_portrait_offset = 14;</code>
+   * @return A list containing the buddyPortraitOffset.
    */
   @java.lang.Override
   public java.util.List<java.lang.Float>
-      getField13List() {
-    return field13_;
+      getBuddyPortraitOffsetList() {
+    return buddyPortraitOffset_;
   }
   /**
-   * <code>repeated float field13 = 14;</code>
-   * @return The count of field13.
+   * <code>repeated float buddy_portrait_offset = 14;</code>
+   * @return The count of buddyPortraitOffset.
    */
-  public int getField13Count() {
-    return field13_.size();
+  public int getBuddyPortraitOffsetCount() {
+    return buddyPortraitOffset_.size();
   }
   /**
-   * <code>repeated float field13 = 14;</code>
+   * <code>repeated float buddy_portrait_offset = 14;</code>
    * @param index The index of the element to return.
-   * @return The field13 at the given index.
+   * @return The buddyPortraitOffset at the given index.
    */
-  public float getField13(int index) {
-    return field13_.getFloat(index);
+  public float getBuddyPortraitOffset(int index) {
+    return buddyPortraitOffset_.getFloat(index);
   }
-  private int field13MemoizedSerializedSize = -1;
+  private int buddyPortraitOffsetMemoizedSerializedSize = -1;
 
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
@@ -537,56 +537,56 @@ private static final long serialVersionUID = 0L;
     if (temporaryEvolutionId_ != POGOProtos.Rpc.HoloTemporaryEvolutionId.HOLO_TEMPORARY_EVOLUTION_ID_TEMP_EVOLUTION_UNSET.getNumber()) {
       output.writeEnum(1, temporaryEvolutionId_);
     }
-    if (field1_ != null) {
-      output.writeMessage(2, getField1());
+    if (stats_ != null) {
+      output.writeMessage(2, getStats());
     }
-    if (field2_ != 0F) {
-      output.writeFloat(3, field2_);
+    if (pokedexHeightM_ != 0F) {
+      output.writeFloat(3, pokedexHeightM_);
     }
-    if (field3_ != 0F) {
-      output.writeFloat(4, field3_);
+    if (pokedexWeightK_ != 0F) {
+      output.writeFloat(4, pokedexWeightK_);
     }
-    if (field4_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
-      output.writeEnum(5, field4_);
+    if (type1_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+      output.writeEnum(5, type1_);
     }
-    if (field5_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
-      output.writeEnum(6, field5_);
+    if (type2_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+      output.writeEnum(6, type2_);
     }
-    if (field6_ != 0F) {
-      output.writeFloat(7, field6_);
+    if (buddyScale_ != 0F) {
+      output.writeFloat(7, buddyScale_);
     }
-    if (field7_ != null) {
-      output.writeMessage(8, getField7());
+    if (camera_ != null) {
+      output.writeMessage(8, getCamera());
     }
-    if (field8_ != null) {
-      output.writeMessage(9, getField8());
+    if (encounter_ != null) {
+      output.writeMessage(9, getEncounter());
     }
-    if (field9_ != 0F) {
-      output.writeFloat(10, field9_);
+    if (modelScaleV2_ != 0F) {
+      output.writeFloat(10, modelScaleV2_);
     }
-    if (field10_ != 0F) {
-      output.writeFloat(11, field10_);
+    if (modelHeigh_ != 0F) {
+      output.writeFloat(11, modelHeigh_);
     }
-    if (getField11List().size() > 0) {
+    if (getBuddyOffsetMaleList().size() > 0) {
       output.writeUInt32NoTag(98);
-      output.writeUInt32NoTag(field11MemoizedSerializedSize);
+      output.writeUInt32NoTag(buddyOffsetMaleMemoizedSerializedSize);
     }
-    for (int i = 0; i < field11_.size(); i++) {
-      output.writeFloatNoTag(field11_.getFloat(i));
+    for (int i = 0; i < buddyOffsetMale_.size(); i++) {
+      output.writeFloatNoTag(buddyOffsetMale_.getFloat(i));
     }
-    if (getField12List().size() > 0) {
+    if (getBuddyOffsetFemaleList().size() > 0) {
       output.writeUInt32NoTag(106);
-      output.writeUInt32NoTag(field12MemoizedSerializedSize);
+      output.writeUInt32NoTag(buddyOffsetFemaleMemoizedSerializedSize);
     }
-    for (int i = 0; i < field12_.size(); i++) {
-      output.writeFloatNoTag(field12_.getFloat(i));
+    for (int i = 0; i < buddyOffsetFemale_.size(); i++) {
+      output.writeFloatNoTag(buddyOffsetFemale_.getFloat(i));
     }
-    if (getField13List().size() > 0) {
+    if (getBuddyPortraitOffsetList().size() > 0) {
       output.writeUInt32NoTag(114);
-      output.writeUInt32NoTag(field13MemoizedSerializedSize);
+      output.writeUInt32NoTag(buddyPortraitOffsetMemoizedSerializedSize);
     }
-    for (int i = 0; i < field13_.size(); i++) {
-      output.writeFloatNoTag(field13_.getFloat(i));
+    for (int i = 0; i < buddyPortraitOffset_.size(); i++) {
+      output.writeFloatNoTag(buddyPortraitOffset_.getFloat(i));
     }
     unknownFields.writeTo(output);
   }
@@ -601,78 +601,78 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeEnumSize(1, temporaryEvolutionId_);
     }
-    if (field1_ != null) {
+    if (stats_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getField1());
+        .computeMessageSize(2, getStats());
     }
-    if (field2_ != 0F) {
+    if (pokedexHeightM_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(3, field2_);
+        .computeFloatSize(3, pokedexHeightM_);
     }
-    if (field3_ != 0F) {
+    if (pokedexWeightK_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(4, field3_);
+        .computeFloatSize(4, pokedexWeightK_);
     }
-    if (field4_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+    if (type1_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(5, field4_);
+        .computeEnumSize(5, type1_);
     }
-    if (field5_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
+    if (type2_ != POGOProtos.Rpc.HoloPokemonType.HOLO_POKEMON_TYPE_POKEMON_TYPE_NONE.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(6, field5_);
+        .computeEnumSize(6, type2_);
     }
-    if (field6_ != 0F) {
+    if (buddyScale_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(7, field6_);
+        .computeFloatSize(7, buddyScale_);
     }
-    if (field7_ != null) {
+    if (camera_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getField7());
+        .computeMessageSize(8, getCamera());
     }
-    if (field8_ != null) {
+    if (encounter_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, getField8());
+        .computeMessageSize(9, getEncounter());
     }
-    if (field9_ != 0F) {
+    if (modelScaleV2_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(10, field9_);
+        .computeFloatSize(10, modelScaleV2_);
     }
-    if (field10_ != 0F) {
+    if (modelHeigh_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(11, field10_);
+        .computeFloatSize(11, modelHeigh_);
     }
     {
       int dataSize = 0;
-      dataSize = 4 * getField11List().size();
+      dataSize = 4 * getBuddyOffsetMaleList().size();
       size += dataSize;
-      if (!getField11List().isEmpty()) {
+      if (!getBuddyOffsetMaleList().isEmpty()) {
         size += 1;
         size += com.google.protobuf.CodedOutputStream
             .computeInt32SizeNoTag(dataSize);
       }
-      field11MemoizedSerializedSize = dataSize;
+      buddyOffsetMaleMemoizedSerializedSize = dataSize;
     }
     {
       int dataSize = 0;
-      dataSize = 4 * getField12List().size();
+      dataSize = 4 * getBuddyOffsetFemaleList().size();
       size += dataSize;
-      if (!getField12List().isEmpty()) {
+      if (!getBuddyOffsetFemaleList().isEmpty()) {
         size += 1;
         size += com.google.protobuf.CodedOutputStream
             .computeInt32SizeNoTag(dataSize);
       }
-      field12MemoizedSerializedSize = dataSize;
+      buddyOffsetFemaleMemoizedSerializedSize = dataSize;
     }
     {
       int dataSize = 0;
-      dataSize = 4 * getField13List().size();
+      dataSize = 4 * getBuddyPortraitOffsetList().size();
       size += dataSize;
-      if (!getField13List().isEmpty()) {
+      if (!getBuddyPortraitOffsetList().isEmpty()) {
         size += 1;
         size += com.google.protobuf.CodedOutputStream
             .computeInt32SizeNoTag(dataSize);
       }
-      field13MemoizedSerializedSize = dataSize;
+      buddyPortraitOffsetMemoizedSerializedSize = dataSize;
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -690,44 +690,44 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.MegaEvolutionAttributes other = (POGOProtos.Rpc.MegaEvolutionAttributes) obj;
 
     if (temporaryEvolutionId_ != other.temporaryEvolutionId_) return false;
-    if (hasField1() != other.hasField1()) return false;
-    if (hasField1()) {
-      if (!getField1()
-          .equals(other.getField1())) return false;
+    if (hasStats() != other.hasStats()) return false;
+    if (hasStats()) {
+      if (!getStats()
+          .equals(other.getStats())) return false;
     }
-    if (java.lang.Float.floatToIntBits(getField2())
+    if (java.lang.Float.floatToIntBits(getPokedexHeightM())
         != java.lang.Float.floatToIntBits(
-            other.getField2())) return false;
-    if (java.lang.Float.floatToIntBits(getField3())
+            other.getPokedexHeightM())) return false;
+    if (java.lang.Float.floatToIntBits(getPokedexWeightK())
         != java.lang.Float.floatToIntBits(
-            other.getField3())) return false;
-    if (field4_ != other.field4_) return false;
-    if (field5_ != other.field5_) return false;
-    if (java.lang.Float.floatToIntBits(getField6())
+            other.getPokedexWeightK())) return false;
+    if (type1_ != other.type1_) return false;
+    if (type2_ != other.type2_) return false;
+    if (java.lang.Float.floatToIntBits(getBuddyScale())
         != java.lang.Float.floatToIntBits(
-            other.getField6())) return false;
-    if (hasField7() != other.hasField7()) return false;
-    if (hasField7()) {
-      if (!getField7()
-          .equals(other.getField7())) return false;
+            other.getBuddyScale())) return false;
+    if (hasCamera() != other.hasCamera()) return false;
+    if (hasCamera()) {
+      if (!getCamera()
+          .equals(other.getCamera())) return false;
     }
-    if (hasField8() != other.hasField8()) return false;
-    if (hasField8()) {
-      if (!getField8()
-          .equals(other.getField8())) return false;
+    if (hasEncounter() != other.hasEncounter()) return false;
+    if (hasEncounter()) {
+      if (!getEncounter()
+          .equals(other.getEncounter())) return false;
     }
-    if (java.lang.Float.floatToIntBits(getField9())
+    if (java.lang.Float.floatToIntBits(getModelScaleV2())
         != java.lang.Float.floatToIntBits(
-            other.getField9())) return false;
-    if (java.lang.Float.floatToIntBits(getField10())
+            other.getModelScaleV2())) return false;
+    if (java.lang.Float.floatToIntBits(getModelHeigh())
         != java.lang.Float.floatToIntBits(
-            other.getField10())) return false;
-    if (!getField11List()
-        .equals(other.getField11List())) return false;
-    if (!getField12List()
-        .equals(other.getField12List())) return false;
-    if (!getField13List()
-        .equals(other.getField13List())) return false;
+            other.getModelHeigh())) return false;
+    if (!getBuddyOffsetMaleList()
+        .equals(other.getBuddyOffsetMaleList())) return false;
+    if (!getBuddyOffsetFemaleList()
+        .equals(other.getBuddyOffsetFemaleList())) return false;
+    if (!getBuddyPortraitOffsetList()
+        .equals(other.getBuddyPortraitOffsetList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -741,48 +741,48 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TEMPORARY_EVOLUTION_ID_FIELD_NUMBER;
     hash = (53 * hash) + temporaryEvolutionId_;
-    if (hasField1()) {
-      hash = (37 * hash) + FIELD1_FIELD_NUMBER;
-      hash = (53 * hash) + getField1().hashCode();
+    if (hasStats()) {
+      hash = (37 * hash) + STATS_FIELD_NUMBER;
+      hash = (53 * hash) + getStats().hashCode();
     }
-    hash = (37 * hash) + FIELD2_FIELD_NUMBER;
+    hash = (37 * hash) + POKEDEX_HEIGHT_M_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getField2());
-    hash = (37 * hash) + FIELD3_FIELD_NUMBER;
+        getPokedexHeightM());
+    hash = (37 * hash) + POKEDEX_WEIGHT_K_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getField3());
-    hash = (37 * hash) + FIELD4_FIELD_NUMBER;
-    hash = (53 * hash) + field4_;
-    hash = (37 * hash) + FIELD5_FIELD_NUMBER;
-    hash = (53 * hash) + field5_;
-    hash = (37 * hash) + FIELD6_FIELD_NUMBER;
+        getPokedexWeightK());
+    hash = (37 * hash) + TYPE_1_FIELD_NUMBER;
+    hash = (53 * hash) + type1_;
+    hash = (37 * hash) + TYPE_2_FIELD_NUMBER;
+    hash = (53 * hash) + type2_;
+    hash = (37 * hash) + BUDDY_SCALE_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getField6());
-    if (hasField7()) {
-      hash = (37 * hash) + FIELD7_FIELD_NUMBER;
-      hash = (53 * hash) + getField7().hashCode();
+        getBuddyScale());
+    if (hasCamera()) {
+      hash = (37 * hash) + CAMERA_FIELD_NUMBER;
+      hash = (53 * hash) + getCamera().hashCode();
     }
-    if (hasField8()) {
-      hash = (37 * hash) + FIELD8_FIELD_NUMBER;
-      hash = (53 * hash) + getField8().hashCode();
+    if (hasEncounter()) {
+      hash = (37 * hash) + ENCOUNTER_FIELD_NUMBER;
+      hash = (53 * hash) + getEncounter().hashCode();
     }
-    hash = (37 * hash) + FIELD9_FIELD_NUMBER;
+    hash = (37 * hash) + MODEL_SCALE_V2_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getField9());
-    hash = (37 * hash) + FIELD10_FIELD_NUMBER;
+        getModelScaleV2());
+    hash = (37 * hash) + MODEL_HEIGH_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getField10());
-    if (getField11Count() > 0) {
-      hash = (37 * hash) + FIELD11_FIELD_NUMBER;
-      hash = (53 * hash) + getField11List().hashCode();
+        getModelHeigh());
+    if (getBuddyOffsetMaleCount() > 0) {
+      hash = (37 * hash) + BUDDY_OFFSET_MALE_FIELD_NUMBER;
+      hash = (53 * hash) + getBuddyOffsetMaleList().hashCode();
     }
-    if (getField12Count() > 0) {
-      hash = (37 * hash) + FIELD12_FIELD_NUMBER;
-      hash = (53 * hash) + getField12List().hashCode();
+    if (getBuddyOffsetFemaleCount() > 0) {
+      hash = (37 * hash) + BUDDY_OFFSET_FEMALE_FIELD_NUMBER;
+      hash = (53 * hash) + getBuddyOffsetFemaleList().hashCode();
     }
-    if (getField13Count() > 0) {
-      hash = (37 * hash) + FIELD13_FIELD_NUMBER;
-      hash = (53 * hash) + getField13List().hashCode();
+    if (getBuddyPortraitOffsetCount() > 0) {
+      hash = (37 * hash) + BUDDY_PORTRAIT_OFFSET_FIELD_NUMBER;
+      hash = (53 * hash) + getBuddyPortraitOffsetList().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -923,43 +923,43 @@ private static final long serialVersionUID = 0L;
       super.clear();
       temporaryEvolutionId_ = 0;
 
-      if (field1Builder_ == null) {
-        field1_ = null;
+      if (statsBuilder_ == null) {
+        stats_ = null;
       } else {
-        field1_ = null;
-        field1Builder_ = null;
+        stats_ = null;
+        statsBuilder_ = null;
       }
-      field2_ = 0F;
+      pokedexHeightM_ = 0F;
 
-      field3_ = 0F;
+      pokedexWeightK_ = 0F;
 
-      field4_ = 0;
+      type1_ = 0;
 
-      field5_ = 0;
+      type2_ = 0;
 
-      field6_ = 0F;
+      buddyScale_ = 0F;
 
-      if (field7Builder_ == null) {
-        field7_ = null;
+      if (cameraBuilder_ == null) {
+        camera_ = null;
       } else {
-        field7_ = null;
-        field7Builder_ = null;
+        camera_ = null;
+        cameraBuilder_ = null;
       }
-      if (field8Builder_ == null) {
-        field8_ = null;
+      if (encounterBuilder_ == null) {
+        encounter_ = null;
       } else {
-        field8_ = null;
-        field8Builder_ = null;
+        encounter_ = null;
+        encounterBuilder_ = null;
       }
-      field9_ = 0F;
+      modelScaleV2_ = 0F;
 
-      field10_ = 0F;
+      modelHeigh_ = 0F;
 
-      field11_ = emptyFloatList();
+      buddyOffsetMale_ = emptyFloatList();
       bitField0_ = (bitField0_ & ~0x00000001);
-      field12_ = emptyFloatList();
+      buddyOffsetFemale_ = emptyFloatList();
       bitField0_ = (bitField0_ & ~0x00000002);
-      field13_ = emptyFloatList();
+      buddyPortraitOffset_ = emptyFloatList();
       bitField0_ = (bitField0_ & ~0x00000004);
       return this;
     }
@@ -989,43 +989,43 @@ private static final long serialVersionUID = 0L;
       POGOProtos.Rpc.MegaEvolutionAttributes result = new POGOProtos.Rpc.MegaEvolutionAttributes(this);
       int from_bitField0_ = bitField0_;
       result.temporaryEvolutionId_ = temporaryEvolutionId_;
-      if (field1Builder_ == null) {
-        result.field1_ = field1_;
+      if (statsBuilder_ == null) {
+        result.stats_ = stats_;
       } else {
-        result.field1_ = field1Builder_.build();
+        result.stats_ = statsBuilder_.build();
       }
-      result.field2_ = field2_;
-      result.field3_ = field3_;
-      result.field4_ = field4_;
-      result.field5_ = field5_;
-      result.field6_ = field6_;
-      if (field7Builder_ == null) {
-        result.field7_ = field7_;
+      result.pokedexHeightM_ = pokedexHeightM_;
+      result.pokedexWeightK_ = pokedexWeightK_;
+      result.type1_ = type1_;
+      result.type2_ = type2_;
+      result.buddyScale_ = buddyScale_;
+      if (cameraBuilder_ == null) {
+        result.camera_ = camera_;
       } else {
-        result.field7_ = field7Builder_.build();
+        result.camera_ = cameraBuilder_.build();
       }
-      if (field8Builder_ == null) {
-        result.field8_ = field8_;
+      if (encounterBuilder_ == null) {
+        result.encounter_ = encounter_;
       } else {
-        result.field8_ = field8Builder_.build();
+        result.encounter_ = encounterBuilder_.build();
       }
-      result.field9_ = field9_;
-      result.field10_ = field10_;
+      result.modelScaleV2_ = modelScaleV2_;
+      result.modelHeigh_ = modelHeigh_;
       if (((bitField0_ & 0x00000001) != 0)) {
-        field11_.makeImmutable();
+        buddyOffsetMale_.makeImmutable();
         bitField0_ = (bitField0_ & ~0x00000001);
       }
-      result.field11_ = field11_;
+      result.buddyOffsetMale_ = buddyOffsetMale_;
       if (((bitField0_ & 0x00000002) != 0)) {
-        field12_.makeImmutable();
+        buddyOffsetFemale_.makeImmutable();
         bitField0_ = (bitField0_ & ~0x00000002);
       }
-      result.field12_ = field12_;
+      result.buddyOffsetFemale_ = buddyOffsetFemale_;
       if (((bitField0_ & 0x00000004) != 0)) {
-        field13_.makeImmutable();
+        buddyPortraitOffset_.makeImmutable();
         bitField0_ = (bitField0_ & ~0x00000004);
       }
-      result.field13_ = field13_;
+      result.buddyPortraitOffset_ = buddyPortraitOffset_;
       onBuilt();
       return result;
     }
@@ -1077,63 +1077,63 @@ private static final long serialVersionUID = 0L;
       if (other.temporaryEvolutionId_ != 0) {
         setTemporaryEvolutionIdValue(other.getTemporaryEvolutionIdValue());
       }
-      if (other.hasField1()) {
-        mergeField1(other.getField1());
+      if (other.hasStats()) {
+        mergeStats(other.getStats());
       }
-      if (other.getField2() != 0F) {
-        setField2(other.getField2());
+      if (other.getPokedexHeightM() != 0F) {
+        setPokedexHeightM(other.getPokedexHeightM());
       }
-      if (other.getField3() != 0F) {
-        setField3(other.getField3());
+      if (other.getPokedexWeightK() != 0F) {
+        setPokedexWeightK(other.getPokedexWeightK());
       }
-      if (other.field4_ != 0) {
-        setField4Value(other.getField4Value());
+      if (other.type1_ != 0) {
+        setType1Value(other.getType1Value());
       }
-      if (other.field5_ != 0) {
-        setField5Value(other.getField5Value());
+      if (other.type2_ != 0) {
+        setType2Value(other.getType2Value());
       }
-      if (other.getField6() != 0F) {
-        setField6(other.getField6());
+      if (other.getBuddyScale() != 0F) {
+        setBuddyScale(other.getBuddyScale());
       }
-      if (other.hasField7()) {
-        mergeField7(other.getField7());
+      if (other.hasCamera()) {
+        mergeCamera(other.getCamera());
       }
-      if (other.hasField8()) {
-        mergeField8(other.getField8());
+      if (other.hasEncounter()) {
+        mergeEncounter(other.getEncounter());
       }
-      if (other.getField9() != 0F) {
-        setField9(other.getField9());
+      if (other.getModelScaleV2() != 0F) {
+        setModelScaleV2(other.getModelScaleV2());
       }
-      if (other.getField10() != 0F) {
-        setField10(other.getField10());
+      if (other.getModelHeigh() != 0F) {
+        setModelHeigh(other.getModelHeigh());
       }
-      if (!other.field11_.isEmpty()) {
-        if (field11_.isEmpty()) {
-          field11_ = other.field11_;
+      if (!other.buddyOffsetMale_.isEmpty()) {
+        if (buddyOffsetMale_.isEmpty()) {
+          buddyOffsetMale_ = other.buddyOffsetMale_;
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          ensureField11IsMutable();
-          field11_.addAll(other.field11_);
+          ensureBuddyOffsetMaleIsMutable();
+          buddyOffsetMale_.addAll(other.buddyOffsetMale_);
         }
         onChanged();
       }
-      if (!other.field12_.isEmpty()) {
-        if (field12_.isEmpty()) {
-          field12_ = other.field12_;
+      if (!other.buddyOffsetFemale_.isEmpty()) {
+        if (buddyOffsetFemale_.isEmpty()) {
+          buddyOffsetFemale_ = other.buddyOffsetFemale_;
           bitField0_ = (bitField0_ & ~0x00000002);
         } else {
-          ensureField12IsMutable();
-          field12_.addAll(other.field12_);
+          ensureBuddyOffsetFemaleIsMutable();
+          buddyOffsetFemale_.addAll(other.buddyOffsetFemale_);
         }
         onChanged();
       }
-      if (!other.field13_.isEmpty()) {
-        if (field13_.isEmpty()) {
-          field13_ = other.field13_;
+      if (!other.buddyPortraitOffset_.isEmpty()) {
+        if (buddyPortraitOffset_.isEmpty()) {
+          buddyPortraitOffset_ = other.buddyPortraitOffset_;
           bitField0_ = (bitField0_ & ~0x00000004);
         } else {
-          ensureField13IsMutable();
-          field13_.addAll(other.field13_);
+          ensureBuddyPortraitOffsetIsMutable();
+          buddyPortraitOffset_.addAll(other.buddyPortraitOffset_);
         }
         onChanged();
       }
@@ -1221,858 +1221,858 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.PokemonStatsAttributesProto field1_;
+    private POGOProtos.Rpc.PokemonStatsAttributesProto stats_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonStatsAttributesProto, POGOProtos.Rpc.PokemonStatsAttributesProto.Builder, POGOProtos.Rpc.PokemonStatsAttributesProtoOrBuilder> field1Builder_;
+        POGOProtos.Rpc.PokemonStatsAttributesProto, POGOProtos.Rpc.PokemonStatsAttributesProto.Builder, POGOProtos.Rpc.PokemonStatsAttributesProtoOrBuilder> statsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
-     * @return Whether the field1 field is set.
+     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
+     * @return Whether the stats field is set.
      */
-    public boolean hasField1() {
-      return field1Builder_ != null || field1_ != null;
+    public boolean hasStats() {
+      return statsBuilder_ != null || stats_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
-     * @return The field1.
+     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
+     * @return The stats.
      */
-    public POGOProtos.Rpc.PokemonStatsAttributesProto getField1() {
-      if (field1Builder_ == null) {
-        return field1_ == null ? POGOProtos.Rpc.PokemonStatsAttributesProto.getDefaultInstance() : field1_;
+    public POGOProtos.Rpc.PokemonStatsAttributesProto getStats() {
+      if (statsBuilder_ == null) {
+        return stats_ == null ? POGOProtos.Rpc.PokemonStatsAttributesProto.getDefaultInstance() : stats_;
       } else {
-        return field1Builder_.getMessage();
+        return statsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
      */
-    public Builder setField1(POGOProtos.Rpc.PokemonStatsAttributesProto value) {
-      if (field1Builder_ == null) {
+    public Builder setStats(POGOProtos.Rpc.PokemonStatsAttributesProto value) {
+      if (statsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        field1_ = value;
+        stats_ = value;
         onChanged();
       } else {
-        field1Builder_.setMessage(value);
+        statsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
      */
-    public Builder setField1(
+    public Builder setStats(
         POGOProtos.Rpc.PokemonStatsAttributesProto.Builder builderForValue) {
-      if (field1Builder_ == null) {
-        field1_ = builderForValue.build();
+      if (statsBuilder_ == null) {
+        stats_ = builderForValue.build();
         onChanged();
       } else {
-        field1Builder_.setMessage(builderForValue.build());
+        statsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
      */
-    public Builder mergeField1(POGOProtos.Rpc.PokemonStatsAttributesProto value) {
-      if (field1Builder_ == null) {
-        if (field1_ != null) {
-          field1_ =
-            POGOProtos.Rpc.PokemonStatsAttributesProto.newBuilder(field1_).mergeFrom(value).buildPartial();
+    public Builder mergeStats(POGOProtos.Rpc.PokemonStatsAttributesProto value) {
+      if (statsBuilder_ == null) {
+        if (stats_ != null) {
+          stats_ =
+            POGOProtos.Rpc.PokemonStatsAttributesProto.newBuilder(stats_).mergeFrom(value).buildPartial();
         } else {
-          field1_ = value;
+          stats_ = value;
         }
         onChanged();
       } else {
-        field1Builder_.mergeFrom(value);
+        statsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
      */
-    public Builder clearField1() {
-      if (field1Builder_ == null) {
-        field1_ = null;
+    public Builder clearStats() {
+      if (statsBuilder_ == null) {
+        stats_ = null;
         onChanged();
       } else {
-        field1_ = null;
-        field1Builder_ = null;
+        stats_ = null;
+        statsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
      */
-    public POGOProtos.Rpc.PokemonStatsAttributesProto.Builder getField1Builder() {
+    public POGOProtos.Rpc.PokemonStatsAttributesProto.Builder getStatsBuilder() {
       
       onChanged();
-      return getField1FieldBuilder().getBuilder();
+      return getStatsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
      */
-    public POGOProtos.Rpc.PokemonStatsAttributesProtoOrBuilder getField1OrBuilder() {
-      if (field1Builder_ != null) {
-        return field1Builder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.PokemonStatsAttributesProtoOrBuilder getStatsOrBuilder() {
+      if (statsBuilder_ != null) {
+        return statsBuilder_.getMessageOrBuilder();
       } else {
-        return field1_ == null ?
-            POGOProtos.Rpc.PokemonStatsAttributesProto.getDefaultInstance() : field1_;
+        return stats_ == null ?
+            POGOProtos.Rpc.PokemonStatsAttributesProto.getDefaultInstance() : stats_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
+     * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PokemonStatsAttributesProto, POGOProtos.Rpc.PokemonStatsAttributesProto.Builder, POGOProtos.Rpc.PokemonStatsAttributesProtoOrBuilder> 
-        getField1FieldBuilder() {
-      if (field1Builder_ == null) {
-        field1Builder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getStatsFieldBuilder() {
+      if (statsBuilder_ == null) {
+        statsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PokemonStatsAttributesProto, POGOProtos.Rpc.PokemonStatsAttributesProto.Builder, POGOProtos.Rpc.PokemonStatsAttributesProtoOrBuilder>(
-                getField1(),
+                getStats(),
                 getParentForChildren(),
                 isClean());
-        field1_ = null;
+        stats_ = null;
       }
-      return field1Builder_;
+      return statsBuilder_;
     }
 
-    private float field2_ ;
+    private float pokedexHeightM_ ;
     /**
-     * <code>float field2 = 3;</code>
-     * @return The field2.
+     * <code>float pokedex_height_m = 3;</code>
+     * @return The pokedexHeightM.
      */
     @java.lang.Override
-    public float getField2() {
-      return field2_;
+    public float getPokedexHeightM() {
+      return pokedexHeightM_;
     }
     /**
-     * <code>float field2 = 3;</code>
-     * @param value The field2 to set.
+     * <code>float pokedex_height_m = 3;</code>
+     * @param value The pokedexHeightM to set.
      * @return This builder for chaining.
      */
-    public Builder setField2(float value) {
+    public Builder setPokedexHeightM(float value) {
       
-      field2_ = value;
+      pokedexHeightM_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float field2 = 3;</code>
+     * <code>float pokedex_height_m = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField2() {
+    public Builder clearPokedexHeightM() {
       
-      field2_ = 0F;
-      onChanged();
-      return this;
-    }
-
-    private float field3_ ;
-    /**
-     * <code>float field3 = 4;</code>
-     * @return The field3.
-     */
-    @java.lang.Override
-    public float getField3() {
-      return field3_;
-    }
-    /**
-     * <code>float field3 = 4;</code>
-     * @param value The field3 to set.
-     * @return This builder for chaining.
-     */
-    public Builder setField3(float value) {
-      
-      field3_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>float field3 = 4;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearField3() {
-      
-      field3_ = 0F;
+      pokedexHeightM_ = 0F;
       onChanged();
       return this;
     }
 
-    private int field4_ = 0;
+    private float pokedexWeightK_ ;
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonType field4 = 5;</code>
-     * @return The enum numeric value on the wire for field4.
+     * <code>float pokedex_weight_k = 4;</code>
+     * @return The pokedexWeightK.
      */
-    @java.lang.Override public int getField4Value() {
-      return field4_;
+    @java.lang.Override
+    public float getPokedexWeightK() {
+      return pokedexWeightK_;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonType field4 = 5;</code>
-     * @param value The enum numeric value on the wire for field4 to set.
+     * <code>float pokedex_weight_k = 4;</code>
+     * @param value The pokedexWeightK to set.
      * @return This builder for chaining.
      */
-    public Builder setField4Value(int value) {
+    public Builder setPokedexWeightK(float value) {
       
-      field4_ = value;
+      pokedexWeightK_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonType field4 = 5;</code>
-     * @return The field4.
+     * <code>float pokedex_weight_k = 4;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPokedexWeightK() {
+      
+      pokedexWeightK_ = 0F;
+      onChanged();
+      return this;
+    }
+
+    private int type1_ = 0;
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonType type_1 = 5;</code>
+     * @return The enum numeric value on the wire for type1.
+     */
+    @java.lang.Override public int getType1Value() {
+      return type1_;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonType type_1 = 5;</code>
+     * @param value The enum numeric value on the wire for type1 to set.
+     * @return This builder for chaining.
+     */
+    public Builder setType1Value(int value) {
+      
+      type1_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonType type_1 = 5;</code>
+     * @return The type1.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.HoloPokemonType getField4() {
+    public POGOProtos.Rpc.HoloPokemonType getType1() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.HoloPokemonType result = POGOProtos.Rpc.HoloPokemonType.valueOf(field4_);
+      POGOProtos.Rpc.HoloPokemonType result = POGOProtos.Rpc.HoloPokemonType.valueOf(type1_);
       return result == null ? POGOProtos.Rpc.HoloPokemonType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonType field4 = 5;</code>
-     * @param value The field4 to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonType type_1 = 5;</code>
+     * @param value The type1 to set.
      * @return This builder for chaining.
      */
-    public Builder setField4(POGOProtos.Rpc.HoloPokemonType value) {
+    public Builder setType1(POGOProtos.Rpc.HoloPokemonType value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      field4_ = value.getNumber();
+      type1_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonType field4 = 5;</code>
+     * <code>.POGOProtos.Rpc.HoloPokemonType type_1 = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField4() {
+    public Builder clearType1() {
       
-      field4_ = 0;
+      type1_ = 0;
       onChanged();
       return this;
     }
 
-    private int field5_ = 0;
+    private int type2_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonType field5 = 6;</code>
-     * @return The enum numeric value on the wire for field5.
+     * <code>.POGOProtos.Rpc.HoloPokemonType type_2 = 6;</code>
+     * @return The enum numeric value on the wire for type2.
      */
-    @java.lang.Override public int getField5Value() {
-      return field5_;
+    @java.lang.Override public int getType2Value() {
+      return type2_;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonType field5 = 6;</code>
-     * @param value The enum numeric value on the wire for field5 to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonType type_2 = 6;</code>
+     * @param value The enum numeric value on the wire for type2 to set.
      * @return This builder for chaining.
      */
-    public Builder setField5Value(int value) {
+    public Builder setType2Value(int value) {
       
-      field5_ = value;
+      type2_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonType field5 = 6;</code>
-     * @return The field5.
+     * <code>.POGOProtos.Rpc.HoloPokemonType type_2 = 6;</code>
+     * @return The type2.
      */
     @java.lang.Override
-    public POGOProtos.Rpc.HoloPokemonType getField5() {
+    public POGOProtos.Rpc.HoloPokemonType getType2() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.HoloPokemonType result = POGOProtos.Rpc.HoloPokemonType.valueOf(field5_);
+      POGOProtos.Rpc.HoloPokemonType result = POGOProtos.Rpc.HoloPokemonType.valueOf(type2_);
       return result == null ? POGOProtos.Rpc.HoloPokemonType.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonType field5 = 6;</code>
-     * @param value The field5 to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonType type_2 = 6;</code>
+     * @param value The type2 to set.
      * @return This builder for chaining.
      */
-    public Builder setField5(POGOProtos.Rpc.HoloPokemonType value) {
+    public Builder setType2(POGOProtos.Rpc.HoloPokemonType value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      field5_ = value.getNumber();
+      type2_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.HoloPokemonType field5 = 6;</code>
+     * <code>.POGOProtos.Rpc.HoloPokemonType type_2 = 6;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField5() {
+    public Builder clearType2() {
       
-      field5_ = 0;
+      type2_ = 0;
       onChanged();
       return this;
     }
 
-    private float field6_ ;
+    private float buddyScale_ ;
     /**
-     * <code>float field6 = 7;</code>
-     * @return The field6.
+     * <code>float buddy_scale = 7;</code>
+     * @return The buddyScale.
      */
     @java.lang.Override
-    public float getField6() {
-      return field6_;
+    public float getBuddyScale() {
+      return buddyScale_;
     }
     /**
-     * <code>float field6 = 7;</code>
-     * @param value The field6 to set.
+     * <code>float buddy_scale = 7;</code>
+     * @param value The buddyScale to set.
      * @return This builder for chaining.
      */
-    public Builder setField6(float value) {
+    public Builder setBuddyScale(float value) {
       
-      field6_ = value;
+      buddyScale_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float field6 = 7;</code>
+     * <code>float buddy_scale = 7;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField6() {
+    public Builder clearBuddyScale() {
       
-      field6_ = 0F;
+      buddyScale_ = 0F;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.PokemonCameraAttributesProto field7_;
+    private POGOProtos.Rpc.PokemonCameraAttributesProto camera_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonCameraAttributesProto, POGOProtos.Rpc.PokemonCameraAttributesProto.Builder, POGOProtos.Rpc.PokemonCameraAttributesProtoOrBuilder> field7Builder_;
+        POGOProtos.Rpc.PokemonCameraAttributesProto, POGOProtos.Rpc.PokemonCameraAttributesProto.Builder, POGOProtos.Rpc.PokemonCameraAttributesProtoOrBuilder> cameraBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
-     * @return Whether the field7 field is set.
+     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
+     * @return Whether the camera field is set.
      */
-    public boolean hasField7() {
-      return field7Builder_ != null || field7_ != null;
+    public boolean hasCamera() {
+      return cameraBuilder_ != null || camera_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
-     * @return The field7.
+     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
+     * @return The camera.
      */
-    public POGOProtos.Rpc.PokemonCameraAttributesProto getField7() {
-      if (field7Builder_ == null) {
-        return field7_ == null ? POGOProtos.Rpc.PokemonCameraAttributesProto.getDefaultInstance() : field7_;
+    public POGOProtos.Rpc.PokemonCameraAttributesProto getCamera() {
+      if (cameraBuilder_ == null) {
+        return camera_ == null ? POGOProtos.Rpc.PokemonCameraAttributesProto.getDefaultInstance() : camera_;
       } else {
-        return field7Builder_.getMessage();
+        return cameraBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
+     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
      */
-    public Builder setField7(POGOProtos.Rpc.PokemonCameraAttributesProto value) {
-      if (field7Builder_ == null) {
+    public Builder setCamera(POGOProtos.Rpc.PokemonCameraAttributesProto value) {
+      if (cameraBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        field7_ = value;
+        camera_ = value;
         onChanged();
       } else {
-        field7Builder_.setMessage(value);
+        cameraBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
+     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
      */
-    public Builder setField7(
+    public Builder setCamera(
         POGOProtos.Rpc.PokemonCameraAttributesProto.Builder builderForValue) {
-      if (field7Builder_ == null) {
-        field7_ = builderForValue.build();
+      if (cameraBuilder_ == null) {
+        camera_ = builderForValue.build();
         onChanged();
       } else {
-        field7Builder_.setMessage(builderForValue.build());
+        cameraBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
+     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
      */
-    public Builder mergeField7(POGOProtos.Rpc.PokemonCameraAttributesProto value) {
-      if (field7Builder_ == null) {
-        if (field7_ != null) {
-          field7_ =
-            POGOProtos.Rpc.PokemonCameraAttributesProto.newBuilder(field7_).mergeFrom(value).buildPartial();
+    public Builder mergeCamera(POGOProtos.Rpc.PokemonCameraAttributesProto value) {
+      if (cameraBuilder_ == null) {
+        if (camera_ != null) {
+          camera_ =
+            POGOProtos.Rpc.PokemonCameraAttributesProto.newBuilder(camera_).mergeFrom(value).buildPartial();
         } else {
-          field7_ = value;
+          camera_ = value;
         }
         onChanged();
       } else {
-        field7Builder_.mergeFrom(value);
+        cameraBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
+     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
      */
-    public Builder clearField7() {
-      if (field7Builder_ == null) {
-        field7_ = null;
+    public Builder clearCamera() {
+      if (cameraBuilder_ == null) {
+        camera_ = null;
         onChanged();
       } else {
-        field7_ = null;
-        field7Builder_ = null;
+        camera_ = null;
+        cameraBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
+     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
      */
-    public POGOProtos.Rpc.PokemonCameraAttributesProto.Builder getField7Builder() {
+    public POGOProtos.Rpc.PokemonCameraAttributesProto.Builder getCameraBuilder() {
       
       onChanged();
-      return getField7FieldBuilder().getBuilder();
+      return getCameraFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
+     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
      */
-    public POGOProtos.Rpc.PokemonCameraAttributesProtoOrBuilder getField7OrBuilder() {
-      if (field7Builder_ != null) {
-        return field7Builder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.PokemonCameraAttributesProtoOrBuilder getCameraOrBuilder() {
+      if (cameraBuilder_ != null) {
+        return cameraBuilder_.getMessageOrBuilder();
       } else {
-        return field7_ == null ?
-            POGOProtos.Rpc.PokemonCameraAttributesProto.getDefaultInstance() : field7_;
+        return camera_ == null ?
+            POGOProtos.Rpc.PokemonCameraAttributesProto.getDefaultInstance() : camera_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
+     * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PokemonCameraAttributesProto, POGOProtos.Rpc.PokemonCameraAttributesProto.Builder, POGOProtos.Rpc.PokemonCameraAttributesProtoOrBuilder> 
-        getField7FieldBuilder() {
-      if (field7Builder_ == null) {
-        field7Builder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getCameraFieldBuilder() {
+      if (cameraBuilder_ == null) {
+        cameraBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PokemonCameraAttributesProto, POGOProtos.Rpc.PokemonCameraAttributesProto.Builder, POGOProtos.Rpc.PokemonCameraAttributesProtoOrBuilder>(
-                getField7(),
+                getCamera(),
                 getParentForChildren(),
                 isClean());
-        field7_ = null;
+        camera_ = null;
       }
-      return field7Builder_;
+      return cameraBuilder_;
     }
 
-    private POGOProtos.Rpc.PokemonEncounterAttributesProto field8_;
+    private POGOProtos.Rpc.PokemonEncounterAttributesProto encounter_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonEncounterAttributesProto, POGOProtos.Rpc.PokemonEncounterAttributesProto.Builder, POGOProtos.Rpc.PokemonEncounterAttributesProtoOrBuilder> field8Builder_;
+        POGOProtos.Rpc.PokemonEncounterAttributesProto, POGOProtos.Rpc.PokemonEncounterAttributesProto.Builder, POGOProtos.Rpc.PokemonEncounterAttributesProtoOrBuilder> encounterBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
-     * @return Whether the field8 field is set.
+     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
+     * @return Whether the encounter field is set.
      */
-    public boolean hasField8() {
-      return field8Builder_ != null || field8_ != null;
+    public boolean hasEncounter() {
+      return encounterBuilder_ != null || encounter_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
-     * @return The field8.
+     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
+     * @return The encounter.
      */
-    public POGOProtos.Rpc.PokemonEncounterAttributesProto getField8() {
-      if (field8Builder_ == null) {
-        return field8_ == null ? POGOProtos.Rpc.PokemonEncounterAttributesProto.getDefaultInstance() : field8_;
+    public POGOProtos.Rpc.PokemonEncounterAttributesProto getEncounter() {
+      if (encounterBuilder_ == null) {
+        return encounter_ == null ? POGOProtos.Rpc.PokemonEncounterAttributesProto.getDefaultInstance() : encounter_;
       } else {
-        return field8Builder_.getMessage();
+        return encounterBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
+     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
      */
-    public Builder setField8(POGOProtos.Rpc.PokemonEncounterAttributesProto value) {
-      if (field8Builder_ == null) {
+    public Builder setEncounter(POGOProtos.Rpc.PokemonEncounterAttributesProto value) {
+      if (encounterBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        field8_ = value;
+        encounter_ = value;
         onChanged();
       } else {
-        field8Builder_.setMessage(value);
+        encounterBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
+     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
      */
-    public Builder setField8(
+    public Builder setEncounter(
         POGOProtos.Rpc.PokemonEncounterAttributesProto.Builder builderForValue) {
-      if (field8Builder_ == null) {
-        field8_ = builderForValue.build();
+      if (encounterBuilder_ == null) {
+        encounter_ = builderForValue.build();
         onChanged();
       } else {
-        field8Builder_.setMessage(builderForValue.build());
+        encounterBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
+     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
      */
-    public Builder mergeField8(POGOProtos.Rpc.PokemonEncounterAttributesProto value) {
-      if (field8Builder_ == null) {
-        if (field8_ != null) {
-          field8_ =
-            POGOProtos.Rpc.PokemonEncounterAttributesProto.newBuilder(field8_).mergeFrom(value).buildPartial();
+    public Builder mergeEncounter(POGOProtos.Rpc.PokemonEncounterAttributesProto value) {
+      if (encounterBuilder_ == null) {
+        if (encounter_ != null) {
+          encounter_ =
+            POGOProtos.Rpc.PokemonEncounterAttributesProto.newBuilder(encounter_).mergeFrom(value).buildPartial();
         } else {
-          field8_ = value;
+          encounter_ = value;
         }
         onChanged();
       } else {
-        field8Builder_.mergeFrom(value);
+        encounterBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
+     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
      */
-    public Builder clearField8() {
-      if (field8Builder_ == null) {
-        field8_ = null;
+    public Builder clearEncounter() {
+      if (encounterBuilder_ == null) {
+        encounter_ = null;
         onChanged();
       } else {
-        field8_ = null;
-        field8Builder_ = null;
+        encounter_ = null;
+        encounterBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
+     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
      */
-    public POGOProtos.Rpc.PokemonEncounterAttributesProto.Builder getField8Builder() {
+    public POGOProtos.Rpc.PokemonEncounterAttributesProto.Builder getEncounterBuilder() {
       
       onChanged();
-      return getField8FieldBuilder().getBuilder();
+      return getEncounterFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
+     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
      */
-    public POGOProtos.Rpc.PokemonEncounterAttributesProtoOrBuilder getField8OrBuilder() {
-      if (field8Builder_ != null) {
-        return field8Builder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.PokemonEncounterAttributesProtoOrBuilder getEncounterOrBuilder() {
+      if (encounterBuilder_ != null) {
+        return encounterBuilder_.getMessageOrBuilder();
       } else {
-        return field8_ == null ?
-            POGOProtos.Rpc.PokemonEncounterAttributesProto.getDefaultInstance() : field8_;
+        return encounter_ == null ?
+            POGOProtos.Rpc.PokemonEncounterAttributesProto.getDefaultInstance() : encounter_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
+     * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         POGOProtos.Rpc.PokemonEncounterAttributesProto, POGOProtos.Rpc.PokemonEncounterAttributesProto.Builder, POGOProtos.Rpc.PokemonEncounterAttributesProtoOrBuilder> 
-        getField8FieldBuilder() {
-      if (field8Builder_ == null) {
-        field8Builder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getEncounterFieldBuilder() {
+      if (encounterBuilder_ == null) {
+        encounterBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.PokemonEncounterAttributesProto, POGOProtos.Rpc.PokemonEncounterAttributesProto.Builder, POGOProtos.Rpc.PokemonEncounterAttributesProtoOrBuilder>(
-                getField8(),
+                getEncounter(),
                 getParentForChildren(),
                 isClean());
-        field8_ = null;
+        encounter_ = null;
       }
-      return field8Builder_;
+      return encounterBuilder_;
     }
 
-    private float field9_ ;
+    private float modelScaleV2_ ;
     /**
-     * <code>float field9 = 10;</code>
-     * @return The field9.
+     * <code>float model_scale_v2 = 10;</code>
+     * @return The modelScaleV2.
      */
     @java.lang.Override
-    public float getField9() {
-      return field9_;
+    public float getModelScaleV2() {
+      return modelScaleV2_;
     }
     /**
-     * <code>float field9 = 10;</code>
-     * @param value The field9 to set.
+     * <code>float model_scale_v2 = 10;</code>
+     * @param value The modelScaleV2 to set.
      * @return This builder for chaining.
      */
-    public Builder setField9(float value) {
+    public Builder setModelScaleV2(float value) {
       
-      field9_ = value;
+      modelScaleV2_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float field9 = 10;</code>
+     * <code>float model_scale_v2 = 10;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField9() {
+    public Builder clearModelScaleV2() {
       
-      field9_ = 0F;
+      modelScaleV2_ = 0F;
       onChanged();
       return this;
     }
 
-    private float field10_ ;
+    private float modelHeigh_ ;
     /**
-     * <code>float field10 = 11;</code>
-     * @return The field10.
+     * <code>float model_heigh = 11;</code>
+     * @return The modelHeigh.
      */
     @java.lang.Override
-    public float getField10() {
-      return field10_;
+    public float getModelHeigh() {
+      return modelHeigh_;
     }
     /**
-     * <code>float field10 = 11;</code>
-     * @param value The field10 to set.
+     * <code>float model_heigh = 11;</code>
+     * @param value The modelHeigh to set.
      * @return This builder for chaining.
      */
-    public Builder setField10(float value) {
+    public Builder setModelHeigh(float value) {
       
-      field10_ = value;
+      modelHeigh_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float field10 = 11;</code>
+     * <code>float model_heigh = 11;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField10() {
+    public Builder clearModelHeigh() {
       
-      field10_ = 0F;
+      modelHeigh_ = 0F;
       onChanged();
       return this;
     }
 
-    private com.google.protobuf.Internal.FloatList field11_ = emptyFloatList();
-    private void ensureField11IsMutable() {
+    private com.google.protobuf.Internal.FloatList buddyOffsetMale_ = emptyFloatList();
+    private void ensureBuddyOffsetMaleIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        field11_ = mutableCopy(field11_);
+        buddyOffsetMale_ = mutableCopy(buddyOffsetMale_);
         bitField0_ |= 0x00000001;
        }
     }
     /**
-     * <code>repeated float field11 = 12;</code>
-     * @return A list containing the field11.
+     * <code>repeated float buddy_offset_male = 12;</code>
+     * @return A list containing the buddyOffsetMale.
      */
     public java.util.List<java.lang.Float>
-        getField11List() {
+        getBuddyOffsetMaleList() {
       return ((bitField0_ & 0x00000001) != 0) ?
-               java.util.Collections.unmodifiableList(field11_) : field11_;
+               java.util.Collections.unmodifiableList(buddyOffsetMale_) : buddyOffsetMale_;
     }
     /**
-     * <code>repeated float field11 = 12;</code>
-     * @return The count of field11.
+     * <code>repeated float buddy_offset_male = 12;</code>
+     * @return The count of buddyOffsetMale.
      */
-    public int getField11Count() {
-      return field11_.size();
+    public int getBuddyOffsetMaleCount() {
+      return buddyOffsetMale_.size();
     }
     /**
-     * <code>repeated float field11 = 12;</code>
+     * <code>repeated float buddy_offset_male = 12;</code>
      * @param index The index of the element to return.
-     * @return The field11 at the given index.
+     * @return The buddyOffsetMale at the given index.
      */
-    public float getField11(int index) {
-      return field11_.getFloat(index);
+    public float getBuddyOffsetMale(int index) {
+      return buddyOffsetMale_.getFloat(index);
     }
     /**
-     * <code>repeated float field11 = 12;</code>
+     * <code>repeated float buddy_offset_male = 12;</code>
      * @param index The index to set the value at.
-     * @param value The field11 to set.
+     * @param value The buddyOffsetMale to set.
      * @return This builder for chaining.
      */
-    public Builder setField11(
+    public Builder setBuddyOffsetMale(
         int index, float value) {
-      ensureField11IsMutable();
-      field11_.setFloat(index, value);
+      ensureBuddyOffsetMaleIsMutable();
+      buddyOffsetMale_.setFloat(index, value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float field11 = 12;</code>
-     * @param value The field11 to add.
+     * <code>repeated float buddy_offset_male = 12;</code>
+     * @param value The buddyOffsetMale to add.
      * @return This builder for chaining.
      */
-    public Builder addField11(float value) {
-      ensureField11IsMutable();
-      field11_.addFloat(value);
+    public Builder addBuddyOffsetMale(float value) {
+      ensureBuddyOffsetMaleIsMutable();
+      buddyOffsetMale_.addFloat(value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float field11 = 12;</code>
-     * @param values The field11 to add.
+     * <code>repeated float buddy_offset_male = 12;</code>
+     * @param values The buddyOffsetMale to add.
      * @return This builder for chaining.
      */
-    public Builder addAllField11(
+    public Builder addAllBuddyOffsetMale(
         java.lang.Iterable<? extends java.lang.Float> values) {
-      ensureField11IsMutable();
+      ensureBuddyOffsetMaleIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-          values, field11_);
+          values, buddyOffsetMale_);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float field11 = 12;</code>
+     * <code>repeated float buddy_offset_male = 12;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField11() {
-      field11_ = emptyFloatList();
+    public Builder clearBuddyOffsetMale() {
+      buddyOffsetMale_ = emptyFloatList();
       bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
 
-    private com.google.protobuf.Internal.FloatList field12_ = emptyFloatList();
-    private void ensureField12IsMutable() {
+    private com.google.protobuf.Internal.FloatList buddyOffsetFemale_ = emptyFloatList();
+    private void ensureBuddyOffsetFemaleIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        field12_ = mutableCopy(field12_);
+        buddyOffsetFemale_ = mutableCopy(buddyOffsetFemale_);
         bitField0_ |= 0x00000002;
        }
     }
     /**
-     * <code>repeated float field12 = 13;</code>
-     * @return A list containing the field12.
+     * <code>repeated float buddy_offset_female = 13;</code>
+     * @return A list containing the buddyOffsetFemale.
      */
     public java.util.List<java.lang.Float>
-        getField12List() {
+        getBuddyOffsetFemaleList() {
       return ((bitField0_ & 0x00000002) != 0) ?
-               java.util.Collections.unmodifiableList(field12_) : field12_;
+               java.util.Collections.unmodifiableList(buddyOffsetFemale_) : buddyOffsetFemale_;
     }
     /**
-     * <code>repeated float field12 = 13;</code>
-     * @return The count of field12.
+     * <code>repeated float buddy_offset_female = 13;</code>
+     * @return The count of buddyOffsetFemale.
      */
-    public int getField12Count() {
-      return field12_.size();
+    public int getBuddyOffsetFemaleCount() {
+      return buddyOffsetFemale_.size();
     }
     /**
-     * <code>repeated float field12 = 13;</code>
+     * <code>repeated float buddy_offset_female = 13;</code>
      * @param index The index of the element to return.
-     * @return The field12 at the given index.
+     * @return The buddyOffsetFemale at the given index.
      */
-    public float getField12(int index) {
-      return field12_.getFloat(index);
+    public float getBuddyOffsetFemale(int index) {
+      return buddyOffsetFemale_.getFloat(index);
     }
     /**
-     * <code>repeated float field12 = 13;</code>
+     * <code>repeated float buddy_offset_female = 13;</code>
      * @param index The index to set the value at.
-     * @param value The field12 to set.
+     * @param value The buddyOffsetFemale to set.
      * @return This builder for chaining.
      */
-    public Builder setField12(
+    public Builder setBuddyOffsetFemale(
         int index, float value) {
-      ensureField12IsMutable();
-      field12_.setFloat(index, value);
+      ensureBuddyOffsetFemaleIsMutable();
+      buddyOffsetFemale_.setFloat(index, value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float field12 = 13;</code>
-     * @param value The field12 to add.
+     * <code>repeated float buddy_offset_female = 13;</code>
+     * @param value The buddyOffsetFemale to add.
      * @return This builder for chaining.
      */
-    public Builder addField12(float value) {
-      ensureField12IsMutable();
-      field12_.addFloat(value);
+    public Builder addBuddyOffsetFemale(float value) {
+      ensureBuddyOffsetFemaleIsMutable();
+      buddyOffsetFemale_.addFloat(value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float field12 = 13;</code>
-     * @param values The field12 to add.
+     * <code>repeated float buddy_offset_female = 13;</code>
+     * @param values The buddyOffsetFemale to add.
      * @return This builder for chaining.
      */
-    public Builder addAllField12(
+    public Builder addAllBuddyOffsetFemale(
         java.lang.Iterable<? extends java.lang.Float> values) {
-      ensureField12IsMutable();
+      ensureBuddyOffsetFemaleIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-          values, field12_);
+          values, buddyOffsetFemale_);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float field12 = 13;</code>
+     * <code>repeated float buddy_offset_female = 13;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField12() {
-      field12_ = emptyFloatList();
+    public Builder clearBuddyOffsetFemale() {
+      buddyOffsetFemale_ = emptyFloatList();
       bitField0_ = (bitField0_ & ~0x00000002);
       onChanged();
       return this;
     }
 
-    private com.google.protobuf.Internal.FloatList field13_ = emptyFloatList();
-    private void ensureField13IsMutable() {
+    private com.google.protobuf.Internal.FloatList buddyPortraitOffset_ = emptyFloatList();
+    private void ensureBuddyPortraitOffsetIsMutable() {
       if (!((bitField0_ & 0x00000004) != 0)) {
-        field13_ = mutableCopy(field13_);
+        buddyPortraitOffset_ = mutableCopy(buddyPortraitOffset_);
         bitField0_ |= 0x00000004;
        }
     }
     /**
-     * <code>repeated float field13 = 14;</code>
-     * @return A list containing the field13.
+     * <code>repeated float buddy_portrait_offset = 14;</code>
+     * @return A list containing the buddyPortraitOffset.
      */
     public java.util.List<java.lang.Float>
-        getField13List() {
+        getBuddyPortraitOffsetList() {
       return ((bitField0_ & 0x00000004) != 0) ?
-               java.util.Collections.unmodifiableList(field13_) : field13_;
+               java.util.Collections.unmodifiableList(buddyPortraitOffset_) : buddyPortraitOffset_;
     }
     /**
-     * <code>repeated float field13 = 14;</code>
-     * @return The count of field13.
+     * <code>repeated float buddy_portrait_offset = 14;</code>
+     * @return The count of buddyPortraitOffset.
      */
-    public int getField13Count() {
-      return field13_.size();
+    public int getBuddyPortraitOffsetCount() {
+      return buddyPortraitOffset_.size();
     }
     /**
-     * <code>repeated float field13 = 14;</code>
+     * <code>repeated float buddy_portrait_offset = 14;</code>
      * @param index The index of the element to return.
-     * @return The field13 at the given index.
+     * @return The buddyPortraitOffset at the given index.
      */
-    public float getField13(int index) {
-      return field13_.getFloat(index);
+    public float getBuddyPortraitOffset(int index) {
+      return buddyPortraitOffset_.getFloat(index);
     }
     /**
-     * <code>repeated float field13 = 14;</code>
+     * <code>repeated float buddy_portrait_offset = 14;</code>
      * @param index The index to set the value at.
-     * @param value The field13 to set.
+     * @param value The buddyPortraitOffset to set.
      * @return This builder for chaining.
      */
-    public Builder setField13(
+    public Builder setBuddyPortraitOffset(
         int index, float value) {
-      ensureField13IsMutable();
-      field13_.setFloat(index, value);
+      ensureBuddyPortraitOffsetIsMutable();
+      buddyPortraitOffset_.setFloat(index, value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float field13 = 14;</code>
-     * @param value The field13 to add.
+     * <code>repeated float buddy_portrait_offset = 14;</code>
+     * @param value The buddyPortraitOffset to add.
      * @return This builder for chaining.
      */
-    public Builder addField13(float value) {
-      ensureField13IsMutable();
-      field13_.addFloat(value);
+    public Builder addBuddyPortraitOffset(float value) {
+      ensureBuddyPortraitOffsetIsMutable();
+      buddyPortraitOffset_.addFloat(value);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float field13 = 14;</code>
-     * @param values The field13 to add.
+     * <code>repeated float buddy_portrait_offset = 14;</code>
+     * @param values The buddyPortraitOffset to add.
      * @return This builder for chaining.
      */
-    public Builder addAllField13(
+    public Builder addAllBuddyPortraitOffset(
         java.lang.Iterable<? extends java.lang.Float> values) {
-      ensureField13IsMutable();
+      ensureBuddyPortraitOffsetIsMutable();
       com.google.protobuf.AbstractMessageLite.Builder.addAll(
-          values, field13_);
+          values, buddyPortraitOffset_);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated float field13 = 14;</code>
+     * <code>repeated float buddy_portrait_offset = 14;</code>
      * @return This builder for chaining.
      */
-    public Builder clearField13() {
-      field13_ = emptyFloatList();
+    public Builder clearBuddyPortraitOffset() {
+      buddyPortraitOffset_ = emptyFloatList();
       bitField0_ = (bitField0_ & ~0x00000004);
       onChanged();
       return this;

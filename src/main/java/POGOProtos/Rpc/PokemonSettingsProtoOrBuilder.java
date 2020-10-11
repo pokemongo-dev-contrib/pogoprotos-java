@@ -652,26 +652,26 @@ public interface PokemonSettingsProtoOrBuilder extends
   int getEliteCinematicMoveValue(int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
    */
   java.util.List<POGOProtos.Rpc.MegaEvolutionAttributes> 
-      getTemporaryEvolutionList();
+      getTemporaryEvolutionsList();
   /**
-   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
    */
-  POGOProtos.Rpc.MegaEvolutionAttributes getTemporaryEvolution(int index);
+  POGOProtos.Rpc.MegaEvolutionAttributes getTemporaryEvolutions(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
    */
-  int getTemporaryEvolutionCount();
+  int getTemporaryEvolutionsCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder> 
-      getTemporaryEvolutionOrBuilderList();
+      getTemporaryEvolutionsOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
    */
-  POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder getTemporaryEvolutionOrBuilder(
+  POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder getTemporaryEvolutionsOrBuilder(
       int index);
 }

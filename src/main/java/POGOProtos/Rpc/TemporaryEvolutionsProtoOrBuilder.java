@@ -3,8 +3,8 @@
 
 package POGOProtos.Rpc;
 
-public interface MegaEvosField1OrBuilder extends
-    // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.MegaEvosField1)
+public interface TemporaryEvolutionsProtoOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:POGOProtos.Rpc.TemporaryEvolutionsProto)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -19,20 +19,20 @@ public interface MegaEvosField1OrBuilder extends
   POGOProtos.Rpc.HoloTemporaryEvolutionId getTemporaryEvolutionId();
 
   /**
-   * <code>int32 field1 = 2;</code>
-   * @return The field1.
+   * <code>int32 asset_bunble_value = 2;</code>
+   * @return The assetBunbleValue.
    */
-  int getField1();
+  int getAssetBunbleValue();
 
   /**
-   * <code>string field2 = 3;</code>
-   * @return The field2.
+   * <code>string asset_bunble_name = 3;</code>
+   * @return The assetBunbleName.
    */
-  java.lang.String getField2();
+  java.lang.String getAssetBunbleName();
   /**
-   * <code>string field2 = 3;</code>
-   * @return The bytes for field2.
+   * <code>string asset_bunble_name = 3;</code>
+   * @return The bytes for assetBunbleName.
    */
   com.google.protobuf.ByteString
-      getField2Bytes();
+      getAssetBunbleNameBytes();
 }

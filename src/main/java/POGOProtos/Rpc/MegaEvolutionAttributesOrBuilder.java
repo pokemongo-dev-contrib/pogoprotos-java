@@ -19,150 +19,150 @@ public interface MegaEvolutionAttributesOrBuilder extends
   POGOProtos.Rpc.HoloTemporaryEvolutionId getTemporaryEvolutionId();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
-   * @return Whether the field1 field is set.
+   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
+   * @return Whether the stats field is set.
    */
-  boolean hasField1();
+  boolean hasStats();
   /**
-   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
-   * @return The field1.
+   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
+   * @return The stats.
    */
-  POGOProtos.Rpc.PokemonStatsAttributesProto getField1();
+  POGOProtos.Rpc.PokemonStatsAttributesProto getStats();
   /**
-   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto field1 = 2;</code>
+   * <code>.POGOProtos.Rpc.PokemonStatsAttributesProto stats = 2;</code>
    */
-  POGOProtos.Rpc.PokemonStatsAttributesProtoOrBuilder getField1OrBuilder();
+  POGOProtos.Rpc.PokemonStatsAttributesProtoOrBuilder getStatsOrBuilder();
 
   /**
-   * <code>float field2 = 3;</code>
-   * @return The field2.
+   * <code>float pokedex_height_m = 3;</code>
+   * @return The pokedexHeightM.
    */
-  float getField2();
+  float getPokedexHeightM();
 
   /**
-   * <code>float field3 = 4;</code>
-   * @return The field3.
+   * <code>float pokedex_weight_k = 4;</code>
+   * @return The pokedexWeightK.
    */
-  float getField3();
+  float getPokedexWeightK();
 
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonType field4 = 5;</code>
-   * @return The enum numeric value on the wire for field4.
+   * <code>.POGOProtos.Rpc.HoloPokemonType type_1 = 5;</code>
+   * @return The enum numeric value on the wire for type1.
    */
-  int getField4Value();
+  int getType1Value();
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonType field4 = 5;</code>
-   * @return The field4.
+   * <code>.POGOProtos.Rpc.HoloPokemonType type_1 = 5;</code>
+   * @return The type1.
    */
-  POGOProtos.Rpc.HoloPokemonType getField4();
+  POGOProtos.Rpc.HoloPokemonType getType1();
 
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonType field5 = 6;</code>
-   * @return The enum numeric value on the wire for field5.
+   * <code>.POGOProtos.Rpc.HoloPokemonType type_2 = 6;</code>
+   * @return The enum numeric value on the wire for type2.
    */
-  int getField5Value();
+  int getType2Value();
   /**
-   * <code>.POGOProtos.Rpc.HoloPokemonType field5 = 6;</code>
-   * @return The field5.
+   * <code>.POGOProtos.Rpc.HoloPokemonType type_2 = 6;</code>
+   * @return The type2.
    */
-  POGOProtos.Rpc.HoloPokemonType getField5();
+  POGOProtos.Rpc.HoloPokemonType getType2();
 
   /**
-   * <code>float field6 = 7;</code>
-   * @return The field6.
+   * <code>float buddy_scale = 7;</code>
+   * @return The buddyScale.
    */
-  float getField6();
+  float getBuddyScale();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
-   * @return Whether the field7 field is set.
+   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
+   * @return Whether the camera field is set.
    */
-  boolean hasField7();
+  boolean hasCamera();
   /**
-   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
-   * @return The field7.
+   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
+   * @return The camera.
    */
-  POGOProtos.Rpc.PokemonCameraAttributesProto getField7();
+  POGOProtos.Rpc.PokemonCameraAttributesProto getCamera();
   /**
-   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto field7 = 8;</code>
+   * <code>.POGOProtos.Rpc.PokemonCameraAttributesProto camera = 8;</code>
    */
-  POGOProtos.Rpc.PokemonCameraAttributesProtoOrBuilder getField7OrBuilder();
+  POGOProtos.Rpc.PokemonCameraAttributesProtoOrBuilder getCameraOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
-   * @return Whether the field8 field is set.
+   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
+   * @return Whether the encounter field is set.
    */
-  boolean hasField8();
+  boolean hasEncounter();
   /**
-   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
-   * @return The field8.
+   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
+   * @return The encounter.
    */
-  POGOProtos.Rpc.PokemonEncounterAttributesProto getField8();
+  POGOProtos.Rpc.PokemonEncounterAttributesProto getEncounter();
   /**
-   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto field8 = 9;</code>
+   * <code>.POGOProtos.Rpc.PokemonEncounterAttributesProto encounter = 9;</code>
    */
-  POGOProtos.Rpc.PokemonEncounterAttributesProtoOrBuilder getField8OrBuilder();
+  POGOProtos.Rpc.PokemonEncounterAttributesProtoOrBuilder getEncounterOrBuilder();
 
   /**
-   * <code>float field9 = 10;</code>
-   * @return The field9.
+   * <code>float model_scale_v2 = 10;</code>
+   * @return The modelScaleV2.
    */
-  float getField9();
+  float getModelScaleV2();
 
   /**
-   * <code>float field10 = 11;</code>
-   * @return The field10.
+   * <code>float model_heigh = 11;</code>
+   * @return The modelHeigh.
    */
-  float getField10();
+  float getModelHeigh();
 
   /**
-   * <code>repeated float field11 = 12;</code>
-   * @return A list containing the field11.
+   * <code>repeated float buddy_offset_male = 12;</code>
+   * @return A list containing the buddyOffsetMale.
    */
-  java.util.List<java.lang.Float> getField11List();
+  java.util.List<java.lang.Float> getBuddyOffsetMaleList();
   /**
-   * <code>repeated float field11 = 12;</code>
-   * @return The count of field11.
+   * <code>repeated float buddy_offset_male = 12;</code>
+   * @return The count of buddyOffsetMale.
    */
-  int getField11Count();
+  int getBuddyOffsetMaleCount();
   /**
-   * <code>repeated float field11 = 12;</code>
+   * <code>repeated float buddy_offset_male = 12;</code>
    * @param index The index of the element to return.
-   * @return The field11 at the given index.
+   * @return The buddyOffsetMale at the given index.
    */
-  float getField11(int index);
+  float getBuddyOffsetMale(int index);
 
   /**
-   * <code>repeated float field12 = 13;</code>
-   * @return A list containing the field12.
+   * <code>repeated float buddy_offset_female = 13;</code>
+   * @return A list containing the buddyOffsetFemale.
    */
-  java.util.List<java.lang.Float> getField12List();
+  java.util.List<java.lang.Float> getBuddyOffsetFemaleList();
   /**
-   * <code>repeated float field12 = 13;</code>
-   * @return The count of field12.
+   * <code>repeated float buddy_offset_female = 13;</code>
+   * @return The count of buddyOffsetFemale.
    */
-  int getField12Count();
+  int getBuddyOffsetFemaleCount();
   /**
-   * <code>repeated float field12 = 13;</code>
+   * <code>repeated float buddy_offset_female = 13;</code>
    * @param index The index of the element to return.
-   * @return The field12 at the given index.
+   * @return The buddyOffsetFemale at the given index.
    */
-  float getField12(int index);
+  float getBuddyOffsetFemale(int index);
 
   /**
-   * <code>repeated float field13 = 14;</code>
-   * @return A list containing the field13.
+   * <code>repeated float buddy_portrait_offset = 14;</code>
+   * @return A list containing the buddyPortraitOffset.
    */
-  java.util.List<java.lang.Float> getField13List();
+  java.util.List<java.lang.Float> getBuddyPortraitOffsetList();
   /**
-   * <code>repeated float field13 = 14;</code>
-   * @return The count of field13.
+   * <code>repeated float buddy_portrait_offset = 14;</code>
+   * @return The count of buddyPortraitOffset.
    */
-  int getField13Count();
+  int getBuddyPortraitOffsetCount();
   /**
-   * <code>repeated float field13 = 14;</code>
+   * <code>repeated float buddy_portrait_offset = 14;</code>
    * @param index The index of the element to return.
-   * @return The field13 at the given index.
+   * @return The buddyPortraitOffset at the given index.
    */
-  float getField13(int index);
+  float getBuddyPortraitOffset(int index);
 }

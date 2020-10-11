@@ -8,26 +8,26 @@ public interface MegaEvoSettingsOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int64 ob_mega_evolve_duration_ms = 1;</code>
-   * @return The obMegaEvolveDurationMs.
+   * <code>int64 mega_evolve_duration_ms = 1;</code>
+   * @return The megaEvolveDurationMs.
    */
-  long getObMegaEvolveDurationMs();
+  long getMegaEvolveDurationMs();
 
   /**
-   * <code>float ob_mega_boost = 2;</code>
-   * @return The obMegaBoost.
+   * <code>float mega_boost = 2;</code>
+   * @return The megaBoost.
    */
-  float getObMegaBoost();
+  float getMegaBoost();
 
   /**
-   * <code>float ob_mega_same_type_boost = 3;</code>
-   * @return The obMegaSameTypeBoost.
+   * <code>float mega_same_type_boost = 3;</code>
+   * @return The megaSameTypeBoost.
    */
-  float getObMegaSameTypeBoost();
+  float getMegaSameTypeBoost();
 
   /**
-   * <code>int32 ob_mega_max_candy = 4;</code>
-   * @return The obMegaMaxCandy.
+   * <code>int32 mega_max_candy = 4;</code>
+   * @return The megaMaxCandy.
    */
-  int getObMegaMaxCandy();
+  int getMegaMaxCandy();
 }

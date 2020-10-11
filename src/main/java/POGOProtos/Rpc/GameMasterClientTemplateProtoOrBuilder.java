@@ -1025,19 +1025,19 @@ public interface GameMasterClientTemplateProtoOrBuilder extends
   POGOProtos.Rpc.MegaEvoSettingsOrBuilder getMegaEvoSettingsOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
-   * @return Whether the megaEvo field is set.
+   * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
+   * @return Whether the temporaryEvolutionSettings field is set.
    */
-  boolean hasMegaEvo();
+  boolean hasTemporaryEvolutionSettings();
   /**
-   * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
-   * @return The megaEvo.
+   * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
+   * @return The temporaryEvolutionSettings.
    */
-  POGOProtos.Rpc.GameMasterField1 getMegaEvo();
+  POGOProtos.Rpc.TemporaryEvolutionSettingsProto getTemporaryEvolutionSettings();
   /**
-   * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
+   * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
    */
-  POGOProtos.Rpc.GameMasterField1OrBuilder getMegaEvoOrBuilder();
+  POGOProtos.Rpc.TemporaryEvolutionSettingsProtoOrBuilder getTemporaryEvolutionSettingsOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.AvatarGroupOrderSettingsProto avatar_group_order_settings = 76;</code>

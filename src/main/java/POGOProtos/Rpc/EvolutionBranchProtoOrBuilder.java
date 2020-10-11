@@ -105,49 +105,49 @@ public interface EvolutionBranchProtoOrBuilder extends
   boolean getNoCandyCostViaTrade();
 
   /**
-   * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temporary_evolution_id = 14;</code>
-   * @return The enum numeric value on the wire for temporaryEvolutionId.
+   * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temp_evolution = 14;</code>
+   * @return The enum numeric value on the wire for tempEvolution.
    */
-  int getTemporaryEvolutionIdValue();
+  int getTempEvolutionValue();
   /**
-   * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temporary_evolution_id = 14;</code>
-   * @return The temporaryEvolutionId.
+   * <code>.POGOProtos.Rpc.HoloTemporaryEvolutionId temp_evolution = 14;</code>
+   * @return The tempEvolution.
    */
-  POGOProtos.Rpc.HoloTemporaryEvolutionId getTemporaryEvolutionId();
+  POGOProtos.Rpc.HoloTemporaryEvolutionId getTempEvolution();
 
   /**
-   * <code>int32 field1 = 15;</code>
-   * @return The field1.
+   * <code>int32 first_temp_evolution_candy_cost = 15;</code>
+   * @return The firstTempEvolutionCandyCost.
    */
-  int getField1();
+  int getFirstTempEvolutionCandyCost();
 
   /**
-   * <code>int32 field2 = 16;</code>
-   * @return The field2.
+   * <code>int32 subsequent_temp_evolution_candy_cost = 16;</code>
+   * @return The subsequentTempEvolutionCandyCost.
    */
-  int getField2();
+  int getSubsequentTempEvolutionCandyCost();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
    */
   java.util.List<POGOProtos.Rpc.PokemonField1Sub> 
-      getField3List();
+      getEvoBranchField1List();
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
    */
-  POGOProtos.Rpc.PokemonField1Sub getField3(int index);
+  POGOProtos.Rpc.PokemonField1Sub getEvoBranchField1(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
    */
-  int getField3Count();
+  int getEvoBranchField1Count();
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
    */
   java.util.List<? extends POGOProtos.Rpc.PokemonField1SubOrBuilder> 
-      getField3OrBuilderList();
+      getEvoBranchField1OrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub field3 = 17;</code>
+   * <code>repeated .POGOProtos.Rpc.PokemonField1Sub evo_branch_field1 = 17;</code>
    */
-  POGOProtos.Rpc.PokemonField1SubOrBuilder getField3OrBuilder(
+  POGOProtos.Rpc.PokemonField1SubOrBuilder getEvoBranchField1OrBuilder(
       int index);
 }

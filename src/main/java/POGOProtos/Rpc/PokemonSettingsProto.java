@@ -47,7 +47,7 @@ private static final long serialVersionUID = 0L;
     photobombAnimationOverrides_ = java.util.Collections.emptyList();
     eliteQuickMove_ = java.util.Collections.emptyList();
     eliteCinematicMove_ = java.util.Collections.emptyList();
-    temporaryEvolution_ = java.util.Collections.emptyList();
+    temporaryEvolutions_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -621,10 +621,10 @@ private static final long serialVersionUID = 0L;
           }
           case 410: {
             if (!((mutable_bitField0_ & 0x00010000) != 0)) {
-              temporaryEvolution_ = new java.util.ArrayList<POGOProtos.Rpc.MegaEvolutionAttributes>();
+              temporaryEvolutions_ = new java.util.ArrayList<POGOProtos.Rpc.MegaEvolutionAttributes>();
               mutable_bitField0_ |= 0x00010000;
             }
-            temporaryEvolution_.add(
+            temporaryEvolutions_.add(
                 input.readMessage(POGOProtos.Rpc.MegaEvolutionAttributes.parser(), extensionRegistry));
             break;
           }
@@ -692,7 +692,7 @@ private static final long serialVersionUID = 0L;
         eliteCinematicMove_ = java.util.Collections.unmodifiableList(eliteCinematicMove_);
       }
       if (((mutable_bitField0_ & 0x00010000) != 0)) {
-        temporaryEvolution_ = java.util.Collections.unmodifiableList(temporaryEvolution_);
+        temporaryEvolutions_ = java.util.Collections.unmodifiableList(temporaryEvolutions_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -1998,44 +1998,44 @@ private static final long serialVersionUID = 0L;
   }
   private int eliteCinematicMoveMemoizedSerializedSize;
 
-  public static final int TEMPORARY_EVOLUTION_FIELD_NUMBER = 51;
-  private java.util.List<POGOProtos.Rpc.MegaEvolutionAttributes> temporaryEvolution_;
+  public static final int TEMPORARY_EVOLUTIONS_FIELD_NUMBER = 51;
+  private java.util.List<POGOProtos.Rpc.MegaEvolutionAttributes> temporaryEvolutions_;
   /**
-   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.MegaEvolutionAttributes> getTemporaryEvolutionList() {
-    return temporaryEvolution_;
+  public java.util.List<POGOProtos.Rpc.MegaEvolutionAttributes> getTemporaryEvolutionsList() {
+    return temporaryEvolutions_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
    */
   @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder> 
-      getTemporaryEvolutionOrBuilderList() {
-    return temporaryEvolution_;
+      getTemporaryEvolutionsOrBuilderList() {
+    return temporaryEvolutions_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
    */
   @java.lang.Override
-  public int getTemporaryEvolutionCount() {
-    return temporaryEvolution_.size();
+  public int getTemporaryEvolutionsCount() {
+    return temporaryEvolutions_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.MegaEvolutionAttributes getTemporaryEvolution(int index) {
-    return temporaryEvolution_.get(index);
+  public POGOProtos.Rpc.MegaEvolutionAttributes getTemporaryEvolutions(int index) {
+    return temporaryEvolutions_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+   * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder getTemporaryEvolutionOrBuilder(
+  public POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder getTemporaryEvolutionsOrBuilder(
       int index) {
-    return temporaryEvolution_.get(index);
+    return temporaryEvolutions_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
@@ -2256,8 +2256,8 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < eliteCinematicMove_.size(); i++) {
       output.writeEnumNoTag(eliteCinematicMove_.get(i));
     }
-    for (int i = 0; i < temporaryEvolution_.size(); i++) {
-      output.writeMessage(51, temporaryEvolution_.get(i));
+    for (int i = 0; i < temporaryEvolutions_.size(); i++) {
+      output.writeMessage(51, temporaryEvolutions_.get(i));
     }
     unknownFields.writeTo(output);
   }
@@ -2567,9 +2567,9 @@ private static final long serialVersionUID = 0L;
           .computeUInt32SizeNoTag(dataSize);
       }eliteCinematicMoveMemoizedSerializedSize = dataSize;
     }
-    for (int i = 0; i < temporaryEvolution_.size(); i++) {
+    for (int i = 0; i < temporaryEvolutions_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(51, temporaryEvolution_.get(i));
+        .computeMessageSize(51, temporaryEvolutions_.get(i));
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -2693,8 +2693,8 @@ private static final long serialVersionUID = 0L;
         != other.getAdditionalCpBoostLevel()) return false;
     if (!eliteQuickMove_.equals(other.eliteQuickMove_)) return false;
     if (!eliteCinematicMove_.equals(other.eliteCinematicMove_)) return false;
-    if (!getTemporaryEvolutionList()
-        .equals(other.getTemporaryEvolutionList())) return false;
+    if (!getTemporaryEvolutionsList()
+        .equals(other.getTemporaryEvolutionsList())) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -2859,9 +2859,9 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + ELITE_CINEMATIC_MOVE_FIELD_NUMBER;
       hash = (53 * hash) + eliteCinematicMove_.hashCode();
     }
-    if (getTemporaryEvolutionCount() > 0) {
-      hash = (37 * hash) + TEMPORARY_EVOLUTION_FIELD_NUMBER;
-      hash = (53 * hash) + getTemporaryEvolutionList().hashCode();
+    if (getTemporaryEvolutionsCount() > 0) {
+      hash = (37 * hash) + TEMPORARY_EVOLUTIONS_FIELD_NUMBER;
+      hash = (53 * hash) + getTemporaryEvolutionsList().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -2997,7 +2997,7 @@ private static final long serialVersionUID = 0L;
               .alwaysUseFieldBuilders) {
         getEvolutionBranchFieldBuilder();
         getPhotobombAnimationOverridesFieldBuilder();
-        getTemporaryEvolutionFieldBuilder();
+        getTemporaryEvolutionsFieldBuilder();
       }
     }
     @java.lang.Override
@@ -3129,11 +3129,11 @@ private static final long serialVersionUID = 0L;
       bitField0_ = (bitField0_ & ~0x00004000);
       eliteCinematicMove_ = java.util.Collections.emptyList();
       bitField0_ = (bitField0_ & ~0x00008000);
-      if (temporaryEvolutionBuilder_ == null) {
-        temporaryEvolution_ = java.util.Collections.emptyList();
+      if (temporaryEvolutionsBuilder_ == null) {
+        temporaryEvolutions_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00010000);
       } else {
-        temporaryEvolutionBuilder_.clear();
+        temporaryEvolutionsBuilder_.clear();
       }
       return this;
     }
@@ -3303,14 +3303,14 @@ private static final long serialVersionUID = 0L;
         bitField0_ = (bitField0_ & ~0x00008000);
       }
       result.eliteCinematicMove_ = eliteCinematicMove_;
-      if (temporaryEvolutionBuilder_ == null) {
+      if (temporaryEvolutionsBuilder_ == null) {
         if (((bitField0_ & 0x00010000) != 0)) {
-          temporaryEvolution_ = java.util.Collections.unmodifiableList(temporaryEvolution_);
+          temporaryEvolutions_ = java.util.Collections.unmodifiableList(temporaryEvolutions_);
           bitField0_ = (bitField0_ & ~0x00010000);
         }
-        result.temporaryEvolution_ = temporaryEvolution_;
+        result.temporaryEvolutions_ = temporaryEvolutions_;
       } else {
-        result.temporaryEvolution_ = temporaryEvolutionBuilder_.build();
+        result.temporaryEvolutions_ = temporaryEvolutionsBuilder_.build();
       }
       onBuilt();
       return result;
@@ -3651,29 +3651,29 @@ private static final long serialVersionUID = 0L;
         }
         onChanged();
       }
-      if (temporaryEvolutionBuilder_ == null) {
-        if (!other.temporaryEvolution_.isEmpty()) {
-          if (temporaryEvolution_.isEmpty()) {
-            temporaryEvolution_ = other.temporaryEvolution_;
+      if (temporaryEvolutionsBuilder_ == null) {
+        if (!other.temporaryEvolutions_.isEmpty()) {
+          if (temporaryEvolutions_.isEmpty()) {
+            temporaryEvolutions_ = other.temporaryEvolutions_;
             bitField0_ = (bitField0_ & ~0x00010000);
           } else {
-            ensureTemporaryEvolutionIsMutable();
-            temporaryEvolution_.addAll(other.temporaryEvolution_);
+            ensureTemporaryEvolutionsIsMutable();
+            temporaryEvolutions_.addAll(other.temporaryEvolutions_);
           }
           onChanged();
         }
       } else {
-        if (!other.temporaryEvolution_.isEmpty()) {
-          if (temporaryEvolutionBuilder_.isEmpty()) {
-            temporaryEvolutionBuilder_.dispose();
-            temporaryEvolutionBuilder_ = null;
-            temporaryEvolution_ = other.temporaryEvolution_;
+        if (!other.temporaryEvolutions_.isEmpty()) {
+          if (temporaryEvolutionsBuilder_.isEmpty()) {
+            temporaryEvolutionsBuilder_.dispose();
+            temporaryEvolutionsBuilder_ = null;
+            temporaryEvolutions_ = other.temporaryEvolutions_;
             bitField0_ = (bitField0_ & ~0x00010000);
-            temporaryEvolutionBuilder_ = 
+            temporaryEvolutionsBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getTemporaryEvolutionFieldBuilder() : null;
+                 getTemporaryEvolutionsFieldBuilder() : null;
           } else {
-            temporaryEvolutionBuilder_.addAllMessages(other.temporaryEvolution_);
+            temporaryEvolutionsBuilder_.addAllMessages(other.temporaryEvolutions_);
           }
         }
       }
@@ -7314,244 +7314,244 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.MegaEvolutionAttributes> temporaryEvolution_ =
+    private java.util.List<POGOProtos.Rpc.MegaEvolutionAttributes> temporaryEvolutions_ =
       java.util.Collections.emptyList();
-    private void ensureTemporaryEvolutionIsMutable() {
+    private void ensureTemporaryEvolutionsIsMutable() {
       if (!((bitField0_ & 0x00010000) != 0)) {
-        temporaryEvolution_ = new java.util.ArrayList<POGOProtos.Rpc.MegaEvolutionAttributes>(temporaryEvolution_);
+        temporaryEvolutions_ = new java.util.ArrayList<POGOProtos.Rpc.MegaEvolutionAttributes>(temporaryEvolutions_);
         bitField0_ |= 0x00010000;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.MegaEvolutionAttributes, POGOProtos.Rpc.MegaEvolutionAttributes.Builder, POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder> temporaryEvolutionBuilder_;
+        POGOProtos.Rpc.MegaEvolutionAttributes, POGOProtos.Rpc.MegaEvolutionAttributes.Builder, POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder> temporaryEvolutionsBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public java.util.List<POGOProtos.Rpc.MegaEvolutionAttributes> getTemporaryEvolutionList() {
-      if (temporaryEvolutionBuilder_ == null) {
-        return java.util.Collections.unmodifiableList(temporaryEvolution_);
+    public java.util.List<POGOProtos.Rpc.MegaEvolutionAttributes> getTemporaryEvolutionsList() {
+      if (temporaryEvolutionsBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(temporaryEvolutions_);
       } else {
-        return temporaryEvolutionBuilder_.getMessageList();
+        return temporaryEvolutionsBuilder_.getMessageList();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public int getTemporaryEvolutionCount() {
-      if (temporaryEvolutionBuilder_ == null) {
-        return temporaryEvolution_.size();
+    public int getTemporaryEvolutionsCount() {
+      if (temporaryEvolutionsBuilder_ == null) {
+        return temporaryEvolutions_.size();
       } else {
-        return temporaryEvolutionBuilder_.getCount();
+        return temporaryEvolutionsBuilder_.getCount();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public POGOProtos.Rpc.MegaEvolutionAttributes getTemporaryEvolution(int index) {
-      if (temporaryEvolutionBuilder_ == null) {
-        return temporaryEvolution_.get(index);
+    public POGOProtos.Rpc.MegaEvolutionAttributes getTemporaryEvolutions(int index) {
+      if (temporaryEvolutionsBuilder_ == null) {
+        return temporaryEvolutions_.get(index);
       } else {
-        return temporaryEvolutionBuilder_.getMessage(index);
+        return temporaryEvolutionsBuilder_.getMessage(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public Builder setTemporaryEvolution(
+    public Builder setTemporaryEvolutions(
         int index, POGOProtos.Rpc.MegaEvolutionAttributes value) {
-      if (temporaryEvolutionBuilder_ == null) {
+      if (temporaryEvolutionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureTemporaryEvolutionIsMutable();
-        temporaryEvolution_.set(index, value);
+        ensureTemporaryEvolutionsIsMutable();
+        temporaryEvolutions_.set(index, value);
         onChanged();
       } else {
-        temporaryEvolutionBuilder_.setMessage(index, value);
+        temporaryEvolutionsBuilder_.setMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public Builder setTemporaryEvolution(
+    public Builder setTemporaryEvolutions(
         int index, POGOProtos.Rpc.MegaEvolutionAttributes.Builder builderForValue) {
-      if (temporaryEvolutionBuilder_ == null) {
-        ensureTemporaryEvolutionIsMutable();
-        temporaryEvolution_.set(index, builderForValue.build());
+      if (temporaryEvolutionsBuilder_ == null) {
+        ensureTemporaryEvolutionsIsMutable();
+        temporaryEvolutions_.set(index, builderForValue.build());
         onChanged();
       } else {
-        temporaryEvolutionBuilder_.setMessage(index, builderForValue.build());
+        temporaryEvolutionsBuilder_.setMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public Builder addTemporaryEvolution(POGOProtos.Rpc.MegaEvolutionAttributes value) {
-      if (temporaryEvolutionBuilder_ == null) {
+    public Builder addTemporaryEvolutions(POGOProtos.Rpc.MegaEvolutionAttributes value) {
+      if (temporaryEvolutionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureTemporaryEvolutionIsMutable();
-        temporaryEvolution_.add(value);
+        ensureTemporaryEvolutionsIsMutable();
+        temporaryEvolutions_.add(value);
         onChanged();
       } else {
-        temporaryEvolutionBuilder_.addMessage(value);
+        temporaryEvolutionsBuilder_.addMessage(value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public Builder addTemporaryEvolution(
+    public Builder addTemporaryEvolutions(
         int index, POGOProtos.Rpc.MegaEvolutionAttributes value) {
-      if (temporaryEvolutionBuilder_ == null) {
+      if (temporaryEvolutionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureTemporaryEvolutionIsMutable();
-        temporaryEvolution_.add(index, value);
+        ensureTemporaryEvolutionsIsMutable();
+        temporaryEvolutions_.add(index, value);
         onChanged();
       } else {
-        temporaryEvolutionBuilder_.addMessage(index, value);
+        temporaryEvolutionsBuilder_.addMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public Builder addTemporaryEvolution(
+    public Builder addTemporaryEvolutions(
         POGOProtos.Rpc.MegaEvolutionAttributes.Builder builderForValue) {
-      if (temporaryEvolutionBuilder_ == null) {
-        ensureTemporaryEvolutionIsMutable();
-        temporaryEvolution_.add(builderForValue.build());
+      if (temporaryEvolutionsBuilder_ == null) {
+        ensureTemporaryEvolutionsIsMutable();
+        temporaryEvolutions_.add(builderForValue.build());
         onChanged();
       } else {
-        temporaryEvolutionBuilder_.addMessage(builderForValue.build());
+        temporaryEvolutionsBuilder_.addMessage(builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public Builder addTemporaryEvolution(
+    public Builder addTemporaryEvolutions(
         int index, POGOProtos.Rpc.MegaEvolutionAttributes.Builder builderForValue) {
-      if (temporaryEvolutionBuilder_ == null) {
-        ensureTemporaryEvolutionIsMutable();
-        temporaryEvolution_.add(index, builderForValue.build());
+      if (temporaryEvolutionsBuilder_ == null) {
+        ensureTemporaryEvolutionsIsMutable();
+        temporaryEvolutions_.add(index, builderForValue.build());
         onChanged();
       } else {
-        temporaryEvolutionBuilder_.addMessage(index, builderForValue.build());
+        temporaryEvolutionsBuilder_.addMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public Builder addAllTemporaryEvolution(
+    public Builder addAllTemporaryEvolutions(
         java.lang.Iterable<? extends POGOProtos.Rpc.MegaEvolutionAttributes> values) {
-      if (temporaryEvolutionBuilder_ == null) {
-        ensureTemporaryEvolutionIsMutable();
+      if (temporaryEvolutionsBuilder_ == null) {
+        ensureTemporaryEvolutionsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, temporaryEvolution_);
+            values, temporaryEvolutions_);
         onChanged();
       } else {
-        temporaryEvolutionBuilder_.addAllMessages(values);
+        temporaryEvolutionsBuilder_.addAllMessages(values);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public Builder clearTemporaryEvolution() {
-      if (temporaryEvolutionBuilder_ == null) {
-        temporaryEvolution_ = java.util.Collections.emptyList();
+    public Builder clearTemporaryEvolutions() {
+      if (temporaryEvolutionsBuilder_ == null) {
+        temporaryEvolutions_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00010000);
         onChanged();
       } else {
-        temporaryEvolutionBuilder_.clear();
+        temporaryEvolutionsBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public Builder removeTemporaryEvolution(int index) {
-      if (temporaryEvolutionBuilder_ == null) {
-        ensureTemporaryEvolutionIsMutable();
-        temporaryEvolution_.remove(index);
+    public Builder removeTemporaryEvolutions(int index) {
+      if (temporaryEvolutionsBuilder_ == null) {
+        ensureTemporaryEvolutionsIsMutable();
+        temporaryEvolutions_.remove(index);
         onChanged();
       } else {
-        temporaryEvolutionBuilder_.remove(index);
+        temporaryEvolutionsBuilder_.remove(index);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public POGOProtos.Rpc.MegaEvolutionAttributes.Builder getTemporaryEvolutionBuilder(
+    public POGOProtos.Rpc.MegaEvolutionAttributes.Builder getTemporaryEvolutionsBuilder(
         int index) {
-      return getTemporaryEvolutionFieldBuilder().getBuilder(index);
+      return getTemporaryEvolutionsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder getTemporaryEvolutionOrBuilder(
+    public POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder getTemporaryEvolutionsOrBuilder(
         int index) {
-      if (temporaryEvolutionBuilder_ == null) {
-        return temporaryEvolution_.get(index);  } else {
-        return temporaryEvolutionBuilder_.getMessageOrBuilder(index);
+      if (temporaryEvolutionsBuilder_ == null) {
+        return temporaryEvolutions_.get(index);  } else {
+        return temporaryEvolutionsBuilder_.getMessageOrBuilder(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
     public java.util.List<? extends POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder> 
-         getTemporaryEvolutionOrBuilderList() {
-      if (temporaryEvolutionBuilder_ != null) {
-        return temporaryEvolutionBuilder_.getMessageOrBuilderList();
+         getTemporaryEvolutionsOrBuilderList() {
+      if (temporaryEvolutionsBuilder_ != null) {
+        return temporaryEvolutionsBuilder_.getMessageOrBuilderList();
       } else {
-        return java.util.Collections.unmodifiableList(temporaryEvolution_);
+        return java.util.Collections.unmodifiableList(temporaryEvolutions_);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public POGOProtos.Rpc.MegaEvolutionAttributes.Builder addTemporaryEvolutionBuilder() {
-      return getTemporaryEvolutionFieldBuilder().addBuilder(
+    public POGOProtos.Rpc.MegaEvolutionAttributes.Builder addTemporaryEvolutionsBuilder() {
+      return getTemporaryEvolutionsFieldBuilder().addBuilder(
           POGOProtos.Rpc.MegaEvolutionAttributes.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
-    public POGOProtos.Rpc.MegaEvolutionAttributes.Builder addTemporaryEvolutionBuilder(
+    public POGOProtos.Rpc.MegaEvolutionAttributes.Builder addTemporaryEvolutionsBuilder(
         int index) {
-      return getTemporaryEvolutionFieldBuilder().addBuilder(
+      return getTemporaryEvolutionsFieldBuilder().addBuilder(
           index, POGOProtos.Rpc.MegaEvolutionAttributes.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolution = 51;</code>
+     * <code>repeated .POGOProtos.Rpc.MegaEvolutionAttributes temporary_evolutions = 51;</code>
      */
     public java.util.List<POGOProtos.Rpc.MegaEvolutionAttributes.Builder> 
-         getTemporaryEvolutionBuilderList() {
-      return getTemporaryEvolutionFieldBuilder().getBuilderList();
+         getTemporaryEvolutionsBuilderList() {
+      return getTemporaryEvolutionsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
         POGOProtos.Rpc.MegaEvolutionAttributes, POGOProtos.Rpc.MegaEvolutionAttributes.Builder, POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder> 
-        getTemporaryEvolutionFieldBuilder() {
-      if (temporaryEvolutionBuilder_ == null) {
-        temporaryEvolutionBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+        getTemporaryEvolutionsFieldBuilder() {
+      if (temporaryEvolutionsBuilder_ == null) {
+        temporaryEvolutionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             POGOProtos.Rpc.MegaEvolutionAttributes, POGOProtos.Rpc.MegaEvolutionAttributes.Builder, POGOProtos.Rpc.MegaEvolutionAttributesOrBuilder>(
-                temporaryEvolution_,
+                temporaryEvolutions_,
                 ((bitField0_ & 0x00010000) != 0),
                 getParentForChildren(),
                 isClean());
-        temporaryEvolution_ = null;
+        temporaryEvolutions_ = null;
       }
-      return temporaryEvolutionBuilder_;
+      return temporaryEvolutionsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

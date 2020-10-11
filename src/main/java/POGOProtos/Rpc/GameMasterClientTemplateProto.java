@@ -931,14 +931,14 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 602: {
-            POGOProtos.Rpc.GameMasterField1.Builder subBuilder = null;
-            if (megaEvo_ != null) {
-              subBuilder = megaEvo_.toBuilder();
+            POGOProtos.Rpc.TemporaryEvolutionSettingsProto.Builder subBuilder = null;
+            if (temporaryEvolutionSettings_ != null) {
+              subBuilder = temporaryEvolutionSettings_.toBuilder();
             }
-            megaEvo_ = input.readMessage(POGOProtos.Rpc.GameMasterField1.parser(), extensionRegistry);
+            temporaryEvolutionSettings_ = input.readMessage(POGOProtos.Rpc.TemporaryEvolutionSettingsProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(megaEvo_);
-              megaEvo_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(temporaryEvolutionSettings_);
+              temporaryEvolutionSettings_ = subBuilder.buildPartial();
             }
 
             break;
@@ -2924,30 +2924,30 @@ private static final long serialVersionUID = 0L;
     return getMegaEvoSettings();
   }
 
-  public static final int MEGA_EVO_FIELD_NUMBER = 75;
-  private POGOProtos.Rpc.GameMasterField1 megaEvo_;
+  public static final int TEMPORARY_EVOLUTION_SETTINGS_FIELD_NUMBER = 75;
+  private POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporaryEvolutionSettings_;
   /**
-   * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
-   * @return Whether the megaEvo field is set.
+   * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
+   * @return Whether the temporaryEvolutionSettings field is set.
    */
   @java.lang.Override
-  public boolean hasMegaEvo() {
-    return megaEvo_ != null;
+  public boolean hasTemporaryEvolutionSettings() {
+    return temporaryEvolutionSettings_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
-   * @return The megaEvo.
+   * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
+   * @return The temporaryEvolutionSettings.
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GameMasterField1 getMegaEvo() {
-    return megaEvo_ == null ? POGOProtos.Rpc.GameMasterField1.getDefaultInstance() : megaEvo_;
+  public POGOProtos.Rpc.TemporaryEvolutionSettingsProto getTemporaryEvolutionSettings() {
+    return temporaryEvolutionSettings_ == null ? POGOProtos.Rpc.TemporaryEvolutionSettingsProto.getDefaultInstance() : temporaryEvolutionSettings_;
   }
   /**
-   * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
+   * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.GameMasterField1OrBuilder getMegaEvoOrBuilder() {
-    return getMegaEvo();
+  public POGOProtos.Rpc.TemporaryEvolutionSettingsProtoOrBuilder getTemporaryEvolutionSettingsOrBuilder() {
+    return getTemporaryEvolutionSettings();
   }
 
   public static final int AVATAR_GROUP_ORDER_SETTINGS_FIELD_NUMBER = 76;
@@ -3506,8 +3506,8 @@ private static final long serialVersionUID = 0L;
     if (megaEvoSettings_ != null) {
       output.writeMessage(74, getMegaEvoSettings());
     }
-    if (megaEvo_ != null) {
-      output.writeMessage(75, getMegaEvo());
+    if (temporaryEvolutionSettings_ != null) {
+      output.writeMessage(75, getTemporaryEvolutionSettings());
     }
     if (avatarGroupOrderSettings_ != null) {
       output.writeMessage(76, getAvatarGroupOrderSettings());
@@ -3828,9 +3828,9 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(74, getMegaEvoSettings());
     }
-    if (megaEvo_ != null) {
+    if (temporaryEvolutionSettings_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(75, getMegaEvo());
+        .computeMessageSize(75, getTemporaryEvolutionSettings());
     }
     if (avatarGroupOrderSettings_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -4236,10 +4236,10 @@ private static final long serialVersionUID = 0L;
       if (!getMegaEvoSettings()
           .equals(other.getMegaEvoSettings())) return false;
     }
-    if (hasMegaEvo() != other.hasMegaEvo()) return false;
-    if (hasMegaEvo()) {
-      if (!getMegaEvo()
-          .equals(other.getMegaEvo())) return false;
+    if (hasTemporaryEvolutionSettings() != other.hasTemporaryEvolutionSettings()) return false;
+    if (hasTemporaryEvolutionSettings()) {
+      if (!getTemporaryEvolutionSettings()
+          .equals(other.getTemporaryEvolutionSettings())) return false;
     }
     if (hasAvatarGroupOrderSettings() != other.hasAvatarGroupOrderSettings()) return false;
     if (hasAvatarGroupOrderSettings()) {
@@ -4587,9 +4587,9 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + MEGA_EVO_SETTINGS_FIELD_NUMBER;
       hash = (53 * hash) + getMegaEvoSettings().hashCode();
     }
-    if (hasMegaEvo()) {
-      hash = (37 * hash) + MEGA_EVO_FIELD_NUMBER;
-      hash = (53 * hash) + getMegaEvo().hashCode();
+    if (hasTemporaryEvolutionSettings()) {
+      hash = (37 * hash) + TEMPORARY_EVOLUTION_SETTINGS_FIELD_NUMBER;
+      hash = (53 * hash) + getTemporaryEvolutionSettings().hashCode();
     }
     if (hasAvatarGroupOrderSettings()) {
       hash = (37 * hash) + AVATAR_GROUP_ORDER_SETTINGS_FIELD_NUMBER;
@@ -5184,11 +5184,11 @@ private static final long serialVersionUID = 0L;
         megaEvoSettings_ = null;
         megaEvoSettingsBuilder_ = null;
       }
-      if (megaEvoBuilder_ == null) {
-        megaEvo_ = null;
+      if (temporaryEvolutionSettingsBuilder_ == null) {
+        temporaryEvolutionSettings_ = null;
       } else {
-        megaEvo_ = null;
-        megaEvoBuilder_ = null;
+        temporaryEvolutionSettings_ = null;
+        temporaryEvolutionSettingsBuilder_ = null;
       }
       if (avatarGroupOrderSettingsBuilder_ == null) {
         avatarGroupOrderSettings_ = null;
@@ -5630,10 +5630,10 @@ private static final long serialVersionUID = 0L;
       } else {
         result.megaEvoSettings_ = megaEvoSettingsBuilder_.build();
       }
-      if (megaEvoBuilder_ == null) {
-        result.megaEvo_ = megaEvo_;
+      if (temporaryEvolutionSettingsBuilder_ == null) {
+        result.temporaryEvolutionSettings_ = temporaryEvolutionSettings_;
       } else {
-        result.megaEvo_ = megaEvoBuilder_.build();
+        result.temporaryEvolutionSettings_ = temporaryEvolutionSettingsBuilder_.build();
       }
       if (avatarGroupOrderSettingsBuilder_ == null) {
         result.avatarGroupOrderSettings_ = avatarGroupOrderSettings_;
@@ -5953,8 +5953,8 @@ private static final long serialVersionUID = 0L;
       if (other.hasMegaEvoSettings()) {
         mergeMegaEvoSettings(other.getMegaEvoSettings());
       }
-      if (other.hasMegaEvo()) {
-        mergeMegaEvo(other.getMegaEvo());
+      if (other.hasTemporaryEvolutionSettings()) {
+        mergeTemporaryEvolutionSettings(other.getTemporaryEvolutionSettings());
       }
       if (other.hasAvatarGroupOrderSettings()) {
         mergeAvatarGroupOrderSettings(other.getAvatarGroupOrderSettings());
@@ -14073,123 +14073,123 @@ private static final long serialVersionUID = 0L;
       return megaEvoSettingsBuilder_;
     }
 
-    private POGOProtos.Rpc.GameMasterField1 megaEvo_;
+    private POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporaryEvolutionSettings_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GameMasterField1, POGOProtos.Rpc.GameMasterField1.Builder, POGOProtos.Rpc.GameMasterField1OrBuilder> megaEvoBuilder_;
+        POGOProtos.Rpc.TemporaryEvolutionSettingsProto, POGOProtos.Rpc.TemporaryEvolutionSettingsProto.Builder, POGOProtos.Rpc.TemporaryEvolutionSettingsProtoOrBuilder> temporaryEvolutionSettingsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
-     * @return Whether the megaEvo field is set.
+     * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
+     * @return Whether the temporaryEvolutionSettings field is set.
      */
-    public boolean hasMegaEvo() {
-      return megaEvoBuilder_ != null || megaEvo_ != null;
+    public boolean hasTemporaryEvolutionSettings() {
+      return temporaryEvolutionSettingsBuilder_ != null || temporaryEvolutionSettings_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
-     * @return The megaEvo.
+     * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
+     * @return The temporaryEvolutionSettings.
      */
-    public POGOProtos.Rpc.GameMasterField1 getMegaEvo() {
-      if (megaEvoBuilder_ == null) {
-        return megaEvo_ == null ? POGOProtos.Rpc.GameMasterField1.getDefaultInstance() : megaEvo_;
+    public POGOProtos.Rpc.TemporaryEvolutionSettingsProto getTemporaryEvolutionSettings() {
+      if (temporaryEvolutionSettingsBuilder_ == null) {
+        return temporaryEvolutionSettings_ == null ? POGOProtos.Rpc.TemporaryEvolutionSettingsProto.getDefaultInstance() : temporaryEvolutionSettings_;
       } else {
-        return megaEvoBuilder_.getMessage();
+        return temporaryEvolutionSettingsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
+     * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
      */
-    public Builder setMegaEvo(POGOProtos.Rpc.GameMasterField1 value) {
-      if (megaEvoBuilder_ == null) {
+    public Builder setTemporaryEvolutionSettings(POGOProtos.Rpc.TemporaryEvolutionSettingsProto value) {
+      if (temporaryEvolutionSettingsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        megaEvo_ = value;
+        temporaryEvolutionSettings_ = value;
         onChanged();
       } else {
-        megaEvoBuilder_.setMessage(value);
+        temporaryEvolutionSettingsBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
+     * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
      */
-    public Builder setMegaEvo(
-        POGOProtos.Rpc.GameMasterField1.Builder builderForValue) {
-      if (megaEvoBuilder_ == null) {
-        megaEvo_ = builderForValue.build();
+    public Builder setTemporaryEvolutionSettings(
+        POGOProtos.Rpc.TemporaryEvolutionSettingsProto.Builder builderForValue) {
+      if (temporaryEvolutionSettingsBuilder_ == null) {
+        temporaryEvolutionSettings_ = builderForValue.build();
         onChanged();
       } else {
-        megaEvoBuilder_.setMessage(builderForValue.build());
+        temporaryEvolutionSettingsBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
+     * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
      */
-    public Builder mergeMegaEvo(POGOProtos.Rpc.GameMasterField1 value) {
-      if (megaEvoBuilder_ == null) {
-        if (megaEvo_ != null) {
-          megaEvo_ =
-            POGOProtos.Rpc.GameMasterField1.newBuilder(megaEvo_).mergeFrom(value).buildPartial();
+    public Builder mergeTemporaryEvolutionSettings(POGOProtos.Rpc.TemporaryEvolutionSettingsProto value) {
+      if (temporaryEvolutionSettingsBuilder_ == null) {
+        if (temporaryEvolutionSettings_ != null) {
+          temporaryEvolutionSettings_ =
+            POGOProtos.Rpc.TemporaryEvolutionSettingsProto.newBuilder(temporaryEvolutionSettings_).mergeFrom(value).buildPartial();
         } else {
-          megaEvo_ = value;
+          temporaryEvolutionSettings_ = value;
         }
         onChanged();
       } else {
-        megaEvoBuilder_.mergeFrom(value);
+        temporaryEvolutionSettingsBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
+     * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
      */
-    public Builder clearMegaEvo() {
-      if (megaEvoBuilder_ == null) {
-        megaEvo_ = null;
+    public Builder clearTemporaryEvolutionSettings() {
+      if (temporaryEvolutionSettingsBuilder_ == null) {
+        temporaryEvolutionSettings_ = null;
         onChanged();
       } else {
-        megaEvo_ = null;
-        megaEvoBuilder_ = null;
+        temporaryEvolutionSettings_ = null;
+        temporaryEvolutionSettingsBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
+     * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
      */
-    public POGOProtos.Rpc.GameMasterField1.Builder getMegaEvoBuilder() {
+    public POGOProtos.Rpc.TemporaryEvolutionSettingsProto.Builder getTemporaryEvolutionSettingsBuilder() {
       
       onChanged();
-      return getMegaEvoFieldBuilder().getBuilder();
+      return getTemporaryEvolutionSettingsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
+     * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
      */
-    public POGOProtos.Rpc.GameMasterField1OrBuilder getMegaEvoOrBuilder() {
-      if (megaEvoBuilder_ != null) {
-        return megaEvoBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.TemporaryEvolutionSettingsProtoOrBuilder getTemporaryEvolutionSettingsOrBuilder() {
+      if (temporaryEvolutionSettingsBuilder_ != null) {
+        return temporaryEvolutionSettingsBuilder_.getMessageOrBuilder();
       } else {
-        return megaEvo_ == null ?
-            POGOProtos.Rpc.GameMasterField1.getDefaultInstance() : megaEvo_;
+        return temporaryEvolutionSettings_ == null ?
+            POGOProtos.Rpc.TemporaryEvolutionSettingsProto.getDefaultInstance() : temporaryEvolutionSettings_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GameMasterField1 mega_evo = 75;</code>
+     * <code>.POGOProtos.Rpc.TemporaryEvolutionSettingsProto temporary_evolution_settings = 75;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GameMasterField1, POGOProtos.Rpc.GameMasterField1.Builder, POGOProtos.Rpc.GameMasterField1OrBuilder> 
-        getMegaEvoFieldBuilder() {
-      if (megaEvoBuilder_ == null) {
-        megaEvoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.GameMasterField1, POGOProtos.Rpc.GameMasterField1.Builder, POGOProtos.Rpc.GameMasterField1OrBuilder>(
-                getMegaEvo(),
+        POGOProtos.Rpc.TemporaryEvolutionSettingsProto, POGOProtos.Rpc.TemporaryEvolutionSettingsProto.Builder, POGOProtos.Rpc.TemporaryEvolutionSettingsProtoOrBuilder> 
+        getTemporaryEvolutionSettingsFieldBuilder() {
+      if (temporaryEvolutionSettingsBuilder_ == null) {
+        temporaryEvolutionSettingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.TemporaryEvolutionSettingsProto, POGOProtos.Rpc.TemporaryEvolutionSettingsProto.Builder, POGOProtos.Rpc.TemporaryEvolutionSettingsProtoOrBuilder>(
+                getTemporaryEvolutionSettings(),
                 getParentForChildren(),
                 isClean());
-        megaEvo_ = null;
+        temporaryEvolutionSettings_ = null;
       }
-      return megaEvoBuilder_;
+      return temporaryEvolutionSettingsBuilder_;
     }
 
     private POGOProtos.Rpc.AvatarGroupOrderSettingsProto avatarGroupOrderSettings_;

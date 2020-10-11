@@ -203,19 +203,19 @@ public interface HoloInventoryItemProtoOrBuilder extends
   POGOProtos.Rpc.RaidTicketsProtoOrBuilder getRaidTicketsOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
    * @return Whether the quests field is set.
    */
   boolean hasQuests();
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
    * @return The quests.
    */
-  POGOProtos.Rpc.QuestsProto getQuests();
+  POGOProtos.Rpc.PokemonField1 getQuests();
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.PokemonField1 quests = 14;</code>
    */
-  POGOProtos.Rpc.QuestsProtoOrBuilder getQuestsOrBuilder();
+  POGOProtos.Rpc.PokemonField1OrBuilder getQuestsOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>

@@ -54,22 +54,22 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
 
-            obMegaEvolveDurationMs_ = input.readInt64();
+            megaEvolveDurationMs_ = input.readInt64();
             break;
           }
           case 21: {
 
-            obMegaBoost_ = input.readFloat();
+            megaBoost_ = input.readFloat();
             break;
           }
           case 29: {
 
-            obMegaSameTypeBoost_ = input.readFloat();
+            megaSameTypeBoost_ = input.readFloat();
             break;
           }
           case 32: {
 
-            obMegaMaxCandy_ = input.readInt32();
+            megaMaxCandy_ = input.readInt32();
             break;
           }
           default: {
@@ -104,48 +104,48 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.MegaEvoSettings.class, POGOProtos.Rpc.MegaEvoSettings.Builder.class);
   }
 
-  public static final int OB_MEGA_EVOLVE_DURATION_MS_FIELD_NUMBER = 1;
-  private long obMegaEvolveDurationMs_;
+  public static final int MEGA_EVOLVE_DURATION_MS_FIELD_NUMBER = 1;
+  private long megaEvolveDurationMs_;
   /**
-   * <code>int64 ob_mega_evolve_duration_ms = 1;</code>
-   * @return The obMegaEvolveDurationMs.
+   * <code>int64 mega_evolve_duration_ms = 1;</code>
+   * @return The megaEvolveDurationMs.
    */
   @java.lang.Override
-  public long getObMegaEvolveDurationMs() {
-    return obMegaEvolveDurationMs_;
+  public long getMegaEvolveDurationMs() {
+    return megaEvolveDurationMs_;
   }
 
-  public static final int OB_MEGA_BOOST_FIELD_NUMBER = 2;
-  private float obMegaBoost_;
+  public static final int MEGA_BOOST_FIELD_NUMBER = 2;
+  private float megaBoost_;
   /**
-   * <code>float ob_mega_boost = 2;</code>
-   * @return The obMegaBoost.
+   * <code>float mega_boost = 2;</code>
+   * @return The megaBoost.
    */
   @java.lang.Override
-  public float getObMegaBoost() {
-    return obMegaBoost_;
+  public float getMegaBoost() {
+    return megaBoost_;
   }
 
-  public static final int OB_MEGA_SAME_TYPE_BOOST_FIELD_NUMBER = 3;
-  private float obMegaSameTypeBoost_;
+  public static final int MEGA_SAME_TYPE_BOOST_FIELD_NUMBER = 3;
+  private float megaSameTypeBoost_;
   /**
-   * <code>float ob_mega_same_type_boost = 3;</code>
-   * @return The obMegaSameTypeBoost.
+   * <code>float mega_same_type_boost = 3;</code>
+   * @return The megaSameTypeBoost.
    */
   @java.lang.Override
-  public float getObMegaSameTypeBoost() {
-    return obMegaSameTypeBoost_;
+  public float getMegaSameTypeBoost() {
+    return megaSameTypeBoost_;
   }
 
-  public static final int OB_MEGA_MAX_CANDY_FIELD_NUMBER = 4;
-  private int obMegaMaxCandy_;
+  public static final int MEGA_MAX_CANDY_FIELD_NUMBER = 4;
+  private int megaMaxCandy_;
   /**
-   * <code>int32 ob_mega_max_candy = 4;</code>
-   * @return The obMegaMaxCandy.
+   * <code>int32 mega_max_candy = 4;</code>
+   * @return The megaMaxCandy.
    */
   @java.lang.Override
-  public int getObMegaMaxCandy() {
-    return obMegaMaxCandy_;
+  public int getMegaMaxCandy() {
+    return megaMaxCandy_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -162,17 +162,17 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (obMegaEvolveDurationMs_ != 0L) {
-      output.writeInt64(1, obMegaEvolveDurationMs_);
+    if (megaEvolveDurationMs_ != 0L) {
+      output.writeInt64(1, megaEvolveDurationMs_);
     }
-    if (obMegaBoost_ != 0F) {
-      output.writeFloat(2, obMegaBoost_);
+    if (megaBoost_ != 0F) {
+      output.writeFloat(2, megaBoost_);
     }
-    if (obMegaSameTypeBoost_ != 0F) {
-      output.writeFloat(3, obMegaSameTypeBoost_);
+    if (megaSameTypeBoost_ != 0F) {
+      output.writeFloat(3, megaSameTypeBoost_);
     }
-    if (obMegaMaxCandy_ != 0) {
-      output.writeInt32(4, obMegaMaxCandy_);
+    if (megaMaxCandy_ != 0) {
+      output.writeInt32(4, megaMaxCandy_);
     }
     unknownFields.writeTo(output);
   }
@@ -183,21 +183,21 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (obMegaEvolveDurationMs_ != 0L) {
+    if (megaEvolveDurationMs_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(1, obMegaEvolveDurationMs_);
+        .computeInt64Size(1, megaEvolveDurationMs_);
     }
-    if (obMegaBoost_ != 0F) {
+    if (megaBoost_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(2, obMegaBoost_);
+        .computeFloatSize(2, megaBoost_);
     }
-    if (obMegaSameTypeBoost_ != 0F) {
+    if (megaSameTypeBoost_ != 0F) {
       size += com.google.protobuf.CodedOutputStream
-        .computeFloatSize(3, obMegaSameTypeBoost_);
+        .computeFloatSize(3, megaSameTypeBoost_);
     }
-    if (obMegaMaxCandy_ != 0) {
+    if (megaMaxCandy_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(4, obMegaMaxCandy_);
+        .computeInt32Size(4, megaMaxCandy_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -214,16 +214,16 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.MegaEvoSettings other = (POGOProtos.Rpc.MegaEvoSettings) obj;
 
-    if (getObMegaEvolveDurationMs()
-        != other.getObMegaEvolveDurationMs()) return false;
-    if (java.lang.Float.floatToIntBits(getObMegaBoost())
+    if (getMegaEvolveDurationMs()
+        != other.getMegaEvolveDurationMs()) return false;
+    if (java.lang.Float.floatToIntBits(getMegaBoost())
         != java.lang.Float.floatToIntBits(
-            other.getObMegaBoost())) return false;
-    if (java.lang.Float.floatToIntBits(getObMegaSameTypeBoost())
+            other.getMegaBoost())) return false;
+    if (java.lang.Float.floatToIntBits(getMegaSameTypeBoost())
         != java.lang.Float.floatToIntBits(
-            other.getObMegaSameTypeBoost())) return false;
-    if (getObMegaMaxCandy()
-        != other.getObMegaMaxCandy()) return false;
+            other.getMegaSameTypeBoost())) return false;
+    if (getMegaMaxCandy()
+        != other.getMegaMaxCandy()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -235,17 +235,17 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + OB_MEGA_EVOLVE_DURATION_MS_FIELD_NUMBER;
+    hash = (37 * hash) + MEGA_EVOLVE_DURATION_MS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getObMegaEvolveDurationMs());
-    hash = (37 * hash) + OB_MEGA_BOOST_FIELD_NUMBER;
+        getMegaEvolveDurationMs());
+    hash = (37 * hash) + MEGA_BOOST_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getObMegaBoost());
-    hash = (37 * hash) + OB_MEGA_SAME_TYPE_BOOST_FIELD_NUMBER;
+        getMegaBoost());
+    hash = (37 * hash) + MEGA_SAME_TYPE_BOOST_FIELD_NUMBER;
     hash = (53 * hash) + java.lang.Float.floatToIntBits(
-        getObMegaSameTypeBoost());
-    hash = (37 * hash) + OB_MEGA_MAX_CANDY_FIELD_NUMBER;
-    hash = (53 * hash) + getObMegaMaxCandy();
+        getMegaSameTypeBoost());
+    hash = (37 * hash) + MEGA_MAX_CANDY_FIELD_NUMBER;
+    hash = (53 * hash) + getMegaMaxCandy();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -383,13 +383,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      obMegaEvolveDurationMs_ = 0L;
+      megaEvolveDurationMs_ = 0L;
 
-      obMegaBoost_ = 0F;
+      megaBoost_ = 0F;
 
-      obMegaSameTypeBoost_ = 0F;
+      megaSameTypeBoost_ = 0F;
 
-      obMegaMaxCandy_ = 0;
+      megaMaxCandy_ = 0;
 
       return this;
     }
@@ -417,10 +417,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.MegaEvoSettings buildPartial() {
       POGOProtos.Rpc.MegaEvoSettings result = new POGOProtos.Rpc.MegaEvoSettings(this);
-      result.obMegaEvolveDurationMs_ = obMegaEvolveDurationMs_;
-      result.obMegaBoost_ = obMegaBoost_;
-      result.obMegaSameTypeBoost_ = obMegaSameTypeBoost_;
-      result.obMegaMaxCandy_ = obMegaMaxCandy_;
+      result.megaEvolveDurationMs_ = megaEvolveDurationMs_;
+      result.megaBoost_ = megaBoost_;
+      result.megaSameTypeBoost_ = megaSameTypeBoost_;
+      result.megaMaxCandy_ = megaMaxCandy_;
       onBuilt();
       return result;
     }
@@ -469,17 +469,17 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.MegaEvoSettings other) {
       if (other == POGOProtos.Rpc.MegaEvoSettings.getDefaultInstance()) return this;
-      if (other.getObMegaEvolveDurationMs() != 0L) {
-        setObMegaEvolveDurationMs(other.getObMegaEvolveDurationMs());
+      if (other.getMegaEvolveDurationMs() != 0L) {
+        setMegaEvolveDurationMs(other.getMegaEvolveDurationMs());
       }
-      if (other.getObMegaBoost() != 0F) {
-        setObMegaBoost(other.getObMegaBoost());
+      if (other.getMegaBoost() != 0F) {
+        setMegaBoost(other.getMegaBoost());
       }
-      if (other.getObMegaSameTypeBoost() != 0F) {
-        setObMegaSameTypeBoost(other.getObMegaSameTypeBoost());
+      if (other.getMegaSameTypeBoost() != 0F) {
+        setMegaSameTypeBoost(other.getMegaSameTypeBoost());
       }
-      if (other.getObMegaMaxCandy() != 0) {
-        setObMegaMaxCandy(other.getObMegaMaxCandy());
+      if (other.getMegaMaxCandy() != 0) {
+        setMegaMaxCandy(other.getMegaMaxCandy());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -510,126 +510,126 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private long obMegaEvolveDurationMs_ ;
+    private long megaEvolveDurationMs_ ;
     /**
-     * <code>int64 ob_mega_evolve_duration_ms = 1;</code>
-     * @return The obMegaEvolveDurationMs.
+     * <code>int64 mega_evolve_duration_ms = 1;</code>
+     * @return The megaEvolveDurationMs.
      */
     @java.lang.Override
-    public long getObMegaEvolveDurationMs() {
-      return obMegaEvolveDurationMs_;
+    public long getMegaEvolveDurationMs() {
+      return megaEvolveDurationMs_;
     }
     /**
-     * <code>int64 ob_mega_evolve_duration_ms = 1;</code>
-     * @param value The obMegaEvolveDurationMs to set.
+     * <code>int64 mega_evolve_duration_ms = 1;</code>
+     * @param value The megaEvolveDurationMs to set.
      * @return This builder for chaining.
      */
-    public Builder setObMegaEvolveDurationMs(long value) {
+    public Builder setMegaEvolveDurationMs(long value) {
       
-      obMegaEvolveDurationMs_ = value;
+      megaEvolveDurationMs_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int64 ob_mega_evolve_duration_ms = 1;</code>
+     * <code>int64 mega_evolve_duration_ms = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearObMegaEvolveDurationMs() {
+    public Builder clearMegaEvolveDurationMs() {
       
-      obMegaEvolveDurationMs_ = 0L;
+      megaEvolveDurationMs_ = 0L;
       onChanged();
       return this;
     }
 
-    private float obMegaBoost_ ;
+    private float megaBoost_ ;
     /**
-     * <code>float ob_mega_boost = 2;</code>
-     * @return The obMegaBoost.
+     * <code>float mega_boost = 2;</code>
+     * @return The megaBoost.
      */
     @java.lang.Override
-    public float getObMegaBoost() {
-      return obMegaBoost_;
+    public float getMegaBoost() {
+      return megaBoost_;
     }
     /**
-     * <code>float ob_mega_boost = 2;</code>
-     * @param value The obMegaBoost to set.
+     * <code>float mega_boost = 2;</code>
+     * @param value The megaBoost to set.
      * @return This builder for chaining.
      */
-    public Builder setObMegaBoost(float value) {
+    public Builder setMegaBoost(float value) {
       
-      obMegaBoost_ = value;
+      megaBoost_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float ob_mega_boost = 2;</code>
+     * <code>float mega_boost = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearObMegaBoost() {
+    public Builder clearMegaBoost() {
       
-      obMegaBoost_ = 0F;
+      megaBoost_ = 0F;
       onChanged();
       return this;
     }
 
-    private float obMegaSameTypeBoost_ ;
+    private float megaSameTypeBoost_ ;
     /**
-     * <code>float ob_mega_same_type_boost = 3;</code>
-     * @return The obMegaSameTypeBoost.
+     * <code>float mega_same_type_boost = 3;</code>
+     * @return The megaSameTypeBoost.
      */
     @java.lang.Override
-    public float getObMegaSameTypeBoost() {
-      return obMegaSameTypeBoost_;
+    public float getMegaSameTypeBoost() {
+      return megaSameTypeBoost_;
     }
     /**
-     * <code>float ob_mega_same_type_boost = 3;</code>
-     * @param value The obMegaSameTypeBoost to set.
+     * <code>float mega_same_type_boost = 3;</code>
+     * @param value The megaSameTypeBoost to set.
      * @return This builder for chaining.
      */
-    public Builder setObMegaSameTypeBoost(float value) {
+    public Builder setMegaSameTypeBoost(float value) {
       
-      obMegaSameTypeBoost_ = value;
+      megaSameTypeBoost_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>float ob_mega_same_type_boost = 3;</code>
+     * <code>float mega_same_type_boost = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearObMegaSameTypeBoost() {
+    public Builder clearMegaSameTypeBoost() {
       
-      obMegaSameTypeBoost_ = 0F;
+      megaSameTypeBoost_ = 0F;
       onChanged();
       return this;
     }
 
-    private int obMegaMaxCandy_ ;
+    private int megaMaxCandy_ ;
     /**
-     * <code>int32 ob_mega_max_candy = 4;</code>
-     * @return The obMegaMaxCandy.
+     * <code>int32 mega_max_candy = 4;</code>
+     * @return The megaMaxCandy.
      */
     @java.lang.Override
-    public int getObMegaMaxCandy() {
-      return obMegaMaxCandy_;
+    public int getMegaMaxCandy() {
+      return megaMaxCandy_;
     }
     /**
-     * <code>int32 ob_mega_max_candy = 4;</code>
-     * @param value The obMegaMaxCandy to set.
+     * <code>int32 mega_max_candy = 4;</code>
+     * @param value The megaMaxCandy to set.
      * @return This builder for chaining.
      */
-    public Builder setObMegaMaxCandy(int value) {
+    public Builder setMegaMaxCandy(int value) {
       
-      obMegaMaxCandy_ = value;
+      megaMaxCandy_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 ob_mega_max_candy = 4;</code>
+     * <code>int32 mega_max_candy = 4;</code>
      * @return This builder for chaining.
      */
-    public Builder clearObMegaMaxCandy() {
+    public Builder clearMegaMaxCandy() {
       
-      obMegaMaxCandy_ = 0;
+      megaMaxCandy_ = 0;
       onChanged();
       return this;
     }

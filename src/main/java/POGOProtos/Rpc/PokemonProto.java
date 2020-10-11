@@ -33,7 +33,7 @@ private static final long serialVersionUID = 0L;
     limitedPokemonIdentifier_ = "";
     eggType_ = 0;
     megaEvolvedForms_ = java.util.Collections.emptyList();
-    field1_ = java.util.Collections.emptyList();
+    questBuddyEvolutionRequirement_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -423,11 +423,11 @@ private static final long serialVersionUID = 0L;
           }
           case 514: {
             if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-              field1_ = new java.util.ArrayList<POGOProtos.Rpc.PokemonField1>();
+              questBuddyEvolutionRequirement_ = new java.util.ArrayList<POGOProtos.Rpc.ClientQuestProto>();
               mutable_bitField0_ |= 0x00000002;
             }
-            field1_.add(
-                input.readMessage(POGOProtos.Rpc.PokemonField1.parser(), extensionRegistry));
+            questBuddyEvolutionRequirement_.add(
+                input.readMessage(POGOProtos.Rpc.ClientQuestProto.parser(), extensionRegistry));
             break;
           }
           case 530: {
@@ -462,7 +462,7 @@ private static final long serialVersionUID = 0L;
         megaEvolvedForms_ = java.util.Collections.unmodifiableList(megaEvolvedForms_);
       }
       if (((mutable_bitField0_ & 0x00000002) != 0)) {
-        field1_ = java.util.Collections.unmodifiableList(field1_);
+        questBuddyEvolutionRequirement_ = java.util.Collections.unmodifiableList(questBuddyEvolutionRequirement_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -1443,44 +1443,44 @@ private static final long serialVersionUID = 0L;
   }
   private int megaEvolvedFormsMemoizedSerializedSize;
 
-  public static final int FIELD1_FIELD_NUMBER = 64;
-  private java.util.List<POGOProtos.Rpc.PokemonField1> field1_;
+  public static final int QUEST_BUDDY_EVOLUTION_REQUIREMENT_FIELD_NUMBER = 64;
+  private java.util.List<POGOProtos.Rpc.ClientQuestProto> questBuddyEvolutionRequirement_;
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
    */
   @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.PokemonField1> getField1List() {
-    return field1_;
+  public java.util.List<POGOProtos.Rpc.ClientQuestProto> getQuestBuddyEvolutionRequirementList() {
+    return questBuddyEvolutionRequirement_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
    */
   @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.PokemonField1OrBuilder> 
-      getField1OrBuilderList() {
-    return field1_;
+  public java.util.List<? extends POGOProtos.Rpc.ClientQuestProtoOrBuilder> 
+      getQuestBuddyEvolutionRequirementOrBuilderList() {
+    return questBuddyEvolutionRequirement_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
    */
   @java.lang.Override
-  public int getField1Count() {
-    return field1_.size();
+  public int getQuestBuddyEvolutionRequirementCount() {
+    return questBuddyEvolutionRequirement_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonField1 getField1(int index) {
-    return field1_.get(index);
+  public POGOProtos.Rpc.ClientQuestProto getQuestBuddyEvolutionRequirement(int index) {
+    return questBuddyEvolutionRequirement_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+   * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
    */
   @java.lang.Override
-  public POGOProtos.Rpc.PokemonField1OrBuilder getField1OrBuilder(
+  public POGOProtos.Rpc.ClientQuestProtoOrBuilder getQuestBuddyEvolutionRequirementOrBuilder(
       int index) {
-    return field1_.get(index);
+    return questBuddyEvolutionRequirement_.get(index);
   }
 
   public static final int ORIGIN_DETAIL_FIELD_NUMBER = 66;
@@ -1708,8 +1708,8 @@ private static final long serialVersionUID = 0L;
     for (int i = 0; i < megaEvolvedForms_.size(); i++) {
       output.writeEnumNoTag(megaEvolvedForms_.get(i));
     }
-    for (int i = 0; i < field1_.size(); i++) {
-      output.writeMessage(64, field1_.get(i));
+    for (int i = 0; i < questBuddyEvolutionRequirement_.size(); i++) {
+      output.writeMessage(64, questBuddyEvolutionRequirement_.get(i));
     }
     if (originDetail_ != null) {
       output.writeMessage(66, getOriginDetail());
@@ -1965,9 +1965,9 @@ private static final long serialVersionUID = 0L;
           .computeUInt32SizeNoTag(dataSize);
       }megaEvolvedFormsMemoizedSerializedSize = dataSize;
     }
-    for (int i = 0; i < field1_.size(); i++) {
+    for (int i = 0; i < questBuddyEvolutionRequirement_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(64, field1_.get(i));
+        .computeMessageSize(64, questBuddyEvolutionRequirement_.get(i));
     }
     if (originDetail_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -2123,8 +2123,8 @@ private static final long serialVersionUID = 0L;
         != java.lang.Float.floatToIntBits(
             other.getTempEvoCpMultiplier())) return false;
     if (!megaEvolvedForms_.equals(other.megaEvolvedForms_)) return false;
-    if (!getField1List()
-        .equals(other.getField1List())) return false;
+    if (!getQuestBuddyEvolutionRequirementList()
+        .equals(other.getQuestBuddyEvolutionRequirementList())) return false;
     if (hasOriginDetail() != other.hasOriginDetail()) return false;
     if (hasOriginDetail()) {
       if (!getOriginDetail()
@@ -2296,9 +2296,9 @@ private static final long serialVersionUID = 0L;
       hash = (37 * hash) + MEGA_EVOLVED_FORMS_FIELD_NUMBER;
       hash = (53 * hash) + megaEvolvedForms_.hashCode();
     }
-    if (getField1Count() > 0) {
-      hash = (37 * hash) + FIELD1_FIELD_NUMBER;
-      hash = (53 * hash) + getField1List().hashCode();
+    if (getQuestBuddyEvolutionRequirementCount() > 0) {
+      hash = (37 * hash) + QUEST_BUDDY_EVOLUTION_REQUIREMENT_FIELD_NUMBER;
+      hash = (53 * hash) + getQuestBuddyEvolutionRequirementList().hashCode();
     }
     if (hasOriginDetail()) {
       hash = (37 * hash) + ORIGIN_DETAIL_FIELD_NUMBER;
@@ -2436,7 +2436,7 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
-        getField1FieldBuilder();
+        getQuestBuddyEvolutionRequirementFieldBuilder();
       }
     }
     @java.lang.Override
@@ -2574,11 +2574,11 @@ private static final long serialVersionUID = 0L;
 
       megaEvolvedForms_ = java.util.Collections.emptyList();
       bitField0_ = (bitField0_ & ~0x00000001);
-      if (field1Builder_ == null) {
-        field1_ = java.util.Collections.emptyList();
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        questBuddyEvolutionRequirement_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000002);
       } else {
-        field1Builder_.clear();
+        questBuddyEvolutionRequirementBuilder_.clear();
       }
       if (originDetailBuilder_ == null) {
         originDetail_ = null;
@@ -2689,14 +2689,14 @@ private static final long serialVersionUID = 0L;
         bitField0_ = (bitField0_ & ~0x00000001);
       }
       result.megaEvolvedForms_ = megaEvolvedForms_;
-      if (field1Builder_ == null) {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
         if (((bitField0_ & 0x00000002) != 0)) {
-          field1_ = java.util.Collections.unmodifiableList(field1_);
+          questBuddyEvolutionRequirement_ = java.util.Collections.unmodifiableList(questBuddyEvolutionRequirement_);
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.field1_ = field1_;
+        result.questBuddyEvolutionRequirement_ = questBuddyEvolutionRequirement_;
       } else {
-        result.field1_ = field1Builder_.build();
+        result.questBuddyEvolutionRequirement_ = questBuddyEvolutionRequirementBuilder_.build();
       }
       if (originDetailBuilder_ == null) {
         result.originDetail_ = originDetail_;
@@ -2944,29 +2944,29 @@ private static final long serialVersionUID = 0L;
         }
         onChanged();
       }
-      if (field1Builder_ == null) {
-        if (!other.field1_.isEmpty()) {
-          if (field1_.isEmpty()) {
-            field1_ = other.field1_;
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        if (!other.questBuddyEvolutionRequirement_.isEmpty()) {
+          if (questBuddyEvolutionRequirement_.isEmpty()) {
+            questBuddyEvolutionRequirement_ = other.questBuddyEvolutionRequirement_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureField1IsMutable();
-            field1_.addAll(other.field1_);
+            ensureQuestBuddyEvolutionRequirementIsMutable();
+            questBuddyEvolutionRequirement_.addAll(other.questBuddyEvolutionRequirement_);
           }
           onChanged();
         }
       } else {
-        if (!other.field1_.isEmpty()) {
-          if (field1Builder_.isEmpty()) {
-            field1Builder_.dispose();
-            field1Builder_ = null;
-            field1_ = other.field1_;
+        if (!other.questBuddyEvolutionRequirement_.isEmpty()) {
+          if (questBuddyEvolutionRequirementBuilder_.isEmpty()) {
+            questBuddyEvolutionRequirementBuilder_.dispose();
+            questBuddyEvolutionRequirementBuilder_ = null;
+            questBuddyEvolutionRequirement_ = other.questBuddyEvolutionRequirement_;
             bitField0_ = (bitField0_ & ~0x00000002);
-            field1Builder_ = 
+            questBuddyEvolutionRequirementBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getField1FieldBuilder() : null;
+                 getQuestBuddyEvolutionRequirementFieldBuilder() : null;
           } else {
-            field1Builder_.addAllMessages(other.field1_);
+            questBuddyEvolutionRequirementBuilder_.addAllMessages(other.questBuddyEvolutionRequirement_);
           }
         }
       }
@@ -5644,244 +5644,244 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.PokemonField1> field1_ =
+    private java.util.List<POGOProtos.Rpc.ClientQuestProto> questBuddyEvolutionRequirement_ =
       java.util.Collections.emptyList();
-    private void ensureField1IsMutable() {
+    private void ensureQuestBuddyEvolutionRequirementIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        field1_ = new java.util.ArrayList<POGOProtos.Rpc.PokemonField1>(field1_);
+        questBuddyEvolutionRequirement_ = new java.util.ArrayList<POGOProtos.Rpc.ClientQuestProto>(questBuddyEvolutionRequirement_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PokemonField1, POGOProtos.Rpc.PokemonField1.Builder, POGOProtos.Rpc.PokemonField1OrBuilder> field1Builder_;
+        POGOProtos.Rpc.ClientQuestProto, POGOProtos.Rpc.ClientQuestProto.Builder, POGOProtos.Rpc.ClientQuestProtoOrBuilder> questBuddyEvolutionRequirementBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PokemonField1> getField1List() {
-      if (field1Builder_ == null) {
-        return java.util.Collections.unmodifiableList(field1_);
+    public java.util.List<POGOProtos.Rpc.ClientQuestProto> getQuestBuddyEvolutionRequirementList() {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(questBuddyEvolutionRequirement_);
       } else {
-        return field1Builder_.getMessageList();
+        return questBuddyEvolutionRequirementBuilder_.getMessageList();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public int getField1Count() {
-      if (field1Builder_ == null) {
-        return field1_.size();
+    public int getQuestBuddyEvolutionRequirementCount() {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        return questBuddyEvolutionRequirement_.size();
       } else {
-        return field1Builder_.getCount();
+        return questBuddyEvolutionRequirementBuilder_.getCount();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public POGOProtos.Rpc.PokemonField1 getField1(int index) {
-      if (field1Builder_ == null) {
-        return field1_.get(index);
+    public POGOProtos.Rpc.ClientQuestProto getQuestBuddyEvolutionRequirement(int index) {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        return questBuddyEvolutionRequirement_.get(index);
       } else {
-        return field1Builder_.getMessage(index);
+        return questBuddyEvolutionRequirementBuilder_.getMessage(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public Builder setField1(
-        int index, POGOProtos.Rpc.PokemonField1 value) {
-      if (field1Builder_ == null) {
+    public Builder setQuestBuddyEvolutionRequirement(
+        int index, POGOProtos.Rpc.ClientQuestProto value) {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureField1IsMutable();
-        field1_.set(index, value);
+        ensureQuestBuddyEvolutionRequirementIsMutable();
+        questBuddyEvolutionRequirement_.set(index, value);
         onChanged();
       } else {
-        field1Builder_.setMessage(index, value);
+        questBuddyEvolutionRequirementBuilder_.setMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public Builder setField1(
-        int index, POGOProtos.Rpc.PokemonField1.Builder builderForValue) {
-      if (field1Builder_ == null) {
-        ensureField1IsMutable();
-        field1_.set(index, builderForValue.build());
+    public Builder setQuestBuddyEvolutionRequirement(
+        int index, POGOProtos.Rpc.ClientQuestProto.Builder builderForValue) {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        ensureQuestBuddyEvolutionRequirementIsMutable();
+        questBuddyEvolutionRequirement_.set(index, builderForValue.build());
         onChanged();
       } else {
-        field1Builder_.setMessage(index, builderForValue.build());
+        questBuddyEvolutionRequirementBuilder_.setMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public Builder addField1(POGOProtos.Rpc.PokemonField1 value) {
-      if (field1Builder_ == null) {
+    public Builder addQuestBuddyEvolutionRequirement(POGOProtos.Rpc.ClientQuestProto value) {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureField1IsMutable();
-        field1_.add(value);
+        ensureQuestBuddyEvolutionRequirementIsMutable();
+        questBuddyEvolutionRequirement_.add(value);
         onChanged();
       } else {
-        field1Builder_.addMessage(value);
+        questBuddyEvolutionRequirementBuilder_.addMessage(value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public Builder addField1(
-        int index, POGOProtos.Rpc.PokemonField1 value) {
-      if (field1Builder_ == null) {
+    public Builder addQuestBuddyEvolutionRequirement(
+        int index, POGOProtos.Rpc.ClientQuestProto value) {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureField1IsMutable();
-        field1_.add(index, value);
+        ensureQuestBuddyEvolutionRequirementIsMutable();
+        questBuddyEvolutionRequirement_.add(index, value);
         onChanged();
       } else {
-        field1Builder_.addMessage(index, value);
+        questBuddyEvolutionRequirementBuilder_.addMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public Builder addField1(
-        POGOProtos.Rpc.PokemonField1.Builder builderForValue) {
-      if (field1Builder_ == null) {
-        ensureField1IsMutable();
-        field1_.add(builderForValue.build());
+    public Builder addQuestBuddyEvolutionRequirement(
+        POGOProtos.Rpc.ClientQuestProto.Builder builderForValue) {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        ensureQuestBuddyEvolutionRequirementIsMutable();
+        questBuddyEvolutionRequirement_.add(builderForValue.build());
         onChanged();
       } else {
-        field1Builder_.addMessage(builderForValue.build());
+        questBuddyEvolutionRequirementBuilder_.addMessage(builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public Builder addField1(
-        int index, POGOProtos.Rpc.PokemonField1.Builder builderForValue) {
-      if (field1Builder_ == null) {
-        ensureField1IsMutable();
-        field1_.add(index, builderForValue.build());
+    public Builder addQuestBuddyEvolutionRequirement(
+        int index, POGOProtos.Rpc.ClientQuestProto.Builder builderForValue) {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        ensureQuestBuddyEvolutionRequirementIsMutable();
+        questBuddyEvolutionRequirement_.add(index, builderForValue.build());
         onChanged();
       } else {
-        field1Builder_.addMessage(index, builderForValue.build());
+        questBuddyEvolutionRequirementBuilder_.addMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public Builder addAllField1(
-        java.lang.Iterable<? extends POGOProtos.Rpc.PokemonField1> values) {
-      if (field1Builder_ == null) {
-        ensureField1IsMutable();
+    public Builder addAllQuestBuddyEvolutionRequirement(
+        java.lang.Iterable<? extends POGOProtos.Rpc.ClientQuestProto> values) {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        ensureQuestBuddyEvolutionRequirementIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, field1_);
+            values, questBuddyEvolutionRequirement_);
         onChanged();
       } else {
-        field1Builder_.addAllMessages(values);
+        questBuddyEvolutionRequirementBuilder_.addAllMessages(values);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public Builder clearField1() {
-      if (field1Builder_ == null) {
-        field1_ = java.util.Collections.emptyList();
+    public Builder clearQuestBuddyEvolutionRequirement() {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        questBuddyEvolutionRequirement_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
       } else {
-        field1Builder_.clear();
+        questBuddyEvolutionRequirementBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public Builder removeField1(int index) {
-      if (field1Builder_ == null) {
-        ensureField1IsMutable();
-        field1_.remove(index);
+    public Builder removeQuestBuddyEvolutionRequirement(int index) {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        ensureQuestBuddyEvolutionRequirementIsMutable();
+        questBuddyEvolutionRequirement_.remove(index);
         onChanged();
       } else {
-        field1Builder_.remove(index);
+        questBuddyEvolutionRequirementBuilder_.remove(index);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public POGOProtos.Rpc.PokemonField1.Builder getField1Builder(
+    public POGOProtos.Rpc.ClientQuestProto.Builder getQuestBuddyEvolutionRequirementBuilder(
         int index) {
-      return getField1FieldBuilder().getBuilder(index);
+      return getQuestBuddyEvolutionRequirementFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public POGOProtos.Rpc.PokemonField1OrBuilder getField1OrBuilder(
+    public POGOProtos.Rpc.ClientQuestProtoOrBuilder getQuestBuddyEvolutionRequirementOrBuilder(
         int index) {
-      if (field1Builder_ == null) {
-        return field1_.get(index);  } else {
-        return field1Builder_.getMessageOrBuilder(index);
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        return questBuddyEvolutionRequirement_.get(index);  } else {
+        return questBuddyEvolutionRequirementBuilder_.getMessageOrBuilder(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.PokemonField1OrBuilder> 
-         getField1OrBuilderList() {
-      if (field1Builder_ != null) {
-        return field1Builder_.getMessageOrBuilderList();
+    public java.util.List<? extends POGOProtos.Rpc.ClientQuestProtoOrBuilder> 
+         getQuestBuddyEvolutionRequirementOrBuilderList() {
+      if (questBuddyEvolutionRequirementBuilder_ != null) {
+        return questBuddyEvolutionRequirementBuilder_.getMessageOrBuilderList();
       } else {
-        return java.util.Collections.unmodifiableList(field1_);
+        return java.util.Collections.unmodifiableList(questBuddyEvolutionRequirement_);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public POGOProtos.Rpc.PokemonField1.Builder addField1Builder() {
-      return getField1FieldBuilder().addBuilder(
-          POGOProtos.Rpc.PokemonField1.getDefaultInstance());
+    public POGOProtos.Rpc.ClientQuestProto.Builder addQuestBuddyEvolutionRequirementBuilder() {
+      return getQuestBuddyEvolutionRequirementFieldBuilder().addBuilder(
+          POGOProtos.Rpc.ClientQuestProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public POGOProtos.Rpc.PokemonField1.Builder addField1Builder(
+    public POGOProtos.Rpc.ClientQuestProto.Builder addQuestBuddyEvolutionRequirementBuilder(
         int index) {
-      return getField1FieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.PokemonField1.getDefaultInstance());
+      return getQuestBuddyEvolutionRequirementFieldBuilder().addBuilder(
+          index, POGOProtos.Rpc.ClientQuestProto.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PokemonField1 field1 = 64;</code>
+     * <code>repeated .POGOProtos.Rpc.ClientQuestProto quest_buddy_evolution_requirement = 64;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PokemonField1.Builder> 
-         getField1BuilderList() {
-      return getField1FieldBuilder().getBuilderList();
+    public java.util.List<POGOProtos.Rpc.ClientQuestProto.Builder> 
+         getQuestBuddyEvolutionRequirementBuilderList() {
+      return getQuestBuddyEvolutionRequirementFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PokemonField1, POGOProtos.Rpc.PokemonField1.Builder, POGOProtos.Rpc.PokemonField1OrBuilder> 
-        getField1FieldBuilder() {
-      if (field1Builder_ == null) {
-        field1Builder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.PokemonField1, POGOProtos.Rpc.PokemonField1.Builder, POGOProtos.Rpc.PokemonField1OrBuilder>(
-                field1_,
+        POGOProtos.Rpc.ClientQuestProto, POGOProtos.Rpc.ClientQuestProto.Builder, POGOProtos.Rpc.ClientQuestProtoOrBuilder> 
+        getQuestBuddyEvolutionRequirementFieldBuilder() {
+      if (questBuddyEvolutionRequirementBuilder_ == null) {
+        questBuddyEvolutionRequirementBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            POGOProtos.Rpc.ClientQuestProto, POGOProtos.Rpc.ClientQuestProto.Builder, POGOProtos.Rpc.ClientQuestProtoOrBuilder>(
+                questBuddyEvolutionRequirement_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
                 isClean());
-        field1_ = null;
+        questBuddyEvolutionRequirement_ = null;
       }
-      return field1Builder_;
+      return questBuddyEvolutionRequirementBuilder_;
     }
 
     private POGOProtos.Rpc.PokemonCreateDetail originDetail_;
