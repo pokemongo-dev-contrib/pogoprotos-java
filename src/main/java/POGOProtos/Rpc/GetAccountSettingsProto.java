@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetAccountSettingsProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetAccountSettingsProto}
  */
-public final class GetAccountSettingsProto extends
+public  final class GetAccountSettingsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetAccountSettingsProto)
     GetAccountSettingsProtoOrBuilder {
@@ -229,10 +225,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetAccountSettingsProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetAccountSettingsProto}
    */
   public static final class Builder extends

@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: GAOCOIIFECP
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.HoloPokemonFamilyId}
  */
 public enum HoloPokemonFamilyId
@@ -1340,6 +1336,154 @@ public enum HoloPokemonFamilyId
    * <code>FAMILY_GENESECT = 649;</code>
    */
   FAMILY_GENESECT(649),
+  /**
+   * <code>FAMILY_CHESPIN = 650;</code>
+   */
+  FAMILY_CHESPIN(650),
+  /**
+   * <code>FAMILY_FENNEKIN = 653;</code>
+   */
+  FAMILY_FENNEKIN(653),
+  /**
+   * <code>FAMILY_FROAKIE = 656;</code>
+   */
+  FAMILY_FROAKIE(656),
+  /**
+   * <code>FAMILY_BUNNELBY = 659;</code>
+   */
+  FAMILY_BUNNELBY(659),
+  /**
+   * <code>FAMILY_FLETCHLING = 661;</code>
+   */
+  FAMILY_FLETCHLING(661),
+  /**
+   * <code>FAMILY_SCATTERBUG = 664;</code>
+   */
+  FAMILY_SCATTERBUG(664),
+  /**
+   * <code>FAMILY_LITLEO = 667;</code>
+   */
+  FAMILY_LITLEO(667),
+  /**
+   * <code>FAMILY_FLABEBE = 669;</code>
+   */
+  FAMILY_FLABEBE(669),
+  /**
+   * <code>FAMILY_SKIDDO = 672;</code>
+   */
+  FAMILY_SKIDDO(672),
+  /**
+   * <code>FAMILY_PANCHAM = 674;</code>
+   */
+  FAMILY_PANCHAM(674),
+  /**
+   * <code>FAMILY_FURFROU = 676;</code>
+   */
+  FAMILY_FURFROU(676),
+  /**
+   * <code>FAMILY_ESPURR = 677;</code>
+   */
+  FAMILY_ESPURR(677),
+  /**
+   * <code>FAMILY_HONEDGE = 679;</code>
+   */
+  FAMILY_HONEDGE(679),
+  /**
+   * <code>FAMILY_SPRITZEE = 682;</code>
+   */
+  FAMILY_SPRITZEE(682),
+  /**
+   * <code>FAMILY_SWIRLIX = 684;</code>
+   */
+  FAMILY_SWIRLIX(684),
+  /**
+   * <code>FAMILY_INKAY = 686;</code>
+   */
+  FAMILY_INKAY(686),
+  /**
+   * <code>FAMILY_BINACLE = 688;</code>
+   */
+  FAMILY_BINACLE(688),
+  /**
+   * <code>FAMILY_SKRELP = 690;</code>
+   */
+  FAMILY_SKRELP(690),
+  /**
+   * <code>FAMILY_CLAUNCHER = 692;</code>
+   */
+  FAMILY_CLAUNCHER(692),
+  /**
+   * <code>FAMILY_HELIOPTILE = 694;</code>
+   */
+  FAMILY_HELIOPTILE(694),
+  /**
+   * <code>FAMILY_TYRUNT = 696;</code>
+   */
+  FAMILY_TYRUNT(696),
+  /**
+   * <code>FAMILY_AMAURA = 698;</code>
+   */
+  FAMILY_AMAURA(698),
+  /**
+   * <code>FAMILY_HAWLUCHA = 701;</code>
+   */
+  FAMILY_HAWLUCHA(701),
+  /**
+   * <code>FAMILY_DEDENNE = 702;</code>
+   */
+  FAMILY_DEDENNE(702),
+  /**
+   * <code>FAMILY_CARBINK = 703;</code>
+   */
+  FAMILY_CARBINK(703),
+  /**
+   * <code>FAMILY_GOOMY = 704;</code>
+   */
+  FAMILY_GOOMY(704),
+  /**
+   * <code>FAMILY_KLEFKI = 707;</code>
+   */
+  FAMILY_KLEFKI(707),
+  /**
+   * <code>FAMILY_PHANTUMP = 708;</code>
+   */
+  FAMILY_PHANTUMP(708),
+  /**
+   * <code>FAMILY_PUMPKABOO = 710;</code>
+   */
+  FAMILY_PUMPKABOO(710),
+  /**
+   * <code>FAMILY_BERGMITE = 712;</code>
+   */
+  FAMILY_BERGMITE(712),
+  /**
+   * <code>FAMILY_NOIBAT = 714;</code>
+   */
+  FAMILY_NOIBAT(714),
+  /**
+   * <code>FAMILY_XERNEAS = 716;</code>
+   */
+  FAMILY_XERNEAS(716),
+  /**
+   * <code>FAMILY_YVELTAL = 717;</code>
+   */
+  FAMILY_YVELTAL(717),
+  /**
+   * <code>FAMILY_ZYGARDE = 718;</code>
+   */
+  FAMILY_ZYGARDE(718),
+  /**
+   * <code>FAMILY_DIANCIE = 719;</code>
+   */
+  FAMILY_DIANCIE(719),
+  /**
+   * <code>FAMILY_HOOPA = 720;</code>
+   */
+  FAMILY_HOOPA(720),
+  /**
+   * <code>FAMILY_VOLCANION = 721;</code>
+   */
+  FAMILY_VOLCANION(721),
   /**
    * <code>FAMILY_MELTAN = 808;</code>
    */
@@ -2676,6 +2820,154 @@ public enum HoloPokemonFamilyId
    */
   public static final int FAMILY_GENESECT_VALUE = 649;
   /**
+   * <code>FAMILY_CHESPIN = 650;</code>
+   */
+  public static final int FAMILY_CHESPIN_VALUE = 650;
+  /**
+   * <code>FAMILY_FENNEKIN = 653;</code>
+   */
+  public static final int FAMILY_FENNEKIN_VALUE = 653;
+  /**
+   * <code>FAMILY_FROAKIE = 656;</code>
+   */
+  public static final int FAMILY_FROAKIE_VALUE = 656;
+  /**
+   * <code>FAMILY_BUNNELBY = 659;</code>
+   */
+  public static final int FAMILY_BUNNELBY_VALUE = 659;
+  /**
+   * <code>FAMILY_FLETCHLING = 661;</code>
+   */
+  public static final int FAMILY_FLETCHLING_VALUE = 661;
+  /**
+   * <code>FAMILY_SCATTERBUG = 664;</code>
+   */
+  public static final int FAMILY_SCATTERBUG_VALUE = 664;
+  /**
+   * <code>FAMILY_LITLEO = 667;</code>
+   */
+  public static final int FAMILY_LITLEO_VALUE = 667;
+  /**
+   * <code>FAMILY_FLABEBE = 669;</code>
+   */
+  public static final int FAMILY_FLABEBE_VALUE = 669;
+  /**
+   * <code>FAMILY_SKIDDO = 672;</code>
+   */
+  public static final int FAMILY_SKIDDO_VALUE = 672;
+  /**
+   * <code>FAMILY_PANCHAM = 674;</code>
+   */
+  public static final int FAMILY_PANCHAM_VALUE = 674;
+  /**
+   * <code>FAMILY_FURFROU = 676;</code>
+   */
+  public static final int FAMILY_FURFROU_VALUE = 676;
+  /**
+   * <code>FAMILY_ESPURR = 677;</code>
+   */
+  public static final int FAMILY_ESPURR_VALUE = 677;
+  /**
+   * <code>FAMILY_HONEDGE = 679;</code>
+   */
+  public static final int FAMILY_HONEDGE_VALUE = 679;
+  /**
+   * <code>FAMILY_SPRITZEE = 682;</code>
+   */
+  public static final int FAMILY_SPRITZEE_VALUE = 682;
+  /**
+   * <code>FAMILY_SWIRLIX = 684;</code>
+   */
+  public static final int FAMILY_SWIRLIX_VALUE = 684;
+  /**
+   * <code>FAMILY_INKAY = 686;</code>
+   */
+  public static final int FAMILY_INKAY_VALUE = 686;
+  /**
+   * <code>FAMILY_BINACLE = 688;</code>
+   */
+  public static final int FAMILY_BINACLE_VALUE = 688;
+  /**
+   * <code>FAMILY_SKRELP = 690;</code>
+   */
+  public static final int FAMILY_SKRELP_VALUE = 690;
+  /**
+   * <code>FAMILY_CLAUNCHER = 692;</code>
+   */
+  public static final int FAMILY_CLAUNCHER_VALUE = 692;
+  /**
+   * <code>FAMILY_HELIOPTILE = 694;</code>
+   */
+  public static final int FAMILY_HELIOPTILE_VALUE = 694;
+  /**
+   * <code>FAMILY_TYRUNT = 696;</code>
+   */
+  public static final int FAMILY_TYRUNT_VALUE = 696;
+  /**
+   * <code>FAMILY_AMAURA = 698;</code>
+   */
+  public static final int FAMILY_AMAURA_VALUE = 698;
+  /**
+   * <code>FAMILY_HAWLUCHA = 701;</code>
+   */
+  public static final int FAMILY_HAWLUCHA_VALUE = 701;
+  /**
+   * <code>FAMILY_DEDENNE = 702;</code>
+   */
+  public static final int FAMILY_DEDENNE_VALUE = 702;
+  /**
+   * <code>FAMILY_CARBINK = 703;</code>
+   */
+  public static final int FAMILY_CARBINK_VALUE = 703;
+  /**
+   * <code>FAMILY_GOOMY = 704;</code>
+   */
+  public static final int FAMILY_GOOMY_VALUE = 704;
+  /**
+   * <code>FAMILY_KLEFKI = 707;</code>
+   */
+  public static final int FAMILY_KLEFKI_VALUE = 707;
+  /**
+   * <code>FAMILY_PHANTUMP = 708;</code>
+   */
+  public static final int FAMILY_PHANTUMP_VALUE = 708;
+  /**
+   * <code>FAMILY_PUMPKABOO = 710;</code>
+   */
+  public static final int FAMILY_PUMPKABOO_VALUE = 710;
+  /**
+   * <code>FAMILY_BERGMITE = 712;</code>
+   */
+  public static final int FAMILY_BERGMITE_VALUE = 712;
+  /**
+   * <code>FAMILY_NOIBAT = 714;</code>
+   */
+  public static final int FAMILY_NOIBAT_VALUE = 714;
+  /**
+   * <code>FAMILY_XERNEAS = 716;</code>
+   */
+  public static final int FAMILY_XERNEAS_VALUE = 716;
+  /**
+   * <code>FAMILY_YVELTAL = 717;</code>
+   */
+  public static final int FAMILY_YVELTAL_VALUE = 717;
+  /**
+   * <code>FAMILY_ZYGARDE = 718;</code>
+   */
+  public static final int FAMILY_ZYGARDE_VALUE = 718;
+  /**
+   * <code>FAMILY_DIANCIE = 719;</code>
+   */
+  public static final int FAMILY_DIANCIE_VALUE = 719;
+  /**
+   * <code>FAMILY_HOOPA = 720;</code>
+   */
+  public static final int FAMILY_HOOPA_VALUE = 720;
+  /**
+   * <code>FAMILY_VOLCANION = 721;</code>
+   */
+  public static final int FAMILY_VOLCANION_VALUE = 721;
+  /**
    * <code>FAMILY_MELTAN = 808;</code>
    */
   public static final int FAMILY_MELTAN_VALUE = 808;
@@ -3037,6 +3329,43 @@ public enum HoloPokemonFamilyId
       case 647: return FAMILY_KELDEO;
       case 648: return FAMILY_MELOETTA;
       case 649: return FAMILY_GENESECT;
+      case 650: return FAMILY_CHESPIN;
+      case 653: return FAMILY_FENNEKIN;
+      case 656: return FAMILY_FROAKIE;
+      case 659: return FAMILY_BUNNELBY;
+      case 661: return FAMILY_FLETCHLING;
+      case 664: return FAMILY_SCATTERBUG;
+      case 667: return FAMILY_LITLEO;
+      case 669: return FAMILY_FLABEBE;
+      case 672: return FAMILY_SKIDDO;
+      case 674: return FAMILY_PANCHAM;
+      case 676: return FAMILY_FURFROU;
+      case 677: return FAMILY_ESPURR;
+      case 679: return FAMILY_HONEDGE;
+      case 682: return FAMILY_SPRITZEE;
+      case 684: return FAMILY_SWIRLIX;
+      case 686: return FAMILY_INKAY;
+      case 688: return FAMILY_BINACLE;
+      case 690: return FAMILY_SKRELP;
+      case 692: return FAMILY_CLAUNCHER;
+      case 694: return FAMILY_HELIOPTILE;
+      case 696: return FAMILY_TYRUNT;
+      case 698: return FAMILY_AMAURA;
+      case 701: return FAMILY_HAWLUCHA;
+      case 702: return FAMILY_DEDENNE;
+      case 703: return FAMILY_CARBINK;
+      case 704: return FAMILY_GOOMY;
+      case 707: return FAMILY_KLEFKI;
+      case 708: return FAMILY_PHANTUMP;
+      case 710: return FAMILY_PUMPKABOO;
+      case 712: return FAMILY_BERGMITE;
+      case 714: return FAMILY_NOIBAT;
+      case 716: return FAMILY_XERNEAS;
+      case 717: return FAMILY_YVELTAL;
+      case 718: return FAMILY_ZYGARDE;
+      case 719: return FAMILY_DIANCIE;
+      case 720: return FAMILY_HOOPA;
+      case 721: return FAMILY_VOLCANION;
       case 808: return FAMILY_MELTAN;
       default: return null;
     }
@@ -3056,10 +3385,6 @@ public enum HoloPokemonFamilyId
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -3068,7 +3393,7 @@ public enum HoloPokemonFamilyId
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(72);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(55);
   }
 
   private static final HoloPokemonFamilyId[] VALUES = values();

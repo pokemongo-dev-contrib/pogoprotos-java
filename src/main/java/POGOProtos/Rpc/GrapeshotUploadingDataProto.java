@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GrapeshotUploadingDataProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GrapeshotUploadingDataProto}
  */
-public final class GrapeshotUploadingDataProto extends
+public  final class GrapeshotUploadingDataProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GrapeshotUploadingDataProto)
     GrapeshotUploadingDataProtoOrBuilder {
@@ -128,14 +124,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.GrapeshotChunkDataProto chunk_data = 1;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.GrapeshotChunkDataProto> getChunkDataList() {
     return chunkData_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GrapeshotChunkDataProto chunk_data = 1;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.GrapeshotChunkDataProtoOrBuilder> 
       getChunkDataOrBuilderList() {
     return chunkData_;
@@ -143,21 +137,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.GrapeshotChunkDataProto chunk_data = 1;</code>
    */
-  @java.lang.Override
   public int getChunkDataCount() {
     return chunkData_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GrapeshotChunkDataProto chunk_data = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GrapeshotChunkDataProto getChunkData(int index) {
     return chunkData_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GrapeshotChunkDataProto chunk_data = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GrapeshotChunkDataProtoOrBuilder getChunkDataOrBuilder(
       int index) {
     return chunkData_.get(index);
@@ -169,7 +160,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GrapeshotComposeDataProto compose_data = 2;</code>
    * @return Whether the composeData field is set.
    */
-  @java.lang.Override
   public boolean hasComposeData() {
     return composeData_ != null;
   }
@@ -177,14 +167,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GrapeshotComposeDataProto compose_data = 2;</code>
    * @return The composeData.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GrapeshotComposeDataProto getComposeData() {
     return composeData_ == null ? POGOProtos.Rpc.GrapeshotComposeDataProto.getDefaultInstance() : composeData_;
   }
   /**
    * <code>.POGOProtos.Rpc.GrapeshotComposeDataProto compose_data = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GrapeshotComposeDataProtoOrBuilder getComposeDataOrBuilder() {
     return getComposeData();
   }
@@ -195,7 +183,6 @@ private static final long serialVersionUID = 0L;
    * <code>string gcs_bucket = 3;</code>
    * @return The gcsBucket.
    */
-  @java.lang.Override
   public java.lang.String getGcsBucket() {
     java.lang.Object ref = gcsBucket_;
     if (ref instanceof java.lang.String) {
@@ -212,7 +199,6 @@ private static final long serialVersionUID = 0L;
    * <code>string gcs_bucket = 3;</code>
    * @return The bytes for gcsBucket.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getGcsBucketBytes() {
     java.lang.Object ref = gcsBucket_;
@@ -233,7 +219,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 number_of_chunks = 4;</code>
    * @return The numberOfChunks.
    */
-  @java.lang.Override
   public int getNumberOfChunks() {
     return numberOfChunks_;
   }
@@ -433,10 +418,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GrapeshotUploadingDataProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GrapeshotUploadingDataProto}
    */
   public static final class Builder extends
@@ -1088,7 +1069,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 number_of_chunks = 4;</code>
      * @return The numberOfChunks.
      */
-    @java.lang.Override
     public int getNumberOfChunks() {
       return numberOfChunks_;
     }

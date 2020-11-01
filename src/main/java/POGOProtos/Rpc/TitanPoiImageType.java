@@ -4,13 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End rpc -----
- *------------------------------
- *----- Begin telemetry -----
- * ref: Niantic.Platform.Analytics.Telemetry.PoiImageType
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.TitanPoiImageType}
  */
 public enum TitanPoiImageType
@@ -89,10 +82,6 @@ public enum TitanPoiImageType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -101,7 +90,7 @@ public enum TitanPoiImageType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(144);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(141);
   }
 
   private static final TitanPoiImageType[] VALUES = values();

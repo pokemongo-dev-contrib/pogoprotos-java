@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: PFLNDAIGFNP
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.RemoteRaidInviteAcceptSource}
  */
 public enum RemoteRaidInviteAcceptSource
@@ -95,10 +91,6 @@ public enum RemoteRaidInviteAcceptSource
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -107,7 +99,7 @@ public enum RemoteRaidInviteAcceptSource
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(127);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(126);
   }
 
   private static final RemoteRaidInviteAcceptSource[] VALUES = values();

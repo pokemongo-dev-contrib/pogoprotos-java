@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: OKAAHEEHFII
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.OnboardingEventIds}
  */
 public enum OnboardingEventIds
@@ -311,10 +307,6 @@ public enum OnboardingEventIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -323,7 +315,7 @@ public enum OnboardingEventIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(123);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(89);
   }
 
   private static final OnboardingEventIds[] VALUES = values();

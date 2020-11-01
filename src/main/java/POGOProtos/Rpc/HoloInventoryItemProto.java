@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: ENHOCPLJKMD
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.HoloInventoryItemProto}
  */
-public final class HoloInventoryItemProto extends
+public  final class HoloInventoryItemProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.HoloInventoryItemProto)
     HoloInventoryItemProtoOrBuilder {
@@ -53,269 +49,297 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 10: {
-            POGOProtos.Rpc.PokemonProto.Builder subBuilder = null;
-            if (typeCase_ == 1) {
-              subBuilder = ((POGOProtos.Rpc.PokemonProto) type_).toBuilder();
+            POGOProtos.Rpc.KHNLPGENFBI.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 1) {
+              subBuilder = ((POGOProtos.Rpc.KHNLPGENFBI) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.PokemonProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.KHNLPGENFBI.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.PokemonProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.KHNLPGENFBI) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 1;
+            mOPKNKPOEKICase_ = 1;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.ItemProto.Builder subBuilder = null;
-            if (typeCase_ == 2) {
-              subBuilder = ((POGOProtos.Rpc.ItemProto) type_).toBuilder();
+            POGOProtos.Rpc.GPBEJNNGKLO.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 2) {
+              subBuilder = ((POGOProtos.Rpc.GPBEJNNGKLO) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.ItemProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.GPBEJNNGKLO.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.ItemProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.GPBEJNNGKLO) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 2;
+            mOPKNKPOEKICase_ = 2;
             break;
           }
           case 26: {
-            POGOProtos.Rpc.PokedexEntryProto.Builder subBuilder = null;
-            if (typeCase_ == 3) {
-              subBuilder = ((POGOProtos.Rpc.PokedexEntryProto) type_).toBuilder();
+            POGOProtos.Rpc.GNPJBHFIOJE.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 3) {
+              subBuilder = ((POGOProtos.Rpc.GNPJBHFIOJE) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.PokedexEntryProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.GNPJBHFIOJE.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.PokedexEntryProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.GNPJBHFIOJE) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 3;
+            mOPKNKPOEKICase_ = 3;
             break;
           }
           case 34: {
-            POGOProtos.Rpc.PlayerStatsProto.Builder subBuilder = null;
-            if (typeCase_ == 4) {
-              subBuilder = ((POGOProtos.Rpc.PlayerStatsProto) type_).toBuilder();
+            POGOProtos.Rpc.ECAIODIHEJC.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 4) {
+              subBuilder = ((POGOProtos.Rpc.ECAIODIHEJC) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.PlayerStatsProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.ECAIODIHEJC.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.PlayerStatsProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ECAIODIHEJC) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 4;
+            mOPKNKPOEKICase_ = 4;
             break;
           }
           case 42: {
-            POGOProtos.Rpc.PlayerCurrencyProto.Builder subBuilder = null;
-            if (typeCase_ == 5) {
-              subBuilder = ((POGOProtos.Rpc.PlayerCurrencyProto) type_).toBuilder();
+            POGOProtos.Rpc.IIONNJJAHCI.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 5) {
+              subBuilder = ((POGOProtos.Rpc.IIONNJJAHCI) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.PlayerCurrencyProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.IIONNJJAHCI.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.PlayerCurrencyProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.IIONNJJAHCI) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 5;
+            mOPKNKPOEKICase_ = 5;
             break;
           }
           case 50: {
-            POGOProtos.Rpc.PlayerCameraProto.Builder subBuilder = null;
-            if (typeCase_ == 6) {
-              subBuilder = ((POGOProtos.Rpc.PlayerCameraProto) type_).toBuilder();
+            POGOProtos.Rpc.GMPIGMKKEEH.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 6) {
+              subBuilder = ((POGOProtos.Rpc.GMPIGMKKEEH) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.PlayerCameraProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.GMPIGMKKEEH.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.PlayerCameraProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.GMPIGMKKEEH) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 6;
+            mOPKNKPOEKICase_ = 6;
             break;
           }
           case 58: {
-            POGOProtos.Rpc.InventoryUpgradesProto.Builder subBuilder = null;
-            if (typeCase_ == 7) {
-              subBuilder = ((POGOProtos.Rpc.InventoryUpgradesProto) type_).toBuilder();
+            POGOProtos.Rpc.AFFIJCGEPNG.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.AFFIJCGEPNG) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.InventoryUpgradesProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.AFFIJCGEPNG.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.InventoryUpgradesProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.AFFIJCGEPNG) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 7;
+            mOPKNKPOEKICase_ = 7;
             break;
           }
           case 66: {
-            POGOProtos.Rpc.AppliedItemsProto.Builder subBuilder = null;
-            if (typeCase_ == 8) {
-              subBuilder = ((POGOProtos.Rpc.AppliedItemsProto) type_).toBuilder();
+            POGOProtos.Rpc.JMKKOPGIOJE.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 8) {
+              subBuilder = ((POGOProtos.Rpc.JMKKOPGIOJE) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.AppliedItemsProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.JMKKOPGIOJE.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.AppliedItemsProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.JMKKOPGIOJE) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 8;
+            mOPKNKPOEKICase_ = 8;
             break;
           }
           case 74: {
-            POGOProtos.Rpc.EggIncubatorsProto.Builder subBuilder = null;
-            if (typeCase_ == 9) {
-              subBuilder = ((POGOProtos.Rpc.EggIncubatorsProto) type_).toBuilder();
+            POGOProtos.Rpc.MGBPEOMIEPM.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 9) {
+              subBuilder = ((POGOProtos.Rpc.MGBPEOMIEPM) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.EggIncubatorsProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.MGBPEOMIEPM.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.EggIncubatorsProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.MGBPEOMIEPM) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 9;
+            mOPKNKPOEKICase_ = 9;
             break;
           }
           case 82: {
-            POGOProtos.Rpc.PokemonFamilyProto.Builder subBuilder = null;
-            if (typeCase_ == 10) {
-              subBuilder = ((POGOProtos.Rpc.PokemonFamilyProto) type_).toBuilder();
+            POGOProtos.Rpc.GGJABKKNMFJ.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 10) {
+              subBuilder = ((POGOProtos.Rpc.GGJABKKNMFJ) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.PokemonFamilyProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.GGJABKKNMFJ.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.PokemonFamilyProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.GGJABKKNMFJ) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 10;
+            mOPKNKPOEKICase_ = 10;
             break;
           }
           case 90: {
             POGOProtos.Rpc.QuestProto.Builder subBuilder = null;
-            if (typeCase_ == 11) {
-              subBuilder = ((POGOProtos.Rpc.QuestProto) type_).toBuilder();
+            if (mOPKNKPOEKICase_ == 11) {
+              subBuilder = ((POGOProtos.Rpc.QuestProto) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
+            mOPKNKPOEKI_ =
                 input.readMessage(POGOProtos.Rpc.QuestProto.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.QuestProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.QuestProto) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 11;
+            mOPKNKPOEKICase_ = 11;
             break;
           }
           case 98: {
-            POGOProtos.Rpc.AvatarItemProto.Builder subBuilder = null;
-            if (typeCase_ == 12) {
-              subBuilder = ((POGOProtos.Rpc.AvatarItemProto) type_).toBuilder();
+            POGOProtos.Rpc.FCGOBNEJEAP.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 12) {
+              subBuilder = ((POGOProtos.Rpc.FCGOBNEJEAP) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.AvatarItemProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.FCGOBNEJEAP.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.AvatarItemProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.FCGOBNEJEAP) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 12;
+            mOPKNKPOEKICase_ = 12;
             break;
           }
           case 106: {
-            POGOProtos.Rpc.RaidTicketsProto.Builder subBuilder = null;
-            if (typeCase_ == 13) {
-              subBuilder = ((POGOProtos.Rpc.RaidTicketsProto) type_).toBuilder();
+            POGOProtos.Rpc.FKJJHDKALOL.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 13) {
+              subBuilder = ((POGOProtos.Rpc.FKJJHDKALOL) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.RaidTicketsProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.FKJJHDKALOL.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.RaidTicketsProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.FKJJHDKALOL) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 13;
+            mOPKNKPOEKICase_ = 13;
             break;
           }
           case 114: {
-            POGOProtos.Rpc.QuestsProto.Builder subBuilder = null;
-            if (typeCase_ == 14) {
-              subBuilder = ((POGOProtos.Rpc.QuestsProto) type_).toBuilder();
+            POGOProtos.Rpc.IECKOBJLECF.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 14) {
+              subBuilder = ((POGOProtos.Rpc.IECKOBJLECF) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.QuestsProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.IECKOBJLECF.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.QuestsProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.IECKOBJLECF) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 14;
+            mOPKNKPOEKICase_ = 14;
             break;
           }
           case 122: {
-            POGOProtos.Rpc.GiftBoxesProto.Builder subBuilder = null;
-            if (typeCase_ == 15) {
-              subBuilder = ((POGOProtos.Rpc.GiftBoxesProto) type_).toBuilder();
+            POGOProtos.Rpc.HOCPODGGBJG.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 15) {
+              subBuilder = ((POGOProtos.Rpc.HOCPODGGBJG) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.GiftBoxesProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.HOCPODGGBJG.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.GiftBoxesProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.HOCPODGGBJG) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 15;
+            mOPKNKPOEKICase_ = 15;
             break;
           }
           case 130: {
-            POGOProtos.Rpc.BelugaIncenseBoxProto.Builder subBuilder = null;
-            if (typeCase_ == 16) {
-              subBuilder = ((POGOProtos.Rpc.BelugaIncenseBoxProto) type_).toBuilder();
+            POGOProtos.Rpc.OELMJAJBGHO.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 16) {
+              subBuilder = ((POGOProtos.Rpc.OELMJAJBGHO) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.BelugaIncenseBoxProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.OELMJAJBGHO.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.BelugaIncenseBoxProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.OELMJAJBGHO) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 16;
+            mOPKNKPOEKICase_ = 16;
             break;
           }
           case 154: {
-            POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.Builder subBuilder = null;
-            if (typeCase_ == 19) {
-              subBuilder = ((POGOProtos.Rpc.LimitedPurchaseSkuRecordProto) type_).toBuilder();
+            POGOProtos.Rpc.OEPAEKONHHL.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 19) {
+              subBuilder = ((POGOProtos.Rpc.OEPAEKONHHL) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.OEPAEKONHHL.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.LimitedPurchaseSkuRecordProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.OEPAEKONHHL) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 19;
+            mOPKNKPOEKICase_ = 19;
             break;
           }
           case 170: {
-            POGOProtos.Rpc.MegaEvoleSpeciesProto.Builder subBuilder = null;
-            if (typeCase_ == 21) {
-              subBuilder = ((POGOProtos.Rpc.MegaEvoleSpeciesProto) type_).toBuilder();
+            POGOProtos.Rpc.GABBAGFEALC.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 21) {
+              subBuilder = ((POGOProtos.Rpc.GABBAGFEALC) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.MegaEvoleSpeciesProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.GABBAGFEALC.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.MegaEvoleSpeciesProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.GABBAGFEALC) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 21;
+            mOPKNKPOEKICase_ = 21;
             break;
           }
           case 178: {
-            POGOProtos.Rpc.StickerProto.Builder subBuilder = null;
-            if (typeCase_ == 22) {
-              subBuilder = ((POGOProtos.Rpc.StickerProto) type_).toBuilder();
+            POGOProtos.Rpc.ELBNNGIDEOG.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 22) {
+              subBuilder = ((POGOProtos.Rpc.ELBNNGIDEOG) mOPKNKPOEKI_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.StickerProto.parser(), extensionRegistry);
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.ELBNNGIDEOG.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.StickerProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.ELBNNGIDEOG) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
             }
-            typeCase_ = 22;
+            mOPKNKPOEKICase_ = 22;
+            break;
+          }
+          case 186: {
+            POGOProtos.Rpc.CIAMKDJBBHG.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 23) {
+              subBuilder = ((POGOProtos.Rpc.CIAMKDJBBHG) mOPKNKPOEKI_).toBuilder();
+            }
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.CIAMKDJBBHG.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Rpc.CIAMKDJBBHG) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
+            }
+            mOPKNKPOEKICase_ = 23;
+            break;
+          }
+          case 202: {
+            POGOProtos.Rpc.EGGJBOKKHNN.Builder subBuilder = null;
+            if (mOPKNKPOEKICase_ == 25) {
+              subBuilder = ((POGOProtos.Rpc.EGGJBOKKHNN) mOPKNKPOEKI_).toBuilder();
+            }
+            mOPKNKPOEKI_ =
+                input.readMessage(POGOProtos.Rpc.EGGJBOKKHNN.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((POGOProtos.Rpc.EGGJBOKKHNN) mOPKNKPOEKI_);
+              mOPKNKPOEKI_ = subBuilder.buildPartial();
+            }
+            mOPKNKPOEKICase_ = 25;
             break;
           }
           default: {
@@ -350,9 +374,9 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.HoloInventoryItemProto.class, POGOProtos.Rpc.HoloInventoryItemProto.Builder.class);
   }
 
-  private int typeCase_ = 0;
-  private java.lang.Object type_;
-  public enum TypeCase
+  private int mOPKNKPOEKICase_ = 0;
+  private java.lang.Object mOPKNKPOEKI_;
+  public enum MOPKNKPOEKICase
       implements com.google.protobuf.Internal.EnumLite,
           com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     POKEMON(1),
@@ -374,9 +398,11 @@ private static final long serialVersionUID = 0L;
     LIMITED_PURCHASE_SKU_RECORD(19),
     MEGA_EVOLVE_SPECIES(21),
     STICKER(22),
-    TYPE_NOT_SET(0);
+    POKEMON_HOME(23),
+    PLAYER_STATS_SNAPSHOTS(25),
+    MOPKNKPOEKI_NOT_SET(0);
     private final int value;
-    private TypeCase(int value) {
+    private MOPKNKPOEKICase(int value) {
       this.value = value;
     }
     /**
@@ -385,11 +411,11 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static TypeCase valueOf(int value) {
+    public static MOPKNKPOEKICase valueOf(int value) {
       return forNumber(value);
     }
 
-    public static TypeCase forNumber(int value) {
+    public static MOPKNKPOEKICase forNumber(int value) {
       switch (value) {
         case 1: return POKEMON;
         case 2: return ITEM;
@@ -410,7 +436,9 @@ private static final long serialVersionUID = 0L;
         case 19: return LIMITED_PURCHASE_SKU_RECORD;
         case 21: return MEGA_EVOLVE_SPECIES;
         case 22: return STICKER;
-        case 0: return TYPE_NOT_SET;
+        case 23: return POKEMON_HOME;
+        case 25: return PLAYER_STATS_SNAPSHOTS;
+        case 0: return MOPKNKPOEKI_NOT_SET;
         default: return null;
       }
     }
@@ -419,320 +447,290 @@ private static final long serialVersionUID = 0L;
     }
   };
 
-  public TypeCase
-  getTypeCase() {
-    return TypeCase.forNumber(
-        typeCase_);
+  public MOPKNKPOEKICase
+  getMOPKNKPOEKICase() {
+    return MOPKNKPOEKICase.forNumber(
+        mOPKNKPOEKICase_);
   }
 
   public static final int POKEMON_FIELD_NUMBER = 1;
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
    * @return Whether the pokemon field is set.
    */
-  @java.lang.Override
   public boolean hasPokemon() {
-    return typeCase_ == 1;
+    return mOPKNKPOEKICase_ == 1;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
    * @return The pokemon.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonProto getPokemon() {
-    if (typeCase_ == 1) {
-       return (POGOProtos.Rpc.PokemonProto) type_;
+  public POGOProtos.Rpc.KHNLPGENFBI getPokemon() {
+    if (mOPKNKPOEKICase_ == 1) {
+       return (POGOProtos.Rpc.KHNLPGENFBI) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+    return POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonProtoOrBuilder getPokemonOrBuilder() {
-    if (typeCase_ == 1) {
-       return (POGOProtos.Rpc.PokemonProto) type_;
+  public POGOProtos.Rpc.KHNLPGENFBIOrBuilder getPokemonOrBuilder() {
+    if (mOPKNKPOEKICase_ == 1) {
+       return (POGOProtos.Rpc.KHNLPGENFBI) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+    return POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
   }
 
   public static final int ITEM_FIELD_NUMBER = 2;
   /**
-   * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+   * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
    * @return Whether the item field is set.
    */
-  @java.lang.Override
   public boolean hasItem() {
-    return typeCase_ == 2;
+    return mOPKNKPOEKICase_ == 2;
   }
   /**
-   * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+   * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
    * @return The item.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.ItemProto getItem() {
-    if (typeCase_ == 2) {
-       return (POGOProtos.Rpc.ItemProto) type_;
+  public POGOProtos.Rpc.GPBEJNNGKLO getItem() {
+    if (mOPKNKPOEKICase_ == 2) {
+       return (POGOProtos.Rpc.GPBEJNNGKLO) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.ItemProto.getDefaultInstance();
+    return POGOProtos.Rpc.GPBEJNNGKLO.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+   * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.ItemProtoOrBuilder getItemOrBuilder() {
-    if (typeCase_ == 2) {
-       return (POGOProtos.Rpc.ItemProto) type_;
+  public POGOProtos.Rpc.GPBEJNNGKLOOrBuilder getItemOrBuilder() {
+    if (mOPKNKPOEKICase_ == 2) {
+       return (POGOProtos.Rpc.GPBEJNNGKLO) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.ItemProto.getDefaultInstance();
+    return POGOProtos.Rpc.GPBEJNNGKLO.getDefaultInstance();
   }
 
   public static final int POKEDEX_ENTRY_FIELD_NUMBER = 3;
   /**
-   * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+   * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
    * @return Whether the pokedexEntry field is set.
    */
-  @java.lang.Override
   public boolean hasPokedexEntry() {
-    return typeCase_ == 3;
+    return mOPKNKPOEKICase_ == 3;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+   * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
    * @return The pokedexEntry.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokedexEntryProto getPokedexEntry() {
-    if (typeCase_ == 3) {
-       return (POGOProtos.Rpc.PokedexEntryProto) type_;
+  public POGOProtos.Rpc.GNPJBHFIOJE getPokedexEntry() {
+    if (mOPKNKPOEKICase_ == 3) {
+       return (POGOProtos.Rpc.GNPJBHFIOJE) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PokedexEntryProto.getDefaultInstance();
+    return POGOProtos.Rpc.GNPJBHFIOJE.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+   * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokedexEntryProtoOrBuilder getPokedexEntryOrBuilder() {
-    if (typeCase_ == 3) {
-       return (POGOProtos.Rpc.PokedexEntryProto) type_;
+  public POGOProtos.Rpc.GNPJBHFIOJEOrBuilder getPokedexEntryOrBuilder() {
+    if (mOPKNKPOEKICase_ == 3) {
+       return (POGOProtos.Rpc.GNPJBHFIOJE) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PokedexEntryProto.getDefaultInstance();
+    return POGOProtos.Rpc.GNPJBHFIOJE.getDefaultInstance();
   }
 
   public static final int PLAYER_STATS_FIELD_NUMBER = 4;
   /**
-   * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+   * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
    * @return Whether the playerStats field is set.
    */
-  @java.lang.Override
   public boolean hasPlayerStats() {
-    return typeCase_ == 4;
+    return mOPKNKPOEKICase_ == 4;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+   * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
    * @return The playerStats.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlayerStatsProto getPlayerStats() {
-    if (typeCase_ == 4) {
-       return (POGOProtos.Rpc.PlayerStatsProto) type_;
+  public POGOProtos.Rpc.ECAIODIHEJC getPlayerStats() {
+    if (mOPKNKPOEKICase_ == 4) {
+       return (POGOProtos.Rpc.ECAIODIHEJC) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PlayerStatsProto.getDefaultInstance();
+    return POGOProtos.Rpc.ECAIODIHEJC.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+   * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlayerStatsProtoOrBuilder getPlayerStatsOrBuilder() {
-    if (typeCase_ == 4) {
-       return (POGOProtos.Rpc.PlayerStatsProto) type_;
+  public POGOProtos.Rpc.ECAIODIHEJCOrBuilder getPlayerStatsOrBuilder() {
+    if (mOPKNKPOEKICase_ == 4) {
+       return (POGOProtos.Rpc.ECAIODIHEJC) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PlayerStatsProto.getDefaultInstance();
+    return POGOProtos.Rpc.ECAIODIHEJC.getDefaultInstance();
   }
 
   public static final int PLAYER_CURRENCY_FIELD_NUMBER = 5;
   /**
-   * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+   * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
    * @return Whether the playerCurrency field is set.
    */
-  @java.lang.Override
   public boolean hasPlayerCurrency() {
-    return typeCase_ == 5;
+    return mOPKNKPOEKICase_ == 5;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+   * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
    * @return The playerCurrency.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlayerCurrencyProto getPlayerCurrency() {
-    if (typeCase_ == 5) {
-       return (POGOProtos.Rpc.PlayerCurrencyProto) type_;
+  public POGOProtos.Rpc.IIONNJJAHCI getPlayerCurrency() {
+    if (mOPKNKPOEKICase_ == 5) {
+       return (POGOProtos.Rpc.IIONNJJAHCI) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PlayerCurrencyProto.getDefaultInstance();
+    return POGOProtos.Rpc.IIONNJJAHCI.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+   * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlayerCurrencyProtoOrBuilder getPlayerCurrencyOrBuilder() {
-    if (typeCase_ == 5) {
-       return (POGOProtos.Rpc.PlayerCurrencyProto) type_;
+  public POGOProtos.Rpc.IIONNJJAHCIOrBuilder getPlayerCurrencyOrBuilder() {
+    if (mOPKNKPOEKICase_ == 5) {
+       return (POGOProtos.Rpc.IIONNJJAHCI) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PlayerCurrencyProto.getDefaultInstance();
+    return POGOProtos.Rpc.IIONNJJAHCI.getDefaultInstance();
   }
 
   public static final int PLAYER_CAMERA_FIELD_NUMBER = 6;
   /**
-   * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+   * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
    * @return Whether the playerCamera field is set.
    */
-  @java.lang.Override
   public boolean hasPlayerCamera() {
-    return typeCase_ == 6;
+    return mOPKNKPOEKICase_ == 6;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+   * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
    * @return The playerCamera.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlayerCameraProto getPlayerCamera() {
-    if (typeCase_ == 6) {
-       return (POGOProtos.Rpc.PlayerCameraProto) type_;
+  public POGOProtos.Rpc.GMPIGMKKEEH getPlayerCamera() {
+    if (mOPKNKPOEKICase_ == 6) {
+       return (POGOProtos.Rpc.GMPIGMKKEEH) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PlayerCameraProto.getDefaultInstance();
+    return POGOProtos.Rpc.GMPIGMKKEEH.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+   * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlayerCameraProtoOrBuilder getPlayerCameraOrBuilder() {
-    if (typeCase_ == 6) {
-       return (POGOProtos.Rpc.PlayerCameraProto) type_;
+  public POGOProtos.Rpc.GMPIGMKKEEHOrBuilder getPlayerCameraOrBuilder() {
+    if (mOPKNKPOEKICase_ == 6) {
+       return (POGOProtos.Rpc.GMPIGMKKEEH) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PlayerCameraProto.getDefaultInstance();
+    return POGOProtos.Rpc.GMPIGMKKEEH.getDefaultInstance();
   }
 
   public static final int INVENTORY_UPGRADES_FIELD_NUMBER = 7;
   /**
-   * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+   * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
    * @return Whether the inventoryUpgrades field is set.
    */
-  @java.lang.Override
   public boolean hasInventoryUpgrades() {
-    return typeCase_ == 7;
+    return mOPKNKPOEKICase_ == 7;
   }
   /**
-   * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+   * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
    * @return The inventoryUpgrades.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.InventoryUpgradesProto getInventoryUpgrades() {
-    if (typeCase_ == 7) {
-       return (POGOProtos.Rpc.InventoryUpgradesProto) type_;
+  public POGOProtos.Rpc.AFFIJCGEPNG getInventoryUpgrades() {
+    if (mOPKNKPOEKICase_ == 7) {
+       return (POGOProtos.Rpc.AFFIJCGEPNG) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.InventoryUpgradesProto.getDefaultInstance();
+    return POGOProtos.Rpc.AFFIJCGEPNG.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+   * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.InventoryUpgradesProtoOrBuilder getInventoryUpgradesOrBuilder() {
-    if (typeCase_ == 7) {
-       return (POGOProtos.Rpc.InventoryUpgradesProto) type_;
+  public POGOProtos.Rpc.AFFIJCGEPNGOrBuilder getInventoryUpgradesOrBuilder() {
+    if (mOPKNKPOEKICase_ == 7) {
+       return (POGOProtos.Rpc.AFFIJCGEPNG) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.InventoryUpgradesProto.getDefaultInstance();
+    return POGOProtos.Rpc.AFFIJCGEPNG.getDefaultInstance();
   }
 
   public static final int APPLIED_ITEMS_FIELD_NUMBER = 8;
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+   * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
    * @return Whether the appliedItems field is set.
    */
-  @java.lang.Override
   public boolean hasAppliedItems() {
-    return typeCase_ == 8;
+    return mOPKNKPOEKICase_ == 8;
   }
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+   * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
    * @return The appliedItems.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.AppliedItemsProto getAppliedItems() {
-    if (typeCase_ == 8) {
-       return (POGOProtos.Rpc.AppliedItemsProto) type_;
+  public POGOProtos.Rpc.JMKKOPGIOJE getAppliedItems() {
+    if (mOPKNKPOEKICase_ == 8) {
+       return (POGOProtos.Rpc.JMKKOPGIOJE) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance();
+    return POGOProtos.Rpc.JMKKOPGIOJE.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+   * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.AppliedItemsProtoOrBuilder getAppliedItemsOrBuilder() {
-    if (typeCase_ == 8) {
-       return (POGOProtos.Rpc.AppliedItemsProto) type_;
+  public POGOProtos.Rpc.JMKKOPGIOJEOrBuilder getAppliedItemsOrBuilder() {
+    if (mOPKNKPOEKICase_ == 8) {
+       return (POGOProtos.Rpc.JMKKOPGIOJE) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance();
+    return POGOProtos.Rpc.JMKKOPGIOJE.getDefaultInstance();
   }
 
   public static final int EGG_INCUBATORS_FIELD_NUMBER = 9;
   /**
-   * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+   * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
    * @return Whether the eggIncubators field is set.
    */
-  @java.lang.Override
   public boolean hasEggIncubators() {
-    return typeCase_ == 9;
+    return mOPKNKPOEKICase_ == 9;
   }
   /**
-   * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+   * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
    * @return The eggIncubators.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.EggIncubatorsProto getEggIncubators() {
-    if (typeCase_ == 9) {
-       return (POGOProtos.Rpc.EggIncubatorsProto) type_;
+  public POGOProtos.Rpc.MGBPEOMIEPM getEggIncubators() {
+    if (mOPKNKPOEKICase_ == 9) {
+       return (POGOProtos.Rpc.MGBPEOMIEPM) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.EggIncubatorsProto.getDefaultInstance();
+    return POGOProtos.Rpc.MGBPEOMIEPM.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+   * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.EggIncubatorsProtoOrBuilder getEggIncubatorsOrBuilder() {
-    if (typeCase_ == 9) {
-       return (POGOProtos.Rpc.EggIncubatorsProto) type_;
+  public POGOProtos.Rpc.MGBPEOMIEPMOrBuilder getEggIncubatorsOrBuilder() {
+    if (mOPKNKPOEKICase_ == 9) {
+       return (POGOProtos.Rpc.MGBPEOMIEPM) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.EggIncubatorsProto.getDefaultInstance();
+    return POGOProtos.Rpc.MGBPEOMIEPM.getDefaultInstance();
   }
 
   public static final int POKEMON_FAMILY_FIELD_NUMBER = 10;
   /**
-   * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+   * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
    * @return Whether the pokemonFamily field is set.
    */
-  @java.lang.Override
   public boolean hasPokemonFamily() {
-    return typeCase_ == 10;
+    return mOPKNKPOEKICase_ == 10;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+   * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
    * @return The pokemonFamily.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonFamilyProto getPokemonFamily() {
-    if (typeCase_ == 10) {
-       return (POGOProtos.Rpc.PokemonFamilyProto) type_;
+  public POGOProtos.Rpc.GGJABKKNMFJ getPokemonFamily() {
+    if (mOPKNKPOEKICase_ == 10) {
+       return (POGOProtos.Rpc.GGJABKKNMFJ) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PokemonFamilyProto.getDefaultInstance();
+    return POGOProtos.Rpc.GGJABKKNMFJ.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+   * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonFamilyProtoOrBuilder getPokemonFamilyOrBuilder() {
-    if (typeCase_ == 10) {
-       return (POGOProtos.Rpc.PokemonFamilyProto) type_;
+  public POGOProtos.Rpc.GGJABKKNMFJOrBuilder getPokemonFamilyOrBuilder() {
+    if (mOPKNKPOEKICase_ == 10) {
+       return (POGOProtos.Rpc.GGJABKKNMFJ) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.PokemonFamilyProto.getDefaultInstance();
+    return POGOProtos.Rpc.GGJABKKNMFJ.getDefaultInstance();
   }
 
   public static final int QUEST_FIELD_NUMBER = 11;
@@ -740,278 +738,307 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.QuestProto quest = 11;</code>
    * @return Whether the quest field is set.
    */
-  @java.lang.Override
   public boolean hasQuest() {
-    return typeCase_ == 11;
+    return mOPKNKPOEKICase_ == 11;
   }
   /**
    * <code>.POGOProtos.Rpc.QuestProto quest = 11;</code>
    * @return The quest.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.QuestProto getQuest() {
-    if (typeCase_ == 11) {
-       return (POGOProtos.Rpc.QuestProto) type_;
+    if (mOPKNKPOEKICase_ == 11) {
+       return (POGOProtos.Rpc.QuestProto) mOPKNKPOEKI_;
     }
     return POGOProtos.Rpc.QuestProto.getDefaultInstance();
   }
   /**
    * <code>.POGOProtos.Rpc.QuestProto quest = 11;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.QuestProtoOrBuilder getQuestOrBuilder() {
-    if (typeCase_ == 11) {
-       return (POGOProtos.Rpc.QuestProto) type_;
+    if (mOPKNKPOEKICase_ == 11) {
+       return (POGOProtos.Rpc.QuestProto) mOPKNKPOEKI_;
     }
     return POGOProtos.Rpc.QuestProto.getDefaultInstance();
   }
 
   public static final int AVATAR_ITEM_FIELD_NUMBER = 12;
   /**
-   * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+   * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
    * @return Whether the avatarItem field is set.
    */
-  @java.lang.Override
   public boolean hasAvatarItem() {
-    return typeCase_ == 12;
+    return mOPKNKPOEKICase_ == 12;
   }
   /**
-   * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+   * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
    * @return The avatarItem.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.AvatarItemProto getAvatarItem() {
-    if (typeCase_ == 12) {
-       return (POGOProtos.Rpc.AvatarItemProto) type_;
+  public POGOProtos.Rpc.FCGOBNEJEAP getAvatarItem() {
+    if (mOPKNKPOEKICase_ == 12) {
+       return (POGOProtos.Rpc.FCGOBNEJEAP) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.AvatarItemProto.getDefaultInstance();
+    return POGOProtos.Rpc.FCGOBNEJEAP.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+   * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.AvatarItemProtoOrBuilder getAvatarItemOrBuilder() {
-    if (typeCase_ == 12) {
-       return (POGOProtos.Rpc.AvatarItemProto) type_;
+  public POGOProtos.Rpc.FCGOBNEJEAPOrBuilder getAvatarItemOrBuilder() {
+    if (mOPKNKPOEKICase_ == 12) {
+       return (POGOProtos.Rpc.FCGOBNEJEAP) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.AvatarItemProto.getDefaultInstance();
+    return POGOProtos.Rpc.FCGOBNEJEAP.getDefaultInstance();
   }
 
   public static final int RAID_TICKETS_FIELD_NUMBER = 13;
   /**
-   * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+   * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
    * @return Whether the raidTickets field is set.
    */
-  @java.lang.Override
   public boolean hasRaidTickets() {
-    return typeCase_ == 13;
+    return mOPKNKPOEKICase_ == 13;
   }
   /**
-   * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+   * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
    * @return The raidTickets.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.RaidTicketsProto getRaidTickets() {
-    if (typeCase_ == 13) {
-       return (POGOProtos.Rpc.RaidTicketsProto) type_;
+  public POGOProtos.Rpc.FKJJHDKALOL getRaidTickets() {
+    if (mOPKNKPOEKICase_ == 13) {
+       return (POGOProtos.Rpc.FKJJHDKALOL) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.RaidTicketsProto.getDefaultInstance();
+    return POGOProtos.Rpc.FKJJHDKALOL.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+   * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.RaidTicketsProtoOrBuilder getRaidTicketsOrBuilder() {
-    if (typeCase_ == 13) {
-       return (POGOProtos.Rpc.RaidTicketsProto) type_;
+  public POGOProtos.Rpc.FKJJHDKALOLOrBuilder getRaidTicketsOrBuilder() {
+    if (mOPKNKPOEKICase_ == 13) {
+       return (POGOProtos.Rpc.FKJJHDKALOL) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.RaidTicketsProto.getDefaultInstance();
+    return POGOProtos.Rpc.FKJJHDKALOL.getDefaultInstance();
   }
 
   public static final int QUESTS_FIELD_NUMBER = 14;
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
    * @return Whether the quests field is set.
    */
-  @java.lang.Override
   public boolean hasQuests() {
-    return typeCase_ == 14;
+    return mOPKNKPOEKICase_ == 14;
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
    * @return The quests.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.QuestsProto getQuests() {
-    if (typeCase_ == 14) {
-       return (POGOProtos.Rpc.QuestsProto) type_;
+  public POGOProtos.Rpc.IECKOBJLECF getQuests() {
+    if (mOPKNKPOEKICase_ == 14) {
+       return (POGOProtos.Rpc.IECKOBJLECF) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+    return POGOProtos.Rpc.IECKOBJLECF.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.QuestsProtoOrBuilder getQuestsOrBuilder() {
-    if (typeCase_ == 14) {
-       return (POGOProtos.Rpc.QuestsProto) type_;
+  public POGOProtos.Rpc.IECKOBJLECFOrBuilder getQuestsOrBuilder() {
+    if (mOPKNKPOEKICase_ == 14) {
+       return (POGOProtos.Rpc.IECKOBJLECF) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+    return POGOProtos.Rpc.IECKOBJLECF.getDefaultInstance();
   }
 
   public static final int GIFT_BOXES_FIELD_NUMBER = 15;
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+   * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
    * @return Whether the giftBoxes field is set.
    */
-  @java.lang.Override
   public boolean hasGiftBoxes() {
-    return typeCase_ == 15;
+    return mOPKNKPOEKICase_ == 15;
   }
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+   * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
    * @return The giftBoxes.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.GiftBoxesProto getGiftBoxes() {
-    if (typeCase_ == 15) {
-       return (POGOProtos.Rpc.GiftBoxesProto) type_;
+  public POGOProtos.Rpc.HOCPODGGBJG getGiftBoxes() {
+    if (mOPKNKPOEKICase_ == 15) {
+       return (POGOProtos.Rpc.HOCPODGGBJG) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.GiftBoxesProto.getDefaultInstance();
+    return POGOProtos.Rpc.HOCPODGGBJG.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+   * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.GiftBoxesProtoOrBuilder getGiftBoxesOrBuilder() {
-    if (typeCase_ == 15) {
-       return (POGOProtos.Rpc.GiftBoxesProto) type_;
+  public POGOProtos.Rpc.HOCPODGGBJGOrBuilder getGiftBoxesOrBuilder() {
+    if (mOPKNKPOEKICase_ == 15) {
+       return (POGOProtos.Rpc.HOCPODGGBJG) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.GiftBoxesProto.getDefaultInstance();
+    return POGOProtos.Rpc.HOCPODGGBJG.getDefaultInstance();
   }
 
   public static final int BELUGA_INCENSE_FIELD_NUMBER = 16;
   /**
-   * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+   * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
    * @return Whether the belugaIncense field is set.
    */
-  @java.lang.Override
   public boolean hasBelugaIncense() {
-    return typeCase_ == 16;
+    return mOPKNKPOEKICase_ == 16;
   }
   /**
-   * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+   * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
    * @return The belugaIncense.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.BelugaIncenseBoxProto getBelugaIncense() {
-    if (typeCase_ == 16) {
-       return (POGOProtos.Rpc.BelugaIncenseBoxProto) type_;
+  public POGOProtos.Rpc.OELMJAJBGHO getBelugaIncense() {
+    if (mOPKNKPOEKICase_ == 16) {
+       return (POGOProtos.Rpc.OELMJAJBGHO) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.BelugaIncenseBoxProto.getDefaultInstance();
+    return POGOProtos.Rpc.OELMJAJBGHO.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+   * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.BelugaIncenseBoxProtoOrBuilder getBelugaIncenseOrBuilder() {
-    if (typeCase_ == 16) {
-       return (POGOProtos.Rpc.BelugaIncenseBoxProto) type_;
+  public POGOProtos.Rpc.OELMJAJBGHOOrBuilder getBelugaIncenseOrBuilder() {
+    if (mOPKNKPOEKICase_ == 16) {
+       return (POGOProtos.Rpc.OELMJAJBGHO) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.BelugaIncenseBoxProto.getDefaultInstance();
+    return POGOProtos.Rpc.OELMJAJBGHO.getDefaultInstance();
   }
 
   public static final int LIMITED_PURCHASE_SKU_RECORD_FIELD_NUMBER = 19;
   /**
-   * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+   * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
    * @return Whether the limitedPurchaseSkuRecord field is set.
    */
-  @java.lang.Override
   public boolean hasLimitedPurchaseSkuRecord() {
-    return typeCase_ == 19;
+    return mOPKNKPOEKICase_ == 19;
   }
   /**
-   * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+   * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
    * @return The limitedPurchaseSkuRecord.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto getLimitedPurchaseSkuRecord() {
-    if (typeCase_ == 19) {
-       return (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto) type_;
+  public POGOProtos.Rpc.OEPAEKONHHL getLimitedPurchaseSkuRecord() {
+    if (mOPKNKPOEKICase_ == 19) {
+       return (POGOProtos.Rpc.OEPAEKONHHL) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.getDefaultInstance();
+    return POGOProtos.Rpc.OEPAEKONHHL.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+   * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.LimitedPurchaseSkuRecordProtoOrBuilder getLimitedPurchaseSkuRecordOrBuilder() {
-    if (typeCase_ == 19) {
-       return (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto) type_;
+  public POGOProtos.Rpc.OEPAEKONHHLOrBuilder getLimitedPurchaseSkuRecordOrBuilder() {
+    if (mOPKNKPOEKICase_ == 19) {
+       return (POGOProtos.Rpc.OEPAEKONHHL) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.getDefaultInstance();
+    return POGOProtos.Rpc.OEPAEKONHHL.getDefaultInstance();
   }
 
   public static final int MEGA_EVOLVE_SPECIES_FIELD_NUMBER = 21;
   /**
-   * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+   * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
    * @return Whether the megaEvolveSpecies field is set.
    */
-  @java.lang.Override
   public boolean hasMegaEvolveSpecies() {
-    return typeCase_ == 21;
+    return mOPKNKPOEKICase_ == 21;
   }
   /**
-   * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+   * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
    * @return The megaEvolveSpecies.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.MegaEvoleSpeciesProto getMegaEvolveSpecies() {
-    if (typeCase_ == 21) {
-       return (POGOProtos.Rpc.MegaEvoleSpeciesProto) type_;
+  public POGOProtos.Rpc.GABBAGFEALC getMegaEvolveSpecies() {
+    if (mOPKNKPOEKICase_ == 21) {
+       return (POGOProtos.Rpc.GABBAGFEALC) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.MegaEvoleSpeciesProto.getDefaultInstance();
+    return POGOProtos.Rpc.GABBAGFEALC.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+   * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.MegaEvoleSpeciesProtoOrBuilder getMegaEvolveSpeciesOrBuilder() {
-    if (typeCase_ == 21) {
-       return (POGOProtos.Rpc.MegaEvoleSpeciesProto) type_;
+  public POGOProtos.Rpc.GABBAGFEALCOrBuilder getMegaEvolveSpeciesOrBuilder() {
+    if (mOPKNKPOEKICase_ == 21) {
+       return (POGOProtos.Rpc.GABBAGFEALC) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.MegaEvoleSpeciesProto.getDefaultInstance();
+    return POGOProtos.Rpc.GABBAGFEALC.getDefaultInstance();
   }
 
   public static final int STICKER_FIELD_NUMBER = 22;
   /**
-   * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+   * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
    * @return Whether the sticker field is set.
    */
-  @java.lang.Override
   public boolean hasSticker() {
-    return typeCase_ == 22;
+    return mOPKNKPOEKICase_ == 22;
   }
   /**
-   * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+   * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
    * @return The sticker.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.StickerProto getSticker() {
-    if (typeCase_ == 22) {
-       return (POGOProtos.Rpc.StickerProto) type_;
+  public POGOProtos.Rpc.ELBNNGIDEOG getSticker() {
+    if (mOPKNKPOEKICase_ == 22) {
+       return (POGOProtos.Rpc.ELBNNGIDEOG) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.StickerProto.getDefaultInstance();
+    return POGOProtos.Rpc.ELBNNGIDEOG.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+   * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.StickerProtoOrBuilder getStickerOrBuilder() {
-    if (typeCase_ == 22) {
-       return (POGOProtos.Rpc.StickerProto) type_;
+  public POGOProtos.Rpc.ELBNNGIDEOGOrBuilder getStickerOrBuilder() {
+    if (mOPKNKPOEKICase_ == 22) {
+       return (POGOProtos.Rpc.ELBNNGIDEOG) mOPKNKPOEKI_;
     }
-    return POGOProtos.Rpc.StickerProto.getDefaultInstance();
+    return POGOProtos.Rpc.ELBNNGIDEOG.getDefaultInstance();
+  }
+
+  public static final int POKEMON_HOME_FIELD_NUMBER = 23;
+  /**
+   * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+   * @return Whether the pokemonHome field is set.
+   */
+  public boolean hasPokemonHome() {
+    return mOPKNKPOEKICase_ == 23;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+   * @return The pokemonHome.
+   */
+  public POGOProtos.Rpc.CIAMKDJBBHG getPokemonHome() {
+    if (mOPKNKPOEKICase_ == 23) {
+       return (POGOProtos.Rpc.CIAMKDJBBHG) mOPKNKPOEKI_;
+    }
+    return POGOProtos.Rpc.CIAMKDJBBHG.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+   */
+  public POGOProtos.Rpc.CIAMKDJBBHGOrBuilder getPokemonHomeOrBuilder() {
+    if (mOPKNKPOEKICase_ == 23) {
+       return (POGOProtos.Rpc.CIAMKDJBBHG) mOPKNKPOEKI_;
+    }
+    return POGOProtos.Rpc.CIAMKDJBBHG.getDefaultInstance();
+  }
+
+  public static final int PLAYER_STATS_SNAPSHOTS_FIELD_NUMBER = 25;
+  /**
+   * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+   * @return Whether the playerStatsSnapshots field is set.
+   */
+  public boolean hasPlayerStatsSnapshots() {
+    return mOPKNKPOEKICase_ == 25;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+   * @return The playerStatsSnapshots.
+   */
+  public POGOProtos.Rpc.EGGJBOKKHNN getPlayerStatsSnapshots() {
+    if (mOPKNKPOEKICase_ == 25) {
+       return (POGOProtos.Rpc.EGGJBOKKHNN) mOPKNKPOEKI_;
+    }
+    return POGOProtos.Rpc.EGGJBOKKHNN.getDefaultInstance();
+  }
+  /**
+   * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+   */
+  public POGOProtos.Rpc.EGGJBOKKHNNOrBuilder getPlayerStatsSnapshotsOrBuilder() {
+    if (mOPKNKPOEKICase_ == 25) {
+       return (POGOProtos.Rpc.EGGJBOKKHNN) mOPKNKPOEKI_;
+    }
+    return POGOProtos.Rpc.EGGJBOKKHNN.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -1028,62 +1055,68 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (typeCase_ == 1) {
-      output.writeMessage(1, (POGOProtos.Rpc.PokemonProto) type_);
+    if (mOPKNKPOEKICase_ == 1) {
+      output.writeMessage(1, (POGOProtos.Rpc.KHNLPGENFBI) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 2) {
-      output.writeMessage(2, (POGOProtos.Rpc.ItemProto) type_);
+    if (mOPKNKPOEKICase_ == 2) {
+      output.writeMessage(2, (POGOProtos.Rpc.GPBEJNNGKLO) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 3) {
-      output.writeMessage(3, (POGOProtos.Rpc.PokedexEntryProto) type_);
+    if (mOPKNKPOEKICase_ == 3) {
+      output.writeMessage(3, (POGOProtos.Rpc.GNPJBHFIOJE) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 4) {
-      output.writeMessage(4, (POGOProtos.Rpc.PlayerStatsProto) type_);
+    if (mOPKNKPOEKICase_ == 4) {
+      output.writeMessage(4, (POGOProtos.Rpc.ECAIODIHEJC) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 5) {
-      output.writeMessage(5, (POGOProtos.Rpc.PlayerCurrencyProto) type_);
+    if (mOPKNKPOEKICase_ == 5) {
+      output.writeMessage(5, (POGOProtos.Rpc.IIONNJJAHCI) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 6) {
-      output.writeMessage(6, (POGOProtos.Rpc.PlayerCameraProto) type_);
+    if (mOPKNKPOEKICase_ == 6) {
+      output.writeMessage(6, (POGOProtos.Rpc.GMPIGMKKEEH) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 7) {
-      output.writeMessage(7, (POGOProtos.Rpc.InventoryUpgradesProto) type_);
+    if (mOPKNKPOEKICase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.AFFIJCGEPNG) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 8) {
-      output.writeMessage(8, (POGOProtos.Rpc.AppliedItemsProto) type_);
+    if (mOPKNKPOEKICase_ == 8) {
+      output.writeMessage(8, (POGOProtos.Rpc.JMKKOPGIOJE) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 9) {
-      output.writeMessage(9, (POGOProtos.Rpc.EggIncubatorsProto) type_);
+    if (mOPKNKPOEKICase_ == 9) {
+      output.writeMessage(9, (POGOProtos.Rpc.MGBPEOMIEPM) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 10) {
-      output.writeMessage(10, (POGOProtos.Rpc.PokemonFamilyProto) type_);
+    if (mOPKNKPOEKICase_ == 10) {
+      output.writeMessage(10, (POGOProtos.Rpc.GGJABKKNMFJ) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 11) {
-      output.writeMessage(11, (POGOProtos.Rpc.QuestProto) type_);
+    if (mOPKNKPOEKICase_ == 11) {
+      output.writeMessage(11, (POGOProtos.Rpc.QuestProto) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 12) {
-      output.writeMessage(12, (POGOProtos.Rpc.AvatarItemProto) type_);
+    if (mOPKNKPOEKICase_ == 12) {
+      output.writeMessage(12, (POGOProtos.Rpc.FCGOBNEJEAP) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 13) {
-      output.writeMessage(13, (POGOProtos.Rpc.RaidTicketsProto) type_);
+    if (mOPKNKPOEKICase_ == 13) {
+      output.writeMessage(13, (POGOProtos.Rpc.FKJJHDKALOL) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 14) {
-      output.writeMessage(14, (POGOProtos.Rpc.QuestsProto) type_);
+    if (mOPKNKPOEKICase_ == 14) {
+      output.writeMessage(14, (POGOProtos.Rpc.IECKOBJLECF) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 15) {
-      output.writeMessage(15, (POGOProtos.Rpc.GiftBoxesProto) type_);
+    if (mOPKNKPOEKICase_ == 15) {
+      output.writeMessage(15, (POGOProtos.Rpc.HOCPODGGBJG) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 16) {
-      output.writeMessage(16, (POGOProtos.Rpc.BelugaIncenseBoxProto) type_);
+    if (mOPKNKPOEKICase_ == 16) {
+      output.writeMessage(16, (POGOProtos.Rpc.OELMJAJBGHO) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 19) {
-      output.writeMessage(19, (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto) type_);
+    if (mOPKNKPOEKICase_ == 19) {
+      output.writeMessage(19, (POGOProtos.Rpc.OEPAEKONHHL) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 21) {
-      output.writeMessage(21, (POGOProtos.Rpc.MegaEvoleSpeciesProto) type_);
+    if (mOPKNKPOEKICase_ == 21) {
+      output.writeMessage(21, (POGOProtos.Rpc.GABBAGFEALC) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 22) {
-      output.writeMessage(22, (POGOProtos.Rpc.StickerProto) type_);
+    if (mOPKNKPOEKICase_ == 22) {
+      output.writeMessage(22, (POGOProtos.Rpc.ELBNNGIDEOG) mOPKNKPOEKI_);
+    }
+    if (mOPKNKPOEKICase_ == 23) {
+      output.writeMessage(23, (POGOProtos.Rpc.CIAMKDJBBHG) mOPKNKPOEKI_);
+    }
+    if (mOPKNKPOEKICase_ == 25) {
+      output.writeMessage(25, (POGOProtos.Rpc.EGGJBOKKHNN) mOPKNKPOEKI_);
     }
     unknownFields.writeTo(output);
   }
@@ -1094,81 +1127,89 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (typeCase_ == 1) {
+    if (mOPKNKPOEKICase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, (POGOProtos.Rpc.PokemonProto) type_);
+        .computeMessageSize(1, (POGOProtos.Rpc.KHNLPGENFBI) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 2) {
+    if (mOPKNKPOEKICase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (POGOProtos.Rpc.ItemProto) type_);
+        .computeMessageSize(2, (POGOProtos.Rpc.GPBEJNNGKLO) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 3) {
+    if (mOPKNKPOEKICase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, (POGOProtos.Rpc.PokedexEntryProto) type_);
+        .computeMessageSize(3, (POGOProtos.Rpc.GNPJBHFIOJE) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 4) {
+    if (mOPKNKPOEKICase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, (POGOProtos.Rpc.PlayerStatsProto) type_);
+        .computeMessageSize(4, (POGOProtos.Rpc.ECAIODIHEJC) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 5) {
+    if (mOPKNKPOEKICase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, (POGOProtos.Rpc.PlayerCurrencyProto) type_);
+        .computeMessageSize(5, (POGOProtos.Rpc.IIONNJJAHCI) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 6) {
+    if (mOPKNKPOEKICase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, (POGOProtos.Rpc.PlayerCameraProto) type_);
+        .computeMessageSize(6, (POGOProtos.Rpc.GMPIGMKKEEH) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 7) {
+    if (mOPKNKPOEKICase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, (POGOProtos.Rpc.InventoryUpgradesProto) type_);
+        .computeMessageSize(7, (POGOProtos.Rpc.AFFIJCGEPNG) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 8) {
+    if (mOPKNKPOEKICase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, (POGOProtos.Rpc.AppliedItemsProto) type_);
+        .computeMessageSize(8, (POGOProtos.Rpc.JMKKOPGIOJE) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 9) {
+    if (mOPKNKPOEKICase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, (POGOProtos.Rpc.EggIncubatorsProto) type_);
+        .computeMessageSize(9, (POGOProtos.Rpc.MGBPEOMIEPM) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 10) {
+    if (mOPKNKPOEKICase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, (POGOProtos.Rpc.PokemonFamilyProto) type_);
+        .computeMessageSize(10, (POGOProtos.Rpc.GGJABKKNMFJ) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 11) {
+    if (mOPKNKPOEKICase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(11, (POGOProtos.Rpc.QuestProto) type_);
+        .computeMessageSize(11, (POGOProtos.Rpc.QuestProto) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 12) {
+    if (mOPKNKPOEKICase_ == 12) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, (POGOProtos.Rpc.AvatarItemProto) type_);
+        .computeMessageSize(12, (POGOProtos.Rpc.FCGOBNEJEAP) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 13) {
+    if (mOPKNKPOEKICase_ == 13) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(13, (POGOProtos.Rpc.RaidTicketsProto) type_);
+        .computeMessageSize(13, (POGOProtos.Rpc.FKJJHDKALOL) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 14) {
+    if (mOPKNKPOEKICase_ == 14) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(14, (POGOProtos.Rpc.QuestsProto) type_);
+        .computeMessageSize(14, (POGOProtos.Rpc.IECKOBJLECF) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 15) {
+    if (mOPKNKPOEKICase_ == 15) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(15, (POGOProtos.Rpc.GiftBoxesProto) type_);
+        .computeMessageSize(15, (POGOProtos.Rpc.HOCPODGGBJG) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 16) {
+    if (mOPKNKPOEKICase_ == 16) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(16, (POGOProtos.Rpc.BelugaIncenseBoxProto) type_);
+        .computeMessageSize(16, (POGOProtos.Rpc.OELMJAJBGHO) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 19) {
+    if (mOPKNKPOEKICase_ == 19) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(19, (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto) type_);
+        .computeMessageSize(19, (POGOProtos.Rpc.OEPAEKONHHL) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 21) {
+    if (mOPKNKPOEKICase_ == 21) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(21, (POGOProtos.Rpc.MegaEvoleSpeciesProto) type_);
+        .computeMessageSize(21, (POGOProtos.Rpc.GABBAGFEALC) mOPKNKPOEKI_);
     }
-    if (typeCase_ == 22) {
+    if (mOPKNKPOEKICase_ == 22) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(22, (POGOProtos.Rpc.StickerProto) type_);
+        .computeMessageSize(22, (POGOProtos.Rpc.ELBNNGIDEOG) mOPKNKPOEKI_);
+    }
+    if (mOPKNKPOEKICase_ == 23) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(23, (POGOProtos.Rpc.CIAMKDJBBHG) mOPKNKPOEKI_);
+    }
+    if (mOPKNKPOEKICase_ == 25) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(25, (POGOProtos.Rpc.EGGJBOKKHNN) mOPKNKPOEKI_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -1185,8 +1226,8 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.HoloInventoryItemProto other = (POGOProtos.Rpc.HoloInventoryItemProto) obj;
 
-    if (!getTypeCase().equals(other.getTypeCase())) return false;
-    switch (typeCase_) {
+    if (!getMOPKNKPOEKICase().equals(other.getMOPKNKPOEKICase())) return false;
+    switch (mOPKNKPOEKICase_) {
       case 1:
         if (!getPokemon()
             .equals(other.getPokemon())) return false;
@@ -1263,6 +1304,14 @@ private static final long serialVersionUID = 0L;
         if (!getSticker()
             .equals(other.getSticker())) return false;
         break;
+      case 23:
+        if (!getPokemonHome()
+            .equals(other.getPokemonHome())) return false;
+        break;
+      case 25:
+        if (!getPlayerStatsSnapshots()
+            .equals(other.getPlayerStatsSnapshots())) return false;
+        break;
       case 0:
       default:
     }
@@ -1277,7 +1326,7 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    switch (typeCase_) {
+    switch (mOPKNKPOEKICase_) {
       case 1:
         hash = (37 * hash) + POKEMON_FIELD_NUMBER;
         hash = (53 * hash) + getPokemon().hashCode();
@@ -1353,6 +1402,14 @@ private static final long serialVersionUID = 0L;
       case 22:
         hash = (37 * hash) + STICKER_FIELD_NUMBER;
         hash = (53 * hash) + getSticker().hashCode();
+        break;
+      case 23:
+        hash = (37 * hash) + POKEMON_HOME_FIELD_NUMBER;
+        hash = (53 * hash) + getPokemonHome().hashCode();
+        break;
+      case 25:
+        hash = (37 * hash) + PLAYER_STATS_SNAPSHOTS_FIELD_NUMBER;
+        hash = (53 * hash) + getPlayerStatsSnapshots().hashCode();
         break;
       case 0:
       default:
@@ -1453,10 +1510,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: ENHOCPLJKMD
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.HoloInventoryItemProto}
    */
   public static final class Builder extends
@@ -1494,8 +1547,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      typeCase_ = 0;
-      type_ = null;
+      mOPKNKPOEKICase_ = 0;
+      mOPKNKPOEKI_ = null;
       return this;
     }
 
@@ -1522,140 +1575,154 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.HoloInventoryItemProto buildPartial() {
       POGOProtos.Rpc.HoloInventoryItemProto result = new POGOProtos.Rpc.HoloInventoryItemProto(this);
-      if (typeCase_ == 1) {
+      if (mOPKNKPOEKICase_ == 1) {
         if (pokemonBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = pokemonBuilder_.build();
+          result.mOPKNKPOEKI_ = pokemonBuilder_.build();
         }
       }
-      if (typeCase_ == 2) {
+      if (mOPKNKPOEKICase_ == 2) {
         if (itemBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = itemBuilder_.build();
+          result.mOPKNKPOEKI_ = itemBuilder_.build();
         }
       }
-      if (typeCase_ == 3) {
+      if (mOPKNKPOEKICase_ == 3) {
         if (pokedexEntryBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = pokedexEntryBuilder_.build();
+          result.mOPKNKPOEKI_ = pokedexEntryBuilder_.build();
         }
       }
-      if (typeCase_ == 4) {
+      if (mOPKNKPOEKICase_ == 4) {
         if (playerStatsBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = playerStatsBuilder_.build();
+          result.mOPKNKPOEKI_ = playerStatsBuilder_.build();
         }
       }
-      if (typeCase_ == 5) {
+      if (mOPKNKPOEKICase_ == 5) {
         if (playerCurrencyBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = playerCurrencyBuilder_.build();
+          result.mOPKNKPOEKI_ = playerCurrencyBuilder_.build();
         }
       }
-      if (typeCase_ == 6) {
+      if (mOPKNKPOEKICase_ == 6) {
         if (playerCameraBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = playerCameraBuilder_.build();
+          result.mOPKNKPOEKI_ = playerCameraBuilder_.build();
         }
       }
-      if (typeCase_ == 7) {
+      if (mOPKNKPOEKICase_ == 7) {
         if (inventoryUpgradesBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = inventoryUpgradesBuilder_.build();
+          result.mOPKNKPOEKI_ = inventoryUpgradesBuilder_.build();
         }
       }
-      if (typeCase_ == 8) {
+      if (mOPKNKPOEKICase_ == 8) {
         if (appliedItemsBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = appliedItemsBuilder_.build();
+          result.mOPKNKPOEKI_ = appliedItemsBuilder_.build();
         }
       }
-      if (typeCase_ == 9) {
+      if (mOPKNKPOEKICase_ == 9) {
         if (eggIncubatorsBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = eggIncubatorsBuilder_.build();
+          result.mOPKNKPOEKI_ = eggIncubatorsBuilder_.build();
         }
       }
-      if (typeCase_ == 10) {
+      if (mOPKNKPOEKICase_ == 10) {
         if (pokemonFamilyBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = pokemonFamilyBuilder_.build();
+          result.mOPKNKPOEKI_ = pokemonFamilyBuilder_.build();
         }
       }
-      if (typeCase_ == 11) {
+      if (mOPKNKPOEKICase_ == 11) {
         if (questBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = questBuilder_.build();
+          result.mOPKNKPOEKI_ = questBuilder_.build();
         }
       }
-      if (typeCase_ == 12) {
+      if (mOPKNKPOEKICase_ == 12) {
         if (avatarItemBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = avatarItemBuilder_.build();
+          result.mOPKNKPOEKI_ = avatarItemBuilder_.build();
         }
       }
-      if (typeCase_ == 13) {
+      if (mOPKNKPOEKICase_ == 13) {
         if (raidTicketsBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = raidTicketsBuilder_.build();
+          result.mOPKNKPOEKI_ = raidTicketsBuilder_.build();
         }
       }
-      if (typeCase_ == 14) {
+      if (mOPKNKPOEKICase_ == 14) {
         if (questsBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = questsBuilder_.build();
+          result.mOPKNKPOEKI_ = questsBuilder_.build();
         }
       }
-      if (typeCase_ == 15) {
+      if (mOPKNKPOEKICase_ == 15) {
         if (giftBoxesBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = giftBoxesBuilder_.build();
+          result.mOPKNKPOEKI_ = giftBoxesBuilder_.build();
         }
       }
-      if (typeCase_ == 16) {
+      if (mOPKNKPOEKICase_ == 16) {
         if (belugaIncenseBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = belugaIncenseBuilder_.build();
+          result.mOPKNKPOEKI_ = belugaIncenseBuilder_.build();
         }
       }
-      if (typeCase_ == 19) {
+      if (mOPKNKPOEKICase_ == 19) {
         if (limitedPurchaseSkuRecordBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = limitedPurchaseSkuRecordBuilder_.build();
+          result.mOPKNKPOEKI_ = limitedPurchaseSkuRecordBuilder_.build();
         }
       }
-      if (typeCase_ == 21) {
+      if (mOPKNKPOEKICase_ == 21) {
         if (megaEvolveSpeciesBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = megaEvolveSpeciesBuilder_.build();
+          result.mOPKNKPOEKI_ = megaEvolveSpeciesBuilder_.build();
         }
       }
-      if (typeCase_ == 22) {
+      if (mOPKNKPOEKICase_ == 22) {
         if (stickerBuilder_ == null) {
-          result.type_ = type_;
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
         } else {
-          result.type_ = stickerBuilder_.build();
+          result.mOPKNKPOEKI_ = stickerBuilder_.build();
         }
       }
-      result.typeCase_ = typeCase_;
+      if (mOPKNKPOEKICase_ == 23) {
+        if (pokemonHomeBuilder_ == null) {
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
+        } else {
+          result.mOPKNKPOEKI_ = pokemonHomeBuilder_.build();
+        }
+      }
+      if (mOPKNKPOEKICase_ == 25) {
+        if (playerStatsSnapshotsBuilder_ == null) {
+          result.mOPKNKPOEKI_ = mOPKNKPOEKI_;
+        } else {
+          result.mOPKNKPOEKI_ = playerStatsSnapshotsBuilder_.build();
+        }
+      }
+      result.mOPKNKPOEKICase_ = mOPKNKPOEKICase_;
       onBuilt();
       return result;
     }
@@ -1704,7 +1771,7 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.HoloInventoryItemProto other) {
       if (other == POGOProtos.Rpc.HoloInventoryItemProto.getDefaultInstance()) return this;
-      switch (other.getTypeCase()) {
+      switch (other.getMOPKNKPOEKICase()) {
         case POKEMON: {
           mergePokemon(other.getPokemon());
           break;
@@ -1781,7 +1848,15 @@ private static final long serialVersionUID = 0L;
           mergeSticker(other.getSticker());
           break;
         }
-        case TYPE_NOT_SET: {
+        case POKEMON_HOME: {
+          mergePokemonHome(other.getPokemonHome());
+          break;
+        }
+        case PLAYER_STATS_SNAPSHOTS: {
+          mergePlayerStatsSnapshots(other.getPlayerStatsSnapshots());
+          break;
+        }
+        case MOPKNKPOEKI_NOT_SET: {
           break;
         }
       }
@@ -1813,1428 +1888,1398 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
-    private int typeCase_ = 0;
-    private java.lang.Object type_;
-    public TypeCase
-        getTypeCase() {
-      return TypeCase.forNumber(
-          typeCase_);
+    private int mOPKNKPOEKICase_ = 0;
+    private java.lang.Object mOPKNKPOEKI_;
+    public MOPKNKPOEKICase
+        getMOPKNKPOEKICase() {
+      return MOPKNKPOEKICase.forNumber(
+          mOPKNKPOEKICase_);
     }
 
-    public Builder clearType() {
-      typeCase_ = 0;
-      type_ = null;
+    public Builder clearMOPKNKPOEKI() {
+      mOPKNKPOEKICase_ = 0;
+      mOPKNKPOEKI_ = null;
       onChanged();
       return this;
     }
 
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> pokemonBuilder_;
+        POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder> pokemonBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
      * @return Whether the pokemon field is set.
      */
-    @java.lang.Override
     public boolean hasPokemon() {
-      return typeCase_ == 1;
+      return mOPKNKPOEKICase_ == 1;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
      * @return The pokemon.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PokemonProto getPokemon() {
+    public POGOProtos.Rpc.KHNLPGENFBI getPokemon() {
       if (pokemonBuilder_ == null) {
-        if (typeCase_ == 1) {
-          return (POGOProtos.Rpc.PokemonProto) type_;
+        if (mOPKNKPOEKICase_ == 1) {
+          return (POGOProtos.Rpc.KHNLPGENFBI) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+        return POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
       } else {
-        if (typeCase_ == 1) {
+        if (mOPKNKPOEKICase_ == 1) {
           return pokemonBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+        return POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
      */
-    public Builder setPokemon(POGOProtos.Rpc.PokemonProto value) {
+    public Builder setPokemon(POGOProtos.Rpc.KHNLPGENFBI value) {
       if (pokemonBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         pokemonBuilder_.setMessage(value);
       }
-      typeCase_ = 1;
+      mOPKNKPOEKICase_ = 1;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
      */
     public Builder setPokemon(
-        POGOProtos.Rpc.PokemonProto.Builder builderForValue) {
+        POGOProtos.Rpc.KHNLPGENFBI.Builder builderForValue) {
       if (pokemonBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         pokemonBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 1;
+      mOPKNKPOEKICase_ = 1;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
      */
-    public Builder mergePokemon(POGOProtos.Rpc.PokemonProto value) {
+    public Builder mergePokemon(POGOProtos.Rpc.KHNLPGENFBI value) {
       if (pokemonBuilder_ == null) {
-        if (typeCase_ == 1 &&
-            type_ != POGOProtos.Rpc.PokemonProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.PokemonProto.newBuilder((POGOProtos.Rpc.PokemonProto) type_)
+        if (mOPKNKPOEKICase_ == 1 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.KHNLPGENFBI.newBuilder((POGOProtos.Rpc.KHNLPGENFBI) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 1) {
+        if (mOPKNKPOEKICase_ == 1) {
           pokemonBuilder_.mergeFrom(value);
         }
         pokemonBuilder_.setMessage(value);
       }
-      typeCase_ = 1;
+      mOPKNKPOEKICase_ = 1;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
      */
     public Builder clearPokemon() {
       if (pokemonBuilder_ == null) {
-        if (typeCase_ == 1) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 1) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 1) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 1) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         pokemonBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
      */
-    public POGOProtos.Rpc.PokemonProto.Builder getPokemonBuilder() {
+    public POGOProtos.Rpc.KHNLPGENFBI.Builder getPokemonBuilder() {
       return getPokemonFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PokemonProtoOrBuilder getPokemonOrBuilder() {
-      if ((typeCase_ == 1) && (pokemonBuilder_ != null)) {
+    public POGOProtos.Rpc.KHNLPGENFBIOrBuilder getPokemonOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 1) && (pokemonBuilder_ != null)) {
         return pokemonBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 1) {
-          return (POGOProtos.Rpc.PokemonProto) type_;
+        if (mOPKNKPOEKICase_ == 1) {
+          return (POGOProtos.Rpc.KHNLPGENFBI) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+        return POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> 
+        POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder> 
         getPokemonFieldBuilder() {
       if (pokemonBuilder_ == null) {
-        if (!(typeCase_ == 1)) {
-          type_ = POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 1)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
         }
         pokemonBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder>(
-                (POGOProtos.Rpc.PokemonProto) type_,
+            POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder>(
+                (POGOProtos.Rpc.KHNLPGENFBI) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 1;
+      mOPKNKPOEKICase_ = 1;
       onChanged();;
       return pokemonBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ItemProto, POGOProtos.Rpc.ItemProto.Builder, POGOProtos.Rpc.ItemProtoOrBuilder> itemBuilder_;
+        POGOProtos.Rpc.GPBEJNNGKLO, POGOProtos.Rpc.GPBEJNNGKLO.Builder, POGOProtos.Rpc.GPBEJNNGKLOOrBuilder> itemBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+     * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
      * @return Whether the item field is set.
      */
-    @java.lang.Override
     public boolean hasItem() {
-      return typeCase_ == 2;
+      return mOPKNKPOEKICase_ == 2;
     }
     /**
-     * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+     * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
      * @return The item.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.ItemProto getItem() {
+    public POGOProtos.Rpc.GPBEJNNGKLO getItem() {
       if (itemBuilder_ == null) {
-        if (typeCase_ == 2) {
-          return (POGOProtos.Rpc.ItemProto) type_;
+        if (mOPKNKPOEKICase_ == 2) {
+          return (POGOProtos.Rpc.GPBEJNNGKLO) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.ItemProto.getDefaultInstance();
+        return POGOProtos.Rpc.GPBEJNNGKLO.getDefaultInstance();
       } else {
-        if (typeCase_ == 2) {
+        if (mOPKNKPOEKICase_ == 2) {
           return itemBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.ItemProto.getDefaultInstance();
+        return POGOProtos.Rpc.GPBEJNNGKLO.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+     * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
      */
-    public Builder setItem(POGOProtos.Rpc.ItemProto value) {
+    public Builder setItem(POGOProtos.Rpc.GPBEJNNGKLO value) {
       if (itemBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         itemBuilder_.setMessage(value);
       }
-      typeCase_ = 2;
+      mOPKNKPOEKICase_ = 2;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+     * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
      */
     public Builder setItem(
-        POGOProtos.Rpc.ItemProto.Builder builderForValue) {
+        POGOProtos.Rpc.GPBEJNNGKLO.Builder builderForValue) {
       if (itemBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         itemBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 2;
+      mOPKNKPOEKICase_ = 2;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+     * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
      */
-    public Builder mergeItem(POGOProtos.Rpc.ItemProto value) {
+    public Builder mergeItem(POGOProtos.Rpc.GPBEJNNGKLO value) {
       if (itemBuilder_ == null) {
-        if (typeCase_ == 2 &&
-            type_ != POGOProtos.Rpc.ItemProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.ItemProto.newBuilder((POGOProtos.Rpc.ItemProto) type_)
+        if (mOPKNKPOEKICase_ == 2 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.GPBEJNNGKLO.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.GPBEJNNGKLO.newBuilder((POGOProtos.Rpc.GPBEJNNGKLO) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 2) {
+        if (mOPKNKPOEKICase_ == 2) {
           itemBuilder_.mergeFrom(value);
         }
         itemBuilder_.setMessage(value);
       }
-      typeCase_ = 2;
+      mOPKNKPOEKICase_ = 2;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+     * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
      */
     public Builder clearItem() {
       if (itemBuilder_ == null) {
-        if (typeCase_ == 2) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 2) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 2) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 2) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         itemBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+     * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
      */
-    public POGOProtos.Rpc.ItemProto.Builder getItemBuilder() {
+    public POGOProtos.Rpc.GPBEJNNGKLO.Builder getItemBuilder() {
       return getItemFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+     * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.ItemProtoOrBuilder getItemOrBuilder() {
-      if ((typeCase_ == 2) && (itemBuilder_ != null)) {
+    public POGOProtos.Rpc.GPBEJNNGKLOOrBuilder getItemOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 2) && (itemBuilder_ != null)) {
         return itemBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 2) {
-          return (POGOProtos.Rpc.ItemProto) type_;
+        if (mOPKNKPOEKICase_ == 2) {
+          return (POGOProtos.Rpc.GPBEJNNGKLO) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.ItemProto.getDefaultInstance();
+        return POGOProtos.Rpc.GPBEJNNGKLO.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+     * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ItemProto, POGOProtos.Rpc.ItemProto.Builder, POGOProtos.Rpc.ItemProtoOrBuilder> 
+        POGOProtos.Rpc.GPBEJNNGKLO, POGOProtos.Rpc.GPBEJNNGKLO.Builder, POGOProtos.Rpc.GPBEJNNGKLOOrBuilder> 
         getItemFieldBuilder() {
       if (itemBuilder_ == null) {
-        if (!(typeCase_ == 2)) {
-          type_ = POGOProtos.Rpc.ItemProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 2)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.GPBEJNNGKLO.getDefaultInstance();
         }
         itemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ItemProto, POGOProtos.Rpc.ItemProto.Builder, POGOProtos.Rpc.ItemProtoOrBuilder>(
-                (POGOProtos.Rpc.ItemProto) type_,
+            POGOProtos.Rpc.GPBEJNNGKLO, POGOProtos.Rpc.GPBEJNNGKLO.Builder, POGOProtos.Rpc.GPBEJNNGKLOOrBuilder>(
+                (POGOProtos.Rpc.GPBEJNNGKLO) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 2;
+      mOPKNKPOEKICase_ = 2;
       onChanged();;
       return itemBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokedexEntryProto, POGOProtos.Rpc.PokedexEntryProto.Builder, POGOProtos.Rpc.PokedexEntryProtoOrBuilder> pokedexEntryBuilder_;
+        POGOProtos.Rpc.GNPJBHFIOJE, POGOProtos.Rpc.GNPJBHFIOJE.Builder, POGOProtos.Rpc.GNPJBHFIOJEOrBuilder> pokedexEntryBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+     * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
      * @return Whether the pokedexEntry field is set.
      */
-    @java.lang.Override
     public boolean hasPokedexEntry() {
-      return typeCase_ == 3;
+      return mOPKNKPOEKICase_ == 3;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+     * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
      * @return The pokedexEntry.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PokedexEntryProto getPokedexEntry() {
+    public POGOProtos.Rpc.GNPJBHFIOJE getPokedexEntry() {
       if (pokedexEntryBuilder_ == null) {
-        if (typeCase_ == 3) {
-          return (POGOProtos.Rpc.PokedexEntryProto) type_;
+        if (mOPKNKPOEKICase_ == 3) {
+          return (POGOProtos.Rpc.GNPJBHFIOJE) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PokedexEntryProto.getDefaultInstance();
+        return POGOProtos.Rpc.GNPJBHFIOJE.getDefaultInstance();
       } else {
-        if (typeCase_ == 3) {
+        if (mOPKNKPOEKICase_ == 3) {
           return pokedexEntryBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.PokedexEntryProto.getDefaultInstance();
+        return POGOProtos.Rpc.GNPJBHFIOJE.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+     * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
      */
-    public Builder setPokedexEntry(POGOProtos.Rpc.PokedexEntryProto value) {
+    public Builder setPokedexEntry(POGOProtos.Rpc.GNPJBHFIOJE value) {
       if (pokedexEntryBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         pokedexEntryBuilder_.setMessage(value);
       }
-      typeCase_ = 3;
+      mOPKNKPOEKICase_ = 3;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+     * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
      */
     public Builder setPokedexEntry(
-        POGOProtos.Rpc.PokedexEntryProto.Builder builderForValue) {
+        POGOProtos.Rpc.GNPJBHFIOJE.Builder builderForValue) {
       if (pokedexEntryBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         pokedexEntryBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 3;
+      mOPKNKPOEKICase_ = 3;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+     * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
      */
-    public Builder mergePokedexEntry(POGOProtos.Rpc.PokedexEntryProto value) {
+    public Builder mergePokedexEntry(POGOProtos.Rpc.GNPJBHFIOJE value) {
       if (pokedexEntryBuilder_ == null) {
-        if (typeCase_ == 3 &&
-            type_ != POGOProtos.Rpc.PokedexEntryProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.PokedexEntryProto.newBuilder((POGOProtos.Rpc.PokedexEntryProto) type_)
+        if (mOPKNKPOEKICase_ == 3 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.GNPJBHFIOJE.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.GNPJBHFIOJE.newBuilder((POGOProtos.Rpc.GNPJBHFIOJE) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 3) {
+        if (mOPKNKPOEKICase_ == 3) {
           pokedexEntryBuilder_.mergeFrom(value);
         }
         pokedexEntryBuilder_.setMessage(value);
       }
-      typeCase_ = 3;
+      mOPKNKPOEKICase_ = 3;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+     * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
      */
     public Builder clearPokedexEntry() {
       if (pokedexEntryBuilder_ == null) {
-        if (typeCase_ == 3) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 3) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 3) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 3) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         pokedexEntryBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+     * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
      */
-    public POGOProtos.Rpc.PokedexEntryProto.Builder getPokedexEntryBuilder() {
+    public POGOProtos.Rpc.GNPJBHFIOJE.Builder getPokedexEntryBuilder() {
       return getPokedexEntryFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+     * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PokedexEntryProtoOrBuilder getPokedexEntryOrBuilder() {
-      if ((typeCase_ == 3) && (pokedexEntryBuilder_ != null)) {
+    public POGOProtos.Rpc.GNPJBHFIOJEOrBuilder getPokedexEntryOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 3) && (pokedexEntryBuilder_ != null)) {
         return pokedexEntryBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 3) {
-          return (POGOProtos.Rpc.PokedexEntryProto) type_;
+        if (mOPKNKPOEKICase_ == 3) {
+          return (POGOProtos.Rpc.GNPJBHFIOJE) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PokedexEntryProto.getDefaultInstance();
+        return POGOProtos.Rpc.GNPJBHFIOJE.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+     * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokedexEntryProto, POGOProtos.Rpc.PokedexEntryProto.Builder, POGOProtos.Rpc.PokedexEntryProtoOrBuilder> 
+        POGOProtos.Rpc.GNPJBHFIOJE, POGOProtos.Rpc.GNPJBHFIOJE.Builder, POGOProtos.Rpc.GNPJBHFIOJEOrBuilder> 
         getPokedexEntryFieldBuilder() {
       if (pokedexEntryBuilder_ == null) {
-        if (!(typeCase_ == 3)) {
-          type_ = POGOProtos.Rpc.PokedexEntryProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 3)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.GNPJBHFIOJE.getDefaultInstance();
         }
         pokedexEntryBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PokedexEntryProto, POGOProtos.Rpc.PokedexEntryProto.Builder, POGOProtos.Rpc.PokedexEntryProtoOrBuilder>(
-                (POGOProtos.Rpc.PokedexEntryProto) type_,
+            POGOProtos.Rpc.GNPJBHFIOJE, POGOProtos.Rpc.GNPJBHFIOJE.Builder, POGOProtos.Rpc.GNPJBHFIOJEOrBuilder>(
+                (POGOProtos.Rpc.GNPJBHFIOJE) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 3;
+      mOPKNKPOEKICase_ = 3;
       onChanged();;
       return pokedexEntryBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlayerStatsProto, POGOProtos.Rpc.PlayerStatsProto.Builder, POGOProtos.Rpc.PlayerStatsProtoOrBuilder> playerStatsBuilder_;
+        POGOProtos.Rpc.ECAIODIHEJC, POGOProtos.Rpc.ECAIODIHEJC.Builder, POGOProtos.Rpc.ECAIODIHEJCOrBuilder> playerStatsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+     * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
      * @return Whether the playerStats field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerStats() {
-      return typeCase_ == 4;
+      return mOPKNKPOEKICase_ == 4;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+     * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
      * @return The playerStats.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PlayerStatsProto getPlayerStats() {
+    public POGOProtos.Rpc.ECAIODIHEJC getPlayerStats() {
       if (playerStatsBuilder_ == null) {
-        if (typeCase_ == 4) {
-          return (POGOProtos.Rpc.PlayerStatsProto) type_;
+        if (mOPKNKPOEKICase_ == 4) {
+          return (POGOProtos.Rpc.ECAIODIHEJC) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PlayerStatsProto.getDefaultInstance();
+        return POGOProtos.Rpc.ECAIODIHEJC.getDefaultInstance();
       } else {
-        if (typeCase_ == 4) {
+        if (mOPKNKPOEKICase_ == 4) {
           return playerStatsBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.PlayerStatsProto.getDefaultInstance();
+        return POGOProtos.Rpc.ECAIODIHEJC.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+     * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
      */
-    public Builder setPlayerStats(POGOProtos.Rpc.PlayerStatsProto value) {
+    public Builder setPlayerStats(POGOProtos.Rpc.ECAIODIHEJC value) {
       if (playerStatsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         playerStatsBuilder_.setMessage(value);
       }
-      typeCase_ = 4;
+      mOPKNKPOEKICase_ = 4;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+     * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
      */
     public Builder setPlayerStats(
-        POGOProtos.Rpc.PlayerStatsProto.Builder builderForValue) {
+        POGOProtos.Rpc.ECAIODIHEJC.Builder builderForValue) {
       if (playerStatsBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         playerStatsBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 4;
+      mOPKNKPOEKICase_ = 4;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+     * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
      */
-    public Builder mergePlayerStats(POGOProtos.Rpc.PlayerStatsProto value) {
+    public Builder mergePlayerStats(POGOProtos.Rpc.ECAIODIHEJC value) {
       if (playerStatsBuilder_ == null) {
-        if (typeCase_ == 4 &&
-            type_ != POGOProtos.Rpc.PlayerStatsProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.PlayerStatsProto.newBuilder((POGOProtos.Rpc.PlayerStatsProto) type_)
+        if (mOPKNKPOEKICase_ == 4 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.ECAIODIHEJC.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.ECAIODIHEJC.newBuilder((POGOProtos.Rpc.ECAIODIHEJC) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 4) {
+        if (mOPKNKPOEKICase_ == 4) {
           playerStatsBuilder_.mergeFrom(value);
         }
         playerStatsBuilder_.setMessage(value);
       }
-      typeCase_ = 4;
+      mOPKNKPOEKICase_ = 4;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+     * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
      */
     public Builder clearPlayerStats() {
       if (playerStatsBuilder_ == null) {
-        if (typeCase_ == 4) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 4) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 4) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 4) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         playerStatsBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+     * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
      */
-    public POGOProtos.Rpc.PlayerStatsProto.Builder getPlayerStatsBuilder() {
+    public POGOProtos.Rpc.ECAIODIHEJC.Builder getPlayerStatsBuilder() {
       return getPlayerStatsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+     * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PlayerStatsProtoOrBuilder getPlayerStatsOrBuilder() {
-      if ((typeCase_ == 4) && (playerStatsBuilder_ != null)) {
+    public POGOProtos.Rpc.ECAIODIHEJCOrBuilder getPlayerStatsOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 4) && (playerStatsBuilder_ != null)) {
         return playerStatsBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 4) {
-          return (POGOProtos.Rpc.PlayerStatsProto) type_;
+        if (mOPKNKPOEKICase_ == 4) {
+          return (POGOProtos.Rpc.ECAIODIHEJC) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PlayerStatsProto.getDefaultInstance();
+        return POGOProtos.Rpc.ECAIODIHEJC.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+     * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlayerStatsProto, POGOProtos.Rpc.PlayerStatsProto.Builder, POGOProtos.Rpc.PlayerStatsProtoOrBuilder> 
+        POGOProtos.Rpc.ECAIODIHEJC, POGOProtos.Rpc.ECAIODIHEJC.Builder, POGOProtos.Rpc.ECAIODIHEJCOrBuilder> 
         getPlayerStatsFieldBuilder() {
       if (playerStatsBuilder_ == null) {
-        if (!(typeCase_ == 4)) {
-          type_ = POGOProtos.Rpc.PlayerStatsProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 4)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.ECAIODIHEJC.getDefaultInstance();
         }
         playerStatsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlayerStatsProto, POGOProtos.Rpc.PlayerStatsProto.Builder, POGOProtos.Rpc.PlayerStatsProtoOrBuilder>(
-                (POGOProtos.Rpc.PlayerStatsProto) type_,
+            POGOProtos.Rpc.ECAIODIHEJC, POGOProtos.Rpc.ECAIODIHEJC.Builder, POGOProtos.Rpc.ECAIODIHEJCOrBuilder>(
+                (POGOProtos.Rpc.ECAIODIHEJC) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 4;
+      mOPKNKPOEKICase_ = 4;
       onChanged();;
       return playerStatsBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlayerCurrencyProto, POGOProtos.Rpc.PlayerCurrencyProto.Builder, POGOProtos.Rpc.PlayerCurrencyProtoOrBuilder> playerCurrencyBuilder_;
+        POGOProtos.Rpc.IIONNJJAHCI, POGOProtos.Rpc.IIONNJJAHCI.Builder, POGOProtos.Rpc.IIONNJJAHCIOrBuilder> playerCurrencyBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+     * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
      * @return Whether the playerCurrency field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerCurrency() {
-      return typeCase_ == 5;
+      return mOPKNKPOEKICase_ == 5;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+     * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
      * @return The playerCurrency.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PlayerCurrencyProto getPlayerCurrency() {
+    public POGOProtos.Rpc.IIONNJJAHCI getPlayerCurrency() {
       if (playerCurrencyBuilder_ == null) {
-        if (typeCase_ == 5) {
-          return (POGOProtos.Rpc.PlayerCurrencyProto) type_;
+        if (mOPKNKPOEKICase_ == 5) {
+          return (POGOProtos.Rpc.IIONNJJAHCI) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PlayerCurrencyProto.getDefaultInstance();
+        return POGOProtos.Rpc.IIONNJJAHCI.getDefaultInstance();
       } else {
-        if (typeCase_ == 5) {
+        if (mOPKNKPOEKICase_ == 5) {
           return playerCurrencyBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.PlayerCurrencyProto.getDefaultInstance();
+        return POGOProtos.Rpc.IIONNJJAHCI.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+     * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
      */
-    public Builder setPlayerCurrency(POGOProtos.Rpc.PlayerCurrencyProto value) {
+    public Builder setPlayerCurrency(POGOProtos.Rpc.IIONNJJAHCI value) {
       if (playerCurrencyBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         playerCurrencyBuilder_.setMessage(value);
       }
-      typeCase_ = 5;
+      mOPKNKPOEKICase_ = 5;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+     * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
      */
     public Builder setPlayerCurrency(
-        POGOProtos.Rpc.PlayerCurrencyProto.Builder builderForValue) {
+        POGOProtos.Rpc.IIONNJJAHCI.Builder builderForValue) {
       if (playerCurrencyBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         playerCurrencyBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 5;
+      mOPKNKPOEKICase_ = 5;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+     * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
      */
-    public Builder mergePlayerCurrency(POGOProtos.Rpc.PlayerCurrencyProto value) {
+    public Builder mergePlayerCurrency(POGOProtos.Rpc.IIONNJJAHCI value) {
       if (playerCurrencyBuilder_ == null) {
-        if (typeCase_ == 5 &&
-            type_ != POGOProtos.Rpc.PlayerCurrencyProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.PlayerCurrencyProto.newBuilder((POGOProtos.Rpc.PlayerCurrencyProto) type_)
+        if (mOPKNKPOEKICase_ == 5 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.IIONNJJAHCI.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.IIONNJJAHCI.newBuilder((POGOProtos.Rpc.IIONNJJAHCI) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 5) {
+        if (mOPKNKPOEKICase_ == 5) {
           playerCurrencyBuilder_.mergeFrom(value);
         }
         playerCurrencyBuilder_.setMessage(value);
       }
-      typeCase_ = 5;
+      mOPKNKPOEKICase_ = 5;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+     * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
      */
     public Builder clearPlayerCurrency() {
       if (playerCurrencyBuilder_ == null) {
-        if (typeCase_ == 5) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 5) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 5) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 5) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         playerCurrencyBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+     * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
      */
-    public POGOProtos.Rpc.PlayerCurrencyProto.Builder getPlayerCurrencyBuilder() {
+    public POGOProtos.Rpc.IIONNJJAHCI.Builder getPlayerCurrencyBuilder() {
       return getPlayerCurrencyFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+     * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PlayerCurrencyProtoOrBuilder getPlayerCurrencyOrBuilder() {
-      if ((typeCase_ == 5) && (playerCurrencyBuilder_ != null)) {
+    public POGOProtos.Rpc.IIONNJJAHCIOrBuilder getPlayerCurrencyOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 5) && (playerCurrencyBuilder_ != null)) {
         return playerCurrencyBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 5) {
-          return (POGOProtos.Rpc.PlayerCurrencyProto) type_;
+        if (mOPKNKPOEKICase_ == 5) {
+          return (POGOProtos.Rpc.IIONNJJAHCI) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PlayerCurrencyProto.getDefaultInstance();
+        return POGOProtos.Rpc.IIONNJJAHCI.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+     * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlayerCurrencyProto, POGOProtos.Rpc.PlayerCurrencyProto.Builder, POGOProtos.Rpc.PlayerCurrencyProtoOrBuilder> 
+        POGOProtos.Rpc.IIONNJJAHCI, POGOProtos.Rpc.IIONNJJAHCI.Builder, POGOProtos.Rpc.IIONNJJAHCIOrBuilder> 
         getPlayerCurrencyFieldBuilder() {
       if (playerCurrencyBuilder_ == null) {
-        if (!(typeCase_ == 5)) {
-          type_ = POGOProtos.Rpc.PlayerCurrencyProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 5)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.IIONNJJAHCI.getDefaultInstance();
         }
         playerCurrencyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlayerCurrencyProto, POGOProtos.Rpc.PlayerCurrencyProto.Builder, POGOProtos.Rpc.PlayerCurrencyProtoOrBuilder>(
-                (POGOProtos.Rpc.PlayerCurrencyProto) type_,
+            POGOProtos.Rpc.IIONNJJAHCI, POGOProtos.Rpc.IIONNJJAHCI.Builder, POGOProtos.Rpc.IIONNJJAHCIOrBuilder>(
+                (POGOProtos.Rpc.IIONNJJAHCI) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 5;
+      mOPKNKPOEKICase_ = 5;
       onChanged();;
       return playerCurrencyBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlayerCameraProto, POGOProtos.Rpc.PlayerCameraProto.Builder, POGOProtos.Rpc.PlayerCameraProtoOrBuilder> playerCameraBuilder_;
+        POGOProtos.Rpc.GMPIGMKKEEH, POGOProtos.Rpc.GMPIGMKKEEH.Builder, POGOProtos.Rpc.GMPIGMKKEEHOrBuilder> playerCameraBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+     * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
      * @return Whether the playerCamera field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerCamera() {
-      return typeCase_ == 6;
+      return mOPKNKPOEKICase_ == 6;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+     * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
      * @return The playerCamera.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PlayerCameraProto getPlayerCamera() {
+    public POGOProtos.Rpc.GMPIGMKKEEH getPlayerCamera() {
       if (playerCameraBuilder_ == null) {
-        if (typeCase_ == 6) {
-          return (POGOProtos.Rpc.PlayerCameraProto) type_;
+        if (mOPKNKPOEKICase_ == 6) {
+          return (POGOProtos.Rpc.GMPIGMKKEEH) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PlayerCameraProto.getDefaultInstance();
+        return POGOProtos.Rpc.GMPIGMKKEEH.getDefaultInstance();
       } else {
-        if (typeCase_ == 6) {
+        if (mOPKNKPOEKICase_ == 6) {
           return playerCameraBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.PlayerCameraProto.getDefaultInstance();
+        return POGOProtos.Rpc.GMPIGMKKEEH.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+     * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
      */
-    public Builder setPlayerCamera(POGOProtos.Rpc.PlayerCameraProto value) {
+    public Builder setPlayerCamera(POGOProtos.Rpc.GMPIGMKKEEH value) {
       if (playerCameraBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         playerCameraBuilder_.setMessage(value);
       }
-      typeCase_ = 6;
+      mOPKNKPOEKICase_ = 6;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+     * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
      */
     public Builder setPlayerCamera(
-        POGOProtos.Rpc.PlayerCameraProto.Builder builderForValue) {
+        POGOProtos.Rpc.GMPIGMKKEEH.Builder builderForValue) {
       if (playerCameraBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         playerCameraBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 6;
+      mOPKNKPOEKICase_ = 6;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+     * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
      */
-    public Builder mergePlayerCamera(POGOProtos.Rpc.PlayerCameraProto value) {
+    public Builder mergePlayerCamera(POGOProtos.Rpc.GMPIGMKKEEH value) {
       if (playerCameraBuilder_ == null) {
-        if (typeCase_ == 6 &&
-            type_ != POGOProtos.Rpc.PlayerCameraProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.PlayerCameraProto.newBuilder((POGOProtos.Rpc.PlayerCameraProto) type_)
+        if (mOPKNKPOEKICase_ == 6 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.GMPIGMKKEEH.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.GMPIGMKKEEH.newBuilder((POGOProtos.Rpc.GMPIGMKKEEH) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 6) {
+        if (mOPKNKPOEKICase_ == 6) {
           playerCameraBuilder_.mergeFrom(value);
         }
         playerCameraBuilder_.setMessage(value);
       }
-      typeCase_ = 6;
+      mOPKNKPOEKICase_ = 6;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+     * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
      */
     public Builder clearPlayerCamera() {
       if (playerCameraBuilder_ == null) {
-        if (typeCase_ == 6) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 6) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 6) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 6) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         playerCameraBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+     * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
      */
-    public POGOProtos.Rpc.PlayerCameraProto.Builder getPlayerCameraBuilder() {
+    public POGOProtos.Rpc.GMPIGMKKEEH.Builder getPlayerCameraBuilder() {
       return getPlayerCameraFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+     * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PlayerCameraProtoOrBuilder getPlayerCameraOrBuilder() {
-      if ((typeCase_ == 6) && (playerCameraBuilder_ != null)) {
+    public POGOProtos.Rpc.GMPIGMKKEEHOrBuilder getPlayerCameraOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 6) && (playerCameraBuilder_ != null)) {
         return playerCameraBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 6) {
-          return (POGOProtos.Rpc.PlayerCameraProto) type_;
+        if (mOPKNKPOEKICase_ == 6) {
+          return (POGOProtos.Rpc.GMPIGMKKEEH) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PlayerCameraProto.getDefaultInstance();
+        return POGOProtos.Rpc.GMPIGMKKEEH.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+     * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlayerCameraProto, POGOProtos.Rpc.PlayerCameraProto.Builder, POGOProtos.Rpc.PlayerCameraProtoOrBuilder> 
+        POGOProtos.Rpc.GMPIGMKKEEH, POGOProtos.Rpc.GMPIGMKKEEH.Builder, POGOProtos.Rpc.GMPIGMKKEEHOrBuilder> 
         getPlayerCameraFieldBuilder() {
       if (playerCameraBuilder_ == null) {
-        if (!(typeCase_ == 6)) {
-          type_ = POGOProtos.Rpc.PlayerCameraProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 6)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.GMPIGMKKEEH.getDefaultInstance();
         }
         playerCameraBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlayerCameraProto, POGOProtos.Rpc.PlayerCameraProto.Builder, POGOProtos.Rpc.PlayerCameraProtoOrBuilder>(
-                (POGOProtos.Rpc.PlayerCameraProto) type_,
+            POGOProtos.Rpc.GMPIGMKKEEH, POGOProtos.Rpc.GMPIGMKKEEH.Builder, POGOProtos.Rpc.GMPIGMKKEEHOrBuilder>(
+                (POGOProtos.Rpc.GMPIGMKKEEH) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 6;
+      mOPKNKPOEKICase_ = 6;
       onChanged();;
       return playerCameraBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.InventoryUpgradesProto, POGOProtos.Rpc.InventoryUpgradesProto.Builder, POGOProtos.Rpc.InventoryUpgradesProtoOrBuilder> inventoryUpgradesBuilder_;
+        POGOProtos.Rpc.AFFIJCGEPNG, POGOProtos.Rpc.AFFIJCGEPNG.Builder, POGOProtos.Rpc.AFFIJCGEPNGOrBuilder> inventoryUpgradesBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+     * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
      * @return Whether the inventoryUpgrades field is set.
      */
-    @java.lang.Override
     public boolean hasInventoryUpgrades() {
-      return typeCase_ == 7;
+      return mOPKNKPOEKICase_ == 7;
     }
     /**
-     * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+     * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
      * @return The inventoryUpgrades.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.InventoryUpgradesProto getInventoryUpgrades() {
+    public POGOProtos.Rpc.AFFIJCGEPNG getInventoryUpgrades() {
       if (inventoryUpgradesBuilder_ == null) {
-        if (typeCase_ == 7) {
-          return (POGOProtos.Rpc.InventoryUpgradesProto) type_;
+        if (mOPKNKPOEKICase_ == 7) {
+          return (POGOProtos.Rpc.AFFIJCGEPNG) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.InventoryUpgradesProto.getDefaultInstance();
+        return POGOProtos.Rpc.AFFIJCGEPNG.getDefaultInstance();
       } else {
-        if (typeCase_ == 7) {
+        if (mOPKNKPOEKICase_ == 7) {
           return inventoryUpgradesBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.InventoryUpgradesProto.getDefaultInstance();
+        return POGOProtos.Rpc.AFFIJCGEPNG.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+     * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
      */
-    public Builder setInventoryUpgrades(POGOProtos.Rpc.InventoryUpgradesProto value) {
+    public Builder setInventoryUpgrades(POGOProtos.Rpc.AFFIJCGEPNG value) {
       if (inventoryUpgradesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         inventoryUpgradesBuilder_.setMessage(value);
       }
-      typeCase_ = 7;
+      mOPKNKPOEKICase_ = 7;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+     * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
      */
     public Builder setInventoryUpgrades(
-        POGOProtos.Rpc.InventoryUpgradesProto.Builder builderForValue) {
+        POGOProtos.Rpc.AFFIJCGEPNG.Builder builderForValue) {
       if (inventoryUpgradesBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         inventoryUpgradesBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 7;
+      mOPKNKPOEKICase_ = 7;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+     * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
      */
-    public Builder mergeInventoryUpgrades(POGOProtos.Rpc.InventoryUpgradesProto value) {
+    public Builder mergeInventoryUpgrades(POGOProtos.Rpc.AFFIJCGEPNG value) {
       if (inventoryUpgradesBuilder_ == null) {
-        if (typeCase_ == 7 &&
-            type_ != POGOProtos.Rpc.InventoryUpgradesProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.InventoryUpgradesProto.newBuilder((POGOProtos.Rpc.InventoryUpgradesProto) type_)
+        if (mOPKNKPOEKICase_ == 7 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.AFFIJCGEPNG.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.AFFIJCGEPNG.newBuilder((POGOProtos.Rpc.AFFIJCGEPNG) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 7) {
+        if (mOPKNKPOEKICase_ == 7) {
           inventoryUpgradesBuilder_.mergeFrom(value);
         }
         inventoryUpgradesBuilder_.setMessage(value);
       }
-      typeCase_ = 7;
+      mOPKNKPOEKICase_ = 7;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+     * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
      */
     public Builder clearInventoryUpgrades() {
       if (inventoryUpgradesBuilder_ == null) {
-        if (typeCase_ == 7) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 7) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 7) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 7) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         inventoryUpgradesBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+     * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
      */
-    public POGOProtos.Rpc.InventoryUpgradesProto.Builder getInventoryUpgradesBuilder() {
+    public POGOProtos.Rpc.AFFIJCGEPNG.Builder getInventoryUpgradesBuilder() {
       return getInventoryUpgradesFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+     * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.InventoryUpgradesProtoOrBuilder getInventoryUpgradesOrBuilder() {
-      if ((typeCase_ == 7) && (inventoryUpgradesBuilder_ != null)) {
+    public POGOProtos.Rpc.AFFIJCGEPNGOrBuilder getInventoryUpgradesOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 7) && (inventoryUpgradesBuilder_ != null)) {
         return inventoryUpgradesBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 7) {
-          return (POGOProtos.Rpc.InventoryUpgradesProto) type_;
+        if (mOPKNKPOEKICase_ == 7) {
+          return (POGOProtos.Rpc.AFFIJCGEPNG) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.InventoryUpgradesProto.getDefaultInstance();
+        return POGOProtos.Rpc.AFFIJCGEPNG.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+     * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.InventoryUpgradesProto, POGOProtos.Rpc.InventoryUpgradesProto.Builder, POGOProtos.Rpc.InventoryUpgradesProtoOrBuilder> 
+        POGOProtos.Rpc.AFFIJCGEPNG, POGOProtos.Rpc.AFFIJCGEPNG.Builder, POGOProtos.Rpc.AFFIJCGEPNGOrBuilder> 
         getInventoryUpgradesFieldBuilder() {
       if (inventoryUpgradesBuilder_ == null) {
-        if (!(typeCase_ == 7)) {
-          type_ = POGOProtos.Rpc.InventoryUpgradesProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 7)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.AFFIJCGEPNG.getDefaultInstance();
         }
         inventoryUpgradesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.InventoryUpgradesProto, POGOProtos.Rpc.InventoryUpgradesProto.Builder, POGOProtos.Rpc.InventoryUpgradesProtoOrBuilder>(
-                (POGOProtos.Rpc.InventoryUpgradesProto) type_,
+            POGOProtos.Rpc.AFFIJCGEPNG, POGOProtos.Rpc.AFFIJCGEPNG.Builder, POGOProtos.Rpc.AFFIJCGEPNGOrBuilder>(
+                (POGOProtos.Rpc.AFFIJCGEPNG) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 7;
+      mOPKNKPOEKICase_ = 7;
       onChanged();;
       return inventoryUpgradesBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AppliedItemsProto, POGOProtos.Rpc.AppliedItemsProto.Builder, POGOProtos.Rpc.AppliedItemsProtoOrBuilder> appliedItemsBuilder_;
+        POGOProtos.Rpc.JMKKOPGIOJE, POGOProtos.Rpc.JMKKOPGIOJE.Builder, POGOProtos.Rpc.JMKKOPGIOJEOrBuilder> appliedItemsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+     * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
      * @return Whether the appliedItems field is set.
      */
-    @java.lang.Override
     public boolean hasAppliedItems() {
-      return typeCase_ == 8;
+      return mOPKNKPOEKICase_ == 8;
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+     * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
      * @return The appliedItems.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.AppliedItemsProto getAppliedItems() {
+    public POGOProtos.Rpc.JMKKOPGIOJE getAppliedItems() {
       if (appliedItemsBuilder_ == null) {
-        if (typeCase_ == 8) {
-          return (POGOProtos.Rpc.AppliedItemsProto) type_;
+        if (mOPKNKPOEKICase_ == 8) {
+          return (POGOProtos.Rpc.JMKKOPGIOJE) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance();
+        return POGOProtos.Rpc.JMKKOPGIOJE.getDefaultInstance();
       } else {
-        if (typeCase_ == 8) {
+        if (mOPKNKPOEKICase_ == 8) {
           return appliedItemsBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance();
+        return POGOProtos.Rpc.JMKKOPGIOJE.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+     * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
      */
-    public Builder setAppliedItems(POGOProtos.Rpc.AppliedItemsProto value) {
+    public Builder setAppliedItems(POGOProtos.Rpc.JMKKOPGIOJE value) {
       if (appliedItemsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         appliedItemsBuilder_.setMessage(value);
       }
-      typeCase_ = 8;
+      mOPKNKPOEKICase_ = 8;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+     * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
      */
     public Builder setAppliedItems(
-        POGOProtos.Rpc.AppliedItemsProto.Builder builderForValue) {
+        POGOProtos.Rpc.JMKKOPGIOJE.Builder builderForValue) {
       if (appliedItemsBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         appliedItemsBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 8;
+      mOPKNKPOEKICase_ = 8;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+     * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
      */
-    public Builder mergeAppliedItems(POGOProtos.Rpc.AppliedItemsProto value) {
+    public Builder mergeAppliedItems(POGOProtos.Rpc.JMKKOPGIOJE value) {
       if (appliedItemsBuilder_ == null) {
-        if (typeCase_ == 8 &&
-            type_ != POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.AppliedItemsProto.newBuilder((POGOProtos.Rpc.AppliedItemsProto) type_)
+        if (mOPKNKPOEKICase_ == 8 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.JMKKOPGIOJE.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.JMKKOPGIOJE.newBuilder((POGOProtos.Rpc.JMKKOPGIOJE) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 8) {
+        if (mOPKNKPOEKICase_ == 8) {
           appliedItemsBuilder_.mergeFrom(value);
         }
         appliedItemsBuilder_.setMessage(value);
       }
-      typeCase_ = 8;
+      mOPKNKPOEKICase_ = 8;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+     * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
      */
     public Builder clearAppliedItems() {
       if (appliedItemsBuilder_ == null) {
-        if (typeCase_ == 8) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 8) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 8) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 8) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         appliedItemsBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+     * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
      */
-    public POGOProtos.Rpc.AppliedItemsProto.Builder getAppliedItemsBuilder() {
+    public POGOProtos.Rpc.JMKKOPGIOJE.Builder getAppliedItemsBuilder() {
       return getAppliedItemsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+     * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.AppliedItemsProtoOrBuilder getAppliedItemsOrBuilder() {
-      if ((typeCase_ == 8) && (appliedItemsBuilder_ != null)) {
+    public POGOProtos.Rpc.JMKKOPGIOJEOrBuilder getAppliedItemsOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 8) && (appliedItemsBuilder_ != null)) {
         return appliedItemsBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 8) {
-          return (POGOProtos.Rpc.AppliedItemsProto) type_;
+        if (mOPKNKPOEKICase_ == 8) {
+          return (POGOProtos.Rpc.JMKKOPGIOJE) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance();
+        return POGOProtos.Rpc.JMKKOPGIOJE.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+     * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AppliedItemsProto, POGOProtos.Rpc.AppliedItemsProto.Builder, POGOProtos.Rpc.AppliedItemsProtoOrBuilder> 
+        POGOProtos.Rpc.JMKKOPGIOJE, POGOProtos.Rpc.JMKKOPGIOJE.Builder, POGOProtos.Rpc.JMKKOPGIOJEOrBuilder> 
         getAppliedItemsFieldBuilder() {
       if (appliedItemsBuilder_ == null) {
-        if (!(typeCase_ == 8)) {
-          type_ = POGOProtos.Rpc.AppliedItemsProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 8)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.JMKKOPGIOJE.getDefaultInstance();
         }
         appliedItemsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.AppliedItemsProto, POGOProtos.Rpc.AppliedItemsProto.Builder, POGOProtos.Rpc.AppliedItemsProtoOrBuilder>(
-                (POGOProtos.Rpc.AppliedItemsProto) type_,
+            POGOProtos.Rpc.JMKKOPGIOJE, POGOProtos.Rpc.JMKKOPGIOJE.Builder, POGOProtos.Rpc.JMKKOPGIOJEOrBuilder>(
+                (POGOProtos.Rpc.JMKKOPGIOJE) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 8;
+      mOPKNKPOEKICase_ = 8;
       onChanged();;
       return appliedItemsBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.EggIncubatorsProto, POGOProtos.Rpc.EggIncubatorsProto.Builder, POGOProtos.Rpc.EggIncubatorsProtoOrBuilder> eggIncubatorsBuilder_;
+        POGOProtos.Rpc.MGBPEOMIEPM, POGOProtos.Rpc.MGBPEOMIEPM.Builder, POGOProtos.Rpc.MGBPEOMIEPMOrBuilder> eggIncubatorsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+     * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
      * @return Whether the eggIncubators field is set.
      */
-    @java.lang.Override
     public boolean hasEggIncubators() {
-      return typeCase_ == 9;
+      return mOPKNKPOEKICase_ == 9;
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+     * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
      * @return The eggIncubators.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.EggIncubatorsProto getEggIncubators() {
+    public POGOProtos.Rpc.MGBPEOMIEPM getEggIncubators() {
       if (eggIncubatorsBuilder_ == null) {
-        if (typeCase_ == 9) {
-          return (POGOProtos.Rpc.EggIncubatorsProto) type_;
+        if (mOPKNKPOEKICase_ == 9) {
+          return (POGOProtos.Rpc.MGBPEOMIEPM) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.EggIncubatorsProto.getDefaultInstance();
+        return POGOProtos.Rpc.MGBPEOMIEPM.getDefaultInstance();
       } else {
-        if (typeCase_ == 9) {
+        if (mOPKNKPOEKICase_ == 9) {
           return eggIncubatorsBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.EggIncubatorsProto.getDefaultInstance();
+        return POGOProtos.Rpc.MGBPEOMIEPM.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+     * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
      */
-    public Builder setEggIncubators(POGOProtos.Rpc.EggIncubatorsProto value) {
+    public Builder setEggIncubators(POGOProtos.Rpc.MGBPEOMIEPM value) {
       if (eggIncubatorsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         eggIncubatorsBuilder_.setMessage(value);
       }
-      typeCase_ = 9;
+      mOPKNKPOEKICase_ = 9;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+     * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
      */
     public Builder setEggIncubators(
-        POGOProtos.Rpc.EggIncubatorsProto.Builder builderForValue) {
+        POGOProtos.Rpc.MGBPEOMIEPM.Builder builderForValue) {
       if (eggIncubatorsBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         eggIncubatorsBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 9;
+      mOPKNKPOEKICase_ = 9;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+     * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
      */
-    public Builder mergeEggIncubators(POGOProtos.Rpc.EggIncubatorsProto value) {
+    public Builder mergeEggIncubators(POGOProtos.Rpc.MGBPEOMIEPM value) {
       if (eggIncubatorsBuilder_ == null) {
-        if (typeCase_ == 9 &&
-            type_ != POGOProtos.Rpc.EggIncubatorsProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.EggIncubatorsProto.newBuilder((POGOProtos.Rpc.EggIncubatorsProto) type_)
+        if (mOPKNKPOEKICase_ == 9 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.MGBPEOMIEPM.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.MGBPEOMIEPM.newBuilder((POGOProtos.Rpc.MGBPEOMIEPM) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 9) {
+        if (mOPKNKPOEKICase_ == 9) {
           eggIncubatorsBuilder_.mergeFrom(value);
         }
         eggIncubatorsBuilder_.setMessage(value);
       }
-      typeCase_ = 9;
+      mOPKNKPOEKICase_ = 9;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+     * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
      */
     public Builder clearEggIncubators() {
       if (eggIncubatorsBuilder_ == null) {
-        if (typeCase_ == 9) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 9) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 9) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 9) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         eggIncubatorsBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+     * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
      */
-    public POGOProtos.Rpc.EggIncubatorsProto.Builder getEggIncubatorsBuilder() {
+    public POGOProtos.Rpc.MGBPEOMIEPM.Builder getEggIncubatorsBuilder() {
       return getEggIncubatorsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+     * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.EggIncubatorsProtoOrBuilder getEggIncubatorsOrBuilder() {
-      if ((typeCase_ == 9) && (eggIncubatorsBuilder_ != null)) {
+    public POGOProtos.Rpc.MGBPEOMIEPMOrBuilder getEggIncubatorsOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 9) && (eggIncubatorsBuilder_ != null)) {
         return eggIncubatorsBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 9) {
-          return (POGOProtos.Rpc.EggIncubatorsProto) type_;
+        if (mOPKNKPOEKICase_ == 9) {
+          return (POGOProtos.Rpc.MGBPEOMIEPM) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.EggIncubatorsProto.getDefaultInstance();
+        return POGOProtos.Rpc.MGBPEOMIEPM.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+     * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.EggIncubatorsProto, POGOProtos.Rpc.EggIncubatorsProto.Builder, POGOProtos.Rpc.EggIncubatorsProtoOrBuilder> 
+        POGOProtos.Rpc.MGBPEOMIEPM, POGOProtos.Rpc.MGBPEOMIEPM.Builder, POGOProtos.Rpc.MGBPEOMIEPMOrBuilder> 
         getEggIncubatorsFieldBuilder() {
       if (eggIncubatorsBuilder_ == null) {
-        if (!(typeCase_ == 9)) {
-          type_ = POGOProtos.Rpc.EggIncubatorsProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 9)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.MGBPEOMIEPM.getDefaultInstance();
         }
         eggIncubatorsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.EggIncubatorsProto, POGOProtos.Rpc.EggIncubatorsProto.Builder, POGOProtos.Rpc.EggIncubatorsProtoOrBuilder>(
-                (POGOProtos.Rpc.EggIncubatorsProto) type_,
+            POGOProtos.Rpc.MGBPEOMIEPM, POGOProtos.Rpc.MGBPEOMIEPM.Builder, POGOProtos.Rpc.MGBPEOMIEPMOrBuilder>(
+                (POGOProtos.Rpc.MGBPEOMIEPM) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 9;
+      mOPKNKPOEKICase_ = 9;
       onChanged();;
       return eggIncubatorsBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonFamilyProto, POGOProtos.Rpc.PokemonFamilyProto.Builder, POGOProtos.Rpc.PokemonFamilyProtoOrBuilder> pokemonFamilyBuilder_;
+        POGOProtos.Rpc.GGJABKKNMFJ, POGOProtos.Rpc.GGJABKKNMFJ.Builder, POGOProtos.Rpc.GGJABKKNMFJOrBuilder> pokemonFamilyBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+     * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
      * @return Whether the pokemonFamily field is set.
      */
-    @java.lang.Override
     public boolean hasPokemonFamily() {
-      return typeCase_ == 10;
+      return mOPKNKPOEKICase_ == 10;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+     * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
      * @return The pokemonFamily.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PokemonFamilyProto getPokemonFamily() {
+    public POGOProtos.Rpc.GGJABKKNMFJ getPokemonFamily() {
       if (pokemonFamilyBuilder_ == null) {
-        if (typeCase_ == 10) {
-          return (POGOProtos.Rpc.PokemonFamilyProto) type_;
+        if (mOPKNKPOEKICase_ == 10) {
+          return (POGOProtos.Rpc.GGJABKKNMFJ) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PokemonFamilyProto.getDefaultInstance();
+        return POGOProtos.Rpc.GGJABKKNMFJ.getDefaultInstance();
       } else {
-        if (typeCase_ == 10) {
+        if (mOPKNKPOEKICase_ == 10) {
           return pokemonFamilyBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.PokemonFamilyProto.getDefaultInstance();
+        return POGOProtos.Rpc.GGJABKKNMFJ.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+     * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
      */
-    public Builder setPokemonFamily(POGOProtos.Rpc.PokemonFamilyProto value) {
+    public Builder setPokemonFamily(POGOProtos.Rpc.GGJABKKNMFJ value) {
       if (pokemonFamilyBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         pokemonFamilyBuilder_.setMessage(value);
       }
-      typeCase_ = 10;
+      mOPKNKPOEKICase_ = 10;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+     * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
      */
     public Builder setPokemonFamily(
-        POGOProtos.Rpc.PokemonFamilyProto.Builder builderForValue) {
+        POGOProtos.Rpc.GGJABKKNMFJ.Builder builderForValue) {
       if (pokemonFamilyBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         pokemonFamilyBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 10;
+      mOPKNKPOEKICase_ = 10;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+     * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
      */
-    public Builder mergePokemonFamily(POGOProtos.Rpc.PokemonFamilyProto value) {
+    public Builder mergePokemonFamily(POGOProtos.Rpc.GGJABKKNMFJ value) {
       if (pokemonFamilyBuilder_ == null) {
-        if (typeCase_ == 10 &&
-            type_ != POGOProtos.Rpc.PokemonFamilyProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.PokemonFamilyProto.newBuilder((POGOProtos.Rpc.PokemonFamilyProto) type_)
+        if (mOPKNKPOEKICase_ == 10 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.GGJABKKNMFJ.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.GGJABKKNMFJ.newBuilder((POGOProtos.Rpc.GGJABKKNMFJ) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 10) {
+        if (mOPKNKPOEKICase_ == 10) {
           pokemonFamilyBuilder_.mergeFrom(value);
         }
         pokemonFamilyBuilder_.setMessage(value);
       }
-      typeCase_ = 10;
+      mOPKNKPOEKICase_ = 10;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+     * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
      */
     public Builder clearPokemonFamily() {
       if (pokemonFamilyBuilder_ == null) {
-        if (typeCase_ == 10) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 10) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 10) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 10) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         pokemonFamilyBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+     * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
      */
-    public POGOProtos.Rpc.PokemonFamilyProto.Builder getPokemonFamilyBuilder() {
+    public POGOProtos.Rpc.GGJABKKNMFJ.Builder getPokemonFamilyBuilder() {
       return getPokemonFamilyFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+     * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PokemonFamilyProtoOrBuilder getPokemonFamilyOrBuilder() {
-      if ((typeCase_ == 10) && (pokemonFamilyBuilder_ != null)) {
+    public POGOProtos.Rpc.GGJABKKNMFJOrBuilder getPokemonFamilyOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 10) && (pokemonFamilyBuilder_ != null)) {
         return pokemonFamilyBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 10) {
-          return (POGOProtos.Rpc.PokemonFamilyProto) type_;
+        if (mOPKNKPOEKICase_ == 10) {
+          return (POGOProtos.Rpc.GGJABKKNMFJ) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.PokemonFamilyProto.getDefaultInstance();
+        return POGOProtos.Rpc.GGJABKKNMFJ.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+     * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonFamilyProto, POGOProtos.Rpc.PokemonFamilyProto.Builder, POGOProtos.Rpc.PokemonFamilyProtoOrBuilder> 
+        POGOProtos.Rpc.GGJABKKNMFJ, POGOProtos.Rpc.GGJABKKNMFJ.Builder, POGOProtos.Rpc.GGJABKKNMFJOrBuilder> 
         getPokemonFamilyFieldBuilder() {
       if (pokemonFamilyBuilder_ == null) {
-        if (!(typeCase_ == 10)) {
-          type_ = POGOProtos.Rpc.PokemonFamilyProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 10)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.GGJABKKNMFJ.getDefaultInstance();
         }
         pokemonFamilyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PokemonFamilyProto, POGOProtos.Rpc.PokemonFamilyProto.Builder, POGOProtos.Rpc.PokemonFamilyProtoOrBuilder>(
-                (POGOProtos.Rpc.PokemonFamilyProto) type_,
+            POGOProtos.Rpc.GGJABKKNMFJ, POGOProtos.Rpc.GGJABKKNMFJ.Builder, POGOProtos.Rpc.GGJABKKNMFJOrBuilder>(
+                (POGOProtos.Rpc.GGJABKKNMFJ) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 10;
+      mOPKNKPOEKICase_ = 10;
       onChanged();;
       return pokemonFamilyBuilder_;
     }
@@ -3245,23 +3290,21 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.QuestProto quest = 11;</code>
      * @return Whether the quest field is set.
      */
-    @java.lang.Override
     public boolean hasQuest() {
-      return typeCase_ == 11;
+      return mOPKNKPOEKICase_ == 11;
     }
     /**
      * <code>.POGOProtos.Rpc.QuestProto quest = 11;</code>
      * @return The quest.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.QuestProto getQuest() {
       if (questBuilder_ == null) {
-        if (typeCase_ == 11) {
-          return (POGOProtos.Rpc.QuestProto) type_;
+        if (mOPKNKPOEKICase_ == 11) {
+          return (POGOProtos.Rpc.QuestProto) mOPKNKPOEKI_;
         }
         return POGOProtos.Rpc.QuestProto.getDefaultInstance();
       } else {
-        if (typeCase_ == 11) {
+        if (mOPKNKPOEKICase_ == 11) {
           return questBuilder_.getMessage();
         }
         return POGOProtos.Rpc.QuestProto.getDefaultInstance();
@@ -3275,12 +3318,12 @@ private static final long serialVersionUID = 0L;
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         questBuilder_.setMessage(value);
       }
-      typeCase_ = 11;
+      mOPKNKPOEKICase_ = 11;
       return this;
     }
     /**
@@ -3289,12 +3332,12 @@ private static final long serialVersionUID = 0L;
     public Builder setQuest(
         POGOProtos.Rpc.QuestProto.Builder builderForValue) {
       if (questBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         questBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 11;
+      mOPKNKPOEKICase_ = 11;
       return this;
     }
     /**
@@ -3302,21 +3345,21 @@ private static final long serialVersionUID = 0L;
      */
     public Builder mergeQuest(POGOProtos.Rpc.QuestProto value) {
       if (questBuilder_ == null) {
-        if (typeCase_ == 11 &&
-            type_ != POGOProtos.Rpc.QuestProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.QuestProto.newBuilder((POGOProtos.Rpc.QuestProto) type_)
+        if (mOPKNKPOEKICase_ == 11 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.QuestProto.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.QuestProto.newBuilder((POGOProtos.Rpc.QuestProto) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 11) {
+        if (mOPKNKPOEKICase_ == 11) {
           questBuilder_.mergeFrom(value);
         }
         questBuilder_.setMessage(value);
       }
-      typeCase_ = 11;
+      mOPKNKPOEKICase_ = 11;
       return this;
     }
     /**
@@ -3324,15 +3367,15 @@ private static final long serialVersionUID = 0L;
      */
     public Builder clearQuest() {
       if (questBuilder_ == null) {
-        if (typeCase_ == 11) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 11) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 11) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 11) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         questBuilder_.clear();
       }
@@ -3347,13 +3390,12 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.POGOProtos.Rpc.QuestProto quest = 11;</code>
      */
-    @java.lang.Override
     public POGOProtos.Rpc.QuestProtoOrBuilder getQuestOrBuilder() {
-      if ((typeCase_ == 11) && (questBuilder_ != null)) {
+      if ((mOPKNKPOEKICase_ == 11) && (questBuilder_ != null)) {
         return questBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 11) {
-          return (POGOProtos.Rpc.QuestProto) type_;
+        if (mOPKNKPOEKICase_ == 11) {
+          return (POGOProtos.Rpc.QuestProto) mOPKNKPOEKI_;
         }
         return POGOProtos.Rpc.QuestProto.getDefaultInstance();
       }
@@ -3365,1147 +3407,1399 @@ private static final long serialVersionUID = 0L;
         POGOProtos.Rpc.QuestProto, POGOProtos.Rpc.QuestProto.Builder, POGOProtos.Rpc.QuestProtoOrBuilder> 
         getQuestFieldBuilder() {
       if (questBuilder_ == null) {
-        if (!(typeCase_ == 11)) {
-          type_ = POGOProtos.Rpc.QuestProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 11)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.QuestProto.getDefaultInstance();
         }
         questBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             POGOProtos.Rpc.QuestProto, POGOProtos.Rpc.QuestProto.Builder, POGOProtos.Rpc.QuestProtoOrBuilder>(
-                (POGOProtos.Rpc.QuestProto) type_,
+                (POGOProtos.Rpc.QuestProto) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 11;
+      mOPKNKPOEKICase_ = 11;
       onChanged();;
       return questBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AvatarItemProto, POGOProtos.Rpc.AvatarItemProto.Builder, POGOProtos.Rpc.AvatarItemProtoOrBuilder> avatarItemBuilder_;
+        POGOProtos.Rpc.FCGOBNEJEAP, POGOProtos.Rpc.FCGOBNEJEAP.Builder, POGOProtos.Rpc.FCGOBNEJEAPOrBuilder> avatarItemBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+     * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
      * @return Whether the avatarItem field is set.
      */
-    @java.lang.Override
     public boolean hasAvatarItem() {
-      return typeCase_ == 12;
+      return mOPKNKPOEKICase_ == 12;
     }
     /**
-     * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+     * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
      * @return The avatarItem.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.AvatarItemProto getAvatarItem() {
+    public POGOProtos.Rpc.FCGOBNEJEAP getAvatarItem() {
       if (avatarItemBuilder_ == null) {
-        if (typeCase_ == 12) {
-          return (POGOProtos.Rpc.AvatarItemProto) type_;
+        if (mOPKNKPOEKICase_ == 12) {
+          return (POGOProtos.Rpc.FCGOBNEJEAP) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.AvatarItemProto.getDefaultInstance();
+        return POGOProtos.Rpc.FCGOBNEJEAP.getDefaultInstance();
       } else {
-        if (typeCase_ == 12) {
+        if (mOPKNKPOEKICase_ == 12) {
           return avatarItemBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.AvatarItemProto.getDefaultInstance();
+        return POGOProtos.Rpc.FCGOBNEJEAP.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+     * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
      */
-    public Builder setAvatarItem(POGOProtos.Rpc.AvatarItemProto value) {
+    public Builder setAvatarItem(POGOProtos.Rpc.FCGOBNEJEAP value) {
       if (avatarItemBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         avatarItemBuilder_.setMessage(value);
       }
-      typeCase_ = 12;
+      mOPKNKPOEKICase_ = 12;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+     * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
      */
     public Builder setAvatarItem(
-        POGOProtos.Rpc.AvatarItemProto.Builder builderForValue) {
+        POGOProtos.Rpc.FCGOBNEJEAP.Builder builderForValue) {
       if (avatarItemBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         avatarItemBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 12;
+      mOPKNKPOEKICase_ = 12;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+     * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
      */
-    public Builder mergeAvatarItem(POGOProtos.Rpc.AvatarItemProto value) {
+    public Builder mergeAvatarItem(POGOProtos.Rpc.FCGOBNEJEAP value) {
       if (avatarItemBuilder_ == null) {
-        if (typeCase_ == 12 &&
-            type_ != POGOProtos.Rpc.AvatarItemProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.AvatarItemProto.newBuilder((POGOProtos.Rpc.AvatarItemProto) type_)
+        if (mOPKNKPOEKICase_ == 12 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.FCGOBNEJEAP.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.FCGOBNEJEAP.newBuilder((POGOProtos.Rpc.FCGOBNEJEAP) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 12) {
+        if (mOPKNKPOEKICase_ == 12) {
           avatarItemBuilder_.mergeFrom(value);
         }
         avatarItemBuilder_.setMessage(value);
       }
-      typeCase_ = 12;
+      mOPKNKPOEKICase_ = 12;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+     * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
      */
     public Builder clearAvatarItem() {
       if (avatarItemBuilder_ == null) {
-        if (typeCase_ == 12) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 12) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 12) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 12) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         avatarItemBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+     * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
      */
-    public POGOProtos.Rpc.AvatarItemProto.Builder getAvatarItemBuilder() {
+    public POGOProtos.Rpc.FCGOBNEJEAP.Builder getAvatarItemBuilder() {
       return getAvatarItemFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+     * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.AvatarItemProtoOrBuilder getAvatarItemOrBuilder() {
-      if ((typeCase_ == 12) && (avatarItemBuilder_ != null)) {
+    public POGOProtos.Rpc.FCGOBNEJEAPOrBuilder getAvatarItemOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 12) && (avatarItemBuilder_ != null)) {
         return avatarItemBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 12) {
-          return (POGOProtos.Rpc.AvatarItemProto) type_;
+        if (mOPKNKPOEKICase_ == 12) {
+          return (POGOProtos.Rpc.FCGOBNEJEAP) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.AvatarItemProto.getDefaultInstance();
+        return POGOProtos.Rpc.FCGOBNEJEAP.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+     * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AvatarItemProto, POGOProtos.Rpc.AvatarItemProto.Builder, POGOProtos.Rpc.AvatarItemProtoOrBuilder> 
+        POGOProtos.Rpc.FCGOBNEJEAP, POGOProtos.Rpc.FCGOBNEJEAP.Builder, POGOProtos.Rpc.FCGOBNEJEAPOrBuilder> 
         getAvatarItemFieldBuilder() {
       if (avatarItemBuilder_ == null) {
-        if (!(typeCase_ == 12)) {
-          type_ = POGOProtos.Rpc.AvatarItemProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 12)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.FCGOBNEJEAP.getDefaultInstance();
         }
         avatarItemBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.AvatarItemProto, POGOProtos.Rpc.AvatarItemProto.Builder, POGOProtos.Rpc.AvatarItemProtoOrBuilder>(
-                (POGOProtos.Rpc.AvatarItemProto) type_,
+            POGOProtos.Rpc.FCGOBNEJEAP, POGOProtos.Rpc.FCGOBNEJEAP.Builder, POGOProtos.Rpc.FCGOBNEJEAPOrBuilder>(
+                (POGOProtos.Rpc.FCGOBNEJEAP) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 12;
+      mOPKNKPOEKICase_ = 12;
       onChanged();;
       return avatarItemBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.RaidTicketsProto, POGOProtos.Rpc.RaidTicketsProto.Builder, POGOProtos.Rpc.RaidTicketsProtoOrBuilder> raidTicketsBuilder_;
+        POGOProtos.Rpc.FKJJHDKALOL, POGOProtos.Rpc.FKJJHDKALOL.Builder, POGOProtos.Rpc.FKJJHDKALOLOrBuilder> raidTicketsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+     * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
      * @return Whether the raidTickets field is set.
      */
-    @java.lang.Override
     public boolean hasRaidTickets() {
-      return typeCase_ == 13;
+      return mOPKNKPOEKICase_ == 13;
     }
     /**
-     * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+     * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
      * @return The raidTickets.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.RaidTicketsProto getRaidTickets() {
+    public POGOProtos.Rpc.FKJJHDKALOL getRaidTickets() {
       if (raidTicketsBuilder_ == null) {
-        if (typeCase_ == 13) {
-          return (POGOProtos.Rpc.RaidTicketsProto) type_;
+        if (mOPKNKPOEKICase_ == 13) {
+          return (POGOProtos.Rpc.FKJJHDKALOL) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.RaidTicketsProto.getDefaultInstance();
+        return POGOProtos.Rpc.FKJJHDKALOL.getDefaultInstance();
       } else {
-        if (typeCase_ == 13) {
+        if (mOPKNKPOEKICase_ == 13) {
           return raidTicketsBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.RaidTicketsProto.getDefaultInstance();
+        return POGOProtos.Rpc.FKJJHDKALOL.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+     * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
      */
-    public Builder setRaidTickets(POGOProtos.Rpc.RaidTicketsProto value) {
+    public Builder setRaidTickets(POGOProtos.Rpc.FKJJHDKALOL value) {
       if (raidTicketsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         raidTicketsBuilder_.setMessage(value);
       }
-      typeCase_ = 13;
+      mOPKNKPOEKICase_ = 13;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+     * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
      */
     public Builder setRaidTickets(
-        POGOProtos.Rpc.RaidTicketsProto.Builder builderForValue) {
+        POGOProtos.Rpc.FKJJHDKALOL.Builder builderForValue) {
       if (raidTicketsBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         raidTicketsBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 13;
+      mOPKNKPOEKICase_ = 13;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+     * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
      */
-    public Builder mergeRaidTickets(POGOProtos.Rpc.RaidTicketsProto value) {
+    public Builder mergeRaidTickets(POGOProtos.Rpc.FKJJHDKALOL value) {
       if (raidTicketsBuilder_ == null) {
-        if (typeCase_ == 13 &&
-            type_ != POGOProtos.Rpc.RaidTicketsProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.RaidTicketsProto.newBuilder((POGOProtos.Rpc.RaidTicketsProto) type_)
+        if (mOPKNKPOEKICase_ == 13 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.FKJJHDKALOL.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.FKJJHDKALOL.newBuilder((POGOProtos.Rpc.FKJJHDKALOL) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 13) {
+        if (mOPKNKPOEKICase_ == 13) {
           raidTicketsBuilder_.mergeFrom(value);
         }
         raidTicketsBuilder_.setMessage(value);
       }
-      typeCase_ = 13;
+      mOPKNKPOEKICase_ = 13;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+     * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
      */
     public Builder clearRaidTickets() {
       if (raidTicketsBuilder_ == null) {
-        if (typeCase_ == 13) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 13) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 13) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 13) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         raidTicketsBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+     * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
      */
-    public POGOProtos.Rpc.RaidTicketsProto.Builder getRaidTicketsBuilder() {
+    public POGOProtos.Rpc.FKJJHDKALOL.Builder getRaidTicketsBuilder() {
       return getRaidTicketsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+     * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.RaidTicketsProtoOrBuilder getRaidTicketsOrBuilder() {
-      if ((typeCase_ == 13) && (raidTicketsBuilder_ != null)) {
+    public POGOProtos.Rpc.FKJJHDKALOLOrBuilder getRaidTicketsOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 13) && (raidTicketsBuilder_ != null)) {
         return raidTicketsBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 13) {
-          return (POGOProtos.Rpc.RaidTicketsProto) type_;
+        if (mOPKNKPOEKICase_ == 13) {
+          return (POGOProtos.Rpc.FKJJHDKALOL) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.RaidTicketsProto.getDefaultInstance();
+        return POGOProtos.Rpc.FKJJHDKALOL.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+     * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.RaidTicketsProto, POGOProtos.Rpc.RaidTicketsProto.Builder, POGOProtos.Rpc.RaidTicketsProtoOrBuilder> 
+        POGOProtos.Rpc.FKJJHDKALOL, POGOProtos.Rpc.FKJJHDKALOL.Builder, POGOProtos.Rpc.FKJJHDKALOLOrBuilder> 
         getRaidTicketsFieldBuilder() {
       if (raidTicketsBuilder_ == null) {
-        if (!(typeCase_ == 13)) {
-          type_ = POGOProtos.Rpc.RaidTicketsProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 13)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.FKJJHDKALOL.getDefaultInstance();
         }
         raidTicketsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.RaidTicketsProto, POGOProtos.Rpc.RaidTicketsProto.Builder, POGOProtos.Rpc.RaidTicketsProtoOrBuilder>(
-                (POGOProtos.Rpc.RaidTicketsProto) type_,
+            POGOProtos.Rpc.FKJJHDKALOL, POGOProtos.Rpc.FKJJHDKALOL.Builder, POGOProtos.Rpc.FKJJHDKALOLOrBuilder>(
+                (POGOProtos.Rpc.FKJJHDKALOL) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 13;
+      mOPKNKPOEKICase_ = 13;
       onChanged();;
       return raidTicketsBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestsProto, POGOProtos.Rpc.QuestsProto.Builder, POGOProtos.Rpc.QuestsProtoOrBuilder> questsBuilder_;
+        POGOProtos.Rpc.IECKOBJLECF, POGOProtos.Rpc.IECKOBJLECF.Builder, POGOProtos.Rpc.IECKOBJLECFOrBuilder> questsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
      * @return Whether the quests field is set.
      */
-    @java.lang.Override
     public boolean hasQuests() {
-      return typeCase_ == 14;
+      return mOPKNKPOEKICase_ == 14;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
      * @return The quests.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.QuestsProto getQuests() {
+    public POGOProtos.Rpc.IECKOBJLECF getQuests() {
       if (questsBuilder_ == null) {
-        if (typeCase_ == 14) {
-          return (POGOProtos.Rpc.QuestsProto) type_;
+        if (mOPKNKPOEKICase_ == 14) {
+          return (POGOProtos.Rpc.IECKOBJLECF) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+        return POGOProtos.Rpc.IECKOBJLECF.getDefaultInstance();
       } else {
-        if (typeCase_ == 14) {
+        if (mOPKNKPOEKICase_ == 14) {
           return questsBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+        return POGOProtos.Rpc.IECKOBJLECF.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
      */
-    public Builder setQuests(POGOProtos.Rpc.QuestsProto value) {
+    public Builder setQuests(POGOProtos.Rpc.IECKOBJLECF value) {
       if (questsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         questsBuilder_.setMessage(value);
       }
-      typeCase_ = 14;
+      mOPKNKPOEKICase_ = 14;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
      */
     public Builder setQuests(
-        POGOProtos.Rpc.QuestsProto.Builder builderForValue) {
+        POGOProtos.Rpc.IECKOBJLECF.Builder builderForValue) {
       if (questsBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         questsBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 14;
+      mOPKNKPOEKICase_ = 14;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
      */
-    public Builder mergeQuests(POGOProtos.Rpc.QuestsProto value) {
+    public Builder mergeQuests(POGOProtos.Rpc.IECKOBJLECF value) {
       if (questsBuilder_ == null) {
-        if (typeCase_ == 14 &&
-            type_ != POGOProtos.Rpc.QuestsProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.QuestsProto.newBuilder((POGOProtos.Rpc.QuestsProto) type_)
+        if (mOPKNKPOEKICase_ == 14 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.IECKOBJLECF.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.IECKOBJLECF.newBuilder((POGOProtos.Rpc.IECKOBJLECF) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 14) {
+        if (mOPKNKPOEKICase_ == 14) {
           questsBuilder_.mergeFrom(value);
         }
         questsBuilder_.setMessage(value);
       }
-      typeCase_ = 14;
+      mOPKNKPOEKICase_ = 14;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
      */
     public Builder clearQuests() {
       if (questsBuilder_ == null) {
-        if (typeCase_ == 14) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 14) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 14) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 14) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         questsBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
      */
-    public POGOProtos.Rpc.QuestsProto.Builder getQuestsBuilder() {
+    public POGOProtos.Rpc.IECKOBJLECF.Builder getQuestsBuilder() {
       return getQuestsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.QuestsProtoOrBuilder getQuestsOrBuilder() {
-      if ((typeCase_ == 14) && (questsBuilder_ != null)) {
+    public POGOProtos.Rpc.IECKOBJLECFOrBuilder getQuestsOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 14) && (questsBuilder_ != null)) {
         return questsBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 14) {
-          return (POGOProtos.Rpc.QuestsProto) type_;
+        if (mOPKNKPOEKICase_ == 14) {
+          return (POGOProtos.Rpc.IECKOBJLECF) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+        return POGOProtos.Rpc.IECKOBJLECF.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+     * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.QuestsProto, POGOProtos.Rpc.QuestsProto.Builder, POGOProtos.Rpc.QuestsProtoOrBuilder> 
+        POGOProtos.Rpc.IECKOBJLECF, POGOProtos.Rpc.IECKOBJLECF.Builder, POGOProtos.Rpc.IECKOBJLECFOrBuilder> 
         getQuestsFieldBuilder() {
       if (questsBuilder_ == null) {
-        if (!(typeCase_ == 14)) {
-          type_ = POGOProtos.Rpc.QuestsProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 14)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.IECKOBJLECF.getDefaultInstance();
         }
         questsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.QuestsProto, POGOProtos.Rpc.QuestsProto.Builder, POGOProtos.Rpc.QuestsProtoOrBuilder>(
-                (POGOProtos.Rpc.QuestsProto) type_,
+            POGOProtos.Rpc.IECKOBJLECF, POGOProtos.Rpc.IECKOBJLECF.Builder, POGOProtos.Rpc.IECKOBJLECFOrBuilder>(
+                (POGOProtos.Rpc.IECKOBJLECF) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 14;
+      mOPKNKPOEKICase_ = 14;
       onChanged();;
       return questsBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GiftBoxesProto, POGOProtos.Rpc.GiftBoxesProto.Builder, POGOProtos.Rpc.GiftBoxesProtoOrBuilder> giftBoxesBuilder_;
+        POGOProtos.Rpc.HOCPODGGBJG, POGOProtos.Rpc.HOCPODGGBJG.Builder, POGOProtos.Rpc.HOCPODGGBJGOrBuilder> giftBoxesBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+     * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
      * @return Whether the giftBoxes field is set.
      */
-    @java.lang.Override
     public boolean hasGiftBoxes() {
-      return typeCase_ == 15;
+      return mOPKNKPOEKICase_ == 15;
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+     * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
      * @return The giftBoxes.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.GiftBoxesProto getGiftBoxes() {
+    public POGOProtos.Rpc.HOCPODGGBJG getGiftBoxes() {
       if (giftBoxesBuilder_ == null) {
-        if (typeCase_ == 15) {
-          return (POGOProtos.Rpc.GiftBoxesProto) type_;
+        if (mOPKNKPOEKICase_ == 15) {
+          return (POGOProtos.Rpc.HOCPODGGBJG) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.GiftBoxesProto.getDefaultInstance();
+        return POGOProtos.Rpc.HOCPODGGBJG.getDefaultInstance();
       } else {
-        if (typeCase_ == 15) {
+        if (mOPKNKPOEKICase_ == 15) {
           return giftBoxesBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.GiftBoxesProto.getDefaultInstance();
+        return POGOProtos.Rpc.HOCPODGGBJG.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+     * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
      */
-    public Builder setGiftBoxes(POGOProtos.Rpc.GiftBoxesProto value) {
+    public Builder setGiftBoxes(POGOProtos.Rpc.HOCPODGGBJG value) {
       if (giftBoxesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         giftBoxesBuilder_.setMessage(value);
       }
-      typeCase_ = 15;
+      mOPKNKPOEKICase_ = 15;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+     * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
      */
     public Builder setGiftBoxes(
-        POGOProtos.Rpc.GiftBoxesProto.Builder builderForValue) {
+        POGOProtos.Rpc.HOCPODGGBJG.Builder builderForValue) {
       if (giftBoxesBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         giftBoxesBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 15;
+      mOPKNKPOEKICase_ = 15;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+     * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
      */
-    public Builder mergeGiftBoxes(POGOProtos.Rpc.GiftBoxesProto value) {
+    public Builder mergeGiftBoxes(POGOProtos.Rpc.HOCPODGGBJG value) {
       if (giftBoxesBuilder_ == null) {
-        if (typeCase_ == 15 &&
-            type_ != POGOProtos.Rpc.GiftBoxesProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.GiftBoxesProto.newBuilder((POGOProtos.Rpc.GiftBoxesProto) type_)
+        if (mOPKNKPOEKICase_ == 15 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.HOCPODGGBJG.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.HOCPODGGBJG.newBuilder((POGOProtos.Rpc.HOCPODGGBJG) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 15) {
+        if (mOPKNKPOEKICase_ == 15) {
           giftBoxesBuilder_.mergeFrom(value);
         }
         giftBoxesBuilder_.setMessage(value);
       }
-      typeCase_ = 15;
+      mOPKNKPOEKICase_ = 15;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+     * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
      */
     public Builder clearGiftBoxes() {
       if (giftBoxesBuilder_ == null) {
-        if (typeCase_ == 15) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 15) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 15) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 15) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         giftBoxesBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+     * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
      */
-    public POGOProtos.Rpc.GiftBoxesProto.Builder getGiftBoxesBuilder() {
+    public POGOProtos.Rpc.HOCPODGGBJG.Builder getGiftBoxesBuilder() {
       return getGiftBoxesFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+     * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.GiftBoxesProtoOrBuilder getGiftBoxesOrBuilder() {
-      if ((typeCase_ == 15) && (giftBoxesBuilder_ != null)) {
+    public POGOProtos.Rpc.HOCPODGGBJGOrBuilder getGiftBoxesOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 15) && (giftBoxesBuilder_ != null)) {
         return giftBoxesBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 15) {
-          return (POGOProtos.Rpc.GiftBoxesProto) type_;
+        if (mOPKNKPOEKICase_ == 15) {
+          return (POGOProtos.Rpc.HOCPODGGBJG) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.GiftBoxesProto.getDefaultInstance();
+        return POGOProtos.Rpc.HOCPODGGBJG.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+     * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GiftBoxesProto, POGOProtos.Rpc.GiftBoxesProto.Builder, POGOProtos.Rpc.GiftBoxesProtoOrBuilder> 
+        POGOProtos.Rpc.HOCPODGGBJG, POGOProtos.Rpc.HOCPODGGBJG.Builder, POGOProtos.Rpc.HOCPODGGBJGOrBuilder> 
         getGiftBoxesFieldBuilder() {
       if (giftBoxesBuilder_ == null) {
-        if (!(typeCase_ == 15)) {
-          type_ = POGOProtos.Rpc.GiftBoxesProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 15)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.HOCPODGGBJG.getDefaultInstance();
         }
         giftBoxesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.GiftBoxesProto, POGOProtos.Rpc.GiftBoxesProto.Builder, POGOProtos.Rpc.GiftBoxesProtoOrBuilder>(
-                (POGOProtos.Rpc.GiftBoxesProto) type_,
+            POGOProtos.Rpc.HOCPODGGBJG, POGOProtos.Rpc.HOCPODGGBJG.Builder, POGOProtos.Rpc.HOCPODGGBJGOrBuilder>(
+                (POGOProtos.Rpc.HOCPODGGBJG) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 15;
+      mOPKNKPOEKICase_ = 15;
       onChanged();;
       return giftBoxesBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BelugaIncenseBoxProto, POGOProtos.Rpc.BelugaIncenseBoxProto.Builder, POGOProtos.Rpc.BelugaIncenseBoxProtoOrBuilder> belugaIncenseBuilder_;
+        POGOProtos.Rpc.OELMJAJBGHO, POGOProtos.Rpc.OELMJAJBGHO.Builder, POGOProtos.Rpc.OELMJAJBGHOOrBuilder> belugaIncenseBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+     * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
      * @return Whether the belugaIncense field is set.
      */
-    @java.lang.Override
     public boolean hasBelugaIncense() {
-      return typeCase_ == 16;
+      return mOPKNKPOEKICase_ == 16;
     }
     /**
-     * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+     * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
      * @return The belugaIncense.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.BelugaIncenseBoxProto getBelugaIncense() {
+    public POGOProtos.Rpc.OELMJAJBGHO getBelugaIncense() {
       if (belugaIncenseBuilder_ == null) {
-        if (typeCase_ == 16) {
-          return (POGOProtos.Rpc.BelugaIncenseBoxProto) type_;
+        if (mOPKNKPOEKICase_ == 16) {
+          return (POGOProtos.Rpc.OELMJAJBGHO) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.BelugaIncenseBoxProto.getDefaultInstance();
+        return POGOProtos.Rpc.OELMJAJBGHO.getDefaultInstance();
       } else {
-        if (typeCase_ == 16) {
+        if (mOPKNKPOEKICase_ == 16) {
           return belugaIncenseBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.BelugaIncenseBoxProto.getDefaultInstance();
+        return POGOProtos.Rpc.OELMJAJBGHO.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+     * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
      */
-    public Builder setBelugaIncense(POGOProtos.Rpc.BelugaIncenseBoxProto value) {
+    public Builder setBelugaIncense(POGOProtos.Rpc.OELMJAJBGHO value) {
       if (belugaIncenseBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         belugaIncenseBuilder_.setMessage(value);
       }
-      typeCase_ = 16;
+      mOPKNKPOEKICase_ = 16;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+     * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
      */
     public Builder setBelugaIncense(
-        POGOProtos.Rpc.BelugaIncenseBoxProto.Builder builderForValue) {
+        POGOProtos.Rpc.OELMJAJBGHO.Builder builderForValue) {
       if (belugaIncenseBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         belugaIncenseBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 16;
+      mOPKNKPOEKICase_ = 16;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+     * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
      */
-    public Builder mergeBelugaIncense(POGOProtos.Rpc.BelugaIncenseBoxProto value) {
+    public Builder mergeBelugaIncense(POGOProtos.Rpc.OELMJAJBGHO value) {
       if (belugaIncenseBuilder_ == null) {
-        if (typeCase_ == 16 &&
-            type_ != POGOProtos.Rpc.BelugaIncenseBoxProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.BelugaIncenseBoxProto.newBuilder((POGOProtos.Rpc.BelugaIncenseBoxProto) type_)
+        if (mOPKNKPOEKICase_ == 16 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.OELMJAJBGHO.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.OELMJAJBGHO.newBuilder((POGOProtos.Rpc.OELMJAJBGHO) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 16) {
+        if (mOPKNKPOEKICase_ == 16) {
           belugaIncenseBuilder_.mergeFrom(value);
         }
         belugaIncenseBuilder_.setMessage(value);
       }
-      typeCase_ = 16;
+      mOPKNKPOEKICase_ = 16;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+     * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
      */
     public Builder clearBelugaIncense() {
       if (belugaIncenseBuilder_ == null) {
-        if (typeCase_ == 16) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 16) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 16) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 16) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         belugaIncenseBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+     * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
      */
-    public POGOProtos.Rpc.BelugaIncenseBoxProto.Builder getBelugaIncenseBuilder() {
+    public POGOProtos.Rpc.OELMJAJBGHO.Builder getBelugaIncenseBuilder() {
       return getBelugaIncenseFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+     * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.BelugaIncenseBoxProtoOrBuilder getBelugaIncenseOrBuilder() {
-      if ((typeCase_ == 16) && (belugaIncenseBuilder_ != null)) {
+    public POGOProtos.Rpc.OELMJAJBGHOOrBuilder getBelugaIncenseOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 16) && (belugaIncenseBuilder_ != null)) {
         return belugaIncenseBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 16) {
-          return (POGOProtos.Rpc.BelugaIncenseBoxProto) type_;
+        if (mOPKNKPOEKICase_ == 16) {
+          return (POGOProtos.Rpc.OELMJAJBGHO) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.BelugaIncenseBoxProto.getDefaultInstance();
+        return POGOProtos.Rpc.OELMJAJBGHO.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+     * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.BelugaIncenseBoxProto, POGOProtos.Rpc.BelugaIncenseBoxProto.Builder, POGOProtos.Rpc.BelugaIncenseBoxProtoOrBuilder> 
+        POGOProtos.Rpc.OELMJAJBGHO, POGOProtos.Rpc.OELMJAJBGHO.Builder, POGOProtos.Rpc.OELMJAJBGHOOrBuilder> 
         getBelugaIncenseFieldBuilder() {
       if (belugaIncenseBuilder_ == null) {
-        if (!(typeCase_ == 16)) {
-          type_ = POGOProtos.Rpc.BelugaIncenseBoxProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 16)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.OELMJAJBGHO.getDefaultInstance();
         }
         belugaIncenseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.BelugaIncenseBoxProto, POGOProtos.Rpc.BelugaIncenseBoxProto.Builder, POGOProtos.Rpc.BelugaIncenseBoxProtoOrBuilder>(
-                (POGOProtos.Rpc.BelugaIncenseBoxProto) type_,
+            POGOProtos.Rpc.OELMJAJBGHO, POGOProtos.Rpc.OELMJAJBGHO.Builder, POGOProtos.Rpc.OELMJAJBGHOOrBuilder>(
+                (POGOProtos.Rpc.OELMJAJBGHO) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 16;
+      mOPKNKPOEKICase_ = 16;
       onChanged();;
       return belugaIncenseBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.Builder, POGOProtos.Rpc.LimitedPurchaseSkuRecordProtoOrBuilder> limitedPurchaseSkuRecordBuilder_;
+        POGOProtos.Rpc.OEPAEKONHHL, POGOProtos.Rpc.OEPAEKONHHL.Builder, POGOProtos.Rpc.OEPAEKONHHLOrBuilder> limitedPurchaseSkuRecordBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+     * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
      * @return Whether the limitedPurchaseSkuRecord field is set.
      */
-    @java.lang.Override
     public boolean hasLimitedPurchaseSkuRecord() {
-      return typeCase_ == 19;
+      return mOPKNKPOEKICase_ == 19;
     }
     /**
-     * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+     * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
      * @return The limitedPurchaseSkuRecord.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto getLimitedPurchaseSkuRecord() {
+    public POGOProtos.Rpc.OEPAEKONHHL getLimitedPurchaseSkuRecord() {
       if (limitedPurchaseSkuRecordBuilder_ == null) {
-        if (typeCase_ == 19) {
-          return (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto) type_;
+        if (mOPKNKPOEKICase_ == 19) {
+          return (POGOProtos.Rpc.OEPAEKONHHL) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.getDefaultInstance();
+        return POGOProtos.Rpc.OEPAEKONHHL.getDefaultInstance();
       } else {
-        if (typeCase_ == 19) {
+        if (mOPKNKPOEKICase_ == 19) {
           return limitedPurchaseSkuRecordBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.getDefaultInstance();
+        return POGOProtos.Rpc.OEPAEKONHHL.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+     * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
      */
-    public Builder setLimitedPurchaseSkuRecord(POGOProtos.Rpc.LimitedPurchaseSkuRecordProto value) {
+    public Builder setLimitedPurchaseSkuRecord(POGOProtos.Rpc.OEPAEKONHHL value) {
       if (limitedPurchaseSkuRecordBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         limitedPurchaseSkuRecordBuilder_.setMessage(value);
       }
-      typeCase_ = 19;
+      mOPKNKPOEKICase_ = 19;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+     * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
      */
     public Builder setLimitedPurchaseSkuRecord(
-        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.Builder builderForValue) {
+        POGOProtos.Rpc.OEPAEKONHHL.Builder builderForValue) {
       if (limitedPurchaseSkuRecordBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         limitedPurchaseSkuRecordBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 19;
+      mOPKNKPOEKICase_ = 19;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+     * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
      */
-    public Builder mergeLimitedPurchaseSkuRecord(POGOProtos.Rpc.LimitedPurchaseSkuRecordProto value) {
+    public Builder mergeLimitedPurchaseSkuRecord(POGOProtos.Rpc.OEPAEKONHHL value) {
       if (limitedPurchaseSkuRecordBuilder_ == null) {
-        if (typeCase_ == 19 &&
-            type_ != POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.newBuilder((POGOProtos.Rpc.LimitedPurchaseSkuRecordProto) type_)
+        if (mOPKNKPOEKICase_ == 19 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.OEPAEKONHHL.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.OEPAEKONHHL.newBuilder((POGOProtos.Rpc.OEPAEKONHHL) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 19) {
+        if (mOPKNKPOEKICase_ == 19) {
           limitedPurchaseSkuRecordBuilder_.mergeFrom(value);
         }
         limitedPurchaseSkuRecordBuilder_.setMessage(value);
       }
-      typeCase_ = 19;
+      mOPKNKPOEKICase_ = 19;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+     * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
      */
     public Builder clearLimitedPurchaseSkuRecord() {
       if (limitedPurchaseSkuRecordBuilder_ == null) {
-        if (typeCase_ == 19) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 19) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 19) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 19) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         limitedPurchaseSkuRecordBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+     * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
      */
-    public POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.Builder getLimitedPurchaseSkuRecordBuilder() {
+    public POGOProtos.Rpc.OEPAEKONHHL.Builder getLimitedPurchaseSkuRecordBuilder() {
       return getLimitedPurchaseSkuRecordFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+     * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.LimitedPurchaseSkuRecordProtoOrBuilder getLimitedPurchaseSkuRecordOrBuilder() {
-      if ((typeCase_ == 19) && (limitedPurchaseSkuRecordBuilder_ != null)) {
+    public POGOProtos.Rpc.OEPAEKONHHLOrBuilder getLimitedPurchaseSkuRecordOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 19) && (limitedPurchaseSkuRecordBuilder_ != null)) {
         return limitedPurchaseSkuRecordBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 19) {
-          return (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto) type_;
+        if (mOPKNKPOEKICase_ == 19) {
+          return (POGOProtos.Rpc.OEPAEKONHHL) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.getDefaultInstance();
+        return POGOProtos.Rpc.OEPAEKONHHL.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+     * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LimitedPurchaseSkuRecordProto, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.Builder, POGOProtos.Rpc.LimitedPurchaseSkuRecordProtoOrBuilder> 
+        POGOProtos.Rpc.OEPAEKONHHL, POGOProtos.Rpc.OEPAEKONHHL.Builder, POGOProtos.Rpc.OEPAEKONHHLOrBuilder> 
         getLimitedPurchaseSkuRecordFieldBuilder() {
       if (limitedPurchaseSkuRecordBuilder_ == null) {
-        if (!(typeCase_ == 19)) {
-          type_ = POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 19)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.OEPAEKONHHL.getDefaultInstance();
         }
         limitedPurchaseSkuRecordBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.LimitedPurchaseSkuRecordProto, POGOProtos.Rpc.LimitedPurchaseSkuRecordProto.Builder, POGOProtos.Rpc.LimitedPurchaseSkuRecordProtoOrBuilder>(
-                (POGOProtos.Rpc.LimitedPurchaseSkuRecordProto) type_,
+            POGOProtos.Rpc.OEPAEKONHHL, POGOProtos.Rpc.OEPAEKONHHL.Builder, POGOProtos.Rpc.OEPAEKONHHLOrBuilder>(
+                (POGOProtos.Rpc.OEPAEKONHHL) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 19;
+      mOPKNKPOEKICase_ = 19;
       onChanged();;
       return limitedPurchaseSkuRecordBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.MegaEvoleSpeciesProto, POGOProtos.Rpc.MegaEvoleSpeciesProto.Builder, POGOProtos.Rpc.MegaEvoleSpeciesProtoOrBuilder> megaEvolveSpeciesBuilder_;
+        POGOProtos.Rpc.GABBAGFEALC, POGOProtos.Rpc.GABBAGFEALC.Builder, POGOProtos.Rpc.GABBAGFEALCOrBuilder> megaEvolveSpeciesBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+     * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
      * @return Whether the megaEvolveSpecies field is set.
      */
-    @java.lang.Override
     public boolean hasMegaEvolveSpecies() {
-      return typeCase_ == 21;
+      return mOPKNKPOEKICase_ == 21;
     }
     /**
-     * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+     * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
      * @return The megaEvolveSpecies.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.MegaEvoleSpeciesProto getMegaEvolveSpecies() {
+    public POGOProtos.Rpc.GABBAGFEALC getMegaEvolveSpecies() {
       if (megaEvolveSpeciesBuilder_ == null) {
-        if (typeCase_ == 21) {
-          return (POGOProtos.Rpc.MegaEvoleSpeciesProto) type_;
+        if (mOPKNKPOEKICase_ == 21) {
+          return (POGOProtos.Rpc.GABBAGFEALC) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.MegaEvoleSpeciesProto.getDefaultInstance();
+        return POGOProtos.Rpc.GABBAGFEALC.getDefaultInstance();
       } else {
-        if (typeCase_ == 21) {
+        if (mOPKNKPOEKICase_ == 21) {
           return megaEvolveSpeciesBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.MegaEvoleSpeciesProto.getDefaultInstance();
+        return POGOProtos.Rpc.GABBAGFEALC.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+     * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
      */
-    public Builder setMegaEvolveSpecies(POGOProtos.Rpc.MegaEvoleSpeciesProto value) {
+    public Builder setMegaEvolveSpecies(POGOProtos.Rpc.GABBAGFEALC value) {
       if (megaEvolveSpeciesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         megaEvolveSpeciesBuilder_.setMessage(value);
       }
-      typeCase_ = 21;
+      mOPKNKPOEKICase_ = 21;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+     * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
      */
     public Builder setMegaEvolveSpecies(
-        POGOProtos.Rpc.MegaEvoleSpeciesProto.Builder builderForValue) {
+        POGOProtos.Rpc.GABBAGFEALC.Builder builderForValue) {
       if (megaEvolveSpeciesBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         megaEvolveSpeciesBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 21;
+      mOPKNKPOEKICase_ = 21;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+     * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
      */
-    public Builder mergeMegaEvolveSpecies(POGOProtos.Rpc.MegaEvoleSpeciesProto value) {
+    public Builder mergeMegaEvolveSpecies(POGOProtos.Rpc.GABBAGFEALC value) {
       if (megaEvolveSpeciesBuilder_ == null) {
-        if (typeCase_ == 21 &&
-            type_ != POGOProtos.Rpc.MegaEvoleSpeciesProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.MegaEvoleSpeciesProto.newBuilder((POGOProtos.Rpc.MegaEvoleSpeciesProto) type_)
+        if (mOPKNKPOEKICase_ == 21 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.GABBAGFEALC.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.GABBAGFEALC.newBuilder((POGOProtos.Rpc.GABBAGFEALC) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 21) {
+        if (mOPKNKPOEKICase_ == 21) {
           megaEvolveSpeciesBuilder_.mergeFrom(value);
         }
         megaEvolveSpeciesBuilder_.setMessage(value);
       }
-      typeCase_ = 21;
+      mOPKNKPOEKICase_ = 21;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+     * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
      */
     public Builder clearMegaEvolveSpecies() {
       if (megaEvolveSpeciesBuilder_ == null) {
-        if (typeCase_ == 21) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 21) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 21) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 21) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         megaEvolveSpeciesBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+     * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
      */
-    public POGOProtos.Rpc.MegaEvoleSpeciesProto.Builder getMegaEvolveSpeciesBuilder() {
+    public POGOProtos.Rpc.GABBAGFEALC.Builder getMegaEvolveSpeciesBuilder() {
       return getMegaEvolveSpeciesFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+     * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.MegaEvoleSpeciesProtoOrBuilder getMegaEvolveSpeciesOrBuilder() {
-      if ((typeCase_ == 21) && (megaEvolveSpeciesBuilder_ != null)) {
+    public POGOProtos.Rpc.GABBAGFEALCOrBuilder getMegaEvolveSpeciesOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 21) && (megaEvolveSpeciesBuilder_ != null)) {
         return megaEvolveSpeciesBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 21) {
-          return (POGOProtos.Rpc.MegaEvoleSpeciesProto) type_;
+        if (mOPKNKPOEKICase_ == 21) {
+          return (POGOProtos.Rpc.GABBAGFEALC) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.MegaEvoleSpeciesProto.getDefaultInstance();
+        return POGOProtos.Rpc.GABBAGFEALC.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+     * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.MegaEvoleSpeciesProto, POGOProtos.Rpc.MegaEvoleSpeciesProto.Builder, POGOProtos.Rpc.MegaEvoleSpeciesProtoOrBuilder> 
+        POGOProtos.Rpc.GABBAGFEALC, POGOProtos.Rpc.GABBAGFEALC.Builder, POGOProtos.Rpc.GABBAGFEALCOrBuilder> 
         getMegaEvolveSpeciesFieldBuilder() {
       if (megaEvolveSpeciesBuilder_ == null) {
-        if (!(typeCase_ == 21)) {
-          type_ = POGOProtos.Rpc.MegaEvoleSpeciesProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 21)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.GABBAGFEALC.getDefaultInstance();
         }
         megaEvolveSpeciesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.MegaEvoleSpeciesProto, POGOProtos.Rpc.MegaEvoleSpeciesProto.Builder, POGOProtos.Rpc.MegaEvoleSpeciesProtoOrBuilder>(
-                (POGOProtos.Rpc.MegaEvoleSpeciesProto) type_,
+            POGOProtos.Rpc.GABBAGFEALC, POGOProtos.Rpc.GABBAGFEALC.Builder, POGOProtos.Rpc.GABBAGFEALCOrBuilder>(
+                (POGOProtos.Rpc.GABBAGFEALC) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 21;
+      mOPKNKPOEKICase_ = 21;
       onChanged();;
       return megaEvolveSpeciesBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.StickerProto, POGOProtos.Rpc.StickerProto.Builder, POGOProtos.Rpc.StickerProtoOrBuilder> stickerBuilder_;
+        POGOProtos.Rpc.ELBNNGIDEOG, POGOProtos.Rpc.ELBNNGIDEOG.Builder, POGOProtos.Rpc.ELBNNGIDEOGOrBuilder> stickerBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+     * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
      * @return Whether the sticker field is set.
      */
-    @java.lang.Override
     public boolean hasSticker() {
-      return typeCase_ == 22;
+      return mOPKNKPOEKICase_ == 22;
     }
     /**
-     * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+     * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
      * @return The sticker.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.StickerProto getSticker() {
+    public POGOProtos.Rpc.ELBNNGIDEOG getSticker() {
       if (stickerBuilder_ == null) {
-        if (typeCase_ == 22) {
-          return (POGOProtos.Rpc.StickerProto) type_;
+        if (mOPKNKPOEKICase_ == 22) {
+          return (POGOProtos.Rpc.ELBNNGIDEOG) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.StickerProto.getDefaultInstance();
+        return POGOProtos.Rpc.ELBNNGIDEOG.getDefaultInstance();
       } else {
-        if (typeCase_ == 22) {
+        if (mOPKNKPOEKICase_ == 22) {
           return stickerBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.StickerProto.getDefaultInstance();
+        return POGOProtos.Rpc.ELBNNGIDEOG.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+     * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
      */
-    public Builder setSticker(POGOProtos.Rpc.StickerProto value) {
+    public Builder setSticker(POGOProtos.Rpc.ELBNNGIDEOG value) {
       if (stickerBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        mOPKNKPOEKI_ = value;
         onChanged();
       } else {
         stickerBuilder_.setMessage(value);
       }
-      typeCase_ = 22;
+      mOPKNKPOEKICase_ = 22;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+     * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
      */
     public Builder setSticker(
-        POGOProtos.Rpc.StickerProto.Builder builderForValue) {
+        POGOProtos.Rpc.ELBNNGIDEOG.Builder builderForValue) {
       if (stickerBuilder_ == null) {
-        type_ = builderForValue.build();
+        mOPKNKPOEKI_ = builderForValue.build();
         onChanged();
       } else {
         stickerBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 22;
+      mOPKNKPOEKICase_ = 22;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+     * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
      */
-    public Builder mergeSticker(POGOProtos.Rpc.StickerProto value) {
+    public Builder mergeSticker(POGOProtos.Rpc.ELBNNGIDEOG value) {
       if (stickerBuilder_ == null) {
-        if (typeCase_ == 22 &&
-            type_ != POGOProtos.Rpc.StickerProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.StickerProto.newBuilder((POGOProtos.Rpc.StickerProto) type_)
+        if (mOPKNKPOEKICase_ == 22 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.ELBNNGIDEOG.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.ELBNNGIDEOG.newBuilder((POGOProtos.Rpc.ELBNNGIDEOG) mOPKNKPOEKI_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          mOPKNKPOEKI_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 22) {
+        if (mOPKNKPOEKICase_ == 22) {
           stickerBuilder_.mergeFrom(value);
         }
         stickerBuilder_.setMessage(value);
       }
-      typeCase_ = 22;
+      mOPKNKPOEKICase_ = 22;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+     * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
      */
     public Builder clearSticker() {
       if (stickerBuilder_ == null) {
-        if (typeCase_ == 22) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 22) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 22) {
-          typeCase_ = 0;
-          type_ = null;
+        if (mOPKNKPOEKICase_ == 22) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
         }
         stickerBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+     * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
      */
-    public POGOProtos.Rpc.StickerProto.Builder getStickerBuilder() {
+    public POGOProtos.Rpc.ELBNNGIDEOG.Builder getStickerBuilder() {
       return getStickerFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+     * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.StickerProtoOrBuilder getStickerOrBuilder() {
-      if ((typeCase_ == 22) && (stickerBuilder_ != null)) {
+    public POGOProtos.Rpc.ELBNNGIDEOGOrBuilder getStickerOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 22) && (stickerBuilder_ != null)) {
         return stickerBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 22) {
-          return (POGOProtos.Rpc.StickerProto) type_;
+        if (mOPKNKPOEKICase_ == 22) {
+          return (POGOProtos.Rpc.ELBNNGIDEOG) mOPKNKPOEKI_;
         }
-        return POGOProtos.Rpc.StickerProto.getDefaultInstance();
+        return POGOProtos.Rpc.ELBNNGIDEOG.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+     * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.StickerProto, POGOProtos.Rpc.StickerProto.Builder, POGOProtos.Rpc.StickerProtoOrBuilder> 
+        POGOProtos.Rpc.ELBNNGIDEOG, POGOProtos.Rpc.ELBNNGIDEOG.Builder, POGOProtos.Rpc.ELBNNGIDEOGOrBuilder> 
         getStickerFieldBuilder() {
       if (stickerBuilder_ == null) {
-        if (!(typeCase_ == 22)) {
-          type_ = POGOProtos.Rpc.StickerProto.getDefaultInstance();
+        if (!(mOPKNKPOEKICase_ == 22)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.ELBNNGIDEOG.getDefaultInstance();
         }
         stickerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.StickerProto, POGOProtos.Rpc.StickerProto.Builder, POGOProtos.Rpc.StickerProtoOrBuilder>(
-                (POGOProtos.Rpc.StickerProto) type_,
+            POGOProtos.Rpc.ELBNNGIDEOG, POGOProtos.Rpc.ELBNNGIDEOG.Builder, POGOProtos.Rpc.ELBNNGIDEOGOrBuilder>(
+                (POGOProtos.Rpc.ELBNNGIDEOG) mOPKNKPOEKI_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        mOPKNKPOEKI_ = null;
       }
-      typeCase_ = 22;
+      mOPKNKPOEKICase_ = 22;
       onChanged();;
       return stickerBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CIAMKDJBBHG, POGOProtos.Rpc.CIAMKDJBBHG.Builder, POGOProtos.Rpc.CIAMKDJBBHGOrBuilder> pokemonHomeBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+     * @return Whether the pokemonHome field is set.
+     */
+    public boolean hasPokemonHome() {
+      return mOPKNKPOEKICase_ == 23;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+     * @return The pokemonHome.
+     */
+    public POGOProtos.Rpc.CIAMKDJBBHG getPokemonHome() {
+      if (pokemonHomeBuilder_ == null) {
+        if (mOPKNKPOEKICase_ == 23) {
+          return (POGOProtos.Rpc.CIAMKDJBBHG) mOPKNKPOEKI_;
+        }
+        return POGOProtos.Rpc.CIAMKDJBBHG.getDefaultInstance();
+      } else {
+        if (mOPKNKPOEKICase_ == 23) {
+          return pokemonHomeBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.CIAMKDJBBHG.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+     */
+    public Builder setPokemonHome(POGOProtos.Rpc.CIAMKDJBBHG value) {
+      if (pokemonHomeBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        mOPKNKPOEKI_ = value;
+        onChanged();
+      } else {
+        pokemonHomeBuilder_.setMessage(value);
+      }
+      mOPKNKPOEKICase_ = 23;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+     */
+    public Builder setPokemonHome(
+        POGOProtos.Rpc.CIAMKDJBBHG.Builder builderForValue) {
+      if (pokemonHomeBuilder_ == null) {
+        mOPKNKPOEKI_ = builderForValue.build();
+        onChanged();
+      } else {
+        pokemonHomeBuilder_.setMessage(builderForValue.build());
+      }
+      mOPKNKPOEKICase_ = 23;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+     */
+    public Builder mergePokemonHome(POGOProtos.Rpc.CIAMKDJBBHG value) {
+      if (pokemonHomeBuilder_ == null) {
+        if (mOPKNKPOEKICase_ == 23 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.CIAMKDJBBHG.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.CIAMKDJBBHG.newBuilder((POGOProtos.Rpc.CIAMKDJBBHG) mOPKNKPOEKI_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          mOPKNKPOEKI_ = value;
+        }
+        onChanged();
+      } else {
+        if (mOPKNKPOEKICase_ == 23) {
+          pokemonHomeBuilder_.mergeFrom(value);
+        }
+        pokemonHomeBuilder_.setMessage(value);
+      }
+      mOPKNKPOEKICase_ = 23;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+     */
+    public Builder clearPokemonHome() {
+      if (pokemonHomeBuilder_ == null) {
+        if (mOPKNKPOEKICase_ == 23) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
+          onChanged();
+        }
+      } else {
+        if (mOPKNKPOEKICase_ == 23) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
+        }
+        pokemonHomeBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+     */
+    public POGOProtos.Rpc.CIAMKDJBBHG.Builder getPokemonHomeBuilder() {
+      return getPokemonHomeFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+     */
+    public POGOProtos.Rpc.CIAMKDJBBHGOrBuilder getPokemonHomeOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 23) && (pokemonHomeBuilder_ != null)) {
+        return pokemonHomeBuilder_.getMessageOrBuilder();
+      } else {
+        if (mOPKNKPOEKICase_ == 23) {
+          return (POGOProtos.Rpc.CIAMKDJBBHG) mOPKNKPOEKI_;
+        }
+        return POGOProtos.Rpc.CIAMKDJBBHG.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.CIAMKDJBBHG, POGOProtos.Rpc.CIAMKDJBBHG.Builder, POGOProtos.Rpc.CIAMKDJBBHGOrBuilder> 
+        getPokemonHomeFieldBuilder() {
+      if (pokemonHomeBuilder_ == null) {
+        if (!(mOPKNKPOEKICase_ == 23)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.CIAMKDJBBHG.getDefaultInstance();
+        }
+        pokemonHomeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.CIAMKDJBBHG, POGOProtos.Rpc.CIAMKDJBBHG.Builder, POGOProtos.Rpc.CIAMKDJBBHGOrBuilder>(
+                (POGOProtos.Rpc.CIAMKDJBBHG) mOPKNKPOEKI_,
+                getParentForChildren(),
+                isClean());
+        mOPKNKPOEKI_ = null;
+      }
+      mOPKNKPOEKICase_ = 23;
+      onChanged();;
+      return pokemonHomeBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.EGGJBOKKHNN, POGOProtos.Rpc.EGGJBOKKHNN.Builder, POGOProtos.Rpc.EGGJBOKKHNNOrBuilder> playerStatsSnapshotsBuilder_;
+    /**
+     * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+     * @return Whether the playerStatsSnapshots field is set.
+     */
+    public boolean hasPlayerStatsSnapshots() {
+      return mOPKNKPOEKICase_ == 25;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+     * @return The playerStatsSnapshots.
+     */
+    public POGOProtos.Rpc.EGGJBOKKHNN getPlayerStatsSnapshots() {
+      if (playerStatsSnapshotsBuilder_ == null) {
+        if (mOPKNKPOEKICase_ == 25) {
+          return (POGOProtos.Rpc.EGGJBOKKHNN) mOPKNKPOEKI_;
+        }
+        return POGOProtos.Rpc.EGGJBOKKHNN.getDefaultInstance();
+      } else {
+        if (mOPKNKPOEKICase_ == 25) {
+          return playerStatsSnapshotsBuilder_.getMessage();
+        }
+        return POGOProtos.Rpc.EGGJBOKKHNN.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+     */
+    public Builder setPlayerStatsSnapshots(POGOProtos.Rpc.EGGJBOKKHNN value) {
+      if (playerStatsSnapshotsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        mOPKNKPOEKI_ = value;
+        onChanged();
+      } else {
+        playerStatsSnapshotsBuilder_.setMessage(value);
+      }
+      mOPKNKPOEKICase_ = 25;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+     */
+    public Builder setPlayerStatsSnapshots(
+        POGOProtos.Rpc.EGGJBOKKHNN.Builder builderForValue) {
+      if (playerStatsSnapshotsBuilder_ == null) {
+        mOPKNKPOEKI_ = builderForValue.build();
+        onChanged();
+      } else {
+        playerStatsSnapshotsBuilder_.setMessage(builderForValue.build());
+      }
+      mOPKNKPOEKICase_ = 25;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+     */
+    public Builder mergePlayerStatsSnapshots(POGOProtos.Rpc.EGGJBOKKHNN value) {
+      if (playerStatsSnapshotsBuilder_ == null) {
+        if (mOPKNKPOEKICase_ == 25 &&
+            mOPKNKPOEKI_ != POGOProtos.Rpc.EGGJBOKKHNN.getDefaultInstance()) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.EGGJBOKKHNN.newBuilder((POGOProtos.Rpc.EGGJBOKKHNN) mOPKNKPOEKI_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          mOPKNKPOEKI_ = value;
+        }
+        onChanged();
+      } else {
+        if (mOPKNKPOEKICase_ == 25) {
+          playerStatsSnapshotsBuilder_.mergeFrom(value);
+        }
+        playerStatsSnapshotsBuilder_.setMessage(value);
+      }
+      mOPKNKPOEKICase_ = 25;
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+     */
+    public Builder clearPlayerStatsSnapshots() {
+      if (playerStatsSnapshotsBuilder_ == null) {
+        if (mOPKNKPOEKICase_ == 25) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
+          onChanged();
+        }
+      } else {
+        if (mOPKNKPOEKICase_ == 25) {
+          mOPKNKPOEKICase_ = 0;
+          mOPKNKPOEKI_ = null;
+        }
+        playerStatsSnapshotsBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+     */
+    public POGOProtos.Rpc.EGGJBOKKHNN.Builder getPlayerStatsSnapshotsBuilder() {
+      return getPlayerStatsSnapshotsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+     */
+    public POGOProtos.Rpc.EGGJBOKKHNNOrBuilder getPlayerStatsSnapshotsOrBuilder() {
+      if ((mOPKNKPOEKICase_ == 25) && (playerStatsSnapshotsBuilder_ != null)) {
+        return playerStatsSnapshotsBuilder_.getMessageOrBuilder();
+      } else {
+        if (mOPKNKPOEKICase_ == 25) {
+          return (POGOProtos.Rpc.EGGJBOKKHNN) mOPKNKPOEKI_;
+        }
+        return POGOProtos.Rpc.EGGJBOKKHNN.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        POGOProtos.Rpc.EGGJBOKKHNN, POGOProtos.Rpc.EGGJBOKKHNN.Builder, POGOProtos.Rpc.EGGJBOKKHNNOrBuilder> 
+        getPlayerStatsSnapshotsFieldBuilder() {
+      if (playerStatsSnapshotsBuilder_ == null) {
+        if (!(mOPKNKPOEKICase_ == 25)) {
+          mOPKNKPOEKI_ = POGOProtos.Rpc.EGGJBOKKHNN.getDefaultInstance();
+        }
+        playerStatsSnapshotsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.EGGJBOKKHNN, POGOProtos.Rpc.EGGJBOKKHNN.Builder, POGOProtos.Rpc.EGGJBOKKHNNOrBuilder>(
+                (POGOProtos.Rpc.EGGJBOKKHNN) mOPKNKPOEKI_,
+                getParentForChildren(),
+                isClean());
+        mOPKNKPOEKI_ = null;
+      }
+      mOPKNKPOEKICase_ = 25;
+      onChanged();;
+      return playerStatsSnapshotsBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

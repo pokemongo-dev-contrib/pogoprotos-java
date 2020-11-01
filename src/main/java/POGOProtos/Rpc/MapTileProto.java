@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Proto.TEMP.MapTileProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.MapTileProto}
  */
-public final class MapTileProto extends
+public  final class MapTileProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.MapTileProto)
     MapTileProtoOrBuilder {
@@ -118,7 +114,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.MapTileProto/Types/TextSizeEnum
+   * ref: Niantic.Platform.Maps.Proto.TEMP.MapTileProto.Types.TextSizeEnum
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.MapTileProto.TextSizeEnum}
@@ -208,10 +204,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -248,7 +240,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.MapTileProto/Types/TileTypeEnum
+   * ref: Niantic.Platform.Maps.Proto.TEMP.MapTileProto.Types.TileTypeEnum
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.MapTileProto.TileTypeEnum}
@@ -446,10 +438,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -490,7 +478,6 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 tile_variant = 1;</code>
    * @return The tileVariant.
    */
-  @java.lang.Override
   public int getTileVariant() {
     return tileVariant_;
   }
@@ -501,7 +488,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 tile_index_x = 2;</code>
    * @return The tileIndexX.
    */
-  @java.lang.Override
   public int getTileIndexX() {
     return tileIndexX_;
   }
@@ -512,7 +498,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 tile_index_y = 3;</code>
    * @return The tileIndexY.
    */
-  @java.lang.Override
   public int getTileIndexY() {
     return tileIndexY_;
   }
@@ -523,7 +508,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 zoom_level = 4;</code>
    * @return The zoomLevel.
    */
-  @java.lang.Override
   public int getZoomLevel() {
     return zoomLevel_;
   }
@@ -534,7 +518,6 @@ private static final long serialVersionUID = 0L;
    * <code>string indoor_level_id = 5;</code>
    * @return The indoorLevelId.
    */
-  @java.lang.Override
   public java.lang.String getIndoorLevelId() {
     java.lang.Object ref = indoorLevelId_;
     if (ref instanceof java.lang.String) {
@@ -551,7 +534,6 @@ private static final long serialVersionUID = 0L;
    * <code>string indoor_level_id = 5;</code>
    * @return The bytes for indoorLevelId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getIndoorLevelIdBytes() {
     java.lang.Object ref = indoorLevelId_;
@@ -572,7 +554,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 pertile_epoch = 6;</code>
    * @return The pertileEpoch.
    */
-  @java.lang.Override
   public int getPertileEpoch() {
     return pertileEpoch_;
   }
@@ -787,10 +768,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.MapTileProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.MapTileProto}
    */
   public static final class Builder extends
@@ -973,7 +950,6 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 tile_variant = 1;</code>
      * @return The tileVariant.
      */
-    @java.lang.Override
     public int getTileVariant() {
       return tileVariant_;
     }
@@ -1004,7 +980,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 tile_index_x = 2;</code>
      * @return The tileIndexX.
      */
-    @java.lang.Override
     public int getTileIndexX() {
       return tileIndexX_;
     }
@@ -1035,7 +1010,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 tile_index_y = 3;</code>
      * @return The tileIndexY.
      */
-    @java.lang.Override
     public int getTileIndexY() {
       return tileIndexY_;
     }
@@ -1066,7 +1040,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 zoom_level = 4;</code>
      * @return The zoomLevel.
      */
-    @java.lang.Override
     public int getZoomLevel() {
       return zoomLevel_;
     }
@@ -1173,7 +1146,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 pertile_epoch = 6;</code>
      * @return The pertileEpoch.
      */
-    @java.lang.Override
     public int getPertileEpoch() {
       return pertileEpoch_;
     }

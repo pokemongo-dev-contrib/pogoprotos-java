@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetFacebookFriendListOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetFacebookFriendListOutProto}
  */
-public final class GetFacebookFriendListOutProto extends
+public  final class GetFacebookFriendListOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFacebookFriendListOutProto)
     GetFacebookFriendListOutProtoOrBuilder {
@@ -114,7 +110,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetFacebookFriendListOutProto/Types/Result
+   * ref: Niantic.Platform.Protos.GetFacebookFriendListOutProto.Types.Result
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GetFacebookFriendListOutProto.Result}
@@ -231,10 +227,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -274,19 +266,19 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
      * @return Whether the player field is set.
      */
     boolean hasPlayer();
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
      * @return The player.
      */
-    POGOProtos.Rpc.PlatformPlayerSummaryProto getPlayer();
+    POGOProtos.Rpc.PlayerSummaryProto getPlayer();
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
      */
-    POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder getPlayerOrBuilder();
+    POGOProtos.Rpc.PlayerSummaryProtoOrBuilder getPlayerOrBuilder();
 
     /**
      * <code>string full_name = 2;</code>
@@ -302,12 +294,12 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetFacebookFriendListOutProto/Types/FacebookFriendProto
+   * ref: Niantic.Platform.Protos.GetFacebookFriendListOutProto.Types.FacebookFriendProto
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProto}
    */
-  public static final class FacebookFriendProto extends
+  public  static final class FacebookFriendProto extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProto)
       FacebookFriendProtoOrBuilder {
@@ -351,11 +343,11 @@ private static final long serialVersionUID = 0L;
               done = true;
               break;
             case 10: {
-              POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder subBuilder = null;
+              POGOProtos.Rpc.PlayerSummaryProto.Builder subBuilder = null;
               if (player_ != null) {
                 subBuilder = player_.toBuilder();
               }
-              player_ = input.readMessage(POGOProtos.Rpc.PlatformPlayerSummaryProto.parser(), extensionRegistry);
+              player_ = input.readMessage(POGOProtos.Rpc.PlayerSummaryProto.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(player_);
                 player_ = subBuilder.buildPartial();
@@ -402,28 +394,25 @@ private static final long serialVersionUID = 0L;
     }
 
     public static final int PLAYER_FIELD_NUMBER = 1;
-    private POGOProtos.Rpc.PlatformPlayerSummaryProto player_;
+    private POGOProtos.Rpc.PlayerSummaryProto player_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
      * @return Whether the player field is set.
      */
-    @java.lang.Override
     public boolean hasPlayer() {
       return player_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
      * @return The player.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PlatformPlayerSummaryProto getPlayer() {
-      return player_ == null ? POGOProtos.Rpc.PlatformPlayerSummaryProto.getDefaultInstance() : player_;
+    public POGOProtos.Rpc.PlayerSummaryProto getPlayer() {
+      return player_ == null ? POGOProtos.Rpc.PlayerSummaryProto.getDefaultInstance() : player_;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder getPlayerOrBuilder() {
+    public POGOProtos.Rpc.PlayerSummaryProtoOrBuilder getPlayerOrBuilder() {
       return getPlayer();
     }
 
@@ -433,7 +422,6 @@ private static final long serialVersionUID = 0L;
      * <code>string full_name = 2;</code>
      * @return The fullName.
      */
-    @java.lang.Override
     public java.lang.String getFullName() {
       java.lang.Object ref = fullName_;
       if (ref instanceof java.lang.String) {
@@ -450,7 +438,6 @@ private static final long serialVersionUID = 0L;
      * <code>string full_name = 2;</code>
      * @return The bytes for fullName.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getFullNameBytes() {
       java.lang.Object ref = fullName_;
@@ -637,7 +624,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.GetFacebookFriendListOutProto/Types/FacebookFriendProto
+     * ref: Niantic.Platform.Protos.GetFacebookFriendListOutProto.Types.FacebookFriendProto
      * </pre>
      *
      * Protobuf type {@code POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProto}
@@ -801,31 +788,31 @@ private static final long serialVersionUID = 0L;
         return this;
       }
 
-      private POGOProtos.Rpc.PlatformPlayerSummaryProto player_;
+      private POGOProtos.Rpc.PlayerSummaryProto player_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.PlatformPlayerSummaryProto, POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder, POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder> playerBuilder_;
+          POGOProtos.Rpc.PlayerSummaryProto, POGOProtos.Rpc.PlayerSummaryProto.Builder, POGOProtos.Rpc.PlayerSummaryProtoOrBuilder> playerBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
        * @return Whether the player field is set.
        */
       public boolean hasPlayer() {
         return playerBuilder_ != null || player_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
        * @return The player.
        */
-      public POGOProtos.Rpc.PlatformPlayerSummaryProto getPlayer() {
+      public POGOProtos.Rpc.PlayerSummaryProto getPlayer() {
         if (playerBuilder_ == null) {
-          return player_ == null ? POGOProtos.Rpc.PlatformPlayerSummaryProto.getDefaultInstance() : player_;
+          return player_ == null ? POGOProtos.Rpc.PlayerSummaryProto.getDefaultInstance() : player_;
         } else {
           return playerBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
        */
-      public Builder setPlayer(POGOProtos.Rpc.PlatformPlayerSummaryProto value) {
+      public Builder setPlayer(POGOProtos.Rpc.PlayerSummaryProto value) {
         if (playerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -839,10 +826,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
        */
       public Builder setPlayer(
-          POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder builderForValue) {
+          POGOProtos.Rpc.PlayerSummaryProto.Builder builderForValue) {
         if (playerBuilder_ == null) {
           player_ = builderForValue.build();
           onChanged();
@@ -853,13 +840,13 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
        */
-      public Builder mergePlayer(POGOProtos.Rpc.PlatformPlayerSummaryProto value) {
+      public Builder mergePlayer(POGOProtos.Rpc.PlayerSummaryProto value) {
         if (playerBuilder_ == null) {
           if (player_ != null) {
             player_ =
-              POGOProtos.Rpc.PlatformPlayerSummaryProto.newBuilder(player_).mergeFrom(value).buildPartial();
+              POGOProtos.Rpc.PlayerSummaryProto.newBuilder(player_).mergeFrom(value).buildPartial();
           } else {
             player_ = value;
           }
@@ -871,7 +858,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
        */
       public Builder clearPlayer() {
         if (playerBuilder_ == null) {
@@ -885,33 +872,33 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
        */
-      public POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder getPlayerBuilder() {
+      public POGOProtos.Rpc.PlayerSummaryProto.Builder getPlayerBuilder() {
         
         onChanged();
         return getPlayerFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
        */
-      public POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder getPlayerOrBuilder() {
+      public POGOProtos.Rpc.PlayerSummaryProtoOrBuilder getPlayerOrBuilder() {
         if (playerBuilder_ != null) {
           return playerBuilder_.getMessageOrBuilder();
         } else {
           return player_ == null ?
-              POGOProtos.Rpc.PlatformPlayerSummaryProto.getDefaultInstance() : player_;
+              POGOProtos.Rpc.PlayerSummaryProto.getDefaultInstance() : player_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 1;</code>
+       * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.PlatformPlayerSummaryProto, POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder, POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder> 
+          POGOProtos.Rpc.PlayerSummaryProto, POGOProtos.Rpc.PlayerSummaryProto.Builder, POGOProtos.Rpc.PlayerSummaryProtoOrBuilder> 
           getPlayerFieldBuilder() {
         if (playerBuilder_ == null) {
           playerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.PlatformPlayerSummaryProto, POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder, POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder>(
+              POGOProtos.Rpc.PlayerSummaryProto, POGOProtos.Rpc.PlayerSummaryProto.Builder, POGOProtos.Rpc.PlayerSummaryProtoOrBuilder>(
                   getPlayer(),
                   getParentForChildren(),
                   isClean());
@@ -1054,14 +1041,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GetFacebookFriendListOutProto.Result result = 1;</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  public int getResultValue() {
     return result_;
   }
   /**
    * <code>.POGOProtos.Rpc.GetFacebookFriendListOutProto.Result result = 1;</code>
    * @return The result.
    */
-  @java.lang.Override public POGOProtos.Rpc.GetFacebookFriendListOutProto.Result getResult() {
+  public POGOProtos.Rpc.GetFacebookFriendListOutProto.Result getResult() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GetFacebookFriendListOutProto.Result result = POGOProtos.Rpc.GetFacebookFriendListOutProto.Result.valueOf(result_);
     return result == null ? POGOProtos.Rpc.GetFacebookFriendListOutProto.Result.UNRECOGNIZED : result;
@@ -1072,14 +1059,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProto friend = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProto> getFriendList() {
     return friend_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProto friend = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProtoOrBuilder> 
       getFriendOrBuilderList() {
     return friend_;
@@ -1087,21 +1072,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProto friend = 2;</code>
    */
-  @java.lang.Override
   public int getFriendCount() {
     return friend_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProto friend = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProto getFriend(int index) {
     return friend_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProto friend = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GetFacebookFriendListOutProto.FacebookFriendProtoOrBuilder getFriendOrBuilder(
       int index) {
     return friend_.get(index);
@@ -1113,7 +1095,6 @@ private static final long serialVersionUID = 0L;
    * <code>string next_cursor = 3;</code>
    * @return The nextCursor.
    */
-  @java.lang.Override
   public java.lang.String getNextCursor() {
     java.lang.Object ref = nextCursor_;
     if (ref instanceof java.lang.String) {
@@ -1130,7 +1111,6 @@ private static final long serialVersionUID = 0L;
    * <code>string next_cursor = 3;</code>
    * @return The bytes for nextCursor.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getNextCursorBytes() {
     java.lang.Object ref = nextCursor_;
@@ -1323,10 +1303,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetFacebookFriendListOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetFacebookFriendListOutProto}
    */
   public static final class Builder extends
@@ -1529,7 +1505,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFacebookFriendListOutProto.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    public int getResultValue() {
       return result_;
     }
     /**
@@ -1538,7 +1514,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResultValue(int value) {
-      
       result_ = value;
       onChanged();
       return this;
@@ -1547,7 +1522,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFacebookFriendListOutProto.Result result = 1;</code>
      * @return The result.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetFacebookFriendListOutProto.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetFacebookFriendListOutProto.Result result = POGOProtos.Rpc.GetFacebookFriendListOutProto.Result.valueOf(result_);

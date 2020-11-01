@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: BMMHFLKNOGM
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.HoloInventoryKeyProto}
  */
-public final class HoloInventoryKeyProto extends
+public  final class HoloInventoryKeyProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.HoloInventoryKeyProto)
     HoloInventoryKeyProtoOrBuilder {
@@ -53,107 +49,122 @@ private static final long serialVersionUID = 0L;
             done = true;
             break;
           case 8: {
-            typeCase_ = 1;
-            type_ = input.readUInt64();
+            hLGNPDPAJHECase_ = 1;
+            hLGNPDPAJHE_ = input.readUInt64();
             break;
           }
           case 16: {
             int rawValue = input.readEnum();
-            typeCase_ = 2;
-            type_ = rawValue;
+            hLGNPDPAJHECase_ = 2;
+            hLGNPDPAJHE_ = rawValue;
             break;
           }
           case 24: {
-            typeCase_ = 3;
-            type_ = input.readInt32();
+            hLGNPDPAJHECase_ = 3;
+            hLGNPDPAJHE_ = input.readInt32();
             break;
           }
           case 32: {
-            typeCase_ = 4;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 4;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 40: {
-            typeCase_ = 5;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 5;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 48: {
-            typeCase_ = 6;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 6;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 56: {
-            typeCase_ = 7;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 7;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 64: {
-            typeCase_ = 8;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 8;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 72: {
-            typeCase_ = 9;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 9;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 80: {
-            typeCase_ = 10;
-            type_ = input.readInt32();
+            hLGNPDPAJHECase_ = 10;
+            hLGNPDPAJHE_ = input.readInt32();
             break;
           }
           case 88: {
             int rawValue = input.readEnum();
-            typeCase_ = 11;
-            type_ = rawValue;
+            hLGNPDPAJHECase_ = 11;
+            hLGNPDPAJHE_ = rawValue;
             break;
           }
           case 98: {
             java.lang.String s = input.readStringRequireUtf8();
-            typeCase_ = 12;
-            type_ = s;
+            hLGNPDPAJHECase_ = 12;
+            hLGNPDPAJHE_ = s;
             break;
           }
           case 104: {
-            typeCase_ = 13;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 13;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 112: {
-            typeCase_ = 14;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 14;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 120: {
-            typeCase_ = 15;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 15;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 128: {
-            typeCase_ = 16;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 16;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 136: {
-            typeCase_ = 17;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 17;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 152: {
-            typeCase_ = 19;
-            type_ = input.readBool();
+            hLGNPDPAJHECase_ = 19;
+            hLGNPDPAJHE_ = input.readBool();
             break;
           }
           case 168: {
-            typeCase_ = 21;
-            type_ = input.readInt32();
+            hLGNPDPAJHECase_ = 21;
+            hLGNPDPAJHE_ = input.readInt32();
             break;
           }
           case 178: {
             java.lang.String s = input.readStringRequireUtf8();
-            typeCase_ = 22;
-            type_ = s;
+            hLGNPDPAJHECase_ = 22;
+            hLGNPDPAJHE_ = s;
+            break;
+          }
+          case 184: {
+            hLGNPDPAJHECase_ = 23;
+            hLGNPDPAJHE_ = input.readBool();
+            break;
+          }
+          case 200: {
+            hLGNPDPAJHECase_ = 25;
+            hLGNPDPAJHE_ = input.readBool();
+            break;
+          }
+          case 208: {
+            hLGNPDPAJHECase_ = 26;
+            hLGNPDPAJHE_ = input.readInt64();
             break;
           }
           default: {
@@ -188,9 +199,9 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.HoloInventoryKeyProto.class, POGOProtos.Rpc.HoloInventoryKeyProto.Builder.class);
   }
 
-  private int typeCase_ = 0;
-  private java.lang.Object type_;
-  public enum TypeCase
+  private int hLGNPDPAJHECase_ = 0;
+  private java.lang.Object hLGNPDPAJHE_;
+  public enum HLGNPDPAJHECase
       implements com.google.protobuf.Internal.EnumLite,
           com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     POKEMON_ID(1),
@@ -213,9 +224,12 @@ private static final long serialVersionUID = 0L;
     LIMITED_PURCHASE_SKU_RECORD(19),
     MEGA_EVO_POKEMON_SPECIES_ID(21),
     STICKER_ID(22),
-    TYPE_NOT_SET(0);
+    POKEMON_HOME(23),
+    PLAYER_STATS_SNAPSHOT(25),
+    UNKNOWN_KEY(26),
+    HLGNPDPAJHE_NOT_SET(0);
     private final int value;
-    private TypeCase(int value) {
+    private HLGNPDPAJHECase(int value) {
       this.value = value;
     }
     /**
@@ -224,11 +238,11 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static TypeCase valueOf(int value) {
+    public static HLGNPDPAJHECase valueOf(int value) {
       return forNumber(value);
     }
 
-    public static TypeCase forNumber(int value) {
+    public static HLGNPDPAJHECase forNumber(int value) {
       switch (value) {
         case 1: return POKEMON_ID;
         case 2: return ITEM;
@@ -250,7 +264,10 @@ private static final long serialVersionUID = 0L;
         case 19: return LIMITED_PURCHASE_SKU_RECORD;
         case 21: return MEGA_EVO_POKEMON_SPECIES_ID;
         case 22: return STICKER_ID;
-        case 0: return TYPE_NOT_SET;
+        case 23: return POKEMON_HOME;
+        case 25: return PLAYER_STATS_SNAPSHOT;
+        case 26: return UNKNOWN_KEY;
+        case 0: return HLGNPDPAJHE_NOT_SET;
         default: return null;
       }
     }
@@ -259,10 +276,10 @@ private static final long serialVersionUID = 0L;
     }
   };
 
-  public TypeCase
-  getTypeCase() {
-    return TypeCase.forNumber(
-        typeCase_);
+  public HLGNPDPAJHECase
+  getHLGNPDPAJHECase() {
+    return HLGNPDPAJHECase.forNumber(
+        hLGNPDPAJHECase_);
   }
 
   public static final int POKEMON_ID_FIELD_NUMBER = 1;
@@ -270,10 +287,9 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 pokemon_id = 1;</code>
    * @return The pokemonId.
    */
-  @java.lang.Override
   public long getPokemonId() {
-    if (typeCase_ == 1) {
-      return (java.lang.Long) type_;
+    if (hLGNPDPAJHECase_ == 1) {
+      return (java.lang.Long) hLGNPDPAJHE_;
     }
     return 0L;
   }
@@ -284,8 +300,8 @@ private static final long serialVersionUID = 0L;
    * @return The enum numeric value on the wire for item.
    */
   public int getItemValue() {
-    if (typeCase_ == 2) {
-      return (java.lang.Integer) type_;
+    if (hLGNPDPAJHECase_ == 2) {
+      return (java.lang.Integer) hLGNPDPAJHE_;
     }
     return 0;
   }
@@ -294,13 +310,13 @@ private static final long serialVersionUID = 0L;
    * @return The item.
    */
   public POGOProtos.Rpc.Item getItem() {
-    if (typeCase_ == 2) {
+    if (hLGNPDPAJHECase_ == 2) {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(
-          (java.lang.Integer) type_);
+          (java.lang.Integer) hLGNPDPAJHE_);
       return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.Item.UNKNOWN;
+    return POGOProtos.Rpc.Item.ITEM_UNKNOWN;
   }
 
   public static final int POKEDEX_ENTRY_ID_FIELD_NUMBER = 3;
@@ -308,10 +324,9 @@ private static final long serialVersionUID = 0L;
    * <code>int32 pokedex_entry_id = 3;</code>
    * @return The pokedexEntryId.
    */
-  @java.lang.Override
   public int getPokedexEntryId() {
-    if (typeCase_ == 3) {
-      return (java.lang.Integer) type_;
+    if (hLGNPDPAJHECase_ == 3) {
+      return (java.lang.Integer) hLGNPDPAJHE_;
     }
     return 0;
   }
@@ -321,10 +336,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool player_stats = 4;</code>
    * @return The playerStats.
    */
-  @java.lang.Override
   public boolean getPlayerStats() {
-    if (typeCase_ == 4) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 4) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -334,10 +348,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool player_currency = 5;</code>
    * @return The playerCurrency.
    */
-  @java.lang.Override
   public boolean getPlayerCurrency() {
-    if (typeCase_ == 5) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 5) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -347,10 +360,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool player_camera = 6;</code>
    * @return The playerCamera.
    */
-  @java.lang.Override
   public boolean getPlayerCamera() {
-    if (typeCase_ == 6) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 6) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -360,10 +372,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool inventory_upgrades = 7;</code>
    * @return The inventoryUpgrades.
    */
-  @java.lang.Override
   public boolean getInventoryUpgrades() {
-    if (typeCase_ == 7) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 7) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -373,10 +384,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool applied_items = 8;</code>
    * @return The appliedItems.
    */
-  @java.lang.Override
   public boolean getAppliedItems() {
-    if (typeCase_ == 8) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 8) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -386,10 +396,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool egg_incubators = 9;</code>
    * @return The eggIncubators.
    */
-  @java.lang.Override
   public boolean getEggIncubators() {
-    if (typeCase_ == 9) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 9) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -399,10 +408,9 @@ private static final long serialVersionUID = 0L;
    * <code>int32 pokemon_family_id = 10;</code>
    * @return The pokemonFamilyId.
    */
-  @java.lang.Override
   public int getPokemonFamilyId() {
-    if (typeCase_ == 10) {
-      return (java.lang.Integer) type_;
+    if (hLGNPDPAJHECase_ == 10) {
+      return (java.lang.Integer) hLGNPDPAJHE_;
     }
     return 0;
   }
@@ -413,8 +421,8 @@ private static final long serialVersionUID = 0L;
    * @return The enum numeric value on the wire for questType.
    */
   public int getQuestTypeValue() {
-    if (typeCase_ == 11) {
-      return (java.lang.Integer) type_;
+    if (hLGNPDPAJHECase_ == 11) {
+      return (java.lang.Integer) hLGNPDPAJHE_;
     }
     return 0;
   }
@@ -423,13 +431,13 @@ private static final long serialVersionUID = 0L;
    * @return The questType.
    */
   public POGOProtos.Rpc.QuestType getQuestType() {
-    if (typeCase_ == 11) {
+    if (hLGNPDPAJHECase_ == 11) {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(
-          (java.lang.Integer) type_);
+          (java.lang.Integer) hLGNPDPAJHE_);
       return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET;
+    return POGOProtos.Rpc.QuestType.QUEST_UNSET;
   }
 
   public static final int AVATAR_TEMPLATE_ID_FIELD_NUMBER = 12;
@@ -439,8 +447,8 @@ private static final long serialVersionUID = 0L;
    */
   public java.lang.String getAvatarTemplateId() {
     java.lang.Object ref = "";
-    if (typeCase_ == 12) {
-      ref = type_;
+    if (hLGNPDPAJHECase_ == 12) {
+      ref = hLGNPDPAJHE_;
     }
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
@@ -448,8 +456,8 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      if (typeCase_ == 12) {
-        type_ = s;
+      if (hLGNPDPAJHECase_ == 12) {
+        hLGNPDPAJHE_ = s;
       }
       return s;
     }
@@ -461,15 +469,15 @@ private static final long serialVersionUID = 0L;
   public com.google.protobuf.ByteString
       getAvatarTemplateIdBytes() {
     java.lang.Object ref = "";
-    if (typeCase_ == 12) {
-      ref = type_;
+    if (hLGNPDPAJHECase_ == 12) {
+      ref = hLGNPDPAJHE_;
     }
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      if (typeCase_ == 12) {
-        type_ = b;
+      if (hLGNPDPAJHECase_ == 12) {
+        hLGNPDPAJHE_ = b;
       }
       return b;
     } else {
@@ -482,10 +490,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool raid_tickets = 13;</code>
    * @return The raidTickets.
    */
-  @java.lang.Override
   public boolean getRaidTickets() {
-    if (typeCase_ == 13) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 13) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -495,10 +502,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool quests = 14;</code>
    * @return The quests.
    */
-  @java.lang.Override
   public boolean getQuests() {
-    if (typeCase_ == 14) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 14) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -508,10 +514,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool gift_boxes = 15;</code>
    * @return The giftBoxes.
    */
-  @java.lang.Override
   public boolean getGiftBoxes() {
-    if (typeCase_ == 15) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 15) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -521,10 +526,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool beluga_incense_box = 16;</code>
    * @return The belugaIncenseBox.
    */
-  @java.lang.Override
   public boolean getBelugaIncenseBox() {
-    if (typeCase_ == 16) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 16) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -534,10 +538,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool vs_seeker_upgrades = 17;</code>
    * @return The vsSeekerUpgrades.
    */
-  @java.lang.Override
   public boolean getVsSeekerUpgrades() {
-    if (typeCase_ == 17) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 17) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -547,10 +550,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool limited_purchase_sku_record = 19;</code>
    * @return The limitedPurchaseSkuRecord.
    */
-  @java.lang.Override
   public boolean getLimitedPurchaseSkuRecord() {
-    if (typeCase_ == 19) {
-      return (java.lang.Boolean) type_;
+    if (hLGNPDPAJHECase_ == 19) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
     }
     return false;
   }
@@ -560,10 +562,9 @@ private static final long serialVersionUID = 0L;
    * <code>int32 mega_evo_pokemon_species_id = 21;</code>
    * @return The megaEvoPokemonSpeciesId.
    */
-  @java.lang.Override
   public int getMegaEvoPokemonSpeciesId() {
-    if (typeCase_ == 21) {
-      return (java.lang.Integer) type_;
+    if (hLGNPDPAJHECase_ == 21) {
+      return (java.lang.Integer) hLGNPDPAJHE_;
     }
     return 0;
   }
@@ -575,8 +576,8 @@ private static final long serialVersionUID = 0L;
    */
   public java.lang.String getStickerId() {
     java.lang.Object ref = "";
-    if (typeCase_ == 22) {
-      ref = type_;
+    if (hLGNPDPAJHECase_ == 22) {
+      ref = hLGNPDPAJHE_;
     }
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
@@ -584,8 +585,8 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      if (typeCase_ == 22) {
-        type_ = s;
+      if (hLGNPDPAJHECase_ == 22) {
+        hLGNPDPAJHE_ = s;
       }
       return s;
     }
@@ -597,20 +598,56 @@ private static final long serialVersionUID = 0L;
   public com.google.protobuf.ByteString
       getStickerIdBytes() {
     java.lang.Object ref = "";
-    if (typeCase_ == 22) {
-      ref = type_;
+    if (hLGNPDPAJHECase_ == 22) {
+      ref = hLGNPDPAJHE_;
     }
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      if (typeCase_ == 22) {
-        type_ = b;
+      if (hLGNPDPAJHECase_ == 22) {
+        hLGNPDPAJHE_ = b;
       }
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
+  }
+
+  public static final int POKEMON_HOME_FIELD_NUMBER = 23;
+  /**
+   * <code>bool pokemon_home = 23;</code>
+   * @return The pokemonHome.
+   */
+  public boolean getPokemonHome() {
+    if (hLGNPDPAJHECase_ == 23) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
+    }
+    return false;
+  }
+
+  public static final int PLAYER_STATS_SNAPSHOT_FIELD_NUMBER = 25;
+  /**
+   * <code>bool player_stats_snapshot = 25;</code>
+   * @return The playerStatsSnapshot.
+   */
+  public boolean getPlayerStatsSnapshot() {
+    if (hLGNPDPAJHECase_ == 25) {
+      return (java.lang.Boolean) hLGNPDPAJHE_;
+    }
+    return false;
+  }
+
+  public static final int UNKNOWN_KEY_FIELD_NUMBER = 26;
+  /**
+   * <code>int64 unknown_key = 26;</code>
+   * @return The unknownKey.
+   */
+  public long getUnknownKey() {
+    if (hLGNPDPAJHECase_ == 26) {
+      return (java.lang.Long) hLGNPDPAJHE_;
+    }
+    return 0L;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -627,81 +664,93 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (typeCase_ == 1) {
+    if (hLGNPDPAJHECase_ == 1) {
       output.writeUInt64(
-          1, (long)((java.lang.Long) type_));
+          1, (long)((java.lang.Long) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 2) {
-      output.writeEnum(2, ((java.lang.Integer) type_));
+    if (hLGNPDPAJHECase_ == 2) {
+      output.writeEnum(2, ((java.lang.Integer) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 3) {
+    if (hLGNPDPAJHECase_ == 3) {
       output.writeInt32(
-          3, (int)((java.lang.Integer) type_));
+          3, (int)((java.lang.Integer) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 4) {
+    if (hLGNPDPAJHECase_ == 4) {
       output.writeBool(
-          4, (boolean)((java.lang.Boolean) type_));
+          4, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 5) {
+    if (hLGNPDPAJHECase_ == 5) {
       output.writeBool(
-          5, (boolean)((java.lang.Boolean) type_));
+          5, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 6) {
+    if (hLGNPDPAJHECase_ == 6) {
       output.writeBool(
-          6, (boolean)((java.lang.Boolean) type_));
+          6, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 7) {
+    if (hLGNPDPAJHECase_ == 7) {
       output.writeBool(
-          7, (boolean)((java.lang.Boolean) type_));
+          7, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 8) {
+    if (hLGNPDPAJHECase_ == 8) {
       output.writeBool(
-          8, (boolean)((java.lang.Boolean) type_));
+          8, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 9) {
+    if (hLGNPDPAJHECase_ == 9) {
       output.writeBool(
-          9, (boolean)((java.lang.Boolean) type_));
+          9, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 10) {
+    if (hLGNPDPAJHECase_ == 10) {
       output.writeInt32(
-          10, (int)((java.lang.Integer) type_));
+          10, (int)((java.lang.Integer) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 11) {
-      output.writeEnum(11, ((java.lang.Integer) type_));
+    if (hLGNPDPAJHECase_ == 11) {
+      output.writeEnum(11, ((java.lang.Integer) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 12) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 12, type_);
+    if (hLGNPDPAJHECase_ == 12) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 12, hLGNPDPAJHE_);
     }
-    if (typeCase_ == 13) {
+    if (hLGNPDPAJHECase_ == 13) {
       output.writeBool(
-          13, (boolean)((java.lang.Boolean) type_));
+          13, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 14) {
+    if (hLGNPDPAJHECase_ == 14) {
       output.writeBool(
-          14, (boolean)((java.lang.Boolean) type_));
+          14, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 15) {
+    if (hLGNPDPAJHECase_ == 15) {
       output.writeBool(
-          15, (boolean)((java.lang.Boolean) type_));
+          15, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 16) {
+    if (hLGNPDPAJHECase_ == 16) {
       output.writeBool(
-          16, (boolean)((java.lang.Boolean) type_));
+          16, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 17) {
+    if (hLGNPDPAJHECase_ == 17) {
       output.writeBool(
-          17, (boolean)((java.lang.Boolean) type_));
+          17, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 19) {
+    if (hLGNPDPAJHECase_ == 19) {
       output.writeBool(
-          19, (boolean)((java.lang.Boolean) type_));
+          19, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 21) {
+    if (hLGNPDPAJHECase_ == 21) {
       output.writeInt32(
-          21, (int)((java.lang.Integer) type_));
+          21, (int)((java.lang.Integer) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 22) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 22, type_);
+    if (hLGNPDPAJHECase_ == 22) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 22, hLGNPDPAJHE_);
+    }
+    if (hLGNPDPAJHECase_ == 23) {
+      output.writeBool(
+          23, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 25) {
+      output.writeBool(
+          25, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 26) {
+      output.writeInt64(
+          26, (long)((java.lang.Long) hLGNPDPAJHE_));
     }
     unknownFields.writeTo(output);
   }
@@ -712,99 +761,114 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (typeCase_ == 1) {
+    if (hLGNPDPAJHECase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
         .computeUInt64Size(
-            1, (long)((java.lang.Long) type_));
+            1, (long)((java.lang.Long) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 2) {
+    if (hLGNPDPAJHECase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(2, ((java.lang.Integer) type_));
+        .computeEnumSize(2, ((java.lang.Integer) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 3) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(
-            3, (int)((java.lang.Integer) type_));
-    }
-    if (typeCase_ == 4) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(
-            4, (boolean)((java.lang.Boolean) type_));
-    }
-    if (typeCase_ == 5) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(
-            5, (boolean)((java.lang.Boolean) type_));
-    }
-    if (typeCase_ == 6) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(
-            6, (boolean)((java.lang.Boolean) type_));
-    }
-    if (typeCase_ == 7) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(
-            7, (boolean)((java.lang.Boolean) type_));
-    }
-    if (typeCase_ == 8) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(
-            8, (boolean)((java.lang.Boolean) type_));
-    }
-    if (typeCase_ == 9) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(
-            9, (boolean)((java.lang.Boolean) type_));
-    }
-    if (typeCase_ == 10) {
+    if (hLGNPDPAJHECase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(
-            10, (int)((java.lang.Integer) type_));
+            3, (int)((java.lang.Integer) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 11) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(11, ((java.lang.Integer) type_));
-    }
-    if (typeCase_ == 12) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, type_);
-    }
-    if (typeCase_ == 13) {
+    if (hLGNPDPAJHECase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(
-            13, (boolean)((java.lang.Boolean) type_));
+            4, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 14) {
+    if (hLGNPDPAJHECase_ == 5) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(
-            14, (boolean)((java.lang.Boolean) type_));
+            5, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 15) {
+    if (hLGNPDPAJHECase_ == 6) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(
-            15, (boolean)((java.lang.Boolean) type_));
+            6, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 16) {
+    if (hLGNPDPAJHECase_ == 7) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(
-            16, (boolean)((java.lang.Boolean) type_));
+            7, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 17) {
+    if (hLGNPDPAJHECase_ == 8) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(
-            17, (boolean)((java.lang.Boolean) type_));
+            8, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 19) {
+    if (hLGNPDPAJHECase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(
-            19, (boolean)((java.lang.Boolean) type_));
+            9, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 21) {
+    if (hLGNPDPAJHECase_ == 10) {
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(
-            21, (int)((java.lang.Integer) type_));
+            10, (int)((java.lang.Integer) hLGNPDPAJHE_));
     }
-    if (typeCase_ == 22) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(22, type_);
+    if (hLGNPDPAJHECase_ == 11) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(11, ((java.lang.Integer) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 12) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, hLGNPDPAJHE_);
+    }
+    if (hLGNPDPAJHECase_ == 13) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(
+            13, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 14) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(
+            14, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 15) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(
+            15, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 16) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(
+            16, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 17) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(
+            17, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 19) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(
+            19, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 21) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(
+            21, (int)((java.lang.Integer) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 22) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(22, hLGNPDPAJHE_);
+    }
+    if (hLGNPDPAJHECase_ == 23) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(
+            23, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 25) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(
+            25, (boolean)((java.lang.Boolean) hLGNPDPAJHE_));
+    }
+    if (hLGNPDPAJHECase_ == 26) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt64Size(
+            26, (long)((java.lang.Long) hLGNPDPAJHE_));
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -821,8 +885,8 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.HoloInventoryKeyProto other = (POGOProtos.Rpc.HoloInventoryKeyProto) obj;
 
-    if (!getTypeCase().equals(other.getTypeCase())) return false;
-    switch (typeCase_) {
+    if (!getHLGNPDPAJHECase().equals(other.getHLGNPDPAJHECase())) return false;
+    switch (hLGNPDPAJHECase_) {
       case 1:
         if (getPokemonId()
             != other.getPokemonId()) return false;
@@ -903,6 +967,18 @@ private static final long serialVersionUID = 0L;
         if (!getStickerId()
             .equals(other.getStickerId())) return false;
         break;
+      case 23:
+        if (getPokemonHome()
+            != other.getPokemonHome()) return false;
+        break;
+      case 25:
+        if (getPlayerStatsSnapshot()
+            != other.getPlayerStatsSnapshot()) return false;
+        break;
+      case 26:
+        if (getUnknownKey()
+            != other.getUnknownKey()) return false;
+        break;
       case 0:
       default:
     }
@@ -917,7 +993,7 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    switch (typeCase_) {
+    switch (hLGNPDPAJHECase_) {
       case 1:
         hash = (37 * hash) + POKEMON_ID_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
@@ -1010,6 +1086,21 @@ private static final long serialVersionUID = 0L;
       case 22:
         hash = (37 * hash) + STICKER_ID_FIELD_NUMBER;
         hash = (53 * hash) + getStickerId().hashCode();
+        break;
+      case 23:
+        hash = (37 * hash) + POKEMON_HOME_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getPokemonHome());
+        break;
+      case 25:
+        hash = (37 * hash) + PLAYER_STATS_SNAPSHOT_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+            getPlayerStatsSnapshot());
+        break;
+      case 26:
+        hash = (37 * hash) + UNKNOWN_KEY_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            getUnknownKey());
         break;
       case 0:
       default:
@@ -1110,10 +1201,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: BMMHFLKNOGM
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.HoloInventoryKeyProto}
    */
   public static final class Builder extends
@@ -1151,8 +1238,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      typeCase_ = 0;
-      type_ = null;
+      hLGNPDPAJHECase_ = 0;
+      hLGNPDPAJHE_ = null;
       return this;
     }
 
@@ -1179,67 +1266,76 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.HoloInventoryKeyProto buildPartial() {
       POGOProtos.Rpc.HoloInventoryKeyProto result = new POGOProtos.Rpc.HoloInventoryKeyProto(this);
-      if (typeCase_ == 1) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 1) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 2) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 2) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 3) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 3) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 4) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 4) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 5) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 5) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 6) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 6) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 7) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 7) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 8) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 8) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 9) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 9) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 10) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 10) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 11) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 11) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 12) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 12) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 13) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 13) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 14) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 14) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 15) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 15) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 16) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 16) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 17) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 17) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 19) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 19) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 21) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 21) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      if (typeCase_ == 22) {
-        result.type_ = type_;
+      if (hLGNPDPAJHECase_ == 22) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
       }
-      result.typeCase_ = typeCase_;
+      if (hLGNPDPAJHECase_ == 23) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
+      }
+      if (hLGNPDPAJHECase_ == 25) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
+      }
+      if (hLGNPDPAJHECase_ == 26) {
+        result.hLGNPDPAJHE_ = hLGNPDPAJHE_;
+      }
+      result.hLGNPDPAJHECase_ = hLGNPDPAJHECase_;
       onBuilt();
       return result;
     }
@@ -1288,7 +1384,7 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.HoloInventoryKeyProto other) {
       if (other == POGOProtos.Rpc.HoloInventoryKeyProto.getDefaultInstance()) return this;
-      switch (other.getTypeCase()) {
+      switch (other.getHLGNPDPAJHECase()) {
         case POKEMON_ID: {
           setPokemonId(other.getPokemonId());
           break;
@@ -1334,8 +1430,8 @@ private static final long serialVersionUID = 0L;
           break;
         }
         case AVATAR_TEMPLATE_ID: {
-          typeCase_ = 12;
-          type_ = other.type_;
+          hLGNPDPAJHECase_ = 12;
+          hLGNPDPAJHE_ = other.hLGNPDPAJHE_;
           onChanged();
           break;
         }
@@ -1368,12 +1464,24 @@ private static final long serialVersionUID = 0L;
           break;
         }
         case STICKER_ID: {
-          typeCase_ = 22;
-          type_ = other.type_;
+          hLGNPDPAJHECase_ = 22;
+          hLGNPDPAJHE_ = other.hLGNPDPAJHE_;
           onChanged();
           break;
         }
-        case TYPE_NOT_SET: {
+        case POKEMON_HOME: {
+          setPokemonHome(other.getPokemonHome());
+          break;
+        }
+        case PLAYER_STATS_SNAPSHOT: {
+          setPlayerStatsSnapshot(other.getPlayerStatsSnapshot());
+          break;
+        }
+        case UNKNOWN_KEY: {
+          setUnknownKey(other.getUnknownKey());
+          break;
+        }
+        case HLGNPDPAJHE_NOT_SET: {
           break;
         }
       }
@@ -1405,17 +1513,17 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
-    private int typeCase_ = 0;
-    private java.lang.Object type_;
-    public TypeCase
-        getTypeCase() {
-      return TypeCase.forNumber(
-          typeCase_);
+    private int hLGNPDPAJHECase_ = 0;
+    private java.lang.Object hLGNPDPAJHE_;
+    public HLGNPDPAJHECase
+        getHLGNPDPAJHECase() {
+      return HLGNPDPAJHECase.forNumber(
+          hLGNPDPAJHECase_);
     }
 
-    public Builder clearType() {
-      typeCase_ = 0;
-      type_ = null;
+    public Builder clearHLGNPDPAJHE() {
+      hLGNPDPAJHECase_ = 0;
+      hLGNPDPAJHE_ = null;
       onChanged();
       return this;
     }
@@ -1426,8 +1534,8 @@ private static final long serialVersionUID = 0L;
      * @return The pokemonId.
      */
     public long getPokemonId() {
-      if (typeCase_ == 1) {
-        return (java.lang.Long) type_;
+      if (hLGNPDPAJHECase_ == 1) {
+        return (java.lang.Long) hLGNPDPAJHE_;
       }
       return 0L;
     }
@@ -1437,8 +1545,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokemonId(long value) {
-      typeCase_ = 1;
-      type_ = value;
+      hLGNPDPAJHECase_ = 1;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1447,9 +1555,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokemonId() {
-      if (typeCase_ == 1) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 1) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1459,10 +1567,9 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.Item item = 2;</code>
      * @return The enum numeric value on the wire for item.
      */
-    @java.lang.Override
     public int getItemValue() {
-      if (typeCase_ == 2) {
-        return ((java.lang.Integer) type_).intValue();
+      if (hLGNPDPAJHECase_ == 2) {
+        return ((java.lang.Integer) hLGNPDPAJHE_).intValue();
       }
       return 0;
     }
@@ -1472,8 +1579,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setItemValue(int value) {
-      typeCase_ = 2;
-      type_ = value;
+      hLGNPDPAJHECase_ = 2;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1481,15 +1588,14 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.Item item = 2;</code>
      * @return The item.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.Item getItem() {
-      if (typeCase_ == 2) {
+      if (hLGNPDPAJHECase_ == 2) {
         @SuppressWarnings("deprecation")
         POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(
-            (java.lang.Integer) type_);
+            (java.lang.Integer) hLGNPDPAJHE_);
         return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.Item.UNKNOWN;
+      return POGOProtos.Rpc.Item.ITEM_UNKNOWN;
     }
     /**
      * <code>.POGOProtos.Rpc.Item item = 2;</code>
@@ -1500,8 +1606,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      typeCase_ = 2;
-      type_ = value.getNumber();
+      hLGNPDPAJHECase_ = 2;
+      hLGNPDPAJHE_ = value.getNumber();
       onChanged();
       return this;
     }
@@ -1510,9 +1616,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearItem() {
-      if (typeCase_ == 2) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 2) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1523,8 +1629,8 @@ private static final long serialVersionUID = 0L;
      * @return The pokedexEntryId.
      */
     public int getPokedexEntryId() {
-      if (typeCase_ == 3) {
-        return (java.lang.Integer) type_;
+      if (hLGNPDPAJHECase_ == 3) {
+        return (java.lang.Integer) hLGNPDPAJHE_;
       }
       return 0;
     }
@@ -1534,8 +1640,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokedexEntryId(int value) {
-      typeCase_ = 3;
-      type_ = value;
+      hLGNPDPAJHECase_ = 3;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1544,9 +1650,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokedexEntryId() {
-      if (typeCase_ == 3) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 3) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1557,8 +1663,8 @@ private static final long serialVersionUID = 0L;
      * @return The playerStats.
      */
     public boolean getPlayerStats() {
-      if (typeCase_ == 4) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 4) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -1568,8 +1674,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPlayerStats(boolean value) {
-      typeCase_ = 4;
-      type_ = value;
+      hLGNPDPAJHECase_ = 4;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1578,9 +1684,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPlayerStats() {
-      if (typeCase_ == 4) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 4) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1591,8 +1697,8 @@ private static final long serialVersionUID = 0L;
      * @return The playerCurrency.
      */
     public boolean getPlayerCurrency() {
-      if (typeCase_ == 5) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 5) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -1602,8 +1708,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPlayerCurrency(boolean value) {
-      typeCase_ = 5;
-      type_ = value;
+      hLGNPDPAJHECase_ = 5;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1612,9 +1718,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPlayerCurrency() {
-      if (typeCase_ == 5) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 5) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1625,8 +1731,8 @@ private static final long serialVersionUID = 0L;
      * @return The playerCamera.
      */
     public boolean getPlayerCamera() {
-      if (typeCase_ == 6) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 6) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -1636,8 +1742,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPlayerCamera(boolean value) {
-      typeCase_ = 6;
-      type_ = value;
+      hLGNPDPAJHECase_ = 6;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1646,9 +1752,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPlayerCamera() {
-      if (typeCase_ == 6) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 6) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1659,8 +1765,8 @@ private static final long serialVersionUID = 0L;
      * @return The inventoryUpgrades.
      */
     public boolean getInventoryUpgrades() {
-      if (typeCase_ == 7) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 7) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -1670,8 +1776,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setInventoryUpgrades(boolean value) {
-      typeCase_ = 7;
-      type_ = value;
+      hLGNPDPAJHECase_ = 7;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1680,9 +1786,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearInventoryUpgrades() {
-      if (typeCase_ == 7) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 7) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1693,8 +1799,8 @@ private static final long serialVersionUID = 0L;
      * @return The appliedItems.
      */
     public boolean getAppliedItems() {
-      if (typeCase_ == 8) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 8) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -1704,8 +1810,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setAppliedItems(boolean value) {
-      typeCase_ = 8;
-      type_ = value;
+      hLGNPDPAJHECase_ = 8;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1714,9 +1820,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearAppliedItems() {
-      if (typeCase_ == 8) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 8) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1727,8 +1833,8 @@ private static final long serialVersionUID = 0L;
      * @return The eggIncubators.
      */
     public boolean getEggIncubators() {
-      if (typeCase_ == 9) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 9) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -1738,8 +1844,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setEggIncubators(boolean value) {
-      typeCase_ = 9;
-      type_ = value;
+      hLGNPDPAJHECase_ = 9;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1748,9 +1854,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearEggIncubators() {
-      if (typeCase_ == 9) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 9) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1761,8 +1867,8 @@ private static final long serialVersionUID = 0L;
      * @return The pokemonFamilyId.
      */
     public int getPokemonFamilyId() {
-      if (typeCase_ == 10) {
-        return (java.lang.Integer) type_;
+      if (hLGNPDPAJHECase_ == 10) {
+        return (java.lang.Integer) hLGNPDPAJHE_;
       }
       return 0;
     }
@@ -1772,8 +1878,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokemonFamilyId(int value) {
-      typeCase_ = 10;
-      type_ = value;
+      hLGNPDPAJHECase_ = 10;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1782,9 +1888,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokemonFamilyId() {
-      if (typeCase_ == 10) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 10) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1794,10 +1900,9 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.QuestType quest_type = 11;</code>
      * @return The enum numeric value on the wire for questType.
      */
-    @java.lang.Override
     public int getQuestTypeValue() {
-      if (typeCase_ == 11) {
-        return ((java.lang.Integer) type_).intValue();
+      if (hLGNPDPAJHECase_ == 11) {
+        return ((java.lang.Integer) hLGNPDPAJHE_).intValue();
       }
       return 0;
     }
@@ -1807,8 +1912,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setQuestTypeValue(int value) {
-      typeCase_ = 11;
-      type_ = value;
+      hLGNPDPAJHECase_ = 11;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1816,15 +1921,14 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.QuestType quest_type = 11;</code>
      * @return The questType.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.QuestType getQuestType() {
-      if (typeCase_ == 11) {
+      if (hLGNPDPAJHECase_ == 11) {
         @SuppressWarnings("deprecation")
         POGOProtos.Rpc.QuestType result = POGOProtos.Rpc.QuestType.valueOf(
-            (java.lang.Integer) type_);
+            (java.lang.Integer) hLGNPDPAJHE_);
         return result == null ? POGOProtos.Rpc.QuestType.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.QuestType.QUEST_TYPE_QUEST_UNSET;
+      return POGOProtos.Rpc.QuestType.QUEST_UNSET;
     }
     /**
      * <code>.POGOProtos.Rpc.QuestType quest_type = 11;</code>
@@ -1835,8 +1939,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      typeCase_ = 11;
-      type_ = value.getNumber();
+      hLGNPDPAJHECase_ = 11;
+      hLGNPDPAJHE_ = value.getNumber();
       onChanged();
       return this;
     }
@@ -1845,9 +1949,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearQuestType() {
-      if (typeCase_ == 11) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 11) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1857,18 +1961,17 @@ private static final long serialVersionUID = 0L;
      * <code>string avatar_template_id = 12;</code>
      * @return The avatarTemplateId.
      */
-    @java.lang.Override
     public java.lang.String getAvatarTemplateId() {
       java.lang.Object ref = "";
-      if (typeCase_ == 12) {
-        ref = type_;
+      if (hLGNPDPAJHECase_ == 12) {
+        ref = hLGNPDPAJHE_;
       }
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        if (typeCase_ == 12) {
-          type_ = s;
+        if (hLGNPDPAJHECase_ == 12) {
+          hLGNPDPAJHE_ = s;
         }
         return s;
       } else {
@@ -1879,19 +1982,18 @@ private static final long serialVersionUID = 0L;
      * <code>string avatar_template_id = 12;</code>
      * @return The bytes for avatarTemplateId.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getAvatarTemplateIdBytes() {
       java.lang.Object ref = "";
-      if (typeCase_ == 12) {
-        ref = type_;
+      if (hLGNPDPAJHECase_ == 12) {
+        ref = hLGNPDPAJHE_;
       }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        if (typeCase_ == 12) {
-          type_ = b;
+        if (hLGNPDPAJHECase_ == 12) {
+          hLGNPDPAJHE_ = b;
         }
         return b;
       } else {
@@ -1908,8 +2010,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
     throw new NullPointerException();
   }
-  typeCase_ = 12;
-      type_ = value;
+  hLGNPDPAJHECase_ = 12;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1918,9 +2020,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearAvatarTemplateId() {
-      if (typeCase_ == 12) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 12) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1936,8 +2038,8 @@ private static final long serialVersionUID = 0L;
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-      typeCase_ = 12;
-      type_ = value;
+      hLGNPDPAJHECase_ = 12;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1947,8 +2049,8 @@ private static final long serialVersionUID = 0L;
      * @return The raidTickets.
      */
     public boolean getRaidTickets() {
-      if (typeCase_ == 13) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 13) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -1958,8 +2060,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setRaidTickets(boolean value) {
-      typeCase_ = 13;
-      type_ = value;
+      hLGNPDPAJHECase_ = 13;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -1968,9 +2070,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearRaidTickets() {
-      if (typeCase_ == 13) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 13) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -1981,8 +2083,8 @@ private static final long serialVersionUID = 0L;
      * @return The quests.
      */
     public boolean getQuests() {
-      if (typeCase_ == 14) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 14) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -1992,8 +2094,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setQuests(boolean value) {
-      typeCase_ = 14;
-      type_ = value;
+      hLGNPDPAJHECase_ = 14;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -2002,9 +2104,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearQuests() {
-      if (typeCase_ == 14) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 14) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -2015,8 +2117,8 @@ private static final long serialVersionUID = 0L;
      * @return The giftBoxes.
      */
     public boolean getGiftBoxes() {
-      if (typeCase_ == 15) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 15) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -2026,8 +2128,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setGiftBoxes(boolean value) {
-      typeCase_ = 15;
-      type_ = value;
+      hLGNPDPAJHECase_ = 15;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -2036,9 +2138,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearGiftBoxes() {
-      if (typeCase_ == 15) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 15) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -2049,8 +2151,8 @@ private static final long serialVersionUID = 0L;
      * @return The belugaIncenseBox.
      */
     public boolean getBelugaIncenseBox() {
-      if (typeCase_ == 16) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 16) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -2060,8 +2162,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setBelugaIncenseBox(boolean value) {
-      typeCase_ = 16;
-      type_ = value;
+      hLGNPDPAJHECase_ = 16;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -2070,9 +2172,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearBelugaIncenseBox() {
-      if (typeCase_ == 16) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 16) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -2083,8 +2185,8 @@ private static final long serialVersionUID = 0L;
      * @return The vsSeekerUpgrades.
      */
     public boolean getVsSeekerUpgrades() {
-      if (typeCase_ == 17) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 17) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -2094,8 +2196,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setVsSeekerUpgrades(boolean value) {
-      typeCase_ = 17;
-      type_ = value;
+      hLGNPDPAJHECase_ = 17;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -2104,9 +2206,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearVsSeekerUpgrades() {
-      if (typeCase_ == 17) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 17) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -2117,8 +2219,8 @@ private static final long serialVersionUID = 0L;
      * @return The limitedPurchaseSkuRecord.
      */
     public boolean getLimitedPurchaseSkuRecord() {
-      if (typeCase_ == 19) {
-        return (java.lang.Boolean) type_;
+      if (hLGNPDPAJHECase_ == 19) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
       }
       return false;
     }
@@ -2128,8 +2230,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setLimitedPurchaseSkuRecord(boolean value) {
-      typeCase_ = 19;
-      type_ = value;
+      hLGNPDPAJHECase_ = 19;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -2138,9 +2240,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearLimitedPurchaseSkuRecord() {
-      if (typeCase_ == 19) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 19) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -2151,8 +2253,8 @@ private static final long serialVersionUID = 0L;
      * @return The megaEvoPokemonSpeciesId.
      */
     public int getMegaEvoPokemonSpeciesId() {
-      if (typeCase_ == 21) {
-        return (java.lang.Integer) type_;
+      if (hLGNPDPAJHECase_ == 21) {
+        return (java.lang.Integer) hLGNPDPAJHE_;
       }
       return 0;
     }
@@ -2162,8 +2264,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setMegaEvoPokemonSpeciesId(int value) {
-      typeCase_ = 21;
-      type_ = value;
+      hLGNPDPAJHECase_ = 21;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -2172,9 +2274,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearMegaEvoPokemonSpeciesId() {
-      if (typeCase_ == 21) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 21) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -2184,18 +2286,17 @@ private static final long serialVersionUID = 0L;
      * <code>string sticker_id = 22;</code>
      * @return The stickerId.
      */
-    @java.lang.Override
     public java.lang.String getStickerId() {
       java.lang.Object ref = "";
-      if (typeCase_ == 22) {
-        ref = type_;
+      if (hLGNPDPAJHECase_ == 22) {
+        ref = hLGNPDPAJHE_;
       }
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        if (typeCase_ == 22) {
-          type_ = s;
+        if (hLGNPDPAJHECase_ == 22) {
+          hLGNPDPAJHE_ = s;
         }
         return s;
       } else {
@@ -2206,19 +2307,18 @@ private static final long serialVersionUID = 0L;
      * <code>string sticker_id = 22;</code>
      * @return The bytes for stickerId.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getStickerIdBytes() {
       java.lang.Object ref = "";
-      if (typeCase_ == 22) {
-        ref = type_;
+      if (hLGNPDPAJHECase_ == 22) {
+        ref = hLGNPDPAJHE_;
       }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        if (typeCase_ == 22) {
-          type_ = b;
+        if (hLGNPDPAJHECase_ == 22) {
+          hLGNPDPAJHE_ = b;
         }
         return b;
       } else {
@@ -2235,8 +2335,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
     throw new NullPointerException();
   }
-  typeCase_ = 22;
-      type_ = value;
+  hLGNPDPAJHECase_ = 22;
+      hLGNPDPAJHE_ = value;
       onChanged();
       return this;
     }
@@ -2245,9 +2345,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearStickerId() {
-      if (typeCase_ == 22) {
-        typeCase_ = 0;
-        type_ = null;
+      if (hLGNPDPAJHECase_ == 22) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
         onChanged();
       }
       return this;
@@ -2263,9 +2363,111 @@ private static final long serialVersionUID = 0L;
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-      typeCase_ = 22;
-      type_ = value;
+      hLGNPDPAJHECase_ = 22;
+      hLGNPDPAJHE_ = value;
       onChanged();
+      return this;
+    }
+
+    /**
+     * <code>bool pokemon_home = 23;</code>
+     * @return The pokemonHome.
+     */
+    public boolean getPokemonHome() {
+      if (hLGNPDPAJHECase_ == 23) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
+      }
+      return false;
+    }
+    /**
+     * <code>bool pokemon_home = 23;</code>
+     * @param value The pokemonHome to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPokemonHome(boolean value) {
+      hLGNPDPAJHECase_ = 23;
+      hLGNPDPAJHE_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool pokemon_home = 23;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPokemonHome() {
+      if (hLGNPDPAJHECase_ == 23) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    /**
+     * <code>bool player_stats_snapshot = 25;</code>
+     * @return The playerStatsSnapshot.
+     */
+    public boolean getPlayerStatsSnapshot() {
+      if (hLGNPDPAJHECase_ == 25) {
+        return (java.lang.Boolean) hLGNPDPAJHE_;
+      }
+      return false;
+    }
+    /**
+     * <code>bool player_stats_snapshot = 25;</code>
+     * @param value The playerStatsSnapshot to set.
+     * @return This builder for chaining.
+     */
+    public Builder setPlayerStatsSnapshot(boolean value) {
+      hLGNPDPAJHECase_ = 25;
+      hLGNPDPAJHE_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool player_stats_snapshot = 25;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearPlayerStatsSnapshot() {
+      if (hLGNPDPAJHECase_ == 25) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    /**
+     * <code>int64 unknown_key = 26;</code>
+     * @return The unknownKey.
+     */
+    public long getUnknownKey() {
+      if (hLGNPDPAJHECase_ == 26) {
+        return (java.lang.Long) hLGNPDPAJHE_;
+      }
+      return 0L;
+    }
+    /**
+     * <code>int64 unknown_key = 26;</code>
+     * @param value The unknownKey to set.
+     * @return This builder for chaining.
+     */
+    public Builder setUnknownKey(long value) {
+      hLGNPDPAJHECase_ = 26;
+      hLGNPDPAJHE_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int64 unknown_key = 26;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearUnknownKey() {
+      if (hLGNPDPAJHECase_ == 26) {
+        hLGNPDPAJHECase_ = 0;
+        hLGNPDPAJHE_ = null;
+        onChanged();
+      }
       return this;
     }
     @java.lang.Override

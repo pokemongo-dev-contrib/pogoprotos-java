@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.CrossGameSocial.OnboardingType
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.OnboardingType}
  */
 public enum OnboardingType
@@ -104,10 +100,6 @@ public enum OnboardingType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -116,7 +108,7 @@ public enum OnboardingType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(5);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(91);
   }
 
   private static final OnboardingType[] VALUES = values();

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.InviteFacebookFriendOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.InviteFacebookFriendOutProto}
  */
-public final class InviteFacebookFriendOutProto extends
+public  final class InviteFacebookFriendOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.InviteFacebookFriendOutProto)
     InviteFacebookFriendOutProtoOrBuilder {
@@ -93,7 +89,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.InviteFacebookFriendOutProto/Types/Result
+   * ref: Niantic.Platform.Protos.InviteFacebookFriendOutProto.Types.Result
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.InviteFacebookFriendOutProto.Result}
@@ -282,10 +278,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -326,14 +318,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.InviteFacebookFriendOutProto.Result result = 1;</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  public int getResultValue() {
     return result_;
   }
   /**
    * <code>.POGOProtos.Rpc.InviteFacebookFriendOutProto.Result result = 1;</code>
    * @return The result.
    */
-  @java.lang.Override public POGOProtos.Rpc.InviteFacebookFriendOutProto.Result getResult() {
+  public POGOProtos.Rpc.InviteFacebookFriendOutProto.Result getResult() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.InviteFacebookFriendOutProto.Result result = POGOProtos.Rpc.InviteFacebookFriendOutProto.Result.valueOf(result_);
     return result == null ? POGOProtos.Rpc.InviteFacebookFriendOutProto.Result.UNRECOGNIZED : result;
@@ -494,10 +486,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.InviteFacebookFriendOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.InviteFacebookFriendOutProto}
    */
   public static final class Builder extends
@@ -649,7 +637,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.InviteFacebookFriendOutProto.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    public int getResultValue() {
       return result_;
     }
     /**
@@ -658,7 +646,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResultValue(int value) {
-      
       result_ = value;
       onChanged();
       return this;
@@ -667,7 +654,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.InviteFacebookFriendOutProto.Result result = 1;</code>
      * @return The result.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.InviteFacebookFriendOutProto.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.InviteFacebookFriendOutProto.Result result = POGOProtos.Rpc.InviteFacebookFriendOutProto.Result.valueOf(result_);

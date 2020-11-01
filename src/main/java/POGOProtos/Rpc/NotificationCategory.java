@@ -4,18 +4,14 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: HGEIINLHKIL
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.NotificationCategory}
  */
 public enum NotificationCategory
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>NOTIFICATION_CATEGORY_unset__notification_category = 0;</code>
+   * <code>NOTIFICATION_CATEGORY_UNSET = 0;</code>
    */
-  NOTIFICATION_CATEGORY_unset__notification_category(0),
+  NOTIFICATION_CATEGORY_UNSET(0),
   /**
    * <code>NOTIFICATION_CATEGORY_GYM_REMOVAL = 1;</code>
    */
@@ -212,13 +208,17 @@ public enum NotificationCategory
    * <code>NOTIFICATION_CATEGORY_TIMED_GROUP_CHALLENGE_GOAL_MET = 52;</code>
    */
   NOTIFICATION_CATEGORY_TIMED_GROUP_CHALLENGE_GOAL_MET(52),
+  /**
+   * <code>NOTIFICATION_CATEGORY_DEEP_LINKING = 53;</code>
+   */
+  NOTIFICATION_CATEGORY_DEEP_LINKING(53),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>NOTIFICATION_CATEGORY_unset__notification_category = 0;</code>
+   * <code>NOTIFICATION_CATEGORY_UNSET = 0;</code>
    */
-  public static final int NOTIFICATION_CATEGORY_unset__notification_category_VALUE = 0;
+  public static final int NOTIFICATION_CATEGORY_UNSET_VALUE = 0;
   /**
    * <code>NOTIFICATION_CATEGORY_GYM_REMOVAL = 1;</code>
    */
@@ -415,6 +415,10 @@ public enum NotificationCategory
    * <code>NOTIFICATION_CATEGORY_TIMED_GROUP_CHALLENGE_GOAL_MET = 52;</code>
    */
   public static final int NOTIFICATION_CATEGORY_TIMED_GROUP_CHALLENGE_GOAL_MET_VALUE = 52;
+  /**
+   * <code>NOTIFICATION_CATEGORY_DEEP_LINKING = 53;</code>
+   */
+  public static final int NOTIFICATION_CATEGORY_DEEP_LINKING_VALUE = 53;
 
 
   public final int getNumber() {
@@ -441,7 +445,7 @@ public enum NotificationCategory
    */
   public static NotificationCategory forNumber(int value) {
     switch (value) {
-      case 0: return NOTIFICATION_CATEGORY_unset__notification_category;
+      case 0: return NOTIFICATION_CATEGORY_UNSET;
       case 1: return NOTIFICATION_CATEGORY_GYM_REMOVAL;
       case 2: return NOTIFICATION_CATEGORY_POKEMON_HUNGRY;
       case 3: return NOTIFICATION_CATEGORY_POKEMON_WON;
@@ -491,6 +495,7 @@ public enum NotificationCategory
       case 50: return NOTIFICATION_CATEGORY_ITEM_REWARDS;
       case 51: return NOTIFICATION_CATEGORY_TIMED_GROUP_CHALLENGE_STARTED;
       case 52: return NOTIFICATION_CATEGORY_TIMED_GROUP_CHALLENGE_GOAL_MET;
+      case 53: return NOTIFICATION_CATEGORY_DEEP_LINKING;
       default: return null;
     }
   }
@@ -509,10 +514,6 @@ public enum NotificationCategory
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -521,7 +522,7 @@ public enum NotificationCategory
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(78);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(83);
   }
 
   private static final NotificationCategory[] VALUES = values();

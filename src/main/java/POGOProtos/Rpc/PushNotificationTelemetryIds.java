@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: AHJHPBCEKEF
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.PushNotificationTelemetryIds}
  */
 public enum PushNotificationTelemetryIds
@@ -77,10 +73,6 @@ public enum PushNotificationTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -89,7 +81,7 @@ public enum PushNotificationTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(23);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(122);
   }
 
   private static final PushNotificationTelemetryIds[] VALUES = values();

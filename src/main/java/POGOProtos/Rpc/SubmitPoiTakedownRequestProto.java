@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.SubmitPoiTakedownRequestProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SubmitPoiTakedownRequestProto}
  */
-public final class SubmitPoiTakedownRequestProto extends
+public  final class SubmitPoiTakedownRequestProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SubmitPoiTakedownRequestProto)
     SubmitPoiTakedownRequestProtoOrBuilder {
@@ -104,7 +100,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The poiId.
    */
-  @java.lang.Override
   public java.lang.String getPoiId() {
     java.lang.Object ref = poiId_;
     if (ref instanceof java.lang.String) {
@@ -121,7 +116,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The bytes for poiId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPoiIdBytes() {
     java.lang.Object ref = poiId_;
@@ -142,14 +136,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.PoiInvalidReason invalid_reason = 2;</code>
    * @return The enum numeric value on the wire for invalidReason.
    */
-  @java.lang.Override public int getInvalidReasonValue() {
+  public int getInvalidReasonValue() {
     return invalidReason_;
   }
   /**
    * <code>.POGOProtos.Rpc.PoiInvalidReason invalid_reason = 2;</code>
    * @return The invalidReason.
    */
-  @java.lang.Override public POGOProtos.Rpc.PoiInvalidReason getInvalidReason() {
+  public POGOProtos.Rpc.PoiInvalidReason getInvalidReason() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.PoiInvalidReason result = POGOProtos.Rpc.PoiInvalidReason.valueOf(invalidReason_);
     return result == null ? POGOProtos.Rpc.PoiInvalidReason.UNRECOGNIZED : result;
@@ -320,10 +314,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.SubmitPoiTakedownRequestProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SubmitPoiTakedownRequestProto}
    */
   public static final class Builder extends
@@ -558,7 +548,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PoiInvalidReason invalid_reason = 2;</code>
      * @return The enum numeric value on the wire for invalidReason.
      */
-    @java.lang.Override public int getInvalidReasonValue() {
+    public int getInvalidReasonValue() {
       return invalidReason_;
     }
     /**
@@ -567,7 +557,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setInvalidReasonValue(int value) {
-      
       invalidReason_ = value;
       onChanged();
       return this;
@@ -576,7 +565,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PoiInvalidReason invalid_reason = 2;</code>
      * @return The invalidReason.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.PoiInvalidReason getInvalidReason() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.PoiInvalidReason result = POGOProtos.Rpc.PoiInvalidReason.valueOf(invalidReason_);

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: LHFOJBDLAPP
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SendGiftOutProto}
  */
-public final class SendGiftOutProto extends
+public  final class SendGiftOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SendGiftOutProto)
     SendGiftOutProtoOrBuilder {
@@ -20,7 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private SendGiftOutProto() {
-    result_ = 0;
+    jbflkcdndlp_ = 0;
   }
 
   @java.lang.Override
@@ -56,12 +52,12 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            result_ = rawValue;
+            jbflkcdndlp_ = rawValue;
             break;
           }
           case 16: {
 
-            awardedXp_ = input.readInt32();
+            chpnjmhlbdj_ = input.readInt32();
             break;
           }
           default: {
@@ -98,12 +94,12 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: LHFOJBDLAPP/JGPABNMJKNA/MNKCNOMAIFP
+   * ref: SendGiftOutProto/OFECLCNEOHA/JBFOOFNJHFM
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.SendGiftOutProto.Result}
+   * Protobuf enum {@code POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM}
    */
-  public enum Result
+  public enum JBFOOFNJHFM
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNSET = 0;</code>
@@ -196,7 +192,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static Result valueOf(int value) {
+    public static JBFOOFNJHFM valueOf(int value) {
       return forNumber(value);
     }
 
@@ -204,7 +200,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static Result forNumber(int value) {
+    public static JBFOOFNJHFM forNumber(int value) {
       switch (value) {
         case 0: return UNSET;
         case 1: return SUCCESS;
@@ -219,24 +215,20 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<Result>
+    public static com.google.protobuf.Internal.EnumLiteMap<JBFOOFNJHFM>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        Result> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<Result>() {
-            public Result findValueByNumber(int number) {
-              return Result.forNumber(number);
+        JBFOOFNJHFM> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<JBFOOFNJHFM>() {
+            public JBFOOFNJHFM findValueByNumber(int number) {
+              return JBFOOFNJHFM.forNumber(number);
             }
           };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -248,9 +240,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.SendGiftOutProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final Result[] VALUES = values();
+    private static final JBFOOFNJHFM[] VALUES = values();
 
-    public static Result valueOf(
+    public static JBFOOFNJHFM valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -264,41 +256,40 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private Result(int value) {
+    private JBFOOFNJHFM(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.SendGiftOutProto.Result)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM)
   }
 
-  public static final int RESULT_FIELD_NUMBER = 1;
-  private int result_;
+  public static final int JBFLKCDNDLP_FIELD_NUMBER = 1;
+  private int jbflkcdndlp_;
   /**
-   * <code>.POGOProtos.Rpc.SendGiftOutProto.Result result = 1;</code>
-   * @return The enum numeric value on the wire for result.
+   * <code>.POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM jbflkcdndlp = 1;</code>
+   * @return The enum numeric value on the wire for jbflkcdndlp.
    */
-  @java.lang.Override public int getResultValue() {
-    return result_;
+  public int getJbflkcdndlpValue() {
+    return jbflkcdndlp_;
   }
   /**
-   * <code>.POGOProtos.Rpc.SendGiftOutProto.Result result = 1;</code>
-   * @return The result.
+   * <code>.POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM jbflkcdndlp = 1;</code>
+   * @return The jbflkcdndlp.
    */
-  @java.lang.Override public POGOProtos.Rpc.SendGiftOutProto.Result getResult() {
+  public POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM getJbflkcdndlp() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.SendGiftOutProto.Result result = POGOProtos.Rpc.SendGiftOutProto.Result.valueOf(result_);
-    return result == null ? POGOProtos.Rpc.SendGiftOutProto.Result.UNRECOGNIZED : result;
+    POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM result = POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM.valueOf(jbflkcdndlp_);
+    return result == null ? POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM.UNRECOGNIZED : result;
   }
 
-  public static final int AWARDED_XP_FIELD_NUMBER = 2;
-  private int awardedXp_;
+  public static final int CHPNJMHLBDJ_FIELD_NUMBER = 2;
+  private int chpnjmhlbdj_;
   /**
-   * <code>int32 awarded_xp = 2;</code>
-   * @return The awardedXp.
+   * <code>int32 chpnjmhlbdj = 2;</code>
+   * @return The chpnjmhlbdj.
    */
-  @java.lang.Override
-  public int getAwardedXp() {
-    return awardedXp_;
+  public int getChpnjmhlbdj() {
+    return chpnjmhlbdj_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -315,11 +306,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (result_ != POGOProtos.Rpc.SendGiftOutProto.Result.UNSET.getNumber()) {
-      output.writeEnum(1, result_);
+    if (jbflkcdndlp_ != POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM.UNSET.getNumber()) {
+      output.writeEnum(1, jbflkcdndlp_);
     }
-    if (awardedXp_ != 0) {
-      output.writeInt32(2, awardedXp_);
+    if (chpnjmhlbdj_ != 0) {
+      output.writeInt32(2, chpnjmhlbdj_);
     }
     unknownFields.writeTo(output);
   }
@@ -330,13 +321,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (result_ != POGOProtos.Rpc.SendGiftOutProto.Result.UNSET.getNumber()) {
+    if (jbflkcdndlp_ != POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, result_);
+        .computeEnumSize(1, jbflkcdndlp_);
     }
-    if (awardedXp_ != 0) {
+    if (chpnjmhlbdj_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, awardedXp_);
+        .computeInt32Size(2, chpnjmhlbdj_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -353,9 +344,9 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.SendGiftOutProto other = (POGOProtos.Rpc.SendGiftOutProto) obj;
 
-    if (result_ != other.result_) return false;
-    if (getAwardedXp()
-        != other.getAwardedXp()) return false;
+    if (jbflkcdndlp_ != other.jbflkcdndlp_) return false;
+    if (getChpnjmhlbdj()
+        != other.getChpnjmhlbdj()) return false;
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
   }
@@ -367,10 +358,10 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + RESULT_FIELD_NUMBER;
-    hash = (53 * hash) + result_;
-    hash = (37 * hash) + AWARDED_XP_FIELD_NUMBER;
-    hash = (53 * hash) + getAwardedXp();
+    hash = (37 * hash) + JBFLKCDNDLP_FIELD_NUMBER;
+    hash = (53 * hash) + jbflkcdndlp_;
+    hash = (37 * hash) + CHPNJMHLBDJ_FIELD_NUMBER;
+    hash = (53 * hash) + getChpnjmhlbdj();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -467,10 +458,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: LHFOJBDLAPP
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SendGiftOutProto}
    */
   public static final class Builder extends
@@ -508,9 +495,9 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      result_ = 0;
+      jbflkcdndlp_ = 0;
 
-      awardedXp_ = 0;
+      chpnjmhlbdj_ = 0;
 
       return this;
     }
@@ -538,8 +525,8 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.SendGiftOutProto buildPartial() {
       POGOProtos.Rpc.SendGiftOutProto result = new POGOProtos.Rpc.SendGiftOutProto(this);
-      result.result_ = result_;
-      result.awardedXp_ = awardedXp_;
+      result.jbflkcdndlp_ = jbflkcdndlp_;
+      result.chpnjmhlbdj_ = chpnjmhlbdj_;
       onBuilt();
       return result;
     }
@@ -588,11 +575,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.SendGiftOutProto other) {
       if (other == POGOProtos.Rpc.SendGiftOutProto.getDefaultInstance()) return this;
-      if (other.result_ != 0) {
-        setResultValue(other.getResultValue());
+      if (other.jbflkcdndlp_ != 0) {
+        setJbflkcdndlpValue(other.getJbflkcdndlpValue());
       }
-      if (other.getAwardedXp() != 0) {
-        setAwardedXp(other.getAwardedXp());
+      if (other.getChpnjmhlbdj() != 0) {
+        setChpnjmhlbdj(other.getChpnjmhlbdj());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -623,87 +610,84 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int result_ = 0;
+    private int jbflkcdndlp_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.SendGiftOutProto.Result result = 1;</code>
-     * @return The enum numeric value on the wire for result.
+     * <code>.POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM jbflkcdndlp = 1;</code>
+     * @return The enum numeric value on the wire for jbflkcdndlp.
      */
-    @java.lang.Override public int getResultValue() {
-      return result_;
+    public int getJbflkcdndlpValue() {
+      return jbflkcdndlp_;
     }
     /**
-     * <code>.POGOProtos.Rpc.SendGiftOutProto.Result result = 1;</code>
-     * @param value The enum numeric value on the wire for result to set.
+     * <code>.POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM jbflkcdndlp = 1;</code>
+     * @param value The enum numeric value on the wire for jbflkcdndlp to set.
      * @return This builder for chaining.
      */
-    public Builder setResultValue(int value) {
-      
-      result_ = value;
+    public Builder setJbflkcdndlpValue(int value) {
+      jbflkcdndlp_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.SendGiftOutProto.Result result = 1;</code>
-     * @return The result.
+     * <code>.POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM jbflkcdndlp = 1;</code>
+     * @return The jbflkcdndlp.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.SendGiftOutProto.Result getResult() {
+    public POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM getJbflkcdndlp() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.SendGiftOutProto.Result result = POGOProtos.Rpc.SendGiftOutProto.Result.valueOf(result_);
-      return result == null ? POGOProtos.Rpc.SendGiftOutProto.Result.UNRECOGNIZED : result;
+      POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM result = POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM.valueOf(jbflkcdndlp_);
+      return result == null ? POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.SendGiftOutProto.Result result = 1;</code>
-     * @param value The result to set.
+     * <code>.POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM jbflkcdndlp = 1;</code>
+     * @param value The jbflkcdndlp to set.
      * @return This builder for chaining.
      */
-    public Builder setResult(POGOProtos.Rpc.SendGiftOutProto.Result value) {
+    public Builder setJbflkcdndlp(POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      result_ = value.getNumber();
+      jbflkcdndlp_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.SendGiftOutProto.Result result = 1;</code>
+     * <code>.POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM jbflkcdndlp = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearResult() {
+    public Builder clearJbflkcdndlp() {
       
-      result_ = 0;
+      jbflkcdndlp_ = 0;
       onChanged();
       return this;
     }
 
-    private int awardedXp_ ;
+    private int chpnjmhlbdj_ ;
     /**
-     * <code>int32 awarded_xp = 2;</code>
-     * @return The awardedXp.
+     * <code>int32 chpnjmhlbdj = 2;</code>
+     * @return The chpnjmhlbdj.
      */
-    @java.lang.Override
-    public int getAwardedXp() {
-      return awardedXp_;
+    public int getChpnjmhlbdj() {
+      return chpnjmhlbdj_;
     }
     /**
-     * <code>int32 awarded_xp = 2;</code>
-     * @param value The awardedXp to set.
+     * <code>int32 chpnjmhlbdj = 2;</code>
+     * @param value The chpnjmhlbdj to set.
      * @return This builder for chaining.
      */
-    public Builder setAwardedXp(int value) {
+    public Builder setChpnjmhlbdj(int value) {
       
-      awardedXp_ = value;
+      chpnjmhlbdj_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 awarded_xp = 2;</code>
+     * <code>int32 chpnjmhlbdj = 2;</code>
      * @return This builder for chaining.
      */
-    public Builder clearAwardedXp() {
+    public Builder clearChpnjmhlbdj() {
       
-      awardedXp_ = 0;
+      chpnjmhlbdj_ = 0;
       onChanged();
       return this;
     }

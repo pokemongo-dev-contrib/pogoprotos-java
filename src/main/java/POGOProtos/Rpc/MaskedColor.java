@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Proto.TEMP.MaskedColor
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.MaskedColor}
  */
-public final class MaskedColor extends
+public  final class MaskedColor extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.MaskedColor)
     MaskedColorOrBuilder {
@@ -100,7 +96,6 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 color_argb = 1;</code>
    * @return The colorArgb.
    */
-  @java.lang.Override
   public int getColorArgb() {
     return colorArgb_;
   }
@@ -111,7 +106,6 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 color_mask_argb = 2;</code>
    * @return The colorMaskArgb.
    */
-  @java.lang.Override
   public int getColorMaskArgb() {
     return colorMaskArgb_;
   }
@@ -283,10 +277,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.MaskedColor
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.MaskedColor}
    */
   public static final class Builder extends
@@ -444,7 +434,6 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 color_argb = 1;</code>
      * @return The colorArgb.
      */
-    @java.lang.Override
     public int getColorArgb() {
       return colorArgb_;
     }
@@ -475,7 +464,6 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 color_mask_argb = 2;</code>
      * @return The colorMaskArgb.
      */
-    @java.lang.Override
     public int getColorMaskArgb() {
       return colorMaskArgb_;
     }

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Proto.TEMP.NamedMapSettings
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.NamedMapSettings}
  */
-public final class NamedMapSettings extends
+public  final class NamedMapSettings extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.NamedMapSettings)
     NamedMapSettingsOrBuilder {
@@ -110,7 +106,6 @@ private static final long serialVersionUID = 0L;
    * <code>string name = 1;</code>
    * @return The name.
    */
-  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -127,7 +122,6 @@ private static final long serialVersionUID = 0L;
    * <code>string name = 1;</code>
    * @return The bytes for name.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
     java.lang.Object ref = name_;
@@ -148,7 +142,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GmmSettings gmm_settings = 2;</code>
    * @return Whether the gmmSettings field is set.
    */
-  @java.lang.Override
   public boolean hasGmmSettings() {
     return gmmSettings_ != null;
   }
@@ -156,14 +149,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GmmSettings gmm_settings = 2;</code>
    * @return The gmmSettings.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GmmSettings getGmmSettings() {
     return gmmSettings_ == null ? POGOProtos.Rpc.GmmSettings.getDefaultInstance() : gmmSettings_;
   }
   /**
    * <code>.POGOProtos.Rpc.GmmSettings gmm_settings = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GmmSettingsOrBuilder getGmmSettingsOrBuilder() {
     return getGmmSettings();
   }
@@ -339,10 +330,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.NamedMapSettings
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.NamedMapSettings}
    */
   public static final class Builder extends

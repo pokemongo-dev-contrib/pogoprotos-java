@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: ENMGFBCHPHI
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.AnimationTake}
  */
 public enum AnimationTake
@@ -86,10 +82,6 @@ public enum AnimationTake
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -98,7 +90,7 @@ public enum AnimationTake
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(59);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(3);
   }
 
   private static final AnimationTake[] VALUES = values();

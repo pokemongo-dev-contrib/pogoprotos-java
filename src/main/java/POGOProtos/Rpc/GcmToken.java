@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GcmToken
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GcmToken}
  */
-public final class GcmToken extends
+public  final class GcmToken extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GcmToken)
     GcmTokenOrBuilder {
@@ -97,7 +93,6 @@ private static final long serialVersionUID = 0L;
    * <code>string registration_id = 1;</code>
    * @return The registrationId.
    */
-  @java.lang.Override
   public java.lang.String getRegistrationId() {
     java.lang.Object ref = registrationId_;
     if (ref instanceof java.lang.String) {
@@ -114,7 +109,6 @@ private static final long serialVersionUID = 0L;
    * <code>string registration_id = 1;</code>
    * @return The bytes for registrationId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getRegistrationIdBytes() {
     java.lang.Object ref = registrationId_;
@@ -284,10 +278,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GcmToken
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GcmToken}
    */
   public static final class Builder extends

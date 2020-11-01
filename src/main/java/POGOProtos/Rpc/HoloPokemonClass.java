@@ -4,41 +4,37 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: PLIHIPNFFME
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.HoloPokemonClass}
  */
 public enum HoloPokemonClass
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>HOLO_POKEMON_CLASS_POKEMON_CLASS_NORMAL = 0;</code>
+   * <code>POKEMON_CLASS_NORMAL = 0;</code>
    */
-  HOLO_POKEMON_CLASS_POKEMON_CLASS_NORMAL(0),
+  POKEMON_CLASS_NORMAL(0),
   /**
-   * <code>HOLO_POKEMON_CLASS_POKEMON_CLASS_LEGENDARY = 1;</code>
+   * <code>POKEMON_CLASS_LEGENDARY = 1;</code>
    */
-  HOLO_POKEMON_CLASS_POKEMON_CLASS_LEGENDARY(1),
+  POKEMON_CLASS_LEGENDARY(1),
   /**
-   * <code>HOLO_POKEMON_CLASS_POKEMON_CLASS_MYTHIC = 2;</code>
+   * <code>POKEMON_CLASS_MYTHIC = 2;</code>
    */
-  HOLO_POKEMON_CLASS_POKEMON_CLASS_MYTHIC(2),
+  POKEMON_CLASS_MYTHIC(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>HOLO_POKEMON_CLASS_POKEMON_CLASS_NORMAL = 0;</code>
+   * <code>POKEMON_CLASS_NORMAL = 0;</code>
    */
-  public static final int HOLO_POKEMON_CLASS_POKEMON_CLASS_NORMAL_VALUE = 0;
+  public static final int POKEMON_CLASS_NORMAL_VALUE = 0;
   /**
-   * <code>HOLO_POKEMON_CLASS_POKEMON_CLASS_LEGENDARY = 1;</code>
+   * <code>POKEMON_CLASS_LEGENDARY = 1;</code>
    */
-  public static final int HOLO_POKEMON_CLASS_POKEMON_CLASS_LEGENDARY_VALUE = 1;
+  public static final int POKEMON_CLASS_LEGENDARY_VALUE = 1;
   /**
-   * <code>HOLO_POKEMON_CLASS_POKEMON_CLASS_MYTHIC = 2;</code>
+   * <code>POKEMON_CLASS_MYTHIC = 2;</code>
    */
-  public static final int HOLO_POKEMON_CLASS_POKEMON_CLASS_MYTHIC_VALUE = 2;
+  public static final int POKEMON_CLASS_MYTHIC_VALUE = 2;
 
 
   public final int getNumber() {
@@ -65,9 +61,9 @@ public enum HoloPokemonClass
    */
   public static HoloPokemonClass forNumber(int value) {
     switch (value) {
-      case 0: return HOLO_POKEMON_CLASS_POKEMON_CLASS_NORMAL;
-      case 1: return HOLO_POKEMON_CLASS_POKEMON_CLASS_LEGENDARY;
-      case 2: return HOLO_POKEMON_CLASS_POKEMON_CLASS_MYTHIC;
+      case 0: return POKEMON_CLASS_NORMAL;
+      case 1: return POKEMON_CLASS_LEGENDARY;
+      case 2: return POKEMON_CLASS_MYTHIC;
       default: return null;
     }
   }
@@ -86,10 +82,6 @@ public enum HoloPokemonClass
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -98,7 +90,7 @@ public enum HoloPokemonClass
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(133);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(53);
   }
 
   private static final HoloPokemonClass[] VALUES = values();

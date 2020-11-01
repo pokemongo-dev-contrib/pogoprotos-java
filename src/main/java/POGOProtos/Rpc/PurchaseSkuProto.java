@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Iap.Protos.PurchaseSkuProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.PurchaseSkuProto}
  */
-public final class PurchaseSkuProto extends
+public  final class PurchaseSkuProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PurchaseSkuProto)
     PurchaseSkuProtoOrBuilder {
@@ -97,7 +93,6 @@ private static final long serialVersionUID = 0L;
    * <code>string sku_id = 1;</code>
    * @return The skuId.
    */
-  @java.lang.Override
   public java.lang.String getSkuId() {
     java.lang.Object ref = skuId_;
     if (ref instanceof java.lang.String) {
@@ -114,7 +109,6 @@ private static final long serialVersionUID = 0L;
    * <code>string sku_id = 1;</code>
    * @return The bytes for skuId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getSkuIdBytes() {
     java.lang.Object ref = skuId_;
@@ -284,10 +278,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Iap.Protos.PurchaseSkuProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.PurchaseSkuProto}
    */
   public static final class Builder extends

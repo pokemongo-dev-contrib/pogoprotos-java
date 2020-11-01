@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: MDMGHAHNCAE
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.CameraType}
  */
 public enum CameraType
@@ -95,10 +91,6 @@ public enum CameraType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -107,7 +99,7 @@ public enum CameraType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(105);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(25);
   }
 
   private static final CameraType[] VALUES = values();

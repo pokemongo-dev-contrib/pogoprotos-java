@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: NADIDPLIALA
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.WebTelemetryIds}
  */
 public enum WebTelemetryIds
@@ -77,10 +73,6 @@ public enum WebTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -89,7 +81,7 @@ public enum WebTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(111);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(149);
   }
 
   private static final WebTelemetryIds[] VALUES = values();

@@ -8,1024 +8,1084 @@ public interface HoloholoClientTelemetryOmniProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.BootTime boot_time = 1;</code>
+   * <code>.POGOProtos.Rpc.IEHPJOEDAOC boot_time = 1;</code>
    * @return Whether the bootTime field is set.
    */
   boolean hasBootTime();
   /**
-   * <code>.POGOProtos.Rpc.BootTime boot_time = 1;</code>
+   * <code>.POGOProtos.Rpc.IEHPJOEDAOC boot_time = 1;</code>
    * @return The bootTime.
    */
-  POGOProtos.Rpc.BootTime getBootTime();
+  POGOProtos.Rpc.IEHPJOEDAOC getBootTime();
   /**
-   * <code>.POGOProtos.Rpc.BootTime boot_time = 1;</code>
+   * <code>.POGOProtos.Rpc.IEHPJOEDAOC boot_time = 1;</code>
    */
-  POGOProtos.Rpc.BootTimeOrBuilder getBootTimeOrBuilder();
+  POGOProtos.Rpc.IEHPJOEDAOCOrBuilder getBootTimeOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.FrameRate frame_rate = 2;</code>
+   * <code>.POGOProtos.Rpc.FMMFLNFFMPK frame_rate = 2;</code>
    * @return Whether the frameRate field is set.
    */
   boolean hasFrameRate();
   /**
-   * <code>.POGOProtos.Rpc.FrameRate frame_rate = 2;</code>
+   * <code>.POGOProtos.Rpc.FMMFLNFFMPK frame_rate = 2;</code>
    * @return The frameRate.
    */
-  POGOProtos.Rpc.FrameRate getFrameRate();
+  POGOProtos.Rpc.FMMFLNFFMPK getFrameRate();
   /**
-   * <code>.POGOProtos.Rpc.FrameRate frame_rate = 2;</code>
+   * <code>.POGOProtos.Rpc.FMMFLNFFMPK frame_rate = 2;</code>
    */
-  POGOProtos.Rpc.FrameRateOrBuilder getFrameRateOrBuilder();
+  POGOProtos.Rpc.FMMFLNFFMPKOrBuilder getFrameRateOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.GenericClickTelemetry generic_click_telemetry = 3;</code>
+   * <code>.POGOProtos.Rpc.OAKCGFDENNO generic_click_telemetry = 3;</code>
    * @return Whether the genericClickTelemetry field is set.
    */
   boolean hasGenericClickTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.GenericClickTelemetry generic_click_telemetry = 3;</code>
+   * <code>.POGOProtos.Rpc.OAKCGFDENNO generic_click_telemetry = 3;</code>
    * @return The genericClickTelemetry.
    */
-  POGOProtos.Rpc.GenericClickTelemetry getGenericClickTelemetry();
+  POGOProtos.Rpc.OAKCGFDENNO getGenericClickTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.GenericClickTelemetry generic_click_telemetry = 3;</code>
+   * <code>.POGOProtos.Rpc.OAKCGFDENNO generic_click_telemetry = 3;</code>
    */
-  POGOProtos.Rpc.GenericClickTelemetryOrBuilder getGenericClickTelemetryOrBuilder();
+  POGOProtos.Rpc.OAKCGFDENNOOrBuilder getGenericClickTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.MapEventsTelemetry map_events_telemetry = 4;</code>
+   * <code>.POGOProtos.Rpc.NLGNKJLKKIO map_events_telemetry = 4;</code>
    * @return Whether the mapEventsTelemetry field is set.
    */
   boolean hasMapEventsTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.MapEventsTelemetry map_events_telemetry = 4;</code>
+   * <code>.POGOProtos.Rpc.NLGNKJLKKIO map_events_telemetry = 4;</code>
    * @return The mapEventsTelemetry.
    */
-  POGOProtos.Rpc.MapEventsTelemetry getMapEventsTelemetry();
+  POGOProtos.Rpc.NLGNKJLKKIO getMapEventsTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.MapEventsTelemetry map_events_telemetry = 4;</code>
+   * <code>.POGOProtos.Rpc.NLGNKJLKKIO map_events_telemetry = 4;</code>
    */
-  POGOProtos.Rpc.MapEventsTelemetryOrBuilder getMapEventsTelemetryOrBuilder();
+  POGOProtos.Rpc.NLGNKJLKKIOOrBuilder getMapEventsTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.SpinPokestopTelemetry spin_pokestop_telemetry = 5;</code>
+   * <code>.POGOProtos.Rpc.JPDAIFNLINH spin_pokestop_telemetry = 5;</code>
    * @return Whether the spinPokestopTelemetry field is set.
    */
   boolean hasSpinPokestopTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.SpinPokestopTelemetry spin_pokestop_telemetry = 5;</code>
+   * <code>.POGOProtos.Rpc.JPDAIFNLINH spin_pokestop_telemetry = 5;</code>
    * @return The spinPokestopTelemetry.
    */
-  POGOProtos.Rpc.SpinPokestopTelemetry getSpinPokestopTelemetry();
+  POGOProtos.Rpc.JPDAIFNLINH getSpinPokestopTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.SpinPokestopTelemetry spin_pokestop_telemetry = 5;</code>
+   * <code>.POGOProtos.Rpc.JPDAIFNLINH spin_pokestop_telemetry = 5;</code>
    */
-  POGOProtos.Rpc.SpinPokestopTelemetryOrBuilder getSpinPokestopTelemetryOrBuilder();
+  POGOProtos.Rpc.JPDAIFNLINHOrBuilder getSpinPokestopTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ProfilePageTelemetry profile_page_telemetry = 6;</code>
+   * <code>.POGOProtos.Rpc.CKLENAMFDOO profile_page_telemetry = 6;</code>
    * @return Whether the profilePageTelemetry field is set.
    */
   boolean hasProfilePageTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ProfilePageTelemetry profile_page_telemetry = 6;</code>
+   * <code>.POGOProtos.Rpc.CKLENAMFDOO profile_page_telemetry = 6;</code>
    * @return The profilePageTelemetry.
    */
-  POGOProtos.Rpc.ProfilePageTelemetry getProfilePageTelemetry();
+  POGOProtos.Rpc.CKLENAMFDOO getProfilePageTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ProfilePageTelemetry profile_page_telemetry = 6;</code>
+   * <code>.POGOProtos.Rpc.CKLENAMFDOO profile_page_telemetry = 6;</code>
    */
-  POGOProtos.Rpc.ProfilePageTelemetryOrBuilder getProfilePageTelemetryOrBuilder();
+  POGOProtos.Rpc.CKLENAMFDOOOrBuilder getProfilePageTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ShoppingPageTelemetry shopping_page_telemetry = 7;</code>
+   * <code>.POGOProtos.Rpc.NJDDAHLJKMH shopping_page_telemetry = 7;</code>
    * @return Whether the shoppingPageTelemetry field is set.
    */
   boolean hasShoppingPageTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ShoppingPageTelemetry shopping_page_telemetry = 7;</code>
+   * <code>.POGOProtos.Rpc.NJDDAHLJKMH shopping_page_telemetry = 7;</code>
    * @return The shoppingPageTelemetry.
    */
-  POGOProtos.Rpc.ShoppingPageTelemetry getShoppingPageTelemetry();
+  POGOProtos.Rpc.NJDDAHLJKMH getShoppingPageTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ShoppingPageTelemetry shopping_page_telemetry = 7;</code>
+   * <code>.POGOProtos.Rpc.NJDDAHLJKMH shopping_page_telemetry = 7;</code>
    */
-  POGOProtos.Rpc.ShoppingPageTelemetryOrBuilder getShoppingPageTelemetryOrBuilder();
+  POGOProtos.Rpc.NJDDAHLJKMHOrBuilder getShoppingPageTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;</code>
+   * <code>.POGOProtos.Rpc.DDHJOHMCEBJ encounter_pokemon_telemetry = 8;</code>
    * @return Whether the encounterPokemonTelemetry field is set.
    */
   boolean hasEncounterPokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;</code>
+   * <code>.POGOProtos.Rpc.DDHJOHMCEBJ encounter_pokemon_telemetry = 8;</code>
    * @return The encounterPokemonTelemetry.
    */
-  POGOProtos.Rpc.EncounterPokemonTelemetry getEncounterPokemonTelemetry();
+  POGOProtos.Rpc.DDHJOHMCEBJ getEncounterPokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.EncounterPokemonTelemetry encounter_pokemon_telemetry = 8;</code>
+   * <code>.POGOProtos.Rpc.DDHJOHMCEBJ encounter_pokemon_telemetry = 8;</code>
    */
-  POGOProtos.Rpc.EncounterPokemonTelemetryOrBuilder getEncounterPokemonTelemetryOrBuilder();
+  POGOProtos.Rpc.DDHJOHMCEBJOrBuilder getEncounterPokemonTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.CatchPokemonTelemetry catch_pokemon_telemetry = 9;</code>
+   * <code>.POGOProtos.Rpc.IDOIGACBHCD catch_pokemon_telemetry = 9;</code>
    * @return Whether the catchPokemonTelemetry field is set.
    */
   boolean hasCatchPokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.CatchPokemonTelemetry catch_pokemon_telemetry = 9;</code>
+   * <code>.POGOProtos.Rpc.IDOIGACBHCD catch_pokemon_telemetry = 9;</code>
    * @return The catchPokemonTelemetry.
    */
-  POGOProtos.Rpc.CatchPokemonTelemetry getCatchPokemonTelemetry();
+  POGOProtos.Rpc.IDOIGACBHCD getCatchPokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.CatchPokemonTelemetry catch_pokemon_telemetry = 9;</code>
+   * <code>.POGOProtos.Rpc.IDOIGACBHCD catch_pokemon_telemetry = 9;</code>
    */
-  POGOProtos.Rpc.CatchPokemonTelemetryOrBuilder getCatchPokemonTelemetryOrBuilder();
+  POGOProtos.Rpc.IDOIGACBHCDOrBuilder getCatchPokemonTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.DeployPokemonTelemetry deploy_pokemon_telemetry = 10;</code>
+   * <code>.POGOProtos.Rpc.MFGPAMLMKFO deploy_pokemon_telemetry = 10;</code>
    * @return Whether the deployPokemonTelemetry field is set.
    */
   boolean hasDeployPokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.DeployPokemonTelemetry deploy_pokemon_telemetry = 10;</code>
+   * <code>.POGOProtos.Rpc.MFGPAMLMKFO deploy_pokemon_telemetry = 10;</code>
    * @return The deployPokemonTelemetry.
    */
-  POGOProtos.Rpc.DeployPokemonTelemetry getDeployPokemonTelemetry();
+  POGOProtos.Rpc.MFGPAMLMKFO getDeployPokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.DeployPokemonTelemetry deploy_pokemon_telemetry = 10;</code>
+   * <code>.POGOProtos.Rpc.MFGPAMLMKFO deploy_pokemon_telemetry = 10;</code>
    */
-  POGOProtos.Rpc.DeployPokemonTelemetryOrBuilder getDeployPokemonTelemetryOrBuilder();
+  POGOProtos.Rpc.MFGPAMLMKFOOrBuilder getDeployPokemonTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.FeedPokemonTelemetry feed_pokemon_telemetry = 11;</code>
+   * <code>.POGOProtos.Rpc.FCIKANKOABJ feed_pokemon_telemetry = 11;</code>
    * @return Whether the feedPokemonTelemetry field is set.
    */
   boolean hasFeedPokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.FeedPokemonTelemetry feed_pokemon_telemetry = 11;</code>
+   * <code>.POGOProtos.Rpc.FCIKANKOABJ feed_pokemon_telemetry = 11;</code>
    * @return The feedPokemonTelemetry.
    */
-  POGOProtos.Rpc.FeedPokemonTelemetry getFeedPokemonTelemetry();
+  POGOProtos.Rpc.FCIKANKOABJ getFeedPokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.FeedPokemonTelemetry feed_pokemon_telemetry = 11;</code>
+   * <code>.POGOProtos.Rpc.FCIKANKOABJ feed_pokemon_telemetry = 11;</code>
    */
-  POGOProtos.Rpc.FeedPokemonTelemetryOrBuilder getFeedPokemonTelemetryOrBuilder();
+  POGOProtos.Rpc.FCIKANKOABJOrBuilder getFeedPokemonTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;</code>
+   * <code>.POGOProtos.Rpc.PCLDNCPFBPA evolve_pokemon_telemetry = 12;</code>
    * @return Whether the evolvePokemonTelemetry field is set.
    */
   boolean hasEvolvePokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;</code>
+   * <code>.POGOProtos.Rpc.PCLDNCPFBPA evolve_pokemon_telemetry = 12;</code>
    * @return The evolvePokemonTelemetry.
    */
-  POGOProtos.Rpc.EvolvePokemonTelemetry getEvolvePokemonTelemetry();
+  POGOProtos.Rpc.PCLDNCPFBPA getEvolvePokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.EvolvePokemonTelemetry evolve_pokemon_telemetry = 12;</code>
+   * <code>.POGOProtos.Rpc.PCLDNCPFBPA evolve_pokemon_telemetry = 12;</code>
    */
-  POGOProtos.Rpc.EvolvePokemonTelemetryOrBuilder getEvolvePokemonTelemetryOrBuilder();
+  POGOProtos.Rpc.PCLDNCPFBPAOrBuilder getEvolvePokemonTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ReleasePokemonTelemetry release_pokemon_telemetry = 13;</code>
+   * <code>.POGOProtos.Rpc.BDMPNEEOMFO release_pokemon_telemetry = 13;</code>
    * @return Whether the releasePokemonTelemetry field is set.
    */
   boolean hasReleasePokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ReleasePokemonTelemetry release_pokemon_telemetry = 13;</code>
+   * <code>.POGOProtos.Rpc.BDMPNEEOMFO release_pokemon_telemetry = 13;</code>
    * @return The releasePokemonTelemetry.
    */
-  POGOProtos.Rpc.ReleasePokemonTelemetry getReleasePokemonTelemetry();
+  POGOProtos.Rpc.BDMPNEEOMFO getReleasePokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ReleasePokemonTelemetry release_pokemon_telemetry = 13;</code>
+   * <code>.POGOProtos.Rpc.BDMPNEEOMFO release_pokemon_telemetry = 13;</code>
    */
-  POGOProtos.Rpc.ReleasePokemonTelemetryOrBuilder getReleasePokemonTelemetryOrBuilder();
+  POGOProtos.Rpc.BDMPNEEOMFOOrBuilder getReleasePokemonTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;</code>
+   * <code>.POGOProtos.Rpc.NMPOMGCNGDE nickname_pokemon_telemetry = 14;</code>
    * @return Whether the nicknamePokemonTelemetry field is set.
    */
   boolean hasNicknamePokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;</code>
+   * <code>.POGOProtos.Rpc.NMPOMGCNGDE nickname_pokemon_telemetry = 14;</code>
    * @return The nicknamePokemonTelemetry.
    */
-  POGOProtos.Rpc.NicknamePokemonTelemetry getNicknamePokemonTelemetry();
+  POGOProtos.Rpc.NMPOMGCNGDE getNicknamePokemonTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.NicknamePokemonTelemetry nickname_pokemon_telemetry = 14;</code>
+   * <code>.POGOProtos.Rpc.NMPOMGCNGDE nickname_pokemon_telemetry = 14;</code>
    */
-  POGOProtos.Rpc.NicknamePokemonTelemetryOrBuilder getNicknamePokemonTelemetryOrBuilder();
+  POGOProtos.Rpc.NMPOMGCNGDEOrBuilder getNicknamePokemonTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.NewsPageTelemetry news_page_telemetry = 15;</code>
+   * <code>.POGOProtos.Rpc.LMPOKADPBMA news_page_telemetry = 15;</code>
    * @return Whether the newsPageTelemetry field is set.
    */
   boolean hasNewsPageTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.NewsPageTelemetry news_page_telemetry = 15;</code>
+   * <code>.POGOProtos.Rpc.LMPOKADPBMA news_page_telemetry = 15;</code>
    * @return The newsPageTelemetry.
    */
-  POGOProtos.Rpc.NewsPageTelemetry getNewsPageTelemetry();
+  POGOProtos.Rpc.LMPOKADPBMA getNewsPageTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.NewsPageTelemetry news_page_telemetry = 15;</code>
+   * <code>.POGOProtos.Rpc.LMPOKADPBMA news_page_telemetry = 15;</code>
    */
-  POGOProtos.Rpc.NewsPageTelemetryOrBuilder getNewsPageTelemetryOrBuilder();
+  POGOProtos.Rpc.LMPOKADPBMAOrBuilder getNewsPageTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ItemTelemetry item_telemetry = 16;</code>
+   * <code>.POGOProtos.Rpc.NOCCCBAIEJO item_telemetry = 16;</code>
    * @return Whether the itemTelemetry field is set.
    */
   boolean hasItemTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ItemTelemetry item_telemetry = 16;</code>
+   * <code>.POGOProtos.Rpc.NOCCCBAIEJO item_telemetry = 16;</code>
    * @return The itemTelemetry.
    */
-  POGOProtos.Rpc.ItemTelemetry getItemTelemetry();
+  POGOProtos.Rpc.NOCCCBAIEJO getItemTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ItemTelemetry item_telemetry = 16;</code>
+   * <code>.POGOProtos.Rpc.NOCCCBAIEJO item_telemetry = 16;</code>
    */
-  POGOProtos.Rpc.ItemTelemetryOrBuilder getItemTelemetryOrBuilder();
+  POGOProtos.Rpc.NOCCCBAIEJOOrBuilder getItemTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BattlePartyTelemetry battle_party_telemetry = 17;</code>
+   * <code>.POGOProtos.Rpc.HOLCNNECOLM battle_party_telemetry = 17;</code>
    * @return Whether the battlePartyTelemetry field is set.
    */
   boolean hasBattlePartyTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BattlePartyTelemetry battle_party_telemetry = 17;</code>
+   * <code>.POGOProtos.Rpc.HOLCNNECOLM battle_party_telemetry = 17;</code>
    * @return The battlePartyTelemetry.
    */
-  POGOProtos.Rpc.BattlePartyTelemetry getBattlePartyTelemetry();
+  POGOProtos.Rpc.HOLCNNECOLM getBattlePartyTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BattlePartyTelemetry battle_party_telemetry = 17;</code>
+   * <code>.POGOProtos.Rpc.HOLCNNECOLM battle_party_telemetry = 17;</code>
    */
-  POGOProtos.Rpc.BattlePartyTelemetryOrBuilder getBattlePartyTelemetryOrBuilder();
+  POGOProtos.Rpc.HOLCNNECOLMOrBuilder getBattlePartyTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;</code>
+   * <code>.POGOProtos.Rpc.JPPACHKPADG passcode_redeem_telemetry = 18;</code>
    * @return Whether the passcodeRedeemTelemetry field is set.
    */
   boolean hasPasscodeRedeemTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;</code>
+   * <code>.POGOProtos.Rpc.JPPACHKPADG passcode_redeem_telemetry = 18;</code>
    * @return The passcodeRedeemTelemetry.
    */
-  POGOProtos.Rpc.PasscodeRedeemTelemetry getPasscodeRedeemTelemetry();
+  POGOProtos.Rpc.JPPACHKPADG getPasscodeRedeemTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PasscodeRedeemTelemetry passcode_redeem_telemetry = 18;</code>
+   * <code>.POGOProtos.Rpc.JPPACHKPADG passcode_redeem_telemetry = 18;</code>
    */
-  POGOProtos.Rpc.PasscodeRedeemTelemetryOrBuilder getPasscodeRedeemTelemetryOrBuilder();
+  POGOProtos.Rpc.JPPACHKPADGOrBuilder getPasscodeRedeemTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.LinkLoginTelemetry link_login_telemetry = 19;</code>
+   * <code>.POGOProtos.Rpc.LMPHNOCMDAG link_login_telemetry = 19;</code>
    * @return Whether the linkLoginTelemetry field is set.
    */
   boolean hasLinkLoginTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.LinkLoginTelemetry link_login_telemetry = 19;</code>
+   * <code>.POGOProtos.Rpc.LMPHNOCMDAG link_login_telemetry = 19;</code>
    * @return The linkLoginTelemetry.
    */
-  POGOProtos.Rpc.LinkLoginTelemetry getLinkLoginTelemetry();
+  POGOProtos.Rpc.LMPHNOCMDAG getLinkLoginTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.LinkLoginTelemetry link_login_telemetry = 19;</code>
+   * <code>.POGOProtos.Rpc.LMPHNOCMDAG link_login_telemetry = 19;</code>
    */
-  POGOProtos.Rpc.LinkLoginTelemetryOrBuilder getLinkLoginTelemetryOrBuilder();
+  POGOProtos.Rpc.LMPHNOCMDAGOrBuilder getLinkLoginTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.RaidTelemetry raid_telemetry = 20;</code>
+   * <code>.POGOProtos.Rpc.ECIAMBDKCBL raid_telemetry = 20;</code>
    * @return Whether the raidTelemetry field is set.
    */
   boolean hasRaidTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RaidTelemetry raid_telemetry = 20;</code>
+   * <code>.POGOProtos.Rpc.ECIAMBDKCBL raid_telemetry = 20;</code>
    * @return The raidTelemetry.
    */
-  POGOProtos.Rpc.RaidTelemetry getRaidTelemetry();
+  POGOProtos.Rpc.ECIAMBDKCBL getRaidTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RaidTelemetry raid_telemetry = 20;</code>
+   * <code>.POGOProtos.Rpc.ECIAMBDKCBL raid_telemetry = 20;</code>
    */
-  POGOProtos.Rpc.RaidTelemetryOrBuilder getRaidTelemetryOrBuilder();
+  POGOProtos.Rpc.ECIAMBDKCBLOrBuilder getRaidTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PushNotificationTelemetry push_notification_telemetry = 21;</code>
+   * <code>.POGOProtos.Rpc.JDHHJBFIKEP push_notification_telemetry = 21;</code>
    * @return Whether the pushNotificationTelemetry field is set.
    */
   boolean hasPushNotificationTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PushNotificationTelemetry push_notification_telemetry = 21;</code>
+   * <code>.POGOProtos.Rpc.JDHHJBFIKEP push_notification_telemetry = 21;</code>
    * @return The pushNotificationTelemetry.
    */
-  POGOProtos.Rpc.PushNotificationTelemetry getPushNotificationTelemetry();
+  POGOProtos.Rpc.JDHHJBFIKEP getPushNotificationTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PushNotificationTelemetry push_notification_telemetry = 21;</code>
+   * <code>.POGOProtos.Rpc.JDHHJBFIKEP push_notification_telemetry = 21;</code>
    */
-  POGOProtos.Rpc.PushNotificationTelemetryOrBuilder getPushNotificationTelemetryOrBuilder();
+  POGOProtos.Rpc.JDHHJBFIKEPOrBuilder getPushNotificationTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.AvatarCustomizationTelemetry avatar_customization_telemetry = 22;</code>
+   * <code>.POGOProtos.Rpc.NAHGHFOPLHP avatar_customization_telemetry = 22;</code>
    * @return Whether the avatarCustomizationTelemetry field is set.
    */
   boolean hasAvatarCustomizationTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.AvatarCustomizationTelemetry avatar_customization_telemetry = 22;</code>
+   * <code>.POGOProtos.Rpc.NAHGHFOPLHP avatar_customization_telemetry = 22;</code>
    * @return The avatarCustomizationTelemetry.
    */
-  POGOProtos.Rpc.AvatarCustomizationTelemetry getAvatarCustomizationTelemetry();
+  POGOProtos.Rpc.NAHGHFOPLHP getAvatarCustomizationTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.AvatarCustomizationTelemetry avatar_customization_telemetry = 22;</code>
+   * <code>.POGOProtos.Rpc.NAHGHFOPLHP avatar_customization_telemetry = 22;</code>
    */
-  POGOProtos.Rpc.AvatarCustomizationTelemetryOrBuilder getAvatarCustomizationTelemetryOrBuilder();
+  POGOProtos.Rpc.NAHGHFOPLHPOrBuilder getAvatarCustomizationTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;</code>
+   * <code>.POGOProtos.Rpc.NNOMJIHOGPL read_point_of_interest_description_telemetry = 23;</code>
    * @return Whether the readPointOfInterestDescriptionTelemetry field is set.
    */
   boolean hasReadPointOfInterestDescriptionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;</code>
+   * <code>.POGOProtos.Rpc.NNOMJIHOGPL read_point_of_interest_description_telemetry = 23;</code>
    * @return The readPointOfInterestDescriptionTelemetry.
    */
-  POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry getReadPointOfInterestDescriptionTelemetry();
+  POGOProtos.Rpc.NNOMJIHOGPL getReadPointOfInterestDescriptionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetry read_point_of_interest_description_telemetry = 23;</code>
+   * <code>.POGOProtos.Rpc.NNOMJIHOGPL read_point_of_interest_description_telemetry = 23;</code>
    */
-  POGOProtos.Rpc.ReadPointOfInterestDescriptionTelemetryOrBuilder getReadPointOfInterestDescriptionTelemetryOrBuilder();
+  POGOProtos.Rpc.NNOMJIHOGPLOrBuilder getReadPointOfInterestDescriptionTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.WebTelemetry web_telemetry = 24;</code>
+   * <code>.POGOProtos.Rpc.KMGHFEJLOMJ web_telemetry = 24;</code>
    * @return Whether the webTelemetry field is set.
    */
   boolean hasWebTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.WebTelemetry web_telemetry = 24;</code>
+   * <code>.POGOProtos.Rpc.KMGHFEJLOMJ web_telemetry = 24;</code>
    * @return The webTelemetry.
    */
-  POGOProtos.Rpc.WebTelemetry getWebTelemetry();
+  POGOProtos.Rpc.KMGHFEJLOMJ getWebTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.WebTelemetry web_telemetry = 24;</code>
+   * <code>.POGOProtos.Rpc.KMGHFEJLOMJ web_telemetry = 24;</code>
    */
-  POGOProtos.Rpc.WebTelemetryOrBuilder getWebTelemetryOrBuilder();
+  POGOProtos.Rpc.KMGHFEJLOMJOrBuilder getWebTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ChangeArTelemetry change_ar_telemetry = 25;</code>
+   * <code>.POGOProtos.Rpc.BONOLAFBPJH change_ar_telemetry = 25;</code>
    * @return Whether the changeArTelemetry field is set.
    */
   boolean hasChangeArTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ChangeArTelemetry change_ar_telemetry = 25;</code>
+   * <code>.POGOProtos.Rpc.BONOLAFBPJH change_ar_telemetry = 25;</code>
    * @return The changeArTelemetry.
    */
-  POGOProtos.Rpc.ChangeArTelemetry getChangeArTelemetry();
+  POGOProtos.Rpc.BONOLAFBPJH getChangeArTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ChangeArTelemetry change_ar_telemetry = 25;</code>
+   * <code>.POGOProtos.Rpc.BONOLAFBPJH change_ar_telemetry = 25;</code>
    */
-  POGOProtos.Rpc.ChangeArTelemetryOrBuilder getChangeArTelemetryOrBuilder();
+  POGOProtos.Rpc.BONOLAFBPJHOrBuilder getChangeArTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;</code>
+   * <code>.POGOProtos.Rpc.ADAAAAIGMFO weather_detail_click_telemetry = 26;</code>
    * @return Whether the weatherDetailClickTelemetry field is set.
    */
   boolean hasWeatherDetailClickTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;</code>
+   * <code>.POGOProtos.Rpc.ADAAAAIGMFO weather_detail_click_telemetry = 26;</code>
    * @return The weatherDetailClickTelemetry.
    */
-  POGOProtos.Rpc.WeatherDetailClickTelemetry getWeatherDetailClickTelemetry();
+  POGOProtos.Rpc.ADAAAAIGMFO getWeatherDetailClickTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.WeatherDetailClickTelemetry weather_detail_click_telemetry = 26;</code>
+   * <code>.POGOProtos.Rpc.ADAAAAIGMFO weather_detail_click_telemetry = 26;</code>
    */
-  POGOProtos.Rpc.WeatherDetailClickTelemetryOrBuilder getWeatherDetailClickTelemetryOrBuilder();
+  POGOProtos.Rpc.ADAAAAIGMFOOrBuilder getWeatherDetailClickTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.UserIssueWeatherReport user_issue_weather_report = 27;</code>
+   * <code>.POGOProtos.Rpc.ECELKEPHAAL user_issue_weather_report = 27;</code>
    * @return Whether the userIssueWeatherReport field is set.
    */
   boolean hasUserIssueWeatherReport();
   /**
-   * <code>.POGOProtos.Rpc.UserIssueWeatherReport user_issue_weather_report = 27;</code>
+   * <code>.POGOProtos.Rpc.ECELKEPHAAL user_issue_weather_report = 27;</code>
    * @return The userIssueWeatherReport.
    */
-  POGOProtos.Rpc.UserIssueWeatherReport getUserIssueWeatherReport();
+  POGOProtos.Rpc.ECELKEPHAAL getUserIssueWeatherReport();
   /**
-   * <code>.POGOProtos.Rpc.UserIssueWeatherReport user_issue_weather_report = 27;</code>
+   * <code>.POGOProtos.Rpc.ECELKEPHAAL user_issue_weather_report = 27;</code>
    */
-  POGOProtos.Rpc.UserIssueWeatherReportOrBuilder getUserIssueWeatherReportOrBuilder();
+  POGOProtos.Rpc.ECELKEPHAALOrBuilder getUserIssueWeatherReportOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;</code>
+   * <code>.POGOProtos.Rpc.HHFIPNDGMLJ pokemon_inventory_telemetry = 28;</code>
    * @return Whether the pokemonInventoryTelemetry field is set.
    */
   boolean hasPokemonInventoryTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;</code>
+   * <code>.POGOProtos.Rpc.HHFIPNDGMLJ pokemon_inventory_telemetry = 28;</code>
    * @return The pokemonInventoryTelemetry.
    */
-  POGOProtos.Rpc.PokemonInventoryTelemetry getPokemonInventoryTelemetry();
+  POGOProtos.Rpc.HHFIPNDGMLJ getPokemonInventoryTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PokemonInventoryTelemetry pokemon_inventory_telemetry = 28;</code>
+   * <code>.POGOProtos.Rpc.HHFIPNDGMLJ pokemon_inventory_telemetry = 28;</code>
    */
-  POGOProtos.Rpc.PokemonInventoryTelemetryOrBuilder getPokemonInventoryTelemetryOrBuilder();
+  POGOProtos.Rpc.HHFIPNDGMLJOrBuilder getPokemonInventoryTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.SocialTelemetry social_telemetry = 29;</code>
+   * <code>.POGOProtos.Rpc.LBANPGCEFCO social_telemetry = 29;</code>
    * @return Whether the socialTelemetry field is set.
    */
   boolean hasSocialTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.SocialTelemetry social_telemetry = 29;</code>
+   * <code>.POGOProtos.Rpc.LBANPGCEFCO social_telemetry = 29;</code>
    * @return The socialTelemetry.
    */
-  POGOProtos.Rpc.SocialTelemetry getSocialTelemetry();
+  POGOProtos.Rpc.LBANPGCEFCO getSocialTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.SocialTelemetry social_telemetry = 29;</code>
+   * <code>.POGOProtos.Rpc.LBANPGCEFCO social_telemetry = 29;</code>
    */
-  POGOProtos.Rpc.SocialTelemetryOrBuilder getSocialTelemetryOrBuilder();
+  POGOProtos.Rpc.LBANPGCEFCOOrBuilder getSocialTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;</code>
+   * <code>.POGOProtos.Rpc.DPMGFHPGPON check_encounter_info_telemetry = 30;</code>
    * @return Whether the checkEncounterInfoTelemetry field is set.
    */
   boolean hasCheckEncounterInfoTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;</code>
+   * <code>.POGOProtos.Rpc.DPMGFHPGPON check_encounter_info_telemetry = 30;</code>
    * @return The checkEncounterInfoTelemetry.
    */
-  POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry getCheckEncounterInfoTelemetry();
+  POGOProtos.Rpc.DPMGFHPGPON getCheckEncounterInfoTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.CheckEncounterTrayInfoTelemetry check_encounter_info_telemetry = 30;</code>
+   * <code>.POGOProtos.Rpc.DPMGFHPGPON check_encounter_info_telemetry = 30;</code>
    */
-  POGOProtos.Rpc.CheckEncounterTrayInfoTelemetryOrBuilder getCheckEncounterInfoTelemetryOrBuilder();
+  POGOProtos.Rpc.DPMGFHPGPONOrBuilder getCheckEncounterInfoTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;</code>
+   * <code>.POGOProtos.Rpc.GIAKHEGJPPH pokemon_go_plus_telemetry = 31;</code>
    * @return Whether the pokemonGoPlusTelemetry field is set.
    */
   boolean hasPokemonGoPlusTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;</code>
+   * <code>.POGOProtos.Rpc.GIAKHEGJPPH pokemon_go_plus_telemetry = 31;</code>
    * @return The pokemonGoPlusTelemetry.
    */
-  POGOProtos.Rpc.PokemonGoPlusTelemetry getPokemonGoPlusTelemetry();
+  POGOProtos.Rpc.GIAKHEGJPPH getPokemonGoPlusTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PokemonGoPlusTelemetry pokemon_go_plus_telemetry = 31;</code>
+   * <code>.POGOProtos.Rpc.GIAKHEGJPPH pokemon_go_plus_telemetry = 31;</code>
    */
-  POGOProtos.Rpc.PokemonGoPlusTelemetryOrBuilder getPokemonGoPlusTelemetryOrBuilder();
+  POGOProtos.Rpc.GIAKHEGJPPHOrBuilder getPokemonGoPlusTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
+   * <code>.POGOProtos.Rpc.GPKMIHPMDDD rpc_timing_telemetry = 32;</code>
    * @return Whether the rpcTimingTelemetry field is set.
    */
   boolean hasRpcTimingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
+   * <code>.POGOProtos.Rpc.GPKMIHPMDDD rpc_timing_telemetry = 32;</code>
    * @return The rpcTimingTelemetry.
    */
-  POGOProtos.Rpc.RpcResponseTelemetry getRpcTimingTelemetry();
+  POGOProtos.Rpc.GPKMIHPMDDD getRpcTimingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RpcResponseTelemetry rpc_timing_telemetry = 32;</code>
+   * <code>.POGOProtos.Rpc.GPKMIHPMDDD rpc_timing_telemetry = 32;</code>
    */
-  POGOProtos.Rpc.RpcResponseTelemetryOrBuilder getRpcTimingTelemetryOrBuilder();
+  POGOProtos.Rpc.GPKMIHPMDDDOrBuilder getRpcTimingTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
+   * <code>.POGOProtos.Rpc.HLFIDCGLFHA social_gift_count_telemetry = 33;</code>
    * @return Whether the socialGiftCountTelemetry field is set.
    */
   boolean hasSocialGiftCountTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
+   * <code>.POGOProtos.Rpc.HLFIDCGLFHA social_gift_count_telemetry = 33;</code>
    * @return The socialGiftCountTelemetry.
    */
-  POGOProtos.Rpc.SocialGiftCountTelemetry getSocialGiftCountTelemetry();
+  POGOProtos.Rpc.HLFIDCGLFHA getSocialGiftCountTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.SocialGiftCountTelemetry social_gift_count_telemetry = 33;</code>
+   * <code>.POGOProtos.Rpc.HLFIDCGLFHA social_gift_count_telemetry = 33;</code>
    */
-  POGOProtos.Rpc.SocialGiftCountTelemetryOrBuilder getSocialGiftCountTelemetryOrBuilder();
+  POGOProtos.Rpc.HLFIDCGLFHAOrBuilder getSocialGiftCountTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;</code>
+   * <code>.POGOProtos.Rpc.MPIKNELBFHD asset_bundle_telemetry = 34;</code>
    * @return Whether the assetBundleTelemetry field is set.
    */
   boolean hasAssetBundleTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;</code>
+   * <code>.POGOProtos.Rpc.MPIKNELBFHD asset_bundle_telemetry = 34;</code>
    * @return The assetBundleTelemetry.
    */
-  POGOProtos.Rpc.AssetBundleDownloadTelemetry getAssetBundleTelemetry();
+  POGOProtos.Rpc.MPIKNELBFHD getAssetBundleTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.AssetBundleDownloadTelemetry asset_bundle_telemetry = 34;</code>
+   * <code>.POGOProtos.Rpc.MPIKNELBFHD asset_bundle_telemetry = 34;</code>
    */
-  POGOProtos.Rpc.AssetBundleDownloadTelemetryOrBuilder getAssetBundleTelemetryOrBuilder();
+  POGOProtos.Rpc.MPIKNELBFHDOrBuilder getAssetBundleTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;</code>
+   * <code>.POGOProtos.Rpc.AIOEOLOCHII asset_poi_download_telemetry = 35;</code>
    * @return Whether the assetPoiDownloadTelemetry field is set.
    */
   boolean hasAssetPoiDownloadTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;</code>
+   * <code>.POGOProtos.Rpc.AIOEOLOCHII asset_poi_download_telemetry = 35;</code>
    * @return The assetPoiDownloadTelemetry.
    */
-  POGOProtos.Rpc.AssetPoiDownloadTelemetry getAssetPoiDownloadTelemetry();
+  POGOProtos.Rpc.AIOEOLOCHII getAssetPoiDownloadTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.AssetPoiDownloadTelemetry asset_poi_download_telemetry = 35;</code>
+   * <code>.POGOProtos.Rpc.AIOEOLOCHII asset_poi_download_telemetry = 35;</code>
    */
-  POGOProtos.Rpc.AssetPoiDownloadTelemetryOrBuilder getAssetPoiDownloadTelemetryOrBuilder();
+  POGOProtos.Rpc.AIOEOLOCHIIOrBuilder getAssetPoiDownloadTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;</code>
+   * <code>.POGOProtos.Rpc.ACGAOPCLNHE asset_stream_download_telemetry = 36;</code>
    * @return Whether the assetStreamDownloadTelemetry field is set.
    */
   boolean hasAssetStreamDownloadTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;</code>
+   * <code>.POGOProtos.Rpc.ACGAOPCLNHE asset_stream_download_telemetry = 36;</code>
    * @return The assetStreamDownloadTelemetry.
    */
-  POGOProtos.Rpc.AssetStreamDownloadTelemetry getAssetStreamDownloadTelemetry();
+  POGOProtos.Rpc.ACGAOPCLNHE getAssetStreamDownloadTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.AssetStreamDownloadTelemetry asset_stream_download_telemetry = 36;</code>
+   * <code>.POGOProtos.Rpc.ACGAOPCLNHE asset_stream_download_telemetry = 36;</code>
    */
-  POGOProtos.Rpc.AssetStreamDownloadTelemetryOrBuilder getAssetStreamDownloadTelemetryOrBuilder();
+  POGOProtos.Rpc.ACGAOPCLNHEOrBuilder getAssetStreamDownloadTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;</code>
+   * <code>.POGOProtos.Rpc.PCECJGHGMHL asset_stream_cache_culled_telemetry = 37;</code>
    * @return Whether the assetStreamCacheCulledTelemetry field is set.
    */
   boolean hasAssetStreamCacheCulledTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;</code>
+   * <code>.POGOProtos.Rpc.PCECJGHGMHL asset_stream_cache_culled_telemetry = 37;</code>
    * @return The assetStreamCacheCulledTelemetry.
    */
-  POGOProtos.Rpc.AssetStreamCacheCulledTelemetry getAssetStreamCacheCulledTelemetry();
+  POGOProtos.Rpc.PCECJGHGMHL getAssetStreamCacheCulledTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.AssetStreamCacheCulledTelemetry asset_stream_cache_culled_telemetry = 37;</code>
+   * <code>.POGOProtos.Rpc.PCECJGHGMHL asset_stream_cache_culled_telemetry = 37;</code>
    */
-  POGOProtos.Rpc.AssetStreamCacheCulledTelemetryOrBuilder getAssetStreamCacheCulledTelemetryOrBuilder();
+  POGOProtos.Rpc.PCECJGHGMHLOrBuilder getAssetStreamCacheCulledTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
+   * <code>.POGOProtos.Rpc.BNAIJJHDPFM rpc_socket_timing_telemetry = 38;</code>
    * @return Whether the rpcSocketTimingTelemetry field is set.
    */
   boolean hasRpcSocketTimingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
+   * <code>.POGOProtos.Rpc.BNAIJJHDPFM rpc_socket_timing_telemetry = 38;</code>
    * @return The rpcSocketTimingTelemetry.
    */
-  POGOProtos.Rpc.RpcSocketResponseTelemetry getRpcSocketTimingTelemetry();
+  POGOProtos.Rpc.BNAIJJHDPFM getRpcSocketTimingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RpcSocketResponseTelemetry rpc_socket_timing_telemetry = 38;</code>
+   * <code>.POGOProtos.Rpc.BNAIJJHDPFM rpc_socket_timing_telemetry = 38;</code>
    */
-  POGOProtos.Rpc.RpcSocketResponseTelemetryOrBuilder getRpcSocketTimingTelemetryOrBuilder();
+  POGOProtos.Rpc.BNAIJJHDPFMOrBuilder getRpcSocketTimingTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PermissionsFlowTelemetry permissions_flow = 39;</code>
+   * <code>.POGOProtos.Rpc.KHBEPGHEILA permissions_flow = 39;</code>
    * @return Whether the permissionsFlow field is set.
    */
   boolean hasPermissionsFlow();
   /**
-   * <code>.POGOProtos.Rpc.PermissionsFlowTelemetry permissions_flow = 39;</code>
+   * <code>.POGOProtos.Rpc.KHBEPGHEILA permissions_flow = 39;</code>
    * @return The permissionsFlow.
    */
-  POGOProtos.Rpc.PermissionsFlowTelemetry getPermissionsFlow();
+  POGOProtos.Rpc.KHBEPGHEILA getPermissionsFlow();
   /**
-   * <code>.POGOProtos.Rpc.PermissionsFlowTelemetry permissions_flow = 39;</code>
+   * <code>.POGOProtos.Rpc.KHBEPGHEILA permissions_flow = 39;</code>
    */
-  POGOProtos.Rpc.PermissionsFlowTelemetryOrBuilder getPermissionsFlowOrBuilder();
+  POGOProtos.Rpc.KHBEPGHEILAOrBuilder getPermissionsFlowOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
+   * <code>.POGOProtos.Rpc.IPDGLMDMPMM device_service_toggle = 40;</code>
    * @return Whether the deviceServiceToggle field is set.
    */
   boolean hasDeviceServiceToggle();
   /**
-   * <code>.POGOProtos.Rpc.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
+   * <code>.POGOProtos.Rpc.IPDGLMDMPMM device_service_toggle = 40;</code>
    * @return The deviceServiceToggle.
    */
-  POGOProtos.Rpc.DeviceServiceToggleTelemetry getDeviceServiceToggle();
+  POGOProtos.Rpc.IPDGLMDMPMM getDeviceServiceToggle();
   /**
-   * <code>.POGOProtos.Rpc.DeviceServiceToggleTelemetry device_service_toggle = 40;</code>
+   * <code>.POGOProtos.Rpc.IPDGLMDMPMM device_service_toggle = 40;</code>
    */
-  POGOProtos.Rpc.DeviceServiceToggleTelemetryOrBuilder getDeviceServiceToggleOrBuilder();
+  POGOProtos.Rpc.IPDGLMDMPMMOrBuilder getDeviceServiceToggleOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BootTelemetry boot_telemetry = 41;</code>
+   * <code>.POGOProtos.Rpc.OGEJIMKLFKJ boot_telemetry = 41;</code>
    * @return Whether the bootTelemetry field is set.
    */
   boolean hasBootTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BootTelemetry boot_telemetry = 41;</code>
+   * <code>.POGOProtos.Rpc.OGEJIMKLFKJ boot_telemetry = 41;</code>
    * @return The bootTelemetry.
    */
-  POGOProtos.Rpc.BootTelemetry getBootTelemetry();
+  POGOProtos.Rpc.OGEJIMKLFKJ getBootTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BootTelemetry boot_telemetry = 41;</code>
+   * <code>.POGOProtos.Rpc.OGEJIMKLFKJ boot_telemetry = 41;</code>
    */
-  POGOProtos.Rpc.BootTelemetryOrBuilder getBootTelemetryOrBuilder();
+  POGOProtos.Rpc.OGEJIMKLFKJOrBuilder getBootTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
+   * <code>.POGOProtos.Rpc.JFNFOLMKPKK user_attributes = 42;</code>
    * @return Whether the userAttributes field is set.
    */
   boolean hasUserAttributes();
   /**
-   * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
+   * <code>.POGOProtos.Rpc.JFNFOLMKPKK user_attributes = 42;</code>
    * @return The userAttributes.
    */
-  POGOProtos.Rpc.UserAttributesProto getUserAttributes();
+  POGOProtos.Rpc.JFNFOLMKPKK getUserAttributes();
   /**
-   * <code>.POGOProtos.Rpc.UserAttributesProto user_attributes = 42;</code>
+   * <code>.POGOProtos.Rpc.JFNFOLMKPKK user_attributes = 42;</code>
    */
-  POGOProtos.Rpc.UserAttributesProtoOrBuilder getUserAttributesOrBuilder();
+  POGOProtos.Rpc.JFNFOLMKPKKOrBuilder getUserAttributesOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.OnboardingTelemetry onboarding_telemetry = 43;</code>
+   * <code>.POGOProtos.Rpc.CFDMNPBGDOO onboarding_telemetry = 43;</code>
    * @return Whether the onboardingTelemetry field is set.
    */
   boolean hasOnboardingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.OnboardingTelemetry onboarding_telemetry = 43;</code>
+   * <code>.POGOProtos.Rpc.CFDMNPBGDOO onboarding_telemetry = 43;</code>
    * @return The onboardingTelemetry.
    */
-  POGOProtos.Rpc.OnboardingTelemetry getOnboardingTelemetry();
+  POGOProtos.Rpc.CFDMNPBGDOO getOnboardingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.OnboardingTelemetry onboarding_telemetry = 43;</code>
+   * <code>.POGOProtos.Rpc.CFDMNPBGDOO onboarding_telemetry = 43;</code>
    */
-  POGOProtos.Rpc.OnboardingTelemetryOrBuilder getOnboardingTelemetryOrBuilder();
+  POGOProtos.Rpc.CFDMNPBGDOOOrBuilder getOnboardingTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.LoginActionTelemetry login_action_telemetry = 44;</code>
+   * <code>.POGOProtos.Rpc.IHIMCDJJJFK login_action_telemetry = 44;</code>
    * @return Whether the loginActionTelemetry field is set.
    */
   boolean hasLoginActionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.LoginActionTelemetry login_action_telemetry = 44;</code>
+   * <code>.POGOProtos.Rpc.IHIMCDJJJFK login_action_telemetry = 44;</code>
    * @return The loginActionTelemetry.
    */
-  POGOProtos.Rpc.LoginActionTelemetry getLoginActionTelemetry();
+  POGOProtos.Rpc.IHIMCDJJJFK getLoginActionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.LoginActionTelemetry login_action_telemetry = 44;</code>
+   * <code>.POGOProtos.Rpc.IHIMCDJJJFK login_action_telemetry = 44;</code>
    */
-  POGOProtos.Rpc.LoginActionTelemetryOrBuilder getLoginActionTelemetryOrBuilder();
+  POGOProtos.Rpc.IHIMCDJJJFKOrBuilder getLoginActionTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ArPhotoSessionProto ar_photo_session_telemetry = 45;</code>
+   * <code>.POGOProtos.Rpc.GAKNGFLKMKN ar_photo_session_telemetry = 45;</code>
    * @return Whether the arPhotoSessionTelemetry field is set.
    */
   boolean hasArPhotoSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ArPhotoSessionProto ar_photo_session_telemetry = 45;</code>
+   * <code>.POGOProtos.Rpc.GAKNGFLKMKN ar_photo_session_telemetry = 45;</code>
    * @return The arPhotoSessionTelemetry.
    */
-  POGOProtos.Rpc.ArPhotoSessionProto getArPhotoSessionTelemetry();
+  POGOProtos.Rpc.GAKNGFLKMKN getArPhotoSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ArPhotoSessionProto ar_photo_session_telemetry = 45;</code>
+   * <code>.POGOProtos.Rpc.GAKNGFLKMKN ar_photo_session_telemetry = 45;</code>
    */
-  POGOProtos.Rpc.ArPhotoSessionProtoOrBuilder getArPhotoSessionTelemetryOrBuilder();
+  POGOProtos.Rpc.GAKNGFLKMKNOrBuilder getArPhotoSessionTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.InvasionTelemetry invasion_telemetry = 46;</code>
+   * <code>.POGOProtos.Rpc.PMHLOGOHODD invasion_telemetry = 46;</code>
    * @return Whether the invasionTelemetry field is set.
    */
   boolean hasInvasionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.InvasionTelemetry invasion_telemetry = 46;</code>
+   * <code>.POGOProtos.Rpc.PMHLOGOHODD invasion_telemetry = 46;</code>
    * @return The invasionTelemetry.
    */
-  POGOProtos.Rpc.InvasionTelemetry getInvasionTelemetry();
+  POGOProtos.Rpc.PMHLOGOHODD getInvasionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.InvasionTelemetry invasion_telemetry = 46;</code>
+   * <code>.POGOProtos.Rpc.PMHLOGOHODD invasion_telemetry = 46;</code>
    */
-  POGOProtos.Rpc.InvasionTelemetryOrBuilder getInvasionTelemetryOrBuilder();
+  POGOProtos.Rpc.PMHLOGOHODDOrBuilder getInvasionTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatMinigameTelemetry combat_minigame_telemetry = 47;</code>
+   * <code>.POGOProtos.Rpc.ADOOLMNEADM combat_minigame_telemetry = 47;</code>
    * @return Whether the combatMinigameTelemetry field is set.
    */
   boolean hasCombatMinigameTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.CombatMinigameTelemetry combat_minigame_telemetry = 47;</code>
+   * <code>.POGOProtos.Rpc.ADOOLMNEADM combat_minigame_telemetry = 47;</code>
    * @return The combatMinigameTelemetry.
    */
-  POGOProtos.Rpc.CombatMinigameTelemetry getCombatMinigameTelemetry();
+  POGOProtos.Rpc.ADOOLMNEADM getCombatMinigameTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.CombatMinigameTelemetry combat_minigame_telemetry = 47;</code>
+   * <code>.POGOProtos.Rpc.ADOOLMNEADM combat_minigame_telemetry = 47;</code>
    */
-  POGOProtos.Rpc.CombatMinigameTelemetryOrBuilder getCombatMinigameTelemetryOrBuilder();
+  POGOProtos.Rpc.ADOOLMNEADMOrBuilder getCombatMinigameTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;</code>
+   * <code>.POGOProtos.Rpc.HMAFCOOFGPJ leave_point_of_interest_telemetry = 48;</code>
    * @return Whether the leavePointOfInterestTelemetry field is set.
    */
   boolean hasLeavePointOfInterestTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;</code>
+   * <code>.POGOProtos.Rpc.HMAFCOOFGPJ leave_point_of_interest_telemetry = 48;</code>
    * @return The leavePointOfInterestTelemetry.
    */
-  POGOProtos.Rpc.LeavePointOfInterestTelemetry getLeavePointOfInterestTelemetry();
+  POGOProtos.Rpc.HMAFCOOFGPJ getLeavePointOfInterestTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.LeavePointOfInterestTelemetry leave_point_of_interest_telemetry = 48;</code>
+   * <code>.POGOProtos.Rpc.HMAFCOOFGPJ leave_point_of_interest_telemetry = 48;</code>
    */
-  POGOProtos.Rpc.LeavePointOfInterestTelemetryOrBuilder getLeavePointOfInterestTelemetryOrBuilder();
+  POGOProtos.Rpc.HMAFCOOFGPJOrBuilder getLeavePointOfInterestTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;</code>
+   * <code>.POGOProtos.Rpc.NHGCBDIDHOK view_point_of_interest_image_telemetry = 49;</code>
    * @return Whether the viewPointOfInterestImageTelemetry field is set.
    */
   boolean hasViewPointOfInterestImageTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;</code>
+   * <code>.POGOProtos.Rpc.NHGCBDIDHOK view_point_of_interest_image_telemetry = 49;</code>
    * @return The viewPointOfInterestImageTelemetry.
    */
-  POGOProtos.Rpc.ViewPointOfInterestImageTelemetry getViewPointOfInterestImageTelemetry();
+  POGOProtos.Rpc.NHGCBDIDHOK getViewPointOfInterestImageTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ViewPointOfInterestImageTelemetry view_point_of_interest_image_telemetry = 49;</code>
+   * <code>.POGOProtos.Rpc.NHGCBDIDHOK view_point_of_interest_image_telemetry = 49;</code>
    */
-  POGOProtos.Rpc.ViewPointOfInterestImageTelemetryOrBuilder getViewPointOfInterestImageTelemetryOrBuilder();
+  POGOProtos.Rpc.NHGCBDIDHOKOrBuilder getViewPointOfInterestImageTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;</code>
+   * <code>.POGOProtos.Rpc.AKOENHCIFFN combat_hub_entrance_telemetry = 50;</code>
    * @return Whether the combatHubEntranceTelemetry field is set.
    */
   boolean hasCombatHubEntranceTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;</code>
+   * <code>.POGOProtos.Rpc.AKOENHCIFFN combat_hub_entrance_telemetry = 50;</code>
    * @return The combatHubEntranceTelemetry.
    */
-  POGOProtos.Rpc.CombatHubEntranceTelemetry getCombatHubEntranceTelemetry();
+  POGOProtos.Rpc.AKOENHCIFFN getCombatHubEntranceTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.CombatHubEntranceTelemetry combat_hub_entrance_telemetry = 50;</code>
+   * <code>.POGOProtos.Rpc.AKOENHCIFFN combat_hub_entrance_telemetry = 50;</code>
    */
-  POGOProtos.Rpc.CombatHubEntranceTelemetryOrBuilder getCombatHubEntranceTelemetryOrBuilder();
+  POGOProtos.Rpc.AKOENHCIFFNOrBuilder getCombatHubEntranceTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;</code>
+   * <code>.POGOProtos.Rpc.AHOALEMBBNF leave_interaction_range_telemetry = 51;</code>
    * @return Whether the leaveInteractionRangeTelemetry field is set.
    */
   boolean hasLeaveInteractionRangeTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;</code>
+   * <code>.POGOProtos.Rpc.AHOALEMBBNF leave_interaction_range_telemetry = 51;</code>
    * @return The leaveInteractionRangeTelemetry.
    */
-  POGOProtos.Rpc.LeaveInteractionRangeTelemetry getLeaveInteractionRangeTelemetry();
+  POGOProtos.Rpc.AHOALEMBBNF getLeaveInteractionRangeTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.LeaveInteractionRangeTelemetry leave_interaction_range_telemetry = 51;</code>
+   * <code>.POGOProtos.Rpc.AHOALEMBBNF leave_interaction_range_telemetry = 51;</code>
    */
-  POGOProtos.Rpc.LeaveInteractionRangeTelemetryOrBuilder getLeaveInteractionRangeTelemetryOrBuilder();
+  POGOProtos.Rpc.AHOALEMBBNFOrBuilder getLeaveInteractionRangeTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;</code>
+   * <code>.POGOProtos.Rpc.FMCLKBIIPPI shopping_page_click_telemetry = 52;</code>
    * @return Whether the shoppingPageClickTelemetry field is set.
    */
   boolean hasShoppingPageClickTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;</code>
+   * <code>.POGOProtos.Rpc.FMCLKBIIPPI shopping_page_click_telemetry = 52;</code>
    * @return The shoppingPageClickTelemetry.
    */
-  POGOProtos.Rpc.ShoppingPageClickTelemetry getShoppingPageClickTelemetry();
+  POGOProtos.Rpc.FMCLKBIIPPI getShoppingPageClickTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ShoppingPageClickTelemetry shopping_page_click_telemetry = 52;</code>
+   * <code>.POGOProtos.Rpc.FMCLKBIIPPI shopping_page_click_telemetry = 52;</code>
    */
-  POGOProtos.Rpc.ShoppingPageClickTelemetryOrBuilder getShoppingPageClickTelemetryOrBuilder();
+  POGOProtos.Rpc.FMCLKBIIPPIOrBuilder getShoppingPageClickTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;</code>
+   * <code>.POGOProtos.Rpc.ONGEJJOKHNJ shopping_page_scroll_telemetry = 53;</code>
    * @return Whether the shoppingPageScrollTelemetry field is set.
    */
   boolean hasShoppingPageScrollTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;</code>
+   * <code>.POGOProtos.Rpc.ONGEJJOKHNJ shopping_page_scroll_telemetry = 53;</code>
    * @return The shoppingPageScrollTelemetry.
    */
-  POGOProtos.Rpc.ShoppingPageScrollTelemetry getShoppingPageScrollTelemetry();
+  POGOProtos.Rpc.ONGEJJOKHNJ getShoppingPageScrollTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ShoppingPageScrollTelemetry shopping_page_scroll_telemetry = 53;</code>
+   * <code>.POGOProtos.Rpc.ONGEJJOKHNJ shopping_page_scroll_telemetry = 53;</code>
    */
-  POGOProtos.Rpc.ShoppingPageScrollTelemetryOrBuilder getShoppingPageScrollTelemetryOrBuilder();
+  POGOProtos.Rpc.ONGEJJOKHNJOrBuilder getShoppingPageScrollTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.DeviceSpecificationsTelemetry device_specifications_telemetry = 54;</code>
+   * <code>.POGOProtos.Rpc.KKGDIFHBOAC device_specifications_telemetry = 54;</code>
    * @return Whether the deviceSpecificationsTelemetry field is set.
    */
   boolean hasDeviceSpecificationsTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.DeviceSpecificationsTelemetry device_specifications_telemetry = 54;</code>
+   * <code>.POGOProtos.Rpc.KKGDIFHBOAC device_specifications_telemetry = 54;</code>
    * @return The deviceSpecificationsTelemetry.
    */
-  POGOProtos.Rpc.DeviceSpecificationsTelemetry getDeviceSpecificationsTelemetry();
+  POGOProtos.Rpc.KKGDIFHBOAC getDeviceSpecificationsTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.DeviceSpecificationsTelemetry device_specifications_telemetry = 54;</code>
+   * <code>.POGOProtos.Rpc.KKGDIFHBOAC device_specifications_telemetry = 54;</code>
    */
-  POGOProtos.Rpc.DeviceSpecificationsTelemetryOrBuilder getDeviceSpecificationsTelemetryOrBuilder();
+  POGOProtos.Rpc.KKGDIFHBOACOrBuilder getDeviceSpecificationsTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ScreenResolutionTelemetry screen_resolution_telemetry = 55;</code>
+   * <code>.POGOProtos.Rpc.CKCEGNKGKIP screen_resolution_telemetry = 55;</code>
    * @return Whether the screenResolutionTelemetry field is set.
    */
   boolean hasScreenResolutionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ScreenResolutionTelemetry screen_resolution_telemetry = 55;</code>
+   * <code>.POGOProtos.Rpc.CKCEGNKGKIP screen_resolution_telemetry = 55;</code>
    * @return The screenResolutionTelemetry.
    */
-  POGOProtos.Rpc.ScreenResolutionTelemetry getScreenResolutionTelemetry();
+  POGOProtos.Rpc.CKCEGNKGKIP getScreenResolutionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ScreenResolutionTelemetry screen_resolution_telemetry = 55;</code>
+   * <code>.POGOProtos.Rpc.CKCEGNKGKIP screen_resolution_telemetry = 55;</code>
    */
-  POGOProtos.Rpc.ScreenResolutionTelemetryOrBuilder getScreenResolutionTelemetryOrBuilder();
+  POGOProtos.Rpc.CKCEGNKGKIPOrBuilder getScreenResolutionTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+   * <code>.POGOProtos.Rpc.LMJDAFDBOLK ar_buddy_multiplayer_session_telemetry = 56;</code>
    * @return Whether the arBuddyMultiplayerSessionTelemetry field is set.
    */
   boolean hasArBuddyMultiplayerSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+   * <code>.POGOProtos.Rpc.LMJDAFDBOLK ar_buddy_multiplayer_session_telemetry = 56;</code>
    * @return The arBuddyMultiplayerSessionTelemetry.
    */
-  POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry getArBuddyMultiplayerSessionTelemetry();
+  POGOProtos.Rpc.LMJDAFDBOLK getArBuddyMultiplayerSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetry ar_buddy_multiplayer_session_telemetry = 56;</code>
+   * <code>.POGOProtos.Rpc.LMJDAFDBOLK ar_buddy_multiplayer_session_telemetry = 56;</code>
    */
-  POGOProtos.Rpc.ARBuddyMultiplayerSessionTelemetryOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder();
+  POGOProtos.Rpc.LMJDAFDBOLKOrBuilder getArBuddyMultiplayerSessionTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
+   * <code>.POGOProtos.Rpc.PJCLBBNJHOK buddy_multiplayer_connection_failed_telemetry = 57;</code>
    * @return Whether the buddyMultiplayerConnectionFailedTelemetry field is set.
    */
   boolean hasBuddyMultiplayerConnectionFailedTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
+   * <code>.POGOProtos.Rpc.PJCLBBNJHOK buddy_multiplayer_connection_failed_telemetry = 57;</code>
    * @return The buddyMultiplayerConnectionFailedTelemetry.
    */
-  POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto getBuddyMultiplayerConnectionFailedTelemetry();
+  POGOProtos.Rpc.PJCLBBNJHOK getBuddyMultiplayerConnectionFailedTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProto buddy_multiplayer_connection_failed_telemetry = 57;</code>
+   * <code>.POGOProtos.Rpc.PJCLBBNJHOK buddy_multiplayer_connection_failed_telemetry = 57;</code>
    */
-  POGOProtos.Rpc.BuddyMultiplayerConnectionFailedProtoOrBuilder getBuddyMultiplayerConnectionFailedTelemetryOrBuilder();
+  POGOProtos.Rpc.PJCLBBNJHOKOrBuilder getBuddyMultiplayerConnectionFailedTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+   * <code>.POGOProtos.Rpc.MIMGIJNOINA buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    * @return Whether the buddyMultiplayerConnectionSucceededTelemetry field is set.
    */
   boolean hasBuddyMultiplayerConnectionSucceededTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+   * <code>.POGOProtos.Rpc.MIMGIJNOINA buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    * @return The buddyMultiplayerConnectionSucceededTelemetry.
    */
-  POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto getBuddyMultiplayerConnectionSucceededTelemetry();
+  POGOProtos.Rpc.MIMGIJNOINA getBuddyMultiplayerConnectionSucceededTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProto buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
+   * <code>.POGOProtos.Rpc.MIMGIJNOINA buddy_multiplayer_connection_succeeded_telemetry = 58;</code>
    */
-  POGOProtos.Rpc.BuddyMultiplayerConnectionSucceededProtoOrBuilder getBuddyMultiplayerConnectionSucceededTelemetryOrBuilder();
+  POGOProtos.Rpc.MIMGIJNOINAOrBuilder getBuddyMultiplayerConnectionSucceededTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+   * <code>.POGOProtos.Rpc.LGNJHANCOMN buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    * @return Whether the buddyMultiplayerTimeToGetSessionTelemetry field is set.
    */
   boolean hasBuddyMultiplayerTimeToGetSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+   * <code>.POGOProtos.Rpc.LGNJHANCOMN buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    * @return The buddyMultiplayerTimeToGetSessionTelemetry.
    */
-  POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto getBuddyMultiplayerTimeToGetSessionTelemetry();
+  POGOProtos.Rpc.LGNJHANCOMN getBuddyMultiplayerTimeToGetSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProto buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
+   * <code>.POGOProtos.Rpc.LGNJHANCOMN buddy_multiplayer_time_to_get_session_telemetry = 59;</code>
    */
-  POGOProtos.Rpc.BuddyMultiplayerTimeToGetSessionProtoOrBuilder getBuddyMultiplayerTimeToGetSessionTelemetryOrBuilder();
+  POGOProtos.Rpc.LGNJHANCOMNOrBuilder getBuddyMultiplayerTimeToGetSessionTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;</code>
+   * <code>.POGOProtos.Rpc.NJGCPAHCCEA player_hud_notification_click_telemetry = 60;</code>
    * @return Whether the playerHudNotificationClickTelemetry field is set.
    */
   boolean hasPlayerHudNotificationClickTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;</code>
+   * <code>.POGOProtos.Rpc.NJGCPAHCCEA player_hud_notification_click_telemetry = 60;</code>
    * @return The playerHudNotificationClickTelemetry.
    */
-  POGOProtos.Rpc.PlayerHudNotificationClickTelemetry getPlayerHudNotificationClickTelemetry();
+  POGOProtos.Rpc.NJGCPAHCCEA getPlayerHudNotificationClickTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PlayerHudNotificationClickTelemetry player_hud_notification_click_telemetry = 60;</code>
+   * <code>.POGOProtos.Rpc.NJGCPAHCCEA player_hud_notification_click_telemetry = 60;</code>
    */
-  POGOProtos.Rpc.PlayerHudNotificationClickTelemetryOrBuilder getPlayerHudNotificationClickTelemetryOrBuilder();
+  POGOProtos.Rpc.NJGCPAHCCEAOrBuilder getPlayerHudNotificationClickTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.MonodepthDownloadTelemetry monodepth_download_telemetry = 61;</code>
+   * <code>.POGOProtos.Rpc.GJIKGFOPDFE monodepth_download_telemetry = 61;</code>
    * @return Whether the monodepthDownloadTelemetry field is set.
    */
   boolean hasMonodepthDownloadTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.MonodepthDownloadTelemetry monodepth_download_telemetry = 61;</code>
+   * <code>.POGOProtos.Rpc.GJIKGFOPDFE monodepth_download_telemetry = 61;</code>
    * @return The monodepthDownloadTelemetry.
    */
-  POGOProtos.Rpc.MonodepthDownloadTelemetry getMonodepthDownloadTelemetry();
+  POGOProtos.Rpc.GJIKGFOPDFE getMonodepthDownloadTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.MonodepthDownloadTelemetry monodepth_download_telemetry = 61;</code>
+   * <code>.POGOProtos.Rpc.GJIKGFOPDFE monodepth_download_telemetry = 61;</code>
    */
-  POGOProtos.Rpc.MonodepthDownloadTelemetryOrBuilder getMonodepthDownloadTelemetryOrBuilder();
+  POGOProtos.Rpc.GJIKGFOPDFEOrBuilder getMonodepthDownloadTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
+   * <code>.POGOProtos.Rpc.EJCDMLCMIJG ar_mapping_telemetry = 62;</code>
    * @return Whether the arMappingTelemetry field is set.
    */
   boolean hasArMappingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
+   * <code>.POGOProtos.Rpc.EJCDMLCMIJG ar_mapping_telemetry = 62;</code>
    * @return The arMappingTelemetry.
    */
-  POGOProtos.Rpc.ArMappingTelemetryProto getArMappingTelemetry();
+  POGOProtos.Rpc.EJCDMLCMIJG getArMappingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ArMappingTelemetryProto ar_mapping_telemetry = 62;</code>
+   * <code>.POGOProtos.Rpc.EJCDMLCMIJG ar_mapping_telemetry = 62;</code>
    */
-  POGOProtos.Rpc.ArMappingTelemetryProtoOrBuilder getArMappingTelemetryOrBuilder();
+  POGOProtos.Rpc.EJCDMLCMIJGOrBuilder getArMappingTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.RemoteRaidTelemetry remote_raid_telemetry = 63;</code>
+   * <code>.POGOProtos.Rpc.HBIECNGMENK remote_raid_telemetry = 63;</code>
    * @return Whether the remoteRaidTelemetry field is set.
    */
   boolean hasRemoteRaidTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RemoteRaidTelemetry remote_raid_telemetry = 63;</code>
+   * <code>.POGOProtos.Rpc.HBIECNGMENK remote_raid_telemetry = 63;</code>
    * @return The remoteRaidTelemetry.
    */
-  POGOProtos.Rpc.RemoteRaidTelemetry getRemoteRaidTelemetry();
+  POGOProtos.Rpc.HBIECNGMENK getRemoteRaidTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.RemoteRaidTelemetry remote_raid_telemetry = 63;</code>
+   * <code>.POGOProtos.Rpc.HBIECNGMENK remote_raid_telemetry = 63;</code>
    */
-  POGOProtos.Rpc.RemoteRaidTelemetryOrBuilder getRemoteRaidTelemetryOrBuilder();
+  POGOProtos.Rpc.HBIECNGMENKOrBuilder getRemoteRaidTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * <code>.POGOProtos.Rpc.DIHBMCIDJKI device_os_telemetry = 64;</code>
    * @return Whether the deviceOsTelemetry field is set.
    */
   boolean hasDeviceOsTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * <code>.POGOProtos.Rpc.DIHBMCIDJKI device_os_telemetry = 64;</code>
    * @return The deviceOsTelemetry.
    */
-  POGOProtos.Rpc.DeviceOSTelemetry getDeviceOsTelemetry();
+  POGOProtos.Rpc.DIHBMCIDJKI getDeviceOsTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.DeviceOSTelemetry device_os_telemetry = 64;</code>
+   * <code>.POGOProtos.Rpc.DIHBMCIDJKI device_os_telemetry = 64;</code>
    */
-  POGOProtos.Rpc.DeviceOSTelemetryOrBuilder getDeviceOsTelemetryOrBuilder();
+  POGOProtos.Rpc.DIHBMCIDJKIOrBuilder getDeviceOsTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.NianticProfileTelemetry niantic_profile_telemetry = 65;</code>
+   * <code>.POGOProtos.Rpc.BEDPFIMNCDA niantic_profile_telemetry = 65;</code>
    * @return Whether the nianticProfileTelemetry field is set.
    */
   boolean hasNianticProfileTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.NianticProfileTelemetry niantic_profile_telemetry = 65;</code>
+   * <code>.POGOProtos.Rpc.BEDPFIMNCDA niantic_profile_telemetry = 65;</code>
    * @return The nianticProfileTelemetry.
    */
-  POGOProtos.Rpc.NianticProfileTelemetry getNianticProfileTelemetry();
+  POGOProtos.Rpc.BEDPFIMNCDA getNianticProfileTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.NianticProfileTelemetry niantic_profile_telemetry = 65;</code>
+   * <code>.POGOProtos.Rpc.BEDPFIMNCDA niantic_profile_telemetry = 65;</code>
    */
-  POGOProtos.Rpc.NianticProfileTelemetryOrBuilder getNianticProfileTelemetryOrBuilder();
+  POGOProtos.Rpc.BEDPFIMNCDAOrBuilder getNianticProfileTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ChangeOnlineStatusTelemetry change_online_status_telemetry = 66;</code>
+   * <code>.POGOProtos.Rpc.AGFKFEBGNNO change_online_status_telemetry = 66;</code>
    * @return Whether the changeOnlineStatusTelemetry field is set.
    */
   boolean hasChangeOnlineStatusTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ChangeOnlineStatusTelemetry change_online_status_telemetry = 66;</code>
+   * <code>.POGOProtos.Rpc.AGFKFEBGNNO change_online_status_telemetry = 66;</code>
    * @return The changeOnlineStatusTelemetry.
    */
-  POGOProtos.Rpc.ChangeOnlineStatusTelemetry getChangeOnlineStatusTelemetry();
+  POGOProtos.Rpc.AGFKFEBGNNO getChangeOnlineStatusTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.ChangeOnlineStatusTelemetry change_online_status_telemetry = 66;</code>
+   * <code>.POGOProtos.Rpc.AGFKFEBGNNO change_online_status_telemetry = 66;</code>
    */
-  POGOProtos.Rpc.ChangeOnlineStatusTelemetryOrBuilder getChangeOnlineStatusTelemetryOrBuilder();
+  POGOProtos.Rpc.AGFKFEBGNNOOrBuilder getChangeOnlineStatusTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
-   * @return Whether the serverData field is set.
+   * <code>.POGOProtos.Rpc.LHLEIAJOMJJ deep_linking_telemetry = 67;</code>
+   * @return Whether the deepLinkingTelemetry field is set.
    */
-  boolean hasServerData();
+  boolean hasDeepLinkingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
-   * @return The serverData.
+   * <code>.POGOProtos.Rpc.LHLEIAJOMJJ deep_linking_telemetry = 67;</code>
+   * @return The deepLinkingTelemetry.
    */
-  POGOProtos.Rpc.PlatformPlatformServerData getServerData();
+  POGOProtos.Rpc.LHLEIAJOMJJ getDeepLinkingTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformServerData server_data = 1001;</code>
+   * <code>.POGOProtos.Rpc.LHLEIAJOMJJ deep_linking_telemetry = 67;</code>
    */
-  POGOProtos.Rpc.PlatformPlatformServerDataOrBuilder getServerDataOrBuilder();
+  POGOProtos.Rpc.LHLEIAJOMJJOrBuilder getDeepLinkingTelemetryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
-   * @return Whether the commonFilters field is set.
+   * <code>.POGOProtos.Rpc.AMIOBAFHNJD ar_mapping_session_telemetry = 68;</code>
+   * @return Whether the arMappingSessionTelemetry field is set.
    */
-  boolean hasCommonFilters();
+  boolean hasArMappingSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
-   * @return The commonFilters.
+   * <code>.POGOProtos.Rpc.AMIOBAFHNJD ar_mapping_session_telemetry = 68;</code>
+   * @return The arMappingSessionTelemetry.
    */
-  POGOProtos.Rpc.PlatformPlatformCommonFilterProto getCommonFilters();
+  POGOProtos.Rpc.AMIOBAFHNJD getArMappingSessionTelemetry();
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlatformCommonFilterProto common_filters = 1002;</code>
+   * <code>.POGOProtos.Rpc.AMIOBAFHNJD ar_mapping_session_telemetry = 68;</code>
    */
-  POGOProtos.Rpc.PlatformPlatformCommonFilterProtoOrBuilder getCommonFiltersOrBuilder();
+  POGOProtos.Rpc.AMIOBAFHNJDOrBuilder getArMappingSessionTelemetryOrBuilder();
 
-  public POGOProtos.Rpc.HoloholoClientTelemetryOmniProto.TelemetryDataCase getTelemetryDataCase();
+  /**
+   * <code>.POGOProtos.Rpc.EHDBCCFKGCC pokemon_home_telemetry = 69;</code>
+   * @return Whether the pokemonHomeTelemetry field is set.
+   */
+  boolean hasPokemonHomeTelemetry();
+  /**
+   * <code>.POGOProtos.Rpc.EHDBCCFKGCC pokemon_home_telemetry = 69;</code>
+   * @return The pokemonHomeTelemetry.
+   */
+  POGOProtos.Rpc.EHDBCCFKGCC getPokemonHomeTelemetry();
+  /**
+   * <code>.POGOProtos.Rpc.EHDBCCFKGCC pokemon_home_telemetry = 69;</code>
+   */
+  POGOProtos.Rpc.EHDBCCFKGCCOrBuilder getPokemonHomeTelemetryOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.LEKPHPGIDBB pokemon_search_telemetry = 70;</code>
+   * @return Whether the pokemonSearchTelemetry field is set.
+   */
+  boolean hasPokemonSearchTelemetry();
+  /**
+   * <code>.POGOProtos.Rpc.LEKPHPGIDBB pokemon_search_telemetry = 70;</code>
+   * @return The pokemonSearchTelemetry.
+   */
+  POGOProtos.Rpc.LEKPHPGIDBB getPokemonSearchTelemetry();
+  /**
+   * <code>.POGOProtos.Rpc.LEKPHPGIDBB pokemon_search_telemetry = 70;</code>
+   */
+  POGOProtos.Rpc.LEKPHPGIDBBOrBuilder getPokemonSearchTelemetryOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.PlatformServerData ikedfaknbkf = 1001;</code>
+   * @return Whether the ikedfaknbkf field is set.
+   */
+  boolean hasIkedfaknbkf();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformServerData ikedfaknbkf = 1001;</code>
+   * @return The ikedfaknbkf.
+   */
+  POGOProtos.Rpc.PlatformServerData getIkedfaknbkf();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformServerData ikedfaknbkf = 1001;</code>
+   */
+  POGOProtos.Rpc.PlatformServerDataOrBuilder getIkedfaknbkfOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.PlatformCommonFilterProto njfhnldahbo = 1002;</code>
+   * @return Whether the njfhnldahbo field is set.
+   */
+  boolean hasNjfhnldahbo();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformCommonFilterProto njfhnldahbo = 1002;</code>
+   * @return The njfhnldahbo.
+   */
+  POGOProtos.Rpc.PlatformCommonFilterProto getNjfhnldahbo();
+  /**
+   * <code>.POGOProtos.Rpc.PlatformCommonFilterProto njfhnldahbo = 1002;</code>
+   */
+  POGOProtos.Rpc.PlatformCommonFilterProtoOrBuilder getNjfhnldahboOrBuilder();
+
+  public POGOProtos.Rpc.HoloholoClientTelemetryOmniProto.BEPLFFMBHMGCase getBEPLFFMBHMGCase();
 }

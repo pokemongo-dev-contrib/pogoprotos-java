@@ -4,209 +4,205 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: LMEMHAGHIGC
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.HoloItemCategory}
  */
 public enum HoloItemCategory
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_NONE = 0;</code>
+   * <code>ITEM_CATEGORY_NONE = 0;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_NONE(0),
+  ITEM_CATEGORY_NONE(0),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_POKEBALL = 1;</code>
+   * <code>ITEM_CATEGORY_POKEBALL = 1;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_POKEBALL(1),
+  ITEM_CATEGORY_POKEBALL(1),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_FOOD = 2;</code>
+   * <code>ITEM_CATEGORY_FOOD = 2;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_FOOD(2),
+  ITEM_CATEGORY_FOOD(2),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_MEDICINE = 3;</code>
+   * <code>ITEM_CATEGORY_MEDICINE = 3;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_MEDICINE(3),
+  ITEM_CATEGORY_MEDICINE(3),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BOOST = 4;</code>
+   * <code>ITEM_CATEGORY_BOOST = 4;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BOOST(4),
+  ITEM_CATEGORY_BOOST(4),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_UTILITES = 5;</code>
+   * <code>ITEM_CATEGORY_UTILITES = 5;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_UTILITES(5),
+  ITEM_CATEGORY_UTILITES(5),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CAMERA = 6;</code>
+   * <code>ITEM_CATEGORY_CAMERA = 6;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CAMERA(6),
+  ITEM_CATEGORY_CAMERA(6),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_DISK = 7;</code>
+   * <code>ITEM_CATEGORY_DISK = 7;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_DISK(7),
+  ITEM_CATEGORY_DISK(7),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCUBATOR = 8;</code>
+   * <code>ITEM_CATEGORY_INCUBATOR = 8;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCUBATOR(8),
+  ITEM_CATEGORY_INCUBATOR(8),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCENSE = 9;</code>
+   * <code>ITEM_CATEGORY_INCENSE = 9;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCENSE(9),
+  ITEM_CATEGORY_INCENSE(9),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_XP_BOOST = 10;</code>
+   * <code>ITEM_CATEGORY_XP_BOOST = 10;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_XP_BOOST(10),
+  ITEM_CATEGORY_XP_BOOST(10),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INVENTORY_UPGRADE = 11;</code>
+   * <code>ITEM_CATEGORY_INVENTORY_UPGRADE = 11;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INVENTORY_UPGRADE(11),
+  ITEM_CATEGORY_INVENTORY_UPGRADE(11),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_EVOLUTION_REQUIREMENT = 12;</code>
+   * <code>ITEM_CATEGORY_EVOLUTION_REQUIREMENT = 12;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_EVOLUTION_REQUIREMENT(12),
+  ITEM_CATEGORY_EVOLUTION_REQUIREMENT(12),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_MOVE_REROLL = 13;</code>
+   * <code>ITEM_CATEGORY_MOVE_REROLL = 13;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_MOVE_REROLL(13),
+  ITEM_CATEGORY_MOVE_REROLL(13),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CANDY = 14;</code>
+   * <code>ITEM_CATEGORY_CANDY = 14;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CANDY(14),
+  ITEM_CATEGORY_CANDY(14),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_RAID_TICKET = 15;</code>
+   * <code>ITEM_CATEGORY_RAID_TICKET = 15;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_RAID_TICKET(15),
+  ITEM_CATEGORY_RAID_TICKET(15),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STARDUST_BOOST = 16;</code>
+   * <code>ITEM_CATEGORY_STARDUST_BOOST = 16;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STARDUST_BOOST(16),
+  ITEM_CATEGORY_STARDUST_BOOST(16),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;</code>
+   * <code>ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_FRIEND_GIFT_BOX(17),
+  ITEM_CATEGORY_FRIEND_GIFT_BOX(17),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_TEAM_CHANGE = 18;</code>
+   * <code>ITEM_CATEGORY_TEAM_CHANGE = 18;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_TEAM_CHANGE(18),
+  ITEM_CATEGORY_TEAM_CHANGE(18),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_VS_SEEKER = 20;</code>
+   * <code>ITEM_CATEGORY_VS_SEEKER = 20;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_VS_SEEKER(20),
+  ITEM_CATEGORY_VS_SEEKER(20),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCIDENT_TICKET = 21;</code>
+   * <code>ITEM_CATEGORY_INCIDENT_TICKET = 21;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCIDENT_TICKET(21),
+  ITEM_CATEGORY_INCIDENT_TICKET(21),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_GLOBAL_EVENT_TICKET = 22;</code>
+   * <code>ITEM_CATEGORY_GLOBAL_EVENT_TICKET = 22;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_GLOBAL_EVENT_TICKET(22),
+  ITEM_CATEGORY_GLOBAL_EVENT_TICKET(22),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD = 23;</code>
+   * <code>ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD = 23;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD(23),
+  ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD(23),
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STICKER = 24;</code>
+   * <code>ITEM_CATEGORY_STICKER = 24;</code>
    */
-  HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STICKER(24),
+  ITEM_CATEGORY_STICKER(24),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_NONE = 0;</code>
+   * <code>ITEM_CATEGORY_NONE = 0;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_NONE_VALUE = 0;
+  public static final int ITEM_CATEGORY_NONE_VALUE = 0;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_POKEBALL = 1;</code>
+   * <code>ITEM_CATEGORY_POKEBALL = 1;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_POKEBALL_VALUE = 1;
+  public static final int ITEM_CATEGORY_POKEBALL_VALUE = 1;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_FOOD = 2;</code>
+   * <code>ITEM_CATEGORY_FOOD = 2;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_FOOD_VALUE = 2;
+  public static final int ITEM_CATEGORY_FOOD_VALUE = 2;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_MEDICINE = 3;</code>
+   * <code>ITEM_CATEGORY_MEDICINE = 3;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_MEDICINE_VALUE = 3;
+  public static final int ITEM_CATEGORY_MEDICINE_VALUE = 3;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BOOST = 4;</code>
+   * <code>ITEM_CATEGORY_BOOST = 4;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BOOST_VALUE = 4;
+  public static final int ITEM_CATEGORY_BOOST_VALUE = 4;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_UTILITES = 5;</code>
+   * <code>ITEM_CATEGORY_UTILITES = 5;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_UTILITES_VALUE = 5;
+  public static final int ITEM_CATEGORY_UTILITES_VALUE = 5;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CAMERA = 6;</code>
+   * <code>ITEM_CATEGORY_CAMERA = 6;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CAMERA_VALUE = 6;
+  public static final int ITEM_CATEGORY_CAMERA_VALUE = 6;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_DISK = 7;</code>
+   * <code>ITEM_CATEGORY_DISK = 7;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_DISK_VALUE = 7;
+  public static final int ITEM_CATEGORY_DISK_VALUE = 7;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCUBATOR = 8;</code>
+   * <code>ITEM_CATEGORY_INCUBATOR = 8;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCUBATOR_VALUE = 8;
+  public static final int ITEM_CATEGORY_INCUBATOR_VALUE = 8;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCENSE = 9;</code>
+   * <code>ITEM_CATEGORY_INCENSE = 9;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCENSE_VALUE = 9;
+  public static final int ITEM_CATEGORY_INCENSE_VALUE = 9;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_XP_BOOST = 10;</code>
+   * <code>ITEM_CATEGORY_XP_BOOST = 10;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_XP_BOOST_VALUE = 10;
+  public static final int ITEM_CATEGORY_XP_BOOST_VALUE = 10;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INVENTORY_UPGRADE = 11;</code>
+   * <code>ITEM_CATEGORY_INVENTORY_UPGRADE = 11;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INVENTORY_UPGRADE_VALUE = 11;
+  public static final int ITEM_CATEGORY_INVENTORY_UPGRADE_VALUE = 11;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_EVOLUTION_REQUIREMENT = 12;</code>
+   * <code>ITEM_CATEGORY_EVOLUTION_REQUIREMENT = 12;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_EVOLUTION_REQUIREMENT_VALUE = 12;
+  public static final int ITEM_CATEGORY_EVOLUTION_REQUIREMENT_VALUE = 12;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_MOVE_REROLL = 13;</code>
+   * <code>ITEM_CATEGORY_MOVE_REROLL = 13;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_MOVE_REROLL_VALUE = 13;
+  public static final int ITEM_CATEGORY_MOVE_REROLL_VALUE = 13;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CANDY = 14;</code>
+   * <code>ITEM_CATEGORY_CANDY = 14;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CANDY_VALUE = 14;
+  public static final int ITEM_CATEGORY_CANDY_VALUE = 14;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_RAID_TICKET = 15;</code>
+   * <code>ITEM_CATEGORY_RAID_TICKET = 15;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_RAID_TICKET_VALUE = 15;
+  public static final int ITEM_CATEGORY_RAID_TICKET_VALUE = 15;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STARDUST_BOOST = 16;</code>
+   * <code>ITEM_CATEGORY_STARDUST_BOOST = 16;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STARDUST_BOOST_VALUE = 16;
+  public static final int ITEM_CATEGORY_STARDUST_BOOST_VALUE = 16;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;</code>
+   * <code>ITEM_CATEGORY_FRIEND_GIFT_BOX = 17;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_FRIEND_GIFT_BOX_VALUE = 17;
+  public static final int ITEM_CATEGORY_FRIEND_GIFT_BOX_VALUE = 17;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_TEAM_CHANGE = 18;</code>
+   * <code>ITEM_CATEGORY_TEAM_CHANGE = 18;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_TEAM_CHANGE_VALUE = 18;
+  public static final int ITEM_CATEGORY_TEAM_CHANGE_VALUE = 18;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_VS_SEEKER = 20;</code>
+   * <code>ITEM_CATEGORY_VS_SEEKER = 20;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_VS_SEEKER_VALUE = 20;
+  public static final int ITEM_CATEGORY_VS_SEEKER_VALUE = 20;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCIDENT_TICKET = 21;</code>
+   * <code>ITEM_CATEGORY_INCIDENT_TICKET = 21;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCIDENT_TICKET_VALUE = 21;
+  public static final int ITEM_CATEGORY_INCIDENT_TICKET_VALUE = 21;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_GLOBAL_EVENT_TICKET = 22;</code>
+   * <code>ITEM_CATEGORY_GLOBAL_EVENT_TICKET = 22;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_GLOBAL_EVENT_TICKET_VALUE = 22;
+  public static final int ITEM_CATEGORY_GLOBAL_EVENT_TICKET_VALUE = 22;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD = 23;</code>
+   * <code>ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD = 23;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD_VALUE = 23;
+  public static final int ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD_VALUE = 23;
   /**
-   * <code>HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STICKER = 24;</code>
+   * <code>ITEM_CATEGORY_STICKER = 24;</code>
    */
-  public static final int HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STICKER_VALUE = 24;
+  public static final int ITEM_CATEGORY_STICKER_VALUE = 24;
 
 
   public final int getNumber() {
@@ -233,30 +229,30 @@ public enum HoloItemCategory
    */
   public static HoloItemCategory forNumber(int value) {
     switch (value) {
-      case 0: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_NONE;
-      case 1: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_POKEBALL;
-      case 2: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_FOOD;
-      case 3: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_MEDICINE;
-      case 4: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BOOST;
-      case 5: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_UTILITES;
-      case 6: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CAMERA;
-      case 7: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_DISK;
-      case 8: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCUBATOR;
-      case 9: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCENSE;
-      case 10: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_XP_BOOST;
-      case 11: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INVENTORY_UPGRADE;
-      case 12: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_EVOLUTION_REQUIREMENT;
-      case 13: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_MOVE_REROLL;
-      case 14: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_CANDY;
-      case 15: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_RAID_TICKET;
-      case 16: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STARDUST_BOOST;
-      case 17: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_FRIEND_GIFT_BOX;
-      case 18: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_TEAM_CHANGE;
-      case 20: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_VS_SEEKER;
-      case 21: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_INCIDENT_TICKET;
-      case 22: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_GLOBAL_EVENT_TICKET;
-      case 23: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD;
-      case 24: return HOLO_ITEM_CATEGORY_ITEM_CATEGORY_STICKER;
+      case 0: return ITEM_CATEGORY_NONE;
+      case 1: return ITEM_CATEGORY_POKEBALL;
+      case 2: return ITEM_CATEGORY_FOOD;
+      case 3: return ITEM_CATEGORY_MEDICINE;
+      case 4: return ITEM_CATEGORY_BOOST;
+      case 5: return ITEM_CATEGORY_UTILITES;
+      case 6: return ITEM_CATEGORY_CAMERA;
+      case 7: return ITEM_CATEGORY_DISK;
+      case 8: return ITEM_CATEGORY_INCUBATOR;
+      case 9: return ITEM_CATEGORY_INCENSE;
+      case 10: return ITEM_CATEGORY_XP_BOOST;
+      case 11: return ITEM_CATEGORY_INVENTORY_UPGRADE;
+      case 12: return ITEM_CATEGORY_EVOLUTION_REQUIREMENT;
+      case 13: return ITEM_CATEGORY_MOVE_REROLL;
+      case 14: return ITEM_CATEGORY_CANDY;
+      case 15: return ITEM_CATEGORY_RAID_TICKET;
+      case 16: return ITEM_CATEGORY_STARDUST_BOOST;
+      case 17: return ITEM_CATEGORY_FRIEND_GIFT_BOX;
+      case 18: return ITEM_CATEGORY_TEAM_CHANGE;
+      case 20: return ITEM_CATEGORY_VS_SEEKER;
+      case 21: return ITEM_CATEGORY_INCIDENT_TICKET;
+      case 22: return ITEM_CATEGORY_GLOBAL_EVENT_TICKET;
+      case 23: return ITEM_CATEGORY_BUDDY_EXCLUSIVE_FOOD;
+      case 24: return ITEM_CATEGORY_STICKER;
       default: return null;
     }
   }
@@ -275,10 +271,6 @@ public enum HoloItemCategory
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -287,7 +279,7 @@ public enum HoloItemCategory
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(100);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(50);
   }
 
   private static final HoloItemCategory[] VALUES = values();

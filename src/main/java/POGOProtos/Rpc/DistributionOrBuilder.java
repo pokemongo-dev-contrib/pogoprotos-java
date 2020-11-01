@@ -8,67 +8,67 @@ public interface DistributionOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>int64 knbllicccna = 1;</code>
-   * @return The knbllicccna.
+   * <code>int64 aihjjphknom = 1;</code>
+   * @return The aihjjphknom.
    */
-  long getKnbllicccna();
+  long getAihjjphknom();
 
   /**
-   * <code>float ifacdfjiome = 2;</code>
-   * @return The ifacdfjiome.
+   * <code>float aomahjohbck = 2;</code>
+   * @return The aomahjohbck.
    */
-  float getIfacdfjiome();
+  float getAomahjohbck();
 
   /**
-   * <code>double ohabfmlahmf = 3;</code>
-   * @return The ohabfmlahmf.
+   * <code>double hgmgodopggi = 3;</code>
+   * @return The hgmgodopggi.
    */
-  double getOhabfmlahmf();
+  double getHgmgodopggi();
 
   /**
-   * <code>.POGOProtos.Rpc.Distribution.Range lgljcbgoafk = 4;</code>
-   * @return Whether the lgljcbgoafk field is set.
+   * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+   * @return Whether the lpjkbabbpdd field is set.
    */
-  boolean hasLgljcbgoafk();
+  boolean hasLpjkbabbpdd();
   /**
-   * <code>.POGOProtos.Rpc.Distribution.Range lgljcbgoafk = 4;</code>
-   * @return The lgljcbgoafk.
+   * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
+   * @return The lpjkbabbpdd.
    */
-  POGOProtos.Rpc.Distribution.Range getLgljcbgoafk();
+  POGOProtos.Rpc.Distribution.KDJNFIHPPHE getLpjkbabbpdd();
   /**
-   * <code>.POGOProtos.Rpc.Distribution.Range lgljcbgoafk = 4;</code>
+   * <code>.POGOProtos.Rpc.Distribution.KDJNFIHPPHE lpjkbabbpdd = 4;</code>
    */
-  POGOProtos.Rpc.Distribution.RangeOrBuilder getLgljcbgoafkOrBuilder();
+  POGOProtos.Rpc.Distribution.KDJNFIHPPHEOrBuilder getLpjkbabbpddOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.Distribution.BICJJPIDPGI dfkfkdeakhc = 5;</code>
-   * @return Whether the dfkfkdeakhc field is set.
+   * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
+   * @return Whether the aljmnfihoml field is set.
    */
-  boolean hasDfkfkdeakhc();
+  boolean hasAljmnfihoml();
   /**
-   * <code>.POGOProtos.Rpc.Distribution.BICJJPIDPGI dfkfkdeakhc = 5;</code>
-   * @return The dfkfkdeakhc.
+   * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
+   * @return The aljmnfihoml.
    */
-  POGOProtos.Rpc.Distribution.BICJJPIDPGI getDfkfkdeakhc();
+  POGOProtos.Rpc.Distribution.ONAOLNOFLKC getAljmnfihoml();
   /**
-   * <code>.POGOProtos.Rpc.Distribution.BICJJPIDPGI dfkfkdeakhc = 5;</code>
+   * <code>.POGOProtos.Rpc.Distribution.ONAOLNOFLKC aljmnfihoml = 5;</code>
    */
-  POGOProtos.Rpc.Distribution.BICJJPIDPGIOrBuilder getDfkfkdeakhcOrBuilder();
+  POGOProtos.Rpc.Distribution.ONAOLNOFLKCOrBuilder getAljmnfihomlOrBuilder();
 
   /**
-   * <code>repeated int64 alkdgndopmj = 6;</code>
-   * @return A list containing the alkdgndopmj.
+   * <code>repeated int64 naochkkocio = 6;</code>
+   * @return A list containing the naochkkocio.
    */
-  java.util.List<java.lang.Long> getAlkdgndopmjList();
+  java.util.List<java.lang.Long> getNaochkkocioList();
   /**
-   * <code>repeated int64 alkdgndopmj = 6;</code>
-   * @return The count of alkdgndopmj.
+   * <code>repeated int64 naochkkocio = 6;</code>
+   * @return The count of naochkkocio.
    */
-  int getAlkdgndopmjCount();
+  int getNaochkkocioCount();
   /**
-   * <code>repeated int64 alkdgndopmj = 6;</code>
+   * <code>repeated int64 naochkkocio = 6;</code>
    * @param index The index of the element to return.
-   * @return The alkdgndopmj at the given index.
+   * @return The naochkkocio at the given index.
    */
-  long getAlkdgndopmj(int index);
+  long getNaochkkocio(int index);
 }

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Iap.Protos.RedeemGoogleReceiptOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.RedeemGoogleReceiptOutProto}
  */
-public final class RedeemGoogleReceiptOutProto extends
+public  final class RedeemGoogleReceiptOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.RedeemGoogleReceiptOutProto)
     RedeemGoogleReceiptOutProtoOrBuilder {
@@ -100,7 +96,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Iap.Protos.RedeemGoogleReceiptOutProto/Types/Status
+   * ref: Niantic.Platform.Iap.Protos.RedeemGoogleReceiptOutProto.Types.Status
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status}
@@ -181,10 +177,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -225,14 +217,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status status = 1;</code>
    * @return The enum numeric value on the wire for status.
    */
-  @java.lang.Override public int getStatusValue() {
+  public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status status = 1;</code>
    * @return The status.
    */
-  @java.lang.Override public POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status getStatus() {
+  public POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status result = POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status.valueOf(status_);
     return result == null ? POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status.UNRECOGNIZED : result;
@@ -244,7 +236,6 @@ private static final long serialVersionUID = 0L;
    * <code>string transaction_token = 2;</code>
    * @return The transactionToken.
    */
-  @java.lang.Override
   public java.lang.String getTransactionToken() {
     java.lang.Object ref = transactionToken_;
     if (ref instanceof java.lang.String) {
@@ -261,7 +252,6 @@ private static final long serialVersionUID = 0L;
    * <code>string transaction_token = 2;</code>
    * @return The bytes for transactionToken.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getTransactionTokenBytes() {
     java.lang.Object ref = transactionToken_;
@@ -441,10 +431,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Iap.Protos.RedeemGoogleReceiptOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.RedeemGoogleReceiptOutProto}
    */
   public static final class Builder extends
@@ -603,7 +589,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    public int getStatusValue() {
       return status_;
     }
     /**
@@ -612,7 +598,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
-      
       status_ = value;
       onChanged();
       return this;
@@ -621,7 +606,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status status = 1;</code>
      * @return The status.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status result = POGOProtos.Rpc.RedeemGoogleReceiptOutProto.Status.valueOf(status_);

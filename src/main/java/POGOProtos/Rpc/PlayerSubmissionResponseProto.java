@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.PlayerSubmissionResponseProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.PlayerSubmissionResponseProto}
  */
-public final class PlayerSubmissionResponseProto extends
+public  final class PlayerSubmissionResponseProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PlayerSubmissionResponseProto)
     PlayerSubmissionResponseProtoOrBuilder {
@@ -114,7 +110,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Titan.Protos.PlayerSubmissionResponseProto/Types/Status
+   * ref: Niantic.Titan.Protos.PlayerSubmissionResponseProto.Types.Status
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.PlayerSubmissionResponseProto.Status}
@@ -249,10 +245,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -293,14 +285,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.PlayerSubmissionResponseProto.Status status = 1;</code>
    * @return The enum numeric value on the wire for status.
    */
-  @java.lang.Override public int getStatusValue() {
+  public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.PlayerSubmissionResponseProto.Status status = 1;</code>
    * @return The status.
    */
-  @java.lang.Override public POGOProtos.Rpc.PlayerSubmissionResponseProto.Status getStatus() {
+  public POGOProtos.Rpc.PlayerSubmissionResponseProto.Status getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.PlayerSubmissionResponseProto.Status result = POGOProtos.Rpc.PlayerSubmissionResponseProto.Status.valueOf(status_);
     return result == null ? POGOProtos.Rpc.PlayerSubmissionResponseProto.Status.UNRECOGNIZED : result;
@@ -312,7 +304,6 @@ private static final long serialVersionUID = 0L;
    * <code>string submission_id = 2;</code>
    * @return The submissionId.
    */
-  @java.lang.Override
   public java.lang.String getSubmissionId() {
     java.lang.Object ref = submissionId_;
     if (ref instanceof java.lang.String) {
@@ -329,7 +320,6 @@ private static final long serialVersionUID = 0L;
    * <code>string submission_id = 2;</code>
    * @return The bytes for submissionId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getSubmissionIdBytes() {
     java.lang.Object ref = submissionId_;
@@ -561,10 +551,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.PlayerSubmissionResponseProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.PlayerSubmissionResponseProto}
    */
   public static final class Builder extends
@@ -742,7 +728,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PlayerSubmissionResponseProto.Status status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    public int getStatusValue() {
       return status_;
     }
     /**
@@ -751,7 +737,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
-      
       status_ = value;
       onChanged();
       return this;
@@ -760,7 +745,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PlayerSubmissionResponseProto.Status status = 1;</code>
      * @return The status.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.PlayerSubmissionResponseProto.Status getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.PlayerSubmissionResponseProto.Status result = POGOProtos.Rpc.PlayerSubmissionResponseProto.Status.valueOf(status_);

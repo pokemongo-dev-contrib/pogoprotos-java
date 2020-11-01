@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.UpdateNotificationOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.UpdateNotificationOutProto}
  */
-public final class UpdateNotificationOutProto extends
+public  final class UpdateNotificationOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UpdateNotificationOutProto)
     UpdateNotificationOutProtoOrBuilder {
@@ -229,10 +225,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.UpdateNotificationOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.UpdateNotificationOutProto}
    */
   public static final class Builder extends

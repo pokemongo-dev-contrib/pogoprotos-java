@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: PlatformPlayerLocaleProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.PlatformPlayerLocaleProto}
  */
-public final class PlatformPlayerLocaleProto extends
+public  final class PlatformPlayerLocaleProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PlatformPlayerLocaleProto)
     PlatformPlayerLocaleProtoOrBuilder {
@@ -111,7 +107,6 @@ private static final long serialVersionUID = 0L;
    * <code>string country = 1;</code>
    * @return The country.
    */
-  @java.lang.Override
   public java.lang.String getCountry() {
     java.lang.Object ref = country_;
     if (ref instanceof java.lang.String) {
@@ -128,7 +123,6 @@ private static final long serialVersionUID = 0L;
    * <code>string country = 1;</code>
    * @return The bytes for country.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getCountryBytes() {
     java.lang.Object ref = country_;
@@ -149,7 +143,6 @@ private static final long serialVersionUID = 0L;
    * <code>string language = 2;</code>
    * @return The language.
    */
-  @java.lang.Override
   public java.lang.String getLanguage() {
     java.lang.Object ref = language_;
     if (ref instanceof java.lang.String) {
@@ -166,7 +159,6 @@ private static final long serialVersionUID = 0L;
    * <code>string language = 2;</code>
    * @return The bytes for language.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getLanguageBytes() {
     java.lang.Object ref = language_;
@@ -187,7 +179,6 @@ private static final long serialVersionUID = 0L;
    * <code>string timezone = 3;</code>
    * @return The timezone.
    */
-  @java.lang.Override
   public java.lang.String getTimezone() {
     java.lang.Object ref = timezone_;
     if (ref instanceof java.lang.String) {
@@ -204,7 +195,6 @@ private static final long serialVersionUID = 0L;
    * <code>string timezone = 3;</code>
    * @return The bytes for timezone.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getTimezoneBytes() {
     java.lang.Object ref = timezone_;
@@ -394,10 +384,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: PlatformPlayerLocaleProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.PlatformPlayerLocaleProto}
    */
   public static final class Builder extends

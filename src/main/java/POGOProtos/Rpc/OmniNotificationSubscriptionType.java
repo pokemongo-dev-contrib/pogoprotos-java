@@ -4,13 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End map -----
- *------------------------------
- *----- Begin notifications -----
- * ref: Niantic.Platform.Marketing.Notifications.OmniNotificationSubscriptionType
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.OmniNotificationSubscriptionType}
  */
 public enum OmniNotificationSubscriptionType
@@ -89,10 +82,6 @@ public enum OmniNotificationSubscriptionType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -101,7 +90,7 @@ public enum OmniNotificationSubscriptionType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(13);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(87);
   }
 
   private static final OmniNotificationSubscriptionType[] VALUES = values();

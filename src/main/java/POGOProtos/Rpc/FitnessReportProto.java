@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: FitnessReportProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.FitnessReportProto}
  */
-public final class FitnessReportProto extends
+public  final class FitnessReportProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.FitnessReportProto)
     FitnessReportProtoOrBuilder {
@@ -159,7 +155,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 day_offset_from_now = 1;</code>
    * @return The dayOffsetFromNow.
    */
-  @java.lang.Override
   public int getDayOffsetFromNow() {
     if (windowCase_ == 1) {
       return (java.lang.Integer) window_;
@@ -172,7 +167,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 week_offset_from_now = 2;</code>
    * @return The weekOffsetFromNow.
    */
-  @java.lang.Override
   public int getWeekOffsetFromNow() {
     if (windowCase_ == 2) {
       return (java.lang.Integer) window_;
@@ -186,7 +180,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.FitnessMetricsProto metrics = 3;</code>
    * @return Whether the metrics field is set.
    */
-  @java.lang.Override
   public boolean hasMetrics() {
     return metrics_ != null;
   }
@@ -194,14 +187,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.FitnessMetricsProto metrics = 3;</code>
    * @return The metrics.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.FitnessMetricsProto getMetrics() {
     return metrics_ == null ? POGOProtos.Rpc.FitnessMetricsProto.getDefaultInstance() : metrics_;
   }
   /**
    * <code>.POGOProtos.Rpc.FitnessMetricsProto metrics = 3;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.FitnessMetricsProtoOrBuilder getMetricsOrBuilder() {
     return getMetrics();
   }
@@ -212,7 +203,6 @@ private static final long serialVersionUID = 0L;
    * <code>bytes game_data = 4;</code>
    * @return The gameData.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString getGameData() {
     return gameData_;
   }
@@ -432,10 +422,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: FitnessReportProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.FitnessReportProto}
    */
   public static final class Builder extends
@@ -825,7 +811,6 @@ private static final long serialVersionUID = 0L;
      * <code>bytes game_data = 4;</code>
      * @return The gameData.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getGameData() {
       return gameData_;
     }

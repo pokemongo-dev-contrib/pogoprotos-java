@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.SubmitPoiImageProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SubmitPoiImageProto}
  */
-public final class SubmitPoiImageProto extends
+public  final class SubmitPoiImageProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SubmitPoiImageProto)
     SubmitPoiImageProtoOrBuilder {
@@ -102,7 +98,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The poiId.
    */
-  @java.lang.Override
   public java.lang.String getPoiId() {
     java.lang.Object ref = poiId_;
     if (ref instanceof java.lang.String) {
@@ -119,7 +114,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The bytes for poiId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPoiIdBytes() {
     java.lang.Object ref = poiId_;
@@ -140,7 +134,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool async_file_upload = 2;</code>
    * @return The asyncFileUpload.
    */
-  @java.lang.Override
   public boolean getAsyncFileUpload() {
     return asyncFileUpload_;
   }
@@ -312,10 +305,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.SubmitPoiImageProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SubmitPoiImageProto}
    */
   public static final class Builder extends
@@ -550,7 +539,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool async_file_upload = 2;</code>
      * @return The asyncFileUpload.
      */
-    @java.lang.Override
     public boolean getAsyncFileUpload() {
       return asyncFileUpload_;
     }

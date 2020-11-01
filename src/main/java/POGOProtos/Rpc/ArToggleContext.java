@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: FIAGLMKNJIE
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.ArToggleContext}
  */
 public enum ArToggleContext
@@ -68,10 +64,6 @@ public enum ArToggleContext
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -80,7 +72,7 @@ public enum ArToggleContext
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(68);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(7);
   }
 
   private static final ArToggleContext[] VALUES = values();

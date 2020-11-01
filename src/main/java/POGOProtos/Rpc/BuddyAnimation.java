@@ -4,41 +4,37 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: JNCBFPJBLJL
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.BuddyAnimation}
  */
 public enum BuddyAnimation
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>BUDDY_ANIMATION_BUDDY_ANIMATION_UNSET = 0;</code>
+   * <code>BUDDY_ANIMATION_UNSET = 0;</code>
    */
-  BUDDY_ANIMATION_BUDDY_ANIMATION_UNSET(0),
+  BUDDY_ANIMATION_UNSET(0),
   /**
-   * <code>BUDDY_ANIMATION_BUDDY_ANIMATION_HAPPY = 1;</code>
+   * <code>BUDDY_ANIMATION_HAPPY = 1;</code>
    */
-  BUDDY_ANIMATION_BUDDY_ANIMATION_HAPPY(1),
+  BUDDY_ANIMATION_HAPPY(1),
   /**
-   * <code>BUDDY_ANIMATION_BUDDY_ANIMATION_HATE = 2;</code>
+   * <code>BUDDY_ANIMATION_HATE = 2;</code>
    */
-  BUDDY_ANIMATION_BUDDY_ANIMATION_HATE(2),
+  BUDDY_ANIMATION_HATE(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>BUDDY_ANIMATION_BUDDY_ANIMATION_UNSET = 0;</code>
+   * <code>BUDDY_ANIMATION_UNSET = 0;</code>
    */
-  public static final int BUDDY_ANIMATION_BUDDY_ANIMATION_UNSET_VALUE = 0;
+  public static final int BUDDY_ANIMATION_UNSET_VALUE = 0;
   /**
-   * <code>BUDDY_ANIMATION_BUDDY_ANIMATION_HAPPY = 1;</code>
+   * <code>BUDDY_ANIMATION_HAPPY = 1;</code>
    */
-  public static final int BUDDY_ANIMATION_BUDDY_ANIMATION_HAPPY_VALUE = 1;
+  public static final int BUDDY_ANIMATION_HAPPY_VALUE = 1;
   /**
-   * <code>BUDDY_ANIMATION_BUDDY_ANIMATION_HATE = 2;</code>
+   * <code>BUDDY_ANIMATION_HATE = 2;</code>
    */
-  public static final int BUDDY_ANIMATION_BUDDY_ANIMATION_HATE_VALUE = 2;
+  public static final int BUDDY_ANIMATION_HATE_VALUE = 2;
 
 
   public final int getNumber() {
@@ -65,9 +61,9 @@ public enum BuddyAnimation
    */
   public static BuddyAnimation forNumber(int value) {
     switch (value) {
-      case 0: return BUDDY_ANIMATION_BUDDY_ANIMATION_UNSET;
-      case 1: return BUDDY_ANIMATION_BUDDY_ANIMATION_HAPPY;
-      case 2: return BUDDY_ANIMATION_BUDDY_ANIMATION_HATE;
+      case 0: return BUDDY_ANIMATION_UNSET;
+      case 1: return BUDDY_ANIMATION_HAPPY;
+      case 2: return BUDDY_ANIMATION_HATE;
       default: return null;
     }
   }
@@ -86,10 +82,6 @@ public enum BuddyAnimation
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -98,7 +90,7 @@ public enum BuddyAnimation
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(86);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(19);
   }
 
   private static final BuddyAnimation[] VALUES = values();

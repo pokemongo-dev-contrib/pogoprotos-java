@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: BMPJJPMBIIF
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.HoloholoClientTelemetryIds}
  */
 public enum HoloholoClientTelemetryIds
@@ -208,6 +204,10 @@ public enum HoloholoClientTelemetryIds
    * <code>HOLOHOLO_CLIENT_TELEMETRY_IDS_DEVICE_OS_TELEMETRY = 48;</code>
    */
   HOLOHOLO_CLIENT_TELEMETRY_IDS_DEVICE_OS_TELEMETRY(48),
+  /**
+   * <code>HOLOHOLO_CLIENT_TELEMETRY_IDS_POKEMON_HOME_TELEMETRY = 49;</code>
+   */
+  HOLOHOLO_CLIENT_TELEMETRY_IDS_POKEMON_HOME_TELEMETRY(49),
   UNRECOGNIZED(-1),
   ;
 
@@ -407,6 +407,10 @@ public enum HoloholoClientTelemetryIds
    * <code>HOLOHOLO_CLIENT_TELEMETRY_IDS_DEVICE_OS_TELEMETRY = 48;</code>
    */
   public static final int HOLOHOLO_CLIENT_TELEMETRY_IDS_DEVICE_OS_TELEMETRY_VALUE = 48;
+  /**
+   * <code>HOLOHOLO_CLIENT_TELEMETRY_IDS_POKEMON_HOME_TELEMETRY = 49;</code>
+   */
+  public static final int HOLOHOLO_CLIENT_TELEMETRY_IDS_POKEMON_HOME_TELEMETRY_VALUE = 49;
 
 
   public final int getNumber() {
@@ -482,6 +486,7 @@ public enum HoloholoClientTelemetryIds
       case 46: return HOLOHOLO_CLIENT_TELEMETRY_IDS_DEVICE_SPECIFICATIONS_TELEMETRY;
       case 47: return HOLOHOLO_CLIENT_TELEMETRY_IDS_SCREEN_RESOLUTION_TELEMETRY;
       case 48: return HOLOHOLO_CLIENT_TELEMETRY_IDS_DEVICE_OS_TELEMETRY;
+      case 49: return HOLOHOLO_CLIENT_TELEMETRY_IDS_POKEMON_HOME_TELEMETRY;
       default: return null;
     }
   }
@@ -500,10 +505,6 @@ public enum HoloholoClientTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -512,7 +513,7 @@ public enum HoloholoClientTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(33);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(62);
   }
 
   private static final HoloholoClientTelemetryIds[] VALUES = values();

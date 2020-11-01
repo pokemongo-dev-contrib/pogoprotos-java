@@ -4,73 +4,69 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: DBLFPEBFJGH
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.RaidLevel}
  */
 public enum RaidLevel
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_UNSET = 0;</code>
+   * <code>RAID_LEVEL_UNSET = 0;</code>
    */
-  RAID_LEVEL_RAID_LEVEL_UNSET(0),
+  RAID_LEVEL_UNSET(0),
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_1 = 1;</code>
+   * <code>RAID_LEVEL_1 = 1;</code>
    */
-  RAID_LEVEL_RAID_LEVEL_1(1),
+  RAID_LEVEL_1(1),
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_2 = 2;</code>
+   * <code>RAID_LEVEL_2 = 2;</code>
    */
-  RAID_LEVEL_RAID_LEVEL_2(2),
+  RAID_LEVEL_2(2),
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_3 = 3;</code>
+   * <code>RAID_LEVEL_3 = 3;</code>
    */
-  RAID_LEVEL_RAID_LEVEL_3(3),
+  RAID_LEVEL_3(3),
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_4 = 4;</code>
+   * <code>RAID_LEVEL_4 = 4;</code>
    */
-  RAID_LEVEL_RAID_LEVEL_4(4),
+  RAID_LEVEL_4(4),
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_5 = 5;</code>
+   * <code>RAID_LEVEL_5 = 5;</code>
    */
-  RAID_LEVEL_RAID_LEVEL_5(5),
+  RAID_LEVEL_5(5),
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_MEGA = 6;</code>
+   * <code>RAID_LEVEL_MEGA = 6;</code>
    */
-  RAID_LEVEL_RAID_LEVEL_MEGA(6),
+  RAID_LEVEL_MEGA(6),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_UNSET = 0;</code>
+   * <code>RAID_LEVEL_UNSET = 0;</code>
    */
-  public static final int RAID_LEVEL_RAID_LEVEL_UNSET_VALUE = 0;
+  public static final int RAID_LEVEL_UNSET_VALUE = 0;
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_1 = 1;</code>
+   * <code>RAID_LEVEL_1 = 1;</code>
    */
-  public static final int RAID_LEVEL_RAID_LEVEL_1_VALUE = 1;
+  public static final int RAID_LEVEL_1_VALUE = 1;
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_2 = 2;</code>
+   * <code>RAID_LEVEL_2 = 2;</code>
    */
-  public static final int RAID_LEVEL_RAID_LEVEL_2_VALUE = 2;
+  public static final int RAID_LEVEL_2_VALUE = 2;
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_3 = 3;</code>
+   * <code>RAID_LEVEL_3 = 3;</code>
    */
-  public static final int RAID_LEVEL_RAID_LEVEL_3_VALUE = 3;
+  public static final int RAID_LEVEL_3_VALUE = 3;
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_4 = 4;</code>
+   * <code>RAID_LEVEL_4 = 4;</code>
    */
-  public static final int RAID_LEVEL_RAID_LEVEL_4_VALUE = 4;
+  public static final int RAID_LEVEL_4_VALUE = 4;
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_5 = 5;</code>
+   * <code>RAID_LEVEL_5 = 5;</code>
    */
-  public static final int RAID_LEVEL_RAID_LEVEL_5_VALUE = 5;
+  public static final int RAID_LEVEL_5_VALUE = 5;
   /**
-   * <code>RAID_LEVEL_RAID_LEVEL_MEGA = 6;</code>
+   * <code>RAID_LEVEL_MEGA = 6;</code>
    */
-  public static final int RAID_LEVEL_RAID_LEVEL_MEGA_VALUE = 6;
+  public static final int RAID_LEVEL_MEGA_VALUE = 6;
 
 
   public final int getNumber() {
@@ -97,13 +93,13 @@ public enum RaidLevel
    */
   public static RaidLevel forNumber(int value) {
     switch (value) {
-      case 0: return RAID_LEVEL_RAID_LEVEL_UNSET;
-      case 1: return RAID_LEVEL_RAID_LEVEL_1;
-      case 2: return RAID_LEVEL_RAID_LEVEL_2;
-      case 3: return RAID_LEVEL_RAID_LEVEL_3;
-      case 4: return RAID_LEVEL_RAID_LEVEL_4;
-      case 5: return RAID_LEVEL_RAID_LEVEL_5;
-      case 6: return RAID_LEVEL_RAID_LEVEL_MEGA;
+      case 0: return RAID_LEVEL_UNSET;
+      case 1: return RAID_LEVEL_1;
+      case 2: return RAID_LEVEL_2;
+      case 3: return RAID_LEVEL_3;
+      case 4: return RAID_LEVEL_4;
+      case 5: return RAID_LEVEL_5;
+      case 6: return RAID_LEVEL_MEGA;
       default: return null;
     }
   }
@@ -122,10 +118,6 @@ public enum RaidLevel
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -134,7 +126,7 @@ public enum RaidLevel
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(42);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(124);
   }
 
   private static final RaidLevel[] VALUES = values();

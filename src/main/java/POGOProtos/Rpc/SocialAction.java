@@ -4,13 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End protos -----
- *------------------------------
- *----- Begin protos -----
- * ref: Niantic.Social.Protos.SocialAction
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.SocialAction}
  */
 public enum SocialAction
@@ -422,10 +415,6 @@ public enum SocialAction
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -434,7 +423,7 @@ public enum SocialAction
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(143);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(134);
   }
 
   private static final SocialAction[] VALUES = values();

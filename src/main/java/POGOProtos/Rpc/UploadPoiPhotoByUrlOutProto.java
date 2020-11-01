@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.UploadPoiPhotoByUrlOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.UploadPoiPhotoByUrlOutProto}
  */
-public final class UploadPoiPhotoByUrlOutProto extends
+public  final class UploadPoiPhotoByUrlOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UploadPoiPhotoByUrlOutProto)
     UploadPoiPhotoByUrlOutProtoOrBuilder {
@@ -97,14 +93,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.PortalCurationImageResult.Result status = 1;</code>
    * @return The enum numeric value on the wire for status.
    */
-  @java.lang.Override public int getStatusValue() {
+  public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.PortalCurationImageResult.Result status = 1;</code>
    * @return The status.
    */
-  @java.lang.Override public POGOProtos.Rpc.PortalCurationImageResult.Result getStatus() {
+  public POGOProtos.Rpc.PortalCurationImageResult.Result getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.PortalCurationImageResult.Result result = POGOProtos.Rpc.PortalCurationImageResult.Result.valueOf(status_);
     return result == null ? POGOProtos.Rpc.PortalCurationImageResult.Result.UNRECOGNIZED : result;
@@ -265,10 +261,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.UploadPoiPhotoByUrlOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.UploadPoiPhotoByUrlOutProto}
    */
   public static final class Builder extends
@@ -420,7 +412,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PortalCurationImageResult.Result status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    public int getStatusValue() {
       return status_;
     }
     /**
@@ -429,7 +421,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
-      
       status_ = value;
       onChanged();
       return this;
@@ -438,7 +429,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PortalCurationImageResult.Result status = 1;</code>
      * @return The status.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.PortalCurationImageResult.Result getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.PortalCurationImageResult.Result result = POGOProtos.Rpc.PortalCurationImageResult.Result.valueOf(status_);

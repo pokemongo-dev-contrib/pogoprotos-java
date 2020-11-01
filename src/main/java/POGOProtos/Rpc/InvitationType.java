@@ -4,13 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End proto -----
- *------------------------------
- *----- Begin protos -----
- * ref: Niantic.Platform.Protos.InvitationType
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.InvitationType}
  */
 public enum InvitationType
@@ -107,10 +100,6 @@ public enum InvitationType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -119,7 +108,7 @@ public enum InvitationType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(136);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(73);
   }
 
   private static final InvitationType[] VALUES = values();

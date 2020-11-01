@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: PHOBEELAMEN
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.PokedexGenerationId}
  */
 public enum PokedexGenerationId
@@ -158,10 +154,6 @@ public enum PokedexGenerationId
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -170,7 +162,7 @@ public enum PokedexGenerationId
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(130);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(111);
   }
 
   private static final PokedexGenerationId[] VALUES = values();

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Analytics.Telemetry.InGamePurchaseDetails
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.InGamePurchaseDetails}
  */
-public final class InGamePurchaseDetails extends
+public  final class InGamePurchaseDetails extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.InGamePurchaseDetails)
     InGamePurchaseDetailsOrBuilder {
@@ -107,7 +103,6 @@ private static final long serialVersionUID = 0L;
    * <code>string ingame_type = 1;</code>
    * @return The ingameType.
    */
-  @java.lang.Override
   public java.lang.String getIngameType() {
     java.lang.Object ref = ingameType_;
     if (ref instanceof java.lang.String) {
@@ -124,7 +119,6 @@ private static final long serialVersionUID = 0L;
    * <code>string ingame_type = 1;</code>
    * @return The bytes for ingameType.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getIngameTypeBytes() {
     java.lang.Object ref = ingameType_;
@@ -145,7 +139,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 ingame_price = 2;</code>
    * @return The ingamePrice.
    */
-  @java.lang.Override
   public long getIngamePrice() {
     return ingamePrice_;
   }
@@ -156,7 +149,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 remaining_ingame_balance = 3;</code>
    * @return The remainingIngameBalance.
    */
-  @java.lang.Override
   public long getRemainingIngameBalance() {
     return remainingIngameBalance_;
   }
@@ -340,10 +332,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Analytics.Telemetry.InGamePurchaseDetails
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.InGamePurchaseDetails}
    */
   public static final class Builder extends
@@ -584,7 +572,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 ingame_price = 2;</code>
      * @return The ingamePrice.
      */
-    @java.lang.Override
     public long getIngamePrice() {
       return ingamePrice_;
     }
@@ -615,7 +602,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 remaining_ingame_balance = 3;</code>
      * @return The remainingIngameBalance.
      */
-    @java.lang.Override
     public long getRemainingIngameBalance() {
       return remainingIngameBalance_;
     }

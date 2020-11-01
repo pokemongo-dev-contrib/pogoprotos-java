@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Analytics.Telemetry.ServerRecordMetadata
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.ServerRecordMetadata}
  */
-public final class ServerRecordMetadata extends
+public  final class ServerRecordMetadata extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ServerRecordMetadata)
     ServerRecordMetadataOrBuilder {
@@ -123,7 +119,6 @@ private static final long serialVersionUID = 0L;
    * <code>string user_id = 1;</code>
    * @return The userId.
    */
-  @java.lang.Override
   public java.lang.String getUserId() {
     java.lang.Object ref = userId_;
     if (ref instanceof java.lang.String) {
@@ -140,7 +135,6 @@ private static final long serialVersionUID = 0L;
    * <code>string user_id = 1;</code>
    * @return The bytes for userId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getUserIdBytes() {
     java.lang.Object ref = userId_;
@@ -161,7 +155,6 @@ private static final long serialVersionUID = 0L;
    * <code>string telemetry_name = 2;</code>
    * @return The telemetryName.
    */
-  @java.lang.Override
   public java.lang.String getTelemetryName() {
     java.lang.Object ref = telemetryName_;
     if (ref instanceof java.lang.String) {
@@ -178,7 +171,6 @@ private static final long serialVersionUID = 0L;
    * <code>string telemetry_name = 2;</code>
    * @return The bytes for telemetryName.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getTelemetryNameBytes() {
     java.lang.Object ref = telemetryName_;
@@ -199,7 +191,6 @@ private static final long serialVersionUID = 0L;
    * <code>string session_id = 3;</code>
    * @return The sessionId.
    */
-  @java.lang.Override
   public java.lang.String getSessionId() {
     java.lang.Object ref = sessionId_;
     if (ref instanceof java.lang.String) {
@@ -216,7 +207,6 @@ private static final long serialVersionUID = 0L;
    * <code>string session_id = 3;</code>
    * @return The bytes for sessionId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getSessionIdBytes() {
     java.lang.Object ref = sessionId_;
@@ -237,7 +227,6 @@ private static final long serialVersionUID = 0L;
    * <code>string request_id = 4;</code>
    * @return The requestId.
    */
-  @java.lang.Override
   public java.lang.String getRequestId() {
     java.lang.Object ref = requestId_;
     if (ref instanceof java.lang.String) {
@@ -254,7 +243,6 @@ private static final long serialVersionUID = 0L;
    * <code>string request_id = 4;</code>
    * @return The bytes for requestId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getRequestIdBytes() {
     java.lang.Object ref = requestId_;
@@ -275,7 +263,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 server_timestamp_ms = 5;</code>
    * @return The serverTimestampMs.
    */
-  @java.lang.Override
   public long getServerTimestampMs() {
     return serverTimestampMs_;
   }
@@ -477,10 +464,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Analytics.Telemetry.ServerRecordMetadata
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.ServerRecordMetadata}
    */
   public static final class Builder extends
@@ -964,7 +947,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 server_timestamp_ms = 5;</code>
      * @return The serverTimestampMs.
      */
-    @java.lang.Override
     public long getServerTimestampMs() {
       return serverTimestampMs_;
     }

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetFriendDetailsResponse
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetFriendDetailsResponse}
  */
-public final class GetFriendDetailsResponse extends
+public  final class GetFriendDetailsResponse extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFriendDetailsResponse)
     GetFriendDetailsResponseOrBuilder {
@@ -107,7 +103,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendDetailsResponse/Types/Result
+   * ref: Niantic.Platform.Protos.GetFriendDetailsResponse.Types.Result
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GetFriendDetailsResponse.Result}
@@ -197,10 +193,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -282,19 +274,19 @@ private static final long serialVersionUID = 0L;
     POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProtoOrBuilder getPlayerStatusOrBuilder();
 
     /**
-     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
      * @return Whether the callingGameData field is set.
      */
     boolean hasCallingGameData();
     /**
-     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
      * @return The callingGameData.
      */
-    POGOProtos.Rpc.PlatformFriendDetailsProto getCallingGameData();
+    POGOProtos.Rpc.FriendDetailsProto getCallingGameData();
     /**
-     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
      */
-    POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder getCallingGameDataOrBuilder();
+    POGOProtos.Rpc.FriendDetailsProtoOrBuilder getCallingGameDataOrBuilder();
 
     /**
      * <code>.POGOProtos.Rpc.SocialV2Enum.InvitationStatus invitation_status = 5;</code>
@@ -309,12 +301,12 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendDetailsResponse/Types/FriendDetailsEntryProto
+   * ref: Niantic.Platform.Protos.GetFriendDetailsResponse.Types.FriendDetailsEntryProto
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProto}
    */
-  public static final class FriendDetailsEntryProto extends
+  public  static final class FriendDetailsEntryProto extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProto)
       FriendDetailsEntryProtoOrBuilder {
@@ -391,11 +383,11 @@ private static final long serialVersionUID = 0L;
               break;
             }
             case 34: {
-              POGOProtos.Rpc.PlatformFriendDetailsProto.Builder subBuilder = null;
+              POGOProtos.Rpc.FriendDetailsProto.Builder subBuilder = null;
               if (callingGameData_ != null) {
                 subBuilder = callingGameData_.toBuilder();
               }
-              callingGameData_ = input.readMessage(POGOProtos.Rpc.PlatformFriendDetailsProto.parser(), extensionRegistry);
+              callingGameData_ = input.readMessage(POGOProtos.Rpc.FriendDetailsProto.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(callingGameData_);
                 callingGameData_ = subBuilder.buildPartial();
@@ -447,7 +439,6 @@ private static final long serialVersionUID = 0L;
      * <code>string player_id = 1;</code>
      * @return The playerId.
      */
-    @java.lang.Override
     public java.lang.String getPlayerId() {
       java.lang.Object ref = playerId_;
       if (ref instanceof java.lang.String) {
@@ -464,7 +455,6 @@ private static final long serialVersionUID = 0L;
      * <code>string player_id = 1;</code>
      * @return The bytes for playerId.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getPlayerIdBytes() {
       java.lang.Object ref = playerId_;
@@ -485,7 +475,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.ProfileDetailsProto profile = 2;</code>
      * @return Whether the profile field is set.
      */
-    @java.lang.Override
     public boolean hasProfile() {
       return profile_ != null;
     }
@@ -493,14 +482,12 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.ProfileDetailsProto profile = 2;</code>
      * @return The profile.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.ProfileDetailsProto getProfile() {
       return profile_ == null ? POGOProtos.Rpc.ProfileDetailsProto.getDefaultInstance() : profile_;
     }
     /**
      * <code>.POGOProtos.Rpc.ProfileDetailsProto profile = 2;</code>
      */
-    @java.lang.Override
     public POGOProtos.Rpc.ProfileDetailsProtoOrBuilder getProfileOrBuilder() {
       return getProfile();
     }
@@ -511,7 +498,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto player_status = 3;</code>
      * @return Whether the playerStatus field is set.
      */
-    @java.lang.Override
     public boolean hasPlayerStatus() {
       return playerStatus_ != null;
     }
@@ -519,41 +505,36 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto player_status = 3;</code>
      * @return The playerStatus.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto getPlayerStatus() {
       return playerStatus_ == null ? POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.getDefaultInstance() : playerStatus_;
     }
     /**
      * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto player_status = 3;</code>
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProtoOrBuilder getPlayerStatusOrBuilder() {
       return getPlayerStatus();
     }
 
     public static final int CALLING_GAME_DATA_FIELD_NUMBER = 4;
-    private POGOProtos.Rpc.PlatformFriendDetailsProto callingGameData_;
+    private POGOProtos.Rpc.FriendDetailsProto callingGameData_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
      * @return Whether the callingGameData field is set.
      */
-    @java.lang.Override
     public boolean hasCallingGameData() {
       return callingGameData_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
      * @return The callingGameData.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PlatformFriendDetailsProto getCallingGameData() {
-      return callingGameData_ == null ? POGOProtos.Rpc.PlatformFriendDetailsProto.getDefaultInstance() : callingGameData_;
+    public POGOProtos.Rpc.FriendDetailsProto getCallingGameData() {
+      return callingGameData_ == null ? POGOProtos.Rpc.FriendDetailsProto.getDefaultInstance() : callingGameData_;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+     * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder getCallingGameDataOrBuilder() {
+    public POGOProtos.Rpc.FriendDetailsProtoOrBuilder getCallingGameDataOrBuilder() {
       return getCallingGameData();
     }
 
@@ -563,14 +544,14 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.SocialV2Enum.InvitationStatus invitation_status = 5;</code>
      * @return The enum numeric value on the wire for invitationStatus.
      */
-    @java.lang.Override public int getInvitationStatusValue() {
+    public int getInvitationStatusValue() {
       return invitationStatus_;
     }
     /**
      * <code>.POGOProtos.Rpc.SocialV2Enum.InvitationStatus invitation_status = 5;</code>
      * @return The invitationStatus.
      */
-    @java.lang.Override public POGOProtos.Rpc.SocialV2Enum.InvitationStatus getInvitationStatus() {
+    public POGOProtos.Rpc.SocialV2Enum.InvitationStatus getInvitationStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.SocialV2Enum.InvitationStatus result = POGOProtos.Rpc.SocialV2Enum.InvitationStatus.valueOf(invitationStatus_);
       return result == null ? POGOProtos.Rpc.SocialV2Enum.InvitationStatus.UNRECOGNIZED : result;
@@ -790,7 +771,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.GetFriendDetailsResponse/Types/FriendDetailsEntryProto
+     * ref: Niantic.Platform.Protos.GetFriendDetailsResponse.Types.FriendDetailsEntryProto
      * </pre>
      *
      * Protobuf type {@code POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProto}
@@ -1302,31 +1283,31 @@ private static final long serialVersionUID = 0L;
         return playerStatusBuilder_;
       }
 
-      private POGOProtos.Rpc.PlatformFriendDetailsProto callingGameData_;
+      private POGOProtos.Rpc.FriendDetailsProto callingGameData_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.PlatformFriendDetailsProto, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder, POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder> callingGameDataBuilder_;
+          POGOProtos.Rpc.FriendDetailsProto, POGOProtos.Rpc.FriendDetailsProto.Builder, POGOProtos.Rpc.FriendDetailsProtoOrBuilder> callingGameDataBuilder_;
       /**
-       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
        * @return Whether the callingGameData field is set.
        */
       public boolean hasCallingGameData() {
         return callingGameDataBuilder_ != null || callingGameData_ != null;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
        * @return The callingGameData.
        */
-      public POGOProtos.Rpc.PlatformFriendDetailsProto getCallingGameData() {
+      public POGOProtos.Rpc.FriendDetailsProto getCallingGameData() {
         if (callingGameDataBuilder_ == null) {
-          return callingGameData_ == null ? POGOProtos.Rpc.PlatformFriendDetailsProto.getDefaultInstance() : callingGameData_;
+          return callingGameData_ == null ? POGOProtos.Rpc.FriendDetailsProto.getDefaultInstance() : callingGameData_;
         } else {
           return callingGameDataBuilder_.getMessage();
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
        */
-      public Builder setCallingGameData(POGOProtos.Rpc.PlatformFriendDetailsProto value) {
+      public Builder setCallingGameData(POGOProtos.Rpc.FriendDetailsProto value) {
         if (callingGameDataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1340,10 +1321,10 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
        */
       public Builder setCallingGameData(
-          POGOProtos.Rpc.PlatformFriendDetailsProto.Builder builderForValue) {
+          POGOProtos.Rpc.FriendDetailsProto.Builder builderForValue) {
         if (callingGameDataBuilder_ == null) {
           callingGameData_ = builderForValue.build();
           onChanged();
@@ -1354,13 +1335,13 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
        */
-      public Builder mergeCallingGameData(POGOProtos.Rpc.PlatformFriendDetailsProto value) {
+      public Builder mergeCallingGameData(POGOProtos.Rpc.FriendDetailsProto value) {
         if (callingGameDataBuilder_ == null) {
           if (callingGameData_ != null) {
             callingGameData_ =
-              POGOProtos.Rpc.PlatformFriendDetailsProto.newBuilder(callingGameData_).mergeFrom(value).buildPartial();
+              POGOProtos.Rpc.FriendDetailsProto.newBuilder(callingGameData_).mergeFrom(value).buildPartial();
           } else {
             callingGameData_ = value;
           }
@@ -1372,7 +1353,7 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
        */
       public Builder clearCallingGameData() {
         if (callingGameDataBuilder_ == null) {
@@ -1386,33 +1367,33 @@ private static final long serialVersionUID = 0L;
         return this;
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
        */
-      public POGOProtos.Rpc.PlatformFriendDetailsProto.Builder getCallingGameDataBuilder() {
+      public POGOProtos.Rpc.FriendDetailsProto.Builder getCallingGameDataBuilder() {
         
         onChanged();
         return getCallingGameDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
        */
-      public POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder getCallingGameDataOrBuilder() {
+      public POGOProtos.Rpc.FriendDetailsProtoOrBuilder getCallingGameDataOrBuilder() {
         if (callingGameDataBuilder_ != null) {
           return callingGameDataBuilder_.getMessageOrBuilder();
         } else {
           return callingGameData_ == null ?
-              POGOProtos.Rpc.PlatformFriendDetailsProto.getDefaultInstance() : callingGameData_;
+              POGOProtos.Rpc.FriendDetailsProto.getDefaultInstance() : callingGameData_;
         }
       }
       /**
-       * <code>.POGOProtos.Rpc.PlatformFriendDetailsProto calling_game_data = 4;</code>
+       * <code>.POGOProtos.Rpc.FriendDetailsProto calling_game_data = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          POGOProtos.Rpc.PlatformFriendDetailsProto, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder, POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder> 
+          POGOProtos.Rpc.FriendDetailsProto, POGOProtos.Rpc.FriendDetailsProto.Builder, POGOProtos.Rpc.FriendDetailsProtoOrBuilder> 
           getCallingGameDataFieldBuilder() {
         if (callingGameDataBuilder_ == null) {
           callingGameDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              POGOProtos.Rpc.PlatformFriendDetailsProto, POGOProtos.Rpc.PlatformFriendDetailsProto.Builder, POGOProtos.Rpc.PlatformFriendDetailsProtoOrBuilder>(
+              POGOProtos.Rpc.FriendDetailsProto, POGOProtos.Rpc.FriendDetailsProto.Builder, POGOProtos.Rpc.FriendDetailsProtoOrBuilder>(
                   getCallingGameData(),
                   getParentForChildren(),
                   isClean());
@@ -1426,7 +1407,7 @@ private static final long serialVersionUID = 0L;
        * <code>.POGOProtos.Rpc.SocialV2Enum.InvitationStatus invitation_status = 5;</code>
        * @return The enum numeric value on the wire for invitationStatus.
        */
-      @java.lang.Override public int getInvitationStatusValue() {
+      public int getInvitationStatusValue() {
         return invitationStatus_;
       }
       /**
@@ -1435,7 +1416,6 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setInvitationStatusValue(int value) {
-        
         invitationStatus_ = value;
         onChanged();
         return this;
@@ -1444,7 +1424,6 @@ private static final long serialVersionUID = 0L;
        * <code>.POGOProtos.Rpc.SocialV2Enum.InvitationStatus invitation_status = 5;</code>
        * @return The invitationStatus.
        */
-      @java.lang.Override
       public POGOProtos.Rpc.SocialV2Enum.InvitationStatus getInvitationStatus() {
         @SuppressWarnings("deprecation")
         POGOProtos.Rpc.SocialV2Enum.InvitationStatus result = POGOProtos.Rpc.SocialV2Enum.InvitationStatus.valueOf(invitationStatus_);
@@ -1582,12 +1561,12 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendDetailsResponse/Types/PlayerStatusDetailsProto
+   * ref: Niantic.Platform.Protos.GetFriendDetailsResponse.Types.PlayerStatusDetailsProto
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto}
    */
-  public static final class PlayerStatusDetailsProto extends
+  public  static final class PlayerStatusDetailsProto extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto)
       PlayerStatusDetailsProtoOrBuilder {
@@ -1697,7 +1676,7 @@ private static final long serialVersionUID = 0L;
 
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.GetFriendDetailsResponse/Types/PlayerStatusDetailsProto/Types/Result
+     * ref: Niantic.Platform.Protos.GetFriendDetailsResponse.Types.PlayerStatusDetailsProto.Types.Result
      * </pre>
      *
      * Protobuf enum {@code POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result}
@@ -1796,10 +1775,6 @@ private static final long serialVersionUID = 0L;
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -1840,14 +1815,14 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    public int getResultValue() {
       return result_;
     }
     /**
      * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
      * @return The result.
      */
-    @java.lang.Override public POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result getResult() {
+    public POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result.valueOf(result_);
       return result == null ? POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result.UNRECOGNIZED : result;
@@ -1859,7 +1834,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
      * @return Whether the locale field is set.
      */
-    @java.lang.Override
     public boolean hasLocale() {
       return locale_ != null;
     }
@@ -1867,14 +1841,12 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
      * @return The locale.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.PlatformPlayerLocaleProto getLocale() {
       return locale_ == null ? POGOProtos.Rpc.PlatformPlayerLocaleProto.getDefaultInstance() : locale_;
     }
     /**
      * <code>.POGOProtos.Rpc.PlatformPlayerLocaleProto locale = 2;</code>
      */
-    @java.lang.Override
     public POGOProtos.Rpc.PlatformPlayerLocaleProtoOrBuilder getLocaleOrBuilder() {
       return getLocale();
     }
@@ -1885,14 +1857,14 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.SocialV2Enum.OnlineStatus online_status = 3;</code>
      * @return The enum numeric value on the wire for onlineStatus.
      */
-    @java.lang.Override public int getOnlineStatusValue() {
+    public int getOnlineStatusValue() {
       return onlineStatus_;
     }
     /**
      * <code>.POGOProtos.Rpc.SocialV2Enum.OnlineStatus online_status = 3;</code>
      * @return The onlineStatus.
      */
-    @java.lang.Override public POGOProtos.Rpc.SocialV2Enum.OnlineStatus getOnlineStatus() {
+    public POGOProtos.Rpc.SocialV2Enum.OnlineStatus getOnlineStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.SocialV2Enum.OnlineStatus result = POGOProtos.Rpc.SocialV2Enum.OnlineStatus.valueOf(onlineStatus_);
       return result == null ? POGOProtos.Rpc.SocialV2Enum.OnlineStatus.UNRECOGNIZED : result;
@@ -1904,7 +1876,6 @@ private static final long serialVersionUID = 0L;
      * <code>string last_played_app_key = 4;</code>
      * @return The lastPlayedAppKey.
      */
-    @java.lang.Override
     public java.lang.String getLastPlayedAppKey() {
       java.lang.Object ref = lastPlayedAppKey_;
       if (ref instanceof java.lang.String) {
@@ -1921,7 +1892,6 @@ private static final long serialVersionUID = 0L;
      * <code>string last_played_app_key = 4;</code>
      * @return The bytes for lastPlayedAppKey.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getLastPlayedAppKeyBytes() {
       java.lang.Object ref = lastPlayedAppKey_;
@@ -2128,7 +2098,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.GetFriendDetailsResponse/Types/PlayerStatusDetailsProto
+     * ref: Niantic.Platform.Protos.GetFriendDetailsResponse.Types.PlayerStatusDetailsProto
      * </pre>
      *
      * Protobuf type {@code POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto}
@@ -2309,7 +2279,7 @@ private static final long serialVersionUID = 0L;
        * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
        * @return The enum numeric value on the wire for result.
        */
-      @java.lang.Override public int getResultValue() {
+      public int getResultValue() {
         return result_;
       }
       /**
@@ -2318,7 +2288,6 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setResultValue(int value) {
-        
         result_ = value;
         onChanged();
         return this;
@@ -2327,7 +2296,6 @@ private static final long serialVersionUID = 0L;
        * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = 1;</code>
        * @return The result.
        */
-      @java.lang.Override
       public POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result getResult() {
         @SuppressWarnings("deprecation")
         POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result result = POGOProtos.Rpc.GetFriendDetailsResponse.PlayerStatusDetailsProto.Result.valueOf(result_);
@@ -2482,7 +2450,7 @@ private static final long serialVersionUID = 0L;
        * <code>.POGOProtos.Rpc.SocialV2Enum.OnlineStatus online_status = 3;</code>
        * @return The enum numeric value on the wire for onlineStatus.
        */
-      @java.lang.Override public int getOnlineStatusValue() {
+      public int getOnlineStatusValue() {
         return onlineStatus_;
       }
       /**
@@ -2491,7 +2459,6 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setOnlineStatusValue(int value) {
-        
         onlineStatus_ = value;
         onChanged();
         return this;
@@ -2500,7 +2467,6 @@ private static final long serialVersionUID = 0L;
        * <code>.POGOProtos.Rpc.SocialV2Enum.OnlineStatus online_status = 3;</code>
        * @return The onlineStatus.
        */
-      @java.lang.Override
       public POGOProtos.Rpc.SocialV2Enum.OnlineStatus getOnlineStatus() {
         @SuppressWarnings("deprecation")
         POGOProtos.Rpc.SocialV2Enum.OnlineStatus result = POGOProtos.Rpc.SocialV2Enum.OnlineStatus.valueOf(onlineStatus_);
@@ -2665,14 +2631,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.Result result = 1;</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  public int getResultValue() {
     return result_;
   }
   /**
    * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.Result result = 1;</code>
    * @return The result.
    */
-  @java.lang.Override public POGOProtos.Rpc.GetFriendDetailsResponse.Result getResult() {
+  public POGOProtos.Rpc.GetFriendDetailsResponse.Result getResult() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GetFriendDetailsResponse.Result result = POGOProtos.Rpc.GetFriendDetailsResponse.Result.valueOf(result_);
     return result == null ? POGOProtos.Rpc.GetFriendDetailsResponse.Result.UNRECOGNIZED : result;
@@ -2683,14 +2649,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProto friend_details = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProto> getFriendDetailsList() {
     return friendDetails_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProto friend_details = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProtoOrBuilder> 
       getFriendDetailsOrBuilderList() {
     return friendDetails_;
@@ -2698,21 +2662,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProto friend_details = 2;</code>
    */
-  @java.lang.Override
   public int getFriendDetailsCount() {
     return friendDetails_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProto friend_details = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProto getFriendDetails(int index) {
     return friendDetails_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProto friend_details = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GetFriendDetailsResponse.FriendDetailsEntryProtoOrBuilder getFriendDetailsOrBuilder(
       int index) {
     return friendDetails_.get(index);
@@ -2886,10 +2847,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendDetailsResponse
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetFriendDetailsResponse}
    */
   public static final class Builder extends
@@ -3085,7 +3042,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    public int getResultValue() {
       return result_;
     }
     /**
@@ -3094,7 +3051,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResultValue(int value) {
-      
       result_ = value;
       onChanged();
       return this;
@@ -3103,7 +3059,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendDetailsResponse.Result result = 1;</code>
      * @return The result.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetFriendDetailsResponse.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetFriendDetailsResponse.Result result = POGOProtos.Rpc.GetFriendDetailsResponse.Result.valueOf(result_);

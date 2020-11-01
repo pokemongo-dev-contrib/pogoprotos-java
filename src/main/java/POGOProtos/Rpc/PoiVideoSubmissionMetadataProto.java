@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.PoiVideoSubmissionMetadataProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.PoiVideoSubmissionMetadataProto}
  */
-public final class PoiVideoSubmissionMetadataProto extends
+public  final class PoiVideoSubmissionMetadataProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PoiVideoSubmissionMetadataProto)
     PoiVideoSubmissionMetadataProtoOrBuilder {
@@ -115,7 +111,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The poiId.
    */
-  @java.lang.Override
   public java.lang.String getPoiId() {
     java.lang.Object ref = poiId_;
     if (ref instanceof java.lang.String) {
@@ -132,7 +127,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The bytes for poiId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPoiIdBytes() {
     java.lang.Object ref = poiId_;
@@ -153,7 +147,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.LocationE6Proto location = 2;</code>
    * @return Whether the location field is set.
    */
-  @java.lang.Override
   public boolean hasLocation() {
     return location_ != null;
   }
@@ -161,14 +154,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.LocationE6Proto location = 2;</code>
    * @return The location.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.LocationE6Proto getLocation() {
     return location_ == null ? POGOProtos.Rpc.LocationE6Proto.getDefaultInstance() : location_;
   }
   /**
    * <code>.POGOProtos.Rpc.LocationE6Proto location = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.LocationE6ProtoOrBuilder getLocationOrBuilder() {
     return getLocation();
   }
@@ -179,7 +170,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 player_level = 3;</code>
    * @return The playerLevel.
    */
-  @java.lang.Override
   public int getPlayerLevel() {
     return playerLevel_;
   }
@@ -366,10 +356,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.PoiVideoSubmissionMetadataProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.PoiVideoSubmissionMetadataProto}
    */
   public static final class Builder extends
@@ -737,7 +723,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 player_level = 3;</code>
      * @return The playerLevel.
      */
-    @java.lang.Override
     public int getPlayerLevel() {
       return playerLevel_;
     }

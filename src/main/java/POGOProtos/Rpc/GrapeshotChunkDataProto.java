@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GrapeshotChunkDataProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GrapeshotChunkDataProto}
  */
-public final class GrapeshotChunkDataProto extends
+public  final class GrapeshotChunkDataProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GrapeshotChunkDataProto)
     GrapeshotChunkDataProtoOrBuilder {
@@ -128,7 +124,6 @@ private static final long serialVersionUID = 0L;
    * <code>string chunk_file_path = 1;</code>
    * @return The chunkFilePath.
    */
-  @java.lang.Override
   public java.lang.String getChunkFilePath() {
     java.lang.Object ref = chunkFilePath_;
     if (ref instanceof java.lang.String) {
@@ -145,7 +140,6 @@ private static final long serialVersionUID = 0L;
    * <code>string chunk_file_path = 1;</code>
    * @return The bytes for chunkFilePath.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getChunkFilePathBytes() {
     java.lang.Object ref = chunkFilePath_;
@@ -166,7 +160,6 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 chunk_number = 2;</code>
    * @return The chunkNumber.
    */
-  @java.lang.Override
   public int getChunkNumber() {
     return chunkNumber_;
   }
@@ -177,7 +170,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GrapeshotAuthenticationDataProto upload_authentication = 3;</code>
    * @return Whether the uploadAuthentication field is set.
    */
-  @java.lang.Override
   public boolean hasUploadAuthentication() {
     return uploadAuthentication_ != null;
   }
@@ -185,14 +177,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GrapeshotAuthenticationDataProto upload_authentication = 3;</code>
    * @return The uploadAuthentication.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GrapeshotAuthenticationDataProto getUploadAuthentication() {
     return uploadAuthentication_ == null ? POGOProtos.Rpc.GrapeshotAuthenticationDataProto.getDefaultInstance() : uploadAuthentication_;
   }
   /**
    * <code>.POGOProtos.Rpc.GrapeshotAuthenticationDataProto upload_authentication = 3;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GrapeshotAuthenticationDataProtoOrBuilder getUploadAuthenticationOrBuilder() {
     return getUploadAuthentication();
   }
@@ -203,7 +193,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GrapeshotAuthenticationDataProto delete_authentication = 4;</code>
    * @return Whether the deleteAuthentication field is set.
    */
-  @java.lang.Override
   public boolean hasDeleteAuthentication() {
     return deleteAuthentication_ != null;
   }
@@ -211,14 +200,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GrapeshotAuthenticationDataProto delete_authentication = 4;</code>
    * @return The deleteAuthentication.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GrapeshotAuthenticationDataProto getDeleteAuthentication() {
     return deleteAuthentication_ == null ? POGOProtos.Rpc.GrapeshotAuthenticationDataProto.getDefaultInstance() : deleteAuthentication_;
   }
   /**
    * <code>.POGOProtos.Rpc.GrapeshotAuthenticationDataProto delete_authentication = 4;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GrapeshotAuthenticationDataProtoOrBuilder getDeleteAuthenticationOrBuilder() {
     return getDeleteAuthentication();
   }
@@ -421,10 +408,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GrapeshotChunkDataProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GrapeshotChunkDataProto}
    */
   public static final class Builder extends
@@ -687,7 +670,6 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 chunk_number = 2;</code>
      * @return The chunkNumber.
      */
-    @java.lang.Override
     public int getChunkNumber() {
       return chunkNumber_;
     }

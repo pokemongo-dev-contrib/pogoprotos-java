@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetFriendCodeOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetFriendCodeOutProto}
  */
-public final class GetFriendCodeOutProto extends
+public  final class GetFriendCodeOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFriendCodeOutProto)
     GetFriendCodeOutProtoOrBuilder {
@@ -100,7 +96,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendCodeOutProto/Types/Result
+   * ref: Niantic.Platform.Protos.GetFriendCodeOutProto.Types.Result
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GetFriendCodeOutProto.Result}
@@ -172,10 +168,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -216,14 +208,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GetFriendCodeOutProto.Result result = 1;</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  public int getResultValue() {
     return result_;
   }
   /**
    * <code>.POGOProtos.Rpc.GetFriendCodeOutProto.Result result = 1;</code>
    * @return The result.
    */
-  @java.lang.Override public POGOProtos.Rpc.GetFriendCodeOutProto.Result getResult() {
+  public POGOProtos.Rpc.GetFriendCodeOutProto.Result getResult() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GetFriendCodeOutProto.Result result = POGOProtos.Rpc.GetFriendCodeOutProto.Result.valueOf(result_);
     return result == null ? POGOProtos.Rpc.GetFriendCodeOutProto.Result.UNRECOGNIZED : result;
@@ -235,7 +227,6 @@ private static final long serialVersionUID = 0L;
    * <code>string friend_code = 2;</code>
    * @return The friendCode.
    */
-  @java.lang.Override
   public java.lang.String getFriendCode() {
     java.lang.Object ref = friendCode_;
     if (ref instanceof java.lang.String) {
@@ -252,7 +243,6 @@ private static final long serialVersionUID = 0L;
    * <code>string friend_code = 2;</code>
    * @return The bytes for friendCode.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getFriendCodeBytes() {
     java.lang.Object ref = friendCode_;
@@ -432,10 +422,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendCodeOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetFriendCodeOutProto}
    */
   public static final class Builder extends
@@ -594,7 +580,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendCodeOutProto.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    public int getResultValue() {
       return result_;
     }
     /**
@@ -603,7 +589,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResultValue(int value) {
-      
       result_ = value;
       onChanged();
       return this;
@@ -612,7 +597,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendCodeOutProto.Result result = 1;</code>
      * @return The result.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetFriendCodeOutProto.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetFriendCodeOutProto.Result result = POGOProtos.Rpc.GetFriendCodeOutProto.Result.valueOf(result_);

@@ -69,27 +69,27 @@ public interface GetAvailableSubmissionsOutProtoOrBuilder extends
       getBlacklistedOsBytes(int index);
 
   /**
-   * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
    */
-  java.util.List<POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType> 
+  java.util.List<POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType> 
       getAvailabilityResultPerTypeList();
   /**
-   * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
    */
-  POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType getAvailabilityResultPerType(int index);
+  POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType getAvailabilityResultPerType(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
    */
   int getAvailabilityResultPerTypeCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionTypeOrBuilder> 
+  java.util.List<? extends POGOProtos.Rpc.AvailableSubmissionsPerSubmissionTypeOrBuilder> 
       getAvailabilityResultPerTypeOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
    */
-  POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionTypeOrBuilder getAvailabilityResultPerTypeOrBuilder(
+  POGOProtos.Rpc.AvailableSubmissionsPerSubmissionTypeOrBuilder getAvailabilityResultPerTypeOrBuilder(
       int index);
 
   /**

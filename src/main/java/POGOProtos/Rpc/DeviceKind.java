@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: PokemonGoPlus.DeviceKind
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.DeviceKind}
  */
 public enum DeviceKind
@@ -77,10 +73,6 @@ public enum DeviceKind
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -89,7 +81,7 @@ public enum DeviceKind
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(15);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(34);
   }
 
   private static final DeviceKind[] VALUES = values();

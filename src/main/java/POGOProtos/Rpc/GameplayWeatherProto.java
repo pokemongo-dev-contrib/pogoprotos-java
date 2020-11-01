@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Rpc.GameplayWeatherProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GameplayWeatherProto}
  */
-public final class GameplayWeatherProto extends
+public  final class GameplayWeatherProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GameplayWeatherProto)
     GameplayWeatherProtoOrBuilder {
@@ -86,7 +82,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Rpc.GameplayWeatherProto/Types/WeatherCondition
+   * ref: Niantic.Rpc.GameplayWeatherProto.Types.WeatherCondition
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GameplayWeatherProto.WeatherCondition}
@@ -212,10 +208,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -395,10 +387,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Rpc.GameplayWeatherProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GameplayWeatherProto}
    */
   public static final class Builder extends

@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: HGIKHFPDIGE
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.IncidentDynamicStringTypes}
  */
 public enum IncidentDynamicStringTypes
@@ -185,10 +181,6 @@ public enum IncidentDynamicStringTypes
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -197,7 +189,7 @@ public enum IncidentDynamicStringTypes
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(79);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(65);
   }
 
   private static final IncidentDynamicStringTypes[] VALUES = values();

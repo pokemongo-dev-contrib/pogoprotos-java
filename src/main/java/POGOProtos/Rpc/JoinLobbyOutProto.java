@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: BPAJDELLNJH
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.JoinLobbyOutProto}
  */
-public final class JoinLobbyOutProto extends
+public  final class JoinLobbyOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.JoinLobbyOutProto)
     JoinLobbyOutProtoOrBuilder {
@@ -20,7 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private JoinLobbyOutProto() {
-    result_ = 0;
+    jbflkcdndlp_ = 0;
   }
 
   @java.lang.Override
@@ -56,18 +52,18 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            result_ = rawValue;
+            jbflkcdndlp_ = rawValue;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.LobbyProto.Builder subBuilder = null;
-            if (fdanacihmef_ != null) {
-              subBuilder = fdanacihmef_.toBuilder();
+            POGOProtos.Rpc.BPABKJEHLMA.Builder subBuilder = null;
+            if (annkadmkhlo_ != null) {
+              subBuilder = annkadmkhlo_.toBuilder();
             }
-            fdanacihmef_ = input.readMessage(POGOProtos.Rpc.LobbyProto.parser(), extensionRegistry);
+            annkadmkhlo_ = input.readMessage(POGOProtos.Rpc.BPABKJEHLMA.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(fdanacihmef_);
-              fdanacihmef_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(annkadmkhlo_);
+              annkadmkhlo_ = subBuilder.buildPartial();
             }
 
             break;
@@ -106,12 +102,12 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: BPAJDELLNJH/ONGBPCMBFDH/KJLCGFKCBLH
+   * ref: JoinLobbyOutProto/GGIFHBJIAGN/FHMOICNOKAD
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.JoinLobbyOutProto.Result}
+   * Protobuf enum {@code POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD}
    */
-  public enum Result
+  public enum FHMOICNOKAD
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNSET = 0;</code>
@@ -252,7 +248,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static Result valueOf(int value) {
+    public static FHMOICNOKAD valueOf(int value) {
       return forNumber(value);
     }
 
@@ -260,7 +256,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static Result forNumber(int value) {
+    public static FHMOICNOKAD forNumber(int value) {
       switch (value) {
         case 0: return UNSET;
         case 1: return SUCCESS;
@@ -281,24 +277,20 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<Result>
+    public static com.google.protobuf.Internal.EnumLiteMap<FHMOICNOKAD>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        Result> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<Result>() {
-            public Result findValueByNumber(int number) {
-              return Result.forNumber(number);
+        FHMOICNOKAD> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<FHMOICNOKAD>() {
+            public FHMOICNOKAD findValueByNumber(int number) {
+              return FHMOICNOKAD.forNumber(number);
             }
           };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -310,9 +302,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.JoinLobbyOutProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final Result[] VALUES = values();
+    private static final FHMOICNOKAD[] VALUES = values();
 
-    public static Result valueOf(
+    public static FHMOICNOKAD valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -326,56 +318,53 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private Result(int value) {
+    private FHMOICNOKAD(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.JoinLobbyOutProto.Result)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD)
   }
 
-  public static final int RESULT_FIELD_NUMBER = 1;
-  private int result_;
+  public static final int JBFLKCDNDLP_FIELD_NUMBER = 1;
+  private int jbflkcdndlp_;
   /**
-   * <code>.POGOProtos.Rpc.JoinLobbyOutProto.Result result = 1;</code>
-   * @return The enum numeric value on the wire for result.
+   * <code>.POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD jbflkcdndlp = 1;</code>
+   * @return The enum numeric value on the wire for jbflkcdndlp.
    */
-  @java.lang.Override public int getResultValue() {
-    return result_;
+  public int getJbflkcdndlpValue() {
+    return jbflkcdndlp_;
   }
   /**
-   * <code>.POGOProtos.Rpc.JoinLobbyOutProto.Result result = 1;</code>
-   * @return The result.
+   * <code>.POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD jbflkcdndlp = 1;</code>
+   * @return The jbflkcdndlp.
    */
-  @java.lang.Override public POGOProtos.Rpc.JoinLobbyOutProto.Result getResult() {
+  public POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD getJbflkcdndlp() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.JoinLobbyOutProto.Result result = POGOProtos.Rpc.JoinLobbyOutProto.Result.valueOf(result_);
-    return result == null ? POGOProtos.Rpc.JoinLobbyOutProto.Result.UNRECOGNIZED : result;
+    POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD result = POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD.valueOf(jbflkcdndlp_);
+    return result == null ? POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD.UNRECOGNIZED : result;
   }
 
-  public static final int FDANACIHMEF_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.LobbyProto fdanacihmef_;
+  public static final int ANNKADMKHLO_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo_;
   /**
-   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
-   * @return Whether the fdanacihmef field is set.
+   * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
+   * @return Whether the annkadmkhlo field is set.
    */
-  @java.lang.Override
-  public boolean hasFdanacihmef() {
-    return fdanacihmef_ != null;
+  public boolean hasAnnkadmkhlo() {
+    return annkadmkhlo_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
-   * @return The fdanacihmef.
+   * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
+   * @return The annkadmkhlo.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.LobbyProto getFdanacihmef() {
-    return fdanacihmef_ == null ? POGOProtos.Rpc.LobbyProto.getDefaultInstance() : fdanacihmef_;
+  public POGOProtos.Rpc.BPABKJEHLMA getAnnkadmkhlo() {
+    return annkadmkhlo_ == null ? POGOProtos.Rpc.BPABKJEHLMA.getDefaultInstance() : annkadmkhlo_;
   }
   /**
-   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
+   * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.LobbyProtoOrBuilder getFdanacihmefOrBuilder() {
-    return getFdanacihmef();
+  public POGOProtos.Rpc.BPABKJEHLMAOrBuilder getAnnkadmkhloOrBuilder() {
+    return getAnnkadmkhlo();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -392,11 +381,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (result_ != POGOProtos.Rpc.JoinLobbyOutProto.Result.UNSET.getNumber()) {
-      output.writeEnum(1, result_);
+    if (jbflkcdndlp_ != POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD.UNSET.getNumber()) {
+      output.writeEnum(1, jbflkcdndlp_);
     }
-    if (fdanacihmef_ != null) {
-      output.writeMessage(2, getFdanacihmef());
+    if (annkadmkhlo_ != null) {
+      output.writeMessage(2, getAnnkadmkhlo());
     }
     unknownFields.writeTo(output);
   }
@@ -407,13 +396,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (result_ != POGOProtos.Rpc.JoinLobbyOutProto.Result.UNSET.getNumber()) {
+    if (jbflkcdndlp_ != POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, result_);
+        .computeEnumSize(1, jbflkcdndlp_);
     }
-    if (fdanacihmef_ != null) {
+    if (annkadmkhlo_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getFdanacihmef());
+        .computeMessageSize(2, getAnnkadmkhlo());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -430,11 +419,11 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.JoinLobbyOutProto other = (POGOProtos.Rpc.JoinLobbyOutProto) obj;
 
-    if (result_ != other.result_) return false;
-    if (hasFdanacihmef() != other.hasFdanacihmef()) return false;
-    if (hasFdanacihmef()) {
-      if (!getFdanacihmef()
-          .equals(other.getFdanacihmef())) return false;
+    if (jbflkcdndlp_ != other.jbflkcdndlp_) return false;
+    if (hasAnnkadmkhlo() != other.hasAnnkadmkhlo()) return false;
+    if (hasAnnkadmkhlo()) {
+      if (!getAnnkadmkhlo()
+          .equals(other.getAnnkadmkhlo())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -447,11 +436,11 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + RESULT_FIELD_NUMBER;
-    hash = (53 * hash) + result_;
-    if (hasFdanacihmef()) {
-      hash = (37 * hash) + FDANACIHMEF_FIELD_NUMBER;
-      hash = (53 * hash) + getFdanacihmef().hashCode();
+    hash = (37 * hash) + JBFLKCDNDLP_FIELD_NUMBER;
+    hash = (53 * hash) + jbflkcdndlp_;
+    if (hasAnnkadmkhlo()) {
+      hash = (37 * hash) + ANNKADMKHLO_FIELD_NUMBER;
+      hash = (53 * hash) + getAnnkadmkhlo().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -549,10 +538,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: BPAJDELLNJH
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.JoinLobbyOutProto}
    */
   public static final class Builder extends
@@ -590,13 +575,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      result_ = 0;
+      jbflkcdndlp_ = 0;
 
-      if (fdanacihmefBuilder_ == null) {
-        fdanacihmef_ = null;
+      if (annkadmkhloBuilder_ == null) {
+        annkadmkhlo_ = null;
       } else {
-        fdanacihmef_ = null;
-        fdanacihmefBuilder_ = null;
+        annkadmkhlo_ = null;
+        annkadmkhloBuilder_ = null;
       }
       return this;
     }
@@ -624,11 +609,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.JoinLobbyOutProto buildPartial() {
       POGOProtos.Rpc.JoinLobbyOutProto result = new POGOProtos.Rpc.JoinLobbyOutProto(this);
-      result.result_ = result_;
-      if (fdanacihmefBuilder_ == null) {
-        result.fdanacihmef_ = fdanacihmef_;
+      result.jbflkcdndlp_ = jbflkcdndlp_;
+      if (annkadmkhloBuilder_ == null) {
+        result.annkadmkhlo_ = annkadmkhlo_;
       } else {
-        result.fdanacihmef_ = fdanacihmefBuilder_.build();
+        result.annkadmkhlo_ = annkadmkhloBuilder_.build();
       }
       onBuilt();
       return result;
@@ -678,11 +663,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.JoinLobbyOutProto other) {
       if (other == POGOProtos.Rpc.JoinLobbyOutProto.getDefaultInstance()) return this;
-      if (other.result_ != 0) {
-        setResultValue(other.getResultValue());
+      if (other.jbflkcdndlp_ != 0) {
+        setJbflkcdndlpValue(other.getJbflkcdndlpValue());
       }
-      if (other.hasFdanacihmef()) {
-        mergeFdanacihmef(other.getFdanacihmef());
+      if (other.hasAnnkadmkhlo()) {
+        mergeAnnkadmkhlo(other.getAnnkadmkhlo());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -713,177 +698,175 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int result_ = 0;
+    private int jbflkcdndlp_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.JoinLobbyOutProto.Result result = 1;</code>
-     * @return The enum numeric value on the wire for result.
+     * <code>.POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD jbflkcdndlp = 1;</code>
+     * @return The enum numeric value on the wire for jbflkcdndlp.
      */
-    @java.lang.Override public int getResultValue() {
-      return result_;
+    public int getJbflkcdndlpValue() {
+      return jbflkcdndlp_;
     }
     /**
-     * <code>.POGOProtos.Rpc.JoinLobbyOutProto.Result result = 1;</code>
-     * @param value The enum numeric value on the wire for result to set.
+     * <code>.POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD jbflkcdndlp = 1;</code>
+     * @param value The enum numeric value on the wire for jbflkcdndlp to set.
      * @return This builder for chaining.
      */
-    public Builder setResultValue(int value) {
-      
-      result_ = value;
+    public Builder setJbflkcdndlpValue(int value) {
+      jbflkcdndlp_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JoinLobbyOutProto.Result result = 1;</code>
-     * @return The result.
+     * <code>.POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD jbflkcdndlp = 1;</code>
+     * @return The jbflkcdndlp.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.JoinLobbyOutProto.Result getResult() {
+    public POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD getJbflkcdndlp() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.JoinLobbyOutProto.Result result = POGOProtos.Rpc.JoinLobbyOutProto.Result.valueOf(result_);
-      return result == null ? POGOProtos.Rpc.JoinLobbyOutProto.Result.UNRECOGNIZED : result;
+      POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD result = POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD.valueOf(jbflkcdndlp_);
+      return result == null ? POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.JoinLobbyOutProto.Result result = 1;</code>
-     * @param value The result to set.
+     * <code>.POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD jbflkcdndlp = 1;</code>
+     * @param value The jbflkcdndlp to set.
      * @return This builder for chaining.
      */
-    public Builder setResult(POGOProtos.Rpc.JoinLobbyOutProto.Result value) {
+    public Builder setJbflkcdndlp(POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      result_ = value.getNumber();
+      jbflkcdndlp_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.JoinLobbyOutProto.Result result = 1;</code>
+     * <code>.POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD jbflkcdndlp = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearResult() {
+    public Builder clearJbflkcdndlp() {
       
-      result_ = 0;
+      jbflkcdndlp_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.LobbyProto fdanacihmef_;
+    private POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LobbyProto, POGOProtos.Rpc.LobbyProto.Builder, POGOProtos.Rpc.LobbyProtoOrBuilder> fdanacihmefBuilder_;
+        POGOProtos.Rpc.BPABKJEHLMA, POGOProtos.Rpc.BPABKJEHLMA.Builder, POGOProtos.Rpc.BPABKJEHLMAOrBuilder> annkadmkhloBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
-     * @return Whether the fdanacihmef field is set.
+     * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
+     * @return Whether the annkadmkhlo field is set.
      */
-    public boolean hasFdanacihmef() {
-      return fdanacihmefBuilder_ != null || fdanacihmef_ != null;
+    public boolean hasAnnkadmkhlo() {
+      return annkadmkhloBuilder_ != null || annkadmkhlo_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
-     * @return The fdanacihmef.
+     * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
+     * @return The annkadmkhlo.
      */
-    public POGOProtos.Rpc.LobbyProto getFdanacihmef() {
-      if (fdanacihmefBuilder_ == null) {
-        return fdanacihmef_ == null ? POGOProtos.Rpc.LobbyProto.getDefaultInstance() : fdanacihmef_;
+    public POGOProtos.Rpc.BPABKJEHLMA getAnnkadmkhlo() {
+      if (annkadmkhloBuilder_ == null) {
+        return annkadmkhlo_ == null ? POGOProtos.Rpc.BPABKJEHLMA.getDefaultInstance() : annkadmkhlo_;
       } else {
-        return fdanacihmefBuilder_.getMessage();
+        return annkadmkhloBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
+     * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
      */
-    public Builder setFdanacihmef(POGOProtos.Rpc.LobbyProto value) {
-      if (fdanacihmefBuilder_ == null) {
+    public Builder setAnnkadmkhlo(POGOProtos.Rpc.BPABKJEHLMA value) {
+      if (annkadmkhloBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        fdanacihmef_ = value;
+        annkadmkhlo_ = value;
         onChanged();
       } else {
-        fdanacihmefBuilder_.setMessage(value);
+        annkadmkhloBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
+     * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
      */
-    public Builder setFdanacihmef(
-        POGOProtos.Rpc.LobbyProto.Builder builderForValue) {
-      if (fdanacihmefBuilder_ == null) {
-        fdanacihmef_ = builderForValue.build();
+    public Builder setAnnkadmkhlo(
+        POGOProtos.Rpc.BPABKJEHLMA.Builder builderForValue) {
+      if (annkadmkhloBuilder_ == null) {
+        annkadmkhlo_ = builderForValue.build();
         onChanged();
       } else {
-        fdanacihmefBuilder_.setMessage(builderForValue.build());
+        annkadmkhloBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
+     * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
      */
-    public Builder mergeFdanacihmef(POGOProtos.Rpc.LobbyProto value) {
-      if (fdanacihmefBuilder_ == null) {
-        if (fdanacihmef_ != null) {
-          fdanacihmef_ =
-            POGOProtos.Rpc.LobbyProto.newBuilder(fdanacihmef_).mergeFrom(value).buildPartial();
+    public Builder mergeAnnkadmkhlo(POGOProtos.Rpc.BPABKJEHLMA value) {
+      if (annkadmkhloBuilder_ == null) {
+        if (annkadmkhlo_ != null) {
+          annkadmkhlo_ =
+            POGOProtos.Rpc.BPABKJEHLMA.newBuilder(annkadmkhlo_).mergeFrom(value).buildPartial();
         } else {
-          fdanacihmef_ = value;
+          annkadmkhlo_ = value;
         }
         onChanged();
       } else {
-        fdanacihmefBuilder_.mergeFrom(value);
+        annkadmkhloBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
+     * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
      */
-    public Builder clearFdanacihmef() {
-      if (fdanacihmefBuilder_ == null) {
-        fdanacihmef_ = null;
+    public Builder clearAnnkadmkhlo() {
+      if (annkadmkhloBuilder_ == null) {
+        annkadmkhlo_ = null;
         onChanged();
       } else {
-        fdanacihmef_ = null;
-        fdanacihmefBuilder_ = null;
+        annkadmkhlo_ = null;
+        annkadmkhloBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
+     * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
      */
-    public POGOProtos.Rpc.LobbyProto.Builder getFdanacihmefBuilder() {
+    public POGOProtos.Rpc.BPABKJEHLMA.Builder getAnnkadmkhloBuilder() {
       
       onChanged();
-      return getFdanacihmefFieldBuilder().getBuilder();
+      return getAnnkadmkhloFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
+     * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
      */
-    public POGOProtos.Rpc.LobbyProtoOrBuilder getFdanacihmefOrBuilder() {
-      if (fdanacihmefBuilder_ != null) {
-        return fdanacihmefBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.BPABKJEHLMAOrBuilder getAnnkadmkhloOrBuilder() {
+      if (annkadmkhloBuilder_ != null) {
+        return annkadmkhloBuilder_.getMessageOrBuilder();
       } else {
-        return fdanacihmef_ == null ?
-            POGOProtos.Rpc.LobbyProto.getDefaultInstance() : fdanacihmef_;
+        return annkadmkhlo_ == null ?
+            POGOProtos.Rpc.BPABKJEHLMA.getDefaultInstance() : annkadmkhlo_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
+     * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LobbyProto, POGOProtos.Rpc.LobbyProto.Builder, POGOProtos.Rpc.LobbyProtoOrBuilder> 
-        getFdanacihmefFieldBuilder() {
-      if (fdanacihmefBuilder_ == null) {
-        fdanacihmefBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.LobbyProto, POGOProtos.Rpc.LobbyProto.Builder, POGOProtos.Rpc.LobbyProtoOrBuilder>(
-                getFdanacihmef(),
+        POGOProtos.Rpc.BPABKJEHLMA, POGOProtos.Rpc.BPABKJEHLMA.Builder, POGOProtos.Rpc.BPABKJEHLMAOrBuilder> 
+        getAnnkadmkhloFieldBuilder() {
+      if (annkadmkhloBuilder_ == null) {
+        annkadmkhloBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.BPABKJEHLMA, POGOProtos.Rpc.BPABKJEHLMA.Builder, POGOProtos.Rpc.BPABKJEHLMAOrBuilder>(
+                getAnnkadmkhlo(),
                 getParentForChildren(),
                 isClean());
-        fdanacihmef_ = null;
+        annkadmkhlo_ = null;
       }
-      return fdanacihmefBuilder_;
+      return annkadmkhloBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

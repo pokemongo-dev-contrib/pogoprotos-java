@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Inventory.InventoryItemProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.InventoryItemProto}
  */
-public final class InventoryItemProto extends
+public  final class InventoryItemProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.InventoryItemProto)
     InventoryItemProtoOrBuilder {
@@ -163,7 +159,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
    * @return Whether the deletedItemKey field is set.
    */
-  @java.lang.Override
   public boolean hasDeletedItemKey() {
     return inventoryItemCase_ == 2;
   }
@@ -171,7 +166,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
    * @return The deletedItemKey.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.HoloInventoryKeyProto getDeletedItemKey() {
     if (inventoryItemCase_ == 2) {
        return (POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_;
@@ -181,7 +175,6 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.HoloInventoryKeyProtoOrBuilder getDeletedItemKeyOrBuilder() {
     if (inventoryItemCase_ == 2) {
        return (POGOProtos.Rpc.HoloInventoryKeyProto) inventoryItem_;
@@ -194,7 +187,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
    * @return Whether the item field is set.
    */
-  @java.lang.Override
   public boolean hasItem() {
     return inventoryItemCase_ == 3;
   }
@@ -202,7 +194,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
    * @return The item.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.HoloInventoryItemProto getItem() {
     if (inventoryItemCase_ == 3) {
        return (POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_;
@@ -212,7 +203,6 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.HoloInventoryItemProtoOrBuilder getItemOrBuilder() {
     if (inventoryItemCase_ == 3) {
        return (POGOProtos.Rpc.HoloInventoryItemProto) inventoryItem_;
@@ -226,7 +216,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 modified_timestamp = 1;</code>
    * @return The modifiedTimestamp.
    */
-  @java.lang.Override
   public long getModifiedTimestamp() {
     return modifiedTimestamp_;
   }
@@ -427,10 +416,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Inventory.InventoryItemProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.InventoryItemProto}
    */
   public static final class Builder extends
@@ -628,7 +613,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
      * @return Whether the deletedItemKey field is set.
      */
-    @java.lang.Override
     public boolean hasDeletedItemKey() {
       return inventoryItemCase_ == 2;
     }
@@ -636,7 +620,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
      * @return The deletedItemKey.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.HoloInventoryKeyProto getDeletedItemKey() {
       if (deletedItemKeyBuilder_ == null) {
         if (inventoryItemCase_ == 2) {
@@ -730,7 +713,6 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.POGOProtos.Rpc.HoloInventoryKeyProto deleted_item_key = 2;</code>
      */
-    @java.lang.Override
     public POGOProtos.Rpc.HoloInventoryKeyProtoOrBuilder getDeletedItemKeyOrBuilder() {
       if ((inventoryItemCase_ == 2) && (deletedItemKeyBuilder_ != null)) {
         return deletedItemKeyBuilder_.getMessageOrBuilder();
@@ -769,7 +751,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      * @return Whether the item field is set.
      */
-    @java.lang.Override
     public boolean hasItem() {
       return inventoryItemCase_ == 3;
     }
@@ -777,7 +758,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      * @return The item.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.HoloInventoryItemProto getItem() {
       if (itemBuilder_ == null) {
         if (inventoryItemCase_ == 3) {
@@ -871,7 +851,6 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.POGOProtos.Rpc.HoloInventoryItemProto item = 3;</code>
      */
-    @java.lang.Override
     public POGOProtos.Rpc.HoloInventoryItemProtoOrBuilder getItemOrBuilder() {
       if ((inventoryItemCase_ == 3) && (itemBuilder_ != null)) {
         return itemBuilder_.getMessageOrBuilder();
@@ -909,7 +888,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 modified_timestamp = 1;</code>
      * @return The modifiedTimestamp.
      */
-    @java.lang.Override
     public long getModifiedTimestamp() {
       return modifiedTimestamp_;
     }

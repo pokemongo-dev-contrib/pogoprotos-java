@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.UpdateNotificationProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.UpdateNotificationProto}
  */
-public final class UpdateNotificationProto extends
+public  final class UpdateNotificationProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UpdateNotificationProto)
     UpdateNotificationProtoOrBuilder {
@@ -171,7 +167,6 @@ private static final long serialVersionUID = 0L;
    * <code>repeated int64 create_timestamp_ms = 2;</code>
    * @return A list containing the createTimestampMs.
    */
-  @java.lang.Override
   public java.util.List<java.lang.Long>
       getCreateTimestampMsList() {
     return createTimestampMs_;
@@ -199,14 +194,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.NotificationState state = 3;</code>
    * @return The enum numeric value on the wire for state.
    */
-  @java.lang.Override public int getStateValue() {
+  public int getStateValue() {
     return state_;
   }
   /**
    * <code>.POGOProtos.Rpc.NotificationState state = 3;</code>
    * @return The state.
    */
-  @java.lang.Override public POGOProtos.Rpc.NotificationState getState() {
+  public POGOProtos.Rpc.NotificationState getState() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.NotificationState result = POGOProtos.Rpc.NotificationState.valueOf(state_);
     return result == null ? POGOProtos.Rpc.NotificationState.UNRECOGNIZED : result;
@@ -412,10 +407,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.UpdateNotificationProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.UpdateNotificationProto}
    */
   public static final class Builder extends
@@ -792,7 +783,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.NotificationState state = 3;</code>
      * @return The enum numeric value on the wire for state.
      */
-    @java.lang.Override public int getStateValue() {
+    public int getStateValue() {
       return state_;
     }
     /**
@@ -801,7 +792,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStateValue(int value) {
-      
       state_ = value;
       onChanged();
       return this;
@@ -810,7 +800,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.NotificationState state = 3;</code>
      * @return The state.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.NotificationState getState() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.NotificationState result = POGOProtos.Rpc.NotificationState.valueOf(state_);

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GenerateGmapSignedUrlOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GenerateGmapSignedUrlOutProto}
  */
-public final class GenerateGmapSignedUrlOutProto extends
+public  final class GenerateGmapSignedUrlOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GenerateGmapSignedUrlOutProto)
     GenerateGmapSignedUrlOutProtoOrBuilder {
@@ -100,7 +96,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GenerateGmapSignedUrlOutProto/Types/Result
+   * ref: Niantic.Platform.Protos.GenerateGmapSignedUrlOutProto.Types.Result
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result}
@@ -208,10 +204,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -252,14 +244,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result result = 1;</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  public int getResultValue() {
     return result_;
   }
   /**
    * <code>.POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result result = 1;</code>
    * @return The result.
    */
-  @java.lang.Override public POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result getResult() {
+  public POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result getResult() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result result = POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result.valueOf(result_);
     return result == null ? POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result.UNRECOGNIZED : result;
@@ -271,7 +263,6 @@ private static final long serialVersionUID = 0L;
    * <code>string signed_url = 2;</code>
    * @return The signedUrl.
    */
-  @java.lang.Override
   public java.lang.String getSignedUrl() {
     java.lang.Object ref = signedUrl_;
     if (ref instanceof java.lang.String) {
@@ -288,7 +279,6 @@ private static final long serialVersionUID = 0L;
    * <code>string signed_url = 2;</code>
    * @return The bytes for signedUrl.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getSignedUrlBytes() {
     java.lang.Object ref = signedUrl_;
@@ -468,10 +458,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GenerateGmapSignedUrlOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GenerateGmapSignedUrlOutProto}
    */
   public static final class Builder extends
@@ -630,7 +616,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    public int getResultValue() {
       return result_;
     }
     /**
@@ -639,7 +625,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResultValue(int value) {
-      
       result_ = value;
       onChanged();
       return this;
@@ -648,7 +633,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result result = 1;</code>
      * @return The result.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result result = POGOProtos.Rpc.GenerateGmapSignedUrlOutProto.Result.valueOf(result_);

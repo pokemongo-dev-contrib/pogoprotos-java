@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.SearchPlayerProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SearchPlayerProto}
  */
-public final class SearchPlayerProto extends
+public  final class SearchPlayerProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SearchPlayerProto)
     SearchPlayerProtoOrBuilder {
@@ -97,7 +93,6 @@ private static final long serialVersionUID = 0L;
    * <code>string friend_code = 1;</code>
    * @return The friendCode.
    */
-  @java.lang.Override
   public java.lang.String getFriendCode() {
     java.lang.Object ref = friendCode_;
     if (ref instanceof java.lang.String) {
@@ -114,7 +109,6 @@ private static final long serialVersionUID = 0L;
    * <code>string friend_code = 1;</code>
    * @return The bytes for friendCode.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getFriendCodeBytes() {
     java.lang.Object ref = friendCode_;
@@ -284,10 +278,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.SearchPlayerProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SearchPlayerProto}
    */
   public static final class Builder extends

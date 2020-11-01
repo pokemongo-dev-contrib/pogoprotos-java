@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: KICCJIJLEEN
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.IncidentStartContext}
  */
 public enum IncidentStartContext
@@ -86,10 +82,6 @@ public enum IncidentStartContext
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -98,7 +90,7 @@ public enum IncidentStartContext
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(90);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(68);
   }
 
   private static final IncidentStartContext[] VALUES = values();

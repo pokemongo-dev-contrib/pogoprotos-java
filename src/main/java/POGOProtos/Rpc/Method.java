@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: OFALEPLOOAH
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.Method}
  */
 public enum Method
@@ -261,6 +257,10 @@ public enum Method
    */
   METHOD_REDEEM_POI_PASSCODE(170),
   /**
+   * <code>METHOD_CONVERT_CANDY_TO_XL_CANDY = 171;</code>
+   */
+  METHOD_CONVERT_CANDY_TO_XL_CANDY(171),
+  /**
    * <code>METHOD_IS_SKU_AVAILABLE = 172;</code>
    */
   METHOD_IS_SKU_AVAILABLE(172),
@@ -412,6 +412,10 @@ public enum Method
    * <code>METHOD_COMPLETE_QUEST_STAMP_CARD = 905;</code>
    */
   METHOD_COMPLETE_QUEST_STAMP_CARD(905),
+  /**
+   * <code>METHOD_PROGRESS_QUEST = 906;</code>
+   */
+  METHOD_PROGRESS_QUEST(906),
   /**
    * <code>METHOD_SEND_GIFT = 950;</code>
    */
@@ -757,13 +761,53 @@ public enum Method
    */
   METHOD_SAVE_PLAYER_PREFERENCES(1652),
   /**
+   * <code>METHOD_PROFANITY_CHECK = 1653;</code>
+   */
+  METHOD_PROFANITY_CHECK(1653),
+  /**
    * <code>METHOD_GET_TIMED_GROUP_CHALLENGE = 1700;</code>
    */
   METHOD_GET_TIMED_GROUP_CHALLENGE(1700),
   /**
+   * <code>METHOD_GET_NINTENDO_ACCOUNT = 1710;</code>
+   */
+  METHOD_GET_NINTENDO_ACCOUNT(1710),
+  /**
+   * <code>METHOD_UNLINK_NINTENDO_ACCOUNT = 1711;</code>
+   */
+  METHOD_UNLINK_NINTENDO_ACCOUNT(1711),
+  /**
+   * <code>METHOD_GET_NINTENDO_OAUTH2_URL = 1712;</code>
+   */
+  METHOD_GET_NINTENDO_OAUTH2_URL(1712),
+  /**
+   * <code>METHOD_TRANSFER_TO_POKEMON_HOME = 1713;</code>
+   */
+  METHOD_TRANSFER_TO_POKEMON_HOME(1713),
+  /**
    * <code>METHOD_REPORT_AD_FEEDBACK = 1716;</code>
    */
   METHOD_REPORT_AD_FEEDBACK(1716),
+  /**
+   * <code>METHOD_CREATE_POKEMON_TAG = 1717;</code>
+   */
+  METHOD_CREATE_POKEMON_TAG(1717),
+  /**
+   * <code>METHOD_DELETE_POKEMON_TAG = 1718;</code>
+   */
+  METHOD_DELETE_POKEMON_TAG(1718),
+  /**
+   * <code>METHOD_EDIT_POKEMON_TAG = 1719;</code>
+   */
+  METHOD_EDIT_POKEMON_TAG(1719),
+  /**
+   * <code>METHOD_SET_POKEMON_TAGS_FOR_POKEMON = 1720;</code>
+   */
+  METHOD_SET_POKEMON_TAGS_FOR_POKEMON(1720),
+  /**
+   * <code>METHOD_GET_POKEMON_TAGS = 1721;</code>
+   */
+  METHOD_GET_POKEMON_TAGS(1721),
   UNRECOGNIZED(-1),
   ;
 
@@ -1016,6 +1060,10 @@ public enum Method
    */
   public static final int METHOD_REDEEM_POI_PASSCODE_VALUE = 170;
   /**
+   * <code>METHOD_CONVERT_CANDY_TO_XL_CANDY = 171;</code>
+   */
+  public static final int METHOD_CONVERT_CANDY_TO_XL_CANDY_VALUE = 171;
+  /**
    * <code>METHOD_IS_SKU_AVAILABLE = 172;</code>
    */
   public static final int METHOD_IS_SKU_AVAILABLE_VALUE = 172;
@@ -1167,6 +1215,10 @@ public enum Method
    * <code>METHOD_COMPLETE_QUEST_STAMP_CARD = 905;</code>
    */
   public static final int METHOD_COMPLETE_QUEST_STAMP_CARD_VALUE = 905;
+  /**
+   * <code>METHOD_PROGRESS_QUEST = 906;</code>
+   */
+  public static final int METHOD_PROGRESS_QUEST_VALUE = 906;
   /**
    * <code>METHOD_SEND_GIFT = 950;</code>
    */
@@ -1512,13 +1564,53 @@ public enum Method
    */
   public static final int METHOD_SAVE_PLAYER_PREFERENCES_VALUE = 1652;
   /**
+   * <code>METHOD_PROFANITY_CHECK = 1653;</code>
+   */
+  public static final int METHOD_PROFANITY_CHECK_VALUE = 1653;
+  /**
    * <code>METHOD_GET_TIMED_GROUP_CHALLENGE = 1700;</code>
    */
   public static final int METHOD_GET_TIMED_GROUP_CHALLENGE_VALUE = 1700;
   /**
+   * <code>METHOD_GET_NINTENDO_ACCOUNT = 1710;</code>
+   */
+  public static final int METHOD_GET_NINTENDO_ACCOUNT_VALUE = 1710;
+  /**
+   * <code>METHOD_UNLINK_NINTENDO_ACCOUNT = 1711;</code>
+   */
+  public static final int METHOD_UNLINK_NINTENDO_ACCOUNT_VALUE = 1711;
+  /**
+   * <code>METHOD_GET_NINTENDO_OAUTH2_URL = 1712;</code>
+   */
+  public static final int METHOD_GET_NINTENDO_OAUTH2_URL_VALUE = 1712;
+  /**
+   * <code>METHOD_TRANSFER_TO_POKEMON_HOME = 1713;</code>
+   */
+  public static final int METHOD_TRANSFER_TO_POKEMON_HOME_VALUE = 1713;
+  /**
    * <code>METHOD_REPORT_AD_FEEDBACK = 1716;</code>
    */
   public static final int METHOD_REPORT_AD_FEEDBACK_VALUE = 1716;
+  /**
+   * <code>METHOD_CREATE_POKEMON_TAG = 1717;</code>
+   */
+  public static final int METHOD_CREATE_POKEMON_TAG_VALUE = 1717;
+  /**
+   * <code>METHOD_DELETE_POKEMON_TAG = 1718;</code>
+   */
+  public static final int METHOD_DELETE_POKEMON_TAG_VALUE = 1718;
+  /**
+   * <code>METHOD_EDIT_POKEMON_TAG = 1719;</code>
+   */
+  public static final int METHOD_EDIT_POKEMON_TAG_VALUE = 1719;
+  /**
+   * <code>METHOD_SET_POKEMON_TAGS_FOR_POKEMON = 1720;</code>
+   */
+  public static final int METHOD_SET_POKEMON_TAGS_FOR_POKEMON_VALUE = 1720;
+  /**
+   * <code>METHOD_GET_POKEMON_TAGS = 1721;</code>
+   */
+  public static final int METHOD_GET_POKEMON_TAGS_VALUE = 1721;
 
 
   public final int getNumber() {
@@ -1607,6 +1699,7 @@ public enum Method
       case 168: return METHOD_USE_ITEM_STARDUST_BOOST;
       case 169: return METHOD_REASSIGN_PLAYER;
       case 170: return METHOD_REDEEM_POI_PASSCODE;
+      case 171: return METHOD_CONVERT_CANDY_TO_XL_CANDY;
       case 172: return METHOD_IS_SKU_AVAILABLE;
       case 300: return METHOD_GET_ASSET_DIGEST;
       case 301: return METHOD_GET_DOWNLOAD_URLS;
@@ -1645,6 +1738,7 @@ public enum Method
       case 903: return METHOD_REMOVE_QUEST;
       case 904: return METHOD_QUEST_ENCOUNTER;
       case 905: return METHOD_COMPLETE_QUEST_STAMP_CARD;
+      case 906: return METHOD_PROGRESS_QUEST;
       case 950: return METHOD_SEND_GIFT;
       case 951: return METHOD_OPEN_GIFT;
       case 952: return METHOD_GIFT_DETAILS;
@@ -1731,8 +1825,18 @@ public enum Method
       case 1650: return METHOD_OPEN_SPONSORED_GIFT;
       case 1651: return METHOD_SPONSORED_GIFT_REPORT_INTERACTION;
       case 1652: return METHOD_SAVE_PLAYER_PREFERENCES;
+      case 1653: return METHOD_PROFANITY_CHECK;
       case 1700: return METHOD_GET_TIMED_GROUP_CHALLENGE;
+      case 1710: return METHOD_GET_NINTENDO_ACCOUNT;
+      case 1711: return METHOD_UNLINK_NINTENDO_ACCOUNT;
+      case 1712: return METHOD_GET_NINTENDO_OAUTH2_URL;
+      case 1713: return METHOD_TRANSFER_TO_POKEMON_HOME;
       case 1716: return METHOD_REPORT_AD_FEEDBACK;
+      case 1717: return METHOD_CREATE_POKEMON_TAG;
+      case 1718: return METHOD_DELETE_POKEMON_TAG;
+      case 1719: return METHOD_EDIT_POKEMON_TAG;
+      case 1720: return METHOD_SET_POKEMON_TAGS_FOR_POKEMON;
+      case 1721: return METHOD_GET_POKEMON_TAGS;
       default: return null;
     }
   }
@@ -1751,10 +1855,6 @@ public enum Method
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -1763,7 +1863,7 @@ public enum Method
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(120);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(81);
   }
 
   private static final Method[] VALUES = values();

@@ -4,18 +4,14 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: PJCIHMKDHHO
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.HoloPokemonId}
  */
 public enum HoloPokemonId
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POKEMON_UNSET = 0;</code>
+   * <code>MISSINGNO = 0;</code>
    */
-  POKEMON_UNSET(0),
+  MISSINGNO(0),
   /**
    * <code>BULBASAUR = 1;</code>
    */
@@ -2613,6 +2609,294 @@ public enum HoloPokemonId
    */
   GENESECT(649),
   /**
+   * <code>CHESPIN = 650;</code>
+   */
+  CHESPIN(650),
+  /**
+   * <code>QUILLADIN = 651;</code>
+   */
+  QUILLADIN(651),
+  /**
+   * <code>CHESNAUGHT = 652;</code>
+   */
+  CHESNAUGHT(652),
+  /**
+   * <code>FENNEKIN = 653;</code>
+   */
+  FENNEKIN(653),
+  /**
+   * <code>BRAIXEN = 654;</code>
+   */
+  BRAIXEN(654),
+  /**
+   * <code>DELPHOX = 655;</code>
+   */
+  DELPHOX(655),
+  /**
+   * <code>FROAKIE = 656;</code>
+   */
+  FROAKIE(656),
+  /**
+   * <code>FROGADIER = 657;</code>
+   */
+  FROGADIER(657),
+  /**
+   * <code>GRENINJA = 658;</code>
+   */
+  GRENINJA(658),
+  /**
+   * <code>BUNNELBY = 659;</code>
+   */
+  BUNNELBY(659),
+  /**
+   * <code>DIGGERSBY = 660;</code>
+   */
+  DIGGERSBY(660),
+  /**
+   * <code>FLETCHLING = 661;</code>
+   */
+  FLETCHLING(661),
+  /**
+   * <code>FLETCHINDER = 662;</code>
+   */
+  FLETCHINDER(662),
+  /**
+   * <code>TALONFLAME = 663;</code>
+   */
+  TALONFLAME(663),
+  /**
+   * <code>SCATTERBUG = 664;</code>
+   */
+  SCATTERBUG(664),
+  /**
+   * <code>SPEWPA = 665;</code>
+   */
+  SPEWPA(665),
+  /**
+   * <code>VIVILLON = 666;</code>
+   */
+  VIVILLON(666),
+  /**
+   * <code>LITLEO = 667;</code>
+   */
+  LITLEO(667),
+  /**
+   * <code>PYROAR = 668;</code>
+   */
+  PYROAR(668),
+  /**
+   * <code>FLABEBE = 669;</code>
+   */
+  FLABEBE(669),
+  /**
+   * <code>FLOETTE = 670;</code>
+   */
+  FLOETTE(670),
+  /**
+   * <code>FLORGES = 671;</code>
+   */
+  FLORGES(671),
+  /**
+   * <code>SKIDDO = 672;</code>
+   */
+  SKIDDO(672),
+  /**
+   * <code>GOGOAT = 673;</code>
+   */
+  GOGOAT(673),
+  /**
+   * <code>PANCHAM = 674;</code>
+   */
+  PANCHAM(674),
+  /**
+   * <code>PANGORO = 675;</code>
+   */
+  PANGORO(675),
+  /**
+   * <code>FURFROU = 676;</code>
+   */
+  FURFROU(676),
+  /**
+   * <code>ESPURR = 677;</code>
+   */
+  ESPURR(677),
+  /**
+   * <code>MEOWSTIC = 678;</code>
+   */
+  MEOWSTIC(678),
+  /**
+   * <code>HONEDGE = 679;</code>
+   */
+  HONEDGE(679),
+  /**
+   * <code>DOUBLADE = 680;</code>
+   */
+  DOUBLADE(680),
+  /**
+   * <code>AEGISLASH = 681;</code>
+   */
+  AEGISLASH(681),
+  /**
+   * <code>SPRITZEE = 682;</code>
+   */
+  SPRITZEE(682),
+  /**
+   * <code>AROMATISSE = 683;</code>
+   */
+  AROMATISSE(683),
+  /**
+   * <code>SWIRLIX = 684;</code>
+   */
+  SWIRLIX(684),
+  /**
+   * <code>SLURPUFF = 685;</code>
+   */
+  SLURPUFF(685),
+  /**
+   * <code>INKAY = 686;</code>
+   */
+  INKAY(686),
+  /**
+   * <code>MALAMAR = 687;</code>
+   */
+  MALAMAR(687),
+  /**
+   * <code>BINACLE = 688;</code>
+   */
+  BINACLE(688),
+  /**
+   * <code>BARBARACLE = 689;</code>
+   */
+  BARBARACLE(689),
+  /**
+   * <code>SKRELP = 690;</code>
+   */
+  SKRELP(690),
+  /**
+   * <code>DRAGALGE = 691;</code>
+   */
+  DRAGALGE(691),
+  /**
+   * <code>CLAUNCHER = 692;</code>
+   */
+  CLAUNCHER(692),
+  /**
+   * <code>CLAWITZER = 693;</code>
+   */
+  CLAWITZER(693),
+  /**
+   * <code>HELIOPTILE = 694;</code>
+   */
+  HELIOPTILE(694),
+  /**
+   * <code>HELIOLISK = 695;</code>
+   */
+  HELIOLISK(695),
+  /**
+   * <code>TYRUNT = 696;</code>
+   */
+  TYRUNT(696),
+  /**
+   * <code>TYRANTRUM = 697;</code>
+   */
+  TYRANTRUM(697),
+  /**
+   * <code>AMAURA = 698;</code>
+   */
+  AMAURA(698),
+  /**
+   * <code>AURORUS = 699;</code>
+   */
+  AURORUS(699),
+  /**
+   * <code>SYLVEON = 700;</code>
+   */
+  SYLVEON(700),
+  /**
+   * <code>HAWLUCHA = 701;</code>
+   */
+  HAWLUCHA(701),
+  /**
+   * <code>DEDENNE = 702;</code>
+   */
+  DEDENNE(702),
+  /**
+   * <code>CARBINK = 703;</code>
+   */
+  CARBINK(703),
+  /**
+   * <code>GOOMY = 704;</code>
+   */
+  GOOMY(704),
+  /**
+   * <code>SLIGGOO = 705;</code>
+   */
+  SLIGGOO(705),
+  /**
+   * <code>GOODRA = 706;</code>
+   */
+  GOODRA(706),
+  /**
+   * <code>KLEFKI = 707;</code>
+   */
+  KLEFKI(707),
+  /**
+   * <code>PHANTUMP = 708;</code>
+   */
+  PHANTUMP(708),
+  /**
+   * <code>TREVENANT = 709;</code>
+   */
+  TREVENANT(709),
+  /**
+   * <code>PUMPKABOO = 710;</code>
+   */
+  PUMPKABOO(710),
+  /**
+   * <code>GOURGEIST = 711;</code>
+   */
+  GOURGEIST(711),
+  /**
+   * <code>BERGMITE = 712;</code>
+   */
+  BERGMITE(712),
+  /**
+   * <code>AVALUGG = 713;</code>
+   */
+  AVALUGG(713),
+  /**
+   * <code>NOIBAT = 714;</code>
+   */
+  NOIBAT(714),
+  /**
+   * <code>NOIVERN = 715;</code>
+   */
+  NOIVERN(715),
+  /**
+   * <code>XERNEAS = 716;</code>
+   */
+  XERNEAS(716),
+  /**
+   * <code>YVELTAL = 717;</code>
+   */
+  YVELTAL(717),
+  /**
+   * <code>ZYGARDE = 718;</code>
+   */
+  ZYGARDE(718),
+  /**
+   * <code>DIANCIE = 719;</code>
+   */
+  DIANCIE(719),
+  /**
+   * <code>HOOPA = 720;</code>
+   */
+  HOOPA(720),
+  /**
+   * <code>VOLCANION = 721;</code>
+   */
+  VOLCANION(721),
+  /**
    * <code>MELTAN = 808;</code>
    */
   MELTAN(808),
@@ -2632,13 +2916,17 @@ public enum HoloPokemonId
    * <code>SIRFETCHD = 865;</code>
    */
   SIRFETCHD(865),
+  /**
+   * <code>RUNERIGUS = 867;</code>
+   */
+  RUNERIGUS(867),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POKEMON_UNSET = 0;</code>
+   * <code>MISSINGNO = 0;</code>
    */
-  public static final int POKEMON_UNSET_VALUE = 0;
+  public static final int MISSINGNO_VALUE = 0;
   /**
    * <code>BULBASAUR = 1;</code>
    */
@@ -5236,6 +5524,294 @@ public enum HoloPokemonId
    */
   public static final int GENESECT_VALUE = 649;
   /**
+   * <code>CHESPIN = 650;</code>
+   */
+  public static final int CHESPIN_VALUE = 650;
+  /**
+   * <code>QUILLADIN = 651;</code>
+   */
+  public static final int QUILLADIN_VALUE = 651;
+  /**
+   * <code>CHESNAUGHT = 652;</code>
+   */
+  public static final int CHESNAUGHT_VALUE = 652;
+  /**
+   * <code>FENNEKIN = 653;</code>
+   */
+  public static final int FENNEKIN_VALUE = 653;
+  /**
+   * <code>BRAIXEN = 654;</code>
+   */
+  public static final int BRAIXEN_VALUE = 654;
+  /**
+   * <code>DELPHOX = 655;</code>
+   */
+  public static final int DELPHOX_VALUE = 655;
+  /**
+   * <code>FROAKIE = 656;</code>
+   */
+  public static final int FROAKIE_VALUE = 656;
+  /**
+   * <code>FROGADIER = 657;</code>
+   */
+  public static final int FROGADIER_VALUE = 657;
+  /**
+   * <code>GRENINJA = 658;</code>
+   */
+  public static final int GRENINJA_VALUE = 658;
+  /**
+   * <code>BUNNELBY = 659;</code>
+   */
+  public static final int BUNNELBY_VALUE = 659;
+  /**
+   * <code>DIGGERSBY = 660;</code>
+   */
+  public static final int DIGGERSBY_VALUE = 660;
+  /**
+   * <code>FLETCHLING = 661;</code>
+   */
+  public static final int FLETCHLING_VALUE = 661;
+  /**
+   * <code>FLETCHINDER = 662;</code>
+   */
+  public static final int FLETCHINDER_VALUE = 662;
+  /**
+   * <code>TALONFLAME = 663;</code>
+   */
+  public static final int TALONFLAME_VALUE = 663;
+  /**
+   * <code>SCATTERBUG = 664;</code>
+   */
+  public static final int SCATTERBUG_VALUE = 664;
+  /**
+   * <code>SPEWPA = 665;</code>
+   */
+  public static final int SPEWPA_VALUE = 665;
+  /**
+   * <code>VIVILLON = 666;</code>
+   */
+  public static final int VIVILLON_VALUE = 666;
+  /**
+   * <code>LITLEO = 667;</code>
+   */
+  public static final int LITLEO_VALUE = 667;
+  /**
+   * <code>PYROAR = 668;</code>
+   */
+  public static final int PYROAR_VALUE = 668;
+  /**
+   * <code>FLABEBE = 669;</code>
+   */
+  public static final int FLABEBE_VALUE = 669;
+  /**
+   * <code>FLOETTE = 670;</code>
+   */
+  public static final int FLOETTE_VALUE = 670;
+  /**
+   * <code>FLORGES = 671;</code>
+   */
+  public static final int FLORGES_VALUE = 671;
+  /**
+   * <code>SKIDDO = 672;</code>
+   */
+  public static final int SKIDDO_VALUE = 672;
+  /**
+   * <code>GOGOAT = 673;</code>
+   */
+  public static final int GOGOAT_VALUE = 673;
+  /**
+   * <code>PANCHAM = 674;</code>
+   */
+  public static final int PANCHAM_VALUE = 674;
+  /**
+   * <code>PANGORO = 675;</code>
+   */
+  public static final int PANGORO_VALUE = 675;
+  /**
+   * <code>FURFROU = 676;</code>
+   */
+  public static final int FURFROU_VALUE = 676;
+  /**
+   * <code>ESPURR = 677;</code>
+   */
+  public static final int ESPURR_VALUE = 677;
+  /**
+   * <code>MEOWSTIC = 678;</code>
+   */
+  public static final int MEOWSTIC_VALUE = 678;
+  /**
+   * <code>HONEDGE = 679;</code>
+   */
+  public static final int HONEDGE_VALUE = 679;
+  /**
+   * <code>DOUBLADE = 680;</code>
+   */
+  public static final int DOUBLADE_VALUE = 680;
+  /**
+   * <code>AEGISLASH = 681;</code>
+   */
+  public static final int AEGISLASH_VALUE = 681;
+  /**
+   * <code>SPRITZEE = 682;</code>
+   */
+  public static final int SPRITZEE_VALUE = 682;
+  /**
+   * <code>AROMATISSE = 683;</code>
+   */
+  public static final int AROMATISSE_VALUE = 683;
+  /**
+   * <code>SWIRLIX = 684;</code>
+   */
+  public static final int SWIRLIX_VALUE = 684;
+  /**
+   * <code>SLURPUFF = 685;</code>
+   */
+  public static final int SLURPUFF_VALUE = 685;
+  /**
+   * <code>INKAY = 686;</code>
+   */
+  public static final int INKAY_VALUE = 686;
+  /**
+   * <code>MALAMAR = 687;</code>
+   */
+  public static final int MALAMAR_VALUE = 687;
+  /**
+   * <code>BINACLE = 688;</code>
+   */
+  public static final int BINACLE_VALUE = 688;
+  /**
+   * <code>BARBARACLE = 689;</code>
+   */
+  public static final int BARBARACLE_VALUE = 689;
+  /**
+   * <code>SKRELP = 690;</code>
+   */
+  public static final int SKRELP_VALUE = 690;
+  /**
+   * <code>DRAGALGE = 691;</code>
+   */
+  public static final int DRAGALGE_VALUE = 691;
+  /**
+   * <code>CLAUNCHER = 692;</code>
+   */
+  public static final int CLAUNCHER_VALUE = 692;
+  /**
+   * <code>CLAWITZER = 693;</code>
+   */
+  public static final int CLAWITZER_VALUE = 693;
+  /**
+   * <code>HELIOPTILE = 694;</code>
+   */
+  public static final int HELIOPTILE_VALUE = 694;
+  /**
+   * <code>HELIOLISK = 695;</code>
+   */
+  public static final int HELIOLISK_VALUE = 695;
+  /**
+   * <code>TYRUNT = 696;</code>
+   */
+  public static final int TYRUNT_VALUE = 696;
+  /**
+   * <code>TYRANTRUM = 697;</code>
+   */
+  public static final int TYRANTRUM_VALUE = 697;
+  /**
+   * <code>AMAURA = 698;</code>
+   */
+  public static final int AMAURA_VALUE = 698;
+  /**
+   * <code>AURORUS = 699;</code>
+   */
+  public static final int AURORUS_VALUE = 699;
+  /**
+   * <code>SYLVEON = 700;</code>
+   */
+  public static final int SYLVEON_VALUE = 700;
+  /**
+   * <code>HAWLUCHA = 701;</code>
+   */
+  public static final int HAWLUCHA_VALUE = 701;
+  /**
+   * <code>DEDENNE = 702;</code>
+   */
+  public static final int DEDENNE_VALUE = 702;
+  /**
+   * <code>CARBINK = 703;</code>
+   */
+  public static final int CARBINK_VALUE = 703;
+  /**
+   * <code>GOOMY = 704;</code>
+   */
+  public static final int GOOMY_VALUE = 704;
+  /**
+   * <code>SLIGGOO = 705;</code>
+   */
+  public static final int SLIGGOO_VALUE = 705;
+  /**
+   * <code>GOODRA = 706;</code>
+   */
+  public static final int GOODRA_VALUE = 706;
+  /**
+   * <code>KLEFKI = 707;</code>
+   */
+  public static final int KLEFKI_VALUE = 707;
+  /**
+   * <code>PHANTUMP = 708;</code>
+   */
+  public static final int PHANTUMP_VALUE = 708;
+  /**
+   * <code>TREVENANT = 709;</code>
+   */
+  public static final int TREVENANT_VALUE = 709;
+  /**
+   * <code>PUMPKABOO = 710;</code>
+   */
+  public static final int PUMPKABOO_VALUE = 710;
+  /**
+   * <code>GOURGEIST = 711;</code>
+   */
+  public static final int GOURGEIST_VALUE = 711;
+  /**
+   * <code>BERGMITE = 712;</code>
+   */
+  public static final int BERGMITE_VALUE = 712;
+  /**
+   * <code>AVALUGG = 713;</code>
+   */
+  public static final int AVALUGG_VALUE = 713;
+  /**
+   * <code>NOIBAT = 714;</code>
+   */
+  public static final int NOIBAT_VALUE = 714;
+  /**
+   * <code>NOIVERN = 715;</code>
+   */
+  public static final int NOIVERN_VALUE = 715;
+  /**
+   * <code>XERNEAS = 716;</code>
+   */
+  public static final int XERNEAS_VALUE = 716;
+  /**
+   * <code>YVELTAL = 717;</code>
+   */
+  public static final int YVELTAL_VALUE = 717;
+  /**
+   * <code>ZYGARDE = 718;</code>
+   */
+  public static final int ZYGARDE_VALUE = 718;
+  /**
+   * <code>DIANCIE = 719;</code>
+   */
+  public static final int DIANCIE_VALUE = 719;
+  /**
+   * <code>HOOPA = 720;</code>
+   */
+  public static final int HOOPA_VALUE = 720;
+  /**
+   * <code>VOLCANION = 721;</code>
+   */
+  public static final int VOLCANION_VALUE = 721;
+  /**
    * <code>MELTAN = 808;</code>
    */
   public static final int MELTAN_VALUE = 808;
@@ -5255,6 +5831,10 @@ public enum HoloPokemonId
    * <code>SIRFETCHD = 865;</code>
    */
   public static final int SIRFETCHD_VALUE = 865;
+  /**
+   * <code>RUNERIGUS = 867;</code>
+   */
+  public static final int RUNERIGUS_VALUE = 867;
 
 
   public final int getNumber() {
@@ -5281,7 +5861,7 @@ public enum HoloPokemonId
    */
   public static HoloPokemonId forNumber(int value) {
     switch (value) {
-      case 0: return POKEMON_UNSET;
+      case 0: return MISSINGNO;
       case 1: return BULBASAUR;
       case 2: return IVYSAUR;
       case 3: return VENUSAUR;
@@ -5931,11 +6511,84 @@ public enum HoloPokemonId
       case 647: return KELDEO;
       case 648: return MELOETTA;
       case 649: return GENESECT;
+      case 650: return CHESPIN;
+      case 651: return QUILLADIN;
+      case 652: return CHESNAUGHT;
+      case 653: return FENNEKIN;
+      case 654: return BRAIXEN;
+      case 655: return DELPHOX;
+      case 656: return FROAKIE;
+      case 657: return FROGADIER;
+      case 658: return GRENINJA;
+      case 659: return BUNNELBY;
+      case 660: return DIGGERSBY;
+      case 661: return FLETCHLING;
+      case 662: return FLETCHINDER;
+      case 663: return TALONFLAME;
+      case 664: return SCATTERBUG;
+      case 665: return SPEWPA;
+      case 666: return VIVILLON;
+      case 667: return LITLEO;
+      case 668: return PYROAR;
+      case 669: return FLABEBE;
+      case 670: return FLOETTE;
+      case 671: return FLORGES;
+      case 672: return SKIDDO;
+      case 673: return GOGOAT;
+      case 674: return PANCHAM;
+      case 675: return PANGORO;
+      case 676: return FURFROU;
+      case 677: return ESPURR;
+      case 678: return MEOWSTIC;
+      case 679: return HONEDGE;
+      case 680: return DOUBLADE;
+      case 681: return AEGISLASH;
+      case 682: return SPRITZEE;
+      case 683: return AROMATISSE;
+      case 684: return SWIRLIX;
+      case 685: return SLURPUFF;
+      case 686: return INKAY;
+      case 687: return MALAMAR;
+      case 688: return BINACLE;
+      case 689: return BARBARACLE;
+      case 690: return SKRELP;
+      case 691: return DRAGALGE;
+      case 692: return CLAUNCHER;
+      case 693: return CLAWITZER;
+      case 694: return HELIOPTILE;
+      case 695: return HELIOLISK;
+      case 696: return TYRUNT;
+      case 697: return TYRANTRUM;
+      case 698: return AMAURA;
+      case 699: return AURORUS;
+      case 700: return SYLVEON;
+      case 701: return HAWLUCHA;
+      case 702: return DEDENNE;
+      case 703: return CARBINK;
+      case 704: return GOOMY;
+      case 705: return SLIGGOO;
+      case 706: return GOODRA;
+      case 707: return KLEFKI;
+      case 708: return PHANTUMP;
+      case 709: return TREVENANT;
+      case 710: return PUMPKABOO;
+      case 711: return GOURGEIST;
+      case 712: return BERGMITE;
+      case 713: return AVALUGG;
+      case 714: return NOIBAT;
+      case 715: return NOIVERN;
+      case 716: return XERNEAS;
+      case 717: return YVELTAL;
+      case 718: return ZYGARDE;
+      case 719: return DIANCIE;
+      case 720: return HOOPA;
+      case 721: return VOLCANION;
       case 808: return MELTAN;
       case 809: return MELMETAL;
       case 862: return OBSTAGOON;
       case 863: return PERRSERKER;
       case 865: return SIRFETCHD;
+      case 867: return RUNERIGUS;
       default: return null;
     }
   }
@@ -5954,10 +6607,6 @@ public enum HoloPokemonId
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -5966,7 +6615,7 @@ public enum HoloPokemonId
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(131);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(56);
   }
 
   private static final HoloPokemonId[] VALUES = values();

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.UpdateProfileRequest
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.UpdateProfileRequest}
  */
-public final class UpdateProfileRequest extends
+public  final class UpdateProfileRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UpdateProfileRequest)
     UpdateProfileRequestOrBuilder {
@@ -115,12 +111,12 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.UpdateProfileRequest/Types/ProfileProto
+   * ref: Niantic.Platform.Protos.UpdateProfileRequest.Types.ProfileProto
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.UpdateProfileRequest.ProfileProto}
    */
-  public static final class ProfileProto extends
+  public  static final class ProfileProto extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UpdateProfileRequest.ProfileProto)
       ProfileProtoOrBuilder {
@@ -207,7 +203,6 @@ private static final long serialVersionUID = 0L;
      * <code>string profile_name_app_key = 1;</code>
      * @return The profileNameAppKey.
      */
-    @java.lang.Override
     public java.lang.String getProfileNameAppKey() {
       java.lang.Object ref = profileNameAppKey_;
       if (ref instanceof java.lang.String) {
@@ -224,7 +219,6 @@ private static final long serialVersionUID = 0L;
      * <code>string profile_name_app_key = 1;</code>
      * @return The bytes for profileNameAppKey.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getProfileNameAppKeyBytes() {
       java.lang.Object ref = profileNameAppKey_;
@@ -395,7 +389,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.UpdateProfileRequest/Types/ProfileProto
+     * ref: Niantic.Platform.Protos.UpdateProfileRequest.Types.ProfileProto
      * </pre>
      *
      * Protobuf type {@code POGOProtos.Rpc.UpdateProfileRequest.ProfileProto}
@@ -679,7 +673,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.UpdateProfileRequest.ProfileProto profile = 1;</code>
    * @return Whether the profile field is set.
    */
-  @java.lang.Override
   public boolean hasProfile() {
     return profile_ != null;
   }
@@ -687,14 +680,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.UpdateProfileRequest.ProfileProto profile = 1;</code>
    * @return The profile.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.UpdateProfileRequest.ProfileProto getProfile() {
     return profile_ == null ? POGOProtos.Rpc.UpdateProfileRequest.ProfileProto.getDefaultInstance() : profile_;
   }
   /**
    * <code>.POGOProtos.Rpc.UpdateProfileRequest.ProfileProto profile = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.UpdateProfileRequest.ProfileProtoOrBuilder getProfileOrBuilder() {
     return getProfile();
   }
@@ -860,10 +851,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.UpdateProfileRequest
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.UpdateProfileRequest}
    */
   public static final class Builder extends

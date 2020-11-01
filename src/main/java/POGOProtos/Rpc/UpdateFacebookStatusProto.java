@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.UpdateFacebookStatusProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.UpdateFacebookStatusProto}
  */
-public final class UpdateFacebookStatusProto extends
+public  final class UpdateFacebookStatusProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UpdateFacebookStatusProto)
     UpdateFacebookStatusProtoOrBuilder {
@@ -102,7 +98,6 @@ private static final long serialVersionUID = 0L;
    * <code>string fb_access_token = 1;</code>
    * @return The fbAccessToken.
    */
-  @java.lang.Override
   public java.lang.String getFbAccessToken() {
     java.lang.Object ref = fbAccessToken_;
     if (ref instanceof java.lang.String) {
@@ -119,7 +114,6 @@ private static final long serialVersionUID = 0L;
    * <code>string fb_access_token = 1;</code>
    * @return The bytes for fbAccessToken.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getFbAccessTokenBytes() {
     java.lang.Object ref = fbAccessToken_;
@@ -140,7 +134,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool force_update = 2;</code>
    * @return The forceUpdate.
    */
-  @java.lang.Override
   public boolean getForceUpdate() {
     return forceUpdate_;
   }
@@ -312,10 +305,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.UpdateFacebookStatusProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.UpdateFacebookStatusProto}
    */
   public static final class Builder extends
@@ -550,7 +539,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool force_update = 2;</code>
      * @return The forceUpdate.
      */
-    @java.lang.Override
     public boolean getForceUpdate() {
       return forceUpdate_;
     }

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetAccountSettingsOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetAccountSettingsOutProto}
  */
-public final class GetAccountSettingsOutProto extends
+public  final class GetAccountSettingsOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetAccountSettingsOutProto)
     GetAccountSettingsOutProtoOrBuilder {
@@ -60,11 +56,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.PlatformAccountSettingsProto.Builder subBuilder = null;
+            POGOProtos.Rpc.AccountSettingsProto.Builder subBuilder = null;
             if (settings_ != null) {
               subBuilder = settings_.toBuilder();
             }
-            settings_ = input.readMessage(POGOProtos.Rpc.PlatformAccountSettingsProto.parser(), extensionRegistry);
+            settings_ = input.readMessage(POGOProtos.Rpc.AccountSettingsProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(settings_);
               settings_ = subBuilder.buildPartial();
@@ -106,7 +102,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetAccountSettingsOutProto/Types/Result
+   * ref: Niantic.Platform.Protos.GetAccountSettingsOutProto.Types.Result
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GetAccountSettingsOutProto.Result}
@@ -187,10 +183,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -231,42 +223,39 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GetAccountSettingsOutProto.Result result = 1;</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  public int getResultValue() {
     return result_;
   }
   /**
    * <code>.POGOProtos.Rpc.GetAccountSettingsOutProto.Result result = 1;</code>
    * @return The result.
    */
-  @java.lang.Override public POGOProtos.Rpc.GetAccountSettingsOutProto.Result getResult() {
+  public POGOProtos.Rpc.GetAccountSettingsOutProto.Result getResult() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GetAccountSettingsOutProto.Result result = POGOProtos.Rpc.GetAccountSettingsOutProto.Result.valueOf(result_);
     return result == null ? POGOProtos.Rpc.GetAccountSettingsOutProto.Result.UNRECOGNIZED : result;
   }
 
   public static final int SETTINGS_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.PlatformAccountSettingsProto settings_;
+  private POGOProtos.Rpc.AccountSettingsProto settings_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+   * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
    * @return Whether the settings field is set.
    */
-  @java.lang.Override
   public boolean hasSettings() {
     return settings_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+   * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
    * @return The settings.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlatformAccountSettingsProto getSettings() {
-    return settings_ == null ? POGOProtos.Rpc.PlatformAccountSettingsProto.getDefaultInstance() : settings_;
+  public POGOProtos.Rpc.AccountSettingsProto getSettings() {
+    return settings_ == null ? POGOProtos.Rpc.AccountSettingsProto.getDefaultInstance() : settings_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+   * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder getSettingsOrBuilder() {
+  public POGOProtos.Rpc.AccountSettingsProtoOrBuilder getSettingsOrBuilder() {
     return getSettings();
   }
 
@@ -441,10 +430,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetAccountSettingsOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetAccountSettingsOutProto}
    */
   public static final class Builder extends
@@ -610,7 +595,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetAccountSettingsOutProto.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    public int getResultValue() {
       return result_;
     }
     /**
@@ -619,7 +604,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResultValue(int value) {
-      
       result_ = value;
       onChanged();
       return this;
@@ -628,7 +612,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetAccountSettingsOutProto.Result result = 1;</code>
      * @return The result.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetAccountSettingsOutProto.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetAccountSettingsOutProto.Result result = POGOProtos.Rpc.GetAccountSettingsOutProto.Result.valueOf(result_);
@@ -659,31 +642,31 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private POGOProtos.Rpc.PlatformAccountSettingsProto settings_;
+    private POGOProtos.Rpc.AccountSettingsProto settings_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformAccountSettingsProto, POGOProtos.Rpc.PlatformAccountSettingsProto.Builder, POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder> settingsBuilder_;
+        POGOProtos.Rpc.AccountSettingsProto, POGOProtos.Rpc.AccountSettingsProto.Builder, POGOProtos.Rpc.AccountSettingsProtoOrBuilder> settingsBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
      * @return Whether the settings field is set.
      */
     public boolean hasSettings() {
       return settingsBuilder_ != null || settings_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
      * @return The settings.
      */
-    public POGOProtos.Rpc.PlatformAccountSettingsProto getSettings() {
+    public POGOProtos.Rpc.AccountSettingsProto getSettings() {
       if (settingsBuilder_ == null) {
-        return settings_ == null ? POGOProtos.Rpc.PlatformAccountSettingsProto.getDefaultInstance() : settings_;
+        return settings_ == null ? POGOProtos.Rpc.AccountSettingsProto.getDefaultInstance() : settings_;
       } else {
         return settingsBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
      */
-    public Builder setSettings(POGOProtos.Rpc.PlatformAccountSettingsProto value) {
+    public Builder setSettings(POGOProtos.Rpc.AccountSettingsProto value) {
       if (settingsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -697,10 +680,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
      */
     public Builder setSettings(
-        POGOProtos.Rpc.PlatformAccountSettingsProto.Builder builderForValue) {
+        POGOProtos.Rpc.AccountSettingsProto.Builder builderForValue) {
       if (settingsBuilder_ == null) {
         settings_ = builderForValue.build();
         onChanged();
@@ -711,13 +694,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
      */
-    public Builder mergeSettings(POGOProtos.Rpc.PlatformAccountSettingsProto value) {
+    public Builder mergeSettings(POGOProtos.Rpc.AccountSettingsProto value) {
       if (settingsBuilder_ == null) {
         if (settings_ != null) {
           settings_ =
-            POGOProtos.Rpc.PlatformAccountSettingsProto.newBuilder(settings_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.AccountSettingsProto.newBuilder(settings_).mergeFrom(value).buildPartial();
         } else {
           settings_ = value;
         }
@@ -729,7 +712,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
      */
     public Builder clearSettings() {
       if (settingsBuilder_ == null) {
@@ -743,33 +726,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformAccountSettingsProto.Builder getSettingsBuilder() {
+    public POGOProtos.Rpc.AccountSettingsProto.Builder getSettingsBuilder() {
       
       onChanged();
       return getSettingsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder getSettingsOrBuilder() {
+    public POGOProtos.Rpc.AccountSettingsProtoOrBuilder getSettingsOrBuilder() {
       if (settingsBuilder_ != null) {
         return settingsBuilder_.getMessageOrBuilder();
       } else {
         return settings_ == null ?
-            POGOProtos.Rpc.PlatformAccountSettingsProto.getDefaultInstance() : settings_;
+            POGOProtos.Rpc.AccountSettingsProto.getDefaultInstance() : settings_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+     * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformAccountSettingsProto, POGOProtos.Rpc.PlatformAccountSettingsProto.Builder, POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder> 
+        POGOProtos.Rpc.AccountSettingsProto, POGOProtos.Rpc.AccountSettingsProto.Builder, POGOProtos.Rpc.AccountSettingsProtoOrBuilder> 
         getSettingsFieldBuilder() {
       if (settingsBuilder_ == null) {
         settingsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformAccountSettingsProto, POGOProtos.Rpc.PlatformAccountSettingsProto.Builder, POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder>(
+            POGOProtos.Rpc.AccountSettingsProto, POGOProtos.Rpc.AccountSettingsProto.Builder, POGOProtos.Rpc.AccountSettingsProtoOrBuilder>(
                 getSettings(),
                 getParentForChildren(),
                 isClean());

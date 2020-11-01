@@ -4,16 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End notifications -----
- *------------------------------
- *----- Begin platform -----
- * ref: Com.Nianticproject.Platform.ProxyRequestProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.ProxyRequestProto}
  */
-public final class ProxyRequestProto extends
+public  final class ProxyRequestProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ProxyRequestProto)
     ProxyRequestProtoOrBuilder {
@@ -111,7 +104,6 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 action = 1;</code>
    * @return The action.
    */
-  @java.lang.Override
   public int getAction() {
     return action_;
   }
@@ -122,7 +114,6 @@ private static final long serialVersionUID = 0L;
    * <code>string host = 2;</code>
    * @return The host.
    */
-  @java.lang.Override
   public java.lang.String getHost() {
     java.lang.Object ref = host_;
     if (ref instanceof java.lang.String) {
@@ -139,7 +130,6 @@ private static final long serialVersionUID = 0L;
    * <code>string host = 2;</code>
    * @return The bytes for host.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getHostBytes() {
     java.lang.Object ref = host_;
@@ -160,7 +150,6 @@ private static final long serialVersionUID = 0L;
    * <code>bytes payload = 3;</code>
    * @return The payload.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString getPayload() {
     return payload_;
   }
@@ -342,13 +331,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   *----- End notifications -----
-   *------------------------------
-   *----- Begin platform -----
-   * ref: Com.Nianticproject.Platform.ProxyRequestProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.ProxyRequestProto}
    */
   public static final class Builder extends
@@ -513,7 +495,6 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 action = 1;</code>
      * @return The action.
      */
-    @java.lang.Override
     public int getAction() {
       return action_;
     }
@@ -620,7 +601,6 @@ private static final long serialVersionUID = 0L;
      * <code>bytes payload = 3;</code>
      * @return The payload.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getPayload() {
       return payload_;
     }

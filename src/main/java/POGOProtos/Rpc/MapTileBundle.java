@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Proto.TEMP.MapTileBundle
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.MapTileBundle}
  */
-public final class MapTileBundle extends
+public  final class MapTileBundle extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.MapTileBundle)
     MapTileBundleOrBuilder {
@@ -103,14 +99,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.MapTileDataProto map_tile = 1;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.MapTileDataProto> getMapTileList() {
     return mapTile_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapTileDataProto map_tile = 1;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.MapTileDataProtoOrBuilder> 
       getMapTileOrBuilderList() {
     return mapTile_;
@@ -118,21 +112,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.MapTileDataProto map_tile = 1;</code>
    */
-  @java.lang.Override
   public int getMapTileCount() {
     return mapTile_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapTileDataProto map_tile = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.MapTileDataProto getMapTile(int index) {
     return mapTile_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapTileDataProto map_tile = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.MapTileDataProtoOrBuilder getMapTileOrBuilder(
       int index) {
     return mapTile_.get(index);
@@ -296,10 +287,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.MapTileBundle
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.MapTileBundle}
    */
   public static final class Builder extends

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.IncomingFriendInviteDisplayProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.IncomingFriendInviteDisplayProto}
  */
-public final class IncomingFriendInviteDisplayProto extends
+public  final class IncomingFriendInviteDisplayProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.IncomingFriendInviteDisplayProto)
     IncomingFriendInviteDisplayProtoOrBuilder {
@@ -66,11 +62,11 @@ private static final long serialVersionUID = 0L;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder subBuilder = null;
+            POGOProtos.Rpc.PlayerSummaryProto.Builder subBuilder = null;
             if (player_ != null) {
               subBuilder = player_.toBuilder();
             }
-            player_ = input.readMessage(POGOProtos.Rpc.PlatformPlayerSummaryProto.parser(), extensionRegistry);
+            player_ = input.readMessage(POGOProtos.Rpc.PlayerSummaryProto.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(player_);
               player_ = subBuilder.buildPartial();
@@ -116,7 +112,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.IncomingFriendInviteProto invite = 1;</code>
    * @return Whether the invite field is set.
    */
-  @java.lang.Override
   public boolean hasInvite() {
     return invite_ != null;
   }
@@ -124,41 +119,36 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.IncomingFriendInviteProto invite = 1;</code>
    * @return The invite.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.IncomingFriendInviteProto getInvite() {
     return invite_ == null ? POGOProtos.Rpc.IncomingFriendInviteProto.getDefaultInstance() : invite_;
   }
   /**
    * <code>.POGOProtos.Rpc.IncomingFriendInviteProto invite = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.IncomingFriendInviteProtoOrBuilder getInviteOrBuilder() {
     return getInvite();
   }
 
   public static final int PLAYER_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.PlatformPlayerSummaryProto player_;
+  private POGOProtos.Rpc.PlayerSummaryProto player_;
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+   * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
    * @return Whether the player field is set.
    */
-  @java.lang.Override
   public boolean hasPlayer() {
     return player_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+   * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
    * @return The player.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlatformPlayerSummaryProto getPlayer() {
-    return player_ == null ? POGOProtos.Rpc.PlatformPlayerSummaryProto.getDefaultInstance() : player_;
+  public POGOProtos.Rpc.PlayerSummaryProto getPlayer() {
+    return player_ == null ? POGOProtos.Rpc.PlayerSummaryProto.getDefaultInstance() : player_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+   * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder getPlayerOrBuilder() {
+  public POGOProtos.Rpc.PlayerSummaryProtoOrBuilder getPlayerOrBuilder() {
     return getPlayer();
   }
 
@@ -339,10 +329,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.IncomingFriendInviteDisplayProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.IncomingFriendInviteDisplayProto}
    */
   public static final class Builder extends
@@ -630,31 +616,31 @@ private static final long serialVersionUID = 0L;
       return inviteBuilder_;
     }
 
-    private POGOProtos.Rpc.PlatformPlayerSummaryProto player_;
+    private POGOProtos.Rpc.PlayerSummaryProto player_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformPlayerSummaryProto, POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder, POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder> playerBuilder_;
+        POGOProtos.Rpc.PlayerSummaryProto, POGOProtos.Rpc.PlayerSummaryProto.Builder, POGOProtos.Rpc.PlayerSummaryProtoOrBuilder> playerBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
      * @return Whether the player field is set.
      */
     public boolean hasPlayer() {
       return playerBuilder_ != null || player_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
      * @return The player.
      */
-    public POGOProtos.Rpc.PlatformPlayerSummaryProto getPlayer() {
+    public POGOProtos.Rpc.PlayerSummaryProto getPlayer() {
       if (playerBuilder_ == null) {
-        return player_ == null ? POGOProtos.Rpc.PlatformPlayerSummaryProto.getDefaultInstance() : player_;
+        return player_ == null ? POGOProtos.Rpc.PlayerSummaryProto.getDefaultInstance() : player_;
       } else {
         return playerBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
      */
-    public Builder setPlayer(POGOProtos.Rpc.PlatformPlayerSummaryProto value) {
+    public Builder setPlayer(POGOProtos.Rpc.PlayerSummaryProto value) {
       if (playerBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -668,10 +654,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
      */
     public Builder setPlayer(
-        POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder builderForValue) {
+        POGOProtos.Rpc.PlayerSummaryProto.Builder builderForValue) {
       if (playerBuilder_ == null) {
         player_ = builderForValue.build();
         onChanged();
@@ -682,13 +668,13 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
      */
-    public Builder mergePlayer(POGOProtos.Rpc.PlatformPlayerSummaryProto value) {
+    public Builder mergePlayer(POGOProtos.Rpc.PlayerSummaryProto value) {
       if (playerBuilder_ == null) {
         if (player_ != null) {
           player_ =
-            POGOProtos.Rpc.PlatformPlayerSummaryProto.newBuilder(player_).mergeFrom(value).buildPartial();
+            POGOProtos.Rpc.PlayerSummaryProto.newBuilder(player_).mergeFrom(value).buildPartial();
         } else {
           player_ = value;
         }
@@ -700,7 +686,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
      */
     public Builder clearPlayer() {
       if (playerBuilder_ == null) {
@@ -714,33 +700,33 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder getPlayerBuilder() {
+    public POGOProtos.Rpc.PlayerSummaryProto.Builder getPlayerBuilder() {
       
       onChanged();
       return getPlayerFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder getPlayerOrBuilder() {
+    public POGOProtos.Rpc.PlayerSummaryProtoOrBuilder getPlayerOrBuilder() {
       if (playerBuilder_ != null) {
         return playerBuilder_.getMessageOrBuilder();
       } else {
         return player_ == null ?
-            POGOProtos.Rpc.PlatformPlayerSummaryProto.getDefaultInstance() : player_;
+            POGOProtos.Rpc.PlayerSummaryProto.getDefaultInstance() : player_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+     * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PlatformPlayerSummaryProto, POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder, POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder> 
+        POGOProtos.Rpc.PlayerSummaryProto, POGOProtos.Rpc.PlayerSummaryProto.Builder, POGOProtos.Rpc.PlayerSummaryProtoOrBuilder> 
         getPlayerFieldBuilder() {
       if (playerBuilder_ == null) {
         playerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PlatformPlayerSummaryProto, POGOProtos.Rpc.PlatformPlayerSummaryProto.Builder, POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder>(
+            POGOProtos.Rpc.PlayerSummaryProto, POGOProtos.Rpc.PlayerSummaryProto.Builder, POGOProtos.Rpc.PlayerSummaryProtoOrBuilder>(
                 getPlayer(),
                 getParentForChildren(),
                 isClean());

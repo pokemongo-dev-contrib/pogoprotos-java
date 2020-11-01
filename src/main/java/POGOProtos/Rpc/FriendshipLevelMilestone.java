@@ -4,65 +4,61 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: NGAAGEHBPHA
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.FriendshipLevelMilestone}
  */
 public enum FriendshipLevelMilestone
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET = 0;</code>
+   * <code>FRIENDSHIP_LEVEL_UNSET = 0;</code>
    */
-  FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET(0),
+  FRIENDSHIP_LEVEL_UNSET(0),
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_0 = 1;</code>
+   * <code>FRIENDSHIP_LEVEL_0 = 1;</code>
    */
-  FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_0(1),
+  FRIENDSHIP_LEVEL_0(1),
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_1 = 2;</code>
+   * <code>FRIENDSHIP_LEVEL_1 = 2;</code>
    */
-  FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_1(2),
+  FRIENDSHIP_LEVEL_1(2),
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_2 = 3;</code>
+   * <code>FRIENDSHIP_LEVEL_2 = 3;</code>
    */
-  FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_2(3),
+  FRIENDSHIP_LEVEL_2(3),
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_3 = 4;</code>
+   * <code>FRIENDSHIP_LEVEL_3 = 4;</code>
    */
-  FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_3(4),
+  FRIENDSHIP_LEVEL_3(4),
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_4 = 5;</code>
+   * <code>FRIENDSHIP_LEVEL_4 = 5;</code>
    */
-  FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_4(5),
+  FRIENDSHIP_LEVEL_4(5),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET = 0;</code>
+   * <code>FRIENDSHIP_LEVEL_UNSET = 0;</code>
    */
-  public static final int FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET_VALUE = 0;
+  public static final int FRIENDSHIP_LEVEL_UNSET_VALUE = 0;
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_0 = 1;</code>
+   * <code>FRIENDSHIP_LEVEL_0 = 1;</code>
    */
-  public static final int FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_0_VALUE = 1;
+  public static final int FRIENDSHIP_LEVEL_0_VALUE = 1;
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_1 = 2;</code>
+   * <code>FRIENDSHIP_LEVEL_1 = 2;</code>
    */
-  public static final int FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_1_VALUE = 2;
+  public static final int FRIENDSHIP_LEVEL_1_VALUE = 2;
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_2 = 3;</code>
+   * <code>FRIENDSHIP_LEVEL_2 = 3;</code>
    */
-  public static final int FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_2_VALUE = 3;
+  public static final int FRIENDSHIP_LEVEL_2_VALUE = 3;
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_3 = 4;</code>
+   * <code>FRIENDSHIP_LEVEL_3 = 4;</code>
    */
-  public static final int FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_3_VALUE = 4;
+  public static final int FRIENDSHIP_LEVEL_3_VALUE = 4;
   /**
-   * <code>FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_4 = 5;</code>
+   * <code>FRIENDSHIP_LEVEL_4 = 5;</code>
    */
-  public static final int FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_4_VALUE = 5;
+  public static final int FRIENDSHIP_LEVEL_4_VALUE = 5;
 
 
   public final int getNumber() {
@@ -89,12 +85,12 @@ public enum FriendshipLevelMilestone
    */
   public static FriendshipLevelMilestone forNumber(int value) {
     switch (value) {
-      case 0: return FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_UNSET;
-      case 1: return FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_0;
-      case 2: return FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_1;
-      case 3: return FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_2;
-      case 4: return FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_3;
-      case 5: return FRIENDSHIP_LEVEL_MILESTONE_FRIENDSHIP_LEVEL_4;
+      case 0: return FRIENDSHIP_LEVEL_UNSET;
+      case 1: return FRIENDSHIP_LEVEL_0;
+      case 2: return FRIENDSHIP_LEVEL_1;
+      case 3: return FRIENDSHIP_LEVEL_2;
+      case 4: return FRIENDSHIP_LEVEL_3;
+      case 5: return FRIENDSHIP_LEVEL_4;
       default: return null;
     }
   }
@@ -113,10 +109,6 @@ public enum FriendshipLevelMilestone
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -125,7 +117,7 @@ public enum FriendshipLevelMilestone
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(115);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(42);
   }
 
   private static final FriendshipLevelMilestone[] VALUES = values();

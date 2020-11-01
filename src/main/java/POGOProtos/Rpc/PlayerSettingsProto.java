@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.PlayerSettingsProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.PlayerSettingsProto}
  */
-public final class PlayerSettingsProto extends
+public  final class PlayerSettingsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PlayerSettingsProto)
     PlayerSettingsProtoOrBuilder {
@@ -123,7 +119,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool opt_out_online_status = 1;</code>
    * @return The optOutOnlineStatus.
    */
-  @java.lang.Override
   public boolean getOptOutOnlineStatus() {
     return optOutOnlineStatus_;
   }
@@ -131,56 +126,51 @@ private static final long serialVersionUID = 0L;
   public static final int COMPLETED_TUTORIALS_FIELD_NUMBER = 2;
   private java.util.List<java.lang.Integer> completedTutorials_;
   private static final com.google.protobuf.Internal.ListAdapter.Converter<
-      java.lang.Integer, POGOProtos.Rpc.PlatformSocialSettings.TutorialType> completedTutorials_converter_ =
+      java.lang.Integer, POGOProtos.Rpc.SocialSettings.TutorialType> completedTutorials_converter_ =
           new com.google.protobuf.Internal.ListAdapter.Converter<
-              java.lang.Integer, POGOProtos.Rpc.PlatformSocialSettings.TutorialType>() {
-            public POGOProtos.Rpc.PlatformSocialSettings.TutorialType convert(java.lang.Integer from) {
+              java.lang.Integer, POGOProtos.Rpc.SocialSettings.TutorialType>() {
+            public POGOProtos.Rpc.SocialSettings.TutorialType convert(java.lang.Integer from) {
               @SuppressWarnings("deprecation")
-              POGOProtos.Rpc.PlatformSocialSettings.TutorialType result = POGOProtos.Rpc.PlatformSocialSettings.TutorialType.valueOf(from);
-              return result == null ? POGOProtos.Rpc.PlatformSocialSettings.TutorialType.UNRECOGNIZED : result;
+              POGOProtos.Rpc.SocialSettings.TutorialType result = POGOProtos.Rpc.SocialSettings.TutorialType.valueOf(from);
+              return result == null ? POGOProtos.Rpc.SocialSettings.TutorialType.UNRECOGNIZED : result;
             }
           };
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
    * @return A list containing the completedTutorials.
    */
-  @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.PlatformSocialSettings.TutorialType> getCompletedTutorialsList() {
+  public java.util.List<POGOProtos.Rpc.SocialSettings.TutorialType> getCompletedTutorialsList() {
     return new com.google.protobuf.Internal.ListAdapter<
-        java.lang.Integer, POGOProtos.Rpc.PlatformSocialSettings.TutorialType>(completedTutorials_, completedTutorials_converter_);
+        java.lang.Integer, POGOProtos.Rpc.SocialSettings.TutorialType>(completedTutorials_, completedTutorials_converter_);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
    * @return The count of completedTutorials.
    */
-  @java.lang.Override
   public int getCompletedTutorialsCount() {
     return completedTutorials_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
    * @param index The index of the element to return.
    * @return The completedTutorials at the given index.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlatformSocialSettings.TutorialType getCompletedTutorials(int index) {
+  public POGOProtos.Rpc.SocialSettings.TutorialType getCompletedTutorials(int index) {
     return completedTutorials_converter_.convert(completedTutorials_.get(index));
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
    * @return A list containing the enum numeric values on the wire for completedTutorials.
    */
-  @java.lang.Override
   public java.util.List<java.lang.Integer>
   getCompletedTutorialsValueList() {
     return completedTutorials_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
    * @param index The index of the value to return.
    * @return The enum numeric value on the wire of completedTutorials at the given index.
    */
-  @java.lang.Override
   public int getCompletedTutorialsValue(int index) {
     return completedTutorials_.get(index);
   }
@@ -368,10 +358,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.PlayerSettingsProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.PlayerSettingsProto}
    */
   public static final class Builder extends
@@ -542,7 +528,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool opt_out_online_status = 1;</code>
      * @return The optOutOnlineStatus.
      */
-    @java.lang.Override
     public boolean getOptOutOnlineStatus() {
       return optOutOnlineStatus_;
     }
@@ -577,36 +562,36 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @return A list containing the completedTutorials.
      */
-    public java.util.List<POGOProtos.Rpc.PlatformSocialSettings.TutorialType> getCompletedTutorialsList() {
+    public java.util.List<POGOProtos.Rpc.SocialSettings.TutorialType> getCompletedTutorialsList() {
       return new com.google.protobuf.Internal.ListAdapter<
-          java.lang.Integer, POGOProtos.Rpc.PlatformSocialSettings.TutorialType>(completedTutorials_, completedTutorials_converter_);
+          java.lang.Integer, POGOProtos.Rpc.SocialSettings.TutorialType>(completedTutorials_, completedTutorials_converter_);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @return The count of completedTutorials.
      */
     public int getCompletedTutorialsCount() {
       return completedTutorials_.size();
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @param index The index of the element to return.
      * @return The completedTutorials at the given index.
      */
-    public POGOProtos.Rpc.PlatformSocialSettings.TutorialType getCompletedTutorials(int index) {
+    public POGOProtos.Rpc.SocialSettings.TutorialType getCompletedTutorials(int index) {
       return completedTutorials_converter_.convert(completedTutorials_.get(index));
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @param index The index to set the value at.
      * @param value The completedTutorials to set.
      * @return This builder for chaining.
      */
     public Builder setCompletedTutorials(
-        int index, POGOProtos.Rpc.PlatformSocialSettings.TutorialType value) {
+        int index, POGOProtos.Rpc.SocialSettings.TutorialType value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -616,11 +601,11 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @param value The completedTutorials to add.
      * @return This builder for chaining.
      */
-    public Builder addCompletedTutorials(POGOProtos.Rpc.PlatformSocialSettings.TutorialType value) {
+    public Builder addCompletedTutorials(POGOProtos.Rpc.SocialSettings.TutorialType value) {
       if (value == null) {
         throw new NullPointerException();
       }
@@ -630,21 +615,21 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @param values The completedTutorials to add.
      * @return This builder for chaining.
      */
     public Builder addAllCompletedTutorials(
-        java.lang.Iterable<? extends POGOProtos.Rpc.PlatformSocialSettings.TutorialType> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.SocialSettings.TutorialType> values) {
       ensureCompletedTutorialsIsMutable();
-      for (POGOProtos.Rpc.PlatformSocialSettings.TutorialType value : values) {
+      for (POGOProtos.Rpc.SocialSettings.TutorialType value : values) {
         completedTutorials_.add(value.getNumber());
       }
       onChanged();
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearCompletedTutorials() {
@@ -654,7 +639,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @return A list containing the enum numeric values on the wire for completedTutorials.
      */
     public java.util.List<java.lang.Integer>
@@ -662,7 +647,7 @@ private static final long serialVersionUID = 0L;
       return java.util.Collections.unmodifiableList(completedTutorials_);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of completedTutorials at the given index.
      */
@@ -670,7 +655,7 @@ private static final long serialVersionUID = 0L;
       return completedTutorials_.get(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of completedTutorials at the given index.
      * @return This builder for chaining.
@@ -683,7 +668,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @param value The enum numeric value on the wire for completedTutorials to add.
      * @return This builder for chaining.
      */
@@ -694,7 +679,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformSocialSettings.TutorialType completed_tutorials = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.SocialSettings.TutorialType completed_tutorials = 2;</code>
      * @param values The enum numeric values on the wire for completedTutorials to add.
      * @return This builder for chaining.
      */

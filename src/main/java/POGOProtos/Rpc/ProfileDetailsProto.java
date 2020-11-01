@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.ProfileDetailsProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.ProfileDetailsProto}
  */
-public final class ProfileDetailsProto extends
+public  final class ProfileDetailsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ProfileDetailsProto)
     ProfileDetailsProtoOrBuilder {
@@ -111,7 +107,6 @@ private static final long serialVersionUID = 0L;
    * <code>string profile_name_app_key = 1;</code>
    * @return The profileNameAppKey.
    */
-  @java.lang.Override
   public java.lang.String getProfileNameAppKey() {
     java.lang.Object ref = profileNameAppKey_;
     if (ref instanceof java.lang.String) {
@@ -128,7 +123,6 @@ private static final long serialVersionUID = 0L;
    * <code>string profile_name_app_key = 1;</code>
    * @return The bytes for profileNameAppKey.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getProfileNameAppKeyBytes() {
     java.lang.Object ref = profileNameAppKey_;
@@ -149,7 +143,6 @@ private static final long serialVersionUID = 0L;
    * <code>string nickname = 2;</code>
    * @return The nickname.
    */
-  @java.lang.Override
   public java.lang.String getNickname() {
     java.lang.Object ref = nickname_;
     if (ref instanceof java.lang.String) {
@@ -166,7 +159,6 @@ private static final long serialVersionUID = 0L;
    * <code>string nickname = 2;</code>
    * @return The bytes for nickname.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getNicknameBytes() {
     java.lang.Object ref = nickname_;
@@ -187,7 +179,6 @@ private static final long serialVersionUID = 0L;
    * <code>string profile_name = 3;</code>
    * @return The profileName.
    */
-  @java.lang.Override
   public java.lang.String getProfileName() {
     java.lang.Object ref = profileName_;
     if (ref instanceof java.lang.String) {
@@ -204,7 +195,6 @@ private static final long serialVersionUID = 0L;
    * <code>string profile_name = 3;</code>
    * @return The bytes for profileName.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getProfileNameBytes() {
     java.lang.Object ref = profileName_;
@@ -394,10 +384,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.ProfileDetailsProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.ProfileDetailsProto}
    */
   public static final class Builder extends

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Proto.TEMP.LayerRule
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.LayerRule}
  */
-public final class LayerRule extends
+public  final class LayerRule extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.LayerRule)
     LayerRuleOrBuilder {
@@ -132,7 +128,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.LayerRule/Types/GmmLayerType
+   * ref: Niantic.Platform.Maps.Proto.TEMP.LayerRule.Types.GmmLayerType
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.LayerRule.GmmLayerType}
@@ -222,10 +218,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -262,7 +254,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.LayerRule/Types/GmmRoadPriority
+   * ref: Niantic.Platform.Maps.Proto.TEMP.LayerRule.Types.GmmRoadPriority
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.LayerRule.GmmRoadPriority}
@@ -406,10 +398,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -449,14 +437,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.MaskedColor fill_colors = 1;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.MaskedColor> getFillColorsList() {
     return fillColors_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MaskedColor fill_colors = 1;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.MaskedColorOrBuilder> 
       getFillColorsOrBuilderList() {
     return fillColors_;
@@ -464,21 +450,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.MaskedColor fill_colors = 1;</code>
    */
-  @java.lang.Override
   public int getFillColorsCount() {
     return fillColors_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MaskedColor fill_colors = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.MaskedColor getFillColors(int index) {
     return fillColors_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MaskedColor fill_colors = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.MaskedColorOrBuilder getFillColorsOrBuilder(
       int index) {
     return fillColors_.get(index);
@@ -500,7 +483,6 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .POGOProtos.Rpc.LayerRule.GmmRoadPriority road_priority = 2;</code>
    * @return A list containing the roadPriority.
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.LayerRule.GmmRoadPriority> getRoadPriorityList() {
     return new com.google.protobuf.Internal.ListAdapter<
         java.lang.Integer, POGOProtos.Rpc.LayerRule.GmmRoadPriority>(roadPriority_, roadPriority_converter_);
@@ -509,7 +491,6 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .POGOProtos.Rpc.LayerRule.GmmRoadPriority road_priority = 2;</code>
    * @return The count of roadPriority.
    */
-  @java.lang.Override
   public int getRoadPriorityCount() {
     return roadPriority_.size();
   }
@@ -518,7 +499,6 @@ private static final long serialVersionUID = 0L;
    * @param index The index of the element to return.
    * @return The roadPriority at the given index.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.LayerRule.GmmRoadPriority getRoadPriority(int index) {
     return roadPriority_converter_.convert(roadPriority_.get(index));
   }
@@ -526,7 +506,6 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .POGOProtos.Rpc.LayerRule.GmmRoadPriority road_priority = 2;</code>
    * @return A list containing the enum numeric values on the wire for roadPriority.
    */
-  @java.lang.Override
   public java.util.List<java.lang.Integer>
   getRoadPriorityValueList() {
     return roadPriority_;
@@ -536,7 +515,6 @@ private static final long serialVersionUID = 0L;
    * @param index The index of the value to return.
    * @return The enum numeric value on the wire of roadPriority at the given index.
    */
-  @java.lang.Override
   public int getRoadPriorityValue(int index) {
     return roadPriority_.get(index);
   }
@@ -548,7 +526,6 @@ private static final long serialVersionUID = 0L;
    * <code>uint32 road_attribute_bitfield = 3;</code>
    * @return The roadAttributeBitfield.
    */
-  @java.lang.Override
   public int getRoadAttributeBitfield() {
     return roadAttributeBitfield_;
   }
@@ -747,10 +724,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.LayerRule
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.LayerRule}
    */
   public static final class Builder extends
@@ -1343,7 +1316,6 @@ private static final long serialVersionUID = 0L;
      * <code>uint32 road_attribute_bitfield = 3;</code>
      * @return The roadAttributeBitfield.
      */
-    @java.lang.Override
     public int getRoadAttributeBitfield() {
       return roadAttributeBitfield_;
     }

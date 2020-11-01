@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Proto.TEMP.MapArea
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.MapArea}
  */
-public final class MapArea extends
+public  final class MapArea extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.MapArea)
     MapAreaOrBuilder {
@@ -123,7 +119,6 @@ private static final long serialVersionUID = 0L;
    * <code>string description = 1;</code>
    * @return The description.
    */
-  @java.lang.Override
   public java.lang.String getDescription() {
     java.lang.Object ref = description_;
     if (ref instanceof java.lang.String) {
@@ -140,7 +135,6 @@ private static final long serialVersionUID = 0L;
    * <code>string description = 1;</code>
    * @return The bytes for description.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getDescriptionBytes() {
     java.lang.Object ref = description_;
@@ -161,7 +155,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 epoch = 2;</code>
    * @return The epoch.
    */
-  @java.lang.Override
   public int getEpoch() {
     return epoch_;
   }
@@ -172,7 +165,6 @@ private static final long serialVersionUID = 0L;
    * <code>string map_provider = 3;</code>
    * @return The mapProvider.
    */
-  @java.lang.Override
   public java.lang.String getMapProvider() {
     java.lang.Object ref = mapProvider_;
     if (ref instanceof java.lang.String) {
@@ -189,7 +181,6 @@ private static final long serialVersionUID = 0L;
    * <code>string map_provider = 3;</code>
    * @return The bytes for mapProvider.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getMapProviderBytes() {
     java.lang.Object ref = mapProvider_;
@@ -209,14 +200,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.BoundingRect bounding_rect = 4;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.BoundingRect> getBoundingRectList() {
     return boundingRect_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.BoundingRect bounding_rect = 4;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.BoundingRectOrBuilder> 
       getBoundingRectOrBuilderList() {
     return boundingRect_;
@@ -224,21 +213,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.BoundingRect bounding_rect = 4;</code>
    */
-  @java.lang.Override
   public int getBoundingRectCount() {
     return boundingRect_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.BoundingRect bounding_rect = 4;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.BoundingRect getBoundingRect(int index) {
     return boundingRect_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.BoundingRect bounding_rect = 4;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.BoundingRectOrBuilder getBoundingRectOrBuilder(
       int index) {
     return boundingRect_.get(index);
@@ -433,10 +419,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.MapArea
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.MapArea}
    */
   public static final class Builder extends
@@ -722,7 +704,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 epoch = 2;</code>
      * @return The epoch.
      */
-    @java.lang.Override
     public int getEpoch() {
       return epoch_;
     }

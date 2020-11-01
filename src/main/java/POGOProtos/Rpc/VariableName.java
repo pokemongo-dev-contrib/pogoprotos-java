@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: DAKOAEGGPED
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.VariableName}
  */
 public enum VariableName
@@ -224,6 +220,30 @@ public enum VariableName
    * <code>VARIABLE_NAME_EVENT_ICON_URL = 1043;</code>
    */
   VARIABLE_NAME_EVENT_ICON_URL(1043),
+  /**
+   * <code>VARIABLE_NAME_DL_ACTION = 1100;</code>
+   */
+  VARIABLE_NAME_DL_ACTION(1100),
+  /**
+   * <code>VARIABLE_NAME_DL_CATEGORY = 1101;</code>
+   */
+  VARIABLE_NAME_DL_CATEGORY(1101),
+  /**
+   * <code>VARIABLE_NAME_DL_TAB = 1102;</code>
+   */
+  VARIABLE_NAME_DL_TAB(1102),
+  /**
+   * <code>VARIABLE_NAME_DL_SKU = 1103;</code>
+   */
+  VARIABLE_NAME_DL_SKU(1103),
+  /**
+   * <code>VARIABLE_NAME_DL_ICON = 1104;</code>
+   */
+  VARIABLE_NAME_DL_ICON(1104),
+  /**
+   * <code>VARIABLE_NAME_DL_ID = 1105;</code>
+   */
+  VARIABLE_NAME_DL_ID(1105),
   UNRECOGNIZED(-1),
   ;
 
@@ -439,6 +459,30 @@ public enum VariableName
    * <code>VARIABLE_NAME_EVENT_ICON_URL = 1043;</code>
    */
   public static final int VARIABLE_NAME_EVENT_ICON_URL_VALUE = 1043;
+  /**
+   * <code>VARIABLE_NAME_DL_ACTION = 1100;</code>
+   */
+  public static final int VARIABLE_NAME_DL_ACTION_VALUE = 1100;
+  /**
+   * <code>VARIABLE_NAME_DL_CATEGORY = 1101;</code>
+   */
+  public static final int VARIABLE_NAME_DL_CATEGORY_VALUE = 1101;
+  /**
+   * <code>VARIABLE_NAME_DL_TAB = 1102;</code>
+   */
+  public static final int VARIABLE_NAME_DL_TAB_VALUE = 1102;
+  /**
+   * <code>VARIABLE_NAME_DL_SKU = 1103;</code>
+   */
+  public static final int VARIABLE_NAME_DL_SKU_VALUE = 1103;
+  /**
+   * <code>VARIABLE_NAME_DL_ICON = 1104;</code>
+   */
+  public static final int VARIABLE_NAME_DL_ICON_VALUE = 1104;
+  /**
+   * <code>VARIABLE_NAME_DL_ID = 1105;</code>
+   */
+  public static final int VARIABLE_NAME_DL_ID_VALUE = 1105;
 
 
   public final int getNumber() {
@@ -518,6 +562,12 @@ public enum VariableName
       case 1041: return VARIABLE_NAME_RAID_INVITATION_DETAILS;
       case 1042: return VARIABLE_NAME_LOOT_ITEMS;
       case 1043: return VARIABLE_NAME_EVENT_ICON_URL;
+      case 1100: return VARIABLE_NAME_DL_ACTION;
+      case 1101: return VARIABLE_NAME_DL_CATEGORY;
+      case 1102: return VARIABLE_NAME_DL_TAB;
+      case 1103: return VARIABLE_NAME_DL_SKU;
+      case 1104: return VARIABLE_NAME_DL_ICON;
+      case 1105: return VARIABLE_NAME_DL_ID;
       default: return null;
     }
   }
@@ -536,10 +586,6 @@ public enum VariableName
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -548,7 +594,7 @@ public enum VariableName
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(41);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(145);
   }
 
   private static final VariableName[] VALUES = values();

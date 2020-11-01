@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Proto.TEMP.MapCompositionRoot
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.MapCompositionRoot}
  */
-public final class MapCompositionRoot extends
+public  final class MapCompositionRoot extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.MapCompositionRoot)
     MapCompositionRootOrBuilder {
@@ -129,14 +125,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.MapArea map_area = 1;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.MapArea> getMapAreaList() {
     return mapArea_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapArea map_area = 1;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.MapAreaOrBuilder> 
       getMapAreaOrBuilderList() {
     return mapArea_;
@@ -144,21 +138,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.MapArea map_area = 1;</code>
    */
-  @java.lang.Override
   public int getMapAreaCount() {
     return mapArea_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapArea map_area = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.MapArea getMapArea(int index) {
     return mapArea_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapArea map_area = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.MapAreaOrBuilder getMapAreaOrBuilder(
       int index) {
     return mapArea_.get(index);
@@ -169,14 +160,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.MapProvider map_provider = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.MapProvider> getMapProviderList() {
     return mapProvider_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapProvider map_provider = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.MapProviderOrBuilder> 
       getMapProviderOrBuilderList() {
     return mapProvider_;
@@ -184,21 +173,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.MapProvider map_provider = 2;</code>
    */
-  @java.lang.Override
   public int getMapProviderCount() {
     return mapProvider_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapProvider map_provider = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.MapProvider getMapProvider(int index) {
     return mapProvider_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapProvider map_provider = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.MapProviderOrBuilder getMapProviderOrBuilder(
       int index) {
     return mapProvider_.get(index);
@@ -209,14 +195,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.NamedMapSettings named_map_settings = 3;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.NamedMapSettings> getNamedMapSettingsList() {
     return namedMapSettings_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.NamedMapSettings named_map_settings = 3;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.NamedMapSettingsOrBuilder> 
       getNamedMapSettingsOrBuilderList() {
     return namedMapSettings_;
@@ -224,21 +208,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.NamedMapSettings named_map_settings = 3;</code>
    */
-  @java.lang.Override
   public int getNamedMapSettingsCount() {
     return namedMapSettings_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.NamedMapSettings named_map_settings = 3;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.NamedMapSettings getNamedMapSettings(int index) {
     return namedMapSettings_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.NamedMapSettings named_map_settings = 3;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.NamedMapSettingsOrBuilder getNamedMapSettingsOrBuilder(
       int index) {
     return namedMapSettings_.get(index);
@@ -428,10 +409,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.MapCompositionRoot
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.MapCompositionRoot}
    */
   public static final class Builder extends

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetInboxV2Proto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetInboxV2Proto}
  */
-public final class GetInboxV2Proto extends
+public  final class GetInboxV2Proto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetInboxV2Proto)
     GetInboxV2ProtoOrBuilder {
@@ -105,7 +101,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool is_history = 1;</code>
    * @return The isHistory.
    */
-  @java.lang.Override
   public boolean getIsHistory() {
     return isHistory_;
   }
@@ -116,7 +111,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool is_reverse = 2;</code>
    * @return The isReverse.
    */
-  @java.lang.Override
   public boolean getIsReverse() {
     return isReverse_;
   }
@@ -127,7 +121,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 not_before_ms = 3;</code>
    * @return The notBeforeMs.
    */
-  @java.lang.Override
   public long getNotBeforeMs() {
     return notBeforeMs_;
   }
@@ -313,10 +306,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetInboxV2Proto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetInboxV2Proto}
    */
   public static final class Builder extends
@@ -480,7 +469,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool is_history = 1;</code>
      * @return The isHistory.
      */
-    @java.lang.Override
     public boolean getIsHistory() {
       return isHistory_;
     }
@@ -511,7 +499,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool is_reverse = 2;</code>
      * @return The isReverse.
      */
-    @java.lang.Override
     public boolean getIsReverse() {
       return isReverse_;
     }
@@ -542,7 +529,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 not_before_ms = 3;</code>
      * @return The notBeforeMs.
      */
-    @java.lang.Override
     public long getNotBeforeMs() {
       return notBeforeMs_;
     }

@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: FEGCIOEMNLA
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.IncubationResult}
  */
 public enum IncubationResult
@@ -77,10 +73,6 @@ public enum IncubationResult
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -89,7 +81,7 @@ public enum IncubationResult
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(65);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(69);
   }
 
   private static final IncubationResult[] VALUES = values();

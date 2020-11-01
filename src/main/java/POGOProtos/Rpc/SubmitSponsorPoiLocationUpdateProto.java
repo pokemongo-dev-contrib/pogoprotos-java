@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.SubmitSponsorPoiLocationUpdateProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SubmitSponsorPoiLocationUpdateProto}
  */
-public final class SubmitSponsorPoiLocationUpdateProto extends
+public  final class SubmitSponsorPoiLocationUpdateProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SubmitSponsorPoiLocationUpdateProto)
     SubmitSponsorPoiLocationUpdateProtoOrBuilder {
@@ -110,7 +106,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The poiId.
    */
-  @java.lang.Override
   public java.lang.String getPoiId() {
     java.lang.Object ref = poiId_;
     if (ref instanceof java.lang.String) {
@@ -127,7 +122,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The bytes for poiId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPoiIdBytes() {
     java.lang.Object ref = poiId_;
@@ -148,7 +142,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.LocationE6Proto location = 2;</code>
    * @return Whether the location field is set.
    */
-  @java.lang.Override
   public boolean hasLocation() {
     return location_ != null;
   }
@@ -156,14 +149,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.LocationE6Proto location = 2;</code>
    * @return The location.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.LocationE6Proto getLocation() {
     return location_ == null ? POGOProtos.Rpc.LocationE6Proto.getDefaultInstance() : location_;
   }
   /**
    * <code>.POGOProtos.Rpc.LocationE6Proto location = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.LocationE6ProtoOrBuilder getLocationOrBuilder() {
     return getLocation();
   }
@@ -339,10 +330,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.SubmitSponsorPoiLocationUpdateProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SubmitSponsorPoiLocationUpdateProto}
    */
   public static final class Builder extends

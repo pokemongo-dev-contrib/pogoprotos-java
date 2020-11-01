@@ -4,33 +4,29 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: NLPCDDHPELG
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.EggIncubatorType}
  */
 public enum EggIncubatorType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>EGG_INCUBATOR_TYPE_INCUBATOR_UNSET = 0;</code>
+   * <code>INCUBATOR_UNSET = 0;</code>
    */
-  EGG_INCUBATOR_TYPE_INCUBATOR_UNSET(0),
+  INCUBATOR_UNSET(0),
   /**
-   * <code>EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE = 1;</code>
+   * <code>INCUBATOR_DISTANCE = 1;</code>
    */
-  EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE(1),
+  INCUBATOR_DISTANCE(1),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>EGG_INCUBATOR_TYPE_INCUBATOR_UNSET = 0;</code>
+   * <code>INCUBATOR_UNSET = 0;</code>
    */
-  public static final int EGG_INCUBATOR_TYPE_INCUBATOR_UNSET_VALUE = 0;
+  public static final int INCUBATOR_UNSET_VALUE = 0;
   /**
-   * <code>EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE = 1;</code>
+   * <code>INCUBATOR_DISTANCE = 1;</code>
    */
-  public static final int EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE_VALUE = 1;
+  public static final int INCUBATOR_DISTANCE_VALUE = 1;
 
 
   public final int getNumber() {
@@ -57,8 +53,8 @@ public enum EggIncubatorType
    */
   public static EggIncubatorType forNumber(int value) {
     switch (value) {
-      case 0: return EGG_INCUBATOR_TYPE_INCUBATOR_UNSET;
-      case 1: return EGG_INCUBATOR_TYPE_INCUBATOR_DISTANCE;
+      case 0: return INCUBATOR_UNSET;
+      case 1: return INCUBATOR_DISTANCE;
       default: return null;
     }
   }
@@ -77,10 +73,6 @@ public enum EggIncubatorType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -89,7 +81,7 @@ public enum EggIncubatorType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(118);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(36);
   }
 
   private static final EggIncubatorType[] VALUES = values();

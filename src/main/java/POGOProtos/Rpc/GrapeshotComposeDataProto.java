@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GrapeshotComposeDataProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GrapeshotComposeDataProto}
  */
-public final class GrapeshotComposeDataProto extends
+public  final class GrapeshotComposeDataProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GrapeshotComposeDataProto)
     GrapeshotComposeDataProtoOrBuilder {
@@ -117,7 +113,6 @@ private static final long serialVersionUID = 0L;
    * <code>string target_file_path = 1;</code>
    * @return The targetFilePath.
    */
-  @java.lang.Override
   public java.lang.String getTargetFilePath() {
     java.lang.Object ref = targetFilePath_;
     if (ref instanceof java.lang.String) {
@@ -134,7 +129,6 @@ private static final long serialVersionUID = 0L;
    * <code>string target_file_path = 1;</code>
    * @return The bytes for targetFilePath.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getTargetFilePathBytes() {
     java.lang.Object ref = targetFilePath_;
@@ -155,7 +149,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GrapeshotAuthenticationDataProto authentication = 2;</code>
    * @return Whether the authentication field is set.
    */
-  @java.lang.Override
   public boolean hasAuthentication() {
     return authentication_ != null;
   }
@@ -163,14 +156,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GrapeshotAuthenticationDataProto authentication = 2;</code>
    * @return The authentication.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GrapeshotAuthenticationDataProto getAuthentication() {
     return authentication_ == null ? POGOProtos.Rpc.GrapeshotAuthenticationDataProto.getDefaultInstance() : authentication_;
   }
   /**
    * <code>.POGOProtos.Rpc.GrapeshotAuthenticationDataProto authentication = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GrapeshotAuthenticationDataProtoOrBuilder getAuthenticationOrBuilder() {
     return getAuthentication();
   }
@@ -181,7 +172,6 @@ private static final long serialVersionUID = 0L;
    * <code>string hash = 3;</code>
    * @return The hash.
    */
-  @java.lang.Override
   public java.lang.String getHash() {
     java.lang.Object ref = hash_;
     if (ref instanceof java.lang.String) {
@@ -198,7 +188,6 @@ private static final long serialVersionUID = 0L;
    * <code>string hash = 3;</code>
    * @return The bytes for hash.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getHashBytes() {
     java.lang.Object ref = hash_;
@@ -394,10 +383,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GrapeshotComposeDataProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GrapeshotComposeDataProto}
    */
   public static final class Builder extends

@@ -8,19 +8,19 @@ public interface SendGiftOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.SendGiftOutProto.Result result = 1;</code>
-   * @return The enum numeric value on the wire for result.
+   * <code>.POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM jbflkcdndlp = 1;</code>
+   * @return The enum numeric value on the wire for jbflkcdndlp.
    */
-  int getResultValue();
+  int getJbflkcdndlpValue();
   /**
-   * <code>.POGOProtos.Rpc.SendGiftOutProto.Result result = 1;</code>
-   * @return The result.
+   * <code>.POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM jbflkcdndlp = 1;</code>
+   * @return The jbflkcdndlp.
    */
-  POGOProtos.Rpc.SendGiftOutProto.Result getResult();
+  POGOProtos.Rpc.SendGiftOutProto.JBFOOFNJHFM getJbflkcdndlp();
 
   /**
-   * <code>int32 awarded_xp = 2;</code>
-   * @return The awardedXp.
+   * <code>int32 chpnjmhlbdj = 2;</code>
+   * @return The chpnjmhlbdj.
    */
-  int getAwardedXp();
+  int getChpnjmhlbdj();
 }

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Rpc.DisplayWeatherProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.DisplayWeatherProto}
  */
-public final class DisplayWeatherProto extends
+public  final class DisplayWeatherProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.DisplayWeatherProto)
     DisplayWeatherProtoOrBuilder {
@@ -133,7 +129,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Rpc.DisplayWeatherProto/Types/DisplayLevel
+   * ref: Niantic.Rpc.DisplayWeatherProto.Types.DisplayLevel
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel}
@@ -223,10 +219,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -267,14 +259,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel cloud_level = 1;</code>
    * @return The enum numeric value on the wire for cloudLevel.
    */
-  @java.lang.Override public int getCloudLevelValue() {
+  public int getCloudLevelValue() {
     return cloudLevel_;
   }
   /**
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel cloud_level = 1;</code>
    * @return The cloudLevel.
    */
-  @java.lang.Override public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getCloudLevel() {
+  public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getCloudLevel() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(cloudLevel_);
     return result == null ? POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.UNRECOGNIZED : result;
@@ -286,14 +278,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel rain_level = 2;</code>
    * @return The enum numeric value on the wire for rainLevel.
    */
-  @java.lang.Override public int getRainLevelValue() {
+  public int getRainLevelValue() {
     return rainLevel_;
   }
   /**
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel rain_level = 2;</code>
    * @return The rainLevel.
    */
-  @java.lang.Override public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getRainLevel() {
+  public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getRainLevel() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(rainLevel_);
     return result == null ? POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.UNRECOGNIZED : result;
@@ -305,14 +297,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel wind_level = 3;</code>
    * @return The enum numeric value on the wire for windLevel.
    */
-  @java.lang.Override public int getWindLevelValue() {
+  public int getWindLevelValue() {
     return windLevel_;
   }
   /**
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel wind_level = 3;</code>
    * @return The windLevel.
    */
-  @java.lang.Override public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getWindLevel() {
+  public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getWindLevel() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(windLevel_);
     return result == null ? POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.UNRECOGNIZED : result;
@@ -324,14 +316,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel snow_level = 4;</code>
    * @return The enum numeric value on the wire for snowLevel.
    */
-  @java.lang.Override public int getSnowLevelValue() {
+  public int getSnowLevelValue() {
     return snowLevel_;
   }
   /**
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel snow_level = 4;</code>
    * @return The snowLevel.
    */
-  @java.lang.Override public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getSnowLevel() {
+  public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getSnowLevel() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(snowLevel_);
     return result == null ? POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.UNRECOGNIZED : result;
@@ -343,14 +335,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel fog_level = 5;</code>
    * @return The enum numeric value on the wire for fogLevel.
    */
-  @java.lang.Override public int getFogLevelValue() {
+  public int getFogLevelValue() {
     return fogLevel_;
   }
   /**
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel fog_level = 5;</code>
    * @return The fogLevel.
    */
-  @java.lang.Override public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getFogLevel() {
+  public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getFogLevel() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(fogLevel_);
     return result == null ? POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.UNRECOGNIZED : result;
@@ -362,7 +354,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 wind_direction = 6;</code>
    * @return The windDirection.
    */
-  @java.lang.Override
   public int getWindDirection() {
     return windDirection_;
   }
@@ -373,14 +364,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel special_effect_level = 7;</code>
    * @return The enum numeric value on the wire for specialEffectLevel.
    */
-  @java.lang.Override public int getSpecialEffectLevelValue() {
+  public int getSpecialEffectLevelValue() {
     return specialEffectLevel_;
   }
   /**
    * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel special_effect_level = 7;</code>
    * @return The specialEffectLevel.
    */
-  @java.lang.Override public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getSpecialEffectLevel() {
+  public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getSpecialEffectLevel() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(specialEffectLevel_);
     return result == null ? POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.UNRECOGNIZED : result;
@@ -602,10 +593,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Rpc.DisplayWeatherProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.DisplayWeatherProto}
    */
   public static final class Builder extends
@@ -793,7 +780,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel cloud_level = 1;</code>
      * @return The enum numeric value on the wire for cloudLevel.
      */
-    @java.lang.Override public int getCloudLevelValue() {
+    public int getCloudLevelValue() {
       return cloudLevel_;
     }
     /**
@@ -802,7 +789,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setCloudLevelValue(int value) {
-      
       cloudLevel_ = value;
       onChanged();
       return this;
@@ -811,7 +797,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel cloud_level = 1;</code>
      * @return The cloudLevel.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getCloudLevel() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(cloudLevel_);
@@ -847,7 +832,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel rain_level = 2;</code>
      * @return The enum numeric value on the wire for rainLevel.
      */
-    @java.lang.Override public int getRainLevelValue() {
+    public int getRainLevelValue() {
       return rainLevel_;
     }
     /**
@@ -856,7 +841,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setRainLevelValue(int value) {
-      
       rainLevel_ = value;
       onChanged();
       return this;
@@ -865,7 +849,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel rain_level = 2;</code>
      * @return The rainLevel.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getRainLevel() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(rainLevel_);
@@ -901,7 +884,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel wind_level = 3;</code>
      * @return The enum numeric value on the wire for windLevel.
      */
-    @java.lang.Override public int getWindLevelValue() {
+    public int getWindLevelValue() {
       return windLevel_;
     }
     /**
@@ -910,7 +893,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setWindLevelValue(int value) {
-      
       windLevel_ = value;
       onChanged();
       return this;
@@ -919,7 +901,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel wind_level = 3;</code>
      * @return The windLevel.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getWindLevel() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(windLevel_);
@@ -955,7 +936,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel snow_level = 4;</code>
      * @return The enum numeric value on the wire for snowLevel.
      */
-    @java.lang.Override public int getSnowLevelValue() {
+    public int getSnowLevelValue() {
       return snowLevel_;
     }
     /**
@@ -964,7 +945,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSnowLevelValue(int value) {
-      
       snowLevel_ = value;
       onChanged();
       return this;
@@ -973,7 +953,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel snow_level = 4;</code>
      * @return The snowLevel.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getSnowLevel() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(snowLevel_);
@@ -1009,7 +988,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel fog_level = 5;</code>
      * @return The enum numeric value on the wire for fogLevel.
      */
-    @java.lang.Override public int getFogLevelValue() {
+    public int getFogLevelValue() {
       return fogLevel_;
     }
     /**
@@ -1018,7 +997,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setFogLevelValue(int value) {
-      
       fogLevel_ = value;
       onChanged();
       return this;
@@ -1027,7 +1005,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel fog_level = 5;</code>
      * @return The fogLevel.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getFogLevel() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(fogLevel_);
@@ -1063,7 +1040,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 wind_direction = 6;</code>
      * @return The windDirection.
      */
-    @java.lang.Override
     public int getWindDirection() {
       return windDirection_;
     }
@@ -1094,7 +1070,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel special_effect_level = 7;</code>
      * @return The enum numeric value on the wire for specialEffectLevel.
      */
-    @java.lang.Override public int getSpecialEffectLevelValue() {
+    public int getSpecialEffectLevelValue() {
       return specialEffectLevel_;
     }
     /**
@@ -1103,7 +1079,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSpecialEffectLevelValue(int value) {
-      
       specialEffectLevel_ = value;
       onChanged();
       return this;
@@ -1112,7 +1087,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel special_effect_level = 7;</code>
      * @return The specialEffectLevel.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel getSpecialEffectLevel() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel result = POGOProtos.Rpc.DisplayWeatherProto.DisplayLevel.valueOf(specialEffectLevel_);

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: PlatformClientApiSettingsProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.PlatformClientApiSettingsProto}
  */
-public final class PlatformClientApiSettingsProto extends
+public  final class PlatformClientApiSettingsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PlatformClientApiSettingsProto)
     PlatformClientApiSettingsProtoOrBuilder {
@@ -92,7 +88,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: PlatformClientApiSettingsProto/Types/SettingsType
+   * ref: PlatformClientApiSettingsProto.Types.SettingsType
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.PlatformClientApiSettingsProto.SettingsType}
@@ -164,10 +160,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -208,7 +200,6 @@ private static final long serialVersionUID = 0L;
    * <code>bytes payload = 1;</code>
    * @return The payload.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString getPayload() {
     return payload_;
   }
@@ -369,10 +360,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: PlatformClientApiSettingsProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.PlatformClientApiSettingsProto}
    */
   public static final class Builder extends
@@ -524,7 +511,6 @@ private static final long serialVersionUID = 0L;
      * <code>bytes payload = 1;</code>
      * @return The payload.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getPayload() {
       return payload_;
     }

@@ -4,73 +4,69 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: EDEFPIJGDDP
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.HoloPokemonMovementType}
  */
 public enum HoloPokemonMovementType
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POKEMON_ENC_MOVEMENT_STATIC = 0;</code>
+   * <code>MOVEMENT_STATIC = 0;</code>
    */
-  POKEMON_ENC_MOVEMENT_STATIC(0),
+  MOVEMENT_STATIC(0),
   /**
-   * <code>POKEMON_ENC_MOVEMENT_JUMP = 1;</code>
+   * <code>MOVEMENT_JUMP = 1;</code>
    */
-  POKEMON_ENC_MOVEMENT_JUMP(1),
+  MOVEMENT_JUMP(1),
   /**
-   * <code>POKEMON_ENC_MOVEMENT_VERTICAL = 2;</code>
+   * <code>MOVEMENT_VERTICAL = 2;</code>
    */
-  POKEMON_ENC_MOVEMENT_VERTICAL(2),
+  MOVEMENT_VERTICAL(2),
   /**
-   * <code>POKEMON_ENC_MOVEMENT_PSYCHIC = 3;</code>
+   * <code>MOVEMENT_PSYCHIC = 3;</code>
    */
-  POKEMON_ENC_MOVEMENT_PSYCHIC(3),
+  MOVEMENT_PSYCHIC(3),
   /**
-   * <code>POKEMON_ENC_MOVEMENT_ELECTRIC = 4;</code>
+   * <code>MOVEMENT_ELECTRIC = 4;</code>
    */
-  POKEMON_ENC_MOVEMENT_ELECTRIC(4),
+  MOVEMENT_ELECTRIC(4),
   /**
-   * <code>POKEMON_ENC_MOVEMENT_FLYING = 5;</code>
+   * <code>MOVEMENT_FLYING = 5;</code>
    */
-  POKEMON_ENC_MOVEMENT_FLYING(5),
+  MOVEMENT_FLYING(5),
   /**
-   * <code>POKEMON_ENC_MOVEMENT_HOVERING = 6;</code>
+   * <code>MOVEMENT_HOVERING = 6;</code>
    */
-  POKEMON_ENC_MOVEMENT_HOVERING(6),
+  MOVEMENT_HOVERING(6),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POKEMON_ENC_MOVEMENT_STATIC = 0;</code>
+   * <code>MOVEMENT_STATIC = 0;</code>
    */
-  public static final int POKEMON_ENC_MOVEMENT_STATIC_VALUE = 0;
+  public static final int MOVEMENT_STATIC_VALUE = 0;
   /**
-   * <code>POKEMON_ENC_MOVEMENT_JUMP = 1;</code>
+   * <code>MOVEMENT_JUMP = 1;</code>
    */
-  public static final int POKEMON_ENC_MOVEMENT_JUMP_VALUE = 1;
+  public static final int MOVEMENT_JUMP_VALUE = 1;
   /**
-   * <code>POKEMON_ENC_MOVEMENT_VERTICAL = 2;</code>
+   * <code>MOVEMENT_VERTICAL = 2;</code>
    */
-  public static final int POKEMON_ENC_MOVEMENT_VERTICAL_VALUE = 2;
+  public static final int MOVEMENT_VERTICAL_VALUE = 2;
   /**
-   * <code>POKEMON_ENC_MOVEMENT_PSYCHIC = 3;</code>
+   * <code>MOVEMENT_PSYCHIC = 3;</code>
    */
-  public static final int POKEMON_ENC_MOVEMENT_PSYCHIC_VALUE = 3;
+  public static final int MOVEMENT_PSYCHIC_VALUE = 3;
   /**
-   * <code>POKEMON_ENC_MOVEMENT_ELECTRIC = 4;</code>
+   * <code>MOVEMENT_ELECTRIC = 4;</code>
    */
-  public static final int POKEMON_ENC_MOVEMENT_ELECTRIC_VALUE = 4;
+  public static final int MOVEMENT_ELECTRIC_VALUE = 4;
   /**
-   * <code>POKEMON_ENC_MOVEMENT_FLYING = 5;</code>
+   * <code>MOVEMENT_FLYING = 5;</code>
    */
-  public static final int POKEMON_ENC_MOVEMENT_FLYING_VALUE = 5;
+  public static final int MOVEMENT_FLYING_VALUE = 5;
   /**
-   * <code>POKEMON_ENC_MOVEMENT_HOVERING = 6;</code>
+   * <code>MOVEMENT_HOVERING = 6;</code>
    */
-  public static final int POKEMON_ENC_MOVEMENT_HOVERING_VALUE = 6;
+  public static final int MOVEMENT_HOVERING_VALUE = 6;
 
 
   public final int getNumber() {
@@ -97,13 +93,13 @@ public enum HoloPokemonMovementType
    */
   public static HoloPokemonMovementType forNumber(int value) {
     switch (value) {
-      case 0: return POKEMON_ENC_MOVEMENT_STATIC;
-      case 1: return POKEMON_ENC_MOVEMENT_JUMP;
-      case 2: return POKEMON_ENC_MOVEMENT_VERTICAL;
-      case 3: return POKEMON_ENC_MOVEMENT_PSYCHIC;
-      case 4: return POKEMON_ENC_MOVEMENT_ELECTRIC;
-      case 5: return POKEMON_ENC_MOVEMENT_FLYING;
-      case 6: return POKEMON_ENC_MOVEMENT_HOVERING;
+      case 0: return MOVEMENT_STATIC;
+      case 1: return MOVEMENT_JUMP;
+      case 2: return MOVEMENT_VERTICAL;
+      case 3: return MOVEMENT_PSYCHIC;
+      case 4: return MOVEMENT_ELECTRIC;
+      case 5: return MOVEMENT_FLYING;
+      case 6: return MOVEMENT_HOVERING;
       default: return null;
     }
   }
@@ -122,10 +118,6 @@ public enum HoloPokemonMovementType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -134,7 +126,7 @@ public enum HoloPokemonMovementType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(52);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(58);
   }
 
   private static final HoloPokemonMovementType[] VALUES = values();

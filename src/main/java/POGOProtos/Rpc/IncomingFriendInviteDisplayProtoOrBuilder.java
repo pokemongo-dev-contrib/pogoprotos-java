@@ -23,17 +23,17 @@ public interface IncomingFriendInviteDisplayProtoOrBuilder extends
   POGOProtos.Rpc.IncomingFriendInviteProtoOrBuilder getInviteOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+   * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
    * @return Whether the player field is set.
    */
   boolean hasPlayer();
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+   * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
    * @return The player.
    */
-  POGOProtos.Rpc.PlatformPlayerSummaryProto getPlayer();
+  POGOProtos.Rpc.PlayerSummaryProto getPlayer();
   /**
-   * <code>.POGOProtos.Rpc.PlatformPlayerSummaryProto player = 2;</code>
+   * <code>.POGOProtos.Rpc.PlayerSummaryProto player = 2;</code>
    */
-  POGOProtos.Rpc.PlatformPlayerSummaryProtoOrBuilder getPlayerOrBuilder();
+  POGOProtos.Rpc.PlayerSummaryProtoOrBuilder getPlayerOrBuilder();
 }

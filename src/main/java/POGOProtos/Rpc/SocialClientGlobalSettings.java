@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.SocialClientGlobalSettings
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SocialClientGlobalSettings}
  */
-public final class SocialClientGlobalSettings extends
+public  final class SocialClientGlobalSettings extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SocialClientGlobalSettings)
     SocialClientGlobalSettingsOrBuilder {
@@ -109,12 +105,12 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.SocialClientGlobalSettings/Types/CrossGameSocialSettingsProto
+   * ref: Niantic.Platform.Protos.SocialClientGlobalSettings.Types.CrossGameSocialSettingsProto
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.SocialClientGlobalSettings.CrossGameSocialSettingsProto}
    */
-  public static final class CrossGameSocialSettingsProto extends
+  public  static final class CrossGameSocialSettingsProto extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SocialClientGlobalSettings.CrossGameSocialSettingsProto)
       CrossGameSocialSettingsProtoOrBuilder {
@@ -199,7 +195,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool niantic_profile_codename_opt_out_enabled = 1;</code>
      * @return The nianticProfileCodenameOptOutEnabled.
      */
-    @java.lang.Override
     public boolean getNianticProfileCodenameOptOutEnabled() {
       return nianticProfileCodenameOptOutEnabled_;
     }
@@ -362,7 +357,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.SocialClientGlobalSettings/Types/CrossGameSocialSettingsProto
+     * ref: Niantic.Platform.Protos.SocialClientGlobalSettings.Types.CrossGameSocialSettingsProto
      * </pre>
      *
      * Protobuf type {@code POGOProtos.Rpc.SocialClientGlobalSettings.CrossGameSocialSettingsProto}
@@ -516,7 +511,6 @@ private static final long serialVersionUID = 0L;
        * <code>bool niantic_profile_codename_opt_out_enabled = 1;</code>
        * @return The nianticProfileCodenameOptOutEnabled.
        */
-      @java.lang.Override
       public boolean getNianticProfileCodenameOptOutEnabled() {
         return nianticProfileCodenameOptOutEnabled_;
       }
@@ -600,7 +594,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.SocialClientGlobalSettings.CrossGameSocialSettingsProto cross_game_social_settings = 1;</code>
    * @return Whether the crossGameSocialSettings field is set.
    */
-  @java.lang.Override
   public boolean hasCrossGameSocialSettings() {
     return crossGameSocialSettings_ != null;
   }
@@ -608,14 +601,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.SocialClientGlobalSettings.CrossGameSocialSettingsProto cross_game_social_settings = 1;</code>
    * @return The crossGameSocialSettings.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.SocialClientGlobalSettings.CrossGameSocialSettingsProto getCrossGameSocialSettings() {
     return crossGameSocialSettings_ == null ? POGOProtos.Rpc.SocialClientGlobalSettings.CrossGameSocialSettingsProto.getDefaultInstance() : crossGameSocialSettings_;
   }
   /**
    * <code>.POGOProtos.Rpc.SocialClientGlobalSettings.CrossGameSocialSettingsProto cross_game_social_settings = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.SocialClientGlobalSettings.CrossGameSocialSettingsProtoOrBuilder getCrossGameSocialSettingsOrBuilder() {
     return getCrossGameSocialSettings();
   }
@@ -781,10 +772,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.SocialClientGlobalSettings
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SocialClientGlobalSettings}
    */
   public static final class Builder extends

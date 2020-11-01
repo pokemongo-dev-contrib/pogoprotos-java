@@ -4,13 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End gamemaster -----
- *------------------------------
- *----- Begin gui -----
- * ref: Niantic.Platform.CrossGameSocial.Gui.GuiTransitionType
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.GuiTransitionType}
  */
 public enum GuiTransitionType
@@ -80,10 +73,6 @@ public enum GuiTransitionType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -92,7 +81,7 @@ public enum GuiTransitionType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(9);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(44);
   }
 
   private static final GuiTransitionType[] VALUES = values();

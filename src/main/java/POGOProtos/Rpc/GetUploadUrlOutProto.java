@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GetUploadUrlOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetUploadUrlOutProto}
  */
-public final class GetUploadUrlOutProto extends
+public  final class GetUploadUrlOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetUploadUrlOutProto)
     GetUploadUrlOutProtoOrBuilder {
@@ -133,7 +129,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Titan.Protos.GetUploadUrlOutProto/Types/Status
+   * ref: Niantic.Titan.Protos.GetUploadUrlOutProto.Types.Status
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GetUploadUrlOutProto.Status}
@@ -232,10 +228,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -276,14 +268,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GetUploadUrlOutProto.Status status = 1;</code>
    * @return The enum numeric value on the wire for status.
    */
-  @java.lang.Override public int getStatusValue() {
+  public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.GetUploadUrlOutProto.Status status = 1;</code>
    * @return The status.
    */
-  @java.lang.Override public POGOProtos.Rpc.GetUploadUrlOutProto.Status getStatus() {
+  public POGOProtos.Rpc.GetUploadUrlOutProto.Status getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GetUploadUrlOutProto.Status result = POGOProtos.Rpc.GetUploadUrlOutProto.Status.valueOf(status_);
     return result == null ? POGOProtos.Rpc.GetUploadUrlOutProto.Status.UNRECOGNIZED : result;
@@ -295,7 +287,6 @@ private static final long serialVersionUID = 0L;
    * <code>string signed_url = 2;</code>
    * @return The signedUrl.
    */
-  @java.lang.Override
   public java.lang.String getSignedUrl() {
     java.lang.Object ref = signedUrl_;
     if (ref instanceof java.lang.String) {
@@ -312,7 +303,6 @@ private static final long serialVersionUID = 0L;
    * <code>string signed_url = 2;</code>
    * @return The bytes for signedUrl.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getSignedUrlBytes() {
     java.lang.Object ref = signedUrl_;
@@ -333,7 +323,6 @@ private static final long serialVersionUID = 0L;
    * <code>string supporting_image_signed_url = 3;</code>
    * @return The supportingImageSignedUrl.
    */
-  @java.lang.Override
   public java.lang.String getSupportingImageSignedUrl() {
     java.lang.Object ref = supportingImageSignedUrl_;
     if (ref instanceof java.lang.String) {
@@ -350,7 +339,6 @@ private static final long serialVersionUID = 0L;
    * <code>string supporting_image_signed_url = 3;</code>
    * @return The bytes for supportingImageSignedUrl.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getSupportingImageSignedUrlBytes() {
     java.lang.Object ref = supportingImageSignedUrl_;
@@ -395,7 +383,6 @@ private static final long serialVersionUID = 0L;
    * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
    */
 
-  @java.lang.Override
   public boolean containsContextSignedUrls(
       java.lang.String key) {
     if (key == null) { throw new java.lang.NullPointerException(); }
@@ -404,7 +391,6 @@ private static final long serialVersionUID = 0L;
   /**
    * Use {@link #getContextSignedUrlsMap()} instead.
    */
-  @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, java.lang.String> getContextSignedUrls() {
     return getContextSignedUrlsMap();
@@ -412,7 +398,6 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
    */
-  @java.lang.Override
 
   public java.util.Map<java.lang.String, java.lang.String> getContextSignedUrlsMap() {
     return internalGetContextSignedUrls().getMap();
@@ -420,7 +405,6 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
    */
-  @java.lang.Override
 
   public java.lang.String getContextSignedUrlsOrDefault(
       java.lang.String key,
@@ -433,7 +417,6 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
    */
-  @java.lang.Override
 
   public java.lang.String getContextSignedUrlsOrThrow(
       java.lang.String key) {
@@ -643,10 +626,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GetUploadUrlOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetUploadUrlOutProto}
    */
   public static final class Builder extends
@@ -841,7 +820,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetUploadUrlOutProto.Status status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    public int getStatusValue() {
       return status_;
     }
     /**
@@ -850,7 +829,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
-      
       status_ = value;
       onChanged();
       return this;
@@ -859,7 +837,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetUploadUrlOutProto.Status status = 1;</code>
      * @return The status.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetUploadUrlOutProto.Status getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetUploadUrlOutProto.Status result = POGOProtos.Rpc.GetUploadUrlOutProto.Status.valueOf(status_);
@@ -1072,7 +1049,6 @@ private static final long serialVersionUID = 0L;
      * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
      */
 
-    @java.lang.Override
     public boolean containsContextSignedUrls(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
@@ -1081,7 +1057,6 @@ private static final long serialVersionUID = 0L;
     /**
      * Use {@link #getContextSignedUrlsMap()} instead.
      */
-    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, java.lang.String> getContextSignedUrls() {
       return getContextSignedUrlsMap();
@@ -1089,7 +1064,6 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
      */
-    @java.lang.Override
 
     public java.util.Map<java.lang.String, java.lang.String> getContextSignedUrlsMap() {
       return internalGetContextSignedUrls().getMap();
@@ -1097,7 +1071,6 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
      */
-    @java.lang.Override
 
     public java.lang.String getContextSignedUrlsOrDefault(
         java.lang.String key,
@@ -1110,7 +1083,6 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>map&lt;string, string&gt; context_signed_urls = 4;</code>
      */
-    @java.lang.Override
 
     public java.lang.String getContextSignedUrlsOrThrow(
         java.lang.String key) {

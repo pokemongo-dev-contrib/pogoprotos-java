@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.SubmitNewPoiProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SubmitNewPoiProto}
  */
-public final class SubmitNewPoiProto extends
+public  final class SubmitNewPoiProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SubmitNewPoiProto)
     SubmitNewPoiProtoOrBuilder {
@@ -126,7 +122,6 @@ private static final long serialVersionUID = 0L;
    * <code>string title = 1;</code>
    * @return The title.
    */
-  @java.lang.Override
   public java.lang.String getTitle() {
     java.lang.Object ref = title_;
     if (ref instanceof java.lang.String) {
@@ -143,7 +138,6 @@ private static final long serialVersionUID = 0L;
    * <code>string title = 1;</code>
    * @return The bytes for title.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getTitleBytes() {
     java.lang.Object ref = title_;
@@ -164,7 +158,6 @@ private static final long serialVersionUID = 0L;
    * <code>string long_description = 2;</code>
    * @return The longDescription.
    */
-  @java.lang.Override
   public java.lang.String getLongDescription() {
     java.lang.Object ref = longDescription_;
     if (ref instanceof java.lang.String) {
@@ -181,7 +174,6 @@ private static final long serialVersionUID = 0L;
    * <code>string long_description = 2;</code>
    * @return The bytes for longDescription.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getLongDescriptionBytes() {
     java.lang.Object ref = longDescription_;
@@ -202,7 +194,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 lat_e6 = 4;</code>
    * @return The latE6.
    */
-  @java.lang.Override
   public int getLatE6() {
     return latE6_;
   }
@@ -213,7 +204,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 lng_e6 = 5;</code>
    * @return The lngE6.
    */
-  @java.lang.Override
   public int getLngE6() {
     return lngE6_;
   }
@@ -224,7 +214,6 @@ private static final long serialVersionUID = 0L;
    * <code>string supporting_statement = 14;</code>
    * @return The supportingStatement.
    */
-  @java.lang.Override
   public java.lang.String getSupportingStatement() {
     java.lang.Object ref = supportingStatement_;
     if (ref instanceof java.lang.String) {
@@ -241,7 +230,6 @@ private static final long serialVersionUID = 0L;
    * <code>string supporting_statement = 14;</code>
    * @return The bytes for supportingStatement.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getSupportingStatementBytes() {
     java.lang.Object ref = supportingStatement_;
@@ -262,7 +250,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool async_file_upload = 18;</code>
    * @return The asyncFileUpload.
    */
-  @java.lang.Override
   public boolean getAsyncFileUpload() {
     return asyncFileUpload_;
   }
@@ -476,10 +463,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.SubmitNewPoiProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SubmitNewPoiProto}
    */
   public static final class Builder extends
@@ -816,7 +799,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 lat_e6 = 4;</code>
      * @return The latE6.
      */
-    @java.lang.Override
     public int getLatE6() {
       return latE6_;
     }
@@ -847,7 +829,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 lng_e6 = 5;</code>
      * @return The lngE6.
      */
-    @java.lang.Override
     public int getLngE6() {
       return lngE6_;
     }
@@ -954,7 +935,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool async_file_upload = 18;</code>
      * @return The asyncFileUpload.
      */
-    @java.lang.Override
     public boolean getAsyncFileUpload() {
       return asyncFileUpload_;
     }

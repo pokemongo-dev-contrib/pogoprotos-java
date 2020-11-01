@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: MGJNHEODAOB
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.MapEventsTelemetryIds}
  */
 public enum MapEventsTelemetryIds
@@ -167,10 +163,6 @@ public enum MapEventsTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -179,7 +171,7 @@ public enum MapEventsTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(108);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(77);
   }
 
   private static final MapEventsTelemetryIds[] VALUES = values();

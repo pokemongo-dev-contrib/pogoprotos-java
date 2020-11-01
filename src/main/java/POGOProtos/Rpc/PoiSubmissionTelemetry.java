@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Analytics.Telemetry.PoiSubmissionTelemetry
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.PoiSubmissionTelemetry}
  */
-public final class PoiSubmissionTelemetry extends
+public  final class PoiSubmissionTelemetry extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PoiSubmissionTelemetry)
     PoiSubmissionTelemetryOrBuilder {
@@ -107,7 +103,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Analytics.Telemetry.PoiSubmissionTelemetry/Types/PoiCameraStepIds
+   * ref: Niantic.Platform.Analytics.Telemetry.PoiSubmissionTelemetry.Types.PoiCameraStepIds
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds}
@@ -206,10 +202,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -246,7 +238,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Analytics.Telemetry.PoiSubmissionTelemetry/Types/PoiSubmissionGuiEventId
+   * ref: Niantic.Platform.Analytics.Telemetry.PoiSubmissionTelemetry.Types.PoiSubmissionGuiEventId
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId}
@@ -444,10 +436,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -488,14 +476,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId gui_event_id = 1;</code>
    * @return The enum numeric value on the wire for guiEventId.
    */
-  @java.lang.Override public int getGuiEventIdValue() {
+  public int getGuiEventIdValue() {
     return guiEventId_;
   }
   /**
    * <code>.POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId gui_event_id = 1;</code>
    * @return The guiEventId.
    */
-  @java.lang.Override public POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId getGuiEventId() {
+  public POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId getGuiEventId() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId result = POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId.valueOf(guiEventId_);
     return result == null ? POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId.UNRECOGNIZED : result;
@@ -507,14 +495,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
    * @return The enum numeric value on the wire for imageType.
    */
-  @java.lang.Override public int getImageTypeValue() {
+  public int getImageTypeValue() {
     return imageType_;
   }
   /**
    * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
    * @return The imageType.
    */
-  @java.lang.Override public POGOProtos.Rpc.PoiImageType getImageType() {
+  public POGOProtos.Rpc.PoiImageType getImageType() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.PoiImageType result = POGOProtos.Rpc.PoiImageType.valueOf(imageType_);
     return result == null ? POGOProtos.Rpc.PoiImageType.UNRECOGNIZED : result;
@@ -526,14 +514,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds camera_step_id = 3;</code>
    * @return The enum numeric value on the wire for cameraStepId.
    */
-  @java.lang.Override public int getCameraStepIdValue() {
+  public int getCameraStepIdValue() {
     return cameraStepId_;
   }
   /**
    * <code>.POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds camera_step_id = 3;</code>
    * @return The cameraStepId.
    */
-  @java.lang.Override public POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds getCameraStepId() {
+  public POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds getCameraStepId() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds result = POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds.valueOf(cameraStepId_);
     return result == null ? POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds.UNRECOGNIZED : result;
@@ -714,10 +702,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Analytics.Telemetry.PoiSubmissionTelemetry
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.PoiSubmissionTelemetry}
    */
   public static final class Builder extends
@@ -881,7 +865,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId gui_event_id = 1;</code>
      * @return The enum numeric value on the wire for guiEventId.
      */
-    @java.lang.Override public int getGuiEventIdValue() {
+    public int getGuiEventIdValue() {
       return guiEventId_;
     }
     /**
@@ -890,7 +874,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setGuiEventIdValue(int value) {
-      
       guiEventId_ = value;
       onChanged();
       return this;
@@ -899,7 +882,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId gui_event_id = 1;</code>
      * @return The guiEventId.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId getGuiEventId() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId result = POGOProtos.Rpc.PoiSubmissionTelemetry.PoiSubmissionGuiEventId.valueOf(guiEventId_);
@@ -935,7 +917,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
      * @return The enum numeric value on the wire for imageType.
      */
-    @java.lang.Override public int getImageTypeValue() {
+    public int getImageTypeValue() {
       return imageType_;
     }
     /**
@@ -944,7 +926,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setImageTypeValue(int value) {
-      
       imageType_ = value;
       onChanged();
       return this;
@@ -953,7 +934,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PoiImageType image_type = 2;</code>
      * @return The imageType.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.PoiImageType getImageType() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.PoiImageType result = POGOProtos.Rpc.PoiImageType.valueOf(imageType_);
@@ -989,7 +969,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds camera_step_id = 3;</code>
      * @return The enum numeric value on the wire for cameraStepId.
      */
-    @java.lang.Override public int getCameraStepIdValue() {
+    public int getCameraStepIdValue() {
       return cameraStepId_;
     }
     /**
@@ -998,7 +978,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setCameraStepIdValue(int value) {
-      
       cameraStepId_ = value;
       onChanged();
       return this;
@@ -1007,7 +986,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds camera_step_id = 3;</code>
      * @return The cameraStepId.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds getCameraStepId() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds result = POGOProtos.Rpc.PoiSubmissionTelemetry.PoiCameraStepIds.valueOf(cameraStepId_);

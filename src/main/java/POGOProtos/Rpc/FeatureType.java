@@ -4,13 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End auth -----
- *------------------------------
- *----- Begin crossgamesocial -----
- * ref: Niantic.Platform.CrossGameSocial.FeatureType
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.FeatureType}
  */
 public enum FeatureType
@@ -98,10 +91,6 @@ public enum FeatureType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -110,7 +99,7 @@ public enum FeatureType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(4);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(40);
   }
 
   private static final FeatureType[] VALUES = values();

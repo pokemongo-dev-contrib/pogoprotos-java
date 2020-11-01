@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: GJFIJGJHEOG
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.HoloPokemonMove}
  */
 public enum HoloPokemonMove
@@ -1148,6 +1144,14 @@ public enum HoloPokemonMove
    * <code>GUST_FAST = 345;</code>
    */
   GUST_FAST(345),
+  /**
+   * <code>INCINERATE_FAST = 346;</code>
+   */
+  INCINERATE_FAST(346),
+  /**
+   * <code>DARK_VOID = 347;</code>
+   */
+  DARK_VOID(347),
   UNRECOGNIZED(-1),
   ;
 
@@ -2287,6 +2291,14 @@ public enum HoloPokemonMove
    * <code>GUST_FAST = 345;</code>
    */
   public static final int GUST_FAST_VALUE = 345;
+  /**
+   * <code>INCINERATE_FAST = 346;</code>
+   */
+  public static final int INCINERATE_FAST_VALUE = 346;
+  /**
+   * <code>DARK_VOID = 347;</code>
+   */
+  public static final int DARK_VOID_VALUE = 347;
 
 
   public final int getNumber() {
@@ -2597,6 +2609,8 @@ public enum HoloPokemonMove
       case 343: return LEAF_STORM;
       case 344: return TRI_ATTACK;
       case 345: return GUST_FAST;
+      case 346: return INCINERATE_FAST;
+      case 347: return DARK_VOID;
       default: return null;
     }
   }
@@ -2615,10 +2629,6 @@ public enum HoloPokemonMove
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -2627,7 +2637,7 @@ public enum HoloPokemonMove
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(74);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(57);
   }
 
   private static final HoloPokemonMove[] VALUES = values();

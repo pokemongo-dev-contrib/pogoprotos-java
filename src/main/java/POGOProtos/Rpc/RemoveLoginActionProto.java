@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.RemoveLoginActionProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.RemoveLoginActionProto}
  */
-public final class RemoveLoginActionProto extends
+public  final class RemoveLoginActionProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.RemoveLoginActionProto)
     RemoveLoginActionProtoOrBuilder {
@@ -104,14 +100,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
    * @return The enum numeric value on the wire for identityProvider.
    */
-  @java.lang.Override public int getIdentityProviderValue() {
+  public int getIdentityProviderValue() {
     return identityProvider_;
   }
   /**
    * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
    * @return The identityProvider.
    */
-  @java.lang.Override public POGOProtos.Rpc.IdentityProvider getIdentityProvider() {
+  public POGOProtos.Rpc.IdentityProvider getIdentityProvider() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.IdentityProvider result = POGOProtos.Rpc.IdentityProvider.valueOf(identityProvider_);
     return result == null ? POGOProtos.Rpc.IdentityProvider.UNRECOGNIZED : result;
@@ -123,7 +119,6 @@ private static final long serialVersionUID = 0L;
    * <code>string auth_provider_id = 2;</code>
    * @return The authProviderId.
    */
-  @java.lang.Override
   public java.lang.String getAuthProviderId() {
     java.lang.Object ref = authProviderId_;
     if (ref instanceof java.lang.String) {
@@ -140,7 +135,6 @@ private static final long serialVersionUID = 0L;
    * <code>string auth_provider_id = 2;</code>
    * @return The bytes for authProviderId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getAuthProviderIdBytes() {
     java.lang.Object ref = authProviderId_;
@@ -320,10 +314,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.RemoveLoginActionProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.RemoveLoginActionProto}
    */
   public static final class Builder extends
@@ -482,7 +472,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
      * @return The enum numeric value on the wire for identityProvider.
      */
-    @java.lang.Override public int getIdentityProviderValue() {
+    public int getIdentityProviderValue() {
       return identityProvider_;
     }
     /**
@@ -491,7 +481,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setIdentityProviderValue(int value) {
-      
       identityProvider_ = value;
       onChanged();
       return this;
@@ -500,7 +489,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.IdentityProvider identity_provider = 1;</code>
      * @return The identityProvider.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.IdentityProvider getIdentityProvider() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.IdentityProvider result = POGOProtos.Rpc.IdentityProvider.valueOf(identityProvider_);

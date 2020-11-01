@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Proto.TEMP.BoundingRect
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.BoundingRect}
  */
-public final class BoundingRect extends
+public  final class BoundingRect extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.BoundingRect)
     BoundingRectOrBuilder {
@@ -110,7 +106,6 @@ private static final long serialVersionUID = 0L;
    * <code>double north = 1;</code>
    * @return The north.
    */
-  @java.lang.Override
   public double getNorth() {
     return north_;
   }
@@ -121,7 +116,6 @@ private static final long serialVersionUID = 0L;
    * <code>double south = 2;</code>
    * @return The south.
    */
-  @java.lang.Override
   public double getSouth() {
     return south_;
   }
@@ -132,7 +126,6 @@ private static final long serialVersionUID = 0L;
    * <code>double east = 3;</code>
    * @return The east.
    */
-  @java.lang.Override
   public double getEast() {
     return east_;
   }
@@ -143,7 +136,6 @@ private static final long serialVersionUID = 0L;
    * <code>double west = 4;</code>
    * @return The west.
    */
-  @java.lang.Override
   public double getWest() {
     return west_;
   }
@@ -345,10 +337,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.BoundingRect
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.BoundingRect}
    */
   public static final class Builder extends
@@ -518,7 +506,6 @@ private static final long serialVersionUID = 0L;
      * <code>double north = 1;</code>
      * @return The north.
      */
-    @java.lang.Override
     public double getNorth() {
       return north_;
     }
@@ -549,7 +536,6 @@ private static final long serialVersionUID = 0L;
      * <code>double south = 2;</code>
      * @return The south.
      */
-    @java.lang.Override
     public double getSouth() {
       return south_;
     }
@@ -580,7 +566,6 @@ private static final long serialVersionUID = 0L;
      * <code>double east = 3;</code>
      * @return The east.
      */
-    @java.lang.Override
     public double getEast() {
       return east_;
     }
@@ -611,7 +596,6 @@ private static final long serialVersionUID = 0L;
      * <code>double west = 4;</code>
      * @return The west.
      */
-    @java.lang.Override
     public double getWest() {
       return west_;
     }

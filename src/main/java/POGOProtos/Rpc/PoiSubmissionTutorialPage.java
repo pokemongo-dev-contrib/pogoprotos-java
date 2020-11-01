@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: AOPBEDEKKHP
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.PoiSubmissionTutorialPage}
  */
 public enum PoiSubmissionTutorialPage
@@ -95,10 +91,6 @@ public enum PoiSubmissionTutorialPage
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -107,7 +99,7 @@ public enum PoiSubmissionTutorialPage
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(27);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(110);
   }
 
   private static final PoiSubmissionTutorialPage[] VALUES = values();

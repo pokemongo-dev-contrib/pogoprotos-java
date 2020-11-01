@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetIncomingFriendInvitesOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetIncomingFriendInvitesOutProto}
  */
-public final class GetIncomingFriendInvitesOutProto extends
+public  final class GetIncomingFriendInvitesOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetIncomingFriendInvitesOutProto)
     GetIncomingFriendInvitesOutProtoOrBuilder {
@@ -107,7 +103,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetIncomingFriendInvitesOutProto/Types/Result
+   * ref: Niantic.Platform.Protos.GetIncomingFriendInvitesOutProto.Types.Result
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result}
@@ -188,10 +184,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -232,14 +224,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result result = 1;</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  public int getResultValue() {
     return result_;
   }
   /**
    * <code>.POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result result = 1;</code>
    * @return The result.
    */
-  @java.lang.Override public POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result getResult() {
+  public POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result getResult() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result result = POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result.valueOf(result_);
     return result == null ? POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result.UNRECOGNIZED : result;
@@ -250,14 +242,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.IncomingFriendInviteDisplayProto invites = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.IncomingFriendInviteDisplayProto> getInvitesList() {
     return invites_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.IncomingFriendInviteDisplayProto invites = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.IncomingFriendInviteDisplayProtoOrBuilder> 
       getInvitesOrBuilderList() {
     return invites_;
@@ -265,21 +255,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.IncomingFriendInviteDisplayProto invites = 2;</code>
    */
-  @java.lang.Override
   public int getInvitesCount() {
     return invites_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.IncomingFriendInviteDisplayProto invites = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.IncomingFriendInviteDisplayProto getInvites(int index) {
     return invites_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.IncomingFriendInviteDisplayProto invites = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.IncomingFriendInviteDisplayProtoOrBuilder getInvitesOrBuilder(
       int index) {
     return invites_.get(index);
@@ -453,10 +440,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetIncomingFriendInvitesOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetIncomingFriendInvitesOutProto}
    */
   public static final class Builder extends
@@ -652,7 +635,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    public int getResultValue() {
       return result_;
     }
     /**
@@ -661,7 +644,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResultValue(int value) {
-      
       result_ = value;
       onChanged();
       return this;
@@ -670,7 +652,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result result = 1;</code>
      * @return The result.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result result = POGOProtos.Rpc.GetIncomingFriendInvitesOutProto.Result.valueOf(result_);

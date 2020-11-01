@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: CMENIMEKJNN
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.RemoteRaidTelemetryIds}
  */
 public enum RemoteRaidTelemetryIds
@@ -104,10 +100,6 @@ public enum RemoteRaidTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -116,7 +108,7 @@ public enum RemoteRaidTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(39);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(128);
   }
 
   private static final RemoteRaidTelemetryIds[] VALUES = values();

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Com.Nianticproject.Platform.ProxyResponseProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.ProxyResponseProto}
  */
-public final class ProxyResponseProto extends
+public  final class ProxyResponseProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.ProxyResponseProto)
     ProxyResponseProtoOrBuilder {
@@ -106,7 +102,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Com.Nianticproject.Platform.ProxyResponseProto/Types/Status
+   * ref: Com.Nianticproject.Platform.ProxyResponseProto.Types.Status
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.ProxyResponseProto.Status}
@@ -259,10 +255,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -303,14 +295,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.ProxyResponseProto.Status status = 1;</code>
    * @return The enum numeric value on the wire for status.
    */
-  @java.lang.Override public int getStatusValue() {
+  public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.ProxyResponseProto.Status status = 1;</code>
    * @return The status.
    */
-  @java.lang.Override public POGOProtos.Rpc.ProxyResponseProto.Status getStatus() {
+  public POGOProtos.Rpc.ProxyResponseProto.Status getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.ProxyResponseProto.Status result = POGOProtos.Rpc.ProxyResponseProto.Status.valueOf(status_);
     return result == null ? POGOProtos.Rpc.ProxyResponseProto.Status.UNRECOGNIZED : result;
@@ -322,7 +314,6 @@ private static final long serialVersionUID = 0L;
    * <code>string assigned_host = 2;</code>
    * @return The assignedHost.
    */
-  @java.lang.Override
   public java.lang.String getAssignedHost() {
     java.lang.Object ref = assignedHost_;
     if (ref instanceof java.lang.String) {
@@ -339,7 +330,6 @@ private static final long serialVersionUID = 0L;
    * <code>string assigned_host = 2;</code>
    * @return The bytes for assignedHost.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getAssignedHostBytes() {
     java.lang.Object ref = assignedHost_;
@@ -360,7 +350,6 @@ private static final long serialVersionUID = 0L;
    * <code>bytes payload = 3;</code>
    * @return The payload.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString getPayload() {
     return payload_;
   }
@@ -541,10 +530,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Com.Nianticproject.Platform.ProxyResponseProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.ProxyResponseProto}
    */
   public static final class Builder extends
@@ -709,7 +694,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.ProxyResponseProto.Status status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    public int getStatusValue() {
       return status_;
     }
     /**
@@ -718,7 +703,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
-      
       status_ = value;
       onChanged();
       return this;
@@ -727,7 +711,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.ProxyResponseProto.Status status = 1;</code>
      * @return The status.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.ProxyResponseProto.Status getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.ProxyResponseProto.Status result = POGOProtos.Rpc.ProxyResponseProto.Status.valueOf(status_);
@@ -839,7 +822,6 @@ private static final long serialVersionUID = 0L;
      * <code>bytes payload = 3;</code>
      * @return The payload.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getPayload() {
       return payload_;
     }

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetFriendsListProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetFriendsListProto}
  */
-public final class GetFriendsListProto extends
+public  final class GetFriendsListProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFriendsListProto)
     GetFriendsListProtoOrBuilder {
@@ -229,10 +225,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendsListProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetFriendsListProto}
    */
   public static final class Builder extends

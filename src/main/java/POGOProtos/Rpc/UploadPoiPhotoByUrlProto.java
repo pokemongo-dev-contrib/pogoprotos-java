@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.UploadPoiPhotoByUrlProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.UploadPoiPhotoByUrlProto}
  */
-public final class UploadPoiPhotoByUrlProto extends
+public  final class UploadPoiPhotoByUrlProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UploadPoiPhotoByUrlProto)
     UploadPoiPhotoByUrlProtoOrBuilder {
@@ -104,7 +100,6 @@ private static final long serialVersionUID = 0L;
    * <code>string request_id = 1;</code>
    * @return The requestId.
    */
-  @java.lang.Override
   public java.lang.String getRequestId() {
     java.lang.Object ref = requestId_;
     if (ref instanceof java.lang.String) {
@@ -121,7 +116,6 @@ private static final long serialVersionUID = 0L;
    * <code>string request_id = 1;</code>
    * @return The bytes for requestId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getRequestIdBytes() {
     java.lang.Object ref = requestId_;
@@ -142,7 +136,6 @@ private static final long serialVersionUID = 0L;
    * <code>string image_url = 2;</code>
    * @return The imageUrl.
    */
-  @java.lang.Override
   public java.lang.String getImageUrl() {
     java.lang.Object ref = imageUrl_;
     if (ref instanceof java.lang.String) {
@@ -159,7 +152,6 @@ private static final long serialVersionUID = 0L;
    * <code>string image_url = 2;</code>
    * @return The bytes for imageUrl.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getImageUrlBytes() {
     java.lang.Object ref = imageUrl_;
@@ -339,10 +331,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.UploadPoiPhotoByUrlProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.UploadPoiPhotoByUrlProto}
    */
   public static final class Builder extends

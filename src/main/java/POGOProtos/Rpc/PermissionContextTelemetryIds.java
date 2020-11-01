@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: DCEGKMMBIOF
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.PermissionContextTelemetryIds}
  */
 public enum PermissionContextTelemetryIds
@@ -131,10 +127,6 @@ public enum PermissionContextTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -143,7 +135,7 @@ public enum PermissionContextTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(43);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(95);
   }
 
   private static final PermissionContextTelemetryIds[] VALUES = values();

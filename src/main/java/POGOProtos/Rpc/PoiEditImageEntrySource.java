@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Core.Analytics.PoiEditImageEntrySource
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.PoiEditImageEntrySource}
  */
 public enum PoiEditImageEntrySource
@@ -77,10 +73,6 @@ public enum PoiEditImageEntrySource
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -89,7 +81,7 @@ public enum PoiEditImageEntrySource
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(1);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(107);
   }
 
   private static final PoiEditImageEntrySource[] VALUES = values();

@@ -8,45 +8,45 @@ public interface GetNpcCombatRewardsOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = 1;</code>
-   * @return The enum numeric value on the wire for result.
+   * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA jbflkcdndlp = 1;</code>
+   * @return The enum numeric value on the wire for jbflkcdndlp.
    */
-  int getResultValue();
+  int getJbflkcdndlpValue();
   /**
-   * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result result = 1;</code>
-   * @return The result.
+   * <code>.POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA jbflkcdndlp = 1;</code>
+   * @return The jbflkcdndlp.
    */
-  POGOProtos.Rpc.GetNpcCombatRewardsOutProto.Result getResult();
+  POGOProtos.Rpc.GetNpcCombatRewardsOutProto.KLOJLCLKIIA getJbflkcdndlp();
 
   /**
-   * <code>.POGOProtos.Rpc.CombatRewardStatus reward_status = 2;</code>
-   * @return The enum numeric value on the wire for rewardStatus.
+   * <code>.POGOProtos.Rpc.CombatRewardStatus kefbliennnk = 2;</code>
+   * @return The enum numeric value on the wire for kefbliennnk.
    */
-  int getRewardStatusValue();
+  int getKefbliennnkValue();
   /**
-   * <code>.POGOProtos.Rpc.CombatRewardStatus reward_status = 2;</code>
-   * @return The rewardStatus.
+   * <code>.POGOProtos.Rpc.CombatRewardStatus kefbliennnk = 2;</code>
+   * @return The kefbliennnk.
    */
-  POGOProtos.Rpc.CombatRewardStatus getRewardStatus();
+  POGOProtos.Rpc.CombatRewardStatus getKefbliennnk();
 
   /**
-   * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
-   * @return Whether the rewards field is set.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
+   * @return Whether the decnioaacdg field is set.
    */
-  boolean hasRewards();
+  boolean hasDecnioaacdg();
   /**
-   * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
-   * @return The rewards.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
+   * @return The decnioaacdg.
    */
-  POGOProtos.Rpc.LootProto getRewards();
+  POGOProtos.Rpc.JMFCJOMHILG getDecnioaacdg();
   /**
-   * <code>.POGOProtos.Rpc.LootProto rewards = 3;</code>
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG decnioaacdg = 3;</code>
    */
-  POGOProtos.Rpc.LootProtoOrBuilder getRewardsOrBuilder();
+  POGOProtos.Rpc.JMFCJOMHILGOrBuilder getDecnioaacdgOrBuilder();
 
   /**
-   * <code>int32 number_rewarded_npc_battles_today = 4;</code>
-   * @return The numberRewardedNpcBattlesToday.
+   * <code>int32 idjojldglhi = 4;</code>
+   * @return The idjojldglhi.
    */
-  int getNumberRewardedNpcBattlesToday();
+  int getIdjojldglhi();
 }

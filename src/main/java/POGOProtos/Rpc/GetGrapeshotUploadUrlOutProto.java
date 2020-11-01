@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GetGrapeshotUploadUrlOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto}
  */
-public final class GetGrapeshotUploadUrlOutProto extends
+public  final class GetGrapeshotUploadUrlOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto)
     GetGrapeshotUploadUrlOutProtoOrBuilder {
@@ -119,7 +115,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Titan.Protos.GetGrapeshotUploadUrlOutProto/Types/Status
+   * ref: Niantic.Titan.Protos.GetGrapeshotUploadUrlOutProto.Types.Status
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status}
@@ -236,10 +232,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -280,14 +272,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status status = 1;</code>
    * @return The enum numeric value on the wire for status.
    */
-  @java.lang.Override public int getStatusValue() {
+  public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status status = 1;</code>
    * @return The status.
    */
-  @java.lang.Override public POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status getStatus() {
+  public POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status result = POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status.valueOf(status_);
     return result == null ? POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status.UNRECOGNIZED : result;
@@ -323,7 +315,6 @@ private static final long serialVersionUID = 0L;
    * <code>map&lt;string, .POGOProtos.Rpc.GrapeshotUploadingDataProto&gt; file_context_to_grapeshot_data = 4;</code>
    */
 
-  @java.lang.Override
   public boolean containsFileContextToGrapeshotData(
       java.lang.String key) {
     if (key == null) { throw new java.lang.NullPointerException(); }
@@ -332,7 +323,6 @@ private static final long serialVersionUID = 0L;
   /**
    * Use {@link #getFileContextToGrapeshotDataMap()} instead.
    */
-  @java.lang.Override
   @java.lang.Deprecated
   public java.util.Map<java.lang.String, POGOProtos.Rpc.GrapeshotUploadingDataProto> getFileContextToGrapeshotData() {
     return getFileContextToGrapeshotDataMap();
@@ -340,7 +330,6 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>map&lt;string, .POGOProtos.Rpc.GrapeshotUploadingDataProto&gt; file_context_to_grapeshot_data = 4;</code>
    */
-  @java.lang.Override
 
   public java.util.Map<java.lang.String, POGOProtos.Rpc.GrapeshotUploadingDataProto> getFileContextToGrapeshotDataMap() {
     return internalGetFileContextToGrapeshotData().getMap();
@@ -348,7 +337,6 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>map&lt;string, .POGOProtos.Rpc.GrapeshotUploadingDataProto&gt; file_context_to_grapeshot_data = 4;</code>
    */
-  @java.lang.Override
 
   public POGOProtos.Rpc.GrapeshotUploadingDataProto getFileContextToGrapeshotDataOrDefault(
       java.lang.String key,
@@ -361,7 +349,6 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>map&lt;string, .POGOProtos.Rpc.GrapeshotUploadingDataProto&gt; file_context_to_grapeshot_data = 4;</code>
    */
-  @java.lang.Override
 
   public POGOProtos.Rpc.GrapeshotUploadingDataProto getFileContextToGrapeshotDataOrThrow(
       java.lang.String key) {
@@ -551,10 +538,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GetGrapeshotUploadUrlOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto}
    */
   public static final class Builder extends
@@ -735,7 +718,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    public int getStatusValue() {
       return status_;
     }
     /**
@@ -744,7 +727,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
-      
       status_ = value;
       onChanged();
       return this;
@@ -753,7 +735,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status status = 1;</code>
      * @return The status.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status result = POGOProtos.Rpc.GetGrapeshotUploadUrlOutProto.Status.valueOf(status_);
@@ -814,7 +795,6 @@ private static final long serialVersionUID = 0L;
      * <code>map&lt;string, .POGOProtos.Rpc.GrapeshotUploadingDataProto&gt; file_context_to_grapeshot_data = 4;</code>
      */
 
-    @java.lang.Override
     public boolean containsFileContextToGrapeshotData(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
@@ -823,7 +803,6 @@ private static final long serialVersionUID = 0L;
     /**
      * Use {@link #getFileContextToGrapeshotDataMap()} instead.
      */
-    @java.lang.Override
     @java.lang.Deprecated
     public java.util.Map<java.lang.String, POGOProtos.Rpc.GrapeshotUploadingDataProto> getFileContextToGrapeshotData() {
       return getFileContextToGrapeshotDataMap();
@@ -831,7 +810,6 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>map&lt;string, .POGOProtos.Rpc.GrapeshotUploadingDataProto&gt; file_context_to_grapeshot_data = 4;</code>
      */
-    @java.lang.Override
 
     public java.util.Map<java.lang.String, POGOProtos.Rpc.GrapeshotUploadingDataProto> getFileContextToGrapeshotDataMap() {
       return internalGetFileContextToGrapeshotData().getMap();
@@ -839,7 +817,6 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>map&lt;string, .POGOProtos.Rpc.GrapeshotUploadingDataProto&gt; file_context_to_grapeshot_data = 4;</code>
      */
-    @java.lang.Override
 
     public POGOProtos.Rpc.GrapeshotUploadingDataProto getFileContextToGrapeshotDataOrDefault(
         java.lang.String key,
@@ -852,7 +829,6 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>map&lt;string, .POGOProtos.Rpc.GrapeshotUploadingDataProto&gt; file_context_to_grapeshot_data = 4;</code>
      */
-    @java.lang.Override
 
     public POGOProtos.Rpc.GrapeshotUploadingDataProto getFileContextToGrapeshotDataOrThrow(
         java.lang.String key) {

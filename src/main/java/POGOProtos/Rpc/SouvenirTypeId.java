@@ -4,161 +4,157 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: JINLCGIFHEH
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.SouvenirTypeId}
  */
 public enum SouvenirTypeId
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_UNSET = 0;</code>
+   * <code>SOUVENIR_UNSET = 0;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_UNSET(0),
+  SOUVENIR_UNSET(0),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_LONE_EARRING = 1;</code>
+   * <code>SOUVENIR_LONE_EARRING = 1;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_LONE_EARRING(1),
+  SOUVENIR_LONE_EARRING(1),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_SMALL_BOUQUET = 2;</code>
+   * <code>SOUVENIR_SMALL_BOUQUET = 2;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_SMALL_BOUQUET(2),
+  SOUVENIR_SMALL_BOUQUET(2),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_SKIPPING_STONE = 3;</code>
+   * <code>SOUVENIR_SKIPPING_STONE = 3;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_SKIPPING_STONE(3),
+  SOUVENIR_SKIPPING_STONE(3),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_BEACH_GLASS = 4;</code>
+   * <code>SOUVENIR_BEACH_GLASS = 4;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_BEACH_GLASS(4),
+  SOUVENIR_BEACH_GLASS(4),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_TROPICAL_SHELL = 5;</code>
+   * <code>SOUVENIR_TROPICAL_SHELL = 5;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_TROPICAL_SHELL(5),
+  SOUVENIR_TROPICAL_SHELL(5),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_MUSHROOM = 6;</code>
+   * <code>SOUVENIR_MUSHROOM = 6;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_MUSHROOM(6),
+  SOUVENIR_MUSHROOM(6),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_CHALKY_STONE = 7;</code>
+   * <code>SOUVENIR_CHALKY_STONE = 7;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_CHALKY_STONE(7),
+  SOUVENIR_CHALKY_STONE(7),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_PINECONE = 8;</code>
+   * <code>SOUVENIR_PINECONE = 8;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_PINECONE(8),
+  SOUVENIR_PINECONE(8),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_TROPICAL_FLOWER = 9;</code>
+   * <code>SOUVENIR_TROPICAL_FLOWER = 9;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_TROPICAL_FLOWER(9),
+  SOUVENIR_TROPICAL_FLOWER(9),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_FLOWER_FRUITS = 10;</code>
+   * <code>SOUVENIR_FLOWER_FRUITS = 10;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_FLOWER_FRUITS(10),
+  SOUVENIR_FLOWER_FRUITS(10),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_CACTUS_FLOWER = 11;</code>
+   * <code>SOUVENIR_CACTUS_FLOWER = 11;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_CACTUS_FLOWER(11),
+  SOUVENIR_CACTUS_FLOWER(11),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_STRETCHY_SPRING = 12;</code>
+   * <code>SOUVENIR_STRETCHY_SPRING = 12;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_STRETCHY_SPRING(12),
+  SOUVENIR_STRETCHY_SPRING(12),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_MARBLE = 13;</code>
+   * <code>SOUVENIR_MARBLE = 13;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_MARBLE(13),
+  SOUVENIR_MARBLE(13),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_TORN_TICKET = 14;</code>
+   * <code>SOUVENIR_TORN_TICKET = 14;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_TORN_TICKET(14),
+  SOUVENIR_TORN_TICKET(14),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_PRETTY_LEAF = 15;</code>
+   * <code>SOUVENIR_PRETTY_LEAF = 15;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_PRETTY_LEAF(15),
+  SOUVENIR_PRETTY_LEAF(15),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_CONFETTI = 16;</code>
+   * <code>SOUVENIR_CONFETTI = 16;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_CONFETTI(16),
+  SOUVENIR_CONFETTI(16),
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_PIKACHU_VISOR = 17;</code>
+   * <code>SOUVENIR_PIKACHU_VISOR = 17;</code>
    */
-  SOUVENIR_TYPE_ID_SOUVENIR_PIKACHU_VISOR(17),
+  SOUVENIR_PIKACHU_VISOR(17),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_UNSET = 0;</code>
+   * <code>SOUVENIR_UNSET = 0;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_UNSET_VALUE = 0;
+  public static final int SOUVENIR_UNSET_VALUE = 0;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_LONE_EARRING = 1;</code>
+   * <code>SOUVENIR_LONE_EARRING = 1;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_LONE_EARRING_VALUE = 1;
+  public static final int SOUVENIR_LONE_EARRING_VALUE = 1;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_SMALL_BOUQUET = 2;</code>
+   * <code>SOUVENIR_SMALL_BOUQUET = 2;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_SMALL_BOUQUET_VALUE = 2;
+  public static final int SOUVENIR_SMALL_BOUQUET_VALUE = 2;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_SKIPPING_STONE = 3;</code>
+   * <code>SOUVENIR_SKIPPING_STONE = 3;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_SKIPPING_STONE_VALUE = 3;
+  public static final int SOUVENIR_SKIPPING_STONE_VALUE = 3;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_BEACH_GLASS = 4;</code>
+   * <code>SOUVENIR_BEACH_GLASS = 4;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_BEACH_GLASS_VALUE = 4;
+  public static final int SOUVENIR_BEACH_GLASS_VALUE = 4;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_TROPICAL_SHELL = 5;</code>
+   * <code>SOUVENIR_TROPICAL_SHELL = 5;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_TROPICAL_SHELL_VALUE = 5;
+  public static final int SOUVENIR_TROPICAL_SHELL_VALUE = 5;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_MUSHROOM = 6;</code>
+   * <code>SOUVENIR_MUSHROOM = 6;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_MUSHROOM_VALUE = 6;
+  public static final int SOUVENIR_MUSHROOM_VALUE = 6;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_CHALKY_STONE = 7;</code>
+   * <code>SOUVENIR_CHALKY_STONE = 7;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_CHALKY_STONE_VALUE = 7;
+  public static final int SOUVENIR_CHALKY_STONE_VALUE = 7;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_PINECONE = 8;</code>
+   * <code>SOUVENIR_PINECONE = 8;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_PINECONE_VALUE = 8;
+  public static final int SOUVENIR_PINECONE_VALUE = 8;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_TROPICAL_FLOWER = 9;</code>
+   * <code>SOUVENIR_TROPICAL_FLOWER = 9;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_TROPICAL_FLOWER_VALUE = 9;
+  public static final int SOUVENIR_TROPICAL_FLOWER_VALUE = 9;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_FLOWER_FRUITS = 10;</code>
+   * <code>SOUVENIR_FLOWER_FRUITS = 10;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_FLOWER_FRUITS_VALUE = 10;
+  public static final int SOUVENIR_FLOWER_FRUITS_VALUE = 10;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_CACTUS_FLOWER = 11;</code>
+   * <code>SOUVENIR_CACTUS_FLOWER = 11;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_CACTUS_FLOWER_VALUE = 11;
+  public static final int SOUVENIR_CACTUS_FLOWER_VALUE = 11;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_STRETCHY_SPRING = 12;</code>
+   * <code>SOUVENIR_STRETCHY_SPRING = 12;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_STRETCHY_SPRING_VALUE = 12;
+  public static final int SOUVENIR_STRETCHY_SPRING_VALUE = 12;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_MARBLE = 13;</code>
+   * <code>SOUVENIR_MARBLE = 13;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_MARBLE_VALUE = 13;
+  public static final int SOUVENIR_MARBLE_VALUE = 13;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_TORN_TICKET = 14;</code>
+   * <code>SOUVENIR_TORN_TICKET = 14;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_TORN_TICKET_VALUE = 14;
+  public static final int SOUVENIR_TORN_TICKET_VALUE = 14;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_PRETTY_LEAF = 15;</code>
+   * <code>SOUVENIR_PRETTY_LEAF = 15;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_PRETTY_LEAF_VALUE = 15;
+  public static final int SOUVENIR_PRETTY_LEAF_VALUE = 15;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_CONFETTI = 16;</code>
+   * <code>SOUVENIR_CONFETTI = 16;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_CONFETTI_VALUE = 16;
+  public static final int SOUVENIR_CONFETTI_VALUE = 16;
   /**
-   * <code>SOUVENIR_TYPE_ID_SOUVENIR_PIKACHU_VISOR = 17;</code>
+   * <code>SOUVENIR_PIKACHU_VISOR = 17;</code>
    */
-  public static final int SOUVENIR_TYPE_ID_SOUVENIR_PIKACHU_VISOR_VALUE = 17;
+  public static final int SOUVENIR_PIKACHU_VISOR_VALUE = 17;
 
 
   public final int getNumber() {
@@ -185,24 +181,24 @@ public enum SouvenirTypeId
    */
   public static SouvenirTypeId forNumber(int value) {
     switch (value) {
-      case 0: return SOUVENIR_TYPE_ID_SOUVENIR_UNSET;
-      case 1: return SOUVENIR_TYPE_ID_SOUVENIR_LONE_EARRING;
-      case 2: return SOUVENIR_TYPE_ID_SOUVENIR_SMALL_BOUQUET;
-      case 3: return SOUVENIR_TYPE_ID_SOUVENIR_SKIPPING_STONE;
-      case 4: return SOUVENIR_TYPE_ID_SOUVENIR_BEACH_GLASS;
-      case 5: return SOUVENIR_TYPE_ID_SOUVENIR_TROPICAL_SHELL;
-      case 6: return SOUVENIR_TYPE_ID_SOUVENIR_MUSHROOM;
-      case 7: return SOUVENIR_TYPE_ID_SOUVENIR_CHALKY_STONE;
-      case 8: return SOUVENIR_TYPE_ID_SOUVENIR_PINECONE;
-      case 9: return SOUVENIR_TYPE_ID_SOUVENIR_TROPICAL_FLOWER;
-      case 10: return SOUVENIR_TYPE_ID_SOUVENIR_FLOWER_FRUITS;
-      case 11: return SOUVENIR_TYPE_ID_SOUVENIR_CACTUS_FLOWER;
-      case 12: return SOUVENIR_TYPE_ID_SOUVENIR_STRETCHY_SPRING;
-      case 13: return SOUVENIR_TYPE_ID_SOUVENIR_MARBLE;
-      case 14: return SOUVENIR_TYPE_ID_SOUVENIR_TORN_TICKET;
-      case 15: return SOUVENIR_TYPE_ID_SOUVENIR_PRETTY_LEAF;
-      case 16: return SOUVENIR_TYPE_ID_SOUVENIR_CONFETTI;
-      case 17: return SOUVENIR_TYPE_ID_SOUVENIR_PIKACHU_VISOR;
+      case 0: return SOUVENIR_UNSET;
+      case 1: return SOUVENIR_LONE_EARRING;
+      case 2: return SOUVENIR_SMALL_BOUQUET;
+      case 3: return SOUVENIR_SKIPPING_STONE;
+      case 4: return SOUVENIR_BEACH_GLASS;
+      case 5: return SOUVENIR_TROPICAL_SHELL;
+      case 6: return SOUVENIR_MUSHROOM;
+      case 7: return SOUVENIR_CHALKY_STONE;
+      case 8: return SOUVENIR_PINECONE;
+      case 9: return SOUVENIR_TROPICAL_FLOWER;
+      case 10: return SOUVENIR_FLOWER_FRUITS;
+      case 11: return SOUVENIR_CACTUS_FLOWER;
+      case 12: return SOUVENIR_STRETCHY_SPRING;
+      case 13: return SOUVENIR_MARBLE;
+      case 14: return SOUVENIR_TORN_TICKET;
+      case 15: return SOUVENIR_PRETTY_LEAF;
+      case 16: return SOUVENIR_CONFETTI;
+      case 17: return SOUVENIR_PIKACHU_VISOR;
       default: return null;
     }
   }
@@ -221,10 +217,6 @@ public enum SouvenirTypeId
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -233,7 +225,7 @@ public enum SouvenirTypeId
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(85);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(136);
   }
 
   private static final SouvenirTypeId[] VALUES = values();

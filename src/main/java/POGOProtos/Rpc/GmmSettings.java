@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Proto.TEMP.GmmSettings
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GmmSettings}
  */
-public final class GmmSettings extends
+public  final class GmmSettings extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GmmSettings)
     GmmSettingsOrBuilder {
@@ -103,14 +99,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.LayerRule layer_rules = 1;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.LayerRule> getLayerRulesList() {
     return layerRules_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.LayerRule layer_rules = 1;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.LayerRuleOrBuilder> 
       getLayerRulesOrBuilderList() {
     return layerRules_;
@@ -118,21 +112,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.LayerRule layer_rules = 1;</code>
    */
-  @java.lang.Override
   public int getLayerRulesCount() {
     return layerRules_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.LayerRule layer_rules = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.LayerRule getLayerRules(int index) {
     return layerRules_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.LayerRule layer_rules = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.LayerRuleOrBuilder getLayerRulesOrBuilder(
       int index) {
     return layerRules_.get(index);
@@ -296,10 +287,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.GmmSettings
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GmmSettings}
    */
   public static final class Builder extends

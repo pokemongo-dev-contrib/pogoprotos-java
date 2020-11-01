@@ -4,16 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End iap -----
- *------------------------------
- *----- Begin inventory -----
- * ref: Niantic.Platform.Inventory.InventoryDeltaProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.InventoryDeltaProto}
  */
-public final class InventoryDeltaProto extends
+public  final class InventoryDeltaProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.InventoryDeltaProto)
     InventoryDeltaProtoOrBuilder {
@@ -117,7 +110,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 original_timestamp = 1;</code>
    * @return The originalTimestamp.
    */
-  @java.lang.Override
   public long getOriginalTimestamp() {
     return originalTimestamp_;
   }
@@ -128,7 +120,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 new_timestamp = 2;</code>
    * @return The newTimestamp.
    */
-  @java.lang.Override
   public long getNewTimestamp() {
     return newTimestamp_;
   }
@@ -138,14 +129,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.InventoryItemProto inventory_item = 3;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.InventoryItemProto> getInventoryItemList() {
     return inventoryItem_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.InventoryItemProto inventory_item = 3;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.InventoryItemProtoOrBuilder> 
       getInventoryItemOrBuilderList() {
     return inventoryItem_;
@@ -153,21 +142,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.InventoryItemProto inventory_item = 3;</code>
    */
-  @java.lang.Override
   public int getInventoryItemCount() {
     return inventoryItem_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.InventoryItemProto inventory_item = 3;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.InventoryItemProto getInventoryItem(int index) {
     return inventoryItem_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.InventoryItemProto inventory_item = 3;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.InventoryItemProtoOrBuilder getInventoryItemOrBuilder(
       int index) {
     return inventoryItem_.get(index);
@@ -355,13 +341,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   *----- End iap -----
-   *------------------------------
-   *----- Begin inventory -----
-   * ref: Niantic.Platform.Inventory.InventoryDeltaProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.InventoryDeltaProto}
    */
   public static final class Builder extends
@@ -563,7 +542,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 original_timestamp = 1;</code>
      * @return The originalTimestamp.
      */
-    @java.lang.Override
     public long getOriginalTimestamp() {
       return originalTimestamp_;
     }
@@ -594,7 +572,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 new_timestamp = 2;</code>
      * @return The newTimestamp.
      */
-    @java.lang.Override
     public long getNewTimestamp() {
       return newTimestamp_;
     }

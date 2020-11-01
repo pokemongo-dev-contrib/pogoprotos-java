@@ -8,199 +8,199 @@ public interface FortSearchOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.FortSearchOutProto.Result result = 1;</code>
-   * @return The enum numeric value on the wire for result.
+   * <code>.POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO jbflkcdndlp = 1;</code>
+   * @return The enum numeric value on the wire for jbflkcdndlp.
    */
-  int getResultValue();
+  int getJbflkcdndlpValue();
   /**
-   * <code>.POGOProtos.Rpc.FortSearchOutProto.Result result = 1;</code>
-   * @return The result.
+   * <code>.POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO jbflkcdndlp = 1;</code>
+   * @return The jbflkcdndlp.
    */
-  POGOProtos.Rpc.FortSearchOutProto.Result getResult();
+  POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO getJbflkcdndlp();
 
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
    */
-  java.util.List<POGOProtos.Rpc.AwardItemProto> 
-      getNikdphgligkList();
+  java.util.List<POGOProtos.Rpc.KGECKBBBFEH> 
+      getDipbdnhbeamList();
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
    */
-  POGOProtos.Rpc.AwardItemProto getNikdphgligk(int index);
+  POGOProtos.Rpc.KGECKBBBFEH getDipbdnhbeam(int index);
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
    */
-  int getNikdphgligkCount();
+  int getDipbdnhbeamCount();
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
    */
-  java.util.List<? extends POGOProtos.Rpc.AwardItemProtoOrBuilder> 
-      getNikdphgligkOrBuilderList();
+  java.util.List<? extends POGOProtos.Rpc.KGECKBBBFEHOrBuilder> 
+      getDipbdnhbeamOrBuilderList();
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
    */
-  POGOProtos.Rpc.AwardItemProtoOrBuilder getNikdphgligkOrBuilder(
+  POGOProtos.Rpc.KGECKBBBFEHOrBuilder getDipbdnhbeamOrBuilder(
       int index);
 
   /**
-   * <code>int32 njbejjhehhh = 3;</code>
-   * @return The njbejjhehhh.
+   * <code>int32 pljbccobhdc = 3;</code>
+   * @return The pljbccobhdc.
    */
-  int getNjbejjhehhh();
+  int getPljbccobhdc();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
-   * @return Whether the meokhcpofcc field is set.
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
+   * @return Whether the jncklfbcoia field is set.
    */
-  boolean hasMeokhcpofcc();
+  boolean hasJncklfbcoia();
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
-   * @return The meokhcpofcc.
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
+   * @return The jncklfbcoia.
    */
-  POGOProtos.Rpc.PokemonProto getMeokhcpofcc();
+  POGOProtos.Rpc.KHNLPGENFBI getJncklfbcoia();
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
    */
-  POGOProtos.Rpc.PokemonProtoOrBuilder getMeokhcpofccOrBuilder();
+  POGOProtos.Rpc.KHNLPGENFBIOrBuilder getJncklfbcoiaOrBuilder();
 
   /**
-   * <code>int32 gefhfjldoli = 5;</code>
-   * @return The gefhfjldoli.
+   * <code>int32 eagiaeplfnm = 5;</code>
+   * @return The eagiaeplfnm.
    */
-  int getGefhfjldoli();
+  int getEagiaeplfnm();
 
   /**
-   * <code>int64 njdnpomkhaa = 6;</code>
-   * @return The njdnpomkhaa.
+   * <code>int64 gjihjjnboce = 6;</code>
+   * @return The gjihjjnboce.
    */
-  long getNjdnpomkhaa();
+  long getGjihjjnboce();
 
   /**
-   * <code>int32 bkiblpabieg = 7;</code>
-   * @return The bkiblpabieg.
+   * <code>int32 kpdmbmgighm = 7;</code>
+   * @return The kpdmbmgighm.
    */
-  int getBkiblpabieg();
+  int getKpdmbmgighm();
 
   /**
-   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
-   * @return Whether the eoilecekhdn field is set.
+   * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
+   * @return Whether the nocbhafkajj field is set.
    */
-  boolean hasEoilecekhdn();
+  boolean hasNocbhafkajj();
   /**
-   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
-   * @return The eoilecekhdn.
+   * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
+   * @return The nocbhafkajj.
    */
-  POGOProtos.Rpc.AwardedGymBadge getEoilecekhdn();
+  POGOProtos.Rpc.KEGNPKMJHED getNocbhafkajj();
   /**
-   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
+   * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
    */
-  POGOProtos.Rpc.AwardedGymBadgeOrBuilder getEoilecekhdnOrBuilder();
+  POGOProtos.Rpc.KEGNPKMJHEDOrBuilder getNocbhafkajjOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
-   * @return Whether the kmiiammpfgf field is set.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
+   * @return Whether the jnamleecobg field is set.
    */
-  boolean hasKmiiammpfgf();
+  boolean hasJnamleecobg();
   /**
-   * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
-   * @return The kmiiammpfgf.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
+   * @return The jnamleecobg.
    */
-  POGOProtos.Rpc.LootProto getKmiiammpfgf();
+  POGOProtos.Rpc.JMFCJOMHILG getJnamleecobg();
   /**
-   * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
    */
-  POGOProtos.Rpc.LootProtoOrBuilder getKmiiammpfgfOrBuilder();
+  POGOProtos.Rpc.JMFCJOMHILGOrBuilder getJnamleecobgOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
-   * @return Whether the eeaeeebiebe field is set.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
+   * @return Whether the ekcehemcpna field is set.
    */
-  boolean hasEeaeeebiebe();
+  boolean hasEkcehemcpna();
   /**
-   * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
-   * @return The eeaeeebiebe.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
+   * @return The ekcehemcpna.
    */
-  POGOProtos.Rpc.LootProto getEeaeeebiebe();
+  POGOProtos.Rpc.JMFCJOMHILG getEkcehemcpna();
   /**
-   * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
    */
-  POGOProtos.Rpc.LootProtoOrBuilder getEeaeeebiebeOrBuilder();
+  POGOProtos.Rpc.JMFCJOMHILGOrBuilder getEkcehemcpnaOrBuilder();
 
   /**
-   * <code>int32 ndgehgpakno = 11;</code>
-   * @return The ndgehgpakno.
+   * <code>int32 ajhjinaopoh = 11;</code>
+   * @return The ajhjinaopoh.
    */
-  int getNdgehgpakno();
+  int getAjhjinaopoh();
 
   /**
-   * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
-   * @return Whether the aihnmahefmi field is set.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
+   * @return Whether the mjpeblmhlja field is set.
    */
-  boolean hasAihnmahefmi();
+  boolean hasMjpeblmhlja();
   /**
-   * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
-   * @return The aihnmahefmi.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
+   * @return The mjpeblmhlja.
    */
-  POGOProtos.Rpc.LootProto getAihnmahefmi();
+  POGOProtos.Rpc.JMFCJOMHILG getMjpeblmhlja();
   /**
-   * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
    */
-  POGOProtos.Rpc.LootProtoOrBuilder getAihnmahefmiOrBuilder();
+  POGOProtos.Rpc.JMFCJOMHILGOrBuilder getMjpeblmhljaOrBuilder();
 
   /**
-   * <code>string lndigkkjfml = 13;</code>
-   * @return The lndigkkjfml.
+   * <code>string dlangcndbfi = 13;</code>
+   * @return The dlangcndbfi.
    */
-  java.lang.String getLndigkkjfml();
+  java.lang.String getDlangcndbfi();
   /**
-   * <code>string lndigkkjfml = 13;</code>
-   * @return The bytes for lndigkkjfml.
+   * <code>string dlangcndbfi = 13;</code>
+   * @return The bytes for dlangcndbfi.
    */
   com.google.protobuf.ByteString
-      getLndigkkjfmlBytes();
+      getDlangcndbfiBytes();
 
   /**
-   * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
-   * @return Whether the hknmebbppme field is set.
+   * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
+   * @return Whether the nlibgackfjp field is set.
    */
-  boolean hasHknmebbppme();
+  boolean hasNlibgackfjp();
   /**
-   * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
-   * @return The hknmebbppme.
+   * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
+   * @return The nlibgackfjp.
    */
-  POGOProtos.Rpc.ClientQuestProto getHknmebbppme();
+  POGOProtos.Rpc.CMNKJHNKMCG getNlibgackfjp();
   /**
-   * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
+   * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
    */
-  POGOProtos.Rpc.ClientQuestProtoOrBuilder getHknmebbppmeOrBuilder();
+  POGOProtos.Rpc.CMNKJHNKMCGOrBuilder getNlibgackfjpOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
-   * @return Whether the ppgijddcmhe field is set.
+   * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
+   * @return Whether the koodbdemdfd field is set.
    */
-  boolean hasPpgijddcmhe();
+  boolean hasKoodbdemdfd();
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
-   * @return The ppgijddcmhe.
+   * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
+   * @return The koodbdemdfd.
    */
-  POGOProtos.Rpc.GiftBoxProto getPpgijddcmhe();
+  POGOProtos.Rpc.DMOPODHBEFO getKoodbdemdfd();
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
+   * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
    */
-  POGOProtos.Rpc.GiftBoxProtoOrBuilder getPpgijddcmheOrBuilder();
+  POGOProtos.Rpc.DMOPODHBEFOOrBuilder getKoodbdemdfdOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
-   * @return Whether the fofagloikmg field is set.
+   * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
+   * @return Whether the jebicoepalo field is set.
    */
-  boolean hasFofagloikmg();
+  boolean hasJebicoepalo();
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
-   * @return The fofagloikmg.
+   * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
+   * @return The jebicoepalo.
    */
-  POGOProtos.Rpc.AdDetails getFofagloikmg();
+  POGOProtos.Rpc.MOIEDHEMGLO getJebicoepalo();
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
+   * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
    */
-  POGOProtos.Rpc.AdDetailsOrBuilder getFofagloikmgOrBuilder();
+  POGOProtos.Rpc.MOIEDHEMGLOOrBuilder getJebicoepaloOrBuilder();
 }

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Auth.Token.GoogleToken
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GoogleToken}
  */
-public final class GoogleToken extends
+public  final class GoogleToken extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GoogleToken)
     GoogleTokenOrBuilder {
@@ -97,7 +93,6 @@ private static final long serialVersionUID = 0L;
    * <code>string id_token = 1;</code>
    * @return The idToken.
    */
-  @java.lang.Override
   public java.lang.String getIdToken() {
     java.lang.Object ref = idToken_;
     if (ref instanceof java.lang.String) {
@@ -114,7 +109,6 @@ private static final long serialVersionUID = 0L;
    * <code>string id_token = 1;</code>
    * @return The bytes for idToken.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getIdTokenBytes() {
     java.lang.Object ref = idToken_;
@@ -284,10 +278,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Auth.Token.GoogleToken
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GoogleToken}
    */
   public static final class Builder extends

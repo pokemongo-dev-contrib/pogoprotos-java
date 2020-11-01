@@ -8,28 +8,28 @@ public interface JoinLobbyOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.JoinLobbyOutProto.Result result = 1;</code>
-   * @return The enum numeric value on the wire for result.
+   * <code>.POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD jbflkcdndlp = 1;</code>
+   * @return The enum numeric value on the wire for jbflkcdndlp.
    */
-  int getResultValue();
+  int getJbflkcdndlpValue();
   /**
-   * <code>.POGOProtos.Rpc.JoinLobbyOutProto.Result result = 1;</code>
-   * @return The result.
+   * <code>.POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD jbflkcdndlp = 1;</code>
+   * @return The jbflkcdndlp.
    */
-  POGOProtos.Rpc.JoinLobbyOutProto.Result getResult();
+  POGOProtos.Rpc.JoinLobbyOutProto.FHMOICNOKAD getJbflkcdndlp();
 
   /**
-   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
-   * @return Whether the fdanacihmef field is set.
+   * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
+   * @return Whether the annkadmkhlo field is set.
    */
-  boolean hasFdanacihmef();
+  boolean hasAnnkadmkhlo();
   /**
-   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
-   * @return The fdanacihmef.
+   * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
+   * @return The annkadmkhlo.
    */
-  POGOProtos.Rpc.LobbyProto getFdanacihmef();
+  POGOProtos.Rpc.BPABKJEHLMA getAnnkadmkhlo();
   /**
-   * <code>.POGOProtos.Rpc.LobbyProto fdanacihmef = 2;</code>
+   * <code>.POGOProtos.Rpc.BPABKJEHLMA annkadmkhlo = 2;</code>
    */
-  POGOProtos.Rpc.LobbyProtoOrBuilder getFdanacihmefOrBuilder();
+  POGOProtos.Rpc.BPABKJEHLMAOrBuilder getAnnkadmkhloOrBuilder();
 }

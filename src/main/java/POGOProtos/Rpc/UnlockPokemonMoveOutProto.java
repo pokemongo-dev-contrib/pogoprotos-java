@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: FPKINLGECIG
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.UnlockPokemonMoveOutProto}
  */
-public final class UnlockPokemonMoveOutProto extends
+public  final class UnlockPokemonMoveOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.UnlockPokemonMoveOutProto)
     UnlockPokemonMoveOutProtoOrBuilder {
@@ -20,7 +16,7 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private UnlockPokemonMoveOutProto() {
-    result_ = 0;
+    jbflkcdndlp_ = 0;
   }
 
   @java.lang.Override
@@ -56,18 +52,18 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            result_ = rawValue;
+            jbflkcdndlp_ = rawValue;
             break;
           }
           case 18: {
-            POGOProtos.Rpc.PokemonProto.Builder subBuilder = null;
-            if (ndjepameaok_ != null) {
-              subBuilder = ndjepameaok_.toBuilder();
+            POGOProtos.Rpc.KHNLPGENFBI.Builder subBuilder = null;
+            if (hbpgnfpgied_ != null) {
+              subBuilder = hbpgnfpgied_.toBuilder();
             }
-            ndjepameaok_ = input.readMessage(POGOProtos.Rpc.PokemonProto.parser(), extensionRegistry);
+            hbpgnfpgied_ = input.readMessage(POGOProtos.Rpc.KHNLPGENFBI.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(ndjepameaok_);
-              ndjepameaok_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(hbpgnfpgied_);
+              hbpgnfpgied_ = subBuilder.buildPartial();
             }
 
             break;
@@ -106,12 +102,12 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: FPKINLGECIG/OOBGBDKMDDC/KFPOENDKPCM
+   * ref: UnlockPokemonMoveOutProto/HNGOBPKNFMD/FOLHCFAOOKJ
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result}
+   * Protobuf enum {@code POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ}
    */
-  public enum Result
+  public enum FOLHCFAOOKJ
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>UNSET = 0;</code>
@@ -188,7 +184,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static Result valueOf(int value) {
+    public static FOLHCFAOOKJ valueOf(int value) {
       return forNumber(value);
     }
 
@@ -196,7 +192,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static Result forNumber(int value) {
+    public static FOLHCFAOOKJ forNumber(int value) {
       switch (value) {
         case 0: return UNSET;
         case 1: return SUCCESS;
@@ -209,24 +205,20 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<Result>
+    public static com.google.protobuf.Internal.EnumLiteMap<FOLHCFAOOKJ>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        Result> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<Result>() {
-            public Result findValueByNumber(int number) {
-              return Result.forNumber(number);
+        FOLHCFAOOKJ> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<FOLHCFAOOKJ>() {
+            public FOLHCFAOOKJ findValueByNumber(int number) {
+              return FOLHCFAOOKJ.forNumber(number);
             }
           };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -238,9 +230,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.UnlockPokemonMoveOutProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final Result[] VALUES = values();
+    private static final FOLHCFAOOKJ[] VALUES = values();
 
-    public static Result valueOf(
+    public static FOLHCFAOOKJ valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -254,56 +246,53 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private Result(int value) {
+    private FOLHCFAOOKJ(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ)
   }
 
-  public static final int RESULT_FIELD_NUMBER = 1;
-  private int result_;
+  public static final int JBFLKCDNDLP_FIELD_NUMBER = 1;
+  private int jbflkcdndlp_;
   /**
-   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
-   * @return The enum numeric value on the wire for result.
+   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
+   * @return The enum numeric value on the wire for jbflkcdndlp.
    */
-  @java.lang.Override public int getResultValue() {
-    return result_;
+  public int getJbflkcdndlpValue() {
+    return jbflkcdndlp_;
   }
   /**
-   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
-   * @return The result.
+   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
+   * @return The jbflkcdndlp.
    */
-  @java.lang.Override public POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result getResult() {
+  public POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ getJbflkcdndlp() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.valueOf(result_);
-    return result == null ? POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.UNRECOGNIZED : result;
+    POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ result = POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.valueOf(jbflkcdndlp_);
+    return result == null ? POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.UNRECOGNIZED : result;
   }
 
-  public static final int NDJEPAMEAOK_FIELD_NUMBER = 2;
-  private POGOProtos.Rpc.PokemonProto ndjepameaok_;
+  public static final int HBPGNFPGIED_FIELD_NUMBER = 2;
+  private POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied_;
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
-   * @return Whether the ndjepameaok field is set.
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+   * @return Whether the hbpgnfpgied field is set.
    */
-  @java.lang.Override
-  public boolean hasNdjepameaok() {
-    return ndjepameaok_ != null;
+  public boolean hasHbpgnfpgied() {
+    return hbpgnfpgied_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
-   * @return The ndjepameaok.
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+   * @return The hbpgnfpgied.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonProto getNdjepameaok() {
-    return ndjepameaok_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : ndjepameaok_;
+  public POGOProtos.Rpc.KHNLPGENFBI getHbpgnfpgied() {
+    return hbpgnfpgied_ == null ? POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance() : hbpgnfpgied_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonProtoOrBuilder getNdjepameaokOrBuilder() {
-    return getNdjepameaok();
+  public POGOProtos.Rpc.KHNLPGENFBIOrBuilder getHbpgnfpgiedOrBuilder() {
+    return getHbpgnfpgied();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -320,11 +309,11 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (result_ != POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.UNSET.getNumber()) {
-      output.writeEnum(1, result_);
+    if (jbflkcdndlp_ != POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.UNSET.getNumber()) {
+      output.writeEnum(1, jbflkcdndlp_);
     }
-    if (ndjepameaok_ != null) {
-      output.writeMessage(2, getNdjepameaok());
+    if (hbpgnfpgied_ != null) {
+      output.writeMessage(2, getHbpgnfpgied());
     }
     unknownFields.writeTo(output);
   }
@@ -335,13 +324,13 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (result_ != POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.UNSET.getNumber()) {
+    if (jbflkcdndlp_ != POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.UNSET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, result_);
+        .computeEnumSize(1, jbflkcdndlp_);
     }
-    if (ndjepameaok_ != null) {
+    if (hbpgnfpgied_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getNdjepameaok());
+        .computeMessageSize(2, getHbpgnfpgied());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -358,11 +347,11 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.UnlockPokemonMoveOutProto other = (POGOProtos.Rpc.UnlockPokemonMoveOutProto) obj;
 
-    if (result_ != other.result_) return false;
-    if (hasNdjepameaok() != other.hasNdjepameaok()) return false;
-    if (hasNdjepameaok()) {
-      if (!getNdjepameaok()
-          .equals(other.getNdjepameaok())) return false;
+    if (jbflkcdndlp_ != other.jbflkcdndlp_) return false;
+    if (hasHbpgnfpgied() != other.hasHbpgnfpgied()) return false;
+    if (hasHbpgnfpgied()) {
+      if (!getHbpgnfpgied()
+          .equals(other.getHbpgnfpgied())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -375,11 +364,11 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + RESULT_FIELD_NUMBER;
-    hash = (53 * hash) + result_;
-    if (hasNdjepameaok()) {
-      hash = (37 * hash) + NDJEPAMEAOK_FIELD_NUMBER;
-      hash = (53 * hash) + getNdjepameaok().hashCode();
+    hash = (37 * hash) + JBFLKCDNDLP_FIELD_NUMBER;
+    hash = (53 * hash) + jbflkcdndlp_;
+    if (hasHbpgnfpgied()) {
+      hash = (37 * hash) + HBPGNFPGIED_FIELD_NUMBER;
+      hash = (53 * hash) + getHbpgnfpgied().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -477,10 +466,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: FPKINLGECIG
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.UnlockPokemonMoveOutProto}
    */
   public static final class Builder extends
@@ -518,13 +503,13 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      result_ = 0;
+      jbflkcdndlp_ = 0;
 
-      if (ndjepameaokBuilder_ == null) {
-        ndjepameaok_ = null;
+      if (hbpgnfpgiedBuilder_ == null) {
+        hbpgnfpgied_ = null;
       } else {
-        ndjepameaok_ = null;
-        ndjepameaokBuilder_ = null;
+        hbpgnfpgied_ = null;
+        hbpgnfpgiedBuilder_ = null;
       }
       return this;
     }
@@ -552,11 +537,11 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.UnlockPokemonMoveOutProto buildPartial() {
       POGOProtos.Rpc.UnlockPokemonMoveOutProto result = new POGOProtos.Rpc.UnlockPokemonMoveOutProto(this);
-      result.result_ = result_;
-      if (ndjepameaokBuilder_ == null) {
-        result.ndjepameaok_ = ndjepameaok_;
+      result.jbflkcdndlp_ = jbflkcdndlp_;
+      if (hbpgnfpgiedBuilder_ == null) {
+        result.hbpgnfpgied_ = hbpgnfpgied_;
       } else {
-        result.ndjepameaok_ = ndjepameaokBuilder_.build();
+        result.hbpgnfpgied_ = hbpgnfpgiedBuilder_.build();
       }
       onBuilt();
       return result;
@@ -606,11 +591,11 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.UnlockPokemonMoveOutProto other) {
       if (other == POGOProtos.Rpc.UnlockPokemonMoveOutProto.getDefaultInstance()) return this;
-      if (other.result_ != 0) {
-        setResultValue(other.getResultValue());
+      if (other.jbflkcdndlp_ != 0) {
+        setJbflkcdndlpValue(other.getJbflkcdndlpValue());
       }
-      if (other.hasNdjepameaok()) {
-        mergeNdjepameaok(other.getNdjepameaok());
+      if (other.hasHbpgnfpgied()) {
+        mergeHbpgnfpgied(other.getHbpgnfpgied());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -641,177 +626,175 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private int result_ = 0;
+    private int jbflkcdndlp_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
-     * @return The enum numeric value on the wire for result.
+     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
+     * @return The enum numeric value on the wire for jbflkcdndlp.
      */
-    @java.lang.Override public int getResultValue() {
-      return result_;
+    public int getJbflkcdndlpValue() {
+      return jbflkcdndlp_;
     }
     /**
-     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
-     * @param value The enum numeric value on the wire for result to set.
+     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
+     * @param value The enum numeric value on the wire for jbflkcdndlp to set.
      * @return This builder for chaining.
      */
-    public Builder setResultValue(int value) {
-      
-      result_ = value;
+    public Builder setJbflkcdndlpValue(int value) {
+      jbflkcdndlp_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
-     * @return The result.
+     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
+     * @return The jbflkcdndlp.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result getResult() {
+    public POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ getJbflkcdndlp() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.valueOf(result_);
-      return result == null ? POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result.UNRECOGNIZED : result;
+      POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ result = POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.valueOf(jbflkcdndlp_);
+      return result == null ? POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
-     * @param value The result to set.
+     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
+     * @param value The jbflkcdndlp to set.
      * @return This builder for chaining.
      */
-    public Builder setResult(POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result value) {
+    public Builder setJbflkcdndlp(POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      result_ = value.getNumber();
+      jbflkcdndlp_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
+     * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearResult() {
+    public Builder clearJbflkcdndlp() {
       
-      result_ = 0;
+      jbflkcdndlp_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.PokemonProto ndjepameaok_;
+    private POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> ndjepameaokBuilder_;
+        POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder> hbpgnfpgiedBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
-     * @return Whether the ndjepameaok field is set.
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+     * @return Whether the hbpgnfpgied field is set.
      */
-    public boolean hasNdjepameaok() {
-      return ndjepameaokBuilder_ != null || ndjepameaok_ != null;
+    public boolean hasHbpgnfpgied() {
+      return hbpgnfpgiedBuilder_ != null || hbpgnfpgied_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
-     * @return The ndjepameaok.
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+     * @return The hbpgnfpgied.
      */
-    public POGOProtos.Rpc.PokemonProto getNdjepameaok() {
-      if (ndjepameaokBuilder_ == null) {
-        return ndjepameaok_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : ndjepameaok_;
+    public POGOProtos.Rpc.KHNLPGENFBI getHbpgnfpgied() {
+      if (hbpgnfpgiedBuilder_ == null) {
+        return hbpgnfpgied_ == null ? POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance() : hbpgnfpgied_;
       } else {
-        return ndjepameaokBuilder_.getMessage();
+        return hbpgnfpgiedBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
      */
-    public Builder setNdjepameaok(POGOProtos.Rpc.PokemonProto value) {
-      if (ndjepameaokBuilder_ == null) {
+    public Builder setHbpgnfpgied(POGOProtos.Rpc.KHNLPGENFBI value) {
+      if (hbpgnfpgiedBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ndjepameaok_ = value;
+        hbpgnfpgied_ = value;
         onChanged();
       } else {
-        ndjepameaokBuilder_.setMessage(value);
+        hbpgnfpgiedBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
      */
-    public Builder setNdjepameaok(
-        POGOProtos.Rpc.PokemonProto.Builder builderForValue) {
-      if (ndjepameaokBuilder_ == null) {
-        ndjepameaok_ = builderForValue.build();
+    public Builder setHbpgnfpgied(
+        POGOProtos.Rpc.KHNLPGENFBI.Builder builderForValue) {
+      if (hbpgnfpgiedBuilder_ == null) {
+        hbpgnfpgied_ = builderForValue.build();
         onChanged();
       } else {
-        ndjepameaokBuilder_.setMessage(builderForValue.build());
+        hbpgnfpgiedBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
      */
-    public Builder mergeNdjepameaok(POGOProtos.Rpc.PokemonProto value) {
-      if (ndjepameaokBuilder_ == null) {
-        if (ndjepameaok_ != null) {
-          ndjepameaok_ =
-            POGOProtos.Rpc.PokemonProto.newBuilder(ndjepameaok_).mergeFrom(value).buildPartial();
+    public Builder mergeHbpgnfpgied(POGOProtos.Rpc.KHNLPGENFBI value) {
+      if (hbpgnfpgiedBuilder_ == null) {
+        if (hbpgnfpgied_ != null) {
+          hbpgnfpgied_ =
+            POGOProtos.Rpc.KHNLPGENFBI.newBuilder(hbpgnfpgied_).mergeFrom(value).buildPartial();
         } else {
-          ndjepameaok_ = value;
+          hbpgnfpgied_ = value;
         }
         onChanged();
       } else {
-        ndjepameaokBuilder_.mergeFrom(value);
+        hbpgnfpgiedBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
      */
-    public Builder clearNdjepameaok() {
-      if (ndjepameaokBuilder_ == null) {
-        ndjepameaok_ = null;
+    public Builder clearHbpgnfpgied() {
+      if (hbpgnfpgiedBuilder_ == null) {
+        hbpgnfpgied_ = null;
         onChanged();
       } else {
-        ndjepameaok_ = null;
-        ndjepameaokBuilder_ = null;
+        hbpgnfpgied_ = null;
+        hbpgnfpgiedBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
      */
-    public POGOProtos.Rpc.PokemonProto.Builder getNdjepameaokBuilder() {
+    public POGOProtos.Rpc.KHNLPGENFBI.Builder getHbpgnfpgiedBuilder() {
       
       onChanged();
-      return getNdjepameaokFieldBuilder().getBuilder();
+      return getHbpgnfpgiedFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
      */
-    public POGOProtos.Rpc.PokemonProtoOrBuilder getNdjepameaokOrBuilder() {
-      if (ndjepameaokBuilder_ != null) {
-        return ndjepameaokBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.KHNLPGENFBIOrBuilder getHbpgnfpgiedOrBuilder() {
+      if (hbpgnfpgiedBuilder_ != null) {
+        return hbpgnfpgiedBuilder_.getMessageOrBuilder();
       } else {
-        return ndjepameaok_ == null ?
-            POGOProtos.Rpc.PokemonProto.getDefaultInstance() : ndjepameaok_;
+        return hbpgnfpgied_ == null ?
+            POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance() : hbpgnfpgied_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> 
-        getNdjepameaokFieldBuilder() {
-      if (ndjepameaokBuilder_ == null) {
-        ndjepameaokBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder>(
-                getNdjepameaok(),
+        POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder> 
+        getHbpgnfpgiedFieldBuilder() {
+      if (hbpgnfpgiedBuilder_ == null) {
+        hbpgnfpgiedBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder>(
+                getHbpgnfpgied(),
                 getParentForChildren(),
                 isClean());
-        ndjepameaok_ = null;
+        hbpgnfpgied_ = null;
       }
-      return ndjepameaokBuilder_;
+      return hbpgnfpgiedBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

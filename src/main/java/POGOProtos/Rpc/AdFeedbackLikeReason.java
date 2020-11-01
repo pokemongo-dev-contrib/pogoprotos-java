@@ -4,57 +4,53 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: EBEFHAMGKIA
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.AdFeedbackLikeReason}
  */
 public enum AdFeedbackLikeReason
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_INVALID = 0;</code>
+   * <code>AD_FEEDBACK_LIKE_REASON_INVALID = 0;</code>
    */
-  AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_INVALID(0),
+  AD_FEEDBACK_LIKE_REASON_INVALID(0),
   /**
-   * <code>AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_CATEGORY = 1;</code>
+   * <code>AD_FEEDBACK_LIKE_REASON_CATEGORY = 1;</code>
    */
-  AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_CATEGORY(1),
+  AD_FEEDBACK_LIKE_REASON_CATEGORY(1),
   /**
-   * <code>AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_SEE_MORE = 2;</code>
+   * <code>AD_FEEDBACK_LIKE_REASON_SEE_MORE = 2;</code>
    */
-  AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_SEE_MORE(2),
+  AD_FEEDBACK_LIKE_REASON_SEE_MORE(2),
   /**
-   * <code>AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS = 3;</code>
+   * <code>AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS = 3;</code>
    */
-  AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS(3),
+  AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS(3),
   /**
-   * <code>AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_OTHER = 4;</code>
+   * <code>AD_FEEDBACK_LIKE_REASON_OTHER = 4;</code>
    */
-  AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_OTHER(4),
+  AD_FEEDBACK_LIKE_REASON_OTHER(4),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_INVALID = 0;</code>
+   * <code>AD_FEEDBACK_LIKE_REASON_INVALID = 0;</code>
    */
-  public static final int AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_INVALID_VALUE = 0;
+  public static final int AD_FEEDBACK_LIKE_REASON_INVALID_VALUE = 0;
   /**
-   * <code>AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_CATEGORY = 1;</code>
+   * <code>AD_FEEDBACK_LIKE_REASON_CATEGORY = 1;</code>
    */
-  public static final int AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_CATEGORY_VALUE = 1;
+  public static final int AD_FEEDBACK_LIKE_REASON_CATEGORY_VALUE = 1;
   /**
-   * <code>AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_SEE_MORE = 2;</code>
+   * <code>AD_FEEDBACK_LIKE_REASON_SEE_MORE = 2;</code>
    */
-  public static final int AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_SEE_MORE_VALUE = 2;
+  public static final int AD_FEEDBACK_LIKE_REASON_SEE_MORE_VALUE = 2;
   /**
-   * <code>AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS = 3;</code>
+   * <code>AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS = 3;</code>
    */
-  public static final int AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS_VALUE = 3;
+  public static final int AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS_VALUE = 3;
   /**
-   * <code>AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_OTHER = 4;</code>
+   * <code>AD_FEEDBACK_LIKE_REASON_OTHER = 4;</code>
    */
-  public static final int AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_OTHER_VALUE = 4;
+  public static final int AD_FEEDBACK_LIKE_REASON_OTHER_VALUE = 4;
 
 
   public final int getNumber() {
@@ -81,11 +77,11 @@ public enum AdFeedbackLikeReason
    */
   public static AdFeedbackLikeReason forNumber(int value) {
     switch (value) {
-      case 0: return AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_INVALID;
-      case 1: return AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_CATEGORY;
-      case 2: return AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_SEE_MORE;
-      case 3: return AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS;
-      case 4: return AD_FEEDBACK_LIKE_REASON_AD_FEEDBACK_LIKE_REASON_OTHER;
+      case 0: return AD_FEEDBACK_LIKE_REASON_INVALID;
+      case 1: return AD_FEEDBACK_LIKE_REASON_CATEGORY;
+      case 2: return AD_FEEDBACK_LIKE_REASON_SEE_MORE;
+      case 3: return AD_FEEDBACK_LIKE_REASON_MORE_SPONSORED_GIFTS;
+      case 4: return AD_FEEDBACK_LIKE_REASON_OTHER;
       default: return null;
     }
   }
@@ -104,10 +100,6 @@ public enum AdFeedbackLikeReason
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -116,7 +108,7 @@ public enum AdFeedbackLikeReason
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(48);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(1);
   }
 
   private static final AdFeedbackLikeReason[] VALUES = values();

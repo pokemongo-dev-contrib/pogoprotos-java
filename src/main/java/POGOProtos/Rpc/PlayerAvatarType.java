@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: JNJMANPABPG
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.PlayerAvatarType}
  */
 public enum PlayerAvatarType
@@ -77,10 +73,6 @@ public enum PlayerAvatarType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -89,7 +81,7 @@ public enum PlayerAvatarType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(87);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(102);
   }
 
   private static final PlayerAvatarType[] VALUES = values();

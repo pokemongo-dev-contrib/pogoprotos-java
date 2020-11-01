@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GetGrapeshotUploadUrlProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetGrapeshotUploadUrlProto}
  */
-public final class GetGrapeshotUploadUrlProto extends
+public  final class GetGrapeshotUploadUrlProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetGrapeshotUploadUrlProto)
     GetGrapeshotUploadUrlProtoOrBuilder {
@@ -118,14 +114,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.PlayerSubmissionTypeProto submission_type = 1;</code>
    * @return The enum numeric value on the wire for submissionType.
    */
-  @java.lang.Override public int getSubmissionTypeValue() {
+  public int getSubmissionTypeValue() {
     return submissionType_;
   }
   /**
    * <code>.POGOProtos.Rpc.PlayerSubmissionTypeProto submission_type = 1;</code>
    * @return The submissionType.
    */
-  @java.lang.Override public POGOProtos.Rpc.PlayerSubmissionTypeProto getSubmissionType() {
+  public POGOProtos.Rpc.PlayerSubmissionTypeProto getSubmissionType() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.PlayerSubmissionTypeProto result = POGOProtos.Rpc.PlayerSubmissionTypeProto.valueOf(submissionType_);
     return result == null ? POGOProtos.Rpc.PlayerSubmissionTypeProto.UNRECOGNIZED : result;
@@ -137,7 +133,6 @@ private static final long serialVersionUID = 0L;
    * <code>string submission_id = 2;</code>
    * @return The submissionId.
    */
-  @java.lang.Override
   public java.lang.String getSubmissionId() {
     java.lang.Object ref = submissionId_;
     if (ref instanceof java.lang.String) {
@@ -154,7 +149,6 @@ private static final long serialVersionUID = 0L;
    * <code>string submission_id = 2;</code>
    * @return The bytes for submissionId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getSubmissionIdBytes() {
     java.lang.Object ref = submissionId_;
@@ -386,10 +380,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GetGrapeshotUploadUrlProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetGrapeshotUploadUrlProto}
    */
   public static final class Builder extends
@@ -567,7 +557,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PlayerSubmissionTypeProto submission_type = 1;</code>
      * @return The enum numeric value on the wire for submissionType.
      */
-    @java.lang.Override public int getSubmissionTypeValue() {
+    public int getSubmissionTypeValue() {
       return submissionType_;
     }
     /**
@@ -576,7 +566,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setSubmissionTypeValue(int value) {
-      
       submissionType_ = value;
       onChanged();
       return this;
@@ -585,7 +574,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PlayerSubmissionTypeProto submission_type = 1;</code>
      * @return The submissionType.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.PlayerSubmissionTypeProto getSubmissionType() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.PlayerSubmissionTypeProto result = POGOProtos.Rpc.PlayerSubmissionTypeProto.valueOf(submissionType_);

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.IsImageGalleryEnabledOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.IsImageGalleryEnabledOutProto}
  */
-public final class IsImageGalleryEnabledOutProto extends
+public  final class IsImageGalleryEnabledOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.IsImageGalleryEnabledOutProto)
     IsImageGalleryEnabledOutProtoOrBuilder {
@@ -95,7 +91,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool is_image_gallery_enabled = 1;</code>
    * @return The isImageGalleryEnabled.
    */
-  @java.lang.Override
   public boolean getIsImageGalleryEnabled() {
     return isImageGalleryEnabled_;
   }
@@ -257,10 +252,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.IsImageGalleryEnabledOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.IsImageGalleryEnabledOutProto}
    */
   public static final class Builder extends
@@ -412,7 +403,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool is_image_gallery_enabled = 1;</code>
      * @return The isImageGalleryEnabled.
      */
-    @java.lang.Override
     public boolean getIsImageGalleryEnabled() {
       return isImageGalleryEnabled_;
     }

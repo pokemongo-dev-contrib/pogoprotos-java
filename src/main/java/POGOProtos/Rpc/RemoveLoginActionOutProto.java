@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.RemoveLoginActionOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.RemoveLoginActionOutProto}
  */
-public final class RemoveLoginActionOutProto extends
+public  final class RemoveLoginActionOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.RemoveLoginActionOutProto)
     RemoveLoginActionOutProtoOrBuilder {
@@ -62,11 +58,11 @@ private static final long serialVersionUID = 0L;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              loginDetail_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformLoginDetail>();
+              loginDetail_ = new java.util.ArrayList<POGOProtos.Rpc.LoginDetail>();
               mutable_bitField0_ |= 0x00000001;
             }
             loginDetail_.add(
-                input.readMessage(POGOProtos.Rpc.PlatformLoginDetail.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.LoginDetail.parser(), extensionRegistry));
             break;
           }
           case 24: {
@@ -112,7 +108,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.RemoveLoginActionOutProto/Types/Status
+   * ref: Niantic.Platform.Protos.RemoveLoginActionOutProto.Types.Status
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.RemoveLoginActionOutProto.Status}
@@ -184,10 +180,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -228,47 +220,41 @@ private static final long serialVersionUID = 0L;
    * <code>bool success = 1;</code>
    * @return The success.
    */
-  @java.lang.Override
   public boolean getSuccess() {
     return success_;
   }
 
   public static final int LOGIN_DETAIL_FIELD_NUMBER = 2;
-  private java.util.List<POGOProtos.Rpc.PlatformLoginDetail> loginDetail_;
+  private java.util.List<POGOProtos.Rpc.LoginDetail> loginDetail_;
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
    */
-  @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.PlatformLoginDetail> getLoginDetailList() {
+  public java.util.List<POGOProtos.Rpc.LoginDetail> getLoginDetailList() {
     return loginDetail_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.PlatformLoginDetailOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.LoginDetailOrBuilder> 
       getLoginDetailOrBuilderList() {
     return loginDetail_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
    */
-  @java.lang.Override
   public int getLoginDetailCount() {
     return loginDetail_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlatformLoginDetail getLoginDetail(int index) {
+  public POGOProtos.Rpc.LoginDetail getLoginDetail(int index) {
     return loginDetail_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PlatformLoginDetailOrBuilder getLoginDetailOrBuilder(
+  public POGOProtos.Rpc.LoginDetailOrBuilder getLoginDetailOrBuilder(
       int index) {
     return loginDetail_.get(index);
   }
@@ -279,14 +265,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.RemoveLoginActionOutProto.Status status = 3;</code>
    * @return The enum numeric value on the wire for status.
    */
-  @java.lang.Override public int getStatusValue() {
+  public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.RemoveLoginActionOutProto.Status status = 3;</code>
    * @return The status.
    */
-  @java.lang.Override public POGOProtos.Rpc.RemoveLoginActionOutProto.Status getStatus() {
+  public POGOProtos.Rpc.RemoveLoginActionOutProto.Status getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.RemoveLoginActionOutProto.Status result = POGOProtos.Rpc.RemoveLoginActionOutProto.Status.valueOf(status_);
     return result == null ? POGOProtos.Rpc.RemoveLoginActionOutProto.Status.UNRECOGNIZED : result;
@@ -472,10 +458,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.RemoveLoginActionOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.RemoveLoginActionOutProto}
    */
   public static final class Builder extends
@@ -677,7 +659,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool success = 1;</code>
      * @return The success.
      */
-    @java.lang.Override
     public boolean getSuccess() {
       return success_;
     }
@@ -703,22 +684,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.PlatformLoginDetail> loginDetail_ =
+    private java.util.List<POGOProtos.Rpc.LoginDetail> loginDetail_ =
       java.util.Collections.emptyList();
     private void ensureLoginDetailIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        loginDetail_ = new java.util.ArrayList<POGOProtos.Rpc.PlatformLoginDetail>(loginDetail_);
+        loginDetail_ = new java.util.ArrayList<POGOProtos.Rpc.LoginDetail>(loginDetail_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PlatformLoginDetail, POGOProtos.Rpc.PlatformLoginDetail.Builder, POGOProtos.Rpc.PlatformLoginDetailOrBuilder> loginDetailBuilder_;
+        POGOProtos.Rpc.LoginDetail, POGOProtos.Rpc.LoginDetail.Builder, POGOProtos.Rpc.LoginDetailOrBuilder> loginDetailBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PlatformLoginDetail> getLoginDetailList() {
+    public java.util.List<POGOProtos.Rpc.LoginDetail> getLoginDetailList() {
       if (loginDetailBuilder_ == null) {
         return java.util.Collections.unmodifiableList(loginDetail_);
       } else {
@@ -726,7 +707,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
     public int getLoginDetailCount() {
       if (loginDetailBuilder_ == null) {
@@ -736,9 +717,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformLoginDetail getLoginDetail(int index) {
+    public POGOProtos.Rpc.LoginDetail getLoginDetail(int index) {
       if (loginDetailBuilder_ == null) {
         return loginDetail_.get(index);
       } else {
@@ -746,10 +727,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
     public Builder setLoginDetail(
-        int index, POGOProtos.Rpc.PlatformLoginDetail value) {
+        int index, POGOProtos.Rpc.LoginDetail value) {
       if (loginDetailBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -763,10 +744,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
     public Builder setLoginDetail(
-        int index, POGOProtos.Rpc.PlatformLoginDetail.Builder builderForValue) {
+        int index, POGOProtos.Rpc.LoginDetail.Builder builderForValue) {
       if (loginDetailBuilder_ == null) {
         ensureLoginDetailIsMutable();
         loginDetail_.set(index, builderForValue.build());
@@ -777,9 +758,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
-    public Builder addLoginDetail(POGOProtos.Rpc.PlatformLoginDetail value) {
+    public Builder addLoginDetail(POGOProtos.Rpc.LoginDetail value) {
       if (loginDetailBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -793,10 +774,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
     public Builder addLoginDetail(
-        int index, POGOProtos.Rpc.PlatformLoginDetail value) {
+        int index, POGOProtos.Rpc.LoginDetail value) {
       if (loginDetailBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -810,10 +791,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
     public Builder addLoginDetail(
-        POGOProtos.Rpc.PlatformLoginDetail.Builder builderForValue) {
+        POGOProtos.Rpc.LoginDetail.Builder builderForValue) {
       if (loginDetailBuilder_ == null) {
         ensureLoginDetailIsMutable();
         loginDetail_.add(builderForValue.build());
@@ -824,10 +805,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
     public Builder addLoginDetail(
-        int index, POGOProtos.Rpc.PlatformLoginDetail.Builder builderForValue) {
+        int index, POGOProtos.Rpc.LoginDetail.Builder builderForValue) {
       if (loginDetailBuilder_ == null) {
         ensureLoginDetailIsMutable();
         loginDetail_.add(index, builderForValue.build());
@@ -838,10 +819,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
     public Builder addAllLoginDetail(
-        java.lang.Iterable<? extends POGOProtos.Rpc.PlatformLoginDetail> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.LoginDetail> values) {
       if (loginDetailBuilder_ == null) {
         ensureLoginDetailIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -853,7 +834,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
     public Builder clearLoginDetail() {
       if (loginDetailBuilder_ == null) {
@@ -866,7 +847,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
     public Builder removeLoginDetail(int index) {
       if (loginDetailBuilder_ == null) {
@@ -879,16 +860,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformLoginDetail.Builder getLoginDetailBuilder(
+    public POGOProtos.Rpc.LoginDetail.Builder getLoginDetailBuilder(
         int index) {
       return getLoginDetailFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformLoginDetailOrBuilder getLoginDetailOrBuilder(
+    public POGOProtos.Rpc.LoginDetailOrBuilder getLoginDetailOrBuilder(
         int index) {
       if (loginDetailBuilder_ == null) {
         return loginDetail_.get(index);  } else {
@@ -896,9 +877,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.PlatformLoginDetailOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.LoginDetailOrBuilder> 
          getLoginDetailOrBuilderList() {
       if (loginDetailBuilder_ != null) {
         return loginDetailBuilder_.getMessageOrBuilderList();
@@ -907,33 +888,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformLoginDetail.Builder addLoginDetailBuilder() {
+    public POGOProtos.Rpc.LoginDetail.Builder addLoginDetailBuilder() {
       return getLoginDetailFieldBuilder().addBuilder(
-          POGOProtos.Rpc.PlatformLoginDetail.getDefaultInstance());
+          POGOProtos.Rpc.LoginDetail.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
-    public POGOProtos.Rpc.PlatformLoginDetail.Builder addLoginDetailBuilder(
+    public POGOProtos.Rpc.LoginDetail.Builder addLoginDetailBuilder(
         int index) {
       return getLoginDetailFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.PlatformLoginDetail.getDefaultInstance());
+          index, POGOProtos.Rpc.LoginDetail.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.PlatformLoginDetail login_detail = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.LoginDetail login_detail = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.PlatformLoginDetail.Builder> 
+    public java.util.List<POGOProtos.Rpc.LoginDetail.Builder> 
          getLoginDetailBuilderList() {
       return getLoginDetailFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.PlatformLoginDetail, POGOProtos.Rpc.PlatformLoginDetail.Builder, POGOProtos.Rpc.PlatformLoginDetailOrBuilder> 
+        POGOProtos.Rpc.LoginDetail, POGOProtos.Rpc.LoginDetail.Builder, POGOProtos.Rpc.LoginDetailOrBuilder> 
         getLoginDetailFieldBuilder() {
       if (loginDetailBuilder_ == null) {
         loginDetailBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.PlatformLoginDetail, POGOProtos.Rpc.PlatformLoginDetail.Builder, POGOProtos.Rpc.PlatformLoginDetailOrBuilder>(
+            POGOProtos.Rpc.LoginDetail, POGOProtos.Rpc.LoginDetail.Builder, POGOProtos.Rpc.LoginDetailOrBuilder>(
                 loginDetail_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -948,7 +929,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.RemoveLoginActionOutProto.Status status = 3;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    public int getStatusValue() {
       return status_;
     }
     /**
@@ -957,7 +938,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
-      
       status_ = value;
       onChanged();
       return this;
@@ -966,7 +946,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.RemoveLoginActionOutProto.Status status = 3;</code>
      * @return The status.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.RemoveLoginActionOutProto.Status getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.RemoveLoginActionOutProto.Status result = POGOProtos.Rpc.RemoveLoginActionOutProto.Status.valueOf(status_);

@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: CBHCPLLDLPO
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.ShoppingPageTelemetryIds}
  */
 public enum ShoppingPageTelemetryIds
@@ -230,10 +226,6 @@ public enum ShoppingPageTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -242,7 +234,7 @@ public enum ShoppingPageTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(36);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(132);
   }
 
   private static final ShoppingPageTelemetryIds[] VALUES = values();

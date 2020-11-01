@@ -4,13 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End protos -----
- *------------------------------
- *----- Begin protos -----
- * ref: Niantic.Titan.Protos.PlayerSubmissionAction
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.PlayerSubmissionAction}
  */
 public enum PlayerSubmissionAction
@@ -251,10 +244,6 @@ public enum PlayerSubmissionAction
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -263,7 +252,7 @@ public enum PlayerSubmissionAction
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(142);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(104);
   }
 
   private static final PlayerSubmissionAction[] VALUES = values();

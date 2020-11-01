@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: EEDJEAJOEBM
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.CameraZoomInLevel}
  */
 public enum CameraZoomInLevel
@@ -95,10 +91,6 @@ public enum CameraZoomInLevel
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -107,7 +99,7 @@ public enum CameraZoomInLevel
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(53);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(26);
   }
 
   private static final CameraZoomInLevel[] VALUES = values();

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.SocialClientFeatures
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SocialClientFeatures}
  */
-public final class SocialClientFeatures extends
+public  final class SocialClientFeatures extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SocialClientFeatures)
     SocialClientFeaturesOrBuilder {
@@ -143,12 +139,12 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.SocialClientFeatures/Types/CrossGameSocialClientSettingsProto
+   * ref: Niantic.Platform.Protos.SocialClientFeatures.Types.CrossGameSocialClientSettingsProto
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto}
    */
-  public static final class CrossGameSocialClientSettingsProto extends
+  public  static final class CrossGameSocialClientSettingsProto extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto)
       CrossGameSocialClientSettingsProtoOrBuilder {
@@ -259,7 +255,7 @@ private static final long serialVersionUID = 0L;
 
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.SocialClientFeatures/Types/CrossGameSocialClientSettingsProto/Types/AppLinkType
+     * ref: Niantic.Platform.Protos.SocialClientFeatures.Types.CrossGameSocialClientSettingsProto.Types.AppLinkType
      * </pre>
      *
      * Protobuf enum {@code POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType}
@@ -340,10 +336,6 @@ private static final long serialVersionUID = 0L;
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -380,7 +372,7 @@ private static final long serialVersionUID = 0L;
 
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.SocialClientFeatures/Types/CrossGameSocialClientSettingsProto/Types/FeatureType
+     * ref: Niantic.Platform.Protos.SocialClientFeatures.Types.CrossGameSocialClientSettingsProto.Types.FeatureType
      * </pre>
      *
      * Protobuf enum {@code POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.FeatureType}
@@ -470,10 +462,6 @@ private static final long serialVersionUID = 0L;
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -524,7 +512,6 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.FeatureType disabled_features = 1;</code>
      * @return A list containing the disabledFeatures.
      */
-    @java.lang.Override
     public java.util.List<POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.FeatureType> getDisabledFeaturesList() {
       return new com.google.protobuf.Internal.ListAdapter<
           java.lang.Integer, POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.FeatureType>(disabledFeatures_, disabledFeatures_converter_);
@@ -533,7 +520,6 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.FeatureType disabled_features = 1;</code>
      * @return The count of disabledFeatures.
      */
-    @java.lang.Override
     public int getDisabledFeaturesCount() {
       return disabledFeatures_.size();
     }
@@ -542,7 +528,6 @@ private static final long serialVersionUID = 0L;
      * @param index The index of the element to return.
      * @return The disabledFeatures at the given index.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.FeatureType getDisabledFeatures(int index) {
       return disabledFeatures_converter_.convert(disabledFeatures_.get(index));
     }
@@ -550,7 +535,6 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.FeatureType disabled_features = 1;</code>
      * @return A list containing the enum numeric values on the wire for disabledFeatures.
      */
-    @java.lang.Override
     public java.util.List<java.lang.Integer>
     getDisabledFeaturesValueList() {
       return disabledFeatures_;
@@ -560,7 +544,6 @@ private static final long serialVersionUID = 0L;
      * @param index The index of the value to return.
      * @return The enum numeric value on the wire of disabledFeatures at the given index.
      */
-    @java.lang.Override
     public int getDisabledFeaturesValue(int index) {
       return disabledFeatures_.get(index);
     }
@@ -572,14 +555,14 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType app_link = 2;</code>
      * @return The enum numeric value on the wire for appLink.
      */
-    @java.lang.Override public int getAppLinkValue() {
+    public int getAppLinkValue() {
       return appLink_;
     }
     /**
      * <code>.POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType app_link = 2;</code>
      * @return The appLink.
      */
-    @java.lang.Override public POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType getAppLink() {
+    public POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType getAppLink() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType result = POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType.valueOf(appLink_);
       return result == null ? POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType.UNRECOGNIZED : result;
@@ -766,7 +749,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.SocialClientFeatures/Types/CrossGameSocialClientSettingsProto
+     * ref: Niantic.Platform.Protos.SocialClientFeatures.Types.CrossGameSocialClientSettingsProto
      * </pre>
      *
      * Protobuf type {@code POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto}
@@ -1079,7 +1062,7 @@ private static final long serialVersionUID = 0L;
        * <code>.POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType app_link = 2;</code>
        * @return The enum numeric value on the wire for appLink.
        */
-      @java.lang.Override public int getAppLinkValue() {
+      public int getAppLinkValue() {
         return appLink_;
       }
       /**
@@ -1088,7 +1071,6 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setAppLinkValue(int value) {
-        
         appLink_ = value;
         onChanged();
         return this;
@@ -1097,7 +1079,6 @@ private static final long serialVersionUID = 0L;
        * <code>.POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType app_link = 2;</code>
        * @return The appLink.
        */
-      @java.lang.Override
       public POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType getAppLink() {
         @SuppressWarnings("deprecation")
         POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType result = POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.AppLinkType.valueOf(appLink_);
@@ -1186,7 +1167,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto cross_game_social_settings = 1;</code>
    * @return Whether the crossGameSocialSettings field is set.
    */
-  @java.lang.Override
   public boolean hasCrossGameSocialSettings() {
     return crossGameSocialSettings_ != null;
   }
@@ -1194,14 +1174,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto cross_game_social_settings = 1;</code>
    * @return The crossGameSocialSettings.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto getCrossGameSocialSettings() {
     return crossGameSocialSettings_ == null ? POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto.getDefaultInstance() : crossGameSocialSettings_;
   }
   /**
    * <code>.POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProto cross_game_social_settings = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.SocialClientFeatures.CrossGameSocialClientSettingsProtoOrBuilder getCrossGameSocialSettingsOrBuilder() {
     return getCrossGameSocialSettings();
   }
@@ -1367,10 +1345,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.SocialClientFeatures
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SocialClientFeatures}
    */
   public static final class Builder extends

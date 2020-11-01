@@ -8,93 +8,93 @@ public interface PokestopIncidentDisplayProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
+   * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
    * @return Whether the characterDisplay field is set.
    */
   boolean hasCharacterDisplay();
   /**
-   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
+   * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
    * @return The characterDisplay.
    */
-  POGOProtos.Rpc.CharacterDisplayProto getCharacterDisplay();
+  POGOProtos.Rpc.HDLEOGLECNM getCharacterDisplay();
   /**
-   * <code>.POGOProtos.Rpc.CharacterDisplayProto character_display = 10;</code>
+   * <code>.POGOProtos.Rpc.HDLEOGLECNM character_display = 10;</code>
    */
-  POGOProtos.Rpc.CharacterDisplayProtoOrBuilder getCharacterDisplayOrBuilder();
+  POGOProtos.Rpc.HDLEOGLECNMOrBuilder getCharacterDisplayOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
+   * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
    * @return Whether the invasionFinished field is set.
    */
   boolean hasInvasionFinished();
   /**
-   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
+   * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
    * @return The invasionFinished.
    */
-  POGOProtos.Rpc.InvasionFinishedDisplayProto getInvasionFinished();
+  POGOProtos.Rpc.LHILOEDGDOB getInvasionFinished();
   /**
-   * <code>.POGOProtos.Rpc.InvasionFinishedDisplayProto invasion_finished = 11;</code>
+   * <code>.POGOProtos.Rpc.LHILOEDGDOB invasion_finished = 11;</code>
    */
-  POGOProtos.Rpc.InvasionFinishedDisplayProtoOrBuilder getInvasionFinishedOrBuilder();
+  POGOProtos.Rpc.LHILOEDGDOBOrBuilder getInvasionFinishedOrBuilder();
 
   /**
-   * <code>string dcibfdjpcdo = 1;</code>
-   * @return The dcibfdjpcdo.
+   * <code>string cjfmakbjoie = 1;</code>
+   * @return The cjfmakbjoie.
    */
-  java.lang.String getDcibfdjpcdo();
+  java.lang.String getCjfmakbjoie();
   /**
-   * <code>string dcibfdjpcdo = 1;</code>
-   * @return The bytes for dcibfdjpcdo.
+   * <code>string cjfmakbjoie = 1;</code>
+   * @return The bytes for cjfmakbjoie.
    */
   com.google.protobuf.ByteString
-      getDcibfdjpcdoBytes();
+      getCjfmakbjoieBytes();
 
   /**
-   * <code>int64 dcfbilimoap = 2;</code>
-   * @return The dcfbilimoap.
+   * <code>int64 infikjlocfb = 2;</code>
+   * @return The infikjlocfb.
    */
-  long getDcfbilimoap();
+  long getInfikjlocfb();
 
   /**
-   * <code>int64 occlclfbebp = 3;</code>
-   * @return The occlclfbebp.
+   * <code>int64 anppdjdmnan = 3;</code>
+   * @return The anppdjdmnan.
    */
-  long getOcclclfbebp();
+  long getAnppdjdmnan();
 
   /**
-   * <code>bool cphjklfdeim = 4;</code>
-   * @return The cphjklfdeim.
+   * <code>bool mflkpnpldjl = 4;</code>
+   * @return The mflkpnpldjl.
    */
-  boolean getCphjklfdeim();
+  boolean getMflkpnpldjl();
 
   /**
-   * <code>bool mclokcndhnl = 5;</code>
-   * @return The mclokcndhnl.
+   * <code>bool eblachhpabm = 5;</code>
+   * @return The eblachhpabm.
    */
-  boolean getMclokcndhnl();
+  boolean getEblachhpabm();
 
   /**
-   * <code>.POGOProtos.Rpc.IncidentDisplayType ghemfcabfcn = 6;</code>
-   * @return The enum numeric value on the wire for ghemfcabfcn.
+   * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
+   * @return The enum numeric value on the wire for gneepeippkc.
    */
-  int getGhemfcabfcnValue();
+  int getGneepeippkcValue();
   /**
-   * <code>.POGOProtos.Rpc.IncidentDisplayType ghemfcabfcn = 6;</code>
-   * @return The ghemfcabfcn.
+   * <code>.POGOProtos.Rpc.IncidentDisplayType gneepeippkc = 6;</code>
+   * @return The gneepeippkc.
    */
-  POGOProtos.Rpc.IncidentDisplayType getGhemfcabfcn();
+  POGOProtos.Rpc.IncidentDisplayType getGneepeippkc();
 
   /**
-   * <code>int32 jddinjjfone = 7;</code>
-   * @return The jddinjjfone.
+   * <code>int32 jpfekeiimig = 7;</code>
+   * @return The jpfekeiimig.
    */
-  int getJddinjjfone();
+  int getJpfekeiimig();
 
   /**
-   * <code>bool bndoacnacdh = 8;</code>
-   * @return The bndoacnacdh.
+   * <code>bool bebcjnakjod = 8;</code>
+   * @return The bebcjnakjod.
    */
-  boolean getBndoacnacdh();
+  boolean getBebcjnakjod();
 
-  public POGOProtos.Rpc.PokestopIncidentDisplayProto.ValueCase getValueCase();
+  public POGOProtos.Rpc.PokestopIncidentDisplayProto.CCPOJAKMAPCCase getCCPOJAKMAPCCase();
 }

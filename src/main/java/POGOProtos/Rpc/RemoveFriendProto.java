@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.RemoveFriendProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.RemoveFriendProto}
  */
-public final class RemoveFriendProto extends
+public  final class RemoveFriendProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.RemoveFriendProto)
     RemoveFriendProtoOrBuilder {
@@ -97,7 +93,6 @@ private static final long serialVersionUID = 0L;
    * <code>string player_id = 1;</code>
    * @return The playerId.
    */
-  @java.lang.Override
   public java.lang.String getPlayerId() {
     java.lang.Object ref = playerId_;
     if (ref instanceof java.lang.String) {
@@ -114,7 +109,6 @@ private static final long serialVersionUID = 0L;
    * <code>string player_id = 1;</code>
    * @return The bytes for playerId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPlayerIdBytes() {
     java.lang.Object ref = playerId_;
@@ -284,10 +278,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.RemoveFriendProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.RemoveFriendProto}
    */
   public static final class Builder extends

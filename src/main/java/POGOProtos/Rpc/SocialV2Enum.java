@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.SocialV2Enum
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SocialV2Enum}
  */
-public final class SocialV2Enum extends
+public  final class SocialV2Enum extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SocialV2Enum)
     SocialV2EnumOrBuilder {
@@ -86,7 +82,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.SocialV2Enum/Types/InvitationStatus
+   * ref: Niantic.Platform.Protos.SocialV2Enum.Types.InvitationStatus
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.SocialV2Enum.InvitationStatus}
@@ -158,10 +154,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -198,7 +190,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.SocialV2Enum/Types/OnlineStatus
+   * ref: Niantic.Platform.Protos.SocialV2Enum.Types.OnlineStatus
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.SocialV2Enum.OnlineStatus}
@@ -288,10 +280,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -471,10 +459,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.SocialV2Enum
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SocialV2Enum}
    */
   public static final class Builder extends

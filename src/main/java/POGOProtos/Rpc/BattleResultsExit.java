@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: AOFBFJNIPKF
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.BattleResultsExit}
  */
 public enum BattleResultsExit
@@ -86,10 +82,6 @@ public enum BattleResultsExit
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -98,7 +90,7 @@ public enum BattleResultsExit
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(26);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(16);
   }
 
   private static final BattleResultsExit[] VALUES = values();

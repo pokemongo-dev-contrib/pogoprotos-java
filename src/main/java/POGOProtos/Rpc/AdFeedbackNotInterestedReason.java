@@ -4,41 +4,37 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: FHIGCPIDDEA
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.AdFeedbackNotInterestedReason}
  */
 public enum AdFeedbackNotInterestedReason
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID = 0;</code>
+   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID = 0;</code>
    */
-  AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID(0),
+  AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID(0),
   /**
-   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT = 1;</code>
+   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT = 1;</code>
    */
-  AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT(1),
+  AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT(1),
   /**
-   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN = 2;</code>
+   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN = 2;</code>
    */
-  AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN(2),
+  AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID = 0;</code>
+   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID = 0;</code>
    */
-  public static final int AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID_VALUE = 0;
+  public static final int AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID_VALUE = 0;
   /**
-   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT = 1;</code>
+   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT = 1;</code>
    */
-  public static final int AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT_VALUE = 1;
+  public static final int AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT_VALUE = 1;
   /**
-   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN = 2;</code>
+   * <code>AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN = 2;</code>
    */
-  public static final int AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN_VALUE = 2;
+  public static final int AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN_VALUE = 2;
 
 
   public final int getNumber() {
@@ -65,9 +61,9 @@ public enum AdFeedbackNotInterestedReason
    */
   public static AdFeedbackNotInterestedReason forNumber(int value) {
     switch (value) {
-      case 0: return AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID;
-      case 1: return AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT;
-      case 2: return AD_FEEDBACK_NOT_INTERESTED_REASON_AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN;
+      case 0: return AD_FEEDBACK_NOT_INTERESTED_REASON_INVALID;
+      case 1: return AD_FEEDBACK_NOT_INTERESTED_REASON_NOT_RELEVANT;
+      case 2: return AD_FEEDBACK_NOT_INTERESTED_REASON_SEEN_TOO_OFTEN;
       default: return null;
     }
   }
@@ -86,10 +82,6 @@ public enum AdFeedbackNotInterestedReason
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -98,7 +90,7 @@ public enum AdFeedbackNotInterestedReason
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(67);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(2);
   }
 
   private static final AdFeedbackNotInterestedReason[] VALUES = values();

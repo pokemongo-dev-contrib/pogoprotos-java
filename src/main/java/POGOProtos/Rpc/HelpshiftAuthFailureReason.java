@@ -4,13 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End gui -----
- *------------------------------
- *----- Begin helpshift -----
- * ref: Helpshift.HelpshiftAuthFailureReason
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.HelpshiftAuthFailureReason}
  */
 public enum HelpshiftAuthFailureReason
@@ -80,10 +73,6 @@ public enum HelpshiftAuthFailureReason
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -92,7 +81,7 @@ public enum HelpshiftAuthFailureReason
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(10);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(46);
   }
 
   private static final HelpshiftAuthFailureReason[] VALUES = values();

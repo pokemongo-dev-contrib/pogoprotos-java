@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.PortalCurationImageResult
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.PortalCurationImageResult}
  */
-public final class PortalCurationImageResult extends
+public  final class PortalCurationImageResult extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PortalCurationImageResult)
     PortalCurationImageResultOrBuilder {
@@ -86,7 +82,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Titan.Protos.PortalCurationImageResult/Types/Result
+   * ref: Niantic.Titan.Protos.PortalCurationImageResult.Types.Result
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.PortalCurationImageResult.Result}
@@ -212,10 +208,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -395,10 +387,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.PortalCurationImageResult
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.PortalCurationImageResult}
    */
   public static final class Builder extends

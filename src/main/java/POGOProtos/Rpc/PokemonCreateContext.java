@@ -4,41 +4,37 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: JPCHDDHLFIK
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.PokemonCreateContext}
  */
 public enum PokemonCreateContext
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_WILD = 0;</code>
+   * <code>CREATE_CONTEXT_WILD = 0;</code>
    */
-  POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_WILD(0),
+  CREATE_CONTEXT_WILD(0),
   /**
-   * <code>POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_EGG = 1;</code>
+   * <code>CREATE_CONTEXT_EGG = 1;</code>
    */
-  POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_EGG(1),
+  CREATE_CONTEXT_EGG(1),
   /**
-   * <code>POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_EVOLVE = 2;</code>
+   * <code>CREATE_CONTEXT_EVOLVE = 2;</code>
    */
-  POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_EVOLVE(2),
+  CREATE_CONTEXT_EVOLVE(2),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_WILD = 0;</code>
+   * <code>CREATE_CONTEXT_WILD = 0;</code>
    */
-  public static final int POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_WILD_VALUE = 0;
+  public static final int CREATE_CONTEXT_WILD_VALUE = 0;
   /**
-   * <code>POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_EGG = 1;</code>
+   * <code>CREATE_CONTEXT_EGG = 1;</code>
    */
-  public static final int POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_EGG_VALUE = 1;
+  public static final int CREATE_CONTEXT_EGG_VALUE = 1;
   /**
-   * <code>POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_EVOLVE = 2;</code>
+   * <code>CREATE_CONTEXT_EVOLVE = 2;</code>
    */
-  public static final int POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_EVOLVE_VALUE = 2;
+  public static final int CREATE_CONTEXT_EVOLVE_VALUE = 2;
 
 
   public final int getNumber() {
@@ -65,9 +61,9 @@ public enum PokemonCreateContext
    */
   public static PokemonCreateContext forNumber(int value) {
     switch (value) {
-      case 0: return POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_WILD;
-      case 1: return POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_EGG;
-      case 2: return POKEMON_CREATE_CONTEXT_CREATE_CONTEXT_EVOLVE;
+      case 0: return CREATE_CONTEXT_WILD;
+      case 1: return CREATE_CONTEXT_EGG;
+      case 2: return CREATE_CONTEXT_EVOLVE;
       default: return null;
     }
   }
@@ -86,10 +82,6 @@ public enum PokemonCreateContext
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -98,7 +90,7 @@ public enum PokemonCreateContext
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(88);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(114);
   }
 
   private static final PokemonCreateContext[] VALUES = values();

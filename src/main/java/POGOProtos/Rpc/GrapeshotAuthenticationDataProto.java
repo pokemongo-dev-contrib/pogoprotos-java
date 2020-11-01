@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GrapeshotAuthenticationDataProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GrapeshotAuthenticationDataProto}
  */
-public final class GrapeshotAuthenticationDataProto extends
+public  final class GrapeshotAuthenticationDataProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GrapeshotAuthenticationDataProto)
     GrapeshotAuthenticationDataProtoOrBuilder {
@@ -104,7 +100,6 @@ private static final long serialVersionUID = 0L;
    * <code>string authorization = 1;</code>
    * @return The authorization.
    */
-  @java.lang.Override
   public java.lang.String getAuthorization() {
     java.lang.Object ref = authorization_;
     if (ref instanceof java.lang.String) {
@@ -121,7 +116,6 @@ private static final long serialVersionUID = 0L;
    * <code>string authorization = 1;</code>
    * @return The bytes for authorization.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getAuthorizationBytes() {
     java.lang.Object ref = authorization_;
@@ -142,7 +136,6 @@ private static final long serialVersionUID = 0L;
    * <code>string date = 2;</code>
    * @return The date.
    */
-  @java.lang.Override
   public java.lang.String getDate() {
     java.lang.Object ref = date_;
     if (ref instanceof java.lang.String) {
@@ -159,7 +152,6 @@ private static final long serialVersionUID = 0L;
    * <code>string date = 2;</code>
    * @return The bytes for date.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getDateBytes() {
     java.lang.Object ref = date_;
@@ -339,10 +331,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GrapeshotAuthenticationDataProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GrapeshotAuthenticationDataProto}
    */
   public static final class Builder extends

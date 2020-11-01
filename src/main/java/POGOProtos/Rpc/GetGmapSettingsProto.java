@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GetGmapSettingsProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetGmapSettingsProto}
  */
-public final class GetGmapSettingsProto extends
+public  final class GetGmapSettingsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetGmapSettingsProto)
     GetGmapSettingsProtoOrBuilder {
@@ -229,10 +225,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GetGmapSettingsProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetGmapSettingsProto}
    */
   public static final class Builder extends

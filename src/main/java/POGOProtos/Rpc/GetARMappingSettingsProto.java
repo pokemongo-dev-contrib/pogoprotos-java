@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GetARMappingSettingsProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetARMappingSettingsProto}
  */
-public final class GetARMappingSettingsProto extends
+public  final class GetARMappingSettingsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetARMappingSettingsProto)
     GetARMappingSettingsProtoOrBuilder {
@@ -229,10 +225,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GetARMappingSettingsProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetARMappingSettingsProto}
    */
   public static final class Builder extends

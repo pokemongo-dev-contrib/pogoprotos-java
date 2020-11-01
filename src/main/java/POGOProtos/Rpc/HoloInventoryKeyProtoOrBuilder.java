@@ -149,5 +149,23 @@ public interface HoloInventoryKeyProtoOrBuilder extends
   com.google.protobuf.ByteString
       getStickerIdBytes();
 
-  public POGOProtos.Rpc.HoloInventoryKeyProto.TypeCase getTypeCase();
+  /**
+   * <code>bool pokemon_home = 23;</code>
+   * @return The pokemonHome.
+   */
+  boolean getPokemonHome();
+
+  /**
+   * <code>bool player_stats_snapshot = 25;</code>
+   * @return The playerStatsSnapshot.
+   */
+  boolean getPlayerStatsSnapshot();
+
+  /**
+   * <code>int64 unknown_key = 26;</code>
+   * @return The unknownKey.
+   */
+  long getUnknownKey();
+
+  public POGOProtos.Rpc.HoloInventoryKeyProto.HLGNPDPAJHECase getHLGNPDPAJHECase();
 }

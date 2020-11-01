@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetFriendCodeProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetFriendCodeProto}
  */
-public final class GetFriendCodeProto extends
+public  final class GetFriendCodeProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFriendCodeProto)
     GetFriendCodeProtoOrBuilder {
@@ -95,7 +91,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool force_generate_code = 1;</code>
    * @return The forceGenerateCode.
    */
-  @java.lang.Override
   public boolean getForceGenerateCode() {
     return forceGenerateCode_;
   }
@@ -257,10 +252,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendCodeProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetFriendCodeProto}
    */
   public static final class Builder extends
@@ -412,7 +403,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool force_generate_code = 1;</code>
      * @return The forceGenerateCode.
      */
-    @java.lang.Override
     public boolean getForceGenerateCode() {
       return forceGenerateCode_;
     }

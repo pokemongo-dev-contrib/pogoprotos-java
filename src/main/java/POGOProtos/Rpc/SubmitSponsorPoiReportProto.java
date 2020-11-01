@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.SubmitSponsorPoiReportProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SubmitSponsorPoiReportProto}
  */
-public final class SubmitSponsorPoiReportProto extends
+public  final class SubmitSponsorPoiReportProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SubmitSponsorPoiReportProto)
     SubmitSponsorPoiReportProtoOrBuilder {
@@ -111,7 +107,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The poiId.
    */
-  @java.lang.Override
   public java.lang.String getPoiId() {
     java.lang.Object ref = poiId_;
     if (ref instanceof java.lang.String) {
@@ -128,7 +123,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The bytes for poiId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPoiIdBytes() {
     java.lang.Object ref = poiId_;
@@ -149,14 +143,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.SponsorPoiInvalidReason invalid_reason = 2;</code>
    * @return The enum numeric value on the wire for invalidReason.
    */
-  @java.lang.Override public int getInvalidReasonValue() {
+  public int getInvalidReasonValue() {
     return invalidReason_;
   }
   /**
    * <code>.POGOProtos.Rpc.SponsorPoiInvalidReason invalid_reason = 2;</code>
    * @return The invalidReason.
    */
-  @java.lang.Override public POGOProtos.Rpc.SponsorPoiInvalidReason getInvalidReason() {
+  public POGOProtos.Rpc.SponsorPoiInvalidReason getInvalidReason() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.SponsorPoiInvalidReason result = POGOProtos.Rpc.SponsorPoiInvalidReason.valueOf(invalidReason_);
     return result == null ? POGOProtos.Rpc.SponsorPoiInvalidReason.UNRECOGNIZED : result;
@@ -168,7 +162,6 @@ private static final long serialVersionUID = 0L;
    * <code>string additional_details = 3;</code>
    * @return The additionalDetails.
    */
-  @java.lang.Override
   public java.lang.String getAdditionalDetails() {
     java.lang.Object ref = additionalDetails_;
     if (ref instanceof java.lang.String) {
@@ -185,7 +178,6 @@ private static final long serialVersionUID = 0L;
    * <code>string additional_details = 3;</code>
    * @return The bytes for additionalDetails.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getAdditionalDetailsBytes() {
     java.lang.Object ref = additionalDetails_;
@@ -375,10 +367,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.SubmitSponsorPoiReportProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SubmitSponsorPoiReportProto}
    */
   public static final class Builder extends
@@ -620,7 +608,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.SponsorPoiInvalidReason invalid_reason = 2;</code>
      * @return The enum numeric value on the wire for invalidReason.
      */
-    @java.lang.Override public int getInvalidReasonValue() {
+    public int getInvalidReasonValue() {
       return invalidReason_;
     }
     /**
@@ -629,7 +617,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setInvalidReasonValue(int value) {
-      
       invalidReason_ = value;
       onChanged();
       return this;
@@ -638,7 +625,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.SponsorPoiInvalidReason invalid_reason = 2;</code>
      * @return The invalidReason.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.SponsorPoiInvalidReason getInvalidReason() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.SponsorPoiInvalidReason result = POGOProtos.Rpc.SponsorPoiInvalidReason.valueOf(invalidReason_);

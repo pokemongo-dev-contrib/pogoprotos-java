@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Rpc.WeatherAlertProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.WeatherAlertProto}
  */
-public final class WeatherAlertProto extends
+public  final class WeatherAlertProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.WeatherAlertProto)
     WeatherAlertProtoOrBuilder {
@@ -91,7 +87,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Rpc.WeatherAlertProto/Types/Severity
+   * ref: Niantic.Rpc.WeatherAlertProto.Types.Severity
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.WeatherAlertProto.Severity}
@@ -172,10 +168,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -216,7 +208,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool warn_weather = 2;</code>
    * @return The warnWeather.
    */
-  @java.lang.Override
   public boolean getWarnWeather() {
     return warnWeather_;
   }
@@ -378,10 +369,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Rpc.WeatherAlertProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.WeatherAlertProto}
    */
   public static final class Builder extends
@@ -533,7 +520,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool warn_weather = 2;</code>
      * @return The warnWeather.
      */
-    @java.lang.Override
     public boolean getWarnWeather() {
       return warnWeather_;
     }

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetFriendsListOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetFriendsListOutProto}
  */
-public final class GetFriendsListOutProto extends
+public  final class GetFriendsListOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFriendsListOutProto)
     GetFriendsListOutProtoOrBuilder {
@@ -107,7 +103,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendsListOutProto/Types/Result
+   * ref: Niantic.Platform.Protos.GetFriendsListOutProto.Types.Result
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GetFriendsListOutProto.Result}
@@ -188,10 +184,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -336,12 +328,12 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendsListOutProto/Types/FriendProto
+   * ref: Niantic.Platform.Protos.GetFriendsListOutProto.Types.FriendProto
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.GetFriendsListOutProto.FriendProto}
    */
-  public static final class FriendProto extends
+  public  static final class FriendProto extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFriendsListOutProto.FriendProto)
       FriendProtoOrBuilder {
@@ -491,7 +483,7 @@ private static final long serialVersionUID = 0L;
 
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.GetFriendsListOutProto/Types/FriendProto/Types/OnlineStatus
+     * ref: Niantic.Platform.Protos.GetFriendsListOutProto.Types.FriendProto.Types.OnlineStatus
      * </pre>
      *
      * Protobuf enum {@code POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus}
@@ -581,10 +573,6 @@ private static final long serialVersionUID = 0L;
 
       public final com.google.protobuf.Descriptors.EnumValueDescriptor
           getValueDescriptor() {
-        if (this == UNRECOGNIZED) {
-          throw new java.lang.IllegalStateException(
-              "Can't get the descriptor of an unrecognized enum value.");
-        }
         return getDescriptor().getValues().get(ordinal());
       }
       public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -625,7 +613,6 @@ private static final long serialVersionUID = 0L;
      * <code>string player_id = 1;</code>
      * @return The playerId.
      */
-    @java.lang.Override
     public java.lang.String getPlayerId() {
       java.lang.Object ref = playerId_;
       if (ref instanceof java.lang.String) {
@@ -642,7 +629,6 @@ private static final long serialVersionUID = 0L;
      * <code>string player_id = 1;</code>
      * @return The bytes for playerId.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getPlayerIdBytes() {
       java.lang.Object ref = playerId_;
@@ -663,7 +649,6 @@ private static final long serialVersionUID = 0L;
      * <code>string codename = 2;</code>
      * @return The codename.
      */
-    @java.lang.Override
     public java.lang.String getCodename() {
       java.lang.Object ref = codename_;
       if (ref instanceof java.lang.String) {
@@ -680,7 +665,6 @@ private static final long serialVersionUID = 0L;
      * <code>string codename = 2;</code>
      * @return The bytes for codename.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getCodenameBytes() {
       java.lang.Object ref = codename_;
@@ -701,7 +685,6 @@ private static final long serialVersionUID = 0L;
      * <code>string team = 3;</code>
      * @return The team.
      */
-    @java.lang.Override
     public java.lang.String getTeam() {
       java.lang.Object ref = team_;
       if (ref instanceof java.lang.String) {
@@ -718,7 +701,6 @@ private static final long serialVersionUID = 0L;
      * <code>string team = 3;</code>
      * @return The bytes for team.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getTeamBytes() {
       java.lang.Object ref = team_;
@@ -739,7 +721,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 score = 4;</code>
      * @return The score.
      */
-    @java.lang.Override
     public int getScore() {
       return score_;
     }
@@ -750,7 +731,6 @@ private static final long serialVersionUID = 0L;
      * <code>bytes data_with_me = 5;</code>
      * @return The dataWithMe.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getDataWithMe() {
       return dataWithMe_;
     }
@@ -761,7 +741,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 version = 6;</code>
      * @return The version.
      */
-    @java.lang.Override
     public long getVersion() {
       return version_;
     }
@@ -772,7 +751,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 created_ms = 7;</code>
      * @return The createdMs.
      */
-    @java.lang.Override
     public long getCreatedMs() {
       return createdMs_;
     }
@@ -783,7 +761,6 @@ private static final long serialVersionUID = 0L;
      * <code>string fb_user_id = 8;</code>
      * @return The fbUserId.
      */
-    @java.lang.Override
     public java.lang.String getFbUserId() {
       java.lang.Object ref = fbUserId_;
       if (ref instanceof java.lang.String) {
@@ -800,7 +777,6 @@ private static final long serialVersionUID = 0L;
      * <code>string fb_user_id = 8;</code>
      * @return The bytes for fbUserId.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getFbUserIdBytes() {
       java.lang.Object ref = fbUserId_;
@@ -821,7 +797,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool is_facebook_friendship = 9;</code>
      * @return The isFacebookFriendship.
      */
-    @java.lang.Override
     public boolean getIsFacebookFriendship() {
       return isFacebookFriendship_;
     }
@@ -832,7 +807,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendsListOutProto.SharedFriendshipProto shared_data = 10;</code>
      * @return Whether the sharedData field is set.
      */
-    @java.lang.Override
     public boolean hasSharedData() {
       return sharedData_ != null;
     }
@@ -840,14 +814,12 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendsListOutProto.SharedFriendshipProto shared_data = 10;</code>
      * @return The sharedData.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetFriendsListOutProto.SharedFriendshipProto getSharedData() {
       return sharedData_ == null ? POGOProtos.Rpc.GetFriendsListOutProto.SharedFriendshipProto.getDefaultInstance() : sharedData_;
     }
     /**
      * <code>.POGOProtos.Rpc.GetFriendsListOutProto.SharedFriendshipProto shared_data = 10;</code>
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetFriendsListOutProto.SharedFriendshipProtoOrBuilder getSharedDataOrBuilder() {
       return getSharedData();
     }
@@ -858,14 +830,14 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
      * @return The enum numeric value on the wire for onlineStatus.
      */
-    @java.lang.Override public int getOnlineStatusValue() {
+    public int getOnlineStatusValue() {
       return onlineStatus_;
     }
     /**
      * <code>.POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
      * @return The onlineStatus.
      */
-    @java.lang.Override public POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus getOnlineStatus() {
+    public POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus getOnlineStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus result = POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus.valueOf(onlineStatus_);
       return result == null ? POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus.UNRECOGNIZED : result;
@@ -1141,7 +1113,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.GetFriendsListOutProto/Types/FriendProto
+     * ref: Niantic.Platform.Protos.GetFriendsListOutProto.Types.FriendProto
      * </pre>
      *
      * Protobuf type {@code POGOProtos.Rpc.GetFriendsListOutProto.FriendProto}
@@ -1595,7 +1567,6 @@ private static final long serialVersionUID = 0L;
        * <code>int32 score = 4;</code>
        * @return The score.
        */
-      @java.lang.Override
       public int getScore() {
         return score_;
       }
@@ -1626,7 +1597,6 @@ private static final long serialVersionUID = 0L;
        * <code>bytes data_with_me = 5;</code>
        * @return The dataWithMe.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getDataWithMe() {
         return dataWithMe_;
       }
@@ -1660,7 +1630,6 @@ private static final long serialVersionUID = 0L;
        * <code>int64 version = 6;</code>
        * @return The version.
        */
-      @java.lang.Override
       public long getVersion() {
         return version_;
       }
@@ -1691,7 +1660,6 @@ private static final long serialVersionUID = 0L;
        * <code>int64 created_ms = 7;</code>
        * @return The createdMs.
        */
-      @java.lang.Override
       public long getCreatedMs() {
         return createdMs_;
       }
@@ -1798,7 +1766,6 @@ private static final long serialVersionUID = 0L;
        * <code>bool is_facebook_friendship = 9;</code>
        * @return The isFacebookFriendship.
        */
-      @java.lang.Override
       public boolean getIsFacebookFriendship() {
         return isFacebookFriendship_;
       }
@@ -1948,7 +1915,7 @@ private static final long serialVersionUID = 0L;
        * <code>.POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
        * @return The enum numeric value on the wire for onlineStatus.
        */
-      @java.lang.Override public int getOnlineStatusValue() {
+      public int getOnlineStatusValue() {
         return onlineStatus_;
       }
       /**
@@ -1957,7 +1924,6 @@ private static final long serialVersionUID = 0L;
        * @return This builder for chaining.
        */
       public Builder setOnlineStatusValue(int value) {
-        
         onlineStatus_ = value;
         onChanged();
         return this;
@@ -1966,7 +1932,6 @@ private static final long serialVersionUID = 0L;
        * <code>.POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus online_status = 11;</code>
        * @return The onlineStatus.
        */
-      @java.lang.Override
       public POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus getOnlineStatus() {
         @SuppressWarnings("deprecation")
         POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus result = POGOProtos.Rpc.GetFriendsListOutProto.FriendProto.OnlineStatus.valueOf(onlineStatus_);
@@ -2079,12 +2044,12 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendsListOutProto/Types/SharedFriendshipProto
+   * ref: Niantic.Platform.Protos.GetFriendsListOutProto.Types.SharedFriendshipProto
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.GetFriendsListOutProto.SharedFriendshipProto}
    */
-  public static final class SharedFriendshipProto extends
+  public  static final class SharedFriendshipProto extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFriendsListOutProto.SharedFriendshipProto)
       SharedFriendshipProtoOrBuilder {
@@ -2187,7 +2152,6 @@ private static final long serialVersionUID = 0L;
      * <code>bytes shared_data = 1;</code>
      * @return The sharedData.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getSharedData() {
       return sharedData_;
     }
@@ -2198,7 +2162,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 version = 2;</code>
      * @return The version.
      */
-    @java.lang.Override
     public long getVersion() {
       return version_;
     }
@@ -2209,7 +2172,6 @@ private static final long serialVersionUID = 0L;
      * <code>bytes data_from_me = 3;</code>
      * @return The dataFromMe.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getDataFromMe() {
       return dataFromMe_;
     }
@@ -2220,7 +2182,6 @@ private static final long serialVersionUID = 0L;
      * <code>bytes data_to_me = 4;</code>
      * @return The dataToMe.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString getDataToMe() {
       return dataToMe_;
     }
@@ -2416,7 +2377,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * ref: Niantic.Platform.Protos.GetFriendsListOutProto/Types/SharedFriendshipProto
+     * ref: Niantic.Platform.Protos.GetFriendsListOutProto.Types.SharedFriendshipProto
      * </pre>
      *
      * Protobuf type {@code POGOProtos.Rpc.GetFriendsListOutProto.SharedFriendshipProto}
@@ -2588,7 +2549,6 @@ private static final long serialVersionUID = 0L;
        * <code>bytes shared_data = 1;</code>
        * @return The sharedData.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getSharedData() {
         return sharedData_;
       }
@@ -2622,7 +2582,6 @@ private static final long serialVersionUID = 0L;
        * <code>int64 version = 2;</code>
        * @return The version.
        */
-      @java.lang.Override
       public long getVersion() {
         return version_;
       }
@@ -2653,7 +2612,6 @@ private static final long serialVersionUID = 0L;
        * <code>bytes data_from_me = 3;</code>
        * @return The dataFromMe.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getDataFromMe() {
         return dataFromMe_;
       }
@@ -2687,7 +2645,6 @@ private static final long serialVersionUID = 0L;
        * <code>bytes data_to_me = 4;</code>
        * @return The dataToMe.
        */
-      @java.lang.Override
       public com.google.protobuf.ByteString getDataToMe() {
         return dataToMe_;
       }
@@ -2774,14 +2731,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GetFriendsListOutProto.Result result = 1;</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  public int getResultValue() {
     return result_;
   }
   /**
    * <code>.POGOProtos.Rpc.GetFriendsListOutProto.Result result = 1;</code>
    * @return The result.
    */
-  @java.lang.Override public POGOProtos.Rpc.GetFriendsListOutProto.Result getResult() {
+  public POGOProtos.Rpc.GetFriendsListOutProto.Result getResult() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GetFriendsListOutProto.Result result = POGOProtos.Rpc.GetFriendsListOutProto.Result.valueOf(result_);
     return result == null ? POGOProtos.Rpc.GetFriendsListOutProto.Result.UNRECOGNIZED : result;
@@ -2792,14 +2749,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.GetFriendsListOutProto.FriendProto friend = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.GetFriendsListOutProto.FriendProto> getFriendList() {
     return friend_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GetFriendsListOutProto.FriendProto friend = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.GetFriendsListOutProto.FriendProtoOrBuilder> 
       getFriendOrBuilderList() {
     return friend_;
@@ -2807,21 +2762,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.GetFriendsListOutProto.FriendProto friend = 2;</code>
    */
-  @java.lang.Override
   public int getFriendCount() {
     return friend_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GetFriendsListOutProto.FriendProto friend = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GetFriendsListOutProto.FriendProto getFriend(int index) {
     return friend_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GetFriendsListOutProto.FriendProto friend = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GetFriendsListOutProto.FriendProtoOrBuilder getFriendOrBuilder(
       int index) {
     return friend_.get(index);
@@ -2995,10 +2947,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendsListOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetFriendsListOutProto}
    */
   public static final class Builder extends
@@ -3194,7 +3142,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendsListOutProto.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    public int getResultValue() {
       return result_;
     }
     /**
@@ -3203,7 +3151,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResultValue(int value) {
-      
       result_ = value;
       onChanged();
       return this;
@@ -3212,7 +3159,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetFriendsListOutProto.Result result = 1;</code>
      * @return The result.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetFriendsListOutProto.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetFriendsListOutProto.Result result = POGOProtos.Rpc.GetFriendsListOutProto.Result.valueOf(result_);

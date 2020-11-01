@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetFriendDetailsProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetFriendDetailsProto}
  */
-public final class GetFriendDetailsProto extends
+public  final class GetFriendDetailsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFriendDetailsProto)
     GetFriendDetailsProtoOrBuilder {
@@ -295,10 +291,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetFriendDetailsProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetFriendDetailsProto}
    */
   public static final class Builder extends

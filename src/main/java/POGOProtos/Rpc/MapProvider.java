@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Proto.TEMP.MapProvider
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.MapProvider}
  */
-public final class MapProvider extends
+public  final class MapProvider extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.MapProvider)
     MapProviderOrBuilder {
@@ -163,7 +159,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.MapProvider/Types/MapType
+   * ref: Niantic.Platform.Maps.Proto.TEMP.MapProvider.Types.MapType
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.MapProvider.MapType}
@@ -262,10 +258,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -324,12 +316,12 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.MapProvider/Types/BundleZoomRange
+   * ref: Niantic.Platform.Maps.Proto.TEMP.MapProvider.Types.BundleZoomRange
    * </pre>
    *
    * Protobuf type {@code POGOProtos.Rpc.MapProvider.BundleZoomRange}
    */
-  public static final class BundleZoomRange extends
+  public  static final class BundleZoomRange extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.MapProvider.BundleZoomRange)
       BundleZoomRangeOrBuilder {
@@ -424,7 +416,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 min_zoom = 1;</code>
      * @return The minZoom.
      */
-    @java.lang.Override
     public int getMinZoom() {
       return minZoom_;
     }
@@ -435,7 +426,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 max_zoom = 2;</code>
      * @return The maxZoom.
      */
-    @java.lang.Override
     public int getMaxZoom() {
       return maxZoom_;
     }
@@ -446,7 +436,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 request_zoom_offset = 3;</code>
      * @return The requestZoomOffset.
      */
-    @java.lang.Override
     public int getRequestZoomOffset() {
       return requestZoomOffset_;
     }
@@ -630,7 +619,7 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * ref: Niantic.Platform.Maps.Proto.TEMP.MapProvider/Types/BundleZoomRange
+     * ref: Niantic.Platform.Maps.Proto.TEMP.MapProvider.Types.BundleZoomRange
      * </pre>
      *
      * Protobuf type {@code POGOProtos.Rpc.MapProvider.BundleZoomRange}
@@ -796,7 +785,6 @@ private static final long serialVersionUID = 0L;
        * <code>int32 min_zoom = 1;</code>
        * @return The minZoom.
        */
-      @java.lang.Override
       public int getMinZoom() {
         return minZoom_;
       }
@@ -827,7 +815,6 @@ private static final long serialVersionUID = 0L;
        * <code>int32 max_zoom = 2;</code>
        * @return The maxZoom.
        */
-      @java.lang.Override
       public int getMaxZoom() {
         return maxZoom_;
       }
@@ -858,7 +845,6 @@ private static final long serialVersionUID = 0L;
        * <code>int32 request_zoom_offset = 3;</code>
        * @return The requestZoomOffset.
        */
-      @java.lang.Override
       public int getRequestZoomOffset() {
         return requestZoomOffset_;
       }
@@ -982,7 +968,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GmmSettings gmm_settings = 4;</code>
    * @return Whether the gmmSettings field is set.
    */
-  @java.lang.Override
   public boolean hasGmmSettings() {
     return settingsCase_ == 4;
   }
@@ -990,7 +975,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GmmSettings gmm_settings = 4;</code>
    * @return The gmmSettings.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GmmSettings getGmmSettings() {
     if (settingsCase_ == 4) {
        return (POGOProtos.Rpc.GmmSettings) settings_;
@@ -1000,7 +984,6 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>.POGOProtos.Rpc.GmmSettings gmm_settings = 4;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GmmSettingsOrBuilder getGmmSettingsOrBuilder() {
     if (settingsCase_ == 4) {
        return (POGOProtos.Rpc.GmmSettings) settings_;
@@ -1059,7 +1042,6 @@ private static final long serialVersionUID = 0L;
    * <code>string name = 1;</code>
    * @return The name.
    */
-  @java.lang.Override
   public java.lang.String getName() {
     java.lang.Object ref = name_;
     if (ref instanceof java.lang.String) {
@@ -1076,7 +1058,6 @@ private static final long serialVersionUID = 0L;
    * <code>string name = 1;</code>
    * @return The bytes for name.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getNameBytes() {
     java.lang.Object ref = name_;
@@ -1097,7 +1078,6 @@ private static final long serialVersionUID = 0L;
    * <code>string base_url = 2;</code>
    * @return The baseUrl.
    */
-  @java.lang.Override
   public java.lang.String getBaseUrl() {
     java.lang.Object ref = baseUrl_;
     if (ref instanceof java.lang.String) {
@@ -1114,7 +1094,6 @@ private static final long serialVersionUID = 0L;
    * <code>string base_url = 2;</code>
    * @return The bytes for baseUrl.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getBaseUrlBytes() {
     java.lang.Object ref = baseUrl_;
@@ -1135,7 +1114,6 @@ private static final long serialVersionUID = 0L;
    * <code>string query_format = 3;</code>
    * @return The queryFormat.
    */
-  @java.lang.Override
   public java.lang.String getQueryFormat() {
     java.lang.Object ref = queryFormat_;
     if (ref instanceof java.lang.String) {
@@ -1152,7 +1130,6 @@ private static final long serialVersionUID = 0L;
    * <code>string query_format = 3;</code>
    * @return The bytes for queryFormat.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getQueryFormatBytes() {
     java.lang.Object ref = queryFormat_;
@@ -1173,14 +1150,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.MapProvider.MapType map_type = 6;</code>
    * @return The enum numeric value on the wire for mapType.
    */
-  @java.lang.Override public int getMapTypeValue() {
+  public int getMapTypeValue() {
     return mapType_;
   }
   /**
    * <code>.POGOProtos.Rpc.MapProvider.MapType map_type = 6;</code>
    * @return The mapType.
    */
-  @java.lang.Override public POGOProtos.Rpc.MapProvider.MapType getMapType() {
+  public POGOProtos.Rpc.MapProvider.MapType getMapType() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.MapProvider.MapType result = POGOProtos.Rpc.MapProvider.MapType.valueOf(mapType_);
     return result == null ? POGOProtos.Rpc.MapProvider.MapType.UNRECOGNIZED : result;
@@ -1192,7 +1169,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool hide_attribution = 7;</code>
    * @return The hideAttribution.
    */
-  @java.lang.Override
   public boolean getHideAttribution() {
     return hideAttribution_;
   }
@@ -1203,7 +1179,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 min_tile_level = 8;</code>
    * @return The minTileLevel.
    */
-  @java.lang.Override
   public int getMinTileLevel() {
     return minTileLevel_;
   }
@@ -1214,7 +1189,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 max_tile_level = 9;</code>
    * @return The maxTileLevel.
    */
-  @java.lang.Override
   public int getMaxTileLevel() {
     return maxTileLevel_;
   }
@@ -1224,14 +1198,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.MapProvider.BundleZoomRange bundle_zoom_range = 10;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.MapProvider.BundleZoomRange> getBundleZoomRangeList() {
     return bundleZoomRange_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapProvider.BundleZoomRange bundle_zoom_range = 10;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.MapProvider.BundleZoomRangeOrBuilder> 
       getBundleZoomRangeOrBuilderList() {
     return bundleZoomRange_;
@@ -1239,21 +1211,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.MapProvider.BundleZoomRange bundle_zoom_range = 10;</code>
    */
-  @java.lang.Override
   public int getBundleZoomRangeCount() {
     return bundleZoomRange_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapProvider.BundleZoomRange bundle_zoom_range = 10;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.MapProvider.BundleZoomRange getBundleZoomRange(int index) {
     return bundleZoomRange_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.MapProvider.BundleZoomRange bundle_zoom_range = 10;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.MapProvider.BundleZoomRangeOrBuilder getBundleZoomRangeOrBuilder(
       int index) {
     return bundleZoomRange_.get(index);
@@ -1529,10 +1498,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Maps.Proto.TEMP.MapProvider
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.MapProvider}
    */
   public static final class Builder extends
@@ -1811,7 +1776,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GmmSettings gmm_settings = 4;</code>
      * @return Whether the gmmSettings field is set.
      */
-    @java.lang.Override
     public boolean hasGmmSettings() {
       return settingsCase_ == 4;
     }
@@ -1819,7 +1783,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GmmSettings gmm_settings = 4;</code>
      * @return The gmmSettings.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GmmSettings getGmmSettings() {
       if (gmmSettingsBuilder_ == null) {
         if (settingsCase_ == 4) {
@@ -1913,7 +1876,6 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.POGOProtos.Rpc.GmmSettings gmm_settings = 4;</code>
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GmmSettingsOrBuilder getGmmSettingsOrBuilder() {
       if ((settingsCase_ == 4) && (gmmSettingsBuilder_ != null)) {
         return gmmSettingsBuilder_.getMessageOrBuilder();
@@ -1950,7 +1912,6 @@ private static final long serialVersionUID = 0L;
      * <code>string settings_name = 5;</code>
      * @return The settingsName.
      */
-    @java.lang.Override
     public java.lang.String getSettingsName() {
       java.lang.Object ref = "";
       if (settingsCase_ == 5) {
@@ -1972,7 +1933,6 @@ private static final long serialVersionUID = 0L;
      * <code>string settings_name = 5;</code>
      * @return The bytes for settingsName.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getSettingsNameBytes() {
       java.lang.Object ref = "";
@@ -2268,7 +2228,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.MapProvider.MapType map_type = 6;</code>
      * @return The enum numeric value on the wire for mapType.
      */
-    @java.lang.Override public int getMapTypeValue() {
+    public int getMapTypeValue() {
       return mapType_;
     }
     /**
@@ -2277,7 +2237,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setMapTypeValue(int value) {
-      
       mapType_ = value;
       onChanged();
       return this;
@@ -2286,7 +2245,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.MapProvider.MapType map_type = 6;</code>
      * @return The mapType.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.MapProvider.MapType getMapType() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.MapProvider.MapType result = POGOProtos.Rpc.MapProvider.MapType.valueOf(mapType_);
@@ -2322,7 +2280,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool hide_attribution = 7;</code>
      * @return The hideAttribution.
      */
-    @java.lang.Override
     public boolean getHideAttribution() {
       return hideAttribution_;
     }
@@ -2353,7 +2310,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 min_tile_level = 8;</code>
      * @return The minTileLevel.
      */
-    @java.lang.Override
     public int getMinTileLevel() {
       return minTileLevel_;
     }
@@ -2384,7 +2340,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 max_tile_level = 9;</code>
      * @return The maxTileLevel.
      */
-    @java.lang.Override
     public int getMaxTileLevel() {
       return maxTileLevel_;
     }

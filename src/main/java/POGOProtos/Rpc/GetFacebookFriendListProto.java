@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetFacebookFriendListProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetFacebookFriendListProto}
  */
-public final class GetFacebookFriendListProto extends
+public  final class GetFacebookFriendListProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetFacebookFriendListProto)
     GetFacebookFriendListProtoOrBuilder {
@@ -109,7 +105,6 @@ private static final long serialVersionUID = 0L;
    * <code>string fb_access_token = 1;</code>
    * @return The fbAccessToken.
    */
-  @java.lang.Override
   public java.lang.String getFbAccessToken() {
     java.lang.Object ref = fbAccessToken_;
     if (ref instanceof java.lang.String) {
@@ -126,7 +121,6 @@ private static final long serialVersionUID = 0L;
    * <code>string fb_access_token = 1;</code>
    * @return The bytes for fbAccessToken.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getFbAccessTokenBytes() {
     java.lang.Object ref = fbAccessToken_;
@@ -147,7 +141,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 limit = 2;</code>
    * @return The limit.
    */
-  @java.lang.Override
   public int getLimit() {
     return limit_;
   }
@@ -158,7 +151,6 @@ private static final long serialVersionUID = 0L;
    * <code>string cursor = 3;</code>
    * @return The cursor.
    */
-  @java.lang.Override
   public java.lang.String getCursor() {
     java.lang.Object ref = cursor_;
     if (ref instanceof java.lang.String) {
@@ -175,7 +167,6 @@ private static final long serialVersionUID = 0L;
    * <code>string cursor = 3;</code>
    * @return The bytes for cursor.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getCursorBytes() {
     java.lang.Object ref = cursor_;
@@ -366,10 +357,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetFacebookFriendListProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetFacebookFriendListProto}
    */
   public static final class Builder extends
@@ -611,7 +598,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 limit = 2;</code>
      * @return The limit.
      */
-    @java.lang.Override
     public int getLimit() {
       return limit_;
     }

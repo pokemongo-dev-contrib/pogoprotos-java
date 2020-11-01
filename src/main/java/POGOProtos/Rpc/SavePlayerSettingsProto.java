@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.SavePlayerSettingsProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SavePlayerSettingsProto}
  */
-public final class SavePlayerSettingsProto extends
+public  final class SavePlayerSettingsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SavePlayerSettingsProto)
     SavePlayerSettingsProtoOrBuilder {
@@ -103,7 +99,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.PlayerSettingsProto settings = 1;</code>
    * @return Whether the settings field is set.
    */
-  @java.lang.Override
   public boolean hasSettings() {
     return settings_ != null;
   }
@@ -111,14 +106,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.PlayerSettingsProto settings = 1;</code>
    * @return The settings.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.PlayerSettingsProto getSettings() {
     return settings_ == null ? POGOProtos.Rpc.PlayerSettingsProto.getDefaultInstance() : settings_;
   }
   /**
    * <code>.POGOProtos.Rpc.PlayerSettingsProto settings = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.PlayerSettingsProtoOrBuilder getSettingsOrBuilder() {
     return getSettings();
   }
@@ -284,10 +277,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.SavePlayerSettingsProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SavePlayerSettingsProto}
    */
   public static final class Builder extends

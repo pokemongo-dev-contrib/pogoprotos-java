@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GetARMappingSettingsOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetARMappingSettingsOutProto}
  */
-public final class GetARMappingSettingsOutProto extends
+public  final class GetARMappingSettingsOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetARMappingSettingsOutProto)
     GetARMappingSettingsOutProtoOrBuilder {
@@ -122,7 +118,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool is_client_scan_validation_enabled = 1;</code>
    * @return The isClientScanValidationEnabled.
    */
-  @java.lang.Override
   public boolean getIsClientScanValidationEnabled() {
     return isClientScanValidationEnabled_;
   }
@@ -388,10 +383,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GetARMappingSettingsOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetARMappingSettingsOutProto}
    */
   public static final class Builder extends
@@ -579,7 +570,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool is_client_scan_validation_enabled = 1;</code>
      * @return The isClientScanValidationEnabled.
      */
-    @java.lang.Override
     public boolean getIsClientScanValidationEnabled() {
       return isClientScanValidationEnabled_;
     }

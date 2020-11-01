@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: GGOCLOIGPIL
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.HoloBadgeType}
  */
 public enum HoloBadgeType
@@ -269,6 +265,22 @@ public enum HoloBadgeType
    */
   BADGE_POKEDEX_ENTRIES_GEN8(63),
   /**
+   * <code>BADGE_7_DAY_STREAKS = 64;</code>
+   */
+  BADGE_7_DAY_STREAKS(64),
+  /**
+   * <code>BADGE_UNIQUE_RAID_BOSSES_DEFEATED = 65;</code>
+   */
+  BADGE_UNIQUE_RAID_BOSSES_DEFEATED(65),
+  /**
+   * <code>BADGE_RAIDS_WITH_FRIENDS = 66;</code>
+   */
+  BADGE_RAIDS_WITH_FRIENDS(66),
+  /**
+   * <code>BADGE_POKEMON_CAUGHT_AT_YOUR_LURES = 67;</code>
+   */
+  BADGE_POKEMON_CAUGHT_AT_YOUR_LURES(67),
+  /**
    * <code>BADGE_WAYFARER = 68;</code>
    */
   BADGE_WAYFARER(68),
@@ -280,6 +292,14 @@ public enum HoloBadgeType
    * <code>BADGE_UNIQUE_MEGA_EVOS = 70;</code>
    */
   BADGE_UNIQUE_MEGA_EVOS(70),
+  /**
+   * <code>DEPRECATED_0 = 71;</code>
+   */
+  DEPRECATED_0(71),
+  /**
+   * <code>BADGE_DYNAMIC_MIN = 1000;</code>
+   */
+  BADGE_DYNAMIC_MIN(1000),
   /**
    * <code>BADGE_EVENT_MIN = 2000;</code>
    */
@@ -1072,6 +1092,18 @@ public enum HoloBadgeType
    * <code>BADGE_EVENT_0030 = 5230;</code>
    */
   BADGE_EVENT_0030(5230),
+  /**
+   * <code>BADGE_LEVEL_40 = 5231;</code>
+   */
+  BADGE_LEVEL_40(5231),
+  /**
+   * <code>DEPRECATED_1 = 5300;</code>
+   */
+  DEPRECATED_1(5300),
+  /**
+   * <code>DEPRECATED_2 = 5301;</code>
+   */
+  DEPRECATED_2(5301),
   UNRECOGNIZED(-1),
   ;
 
@@ -1332,6 +1364,22 @@ public enum HoloBadgeType
    */
   public static final int BADGE_POKEDEX_ENTRIES_GEN8_VALUE = 63;
   /**
+   * <code>BADGE_7_DAY_STREAKS = 64;</code>
+   */
+  public static final int BADGE_7_DAY_STREAKS_VALUE = 64;
+  /**
+   * <code>BADGE_UNIQUE_RAID_BOSSES_DEFEATED = 65;</code>
+   */
+  public static final int BADGE_UNIQUE_RAID_BOSSES_DEFEATED_VALUE = 65;
+  /**
+   * <code>BADGE_RAIDS_WITH_FRIENDS = 66;</code>
+   */
+  public static final int BADGE_RAIDS_WITH_FRIENDS_VALUE = 66;
+  /**
+   * <code>BADGE_POKEMON_CAUGHT_AT_YOUR_LURES = 67;</code>
+   */
+  public static final int BADGE_POKEMON_CAUGHT_AT_YOUR_LURES_VALUE = 67;
+  /**
    * <code>BADGE_WAYFARER = 68;</code>
    */
   public static final int BADGE_WAYFARER_VALUE = 68;
@@ -1343,6 +1391,14 @@ public enum HoloBadgeType
    * <code>BADGE_UNIQUE_MEGA_EVOS = 70;</code>
    */
   public static final int BADGE_UNIQUE_MEGA_EVOS_VALUE = 70;
+  /**
+   * <code>DEPRECATED_0 = 71;</code>
+   */
+  public static final int DEPRECATED_0_VALUE = 71;
+  /**
+   * <code>BADGE_DYNAMIC_MIN = 1000;</code>
+   */
+  public static final int BADGE_DYNAMIC_MIN_VALUE = 1000;
   /**
    * <code>BADGE_EVENT_MIN = 2000;</code>
    */
@@ -2135,6 +2191,18 @@ public enum HoloBadgeType
    * <code>BADGE_EVENT_0030 = 5230;</code>
    */
   public static final int BADGE_EVENT_0030_VALUE = 5230;
+  /**
+   * <code>BADGE_LEVEL_40 = 5231;</code>
+   */
+  public static final int BADGE_LEVEL_40_VALUE = 5231;
+  /**
+   * <code>DEPRECATED_1 = 5300;</code>
+   */
+  public static final int DEPRECATED_1_VALUE = 5300;
+  /**
+   * <code>DEPRECATED_2 = 5301;</code>
+   */
+  public static final int DEPRECATED_2_VALUE = 5301;
 
 
   public final int getNumber() {
@@ -2225,9 +2293,15 @@ public enum HoloBadgeType
       case 61: return BADGE_POKEDEX_ENTRIES_GEN6;
       case 62: return BADGE_POKEDEX_ENTRIES_GEN7;
       case 63: return BADGE_POKEDEX_ENTRIES_GEN8;
+      case 64: return BADGE_7_DAY_STREAKS;
+      case 65: return BADGE_UNIQUE_RAID_BOSSES_DEFEATED;
+      case 66: return BADGE_RAIDS_WITH_FRIENDS;
+      case 67: return BADGE_POKEMON_CAUGHT_AT_YOUR_LURES;
       case 68: return BADGE_WAYFARER;
       case 69: return BADGE_TOTAL_MEGA_EVOS;
       case 70: return BADGE_UNIQUE_MEGA_EVOS;
+      case 71: return DEPRECATED_0;
+      case 1000: return BADGE_DYNAMIC_MIN;
       case 2000: return BADGE_EVENT_MIN;
       case 2001: return BADGE_CHICAGO_FEST_JULY_2017;
       case 2002: return BADGE_PIKACHU_OUTBREAK_YOKOHAMA_2017;
@@ -2426,6 +2500,9 @@ public enum HoloBadgeType
       case 5228: return BADGE_EVENT_0028;
       case 5229: return BADGE_EVENT_0029;
       case 5230: return BADGE_EVENT_0030;
+      case 5231: return BADGE_LEVEL_40;
+      case 5300: return DEPRECATED_1;
+      case 5301: return DEPRECATED_2;
       default: return null;
     }
   }
@@ -2444,10 +2521,6 @@ public enum HoloBadgeType
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -2456,7 +2529,7 @@ public enum HoloBadgeType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(73);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(48);
   }
 
   private static final HoloBadgeType[] VALUES = values();

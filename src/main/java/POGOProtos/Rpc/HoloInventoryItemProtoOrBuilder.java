@@ -8,154 +8,154 @@ public interface HoloInventoryItemProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
    * @return Whether the pokemon field is set.
    */
   boolean hasPokemon();
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
    * @return The pokemon.
    */
-  POGOProtos.Rpc.PokemonProto getPokemon();
+  POGOProtos.Rpc.KHNLPGENFBI getPokemon();
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon = 1;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon = 1;</code>
    */
-  POGOProtos.Rpc.PokemonProtoOrBuilder getPokemonOrBuilder();
+  POGOProtos.Rpc.KHNLPGENFBIOrBuilder getPokemonOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+   * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
    * @return Whether the item field is set.
    */
   boolean hasItem();
   /**
-   * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+   * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
    * @return The item.
    */
-  POGOProtos.Rpc.ItemProto getItem();
+  POGOProtos.Rpc.GPBEJNNGKLO getItem();
   /**
-   * <code>.POGOProtos.Rpc.ItemProto item = 2;</code>
+   * <code>.POGOProtos.Rpc.GPBEJNNGKLO item = 2;</code>
    */
-  POGOProtos.Rpc.ItemProtoOrBuilder getItemOrBuilder();
+  POGOProtos.Rpc.GPBEJNNGKLOOrBuilder getItemOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+   * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
    * @return Whether the pokedexEntry field is set.
    */
   boolean hasPokedexEntry();
   /**
-   * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+   * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
    * @return The pokedexEntry.
    */
-  POGOProtos.Rpc.PokedexEntryProto getPokedexEntry();
+  POGOProtos.Rpc.GNPJBHFIOJE getPokedexEntry();
   /**
-   * <code>.POGOProtos.Rpc.PokedexEntryProto pokedex_entry = 3;</code>
+   * <code>.POGOProtos.Rpc.GNPJBHFIOJE pokedex_entry = 3;</code>
    */
-  POGOProtos.Rpc.PokedexEntryProtoOrBuilder getPokedexEntryOrBuilder();
+  POGOProtos.Rpc.GNPJBHFIOJEOrBuilder getPokedexEntryOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+   * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
    * @return Whether the playerStats field is set.
    */
   boolean hasPlayerStats();
   /**
-   * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+   * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
    * @return The playerStats.
    */
-  POGOProtos.Rpc.PlayerStatsProto getPlayerStats();
+  POGOProtos.Rpc.ECAIODIHEJC getPlayerStats();
   /**
-   * <code>.POGOProtos.Rpc.PlayerStatsProto player_stats = 4;</code>
+   * <code>.POGOProtos.Rpc.ECAIODIHEJC player_stats = 4;</code>
    */
-  POGOProtos.Rpc.PlayerStatsProtoOrBuilder getPlayerStatsOrBuilder();
+  POGOProtos.Rpc.ECAIODIHEJCOrBuilder getPlayerStatsOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+   * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
    * @return Whether the playerCurrency field is set.
    */
   boolean hasPlayerCurrency();
   /**
-   * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+   * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
    * @return The playerCurrency.
    */
-  POGOProtos.Rpc.PlayerCurrencyProto getPlayerCurrency();
+  POGOProtos.Rpc.IIONNJJAHCI getPlayerCurrency();
   /**
-   * <code>.POGOProtos.Rpc.PlayerCurrencyProto player_currency = 5;</code>
+   * <code>.POGOProtos.Rpc.IIONNJJAHCI player_currency = 5;</code>
    */
-  POGOProtos.Rpc.PlayerCurrencyProtoOrBuilder getPlayerCurrencyOrBuilder();
+  POGOProtos.Rpc.IIONNJJAHCIOrBuilder getPlayerCurrencyOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+   * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
    * @return Whether the playerCamera field is set.
    */
   boolean hasPlayerCamera();
   /**
-   * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+   * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
    * @return The playerCamera.
    */
-  POGOProtos.Rpc.PlayerCameraProto getPlayerCamera();
+  POGOProtos.Rpc.GMPIGMKKEEH getPlayerCamera();
   /**
-   * <code>.POGOProtos.Rpc.PlayerCameraProto player_camera = 6;</code>
+   * <code>.POGOProtos.Rpc.GMPIGMKKEEH player_camera = 6;</code>
    */
-  POGOProtos.Rpc.PlayerCameraProtoOrBuilder getPlayerCameraOrBuilder();
+  POGOProtos.Rpc.GMPIGMKKEEHOrBuilder getPlayerCameraOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+   * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
    * @return Whether the inventoryUpgrades field is set.
    */
   boolean hasInventoryUpgrades();
   /**
-   * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+   * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
    * @return The inventoryUpgrades.
    */
-  POGOProtos.Rpc.InventoryUpgradesProto getInventoryUpgrades();
+  POGOProtos.Rpc.AFFIJCGEPNG getInventoryUpgrades();
   /**
-   * <code>.POGOProtos.Rpc.InventoryUpgradesProto inventory_upgrades = 7;</code>
+   * <code>.POGOProtos.Rpc.AFFIJCGEPNG inventory_upgrades = 7;</code>
    */
-  POGOProtos.Rpc.InventoryUpgradesProtoOrBuilder getInventoryUpgradesOrBuilder();
+  POGOProtos.Rpc.AFFIJCGEPNGOrBuilder getInventoryUpgradesOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+   * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
    * @return Whether the appliedItems field is set.
    */
   boolean hasAppliedItems();
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+   * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
    * @return The appliedItems.
    */
-  POGOProtos.Rpc.AppliedItemsProto getAppliedItems();
+  POGOProtos.Rpc.JMKKOPGIOJE getAppliedItems();
   /**
-   * <code>.POGOProtos.Rpc.AppliedItemsProto applied_items = 8;</code>
+   * <code>.POGOProtos.Rpc.JMKKOPGIOJE applied_items = 8;</code>
    */
-  POGOProtos.Rpc.AppliedItemsProtoOrBuilder getAppliedItemsOrBuilder();
+  POGOProtos.Rpc.JMKKOPGIOJEOrBuilder getAppliedItemsOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+   * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
    * @return Whether the eggIncubators field is set.
    */
   boolean hasEggIncubators();
   /**
-   * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+   * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
    * @return The eggIncubators.
    */
-  POGOProtos.Rpc.EggIncubatorsProto getEggIncubators();
+  POGOProtos.Rpc.MGBPEOMIEPM getEggIncubators();
   /**
-   * <code>.POGOProtos.Rpc.EggIncubatorsProto egg_incubators = 9;</code>
+   * <code>.POGOProtos.Rpc.MGBPEOMIEPM egg_incubators = 9;</code>
    */
-  POGOProtos.Rpc.EggIncubatorsProtoOrBuilder getEggIncubatorsOrBuilder();
+  POGOProtos.Rpc.MGBPEOMIEPMOrBuilder getEggIncubatorsOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+   * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
    * @return Whether the pokemonFamily field is set.
    */
   boolean hasPokemonFamily();
   /**
-   * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+   * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
    * @return The pokemonFamily.
    */
-  POGOProtos.Rpc.PokemonFamilyProto getPokemonFamily();
+  POGOProtos.Rpc.GGJABKKNMFJ getPokemonFamily();
   /**
-   * <code>.POGOProtos.Rpc.PokemonFamilyProto pokemon_family = 10;</code>
+   * <code>.POGOProtos.Rpc.GGJABKKNMFJ pokemon_family = 10;</code>
    */
-  POGOProtos.Rpc.PokemonFamilyProtoOrBuilder getPokemonFamilyOrBuilder();
+  POGOProtos.Rpc.GGJABKKNMFJOrBuilder getPokemonFamilyOrBuilder();
 
   /**
    * <code>.POGOProtos.Rpc.QuestProto quest = 11;</code>
@@ -173,124 +173,154 @@ public interface HoloInventoryItemProtoOrBuilder extends
   POGOProtos.Rpc.QuestProtoOrBuilder getQuestOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+   * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
    * @return Whether the avatarItem field is set.
    */
   boolean hasAvatarItem();
   /**
-   * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+   * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
    * @return The avatarItem.
    */
-  POGOProtos.Rpc.AvatarItemProto getAvatarItem();
+  POGOProtos.Rpc.FCGOBNEJEAP getAvatarItem();
   /**
-   * <code>.POGOProtos.Rpc.AvatarItemProto avatar_item = 12;</code>
+   * <code>.POGOProtos.Rpc.FCGOBNEJEAP avatar_item = 12;</code>
    */
-  POGOProtos.Rpc.AvatarItemProtoOrBuilder getAvatarItemOrBuilder();
+  POGOProtos.Rpc.FCGOBNEJEAPOrBuilder getAvatarItemOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+   * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
    * @return Whether the raidTickets field is set.
    */
   boolean hasRaidTickets();
   /**
-   * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+   * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
    * @return The raidTickets.
    */
-  POGOProtos.Rpc.RaidTicketsProto getRaidTickets();
+  POGOProtos.Rpc.FKJJHDKALOL getRaidTickets();
   /**
-   * <code>.POGOProtos.Rpc.RaidTicketsProto raid_tickets = 13;</code>
+   * <code>.POGOProtos.Rpc.FKJJHDKALOL raid_tickets = 13;</code>
    */
-  POGOProtos.Rpc.RaidTicketsProtoOrBuilder getRaidTicketsOrBuilder();
+  POGOProtos.Rpc.FKJJHDKALOLOrBuilder getRaidTicketsOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
    * @return Whether the quests field is set.
    */
   boolean hasQuests();
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
    * @return The quests.
    */
-  POGOProtos.Rpc.QuestsProto getQuests();
+  POGOProtos.Rpc.IECKOBJLECF getQuests();
   /**
-   * <code>.POGOProtos.Rpc.QuestsProto quests = 14;</code>
+   * <code>.POGOProtos.Rpc.IECKOBJLECF quests = 14;</code>
    */
-  POGOProtos.Rpc.QuestsProtoOrBuilder getQuestsOrBuilder();
+  POGOProtos.Rpc.IECKOBJLECFOrBuilder getQuestsOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+   * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
    * @return Whether the giftBoxes field is set.
    */
   boolean hasGiftBoxes();
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+   * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
    * @return The giftBoxes.
    */
-  POGOProtos.Rpc.GiftBoxesProto getGiftBoxes();
+  POGOProtos.Rpc.HOCPODGGBJG getGiftBoxes();
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxesProto gift_boxes = 15;</code>
+   * <code>.POGOProtos.Rpc.HOCPODGGBJG gift_boxes = 15;</code>
    */
-  POGOProtos.Rpc.GiftBoxesProtoOrBuilder getGiftBoxesOrBuilder();
+  POGOProtos.Rpc.HOCPODGGBJGOrBuilder getGiftBoxesOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+   * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
    * @return Whether the belugaIncense field is set.
    */
   boolean hasBelugaIncense();
   /**
-   * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+   * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
    * @return The belugaIncense.
    */
-  POGOProtos.Rpc.BelugaIncenseBoxProto getBelugaIncense();
+  POGOProtos.Rpc.OELMJAJBGHO getBelugaIncense();
   /**
-   * <code>.POGOProtos.Rpc.BelugaIncenseBoxProto beluga_incense = 16;</code>
+   * <code>.POGOProtos.Rpc.OELMJAJBGHO beluga_incense = 16;</code>
    */
-  POGOProtos.Rpc.BelugaIncenseBoxProtoOrBuilder getBelugaIncenseOrBuilder();
+  POGOProtos.Rpc.OELMJAJBGHOOrBuilder getBelugaIncenseOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+   * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
    * @return Whether the limitedPurchaseSkuRecord field is set.
    */
   boolean hasLimitedPurchaseSkuRecord();
   /**
-   * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+   * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
    * @return The limitedPurchaseSkuRecord.
    */
-  POGOProtos.Rpc.LimitedPurchaseSkuRecordProto getLimitedPurchaseSkuRecord();
+  POGOProtos.Rpc.OEPAEKONHHL getLimitedPurchaseSkuRecord();
   /**
-   * <code>.POGOProtos.Rpc.LimitedPurchaseSkuRecordProto limited_purchase_sku_record = 19;</code>
+   * <code>.POGOProtos.Rpc.OEPAEKONHHL limited_purchase_sku_record = 19;</code>
    */
-  POGOProtos.Rpc.LimitedPurchaseSkuRecordProtoOrBuilder getLimitedPurchaseSkuRecordOrBuilder();
+  POGOProtos.Rpc.OEPAEKONHHLOrBuilder getLimitedPurchaseSkuRecordOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+   * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
    * @return Whether the megaEvolveSpecies field is set.
    */
   boolean hasMegaEvolveSpecies();
   /**
-   * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+   * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
    * @return The megaEvolveSpecies.
    */
-  POGOProtos.Rpc.MegaEvoleSpeciesProto getMegaEvolveSpecies();
+  POGOProtos.Rpc.GABBAGFEALC getMegaEvolveSpecies();
   /**
-   * <code>.POGOProtos.Rpc.MegaEvoleSpeciesProto mega_evolve_species = 21;</code>
+   * <code>.POGOProtos.Rpc.GABBAGFEALC mega_evolve_species = 21;</code>
    */
-  POGOProtos.Rpc.MegaEvoleSpeciesProtoOrBuilder getMegaEvolveSpeciesOrBuilder();
+  POGOProtos.Rpc.GABBAGFEALCOrBuilder getMegaEvolveSpeciesOrBuilder();
 
   /**
-   * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+   * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
    * @return Whether the sticker field is set.
    */
   boolean hasSticker();
   /**
-   * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+   * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
    * @return The sticker.
    */
-  POGOProtos.Rpc.StickerProto getSticker();
+  POGOProtos.Rpc.ELBNNGIDEOG getSticker();
   /**
-   * <code>.POGOProtos.Rpc.StickerProto sticker = 22;</code>
+   * <code>.POGOProtos.Rpc.ELBNNGIDEOG sticker = 22;</code>
    */
-  POGOProtos.Rpc.StickerProtoOrBuilder getStickerOrBuilder();
+  POGOProtos.Rpc.ELBNNGIDEOGOrBuilder getStickerOrBuilder();
 
-  public POGOProtos.Rpc.HoloInventoryItemProto.TypeCase getTypeCase();
+  /**
+   * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+   * @return Whether the pokemonHome field is set.
+   */
+  boolean hasPokemonHome();
+  /**
+   * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+   * @return The pokemonHome.
+   */
+  POGOProtos.Rpc.CIAMKDJBBHG getPokemonHome();
+  /**
+   * <code>.POGOProtos.Rpc.CIAMKDJBBHG pokemon_home = 23;</code>
+   */
+  POGOProtos.Rpc.CIAMKDJBBHGOrBuilder getPokemonHomeOrBuilder();
+
+  /**
+   * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+   * @return Whether the playerStatsSnapshots field is set.
+   */
+  boolean hasPlayerStatsSnapshots();
+  /**
+   * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+   * @return The playerStatsSnapshots.
+   */
+  POGOProtos.Rpc.EGGJBOKKHNN getPlayerStatsSnapshots();
+  /**
+   * <code>.POGOProtos.Rpc.EGGJBOKKHNN player_stats_snapshots = 25;</code>
+   */
+  POGOProtos.Rpc.EGGJBOKKHNNOrBuilder getPlayerStatsSnapshotsOrBuilder();
+
+  public POGOProtos.Rpc.HoloInventoryItemProto.MOPKNKPOEKICase getMOPKNKPOEKICase();
 }

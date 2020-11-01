@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Auth.Token.SuperAwesomeTokenProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SuperAwesomeTokenProto}
  */
-public final class SuperAwesomeTokenProto extends
+public  final class SuperAwesomeTokenProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SuperAwesomeTokenProto)
     SuperAwesomeTokenProtoOrBuilder {
@@ -97,7 +93,6 @@ private static final long serialVersionUID = 0L;
    * <code>string token = 1;</code>
    * @return The token.
    */
-  @java.lang.Override
   public java.lang.String getToken() {
     java.lang.Object ref = token_;
     if (ref instanceof java.lang.String) {
@@ -114,7 +109,6 @@ private static final long serialVersionUID = 0L;
    * <code>string token = 1;</code>
    * @return The bytes for token.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getTokenBytes() {
     java.lang.Object ref = token_;
@@ -284,10 +278,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Auth.Token.SuperAwesomeTokenProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SuperAwesomeTokenProto}
    */
   public static final class Builder extends

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: GetAdventureSyncSettingsRequestProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetAdventureSyncSettingsRequestProto}
  */
-public final class GetAdventureSyncSettingsRequestProto extends
+public  final class GetAdventureSyncSettingsRequestProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetAdventureSyncSettingsRequestProto)
     GetAdventureSyncSettingsRequestProtoOrBuilder {
@@ -229,10 +225,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: GetAdventureSyncSettingsRequestProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetAdventureSyncSettingsRequestProto}
    */
   public static final class Builder extends

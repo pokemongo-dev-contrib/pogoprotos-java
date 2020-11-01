@@ -4,13 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End pokemongoplus -----
- *------------------------------
- *----- Begin proto -----
- * ref: AAGEDBBLLPC
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.InvasionTelemetryIds}
  */
 public enum InvasionTelemetryIds
@@ -188,10 +181,6 @@ public enum InvasionTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -200,7 +189,7 @@ public enum InvasionTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(19);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(71);
   }
 
   private static final InvasionTelemetryIds[] VALUES = values();

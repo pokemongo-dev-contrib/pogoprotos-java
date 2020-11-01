@@ -4,16 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End token -----
- *------------------------------
- *----- Begin vasa -----
- * ref: Niantic.Vasa.CollectAdIdRequestProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.CollectAdIdRequestProto}
  */
-public final class CollectAdIdRequestProto extends
+public  final class CollectAdIdRequestProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.CollectAdIdRequestProto)
     CollectAdIdRequestProtoOrBuilder {
@@ -122,7 +115,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Vasa.CollectAdIdRequestProto/Types/CollectionFailedReason
+   * ref: Niantic.Vasa.CollectAdIdRequestProto.Types.CollectionFailedReason
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason}
@@ -194,10 +187,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -234,7 +223,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Vasa.CollectAdIdRequestProto/Types/DevicePlatform
+   * ref: Niantic.Vasa.CollectAdIdRequestProto.Types.DevicePlatform
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform}
@@ -315,10 +304,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -359,7 +344,6 @@ private static final long serialVersionUID = 0L;
    * <code>string user_id = 1;</code>
    * @return The userId.
    */
-  @java.lang.Override
   public java.lang.String getUserId() {
     java.lang.Object ref = userId_;
     if (ref instanceof java.lang.String) {
@@ -376,7 +360,6 @@ private static final long serialVersionUID = 0L;
    * <code>string user_id = 1;</code>
    * @return The bytes for userId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getUserIdBytes() {
     java.lang.Object ref = userId_;
@@ -397,7 +380,6 @@ private static final long serialVersionUID = 0L;
    * <code>string ad_id = 2;</code>
    * @return The adId.
    */
-  @java.lang.Override
   public java.lang.String getAdId() {
     java.lang.Object ref = adId_;
     if (ref instanceof java.lang.String) {
@@ -414,7 +396,6 @@ private static final long serialVersionUID = 0L;
    * <code>string ad_id = 2;</code>
    * @return The bytes for adId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getAdIdBytes() {
     java.lang.Object ref = adId_;
@@ -435,14 +416,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform device_platform = 3;</code>
    * @return The enum numeric value on the wire for devicePlatform.
    */
-  @java.lang.Override public int getDevicePlatformValue() {
+  public int getDevicePlatformValue() {
     return devicePlatform_;
   }
   /**
    * <code>.POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform device_platform = 3;</code>
    * @return The devicePlatform.
    */
-  @java.lang.Override public POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform getDevicePlatform() {
+  public POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform getDevicePlatform() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform result = POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform.valueOf(devicePlatform_);
     return result == null ? POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform.UNRECOGNIZED : result;
@@ -454,14 +435,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason failed_reason = 4;</code>
    * @return The enum numeric value on the wire for failedReason.
    */
-  @java.lang.Override public int getFailedReasonValue() {
+  public int getFailedReasonValue() {
     return failedReason_;
   }
   /**
    * <code>.POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason failed_reason = 4;</code>
    * @return The failedReason.
    */
-  @java.lang.Override public POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason getFailedReason() {
+  public POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason getFailedReason() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason result = POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason.valueOf(failedReason_);
     return result == null ? POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason.UNRECOGNIZED : result;
@@ -473,7 +454,6 @@ private static final long serialVersionUID = 0L;
    * <code>uint64 timestamp_ms = 5;</code>
    * @return The timestampMs.
    */
-  @java.lang.Override
   public long getTimestampMs() {
     return timestampMs_;
   }
@@ -675,13 +655,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   *----- End token -----
-   *------------------------------
-   *----- Begin vasa -----
-   * ref: Niantic.Vasa.CollectAdIdRequestProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.CollectAdIdRequestProto}
    */
   public static final class Builder extends
@@ -1011,7 +984,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform device_platform = 3;</code>
      * @return The enum numeric value on the wire for devicePlatform.
      */
-    @java.lang.Override public int getDevicePlatformValue() {
+    public int getDevicePlatformValue() {
       return devicePlatform_;
     }
     /**
@@ -1020,7 +993,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setDevicePlatformValue(int value) {
-      
       devicePlatform_ = value;
       onChanged();
       return this;
@@ -1029,7 +1001,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform device_platform = 3;</code>
      * @return The devicePlatform.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform getDevicePlatform() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform result = POGOProtos.Rpc.CollectAdIdRequestProto.DevicePlatform.valueOf(devicePlatform_);
@@ -1065,7 +1036,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason failed_reason = 4;</code>
      * @return The enum numeric value on the wire for failedReason.
      */
-    @java.lang.Override public int getFailedReasonValue() {
+    public int getFailedReasonValue() {
       return failedReason_;
     }
     /**
@@ -1074,7 +1045,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setFailedReasonValue(int value) {
-      
       failedReason_ = value;
       onChanged();
       return this;
@@ -1083,7 +1053,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason failed_reason = 4;</code>
      * @return The failedReason.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason getFailedReason() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason result = POGOProtos.Rpc.CollectAdIdRequestProto.CollectionFailedReason.valueOf(failedReason_);
@@ -1119,7 +1088,6 @@ private static final long serialVersionUID = 0L;
      * <code>uint64 timestamp_ms = 5;</code>
      * @return The timestampMs.
      */
-    @java.lang.Override
     public long getTimestampMs() {
       return timestampMs_;
     }

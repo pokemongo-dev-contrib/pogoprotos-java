@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Iap.Protos.GameItemContentProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GameItemContentProto}
  */
-public final class GameItemContentProto extends
+public  final class GameItemContentProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GameItemContentProto)
     GameItemContentProtoOrBuilder {
@@ -102,7 +98,6 @@ private static final long serialVersionUID = 0L;
    * <code>string type = 1;</code>
    * @return The type.
    */
-  @java.lang.Override
   public java.lang.String getType() {
     java.lang.Object ref = type_;
     if (ref instanceof java.lang.String) {
@@ -119,7 +114,6 @@ private static final long serialVersionUID = 0L;
    * <code>string type = 1;</code>
    * @return The bytes for type.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getTypeBytes() {
     java.lang.Object ref = type_;
@@ -140,7 +134,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 quantity = 2;</code>
    * @return The quantity.
    */
-  @java.lang.Override
   public int getQuantity() {
     return quantity_;
   }
@@ -311,10 +304,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Iap.Protos.GameItemContentProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GameItemContentProto}
    */
   public static final class Builder extends
@@ -549,7 +538,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 quantity = 2;</code>
      * @return The quantity.
      */
-    @java.lang.Override
     public int getQuantity() {
       return quantity_;
     }

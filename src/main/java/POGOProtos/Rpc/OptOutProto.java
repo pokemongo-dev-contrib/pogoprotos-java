@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.OptOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.OptOutProto}
  */
-public final class OptOutProto extends
+public  final class OptOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.OptOutProto)
     OptOutProtoOrBuilder {
@@ -295,10 +291,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.OptOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.OptOutProto}
    */
   public static final class Builder extends

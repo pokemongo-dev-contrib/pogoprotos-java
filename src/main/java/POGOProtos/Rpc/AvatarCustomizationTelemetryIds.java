@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: FBHBOONGCMG
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.AvatarCustomizationTelemetryIds}
  */
 public enum AvatarCustomizationTelemetryIds
@@ -149,10 +145,6 @@ public enum AvatarCustomizationTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -161,7 +153,7 @@ public enum AvatarCustomizationTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(63);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(11);
   }
 
   private static final AvatarCustomizationTelemetryIds[] VALUES = values();

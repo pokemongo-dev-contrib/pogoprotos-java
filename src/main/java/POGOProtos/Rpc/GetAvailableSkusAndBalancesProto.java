@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Iap.Protos.GetAvailableSkusAndBalancesProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetAvailableSkusAndBalancesProto}
  */
-public final class GetAvailableSkusAndBalancesProto extends
+public  final class GetAvailableSkusAndBalancesProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetAvailableSkusAndBalancesProto)
     GetAvailableSkusAndBalancesProtoOrBuilder {
@@ -229,10 +225,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Iap.Protos.GetAvailableSkusAndBalancesProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetAvailableSkusAndBalancesProto}
    */
   public static final class Builder extends

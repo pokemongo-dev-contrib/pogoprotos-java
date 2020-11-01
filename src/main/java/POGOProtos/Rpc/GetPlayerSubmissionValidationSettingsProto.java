@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GetPlayerSubmissionValidationSettingsProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetPlayerSubmissionValidationSettingsProto}
  */
-public final class GetPlayerSubmissionValidationSettingsProto extends
+public  final class GetPlayerSubmissionValidationSettingsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetPlayerSubmissionValidationSettingsProto)
     GetPlayerSubmissionValidationSettingsProtoOrBuilder {
@@ -229,10 +225,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GetPlayerSubmissionValidationSettingsProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetPlayerSubmissionValidationSettingsProto}
    */
   public static final class Builder extends

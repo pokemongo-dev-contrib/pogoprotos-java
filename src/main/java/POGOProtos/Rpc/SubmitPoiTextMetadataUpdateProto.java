@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.SubmitPoiTextMetadataUpdateProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SubmitPoiTextMetadataUpdateProto}
  */
-public final class SubmitPoiTextMetadataUpdateProto extends
+public  final class SubmitPoiTextMetadataUpdateProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SubmitPoiTextMetadataUpdateProto)
     SubmitPoiTextMetadataUpdateProtoOrBuilder {
@@ -111,7 +107,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The poiId.
    */
-  @java.lang.Override
   public java.lang.String getPoiId() {
     java.lang.Object ref = poiId_;
     if (ref instanceof java.lang.String) {
@@ -128,7 +123,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 1;</code>
    * @return The bytes for poiId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPoiIdBytes() {
     java.lang.Object ref = poiId_;
@@ -149,7 +143,6 @@ private static final long serialVersionUID = 0L;
    * <code>string title = 2;</code>
    * @return The title.
    */
-  @java.lang.Override
   public java.lang.String getTitle() {
     java.lang.Object ref = title_;
     if (ref instanceof java.lang.String) {
@@ -166,7 +159,6 @@ private static final long serialVersionUID = 0L;
    * <code>string title = 2;</code>
    * @return The bytes for title.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getTitleBytes() {
     java.lang.Object ref = title_;
@@ -187,7 +179,6 @@ private static final long serialVersionUID = 0L;
    * <code>string description = 3;</code>
    * @return The description.
    */
-  @java.lang.Override
   public java.lang.String getDescription() {
     java.lang.Object ref = description_;
     if (ref instanceof java.lang.String) {
@@ -204,7 +195,6 @@ private static final long serialVersionUID = 0L;
    * <code>string description = 3;</code>
    * @return The bytes for description.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getDescriptionBytes() {
     java.lang.Object ref = description_;
@@ -394,10 +384,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.SubmitPoiTextMetadataUpdateProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SubmitPoiTextMetadataUpdateProto}
    */
   public static final class Builder extends

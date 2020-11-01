@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.LocationE6Proto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.LocationE6Proto}
  */
-public final class LocationE6Proto extends
+public  final class LocationE6Proto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.LocationE6Proto)
     LocationE6ProtoOrBuilder {
@@ -100,7 +96,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 latitude_e6 = 1;</code>
    * @return The latitudeE6.
    */
-  @java.lang.Override
   public int getLatitudeE6() {
     return latitudeE6_;
   }
@@ -111,7 +106,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 longitude_e6 = 2;</code>
    * @return The longitudeE6.
    */
-  @java.lang.Override
   public int getLongitudeE6() {
     return longitudeE6_;
   }
@@ -283,10 +277,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.LocationE6Proto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.LocationE6Proto}
    */
   public static final class Builder extends
@@ -444,7 +434,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 latitude_e6 = 1;</code>
      * @return The latitudeE6.
      */
-    @java.lang.Override
     public int getLatitudeE6() {
       return latitudeE6_;
     }
@@ -475,7 +464,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 longitude_e6 = 2;</code>
      * @return The longitudeE6.
      */
-    @java.lang.Override
     public int getLongitudeE6() {
       return longitudeE6_;
     }

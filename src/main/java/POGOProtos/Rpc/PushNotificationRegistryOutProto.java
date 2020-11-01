@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.PushNotificationRegistryOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.PushNotificationRegistryOutProto}
  */
-public final class PushNotificationRegistryOutProto extends
+public  final class PushNotificationRegistryOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.PushNotificationRegistryOutProto)
     PushNotificationRegistryOutProtoOrBuilder {
@@ -93,7 +89,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.PushNotificationRegistryOutProto/Types/Result
+   * ref: Niantic.Platform.Protos.PushNotificationRegistryOutProto.Types.Result
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.PushNotificationRegistryOutProto.Result}
@@ -174,10 +170,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -218,14 +210,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.PushNotificationRegistryOutProto.Result result = 1;</code>
    * @return The enum numeric value on the wire for result.
    */
-  @java.lang.Override public int getResultValue() {
+  public int getResultValue() {
     return result_;
   }
   /**
    * <code>.POGOProtos.Rpc.PushNotificationRegistryOutProto.Result result = 1;</code>
    * @return The result.
    */
-  @java.lang.Override public POGOProtos.Rpc.PushNotificationRegistryOutProto.Result getResult() {
+  public POGOProtos.Rpc.PushNotificationRegistryOutProto.Result getResult() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.PushNotificationRegistryOutProto.Result result = POGOProtos.Rpc.PushNotificationRegistryOutProto.Result.valueOf(result_);
     return result == null ? POGOProtos.Rpc.PushNotificationRegistryOutProto.Result.UNRECOGNIZED : result;
@@ -386,10 +378,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.PushNotificationRegistryOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.PushNotificationRegistryOutProto}
    */
   public static final class Builder extends
@@ -541,7 +529,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PushNotificationRegistryOutProto.Result result = 1;</code>
      * @return The enum numeric value on the wire for result.
      */
-    @java.lang.Override public int getResultValue() {
+    public int getResultValue() {
       return result_;
     }
     /**
@@ -550,7 +538,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setResultValue(int value) {
-      
       result_ = value;
       onChanged();
       return this;
@@ -559,7 +546,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.PushNotificationRegistryOutProto.Result result = 1;</code>
      * @return The result.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.PushNotificationRegistryOutProto.Result getResult() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.PushNotificationRegistryOutProto.Result result = POGOProtos.Rpc.PushNotificationRegistryOutProto.Result.valueOf(result_);

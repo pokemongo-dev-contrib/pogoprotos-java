@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: LMDGDKIALKP
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.BattlePartyTelemetryIds}
  */
 public enum BattlePartyTelemetryIds
@@ -113,10 +109,6 @@ public enum BattlePartyTelemetryIds
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -125,7 +117,7 @@ public enum BattlePartyTelemetryIds
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(99);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(15);
   }
 
   private static final BattlePartyTelemetryIds[] VALUES = values();

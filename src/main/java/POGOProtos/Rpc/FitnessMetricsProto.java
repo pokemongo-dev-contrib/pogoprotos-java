@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: FitnessMetricsProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.FitnessMetricsProto}
  */
-public final class FitnessMetricsProto extends
+public  final class FitnessMetricsProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.FitnessMetricsProto)
     FitnessMetricsProtoOrBuilder {
@@ -120,7 +116,6 @@ private static final long serialVersionUID = 0L;
    * <code>double distance_walked_meters = 1;</code>
    * @return The distanceWalkedMeters.
    */
-  @java.lang.Override
   public double getDistanceWalkedMeters() {
     return distanceWalkedMeters_;
   }
@@ -131,7 +126,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 step_count = 2;</code>
    * @return The stepCount.
    */
-  @java.lang.Override
   public int getStepCount() {
     return stepCount_;
   }
@@ -142,7 +136,6 @@ private static final long serialVersionUID = 0L;
    * <code>double calories_burned_kcals = 3;</code>
    * @return The caloriesBurnedKcals.
    */
-  @java.lang.Override
   public double getCaloriesBurnedKcals() {
     return caloriesBurnedKcals_;
   }
@@ -153,7 +146,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 exercise_duration_mi = 4;</code>
    * @return The exerciseDurationMi.
    */
-  @java.lang.Override
   public long getExerciseDurationMi() {
     return exerciseDurationMi_;
   }
@@ -164,7 +156,6 @@ private static final long serialVersionUID = 0L;
    * <code>double wheelchair_distance_meters = 5;</code>
    * @return The wheelchairDistanceMeters.
    */
-  @java.lang.Override
   public double getWheelchairDistanceMeters() {
     return wheelchairDistanceMeters_;
   }
@@ -175,7 +166,6 @@ private static final long serialVersionUID = 0L;
    * <code>double wheelchair_push_count = 6;</code>
    * @return The wheelchairPushCount.
    */
-  @java.lang.Override
   public double getWheelchairPushCount() {
     return wheelchairPushCount_;
   }
@@ -400,10 +390,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: FitnessMetricsProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.FitnessMetricsProto}
    */
   public static final class Builder extends
@@ -585,7 +571,6 @@ private static final long serialVersionUID = 0L;
      * <code>double distance_walked_meters = 1;</code>
      * @return The distanceWalkedMeters.
      */
-    @java.lang.Override
     public double getDistanceWalkedMeters() {
       return distanceWalkedMeters_;
     }
@@ -616,7 +601,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 step_count = 2;</code>
      * @return The stepCount.
      */
-    @java.lang.Override
     public int getStepCount() {
       return stepCount_;
     }
@@ -647,7 +631,6 @@ private static final long serialVersionUID = 0L;
      * <code>double calories_burned_kcals = 3;</code>
      * @return The caloriesBurnedKcals.
      */
-    @java.lang.Override
     public double getCaloriesBurnedKcals() {
       return caloriesBurnedKcals_;
     }
@@ -678,7 +661,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 exercise_duration_mi = 4;</code>
      * @return The exerciseDurationMi.
      */
-    @java.lang.Override
     public long getExerciseDurationMi() {
       return exerciseDurationMi_;
     }
@@ -709,7 +691,6 @@ private static final long serialVersionUID = 0L;
      * <code>double wheelchair_distance_meters = 5;</code>
      * @return The wheelchairDistanceMeters.
      */
-    @java.lang.Override
     public double getWheelchairDistanceMeters() {
       return wheelchairDistanceMeters_;
     }
@@ -740,7 +721,6 @@ private static final long serialVersionUID = 0L;
      * <code>double wheelchair_push_count = 6;</code>
      * @return The wheelchairPushCount.
      */
-    @java.lang.Override
     public double getWheelchairPushCount() {
       return wheelchairPushCount_;
     }

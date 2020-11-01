@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GameClientPhotoGalleryPoiImageProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProto}
  */
-public final class GameClientPhotoGalleryPoiImageProto extends
+public  final class GameClientPhotoGalleryPoiImageProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProto)
     GameClientPhotoGalleryPoiImageProtoOrBuilder {
@@ -133,7 +129,6 @@ private static final long serialVersionUID = 0L;
    * <code>string image_id = 1;</code>
    * @return The imageId.
    */
-  @java.lang.Override
   public java.lang.String getImageId() {
     java.lang.Object ref = imageId_;
     if (ref instanceof java.lang.String) {
@@ -150,7 +145,6 @@ private static final long serialVersionUID = 0L;
    * <code>string image_id = 1;</code>
    * @return The bytes for imageId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getImageIdBytes() {
     java.lang.Object ref = imageId_;
@@ -171,7 +165,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 2;</code>
    * @return The poiId.
    */
-  @java.lang.Override
   public java.lang.String getPoiId() {
     java.lang.Object ref = poiId_;
     if (ref instanceof java.lang.String) {
@@ -188,7 +181,6 @@ private static final long serialVersionUID = 0L;
    * <code>string poi_id = 2;</code>
    * @return The bytes for poiId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPoiIdBytes() {
     java.lang.Object ref = poiId_;
@@ -209,7 +201,6 @@ private static final long serialVersionUID = 0L;
    * <code>string submitter_codename = 3;</code>
    * @return The submitterCodename.
    */
-  @java.lang.Override
   public java.lang.String getSubmitterCodename() {
     java.lang.Object ref = submitterCodename_;
     if (ref instanceof java.lang.String) {
@@ -226,7 +217,6 @@ private static final long serialVersionUID = 0L;
    * <code>string submitter_codename = 3;</code>
    * @return The bytes for submitterCodename.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getSubmitterCodenameBytes() {
     java.lang.Object ref = submitterCodename_;
@@ -247,7 +237,6 @@ private static final long serialVersionUID = 0L;
    * <code>string image_url = 4;</code>
    * @return The imageUrl.
    */
-  @java.lang.Override
   public java.lang.String getImageUrl() {
     java.lang.Object ref = imageUrl_;
     if (ref instanceof java.lang.String) {
@@ -264,7 +253,6 @@ private static final long serialVersionUID = 0L;
    * <code>string image_url = 4;</code>
    * @return The bytes for imageUrl.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getImageUrlBytes() {
     java.lang.Object ref = imageUrl_;
@@ -285,7 +273,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 creation_timestamp_ms = 5;</code>
    * @return The creationTimestampMs.
    */
-  @java.lang.Override
   public long getCreationTimestampMs() {
     return creationTimestampMs_;
   }
@@ -296,7 +283,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool has_player_voted = 6;</code>
    * @return The hasPlayerVoted.
    */
-  @java.lang.Override
   public boolean getHasPlayerVoted() {
     return hasPlayerVoted_;
   }
@@ -307,7 +293,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 num_votes_from_game = 7;</code>
    * @return The numVotesFromGame.
    */
-  @java.lang.Override
   public int getNumVotesFromGame() {
     return numVotesFromGame_;
   }
@@ -532,10 +517,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GameClientPhotoGalleryPoiImageProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProto}
    */
   public static final class Builder extends
@@ -1031,7 +1012,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 creation_timestamp_ms = 5;</code>
      * @return The creationTimestampMs.
      */
-    @java.lang.Override
     public long getCreationTimestampMs() {
       return creationTimestampMs_;
     }
@@ -1062,7 +1042,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool has_player_voted = 6;</code>
      * @return The hasPlayerVoted.
      */
-    @java.lang.Override
     public boolean getHasPlayerVoted() {
       return hasPlayerVoted_;
     }
@@ -1093,7 +1072,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 num_votes_from_game = 7;</code>
      * @return The numVotesFromGame.
      */
-    @java.lang.Override
     public int getNumVotesFromGame() {
       return numVotesFromGame_;
     }

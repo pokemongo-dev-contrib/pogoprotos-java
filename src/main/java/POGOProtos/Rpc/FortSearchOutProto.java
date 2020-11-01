@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: DDPCMFPEILE
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.FortSearchOutProto}
  */
-public final class FortSearchOutProto extends
+public  final class FortSearchOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.FortSearchOutProto)
     FortSearchOutProtoOrBuilder {
@@ -20,9 +16,9 @@ private static final long serialVersionUID = 0L;
     super(builder);
   }
   private FortSearchOutProto() {
-    result_ = 0;
-    nikdphgligk_ = java.util.Collections.emptyList();
-    lndigkkjfml_ = "";
+    jbflkcdndlp_ = 0;
+    dipbdnhbeam_ = java.util.Collections.emptyList();
+    dlangcndbfi_ = "";
   }
 
   @java.lang.Override
@@ -59,104 +55,104 @@ private static final long serialVersionUID = 0L;
           case 8: {
             int rawValue = input.readEnum();
 
-            result_ = rawValue;
+            jbflkcdndlp_ = rawValue;
             break;
           }
           case 18: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              nikdphgligk_ = new java.util.ArrayList<POGOProtos.Rpc.AwardItemProto>();
+              dipbdnhbeam_ = new java.util.ArrayList<POGOProtos.Rpc.KGECKBBBFEH>();
               mutable_bitField0_ |= 0x00000001;
             }
-            nikdphgligk_.add(
-                input.readMessage(POGOProtos.Rpc.AwardItemProto.parser(), extensionRegistry));
+            dipbdnhbeam_.add(
+                input.readMessage(POGOProtos.Rpc.KGECKBBBFEH.parser(), extensionRegistry));
             break;
           }
           case 24: {
 
-            njbejjhehhh_ = input.readInt32();
+            pljbccobhdc_ = input.readInt32();
             break;
           }
           case 34: {
-            POGOProtos.Rpc.PokemonProto.Builder subBuilder = null;
-            if (meokhcpofcc_ != null) {
-              subBuilder = meokhcpofcc_.toBuilder();
+            POGOProtos.Rpc.KHNLPGENFBI.Builder subBuilder = null;
+            if (jncklfbcoia_ != null) {
+              subBuilder = jncklfbcoia_.toBuilder();
             }
-            meokhcpofcc_ = input.readMessage(POGOProtos.Rpc.PokemonProto.parser(), extensionRegistry);
+            jncklfbcoia_ = input.readMessage(POGOProtos.Rpc.KHNLPGENFBI.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(meokhcpofcc_);
-              meokhcpofcc_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(jncklfbcoia_);
+              jncklfbcoia_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 40: {
 
-            gefhfjldoli_ = input.readInt32();
+            eagiaeplfnm_ = input.readInt32();
             break;
           }
           case 48: {
 
-            njdnpomkhaa_ = input.readInt64();
+            gjihjjnboce_ = input.readInt64();
             break;
           }
           case 56: {
 
-            bkiblpabieg_ = input.readInt32();
+            kpdmbmgighm_ = input.readInt32();
             break;
           }
           case 66: {
-            POGOProtos.Rpc.AwardedGymBadge.Builder subBuilder = null;
-            if (eoilecekhdn_ != null) {
-              subBuilder = eoilecekhdn_.toBuilder();
+            POGOProtos.Rpc.KEGNPKMJHED.Builder subBuilder = null;
+            if (nocbhafkajj_ != null) {
+              subBuilder = nocbhafkajj_.toBuilder();
             }
-            eoilecekhdn_ = input.readMessage(POGOProtos.Rpc.AwardedGymBadge.parser(), extensionRegistry);
+            nocbhafkajj_ = input.readMessage(POGOProtos.Rpc.KEGNPKMJHED.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(eoilecekhdn_);
-              eoilecekhdn_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(nocbhafkajj_);
+              nocbhafkajj_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 74: {
-            POGOProtos.Rpc.LootProto.Builder subBuilder = null;
-            if (kmiiammpfgf_ != null) {
-              subBuilder = kmiiammpfgf_.toBuilder();
+            POGOProtos.Rpc.JMFCJOMHILG.Builder subBuilder = null;
+            if (jnamleecobg_ != null) {
+              subBuilder = jnamleecobg_.toBuilder();
             }
-            kmiiammpfgf_ = input.readMessage(POGOProtos.Rpc.LootProto.parser(), extensionRegistry);
+            jnamleecobg_ = input.readMessage(POGOProtos.Rpc.JMFCJOMHILG.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(kmiiammpfgf_);
-              kmiiammpfgf_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(jnamleecobg_);
+              jnamleecobg_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 82: {
-            POGOProtos.Rpc.LootProto.Builder subBuilder = null;
-            if (eeaeeebiebe_ != null) {
-              subBuilder = eeaeeebiebe_.toBuilder();
+            POGOProtos.Rpc.JMFCJOMHILG.Builder subBuilder = null;
+            if (ekcehemcpna_ != null) {
+              subBuilder = ekcehemcpna_.toBuilder();
             }
-            eeaeeebiebe_ = input.readMessage(POGOProtos.Rpc.LootProto.parser(), extensionRegistry);
+            ekcehemcpna_ = input.readMessage(POGOProtos.Rpc.JMFCJOMHILG.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(eeaeeebiebe_);
-              eeaeeebiebe_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(ekcehemcpna_);
+              ekcehemcpna_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 88: {
 
-            ndgehgpakno_ = input.readInt32();
+            ajhjinaopoh_ = input.readInt32();
             break;
           }
           case 98: {
-            POGOProtos.Rpc.LootProto.Builder subBuilder = null;
-            if (aihnmahefmi_ != null) {
-              subBuilder = aihnmahefmi_.toBuilder();
+            POGOProtos.Rpc.JMFCJOMHILG.Builder subBuilder = null;
+            if (mjpeblmhlja_ != null) {
+              subBuilder = mjpeblmhlja_.toBuilder();
             }
-            aihnmahefmi_ = input.readMessage(POGOProtos.Rpc.LootProto.parser(), extensionRegistry);
+            mjpeblmhlja_ = input.readMessage(POGOProtos.Rpc.JMFCJOMHILG.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(aihnmahefmi_);
-              aihnmahefmi_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(mjpeblmhlja_);
+              mjpeblmhlja_ = subBuilder.buildPartial();
             }
 
             break;
@@ -164,44 +160,44 @@ private static final long serialVersionUID = 0L;
           case 106: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            lndigkkjfml_ = s;
+            dlangcndbfi_ = s;
             break;
           }
           case 114: {
-            POGOProtos.Rpc.ClientQuestProto.Builder subBuilder = null;
-            if (hknmebbppme_ != null) {
-              subBuilder = hknmebbppme_.toBuilder();
+            POGOProtos.Rpc.CMNKJHNKMCG.Builder subBuilder = null;
+            if (nlibgackfjp_ != null) {
+              subBuilder = nlibgackfjp_.toBuilder();
             }
-            hknmebbppme_ = input.readMessage(POGOProtos.Rpc.ClientQuestProto.parser(), extensionRegistry);
+            nlibgackfjp_ = input.readMessage(POGOProtos.Rpc.CMNKJHNKMCG.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(hknmebbppme_);
-              hknmebbppme_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(nlibgackfjp_);
+              nlibgackfjp_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 122: {
-            POGOProtos.Rpc.GiftBoxProto.Builder subBuilder = null;
-            if (ppgijddcmhe_ != null) {
-              subBuilder = ppgijddcmhe_.toBuilder();
+            POGOProtos.Rpc.DMOPODHBEFO.Builder subBuilder = null;
+            if (koodbdemdfd_ != null) {
+              subBuilder = koodbdemdfd_.toBuilder();
             }
-            ppgijddcmhe_ = input.readMessage(POGOProtos.Rpc.GiftBoxProto.parser(), extensionRegistry);
+            koodbdemdfd_ = input.readMessage(POGOProtos.Rpc.DMOPODHBEFO.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(ppgijddcmhe_);
-              ppgijddcmhe_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(koodbdemdfd_);
+              koodbdemdfd_ = subBuilder.buildPartial();
             }
 
             break;
           }
           case 130: {
-            POGOProtos.Rpc.AdDetails.Builder subBuilder = null;
-            if (fofagloikmg_ != null) {
-              subBuilder = fofagloikmg_.toBuilder();
+            POGOProtos.Rpc.MOIEDHEMGLO.Builder subBuilder = null;
+            if (jebicoepalo_ != null) {
+              subBuilder = jebicoepalo_.toBuilder();
             }
-            fofagloikmg_ = input.readMessage(POGOProtos.Rpc.AdDetails.parser(), extensionRegistry);
+            jebicoepalo_ = input.readMessage(POGOProtos.Rpc.MOIEDHEMGLO.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(fofagloikmg_);
-              fofagloikmg_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(jebicoepalo_);
+              jebicoepalo_ = subBuilder.buildPartial();
             }
 
             break;
@@ -222,7 +218,7 @@ private static final long serialVersionUID = 0L;
           e).setUnfinishedMessage(this);
     } finally {
       if (((mutable_bitField0_ & 0x00000001) != 0)) {
-        nikdphgligk_ = java.util.Collections.unmodifiableList(nikdphgligk_);
+        dipbdnhbeam_ = java.util.Collections.unmodifiableList(dipbdnhbeam_);
       }
       this.unknownFields = unknownFields.build();
       makeExtensionsImmutable();
@@ -243,12 +239,12 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: DDPCMFPEILE/CGLPBGOLFLJ/DPHLIFCAAKM
+   * ref: FortSearchOutProto/OENCMCPNAIE/LODBDNPPHIO
    * </pre>
    *
-   * Protobuf enum {@code POGOProtos.Rpc.FortSearchOutProto.Result}
+   * Protobuf enum {@code POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO}
    */
-  public enum Result
+  public enum LODBDNPPHIO
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>NO_RESULT_SET = 0;</code>
@@ -325,7 +321,7 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static Result valueOf(int value) {
+    public static LODBDNPPHIO valueOf(int value) {
       return forNumber(value);
     }
 
@@ -333,7 +329,7 @@ private static final long serialVersionUID = 0L;
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static Result forNumber(int value) {
+    public static LODBDNPPHIO forNumber(int value) {
       switch (value) {
         case 0: return NO_RESULT_SET;
         case 1: return SUCCESS;
@@ -346,24 +342,20 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<Result>
+    public static com.google.protobuf.Internal.EnumLiteMap<LODBDNPPHIO>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        Result> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<Result>() {
-            public Result findValueByNumber(int number) {
-              return Result.forNumber(number);
+        LODBDNPPHIO> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<LODBDNPPHIO>() {
+            public LODBDNPPHIO findValueByNumber(int number) {
+              return LODBDNPPHIO.forNumber(number);
             }
           };
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -375,9 +367,9 @@ private static final long serialVersionUID = 0L;
       return POGOProtos.Rpc.FortSearchOutProto.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final Result[] VALUES = values();
+    private static final LODBDNPPHIO[] VALUES = values();
 
-    public static Result valueOf(
+    public static LODBDNPPHIO valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -391,371 +383,335 @@ private static final long serialVersionUID = 0L;
 
     private final int value;
 
-    private Result(int value) {
+    private LODBDNPPHIO(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.FortSearchOutProto.Result)
+    // @@protoc_insertion_point(enum_scope:POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO)
   }
 
-  public static final int RESULT_FIELD_NUMBER = 1;
-  private int result_;
+  public static final int JBFLKCDNDLP_FIELD_NUMBER = 1;
+  private int jbflkcdndlp_;
   /**
-   * <code>.POGOProtos.Rpc.FortSearchOutProto.Result result = 1;</code>
-   * @return The enum numeric value on the wire for result.
+   * <code>.POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO jbflkcdndlp = 1;</code>
+   * @return The enum numeric value on the wire for jbflkcdndlp.
    */
-  @java.lang.Override public int getResultValue() {
-    return result_;
+  public int getJbflkcdndlpValue() {
+    return jbflkcdndlp_;
   }
   /**
-   * <code>.POGOProtos.Rpc.FortSearchOutProto.Result result = 1;</code>
-   * @return The result.
+   * <code>.POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO jbflkcdndlp = 1;</code>
+   * @return The jbflkcdndlp.
    */
-  @java.lang.Override public POGOProtos.Rpc.FortSearchOutProto.Result getResult() {
+  public POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO getJbflkcdndlp() {
     @SuppressWarnings("deprecation")
-    POGOProtos.Rpc.FortSearchOutProto.Result result = POGOProtos.Rpc.FortSearchOutProto.Result.valueOf(result_);
-    return result == null ? POGOProtos.Rpc.FortSearchOutProto.Result.UNRECOGNIZED : result;
+    POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO result = POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO.valueOf(jbflkcdndlp_);
+    return result == null ? POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO.UNRECOGNIZED : result;
   }
 
-  public static final int NIKDPHGLIGK_FIELD_NUMBER = 2;
-  private java.util.List<POGOProtos.Rpc.AwardItemProto> nikdphgligk_;
+  public static final int DIPBDNHBEAM_FIELD_NUMBER = 2;
+  private java.util.List<POGOProtos.Rpc.KGECKBBBFEH> dipbdnhbeam_;
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
    */
-  @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.AwardItemProto> getNikdphgligkList() {
-    return nikdphgligk_;
+  public java.util.List<POGOProtos.Rpc.KGECKBBBFEH> getDipbdnhbeamList() {
+    return dipbdnhbeam_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.AwardItemProtoOrBuilder> 
-      getNikdphgligkOrBuilderList() {
-    return nikdphgligk_;
+  public java.util.List<? extends POGOProtos.Rpc.KGECKBBBFEHOrBuilder> 
+      getDipbdnhbeamOrBuilderList() {
+    return dipbdnhbeam_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
    */
-  @java.lang.Override
-  public int getNikdphgligkCount() {
-    return nikdphgligk_.size();
+  public int getDipbdnhbeamCount() {
+    return dipbdnhbeam_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.AwardItemProto getNikdphgligk(int index) {
-    return nikdphgligk_.get(index);
+  public POGOProtos.Rpc.KGECKBBBFEH getDipbdnhbeam(int index) {
+    return dipbdnhbeam_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+   * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.AwardItemProtoOrBuilder getNikdphgligkOrBuilder(
+  public POGOProtos.Rpc.KGECKBBBFEHOrBuilder getDipbdnhbeamOrBuilder(
       int index) {
-    return nikdphgligk_.get(index);
+    return dipbdnhbeam_.get(index);
   }
 
-  public static final int NJBEJJHEHHH_FIELD_NUMBER = 3;
-  private int njbejjhehhh_;
+  public static final int PLJBCCOBHDC_FIELD_NUMBER = 3;
+  private int pljbccobhdc_;
   /**
-   * <code>int32 njbejjhehhh = 3;</code>
-   * @return The njbejjhehhh.
+   * <code>int32 pljbccobhdc = 3;</code>
+   * @return The pljbccobhdc.
    */
-  @java.lang.Override
-  public int getNjbejjhehhh() {
-    return njbejjhehhh_;
+  public int getPljbccobhdc() {
+    return pljbccobhdc_;
   }
 
-  public static final int MEOKHCPOFCC_FIELD_NUMBER = 4;
-  private POGOProtos.Rpc.PokemonProto meokhcpofcc_;
+  public static final int JNCKLFBCOIA_FIELD_NUMBER = 4;
+  private POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia_;
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
-   * @return Whether the meokhcpofcc field is set.
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
+   * @return Whether the jncklfbcoia field is set.
    */
-  @java.lang.Override
-  public boolean hasMeokhcpofcc() {
-    return meokhcpofcc_ != null;
+  public boolean hasJncklfbcoia() {
+    return jncklfbcoia_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
-   * @return The meokhcpofcc.
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
+   * @return The jncklfbcoia.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonProto getMeokhcpofcc() {
-    return meokhcpofcc_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : meokhcpofcc_;
+  public POGOProtos.Rpc.KHNLPGENFBI getJncklfbcoia() {
+    return jncklfbcoia_ == null ? POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance() : jncklfbcoia_;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonProtoOrBuilder getMeokhcpofccOrBuilder() {
-    return getMeokhcpofcc();
+  public POGOProtos.Rpc.KHNLPGENFBIOrBuilder getJncklfbcoiaOrBuilder() {
+    return getJncklfbcoia();
   }
 
-  public static final int GEFHFJLDOLI_FIELD_NUMBER = 5;
-  private int gefhfjldoli_;
+  public static final int EAGIAEPLFNM_FIELD_NUMBER = 5;
+  private int eagiaeplfnm_;
   /**
-   * <code>int32 gefhfjldoli = 5;</code>
-   * @return The gefhfjldoli.
+   * <code>int32 eagiaeplfnm = 5;</code>
+   * @return The eagiaeplfnm.
    */
-  @java.lang.Override
-  public int getGefhfjldoli() {
-    return gefhfjldoli_;
+  public int getEagiaeplfnm() {
+    return eagiaeplfnm_;
   }
 
-  public static final int NJDNPOMKHAA_FIELD_NUMBER = 6;
-  private long njdnpomkhaa_;
+  public static final int GJIHJJNBOCE_FIELD_NUMBER = 6;
+  private long gjihjjnboce_;
   /**
-   * <code>int64 njdnpomkhaa = 6;</code>
-   * @return The njdnpomkhaa.
+   * <code>int64 gjihjjnboce = 6;</code>
+   * @return The gjihjjnboce.
    */
-  @java.lang.Override
-  public long getNjdnpomkhaa() {
-    return njdnpomkhaa_;
+  public long getGjihjjnboce() {
+    return gjihjjnboce_;
   }
 
-  public static final int BKIBLPABIEG_FIELD_NUMBER = 7;
-  private int bkiblpabieg_;
+  public static final int KPDMBMGIGHM_FIELD_NUMBER = 7;
+  private int kpdmbmgighm_;
   /**
-   * <code>int32 bkiblpabieg = 7;</code>
-   * @return The bkiblpabieg.
+   * <code>int32 kpdmbmgighm = 7;</code>
+   * @return The kpdmbmgighm.
    */
-  @java.lang.Override
-  public int getBkiblpabieg() {
-    return bkiblpabieg_;
+  public int getKpdmbmgighm() {
+    return kpdmbmgighm_;
   }
 
-  public static final int EOILECEKHDN_FIELD_NUMBER = 8;
-  private POGOProtos.Rpc.AwardedGymBadge eoilecekhdn_;
+  public static final int NOCBHAFKAJJ_FIELD_NUMBER = 8;
+  private POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj_;
   /**
-   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
-   * @return Whether the eoilecekhdn field is set.
+   * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
+   * @return Whether the nocbhafkajj field is set.
    */
-  @java.lang.Override
-  public boolean hasEoilecekhdn() {
-    return eoilecekhdn_ != null;
+  public boolean hasNocbhafkajj() {
+    return nocbhafkajj_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
-   * @return The eoilecekhdn.
+   * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
+   * @return The nocbhafkajj.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.AwardedGymBadge getEoilecekhdn() {
-    return eoilecekhdn_ == null ? POGOProtos.Rpc.AwardedGymBadge.getDefaultInstance() : eoilecekhdn_;
+  public POGOProtos.Rpc.KEGNPKMJHED getNocbhafkajj() {
+    return nocbhafkajj_ == null ? POGOProtos.Rpc.KEGNPKMJHED.getDefaultInstance() : nocbhafkajj_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
+   * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.AwardedGymBadgeOrBuilder getEoilecekhdnOrBuilder() {
-    return getEoilecekhdn();
+  public POGOProtos.Rpc.KEGNPKMJHEDOrBuilder getNocbhafkajjOrBuilder() {
+    return getNocbhafkajj();
   }
 
-  public static final int KMIIAMMPFGF_FIELD_NUMBER = 9;
-  private POGOProtos.Rpc.LootProto kmiiammpfgf_;
+  public static final int JNAMLEECOBG_FIELD_NUMBER = 9;
+  private POGOProtos.Rpc.JMFCJOMHILG jnamleecobg_;
   /**
-   * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
-   * @return Whether the kmiiammpfgf field is set.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
+   * @return Whether the jnamleecobg field is set.
    */
-  @java.lang.Override
-  public boolean hasKmiiammpfgf() {
-    return kmiiammpfgf_ != null;
+  public boolean hasJnamleecobg() {
+    return jnamleecobg_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
-   * @return The kmiiammpfgf.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
+   * @return The jnamleecobg.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.LootProto getKmiiammpfgf() {
-    return kmiiammpfgf_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : kmiiammpfgf_;
+  public POGOProtos.Rpc.JMFCJOMHILG getJnamleecobg() {
+    return jnamleecobg_ == null ? POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : jnamleecobg_;
   }
   /**
-   * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.LootProtoOrBuilder getKmiiammpfgfOrBuilder() {
-    return getKmiiammpfgf();
+  public POGOProtos.Rpc.JMFCJOMHILGOrBuilder getJnamleecobgOrBuilder() {
+    return getJnamleecobg();
   }
 
-  public static final int EEAEEEBIEBE_FIELD_NUMBER = 10;
-  private POGOProtos.Rpc.LootProto eeaeeebiebe_;
+  public static final int EKCEHEMCPNA_FIELD_NUMBER = 10;
+  private POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna_;
   /**
-   * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
-   * @return Whether the eeaeeebiebe field is set.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
+   * @return Whether the ekcehemcpna field is set.
    */
-  @java.lang.Override
-  public boolean hasEeaeeebiebe() {
-    return eeaeeebiebe_ != null;
+  public boolean hasEkcehemcpna() {
+    return ekcehemcpna_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
-   * @return The eeaeeebiebe.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
+   * @return The ekcehemcpna.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.LootProto getEeaeeebiebe() {
-    return eeaeeebiebe_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : eeaeeebiebe_;
+  public POGOProtos.Rpc.JMFCJOMHILG getEkcehemcpna() {
+    return ekcehemcpna_ == null ? POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : ekcehemcpna_;
   }
   /**
-   * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.LootProtoOrBuilder getEeaeeebiebeOrBuilder() {
-    return getEeaeeebiebe();
+  public POGOProtos.Rpc.JMFCJOMHILGOrBuilder getEkcehemcpnaOrBuilder() {
+    return getEkcehemcpna();
   }
 
-  public static final int NDGEHGPAKNO_FIELD_NUMBER = 11;
-  private int ndgehgpakno_;
+  public static final int AJHJINAOPOH_FIELD_NUMBER = 11;
+  private int ajhjinaopoh_;
   /**
-   * <code>int32 ndgehgpakno = 11;</code>
-   * @return The ndgehgpakno.
+   * <code>int32 ajhjinaopoh = 11;</code>
+   * @return The ajhjinaopoh.
    */
-  @java.lang.Override
-  public int getNdgehgpakno() {
-    return ndgehgpakno_;
+  public int getAjhjinaopoh() {
+    return ajhjinaopoh_;
   }
 
-  public static final int AIHNMAHEFMI_FIELD_NUMBER = 12;
-  private POGOProtos.Rpc.LootProto aihnmahefmi_;
+  public static final int MJPEBLMHLJA_FIELD_NUMBER = 12;
+  private POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja_;
   /**
-   * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
-   * @return Whether the aihnmahefmi field is set.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
+   * @return Whether the mjpeblmhlja field is set.
    */
-  @java.lang.Override
-  public boolean hasAihnmahefmi() {
-    return aihnmahefmi_ != null;
+  public boolean hasMjpeblmhlja() {
+    return mjpeblmhlja_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
-   * @return The aihnmahefmi.
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
+   * @return The mjpeblmhlja.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.LootProto getAihnmahefmi() {
-    return aihnmahefmi_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : aihnmahefmi_;
+  public POGOProtos.Rpc.JMFCJOMHILG getMjpeblmhlja() {
+    return mjpeblmhlja_ == null ? POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : mjpeblmhlja_;
   }
   /**
-   * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
+   * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.LootProtoOrBuilder getAihnmahefmiOrBuilder() {
-    return getAihnmahefmi();
+  public POGOProtos.Rpc.JMFCJOMHILGOrBuilder getMjpeblmhljaOrBuilder() {
+    return getMjpeblmhlja();
   }
 
-  public static final int LNDIGKKJFML_FIELD_NUMBER = 13;
-  private volatile java.lang.Object lndigkkjfml_;
+  public static final int DLANGCNDBFI_FIELD_NUMBER = 13;
+  private volatile java.lang.Object dlangcndbfi_;
   /**
-   * <code>string lndigkkjfml = 13;</code>
-   * @return The lndigkkjfml.
+   * <code>string dlangcndbfi = 13;</code>
+   * @return The dlangcndbfi.
    */
-  @java.lang.Override
-  public java.lang.String getLndigkkjfml() {
-    java.lang.Object ref = lndigkkjfml_;
+  public java.lang.String getDlangcndbfi() {
+    java.lang.Object ref = dlangcndbfi_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      lndigkkjfml_ = s;
+      dlangcndbfi_ = s;
       return s;
     }
   }
   /**
-   * <code>string lndigkkjfml = 13;</code>
-   * @return The bytes for lndigkkjfml.
+   * <code>string dlangcndbfi = 13;</code>
+   * @return The bytes for dlangcndbfi.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
-      getLndigkkjfmlBytes() {
-    java.lang.Object ref = lndigkkjfml_;
+      getDlangcndbfiBytes() {
+    java.lang.Object ref = dlangcndbfi_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      lndigkkjfml_ = b;
+      dlangcndbfi_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int HKNMEBBPPME_FIELD_NUMBER = 14;
-  private POGOProtos.Rpc.ClientQuestProto hknmebbppme_;
+  public static final int NLIBGACKFJP_FIELD_NUMBER = 14;
+  private POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp_;
   /**
-   * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
-   * @return Whether the hknmebbppme field is set.
+   * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
+   * @return Whether the nlibgackfjp field is set.
    */
-  @java.lang.Override
-  public boolean hasHknmebbppme() {
-    return hknmebbppme_ != null;
+  public boolean hasNlibgackfjp() {
+    return nlibgackfjp_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
-   * @return The hknmebbppme.
+   * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
+   * @return The nlibgackfjp.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.ClientQuestProto getHknmebbppme() {
-    return hknmebbppme_ == null ? POGOProtos.Rpc.ClientQuestProto.getDefaultInstance() : hknmebbppme_;
+  public POGOProtos.Rpc.CMNKJHNKMCG getNlibgackfjp() {
+    return nlibgackfjp_ == null ? POGOProtos.Rpc.CMNKJHNKMCG.getDefaultInstance() : nlibgackfjp_;
   }
   /**
-   * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
+   * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.ClientQuestProtoOrBuilder getHknmebbppmeOrBuilder() {
-    return getHknmebbppme();
+  public POGOProtos.Rpc.CMNKJHNKMCGOrBuilder getNlibgackfjpOrBuilder() {
+    return getNlibgackfjp();
   }
 
-  public static final int PPGIJDDCMHE_FIELD_NUMBER = 15;
-  private POGOProtos.Rpc.GiftBoxProto ppgijddcmhe_;
+  public static final int KOODBDEMDFD_FIELD_NUMBER = 15;
+  private POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd_;
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
-   * @return Whether the ppgijddcmhe field is set.
+   * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
+   * @return Whether the koodbdemdfd field is set.
    */
-  @java.lang.Override
-  public boolean hasPpgijddcmhe() {
-    return ppgijddcmhe_ != null;
+  public boolean hasKoodbdemdfd() {
+    return koodbdemdfd_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
-   * @return The ppgijddcmhe.
+   * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
+   * @return The koodbdemdfd.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.GiftBoxProto getPpgijddcmhe() {
-    return ppgijddcmhe_ == null ? POGOProtos.Rpc.GiftBoxProto.getDefaultInstance() : ppgijddcmhe_;
+  public POGOProtos.Rpc.DMOPODHBEFO getKoodbdemdfd() {
+    return koodbdemdfd_ == null ? POGOProtos.Rpc.DMOPODHBEFO.getDefaultInstance() : koodbdemdfd_;
   }
   /**
-   * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
+   * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.GiftBoxProtoOrBuilder getPpgijddcmheOrBuilder() {
-    return getPpgijddcmhe();
+  public POGOProtos.Rpc.DMOPODHBEFOOrBuilder getKoodbdemdfdOrBuilder() {
+    return getKoodbdemdfd();
   }
 
-  public static final int FOFAGLOIKMG_FIELD_NUMBER = 16;
-  private POGOProtos.Rpc.AdDetails fofagloikmg_;
+  public static final int JEBICOEPALO_FIELD_NUMBER = 16;
+  private POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo_;
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
-   * @return Whether the fofagloikmg field is set.
+   * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
+   * @return Whether the jebicoepalo field is set.
    */
-  @java.lang.Override
-  public boolean hasFofagloikmg() {
-    return fofagloikmg_ != null;
+  public boolean hasJebicoepalo() {
+    return jebicoepalo_ != null;
   }
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
-   * @return The fofagloikmg.
+   * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
+   * @return The jebicoepalo.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.AdDetails getFofagloikmg() {
-    return fofagloikmg_ == null ? POGOProtos.Rpc.AdDetails.getDefaultInstance() : fofagloikmg_;
+  public POGOProtos.Rpc.MOIEDHEMGLO getJebicoepalo() {
+    return jebicoepalo_ == null ? POGOProtos.Rpc.MOIEDHEMGLO.getDefaultInstance() : jebicoepalo_;
   }
   /**
-   * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
+   * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.AdDetailsOrBuilder getFofagloikmgOrBuilder() {
-    return getFofagloikmg();
+  public POGOProtos.Rpc.MOIEDHEMGLOOrBuilder getJebicoepaloOrBuilder() {
+    return getJebicoepalo();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -772,53 +728,53 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (result_ != POGOProtos.Rpc.FortSearchOutProto.Result.NO_RESULT_SET.getNumber()) {
-      output.writeEnum(1, result_);
+    if (jbflkcdndlp_ != POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO.NO_RESULT_SET.getNumber()) {
+      output.writeEnum(1, jbflkcdndlp_);
     }
-    for (int i = 0; i < nikdphgligk_.size(); i++) {
-      output.writeMessage(2, nikdphgligk_.get(i));
+    for (int i = 0; i < dipbdnhbeam_.size(); i++) {
+      output.writeMessage(2, dipbdnhbeam_.get(i));
     }
-    if (njbejjhehhh_ != 0) {
-      output.writeInt32(3, njbejjhehhh_);
+    if (pljbccobhdc_ != 0) {
+      output.writeInt32(3, pljbccobhdc_);
     }
-    if (meokhcpofcc_ != null) {
-      output.writeMessage(4, getMeokhcpofcc());
+    if (jncklfbcoia_ != null) {
+      output.writeMessage(4, getJncklfbcoia());
     }
-    if (gefhfjldoli_ != 0) {
-      output.writeInt32(5, gefhfjldoli_);
+    if (eagiaeplfnm_ != 0) {
+      output.writeInt32(5, eagiaeplfnm_);
     }
-    if (njdnpomkhaa_ != 0L) {
-      output.writeInt64(6, njdnpomkhaa_);
+    if (gjihjjnboce_ != 0L) {
+      output.writeInt64(6, gjihjjnboce_);
     }
-    if (bkiblpabieg_ != 0) {
-      output.writeInt32(7, bkiblpabieg_);
+    if (kpdmbmgighm_ != 0) {
+      output.writeInt32(7, kpdmbmgighm_);
     }
-    if (eoilecekhdn_ != null) {
-      output.writeMessage(8, getEoilecekhdn());
+    if (nocbhafkajj_ != null) {
+      output.writeMessage(8, getNocbhafkajj());
     }
-    if (kmiiammpfgf_ != null) {
-      output.writeMessage(9, getKmiiammpfgf());
+    if (jnamleecobg_ != null) {
+      output.writeMessage(9, getJnamleecobg());
     }
-    if (eeaeeebiebe_ != null) {
-      output.writeMessage(10, getEeaeeebiebe());
+    if (ekcehemcpna_ != null) {
+      output.writeMessage(10, getEkcehemcpna());
     }
-    if (ndgehgpakno_ != 0) {
-      output.writeInt32(11, ndgehgpakno_);
+    if (ajhjinaopoh_ != 0) {
+      output.writeInt32(11, ajhjinaopoh_);
     }
-    if (aihnmahefmi_ != null) {
-      output.writeMessage(12, getAihnmahefmi());
+    if (mjpeblmhlja_ != null) {
+      output.writeMessage(12, getMjpeblmhlja());
     }
-    if (!getLndigkkjfmlBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 13, lndigkkjfml_);
+    if (!getDlangcndbfiBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 13, dlangcndbfi_);
     }
-    if (hknmebbppme_ != null) {
-      output.writeMessage(14, getHknmebbppme());
+    if (nlibgackfjp_ != null) {
+      output.writeMessage(14, getNlibgackfjp());
     }
-    if (ppgijddcmhe_ != null) {
-      output.writeMessage(15, getPpgijddcmhe());
+    if (koodbdemdfd_ != null) {
+      output.writeMessage(15, getKoodbdemdfd());
     }
-    if (fofagloikmg_ != null) {
-      output.writeMessage(16, getFofagloikmg());
+    if (jebicoepalo_ != null) {
+      output.writeMessage(16, getJebicoepalo());
     }
     unknownFields.writeTo(output);
   }
@@ -829,68 +785,68 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (result_ != POGOProtos.Rpc.FortSearchOutProto.Result.NO_RESULT_SET.getNumber()) {
+    if (jbflkcdndlp_ != POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO.NO_RESULT_SET.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, result_);
+        .computeEnumSize(1, jbflkcdndlp_);
     }
-    for (int i = 0; i < nikdphgligk_.size(); i++) {
+    for (int i = 0; i < dipbdnhbeam_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, nikdphgligk_.get(i));
+        .computeMessageSize(2, dipbdnhbeam_.get(i));
     }
-    if (njbejjhehhh_ != 0) {
+    if (pljbccobhdc_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(3, njbejjhehhh_);
+        .computeInt32Size(3, pljbccobhdc_);
     }
-    if (meokhcpofcc_ != null) {
+    if (jncklfbcoia_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, getMeokhcpofcc());
+        .computeMessageSize(4, getJncklfbcoia());
     }
-    if (gefhfjldoli_ != 0) {
+    if (eagiaeplfnm_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(5, gefhfjldoli_);
+        .computeInt32Size(5, eagiaeplfnm_);
     }
-    if (njdnpomkhaa_ != 0L) {
+    if (gjihjjnboce_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(6, njdnpomkhaa_);
+        .computeInt64Size(6, gjihjjnboce_);
     }
-    if (bkiblpabieg_ != 0) {
+    if (kpdmbmgighm_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(7, bkiblpabieg_);
+        .computeInt32Size(7, kpdmbmgighm_);
     }
-    if (eoilecekhdn_ != null) {
+    if (nocbhafkajj_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getEoilecekhdn());
+        .computeMessageSize(8, getNocbhafkajj());
     }
-    if (kmiiammpfgf_ != null) {
+    if (jnamleecobg_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, getKmiiammpfgf());
+        .computeMessageSize(9, getJnamleecobg());
     }
-    if (eeaeeebiebe_ != null) {
+    if (ekcehemcpna_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, getEeaeeebiebe());
+        .computeMessageSize(10, getEkcehemcpna());
     }
-    if (ndgehgpakno_ != 0) {
+    if (ajhjinaopoh_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(11, ndgehgpakno_);
+        .computeInt32Size(11, ajhjinaopoh_);
     }
-    if (aihnmahefmi_ != null) {
+    if (mjpeblmhlja_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, getAihnmahefmi());
+        .computeMessageSize(12, getMjpeblmhlja());
     }
-    if (!getLndigkkjfmlBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, lndigkkjfml_);
+    if (!getDlangcndbfiBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, dlangcndbfi_);
     }
-    if (hknmebbppme_ != null) {
+    if (nlibgackfjp_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(14, getHknmebbppme());
+        .computeMessageSize(14, getNlibgackfjp());
     }
-    if (ppgijddcmhe_ != null) {
+    if (koodbdemdfd_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(15, getPpgijddcmhe());
+        .computeMessageSize(15, getKoodbdemdfd());
     }
-    if (fofagloikmg_ != null) {
+    if (jebicoepalo_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(16, getFofagloikmg());
+        .computeMessageSize(16, getJebicoepalo());
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -907,60 +863,60 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.FortSearchOutProto other = (POGOProtos.Rpc.FortSearchOutProto) obj;
 
-    if (result_ != other.result_) return false;
-    if (!getNikdphgligkList()
-        .equals(other.getNikdphgligkList())) return false;
-    if (getNjbejjhehhh()
-        != other.getNjbejjhehhh()) return false;
-    if (hasMeokhcpofcc() != other.hasMeokhcpofcc()) return false;
-    if (hasMeokhcpofcc()) {
-      if (!getMeokhcpofcc()
-          .equals(other.getMeokhcpofcc())) return false;
+    if (jbflkcdndlp_ != other.jbflkcdndlp_) return false;
+    if (!getDipbdnhbeamList()
+        .equals(other.getDipbdnhbeamList())) return false;
+    if (getPljbccobhdc()
+        != other.getPljbccobhdc()) return false;
+    if (hasJncklfbcoia() != other.hasJncklfbcoia()) return false;
+    if (hasJncklfbcoia()) {
+      if (!getJncklfbcoia()
+          .equals(other.getJncklfbcoia())) return false;
     }
-    if (getGefhfjldoli()
-        != other.getGefhfjldoli()) return false;
-    if (getNjdnpomkhaa()
-        != other.getNjdnpomkhaa()) return false;
-    if (getBkiblpabieg()
-        != other.getBkiblpabieg()) return false;
-    if (hasEoilecekhdn() != other.hasEoilecekhdn()) return false;
-    if (hasEoilecekhdn()) {
-      if (!getEoilecekhdn()
-          .equals(other.getEoilecekhdn())) return false;
+    if (getEagiaeplfnm()
+        != other.getEagiaeplfnm()) return false;
+    if (getGjihjjnboce()
+        != other.getGjihjjnboce()) return false;
+    if (getKpdmbmgighm()
+        != other.getKpdmbmgighm()) return false;
+    if (hasNocbhafkajj() != other.hasNocbhafkajj()) return false;
+    if (hasNocbhafkajj()) {
+      if (!getNocbhafkajj()
+          .equals(other.getNocbhafkajj())) return false;
     }
-    if (hasKmiiammpfgf() != other.hasKmiiammpfgf()) return false;
-    if (hasKmiiammpfgf()) {
-      if (!getKmiiammpfgf()
-          .equals(other.getKmiiammpfgf())) return false;
+    if (hasJnamleecobg() != other.hasJnamleecobg()) return false;
+    if (hasJnamleecobg()) {
+      if (!getJnamleecobg()
+          .equals(other.getJnamleecobg())) return false;
     }
-    if (hasEeaeeebiebe() != other.hasEeaeeebiebe()) return false;
-    if (hasEeaeeebiebe()) {
-      if (!getEeaeeebiebe()
-          .equals(other.getEeaeeebiebe())) return false;
+    if (hasEkcehemcpna() != other.hasEkcehemcpna()) return false;
+    if (hasEkcehemcpna()) {
+      if (!getEkcehemcpna()
+          .equals(other.getEkcehemcpna())) return false;
     }
-    if (getNdgehgpakno()
-        != other.getNdgehgpakno()) return false;
-    if (hasAihnmahefmi() != other.hasAihnmahefmi()) return false;
-    if (hasAihnmahefmi()) {
-      if (!getAihnmahefmi()
-          .equals(other.getAihnmahefmi())) return false;
+    if (getAjhjinaopoh()
+        != other.getAjhjinaopoh()) return false;
+    if (hasMjpeblmhlja() != other.hasMjpeblmhlja()) return false;
+    if (hasMjpeblmhlja()) {
+      if (!getMjpeblmhlja()
+          .equals(other.getMjpeblmhlja())) return false;
     }
-    if (!getLndigkkjfml()
-        .equals(other.getLndigkkjfml())) return false;
-    if (hasHknmebbppme() != other.hasHknmebbppme()) return false;
-    if (hasHknmebbppme()) {
-      if (!getHknmebbppme()
-          .equals(other.getHknmebbppme())) return false;
+    if (!getDlangcndbfi()
+        .equals(other.getDlangcndbfi())) return false;
+    if (hasNlibgackfjp() != other.hasNlibgackfjp()) return false;
+    if (hasNlibgackfjp()) {
+      if (!getNlibgackfjp()
+          .equals(other.getNlibgackfjp())) return false;
     }
-    if (hasPpgijddcmhe() != other.hasPpgijddcmhe()) return false;
-    if (hasPpgijddcmhe()) {
-      if (!getPpgijddcmhe()
-          .equals(other.getPpgijddcmhe())) return false;
+    if (hasKoodbdemdfd() != other.hasKoodbdemdfd()) return false;
+    if (hasKoodbdemdfd()) {
+      if (!getKoodbdemdfd()
+          .equals(other.getKoodbdemdfd())) return false;
     }
-    if (hasFofagloikmg() != other.hasFofagloikmg()) return false;
-    if (hasFofagloikmg()) {
-      if (!getFofagloikmg()
-          .equals(other.getFofagloikmg())) return false;
+    if (hasJebicoepalo() != other.hasJebicoepalo()) return false;
+    if (hasJebicoepalo()) {
+      if (!getJebicoepalo()
+          .equals(other.getJebicoepalo())) return false;
     }
     if (!unknownFields.equals(other.unknownFields)) return false;
     return true;
@@ -973,56 +929,56 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + RESULT_FIELD_NUMBER;
-    hash = (53 * hash) + result_;
-    if (getNikdphgligkCount() > 0) {
-      hash = (37 * hash) + NIKDPHGLIGK_FIELD_NUMBER;
-      hash = (53 * hash) + getNikdphgligkList().hashCode();
+    hash = (37 * hash) + JBFLKCDNDLP_FIELD_NUMBER;
+    hash = (53 * hash) + jbflkcdndlp_;
+    if (getDipbdnhbeamCount() > 0) {
+      hash = (37 * hash) + DIPBDNHBEAM_FIELD_NUMBER;
+      hash = (53 * hash) + getDipbdnhbeamList().hashCode();
     }
-    hash = (37 * hash) + NJBEJJHEHHH_FIELD_NUMBER;
-    hash = (53 * hash) + getNjbejjhehhh();
-    if (hasMeokhcpofcc()) {
-      hash = (37 * hash) + MEOKHCPOFCC_FIELD_NUMBER;
-      hash = (53 * hash) + getMeokhcpofcc().hashCode();
+    hash = (37 * hash) + PLJBCCOBHDC_FIELD_NUMBER;
+    hash = (53 * hash) + getPljbccobhdc();
+    if (hasJncklfbcoia()) {
+      hash = (37 * hash) + JNCKLFBCOIA_FIELD_NUMBER;
+      hash = (53 * hash) + getJncklfbcoia().hashCode();
     }
-    hash = (37 * hash) + GEFHFJLDOLI_FIELD_NUMBER;
-    hash = (53 * hash) + getGefhfjldoli();
-    hash = (37 * hash) + NJDNPOMKHAA_FIELD_NUMBER;
+    hash = (37 * hash) + EAGIAEPLFNM_FIELD_NUMBER;
+    hash = (53 * hash) + getEagiaeplfnm();
+    hash = (37 * hash) + GJIHJJNBOCE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-        getNjdnpomkhaa());
-    hash = (37 * hash) + BKIBLPABIEG_FIELD_NUMBER;
-    hash = (53 * hash) + getBkiblpabieg();
-    if (hasEoilecekhdn()) {
-      hash = (37 * hash) + EOILECEKHDN_FIELD_NUMBER;
-      hash = (53 * hash) + getEoilecekhdn().hashCode();
+        getGjihjjnboce());
+    hash = (37 * hash) + KPDMBMGIGHM_FIELD_NUMBER;
+    hash = (53 * hash) + getKpdmbmgighm();
+    if (hasNocbhafkajj()) {
+      hash = (37 * hash) + NOCBHAFKAJJ_FIELD_NUMBER;
+      hash = (53 * hash) + getNocbhafkajj().hashCode();
     }
-    if (hasKmiiammpfgf()) {
-      hash = (37 * hash) + KMIIAMMPFGF_FIELD_NUMBER;
-      hash = (53 * hash) + getKmiiammpfgf().hashCode();
+    if (hasJnamleecobg()) {
+      hash = (37 * hash) + JNAMLEECOBG_FIELD_NUMBER;
+      hash = (53 * hash) + getJnamleecobg().hashCode();
     }
-    if (hasEeaeeebiebe()) {
-      hash = (37 * hash) + EEAEEEBIEBE_FIELD_NUMBER;
-      hash = (53 * hash) + getEeaeeebiebe().hashCode();
+    if (hasEkcehemcpna()) {
+      hash = (37 * hash) + EKCEHEMCPNA_FIELD_NUMBER;
+      hash = (53 * hash) + getEkcehemcpna().hashCode();
     }
-    hash = (37 * hash) + NDGEHGPAKNO_FIELD_NUMBER;
-    hash = (53 * hash) + getNdgehgpakno();
-    if (hasAihnmahefmi()) {
-      hash = (37 * hash) + AIHNMAHEFMI_FIELD_NUMBER;
-      hash = (53 * hash) + getAihnmahefmi().hashCode();
+    hash = (37 * hash) + AJHJINAOPOH_FIELD_NUMBER;
+    hash = (53 * hash) + getAjhjinaopoh();
+    if (hasMjpeblmhlja()) {
+      hash = (37 * hash) + MJPEBLMHLJA_FIELD_NUMBER;
+      hash = (53 * hash) + getMjpeblmhlja().hashCode();
     }
-    hash = (37 * hash) + LNDIGKKJFML_FIELD_NUMBER;
-    hash = (53 * hash) + getLndigkkjfml().hashCode();
-    if (hasHknmebbppme()) {
-      hash = (37 * hash) + HKNMEBBPPME_FIELD_NUMBER;
-      hash = (53 * hash) + getHknmebbppme().hashCode();
+    hash = (37 * hash) + DLANGCNDBFI_FIELD_NUMBER;
+    hash = (53 * hash) + getDlangcndbfi().hashCode();
+    if (hasNlibgackfjp()) {
+      hash = (37 * hash) + NLIBGACKFJP_FIELD_NUMBER;
+      hash = (53 * hash) + getNlibgackfjp().hashCode();
     }
-    if (hasPpgijddcmhe()) {
-      hash = (37 * hash) + PPGIJDDCMHE_FIELD_NUMBER;
-      hash = (53 * hash) + getPpgijddcmhe().hashCode();
+    if (hasKoodbdemdfd()) {
+      hash = (37 * hash) + KOODBDEMDFD_FIELD_NUMBER;
+      hash = (53 * hash) + getKoodbdemdfd().hashCode();
     }
-    if (hasFofagloikmg()) {
-      hash = (37 * hash) + FOFAGLOIKMG_FIELD_NUMBER;
-      hash = (53 * hash) + getFofagloikmg().hashCode();
+    if (hasJebicoepalo()) {
+      hash = (37 * hash) + JEBICOEPALO_FIELD_NUMBER;
+      hash = (53 * hash) + getJebicoepalo().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -1120,10 +1076,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: DDPCMFPEILE
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.FortSearchOutProto}
    */
   public static final class Builder extends
@@ -1156,79 +1108,79 @@ private static final long serialVersionUID = 0L;
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
-        getNikdphgligkFieldBuilder();
+        getDipbdnhbeamFieldBuilder();
       }
     }
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      result_ = 0;
+      jbflkcdndlp_ = 0;
 
-      if (nikdphgligkBuilder_ == null) {
-        nikdphgligk_ = java.util.Collections.emptyList();
+      if (dipbdnhbeamBuilder_ == null) {
+        dipbdnhbeam_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
       } else {
-        nikdphgligkBuilder_.clear();
+        dipbdnhbeamBuilder_.clear();
       }
-      njbejjhehhh_ = 0;
+      pljbccobhdc_ = 0;
 
-      if (meokhcpofccBuilder_ == null) {
-        meokhcpofcc_ = null;
+      if (jncklfbcoiaBuilder_ == null) {
+        jncklfbcoia_ = null;
       } else {
-        meokhcpofcc_ = null;
-        meokhcpofccBuilder_ = null;
+        jncklfbcoia_ = null;
+        jncklfbcoiaBuilder_ = null;
       }
-      gefhfjldoli_ = 0;
+      eagiaeplfnm_ = 0;
 
-      njdnpomkhaa_ = 0L;
+      gjihjjnboce_ = 0L;
 
-      bkiblpabieg_ = 0;
+      kpdmbmgighm_ = 0;
 
-      if (eoilecekhdnBuilder_ == null) {
-        eoilecekhdn_ = null;
+      if (nocbhafkajjBuilder_ == null) {
+        nocbhafkajj_ = null;
       } else {
-        eoilecekhdn_ = null;
-        eoilecekhdnBuilder_ = null;
+        nocbhafkajj_ = null;
+        nocbhafkajjBuilder_ = null;
       }
-      if (kmiiammpfgfBuilder_ == null) {
-        kmiiammpfgf_ = null;
+      if (jnamleecobgBuilder_ == null) {
+        jnamleecobg_ = null;
       } else {
-        kmiiammpfgf_ = null;
-        kmiiammpfgfBuilder_ = null;
+        jnamleecobg_ = null;
+        jnamleecobgBuilder_ = null;
       }
-      if (eeaeeebiebeBuilder_ == null) {
-        eeaeeebiebe_ = null;
+      if (ekcehemcpnaBuilder_ == null) {
+        ekcehemcpna_ = null;
       } else {
-        eeaeeebiebe_ = null;
-        eeaeeebiebeBuilder_ = null;
+        ekcehemcpna_ = null;
+        ekcehemcpnaBuilder_ = null;
       }
-      ndgehgpakno_ = 0;
+      ajhjinaopoh_ = 0;
 
-      if (aihnmahefmiBuilder_ == null) {
-        aihnmahefmi_ = null;
+      if (mjpeblmhljaBuilder_ == null) {
+        mjpeblmhlja_ = null;
       } else {
-        aihnmahefmi_ = null;
-        aihnmahefmiBuilder_ = null;
+        mjpeblmhlja_ = null;
+        mjpeblmhljaBuilder_ = null;
       }
-      lndigkkjfml_ = "";
+      dlangcndbfi_ = "";
 
-      if (hknmebbppmeBuilder_ == null) {
-        hknmebbppme_ = null;
+      if (nlibgackfjpBuilder_ == null) {
+        nlibgackfjp_ = null;
       } else {
-        hknmebbppme_ = null;
-        hknmebbppmeBuilder_ = null;
+        nlibgackfjp_ = null;
+        nlibgackfjpBuilder_ = null;
       }
-      if (ppgijddcmheBuilder_ == null) {
-        ppgijddcmhe_ = null;
+      if (koodbdemdfdBuilder_ == null) {
+        koodbdemdfd_ = null;
       } else {
-        ppgijddcmhe_ = null;
-        ppgijddcmheBuilder_ = null;
+        koodbdemdfd_ = null;
+        koodbdemdfdBuilder_ = null;
       }
-      if (fofagloikmgBuilder_ == null) {
-        fofagloikmg_ = null;
+      if (jebicoepaloBuilder_ == null) {
+        jebicoepalo_ = null;
       } else {
-        fofagloikmg_ = null;
-        fofagloikmgBuilder_ = null;
+        jebicoepalo_ = null;
+        jebicoepaloBuilder_ = null;
       }
       return this;
     }
@@ -1257,61 +1209,61 @@ private static final long serialVersionUID = 0L;
     public POGOProtos.Rpc.FortSearchOutProto buildPartial() {
       POGOProtos.Rpc.FortSearchOutProto result = new POGOProtos.Rpc.FortSearchOutProto(this);
       int from_bitField0_ = bitField0_;
-      result.result_ = result_;
-      if (nikdphgligkBuilder_ == null) {
+      result.jbflkcdndlp_ = jbflkcdndlp_;
+      if (dipbdnhbeamBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0)) {
-          nikdphgligk_ = java.util.Collections.unmodifiableList(nikdphgligk_);
+          dipbdnhbeam_ = java.util.Collections.unmodifiableList(dipbdnhbeam_);
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.nikdphgligk_ = nikdphgligk_;
+        result.dipbdnhbeam_ = dipbdnhbeam_;
       } else {
-        result.nikdphgligk_ = nikdphgligkBuilder_.build();
+        result.dipbdnhbeam_ = dipbdnhbeamBuilder_.build();
       }
-      result.njbejjhehhh_ = njbejjhehhh_;
-      if (meokhcpofccBuilder_ == null) {
-        result.meokhcpofcc_ = meokhcpofcc_;
+      result.pljbccobhdc_ = pljbccobhdc_;
+      if (jncklfbcoiaBuilder_ == null) {
+        result.jncklfbcoia_ = jncklfbcoia_;
       } else {
-        result.meokhcpofcc_ = meokhcpofccBuilder_.build();
+        result.jncklfbcoia_ = jncklfbcoiaBuilder_.build();
       }
-      result.gefhfjldoli_ = gefhfjldoli_;
-      result.njdnpomkhaa_ = njdnpomkhaa_;
-      result.bkiblpabieg_ = bkiblpabieg_;
-      if (eoilecekhdnBuilder_ == null) {
-        result.eoilecekhdn_ = eoilecekhdn_;
+      result.eagiaeplfnm_ = eagiaeplfnm_;
+      result.gjihjjnboce_ = gjihjjnboce_;
+      result.kpdmbmgighm_ = kpdmbmgighm_;
+      if (nocbhafkajjBuilder_ == null) {
+        result.nocbhafkajj_ = nocbhafkajj_;
       } else {
-        result.eoilecekhdn_ = eoilecekhdnBuilder_.build();
+        result.nocbhafkajj_ = nocbhafkajjBuilder_.build();
       }
-      if (kmiiammpfgfBuilder_ == null) {
-        result.kmiiammpfgf_ = kmiiammpfgf_;
+      if (jnamleecobgBuilder_ == null) {
+        result.jnamleecobg_ = jnamleecobg_;
       } else {
-        result.kmiiammpfgf_ = kmiiammpfgfBuilder_.build();
+        result.jnamleecobg_ = jnamleecobgBuilder_.build();
       }
-      if (eeaeeebiebeBuilder_ == null) {
-        result.eeaeeebiebe_ = eeaeeebiebe_;
+      if (ekcehemcpnaBuilder_ == null) {
+        result.ekcehemcpna_ = ekcehemcpna_;
       } else {
-        result.eeaeeebiebe_ = eeaeeebiebeBuilder_.build();
+        result.ekcehemcpna_ = ekcehemcpnaBuilder_.build();
       }
-      result.ndgehgpakno_ = ndgehgpakno_;
-      if (aihnmahefmiBuilder_ == null) {
-        result.aihnmahefmi_ = aihnmahefmi_;
+      result.ajhjinaopoh_ = ajhjinaopoh_;
+      if (mjpeblmhljaBuilder_ == null) {
+        result.mjpeblmhlja_ = mjpeblmhlja_;
       } else {
-        result.aihnmahefmi_ = aihnmahefmiBuilder_.build();
+        result.mjpeblmhlja_ = mjpeblmhljaBuilder_.build();
       }
-      result.lndigkkjfml_ = lndigkkjfml_;
-      if (hknmebbppmeBuilder_ == null) {
-        result.hknmebbppme_ = hknmebbppme_;
+      result.dlangcndbfi_ = dlangcndbfi_;
+      if (nlibgackfjpBuilder_ == null) {
+        result.nlibgackfjp_ = nlibgackfjp_;
       } else {
-        result.hknmebbppme_ = hknmebbppmeBuilder_.build();
+        result.nlibgackfjp_ = nlibgackfjpBuilder_.build();
       }
-      if (ppgijddcmheBuilder_ == null) {
-        result.ppgijddcmhe_ = ppgijddcmhe_;
+      if (koodbdemdfdBuilder_ == null) {
+        result.koodbdemdfd_ = koodbdemdfd_;
       } else {
-        result.ppgijddcmhe_ = ppgijddcmheBuilder_.build();
+        result.koodbdemdfd_ = koodbdemdfdBuilder_.build();
       }
-      if (fofagloikmgBuilder_ == null) {
-        result.fofagloikmg_ = fofagloikmg_;
+      if (jebicoepaloBuilder_ == null) {
+        result.jebicoepalo_ = jebicoepalo_;
       } else {
-        result.fofagloikmg_ = fofagloikmgBuilder_.build();
+        result.jebicoepalo_ = jebicoepaloBuilder_.build();
       }
       onBuilt();
       return result;
@@ -1361,77 +1313,77 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.FortSearchOutProto other) {
       if (other == POGOProtos.Rpc.FortSearchOutProto.getDefaultInstance()) return this;
-      if (other.result_ != 0) {
-        setResultValue(other.getResultValue());
+      if (other.jbflkcdndlp_ != 0) {
+        setJbflkcdndlpValue(other.getJbflkcdndlpValue());
       }
-      if (nikdphgligkBuilder_ == null) {
-        if (!other.nikdphgligk_.isEmpty()) {
-          if (nikdphgligk_.isEmpty()) {
-            nikdphgligk_ = other.nikdphgligk_;
+      if (dipbdnhbeamBuilder_ == null) {
+        if (!other.dipbdnhbeam_.isEmpty()) {
+          if (dipbdnhbeam_.isEmpty()) {
+            dipbdnhbeam_ = other.dipbdnhbeam_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureNikdphgligkIsMutable();
-            nikdphgligk_.addAll(other.nikdphgligk_);
+            ensureDipbdnhbeamIsMutable();
+            dipbdnhbeam_.addAll(other.dipbdnhbeam_);
           }
           onChanged();
         }
       } else {
-        if (!other.nikdphgligk_.isEmpty()) {
-          if (nikdphgligkBuilder_.isEmpty()) {
-            nikdphgligkBuilder_.dispose();
-            nikdphgligkBuilder_ = null;
-            nikdphgligk_ = other.nikdphgligk_;
+        if (!other.dipbdnhbeam_.isEmpty()) {
+          if (dipbdnhbeamBuilder_.isEmpty()) {
+            dipbdnhbeamBuilder_.dispose();
+            dipbdnhbeamBuilder_ = null;
+            dipbdnhbeam_ = other.dipbdnhbeam_;
             bitField0_ = (bitField0_ & ~0x00000001);
-            nikdphgligkBuilder_ = 
+            dipbdnhbeamBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getNikdphgligkFieldBuilder() : null;
+                 getDipbdnhbeamFieldBuilder() : null;
           } else {
-            nikdphgligkBuilder_.addAllMessages(other.nikdphgligk_);
+            dipbdnhbeamBuilder_.addAllMessages(other.dipbdnhbeam_);
           }
         }
       }
-      if (other.getNjbejjhehhh() != 0) {
-        setNjbejjhehhh(other.getNjbejjhehhh());
+      if (other.getPljbccobhdc() != 0) {
+        setPljbccobhdc(other.getPljbccobhdc());
       }
-      if (other.hasMeokhcpofcc()) {
-        mergeMeokhcpofcc(other.getMeokhcpofcc());
+      if (other.hasJncklfbcoia()) {
+        mergeJncklfbcoia(other.getJncklfbcoia());
       }
-      if (other.getGefhfjldoli() != 0) {
-        setGefhfjldoli(other.getGefhfjldoli());
+      if (other.getEagiaeplfnm() != 0) {
+        setEagiaeplfnm(other.getEagiaeplfnm());
       }
-      if (other.getNjdnpomkhaa() != 0L) {
-        setNjdnpomkhaa(other.getNjdnpomkhaa());
+      if (other.getGjihjjnboce() != 0L) {
+        setGjihjjnboce(other.getGjihjjnboce());
       }
-      if (other.getBkiblpabieg() != 0) {
-        setBkiblpabieg(other.getBkiblpabieg());
+      if (other.getKpdmbmgighm() != 0) {
+        setKpdmbmgighm(other.getKpdmbmgighm());
       }
-      if (other.hasEoilecekhdn()) {
-        mergeEoilecekhdn(other.getEoilecekhdn());
+      if (other.hasNocbhafkajj()) {
+        mergeNocbhafkajj(other.getNocbhafkajj());
       }
-      if (other.hasKmiiammpfgf()) {
-        mergeKmiiammpfgf(other.getKmiiammpfgf());
+      if (other.hasJnamleecobg()) {
+        mergeJnamleecobg(other.getJnamleecobg());
       }
-      if (other.hasEeaeeebiebe()) {
-        mergeEeaeeebiebe(other.getEeaeeebiebe());
+      if (other.hasEkcehemcpna()) {
+        mergeEkcehemcpna(other.getEkcehemcpna());
       }
-      if (other.getNdgehgpakno() != 0) {
-        setNdgehgpakno(other.getNdgehgpakno());
+      if (other.getAjhjinaopoh() != 0) {
+        setAjhjinaopoh(other.getAjhjinaopoh());
       }
-      if (other.hasAihnmahefmi()) {
-        mergeAihnmahefmi(other.getAihnmahefmi());
+      if (other.hasMjpeblmhlja()) {
+        mergeMjpeblmhlja(other.getMjpeblmhlja());
       }
-      if (!other.getLndigkkjfml().isEmpty()) {
-        lndigkkjfml_ = other.lndigkkjfml_;
+      if (!other.getDlangcndbfi().isEmpty()) {
+        dlangcndbfi_ = other.dlangcndbfi_;
         onChanged();
       }
-      if (other.hasHknmebbppme()) {
-        mergeHknmebbppme(other.getHknmebbppme());
+      if (other.hasNlibgackfjp()) {
+        mergeNlibgackfjp(other.getNlibgackfjp());
       }
-      if (other.hasPpgijddcmhe()) {
-        mergePpgijddcmhe(other.getPpgijddcmhe());
+      if (other.hasKoodbdemdfd()) {
+        mergeKoodbdemdfd(other.getKoodbdemdfd());
       }
-      if (other.hasFofagloikmg()) {
-        mergeFofagloikmg(other.getFofagloikmg());
+      if (other.hasJebicoepalo()) {
+        mergeJebicoepalo(other.getJebicoepalo());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -1463,1481 +1415,1474 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private int result_ = 0;
+    private int jbflkcdndlp_ = 0;
     /**
-     * <code>.POGOProtos.Rpc.FortSearchOutProto.Result result = 1;</code>
-     * @return The enum numeric value on the wire for result.
+     * <code>.POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO jbflkcdndlp = 1;</code>
+     * @return The enum numeric value on the wire for jbflkcdndlp.
      */
-    @java.lang.Override public int getResultValue() {
-      return result_;
+    public int getJbflkcdndlpValue() {
+      return jbflkcdndlp_;
     }
     /**
-     * <code>.POGOProtos.Rpc.FortSearchOutProto.Result result = 1;</code>
-     * @param value The enum numeric value on the wire for result to set.
+     * <code>.POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO jbflkcdndlp = 1;</code>
+     * @param value The enum numeric value on the wire for jbflkcdndlp to set.
      * @return This builder for chaining.
      */
-    public Builder setResultValue(int value) {
-      
-      result_ = value;
+    public Builder setJbflkcdndlpValue(int value) {
+      jbflkcdndlp_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.FortSearchOutProto.Result result = 1;</code>
-     * @return The result.
+     * <code>.POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO jbflkcdndlp = 1;</code>
+     * @return The jbflkcdndlp.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.FortSearchOutProto.Result getResult() {
+    public POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO getJbflkcdndlp() {
       @SuppressWarnings("deprecation")
-      POGOProtos.Rpc.FortSearchOutProto.Result result = POGOProtos.Rpc.FortSearchOutProto.Result.valueOf(result_);
-      return result == null ? POGOProtos.Rpc.FortSearchOutProto.Result.UNRECOGNIZED : result;
+      POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO result = POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO.valueOf(jbflkcdndlp_);
+      return result == null ? POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO.UNRECOGNIZED : result;
     }
     /**
-     * <code>.POGOProtos.Rpc.FortSearchOutProto.Result result = 1;</code>
-     * @param value The result to set.
+     * <code>.POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO jbflkcdndlp = 1;</code>
+     * @param value The jbflkcdndlp to set.
      * @return This builder for chaining.
      */
-    public Builder setResult(POGOProtos.Rpc.FortSearchOutProto.Result value) {
+    public Builder setJbflkcdndlp(POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO value) {
       if (value == null) {
         throw new NullPointerException();
       }
       
-      result_ = value.getNumber();
+      jbflkcdndlp_ = value.getNumber();
       onChanged();
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.FortSearchOutProto.Result result = 1;</code>
+     * <code>.POGOProtos.Rpc.FortSearchOutProto.LODBDNPPHIO jbflkcdndlp = 1;</code>
      * @return This builder for chaining.
      */
-    public Builder clearResult() {
+    public Builder clearJbflkcdndlp() {
       
-      result_ = 0;
+      jbflkcdndlp_ = 0;
       onChanged();
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.AwardItemProto> nikdphgligk_ =
+    private java.util.List<POGOProtos.Rpc.KGECKBBBFEH> dipbdnhbeam_ =
       java.util.Collections.emptyList();
-    private void ensureNikdphgligkIsMutable() {
+    private void ensureDipbdnhbeamIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        nikdphgligk_ = new java.util.ArrayList<POGOProtos.Rpc.AwardItemProto>(nikdphgligk_);
+        dipbdnhbeam_ = new java.util.ArrayList<POGOProtos.Rpc.KGECKBBBFEH>(dipbdnhbeam_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.AwardItemProto, POGOProtos.Rpc.AwardItemProto.Builder, POGOProtos.Rpc.AwardItemProtoOrBuilder> nikdphgligkBuilder_;
+        POGOProtos.Rpc.KGECKBBBFEH, POGOProtos.Rpc.KGECKBBBFEH.Builder, POGOProtos.Rpc.KGECKBBBFEHOrBuilder> dipbdnhbeamBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.AwardItemProto> getNikdphgligkList() {
-      if (nikdphgligkBuilder_ == null) {
-        return java.util.Collections.unmodifiableList(nikdphgligk_);
+    public java.util.List<POGOProtos.Rpc.KGECKBBBFEH> getDipbdnhbeamList() {
+      if (dipbdnhbeamBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(dipbdnhbeam_);
       } else {
-        return nikdphgligkBuilder_.getMessageList();
+        return dipbdnhbeamBuilder_.getMessageList();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public int getNikdphgligkCount() {
-      if (nikdphgligkBuilder_ == null) {
-        return nikdphgligk_.size();
+    public int getDipbdnhbeamCount() {
+      if (dipbdnhbeamBuilder_ == null) {
+        return dipbdnhbeam_.size();
       } else {
-        return nikdphgligkBuilder_.getCount();
+        return dipbdnhbeamBuilder_.getCount();
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public POGOProtos.Rpc.AwardItemProto getNikdphgligk(int index) {
-      if (nikdphgligkBuilder_ == null) {
-        return nikdphgligk_.get(index);
+    public POGOProtos.Rpc.KGECKBBBFEH getDipbdnhbeam(int index) {
+      if (dipbdnhbeamBuilder_ == null) {
+        return dipbdnhbeam_.get(index);
       } else {
-        return nikdphgligkBuilder_.getMessage(index);
+        return dipbdnhbeamBuilder_.getMessage(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public Builder setNikdphgligk(
-        int index, POGOProtos.Rpc.AwardItemProto value) {
-      if (nikdphgligkBuilder_ == null) {
+    public Builder setDipbdnhbeam(
+        int index, POGOProtos.Rpc.KGECKBBBFEH value) {
+      if (dipbdnhbeamBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureNikdphgligkIsMutable();
-        nikdphgligk_.set(index, value);
+        ensureDipbdnhbeamIsMutable();
+        dipbdnhbeam_.set(index, value);
         onChanged();
       } else {
-        nikdphgligkBuilder_.setMessage(index, value);
+        dipbdnhbeamBuilder_.setMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public Builder setNikdphgligk(
-        int index, POGOProtos.Rpc.AwardItemProto.Builder builderForValue) {
-      if (nikdphgligkBuilder_ == null) {
-        ensureNikdphgligkIsMutable();
-        nikdphgligk_.set(index, builderForValue.build());
+    public Builder setDipbdnhbeam(
+        int index, POGOProtos.Rpc.KGECKBBBFEH.Builder builderForValue) {
+      if (dipbdnhbeamBuilder_ == null) {
+        ensureDipbdnhbeamIsMutable();
+        dipbdnhbeam_.set(index, builderForValue.build());
         onChanged();
       } else {
-        nikdphgligkBuilder_.setMessage(index, builderForValue.build());
+        dipbdnhbeamBuilder_.setMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public Builder addNikdphgligk(POGOProtos.Rpc.AwardItemProto value) {
-      if (nikdphgligkBuilder_ == null) {
+    public Builder addDipbdnhbeam(POGOProtos.Rpc.KGECKBBBFEH value) {
+      if (dipbdnhbeamBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureNikdphgligkIsMutable();
-        nikdphgligk_.add(value);
+        ensureDipbdnhbeamIsMutable();
+        dipbdnhbeam_.add(value);
         onChanged();
       } else {
-        nikdphgligkBuilder_.addMessage(value);
+        dipbdnhbeamBuilder_.addMessage(value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public Builder addNikdphgligk(
-        int index, POGOProtos.Rpc.AwardItemProto value) {
-      if (nikdphgligkBuilder_ == null) {
+    public Builder addDipbdnhbeam(
+        int index, POGOProtos.Rpc.KGECKBBBFEH value) {
+      if (dipbdnhbeamBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureNikdphgligkIsMutable();
-        nikdphgligk_.add(index, value);
+        ensureDipbdnhbeamIsMutable();
+        dipbdnhbeam_.add(index, value);
         onChanged();
       } else {
-        nikdphgligkBuilder_.addMessage(index, value);
+        dipbdnhbeamBuilder_.addMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public Builder addNikdphgligk(
-        POGOProtos.Rpc.AwardItemProto.Builder builderForValue) {
-      if (nikdphgligkBuilder_ == null) {
-        ensureNikdphgligkIsMutable();
-        nikdphgligk_.add(builderForValue.build());
+    public Builder addDipbdnhbeam(
+        POGOProtos.Rpc.KGECKBBBFEH.Builder builderForValue) {
+      if (dipbdnhbeamBuilder_ == null) {
+        ensureDipbdnhbeamIsMutable();
+        dipbdnhbeam_.add(builderForValue.build());
         onChanged();
       } else {
-        nikdphgligkBuilder_.addMessage(builderForValue.build());
+        dipbdnhbeamBuilder_.addMessage(builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public Builder addNikdphgligk(
-        int index, POGOProtos.Rpc.AwardItemProto.Builder builderForValue) {
-      if (nikdphgligkBuilder_ == null) {
-        ensureNikdphgligkIsMutable();
-        nikdphgligk_.add(index, builderForValue.build());
+    public Builder addDipbdnhbeam(
+        int index, POGOProtos.Rpc.KGECKBBBFEH.Builder builderForValue) {
+      if (dipbdnhbeamBuilder_ == null) {
+        ensureDipbdnhbeamIsMutable();
+        dipbdnhbeam_.add(index, builderForValue.build());
         onChanged();
       } else {
-        nikdphgligkBuilder_.addMessage(index, builderForValue.build());
+        dipbdnhbeamBuilder_.addMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public Builder addAllNikdphgligk(
-        java.lang.Iterable<? extends POGOProtos.Rpc.AwardItemProto> values) {
-      if (nikdphgligkBuilder_ == null) {
-        ensureNikdphgligkIsMutable();
+    public Builder addAllDipbdnhbeam(
+        java.lang.Iterable<? extends POGOProtos.Rpc.KGECKBBBFEH> values) {
+      if (dipbdnhbeamBuilder_ == null) {
+        ensureDipbdnhbeamIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, nikdphgligk_);
+            values, dipbdnhbeam_);
         onChanged();
       } else {
-        nikdphgligkBuilder_.addAllMessages(values);
+        dipbdnhbeamBuilder_.addAllMessages(values);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public Builder clearNikdphgligk() {
-      if (nikdphgligkBuilder_ == null) {
-        nikdphgligk_ = java.util.Collections.emptyList();
+    public Builder clearDipbdnhbeam() {
+      if (dipbdnhbeamBuilder_ == null) {
+        dipbdnhbeam_ = java.util.Collections.emptyList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
-        nikdphgligkBuilder_.clear();
+        dipbdnhbeamBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public Builder removeNikdphgligk(int index) {
-      if (nikdphgligkBuilder_ == null) {
-        ensureNikdphgligkIsMutable();
-        nikdphgligk_.remove(index);
+    public Builder removeDipbdnhbeam(int index) {
+      if (dipbdnhbeamBuilder_ == null) {
+        ensureDipbdnhbeamIsMutable();
+        dipbdnhbeam_.remove(index);
         onChanged();
       } else {
-        nikdphgligkBuilder_.remove(index);
+        dipbdnhbeamBuilder_.remove(index);
       }
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public POGOProtos.Rpc.AwardItemProto.Builder getNikdphgligkBuilder(
+    public POGOProtos.Rpc.KGECKBBBFEH.Builder getDipbdnhbeamBuilder(
         int index) {
-      return getNikdphgligkFieldBuilder().getBuilder(index);
+      return getDipbdnhbeamFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public POGOProtos.Rpc.AwardItemProtoOrBuilder getNikdphgligkOrBuilder(
+    public POGOProtos.Rpc.KGECKBBBFEHOrBuilder getDipbdnhbeamOrBuilder(
         int index) {
-      if (nikdphgligkBuilder_ == null) {
-        return nikdphgligk_.get(index);  } else {
-        return nikdphgligkBuilder_.getMessageOrBuilder(index);
+      if (dipbdnhbeamBuilder_ == null) {
+        return dipbdnhbeam_.get(index);  } else {
+        return dipbdnhbeamBuilder_.getMessageOrBuilder(index);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.AwardItemProtoOrBuilder> 
-         getNikdphgligkOrBuilderList() {
-      if (nikdphgligkBuilder_ != null) {
-        return nikdphgligkBuilder_.getMessageOrBuilderList();
+    public java.util.List<? extends POGOProtos.Rpc.KGECKBBBFEHOrBuilder> 
+         getDipbdnhbeamOrBuilderList() {
+      if (dipbdnhbeamBuilder_ != null) {
+        return dipbdnhbeamBuilder_.getMessageOrBuilderList();
       } else {
-        return java.util.Collections.unmodifiableList(nikdphgligk_);
+        return java.util.Collections.unmodifiableList(dipbdnhbeam_);
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public POGOProtos.Rpc.AwardItemProto.Builder addNikdphgligkBuilder() {
-      return getNikdphgligkFieldBuilder().addBuilder(
-          POGOProtos.Rpc.AwardItemProto.getDefaultInstance());
+    public POGOProtos.Rpc.KGECKBBBFEH.Builder addDipbdnhbeamBuilder() {
+      return getDipbdnhbeamFieldBuilder().addBuilder(
+          POGOProtos.Rpc.KGECKBBBFEH.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public POGOProtos.Rpc.AwardItemProto.Builder addNikdphgligkBuilder(
+    public POGOProtos.Rpc.KGECKBBBFEH.Builder addDipbdnhbeamBuilder(
         int index) {
-      return getNikdphgligkFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.AwardItemProto.getDefaultInstance());
+      return getDipbdnhbeamFieldBuilder().addBuilder(
+          index, POGOProtos.Rpc.KGECKBBBFEH.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.AwardItemProto nikdphgligk = 2;</code>
+     * <code>repeated .POGOProtos.Rpc.KGECKBBBFEH dipbdnhbeam = 2;</code>
      */
-    public java.util.List<POGOProtos.Rpc.AwardItemProto.Builder> 
-         getNikdphgligkBuilderList() {
-      return getNikdphgligkFieldBuilder().getBuilderList();
+    public java.util.List<POGOProtos.Rpc.KGECKBBBFEH.Builder> 
+         getDipbdnhbeamBuilderList() {
+      return getDipbdnhbeamFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.AwardItemProto, POGOProtos.Rpc.AwardItemProto.Builder, POGOProtos.Rpc.AwardItemProtoOrBuilder> 
-        getNikdphgligkFieldBuilder() {
-      if (nikdphgligkBuilder_ == null) {
-        nikdphgligkBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.AwardItemProto, POGOProtos.Rpc.AwardItemProto.Builder, POGOProtos.Rpc.AwardItemProtoOrBuilder>(
-                nikdphgligk_,
+        POGOProtos.Rpc.KGECKBBBFEH, POGOProtos.Rpc.KGECKBBBFEH.Builder, POGOProtos.Rpc.KGECKBBBFEHOrBuilder> 
+        getDipbdnhbeamFieldBuilder() {
+      if (dipbdnhbeamBuilder_ == null) {
+        dipbdnhbeamBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+            POGOProtos.Rpc.KGECKBBBFEH, POGOProtos.Rpc.KGECKBBBFEH.Builder, POGOProtos.Rpc.KGECKBBBFEHOrBuilder>(
+                dipbdnhbeam_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
                 isClean());
-        nikdphgligk_ = null;
+        dipbdnhbeam_ = null;
       }
-      return nikdphgligkBuilder_;
+      return dipbdnhbeamBuilder_;
     }
 
-    private int njbejjhehhh_ ;
+    private int pljbccobhdc_ ;
     /**
-     * <code>int32 njbejjhehhh = 3;</code>
-     * @return The njbejjhehhh.
+     * <code>int32 pljbccobhdc = 3;</code>
+     * @return The pljbccobhdc.
      */
-    @java.lang.Override
-    public int getNjbejjhehhh() {
-      return njbejjhehhh_;
+    public int getPljbccobhdc() {
+      return pljbccobhdc_;
     }
     /**
-     * <code>int32 njbejjhehhh = 3;</code>
-     * @param value The njbejjhehhh to set.
+     * <code>int32 pljbccobhdc = 3;</code>
+     * @param value The pljbccobhdc to set.
      * @return This builder for chaining.
      */
-    public Builder setNjbejjhehhh(int value) {
+    public Builder setPljbccobhdc(int value) {
       
-      njbejjhehhh_ = value;
+      pljbccobhdc_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 njbejjhehhh = 3;</code>
+     * <code>int32 pljbccobhdc = 3;</code>
      * @return This builder for chaining.
      */
-    public Builder clearNjbejjhehhh() {
+    public Builder clearPljbccobhdc() {
       
-      njbejjhehhh_ = 0;
+      pljbccobhdc_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.PokemonProto meokhcpofcc_;
+    private POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> meokhcpofccBuilder_;
+        POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder> jncklfbcoiaBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
-     * @return Whether the meokhcpofcc field is set.
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
+     * @return Whether the jncklfbcoia field is set.
      */
-    public boolean hasMeokhcpofcc() {
-      return meokhcpofccBuilder_ != null || meokhcpofcc_ != null;
+    public boolean hasJncklfbcoia() {
+      return jncklfbcoiaBuilder_ != null || jncklfbcoia_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
-     * @return The meokhcpofcc.
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
+     * @return The jncklfbcoia.
      */
-    public POGOProtos.Rpc.PokemonProto getMeokhcpofcc() {
-      if (meokhcpofccBuilder_ == null) {
-        return meokhcpofcc_ == null ? POGOProtos.Rpc.PokemonProto.getDefaultInstance() : meokhcpofcc_;
+    public POGOProtos.Rpc.KHNLPGENFBI getJncklfbcoia() {
+      if (jncklfbcoiaBuilder_ == null) {
+        return jncklfbcoia_ == null ? POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance() : jncklfbcoia_;
       } else {
-        return meokhcpofccBuilder_.getMessage();
+        return jncklfbcoiaBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
      */
-    public Builder setMeokhcpofcc(POGOProtos.Rpc.PokemonProto value) {
-      if (meokhcpofccBuilder_ == null) {
+    public Builder setJncklfbcoia(POGOProtos.Rpc.KHNLPGENFBI value) {
+      if (jncklfbcoiaBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        meokhcpofcc_ = value;
+        jncklfbcoia_ = value;
         onChanged();
       } else {
-        meokhcpofccBuilder_.setMessage(value);
+        jncklfbcoiaBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
      */
-    public Builder setMeokhcpofcc(
-        POGOProtos.Rpc.PokemonProto.Builder builderForValue) {
-      if (meokhcpofccBuilder_ == null) {
-        meokhcpofcc_ = builderForValue.build();
+    public Builder setJncklfbcoia(
+        POGOProtos.Rpc.KHNLPGENFBI.Builder builderForValue) {
+      if (jncklfbcoiaBuilder_ == null) {
+        jncklfbcoia_ = builderForValue.build();
         onChanged();
       } else {
-        meokhcpofccBuilder_.setMessage(builderForValue.build());
+        jncklfbcoiaBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
      */
-    public Builder mergeMeokhcpofcc(POGOProtos.Rpc.PokemonProto value) {
-      if (meokhcpofccBuilder_ == null) {
-        if (meokhcpofcc_ != null) {
-          meokhcpofcc_ =
-            POGOProtos.Rpc.PokemonProto.newBuilder(meokhcpofcc_).mergeFrom(value).buildPartial();
+    public Builder mergeJncklfbcoia(POGOProtos.Rpc.KHNLPGENFBI value) {
+      if (jncklfbcoiaBuilder_ == null) {
+        if (jncklfbcoia_ != null) {
+          jncklfbcoia_ =
+            POGOProtos.Rpc.KHNLPGENFBI.newBuilder(jncklfbcoia_).mergeFrom(value).buildPartial();
         } else {
-          meokhcpofcc_ = value;
+          jncklfbcoia_ = value;
         }
         onChanged();
       } else {
-        meokhcpofccBuilder_.mergeFrom(value);
+        jncklfbcoiaBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
      */
-    public Builder clearMeokhcpofcc() {
-      if (meokhcpofccBuilder_ == null) {
-        meokhcpofcc_ = null;
+    public Builder clearJncklfbcoia() {
+      if (jncklfbcoiaBuilder_ == null) {
+        jncklfbcoia_ = null;
         onChanged();
       } else {
-        meokhcpofcc_ = null;
-        meokhcpofccBuilder_ = null;
+        jncklfbcoia_ = null;
+        jncklfbcoiaBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
      */
-    public POGOProtos.Rpc.PokemonProto.Builder getMeokhcpofccBuilder() {
+    public POGOProtos.Rpc.KHNLPGENFBI.Builder getJncklfbcoiaBuilder() {
       
       onChanged();
-      return getMeokhcpofccFieldBuilder().getBuilder();
+      return getJncklfbcoiaFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
      */
-    public POGOProtos.Rpc.PokemonProtoOrBuilder getMeokhcpofccOrBuilder() {
-      if (meokhcpofccBuilder_ != null) {
-        return meokhcpofccBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.KHNLPGENFBIOrBuilder getJncklfbcoiaOrBuilder() {
+      if (jncklfbcoiaBuilder_ != null) {
+        return jncklfbcoiaBuilder_.getMessageOrBuilder();
       } else {
-        return meokhcpofcc_ == null ?
-            POGOProtos.Rpc.PokemonProto.getDefaultInstance() : meokhcpofcc_;
+        return jncklfbcoia_ == null ?
+            POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance() : jncklfbcoia_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto meokhcpofcc = 4;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI jncklfbcoia = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> 
-        getMeokhcpofccFieldBuilder() {
-      if (meokhcpofccBuilder_ == null) {
-        meokhcpofccBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder>(
-                getMeokhcpofcc(),
+        POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder> 
+        getJncklfbcoiaFieldBuilder() {
+      if (jncklfbcoiaBuilder_ == null) {
+        jncklfbcoiaBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder>(
+                getJncklfbcoia(),
                 getParentForChildren(),
                 isClean());
-        meokhcpofcc_ = null;
+        jncklfbcoia_ = null;
       }
-      return meokhcpofccBuilder_;
+      return jncklfbcoiaBuilder_;
     }
 
-    private int gefhfjldoli_ ;
+    private int eagiaeplfnm_ ;
     /**
-     * <code>int32 gefhfjldoli = 5;</code>
-     * @return The gefhfjldoli.
+     * <code>int32 eagiaeplfnm = 5;</code>
+     * @return The eagiaeplfnm.
      */
-    @java.lang.Override
-    public int getGefhfjldoli() {
-      return gefhfjldoli_;
+    public int getEagiaeplfnm() {
+      return eagiaeplfnm_;
     }
     /**
-     * <code>int32 gefhfjldoli = 5;</code>
-     * @param value The gefhfjldoli to set.
+     * <code>int32 eagiaeplfnm = 5;</code>
+     * @param value The eagiaeplfnm to set.
      * @return This builder for chaining.
      */
-    public Builder setGefhfjldoli(int value) {
+    public Builder setEagiaeplfnm(int value) {
       
-      gefhfjldoli_ = value;
+      eagiaeplfnm_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 gefhfjldoli = 5;</code>
+     * <code>int32 eagiaeplfnm = 5;</code>
      * @return This builder for chaining.
      */
-    public Builder clearGefhfjldoli() {
+    public Builder clearEagiaeplfnm() {
       
-      gefhfjldoli_ = 0;
-      onChanged();
-      return this;
-    }
-
-    private long njdnpomkhaa_ ;
-    /**
-     * <code>int64 njdnpomkhaa = 6;</code>
-     * @return The njdnpomkhaa.
-     */
-    @java.lang.Override
-    public long getNjdnpomkhaa() {
-      return njdnpomkhaa_;
-    }
-    /**
-     * <code>int64 njdnpomkhaa = 6;</code>
-     * @param value The njdnpomkhaa to set.
-     * @return This builder for chaining.
-     */
-    public Builder setNjdnpomkhaa(long value) {
-      
-      njdnpomkhaa_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int64 njdnpomkhaa = 6;</code>
-     * @return This builder for chaining.
-     */
-    public Builder clearNjdnpomkhaa() {
-      
-      njdnpomkhaa_ = 0L;
+      eagiaeplfnm_ = 0;
       onChanged();
       return this;
     }
 
-    private int bkiblpabieg_ ;
+    private long gjihjjnboce_ ;
     /**
-     * <code>int32 bkiblpabieg = 7;</code>
-     * @return The bkiblpabieg.
+     * <code>int64 gjihjjnboce = 6;</code>
+     * @return The gjihjjnboce.
      */
-    @java.lang.Override
-    public int getBkiblpabieg() {
-      return bkiblpabieg_;
+    public long getGjihjjnboce() {
+      return gjihjjnboce_;
     }
     /**
-     * <code>int32 bkiblpabieg = 7;</code>
-     * @param value The bkiblpabieg to set.
+     * <code>int64 gjihjjnboce = 6;</code>
+     * @param value The gjihjjnboce to set.
      * @return This builder for chaining.
      */
-    public Builder setBkiblpabieg(int value) {
+    public Builder setGjihjjnboce(long value) {
       
-      bkiblpabieg_ = value;
+      gjihjjnboce_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 bkiblpabieg = 7;</code>
+     * <code>int64 gjihjjnboce = 6;</code>
      * @return This builder for chaining.
      */
-    public Builder clearBkiblpabieg() {
+    public Builder clearGjihjjnboce() {
       
-      bkiblpabieg_ = 0;
+      gjihjjnboce_ = 0L;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.AwardedGymBadge eoilecekhdn_;
+    private int kpdmbmgighm_ ;
+    /**
+     * <code>int32 kpdmbmgighm = 7;</code>
+     * @return The kpdmbmgighm.
+     */
+    public int getKpdmbmgighm() {
+      return kpdmbmgighm_;
+    }
+    /**
+     * <code>int32 kpdmbmgighm = 7;</code>
+     * @param value The kpdmbmgighm to set.
+     * @return This builder for chaining.
+     */
+    public Builder setKpdmbmgighm(int value) {
+      
+      kpdmbmgighm_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 kpdmbmgighm = 7;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearKpdmbmgighm() {
+      
+      kpdmbmgighm_ = 0;
+      onChanged();
+      return this;
+    }
+
+    private POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AwardedGymBadge, POGOProtos.Rpc.AwardedGymBadge.Builder, POGOProtos.Rpc.AwardedGymBadgeOrBuilder> eoilecekhdnBuilder_;
+        POGOProtos.Rpc.KEGNPKMJHED, POGOProtos.Rpc.KEGNPKMJHED.Builder, POGOProtos.Rpc.KEGNPKMJHEDOrBuilder> nocbhafkajjBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
-     * @return Whether the eoilecekhdn field is set.
+     * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
+     * @return Whether the nocbhafkajj field is set.
      */
-    public boolean hasEoilecekhdn() {
-      return eoilecekhdnBuilder_ != null || eoilecekhdn_ != null;
+    public boolean hasNocbhafkajj() {
+      return nocbhafkajjBuilder_ != null || nocbhafkajj_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
-     * @return The eoilecekhdn.
+     * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
+     * @return The nocbhafkajj.
      */
-    public POGOProtos.Rpc.AwardedGymBadge getEoilecekhdn() {
-      if (eoilecekhdnBuilder_ == null) {
-        return eoilecekhdn_ == null ? POGOProtos.Rpc.AwardedGymBadge.getDefaultInstance() : eoilecekhdn_;
+    public POGOProtos.Rpc.KEGNPKMJHED getNocbhafkajj() {
+      if (nocbhafkajjBuilder_ == null) {
+        return nocbhafkajj_ == null ? POGOProtos.Rpc.KEGNPKMJHED.getDefaultInstance() : nocbhafkajj_;
       } else {
-        return eoilecekhdnBuilder_.getMessage();
+        return nocbhafkajjBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
+     * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
      */
-    public Builder setEoilecekhdn(POGOProtos.Rpc.AwardedGymBadge value) {
-      if (eoilecekhdnBuilder_ == null) {
+    public Builder setNocbhafkajj(POGOProtos.Rpc.KEGNPKMJHED value) {
+      if (nocbhafkajjBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eoilecekhdn_ = value;
+        nocbhafkajj_ = value;
         onChanged();
       } else {
-        eoilecekhdnBuilder_.setMessage(value);
+        nocbhafkajjBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
+     * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
      */
-    public Builder setEoilecekhdn(
-        POGOProtos.Rpc.AwardedGymBadge.Builder builderForValue) {
-      if (eoilecekhdnBuilder_ == null) {
-        eoilecekhdn_ = builderForValue.build();
+    public Builder setNocbhafkajj(
+        POGOProtos.Rpc.KEGNPKMJHED.Builder builderForValue) {
+      if (nocbhafkajjBuilder_ == null) {
+        nocbhafkajj_ = builderForValue.build();
         onChanged();
       } else {
-        eoilecekhdnBuilder_.setMessage(builderForValue.build());
+        nocbhafkajjBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
+     * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
      */
-    public Builder mergeEoilecekhdn(POGOProtos.Rpc.AwardedGymBadge value) {
-      if (eoilecekhdnBuilder_ == null) {
-        if (eoilecekhdn_ != null) {
-          eoilecekhdn_ =
-            POGOProtos.Rpc.AwardedGymBadge.newBuilder(eoilecekhdn_).mergeFrom(value).buildPartial();
+    public Builder mergeNocbhafkajj(POGOProtos.Rpc.KEGNPKMJHED value) {
+      if (nocbhafkajjBuilder_ == null) {
+        if (nocbhafkajj_ != null) {
+          nocbhafkajj_ =
+            POGOProtos.Rpc.KEGNPKMJHED.newBuilder(nocbhafkajj_).mergeFrom(value).buildPartial();
         } else {
-          eoilecekhdn_ = value;
+          nocbhafkajj_ = value;
         }
         onChanged();
       } else {
-        eoilecekhdnBuilder_.mergeFrom(value);
+        nocbhafkajjBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
+     * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
      */
-    public Builder clearEoilecekhdn() {
-      if (eoilecekhdnBuilder_ == null) {
-        eoilecekhdn_ = null;
+    public Builder clearNocbhafkajj() {
+      if (nocbhafkajjBuilder_ == null) {
+        nocbhafkajj_ = null;
         onChanged();
       } else {
-        eoilecekhdn_ = null;
-        eoilecekhdnBuilder_ = null;
+        nocbhafkajj_ = null;
+        nocbhafkajjBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
+     * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
      */
-    public POGOProtos.Rpc.AwardedGymBadge.Builder getEoilecekhdnBuilder() {
+    public POGOProtos.Rpc.KEGNPKMJHED.Builder getNocbhafkajjBuilder() {
       
       onChanged();
-      return getEoilecekhdnFieldBuilder().getBuilder();
+      return getNocbhafkajjFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
+     * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
      */
-    public POGOProtos.Rpc.AwardedGymBadgeOrBuilder getEoilecekhdnOrBuilder() {
-      if (eoilecekhdnBuilder_ != null) {
-        return eoilecekhdnBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.KEGNPKMJHEDOrBuilder getNocbhafkajjOrBuilder() {
+      if (nocbhafkajjBuilder_ != null) {
+        return nocbhafkajjBuilder_.getMessageOrBuilder();
       } else {
-        return eoilecekhdn_ == null ?
-            POGOProtos.Rpc.AwardedGymBadge.getDefaultInstance() : eoilecekhdn_;
+        return nocbhafkajj_ == null ?
+            POGOProtos.Rpc.KEGNPKMJHED.getDefaultInstance() : nocbhafkajj_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AwardedGymBadge eoilecekhdn = 8;</code>
+     * <code>.POGOProtos.Rpc.KEGNPKMJHED nocbhafkajj = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AwardedGymBadge, POGOProtos.Rpc.AwardedGymBadge.Builder, POGOProtos.Rpc.AwardedGymBadgeOrBuilder> 
-        getEoilecekhdnFieldBuilder() {
-      if (eoilecekhdnBuilder_ == null) {
-        eoilecekhdnBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.AwardedGymBadge, POGOProtos.Rpc.AwardedGymBadge.Builder, POGOProtos.Rpc.AwardedGymBadgeOrBuilder>(
-                getEoilecekhdn(),
+        POGOProtos.Rpc.KEGNPKMJHED, POGOProtos.Rpc.KEGNPKMJHED.Builder, POGOProtos.Rpc.KEGNPKMJHEDOrBuilder> 
+        getNocbhafkajjFieldBuilder() {
+      if (nocbhafkajjBuilder_ == null) {
+        nocbhafkajjBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.KEGNPKMJHED, POGOProtos.Rpc.KEGNPKMJHED.Builder, POGOProtos.Rpc.KEGNPKMJHEDOrBuilder>(
+                getNocbhafkajj(),
                 getParentForChildren(),
                 isClean());
-        eoilecekhdn_ = null;
+        nocbhafkajj_ = null;
       }
-      return eoilecekhdnBuilder_;
+      return nocbhafkajjBuilder_;
     }
 
-    private POGOProtos.Rpc.LootProto kmiiammpfgf_;
+    private POGOProtos.Rpc.JMFCJOMHILG jnamleecobg_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> kmiiammpfgfBuilder_;
+        POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder> jnamleecobgBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
-     * @return Whether the kmiiammpfgf field is set.
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
+     * @return Whether the jnamleecobg field is set.
      */
-    public boolean hasKmiiammpfgf() {
-      return kmiiammpfgfBuilder_ != null || kmiiammpfgf_ != null;
+    public boolean hasJnamleecobg() {
+      return jnamleecobgBuilder_ != null || jnamleecobg_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
-     * @return The kmiiammpfgf.
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
+     * @return The jnamleecobg.
      */
-    public POGOProtos.Rpc.LootProto getKmiiammpfgf() {
-      if (kmiiammpfgfBuilder_ == null) {
-        return kmiiammpfgf_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : kmiiammpfgf_;
+    public POGOProtos.Rpc.JMFCJOMHILG getJnamleecobg() {
+      if (jnamleecobgBuilder_ == null) {
+        return jnamleecobg_ == null ? POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : jnamleecobg_;
       } else {
-        return kmiiammpfgfBuilder_.getMessage();
+        return jnamleecobgBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
      */
-    public Builder setKmiiammpfgf(POGOProtos.Rpc.LootProto value) {
-      if (kmiiammpfgfBuilder_ == null) {
+    public Builder setJnamleecobg(POGOProtos.Rpc.JMFCJOMHILG value) {
+      if (jnamleecobgBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        kmiiammpfgf_ = value;
+        jnamleecobg_ = value;
         onChanged();
       } else {
-        kmiiammpfgfBuilder_.setMessage(value);
+        jnamleecobgBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
      */
-    public Builder setKmiiammpfgf(
-        POGOProtos.Rpc.LootProto.Builder builderForValue) {
-      if (kmiiammpfgfBuilder_ == null) {
-        kmiiammpfgf_ = builderForValue.build();
+    public Builder setJnamleecobg(
+        POGOProtos.Rpc.JMFCJOMHILG.Builder builderForValue) {
+      if (jnamleecobgBuilder_ == null) {
+        jnamleecobg_ = builderForValue.build();
         onChanged();
       } else {
-        kmiiammpfgfBuilder_.setMessage(builderForValue.build());
+        jnamleecobgBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
      */
-    public Builder mergeKmiiammpfgf(POGOProtos.Rpc.LootProto value) {
-      if (kmiiammpfgfBuilder_ == null) {
-        if (kmiiammpfgf_ != null) {
-          kmiiammpfgf_ =
-            POGOProtos.Rpc.LootProto.newBuilder(kmiiammpfgf_).mergeFrom(value).buildPartial();
+    public Builder mergeJnamleecobg(POGOProtos.Rpc.JMFCJOMHILG value) {
+      if (jnamleecobgBuilder_ == null) {
+        if (jnamleecobg_ != null) {
+          jnamleecobg_ =
+            POGOProtos.Rpc.JMFCJOMHILG.newBuilder(jnamleecobg_).mergeFrom(value).buildPartial();
         } else {
-          kmiiammpfgf_ = value;
+          jnamleecobg_ = value;
         }
         onChanged();
       } else {
-        kmiiammpfgfBuilder_.mergeFrom(value);
+        jnamleecobgBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
      */
-    public Builder clearKmiiammpfgf() {
-      if (kmiiammpfgfBuilder_ == null) {
-        kmiiammpfgf_ = null;
+    public Builder clearJnamleecobg() {
+      if (jnamleecobgBuilder_ == null) {
+        jnamleecobg_ = null;
         onChanged();
       } else {
-        kmiiammpfgf_ = null;
-        kmiiammpfgfBuilder_ = null;
+        jnamleecobg_ = null;
+        jnamleecobgBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
      */
-    public POGOProtos.Rpc.LootProto.Builder getKmiiammpfgfBuilder() {
+    public POGOProtos.Rpc.JMFCJOMHILG.Builder getJnamleecobgBuilder() {
       
       onChanged();
-      return getKmiiammpfgfFieldBuilder().getBuilder();
+      return getJnamleecobgFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
      */
-    public POGOProtos.Rpc.LootProtoOrBuilder getKmiiammpfgfOrBuilder() {
-      if (kmiiammpfgfBuilder_ != null) {
-        return kmiiammpfgfBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.JMFCJOMHILGOrBuilder getJnamleecobgOrBuilder() {
+      if (jnamleecobgBuilder_ != null) {
+        return jnamleecobgBuilder_.getMessageOrBuilder();
       } else {
-        return kmiiammpfgf_ == null ?
-            POGOProtos.Rpc.LootProto.getDefaultInstance() : kmiiammpfgf_;
+        return jnamleecobg_ == null ?
+            POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : jnamleecobg_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto kmiiammpfgf = 9;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG jnamleecobg = 9;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> 
-        getKmiiammpfgfFieldBuilder() {
-      if (kmiiammpfgfBuilder_ == null) {
-        kmiiammpfgfBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder>(
-                getKmiiammpfgf(),
+        POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder> 
+        getJnamleecobgFieldBuilder() {
+      if (jnamleecobgBuilder_ == null) {
+        jnamleecobgBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder>(
+                getJnamleecobg(),
                 getParentForChildren(),
                 isClean());
-        kmiiammpfgf_ = null;
+        jnamleecobg_ = null;
       }
-      return kmiiammpfgfBuilder_;
+      return jnamleecobgBuilder_;
     }
 
-    private POGOProtos.Rpc.LootProto eeaeeebiebe_;
+    private POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> eeaeeebiebeBuilder_;
+        POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder> ekcehemcpnaBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
-     * @return Whether the eeaeeebiebe field is set.
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
+     * @return Whether the ekcehemcpna field is set.
      */
-    public boolean hasEeaeeebiebe() {
-      return eeaeeebiebeBuilder_ != null || eeaeeebiebe_ != null;
+    public boolean hasEkcehemcpna() {
+      return ekcehemcpnaBuilder_ != null || ekcehemcpna_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
-     * @return The eeaeeebiebe.
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
+     * @return The ekcehemcpna.
      */
-    public POGOProtos.Rpc.LootProto getEeaeeebiebe() {
-      if (eeaeeebiebeBuilder_ == null) {
-        return eeaeeebiebe_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : eeaeeebiebe_;
+    public POGOProtos.Rpc.JMFCJOMHILG getEkcehemcpna() {
+      if (ekcehemcpnaBuilder_ == null) {
+        return ekcehemcpna_ == null ? POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : ekcehemcpna_;
       } else {
-        return eeaeeebiebeBuilder_.getMessage();
+        return ekcehemcpnaBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
      */
-    public Builder setEeaeeebiebe(POGOProtos.Rpc.LootProto value) {
-      if (eeaeeebiebeBuilder_ == null) {
+    public Builder setEkcehemcpna(POGOProtos.Rpc.JMFCJOMHILG value) {
+      if (ekcehemcpnaBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        eeaeeebiebe_ = value;
+        ekcehemcpna_ = value;
         onChanged();
       } else {
-        eeaeeebiebeBuilder_.setMessage(value);
+        ekcehemcpnaBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
      */
-    public Builder setEeaeeebiebe(
-        POGOProtos.Rpc.LootProto.Builder builderForValue) {
-      if (eeaeeebiebeBuilder_ == null) {
-        eeaeeebiebe_ = builderForValue.build();
+    public Builder setEkcehemcpna(
+        POGOProtos.Rpc.JMFCJOMHILG.Builder builderForValue) {
+      if (ekcehemcpnaBuilder_ == null) {
+        ekcehemcpna_ = builderForValue.build();
         onChanged();
       } else {
-        eeaeeebiebeBuilder_.setMessage(builderForValue.build());
+        ekcehemcpnaBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
      */
-    public Builder mergeEeaeeebiebe(POGOProtos.Rpc.LootProto value) {
-      if (eeaeeebiebeBuilder_ == null) {
-        if (eeaeeebiebe_ != null) {
-          eeaeeebiebe_ =
-            POGOProtos.Rpc.LootProto.newBuilder(eeaeeebiebe_).mergeFrom(value).buildPartial();
+    public Builder mergeEkcehemcpna(POGOProtos.Rpc.JMFCJOMHILG value) {
+      if (ekcehemcpnaBuilder_ == null) {
+        if (ekcehemcpna_ != null) {
+          ekcehemcpna_ =
+            POGOProtos.Rpc.JMFCJOMHILG.newBuilder(ekcehemcpna_).mergeFrom(value).buildPartial();
         } else {
-          eeaeeebiebe_ = value;
+          ekcehemcpna_ = value;
         }
         onChanged();
       } else {
-        eeaeeebiebeBuilder_.mergeFrom(value);
+        ekcehemcpnaBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
      */
-    public Builder clearEeaeeebiebe() {
-      if (eeaeeebiebeBuilder_ == null) {
-        eeaeeebiebe_ = null;
+    public Builder clearEkcehemcpna() {
+      if (ekcehemcpnaBuilder_ == null) {
+        ekcehemcpna_ = null;
         onChanged();
       } else {
-        eeaeeebiebe_ = null;
-        eeaeeebiebeBuilder_ = null;
+        ekcehemcpna_ = null;
+        ekcehemcpnaBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
      */
-    public POGOProtos.Rpc.LootProto.Builder getEeaeeebiebeBuilder() {
+    public POGOProtos.Rpc.JMFCJOMHILG.Builder getEkcehemcpnaBuilder() {
       
       onChanged();
-      return getEeaeeebiebeFieldBuilder().getBuilder();
+      return getEkcehemcpnaFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
      */
-    public POGOProtos.Rpc.LootProtoOrBuilder getEeaeeebiebeOrBuilder() {
-      if (eeaeeebiebeBuilder_ != null) {
-        return eeaeeebiebeBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.JMFCJOMHILGOrBuilder getEkcehemcpnaOrBuilder() {
+      if (ekcehemcpnaBuilder_ != null) {
+        return ekcehemcpnaBuilder_.getMessageOrBuilder();
       } else {
-        return eeaeeebiebe_ == null ?
-            POGOProtos.Rpc.LootProto.getDefaultInstance() : eeaeeebiebe_;
+        return ekcehemcpna_ == null ?
+            POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : ekcehemcpna_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto eeaeeebiebe = 10;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG ekcehemcpna = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> 
-        getEeaeeebiebeFieldBuilder() {
-      if (eeaeeebiebeBuilder_ == null) {
-        eeaeeebiebeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder>(
-                getEeaeeebiebe(),
+        POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder> 
+        getEkcehemcpnaFieldBuilder() {
+      if (ekcehemcpnaBuilder_ == null) {
+        ekcehemcpnaBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder>(
+                getEkcehemcpna(),
                 getParentForChildren(),
                 isClean());
-        eeaeeebiebe_ = null;
+        ekcehemcpna_ = null;
       }
-      return eeaeeebiebeBuilder_;
+      return ekcehemcpnaBuilder_;
     }
 
-    private int ndgehgpakno_ ;
+    private int ajhjinaopoh_ ;
     /**
-     * <code>int32 ndgehgpakno = 11;</code>
-     * @return The ndgehgpakno.
+     * <code>int32 ajhjinaopoh = 11;</code>
+     * @return The ajhjinaopoh.
      */
-    @java.lang.Override
-    public int getNdgehgpakno() {
-      return ndgehgpakno_;
+    public int getAjhjinaopoh() {
+      return ajhjinaopoh_;
     }
     /**
-     * <code>int32 ndgehgpakno = 11;</code>
-     * @param value The ndgehgpakno to set.
+     * <code>int32 ajhjinaopoh = 11;</code>
+     * @param value The ajhjinaopoh to set.
      * @return This builder for chaining.
      */
-    public Builder setNdgehgpakno(int value) {
+    public Builder setAjhjinaopoh(int value) {
       
-      ndgehgpakno_ = value;
+      ajhjinaopoh_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 ndgehgpakno = 11;</code>
+     * <code>int32 ajhjinaopoh = 11;</code>
      * @return This builder for chaining.
      */
-    public Builder clearNdgehgpakno() {
+    public Builder clearAjhjinaopoh() {
       
-      ndgehgpakno_ = 0;
+      ajhjinaopoh_ = 0;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.LootProto aihnmahefmi_;
+    private POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> aihnmahefmiBuilder_;
+        POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder> mjpeblmhljaBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
-     * @return Whether the aihnmahefmi field is set.
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
+     * @return Whether the mjpeblmhlja field is set.
      */
-    public boolean hasAihnmahefmi() {
-      return aihnmahefmiBuilder_ != null || aihnmahefmi_ != null;
+    public boolean hasMjpeblmhlja() {
+      return mjpeblmhljaBuilder_ != null || mjpeblmhlja_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
-     * @return The aihnmahefmi.
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
+     * @return The mjpeblmhlja.
      */
-    public POGOProtos.Rpc.LootProto getAihnmahefmi() {
-      if (aihnmahefmiBuilder_ == null) {
-        return aihnmahefmi_ == null ? POGOProtos.Rpc.LootProto.getDefaultInstance() : aihnmahefmi_;
+    public POGOProtos.Rpc.JMFCJOMHILG getMjpeblmhlja() {
+      if (mjpeblmhljaBuilder_ == null) {
+        return mjpeblmhlja_ == null ? POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : mjpeblmhlja_;
       } else {
-        return aihnmahefmiBuilder_.getMessage();
+        return mjpeblmhljaBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
      */
-    public Builder setAihnmahefmi(POGOProtos.Rpc.LootProto value) {
-      if (aihnmahefmiBuilder_ == null) {
+    public Builder setMjpeblmhlja(POGOProtos.Rpc.JMFCJOMHILG value) {
+      if (mjpeblmhljaBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        aihnmahefmi_ = value;
+        mjpeblmhlja_ = value;
         onChanged();
       } else {
-        aihnmahefmiBuilder_.setMessage(value);
+        mjpeblmhljaBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
      */
-    public Builder setAihnmahefmi(
-        POGOProtos.Rpc.LootProto.Builder builderForValue) {
-      if (aihnmahefmiBuilder_ == null) {
-        aihnmahefmi_ = builderForValue.build();
+    public Builder setMjpeblmhlja(
+        POGOProtos.Rpc.JMFCJOMHILG.Builder builderForValue) {
+      if (mjpeblmhljaBuilder_ == null) {
+        mjpeblmhlja_ = builderForValue.build();
         onChanged();
       } else {
-        aihnmahefmiBuilder_.setMessage(builderForValue.build());
+        mjpeblmhljaBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
      */
-    public Builder mergeAihnmahefmi(POGOProtos.Rpc.LootProto value) {
-      if (aihnmahefmiBuilder_ == null) {
-        if (aihnmahefmi_ != null) {
-          aihnmahefmi_ =
-            POGOProtos.Rpc.LootProto.newBuilder(aihnmahefmi_).mergeFrom(value).buildPartial();
+    public Builder mergeMjpeblmhlja(POGOProtos.Rpc.JMFCJOMHILG value) {
+      if (mjpeblmhljaBuilder_ == null) {
+        if (mjpeblmhlja_ != null) {
+          mjpeblmhlja_ =
+            POGOProtos.Rpc.JMFCJOMHILG.newBuilder(mjpeblmhlja_).mergeFrom(value).buildPartial();
         } else {
-          aihnmahefmi_ = value;
+          mjpeblmhlja_ = value;
         }
         onChanged();
       } else {
-        aihnmahefmiBuilder_.mergeFrom(value);
+        mjpeblmhljaBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
      */
-    public Builder clearAihnmahefmi() {
-      if (aihnmahefmiBuilder_ == null) {
-        aihnmahefmi_ = null;
+    public Builder clearMjpeblmhlja() {
+      if (mjpeblmhljaBuilder_ == null) {
+        mjpeblmhlja_ = null;
         onChanged();
       } else {
-        aihnmahefmi_ = null;
-        aihnmahefmiBuilder_ = null;
+        mjpeblmhlja_ = null;
+        mjpeblmhljaBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
      */
-    public POGOProtos.Rpc.LootProto.Builder getAihnmahefmiBuilder() {
+    public POGOProtos.Rpc.JMFCJOMHILG.Builder getMjpeblmhljaBuilder() {
       
       onChanged();
-      return getAihnmahefmiFieldBuilder().getBuilder();
+      return getMjpeblmhljaFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
      */
-    public POGOProtos.Rpc.LootProtoOrBuilder getAihnmahefmiOrBuilder() {
-      if (aihnmahefmiBuilder_ != null) {
-        return aihnmahefmiBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.JMFCJOMHILGOrBuilder getMjpeblmhljaOrBuilder() {
+      if (mjpeblmhljaBuilder_ != null) {
+        return mjpeblmhljaBuilder_.getMessageOrBuilder();
       } else {
-        return aihnmahefmi_ == null ?
-            POGOProtos.Rpc.LootProto.getDefaultInstance() : aihnmahefmi_;
+        return mjpeblmhlja_ == null ?
+            POGOProtos.Rpc.JMFCJOMHILG.getDefaultInstance() : mjpeblmhlja_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.LootProto aihnmahefmi = 12;</code>
+     * <code>.POGOProtos.Rpc.JMFCJOMHILG mjpeblmhlja = 12;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder> 
-        getAihnmahefmiFieldBuilder() {
-      if (aihnmahefmiBuilder_ == null) {
-        aihnmahefmiBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.LootProto, POGOProtos.Rpc.LootProto.Builder, POGOProtos.Rpc.LootProtoOrBuilder>(
-                getAihnmahefmi(),
+        POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder> 
+        getMjpeblmhljaFieldBuilder() {
+      if (mjpeblmhljaBuilder_ == null) {
+        mjpeblmhljaBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.JMFCJOMHILG, POGOProtos.Rpc.JMFCJOMHILG.Builder, POGOProtos.Rpc.JMFCJOMHILGOrBuilder>(
+                getMjpeblmhlja(),
                 getParentForChildren(),
                 isClean());
-        aihnmahefmi_ = null;
+        mjpeblmhlja_ = null;
       }
-      return aihnmahefmiBuilder_;
+      return mjpeblmhljaBuilder_;
     }
 
-    private java.lang.Object lndigkkjfml_ = "";
+    private java.lang.Object dlangcndbfi_ = "";
     /**
-     * <code>string lndigkkjfml = 13;</code>
-     * @return The lndigkkjfml.
+     * <code>string dlangcndbfi = 13;</code>
+     * @return The dlangcndbfi.
      */
-    public java.lang.String getLndigkkjfml() {
-      java.lang.Object ref = lndigkkjfml_;
+    public java.lang.String getDlangcndbfi() {
+      java.lang.Object ref = dlangcndbfi_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        lndigkkjfml_ = s;
+        dlangcndbfi_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string lndigkkjfml = 13;</code>
-     * @return The bytes for lndigkkjfml.
+     * <code>string dlangcndbfi = 13;</code>
+     * @return The bytes for dlangcndbfi.
      */
     public com.google.protobuf.ByteString
-        getLndigkkjfmlBytes() {
-      java.lang.Object ref = lndigkkjfml_;
+        getDlangcndbfiBytes() {
+      java.lang.Object ref = dlangcndbfi_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        lndigkkjfml_ = b;
+        dlangcndbfi_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string lndigkkjfml = 13;</code>
-     * @param value The lndigkkjfml to set.
+     * <code>string dlangcndbfi = 13;</code>
+     * @param value The dlangcndbfi to set.
      * @return This builder for chaining.
      */
-    public Builder setLndigkkjfml(
+    public Builder setDlangcndbfi(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      lndigkkjfml_ = value;
+      dlangcndbfi_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string lndigkkjfml = 13;</code>
+     * <code>string dlangcndbfi = 13;</code>
      * @return This builder for chaining.
      */
-    public Builder clearLndigkkjfml() {
+    public Builder clearDlangcndbfi() {
       
-      lndigkkjfml_ = getDefaultInstance().getLndigkkjfml();
+      dlangcndbfi_ = getDefaultInstance().getDlangcndbfi();
       onChanged();
       return this;
     }
     /**
-     * <code>string lndigkkjfml = 13;</code>
-     * @param value The bytes for lndigkkjfml to set.
+     * <code>string dlangcndbfi = 13;</code>
+     * @param value The bytes for dlangcndbfi to set.
      * @return This builder for chaining.
      */
-    public Builder setLndigkkjfmlBytes(
+    public Builder setDlangcndbfiBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      lndigkkjfml_ = value;
+      dlangcndbfi_ = value;
       onChanged();
       return this;
     }
 
-    private POGOProtos.Rpc.ClientQuestProto hknmebbppme_;
+    private POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ClientQuestProto, POGOProtos.Rpc.ClientQuestProto.Builder, POGOProtos.Rpc.ClientQuestProtoOrBuilder> hknmebbppmeBuilder_;
+        POGOProtos.Rpc.CMNKJHNKMCG, POGOProtos.Rpc.CMNKJHNKMCG.Builder, POGOProtos.Rpc.CMNKJHNKMCGOrBuilder> nlibgackfjpBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
-     * @return Whether the hknmebbppme field is set.
+     * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
+     * @return Whether the nlibgackfjp field is set.
      */
-    public boolean hasHknmebbppme() {
-      return hknmebbppmeBuilder_ != null || hknmebbppme_ != null;
+    public boolean hasNlibgackfjp() {
+      return nlibgackfjpBuilder_ != null || nlibgackfjp_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
-     * @return The hknmebbppme.
+     * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
+     * @return The nlibgackfjp.
      */
-    public POGOProtos.Rpc.ClientQuestProto getHknmebbppme() {
-      if (hknmebbppmeBuilder_ == null) {
-        return hknmebbppme_ == null ? POGOProtos.Rpc.ClientQuestProto.getDefaultInstance() : hknmebbppme_;
+    public POGOProtos.Rpc.CMNKJHNKMCG getNlibgackfjp() {
+      if (nlibgackfjpBuilder_ == null) {
+        return nlibgackfjp_ == null ? POGOProtos.Rpc.CMNKJHNKMCG.getDefaultInstance() : nlibgackfjp_;
       } else {
-        return hknmebbppmeBuilder_.getMessage();
+        return nlibgackfjpBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
+     * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
      */
-    public Builder setHknmebbppme(POGOProtos.Rpc.ClientQuestProto value) {
-      if (hknmebbppmeBuilder_ == null) {
+    public Builder setNlibgackfjp(POGOProtos.Rpc.CMNKJHNKMCG value) {
+      if (nlibgackfjpBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        hknmebbppme_ = value;
+        nlibgackfjp_ = value;
         onChanged();
       } else {
-        hknmebbppmeBuilder_.setMessage(value);
+        nlibgackfjpBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
+     * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
      */
-    public Builder setHknmebbppme(
-        POGOProtos.Rpc.ClientQuestProto.Builder builderForValue) {
-      if (hknmebbppmeBuilder_ == null) {
-        hknmebbppme_ = builderForValue.build();
+    public Builder setNlibgackfjp(
+        POGOProtos.Rpc.CMNKJHNKMCG.Builder builderForValue) {
+      if (nlibgackfjpBuilder_ == null) {
+        nlibgackfjp_ = builderForValue.build();
         onChanged();
       } else {
-        hknmebbppmeBuilder_.setMessage(builderForValue.build());
+        nlibgackfjpBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
+     * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
      */
-    public Builder mergeHknmebbppme(POGOProtos.Rpc.ClientQuestProto value) {
-      if (hknmebbppmeBuilder_ == null) {
-        if (hknmebbppme_ != null) {
-          hknmebbppme_ =
-            POGOProtos.Rpc.ClientQuestProto.newBuilder(hknmebbppme_).mergeFrom(value).buildPartial();
+    public Builder mergeNlibgackfjp(POGOProtos.Rpc.CMNKJHNKMCG value) {
+      if (nlibgackfjpBuilder_ == null) {
+        if (nlibgackfjp_ != null) {
+          nlibgackfjp_ =
+            POGOProtos.Rpc.CMNKJHNKMCG.newBuilder(nlibgackfjp_).mergeFrom(value).buildPartial();
         } else {
-          hknmebbppme_ = value;
+          nlibgackfjp_ = value;
         }
         onChanged();
       } else {
-        hknmebbppmeBuilder_.mergeFrom(value);
+        nlibgackfjpBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
+     * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
      */
-    public Builder clearHknmebbppme() {
-      if (hknmebbppmeBuilder_ == null) {
-        hknmebbppme_ = null;
+    public Builder clearNlibgackfjp() {
+      if (nlibgackfjpBuilder_ == null) {
+        nlibgackfjp_ = null;
         onChanged();
       } else {
-        hknmebbppme_ = null;
-        hknmebbppmeBuilder_ = null;
+        nlibgackfjp_ = null;
+        nlibgackfjpBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
+     * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
      */
-    public POGOProtos.Rpc.ClientQuestProto.Builder getHknmebbppmeBuilder() {
+    public POGOProtos.Rpc.CMNKJHNKMCG.Builder getNlibgackfjpBuilder() {
       
       onChanged();
-      return getHknmebbppmeFieldBuilder().getBuilder();
+      return getNlibgackfjpFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
+     * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
      */
-    public POGOProtos.Rpc.ClientQuestProtoOrBuilder getHknmebbppmeOrBuilder() {
-      if (hknmebbppmeBuilder_ != null) {
-        return hknmebbppmeBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.CMNKJHNKMCGOrBuilder getNlibgackfjpOrBuilder() {
+      if (nlibgackfjpBuilder_ != null) {
+        return nlibgackfjpBuilder_.getMessageOrBuilder();
       } else {
-        return hknmebbppme_ == null ?
-            POGOProtos.Rpc.ClientQuestProto.getDefaultInstance() : hknmebbppme_;
+        return nlibgackfjp_ == null ?
+            POGOProtos.Rpc.CMNKJHNKMCG.getDefaultInstance() : nlibgackfjp_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.ClientQuestProto hknmebbppme = 14;</code>
+     * <code>.POGOProtos.Rpc.CMNKJHNKMCG nlibgackfjp = 14;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.ClientQuestProto, POGOProtos.Rpc.ClientQuestProto.Builder, POGOProtos.Rpc.ClientQuestProtoOrBuilder> 
-        getHknmebbppmeFieldBuilder() {
-      if (hknmebbppmeBuilder_ == null) {
-        hknmebbppmeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.ClientQuestProto, POGOProtos.Rpc.ClientQuestProto.Builder, POGOProtos.Rpc.ClientQuestProtoOrBuilder>(
-                getHknmebbppme(),
+        POGOProtos.Rpc.CMNKJHNKMCG, POGOProtos.Rpc.CMNKJHNKMCG.Builder, POGOProtos.Rpc.CMNKJHNKMCGOrBuilder> 
+        getNlibgackfjpFieldBuilder() {
+      if (nlibgackfjpBuilder_ == null) {
+        nlibgackfjpBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.CMNKJHNKMCG, POGOProtos.Rpc.CMNKJHNKMCG.Builder, POGOProtos.Rpc.CMNKJHNKMCGOrBuilder>(
+                getNlibgackfjp(),
                 getParentForChildren(),
                 isClean());
-        hknmebbppme_ = null;
+        nlibgackfjp_ = null;
       }
-      return hknmebbppmeBuilder_;
+      return nlibgackfjpBuilder_;
     }
 
-    private POGOProtos.Rpc.GiftBoxProto ppgijddcmhe_;
+    private POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GiftBoxProto, POGOProtos.Rpc.GiftBoxProto.Builder, POGOProtos.Rpc.GiftBoxProtoOrBuilder> ppgijddcmheBuilder_;
+        POGOProtos.Rpc.DMOPODHBEFO, POGOProtos.Rpc.DMOPODHBEFO.Builder, POGOProtos.Rpc.DMOPODHBEFOOrBuilder> koodbdemdfdBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
-     * @return Whether the ppgijddcmhe field is set.
+     * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
+     * @return Whether the koodbdemdfd field is set.
      */
-    public boolean hasPpgijddcmhe() {
-      return ppgijddcmheBuilder_ != null || ppgijddcmhe_ != null;
+    public boolean hasKoodbdemdfd() {
+      return koodbdemdfdBuilder_ != null || koodbdemdfd_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
-     * @return The ppgijddcmhe.
+     * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
+     * @return The koodbdemdfd.
      */
-    public POGOProtos.Rpc.GiftBoxProto getPpgijddcmhe() {
-      if (ppgijddcmheBuilder_ == null) {
-        return ppgijddcmhe_ == null ? POGOProtos.Rpc.GiftBoxProto.getDefaultInstance() : ppgijddcmhe_;
+    public POGOProtos.Rpc.DMOPODHBEFO getKoodbdemdfd() {
+      if (koodbdemdfdBuilder_ == null) {
+        return koodbdemdfd_ == null ? POGOProtos.Rpc.DMOPODHBEFO.getDefaultInstance() : koodbdemdfd_;
       } else {
-        return ppgijddcmheBuilder_.getMessage();
+        return koodbdemdfdBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
+     * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
      */
-    public Builder setPpgijddcmhe(POGOProtos.Rpc.GiftBoxProto value) {
-      if (ppgijddcmheBuilder_ == null) {
+    public Builder setKoodbdemdfd(POGOProtos.Rpc.DMOPODHBEFO value) {
+      if (koodbdemdfdBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ppgijddcmhe_ = value;
+        koodbdemdfd_ = value;
         onChanged();
       } else {
-        ppgijddcmheBuilder_.setMessage(value);
+        koodbdemdfdBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
+     * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
      */
-    public Builder setPpgijddcmhe(
-        POGOProtos.Rpc.GiftBoxProto.Builder builderForValue) {
-      if (ppgijddcmheBuilder_ == null) {
-        ppgijddcmhe_ = builderForValue.build();
+    public Builder setKoodbdemdfd(
+        POGOProtos.Rpc.DMOPODHBEFO.Builder builderForValue) {
+      if (koodbdemdfdBuilder_ == null) {
+        koodbdemdfd_ = builderForValue.build();
         onChanged();
       } else {
-        ppgijddcmheBuilder_.setMessage(builderForValue.build());
+        koodbdemdfdBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
+     * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
      */
-    public Builder mergePpgijddcmhe(POGOProtos.Rpc.GiftBoxProto value) {
-      if (ppgijddcmheBuilder_ == null) {
-        if (ppgijddcmhe_ != null) {
-          ppgijddcmhe_ =
-            POGOProtos.Rpc.GiftBoxProto.newBuilder(ppgijddcmhe_).mergeFrom(value).buildPartial();
+    public Builder mergeKoodbdemdfd(POGOProtos.Rpc.DMOPODHBEFO value) {
+      if (koodbdemdfdBuilder_ == null) {
+        if (koodbdemdfd_ != null) {
+          koodbdemdfd_ =
+            POGOProtos.Rpc.DMOPODHBEFO.newBuilder(koodbdemdfd_).mergeFrom(value).buildPartial();
         } else {
-          ppgijddcmhe_ = value;
+          koodbdemdfd_ = value;
         }
         onChanged();
       } else {
-        ppgijddcmheBuilder_.mergeFrom(value);
+        koodbdemdfdBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
+     * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
      */
-    public Builder clearPpgijddcmhe() {
-      if (ppgijddcmheBuilder_ == null) {
-        ppgijddcmhe_ = null;
+    public Builder clearKoodbdemdfd() {
+      if (koodbdemdfdBuilder_ == null) {
+        koodbdemdfd_ = null;
         onChanged();
       } else {
-        ppgijddcmhe_ = null;
-        ppgijddcmheBuilder_ = null;
+        koodbdemdfd_ = null;
+        koodbdemdfdBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
+     * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
      */
-    public POGOProtos.Rpc.GiftBoxProto.Builder getPpgijddcmheBuilder() {
+    public POGOProtos.Rpc.DMOPODHBEFO.Builder getKoodbdemdfdBuilder() {
       
       onChanged();
-      return getPpgijddcmheFieldBuilder().getBuilder();
+      return getKoodbdemdfdFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
+     * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
      */
-    public POGOProtos.Rpc.GiftBoxProtoOrBuilder getPpgijddcmheOrBuilder() {
-      if (ppgijddcmheBuilder_ != null) {
-        return ppgijddcmheBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.DMOPODHBEFOOrBuilder getKoodbdemdfdOrBuilder() {
+      if (koodbdemdfdBuilder_ != null) {
+        return koodbdemdfdBuilder_.getMessageOrBuilder();
       } else {
-        return ppgijddcmhe_ == null ?
-            POGOProtos.Rpc.GiftBoxProto.getDefaultInstance() : ppgijddcmhe_;
+        return koodbdemdfd_ == null ?
+            POGOProtos.Rpc.DMOPODHBEFO.getDefaultInstance() : koodbdemdfd_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.GiftBoxProto ppgijddcmhe = 15;</code>
+     * <code>.POGOProtos.Rpc.DMOPODHBEFO koodbdemdfd = 15;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.GiftBoxProto, POGOProtos.Rpc.GiftBoxProto.Builder, POGOProtos.Rpc.GiftBoxProtoOrBuilder> 
-        getPpgijddcmheFieldBuilder() {
-      if (ppgijddcmheBuilder_ == null) {
-        ppgijddcmheBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.GiftBoxProto, POGOProtos.Rpc.GiftBoxProto.Builder, POGOProtos.Rpc.GiftBoxProtoOrBuilder>(
-                getPpgijddcmhe(),
+        POGOProtos.Rpc.DMOPODHBEFO, POGOProtos.Rpc.DMOPODHBEFO.Builder, POGOProtos.Rpc.DMOPODHBEFOOrBuilder> 
+        getKoodbdemdfdFieldBuilder() {
+      if (koodbdemdfdBuilder_ == null) {
+        koodbdemdfdBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.DMOPODHBEFO, POGOProtos.Rpc.DMOPODHBEFO.Builder, POGOProtos.Rpc.DMOPODHBEFOOrBuilder>(
+                getKoodbdemdfd(),
                 getParentForChildren(),
                 isClean());
-        ppgijddcmhe_ = null;
+        koodbdemdfd_ = null;
       }
-      return ppgijddcmheBuilder_;
+      return koodbdemdfdBuilder_;
     }
 
-    private POGOProtos.Rpc.AdDetails fofagloikmg_;
+    private POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo_;
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AdDetails, POGOProtos.Rpc.AdDetails.Builder, POGOProtos.Rpc.AdDetailsOrBuilder> fofagloikmgBuilder_;
+        POGOProtos.Rpc.MOIEDHEMGLO, POGOProtos.Rpc.MOIEDHEMGLO.Builder, POGOProtos.Rpc.MOIEDHEMGLOOrBuilder> jebicoepaloBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
-     * @return Whether the fofagloikmg field is set.
+     * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
+     * @return Whether the jebicoepalo field is set.
      */
-    public boolean hasFofagloikmg() {
-      return fofagloikmgBuilder_ != null || fofagloikmg_ != null;
+    public boolean hasJebicoepalo() {
+      return jebicoepaloBuilder_ != null || jebicoepalo_ != null;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
-     * @return The fofagloikmg.
+     * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
+     * @return The jebicoepalo.
      */
-    public POGOProtos.Rpc.AdDetails getFofagloikmg() {
-      if (fofagloikmgBuilder_ == null) {
-        return fofagloikmg_ == null ? POGOProtos.Rpc.AdDetails.getDefaultInstance() : fofagloikmg_;
+    public POGOProtos.Rpc.MOIEDHEMGLO getJebicoepalo() {
+      if (jebicoepaloBuilder_ == null) {
+        return jebicoepalo_ == null ? POGOProtos.Rpc.MOIEDHEMGLO.getDefaultInstance() : jebicoepalo_;
       } else {
-        return fofagloikmgBuilder_.getMessage();
+        return jebicoepaloBuilder_.getMessage();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
+     * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
      */
-    public Builder setFofagloikmg(POGOProtos.Rpc.AdDetails value) {
-      if (fofagloikmgBuilder_ == null) {
+    public Builder setJebicoepalo(POGOProtos.Rpc.MOIEDHEMGLO value) {
+      if (jebicoepaloBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        fofagloikmg_ = value;
+        jebicoepalo_ = value;
         onChanged();
       } else {
-        fofagloikmgBuilder_.setMessage(value);
+        jebicoepaloBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
+     * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
      */
-    public Builder setFofagloikmg(
-        POGOProtos.Rpc.AdDetails.Builder builderForValue) {
-      if (fofagloikmgBuilder_ == null) {
-        fofagloikmg_ = builderForValue.build();
+    public Builder setJebicoepalo(
+        POGOProtos.Rpc.MOIEDHEMGLO.Builder builderForValue) {
+      if (jebicoepaloBuilder_ == null) {
+        jebicoepalo_ = builderForValue.build();
         onChanged();
       } else {
-        fofagloikmgBuilder_.setMessage(builderForValue.build());
+        jebicoepaloBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
+     * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
      */
-    public Builder mergeFofagloikmg(POGOProtos.Rpc.AdDetails value) {
-      if (fofagloikmgBuilder_ == null) {
-        if (fofagloikmg_ != null) {
-          fofagloikmg_ =
-            POGOProtos.Rpc.AdDetails.newBuilder(fofagloikmg_).mergeFrom(value).buildPartial();
+    public Builder mergeJebicoepalo(POGOProtos.Rpc.MOIEDHEMGLO value) {
+      if (jebicoepaloBuilder_ == null) {
+        if (jebicoepalo_ != null) {
+          jebicoepalo_ =
+            POGOProtos.Rpc.MOIEDHEMGLO.newBuilder(jebicoepalo_).mergeFrom(value).buildPartial();
         } else {
-          fofagloikmg_ = value;
+          jebicoepalo_ = value;
         }
         onChanged();
       } else {
-        fofagloikmgBuilder_.mergeFrom(value);
+        jebicoepaloBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
+     * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
      */
-    public Builder clearFofagloikmg() {
-      if (fofagloikmgBuilder_ == null) {
-        fofagloikmg_ = null;
+    public Builder clearJebicoepalo() {
+      if (jebicoepaloBuilder_ == null) {
+        jebicoepalo_ = null;
         onChanged();
       } else {
-        fofagloikmg_ = null;
-        fofagloikmgBuilder_ = null;
+        jebicoepalo_ = null;
+        jebicoepaloBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
+     * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
      */
-    public POGOProtos.Rpc.AdDetails.Builder getFofagloikmgBuilder() {
+    public POGOProtos.Rpc.MOIEDHEMGLO.Builder getJebicoepaloBuilder() {
       
       onChanged();
-      return getFofagloikmgFieldBuilder().getBuilder();
+      return getJebicoepaloFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
+     * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
      */
-    public POGOProtos.Rpc.AdDetailsOrBuilder getFofagloikmgOrBuilder() {
-      if (fofagloikmgBuilder_ != null) {
-        return fofagloikmgBuilder_.getMessageOrBuilder();
+    public POGOProtos.Rpc.MOIEDHEMGLOOrBuilder getJebicoepaloOrBuilder() {
+      if (jebicoepaloBuilder_ != null) {
+        return jebicoepaloBuilder_.getMessageOrBuilder();
       } else {
-        return fofagloikmg_ == null ?
-            POGOProtos.Rpc.AdDetails.getDefaultInstance() : fofagloikmg_;
+        return jebicoepalo_ == null ?
+            POGOProtos.Rpc.MOIEDHEMGLO.getDefaultInstance() : jebicoepalo_;
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.AdDetails fofagloikmg = 16;</code>
+     * <code>.POGOProtos.Rpc.MOIEDHEMGLO jebicoepalo = 16;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.AdDetails, POGOProtos.Rpc.AdDetails.Builder, POGOProtos.Rpc.AdDetailsOrBuilder> 
-        getFofagloikmgFieldBuilder() {
-      if (fofagloikmgBuilder_ == null) {
-        fofagloikmgBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.AdDetails, POGOProtos.Rpc.AdDetails.Builder, POGOProtos.Rpc.AdDetailsOrBuilder>(
-                getFofagloikmg(),
+        POGOProtos.Rpc.MOIEDHEMGLO, POGOProtos.Rpc.MOIEDHEMGLO.Builder, POGOProtos.Rpc.MOIEDHEMGLOOrBuilder> 
+        getJebicoepaloFieldBuilder() {
+      if (jebicoepaloBuilder_ == null) {
+        jebicoepaloBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            POGOProtos.Rpc.MOIEDHEMGLO, POGOProtos.Rpc.MOIEDHEMGLO.Builder, POGOProtos.Rpc.MOIEDHEMGLOOrBuilder>(
+                getJebicoepalo(),
                 getParentForChildren(),
                 isClean());
-        fofagloikmg_ = null;
+        jebicoepalo_ = null;
       }
-      return fofagloikmgBuilder_;
+      return jebicoepaloBuilder_;
     }
     @java.lang.Override
     public final Builder setUnknownFields(

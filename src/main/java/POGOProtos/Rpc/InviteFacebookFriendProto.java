@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.InviteFacebookFriendProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.InviteFacebookFriendProto}
  */
-public final class InviteFacebookFriendProto extends
+public  final class InviteFacebookFriendProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.InviteFacebookFriendProto)
     InviteFacebookFriendProtoOrBuilder {
@@ -104,7 +100,6 @@ private static final long serialVersionUID = 0L;
    * <code>string fb_access_token = 1;</code>
    * @return The fbAccessToken.
    */
-  @java.lang.Override
   public java.lang.String getFbAccessToken() {
     java.lang.Object ref = fbAccessToken_;
     if (ref instanceof java.lang.String) {
@@ -121,7 +116,6 @@ private static final long serialVersionUID = 0L;
    * <code>string fb_access_token = 1;</code>
    * @return The bytes for fbAccessToken.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getFbAccessTokenBytes() {
     java.lang.Object ref = fbAccessToken_;
@@ -142,7 +136,6 @@ private static final long serialVersionUID = 0L;
    * <code>string friend_fb_user_id = 2;</code>
    * @return The friendFbUserId.
    */
-  @java.lang.Override
   public java.lang.String getFriendFbUserId() {
     java.lang.Object ref = friendFbUserId_;
     if (ref instanceof java.lang.String) {
@@ -159,7 +152,6 @@ private static final long serialVersionUID = 0L;
    * <code>string friend_fb_user_id = 2;</code>
    * @return The bytes for friendFbUserId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getFriendFbUserIdBytes() {
     java.lang.Object ref = friendFbUserId_;
@@ -339,10 +331,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.InviteFacebookFriendProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.InviteFacebookFriendProto}
    */
   public static final class Builder extends

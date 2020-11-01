@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Iap.Protos.RedeemGoogleReceiptProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.RedeemGoogleReceiptProto}
  */
-public final class RedeemGoogleReceiptProto extends
+public  final class RedeemGoogleReceiptProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.RedeemGoogleReceiptProto)
     RedeemGoogleReceiptProtoOrBuilder {
@@ -121,7 +117,6 @@ private static final long serialVersionUID = 0L;
    * <code>string receipt = 1;</code>
    * @return The receipt.
    */
-  @java.lang.Override
   public java.lang.String getReceipt() {
     java.lang.Object ref = receipt_;
     if (ref instanceof java.lang.String) {
@@ -138,7 +133,6 @@ private static final long serialVersionUID = 0L;
    * <code>string receipt = 1;</code>
    * @return The bytes for receipt.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getReceiptBytes() {
     java.lang.Object ref = receipt_;
@@ -159,7 +153,6 @@ private static final long serialVersionUID = 0L;
    * <code>string receipt_signature = 2;</code>
    * @return The receiptSignature.
    */
-  @java.lang.Override
   public java.lang.String getReceiptSignature() {
     java.lang.Object ref = receiptSignature_;
     if (ref instanceof java.lang.String) {
@@ -176,7 +169,6 @@ private static final long serialVersionUID = 0L;
    * <code>string receipt_signature = 2;</code>
    * @return The bytes for receiptSignature.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getReceiptSignatureBytes() {
     java.lang.Object ref = receiptSignature_;
@@ -197,7 +189,6 @@ private static final long serialVersionUID = 0L;
    * <code>string purchase_currency = 3;</code>
    * @return The purchaseCurrency.
    */
-  @java.lang.Override
   public java.lang.String getPurchaseCurrency() {
     java.lang.Object ref = purchaseCurrency_;
     if (ref instanceof java.lang.String) {
@@ -214,7 +205,6 @@ private static final long serialVersionUID = 0L;
    * <code>string purchase_currency = 3;</code>
    * @return The bytes for purchaseCurrency.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPurchaseCurrencyBytes() {
     java.lang.Object ref = purchaseCurrency_;
@@ -235,7 +225,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 price_paid_e6 = 4;</code>
    * @return The pricePaidE6.
    */
-  @java.lang.Override
   public int getPricePaidE6() {
     return pricePaidE6_;
   }
@@ -246,7 +235,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 price_paid_e6_long = 5;</code>
    * @return The pricePaidE6Long.
    */
-  @java.lang.Override
   public long getPricePaidE6Long() {
     return pricePaidE6Long_;
   }
@@ -449,10 +437,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Iap.Protos.RedeemGoogleReceiptProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.RedeemGoogleReceiptProto}
    */
   public static final class Builder extends
@@ -859,7 +843,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 price_paid_e6 = 4;</code>
      * @return The pricePaidE6.
      */
-    @java.lang.Override
     public int getPricePaidE6() {
       return pricePaidE6_;
     }
@@ -890,7 +873,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 price_paid_e6_long = 5;</code>
      * @return The pricePaidE6Long.
      */
-    @java.lang.Override
     public long getPricePaidE6Long() {
       return pricePaidE6Long_;
     }

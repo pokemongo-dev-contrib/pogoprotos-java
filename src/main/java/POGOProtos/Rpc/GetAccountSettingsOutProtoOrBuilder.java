@@ -19,17 +19,17 @@ public interface GetAccountSettingsOutProtoOrBuilder extends
   POGOProtos.Rpc.GetAccountSettingsOutProto.Result getResult();
 
   /**
-   * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+   * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
    * @return Whether the settings field is set.
    */
   boolean hasSettings();
   /**
-   * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+   * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
    * @return The settings.
    */
-  POGOProtos.Rpc.PlatformAccountSettingsProto getSettings();
+  POGOProtos.Rpc.AccountSettingsProto getSettings();
   /**
-   * <code>.POGOProtos.Rpc.PlatformAccountSettingsProto settings = 2;</code>
+   * <code>.POGOProtos.Rpc.AccountSettingsProto settings = 2;</code>
    */
-  POGOProtos.Rpc.PlatformAccountSettingsProtoOrBuilder getSettingsOrBuilder();
+  POGOProtos.Rpc.AccountSettingsProtoOrBuilder getSettingsOrBuilder();
 }

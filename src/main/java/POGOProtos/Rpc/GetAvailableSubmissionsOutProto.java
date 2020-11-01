@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GetAvailableSubmissionsOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetAvailableSubmissionsOutProto}
  */
-public final class GetAvailableSubmissionsOutProto extends
+public  final class GetAvailableSubmissionsOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetAvailableSubmissionsOutProto)
     GetAvailableSubmissionsOutProtoOrBuilder {
@@ -97,11 +93,11 @@ private static final long serialVersionUID = 0L;
           }
           case 66: {
             if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-              availabilityResultPerType_ = new java.util.ArrayList<POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType>();
+              availabilityResultPerType_ = new java.util.ArrayList<POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType>();
               mutable_bitField0_ |= 0x00000002;
             }
             availabilityResultPerType_.add(
-                input.readMessage(POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.parser(), extensionRegistry));
+                input.readMessage(POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.parser(), extensionRegistry));
             break;
           }
           case 74: {
@@ -165,7 +161,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 submissions_left = 1;</code>
    * @return The submissionsLeft.
    */
-  @java.lang.Override
   public int getSubmissionsLeft() {
     return submissionsLeft_;
   }
@@ -176,7 +171,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 min_player_level = 2;</code>
    * @return The minPlayerLevel.
    */
-  @java.lang.Override
   public int getMinPlayerLevel() {
     return minPlayerLevel_;
   }
@@ -187,7 +181,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool has_valid_email = 3;</code>
    * @return The hasValidEmail.
    */
-  @java.lang.Override
   public boolean getHasValidEmail() {
     return hasValidEmail_;
   }
@@ -198,7 +191,6 @@ private static final long serialVersionUID = 0L;
    * <code>bool is_feature_enabled = 4;</code>
    * @return The isFeatureEnabled.
    */
-  @java.lang.Override
   public boolean getIsFeatureEnabled() {
     return isFeatureEnabled_;
   }
@@ -209,7 +201,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 time_window_for_submissions_limit_ms = 5;</code>
    * @return The timeWindowForSubmissionsLimitMs.
    */
-  @java.lang.Override
   public long getTimeWindowForSubmissionsLimitMs() {
     return timeWindowForSubmissionsLimitMs_;
   }
@@ -220,7 +211,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 max_poi_distance_in_meters = 6;</code>
    * @return The maxPoiDistanceInMeters.
    */
-  @java.lang.Override
   public int getMaxPoiDistanceInMeters() {
     return maxPoiDistanceInMeters_;
   }
@@ -261,41 +251,36 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int AVAILABILITY_RESULT_PER_TYPE_FIELD_NUMBER = 8;
-  private java.util.List<POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType> availabilityResultPerType_;
+  private java.util.List<POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType> availabilityResultPerType_;
   /**
-   * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
    */
-  @java.lang.Override
-  public java.util.List<POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType> getAvailabilityResultPerTypeList() {
+  public java.util.List<POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType> getAvailabilityResultPerTypeList() {
     return availabilityResultPerType_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
    */
-  @java.lang.Override
-  public java.util.List<? extends POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionTypeOrBuilder> 
+  public java.util.List<? extends POGOProtos.Rpc.AvailableSubmissionsPerSubmissionTypeOrBuilder> 
       getAvailabilityResultPerTypeOrBuilderList() {
     return availabilityResultPerType_;
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
    */
-  @java.lang.Override
   public int getAvailabilityResultPerTypeCount() {
     return availabilityResultPerType_.size();
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType getAvailabilityResultPerType(int index) {
+  public POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType getAvailabilityResultPerType(int index) {
     return availabilityResultPerType_.get(index);
   }
   /**
-   * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+   * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionTypeOrBuilder getAvailabilityResultPerTypeOrBuilder(
+  public POGOProtos.Rpc.AvailableSubmissionsPerSubmissionTypeOrBuilder getAvailabilityResultPerTypeOrBuilder(
       int index) {
     return availabilityResultPerType_.get(index);
   }
@@ -341,7 +326,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 max_poi_location_edit_move_distance_meters = 10;</code>
    * @return The maxPoiLocationEditMoveDistanceMeters.
    */
-  @java.lang.Override
   public int getMaxPoiLocationEditMoveDistanceMeters() {
     return maxPoiLocationEditMoveDistanceMeters_;
   }
@@ -618,10 +602,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GetAvailableSubmissionsOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetAvailableSubmissionsOutProto}
    */
   public static final class Builder extends
@@ -887,7 +867,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 submissions_left = 1;</code>
      * @return The submissionsLeft.
      */
-    @java.lang.Override
     public int getSubmissionsLeft() {
       return submissionsLeft_;
     }
@@ -918,7 +897,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 min_player_level = 2;</code>
      * @return The minPlayerLevel.
      */
-    @java.lang.Override
     public int getMinPlayerLevel() {
       return minPlayerLevel_;
     }
@@ -949,7 +927,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool has_valid_email = 3;</code>
      * @return The hasValidEmail.
      */
-    @java.lang.Override
     public boolean getHasValidEmail() {
       return hasValidEmail_;
     }
@@ -980,7 +957,6 @@ private static final long serialVersionUID = 0L;
      * <code>bool is_feature_enabled = 4;</code>
      * @return The isFeatureEnabled.
      */
-    @java.lang.Override
     public boolean getIsFeatureEnabled() {
       return isFeatureEnabled_;
     }
@@ -1011,7 +987,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 time_window_for_submissions_limit_ms = 5;</code>
      * @return The timeWindowForSubmissionsLimitMs.
      */
-    @java.lang.Override
     public long getTimeWindowForSubmissionsLimitMs() {
       return timeWindowForSubmissionsLimitMs_;
     }
@@ -1042,7 +1017,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 max_poi_distance_in_meters = 6;</code>
      * @return The maxPoiDistanceInMeters.
      */
-    @java.lang.Override
     public int getMaxPoiDistanceInMeters() {
       return maxPoiDistanceInMeters_;
     }
@@ -1178,22 +1152,22 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType> availabilityResultPerType_ =
+    private java.util.List<POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType> availabilityResultPerType_ =
       java.util.Collections.emptyList();
     private void ensureAvailabilityResultPerTypeIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        availabilityResultPerType_ = new java.util.ArrayList<POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType>(availabilityResultPerType_);
+        availabilityResultPerType_ = new java.util.ArrayList<POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType>(availabilityResultPerType_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.Builder, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionTypeOrBuilder> availabilityResultPerTypeBuilder_;
+        POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.Builder, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionTypeOrBuilder> availabilityResultPerTypeBuilder_;
 
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
-    public java.util.List<POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType> getAvailabilityResultPerTypeList() {
+    public java.util.List<POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType> getAvailabilityResultPerTypeList() {
       if (availabilityResultPerTypeBuilder_ == null) {
         return java.util.Collections.unmodifiableList(availabilityResultPerType_);
       } else {
@@ -1201,7 +1175,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
     public int getAvailabilityResultPerTypeCount() {
       if (availabilityResultPerTypeBuilder_ == null) {
@@ -1211,9 +1185,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
-    public POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType getAvailabilityResultPerType(int index) {
+    public POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType getAvailabilityResultPerType(int index) {
       if (availabilityResultPerTypeBuilder_ == null) {
         return availabilityResultPerType_.get(index);
       } else {
@@ -1221,10 +1195,10 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
     public Builder setAvailabilityResultPerType(
-        int index, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType value) {
+        int index, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType value) {
       if (availabilityResultPerTypeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1238,10 +1212,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
     public Builder setAvailabilityResultPerType(
-        int index, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.Builder builderForValue) {
+        int index, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.Builder builderForValue) {
       if (availabilityResultPerTypeBuilder_ == null) {
         ensureAvailabilityResultPerTypeIsMutable();
         availabilityResultPerType_.set(index, builderForValue.build());
@@ -1252,9 +1226,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
-    public Builder addAvailabilityResultPerType(POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType value) {
+    public Builder addAvailabilityResultPerType(POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType value) {
       if (availabilityResultPerTypeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1268,10 +1242,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
     public Builder addAvailabilityResultPerType(
-        int index, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType value) {
+        int index, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType value) {
       if (availabilityResultPerTypeBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1285,10 +1259,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
     public Builder addAvailabilityResultPerType(
-        POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.Builder builderForValue) {
+        POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.Builder builderForValue) {
       if (availabilityResultPerTypeBuilder_ == null) {
         ensureAvailabilityResultPerTypeIsMutable();
         availabilityResultPerType_.add(builderForValue.build());
@@ -1299,10 +1273,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
     public Builder addAvailabilityResultPerType(
-        int index, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.Builder builderForValue) {
+        int index, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.Builder builderForValue) {
       if (availabilityResultPerTypeBuilder_ == null) {
         ensureAvailabilityResultPerTypeIsMutable();
         availabilityResultPerType_.add(index, builderForValue.build());
@@ -1313,10 +1287,10 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
     public Builder addAllAvailabilityResultPerType(
-        java.lang.Iterable<? extends POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType> values) {
+        java.lang.Iterable<? extends POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType> values) {
       if (availabilityResultPerTypeBuilder_ == null) {
         ensureAvailabilityResultPerTypeIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1328,7 +1302,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
     public Builder clearAvailabilityResultPerType() {
       if (availabilityResultPerTypeBuilder_ == null) {
@@ -1341,7 +1315,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
     public Builder removeAvailabilityResultPerType(int index) {
       if (availabilityResultPerTypeBuilder_ == null) {
@@ -1354,16 +1328,16 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
-    public POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.Builder getAvailabilityResultPerTypeBuilder(
+    public POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.Builder getAvailabilityResultPerTypeBuilder(
         int index) {
       return getAvailabilityResultPerTypeFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
-    public POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionTypeOrBuilder getAvailabilityResultPerTypeOrBuilder(
+    public POGOProtos.Rpc.AvailableSubmissionsPerSubmissionTypeOrBuilder getAvailabilityResultPerTypeOrBuilder(
         int index) {
       if (availabilityResultPerTypeBuilder_ == null) {
         return availabilityResultPerType_.get(index);  } else {
@@ -1371,9 +1345,9 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
-    public java.util.List<? extends POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionTypeOrBuilder> 
+    public java.util.List<? extends POGOProtos.Rpc.AvailableSubmissionsPerSubmissionTypeOrBuilder> 
          getAvailabilityResultPerTypeOrBuilderList() {
       if (availabilityResultPerTypeBuilder_ != null) {
         return availabilityResultPerTypeBuilder_.getMessageOrBuilderList();
@@ -1382,33 +1356,33 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
-    public POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.Builder addAvailabilityResultPerTypeBuilder() {
+    public POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.Builder addAvailabilityResultPerTypeBuilder() {
       return getAvailabilityResultPerTypeFieldBuilder().addBuilder(
-          POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.getDefaultInstance());
+          POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
-    public POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.Builder addAvailabilityResultPerTypeBuilder(
+    public POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.Builder addAvailabilityResultPerTypeBuilder(
         int index) {
       return getAvailabilityResultPerTypeFieldBuilder().addBuilder(
-          index, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.getDefaultInstance());
+          index, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.getDefaultInstance());
     }
     /**
-     * <code>repeated .POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
+     * <code>repeated .POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType availability_result_per_type = 8;</code>
      */
-    public java.util.List<POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.Builder> 
+    public java.util.List<POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.Builder> 
          getAvailabilityResultPerTypeBuilderList() {
       return getAvailabilityResultPerTypeFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.Builder, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionTypeOrBuilder> 
+        POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.Builder, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionTypeOrBuilder> 
         getAvailabilityResultPerTypeFieldBuilder() {
       if (availabilityResultPerTypeBuilder_ == null) {
         availabilityResultPerTypeBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionType.Builder, POGOProtos.Rpc.TitanAvailableSubmissionsPerSubmissionTypeOrBuilder>(
+            POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionType.Builder, POGOProtos.Rpc.AvailableSubmissionsPerSubmissionTypeOrBuilder>(
                 availabilityResultPerType_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1533,7 +1507,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 max_poi_location_edit_move_distance_meters = 10;</code>
      * @return The maxPoiLocationEditMoveDistanceMeters.
      */
-    @java.lang.Override
     public int getMaxPoiLocationEditMoveDistanceMeters() {
       return maxPoiLocationEditMoveDistanceMeters_;
     }

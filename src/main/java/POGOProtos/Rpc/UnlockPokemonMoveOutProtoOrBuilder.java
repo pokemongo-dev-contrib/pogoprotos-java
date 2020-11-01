@@ -8,28 +8,28 @@ public interface UnlockPokemonMoveOutProtoOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
-   * @return The enum numeric value on the wire for result.
+   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
+   * @return The enum numeric value on the wire for jbflkcdndlp.
    */
-  int getResultValue();
+  int getJbflkcdndlpValue();
   /**
-   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result result = 1;</code>
-   * @return The result.
+   * <code>.POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ jbflkcdndlp = 1;</code>
+   * @return The jbflkcdndlp.
    */
-  POGOProtos.Rpc.UnlockPokemonMoveOutProto.Result getResult();
+  POGOProtos.Rpc.UnlockPokemonMoveOutProto.FOLHCFAOOKJ getJbflkcdndlp();
 
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
-   * @return Whether the ndjepameaok field is set.
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+   * @return Whether the hbpgnfpgied field is set.
    */
-  boolean hasNdjepameaok();
+  boolean hasHbpgnfpgied();
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
-   * @return The ndjepameaok.
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
+   * @return The hbpgnfpgied.
    */
-  POGOProtos.Rpc.PokemonProto getNdjepameaok();
+  POGOProtos.Rpc.KHNLPGENFBI getHbpgnfpgied();
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto ndjepameaok = 2;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI hbpgnfpgied = 2;</code>
    */
-  POGOProtos.Rpc.PokemonProtoOrBuilder getNdjepameaokOrBuilder();
+  POGOProtos.Rpc.KHNLPGENFBIOrBuilder getHbpgnfpgiedOrBuilder();
 }

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GetClientFeatureFlagsResponse
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetClientFeatureFlagsResponse}
  */
-public final class GetClientFeatureFlagsResponse extends
+public  final class GetClientFeatureFlagsResponse extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetClientFeatureFlagsResponse)
     GetClientFeatureFlagsResponseOrBuilder {
@@ -116,7 +112,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.SocialClientFeatures feature_flags = 1;</code>
    * @return Whether the featureFlags field is set.
    */
-  @java.lang.Override
   public boolean hasFeatureFlags() {
     return featureFlags_ != null;
   }
@@ -124,14 +119,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.SocialClientFeatures feature_flags = 1;</code>
    * @return The featureFlags.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.SocialClientFeatures getFeatureFlags() {
     return featureFlags_ == null ? POGOProtos.Rpc.SocialClientFeatures.getDefaultInstance() : featureFlags_;
   }
   /**
    * <code>.POGOProtos.Rpc.SocialClientFeatures feature_flags = 1;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.SocialClientFeaturesOrBuilder getFeatureFlagsOrBuilder() {
     return getFeatureFlags();
   }
@@ -142,7 +135,6 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.SocialClientGlobalSettings global_settings = 2;</code>
    * @return Whether the globalSettings field is set.
    */
-  @java.lang.Override
   public boolean hasGlobalSettings() {
     return globalSettings_ != null;
   }
@@ -150,14 +142,12 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.SocialClientGlobalSettings global_settings = 2;</code>
    * @return The globalSettings.
    */
-  @java.lang.Override
   public POGOProtos.Rpc.SocialClientGlobalSettings getGlobalSettings() {
     return globalSettings_ == null ? POGOProtos.Rpc.SocialClientGlobalSettings.getDefaultInstance() : globalSettings_;
   }
   /**
    * <code>.POGOProtos.Rpc.SocialClientGlobalSettings global_settings = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.SocialClientGlobalSettingsOrBuilder getGlobalSettingsOrBuilder() {
     return getGlobalSettings();
   }
@@ -339,10 +329,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GetClientFeatureFlagsResponse
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetClientFeatureFlagsResponse}
    */
   public static final class Builder extends

@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.IncomingFriendInviteProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.IncomingFriendInviteProto}
  */
-public final class IncomingFriendInviteProto extends
+public  final class IncomingFriendInviteProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.IncomingFriendInviteProto)
     IncomingFriendInviteProtoOrBuilder {
@@ -112,7 +108,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Platform.Protos.IncomingFriendInviteProto/Types/Status
+   * ref: Niantic.Platform.Protos.IncomingFriendInviteProto.Types.Status
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.IncomingFriendInviteProto.Status}
@@ -202,10 +198,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -246,14 +238,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.IncomingFriendInviteProto.Status status = 1;</code>
    * @return The enum numeric value on the wire for status.
    */
-  @java.lang.Override public int getStatusValue() {
+  public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.IncomingFriendInviteProto.Status status = 1;</code>
    * @return The status.
    */
-  @java.lang.Override public POGOProtos.Rpc.IncomingFriendInviteProto.Status getStatus() {
+  public POGOProtos.Rpc.IncomingFriendInviteProto.Status getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.IncomingFriendInviteProto.Status result = POGOProtos.Rpc.IncomingFriendInviteProto.Status.valueOf(status_);
     return result == null ? POGOProtos.Rpc.IncomingFriendInviteProto.Status.UNRECOGNIZED : result;
@@ -265,7 +257,6 @@ private static final long serialVersionUID = 0L;
    * <code>string player_id = 2;</code>
    * @return The playerId.
    */
-  @java.lang.Override
   public java.lang.String getPlayerId() {
     java.lang.Object ref = playerId_;
     if (ref instanceof java.lang.String) {
@@ -282,7 +273,6 @@ private static final long serialVersionUID = 0L;
    * <code>string player_id = 2;</code>
    * @return The bytes for playerId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPlayerIdBytes() {
     java.lang.Object ref = playerId_;
@@ -303,7 +293,6 @@ private static final long serialVersionUID = 0L;
    * <code>int64 created_ms = 3;</code>
    * @return The createdMs.
    */
-  @java.lang.Override
   public long getCreatedMs() {
     return createdMs_;
   }
@@ -314,7 +303,6 @@ private static final long serialVersionUID = 0L;
    * <code>string full_name = 5;</code>
    * @return The fullName.
    */
-  @java.lang.Override
   public java.lang.String getFullName() {
     java.lang.Object ref = fullName_;
     if (ref instanceof java.lang.String) {
@@ -331,7 +319,6 @@ private static final long serialVersionUID = 0L;
    * <code>string full_name = 5;</code>
    * @return The bytes for fullName.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getFullNameBytes() {
     java.lang.Object ref = fullName_;
@@ -533,10 +520,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.IncomingFriendInviteProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.IncomingFriendInviteProto}
    */
   public static final class Builder extends
@@ -708,7 +691,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.IncomingFriendInviteProto.Status status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    public int getStatusValue() {
       return status_;
     }
     /**
@@ -717,7 +700,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
-      
       status_ = value;
       onChanged();
       return this;
@@ -726,7 +708,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.IncomingFriendInviteProto.Status status = 1;</code>
      * @return The status.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.IncomingFriendInviteProto.Status getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.IncomingFriendInviteProto.Status result = POGOProtos.Rpc.IncomingFriendInviteProto.Status.valueOf(status_);
@@ -838,7 +819,6 @@ private static final long serialVersionUID = 0L;
      * <code>int64 created_ms = 3;</code>
      * @return The createdMs.
      */
-    @java.lang.Override
     public long getCreatedMs() {
       return createdMs_;
     }

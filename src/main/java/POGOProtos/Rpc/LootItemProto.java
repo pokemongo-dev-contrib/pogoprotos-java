@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: AHAOJIPNDGF
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.LootItemProto}
  */
-public final class LootItemProto extends
+public  final class LootItemProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.LootItemProto)
     LootItemProtoOrBuilder {
@@ -54,60 +50,72 @@ private static final long serialVersionUID = 0L;
             break;
           case 8: {
             int rawValue = input.readEnum();
-            typeCase_ = 1;
-            type_ = rawValue;
+            aMCFNCJDNHJCase_ = 1;
+            aMCFNCJDNHJ_ = rawValue;
             break;
           }
           case 16: {
-            typeCase_ = 2;
-            type_ = input.readBool();
+            aMCFNCJDNHJCase_ = 2;
+            aMCFNCJDNHJ_ = input.readBool();
             break;
           }
           case 24: {
-            typeCase_ = 3;
-            type_ = input.readBool();
+            aMCFNCJDNHJCase_ = 3;
+            aMCFNCJDNHJ_ = input.readBool();
             break;
           }
           case 32: {
             int rawValue = input.readEnum();
-            typeCase_ = 4;
-            type_ = rawValue;
+            aMCFNCJDNHJCase_ = 4;
+            aMCFNCJDNHJ_ = rawValue;
             break;
           }
           case 40: {
 
-            count_ = input.readInt32();
+            aihjjphknom_ = input.readInt32();
             break;
           }
           case 48: {
-            typeCase_ = 6;
-            type_ = input.readBool();
+            aMCFNCJDNHJCase_ = 6;
+            aMCFNCJDNHJ_ = input.readBool();
             break;
           }
           case 58: {
-            POGOProtos.Rpc.PokemonProto.Builder subBuilder = null;
-            if (typeCase_ == 7) {
-              subBuilder = ((POGOProtos.Rpc.PokemonProto) type_).toBuilder();
+            POGOProtos.Rpc.KHNLPGENFBI.Builder subBuilder = null;
+            if (aMCFNCJDNHJCase_ == 7) {
+              subBuilder = ((POGOProtos.Rpc.KHNLPGENFBI) aMCFNCJDNHJ_).toBuilder();
             }
-            type_ =
-                input.readMessage(POGOProtos.Rpc.PokemonProto.parser(), extensionRegistry);
+            aMCFNCJDNHJ_ =
+                input.readMessage(POGOProtos.Rpc.KHNLPGENFBI.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((POGOProtos.Rpc.PokemonProto) type_);
-              type_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom((POGOProtos.Rpc.KHNLPGENFBI) aMCFNCJDNHJ_);
+              aMCFNCJDNHJ_ = subBuilder.buildPartial();
             }
-            typeCase_ = 7;
+            aMCFNCJDNHJCase_ = 7;
             break;
           }
           case 66: {
             java.lang.String s = input.readStringRequireUtf8();
-            typeCase_ = 8;
-            type_ = s;
+            aMCFNCJDNHJCase_ = 8;
+            aMCFNCJDNHJ_ = s;
             break;
           }
           case 74: {
             java.lang.String s = input.readStringRequireUtf8();
-            typeCase_ = 9;
-            type_ = s;
+            aMCFNCJDNHJCase_ = 9;
+            aMCFNCJDNHJ_ = s;
+            break;
+          }
+          case 80: {
+            int rawValue = input.readEnum();
+            aMCFNCJDNHJCase_ = 10;
+            aMCFNCJDNHJ_ = rawValue;
+            break;
+          }
+          case 88: {
+            int rawValue = input.readEnum();
+            aMCFNCJDNHJCase_ = 11;
+            aMCFNCJDNHJ_ = rawValue;
             break;
           }
           default: {
@@ -142,9 +150,9 @@ private static final long serialVersionUID = 0L;
             POGOProtos.Rpc.LootItemProto.class, POGOProtos.Rpc.LootItemProto.Builder.class);
   }
 
-  private int typeCase_ = 0;
-  private java.lang.Object type_;
-  public enum TypeCase
+  private int aMCFNCJDNHJCase_ = 0;
+  private java.lang.Object aMCFNCJDNHJ_;
+  public enum AMCFNCJDNHJCase
       implements com.google.protobuf.Internal.EnumLite,
           com.google.protobuf.AbstractMessage.InternalOneOfEnum {
     ITEM(1),
@@ -155,9 +163,11 @@ private static final long serialVersionUID = 0L;
     POKEMON_EGG(7),
     AVATAR_TEMPLATE_ID(8),
     STICKER_ID(9),
-    TYPE_NOT_SET(0);
+    MEGA_ENERGY_POKEMON_ID(10),
+    XL_CANDY(11),
+    AMCFNCJDNHJ_NOT_SET(0);
     private final int value;
-    private TypeCase(int value) {
+    private AMCFNCJDNHJCase(int value) {
       this.value = value;
     }
     /**
@@ -166,11 +176,11 @@ private static final long serialVersionUID = 0L;
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static TypeCase valueOf(int value) {
+    public static AMCFNCJDNHJCase valueOf(int value) {
       return forNumber(value);
     }
 
-    public static TypeCase forNumber(int value) {
+    public static AMCFNCJDNHJCase forNumber(int value) {
       switch (value) {
         case 1: return ITEM;
         case 2: return STARDUST;
@@ -180,7 +190,9 @@ private static final long serialVersionUID = 0L;
         case 7: return POKEMON_EGG;
         case 8: return AVATAR_TEMPLATE_ID;
         case 9: return STICKER_ID;
-        case 0: return TYPE_NOT_SET;
+        case 10: return MEGA_ENERGY_POKEMON_ID;
+        case 11: return XL_CANDY;
+        case 0: return AMCFNCJDNHJ_NOT_SET;
         default: return null;
       }
     }
@@ -189,10 +201,10 @@ private static final long serialVersionUID = 0L;
     }
   };
 
-  public TypeCase
-  getTypeCase() {
-    return TypeCase.forNumber(
-        typeCase_);
+  public AMCFNCJDNHJCase
+  getAMCFNCJDNHJCase() {
+    return AMCFNCJDNHJCase.forNumber(
+        aMCFNCJDNHJCase_);
   }
 
   public static final int ITEM_FIELD_NUMBER = 1;
@@ -201,8 +213,8 @@ private static final long serialVersionUID = 0L;
    * @return The enum numeric value on the wire for item.
    */
   public int getItemValue() {
-    if (typeCase_ == 1) {
-      return (java.lang.Integer) type_;
+    if (aMCFNCJDNHJCase_ == 1) {
+      return (java.lang.Integer) aMCFNCJDNHJ_;
     }
     return 0;
   }
@@ -211,13 +223,13 @@ private static final long serialVersionUID = 0L;
    * @return The item.
    */
   public POGOProtos.Rpc.Item getItem() {
-    if (typeCase_ == 1) {
+    if (aMCFNCJDNHJCase_ == 1) {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(
-          (java.lang.Integer) type_);
+          (java.lang.Integer) aMCFNCJDNHJ_);
       return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.Item.UNKNOWN;
+    return POGOProtos.Rpc.Item.ITEM_UNKNOWN;
   }
 
   public static final int STARDUST_FIELD_NUMBER = 2;
@@ -225,10 +237,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool stardust = 2;</code>
    * @return The stardust.
    */
-  @java.lang.Override
   public boolean getStardust() {
-    if (typeCase_ == 2) {
-      return (java.lang.Boolean) type_;
+    if (aMCFNCJDNHJCase_ == 2) {
+      return (java.lang.Boolean) aMCFNCJDNHJ_;
     }
     return false;
   }
@@ -238,10 +249,9 @@ private static final long serialVersionUID = 0L;
    * <code>bool pokecoin = 3;</code>
    * @return The pokecoin.
    */
-  @java.lang.Override
   public boolean getPokecoin() {
-    if (typeCase_ == 3) {
-      return (java.lang.Boolean) type_;
+    if (aMCFNCJDNHJCase_ == 3) {
+      return (java.lang.Boolean) aMCFNCJDNHJ_;
     }
     return false;
   }
@@ -252,8 +262,8 @@ private static final long serialVersionUID = 0L;
    * @return The enum numeric value on the wire for pokemonCandy.
    */
   public int getPokemonCandyValue() {
-    if (typeCase_ == 4) {
-      return (java.lang.Integer) type_;
+    if (aMCFNCJDNHJCase_ == 4) {
+      return (java.lang.Integer) aMCFNCJDNHJ_;
     }
     return 0;
   }
@@ -262,13 +272,13 @@ private static final long serialVersionUID = 0L;
    * @return The pokemonCandy.
    */
   public POGOProtos.Rpc.HoloPokemonId getPokemonCandy() {
-    if (typeCase_ == 4) {
+    if (aMCFNCJDNHJCase_ == 4) {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
-          (java.lang.Integer) type_);
+          (java.lang.Integer) aMCFNCJDNHJ_);
       return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
     }
-    return POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET;
+    return POGOProtos.Rpc.HoloPokemonId.MISSINGNO;
   }
 
   public static final int EXPERIENCE_FIELD_NUMBER = 6;
@@ -276,43 +286,39 @@ private static final long serialVersionUID = 0L;
    * <code>bool experience = 6;</code>
    * @return The experience.
    */
-  @java.lang.Override
   public boolean getExperience() {
-    if (typeCase_ == 6) {
-      return (java.lang.Boolean) type_;
+    if (aMCFNCJDNHJCase_ == 6) {
+      return (java.lang.Boolean) aMCFNCJDNHJ_;
     }
     return false;
   }
 
   public static final int POKEMON_EGG_FIELD_NUMBER = 7;
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
    * @return Whether the pokemonEgg field is set.
    */
-  @java.lang.Override
   public boolean hasPokemonEgg() {
-    return typeCase_ == 7;
+    return aMCFNCJDNHJCase_ == 7;
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
    * @return The pokemonEgg.
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonProto getPokemonEgg() {
-    if (typeCase_ == 7) {
-       return (POGOProtos.Rpc.PokemonProto) type_;
+  public POGOProtos.Rpc.KHNLPGENFBI getPokemonEgg() {
+    if (aMCFNCJDNHJCase_ == 7) {
+       return (POGOProtos.Rpc.KHNLPGENFBI) aMCFNCJDNHJ_;
     }
-    return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+    return POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
   }
   /**
-   * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+   * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
    */
-  @java.lang.Override
-  public POGOProtos.Rpc.PokemonProtoOrBuilder getPokemonEggOrBuilder() {
-    if (typeCase_ == 7) {
-       return (POGOProtos.Rpc.PokemonProto) type_;
+  public POGOProtos.Rpc.KHNLPGENFBIOrBuilder getPokemonEggOrBuilder() {
+    if (aMCFNCJDNHJCase_ == 7) {
+       return (POGOProtos.Rpc.KHNLPGENFBI) aMCFNCJDNHJ_;
     }
-    return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+    return POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
   }
 
   public static final int AVATAR_TEMPLATE_ID_FIELD_NUMBER = 8;
@@ -322,8 +328,8 @@ private static final long serialVersionUID = 0L;
    */
   public java.lang.String getAvatarTemplateId() {
     java.lang.Object ref = "";
-    if (typeCase_ == 8) {
-      ref = type_;
+    if (aMCFNCJDNHJCase_ == 8) {
+      ref = aMCFNCJDNHJ_;
     }
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
@@ -331,8 +337,8 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      if (typeCase_ == 8) {
-        type_ = s;
+      if (aMCFNCJDNHJCase_ == 8) {
+        aMCFNCJDNHJ_ = s;
       }
       return s;
     }
@@ -344,15 +350,15 @@ private static final long serialVersionUID = 0L;
   public com.google.protobuf.ByteString
       getAvatarTemplateIdBytes() {
     java.lang.Object ref = "";
-    if (typeCase_ == 8) {
-      ref = type_;
+    if (aMCFNCJDNHJCase_ == 8) {
+      ref = aMCFNCJDNHJ_;
     }
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      if (typeCase_ == 8) {
-        type_ = b;
+      if (aMCFNCJDNHJCase_ == 8) {
+        aMCFNCJDNHJ_ = b;
       }
       return b;
     } else {
@@ -367,8 +373,8 @@ private static final long serialVersionUID = 0L;
    */
   public java.lang.String getStickerId() {
     java.lang.Object ref = "";
-    if (typeCase_ == 9) {
-      ref = type_;
+    if (aMCFNCJDNHJCase_ == 9) {
+      ref = aMCFNCJDNHJ_;
     }
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
@@ -376,8 +382,8 @@ private static final long serialVersionUID = 0L;
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      if (typeCase_ == 9) {
-        type_ = s;
+      if (aMCFNCJDNHJCase_ == 9) {
+        aMCFNCJDNHJ_ = s;
       }
       return s;
     }
@@ -389,15 +395,15 @@ private static final long serialVersionUID = 0L;
   public com.google.protobuf.ByteString
       getStickerIdBytes() {
     java.lang.Object ref = "";
-    if (typeCase_ == 9) {
-      ref = type_;
+    if (aMCFNCJDNHJCase_ == 9) {
+      ref = aMCFNCJDNHJ_;
     }
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      if (typeCase_ == 9) {
-        type_ = b;
+      if (aMCFNCJDNHJCase_ == 9) {
+        aMCFNCJDNHJ_ = b;
       }
       return b;
     } else {
@@ -405,15 +411,64 @@ private static final long serialVersionUID = 0L;
     }
   }
 
-  public static final int COUNT_FIELD_NUMBER = 5;
-  private int count_;
+  public static final int MEGA_ENERGY_POKEMON_ID_FIELD_NUMBER = 10;
   /**
-   * <code>int32 count = 5;</code>
-   * @return The count.
+   * <code>.POGOProtos.Rpc.HoloPokemonId mega_energy_pokemon_id = 10;</code>
+   * @return The enum numeric value on the wire for megaEnergyPokemonId.
    */
-  @java.lang.Override
-  public int getCount() {
-    return count_;
+  public int getMegaEnergyPokemonIdValue() {
+    if (aMCFNCJDNHJCase_ == 10) {
+      return (java.lang.Integer) aMCFNCJDNHJ_;
+    }
+    return 0;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId mega_energy_pokemon_id = 10;</code>
+   * @return The megaEnergyPokemonId.
+   */
+  public POGOProtos.Rpc.HoloPokemonId getMegaEnergyPokemonId() {
+    if (aMCFNCJDNHJCase_ == 10) {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
+          (java.lang.Integer) aMCFNCJDNHJ_);
+      return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+    }
+    return POGOProtos.Rpc.HoloPokemonId.MISSINGNO;
+  }
+
+  public static final int XL_CANDY_FIELD_NUMBER = 11;
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId xl_candy = 11;</code>
+   * @return The enum numeric value on the wire for xlCandy.
+   */
+  public int getXlCandyValue() {
+    if (aMCFNCJDNHJCase_ == 11) {
+      return (java.lang.Integer) aMCFNCJDNHJ_;
+    }
+    return 0;
+  }
+  /**
+   * <code>.POGOProtos.Rpc.HoloPokemonId xl_candy = 11;</code>
+   * @return The xlCandy.
+   */
+  public POGOProtos.Rpc.HoloPokemonId getXlCandy() {
+    if (aMCFNCJDNHJCase_ == 11) {
+      @SuppressWarnings("deprecation")
+      POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
+          (java.lang.Integer) aMCFNCJDNHJ_);
+      return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+    }
+    return POGOProtos.Rpc.HoloPokemonId.MISSINGNO;
+  }
+
+  public static final int AIHJJPHKNOM_FIELD_NUMBER = 5;
+  private int aihjjphknom_;
+  /**
+   * <code>int32 aihjjphknom = 5;</code>
+   * @return The aihjjphknom.
+   */
+  public int getAihjjphknom() {
+    return aihjjphknom_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -430,35 +485,41 @@ private static final long serialVersionUID = 0L;
   @java.lang.Override
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (typeCase_ == 1) {
-      output.writeEnum(1, ((java.lang.Integer) type_));
+    if (aMCFNCJDNHJCase_ == 1) {
+      output.writeEnum(1, ((java.lang.Integer) aMCFNCJDNHJ_));
     }
-    if (typeCase_ == 2) {
+    if (aMCFNCJDNHJCase_ == 2) {
       output.writeBool(
-          2, (boolean)((java.lang.Boolean) type_));
+          2, (boolean)((java.lang.Boolean) aMCFNCJDNHJ_));
     }
-    if (typeCase_ == 3) {
+    if (aMCFNCJDNHJCase_ == 3) {
       output.writeBool(
-          3, (boolean)((java.lang.Boolean) type_));
+          3, (boolean)((java.lang.Boolean) aMCFNCJDNHJ_));
     }
-    if (typeCase_ == 4) {
-      output.writeEnum(4, ((java.lang.Integer) type_));
+    if (aMCFNCJDNHJCase_ == 4) {
+      output.writeEnum(4, ((java.lang.Integer) aMCFNCJDNHJ_));
     }
-    if (count_ != 0) {
-      output.writeInt32(5, count_);
+    if (aihjjphknom_ != 0) {
+      output.writeInt32(5, aihjjphknom_);
     }
-    if (typeCase_ == 6) {
+    if (aMCFNCJDNHJCase_ == 6) {
       output.writeBool(
-          6, (boolean)((java.lang.Boolean) type_));
+          6, (boolean)((java.lang.Boolean) aMCFNCJDNHJ_));
     }
-    if (typeCase_ == 7) {
-      output.writeMessage(7, (POGOProtos.Rpc.PokemonProto) type_);
+    if (aMCFNCJDNHJCase_ == 7) {
+      output.writeMessage(7, (POGOProtos.Rpc.KHNLPGENFBI) aMCFNCJDNHJ_);
     }
-    if (typeCase_ == 8) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, type_);
+    if (aMCFNCJDNHJCase_ == 8) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, aMCFNCJDNHJ_);
     }
-    if (typeCase_ == 9) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, type_);
+    if (aMCFNCJDNHJCase_ == 9) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, aMCFNCJDNHJ_);
+    }
+    if (aMCFNCJDNHJCase_ == 10) {
+      output.writeEnum(10, ((java.lang.Integer) aMCFNCJDNHJ_));
+    }
+    if (aMCFNCJDNHJCase_ == 11) {
+      output.writeEnum(11, ((java.lang.Integer) aMCFNCJDNHJ_));
     }
     unknownFields.writeTo(output);
   }
@@ -469,42 +530,50 @@ private static final long serialVersionUID = 0L;
     if (size != -1) return size;
 
     size = 0;
-    if (typeCase_ == 1) {
+    if (aMCFNCJDNHJCase_ == 1) {
       size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(1, ((java.lang.Integer) type_));
+        .computeEnumSize(1, ((java.lang.Integer) aMCFNCJDNHJ_));
     }
-    if (typeCase_ == 2) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(
-            2, (boolean)((java.lang.Boolean) type_));
-    }
-    if (typeCase_ == 3) {
+    if (aMCFNCJDNHJCase_ == 2) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(
-            3, (boolean)((java.lang.Boolean) type_));
+            2, (boolean)((java.lang.Boolean) aMCFNCJDNHJ_));
     }
-    if (typeCase_ == 4) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeEnumSize(4, ((java.lang.Integer) type_));
-    }
-    if (count_ != 0) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(5, count_);
-    }
-    if (typeCase_ == 6) {
+    if (aMCFNCJDNHJCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(
-            6, (boolean)((java.lang.Boolean) type_));
+            3, (boolean)((java.lang.Boolean) aMCFNCJDNHJ_));
     }
-    if (typeCase_ == 7) {
+    if (aMCFNCJDNHJCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, (POGOProtos.Rpc.PokemonProto) type_);
+        .computeEnumSize(4, ((java.lang.Integer) aMCFNCJDNHJ_));
     }
-    if (typeCase_ == 8) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, type_);
+    if (aihjjphknom_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(5, aihjjphknom_);
     }
-    if (typeCase_ == 9) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, type_);
+    if (aMCFNCJDNHJCase_ == 6) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(
+            6, (boolean)((java.lang.Boolean) aMCFNCJDNHJ_));
+    }
+    if (aMCFNCJDNHJCase_ == 7) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(7, (POGOProtos.Rpc.KHNLPGENFBI) aMCFNCJDNHJ_);
+    }
+    if (aMCFNCJDNHJCase_ == 8) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, aMCFNCJDNHJ_);
+    }
+    if (aMCFNCJDNHJCase_ == 9) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, aMCFNCJDNHJ_);
+    }
+    if (aMCFNCJDNHJCase_ == 10) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(10, ((java.lang.Integer) aMCFNCJDNHJ_));
+    }
+    if (aMCFNCJDNHJCase_ == 11) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeEnumSize(11, ((java.lang.Integer) aMCFNCJDNHJ_));
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -521,10 +590,10 @@ private static final long serialVersionUID = 0L;
     }
     POGOProtos.Rpc.LootItemProto other = (POGOProtos.Rpc.LootItemProto) obj;
 
-    if (getCount()
-        != other.getCount()) return false;
-    if (!getTypeCase().equals(other.getTypeCase())) return false;
-    switch (typeCase_) {
+    if (getAihjjphknom()
+        != other.getAihjjphknom()) return false;
+    if (!getAMCFNCJDNHJCase().equals(other.getAMCFNCJDNHJCase())) return false;
+    switch (aMCFNCJDNHJCase_) {
       case 1:
         if (getItemValue()
             != other.getItemValue()) return false;
@@ -557,6 +626,14 @@ private static final long serialVersionUID = 0L;
         if (!getStickerId()
             .equals(other.getStickerId())) return false;
         break;
+      case 10:
+        if (getMegaEnergyPokemonIdValue()
+            != other.getMegaEnergyPokemonIdValue()) return false;
+        break;
+      case 11:
+        if (getXlCandyValue()
+            != other.getXlCandyValue()) return false;
+        break;
       case 0:
       default:
     }
@@ -571,9 +648,9 @@ private static final long serialVersionUID = 0L;
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + COUNT_FIELD_NUMBER;
-    hash = (53 * hash) + getCount();
-    switch (typeCase_) {
+    hash = (37 * hash) + AIHJJPHKNOM_FIELD_NUMBER;
+    hash = (53 * hash) + getAihjjphknom();
+    switch (aMCFNCJDNHJCase_) {
       case 1:
         hash = (37 * hash) + ITEM_FIELD_NUMBER;
         hash = (53 * hash) + getItemValue();
@@ -608,6 +685,14 @@ private static final long serialVersionUID = 0L;
       case 9:
         hash = (37 * hash) + STICKER_ID_FIELD_NUMBER;
         hash = (53 * hash) + getStickerId().hashCode();
+        break;
+      case 10:
+        hash = (37 * hash) + MEGA_ENERGY_POKEMON_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getMegaEnergyPokemonIdValue();
+        break;
+      case 11:
+        hash = (37 * hash) + XL_CANDY_FIELD_NUMBER;
+        hash = (53 * hash) + getXlCandyValue();
         break;
       case 0:
       default:
@@ -708,10 +793,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: AHAOJIPNDGF
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.LootItemProto}
    */
   public static final class Builder extends
@@ -749,10 +830,10 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public Builder clear() {
       super.clear();
-      count_ = 0;
+      aihjjphknom_ = 0;
 
-      typeCase_ = 0;
-      type_ = null;
+      aMCFNCJDNHJCase_ = 0;
+      aMCFNCJDNHJ_ = null;
       return this;
     }
 
@@ -779,36 +860,42 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public POGOProtos.Rpc.LootItemProto buildPartial() {
       POGOProtos.Rpc.LootItemProto result = new POGOProtos.Rpc.LootItemProto(this);
-      if (typeCase_ == 1) {
-        result.type_ = type_;
+      if (aMCFNCJDNHJCase_ == 1) {
+        result.aMCFNCJDNHJ_ = aMCFNCJDNHJ_;
       }
-      if (typeCase_ == 2) {
-        result.type_ = type_;
+      if (aMCFNCJDNHJCase_ == 2) {
+        result.aMCFNCJDNHJ_ = aMCFNCJDNHJ_;
       }
-      if (typeCase_ == 3) {
-        result.type_ = type_;
+      if (aMCFNCJDNHJCase_ == 3) {
+        result.aMCFNCJDNHJ_ = aMCFNCJDNHJ_;
       }
-      if (typeCase_ == 4) {
-        result.type_ = type_;
+      if (aMCFNCJDNHJCase_ == 4) {
+        result.aMCFNCJDNHJ_ = aMCFNCJDNHJ_;
       }
-      if (typeCase_ == 6) {
-        result.type_ = type_;
+      if (aMCFNCJDNHJCase_ == 6) {
+        result.aMCFNCJDNHJ_ = aMCFNCJDNHJ_;
       }
-      if (typeCase_ == 7) {
+      if (aMCFNCJDNHJCase_ == 7) {
         if (pokemonEggBuilder_ == null) {
-          result.type_ = type_;
+          result.aMCFNCJDNHJ_ = aMCFNCJDNHJ_;
         } else {
-          result.type_ = pokemonEggBuilder_.build();
+          result.aMCFNCJDNHJ_ = pokemonEggBuilder_.build();
         }
       }
-      if (typeCase_ == 8) {
-        result.type_ = type_;
+      if (aMCFNCJDNHJCase_ == 8) {
+        result.aMCFNCJDNHJ_ = aMCFNCJDNHJ_;
       }
-      if (typeCase_ == 9) {
-        result.type_ = type_;
+      if (aMCFNCJDNHJCase_ == 9) {
+        result.aMCFNCJDNHJ_ = aMCFNCJDNHJ_;
       }
-      result.count_ = count_;
-      result.typeCase_ = typeCase_;
+      if (aMCFNCJDNHJCase_ == 10) {
+        result.aMCFNCJDNHJ_ = aMCFNCJDNHJ_;
+      }
+      if (aMCFNCJDNHJCase_ == 11) {
+        result.aMCFNCJDNHJ_ = aMCFNCJDNHJ_;
+      }
+      result.aihjjphknom_ = aihjjphknom_;
+      result.aMCFNCJDNHJCase_ = aMCFNCJDNHJCase_;
       onBuilt();
       return result;
     }
@@ -857,10 +944,10 @@ private static final long serialVersionUID = 0L;
 
     public Builder mergeFrom(POGOProtos.Rpc.LootItemProto other) {
       if (other == POGOProtos.Rpc.LootItemProto.getDefaultInstance()) return this;
-      if (other.getCount() != 0) {
-        setCount(other.getCount());
+      if (other.getAihjjphknom() != 0) {
+        setAihjjphknom(other.getAihjjphknom());
       }
-      switch (other.getTypeCase()) {
+      switch (other.getAMCFNCJDNHJCase()) {
         case ITEM: {
           setItemValue(other.getItemValue());
           break;
@@ -886,18 +973,26 @@ private static final long serialVersionUID = 0L;
           break;
         }
         case AVATAR_TEMPLATE_ID: {
-          typeCase_ = 8;
-          type_ = other.type_;
+          aMCFNCJDNHJCase_ = 8;
+          aMCFNCJDNHJ_ = other.aMCFNCJDNHJ_;
           onChanged();
           break;
         }
         case STICKER_ID: {
-          typeCase_ = 9;
-          type_ = other.type_;
+          aMCFNCJDNHJCase_ = 9;
+          aMCFNCJDNHJ_ = other.aMCFNCJDNHJ_;
           onChanged();
           break;
         }
-        case TYPE_NOT_SET: {
+        case MEGA_ENERGY_POKEMON_ID: {
+          setMegaEnergyPokemonIdValue(other.getMegaEnergyPokemonIdValue());
+          break;
+        }
+        case XL_CANDY: {
+          setXlCandyValue(other.getXlCandyValue());
+          break;
+        }
+        case AMCFNCJDNHJ_NOT_SET: {
           break;
         }
       }
@@ -929,17 +1024,17 @@ private static final long serialVersionUID = 0L;
       }
       return this;
     }
-    private int typeCase_ = 0;
-    private java.lang.Object type_;
-    public TypeCase
-        getTypeCase() {
-      return TypeCase.forNumber(
-          typeCase_);
+    private int aMCFNCJDNHJCase_ = 0;
+    private java.lang.Object aMCFNCJDNHJ_;
+    public AMCFNCJDNHJCase
+        getAMCFNCJDNHJCase() {
+      return AMCFNCJDNHJCase.forNumber(
+          aMCFNCJDNHJCase_);
     }
 
-    public Builder clearType() {
-      typeCase_ = 0;
-      type_ = null;
+    public Builder clearAMCFNCJDNHJ() {
+      aMCFNCJDNHJCase_ = 0;
+      aMCFNCJDNHJ_ = null;
       onChanged();
       return this;
     }
@@ -949,10 +1044,9 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.Item item = 1;</code>
      * @return The enum numeric value on the wire for item.
      */
-    @java.lang.Override
     public int getItemValue() {
-      if (typeCase_ == 1) {
-        return ((java.lang.Integer) type_).intValue();
+      if (aMCFNCJDNHJCase_ == 1) {
+        return ((java.lang.Integer) aMCFNCJDNHJ_).intValue();
       }
       return 0;
     }
@@ -962,8 +1056,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setItemValue(int value) {
-      typeCase_ = 1;
-      type_ = value;
+      aMCFNCJDNHJCase_ = 1;
+      aMCFNCJDNHJ_ = value;
       onChanged();
       return this;
     }
@@ -971,15 +1065,14 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.Item item = 1;</code>
      * @return The item.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.Item getItem() {
-      if (typeCase_ == 1) {
+      if (aMCFNCJDNHJCase_ == 1) {
         @SuppressWarnings("deprecation")
         POGOProtos.Rpc.Item result = POGOProtos.Rpc.Item.valueOf(
-            (java.lang.Integer) type_);
+            (java.lang.Integer) aMCFNCJDNHJ_);
         return result == null ? POGOProtos.Rpc.Item.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.Item.UNKNOWN;
+      return POGOProtos.Rpc.Item.ITEM_UNKNOWN;
     }
     /**
      * <code>.POGOProtos.Rpc.Item item = 1;</code>
@@ -990,8 +1083,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      typeCase_ = 1;
-      type_ = value.getNumber();
+      aMCFNCJDNHJCase_ = 1;
+      aMCFNCJDNHJ_ = value.getNumber();
       onChanged();
       return this;
     }
@@ -1000,9 +1093,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearItem() {
-      if (typeCase_ == 1) {
-        typeCase_ = 0;
-        type_ = null;
+      if (aMCFNCJDNHJCase_ == 1) {
+        aMCFNCJDNHJCase_ = 0;
+        aMCFNCJDNHJ_ = null;
         onChanged();
       }
       return this;
@@ -1013,8 +1106,8 @@ private static final long serialVersionUID = 0L;
      * @return The stardust.
      */
     public boolean getStardust() {
-      if (typeCase_ == 2) {
-        return (java.lang.Boolean) type_;
+      if (aMCFNCJDNHJCase_ == 2) {
+        return (java.lang.Boolean) aMCFNCJDNHJ_;
       }
       return false;
     }
@@ -1024,8 +1117,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStardust(boolean value) {
-      typeCase_ = 2;
-      type_ = value;
+      aMCFNCJDNHJCase_ = 2;
+      aMCFNCJDNHJ_ = value;
       onChanged();
       return this;
     }
@@ -1034,9 +1127,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearStardust() {
-      if (typeCase_ == 2) {
-        typeCase_ = 0;
-        type_ = null;
+      if (aMCFNCJDNHJCase_ == 2) {
+        aMCFNCJDNHJCase_ = 0;
+        aMCFNCJDNHJ_ = null;
         onChanged();
       }
       return this;
@@ -1047,8 +1140,8 @@ private static final long serialVersionUID = 0L;
      * @return The pokecoin.
      */
     public boolean getPokecoin() {
-      if (typeCase_ == 3) {
-        return (java.lang.Boolean) type_;
+      if (aMCFNCJDNHJCase_ == 3) {
+        return (java.lang.Boolean) aMCFNCJDNHJ_;
       }
       return false;
     }
@@ -1058,8 +1151,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokecoin(boolean value) {
-      typeCase_ = 3;
-      type_ = value;
+      aMCFNCJDNHJCase_ = 3;
+      aMCFNCJDNHJ_ = value;
       onChanged();
       return this;
     }
@@ -1068,9 +1161,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokecoin() {
-      if (typeCase_ == 3) {
-        typeCase_ = 0;
-        type_ = null;
+      if (aMCFNCJDNHJCase_ == 3) {
+        aMCFNCJDNHJCase_ = 0;
+        aMCFNCJDNHJ_ = null;
         onChanged();
       }
       return this;
@@ -1080,10 +1173,9 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_candy = 4;</code>
      * @return The enum numeric value on the wire for pokemonCandy.
      */
-    @java.lang.Override
     public int getPokemonCandyValue() {
-      if (typeCase_ == 4) {
-        return ((java.lang.Integer) type_).intValue();
+      if (aMCFNCJDNHJCase_ == 4) {
+        return ((java.lang.Integer) aMCFNCJDNHJ_).intValue();
       }
       return 0;
     }
@@ -1093,8 +1185,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setPokemonCandyValue(int value) {
-      typeCase_ = 4;
-      type_ = value;
+      aMCFNCJDNHJCase_ = 4;
+      aMCFNCJDNHJ_ = value;
       onChanged();
       return this;
     }
@@ -1102,15 +1194,14 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_candy = 4;</code>
      * @return The pokemonCandy.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.HoloPokemonId getPokemonCandy() {
-      if (typeCase_ == 4) {
+      if (aMCFNCJDNHJCase_ == 4) {
         @SuppressWarnings("deprecation")
         POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
-            (java.lang.Integer) type_);
+            (java.lang.Integer) aMCFNCJDNHJ_);
         return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
       }
-      return POGOProtos.Rpc.HoloPokemonId.POKEMON_UNSET;
+      return POGOProtos.Rpc.HoloPokemonId.MISSINGNO;
     }
     /**
      * <code>.POGOProtos.Rpc.HoloPokemonId pokemon_candy = 4;</code>
@@ -1121,8 +1212,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
         throw new NullPointerException();
       }
-      typeCase_ = 4;
-      type_ = value.getNumber();
+      aMCFNCJDNHJCase_ = 4;
+      aMCFNCJDNHJ_ = value.getNumber();
       onChanged();
       return this;
     }
@@ -1131,9 +1222,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearPokemonCandy() {
-      if (typeCase_ == 4) {
-        typeCase_ = 0;
-        type_ = null;
+      if (aMCFNCJDNHJCase_ == 4) {
+        aMCFNCJDNHJCase_ = 0;
+        aMCFNCJDNHJ_ = null;
         onChanged();
       }
       return this;
@@ -1144,8 +1235,8 @@ private static final long serialVersionUID = 0L;
      * @return The experience.
      */
     public boolean getExperience() {
-      if (typeCase_ == 6) {
-        return (java.lang.Boolean) type_;
+      if (aMCFNCJDNHJCase_ == 6) {
+        return (java.lang.Boolean) aMCFNCJDNHJ_;
       }
       return false;
     }
@@ -1155,8 +1246,8 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setExperience(boolean value) {
-      typeCase_ = 6;
-      type_ = value;
+      aMCFNCJDNHJCase_ = 6;
+      aMCFNCJDNHJ_ = value;
       onChanged();
       return this;
     }
@@ -1165,151 +1256,148 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearExperience() {
-      if (typeCase_ == 6) {
-        typeCase_ = 0;
-        type_ = null;
+      if (aMCFNCJDNHJCase_ == 6) {
+        aMCFNCJDNHJCase_ = 0;
+        aMCFNCJDNHJ_ = null;
         onChanged();
       }
       return this;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> pokemonEggBuilder_;
+        POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder> pokemonEggBuilder_;
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
      * @return Whether the pokemonEgg field is set.
      */
-    @java.lang.Override
     public boolean hasPokemonEgg() {
-      return typeCase_ == 7;
+      return aMCFNCJDNHJCase_ == 7;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
      * @return The pokemonEgg.
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PokemonProto getPokemonEgg() {
+    public POGOProtos.Rpc.KHNLPGENFBI getPokemonEgg() {
       if (pokemonEggBuilder_ == null) {
-        if (typeCase_ == 7) {
-          return (POGOProtos.Rpc.PokemonProto) type_;
+        if (aMCFNCJDNHJCase_ == 7) {
+          return (POGOProtos.Rpc.KHNLPGENFBI) aMCFNCJDNHJ_;
         }
-        return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+        return POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
       } else {
-        if (typeCase_ == 7) {
+        if (aMCFNCJDNHJCase_ == 7) {
           return pokemonEggBuilder_.getMessage();
         }
-        return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+        return POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
      */
-    public Builder setPokemonEgg(POGOProtos.Rpc.PokemonProto value) {
+    public Builder setPokemonEgg(POGOProtos.Rpc.KHNLPGENFBI value) {
       if (pokemonEggBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        type_ = value;
+        aMCFNCJDNHJ_ = value;
         onChanged();
       } else {
         pokemonEggBuilder_.setMessage(value);
       }
-      typeCase_ = 7;
+      aMCFNCJDNHJCase_ = 7;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
      */
     public Builder setPokemonEgg(
-        POGOProtos.Rpc.PokemonProto.Builder builderForValue) {
+        POGOProtos.Rpc.KHNLPGENFBI.Builder builderForValue) {
       if (pokemonEggBuilder_ == null) {
-        type_ = builderForValue.build();
+        aMCFNCJDNHJ_ = builderForValue.build();
         onChanged();
       } else {
         pokemonEggBuilder_.setMessage(builderForValue.build());
       }
-      typeCase_ = 7;
+      aMCFNCJDNHJCase_ = 7;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
      */
-    public Builder mergePokemonEgg(POGOProtos.Rpc.PokemonProto value) {
+    public Builder mergePokemonEgg(POGOProtos.Rpc.KHNLPGENFBI value) {
       if (pokemonEggBuilder_ == null) {
-        if (typeCase_ == 7 &&
-            type_ != POGOProtos.Rpc.PokemonProto.getDefaultInstance()) {
-          type_ = POGOProtos.Rpc.PokemonProto.newBuilder((POGOProtos.Rpc.PokemonProto) type_)
+        if (aMCFNCJDNHJCase_ == 7 &&
+            aMCFNCJDNHJ_ != POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance()) {
+          aMCFNCJDNHJ_ = POGOProtos.Rpc.KHNLPGENFBI.newBuilder((POGOProtos.Rpc.KHNLPGENFBI) aMCFNCJDNHJ_)
               .mergeFrom(value).buildPartial();
         } else {
-          type_ = value;
+          aMCFNCJDNHJ_ = value;
         }
         onChanged();
       } else {
-        if (typeCase_ == 7) {
+        if (aMCFNCJDNHJCase_ == 7) {
           pokemonEggBuilder_.mergeFrom(value);
         }
         pokemonEggBuilder_.setMessage(value);
       }
-      typeCase_ = 7;
+      aMCFNCJDNHJCase_ = 7;
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
      */
     public Builder clearPokemonEgg() {
       if (pokemonEggBuilder_ == null) {
-        if (typeCase_ == 7) {
-          typeCase_ = 0;
-          type_ = null;
+        if (aMCFNCJDNHJCase_ == 7) {
+          aMCFNCJDNHJCase_ = 0;
+          aMCFNCJDNHJ_ = null;
           onChanged();
         }
       } else {
-        if (typeCase_ == 7) {
-          typeCase_ = 0;
-          type_ = null;
+        if (aMCFNCJDNHJCase_ == 7) {
+          aMCFNCJDNHJCase_ = 0;
+          aMCFNCJDNHJ_ = null;
         }
         pokemonEggBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
      */
-    public POGOProtos.Rpc.PokemonProto.Builder getPokemonEggBuilder() {
+    public POGOProtos.Rpc.KHNLPGENFBI.Builder getPokemonEggBuilder() {
       return getPokemonEggFieldBuilder().getBuilder();
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
      */
-    @java.lang.Override
-    public POGOProtos.Rpc.PokemonProtoOrBuilder getPokemonEggOrBuilder() {
-      if ((typeCase_ == 7) && (pokemonEggBuilder_ != null)) {
+    public POGOProtos.Rpc.KHNLPGENFBIOrBuilder getPokemonEggOrBuilder() {
+      if ((aMCFNCJDNHJCase_ == 7) && (pokemonEggBuilder_ != null)) {
         return pokemonEggBuilder_.getMessageOrBuilder();
       } else {
-        if (typeCase_ == 7) {
-          return (POGOProtos.Rpc.PokemonProto) type_;
+        if (aMCFNCJDNHJCase_ == 7) {
+          return (POGOProtos.Rpc.KHNLPGENFBI) aMCFNCJDNHJ_;
         }
-        return POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+        return POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
       }
     }
     /**
-     * <code>.POGOProtos.Rpc.PokemonProto pokemon_egg = 7;</code>
+     * <code>.POGOProtos.Rpc.KHNLPGENFBI pokemon_egg = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder> 
+        POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder> 
         getPokemonEggFieldBuilder() {
       if (pokemonEggBuilder_ == null) {
-        if (!(typeCase_ == 7)) {
-          type_ = POGOProtos.Rpc.PokemonProto.getDefaultInstance();
+        if (!(aMCFNCJDNHJCase_ == 7)) {
+          aMCFNCJDNHJ_ = POGOProtos.Rpc.KHNLPGENFBI.getDefaultInstance();
         }
         pokemonEggBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            POGOProtos.Rpc.PokemonProto, POGOProtos.Rpc.PokemonProto.Builder, POGOProtos.Rpc.PokemonProtoOrBuilder>(
-                (POGOProtos.Rpc.PokemonProto) type_,
+            POGOProtos.Rpc.KHNLPGENFBI, POGOProtos.Rpc.KHNLPGENFBI.Builder, POGOProtos.Rpc.KHNLPGENFBIOrBuilder>(
+                (POGOProtos.Rpc.KHNLPGENFBI) aMCFNCJDNHJ_,
                 getParentForChildren(),
                 isClean());
-        type_ = null;
+        aMCFNCJDNHJ_ = null;
       }
-      typeCase_ = 7;
+      aMCFNCJDNHJCase_ = 7;
       onChanged();;
       return pokemonEggBuilder_;
     }
@@ -1318,18 +1406,17 @@ private static final long serialVersionUID = 0L;
      * <code>string avatar_template_id = 8;</code>
      * @return The avatarTemplateId.
      */
-    @java.lang.Override
     public java.lang.String getAvatarTemplateId() {
       java.lang.Object ref = "";
-      if (typeCase_ == 8) {
-        ref = type_;
+      if (aMCFNCJDNHJCase_ == 8) {
+        ref = aMCFNCJDNHJ_;
       }
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        if (typeCase_ == 8) {
-          type_ = s;
+        if (aMCFNCJDNHJCase_ == 8) {
+          aMCFNCJDNHJ_ = s;
         }
         return s;
       } else {
@@ -1340,19 +1427,18 @@ private static final long serialVersionUID = 0L;
      * <code>string avatar_template_id = 8;</code>
      * @return The bytes for avatarTemplateId.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getAvatarTemplateIdBytes() {
       java.lang.Object ref = "";
-      if (typeCase_ == 8) {
-        ref = type_;
+      if (aMCFNCJDNHJCase_ == 8) {
+        ref = aMCFNCJDNHJ_;
       }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        if (typeCase_ == 8) {
-          type_ = b;
+        if (aMCFNCJDNHJCase_ == 8) {
+          aMCFNCJDNHJ_ = b;
         }
         return b;
       } else {
@@ -1369,8 +1455,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
     throw new NullPointerException();
   }
-  typeCase_ = 8;
-      type_ = value;
+  aMCFNCJDNHJCase_ = 8;
+      aMCFNCJDNHJ_ = value;
       onChanged();
       return this;
     }
@@ -1379,9 +1465,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearAvatarTemplateId() {
-      if (typeCase_ == 8) {
-        typeCase_ = 0;
-        type_ = null;
+      if (aMCFNCJDNHJCase_ == 8) {
+        aMCFNCJDNHJCase_ = 0;
+        aMCFNCJDNHJ_ = null;
         onChanged();
       }
       return this;
@@ -1397,8 +1483,8 @@ private static final long serialVersionUID = 0L;
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-      typeCase_ = 8;
-      type_ = value;
+      aMCFNCJDNHJCase_ = 8;
+      aMCFNCJDNHJ_ = value;
       onChanged();
       return this;
     }
@@ -1407,18 +1493,17 @@ private static final long serialVersionUID = 0L;
      * <code>string sticker_id = 9;</code>
      * @return The stickerId.
      */
-    @java.lang.Override
     public java.lang.String getStickerId() {
       java.lang.Object ref = "";
-      if (typeCase_ == 9) {
-        ref = type_;
+      if (aMCFNCJDNHJCase_ == 9) {
+        ref = aMCFNCJDNHJ_;
       }
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        if (typeCase_ == 9) {
-          type_ = s;
+        if (aMCFNCJDNHJCase_ == 9) {
+          aMCFNCJDNHJ_ = s;
         }
         return s;
       } else {
@@ -1429,19 +1514,18 @@ private static final long serialVersionUID = 0L;
      * <code>string sticker_id = 9;</code>
      * @return The bytes for stickerId.
      */
-    @java.lang.Override
     public com.google.protobuf.ByteString
         getStickerIdBytes() {
       java.lang.Object ref = "";
-      if (typeCase_ == 9) {
-        ref = type_;
+      if (aMCFNCJDNHJCase_ == 9) {
+        ref = aMCFNCJDNHJ_;
       }
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        if (typeCase_ == 9) {
-          type_ = b;
+        if (aMCFNCJDNHJCase_ == 9) {
+          aMCFNCJDNHJ_ = b;
         }
         return b;
       } else {
@@ -1458,8 +1542,8 @@ private static final long serialVersionUID = 0L;
       if (value == null) {
     throw new NullPointerException();
   }
-  typeCase_ = 9;
-      type_ = value;
+  aMCFNCJDNHJCase_ = 9;
+      aMCFNCJDNHJ_ = value;
       onChanged();
       return this;
     }
@@ -1468,9 +1552,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder clearStickerId() {
-      if (typeCase_ == 9) {
-        typeCase_ = 0;
-        type_ = null;
+      if (aMCFNCJDNHJCase_ == 9) {
+        aMCFNCJDNHJCase_ = 0;
+        aMCFNCJDNHJ_ = null;
         onChanged();
       }
       return this;
@@ -1486,39 +1570,160 @@ private static final long serialVersionUID = 0L;
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
-      typeCase_ = 9;
-      type_ = value;
+      aMCFNCJDNHJCase_ = 9;
+      aMCFNCJDNHJ_ = value;
       onChanged();
       return this;
     }
 
-    private int count_ ;
     /**
-     * <code>int32 count = 5;</code>
-     * @return The count.
+     * <code>.POGOProtos.Rpc.HoloPokemonId mega_energy_pokemon_id = 10;</code>
+     * @return The enum numeric value on the wire for megaEnergyPokemonId.
      */
-    @java.lang.Override
-    public int getCount() {
-      return count_;
+    public int getMegaEnergyPokemonIdValue() {
+      if (aMCFNCJDNHJCase_ == 10) {
+        return ((java.lang.Integer) aMCFNCJDNHJ_).intValue();
+      }
+      return 0;
     }
     /**
-     * <code>int32 count = 5;</code>
-     * @param value The count to set.
+     * <code>.POGOProtos.Rpc.HoloPokemonId mega_energy_pokemon_id = 10;</code>
+     * @param value The enum numeric value on the wire for megaEnergyPokemonId to set.
      * @return This builder for chaining.
      */
-    public Builder setCount(int value) {
-      
-      count_ = value;
+    public Builder setMegaEnergyPokemonIdValue(int value) {
+      aMCFNCJDNHJCase_ = 10;
+      aMCFNCJDNHJ_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>int32 count = 5;</code>
+     * <code>.POGOProtos.Rpc.HoloPokemonId mega_energy_pokemon_id = 10;</code>
+     * @return The megaEnergyPokemonId.
+     */
+    public POGOProtos.Rpc.HoloPokemonId getMegaEnergyPokemonId() {
+      if (aMCFNCJDNHJCase_ == 10) {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
+            (java.lang.Integer) aMCFNCJDNHJ_);
+        return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+      }
+      return POGOProtos.Rpc.HoloPokemonId.MISSINGNO;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId mega_energy_pokemon_id = 10;</code>
+     * @param value The megaEnergyPokemonId to set.
      * @return This builder for chaining.
      */
-    public Builder clearCount() {
+    public Builder setMegaEnergyPokemonId(POGOProtos.Rpc.HoloPokemonId value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      aMCFNCJDNHJCase_ = 10;
+      aMCFNCJDNHJ_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId mega_energy_pokemon_id = 10;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearMegaEnergyPokemonId() {
+      if (aMCFNCJDNHJCase_ == 10) {
+        aMCFNCJDNHJCase_ = 0;
+        aMCFNCJDNHJ_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId xl_candy = 11;</code>
+     * @return The enum numeric value on the wire for xlCandy.
+     */
+    public int getXlCandyValue() {
+      if (aMCFNCJDNHJCase_ == 11) {
+        return ((java.lang.Integer) aMCFNCJDNHJ_).intValue();
+      }
+      return 0;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId xl_candy = 11;</code>
+     * @param value The enum numeric value on the wire for xlCandy to set.
+     * @return This builder for chaining.
+     */
+    public Builder setXlCandyValue(int value) {
+      aMCFNCJDNHJCase_ = 11;
+      aMCFNCJDNHJ_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId xl_candy = 11;</code>
+     * @return The xlCandy.
+     */
+    public POGOProtos.Rpc.HoloPokemonId getXlCandy() {
+      if (aMCFNCJDNHJCase_ == 11) {
+        @SuppressWarnings("deprecation")
+        POGOProtos.Rpc.HoloPokemonId result = POGOProtos.Rpc.HoloPokemonId.valueOf(
+            (java.lang.Integer) aMCFNCJDNHJ_);
+        return result == null ? POGOProtos.Rpc.HoloPokemonId.UNRECOGNIZED : result;
+      }
+      return POGOProtos.Rpc.HoloPokemonId.MISSINGNO;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId xl_candy = 11;</code>
+     * @param value The xlCandy to set.
+     * @return This builder for chaining.
+     */
+    public Builder setXlCandy(POGOProtos.Rpc.HoloPokemonId value) {
+      if (value == null) {
+        throw new NullPointerException();
+      }
+      aMCFNCJDNHJCase_ = 11;
+      aMCFNCJDNHJ_ = value.getNumber();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>.POGOProtos.Rpc.HoloPokemonId xl_candy = 11;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearXlCandy() {
+      if (aMCFNCJDNHJCase_ == 11) {
+        aMCFNCJDNHJCase_ = 0;
+        aMCFNCJDNHJ_ = null;
+        onChanged();
+      }
+      return this;
+    }
+
+    private int aihjjphknom_ ;
+    /**
+     * <code>int32 aihjjphknom = 5;</code>
+     * @return The aihjjphknom.
+     */
+    public int getAihjjphknom() {
+      return aihjjphknom_;
+    }
+    /**
+     * <code>int32 aihjjphknom = 5;</code>
+     * @param value The aihjjphknom to set.
+     * @return This builder for chaining.
+     */
+    public Builder setAihjjphknom(int value) {
       
-      count_ = 0;
+      aihjjphknom_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 aihjjphknom = 5;</code>
+     * @return This builder for chaining.
+     */
+    public Builder clearAihjjphknom() {
+      
+      aihjjphknom_ = 0;
       onChanged();
       return this;
     }

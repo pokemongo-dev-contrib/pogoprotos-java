@@ -4,145 +4,141 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: KNHKEIJMLBP
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.BuddyActivity}
  */
 public enum BuddyActivity
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_UNSET = 0;</code>
+   * <code>BUDDY_ACTIVITY_UNSET = 0;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_UNSET(0),
+  BUDDY_ACTIVITY_UNSET(0),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_FEED = 1;</code>
+   * <code>BUDDY_ACTIVITY_FEED = 1;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_FEED(1),
+  BUDDY_ACTIVITY_FEED(1),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_PET = 2;</code>
+   * <code>BUDDY_ACTIVITY_PET = 2;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_PET(2),
+  BUDDY_ACTIVITY_PET(2),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_SNAPSHOT = 3;</code>
+   * <code>BUDDY_ACTIVITY_SNAPSHOT = 3;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_SNAPSHOT(3),
+  BUDDY_ACTIVITY_SNAPSHOT(3),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_WALK = 4;</code>
+   * <code>BUDDY_ACTIVITY_WALK = 4;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_WALK(4),
+  BUDDY_ACTIVITY_WALK(4),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_NEW_POIS = 5;</code>
+   * <code>BUDDY_ACTIVITY_NEW_POIS = 5;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_NEW_POIS(5),
+  BUDDY_ACTIVITY_NEW_POIS(5),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_GYM_BATTLE = 6;</code>
+   * <code>BUDDY_ACTIVITY_GYM_BATTLE = 6;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_GYM_BATTLE(6),
+  BUDDY_ACTIVITY_GYM_BATTLE(6),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_RAID_BATTLE = 7;</code>
+   * <code>BUDDY_ACTIVITY_RAID_BATTLE = 7;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_RAID_BATTLE(7),
+  BUDDY_ACTIVITY_RAID_BATTLE(7),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_NPC_BATTLE = 8;</code>
+   * <code>BUDDY_ACTIVITY_NPC_BATTLE = 8;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_NPC_BATTLE(8),
+  BUDDY_ACTIVITY_NPC_BATTLE(8),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_PVP_BATTLE = 9;</code>
+   * <code>BUDDY_ACTIVITY_PVP_BATTLE = 9;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_PVP_BATTLE(9),
+  BUDDY_ACTIVITY_PVP_BATTLE(9),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_SOUVENIRS = 10;</code>
+   * <code>BUDDY_ACTIVITY_OPEN_SOUVENIRS = 10;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_SOUVENIRS(10),
+  BUDDY_ACTIVITY_OPEN_SOUVENIRS(10),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_CONSUMABLES = 11;</code>
+   * <code>BUDDY_ACTIVITY_OPEN_CONSUMABLES = 11;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_CONSUMABLES(11),
+  BUDDY_ACTIVITY_OPEN_CONSUMABLES(11),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_GRUNT = 12;</code>
+   * <code>BUDDY_ACTIVITY_INVASION_GRUNT = 12;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_GRUNT(12),
+  BUDDY_ACTIVITY_INVASION_GRUNT(12),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_LEADER = 13;</code>
+   * <code>BUDDY_ACTIVITY_INVASION_LEADER = 13;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_LEADER(13),
+  BUDDY_ACTIVITY_INVASION_LEADER(13),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_GIOVANNI = 14;</code>
+   * <code>BUDDY_ACTIVITY_INVASION_GIOVANNI = 14;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_GIOVANNI(14),
+  BUDDY_ACTIVITY_INVASION_GIOVANNI(14),
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_ATTRACTIVE_POI = 15;</code>
+   * <code>BUDDY_ACTIVITY_ATTRACTIVE_POI = 15;</code>
    */
-  BUDDY_ACTIVITY_BUDDY_ACTIVITY_ATTRACTIVE_POI(15),
+  BUDDY_ACTIVITY_ATTRACTIVE_POI(15),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_UNSET = 0;</code>
+   * <code>BUDDY_ACTIVITY_UNSET = 0;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_UNSET_VALUE = 0;
+  public static final int BUDDY_ACTIVITY_UNSET_VALUE = 0;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_FEED = 1;</code>
+   * <code>BUDDY_ACTIVITY_FEED = 1;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_FEED_VALUE = 1;
+  public static final int BUDDY_ACTIVITY_FEED_VALUE = 1;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_PET = 2;</code>
+   * <code>BUDDY_ACTIVITY_PET = 2;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_PET_VALUE = 2;
+  public static final int BUDDY_ACTIVITY_PET_VALUE = 2;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_SNAPSHOT = 3;</code>
+   * <code>BUDDY_ACTIVITY_SNAPSHOT = 3;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_SNAPSHOT_VALUE = 3;
+  public static final int BUDDY_ACTIVITY_SNAPSHOT_VALUE = 3;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_WALK = 4;</code>
+   * <code>BUDDY_ACTIVITY_WALK = 4;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_WALK_VALUE = 4;
+  public static final int BUDDY_ACTIVITY_WALK_VALUE = 4;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_NEW_POIS = 5;</code>
+   * <code>BUDDY_ACTIVITY_NEW_POIS = 5;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_NEW_POIS_VALUE = 5;
+  public static final int BUDDY_ACTIVITY_NEW_POIS_VALUE = 5;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_GYM_BATTLE = 6;</code>
+   * <code>BUDDY_ACTIVITY_GYM_BATTLE = 6;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_GYM_BATTLE_VALUE = 6;
+  public static final int BUDDY_ACTIVITY_GYM_BATTLE_VALUE = 6;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_RAID_BATTLE = 7;</code>
+   * <code>BUDDY_ACTIVITY_RAID_BATTLE = 7;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_RAID_BATTLE_VALUE = 7;
+  public static final int BUDDY_ACTIVITY_RAID_BATTLE_VALUE = 7;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_NPC_BATTLE = 8;</code>
+   * <code>BUDDY_ACTIVITY_NPC_BATTLE = 8;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_NPC_BATTLE_VALUE = 8;
+  public static final int BUDDY_ACTIVITY_NPC_BATTLE_VALUE = 8;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_PVP_BATTLE = 9;</code>
+   * <code>BUDDY_ACTIVITY_PVP_BATTLE = 9;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_PVP_BATTLE_VALUE = 9;
+  public static final int BUDDY_ACTIVITY_PVP_BATTLE_VALUE = 9;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_SOUVENIRS = 10;</code>
+   * <code>BUDDY_ACTIVITY_OPEN_SOUVENIRS = 10;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_SOUVENIRS_VALUE = 10;
+  public static final int BUDDY_ACTIVITY_OPEN_SOUVENIRS_VALUE = 10;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_CONSUMABLES = 11;</code>
+   * <code>BUDDY_ACTIVITY_OPEN_CONSUMABLES = 11;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_CONSUMABLES_VALUE = 11;
+  public static final int BUDDY_ACTIVITY_OPEN_CONSUMABLES_VALUE = 11;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_GRUNT = 12;</code>
+   * <code>BUDDY_ACTIVITY_INVASION_GRUNT = 12;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_GRUNT_VALUE = 12;
+  public static final int BUDDY_ACTIVITY_INVASION_GRUNT_VALUE = 12;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_LEADER = 13;</code>
+   * <code>BUDDY_ACTIVITY_INVASION_LEADER = 13;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_LEADER_VALUE = 13;
+  public static final int BUDDY_ACTIVITY_INVASION_LEADER_VALUE = 13;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_GIOVANNI = 14;</code>
+   * <code>BUDDY_ACTIVITY_INVASION_GIOVANNI = 14;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_GIOVANNI_VALUE = 14;
+  public static final int BUDDY_ACTIVITY_INVASION_GIOVANNI_VALUE = 14;
   /**
-   * <code>BUDDY_ACTIVITY_BUDDY_ACTIVITY_ATTRACTIVE_POI = 15;</code>
+   * <code>BUDDY_ACTIVITY_ATTRACTIVE_POI = 15;</code>
    */
-  public static final int BUDDY_ACTIVITY_BUDDY_ACTIVITY_ATTRACTIVE_POI_VALUE = 15;
+  public static final int BUDDY_ACTIVITY_ATTRACTIVE_POI_VALUE = 15;
 
 
   public final int getNumber() {
@@ -169,22 +165,22 @@ public enum BuddyActivity
    */
   public static BuddyActivity forNumber(int value) {
     switch (value) {
-      case 0: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_UNSET;
-      case 1: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_FEED;
-      case 2: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_PET;
-      case 3: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_SNAPSHOT;
-      case 4: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_WALK;
-      case 5: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_NEW_POIS;
-      case 6: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_GYM_BATTLE;
-      case 7: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_RAID_BATTLE;
-      case 8: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_NPC_BATTLE;
-      case 9: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_PVP_BATTLE;
-      case 10: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_SOUVENIRS;
-      case 11: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_OPEN_CONSUMABLES;
-      case 12: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_GRUNT;
-      case 13: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_LEADER;
-      case 14: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_INVASION_GIOVANNI;
-      case 15: return BUDDY_ACTIVITY_BUDDY_ACTIVITY_ATTRACTIVE_POI;
+      case 0: return BUDDY_ACTIVITY_UNSET;
+      case 1: return BUDDY_ACTIVITY_FEED;
+      case 2: return BUDDY_ACTIVITY_PET;
+      case 3: return BUDDY_ACTIVITY_SNAPSHOT;
+      case 4: return BUDDY_ACTIVITY_WALK;
+      case 5: return BUDDY_ACTIVITY_NEW_POIS;
+      case 6: return BUDDY_ACTIVITY_GYM_BATTLE;
+      case 7: return BUDDY_ACTIVITY_RAID_BATTLE;
+      case 8: return BUDDY_ACTIVITY_NPC_BATTLE;
+      case 9: return BUDDY_ACTIVITY_PVP_BATTLE;
+      case 10: return BUDDY_ACTIVITY_OPEN_SOUVENIRS;
+      case 11: return BUDDY_ACTIVITY_OPEN_CONSUMABLES;
+      case 12: return BUDDY_ACTIVITY_INVASION_GRUNT;
+      case 13: return BUDDY_ACTIVITY_INVASION_LEADER;
+      case 14: return BUDDY_ACTIVITY_INVASION_GIOVANNI;
+      case 15: return BUDDY_ACTIVITY_ATTRACTIVE_POI;
       default: return null;
     }
   }
@@ -203,10 +199,6 @@ public enum BuddyActivity
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -215,7 +207,7 @@ public enum BuddyActivity
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(93);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(17);
   }
 
   private static final BuddyActivity[] VALUES = values();

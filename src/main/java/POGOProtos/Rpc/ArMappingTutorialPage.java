@@ -4,13 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- *----- End analytics -----
- *------------------------------
- *----- Begin armapping -----
- * ref: Niantic.Titan.ArMapping.ArMappingTutorialPage
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.ArMappingTutorialPage}
  */
 public enum ArMappingTutorialPage
@@ -71,10 +64,6 @@ public enum ArMappingTutorialPage
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -83,7 +72,7 @@ public enum ArMappingTutorialPage
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(2);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(5);
   }
 
   private static final ArMappingTutorialPage[] VALUES = values();

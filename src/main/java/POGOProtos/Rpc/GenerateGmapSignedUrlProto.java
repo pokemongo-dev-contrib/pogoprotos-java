@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.GenerateGmapSignedUrlProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GenerateGmapSignedUrlProto}
  */
-public final class GenerateGmapSignedUrlProto extends
+public  final class GenerateGmapSignedUrlProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GenerateGmapSignedUrlProto)
     GenerateGmapSignedUrlProtoOrBuilder {
@@ -150,7 +146,6 @@ private static final long serialVersionUID = 0L;
    * <code>double latitude = 1;</code>
    * @return The latitude.
    */
-  @java.lang.Override
   public double getLatitude() {
     return latitude_;
   }
@@ -161,7 +156,6 @@ private static final long serialVersionUID = 0L;
    * <code>double longitude = 2;</code>
    * @return The longitude.
    */
-  @java.lang.Override
   public double getLongitude() {
     return longitude_;
   }
@@ -172,7 +166,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 width = 3;</code>
    * @return The width.
    */
-  @java.lang.Override
   public int getWidth() {
     return width_;
   }
@@ -183,7 +176,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 height = 4;</code>
    * @return The height.
    */
-  @java.lang.Override
   public int getHeight() {
     return height_;
   }
@@ -194,7 +186,6 @@ private static final long serialVersionUID = 0L;
    * <code>int32 zoom = 5;</code>
    * @return The zoom.
    */
-  @java.lang.Override
   public int getZoom() {
     return zoom_;
   }
@@ -205,7 +196,6 @@ private static final long serialVersionUID = 0L;
    * <code>string language_code = 6;</code>
    * @return The languageCode.
    */
-  @java.lang.Override
   public java.lang.String getLanguageCode() {
     java.lang.Object ref = languageCode_;
     if (ref instanceof java.lang.String) {
@@ -222,7 +212,6 @@ private static final long serialVersionUID = 0L;
    * <code>string language_code = 6;</code>
    * @return The bytes for languageCode.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getLanguageCodeBytes() {
     java.lang.Object ref = languageCode_;
@@ -243,7 +232,6 @@ private static final long serialVersionUID = 0L;
    * <code>string country_code = 7;</code>
    * @return The countryCode.
    */
-  @java.lang.Override
   public java.lang.String getCountryCode() {
     java.lang.Object ref = countryCode_;
     if (ref instanceof java.lang.String) {
@@ -260,7 +248,6 @@ private static final long serialVersionUID = 0L;
    * <code>string country_code = 7;</code>
    * @return The bytes for countryCode.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getCountryCodeBytes() {
     java.lang.Object ref = countryCode_;
@@ -281,7 +268,6 @@ private static final long serialVersionUID = 0L;
    * <code>string map_style = 8;</code>
    * @return The mapStyle.
    */
-  @java.lang.Override
   public java.lang.String getMapStyle() {
     java.lang.Object ref = mapStyle_;
     if (ref instanceof java.lang.String) {
@@ -298,7 +284,6 @@ private static final long serialVersionUID = 0L;
    * <code>string map_style = 8;</code>
    * @return The bytes for mapStyle.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getMapStyleBytes() {
     java.lang.Object ref = mapStyle_;
@@ -319,7 +304,6 @@ private static final long serialVersionUID = 0L;
    * <code>string map_type = 9;</code>
    * @return The mapType.
    */
-  @java.lang.Override
   public java.lang.String getMapType() {
     java.lang.Object ref = mapType_;
     if (ref instanceof java.lang.String) {
@@ -336,7 +320,6 @@ private static final long serialVersionUID = 0L;
    * <code>string map_type = 9;</code>
    * @return The bytes for mapType.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getMapTypeBytes() {
     java.lang.Object ref = mapType_;
@@ -357,7 +340,6 @@ private static final long serialVersionUID = 0L;
    * <code>string icon_params = 10;</code>
    * @return The iconParams.
    */
-  @java.lang.Override
   public java.lang.String getIconParams() {
     java.lang.Object ref = iconParams_;
     if (ref instanceof java.lang.String) {
@@ -374,7 +356,6 @@ private static final long serialVersionUID = 0L;
    * <code>string icon_params = 10;</code>
    * @return The bytes for iconParams.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getIconParamsBytes() {
     java.lang.Object ref = iconParams_;
@@ -643,10 +624,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.GenerateGmapSignedUrlProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GenerateGmapSignedUrlProto}
    */
   public static final class Builder extends
@@ -857,7 +834,6 @@ private static final long serialVersionUID = 0L;
      * <code>double latitude = 1;</code>
      * @return The latitude.
      */
-    @java.lang.Override
     public double getLatitude() {
       return latitude_;
     }
@@ -888,7 +864,6 @@ private static final long serialVersionUID = 0L;
      * <code>double longitude = 2;</code>
      * @return The longitude.
      */
-    @java.lang.Override
     public double getLongitude() {
       return longitude_;
     }
@@ -919,7 +894,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 width = 3;</code>
      * @return The width.
      */
-    @java.lang.Override
     public int getWidth() {
       return width_;
     }
@@ -950,7 +924,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 height = 4;</code>
      * @return The height.
      */
-    @java.lang.Override
     public int getHeight() {
       return height_;
     }
@@ -981,7 +954,6 @@ private static final long serialVersionUID = 0L;
      * <code>int32 zoom = 5;</code>
      * @return The zoom.
      */
-    @java.lang.Override
     public int getZoom() {
       return zoom_;
     }

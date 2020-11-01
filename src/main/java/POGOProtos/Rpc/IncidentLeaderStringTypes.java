@@ -4,10 +4,6 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: CEIOPDGDOLH
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.IncidentLeaderStringTypes}
  */
 public enum IncidentLeaderStringTypes
@@ -140,10 +136,6 @@ public enum IncidentLeaderStringTypes
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -152,7 +144,7 @@ public enum IncidentLeaderStringTypes
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(37);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(67);
   }
 
   private static final IncidentLeaderStringTypes[] VALUES = values();

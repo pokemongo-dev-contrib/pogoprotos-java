@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Titan.Protos.GetImagesForPoiOutProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.GetImagesForPoiOutProto}
  */
-public final class GetImagesForPoiOutProto extends
+public  final class GetImagesForPoiOutProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.GetImagesForPoiOutProto)
     GetImagesForPoiOutProtoOrBuilder {
@@ -107,7 +103,7 @@ private static final long serialVersionUID = 0L;
 
   /**
    * <pre>
-   * ref: Niantic.Titan.Protos.GetImagesForPoiOutProto/Types/Status
+   * ref: Niantic.Titan.Protos.GetImagesForPoiOutProto.Types.Status
    * </pre>
    *
    * Protobuf enum {@code POGOProtos.Rpc.GetImagesForPoiOutProto.Status}
@@ -197,10 +193,6 @@ private static final long serialVersionUID = 0L;
 
     public final com.google.protobuf.Descriptors.EnumValueDescriptor
         getValueDescriptor() {
-      if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalStateException(
-            "Can't get the descriptor of an unrecognized enum value.");
-      }
       return getDescriptor().getValues().get(ordinal());
     }
     public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -241,14 +233,14 @@ private static final long serialVersionUID = 0L;
    * <code>.POGOProtos.Rpc.GetImagesForPoiOutProto.Status status = 1;</code>
    * @return The enum numeric value on the wire for status.
    */
-  @java.lang.Override public int getStatusValue() {
+  public int getStatusValue() {
     return status_;
   }
   /**
    * <code>.POGOProtos.Rpc.GetImagesForPoiOutProto.Status status = 1;</code>
    * @return The status.
    */
-  @java.lang.Override public POGOProtos.Rpc.GetImagesForPoiOutProto.Status getStatus() {
+  public POGOProtos.Rpc.GetImagesForPoiOutProto.Status getStatus() {
     @SuppressWarnings("deprecation")
     POGOProtos.Rpc.GetImagesForPoiOutProto.Status result = POGOProtos.Rpc.GetImagesForPoiOutProto.Status.valueOf(status_);
     return result == null ? POGOProtos.Rpc.GetImagesForPoiOutProto.Status.UNRECOGNIZED : result;
@@ -259,14 +251,12 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProto photo_gallery_poi_images = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProto> getPhotoGalleryPoiImagesList() {
     return photoGalleryPoiImages_;
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProto photo_gallery_poi_images = 2;</code>
    */
-  @java.lang.Override
   public java.util.List<? extends POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProtoOrBuilder> 
       getPhotoGalleryPoiImagesOrBuilderList() {
     return photoGalleryPoiImages_;
@@ -274,21 +264,18 @@ private static final long serialVersionUID = 0L;
   /**
    * <code>repeated .POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProto photo_gallery_poi_images = 2;</code>
    */
-  @java.lang.Override
   public int getPhotoGalleryPoiImagesCount() {
     return photoGalleryPoiImages_.size();
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProto photo_gallery_poi_images = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProto getPhotoGalleryPoiImages(int index) {
     return photoGalleryPoiImages_.get(index);
   }
   /**
    * <code>repeated .POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProto photo_gallery_poi_images = 2;</code>
    */
-  @java.lang.Override
   public POGOProtos.Rpc.GameClientPhotoGalleryPoiImageProtoOrBuilder getPhotoGalleryPoiImagesOrBuilder(
       int index) {
     return photoGalleryPoiImages_.get(index);
@@ -462,10 +449,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Titan.Protos.GetImagesForPoiOutProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.GetImagesForPoiOutProto}
    */
   public static final class Builder extends
@@ -661,7 +644,7 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetImagesForPoiOutProto.Status status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
-    @java.lang.Override public int getStatusValue() {
+    public int getStatusValue() {
       return status_;
     }
     /**
@@ -670,7 +653,6 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setStatusValue(int value) {
-      
       status_ = value;
       onChanged();
       return this;
@@ -679,7 +661,6 @@ private static final long serialVersionUID = 0L;
      * <code>.POGOProtos.Rpc.GetImagesForPoiOutProto.Status status = 1;</code>
      * @return The status.
      */
-    @java.lang.Override
     public POGOProtos.Rpc.GetImagesForPoiOutProto.Status getStatus() {
       @SuppressWarnings("deprecation")
       POGOProtos.Rpc.GetImagesForPoiOutProto.Status result = POGOProtos.Rpc.GetImagesForPoiOutProto.Status.valueOf(status_);

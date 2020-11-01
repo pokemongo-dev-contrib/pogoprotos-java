@@ -4,13 +4,9 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Protos.SendFriendInviteProto
- * </pre>
- *
  * Protobuf type {@code POGOProtos.Rpc.SendFriendInviteProto}
  */
-public final class SendFriendInviteProto extends
+public  final class SendFriendInviteProto extends
     com.google.protobuf.GeneratedMessageV3 implements
     // @@protoc_insertion_point(message_implements:POGOProtos.Rpc.SendFriendInviteProto)
     SendFriendInviteProtoOrBuilder {
@@ -104,7 +100,6 @@ private static final long serialVersionUID = 0L;
    * <code>string player_id = 1;</code>
    * @return The playerId.
    */
-  @java.lang.Override
   public java.lang.String getPlayerId() {
     java.lang.Object ref = playerId_;
     if (ref instanceof java.lang.String) {
@@ -121,7 +116,6 @@ private static final long serialVersionUID = 0L;
    * <code>string player_id = 1;</code>
    * @return The bytes for playerId.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getPlayerIdBytes() {
     java.lang.Object ref = playerId_;
@@ -142,7 +136,6 @@ private static final long serialVersionUID = 0L;
    * <code>string friend_code = 2;</code>
    * @return The friendCode.
    */
-  @java.lang.Override
   public java.lang.String getFriendCode() {
     java.lang.Object ref = friendCode_;
     if (ref instanceof java.lang.String) {
@@ -159,7 +152,6 @@ private static final long serialVersionUID = 0L;
    * <code>string friend_code = 2;</code>
    * @return The bytes for friendCode.
    */
-  @java.lang.Override
   public com.google.protobuf.ByteString
       getFriendCodeBytes() {
     java.lang.Object ref = friendCode_;
@@ -339,10 +331,6 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * <pre>
-   * ref: Niantic.Platform.Protos.SendFriendInviteProto
-   * </pre>
-   *
    * Protobuf type {@code POGOProtos.Rpc.SendFriendInviteProto}
    */
   public static final class Builder extends

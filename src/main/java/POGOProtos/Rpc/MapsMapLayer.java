@@ -4,105 +4,101 @@
 package POGOProtos.Rpc;
 
 /**
- * <pre>
- * ref: Niantic.Platform.Maps.Feature.MapLayer
- * </pre>
- *
  * Protobuf enum {@code POGOProtos.Rpc.MapsMapLayer}
  */
 public enum MapsMapLayer
     implements com.google.protobuf.ProtocolMessageEnum {
   /**
-   * <code>MAPS_MAP_LAYER_UNDEFINED = 0;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_UNDEFINED = 0;</code>
    */
-  MAPS_MAP_LAYER_UNDEFINED(0),
+  MAPS_MAP_LAYER_LAYER_UNDEFINED(0),
   /**
-   * <code>MAPS_MAP_LAYER_BOUNDARIES = 1;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_BOUNDARIES = 1;</code>
    */
-  MAPS_MAP_LAYER_BOUNDARIES(1),
+  MAPS_MAP_LAYER_LAYER_BOUNDARIES(1),
   /**
-   * <code>MAPS_MAP_LAYER_BUILDINGS = 2;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_BUILDINGS = 2;</code>
    */
-  MAPS_MAP_LAYER_BUILDINGS(2),
+  MAPS_MAP_LAYER_LAYER_BUILDINGS(2),
   /**
-   * <code>MAPS_MAP_LAYER_LANDMASS = 3;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_LANDMASS = 3;</code>
    */
-  MAPS_MAP_LAYER_LANDMASS(3),
+  MAPS_MAP_LAYER_LAYER_LANDMASS(3),
   /**
-   * <code>MAPS_MAP_LAYER_LANDUSE = 4;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_LANDUSE = 4;</code>
    */
-  MAPS_MAP_LAYER_LANDUSE(4),
+  MAPS_MAP_LAYER_LAYER_LANDUSE(4),
   /**
-   * <code>MAPS_MAP_LAYER_PLACES = 5;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_PLACES = 5;</code>
    */
-  MAPS_MAP_LAYER_PLACES(5),
+  MAPS_MAP_LAYER_LAYER_PLACES(5),
   /**
-   * <code>MAPS_MAP_LAYER_POIS = 6;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_POIS = 6;</code>
    */
-  MAPS_MAP_LAYER_POIS(6),
+  MAPS_MAP_LAYER_LAYER_POIS(6),
   /**
-   * <code>MAPS_MAP_LAYER_ROADS = 7;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_ROADS = 7;</code>
    */
-  MAPS_MAP_LAYER_ROADS(7),
+  MAPS_MAP_LAYER_LAYER_ROADS(7),
   /**
-   * <code>MAPS_MAP_LAYER_TRANSIT = 8;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_TRANSIT = 8;</code>
    */
-  MAPS_MAP_LAYER_TRANSIT(8),
+  MAPS_MAP_LAYER_LAYER_TRANSIT(8),
   /**
-   * <code>MAPS_MAP_LAYER_WATER = 9;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_WATER = 9;</code>
    */
-  MAPS_MAP_LAYER_WATER(9),
+  MAPS_MAP_LAYER_LAYER_WATER(9),
   /**
-   * <code>MAPS_MAP_LAYER_DEBUG_TILE_BOUNDARIES = 10;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_DEBUG_TILE_BOUNDARIES = 10;</code>
    */
-  MAPS_MAP_LAYER_DEBUG_TILE_BOUNDARIES(10),
+  MAPS_MAP_LAYER_LAYER_DEBUG_TILE_BOUNDARIES(10),
   UNRECOGNIZED(-1),
   ;
 
   /**
-   * <code>MAPS_MAP_LAYER_UNDEFINED = 0;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_UNDEFINED = 0;</code>
    */
-  public static final int MAPS_MAP_LAYER_UNDEFINED_VALUE = 0;
+  public static final int MAPS_MAP_LAYER_LAYER_UNDEFINED_VALUE = 0;
   /**
-   * <code>MAPS_MAP_LAYER_BOUNDARIES = 1;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_BOUNDARIES = 1;</code>
    */
-  public static final int MAPS_MAP_LAYER_BOUNDARIES_VALUE = 1;
+  public static final int MAPS_MAP_LAYER_LAYER_BOUNDARIES_VALUE = 1;
   /**
-   * <code>MAPS_MAP_LAYER_BUILDINGS = 2;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_BUILDINGS = 2;</code>
    */
-  public static final int MAPS_MAP_LAYER_BUILDINGS_VALUE = 2;
+  public static final int MAPS_MAP_LAYER_LAYER_BUILDINGS_VALUE = 2;
   /**
-   * <code>MAPS_MAP_LAYER_LANDMASS = 3;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_LANDMASS = 3;</code>
    */
-  public static final int MAPS_MAP_LAYER_LANDMASS_VALUE = 3;
+  public static final int MAPS_MAP_LAYER_LAYER_LANDMASS_VALUE = 3;
   /**
-   * <code>MAPS_MAP_LAYER_LANDUSE = 4;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_LANDUSE = 4;</code>
    */
-  public static final int MAPS_MAP_LAYER_LANDUSE_VALUE = 4;
+  public static final int MAPS_MAP_LAYER_LAYER_LANDUSE_VALUE = 4;
   /**
-   * <code>MAPS_MAP_LAYER_PLACES = 5;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_PLACES = 5;</code>
    */
-  public static final int MAPS_MAP_LAYER_PLACES_VALUE = 5;
+  public static final int MAPS_MAP_LAYER_LAYER_PLACES_VALUE = 5;
   /**
-   * <code>MAPS_MAP_LAYER_POIS = 6;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_POIS = 6;</code>
    */
-  public static final int MAPS_MAP_LAYER_POIS_VALUE = 6;
+  public static final int MAPS_MAP_LAYER_LAYER_POIS_VALUE = 6;
   /**
-   * <code>MAPS_MAP_LAYER_ROADS = 7;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_ROADS = 7;</code>
    */
-  public static final int MAPS_MAP_LAYER_ROADS_VALUE = 7;
+  public static final int MAPS_MAP_LAYER_LAYER_ROADS_VALUE = 7;
   /**
-   * <code>MAPS_MAP_LAYER_TRANSIT = 8;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_TRANSIT = 8;</code>
    */
-  public static final int MAPS_MAP_LAYER_TRANSIT_VALUE = 8;
+  public static final int MAPS_MAP_LAYER_LAYER_TRANSIT_VALUE = 8;
   /**
-   * <code>MAPS_MAP_LAYER_WATER = 9;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_WATER = 9;</code>
    */
-  public static final int MAPS_MAP_LAYER_WATER_VALUE = 9;
+  public static final int MAPS_MAP_LAYER_LAYER_WATER_VALUE = 9;
   /**
-   * <code>MAPS_MAP_LAYER_DEBUG_TILE_BOUNDARIES = 10;</code>
+   * <code>MAPS_MAP_LAYER_LAYER_DEBUG_TILE_BOUNDARIES = 10;</code>
    */
-  public static final int MAPS_MAP_LAYER_DEBUG_TILE_BOUNDARIES_VALUE = 10;
+  public static final int MAPS_MAP_LAYER_LAYER_DEBUG_TILE_BOUNDARIES_VALUE = 10;
 
 
   public final int getNumber() {
@@ -129,17 +125,17 @@ public enum MapsMapLayer
    */
   public static MapsMapLayer forNumber(int value) {
     switch (value) {
-      case 0: return MAPS_MAP_LAYER_UNDEFINED;
-      case 1: return MAPS_MAP_LAYER_BOUNDARIES;
-      case 2: return MAPS_MAP_LAYER_BUILDINGS;
-      case 3: return MAPS_MAP_LAYER_LANDMASS;
-      case 4: return MAPS_MAP_LAYER_LANDUSE;
-      case 5: return MAPS_MAP_LAYER_PLACES;
-      case 6: return MAPS_MAP_LAYER_POIS;
-      case 7: return MAPS_MAP_LAYER_ROADS;
-      case 8: return MAPS_MAP_LAYER_TRANSIT;
-      case 9: return MAPS_MAP_LAYER_WATER;
-      case 10: return MAPS_MAP_LAYER_DEBUG_TILE_BOUNDARIES;
+      case 0: return MAPS_MAP_LAYER_LAYER_UNDEFINED;
+      case 1: return MAPS_MAP_LAYER_LAYER_BOUNDARIES;
+      case 2: return MAPS_MAP_LAYER_LAYER_BUILDINGS;
+      case 3: return MAPS_MAP_LAYER_LAYER_LANDMASS;
+      case 4: return MAPS_MAP_LAYER_LAYER_LANDUSE;
+      case 5: return MAPS_MAP_LAYER_LAYER_PLACES;
+      case 6: return MAPS_MAP_LAYER_LAYER_POIS;
+      case 7: return MAPS_MAP_LAYER_LAYER_ROADS;
+      case 8: return MAPS_MAP_LAYER_LAYER_TRANSIT;
+      case 9: return MAPS_MAP_LAYER_LAYER_WATER;
+      case 10: return MAPS_MAP_LAYER_LAYER_DEBUG_TILE_BOUNDARIES;
       default: return null;
     }
   }
@@ -158,10 +154,6 @@ public enum MapsMapLayer
 
   public final com.google.protobuf.Descriptors.EnumValueDescriptor
       getValueDescriptor() {
-    if (this == UNRECOGNIZED) {
-      throw new java.lang.IllegalStateException(
-          "Can't get the descriptor of an unrecognized enum value.");
-    }
     return getDescriptor().getValues().get(ordinal());
   }
   public final com.google.protobuf.Descriptors.EnumDescriptor
@@ -170,7 +162,7 @@ public enum MapsMapLayer
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(8);
+    return POGOProtos.Rpc.POGOProtosRpc.getDescriptor().getEnumTypes().get(80);
   }
 
   private static final MapsMapLayer[] VALUES = values();
